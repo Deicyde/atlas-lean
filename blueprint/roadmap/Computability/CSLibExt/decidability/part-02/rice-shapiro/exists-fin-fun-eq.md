@@ -12,7 +12,7 @@ A partial function with finite domain is the finite function of its graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fin Fun](fin-fun.md)
 
 ## Sources
 

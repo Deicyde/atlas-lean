@@ -14,6 +14,11 @@ The reduction `red(s)`: replace every maximal block of adjacent consecutive inte
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Consecutive Run Heads](consecutive-run-heads.md)
+- [Standardize Seq](standardize-seq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CyclicPatternAvoidingStacksWanted](../../../../../../../sources/v2/WantedExt.md)

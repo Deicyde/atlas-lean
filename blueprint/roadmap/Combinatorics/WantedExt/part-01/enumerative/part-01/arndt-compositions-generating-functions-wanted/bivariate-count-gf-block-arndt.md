@@ -15,7 +15,8 @@ parts is `A^{(k)}(x, y) = (∑_{j=0}^{k-1} J_j(x, y))/(1 - J_k(x, y))` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bivariate Count GF](bivariate-count-gf.md)
+- [Block Arndt Composition Count](block-arndt-composition-count.md)
 
 ## Sources
 

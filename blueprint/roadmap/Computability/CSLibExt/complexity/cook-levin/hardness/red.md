@@ -11,7 +11,20 @@ The reduction function on raw input bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](../../dense-satverifier/g.md)
+- [Pair Encode](../../dense-satverifier/pair-encode.md)
+
+## Proof depends on
+
+- [V E](v-e.md)
+- [V Ys](v-ys.md)
+- [Vacc](vacc.md)
+- [Vc](vc.md)
+- [Ve](ve.md)
+- [Veqv](veqv.md)
+- [Vsep](vsep.md)
+- [Vι](v.md)
+- [F R](../package/f-r.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MetaMathlibExt.boxWord_one_three_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [Box Word](box-word.md)
 
 ## Sources
 

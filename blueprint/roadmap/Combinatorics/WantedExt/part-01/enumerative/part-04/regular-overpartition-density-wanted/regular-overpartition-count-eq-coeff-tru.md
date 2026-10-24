@@ -15,7 +15,7 @@ finite-polynomial version of the paper's infinite generating function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Overpartition Count](regular-overpartition-count.md)
 
 ## Sources
 

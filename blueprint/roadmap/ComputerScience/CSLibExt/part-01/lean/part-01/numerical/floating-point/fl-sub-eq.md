@@ -12,7 +12,9 @@ The rounding error at the scale of the last place.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round to nearest, ties to even](fl.md)
+- [Rne](rne.md)
+- [Ulp Exp](ulp-exp.md)
 
 ## Sources
 

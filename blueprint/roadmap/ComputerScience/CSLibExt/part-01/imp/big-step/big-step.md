@@ -11,7 +11,8 @@ Terminating big-step executions of IMP commands.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

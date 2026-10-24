@@ -12,7 +12,12 @@ The empty permutation has no cycles and no fixed points: `a(0, 0, 0) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
+
+## Proof depends on
+
+- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Cycle Quotient Count eq](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count-eq.md)
 
 ## Sources
 

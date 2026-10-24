@@ -11,7 +11,13 @@ Exact `n`-step runs of the program.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+- [Stk](stk.md)
+
+## Proof depends on
+
+- [Prog](prog.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

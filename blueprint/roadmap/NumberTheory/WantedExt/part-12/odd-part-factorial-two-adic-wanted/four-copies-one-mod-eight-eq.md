@@ -14,7 +14,9 @@ scalar multiplication used to create four occurrences of every integer in the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four Copies One Mod Eight Below Two Pow](four-copies-one-mod-eight-below-two-pow.md)
+- [Integer Multiset](integer-multiset.md)
+- [One Mod Eight Below Two Pow](one-mod-eight-below-two-pow.md)
 
 ## Sources
 

@@ -13,7 +13,18 @@ sequences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Side Grammar](side-grammar.md)
+- [Side Word](side-word.md)
+- [Domino](../pcp/domino.md)
+- [Language](../../../languages/context-free/part-01/encoded/language.md)
+
+## Proof depends on
+
+- [The construction of derivations](derives-side-word.md)
+- [The analysis of derivations](eq-side-word-of-derives.md)
+- [Side Rules](side-rules.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 
 ## Sources
 

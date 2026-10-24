@@ -13,7 +13,9 @@ The block `d_1 d_0 · d_{-1} = 10 · 1` never occurs, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Digit Block](has-digit-block.md)
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
+- [Beatty Set](beatty-set.md)
 
 ## Sources
 

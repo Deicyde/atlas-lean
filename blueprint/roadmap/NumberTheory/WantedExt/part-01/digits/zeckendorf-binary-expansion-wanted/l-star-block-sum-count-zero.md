@@ -12,7 +12,12 @@ lean: MetaMathlibExt.lStarBlockSumCount_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Block Sum Count](l-star-block-sum-count.md)
+
+## Proof depends on
+
+- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Max LStar Block](max-lstar-block.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The total number of `r × s` rectangles over all nondecreasing words of length `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rectangle Capacity](rectangle-capacity.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RectangleCapacityNondecreasingWordsWanted](../../../../../../../sources/v2/WantedExt.md)

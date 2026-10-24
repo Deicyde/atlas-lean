@@ -12,7 +12,9 @@ The syndrome of a single flipped bit names its position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H](h.md)
+- [Error Pos](error-pos.md)
+- [Syndrome](../linear-code/syndrome.md)
 
 ## Sources
 

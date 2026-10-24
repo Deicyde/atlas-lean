@@ -15,7 +15,8 @@ is stated for non-terminal positions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Rep](fib-rep.md)
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: Cslib.Complexity.Path.encodeP_inj
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode P](../path/encode-p.md)
+
+## Proof depends on
+
+- [Decode P](../path/decode-p.md)
+- [Decode P encode P](decode-p-encode-p.md)
 
 ## Sources
 

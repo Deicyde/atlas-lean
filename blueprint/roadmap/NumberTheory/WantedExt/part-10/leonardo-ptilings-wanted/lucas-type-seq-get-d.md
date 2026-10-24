@@ -12,7 +12,11 @@ Entry `i ≤ n` of `lucasTypeSeq p a₀ c n` does not depend on `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Type Seq](lucas-type-seq.md)
+
+## Proof depends on
+
+- [Lucas Type Seq length](lucas-type-seq-length.md)
 
 ## Sources
 

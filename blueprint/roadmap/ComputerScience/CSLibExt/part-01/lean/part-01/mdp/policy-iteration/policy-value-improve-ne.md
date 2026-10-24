@@ -12,7 +12,15 @@ Away from optimality the value strictly improves somewhere.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](../value-iteration/mdp.md)
+- [Stochastic](../value-iteration/stochastic.md)
+- [Improve](improve.md)
+- [Optimal Value](../value-iteration/optimal-value.md)
+- [Policy Value](../value-iteration/policy-value.md)
+
+## Proof depends on
+
+- [Improvement stalls exactly at optimal policies](policy-value-improve-eq-iff.md)
 
 ## Sources
 

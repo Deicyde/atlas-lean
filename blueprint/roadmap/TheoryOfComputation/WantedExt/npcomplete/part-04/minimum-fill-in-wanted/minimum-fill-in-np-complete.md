@@ -13,7 +13,11 @@ the minimum fill-in is NP-complete" (1981).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Many One Red](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
+- [Minimum Fill In Dec](minimum-fill-in-dec.md)
+- [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
+- [NP](../../../../../Computability/MathlibExt/complexity/np.md)
 
 ## Sources
 

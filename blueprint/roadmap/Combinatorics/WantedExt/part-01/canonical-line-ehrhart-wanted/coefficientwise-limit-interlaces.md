@@ -14,7 +14,8 @@ orientation `fₙ` interlaces `gₙ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Only Real Roots](has-only-real-roots.md)
+- [Real Interlaces](real-interlaces.md)
 
 ## Sources
 

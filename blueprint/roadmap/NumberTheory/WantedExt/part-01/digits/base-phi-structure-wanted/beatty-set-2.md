@@ -13,6 +13,10 @@ The terms `V₀(p, q, r)(n)`, `n ≥ 0`, as a set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Beatty](generalized-beatty.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.BasePhiStructureWanted](../../../../../../sources/v2/WantedExt.md)

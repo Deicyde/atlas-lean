@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.SortingNetworks.run_comp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](network.md)
+- [Run](run.md)
+
+## Proof depends on
+
+- [Comparator](comparator.md)
+- [Comparator comp](comparator-comp.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ not `r`-accessible for any `r ≥ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RAccessible](../../accessible-sets-wanted/is-raccessible.md)
+- [Even Fibonacci Set](../../accessible-sets-wanted/even-fibonacci-set.md)
 
 ## Sources
 

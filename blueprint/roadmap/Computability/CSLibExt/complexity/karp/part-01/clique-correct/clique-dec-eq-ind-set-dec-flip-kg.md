@@ -21,7 +21,22 @@ theorem toGraph_map_not {n : ℕ} {bits : List Bool} (h : bits.length = (pairs n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clique Dec](../clique/clique-dec.md)
+- [Flip KG](../clique/flip-kg.md)
+- [Ind Set Dec](../clique/ind-set-dec.md)
+
+## Proof depends on
+
+- [Decode KG](../clique/decode-kg.md)
+- [Encode KG](../clique/encode-kg.md)
+- [Kg Dec](../clique/kg-dec.md)
+- [Kg Dec of decode KG eq none](kg-dec-of-decode-kg-eq-none.md)
+- [No KG](../clique/no-kg.md)
+- [Pairs](../clique/pairs.md)
+- [To Graph](../clique/to-graph.md)
+- [To Graph map not](to-graph-map-not.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

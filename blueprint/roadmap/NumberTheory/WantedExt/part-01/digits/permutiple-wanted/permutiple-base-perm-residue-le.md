@@ -16,7 +16,7 @@ has all digits zero and the bound would read `0 ≤ -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Permutiple](is-permutiple.md)
 
 ## Sources
 

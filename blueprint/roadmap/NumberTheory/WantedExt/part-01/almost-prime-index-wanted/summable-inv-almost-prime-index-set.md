@@ -13,7 +13,7 @@ positive `k_1, …, k_m` (here `k_1 = k` and `L = [k_2, …, k_m]` is nonempty).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

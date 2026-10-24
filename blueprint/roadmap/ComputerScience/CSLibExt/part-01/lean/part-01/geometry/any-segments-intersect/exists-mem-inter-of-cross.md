@@ -14,7 +14,11 @@ when the order at `x₁` is strict.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Line Y](line-y.md)
+
+## Proof depends on
+
+- [Mem segment iff line Y](mem-segment-iff-line-y.md)
 
 ## Sources
 

@@ -12,7 +12,20 @@ A unary `n` that never ends: `bad` within `|r| + 1` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mode](mode.md)
+- [Prog](prog.md)
+- [Γ](untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [U](u.md)
+- [Is T](is-t.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

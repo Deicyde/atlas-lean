@@ -11,7 +11,12 @@ The Mallows representation `M(α) = ⟨M_1(α), M_2(α), …⟩`; `mallowsRep α
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+
+## Proof depends on
+
+- [Mallows Choose](mallows-choose.md)
+- [Mallows Interval](mallows-interval.md)
 
 ## Sources
 

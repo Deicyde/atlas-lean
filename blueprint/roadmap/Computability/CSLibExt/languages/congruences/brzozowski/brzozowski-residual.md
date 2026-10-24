@@ -11,7 +11,14 @@ The continuation language of a state of Brzozowski's automaton, through a word r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reachable Residuals](../minimality/reachable-residuals.md)
+- [Brzozowski State](brzozowski-state.md)
+
+## Proof depends on
+
+- [Minimized State](../minimization/minimized-state.md)
+- [Brzozowski's automaton](brzozowski.md)
+- [Brzozowski surjective](brzozowski-surjective.md)
 
 ## Sources
 

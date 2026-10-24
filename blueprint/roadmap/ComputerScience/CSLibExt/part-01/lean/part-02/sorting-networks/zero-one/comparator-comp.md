@@ -12,7 +12,7 @@ Comparators commute with monotone maps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comparator](comparator.md)
 
 ## Sources
 

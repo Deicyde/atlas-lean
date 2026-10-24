@@ -13,7 +13,14 @@ surjective.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Recognizer Quotient To Syntactic](recognizer-quotient-to-syntactic.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+
+## Proof depends on
+
+- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ observation `y = H x + v` the state has law `update H R y` (for almost every `y`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
+- [Law](law.md)
+- [Update](update.md)
+
+## Proof depends on
+
+- [Update cov eq](update-cov-eq.md)
+- [Bayes' theorem for a linear-Gaussian observation](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-conditioning/cond-distrib-linear-add-of-indep-fun.md)
 
 ## Sources
 

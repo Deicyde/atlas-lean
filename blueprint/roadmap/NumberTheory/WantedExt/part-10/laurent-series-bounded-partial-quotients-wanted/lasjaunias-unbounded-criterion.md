@@ -16,7 +16,12 @@ unbounded partial quotients. Fractional exponents are cleared by multiplying the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Has Bounded Partial Quotients](laurent-has-bounded-partial-quotients.md)
+- [Laurent Is Irrational](laurent-is-irrational.md)
+- [Laurent Conv Den](laurent-conv-den.md)
+- [Laurent Conv Num](laurent-conv-num.md)
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
+- [Poly To Laurent Inv](poly-to-laurent-inv.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ the stage index (earlier stages appear in later ones).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
+- [Stage](stage.md)
+
+## Proof depends on
+
+- [C](c.md)
+- [The defining equation of the stages](stage-eq.md)
 
 ## Sources
 

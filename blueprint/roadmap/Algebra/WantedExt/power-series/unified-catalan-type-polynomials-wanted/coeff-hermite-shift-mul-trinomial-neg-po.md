@@ -17,7 +17,8 @@ factors. Stated for all `m` and real `λ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kampe De Feriet Hermite](kampe-de-feriet-hermite.md)
+- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
 
 ## Sources
 

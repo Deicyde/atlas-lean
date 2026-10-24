@@ -12,7 +12,7 @@ The defining mex recursion of `chocolateBarGrundy`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chocolate Bar Grundy](chocolate-bar-grundy.md)
 
 ## Sources
 

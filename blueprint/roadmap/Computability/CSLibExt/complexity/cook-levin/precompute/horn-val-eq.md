@@ -12,7 +12,7 @@ Horner's rule: `hornVal` of a coefficient list, from accumulator `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Horn Val](horn-val.md)
 
 ## Sources
 

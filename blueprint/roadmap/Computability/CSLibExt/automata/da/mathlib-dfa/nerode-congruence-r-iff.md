@@ -13,7 +13,7 @@ quotient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Rel](../../../languages/congruences/nerode/nerode-rel.md)
 
 ## Sources
 

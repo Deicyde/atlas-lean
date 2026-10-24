@@ -13,7 +13,11 @@ the paper's repeated-entry vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reflexive](is-reflexive.md)
+- [Valid Support](valid-support.md)
+- [Expand Support](expand-support.md)
+- [Weight Lcm](weight-lcm.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For a finite field `K` of odd order `q`, `η_1(K × K) ≤ q + η_1(K)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Diff Basis Number](group-diff-basis-number.md)
 
 ## Sources
 

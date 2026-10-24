@@ -13,7 +13,7 @@ than the largest remoteness of an option if every option has odd remoteness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../sprague-grundy/impartial-game.md)
 
 ## Sources
 

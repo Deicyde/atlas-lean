@@ -12,7 +12,7 @@ lean: MetaMathlibExt.cyclicProductNumber_of_odd
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Product Number](cyclic-product-number.md)
 
 ## Sources
 

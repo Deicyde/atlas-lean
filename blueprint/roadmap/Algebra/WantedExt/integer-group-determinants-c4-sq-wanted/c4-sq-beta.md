@@ -13,6 +13,10 @@ The paper's `β = (α₀ + α₂)² - (α₁ + α₃)²`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [C4 Sq Alpha](c4-sq-alpha.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.IntegerGroupDeterminantsC4SqWanted](../../../../sources/v2/WantedExt.md)

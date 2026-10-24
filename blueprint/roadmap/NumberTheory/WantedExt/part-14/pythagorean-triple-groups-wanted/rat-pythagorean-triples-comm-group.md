@@ -12,7 +12,8 @@ lean: MetaMathlibExt.ratPythagoreanTriples_commGroup
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pythagorean Triple Mul](pythagorean-triple-mul.md)
+- [Rat Pythagorean Triples](rat-pythagorean-triples.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ factor `p₁` satisfies `H(n) ≤ 2 + C/p₁`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Nondeficient](../../../part-14/primitive-nondeficient-wanted/is-primitive-nondeficient.md)
+- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

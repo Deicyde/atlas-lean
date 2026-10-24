@@ -11,7 +11,8 @@ Lemma 3: `r(p) = ctt(p, m)` for the largest `m ≤ max(p)` with `ctt(p, m)` redu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Reduced](slow-anim-reduced.md)
+- [Slow ANim Reduction](slow-anim-reduction.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The `j`-th marker (counted from zero) in increasing order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Upper Wythoff Unsum Marker](is-upper-wythoff-unsum-marker.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -16,6 +16,10 @@ with `(D | pᵢ) = εᵢ` for all `i`. `Nat.primeFactorsList` lists the `pᵢ` i
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is DCarmichael](is-dcarmichael.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.AbsoluteLucasPseudoprimesWanted](../../../../../sources/v2/WantedExt.md)

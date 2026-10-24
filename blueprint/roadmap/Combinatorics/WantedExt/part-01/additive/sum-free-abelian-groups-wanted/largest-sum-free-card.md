@@ -13,6 +13,10 @@ The size of a largest sum-free subset of `S` (for `S = univ` this is `μ(G)`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Sum Free Set](is-sum-free-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.SumFreeAbelianGroupsWanted](../../../../../../sources/v2/WantedExt.md)

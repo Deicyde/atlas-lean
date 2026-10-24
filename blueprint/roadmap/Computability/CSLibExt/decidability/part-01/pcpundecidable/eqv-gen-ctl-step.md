@@ -12,7 +12,15 @@ A Thue chain from a word with one control symbol consists of such rewrites.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Step](../../part-02/string-rewriting/step.md)
+- [Ctl Step](ctl-step.md)
+- [TMSym](tmsym.md)
+- [Ctl Count](ctl-count.md)
+- [Rules](rules.md)
+
+## Proof depends on
+
+- [Ctl Count eq of step](ctl-count-eq-of-step.md)
 
 ## Sources
 

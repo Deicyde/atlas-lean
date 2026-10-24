@@ -14,7 +14,7 @@ Glaisher's divisor functions are series-divisors of the generating functions of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources
 

@@ -23,7 +23,7 @@ printed `13`, and `DL + DR` no longer matches the total shade.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total Composition Shade](total-composition-shade.md)
 
 ## Sources
 

@@ -12,7 +12,20 @@ lean: Cslib.MachineLearning.Sequence.HiddenMarkov.pathProb_le_viterbiPath
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+- [Nonneg](nonneg.md)
+- [Path Prob](path-prob.md)
+- [Viterbi's MAP path](viterbi-path.md)
+
+## Proof depends on
+
+- [Argmax Fin](argmax-fin.md)
+- [Argmax Vec](argmax-vec.md)
+- [Best Path](best-path.md)
+- [Path Prob best Path](path-prob-best-path.md)
+- [Path Prob le viterbi](path-prob-le-viterbi.md)
+- [Viterbi](viterbi.md)
+- [Viterbi Tab](viterbi-tab.md)
 
 ## Sources
 

@@ -16,7 +16,9 @@ Explicit formulas for fundamental intervals, up to Lebesgue-null sets: with `n =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cf Cylinder](cf-cylinder.md)
+- [Convergent Matrix](convergent-matrix.md)
+- [Fund Interval](fund-interval.md)
 
 ## Sources
 

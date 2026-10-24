@@ -15,7 +15,7 @@ range for `n`; for `n < r - 1` the right side involves `η` at negative indices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Lucas Polynomial](r-lucas-polynomial.md)
 
 ## Sources
 

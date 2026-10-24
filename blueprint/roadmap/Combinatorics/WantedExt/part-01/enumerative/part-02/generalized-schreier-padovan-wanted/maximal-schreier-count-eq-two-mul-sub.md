@@ -11,7 +11,8 @@ lean: MetaMathlibExt.maximalSchreierCount_eq_two_mul_sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Schreier Count](maximal-schreier-count.md)
+- [Schreier Count](schreier-count.md)
 
 ## Sources
 

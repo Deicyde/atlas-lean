@@ -11,7 +11,11 @@ A bounded run from `initList` to `haltList` is a `TM2OutputsInTime` certificate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Run](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

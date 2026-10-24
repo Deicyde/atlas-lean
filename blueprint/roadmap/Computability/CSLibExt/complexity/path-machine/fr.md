@@ -11,7 +11,8 @@ lean: Cslib.Complexity.Path.Machine.Fr
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Γ](untitled.md)
 
 ## Sources
 

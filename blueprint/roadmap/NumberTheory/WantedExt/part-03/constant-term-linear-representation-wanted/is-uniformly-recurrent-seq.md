@@ -14,6 +14,10 @@ that every occurrence of `w` is followed by another occurrence at distance at mo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seq Factor Occurs At](seq-factor-occurs-at.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ConstantTermLinearRepresentationWanted](../../../../../sources/v2/WantedExt.md)

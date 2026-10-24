@@ -15,7 +15,7 @@ followed by either the last part or a part greater than `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Huang Small Part Placement](is-huang-small-part-placement.md)
 
 ## Sources
 

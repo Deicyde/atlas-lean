@@ -15,6 +15,10 @@ The map `V : 𝔎¹ → 𝔎¹` on a word (words `p^{k₁} y ⋯ p^{kᵣ} y` as 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ooz To SZTail](ooz-to-sztail.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

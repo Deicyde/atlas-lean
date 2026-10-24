@@ -12,7 +12,7 @@ The initial marks: `n` cleared marks, then the mark of `s` set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Init Marks](../path/init-marks.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ If `n` passes all make mistakes, the run over the `n` passes makes at least `n` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run](run.md)
+- [Train](train.md)
+
+## Proof depends on
+
+- [Run eq](run-eq.md)
+- [Step](step.md)
 
 ## Sources
 

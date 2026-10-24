@@ -13,7 +13,11 @@ halts on) that holds for some code and fails for another is undecidable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [Rice's theorem](not-tm2-decidable-of-nontrivial.md)
 
 ## Sources
 

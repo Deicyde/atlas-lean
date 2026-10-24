@@ -12,7 +12,7 @@ argument that is not an earlier node counts `0`, as the expression `0` does.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regex Node](../regular-expression/regex-node.md)
 
 ## Sources
 

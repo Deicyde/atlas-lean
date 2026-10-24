@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.Variational.elbo_le_log_evidence
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Elbo](elbo.md)
+- [Evidence](evidence.md)
+
+## Proof depends on
+
+- [Gibbs' inequality](../../../part-01/latent-variable/expectation-maximization/sum-mul-log-sub-le.md)
 
 ## Sources
 

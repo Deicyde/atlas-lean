@@ -14,6 +14,10 @@ lean: Cslib.Language.IsRegular.rightQuotientSet
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Right DFA](right-dfa.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.RegularQuotient](../../../../../sources/v2/CSLibExt.md)

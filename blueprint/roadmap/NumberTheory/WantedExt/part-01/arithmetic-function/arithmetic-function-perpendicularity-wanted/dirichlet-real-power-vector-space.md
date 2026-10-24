@@ -15,7 +15,7 @@ and `f^{(1)} = f` on `U₁`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rearick Log](../../../../MathlibExt/part-10/rearick-logarithm/rearick-log.md)
 
 ## Sources
 

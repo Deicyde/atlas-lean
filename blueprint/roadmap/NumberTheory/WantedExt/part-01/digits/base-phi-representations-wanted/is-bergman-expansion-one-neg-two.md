@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isBergmanExpansion_one_neg_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bergman Expansion](is-bergman-expansion.md)
 
 ## Sources
 

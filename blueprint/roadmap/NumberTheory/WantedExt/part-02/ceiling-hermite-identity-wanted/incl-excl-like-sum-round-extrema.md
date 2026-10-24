@@ -12,7 +12,7 @@ attained at `x_k = 1/2`, and minimum `-2^{n-2}`, attained at `x_k = 1/2 - 1/n²`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incl Excl Like Sum](incl-excl-like-sum.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ For `b ≥ 2` the lunar unit is a monomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Max Min Monomial](is-max-min-monomial.md)
+- [Lunar Unit](lunar-unit.md)
 
 ## Sources
 

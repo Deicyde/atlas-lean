@@ -15,7 +15,7 @@ kind (`Nat.stirlingFirst`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Harmonic](generalized-harmonic.md)
 
 ## Sources
 

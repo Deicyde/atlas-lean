@@ -13,7 +13,18 @@ it has `k ≤ d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth LE](depth-le.md)
+- [Bitonic Sort N](../bitonic/bitonic-sort-n.md)
+
+## Proof depends on
+
+- [Within](../bitonic/within.md)
+- [Bitonic Merge](../bitonic/bitonic-merge.md)
+- [The bitonic sorter sorts every `0`-`1` input](../bitonic/bitonic-sort-n-sorts.md)
+- [Extend False](../bitonic/extend-false.md)
+- [Half Cleaner](../bitonic/half-cleaner.md)
+- [Every sorting network on `n` wires has depth at least `log₂ n`](le-two-pow-of-sorts.md)
+- [Run N](../bitonic/run-n.md)
 
 ## Sources
 

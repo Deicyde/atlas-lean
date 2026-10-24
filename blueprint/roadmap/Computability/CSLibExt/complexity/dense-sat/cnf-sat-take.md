@@ -12,7 +12,15 @@ Truncating a satisfying assignment to the input length keeps it satisfying.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cnf Sat](cnf-sat.md)
+- [Decode CNF](decode-cnf.md)
+
+## Proof depends on
+
+- [CNF](cnf.md)
+- [Clause](clause.md)
+- [Clause Sat](clause-sat.md)
+- [Length le of mem decode Aux](length-le-of-mem-decode-aux.md)
 
 ## Sources
 

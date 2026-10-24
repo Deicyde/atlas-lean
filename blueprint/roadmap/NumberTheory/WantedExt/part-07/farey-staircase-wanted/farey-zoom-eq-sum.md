@@ -12,7 +12,7 @@ lean: MetaMathlibExt.fareyZoom_eq_sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Zoom](farey-zoom.md)
 
 ## Sources
 

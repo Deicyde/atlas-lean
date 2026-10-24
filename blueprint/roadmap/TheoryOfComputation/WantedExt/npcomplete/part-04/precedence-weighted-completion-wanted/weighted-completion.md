@@ -13,6 +13,10 @@ Weighted sum of completion times for a job order (job indices).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted Completion Step](weighted-completion-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.PrecedenceWeightedCompletionWanted](../../../../../../sources/v2/WantedExt.md)

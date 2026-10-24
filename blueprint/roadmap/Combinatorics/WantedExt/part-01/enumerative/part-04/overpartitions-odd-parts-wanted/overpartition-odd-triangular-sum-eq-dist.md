@@ -14,7 +14,7 @@ Theorem 3.9) sums the left side over all `k ∈ ℤ`, which fails at `n = 0` (le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
 
 ## Sources
 

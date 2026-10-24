@@ -13,7 +13,7 @@ by `X (X + 1) (X² - 4)`, and moreover by `X (X + 1) (X² - 4) (X - 1)` when
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
 
 ## Sources
 

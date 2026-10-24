@@ -12,7 +12,7 @@ The diagonal entries of `M(f)` are the constant coefficient of `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Power Series Factorial Matrix](power-series-factorial-matrix.md)
 
 ## Sources
 

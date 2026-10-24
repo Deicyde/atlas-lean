@@ -12,7 +12,7 @@ lean: MetaMathlibExt.wrappedWord_singleton
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wrapped Word](wrapped-word.md)
 
 ## Sources
 

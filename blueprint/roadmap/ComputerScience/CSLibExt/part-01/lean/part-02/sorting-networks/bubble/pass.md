@@ -11,7 +11,11 @@ One bubble pass: the comparators `(0, 1), (1, 2), …, (m - 1, m)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](../zero-one/network.md)
+
+## Proof depends on
+
+- [Adjacent](adjacent.md)
 
 ## Sources
 

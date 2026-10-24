@@ -11,7 +11,12 @@ The encoding of a regular expression.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](encoded-regex.md)
+
+## Proof depends on
+
+- [Flatten Aux](flatten-aux.md)
+- [Regex Node](regex-node.md)
 
 ## Sources
 

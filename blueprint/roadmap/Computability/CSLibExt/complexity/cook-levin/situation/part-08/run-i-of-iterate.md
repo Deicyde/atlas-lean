@@ -12,7 +12,12 @@ If the real machine reaches `c'` in exactly `n` steps, the idle-extended run agr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run I](../part-03/run-i.md)
+
+## Proof depends on
+
+- [Run I succ'](../part-07/run-i-succ.md)
+- [Step I](../part-03/step-i.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ Bridge: for `n ≥ 1`, the product `𝔻_n` is the denominator of `B_n(x) - B_n`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator](bernoulli-diff-denominator.md)
+- [Polynomial Denominator](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources
 

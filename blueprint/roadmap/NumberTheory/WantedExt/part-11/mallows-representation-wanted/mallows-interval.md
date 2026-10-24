@@ -13,6 +13,11 @@ The gap of the vertex `pf_{i+1}(α)` visited at step `i + 1` of the Mallows repr
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mallows Child](mallows-child.md)
+- [Mallows Choose](mallows-choose.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.MallowsRepresentationWanted](../../../../../sources/v2/WantedExt.md)

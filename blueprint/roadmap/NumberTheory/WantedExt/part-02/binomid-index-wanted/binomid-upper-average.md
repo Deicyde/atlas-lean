@@ -14,6 +14,10 @@ The upper average `A_0(η) = limsup_i A_{i,0}(η)`, valued in `EReal`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binomid Average](binomid-average.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BinomidIndexWanted](../../../../../sources/v2/WantedExt.md)

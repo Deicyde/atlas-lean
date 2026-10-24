@@ -14,7 +14,7 @@ Lemma 1, identity (11): For `‖q‖ < 1`, with `E(q^k) = (q^k; q^k)_∞`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf](../../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
 
 ## Sources
 

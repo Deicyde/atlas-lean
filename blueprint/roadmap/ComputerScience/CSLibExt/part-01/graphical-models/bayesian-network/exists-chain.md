@@ -13,7 +13,14 @@ of conditional distributions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
+- [Joint](joint.md)
+
+## Proof depends on
+
+- [Joint congr](joint-congr.md)
+- [Update](update.md)
+- [Sum snoc](sum-snoc.md)
 
 ## Sources
 

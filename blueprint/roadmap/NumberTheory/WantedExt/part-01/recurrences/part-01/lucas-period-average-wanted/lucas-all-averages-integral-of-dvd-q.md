@@ -12,7 +12,9 @@ Theorem 2.10: let `n > 1` and `m ∈ S'(U)`. If `n ∣ b` and `a ≡ 1 (mod n)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas All Averages Integral](lucas-all-averages-integral.md)
+- [Lucas Average Set](lucas-average-set.md)
 
 ## Sources
 

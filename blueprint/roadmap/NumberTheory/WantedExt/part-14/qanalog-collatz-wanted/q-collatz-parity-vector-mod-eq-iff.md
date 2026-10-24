@@ -12,7 +12,7 @@ For odd `A, B`, `n ∈ ℕ` and `a, b ∈ 𝔽₂[[q]]`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Collatz Parity Vector](q-collatz-parity-vector.md)
 
 ## Sources
 

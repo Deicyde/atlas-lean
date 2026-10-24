@@ -14,7 +14,8 @@ sum for `Ǵ_k` starts at `j = 1`, omitting the empty path; `Ǵ_k` here includes 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augmented KDyck Long Ascent GF](augmented-kdyck-long-ascent-gf.md)
+- [K Box Long Ascent GF](k-box-long-ascent-gf.md)
 
 ## Sources
 

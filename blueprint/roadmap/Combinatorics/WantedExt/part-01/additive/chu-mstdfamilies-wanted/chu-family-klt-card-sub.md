@@ -11,7 +11,7 @@ Theorem 6: `|A - A| = 11 + 6klt + 8lt + 8t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chu Family KLT](chu-family-klt.md)
 
 ## Sources
 

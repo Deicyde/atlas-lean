@@ -12,7 +12,10 @@ smallest semilength is `(k+2)n - 1`: it is attained, and no such path is shorter
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Skew Dyck Word](is-skew-dyck-word.md)
+- [Skew Dyck Step](skew-dyck-step.md)
+- [Box Factor](box-factor.md)
+- [Skew Factor Count](skew-factor-count.md)
 
 ## Sources
 

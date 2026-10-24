@@ -13,7 +13,10 @@ The paper's examples: `s(3124) = 1234`, `s_[123](3124) = 2143`, `s^[123](3124) =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consecutive Cyclic Stack Sort](consecutive-cyclic-stack-sort.md)
+- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
+- [Cyclic Stack Sort](cyclic-stack-sort.md)
+- [West Stack Sort](west-stack-sort.md)
 
 ## Sources
 

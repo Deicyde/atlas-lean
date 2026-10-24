@@ -13,7 +13,8 @@ of the malformed copied display, whose stray `r` belongs to `\rceil`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DAP](is-dap.md)
+- [Is Monochromatic](is-monochromatic.md)
 
 ## Sources
 

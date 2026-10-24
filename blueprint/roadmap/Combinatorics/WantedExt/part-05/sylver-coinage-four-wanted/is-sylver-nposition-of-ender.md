@@ -12,7 +12,9 @@ of `L(M)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver End](is-sylver-end.md)
+- [Is Sylver NPosition](is-sylver-nposition.md)
+- [Sylver Legal Moves](sylver-legal-moves.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.SortingNetworks.sortsBool_eq_true_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](network.md)
+- [Sorts](sorts.md)
+- [Sorts Bool](sorts-bool.md)
+
+## Proof depends on
+
+- [Run](run.md)
 
 ## Sources
 

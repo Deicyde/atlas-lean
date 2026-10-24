@@ -12,7 +12,11 @@ the membership claim).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Mallows Admissible](mallows-admissible.md)
+- [Mallows Rep](mallows-rep.md)
+- [Mallows T](mallows-t.md)
 
 ## Sources
 

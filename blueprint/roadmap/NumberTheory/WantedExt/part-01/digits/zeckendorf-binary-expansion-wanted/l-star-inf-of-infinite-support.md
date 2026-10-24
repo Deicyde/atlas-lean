@@ -12,7 +12,11 @@ lean: MetaMathlibExt.lStarInf_of_infinite_support
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Inf](l-star-inf.md)
+
+## Proof depends on
+
+- [Max LStar Block](max-lstar-block.md)
 
 ## Sources
 

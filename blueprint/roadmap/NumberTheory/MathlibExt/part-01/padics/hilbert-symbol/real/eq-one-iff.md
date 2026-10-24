@@ -13,7 +13,12 @@ The real Hilbert symbol is one exactly when its defining equation is solvable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real Hilbert Symbol](real-hilbert-symbol.md)
+
+## Proof depends on
+
+- [Is Solvable](../../hilbert-symbol-2/is-solvable.md)
+- [Hilbert Symbol](../../hilbert-symbol-2/hilbert-symbol.md)
 
 ## Sources
 

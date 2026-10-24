@@ -13,7 +13,11 @@ is a single tile.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metatiles Have At Most Two Combs](metatiles-have-at-most-two-combs.md)
+
+## Proof depends on
+
+- [Restricted Overlap Tilings](restricted-overlap-tilings.md)
 
 ## Sources
 

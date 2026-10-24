@@ -14,7 +14,7 @@ side).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Lucky Set](is-admissible-lucky-set.md)
 
 ## Sources
 

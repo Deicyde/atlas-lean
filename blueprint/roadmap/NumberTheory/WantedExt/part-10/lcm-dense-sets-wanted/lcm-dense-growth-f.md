@@ -19,6 +19,10 @@ only for positive `C₀` and sufficiently large `x`, as in the paper.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trunc Log2](trunc-log2.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LcmDenseSetsWanted](../../../../../sources/v2/WantedExt.md)

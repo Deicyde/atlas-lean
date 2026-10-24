@@ -13,7 +13,7 @@ prime. Here `(M_n + 1)/2 = 2^{n-1}`; `R`, `Q` are arbitrary integers (no coprima
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer V](lehmer-v.md)
 
 ## Sources
 

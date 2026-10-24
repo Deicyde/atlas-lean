@@ -12,7 +12,7 @@ compositions of `n + q` into parts `1` and `q + 1 + jp`, `j = 0, 1, 2, …`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Combination Total](restricted-combination-total.md)
 
 ## Sources
 

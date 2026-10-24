@@ -15,7 +15,8 @@ and `2e'` as an even digit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: Cslib.Crypto.Birthday.half_le_collisionProb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collision Prob](collision-prob.md)
+
+## Proof depends on
+
+- [Div one add le collision Prob](div-one-add-le-collision-prob.md)
 
 ## Sources
 

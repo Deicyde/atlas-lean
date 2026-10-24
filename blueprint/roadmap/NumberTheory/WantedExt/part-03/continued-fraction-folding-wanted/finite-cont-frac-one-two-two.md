@@ -12,7 +12,7 @@ lean: MetaMathlibExt.finiteContFrac_one_two_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Cont Frac](finite-cont-frac.md)
 
 ## Sources
 

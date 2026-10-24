@@ -17,7 +17,10 @@ stated as a union together with a `Disjoint` conjunct.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Occurrences](base-phi-occurrences.md)
+- [Beatty Set](beatty-set.md)
+- [Beatty Set₀](beatty-set-2.md)
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

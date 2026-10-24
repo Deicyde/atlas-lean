@@ -12,7 +12,8 @@ Proposition 15: the case `ℓ = 1` of Theorem 17, with `(a₀, b₀) = (2, 4)` a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
+- [Wythoff Terminal PSet](wythoff-terminal-pset.md)
 
 ## Sources
 

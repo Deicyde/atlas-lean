@@ -14,7 +14,8 @@ INTEGERS 26 (2026), Article A22, Corollary 3.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Trinomial](central-trinomial.md)
+- [Generalized Motzkin](generalized-motzkin.md)
 
 ## Sources
 

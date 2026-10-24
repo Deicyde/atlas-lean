@@ -11,7 +11,9 @@ For `r = F_ℓ`, `ℓ ≥ 3`: `Δ^{(F_ℓ)} = 1` on `NIZ_ℓ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
+- [Zeck NIZ](zeck-niz.md)
 
 ## Sources
 

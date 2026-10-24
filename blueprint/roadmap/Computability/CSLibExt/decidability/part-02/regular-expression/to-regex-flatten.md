@@ -12,7 +12,17 @@ lean: Cslib.Language.EncodedRegex.toRegex_flatten
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flatten](flatten.md)
+- [To Regex](to-regex.md)
+
+## Proof depends on
+
+- [Encoded Regex](encoded-regex.md)
+- [Flatten Aux](flatten-aux.md)
+- [Node](node.md)
+- [Regex At](regex-at.md)
+- [Regex At append](regex-at-append.md)
+- [Regex Node](regex-node.md)
 
 ## Sources
 

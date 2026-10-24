@@ -13,7 +13,7 @@ is its inverse.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catalan Growth Den](catalan-growth-den.md)
 
 ## Sources
 

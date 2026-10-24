@@ -14,7 +14,8 @@ Lemma 6: for `l ≥ 0`, the paper's `T_{l-1}` (Definition 4: the polynomial with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arcsin Antideriv S](arcsin-antideriv-s.md)
+- [Central Binom Reciprocal H](central-binom-reciprocal-h.md)
 
 ## Sources
 

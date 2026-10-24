@@ -14,7 +14,15 @@ example strictly correctly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sign](sign.md)
+- [Train](train.md)
+
+## Proof depends on
+
+- [Le run of train eq none](le-run-of-train-eq-none.md)
+- [Novikoff's perceptron mistake bound](mistakes-mul-sq-le.md)
+- [Run](run.md)
+- [Train classifies](train-classifies.md)
 
 ## Sources
 

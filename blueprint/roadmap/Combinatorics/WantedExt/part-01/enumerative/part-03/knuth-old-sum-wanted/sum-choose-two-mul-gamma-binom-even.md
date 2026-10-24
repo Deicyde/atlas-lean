@@ -13,7 +13,7 @@ binom(2k+v, (2k+v)/2) binom((4k+v)/2, k)^{-1}` for real `v > -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

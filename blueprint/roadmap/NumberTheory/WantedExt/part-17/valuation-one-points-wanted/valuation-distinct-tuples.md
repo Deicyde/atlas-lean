@@ -13,6 +13,10 @@ The element-wise distinct (injective) `k`-tuples of points of `C_f(𝔽_p)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Valuation Curve Points](valuation-curve-points.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ValuationOnePointsWanted](../../../../../sources/v2/WantedExt.md)

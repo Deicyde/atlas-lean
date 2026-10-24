@@ -15,7 +15,8 @@ them); they are added here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Komak G](komak-g.md)
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
 
 ## Sources
 

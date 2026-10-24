@@ -12,7 +12,7 @@ A DFA morphism commutes with evaluation from every state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DFAHom](dfahom.md)
 
 ## Sources
 

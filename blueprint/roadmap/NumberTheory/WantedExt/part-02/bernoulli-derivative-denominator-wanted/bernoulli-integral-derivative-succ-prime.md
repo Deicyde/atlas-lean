@@ -12,7 +12,7 @@ If `B_n'(x) ∈ ℤ[x]` then `n + 1` is prime, and any such `n` outside
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
 
 ## Sources
 

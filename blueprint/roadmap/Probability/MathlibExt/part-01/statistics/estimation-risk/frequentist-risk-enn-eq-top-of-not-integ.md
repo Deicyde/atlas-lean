@@ -15,7 +15,7 @@ Blueprint `af_36871388da7326a07a5e4f71`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequentist Risk ENN](frequentist-risk-enn.md)
 
 ## Sources
 

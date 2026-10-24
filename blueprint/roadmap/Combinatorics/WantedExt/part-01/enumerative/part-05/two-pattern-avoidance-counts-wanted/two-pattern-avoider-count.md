@@ -15,6 +15,10 @@ patterns `τ` and `ρ` (containment is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Pattern](../../part-04/odd-fibonacci-wanted/has-pattern.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.TwoPatternAvoidanceCountsWanted](../../../../../../../sources/v2/WantedExt.md)

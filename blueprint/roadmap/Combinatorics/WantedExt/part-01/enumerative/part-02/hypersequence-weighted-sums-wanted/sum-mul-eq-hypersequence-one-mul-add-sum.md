@@ -12,7 +12,7 @@ Theorem 7 (Abel's summation by parts):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypersequence](hypersequence.md)
 
 ## Sources
 

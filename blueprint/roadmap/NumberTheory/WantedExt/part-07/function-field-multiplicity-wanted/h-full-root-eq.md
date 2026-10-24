@@ -12,7 +12,7 @@ Unfolding `q^{1/h} ξ^j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full Root](h-full-root.md)
 
 ## Sources
 

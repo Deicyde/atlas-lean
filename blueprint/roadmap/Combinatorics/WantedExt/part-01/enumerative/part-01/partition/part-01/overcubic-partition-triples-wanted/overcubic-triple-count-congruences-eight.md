@@ -12,7 +12,7 @@ and `bt(64·9^{α+2} n + 264·9^{α+1}) ≡ 0 (mod 8)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overcubic Triple Count](overcubic-triple-count.md)
 
 ## Sources
 

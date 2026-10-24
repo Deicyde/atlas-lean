@@ -12,7 +12,7 @@ and `C = {000, 010, 101, 110, 120, 201}`, `A_201 ∼ A_210 ∼ B_201 ∼ B_210 �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
 
 ## Sources
 

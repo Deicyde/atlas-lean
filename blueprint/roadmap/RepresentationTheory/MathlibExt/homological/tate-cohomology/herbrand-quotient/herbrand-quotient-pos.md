@@ -14,6 +14,7 @@ The Herbrand quotient is positive.
 ## Depends on
 
 - [Herbrand Finite](herbrand-finite.md)
+- [Herbrand Quotient](herbrand-quotient.md)
 
 ## Proof depends on
 

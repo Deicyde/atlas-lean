@@ -13,7 +13,8 @@ Theorem 4, mean square: for every `ε > 0` there is `C` such that for every odd 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Product Sum](modular-product-sum.md)
+- [Xu Zhang Constant](xu-zhang-constant.md)
 
 ## Sources
 

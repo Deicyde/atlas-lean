@@ -13,7 +13,12 @@ pattern: `|Ī_0(B)| = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Pattern2](signed-pattern2.md)
+- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+
+## Proof depends on
+
+- [Signed Inv Seq Contains](signed-inv-seq-contains.md)
 
 ## Sources
 

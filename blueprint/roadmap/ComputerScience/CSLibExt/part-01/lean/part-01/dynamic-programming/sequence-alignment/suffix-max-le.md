@@ -12,7 +12,14 @@ A bound on all suffix-pair scores bounds the suffix maximum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nw Score](nw-score.md)
+- [Suffix Max](suffix-max.md)
+- [Suffix Pairs](suffix-pairs.md)
+
+## Proof depends on
+
+- [List Max](list-max.md)
+- [Nw Score nil left](nw-score-nil-left.md)
 
 ## Sources
 

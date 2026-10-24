@@ -12,7 +12,8 @@ lean: MetaMathlibExt.zeckNIZ_subset_zeckCST
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck CST](zeck-cst.md)
+- [Zeck NIZ](zeck-niz.md)
 
 ## Sources
 

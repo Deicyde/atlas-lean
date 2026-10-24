@@ -15,6 +15,12 @@ expansion of `N` (equal length of the negative part).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Bergman Expansion](is-bergman-expansion.md)
+- [Base Phi Value](base-phi-value.md)
+- [Knott Expansions](knott-expansions.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.BasePhiRepresentationsWanted](../../../../../../sources/v2/WantedExt.md)

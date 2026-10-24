@@ -14,6 +14,10 @@ equation is symmetric, so the middle entry is no restriction).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedMarkovUniquenessWanted](../../../../../sources/v2/WantedExt.md)

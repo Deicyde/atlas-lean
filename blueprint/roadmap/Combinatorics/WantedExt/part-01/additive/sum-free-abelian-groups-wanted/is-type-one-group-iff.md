@@ -12,7 +12,7 @@ Unfolding of `IsTypeOneGroup`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Type One Group](is-type-one-group.md)
 
 ## Sources
 

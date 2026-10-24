@@ -12,7 +12,7 @@ stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](../of-tm0/non-blank.md)
 
 ## Sources
 

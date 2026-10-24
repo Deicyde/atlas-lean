@@ -11,7 +11,7 @@ A sublist with product exactly the target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subset Product Instance](subset-product-instance.md)
 
 ## Sources
 

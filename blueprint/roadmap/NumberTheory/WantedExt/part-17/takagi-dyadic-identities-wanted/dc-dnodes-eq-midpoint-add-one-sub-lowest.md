@@ -12,7 +12,7 @@ nonzero bit of `r`, `δ(n) = (δ(n-1) + δ(n+1))/2 + 1 - ρ₁`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc DNodes](dc-dnodes.md)
 
 ## Sources
 

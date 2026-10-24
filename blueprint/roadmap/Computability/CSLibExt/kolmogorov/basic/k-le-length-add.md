@@ -12,7 +12,14 @@ lean: Cslib.Kolmogorov.K_le_length_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](k.md)
+
+## Proof depends on
+
+- [K le](k-le.md)
+- [The universal description method](u.md)
+- [Describe](describe.md)
+- [Run](run.md)
 
 ## Sources
 

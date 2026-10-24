@@ -12,7 +12,7 @@ lean: MetaMathlibExt.hypersequence_one_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypersequence](hypersequence.md)
 
 ## Sources
 

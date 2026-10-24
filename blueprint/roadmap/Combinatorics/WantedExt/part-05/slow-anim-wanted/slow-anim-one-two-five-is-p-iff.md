@@ -13,7 +13,8 @@ P-position iff its parity pattern is `(e,e,e,e,e)`, `(e,e,o,o,o)`, `(o,o,e,e,o)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Slow ANim Game](slow-anim-game.md)
 
 ## Sources
 

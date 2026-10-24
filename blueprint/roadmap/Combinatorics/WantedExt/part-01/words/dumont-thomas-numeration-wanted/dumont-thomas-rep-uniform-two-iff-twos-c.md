@@ -15,7 +15,9 @@ least period.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
+- [Is Two Sided Periodic Point](is-two-sided-periodic-point.md)
+- [Twos Complement Value](twos-complement-value.md)
 
 ## Sources
 

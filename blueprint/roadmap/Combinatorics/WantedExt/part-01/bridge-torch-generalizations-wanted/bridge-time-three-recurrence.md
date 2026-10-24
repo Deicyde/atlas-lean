@@ -11,7 +11,7 @@ For `n ≥ 13`, `T₃(n) = T₃(n - 6) + 2n + 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Time](bridge-time.md)
 
 ## Sources
 

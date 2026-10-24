@@ -15,7 +15,7 @@ free variables of `g` those of `Q` outside `U`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marginal](marginal.md)
 
 ## Sources
 

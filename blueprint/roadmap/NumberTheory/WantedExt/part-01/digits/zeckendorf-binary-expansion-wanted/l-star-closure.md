@@ -15,6 +15,12 @@ followed by the maximal block from index `b + 1` (`b = 0` gives `β̄^1`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [L Star Collection](l-star-collection.md)
+- [Max LStar Block](max-lstar-block.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

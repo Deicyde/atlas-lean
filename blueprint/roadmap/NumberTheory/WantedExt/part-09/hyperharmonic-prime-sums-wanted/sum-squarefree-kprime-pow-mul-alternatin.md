@@ -19,7 +19,9 @@ p` (types II, III), `ζ(q) = ∑ 1/n^q`, and `ζ̄ = alternatingZeta`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Zeta](alternating-zeta.md)
+- [Generalized Harmonic](../../part-08/generalized-harmonic-gamma-wanted/generalized-harmonic.md)
+- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
 
 ## Sources
 

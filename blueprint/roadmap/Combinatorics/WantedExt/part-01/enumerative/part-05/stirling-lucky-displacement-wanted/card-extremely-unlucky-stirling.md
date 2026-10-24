@@ -12,7 +12,8 @@ order `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Stirling Lucky Set](stirling-lucky-set.md)
 
 ## Sources
 

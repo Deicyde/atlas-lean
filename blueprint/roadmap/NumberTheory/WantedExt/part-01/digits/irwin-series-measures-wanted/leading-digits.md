@@ -17,6 +17,10 @@ Article A11, notation before Proposition 4.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integer Length](integer-length.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)

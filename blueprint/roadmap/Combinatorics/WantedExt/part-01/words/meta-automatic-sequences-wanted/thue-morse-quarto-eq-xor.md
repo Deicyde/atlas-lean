@@ -12,7 +12,8 @@ Proposition 8: `𝒬(n) = t(n) ⊕ d(n)` where `t` is the Thue–Morse sequence 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thue Morse](../../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
+- [Thue Morse Quarto](thue-morse-quarto.md)
 
 ## Sources
 

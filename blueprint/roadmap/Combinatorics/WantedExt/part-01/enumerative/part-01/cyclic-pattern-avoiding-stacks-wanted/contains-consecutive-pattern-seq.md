@@ -14,6 +14,10 @@ relative order of `p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Same Relative Order](same-relative-order.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CyclicPatternAvoidingStacksWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ With `α` the real root and `β`, `γ = conj β` the non-real roots of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 
 ## Sources
 

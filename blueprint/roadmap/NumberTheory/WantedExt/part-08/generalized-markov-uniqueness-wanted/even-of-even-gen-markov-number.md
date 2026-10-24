@@ -11,7 +11,7 @@ Lemma 4.13: if some `k`-generalized Markov number is even, then `k` is even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Number](is-gen-markov-number.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For `k ≥ 1`, `o(k)` equals the sum over the binary strings of length `k` that 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positional Colored Composition Count](positional-colored-composition-count.md)
 
 ## Sources
 

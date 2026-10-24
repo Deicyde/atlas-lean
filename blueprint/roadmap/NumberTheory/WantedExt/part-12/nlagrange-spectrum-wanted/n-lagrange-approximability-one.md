@@ -12,7 +12,7 @@ For `n = 1` the factor `gcd(t, 1)` is `1`: `λ₁` is the classical approximabil
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Approximability](n-lagrange-approximability.md)
 
 ## Sources
 

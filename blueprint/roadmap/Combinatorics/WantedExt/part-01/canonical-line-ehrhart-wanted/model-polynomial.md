@@ -14,6 +14,10 @@ lean: MetaMathlibExt.modelPolynomial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Complex Binomial Polynomial](complex-binomial-polynomial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

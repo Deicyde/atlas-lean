@@ -14,6 +14,10 @@ sequence `(k + 1)/[k + 1]`; `β_n = β_n(0)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q Bracket](q-bracket.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CarlitzTypeQPolynomialsWanted](../../../../../../../sources/v2/WantedExt.md)

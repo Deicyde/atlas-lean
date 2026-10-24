@@ -12,7 +12,11 @@ Cut against a closed proof.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyps](hyps.md)
+
+## Proof depends on
+
+- [Hyp](hyp.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ A Hamiltonian path from `s` to `t` in the digraph on `0, …, n - 1` with edge l
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Arc](../../../path/arc.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPath](../../../../../../../sources/v2/CSLibExt.md)

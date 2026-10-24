@@ -12,7 +12,12 @@ lean: MetaMathlibExt.biunitaryDivisors_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Biunitary Divisors](biunitary-divisors.md)
+
+## Proof depends on
+
+- [Gcd Unitary](gcd-unitary.md)
+- [Gcd Unitary zero right](gcd-unitary-zero-right.md)
 
 ## Sources
 

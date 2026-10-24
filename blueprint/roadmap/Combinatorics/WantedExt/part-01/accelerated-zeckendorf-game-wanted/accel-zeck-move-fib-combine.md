@@ -14,7 +14,7 @@ of index `p - 1`, `F_{i-2}` copies of index `p` and `F_{i-1}` copies of index `p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accel Zeck Move](accel-zeck-move.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ Characteristic lemma: the associated triple of a `k`-generalized Cohn triple is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
+
+## Proof depends on
+
+- [Is Gen Cohn Matrix](is-gen-cohn-matrix.md)
+- [Gen Cohn S](gen-cohn-s.md)
 
 ## Sources
 

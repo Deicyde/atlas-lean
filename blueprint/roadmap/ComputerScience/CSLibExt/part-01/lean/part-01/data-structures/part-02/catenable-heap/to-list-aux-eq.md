@@ -12,7 +12,9 @@ The accumulator flattening prepends the naive flattening to the accumulator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [To List Aux](to-list-aux.md)
+- [To List Naive](to-list-naive.md)
 
 ## Sources
 

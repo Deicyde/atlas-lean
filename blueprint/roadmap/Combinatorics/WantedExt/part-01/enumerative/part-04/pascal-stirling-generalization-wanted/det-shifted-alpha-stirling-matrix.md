@@ -11,7 +11,7 @@ Theorem 2, determinant: if `α_1 = 1` then `det 𝖲_α(n) = ∏_{j=1}^n α_j^{j
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Alpha Stirling Matrix](shifted-alpha-stirling-matrix.md)
 
 ## Sources
 

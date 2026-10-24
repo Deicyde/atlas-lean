@@ -14,6 +14,10 @@ in row `j` (rows without cells contribute `1`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [M Falling Factorial](m-falling-factorial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WeightedFilePlacementsWanted](../../../../../../../sources/v2/WantedExt.md)

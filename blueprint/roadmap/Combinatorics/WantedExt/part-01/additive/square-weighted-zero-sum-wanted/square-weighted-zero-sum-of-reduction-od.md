@@ -15,7 +15,8 @@ the two agree for prime `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Weighted Zero Sum](has-weighted-zero-sum.md)
+- [Square Set](square-set.md)
 
 ## Sources
 

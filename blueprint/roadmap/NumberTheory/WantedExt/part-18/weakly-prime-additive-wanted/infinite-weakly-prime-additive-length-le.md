@@ -12,7 +12,8 @@ prime-additive `n` with `m ∣ n` and `κ_n ≤ 4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weakly Prime Additive](is-weakly-prime-additive.md)
+- [Weakly Prime Additive Length](weakly-prime-additive-length.md)
 
 ## Sources
 

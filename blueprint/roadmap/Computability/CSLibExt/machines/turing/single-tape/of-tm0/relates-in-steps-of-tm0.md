@@ -13,7 +13,13 @@ between configurations whose tapes correspond.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [Of TM0](of-tm0.md)
+- [To Tape](to-tape.md)
+
+## Proof depends on
+
+- [Step of TM0 of step eq some](step-of-tm0-of-step-eq-some.md)
 
 ## Sources
 

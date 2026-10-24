@@ -12,7 +12,11 @@ Conditional independence given `S` only involves the variables of `A` and `B` ou
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond Indep](cond-indep.md)
+
+## Proof depends on
+
+- [Marginal](marginal.md)
 
 ## Sources
 

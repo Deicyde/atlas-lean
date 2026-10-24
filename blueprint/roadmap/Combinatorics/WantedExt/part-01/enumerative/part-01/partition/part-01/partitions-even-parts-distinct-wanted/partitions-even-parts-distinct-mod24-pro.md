@@ -14,7 +14,7 @@ the four progressions in that order, with `ped` represented by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Even Parts Count](../../../../part-04/overpartitions-odd-parts-wanted/distinct-even-parts-count.md)
 
 ## Sources
 

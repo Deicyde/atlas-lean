@@ -13,7 +13,9 @@ transitions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+- [HMM](../../sequence/hidden-markov/hmm.md)
+- [Nonneg](../../sequence/hidden-markov/nonneg.md)
 
 ## Sources
 

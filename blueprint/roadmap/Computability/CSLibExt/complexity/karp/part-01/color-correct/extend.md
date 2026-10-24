@@ -13,7 +13,12 @@ good.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col Good](col-good.md)
+- [Col St](../color/col-st.md)
+
+## Proof depends on
+
+- [Cons Edges](../color/cons-edges.md)
 
 ## Sources
 

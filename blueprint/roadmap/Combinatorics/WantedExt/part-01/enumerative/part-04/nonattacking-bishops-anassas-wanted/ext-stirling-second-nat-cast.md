@@ -12,7 +12,7 @@ At natural arguments `extStirlingSecond` is `Nat.stirlingSecond`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ext Stirling Second](ext-stirling-second.md)
 
 ## Sources
 

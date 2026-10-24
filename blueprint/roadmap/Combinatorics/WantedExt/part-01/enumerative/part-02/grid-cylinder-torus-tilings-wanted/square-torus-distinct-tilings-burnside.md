@@ -17,7 +17,8 @@ transformations `F ↦ (c ↦ g⁻¹ • F (g · (c + v)))`, `v ∈ (ℤ/nℤ)²
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Cell Action](square-cell-action.md)
+- [Torus Shift Sum](torus-shift-sum.md)
 
 ## Sources
 

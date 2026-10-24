@@ -12,7 +12,15 @@ lean: Cslib.MachineLearning.Sequence.KalmanFilter.step_valid
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
+- [Valid](valid.md)
+- [Step](step.md)
+
+## Proof depends on
+
+- [Predict](predict.md)
+- [Prediction preserves validity](predict-valid.md)
+- [The update preserves validity](update-valid.md)
 
 ## Sources
 

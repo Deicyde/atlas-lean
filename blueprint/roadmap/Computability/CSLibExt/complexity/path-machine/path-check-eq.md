@@ -13,7 +13,18 @@ every mark cleared.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode P](../path/decode-p.md)
+- [Path Check](../path/path-check.md)
+- [Reach Marks](../path/reach-marks.md)
+
+## Proof depends on
+
+- [Get D ite](get-d-ite.md)
+- [Mark Pass replicate](mark-pass-replicate.md)
+- [Set replicate](set-replicate.md)
+- [Init Marks](../path/init-marks.md)
+- [Length iterate mark Pass](../path-correct/length-iterate-mark-pass.md)
+- [Mark Pass](../path/mark-pass.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ is not formalized here (see `scottishBook74_holds`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eval Poly](eval-poly.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.ScottishBook74Wanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,12 @@ pattern.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
+
+## Proof depends on
+
+- [Inv Seq Contains Pattern](inv-seq-contains-pattern.md)
+- [Not inv Seq Contains Pattern of lt](not-inv-seq-contains-pattern-of-lt.md)
 
 ## Sources
 

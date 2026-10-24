@@ -15,7 +15,7 @@ term `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources
 

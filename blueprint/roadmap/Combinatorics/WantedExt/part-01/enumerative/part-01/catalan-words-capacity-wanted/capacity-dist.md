@@ -13,6 +13,10 @@ The capacity distribution `∑_{w ∈ S} q^{cap w}` of a finite set of words.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Word Capacity](word-capacity.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CatalanWordsCapacityWanted](../../../../../../../sources/v2/WantedExt.md)

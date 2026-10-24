@@ -13,7 +13,7 @@ lean: MetaMathlibExt.leonardoPK_self_homogeneous
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
 
 ## Sources
 

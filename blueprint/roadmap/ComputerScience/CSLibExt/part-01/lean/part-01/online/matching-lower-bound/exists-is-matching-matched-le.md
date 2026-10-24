@@ -13,7 +13,16 @@ matching (`BipartiteMatching.IsMatching`) with `2 n` edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../../graph/bipartite-matching/is-matching.md)
+- [Online Matcher](online-matcher.md)
+- [Matched](matched.md)
+- [To Adj](to-adj.md)
+
+## Proof depends on
+
+- [Is Perfect](is-perfect.md)
+- [Exists is Matching of is Perfect](exists-is-matching-of-is-perfect.md)
+- [No deterministic online bipartite matching algorithm beats `1/2`](exists-perfect-matched-le.md)
 
 ## Sources
 

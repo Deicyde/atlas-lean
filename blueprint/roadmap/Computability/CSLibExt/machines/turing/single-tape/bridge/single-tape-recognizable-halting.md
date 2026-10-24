@@ -12,7 +12,13 @@ The halting set is recognizable by a single-tape machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape Recognizable](../classes/single-tape-recognizable.md)
+
+## Proof depends on
+
+- [TM2 Recognizable](../../../../decidability/part-01/basic/tm2-recognizable.md)
+- [Single-tape and multi-stack machines recognize the same predicates](single-tape-recognizable-iff-tm2-recogni.md)
+- [Tm2 Recognizable halting](../../../../decidability/part-02/undecidable/tm2-recognizable-halting.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Adjacent windows multiply.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seg](seg.md)
 
 ## Sources
 

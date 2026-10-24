@@ -12,7 +12,8 @@ For each `n ≥ 1` and irrationals `ξ ≠ ξ'`, `λₙ(ξ) = max_{g ∣ n} λ(g
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Approximability](n-lagrange-approximability.md)
+- [N Markoff Approximability](n-markoff-approximability.md)
 
 ## Sources
 

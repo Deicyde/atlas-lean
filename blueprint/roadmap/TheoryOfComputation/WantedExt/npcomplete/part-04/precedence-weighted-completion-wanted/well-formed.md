@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Precedence Weighted Completion Instance](precedence-weighted-completion-instance.md)
 
 ## Sources
 

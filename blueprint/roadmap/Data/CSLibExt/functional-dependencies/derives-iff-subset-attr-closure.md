@@ -13,7 +13,19 @@ lean: Cslib.Databases.derives_iff_subset_attrClosure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](derives.md)
+- [FD](fd.md)
+- [Attr Closure](attr-closure.md)
+
+## Proof depends on
+
+- [Decompose](decompose.md)
+- [Armstrong's axioms are sound](sound.md)
+- [Union](union.md)
+- [Closure Loop](closure-loop.md)
+- [Closure Step](closure-step.md)
+- [Closure Witness Relation](closure-witness-relation.md)
+- [Holds In closure Witness Relation](holds-in-closure-witness-relation.md)
 
 ## Sources
 

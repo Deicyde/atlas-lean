@@ -15,6 +15,10 @@ A `k`-generalized Cohn matrix: an integer `2 × 2` matrix `P` of determinant `1`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Gen Markov Number](is-gen-markov-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedMarkovUniquenessWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ Lemma 2: for all positive integers `k` and `n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Multiples Interval Length](../../../MathlibExt/part-04/distinct-multiples-interval/distinct-multiples-interval-length.md)
 
 ## Sources
 

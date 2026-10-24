@@ -12,7 +12,13 @@ lean: Cslib.Databases.SatisfiesOn
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](../functional-dependencies/fd.md)
+- [Tuple](../relational-algebra/tuple.md)
+
+## Proof depends on
+
+- [Derives](../functional-dependencies/derives.md)
+- [Holds In](../functional-dependencies/holds-in.md)
 
 ## Sources
 

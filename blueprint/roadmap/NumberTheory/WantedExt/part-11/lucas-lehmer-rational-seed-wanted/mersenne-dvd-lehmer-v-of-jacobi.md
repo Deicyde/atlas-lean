@@ -13,7 +13,7 @@ symbols are written as Jacobi symbols (equal, `M_n` being prime).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer V](lehmer-v.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The Lucas derivative at `0` is the ordinary derivative at `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Derivative](lucas-derivative.md)
 
 ## Sources
 

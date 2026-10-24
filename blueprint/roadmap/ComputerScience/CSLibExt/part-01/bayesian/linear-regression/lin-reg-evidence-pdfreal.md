@@ -17,6 +17,12 @@ cases.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lin Reg Likelihood PDFReal](lin-reg-likelihood-pdfreal.md)
+- [Lin Reg Post Mean](lin-reg-post-mean.md)
+- [Lin Reg Post Var](lin-reg-post-var.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Bayesian.LinearRegression](../../../../../../sources/v2/CSLibExt.md)

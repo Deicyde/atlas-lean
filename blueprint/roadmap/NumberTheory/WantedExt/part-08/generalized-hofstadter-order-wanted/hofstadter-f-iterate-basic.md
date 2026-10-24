@@ -13,7 +13,7 @@ Basic properties of `F_k^j` for `j, k ≥ 1`: `F_k^j(1) = F_k^j(2) = 1`; `F_k^j(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

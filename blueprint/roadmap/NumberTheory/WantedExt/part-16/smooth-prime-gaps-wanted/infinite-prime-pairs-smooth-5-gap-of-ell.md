@@ -12,7 +12,7 @@ primes `p > q` whose difference `p - q` is `5`-smooth.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elliott Halberstam](../../part-13/prime-gap-bounds-hypotheses/elliott-halberstam.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Bridge for Definition 6: for an edge `e` of the mother graph and `1 < n < b`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hoey Sloane Step](is-hoey-sloane-step.md)
+- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
+- [Hoey Sloane Transition](hoey-sloane-transition.md)
 
 ## Sources
 

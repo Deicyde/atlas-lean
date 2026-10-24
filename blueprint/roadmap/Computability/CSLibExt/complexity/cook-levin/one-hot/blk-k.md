@@ -11,7 +11,14 @@ Encoded clauses of the cells `(t, k, ·)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [C Idx](../family/c-idx.md)
+- [Num Vars](../family/num-vars.md)
+- [Cell CNF](cell-cnf.md)
+- [Encode CNF](../../dense-sat/encode-cnf.md)
 
 ## Sources
 

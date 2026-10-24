@@ -18,6 +18,10 @@ value for indices with `k₁ = 0` (not defined in the paper) is a junk value.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sz QMZVPartial](sz-qmzvpartial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

@@ -15,7 +15,7 @@ permutiples have all digits zero and the bound would read `0 ≤ -1`. This is th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Permutiple](../permutiple-wanted/is-permutiple.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ The zeroth moment is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Dist Moment](cyclotomic-dist-moment.md)
+
+## Proof depends on
+
+- [Cyclotomic Box](cyclotomic-box.md)
+- [Cyclotomic Lattice Point](cyclotomic-lattice-point.md)
+- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
+- [Zero mem cyclotomic Box](zero-mem-cyclotomic-box.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ For odd `B > 3`, every terminal cycle of `K_B` on `X_B` has length at most
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
+- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
 
 ## Sources
 

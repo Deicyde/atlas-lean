@@ -11,7 +11,12 @@ Batcher's odd-even merge sorting network on `2 ^ k` wires.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](../zero-one/network.md)
+
+## Proof depends on
+
+- [Of Pairs](../bitonic/of-pairs.md)
+- [Odd Even Sort N](odd-even-sort-n.md)
 
 ## Sources
 

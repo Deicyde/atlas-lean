@@ -11,7 +11,11 @@ A production of `g`, in `regGrammar g`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+
+## Proof depends on
+
+- [Shift Sym](shift-sym.md)
 
 ## Sources
 

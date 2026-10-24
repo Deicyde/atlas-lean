@@ -13,7 +13,7 @@ lean: MetaMathlibExt.SelbergClassFunction.exists_no_aPoint_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Class Function](selberg-class-function.md)
 
 ## Sources
 

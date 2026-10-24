@@ -13,7 +13,8 @@ interval: the first `k` numbers of `I_n` are `B_{(n-1)kτ + 1}, …, B_{(n-1)kτ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Recurrence](anti-recurrence.md)
+- [Anti Recurrence Complement](anti-recurrence-complement.md)
 
 ## Sources
 

@@ -13,7 +13,10 @@ Recurrence from `ε^{n+1} = ε^n ε`: `f_{n+1} = f_n X + d g_n Y` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
+- [Neg Pell Fund X](neg-pell-fund-x.md)
+- [Neg Pell Fund Y](neg-pell-fund-y.md)
+- [Neg Pell G](neg-pell-g.md)
 
 ## Sources
 

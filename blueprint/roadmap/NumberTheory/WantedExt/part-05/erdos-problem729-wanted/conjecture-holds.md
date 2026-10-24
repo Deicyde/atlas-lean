@@ -15,7 +15,7 @@ Moved from `OpenConjectures/NumberTheory/ErdosProblem729`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

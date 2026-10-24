@@ -11,7 +11,7 @@ A literal's tokens as they lie on the token stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
 
 ## Sources
 

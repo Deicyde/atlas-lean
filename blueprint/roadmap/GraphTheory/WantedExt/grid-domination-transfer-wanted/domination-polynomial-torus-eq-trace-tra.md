@@ -14,7 +14,11 @@ Mertens' Theorem 8: the domination polynomial of the `m × n` torus is `Tr Ā^n`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination Signature](domination-signature.md)
+- [Domination State](domination-state.md)
+- [Is Domination Signature](is-domination-signature.md)
+- [Domination Polynomial](domination-polynomial.md)
+- [Domination Transfer Matrix](domination-transfer-matrix.md)
 
 ## Sources
 

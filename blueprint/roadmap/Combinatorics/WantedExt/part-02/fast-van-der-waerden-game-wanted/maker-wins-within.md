@@ -14,6 +14,10 @@ force a win with at most `p` further selections.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Contains Copy](contains-copy.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.FastVanDerWaerdenGameWanted](../../../../../sources/v2/WantedExt.md)

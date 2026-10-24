@@ -11,7 +11,7 @@ lean: MetaMathlibExt.isClosed_nLagrangeSpectrum
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

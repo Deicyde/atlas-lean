@@ -12,7 +12,11 @@ The empty exponent word: `gijswijtBlockWord m 1 a = ε`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block Word](gijswijt-block-word.md)
+
+## Proof depends on
+
+- [Gijswijt Block](gijswijt-block.md)
 
 ## Sources
 

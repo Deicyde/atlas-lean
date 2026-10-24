@@ -11,7 +11,11 @@ Pointwise implication between assertions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](assertion.md)
+
+## Proof depends on
+
+- [State](../syntax/state.md)
 
 ## Sources
 

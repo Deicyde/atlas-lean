@@ -12,7 +12,7 @@ The whole semigroup is a `J`-set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is JSet](is-jset.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Every sequence is in its own `q`-kernel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Kernel](k-kernel.md)
 
 ## Sources
 

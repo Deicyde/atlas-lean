@@ -11,7 +11,7 @@ The joint distribution of the first `n` variables, by the chain rule.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
 
 ## Sources
 

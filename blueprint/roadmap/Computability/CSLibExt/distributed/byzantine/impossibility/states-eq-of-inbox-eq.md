@@ -15,7 +15,7 @@ in equal states, then they stay in equal states.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
 
 ## Sources
 

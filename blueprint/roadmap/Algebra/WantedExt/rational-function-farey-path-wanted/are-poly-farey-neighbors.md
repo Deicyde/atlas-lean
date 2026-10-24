@@ -14,6 +14,10 @@ lean: MetaMathlibExt.ArePolyFareyNeighbors
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Poly Farey Deg Neighbor](is-poly-farey-deg-neighbor.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.RationalFunctionFareyPathWanted](../../../../sources/v2/WantedExt.md)

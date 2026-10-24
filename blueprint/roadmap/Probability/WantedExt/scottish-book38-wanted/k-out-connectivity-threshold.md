@@ -19,7 +19,7 @@ friends is a path in the underlying undirected graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [KOut Connected Prob](kout-connected-prob.md)
 
 ## Sources
 

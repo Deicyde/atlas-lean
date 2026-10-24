@@ -13,7 +13,7 @@ absolute implied constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Pyramidal Square Distance](square-pyramidal-square-distance.md)
 
 ## Sources
 

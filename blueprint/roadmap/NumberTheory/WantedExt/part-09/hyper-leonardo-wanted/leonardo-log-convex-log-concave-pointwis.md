@@ -14,7 +14,7 @@ sequence is log-convex for `n = 1`" is read as the defining inequality at index 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

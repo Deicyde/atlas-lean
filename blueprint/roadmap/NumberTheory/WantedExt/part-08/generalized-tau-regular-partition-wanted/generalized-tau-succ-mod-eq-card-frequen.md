@@ -12,7 +12,7 @@ where `F_A(n)` counts partitions of `n` whose every frequency lies in `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

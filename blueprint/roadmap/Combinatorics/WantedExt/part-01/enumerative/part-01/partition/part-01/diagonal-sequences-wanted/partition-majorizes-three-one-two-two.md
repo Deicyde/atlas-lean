@@ -12,7 +12,7 @@ lean: MetaMathlibExt.partitionMajorizes_three_one_two_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Majorizes](partition-majorizes.md)
 
 ## Sources
 

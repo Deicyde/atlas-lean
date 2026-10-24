@@ -12,7 +12,14 @@ Every nonzero codeword has weight at least 3.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Min Weight](../linear-code/min-weight.md)
+
+## Proof depends on
+
+- [H](h.md)
+- [Linear Code](../linear-code/linear-code.md)
+- [Syndrome](../linear-code/syndrome.md)
 
 ## Sources
 

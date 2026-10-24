@@ -16,6 +16,10 @@ joins two non-adjacent vertices of `R`). The remaining `s - r` faces are then tr
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inscribed Polygon Edges](inscribed-polygon-edges.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KNaplesParkingWanted](../../../../../../../sources/v2/WantedExt.md)

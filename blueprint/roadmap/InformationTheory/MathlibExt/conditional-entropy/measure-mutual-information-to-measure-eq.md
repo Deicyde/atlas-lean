@@ -13,7 +13,7 @@ are independent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Measure Mutual Information](measure-mutual-information.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ displayed integer equality is the paper's exact cardinality formula without devi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Indexed AP](is-indexed-ap.md)
+- [Ordered Finset](ordered-finset.md)
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: MetaMathlibExt.IsKAutomatic
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [K Kernel](k-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Words.Automatic](../../../../../../sources/v2/MathlibExt.md)

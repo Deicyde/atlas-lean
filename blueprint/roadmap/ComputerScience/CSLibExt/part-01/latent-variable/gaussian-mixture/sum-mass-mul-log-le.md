@@ -13,7 +13,22 @@ lean: Cslib.MachineLearning.LatentVariable.GaussianMixture.sum_mass_mul_log_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+- [Mass](mass.md)
+
+## Proof depends on
+
+- [Is Dist](../expectation-maximization/is-dist.md)
+- [Is Dist posterior](../expectation-maximization/is-dist-posterior.md)
+- [Marginal](../expectation-maximization/marginal.md)
+- [Posterior](../expectation-maximization/posterior.md)
+- [Gibbs' inequality](../expectation-maximization/sum-mul-log-sub-le.md)
+- [Params](params.md)
+- [Valid](valid.md)
+- [Iso Gauss PDF](iso-gauss-pdf.md)
+- [Joint](joint.md)
+- [Nonempty of valid](nonempty-of-valid.md)
+- [Resp](resp.md)
 
 ## Sources
 

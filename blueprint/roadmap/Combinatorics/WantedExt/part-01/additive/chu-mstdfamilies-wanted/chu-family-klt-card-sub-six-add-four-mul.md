@@ -12,7 +12,7 @@ Lemma 3: `(A - A)⁺` contains exactly `lt + t` elements of the form `6 + 4m`, `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chu Family KLT](chu-family-klt.md)
 
 ## Sources
 

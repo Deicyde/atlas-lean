@@ -13,6 +13,10 @@ A position is an ult when it is not terminal but has a terminal option.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Placement Terminal](placement-terminal.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.PenultsOfTakWanted](../../../../sources/v2/WantedExt.md)

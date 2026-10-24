@@ -14,7 +14,7 @@ number `H_{k,k} = ∑_{i=1}^k (-1)^{i-1} C(k, i) i^{-k}` (Equation (2.18)).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height One Multiple Zeta](height-one-multiple-zeta.md)
 
 ## Sources
 

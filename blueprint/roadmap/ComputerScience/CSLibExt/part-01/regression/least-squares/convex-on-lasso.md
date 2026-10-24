@@ -12,7 +12,12 @@ The lasso objective is convex for `λ ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lasso](lasso.md)
+
+## Proof depends on
+
+- [Convex On rss](convex-on-rss.md)
+- [Rss](rss.md)
 
 ## Sources
 

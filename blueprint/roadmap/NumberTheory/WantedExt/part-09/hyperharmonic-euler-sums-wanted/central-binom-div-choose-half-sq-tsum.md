@@ -15,7 +15,7 @@ where `O_m = O_m(1)` (the source writes `O_m` for the depth-one odd harmonic num
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
 
 ## Sources
 

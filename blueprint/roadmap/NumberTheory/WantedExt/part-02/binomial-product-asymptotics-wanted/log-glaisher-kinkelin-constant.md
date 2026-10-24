@@ -12,7 +12,7 @@ lean: MetaMathlibExt.log_glaisherKinkelinConstant
 
 ## Depends on
 
-This node has no prerequisites.
+- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

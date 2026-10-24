@@ -12,7 +12,7 @@ a-point in `Re s ≤ E₂`, `|Im s| ≥ τ_k`. Stated under `a ≠ 0` or `a(n) �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Class Function](selberg-class-function.md)
 
 ## Sources
 

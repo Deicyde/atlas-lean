@@ -12,7 +12,7 @@ The scaled significand `x / 2^ulpExp x` of a nonzero `x` has `p` bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ulp Exp](ulp-exp.md)
 
 ## Sources
 

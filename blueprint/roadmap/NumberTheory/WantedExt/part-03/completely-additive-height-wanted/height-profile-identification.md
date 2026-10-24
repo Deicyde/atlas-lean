@@ -15,7 +15,8 @@ and suppose `Nₙ ∼ C₁ n^κ exp(C₂ n^β)` with `β ∈ (0, 1)`, `C₁, C�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Height Function](is-height-function.md)
+- [Meinardus Hypotheses](meinardus-hypotheses.md)
 
 ## Sources
 

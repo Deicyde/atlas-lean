@@ -11,7 +11,11 @@ The flags of all nodes, in one left-to-right pass.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regex Node](regex-node.md)
+
+## Proof depends on
+
+- [Step Flags](step-flags.md)
 
 ## Sources
 

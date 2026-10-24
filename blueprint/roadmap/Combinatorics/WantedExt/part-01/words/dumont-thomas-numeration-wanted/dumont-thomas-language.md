@@ -15,6 +15,11 @@ accepted by `𝒜_{η,s}` (`s = u₋₁|u₀`) whose length is `ℓp + 1`, which
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Last Letter Digits](last-letter-digits.md)
+- [Seed Automaton](seed-automaton.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.DumontThomasNumerationWanted](../../../../../../sources/v2/WantedExt.md)

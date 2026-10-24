@@ -12,7 +12,7 @@ Characteristic value: for `k = 0` the left child of the root of `MT(0)` is `(1, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Markov Tree](gen-markov-tree.md)
 
 ## Sources
 

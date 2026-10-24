@@ -79,7 +79,23 @@ theorem found_sound (g : EncodedCFG T) (w : List T) : ∀ x ∈ found g w, Sound
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Factor](factor.md)
+- [Found](found.md)
+- [Starts](starts.md)
+- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Yields](../../../languages/context-free/part-02/yields/yields.md)
+
+## Proof depends on
+
+- [Iterate closed](../primrec-list/iterate-closed.md)
+- [Mem B](../primrec-list/mem-b.md)
+- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Factor eq append](factor-eq-append.md)
+- [Items](items.md)
+- [Mem Step](mem-step.md)
+- [Sym Fits](sym-fits.md)
 
 ## Sources
 

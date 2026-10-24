@@ -17,7 +17,14 @@ size.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent](consistent.md)
+- [Decides Halting](decides-halting.md)
+- [Formal Theory](formal-theory.md)
+- [Halts](halts.md)
+- [Machine](machine.md)
+- [False Sentence](false-sentence.md)
+- [Halts Sentence](halts-sentence.md)
+- [Not Halts Sentence](not-halts-sentence.md)
 
 ## Sources
 

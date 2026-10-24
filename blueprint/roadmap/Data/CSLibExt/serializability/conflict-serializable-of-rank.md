@@ -13,7 +13,21 @@ conflict-serializable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conflict Serializable](conflict-serializable.md)
+- [Op](op.md)
+- [Precedence Edge](precedence-edge.md)
+
+## Proof depends on
+
+- [Directed Adjacency](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
+- [Edge](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/edge.md)
+- [Directed Cycle In](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/directed-cycle-in.md)
+- [Is Acyclic](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-acyclic.md)
+- [Directed Cycle In iff](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/directed-cycle-in-iff.md)
+- [Access](access.md)
+- [Conflicts](conflicts.md)
+- [The serializability theorem](conflict-serializable-iff-is-acyclic.md)
+- [Precedence Graph](precedence-graph.md)
 
 ## Sources
 

@@ -15,7 +15,21 @@ and the weighted sample covariance (the log-determinant trace inequality
 
 ## Depends on
 
-This node has no prerequisites.
+- [Spans Affinely](spans-affinely.md)
+- [Valid Params](valid-params.md)
+- [Comp Term](comp-term.md)
+- [New Cov](new-cov.md)
+- [New Mean](new-mean.md)
+
+## Proof depends on
+
+- [Marginal](../expectation-maximization/marginal.md)
+- [Params](params.md)
+- [Valid](valid.md)
+- [Joint](joint.md)
+- [Resp](resp.md)
+- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+- [The weighted Gaussian MLE](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-mle/sum-mul-log-multivariate-gaussian-pdfrea-4.md)
 
 ## Sources
 

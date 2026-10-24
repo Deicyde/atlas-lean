@@ -12,7 +12,12 @@ The paper's example: `[11]₂ = 1011`, so `T(11) = S(1) S(2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
+
+## Proof depends on
+
+- [Binary Run Lengths](binary-run-lengths.md)
+- [Bit Run Lengths](bit-run-lengths.md)
 
 ## Sources
 

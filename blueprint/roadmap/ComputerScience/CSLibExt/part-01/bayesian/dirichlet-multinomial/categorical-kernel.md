@@ -14,6 +14,10 @@ outside the probability vectors (a null set under a Dirichlet prior) draws label
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prob Vectors](prob-vectors.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Bayesian.DirichletMultinomial](../../../../../../sources/v2/CSLibExt.md)

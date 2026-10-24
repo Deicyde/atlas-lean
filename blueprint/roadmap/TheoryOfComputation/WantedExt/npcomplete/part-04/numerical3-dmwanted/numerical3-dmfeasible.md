@@ -11,7 +11,7 @@ Permutations matching all triples to the target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Numerical3 DMInstance](numerical3-dminstance.md)
 
 ## Sources
 

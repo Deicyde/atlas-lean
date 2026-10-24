@@ -13,7 +13,7 @@ of `X` are congruent modulo the reduced denominator of `c`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interpolation Poly](interpolation-poly.md)
 
 ## Sources
 

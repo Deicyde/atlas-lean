@@ -11,7 +11,11 @@ SUBSET-SUM: some sublist of the numbers sums to the target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Encode SS](encode-ss.md)
 
 ## Sources
 

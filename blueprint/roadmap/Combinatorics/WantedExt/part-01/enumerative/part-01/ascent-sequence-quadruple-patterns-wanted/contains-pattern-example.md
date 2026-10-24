@@ -12,7 +12,7 @@ The paper's example `00203413` contains the pattern `011`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contains Pattern](contains-pattern.md)
 
 ## Sources
 

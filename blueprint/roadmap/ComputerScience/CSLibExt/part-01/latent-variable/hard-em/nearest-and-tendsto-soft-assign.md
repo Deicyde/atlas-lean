@@ -14,7 +14,12 @@ common variance tends to `0`, the responsibilities tend to the hard assignment `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest](../../../part-02/kmeans/nearest.md)
+- [Soft Assign](soft-assign.md)
+
+## Proof depends on
+
+- [The zero-variance limit](tendsto-soft-assign.md)
 
 ## Sources
 

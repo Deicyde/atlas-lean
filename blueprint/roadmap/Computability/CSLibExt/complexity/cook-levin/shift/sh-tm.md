@@ -11,7 +11,22 @@ lean: Cslib.Complexity.CookLevin.Shift.shTM
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [MS](../counter-view/ms.md)
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
+- [BD](bd.md)
+- [CK](ck.md)
+- [CL](cl.md)
+- [GL](gl.md)
+- [LS](ls.md)
+- [Lab](lab.md)
+- [PS](ps.md)
+- [ST](st.md)
+- [Prog](prog.md)
 
 ## Sources
 

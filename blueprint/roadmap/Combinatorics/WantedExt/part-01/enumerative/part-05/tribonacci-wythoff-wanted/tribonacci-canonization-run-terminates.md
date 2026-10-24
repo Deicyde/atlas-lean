@@ -12,7 +12,8 @@ The canonization procedure applied to an improper word of weight `m` followed by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Canonization Run](tribonacci-canonization-run.md)
+- [Tribonacci Improper Weight](tribonacci-improper-weight.md)
 
 ## Sources
 

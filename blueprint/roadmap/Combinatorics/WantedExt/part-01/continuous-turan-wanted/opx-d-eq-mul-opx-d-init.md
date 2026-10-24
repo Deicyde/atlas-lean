@@ -12,7 +12,7 @@ Proposition 5.6: if all points of `P ⊆ ℝ^{d+1}` share their last coordinate,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

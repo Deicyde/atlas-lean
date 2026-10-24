@@ -11,7 +11,11 @@ Pairwise vertex-disjoint directed paths for all pairs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Disjoint Paths Instance](directed-disjoint-paths-instance.md)
+
+## Proof depends on
+
+- [DAdj](dadj.md)
 
 ## Sources
 

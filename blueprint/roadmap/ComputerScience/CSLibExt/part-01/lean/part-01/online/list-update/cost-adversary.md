@@ -12,7 +12,14 @@ lean: Cslib.Algorithms.Lean.Online.ListUpdate.OnlineListUpdate.cost_adversary
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online list-update algorithm on the items...](a-deterministic-online-list-update-algor.md)
+- [Adversary](adversary.md)
+- [Cost](cost.md)
+
+## Proof depends on
+
+- [List ne nil](list-ne-nil.md)
+- [Access Cost](access-cost.md)
 
 ## Sources
 

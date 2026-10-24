@@ -13,7 +13,8 @@ Josephus order plus one, including the survivor last; there is no deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus Elimination Order](josephus-elimination-order.md)
+- [Maximum Nim Grundy](maximum-nim-grundy.md)
 
 ## Sources
 

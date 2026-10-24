@@ -11,7 +11,11 @@ Clauses containing `x` positively and not negatively.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

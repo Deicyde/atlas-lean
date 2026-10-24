@@ -12,7 +12,11 @@ Every left vertex matched before a step stays matched with the same partner.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Step](step.md)
+
+## Proof depends on
+
+- [Free](../../graph/bipartite-matching/free.md)
 
 ## Sources
 

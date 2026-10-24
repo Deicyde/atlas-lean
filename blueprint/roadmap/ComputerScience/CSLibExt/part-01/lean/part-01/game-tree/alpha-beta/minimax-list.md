@@ -13,7 +13,7 @@ if there is none).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
 
 ## Sources
 

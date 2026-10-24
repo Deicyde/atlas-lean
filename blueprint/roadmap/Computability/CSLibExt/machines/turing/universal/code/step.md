@@ -11,7 +11,13 @@ One step of the simulation, `none` if the machine halts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Cfg](cfg.md)
+
+## Proof depends on
+
+- [Act](act.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

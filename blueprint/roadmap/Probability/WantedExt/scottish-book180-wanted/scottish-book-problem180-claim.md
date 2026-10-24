@@ -26,6 +26,10 @@ independence property.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Stationary](is-stationary.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.ScottishBook180Wanted](../../../../sources/v2/WantedExt.md)

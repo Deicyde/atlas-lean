@@ -13,7 +13,21 @@ value, `∑ x, weight x * g (x v) = ∑ a, belief v a * g a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
+- [Belief](belief.md)
+- [Weight](../variable-elimination/weight.md)
+
+## Proof depends on
+
+- [Down Message](down-message.md)
+- [Drop Last](drop-last.md)
+- [Eliminate](../variable-elimination/eliminate.md)
+- [Last Parent](../variable-elimination/last-parent.md)
+- [Parent](../variable-elimination/parent.md)
+- [Root Message](../variable-elimination/root-message.md)
+- [Sum weight mul eliminate cast Succ](sum-weight-mul-eliminate-cast-succ.md)
+- [Variable elimination is exact](../variable-elimination/sum-weight-mul-eq.md)
+- [Sum snoc](../bayesian-network/sum-snoc.md)
 
 ## Sources
 

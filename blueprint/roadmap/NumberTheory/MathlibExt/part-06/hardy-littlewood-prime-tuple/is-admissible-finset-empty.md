@@ -12,7 +12,7 @@ The empty set is admissible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Finset](is-admissible-finset.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ The sample covariance `(1 / N) ∑ n, (xₙ - x̄)(xₙ - x̄)ᵀ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sample Mean](sample-mean.md)
+- [Weighted Scatter](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.ProbabilisticPCAMLE](../../../../../../sources/v2/CSLibExt.md)

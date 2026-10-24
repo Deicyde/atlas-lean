@@ -14,7 +14,8 @@ the required `p ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus](../../../MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Maximum Nim H](maximum-nim-h.md)
 
 ## Sources
 

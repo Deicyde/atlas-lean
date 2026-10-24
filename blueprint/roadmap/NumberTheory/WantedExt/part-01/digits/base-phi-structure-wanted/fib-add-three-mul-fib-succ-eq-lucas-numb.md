@@ -11,7 +11,7 @@ lean: MetaMathlibExt.fib_add_three_mul_fib_succ_eq_lucasNumber
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

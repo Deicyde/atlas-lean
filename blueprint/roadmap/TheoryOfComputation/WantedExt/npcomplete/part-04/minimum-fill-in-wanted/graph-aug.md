@@ -11,7 +11,11 @@ The graph augmented by added edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Fill In Instance](minimum-fill-in-instance.md)
+
+## Proof depends on
+
+- [Edge Graph](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
 
 ## Sources
 

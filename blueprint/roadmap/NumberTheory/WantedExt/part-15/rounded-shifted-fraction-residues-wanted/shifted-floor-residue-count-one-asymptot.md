@@ -13,7 +13,7 @@ n ∑_{i ≥ 0} (1/(1+im-α) - 1/(2+im-α)) + O(√n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The chosen vertices on pair `q` are its chosen endpoints if `q` is an edge, else
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairs](../../part-01/clique/pairs.md)
+- [Touches](../subset-sum/touches.md)
+
+## Proof depends on
+
+- [Mem pairs](../../part-01/clique-correct/mem-pairs.md)
 
 ## Sources
 

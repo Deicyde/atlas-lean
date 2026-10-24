@@ -14,7 +14,12 @@ log-likelihood is monotone along `θ₀, M θ₀, M (M θ₀), …`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Em Q](em-q.md)
+- [Log Lik](log-lik.md)
+
+## Proof depends on
+
+- [The EM theorem](log-lik-le-of-em-q-le.md)
 
 ## Sources
 

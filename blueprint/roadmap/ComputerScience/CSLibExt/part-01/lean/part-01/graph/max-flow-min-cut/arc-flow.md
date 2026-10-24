@@ -11,7 +11,7 @@ A skew-symmetric flow as a nonnegative arc flow: its positive part, as naturals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../edmonds-karp/flow.md)
 
 ## Sources
 

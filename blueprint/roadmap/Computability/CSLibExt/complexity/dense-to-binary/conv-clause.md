@@ -12,7 +12,17 @@ One whole clause (terminator first), from any state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clause](../dense-sat/clause.md)
+- [Bin Clause](bin-clause.md)
+- [Conv](conv.md)
+- [End Clause](end-clause.md)
+- [Encode Clause](../dense-sat/encode-clause.md)
+- [Encode Lit](../../cook-levin/encode-lit.md)
+
+## Proof depends on
+
+- [Conv slots](conv-slots.md)
+- [Encode Slot](../dense-sat/encode-slot.md)
 
 ## Sources
 

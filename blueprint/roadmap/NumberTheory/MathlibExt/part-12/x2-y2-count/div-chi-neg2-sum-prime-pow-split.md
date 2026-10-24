@@ -12,7 +12,7 @@ On `p ^ e` with `p ≡ 1, 3 mod 8`, every divisor contributes 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Div Chi Neg2 Sum](div-chi-neg2-sum.md)
 
 ## Sources
 

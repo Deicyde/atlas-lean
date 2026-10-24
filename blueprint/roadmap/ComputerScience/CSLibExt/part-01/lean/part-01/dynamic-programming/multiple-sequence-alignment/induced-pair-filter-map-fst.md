@@ -12,7 +12,12 @@ The first row of the induced alignment is the first sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MSAlignment](msalignment.md)
+- [Induced Pair](induced-pair.md)
+
+## Proof depends on
+
+- [Alignment](../sequence-alignment/alignment.md)
 
 ## Sources
 

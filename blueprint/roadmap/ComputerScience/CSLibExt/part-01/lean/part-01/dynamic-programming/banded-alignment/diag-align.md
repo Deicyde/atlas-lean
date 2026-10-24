@@ -11,7 +11,7 @@ The diagonal alignment: match the common prefix, then gap the remainder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
 
 ## Sources
 

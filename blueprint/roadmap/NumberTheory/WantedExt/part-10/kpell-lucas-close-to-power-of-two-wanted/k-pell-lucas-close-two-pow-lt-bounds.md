@@ -12,7 +12,7 @@ lean: MetaMathlibExt.kPellLucas_close_two_pow_lt_bounds
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Pell Lucas](k-pell-lucas.md)
 
 ## Sources
 

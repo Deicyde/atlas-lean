@@ -11,7 +11,7 @@ If `g ≥ 2`, then `σ**(13^g)` has two distinct prime factors outside `{2, 3, 4
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

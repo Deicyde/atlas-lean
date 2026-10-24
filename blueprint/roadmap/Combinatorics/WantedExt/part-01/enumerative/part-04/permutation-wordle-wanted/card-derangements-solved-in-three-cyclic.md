@@ -12,7 +12,8 @@ cyclic shift in exactly three guesses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [Cyclic Shift Strategy](cyclic-shift-strategy.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ A permutation of total cost at most `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quadratic Assignment Instance](quadratic-assignment-instance.md)
 
 ## Sources
 

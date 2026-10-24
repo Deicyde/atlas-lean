@@ -12,7 +12,8 @@ four corners) contains at least `3` tokens.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Penult](placement-penult.md)
+- [Tak Has Road](tak-has-road.md)
 
 ## Sources
 

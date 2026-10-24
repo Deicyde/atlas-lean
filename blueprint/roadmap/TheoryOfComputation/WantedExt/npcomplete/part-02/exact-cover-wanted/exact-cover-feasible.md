@@ -11,7 +11,7 @@ A subcollection covering every element exactly once.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Cover Instance](exact-cover-instance.md)
 
 ## Sources
 

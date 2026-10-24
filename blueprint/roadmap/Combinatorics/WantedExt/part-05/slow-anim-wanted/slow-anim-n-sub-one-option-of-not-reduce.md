@@ -19,7 +19,9 @@ of `r(p')` is written stackwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Reduced](slow-anim-reduced.md)
+- [Slow ANim After](slow-anim-after.md)
+- [Slow ANim Reduction](slow-anim-reduction.md)
 
 ## Sources
 

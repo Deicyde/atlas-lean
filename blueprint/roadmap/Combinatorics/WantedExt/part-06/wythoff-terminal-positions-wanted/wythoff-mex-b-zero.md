@@ -12,7 +12,12 @@ lean: MetaMathlibExt.wythoffMexB_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Mex B](wythoff-mex-b.md)
+
+## Proof depends on
+
+- [Wythoff Mex A](wythoff-mex-a.md)
+- [Wythoff Mex A zero](wythoff-mex-a-zero.md)
 
 ## Sources
 

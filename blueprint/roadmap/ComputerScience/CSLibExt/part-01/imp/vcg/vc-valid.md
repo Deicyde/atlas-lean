@@ -12,7 +12,19 @@ Soundness for validity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [ACmd](acmd.md)
+- [Pre](pre.md)
+- [Strip](strip.md)
+- [Vc](vc.md)
+- [Assertion](../hoare/assertion.md)
+- [Entails](../hoare/entails.md)
+- [Valid](../hoare/valid.md)
+
+## Proof depends on
+
+- [Vc sound](vc-sound.md)
+- [Sound](../hoare-completeness/sound.md)
+- [Strengthen](../hoare-completeness/strengthen.md)
 
 ## Sources
 

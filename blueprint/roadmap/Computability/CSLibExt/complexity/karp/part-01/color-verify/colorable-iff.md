@@ -14,7 +14,20 @@ getting different colors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col](col.md)
+- [Ok Col](ok-col.md)
+- [Edge Graph](../color/edge-graph.md)
+
+## Proof depends on
+
+- [Code](code.md)
+- [Code uncode](code-uncode.md)
+- [Col flat of Fn](col-flat-of-fn.md)
+- [Flat](flat.md)
+- [Length flat](length-flat.md)
+- [Ok Col code](ok-col-code.md)
+- [Uncode](uncode.md)
+- [Uncode code](uncode-code.md)
 
 ## Sources
 

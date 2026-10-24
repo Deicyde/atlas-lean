@@ -14,7 +14,8 @@ lean: Cslib.Automata.DA.FinAcc.reindex_nerodeCongruenceDA
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Quotient Equiv Residual](nerode-quotient-equiv-residual.md)
+- [To DFA](to-dfa.md)
 
 ## Sources
 

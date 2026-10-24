@@ -11,7 +11,12 @@ Universality test: every reachable state accepts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+
+## Proof depends on
+
+- [Reachable](reachable-2.md)
+- [Mem B](../../part-01/primrec-list/mem-b.md)
 
 ## Sources
 

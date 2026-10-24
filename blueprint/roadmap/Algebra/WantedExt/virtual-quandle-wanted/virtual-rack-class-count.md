@@ -15,6 +15,11 @@ whose underlying rack is isomorphic to `R` is isomorphic to one of the form `(R,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Virtual Rack Iso](virtual-rack-iso.md)
+- [Rack Aut](rack-aut.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.VirtualQuandleWanted](../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ Characteristic value: `f_1(α) = 1/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Frac](stern-brocot-frac.md)
 
 ## Sources
 

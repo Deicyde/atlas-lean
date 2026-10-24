@@ -12,7 +12,8 @@ The row ends at its right end.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Row](hf-row.md)
+- [Hp R](../ham-path/hp-r.md)
 
 ## Sources
 

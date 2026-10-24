@@ -13,7 +13,8 @@ this reciprocal positive natural power is the formal version of `O(n^(1-2N))`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Watson Alternating Cosecant Sum](watson-alternating-cosecant-sum.md)
+- [Watson Alternating Main](watson-alternating-main.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ Expand 8-bit run lengths into bits, starting with zeros.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expand From](expand-from.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Compression.RunLength](../../../../../../../../sources/v2/CSLibExt.md)

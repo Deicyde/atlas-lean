@@ -11,7 +11,7 @@ The cyclic group `ℤ_{2^n}` has `2^{n(n-1)/2}` perfect covers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Count](count.md)
 
 ## Sources
 

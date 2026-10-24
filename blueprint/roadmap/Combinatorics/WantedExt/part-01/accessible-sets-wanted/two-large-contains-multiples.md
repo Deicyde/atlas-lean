@@ -11,7 +11,7 @@ Every 2-large positive set contains a multiple of each positive integer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RLarge](is-rlarge.md)
 
 ## Sources
 

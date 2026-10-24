@@ -13,7 +13,8 @@ Characteristic values of Kronecker's sums: `F_o(1) = 1 / 2`, `F_e(1) = 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kronecker FEven](kronecker-feven.md)
+- [Kronecker FOdd](kronecker-fodd.md)
 
 ## Sources
 

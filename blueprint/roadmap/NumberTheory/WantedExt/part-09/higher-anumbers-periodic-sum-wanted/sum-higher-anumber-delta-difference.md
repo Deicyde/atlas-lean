@@ -15,7 +15,14 @@ Proposition 5.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDelay](base-pdelay.md)
+- [Base PDigit Average](base-pdigit-average.md)
+- [Base PPeriod](base-pperiod.md)
+- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [Higher ANumber Delta](higher-anumber-delta.md)
+- [Tau Den](tau-den.md)
+- [Tower Gamma](tower-gamma.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

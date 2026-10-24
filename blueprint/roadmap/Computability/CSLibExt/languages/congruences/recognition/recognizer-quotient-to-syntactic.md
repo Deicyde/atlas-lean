@@ -13,7 +13,13 @@ image of the recognizer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+
+## Proof depends on
+
+- [Recognizer ker le syntactic Con](recognizer-ker-le-syntactic-con.md)
 
 ## Sources
 

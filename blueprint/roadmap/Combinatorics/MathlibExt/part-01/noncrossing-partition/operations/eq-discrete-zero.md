@@ -12,7 +12,14 @@ At arity zero every partition is discrete.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Partition](../basic/noncrossing-partition.md)
+- [Discrete](discrete.md)
+
+## Proof depends on
+
+- [Discrete zero eq indiscrete zero](discrete-zero-eq-indiscrete-zero.md)
+- [Eq indiscrete zero](eq-indiscrete-zero.md)
+- [Indiscrete](indiscrete.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: Cslib.Algorithms.Lean.FloatingPoint.isFloatIn_sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Float In](is-float-in.md)
+
+## Proof depends on
+
+- [Exists sub eq of le](exists-sub-eq-of-le.md)
 
 ## Sources
 

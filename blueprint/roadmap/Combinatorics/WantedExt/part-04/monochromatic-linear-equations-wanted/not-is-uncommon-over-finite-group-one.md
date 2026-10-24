@@ -12,7 +12,7 @@ With one colour nothing is uncommon.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Uncommon Over Finite Group](is-uncommon-over-finite-group.md)
 
 ## Sources
 

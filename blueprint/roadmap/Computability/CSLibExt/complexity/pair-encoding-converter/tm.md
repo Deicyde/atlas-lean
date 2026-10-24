@@ -13,6 +13,14 @@ The converter as a `FinTM2`: input stack `inp` (alphabet `Bool`), output stack `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lab](lab.md)
+- [St](st.md)
+- [Stk](stk.md)
+- [Prog](prog.md)
+- [Γ](untitled.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.PairEncodingConverter](../../../../../sources/v2/CSLibExt.md)

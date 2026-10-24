@@ -14,7 +14,7 @@ empty perfect partition) and `m = 2`, `(1^4)` is not double-perfect.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
 
 ## Sources
 

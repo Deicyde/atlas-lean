@@ -13,7 +13,19 @@ the queue is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arc Consistent](arc-consistent.md)
+- [Binary CSP](binary-csp.md)
+- [Symmetric](symmetric.md)
+- [Ac3](ac3.md)
+
+## Proof depends on
+
+- [Arc Consistent step](arc-consistent-step.md)
+- [Indeg](indeg.md)
+- [Potential](potential.md)
+- [Potential lt](potential-lt.md)
+- [Requeue](requeue.md)
+- [Revise](revise.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ If `A ⊆ ℤ_p`, `|A| = k ≥ 2`, `1 ≤ r ≤ k`, `h ≥ r + 2` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [At Least Distinct Sumset](at-least-distinct-sumset.md)
+- [Is APOf Length](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources
 

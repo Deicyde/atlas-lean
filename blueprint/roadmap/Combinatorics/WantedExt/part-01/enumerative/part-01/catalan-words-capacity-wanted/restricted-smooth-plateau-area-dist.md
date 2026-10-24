@@ -14,6 +14,11 @@ two adjacent `1`s.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Area Dist](area-dist.md)
+- [Words Ending In](words-ending-in.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CatalanWordsCapacityWanted](../../../../../../../sources/v2/WantedExt.md)

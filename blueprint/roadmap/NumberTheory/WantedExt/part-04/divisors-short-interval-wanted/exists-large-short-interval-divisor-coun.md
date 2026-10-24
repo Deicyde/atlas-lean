@@ -13,7 +13,7 @@ printed, `k_ε(θ) ≥ 1` already follows from `n = 1`, where `D_1(1, 1) = 1`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Short Interval Divisor Count](short-interval-divisor-count.md)
 
 ## Sources
 

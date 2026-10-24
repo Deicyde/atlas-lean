@@ -11,7 +11,12 @@ The states reached on `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+
+## Proof depends on
+
+- [Closure](closure.md)
+- [Step List](step-list.md)
 
 ## Sources
 

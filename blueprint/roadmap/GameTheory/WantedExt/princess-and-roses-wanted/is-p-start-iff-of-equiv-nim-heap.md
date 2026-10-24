@@ -12,7 +12,10 @@ heap `*n`) starts at a P-position if and only if `n = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
+- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
 
 ## Sources
 

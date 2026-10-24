@@ -13,7 +13,13 @@ lean: Cslib.Complexity.CookLevin.Situation.runI_haltList
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run I](../part-03/run-i.md)
+
+## Proof depends on
+
+- [Run I halted](run-i-halted.md)
+- [Run I of iterate](run-i-of-iterate.md)
+- [Step I](../part-03/step-i.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A step of the first machine is a step of the composite (upstream's private
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Cfg Left](comp-cfg-left.md)
 
 ## Sources
 

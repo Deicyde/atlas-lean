@@ -13,6 +13,10 @@ lean: MetaMathlibExt.digitSumRemainderDoubleIntegral
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Digit Sum Remainder](digit-sum-remainder.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DigitSumDirichletConvolutionWanted](../../../../../sources/v2/WantedExt.md)

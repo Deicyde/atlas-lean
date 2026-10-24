@@ -12,7 +12,13 @@ The overlap score is nonnegative: the empty pair scores `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overlap Score](overlap-score.md)
+
+## Proof depends on
+
+- [Nw Score](../sequence-alignment/nw-score.md)
+- [Overlap Pairs](overlap-pairs.md)
+- [Zero le list Max](zero-le-list-max.md)
 
 ## Sources
 

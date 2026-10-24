@@ -11,7 +11,11 @@ The number of elements of a heap, counted with multiplicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+
+## Proof depends on
+
+- [To List](to-list.md)
 
 ## Sources
 

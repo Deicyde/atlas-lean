@@ -12,7 +12,7 @@ lean: MetaMathlibExt.szIndexOfWordAux_replicate_append
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz Index Of Word Aux](sz-index-of-word-aux.md)
 
 ## Sources
 

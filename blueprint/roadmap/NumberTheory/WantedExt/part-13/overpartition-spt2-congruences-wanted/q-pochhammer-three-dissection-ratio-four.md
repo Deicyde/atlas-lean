@@ -14,7 +14,7 @@ For every complex `q` of norm less than one, this 3-dissection states
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf Raw](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
 
 ## Sources
 

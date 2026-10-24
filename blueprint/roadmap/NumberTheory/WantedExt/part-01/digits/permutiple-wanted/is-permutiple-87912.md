@@ -13,7 +13,7 @@ Characteristic example: `87912 = 4 · 21978` is a `(4, 10, σ)`-permutiple, with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Permutiple](is-permutiple.md)
 
 ## Sources
 

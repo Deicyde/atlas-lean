@@ -14,6 +14,10 @@ partitions (even parts in `c` colors), as an integer power series; meaningful fo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.GeneralizedCubicPartitionWanted](../../../../../../../../../sources/v2/WantedExt.md)

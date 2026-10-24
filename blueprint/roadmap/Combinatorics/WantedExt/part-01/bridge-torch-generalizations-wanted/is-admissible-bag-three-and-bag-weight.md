@@ -12,7 +12,8 @@ The one-trip bag `{{1, 2, 3}}` is admissible for three people and has weight `3 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Bag](is-admissible-bag.md)
+- [Bag Weight](bag-weight.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ Characteristic values: `Ṫ⟨O_L, E_R, O_R⟩ = ⟨M⟩` and `Ṫ⟨O_L, O_L⟩
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Mallows TFin](mallows-tfin.md)
 
 ## Sources
 

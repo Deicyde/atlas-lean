@@ -13,7 +13,19 @@ the rest of `X` left.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mode](mode.md)
+- [Prog](prog.md)
+- [Read U](read-u.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+
+## Proof depends on
+
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

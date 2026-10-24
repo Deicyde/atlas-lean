@@ -15,7 +15,7 @@ Euler-Mahonian polynomials. Since `1 - w` is a nonzerodivisor in `ℤ[q₀, w]` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Mahonian](euler-mahonian.md)
 
 ## Sources
 

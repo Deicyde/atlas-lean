@@ -13,7 +13,7 @@ For all `k, n ≥ 0`: (i) `a_{2k}(4n + 3) ≡ 0 (mod 4)` for `k > 1`;
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Mathlib's `η ∘ₖ κ` runs `κ` first (`Kernel.comp_apply`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibbs Step](gibbs-step.md)
+- [Gibbs Sweep](gibbs-sweep.md)
+- [Pmf Kernel](../metropolis-hastings/pmf-kernel.md)
 
 ## Sources
 

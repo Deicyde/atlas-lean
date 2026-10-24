@@ -11,7 +11,8 @@ lean: MetaMathlibExt.nLagrangeSpectrum_eq_closure_quadratic
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Approximability](n-lagrange-approximability.md)
+- [N Lagrange Spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

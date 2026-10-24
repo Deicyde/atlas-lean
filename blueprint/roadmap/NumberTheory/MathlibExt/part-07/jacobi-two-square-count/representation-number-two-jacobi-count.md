@@ -16,7 +16,30 @@ to the Gaussian-norm fiber count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Representation Number](../../part-02/sum-squares/representation-count/representation-number.md)
+
+## Proof depends on
+
+- [Gaussian Int card repr prime pow](../../part-05/gaussian-int-split-primes/gaussian-int-card-repr-prime-pow.md)
+- [Gaussian Int prime one add I](../../part-05/gaussian-int-prime-basics/gaussian-int-prime-one-add-i.md)
+- [Gaussian Int split prime](../../part-05/gaussian-int-split-primes/gaussian-int-split-prime.md)
+- [Gaussian Int two eq](../../part-05/gaussian-int-prime-basics/gaussian-int-two-eq.md)
+- [Unit Val](../../part-05/gaussian-int-prime-basics/unit-val.md)
+- [Unit Val Inv](../../part-05/gaussian-int-prime-basics/unit-val-inv.md)
+- [Unit Val complete](../../part-05/gaussian-int-prime-basics/unit-val-complete.md)
+- [Unit Val inj](../../part-05/gaussian-int-prime-basics/unit-val-inj.md)
+- [Unit Val mul unit Val Inv](../../part-05/gaussian-int-prime-basics/unit-val-mul-unit-val-inv.md)
+- [Div Chi Sum](div-chi-sum.md)
+- [Div Chi Sum mul of coprime](div-chi-sum-mul-of-coprime.md)
+- [Div Chi Sum one](div-chi-sum-one.md)
+- [Div Chi Sum prime pow inert](div-chi-sum-prime-pow-inert.md)
+- [Div Chi Sum prime pow split](div-chi-sum-prime-pow-split.md)
+- [Div Chi Sum prime pow two](div-chi-sum-prime-pow-two.md)
+- [Pair Equiv Gaussian Norm Fiber](pair-equiv-gaussian-norm-fiber.md)
+- [Representation Number two eq](representation-number-two-eq.md)
+- [Card norm eq mul of prime pow](../../part-12/zsqrtd-norm-factorization/card-norm-eq-mul-of-prime-pow.md)
+- [Card norm inert pow](../../part-12/zsqrtd-norm-factorization/card-norm-inert-pow.md)
+- [Card norm two pow](../../part-12/zsqrtd-norm-factorization/card-norm-two-pow.md)
 
 ## Sources
 

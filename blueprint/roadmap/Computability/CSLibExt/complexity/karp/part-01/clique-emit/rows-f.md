@@ -11,7 +11,13 @@ The rows pushed for the clauses `φ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Items](items.md)
+- [Lrows](lrows.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

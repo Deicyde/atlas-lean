@@ -13,7 +13,13 @@ of MathlibExt's preferences on `Fin n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To Order](to-order.md)
+- [Strict Total Order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+
+## Proof depends on
+
+- [Order Rank](order-rank.md)
+- [Ext](../../../../../../../Order/MathlibExt/strict-total-order/ext.md)
 
 ## Sources
 

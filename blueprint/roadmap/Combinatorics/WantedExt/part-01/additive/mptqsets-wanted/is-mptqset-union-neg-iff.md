@@ -12,7 +12,7 @@ Proposition 1: a finite set `A` of positive reals is an MPTQ set if and only if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MPTQSet](is-mptqset.md)
 
 ## Sources
 

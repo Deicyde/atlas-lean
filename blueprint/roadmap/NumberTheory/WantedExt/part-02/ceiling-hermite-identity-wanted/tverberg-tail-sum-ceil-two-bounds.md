@@ -13,7 +13,7 @@ Theorem 7: for `a, b ∈ ℤ` and `m, K ∈ ℕ`, `0 ≤ T_2({a, b}, m, K) ≤ �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tverberg Sum](tverberg-sum.md)
 
 ## Sources
 

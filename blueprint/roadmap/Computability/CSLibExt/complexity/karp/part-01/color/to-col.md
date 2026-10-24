@@ -11,7 +11,13 @@ The 3-COLOR instance of a formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Col St](col-st.md)
+- [Col St](col-st-2.md)
+- [Encode E](encode-e.md)
 
 ## Sources
 

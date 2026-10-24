@@ -11,7 +11,7 @@ A packing into at most `K` bins.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bin Packing Instance](bin-packing-instance.md)
 
 ## Sources
 

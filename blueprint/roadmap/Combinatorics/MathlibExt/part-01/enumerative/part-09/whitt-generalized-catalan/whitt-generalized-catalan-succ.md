@@ -12,7 +12,7 @@ The defining sum, in the source's indexing: `C(α, n+1) = ∑_{k=0}^{n} (1 - k/(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Whitt Generalized Catalan](whitt-generalized-catalan.md)
 
 ## Sources
 

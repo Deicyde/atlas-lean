@@ -13,7 +13,9 @@ For `r ≥ 1` and all sufficiently small `d`, exactly `2r` cylinders, of possibl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic Of Nat](zeck-adic-of-nat.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
+- [Zeck NIZ](zeck-niz.md)
 
 ## Sources
 

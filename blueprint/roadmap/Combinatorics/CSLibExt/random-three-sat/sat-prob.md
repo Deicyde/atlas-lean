@@ -16,6 +16,12 @@ many `n` in every asymptotic statement below.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Clause](clause.md)
+- [Formula](formula.md)
+- [Satisfiable](satisfiable.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Combinatorics.RandomThreeSat](../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,7 @@ Small cases from the paper's chain `⋯ ≺ 111 ≺ 10 ≺ 1 ≺ 0 ≺ 00 ≺ 01
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complement Radix LT](complement-radix-lt.md)
 
 ## Sources
 

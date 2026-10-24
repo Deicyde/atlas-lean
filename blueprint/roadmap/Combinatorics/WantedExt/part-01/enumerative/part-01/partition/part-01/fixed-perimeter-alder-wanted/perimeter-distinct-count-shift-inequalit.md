@@ -12,7 +12,7 @@ Proposition 1.6, `h` part: for positive `d, n, a`, `h_d^(a+1)(n) ≤ h_d^(a)(n)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perimeter Distinct Count](perimeter-distinct-count.md)
 
 ## Sources
 

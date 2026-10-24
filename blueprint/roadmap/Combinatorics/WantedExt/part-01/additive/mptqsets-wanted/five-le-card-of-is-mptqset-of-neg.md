@@ -12,7 +12,7 @@ least 5 elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MPTQSet](is-mptqset.md)
 
 ## Sources
 

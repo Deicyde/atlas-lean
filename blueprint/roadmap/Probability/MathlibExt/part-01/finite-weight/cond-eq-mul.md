@@ -15,7 +15,8 @@ distribution, so this is `P(x_A, x_B | x_S) = P(x_A | x_S) P(x_B | x_S)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond Indep](cond-indep.md)
+- [Marginal](marginal.md)
 
 ## Sources
 

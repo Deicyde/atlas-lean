@@ -14,7 +14,7 @@ contains both `a` and `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Cover](is-perfect-cover.md)
 
 ## Sources
 

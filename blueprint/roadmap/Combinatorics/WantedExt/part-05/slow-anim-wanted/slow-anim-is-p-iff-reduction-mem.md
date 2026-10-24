@@ -13,7 +13,12 @@ of `SN(n, A)`, then a position `p` of `SN(n, A)` is a P-position exactly when it
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is PPosition Set](is-pposition-set.md)
+- [Slow ANim Reduced](slow-anim-reduced.md)
+- [Slow ANim Reduced Graph Move](slow-anim-reduced-graph-move.md)
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Slow ANim Game](slow-anim-game.md)
+- [Slow ANim Reduction](slow-anim-reduction.md)
 
 ## Sources
 

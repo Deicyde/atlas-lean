@@ -12,7 +12,7 @@ The paper's example: `[3, 3, 3, 0]` is terminal in simplified P&R.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simplified Princess Roses Moves](simplified-princess-roses-moves.md)
 
 ## Sources
 

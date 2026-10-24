@@ -12,7 +12,7 @@ The empty set is not thick in a nonempty semigroup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Add Thick](is-add-thick.md)
 
 ## Sources
 

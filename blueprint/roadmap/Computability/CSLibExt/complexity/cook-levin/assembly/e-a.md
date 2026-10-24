@@ -11,7 +11,9 @@ Stack renaming of the accept generator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](../accept/ck.md)
+- [HK](hk.md)
+- [SK](../counter-view/sk.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ leaves `P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Vertex Move](cube-vertex-move.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ without an overline and with an overline. The hypothesis formalizes that
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Overpartition Count](regular-overpartition-count.md)
+
+## Proof depends on
+
+- [Overpartition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources
 

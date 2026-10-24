@@ -14,7 +14,8 @@ approximations are not part of this statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product Comparison](binomial-product-comparison.md)
+- [Factorial Product Constant](factorial-product-constant.md)
 
 ## Sources
 

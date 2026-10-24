@@ -12,7 +12,12 @@ lean: Cslib.Decidability.manyOneReducible_not_halting_total
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total Code](total-code.md)
+
+## Proof depends on
+
+- [Until Halts Fun](until-halts-fun.md)
+- [Parametrized s-m-n](../../../../MathlibExt/exists-computable-code.md)
 
 ## Sources
 

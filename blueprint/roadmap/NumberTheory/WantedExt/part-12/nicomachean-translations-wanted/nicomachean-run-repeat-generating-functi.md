@@ -15,7 +15,7 @@ The sequences `(1, 2, …, j, j + 1, m, m, …, m)` (`m` repeated `2j` times) wi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachean Nu](nicomachean-nu.md)
 
 ## Sources
 

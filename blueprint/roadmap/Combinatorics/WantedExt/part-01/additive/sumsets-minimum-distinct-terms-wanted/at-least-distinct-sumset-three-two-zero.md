@@ -12,7 +12,7 @@ lean: MetaMathlibExt.atLeastDistinctSumset_three_two_zero_one_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [At Least Distinct Sumset](at-least-distinct-sumset.md)
 
 ## Sources
 

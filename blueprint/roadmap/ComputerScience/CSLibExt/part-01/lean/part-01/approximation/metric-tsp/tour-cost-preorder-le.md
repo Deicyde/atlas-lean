@@ -12,7 +12,15 @@ CLRS Theorem 35.2, first half: the preorder tour of a tree costs at most twice t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+- [Preorder](preorder.md)
+- [Weight](weight.md)
+- [Is Metric Cost](is-metric-cost.md)
+- [Tour Cost](tour-cost.md)
+
+## Proof depends on
+
+- [Path From preorder le](path-from-preorder-le.md)
 
 ## Sources
 

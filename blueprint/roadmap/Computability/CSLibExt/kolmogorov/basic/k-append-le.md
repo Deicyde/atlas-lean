@@ -12,7 +12,16 @@ lean: Cslib.Kolmogorov.K_append_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](k.md)
+
+## Proof depends on
+
+- [The universal description method](u.md)
+- [Optimality](exists-k-le-of-partrec.md)
+- [Exists length eq K](exists-length-eq-k.md)
+- [Pair Describe](pair-describe.md)
+- [Pair U](pair-u.md)
+- [Partrec U](partrec-u.md)
 
 ## Sources
 

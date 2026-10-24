@@ -13,7 +13,9 @@ The extension discriminant is the lattice discriminant of imageOfB.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extension Discriminant](extension-discriminant.md)
+- [Image Of B](image-of-b.md)
+- [Lattice Discriminant](../lattice-discriminant/lattice-discriminant.md)
 
 ## Sources
 

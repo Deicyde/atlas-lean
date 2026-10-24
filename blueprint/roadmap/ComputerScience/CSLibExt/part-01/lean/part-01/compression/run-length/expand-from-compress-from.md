@@ -12,7 +12,8 @@ Expansion inverts compression from any pending run state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compress From](compress-from.md)
+- [Expand From](expand-from.md)
 
 ## Sources
 

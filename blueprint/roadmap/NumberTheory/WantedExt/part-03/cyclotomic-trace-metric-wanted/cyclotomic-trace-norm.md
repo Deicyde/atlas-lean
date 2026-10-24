@@ -13,6 +13,10 @@ The trace norm `‖α‖`, the Euclidean length of `(Tr_{K/ℚ}(α ω^j))_{1 ≤
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cyclotomic Trace Norm Sq](cyclotomic-trace-norm-sq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.CyclotomicTraceMetricWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,8 @@ lean: MetaMathlibExt.reflection_image_and_relativePosition
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

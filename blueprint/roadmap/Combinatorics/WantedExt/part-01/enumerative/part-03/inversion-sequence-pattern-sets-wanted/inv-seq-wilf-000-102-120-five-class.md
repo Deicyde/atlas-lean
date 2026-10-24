@@ -12,7 +12,7 @@ lean: MetaMathlibExt.invSeq_wilf_000_102_120_five_class
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
 
 ## Sources
 

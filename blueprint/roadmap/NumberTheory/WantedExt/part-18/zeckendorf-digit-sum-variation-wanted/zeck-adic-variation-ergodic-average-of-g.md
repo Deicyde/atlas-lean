@@ -14,7 +14,10 @@ Ergodic averages of `f ∘ Δ^{(r)}` for `f` of polynomial growth: if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

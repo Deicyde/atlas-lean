@@ -14,7 +14,7 @@ The generating function of all Arndt compositions by weight and number of parts 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt GF](arndt-gf.md)
 
 ## Sources
 

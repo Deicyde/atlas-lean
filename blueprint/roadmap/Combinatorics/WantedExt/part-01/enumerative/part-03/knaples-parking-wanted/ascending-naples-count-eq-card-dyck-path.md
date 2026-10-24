@@ -14,7 +14,8 @@ are Down, and in which, before the last `k + 1` steps, every Down step that puts
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascending Naples Count](ascending-naples-count.md)
+- [Dyck Step Height](dyck-step-height.md)
 
 ## Sources
 

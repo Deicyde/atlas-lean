@@ -11,7 +11,7 @@ Lemma 4.9: for a prime `p`, `x² + k x + 1 ≡ 0 (mod p)` has at most two soluti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Markov Congruence Count](gen-markov-congruence-count.md)
 
 ## Sources
 

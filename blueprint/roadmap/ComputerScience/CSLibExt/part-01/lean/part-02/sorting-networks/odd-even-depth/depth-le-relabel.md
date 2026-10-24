@@ -12,7 +12,14 @@ Relabeling by an injective map keeps a depth bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth LE](../depth/depth-le.md)
+- [Relabel](../odd-even/relabel.md)
+
+## Proof depends on
+
+- [Levels](../depth/levels.md)
+- [Levels relabel](levels-relabel.md)
+- [Levels relabel of not mem](levels-relabel-of-not-mem.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ of `UUD` after its three steps is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KDyck Path](is-kdyck-path.md)
+- [Dyck Step Height](dyck-step-height.md)
+
+## Proof depends on
+
+- [Lattice Height](lattice-height.md)
 
 ## Sources
 

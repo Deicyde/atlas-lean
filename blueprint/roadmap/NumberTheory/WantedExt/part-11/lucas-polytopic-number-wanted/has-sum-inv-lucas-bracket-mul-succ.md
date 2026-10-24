@@ -19,7 +19,8 @@ Added hypotheses: `0 < s` and `0 < sÂ² + 4t` (the paper's `0 < |q| < 1`, real `Ï
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Parameters](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-parameters.md)
+- [Lucas Bracket](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-bracket.md)
 
 ## Sources
 

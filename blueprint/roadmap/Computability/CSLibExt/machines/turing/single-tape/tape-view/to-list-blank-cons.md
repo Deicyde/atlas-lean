@@ -13,7 +13,7 @@ because the half-tape is blank beyond its end.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To List Blank](to-list-blank.md)
 
 ## Sources
 

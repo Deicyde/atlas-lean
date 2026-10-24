@@ -12,7 +12,7 @@ The box `B(0)` of radius `0` is the single coefficient vector `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Box](cyclotomic-box.md)
 
 ## Sources
 

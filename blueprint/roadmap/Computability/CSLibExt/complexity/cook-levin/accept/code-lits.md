@@ -11,7 +11,11 @@ Code-block clause `u`: `X[T,u]`, positive iff `u = ac`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [X Idx](../family/x-idx.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ lookup, a cost exponential in `b`; the array is computed once per arrival.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Free](../../graph/bipartite-matching/free.md)
+- [To Fun](to-fun.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Online.BipartiteMatching](../../../../../../../../sources/v2/CSLibExt.md)

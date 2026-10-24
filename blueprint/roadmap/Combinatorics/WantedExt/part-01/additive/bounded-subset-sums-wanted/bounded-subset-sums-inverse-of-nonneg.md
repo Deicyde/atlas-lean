@@ -15,7 +15,7 @@ integers containing `0` attains its bound, then `A = d · [0, k - 1]`, except fo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subset Sums](bounded-subset-sums.md)
 
 ## Sources
 

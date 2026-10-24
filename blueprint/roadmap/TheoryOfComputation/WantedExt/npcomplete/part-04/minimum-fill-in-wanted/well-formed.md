@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Fill In Instance](minimum-fill-in-instance.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Membership in `fixedPerimeterPartitions n`: positive parts and perimeter `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
+
+## Proof depends on
+
+- [Sym Cons Embedding](sym-cons-embedding.md)
 
 ## Sources
 

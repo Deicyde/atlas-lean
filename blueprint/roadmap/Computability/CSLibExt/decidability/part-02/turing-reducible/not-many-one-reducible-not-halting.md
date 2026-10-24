@@ -14,7 +14,14 @@ reducibility is strictly coarser than many-one reducibility.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halting Set](halting-set.md)
+
+## Proof depends on
+
+- [TM2 Recognizable](../../part-01/basic/tm2-recognizable.md)
+- [Not tm2 Co Recognizable halting](../undecidable/not-tm2-co-recognizable-halting.md)
+- [Tm2 Recognizable halting](../undecidable/tm2-recognizable-halting.md)
+- [Tm2 Recognizable of many One Reducible](../undecidable/tm2-recognizable-of-many-one-reducible.md)
 
 ## Sources
 

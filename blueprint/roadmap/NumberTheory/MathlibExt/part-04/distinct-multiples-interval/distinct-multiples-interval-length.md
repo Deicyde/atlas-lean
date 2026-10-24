@@ -14,6 +14,10 @@ lean: MetaMathlibExt.distinctMultiplesIntervalLength
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DistinctMultiplesInterval](../../../../../sources/v2/MathlibExt.md)

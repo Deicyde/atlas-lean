@@ -14,6 +14,10 @@ pairwise disjoint support intervals (blocks listed as `(ζ, lo, m)` with support
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is LBlock](is-lblock.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

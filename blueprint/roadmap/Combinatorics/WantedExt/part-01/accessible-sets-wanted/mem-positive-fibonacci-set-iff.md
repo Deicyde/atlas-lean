@@ -12,7 +12,7 @@ Characterization of membership in the positive Fibonacci set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive Fibonacci Set](positive-fibonacci-set.md)
 
 ## Sources
 

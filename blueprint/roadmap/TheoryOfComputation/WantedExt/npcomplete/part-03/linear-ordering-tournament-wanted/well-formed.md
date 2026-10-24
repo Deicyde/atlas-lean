@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Ordering Tournament Instance](linear-ordering-tournament-instance.md)
 
 ## Sources
 

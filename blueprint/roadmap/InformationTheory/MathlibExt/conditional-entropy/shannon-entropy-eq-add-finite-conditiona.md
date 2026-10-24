@@ -12,7 +12,8 @@ lean: InformationTheory.shannonEntropy_eq_add_finiteConditionalEntropy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Conditional Entropy](finite-conditional-entropy.md)
+- [Shannon Entropy](../finite-entropy/shannon-entropy.md)
 
 ## Sources
 

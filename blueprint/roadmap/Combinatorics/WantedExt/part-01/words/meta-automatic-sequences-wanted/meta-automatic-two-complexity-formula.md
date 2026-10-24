@@ -16,7 +16,8 @@ for `r = 0`, `p = 2n + 2^{k-1} - 2` (`n ≤ 2^k + 1`), `4n - (3 · 2^{k-1} + 4)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic Two](meta-automatic-two.md)
+- [Word Factor Complexity](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

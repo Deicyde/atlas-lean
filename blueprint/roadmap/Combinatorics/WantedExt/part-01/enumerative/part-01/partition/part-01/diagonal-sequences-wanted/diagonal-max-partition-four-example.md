@@ -12,7 +12,7 @@ For `q = 4`, `s_4 = 2`, `s_3 = 0`, `s_2 = 1`, `s_1 = 1`, `ᾱ = (8, 6, 4, 3)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Max Partition](diagonal-max-partition.md)
 
 ## Sources
 

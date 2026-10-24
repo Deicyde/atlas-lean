@@ -14,7 +14,7 @@ indices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Lucas Polynomial](r-lucas-polynomial.md)
 
 ## Sources
 

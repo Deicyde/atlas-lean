@@ -11,7 +11,7 @@ The duration of a step: the largest crossing time among all persons moving in it
 
 ## Depends on
 
-This node has no prerequisites.
+- [Star Move](star-move.md)
 
 ## Sources
 

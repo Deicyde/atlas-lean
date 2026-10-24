@@ -11,7 +11,11 @@ One Runge–Kutta step: `y + h • ∑ i, b i • k i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
+
+## Proof depends on
+
+- [Stage](stage.md)
 
 ## Sources
 

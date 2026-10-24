@@ -12,7 +12,7 @@ Every move of Euclid lowers `a + b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclid Moves](euclid-moves.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ and records that the positive solution follows from the positive solution of Pro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strong Completeness Question](strong-completeness-question.md)
 
 ## Sources
 

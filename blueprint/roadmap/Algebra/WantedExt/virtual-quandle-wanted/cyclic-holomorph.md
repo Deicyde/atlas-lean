@@ -14,6 +14,10 @@ The holomorph `G = A ⋊ A^×` of `A = ℤ/nℤ`; the element `(a, u)` is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zmod Units Mul Aut](zmod-units-mul-aut.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.VirtualQuandleWanted](../../../../sources/v2/WantedExt.md)

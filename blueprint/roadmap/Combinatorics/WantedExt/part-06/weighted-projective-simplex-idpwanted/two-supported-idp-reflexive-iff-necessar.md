@@ -12,7 +12,11 @@ positive multiplicities, IDP reflexivity is equivalent to the necessary conditio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is Reflexive](is-reflexive.md)
+- [Satisfies Support IDPNecessary](satisfies-support-idpnecessary.md)
+- [Expand Support](expand-support.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

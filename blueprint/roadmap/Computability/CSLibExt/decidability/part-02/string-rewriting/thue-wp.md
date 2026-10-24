@@ -12,7 +12,11 @@ equivalent under the symmetric, reflexive and transitive closure of the rewritin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](rule.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ if `t + 1 ≥ binom(R + ⌈k/2⌉ + 1, k)`, `t` if `t < binom(R + ⌈k/2⌉, k)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

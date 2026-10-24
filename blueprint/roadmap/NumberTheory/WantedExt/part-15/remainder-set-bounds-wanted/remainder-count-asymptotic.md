@@ -12,7 +12,8 @@ Theorem 1: `s(n) = c n + O(n / (log n · log log n))`, and in particular
 
 ## Depends on
 
-This node has no prerequisites.
+- [Remainder Constant](remainder-constant.md)
+- [Remainder Count](remainder-count.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The Gutman-Ivić maximal Matula number `P(n)` for `n ≥ 4`: `P(4) = p₈` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nth Prime One](nth-prime-one.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.CompletelyAdditiveHeightWanted](../../../../../sources/v2/WantedExt.md)

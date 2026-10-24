@@ -13,7 +13,18 @@ vertex `j`: park it on `T` and fold the next pair bit of `X` into `c` (reject if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [K](k.md)
+- [Lab](lab.md)
+- [Free](free.md)
+- [Sat](sat.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

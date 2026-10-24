@@ -14,7 +14,7 @@ is moved into the coefficient index and `2^{(b-a)k}` to the left side. Stated fo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

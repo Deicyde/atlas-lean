@@ -14,7 +14,20 @@ nonterminal with a production.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marks](marks.md)
+
+## Proof depends on
+
+- [Yields](../../part-02/yields/yields.md)
+- [Append](../../part-02/yields/append.md)
+- [Of yields H](../pumping/of-yields-h.md)
+- [Yields Context](../pumping/yields-context.md)
+- [Iterate](../pumping/iterate.md)
+- [Of rule](../pumping/of-rule.md)
+- [Yields H](../pumping/yields-h.md)
+- [Append inv](../pumping/append-inv.md)
+- [Of yields](../pumping/of-yields.md)
+- [Mem language iff yields](../../part-02/yields/mem-language-iff-yields.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ The initial `Q`-pairs and the recursion `P_{n+1} = a_{n+1} P_n + P_{n-1}`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hurwitz Digit](hurwitz-digit.md)
+- [Hurwitz P](hurwitz-p.md)
+- [Hurwitz Q](hurwitz-q.md)
+
+## Proof depends on
+
+- [Hurwitz PQ](hurwitz-pq.md)
 
 ## Sources
 

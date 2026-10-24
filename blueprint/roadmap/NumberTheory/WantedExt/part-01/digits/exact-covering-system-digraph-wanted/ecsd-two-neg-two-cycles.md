@@ -14,7 +14,8 @@ Cycles of the Type 2 ECSD `G(2n, -2n + a)`, `a ∈ ℕ` odd: (i) the only loops 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Digraph Cycle](is-digraph-cycle.md)
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ representation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../edmonds-karp/flow.md)
+- [Flow Value](../edmonds-karp/flow-value.md)
+- [Real Flow](real-flow.md)
+
+## Proof depends on
+
+- [Arc Flow](arc-flow.md)
+- [Flow eq arc Flow sub](flow-eq-arc-flow-sub.md)
 
 ## Sources
 

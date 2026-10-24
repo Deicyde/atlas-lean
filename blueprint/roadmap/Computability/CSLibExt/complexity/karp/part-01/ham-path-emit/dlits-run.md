@@ -12,7 +12,21 @@ The literals `Ls` of a clause: the flags collect the occurrences of `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](../ham-path-emit-machine/k.md)
+- [Lab](../ham-path-emit-machine/lab.md)
+- [MS](../ham-path-emit-machine/ms.md)
+- [Stk](../ham-path-emit-machine/stk.md)
+- [Name](../ham-path-emit-machine/name.md)
+- [Prog](../ham-path-emit-machine/prog.md)
+- [Γ](../ham-path-emit-machine/untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Lit Toks](../../../sat-verifier-spec/lit-toks.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Dlit run](dlit-run.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ A total ordering satisfying all betweenness constraints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Betweenness Instance](betweenness-instance.md)
 
 ## Sources
 

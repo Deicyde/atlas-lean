@@ -12,7 +12,8 @@ For real `x ≥ 1` and `t = g(x)` (the `t ≥ 0` with `u(t) + v(t) = x`),
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell U](pell-u.md)
+- [Pell V](pell-v.md)
 
 ## Sources
 

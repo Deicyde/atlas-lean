@@ -12,7 +12,13 @@ If AC-3 empties a domain, the problem has no solution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+- [Is Solution](is-solution.md)
+- [Ac3 All](ac3-all.md)
+
+## Proof depends on
+
+- [Mem ac3 of is Solution](mem-ac3-of-is-solution.md)
 
 ## Sources
 

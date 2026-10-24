@@ -13,6 +13,10 @@ The number of misses (faults) of LRU on a request sequence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lru Step](lru-step.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Online.Paging](../../../../../../../../sources/v2/CSLibExt.md)

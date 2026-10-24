@@ -14,6 +14,11 @@ The intersection of two non-vertical segments, if nonempty, has a leftmost point
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Line Y](line-y.md)
+- [Mem segment iff line Y](mem-segment-iff-line-y.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.AnySegmentsIntersect](../../../../../../../../sources/v2/CSLibExt.md)

@@ -11,7 +11,7 @@ If `ct[P^{n₀}] mod p ≠ 0` for some `n₀ > 0`, then `ct[P^n Q] mod p^a` is r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Recurrent Seq](is-recurrent-seq.md)
 
 ## Sources
 

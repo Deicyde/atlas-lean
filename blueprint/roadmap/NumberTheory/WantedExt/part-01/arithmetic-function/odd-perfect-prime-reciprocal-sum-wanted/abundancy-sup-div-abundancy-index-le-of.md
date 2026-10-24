@@ -13,7 +13,8 @@ a single prime `p_j`, which is odd. Then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abundancy Index](../../../part-14/primitive-nondeficient-wanted/abundancy-index.md)
+- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

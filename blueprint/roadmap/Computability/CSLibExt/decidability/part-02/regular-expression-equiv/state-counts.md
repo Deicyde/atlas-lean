@@ -11,7 +11,11 @@ The Thompson state counts of all nodes, in one left-to-right pass.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regex Node](../regular-expression/regex-node.md)
+
+## Proof depends on
+
+- [Step States](step-states.md)
 
 ## Sources
 

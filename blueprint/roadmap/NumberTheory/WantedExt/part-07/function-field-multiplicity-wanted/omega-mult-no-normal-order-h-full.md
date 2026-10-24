@@ -14,7 +14,10 @@ monotonicity requirements are restricted to `N_h`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Normal Order](has-normal-order.md)
+- [Is Degree Nondecreasing](is-degree-nondecreasing.md)
+- [H Full](h-full.md)
+- [Omega Mult](omega-mult.md)
 
 ## Sources
 

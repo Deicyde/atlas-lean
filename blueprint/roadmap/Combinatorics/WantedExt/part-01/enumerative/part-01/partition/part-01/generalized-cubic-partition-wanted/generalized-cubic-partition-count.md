@@ -14,6 +14,10 @@ colors, defined as the `n`th coefficient of `1/(f_1 f_2^{c-1})`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Cubic Partition Series](generalized-cubic-partition-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.GeneralizedCubicPartitionWanted](../../../../../../../../../sources/v2/WantedExt.md)

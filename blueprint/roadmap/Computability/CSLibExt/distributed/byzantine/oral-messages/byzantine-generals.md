@@ -16,7 +16,11 @@ loyal lieutenants decide the same value, and if `c` is loyal, every loyal lieute
 
 ## Depends on
 
-This node has no prerequisites.
+- [Om](om.md)
+
+## Proof depends on
+
+- [Theorem 1](om-interactive-consistency.md)
 
 ## Sources
 

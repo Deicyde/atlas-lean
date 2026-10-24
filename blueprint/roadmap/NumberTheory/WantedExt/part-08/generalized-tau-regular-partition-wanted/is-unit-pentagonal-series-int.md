@@ -14,6 +14,10 @@ Euler's product `∏ (1 - X^m)` is a unit of `ℤ⟦X⟧`, so its integer powers
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Constant Coeff pentagonal Series int](constant-coeff-pentagonal-series-int.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedTauRegularPartitionWanted](../../../../../sources/v2/WantedExt.md)

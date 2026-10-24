@@ -14,7 +14,7 @@ as `∑_{j=i}^k n_j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc DNodes](dc-dnodes.md)
 
 ## Sources
 

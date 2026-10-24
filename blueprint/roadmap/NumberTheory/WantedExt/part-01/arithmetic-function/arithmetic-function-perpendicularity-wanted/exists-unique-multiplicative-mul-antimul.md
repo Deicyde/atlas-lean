@@ -12,7 +12,7 @@ is uniquely a Dirichlet convolution `g * h` of a multiplicative `g` and an antim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Antimultiplicative](is-antimultiplicative.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ lean: MetaMathlibExt.bijOn_nearHookTableauToPathXi
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Quadrant Paths](first-quadrant-paths.md)
+- [Near Hook Tableau To Path Xi](near-hook-tableau-to-path-xi.md)
+- [Near Hook Theta](near-hook-theta.md)
 
 ## Sources
 

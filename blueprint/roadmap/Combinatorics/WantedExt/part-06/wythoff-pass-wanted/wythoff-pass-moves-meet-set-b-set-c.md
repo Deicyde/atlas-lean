@@ -14,7 +14,8 @@ and `C` and vertical moves reach neither; (ii) symmetrically if `x ≤ 8`; (iii)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Pass Set B](wythoff-pass-set-b.md)
+- [Wythoff Pass Set C](wythoff-pass-set-c.md)
 
 ## Sources
 

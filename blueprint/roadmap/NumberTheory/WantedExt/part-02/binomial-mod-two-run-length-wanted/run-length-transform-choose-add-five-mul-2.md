@@ -12,7 +12,7 @@ of the sequence `S(n) = S(n - 1) + S(n - 2) - S(n - 3) + S(n - 4)` for `n ≥ 4`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

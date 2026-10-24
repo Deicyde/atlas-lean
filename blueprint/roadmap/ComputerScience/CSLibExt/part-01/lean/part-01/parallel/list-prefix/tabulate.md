@@ -12,7 +12,7 @@ a cost exponential in the number of rounds; on arrays each round costs `O(n)` op
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

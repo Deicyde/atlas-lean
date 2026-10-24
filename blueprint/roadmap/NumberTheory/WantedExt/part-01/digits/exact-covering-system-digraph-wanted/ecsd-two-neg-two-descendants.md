@@ -16,7 +16,8 @@ has `a ∈ ℕ` odd).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KDescendant](is-kdescendant.md)
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

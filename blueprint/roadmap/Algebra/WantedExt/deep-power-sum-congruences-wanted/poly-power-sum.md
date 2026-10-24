@@ -15,6 +15,10 @@ roots `α_1, …, α_d` in a domain this is `α_1 ^ n + ⋯ + α_d ^ n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Poly Elem Symm](poly-elem-symm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.DeepPowerSumCongruencesWanted](../../../../sources/v2/WantedExt.md)

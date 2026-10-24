@@ -17,7 +17,10 @@ Theorem 1 expression, and all `n ≥ 0`, `r ≥ 0` and primes `p` are admitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher ANumber Delta](higher-anumber-delta.md)
+- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
+- [Tower Gamma](tower-gamma.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

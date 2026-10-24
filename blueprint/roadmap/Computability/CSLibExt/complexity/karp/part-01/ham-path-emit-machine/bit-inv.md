@@ -36,7 +36,8 @@ theorem chain_run (js : List Site) : ∀ (s : MS) (b : Bool) (l₀ l : Lab),
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
 
 ## Sources
 

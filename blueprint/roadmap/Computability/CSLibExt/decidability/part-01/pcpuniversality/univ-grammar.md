@@ -12,7 +12,13 @@ and bottom list languages.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Base Rules](base-rules.md)
+- [Mismatch Rules](mismatch-rules.md)
 
 ## Sources
 

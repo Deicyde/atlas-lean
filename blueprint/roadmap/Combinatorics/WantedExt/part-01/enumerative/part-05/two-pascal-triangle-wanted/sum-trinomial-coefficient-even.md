@@ -12,7 +12,7 @@ stated for complex `z` and any `s` with `s^2 = z` in place of the indeterminate 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

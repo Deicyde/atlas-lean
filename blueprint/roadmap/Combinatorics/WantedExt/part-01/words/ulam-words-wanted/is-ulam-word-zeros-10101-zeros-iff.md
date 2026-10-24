@@ -11,7 +11,7 @@ For `a + b ≥ 1`, `0^a 10101 0^b` is Ulam iff `a, b` are even and one of them i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ulam Word](is-ulam-word.md)
 
 ## Sources
 

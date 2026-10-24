@@ -14,6 +14,10 @@ classical Lagrange spectrum `L`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [N Lagrange Approximability](n-lagrange-approximability.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.NLagrangeSpectrumWanted](../../../../../sources/v2/WantedExt.md)

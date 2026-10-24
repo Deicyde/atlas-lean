@@ -15,6 +15,10 @@ chosen so that `‖1‖_K = 0`, i.e. `d = -(ℓ₁ μ - u₁)` for the witness `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stability Gauge Index](stability-gauge-index.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.ArithmeticalSelfSimilarCompactSetWanted](../../../../../sources/v2/WantedExt.md)

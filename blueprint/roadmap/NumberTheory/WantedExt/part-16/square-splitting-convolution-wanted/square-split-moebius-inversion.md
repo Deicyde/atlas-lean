@@ -14,7 +14,7 @@ i.e. `F(n) = ∑_{d ∈ A(n)} f(d)` for all `n` iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Conv](square-split-conv.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Lemma 1 (quoted from Bravo, Bravo and Luca): with `α` the real zero of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perrin Neg](perrin-neg.md)
 
 ## Sources
 

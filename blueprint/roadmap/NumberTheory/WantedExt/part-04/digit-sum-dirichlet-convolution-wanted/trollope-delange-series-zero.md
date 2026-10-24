@@ -12,7 +12,12 @@ lean: MetaMathlibExt.trollopeDelangeSeries_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trollope Delange Series](trollope-delange-series.md)
+
+## Proof depends on
+
+- [Trollope Delange Integral](trollope-delange-integral.md)
+- [Trollope Delange Integral zero](trollope-delange-integral-zero.md)
 
 ## Sources
 

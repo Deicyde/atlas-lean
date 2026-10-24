@@ -12,7 +12,7 @@ lean: MetaMathlibExt.mFallingFactorial_one_three_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [M Falling Factorial](m-falling-factorial.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ A round rejects with probability `1 - 1 / M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trial](trial.md)
+
+## Proof depends on
+
+- [Tsum trial true](tsum-trial-true.md)
 
 ## Sources
 

@@ -15,7 +15,9 @@ Stated as `4(g + 1) = …`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Frobenius Number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
+- [Triangular Frobenius Bound](triangular-frobenius-bound.md)
+- [Triangular Triple](triangular-triple.md)
 
 ## Sources
 

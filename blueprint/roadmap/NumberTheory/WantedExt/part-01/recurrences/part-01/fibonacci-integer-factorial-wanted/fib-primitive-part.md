@@ -13,6 +13,10 @@ lean: MetaMathlibExt.fibPrimitivePart
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Entry Point](fib-entry-point.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.FibonacciIntegerFactorialWanted](../../../../../../../sources/v2/WantedExt.md)

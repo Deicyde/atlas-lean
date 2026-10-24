@@ -19,7 +19,8 @@ the factor of the index `(2n-1) 2^j` in the summand `n`, which becomes `2^{μ j}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lambert FMu](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-series/lambert-fmu.md)
+- [Lambert GMu](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-series/lambert-gmu.md)
 
 ## Sources
 

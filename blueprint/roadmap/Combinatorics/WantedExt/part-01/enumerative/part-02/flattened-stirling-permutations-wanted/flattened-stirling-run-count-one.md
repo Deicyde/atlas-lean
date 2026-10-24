@@ -12,7 +12,7 @@ run.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flattened Stirling Run Count](flattened-stirling-run-count.md)
 
 ## Sources
 

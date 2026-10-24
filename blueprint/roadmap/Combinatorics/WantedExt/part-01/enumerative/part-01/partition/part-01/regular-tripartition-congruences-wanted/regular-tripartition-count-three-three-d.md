@@ -15,7 +15,8 @@ The 3-dissection of the generating function of `T_3`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [Regular Tripartition Count](regular-tripartition-count.md)
 
 ## Sources
 

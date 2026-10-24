@@ -12,7 +12,17 @@ fills.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [CNF](../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Num Vars](../family/num-vars.md)
+- [Dense Clause](../family/dense-clause.md)
+- [Ov Lits](ov-lits.md)
+- [Pf Lits](pf-lits.md)
+- [Sh Lits](sh-lits.md)
+- [Clause](../../dense-sat/clause.md)
 
 ## Sources
 

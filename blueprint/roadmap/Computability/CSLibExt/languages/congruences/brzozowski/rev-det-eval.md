@@ -12,7 +12,7 @@ The subset reached on `w`: the states from which `w.reverse` is accepted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rev Det](rev-det.md)
 
 ## Sources
 

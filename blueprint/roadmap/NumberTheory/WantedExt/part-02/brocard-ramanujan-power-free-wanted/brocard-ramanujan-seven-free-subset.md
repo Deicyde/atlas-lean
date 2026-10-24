@@ -12,7 +12,7 @@ The only solutions `(n, x)` of `n! + 1 = x ^ 2` with `x - 1` or `x + 1` a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Power Free](../../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources
 

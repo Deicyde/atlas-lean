@@ -14,7 +14,16 @@ The transfer matrix entry `A τ σ_•` is `z^{occ(τ)}` exactly when every cove
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination Signature](domination-signature.md)
+- [Domination State](domination-state.md)
+- [Is Domination Signature](is-domination-signature.md)
+- [All Covered Signature](all-covered-signature.md)
+- [Domination Transfer Matrix](domination-transfer-matrix.md)
+- [Occupied Count](occupied-count.md)
+
+## Proof depends on
+
+- [Domination Compatible](domination-compatible.md)
 
 ## Sources
 

@@ -14,7 +14,17 @@ reduction plus `1 / |T|`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+- [Mac Game](mac-game.md)
+- [Mac Reduction](mac-reduction.md)
+- [Prf Advantage](prf-advantage.md)
+
+## Proof depends on
+
+- [Mac Game eq prf Real](mac-game-eq-prf-real.md)
+- [Prf Rand](prf-rand.md)
+- [Prf Rand mac Reduction le](prf-rand-mac-reduction-le.md)
+- [Prf Real](prf-real.md)
 
 ## Sources
 

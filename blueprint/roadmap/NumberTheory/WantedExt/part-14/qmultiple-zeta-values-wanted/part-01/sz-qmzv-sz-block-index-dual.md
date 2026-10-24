@@ -14,7 +14,8 @@ separately.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz Block Index](sz-block-index.md)
+- [Sz QMZV](sz-qmzv.md)
 
 ## Sources
 

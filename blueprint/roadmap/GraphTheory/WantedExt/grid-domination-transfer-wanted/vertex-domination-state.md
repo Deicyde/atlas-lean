@@ -12,7 +12,7 @@ The state of the vertex `v` relative to the vertex set `S` in the graph `G`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination State](domination-state.md)
 
 ## Sources
 

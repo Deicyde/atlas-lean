@@ -16,7 +16,21 @@ decides `diag f` in polynomial time: the reformatting machine, then the clocked 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc In](../clocked/enc-in.md)
+- [Code](../code/code.md)
+- [The diagonal language](diag.md)
+- [Diag Arg](diag-arg.md)
+
+## Proof depends on
+
+- [Enc Out](../clocked/enc-out.md)
+- [The clocked universal function is polynomial-time computable](../poly-time/nonempty-univ-poly-time.md)
+- [The clocked evaluator](../code/eval-steps.md)
+- [The readout in polynomial time](poly-time.md)
+- [Diag Answer](diag-answer.md)
+- [`diag f` through the universal function](diag-eq-comp.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [Comp Computable](../../../../../MathlibExt/turing-machine/composition/comp-computable.md)
 
 ## Sources
 

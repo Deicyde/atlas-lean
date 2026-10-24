@@ -13,7 +13,8 @@ Corollary 2.2: every vertex of `MT(k)` is a `k`-generalized Markov triple, and e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Gen Markov Tree](gen-markov-tree.md)
 
 ## Sources
 

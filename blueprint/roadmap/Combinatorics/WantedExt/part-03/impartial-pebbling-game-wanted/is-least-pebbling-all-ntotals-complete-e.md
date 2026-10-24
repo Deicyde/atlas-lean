@@ -11,7 +11,7 @@ Theorem 1(e): for even `n ≥ 6`, `m^{(2:1)}(K_n) = n + 7`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pebbling All NTotals](pebbling-all-ntotals.md)
 
 ## Sources
 

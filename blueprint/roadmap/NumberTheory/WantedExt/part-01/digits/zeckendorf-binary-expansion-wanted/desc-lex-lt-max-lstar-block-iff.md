@@ -13,7 +13,9 @@ Proper blocks below a maximal block: if `ε` vanishes below index `b` (zero-base
 
 ## Depends on
 
-This node has no prerequisites.
+- [Desc Lex LT](desc-lex-lt.md)
+- [Is Proper LStar Block](is-proper-lstar-block.md)
+- [Max LStar Block](max-lstar-block.md)
 
 ## Sources
 

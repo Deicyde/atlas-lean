@@ -14,7 +14,13 @@ assigns it there, the M-step mean of a nonempty cluster `k` tends to its k-means
 
 ## Depends on
 
-This node has no prerequisites.
+- [Centers](../../../part-02/kmeans/centers.md)
+- [Soft Mean](soft-mean.md)
+
+## Proof depends on
+
+- [Soft Assign](soft-assign.md)
+- [The zero-variance limit](tendsto-soft-assign.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ with the paper's numerator `A` (expanded polynomial), stated after clearing the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Classical Stat GF](classical-stat-gf.md)
+- [Pattern3](pattern3.md)
 
 ## Sources
 

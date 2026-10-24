@@ -18,6 +18,10 @@ polynomial is defined by the paper's explicit expansion (2.4) with coefficients
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kassel Reutenauer Coeff](kassel-reutenauer-coeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.IntertwinedIntegerSequencesWanted](../../../../sources/v2/WantedExt.md)

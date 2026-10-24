@@ -12,7 +12,12 @@ Corollary 1, support form: for valid `(r,x)`, IDP reflexivity implies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is Reflexive](is-reflexive.md)
+- [Satisfies Support IDPNecessary](satisfies-support-idpnecessary.md)
+- [Valid Support](valid-support.md)
+- [Expand Support](expand-support.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

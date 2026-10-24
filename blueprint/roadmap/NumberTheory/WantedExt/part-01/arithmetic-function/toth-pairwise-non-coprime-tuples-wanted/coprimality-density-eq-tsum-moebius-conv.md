@@ -12,7 +12,8 @@ with `(μ * f)(n) = ∑_{d_i ∣ n_i} μ(d₁) ⋯ μ(d_k) f(n₁/d₁, …, n_k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Density](coprimality-density.md)
+- [Coprimality Indicator](coprimality-indicator.md)
 
 ## Sources
 

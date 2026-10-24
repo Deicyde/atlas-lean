@@ -14,6 +14,10 @@ points of the cone, an equivalent minimal-generator formulation for this positiv
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Hilbert Basis Element](is-hilbert-basis-element.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

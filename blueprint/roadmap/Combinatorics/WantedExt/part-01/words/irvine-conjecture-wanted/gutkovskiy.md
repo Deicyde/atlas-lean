@@ -14,6 +14,10 @@ Gutkovskiy's sequence (OEIS A286389): `g₀ = 0` and `gₙ = n - g_{⌊g_{n-1}/2
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gutkovskiy Table](gutkovskiy-table.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.IrvineConjectureWanted](../../../../../../sources/v2/WantedExt.md)

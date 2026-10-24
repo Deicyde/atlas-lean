@@ -12,7 +12,7 @@ lean: MetaMathlibExt.alternatingZeta_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Zeta](alternating-zeta.md)
 
 ## Sources
 

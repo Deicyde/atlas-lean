@@ -14,7 +14,7 @@ Equation (41), first identity: for a polynomial identity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

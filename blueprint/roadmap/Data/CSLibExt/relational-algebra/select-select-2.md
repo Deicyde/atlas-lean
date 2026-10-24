@@ -12,7 +12,18 @@ lean: Cslib.Databases.Expr.select_select
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond](cond.md)
+- [Attrs](attrs.md)
+- [Expr](expr.md)
+- [Equiv](equiv.md)
+- [Schema](schema.md)
+
+## Proof depends on
+
+- [Conforms](conforms.md)
+- [Eval](eval-2.md)
+- [Tuple](tuple.md)
+- [Cascade of selections](select-select.md)
 
 ## Sources
 

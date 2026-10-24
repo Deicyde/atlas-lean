@@ -12,7 +12,16 @@ lean: Cslib.Decidability.TM2Decidable.kstar
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Decidable](../basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [Exists computable](exists-computable.md)
+- [Bool Lang](bool-lang.md)
+- [Extend Partitions](extend-partitions.md)
+- [Partitions](partitions.md)
+- [Tm2 Decidable iff computable Pred](../basic/tm2-decidable-iff-computable-pred.md)
+- [Computable list any](../../../../MathlibExt/re/computable-list-any.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ with the given syndrome, in the enumeration of all words (`0` if there is none).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Syndrome](syndrome.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Coding.LinearCode](../../../../sources/v2/CSLibExt.md)

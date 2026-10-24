@@ -15,7 +15,7 @@ vanish (`log 1 = 0`, and `a(n) = 0` for `2 ≤ n < ℓ`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Class Function](selberg-class-function.md)
 
 ## Sources
 

@@ -15,7 +15,14 @@ Codes with the same code stack have the same clocked semantics
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../code/code.md)
+
+## Proof depends on
+
+- [Cells Decode](cells-decode.md)
+- [Code Of Entries](code-of-entries.md)
+- [Entries Of Nums](entries-of-nums.md)
+- [Keys Ascend From](keys-ascend-from.md)
 
 ## Sources
 

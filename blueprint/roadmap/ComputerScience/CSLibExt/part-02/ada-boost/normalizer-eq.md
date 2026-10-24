@@ -13,7 +13,13 @@ lean: Cslib.MachineLearning.AdaBoost.normalizer_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Err](err.md)
+- [Normalizer](normalizer.md)
+
+## Proof depends on
+
+- [Alpha](alpha.md)
+- [Sign](../perceptron/sign.md)
 
 ## Sources
 

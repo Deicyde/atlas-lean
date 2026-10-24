@@ -13,6 +13,10 @@ The pair bits of an occurrence list, row by row.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Occ Adj](../clique/occ-adj.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.CliqueEmit](../../../../../../../sources/v2/CSLibExt.md)

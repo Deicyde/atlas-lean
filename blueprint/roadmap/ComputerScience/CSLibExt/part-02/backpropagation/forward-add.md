@@ -12,7 +12,9 @@ Running the first `j + m` layers is running the first `j`, then `m` more.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Net](net.md)
+- [Forward](forward.md)
+- [Shift](shift.md)
 
 ## Sources
 

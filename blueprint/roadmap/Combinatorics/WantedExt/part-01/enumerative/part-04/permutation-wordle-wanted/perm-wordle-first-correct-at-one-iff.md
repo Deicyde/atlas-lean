@@ -12,7 +12,11 @@ lean: MetaMathlibExt.permWordleFirstCorrectAt_one_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
+
+## Proof depends on
+
+- [Perm Wordle Guess](perm-wordle-guess.md)
 
 ## Sources
 

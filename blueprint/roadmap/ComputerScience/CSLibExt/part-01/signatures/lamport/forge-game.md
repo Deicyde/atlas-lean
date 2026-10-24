@@ -11,7 +11,14 @@ The one-time forgery experiment: uniform secret key and coins.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forger](forger.md)
+
+## Proof depends on
+
+- [Wins](wins.md)
+- [Verify](verify.md)
+- [Public Key](public-key.md)
+- [Sign](sign.md)
 
 ## Sources
 

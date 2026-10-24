@@ -12,7 +12,7 @@ The one-part composition `4` has `6` shaded cells.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Shade](composition-shade.md)
 
 ## Sources
 

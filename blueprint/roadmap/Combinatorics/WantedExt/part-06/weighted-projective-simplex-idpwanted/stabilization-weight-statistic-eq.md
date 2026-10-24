@@ -14,7 +14,10 @@ no correction to the printed statement is needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [List Ell](list-ell.md)
+- [Reflexive Stabilization](reflexive-stabilization.md)
+- [Reflexive Stabilization Number](reflexive-stabilization-number.md)
+- [Weight Statistic](weight-statistic.md)
 
 ## Sources
 

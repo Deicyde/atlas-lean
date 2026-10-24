@@ -12,7 +12,8 @@ Corollary 19: for `ℓ ≥ 1` there is a bounded `λ_ℓ : ℕ → ℤ` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Mex A](wythoff-mex-a.md)
+- [Wythoff Mex B](wythoff-mex-b.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The first column of `S_α` is constant `α_1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alpha Stirling Entry](alpha-stirling-entry.md)
 
 ## Sources
 

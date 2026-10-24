@@ -13,7 +13,8 @@ emissions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+- [Path Prob](../hidden-markov/path-prob.md)
 
 ## Sources
 

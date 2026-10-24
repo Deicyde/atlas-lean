@@ -12,7 +12,7 @@ There are four reduced anti-palindromic compositions of `6` with three parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reduced Anti Palindromic Composition Count](reduced-anti-palindromic-composition-cou.md)
 
 ## Sources
 

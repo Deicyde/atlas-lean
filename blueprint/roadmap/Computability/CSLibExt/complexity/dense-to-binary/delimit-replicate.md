@@ -12,7 +12,8 @@ lean: Cslib.Complexity.DenseSAT.ToBinary.delimit_replicate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delimit](../../../MathlibExt/complexity/delimit.md)
+- [Rep](../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

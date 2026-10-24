@@ -13,7 +13,9 @@ D[α, β](n - deg(f ℓ))`, all sums over monic polynomials.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Conv Partial Sum](monic-conv-partial-sum.md)
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+- [Weighted Monic Conv Sum](weighted-monic-conv-sum.md)
 
 ## Sources
 

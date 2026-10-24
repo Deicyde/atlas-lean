@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Cycle Transversal Instance](odd-cycle-transversal-instance.md)
 
 ## Sources
 

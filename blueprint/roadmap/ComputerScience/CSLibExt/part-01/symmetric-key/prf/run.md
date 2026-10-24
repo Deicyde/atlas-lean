@@ -11,7 +11,11 @@ The output of the algorithm when the oracle is the function `O`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+
+## Proof depends on
+
+- [Oracle Sig](oracle-sig.md)
 
 ## Sources
 

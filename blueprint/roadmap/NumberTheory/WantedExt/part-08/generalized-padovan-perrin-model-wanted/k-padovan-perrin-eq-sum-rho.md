@@ -17,7 +17,8 @@ Combinatorial formula for the `k`-Padovan–Perrin numbers `v n = v (n - 2) + k 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
+- [Padovan Perrin Rho](padovan-perrin-rho.md)
 
 ## Sources
 

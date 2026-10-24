@@ -14,7 +14,17 @@ random permutation of a duplicate-free input is the harmonic sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hire Assistant](../hire-assistant/hire-assistant.md)
+- [Uniform Permutation](../../random/expected-cost/uniform-permutation.md)
+- [Expect ENN](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn.md)
+
+## Proof depends on
+
+- [Hire Assistant hires](../hire-assistant/hire-assistant-hires.md)
+- [Hire Assistant time](../hire-assistant/hire-assistant-time.md)
+- [Expect ENN map](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-map.md)
+- [Expect ENN uniform Of Fintype](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-uniform-of-fintype.md)
+- [Uniform Fintype](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/uniform/uniform-fintype.md)
 
 ## Sources
 

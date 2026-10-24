@@ -13,7 +13,13 @@ Lemma 1: `K_{-3}(x)_h = 1`, `K_{-4}(x)_h = -x_{h-2}`, `K_{-5}(x)_h = 1 + x_{h-3}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
+
+## Proof depends on
+
+- [Extended Continuant neg one](extended-continuant-neg-one.md)
+- [Extended Continuant neg two](extended-continuant-neg-two.md)
+- [Extended Continuant recurrence](extended-continuant-recurrence.md)
 
 ## Sources
 

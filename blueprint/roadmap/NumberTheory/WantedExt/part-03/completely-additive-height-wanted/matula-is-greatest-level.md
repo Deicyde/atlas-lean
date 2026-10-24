@@ -12,7 +12,9 @@ Proposition 5 (Gutman-Ivić, maximal case): for the Matula height function
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Completely Additive Nat](is-completely-additive-nat.md)
+- [Matula Max](matula-max.md)
+- [Nth Prime One](nth-prime-one.md)
 
 ## Sources
 

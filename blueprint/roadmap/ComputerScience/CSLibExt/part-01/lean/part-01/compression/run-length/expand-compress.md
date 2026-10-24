@@ -12,7 +12,14 @@ Expanding a compressed bit list returns the original input exactly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compress](compress.md)
+- [Expand](expand.md)
+
+## Proof depends on
+
+- [Compress From](compress-from.md)
+- [Expand From](expand-from.md)
+- [Expand From compress From](expand-from-compress-from.md)
 
 ## Sources
 

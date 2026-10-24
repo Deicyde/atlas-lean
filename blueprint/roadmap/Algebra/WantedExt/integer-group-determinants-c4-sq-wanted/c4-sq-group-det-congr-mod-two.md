@@ -11,7 +11,11 @@ lean: MetaMathlibExt.c4Sq_groupDet_congr_mod_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Sq B](c4-sq-b.md)
+- [C4 Sq Beta](c4-sq-beta.md)
+- [C4 Sq C](c4-sq-c.md)
+- [C4 Sq Gamma](c4-sq-gamma.md)
+- [Circulant Det Four](circulant-det-four.md)
 
 ## Sources
 

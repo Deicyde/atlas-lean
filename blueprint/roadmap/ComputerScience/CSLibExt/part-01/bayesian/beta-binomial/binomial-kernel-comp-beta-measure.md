@@ -13,7 +13,12 @@ lean: Cslib.MachineLearning.Bayesian.binomialKernel_comp_betaMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Kernel](binomial-kernel.md)
+
+## Proof depends on
+
+- [Beta PDF mul binomial Kernel](beta-pdf-mul-binomial-kernel.md)
+- [Comp apply singleton](../basic/comp-apply-singleton.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.lucasLeonardoP_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Leonardo P](lucas-leonardo-p.md)
 
 ## Sources
 

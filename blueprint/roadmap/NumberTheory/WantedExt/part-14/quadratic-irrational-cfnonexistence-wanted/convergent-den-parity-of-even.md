@@ -12,7 +12,7 @@ Corollary 1 (i): for even `l ≥ 2` and a symmetric sequence `a₁, …, a_{l-1}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Den](convergent-den.md)
 
 ## Sources
 

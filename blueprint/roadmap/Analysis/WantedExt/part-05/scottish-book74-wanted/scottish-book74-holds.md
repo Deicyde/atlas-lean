@@ -37,7 +37,7 @@ and formalize nothing open. The monomial gives the lower bound
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem74 Claim](scottish-book-problem74-claim.md)
 
 ## Sources
 

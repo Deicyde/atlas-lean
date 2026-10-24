@@ -12,7 +12,7 @@ the same steps take `w0^k` to `v0^k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Canonization Run](tribonacci-canonization-run.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The paper's set
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Primes Five Mod Eight](primes-five-mod-eight.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.IntegerGroupDeterminantsC4SqWanted](../../../../sources/v2/WantedExt.md)

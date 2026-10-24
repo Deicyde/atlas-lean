@@ -13,7 +13,7 @@ counts monotone `n`-variable functions of weight `w`. The paper assumes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Fun Weight](bool-fun-weight.md)
 
 ## Sources
 

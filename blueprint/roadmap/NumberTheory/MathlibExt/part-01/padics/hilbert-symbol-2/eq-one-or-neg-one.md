@@ -13,7 +13,11 @@ The Hilbert symbol takes only the values one and negative one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hilbert Symbol](hilbert-symbol.md)
+
+## Proof depends on
+
+- [Is Solvable](is-solvable.md)
 
 ## Sources
 

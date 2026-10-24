@@ -14,6 +14,11 @@ index and the distinguished up/down positions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Motzkin Hump](is-motzkin-hump.md)
+- [Is Motzkin Prefix](is-motzkin-prefix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinHumpsYoungTableauxWanted](../../../../../../../sources/v2/WantedExt.md)

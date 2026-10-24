@@ -13,7 +13,15 @@ counts the chosen vertices on edge `q`, plus `1` if the number of edge `q` is ch
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Num](../subset-sum/edge-num.md)
+- [Pairs](../../part-01/clique/pairs.md)
+- [Touches](../subset-sum/touches.md)
+- [Vtx Num](../subset-sum/vtx-num.md)
+
+## Proof depends on
+
+- [Pair Digit](../subset-sum/pair-digit.md)
+- [Vtx Num eq](vtx-num-eq.md)
 
 ## Sources
 

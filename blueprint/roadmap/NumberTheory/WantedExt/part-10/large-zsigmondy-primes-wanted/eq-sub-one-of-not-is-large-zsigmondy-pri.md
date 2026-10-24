@@ -12,7 +12,8 @@ that is not a large Zsigmondy prime satisfies `n = q - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Prime Divisor](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
+- [Is Large Zsigmondy Prime](is-large-zsigmondy-prime.md)
 
 ## Sources
 

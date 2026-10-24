@@ -12,7 +12,7 @@ Theorem 3: `Le^{(r)}` is convex: `Le^{(r)}_{n-1} + Le^{(r)}_{n+1} ≥ 2 Le^{(r)}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

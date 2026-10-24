@@ -12,7 +12,12 @@ Generating function of `ā_5`: `(∑ ā_5(n) q^n) φ(-q) = φ^5(-q^5)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Phi Five Core Analog](phi-five-core-analog.md)
+- [Ramanujan Theta Pow](ramanujan-theta-pow.md)
+
+## Proof depends on
+
+- [Constant Coeff ramanujan Theta Pow](constant-coeff-ramanujan-theta-pow.md)
 
 ## Sources
 

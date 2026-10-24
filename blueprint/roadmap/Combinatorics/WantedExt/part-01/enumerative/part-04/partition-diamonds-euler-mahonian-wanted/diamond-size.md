@@ -13,6 +13,10 @@ Number of parts `c = d₁ + ⋯ + d_M + M + 1` of the multifold partition diamon
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diamond Link Pos](diamond-link-pos.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PartitionDiamondsEulerMahonianWanted](../../../../../../../sources/v2/WantedExt.md)

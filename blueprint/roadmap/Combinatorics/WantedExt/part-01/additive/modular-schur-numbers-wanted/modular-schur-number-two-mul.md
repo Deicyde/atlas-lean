@@ -12,7 +12,7 @@ For `k, n ≥ 2` and positive `l` with `l ≢ 1 (mod 2n)`: `S_{2n}(k, l) = 1` wh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

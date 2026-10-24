@@ -14,7 +14,8 @@ written as `∑_{j<ℓ} 900·100^j`; and for `ℓ ≥ 2`, with `y₁(n) = h₂(1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Campbell H1](campbell-h1.md)
+- [Campbell H2](campbell-h2.md)
 
 ## Sources
 

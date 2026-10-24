@@ -15,7 +15,9 @@ of the first label is below the left element of the second.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Label](mallows-label.md)
+- [Nat Pair To Real](nat-pair-to-real.md)
 
 ## Sources
 

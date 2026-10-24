@@ -13,7 +13,7 @@ do not end with `0`. Stated for all `k ≥ 0` (both sides are `1` at `k = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positional Colored Composition Count](positional-colored-composition-count.md)
 
 ## Sources
 

@@ -12,7 +12,19 @@ The literals of a clause, within the cap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Wl](wl.md)
+- [Lit Rev](../../../sat-check/lit-rev.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Stmt](stmt.md)
+- [Walk lit](walk-lit.md)
 
 ## Sources
 

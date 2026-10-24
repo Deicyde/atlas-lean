@@ -12,7 +12,11 @@ A Hamiltonian path visits every vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ham Path](../ham-path/is-ham-path.md)
+
+## Proof depends on
+
+- [Arc](../../../path/arc.md)
 
 ## Sources
 

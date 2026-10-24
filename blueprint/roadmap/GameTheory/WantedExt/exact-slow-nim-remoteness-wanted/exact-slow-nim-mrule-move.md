@@ -14,6 +14,11 @@ pile.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exact Slow Nim MRule Kept](exact-slow-nim-mrule-kept.md)
+- [Slow ANim After](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.ExactSlowNimRemotenessWanted](../../../../sources/v2/WantedExt.md)

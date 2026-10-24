@@ -11,7 +11,7 @@ Initial counters: `T` on `Tn`, `H` on `Hs`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
 
 ## Sources
 

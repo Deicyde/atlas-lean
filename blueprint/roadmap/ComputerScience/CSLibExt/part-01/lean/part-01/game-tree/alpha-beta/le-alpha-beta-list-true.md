@@ -12,7 +12,12 @@ The maximizer's scan never reports less than its starting `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
+- [Alpha Beta List](alpha-beta-list.md)
+
+## Proof depends on
+
+- [Alpha Beta](alpha-beta.md)
 
 ## Sources
 

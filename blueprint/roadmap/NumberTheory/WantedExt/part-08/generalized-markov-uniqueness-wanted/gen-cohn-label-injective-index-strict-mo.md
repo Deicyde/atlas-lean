@@ -13,7 +13,7 @@ it is strictly increasing for the index `I_M = m₁₁/m₁₂`: `p < q` implies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Label](is-gen-cohn-label.md)
 
 ## Sources
 

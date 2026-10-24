@@ -12,7 +12,11 @@ lean: Cslib.Language.IsRegular.cyclicShift
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Shift](cyclic-shift.md)
+
+## Proof depends on
+
+- [From To](from-to.md)
 
 ## Sources
 

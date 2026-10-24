@@ -11,7 +11,7 @@ lean: MetaMathlibExt.regularTripartitionCount_three_mod_three_nine
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Tripartition Count](regular-tripartition-count.md)
 
 ## Sources
 

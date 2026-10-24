@@ -13,7 +13,14 @@ since it stops once nothing changes, a generous bound costs nothing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reachable](reachable.md)
+- [Reachable Within](reachable-within.md)
+
+## Proof depends on
+
+- [Reach Step](reach-step.md)
+- [Lfp Fin](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin.md)
+- [Lfp Fin fixed](../../../../../Order/MathlibExt/fixed-points/finset/lfp-fin-fixed.md)
 
 ## Sources
 

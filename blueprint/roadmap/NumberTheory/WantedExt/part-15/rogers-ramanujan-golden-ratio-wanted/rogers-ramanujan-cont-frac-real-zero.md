@@ -12,7 +12,7 @@ lean: MetaMathlibExt.rogersRamanujanContFracReal_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rogers Ramanujan Cont Frac Real](rogers-ramanujan-cont-frac-real.md)
 
 ## Sources
 

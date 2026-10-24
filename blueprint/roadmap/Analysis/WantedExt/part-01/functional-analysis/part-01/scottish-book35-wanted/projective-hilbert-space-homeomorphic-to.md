@@ -14,6 +14,10 @@ Hilbert space itself.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Projective Hilbert Space](projective-hilbert-space.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FunctionalAnalysis.ScottishBook35Wanted](../../../../../../../sources/v2/WantedExt.md)

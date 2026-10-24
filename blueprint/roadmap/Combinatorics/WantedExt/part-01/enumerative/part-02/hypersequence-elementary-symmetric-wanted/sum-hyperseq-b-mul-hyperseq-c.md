@@ -11,7 +11,8 @@ Corollary 2: `∑_{i=0}^{j} b_{j,i}(n) c_{i,m}(n) = j! δ_{j,m}` for all `j, m, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](../hypersequence-weighted-sums-wanted/alternating-binomial-power-sum.md)
+- [Hyperseq B](hyperseq-b.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ In the setting of Lemma 8, if `S₁` covers `b` exactly `c` times, then for ever
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect MCover](is-perfect-mcover.md)
+- [Cover Count](cover-count.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ cell; once `ended` holds there are no moves. The rank is the number of empty cel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
 
 ## Sources
 

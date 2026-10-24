@@ -13,7 +13,7 @@ A set containing a multiple of `m` is not `l`-sum-free modulo `m` for `l ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Free Mod](is-sum-free-mod.md)
 
 ## Sources
 

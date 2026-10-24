@@ -13,7 +13,7 @@ even `n ≥ 4`, `C_n` lies strictly between `2n log 2 / π + 0.252/n` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Watson Alternating Cosecant Sum](watson-alternating-cosecant-sum.md)
 
 ## Sources
 

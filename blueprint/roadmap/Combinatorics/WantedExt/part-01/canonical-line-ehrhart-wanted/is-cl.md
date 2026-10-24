@@ -14,6 +14,10 @@ satisfying `IsCLWithParameters`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is CLWith Parameters](is-clwith-parameters.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

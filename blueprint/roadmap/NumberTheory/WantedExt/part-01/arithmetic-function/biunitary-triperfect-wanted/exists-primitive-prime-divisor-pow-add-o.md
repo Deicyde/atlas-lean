@@ -15,7 +15,7 @@ the only prime factor of `3 + 1 = 4` is `2 ≢ 1 (mod 2)`; the paper's proof app
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Prime Divisor](../../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Membership in `β(F)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beta Family](beta-family.md)
 
 ## Sources
 

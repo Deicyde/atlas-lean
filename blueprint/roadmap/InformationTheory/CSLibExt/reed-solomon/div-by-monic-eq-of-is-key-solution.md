@@ -12,7 +12,12 @@ The quotient `Q /ₘ E` of any solution of the key equations is the transmitted 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Key Solution](is-key-solution.md)
+- [Encode](encode.md)
+
+## Proof depends on
+
+- [Every solution of the key equations reveals the message](eq-mul-of-is-key-solution.md)
 
 ## Sources
 

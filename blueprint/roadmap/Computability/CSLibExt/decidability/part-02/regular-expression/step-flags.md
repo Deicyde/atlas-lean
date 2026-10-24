@@ -11,7 +11,14 @@ The flags of a node from the flags `acc` of the nodes before it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regex Node](regex-node.md)
+
+## Proof depends on
+
+- [Comp Flags](comp-flags.md)
+- [Plus Flags](plus-flags.md)
+- [Star Flags](star-flags.md)
+- [Zero Flags](zero-flags.md)
 
 ## Sources
 

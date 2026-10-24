@@ -11,7 +11,7 @@ The letter `a` of `α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](sym.md)
 
 ## Sources
 

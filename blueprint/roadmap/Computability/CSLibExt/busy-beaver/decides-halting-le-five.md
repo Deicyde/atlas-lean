@@ -15,7 +15,18 @@ derives its non-halting sentence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decides Halting](decides-halting.md)
+- [Formal Theory](formal-theory.md)
+- [ZFCPresentation](zfcpresentation.md)
+
+## Proof depends on
+
+- [Halts Within](halts-within.md)
+- [Machine](machine.md)
+- [Bound Sentence](bound-sentence.md)
+- [Busy Beaver Steps](busy-beaver-steps.md)
+- [Halts Sentence](halts-sentence.md)
+- [Not Halts Sentence](not-halts-sentence.md)
 
 ## Sources
 

@@ -19,7 +19,9 @@ distribution).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valuation Conjecture One](valuation-conjecture-one.md)
+- [Valuation Curve Points](valuation-curve-points.md)
+- [Valuation Square Count](valuation-square-count.md)
 
 ## Sources
 

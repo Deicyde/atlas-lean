@@ -11,7 +11,8 @@ Theorem 4: for `n = p^k` with `p` prime and `k > 0`, `F_{-1}` over `ℤ/n` is va
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vanishing Family](is-vanishing-family.md)
+- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ Theorem 2.13: for nondegenerate `U(a, b)` with `d = gcd(a, b) > 1` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

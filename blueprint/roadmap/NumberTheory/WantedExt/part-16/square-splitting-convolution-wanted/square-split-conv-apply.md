@@ -12,7 +12,8 @@ Unfolding `f ⋆ g` at `n ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Conv](square-split-conv.md)
+- [Square Split Divisors](square-split-divisors.md)
 
 ## Sources
 

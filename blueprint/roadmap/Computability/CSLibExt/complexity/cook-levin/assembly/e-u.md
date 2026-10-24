@@ -11,7 +11,13 @@ Stack renaming of the update generator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](hk.md)
+- [GK](../family/gk.md)
+
+## Proof depends on
+
+- [SK](../counter-view/sk.md)
+- [CK](../family/ck.md)
 
 ## Sources
 

@@ -15,7 +15,9 @@ As for Lemma 4, Phase I is dropped; the standing assumptions of Definition 1 are
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ideal Period Word](ideal-period-word.md)
+- [N Expansion Digit](n-expansion-digit.md)
+- [N Expansion Map](n-expansion-map.md)
 
 ## Sources
 

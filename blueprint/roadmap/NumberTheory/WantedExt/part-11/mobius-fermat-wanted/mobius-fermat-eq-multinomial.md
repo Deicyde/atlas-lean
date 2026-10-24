@@ -14,7 +14,7 @@ written `f 2 ≤ 1 ∨ f 3 = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Unit Function](fermat-unit-function.md)
 
 ## Sources
 

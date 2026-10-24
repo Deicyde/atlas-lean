@@ -16,6 +16,10 @@ the factorial product is `tendsto_prod_factorial_mul_div` below.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BinomialProductAsymptoticsWanted](../../../../../sources/v2/WantedExt.md)

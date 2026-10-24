@@ -12,7 +12,7 @@ Initial values of the capacity-`3` optimal time:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Time](bridge-time.md)
 
 ## Sources
 

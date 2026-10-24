@@ -14,7 +14,18 @@ the index value `t` (descending, `n-1, …, 0`) and must restore every counter; 
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](sk.md)
+- [SΓ](s.md)
+- [St](st.md)
+- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [For Head](../../../../MathlibExt/turing-machine/program/for-head.md)
+- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+
+## Proof depends on
+
+- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [For Loop le](../../../../MathlibExt/turing-machine/program/for-loop-le.md)
 
 ## Sources
 

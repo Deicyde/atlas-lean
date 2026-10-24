@@ -41,7 +41,7 @@ not a cell of λ/μ.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Shape](skew-shape.md)
 
 ## Sources
 

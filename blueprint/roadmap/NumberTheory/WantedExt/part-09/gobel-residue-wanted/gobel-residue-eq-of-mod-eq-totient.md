@@ -13,7 +13,7 @@ integers `r + 1 ≤ k ≤ l` with `k ≡ l (mod φ(p^r))`, every positive intege
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Residue](gobel-residue.md)
 
 ## Sources
 

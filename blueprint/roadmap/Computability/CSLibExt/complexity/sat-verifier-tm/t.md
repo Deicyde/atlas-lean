@@ -11,7 +11,13 @@ Tokenizer labels in the host: accept starts the filter, reject cleans up with `f
 
 ## Depends on
 
-This node has no prerequisites.
+- [HLab](hlab.md)
+- [Lab](../sat-tokenizer/lab.md)
+
+## Proof depends on
+
+- [Lab](../karp/part-02/three-sat-filter/lab.md)
+- [Start](../karp/part-02/three-sat-filter/start.md)
 
 ## Sources
 

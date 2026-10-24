@@ -12,7 +12,7 @@ lean: MetaMathlibExt.antiTribonacciMex_example
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
 
 ## Sources
 

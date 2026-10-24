@@ -12,7 +12,7 @@ for every `h`, tuple `r̄` and indexing `a`; the paper assumes `h ≥ 2`, `r̄` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized HFold Sumset](generalized-hfold-sumset.md)
 
 ## Sources
 

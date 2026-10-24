@@ -12,7 +12,7 @@ The hypotheses force `d ≥ 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Split Thue Recurrence Family](is-split-thue-recurrence-family.md)
 
 ## Sources
 

@@ -16,7 +16,11 @@ When `d = 1` or `d = 2`: (i) `λ_r = 0`, and (ii) the minimal period of `a^r(X_n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDelay](base-pdelay.md)
+- [Base PPeriod](base-pperiod.md)
+- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
+- [Tower Gamma](tower-gamma.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ written over `1 ≤ r ≤ N`, which is exact because `𝒫_r(N)` is empty for `r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q MZVSpace](../part-02/q-mzvspace.md)
+- [Stanley Partitions](../part-02/stanley-partitions.md)
 
 ## Sources
 

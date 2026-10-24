@@ -17,6 +17,11 @@ fitting alignment scores negatively.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Infixes](infixes.md)
+- [Nw Score](../sequence-alignment/nw-score.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.SemiGlobalAlignment](../../../../../../../../sources/v2/CSLibExt.md)

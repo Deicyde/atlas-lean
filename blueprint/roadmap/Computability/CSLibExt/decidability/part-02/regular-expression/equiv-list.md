@@ -11,7 +11,8 @@ Encoded regular expressions as lists of nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](encoded-regex.md)
+- [Regex Node](regex-node.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ With no people the algorithm takes zero rounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+- [Gale Shapley Rounds](gale-shapley-rounds.md)
+
+## Proof depends on
+
+- [GSEngaged](gsengaged.md)
+- [Gs Proposals](gs-proposals.md)
 
 ## Sources
 

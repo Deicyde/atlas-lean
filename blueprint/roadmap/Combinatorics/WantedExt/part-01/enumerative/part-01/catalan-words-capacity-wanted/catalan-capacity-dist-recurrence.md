@@ -14,7 +14,10 @@ with `c(m, i-1; 1/q)` the image of `c(m, i-1)` under `q ↦ q⁻¹`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Area Dist](area-dist.md)
+- [Catalan Capacity Dist](catalan-capacity-dist.md)
+- [Catalan Growth Words](catalan-growth-words.md)
+- [Catalan Max End Capacity Dist](catalan-max-end-capacity-dist.md)
 
 ## Sources
 

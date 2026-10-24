@@ -11,7 +11,7 @@ For `x ≥ 9` or `y ≥ 9`, `𝒢₁(x, y, 1) = 0` if and only if `𝒢₁(x, y,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
 
 ## Sources
 

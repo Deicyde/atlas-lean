@@ -12,7 +12,9 @@ lean: MetaMathlibExt.letterPosition_le_of_run_le'
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Letter Position](letter-position.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

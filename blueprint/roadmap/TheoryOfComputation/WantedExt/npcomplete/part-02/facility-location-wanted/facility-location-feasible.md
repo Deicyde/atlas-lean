@@ -11,7 +11,7 @@ An assignment of total cost at most `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Facility Location Instance](facility-location-instance.md)
 
 ## Sources
 

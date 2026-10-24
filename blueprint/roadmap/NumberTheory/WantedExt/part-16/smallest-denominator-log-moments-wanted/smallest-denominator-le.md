@@ -12,7 +12,7 @@ Any denominator of a rational in the window bounds `q_min(x, δ)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smallest Denominator](smallest-denominator.md)
 
 ## Sources
 

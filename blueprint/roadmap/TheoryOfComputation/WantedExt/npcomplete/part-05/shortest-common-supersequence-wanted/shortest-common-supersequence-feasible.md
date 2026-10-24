@@ -11,7 +11,7 @@ A common supersequence of length at most `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shortest Common Supersequence Instance](shortest-common-supersequence-instance.md)
 
 ## Sources
 

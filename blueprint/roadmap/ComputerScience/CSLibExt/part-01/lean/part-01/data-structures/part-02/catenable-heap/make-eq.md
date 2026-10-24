@@ -12,7 +12,8 @@ lean: Cslib.Algorithms.Lean.CatenableHeap.make_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Make](make.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ Reformulation via Definition 1: if `s ∈ {0, 1, 2}` or `s` is neither `k²` nor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Frobenius Number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
+- [Triangular Frobenius Bound](triangular-frobenius-bound.md)
+- [Triangular Frobenius X](triangular-frobenius-x.md)
+- [Triangular Frobenius Y](triangular-frobenius-y.md)
+- [Triangular Triple](triangular-triple.md)
 
 ## Sources
 

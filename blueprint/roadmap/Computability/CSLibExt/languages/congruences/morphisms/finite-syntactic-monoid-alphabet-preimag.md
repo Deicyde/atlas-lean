@@ -12,7 +12,16 @@ Finiteness of the target syntactic monoid passes to every alphabet preimage.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Alphabet Preimage](alphabet-preimage.md)
+
+## Proof depends on
+
+- [Alphabet Preimage Morphism](alphabet-preimage-morphism.md)
+- [Finite syntactic Monoid of recognizer](../recognition/finite-syntactic-monoid-of-recognizer.md)
+- [Recognizes alphabet Preimage Morphism](recognizes-alphabet-preimage-morphism.md)
+- [Syntactic Accept](../syntactic/syntactic-accept.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
 
 ## Sources
 

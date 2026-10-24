@@ -12,7 +12,8 @@ The recurrence `v_{i+2} = v_i + q_{i+2} v_{i+1}` for `i ≥ 0`, whenever `q_{i+2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Vec](convergent-vec.md)
+- [Partial Quotient](partial-quotient.md)
 
 ## Sources
 

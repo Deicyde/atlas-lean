@@ -14,7 +14,7 @@ curve `xy = n/2`) minus the number of lattice points with `x, y ≥ 1` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
 
 ## Sources
 

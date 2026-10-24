@@ -14,7 +14,8 @@ positive `p` has `h_k^(p-1)(k-1) ≥ k-1 = n(k-1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus](../../../MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Maximum Nim H](maximum-nim-h.md)
 
 ## Sources
 

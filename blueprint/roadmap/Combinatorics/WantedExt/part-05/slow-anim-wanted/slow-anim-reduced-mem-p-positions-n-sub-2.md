@@ -15,7 +15,9 @@ P-position of the playable game graph exactly when `(s, o)` lies in `S₁ = {s <
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is PPosition Set](is-pposition-set.md)
+- [Slow ANim Reduced](slow-anim-reduced.md)
+- [Slow ANim Reduced Graph Move](slow-anim-reduced-graph-move.md)
 
 ## Sources
 

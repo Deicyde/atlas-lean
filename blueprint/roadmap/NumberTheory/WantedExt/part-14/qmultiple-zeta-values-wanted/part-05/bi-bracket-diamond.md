@@ -15,6 +15,10 @@ Bachmann's product on letters `z_{k,d}` (pairs `(k, d)`):
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bi Bracket Lambda](bi-bracket-lambda.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

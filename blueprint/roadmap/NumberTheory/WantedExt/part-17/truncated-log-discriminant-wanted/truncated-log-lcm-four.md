@@ -12,7 +12,7 @@ lean: MetaMathlibExt.truncatedLogLcm_four
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Lcm](truncated-log-lcm.md)
 
 ## Sources
 

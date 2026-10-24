@@ -12,7 +12,7 @@ nonempty if and only if `t ≡ 1 (mod 8)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Unramified Degree One Primes](two-unramified-degree-one-primes.md)
 
 ## Sources
 

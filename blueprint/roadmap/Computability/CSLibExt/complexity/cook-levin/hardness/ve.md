@@ -11,7 +11,8 @@ Exponent with `V.time.eval j ≤ (j + vc V) ^ ve V`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](../../dense-satverifier/g.md)
+- [Pair Encode](../../dense-satverifier/pair-encode.md)
 
 ## Sources
 

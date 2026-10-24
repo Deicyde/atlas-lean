@@ -12,7 +12,15 @@ Renaming a production of `G` to numbers and back gives it back.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nt Index](nt-index.md)
+- [Nt Of Index](nt-of-index.md)
+- [Map Rule](../basic/map-rule.md)
+
+## Proof depends on
+
+- [Nt Of](nt-of.md)
+- [Used NT](used-nt.md)
+- [Map Symbol](../basic/map-symbol.md)
 
 ## Sources
 

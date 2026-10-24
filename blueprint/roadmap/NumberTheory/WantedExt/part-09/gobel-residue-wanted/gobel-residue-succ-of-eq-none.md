@@ -12,7 +12,7 @@ Once the residue sequence fails (`F`), it stays `F`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Residue](gobel-residue.md)
 
 ## Sources
 

@@ -15,7 +15,13 @@ satisfying the invariant with the guard false.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [Big Step](../big-step/big-step.md)
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+- [TValid](tvalid.md)
 
 ## Sources
 

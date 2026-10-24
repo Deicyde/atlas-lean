@@ -14,6 +14,10 @@ The vertex of the wide `k`-generalized Markov tree `WMT(k)` reached from the roo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gen Markov Vieta](gen-markov-vieta.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedMarkovUniquenessWanted](../../../../../sources/v2/WantedExt.md)

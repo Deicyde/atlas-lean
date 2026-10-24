@@ -12,7 +12,7 @@ lean: MetaMathlibExt.squareSplitU_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split U](square-split-u.md)
 
 ## Sources
 

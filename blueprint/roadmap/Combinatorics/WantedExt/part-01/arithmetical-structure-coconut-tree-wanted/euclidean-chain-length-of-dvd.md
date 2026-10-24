@@ -11,7 +11,7 @@ Corollary 4: for `x, y ≥ 1` with `x ∣ y`, `F(x, y) = 1 + y / x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclidean Chain Length](euclidean-chain-length.md)
 
 ## Sources
 

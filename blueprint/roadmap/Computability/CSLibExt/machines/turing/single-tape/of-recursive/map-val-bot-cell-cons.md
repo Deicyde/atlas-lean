@@ -13,7 +13,9 @@ stack `w.reverse ++ [true]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](../of-tm0/non-blank.md)
+- [Bot Cell](bot-cell.md)
+- [In Cell](in-cell.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ marginal `ppca_map_eq` with MathlibExt's `multivariateGaussian_eq_withDensity`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ppca Cov](ppca-cov.md)
+- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
+
+## Proof depends on
+
+- [The probabilistic PCA marginal](../probabilistic-pca/ppca-map-eq.md)
+- [The multivariate Gaussian density](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-eq-with-density.md)
 
 ## Sources
 

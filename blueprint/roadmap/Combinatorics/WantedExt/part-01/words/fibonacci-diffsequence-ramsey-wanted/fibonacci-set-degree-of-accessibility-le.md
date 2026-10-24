@@ -13,7 +13,10 @@ Degree of accessibility of the Fibonacci numbers is at most three: `F` is not
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DDiff Sequence](../../accessible-sets-wanted/is-ddiff-sequence.md)
+- [Is Monochromatic](../../accessible-sets-wanted/is-monochromatic.md)
+- [Is RAccessible](../../accessible-sets-wanted/is-raccessible.md)
+- [Positive Fibonacci Set](../../accessible-sets-wanted/positive-fibonacci-set.md)
 
 ## Sources
 

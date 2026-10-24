@@ -12,7 +12,7 @@ For each positive integer `k`, the `k`-th moment `M_k(x) = ∑_{1 ≤ n ≤ x} a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Pyramidal Square Distance](square-pyramidal-square-distance.md)
 
 ## Sources
 

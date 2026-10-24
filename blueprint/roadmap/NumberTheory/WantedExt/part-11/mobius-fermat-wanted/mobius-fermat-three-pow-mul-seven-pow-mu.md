@@ -13,7 +13,7 @@ and `m n k : ℕ`, `μ_M (3 ^ m * 7 ^ n * q ^ k) = (-1) ^ (m + n + k) *
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Unit Function](fermat-unit-function.md)
 
 ## Sources
 

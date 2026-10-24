@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Dominating Set Instance](edge-dominating-set-instance.md)
 
 ## Sources
 

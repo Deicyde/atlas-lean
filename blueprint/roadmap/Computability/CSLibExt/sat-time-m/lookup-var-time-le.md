@@ -12,7 +12,7 @@ Lookup costs at most one tick per occurring variable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lookup Var](lookup-var.md)
 
 ## Sources
 

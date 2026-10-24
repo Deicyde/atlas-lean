@@ -12,7 +12,7 @@ fails to park has preference `a_i ≥ n - t + 1` (zero-based: `n ≤ f i + t`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Outcome](metered-outcome.md)
 
 ## Sources
 

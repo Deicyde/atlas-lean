@@ -13,7 +13,7 @@ the Cartesian product `maxNormBall h` has `2h+1` elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Norm Ball](max-norm-ball.md)
 
 ## Sources
 

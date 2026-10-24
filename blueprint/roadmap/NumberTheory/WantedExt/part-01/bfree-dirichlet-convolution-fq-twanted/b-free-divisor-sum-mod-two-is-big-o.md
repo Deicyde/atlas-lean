@@ -15,7 +15,9 @@ with `Φ(m) / |m| = ∏_{P ∣ m} (1 - 1/|P|)` written as the product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Divisor Sum Mod](b-free-divisor-sum-mod.md)
+- [Fq Norm](fq-norm.md)
+- [Kappa Min](kappa-min.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Setting the mark of vertex `j`: keep `j` marks, set the next one (if any).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Head](set-head.md)
 
 ## Sources
 

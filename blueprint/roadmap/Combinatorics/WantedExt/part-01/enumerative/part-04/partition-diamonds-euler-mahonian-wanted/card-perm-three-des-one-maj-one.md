@@ -12,7 +12,8 @@ In `S_3` exactly two permutations have one descent at position `1` (`maj = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Des](perm-des.md)
+- [Perm Maj](perm-maj.md)
 
 ## Sources
 

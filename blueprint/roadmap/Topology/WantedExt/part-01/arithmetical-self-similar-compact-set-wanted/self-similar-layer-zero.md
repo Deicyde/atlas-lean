@@ -12,7 +12,7 @@ Characteristic value: the layer `T_0` is `K \ K'`, the isolated points of `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Self Similar Layer](self-similar-layer.md)
 
 ## Sources
 

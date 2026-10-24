@@ -12,7 +12,7 @@ Constraint 1 in P2's prose form `ℓ + (T+1)·d ≤ H` (`ℓ ≤ m`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cap H](cap-h.md)
 
 ## Sources
 

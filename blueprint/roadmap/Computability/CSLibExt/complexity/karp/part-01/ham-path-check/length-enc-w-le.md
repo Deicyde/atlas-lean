@@ -12,7 +12,11 @@ Vertices below `n` cost at most `n` bits each.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc W](enc-w.md)
+
+## Proof depends on
+
+- [Enc W cons](enc-w-cons.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Compact unit-vector colorings attain the infimum in positive column dimension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vector Discrepancy](vector-discrepancy.md)
 
 ## Sources
 

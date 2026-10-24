@@ -12,7 +12,11 @@ Co-recognizability by a multi-stack machine is `REPred` of the complement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Co Recognizable](tm2-co-recognizable.md)
+
+## Proof depends on
+
+- [Tm2 Recognizable iff re Pred](tm2-recognizable-iff-re-pred.md)
 
 ## Sources
 

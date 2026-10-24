@@ -12,7 +12,7 @@ The empty index has value `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Finite MZV](colored-finite-mzv.md)
 
 ## Sources
 

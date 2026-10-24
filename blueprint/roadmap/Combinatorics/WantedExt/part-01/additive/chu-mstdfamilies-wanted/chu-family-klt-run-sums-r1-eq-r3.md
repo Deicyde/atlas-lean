@@ -15,7 +15,7 @@ needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chu Block](chu-block.md)
 
 ## Sources
 

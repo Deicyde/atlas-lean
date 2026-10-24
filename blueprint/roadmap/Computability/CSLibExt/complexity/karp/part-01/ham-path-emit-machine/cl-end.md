@@ -11,7 +11,11 @@ Where the detour walk goes at the end of a clause with flags `pp`, `pn`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+
+## Proof depends on
+
+- [Site](site.md)
 
 ## Sources
 

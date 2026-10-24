@@ -13,7 +13,8 @@ out of reach.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scale Finset](scale-finset.md)
+- [Zero Interval](zero-interval.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ of the nonzero prime ideals of norm at most `N(π_n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Quad Prime Norm](quad-prime-norm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SchatunowskyImaginaryQuadraticWanted](../../../../../sources/v2/WantedExt.md)

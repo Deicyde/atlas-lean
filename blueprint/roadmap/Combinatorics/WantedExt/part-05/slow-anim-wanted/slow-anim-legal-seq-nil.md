@@ -12,7 +12,7 @@ The empty move sequence is legal from every position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Legal Seq](slow-anim-legal-seq.md)
 
 ## Sources
 

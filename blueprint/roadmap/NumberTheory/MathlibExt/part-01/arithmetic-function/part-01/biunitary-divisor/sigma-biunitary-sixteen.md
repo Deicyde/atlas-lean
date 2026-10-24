@@ -12,7 +12,7 @@ lean: MetaMathlibExt.sigmaBiunitary_sixteen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](sigma-biunitary.md)
 
 ## Sources
 

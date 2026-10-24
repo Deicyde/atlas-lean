@@ -14,6 +14,11 @@ sizes sum to `m` (see `mem_nColorPartitions`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Multisets With Size Sum](multisets-with-size-sum.md)
+- [N Color Parts Up To](n-color-parts-up-to.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.StanleyElderPartsWanted](../../../../../../../../../sources/v2/WantedExt.md)

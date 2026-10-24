@@ -11,7 +11,8 @@ Accept symbol: the verifier's output symbol for `true`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](../../dense-satverifier/g.md)
+- [Pair Encode](../../dense-satverifier/pair-encode.md)
 
 ## Sources
 

@@ -15,7 +15,10 @@ paper's divisibilities `π_W(m) ∣ π_U(m)` and `ρ_W(m) ∣ ρ_U(m)`, which ar
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas UPeriod](lucas-uperiod.md)
+- [Lucas URestricted Period](lucas-urestricted-period.md)
 
 ## Sources
 

@@ -15,7 +15,10 @@ with `C_P = binom(h + κ(P) - 1, κ(P))`; `(r, m) = 1` is `IsCoprime r m` and `|
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fq Norm](fq-norm.md)
+- [Kappa Min](kappa-min.md)
+- [Kappa Pow](kappa-pow.md)
+- [Monic Divisor Count](monic-divisor-count.md)
 
 ## Sources
 

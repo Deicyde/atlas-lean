@@ -13,7 +13,15 @@ lean: Cslib.Crypto.PublicKey.RSA.Key.crtDecrypt_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key](key.md)
+- [RSA-CRT decryption](crt-decrypt.md)
+- [Decrypt](decrypt.md)
+- [N](n.md)
+
+## Proof depends on
+
+- [Crt](crt.md)
+- [Pow eq pow of mod Eq](pow-eq-pow-of-mod-eq.md)
 
 ## Sources
 

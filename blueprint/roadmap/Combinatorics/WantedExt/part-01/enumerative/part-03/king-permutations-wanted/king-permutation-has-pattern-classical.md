@@ -16,7 +16,7 @@ are lost in the extracted record).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Pattern](../../part-04/odd-fibonacci-wanted/has-pattern.md)
 
 ## Sources
 

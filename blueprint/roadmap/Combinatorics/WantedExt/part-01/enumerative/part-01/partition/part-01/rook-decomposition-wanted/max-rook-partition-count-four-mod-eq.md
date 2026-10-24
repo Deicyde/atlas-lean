@@ -11,7 +11,7 @@ For `n > 16` and `p ≥ 2`, `R_4(n + 12p) ≡ R_4(n) (mod p)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Rook Partition Count](max-rook-partition-count.md)
 
 ## Sources
 

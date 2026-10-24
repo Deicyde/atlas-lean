@@ -14,7 +14,9 @@ lean: Cslib.MachineLearning.Bayesian.gaussianPDFReal_mul_linRegLikelihoodPDFReal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lin Reg Likelihood PDFReal](lin-reg-likelihood-pdfreal.md)
+- [Lin Reg Post Mean](lin-reg-post-mean.md)
+- [Lin Reg Post Var](lin-reg-post-var.md)
 
 ## Sources
 

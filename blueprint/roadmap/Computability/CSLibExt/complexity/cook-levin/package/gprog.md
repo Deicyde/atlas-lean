@@ -12,7 +12,18 @@ jumps to the drain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DL](dl.md)
+- [Dks](dks.md)
+- [FK](../precompute/fk.md)
+- [FΓ](../precompute/f.md)
+
+## Proof depends on
+
+- [Dlab](dlab.md)
+- [Drain S](drain-s.md)
+- [Id E](id-e.md)
+- [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
 
 ## Sources
 

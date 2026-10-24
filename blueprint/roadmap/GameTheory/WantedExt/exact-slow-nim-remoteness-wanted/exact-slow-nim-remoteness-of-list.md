@@ -14,6 +14,11 @@ sizes, so that `k` is part of the input. The empty list is read as the empty gam
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Slow ANim Game](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.ExactSlowNimRemotenessWanted](../../../../sources/v2/WantedExt.md)

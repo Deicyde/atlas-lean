@@ -15,6 +15,10 @@ Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trinomial Laurent](trinomial-laurent.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)

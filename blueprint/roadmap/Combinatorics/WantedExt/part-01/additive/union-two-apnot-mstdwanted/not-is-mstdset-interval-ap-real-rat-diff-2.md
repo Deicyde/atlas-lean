@@ -13,7 +13,9 @@ coprime, `x + jd ∈ ℕ` for some `j ∈ [1, q - 1]`, and either `m ∈ [2, q -
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](is-mstdset.md)
+- [Real APSet](real-apset.md)
+- [Real Interval Set](real-interval-set.md)
 
 ## Sources
 

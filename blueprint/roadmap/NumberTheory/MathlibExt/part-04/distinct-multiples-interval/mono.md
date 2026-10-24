@@ -12,7 +12,7 @@ Lengthening the interval preserves the property.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
 
 ## Sources
 

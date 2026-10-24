@@ -14,6 +14,10 @@ Blelloch's scan on `2 ^ k` positions, as a recursion: scan the pair products, th
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pair Up](pair-up.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Parallel.Blelloch](../../../../../../../../sources/v2/CSLibExt.md)

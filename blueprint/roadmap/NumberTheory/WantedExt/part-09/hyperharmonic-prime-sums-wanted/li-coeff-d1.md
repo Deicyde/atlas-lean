@@ -13,6 +13,10 @@ lean: MetaMathlibExt.liCoeffD1
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Li Coeff C1](li-coeff-c1.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HyperharmonicPrimeSumsWanted](../../../../../sources/v2/WantedExt.md)

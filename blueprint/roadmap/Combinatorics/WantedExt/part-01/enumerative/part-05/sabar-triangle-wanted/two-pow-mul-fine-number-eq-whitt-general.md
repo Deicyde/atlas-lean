@@ -11,7 +11,8 @@ Corollary 4: for `n ≥ 1`, `2^{n+2} f_n = C(2, n+1) + 3 (-1)^n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fine Number](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
+- [Whitt Generalized Catalan](../../../../../MathlibExt/part-01/enumerative/part-09/whitt-generalized-catalan/whitt-generalized-catalan.md)
 
 ## Sources
 

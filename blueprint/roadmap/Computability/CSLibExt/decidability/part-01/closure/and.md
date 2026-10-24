@@ -12,7 +12,12 @@ Decidable predicates are closed under conjunction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Decidable](../basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [Tm2 Decidable iff computable Pred](../basic/tm2-decidable-iff-computable-pred.md)
+- [And](../../../../MathlibExt/re/and.md)
 
 ## Sources
 

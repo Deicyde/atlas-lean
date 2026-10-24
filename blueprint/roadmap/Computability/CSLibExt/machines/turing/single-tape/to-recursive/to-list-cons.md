@@ -12,7 +12,7 @@ lean: Cslib.Turing.StackTape.toList_cons
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coded Cons](coded-cons.md)
 
 ## Sources
 

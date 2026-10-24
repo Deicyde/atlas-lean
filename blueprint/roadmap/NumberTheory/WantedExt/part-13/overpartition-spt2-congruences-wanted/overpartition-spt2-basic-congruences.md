@@ -14,7 +14,7 @@ equalities encode the paper's congruences; there is no other deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Spt2](overpartition-spt2.md)
 
 ## Sources
 

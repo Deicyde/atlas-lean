@@ -12,7 +12,12 @@ lean: DFA.isEmptyB_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Empty B](is-empty-b.md)
+
+## Proof depends on
+
+- [A state is reachable exactly when some word leads to it](mem-reachable-iff.md)
+- [Reachable](reachable.md)
 
 ## Sources
 

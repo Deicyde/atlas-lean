@@ -13,7 +13,7 @@ long-legged A's (a tip `c` with two rays `c + s u₁`, `c + s u₂` and a crossb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane Region Count](plane-region-count.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Wythoff's game plus a pile of one stone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
+- [Wythoff Plus Stone Grundy](wythoff-plus-stone-grundy.md)
 
 ## Sources
 

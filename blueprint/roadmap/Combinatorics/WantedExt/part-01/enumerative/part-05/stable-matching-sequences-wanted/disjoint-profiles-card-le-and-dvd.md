@@ -13,7 +13,7 @@ positions `(r, s)` is realized by exactly one man-woman pair) is at most
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The Lucas `p`-numbers: `L_{p,0} = p + 1`, `L_{p,i} = 1` for `1 ≤ i ≤ p`, and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas Type Seq](lucas-type-seq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LeonardoPTilingsWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ Constant functions have the NS property.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

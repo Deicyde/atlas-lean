@@ -13,7 +13,12 @@ states has an encoded NFA with the same language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+- [Language](language.md)
+
+## Proof depends on
+
+- [ToεNFA](to-nfa.md)
 
 ## Sources
 

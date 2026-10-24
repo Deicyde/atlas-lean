@@ -16,7 +16,7 @@ relaxed to `β ≥ 0`; `a_k` is `(GenContFract.of x).partDens.get? (k - 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Step Pattern Den](three-step-pattern-den.md)
 
 ## Sources
 

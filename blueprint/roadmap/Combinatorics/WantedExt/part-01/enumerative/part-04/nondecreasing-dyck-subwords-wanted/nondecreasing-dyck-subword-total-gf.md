@@ -13,6 +13,10 @@ The univariate generating function `D_w(x) = ∑ d_w(n) x^n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NondecreasingDyckSubwordsWanted](../../../../../../../sources/v2/WantedExt.md)

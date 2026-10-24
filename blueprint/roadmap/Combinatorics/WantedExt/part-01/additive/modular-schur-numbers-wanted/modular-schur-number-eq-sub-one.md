@@ -12,7 +12,7 @@ For `l, m ≥ 2` with `l ≢ 1 (mod d)` for every divisor `d ≠ 1` of `m`, and 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The indiscrete partition `⊤` of `Fin n` is noncrossing for every `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Noncrossing](../basic/is-noncrossing.md)
+- [Set Partition](../basic/set-partition.md)
+
+## Proof depends on
+
+- [Has Crossing](../basic/has-crossing.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ Total-correctness derivability coincides with total validity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [TDerivable](tderivable.md)
+- [TValid](../hoare-total/tvalid.md)
+
+## Proof depends on
+
+- [Complete](complete-2.md)
+- [Sound](sound-2.md)
 
 ## Sources
 

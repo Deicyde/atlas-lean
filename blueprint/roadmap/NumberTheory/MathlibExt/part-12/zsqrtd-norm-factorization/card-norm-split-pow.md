@@ -15,6 +15,10 @@ units enumerated by `Fin k`, the norm-`p ^ e` fiber has `k * (e + 1)` elements.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists unit mul split pow](exists-unit-mul-split-pow.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZsqrtdNormFactorization](../../../../../sources/v2/MathlibExt.md)

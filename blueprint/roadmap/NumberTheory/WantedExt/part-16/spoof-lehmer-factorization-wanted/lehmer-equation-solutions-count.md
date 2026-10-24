@@ -13,7 +13,7 @@ as in Tables 1 and 2).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lehmer Equation Solution](is-lehmer-equation-solution.md)
 
 ## Sources
 

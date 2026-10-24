@@ -12,7 +12,7 @@ For `ℓ = 2` the characteristic polynomial is the Fibonacci polynomial `X² - X
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Generalized Fibonacci Characteristic](l-generalized-fibonacci-characteristic.md)
 
 ## Sources
 

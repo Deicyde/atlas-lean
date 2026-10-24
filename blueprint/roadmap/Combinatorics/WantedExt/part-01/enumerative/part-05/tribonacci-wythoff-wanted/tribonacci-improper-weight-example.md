@@ -12,7 +12,7 @@ The weight of `010113` is `1 + 1 + 3 = 5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Improper Weight](tribonacci-improper-weight.md)
 
 ## Sources
 

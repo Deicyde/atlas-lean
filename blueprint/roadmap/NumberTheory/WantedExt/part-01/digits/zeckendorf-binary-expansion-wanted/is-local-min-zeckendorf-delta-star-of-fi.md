@@ -11,7 +11,11 @@ Proposition 6: `δ*` has a local minimum at each point `∑ ε Q̃` with `ε ∈
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [L Star Collection](l-star-collection.md)
+- [Zeckendorf Delta Star](zeckendorf-delta-star.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
 
 ## Sources
 

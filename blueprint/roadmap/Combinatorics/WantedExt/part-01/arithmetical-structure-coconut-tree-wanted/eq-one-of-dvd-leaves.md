@@ -12,7 +12,7 @@ Lemma 3: in a smooth arithmetical structure on `CT(p, s)` the leaf labels
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Smooth Coconut](is-smooth-coconut.md)
 
 ## Sources
 

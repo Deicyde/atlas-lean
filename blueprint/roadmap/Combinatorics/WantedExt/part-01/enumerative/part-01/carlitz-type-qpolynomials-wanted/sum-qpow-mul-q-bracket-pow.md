@@ -12,7 +12,8 @@ Carlitz-type sequence with associated sequence `1/((q - 1)[k + r])`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Carlitz Type With](is-carlitz-type-with.md)
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

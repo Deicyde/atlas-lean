@@ -12,7 +12,9 @@ car parks in spot `n` (zero-based `n - 1`). The source leaves `1 ≤ m` implicit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Metered Outcome](metered-outcome.md)
+- [Metered Parking Count](metered-parking-count.md)
 
 ## Sources
 

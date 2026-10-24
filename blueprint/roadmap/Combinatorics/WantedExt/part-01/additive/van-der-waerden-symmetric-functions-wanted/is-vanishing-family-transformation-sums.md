@@ -14,7 +14,7 @@ the statement is trivial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vanishing Family](is-vanishing-family.md)
 
 ## Sources
 

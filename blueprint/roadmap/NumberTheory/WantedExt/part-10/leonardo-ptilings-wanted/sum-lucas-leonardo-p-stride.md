@@ -11,7 +11,7 @@ lean: MetaMathlibExt.sum_lucasLeonardoP_stride
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Leonardo P](lucas-leonardo-p.md)
 
 ## Sources
 

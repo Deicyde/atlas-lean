@@ -12,7 +12,7 @@ lean: MetaMathlibExt.not_isSierpinskiCoveringData_two_pow_sub_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sierpinski Covering Data](is-sierpinski-covering-data.md)
 
 ## Sources
 

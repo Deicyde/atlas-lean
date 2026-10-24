@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Cover Instance](exact-cover-instance.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Polarity of the single literal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [AK](ak.md)
 
 ## Sources
 

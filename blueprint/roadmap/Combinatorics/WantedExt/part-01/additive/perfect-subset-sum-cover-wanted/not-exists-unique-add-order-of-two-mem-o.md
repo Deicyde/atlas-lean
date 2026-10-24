@@ -12,7 +12,8 @@ element of order `2`, then `𝒯(A)` does not contain exactly one element of ord
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Cover](is-perfect-cover.md)
+- [Odd Combinations](odd-combinations.md)
 
 ## Sources
 

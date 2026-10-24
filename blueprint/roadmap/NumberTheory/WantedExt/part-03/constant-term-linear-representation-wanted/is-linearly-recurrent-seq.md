@@ -14,6 +14,10 @@ can be taken to be a fixed multiple of the length of `w`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seq Factor Occurs At](seq-factor-occurs-at.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ConstantTermLinearRepresentationWanted](../../../../../sources/v2/WantedExt.md)

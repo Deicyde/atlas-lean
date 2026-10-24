@@ -13,7 +13,14 @@ when `v` satisfies a literal of `C` past position `u + used C - w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Clause Satisfied](../../../../../../ComputerScience/CSLibExt/part-01/sat/dpll/solver/clause-satisfied.md)
+- [To3 Aux](../three-sat/to3-aux.md)
+- [Used](../three-sat/used.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

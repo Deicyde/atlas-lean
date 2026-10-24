@@ -12,7 +12,7 @@ The unitary divisors of a prime power `p ^ m` are `1` and `p ^ m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

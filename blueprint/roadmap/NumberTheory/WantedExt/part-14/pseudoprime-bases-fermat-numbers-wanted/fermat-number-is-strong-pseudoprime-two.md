@@ -12,7 +12,7 @@ integer power `2 ^ t` of the unit `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strong Pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ Row vertex `l ≤ 3 m` of diamond `i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hp T](hp-t.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPath](../../../../../../../sources/v2/CSLibExt.md)

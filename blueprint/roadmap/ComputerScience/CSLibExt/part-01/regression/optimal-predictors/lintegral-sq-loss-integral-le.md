@@ -13,7 +13,13 @@ inequality is trivial; otherwise `ν` has a second moment and the variance decom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sq Loss](sq-loss.md)
+
+## Proof depends on
+
+- [Integrable sq sub of mem Lp two](../../../../../Probability/MathlibExt/part-01/statistics/estimation-risk/integrable-sq-sub-of-mem-lp-two.md)
+- [Mean Squared Error](../../../../../Probability/MathlibExt/part-01/statistics/estimation-risk/mean-squared-error.md)
+- [Mean Squared Error eq variance add sq expectation sub](../../../../../Probability/MathlibExt/part-01/statistics/estimation-risk/mean-squared-error-eq-variance-add-sq-ex.md)
 
 ## Sources
 

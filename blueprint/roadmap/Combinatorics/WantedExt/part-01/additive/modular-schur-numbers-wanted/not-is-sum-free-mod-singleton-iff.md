@@ -12,7 +12,7 @@ For positive `a, l, m` with `a ≢ 0 (mod m)` and `d = gcd(a, m)`: if `d = 1`, `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Free Mod](is-sum-free-mod.md)
 
 ## Sources
 

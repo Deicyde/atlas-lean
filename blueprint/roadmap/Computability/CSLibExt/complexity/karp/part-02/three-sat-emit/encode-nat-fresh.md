@@ -12,7 +12,7 @@ Fresh names have the code `true`, `z` times `false`, `true`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fresh](../three-sat/fresh.md)
 
 ## Sources
 

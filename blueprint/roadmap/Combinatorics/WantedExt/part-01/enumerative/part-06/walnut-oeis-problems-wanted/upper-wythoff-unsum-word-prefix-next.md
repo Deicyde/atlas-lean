@@ -12,7 +12,7 @@ between markers; in particular the next word equals it if their digit sums agree
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Wythoff Unsum Word](upper-wythoff-unsum-word.md)
 
 ## Sources
 

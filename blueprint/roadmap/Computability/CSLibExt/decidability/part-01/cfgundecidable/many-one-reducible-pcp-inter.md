@@ -13,7 +13,23 @@ languages.**
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [PCP](../pcp/pcp.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [Language](../../../languages/context-free/part-01/encoded/language.md)
+
+## Proof depends on
+
+- [Cont Rule](cont-rule.md)
+- [Domino](domino.md)
+- [Index Sym](index-sym.md)
+- [Letter Sym](letter-sym.md)
+- [Nt Sym](nt-sym.md)
+- [PCP solutions are the common words of the top and bottom grammars](pcp-iff-exists-mem-inter.md)
+- [Side Grammar](side-grammar.md)
+- [Side Rules](side-rules.md)
+- [Term Rule](term-rule.md)
 
 ## Sources
 

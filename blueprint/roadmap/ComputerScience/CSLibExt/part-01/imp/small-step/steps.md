@@ -11,7 +11,11 @@ Finite sequences of small steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

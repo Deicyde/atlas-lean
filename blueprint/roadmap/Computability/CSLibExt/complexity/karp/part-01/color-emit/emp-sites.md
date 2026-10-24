@@ -11,7 +11,7 @@ The empty clause: the vertex `N` joined to the palette.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site](site.md)
 
 ## Sources
 

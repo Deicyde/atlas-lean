@@ -11,7 +11,12 @@ The number `C_n` of noncrossing partitions of `[n]` is `L_n + M_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lonely Singles Count](lonely-singles-count.md)
+- [Marriageable Singles Count](marriageable-singles-count.md)
+- [Noncrossing Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
+- [Has Crossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
+- [Is Noncrossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)
+- [Set Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
 
 ## Sources
 

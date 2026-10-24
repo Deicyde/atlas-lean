@@ -13,6 +13,10 @@ The position of the first occurrence of `n` in `A^{(m)}` (`0` if `n` does not oc
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gijswijt Term](gijswijt-term.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GijswijtSequenceWanted](../../../../../../../sources/v2/WantedExt.md)

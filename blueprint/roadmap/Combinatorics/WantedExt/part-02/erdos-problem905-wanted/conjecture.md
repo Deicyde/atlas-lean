@@ -13,6 +13,10 @@ Dense graphs hold edges in many triangles.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Triangles Containing](../../../MathlibExt/part-01/simple-graph/part-01/clique/triangles-containing.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ErdosProblem905Wanted](../../../../../sources/v2/WantedExt.md)

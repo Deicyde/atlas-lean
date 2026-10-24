@@ -12,7 +12,7 @@ The cost, cluster by cluster.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](cost.md)
 
 ## Sources
 

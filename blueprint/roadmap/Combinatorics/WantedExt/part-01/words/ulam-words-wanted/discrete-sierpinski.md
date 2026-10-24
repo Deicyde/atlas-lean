@@ -13,6 +13,10 @@ The discrete Sierpiński triangle `𝒮 = ⋃ₙ S_n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Discrete Sierpinski Stage](discrete-sierpinski-stage.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.UlamWordsWanted](../../../../../../sources/v2/WantedExt.md)

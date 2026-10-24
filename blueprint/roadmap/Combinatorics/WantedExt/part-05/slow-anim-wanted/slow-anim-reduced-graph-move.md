@@ -13,7 +13,12 @@ in `SN(n, A)` (the paper's adjusted move `m̃ = m + Δu(p')`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Reduced](slow-anim-reduced.md)
+
+## Proof depends on
+
+- [Slow ANim Moves](slow-anim-moves.md)
+- [Slow ANim Reduction](slow-anim-reduction.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ stated multiplicatively. The paper assumes `ℓ ≥ 2`; the identity also holds 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt GF](arndt-gf.md)
 
 ## Sources
 

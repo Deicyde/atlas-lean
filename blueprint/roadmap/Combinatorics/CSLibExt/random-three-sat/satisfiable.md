@@ -11,7 +11,11 @@ A formula is satisfiable when some assignment satisfies every clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formula](formula.md)
+
+## Proof depends on
+
+- [Clause Sat](clause-sat.md)
 
 ## Sources
 

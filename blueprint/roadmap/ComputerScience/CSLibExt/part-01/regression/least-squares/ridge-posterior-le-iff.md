@@ -14,7 +14,14 @@ objective with `λ = v / τ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ridge](ridge.md)
+- [Ridge Posterior](ridge-posterior.md)
+
+## Proof depends on
+
+- [Gauss Likelihood](gauss-likelihood.md)
+- [Prod gaussian PDFReal zero](prod-gaussian-pdfreal-zero.md)
+- [Rss](rss.md)
 
 ## Sources
 

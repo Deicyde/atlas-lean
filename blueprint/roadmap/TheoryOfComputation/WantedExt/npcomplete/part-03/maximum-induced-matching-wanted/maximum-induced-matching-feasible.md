@@ -11,7 +11,7 @@ An induced matching of at least `K` edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Induced Matching Instance](maximum-induced-matching-instance.md)
 
 ## Sources
 

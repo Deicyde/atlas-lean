@@ -11,7 +11,9 @@ Lemma 4.8: for `t ∈ (0, 1)` the characteristic number satisfies `u_t + k < m_t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Char Number](is-gen-markov-char-number.md)
+- [Farey Tree](farey-tree.md)
+- [Gen Markov Tree](gen-markov-tree.md)
 
 ## Sources
 

@@ -15,7 +15,14 @@ definite covariances `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multivariate Gaussian PDFReal](../gaussian-density/multivariate-gaussian-pdfreal.md)
+- [Weighted Mean](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-mean.md)
+- [Weighted Scatter](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
+
+## Proof depends on
+
+- [The weighted Gaussian MLE](sum-mul-log-multivariate-gaussian-pdfrea-3.md)
+- [Weighted scatter matrices of points in general position are positive definite](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter-pos-def.md)
 
 ## Sources
 

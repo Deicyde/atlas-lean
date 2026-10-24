@@ -13,7 +13,8 @@ verifier with polynomial declared time.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decides In Declared Poly Time](decides-in-declared-poly-time.md)
+- [Verifier In Declared Poly Time](verifier-in-declared-poly-time.md)
 
 ## Sources
 

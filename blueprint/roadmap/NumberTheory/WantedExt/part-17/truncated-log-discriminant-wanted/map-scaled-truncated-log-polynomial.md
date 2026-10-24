@@ -12,7 +12,9 @@ lean: MetaMathlibExt.map_scaledTruncatedLogPolynomial
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scaled Truncated Log Polynomial](scaled-truncated-log-polynomial.md)
+- [Truncated Log Lcm](truncated-log-lcm.md)
+- [Truncated Log Polynomial](truncated-log-polynomial.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.carmichaelIndex_four_and_sixtySix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carmichael Index](carmichael-index.md)
 
 ## Sources
 

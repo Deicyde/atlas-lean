@@ -11,7 +11,7 @@ One Viterbi step on a table of the previous step's values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
 
 ## Sources
 

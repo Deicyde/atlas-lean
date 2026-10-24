@@ -16,7 +16,7 @@ paper's proof assumes `b = p^m` is a `k`-generalized Markov number and uses `m â
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Number](is-gen-markov-number.md)
 
 ## Sources
 

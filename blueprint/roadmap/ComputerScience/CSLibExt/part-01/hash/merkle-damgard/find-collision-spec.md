@@ -14,7 +14,15 @@ collision of `h`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Collision](is-collision.md)
+- [Find Collision](find-collision.md)
+- [Hash](hash.md)
+
+## Proof depends on
+
+- [Chain](chain.md)
+- [Chain Rev](chain-rev.md)
+- [Search](search.md)
 
 ## Sources
 

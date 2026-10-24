@@ -12,7 +12,7 @@ Characteristic example: the path of `(1, 3, 3, 5, 6, 6)` is `UDDUUDDUDUUD`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Path](preference-path.md)
 
 ## Sources
 

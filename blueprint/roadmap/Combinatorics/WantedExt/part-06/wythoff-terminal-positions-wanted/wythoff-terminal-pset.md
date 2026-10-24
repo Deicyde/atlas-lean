@@ -14,6 +14,11 @@ The P-position set of `K^ℓ` predicted by Theorem 17: the terminal positions to
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wythoff Mex A](wythoff-mex-a.md)
+- [Wythoff Mex B](wythoff-mex-b.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WythoffTerminalPositionsWanted](../../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,7 @@ for odd `k`, `x ↦ x^k` is monotone), so that hypothesis is dropped.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

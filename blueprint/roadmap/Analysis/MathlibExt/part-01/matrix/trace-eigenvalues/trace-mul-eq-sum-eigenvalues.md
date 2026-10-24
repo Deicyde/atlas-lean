@@ -14,6 +14,10 @@ lean: MetaMathlibExt.trace_mul_eq_sum_eigenvalues
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inner to Euclidean Lin self eq sum](inner-to-euclidean-lin-self-eq-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Matrix.TraceEigenvalues](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Characteristic example: the graph of `87912 = 4 · 21978` has edges
 
 ## Depends on
 
-This node has no prerequisites.
+- [Permutiple Graph Edges](permutiple-graph-edges.md)
 
 ## Sources
 

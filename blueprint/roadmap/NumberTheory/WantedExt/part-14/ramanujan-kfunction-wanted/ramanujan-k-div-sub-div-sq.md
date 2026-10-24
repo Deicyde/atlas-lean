@@ -12,7 +12,8 @@ hypothesis `q ≠ 0` excludes the point where the divisions by `q` and `k(q)` ar
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf Raw](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
+- [Ramanujan K](ramanujan-k.md)
 
 ## Sources
 

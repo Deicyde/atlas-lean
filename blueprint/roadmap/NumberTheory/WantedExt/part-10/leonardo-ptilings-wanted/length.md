@@ -11,7 +11,7 @@ The length of a bracelet's first tile.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bracelet First Tile](bracelet-first-tile.md)
 
 ## Sources
 

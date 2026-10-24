@@ -14,7 +14,7 @@ the error bounded by `C q^{6+ε}` (implied constant depending on `ℓ` and `ε`)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Xu Zhang Constant](xu-zhang-constant.md)
 
 ## Sources
 

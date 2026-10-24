@@ -13,7 +13,11 @@ Corollary 4: let `α = (α_1, …, α_t)` have normal form `(q, s)`. If `α ≠ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Max Partition](diagonal-max-partition.md)
+- [Diagonal Min Partition](diagonal-min-partition.md)
+- [Diagonal Normal Form](diagonal-normal-form.md)
+- [Diagonal Of List](diagonal-of-list.md)
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

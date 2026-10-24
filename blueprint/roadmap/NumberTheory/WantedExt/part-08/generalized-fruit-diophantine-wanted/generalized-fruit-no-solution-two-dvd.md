@@ -17,7 +17,7 @@ Theorem 1) uses "since `r` is odd", so `odd` is read as applying to both `r` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Unramified Degree One Primes](two-unramified-degree-one-primes.md)
 
 ## Sources
 

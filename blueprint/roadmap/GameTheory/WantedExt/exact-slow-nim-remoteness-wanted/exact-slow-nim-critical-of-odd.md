@@ -13,7 +13,10 @@ pile `i` and reducing all others, which is the M-move.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Exact Slow Nim Critical](is-exact-slow-nim-critical.md)
+- [Exact Slow Nim MRule Move](exact-slow-nim-mrule-move.md)
+- [Slow ANim After](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
+- [Slow ANim Moves](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
 
 ## Sources
 

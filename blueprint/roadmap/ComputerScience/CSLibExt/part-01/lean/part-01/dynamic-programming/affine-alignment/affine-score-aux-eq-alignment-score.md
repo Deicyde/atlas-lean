@@ -13,7 +13,15 @@ linear-gap score.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+- [Gap State](gap-state.md)
+- [Affine Score Aux](affine-score-aux.md)
+- [Alignment Score](../sequence-alignment/alignment-score.md)
+
+## Proof depends on
+
+- [Column Score](../sequence-alignment/column-score.md)
+- [Gap Cost](gap-cost.md)
 
 ## Sources
 

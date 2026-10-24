@@ -12,7 +12,7 @@ Unfolding of `IsDivideConquerTree` at an interior node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divide Conquer Tree](is-divide-conquer-tree.md)
 
 ## Sources
 

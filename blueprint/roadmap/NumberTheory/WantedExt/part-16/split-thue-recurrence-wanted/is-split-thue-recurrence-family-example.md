@@ -14,7 +14,7 @@ Characteristic example: `G 1 n = 3 ^ n`, `G 2 n = 5 ^ n + 1`, `G 3 n = 5 ^ n + 2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Split Thue Recurrence Family](is-split-thue-recurrence-family.md)
 
 ## Sources
 

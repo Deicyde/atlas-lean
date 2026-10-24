@@ -15,7 +15,7 @@ it is the relation of the record's own continuation ("replacing the product with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

@@ -30,7 +30,8 @@ theorem lit_fail (r : List Bool) (hr : decodeLit r = none) (w t b : List Sym) (c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ent](../sat-verifier-spec/ent.md)
+- [Ents Of](../sat-verifier-spec/ents-of.md)
 
 ## Sources
 

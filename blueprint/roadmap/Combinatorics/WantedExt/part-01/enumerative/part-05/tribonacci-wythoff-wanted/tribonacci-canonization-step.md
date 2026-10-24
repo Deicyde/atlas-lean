@@ -17,6 +17,10 @@ digits.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tribonacci Leftmost Carry](tribonacci-leftmost-carry.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.TribonacciWythoffWanted](../../../../../../../sources/v2/WantedExt.md)

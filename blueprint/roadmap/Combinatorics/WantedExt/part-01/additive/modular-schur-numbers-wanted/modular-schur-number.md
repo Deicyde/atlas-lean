@@ -15,6 +15,10 @@ The generalized Schur number modulo `m`, `S_m(k, l)`: the largest `n` for which
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Sum Free Partition Mod](has-sum-free-partition-mod.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.ModularSchurNumbersWanted](../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ lean: MathlibExt.Combinatorics.SimpleGraph.GirthFiveExtremalValuesWanted.girthFi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Girth Five Extremal Number](girth-five-extremal-number.md)
 
 ## Sources
 

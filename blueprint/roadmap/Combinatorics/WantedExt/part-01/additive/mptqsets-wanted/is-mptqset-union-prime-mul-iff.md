@@ -12,7 +12,7 @@ Theorem 4: for a finite set `A` of integers and a prime `p` coprime to every ele
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MPTQSet](is-mptqset.md)
 
 ## Sources
 

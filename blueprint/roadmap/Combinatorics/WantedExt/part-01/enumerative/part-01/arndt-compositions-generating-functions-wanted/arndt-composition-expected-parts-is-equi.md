@@ -12,7 +12,7 @@ The expected number of parts of a uniformly random Arndt composition of `n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

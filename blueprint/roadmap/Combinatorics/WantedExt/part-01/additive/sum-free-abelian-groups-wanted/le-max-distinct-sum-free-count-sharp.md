@@ -13,7 +13,7 @@ lean: MetaMathlibExt.le_maxDistinctSumFreeCount_sharp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Distinct Sum Free Count](max-distinct-sum-free-count.md)
 
 ## Sources
 

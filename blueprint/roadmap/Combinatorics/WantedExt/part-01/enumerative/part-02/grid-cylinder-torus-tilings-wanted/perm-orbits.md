@@ -17,6 +17,10 @@ Formalization deviation: none beyond the representation choices stated above.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perm Orbit](perm-orbit.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GridCylinderTorusTilingsWanted](../../../../../../../sources/v2/WantedExt.md)

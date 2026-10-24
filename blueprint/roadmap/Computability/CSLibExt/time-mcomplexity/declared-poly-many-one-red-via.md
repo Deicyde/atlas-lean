@@ -19,7 +19,11 @@ module doc for why).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Computes In Declared Poly Time](computes-in-declared-poly-time.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ PCP over a one-letter alphabet is decidable by a multi-stack machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [PCP](../pcp/pcp.md)
+- [TM2 Decidable](../basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [PCP over a one-letter alphabet is decidable](computable-pred-pcp-of-subsingleton.md)
+- [Tm2 Decidable iff computable Pred](../basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The passes ending at wires `m - 1, m - 2, …, 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](../zero-one/network.md)
+
+## Proof depends on
+
+- [Pass](pass.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Corollary 13: `r(n, k) = 0` when `n - k` is odd, and the least `n` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
 
 ## Sources
 

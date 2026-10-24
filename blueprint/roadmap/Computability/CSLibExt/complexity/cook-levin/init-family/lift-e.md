@@ -11,7 +11,11 @@ The counter stacks inside `IK C`, alphabets identified definitionally.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
+- [IK](ik.md)
+- [IΓ](i.md)
+- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Sources
 

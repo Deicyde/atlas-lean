@@ -13,7 +13,9 @@ the letter `k` has frequency `α^{k-1} = β - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Count](hof-count.md)
+- [Hof L](hof-l.md)
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

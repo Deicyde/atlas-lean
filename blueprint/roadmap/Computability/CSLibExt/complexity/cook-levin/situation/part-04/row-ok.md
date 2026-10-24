@@ -11,7 +11,7 @@ A row of cells that C6 must produce: valid codes, prefix form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
 
 ## Sources
 

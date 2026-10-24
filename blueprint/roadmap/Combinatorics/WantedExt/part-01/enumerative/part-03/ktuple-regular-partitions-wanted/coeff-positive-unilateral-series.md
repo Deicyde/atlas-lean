@@ -13,7 +13,7 @@ is the matching-index sum over the finite positive interval through `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive Unilateral Series](positive-unilateral-series.md)
 
 ## Sources
 

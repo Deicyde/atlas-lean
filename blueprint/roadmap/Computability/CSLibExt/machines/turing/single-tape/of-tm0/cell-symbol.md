@@ -12,7 +12,7 @@ blank symbol `default`: the pointed map `Equiv.optionSubtypeNe default`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
 
 ## Sources
 

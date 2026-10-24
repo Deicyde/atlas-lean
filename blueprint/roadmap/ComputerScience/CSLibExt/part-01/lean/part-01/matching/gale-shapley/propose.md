@@ -11,7 +11,11 @@ lean: Cslib.Algorithms.Lean.Matching.GaleShapley.propose
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [New Holder](new-holder.md)
 
 ## Sources
 

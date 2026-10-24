@@ -12,7 +12,15 @@ lean: Cslib.Decidability.TM2Recognizable.kstar
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Recognizable](../basic/tm2-recognizable.md)
+
+## Proof depends on
+
+- [Extend Partitions](extend-partitions.md)
+- [Partitions](partitions.md)
+- [Tm2 Recognizable iff re Pred](../basic/tm2-recognizable-iff-re-pred.md)
+- [Dovetailing](../../../../MathlibExt/re/exists-mem.md)
+- [Forall mem](../../../../MathlibExt/re/forall-mem.md)
 
 ## Sources
 

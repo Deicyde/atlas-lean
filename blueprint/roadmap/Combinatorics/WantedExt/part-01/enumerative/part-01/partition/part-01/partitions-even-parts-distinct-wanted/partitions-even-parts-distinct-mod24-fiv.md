@@ -13,7 +13,7 @@ division; it is exact because `57·5^(2k) - 1` is divisible by `8`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Even Parts Count](../../../../part-04/overpartitions-odd-parts-wanted/distinct-even-parts-count.md)
 
 ## Sources
 

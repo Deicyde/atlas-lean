@@ -11,7 +11,7 @@ What happens to a pair bit: complemented for `flip`, kept for `vc`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
 
 ## Sources
 

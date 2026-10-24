@@ -11,7 +11,7 @@ At most `K` locations within radius `B` of every client.
 
 ## Depends on
 
-This node has no prerequisites.
+- [KCenter Instance](kcenter-instance.md)
 
 ## Sources
 

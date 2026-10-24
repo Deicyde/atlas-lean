@@ -11,7 +11,8 @@ Every host stack, listed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HK](hk.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: MetaMathlibExt.antiFibonacciA
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anti Fibonacci State](anti-fibonacci-state.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ The second weight `α'(n + 1) + β'k + γ'`, the divisor in Definition 2 at
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
 
 ## Sources
 

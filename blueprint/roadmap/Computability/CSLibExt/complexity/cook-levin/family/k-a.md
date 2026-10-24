@@ -11,7 +11,7 @@ Literal `j`'s position is `t·W + kA j · (H·g) + kB j · W + cst i j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
 
 ## Sources
 

@@ -18,11 +18,12 @@ the pointwise sum $x \mapsto \sum_{n=0}^{\infty} f_n(x)$.
 
 ## Depends on
 
-- [Extended supremum norm on a set](../../../normed/series/normal-convergence/sup-norm-on.md)
+- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
 
 ## Proof depends on
 
 - [Normal convergence gives summable real sup norms](summable-to-real-sup-norm-on.md)
+- [Extended supremum norm on a set](../../../normed/series/normal-convergence/sup-norm-on.md)
 
 ## Sources
 

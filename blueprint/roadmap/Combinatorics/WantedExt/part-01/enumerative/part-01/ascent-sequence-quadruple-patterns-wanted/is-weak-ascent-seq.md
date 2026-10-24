@@ -14,6 +14,10 @@ Weak ascent sequences: `a₁ = 0` and `aᵢ ≤ 1 + wasc(a₁ ⋯ a_{i-1})` for 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Word Weak Ascents](word-weak-ascents.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.AscentSequenceQuadruplePatternsWanted](../../../../../../../sources/v2/WantedExt.md)

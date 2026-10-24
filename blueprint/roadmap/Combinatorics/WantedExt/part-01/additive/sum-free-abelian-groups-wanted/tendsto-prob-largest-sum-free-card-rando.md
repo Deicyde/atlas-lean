@@ -16,7 +16,7 @@ bound `p_n ≤ 1` (a probability) is made explicit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Largest Sum Free Card](largest-sum-free-card.md)
 
 ## Sources
 

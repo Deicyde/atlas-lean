@@ -13,7 +13,47 @@ satisfies both the positive and the negated units.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accepting configuration](../part-07/accepts.md)
+- [Enc](../part-01/enc.md)
+- [The accept family](../part-07/acc-family.md)
+- [The C5 assignment](run-asg.md)
+- [Run I](../part-03/run-i.md)
+- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+
+## Proof depends on
+
+- [Layout](../../family/layout.md)
+- [C Idx](../../family/c-idx.md)
+- [Num Vars](../../family/num-vars.md)
+- [Row W](../../family/row-w.md)
+- [X Idx](../../family/x-idx.md)
+- [Dense Clause](../../family/dense-clause.md)
+- [Good](../part-03/good.md)
+- [N](../part-01/n.md)
+- [The real run's literals](run-lit.md)
+- [Acc Cell](../part-07/acc-cell.md)
+- [Acc Code](../part-07/acc-code.md)
+- [Acode](../part-07/acode.md)
+- [Cell](../part-03/cell.md)
+- [Code](../part-03/code.md)
+- [G](../part-01/g.md)
+- [G pos](../part-02/g-pos.md)
+- [Good step](../part-03/good-step.md)
+- [La](../part-01/la.md)
+- [Layout](../part-01/layout.md)
+- [Sa](../part-01/sa.md)
+- [C5 clause semantics](sa-lt.md)
+- [C5 clause semantics](sat-run.md)
+- [Sit Idx](../part-03/sit-idx.md)
+- [Sit Idx spec](../part-03/sit-idx-spec.md)
+- [Wa](../part-01/wa.md)
+- [Faithful](../part-07/faithful.md)
+- [Depth](../part-01/depth.md)
+- [Lt num Vars](../part-07/lt-num-vars.md)
+- [Row pos inj](row-pos-inj.md)
+- [CNF](../../../dense-sat/cnf.md)
+- [Clause](../../../dense-sat/clause.md)
+- [Clause Sat](../../../dense-sat/clause-sat.md)
 
 ## Sources
 

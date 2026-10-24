@@ -19,6 +19,10 @@ induction `x_{α,i+1} = 0` for `i ≥ 3^α`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chan Cubic Matrix](chan-cubic-matrix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PedOverpartitionsDissectionsWanted](../../../../../sources/v2/WantedExt.md)

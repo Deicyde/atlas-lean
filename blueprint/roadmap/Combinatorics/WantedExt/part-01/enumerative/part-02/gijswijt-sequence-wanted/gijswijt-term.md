@@ -13,6 +13,10 @@ lean: MetaMathlibExt.gijswijtTerm
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gijswijt Prefix](gijswijt-prefix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GijswijtSequenceWanted](../../../../../../../sources/v2/WantedExt.md)

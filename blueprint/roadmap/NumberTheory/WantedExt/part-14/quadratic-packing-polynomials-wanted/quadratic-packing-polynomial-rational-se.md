@@ -14,7 +14,8 @@ is a QPP on `I(n/m)`, then `n ∣ (m - 1)²` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
+- [Sector Lattice Points](sector-lattice-points.md)
 
 ## Sources
 

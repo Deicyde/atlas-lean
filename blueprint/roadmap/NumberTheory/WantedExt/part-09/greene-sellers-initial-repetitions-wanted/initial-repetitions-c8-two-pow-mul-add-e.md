@@ -14,7 +14,7 @@ paper's least nonnegative residues `r_{k,1}, r_{k,2}, r_{k,3}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Repetitions C8](initial-repetitions-c8.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ circular permutations of at most `r` objects (Theorem 7).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RMinus Associated Cycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rminus-associated-cycle-perm.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

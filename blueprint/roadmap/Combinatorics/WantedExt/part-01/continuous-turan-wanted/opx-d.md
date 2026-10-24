@@ -14,6 +14,10 @@ The continuous Turán number `opx(n, P, d)`: the supremum of `μ_d(S)` over open
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Contains Pattern D](contains-pattern-d.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ContinuousTuranWanted](../../../../../sources/v2/WantedExt.md)

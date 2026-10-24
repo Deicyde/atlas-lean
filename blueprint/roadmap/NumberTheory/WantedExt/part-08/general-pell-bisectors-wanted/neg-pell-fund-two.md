@@ -12,7 +12,8 @@ For `d = 2` the least positive solution of `x² - 2 y² = -1` is `(1, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell Fund X](neg-pell-fund-x.md)
+- [Neg Pell Fund Y](neg-pell-fund-y.md)
 
 ## Sources
 

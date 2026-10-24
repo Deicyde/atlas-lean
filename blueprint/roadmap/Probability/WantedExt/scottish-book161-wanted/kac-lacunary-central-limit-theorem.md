@@ -17,7 +17,7 @@ satisfying the hypothesis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lacunary CLT](lacunary-clt.md)
 
 ## Sources
 

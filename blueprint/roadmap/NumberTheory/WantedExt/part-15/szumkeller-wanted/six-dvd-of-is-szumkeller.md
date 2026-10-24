@@ -11,7 +11,7 @@ An even s-Zumkeller number is divisible by `6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SZumkeller](is-szumkeller.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ height-wise definition of reflexivity, so the statement is nontrivial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reflexive](is-reflexive.md)
+- [Weighted Simplex](weighted-simplex.md)
 
 ## Sources
 

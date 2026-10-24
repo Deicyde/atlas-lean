@@ -13,7 +13,13 @@ recursive extension of a partial recursive member is a member.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Recognizable](../../part-01/basic/tm2-recognizable.md)
+
+## Proof depends on
+
+- [Not tm2 Co Recognizable halting](../undecidable/not-tm2-co-recognizable-halting.md)
+- [Tm2 Recognizable of many One Reducible](../undecidable/tm2-recognizable-of-many-one-reducible.md)
+- [Parametrized s-m-n](../../../../MathlibExt/exists-computable-code.md)
 
 ## Sources
 

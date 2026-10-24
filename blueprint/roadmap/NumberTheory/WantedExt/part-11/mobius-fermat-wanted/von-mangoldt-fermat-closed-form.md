@@ -13,7 +13,7 @@ Theorem 10 (closed form of `Λ_M`): with `l` and `r` as in Theorem 9,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Unit Function](fermat-unit-function.md)
 
 ## Sources
 

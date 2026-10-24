@@ -13,7 +13,8 @@ Corollary 7: with `G(x, y) = ∑ B^Q_{n,k} x^n y^k` and `g^Q(x, y) = ∑ S^Q_{n,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Combination Count](restricted-combination-count.md)
+- [Restricted Overlap Tiling Count](restricted-overlap-tiling-count.md)
 
 ## Sources
 

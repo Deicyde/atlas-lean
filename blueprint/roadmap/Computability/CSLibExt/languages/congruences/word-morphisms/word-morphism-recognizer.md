@@ -11,7 +11,12 @@ The recognizing morphism induced by a substitution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+
+## Proof depends on
+
+- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

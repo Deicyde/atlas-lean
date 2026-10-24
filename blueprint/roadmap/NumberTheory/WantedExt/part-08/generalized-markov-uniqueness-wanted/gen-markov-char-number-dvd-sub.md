@@ -12,7 +12,9 @@ Corollary 4.6: for `t ∈ (0, 1)` the characteristic number `u_t` solves
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Char Number](is-gen-markov-char-number.md)
+- [Farey Tree](farey-tree.md)
+- [Gen Markov Tree](gen-markov-tree.md)
 
 ## Sources
 

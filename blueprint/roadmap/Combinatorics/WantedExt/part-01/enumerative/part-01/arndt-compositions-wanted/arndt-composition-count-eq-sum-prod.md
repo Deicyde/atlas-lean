@@ -13,7 +13,7 @@ The number of Arndt compositions of `n` into `2ℓ` parts is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](arndt-composition-count.md)
 
 ## Sources
 

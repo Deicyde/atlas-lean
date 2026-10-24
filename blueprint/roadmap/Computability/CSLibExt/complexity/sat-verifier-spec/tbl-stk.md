@@ -11,7 +11,12 @@ The table stack of an entry list (head = top; the first entry is at the bottom).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ent](ent.md)
+- [Sym](sym.md)
+
+## Proof depends on
+
+- [Ent Toks](ent-toks.md)
 
 ## Sources
 

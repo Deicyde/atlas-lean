@@ -13,7 +13,15 @@ early. At the terminator the verdict is `ok` if `c` is exhausted and `false` oth
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

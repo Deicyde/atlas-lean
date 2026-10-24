@@ -14,7 +14,8 @@ lower triangular, so the products are finite sums over `k ≤ j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](../hypersequence-weighted-sums-wanted/alternating-binomial-power-sum.md)
+- [Hyperseq B](hyperseq-b.md)
 
 ## Sources
 

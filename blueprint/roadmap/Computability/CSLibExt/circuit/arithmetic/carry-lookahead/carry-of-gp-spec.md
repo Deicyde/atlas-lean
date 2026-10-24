@@ -13,7 +13,13 @@ out is `G ∨ (P ∧ c)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gp Spec](gp-spec.md)
+
+## Proof depends on
+
+- [The carry into a block's top](carry-add.md)
+- [Gp Range](gp-range.md)
+- [Low Bit](low-bit.md)
 
 ## Sources
 

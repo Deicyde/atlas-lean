@@ -12,7 +12,8 @@ A predecessor is strictly shallower.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+- [Depth](depth.md)
 
 ## Sources
 

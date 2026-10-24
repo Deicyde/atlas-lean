@@ -11,7 +11,7 @@ Each constraint is given on both orientations of its arc, with the same allowed 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
 
 ## Sources
 

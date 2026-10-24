@@ -14,6 +14,11 @@ The ascent sequences of length `n` avoiding every pattern in `P`, the paper's
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Ascent Seq](../../part-04/rascal-numbers-wanted/is-ascent-seq.md)
+- [Contains Pattern](contains-pattern.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.AscentSequenceQuadruplePatternsWanted](../../../../../../../sources/v2/WantedExt.md)

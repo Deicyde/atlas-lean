@@ -11,7 +11,7 @@ Every operation of transaction `i` precedes every operation of transaction `j` i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Op](op.md)
 
 ## Sources
 

@@ -11,7 +11,13 @@ The configuration after `t` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+- [Machine](machine.md)
+
+## Proof depends on
+
+- [Initial](initial.md)
+- [Step](step.md)
 
 ## Sources
 

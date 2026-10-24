@@ -11,7 +11,8 @@ Test for code `i`: on a hit, pop and go to `hit i`; otherwise go to `miss i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [IK](ik.md)
+- [IΓ](i.md)
 
 ## Sources
 

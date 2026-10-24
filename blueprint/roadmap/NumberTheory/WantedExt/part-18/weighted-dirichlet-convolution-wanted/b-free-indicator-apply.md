@@ -12,7 +12,7 @@ Unfolding lemma for `bFreeIndicator`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Indicator](b-free-indicator.md)
 
 ## Sources
 

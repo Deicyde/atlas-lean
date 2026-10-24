@@ -12,7 +12,9 @@ The `p`-Fibonacci numbers (`(a, b) = (0, 1)`) are the Lucas sequence `U(p, -1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Generalized PFibonacci](generalized-pfibonacci.md)
+- [Lucas U](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

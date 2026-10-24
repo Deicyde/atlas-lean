@@ -13,7 +13,9 @@ partial sum through index `n`, which carries all of `[xⁿ]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Pattern2](signed-pattern2.md)
+- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+- [Signed Inv Avoid GF](signed-inv-avoid-gf.md)
 
 ## Sources
 

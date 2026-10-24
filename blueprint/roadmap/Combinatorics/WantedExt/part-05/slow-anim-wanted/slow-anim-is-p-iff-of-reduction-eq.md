@@ -11,7 +11,9 @@ Corollary 1: positions with the same reduction are in the same outcome class.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Slow ANim Game](slow-anim-game.md)
+- [Slow ANim Reduction](slow-anim-reduction.md)
 
 ## Sources
 

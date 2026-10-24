@@ -12,7 +12,7 @@ lean: MetaMathlibExt.euclideanChainLength_of_ne_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclidean Chain Length](euclidean-chain-length.md)
 
 ## Sources
 

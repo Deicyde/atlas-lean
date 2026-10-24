@@ -12,7 +12,9 @@ every `b ≥ 2` there are infinitely many `t ≥ 1` with `k_b^{(t)}` a Riesel nu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Riesel Covering Data](is-riesel-covering-data.md)
+- [Is Riesel Number](is-riesel-number.md)
+- [Repstring](repstring.md)
 
 ## Sources
 

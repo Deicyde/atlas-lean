@@ -14,6 +14,10 @@ subset sum of exactly `m` index sets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cover Count](cover-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.PerfectSubsetSumCoverWanted](../../../../../../sources/v2/WantedExt.md)

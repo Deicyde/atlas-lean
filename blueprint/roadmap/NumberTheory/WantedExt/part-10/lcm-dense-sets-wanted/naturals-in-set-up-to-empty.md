@@ -12,7 +12,7 @@ No positive integer in the empty set occurs in the finite summation range.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naturals In Set Up To](naturals-in-set-up-to.md)
 
 ## Sources
 

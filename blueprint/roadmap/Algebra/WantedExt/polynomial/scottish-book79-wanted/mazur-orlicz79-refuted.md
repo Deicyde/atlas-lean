@@ -19,7 +19,7 @@ affineness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem79 Claim](scottish-book-problem79-claim.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ weighted mean.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Mean](weighted-mean.md)
+
+## Proof depends on
+
+- [Sum smul sub weighted Mean](sum-smul-sub-weighted-mean.md)
 
 ## Sources
 

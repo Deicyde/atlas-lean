@@ -17,7 +17,15 @@ has the same results up to `f` and halts within the same number of steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Machine](machine.md)
+- [Halts Within](halts-within.md)
+- [Bit Sym](bit-sym.md)
+
+## Proof depends on
+
+- [Lookup](lookup.md)
+- [Decode Stmt](decode-stmt.md)
 
 ## Sources
 

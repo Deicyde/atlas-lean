@@ -14,7 +14,7 @@ are `noFreeBifenceTilingSum_zero`, `noFreeBifenceTilingSum_one`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [No Free Bifence Tiling Sum](no-free-bifence-tiling-sum.md)
 
 ## Sources
 

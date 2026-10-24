@@ -12,7 +12,11 @@ A predicate that mapping-reduces to a decidable one is decidable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [Tm2 Decidable iff computable Pred](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

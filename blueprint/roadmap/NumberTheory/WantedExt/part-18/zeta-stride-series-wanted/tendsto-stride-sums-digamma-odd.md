@@ -21,7 +21,8 @@ and at `a = -1` it is the `λ` form below, half the sum of the paper's series (9
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Alternating Sum](stride-alternating-sum.md)
+- [Stride Signed Sum](stride-signed-sum.md)
 
 ## Sources
 

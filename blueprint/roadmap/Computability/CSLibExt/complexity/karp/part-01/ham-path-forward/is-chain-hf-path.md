@@ -12,7 +12,9 @@ The path is a chain when every diamond followed by the next top is.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Diamond](hf-diamond.md)
+- [Hf Path](hf-path.md)
+- [Hp T](../ham-path/hp-t.md)
 
 ## Sources
 

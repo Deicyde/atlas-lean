@@ -12,7 +12,12 @@ Every simplified P&R move strictly decreases the total number of objects.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simplified Princess Roses Moves](simplified-princess-roses-moves.md)
+
+## Proof depends on
+
+- [Mem simplified Princess Roses Moves](mem-simplified-princess-roses-moves.md)
+- [Simplified Princess Roses Move List](simplified-princess-roses-move-list.md)
 
 ## Sources
 

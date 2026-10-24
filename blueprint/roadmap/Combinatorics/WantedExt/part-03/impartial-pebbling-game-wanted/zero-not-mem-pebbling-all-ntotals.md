@@ -13,7 +13,11 @@ N-game.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pebbling All NTotals](pebbling-all-ntotals.md)
+
+## Proof depends on
+
+- [Pebbling Game is P of forall le](pebbling-game-is-p-of-forall-le.md)
 
 ## Sources
 

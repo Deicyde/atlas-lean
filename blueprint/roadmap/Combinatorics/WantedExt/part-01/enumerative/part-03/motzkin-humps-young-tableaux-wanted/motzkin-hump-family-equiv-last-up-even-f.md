@@ -14,7 +14,13 @@ its image actually ends with an up step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ends With Up](ends-with-up.md)
+- [Is Motzkin Hump](is-motzkin-hump.md)
+- [Is Motzkin Peak](is-motzkin-peak.md)
+- [Is Motzkin Prefix](is-motzkin-prefix.md)
+- [Last Nonflat Step Up](last-nonflat-step-up.md)
+- [Motzkin Hump Family](motzkin-hump-family.md)
+- [Motzkin Last Up Even Family](motzkin-last-up-even-family.md)
 
 ## Sources
 

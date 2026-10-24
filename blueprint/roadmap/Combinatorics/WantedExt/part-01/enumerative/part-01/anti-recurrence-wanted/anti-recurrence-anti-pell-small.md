@@ -13,7 +13,8 @@ complement starts `1, 2, 3, 4, 6, 7, 8, 9` (so `B¹ = 1, 3, 6, 8, …`, `B² = 2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Recurrence](anti-recurrence.md)
+- [Anti Recurrence Complement](anti-recurrence-complement.md)
 
 ## Sources
 

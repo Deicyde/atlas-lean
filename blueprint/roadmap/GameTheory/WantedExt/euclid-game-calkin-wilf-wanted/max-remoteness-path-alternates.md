@@ -14,7 +14,9 @@ Every position requiring the maximum number of moves in optimal play lies on a p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Euclid Game](euclid-game.md)
 
 ## Sources
 

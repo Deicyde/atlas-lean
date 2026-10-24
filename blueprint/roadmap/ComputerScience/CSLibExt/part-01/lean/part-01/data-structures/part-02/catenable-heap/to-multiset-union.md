@@ -12,7 +12,13 @@ The multiset of `union h₁ h₂` is the sum of the multisets of `h₁` and `h�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [To Multiset](to-multiset.md)
+- [Union](union.md)
+
+## Proof depends on
+
+- [To Multiset join](to-multiset-join.md)
 
 ## Sources
 

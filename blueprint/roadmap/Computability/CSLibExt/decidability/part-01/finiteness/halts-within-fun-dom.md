@@ -12,7 +12,7 @@ lean: Cslib.Decidability.haltsWithinFun_dom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts Within Fun](halts-within-fun.md)
 
 ## Sources
 

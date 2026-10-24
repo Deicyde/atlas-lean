@@ -12,7 +12,12 @@ Cut against a proof in the same `?`-context, followed by contraction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyps](hyps.md)
+
+## Proof depends on
+
+- [Contract hyps](contract-hyps.md)
+- [Hyp](hyp.md)
 
 ## Sources
 

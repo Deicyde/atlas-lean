@@ -14,7 +14,15 @@ runs the linear-time builder `tseitinAcc` instead.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [And Clauses](and-clauses.md)
+- [Imp Clauses](imp-clauses.md)
+- [Or Clauses](or-clauses.md)
+- [Tseitin Step](tseitin-step.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MetaMathlibExt.not_isUniversalLinearDForm_mul_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Universal Linear DForm](is-universal-linear-dform.md)
+
+## Proof depends on
+
+- [Is DCarmichael](is-dcarmichael.md)
 
 ## Sources
 

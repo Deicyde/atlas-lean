@@ -14,7 +14,7 @@ negative answer (S. Mazur, December 21, 1936).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem69 Claim](scottish-book-problem69-claim.md)
 
 ## Sources
 

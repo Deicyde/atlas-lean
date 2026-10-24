@@ -12,7 +12,8 @@ For monotone `g` and `h`, both have the NS property iff the chocolate bar with d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
+- [Chocolate Bar Grundy](chocolate-bar-grundy.md)
 
 ## Sources
 

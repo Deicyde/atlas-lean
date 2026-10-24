@@ -14,7 +14,8 @@ non-dominant roots in the witnessing tuple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Generalized Fibonacci Zeta Corollary Pole](l-generalized-fibonacci-zeta-corollary-p.md)
+- [L Generalized Fibonacci Zeta Pole Set](l-generalized-fibonacci-zeta-pole-set.md)
 
 ## Sources
 

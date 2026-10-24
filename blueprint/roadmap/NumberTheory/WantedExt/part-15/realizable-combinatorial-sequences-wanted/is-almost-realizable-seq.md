@@ -17,6 +17,10 @@ into `doldRealizable`'s `∑_{d ∣ n} μ(d) a(n/d)`). The value `a 0` is not us
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dold Realizable](../../../MathlibExt/part-01/arithmetic-function/part-01/binomial-power-realizability/dold-realizable.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.RealizableCombinatorialSequencesWanted](../../../../../sources/v2/WantedExt.md)

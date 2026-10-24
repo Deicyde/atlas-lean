@@ -12,7 +12,7 @@ Lemma 19: with `s(n) = (x, y) = (ℳ₂(n), ℳ₂(2n + ℳ₂(n)))`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic Two](meta-automatic-two.md)
 
 ## Sources
 

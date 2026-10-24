@@ -13,7 +13,18 @@ lean: Cslib.MachineLearning.LatentVariable.ExpectationMaximization.emQ_sub_le_lo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Em Q](em-q.md)
+- [Log Lik](log-lik.md)
+
+## Proof depends on
+
+- [Elbo](elbo.md)
+- [The evidence lower bound](elbo-le-log-lik.md)
+- [The bound is tight at the posterior](elbo-posterior.md)
+- [Elbo posterior eq](elbo-posterior-eq.md)
+- [Is Dist posterior](is-dist-posterior.md)
+- [Post Entropy](post-entropy.md)
+- [Posterior](posterior.md)
 
 ## Sources
 

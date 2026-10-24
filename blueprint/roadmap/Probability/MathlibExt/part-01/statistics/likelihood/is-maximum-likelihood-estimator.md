@@ -12,7 +12,11 @@ maximum at every sample. The pointwise order predicate is native `IsMaxOn`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Density Family](normalized-density-family.md)
+
+## Proof depends on
+
+- [Iid Likelihood](iid-likelihood.md)
 
 ## Sources
 

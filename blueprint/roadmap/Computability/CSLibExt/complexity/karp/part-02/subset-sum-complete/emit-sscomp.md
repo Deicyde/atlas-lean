@@ -11,7 +11,15 @@ lean: Cslib.Complexity.Karp.emitSSComp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](../../../host/comp.md)
+
+## Proof depends on
+
+- [K](../subset-sum-emit/k.md)
+- [Lab](../subset-sum-emit/lab.md)
+- [Prog](../subset-sum-emit/prog.md)
+- [Γ](../subset-sum-emit/untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

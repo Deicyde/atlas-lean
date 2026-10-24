@@ -15,6 +15,10 @@ distances.**
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [The weighted centroid decomposition](sum-mul-norm-sub-sq.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.GaussianMixture](../../../../../../sources/v2/CSLibExt.md)

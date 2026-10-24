@@ -12,7 +12,11 @@ Every measurable event has its counting probability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Fintype](uniform-fintype.md)
+
+## Proof depends on
+
+- [To Outer Measure uniform Fintype apply](to-outer-measure-uniform-fintype-apply.md)
 
 ## Sources
 

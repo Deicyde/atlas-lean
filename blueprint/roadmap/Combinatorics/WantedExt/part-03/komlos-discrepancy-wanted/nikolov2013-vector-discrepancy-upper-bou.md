@@ -13,6 +13,11 @@ The unit-vector relaxation optimum is at most one, not the sign optimum.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Column Admissible](../../../MathlibExt/part-03/matrix-discrepancy/column-admissible.md)
+- [Vector Discrepancy](../../../MathlibExt/part-04/vector-discrepancy/vector-discrepancy.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.KomlosDiscrepancyWanted](../../../../../sources/v2/WantedExt.md)

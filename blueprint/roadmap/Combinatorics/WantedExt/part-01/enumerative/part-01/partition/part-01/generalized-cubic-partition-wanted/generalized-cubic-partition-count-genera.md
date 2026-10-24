@@ -12,7 +12,13 @@ The defining identity `f_1 f_2^{c-1} ∑ a_c(n) qⁿ = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Cubic Partition Count](generalized-cubic-partition-count.md)
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+
+## Proof depends on
+
+- [Constant Coeff q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
+- [Generalized Cubic Partition Series](generalized-cubic-partition-series.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A-Wilf equivalent, their ascent-sequence counts first differ at `n = 5`: `29` ve
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources
 

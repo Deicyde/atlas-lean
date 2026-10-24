@@ -11,7 +11,8 @@ Every exponent of a nontrivial spoof Lehmer factorization is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spoof Lehmer](is-spoof-lehmer.md)
+- [Is Trivial Spoof](is-trivial-spoof.md)
 
 ## Sources
 

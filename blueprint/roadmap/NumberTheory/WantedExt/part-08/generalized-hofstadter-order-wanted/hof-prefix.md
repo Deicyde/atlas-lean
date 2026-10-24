@@ -13,6 +13,10 @@ The prefix `x_k[0:n)`, cut from one prefix `τ_k^j(k)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hof Grow](hof-grow.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedHofstadterOrderWanted](../../../../../sources/v2/WantedExt.md)

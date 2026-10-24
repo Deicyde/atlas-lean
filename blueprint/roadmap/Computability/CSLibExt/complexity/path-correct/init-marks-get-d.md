@@ -12,7 +12,7 @@ The initial marks: `s` only.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Init Marks](../path/init-marks.md)
 
 ## Sources
 

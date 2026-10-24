@@ -13,7 +13,7 @@ squares of its proper divisors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SZumkeller](is-szumkeller.md)
 
 ## Sources
 

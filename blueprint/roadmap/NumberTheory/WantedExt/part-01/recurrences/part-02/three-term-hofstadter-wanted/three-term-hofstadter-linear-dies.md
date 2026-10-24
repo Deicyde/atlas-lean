@@ -12,7 +12,7 @@ For `N = 3`, `N = 4` or `N ≥ 10`, the sequence `B_N` with initial conditions
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Ends After](three-term-hofstadter-ends-after.md)
 
 ## Sources
 

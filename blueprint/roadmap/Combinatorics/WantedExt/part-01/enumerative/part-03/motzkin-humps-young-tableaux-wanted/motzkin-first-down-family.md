@@ -15,6 +15,11 @@ bound is automatic for `k : ℕ`, while `k ≤ n-2` is stated without truncation
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [First Nonup Step Down](first-nonup-step-down.md)
+- [Is Motzkin Prefix](is-motzkin-prefix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinHumpsYoungTableauxWanted](../../../../../../../sources/v2/WantedExt.md)

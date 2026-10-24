@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.Online.Paging.optStep_tr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](../../greedy/offline-caching/cache-event.md)
+- [Cache LTS](../../greedy/offline-caching/cache-lts.md)
+- [Opt Step](opt-step.md)
+
+## Proof depends on
+
+- [Find? is Some](find-is-some.md)
 
 ## Sources
 

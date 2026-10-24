@@ -13,6 +13,10 @@ lean: MetaMathlibExt.zuritaS
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zurita SCoeff](zurita-scoeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedCentralBinomialArcsinWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,12 @@ lean: MetaMathlibExt.digitSumRemainder_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Sum Remainder](digit-sum-remainder.md)
+
+## Proof depends on
+
+- [Trollope Delange Series](trollope-delange-series.md)
+- [Trollope Delange Series zero](trollope-delange-series-zero.md)
 
 ## Sources
 

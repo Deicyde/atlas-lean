@@ -12,7 +12,12 @@ field is unused here and set to the empty position).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
+
+## Proof depends on
+
+- [Slow ANim Moves](slow-anim-moves.md)
+- [Sum lt of mem slow ANim Moves](sum-lt-of-mem-slow-anim-moves.md)
 
 ## Sources
 

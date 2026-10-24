@@ -13,7 +13,8 @@ outside `R₃` has at least three.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Larsson Set Three](larsson-set-three.md)
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
 
 ## Sources
 

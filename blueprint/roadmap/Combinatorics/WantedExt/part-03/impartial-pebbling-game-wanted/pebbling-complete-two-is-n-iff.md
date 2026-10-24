@@ -13,7 +13,8 @@ Theorem 1(a) (quoting Fiorini, Lind, Woldar, and Wong): on `K_2` with `(2:1)`-mo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
 
 ## Sources
 

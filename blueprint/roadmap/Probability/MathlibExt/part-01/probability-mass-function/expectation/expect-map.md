@@ -14,7 +14,12 @@ type is arbitrary.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect](expect.md)
+
+## Proof depends on
+
+- [Expect eq sum](expect-eq-sum.md)
+- [Expect eq sum of finite support](expect-eq-sum-of-finite-support.md)
 
 ## Sources
 

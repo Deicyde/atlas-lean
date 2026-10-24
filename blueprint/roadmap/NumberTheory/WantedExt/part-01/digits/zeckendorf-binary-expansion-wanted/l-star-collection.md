@@ -14,6 +14,10 @@ nonzero sums of finitely or infinitely many disjoint proper `L*`-blocks.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is LStar Block Sum](is-lstar-block-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

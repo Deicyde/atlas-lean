@@ -13,7 +13,9 @@ on `(E, O, E) ∪ (O, E, O)`; each union is "`a` and `b` agree or disagree in pa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [Princess Roses](princess-roses.md)
 
 ## Sources
 

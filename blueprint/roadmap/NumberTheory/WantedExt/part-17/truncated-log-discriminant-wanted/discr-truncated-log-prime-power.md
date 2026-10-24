@@ -13,7 +13,8 @@ not.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Polynomial](truncated-log-polynomial.md)
+- [Truncated Log Resultant Product](truncated-log-resultant-product.md)
 
 ## Sources
 

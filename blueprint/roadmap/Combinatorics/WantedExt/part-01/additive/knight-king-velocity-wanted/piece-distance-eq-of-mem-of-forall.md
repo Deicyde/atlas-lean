@@ -16,7 +16,7 @@ the requested characteristic values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Piece Distance](piece-distance.md)
 
 ## Sources
 

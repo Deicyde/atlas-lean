@@ -13,7 +13,12 @@ without the pass available (the pass is not allowed from a terminal position).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
+
+## Proof depends on
+
+- [Wythoff Extra Move Grundy](wythoff-extra-move-grundy.md)
+- [Wythoff Extra Move Grundy eq](wythoff-extra-move-grundy-eq.md)
 
 ## Sources
 

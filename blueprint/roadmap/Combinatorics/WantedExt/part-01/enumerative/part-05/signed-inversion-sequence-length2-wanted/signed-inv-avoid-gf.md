@@ -11,7 +11,11 @@ The paper's generating function `F_B(x) = ∑_{n ≥ 0} |Ī_n(B)| xⁿ` in `ℚ�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Pattern2](signed-pattern2.md)
+
+## Proof depends on
+
+- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
 
 ## Sources
 

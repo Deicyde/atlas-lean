@@ -11,7 +11,7 @@ At most `K` subsets covering the universe.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Cover Instance](set-cover-instance.md)
 
 ## Sources
 

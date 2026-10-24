@@ -13,7 +13,11 @@ Under detailed balance, `π` is invariant for the kernel (Mathlib's
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pmf Kernel](pmf-kernel.md)
+
+## Proof depends on
+
+- [Detailed balance implies reversibility](is-reversible-pmf-kernel.md)
 
 ## Sources
 

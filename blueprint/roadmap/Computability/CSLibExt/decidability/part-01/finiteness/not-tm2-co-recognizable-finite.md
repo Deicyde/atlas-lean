@@ -12,7 +12,14 @@ lean: Cslib.Decidability.not_tm2CoRecognizable_finite
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Code](finite-code.md)
+- [TM2 Co Recognizable](../basic/tm2-co-recognizable.md)
+
+## Proof depends on
+
+- [Halting reduces to finiteness](many-one-reducible-halting-finite.md)
+- [Not tm2 Co Recognizable halting](../../part-02/undecidable/not-tm2-co-recognizable-halting.md)
+- [Tm2 Recognizable of many One Reducible](../../part-02/undecidable/tm2-recognizable-of-many-one-reducible.md)
 
 ## Sources
 

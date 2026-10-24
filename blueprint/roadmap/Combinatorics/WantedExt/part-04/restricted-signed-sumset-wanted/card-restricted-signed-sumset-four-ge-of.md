@@ -13,7 +13,8 @@ other three equal it. The conclusion is `|4^∧_±A| ≥ 26`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Finset](ordered-finset.md)
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources
 

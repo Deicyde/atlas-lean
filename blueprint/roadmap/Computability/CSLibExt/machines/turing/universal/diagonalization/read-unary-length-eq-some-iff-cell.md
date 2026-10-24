@@ -12,7 +12,12 @@ lean: Cslib.Turing.Universal.Diag.readUnaryLength_eq_some_iff_cell
 
 ## Depends on
 
-This node has no prerequisites.
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Cell](../clocked/cell.md)
+
+## Proof depends on
+
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

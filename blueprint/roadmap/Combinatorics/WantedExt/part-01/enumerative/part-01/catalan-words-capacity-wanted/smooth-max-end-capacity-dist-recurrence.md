@@ -13,7 +13,8 @@ Mansour and Shattuck's Lemma 7, recurrence (27): for `1 < i < n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smooth Max End Capacity Dist](smooth-max-end-capacity-dist.md)
+- [Smooth Plateau Area Dist](smooth-plateau-area-dist.md)
 
 ## Sources
 

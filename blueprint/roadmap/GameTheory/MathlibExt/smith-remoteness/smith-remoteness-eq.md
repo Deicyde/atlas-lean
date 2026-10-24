@@ -12,7 +12,8 @@ The defining recursion of `smithRemoteness`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../sprague-grundy/impartial-game.md)
+- [Smith Remoteness](smith-remoteness.md)
 
 ## Sources
 

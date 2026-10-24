@@ -13,7 +13,8 @@ associated with `(b', a, c)`, where `b' = (a² + kac + c²)/b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
+- [Gen Cohn S](gen-cohn-s.md)
 
 ## Sources
 

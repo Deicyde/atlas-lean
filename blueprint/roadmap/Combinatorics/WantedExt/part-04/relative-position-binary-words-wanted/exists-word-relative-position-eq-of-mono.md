@@ -12,7 +12,8 @@ function of some `w ∈ a𝒲`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

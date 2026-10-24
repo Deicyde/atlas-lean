@@ -11,7 +11,13 @@ Literal routine `l` of clause `c` (`done` if out of range; never used then).
 
 ## Depends on
 
-This node has no prerequisites.
+- [CL](cl.md)
+- [GL](gl.md)
+
+## Proof depends on
+
+- [BD](bd.md)
+- [LS](ls.md)
 
 ## Sources
 

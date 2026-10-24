@@ -12,7 +12,7 @@ lean: MetaMathlibExt.neg_one_mem_standardReflexiveSimplexVertices
 
 ## Depends on
 
-This node has no prerequisites.
+- [Standard Reflexive Simplex Vertices](standard-reflexive-simplex-vertices.md)
 
 ## Sources
 

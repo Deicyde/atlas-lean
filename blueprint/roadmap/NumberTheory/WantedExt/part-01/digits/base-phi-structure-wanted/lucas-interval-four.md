@@ -12,7 +12,8 @@ lean: MetaMathlibExt.lucasInterval_four
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Interval Hi](lucas-interval-hi.md)
+- [Lucas Interval Lo](lucas-interval-lo.md)
 
 ## Sources
 

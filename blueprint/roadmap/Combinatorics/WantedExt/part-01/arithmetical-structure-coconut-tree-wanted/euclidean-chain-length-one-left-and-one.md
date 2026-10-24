@@ -11,7 +11,7 @@ Corollary 5: `F(1, y) = y + 1` for `y ≥ 0`, and `F(x, 1) = 2` for `x ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclidean Chain Length](euclidean-chain-length.md)
 
 ## Sources
 

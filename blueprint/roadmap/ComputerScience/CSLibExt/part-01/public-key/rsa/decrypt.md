@@ -11,7 +11,8 @@ Decryption `c ↦ c ^ d` modulo `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key](key.md)
+- [N](n.md)
 
 ## Sources
 

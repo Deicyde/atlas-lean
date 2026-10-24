@@ -11,7 +11,8 @@ The first counter of each comparison.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CI](ci.md)
+- [K](k.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ A machine that outputs something halts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts On](halts-on.md)
 
 ## Sources
 

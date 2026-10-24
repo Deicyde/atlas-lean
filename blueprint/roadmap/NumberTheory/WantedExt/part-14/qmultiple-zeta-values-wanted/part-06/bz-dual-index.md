@@ -15,6 +15,10 @@ SZ words (`p = x`) this is `szDualIndex` of `(k₁ - 1, …, kᵣ - 1)`, shifted
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sz Dual Index](sz-dual-index.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

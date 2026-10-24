@@ -13,7 +13,8 @@ Table 1 and 2 values: `|S^{1/2}_n| = 1, 2, 3, 5` and `|M^{1/2}_n| = 0, 1, 1, 1` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Schreier Count](maximal-schreier-count.md)
+- [Schreier Count](schreier-count.md)
 
 ## Sources
 

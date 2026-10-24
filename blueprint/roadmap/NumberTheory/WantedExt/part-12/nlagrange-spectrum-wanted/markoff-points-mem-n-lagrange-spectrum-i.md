@@ -16,7 +16,7 @@ Congruence conditions for the Markoff points `√5, 2√2, √221/5, √1517/13,
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

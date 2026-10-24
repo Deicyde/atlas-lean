@@ -14,6 +14,10 @@ f:ℕ→ ℕ.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Unbounded Family](is-unbounded-family.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Cardinal.Characteristics](../../../../../sources/v2/MathlibExt.md)

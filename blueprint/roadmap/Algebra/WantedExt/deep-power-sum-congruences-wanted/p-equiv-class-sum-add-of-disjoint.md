@@ -13,7 +13,7 @@ product over the distinct parts `u` of `λ` (the factors with `r_u(λ) = 0` are 
 
 ## Depends on
 
-This node has no prerequisites.
+- [P Equiv Class Sum](p-equiv-class-sum.md)
 
 ## Sources
 

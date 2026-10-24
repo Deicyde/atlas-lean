@@ -14,6 +14,10 @@ Hoffman's dual index `k^∨`, defined by `(1)^∨ = (1)`, `(k↑)^∨ = (k^∨)�
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hoffman Dual Rev](hoffman-dual-rev.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.KamanoLandenPolyBernoulliWanted](../../../../../sources/v2/WantedExt.md)

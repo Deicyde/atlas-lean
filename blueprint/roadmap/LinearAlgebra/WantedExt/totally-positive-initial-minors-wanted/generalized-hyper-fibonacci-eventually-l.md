@@ -12,7 +12,7 @@ are positive and `W_{p,n}^{(r)} W_{p,n+2}^{(r)} ≤ (W_{p,n+1}^{(r)})²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
 
 ## Sources
 

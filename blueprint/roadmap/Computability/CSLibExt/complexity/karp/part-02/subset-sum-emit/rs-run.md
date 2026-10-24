@@ -13,7 +13,21 @@ marked vertex is popped, the vertex below it on `L` takes the mark.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mk L](../subset-sum-digits/mk-l.md)
+- [Prog](prog.md)
+- [Γ](untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Is V](is-v.md)
+- [Is V val](is-v-val.md)
+- [Rs F run](rs-f-run.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

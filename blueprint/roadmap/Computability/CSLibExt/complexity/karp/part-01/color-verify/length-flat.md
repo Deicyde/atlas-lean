@@ -12,7 +12,7 @@ Two bits per pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flat](flat.md)
 
 ## Sources
 

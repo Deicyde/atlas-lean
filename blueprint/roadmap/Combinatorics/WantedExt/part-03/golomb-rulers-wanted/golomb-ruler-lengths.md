@@ -16,6 +16,10 @@ pairwise differences being distinct.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sidon](../../../MathlibExt/part-01/additive/is-sidon.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.GolombRulersWanted](../../../../../sources/v2/WantedExt.md)

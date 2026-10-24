@@ -13,7 +13,7 @@ Theorem 5 (i) (D. R. Richman): the set `S` of values
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Staircase](farey-staircase.md)
 
 ## Sources
 

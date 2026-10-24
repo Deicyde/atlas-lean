@@ -11,7 +11,11 @@ The forest of the subtrees of the children of `v`, cut off `k` levels below `v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](../metric-tsp/forest.md)
+
+## Proof depends on
+
+- [Children](children.md)
 
 ## Sources
 

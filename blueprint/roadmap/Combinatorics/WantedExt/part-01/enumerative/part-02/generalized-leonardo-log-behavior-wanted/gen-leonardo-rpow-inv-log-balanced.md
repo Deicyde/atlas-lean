@@ -18,7 +18,7 @@ threshold its proof establishes (log-concavity of `L_{k,n}^{1/n}/n!` once
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](../../../../../../NumberTheory/WantedExt/part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

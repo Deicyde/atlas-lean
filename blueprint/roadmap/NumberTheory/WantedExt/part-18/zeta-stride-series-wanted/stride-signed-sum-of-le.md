@@ -12,7 +12,7 @@ For `1 ≤ n ≤ q` the signed stride sum has the single term `n^{-t}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Signed Sum](stride-signed-sum.md)
 
 ## Sources
 

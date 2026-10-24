@@ -12,7 +12,7 @@ Small value: two `2`-fold diamonds of length `1` with fold sum `1` and link sum 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multifold Diamond Count](multifold-diamond-count.md)
 
 ## Sources
 

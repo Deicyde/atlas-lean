@@ -12,7 +12,11 @@ For the identity matrix, `G_g(t) = 1/t` (Table 1), i.e. `u · G_g(u) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Form Series](landen-form-series.md)
+
+## Proof depends on
+
+- [Linear Fractional Pole Series](linear-fractional-pole-series.md)
 
 ## Sources
 

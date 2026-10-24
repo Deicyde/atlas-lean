@@ -13,7 +13,14 @@ polynomial `1 + z + z² / 2 + z³ / 6 + z⁴ / 24`, `z = λ h`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rk4](rk4.md)
+- [Rk Step](rk-step.md)
+
+## Proof depends on
+
+- [Explicit RK](explicit-rk.md)
+- [Stage](stage.md)
+- [The defining equation of the stages](stage-eq.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ A pass marks the head of every arc whose tail is marked.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mark Pass](../path/mark-pass.md)
+
+## Proof depends on
+
+- [Get D set true](get-d-set-true.md)
+- [Mark Pass mono](mark-pass-mono.md)
 
 ## Sources
 

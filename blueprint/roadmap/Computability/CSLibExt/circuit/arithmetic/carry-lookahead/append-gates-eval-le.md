@@ -12,7 +12,7 @@ The gates of `appendGates p c f` below `g + c'` are those of `appendGates p c' f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Append Gates](append-gates.md)
 
 ## Sources
 

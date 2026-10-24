@@ -16,6 +16,10 @@ literature uses several conventions).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reduced Forms Of Discriminant](reduced-forms-of-discriminant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QuadraticForms.KroneckerFormSumsWanted](../../../../../../sources/v2/WantedExt.md)

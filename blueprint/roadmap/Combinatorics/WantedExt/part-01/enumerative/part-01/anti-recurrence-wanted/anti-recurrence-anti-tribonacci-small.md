@@ -13,7 +13,8 @@ agree with `antiTribonacciD`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Recurrence](anti-recurrence.md)
+- [Anti Tribonacci D](../../part-06/walnut-oeis-problems-wanted/anti-tribonacci-d.md)
 
 ## Sources
 

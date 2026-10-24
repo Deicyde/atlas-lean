@@ -12,7 +12,7 @@ Renaming twice is renaming with the composite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Map Symbol](../basic/map-symbol.md)
 
 ## Sources
 

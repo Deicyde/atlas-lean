@@ -19,7 +19,7 @@ is stated for natural `x`, `a` (the record allows integers), with `k ≤ 2n`; th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ For `N ≥ 72`, the padded sequence `B_{N̄}` with initial conditions
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
 
 ## Sources
 

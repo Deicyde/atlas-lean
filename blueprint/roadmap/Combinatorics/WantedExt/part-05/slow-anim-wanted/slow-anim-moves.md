@@ -14,6 +14,10 @@ holding at least one token.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Slow ANim After](slow-anim-after.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SlowANimWanted](../../../../../sources/v2/WantedExt.md)

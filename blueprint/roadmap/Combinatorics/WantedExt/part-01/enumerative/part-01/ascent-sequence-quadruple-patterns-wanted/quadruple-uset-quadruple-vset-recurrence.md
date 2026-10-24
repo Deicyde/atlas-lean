@@ -13,7 +13,8 @@ Lemma 2: `u_n = |U_{n,1}|` and `v_n = |V_{n,1}|` both satisfy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quadruple USet](quadruple-uset.md)
+- [Quadruple VSet](quadruple-vset.md)
 
 ## Sources
 

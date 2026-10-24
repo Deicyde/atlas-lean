@@ -13,7 +13,13 @@ the shape of the stack determine the next configuration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+- [Instr](instr.md)
+- [Step](step.md)
+
+## Proof depends on
+
+- [State](../syntax/state.md)
 
 ## Sources
 

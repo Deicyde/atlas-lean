@@ -12,7 +12,10 @@ lean: Cslib.Complexity.Karp.lift_fresh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fresh](../three-sat/fresh.md)
+- [Fresh Val](fresh-val.md)
+- [Lift](lift.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

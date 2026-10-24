@@ -12,7 +12,11 @@ A state with empty scratch stacks and unary counters is an `st` state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [St](st.md)
+- [Γ](untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

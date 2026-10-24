@@ -12,7 +12,10 @@ If `S` is symmetric of (one-based) type `(2, n)` (resp. `(1, n - 1)`), then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rat Copy](is-rat-copy.md)
+- [Is Rat Reflection](is-rat-reflection.md)
+- [Is Symmetric Of Type](is-symmetric-of-type.md)
+- [Zero Geometric Set](zero-geometric-set.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.firstNonMultiples_three_four
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Non Multiples](first-non-multiples.md)
 
 ## Sources
 

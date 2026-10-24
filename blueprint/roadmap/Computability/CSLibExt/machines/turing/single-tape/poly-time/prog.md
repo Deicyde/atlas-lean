@@ -11,7 +11,13 @@ Move the bits of `X` onto `O` (reversing them), pop `O` once, halt.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [L](l.md)
+
+## Proof depends on
+
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ associated with the vertex of `MT(k)` at the same path (the canonical graph isom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
+- [Gen Cohn Tree](gen-cohn-tree.md)
+- [Gen Markov Tree](gen-markov-tree.md)
 
 ## Sources
 

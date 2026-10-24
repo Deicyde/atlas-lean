@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.OptimalPredictors.IsPosteriorMean.isBayesEstimator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Posterior Mean](is-posterior-mean.md)
+- [Sq Loss](sq-loss.md)
+
+## Proof depends on
+
+- [The mean minimizes the expected squared loss](lintegral-sq-loss-integral-le.md)
+- [Posterior Mean](posterior-mean.md)
 
 ## Sources
 

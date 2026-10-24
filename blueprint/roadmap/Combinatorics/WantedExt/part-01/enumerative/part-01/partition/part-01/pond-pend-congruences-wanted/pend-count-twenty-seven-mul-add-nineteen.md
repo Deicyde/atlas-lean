@@ -11,7 +11,7 @@ For all `n ≥ 0`, `pend(27n+19) ≡ 0 (mod 3)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pend Count](pend-count.md)
 
 ## Sources
 

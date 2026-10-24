@@ -12,7 +12,7 @@ The characteristic value `C_2(1) = -1` fixes the cosine-sum convention.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Watson Cos Sum](watson-cos-sum.md)
 
 ## Sources
 

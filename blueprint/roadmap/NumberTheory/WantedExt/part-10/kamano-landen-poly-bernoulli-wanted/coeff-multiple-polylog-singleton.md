@@ -12,7 +12,11 @@ Depth one: `Li_{(a)}(z) = ∑_{m ≥ 1} z^m / m^a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiple Polylog](multiple-polylog.md)
+
+## Proof depends on
+
+- [Multiple Polylog Coeff Rev](multiple-polylog-coeff-rev.md)
 
 ## Sources
 

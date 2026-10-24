@@ -12,7 +12,10 @@ Unfolding the moment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [H Free](h-free.md)
+- [H Free Moment](h-free-moment.md)
+- [Omega Mult](omega-mult.md)
 
 ## Sources
 

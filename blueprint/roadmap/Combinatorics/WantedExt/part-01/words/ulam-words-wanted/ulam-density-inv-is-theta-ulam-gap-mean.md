@@ -11,7 +11,8 @@ lean: MetaMathlibExt.ulamDensity_inv_isTheta_ulamGapMean
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ulam Gap Mean](ulam-gap-mean.md)
+- [Ulam Word Count](ulam-word-count.md)
 
 ## Sources
 

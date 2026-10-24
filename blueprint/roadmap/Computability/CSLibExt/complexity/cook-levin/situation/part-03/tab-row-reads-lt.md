@@ -12,7 +12,9 @@ Every old cell `tabRow` reads lies in the row (`index < H`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [Cn](../part-02/cn.md)
+- [Pl](../part-02/pl.md)
 
 ## Sources
 

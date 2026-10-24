@@ -15,6 +15,11 @@ not affect in- and out-degrees, connectivity or Eulerian circuits).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cycle Union](cycle-union.md)
+- [Hoey Sloane Transition](hoey-sloane-transition.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.PermutipleStringsWanted](../../../../../../sources/v2/WantedExt.md)

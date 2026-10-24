@@ -12,7 +12,7 @@ has generating function `A_k(x) = (1 - x²)/(1 - x - 2x² + x^{2-k})`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Arndt Composition Count](k-arndt-composition-count.md)
 
 ## Sources
 

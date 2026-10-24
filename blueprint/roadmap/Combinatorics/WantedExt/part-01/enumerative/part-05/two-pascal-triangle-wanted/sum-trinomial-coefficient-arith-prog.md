@@ -13,7 +13,7 @@ The hypothesis `z ≠ 0` is implicit in the paper's `(z w_b^j)⁻¹`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

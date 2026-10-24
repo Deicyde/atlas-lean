@@ -12,7 +12,7 @@ number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Euler Prime](../../../../MathlibExt/part-05/euler-prime/is-euler-prime.md)
 
 ## Sources
 

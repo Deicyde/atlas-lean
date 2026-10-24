@@ -12,7 +12,8 @@ function that is a root of a nonzero polynomial over `ℤ[x]` lies in `ℤ[x]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
+- [Polynomial To LIP](polynomial-to-lip.md)
 
 ## Sources
 

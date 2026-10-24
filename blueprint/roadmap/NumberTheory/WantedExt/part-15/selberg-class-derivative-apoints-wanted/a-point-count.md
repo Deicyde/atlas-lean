@@ -12,7 +12,7 @@ rectangle `E₂ < Re s < E₁`, `0 < Im s < T`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Class Function](selberg-class-function.md)
 
 ## Sources
 

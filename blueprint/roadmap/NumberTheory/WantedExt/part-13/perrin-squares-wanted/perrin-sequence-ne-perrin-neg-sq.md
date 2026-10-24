@@ -11,7 +11,8 @@ Theorem 3: `R_n = R_{-m} ^ 2` has no solutions in positive integers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perrin Neg](perrin-neg.md)
+- [Perrin Sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources
 

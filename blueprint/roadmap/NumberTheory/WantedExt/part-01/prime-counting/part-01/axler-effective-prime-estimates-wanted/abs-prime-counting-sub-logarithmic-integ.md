@@ -12,7 +12,7 @@ Johnston's unconditional range for Schoenfeld's inequality:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Logarithmic Integral Real](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/log/integral-derivative/logarithmic-integral-real.md)
 
 ## Sources
 

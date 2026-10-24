@@ -12,7 +12,7 @@ Characteristic value `F_0(X) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Corollary 2.1: for `b ≠ 0`, `(a + b - 1) B_U(n) = U (n + 1) - 1 + b U n` if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

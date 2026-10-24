@@ -12,7 +12,11 @@ lean: MetaMathlibExt.characteristicNumber_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Characteristic Number](characteristic-number.md)
+
+## Proof depends on
+
+- [Convergent Matrix](convergent-matrix.md)
 
 ## Sources
 

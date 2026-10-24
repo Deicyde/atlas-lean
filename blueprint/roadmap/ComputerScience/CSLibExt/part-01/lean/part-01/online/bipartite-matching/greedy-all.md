@@ -13,6 +13,11 @@ The greedy matching after all `b` right vertices arrive in order, computed on ar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Greedy Arr](greedy-arr.md)
+- [To Fun](to-fun.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Online.BipartiteMatching](../../../../../../../../sources/v2/CSLibExt.md)

@@ -15,7 +15,7 @@ rational `q, t, x, y` with `x ≠ y` (such `γ_{n,k}` are unique).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Eulerian P](generalized-eulerian-p.md)
 
 ## Sources
 

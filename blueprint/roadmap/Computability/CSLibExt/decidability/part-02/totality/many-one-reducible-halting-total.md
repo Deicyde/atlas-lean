@@ -12,7 +12,11 @@ lean: Cslib.Decidability.manyOneReducible_halting_total
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total Code](total-code.md)
+
+## Proof depends on
+
+- [Halts On Zero Code](../rice-applications/halts-on-zero-code.md)
 
 ## Sources
 

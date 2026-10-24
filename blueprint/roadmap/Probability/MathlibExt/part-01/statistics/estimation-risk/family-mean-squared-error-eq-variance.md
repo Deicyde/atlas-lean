@@ -13,7 +13,14 @@ with a finite second moment: a genuine predicate application.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unbiased](is-unbiased.md)
+- [Family Mean Squared Error](family-mean-squared-error.md)
+
+## Proof depends on
+
+- [Expect eq](expect-eq.md)
+- [Family Bias](family-bias.md)
+- [Family Mean Squared Error eq variance add sq family Bias](family-mean-squared-error-eq-variance-ad.md)
 
 ## Sources
 

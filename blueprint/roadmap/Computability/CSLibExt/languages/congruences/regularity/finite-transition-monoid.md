@@ -12,7 +12,12 @@ The transition monoid of a finite-state DFA is finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Transformation](../syntactic/state-transformation.md)
+- [Transition Monoid](../syntactic/transition-monoid.md)
+
+## Proof depends on
+
+- [Finite state Transformation](finite-state-transformation.md)
 
 ## Sources
 

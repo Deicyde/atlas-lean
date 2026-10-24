@@ -13,7 +13,8 @@ from `[a]_T` rightwards are `[0^k a]_T`; the witness difference is taken among t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci Value](tribonacci-value.md)
 
 ## Sources
 

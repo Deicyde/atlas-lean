@@ -12,7 +12,7 @@ Proposition 6 (quoted from Archer et al.): for `x ≥ 1` and `y, k ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclidean Chain Length](euclidean-chain-length.md)
 
 ## Sources
 

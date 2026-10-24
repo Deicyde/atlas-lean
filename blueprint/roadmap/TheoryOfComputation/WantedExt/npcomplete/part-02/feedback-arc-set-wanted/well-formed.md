@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feedback Arc Set Instance](feedback-arc-set-instance.md)
 
 ## Sources
 

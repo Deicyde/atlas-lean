@@ -12,7 +12,17 @@ The generic loop runs `|xs| + 1` steps, consuming `xs` and the stopping symbol.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
+- [Lab](lab.md)
+- [St](st.md)
+- [Stmt](stmt.md)
+- [W](w.md)
+- [Loop](loop.md)
+- [Prog](prog.md)
+- [Push All](push-all.md)
+- [Stk](stk.md)
+- [Γ](untitled.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

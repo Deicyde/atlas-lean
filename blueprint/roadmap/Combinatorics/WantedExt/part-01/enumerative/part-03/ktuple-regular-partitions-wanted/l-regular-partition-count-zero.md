@@ -12,7 +12,7 @@ Zero has exactly one `ℓ`-regular partition, the empty one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Regular Partition Count](l-regular-partition-count.md)
 
 ## Sources
 

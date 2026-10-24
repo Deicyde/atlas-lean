@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Numerical3 DMInstance](numerical3-dminstance.md)
 
 ## Sources
 

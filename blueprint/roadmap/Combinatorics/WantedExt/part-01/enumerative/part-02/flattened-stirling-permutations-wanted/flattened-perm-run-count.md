@@ -15,6 +15,12 @@ exactly `k` runs.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Flattened Word](is-flattened-word.md)
+- [Word Run Count](word-run-count.md)
+- [Word Run Start](word-run-start.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.FlattenedStirlingPermutationsWanted](../../../../../../../sources/v2/WantedExt.md)

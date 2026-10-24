@@ -12,7 +12,7 @@ The `n`-th iterate of the period-doubling substitution has length `2 ^ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Period Doubling Word](period-doubling-word.md)
 
 ## Sources
 

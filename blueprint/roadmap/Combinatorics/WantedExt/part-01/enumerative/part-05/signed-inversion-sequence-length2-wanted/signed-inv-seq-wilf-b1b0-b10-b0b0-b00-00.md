@@ -12,7 +12,8 @@ The equivalence `{1̄0̄, 1̄0, 0̄0̄, 0̄0, 00}` ∼ `{1̄0̄, 1̄0, 0̄1̄, 0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Pattern2](signed-pattern2.md)
+- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
 
 ## Sources
 

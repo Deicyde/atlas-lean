@@ -12,7 +12,10 @@ From the state after position `i`, the rest of `φ a` leads to `M.step q a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Advance](advance.md)
+- [Bound](bound.md)
+- [Εnfa](nfa.md)
 
 ## Sources
 

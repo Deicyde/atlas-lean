@@ -11,7 +11,8 @@ Theorem 1: every weak Sidon set can be partitioned into two Sidon sets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weak Sidon Set](is-weak-sidon-set.md)
+- [Sidon](../../../../MathlibExt/part-01/additive/is-sidon.md)
 
 ## Sources
 

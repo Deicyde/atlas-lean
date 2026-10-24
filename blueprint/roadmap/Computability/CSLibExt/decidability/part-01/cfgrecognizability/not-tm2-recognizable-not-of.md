@@ -13,7 +13,13 @@ unrecognizable complement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Decidable](../basic/tm2-decidable.md)
+- [TM2 Recognizable](../basic/tm2-recognizable.md)
+
+## Proof depends on
+
+- [TM2 Co Recognizable](../basic/tm2-co-recognizable.md)
+- [Post's theorem](../basic/tm2-decidable-iff-tm2-recognizable-and-t.md)
 
 ## Sources
 

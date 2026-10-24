@@ -12,7 +12,11 @@ A halted configuration idles.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run I](../part-03/run-i.md)
+
+## Proof depends on
+
+- [Step I](../part-03/step-i.md)
 
 ## Sources
 

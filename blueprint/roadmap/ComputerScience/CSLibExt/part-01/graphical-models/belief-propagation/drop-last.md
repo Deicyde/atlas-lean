@@ -12,7 +12,7 @@ edge are discarded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ for `n ≥ 1` (see `hofstadterF_zero` and `hofstadterF_eq`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hofstadter FAux](hofstadter-faux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedHofstadterOrderWanted](../../../../../sources/v2/WantedExt.md)

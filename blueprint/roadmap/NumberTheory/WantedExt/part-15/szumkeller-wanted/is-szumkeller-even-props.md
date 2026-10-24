@@ -12,7 +12,7 @@ exponent, and `σ₂(n) ≥ 3n²/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SZumkeller](is-szumkeller.md)
 
 ## Sources
 

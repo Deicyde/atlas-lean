@@ -16,7 +16,16 @@ rounding `fl`, with relative error at most `2^(-p)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Float In](is-float-in.md)
+- [Round to nearest, ties to even](fl.md)
+
+## Proof depends on
+
+- [Abs rne le](abs-rne-le.md)
+- [Le rne of le](le-rne-of-le.md)
+- [Rne](rne.md)
+- [Rne le of le](rne-le-of-le.md)
+- [Ulp Exp](ulp-exp.md)
 
 ## Sources
 

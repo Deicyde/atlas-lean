@@ -11,7 +11,7 @@ The entry of the table at state `q` and symbol `a`, `none` outside the table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
 
 ## Sources
 

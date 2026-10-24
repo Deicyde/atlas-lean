@@ -12,7 +12,18 @@ One Horner round `acc ← acc · b + a`: `q += acc · b`; drain `acc`; move `q` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
+- [HW](hw.md)
+
+## Proof depends on
+
+- [MS](../counter-view/ms.md)
+- [Mul S](../counter-view/mul-s.md)
+- [Tg](tg.md)
+- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

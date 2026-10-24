@@ -13,7 +13,8 @@ fact about the existential encoding of `𝒫^[≤k]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Product Layer](prime-product-layer.md)
+- [Prime Products At Most](prime-products-at-most.md)
 
 ## Sources
 

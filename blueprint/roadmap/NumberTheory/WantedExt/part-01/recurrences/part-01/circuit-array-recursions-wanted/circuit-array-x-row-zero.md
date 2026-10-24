@@ -12,7 +12,8 @@ Corollary 4.4: the closed form (2.6) of row `0`, `C^X₀,ₛ = (3·9^{s-2}X - 1)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Array](circuit-array.md)
+- [Circuit Array X](circuit-array-x.md)
 
 ## Sources
 

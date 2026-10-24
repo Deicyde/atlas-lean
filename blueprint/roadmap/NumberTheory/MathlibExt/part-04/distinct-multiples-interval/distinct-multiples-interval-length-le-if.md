@@ -13,7 +13,13 @@ distinct multiples of `1, …, n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
+- [Distinct Multiples Interval Length](distinct-multiples-interval-length.md)
+
+## Proof depends on
+
+- [Mono](mono.md)
+- [Has Distinct Multiples In Interval distinct Multiples Interval Length](has-distinct-multiples-in-interval-disti.md)
 
 ## Sources
 

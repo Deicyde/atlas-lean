@@ -12,7 +12,8 @@ Carry bound: for an `(n, b, σ)`-permutiple, every carry satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Permutiple](is-permutiple.md)
+- [Permutiple Carry](permutiple-carry.md)
 
 ## Sources
 

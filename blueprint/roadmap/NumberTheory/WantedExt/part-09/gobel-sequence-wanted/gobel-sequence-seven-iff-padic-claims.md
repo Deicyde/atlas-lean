@@ -17,7 +17,7 @@ is the Theorem 2 statement as formalized in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ For a derangement secret, the second guess is `S[n]⁻¹`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle Guess](perm-wordle-guess.md)
+
+## Proof depends on
+
+- [Permute Along](permute-along.md)
+- [Permute Along univ](permute-along-univ.md)
 
 ## Sources
 

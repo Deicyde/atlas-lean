@@ -17,7 +17,7 @@ Lemma 6: let `w(n) = q_{B_κ}(n) χ_ξ(n)` with `χ_ξ` the principal Dirichlet 
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Indicator](b-free-indicator.md)
 
 ## Sources
 

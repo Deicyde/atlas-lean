@@ -13,7 +13,19 @@ lean: Cslib.Turing.SingleTapeTM.SpaceBoundedBy.computablePred_haltsOn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts On](../classes/halts-on.md)
+- [Space Bounded By](space-bounded-by.md)
+
+## Proof depends on
+
+- [To Coded Cfg](../to-recursive/to-coded-cfg.md)
+- [Coded Cfg](../to-recursive/coded-cfg.md)
+- [A machine running in space `s` that halts on `l` halts within `cfgBound (s l.length)` steps](exists-halted-relates-within-steps.md)
+- [Cfg Bound](cfg-bound.md)
+- [Coded Step](../to-recursive/coded-step.md)
+- [Coded Step to Coded Cfg](../to-recursive/coded-step-to-coded-cfg.md)
+- [Primrec coded Step](../to-recursive/primrec-coded-step.md)
+- [Primrec to Coded Cfg init Cfg](../to-recursive/primrec-to-coded-cfg-init-cfg.md)
 
 ## Sources
 

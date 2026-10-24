@@ -12,7 +12,8 @@ Without a listed transition for `(s, a)`, state `s` stays put.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+- [Step](step.md)
 
 ## Sources
 

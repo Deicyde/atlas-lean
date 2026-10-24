@@ -11,7 +11,11 @@ The joint weight of the observations `x 0, …, x (t + k)` and the state `s` at 
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+
+## Proof depends on
+
+- [Path Prob](../hidden-markov/path-prob.md)
 
 ## Sources
 

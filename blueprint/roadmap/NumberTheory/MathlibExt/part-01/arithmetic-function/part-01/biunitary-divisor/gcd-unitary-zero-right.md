@@ -12,7 +12,11 @@ lean: MetaMathlibExt.gcdUnitary_zero_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Unitary](gcd-unitary.md)
+
+## Proof depends on
+
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

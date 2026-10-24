@@ -13,7 +13,8 @@ Characteristic values: `σ_odd(12) = 1 + 3 = 4`, `σ_even(12) = 2 + 4 + 6 + 12 =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Even](sigma-even.md)
+- [Sigma Odd](sigma-odd.md)
 
 ## Sources
 

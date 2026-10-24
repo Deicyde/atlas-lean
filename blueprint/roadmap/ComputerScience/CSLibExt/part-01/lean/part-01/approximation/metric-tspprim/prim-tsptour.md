@@ -13,6 +13,11 @@ CLRS `APPROX-TSP-TOUR` with Prim's tree: the preorder walk of the minimum spanni
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Approx TSPTour](../metric-tsp/approx-tsptour.md)
+- [Prim Forest](prim-forest.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.MetricTSPPrim](../../../../../../../../sources/v2/CSLibExt.md)

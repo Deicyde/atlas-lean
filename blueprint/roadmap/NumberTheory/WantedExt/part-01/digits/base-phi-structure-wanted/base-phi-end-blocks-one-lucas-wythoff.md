@@ -21,7 +21,10 @@ source's proof derives `R_w = R_w̆ + 1` only "if `R_w ≠ ∅`".
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Occurrences](base-phi-occurrences.md)
+- [Beatty Set](beatty-set.md)
+- [Beatty Set₀](beatty-set-2.md)
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

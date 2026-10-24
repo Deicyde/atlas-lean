@@ -11,7 +11,7 @@ For `l, m ≥ 2` with `l ≢ 1 (mod m)`: `S_m(1, l) = 1` iff `l = 2` or `l ≥ (
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

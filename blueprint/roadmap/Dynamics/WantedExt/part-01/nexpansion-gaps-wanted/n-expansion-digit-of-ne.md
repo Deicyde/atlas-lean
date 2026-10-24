@@ -12,7 +12,7 @@ Away from the left endpoint `α`, the digit is `⌊N / x - α⌋`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Expansion Digit](n-expansion-digit.md)
 
 ## Sources
 

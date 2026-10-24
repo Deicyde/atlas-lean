@@ -11,7 +11,7 @@ Corollary 3.16: the second entries of the vertices of `GCT(k, ℓ)` are pairwise
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Cohn Tree](gen-cohn-tree.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ A bound on all infix-pair scores bounds the local score.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Infix Pairs](infix-pairs.md)
+- [Local Score](local-score.md)
+- [Nw Score](nw-score.md)
+
+## Proof depends on
+
+- [List Max](list-max.md)
+- [Nw Score nil left](nw-score-nil-left.md)
+- [Prefix Pairs](prefix-pairs.md)
 
 ## Sources
 

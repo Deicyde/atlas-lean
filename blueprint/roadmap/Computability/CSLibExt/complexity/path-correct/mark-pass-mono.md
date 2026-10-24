@@ -12,7 +12,11 @@ Marks only grow during a pass.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mark Pass](../path/mark-pass.md)
+
+## Proof depends on
+
+- [Get D set true](get-d-set-true.md)
 
 ## Sources
 

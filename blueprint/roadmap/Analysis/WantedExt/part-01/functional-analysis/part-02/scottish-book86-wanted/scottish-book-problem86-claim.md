@@ -20,6 +20,10 @@ many functions are necessary for the completion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Scottish Book86 Measure](scottish-book86-measure.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FunctionalAnalysis.ScottishBook86Wanted](../../../../../../../sources/v2/WantedExt.md)

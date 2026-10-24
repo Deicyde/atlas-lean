@@ -12,7 +12,9 @@ lean: Cslib.MachineLearning.Sequence.KalmanFilter.predict_valid
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
+- [Valid](valid.md)
+- [Predict](predict.md)
 
 ## Sources
 

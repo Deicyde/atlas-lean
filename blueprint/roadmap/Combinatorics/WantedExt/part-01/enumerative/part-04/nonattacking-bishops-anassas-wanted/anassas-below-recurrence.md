@@ -14,7 +14,8 @@ Recurrence (16) with its initial conditions: for `m ≥ 1`, `k ≥ 2`, `p ≥ 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anassas Below](anassas-below.md)
+- [Ext Stirling Second](ext-stirling-second.md)
 
 ## Sources
 

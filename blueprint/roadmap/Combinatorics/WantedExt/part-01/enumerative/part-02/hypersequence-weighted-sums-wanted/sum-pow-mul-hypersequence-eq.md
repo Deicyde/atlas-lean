@@ -12,7 +12,8 @@ Theorem 9: `t^{(r)}_ℓ(n) = ∑_{m=0}^{ℓ} c_{ℓ,m}(n) a^{(r+m+1)}_n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
+- [Hypersequence](hypersequence.md)
 
 ## Sources
 

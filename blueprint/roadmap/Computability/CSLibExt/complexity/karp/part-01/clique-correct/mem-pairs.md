@@ -25,7 +25,7 @@ theorem vertexCoverDec_noKG : vertexCoverDec noKG = false :=
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

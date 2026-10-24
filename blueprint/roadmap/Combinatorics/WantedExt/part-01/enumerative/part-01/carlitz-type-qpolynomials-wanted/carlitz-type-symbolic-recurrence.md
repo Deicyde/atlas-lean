@@ -14,7 +14,8 @@ with associated sequence `a`, then `t_n = T_n(0)` satisfies `q^r (q t + 1)^n = t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Carlitz Type With](is-carlitz-type-with.md)
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

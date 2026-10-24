@@ -13,7 +13,7 @@ The posterior mean moves from the prior mean toward the observation by the gain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal Post Mean](normal-post-mean.md)
 
 ## Sources
 

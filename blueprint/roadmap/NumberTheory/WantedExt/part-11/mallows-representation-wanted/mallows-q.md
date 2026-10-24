@@ -11,7 +11,12 @@ The sequence `Q(x) = ⟨Q_1(x), Q_2(x), …⟩` with `Q_1 = O_L` and `Q_{j+1} = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Stern Brocot Letter](stern-brocot-letter.md)
+
+## Proof depends on
+
+- [Mallows QStep](mallows-qstep.md)
 
 ## Sources
 

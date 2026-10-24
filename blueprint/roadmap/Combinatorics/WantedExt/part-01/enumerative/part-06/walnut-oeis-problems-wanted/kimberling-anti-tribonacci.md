@@ -12,7 +12,10 @@ Kimberling's conjecture: for every `n ≥ 1`, `0 ≤ 10n - 6 - 3A_n ≤ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Tribonacci A](anti-tribonacci-a.md)
+- [Anti Tribonacci B](anti-tribonacci-b.md)
+- [Anti Tribonacci C](anti-tribonacci-c.md)
+- [Anti Tribonacci D](anti-tribonacci-d.md)
 
 ## Sources
 

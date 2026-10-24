@@ -12,7 +12,13 @@ At arity zero discrete and indiscrete coincide.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Partition](../basic/noncrossing-partition.md)
+- [Discrete](discrete.md)
+- [Indiscrete](indiscrete.md)
+
+## Proof depends on
+
+- [Eq indiscrete zero](eq-indiscrete-zero.md)
 
 ## Sources
 

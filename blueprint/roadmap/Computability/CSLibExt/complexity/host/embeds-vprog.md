@@ -12,7 +12,19 @@ The verifier host runs the component at `comp l`; its exits lead to the cleanup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](../dense-satverifier/g.md)
+- [Comp](comp.md)
+- [HK](hk.md)
+- [HLab](hlab.md)
+- [HΓ](h.md)
+- [Emb](emb.md)
+- [Vprog](vprog.md)
+- [ΦV](v.md)
+- [Embeds](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
+
+## Proof depends on
+
+- [Map S](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 
 ## Sources
 

@@ -16,7 +16,11 @@ zero polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Restriction](edge-restriction.md)
+
+## Proof depends on
+
+- [Exponent To Real](exponent-to-real.md)
 
 ## Sources
 

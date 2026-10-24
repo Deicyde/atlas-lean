@@ -12,7 +12,7 @@ lean: MetaMathlibExt.linearFractionalPoleSeries_spec
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Fractional Pole Series](linear-fractional-pole-series.md)
 
 ## Sources
 

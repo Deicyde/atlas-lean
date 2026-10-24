@@ -12,7 +12,7 @@ A permuted list has the same length as the original.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Permutation](uniform-permutation.md)
 
 ## Sources
 

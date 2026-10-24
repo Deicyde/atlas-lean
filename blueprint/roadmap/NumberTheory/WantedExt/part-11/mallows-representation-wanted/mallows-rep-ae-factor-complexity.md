@@ -12,7 +12,9 @@ For almost every irrational `α ∈ (0, 1)` the factor complexity of `M(α)` is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
+- [Word Factor Complexity](../../../../Combinatorics/MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

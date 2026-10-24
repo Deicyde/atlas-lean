@@ -13,7 +13,8 @@ the event that a uniformly random sequence in `ℤ₂ᵈ` is good satisfies, for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Threshold Function](is-threshold-function.md)
+- [Good Sequence Prob](good-sequence-prob.md)
 
 ## Sources
 

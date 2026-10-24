@@ -13,7 +13,8 @@ of `x` is the `N(m₀, v₀ + v)` marginal density of `x` times the posterior de
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal Post Mean](normal-post-mean.md)
+- [Normal Post Var](normal-post-var.md)
 
 ## Sources
 

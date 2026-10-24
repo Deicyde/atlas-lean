@@ -14,7 +14,8 @@ below it `b` is the left operand.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+- [Instr](instr.md)
 
 ## Sources
 

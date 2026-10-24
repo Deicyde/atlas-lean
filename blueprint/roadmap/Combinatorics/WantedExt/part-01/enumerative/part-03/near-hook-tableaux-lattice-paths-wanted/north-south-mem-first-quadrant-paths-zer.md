@@ -12,7 +12,7 @@ lean: MetaMathlibExt.north_south_mem_firstQuadrantPaths_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Quadrant Paths](first-quadrant-paths.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: MetaMathlibExt.invSeqAvoidGF_010_011_102_201_210_seven
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Seq Avoid GF](inv-seq-avoid-gf.md)
 
 ## Sources
 

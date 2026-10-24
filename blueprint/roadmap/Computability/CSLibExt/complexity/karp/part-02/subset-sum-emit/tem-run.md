@@ -12,7 +12,18 @@ Writing the remaining target bits: each `b` gives `b, true`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [Γ](untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Is T](is-t.md)
+- [Is T bit](is-t-bit.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

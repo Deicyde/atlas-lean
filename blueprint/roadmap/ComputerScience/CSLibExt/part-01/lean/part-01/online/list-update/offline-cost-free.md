@@ -16,6 +16,12 @@ this is `offlineCost` (`offlineCostFree_noMove`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Access Cost](access-cost.md)
+- [Free Move](free-move.md)
+- [Inv](inv.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Online.ListUpdate](../../../../../../../../sources/v2/CSLibExt.md)

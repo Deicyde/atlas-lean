@@ -15,7 +15,7 @@ procedure for the unbounded existential; `j * (j + 1) / 2` (the triangular numbe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
 
 ## Sources
 

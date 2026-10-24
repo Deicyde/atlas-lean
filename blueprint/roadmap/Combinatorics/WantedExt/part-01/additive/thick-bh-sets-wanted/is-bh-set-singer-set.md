@@ -14,7 +14,8 @@ elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bh Set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
+- [Singer Set](singer-set.md)
 
 ## Sources
 

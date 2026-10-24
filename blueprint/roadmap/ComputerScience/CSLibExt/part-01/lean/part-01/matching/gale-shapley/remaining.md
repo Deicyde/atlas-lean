@@ -11,7 +11,7 @@ The proposals still available: `∑ m, (n - next m)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

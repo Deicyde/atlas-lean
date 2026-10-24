@@ -14,7 +14,15 @@ then `ℓ < max{2, p*}` with `p* = p + 1 + (N ln φ + ln(1 - ρ + ω̃^N)) / (ln
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [L Star Closure](l-star-closure.md)
+- [L Star Collection](l-star-collection.md)
+- [Max LStar Block](max-lstar-block.md)
+- [Zeckendorf Delta Star](zeckendorf-delta-star.md)
+- [Zeckendorf Generic Exponent](zeckendorf-generic-exponent.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
 
 ## Sources
 

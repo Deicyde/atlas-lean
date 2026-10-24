@@ -15,7 +15,8 @@ thresholds, the Grundy number is `x₁ ⊕ ⋯ ⊕ x_s ⊕ p` at every position 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
+- [Nim Pass Indicator](nim-pass-indicator.md)
 
 ## Sources
 

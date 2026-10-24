@@ -15,6 +15,10 @@ directions, so they are distinct as sets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Line In Graph](line-in-graph.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.Calculus.ScottishBook44Wanted](../../../../../../../sources/v2/WantedExt.md)

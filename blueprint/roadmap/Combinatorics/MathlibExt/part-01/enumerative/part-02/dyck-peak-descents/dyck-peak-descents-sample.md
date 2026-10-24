@@ -13,7 +13,7 @@ peaks with descents `3, 2, 1, 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyck Peak Descents](dyck-peak-descents.md)
 
 ## Sources
 

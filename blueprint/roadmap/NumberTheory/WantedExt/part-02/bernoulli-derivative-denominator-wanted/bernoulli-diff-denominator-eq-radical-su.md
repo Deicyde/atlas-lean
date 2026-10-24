@@ -13,7 +13,8 @@ if `n` is odd then `𝔻^⊥_{n+1} = 1`, and otherwise `n = 2^e` with `e ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator](bernoulli-diff-denominator.md)
+- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ with `(1/2^k)(4^k - 3^k - C(2^k, 2)) + 1/2^{k+1} + 1 ≤ η`), for all sufficien
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Sum Mean](../../part-08/gcd-sum-moments-wanted/gcd-sum-mean.md)
 
 ## Sources
 

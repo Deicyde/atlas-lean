@@ -11,7 +11,9 @@ Tokenizer stacks: its token stack is the emitter's.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Emitter](emitter.md)
+- [K](k.md)
+- [K](../../../sat-tokenizer/k.md)
 
 ## Sources
 

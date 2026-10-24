@@ -12,7 +12,7 @@ lean: MetaMathlibExt.decimationCoeff_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decimation Coeff](decimation-coeff.md)
 
 ## Sources
 

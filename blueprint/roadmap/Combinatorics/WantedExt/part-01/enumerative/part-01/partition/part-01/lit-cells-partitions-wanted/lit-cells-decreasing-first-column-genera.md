@@ -15,7 +15,8 @@ paper's `T(u, q) = ∑_{r ≥ 1} u^{r+1} q^{r+1} T_q(r)`; it excludes only the p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lit Cells Decreasing](lit-cells-decreasing.md)
+- [Triangle Partition Series](triangle-partition-series.md)
 
 ## Sources
 

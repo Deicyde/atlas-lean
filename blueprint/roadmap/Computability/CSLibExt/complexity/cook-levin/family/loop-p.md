@@ -11,7 +11,8 @@ Counter values at rest inside the time loop (all but `Tn`, `Ti`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
+- [Layout](layout.md)
 
 ## Sources
 

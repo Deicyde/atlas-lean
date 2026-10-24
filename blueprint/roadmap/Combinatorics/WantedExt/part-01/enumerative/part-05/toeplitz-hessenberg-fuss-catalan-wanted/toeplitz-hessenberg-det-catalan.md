@@ -20,7 +20,7 @@ Catalan determinants, with `C(x) = ∑ Cₙ xⁿ` and `K_m = C_{m+2} - C_{m+1}`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz Hessenberg Det](../../../../../../LinearAlgebra/MathlibExt/matrix/part-02/trudi-brioschi-determinant/toeplitz-hessenberg-det.md)
 
 ## Sources
 

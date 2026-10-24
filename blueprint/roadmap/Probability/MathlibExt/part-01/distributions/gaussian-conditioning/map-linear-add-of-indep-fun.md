@@ -15,6 +15,13 @@ independent, then `F x + w ~ N(F m + c, F S Fᵀ + Q)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Block Row](block-row.md)
+- [Map sum Equiv Prod symm of indep Fun](map-sum-equiv-prod-symm-of-indep-fun.md)
+- [Linear images of multivariate Gaussians](map-to-euclidean-lin-multivariate-gaussi.md)
+- [Pos Semidef from Blocks zero](pos-semidef-from-blocks-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.GaussianConditioning](../../../../../../sources/v2/MathlibExt.md)

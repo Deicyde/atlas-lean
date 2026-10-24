@@ -12,7 +12,18 @@ Moving every token back.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tok](is-tok.md)
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Stmt](stmt.md)
+- [Back step](back-step.md)
 
 ## Sources
 

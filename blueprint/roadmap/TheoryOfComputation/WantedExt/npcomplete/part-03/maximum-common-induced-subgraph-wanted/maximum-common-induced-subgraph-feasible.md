@@ -11,7 +11,12 @@ A common induced subgraph on at least `K` vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Common Induced Subgraph Instance](maximum-common-induced-subgraph-instance.md)
+
+## Proof depends on
+
+- [Graph First](graph-first.md)
+- [Graph Second](graph-second.md)
 
 ## Sources
 

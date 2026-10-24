@@ -12,7 +12,7 @@ Characteristic value: `g^(F)(x) = F(x)` in one variable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incl Excl Like Sum](incl-excl-like-sum.md)
 
 ## Sources
 

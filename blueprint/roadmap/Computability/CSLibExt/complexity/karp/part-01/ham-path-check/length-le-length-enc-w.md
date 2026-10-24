@@ -12,7 +12,11 @@ Each vertex costs at least one bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc W](enc-w.md)
+
+## Proof depends on
+
+- [Length enc W](length-enc-w.md)
 
 ## Sources
 

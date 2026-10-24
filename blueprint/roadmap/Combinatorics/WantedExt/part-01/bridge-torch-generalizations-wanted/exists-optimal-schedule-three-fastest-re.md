@@ -13,7 +13,10 @@ bank.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bridge Schedule](is-bridge-schedule.md)
+- [Bridge Time](bridge-time.md)
+- [Right Bank](right-bank.md)
+- [Schedule Cost](schedule-cost.md)
 
 ## Sources
 

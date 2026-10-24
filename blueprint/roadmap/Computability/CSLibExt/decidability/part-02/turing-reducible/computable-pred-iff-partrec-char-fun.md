@@ -12,7 +12,7 @@ lean: Cslib.Decidability.computablePred_iff_partrec_charFun
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Fun](char-fun.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ moves to `0`, which does not affect the cost).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Centroid](centroid.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.KMeans](../../../../../sources/v2/CSLibExt.md)

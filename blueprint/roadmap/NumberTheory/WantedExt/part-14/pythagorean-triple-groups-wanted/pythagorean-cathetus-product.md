@@ -19,7 +19,7 @@ closing clause "with `d₃ = d₁ · d₂`", the triple for `ab` is the one gene
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amato Cathetus Params](amato-cathetus-params.md)
 
 ## Sources
 

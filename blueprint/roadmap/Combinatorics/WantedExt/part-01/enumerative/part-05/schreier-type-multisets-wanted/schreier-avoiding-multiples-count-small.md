@@ -12,7 +12,7 @@ lean: MetaMathlibExt.schreierAvoidingMultiplesCount_small
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Avoiding Multiples Count](schreier-avoiding-multiples-count.md)
 
 ## Sources
 

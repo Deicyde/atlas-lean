@@ -16,7 +16,18 @@ mean `K* (K + σ² I)⁻¹ y` and covariance `K** - K* (K + σ² I)⁻¹ K*ᵀ` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint Cov](joint-cov.md)
+- [Kernel Matrix](kernel-matrix.md)
+- [Target Part](target-part.md)
+- [Test Part](test-part.md)
+
+## Proof depends on
+
+- [Is Unit det kernel Matrix add](is-unit-det-kernel-matrix-add.md)
+- [Joint Cov pos Semidef](joint-cov-pos-semidef.md)
+- [Kernel Matrix pos Semidef train](kernel-matrix-pos-semidef-train.md)
+- [Block Row](../../../../Probability/MathlibExt/part-01/distributions/gaussian-conditioning/block-row.md)
+- [Gaussian conditioning (Schur complement)](../../../../Probability/MathlibExt/part-01/distributions/gaussian-conditioning/cond-distrib-multivariate-gaussian.md)
 
 ## Sources
 

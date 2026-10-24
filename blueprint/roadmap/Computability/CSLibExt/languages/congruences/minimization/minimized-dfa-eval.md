@@ -13,7 +13,15 @@ after the same word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimized DFA](minimized-dfa.md)
+- [Minimized State](minimized-state.md)
+- [Reachable Residuals](../minimality/reachable-residuals.md)
+
+## Proof depends on
+
+- [Left Quotient Equiv Reachable Residuals](left-quotient-equiv-reachable-residuals.md)
+- [Minimized DFA eval equiv](minimized-dfa-eval-equiv.md)
+- [To DFA eval val](to-dfa-eval-val.md)
 
 ## Sources
 

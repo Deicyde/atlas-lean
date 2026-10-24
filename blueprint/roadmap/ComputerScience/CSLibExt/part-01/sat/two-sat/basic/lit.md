@@ -11,7 +11,11 @@ Literals over the variables of `φ`: the vertices of the implication graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Sources
 

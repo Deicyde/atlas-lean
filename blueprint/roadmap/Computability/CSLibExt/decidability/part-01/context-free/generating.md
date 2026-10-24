@@ -11,7 +11,11 @@ The nonterminals that derive a terminal word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Gen Step](gen-step.md)
 
 ## Sources
 

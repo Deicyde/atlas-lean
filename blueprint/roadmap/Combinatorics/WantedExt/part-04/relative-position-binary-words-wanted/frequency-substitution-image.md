@@ -19,7 +19,9 @@ and `w ∈ 𝒲` with `Freq_a(w) = 1` (for example `b` exactly at the perfect sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Is Substitution Image](is-substitution-image.md)
+- [Letter Count](letter-count.md)
 
 ## Sources
 

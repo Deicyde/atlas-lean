@@ -14,7 +14,8 @@ reached from `V` along `w` is a P-position iff the vertex reached from `1/1` alo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Calkin Wilf Row](calkin-wilf-row.md)
+- [Euclid PPosition](euclid-pposition.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ numbers of `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairs](../../part-01/clique/pairs.md)
+- [To Graph](../../part-01/clique/to-graph.md)
+
+## Proof depends on
+
+- [Adj Bits](../../part-01/clique/adj-bits.md)
+- [Adj Bits eq get Elem](../../part-01/clique-correct/adj-bits-eq-get-elem.md)
+- [Mem pairs](../../part-01/clique-correct/mem-pairs.md)
+- [Pairs nodup](../../part-01/clique-correct/pairs-nodup.md)
 
 ## Sources
 

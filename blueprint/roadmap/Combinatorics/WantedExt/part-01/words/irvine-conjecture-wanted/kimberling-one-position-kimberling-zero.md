@@ -12,7 +12,8 @@ and Rust).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling One Position](kimberling-one-position.md)
+- [Kimberling Zero Position](kimberling-zero-position.md)
 
 ## Sources
 

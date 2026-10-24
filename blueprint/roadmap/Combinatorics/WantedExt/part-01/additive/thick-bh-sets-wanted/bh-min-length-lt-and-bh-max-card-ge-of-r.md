@@ -13,7 +13,8 @@ lean: MetaMathlibExt.bhMinLength_lt_and_bhMaxCard_ge_of_RH
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bh Max Card](bh-max-card.md)
+- [Bh Min Length](bh-min-length.md)
 
 ## Sources
 

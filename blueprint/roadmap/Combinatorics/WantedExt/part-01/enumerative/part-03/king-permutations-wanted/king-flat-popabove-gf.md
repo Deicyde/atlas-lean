@@ -15,6 +15,15 @@ x^n p^{asc σ} q^{des σ} s^{lmin σ} t^{rmin σ}` for `Q = Q_{j+1}` (king permu
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Contains Flat POPAbove](contains-flat-popabove.md)
+- [Is King Perm](is-king-perm.md)
+- [Perm Ascent Count](perm-ascent-count.md)
+- [Perm Descent Count](perm-descent-count.md)
+- [Perm Left To Right Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-min-count.md)
+- [Perm Right To Left Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-min-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KingPermutationsWanted](../../../../../../../sources/v2/WantedExt.md)

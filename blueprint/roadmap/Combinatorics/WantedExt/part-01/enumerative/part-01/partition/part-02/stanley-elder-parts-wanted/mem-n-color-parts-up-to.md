@@ -12,7 +12,7 @@ Membership in `nColorPartsUpTo m`: `(k, j)` is listed exactly when `1 ≤ j ≤ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Parts Up To](n-color-parts-up-to.md)
 
 ## Sources
 

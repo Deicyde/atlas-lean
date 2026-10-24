@@ -11,7 +11,11 @@ Replace a terminal `a` by the start symbol of the grammar for `s a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Code](code.md)
 
 ## Sources
 

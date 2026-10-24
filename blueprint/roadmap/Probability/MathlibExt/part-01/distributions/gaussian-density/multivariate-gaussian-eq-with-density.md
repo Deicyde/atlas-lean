@@ -14,7 +14,16 @@ Lebesgue measure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multivariate Gaussian PDFReal](multivariate-gaussian-pdfreal.md)
+
+## Proof depends on
+
+- [Affine Equiv](affine-equiv.md)
+- [Map affine Equiv volume](map-affine-equiv-volume.md)
+- [Map with Density measurable Equiv](map-with-density-measurable-equiv.md)
+- [Norm sq sqrt inv apply](norm-sq-sqrt-inv-apply.md)
+- [Std Gaussian PDFReal](std-gaussian-pdfreal.md)
+- [The standard Gaussian has density](std-gaussian-eq-with-density.md)
 
 ## Sources
 

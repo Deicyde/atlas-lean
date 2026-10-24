@@ -13,7 +13,7 @@ binom((n - kp)s, k - 1)` for `1 ≤ n ≤ sp + 1`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Schreier Multiset Count](colored-schreier-multiset-count.md)
 
 ## Sources
 

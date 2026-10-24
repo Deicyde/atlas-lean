@@ -12,7 +12,7 @@ Grundman–Harris, part (2): there is an infinite arithmetic progression with di
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Neg Base Happy](is-neg-base-happy.md)
 
 ## Sources
 

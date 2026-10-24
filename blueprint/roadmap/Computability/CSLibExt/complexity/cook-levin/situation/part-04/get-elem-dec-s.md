@@ -12,7 +12,7 @@ On prefix-form input (no symbol below a ⊥), cell `i` of the decoded stack is `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dec S](../part-03/dec-s.md)
 
 ## Sources
 

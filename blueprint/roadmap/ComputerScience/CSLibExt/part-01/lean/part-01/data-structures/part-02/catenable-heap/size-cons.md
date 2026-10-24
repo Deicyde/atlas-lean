@@ -12,7 +12,13 @@ A front node has one more element than its tail.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Size](size.md)
+
+## Proof depends on
+
+- [To List](to-list.md)
+- [To List cons](to-list-cons.md)
 
 ## Sources
 

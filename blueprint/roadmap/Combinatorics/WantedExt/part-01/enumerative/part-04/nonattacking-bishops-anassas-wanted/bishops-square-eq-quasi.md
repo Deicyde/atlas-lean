@@ -12,7 +12,8 @@ Equation (15): `B_S(m, k) = ∑_{d=0}^{2k} c_d m^d` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bishop Color Quasi Coeff](bishop-color-quasi-coeff.md)
+- [Bishops Square](bishops-square.md)
 
 ## Sources
 

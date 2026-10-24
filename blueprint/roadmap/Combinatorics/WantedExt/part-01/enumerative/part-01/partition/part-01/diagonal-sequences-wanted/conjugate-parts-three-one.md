@@ -12,7 +12,7 @@ The conjugate of `(3, 1)` is `(2, 1, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjugate Parts](conjugate-parts.md)
 
 ## Sources
 

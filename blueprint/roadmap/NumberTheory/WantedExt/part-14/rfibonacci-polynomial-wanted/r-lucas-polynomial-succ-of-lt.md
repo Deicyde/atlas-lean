@@ -12,7 +12,7 @@ lean: MetaMathlibExt.rLucasPolynomial_succ_of_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Lucas Polynomial](r-lucas-polynomial.md)
 
 ## Sources
 

@@ -11,7 +11,13 @@ The natural join of the projections of `r` onto the schemes of `l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](../relational-algebra/tuple.md)
+
+## Proof depends on
+
+- [Join](../relational-algebra/join.md)
+- [Join Unit](join-unit.md)
+- [Project](../relational-algebra/project.md)
 
 ## Sources
 

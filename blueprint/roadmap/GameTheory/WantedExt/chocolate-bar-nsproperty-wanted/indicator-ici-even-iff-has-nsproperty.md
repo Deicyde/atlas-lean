@@ -12,7 +12,7 @@ of `[m, ∞)` for an even `m` if and only if it has the NS property.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

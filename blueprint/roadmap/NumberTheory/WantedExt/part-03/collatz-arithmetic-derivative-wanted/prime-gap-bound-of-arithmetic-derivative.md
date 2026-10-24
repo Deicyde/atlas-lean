@@ -12,7 +12,8 @@ If `pq` with primes `q < p` solves `D(C(n)) = C(D(n))`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
+- [Collatz Accelerated](collatz-accelerated.md)
 
 ## Sources
 

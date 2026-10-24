@@ -13,7 +13,7 @@ message.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode](encode.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The constant coefficient of a max-min product: `(g ⊗ h)₀ = min(g₀, h₀)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Min Mul](max-min-mul.md)
 
 ## Sources
 

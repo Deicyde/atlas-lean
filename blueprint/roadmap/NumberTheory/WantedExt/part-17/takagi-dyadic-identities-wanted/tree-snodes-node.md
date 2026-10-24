@@ -12,7 +12,7 @@ Unfolding of `treeSNodes` at an interior node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree SNodes](tree-snodes.md)
 
 ## Sources
 

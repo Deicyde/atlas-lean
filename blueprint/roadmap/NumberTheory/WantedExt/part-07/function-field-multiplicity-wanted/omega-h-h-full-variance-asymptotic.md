@@ -15,7 +15,11 @@ restored as in Equations (8) and (9), from which the paper derives the variance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Function Field Mertens Constant](function-field-mertens-constant.md)
+- [H Full KSq Sum](h-full-ksq-sum.md)
+- [H Full KSum](h-full-ksum.md)
+- [H Full Moment](h-full-moment.md)
+- [H Full Weighted Mean](h-full-weighted-mean.md)
 
 ## Sources
 

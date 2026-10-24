@@ -13,7 +13,11 @@ lean: Cslib.Crypto.Birthday.one_sub_exp_le_collisionProb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collision Prob](collision-prob.md)
+
+## Proof depends on
+
+- [The exact collision probability](collision-prob-eq.md)
 
 ## Sources
 

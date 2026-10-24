@@ -12,7 +12,7 @@ hypothesis `0 ≤ r < m` forces `m ≥ 1`; for `m = 0` the right side diverges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

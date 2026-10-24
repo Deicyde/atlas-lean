@@ -13,7 +13,8 @@ Theorem 6: `L^{(r)}_0 = 2`, `L^{(r)}_1 = 2r + 1`, and for `r ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypersequence](hypersequence.md)
+- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

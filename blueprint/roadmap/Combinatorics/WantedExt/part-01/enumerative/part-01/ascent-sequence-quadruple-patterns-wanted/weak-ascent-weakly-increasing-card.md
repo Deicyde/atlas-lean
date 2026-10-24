@@ -13,7 +13,9 @@ Motzkin number `M_n`. Stated for all `n` (at `n = 0` both sides are `1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contains Pattern](contains-pattern.md)
+- [Is Weak Ascent Seq](is-weak-ascent-seq.md)
+- [Motzkin Number](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
 
 ## Sources
 

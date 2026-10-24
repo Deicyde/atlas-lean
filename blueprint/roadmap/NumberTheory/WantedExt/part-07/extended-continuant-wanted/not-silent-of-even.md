@@ -14,7 +14,7 @@ conditions are not needed).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

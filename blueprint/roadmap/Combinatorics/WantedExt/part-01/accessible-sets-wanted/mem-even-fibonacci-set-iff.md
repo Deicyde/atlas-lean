@@ -12,7 +12,7 @@ Characterization of membership in the even-Fibonacci set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Fibonacci Set](even-fibonacci-set.md)
 
 ## Sources
 

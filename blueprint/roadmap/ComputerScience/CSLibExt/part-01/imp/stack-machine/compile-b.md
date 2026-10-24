@@ -12,7 +12,13 @@ the stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [Instr](instr.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Compile A](compile-a.md)
 
 ## Sources
 

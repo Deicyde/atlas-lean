@@ -16,6 +16,10 @@ that of the partial sum with `m₁ ≤ N`; junk for `k₁ = 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sz Star QMZVPartial](sz-star-qmzvpartial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

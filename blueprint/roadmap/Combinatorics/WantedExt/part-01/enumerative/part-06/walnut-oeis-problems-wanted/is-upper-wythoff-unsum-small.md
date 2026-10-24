@@ -12,7 +12,13 @@ The unsums up to `21` are `1, 2, 3, 4, 5, 6, 8, 10, 11, 13, 14, 16, 19, 21` (OEI
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Upper Wythoff Unsum](is-upper-wythoff-unsum.md)
+
+## Proof depends on
+
+- [Fib Inf](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Fib Inf agrees](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf-agrees.md)
+- [Fib Word](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
 
 ## Sources
 

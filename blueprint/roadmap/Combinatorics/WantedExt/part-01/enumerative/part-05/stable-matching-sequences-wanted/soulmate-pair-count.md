@@ -11,7 +11,11 @@ The number of soulmate pairs of a profile (the paper's `k` in `F(k, n)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+
+## Proof depends on
+
+- [Is Soulmate Pair](is-soulmate-pair.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Proposition 3: (i) `p_{ℓ,0} = y^ℓ`; (ii) `p_{ℓ,1} = y^ℓ - (x + y)^ℓ`; 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

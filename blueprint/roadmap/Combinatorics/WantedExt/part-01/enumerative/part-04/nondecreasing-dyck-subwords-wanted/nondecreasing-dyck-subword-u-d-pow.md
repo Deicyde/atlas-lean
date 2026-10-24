@@ -18,7 +18,8 @@ initial value, and the added `n ≥ 3` excludes only `(m, n) = (1, 2)`, where
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondecreasing Dyck Last Peak Count](nondecreasing-dyck-last-peak-count.md)
+- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
 
 ## Sources
 

@@ -16,7 +16,9 @@ Irwin Series*, INTEGERS 26 (2026), Article A11, Corollary 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complementary Moment](complementary-moment.md)
+- [Digit Count](digit-count.md)
+- [Leading Reciprocal Term](leading-reciprocal-term.md)
 
 ## Sources
 

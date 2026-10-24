@@ -13,7 +13,7 @@ Small values: `A_10(100, 1, 0) = 18` (the palindromes `1, …, 9, 11, …, 99`) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Palindrome APCount](palindrome-apcount.md)
 
 ## Sources
 

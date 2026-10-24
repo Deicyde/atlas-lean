@@ -11,7 +11,8 @@ Tokenizer stacks in the host.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](hk.md)
+- [K](../sat-tokenizer/k.md)
 
 ## Sources
 

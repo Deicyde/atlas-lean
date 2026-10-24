@@ -11,7 +11,12 @@ A network on `n` wires has depth at most `d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](../zero-one/network.md)
+
+## Proof depends on
+
+- [Depth LE](depth-le.md)
+- [To Pairs](to-pairs.md)
 
 ## Sources
 

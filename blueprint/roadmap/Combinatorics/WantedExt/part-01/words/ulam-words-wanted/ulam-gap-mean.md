@@ -14,6 +14,10 @@ The mean gap `μ_g(n) = (∑ᵢ (u_{i+1} - u_i)) / (k - 1)` of the sorted list
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ulam Values Sorted](ulam-values-sorted.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.UlamWordsWanted](../../../../../../sources/v2/WantedExt.md)

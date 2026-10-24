@@ -13,7 +13,9 @@ lean: Cslib.Algorithms.Lean.Parallel.ListRanking.jump_eq_none_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Terminates](terminates.md)
+- [Jump](jump.md)
+- [Rank](rank.md)
 
 ## Sources
 

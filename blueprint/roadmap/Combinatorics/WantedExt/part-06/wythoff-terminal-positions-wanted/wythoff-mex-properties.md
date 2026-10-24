@@ -13,7 +13,8 @@ Lemma 18: for `ℓ ≥ 1`, (1) `(a_n)` and `(b_n)` are strictly increasing; (2) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Mex A](wythoff-mex-a.md)
+- [Wythoff Mex B](wythoff-mex-b.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Population law defined by `withDensity`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Density Family](normalized-density-family.md)
 
 ## Sources
 

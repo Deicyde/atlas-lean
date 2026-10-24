@@ -12,7 +12,9 @@ The tabulated levels are the levels, for comparators on wires below the table's 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Within](../bitonic/within.md)
+- [Levels](levels.md)
+- [Levels Tab](levels-tab.md)
 
 ## Sources
 

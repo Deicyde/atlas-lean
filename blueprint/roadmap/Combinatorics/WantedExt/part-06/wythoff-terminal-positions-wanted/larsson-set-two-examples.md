@@ -12,7 +12,7 @@ lean: MetaMathlibExt.larssonSetTwo_examples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Larsson Set Two](larsson-set-two.md)
 
 ## Sources
 

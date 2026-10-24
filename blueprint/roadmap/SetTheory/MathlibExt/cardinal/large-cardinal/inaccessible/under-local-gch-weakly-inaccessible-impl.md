@@ -18,7 +18,7 @@ the `ℵ₀ ≤ μ` restriction is load-bearing for the same reason as there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A cardinal κ is *weakly inaccessible* if it is an...](a-cardinal-is-weakly-inaccessible-if-it.md)
 
 ## Sources
 

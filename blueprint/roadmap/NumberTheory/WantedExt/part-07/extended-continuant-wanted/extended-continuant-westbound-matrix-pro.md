@@ -13,7 +13,7 @@ Proposition 1: for `n ≥ 1`, the westbound matrix product
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

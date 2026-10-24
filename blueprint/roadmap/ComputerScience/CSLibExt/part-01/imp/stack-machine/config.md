@@ -13,6 +13,10 @@ Machine configuration: program counter, stack (head is top), state.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [State](../syntax/state.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Languages.IMP.StackMachine](../../../../../../sources/v2/CSLibExt.md)

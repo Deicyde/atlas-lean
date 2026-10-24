@@ -13,7 +13,7 @@ factor over `ℝ` with real roots `r_0 ≤ ⋯ ≤ r_{n-1}` and `s_0 ≤ ⋯ ≤
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minuscule Polynomial A](minuscule-polynomial-a.md)
 
 ## Sources
 

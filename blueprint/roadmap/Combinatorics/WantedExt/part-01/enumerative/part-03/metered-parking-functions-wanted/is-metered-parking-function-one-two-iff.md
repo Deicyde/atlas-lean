@@ -12,7 +12,8 @@ lace of `lace(f)` containing a `2` (zero-based `1`) is a singleton.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Lace Decomposition](lace-decomposition.md)
 
 ## Sources
 

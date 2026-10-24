@@ -14,7 +14,13 @@ proves. Search `S` for a bound above `2|p| + 1` and apply optimality (Berry's pa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+
+## Proof depends on
+
+- [Optimality](../basic/exists-k-le-of-partrec.md)
+- [And](../../../MathlibExt/re/and-2.md)
+- [Selection for r.e. relations](../../../MathlibExt/re/exists-partrec-choose.md)
 
 ## Sources
 

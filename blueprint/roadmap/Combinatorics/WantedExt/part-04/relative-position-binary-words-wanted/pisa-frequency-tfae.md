@@ -17,7 +17,10 @@ read `0/0` and the printed equivalence is meaningless.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Substitution Image](is-substitution-image.md)
+- [Letter Count](letter-count.md)
+- [Letter Position](letter-position.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

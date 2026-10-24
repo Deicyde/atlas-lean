@@ -12,7 +12,7 @@ A space bound can be weakened.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space Bounded By](space-bounded-by.md)
 
 ## Sources
 

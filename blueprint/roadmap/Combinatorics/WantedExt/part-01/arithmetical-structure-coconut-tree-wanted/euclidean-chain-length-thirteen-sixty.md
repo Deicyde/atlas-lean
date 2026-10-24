@@ -12,7 +12,12 @@ Example 4.13: `F(13, 60) = 8`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclidean Chain Length](euclidean-chain-length.md)
+
+## Proof depends on
+
+- [Euclidean Chain Length of ne zero](euclidean-chain-length-of-ne-zero.md)
+- [Euclidean Chain Length zero](euclidean-chain-length-zero.md)
 
 ## Sources
 

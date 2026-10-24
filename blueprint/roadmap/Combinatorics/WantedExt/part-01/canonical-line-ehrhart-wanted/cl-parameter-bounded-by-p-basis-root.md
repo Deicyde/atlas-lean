@@ -14,7 +14,9 @@ equivalent reading of `c ≤ mᵈ₀`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CLWith Parameters](is-clwith-parameters.md)
+- [Is SNN](is-snn.md)
+- [P Basis](p-basis.md)
 
 ## Sources
 

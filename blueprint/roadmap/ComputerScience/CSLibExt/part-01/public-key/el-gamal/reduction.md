@@ -13,7 +13,11 @@ guessed `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adversary](adversary.md)
+
+## Proof depends on
+
+- [Pick](pick.md)
 
 ## Sources
 

@@ -15,7 +15,11 @@ Degrees are written with `order` (`|y| = |x|^{-y.order}`, `|Q| = |x|^{deg Q}`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Is Irrational](laurent-is-irrational.md)
+- [Laurent Conv Den](laurent-conv-den.md)
+- [Laurent Conv Num](laurent-conv-num.md)
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
+- [Poly To Laurent Inv](poly-to-laurent-inv.md)
 
 ## Sources
 

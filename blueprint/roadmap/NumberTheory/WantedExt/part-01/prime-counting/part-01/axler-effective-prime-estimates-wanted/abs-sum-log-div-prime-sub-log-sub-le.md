@@ -14,7 +14,7 @@ Explicit Mertens first theorem: for every real `x ≥ 1757126630797`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mertens Constant](../dusart-mertens-log-sum-wanted/mertens-constant.md)
 
 ## Sources
 

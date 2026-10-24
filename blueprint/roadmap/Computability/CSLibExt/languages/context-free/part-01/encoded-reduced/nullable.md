@@ -12,7 +12,12 @@ terminals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Generating](../../../../decidability/part-01/context-free/generating.md)
+- [No Terminals](no-terminals.md)
 
 ## Sources
 

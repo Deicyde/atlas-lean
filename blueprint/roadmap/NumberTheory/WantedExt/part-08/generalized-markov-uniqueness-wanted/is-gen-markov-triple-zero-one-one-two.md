@@ -12,7 +12,7 @@ Characteristic value: `(1, 1, 2)` is a classical (`k = 0`) Markov triple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
 
 ## Sources
 

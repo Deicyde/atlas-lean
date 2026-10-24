@@ -13,7 +13,7 @@ For `k ≥ 0`, `e(k)` equals the number of permutations of `{1, …, k}` avoidin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positional Colored Composition Count](positional-colored-composition-count.md)
 
 ## Sources
 

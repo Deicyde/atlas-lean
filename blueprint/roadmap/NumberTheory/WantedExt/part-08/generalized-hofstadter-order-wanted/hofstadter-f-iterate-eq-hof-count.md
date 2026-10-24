@@ -12,7 +12,8 @@ For `k ≥ 1`: `F_k^{k-1}(n) = C_k^{(=k)}(n)`; `F_k^j(n) = C_k^{(>j)}(n)` for `0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Count](hof-count.md)
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

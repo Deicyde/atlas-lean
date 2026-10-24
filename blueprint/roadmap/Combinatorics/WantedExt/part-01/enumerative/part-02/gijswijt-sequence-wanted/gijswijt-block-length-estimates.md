@@ -13,7 +13,8 @@ is strict when `u = m + 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block Length](gijswijt-block-length.md)
+- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
 
 ## Sources
 

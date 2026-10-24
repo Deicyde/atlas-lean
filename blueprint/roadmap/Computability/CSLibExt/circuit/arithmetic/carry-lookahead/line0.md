@@ -11,7 +11,12 @@ Level-0 gate `j`: the generate (even `j`) or propagate (odd `j`) signal of bit `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Signature](../ripple-carry/arith-signature.md)
+
+## Proof depends on
+
+- [Arith Gate](../ripple-carry/arith-gate.md)
+- [Bin Line](../ripple-carry/bin-line.md)
 
 ## Sources
 

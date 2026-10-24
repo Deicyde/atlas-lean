@@ -12,7 +12,7 @@ In a nonempty semigroup the whole semigroup is piecewise syndetic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mul Piecewise Syndetic](is-mul-piecewise-syndetic.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ with `k = 6`, a shuffle of `(3, 2, 1, 2) ∈ PF_{4,5}` and `(7, 7) = (1, 1) + (6
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Shuffle](is-parking-shuffle.md)
 
 ## Sources
 

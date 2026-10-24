@@ -12,7 +12,7 @@ The transformed data `g̃`, with `g̃_i = (1 0; c₀ - d₀ -1) g_i`; thus
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
 
 ## Sources
 

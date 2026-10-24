@@ -12,7 +12,8 @@ every term defining `φ(k)` is at most `2/φ^{2k}`, i.e. `φ(k) ≤ 2/φ^{2k}` f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

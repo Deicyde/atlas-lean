@@ -12,7 +12,9 @@ Let `A` be a torsion-free `ℤ_(p)`-algebra, `𝔞` a divided-power ideal and `P
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divided Power Ideal](is-divided-power-ideal.md)
+- [Poly Elem Symm](poly-elem-symm.md)
+- [Poly Power Sum](poly-power-sum.md)
 
 ## Sources
 

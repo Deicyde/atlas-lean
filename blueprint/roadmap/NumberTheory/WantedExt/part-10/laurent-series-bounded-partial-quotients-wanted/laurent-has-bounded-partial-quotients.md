@@ -14,6 +14,10 @@ i.e. some `B` has `(b_n).coeff m = 0` (coefficient of `x⁻ᵐ`) for all `n` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LaurentSeriesBoundedPartialQuotientsWanted](../../../../../sources/v2/WantedExt.md)

@@ -15,7 +15,17 @@ generals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
+- [Solves](solves.md)
+- [Simulate](simulate.md)
+
+## Proof depends on
+
+- [Agreement](agreement.md)
+- [Validity](validity.md)
+- [Decision](decision.md)
+- [State](state.md)
+- [State simulate](state-simulate.md)
 
 ## Sources
 

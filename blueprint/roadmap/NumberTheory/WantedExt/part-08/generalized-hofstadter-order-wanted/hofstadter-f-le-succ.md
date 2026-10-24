@@ -11,7 +11,7 @@ lean: MetaMathlibExt.hofstadterF_le_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

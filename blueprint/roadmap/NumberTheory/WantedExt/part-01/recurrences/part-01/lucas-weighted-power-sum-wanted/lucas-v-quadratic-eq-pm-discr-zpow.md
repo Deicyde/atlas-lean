@@ -13,7 +13,8 @@ Lemma 2.7: for `y = -1` (`D = x² + 4`) and positive `p, q, k, x` with `p` odd, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

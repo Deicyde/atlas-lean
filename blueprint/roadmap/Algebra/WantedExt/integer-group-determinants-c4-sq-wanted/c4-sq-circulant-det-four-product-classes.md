@@ -12,7 +12,9 @@ lean: MetaMathlibExt.c4Sq_circulantDetFour_product_classes
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Sq B](c4-sq-b.md)
+- [C4 Sq C](c4-sq-c.md)
+- [Circulant Det Four](circulant-det-four.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ The `TM0` machine of a code.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+
+## Proof depends on
+
+- [Lookup](lookup.md)
+- [Decode Stmt](decode-stmt.md)
 
 ## Sources
 

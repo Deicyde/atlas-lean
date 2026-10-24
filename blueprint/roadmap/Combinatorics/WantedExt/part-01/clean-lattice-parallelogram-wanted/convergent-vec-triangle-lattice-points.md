@@ -13,7 +13,9 @@ lattice points, and every non-vertex lattice point of `T_i` lies on `[v_{i-2}, v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Vec](convergent-vec.md)
+- [Lattice Points](lattice-points.md)
+- [Partial Quotient](partial-quotient.md)
 
 ## Sources
 

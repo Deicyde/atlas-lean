@@ -15,7 +15,9 @@ Lemma 10: for `y ≥ 1` and `p ≥ 2`, the type I numbers `H_n^{(p,r,1)}` satisf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Zeta](alternating-zeta.md)
+- [Generalized Harmonic](../../part-08/generalized-harmonic-gamma-wanted/generalized-harmonic.md)
+- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
 
 ## Sources
 

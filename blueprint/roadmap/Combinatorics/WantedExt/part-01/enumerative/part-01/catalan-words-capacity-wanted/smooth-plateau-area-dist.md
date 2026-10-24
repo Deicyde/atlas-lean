@@ -14,6 +14,11 @@ that begin and end with `j` and satisfy `|w_{i+1} - w_i| ≤ 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Area Dist](area-dist.md)
+- [Words Ending In](words-ending-in.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CatalanWordsCapacityWanted](../../../../../../../sources/v2/WantedExt.md)

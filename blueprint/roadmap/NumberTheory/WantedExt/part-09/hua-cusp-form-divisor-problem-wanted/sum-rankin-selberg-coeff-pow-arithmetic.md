@@ -16,7 +16,8 @@ polynomial may depend on `q`; the implied constant depends only on `f`, `w`, `ε
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Normalized Hecke Eigenform](is-normalized-hecke-eigenform.md)
+- [Rankin Selberg Coeff](rankin-selberg-coeff.md)
 
 ## Sources
 

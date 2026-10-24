@@ -12,7 +12,12 @@ Edge list of `L`: the `(2, 4)`-permutiple string `(0,0)(2,3)(1,2)(3,1)` lies in 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hoey Sloane Word](is-hoey-sloane-word.md)
+
+## Proof depends on
+
+- [Is Mother Graph Edge](is-mother-graph-edge.md)
+- [Hoey Sloane Carry](hoey-sloane-carry.md)
 
 ## Sources
 

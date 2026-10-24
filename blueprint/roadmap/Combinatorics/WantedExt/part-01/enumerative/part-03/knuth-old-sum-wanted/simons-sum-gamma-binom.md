@@ -13,7 +13,7 @@ Equation (62), from Simons' identity: for real `v > -1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

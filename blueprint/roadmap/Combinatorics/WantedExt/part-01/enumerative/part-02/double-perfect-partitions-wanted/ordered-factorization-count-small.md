@@ -12,7 +12,7 @@ lean: MetaMathlibExt.orderedFactorizationCount_small
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Factorization Count](ordered-factorization-count.md)
 
 ## Sources
 

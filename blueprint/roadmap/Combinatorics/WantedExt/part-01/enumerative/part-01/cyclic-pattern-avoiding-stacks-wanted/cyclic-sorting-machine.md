@@ -13,6 +13,11 @@ The cyclic avoidance machine `SC_[σ] = s ∘ s_[σ]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cyclic Stack Sort](cyclic-stack-sort.md)
+- [West Stack Sort](west-stack-sort.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CyclicPatternAvoidingStacksWanted](../../../../../../../sources/v2/WantedExt.md)

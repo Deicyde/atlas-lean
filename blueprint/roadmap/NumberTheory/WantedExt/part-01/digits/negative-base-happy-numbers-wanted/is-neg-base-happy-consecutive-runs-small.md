@@ -12,7 +12,7 @@ of consecutive `b`-happy numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Neg Base Happy](is-neg-base-happy.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The action of a list of simple maps, the head acting first: the paper's list
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Keyword Simple Map](keyword-simple-map.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.KeywordSubstitutionClassesWanted](../../../../../../sources/v2/WantedExt.md)

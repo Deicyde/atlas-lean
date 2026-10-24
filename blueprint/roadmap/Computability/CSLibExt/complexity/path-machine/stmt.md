@@ -13,6 +13,12 @@ Statements of the machine.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [K](k.md)
+- [Lab](lab.md)
+- [Γ](untitled.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.PathMachine](../../../../../sources/v2/CSLibExt.md)

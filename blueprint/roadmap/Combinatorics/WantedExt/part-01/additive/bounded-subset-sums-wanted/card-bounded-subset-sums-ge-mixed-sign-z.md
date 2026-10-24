@@ -13,7 +13,8 @@ attained.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subset Sums](bounded-subset-sums.md)
+- [Mixed Sign Zero Subset Sum Bound](mixed-sign-zero-subset-sum-bound.md)
 
 ## Sources
 

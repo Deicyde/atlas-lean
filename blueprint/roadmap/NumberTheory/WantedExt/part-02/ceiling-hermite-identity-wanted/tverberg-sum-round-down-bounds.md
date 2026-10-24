@@ -13,7 +13,7 @@ odd and even cases in one formula). The bound is stated for every natural `m` (t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tverberg Sum](tverberg-sum.md)
 
 ## Sources
 

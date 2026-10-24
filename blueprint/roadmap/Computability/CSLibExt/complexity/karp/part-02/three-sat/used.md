@@ -11,7 +11,7 @@ Fresh numbers used by one clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

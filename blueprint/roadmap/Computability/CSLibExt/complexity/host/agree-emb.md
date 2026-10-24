@@ -12,7 +12,15 @@ A host agrees with the component when its `comp k` stacks are the component's st
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HK](hk.md)
+- [HΓ](h.md)
+- [Emb](emb.md)
+- [Agree](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
+
+## Proof depends on
+
+- [SEmb](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Sources
 

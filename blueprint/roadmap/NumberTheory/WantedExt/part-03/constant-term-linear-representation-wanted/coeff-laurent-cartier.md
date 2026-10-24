@@ -12,7 +12,7 @@ The coefficient of `x^j` in `Λ_k f` is the coefficient of `x^{k j}` in `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Cartier](laurent-cartier.md)
 
 ## Sources
 

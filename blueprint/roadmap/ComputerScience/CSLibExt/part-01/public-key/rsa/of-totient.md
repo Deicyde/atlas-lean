@@ -11,7 +11,7 @@ A key from the textbook condition `e d ≡ 1 [MOD φ(p q)]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key](key.md)
 
 ## Sources
 

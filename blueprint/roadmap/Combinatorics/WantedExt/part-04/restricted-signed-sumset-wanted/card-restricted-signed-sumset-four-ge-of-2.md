@@ -13,7 +13,8 @@ The conclusion is the paper's `26` lower bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Finset](ordered-finset.md)
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources
 

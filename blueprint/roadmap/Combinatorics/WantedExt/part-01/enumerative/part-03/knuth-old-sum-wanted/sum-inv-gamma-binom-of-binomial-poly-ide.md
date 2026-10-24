@@ -13,7 +13,7 @@ Equation (29): from the polynomial identity (28), for `ℜu, ℜv > -1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

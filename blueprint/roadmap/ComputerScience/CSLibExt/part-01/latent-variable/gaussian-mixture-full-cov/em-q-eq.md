@@ -12,7 +12,19 @@ lean: Cslib.MachineLearning.LatentVariable.GaussianMixtureFullCov.emQ_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Em Q](../expectation-maximization/em-q.md)
+- [Params](params.md)
+- [Valid](valid.md)
+- [Valid Params](valid-params.md)
+- [Comp Term](comp-term.md)
+- [Joint](joint.md)
+- [Mass](mass.md)
+
+## Proof depends on
+
+- [Posterior](../expectation-maximization/posterior.md)
+- [Resp](resp.md)
+- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

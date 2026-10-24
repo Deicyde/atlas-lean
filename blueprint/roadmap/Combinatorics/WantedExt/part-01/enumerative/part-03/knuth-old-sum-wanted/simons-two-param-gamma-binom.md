@@ -14,7 +14,7 @@ binom((2k+u+v)/2, v/2)^{-1}` equals the same sum with `u` and `v` exchanged and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

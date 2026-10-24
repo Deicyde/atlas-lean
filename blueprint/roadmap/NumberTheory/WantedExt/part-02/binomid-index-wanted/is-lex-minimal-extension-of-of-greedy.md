@@ -18,7 +18,7 @@ equality for some `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
 
 ## Sources
 

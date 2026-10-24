@@ -12,7 +12,14 @@ The empty formula is satisfiable, so the probability at `m = 0` is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sat Prob](sat-prob.md)
+
+## Proof depends on
+
+- [Clause](clause.md)
+- [Formula](formula.md)
+- [Satisfiable](satisfiable.md)
+- [Clause Sat](clause-sat.md)
 
 ## Sources
 

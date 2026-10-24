@@ -13,7 +13,8 @@ For `m ≥ 1` and `t ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block Length](gijswijt-block-length.md)
+- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The complete graph on `Fin n` as an ordered adjacency.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
 
 ## Sources
 

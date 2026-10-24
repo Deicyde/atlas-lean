@@ -12,7 +12,7 @@ Every coefficient denominator divides `polynomialDenominator P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polynomial Denominator](polynomial-denominator.md)
 
 ## Sources
 

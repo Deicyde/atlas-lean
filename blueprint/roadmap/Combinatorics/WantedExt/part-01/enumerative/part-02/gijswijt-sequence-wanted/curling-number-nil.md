@@ -12,7 +12,7 @@ lean: MetaMathlibExt.curlingNumber_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curling Number](curling-number.md)
 
 ## Sources
 

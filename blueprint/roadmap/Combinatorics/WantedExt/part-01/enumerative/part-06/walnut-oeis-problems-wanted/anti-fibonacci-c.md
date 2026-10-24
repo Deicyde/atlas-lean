@@ -13,6 +13,10 @@ The anti-Fibonacci numbers `X_n = C_n` (for `n ≥ 1`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anti Fibonacci State](anti-fibonacci-state.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

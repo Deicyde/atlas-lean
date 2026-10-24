@@ -12,7 +12,7 @@ Characteristic value: `f(6174) = 7641 - 1467 = 6174` in `D_4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Map](kaprekar-map.md)
 
 ## Sources
 

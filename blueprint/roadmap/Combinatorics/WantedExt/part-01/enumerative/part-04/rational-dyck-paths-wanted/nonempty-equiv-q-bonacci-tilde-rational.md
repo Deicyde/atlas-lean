@@ -12,7 +12,8 @@ If `s = t r + 1` with `t ∈ ℕ` (and `r ≥ 1`), then `Q_n^{r/s}` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Bonacci Dyck Paths](q-bonacci-dyck-paths.md)
+- [Tilde Rational Dyck Paths](tilde-rational-dyck-paths.md)
 
 ## Sources
 

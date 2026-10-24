@@ -12,7 +12,12 @@ started at `(1, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+
+## Proof depends on
+
+- [Euclid Moves](euclid-moves.md)
+- [Euclid Moves rank lt](euclid-moves-rank-lt.md)
 
 ## Sources
 

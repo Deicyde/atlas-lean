@@ -13,7 +13,16 @@ suffices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [The clocked evaluator](eval-steps.md)
+- [Machine](machine.md)
+- [Input](input.md)
+
+## Proof depends on
+
+- [Clocked halting](is-some-eval-steps-iff.md)
+- [Halts Within](halts-within.md)
+- [Dom eval iff exists halts Within](dom-eval-iff-exists-halts-within.md)
 
 ## Sources
 

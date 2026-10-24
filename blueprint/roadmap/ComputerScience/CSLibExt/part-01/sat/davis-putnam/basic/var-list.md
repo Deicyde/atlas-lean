@@ -12,7 +12,7 @@ of literal occurrences, which the eliminations dominate).
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

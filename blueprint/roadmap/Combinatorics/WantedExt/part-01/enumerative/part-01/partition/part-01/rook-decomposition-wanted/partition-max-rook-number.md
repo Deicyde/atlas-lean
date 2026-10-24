@@ -14,6 +14,11 @@ non-attacking rooks on its Ferrers board.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Board Max Rook Number](board-max-rook-number.md)
+- [Partition Ferrers Board](partition-ferrers-board.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.RookDecompositionWanted](../../../../../../../../../sources/v2/WantedExt.md)

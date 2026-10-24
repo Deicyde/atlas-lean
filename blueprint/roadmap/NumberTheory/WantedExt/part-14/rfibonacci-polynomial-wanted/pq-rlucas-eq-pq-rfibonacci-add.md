@@ -13,7 +13,8 @@ positive `s`; the identity holds for every `s ∈ ℕ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pq RFibonacci](pq-rfibonacci.md)
+- [Pq RLucas](pq-rlucas.md)
 
 ## Sources
 

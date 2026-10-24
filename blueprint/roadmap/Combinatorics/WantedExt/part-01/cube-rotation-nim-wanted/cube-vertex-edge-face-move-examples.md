@@ -13,7 +13,9 @@ to `(0, 1, 1, 0, 0, 0)`, and the empty cube has no move in any of the three game
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Edge Move](cube-edge-move.md)
+- [Cube Face Move](cube-face-move.md)
+- [Cube Vertex Move](cube-vertex-move.md)
 
 ## Sources
 

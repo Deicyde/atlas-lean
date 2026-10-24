@@ -14,7 +14,7 @@ lean: MetaMathlibExt.binomialProduct_lucasV_generatingFunction
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
 
 ## Sources
 

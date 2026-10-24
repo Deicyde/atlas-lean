@@ -12,7 +12,9 @@ For `r ≥ 1` and `f : ℤ → ℂ` with `f ∘ Δ^{(r)} ∈ L¹(ℙ)`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

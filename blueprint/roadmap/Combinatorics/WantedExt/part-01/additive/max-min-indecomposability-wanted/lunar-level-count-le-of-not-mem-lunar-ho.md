@@ -13,7 +13,10 @@ Lemma 25: if `h = f ⊗ g` is not `d`-Hoeffding extremal and `1 ≤ i ≤ b - 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Seq](digit-seq.md)
+- [Lunar Hoeffding Extremal Set](lunar-hoeffding-extremal-set.md)
+- [Lunar Level Count](lunar-level-count.md)
+- [Max Min Mul](max-min-mul.md)
 
 ## Sources
 

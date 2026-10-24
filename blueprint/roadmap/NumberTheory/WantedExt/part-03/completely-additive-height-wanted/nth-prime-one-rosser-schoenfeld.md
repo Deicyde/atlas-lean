@@ -12,7 +12,7 @@ Lemma 1 (Rosser-Schoenfeld): there is an absolute `k₀` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Prime One](nth-prime-one.md)
 
 ## Sources
 

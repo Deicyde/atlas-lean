@@ -11,7 +11,7 @@ Append the nodes of `r` after `l`, in postorder: the root of `r` is the last nod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regex Node](regex-node.md)
 
 ## Sources
 

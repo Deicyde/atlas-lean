@@ -12,7 +12,7 @@ lean: MetaMathlibExt.laurentDeg_le_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Deg](laurent-deg.md)
 
 ## Sources
 

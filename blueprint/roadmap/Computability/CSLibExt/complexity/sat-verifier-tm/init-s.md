@@ -11,7 +11,9 @@ The initial host stacks on input `l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
+- [HK](hk.md)
+- [HΓ](h.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ First sixteen values of `𝒬`: `0101100101101001`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thue Morse Quarto](thue-morse-quarto.md)
 
 ## Sources
 

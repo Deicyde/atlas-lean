@@ -13,6 +13,11 @@ lean: MetaMathlibExt.hFullKSqSum
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [H Full K](h-full-k.md)
+- [Monic Irreducible](monic-irreducible.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

@@ -16,7 +16,8 @@ necessary condition.  The eighth disjunct includes `k,s≥1` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Satisfies Support IDPNecessary](satisfies-support-idpnecessary.md)
+- [Three Support Family](three-support-family.md)
 
 ## Sources
 

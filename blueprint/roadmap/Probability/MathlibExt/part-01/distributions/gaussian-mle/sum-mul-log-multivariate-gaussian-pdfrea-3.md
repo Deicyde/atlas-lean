@@ -15,7 +15,16 @@ positive definite covariances `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multivariate Gaussian PDFReal](../gaussian-density/multivariate-gaussian-pdfreal.md)
+- [Weighted Mean](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-mean.md)
+- [Weighted Scatter](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
+
+## Proof depends on
+
+- [Log Det Trace](../../../../../LinearAlgebra/MathlibExt/matrix/part-01/log-det-mul-le-trace.md)
+- [Sum mul log multivariate Gaussian PDFReal eq](sum-mul-log-multivariate-gaussian-pdfrea.md)
+- [Sum mul quad eq trace](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/sum-mul-quad-eq-trace.md)
+- [The bias-variance split of a weighted quadratic form](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/sum-mul-quad-sub-eq.md)
 
 ## Sources
 

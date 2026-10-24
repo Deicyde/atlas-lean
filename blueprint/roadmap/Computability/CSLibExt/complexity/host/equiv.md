@@ -11,7 +11,9 @@ lean: Cslib.Complexity.Host.HLab.equiv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HLab](hlab.md)
+- [P0](p0.md)
 
 ## Sources
 

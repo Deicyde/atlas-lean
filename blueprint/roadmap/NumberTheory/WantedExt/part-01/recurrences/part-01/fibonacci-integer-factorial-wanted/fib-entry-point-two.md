@@ -12,7 +12,7 @@ lean: MetaMathlibExt.fibEntryPoint_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Entry Point](fib-entry-point.md)
 
 ## Sources
 

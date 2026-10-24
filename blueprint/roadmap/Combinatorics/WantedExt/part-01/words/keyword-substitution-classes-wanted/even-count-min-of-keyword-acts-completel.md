@@ -14,7 +14,9 @@ simple-map indices with (i) every `j_q > i`, (ii) `φ_i ∘ l ≠ l ∘ φ_i` as
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Acts Completely](keyword-acts-completely.md)
+- [Keyword List Apply](keyword-list-apply.md)
+- [Keyword Simple Map](keyword-simple-map.md)
 
 ## Sources
 

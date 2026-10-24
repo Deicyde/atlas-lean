@@ -12,7 +12,12 @@ The posterior is a distribution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dist](is-dist.md)
+- [Posterior](posterior.md)
+
+## Proof depends on
+
+- [Marginal](marginal.md)
 
 ## Sources
 

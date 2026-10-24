@@ -11,7 +11,7 @@ lean: Cslib.Databases.Tuple.IsOver
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
 
 ## Sources
 

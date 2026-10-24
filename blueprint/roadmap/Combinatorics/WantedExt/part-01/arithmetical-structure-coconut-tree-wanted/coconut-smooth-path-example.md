@@ -14,7 +14,7 @@ Example 3.2: smoothing `d = (3, 1, 3, 2, 2 | 2, 2, 4)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coconut Smooth Path](coconut-smooth-path.md)
 
 ## Sources
 

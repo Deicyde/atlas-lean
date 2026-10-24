@@ -12,7 +12,7 @@ encoding of the nondecreasing rearrangement `β` of `α` has the form `A*T*`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
 
 ## Sources
 

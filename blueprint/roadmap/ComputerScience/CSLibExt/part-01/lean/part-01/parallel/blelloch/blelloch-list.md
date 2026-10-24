@@ -13,6 +13,11 @@ Blelloch's scan of a list of length `2 ^ k`, in `O(2 ^ k)` time.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expand](expand.md)
+- [Pair List](pair-list.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Parallel.Blelloch](../../../../../../../../sources/v2/CSLibExt.md)

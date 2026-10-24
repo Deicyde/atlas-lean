@@ -11,7 +11,14 @@ The tableau encoding of the verifier, with the accept symbol in its output alpha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../situation/part-01/enc.md)
+- [G](../../dense-satverifier/g.md)
+- [Pair Encode](../../dense-satverifier/pair-encode.md)
+
+## Proof depends on
+
+- [Enc X](enc-x.md)
+- [Vacc](vacc.md)
 
 ## Sources
 

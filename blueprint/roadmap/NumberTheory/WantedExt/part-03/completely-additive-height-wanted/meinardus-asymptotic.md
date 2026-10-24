@@ -15,7 +15,8 @@ Theorem 3 (Meinardus): for nonnegative weights `bₖ`, not all zero, satisfying 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meinardus Hypotheses](meinardus-hypotheses.md)
+- [Weighted Partition Coeff](weighted-partition-coeff.md)
 
 ## Sources
 

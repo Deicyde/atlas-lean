@@ -12,7 +12,7 @@ For a prime `p` and `l ≥ p - 1` positive with `l ≢ 1 (mod p)`: `S_p(k, l) = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

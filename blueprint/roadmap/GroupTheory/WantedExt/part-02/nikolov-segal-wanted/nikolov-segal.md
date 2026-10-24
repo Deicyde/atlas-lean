@@ -12,7 +12,8 @@ topologically finitely generated profinite group is open.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strongly Complete](../../../../Topology/MathlibExt/algebra/strong-completeness/is-strongly-complete.md)
+- [Is Topologically Finitely Generated](is-topologically-finitely-generated.md)
 
 ## Sources
 

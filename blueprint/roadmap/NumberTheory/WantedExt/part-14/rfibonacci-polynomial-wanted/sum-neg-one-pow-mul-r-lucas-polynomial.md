@@ -14,7 +14,7 @@ For `n < r - 1` the right side involves `V` at negative indices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Lucas Polynomial](r-lucas-polynomial.md)
 
 ## Sources
 

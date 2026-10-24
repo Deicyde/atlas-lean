@@ -13,7 +13,11 @@ When `N / α - α` is an integer, the left endpoint is mapped to the right endpo
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Expansion Map](n-expansion-map.md)
+
+## Proof depends on
+
+- [N Expansion Digit](n-expansion-digit.md)
 
 ## Sources
 

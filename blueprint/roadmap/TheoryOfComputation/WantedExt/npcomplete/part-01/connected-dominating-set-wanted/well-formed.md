@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Connected Dominating Set Instance](connected-dominating-set-instance.md)
 
 ## Sources
 

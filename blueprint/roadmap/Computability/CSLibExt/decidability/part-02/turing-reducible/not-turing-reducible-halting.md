@@ -12,7 +12,12 @@ lean: Cslib.Decidability.not_turingReducible_halting
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Fun](char-fun.md)
+- [Halting Set](halting-set.md)
+
+## Proof depends on
+
+- [Decidability transfers down Turing reducibility](of-turing-reducible.md)
 
 ## Sources
 

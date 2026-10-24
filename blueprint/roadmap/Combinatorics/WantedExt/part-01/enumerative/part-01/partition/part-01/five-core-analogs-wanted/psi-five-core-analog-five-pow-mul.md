@@ -12,7 +12,7 @@ Theorem 4, second identity: for `k ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Psi Five Core Analog](psi-five-core-analog.md)
 
 ## Sources
 

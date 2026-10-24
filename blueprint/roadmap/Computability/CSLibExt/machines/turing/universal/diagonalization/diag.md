@@ -13,7 +13,14 @@ Bit lists that encode no code are not in the language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Code](../code/code.md)
+- [The clocked evaluator](../code/eval-steps.md)
+- [Bit Sym](../code/bit-sym.md)
+- [Decode Code Cells](decode-code-cells.md)
 
 ## Sources
 

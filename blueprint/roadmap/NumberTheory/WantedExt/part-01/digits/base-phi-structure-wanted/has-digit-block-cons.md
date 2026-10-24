@@ -12,7 +12,7 @@ Peeling off the leading letter of a digit block.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Digit Block](has-digit-block.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ the arm of `T_{r,d}` first, which gives `C₁,₂ = 29/36` against Table 1's `13
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Edge](circuit-edge.md)
+
+## Proof depends on
+
+- [Circuit Left Arm](circuit-left-arm.md)
+- [Circuit Right Arm](circuit-right-arm.md)
+- [Circuit Top Arm](circuit-top-arm.md)
+- [Circuit Y](circuit-y.md)
 
 ## Sources
 

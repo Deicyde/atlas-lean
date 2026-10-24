@@ -13,7 +13,15 @@ P-positions `SpragueGrundy.IsP euclidGame`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
+- [Euclid Game](euclid-game.md)
+- [Euclid PPosition Aux](euclid-pposition-aux.md)
+
+## Proof depends on
+
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Is P iff](../../MathlibExt/sprague-grundy/is-p-iff.md)
+- [Euclid Moves](euclid-moves.md)
 
 ## Sources
 

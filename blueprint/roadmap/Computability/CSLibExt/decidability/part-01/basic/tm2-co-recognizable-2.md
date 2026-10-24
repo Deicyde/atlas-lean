@@ -12,7 +12,13 @@ A decidable predicate is co-recognizable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Co Recognizable](tm2-co-recognizable.md)
+- [TM2 Decidable](tm2-decidable.md)
+
+## Proof depends on
+
+- [Not](not.md)
+- [Tm2 Recognizable](tm2-recognizable-2.md)
 
 ## Sources
 

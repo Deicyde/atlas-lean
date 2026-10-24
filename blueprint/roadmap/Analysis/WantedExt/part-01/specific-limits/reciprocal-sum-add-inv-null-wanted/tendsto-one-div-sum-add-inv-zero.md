@@ -16,7 +16,7 @@ Show that $(1/x_n)$ is a null sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [X Seq](x-seq.md)
 
 ## Sources
 

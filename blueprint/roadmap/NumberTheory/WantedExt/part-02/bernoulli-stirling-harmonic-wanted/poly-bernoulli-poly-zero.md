@@ -14,7 +14,8 @@ normalization stated with the generating function, with no deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Bernoulli](../../../MathlibExt/part-01/bernoulli/poly-bernoulli-duality/poly-bernoulli.md)
+- [Poly Bernoulli Poly](poly-bernoulli-poly.md)
 
 ## Sources
 

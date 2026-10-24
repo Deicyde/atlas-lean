@@ -14,7 +14,7 @@ The zeros (Cardano's `α_{z,w}, β_{z,w}, β̄_{z,w}` in the paper) are given by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

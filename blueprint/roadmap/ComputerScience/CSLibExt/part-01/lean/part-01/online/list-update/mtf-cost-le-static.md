@@ -13,7 +13,16 @@ plus the initial disagreement `inv M L`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Access Cost](access-cost.md)
+- [Inv](inv.md)
+- [Mtf Cost](mtf-cost.md)
+
+## Proof depends on
+
+- [Inv Set](inv-set.md)
+- [Mtf Cost add inv le](mtf-cost-add-inv-le.md)
+- [Mtf Final](mtf-final.md)
+- [Offline Cost](offline-cost.md)
 
 ## Sources
 

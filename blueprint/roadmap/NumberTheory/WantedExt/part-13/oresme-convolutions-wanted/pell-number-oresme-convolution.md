@@ -12,7 +12,7 @@ The Pell–Oresme convolution:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Number Sequence](../../../MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

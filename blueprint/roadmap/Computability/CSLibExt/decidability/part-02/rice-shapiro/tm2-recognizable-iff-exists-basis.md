@@ -14,7 +14,13 @@ functions in some recognizable set of graphs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Graph](is-graph.md)
+- [TM2 Recognizable](../../part-01/basic/tm2-recognizable.md)
+
+## Proof depends on
+
+- [Effective Rice–Shapiro, necessity](exists-basis-of-tm2-recognizable.md)
+- [Effective Rice–Shapiro, sufficiency](tm2-recognizable-of-basis.md)
 
 ## Sources
 

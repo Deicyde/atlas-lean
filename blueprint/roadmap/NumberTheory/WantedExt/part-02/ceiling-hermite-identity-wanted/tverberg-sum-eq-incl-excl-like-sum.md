@@ -14,7 +14,8 @@ The sign `(-1)^{ℓ-1}` is written `(-1)^(ℓ+1)`; with that sign both identitie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incl Excl Like Sum](incl-excl-like-sum.md)
+- [Tverberg Sum](tverberg-sum.md)
 
 ## Sources
 

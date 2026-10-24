@@ -15,7 +15,8 @@ bound `0` (the empty witness). Together with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Verifies](verifies.md)
+- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

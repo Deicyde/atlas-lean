@@ -12,7 +12,8 @@ lean: MetaMathlibExt.seedAutomaton_one_cons
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seed Automaton](seed-automaton.md)
+- [Substitution Automaton](substitution-automaton.md)
 
 ## Sources
 

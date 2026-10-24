@@ -12,7 +12,8 @@ Corollary 8: the number of unicellular hypermonopoles `(σ, α)` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Cyclic Product Number](cyclic-product-number.md)
 
 ## Sources
 

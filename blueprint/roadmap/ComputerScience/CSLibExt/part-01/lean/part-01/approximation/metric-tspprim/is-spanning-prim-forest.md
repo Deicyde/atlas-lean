@@ -12,7 +12,14 @@ Prim's forest visits every vertex of `Fin n` exactly once, below the root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spanning](../metric-tsp/is-spanning.md)
+- [Prim Forest](prim-forest.md)
+
+## Proof depends on
+
+- [Is Spanning build Forest](is-spanning-build-forest.md)
+- [Parent Tree prim Parents](parent-tree-prim-parents.md)
+- [Prim Parents](prim-parents.md)
 
 ## Sources
 

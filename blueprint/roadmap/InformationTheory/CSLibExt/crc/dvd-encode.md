@@ -12,7 +12,7 @@ Every codeword is a multiple of the generator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode](encode.md)
 
 ## Sources
 

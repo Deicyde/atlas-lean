@@ -13,7 +13,7 @@ lean: Cslib.MachineLearning.KMeans.sum_sq_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Centroid](centroid.md)
 
 ## Sources
 

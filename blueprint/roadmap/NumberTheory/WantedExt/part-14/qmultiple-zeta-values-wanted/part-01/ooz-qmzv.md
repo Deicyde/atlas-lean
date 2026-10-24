@@ -16,6 +16,10 @@ coefficient of `q^N` is computed from the summands with `m₁ ≤ N`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ooz QMZVPartial](ooz-qmzvpartial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ A sequence of length less than three contains no length-3 pattern.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Seq Contains Pattern](inv-seq-contains-pattern.md)
 
 ## Sources
 

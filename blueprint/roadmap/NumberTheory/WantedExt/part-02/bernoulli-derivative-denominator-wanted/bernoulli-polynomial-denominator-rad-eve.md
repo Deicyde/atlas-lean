@@ -15,7 +15,8 @@ which fails at `n = 2` (`𝔻^⊥_2 = 1`); the proof in the paper shows `𝔻^�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
+- [Polynomial Denominator](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources
 

@@ -14,7 +14,9 @@ positivity of `n` is dropped (the identity holds at `n = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [Higher ANumber Delta](higher-anumber-delta.md)
+- [Tau Den](tau-den.md)
 
 ## Sources
 

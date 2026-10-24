@@ -12,7 +12,14 @@ states at time `t`, in `O((t + k) n²)` operations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+
+## Proof depends on
+
+- [Backward Tab](backward-tab.md)
+- [Forward Tab](../hidden-markov/forward-tab.md)
+- [The tabulated forward algorithm](../hidden-markov/likelihood-tab.md)
+- [Smooth Step](smooth-step.md)
 
 ## Sources
 

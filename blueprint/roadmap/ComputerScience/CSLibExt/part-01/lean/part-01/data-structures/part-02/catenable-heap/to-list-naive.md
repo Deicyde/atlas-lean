@@ -11,7 +11,7 @@ The naive recursive left-to-right flattening of a heap; the reference for `toLis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
 
 ## Sources
 

@@ -17,6 +17,11 @@ form of the induction in `TM2to1.tr_respects`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Relates In Steps go](relates-in-steps-go.md)
+- [Relates In Steps ret](relates-in-steps-ret.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.TM2Time](../../../../../../../sources/v2/CSLibExt.md)

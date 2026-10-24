@@ -12,7 +12,7 @@ Campbell and Cohen, Theorem 1, display (5) (Taylor's law): `v(c,n) / m(c,n)^b` t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cyclic Number](../../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
 
 ## Sources
 

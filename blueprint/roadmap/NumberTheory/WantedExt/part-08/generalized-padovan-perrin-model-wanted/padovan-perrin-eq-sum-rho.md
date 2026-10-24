@@ -17,7 +17,8 @@ is `1` instead of `0`). Stated over any commutative ring.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
+- [Padovan Perrin Rho](padovan-perrin-rho.md)
 
 ## Sources
 

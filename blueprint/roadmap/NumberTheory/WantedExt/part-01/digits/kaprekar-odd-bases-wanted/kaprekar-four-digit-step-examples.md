@@ -13,7 +13,7 @@ in base `7`, the terminal cycle `(3, 1) ↦ (5, 1) ↦ (5, 3) ↦ (3, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
 
 ## Sources
 

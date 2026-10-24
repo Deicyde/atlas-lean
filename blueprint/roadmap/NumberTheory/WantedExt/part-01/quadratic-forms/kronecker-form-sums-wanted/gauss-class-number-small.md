@@ -13,7 +13,8 @@ Characteristic values of the class numbers: `h(-3) = h(-4) = h(-12) = 1` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Class Number](gauss-class-number.md)
+- [Unweighted Hurwitz Class Number](unweighted-hurwitz-class-number.md)
 
 ## Sources
 

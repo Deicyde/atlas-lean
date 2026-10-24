@@ -12,7 +12,7 @@ The convention `F(0) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Max Rook Number Max](partition-max-rook-number-max.md)
 
 ## Sources
 

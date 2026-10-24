@@ -12,7 +12,14 @@ lean: Cslib.Language.EncodedCFG.interEmptyB
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [States](../../../automata/da/encoded-dfa/states.md)
+- [Mem B](../primrec-list/mem-b.md)
+- [Dfa Found](dfa-found.md)
 
 ## Sources
 

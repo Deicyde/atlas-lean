@@ -14,6 +14,11 @@ relative density is `ρ_{a,N}(n) = ulamResidueCount N n a / #U_n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Ulam Word](is-ulam-word.md)
+- [Ulam Word Aux](ulam-word-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.UlamWordsWanted](../../../../../../sources/v2/WantedExt.md)

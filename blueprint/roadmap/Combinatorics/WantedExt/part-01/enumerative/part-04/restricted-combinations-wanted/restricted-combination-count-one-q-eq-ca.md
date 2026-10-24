@@ -19,7 +19,8 @@ case and still holds).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Restricted Combination Count](restricted-combination-count.md)
 
 ## Sources
 

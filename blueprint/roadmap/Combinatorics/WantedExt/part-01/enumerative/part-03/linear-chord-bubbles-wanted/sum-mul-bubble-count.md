@@ -13,7 +13,7 @@ The hypothesis `n ≥ 2` is added (the right side involves `(n-2)!`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bubble Count](bubble-count.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ natural-valued observable on a finite type: the `toReal` of the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect](expect.md)
+- [Expect ENN](expect-enn.md)
+
+## Proof depends on
+
+- [Expect ENN eq sum](expect-enn-eq-sum.md)
+- [Expect eq sum](expect-eq-sum.md)
 
 ## Sources
 

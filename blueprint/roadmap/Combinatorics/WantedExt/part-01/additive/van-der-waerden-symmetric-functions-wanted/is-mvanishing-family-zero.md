@@ -12,7 +12,7 @@ Every family is `0`-vanishing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MVanishing Family](is-mvanishing-family.md)
 
 ## Sources
 

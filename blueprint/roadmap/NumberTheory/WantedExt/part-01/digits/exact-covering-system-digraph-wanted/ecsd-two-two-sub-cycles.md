@@ -17,7 +17,8 @@ from `a` odd and is dropped). Residues `x mod a` are taken in `[0, a - 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Digraph Cycle](is-digraph-cycle.md)
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

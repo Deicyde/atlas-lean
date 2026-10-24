@@ -12,7 +12,9 @@ lean: MetaMathlibExt.leonardoPK_eq_incomplete_add_hyper
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
+- [Hyper Leonardo P](hyper-leonardo-p.md)
+- [Incomplete Leonardo P](incomplete-leonardo-p.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ cleared, where `∑ P_v(n) q^n = v(q)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mock Theta V](mock-theta-v.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

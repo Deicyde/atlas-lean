@@ -11,7 +11,7 @@ For `a + b ≥ 1`, `0^a 1⁴ 0^b` is Ulam iff `a + b ≡ 1 (mod 4)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ulam Word](is-ulam-word.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ triple `(a, b, c)` with `max {a, b, c} = b`, and any other such triple `(a', b, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedMarkovUniquenessWanted](../../../../../sources/v2/WantedExt.md)

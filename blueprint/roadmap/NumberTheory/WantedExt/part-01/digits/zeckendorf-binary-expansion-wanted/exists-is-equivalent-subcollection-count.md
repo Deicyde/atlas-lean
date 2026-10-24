@@ -13,7 +13,9 @@ at almost every point of `(0, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Subcollection Count](subcollection-count.md)
+- [Zeckendorf Eval](zeckendorf-eval.md)
 
 ## Sources
 

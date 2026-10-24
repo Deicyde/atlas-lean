@@ -15,6 +15,11 @@ when `pad` and undefined otherwise.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Three Term Hofstadter Lookup](three-term-hofstadter-lookup.md)
+- [Three Term Hofstadter Prefix](three-term-hofstadter-prefix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.ThreeTermHofstadterWanted](../../../../../../../sources/v2/WantedExt.md)

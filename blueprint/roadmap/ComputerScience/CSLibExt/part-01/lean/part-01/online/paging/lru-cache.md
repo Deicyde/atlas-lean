@@ -13,6 +13,10 @@ The cache after serving a request sequence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lru Step](lru-step.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Online.Paging](../../../../../../../../sources/v2/CSLibExt.md)

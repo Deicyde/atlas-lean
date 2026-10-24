@@ -14,7 +14,31 @@ lean: Cslib.Complexity.SatVerifier.Tokenizer.run_some
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [Start](start.md)
+- [Ents](../sat-verifier-spec/ents.md)
+- [Tbl Stk](../sat-verifier-spec/tbl-stk.md)
+- [Toks](../sat-verifier-spec/toks.md)
+- [Decode CNF](../../cook-levin/decode-cnf.md)
+- [Vars Of](../../sat-time-m/vars-of.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Clauses run](clauses-run.md)
+- [Fin acc](fin-acc.md)
+- [St](st.md)
+- [Un run](un-run.md)
+- [Ents Of](../sat-verifier-spec/ents-of.md)
+- [Decode CNF eq some iff](../../cook-levin/decode-cnf-eq-some-iff.md)
+- [Encode CNF](../../cook-levin/encode-cnf.md)
+- [Encode Clause](../../cook-levin/encode-clause.md)
+- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

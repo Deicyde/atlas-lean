@@ -13,7 +13,7 @@ The function `x ↦ x(x+1)/2` is not LIP on `ℤ`: no integer polynomial takes t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

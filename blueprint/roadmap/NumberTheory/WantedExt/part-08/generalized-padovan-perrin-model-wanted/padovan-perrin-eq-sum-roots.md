@@ -17,7 +17,7 @@ follows from the other hypotheses (Lemma 4, `padovanPerrin_charPoly_separable`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

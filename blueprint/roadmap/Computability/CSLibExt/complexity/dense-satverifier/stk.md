@@ -11,7 +11,9 @@ Assemble all stacks from the (non-dependent) work stacks `V` and the output `o`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
+- [W](w.md)
+- [Γ](untitled.md)
 
 ## Sources
 

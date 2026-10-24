@@ -12,7 +12,7 @@ Theorem 8, `V` part, as an identity of formal power series: for `r ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RLucas](neg-rlucas.md)
 
 ## Sources
 

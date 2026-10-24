@@ -11,7 +11,11 @@ The start word of the input `l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TMSym](tmsym.md)
+
+## Proof depends on
+
+- [Spell](spell.md)
 
 ## Sources
 

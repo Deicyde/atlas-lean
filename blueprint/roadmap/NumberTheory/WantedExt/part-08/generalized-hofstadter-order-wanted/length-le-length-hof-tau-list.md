@@ -12,7 +12,12 @@ lean: MetaMathlibExt.length_le_length_hofTauList
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Tau List](hof-tau-list.md)
+
+## Proof depends on
+
+- [Hof Tau](hof-tau.md)
+- [One le length hof Tau](one-le-length-hof-tau.md)
 
 ## Sources
 

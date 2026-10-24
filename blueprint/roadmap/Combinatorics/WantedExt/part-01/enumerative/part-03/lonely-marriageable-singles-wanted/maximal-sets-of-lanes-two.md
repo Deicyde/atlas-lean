@@ -13,7 +13,8 @@ The standard road intersection of size `2` has the two MSL `{E₁X₁, E₂X₂}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
+- [Lanes Meet](lanes-meet.md)
 
 ## Sources
 

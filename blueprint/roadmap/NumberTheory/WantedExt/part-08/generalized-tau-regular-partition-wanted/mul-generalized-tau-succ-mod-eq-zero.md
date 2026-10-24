@@ -11,7 +11,7 @@ lean: MetaMathlibExt.mul_generalizedTau_succ_modEq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.c4SqD_sum_sq_sq_sub_sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Sq D](c4-sq-d.md)
 
 ## Sources
 

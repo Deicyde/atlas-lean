@@ -11,7 +11,11 @@ The first `g` gates of the `n`-bit adder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Signature](arith-signature.md)
+
+## Proof depends on
+
+- [Line](line.md)
 
 ## Sources
 

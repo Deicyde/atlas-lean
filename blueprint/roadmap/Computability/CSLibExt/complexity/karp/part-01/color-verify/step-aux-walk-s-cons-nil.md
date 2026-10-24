@@ -12,7 +12,12 @@ A joint-walk step with `V` exhausted first: `v`'s color is next.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mv P](mv-p.md)
+- [Walk S](walk-s.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

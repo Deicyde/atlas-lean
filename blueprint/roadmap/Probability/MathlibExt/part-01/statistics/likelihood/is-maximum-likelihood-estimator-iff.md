@@ -12,7 +12,9 @@ Unfolded form: every sample, every parameter is below the estimate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Density Family](normalized-density-family.md)
+- [Is Maximum Likelihood Estimator](is-maximum-likelihood-estimator.md)
+- [Iid Likelihood](iid-likelihood.md)
 
 ## Sources
 

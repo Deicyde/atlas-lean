@@ -13,7 +13,14 @@ pays at most `ℓ + inv M R` more than the static list `R`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv](inv.md)
+- [Offline Cost](offline-cost.md)
+- [Static Cost](static-cost.md)
+
+## Proof depends on
+
+- [Access Cost](access-cost.md)
+- [Offline Cost const](offline-cost-const.md)
 
 ## Sources
 

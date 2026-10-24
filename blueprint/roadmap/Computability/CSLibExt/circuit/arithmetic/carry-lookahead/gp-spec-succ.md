@@ -13,7 +13,14 @@ and keeps bit `i` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Combine](combine.md)
+- [Gp Spec](gp-spec.md)
+
+## Proof depends on
+
+- [Gp Range](gp-range.md)
+- [Gp Range add](gp-range-add.md)
+- [Low Bit](low-bit.md)
 
 ## Sources
 

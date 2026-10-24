@@ -12,7 +12,7 @@ lean: MetaMathlibExt.letendreXi_of_small_theta_large_eta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letendre Xi](letendre-xi.md)
 
 ## Sources
 

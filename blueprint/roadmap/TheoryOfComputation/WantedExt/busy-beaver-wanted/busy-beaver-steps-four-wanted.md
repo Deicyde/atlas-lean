@@ -11,7 +11,7 @@ Source: Brady (1983), determination of `S(4) = 107`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Busy Beaver Steps](../../../Computability/CSLibExt/busy-beaver/busy-beaver-steps.md)
 
 ## Sources
 

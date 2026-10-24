@@ -11,7 +11,8 @@ Theorem 37: even `r ≥ 4` implies `C_{S(5^r)} ≤ 7`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Set](square-set.md)
+- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
 
 ## Sources
 

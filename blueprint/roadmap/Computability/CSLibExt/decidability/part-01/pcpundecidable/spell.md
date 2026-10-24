@@ -11,7 +11,7 @@ The word `⊢ L q h R ⊣` of a configuration; `Lw` is the left part in reading 
 
 ## Depends on
 
-This node has no prerequisites.
+- [TMSym](tmsym.md)
 
 ## Sources
 

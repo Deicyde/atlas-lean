@@ -13,7 +13,9 @@ state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible](../minimality/accessible.md)
+- [DFAHom](dfahom.md)
+- [Canonical Residual Hom](canonical-residual-hom.md)
 
 ## Sources
 

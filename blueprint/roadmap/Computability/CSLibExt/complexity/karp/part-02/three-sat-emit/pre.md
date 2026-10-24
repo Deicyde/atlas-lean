@@ -12,7 +12,7 @@ walked, after the fresh literal `(fresh z, true)` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
 
 ## Sources
 

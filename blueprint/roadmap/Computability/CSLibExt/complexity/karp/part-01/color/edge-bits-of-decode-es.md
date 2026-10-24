@@ -12,7 +12,17 @@ lean: Cslib.Complexity.Karp.edgeBits_of_decodeEs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode Es](decode-es.md)
+- [Edge Bits](edge-bits.md)
+
+## Proof depends on
+
+- [Decode Es nil](decode-es-nil.md)
+- [Decode Es of none](decode-es-of-none.md)
+- [Decode Es of some none](decode-es-of-some-none.md)
+- [Decode Es of some some](decode-es-of-some-some.md)
+- [Length lt of read Unary Length](length-lt-of-read-unary-length.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

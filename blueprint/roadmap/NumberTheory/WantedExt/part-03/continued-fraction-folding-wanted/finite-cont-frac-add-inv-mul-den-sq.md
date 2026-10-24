@@ -14,7 +14,7 @@ The folding lemma: if `p/q = [a₀; a₁, …, aₜ]` with `a₀ ∈ ℤ`, posit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Cont Frac](finite-cont-frac.md)
 
 ## Sources
 

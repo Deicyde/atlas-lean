@@ -11,7 +11,11 @@ The responsibility-weighted number of points with coordinate `j` equal to `true`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Resp](resp.md)
 
 ## Sources
 

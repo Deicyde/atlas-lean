@@ -12,7 +12,12 @@ lean: MetaMathlibExt.pEquivClassSum_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [P Equiv Class Sum](p-equiv-class-sum.md)
+
+## Proof depends on
+
+- [Is PSplitting](is-psplitting.md)
+- [P Equiv Class](p-equiv-class.md)
 
 ## Sources
 

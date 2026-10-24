@@ -14,6 +14,11 @@ discriminant `-4n` with `a` and `c` both even.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reduced Form Weight](reduced-form-weight.md)
+- [Reduced Forms Of Discriminant](reduced-forms-of-discriminant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QuadraticForms.KroneckerFormSumsWanted](../../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,7 @@ self-intersections allowed) is `(9n² - 5n + 2)/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane Region Count](plane-region-count.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.curlingNumber_example_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curling Number](curling-number.md)
 
 ## Sources
 

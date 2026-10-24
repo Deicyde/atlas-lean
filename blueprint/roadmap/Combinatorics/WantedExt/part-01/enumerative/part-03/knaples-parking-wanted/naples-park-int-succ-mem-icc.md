@@ -15,7 +15,7 @@ Every `k ≥ 0` is admitted (the source's proof treats any `k ≥ 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naples Park Int](naples-park-int.md)
 
 ## Sources
 

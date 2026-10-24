@@ -11,7 +11,8 @@ lean: MetaMathlibExt.tsum_lStarInf_mul_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Collection](l-star-collection.md)
+- [L Star Inf](l-star-inf.md)
 
 ## Sources
 

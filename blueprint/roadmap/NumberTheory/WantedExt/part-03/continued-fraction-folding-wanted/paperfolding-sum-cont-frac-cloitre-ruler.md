@@ -17,7 +17,9 @@ its crease.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cloitre Approx](../../../../Combinatorics/MathlibExt/part-01/infinite-word/cloitre-sequence/cloitre-approx.md)
+- [Cloitre Crease Interleave](cloitre-crease-interleave.md)
+- [Paperfolding Sum Term](paperfolding-sum-term.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ the initial conditions cover `s > r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular QBinomial](triangular-qbinomial.md)
 
 ## Sources
 

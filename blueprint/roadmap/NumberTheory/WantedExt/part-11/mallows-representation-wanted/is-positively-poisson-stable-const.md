@@ -12,7 +12,7 @@ Characteristic property: constant sequences are positively Poisson stable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Positively Poisson Stable](is-positively-poisson-stable.md)
 
 ## Sources
 

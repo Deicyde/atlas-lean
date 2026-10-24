@@ -15,7 +15,7 @@ Formalization deviation: none beyond the representation choices stated above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cylinder Shift Sum](cylinder-shift-sum.md)
 
 ## Sources
 

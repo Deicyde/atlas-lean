@@ -13,7 +13,7 @@ Equation (50): for real `v > -1` and complex `x`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For `k = 2`, `p = 3`, `r = 1`: `g(2) = (1·2 + 2²) · 2⁻¹ = 0 mod 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Residue](gobel-residue.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Theorem 1, `n` neither a prime power nor squarefree (odd or even):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abs Least APLength](abs-least-aplength.md)
 
 ## Sources
 

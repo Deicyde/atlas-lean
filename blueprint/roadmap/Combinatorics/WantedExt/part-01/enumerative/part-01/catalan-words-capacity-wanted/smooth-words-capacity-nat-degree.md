@@ -12,7 +12,8 @@ Mansour and Shattuck's Theorem 5: the maximum capacity over smooth words of leng
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+- [Smooth Words](smooth-words.md)
 
 ## Sources
 

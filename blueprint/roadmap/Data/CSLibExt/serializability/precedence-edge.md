@@ -12,7 +12,11 @@ of `j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Op](op.md)
+
+## Proof depends on
+
+- [Conflicts](conflicts.md)
 
 ## Sources
 

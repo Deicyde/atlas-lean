@@ -12,7 +12,7 @@ lean: MetaMathlibExt.companionKJacobsthal_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Companion KJacobsthal](companion-kjacobsthal.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ lean: MetaMathlibExt.naturalExpansionCount_fib
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural Expansion Count](natural-expansion-count.md)
 
 ## Sources
 

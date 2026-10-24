@@ -12,7 +12,7 @@ The sum of reciprocals of the primes of semiprime index satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

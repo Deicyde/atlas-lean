@@ -12,7 +12,7 @@ there is at most one codeword).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
 
 ## Sources
 

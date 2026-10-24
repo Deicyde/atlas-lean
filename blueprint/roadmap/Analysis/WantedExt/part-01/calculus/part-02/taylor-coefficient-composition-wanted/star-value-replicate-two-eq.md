@@ -15,7 +15,13 @@ For `k = 0` both sides are `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Replicate](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/replicate.md)
+- [Replicate is Admissible Or Empty](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/replicate-is-admissible-or-empty.md)
+- [Star Value](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/star-value.md)
+
+## Proof depends on
+
+- [Is Admissible Or Empty](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/is-admissible-or-empty.md)
 
 ## Sources
 

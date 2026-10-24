@@ -11,7 +11,7 @@ For an even s-Zumkeller number, `H₂(n) = τ(n) / ∑_{d ∣ n} 1/d² ≤ 2τ(n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SZumkeller](is-szumkeller.md)
 
 ## Sources
 

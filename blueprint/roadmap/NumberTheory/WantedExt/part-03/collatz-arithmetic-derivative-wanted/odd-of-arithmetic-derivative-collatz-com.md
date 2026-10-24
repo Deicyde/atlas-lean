@@ -11,7 +11,8 @@ Every positive solution of `D(C(n)) = C(D(n))` is odd.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Derivative](../../../MathlibExt/part-02/arithmetic-derivative/arithmetic-derivative.md)
+- [Collatz Accelerated](collatz-accelerated.md)
 
 ## Sources
 

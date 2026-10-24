@@ -12,7 +12,12 @@ lean: MetaMathlibExt.kimberlingOnePosition_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling One Position](kimberling-one-position.md)
+
+## Proof depends on
+
+- [Kimberling Word](kimberling-word.md)
+- [Kimberling Word initial](kimberling-word-initial.md)
 
 ## Sources
 

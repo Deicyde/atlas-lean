@@ -11,7 +11,11 @@ lean: DFA.accessiblePart
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reachable Within](reachable-within.md)
+
+## Proof depends on
+
+- [Accessible Part Within](accessible-part-within.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ difference `k`-smooth.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Finset](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-admissible-finset.md)
+- [Is Difference Smooth](is-difference-smooth.md)
 
 ## Sources
 

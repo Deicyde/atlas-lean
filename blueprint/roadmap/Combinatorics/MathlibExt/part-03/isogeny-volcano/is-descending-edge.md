@@ -11,7 +11,11 @@ Descending edge from `v` down to `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Isogeny Volcano](isogeny-volcano.md)
+
+## Proof depends on
+
+- [Multigraph](multigraph.md)
 
 ## Sources
 

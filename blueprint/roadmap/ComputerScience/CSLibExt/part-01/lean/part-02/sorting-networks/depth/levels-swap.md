@@ -12,7 +12,7 @@ Reversing comparators does not change levels.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Levels](levels.md)
 
 ## Sources
 

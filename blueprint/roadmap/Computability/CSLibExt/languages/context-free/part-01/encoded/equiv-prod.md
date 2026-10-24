@@ -11,7 +11,7 @@ Encoded grammars are pairs of a start nonterminal and a production list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](encoded-cfg.md)
 
 ## Sources
 

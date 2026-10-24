@@ -11,7 +11,7 @@ Start times and machine assignments meeting all deadlines.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parallel Machines Deadlines Instance](parallel-machines-deadlines-instance.md)
 
 ## Sources
 

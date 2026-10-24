@@ -11,7 +11,12 @@ Encode a CNF formula as a bit string.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+
+## Proof depends on
+
+- [Clause](clause.md)
+- [Encode Clause](encode-clause.md)
 
 ## Sources
 

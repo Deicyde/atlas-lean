@@ -13,7 +13,7 @@ Corollary 4 (plane partition profile `π_k = k`, so `Π_k = k(k+1)/2`, `α = 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical Seq Height](canonical-seq-height.md)
 
 ## Sources
 

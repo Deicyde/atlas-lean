@@ -13,6 +13,10 @@ All infix pairs of `xs` and `ys`, as suffixes of prefixes.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prefix Pairs](prefix-pairs.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.SequenceAlignment](../../../../../../../../sources/v2/CSLibExt.md)

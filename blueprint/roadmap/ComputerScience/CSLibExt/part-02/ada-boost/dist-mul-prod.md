@@ -12,7 +12,18 @@ lean: Cslib.MachineLearning.AdaBoost.dist_mul_prod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dist](dist.md)
+- [Score](score.md)
+- [Zee](zee.md)
+- [Sign](../perceptron/sign.md)
+
+## Proof depends on
+
+- [Alpha](alpha.md)
+- [Eps](eps.md)
+- [Err](err.md)
+- [Hyp](hyp.md)
+- [Normalizer](normalizer.md)
 
 ## Sources
 

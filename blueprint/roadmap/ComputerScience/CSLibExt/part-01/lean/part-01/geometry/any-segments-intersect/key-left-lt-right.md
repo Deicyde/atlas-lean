@@ -12,7 +12,13 @@ A segment's left endpoint comes before its right endpoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key](key.md)
+
+## Proof depends on
+
+- [Left](left.md)
+- [Point](point.md)
+- [Right](right.md)
 
 ## Sources
 

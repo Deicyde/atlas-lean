@@ -12,7 +12,7 @@ model has `S_seq(x) ≍ x / (log x)²` and `F_seq(x) = ∑_{n ≤ x} H_seq(n) �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical Seq Height](canonical-seq-height.md)
 
 ## Sources
 

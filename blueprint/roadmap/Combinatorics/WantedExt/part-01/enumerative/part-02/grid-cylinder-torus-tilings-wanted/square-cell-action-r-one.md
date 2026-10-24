@@ -12,7 +12,8 @@ lean: MetaMathlibExt.squareCellAction_r_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cell R](cell-r.md)
+- [Square Cell Action](square-cell-action.md)
 
 ## Sources
 

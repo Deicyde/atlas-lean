@@ -14,7 +14,14 @@ differentiable, and only at their forward activations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Net](net.md)
+- [Diff Along](diff-along.md)
+- [The backward pass](backward.md)
+- [Forward](forward.md)
+
+## Proof depends on
+
+- [Differentiable At forward](differentiable-at-forward.md)
 
 ## Sources
 

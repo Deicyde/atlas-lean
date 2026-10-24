@@ -13,7 +13,12 @@ vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](../color/col-st.md)
+
+## Proof depends on
+
+- [D Tok](d-tok.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ A maximizing entry of a table (the table is passed as an argument, so it is comp
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Argmax Fin](argmax-fin.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Sequence.HiddenMarkov](../../../../../../sources/v2/CSLibExt.md)

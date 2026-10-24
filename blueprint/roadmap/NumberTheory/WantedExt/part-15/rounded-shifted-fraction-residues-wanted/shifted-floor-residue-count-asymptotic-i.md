@@ -14,7 +14,7 @@ O(√n)` and, for `2 ≤ r ≤ m`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
 
 ## Sources
 

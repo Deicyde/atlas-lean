@@ -13,7 +13,7 @@ identity `∑ τ_{2p}(n + 1) q^n ≡ ∏ (1 - q^(pm))^2 (mod p)` gives `n = p(P(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

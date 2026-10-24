@@ -11,7 +11,11 @@ The first free proposer who has not proposed to everyone, if any.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Free](free.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Row one of `B(n)` is `n + 1, -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyperseq B](hyperseq-b.md)
 
 ## Sources
 

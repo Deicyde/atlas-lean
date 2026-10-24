@@ -12,7 +12,7 @@ square.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Polynomial](truncated-log-polynomial.md)
 
 ## Sources
 

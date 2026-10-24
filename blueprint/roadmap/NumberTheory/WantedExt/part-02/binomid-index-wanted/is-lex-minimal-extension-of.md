@@ -15,6 +15,10 @@ with the same first `m` entries.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Binomid Index](is-binomid-index.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BinomidIndexWanted](../../../../../sources/v2/WantedExt.md)

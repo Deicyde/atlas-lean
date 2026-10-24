@@ -13,7 +13,7 @@ lean: MetaMathlibExt.eulerMahonian_three_two_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Mahonian](euler-mahonian.md)
 
 ## Sources
 

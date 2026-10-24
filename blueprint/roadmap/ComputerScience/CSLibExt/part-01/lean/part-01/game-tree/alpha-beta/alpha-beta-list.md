@@ -12,7 +12,7 @@ Scan the children `ts`. The maximizer raises `a` to each child's value and stops
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
 
 ## Sources
 

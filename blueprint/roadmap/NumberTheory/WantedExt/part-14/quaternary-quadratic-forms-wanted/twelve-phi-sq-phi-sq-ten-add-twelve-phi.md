@@ -12,7 +12,8 @@ For `‖q‖ < 1`, `12φ²(q)φ²(q¹⁰) + 12φ²(q²)φ²(q⁵) = φ⁴(q) + 5
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf Raw](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
+- [Ramanujan Theta Raw](../../../MathlibExt/part-01/modular-forms/jacobi-theta/ramanujan/ramanujan-theta-raw.md)
 
 ## Sources
 

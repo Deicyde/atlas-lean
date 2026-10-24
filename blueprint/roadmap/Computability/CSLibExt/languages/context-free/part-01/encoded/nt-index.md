@@ -13,6 +13,10 @@ The number of a nonterminal: its position in `usedNT`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Used NT](used-nt.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Encoded](../../../../../../../sources/v2/CSLibExt.md)

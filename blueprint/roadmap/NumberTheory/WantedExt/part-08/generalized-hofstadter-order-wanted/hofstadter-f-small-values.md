@@ -12,7 +12,7 @@ First values of `F_2 = G` (OEIS A005206) and `F_3 = H` (OEIS A005374).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

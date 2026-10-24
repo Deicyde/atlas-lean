@@ -12,7 +12,7 @@ The only monic divisor of `1` is `1`, so `(α * β)(1) = α(1) β(1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
 
 ## Sources
 

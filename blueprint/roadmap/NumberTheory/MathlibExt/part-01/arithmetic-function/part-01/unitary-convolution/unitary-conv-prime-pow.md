@@ -12,7 +12,13 @@ lean: MetaMathlibExt.unitaryConv_prime_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unitary Conv](unitary-conv.md)
+
+## Proof depends on
+
+- [Unitary Conv apply](unitary-conv-apply.md)
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+- [Unitary Divisors prime pow](unitary-divisors-prime-pow.md)
 
 ## Sources
 

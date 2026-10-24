@@ -12,7 +12,14 @@ Accessibility makes the canonical residual map the unique DFA morphism to the re
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible](../minimality/accessible.md)
+- [DFAHom](dfahom.md)
+- [Canonical Residual Hom](canonical-residual-hom.md)
+
+## Proof depends on
+
+- [Map eval](map-eval.md)
+- [Reachable State](../minimality/reachable-state.md)
 
 ## Sources
 

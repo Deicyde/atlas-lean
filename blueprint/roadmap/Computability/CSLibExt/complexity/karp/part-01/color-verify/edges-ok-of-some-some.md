@@ -12,7 +12,14 @@ A parsed edge, then the rest: the loop's verdict is the edge's and the rest's.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Ok](edge-ok.md)
+- [Edges Ok](edges-ok.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+
+## Proof depends on
+
+- [Decode Es](../color/decode-es.md)
+- [Decode Es of some some](../color/decode-es-of-some-some.md)
 
 ## Sources
 

@@ -12,7 +12,19 @@ lean: Cslib.Databases.Expr.select_join
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond](cond.md)
+- [Attrs](attrs.md)
+- [Expr](expr.md)
+- [Equiv](equiv.md)
+- [Schema](schema.md)
+
+## Proof depends on
+
+- [Conforms](conforms.md)
+- [Eval](eval-2.md)
+- [Typing is sound](eval-is-over.md)
+- [Tuple](tuple.md)
+- [Selection pushdown](select-join-left.md)
 
 ## Sources
 

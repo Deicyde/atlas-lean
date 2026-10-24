@@ -13,7 +13,12 @@ lean: Cslib.MachineLearning.Sampling.mh_detailedBalance
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mh Step](mh-step.md)
+
+## Proof depends on
+
+- [Coin](../rejection/coin.md)
+- [Mh Accept](mh-accept.md)
 
 ## Sources
 

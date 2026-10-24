@@ -13,6 +13,10 @@ The Setoid of Nerode equivalence classes.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nerode Rel](nerode-rel.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.Nerode](../../../../../../sources/v2/CSLibExt.md)

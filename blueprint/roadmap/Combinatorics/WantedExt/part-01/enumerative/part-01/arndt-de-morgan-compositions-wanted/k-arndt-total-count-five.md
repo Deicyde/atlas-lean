@@ -12,7 +12,7 @@ Values from Table 9: `a(5, 0) = 5`, `a(5, -1) = 10`, `a(5, -2) = 14`, `a(5, 1) =
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Arndt Total Count](k-arndt-total-count.md)
 
 ## Sources
 

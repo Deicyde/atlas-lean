@@ -12,7 +12,15 @@ Partial-correctness derivability coincides with validity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [Derivable](derivable.md)
+- [Valid](../hoare/valid.md)
+
+## Proof depends on
+
+- [Complete](complete.md)
+- [Sound](sound.md)
 
 ## Sources
 

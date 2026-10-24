@@ -12,7 +12,7 @@ Theorem 5 (ii) (D. R. Richman): for every `ε > 0` only finitely many values
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Staircase](farey-staircase.md)
 
 ## Sources
 

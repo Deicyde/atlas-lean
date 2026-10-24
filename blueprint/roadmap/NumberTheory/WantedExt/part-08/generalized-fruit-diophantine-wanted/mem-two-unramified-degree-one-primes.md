@@ -12,7 +12,7 @@ Membership in `T_K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Unramified Degree One Primes](two-unramified-degree-one-primes.md)
 
 ## Sources
 

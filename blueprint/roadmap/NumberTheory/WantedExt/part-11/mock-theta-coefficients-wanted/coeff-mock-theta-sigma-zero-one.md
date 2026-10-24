@@ -12,7 +12,7 @@ Characteristic values `P_σ(0) = 0` and `P_σ(1) = 1` (`σ(q) = q + q^2 + 2q^3 +
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mock Theta Sigma](mock-theta-sigma.md)
 
 ## Sources
 

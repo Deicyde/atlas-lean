@@ -13,7 +13,8 @@ determined by `x_2, …, x_{k_0}`) with `x_{k_0} = 0` on `A` and `ℙ(A) > 0`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

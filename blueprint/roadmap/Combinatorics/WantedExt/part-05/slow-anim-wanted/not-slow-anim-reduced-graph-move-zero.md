@@ -12,7 +12,15 @@ The empty position has no moves in the playable game graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Reduced](slow-anim-reduced.md)
+- [Slow ANim Reduced Graph Move](slow-anim-reduced-graph-move.md)
+- [Slow ANim Reduced zero](slow-anim-reduced-zero.md)
+
+## Proof depends on
+
+- [Slow ANim Moves](slow-anim-moves.md)
+- [Slow ANim Moves zero](slow-anim-moves-zero.md)
+- [Slow ANim Reduction](slow-anim-reduction.md)
 
 ## Sources
 

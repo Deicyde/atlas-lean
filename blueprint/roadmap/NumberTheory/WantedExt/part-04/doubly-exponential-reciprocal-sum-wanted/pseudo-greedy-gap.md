@@ -13,6 +13,11 @@ The gap sequence `ε_n = x_n⁻¹ + 1 - a_n` of the pseudo-greedy expansion of `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
+- [Pseudo Greedy Remainder](pseudo-greedy-remainder.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DoublyExponentialReciprocalSumWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,12 @@ The loss is infinite exactly when some label is predicted to be impossible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross Entropy Loss](cross-entropy-loss.md)
+
+## Proof depends on
+
+- [The cross-entropy loss is the average negative log-likelihood](cross-entropy-loss-eq.md)
+- [Surprisal](../../../../../InformationTheory/MathlibExt/finite-entropy/surprisal.md)
 
 ## Sources
 

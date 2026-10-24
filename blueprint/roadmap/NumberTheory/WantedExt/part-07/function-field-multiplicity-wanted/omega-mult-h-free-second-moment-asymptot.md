@@ -12,7 +12,9 @@ Theorem 3, second moment: for `1 < k < h` and every `ε > 0`, the mean of `ω_k^
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Free Moment](h-free-moment.md)
+- [H Free Omega Mult Sq Sum](h-free-omega-mult-sq-sum.md)
+- [H Free Omega Mult Sum](h-free-omega-mult-sum.md)
 
 ## Sources
 

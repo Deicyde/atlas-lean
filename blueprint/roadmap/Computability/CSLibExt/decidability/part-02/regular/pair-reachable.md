@@ -11,7 +11,13 @@ The reachable pairs of states of two encoded DFAs reading the same word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+
+## Proof depends on
+
+- [Pair Next](pair-next.md)
+- [Pair States](pair-states.md)
+- [Reach N](reach-n.md)
 
 ## Sources
 

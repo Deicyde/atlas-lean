@@ -13,7 +13,7 @@ Theorem 3.3 (2) (Catalan identity for GFPs of Lucas type): for `n ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

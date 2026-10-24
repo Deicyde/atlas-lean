@@ -12,7 +12,7 @@ lean: MetaMathlibExt.sum_qpow_mul_qFalling
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

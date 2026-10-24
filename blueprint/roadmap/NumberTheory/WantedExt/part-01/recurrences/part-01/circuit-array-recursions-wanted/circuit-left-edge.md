@@ -11,7 +11,14 @@ The non-boundary left-edge function `ℒ(T_{r,d-1}, T_{r,d}, T_{r+1,d})`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Edge](circuit-edge.md)
+
+## Proof depends on
+
+- [Circuit Left Arm](circuit-left-arm.md)
+- [Circuit Right Arm](circuit-right-arm.md)
+- [Circuit Top Arm](circuit-top-arm.md)
+- [Circuit Y](circuit-y.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The empty input parses to no vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode W](decode-w.md)
+
+## Proof depends on
+
+- [Length lt of read Unary Length](../color/length-lt-of-read-unary-length.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

@@ -13,7 +13,16 @@ statement of the former `theorem_wanted` `MetaMathlibExt.cook_levin_SAT_np_compl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Many One Red](../../cook-levin/poly-many-one-red.md)
+- [Sat Dec](../../cook-levin/sat-dec.md)
+- [Decision Complexity Class](../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
+- [NP](../../../MathlibExt/complexity/np.md)
+
+## Proof depends on
+
+- [Cook-Levin for `satDec`, given a polynomial-time verifier](../cook-levin/binary-hardness/cook-levin-sat-np-complete-of-is-poly-ti.md)
+- [`satVerifier` is polynomial-time](is-poly-time-sat-verifier.md)
 
 ## Sources
 

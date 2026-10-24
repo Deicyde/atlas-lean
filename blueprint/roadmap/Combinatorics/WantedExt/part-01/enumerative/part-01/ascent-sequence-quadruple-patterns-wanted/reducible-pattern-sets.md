@@ -15,7 +15,8 @@ tables; both readings are stated. The items "for any `τ = …`" are expanded in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascent Avoiders](ascent-avoiders.md)
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources
 

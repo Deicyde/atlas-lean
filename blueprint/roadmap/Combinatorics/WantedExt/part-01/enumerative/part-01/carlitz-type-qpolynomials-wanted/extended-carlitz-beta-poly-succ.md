@@ -12,7 +12,7 @@ The recurrence `β_n^{(r+1)}(x) = q^{-x} (β_n^{(r)}(x) + (q - 1) β_{n+1}^{(r)}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Carlitz Beta Poly](extended-carlitz-beta-poly.md)
 
 ## Sources
 

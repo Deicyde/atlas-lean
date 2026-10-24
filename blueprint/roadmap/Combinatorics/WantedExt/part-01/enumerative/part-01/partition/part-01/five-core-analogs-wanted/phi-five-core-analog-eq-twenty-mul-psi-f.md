@@ -11,7 +11,8 @@ Corollary 7: `ā_5(20n+6) = 20 b̄_5(10n)` and `ā_5(20n+14) = 20 b̄_5(10n+4)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Phi Five Core Analog](phi-five-core-analog.md)
+- [Psi Five Core Analog](psi-five-core-analog.md)
 
 ## Sources
 

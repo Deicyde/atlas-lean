@@ -13,7 +13,7 @@ pebbles by exactly one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pebbling Step](pebbling-step.md)
 
 ## Sources
 

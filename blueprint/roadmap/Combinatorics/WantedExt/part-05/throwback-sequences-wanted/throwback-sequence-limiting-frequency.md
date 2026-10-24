@@ -14,7 +14,7 @@ where `σ(w) = #{i : X i < w}` is the index of `w` in the sorted sequence `S(X)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Throwback Sequence](throwback-sequence.md)
 
 ## Sources
 

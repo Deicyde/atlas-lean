@@ -12,7 +12,7 @@ Fibonacci number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Wythoff Unsum Word](upper-wythoff-unsum-word.md)
 
 ## Sources
 

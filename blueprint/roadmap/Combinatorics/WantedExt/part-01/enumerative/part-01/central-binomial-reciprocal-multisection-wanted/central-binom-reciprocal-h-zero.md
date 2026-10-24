@@ -12,7 +12,7 @@ lean: MetaMathlibExt.centralBinomReciprocalH_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binom Reciprocal H](central-binom-reciprocal-h.md)
 
 ## Sources
 

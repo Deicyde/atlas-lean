@@ -11,7 +11,11 @@ Dense CNF-SAT as a decision problem: accept exactly the bit strings in `SAT`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [CNF-SAT](../dense-sat/sat.md)
 
 ## Sources
 

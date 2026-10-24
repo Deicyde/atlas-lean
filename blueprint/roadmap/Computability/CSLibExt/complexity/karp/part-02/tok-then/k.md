@@ -11,7 +11,11 @@ Stacks: the tokenizer's (its own `T` stays unused) and the emitter's.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Emitter](emitter.md)
+
+## Proof depends on
+
+- [K](../../../sat-tokenizer/k.md)
 
 ## Sources
 

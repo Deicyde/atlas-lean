@@ -15,7 +15,7 @@ on `y < -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lambert Map](lambert-map.md)
 
 ## Sources
 

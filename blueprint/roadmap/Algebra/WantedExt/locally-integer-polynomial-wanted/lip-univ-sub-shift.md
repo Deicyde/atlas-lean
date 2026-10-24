@@ -12,7 +12,7 @@ lean: MetaMathlibExt.lip_univ_sub_shift
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ S_{2,-10}(10) = 82`, and `5 = 16 - 12 + 1` gives `S_{2,-4}(5) = 11`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
 
 ## Sources
 

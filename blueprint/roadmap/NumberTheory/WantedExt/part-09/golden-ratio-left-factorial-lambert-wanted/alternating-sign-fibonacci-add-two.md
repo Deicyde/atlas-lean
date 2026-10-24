@@ -12,7 +12,7 @@ The recurrence `d (m + 2) = d (m + 1) + d m + (-1) ^ (m + 2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Sign Fibonacci](alternating-sign-fibonacci.md)
 
 ## Sources
 

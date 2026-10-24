@@ -27,7 +27,11 @@ theorem varsOf_cons (C : CNFClause) (φ : CNF) : varsOf (C :: φ) = C.map Prod.f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hp R](../ham-path/hp-r.md)
+
+## Proof depends on
+
+- [Hp T](../ham-path/hp-t.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hamiltonian Cycle Directed Instance](hamiltonian-cycle-directed-instance.md)
 
 ## Sources
 

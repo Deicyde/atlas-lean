@@ -15,7 +15,8 @@ is exact since `p^2 ≡ 1 (mod 8)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mock Theta V](mock-theta-v.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

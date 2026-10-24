@@ -13,7 +13,7 @@ For real `x > 0` and `y`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
 
 ## Sources
 

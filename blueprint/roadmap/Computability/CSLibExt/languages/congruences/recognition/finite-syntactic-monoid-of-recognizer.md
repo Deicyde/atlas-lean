@@ -12,7 +12,14 @@ If the carrier of a recognizing monoid is finite, then so is the syntactic monoi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+
+## Proof depends on
+
+- [Recognizer Image To Syntactic](recognizer-image-to-syntactic.md)
+- [Recognizer Image To Syntactic surjective](recognizer-image-to-syntactic-surjective.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
 
 ## Sources
 

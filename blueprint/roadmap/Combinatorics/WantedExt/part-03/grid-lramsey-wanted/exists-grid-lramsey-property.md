@@ -13,7 +13,7 @@ integer `n` such that every `k`-coloring of `[n] × [n]` contains a monochromati
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grid LRamsey Property](grid-lramsey-property.md)
 
 ## Sources
 

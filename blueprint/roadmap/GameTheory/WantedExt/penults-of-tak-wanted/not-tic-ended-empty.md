@@ -12,7 +12,7 @@ The empty `n × n` board with `n ≥ 1` has not ended in Impartial Tic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tic Ended](tic-ended.md)
 
 ## Sources
 

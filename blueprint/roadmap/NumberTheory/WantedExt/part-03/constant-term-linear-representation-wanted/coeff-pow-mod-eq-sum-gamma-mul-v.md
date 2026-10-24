@@ -13,7 +13,7 @@ The linear representation step `γ(k) · V(n) = V(pn + k)` over `𝔽_p`, entryw
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Deg](laurent-deg.md)
 
 ## Sources
 

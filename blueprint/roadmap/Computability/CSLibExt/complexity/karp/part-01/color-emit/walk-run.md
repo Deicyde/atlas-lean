@@ -13,7 +13,28 @@ and move `D` to `E`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [MS](ms.md)
+- [Stk](stk.md)
+- [D Tok](d-tok.md)
+- [Name](name.md)
+- [Out](out.md)
+- [Prog](prog.md)
+- [Γ](untitled.md)
+- [Cons Edges](../color/cons-edges.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [E B](e-b.md)
+- [Ent run](ent-run.md)
+- [Unit Of](unit-of.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

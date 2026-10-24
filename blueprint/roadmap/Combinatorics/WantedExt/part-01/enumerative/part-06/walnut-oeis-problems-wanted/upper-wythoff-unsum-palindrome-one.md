@@ -12,7 +12,14 @@ The first palindrome is `W_1 = 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Wythoff Unsum Palindrome](upper-wythoff-unsum-palindrome.md)
+
+## Proof depends on
+
+- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
+- [Upper Wythoff Unsum Gap small](upper-wythoff-unsum-gap-small.md)
+- [Upper Wythoff Unsum Marker](upper-wythoff-unsum-marker.md)
+- [Upper Wythoff Unsum Marker zero one](upper-wythoff-unsum-marker-zero-one.md)
 
 ## Sources
 

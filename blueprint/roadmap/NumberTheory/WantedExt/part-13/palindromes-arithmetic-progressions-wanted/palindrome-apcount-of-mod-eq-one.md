@@ -19,7 +19,8 @@ for `j ≤ ⌊k/2⌋` let `r_j`, `s_j`, `m₁*`, `m₂*`, `m₃*`, `δ(m)` be as
 
 ## Depends on
 
-This node has no prerequisites.
+- [Palindrome APCount](palindrome-apcount.md)
+- [Palindromic Half Copy](palindromic-half-copy.md)
 
 ## Sources
 

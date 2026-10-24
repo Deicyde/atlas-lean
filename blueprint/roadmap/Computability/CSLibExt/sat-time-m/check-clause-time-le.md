@@ -12,7 +12,13 @@ A clause check costs at most one tick plus one lookup per literal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Check Clause](check-clause.md)
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Lookup Var](lookup-var.md)
+- [Lookup Var time le](lookup-var-time-le.md)
 
 ## Sources
 

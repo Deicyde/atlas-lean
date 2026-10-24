@@ -12,7 +12,12 @@ Terminal positions belong to `wythoffTerminalPSet ℓ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Terminal PSet](wythoff-terminal-pset.md)
+
+## Proof depends on
+
+- [Wythoff Mex A](wythoff-mex-a.md)
+- [Wythoff Mex B](wythoff-mex-b.md)
 
 ## Sources
 

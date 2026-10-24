@@ -13,6 +13,10 @@ Injective holomorphic maps from `Ω` into the unit disc that fix `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unit Disk](unit-disk.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.Complex.InjectiveDiskMapExtremalDerivWanted](../../../../../../../sources/v2/WantedExt.md)

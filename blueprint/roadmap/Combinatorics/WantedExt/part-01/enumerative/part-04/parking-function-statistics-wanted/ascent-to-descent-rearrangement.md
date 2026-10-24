@@ -14,6 +14,10 @@ see `ascentToDescentRearrangementAux` for the two cases.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ascent To Descent Rearrangement Aux](ascent-to-descent-rearrangement-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.ParkingFunctionStatisticsWanted](../../../../../../../sources/v2/WantedExt.md)

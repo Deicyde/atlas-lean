@@ -13,6 +13,10 @@ Nikolov's actual unit-vector witness for admitted rectangular matrices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Column Admissible](../../../MathlibExt/part-03/matrix-discrepancy/column-admissible.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.KomlosDiscrepancyWanted](../../../../../sources/v2/WantedExt.md)

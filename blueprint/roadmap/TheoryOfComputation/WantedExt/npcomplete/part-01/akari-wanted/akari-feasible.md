@@ -11,7 +11,11 @@ A bulb placement illuminating every empty cell, respecting numbered walls.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Akari Instance](akari-instance.md)
+
+## Proof depends on
+
+- [Illuminates](illuminates.md)
 
 ## Sources
 

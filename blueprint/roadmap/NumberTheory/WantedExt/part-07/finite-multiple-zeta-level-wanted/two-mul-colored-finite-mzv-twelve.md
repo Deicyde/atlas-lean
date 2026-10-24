@@ -14,7 +14,7 @@ lean: MetaMathlibExt.two_mul_coloredFiniteMZV_twelve
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Finite MZV](colored-finite-mzv.md)
 
 ## Sources
 

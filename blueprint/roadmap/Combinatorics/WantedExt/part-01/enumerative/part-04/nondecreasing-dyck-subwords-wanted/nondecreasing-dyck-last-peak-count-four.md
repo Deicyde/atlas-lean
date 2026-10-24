@@ -12,7 +12,7 @@ Four of the paths in `D_4` have last peak of height `1`: `l_{4,1} = 4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondecreasing Dyck Last Peak Count](nondecreasing-dyck-last-peak-count.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ Lemma 2.1 (iv): `U_{m+n} = U_m V_n - y^n U_{m-n}` for `n ≤ m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

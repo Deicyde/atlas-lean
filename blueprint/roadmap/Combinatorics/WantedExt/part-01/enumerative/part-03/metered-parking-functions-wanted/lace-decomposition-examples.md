@@ -13,7 +13,7 @@ The source's examples `lace(3,3,3,3,4,6) = ((3,3),(3,3,4),(6))` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lace Decomposition](lace-decomposition.md)
 
 ## Sources
 

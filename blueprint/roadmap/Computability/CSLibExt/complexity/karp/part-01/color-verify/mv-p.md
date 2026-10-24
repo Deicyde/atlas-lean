@@ -12,7 +12,15 @@ empty (an endpoint past the last vertex).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [K](k.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

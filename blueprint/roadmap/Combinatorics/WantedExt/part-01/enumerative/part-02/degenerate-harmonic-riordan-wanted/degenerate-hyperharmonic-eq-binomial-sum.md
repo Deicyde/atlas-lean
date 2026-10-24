@@ -13,7 +13,7 @@ The hypothesis `r ≤ n` makes the summation range `r ≤ k ≤ n` nonempty, as 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Degenerate Hyperharmonic](generalized-degenerate-hyperharmonic.md)
 
 ## Sources
 

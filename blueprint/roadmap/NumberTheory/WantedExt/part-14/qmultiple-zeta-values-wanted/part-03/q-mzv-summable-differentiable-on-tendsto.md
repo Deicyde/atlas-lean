@@ -17,7 +17,7 @@ The record's remark on how the limit is obtained (interchanging limit and sum) i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q MZV](../part-02/q-mzv.md)
 
 ## Sources
 

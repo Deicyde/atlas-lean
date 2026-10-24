@@ -12,7 +12,17 @@ monoid of any finite DFA recognizing it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Transformation](../syntactic/state-transformation.md)
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Transition Monoid](../syntactic/transition-monoid.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+
+## Proof depends on
+
+- [Recognizer Image To Syntactic](../recognition/recognizer-image-to-syntactic.md)
+- [Recognizes transition Accept](recognizes-transition-accept.md)
+- [Transition Accept](transition-accept.md)
+- [Transition Morphism](../syntactic/transition-morphism.md)
 
 ## Sources
 

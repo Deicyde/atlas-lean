@@ -14,7 +14,11 @@ as in Definition 11 (justified by Theorem 3).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spoof Lehmer](is-spoof-lehmer.md)
+- [Is Trivial Spoof](is-trivial-spoof.md)
+- [Lehmer Lower](lehmer-lower.md)
+- [Lehmer Upper](lehmer-upper.md)
+- [Spoof Of Bases](spoof-of-bases.md)
 
 ## Sources
 

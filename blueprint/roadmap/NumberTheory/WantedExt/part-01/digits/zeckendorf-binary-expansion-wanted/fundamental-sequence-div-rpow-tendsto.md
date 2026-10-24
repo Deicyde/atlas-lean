@@ -14,7 +14,8 @@ fundamental sequences `H` and `H̃`, there are positive reals `α, α̃, φ, φ�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Zeckendorf Eval](zeckendorf-eval.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: MetaMathlibExt.fibRep_examples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Rep](fib-rep.md)
 
 ## Sources
 

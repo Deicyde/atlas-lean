@@ -12,7 +12,13 @@ Under the standing hypothesis, `u` is a two-sided periodic point with period `p`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
+- [Is Two Sided Periodic Point](is-two-sided-periodic-point.md)
+
+## Proof depends on
+
+- [Is Substitution](is-substitution.md)
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

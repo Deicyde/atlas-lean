@@ -12,7 +12,7 @@ lean: MetaMathlibExt.euclidSteps_small_values
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclid Steps](euclid-steps.md)
 
 ## Sources
 

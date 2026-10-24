@@ -12,7 +12,14 @@ lean: Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_requests
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Request](request.md)
+- [Furthest In Future](furthest-in-future.md)
+
+## Proof depends on
+
+- [Cache LTS](cache-lts.md)
+- [Furthest In Future legal](furthest-in-future-legal.md)
 
 ## Sources
 

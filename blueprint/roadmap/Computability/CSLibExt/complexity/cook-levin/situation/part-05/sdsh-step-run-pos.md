@@ -13,7 +13,31 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.sdsh_step_run_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [C Idx](../../family/c-idx.md)
+- [Family](../../family/family.md)
+- [The family](../../shift/sh-family.md)
+- [Enc](../part-01/enc.md)
+- [Cells Hold](../part-04/cells-hold.md)
+- [Code Holds](code-holds.md)
+- [N](../part-01/n.md)
+- [Cell](../part-03/cell.md)
+- [Cn](../part-02/cn.md)
+- [La](../part-01/la.md)
+- [Layout](../part-01/layout.md)
+- [Pl](../part-02/pl.md)
+- [Pu](../part-02/pu.md)
+- [Sa](../part-01/sa.md)
+- [Sit Idx](../part-03/sit-idx.md)
+- [Wa](../part-01/wa.md)
+- [Tr](../part-04/tr.md)
+- [Depth](../part-01/depth.md)
+- [Run I](../part-03/run-i.md)
+- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+
+## Proof depends on
+
+- [L3 (S-definition, real run)](sd-step-run.md)
+- [L3⁺ (positive invariant, real run)](../part-04/sh-step-run-pos.md)
 
 ## Sources
 

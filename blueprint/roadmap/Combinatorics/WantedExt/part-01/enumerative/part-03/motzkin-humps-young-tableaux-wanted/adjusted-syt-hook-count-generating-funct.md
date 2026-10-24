@@ -13,7 +13,8 @@ Lemma 7 states the generating function for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Series](motzkin-series.md)
+- [Syt Hook Count](syt-hook-count.md)
 
 ## Sources
 

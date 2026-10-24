@@ -12,7 +12,12 @@ A terminal position has remoteness `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../sprague-grundy/impartial-game.md)
+- [Smith Remoteness](smith-remoteness.md)
+
+## Proof depends on
+
+- [Smith Remoteness eq](smith-remoteness-eq.md)
 
 ## Sources
 

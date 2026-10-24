@@ -12,7 +12,7 @@ some `(v, w)` with `𝒢₁(v, w, 0) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
 
 ## Sources
 

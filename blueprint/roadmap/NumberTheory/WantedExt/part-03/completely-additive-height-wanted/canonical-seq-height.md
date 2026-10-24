@@ -14,6 +14,11 @@ additivity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Additive Of Prime Values](additive-of-prime-values.md)
+- [Seq Height Index](seq-height-index.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.CompletelyAdditiveHeightWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.squareSplitV_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split V](square-split-v.md)
 
 ## Sources
 

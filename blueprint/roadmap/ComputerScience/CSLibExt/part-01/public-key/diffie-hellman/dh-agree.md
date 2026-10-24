@@ -12,7 +12,7 @@ lean: Cslib.Crypto.PublicKey.dh_agree
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gpow](gpow.md)
 
 ## Sources
 

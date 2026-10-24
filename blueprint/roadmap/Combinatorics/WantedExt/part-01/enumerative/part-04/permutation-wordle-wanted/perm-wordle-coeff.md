@@ -14,6 +14,10 @@ length `n`: the number of secret permutations of `Fin n` guessed in exactly `r` 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PermutationWordleWanted](../../../../../../../sources/v2/WantedExt.md)

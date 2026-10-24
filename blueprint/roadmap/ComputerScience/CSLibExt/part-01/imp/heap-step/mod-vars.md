@@ -11,7 +11,12 @@ The variables that a heap command may assign to.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Cmd](heap-cmd.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [BExp](../syntax/bexp.md)
 
 ## Sources
 

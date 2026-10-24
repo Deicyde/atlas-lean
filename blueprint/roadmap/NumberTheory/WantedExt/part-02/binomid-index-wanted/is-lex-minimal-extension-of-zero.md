@@ -12,7 +12,12 @@ The zero sequence is the lex-minimal extension of each of its prefixes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
+
+## Proof depends on
+
+- [Is Binomid Index](is-binomid-index.md)
+- [Is Binomid Index const](is-binomid-index-const.md)
 
 ## Sources
 

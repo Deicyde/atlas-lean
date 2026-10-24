@@ -13,7 +13,7 @@ identity holds for every real `u`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Harmonic](generalized-harmonic.md)
 
 ## Sources
 

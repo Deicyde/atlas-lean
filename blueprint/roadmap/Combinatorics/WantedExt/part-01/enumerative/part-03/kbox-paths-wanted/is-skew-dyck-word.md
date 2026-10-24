@@ -12,7 +12,7 @@ and `L`s together, and no prefix has more `D`s and `L`s than `U`s.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
 
 ## Sources
 

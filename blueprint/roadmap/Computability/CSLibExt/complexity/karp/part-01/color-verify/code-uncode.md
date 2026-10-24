@@ -12,7 +12,9 @@ lean: Cslib.Complexity.Karp.ColVerify.code_uncode
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Ok Col](ok-col.md)
+- [Uncode](uncode.md)
 
 ## Sources
 

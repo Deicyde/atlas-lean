@@ -12,7 +12,16 @@ The weakest precondition strengthens the weakest liberal precondition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+- [Wlp](../hoare/wlp.md)
+- [Wp](wp.md)
+
+## Proof depends on
+
+- [Big Step](../big-step/big-step.md)
+- [Deterministic](../big-step/deterministic.md)
 
 ## Sources
 

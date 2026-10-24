@@ -14,7 +14,7 @@ symbols are written as Jacobi symbols.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer V](lehmer-v.md)
 
 ## Sources
 

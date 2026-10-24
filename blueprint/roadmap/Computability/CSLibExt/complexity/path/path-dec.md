@@ -11,7 +11,12 @@ PATH: `t` is reachable from `s` in the digraph, both below `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Arc](arc.md)
+- [Encode P](encode-p.md)
 
 ## Sources
 

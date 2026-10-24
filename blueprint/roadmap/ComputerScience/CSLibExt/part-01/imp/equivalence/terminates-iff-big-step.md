@@ -12,7 +12,15 @@ Small-step termination and big-step execution coincide.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Big Step](../big-step/big-step.md)
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+- [Terminates](../small-step/terminates.md)
+
+## Proof depends on
+
+- [Of terminates](of-terminates.md)
+- [Of big Step](of-big-step.md)
 
 ## Sources
 

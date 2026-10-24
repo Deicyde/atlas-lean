@@ -13,7 +13,7 @@ and the same sum equals `∑_j (m + n - 2j)! / ((m - 2j)! (n - j)! j!)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Unit Function](fermat-unit-function.md)
 
 ## Sources
 

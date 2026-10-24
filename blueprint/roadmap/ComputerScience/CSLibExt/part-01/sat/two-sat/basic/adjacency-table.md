@@ -12,7 +12,14 @@ SCC traversal looks them up in expected constant time.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lit](lit.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+
+## Proof depends on
+
+- [Lit List](lit-list.md)
+- [Successors](successors.md)
 
 ## Sources
 

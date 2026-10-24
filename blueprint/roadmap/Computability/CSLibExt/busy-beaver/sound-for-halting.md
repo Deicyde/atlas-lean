@@ -13,7 +13,14 @@ halt).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal Theory](formal-theory.md)
+
+## Proof depends on
+
+- [Halts](halts.md)
+- [Machine](machine.md)
+- [Halts Sentence](halts-sentence.md)
+- [Not Halts Sentence](not-halts-sentence.md)
 
 ## Sources
 

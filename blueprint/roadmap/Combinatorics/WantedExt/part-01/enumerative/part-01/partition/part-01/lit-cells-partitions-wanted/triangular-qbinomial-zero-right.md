@@ -12,7 +12,11 @@ lean: MetaMathlibExt.triangularQBinomial_zero_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular QBinomial](triangular-qbinomial.md)
+
+## Proof depends on
+
+- [Decreasing Parts](decreasing-parts.md)
 
 ## Sources
 

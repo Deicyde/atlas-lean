@@ -13,7 +13,13 @@ lean: Cslib.MachineLearning.WeightedMajority.mistake_bound_nat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+- [Expert Mistakes](expert-mistakes.md)
+- [Mistakes](mistakes.md)
+
+## Proof depends on
+
+- [The mistake bound for the penalty `1/2`](mistake-bound.md)
 
 ## Sources
 

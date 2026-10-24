@@ -13,7 +13,8 @@ or `k ≥ 5`, `2 ≤ r ≤ k - 2` and `h ∈ {r, r + 1}`, then `A` is an arithme
 
 ## Depends on
 
-This node has no prerequisites.
+- [At Least Distinct Sumset](at-least-distinct-sumset.md)
+- [Is APOf Length](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources
 

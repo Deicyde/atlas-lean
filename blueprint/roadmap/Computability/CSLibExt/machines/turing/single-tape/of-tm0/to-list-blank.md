@@ -12,7 +12,12 @@ Read a `StackTape` over the non-blank symbols as a `TM0` half-tape, cell by cell
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+
+## Proof depends on
+
+- [Cell Symbol](cell-symbol.md)
+- [To List Blank](../tape-view/to-list-blank.md)
 
 ## Sources
 

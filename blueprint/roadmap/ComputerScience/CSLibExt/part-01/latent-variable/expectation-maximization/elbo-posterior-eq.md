@@ -12,7 +12,10 @@ The ELBO at the posterior of `θ` splits as `Q(θ' | θ)` plus the posterior ent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elbo](elbo.md)
+- [Em Q](em-q.md)
+- [Post Entropy](post-entropy.md)
+- [Posterior](posterior.md)
 
 ## Sources
 

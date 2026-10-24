@@ -12,7 +12,11 @@ lean: MetaMathlibExt.hyperLucasLeonardoP_zero_left
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Lucas Leonardo P](hyper-lucas-leonardo-p.md)
+
+## Proof depends on
+
+- [Lucas Leonardo P](lucas-leonardo-p.md)
 
 ## Sources
 

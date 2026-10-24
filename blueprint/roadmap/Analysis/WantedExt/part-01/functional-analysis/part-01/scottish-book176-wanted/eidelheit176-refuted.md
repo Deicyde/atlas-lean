@@ -16,7 +16,7 @@ R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem176 Claim](scottish-book-problem176-claim.md)
 
 ## Sources
 

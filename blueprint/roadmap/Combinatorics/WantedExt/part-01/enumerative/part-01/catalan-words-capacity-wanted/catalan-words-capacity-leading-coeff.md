@@ -12,7 +12,8 @@ Catalan words of length `n` with maximum capacity is `2` if `3 ∣ n` and `1` ot
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+- [Catalan Words](catalan-words.md)
 
 ## Sources
 

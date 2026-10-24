@@ -12,7 +12,8 @@ The length of `fenceInput w i j`: the word, the paddings and the two walls.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
+- [Fence Input](fence-input.md)
 
 ## Sources
 

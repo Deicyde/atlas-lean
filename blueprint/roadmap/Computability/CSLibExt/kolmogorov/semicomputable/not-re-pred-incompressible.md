@@ -12,7 +12,12 @@ lean: Cslib.Kolmogorov.not_rePred_incompressible
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+
+## Proof depends on
+
+- [Incompressible strings exist at every length](../incompressible/exists-incompressible.md)
+- [No recognizable set with arbitrarily long members consists of incompressible strings](not-re-pred-of-forall-incompressible.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Nabawanda, Rakotondrajao, and Bamunoba's recursion as quoted in the paper:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flattened Perm Run Count](flattened-perm-run-count.md)
 
 ## Sources
 

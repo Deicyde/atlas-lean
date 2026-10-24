@@ -15,6 +15,10 @@ The periodic correction `A_{x^{-1}}(n)` of Proposition 4:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime To PDen](prime-to-pden.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HigherANumbersPeriodicSumWanted](../../../../../sources/v2/WantedExt.md)

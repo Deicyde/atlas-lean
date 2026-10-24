@@ -12,7 +12,7 @@ For fixed `j, k ≥ 1`, the `n`th member `p_{j,k,n}` of `N_{jk}` satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

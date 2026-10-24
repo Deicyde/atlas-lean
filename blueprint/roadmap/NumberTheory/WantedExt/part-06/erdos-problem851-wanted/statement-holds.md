@@ -17,7 +17,7 @@ Yuchen Ding and Wenguang Zhai, A generalization of the Romanoff theorem, arXiv:2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Statement](statement.md)
 
 ## Sources
 

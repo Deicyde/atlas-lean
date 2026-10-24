@@ -13,7 +13,7 @@ Rowland–Zeilberger congruence mod `p^a` for `P̃` with `P̃(x)^p ≡ P̃(x^p) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Cartier](laurent-cartier.md)
 
 ## Sources
 

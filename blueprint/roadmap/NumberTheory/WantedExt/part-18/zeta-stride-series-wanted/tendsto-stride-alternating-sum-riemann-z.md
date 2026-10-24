@@ -15,7 +15,7 @@ partial sums. The second equality of (9) and the general identity (8) use the qu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Alternating Sum](stride-alternating-sum.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ No task has depth `0`, so level `0` is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+- [Level Card](level-card.md)
+
+## Proof depends on
+
+- [Depth](depth.md)
 
 ## Sources
 

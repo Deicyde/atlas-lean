@@ -18,7 +18,7 @@ the measures of the corresponding regions for the limiting distribution of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Disc Lattice Count](disc-lattice-count.md)
 
 ## Sources
 

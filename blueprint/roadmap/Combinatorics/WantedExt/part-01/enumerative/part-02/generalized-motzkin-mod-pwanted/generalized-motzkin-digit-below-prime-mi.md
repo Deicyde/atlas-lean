@@ -14,7 +14,8 @@ Proposition 5(i).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Trinomial](central-trinomial.md)
+- [Generalized Motzkin](generalized-motzkin.md)
 
 ## Sources
 

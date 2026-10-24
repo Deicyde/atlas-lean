@@ -16,6 +16,10 @@ the left, and end with everyone and the torch on the right.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bridge Schedule From](bridge-schedule-from.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BridgeTorchGeneralizationsWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,11 @@ The entries of a code: `(q, a, q', s)` for every table position `(q, a)` holding
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../code/code.md)
+
+## Proof depends on
+
+- [Lookup](../code/lookup.md)
 
 ## Sources
 

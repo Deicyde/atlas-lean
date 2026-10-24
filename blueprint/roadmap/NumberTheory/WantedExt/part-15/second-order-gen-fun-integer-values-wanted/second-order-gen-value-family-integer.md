@@ -12,7 +12,8 @@ If `r, s` are coprime (`s ≠ 0`) and `A(r/s)` is an integer, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Bi Seq](second-order-bi-seq.md)
+- [Second Order Gen Value](second-order-gen-value.md)
 
 ## Sources
 

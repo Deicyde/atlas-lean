@@ -12,7 +12,13 @@ Membership in the alignment list is exactly validity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](alignment.md)
+- [Is Alignment](is-alignment.md)
+- [Alignments](alignments.md)
+
+## Proof depends on
+
+- [Alignments Aux](alignments-aux.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ proportion of digits equal to `1` tends to `2/3` and the proportion equal to `2`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cloitre Approx](../../../../Combinatorics/MathlibExt/part-01/infinite-word/cloitre-sequence/cloitre-approx.md)
 
 ## Sources
 

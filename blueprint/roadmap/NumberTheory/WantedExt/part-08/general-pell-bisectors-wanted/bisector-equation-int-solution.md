@@ -17,7 +17,8 @@ The quotient `g_{(2m-1) 2n} / g_{2m-1}` is integer division; it is exact.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
+- [Neg Pell G](neg-pell-g.md)
 
 ## Sources
 

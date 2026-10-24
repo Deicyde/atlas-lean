@@ -11,7 +11,23 @@ One EM step for the Bernoulli mixture, on rich data.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rich](rich.md)
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Params](params.md)
+- [Valid](valid.md)
+- [Bern PMF](bern-pmf.md)
+- [Joint](joint.md)
+- [M Step](m-step.md)
+- [Mass](mass.md)
+- [Ones](ones.md)
+- [Resp](resp.md)
+- [Zeros](zeros.md)
+- [Is Dist posterior](../expectation-maximization/is-dist-posterior.md)
+- [Marginal](../expectation-maximization/marginal.md)
+- [Posterior](../expectation-maximization/posterior.md)
 
 ## Sources
 

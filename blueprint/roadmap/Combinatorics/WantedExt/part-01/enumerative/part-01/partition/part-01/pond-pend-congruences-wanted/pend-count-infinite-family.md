@@ -12,7 +12,7 @@ the division is exact since `3^{2α} ≡ 1 (mod 8)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pend Count](pend-count.md)
 
 ## Sources
 

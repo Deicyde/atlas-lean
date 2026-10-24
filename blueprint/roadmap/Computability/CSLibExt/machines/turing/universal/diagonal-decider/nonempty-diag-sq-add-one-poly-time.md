@@ -13,7 +13,12 @@ time, reading the input bits and writing the answer bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The diagonal language](../diagonalization/diag.md)
+
+## Proof depends on
+
+- [The reformatting machine for `n ↦ n ^ 2 + 1`](reformat.md)
+- [The upper bound, given the reformatting machine](../diagonalization/nonempty-diag-poly-time.md)
 
 ## Sources
 

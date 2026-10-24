@@ -12,7 +12,16 @@ Summing out the last vertex preserves weighted sums of a function of any other v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
+- [Eliminate](../variable-elimination/eliminate.md)
+- [Weight](../variable-elimination/weight.md)
+
+## Proof depends on
+
+- [Last Parent](../variable-elimination/last-parent.md)
+- [Message](../variable-elimination/message.md)
+- [Parent](../variable-elimination/parent.md)
+- [Sum snoc](../bayesian-network/sum-snoc.md)
 
 ## Sources
 

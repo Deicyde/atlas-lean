@@ -11,7 +11,13 @@ The boundary before literal `j`: its position, or `V` past the last literal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [N Lits](n-lits.md)
+- [Num Vars](num-vars.md)
+- [Lit Pos](lit-pos.md)
 
 ## Sources
 

@@ -12,7 +12,18 @@ Walking a non-empty clause from its last literal produces `chain`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Walk F](walk-f.md)
+- [Chain](../three-sat/chain.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Lit Cl](lit-cl.md)
+- [Nz](nz.md)
+- [Chain Tail](../three-sat/chain-tail.md)
+- [Fresh](../three-sat/fresh.md)
+- [Ren Lit](../three-sat/ren-lit.md)
 
 ## Sources
 

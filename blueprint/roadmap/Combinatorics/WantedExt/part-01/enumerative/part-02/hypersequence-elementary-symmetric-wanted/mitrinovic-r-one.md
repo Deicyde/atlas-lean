@@ -12,7 +12,7 @@ lean: MetaMathlibExt.mitrinovicR_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mitrinovic R](mitrinovic-r.md)
 
 ## Sources
 

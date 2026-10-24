@@ -12,7 +12,9 @@ lean: MetaMathlibExt.pisa_relativePosition_of_letterPosition_b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Substitution Image](is-substitution-image.md)
+- [Letter Position](letter-position.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

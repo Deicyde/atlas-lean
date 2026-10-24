@@ -11,7 +11,15 @@ The host's stacks inside the full machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](../assembly/hk.md)
+- [HΓ](../assembly/h.md)
+- [FK](fk.md)
+- [FΓ](f.md)
+- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+
+## Proof depends on
+
+- [PS](ps.md)
 
 ## Sources
 

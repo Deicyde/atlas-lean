@@ -17,7 +17,8 @@ needed to reach them from named `TimeM` algorithms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decides In Declared Poly Time](decides-in-declared-poly-time.md)
+- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

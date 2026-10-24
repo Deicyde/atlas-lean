@@ -15,6 +15,10 @@ exactly `w xᵢ` (`linRegLikelihood_zero_apply`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lin Reg Likelihood PDF](lin-reg-likelihood-pdf.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Bayesian.LinearRegression](../../../../../../sources/v2/CSLibExt.md)

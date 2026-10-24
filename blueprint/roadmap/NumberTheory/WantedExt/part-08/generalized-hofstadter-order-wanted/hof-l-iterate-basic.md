@@ -15,7 +15,10 @@ strictly increasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof L](hof-l.md)
+- [Hof Prefix](hof-prefix.md)
+- [Hof Tau List](hof-tau-list.md)
+- [Hof Word](hof-word.md)
 
 ## Sources
 

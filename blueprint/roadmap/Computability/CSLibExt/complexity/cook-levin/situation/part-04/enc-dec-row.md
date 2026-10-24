@@ -12,7 +12,17 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.enc_decRow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [Row OK](row-ok.md)
+- [Cell](../part-03/cell.md)
+- [Code](../part-03/code.md)
+- [C1 decoder](dec-row.md)
+
+## Proof depends on
+
+- [Dec O](../part-01/dec-o.md)
+- [Dec S](../part-03/dec-s.md)
+- [Get Elem? dec S](get-elem-dec-s.md)
 
 ## Sources
 

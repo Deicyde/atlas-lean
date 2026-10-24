@@ -14,7 +14,9 @@ the mean of `ω_k` over `N_h ∩ M_n` is `W(∑_P b_P) + O_ε(q^{-n/(h(h+1)) + �
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full Moment](h-full-moment.md)
+- [H Full Omega Mult Sum](h-full-omega-mult-sum.md)
+- [H Full Weighted Mean](h-full-weighted-mean.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ and the only losing state so reachable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accel Zeck Losing](accel-zeck-losing.md)
+- [Accel Zeck Move](accel-zeck-move.md)
 
 ## Sources
 

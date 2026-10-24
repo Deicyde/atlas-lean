@@ -14,7 +14,8 @@ from `0` as `n ↦ A_{n+1} - κ(n + 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KAutomatic](../../../../../MathlibExt/part-02/words/automatic/is-kautomatic.md)
+- [Anti Recurrence](anti-recurrence.md)
 
 ## Sources
 

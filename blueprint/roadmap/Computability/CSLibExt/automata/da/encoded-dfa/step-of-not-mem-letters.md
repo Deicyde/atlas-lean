@@ -12,7 +12,13 @@ Letters without listed transitions fix every state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+- [Letters](letters.md)
+- [Step](step.md)
+
+## Proof depends on
+
+- [Step eq self](step-eq-self.md)
 
 ## Sources
 

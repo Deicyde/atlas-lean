@@ -12,7 +12,11 @@ lean: MetaMathlibExt.osat_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Osat](osat.md)
+
+## Proof depends on
+
+- [Is Opx Saturating](is-opx-saturating.md)
 
 ## Sources
 

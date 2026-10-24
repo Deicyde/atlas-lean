@@ -12,7 +12,7 @@ lean: MetaMathlibExt.one_mem_integerGroupDeterminants
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Group Determinants](integer-group-determinants.md)
 
 ## Sources
 

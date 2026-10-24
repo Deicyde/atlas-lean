@@ -11,7 +11,11 @@ lean: Cslib.Decidability.Post.PCP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](domino.md)
+
+## Proof depends on
+
+- [Is Solution](is-solution.md)
 
 ## Sources
 

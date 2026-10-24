@@ -13,7 +13,7 @@ The source's example `U (UD) (DU)^2 (UD)^2 (DU)^2 D` has runs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Runs](bool-runs.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The states of a code: the initial state `0` and every state its table enters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
 
 ## Sources
 

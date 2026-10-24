@@ -14,7 +14,19 @@ which must be zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+- [Is Syndrome Table](is-syndrome-table.md)
+- [Min Dist](min-dist.md)
+- [Of Parity Check](of-parity-check.md)
+- [Syndrome decoding](syndrome-decode.md)
+
+## Proof depends on
+
+- [Min Dist eq min Weight](min-dist-eq-min-weight.md)
+- [Min Weight](min-weight.md)
+- [Syndrome](syndrome.md)
+- [Syndrome add of mem](syndrome-add-of-mem.md)
+- [Hamming Dist eq hamming Norm sub](hamming-dist-eq-hamming-norm-sub.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ An OR gadget with inputs `a` and `o`; returns its output vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](col-st.md)
 
 ## Sources
 

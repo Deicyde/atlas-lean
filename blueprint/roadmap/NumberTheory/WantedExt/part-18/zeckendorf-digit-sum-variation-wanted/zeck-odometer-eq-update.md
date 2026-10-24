@@ -12,7 +12,8 @@ On a point of `𝕏` ending in `00`, the odometer sets the unit digit `x_2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

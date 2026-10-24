@@ -12,7 +12,11 @@ lean: MetaMathlibExt.one_mem_qMZVSpace
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q MZVSpace](q-mzvspace.md)
+
+## Proof depends on
+
+- [Q MZV](q-mzv.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ The potential argument over a whole request sequence, against `offlineCost`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv](inv.md)
+- [Mtf Cost](mtf-cost.md)
+- [Mtf Final](mtf-final.md)
+- [Offline Cost](offline-cost.md)
+
+## Proof depends on
+
+- [Mtf Cost add inv le free](mtf-cost-add-inv-le-free.md)
+- [Offline Cost Free](offline-cost-free.md)
+- [Offline Cost Free no Move](offline-cost-free-no-move.md)
 
 ## Sources
 

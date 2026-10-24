@@ -14,7 +14,13 @@ every loyal lieutenant decides the commander's value `v` under `OM(m)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Om](om.md)
+
+## Proof depends on
+
+- [Majority](majority.md)
+- [Majority eq of lt count](majority-eq-of-lt-count.md)
+- [Received](received.md)
 
 ## Sources
 

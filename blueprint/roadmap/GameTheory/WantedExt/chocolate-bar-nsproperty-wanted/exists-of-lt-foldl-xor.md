@@ -13,7 +13,7 @@ Multidimensional mex step: let `f t` (`t < m`) have the NS property, `x t ≤ f 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ this holds because the half-tape is blank beyond its end.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [To List Blank](to-list-blank.md)
+
+## Proof depends on
+
+- [Cell Symbol](cell-symbol.md)
+- [To List Blank](../tape-view/to-list-blank.md)
+- [To List Blank cons](../tape-view/to-list-blank-cons.md)
 
 ## Sources
 

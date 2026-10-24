@@ -12,7 +12,7 @@ Membership in `singerSet` unfolds to its defining equation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Singer Set](singer-set.md)
 
 ## Sources
 

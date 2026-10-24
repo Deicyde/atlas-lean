@@ -12,7 +12,13 @@ The Reed-Solomon code has dimension `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](../linear-code/linear-code.md)
+- [Code](code.md)
+
+## Proof depends on
+
+- [Encode Lin](encode-lin.md)
+- [Inj On encode](inj-on-encode.md)
 
 ## Sources
 

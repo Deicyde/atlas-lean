@@ -12,7 +12,12 @@ A language with finite syntactic monoid is regular.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+
+## Proof depends on
+
+- [Syntactic DFA](syntactic-dfa.md)
+- [Syntactic DFA accepts](syntactic-dfa-accepts.md)
 
 ## Sources
 

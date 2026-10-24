@@ -13,6 +13,10 @@ Whether pair number `q` of `pairs n` is an edge containing vertex `v`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pairs](../../part-01/clique/pairs.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.SubsetSum](../../../../../../../sources/v2/CSLibExt.md)

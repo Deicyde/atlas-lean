@@ -12,7 +12,7 @@ lean: MetaMathlibExt.stirlingVTildeMatrix_apply_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling VTilde Matrix](stirling-vtilde-matrix.md)
 
 ## Sources
 

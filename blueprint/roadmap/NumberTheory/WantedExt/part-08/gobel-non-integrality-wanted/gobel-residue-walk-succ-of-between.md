@@ -17,7 +17,7 @@ definition of `tilde g_l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Residue Walk](gobel-residue-walk.md)
 
 ## Sources
 

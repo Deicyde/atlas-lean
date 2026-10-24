@@ -14,6 +14,12 @@ tape by a halting `n`-state two-symbol machine.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Machine](machine.md)
+- [Move](move.md)
+- [Score Of](score-of.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.BusyBeaver](../../../../sources/v2/CSLibExt.md)

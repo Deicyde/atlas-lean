@@ -16,7 +16,7 @@ Cui and Gu's `p`-dissection of `ψ(q) = f(q, q³)` for an odd prime `p`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Theta Raw](../../../../../../../../NumberTheory/MathlibExt/part-01/modular-forms/jacobi-theta/ramanujan/ramanujan-theta-raw.md)
 
 ## Sources
 

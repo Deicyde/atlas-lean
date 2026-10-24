@@ -13,7 +13,10 @@ with `(1, 1, 1)` is of this form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
+- [Gen Cohn P1](gen-cohn-p1.md)
+- [Gen Cohn Q1](gen-cohn-q1.md)
+- [Gen Cohn R1](gen-cohn-r1.md)
 
 ## Sources
 

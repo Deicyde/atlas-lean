@@ -12,7 +12,8 @@ lean: MetaMathlibExt.extendedCarlitzBetaPoly_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carlitz Eta Poly](carlitz-eta-poly.md)
+- [Extended Carlitz Beta Poly](extended-carlitz-beta-poly.md)
 
 ## Sources
 

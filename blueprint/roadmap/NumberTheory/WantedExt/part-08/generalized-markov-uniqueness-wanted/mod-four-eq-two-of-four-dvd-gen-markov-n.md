@@ -13,7 +13,7 @@ displayed fraction is garbled in the record, is omitted.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Number](is-gen-markov-number.md)
 
 ## Sources
 

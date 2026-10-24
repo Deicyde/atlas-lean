@@ -12,7 +12,7 @@ The recurrence (u-1-2) of `𝖴_α` (0-based entries).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alpha Upper Entry](alpha-upper-entry.md)
 
 ## Sources
 

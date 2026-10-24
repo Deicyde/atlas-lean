@@ -13,7 +13,8 @@ move along an edge from a vertex holding at least `k + 1` pebbles.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pebbling Moves](pebbling-moves.md)
+- [Pebbling Step](pebbling-step.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The clause vertices of a row are the clauses sent to its diamond.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Picks](hf-picks.md)
 
 ## Sources
 

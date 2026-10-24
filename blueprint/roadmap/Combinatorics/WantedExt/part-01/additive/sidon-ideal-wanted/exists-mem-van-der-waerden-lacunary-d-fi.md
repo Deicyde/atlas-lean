@@ -11,7 +11,11 @@ Theorem 5: some set lies in `W ∩ Lac ∩ Dfin` but not in the Sidon ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gap Lacunary Set](is-gap-lacunary-set.md)
+- [D Fin Ideal](d-fin-ideal.md)
+- [Generated Ideal](generated-ideal.md)
+- [Sidon Ideal](sidon-ideal.md)
+- [Van Der Waerden Ideal](van-der-waerden-ideal.md)
 
 ## Sources
 

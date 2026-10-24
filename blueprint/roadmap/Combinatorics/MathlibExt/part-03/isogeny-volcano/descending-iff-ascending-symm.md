@@ -12,7 +12,13 @@ Descending is ascending with swapped endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Isogeny Volcano](isogeny-volcano.md)
+- [Is Ascending Edge](is-ascending-edge.md)
+- [Is Descending Edge](is-descending-edge.md)
+
+## Proof depends on
+
+- [Multigraph](multigraph.md)
 
 ## Sources
 

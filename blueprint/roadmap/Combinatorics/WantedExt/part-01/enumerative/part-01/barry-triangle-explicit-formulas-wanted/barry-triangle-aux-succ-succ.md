@@ -12,7 +12,7 @@ The defining recurrence `s(β, n + 1, k + 1) = s(β + 1, n, k) + β (k + 1) s(β
 
 ## Depends on
 
-This node has no prerequisites.
+- [Barry Triangle Aux](barry-triangle-aux.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ An efficient dominating set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Efficient Domination Instance](efficient-domination-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ injective tensor product need not have finite sum of moduli of its entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem88 Claim](scottish-book-problem88-claim.md)
 
 ## Sources
 

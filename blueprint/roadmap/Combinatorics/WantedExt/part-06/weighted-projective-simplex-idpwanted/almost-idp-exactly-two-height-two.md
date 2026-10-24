@@ -12,7 +12,9 @@ elements have height greater than `1`, and both have height exactly `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost IDPWeights](almost-idpweights.md)
+- [Hilbert Basis](hilbert-basis.md)
+- [Weighted Simplex](weighted-simplex.md)
 
 ## Sources
 

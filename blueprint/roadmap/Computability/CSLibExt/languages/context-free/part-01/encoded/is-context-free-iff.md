@@ -13,7 +13,14 @@ it.**
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](encoded-cfg.md)
+- [Language](language.md)
+
+## Proof depends on
+
+- [Language is Context Free](language-is-context-free.md)
+- [The encoding of a grammar generates the same language](language-of-cfg.md)
+- [Of CFG](of-cfg.md)
 
 ## Sources
 

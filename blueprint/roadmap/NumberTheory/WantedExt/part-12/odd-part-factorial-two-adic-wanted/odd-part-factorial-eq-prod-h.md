@@ -13,7 +13,8 @@ natural numbers because this is an exact factorial identity, not a congruence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Part](odd-part.md)
+- [Odd Product Block](odd-product-block.md)
 
 ## Sources
 

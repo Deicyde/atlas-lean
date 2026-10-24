@@ -11,7 +11,11 @@ The effective number of points of component `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Resp](resp.md)
 
 ## Sources
 

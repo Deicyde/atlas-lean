@@ -12,7 +12,11 @@ Moved to `Cslib.Complexity.Karp.pairs_nodup` (`Karp.CliqueCorrect`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairs](../clique/pairs.md)
+
+## Proof depends on
+
+- [Pairs nodup](../clique-correct/pairs-nodup.md)
 
 ## Sources
 

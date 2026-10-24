@@ -11,7 +11,12 @@ The isotropic variance update `σ k'² = S k / (d N k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Mass](mass.md)
+- [Scatter](scatter.md)
 
 ## Sources
 

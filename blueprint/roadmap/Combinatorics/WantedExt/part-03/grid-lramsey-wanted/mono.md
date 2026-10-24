@@ -13,7 +13,7 @@ monotone in the grid size.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grid LRamsey Property](grid-lramsey-property.md)
 
 ## Sources
 

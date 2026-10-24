@@ -13,7 +13,9 @@ woman ranked last by every other person of the opposite gender) is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+- [Man Rank](man-rank.md)
+- [Woman Rank](woman-rank.md)
 
 ## Sources
 

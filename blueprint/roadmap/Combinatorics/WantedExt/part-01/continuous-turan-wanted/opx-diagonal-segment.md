@@ -15,7 +15,7 @@ Theorem 4.2: the closed segment from `(0, 0)` to `(a, b)`, `a, b > 0`, has
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

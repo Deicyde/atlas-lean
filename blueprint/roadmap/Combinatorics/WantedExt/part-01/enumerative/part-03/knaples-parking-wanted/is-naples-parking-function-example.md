@@ -13,7 +13,11 @@ parking function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Naples Parking Function](is-naples-parking-function.md)
+
+## Proof depends on
+
+- [Naples Park](naples-park.md)
 
 ## Sources
 

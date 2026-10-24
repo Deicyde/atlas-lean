@@ -12,7 +12,7 @@ and `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Params](params.md)
 
 ## Sources
 

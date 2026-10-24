@@ -14,7 +14,8 @@ first two numbers `L_{2n}`, `L_{2n} + 1` of `Λ_{2n}` form a trident, i.e. their
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

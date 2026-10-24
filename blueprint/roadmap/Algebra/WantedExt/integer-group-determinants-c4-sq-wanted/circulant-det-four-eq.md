@@ -13,7 +13,7 @@ omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circulant Det Four](circulant-det-four.md)
 
 ## Sources
 

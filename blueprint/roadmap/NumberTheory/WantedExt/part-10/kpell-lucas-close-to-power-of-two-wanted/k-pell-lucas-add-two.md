@@ -13,7 +13,7 @@ The recurrence once all `k - 1` earlier terms have nonnegative index: for `k - 2
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Pell Lucas](k-pell-lucas.md)
 
 ## Sources
 

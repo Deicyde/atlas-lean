@@ -11,7 +11,8 @@ The canonical morphism from words to their syntactic classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](syntactic-monoid.md)
+- [Syntactic Con](syntactic-con.md)
 
 ## Sources
 

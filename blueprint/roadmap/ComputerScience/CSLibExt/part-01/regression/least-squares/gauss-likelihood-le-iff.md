@@ -13,7 +13,8 @@ squares.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Likelihood](gauss-likelihood.md)
+- [Rss](rss.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Proposition 7: for `0 ≤ k ≤ t` the multiset `M = {0^{(b_0)}, …, t^{(b_t)}}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vn Arrangement Count](vn-arrangement-count.md)
 
 ## Sources
 

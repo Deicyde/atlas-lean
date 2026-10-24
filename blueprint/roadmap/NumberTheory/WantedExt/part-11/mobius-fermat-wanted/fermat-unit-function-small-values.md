@@ -12,7 +12,7 @@ Small values of `u_M`: `u_M 1 = u_M 3 = u_M 7 = u_M 63 = 1` and `u_M 2 = u_M 9 =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Unit Function](fermat-unit-function.md)
 
 ## Sources
 

@@ -16,7 +16,19 @@ fails.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
+- [Agreement](agreement.md)
+- [Validity](validity.md)
+
+## Proof depends on
+
+- [Decision](decision.md)
+- [Inbox](inbox.md)
+- [Init State](init-state.md)
+- [Init State of ne](init-state-of-ne.md)
+- [State](state.md)
+- [State succ](state-succ.md)
+- [States eq of inbox eq](states-eq-of-inbox-eq.md)
 
 ## Sources
 

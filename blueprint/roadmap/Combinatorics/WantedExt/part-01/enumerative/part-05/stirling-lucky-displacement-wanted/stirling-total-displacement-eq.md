@@ -11,7 +11,8 @@ For `w ∈ Q_n`, `d(w) = n²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Stirling Total Displacement](stirling-total-displacement.md)
 
 ## Sources
 

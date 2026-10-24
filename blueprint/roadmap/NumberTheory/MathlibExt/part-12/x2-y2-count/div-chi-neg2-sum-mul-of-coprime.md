@@ -12,7 +12,7 @@ Divisor sums of a completely multiplicative function are multiplicative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Div Chi Neg2 Sum](div-chi-neg2-sum.md)
 
 ## Sources
 

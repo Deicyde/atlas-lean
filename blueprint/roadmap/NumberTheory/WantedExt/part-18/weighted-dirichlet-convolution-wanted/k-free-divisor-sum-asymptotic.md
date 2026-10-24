@@ -17,7 +17,7 @@ The infinite product is a `tprod` over primes; the `O` is as `x → ∞`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Indicator](b-free-indicator.md)
 
 ## Sources
 

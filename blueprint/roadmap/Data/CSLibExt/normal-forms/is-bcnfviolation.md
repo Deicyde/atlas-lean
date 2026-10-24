@@ -11,7 +11,11 @@ lean: Cslib.Databases.IsBCNFViolation
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](../functional-dependencies/fd.md)
+
+## Proof depends on
+
+- [Attr Closure](../functional-dependencies/attr-closure.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ The signature that is covered everywhere, `σ_• = (•,…,•)` in gray (Mert
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination Signature](domination-signature.md)
+
+## Proof depends on
+
+- [Domination State](domination-state.md)
+- [Is Domination Signature](is-domination-signature.md)
 
 ## Sources
 

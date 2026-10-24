@@ -12,7 +12,13 @@ The overlap score is attained by some overlap pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nw Score](../sequence-alignment/nw-score.md)
+- [Overlap Pairs](overlap-pairs.md)
+- [Overlap Score](overlap-score.md)
+
+## Proof depends on
+
+- [List Max](../sequence-alignment/list-max.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Representability criterion for triangular numbers: for `n ≥ 1` and an odd prim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
 
 ## Sources
 

@@ -16,7 +16,8 @@ term at position `n` becomes leader within `a + b + 1` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Throwback](throwback.md)
+- [Throwback Sequence](throwback-sequence.md)
 
 ## Sources
 

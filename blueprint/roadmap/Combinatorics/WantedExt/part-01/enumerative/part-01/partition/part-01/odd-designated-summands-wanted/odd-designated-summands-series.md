@@ -14,6 +14,10 @@ designated summands into odd parts, as an integer power series.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.OddDesignatedSummandsWanted](../../../../../../../../../sources/v2/WantedExt.md)

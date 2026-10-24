@@ -12,7 +12,10 @@ The total weight after an update: the wrong side keeps a `β` fraction of its we
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+- [Total](total.md)
+- [Update](update.md)
+- [Weight On](weight-on.md)
 
 ## Sources
 

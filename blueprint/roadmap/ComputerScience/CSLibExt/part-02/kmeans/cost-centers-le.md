@@ -13,7 +13,14 @@ best centers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Centers](centers.md)
+- [Cost](cost.md)
+
+## Proof depends on
+
+- [Centroid](centroid.md)
+- [Cost eq sum clusters](cost-eq-sum-clusters.md)
+- [The centroid minimizes the sum of squared distances](sum-sq-eq.md)
 
 ## Sources
 

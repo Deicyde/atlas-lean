@@ -11,7 +11,11 @@ The real world: the distinguisher with uniform coins `s` queries `F k` for a uni
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+
+## Proof depends on
+
+- [Run](run.md)
 
 ## Sources
 

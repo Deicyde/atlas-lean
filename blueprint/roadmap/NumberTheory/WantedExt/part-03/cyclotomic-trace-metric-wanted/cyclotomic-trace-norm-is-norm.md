@@ -12,7 +12,7 @@ lean: MetaMathlibExt.cyclotomicTraceNorm_isNorm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Trace Norm](cyclotomic-trace-norm.md)
 
 ## Sources
 

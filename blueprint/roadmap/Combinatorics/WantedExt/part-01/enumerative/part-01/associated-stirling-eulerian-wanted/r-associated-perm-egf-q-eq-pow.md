@@ -13,7 +13,8 @@ with the power read as `exp(q ln A^r(x,u))`: for every `L` with `L(0) = 0` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RAssociated Cycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rassociated-cycle-perm.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

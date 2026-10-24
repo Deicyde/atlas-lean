@@ -14,7 +14,7 @@ over `i, j ≥ 0` (an empty sum when `n ≤ s`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Odd Minus Even](composition-odd-minus-even.md)
 
 ## Sources
 

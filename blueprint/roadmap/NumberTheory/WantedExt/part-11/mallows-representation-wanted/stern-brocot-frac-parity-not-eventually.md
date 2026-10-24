@@ -11,7 +11,7 @@ The parities of the numerators of `f_1(α), f_2(α), …` are not eventually con
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Frac](stern-brocot-frac.md)
 
 ## Sources
 

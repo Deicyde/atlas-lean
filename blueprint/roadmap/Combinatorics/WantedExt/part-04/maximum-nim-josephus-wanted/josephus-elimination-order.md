@@ -15,6 +15,10 @@ formalizes that circle and fuel `n` records all `n` eliminations; there is no de
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Josephus Elimination Order Aux](josephus-elimination-order-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.MaximumNimJosephusWanted](../../../../../sources/v2/WantedExt.md)

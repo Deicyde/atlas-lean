@@ -11,7 +11,13 @@ Exact `n`-step runs of this converter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BLab](blab.md)
+- [BStk](bstk.md)
+
+## Proof depends on
+
+- [Prog](prog-2.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

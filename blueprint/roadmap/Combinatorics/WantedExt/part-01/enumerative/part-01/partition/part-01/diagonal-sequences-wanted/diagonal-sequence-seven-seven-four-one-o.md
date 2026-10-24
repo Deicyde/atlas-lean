@@ -12,7 +12,7 @@ The paper's running example: `δ((7,7,4,1,1,1)) = (1,2,3,4,4,4,2,1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

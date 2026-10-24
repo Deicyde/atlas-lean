@@ -21,6 +21,10 @@ entries.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas Leonardo P](lucas-leonardo-p.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LeonardoPTilingsWanted](../../../../../sources/v2/WantedExt.md)

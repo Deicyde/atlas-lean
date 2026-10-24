@@ -12,7 +12,9 @@ lean: MetaMathlibExt.generalizedEulerianP_eq_sum_perm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Generalized Eulerian P](generalized-eulerian-p.md)
 
 ## Sources
 

@@ -16,6 +16,11 @@ the paper's cone/interior condition, not its later divisibility criterion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Lattice Point](is-lattice-point.md)
+- [Polytope Dilate](polytope-dilate.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

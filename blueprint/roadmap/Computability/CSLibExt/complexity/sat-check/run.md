@@ -15,7 +15,28 @@ steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DLab](dlab.md)
+- [K](k.md)
+- [Lookup Spec](lookup-spec.md)
+- [Stmt](stmt.md)
+- [Prog](prog.md)
+- [Ent](../sat-verifier-spec/ent.md)
+- [Sym](../sat-verifier-spec/sym.md)
+- [Check Spec](../sat-verifier-spec/check-spec.md)
+- [Tbl Stk](../sat-verifier-spec/tbl-stk.md)
+- [Toks](../sat-verifier-spec/toks.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Cl Rev](cl-rev.md)
+- [Clauses run](clauses-run.md)
+- [Lit Rev](lit-rev.md)
+- [Clause Toks](../sat-verifier-spec/clause-toks.md)
+- [Lit Toks](../sat-verifier-spec/lit-toks.md)
+- [Live Val](../sat-verifier-spec/live-val.md)
+- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

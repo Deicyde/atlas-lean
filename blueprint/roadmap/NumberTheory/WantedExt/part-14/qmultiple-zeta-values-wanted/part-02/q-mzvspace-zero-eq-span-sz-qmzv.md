@@ -11,7 +11,8 @@ SZ-qMZVs span `𝒵_q`, and `𝒵_q` (hence the SZ model) is closed under `q d/d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q MZVSpace](q-mzvspace.md)
+- [Sz QMZV](../part-01/sz-qmzv.md)
 
 ## Sources
 

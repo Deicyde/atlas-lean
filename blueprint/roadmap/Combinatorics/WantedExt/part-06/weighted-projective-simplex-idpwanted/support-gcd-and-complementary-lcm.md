@@ -13,7 +13,12 @@ LCM.  `Finset.univ.gcd/lcm` encode the multiargument gcd and lcm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reflexive](is-reflexive.md)
+- [Valid Support](valid-support.md)
+- [Expand Support](expand-support.md)
+- [Setup S](setup-s.md)
+- [Weight Lcm](weight-lcm.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ A largest sum-free subset of `S` has at most `|S|` elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Largest Sum Free Card](largest-sum-free-card.md)
+
+## Proof depends on
+
+- [Is Sum Free Set](is-sum-free-set.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ pile of one stone, with the stone present, they are the set `C`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
+- [Wythoff Pass Set A](wythoff-pass-set-a.md)
+- [Wythoff Pass Set B](wythoff-pass-set-b.md)
+- [Wythoff Pass Set C](wythoff-pass-set-c.md)
+- [Wythoff Plus Stone Grundy](wythoff-plus-stone-grundy.md)
 
 ## Sources
 

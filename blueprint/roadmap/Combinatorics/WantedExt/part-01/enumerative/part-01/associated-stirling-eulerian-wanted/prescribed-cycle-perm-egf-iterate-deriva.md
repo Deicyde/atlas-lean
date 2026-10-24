@@ -14,7 +14,9 @@ The lengths are indexed `r 0, …, r (s-1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

@@ -14,7 +14,10 @@ strictly decreasing parts, its diagonal sequence is `(1, …, q, q^{(s_q)}, …,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Max Partition](diagonal-max-partition.md)
+- [Diagonal Normal Form](diagonal-normal-form.md)
+- [Diagonal Of List](diagonal-of-list.md)
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

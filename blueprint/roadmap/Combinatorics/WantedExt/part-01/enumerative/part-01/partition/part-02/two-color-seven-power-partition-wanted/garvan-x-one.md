@@ -12,7 +12,7 @@ lean: MetaMathlibExt.garvanX_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garvan X](garvan-x.md)
 
 ## Sources
 

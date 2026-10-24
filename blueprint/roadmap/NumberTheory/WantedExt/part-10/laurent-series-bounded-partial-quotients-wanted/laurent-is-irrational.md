@@ -13,6 +13,10 @@ lean: MetaMathlibExt.LaurentIsIrrational
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LaurentSeriesBoundedPartialQuotientsWanted](../../../../../sources/v2/WantedExt.md)

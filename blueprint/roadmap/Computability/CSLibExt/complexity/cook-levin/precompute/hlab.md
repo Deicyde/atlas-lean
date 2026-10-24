@@ -11,7 +11,8 @@ Horner-round labels indexed by `ℕ` (indices `≥ D` are never reached).
 
 ## Depends on
 
-This node has no prerequisites.
+- [HW](hw.md)
+- [PL](pl.md)
 
 ## Sources
 

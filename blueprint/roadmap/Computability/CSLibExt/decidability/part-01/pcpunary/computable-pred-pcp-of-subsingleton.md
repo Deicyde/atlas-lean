@@ -12,7 +12,13 @@ lean: Cslib.Decidability.Post.computablePred_pcp_of_subsingleton
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [PCP](../pcp/pcp.md)
+
+## Proof depends on
+
+- [The unary PCP criterion](pcp-iff-of-subsingleton.md)
+- [Unary Test](unary-test.md)
 
 ## Sources
 

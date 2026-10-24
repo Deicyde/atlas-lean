@@ -12,7 +12,13 @@ Variable elimination computes the partition function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](tree-model.md)
+- [Root Message](root-message.md)
+- [Weight](weight.md)
+
+## Proof depends on
+
+- [Variable elimination is exact](sum-weight-mul-eq.md)
 
 ## Sources
 

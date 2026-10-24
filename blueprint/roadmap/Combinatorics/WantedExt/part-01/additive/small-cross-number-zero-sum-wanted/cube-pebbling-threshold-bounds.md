@@ -13,7 +13,10 @@ pebbling threshold function `t` of the sequence of `d`-cubes satisfies, for ever
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Threshold Function](is-threshold-function.md)
+- [Grid Cost](grid-cost.md)
+- [Grid Graph](grid-graph.md)
+- [Solvable Configuration Prob](solvable-configuration-prob.md)
 
 ## Sources
 

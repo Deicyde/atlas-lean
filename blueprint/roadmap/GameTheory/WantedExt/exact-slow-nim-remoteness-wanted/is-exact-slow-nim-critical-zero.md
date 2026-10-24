@@ -12,7 +12,14 @@ The empty position is `0`-critical.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Exact Slow Nim Critical](is-exact-slow-nim-critical.md)
+
+## Proof depends on
+
+- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Smith Remoteness of moves eq empty](../../MathlibExt/smith-remoteness/smith-remoteness-of-moves-eq-empty.md)
+- [Slow ANim Game](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
+- [Slow ANim Moves zero](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves-zero.md)
 
 ## Sources
 

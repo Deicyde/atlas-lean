@@ -15,6 +15,10 @@ an end of the diagram (a maximal run of vertices devoid of short chords).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Short Chord Vertex](is-short-chord-vertex.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.LinearChordBubblesWanted](../../../../../../../sources/v2/WantedExt.md)

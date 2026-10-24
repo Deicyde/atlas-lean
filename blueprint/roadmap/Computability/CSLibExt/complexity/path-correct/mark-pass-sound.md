@@ -13,7 +13,11 @@ it holds at every mark after the pass.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mark Pass](../path/mark-pass.md)
+
+## Proof depends on
+
+- [Get D set true](get-d-set-true.md)
 
 ## Sources
 

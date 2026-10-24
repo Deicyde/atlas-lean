@@ -12,7 +12,13 @@ Every one on the tape after `t` steps lies in the counting window.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+- [Machine](machine.md)
+- [Run](run.md)
+
+## Proof depends on
+
+- [Tape eq zero of abs gt](tape-eq-zero-of-abs-gt.md)
 
 ## Sources
 

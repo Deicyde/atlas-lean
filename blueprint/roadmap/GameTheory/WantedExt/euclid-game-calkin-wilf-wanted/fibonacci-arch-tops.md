@@ -18,7 +18,7 @@ P-position `Y = (F_{2n} + kF_{2n-2})/(F_{2n} + (k+1)F_{2n-2})` has son's daughte
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclid PPosition](euclid-pposition.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ the one consistent with Theorem 9 (`A_τ = ζ(2)² H(1)` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Divisors](square-split-divisors.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Small cardinalities from the paper's examples: `|𝒜₄| = C₄ = 14`, `|ℛ₄
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catalan Words](catalan-words.md)
+- [Restricted Smooth Words](restricted-smooth-words.md)
+- [Smooth Words](smooth-words.md)
 
 ## Sources
 

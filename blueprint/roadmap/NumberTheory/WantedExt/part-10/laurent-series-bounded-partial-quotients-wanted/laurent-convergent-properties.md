@@ -19,7 +19,10 @@ puts `n ≥ 1` on (iv)–(vi); (iii) fails at `n = 0` because `Q_{-1} = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Is Irrational](laurent-is-irrational.md)
+- [Laurent Conv Den](laurent-conv-den.md)
+- [Laurent Conv Num](laurent-conv-num.md)
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
 
 ## Sources
 

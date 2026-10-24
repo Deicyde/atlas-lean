@@ -14,7 +14,7 @@ clearing the unit denominator `(1 - x)(2 - ∑ Cₙ xⁿ)` in `ℚ⟦X⟧`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Seq Avoid GF](inv-seq-avoid-gf.md)
 
 ## Sources
 

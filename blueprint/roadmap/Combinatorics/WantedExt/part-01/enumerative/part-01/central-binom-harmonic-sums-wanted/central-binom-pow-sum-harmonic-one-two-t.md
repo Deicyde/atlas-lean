@@ -11,7 +11,7 @@ Corollary 2: closed forms of `S_r^H(n)` for `r = 1, 2, 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binom Pow Sum](central-binom-pow-sum.md)
 
 ## Sources
 

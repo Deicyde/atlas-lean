@@ -13,7 +13,9 @@ of length `t + 1` ending in `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+- [Forward](forward.md)
+- [Path Weight](path-weight.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ needs `L_{-1}`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ lean: Cslib.MachineLearning.GraphicalModels.TreeModel.weight_le_weight_decode
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
+- [Nonneg Factors](nonneg-factors.md)
+- [Max-product decoding](decode.md)
+- [Weight](../variable-elimination/weight.md)
+
+## Proof depends on
+
+- [Max Weight](max-weight.md)
+- [Weight decode](weight-decode.md)
+- [Weight le max Weight](weight-le-max-weight.md)
 
 ## Sources
 

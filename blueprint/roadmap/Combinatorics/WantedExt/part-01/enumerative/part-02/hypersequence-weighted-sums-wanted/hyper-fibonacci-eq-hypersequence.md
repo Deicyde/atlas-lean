@@ -12,7 +12,8 @@ The existing hyperfibonacci numbers are the hypersequence of the Fibonacci numbe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Fibonacci](../../../../../../NumberTheory/WantedExt/part-09/hyper-leonardo-wanted/hyper-fibonacci.md)
+- [Hypersequence](hypersequence.md)
 
 ## Sources
 

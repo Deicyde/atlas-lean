@@ -11,7 +11,7 @@ Lemma 2: `α (n-1) + ⌊ln n / ln φ⌋ ≤ α n ≤ α (n-1) + ⌊ln n / ln φ�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Golden Factorial Exponent](golden-factorial-exponent.md)
 
 ## Sources
 

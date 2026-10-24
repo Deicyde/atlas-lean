@@ -15,6 +15,11 @@ zero); the source writes the gap sequence after the prefix as
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
+- [Upper Wythoff Unsum Marker](upper-wythoff-unsum-marker.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

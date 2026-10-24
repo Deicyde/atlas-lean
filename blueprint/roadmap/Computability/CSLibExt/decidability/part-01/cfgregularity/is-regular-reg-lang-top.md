@@ -12,7 +12,20 @@ lean: Cslib.Decidability.Regularity.isRegular_regLang_top
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+- [Reg Lang](reg-lang.md)
+
+## Proof depends on
+
+- [Bit Set](bit-set.md)
+- [Bit Words](bit-words.md)
+- [Bl](bl.md)
+- [Letter Set](letter-set.md)
+- [Letter Words](letter-words.md)
+- [Sep](sep.md)
+- [Tl](tl.md)
+- [Zero One](zero-one.md)
+- [Of finite](../../../languages/finite/of-finite.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The distinct variables of a formula (each kept at its last occurrence).
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Vars Of](../../../../sat-time-m/vars-of.md)
 
 ## Sources
 

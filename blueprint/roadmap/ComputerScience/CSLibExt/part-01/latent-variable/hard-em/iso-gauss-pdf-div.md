@@ -13,7 +13,11 @@ Ratios of isotropic densities with a common variance: `N(x | μ, v I) / N(x | ν
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iso Gauss PDF](../gaussian-mixture/iso-gauss-pdf.md)
+
+## Proof depends on
+
+- [Log iso Gauss PDF](../gaussian-mixture/log-iso-gauss-pdf.md)
 
 ## Sources
 

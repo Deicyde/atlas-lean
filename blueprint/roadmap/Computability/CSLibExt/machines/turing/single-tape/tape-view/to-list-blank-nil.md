@@ -12,7 +12,7 @@ The empty `StackTape` reads as the all-blank half-tape.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To List Blank](to-list-blank.md)
 
 ## Sources
 

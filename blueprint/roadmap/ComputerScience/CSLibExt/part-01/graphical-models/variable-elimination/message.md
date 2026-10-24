@@ -11,7 +11,7 @@ The message from the last vertex to its parent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](tree-model.md)
 
 ## Sources
 

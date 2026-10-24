@@ -12,7 +12,11 @@ lean: MetaMathlibExt.patternEx_le_sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pattern Ex](pattern-ex.md)
+
+## Proof depends on
+
+- [Cells Contain Pattern](cells-contain-pattern.md)
 
 ## Sources
 

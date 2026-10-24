@@ -12,7 +12,18 @@ The log of the path weight in terms of the path's counts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Valid HMM](valid-hmm.md)
+- [Joint](joint.md)
+- [P Emit](p-emit.md)
+- [P Init](p-init.md)
+- [P Trans](p-trans.md)
+- [HMM](../hidden-markov/hmm.md)
+
+## Proof depends on
+
+- [Path Prob eq prod](path-prob-eq-prod.md)
+- [Path Prob](../hidden-markov/path-prob.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ instance otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](domino.md)
+- [Sym](sym.md)
+
+## Proof depends on
+
+- [Nonempty Words B](nonempty-words-b.md)
+- [The reduction from MPCP to PCP](to-pcp.md)
 
 ## Sources
 

@@ -11,7 +11,15 @@ lean: Cslib.Databases.LocksCoverAt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+
+## Proof depends on
+
+- [Access](../serializability/access.md)
+- [Mode](mode.md)
+- [Holds Before](holds-before.md)
+- [Lock Mode](lock-mode.md)
+- [Op](../serializability/op.md)
 
 ## Sources
 

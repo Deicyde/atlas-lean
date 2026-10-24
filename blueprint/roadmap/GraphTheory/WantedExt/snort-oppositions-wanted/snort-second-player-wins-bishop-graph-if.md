@@ -12,7 +12,8 @@ is even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Snort Second Player Wins](snort-second-player-wins.md)
+- [Bishop Graph](bishop-graph.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ The rules for the state `q` reading `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](../../part-02/string-rewriting/rule.md)
+- [TMSym](tmsym.md)
 
 ## Sources
 

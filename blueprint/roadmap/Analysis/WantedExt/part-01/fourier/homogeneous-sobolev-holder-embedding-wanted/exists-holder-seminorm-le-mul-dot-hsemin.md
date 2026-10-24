@@ -20,7 +20,7 @@ Prove that there exists $C_3>0$ such that the following holds for all $f\in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dot HSeminorm](dot-hseminorm.md)
 
 ## Sources
 

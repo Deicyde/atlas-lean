@@ -12,7 +12,11 @@ Closed form `eₖ = 2ᵏ (p + 1) - 1`, stated without subtraction as `eₖ + 1 =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Cunningham Chain](extended-cunningham-chain.md)
+
+## Proof depends on
+
+- [Extended Cunningham Chain succ](extended-cunningham-chain-succ.md)
 
 ## Sources
 

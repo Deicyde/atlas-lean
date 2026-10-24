@@ -11,7 +11,7 @@ A labeling of bandwidth at most `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bandwidth Instance](bandwidth-instance.md)
 
 ## Sources
 

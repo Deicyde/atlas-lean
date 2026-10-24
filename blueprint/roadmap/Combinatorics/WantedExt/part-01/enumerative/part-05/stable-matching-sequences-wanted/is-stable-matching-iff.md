@@ -13,7 +13,10 @@ their spouses `μ i` and `μ.symm j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stable Matching](is-stable-matching.md)
+- [Preference Profile](preference-profile.md)
+- [Man Rank](man-rank.md)
+- [Woman Rank](woman-rank.md)
 
 ## Sources
 

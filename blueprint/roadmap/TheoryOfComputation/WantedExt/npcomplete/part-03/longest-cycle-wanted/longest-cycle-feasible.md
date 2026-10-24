@@ -11,7 +11,11 @@ A simple cycle with at least `K` edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest Cycle Instance](longest-cycle-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ A traitorous commander sends what the adversary chooses for its path and the rec
 
 ## Depends on
 
-This node has no prerequisites.
+- [Received](received.md)
 
 ## Sources
 

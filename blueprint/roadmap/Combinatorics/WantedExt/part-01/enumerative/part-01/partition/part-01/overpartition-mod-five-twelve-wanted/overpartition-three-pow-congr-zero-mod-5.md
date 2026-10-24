@@ -19,7 +19,7 @@ the smaller power `3^6` give nonzero residues mod 512.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources
 

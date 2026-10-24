@@ -17,7 +17,7 @@ the `lift` in `IsInaccessibleFixedPoint`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [InAccBelow κ is the set of all inaccessible cardinals below...](inaccbelow-is-the-set-of-all-inaccessibl.md)
 
 ## Sources
 

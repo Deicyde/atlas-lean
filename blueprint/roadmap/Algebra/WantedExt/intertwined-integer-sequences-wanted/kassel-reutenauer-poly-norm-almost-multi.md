@@ -15,7 +15,7 @@ residue pairs are ordered; `|P_n(ω)|` is written as `‖P̄_n(ω + ω⁻¹)‖`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
 
 ## Sources
 

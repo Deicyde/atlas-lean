@@ -15,7 +15,10 @@ uses it to rule out rank `0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valuation Common Lift Count](valuation-common-lift-count.md)
+- [Valuation Distinct Tuples](valuation-distinct-tuples.md)
+- [Valuation Rank One Tuple Count](valuation-rank-one-tuple-count.md)
+- [Valuation Rank Two Tuple Count](valuation-rank-two-tuple-count.md)
 
 ## Sources
 

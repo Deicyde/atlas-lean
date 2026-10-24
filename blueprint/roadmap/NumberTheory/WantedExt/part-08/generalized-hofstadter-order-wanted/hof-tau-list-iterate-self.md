@@ -12,7 +12,7 @@ The prefixes `τ_k^j(k)`: `τ_k^j(k) = k 1 2 ⋯ j` for `j ≤ k`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Tau List](hof-tau-list.md)
 
 ## Sources
 

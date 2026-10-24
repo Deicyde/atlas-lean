@@ -11,7 +11,12 @@ The productions `A → wᵢ A i | wᵢ i` for every domino.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [Cont Rule](cont-rule.md)
+- [Term Rule](term-rule.md)
 
 ## Sources
 

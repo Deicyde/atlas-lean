@@ -11,7 +11,12 @@ The state after `t` rounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Init](init.md)
+- [Round](round.md)
 
 ## Sources
 

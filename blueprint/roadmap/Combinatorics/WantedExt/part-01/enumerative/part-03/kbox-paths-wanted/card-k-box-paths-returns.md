@@ -13,7 +13,9 @@ The number of `k`-box paths of size `n` with exactly `j` returns
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [K Box Paths](k-box-paths.md)
+- [Skew Returns](skew-returns.md)
 
 ## Sources
 

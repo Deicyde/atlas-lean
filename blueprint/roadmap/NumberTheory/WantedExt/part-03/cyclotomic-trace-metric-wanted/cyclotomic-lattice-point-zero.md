@@ -12,7 +12,7 @@ The zero coefficient vector gives the point `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Lattice Point](cyclotomic-lattice-point.md)
 
 ## Sources
 

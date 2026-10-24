@@ -15,6 +15,11 @@ exist).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Immediate Predecessor](is-immediate-predecessor.md)
+- [Is Immediate Successor](is-immediate-successor.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

@@ -11,7 +11,7 @@ If `m > n` and `t ≥ n`, there are no `t`-metered `(m, n)`-parking functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Parking Count](metered-parking-count.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ Selection `σ_c r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond](cond.md)
+- [Tuple](tuple.md)
+
+## Proof depends on
+
+- [Eval](eval.md)
 
 ## Sources
 

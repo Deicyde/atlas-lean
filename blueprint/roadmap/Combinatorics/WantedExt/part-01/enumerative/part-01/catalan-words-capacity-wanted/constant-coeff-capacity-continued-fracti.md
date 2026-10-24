@@ -13,7 +13,7 @@ inverses `PowerSeries.invOfUnit _ 1` in its definition are true inverses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Continued Fraction Den](capacity-continued-fraction-den.md)
 
 ## Sources
 

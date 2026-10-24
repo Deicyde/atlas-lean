@@ -17,6 +17,10 @@ simultaneously.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Tangent Line At](has-tangent-line-at.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ScottishBook117Wanted](../../../../../sources/v2/WantedExt.md)

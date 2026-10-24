@@ -13,7 +13,19 @@ machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+- [Equiv Prod](../../../automata/da/encoded-dfa/equiv-prod.md)
+- [Language](../../../automata/da/encoded-dfa/language.md)
+- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [Accepts B](accepts-b.md)
+- [Primrec₂ eval](../../../automata/da/encoded-dfa/primrec-eval.md)
+- [To DFA](../../../automata/da/encoded-dfa/to-dfa.md)
+- [Computable Pred of primrec bool](../../part-01/primrec-list/computable-pred-of-primrec-bool.md)
+- [Mem B](../../part-01/primrec-list/mem-b.md)
+- [Tm2 Decidable iff computable Pred](../../part-01/basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

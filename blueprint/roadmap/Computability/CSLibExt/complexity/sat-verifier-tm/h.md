@@ -11,7 +11,12 @@ Host alphabets: `G` on the input, `Bool` on the output, `Sym` elsewhere.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](hk.md)
+
+## Proof depends on
+
+- [G](g.md)
+- [Sym](../sat-verifier-spec/sym.md)
 
 ## Sources
 

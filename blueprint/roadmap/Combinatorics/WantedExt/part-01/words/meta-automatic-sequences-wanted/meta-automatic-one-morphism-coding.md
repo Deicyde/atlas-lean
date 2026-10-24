@@ -14,7 +14,7 @@ starting from `0` of the `4`-uniform morphism `0 ↦ 0112`, `1 ↦ 1230`, `2 ↦
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic One](meta-automatic-one.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ games, which is equality of Sprague–Grundy values).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Princess Roses](princess-roses.md)
 
 ## Sources
 

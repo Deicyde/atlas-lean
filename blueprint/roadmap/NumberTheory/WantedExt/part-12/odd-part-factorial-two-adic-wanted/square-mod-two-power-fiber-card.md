@@ -14,7 +14,7 @@ finite set formalizes “occurs exactly four times”; the paper's count of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Below Two Pow](odd-below-two-pow.md)
 
 ## Sources
 

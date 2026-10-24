@@ -12,7 +12,7 @@ A non-vertical segment is the graph of `lineY` over `[p.1, q.1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Line Y](line-y.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ other position has a move to one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Face Move](cube-face-move.md)
 
 ## Sources
 

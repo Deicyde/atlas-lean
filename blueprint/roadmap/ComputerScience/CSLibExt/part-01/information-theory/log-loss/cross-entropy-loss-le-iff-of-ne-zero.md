@@ -12,7 +12,11 @@ The cross-entropy ordering when both classifiers give every label positive proba
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross Entropy Loss](cross-entropy-loss.md)
+
+## Proof depends on
+
+- [Cross Entropy Loss eq neg logb prod](cross-entropy-loss-eq-neg-logb-prod.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ representations of `n` as a sum of six squares of integers (`sumOfSquaresRepCoun
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dedekind Zeta Coeff](dedekind-zeta-coeff.md)
+- [Sum Of Squares Rep Count](../../part-16/squares-triangular-representations-wanted/sum-of-squares-rep-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DedekindZetaSixSquaresMomentsWanted](../../../../../sources/v2/WantedExt.md)

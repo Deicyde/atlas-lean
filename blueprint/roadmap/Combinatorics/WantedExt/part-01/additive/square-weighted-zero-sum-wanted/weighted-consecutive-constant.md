@@ -14,6 +14,10 @@ positive lengths forcing a consecutive weighted zero-sum subsequence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted Consecutive Defining Set](weighted-consecutive-defining-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.SquareWeightedZeroSumWanted](../../../../../../sources/v2/WantedExt.md)

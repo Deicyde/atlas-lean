@@ -19,7 +19,8 @@ is truncated at `n` coefficientwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Peak Count](symmetric-peak-count.md)
+- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
 
 ## Sources
 

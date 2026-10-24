@@ -12,7 +12,12 @@ The path ends at the last top.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Path](hf-path.md)
+- [Hp T](../ham-path/hp-t.md)
+
+## Proof depends on
+
+- [Hf Diamond](hf-diamond.md)
 
 ## Sources
 

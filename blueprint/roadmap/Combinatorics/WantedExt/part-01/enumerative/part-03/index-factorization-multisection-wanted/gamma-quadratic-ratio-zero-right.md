@@ -12,7 +12,7 @@ lean: MetaMathlibExt.gammaQuadraticRatio_zero_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Quadratic Ratio](gamma-quadratic-ratio.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ if `q = F_{2i} / F_{2i+1}` or `q = L_{2i+1} / L_{2i+2}` for some `i ∈ ℕ`, wh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

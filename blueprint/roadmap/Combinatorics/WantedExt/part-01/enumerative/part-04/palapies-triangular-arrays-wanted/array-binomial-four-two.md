@@ -12,7 +12,8 @@ For the binomial parameters `(0, 0, 1; 0, 0, 1)` (Table 1), `a_{4,2} = 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+- [Array](array.md)
 
 ## Sources
 

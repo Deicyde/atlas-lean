@@ -13,7 +13,9 @@ satisfies `D^{q/2} |R₂| < k (V₂ + 1/x)^{q+1} α^{kp - 2k/q + 1/2}`, where `V
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

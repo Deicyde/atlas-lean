@@ -12,7 +12,8 @@ The empty heap flattens to the empty list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [To List](to-list.md)
 
 ## Sources
 

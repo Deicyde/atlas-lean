@@ -16,7 +16,9 @@ at least `2m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Fixed Column Hook](is-fixed-column-hook.md)
+- [Partition Hook Length](partition-hook-length.md)
+- [Partition Row Len](partition-row-len.md)
 
 ## Sources
 

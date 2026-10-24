@@ -20,7 +20,7 @@ injectivity (Tate) is omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frobenius trace](../../../MathlibExt/elliptic-curve/point-count/frobenius-trace.md)
 
 ## Sources
 

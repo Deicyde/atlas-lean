@@ -12,7 +12,11 @@ lean: MetaMathlibExt.hofTauList_isPrefix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Tau List](hof-tau-list.md)
+
+## Proof depends on
+
+- [Hof Tau](hof-tau.md)
 
 ## Sources
 

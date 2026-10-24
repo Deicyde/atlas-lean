@@ -26,7 +26,8 @@ spaces.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Function Systems Are Countable](function-systems-are-countable.md)
+- [Sequence Systems Are Countable](sequence-systems-are-countable.md)
 
 ## Sources
 

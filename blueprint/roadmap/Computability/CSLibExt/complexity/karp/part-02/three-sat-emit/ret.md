@@ -13,7 +13,7 @@ Where the fresh-literal subroutine returns: to the name of the pending literal o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ set enter this definition.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [L Generalized Fibonacci Other Roots](l-generalized-fibonacci-other-roots.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedFibonacciZetaWanted](../../../../../sources/v2/WantedExt.md)

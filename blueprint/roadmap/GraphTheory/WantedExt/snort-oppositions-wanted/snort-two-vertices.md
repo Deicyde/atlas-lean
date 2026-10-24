@@ -13,7 +13,12 @@ isolated vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Snort First Player Wins](snort-first-player-wins.md)
+- [Snort Second Player Wins](snort-second-player-wins.md)
+
+## Proof depends on
+
+- [Snort Mover Wins](snort-mover-wins.md)
 
 ## Sources
 

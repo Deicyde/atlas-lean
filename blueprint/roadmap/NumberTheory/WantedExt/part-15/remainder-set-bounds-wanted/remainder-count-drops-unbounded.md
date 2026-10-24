@@ -12,7 +12,7 @@ infinitely many `n` with `s(n+1) + M ≤ s(n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Remainder Count](remainder-count.md)
 
 ## Sources
 

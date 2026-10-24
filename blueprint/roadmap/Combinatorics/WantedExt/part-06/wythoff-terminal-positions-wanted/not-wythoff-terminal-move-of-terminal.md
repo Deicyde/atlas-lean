@@ -12,7 +12,7 @@ No move leaves a terminal position of `K^ℓ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
 
 ## Sources
 

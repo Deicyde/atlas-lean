@@ -11,7 +11,12 @@ The semantic reachable-state space of any recognizing DFA has exactly the Nerode
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](../nerode/nerode-class.md)
+- [Reachable Residuals](reachable-residuals.md)
+
+## Proof depends on
+
+- [Nerode Class Equiv Residual](../nerode/nerode-class-equiv-residual.md)
 
 ## Sources
 

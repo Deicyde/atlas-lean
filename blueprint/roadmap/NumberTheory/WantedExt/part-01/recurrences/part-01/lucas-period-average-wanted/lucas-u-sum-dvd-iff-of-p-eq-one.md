@@ -12,7 +12,8 @@ Theorem 2.6: for `a = 1`, `b ≠ 0` and `gcd(n, b) = 1`, `B_U(n) ≡ 0 (mod n)` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

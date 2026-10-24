@@ -12,7 +12,7 @@ The characteristic forbidden-cell condition for membership in the `(2,1)`-hook.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is In Two One Hook](is-in-two-one-hook.md)
 
 ## Sources
 

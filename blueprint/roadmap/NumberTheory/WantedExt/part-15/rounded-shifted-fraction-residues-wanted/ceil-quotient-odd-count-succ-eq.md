@@ -13,7 +13,8 @@ at `n = 3`, `𝓒_3 = 2` while the sum is `1 - 1 = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ceil Quotient Odd Count](ceil-quotient-odd-count.md)
+- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
 
 ## Sources
 

@@ -26,7 +26,7 @@ theorem card_before {L : List α} (hnd : L.Nodup) {x : α} (hx : x ∈ L) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Set](inv-set.md)
 
 ## Sources
 

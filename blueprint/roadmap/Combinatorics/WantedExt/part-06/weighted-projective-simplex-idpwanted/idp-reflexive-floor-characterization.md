@@ -13,7 +13,9 @@ all floors are natural divisions because all numerators are nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is Reflexive](is-reflexive.md)
+- [Weighted Simplex](weighted-simplex.md)
 
 ## Sources
 

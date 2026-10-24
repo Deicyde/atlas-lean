@@ -12,7 +12,7 @@ The fourth-order recurrence of `V̄_k(R, Q)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer V](lehmer-v.md)
 
 ## Sources
 

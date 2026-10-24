@@ -12,7 +12,9 @@ Unfolding `B_1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Function Field Mertens Constant](function-field-mertens-constant.md)
+- [Monic Irreducible](monic-irreducible.md)
+- [Poly Norm](poly-norm.md)
 
 ## Sources
 

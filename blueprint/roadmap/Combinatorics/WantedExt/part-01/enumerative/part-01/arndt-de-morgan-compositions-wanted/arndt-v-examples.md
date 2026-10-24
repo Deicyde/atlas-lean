@@ -13,7 +13,7 @@ Entries of Table 6: `V(2,3) = (1,1,3)`, `V(1,4) = (5)`, `V(4,1) = (1,1,1,2)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt V](arndt-v.md)
 
 ## Sources
 

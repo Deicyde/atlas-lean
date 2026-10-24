@@ -12,7 +12,7 @@ lean: MetaMathlibExt.qMZV_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q MZV](q-mzv.md)
 
 ## Sources
 

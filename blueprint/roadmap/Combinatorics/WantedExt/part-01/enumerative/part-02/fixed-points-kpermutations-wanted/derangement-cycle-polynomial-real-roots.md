@@ -13,7 +13,7 @@ zeros, where `d(m, k) = a(m, k, 0)` counts derangements of `[m]` with `k` cycles
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
 
 ## Sources
 

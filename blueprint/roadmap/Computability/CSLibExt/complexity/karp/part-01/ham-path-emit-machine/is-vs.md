@@ -11,7 +11,7 @@ Symbols of the variable stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

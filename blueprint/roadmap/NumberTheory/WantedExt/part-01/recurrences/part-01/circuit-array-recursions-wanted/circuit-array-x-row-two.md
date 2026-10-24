@@ -13,7 +13,7 @@ Corollary 4.6: for `s ≥ 2`, `C^X₂,ₛ = (c₂,₀(s) - c₂,₁(s) X + c₂,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Array X](circuit-array-x.md)
 
 ## Sources
 

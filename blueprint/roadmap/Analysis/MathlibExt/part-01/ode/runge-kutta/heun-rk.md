@@ -11,7 +11,7 @@ Heun's tableau: `a = [[0, 0], [1, 0]]`, `b = [1 / 2, 1 / 2]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
 
 ## Sources
 

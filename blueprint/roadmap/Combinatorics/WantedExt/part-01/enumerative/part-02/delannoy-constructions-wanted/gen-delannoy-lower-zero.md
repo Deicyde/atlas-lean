@@ -12,7 +12,8 @@ lean: MetaMathlibExt.DelannoyConstructions.genDelannoyLower_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Delannoy Lower](gen-delannoy-lower.md)
+- [Gen Delannoy Upper](gen-delannoy-upper.md)
 
 ## Sources
 

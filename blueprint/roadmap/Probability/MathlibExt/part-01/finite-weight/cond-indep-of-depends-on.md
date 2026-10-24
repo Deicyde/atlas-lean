@@ -15,7 +15,12 @@ depends only on the variables in `P`, `g` only on those in `Q`, and every variab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond Indep](cond-indep.md)
+
+## Proof depends on
+
+- [Marginal](marginal.md)
+- [Marginals of a product](marginal-mul.md)
 
 ## Sources
 

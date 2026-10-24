@@ -12,7 +12,13 @@ lean: Cslib.Decidability.singleTapeDecidable_iff_tm2Decidable
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape Decidable](../classes/single-tape-decidable.md)
+- [TM2 Decidable](../../../../decidability/part-01/basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [Single-tape decidability is Mathlib's `ComputablePred`](single-tape-decidable-iff-computable-pre.md)
+- [Tm2 Decidable iff computable Pred](../../../../decidability/part-01/basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MetaMathlibExt.liCoeffD1_zero_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Li Coeff D1](li-coeff-d1.md)
+
+## Proof depends on
+
+- [Li Coeff C1](li-coeff-c1.md)
 
 ## Sources
 

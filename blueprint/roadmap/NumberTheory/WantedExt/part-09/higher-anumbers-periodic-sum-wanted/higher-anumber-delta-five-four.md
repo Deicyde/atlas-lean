@@ -14,7 +14,13 @@ Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Table 1 (`δ(1) = 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher ANumber Delta](higher-anumber-delta.md)
+
+## Proof depends on
+
+- [Seq Lex Gt](seq-lex-gt.md)
+- [Base PDigit](base-pdigit.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

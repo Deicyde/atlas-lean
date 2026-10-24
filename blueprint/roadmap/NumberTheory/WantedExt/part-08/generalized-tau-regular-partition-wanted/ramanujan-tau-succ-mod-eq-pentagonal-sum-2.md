@@ -11,7 +11,7 @@ lean: MetaMathlibExt.ramanujanTau_succ_modEq_pentagonal_sum_twentythree
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

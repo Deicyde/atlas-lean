@@ -12,7 +12,7 @@ In a `ℤ_(p)`-algebra, an ideal is a divided-power ideal if and only if `a ^ p 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divided Power Ideal](is-divided-power-ideal.md)
 
 ## Sources
 

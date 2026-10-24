@@ -16,7 +16,7 @@ Denominators are cleared; `u`, `v` use truncated subtraction of `natDegree`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
 
 ## Sources
 

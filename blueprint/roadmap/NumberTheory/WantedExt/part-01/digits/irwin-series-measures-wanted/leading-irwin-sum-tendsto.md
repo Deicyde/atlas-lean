@@ -15,7 +15,8 @@ Series*, INTEGERS 26 (2026), Article A11, Theorem 3.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leading Irwin Sum](leading-irwin-sum.md)
+- [Leading Reciprocal Term](leading-reciprocal-term.md)
 
 ## Sources
 

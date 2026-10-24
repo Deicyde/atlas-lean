@@ -15,7 +15,8 @@ somewhere in `U`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube](cube.md)
+- [Cube Edges](cube-edges.md)
 
 ## Sources
 

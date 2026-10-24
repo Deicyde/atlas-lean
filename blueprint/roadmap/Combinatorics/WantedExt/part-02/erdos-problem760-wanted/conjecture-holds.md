@@ -16,7 +16,7 @@ Moved from `OpenConjectures/Combinatorics/ErdosProblem760`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

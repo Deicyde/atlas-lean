@@ -12,7 +12,7 @@ If an odd perfect number has Euler form `n = q^e m²`, then `e = 1` or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eulerian Form](../../../../MathlibExt/part-05/euler-prime/eulerian-form.md)
 
 ## Sources
 

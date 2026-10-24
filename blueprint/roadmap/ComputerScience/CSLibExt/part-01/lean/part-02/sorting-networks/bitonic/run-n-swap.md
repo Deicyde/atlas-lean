@@ -12,7 +12,11 @@ Reversing every comparator sorts the complement: `runN (ps.map swap) f = ¬ runN
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run N](run-n.md)
+
+## Proof depends on
+
+- [Cmp](cmp.md)
 
 ## Sources
 

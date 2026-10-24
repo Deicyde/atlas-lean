@@ -12,7 +12,12 @@ lean: MetaMathlibExt.fibPrimitivePart_six
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Primitive Part](fib-primitive-part.md)
+
+## Proof depends on
+
+- [Fib Entry Point](fib-entry-point.md)
+- [Fib Entry Point two](fib-entry-point-two.md)
 
 ## Sources
 

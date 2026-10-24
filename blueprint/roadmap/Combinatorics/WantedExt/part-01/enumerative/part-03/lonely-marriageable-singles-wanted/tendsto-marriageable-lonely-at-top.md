@@ -11,7 +11,8 @@ lean: MetaMathlibExt.tendsto_marriageable_lonely_atTop
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lonely Singles Count](lonely-singles-count.md)
+- [Marriageable Singles Count](marriageable-singles-count.md)
 
 ## Sources
 

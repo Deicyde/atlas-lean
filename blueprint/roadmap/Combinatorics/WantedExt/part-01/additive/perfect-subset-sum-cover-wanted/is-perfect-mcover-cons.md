@@ -11,7 +11,7 @@ Adjoining any element `g` to a perfect `m`-cover gives a perfect `2m`-cover.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect MCover](is-perfect-mcover.md)
 
 ## Sources
 

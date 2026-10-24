@@ -14,7 +14,7 @@ even-indexed parts are odd and at least `3`. Their number `c_V(n)` satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt V](arndt-v.md)
 
 ## Sources
 

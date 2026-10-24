@@ -12,7 +12,12 @@ lean: MetaMathlibExt.hofTauList_iterate_isPrefix_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Tau List](hof-tau-list.md)
+
+## Proof depends on
+
+- [Hof Tau](hof-tau.md)
+- [Hof Tau List is Prefix](hof-tau-list-is-prefix.md)
 
 ## Sources
 

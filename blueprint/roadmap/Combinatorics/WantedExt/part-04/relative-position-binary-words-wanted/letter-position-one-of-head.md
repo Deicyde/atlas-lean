@@ -12,7 +12,7 @@ If `w` starts with `α`, then `p_α(1) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter Position](letter-position.md)
 
 ## Sources
 

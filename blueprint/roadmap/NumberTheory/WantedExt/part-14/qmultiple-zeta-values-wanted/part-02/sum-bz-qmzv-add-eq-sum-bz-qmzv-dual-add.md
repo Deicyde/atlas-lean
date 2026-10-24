@@ -14,7 +14,8 @@ componentwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz Block Index](bz-block-index.md)
+- [Bz QMZV](bz-qmzv.md)
 
 ## Sources
 

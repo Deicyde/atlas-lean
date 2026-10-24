@@ -13,6 +13,10 @@ A hump is a peak exactly when its down step immediately follows its up step.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Motzkin Hump](is-motzkin-hump.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinHumpsYoungTableauxWanted](../../../../../../../sources/v2/WantedExt.md)

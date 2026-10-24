@@ -11,7 +11,12 @@ Read a domino of `toPCP P` back as a domino over `α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](domino.md)
+- [Sym](sym.md)
+
+## Proof depends on
+
+- [Letters](letters.md)
 
 ## Sources
 

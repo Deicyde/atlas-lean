@@ -14,7 +14,8 @@ is encoded as `k + 2 ≤ n` in the domain subtype.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin First Down Family](motzkin-first-down-family.md)
+- [Motzkin Last Up Even Family](motzkin-last-up-even-family.md)
 
 ## Sources
 

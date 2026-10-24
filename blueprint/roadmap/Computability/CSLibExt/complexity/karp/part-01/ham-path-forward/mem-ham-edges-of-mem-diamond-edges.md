@@ -12,7 +12,10 @@ An arc of a diamond of the construction is an arc of the construction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diamond Edges](../ham-path/diamond-edges.md)
+- [Ham Edges](../ham-path/ham-edges.md)
+- [Ham Vars](../ham-path/ham-vars.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

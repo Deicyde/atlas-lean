@@ -13,7 +13,7 @@ roots `α_1, …, α_m`, then for all `n ≥ 0`, with `ξ(n) = n mod r`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decimation Coeff](decimation-coeff.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ A string is stable if its convergent matrix satisfies `p = 2q'`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convergent Matrix](convergent-matrix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GaussKuzminSymmetryWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,12 @@ Theorem 20: every `C_4` `(2:1)`-pebbling game in
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Mod Four ABABHat Compl](c4-mod-four-ababhat-compl.md)
+- [C4 Pattern AAAB](c4-pattern-aaab.md)
+- [C4 Pattern AABC](c4-pattern-aabc.md)
+- [C4 Pattern ABAB](c4-pattern-abab.md)
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
 
 ## Sources
 

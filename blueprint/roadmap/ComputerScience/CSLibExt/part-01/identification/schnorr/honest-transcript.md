@@ -13,6 +13,11 @@ The honest transcript for secret key `x`, prover randomness `k` and challenge `r
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Respond](respond.md)
+- [Gpow](../../public-key/diffie-hellman/gpow.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.Identification.Schnorr](../../../../../../sources/v2/CSLibExt.md)

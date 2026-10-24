@@ -13,7 +13,7 @@ pairwise non-coprime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Pair Count](coprime-pair-count.md)
 
 ## Sources
 

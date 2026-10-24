@@ -12,7 +12,7 @@ lean: MetaMathlibExt.kappaPow_of_irreducible
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kappa Pow](kappa-pow.md)
 
 ## Sources
 

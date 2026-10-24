@@ -12,7 +12,10 @@ For a finite group, `C(G)` is the number of perfect covers in `Finset G`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Cover](is-perfect-cover.md)
+- [Is Perfect MCover](is-perfect-mcover.md)
+- [Count](count.md)
+- [Cover Count](cover-count.md)
 
 ## Sources
 

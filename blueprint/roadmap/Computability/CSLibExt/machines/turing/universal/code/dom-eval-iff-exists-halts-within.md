@@ -12,7 +12,11 @@ A `TM0` machine halts iff it halts within some number of steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts Within](halts-within.md)
+
+## Proof depends on
+
+- [Dom eval iff exists iterate](../../../../../MathlibExt/turing-machine/recursive/halts/dom-eval-iff-exists-iterate.md)
 
 ## Sources
 

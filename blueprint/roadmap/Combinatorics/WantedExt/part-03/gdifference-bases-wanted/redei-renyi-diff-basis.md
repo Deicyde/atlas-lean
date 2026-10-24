@@ -13,7 +13,7 @@ basis for `[n]` (`n ≥ 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sub Rep Count](sub-rep-count.md)
 
 ## Sources
 

@@ -14,7 +14,9 @@ H-hypothesis (the paper's Conjecture 2) is the hypothesis `hH`, phrased with the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primary DCarmichael](is-primary-dcarmichael.md)
+- [Bunyakovsky condition](../../../../Algebra/MathlibExt/polynomial/prime-value-conditions/bunyakovsky-condition.md)
+- [Schinzel condition](../../../../Algebra/MathlibExt/polynomial/prime-value-conditions/schinzel-condition.md)
 
 ## Sources
 

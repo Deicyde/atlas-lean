@@ -12,7 +12,11 @@ lean: MetaMathlibExt.isUnit_triangularThetaSeries
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Theta Series](triangular-theta-series.md)
+
+## Proof depends on
+
+- [Coeff triangular Theta Series small](coeff-triangular-theta-series-small.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MetaMathlibExt.sumOfTriangularRepCount_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
+- [Triangular Theta Series](triangular-theta-series.md)
+
+## Proof depends on
+
+- [Is Unit triangular Theta Series](is-unit-triangular-theta-series.md)
 
 ## Sources
 

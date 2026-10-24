@@ -13,7 +13,13 @@ recognizer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+
+## Proof depends on
+
+- [Syntactic Accept](../syntactic/syntactic-accept.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

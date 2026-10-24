@@ -12,7 +12,7 @@ The `mex` value is at most every positive integer not in `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
 
 ## Sources
 

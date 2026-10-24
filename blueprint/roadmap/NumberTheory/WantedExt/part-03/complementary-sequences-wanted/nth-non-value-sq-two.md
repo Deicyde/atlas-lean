@@ -12,7 +12,7 @@ Characteristic value: the second positive non-square is `3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

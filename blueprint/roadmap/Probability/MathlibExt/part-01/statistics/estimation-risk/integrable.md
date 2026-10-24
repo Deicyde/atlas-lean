@@ -12,7 +12,7 @@ Integrability at each parameter from unbiasedness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unbiased](is-unbiased.md)
 
 ## Sources
 

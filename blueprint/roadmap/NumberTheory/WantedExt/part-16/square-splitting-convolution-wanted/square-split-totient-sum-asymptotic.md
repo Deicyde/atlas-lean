@@ -13,7 +13,7 @@ Theorem 8: for `φ⋆` defined by `∑_{d ∈ A(n)} φ⋆(d) = n`, the product
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Divisors](square-split-divisors.md)
 
 ## Sources
 

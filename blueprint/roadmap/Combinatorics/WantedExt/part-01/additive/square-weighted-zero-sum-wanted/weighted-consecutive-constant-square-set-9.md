@@ -12,7 +12,8 @@ Corollary 38: if square `n ≥ 2` is divisible by `5⁴`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Set](square-set.md)
+- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
 
 ## Sources
 

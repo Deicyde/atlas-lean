@@ -15,6 +15,10 @@ not alter the paper's index.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [B Basis](b-basis.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

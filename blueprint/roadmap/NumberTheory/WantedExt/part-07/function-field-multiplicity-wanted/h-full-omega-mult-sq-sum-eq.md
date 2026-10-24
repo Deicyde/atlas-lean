@@ -12,7 +12,11 @@ Unfolding `∑_P b_P^2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full K](h-full-k.md)
+- [H Full Omega Mult Sq Sum](h-full-omega-mult-sq-sum.md)
+- [H Full Root](h-full-root.md)
+- [Monic Irreducible](monic-irreducible.md)
+- [Poly Norm](poly-norm.md)
 
 ## Sources
 

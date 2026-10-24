@@ -15,6 +15,10 @@ that palindromicity is automatic, but it is retained here as part of the named p
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [H Star Coeff](h-star-coeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

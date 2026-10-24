@@ -12,7 +12,9 @@ An infix's score is at most the fitting score.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fitting Score](fitting-score.md)
+- [Infixes](infixes.md)
+- [Nw Score](../sequence-alignment/nw-score.md)
 
 ## Sources
 

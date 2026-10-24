@@ -15,6 +15,10 @@ off the intervals.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Max LStar Block](max-lstar-block.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,18 @@ Every superkey contains a candidate key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+- [Is Candidate Key](is-candidate-key.md)
+- [Is Superkey](is-superkey.md)
+
+## Proof depends on
+
+- [Derives](derives.md)
+- [Mono](mono.md)
+- [Attr Closure](attr-closure.md)
+- [The closure algorithm decides derivability](derives-iff-subset-attr-closure.md)
+- [Is Candidate Key iff](is-candidate-key-iff.md)
+- [Shrink Key](shrink-key.md)
 
 ## Sources
 

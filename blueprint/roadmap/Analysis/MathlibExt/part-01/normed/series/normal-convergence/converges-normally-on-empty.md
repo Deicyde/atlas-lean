@@ -15,10 +15,11 @@ normally on the empty set.
 
 ## Depends on
 
-- [Extended supremum norm on a set](sup-norm-on.md)
+- [Converges Normally On](converges-normally-on.md)
 
 ## Proof depends on
 
+- [Extended supremum norm on a set](sup-norm-on.md)
 - [Supremum norm over the empty set](sup-norm-on-empty.md)
 
 ## Sources

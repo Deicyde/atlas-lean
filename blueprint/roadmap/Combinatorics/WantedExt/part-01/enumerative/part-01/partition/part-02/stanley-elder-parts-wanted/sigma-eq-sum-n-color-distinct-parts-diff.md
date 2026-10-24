@@ -12,7 +12,7 @@ Corollary 8: for `m ≥ 1`, `σ(m) = ∑_{k=1}^{m} (C_o(D, k) - C_e(D, k)) C(m-k
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
 
 ## Sources
 

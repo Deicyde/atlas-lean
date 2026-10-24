@@ -15,6 +15,10 @@ every `ArithmeticFunction`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Square Split Divisors](square-split-divisors.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SquareSplittingConvolutionWanted](../../../../../sources/v2/WantedExt.md)

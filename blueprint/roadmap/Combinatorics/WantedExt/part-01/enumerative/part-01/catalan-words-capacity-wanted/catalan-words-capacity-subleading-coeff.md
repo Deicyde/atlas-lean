@@ -13,7 +13,8 @@ Mansour and Shattuck's Corollary 4, subleading coefficient: with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+- [Catalan Words](catalan-words.md)
 
 ## Sources
 

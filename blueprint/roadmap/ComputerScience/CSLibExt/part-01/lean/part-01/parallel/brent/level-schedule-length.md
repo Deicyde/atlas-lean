@@ -13,7 +13,21 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.levelSchedule_length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+- [Length](length.md)
+- [Brent's level schedule](level-schedule.md)
+- [Span](span.md)
+
+## Proof depends on
+
+- [Schedule](schedule.md)
+- [Depth](depth.md)
+- [Level Card](level-card.md)
+- [Level Card zero](level-card-zero.md)
+- [Level Steps](level-steps.md)
+- [Level Time](level-time.md)
+- [Offset](offset.md)
+- [Rank](rank.md)
 
 ## Sources
 

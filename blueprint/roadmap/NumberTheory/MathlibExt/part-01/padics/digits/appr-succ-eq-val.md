@@ -13,7 +13,11 @@ Bundled-expansion form of one-step reconstruction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Expansion](padic-expansion.md)
+
+## Proof depends on
+
+- [Appr succ eq](appr-succ-eq.md)
 
 ## Sources
 

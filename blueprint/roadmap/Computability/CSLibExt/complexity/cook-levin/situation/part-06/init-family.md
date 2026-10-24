@@ -12,7 +12,18 @@ cells over `Ys ∪ {⊥}` in prefix form, `⊥` from depth `m` on.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [CNF](../../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Init Cert](init-cert.md)
+- [Init Code](init-code.md)
+- [Init In](init-in.md)
+- [Init Other](init-other.md)
+- [Init Pre](init-pre.md)
+- [Init Tail](init-tail.md)
+- [Clause](../../../dense-sat/clause.md)
 
 ## Sources
 

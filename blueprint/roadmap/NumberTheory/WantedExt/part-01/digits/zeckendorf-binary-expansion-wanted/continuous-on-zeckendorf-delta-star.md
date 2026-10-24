@@ -12,7 +12,10 @@ strictly decreasing on a neighbourhood.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Zeckendorf Delta Star](zeckendorf-delta-star.md)
+- [Zeckendorf Smooth Set](zeckendorf-smooth-set.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Fermat semigroup `M_P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Unit Function](fermat-unit-function.md)
 
 ## Sources
 

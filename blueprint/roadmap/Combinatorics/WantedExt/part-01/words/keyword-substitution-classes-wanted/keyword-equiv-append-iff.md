@@ -13,7 +13,7 @@ Equivalence is stable under appending or prepending a common word: for words
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Equiv](keyword-equiv.md)
 
 ## Sources
 

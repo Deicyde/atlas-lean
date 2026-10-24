@@ -18,6 +18,10 @@ time as `∞`; the real-valued Bochner integral would collapse it to `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expect ENN](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Random.ExpectedCost](../../../../../../../../sources/v2/CSLibExt.md)

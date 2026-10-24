@@ -14,7 +14,7 @@ in an output while an empty production exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chomsky Normal Form](../chomsky-normal-form/is-chomsky-normal-form.md)
 
 ## Sources
 

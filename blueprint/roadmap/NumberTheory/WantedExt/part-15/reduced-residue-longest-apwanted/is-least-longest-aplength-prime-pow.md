@@ -11,7 +11,7 @@ Theorem 3, prime-power case: for a prime `p` and `r > 1`, `min_{m ∈ ℤ} f_m(p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest APLength](longest-aplength.md)
 
 ## Sources
 

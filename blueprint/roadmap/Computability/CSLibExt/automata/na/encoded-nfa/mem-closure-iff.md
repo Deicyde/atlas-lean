@@ -12,7 +12,9 @@ lean: Cslib.Automata.EncodedNFA.mem_εClosure_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+- [Eps Rel](eps-rel.md)
+- [ToεNFA](to-nfa.md)
 
 ## Sources
 

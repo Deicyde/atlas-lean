@@ -11,7 +11,7 @@ The occurrence triangle: `(L, M)`, `(L, 2)`, `(M, 2)` with `L = N`, `M = N + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site](site.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ A dense clause with increasing literals encodes as its gap/literal blocks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inc](inc.md)
+- [Dense Clause](dense-clause.md)
+- [Gap Enc](gap-enc.md)
+- [Encode Clause](../../dense-sat/encode-clause.md)
+
+## Proof depends on
+
+- [Clause](../../dense-sat/clause.md)
+- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

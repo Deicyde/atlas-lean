@@ -11,7 +11,7 @@ Theorem 2 (i): `P_v(6n+5) ≡ 0 (mod 3)` for all `n ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mock Theta V](mock-theta-v.md)
 
 ## Sources
 

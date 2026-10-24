@@ -13,7 +13,7 @@ in `ZMod p`", so `0` counts as a residue.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Repetitions C2](initial-repetitions-c2.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ generating function `C(x)` is not defined in the paper and is omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Pattern2](signed-pattern2.md)
+- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
 
 ## Sources
 

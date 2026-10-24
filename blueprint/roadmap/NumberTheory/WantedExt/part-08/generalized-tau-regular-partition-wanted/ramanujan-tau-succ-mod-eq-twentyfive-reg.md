@@ -11,7 +11,7 @@ lean: MetaMathlibExt.ramanujanTau_succ_modEq_twentyfive_regular
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

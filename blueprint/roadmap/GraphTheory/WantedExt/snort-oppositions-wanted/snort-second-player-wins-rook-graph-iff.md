@@ -12,7 +12,8 @@ are both even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Snort Second Player Wins](snort-second-player-wins.md)
+- [Rook Graph](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-04/rook-graph/rook-graph.md)
 
 ## Sources
 

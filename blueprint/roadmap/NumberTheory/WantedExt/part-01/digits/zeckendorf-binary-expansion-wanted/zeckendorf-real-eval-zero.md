@@ -12,7 +12,7 @@ lean: MetaMathlibExt.zeckendorfRealEval_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
 
 ## Sources
 

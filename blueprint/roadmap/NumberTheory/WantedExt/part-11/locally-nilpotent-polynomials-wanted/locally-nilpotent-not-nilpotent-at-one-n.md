@@ -12,7 +12,8 @@ The locally nilpotent but non-nilpotent polynomials at `1` and at `-1` are exact
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nilpotent At](is-nilpotent-at.md)
+- [Is Weakly Locally Nilpotent At](is-weakly-locally-nilpotent-at.md)
 
 ## Sources
 

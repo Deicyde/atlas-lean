@@ -13,7 +13,8 @@ lean: MetaMathlibExt.carlitzBeta_add_mul_succ_eq_sum_qStirling
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carlitz Beta Poly](carlitz-beta-poly.md)
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

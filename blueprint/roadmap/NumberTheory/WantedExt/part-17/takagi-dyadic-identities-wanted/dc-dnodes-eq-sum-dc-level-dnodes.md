@@ -12,7 +12,8 @@ Theorem 11: for `n > 0`, `δ(n) = ∑_{i=0}^{⌊log₂ n⌋-1} λᵢ(n)`, and ex
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc DNodes](dc-dnodes.md)
+- [Dc Level DNodes](dc-level-dnodes.md)
 
 ## Sources
 

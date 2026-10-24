@@ -12,7 +12,7 @@ The characteristic value of the alternating cosecant sum at `n = 2` is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Watson Alternating Cosecant Sum](watson-alternating-cosecant-sum.md)
 
 ## Sources
 

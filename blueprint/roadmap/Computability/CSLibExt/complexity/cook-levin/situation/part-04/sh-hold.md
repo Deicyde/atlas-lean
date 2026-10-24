@@ -13,7 +13,34 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.sh_hold
 
 ## Depends on
 
-This node has no prerequisites.
+- [C Idx](../../family/c-idx.md)
+- [X Idx](../../family/x-idx.md)
+- [The family](../../shift/sh-family.md)
+- [Enc](../part-01/enc.md)
+- [Cells Hold](cells-hold.md)
+- [Good](../part-03/good.md)
+- [N](../part-01/n.md)
+- [Cell](../part-03/cell.md)
+- [Cn](../part-02/cn.md)
+- [Layout](../part-01/layout.md)
+- [Pl](../part-02/pl.md)
+- [Pu](../part-02/pu.md)
+- [Sa](../part-01/sa.md)
+- [Sit Idx](../part-03/sit-idx.md)
+- [The table-driven row update](../part-03/tab-row.md)
+- [Tr](tr.md)
+- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+
+## Proof depends on
+
+- [Code](../part-03/code.md)
+- [G](../part-01/g.md)
+- [G pos](../part-02/g-pos.md)
+- [La](../part-01/la.md)
+- [Sit Idx spec](../part-03/sit-idx-spec.md)
+- [Wa](../part-01/wa.md)
+- [Depth](../part-01/depth.md)
+- [L1 (in-range shift forcing)](sh-force.md)
 
 ## Sources
 

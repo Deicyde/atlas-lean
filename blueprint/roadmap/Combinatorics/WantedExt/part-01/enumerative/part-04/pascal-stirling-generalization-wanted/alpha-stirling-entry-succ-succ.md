@@ -12,7 +12,7 @@ The recurrence of `S_α`: `Ŝ_{i+1,j+1} = Ŝ_{i,j} + α_{j+2} Ŝ_{i,j+1}` (0-bas
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alpha Stirling Entry](alpha-stirling-entry.md)
 
 ## Sources
 

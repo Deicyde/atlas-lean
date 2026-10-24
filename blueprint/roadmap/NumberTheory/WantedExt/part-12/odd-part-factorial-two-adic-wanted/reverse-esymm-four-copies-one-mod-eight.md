@@ -14,7 +14,8 @@ by multiset scalar multiplication.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Four Copies One Mod Eight Below Two Pow](four-copies-one-mod-eight-below-two-pow.md)
+- [Reverse ESymm](reverse-esymm.md)
 
 ## Sources
 

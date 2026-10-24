@@ -12,7 +12,8 @@ Empty sample gives the empty product `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Density Family](normalized-density-family.md)
+- [Iid Likelihood](iid-likelihood.md)
 
 ## Sources
 

@@ -13,7 +13,19 @@ keeps its code and has no pushes and no consumption on any stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [Cn](cn.md)
+- [La](../part-01/la.md)
+- [Na](../part-01/na.md)
+- [Pl](pl.md)
+
+## Proof depends on
+
+- [G](../part-01/g-2.md)
+- [Res](../part-01/res.md)
+- [Win](../part-01/win.md)
+- [Eff](../part-01/eff.md)
+- [The step on `Option Λ`](../part-01/sit-step.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ For `x ∈ I`, consecutive positions of `O_L`/`O_R` are at distance one or two:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Mallows Admissible](mallows-admissible.md)
+- [Mallows Odd Index](mallows-odd-index.md)
 
 ## Sources
 

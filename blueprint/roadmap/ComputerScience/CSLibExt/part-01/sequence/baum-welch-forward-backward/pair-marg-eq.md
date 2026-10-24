@@ -13,7 +13,17 @@ lean: Cslib.MachineLearning.Sequence.HiddenMarkov.pairMarg_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+- [Backward](../forward-backward/backward.md)
+- [Forward](../hidden-markov/forward.md)
+- [Pair Marg](pair-marg.md)
+
+## Proof depends on
+
+- [Bridge](../forward-backward/bridge.md)
+- [Path Prob](../hidden-markov/path-prob.md)
+- [Sum bridge](../forward-backward/sum-bridge.md)
+- [Sum path Prob ite pair](sum-path-prob-ite-pair.md)
 
 ## Sources
 

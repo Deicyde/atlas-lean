@@ -12,7 +12,7 @@ lean: Cslib.Decidability.rePred_haltingSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halting Set](../../part-02/turing-reducible/halting-set.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.sum_trinomialCoefficient_diagonal_alternating
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

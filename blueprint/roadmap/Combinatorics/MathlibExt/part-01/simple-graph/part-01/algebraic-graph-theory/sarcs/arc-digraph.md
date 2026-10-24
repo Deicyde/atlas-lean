@@ -14,7 +14,7 @@ the s-arcs of X as its vertices, such that (α, β) is an arc if and only if β 
 
 ## Depends on
 
-This node has no prerequisites.
+- [SArc](sarc.md)
 
 ## Sources
 

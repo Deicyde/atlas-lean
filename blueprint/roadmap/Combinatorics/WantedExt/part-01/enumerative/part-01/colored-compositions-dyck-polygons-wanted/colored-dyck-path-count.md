@@ -14,6 +14,10 @@ which the primitive block `U D^j` may be colored in `γ j` ways.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dyck Peak Descents](../../../../../MathlibExt/part-01/enumerative/part-02/dyck-peak-descents/dyck-peak-descents.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.ColoredCompositionsDyckPolygonsWanted](../../../../../../../sources/v2/WantedExt.md)

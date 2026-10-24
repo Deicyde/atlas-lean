@@ -11,7 +11,7 @@ A subcollection covering every element exactly once.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Cover By3 Sets Instance](exact-cover-by3-sets-instance.md)
 
 ## Sources
 

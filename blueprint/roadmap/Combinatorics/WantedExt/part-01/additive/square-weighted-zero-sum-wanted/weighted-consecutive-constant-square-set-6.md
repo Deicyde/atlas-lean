@@ -12,7 +12,8 @@ Theorem 34: prime `p ≥ 7` and even `r ≥ 4` imply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Set](square-set.md)
+- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ continuation language by the input letter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimized DFA](minimized-dfa.md)
+- [Reachable Residuals](../minimality/reachable-residuals.md)
+
+## Proof depends on
+
+- [Left Quotient Equiv Reachable Residuals](left-quotient-equiv-reachable-residuals.md)
 
 ## Sources
 

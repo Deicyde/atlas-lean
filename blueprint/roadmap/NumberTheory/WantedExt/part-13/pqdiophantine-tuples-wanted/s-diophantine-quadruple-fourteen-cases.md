@@ -15,7 +15,7 @@ VIII-XIV are Cases I-VII with `α` and `β` exchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
 
 ## Sources
 

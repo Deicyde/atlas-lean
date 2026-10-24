@@ -12,7 +12,7 @@ lean: MetaMathlibExt.trollopeDelangeIntegral_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trollope Delange Integral](trollope-delange-integral.md)
 
 ## Sources
 

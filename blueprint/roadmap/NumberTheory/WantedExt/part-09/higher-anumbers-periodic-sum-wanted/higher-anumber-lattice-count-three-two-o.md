@@ -14,7 +14,12 @@ Definition 2 (`n = 0`, `p = 3`, `d = 2`, `r = 1`: no lattice points).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
+
+## Proof depends on
+
+- [Tower Gamma](tower-gamma.md)
+- [Tower Mu](tower-mu.md)
 
 ## Sources
 

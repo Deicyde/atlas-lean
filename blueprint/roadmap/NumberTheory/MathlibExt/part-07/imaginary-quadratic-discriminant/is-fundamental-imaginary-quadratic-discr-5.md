@@ -13,6 +13,11 @@ discriminant.
 
 ## Depends on
 
+- [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
+- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+
+## Proof depends on
+
 - [Is Fundamental Discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
 
 ## Sources

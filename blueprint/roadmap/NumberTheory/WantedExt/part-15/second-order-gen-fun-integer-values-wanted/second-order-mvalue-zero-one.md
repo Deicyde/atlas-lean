@@ -12,7 +12,7 @@ Characteristic value: `M(0, 1) = b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order MValue](second-order-mvalue.md)
 
 ## Sources
 

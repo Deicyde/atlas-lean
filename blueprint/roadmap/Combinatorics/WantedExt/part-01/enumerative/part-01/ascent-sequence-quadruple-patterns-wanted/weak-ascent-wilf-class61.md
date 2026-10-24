@@ -12,7 +12,7 @@ equivalent (the paper writes `∼` with the `w` marker).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources
 

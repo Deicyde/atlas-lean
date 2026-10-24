@@ -12,7 +12,7 @@ lean: MetaMathlibExt.okounkovPoly_two_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Okounkov Poly](okounkov-poly.md)
 
 ## Sources
 

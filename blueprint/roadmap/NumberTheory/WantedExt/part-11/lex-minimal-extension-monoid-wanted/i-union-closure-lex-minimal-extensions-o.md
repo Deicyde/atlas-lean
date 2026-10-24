@@ -14,7 +14,9 @@ system of submonoids `⟨L_k(I_k)⟩` (finitely presented by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Atomic Binomid Index](is-atomic-binomid-index.md)
+- [Is Lex Minimal Extension](../../part-02/binomid-index-wanted/is-lex-minimal-extension.md)
+- [Is Lex Minimal Extension Of](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
 
 ## Sources
 

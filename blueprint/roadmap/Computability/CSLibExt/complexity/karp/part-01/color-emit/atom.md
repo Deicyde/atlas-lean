@@ -11,7 +11,14 @@ The bits site `j` pushes from state `m`: its counter in ones above its constant 
 
 ## Depends on
 
-This node has no prerequisites.
+- [MS](ms.md)
+- [Site](site.md)
+
+## Proof depends on
+
+- [Val](val.md)
+- [Src](src-2.md)
+- [Top](top.md)
 
 ## Sources
 

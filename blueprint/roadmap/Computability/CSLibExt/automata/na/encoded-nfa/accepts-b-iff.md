@@ -12,7 +12,16 @@ lean: Cslib.Automata.EncodedNFA.acceptsB_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+- [Membership test](accepts-b.md)
+- [Language](language.md)
+
+## Proof depends on
+
+- [The states reached are those of Mathlib's `εNFA.eval`](mem-run-iff.md)
+- [Run](run.md)
+- [ToεNFA](to-nfa.md)
+- [Mem B](../../../decidability/part-01/primrec-list/mem-b.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ lean: MetaMathlibExt.lip_univ_comp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

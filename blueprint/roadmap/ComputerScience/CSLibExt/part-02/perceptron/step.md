@@ -14,6 +14,10 @@ correctly, `sign y * (w ⬝ᵥ x) ≤ 0`, add `sign y • x` and count a mistake
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sign](sign.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Perceptron](../../../../../sources/v2/CSLibExt.md)

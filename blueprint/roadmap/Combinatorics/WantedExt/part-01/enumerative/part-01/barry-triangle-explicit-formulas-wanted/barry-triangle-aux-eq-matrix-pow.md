@@ -13,7 +13,7 @@ diagonal entries `i (a - i)` (`i = 1, …, a - 1`) and subdiagonal entries `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Barry Triangle Aux](barry-triangle-aux.md)
 
 ## Sources
 

@@ -15,7 +15,13 @@ size grow.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect](is-perfect.md)
+- [Online Matcher](online-matcher.md)
+- [Matched](matched.md)
+
+## Proof depends on
+
+- [No deterministic online bipartite matching algorithm beats `1/2`](exists-perfect-matched-le.md)
 
 ## Sources
 

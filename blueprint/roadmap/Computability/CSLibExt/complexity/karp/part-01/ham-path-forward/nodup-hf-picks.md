@@ -12,7 +12,7 @@ No clause vertex appears twice in a row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Picks](hf-picks.md)
 
 ## Sources
 

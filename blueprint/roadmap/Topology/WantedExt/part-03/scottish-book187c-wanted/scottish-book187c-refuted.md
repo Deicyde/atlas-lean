@@ -16,7 +16,7 @@ is partially_solved, part (1) remaining separate).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube](cube.md)
 
 ## Sources
 

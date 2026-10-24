@@ -12,7 +12,7 @@ lean: MetaMathlibExt.evenPseudoprime_modEq_and_orderOf_odd
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Even Pseudoprime](../../../MathlibExt/part-05/even-pseudoprime/is-even-pseudoprime.md)
 
 ## Sources
 

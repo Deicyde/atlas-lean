@@ -13,11 +13,11 @@ Rigidity under `IsFractionRing`: equal discriminants force equal lattices.
 
 ## Depends on
 
-- [Lattice Discriminant Set](lattice-discriminant-set.md)
+- [Lattice Discriminant](lattice-discriminant.md)
 
 ## Proof depends on
 
-- [Lattice Discriminant eq span singleton](lattice-discriminant-eq-span-singleton.md)
+- [Lattice Discriminant eq imp eq](lattice-discriminant-eq-imp-eq.md)
 
 ## Sources
 

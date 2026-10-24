@@ -11,7 +11,7 @@ lean: MetaMathlibExt.Complexity.NPComplete.DensestKSubgraph.DensestKSubgraphFeas
 
 ## Depends on
 
-This node has no prerequisites.
+- [Densest KSubgraph Instance](densest-ksubgraph-instance.md)
 
 ## Sources
 

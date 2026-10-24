@@ -15,6 +15,10 @@ zero-based index `i = k - 1 ≥ 1`) equal to `1` plus the number of weak ascents
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Word Weak Ascents](word-weak-ascents.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.AscentSequenceQuadruplePatternsWanted](../../../../../../../sources/v2/WantedExt.md)

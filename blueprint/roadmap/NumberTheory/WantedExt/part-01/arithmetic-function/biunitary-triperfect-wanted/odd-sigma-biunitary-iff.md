@@ -11,7 +11,7 @@ For positive `n`, `σ**(n)` is odd iff `n` is a power of `2` (including `1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

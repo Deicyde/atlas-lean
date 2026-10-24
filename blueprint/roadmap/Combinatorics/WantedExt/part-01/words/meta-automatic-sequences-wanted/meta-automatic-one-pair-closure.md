@@ -13,7 +13,7 @@ Lemma 12: with `b(n) = ℳ₁(2n + 1 - ℳ₁(n))`, `s(n) = (ℳ₁(n), b(n))`, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic One](meta-automatic-one.md)
 
 ## Sources
 

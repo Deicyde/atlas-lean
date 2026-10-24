@@ -12,7 +12,12 @@ The bronze numbers satisfy `B_{n+2} = 3B_{n+1} + B_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+
+## Proof depends on
+
+- [Lucas Sequence Params](../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

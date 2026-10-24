@@ -15,7 +15,7 @@ paper's derivation gives `1 - O_{-1} = 0`, is dropped).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Harmonic](../../../../../../NumberTheory/MathlibExt/part-01/harmonic/odd-harmonic/odd-harmonic.md)
 
 ## Sources
 

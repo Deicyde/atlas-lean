@@ -12,7 +12,7 @@ lean: MetaMathlibExt.weightedPartitionCoeff_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Partition Coeff](weighted-partition-coeff.md)
 
 ## Sources
 

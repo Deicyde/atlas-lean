@@ -11,7 +11,12 @@ The blocks of situation `i` at time `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [Sh Blk](sh-blk.md)
+- [Encode CNF](../../dense-sat/encode-cnf.md)
 
 ## Sources
 

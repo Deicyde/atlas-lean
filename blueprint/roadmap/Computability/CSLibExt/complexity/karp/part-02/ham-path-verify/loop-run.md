@@ -14,7 +14,28 @@ steps for a bound `L` on `n`, `t`, the edge bits, the bits of `q` and `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Enc W](../../part-01/ham-path-check/enc-w.md)
+- [Lay](lay.md)
+- [Prog](prog.md)
+- [Walk Ok](../../part-01/ham-path-check/walk-ok.md)
+- [Edge Bits](../../part-01/color/edge-bits.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [CI](ci.md)
+- [Cmp I run](cmp-i-run.md)
+- [Cout](cout.md)
+- [Cout eq](cout-eq.md)
+- [Enc W cons](../../part-01/ham-path-check/enc-w-cons.md)
+- [If E run](if-e-run.md)
+- [Step Ok](../../part-01/ham-path-check/step-ok.md)
+- [Step run](step-run.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

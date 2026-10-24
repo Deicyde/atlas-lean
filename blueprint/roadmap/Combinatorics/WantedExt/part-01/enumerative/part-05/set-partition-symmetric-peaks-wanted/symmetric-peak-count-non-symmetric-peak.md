@@ -13,7 +13,8 @@ peaks (`132`, `251`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Symmetric Peak Count](non-symmetric-peak-count.md)
+- [Symmetric Peak Count](../symmetric-peaks-compositions-wanted/symmetric-peak-count.md)
 
 ## Sources
 

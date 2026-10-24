@@ -12,7 +12,7 @@ For all `n, α ≥ 0`: `bt(64n+48) ≡ 0`, `bt(128n+80) ≡ 0`, `bt(128n+96) ≡
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overcubic Triple Count](overcubic-triple-count.md)
 
 ## Sources
 

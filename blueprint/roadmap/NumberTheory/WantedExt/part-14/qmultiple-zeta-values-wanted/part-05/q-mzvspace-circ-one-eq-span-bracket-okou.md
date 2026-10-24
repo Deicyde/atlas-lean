@@ -13,7 +13,10 @@ The bracket `g(k₁, …, kᵣ)` is the bi-bracket with all `dⱼ = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Bracket](../part-04/bi-bracket.md)
+- [Bz QMZV](../part-02/bz-qmzv.md)
+- [Okounkov QMZV](../part-04/okounkov-qmzv.md)
+- [Q MZVSpace Circ](../part-04/q-mzvspace-circ.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Start times meeting job order, machine exclusion, and the deadline.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow Shop Instance](flow-shop-instance.md)
 
 ## Sources
 

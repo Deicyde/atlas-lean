@@ -12,7 +12,12 @@ store. `pointsTo`, `emp`, and predicates built from them are.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HAssertion](../separation-logic/hassertion.md)
+
+## Proof depends on
+
+- [Heap](../heap/heap.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

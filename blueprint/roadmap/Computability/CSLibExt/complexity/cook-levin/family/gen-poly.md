@@ -11,7 +11,11 @@ The bound as a `Polynomial ℕ` in `T + H` (the form `TM2ComputableInPolyTime` u
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [Gen C](gen-c.md)
 
 ## Sources
 

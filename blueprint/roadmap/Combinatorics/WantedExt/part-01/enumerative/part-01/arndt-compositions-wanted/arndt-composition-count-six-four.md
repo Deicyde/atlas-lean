@@ -12,7 +12,7 @@ The only Arndt composition of `6` with four parts is `(2,1,2,1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](arndt-composition-count.md)
 
 ## Sources
 

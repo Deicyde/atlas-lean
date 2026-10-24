@@ -12,7 +12,11 @@ The birthday lower bound under the hypothesis `q ≤ √N`, which implies `q ≤
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collision Prob](collision-prob.md)
+
+## Proof depends on
+
+- [Birthday lower bound as stated in Katz and Lindell](collision-prob-ge-of-le-sqrt.md)
 
 ## Sources
 

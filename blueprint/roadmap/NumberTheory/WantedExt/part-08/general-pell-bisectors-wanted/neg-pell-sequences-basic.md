@@ -17,7 +17,10 @@ monotonicity of `f` is stated on `n ≥ 1`. (23) holds by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
+- [Neg Pell Fund X](neg-pell-fund-x.md)
+- [Neg Pell Fund Y](neg-pell-fund-y.md)
+- [Neg Pell G](neg-pell-g.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ One pass ending at wire `m` has `m` comparators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pass](pass.md)
+
+## Proof depends on
+
+- [Adjacent](adjacent.md)
+- [Network](../zero-one/network.md)
 
 ## Sources
 

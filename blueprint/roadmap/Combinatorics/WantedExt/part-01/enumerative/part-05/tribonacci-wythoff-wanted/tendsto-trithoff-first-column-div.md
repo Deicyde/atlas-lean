@@ -14,7 +14,7 @@ Tribonacci representation ends in `1`, in increasing order) grows like
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tribonacci Repr](is-tribonacci-repr.md)
 
 ## Sources
 

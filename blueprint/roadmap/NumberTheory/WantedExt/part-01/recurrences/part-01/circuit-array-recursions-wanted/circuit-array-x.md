@@ -14,6 +14,10 @@ once-reduced grid is replaced by `(X - 3)/X`, and the reductions continue.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Circuit Array Of](circuit-array-of.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.CircuitArrayRecursionsWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,20 @@ is on a previously unvisited blank cell.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts](halts.md)
+- [Machine](machine.md)
+- [Move](move.md)
+
+## Proof depends on
+
+- [Config](config.md)
+- [Halts Within](halts-within.md)
+- [Shift](shift.md)
+- [Initial](initial.md)
+- [Initial State](initial-state.md)
+- [Run](run.md)
+- [Step](step.md)
+- [Tape eq zero of abs gt](tape-eq-zero-of-abs-gt.md)
 
 ## Sources
 

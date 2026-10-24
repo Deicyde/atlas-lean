@@ -14,6 +14,7 @@ Invariance under carrier equivalences in degrees `0` and `-1`.
 ## Depends on
 
 - [Herbrand Finite](herbrand-finite.md)
+- [Herbrand Quotient](herbrand-quotient.md)
 
 ## Proof depends on
 

@@ -12,7 +12,7 @@ The strict preference given by a ranking `σ` (`σ k` is the `k`-th choice, `0` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Total Order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

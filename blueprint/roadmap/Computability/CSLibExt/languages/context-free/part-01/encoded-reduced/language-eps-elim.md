@@ -12,7 +12,16 @@ lean: Cslib.Language.EncodedCFG.language_epsElim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+- [Eps Elim](eps-elim.md)
+- [Language](../encoded/language.md)
+
+## Proof depends on
+
+- [`epsElim` computes `epsGrammar`](eps-elim-to-cfg.md)
+- [To CFG](../encoded/to-cfg.md)
+- [Eps Grammar](../reduced/eps-grammar.md)
+- [Eps Grammar language](../reduced/eps-grammar-language.md)
 
 ## Sources
 

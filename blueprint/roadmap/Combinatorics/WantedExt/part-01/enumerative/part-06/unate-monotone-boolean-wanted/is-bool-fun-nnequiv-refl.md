@@ -12,7 +12,7 @@ Every Boolean function is NN-equivalent to itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bool Fun NNEquiv](is-bool-fun-nnequiv.md)
 
 ## Sources
 

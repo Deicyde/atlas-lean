@@ -12,7 +12,8 @@ at `n = 0` (both sides `1`), so it is stated for all `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Parts Not Two Mod Four Count](parts-not-two-mod-four-count.md)
 
 ## Sources
 

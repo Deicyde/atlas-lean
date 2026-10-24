@@ -11,7 +11,14 @@ The production `A → wᵢ A i`, for `wᵢ` the chosen side of the `i`-th domino
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [Domino](domino.md)
+- [Index Sym](index-sym.md)
+- [Letter Sym](letter-sym.md)
+- [Nt Sym](nt-sym.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Characteristic value: the left child of the root of `FT` is `(0/1, 1/2, 1/1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Tree](farey-tree.md)
 
 ## Sources
 

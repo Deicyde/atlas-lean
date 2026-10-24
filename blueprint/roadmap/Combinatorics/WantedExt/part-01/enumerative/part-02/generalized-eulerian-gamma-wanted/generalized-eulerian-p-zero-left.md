@@ -13,7 +13,11 @@ For `q = 0` the generating function is `1`, so `P_n(0, t; x, y)` is `1` at `n = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Eulerian P](generalized-eulerian-p.md)
+
+## Proof depends on
+
+- [Generalized Eulerian Series](generalized-eulerian-series.md)
 
 ## Sources
 

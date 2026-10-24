@@ -12,7 +12,7 @@ Theorem 3: `N_R(x) = O(x^ε)` for every `ε > 0`, with `N_R(x)` the cardinality 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Robin Exceptional Set](robin-exceptional-set.md)
 
 ## Sources
 

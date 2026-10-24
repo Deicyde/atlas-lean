@@ -11,7 +11,7 @@ The grammar `S → a S | ε` (for every letter `a`), generating every word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Sources
 

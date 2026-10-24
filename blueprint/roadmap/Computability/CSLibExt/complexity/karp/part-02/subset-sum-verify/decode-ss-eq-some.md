@@ -12,7 +12,19 @@ lean: Cslib.Complexity.Karp.SSVerify.decodeSS_eq_some
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode SS](decode-ss.md)
+- [Encode SS](../subset-sum/encode-ss.md)
+
+## Proof depends on
+
+- [Encode Nat decode Nat iff](encode-nat-decode-nat-iff.md)
+- [Last F](last-f.md)
+- [Nums Aux](nums-aux.md)
+- [Decode Nat Prefix](../../../../cook-levin/decode-nat-prefix.md)
+- [Encode Nat Prefix](../../../../cook-levin/encode-nat-prefix.md)
+- [Undelimit eq some iff](../../../../cook-levin/undelimit-eq-some-iff.md)
+- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
+- [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

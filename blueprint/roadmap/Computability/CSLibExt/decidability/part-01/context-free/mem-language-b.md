@@ -11,7 +11,12 @@ lean: Cslib.Language.EncodedCFG.memLanguageB
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Mem B](../primrec-list/mem-b.md)
+- [Found](found.md)
 
 ## Sources
 

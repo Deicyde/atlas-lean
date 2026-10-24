@@ -16,7 +16,8 @@ of `q^N` in `ζ_q^SZ(k₁, {0}^{d₁-1}, …, kᵣ, {0}^{dᵣ-1})` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz Block Index](sz-block-index.md)
+- [Sz QMZV](sz-qmzv.md)
 
 ## Sources
 

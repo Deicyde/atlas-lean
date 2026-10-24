@@ -12,7 +12,13 @@ A round adds one block per split block.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Splits](splits.md)
+- [Preimage](preimage.md)
+- [Round P](round-p.md)
+
+## Proof depends on
+
+- [Split Block](split-block.md)
 
 ## Sources
 

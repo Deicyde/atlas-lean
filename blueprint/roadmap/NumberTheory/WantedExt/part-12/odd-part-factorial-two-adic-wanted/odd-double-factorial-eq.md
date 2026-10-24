@@ -13,7 +13,8 @@ product from `1` through `2^e-1`, exactly as stated in the paper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Double Factorial](odd-double-factorial.md)
+- [Odd Range Product](odd-range-product.md)
 
 ## Sources
 

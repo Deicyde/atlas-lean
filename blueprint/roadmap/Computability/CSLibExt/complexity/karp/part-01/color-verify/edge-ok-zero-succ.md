@@ -12,7 +12,7 @@ The walk-on result decides `edgeOk` when one endpoint is the first color.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Ok](edge-ok.md)
 
 ## Sources
 

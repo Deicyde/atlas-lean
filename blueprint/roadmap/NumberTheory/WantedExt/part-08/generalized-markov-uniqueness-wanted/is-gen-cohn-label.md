@@ -16,6 +16,11 @@ they were created, which gives `C_{0/1}` and `C_{1/0}`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Farey Tree](farey-tree.md)
+- [Gen Cohn Tree](gen-cohn-tree.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedMarkovUniquenessWanted](../../../../../sources/v2/WantedExt.md)

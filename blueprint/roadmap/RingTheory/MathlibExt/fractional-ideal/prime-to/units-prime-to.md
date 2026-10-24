@@ -16,10 +16,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Is Prime To](is-prime-to.md)
 - [Inv unit](inv-unit.md)
 - [Mul](mul.md)
 - [Is Prime To one](is-prime-to-one.md)
-- [Non Zero Divisors le comap algebra Map at Prime](non-zero-divisors-le-comap-algebra-map-a.md)
 
 ## Sources
 

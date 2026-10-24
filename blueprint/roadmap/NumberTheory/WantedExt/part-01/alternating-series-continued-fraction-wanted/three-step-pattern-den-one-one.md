@@ -12,7 +12,7 @@ Small values: for `ω ≡ 1` and `β = 1`, `q = 1, 1, 2, 3, 8, 11, 19, 220, …`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Step Pattern Den](three-step-pattern-den.md)
 
 ## Sources
 

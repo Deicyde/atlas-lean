@@ -16,6 +16,12 @@ least `1 - ε` (source EP-851 [Erdős Problems]).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Representable](prime-representable.md)
+- [Representable](representable.md)
+- [Lower Density](../../../../Data/MathlibExt/set/density/lower-density.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem851Wanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,13 @@ A `Dir(α)`-random vector is almost surely a probability vector with positive en
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet Measure](dirichlet-measure.md)
+
+## Proof depends on
+
+- [Dirichlet Density](dirichlet-density.md)
+- [Multi Beta](multi-beta.md)
+- [Simplex Completion](simplex-completion.md)
 
 ## Sources
 

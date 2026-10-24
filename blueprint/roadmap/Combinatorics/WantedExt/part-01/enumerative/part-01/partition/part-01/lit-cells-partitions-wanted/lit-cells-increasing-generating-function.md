@@ -12,7 +12,7 @@ function `2P(q) ∑_{i ≥ 1} q^i/(1 - q^i) - P(q) q/(1 - q) = P(q) ∑_{i ≥ 1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lit Cells Increasing](lit-cells-increasing.md)
 
 ## Sources
 

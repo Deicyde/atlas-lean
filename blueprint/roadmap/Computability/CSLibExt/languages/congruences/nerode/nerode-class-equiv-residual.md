@@ -11,7 +11,14 @@ Nerode classes are precisely the residual languages reachable by left quotients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](nerode-class.md)
+
+## Proof depends on
+
+- [Class Residual](class-residual.md)
+- [Nerode Class](nerode-class-2.md)
+- [Nerode Rel](nerode-rel.md)
+- [Nerode Setoid](nerode-setoid.md)
 
 ## Sources
 

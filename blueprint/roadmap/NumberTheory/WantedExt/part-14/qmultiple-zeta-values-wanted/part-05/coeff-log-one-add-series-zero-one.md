@@ -12,7 +12,7 @@ lean: MetaMathlibExt.coeff_logOneAddSeries_zero_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log One Add Series](log-one-add-series.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ counterpart of the paper's phrase “four copies”.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integer Multiset](integer-multiset.md)
+- [One Mod Eight Below Two Pow](one-mod-eight-below-two-pow.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OddPartFactorialTwoAdicWanted](../../../../../sources/v2/WantedExt.md)

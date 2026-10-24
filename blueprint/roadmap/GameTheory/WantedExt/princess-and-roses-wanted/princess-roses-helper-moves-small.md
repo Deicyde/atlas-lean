@@ -13,7 +13,7 @@ lean: MetaMathlibExt.princessRosesHelperMoves_small
 
 ## Depends on
 
-This node has no prerequisites.
+- [Princess Roses Helper Moves](princess-roses-helper-moves.md)
 
 ## Sources
 

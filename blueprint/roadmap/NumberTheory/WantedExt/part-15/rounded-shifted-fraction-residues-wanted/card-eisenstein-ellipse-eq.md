@@ -13,7 +13,7 @@ are `1` at `n = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
 
 ## Sources
 

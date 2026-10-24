@@ -12,7 +12,10 @@ primitive prime divisor (a prime `p` with `ρ(p) = n`) for every `n ≥ 1` outsi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Prime Divisor](../../../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
+- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

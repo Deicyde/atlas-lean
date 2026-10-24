@@ -13,7 +13,8 @@ If the odd elements of `\overline{ℛ} = {n ≥ 1 : 𝔻_n = rad(n + 1)}` are ex
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator](bernoulli-diff-denominator.md)
+- [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
 
 ## Sources
 

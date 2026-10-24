@@ -15,7 +15,7 @@ from it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Dist Moment](cyclotomic-dist-moment.md)
 
 ## Sources
 

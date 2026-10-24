@@ -11,7 +11,7 @@ Theorem 1(b): `m^{(2:1)}(K_3) = 7`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pebbling All NTotals](pebbling-all-ntotals.md)
 
 ## Sources
 

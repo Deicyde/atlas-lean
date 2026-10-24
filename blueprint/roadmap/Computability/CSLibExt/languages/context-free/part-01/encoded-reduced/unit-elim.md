@@ -12,7 +12,14 @@ productions is copied to each mentioned nonterminal that reaches it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Mem B](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Nt List](nt-list.md)
+- [Unit Reach](unit-reach.md)
+- [Unit Target](unit-target.md)
 
 ## Sources
 

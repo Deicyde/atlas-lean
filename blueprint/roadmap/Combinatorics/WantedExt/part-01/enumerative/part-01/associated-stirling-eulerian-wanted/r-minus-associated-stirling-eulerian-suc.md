@@ -15,7 +15,8 @@ vanish); terms with `j > n` vanish through `C(n,j) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
+- [R Minus Associated Stirling Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/r-minus-associated-stirling-eulerian.md)
 
 ## Sources
 

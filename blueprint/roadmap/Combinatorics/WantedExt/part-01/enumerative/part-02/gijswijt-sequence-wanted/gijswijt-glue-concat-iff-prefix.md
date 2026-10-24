@@ -12,7 +12,9 @@ curling number at most `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curling Number](curling-number.md)
+- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
+- [Gijswijt Prefix](gijswijt-prefix.md)
 
 ## Sources
 

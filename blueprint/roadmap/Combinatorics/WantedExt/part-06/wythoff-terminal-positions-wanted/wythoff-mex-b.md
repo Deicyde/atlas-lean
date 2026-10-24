@@ -13,6 +13,10 @@ The companion sequence `b_n = a_n + n + ℓ + 1` of `K^ℓ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wythoff Mex A](wythoff-mex-a.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WythoffTerminalPositionsWanted](../../../../../sources/v2/WantedExt.md)

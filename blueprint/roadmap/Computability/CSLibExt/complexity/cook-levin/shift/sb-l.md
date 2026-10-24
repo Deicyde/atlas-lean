@@ -11,7 +11,11 @@ lean: Cslib.Complexity.CookLevin.Shift.GL.sbL
 
 ## Depends on
 
-This node has no prerequisites.
+- [GL](gl.md)
+
+## Proof depends on
+
+- [ST](st.md)
 
 ## Sources
 

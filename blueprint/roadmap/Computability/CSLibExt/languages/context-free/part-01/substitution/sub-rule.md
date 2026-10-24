@@ -13,6 +13,11 @@ A production of the grammar for letter `a`, on the nonterminals tagged by its nu
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Code](code.md)
+- [Map Rule](../basic/map-rule.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Substitution](../../../../../../../sources/v2/CSLibExt.md)

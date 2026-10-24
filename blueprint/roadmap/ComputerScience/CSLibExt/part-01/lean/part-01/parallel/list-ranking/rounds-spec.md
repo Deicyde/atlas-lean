@@ -13,7 +13,16 @@ the distance is `min (2 ^ t) (rank v)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Terminates](terminates.md)
+- [Jump](jump.md)
+- [Rank](rank.md)
+- [Rounds](rounds.md)
+
+## Proof depends on
+
+- [The characteristic property of the rank](jump-eq-none-iff.md)
+- [Rank of jump](rank-of-jump.md)
 
 ## Sources
 

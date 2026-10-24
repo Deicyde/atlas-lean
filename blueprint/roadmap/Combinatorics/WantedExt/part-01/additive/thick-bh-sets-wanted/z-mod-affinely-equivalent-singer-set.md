@@ -15,7 +15,8 @@ implies `Singer_h(q, b) ∼ Singer_h(q, e)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [ZMod Affinely Equivalent](zmod-affinely-equivalent.md)
+- [Singer Set](singer-set.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Polynomial relation between `X = k(q)` and `Y = k(q²)` on the unit disk:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan K](ramanujan-k.md)
 
 ## Sources
 

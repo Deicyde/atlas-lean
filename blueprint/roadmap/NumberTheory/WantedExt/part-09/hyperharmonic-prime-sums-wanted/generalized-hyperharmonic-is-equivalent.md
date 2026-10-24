@@ -13,7 +13,8 @@ Lemma 2: for `p ≥ 2` and order `r ≥ 1`, the generalized hyperharmonic number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Harmonic](../../part-08/generalized-harmonic-gamma-wanted/generalized-harmonic.md)
+- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
 
 ## Sources
 

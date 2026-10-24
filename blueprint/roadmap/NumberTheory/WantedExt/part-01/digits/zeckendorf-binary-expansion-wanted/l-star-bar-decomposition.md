@@ -15,7 +15,11 @@ by its index `b`, which determines the blocks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Desc Lex LT](desc-lex-lt.md)
+- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [L Star Collection](l-star-collection.md)
+- [Max LStar Block](max-lstar-block.md)
 
 ## Sources
 

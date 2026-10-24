@@ -13,7 +13,9 @@ every `k ≥ 2` the number `T_{P(2)} + ⋯ + T_{P(k)}` is a positive record, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
+- [Tribonacci Value](tribonacci-value.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Every entry of a matrix with positive minors is positive (its `1 × 1` minors).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Positive Minors](has-positive-minors.md)
 
 ## Sources
 

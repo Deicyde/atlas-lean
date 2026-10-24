@@ -12,7 +12,11 @@ One round: the items `(A, i, j)` for productions `A → rhs` and positions `i` f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Starts](starts.md)
 
 ## Sources
 

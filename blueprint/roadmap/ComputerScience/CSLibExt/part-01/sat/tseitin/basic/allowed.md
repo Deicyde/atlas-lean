@@ -14,6 +14,10 @@ gate in range.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Gate](is-gate.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.SAT.Tseitin.Basic](../../../../../../../sources/v2/CSLibExt.md)

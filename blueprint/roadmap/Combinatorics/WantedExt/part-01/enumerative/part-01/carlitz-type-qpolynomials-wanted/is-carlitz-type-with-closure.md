@@ -15,7 +15,7 @@ Closure properties of Carlitz-type sequences with associated sequence `a`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Carlitz Type With](is-carlitz-type-with.md)
 
 ## Sources
 

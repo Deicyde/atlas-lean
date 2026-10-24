@@ -11,7 +11,11 @@ The SAT-to-3SAT translation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [To3 Aux](to3-aux.md)
 
 ## Sources
 

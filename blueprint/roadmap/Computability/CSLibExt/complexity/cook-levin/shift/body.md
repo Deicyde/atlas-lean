@@ -11,7 +11,8 @@ Counters of a loop body: the block's constants are in place.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [CK](ck.md)
 
 ## Sources
 

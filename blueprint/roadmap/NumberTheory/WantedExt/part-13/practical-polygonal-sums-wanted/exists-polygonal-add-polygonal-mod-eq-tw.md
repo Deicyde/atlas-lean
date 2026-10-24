@@ -12,7 +12,7 @@ For positive `n` and `s > 3` there are positive `x, y` such that
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
 
 ## Sources
 

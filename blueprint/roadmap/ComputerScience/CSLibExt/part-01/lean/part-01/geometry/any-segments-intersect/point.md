@@ -11,7 +11,12 @@ The endpoint an event stands for.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+
+## Proof depends on
+
+- [Left](left.md)
+- [Right](right.md)
 
 ## Sources
 

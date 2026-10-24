@@ -12,7 +12,8 @@ A step is the target of a listed transition or stays put.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+- [Step](step.md)
 
 ## Sources
 

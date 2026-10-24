@@ -12,7 +12,7 @@ The recurrence of `a(k)` for `k ≥ 3`, written for `k + 1` with `k ≥ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Convolution Coeff](digit-convolution-coeff.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The empty set lies in the van der Waerden ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Der Waerden Ideal](van-der-waerden-ideal.md)
 
 ## Sources
 

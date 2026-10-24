@@ -11,7 +11,7 @@ The belief as a measure, `N(mean, cov)` for a valid belief.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
 
 ## Sources
 

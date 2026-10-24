@@ -12,7 +12,19 @@ If the lengths differ by at most `w`, a banded alignment exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Banded Score](banded-score.md)
+
+## Proof depends on
+
+- [Alignment](../sequence-alignment/alignment.md)
+- [Is Alignment](../sequence-alignment/is-alignment.md)
+- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Alignments](../sequence-alignment/alignments.md)
+- [Banded From](banded-from.md)
+- [Diag Align](diag-align.md)
+- [Is Alignment diag Align](is-alignment-diag-align.md)
+- [Is Banded diag Align](is-banded-diag-align.md)
+- [Mem alignments](../sequence-alignment/mem-alignments.md)
 
 ## Sources
 

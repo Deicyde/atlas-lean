@@ -13,7 +13,7 @@ with `t = ⌊(n - m - k + 3) / 2⌋`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
 
 ## Sources
 

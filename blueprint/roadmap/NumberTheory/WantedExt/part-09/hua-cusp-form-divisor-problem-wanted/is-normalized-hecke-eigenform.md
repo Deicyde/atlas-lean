@@ -16,6 +16,10 @@ simultaneous eigenform of all Hecke operators normalized by `a_f(1) = 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HuaCuspFormDivisorProblemWanted](../../../../../sources/v2/WantedExt.md)

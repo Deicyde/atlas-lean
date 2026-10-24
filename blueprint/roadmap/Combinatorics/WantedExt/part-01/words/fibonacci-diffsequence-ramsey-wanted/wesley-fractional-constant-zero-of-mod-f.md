@@ -12,7 +12,7 @@ lean: MetaMathlibExt.wesleyFractionalConstant_zero_of_mod_four_eq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wesley Fractional Constant](wesley-fractional-constant.md)
 
 ## Sources
 

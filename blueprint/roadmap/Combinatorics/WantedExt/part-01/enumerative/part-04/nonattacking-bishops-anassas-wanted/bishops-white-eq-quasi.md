@@ -12,7 +12,8 @@ Equation (13): `R_W(m, k) = ∑_{d=0}^{2k} c_d m^d` with the constituent coeffic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bishop Color Quasi Coeff](bishop-color-quasi-coeff.md)
+- [Bishops White](bishops-white.md)
 
 ## Sources
 

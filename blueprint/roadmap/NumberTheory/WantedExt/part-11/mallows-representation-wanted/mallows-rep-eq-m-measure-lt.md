@@ -12,7 +12,8 @@ For every `i ≥ 1`, the Lebesgue measure of `{α ∈ (0,1) \ ℚ : M_i(α) = M}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
 
 ## Sources
 

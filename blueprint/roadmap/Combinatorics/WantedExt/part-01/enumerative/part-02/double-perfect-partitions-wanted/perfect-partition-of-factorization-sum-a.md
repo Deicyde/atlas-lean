@@ -13,7 +13,7 @@ minus one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Partition Of Factorization](perfect-partition-of-factorization.md)
 
 ## Sources
 

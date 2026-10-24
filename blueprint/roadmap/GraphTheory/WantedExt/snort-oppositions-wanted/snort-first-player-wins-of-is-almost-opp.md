@@ -11,7 +11,8 @@ The first player wins Snort on every almost opposable graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Almost Opposable](is-almost-opposable.md)
+- [Snort First Player Wins](snort-first-player-wins.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The generalized Frobenius number is unique.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Frobenius Number](is-gen-frobenius-number.md)
+
+## Proof depends on
+
+- [Frobenius Rep Count](frobenius-rep-count.md)
 
 ## Sources
 

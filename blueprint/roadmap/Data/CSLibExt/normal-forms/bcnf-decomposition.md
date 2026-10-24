@@ -11,7 +11,11 @@ The **BCNF decomposition** of `S`; `l` lists the attributes to try in violations
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](../functional-dependencies/fd.md)
+
+## Proof depends on
+
+- [Bcnf Decompose](bcnf-decompose.md)
 
 ## Sources
 

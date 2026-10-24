@@ -13,6 +13,10 @@ The convergent numerator `P_n` (`n ≥ 0`) of the Hurwitz expansion of `z`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hurwitz PQ](hurwitz-pq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HurwitzContinuedFractionFourSquaresWanted](../../../../../sources/v2/WantedExt.md)

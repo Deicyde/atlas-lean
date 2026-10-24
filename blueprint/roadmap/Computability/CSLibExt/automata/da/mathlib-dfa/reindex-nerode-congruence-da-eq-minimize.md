@@ -13,7 +13,15 @@ Hence the upstream canonical automaton of the language of a DFA `M` is, after re
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Quotient Equiv Residual](nerode-quotient-equiv-residual.md)
+- [To DFA](to-dfa.md)
+- [Left Quotient Equiv Reachable Residuals](../../../languages/congruences/minimization/left-quotient-equiv-reachable-residuals.md)
+- [Minimized DFA](../../../languages/congruences/minimization/minimized-dfa.md)
+- [Reachable Residuals](../../../languages/congruences/minimality/reachable-residuals.md)
+
+## Proof depends on
+
+- [The upstream canonical automaton is Mathlib's](reindex-nerode-congruence-da.md)
 
 ## Sources
 

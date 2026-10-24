@@ -12,7 +12,7 @@ lean: MetaMathlibExt.multiplicativeOfPrimePowers_prime_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiplicative Of Prime Powers](multiplicative-of-prime-powers.md)
 
 ## Sources
 

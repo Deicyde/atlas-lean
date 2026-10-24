@@ -14,6 +14,10 @@ two nonempty parts with equal sums of squares.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unitary Divisors](../../../MathlibExt/part-12/unitary-divisor/unitary-divisors.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SZumkellerWanted](../../../../../sources/v2/WantedExt.md)

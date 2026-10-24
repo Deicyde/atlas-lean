@@ -13,7 +13,7 @@ is even (and positive), such a `d` exists if and only if `a_{l/2}` is odd.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Periodic CF](../quadratic-irrational-cfnonexistence-wanted/has-periodic-cf.md)
 
 ## Sources
 

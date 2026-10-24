@@ -12,7 +12,7 @@ Depth one: `ζ(s, {1}^0) = ∑_{n ≥ 0} (n + 1)^{-s}`, the Riemann zeta series.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height One Multiple Zeta](height-one-multiple-zeta.md)
 
 ## Sources
 

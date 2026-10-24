@@ -12,7 +12,7 @@ For `n = 0` this is the empty product `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Density Family](normalized-density-family.md)
 
 ## Sources
 

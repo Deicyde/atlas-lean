@@ -14,6 +14,10 @@ Equation (7) at `x = 0`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Degenerate Exp Series](degenerate-exp-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.DegenerateHarmonicRiordanWanted](../../../../../../../sources/v2/WantedExt.md)

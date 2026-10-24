@@ -13,6 +13,10 @@ lean: MetaMathlibExt.gijswijtGlueConcat
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gijswijt Glue](gijswijt-glue.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GijswijtSequenceWanted](../../../../../../../sources/v2/WantedExt.md)

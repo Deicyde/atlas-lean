@@ -14,7 +14,7 @@ polynomial. The operator identity is stated pointwise on continuous `f : ℝ →
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bessel polynomial](../../../../Algebra/MathlibExt/polynomial/bessel-polynomial/bessel-polynomial.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ joins two such positions, and every other position has a move to one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Edge Move](cube-edge-move.md)
 
 ## Sources
 

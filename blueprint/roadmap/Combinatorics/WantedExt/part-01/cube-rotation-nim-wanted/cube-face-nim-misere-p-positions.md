@@ -15,7 +15,7 @@ of misère P-positions, given by its recursion: `p ∈ P` iff `p` has a move and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Face Move](cube-face-move.md)
 
 ## Sources
 

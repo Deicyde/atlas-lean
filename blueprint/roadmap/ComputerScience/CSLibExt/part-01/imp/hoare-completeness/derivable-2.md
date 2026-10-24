@@ -13,7 +13,16 @@ triple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [Derivable](derivable.md)
+- [TDerivable](tderivable.md)
+
+## Proof depends on
+
+- [Complete](complete.md)
+- [Sound](sound-2.md)
+- [Valid](../hoare-total/valid.md)
 
 ## Sources
 

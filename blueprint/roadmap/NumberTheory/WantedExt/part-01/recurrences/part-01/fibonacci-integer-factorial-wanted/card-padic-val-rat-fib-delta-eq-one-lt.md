@@ -13,7 +13,9 @@ Lemma 2, in the setting of Section 3: let `n ≥ 37` and `n! = ∏_{i ∈ I} Φ_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Cyclotomic Value](fib-cyclotomic-value.md)
+- [Fib Entry Point](fib-entry-point.md)
+- [Fib Primitive Part](fib-primitive-part.md)
 
 ## Sources
 

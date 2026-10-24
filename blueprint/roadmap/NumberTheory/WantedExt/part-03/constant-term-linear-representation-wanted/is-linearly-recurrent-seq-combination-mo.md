@@ -13,7 +13,8 @@ and if `p ∣ ct[P^n]` for some `n` then `F(0, …, 0)` has frequency `1` in `b`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Linearly Recurrent Seq](is-linearly-recurrent-seq.md)
+- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

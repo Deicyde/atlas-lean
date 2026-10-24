@@ -11,7 +11,8 @@ lean: MetaMathlibExt.lonely_marriageable_strictMono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lonely Singles Count](lonely-singles-count.md)
+- [Marriageable Singles Count](marriageable-singles-count.md)
 
 ## Sources
 

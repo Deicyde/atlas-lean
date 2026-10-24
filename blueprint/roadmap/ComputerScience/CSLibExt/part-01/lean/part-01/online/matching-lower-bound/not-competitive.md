@@ -15,7 +15,13 @@ family of algorithms, one for each even number `2 n` of left vertices, and all `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect](is-perfect.md)
+- [Online Matcher](online-matcher.md)
+- [Matched](matched.md)
+
+## Proof depends on
+
+- [The finite-size obstruction](not-competitive-of-lt.md)
 
 ## Sources
 

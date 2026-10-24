@@ -13,7 +13,7 @@ Characteristic value `𝓕_10 = 7` (the paper's introduction:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
 
 ## Sources
 

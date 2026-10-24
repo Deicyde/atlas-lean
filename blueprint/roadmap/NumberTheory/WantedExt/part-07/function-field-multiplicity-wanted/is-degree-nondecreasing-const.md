@@ -13,7 +13,7 @@ the degree premise is irrelevant because both function values coincide.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degree Nondecreasing](is-degree-nondecreasing.md)
 
 ## Sources
 

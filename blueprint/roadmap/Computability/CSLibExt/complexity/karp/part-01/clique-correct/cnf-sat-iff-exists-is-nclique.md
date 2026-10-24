@@ -12,7 +12,18 @@ Karp's correctness: `φ` is satisfiable iff its graph has a clique of `φ.length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clique Bits](../clique/clique-bits.md)
+- [Occs](../clique/occs.md)
+- [To Graph](../clique/to-graph.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+
+## Proof depends on
+
+- [Mem occs](mem-occs.md)
+- [Occ Adj](../clique/occ-adj.md)
+- [To Graph clique Bits adj](to-graph-clique-bits-adj.md)
 
 ## Sources
 

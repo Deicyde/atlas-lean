@@ -15,6 +15,10 @@ notation `u_i(p) = min_j t^{(j)}_i(p)` over the terminal positions `t^{(j)}(p)` 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Slow ANim Moves](slow-anim-moves.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SlowANimWanted](../../../../../sources/v2/WantedExt.md)

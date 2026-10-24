@@ -15,7 +15,8 @@ of the two blocks is an interval and the other is not (block `m` is an interval 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Recurrence](anti-recurrence.md)
+- [Anti Recurrence Complement](anti-recurrence-complement.md)
 
 ## Sources
 

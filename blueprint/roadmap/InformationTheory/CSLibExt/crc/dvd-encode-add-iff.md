@@ -12,7 +12,11 @@ lean: Cslib.CodingTheory.CRC.dvd_encode_add_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode](encode.md)
+
+## Proof depends on
+
+- [Dvd encode](dvd-encode.md)
 
 ## Sources
 

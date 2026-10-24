@@ -12,7 +12,7 @@ When every proposer is held, every receiver holds someone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

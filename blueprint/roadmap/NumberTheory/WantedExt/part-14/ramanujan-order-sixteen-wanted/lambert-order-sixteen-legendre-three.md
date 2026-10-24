@@ -19,7 +19,7 @@ Legendre symbol since `3` is prime); the source's `|q| < 1` is `‖q‖ < 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf Raw](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
 
 ## Sources
 

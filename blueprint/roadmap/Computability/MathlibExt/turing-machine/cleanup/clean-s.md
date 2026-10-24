@@ -12,7 +12,11 @@ popped, otherwise go to `next`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../program/flag.md)
+
+## Proof depends on
+
+- [Pop All](pop-all.md)
 
 ## Sources
 

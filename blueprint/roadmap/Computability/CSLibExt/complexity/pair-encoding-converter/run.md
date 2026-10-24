@@ -11,7 +11,15 @@ lean: Cslib.Complexity.DenseSAT.Converter.Run
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+- [St](st.md)
+- [Stk](stk.md)
+- [Γ](untitled.md)
+
+## Proof depends on
+
+- [Prog](prog.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

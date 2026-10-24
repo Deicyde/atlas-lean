@@ -12,7 +12,7 @@ The first column of `S^[m](n)` is all ones: `S(i + m, 1) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling Second Shift Matrix](stirling-second-shift-matrix.md)
 
 ## Sources
 

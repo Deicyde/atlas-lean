@@ -13,7 +13,11 @@ one person costs at least `T(n) + ⌈n/2⌉ - a + 4m + 3s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bridge Schedule](is-bridge-schedule.md)
+- [Bridge Time](bridge-time.md)
+- [Forward Crossings](forward-crossings.md)
+- [Return Crossings](return-crossings.md)
+- [Schedule Cost](schedule-cost.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ variance tends to `0` the responsibility of `k` tends to `1` for `k = j` and to 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Soft Assign](soft-assign.md)
+
+## Proof depends on
+
+- [Soft Assign eq](soft-assign-eq.md)
+- [Tendsto exp div nhds GT zero](tendsto-exp-div-nhds-gt-zero.md)
 
 ## Sources
 

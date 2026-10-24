@@ -11,7 +11,7 @@ lean: Cslib.Databases.LockMode.Covers
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lock Mode](lock-mode.md)
 
 ## Sources
 

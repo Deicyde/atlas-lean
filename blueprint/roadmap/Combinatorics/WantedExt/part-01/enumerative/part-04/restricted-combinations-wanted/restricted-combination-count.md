@@ -14,6 +14,10 @@ differing by an element of `Q`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Restricted Combinations](restricted-combinations.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RestrictedCombinationsWanted](../../../../../../../sources/v2/WantedExt.md)

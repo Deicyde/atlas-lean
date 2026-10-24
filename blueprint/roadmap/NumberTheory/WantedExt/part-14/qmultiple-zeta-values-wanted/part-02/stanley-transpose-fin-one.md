@@ -12,7 +12,7 @@ For partitions of length one, `ρ((m), (n)) = ((n), (m))`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stanley Transpose](stanley-transpose.md)
 
 ## Sources
 

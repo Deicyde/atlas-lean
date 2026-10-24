@@ -12,7 +12,9 @@ Reindexing exposes exactly the existing residual-language evaluation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Left Quotient Equiv Reachable Residuals](left-quotient-equiv-reachable-residuals.md)
+- [Minimized DFA](minimized-dfa.md)
+- [Reachable Residuals](../minimality/reachable-residuals.md)
 
 ## Sources
 

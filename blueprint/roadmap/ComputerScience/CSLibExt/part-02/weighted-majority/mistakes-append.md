@@ -13,7 +13,14 @@ The mistakes over `rs ++ rs'` are those over `rs` plus those over `rs'` from the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+- [Mistakes](mistakes.md)
+- [Weights](weights.md)
+
+## Proof depends on
+
+- [Predict](predict.md)
+- [Update](update.md)
 
 ## Sources
 

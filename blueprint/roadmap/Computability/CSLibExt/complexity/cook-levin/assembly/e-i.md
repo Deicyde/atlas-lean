@@ -11,7 +11,13 @@ Stack renaming of the init generator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](hk.md)
+- [CK](../init-family/ck.md)
+- [IK](../init-family/ik.md)
+
+## Proof depends on
+
+- [SK](../counter-view/sk.md)
 
 ## Sources
 

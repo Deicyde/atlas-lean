@@ -11,7 +11,7 @@ At most `K` locations with total distance at most `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [KMedian Instance](kmedian-instance.md)
 
 ## Sources
 

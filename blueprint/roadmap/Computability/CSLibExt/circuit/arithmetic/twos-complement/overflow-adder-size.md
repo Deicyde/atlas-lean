@@ -12,7 +12,8 @@ The size: one gate more than the ripple-carry adder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Signature](../ripple-carry/arith-signature.md)
+- [Overflow Adder](overflow-adder.md)
 
 ## Sources
 

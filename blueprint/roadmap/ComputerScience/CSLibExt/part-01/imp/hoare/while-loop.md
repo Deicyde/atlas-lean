@@ -12,7 +12,18 @@ The standard invariant rule for partial correctness of while loops.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](assertion.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+- [Valid](valid.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [Big Step](../big-step/big-step.md)
 
 ## Sources
 

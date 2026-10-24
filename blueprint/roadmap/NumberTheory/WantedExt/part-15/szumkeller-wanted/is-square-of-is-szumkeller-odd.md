@@ -11,7 +11,7 @@ An odd s-Zumkeller number is a perfect square.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SZumkeller](is-szumkeller.md)
 
 ## Sources
 

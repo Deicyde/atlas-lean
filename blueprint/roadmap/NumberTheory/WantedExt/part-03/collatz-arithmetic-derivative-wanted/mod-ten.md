@@ -12,7 +12,7 @@ For compatible semiprimes `pq` and `rs`, one of `p, q` is `≡ 1` and the other
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
 
 ## Sources
 

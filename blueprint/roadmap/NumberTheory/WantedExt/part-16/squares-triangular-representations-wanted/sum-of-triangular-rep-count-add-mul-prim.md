@@ -12,7 +12,7 @@ for every `r ∈ ℤ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
 
 ## Sources
 

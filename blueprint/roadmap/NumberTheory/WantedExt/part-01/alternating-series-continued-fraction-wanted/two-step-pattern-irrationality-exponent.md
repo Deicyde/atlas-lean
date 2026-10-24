@@ -15,7 +15,7 @@ lean: MetaMathlibExt.twoStepPattern_irrationalityExponent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Step Pattern Den](two-step-pattern-den.md)
 
 ## Sources
 

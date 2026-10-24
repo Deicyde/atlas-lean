@@ -13,6 +13,10 @@ Cost of one iteration of the `k` loop.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cell B](cell-b.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.OneHot](../../../../../../sources/v2/CSLibExt.md)

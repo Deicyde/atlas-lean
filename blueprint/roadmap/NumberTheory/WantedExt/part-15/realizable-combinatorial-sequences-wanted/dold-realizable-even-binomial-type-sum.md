@@ -15,7 +15,7 @@ realizable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dold Realizable](../../../MathlibExt/part-01/arithmetic-function/part-01/binomial-power-realizability/dold-realizable.md)
 
 ## Sources
 

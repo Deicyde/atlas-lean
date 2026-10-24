@@ -13,6 +13,10 @@ A family is vanishing if it is `m`-vanishing for every positive `m`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is MVanishing Family](is-mvanishing-family.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.VanDerWaerdenSymmetricFunctionsWanted](../../../../../../sources/v2/WantedExt.md)

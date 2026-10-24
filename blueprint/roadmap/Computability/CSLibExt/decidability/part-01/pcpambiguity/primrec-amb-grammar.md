@@ -47,7 +47,20 @@ end Derivations
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amb Grammar](amb-grammar.md)
+- [Domino](../pcp/domino.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+
+## Proof depends on
+
+- [Cont Rule](../cfgundecidable/cont-rule.md)
+- [Domino](../cfgundecidable/domino.md)
+- [Index Sym](../cfgundecidable/index-sym.md)
+- [Letter Sym](../cfgundecidable/letter-sym.md)
+- [Nt Sym](../cfgundecidable/nt-sym.md)
+- [Side Rules](../cfgundecidable/side-rules.md)
+- [Term Rule](../cfgundecidable/term-rule.md)
 
 ## Sources
 

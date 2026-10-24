@@ -12,7 +12,8 @@ The values `a_{0,ℓ}, a_{3,ℓ}` for `ℓ = 3, 4, 5`: `(4, 1)`, `(9, 4)`, `(21,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dedekind Six Squares A0](dedekind-six-squares-a0.md)
+- [Dedekind Six Squares A3](dedekind-six-squares-a3.md)
 
 ## Sources
 

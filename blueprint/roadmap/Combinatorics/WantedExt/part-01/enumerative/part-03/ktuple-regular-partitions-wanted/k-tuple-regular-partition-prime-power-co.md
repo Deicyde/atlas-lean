@@ -15,7 +15,7 @@ paper's `α ≥ 1`.  No other hypothesis is added.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Tuple Regular Partition Count](k-tuple-regular-partition-count.md)
 
 ## Sources
 

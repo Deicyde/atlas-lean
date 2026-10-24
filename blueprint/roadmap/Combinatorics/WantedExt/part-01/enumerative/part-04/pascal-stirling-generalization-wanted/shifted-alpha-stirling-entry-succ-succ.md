@@ -12,7 +12,7 @@ The recurrence of `𝖲_α`: `𝖲_{i+1,j+1} = 𝖲_{i+1,j} + α_{j+2} 𝖲_{i,j
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Alpha Stirling Entry](shifted-alpha-stirling-entry.md)
 
 ## Sources
 

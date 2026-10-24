@@ -13,7 +13,17 @@ lean: Cslib.Turing.Universal.const_false_mem_codeTime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code Time](code-time.md)
+- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Code](../code/code.md)
+- [Decides Within](decides-within.md)
+- [Mono](mono.md)
+- [Const False](const-false.md)
+- [Const False decides Within](const-false-decides-within.md)
 
 ## Sources
 

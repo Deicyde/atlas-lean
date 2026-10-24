@@ -11,7 +11,7 @@ Derivability from `F` with Armstrong's axioms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
 
 ## Sources
 

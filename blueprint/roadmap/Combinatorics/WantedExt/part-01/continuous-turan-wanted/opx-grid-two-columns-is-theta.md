@@ -12,7 +12,7 @@ Corollary 3.7, first part: a grid `P = X × Y` with `2` columns and `k = |Y| ≥
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

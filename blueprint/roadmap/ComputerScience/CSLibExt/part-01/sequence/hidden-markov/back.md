@@ -11,7 +11,11 @@ The backpointer: the best predecessor of `s`, given the previous step's table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+
+## Proof depends on
+
+- [Argmax Fin](argmax-fin.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ lean: MetaMathlibExt.dumontThomasRep_strictMono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complement Radix LT](complement-radix-lt.md)
+- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
+- [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For `a ∈ ℕ` even with `a ≡ 1 (mod 3)`, `m` is a cyclic vertex of the Type 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

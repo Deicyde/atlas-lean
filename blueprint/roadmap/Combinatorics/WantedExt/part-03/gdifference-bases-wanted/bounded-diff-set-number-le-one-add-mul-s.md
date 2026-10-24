@@ -11,7 +11,7 @@ Upper bound: for fixed `g ≥ 1`, `α_g(n) ≤ (1 + o(1)) √(gn)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Diff Set Number](bounded-diff-set-number.md)
 
 ## Sources
 

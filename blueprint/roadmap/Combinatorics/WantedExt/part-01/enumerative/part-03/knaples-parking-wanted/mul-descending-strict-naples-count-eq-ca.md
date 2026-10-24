@@ -15,7 +15,9 @@ of labelled such dissections with a distinguished face edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Inner Polygon Dissection](is-inner-polygon-dissection.md)
+- [Descending Strict Naples Count](descending-strict-naples-count.md)
+- [Inscribed Polygon Edges](inscribed-polygon-edges.md)
 
 ## Sources
 

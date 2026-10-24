@@ -13,7 +13,8 @@ module and ratio.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quasi Arithmetical Compact Set](is-quasi-arithmetical-compact-set.md)
+- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
 
 ## Sources
 

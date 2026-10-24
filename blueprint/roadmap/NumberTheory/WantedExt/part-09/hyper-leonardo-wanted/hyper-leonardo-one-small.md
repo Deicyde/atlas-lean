@@ -12,7 +12,11 @@ Small values: `Le^{(1)}_0, …, Le^{(1)}_3 = 1, 2, 5, 10`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
+
+## Proof depends on
+
+- [Gen Leonardo](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

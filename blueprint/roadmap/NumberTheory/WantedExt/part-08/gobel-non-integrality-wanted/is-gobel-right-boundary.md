@@ -17,6 +17,10 @@ Sequences 29 (2026), Article 26.3.8, proof of Theorem 1.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gobel Residue Walk](gobel-residue-walk.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GobelNonIntegralityWanted](../../../../../sources/v2/WantedExt.md)

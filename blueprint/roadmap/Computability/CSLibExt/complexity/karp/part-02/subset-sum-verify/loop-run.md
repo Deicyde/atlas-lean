@@ -15,7 +15,39 @@ plus the input left, so a block of `p` bits costs `O(N + p)` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Nums Aux](nums-aux.md)
+- [Pick](pick.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Rej](rej.md)
+- [Add B](add-b.md)
+- [Addition is correct on canonical numbers](add-b-encode-nat.md)
+- [Add fail](add-fail.md)
+- [Add rej](add-rej.md)
+- [Add run](add-run.md)
+- [Back run](back-run.md)
+- [Carry](carry.md)
+- [Encode Nat decode Nat iff](encode-nat-decode-nat-iff.md)
+- [Inc B](inc-b.md)
+- [Last F](last-f.md)
+- [Skip fail](skip-fail.md)
+- [Skip run](skip-run.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Decode Nat Prefix](../../../../cook-levin/decode-nat-prefix.md)
+- [Encode Nat Prefix](../../../../cook-levin/encode-nat-prefix.md)
+- [Undelimit eq some iff](../../../../cook-levin/undelimit-eq-some-iff.md)
+- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
+- [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

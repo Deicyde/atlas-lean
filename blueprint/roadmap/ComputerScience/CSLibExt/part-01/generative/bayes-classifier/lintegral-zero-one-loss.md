@@ -12,7 +12,7 @@ The expected 0-1 loss of predicting `y` under a law `ν` of the class is `ν {y}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zero One Loss](zero-one-loss.md)
 
 ## Sources
 

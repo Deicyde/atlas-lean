@@ -12,7 +12,7 @@ Theorem 9, `V` part (Binet formula): under the same hypotheses,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RLucas](neg-rlucas.md)
 
 ## Sources
 

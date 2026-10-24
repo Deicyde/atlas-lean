@@ -11,7 +11,7 @@ Ramanujan's congruence `τ(3n) ≡ 0 (mod 3)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

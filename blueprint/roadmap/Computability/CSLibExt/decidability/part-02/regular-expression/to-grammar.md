@@ -12,7 +12,14 @@ symbol.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded Regex](encoded-regex.md)
+
+## Proof depends on
+
+- [Node](node.md)
+- [Node Rules](node-rules.md)
+- [Regex Node](regex-node.md)
 
 ## Sources
 

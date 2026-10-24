@@ -14,7 +14,9 @@ number for every `t' ≥ 1` with `t' ≡ -𝔱 (mod w)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Riesel Covering Data](is-riesel-covering-data.md)
+- [Is Sierpinski Covering Data](is-sierpinski-covering-data.md)
+- [Repstring](repstring.md)
 
 ## Sources
 

@@ -13,6 +13,12 @@ The machine.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lab](lab.md)
+- [Stk](stk.md)
+- [Prog](prog.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.DenseToBinaryConverter](../../../../../sources/v2/CSLibExt.md)

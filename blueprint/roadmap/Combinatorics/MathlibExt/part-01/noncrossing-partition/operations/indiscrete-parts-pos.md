@@ -12,7 +12,9 @@ Indiscrete parts are `{univ}` when `0 < n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Noncrossing](../basic/is-noncrossing.md)
+- [Set Partition](../basic/set-partition.md)
+- [Indiscrete](indiscrete.md)
 
 ## Sources
 

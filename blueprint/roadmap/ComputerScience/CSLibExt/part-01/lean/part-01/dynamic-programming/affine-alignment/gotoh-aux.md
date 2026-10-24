@@ -14,7 +14,11 @@ state. The fuel is the sum of the two lengths. Implementation detail: use
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gap State](gap-state.md)
+
+## Proof depends on
+
+- [Gap Cost](gap-cost.md)
 
 ## Sources
 

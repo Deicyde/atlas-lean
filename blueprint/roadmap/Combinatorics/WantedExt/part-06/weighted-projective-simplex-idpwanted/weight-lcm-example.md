@@ -12,7 +12,7 @@ Example: `lcm(2, 2, 3) = 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weight Lcm](weight-lcm.md)
 
 ## Sources
 

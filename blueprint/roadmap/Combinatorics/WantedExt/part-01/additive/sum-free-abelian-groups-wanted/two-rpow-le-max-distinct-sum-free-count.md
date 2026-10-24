@@ -11,7 +11,9 @@ If `p ≥ 5` and `G` is of type `I(p)`, then `f*_max(G) ≥ 2^{μ(G)/2}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Type One Group](is-type-one-group.md)
+- [Largest Sum Free Card](largest-sum-free-card.md)
+- [Max Distinct Sum Free Count](max-distinct-sum-free-count.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Adjacency in a multigraph means positive edge multiplicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraph](multigraph.md)
 
 ## Sources
 

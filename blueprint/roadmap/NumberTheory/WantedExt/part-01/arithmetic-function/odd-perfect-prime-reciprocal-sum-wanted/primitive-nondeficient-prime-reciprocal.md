@@ -12,7 +12,8 @@ If `n` is primitive non-deficient with least prime factor `p₁` and surplus
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Nondeficient](../../../part-14/primitive-nondeficient-wanted/is-primitive-nondeficient.md)
+- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

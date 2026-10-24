@@ -12,7 +12,11 @@ accept.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+
+## Proof depends on
+
+- [States](states.md)
 
 ## Sources
 

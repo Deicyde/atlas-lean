@@ -12,7 +12,7 @@ lean: MetaMathlibExt.alternatingGeneralizedHarmonic_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Generalized Harmonic](alternating-generalized-harmonic.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ canonical map to the profinite completion is surjective.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Closed to Subgroup of surjective eta Fn](is-closed-to-subgroup-of-surjective-eta.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Topology.Algebra.StrongCompleteness](../../../../../sources/v2/MathlibExt.md)

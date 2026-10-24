@@ -12,7 +12,18 @@ lean: Cslib.Algorithms.Lean.exists_alignmentScore_eq_nwScore
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](alignment.md)
+- [Is Alignment](is-alignment.md)
+- [Alignment Score](alignment-score.md)
+- [Nw Score](nw-score.md)
+
+## Proof depends on
+
+- [Column Score](column-score.md)
+- [Nw Score Aux](nw-score-aux.md)
+- [The Needleman–Wunsch recurrence](nw-score-eq.md)
+- [Nw Score nil left](nw-score-nil-left.md)
+- [Nw Score nil right](nw-score-nil-right.md)
 
 ## Sources
 

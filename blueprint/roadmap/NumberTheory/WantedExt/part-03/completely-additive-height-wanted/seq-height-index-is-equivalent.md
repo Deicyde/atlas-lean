@@ -13,7 +13,10 @@ eventually strictly increasing is dropped (`Π` is nondecreasing, which suffices
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical Seq Height](canonical-seq-height.md)
+- [Nth Prime One](nth-prime-one.md)
+- [Profile Partial Sum](profile-partial-sum.md)
+- [Seq Height Index](seq-height-index.md)
 
 ## Sources
 

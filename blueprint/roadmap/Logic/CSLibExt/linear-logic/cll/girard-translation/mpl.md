@@ -12,7 +12,12 @@ Theorems of minimal logic translate to CLL theorems.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Girard's translation](translate.md)
+
+## Proof depends on
+
+- [Girard's translation preserves provability](derivable-of-derivation.md)
+- [Hyps](hyps.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ lean: Cslib.Turing.SingleTapeTM.toTape_write
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [To Tape](to-tape.md)
+
+## Proof depends on
+
+- [To Tape](../tape-view/to-tape.md)
+- [To Tape write](../tape-view/to-tape-write.md)
+- [Cell Symbol](cell-symbol.md)
+- [Cell Symbol apply](cell-symbol-apply.md)
 
 ## Sources
 

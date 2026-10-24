@@ -12,7 +12,14 @@ lean: Cslib.Turing.Universal.Diag.Readout.polyTime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc Out](../clocked/enc-out.md)
+- [Diag Answer](diag-answer.md)
+
+## Proof depends on
+
+- [Bits Poly Time](bits-poly-time.md)
+- [Bit Sym](../code/bit-sym.md)
+- [Diag Answer eq decide enc Out](diag-answer-eq-decide-enc-out.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ Definition 2 at the corner: `a^{NN}_{-1,-1} = 1/γ'`, and `a^{NN}_{-1,0} = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+- [Neg Neg](neg-neg.md)
+
+## Proof depends on
+
+- [Neg Neg Aux](neg-neg-aux.md)
+- [Weight](weight.md)
+- [Weight'](weight-2.md)
 
 ## Sources
 

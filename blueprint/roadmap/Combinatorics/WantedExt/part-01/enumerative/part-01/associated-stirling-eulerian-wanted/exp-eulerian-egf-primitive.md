@@ -14,7 +14,7 @@ logarithm exponentiated: `exp(x P(x,u) - (x-1)u) = A(x,u)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

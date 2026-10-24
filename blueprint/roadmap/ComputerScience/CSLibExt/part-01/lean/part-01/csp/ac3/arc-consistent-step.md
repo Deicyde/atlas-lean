@@ -13,7 +13,11 @@ requeued.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arc Consistent](arc-consistent.md)
+- [Binary CSP](binary-csp.md)
+- [Symmetric](symmetric.md)
+- [Requeue](requeue.md)
+- [Revise](revise.md)
 
 ## Sources
 

@@ -14,7 +14,18 @@ built from the forger inverts `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forger](forger.md)
+- [Forge Game](forge-game.md)
+- [Invert](invert.md)
+- [Invert Game](invert-game.md)
+
+## Proof depends on
+
+- [Wins](wins.md)
+- [Verify](verify.md)
+- [Plant](plant.md)
+- [Public Key](public-key.md)
+- [Sign](sign.md)
 
 ## Sources
 

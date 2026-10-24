@@ -13,7 +13,7 @@ Characteristic values `a_{1,0} = 1`, `a_{2,0} = a_{2,1} = 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kassel Reutenauer Coeff](kassel-reutenauer-coeff.md)
 
 ## Sources
 

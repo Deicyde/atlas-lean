@@ -14,7 +14,7 @@ x(2x² - 2x + 1) / ((1 - 2x)(1 - x)²)`, stated with the denominator cleared in 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources
 

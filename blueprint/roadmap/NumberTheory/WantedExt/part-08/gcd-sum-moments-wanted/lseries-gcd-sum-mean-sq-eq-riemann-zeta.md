@@ -13,7 +13,7 @@ is, for `ℜ s > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Sum Mean](gcd-sum-mean.md)
 
 ## Sources
 

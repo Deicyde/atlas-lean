@@ -12,7 +12,8 @@ The empty heap has size zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Size](size.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 1 (`p = 5`, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tower Gamma](tower-gamma.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

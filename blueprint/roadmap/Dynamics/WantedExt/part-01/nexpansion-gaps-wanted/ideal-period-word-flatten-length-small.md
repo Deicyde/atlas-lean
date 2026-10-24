@@ -12,7 +12,7 @@ The digit lengths of `d₁, …, d₅` are `5, 7, 17, 31, 65`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ideal Period Word](ideal-period-word.md)
 
 ## Sources
 

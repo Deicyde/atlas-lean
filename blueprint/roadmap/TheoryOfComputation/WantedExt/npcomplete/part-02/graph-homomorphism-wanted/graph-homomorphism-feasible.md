@@ -11,7 +11,11 @@ A homomorphism from the source to the target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph Homomorphism Instance](graph-homomorphism-instance.md)
+
+## Proof depends on
+
+- [Graph Target](graph-target.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ exactly when it is a P-position (previous-player win) of `maximumNimGame f`. The
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Maximum Nim Game](maximum-nim-game.md)
+- [Maximum Nim Grundy](maximum-nim-grundy.md)
 
 ## Sources
 

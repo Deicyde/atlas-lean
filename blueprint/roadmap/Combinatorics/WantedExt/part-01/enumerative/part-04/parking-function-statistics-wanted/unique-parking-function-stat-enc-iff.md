@@ -12,7 +12,7 @@ length `n` if and only if `w ∈ {A*T*} ∪ {T*D*}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
 
 ## Sources
 

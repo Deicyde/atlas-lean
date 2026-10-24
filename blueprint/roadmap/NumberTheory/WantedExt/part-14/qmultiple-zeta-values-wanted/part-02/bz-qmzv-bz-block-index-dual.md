@@ -13,7 +13,8 @@ BZ duality `ζ_q^BZ ∘ τ = ζ_q^BZ` on `𝔥⁰`, in index form: for `aⱼ, b�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz Block Index](bz-block-index.md)
+- [Bz QMZV](bz-qmzv.md)
 
 ## Sources
 

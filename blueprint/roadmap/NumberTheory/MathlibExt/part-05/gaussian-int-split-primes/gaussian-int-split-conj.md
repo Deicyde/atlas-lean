@@ -14,6 +14,10 @@ The conjugate of a norm-`p` element is prime and `p = π * star π`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gaussian Int prime of nat Abs norm prime](../gaussian-int-prime-basics/gaussian-int-prime-of-nat-abs-norm-prime.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GaussianIntSplitPrimes](../../../../../sources/v2/MathlibExt.md)

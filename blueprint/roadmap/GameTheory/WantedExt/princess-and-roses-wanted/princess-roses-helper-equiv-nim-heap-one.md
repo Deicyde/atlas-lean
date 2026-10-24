@@ -14,7 +14,9 @@ Sprague–Grundy value `1` if and only if it is `[1, 1, 1]`, `[x, x, x]` with `x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [Princess Roses Helper](princess-roses-helper.md)
 
 ## Sources
 

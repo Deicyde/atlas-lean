@@ -16,7 +16,9 @@ printed sum `2 q x`); the single term is the reading forced by Corollary 41
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
+- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ Characteristic example: the inputs `(2, 8)(1, 7)(9, 9)(7, 1)(8, 2)` of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hoey Sloane Language](hoey-sloane-language.md)
+
+## Proof depends on
+
+- [Is Hoey Sloane Run](is-hoey-sloane-run.md)
+- [Is Hoey Sloane Step](is-hoey-sloane-step.md)
+- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
 
 ## Sources
 

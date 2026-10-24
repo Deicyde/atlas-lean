@@ -13,6 +13,10 @@ lean: MetaMathlibExt.pendCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Pend Parts](is-pend-parts.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.PondPendCongruencesWanted](../../../../../../../../../sources/v2/WantedExt.md)

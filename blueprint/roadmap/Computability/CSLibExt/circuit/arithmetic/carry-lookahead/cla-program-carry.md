@@ -12,7 +12,26 @@ lean: Cslib.Circuits.CarryLookahead.claProgram_carry
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cla Program](cla-program.md)
+- [Level Base](level-base.md)
+- [Arith Interpretation](../ripple-carry/arith-interpretation.md)
+- [Arith Signature](../ripple-carry/arith-signature.md)
+- [Rca Input](../ripple-carry/rca-input.md)
+
+## Proof depends on
+
+- [Arith Gate](../ripple-carry/arith-gate.md)
+- [Carry of gp Spec](carry-of-gp-spec.md)
+- [G Num](g-num.md)
+- [Gp Spec](gp-spec.md)
+- [Levels](levels.md)
+- [Each Kogge-Stone level is correct](levels-eval.md)
+- [Line F](line-f.md)
+- [P Num](p-num.md)
+- [Append Gates](append-gates.md)
+- [Append Gates eval ge](append-gates-eval-ge.md)
+- [Append Gates eval lt](append-gates-eval-lt.md)
+- [Bin Line](../ripple-carry/bin-line.md)
 
 ## Sources
 

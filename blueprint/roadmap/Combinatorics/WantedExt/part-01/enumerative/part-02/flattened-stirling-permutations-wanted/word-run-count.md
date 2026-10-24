@@ -13,6 +13,10 @@ The number of runs of a word.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Word Run Start](word-run-start.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.FlattenedStirlingPermutationsWanted](../../../../../../../sources/v2/WantedExt.md)

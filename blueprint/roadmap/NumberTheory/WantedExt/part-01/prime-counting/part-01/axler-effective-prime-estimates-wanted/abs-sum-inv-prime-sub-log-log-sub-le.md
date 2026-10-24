@@ -14,7 +14,7 @@ the Meissel-Mertens constant (`meisselMertensConstant`, the limit of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meissel Mertens Constant](../dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

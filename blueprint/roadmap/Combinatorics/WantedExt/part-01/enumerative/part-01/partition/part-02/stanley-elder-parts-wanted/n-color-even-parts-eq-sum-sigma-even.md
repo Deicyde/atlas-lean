@@ -12,7 +12,8 @@ total number of even parts over the `n`-color partitions of `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
+- [Sigma Even](sigma-even.md)
 
 ## Sources
 

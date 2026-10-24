@@ -13,7 +13,7 @@ lean: MetaMathlibExt.lip_sheaf_densityOne_int
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

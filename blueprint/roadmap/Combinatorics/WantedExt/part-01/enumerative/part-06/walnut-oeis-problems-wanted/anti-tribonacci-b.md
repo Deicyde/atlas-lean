@@ -13,6 +13,10 @@ lean: MetaMathlibExt.antiTribonacciB
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anti Tribonacci State](anti-tribonacci-state.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

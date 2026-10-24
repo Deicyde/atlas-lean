@@ -12,7 +12,7 @@ Appending the same continuation preserves Nerode equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Rel](nerode-rel.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ P&R Helper position `[d, b - c + d, a - c + d]` (stated as equivalence of the tw
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Princess Roses](princess-roses.md)
+- [Princess Roses Helper](princess-roses-helper.md)
 
 ## Sources
 

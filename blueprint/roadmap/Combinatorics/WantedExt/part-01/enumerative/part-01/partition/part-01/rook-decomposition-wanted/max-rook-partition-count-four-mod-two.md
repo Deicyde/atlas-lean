@@ -11,7 +11,7 @@ Parity of `R_4(n)` for `n > 16`: even iff `n ≡ 4, 6 (mod 8)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Rook Partition Count](max-rook-partition-count.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ A step of a walk along the marks, counted by `c`: take a unit off `c` and park t
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [Γ](untitled.md)
+- [Sym](../sat-verifier-spec/sym.md)
+- [Bit?](../sat-verifier-spec/bit.md)
+- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

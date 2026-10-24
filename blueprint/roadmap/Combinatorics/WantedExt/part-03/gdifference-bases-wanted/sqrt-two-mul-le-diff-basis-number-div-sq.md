@@ -11,7 +11,7 @@ The trivial lower bound `η_g(n)/√n ≥ √(2g)` for `n > 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diff Basis Number](diff-basis-number.md)
 
 ## Sources
 

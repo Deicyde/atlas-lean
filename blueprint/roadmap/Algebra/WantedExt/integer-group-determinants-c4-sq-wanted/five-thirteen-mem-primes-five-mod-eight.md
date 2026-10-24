@@ -12,7 +12,7 @@ lean: MetaMathlibExt.five_thirteen_mem_primesFiveModEight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primes Five Mod Eight](primes-five-mod-eight.md)
 
 ## Sources
 

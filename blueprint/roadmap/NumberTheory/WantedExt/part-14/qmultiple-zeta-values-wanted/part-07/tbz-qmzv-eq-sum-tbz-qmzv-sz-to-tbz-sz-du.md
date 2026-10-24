@@ -13,7 +13,10 @@ translating back gives a combination of TBZ-qMZVs equal to `ζ_q^TBZ(w)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz Dual Index](../part-06/sz-dual-index.md)
+- [Sz To TBZ](sz-to-tbz.md)
+- [Tbz QMZV](../part-03/tbz-qmzv.md)
+- [Tbz To SZ](tbz-to-sz.md)
 
 ## Sources
 

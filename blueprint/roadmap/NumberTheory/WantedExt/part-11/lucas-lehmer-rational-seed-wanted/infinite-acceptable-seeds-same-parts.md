@@ -14,7 +14,7 @@ taken `≥ 3` (the paper's seeds are nonnegative and `s^∓` needs `s ± 2 > 0`)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Squarefree Part](is-odd-squarefree-part.md)
 
 ## Sources
 

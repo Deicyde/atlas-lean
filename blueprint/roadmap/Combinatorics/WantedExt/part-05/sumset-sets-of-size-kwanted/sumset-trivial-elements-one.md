@@ -12,7 +12,7 @@ A one-element set has its single `h`-fold sum as its only trivial element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sumset Trivial Elements](sumset-trivial-elements.md)
 
 ## Sources
 

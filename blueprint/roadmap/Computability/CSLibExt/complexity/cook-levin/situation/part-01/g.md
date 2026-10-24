@@ -11,7 +11,7 @@ Symbol codes are `< g` (code 0 = ⊥).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](enc.md)
 
 ## Sources
 

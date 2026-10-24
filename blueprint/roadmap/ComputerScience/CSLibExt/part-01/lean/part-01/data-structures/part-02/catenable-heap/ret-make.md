@@ -12,7 +12,8 @@ The result of `make` is the empty heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Make](make.md)
 
 ## Sources
 

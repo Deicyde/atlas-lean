@@ -16,7 +16,18 @@ stack. The converse simulation is not claimed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Big Step](../big-step/big-step.md)
+- [Cmd](../syntax/cmd.md)
+- [Steps](steps.md)
+- [Code Length](code-length.md)
+- [Compile](compile.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [Config](config.md)
+- [Instr](instr.md)
+- [Compile runs](compile-runs.md)
 
 ## Sources
 

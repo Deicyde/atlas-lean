@@ -12,7 +12,8 @@ real `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contains Pattern D](contains-pattern-d.md)
+- [Opx D](opx-d.md)
 
 ## Sources
 

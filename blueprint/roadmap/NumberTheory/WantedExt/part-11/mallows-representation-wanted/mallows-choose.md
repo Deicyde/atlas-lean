@@ -12,7 +12,12 @@ The letter chosen at a Mallows vertex with gap `I` and label `⟨p, q⟩`: `L` i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+
+## Proof depends on
+
+- [Mallows Insert](mallows-insert.md)
+- [Nat Pair To Real](nat-pair-to-real.md)
 
 ## Sources
 

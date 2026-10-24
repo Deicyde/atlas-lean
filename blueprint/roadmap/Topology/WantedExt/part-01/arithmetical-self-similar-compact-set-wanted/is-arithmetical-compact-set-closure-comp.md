@@ -14,7 +14,10 @@ writes `K` as the closure of `T_0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Compact Set](is-arithmetical-compact-set.md)
+- [Complexity Layer Zero](complexity-layer-zero.md)
+- [Stability Gauge](stability-gauge.md)
+- [Stable Complexity](stable-complexity.md)
 
 ## Sources
 

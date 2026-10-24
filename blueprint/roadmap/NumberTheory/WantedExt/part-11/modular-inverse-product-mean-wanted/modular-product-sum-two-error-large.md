@@ -12,7 +12,7 @@ Theorem 4, consequence: there are `c > 0` and `N` such that every odd `n ≥ N` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Product Sum](modular-product-sum.md)
 
 ## Sources
 

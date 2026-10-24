@@ -12,7 +12,8 @@ Lemma 5: for `0 ≤ ℓ ≤ k - 1` and `ℓ₁ ≤ ℓ₂` with `ℓ₁ + ℓ₂
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
 
 ## Sources
 

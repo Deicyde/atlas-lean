@@ -11,7 +11,11 @@ The backward variables, tabulated step by step: `O(n²)` operations per step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+
+## Proof depends on
+
+- [Backward Step](backward-step.md)
 
 ## Sources
 

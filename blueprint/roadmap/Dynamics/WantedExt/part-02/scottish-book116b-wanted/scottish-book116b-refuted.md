@@ -27,7 +27,7 @@ separately as `OpenConjectures.Dynamics.ScottishBook116bContinuitySets`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem116b Claim](scottish-book-problem116b-claim.md)
 
 ## Sources
 

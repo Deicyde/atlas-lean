@@ -15,7 +15,7 @@ entry `P^{λ,A}_{i+j,m}(x)` (Equation (20)) is singular. The paper's `1 ≤ r` i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
 
 ## Sources
 

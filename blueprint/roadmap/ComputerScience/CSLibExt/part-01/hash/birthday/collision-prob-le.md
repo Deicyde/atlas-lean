@@ -13,7 +13,11 @@ implies Katz and Lindell's Lemma A.15 (the bound `q ^ 2 / (2 N)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collision Prob](collision-prob.md)
+
+## Proof depends on
+
+- [The exact collision probability](collision-prob-eq.md)
 
 ## Sources
 

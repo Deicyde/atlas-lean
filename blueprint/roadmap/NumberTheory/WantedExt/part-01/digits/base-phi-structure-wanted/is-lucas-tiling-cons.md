@@ -12,7 +12,9 @@ A tiling starts with a translated interval that begins at `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Tiling](is-lucas-tiling.md)
+- [Lucas Interval Hi](lucas-interval-hi.md)
+- [Lucas Interval Lo](lucas-interval-lo.md)
 
 ## Sources
 

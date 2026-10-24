@@ -12,7 +12,8 @@ lean: MetaMathlibExt.dihedralAffinePerm_mem_rackAut
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dihedral Affine Perm](dihedral-affine-perm.md)
+- [Rack Aut](rack-aut.md)
 
 ## Sources
 

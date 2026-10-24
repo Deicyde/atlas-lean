@@ -12,7 +12,12 @@ The kernel of every recognizing morphism refines the syntactic congruence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+
+## Proof depends on
+
+- [Syntactic Rel of recognizer eq](syntactic-rel-of-recognizer-eq.md)
 
 ## Sources
 

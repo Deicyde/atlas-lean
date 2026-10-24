@@ -14,7 +14,7 @@ unquantified); `i ≥ 1` is kept, `j ≥ 1` is not needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Stirling First](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

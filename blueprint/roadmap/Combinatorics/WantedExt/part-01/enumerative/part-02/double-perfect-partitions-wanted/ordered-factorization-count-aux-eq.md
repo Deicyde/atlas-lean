@@ -12,7 +12,8 @@ The fuel-bounded recursion is independent of the fuel once the fuel is at least 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Factorization Count](ordered-factorization-count.md)
+- [Ordered Factorization Count Aux](ordered-factorization-count-aux.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ A position is a penult when it is not terminal and all of its options are ults.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Placement Terminal](placement-terminal.md)
+- [Placement Ult](placement-ult.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.PenultsOfTakWanted](../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ For positive integers `a, b` with `gcd(a, b) = 1`, the arithmetic progression
 
 ## Depends on
 
-This node has no prerequisites.
+- [Macias Topology](../macias-coprime-topology-wanted/macias-topology.md)
 
 ## Sources
 

@@ -12,7 +12,22 @@ A walk over one literal's tokens advances the literal count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Wl](wl.md)
+- [Lit Rev](../../../sat-check/lit-rev.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Stmt](stmt.md)
+- [Nxt](nxt.md)
+- [Tgt](tgt.md)
+- [Walk bits](walk-bits.md)
+- [Walk step](walk-step.md)
 
 ## Sources
 

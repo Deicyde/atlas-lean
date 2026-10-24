@@ -13,6 +13,11 @@ The valid parameters, the parameter space of Baum-Welch.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Valid](valid.md)
+- [HMM](../hidden-markov/hmm.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Sequence.BaumWelch](../../../../../../sources/v2/CSLibExt.md)

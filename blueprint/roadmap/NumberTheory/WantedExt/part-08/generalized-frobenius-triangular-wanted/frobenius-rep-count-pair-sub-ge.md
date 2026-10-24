@@ -12,7 +12,8 @@ For coprime positive `a < b`, `s, k ≥ 0` and an integer `m > g(a, b; s) + ka`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Frobenius Number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
+- [Frobenius Rep Count](../../../MathlibExt/part-06/generalized-frobenius-number/frobenius-rep-count.md)
 
 ## Sources
 

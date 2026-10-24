@@ -11,7 +11,12 @@ lean: Cslib.Automata.EncodedNFA.isEmptyB
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+
+## Proof depends on
+
+- [Reachable](reachable.md)
+- [Mem B](../../../decidability/part-01/primrec-list/mem-b.md)
 
 ## Sources
 

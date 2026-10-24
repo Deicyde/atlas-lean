@@ -11,7 +11,7 @@ lean: MetaMathlibExt.diffBasisNumber_one_le_and_le_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diff Basis Number](diff-basis-number.md)
 
 ## Sources
 

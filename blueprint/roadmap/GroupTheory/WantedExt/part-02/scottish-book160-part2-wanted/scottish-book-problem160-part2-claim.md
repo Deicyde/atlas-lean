@@ -14,6 +14,11 @@ Hausdorff) metric group is arcwise connected.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Arcwise Connected](is-arcwise-connected.md)
+- [Is Hausdorff Connected](is-hausdorff-connected.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.ScottishBook160Part2Wanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,12 @@ window cells in `(k, j)`-lexicographic order, `j = KK·d + 1` the next label.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [C Idx](c-idx.md)
+- [X Idx](x-idx.md)
 
 ## Sources
 

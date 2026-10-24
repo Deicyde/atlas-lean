@@ -12,7 +12,9 @@ A detour `a, j, c` of `p` becomes the step `a, c` of `dropClauses φ p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Drop Clauses](drop-clauses.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

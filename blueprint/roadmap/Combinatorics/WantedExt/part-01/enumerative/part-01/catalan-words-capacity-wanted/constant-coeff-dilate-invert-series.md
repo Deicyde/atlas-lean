@@ -12,7 +12,7 @@ The substitution `f(x; q) ↦ f(q^j x; 1/q)` keeps a constant term `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dilate Invert Series](dilate-invert-series.md)
 
 ## Sources
 

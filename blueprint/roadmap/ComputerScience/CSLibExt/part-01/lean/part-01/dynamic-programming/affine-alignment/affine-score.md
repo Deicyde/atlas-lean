@@ -11,7 +11,12 @@ The affine-gap score of an alignment, starting with no open run.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+
+## Proof depends on
+
+- [Gap State](gap-state.md)
+- [Affine Score Aux](affine-score-aux.md)
 
 ## Sources
 

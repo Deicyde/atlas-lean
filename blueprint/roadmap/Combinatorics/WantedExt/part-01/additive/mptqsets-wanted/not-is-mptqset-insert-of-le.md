@@ -12,7 +12,7 @@ least `m` quotients, with `n ≤ m`, then `A ∪ {x}` is not an MPTQ set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MPTQSet](is-mptqset.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Theorem 2 recurrence: for `k ≥ 2` and `n ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Phi Five Core Analog](phi-five-core-analog.md)
 
 ## Sources
 

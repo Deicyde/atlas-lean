@@ -13,6 +13,10 @@ The number of distinct remainders `s(n) = |S(n)|` (OEIS A283190).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Remainder Set](remainder-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.RemainderSetBoundsWanted](../../../../../sources/v2/WantedExt.md)

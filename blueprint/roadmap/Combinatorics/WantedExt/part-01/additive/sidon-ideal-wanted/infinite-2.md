@@ -12,7 +12,7 @@ An almost thin set is infinite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Almost Thin Set](is-almost-thin-set.md)
 
 ## Sources
 

@@ -11,7 +11,14 @@ The machine reaches `rej` from `c` within `n` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [K](k.md)
+- [Lab](lab.md)
+
+## Proof depends on
+
+- [Prog](prog.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

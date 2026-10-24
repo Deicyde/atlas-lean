@@ -12,7 +12,16 @@ The backtracked path attains the Viterbi variable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+- [Best Path](best-path.md)
+- [Path Prob](path-prob.md)
+- [Viterbi](viterbi.md)
+
+## Proof depends on
+
+- [Argmax Fin](argmax-fin.md)
+- [Back](back.md)
+- [Viterbi Tab](viterbi-tab.md)
 
 ## Sources
 

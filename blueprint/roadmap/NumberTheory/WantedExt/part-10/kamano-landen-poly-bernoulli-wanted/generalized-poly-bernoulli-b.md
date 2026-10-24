@@ -12,7 +12,12 @@ Kamano's generalized poly-Bernoulli numbers of the second kind:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+
+## Proof depends on
+
+- [Generalized Multiple Polylog](generalized-multiple-polylog.md)
+- [Landen Exp Variable](landen-exp-variable.md)
 
 ## Sources
 

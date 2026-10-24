@@ -15,7 +15,16 @@ posterior of `x'` given `y` is `step F Q H R y` (for almost every `y`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
+- [Law](law.md)
+- [Predict](predict.md)
+- [Step](step.md)
+
+## Proof depends on
+
+- [The update step is the exact posterior](cond-distrib-update.md)
+- [The predict step is exact](map-predict.md)
+- [Prediction preserves validity](predict-valid.md)
 
 ## Sources
 

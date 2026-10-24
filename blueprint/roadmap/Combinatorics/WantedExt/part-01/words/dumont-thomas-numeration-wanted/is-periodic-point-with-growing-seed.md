@@ -15,6 +15,12 @@ period of `u` (the least `p ≥ 1` with `η^p(u) = u`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Substitution](is-substitution.md)
+- [Is Two Sided Periodic Point](is-two-sided-periodic-point.md)
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.DumontThomasNumerationWanted](../../../../../../sources/v2/WantedExt.md)

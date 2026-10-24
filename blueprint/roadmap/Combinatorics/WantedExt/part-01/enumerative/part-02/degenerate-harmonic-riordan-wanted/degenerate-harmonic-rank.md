@@ -16,6 +16,10 @@ paper's explicit sum over `k₀, …, k_r ≥ 1` with `k₀ + ⋯ + k_r ≤ n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Degenerate Harmonic Term](degenerate-harmonic-term.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.DegenerateHarmonicRiordanWanted](../../../../../../../sources/v2/WantedExt.md)

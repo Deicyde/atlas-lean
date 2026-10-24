@@ -12,7 +12,8 @@ The convolution recurrence `T_{ℓ,k+1}(n) = ∑_{i=0}^{n} r_ℓ(i) · T_{ℓ,k}
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Tuple Regular Partition Count](k-tuple-regular-partition-count.md)
+- [L Regular Partition Count](l-regular-partition-count.md)
 
 ## Sources
 

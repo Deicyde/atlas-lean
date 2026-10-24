@@ -13,6 +13,10 @@ A fixed no-instance of all three (exact-size) languages: `k = 1` on the empty gr
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Encode KG](encode-kg.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.Clique](../../../../../../../sources/v2/CSLibExt.md)

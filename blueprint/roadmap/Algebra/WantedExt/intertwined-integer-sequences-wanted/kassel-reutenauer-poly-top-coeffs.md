@@ -15,7 +15,7 @@ written `C(n-3, 2)` and `C(n-4, 2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ rational congruence notation; `hp2` states oddness as `p != 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rat Residue](../../part-09/gobel-sequence-wanted/rat-residue.md)
 
 ## Sources
 

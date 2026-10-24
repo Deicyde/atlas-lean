@@ -12,7 +12,8 @@ lean: Cslib.Algorithms.Lean.Matching.GaleShapley.newHolder_cases
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [New Holder](new-holder.md)
 
 ## Sources
 

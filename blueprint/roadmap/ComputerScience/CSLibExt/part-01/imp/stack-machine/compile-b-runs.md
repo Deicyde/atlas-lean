@@ -14,7 +14,24 @@ the stack and the state unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [Instr](instr.md)
+- [Steps](steps.md)
+- [Blen](blen.md)
+- [Compile B](compile-b.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [Config](config.md)
+- [Step](step.md)
+- [Alen](alen.md)
+- [Compile A](compile-a.md)
+- [Compile A runs](compile-a-runs.md)
+- [Fetch segment](fetch-segment.md)
 
 ## Sources
 

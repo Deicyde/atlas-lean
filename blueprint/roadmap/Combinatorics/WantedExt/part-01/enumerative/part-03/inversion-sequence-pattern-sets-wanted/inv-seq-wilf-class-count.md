@@ -15,7 +15,7 @@ i.e. the number of distinct counting sequences `n ↦ |I_n(B)|` over the `d`-ele
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
 
 ## Sources
 

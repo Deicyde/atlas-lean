@@ -12,7 +12,7 @@ The `2`-repunit with three digits is `7`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Repstring](repstring.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ lean: MetaMathlibExt.exists_isLeast_nLagrangeSpectrum_nMarkoffSpectrum
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Spectrum](n-lagrange-spectrum.md)
+- [N Markoff Spectrum](n-markoff-spectrum.md)
 
 ## Sources
 

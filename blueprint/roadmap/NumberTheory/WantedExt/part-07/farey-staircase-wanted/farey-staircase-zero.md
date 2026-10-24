@@ -12,7 +12,7 @@ lean: MetaMathlibExt.fareyStaircase_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Staircase](farey-staircase.md)
 
 ## Sources
 

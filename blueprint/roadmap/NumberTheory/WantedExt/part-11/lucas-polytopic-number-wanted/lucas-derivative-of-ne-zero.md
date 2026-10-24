@@ -12,7 +12,7 @@ The Lucas derivative away from `0` is the difference quotient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Derivative](lucas-derivative.md)
 
 ## Sources
 

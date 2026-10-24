@@ -12,7 +12,12 @@ The empty pattern is contained in every set, so `opx(n, ∅) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
+
+## Proof depends on
+
+- [Point Set Contains Pattern](point-set-contains-pattern.md)
+- [Point Set Contains Pattern empty](point-set-contains-pattern-empty.md)
 
 ## Sources
 

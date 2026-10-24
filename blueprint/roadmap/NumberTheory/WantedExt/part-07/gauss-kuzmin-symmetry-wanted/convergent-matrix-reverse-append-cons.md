@@ -13,7 +13,7 @@ Explicit formulas for convergent matrices: with `C(a) = [[p', p], [q', q]]` and 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Matrix](convergent-matrix.md)
 
 ## Sources
 

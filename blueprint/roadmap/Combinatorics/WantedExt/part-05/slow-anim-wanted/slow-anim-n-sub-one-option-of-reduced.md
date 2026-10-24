@@ -16,7 +16,8 @@ omitted: it fails in `SN(3, 2)` at `p = (0, 1, 1)`, whose only move omits the em
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Reduced](slow-anim-reduced.md)
+- [Slow ANim After](slow-anim-after.md)
 
 ## Sources
 

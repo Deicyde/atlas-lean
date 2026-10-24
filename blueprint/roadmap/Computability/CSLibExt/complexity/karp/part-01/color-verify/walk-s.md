@@ -14,7 +14,14 @@ endpoint's color exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [K](k.md)
+- [Lab](lab.md)
+- [Mv P](mv-p.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

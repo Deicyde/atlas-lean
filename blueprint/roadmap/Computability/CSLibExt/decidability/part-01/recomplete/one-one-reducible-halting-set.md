@@ -13,7 +13,11 @@ lean: Cslib.Decidability.oneOneReducible_haltingSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halting Set](../../part-02/turing-reducible/halting-set.md)
+
+## Proof depends on
+
+- [Eval comp const](eval-comp-const.md)
 
 ## Sources
 

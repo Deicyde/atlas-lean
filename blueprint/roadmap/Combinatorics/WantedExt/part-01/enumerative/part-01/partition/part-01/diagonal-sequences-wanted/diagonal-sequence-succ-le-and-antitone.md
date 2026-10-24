@@ -12,7 +12,7 @@ Lemma 1: `d_{k+1} - d_k ≤ 1`, with equality iff `d_j = j` for all `1 ≤ j ≤
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

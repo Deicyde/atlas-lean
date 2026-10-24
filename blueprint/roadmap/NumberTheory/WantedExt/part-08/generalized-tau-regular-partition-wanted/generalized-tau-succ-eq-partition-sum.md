@@ -13,7 +13,7 @@ partitions of `n` of `∏ C(f + k - 1, k - 1)`, the products running over the di
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

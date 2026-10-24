@@ -14,6 +14,10 @@ nonempty, so the first `j + 1` blocks contain at least `j + 1` digits.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Campbell Block](campbell-block.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.SzuszVolkmannCounterexampleWanted](../../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,7 @@ defined on all of `ℕ` and also assumed non-increasing at `0` (extend by `ψ 0 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Well Approximable Set](well-approximable-set.md)
 
 ## Sources
 

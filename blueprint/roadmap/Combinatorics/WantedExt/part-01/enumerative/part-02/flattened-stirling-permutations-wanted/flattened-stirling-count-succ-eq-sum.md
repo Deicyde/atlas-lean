@@ -13,7 +13,7 @@ with Mathlib's Stirling numbers of the second kind (`S(0, 0) = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flattened Stirling Count](flattened-stirling-count.md)
 
 ## Sources
 

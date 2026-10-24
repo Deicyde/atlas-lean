@@ -12,7 +12,11 @@ A nonzero codeword has weight at least `n - k + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode](encode.md)
+
+## Proof depends on
+
+- [Card eval eq zero le](card-eval-eq-zero-le.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ and realizability `MetaMathlibExt.doldRealizable`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dold Realizable](../../../MathlibExt/part-01/arithmetic-function/part-01/binomial-power-realizability/dold-realizable.md)
+- [Domb Type Sum](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-09/zagier-number/domb-type-sum.md)
 
 ## Sources
 

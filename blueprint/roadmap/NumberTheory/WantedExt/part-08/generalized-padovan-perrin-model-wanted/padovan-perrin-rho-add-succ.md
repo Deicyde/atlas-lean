@@ -15,7 +15,7 @@ The characteristic recurrence of `ρ(n, s + p)` for `s > 0`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Rho](padovan-perrin-rho.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ A description bounds the complexity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](k.md)
+- [The universal description method](u.md)
+
+## Proof depends on
+
+- [Describe](describe.md)
+- [Run](run.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ added: for `r = 2`, `y = 0` the factorization `t²(t - x)` has `α = 0` and the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Lucas Polynomial](r-lucas-polynomial.md)
 
 ## Sources
 

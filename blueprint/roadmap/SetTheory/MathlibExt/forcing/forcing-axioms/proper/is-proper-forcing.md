@@ -18,6 +18,12 @@ supplies members containing it.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Club Omega](../../../cardinal/cofinality/countable-subsets/is-club-omega.md)
+- [Is Generic For](is-generic-for.md)
+- [Model Conds](model-conds.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Forcing.ForcingAxioms.Proper](../../../../../../sources/v2/MathlibExt.md)

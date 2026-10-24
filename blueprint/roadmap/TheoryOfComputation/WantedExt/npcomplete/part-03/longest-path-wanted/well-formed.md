@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest Path Instance](longest-path-instance.md)
 
 ## Sources
 

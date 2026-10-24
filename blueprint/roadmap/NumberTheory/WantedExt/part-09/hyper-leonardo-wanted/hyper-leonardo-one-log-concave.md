@@ -12,7 +12,7 @@ Proposition 13: `Le^{(1)}` is log-concave from `n = 2` on:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

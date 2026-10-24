@@ -13,7 +13,7 @@ tends to `-α/(1-α) + ∫_0^1 (1-x) x^{-α}/(1-x^m) dx` if `r = 1` and to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
 
 ## Sources
 

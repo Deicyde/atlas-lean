@@ -11,7 +11,12 @@ The expected number of sequences starting in `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid HMM](valid-hmm.md)
+
+## Proof depends on
+
+- [P Init](p-init.md)
+- [Post](post.md)
 
 ## Sources
 

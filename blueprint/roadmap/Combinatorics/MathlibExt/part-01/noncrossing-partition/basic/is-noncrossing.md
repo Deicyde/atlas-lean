@@ -11,7 +11,11 @@ A partition of `Fin n` is noncrossing iff it has no crossing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Partition](set-partition.md)
+
+## Proof depends on
+
+- [Has Crossing](has-crossing.md)
 
 ## Sources
 

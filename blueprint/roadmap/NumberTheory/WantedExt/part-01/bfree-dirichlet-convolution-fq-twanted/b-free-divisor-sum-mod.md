@@ -13,6 +13,11 @@ lean: MetaMathlibExt.bFreeDivisorSumMod
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is BFree](is-bfree.md)
+- [Monic Divisor Count](monic-divisor-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BFreeDirichletConvolutionFqTWanted](../../../../../sources/v2/WantedExt.md)

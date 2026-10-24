@@ -15,7 +15,7 @@ paper's identity `g(X; Y) = ∑ ∏ⱼ e^{mⱼ Yⱼ} e^{nⱼ Xⱼ} q^{mⱼ nⱼ}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Bracket Gen](../part-04/bi-bracket-gen.md)
 
 ## Sources
 

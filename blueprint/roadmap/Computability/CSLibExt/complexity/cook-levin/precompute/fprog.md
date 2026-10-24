@@ -12,7 +12,27 @@ the twelve host targets), then the host program `hp` from `start`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](../assembly/hk.md)
+- [HΓ](../assembly/h.md)
+- [FK](fk.md)
+- [FL](fl.md)
+- [FΓ](f.md)
+- [Coeffs](coeffs.md)
+
+## Proof depends on
+
+- [MS](../counter-view/ms.md)
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
+- [CC](cc.md)
+- [HW](hw.md)
+- [PL](pl.md)
+- [PW](pw.md)
+- [The counter program](cprog.md)
+- [Emb C](emb-c.md)
+- [Emb H](emb-h.md)
+- [The read loop](rd-t.md)
+- [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The defining recursion of the iterated partial sums.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
 
 ## Sources
 

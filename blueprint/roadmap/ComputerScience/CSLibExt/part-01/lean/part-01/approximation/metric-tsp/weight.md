@@ -12,7 +12,7 @@ vertex is joined to `p`, and each vertex to its children.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
 
 ## Sources
 

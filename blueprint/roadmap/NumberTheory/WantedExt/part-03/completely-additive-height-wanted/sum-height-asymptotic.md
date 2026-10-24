@@ -12,7 +12,7 @@ Proposition 7 (prime reduction), final form: for completely additive `H` there i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Completely Additive Nat](is-completely-additive-nat.md)
 
 ## Sources
 

@@ -11,7 +11,14 @@ lean: Cslib.Decidability.Post.toPCP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](domino.md)
+- [Sym](sym.md)
+
+## Proof depends on
+
+- [End Domino](end-domino.md)
+- [Map Domino](map-domino.md)
+- [Start Domino](start-domino.md)
 
 ## Sources
 

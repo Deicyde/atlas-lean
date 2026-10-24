@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow Shop Instance](flow-shop-instance.md)
 
 ## Sources
 

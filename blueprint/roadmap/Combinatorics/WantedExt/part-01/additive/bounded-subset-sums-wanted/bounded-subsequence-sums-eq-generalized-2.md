@@ -13,7 +13,9 @@ For a sequence `𝒜 = (A, t̄)` with `A = {0, a₁, …, a_{k-1}}` (distinct te
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
+- [Generalized HFold Sumset](generalized-hfold-sumset.md)
+- [Repetition Sequence](repetition-sequence.md)
 
 ## Sources
 

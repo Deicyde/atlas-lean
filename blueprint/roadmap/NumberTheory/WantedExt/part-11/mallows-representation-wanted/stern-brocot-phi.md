@@ -14,6 +14,10 @@ The map `φ_SBT` on a Stern–Brocot vertex with gap `I` (label `f`, children `l
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gap Mediant](gap-mediant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.MallowsRepresentationWanted](../../../../../sources/v2/WantedExt.md)

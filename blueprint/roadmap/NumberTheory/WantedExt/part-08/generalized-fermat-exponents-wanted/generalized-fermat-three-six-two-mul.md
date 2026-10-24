@@ -13,7 +13,7 @@ pairwise coprime, `s` is odd and `3 ∤ w`, and no solution otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fermat Solvable](generalized-fermat-solvable.md)
 
 ## Sources
 

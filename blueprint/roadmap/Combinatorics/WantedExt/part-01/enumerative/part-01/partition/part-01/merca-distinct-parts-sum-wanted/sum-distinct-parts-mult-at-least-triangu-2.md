@@ -14,7 +14,8 @@ crank (`m = 1`, `n = 2`: left side `s_1(1) = 1`, right side `D(1) + 2 D(0) = 0`)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Crank](partition-crank.md)
+- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The merge of two tuples: the value of `t` where it is defined, otherwise the val
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
 
 ## Sources
 

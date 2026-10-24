@@ -11,7 +11,13 @@ The domino `(l, r)` of a rule.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../../part-01/pcp/domino.md)
+- [Sym](../../part-01/pcp/sym.md)
+- [Rule](rule.md)
+
+## Proof depends on
+
+- [Lift](lift.md)
 
 ## Sources
 

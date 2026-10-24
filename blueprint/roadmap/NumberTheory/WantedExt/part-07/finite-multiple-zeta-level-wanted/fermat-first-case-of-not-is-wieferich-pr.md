@@ -13,7 +13,7 @@ the first case of Fermat's last theorem holds for the exponent `p`: there are no
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Wieferich Prime](../../../MathlibExt/part-12/wieferich-prime/is-wieferich-prime.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ Blocks of stacks `< n` of situation `i`, then situations `< i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [GL](gl.md)
+
+## Proof depends on
+
+- [I From](i-from.md)
+- [ST](st.md)
 
 ## Sources
 

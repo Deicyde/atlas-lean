@@ -12,7 +12,7 @@ There are thirteen patterns of length three.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Length Three Patterns](length-three-patterns.md)
 
 ## Sources
 

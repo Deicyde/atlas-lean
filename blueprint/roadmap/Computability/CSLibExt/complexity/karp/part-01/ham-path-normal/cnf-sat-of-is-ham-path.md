@@ -14,7 +14,27 @@ true iff row `i` is run left to right).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Detours Normal](../ham-path/detours-normal.md)
+- [Is Ham Path](../ham-path/is-ham-path.md)
+- [Ham Edges](../ham-path/ham-edges.md)
+- [Ham Vars](../ham-path/ham-vars.md)
+- [Hp T](../ham-path/hp-t.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+
+## Proof depends on
+
+- [Drop Clauses](drop-clauses.md)
+- [Exists top succ](exists-top-succ.md)
+- [Ham Edges of infix](../ham-path-detours/ham-edges-of-infix.md)
+- [Hp R](../ham-path/hp-r.md)
+- [Hp R arc clause](hp-r-arc-clause.md)
+- [Hp Ro](hp-ro.md)
+- [Idx Of get D ham Vars](idx-of-get-d-ham-vars.md)
+- [Infix drop Clauses](infix-drop-clauses.md)
+- [Row run](row-run.md)
+- [Arc](../../../path/arc.md)
 
 ## Sources
 

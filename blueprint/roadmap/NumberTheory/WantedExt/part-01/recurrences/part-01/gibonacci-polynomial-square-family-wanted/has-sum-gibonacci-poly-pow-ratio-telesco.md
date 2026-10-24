@@ -16,7 +16,7 @@ docstring for `x ≤ 0`); `p ≥ 1` follows from `1 ≤ t ≤ 2p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The list language of one side of `P`, with indices in unary.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [List Word](list-word.md)
 
 ## Sources
 

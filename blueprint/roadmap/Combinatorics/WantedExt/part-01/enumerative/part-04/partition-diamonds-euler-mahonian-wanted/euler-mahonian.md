@@ -14,6 +14,11 @@ at elements `x, y` of a commutative ring.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perm Des](perm-des.md)
+- [Perm Maj](perm-maj.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PartitionDiamondsEulerMahonianWanted](../../../../../../../sources/v2/WantedExt.md)

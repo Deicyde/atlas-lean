@@ -12,7 +12,15 @@ The path spelling out `φ a` from `q` ends in `M.step q a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Bound](bound.md)
+- [Code](code.md)
+- [Εnfa](nfa.md)
+
+## Proof depends on
+
+- [Advance](advance.md)
+- [Is Path advance](is-path-advance.md)
 
 ## Sources
 

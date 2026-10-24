@@ -11,7 +11,7 @@ Where the comparison of the states leads.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
 
 ## Sources
 

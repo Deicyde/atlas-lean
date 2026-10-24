@@ -12,7 +12,8 @@ Baum–Sweet: if `f ∈ 𝔽₂((x⁻¹))` satisfies `f^{2ⁿ+1} + g⁻¹ f + 1 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Has Bounded Partial Quotients](laurent-has-bounded-partial-quotients.md)
+- [Poly To Laurent Inv](poly-to-laurent-inv.md)
 
 ## Sources
 

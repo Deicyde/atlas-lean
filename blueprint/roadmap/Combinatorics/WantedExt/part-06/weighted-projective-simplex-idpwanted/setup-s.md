@@ -14,6 +14,10 @@ the results ensure that this natural-number quotient is the intended one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weight Lcm](weight-lcm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

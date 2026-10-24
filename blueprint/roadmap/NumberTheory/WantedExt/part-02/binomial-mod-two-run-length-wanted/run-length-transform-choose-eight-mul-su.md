@@ -12,7 +12,7 @@ of the periodic sequence `1, 1, 0, 1, 1, 0, …`. The top entry is negative for 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

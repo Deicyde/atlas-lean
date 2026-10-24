@@ -11,7 +11,13 @@ The recognizer built from `tm`: prepend the bottom cell, then run the emulation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](../of-tm0/non-blank.md)
+
+## Proof depends on
+
+- [Bot Cell](bot-cell.md)
+- [Emu TM](emu-tm.md)
+- [Cons Computer](cons-computer.md)
 
 ## Sources
 

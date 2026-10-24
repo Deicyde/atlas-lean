@@ -13,7 +13,13 @@ minimizer of the ridge objective.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ridge](ridge.md)
+- [Ridge Estimate](ridge-estimate.md)
+
+## Proof depends on
+
+- [Pos Def ridge](pos-def-ridge.md)
+- [Ridge le of normal](ridge-le-of-normal.md)
 
 ## Sources
 

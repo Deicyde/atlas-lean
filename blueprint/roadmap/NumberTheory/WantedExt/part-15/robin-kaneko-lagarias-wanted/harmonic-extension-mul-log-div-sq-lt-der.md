@@ -11,7 +11,7 @@ For `x ≥ 4`, `H'(x) > H(x) log H(x) / x²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Harmonic Extension](harmonic-extension.md)
 
 ## Sources
 

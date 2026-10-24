@@ -12,7 +12,9 @@ Short end blocks: `R_1 = V₀(1,2,1)`, `R_{10} = V(1,2,-1)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Occurrences](base-phi-occurrences.md)
+- [Beatty Set](beatty-set.md)
+- [Beatty Set₀](beatty-set-2.md)
 
 ## Sources
 

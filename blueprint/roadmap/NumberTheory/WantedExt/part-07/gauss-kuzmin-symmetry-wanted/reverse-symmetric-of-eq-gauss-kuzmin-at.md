@@ -12,7 +12,8 @@ length exactly `N`, then `μ(I(a)) = μ(I(a⃖))` for all strings of length `n �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cf Cylinder](cf-cylinder.md)
+- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
 
 ## Sources
 

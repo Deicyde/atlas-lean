@@ -12,7 +12,7 @@ The sign clause accompanying Theorem 3 says that every paper quantity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Watson Odd Cotangent Deriv](watson-odd-cotangent-deriv.md)
 
 ## Sources
 

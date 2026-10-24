@@ -13,6 +13,10 @@ Only the numerical consequence, not an encoded polynomial-time algorithm.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dimension Constant](../../../MathlibExt/part-03/matrix-discrepancy/dimension-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.KomlosDiscrepancyWanted](../../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,19 @@ advantage of any adversary is at most the PRF advantage of the reduction plus `q
 
 ## Depends on
 
-This node has no prerequisites.
+- [CPAAdversary](cpaadversary.md)
+- [Cpa Advantage](cpa-advantage.md)
+- [Cpa Reduction](cpa-reduction.md)
+- [Prf Advantage](prf-advantage.md)
+
+## Proof depends on
+
+- [Oracle Comp](oracle-comp.md)
+- [Cpa Game](cpa-game.md)
+- [Cpa Game eq prf Real](cpa-game-eq-prf-real.md)
+- [Prf Rand](prf-rand.md)
+- [The random world](prf-rand-cpa-reduction.md)
+- [Prf Real](prf-real.md)
 
 ## Sources
 

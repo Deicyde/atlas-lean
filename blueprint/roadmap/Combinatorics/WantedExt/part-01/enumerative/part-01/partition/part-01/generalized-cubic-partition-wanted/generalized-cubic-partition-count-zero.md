@@ -12,7 +12,13 @@ lean: MetaMathlibExt.generalizedCubicPartitionCount_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Cubic Partition Count](generalized-cubic-partition-count.md)
+
+## Proof depends on
+
+- [Constant Coeff q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
+- [Generalized Cubic Partition Count generating Function](generalized-cubic-partition-count-genera.md)
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

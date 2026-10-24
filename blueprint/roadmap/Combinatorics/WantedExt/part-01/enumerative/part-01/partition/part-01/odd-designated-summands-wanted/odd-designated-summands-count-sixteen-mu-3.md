@@ -11,7 +11,7 @@ The internal congruence `PD_2(16n) ≡ PD_2(4n) (mod 8)` for all `n ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Designated Summands Count](odd-designated-summands-count.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Precedence Multiprocessor Scheduling Instance](precedence-multiprocessor-scheduling-ins.md)
 
 ## Sources
 

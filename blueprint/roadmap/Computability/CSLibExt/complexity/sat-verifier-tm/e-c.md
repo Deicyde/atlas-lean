@@ -11,7 +11,8 @@ Driver stacks in the host.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](../sat-check/k.md)
+- [HK](hk.md)
 
 ## Sources
 

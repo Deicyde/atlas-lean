@@ -11,7 +11,8 @@ Where the machine goes after moving the pair bits: output (`flip`) or subtract (
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+- [Mode](mode.md)
 
 ## Sources
 

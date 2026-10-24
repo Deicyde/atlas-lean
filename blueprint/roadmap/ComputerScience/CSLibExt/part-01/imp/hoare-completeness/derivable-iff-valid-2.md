@@ -13,7 +13,15 @@ is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [Derivable](derivable.md)
+- [Triple](triple.md)
+- [Valid](../hoare/valid.md)
+
+## Proof depends on
+
+- [Derivable iff valid](derivable-iff-valid.md)
 
 ## Sources
 

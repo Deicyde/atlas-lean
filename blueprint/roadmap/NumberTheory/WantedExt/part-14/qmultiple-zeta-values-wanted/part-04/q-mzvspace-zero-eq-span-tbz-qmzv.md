@@ -12,7 +12,8 @@ The TBZ model spans `𝒵_q`: `𝒵_q` is the `ℚ`-span of the `ζ_q^TBZ(k₁, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q MZVSpace](../part-02/q-mzvspace.md)
+- [Tbz QMZV](../part-03/tbz-qmzv.md)
 
 ## Sources
 

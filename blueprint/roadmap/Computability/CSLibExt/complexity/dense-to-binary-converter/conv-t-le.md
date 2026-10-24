@@ -12,7 +12,7 @@ The main loop's step count, with `Q` bounding the stash length plus the three co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conv T](conv-t.md)
 
 ## Sources
 

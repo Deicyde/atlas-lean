@@ -12,7 +12,11 @@ lean: MetaMathlibExt.isUnit_squareThetaSeries
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Theta Series](square-theta-series.md)
+
+## Proof depends on
+
+- [Coeff square Theta Series small](coeff-square-theta-series-small.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Theorem 3, prime case `p ≡ 1 (mod 4)`: `min_{m ∈ ℤ} f_m(p) = (p - 1) / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest APLength](longest-aplength.md)
 
 ## Sources
 

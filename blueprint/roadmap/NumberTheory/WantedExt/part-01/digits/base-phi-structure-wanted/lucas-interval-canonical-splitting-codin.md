@@ -16,7 +16,10 @@ built from the recursion of the paper's Section 4.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Tiling](is-lucas-tiling.md)
+- [Canonical Lucas Splitting](canonical-lucas-splitting.md)
+- [Lucas Interval Hi](lucas-interval-hi.md)
+- [Lucas Interval Lo](lucas-interval-lo.md)
 
 ## Sources
 

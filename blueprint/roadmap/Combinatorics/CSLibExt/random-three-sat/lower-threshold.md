@@ -14,6 +14,10 @@ The lower threshold constant: the supremum of all lower cutoffs, the
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Lower Cutoff](is-lower-cutoff.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Combinatorics.RandomThreeSat](../../../../sources/v2/CSLibExt.md)

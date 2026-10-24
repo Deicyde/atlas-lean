@@ -12,7 +12,7 @@ Corollary 3: `ā_5(20n+6) ≡ ā_5(20n+14) ≡ 0 (mod 10)` and, for `k ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Phi Five Core Analog](phi-five-core-analog.md)
 
 ## Sources
 

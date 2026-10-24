@@ -11,7 +11,7 @@ Theorem 2: for every positive integer `k`, `m^{(k+1:k)}(K_3) = 6k + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pebbling All NTotals](pebbling-all-ntotals.md)
 
 ## Sources
 

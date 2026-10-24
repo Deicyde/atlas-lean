@@ -13,7 +13,8 @@ not ended.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Placement Game](placement-game.md)
 
 ## Sources
 

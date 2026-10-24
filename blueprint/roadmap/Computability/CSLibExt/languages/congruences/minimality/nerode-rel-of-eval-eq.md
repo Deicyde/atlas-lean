@@ -13,7 +13,11 @@ them.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Rel](../nerode/nerode-rel.md)
+
+## Proof depends on
+
+- [Nerode Rel iff](../nerode/nerode-rel-iff.md)
 
 ## Sources
 

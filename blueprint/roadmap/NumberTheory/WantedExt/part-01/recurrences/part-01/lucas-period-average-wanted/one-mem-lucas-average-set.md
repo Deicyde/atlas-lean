@@ -12,7 +12,14 @@ lean: MetaMathlibExt.one_mem_lucasAverageSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas Average Set](lucas-average-set.md)
+
+## Proof depends on
+
+- [Lucas Period Set](lucas-period-set.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [One mem lucas Period Set](one-mem-lucas-period-set.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ does not count); the values for `n = 0, …, 8` are `0, 0, 1, 0, 3, 2, 6, 6, 15`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Overpartition Spt2 Contribution](overpartition-spt2-contribution.md)
+- [Overpartition](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OverpartitionSpt2CongruencesWanted](../../../../../sources/v2/WantedExt.md)

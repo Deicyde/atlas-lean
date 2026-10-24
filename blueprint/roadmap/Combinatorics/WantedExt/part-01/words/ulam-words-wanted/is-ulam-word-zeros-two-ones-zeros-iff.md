@@ -11,7 +11,7 @@ lean: MetaMathlibExt.isUlamWord_zeros_two_ones_zeros_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ulam Word](is-ulam-word.md)
 
 ## Sources
 

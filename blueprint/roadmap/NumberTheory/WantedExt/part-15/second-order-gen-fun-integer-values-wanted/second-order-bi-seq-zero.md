@@ -12,7 +12,7 @@ Initial value `A^{(r,s)}_0 = r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Bi Seq](second-order-bi-seq.md)
 
 ## Sources
 

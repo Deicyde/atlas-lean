@@ -12,7 +12,11 @@ For the constant profile `π_k = 1`, `k(i) = i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seq Height Index](seq-height-index.md)
+
+## Proof depends on
+
+- [Profile Partial Sum](profile-partial-sum.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ An alignment is banded when its path, from offset `(0, 0)`, stays in the band.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+
+## Proof depends on
+
+- [Banded From](banded-from.md)
 
 ## Sources
 

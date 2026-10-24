@@ -14,7 +14,8 @@ only if no coordinate grows, the result satisfies `x' ≤ y' ≤ z'`, and the am
 
 ## Depends on
 
-This node has no prerequisites.
+- [Princess Roses Helper Move List](princess-roses-helper-move-list.md)
+- [Princess Roses Helper Moves](princess-roses-helper-moves.md)
 
 ## Sources
 

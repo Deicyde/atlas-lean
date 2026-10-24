@@ -11,7 +11,7 @@ lean: MetaMathlibExt.kFibonacciBinomialTruncation_recurrence
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Fibonacci Binomial Truncation](k-fibonacci-binomial-truncation.md)
 
 ## Sources
 

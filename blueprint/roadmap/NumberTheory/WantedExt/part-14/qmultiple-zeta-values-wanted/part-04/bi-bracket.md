@@ -17,6 +17,10 @@ that of the partial sum with `m₁ ≤ N`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bi Bracket Partial](bi-bracket-partial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

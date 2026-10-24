@@ -12,7 +12,9 @@ If every domino of `s` is at least as long on top, so is `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [Bottom](../pcp/bottom.md)
+- [Top](../pcp/top.md)
 
 ## Sources
 

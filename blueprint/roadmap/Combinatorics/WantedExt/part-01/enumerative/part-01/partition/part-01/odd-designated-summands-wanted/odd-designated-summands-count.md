@@ -14,6 +14,10 @@ odd, defined as the `n`th coefficient of `f_4 f_6^2 / (f_1 f_3 f_12)` (integer-v
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Odd Designated Summands Series](odd-designated-summands-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.OddDesignatedSummandsWanted](../../../../../../../../../sources/v2/WantedExt.md)

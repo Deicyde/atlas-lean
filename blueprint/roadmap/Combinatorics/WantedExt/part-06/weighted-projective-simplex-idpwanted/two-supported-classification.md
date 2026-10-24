@@ -12,7 +12,7 @@ Theorem 8's classification: the necessary two-supported data are exactly
 
 ## Depends on
 
-This node has no prerequisites.
+- [Satisfies Support IDPNecessary](satisfies-support-idpnecessary.md)
 
 ## Sources
 

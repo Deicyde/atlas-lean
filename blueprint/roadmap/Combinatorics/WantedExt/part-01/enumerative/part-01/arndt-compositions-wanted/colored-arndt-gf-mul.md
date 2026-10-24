@@ -12,7 +12,7 @@ lean: MetaMathlibExt.coloredArndtGF_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Arndt GF](colored-arndt-gf.md)
 
 ## Sources
 

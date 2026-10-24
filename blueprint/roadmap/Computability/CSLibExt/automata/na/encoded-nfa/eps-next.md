@@ -11,7 +11,7 @@ The targets of the ε-moves from `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
 
 ## Sources
 

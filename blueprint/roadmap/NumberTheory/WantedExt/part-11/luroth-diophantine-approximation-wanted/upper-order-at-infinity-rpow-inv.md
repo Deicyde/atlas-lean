@@ -12,7 +12,11 @@ The upper order at infinity of `q ↦ q^{-τ}` is `τ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Order At Infinity](upper-order-at-infinity.md)
+
+## Proof depends on
+
+- [Order Ratio rpow inv](order-ratio-rpow-inv.md)
 
 ## Sources
 

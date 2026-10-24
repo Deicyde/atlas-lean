@@ -13,7 +13,12 @@ The output clause of a literal `l` walked with counter `z`: `l` renamed, precede
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Fresh](../three-sat/fresh.md)
+- [Ren Lit](../three-sat/ren-lit.md)
 
 ## Sources
 

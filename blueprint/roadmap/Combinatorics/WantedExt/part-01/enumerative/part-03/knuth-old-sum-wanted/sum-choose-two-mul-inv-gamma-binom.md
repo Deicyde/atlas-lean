@@ -13,7 +13,7 @@ Equation (16), the `n = 0` case of (14):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

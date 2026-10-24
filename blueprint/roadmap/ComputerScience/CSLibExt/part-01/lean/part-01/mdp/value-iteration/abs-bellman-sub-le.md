@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.MarkovDecision.abs_bellman_sub_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Stochastic](stochastic.md)
+- [Bellman](bellman.md)
+
+## Proof depends on
+
+- [Q Value](q-value.md)
 
 ## Sources
 

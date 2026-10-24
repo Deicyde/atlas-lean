@@ -12,7 +12,8 @@ The first companion bronze numbers: `C = 1, 1, 4, 13, 43, …` and `D = 1, 2, 7,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bronze Companion First](bronze-companion-first.md)
+- [Bronze Companion Second](bronze-companion-second.md)
 
 ## Sources
 

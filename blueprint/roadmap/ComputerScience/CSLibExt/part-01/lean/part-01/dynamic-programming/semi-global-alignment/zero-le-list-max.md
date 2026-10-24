@@ -12,7 +12,7 @@ The list maximum is nonnegative: the fold starts at `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [List Max](../sequence-alignment/list-max.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Campbell and Cohen, Theorem 1, generalized Taylor's law: for every `k`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cyclic Number](../../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
 
 ## Sources
 

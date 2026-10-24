@@ -12,7 +12,7 @@ Small value: `N_3(2, 2, 0, 0, 3) = 5` (pairs `(x_1, x_2) ∈ [0, 3)²` with even
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Sum Congruence Count](digit-sum-congruence-count.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.biPeriodicFibonacciSq_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Periodic Fibonacci Sq](bi-periodic-fibonacci-sq.md)
 
 ## Sources
 

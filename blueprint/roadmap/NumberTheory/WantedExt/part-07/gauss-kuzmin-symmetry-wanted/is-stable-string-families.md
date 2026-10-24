@@ -13,7 +13,7 @@ length `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stable String](is-stable-string.md)
 
 ## Sources
 

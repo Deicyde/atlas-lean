@@ -11,7 +11,13 @@ The pair bits of Karp's graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Occ Adj](occ-adj.md)
+- [Occs](occs.md)
+- [Pairs](pairs.md)
 
 ## Sources
 

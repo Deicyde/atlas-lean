@@ -14,7 +14,8 @@ theorem (with `D(k)`, positive crank) is omitted: it is false for this crank bec
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Crank](partition-crank.md)
+- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
 
 ## Sources
 

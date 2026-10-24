@@ -12,7 +12,8 @@ of the Padovan numbers (OEIS A000931) from offset `5`, i.e. `1, 1, 1, 2, 2, 3, 4
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
+- [Shifted Padovan Sequence](../../../MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
 
 ## Sources
 

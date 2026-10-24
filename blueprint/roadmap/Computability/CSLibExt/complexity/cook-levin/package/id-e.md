@@ -11,7 +11,7 @@ The identity stack embedding (pure relabelling).
 
 ## Depends on
 
-This node has no prerequisites.
+- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Sources
 

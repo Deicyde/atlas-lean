@@ -13,7 +13,7 @@ Row three of `B(1)` is `24, -26, 9, -1`, matching the display
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyperseq B](hyperseq-b.md)
 
 ## Sources
 

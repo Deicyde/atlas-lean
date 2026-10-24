@@ -12,7 +12,7 @@ lean: MetaMathlibExt.pythagoreanTripleMul_three_four_five
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pythagorean Triple Mul](pythagorean-triple-mul.md)
 
 ## Sources
 

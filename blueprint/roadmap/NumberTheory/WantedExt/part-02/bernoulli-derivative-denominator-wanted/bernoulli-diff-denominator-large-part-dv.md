@@ -11,7 +11,8 @@ For `n ≥ 1`, `𝔻^+_n` divides `𝔻^⊥_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
+- [Bernoulli Diff Denominator Large Part](bernoulli-diff-denominator-large-part.md)
 
 ## Sources
 

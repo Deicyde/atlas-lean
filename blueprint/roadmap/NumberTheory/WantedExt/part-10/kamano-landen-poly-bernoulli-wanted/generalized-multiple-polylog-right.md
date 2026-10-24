@@ -12,7 +12,15 @@ Recurrence for `k→`: `Li_{(k₁, …, k_r, 1)} = ∫₀^z ∑ γ_i G_{g_i}(u) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+- [Form Series](form-series.md)
+- [Generalized Multiple Polylog](generalized-multiple-polylog.md)
+- [Integral Div X](integral-div-x.md)
+
+## Proof depends on
+
+- [Polylog Rev](polylog-rev.md)
+- [Landen Form Series](landen-form-series.md)
 
 ## Sources
 

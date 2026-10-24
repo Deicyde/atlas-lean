@@ -11,7 +11,13 @@ The verifier: `w`'s first `n` bits choose the vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+
+## Proof depends on
+
+- [Ok](ok.md)
+- [Decode KG](../clique/decode-kg.md)
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

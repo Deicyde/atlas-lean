@@ -12,7 +12,7 @@ For all large `n`, the only integer solutions of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Split Thue Recurrence Family](is-split-thue-recurrence-family.md)
 
 ## Sources
 

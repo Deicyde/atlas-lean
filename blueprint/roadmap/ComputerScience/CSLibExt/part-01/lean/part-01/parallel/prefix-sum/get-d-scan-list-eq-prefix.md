@@ -12,7 +12,14 @@ lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.getD_scanList_eq_prefix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prefix Prod](prefix-prod.md)
+- [Scan List](scan-list.md)
+
+## Proof depends on
+
+- [Get D scan List](get-d-scan-list.md)
+- [Kogge Stone](kogge-stone.md)
+- [The scan computes all prefix products](kogge-stone-eq-prefix.md)
 
 ## Sources
 

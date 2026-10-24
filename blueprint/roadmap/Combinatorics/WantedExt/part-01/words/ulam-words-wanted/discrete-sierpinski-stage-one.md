@@ -12,7 +12,7 @@ lean: MetaMathlibExt.discreteSierpinskiStage_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Discrete Sierpinski Stage](discrete-sierpinski-stage.md)
 
 ## Sources
 

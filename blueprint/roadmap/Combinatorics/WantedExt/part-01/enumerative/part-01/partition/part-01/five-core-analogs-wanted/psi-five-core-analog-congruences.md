@@ -12,7 +12,7 @@ and `b̄_5(5^k(20n+18) - 3) ≡ b̄_5(5^k(20n+22) - 3) ≡ 0 (mod (5^k - 1)/4)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Psi Five Core Analog](psi-five-core-analog.md)
 
 ## Sources
 

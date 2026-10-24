@@ -11,7 +11,15 @@ Step bound of the full machine on an input of length `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../situation/part-01/enc.md)
+
+## Proof depends on
+
+- [Real B](../assembly/real-b.md)
+- [TOf](tof.md)
+- [C B](c-b.md)
+- [M Of](m-of.md)
+- [Depth](../situation/part-01/depth.md)
 
 ## Sources
 

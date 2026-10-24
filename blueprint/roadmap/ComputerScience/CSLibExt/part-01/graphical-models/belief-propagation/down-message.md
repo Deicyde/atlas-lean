@@ -12,7 +12,13 @@ against the parent's belief in the model without the last vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
+
+## Proof depends on
+
+- [Drop Last](drop-last.md)
+- [Eliminate](../variable-elimination/eliminate.md)
+- [Last Parent](../variable-elimination/last-parent.md)
 
 ## Sources
 

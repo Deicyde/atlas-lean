@@ -14,7 +14,10 @@ counter `codeLength c` the halt address of `compile c 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+- [Instr](instr.md)
+- [Step](step.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

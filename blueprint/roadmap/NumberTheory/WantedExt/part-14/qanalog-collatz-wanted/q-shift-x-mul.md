@@ -12,7 +12,7 @@ lean: MetaMathlibExt.qShift_X_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Shift](q-shift.md)
 
 ## Sources
 

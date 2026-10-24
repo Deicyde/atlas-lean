@@ -12,7 +12,15 @@ One step of the walk at walking label `l`: an empty `T` ends the walk; a token m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [K](k.md)
+- [Mv If](mv-if.md)
+- [Nxt](nxt.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

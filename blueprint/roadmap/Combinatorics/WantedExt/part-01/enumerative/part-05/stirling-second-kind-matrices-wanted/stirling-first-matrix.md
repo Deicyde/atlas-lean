@@ -14,6 +14,10 @@ The Stirling matrix of the first kind `s(n)` with entries `s(i, j)`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Signed Stirling First](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.StirlingSecondKindMatricesWanted](../../../../../../../sources/v2/WantedExt.md)

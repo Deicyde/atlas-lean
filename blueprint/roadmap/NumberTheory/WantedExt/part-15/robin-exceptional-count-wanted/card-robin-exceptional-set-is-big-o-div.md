@@ -12,7 +12,7 @@ Theorem 1: `N_R(x) = O(x / log log x)`, with `N_R(x)` the cardinality of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Robin Exceptional Set](robin-exceptional-set.md)
 
 ## Sources
 

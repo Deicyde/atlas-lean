@@ -18,7 +18,7 @@ Theorem 2; without it `B'_2 = 0` (`d = 15` realizes `a_1 = 2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Periodic CF](has-periodic-cf.md)
 
 ## Sources
 

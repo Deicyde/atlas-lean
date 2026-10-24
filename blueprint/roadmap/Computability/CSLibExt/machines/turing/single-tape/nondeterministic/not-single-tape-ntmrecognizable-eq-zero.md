@@ -14,7 +14,11 @@ empty word, and an NTM that accepts the empty word accepts every word
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape NTMRecognizable](single-tape-ntmrecognizable.md)
+
+## Proof depends on
+
+- [No NTM accepts exactly the binary code of `0`](not-forall-accepts-encode-nat-iff-eq-zer.md)
 
 ## Sources
 

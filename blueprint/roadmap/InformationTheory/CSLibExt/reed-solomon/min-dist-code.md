@@ -14,7 +14,16 @@ of `∏_{j < k - 1} (X - αⱼ)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Dist](../linear-code/min-dist.md)
+- [Code](code.md)
+
+## Proof depends on
+
+- [Linear Code](../linear-code/linear-code.md)
+- [Encode](encode.md)
+- [Exists codeword hamming Norm le](exists-codeword-hamming-norm-le.md)
+- [Le hamming Norm encode](le-hamming-norm-encode.md)
+- [Le min Dist code](le-min-dist-code.md)
 
 ## Sources
 

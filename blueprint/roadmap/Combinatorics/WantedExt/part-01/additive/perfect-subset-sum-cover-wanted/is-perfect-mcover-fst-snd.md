@@ -13,7 +13,7 @@ coordinates form a perfect `2^n l`-cover of `H` and its second coordinates a per
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect MCover](is-perfect-mcover.md)
 
 ## Sources
 

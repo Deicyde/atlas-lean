@@ -12,7 +12,7 @@ is written `n ≤ 2i + 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kassel Reutenauer Coeff](kassel-reutenauer-coeff.md)
 
 ## Sources
 

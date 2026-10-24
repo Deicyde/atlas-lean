@@ -19,6 +19,10 @@ The auxiliary piecewise-linear function `hâ‚ƒ^{(m)}` on `[10^m - 1, 10^m]` (`m â
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Campbell H2](campbell-h2.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.SzuszVolkmannCounterexampleWanted](../../../../../../sources/v2/WantedExt.md)

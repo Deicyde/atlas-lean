@@ -13,7 +13,7 @@ The Lucas-type recursion for `1`-metered parking functions: `mpf_{1,n}(1) = n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Parking Count](metered-parking-count.md)
 
 ## Sources
 

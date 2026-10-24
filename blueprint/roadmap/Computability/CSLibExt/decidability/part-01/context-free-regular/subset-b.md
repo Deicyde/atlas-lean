@@ -11,7 +11,13 @@ The inclusion test: the intersection with the complement is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Compl](../../../automata/da/encoded-dfa/compl.md)
+- [The emptiness test](inter-empty-b.md)
 
 ## Sources
 

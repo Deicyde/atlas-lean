@@ -12,7 +12,12 @@ Legal traces keep the cache duplicate-free and within capacity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Cache LTS](cache-lts.md)
+
+## Proof depends on
+
+- [Cache LTS valid](cache-lts-valid.md)
 
 ## Sources
 

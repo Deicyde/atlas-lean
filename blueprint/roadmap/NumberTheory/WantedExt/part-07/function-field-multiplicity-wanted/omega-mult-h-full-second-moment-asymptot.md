@@ -14,7 +14,10 @@ statement has `∑_P b_P^2 - (∑_P b_P)^2` with the signs swapped, contradictin
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full Moment](h-full-moment.md)
+- [H Full Omega Mult Sq Sum](h-full-omega-mult-sq-sum.md)
+- [H Full Omega Mult Sum](h-full-omega-mult-sum.md)
+- [H Full Weighted Mean](h-full-weighted-mean.md)
 
 ## Sources
 

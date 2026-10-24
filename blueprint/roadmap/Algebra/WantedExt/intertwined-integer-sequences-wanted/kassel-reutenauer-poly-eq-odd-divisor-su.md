@@ -13,7 +13,8 @@ Odd-divisor formula: for `n ≥ 1`, with `r_n(d) = n/d - (d+1)/2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
 
 ## Sources
 

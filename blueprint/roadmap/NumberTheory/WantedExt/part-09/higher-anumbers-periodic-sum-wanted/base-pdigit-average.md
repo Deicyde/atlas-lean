@@ -14,6 +14,12 @@ The average value `x̄` of the repeating digits of the base-`p` expansion of `x`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Base PDelay](base-pdelay.md)
+- [Base PDigit](base-pdigit.md)
+- [Base PPeriod](base-pperiod.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HigherANumbersPeriodicSumWanted](../../../../../sources/v2/WantedExt.md)

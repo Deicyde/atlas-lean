@@ -13,6 +13,11 @@ The gap of the Stern–Brocot vertex `f_{j+1}(α)` visited at step `j + 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stern Brocot Child](stern-brocot-child.md)
+- [Stern Brocot Choose](stern-brocot-choose.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.MallowsRepresentationWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,9 @@ When `μ̌` and its successor exist, `μ̄` is that successor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Immediate Predecessor](is-immediate-predecessor.md)
+- [Is Immediate Successor](is-immediate-successor.md)
+- [Zeckendorf Bar](zeckendorf-bar.md)
 
 ## Sources
 

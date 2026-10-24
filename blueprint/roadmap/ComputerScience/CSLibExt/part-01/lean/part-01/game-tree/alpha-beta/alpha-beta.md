@@ -11,7 +11,7 @@ Alpha-beta pruning with window `[a, b]` when player `p` moves; one unit per leaf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Join `h₁` and `h₂`, allocating one join node that holds both operands unchan
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Corollary 1 (Euler's continuant identity, extended): for all `h, k, ℓ, m ∈ �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The dimensions of a code and its dual add up to the length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+- [Dual](dual.md)
+
+## Proof depends on
+
+- [Dot Form](dot-form.md)
 
 ## Sources
 

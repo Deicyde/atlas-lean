@@ -16,7 +16,7 @@ Formalization deviation: none beyond the representation choices stated above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cell F](cell-f.md)
 
 ## Sources
 

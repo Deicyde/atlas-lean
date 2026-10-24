@@ -12,7 +12,12 @@ lean: Cslib.Decidability.TM2Recognizable.exists_enumerator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enumerates](enumerates.md)
+- [TM2 Recognizable](../basic/tm2-recognizable.md)
+
+## Proof depends on
+
+- [Tm2 Recognizable iff re Pred](../basic/tm2-recognizable-iff-re-pred.md)
 
 ## Sources
 

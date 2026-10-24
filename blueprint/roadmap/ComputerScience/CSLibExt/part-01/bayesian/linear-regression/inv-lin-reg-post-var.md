@@ -12,7 +12,7 @@ Precisions add: `1 / linRegPostVar = 1 / s₀ + ∑ xᵢ² / σ²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lin Reg Post Var](lin-reg-post-var.md)
 
 ## Sources
 

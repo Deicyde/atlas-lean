@@ -11,7 +11,7 @@ Mazur's Problem 75 is false in the general Banach-space form above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem75 Claim](scottish-book-problem75-claim.md)
 
 ## Sources
 

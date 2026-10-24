@@ -13,7 +13,8 @@ Binomial coefficients in a row of Pascal's triangle:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorial Product Constant](factorial-product-constant.md)
+- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

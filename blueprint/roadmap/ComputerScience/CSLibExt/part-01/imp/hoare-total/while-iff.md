@@ -13,7 +13,18 @@ guarded body iteration followed by the loop again.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+- [Wp](wp.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [Big Step](../big-step/big-step.md)
 
 ## Sources
 

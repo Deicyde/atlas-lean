@@ -13,7 +13,7 @@ this is the check used to relate elimination positions to Grundy values, with no
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus Elimination Order](josephus-elimination-order.md)
 
 ## Sources
 

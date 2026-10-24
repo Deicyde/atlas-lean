@@ -12,7 +12,7 @@ With `M_7 = 4` and `M_{k+1} = M_k (1 + 9 (k+1)^{1.59} / 2^k)` for `k ≥ 7`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block Length](gijswijt-block-length.md)
 
 ## Sources
 

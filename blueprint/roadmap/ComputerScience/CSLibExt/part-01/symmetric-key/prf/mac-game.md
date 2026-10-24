@@ -12,7 +12,13 @@ The existential-forgery experiment under an adaptive chosen-message attack for t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+
+## Proof depends on
+
+- [Mac Wins](mac-wins.md)
+- [Queries](queries.md)
+- [Run](run.md)
 
 ## Sources
 

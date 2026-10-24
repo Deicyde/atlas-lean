@@ -14,6 +14,10 @@ A sentential form whose nonterminals each derive a terminal word derives a termi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Derives append](../../../languages/context-free/part-01/basic/derives-append.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.ContextFree](../../../../../../sources/v2/CSLibExt.md)

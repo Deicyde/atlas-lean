@@ -11,7 +11,7 @@ lean: MetaMathlibExt.lipSubring_isDomain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

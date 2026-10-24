@@ -11,7 +11,11 @@ The weights after a sequence of rounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+
+## Proof depends on
+
+- [Update](update.md)
 
 ## Sources
 

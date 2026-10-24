@@ -12,7 +12,7 @@ positive real number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diff Basis Number](diff-basis-number.md)
 
 ## Sources
 

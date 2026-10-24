@@ -13,7 +13,8 @@ Degree bound mod `p^a`: for Laurent polynomials `P̃` and `Q₀` over `ℤ/p^a�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Cartier](laurent-cartier.md)
+- [Laurent Deg](laurent-deg.md)
 
 ## Sources
 

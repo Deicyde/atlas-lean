@@ -14,6 +14,10 @@ A machine with finitely many labels is supported by all of them.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Supports Stmt univ](supports-stmt-univ.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Translation.TM2ToTM0](../../../../../../sources/v2/MathlibExt.md)

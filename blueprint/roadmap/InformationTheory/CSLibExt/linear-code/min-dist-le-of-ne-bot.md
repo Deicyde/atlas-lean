@@ -13,7 +13,13 @@ dimension `k` has minimum distance at most `n - k + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+- [Min Dist](min-dist.md)
+
+## Proof depends on
+
+- [Finrank add le of le min Dist](finrank-add-le-of-le-min-dist.md)
+- [Min Dist le length](min-dist-le-length.md)
 
 ## Sources
 

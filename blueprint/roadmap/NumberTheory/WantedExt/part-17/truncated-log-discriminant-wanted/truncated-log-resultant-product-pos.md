@@ -11,7 +11,7 @@ lean: MetaMathlibExt.truncatedLogResultantProduct_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Resultant Product](truncated-log-resultant-product.md)
 
 ## Sources
 

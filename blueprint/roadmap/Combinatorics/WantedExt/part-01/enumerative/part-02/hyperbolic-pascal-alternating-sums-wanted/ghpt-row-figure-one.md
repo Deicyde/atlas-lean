@@ -13,7 +13,7 @@ Rows `3` and `4` of Figure 1 (`q = 5`, `αₙ = 3n`, `βₙ = 3ⁿ`): `9, 12, 6,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ghpt Row](ghpt-row.md)
 
 ## Sources
 

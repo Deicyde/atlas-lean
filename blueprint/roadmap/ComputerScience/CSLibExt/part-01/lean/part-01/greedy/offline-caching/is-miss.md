@@ -11,7 +11,7 @@ Whether an event is a miss.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
 
 ## Sources
 

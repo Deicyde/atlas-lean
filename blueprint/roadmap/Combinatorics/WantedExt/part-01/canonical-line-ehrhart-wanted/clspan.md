@@ -14,6 +14,10 @@ lying on the canonical line; an interval of `CL` when nonempty.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Canonical Line](canonical-line.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ Small values: `Q^{(3)}_3 = 16` and `Q^{(3)}_6 = 260`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Pell Lucas](k-pell-lucas.md)
 
 ## Sources
 

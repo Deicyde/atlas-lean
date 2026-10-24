@@ -13,7 +13,8 @@ Lemma 4.4: for `y = ±1`, positive `n, p, q, x` and `k ≥ 3` with `Σ_{j=1}^k j
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

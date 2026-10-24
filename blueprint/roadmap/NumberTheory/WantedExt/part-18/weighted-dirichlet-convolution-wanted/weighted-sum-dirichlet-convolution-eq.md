@@ -17,7 +17,7 @@ Dirichlet divisor problem is omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Completely Multiplicative](../../../MathlibExt/part-01/arithmetic-function/part-01/completely-multiplicative/is-completely-multiplicative.md)
 
 ## Sources
 

@@ -18,7 +18,8 @@ restated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Time](bridge-time.md)
+- [Star Time](star-time.md)
 
 ## Sources
 

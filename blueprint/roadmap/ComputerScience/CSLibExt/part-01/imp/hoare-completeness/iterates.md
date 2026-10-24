@@ -13,7 +13,9 @@ executions of the body.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

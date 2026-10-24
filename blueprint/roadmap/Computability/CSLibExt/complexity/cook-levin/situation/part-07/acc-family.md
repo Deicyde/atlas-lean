@@ -12,7 +12,14 @@ acceptance is read, row `T` only.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [CNF](../../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Acc Cell](acc-cell.md)
+- [Acc Code](acc-code.md)
+- [Clause](../../../dense-sat/clause.md)
 
 ## Sources
 

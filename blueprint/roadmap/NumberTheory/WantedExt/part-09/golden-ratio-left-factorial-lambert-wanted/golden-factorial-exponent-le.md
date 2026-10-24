@@ -12,7 +12,7 @@ Minimality of `α n`: every positive `m` with `n! ≤ φ ^ m` satisfies `α n �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Golden Factorial Exponent](golden-factorial-exponent.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ matrix `B_k(P)` has rank `1` with at least one of its first two columns non-zero
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Valuation Distinct Tuples](valuation-distinct-tuples.md)
+- [Valuation Row](valuation-row.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ValuationOnePointsWanted](../../../../../sources/v2/WantedExt.md)

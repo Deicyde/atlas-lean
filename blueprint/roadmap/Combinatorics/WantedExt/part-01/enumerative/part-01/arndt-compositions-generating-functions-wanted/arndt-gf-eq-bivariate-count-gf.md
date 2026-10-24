@@ -12,7 +12,9 @@ The Arndt generating function `arndtGF S` is `bivariateCountGF` of the Arndt cou
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
+- [Arndt GF](../arndt-compositions-wanted/arndt-gf.md)
+- [Bivariate Count GF](bivariate-count-gf.md)
 
 ## Sources
 

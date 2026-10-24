@@ -19,6 +19,12 @@ taken here as a quantified family `t`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Quasi Arithmetical Compact Set](is-quasi-arithmetical-compact-set.md)
+- [Self Similar Layer](self-similar-layer.md)
+- [Stability Gauge](stability-gauge.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.ArithmeticalSelfSimilarCompactSetWanted](../../../../../sources/v2/WantedExt.md)

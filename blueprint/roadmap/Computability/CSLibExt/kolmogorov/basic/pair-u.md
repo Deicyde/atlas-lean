@@ -14,6 +14,10 @@ and the rest describe.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [The universal description method](u.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Kolmogorov.Basic](../../../../../sources/v2/CSLibExt.md)

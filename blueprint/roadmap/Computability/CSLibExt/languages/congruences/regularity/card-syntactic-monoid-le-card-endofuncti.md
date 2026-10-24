@@ -12,7 +12,14 @@ A coarser numerical bound uses all endofunctions on the state space.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+
+## Proof depends on
+
+- [State Transformation](../syntactic/state-transformation.md)
+- [Transition Monoid](../syntactic/transition-monoid.md)
+- [Card syntactic Monoid le card transition Monoid](card-syntactic-monoid-le-card-transition.md)
+- [State Transformation Equiv](../syntactic/state-transformation-equiv.md)
 
 ## Sources
 

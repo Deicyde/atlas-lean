@@ -12,7 +12,7 @@ termination of the definition `metaAutomaticOne`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic One](meta-automatic-one.md)
 
 ## Sources
 

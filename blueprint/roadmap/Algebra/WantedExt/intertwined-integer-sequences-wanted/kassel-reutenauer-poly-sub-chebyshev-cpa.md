@@ -13,7 +13,8 @@ Approximation theorem: for `n ≥ 2`, `P̄_n(X) - F_{n-1}(X)` has degree
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
 
 ## Sources
 

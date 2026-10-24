@@ -15,6 +15,10 @@ edge of the mother graph, moves state `c₁` to state `c₂` (both `< n`) when
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.PermutipleStringsWanted](../../../../../../sources/v2/WantedExt.md)

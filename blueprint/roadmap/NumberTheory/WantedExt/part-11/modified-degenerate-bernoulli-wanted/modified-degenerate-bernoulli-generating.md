@@ -14,7 +14,7 @@ The paper's generating function: with `c = log (1+λ) / λ ≠ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
 
 ## Sources
 

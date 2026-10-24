@@ -12,7 +12,7 @@ A singleton is not an MSTD set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](is-mstdset.md)
 
 ## Sources
 

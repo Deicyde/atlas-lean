@@ -14,7 +14,8 @@ splits uniquely as `g * h` with `g ∈ U_M`, `h ∈ U_A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Antimultiplicative](is-antimultiplicative.md)
+- [Rearick Log](../../../../MathlibExt/part-10/rearick-logarithm/rearick-log.md)
 
 ## Sources
 

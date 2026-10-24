@@ -12,7 +12,7 @@ lean: MetaMathlibExt.gcdTermSeq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Term Seq](gcd-term-seq.md)
 
 ## Sources
 

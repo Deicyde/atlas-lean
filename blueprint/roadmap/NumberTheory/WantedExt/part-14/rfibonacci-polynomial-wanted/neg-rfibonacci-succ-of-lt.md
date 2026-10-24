@@ -12,7 +12,7 @@ lean: MetaMathlibExt.negRFibonacci_succ_of_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RFibonacci](neg-rfibonacci.md)
 
 ## Sources
 

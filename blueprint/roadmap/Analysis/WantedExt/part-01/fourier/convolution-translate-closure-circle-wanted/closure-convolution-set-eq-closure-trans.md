@@ -21,7 +21,7 @@ Show that $\overline{M_f} = \overline{B_f}$, where the overlines denote the $L^1
 
 ## Depends on
 
-This node has no prerequisites.
+- [T](t.md)
 
 ## Sources
 

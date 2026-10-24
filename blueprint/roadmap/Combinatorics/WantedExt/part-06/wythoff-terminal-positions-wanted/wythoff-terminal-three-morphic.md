@@ -15,7 +15,9 @@ iterates `morphIterate f n [0]`; its existence is part of the statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Omega Limit](../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-omega-limit.md)
+- [Wythoff Mex A](wythoff-mex-a.md)
+- [Wythoff Mex B](wythoff-mex-b.md)
 
 ## Sources
 

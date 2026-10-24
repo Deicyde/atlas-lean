@@ -14,7 +14,7 @@ divisor sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ Counters at the start of an `(i, k)` block.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [CK](ck.md)
 
 ## Sources
 

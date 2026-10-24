@@ -12,7 +12,12 @@ lean: MetaMathlibExt.campbellF_of_mem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Campbell F](campbell-f.md)
+
+## Proof depends on
+
+- [Campbell H2](campbell-h2.md)
+- [Campbell H3](campbell-h3.md)
 
 ## Sources
 

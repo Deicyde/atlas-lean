@@ -14,7 +14,8 @@ singleton block, written with the formulas of Proposition 24:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lonely Singles Count](lonely-singles-count.md)
+- [Zero Extended Choose](zero-extended-choose.md)
 
 ## Sources
 

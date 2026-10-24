@@ -13,6 +13,10 @@ lean: MetaMathlibExt.knottExpansionCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Knott Expansions](knott-expansions.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.BasePhiRepresentationsWanted](../../../../../../sources/v2/WantedExt.md)

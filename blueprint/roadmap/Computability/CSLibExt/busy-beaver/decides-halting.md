@@ -12,7 +12,13 @@ machine it proves its halting sentence or its non-halting sentence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal Theory](formal-theory.md)
+
+## Proof depends on
+
+- [Machine](machine.md)
+- [Halts Sentence](halts-sentence.md)
+- [Not Halts Sentence](not-halts-sentence.md)
 
 ## Sources
 

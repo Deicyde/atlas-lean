@@ -12,7 +12,7 @@ lean: MetaMathlibExt.gijswijtPrefix_two_eight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Prefix](gijswijt-prefix.md)
 
 ## Sources
 

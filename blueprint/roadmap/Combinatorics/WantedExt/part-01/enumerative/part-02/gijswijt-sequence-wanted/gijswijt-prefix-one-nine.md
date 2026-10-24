@@ -12,7 +12,7 @@ Gijswijt's sequence starts `1, 1, 2, 1, 1, 2, 2, 2, 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Prefix](gijswijt-prefix.md)
 
 ## Sources
 

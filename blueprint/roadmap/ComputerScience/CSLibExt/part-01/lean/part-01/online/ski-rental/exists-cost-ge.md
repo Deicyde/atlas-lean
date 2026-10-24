@@ -13,7 +13,9 @@ some season, `(2 B - 1) * opt ≤ B * cost`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strategy](strategy.md)
+- [Cost](cost.md)
+- [Opt](opt.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Barrese, Loehr, Remmel and Sagan: for any Ferrers board and `m ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [M Falling Factorial](m-falling-factorial.md)
+- [Weighted File Number](weighted-file-number.md)
 
 ## Sources
 

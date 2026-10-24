@@ -16,7 +16,8 @@ included.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Class](diagonal-class.md)
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

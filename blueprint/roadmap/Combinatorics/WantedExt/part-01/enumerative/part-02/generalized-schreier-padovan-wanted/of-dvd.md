@@ -11,7 +11,7 @@ lean: MetaMathlibExt.SatisfiesPoly.of_dvd
 
 ## Depends on
 
-This node has no prerequisites.
+- [Satisfies Poly](satisfies-poly.md)
 
 ## Sources
 

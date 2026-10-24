@@ -11,7 +11,7 @@ If `p ∤ ct[P^{n₀}]` for some `n₀ > 0`, then `ct[P^n Q] mod p` is recurrent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Recurrent Seq](is-recurrent-seq.md)
 
 ## Sources
 

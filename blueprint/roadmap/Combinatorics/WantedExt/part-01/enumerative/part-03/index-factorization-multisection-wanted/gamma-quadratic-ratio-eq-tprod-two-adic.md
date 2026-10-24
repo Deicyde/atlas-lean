@@ -23,7 +23,7 @@ integer roots (e.g. `m = -3` for `a = 5/4`, `b = -3/2`) are allowed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Quadratic Ratio](gamma-quadratic-ratio.md)
 
 ## Sources
 

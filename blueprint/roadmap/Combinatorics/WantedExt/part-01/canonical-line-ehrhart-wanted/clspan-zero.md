@@ -12,7 +12,11 @@ The zero polynomial has empty CL-span (its root multiset is empty).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clspan](clspan.md)
+
+## Proof depends on
+
+- [Canonical Line](canonical-line.md)
 
 ## Sources
 

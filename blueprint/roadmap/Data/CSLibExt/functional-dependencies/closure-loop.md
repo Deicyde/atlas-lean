@@ -11,7 +11,11 @@ Repeat `closureStep` until nothing changes, for at most `n` rounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+
+## Proof depends on
+
+- [Closure Step](closure-step.md)
 
 ## Sources
 

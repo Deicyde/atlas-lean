@@ -11,7 +11,11 @@ A policy greedy with respect to `V`: in each state, an action of largest value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+
+## Proof depends on
+
+- [Q Value](q-value.md)
 
 ## Sources
 

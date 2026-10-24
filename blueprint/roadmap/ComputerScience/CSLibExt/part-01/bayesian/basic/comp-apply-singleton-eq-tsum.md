@@ -14,6 +14,10 @@ The evidence of `x` is the prior-weighted sum of its likelihoods.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Comp apply singleton](comp-apply-singleton.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Bayesian.Basic](../../../../../../sources/v2/CSLibExt.md)

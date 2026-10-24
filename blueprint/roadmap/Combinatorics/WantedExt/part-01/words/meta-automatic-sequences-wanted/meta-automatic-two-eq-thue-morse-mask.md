@@ -14,7 +14,8 @@ hypothesis equation, sums run over positions `≤ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic Two](meta-automatic-two.md)
+- [Thue Morse](../../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources
 

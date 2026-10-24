@@ -12,7 +12,11 @@ Solutions of the ridge normal equations minimize the ridge objective (for `Î» â‰
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ridge](ridge.md)
+
+## Proof depends on
+
+- [Ridge eq of normal](ridge-eq-of-normal.md)
 
 ## Sources
 

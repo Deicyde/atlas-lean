@@ -11,7 +11,7 @@ Ramanujan's congruence `τ(7n) ≡ 0 (mod 7)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

@@ -16,7 +16,9 @@ of `L` (forced by `lcm(a, b) = L`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
+- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
+- [Projective Order Two](projective-order-two.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The least model candidate: true exactly on the forward-chaining closure of `∅`
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Close](close.md)
 
 ## Sources
 

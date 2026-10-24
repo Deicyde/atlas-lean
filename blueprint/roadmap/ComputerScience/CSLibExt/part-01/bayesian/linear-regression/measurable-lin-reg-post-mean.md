@@ -29,7 +29,7 @@ instance {σ2 : ℝ≥0} (x : Fin n → ℝ) : IsMarkovKernel (linRegLikelihood 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lin Reg Post Mean](lin-reg-post-mean.md)
 
 ## Sources
 

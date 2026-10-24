@@ -12,7 +12,7 @@ The extension vanishes at `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Additive Of Prime Values](additive-of-prime-values.md)
 
 ## Sources
 

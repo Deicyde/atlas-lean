@@ -13,6 +13,10 @@ A DFA is accessible when every state is reachable.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reachable State](reachable-state.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.Minimality](../../../../../../sources/v2/CSLibExt.md)

@@ -11,7 +11,7 @@ For `x ≥ 4`, `H(x) < 2 log x / (1 + 6/(π² x))`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Harmonic Extension](harmonic-extension.md)
 
 ## Sources
 

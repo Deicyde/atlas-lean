@@ -13,7 +13,9 @@ Recursive structure theorem, part I: for `n ≥ 1` and `0 ≤ k ≤ L_{2n-1}`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bergman Expansion](is-bergman-expansion.md)
+- [Base Phi Value](base-phi-value.md)
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

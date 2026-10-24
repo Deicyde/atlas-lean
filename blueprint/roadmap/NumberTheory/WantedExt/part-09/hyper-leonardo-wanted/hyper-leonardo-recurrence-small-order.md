@@ -14,7 +14,7 @@ with `Le^{(2)}_0 = 1`, `Le^{(2)}_1 = 3`, all for `n ≥ 2` (written with `n + 2`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Sampling the full finite set agrees with sampling its ambient finite type.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Finset](uniform-finset.md)
+- [Uniform Fintype](uniform-fintype.md)
 
 ## Sources
 

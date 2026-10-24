@@ -12,7 +12,7 @@ Entries of `J(Z(x), A(x))`: `J_{n,0} = z_n` and `J_{n,1} = a_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riordan Coeff Matrix](riordan-coeff-matrix.md)
 
 ## Sources
 

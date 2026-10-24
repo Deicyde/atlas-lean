@@ -17,7 +17,9 @@ family of such an `x'` obtained from integers `M, N, k` with `|M| ≤ C`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is In Second Order Family](is-in-second-order-family.md)
+- [Second Order Bi Seq](second-order-bi-seq.md)
+- [Second Order Gen Value](second-order-gen-value.md)
 
 ## Sources
 

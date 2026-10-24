@@ -12,7 +12,14 @@ After the drain only the output stack survives.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](../accept/ck.md)
+- [HK](../assembly/hk.md)
+- [CK](../family/ck.md)
+- [CK](../init-family/ck.md)
+- [Dks](dks.md)
+- [FK](../precompute/fk.md)
+- [PS](../precompute/ps.md)
+- [CK](../shift/ck.md)
 
 ## Sources
 

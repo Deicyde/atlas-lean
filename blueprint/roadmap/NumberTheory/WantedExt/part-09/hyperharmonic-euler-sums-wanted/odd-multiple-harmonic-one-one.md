@@ -12,7 +12,7 @@ lean: MetaMathlibExt.oddMultipleHarmonic_one_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
 
 ## Sources
 

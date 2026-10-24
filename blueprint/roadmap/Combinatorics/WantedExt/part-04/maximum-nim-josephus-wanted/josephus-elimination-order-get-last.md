@@ -15,7 +15,12 @@ relaxed to `k ≥ 1`; there is no other deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus](../../../MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus Elimination Order](josephus-elimination-order.md)
+
+## Proof depends on
+
+- [Josephus Elimination Order Aux](josephus-elimination-order-aux.md)
 
 ## Sources
 

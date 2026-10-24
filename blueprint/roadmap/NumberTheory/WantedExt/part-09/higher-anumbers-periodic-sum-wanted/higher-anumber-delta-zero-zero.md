@@ -14,7 +14,11 @@ Definition of `δ₀` (`δ₀(0) = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher ANumber Delta Zero](higher-anumber-delta-zero.md)
+
+## Proof depends on
+
+- [Higher ANumber Delta](higher-anumber-delta.md)
 
 ## Sources
 

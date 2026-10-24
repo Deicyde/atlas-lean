@@ -12,7 +12,7 @@ lean: MetaMathlibExt.fundInterval_of_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fund Interval](fund-interval.md)
 
 ## Sources
 

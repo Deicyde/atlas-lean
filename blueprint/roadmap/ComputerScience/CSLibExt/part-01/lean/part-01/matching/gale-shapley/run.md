@@ -11,7 +11,12 @@ Run deferred acceptance for at most `fuel` proposals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Chooser](chooser.md)
+- [Propose](propose.md)
 
 ## Sources
 

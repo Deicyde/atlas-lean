@@ -20,7 +20,7 @@ dividing `ξ`; `κ` is indexed by primes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Indicator](b-free-indicator.md)
 
 ## Sources
 

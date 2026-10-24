@@ -11,7 +11,10 @@ Lemma 3: `S(n) (V(n) - I_n) = E(n) Q^[1](n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling Matrix2](../stirling-matrix-wanted/stirling-matrix2.md)
+- [Shifted Vandermonde Matrix](shifted-vandermonde-matrix.md)
+- [Stirling QMatrix](stirling-qmatrix.md)
+- [Stirling VMatrix](stirling-vmatrix.md)
 
 ## Sources
 

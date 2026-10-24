@@ -11,7 +11,8 @@ Component labels in the reduction host: `done` starts the cleanup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HLab](hlab.md)
 
 ## Sources
 

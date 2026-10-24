@@ -15,6 +15,11 @@ An `(n, b)`-permutiple string: a member of `L` which produces a permutiple, i.e.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Permutiple](../permutiple-wanted/is-permutiple.md)
+- [Hoey Sloane Language](hoey-sloane-language.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.PermutipleStringsWanted](../../../../../../sources/v2/WantedExt.md)

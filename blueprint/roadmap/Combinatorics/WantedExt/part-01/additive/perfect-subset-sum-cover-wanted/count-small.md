@@ -13,7 +13,14 @@ Small values: `C(ℤ₂) = 1`, `C(ℤ₄) = 2` (the covers `{1, 2}` and `{2, 3}`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Count](count.md)
+
+## Proof depends on
+
+- [Is Perfect Cover](is-perfect-cover.md)
+- [Is Perfect MCover](is-perfect-mcover.md)
+- [Count eq card filter](count-eq-card-filter.md)
+- [Cover Count](cover-count.md)
 
 ## Sources
 

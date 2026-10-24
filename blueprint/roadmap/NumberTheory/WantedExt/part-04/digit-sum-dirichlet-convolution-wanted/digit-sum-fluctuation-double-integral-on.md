@@ -12,7 +12,11 @@ lean: MetaMathlibExt.digitSumFluctuationDoubleIntegral_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Sum Fluctuation Double Integral](digit-sum-fluctuation-double-integral.md)
+
+## Proof depends on
+
+- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
 
 ## Sources
 

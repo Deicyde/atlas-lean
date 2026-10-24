@@ -12,7 +12,11 @@ The complement of a decidable predicate is decidable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape Decidable](../classes/single-tape-decidable.md)
+
+## Proof depends on
+
+- [Single-tape decidability is Mathlib's `ComputablePred`](single-tape-decidable-iff-computable-pre.md)
 
 ## Sources
 

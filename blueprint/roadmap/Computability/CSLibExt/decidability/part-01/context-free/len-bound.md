@@ -11,7 +11,7 @@ A bound on the lengths of the right-hand sides, at least `2`: the largest length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ diagonal `Ψ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Char Fun map to Euclidean Lin](char-fun-map-to-euclidean-lin.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.ProbabilisticPCA](../../../../../../sources/v2/CSLibExt.md)

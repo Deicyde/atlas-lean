@@ -15,6 +15,12 @@ carries a measure in von Neumann's sense.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Von Neumann Measure](is-von-neumann-measure.md)
+- [Satisfies Countable Chain Condition](satisfies-countable-chain-condition.md)
+- [Satisfies Generalized Distributivity](satisfies-generalized-distributivity.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.MeasureTheory.ScottishBook163Wanted](../../../../sources/v2/WantedExt.md)

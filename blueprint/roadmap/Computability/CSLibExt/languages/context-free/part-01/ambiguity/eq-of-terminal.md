@@ -12,7 +12,7 @@ From a word of terminals, the only leftmost derivation is the empty one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Left Derivation](left-derivation.md)
 
 ## Sources
 

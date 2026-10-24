@@ -12,7 +12,7 @@ lean: MetaMathlibExt.dedekindZetaCoeff_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dedekind Zeta Coeff](dedekind-zeta-coeff.md)
 
 ## Sources
 

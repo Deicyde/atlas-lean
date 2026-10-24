@@ -11,7 +11,12 @@ Start of the clauses of rows `< y`, then the at-least-one clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [GL](gl.md)
+
+## Proof depends on
+
+- [CL](cl.md)
+- [Pr](pr.md)
 
 ## Sources
 

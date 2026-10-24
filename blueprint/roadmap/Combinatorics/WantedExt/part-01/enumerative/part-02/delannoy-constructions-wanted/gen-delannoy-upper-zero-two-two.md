@@ -12,7 +12,7 @@ Table value `D^0(2, 2) = 13`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Delannoy Upper](gen-delannoy-upper.md)
 
 ## Sources
 

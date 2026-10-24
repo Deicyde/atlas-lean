@@ -12,7 +12,7 @@ The `k × k` matrix `B_k = (log η_j⁽ⁱ⁾)_{i, j ≤ k}`, `η_j⁽ⁱ⁾ = �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Split Thue Recurrence Family](is-split-thue-recurrence-family.md)
 
 ## Sources
 

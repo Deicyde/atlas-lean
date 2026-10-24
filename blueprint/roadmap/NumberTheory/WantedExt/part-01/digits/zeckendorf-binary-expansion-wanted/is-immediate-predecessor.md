@@ -14,6 +14,10 @@ that is `<_a ν`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Asc Lex LT](asc-lex-lt.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

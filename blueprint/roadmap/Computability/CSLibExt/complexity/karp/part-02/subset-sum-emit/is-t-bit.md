@@ -15,7 +15,8 @@ def start : Lab := .rdK
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is T](is-t.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

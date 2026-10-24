@@ -13,7 +13,9 @@ Theorem 1.2: for `gcd(m n, b) = 1`, `π_U(lcm(m, n)) = lcm(π_U(m), π_U(n))` an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas UPeriod](lucas-uperiod.md)
+- [Lucas URestricted Period](lucas-urestricted-period.md)
 
 ## Sources
 

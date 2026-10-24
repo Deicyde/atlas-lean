@@ -14,6 +14,10 @@ The counting function `z(x)` of Section 3: the number of natural numbers `n < x`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zeckendorf Eval](zeckendorf-eval.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

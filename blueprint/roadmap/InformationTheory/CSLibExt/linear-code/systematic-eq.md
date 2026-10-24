@@ -12,7 +12,15 @@ The **systematic pair** `G = [I | A]` and `H = [-Aᵀ | I]` present the same cod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+- [Of Generator](of-generator.md)
+- [Of Parity Check](of-parity-check.md)
+
+## Proof depends on
+
+- [Encode](encode.md)
+- [Encode from Cols one inl](encode-from-cols-one-inl.md)
+- [Generator/parity-check duality](of-generator-eq-of-parity-check-iff.md)
 
 ## Sources
 

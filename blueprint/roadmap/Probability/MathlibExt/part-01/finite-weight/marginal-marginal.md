@@ -14,7 +14,11 @@ values of the variables outside `W`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marginal](marginal.md)
+
+## Proof depends on
+
+- [Card filter agree](card-filter-agree.md)
 
 ## Sources
 

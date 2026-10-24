@@ -12,7 +12,12 @@ lean: MetaMathlibExt.PerfectSubsetSumCover.isPerfectCover_zmod_four
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Cover](is-perfect-cover.md)
+
+## Proof depends on
+
+- [Is Perfect MCover](is-perfect-mcover.md)
+- [Cover Count](cover-count.md)
 
 ## Sources
 

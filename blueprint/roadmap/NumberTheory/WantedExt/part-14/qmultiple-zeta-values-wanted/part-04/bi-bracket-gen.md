@@ -15,6 +15,10 @@ in the variables `Xⱼ = Sum.inl j`, `Yⱼ = Sum.inr j` over `ℚ⟦q⟧`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bi Bracket](bi-bracket.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,9 @@ For `1 ≤ a < n` coprime with `n / a = [q_0, q_1, …, q_m]`, `m ≥ 2`, and `u
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Vec](convergent-vec.md)
+- [Lattice Points](lattice-points.md)
+- [Std Clean Parallelogram](std-clean-parallelogram.md)
 
 ## Sources
 

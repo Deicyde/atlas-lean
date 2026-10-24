@@ -12,7 +12,13 @@ A join node flattens to the flattening of its left child followed by that of its
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [To List Naive](to-list-naive.md)
+- [To List eq to List Naive](to-list-eq-to-list-naive.md)
 
 ## Sources
 

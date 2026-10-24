@@ -11,7 +11,7 @@ Bridge: `H(n) = H_n` for natural `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Harmonic Extension](harmonic-extension.md)
 
 ## Sources
 

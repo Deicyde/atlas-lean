@@ -12,7 +12,13 @@ The weight of expert `i` is multiplied by `β` at each of its mistakes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+- [Expert Mistakes](expert-mistakes.md)
+- [Weights](weights.md)
+
+## Proof depends on
+
+- [Update](update.md)
 
 ## Sources
 

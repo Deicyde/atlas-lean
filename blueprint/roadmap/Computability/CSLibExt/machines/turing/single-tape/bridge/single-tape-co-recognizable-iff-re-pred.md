@@ -12,7 +12,11 @@ Single-tape co-recognizability is `REPred` of the complement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape Co Recognizable](../classes/single-tape-co-recognizable.md)
+
+## Proof depends on
+
+- [Single-tape recognizability is Mathlib's `REPred`](single-tape-recognizable-iff-re-pred.md)
 
 ## Sources
 

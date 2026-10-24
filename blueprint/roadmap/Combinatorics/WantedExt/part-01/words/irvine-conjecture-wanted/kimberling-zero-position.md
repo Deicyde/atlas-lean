@@ -13,6 +13,10 @@ lean: MetaMathlibExt.kimberlingZeroPosition
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kimberling Word](kimberling-word.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.IrvineConjectureWanted](../../../../../../sources/v2/WantedExt.md)

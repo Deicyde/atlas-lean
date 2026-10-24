@@ -12,7 +12,7 @@ The `n = 0` value: `centralBinomPowSum a r 0 = 0^r a_0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binom Pow Sum](central-binom-pow-sum.md)
 
 ## Sources
 

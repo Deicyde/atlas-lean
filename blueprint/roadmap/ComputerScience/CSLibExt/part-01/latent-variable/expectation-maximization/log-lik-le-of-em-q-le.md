@@ -13,7 +13,12 @@ likelihood.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Em Q](em-q.md)
+- [Log Lik](log-lik.md)
+
+## Proof depends on
+
+- [The EM inequality](em-q-sub-le-log-lik-sub.md)
 
 ## Sources
 

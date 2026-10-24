@@ -12,7 +12,11 @@ The coefficient of `q` in `ζ_q^SZ(1) = ∑_{m > 0} q^m / (1 - q^m)` is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz QMZV](sz-qmzv.md)
+
+## Proof depends on
+
+- [Sz QMZVPartial](sz-qmzvpartial.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ the defining clauses, built in linear time by `tseitinAcc`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Tseitin Acc](tseitin-acc.md)
 
 ## Sources
 

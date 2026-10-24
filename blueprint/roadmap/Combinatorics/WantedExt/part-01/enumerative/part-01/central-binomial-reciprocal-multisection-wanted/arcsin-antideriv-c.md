@@ -13,6 +13,10 @@ The paper's constant `C_l = -q_0/2` for `l ≥ 1`, and `C_0 = -4`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Arcsin Antideriv QCoeff](arcsin-antideriv-qcoeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CentralBinomialReciprocalMultisectionWanted](../../../../../../../sources/v2/WantedExt.md)

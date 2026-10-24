@@ -13,6 +13,10 @@ The public key `h = g ^ x` of the secret key `x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gpow](../diffie-hellman/gpow.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.PublicKey.ElGamal](../../../../../../sources/v2/CSLibExt.md)

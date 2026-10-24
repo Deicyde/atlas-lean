@@ -13,7 +13,7 @@ continuing an open run costs `k * gapExtend`; otherwise a fresh run costs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gap State](gap-state.md)
 
 ## Sources
 

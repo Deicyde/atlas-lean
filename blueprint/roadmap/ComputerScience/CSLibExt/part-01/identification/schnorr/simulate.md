@@ -13,6 +13,10 @@ The simulator's distribution, with uniform `r` and `s`; it uses only the public 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sim Transcript](sim-transcript.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.Identification.Schnorr](../../../../../../sources/v2/CSLibExt.md)

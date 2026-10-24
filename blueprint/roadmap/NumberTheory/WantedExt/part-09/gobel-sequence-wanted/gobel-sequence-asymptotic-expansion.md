@@ -15,7 +15,7 @@ expansion in the paper's sense: for every `R ≥ 0` the error after the terms
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

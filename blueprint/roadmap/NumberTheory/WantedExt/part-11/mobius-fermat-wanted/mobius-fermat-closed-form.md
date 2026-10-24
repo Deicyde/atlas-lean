@@ -13,7 +13,7 @@ Theorem 9 (closed form of `μ_M`): for `l = 3 ^ m₁ * 7 ^ m₂ * ∏ M_{n_j} ^ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Unit Function](fermat-unit-function.md)
 
 ## Sources
 

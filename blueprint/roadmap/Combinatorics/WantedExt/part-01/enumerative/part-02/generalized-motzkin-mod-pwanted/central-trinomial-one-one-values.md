@@ -12,7 +12,12 @@ The first five generalized central trinomial coefficients at `a = b = 1` are `1,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Trinomial](central-trinomial.md)
+
+## Proof depends on
+
+- [Trinomial Laurent](trinomial-laurent.md)
+- [Trinomial Laurent one one powers](trinomial-laurent-one-one-powers.md)
 
 ## Sources
 

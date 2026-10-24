@@ -18,6 +18,11 @@ counts (Theorem 3 with `t = 0`, Figure 1) require.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Poly Farey Series](poly-farey-series.md)
+- [Poly Frac](poly-frac.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.RationalFunctionFareyPathWanted](../../../../sources/v2/WantedExt.md)

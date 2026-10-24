@@ -11,7 +11,7 @@ Proposition 7: `𝓕_n = n log 2 + O(√n)` and `𝓕_n / n → log 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
 
 ## Sources
 

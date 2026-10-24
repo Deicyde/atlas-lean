@@ -14,7 +14,7 @@ does not depend on the choice of `T` (the paper's `μ̃_M (m₁, m₂, J)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Unit Function](fermat-unit-function.md)
 
 ## Sources
 

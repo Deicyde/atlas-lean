@@ -19,6 +19,10 @@ empty.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reduced](../../../../MathlibExt/part-02/quadratic-forms/is-gauss-reduced.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QuadraticForms.KroneckerFormSumsWanted](../../../../../../sources/v2/WantedExt.md)

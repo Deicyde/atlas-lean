@@ -13,7 +13,26 @@ The clause loop: from `start`, with the clauses' tokens `Cs.flatMap clRev` on `T
 
 ## Depends on
 
-This node has no prerequisites.
+- [DLab](dlab.md)
+- [K](k.md)
+- [Lookup Spec](lookup-spec.md)
+- [Stmt](stmt.md)
+- [Cl Rev](cl-rev.md)
+- [Prog](prog.md)
+- [Ent](../sat-verifier-spec/ent.md)
+- [Sym](../sat-verifier-spec/sym.md)
+- [Live Val](../sat-verifier-spec/live-val.md)
+- [Tbl Stk](../sat-verifier-spec/tbl-stk.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Lit Rev](lit-rev.md)
+- [Lits run](lits-run.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Single](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

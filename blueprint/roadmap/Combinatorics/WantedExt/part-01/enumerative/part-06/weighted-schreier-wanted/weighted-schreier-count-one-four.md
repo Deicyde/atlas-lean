@@ -12,7 +12,7 @@ lean: MetaMathlibExt.weightedSchreierCount_one_four
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Schreier Count](weighted-schreier-count.md)
 
 ## Sources
 

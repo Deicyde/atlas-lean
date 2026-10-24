@@ -12,7 +12,7 @@ lean: MetaMathlibExt.triangularLogCoeff_small
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Log Coeff](triangular-log-coeff.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For all `n ≥ 0`, `pond(27n+17) ≡ pond(3n+2) (mod 3)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pond Count](pond-count.md)
 
 ## Sources
 

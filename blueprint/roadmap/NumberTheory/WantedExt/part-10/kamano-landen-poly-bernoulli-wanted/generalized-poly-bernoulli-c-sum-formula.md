@@ -13,7 +13,9 @@ lean: MetaMathlibExt.generalizedPolyBernoulliC_sum_formula
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+- [Generalized Poly Bernoulli B](generalized-poly-bernoulli-b.md)
+- [Generalized Poly Bernoulli C](generalized-poly-bernoulli-c.md)
 
 ## Sources
 

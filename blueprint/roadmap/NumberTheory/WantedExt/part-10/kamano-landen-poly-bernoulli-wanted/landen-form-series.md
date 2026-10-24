@@ -14,6 +14,10 @@ matrix `g = (a b; c d) ∈ GL₂(ℝ)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Linear Fractional Pole Series](linear-fractional-pole-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.KamanoLandenPolyBernoulliWanted](../../../../../sources/v2/WantedExt.md)

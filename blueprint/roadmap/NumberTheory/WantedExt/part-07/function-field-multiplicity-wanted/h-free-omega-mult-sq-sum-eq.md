@@ -12,7 +12,9 @@ Unfolding `∑_P a_P^2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Free Omega Mult Sq Sum](h-free-omega-mult-sq-sum.md)
+- [Monic Irreducible](monic-irreducible.md)
+- [Poly Norm](poly-norm.md)
 
 ## Sources
 

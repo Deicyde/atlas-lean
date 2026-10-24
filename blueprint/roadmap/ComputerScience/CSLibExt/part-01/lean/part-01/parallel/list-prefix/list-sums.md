@@ -14,6 +14,10 @@ whole table (entry `v` is the suffix sum of node `v`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rounds Tab](rounds-tab.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Parallel.ListPrefix](../../../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,15 @@ The iterates of the decoded machine are those of the explicit simulation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Cfg](cfg.md)
+- [To TM0](to-tm0.md)
+- [Machine](machine.md)
+- [Step](step.md)
+
+## Proof depends on
+
+- [Step to TM0](step-to-tm0.md)
 
 ## Sources
 

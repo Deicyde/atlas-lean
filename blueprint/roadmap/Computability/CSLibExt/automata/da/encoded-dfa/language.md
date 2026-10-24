@@ -11,7 +11,11 @@ The language of an encoded DFA.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+
+## Proof depends on
+
+- [To DFA](to-dfa.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Subdividing the result of Example 3.2 at position `2` recovers the original stru
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coconut Subdivide](coconut-subdivide.md)
 
 ## Sources
 

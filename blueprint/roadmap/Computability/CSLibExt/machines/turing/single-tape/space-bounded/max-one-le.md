@@ -12,7 +12,7 @@ A space bound is at least the space of the input, `max 1 n` on inputs of length 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space Bounded By](space-bounded-by.md)
 
 ## Sources
 

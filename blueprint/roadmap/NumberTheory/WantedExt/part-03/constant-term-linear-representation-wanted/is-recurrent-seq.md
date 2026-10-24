@@ -13,6 +13,10 @@ A sequence is recurrent if every occurrence of a factor is followed by a later o
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seq Factor Occurs At](seq-factor-occurs-at.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ConstantTermLinearRepresentationWanted](../../../../../sources/v2/WantedExt.md)

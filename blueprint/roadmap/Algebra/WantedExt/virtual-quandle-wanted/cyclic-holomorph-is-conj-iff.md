@@ -13,7 +13,7 @@ if and only if `u = v` and `a, b` lie in one orbit of the multiplication action 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zmod Units Mul Aut](zmod-units-mul-aut.md)
 
 ## Sources
 

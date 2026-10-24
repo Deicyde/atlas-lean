@@ -12,7 +12,8 @@ A wire at level `l` depends on at most `2 ^ l` inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Influence](influence.md)
+- [Levels](levels.md)
 
 ## Sources
 

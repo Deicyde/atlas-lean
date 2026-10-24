@@ -15,6 +15,12 @@ prefixes. For `gap ≤ 0` this is the optimal local alignment score
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [List Max](list-max.md)
+- [Prefix Pairs](prefix-pairs.md)
+- [Sw Cell Score](sw-cell-score.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.SequenceAlignment](../../../../../../../../sources/v2/CSLibExt.md)

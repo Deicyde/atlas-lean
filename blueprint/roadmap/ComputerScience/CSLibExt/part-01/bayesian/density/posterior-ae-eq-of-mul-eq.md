@@ -17,6 +17,10 @@ observation `x` the posterior is `ν.withDensity (r x)`, and `c` is the density 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Comp Prod eq of mul eq](comp-prod-eq-of-mul-eq.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Bayesian.Density](../../../../../../sources/v2/CSLibExt.md)

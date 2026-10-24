@@ -13,6 +13,10 @@ The `n × n` matrix `𝖴_α(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Alpha Upper Entry](alpha-upper-entry.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PascalStirlingGeneralizationWanted](../../../../../../../sources/v2/WantedExt.md)

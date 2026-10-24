@@ -11,7 +11,7 @@ Replace the conditional distribution of variable `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ claim, the problem's headline statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Derivative At Every Point](has-derivative-at-every-point.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ decreasing order as `MultipleZeta.StrictDecreasingTuple k` (the summation domain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Decreasing Tuple](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/strict-decreasing-tuple.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Generic: an increasing indexed family of literals satisfies `Inc`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inc](inc.md)
 
 ## Sources
 

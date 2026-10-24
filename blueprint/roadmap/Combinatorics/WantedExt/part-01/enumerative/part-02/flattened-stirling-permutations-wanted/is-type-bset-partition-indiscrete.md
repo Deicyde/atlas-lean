@@ -13,7 +13,7 @@ block is the zero-block).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Type BSet Partition](is-type-bset-partition.md)
 
 ## Sources
 

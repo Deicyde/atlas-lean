@@ -48,7 +48,9 @@ theorem derives_of_top_eq : ∀ (A : List (Domino (Sym α))), (∀ c ∈ A, c �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](rule.md)
+- [Step](step.md)
+- [Symbols](symbols.md)
 
 ## Sources
 

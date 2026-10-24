@@ -13,7 +13,11 @@ over `{L, M, R}` occurs in it) iff its Stern–Brocot representation is (every f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Factor](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/is-factor.md)
+- [Mallows Letter](mallows-letter.md)
+- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Mallows Rep](mallows-rep.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
 
 ## Sources
 

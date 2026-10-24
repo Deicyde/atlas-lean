@@ -12,7 +12,7 @@ frequency in `T(X)` (the limit exists and is nonzero).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Throwback Sequence](throwback-sequence.md)
 
 ## Sources
 

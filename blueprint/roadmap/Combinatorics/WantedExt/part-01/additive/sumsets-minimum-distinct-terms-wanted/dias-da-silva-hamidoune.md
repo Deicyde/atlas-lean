@@ -12,7 +12,7 @@ Dias da Silva–Hamidoune: for a nonempty `A ⊆ ℤ_p` with `|A| = k` and `1 �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Sumset](../../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
 
 ## Sources
 

@@ -15,7 +15,8 @@ and let `S(p) = (a + 1, n) - p`. For `1 ≤ a < n` coprime and `0 ≤ i < m`: if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Vec](convergent-vec.md)
+- [Lattice Parallelogram](lattice-parallelogram.md)
 
 ## Sources
 

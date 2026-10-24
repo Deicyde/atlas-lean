@@ -13,6 +13,10 @@ Cost of one cell (one iteration of the `j` loop).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Clause B](clause-b.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.OneHot](../../../../../../sources/v2/CSLibExt.md)

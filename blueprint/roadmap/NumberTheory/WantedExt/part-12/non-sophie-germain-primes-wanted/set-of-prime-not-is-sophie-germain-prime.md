@@ -13,7 +13,7 @@ the Sophie Germain primes are the primes outside `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sophie Germain Prime](../../../MathlibExt/part-11/sophie-germain-prime/is-sophie-germain-prime.md)
 
 ## Sources
 

@@ -14,7 +14,16 @@ and the likelihood is positive, this ratio is the conditional state marginal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+- [Likelihood](../hidden-markov/likelihood.md)
+- [Smoothed](smoothed.md)
+- [State Marg](state-marg.md)
+
+## Proof depends on
+
+- [Backward](backward.md)
+- [Forward](../hidden-markov/forward.md)
+- [Forward-backward](state-marg-eq.md)
 
 ## Sources
 

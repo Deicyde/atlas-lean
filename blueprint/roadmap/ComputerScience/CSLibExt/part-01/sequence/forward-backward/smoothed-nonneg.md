@@ -13,7 +13,16 @@ a positive likelihood they form a distribution over states (`sum_smoothed`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+- [Nonneg](../hidden-markov/nonneg.md)
+- [Smoothed](smoothed.md)
+
+## Proof depends on
+
+- [Likelihood](../hidden-markov/likelihood.md)
+- [Path Prob](../hidden-markov/path-prob.md)
+- [Forward-backward smoothing is a joint-to-likelihood ratio](smoothed-eq.md)
+- [State Marg](state-marg.md)
 
 ## Sources
 

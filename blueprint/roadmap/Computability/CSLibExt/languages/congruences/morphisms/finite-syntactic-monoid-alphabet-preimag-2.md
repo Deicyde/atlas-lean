@@ -12,7 +12,13 @@ Syntactic finiteness is invariant under renaming the alphabet by an equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Alphabet Preimage](alphabet-preimage.md)
+
+## Proof depends on
+
+- [Is Regular alphabet Preimage equiv iff](is-regular-alphabet-preimage-equiv-iff.md)
+- [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources
 

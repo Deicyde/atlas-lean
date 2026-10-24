@@ -11,7 +11,7 @@ The ε-move relation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
 
 ## Sources
 

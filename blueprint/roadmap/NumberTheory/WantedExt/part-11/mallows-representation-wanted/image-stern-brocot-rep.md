@@ -12,7 +12,8 @@ sequences over `{L, R}` that are not eventually constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ The comparison of `a` with `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CI](ci.md)
+- [Lab](lab.md)
+- [Cout](cout.md)
 
 ## Sources
 

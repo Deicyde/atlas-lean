@@ -11,7 +11,7 @@ Top-indexed cell code of stack number `k`, depth `j` (`0` = ⊥).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
 
 ## Sources
 

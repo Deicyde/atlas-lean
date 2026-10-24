@@ -12,7 +12,13 @@ lean: MetaMathlibExt.hofCount_eq_card
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Count](hof-count.md)
+- [Hof Word](hof-word.md)
+
+## Proof depends on
+
+- [Hof Prefix](hof-prefix.md)
+- [Hof Prefix eq map](hof-prefix-eq-map.md)
 
 ## Sources
 

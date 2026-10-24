@@ -12,7 +12,12 @@ The first step of `J_0` is the origin: `ȳ_0 = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Staircase First Height](staircase-first-height.md)
+
+## Proof depends on
+
+- [Sector Staircase](sector-staircase.md)
+- [Zero mem sector Staircase zero](zero-mem-sector-staircase-zero.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ recent first), or `none` if some car cannot park.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Naples Spot](naples-spot.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KNaplesParkingWanted](../../../../../../../sources/v2/WantedExt.md)

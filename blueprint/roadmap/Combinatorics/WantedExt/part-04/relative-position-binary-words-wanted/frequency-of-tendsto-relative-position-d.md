@@ -13,7 +13,9 @@ and equals `0` if `L = ∞`, `1` if `L = -∞`, `1/2` if `L = 0`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Letter Count](letter-count.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

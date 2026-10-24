@@ -12,7 +12,12 @@ The empty pattern is contained in every set, so `opx(n, ∅, d) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
+
+## Proof depends on
+
+- [Contains Pattern D](contains-pattern-d.md)
+- [Contains Pattern D empty](contains-pattern-d-empty.md)
 
 ## Sources
 

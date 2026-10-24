@@ -14,7 +14,9 @@ block. `HasSum` is used so a divergent `tsum` cannot make the identity vacuous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordinary Moment Recurrence](ordinary-moment-recurrence.md)
+- [Digit Count](digit-count.md)
+- [Irwin Sum](irwin-sum.md)
 
 ## Sources
 

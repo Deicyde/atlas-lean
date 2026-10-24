@@ -11,7 +11,7 @@ An assignment within capacities of total cost at most `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Assignment Instance](generalized-assignment-instance.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ preferences that are `k`-Naples but not `(k - 1)`-Naples (used for `k ≥ 1`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Naples Parking Function](is-naples-parking-function.md)
+- [Naples Park](naples-park.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KNaplesParkingWanted](../../../../../../../sources/v2/WantedExt.md)

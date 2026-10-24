@@ -12,7 +12,8 @@ spot `j` are as many as those whose last car parks in spot `k` (one-based `j`, `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Metered Outcome](metered-outcome.md)
 
 ## Sources
 

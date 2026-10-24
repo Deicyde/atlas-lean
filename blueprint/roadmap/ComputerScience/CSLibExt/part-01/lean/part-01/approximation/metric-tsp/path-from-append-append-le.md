@@ -13,7 +13,12 @@ closed walk through `A` plus the closed walk through `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metric Cost](is-metric-cost.md)
+- [Path From](path-from.md)
+
+## Proof depends on
+
+- [Path From le add](path-from-le-add.md)
 
 ## Sources
 

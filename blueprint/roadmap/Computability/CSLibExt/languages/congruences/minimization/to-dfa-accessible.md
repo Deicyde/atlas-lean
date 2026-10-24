@@ -12,7 +12,12 @@ Mathlib's residual-language DFA is accessible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible](../minimality/accessible.md)
+
+## Proof depends on
+
+- [Reachable State](../minimality/reachable-state.md)
+- [To DFA eval val](to-dfa-eval-val.md)
 
 ## Sources
 

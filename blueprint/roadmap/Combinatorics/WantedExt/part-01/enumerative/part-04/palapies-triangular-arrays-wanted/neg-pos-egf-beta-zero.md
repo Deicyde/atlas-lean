@@ -19,7 +19,8 @@ needed: a zero divisor makes both sides `0` from that row on.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+- [Neg Pos](neg-pos.md)
 
 ## Sources
 

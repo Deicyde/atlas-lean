@@ -19,6 +19,10 @@ a limit along groups whose order tends to infinity, so they never read the junk 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sub Rep Count](sub-rep-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.GDifferenceBasesWanted](../../../../../sources/v2/WantedExt.md)

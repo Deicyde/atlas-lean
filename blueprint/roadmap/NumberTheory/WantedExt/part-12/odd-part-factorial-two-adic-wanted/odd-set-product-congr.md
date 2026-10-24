@@ -14,7 +14,7 @@ not truncate, while the product itself is the natural-number product over
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Below Two Pow](odd-below-two-pow.md)
 
 ## Sources
 

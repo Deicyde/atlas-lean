@@ -12,7 +12,8 @@ Derivations of the original grammar translate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ins Grammar](ins-grammar.md)
+- [Ins Symbol](ins-symbol.md)
 
 ## Sources
 

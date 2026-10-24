@@ -11,7 +11,7 @@ There are infinitely many trees on which the second player wins Snort.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Snort Second Player Wins](snort-second-player-wins.md)
 
 ## Sources
 

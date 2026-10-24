@@ -15,6 +15,12 @@ by `Fin k`, then exactly `k` elements have norm `2 ^ e`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Card repr of shape](card-repr-of-shape.md)
+- [Exists unit mul pow of norm two pow](exists-unit-mul-pow-of-norm-two-pow.md)
+- [Norm pow](norm-pow.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZsqrtdNormFactorization](../../../../../sources/v2/MathlibExt.md)

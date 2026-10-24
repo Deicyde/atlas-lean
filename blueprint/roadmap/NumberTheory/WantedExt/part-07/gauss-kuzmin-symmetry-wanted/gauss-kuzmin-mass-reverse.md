@@ -12,7 +12,7 @@ of `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
 
 ## Sources
 

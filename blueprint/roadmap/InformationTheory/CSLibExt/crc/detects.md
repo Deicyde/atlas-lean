@@ -15,7 +15,14 @@ burst of length 1.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Burst LE](is-burst-le.md)
+- [Encode](encode.md)
+
+## Proof depends on
+
+- [Detection](dvd-encode-add-iff.md)
+- [Single-symbol errors are detected](not-dvd-c-mul-x-pow.md)
+- [Bursts of length at most `deg g` are detected](not-dvd-of-is-burst-le.md)
 
 ## Sources
 

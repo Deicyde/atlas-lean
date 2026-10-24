@@ -11,7 +11,8 @@ lean: MetaMathlibExt.isOpposable_iff_exists_oppositionMatching
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Opposable](is-opposable.md)
+- [Is Opposition Matching](is-opposition-matching.md)
 
 ## Sources
 

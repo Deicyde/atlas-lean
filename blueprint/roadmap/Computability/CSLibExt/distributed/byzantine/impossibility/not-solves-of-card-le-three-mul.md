@@ -15,7 +15,14 @@ traitors for which IC1 or IC2 fails.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
+- [Solves](solves.md)
+
+## Proof depends on
+
+- [No protocol for three generals solves the Byzantine generals problem with one traitor](not-solves-three.md)
+- [Simulate](simulate.md)
+- [Solves simulate](solves-simulate.md)
 
 ## Sources
 

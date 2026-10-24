@@ -13,7 +13,11 @@ general `i` in round `r`. Loyal generals follow the protocol.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
+
+## Proof depends on
+
+- [Init State](init-state.md)
 
 ## Sources
 

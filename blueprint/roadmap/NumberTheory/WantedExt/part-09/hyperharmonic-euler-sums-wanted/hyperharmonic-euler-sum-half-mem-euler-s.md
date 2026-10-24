@@ -16,7 +16,9 @@ for `r ≤ p`, so `r < p` is used.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sum Period Algebra](euler-sum-period-algebra.md)
+- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
+- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The positions of the persons after a step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Star Move](star-move.md)
+
+## Proof depends on
+
+- [Dst](dst.md)
 
 ## Sources
 

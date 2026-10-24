@@ -13,7 +13,7 @@ the intervals of `F_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Generation](farey-generation.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ The defining recursion of normal play.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement First Player Wins](placement-first-player-wins.md)
+
+## Proof depends on
+
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
+- [Is P iff](../../MathlibExt/sprague-grundy/is-p-iff.md)
+- [Mem placement Game moves](mem-placement-game-moves.md)
+- [Placement Game](placement-game.md)
 
 ## Sources
 

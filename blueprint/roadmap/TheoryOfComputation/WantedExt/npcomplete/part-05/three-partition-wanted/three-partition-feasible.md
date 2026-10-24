@@ -11,7 +11,7 @@ A split into triples each summing to the target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Partition Instance](three-partition-instance.md)
 
 ## Sources
 

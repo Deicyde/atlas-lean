@@ -12,7 +12,13 @@ Round to nearest within a bounded format.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Float In](is-float-in.md)
+- [Round to nearest, ties to even](fl.md)
+
+## Proof depends on
+
+- [Is Float](is-float.md)
+- [Round to nearest](abs-fl-sub-le-of-is-float.md)
 
 ## Sources
 

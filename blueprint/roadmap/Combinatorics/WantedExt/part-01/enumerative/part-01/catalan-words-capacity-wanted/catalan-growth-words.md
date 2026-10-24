@@ -14,6 +14,10 @@ The set `𝒞_{m,j}` of words of length `m` over `[1, j]` ending in `j` (so with
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Words Ending In](words-ending-in.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CatalanWordsCapacityWanted](../../../../../../../sources/v2/WantedExt.md)

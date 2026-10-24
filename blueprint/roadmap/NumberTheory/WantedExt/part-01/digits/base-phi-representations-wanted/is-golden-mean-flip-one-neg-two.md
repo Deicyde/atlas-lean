@@ -12,7 +12,7 @@ One golden mean flip turns `10.01` into `1.11`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Golden Mean Flip](is-golden-mean-flip.md)
 
 ## Sources
 

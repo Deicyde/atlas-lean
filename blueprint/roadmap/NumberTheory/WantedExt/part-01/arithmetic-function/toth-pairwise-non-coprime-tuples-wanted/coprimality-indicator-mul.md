@@ -13,7 +13,7 @@ Lemma 4: `δ_G` is multiplicative as a function of `k` variables:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Indicator](coprimality-indicator.md)
 
 ## Sources
 

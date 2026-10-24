@@ -12,7 +12,7 @@ Reading `i ⊙ w` first moves to `η(b)[i]`, then reads `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Substitution Automaton](substitution-automaton.md)
 
 ## Sources
 

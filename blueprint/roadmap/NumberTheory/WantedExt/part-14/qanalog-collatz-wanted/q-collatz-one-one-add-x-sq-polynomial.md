@@ -12,7 +12,7 @@ one of the fixed points `0`, `1 + q`; and `T(x)` is a polynomial if and only if 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Collatz](q-collatz.md)
 
 ## Sources
 

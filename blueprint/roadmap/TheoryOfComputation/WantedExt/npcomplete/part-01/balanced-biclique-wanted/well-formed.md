@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced Biclique Instance](balanced-biclique-instance.md)
 
 ## Sources
 

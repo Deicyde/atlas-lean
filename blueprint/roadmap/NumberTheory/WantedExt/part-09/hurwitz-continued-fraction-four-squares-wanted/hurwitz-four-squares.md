@@ -14,7 +14,9 @@ legal `n` (with `n + 1` legal) such that `|Q_n| ≤ √w < |Q_{n+1}|`, and if `|
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hurwitz Legal](hurwitz-legal.md)
+- [Hurwitz P](hurwitz-p.md)
+- [Hurwitz Q](hurwitz-q.md)
 
 ## Sources
 

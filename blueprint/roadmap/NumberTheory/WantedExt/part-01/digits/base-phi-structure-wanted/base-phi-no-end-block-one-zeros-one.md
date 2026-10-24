@@ -11,7 +11,8 @@ For `m ≥ 2` no positive part `β⁺(N)` has end block `10^{2m}1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Digit Block](has-digit-block.md)
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
 
 ## Sources
 

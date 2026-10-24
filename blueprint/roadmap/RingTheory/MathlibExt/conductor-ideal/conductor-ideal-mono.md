@@ -13,7 +13,7 @@ The conductor ideal is monotone in the subalgebra.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conductor Ideal](conductor-ideal.md)
 
 ## Proof depends on
 

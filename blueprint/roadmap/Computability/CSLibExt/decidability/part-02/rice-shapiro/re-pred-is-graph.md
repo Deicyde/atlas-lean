@@ -12,7 +12,12 @@ Being the graph of a function is recognizable (indeed decidable).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Graph](is-graph.md)
+
+## Proof depends on
+
+- [Fin Fun](fin-fun.md)
+- [Forall mem](../../../../MathlibExt/re/forall-mem.md)
 
 ## Sources
 

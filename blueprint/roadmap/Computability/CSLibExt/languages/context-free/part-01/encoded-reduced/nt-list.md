@@ -12,7 +12,11 @@ right-hand-side nonterminals of the productions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Dedup B](../../../../decidability/part-01/primrec-list/dedup-b.md)
 
 ## Sources
 

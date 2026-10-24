@@ -14,7 +14,9 @@ leaf leaves one vertex with `d' = 0`, which is not an arithmetical structure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Coconut Smooth Leaf](coconut-smooth-leaf.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

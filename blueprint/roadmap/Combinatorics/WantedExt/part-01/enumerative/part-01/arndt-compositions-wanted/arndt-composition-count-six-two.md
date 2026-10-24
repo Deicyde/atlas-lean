@@ -12,7 +12,7 @@ The Arndt compositions of `6` with two parts are `(5,1)` and `(4,2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](arndt-composition-count.md)
 
 ## Sources
 

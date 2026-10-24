@@ -12,7 +12,11 @@ Every emitted run length fits in the source's 8-bit field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compress](compress.md)
+
+## Proof depends on
+
+- [Compress From le](compress-from-le.md)
 
 ## Sources
 

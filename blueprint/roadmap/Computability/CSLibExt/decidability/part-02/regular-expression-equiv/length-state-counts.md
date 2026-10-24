@@ -12,7 +12,12 @@ The pass computes one count per node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Counts](state-counts.md)
+- [Regex Node](../regular-expression/regex-node.md)
+
+## Proof depends on
+
+- [Step States](step-states.md)
 
 ## Sources
 

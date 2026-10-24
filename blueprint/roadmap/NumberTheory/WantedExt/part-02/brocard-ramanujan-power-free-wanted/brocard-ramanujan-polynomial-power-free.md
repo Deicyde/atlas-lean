@@ -17,7 +17,7 @@ the shape `x_1 ⋯ x_m P(x_1, …, x_m) ± 1`). Here
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Power Free](../../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources
 

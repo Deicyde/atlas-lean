@@ -27,7 +27,13 @@ end Enc
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../dense-sat/cnf.md)
+- [Clause](../../../dense-sat/clause.md)
+- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+
+## Proof depends on
+
+- [Clause Sat](../../../dense-sat/clause-sat.md)
 
 ## Sources
 

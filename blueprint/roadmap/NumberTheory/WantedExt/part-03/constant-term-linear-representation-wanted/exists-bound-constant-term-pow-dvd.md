@@ -12,7 +12,7 @@ Whether `p` divides some `ct[P^n]` can be decided on a prefix whose length depen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Deg](laurent-deg.md)
 
 ## Sources
 

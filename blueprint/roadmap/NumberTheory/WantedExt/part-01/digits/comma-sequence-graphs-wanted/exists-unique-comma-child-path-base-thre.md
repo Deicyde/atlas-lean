@@ -13,7 +13,7 @@ omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Comma Candidate](../../../../MathlibExt/part-04/comma-sequence/is-comma-candidate.md)
 
 ## Sources
 

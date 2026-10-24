@@ -12,7 +12,11 @@ Stack alphabets: the output stack holds bits, the others token symbols (counters
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+
+## Proof depends on
+
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

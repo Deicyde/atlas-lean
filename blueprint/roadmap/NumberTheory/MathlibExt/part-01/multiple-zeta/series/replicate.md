@@ -12,7 +12,7 @@ The index `{e}^k` of `k` entries all equal to the positive natural number `e`; f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
 
 ## Sources
 

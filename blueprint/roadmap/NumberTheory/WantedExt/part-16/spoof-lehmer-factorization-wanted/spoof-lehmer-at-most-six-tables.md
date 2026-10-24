@@ -15,7 +15,10 @@ truncated after "Example 2,"; the lists follow Tables 1 and 2 of the paper).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Spoof](is-odd-spoof.md)
+- [Is Spoof Lehmer](is-spoof-lehmer.md)
+- [Is Trivial Spoof](is-trivial-spoof.md)
+- [Spoof Of Bases](spoof-of-bases.md)
 
 ## Sources
 

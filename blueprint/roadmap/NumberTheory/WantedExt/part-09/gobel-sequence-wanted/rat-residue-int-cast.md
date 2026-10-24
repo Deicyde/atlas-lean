@@ -12,7 +12,7 @@ On integers `ratResidue` is the usual cast.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rat Residue](rat-residue.md)
 
 ## Sources
 

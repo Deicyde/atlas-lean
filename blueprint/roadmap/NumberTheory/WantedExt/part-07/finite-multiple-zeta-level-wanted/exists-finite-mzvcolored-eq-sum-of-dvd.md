@@ -16,7 +16,7 @@ The inclusion of `ℚ`-spans is stated on generators; a rational `q` acts modulo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite MZVColored](finite-mzvcolored.md)
 
 ## Sources
 

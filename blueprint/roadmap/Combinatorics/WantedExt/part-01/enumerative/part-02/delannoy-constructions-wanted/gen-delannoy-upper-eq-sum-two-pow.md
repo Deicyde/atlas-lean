@@ -11,7 +11,7 @@ lean: MetaMathlibExt.DelannoyConstructions.genDelannoyUpper_eq_sum_two_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Delannoy Upper](gen-delannoy-upper.md)
 
 ## Sources
 

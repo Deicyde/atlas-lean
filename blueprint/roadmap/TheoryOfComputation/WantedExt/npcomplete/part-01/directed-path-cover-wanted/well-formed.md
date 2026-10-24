@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Path Cover Instance](directed-path-cover-instance.md)
 
 ## Sources
 

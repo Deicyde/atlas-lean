@@ -13,7 +13,12 @@ lean: Cslib.MachineLearning.Variational.kl_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Kl](kl.md)
+
+## Proof depends on
+
+- [Gibbs' inequality](../../../part-01/latent-variable/expectation-maximization/sum-mul-log-sub-le.md)
 
 ## Sources
 

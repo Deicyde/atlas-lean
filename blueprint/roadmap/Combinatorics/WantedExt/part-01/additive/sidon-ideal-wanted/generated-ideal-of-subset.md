@@ -12,7 +12,7 @@ The generated ideal is closed under subsets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generated Ideal](generated-ideal.md)
 
 ## Sources
 

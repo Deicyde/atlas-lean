@@ -16,7 +16,18 @@ configuration `c₁` of `TM2to1.tr`) in `n ≤ C t (|L| + C t + 1)` steps, with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Emulation Constant](emulation-constant.md)
+- [Tr](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+
+## Proof depends on
+
+- [One multi-stack step costs at most `1 + B (2 (H + B) + 2)` steps of the `TM1` emulator](exists-relates-within-steps-tm1-of-step.md)
+- [Each step of the `TM1` emulator is at most three single-tape steps](relates-within-steps-tm0-of-relates-in-s.md)
+- [Init List stk length le](../../../../../MathlibExt/turing-machine/composition/init-list-stk-length-le.md)
+- [Push Bound](../../../../../MathlibExt/turing-machine/composition/push-bound.md)
+- [Pushes](../../../../../MathlibExt/turing-machine/composition/pushes.md)
+- [Iter none](../../../../../MathlibExt/turing-machine/program/iter-none.md)
+- [Init List eq init](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/init-list-eq-init.md)
 
 ## Sources
 

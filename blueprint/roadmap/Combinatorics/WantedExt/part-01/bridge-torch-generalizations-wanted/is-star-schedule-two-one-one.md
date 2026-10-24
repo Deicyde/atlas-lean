@@ -13,7 +13,13 @@ star schedule of duration `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Star Schedule](is-star-schedule.md)
+- [Star Move](star-move.md)
+- [Star Step Duration](star-step-duration.md)
+
+## Proof depends on
+
+- [Star Run From](star-run-from.md)
 
 ## Sources
 

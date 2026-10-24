@@ -12,7 +12,15 @@ In base `2`, `1 ⊕ x ⊕ x² = (1 ⊕ x) ⊗ (1 ⊕ x)` lies in `Σ_2^2` and in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lunar Decomposable Set](lunar-decomposable-set.md)
+- [Lunar Level Decomposable Set](lunar-level-decomposable-set.md)
+
+## Proof depends on
+
+- [Digit Seq](digit-seq.md)
+- [Digit Seq of le](digit-seq-of-le.md)
+- [Lunar Level Count](lunar-level-count.md)
+- [Max Min Mul](max-min-mul.md)
 
 ## Sources
 

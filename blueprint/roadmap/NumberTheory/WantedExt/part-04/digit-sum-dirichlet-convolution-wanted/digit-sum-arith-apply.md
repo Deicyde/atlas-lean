@@ -12,7 +12,7 @@ lean: MetaMathlibExt.digitSumArith_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Sum Arith](digit-sum-arith.md)
 
 ## Sources
 

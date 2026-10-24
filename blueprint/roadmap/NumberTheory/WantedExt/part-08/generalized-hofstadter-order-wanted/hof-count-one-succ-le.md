@@ -11,7 +11,7 @@ For `k ≥ 1` and `n ≥ 0`, `C_k^{(=1)}(n) ≥ C_{k+1}^{(=1)}(n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Count](hof-count.md)
 
 ## Sources
 

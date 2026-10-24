@@ -13,7 +13,8 @@ with the common denominator `#U_n` cleared.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ulam Word](is-ulam-word.md)
+- [Ulam Residue Count](ulam-residue-count.md)
 
 ## Sources
 

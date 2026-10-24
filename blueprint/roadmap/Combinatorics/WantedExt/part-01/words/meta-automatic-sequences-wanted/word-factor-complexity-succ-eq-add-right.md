@@ -12,7 +12,8 @@ Lemma 27: for every infinite binary word `a` and `n ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Right Special Factors](right-special-factors.md)
+- [Word Factor Complexity](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

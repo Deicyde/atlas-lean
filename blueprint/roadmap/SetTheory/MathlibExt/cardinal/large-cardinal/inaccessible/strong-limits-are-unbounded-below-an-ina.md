@@ -17,6 +17,10 @@ limit ordinal (`isSuccLimit_add`), and below `κ` since
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Below an inaccessible `κ`, the beth hierarchy stays below...](below-an-inaccessible-the-beth-hierarchy.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Cardinal.LargeCardinal.Inaccessible](../../../../../../sources/v2/MathlibExt.md)

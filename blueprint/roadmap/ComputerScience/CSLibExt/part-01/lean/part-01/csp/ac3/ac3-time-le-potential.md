@@ -13,7 +13,16 @@ potential.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+- [Ac3](ac3.md)
+- [Potential](potential.md)
+
+## Proof depends on
+
+- [Indeg](indeg.md)
+- [Potential lt](potential-lt.md)
+- [Requeue](requeue.md)
+- [Revise](revise.md)
 
 ## Sources
 

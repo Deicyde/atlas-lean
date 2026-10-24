@@ -13,7 +13,7 @@ binom((m+v)/2, m/2)^{-1}` for even `m` and `0` for odd `m`, for `ℜv > -1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

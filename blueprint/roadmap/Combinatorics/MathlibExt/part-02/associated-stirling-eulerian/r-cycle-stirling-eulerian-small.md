@@ -14,7 +14,7 @@ Characteristic values: `A^{(r)}_{0,0} = 1` (the empty permutation),
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Cycle Stirling Eulerian](r-cycle-stirling-eulerian.md)
 
 ## Sources
 

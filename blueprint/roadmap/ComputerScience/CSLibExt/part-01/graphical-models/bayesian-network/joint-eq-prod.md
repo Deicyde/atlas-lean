@@ -12,7 +12,8 @@ The joint is the product of the conditionals along the order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
+- [Joint](joint.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For `n > 1`, `H_{n+1} ≤ n / log n`; for `x ≥ 4`, `log H(x) ≤ x / (2 log x)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Harmonic Extension](harmonic-extension.md)
 
 ## Sources
 

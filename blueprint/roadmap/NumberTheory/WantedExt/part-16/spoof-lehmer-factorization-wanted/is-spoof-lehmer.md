@@ -15,6 +15,12 @@ greater than `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Spoof Factorization](is-spoof-factorization.md)
+- [Spoof Eval](spoof-eval.md)
+- [Spoof Totient](spoof-totient.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SpoofLehmerFactorizationWanted](../../../../../sources/v2/WantedExt.md)

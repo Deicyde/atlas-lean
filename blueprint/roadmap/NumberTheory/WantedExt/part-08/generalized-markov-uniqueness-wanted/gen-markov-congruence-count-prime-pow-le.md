@@ -12,7 +12,7 @@ Lemma 4.11: for an odd prime `p`, `m ≥ 2` and `k² - 4 ≢ 0 (mod p)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Markov Congruence Count](gen-markov-congruence-count.md)
 
 ## Sources
 

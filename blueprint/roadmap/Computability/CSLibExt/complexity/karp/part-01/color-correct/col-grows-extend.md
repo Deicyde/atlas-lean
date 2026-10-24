@@ -12,7 +12,8 @@ Allocating vertices and appending edges grows a state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col Grows](col-grows.md)
+- [Col St](../color/col-st.md)
 
 ## Sources
 

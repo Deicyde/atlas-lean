@@ -13,7 +13,7 @@ elementary-symmetric degree from `i` to `s.card-i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reverse ESymm](reverse-esymm.md)
 
 ## Sources
 

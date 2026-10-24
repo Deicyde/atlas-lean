@@ -14,7 +14,8 @@ Lemma 2, parts 1-3: for a binomid index `η` and `i, l ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Binomid Index](is-binomid-index.md)
+- [Binomid Average](binomid-average.md)
 
 ## Sources
 

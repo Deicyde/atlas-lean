@@ -17,6 +17,10 @@ square-integrable prediction `h ∘ X`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [The conditional mean minimizes the expected squared error](integral-sq-sub-cond-exp-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.MeasureTheory.Function.ConditionalExpectation.BestPredictor](../../../../../../sources/v2/MathlibExt.md)

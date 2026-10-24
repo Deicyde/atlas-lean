@@ -13,7 +13,7 @@ Rank-two special cases: `C(ℤ_{2^n} ⊕ ℤ₂) = 2^{n-1} 2^{n(n-1)/2} (n + 2)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Count](count.md)
 
 ## Sources
 

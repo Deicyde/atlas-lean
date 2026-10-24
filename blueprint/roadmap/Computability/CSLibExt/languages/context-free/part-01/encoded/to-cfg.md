@@ -12,7 +12,11 @@ nonterminals of `g.toCFG` can be written as numerals).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](encoded-cfg.md)
+
+## Proof depends on
+
+- [Decode Rule](decode-rule.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ Kellner's conjecture (i): `𝔻^+_n > 1` for all `n > 192`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bernoulli Diff Denominator Large Part](bernoulli-diff-denominator-large-part.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BernoulliDerivativeDenominatorWanted](../../../../../sources/v2/WantedExt.md)

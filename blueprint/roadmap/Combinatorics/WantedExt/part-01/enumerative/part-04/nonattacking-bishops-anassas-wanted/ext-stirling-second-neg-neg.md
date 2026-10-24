@@ -12,7 +12,7 @@ lean: MetaMathlibExt.extStirlingSecond_neg_neg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ext Stirling Second](ext-stirling-second.md)
 
 ## Sources
 

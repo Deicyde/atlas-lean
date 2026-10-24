@@ -15,7 +15,8 @@ Statements (b) and (c) of the paper are omitted. The sequence is indexed from `0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ramsey Family](is-ramsey-family.md)
+- [Beta Family](beta-family.md)
 
 ## Sources
 

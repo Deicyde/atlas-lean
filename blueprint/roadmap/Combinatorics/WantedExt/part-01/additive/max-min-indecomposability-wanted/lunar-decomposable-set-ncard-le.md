@@ -14,7 +14,7 @@ Proposition 21: for fixed `b ≥ 2` there is `C > 0` such that for all `n ≥ 2`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lunar Decomposable Set](lunar-decomposable-set.md)
 
 ## Sources
 

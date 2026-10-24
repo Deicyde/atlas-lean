@@ -14,7 +14,7 @@ integer `k` with `t_k(n) = 0` divides `t_{n,1}` and satisfies `|k| < 2 T_n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
 
 ## Sources
 

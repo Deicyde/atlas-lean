@@ -12,7 +12,13 @@ An overlap pair's score is at most the overlap score.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nw Score](../sequence-alignment/nw-score.md)
+- [Overlap Pairs](overlap-pairs.md)
+- [Overlap Score](overlap-score.md)
+
+## Proof depends on
+
+- [List Max](../sequence-alignment/list-max.md)
 
 ## Sources
 

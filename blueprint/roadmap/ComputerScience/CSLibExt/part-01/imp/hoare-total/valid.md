@@ -12,7 +12,16 @@ Total correctness implies partial correctness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [TValid](tvalid.md)
+- [Valid](../hoare/valid.md)
+
+## Proof depends on
+
+- [Big Step](../big-step/big-step.md)
+- [Deterministic](../big-step/deterministic.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

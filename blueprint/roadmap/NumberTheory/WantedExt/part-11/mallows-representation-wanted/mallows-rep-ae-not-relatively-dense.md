@@ -13,7 +13,9 @@ occurrence of it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factor List](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/factor-list.md)
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
 
 ## Sources
 

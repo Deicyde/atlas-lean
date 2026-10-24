@@ -14,6 +14,10 @@ error pattern the table assigns to the syndrome of the received word.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Syndrome](syndrome.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Coding.LinearCode](../../../../sources/v2/CSLibExt.md)

@@ -11,7 +11,7 @@ The receiver's partner: the proposer she holds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

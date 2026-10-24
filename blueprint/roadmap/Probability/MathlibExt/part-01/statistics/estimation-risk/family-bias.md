@@ -16,6 +16,10 @@ evidence is an input; `W` is fixed before the family and does not depend on
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bias](bias.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Statistics.EstimationRisk](../../../../../../sources/v2/MathlibExt.md)

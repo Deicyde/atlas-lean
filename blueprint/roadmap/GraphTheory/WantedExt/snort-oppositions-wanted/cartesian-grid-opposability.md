@@ -12,7 +12,9 @@ opposable iff at most one `nᵢ` is even, and otherwise it is opposable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Almost Opposable](is-almost-opposable.md)
+- [Is Opposable](is-opposable.md)
+- [Cartesian Grid](cartesian-grid.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ per-literal cost of one tick plus one lookup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Check CNF](check-cnf.md)
+- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Check Clause](check-clause.md)
+- [Check Clause time le](check-clause-time-le.md)
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

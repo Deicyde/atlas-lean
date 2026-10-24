@@ -12,7 +12,9 @@ For `n ≥ 2` and every permutation `π` of `[n]`, `π ∈ Sort_n(s^[321])` if a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Good Seq](is-good-seq.md)
+- [Consecutive Cyclic Stack Sort](consecutive-cyclic-stack-sort.md)
+- [Sorted Permutations](sorted-permutations.md)
 
 ## Sources
 

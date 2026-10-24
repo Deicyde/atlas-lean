@@ -11,7 +11,14 @@ Karp's CLIQUE instance of a formula: `k` is the number of clauses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Clique Bits](clique-bits.md)
+- [Encode KG](encode-kg.md)
+- [Occs](occs.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

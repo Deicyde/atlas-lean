@@ -18,7 +18,7 @@ The lemma's other identities are stated elsewhere (see the module docstring).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

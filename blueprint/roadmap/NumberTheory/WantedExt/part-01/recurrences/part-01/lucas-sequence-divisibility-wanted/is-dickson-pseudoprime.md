@@ -11,7 +11,11 @@ Dickson pseudoprime: positive odd composite `N`, `gcd(N, QD) = 1`, `V_N ≡ P (m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

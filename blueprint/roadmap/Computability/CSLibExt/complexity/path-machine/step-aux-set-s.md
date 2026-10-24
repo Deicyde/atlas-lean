@@ -12,7 +12,12 @@ Setting the mark on top of `l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Set Head](set-head.md)
+- [Set S](set-s.md)
+- [Γ](untitled.md)
+- [Sym](../sat-verifier-spec/sym.md)
 
 ## Sources
 

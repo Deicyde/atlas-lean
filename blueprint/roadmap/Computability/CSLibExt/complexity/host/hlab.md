@@ -11,7 +11,7 @@ Host labels: phase 0, the component's labels, cleanup and output (with the answe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Theorem 21: for `r ≥ 2`, the exponential generating function of the numbers
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
+- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

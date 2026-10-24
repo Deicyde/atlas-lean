@@ -12,7 +12,16 @@ computes `P_i ∧ G_q`, role `1` the new `G_i ∨ (P_i ∧ G_q)`, role `2` the n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Base](level-base.md)
+- [Arith Signature](../ripple-carry/arith-signature.md)
+
+## Proof depends on
+
+- [Arith Gate](../ripple-carry/arith-gate.md)
+- [G Num](g-num.md)
+- [P Num](p-num.md)
+- [Partner](partner.md)
+- [Bin Line](../ripple-carry/bin-line.md)
 
 ## Sources
 

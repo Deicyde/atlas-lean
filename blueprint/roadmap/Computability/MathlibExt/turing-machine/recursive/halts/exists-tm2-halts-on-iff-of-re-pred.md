@@ -16,8 +16,7 @@ lean: MetaMathlibExt.TM2Recursive.exists_tm2HaltsOn_iff_of_rePred
 
 ## Proof depends on
 
-- [Fwd TM](../to-tm2/fwd-tm.md)
-- [Tm2 Halts On fwd TM iff](tm2-halts-on-fwd-tm-iff.md)
+- [Every r.e. predicate is the halting set of a multi-stack machine (`FinTM2`)](exists-finite-tm2-halts-on-iff-of-re-pre.md)
 
 ## Sources
 

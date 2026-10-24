@@ -12,7 +12,8 @@ lean: MetaMathlibExt.iteratedRemainderSet_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated Remainder Set](iterated-remainder-set.md)
+- [Remainder Set](remainder-set.md)
 
 ## Sources
 

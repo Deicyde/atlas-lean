@@ -12,7 +12,13 @@ lean: MetaMathlibExt.cyclotomicTraceDist_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
+
+## Proof depends on
+
+- [Cyclotomic Trace Norm](cyclotomic-trace-norm.md)
+- [Cyclotomic Trace Norm Sq](cyclotomic-trace-norm-sq.md)
+- [Cyclotomic Trace Norm Sq neg](cyclotomic-trace-norm-sq-neg.md)
 
 ## Sources
 

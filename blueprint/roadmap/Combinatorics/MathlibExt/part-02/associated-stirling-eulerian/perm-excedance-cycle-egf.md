@@ -18,6 +18,11 @@ commutative `ℚ`-algebra `R` (so `x` and `q` can be indeterminates). With `q = 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cycle Quotient Count](../../part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Excedance Count](excedance-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AssociatedStirlingEulerian](../../../../../sources/v2/MathlibExt.md)

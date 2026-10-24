@@ -14,7 +14,9 @@ Perron–Frobenius one).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Is Substitution Image](is-substitution-image.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

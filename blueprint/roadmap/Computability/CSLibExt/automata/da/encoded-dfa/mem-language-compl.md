@@ -12,7 +12,16 @@ lean: Cslib.Automata.EncodedDFA.mem_language_compl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+- [Compl](compl.md)
+- [Language](language.md)
+
+## Proof depends on
+
+- [States](states.md)
+- [Step](step.md)
+- [Step mem states](step-mem-states.md)
+- [To DFA](to-dfa.md)
 
 ## Sources
 

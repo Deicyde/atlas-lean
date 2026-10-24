@@ -19,7 +19,7 @@ natural-number subtraction is exact.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Count](schreier-count.md)
 
 ## Sources
 

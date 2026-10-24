@@ -11,7 +11,8 @@ lean: MetaMathlibExt.c4Sq_integerGroupDeterminants_two_pow_fifteen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Group Determinants](integer-group-determinants.md)
+- [Primes Five Mod Eight](primes-five-mod-eight.md)
 
 ## Sources
 

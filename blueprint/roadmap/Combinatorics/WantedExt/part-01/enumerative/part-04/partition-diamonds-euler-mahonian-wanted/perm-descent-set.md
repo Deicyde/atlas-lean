@@ -14,6 +14,10 @@ The descent set `Des(τ) = {j : τ(j) > τ(j + 1)}` of a permutation `τ ∈ S_d
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perm Value At](perm-value-at.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PartitionDiamondsEulerMahonianWanted](../../../../../../../sources/v2/WantedExt.md)

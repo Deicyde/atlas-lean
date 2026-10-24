@@ -13,7 +13,8 @@ not the differently worded arXiv excerpt.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CLInterlaces](clinterlaces.md)
+- [P Basis](p-basis.md)
 
 ## Sources
 

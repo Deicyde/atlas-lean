@@ -13,7 +13,14 @@ messages that are not coprime to `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key](key.md)
+- [Decrypt](decrypt.md)
+- [Encrypt](encrypt.md)
+- [N](n.md)
+
+## Proof depends on
+
+- [Pow ed](pow-ed.md)
 
 ## Sources
 

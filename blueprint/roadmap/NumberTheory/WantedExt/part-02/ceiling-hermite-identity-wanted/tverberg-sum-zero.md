@@ -12,7 +12,7 @@ Characteristic value: with no `a_i`, `f^(F)(∅, m, k) = F(k / m)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tverberg Sum](tverberg-sum.md)
 
 ## Sources
 

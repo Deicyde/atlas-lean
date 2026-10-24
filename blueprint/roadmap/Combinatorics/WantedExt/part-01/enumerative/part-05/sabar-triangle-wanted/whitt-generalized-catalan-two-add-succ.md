@@ -11,7 +11,7 @@ Theorem 6: for `n ≥ 1`, `C(2, n) + C(2, n+1) = 2^{n+1} C(n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Whitt Generalized Catalan](../../../../../MathlibExt/part-01/enumerative/part-09/whitt-generalized-catalan/whitt-generalized-catalan.md)
 
 ## Sources
 

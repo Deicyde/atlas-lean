@@ -13,7 +13,8 @@ shift, and modulus; at `s=e+1` these are respectively `e+d`, `e+1`, and `d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Part](odd-part.md)
+- [Stable Bits](stable-bits.md)
 
 ## Sources
 

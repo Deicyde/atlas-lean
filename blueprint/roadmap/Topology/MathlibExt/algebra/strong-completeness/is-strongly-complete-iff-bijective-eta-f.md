@@ -13,7 +13,11 @@ its profinite completion is bijective.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strongly Complete](is-strongly-complete.md)
+
+## Proof depends on
+
+- [Is Open to Subgroup of surjective eta Fn](is-open-to-subgroup-of-surjective-eta-fn.md)
 
 ## Sources
 

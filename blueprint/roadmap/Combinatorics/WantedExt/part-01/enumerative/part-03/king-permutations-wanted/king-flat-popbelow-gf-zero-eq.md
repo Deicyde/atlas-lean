@@ -17,7 +17,7 @@ Theorem 3: for `P₁` (label `1` below labels `2, 3, 4`), `A_{P₁} = A / B`, st
 
 ## Depends on
 
-This node has no prerequisites.
+- [King Flat POPBelow GF](king-flat-popbelow-gf.md)
 
 ## Sources
 

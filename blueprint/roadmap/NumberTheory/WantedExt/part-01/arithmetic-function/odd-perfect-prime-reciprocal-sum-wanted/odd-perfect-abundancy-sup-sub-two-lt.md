@@ -12,7 +12,7 @@ satisfies `S(n) = H(n) - 2 < 25/(8 p₁ log p₁)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

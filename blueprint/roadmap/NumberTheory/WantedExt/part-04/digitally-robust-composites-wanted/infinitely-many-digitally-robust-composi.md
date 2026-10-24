@@ -14,7 +14,7 @@ there is no mathematical deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Digitally Robust Composite](is-digitally-robust-composite.md)
 
 ## Sources
 

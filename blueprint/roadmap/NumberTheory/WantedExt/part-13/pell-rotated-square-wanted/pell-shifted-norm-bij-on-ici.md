@@ -13,7 +13,10 @@ With `x₁ = sup {x ≥ 0 : f_{i,j}(x) = K}` (Equation (3.6)), on `[x₁, ∞)` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Shift Bound](pell-shift-bound.md)
+- [Pell Shifted Norm](pell-shifted-norm.md)
+- [Pell U](pell-u.md)
+- [Pell V](pell-v.md)
 
 ## Sources
 

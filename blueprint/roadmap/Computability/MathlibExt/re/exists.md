@@ -15,6 +15,10 @@ selection function `REPred.exists_partrec_choose`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Selection for r.e. relations](exists-partrec-choose.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.RE](../../../../sources/v2/MathlibExt.md)

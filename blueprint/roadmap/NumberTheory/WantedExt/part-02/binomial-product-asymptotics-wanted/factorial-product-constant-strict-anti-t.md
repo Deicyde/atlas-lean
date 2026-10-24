@@ -11,7 +11,7 @@ The sequence `(F_k)_{k ≥ 1}` is strictly decreasing with limit `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorial Product Constant](factorial-product-constant.md)
 
 ## Sources
 

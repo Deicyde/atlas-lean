@@ -12,7 +12,7 @@ The anti-Jacobsthal numbers (`a = (2, 1)`, OEIS A304499) start `4, 11, 19, 25`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Recurrence](anti-recurrence.md)
 
 ## Sources
 

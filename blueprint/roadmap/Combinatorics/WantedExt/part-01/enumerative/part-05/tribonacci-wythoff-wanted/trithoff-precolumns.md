@@ -15,7 +15,8 @@ pre-seed `n - wall - seed = [a]_T + b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci Value](tribonacci-value.md)
 
 ## Sources
 

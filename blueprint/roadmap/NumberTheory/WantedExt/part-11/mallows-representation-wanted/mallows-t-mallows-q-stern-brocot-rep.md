@@ -11,7 +11,11 @@ Main link: `T(Q(SB(α))) = M(α)` for every irrational `α ∈ (0, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Q](mallows-q.md)
+- [Mallows Rep](mallows-rep.md)
+- [Mallows T](mallows-t.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
 
 ## Sources
 

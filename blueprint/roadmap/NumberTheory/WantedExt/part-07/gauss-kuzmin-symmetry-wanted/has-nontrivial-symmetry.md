@@ -14,6 +14,10 @@ its reverse, has the same Gauss-Kuzmin measure.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GaussKuzminSymmetryWanted](../../../../../sources/v2/WantedExt.md)

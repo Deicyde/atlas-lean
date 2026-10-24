@@ -13,7 +13,7 @@ For every complex `q` of norm less than one, this is the reciprocal-square 2-dis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf Raw](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
 
 ## Sources
 

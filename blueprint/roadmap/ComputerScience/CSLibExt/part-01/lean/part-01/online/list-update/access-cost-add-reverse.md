@@ -12,7 +12,7 @@ An item's positions in a list and in its reverse add up to the length plus one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Access Cost](access-cost.md)
 
 ## Sources
 

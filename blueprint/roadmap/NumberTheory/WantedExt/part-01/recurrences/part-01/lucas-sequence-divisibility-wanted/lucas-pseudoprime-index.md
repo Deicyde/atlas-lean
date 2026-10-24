@@ -12,7 +12,7 @@ natural number; it is positive for the odd `N > 1` coprime to `D` that the sourc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: Cslib.Complexity.Karp.lift_ren
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lift](lift.md)
+- [Ren](../three-sat/ren.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Fresh Val](fresh-val.md)
 
 ## Sources
 

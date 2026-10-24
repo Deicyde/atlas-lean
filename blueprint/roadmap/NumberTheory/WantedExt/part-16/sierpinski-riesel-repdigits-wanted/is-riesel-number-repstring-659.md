@@ -12,7 +12,8 @@ lean: MetaMathlibExt.isRieselNumber_repstring_659
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Riesel Number](is-riesel-number.md)
+- [Repstring](repstring.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ once. (b) If `S₁` covers `g` and `j ≥ 1`, then `S₁` covers `g + 2jz` but n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Cover](is-perfect-cover.md)
+- [Cover Count](cover-count.md)
 
 ## Sources
 

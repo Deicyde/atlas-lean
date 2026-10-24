@@ -12,7 +12,14 @@ with every person at a leaf.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Star Move](star-move.md)
+
+## Proof depends on
+
+- [Is Star Step](is-star-step.md)
+- [Src](src.md)
+- [Star Step Pos](star-step-pos.md)
+- [Star Step Torch](star-step-torch.md)
 
 ## Sources
 

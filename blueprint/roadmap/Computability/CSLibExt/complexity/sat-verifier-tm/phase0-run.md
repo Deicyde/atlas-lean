@@ -26,7 +26,26 @@ variable (cap : Bool)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pair Encode](../dense-satverifier/pair-encode.md)
+- [HK](hk.md)
+- [HLab](hlab.md)
+- [HΓ](h.md)
+- [P0](p0.md)
+- [Hprog](hprog.md)
+- [Sym](../sat-verifier-spec/sym.md)
+- [Lab](../sat-tokenizer/lab.md)
+- [Start](../sat-tokenizer/start.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [G](../dense-satverifier/g.md)
+- [D W](d-w.md)
+- [D X](d-x.md)
+- [Bit?](../sat-verifier-spec/bit.md)
+- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
+- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Move B run](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

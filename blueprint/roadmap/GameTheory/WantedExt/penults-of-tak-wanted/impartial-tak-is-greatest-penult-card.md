@@ -12,7 +12,8 @@ Corollary 1: for `n ≥ 2` the largest Impartial Tak penult on an `n × n` board
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Penult](placement-penult.md)
+- [Tak Has Road](tak-has-road.md)
 
 ## Sources
 

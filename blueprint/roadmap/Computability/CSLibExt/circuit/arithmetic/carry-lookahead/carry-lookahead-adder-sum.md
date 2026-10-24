@@ -12,7 +12,16 @@ lean: Cslib.Circuits.CarryLookahead.carryLookaheadAdder_sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carry Lookahead Adder](carry-lookahead-adder.md)
+- [Arith Interpretation](../ripple-carry/arith-interpretation.md)
+- [Arith Signature](../ripple-carry/arith-signature.md)
+- [Rca Input](../ripple-carry/rca-input.md)
+
+## Proof depends on
+
+- [Cla Program](cla-program.md)
+- [The sum gates](cla-program-sum.md)
+- [Level Base](level-base.md)
 
 ## Sources
 

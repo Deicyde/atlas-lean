@@ -12,7 +12,9 @@ The single-leaf tree has no `D`-nodes and no `S`-nodes and is divide-and-conquer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divide Conquer Tree](is-divide-conquer-tree.md)
+- [Tree DNodes](tree-dnodes.md)
+- [Tree SNodes](tree-snodes.md)
 
 ## Sources
 

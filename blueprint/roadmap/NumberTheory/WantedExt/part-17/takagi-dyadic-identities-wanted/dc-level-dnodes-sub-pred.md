@@ -12,7 +12,7 @@ Lemma 17: for `n = 2^k + r` with `r` odd, `0 < r < 2^k`, and `0 < i < k`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc Level DNodes](dc-level-dnodes.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ all `n` cars park under the `k`-Naples rule (`k = 0` gives ordinary parking func
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Naples Park](naples-park.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KNaplesParkingWanted](../../../../../../../sources/v2/WantedExt.md)

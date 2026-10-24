@@ -12,7 +12,8 @@ Summing out the last variable gives the joint of the earlier ones.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
+- [Joint](joint.md)
 
 ## Sources
 

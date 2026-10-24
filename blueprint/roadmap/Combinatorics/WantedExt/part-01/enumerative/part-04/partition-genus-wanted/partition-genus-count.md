@@ -14,6 +14,11 @@ block sizes) and genus `g`, counted through their increasing-cycle permutations.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Increasing Cycle Perm](is-increasing-cycle-perm.md)
+- [Set Partition Genus](set-partition-genus.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PartitionGenusWanted](../../../../../../../sources/v2/WantedExt.md)

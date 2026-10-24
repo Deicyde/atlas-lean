@@ -12,7 +12,11 @@ The bits of an edge list whose ends are at most `B`: at most `2 B + 2` per edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Bits](../color/edge-bits.md)
+
+## Proof depends on
+
+- [Edge Bits cons](../ham-path-check/edge-bits-cons.md)
 
 ## Sources
 

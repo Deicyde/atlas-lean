@@ -12,7 +12,12 @@ lean: MetaMathlibExt.isWeaklyPrimeAdditive_thirty
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weakly Prime Additive](is-weakly-prime-additive.md)
+
+## Proof depends on
+
+- [Is Prime Divisor Power Sum](is-prime-divisor-power-sum.md)
+- [Is Prime Divisor Power Sum thirty](is-prime-divisor-power-sum-thirty.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ or write of their transaction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+
+## Proof depends on
+
+- [Holds Before](holds-before.md)
+- [Lock Mode](lock-mode.md)
+- [Op](../serializability/op.md)
+- [Two Phase](two-phase.md)
 
 ## Sources
 

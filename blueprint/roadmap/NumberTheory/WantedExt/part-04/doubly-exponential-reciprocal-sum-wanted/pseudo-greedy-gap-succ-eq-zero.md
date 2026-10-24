@@ -12,7 +12,7 @@ If a gap `ε_n` of the pseudo-greedy expansion of a positive real vanishes, so d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pseudo Greedy Gap](pseudo-greedy-gap.md)
 
 ## Sources
 

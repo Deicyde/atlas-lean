@@ -12,7 +12,7 @@ A split of a factor is a pair of adjacent factors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factor](factor.md)
 
 ## Sources
 

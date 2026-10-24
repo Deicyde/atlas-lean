@@ -13,7 +13,7 @@ Lemma 4.1: for `k ≤ n` and `m ∈ ℕ`, `Δ^{2m}(f_{n+k}^{2m+1} - f_{n-k}^{2m+
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

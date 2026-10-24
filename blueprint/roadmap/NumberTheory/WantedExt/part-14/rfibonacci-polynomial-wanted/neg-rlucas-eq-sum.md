@@ -17,7 +17,7 @@ field of characteristic zero for the quotient `n/(n - rk)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RLucas](neg-rlucas.md)
 
 ## Sources
 

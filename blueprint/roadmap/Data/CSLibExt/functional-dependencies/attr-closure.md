@@ -12,7 +12,11 @@ number of rounds is bounded by the number of attributes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+
+## Proof depends on
+
+- [Closure Loop](closure-loop.md)
 
 ## Sources
 

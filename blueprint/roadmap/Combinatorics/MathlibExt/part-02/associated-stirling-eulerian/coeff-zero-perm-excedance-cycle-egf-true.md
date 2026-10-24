@@ -13,7 +13,14 @@ permutation of `Fin 0` has no excedance and no cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Excedance Cycle EGF](perm-excedance-cycle-egf.md)
+
+## Proof depends on
+
+- [Coeff perm Excedance Cycle EGF](coeff-perm-excedance-cycle-egf.md)
+- [Cycle Quotient Count](../../part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Cycle Quotient Count eq](../../part-01/enumerative/part-08/stirling/cycle-quotient-count-eq.md)
+- [Excedance Count](excedance-count.md)
 
 ## Sources
 

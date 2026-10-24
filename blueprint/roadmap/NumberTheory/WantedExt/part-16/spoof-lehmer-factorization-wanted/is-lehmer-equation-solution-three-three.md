@@ -12,7 +12,7 @@ Characteristic example: `x = (3, 3)` solves Equation (1) with `k = 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lehmer Equation Solution](is-lehmer-equation-solution.md)
 
 ## Sources
 

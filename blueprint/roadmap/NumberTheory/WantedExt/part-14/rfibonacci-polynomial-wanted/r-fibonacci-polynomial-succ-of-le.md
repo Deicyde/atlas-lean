@@ -12,7 +12,7 @@ lean: MetaMathlibExt.rFibonacciPolynomial_succ_of_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
 
 ## Sources
 

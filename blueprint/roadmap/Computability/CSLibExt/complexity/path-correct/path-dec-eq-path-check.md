@@ -12,7 +12,19 @@ The marking algorithm decides PATH.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Path Check](../path/path-check.md)
+- [Path Dec](../path/path-dec.md)
+
+## Proof depends on
+
+- [Arc](../path/arc.md)
+- [Decode P](../path/decode-p.md)
+- [Decode P encode P](decode-p-encode-p.md)
+- [Decode P eq some](decode-p-eq-some.md)
+- [Encode P](../path/encode-p.md)
+- [Encode P inj](encode-p-inj.md)
+- [Reach Marks](../path/reach-marks.md)
+- [Reach Marks get D iff](reach-marks-get-d-iff.md)
 
 ## Sources
 

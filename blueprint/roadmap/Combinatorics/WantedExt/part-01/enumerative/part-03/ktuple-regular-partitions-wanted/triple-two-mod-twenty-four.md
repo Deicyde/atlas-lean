@@ -15,7 +15,7 @@ added.  Naturals encode `n ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triple Regular Partition Count](triple-regular-partition-count.md)
 
 ## Sources
 

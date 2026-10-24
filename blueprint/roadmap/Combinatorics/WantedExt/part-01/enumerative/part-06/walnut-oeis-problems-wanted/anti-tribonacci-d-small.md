@@ -12,7 +12,7 @@ The first anti-Tribonacci numbers are `6, 16, 27, 36`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Tribonacci D](anti-tribonacci-d.md)
 
 ## Sources
 

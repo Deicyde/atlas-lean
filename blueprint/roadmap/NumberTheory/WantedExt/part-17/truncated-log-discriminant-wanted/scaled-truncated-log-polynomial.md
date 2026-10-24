@@ -13,6 +13,10 @@ The integer polynomial `F̃_n = L_n F_n = L_n + ∑_{j=1}^n (L_n / j) x^j`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Truncated Log Lcm](truncated-log-lcm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.TruncatedLogDiscriminantWanted](../../../../../sources/v2/WantedExt.md)

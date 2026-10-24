@@ -13,7 +13,12 @@ than merely for the existence of some finite DFA.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic DFA](syntactic-dfa.md)
+
+## Proof depends on
+
+- [Syntactic DFA accepts](syntactic-dfa-accepts.md)
 
 ## Sources
 

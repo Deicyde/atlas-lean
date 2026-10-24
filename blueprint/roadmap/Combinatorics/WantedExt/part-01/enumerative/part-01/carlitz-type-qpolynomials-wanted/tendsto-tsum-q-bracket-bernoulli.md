@@ -12,7 +12,7 @@ Mathlib's `bernoulli` (`B_1 = -1/2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

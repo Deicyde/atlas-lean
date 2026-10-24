@@ -14,7 +14,7 @@ at `x_k = 1/2 - 1/n²`, `g_1 = 2^{n-2} - 1 = -g_3 - 1`; at `x_k = 1/2 + 1/n²`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incl Excl Like Sum](incl-excl-like-sum.md)
 
 ## Sources
 

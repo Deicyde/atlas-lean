@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degree Constrained Spanning Tree Instance](degree-constrained-spanning-tree-instanc.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The value of name `q`: the first live entry named `q`, default `false`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ent](ent.md)
 
 ## Sources
 

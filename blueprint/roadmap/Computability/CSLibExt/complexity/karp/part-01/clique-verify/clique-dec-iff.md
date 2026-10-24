@@ -12,7 +12,15 @@ lean: Cslib.Complexity.Karp.KGVerify.cliqueDec_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+- [Kg Check](kg-check.md)
+- [Clique Dec](../clique/clique-dec.md)
+
+## Proof depends on
+
+- [Clique iff](clique-iff.md)
+- [Kg Dec iff exists](kg-dec-iff-exists.md)
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

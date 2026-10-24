@@ -14,6 +14,12 @@ either there is an uncountable homogeneous set, or the space is a countable unio
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Coloring Free](is-coloring-free.md)
+- [Is Coloring Homogeneous](is-coloring-homogeneous.md)
+- [Is Open Coloring](is-open-coloring.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Dichotomies.OpenColoring](../../../../../sources/v2/MathlibExt.md)

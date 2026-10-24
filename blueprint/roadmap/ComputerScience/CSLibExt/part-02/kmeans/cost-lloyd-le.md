@@ -13,7 +13,14 @@ reassign every point to a nearest new center.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest](nearest.md)
+- [Centers](centers.md)
+- [Cost](cost.md)
+
+## Proof depends on
+
+- [The update step never increases the cost](cost-centers-le.md)
+- [The assignment step never increases the cost](cost-nearest-le.md)
 
 ## Sources
 

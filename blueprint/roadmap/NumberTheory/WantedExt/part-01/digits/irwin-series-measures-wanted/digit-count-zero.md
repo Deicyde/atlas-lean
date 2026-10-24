@@ -14,7 +14,7 @@ Irwin Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Count](digit-count.md)
 
 ## Sources
 

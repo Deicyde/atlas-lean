@@ -12,7 +12,7 @@ Nerode equivalence means that every continuation gives the same membership answe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Rel](nerode-rel.md)
 
 ## Sources
 

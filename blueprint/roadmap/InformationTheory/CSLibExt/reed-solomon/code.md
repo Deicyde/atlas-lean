@@ -11,7 +11,11 @@ The **Reed-Solomon code**: the encodings of the polynomials of degree less than 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](../linear-code/linear-code.md)
+
+## Proof depends on
+
+- [Encode Lin](encode-lin.md)
 
 ## Sources
 

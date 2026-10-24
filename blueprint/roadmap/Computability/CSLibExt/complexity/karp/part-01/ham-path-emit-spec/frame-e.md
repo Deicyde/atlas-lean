@@ -13,6 +13,11 @@ The frame of diamond `i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hp R](../ham-path/hp-r.md)
+- [Hp T](../ham-path/hp-t.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPathEmitSpec](../../../../../../../sources/v2/CSLibExt.md)

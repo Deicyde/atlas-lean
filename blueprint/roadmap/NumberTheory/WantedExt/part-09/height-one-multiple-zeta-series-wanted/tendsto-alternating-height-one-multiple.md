@@ -13,7 +13,8 @@ For integers `k ≥ -1` and `p ≥ 0`, the shifted alternating series
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height One Multiple Zeta](height-one-multiple-zeta.md)
+- [Multiple Hurwitz Zeta](multiple-hurwitz-zeta.md)
 
 ## Sources
 

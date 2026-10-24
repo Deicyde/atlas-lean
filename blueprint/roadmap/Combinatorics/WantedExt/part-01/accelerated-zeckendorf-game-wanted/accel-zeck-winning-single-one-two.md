@@ -12,7 +12,14 @@ The game on `2` is won by the first player, via `1 · C_1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accel Zeck Winning](accel-zeck-winning.md)
+
+## Proof depends on
+
+- [Accel Zeck Losing](accel-zeck-losing.md)
+- [Accel Zeck Move](accel-zeck-move.md)
+- [Accel Zeck Losing of terminal](accel-zeck-losing-of-terminal.md)
+- [Accel Zeck Move single one two](accel-zeck-move-single-one-two.md)
 
 ## Sources
 

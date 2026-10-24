@@ -16,7 +16,7 @@ meant to guarantee (it does not exclude the multiple zero `0` when `y = 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
 
 ## Sources
 

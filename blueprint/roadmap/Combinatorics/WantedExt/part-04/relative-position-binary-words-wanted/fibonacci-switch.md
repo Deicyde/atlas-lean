@@ -14,7 +14,9 @@ from `f` by replacing each level-2 supertile `aba` by `aab` and keeping each `ab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Substitution Image](is-substitution-image.md)
+- [Deletion](deletion.md)
+- [Fib Inf](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
 
 ## Sources
 

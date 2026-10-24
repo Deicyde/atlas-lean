@@ -12,7 +12,12 @@ lean: DFA.isUnivB_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Univ B](is-univ-b.md)
+
+## Proof depends on
+
+- [Is Empty B](is-empty-b.md)
+- [Emptiness of DFAs is decided by `isEmptyB`](is-empty-b-iff.md)
 
 ## Sources
 

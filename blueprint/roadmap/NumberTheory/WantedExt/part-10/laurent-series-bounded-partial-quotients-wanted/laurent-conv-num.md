@@ -14,6 +14,10 @@ Numerators of the convergents, shifted by one: `laurentConvNum α (n + 1) = P_n`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LaurentSeriesBoundedPartialQuotientsWanted](../../../../../sources/v2/WantedExt.md)

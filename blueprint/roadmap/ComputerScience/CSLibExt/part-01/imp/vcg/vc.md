@@ -13,7 +13,16 @@ the negated guard imply the postcondition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [ACmd](acmd.md)
+- [Assertion](../hoare/assertion.md)
+
+## Proof depends on
+
+- [Pre](pre.md)
+- [AExp](../syntax/aexp.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

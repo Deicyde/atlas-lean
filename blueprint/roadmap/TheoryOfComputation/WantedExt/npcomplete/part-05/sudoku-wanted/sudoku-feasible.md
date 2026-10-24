@@ -11,7 +11,7 @@ A completion with every row, column, and block a permutation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sudoku Instance](sudoku-instance.md)
 
 ## Sources
 

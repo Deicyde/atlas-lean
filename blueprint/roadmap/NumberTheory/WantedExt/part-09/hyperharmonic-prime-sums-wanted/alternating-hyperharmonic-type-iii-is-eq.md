@@ -14,7 +14,9 @@ Lemma 16: for `y, p ≥ 1`, the type III numbers satisfy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Generalized Harmonic](alternating-generalized-harmonic.md)
+- [Alternating Zeta](alternating-zeta.md)
+- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
 
 ## Sources
 

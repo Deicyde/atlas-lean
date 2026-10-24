@@ -12,7 +12,11 @@ A word with a leftmost derivation from the start symbol is in the language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Left Derivation](left-derivation.md)
+
+## Proof depends on
+
+- [Derives](derives.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ steps are Down.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Descending Naples Count](descending-naples-count.md)
 
 ## Sources
 

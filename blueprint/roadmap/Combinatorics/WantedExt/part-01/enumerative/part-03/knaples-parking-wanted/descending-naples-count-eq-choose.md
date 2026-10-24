@@ -13,7 +13,8 @@ strictly `k`-Naples parking functions of length `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Descending Naples Count](descending-naples-count.md)
+- [Descending Strict Naples Count](descending-strict-naples-count.md)
 
 ## Sources
 

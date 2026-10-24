@@ -11,7 +11,7 @@ Row offset (in rows `W`) of literal `j`: `1` for the next-code literal, else `0`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
 
 ## Sources
 

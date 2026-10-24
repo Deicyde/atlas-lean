@@ -14,6 +14,10 @@ significant bit (the paper's list `𝓛(n)`, whose order does not matter).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bit Run Lengths](bit-run-lengths.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BinomialModTwoRunLengthWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,8 @@ reciprocal sum, and the gap sequence of that expansion tends to `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
+- [Pseudo Greedy Gap](pseudo-greedy-gap.md)
 
 ## Sources
 

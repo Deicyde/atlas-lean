@@ -12,7 +12,7 @@ Characteristic member: `1 / x ∈ 𝓕ₙ` for `n ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Farey Series](poly-farey-series.md)
 
 ## Sources
 

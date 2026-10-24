@@ -15,7 +15,7 @@ Sequences 29 (2026), Article 26.3.8, Lemma 8.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Residue Walk](gobel-residue-walk.md)
 
 ## Sources
 

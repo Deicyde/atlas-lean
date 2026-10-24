@@ -14,6 +14,10 @@ The vertex of the `k`-generalized Cohn tree `GCT(k, ℓ)`, the full subtree of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wide Gen Cohn Tree](wide-gen-cohn-tree.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedMarkovUniquenessWanted](../../../../../sources/v2/WantedExt.md)

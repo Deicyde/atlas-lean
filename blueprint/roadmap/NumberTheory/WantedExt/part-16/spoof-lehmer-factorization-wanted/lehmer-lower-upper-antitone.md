@@ -13,7 +13,8 @@ pointwise does not increase `L` or `U`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer Lower](lehmer-lower.md)
+- [Lehmer Upper](lehmer-upper.md)
 
 ## Sources
 

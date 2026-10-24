@@ -11,7 +11,11 @@ Eliminate the variables of `xs`, first to last.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Eliminate](eliminate.md)
 
 ## Sources
 

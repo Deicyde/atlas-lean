@@ -11,7 +11,10 @@ Stacks of the extended machine from base stacks `S` and input `xs`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
+- [IK](ik.md)
+- [IΓ](i.md)
 
 ## Sources
 

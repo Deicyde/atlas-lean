@@ -14,7 +14,7 @@ range to satisfy the clauses with the literal taking the value `val`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

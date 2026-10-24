@@ -11,7 +11,15 @@ Driver-local view of the stacks after the tokenizer accepts `φ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](../sat-check/k.md)
+- [Sym](../sat-verifier-spec/sym.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Ents](../sat-verifier-spec/ents.md)
+- [Tbl Stk](../sat-verifier-spec/tbl-stk.md)
+- [Toks](../sat-verifier-spec/toks.md)
 
 ## Sources
 

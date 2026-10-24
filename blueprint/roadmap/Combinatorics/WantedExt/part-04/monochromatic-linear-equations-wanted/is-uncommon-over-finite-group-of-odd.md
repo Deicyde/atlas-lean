@@ -13,7 +13,7 @@ coefficients all coprime to `|G|`, the equation is `r`-uncommon over `G` for eve
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Uncommon Over Finite Group](is-uncommon-over-finite-group.md)
 
 ## Sources
 

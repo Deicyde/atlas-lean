@@ -12,7 +12,9 @@ For an admissible sequence `(mᵢ, aᵢ)_{i = 0, …, k}`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Sequence](is-admissible-sequence.md)
+- [Is Substitution](is-substitution.md)
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.degenerateStirlingFirst_zero_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Stirling First](degenerate-stirling-first.md)
 
 ## Sources
 

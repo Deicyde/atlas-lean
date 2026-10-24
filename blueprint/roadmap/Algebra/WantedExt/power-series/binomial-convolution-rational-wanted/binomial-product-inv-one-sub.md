@@ -11,7 +11,7 @@ lean: MetaMathlibExt.binomialProduct_inv_one_sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
 
 ## Sources
 

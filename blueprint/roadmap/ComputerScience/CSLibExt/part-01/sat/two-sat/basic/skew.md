@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.SAT.TwoSAT.ImpEdge.skew
 
 ## Depends on
 
-This node has no prerequisites.
+- [Imp Edge](imp-edge.md)
+- [Neg](neg.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

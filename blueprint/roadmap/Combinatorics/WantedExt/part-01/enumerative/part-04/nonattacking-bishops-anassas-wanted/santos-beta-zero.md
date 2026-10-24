@@ -12,7 +12,7 @@ lean: MetaMathlibExt.santosBeta_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Santos Beta](santos-beta.md)
 
 ## Sources
 

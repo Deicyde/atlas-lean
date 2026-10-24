@@ -13,6 +13,10 @@ The decidable form of `IsHamPath n es s t p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chain Ok](chain-ok.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPathCheck](../../../../../../../sources/v2/CSLibExt.md)

@@ -14,7 +14,7 @@ automorphism group of the binary relation `X` on `Z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Automorphism Group Of](is-automorphism-group-of.md)
 
 ## Sources
 

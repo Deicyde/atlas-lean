@@ -12,7 +12,8 @@ lean: MetaMathlibExt.lucasV_kJacobsthal_even_odd_eq_integral
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Jacobsthal Params](k-jacobsthal-params.md)
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

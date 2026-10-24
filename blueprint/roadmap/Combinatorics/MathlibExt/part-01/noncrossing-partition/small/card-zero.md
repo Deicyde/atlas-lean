@@ -12,7 +12,15 @@ lean: NoncrossingPartition.card_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Partition](../basic/noncrossing-partition.md)
+- [Has Crossing](../basic/has-crossing.md)
+- [Is Noncrossing](../basic/is-noncrossing.md)
+- [Set Partition](../basic/set-partition.md)
+
+## Proof depends on
+
+- [Indiscrete](../operations/indiscrete.md)
+- [Indiscrete parts zero](../operations/indiscrete-parts-zero.md)
 
 ## Sources
 

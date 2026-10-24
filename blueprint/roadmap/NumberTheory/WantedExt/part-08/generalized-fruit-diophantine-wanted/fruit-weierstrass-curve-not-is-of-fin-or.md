@@ -13,7 +13,8 @@ whose order is not a prime power with `x₀ ∈ 𝓞_K` and `2 ∣ x₀`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fruit Weierstrass Curve](fruit-weierstrass-curve.md)
+- [Two Unramified Degree One Primes](two-unramified-degree-one-primes.md)
 
 ## Sources
 

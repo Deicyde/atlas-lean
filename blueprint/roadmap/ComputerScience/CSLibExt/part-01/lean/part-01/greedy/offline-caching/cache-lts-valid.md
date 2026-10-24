@@ -12,7 +12,8 @@ Legal transitions keep the cache duplicate-free and within capacity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Cache LTS](cache-lts.md)
 
 ## Sources
 

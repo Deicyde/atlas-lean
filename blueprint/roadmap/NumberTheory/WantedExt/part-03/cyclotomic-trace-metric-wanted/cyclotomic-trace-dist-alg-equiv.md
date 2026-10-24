@@ -12,7 +12,7 @@ lean: MetaMathlibExt.cyclotomicTraceDist_algEquiv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
 
 ## Sources
 

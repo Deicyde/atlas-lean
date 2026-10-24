@@ -11,7 +11,13 @@ The M-step: `π k' = N k / N` and `p k j' = (∑ n, r n k xₙ j) / N k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Params](params.md)
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Mass](mass.md)
+- [Ones](ones.md)
 
 ## Sources
 

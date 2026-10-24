@@ -13,7 +13,7 @@ Three-dimensional mex step: if `g`, `h` have the NS property, `x â‰¤ g z`, `y â‰
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

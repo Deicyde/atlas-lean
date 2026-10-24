@@ -12,7 +12,8 @@ lean: MetaMathlibExt.polyPowerSum_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Elem Symm](poly-elem-symm.md)
+- [Poly Power Sum](poly-power-sum.md)
 
 ## Sources
 

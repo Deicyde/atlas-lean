@@ -11,7 +11,12 @@ lean: Cslib.Algorithms.Lean.MetricTSP.IsMinSpanning
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+
+## Proof depends on
+
+- [Weight](weight.md)
+- [Is Spanning](is-spanning.md)
 
 ## Sources
 

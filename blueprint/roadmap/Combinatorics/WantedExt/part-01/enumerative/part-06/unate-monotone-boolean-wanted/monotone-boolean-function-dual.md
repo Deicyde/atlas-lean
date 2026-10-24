@@ -12,7 +12,7 @@ Proposition 5 (OEIS A003183): if `f` is monotone then so is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

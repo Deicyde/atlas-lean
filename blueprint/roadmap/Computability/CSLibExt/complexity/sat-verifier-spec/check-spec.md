@@ -11,7 +11,13 @@ The clause check: every clause has a literal whose looked-up value is its polari
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ent](ent.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Live Val](live-val.md)
+- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

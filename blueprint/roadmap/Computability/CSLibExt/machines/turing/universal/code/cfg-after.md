@@ -12,7 +12,13 @@ machine halts earlier.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Cfg](cfg.md)
+
+## Proof depends on
+
+- [Init](init.md)
+- [Step Or Stay](step-or-stay.md)
 
 ## Sources
 

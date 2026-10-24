@@ -12,7 +12,13 @@ density (`MetaMathlibExt.multivariateGaussianPDFReal`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Params](params.md)
+- [Valid](valid.md)
+- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

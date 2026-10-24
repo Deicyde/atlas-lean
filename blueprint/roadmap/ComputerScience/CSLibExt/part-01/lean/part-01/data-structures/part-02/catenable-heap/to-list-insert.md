@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.CatenableHeap.toList_insert
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Insert](insert.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [To List cons](to-list-cons.md)
 
 ## Sources
 

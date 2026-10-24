@@ -16,7 +16,12 @@ cast, hence finite).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected Time](expected-time.md)
+- [Uniform Permutation](uniform-permutation.md)
+
+## Proof depends on
+
+- [Expected Time uniform Permutation](expected-time-uniform-permutation.md)
 
 ## Sources
 

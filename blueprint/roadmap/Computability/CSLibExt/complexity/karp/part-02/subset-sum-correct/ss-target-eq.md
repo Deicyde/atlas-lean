@@ -12,7 +12,12 @@ The target in base 4: `k` on top, and digit `q` is `2` exactly on the edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairs](../../part-01/clique/pairs.md)
+- [Ss Target](../subset-sum/ss-target.md)
+
+## Proof depends on
+
+- [Pair Digit](../subset-sum/pair-digit.md)
 
 ## Sources
 

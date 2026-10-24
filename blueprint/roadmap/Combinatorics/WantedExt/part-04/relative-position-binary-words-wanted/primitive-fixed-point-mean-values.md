@@ -16,7 +16,11 @@ positive eigenvector of a primitive matrix belongs to the Perron–Frobenius eig
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Is Substitution Image](is-substitution-image.md)
+- [Letter Count](letter-count.md)
+- [Letter Position](letter-position.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

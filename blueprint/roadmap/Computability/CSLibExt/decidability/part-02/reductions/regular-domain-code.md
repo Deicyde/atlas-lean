@@ -14,6 +14,10 @@ Sipser's `REGULAR_TM`, which asks about the accepted words instead.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unary Lang](unary-lang.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.Reductions](../../../../../../sources/v2/CSLibExt.md)

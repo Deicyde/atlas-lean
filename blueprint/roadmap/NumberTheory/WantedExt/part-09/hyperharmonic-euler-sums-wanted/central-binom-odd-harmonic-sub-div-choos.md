@@ -15,7 +15,7 @@ where `O_j = O_j(1)` and `ζ(2)` is written `π² / 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
 
 ## Sources
 

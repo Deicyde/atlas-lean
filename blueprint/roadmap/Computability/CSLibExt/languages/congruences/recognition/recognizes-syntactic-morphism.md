@@ -12,7 +12,11 @@ The canonical syntactic morphism recognizes its language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic Accept](../syntactic/syntactic-accept.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

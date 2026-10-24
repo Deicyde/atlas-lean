@@ -14,6 +14,10 @@ are needed, and each step at most doubles the length.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hof Grow Aux](hof-grow-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedHofstadterOrderWanted](../../../../../sources/v2/WantedExt.md)

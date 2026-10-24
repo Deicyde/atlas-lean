@@ -12,7 +12,13 @@ Proposition 4.1 (iv): `C^X₀,₁ = (X - 3)/X`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Array X](circuit-array-x.md)
+
+## Proof depends on
+
+- [Circuit Edge](circuit-edge.md)
+- [Circuit Grid](circuit-grid.md)
+- [Circuit Reduce](circuit-reduce.md)
 
 ## Sources
 

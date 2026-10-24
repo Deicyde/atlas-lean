@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Linear Arrangement Instance](minimum-linear-arrangement-instance.md)
 
 ## Sources
 

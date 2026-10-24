@@ -13,7 +13,8 @@ The Lambert series `f(q) = ∑_{n ≥ 1} n q^n / (1 - q^n)` (`lambertF`) and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lambert F](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-series/lambert-f.md)
+- [Lambert G](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-series/lambert-g.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ The decomposition `n = u(n) v(n)²` for `n ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split U](square-split-u.md)
+- [Square Split V](square-split-v.md)
 
 ## Sources
 

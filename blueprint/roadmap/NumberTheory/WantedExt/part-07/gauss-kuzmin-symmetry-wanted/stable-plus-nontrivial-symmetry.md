@@ -13,7 +13,8 @@ If `a = (a₁, …, aₙ)` is a stable string of positive integers, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stable String](is-stable-string.md)
+- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ Proposition 1: some Sidon set is not in the almost thin sets ideal `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Almost Thin Set](is-almost-thin-set.md)
+- [Generated Ideal](generated-ideal.md)
+- [Sidon](../../../../MathlibExt/part-01/additive/is-sidon.md)
 
 ## Sources
 

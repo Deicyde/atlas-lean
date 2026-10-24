@@ -13,6 +13,10 @@ Machine state: the last popped symbol.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [G](g.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.DenseSATVerifier](../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,12 @@ For positive `a` and `b`, `gcd₁(a, b)` divides `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Unitary](gcd-unitary.md)
+
+## Proof depends on
+
+- [Gcd Unitary mem unitary Divisors](gcd-unitary-mem-unitary-divisors.md)
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

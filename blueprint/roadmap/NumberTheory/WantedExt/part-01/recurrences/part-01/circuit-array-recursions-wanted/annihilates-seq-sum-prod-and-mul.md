@@ -14,7 +14,7 @@ multiplicity, then `∏_{j, j'} (E - r₁,ⱼ r₂,ⱼ')` annihilates the termwi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Annihilates Seq](annihilates-seq.md)
 
 ## Sources
 

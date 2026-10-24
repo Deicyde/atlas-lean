@@ -12,7 +12,7 @@ The color map that is constantly `∅` gives `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite MZVColored](finite-mzvcolored.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ For `n ≥ 4` and `1 ≤ m < ⌈(2n-1)/3⌉ = (2n+1)/3`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
+- [Superimpose](superimpose.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ nonzero and formula (29) gives `x_{-σ+2} = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

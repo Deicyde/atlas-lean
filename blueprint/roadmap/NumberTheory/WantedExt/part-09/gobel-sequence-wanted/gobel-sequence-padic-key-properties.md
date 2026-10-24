@@ -18,7 +18,7 @@ iff `g_{k₂,l}(n) ∈ ℤ_(p)`, and then `g_{k₁,l}(n) - g_{k₂,l}(n) ∈ p^{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

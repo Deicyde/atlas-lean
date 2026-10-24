@@ -12,7 +12,12 @@ A maximum likelihood estimate exists for every design.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Likelihood](gauss-likelihood.md)
+
+## Proof depends on
+
+- [Least-squares estimates exist](exists-normal.md)
+- [Least squares is maximum likelihood](is-max-on-gauss-likelihood-iff.md)
 
 ## Sources
 

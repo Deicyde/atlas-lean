@@ -12,7 +12,7 @@ The paper's example: `1001001` is the repstring with `b = 10`, `k = 1`, `z = 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Repstring](repstring.md)
 
 ## Sources
 

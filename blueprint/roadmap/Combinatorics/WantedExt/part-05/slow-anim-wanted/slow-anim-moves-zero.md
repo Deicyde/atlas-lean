@@ -12,7 +12,11 @@ The empty position has no options.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Moves](slow-anim-moves.md)
+
+## Proof depends on
+
+- [Slow ANim After](slow-anim-after.md)
 
 ## Sources
 

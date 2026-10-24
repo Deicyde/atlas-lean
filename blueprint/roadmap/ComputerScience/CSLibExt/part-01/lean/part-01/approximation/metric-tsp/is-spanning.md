@@ -12,7 +12,11 @@ each once.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+
+## Proof depends on
+
+- [Preorder](preorder.md)
 
 ## Sources
 

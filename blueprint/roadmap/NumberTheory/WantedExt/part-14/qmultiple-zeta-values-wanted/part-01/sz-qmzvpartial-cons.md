@@ -12,7 +12,7 @@ The defining sum peels off its outermost summation variable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz QMZVPartial](sz-qmzvpartial.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ is not needed and is dropped.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Digit Seq](luroth-digit-seq.md)
 
 ## Sources
 

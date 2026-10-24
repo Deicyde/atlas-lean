@@ -12,7 +12,15 @@ Every clause of the translation has at most three literals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is3](../three-sat/is3.md)
+- [To3](../three-sat/to3.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Length le three of mem to3 Aux](length-le-three-of-mem-to3-aux.md)
+- [To3 Aux](../three-sat/to3-aux.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

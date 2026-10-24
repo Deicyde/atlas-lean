@@ -11,7 +11,13 @@ Time bound: one whole clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [N Lits](n-lits.md)
+- [Num Vars](num-vars.md)
+- [Lit E](lit-e.md)
 
 ## Sources
 

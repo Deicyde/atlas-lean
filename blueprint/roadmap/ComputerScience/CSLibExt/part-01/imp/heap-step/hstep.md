@@ -11,7 +11,7 @@ Single small-step transitions between heap configurations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HConfig](hconfig.md)
 
 ## Sources
 

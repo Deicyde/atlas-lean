@@ -12,7 +12,7 @@ lean: MetaMathlibExt.zeckendorfRev_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeckendorf Rev](zeckendorf-rev.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The recursion `f(n) = Σ_{d ∣ n, d < n} f(d)` for `n ≥ 2` (split off the fir
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Factorization Count](ordered-factorization-count.md)
+
+## Proof depends on
+
+- [Ordered Factorization Count Aux](ordered-factorization-count-aux.md)
+- [Ordered Factorization Count Aux eq](ordered-factorization-count-aux-eq.md)
 
 ## Sources
 

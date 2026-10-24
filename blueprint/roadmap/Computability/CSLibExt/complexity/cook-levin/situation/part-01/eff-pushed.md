@@ -12,7 +12,12 @@ Every symbol left in `P` is one that was there already or one `q` can push.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Push Sym](push-sym.md)
+- [Eff](eff.md)
+
+## Proof depends on
+
+- [Read Top](read-top.md)
 
 ## Sources
 

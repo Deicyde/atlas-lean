@@ -11,7 +11,7 @@ The pair condition when `i` does not settle it: bit `b`, whether `j` is chosen.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
 
 ## Sources
 

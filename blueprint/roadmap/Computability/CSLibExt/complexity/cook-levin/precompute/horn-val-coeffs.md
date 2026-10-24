@@ -12,7 +12,12 @@ lean: Cslib.Complexity.CookLevin.Precompute.hornVal_coeffs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coeffs](coeffs.md)
+- [Horn Val](horn-val.md)
+
+## Proof depends on
+
+- [Horn Val eq](horn-val-eq.md)
 
 ## Sources
 

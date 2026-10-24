@@ -11,7 +11,7 @@ A non-overlapping placement inside the strip.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strip Packing Instance](strip-packing-instance.md)
 
 ## Sources
 

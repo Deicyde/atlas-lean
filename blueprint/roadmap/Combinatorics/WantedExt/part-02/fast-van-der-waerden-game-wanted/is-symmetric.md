@@ -13,6 +13,10 @@ lean: MetaMathlibExt.FastVanDerWaerdenGame.IsSymmetric
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Symmetric Of Type](is-symmetric-of-type.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.FastVanDerWaerdenGameWanted](../../../../../sources/v2/WantedExt.md)

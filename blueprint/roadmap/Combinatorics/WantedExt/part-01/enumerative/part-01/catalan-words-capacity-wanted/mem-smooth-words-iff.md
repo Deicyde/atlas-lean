@@ -13,7 +13,7 @@ letters is automatic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smooth Words](smooth-words.md)
 
 ## Sources
 

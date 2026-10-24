@@ -11,7 +11,11 @@ A spanning tree of maximum degree at most `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degree Constrained Spanning Tree Instance](degree-constrained-spanning-tree-instanc.md)
+
+## Proof depends on
+
+- [Edge Graph](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
 
 ## Sources
 

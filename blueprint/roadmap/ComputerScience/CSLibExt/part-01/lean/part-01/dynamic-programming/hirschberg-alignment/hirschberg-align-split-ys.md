@@ -12,7 +12,14 @@ The split-`ys` unfolding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+- [Best Argmax](best-argmax.md)
+- [Hirschberg Align](hirschberg-align.md)
+- [Nw Score](../sequence-alignment/nw-score.md)
+
+## Proof depends on
+
+- [Small Align](small-align.md)
 
 ## Sources
 

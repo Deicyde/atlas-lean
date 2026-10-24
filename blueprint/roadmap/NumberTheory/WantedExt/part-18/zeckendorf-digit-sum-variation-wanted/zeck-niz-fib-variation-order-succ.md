@@ -13,7 +13,9 @@ carry `Δ^{(F_ℓ)} = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic Of Nat](zeck-adic-of-nat.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
+- [Zeck NIZ](zeck-niz.md)
 
 ## Sources
 

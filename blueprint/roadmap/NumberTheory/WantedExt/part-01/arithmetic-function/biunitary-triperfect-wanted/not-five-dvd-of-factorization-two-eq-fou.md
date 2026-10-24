@@ -12,7 +12,7 @@ and `f ≥ 5`, then `5 ∤ N`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Theorem 1 (quoting Hegarty), size 7: no set of seven integers is an MSTD set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](../union-two-apnot-mstdwanted/is-mstdset.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ A well-formed locked schedule: accesses are covered by locks, and all locks are 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+
+## Proof depends on
+
+- [Locks Cover](locks-cover.md)
+- [Releases Locks](releases-locks.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: MetaMathlibExt.brousseauCoeff_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Brousseau Coeff](brousseau-coeff.md)
+
+## Proof depends on
+
+- [Brousseau A](brousseau-a.md)
+- [Brousseau A one](brousseau-a-one.md)
+- [Brousseau A zero](brousseau-a-zero.md)
 
 ## Sources
 

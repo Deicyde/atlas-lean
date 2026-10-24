@@ -12,7 +12,7 @@ partition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Class](diagonal-class.md)
 
 ## Sources
 

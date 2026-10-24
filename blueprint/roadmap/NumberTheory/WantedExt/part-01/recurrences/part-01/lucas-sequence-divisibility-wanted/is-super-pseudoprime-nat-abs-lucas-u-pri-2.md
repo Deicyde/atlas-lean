@@ -20,7 +20,13 @@ source writes the exclusion as "`p ≠ 13` if `P = ±1`, `Q = 2`", which is vacu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Frobenius Pseudoprime](is-lucas-frobenius-pseudoprime.md)
+- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
+- [Is Super Pseudoprime](is-super-pseudoprime.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

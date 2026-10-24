@@ -12,7 +12,14 @@ lean: MetaMathlibExt.hofWord_eq_getElem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Tau List](hof-tau-list.md)
+- [Hof Word](hof-word.md)
+
+## Proof depends on
+
+- [Exists hof Grow eq](exists-hof-grow-eq.md)
+- [Hof Grow](hof-grow.md)
+- [Hof Tau List iterate is Prefix](hof-tau-list-iterate-is-prefix.md)
 
 ## Sources
 

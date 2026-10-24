@@ -12,7 +12,7 @@ If `k - 1` is prime and `k - 1 ∤ n - 1 - P` for every generalized pentagonal n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

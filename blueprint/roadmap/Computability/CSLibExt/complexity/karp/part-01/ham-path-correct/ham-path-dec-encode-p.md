@@ -12,7 +12,13 @@ lean: Cslib.Complexity.Karp.hamPathDec_encodeP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ham Path](../ham-path/is-ham-path.md)
+- [Ham Path Dec](../ham-path/ham-path-dec.md)
+- [Encode P](../../../path/encode-p.md)
+
+## Proof depends on
+
+- [Encode P inj](../../../path-correct/encode-p-inj.md)
 
 ## Sources
 

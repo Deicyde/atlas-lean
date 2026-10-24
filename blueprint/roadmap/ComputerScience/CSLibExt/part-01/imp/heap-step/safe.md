@@ -12,7 +12,15 @@ at a command other than `skip`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HConfig](hconfig.md)
+
+## Proof depends on
+
+- [HStep](hstep.md)
+- [HSteps](hsteps.md)
+- [Heap](../heap/heap.md)
+- [Heap Cmd](heap-cmd.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

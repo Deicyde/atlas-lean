@@ -12,7 +12,8 @@ Let `S` be a perfect cover of an abelian group of order `2^n`. (a) For disjoint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Cover](is-perfect-cover.md)
+- [Odd Combinations](odd-combinations.md)
 
 ## Sources
 

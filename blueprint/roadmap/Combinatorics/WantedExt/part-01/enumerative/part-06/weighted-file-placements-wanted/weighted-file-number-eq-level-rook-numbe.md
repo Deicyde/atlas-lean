@@ -15,7 +15,9 @@ just before the corollary).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Singleton Board](is-singleton-board.md)
+- [Level Rook Number](level-rook-number.md)
+- [Weighted File Number](weighted-file-number.md)
 
 ## Sources
 

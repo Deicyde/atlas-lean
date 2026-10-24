@@ -13,7 +13,7 @@ Proposition 7 (prime reduction), first identity of Equation (6): for completely 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Completely Additive Nat](is-completely-additive-nat.md)
 
 ## Sources
 

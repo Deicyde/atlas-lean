@@ -13,7 +13,7 @@ closure witnessed within each initial segment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standard Young Tableau](is-standard-young-tableau.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ on some interval `|x| < ε`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
 
 ## Sources
 

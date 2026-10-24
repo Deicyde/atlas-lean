@@ -15,6 +15,10 @@ least `s`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partition Col Len](partition-col-len.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.FixedColumnHooksWanted](../../../../../../../sources/v2/WantedExt.md)

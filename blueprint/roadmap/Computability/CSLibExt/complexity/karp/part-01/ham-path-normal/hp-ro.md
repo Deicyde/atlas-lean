@@ -14,6 +14,10 @@ Row vertex `l` of diamond `i`, counted from the left end (`b = true`) or from th
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hp R](../ham-path/hp-r.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPathNormal](../../../../../../../sources/v2/CSLibExt.md)

@@ -15,7 +15,10 @@ optimality sentence is omitted because its precise formal content is delegated t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lcm Reciprocal Sum](lcm-reciprocal-sum.md)
+- [Recip Sum Up To](recip-sum-up-to.md)
+- [Trunc Log2](trunc-log2.md)
+- [Trunc Log3](trunc-log3.md)
 
 ## Sources
 

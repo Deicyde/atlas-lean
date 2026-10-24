@@ -52,7 +52,8 @@ theorem stk_ext {St : ∀ _ : K, List Sym} {t b s a c v : List Sym} (hT : St .T 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [Bit?](../sat-verifier-spec/bit.md)
 
 ## Sources
 

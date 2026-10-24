@@ -11,7 +11,7 @@ If `n = p^{2e}` for an odd prime `p` and `e ≥ 1`, then `𝒫_n` is coprime to 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Resultant Product](truncated-log-resultant-product.md)
 
 ## Sources
 

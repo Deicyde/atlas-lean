@@ -13,7 +13,7 @@ Theorem 1: for `k ≥ 3`, `n ≥ 2` and `m` coprime to `n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Product Sum](modular-product-sum.md)
 
 ## Sources
 

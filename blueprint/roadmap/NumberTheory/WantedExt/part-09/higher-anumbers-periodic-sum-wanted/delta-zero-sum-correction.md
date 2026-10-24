@@ -14,6 +14,11 @@ Lemma 9, written with `y = x^{-1}` as in the paper's `F_{x^{-1}}`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Higher ANumber Delta Zero](higher-anumber-delta-zero.md)
+- [Tau Den](tau-den.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HigherANumbersPeriodicSumWanted](../../../../../sources/v2/WantedExt.md)

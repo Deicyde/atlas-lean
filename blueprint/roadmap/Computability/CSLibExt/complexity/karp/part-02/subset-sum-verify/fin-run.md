@@ -12,7 +12,19 @@ Carrying `c` through the rest `u` of the sum: `|u| + 1` steps to `back`, with `A
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Inc B](inc-b.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

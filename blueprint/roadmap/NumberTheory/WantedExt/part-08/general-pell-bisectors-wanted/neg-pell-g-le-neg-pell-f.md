@@ -15,7 +15,8 @@ reading fails at `d = 5`, `f_1 = 2`) is not formalized.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
+- [Neg Pell G](neg-pell-g.md)
 
 ## Sources
 

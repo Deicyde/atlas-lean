@@ -19,7 +19,8 @@ fix `F` exactly when `F (g · (c + (a, 0))) = g • F c`, the fixed-point condit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cylinder Shift Sum](cylinder-shift-sum.md)
+- [Rect Cell Action](rect-cell-action.md)
 
 ## Sources
 

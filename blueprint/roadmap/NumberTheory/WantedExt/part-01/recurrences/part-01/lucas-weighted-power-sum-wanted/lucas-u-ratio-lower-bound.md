@@ -13,7 +13,8 @@ Lemma 2.3: for `x ≥ 1` and `|y + 1| ≤ x` (`y ≠ 0`): if `y < 0` then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

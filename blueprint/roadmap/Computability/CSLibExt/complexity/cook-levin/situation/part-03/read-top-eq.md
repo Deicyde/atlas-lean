@@ -12,7 +12,8 @@ Reading the window below the consumed prefix is reading the real top.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Read Top](../part-01/read-top.md)
+- [Window](../part-02/window.md)
 
 ## Sources
 

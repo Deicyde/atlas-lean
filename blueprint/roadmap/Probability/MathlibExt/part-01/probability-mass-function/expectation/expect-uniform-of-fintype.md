@@ -13,7 +13,12 @@ is the average of the values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect](expect.md)
+- [Uniform Fintype](../uniform/uniform-fintype.md)
+
+## Proof depends on
+
+- [Expect eq sum](expect-eq-sum.md)
 
 ## Sources
 

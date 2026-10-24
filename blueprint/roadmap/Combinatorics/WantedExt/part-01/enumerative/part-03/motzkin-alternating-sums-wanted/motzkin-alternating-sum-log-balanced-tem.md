@@ -18,7 +18,7 @@ cleared of denominators (all terms are positive here).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Alternating Sum](motzkin-alternating-sum.md)
 
 ## Sources
 

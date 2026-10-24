@@ -13,7 +13,14 @@ lean: Cslib.MachineLearning.GraphicalModels.ConditionalRandomField.partition_eq_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+- [Forward](forward.md)
+- [Partition](partition.md)
+
+## Proof depends on
+
+- [The forward variables are path weights](forward-eq.md)
+- [Path Weight](path-weight.md)
 
 ## Sources
 

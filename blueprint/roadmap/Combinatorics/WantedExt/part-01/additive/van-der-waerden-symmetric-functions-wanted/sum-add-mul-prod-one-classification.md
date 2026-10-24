@@ -14,7 +14,9 @@ vanishing; (c) if `n = 6`, then `F_1` is `1`-vanishing but not `m`-vanishing for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MVanishing Family](is-mvanishing-family.md)
+- [Is Vanishing Family](is-vanishing-family.md)
+- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
 
 ## Sources
 

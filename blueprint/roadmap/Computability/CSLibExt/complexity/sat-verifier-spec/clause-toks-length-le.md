@@ -12,7 +12,16 @@ A clause has no more tokens than encoding bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](sym.md)
+- [Clause Toks](clause-toks.md)
+- [Encode Clause](../../cook-levin/encode-clause.md)
+- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Lit Toks](lit-toks.md)
+- [Encode Lit](../../cook-levin/encode-lit.md)
+- [Delimit](../../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

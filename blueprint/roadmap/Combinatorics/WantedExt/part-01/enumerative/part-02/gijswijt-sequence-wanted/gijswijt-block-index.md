@@ -14,6 +14,11 @@ lean: MetaMathlibExt.gijswijtBlockIndex
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gijswijt Block Length](gijswijt-block-length.md)
+- [Gijswijt First Occurrence](gijswijt-first-occurrence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GijswijtSequenceWanted](../../../../../../../sources/v2/WantedExt.md)

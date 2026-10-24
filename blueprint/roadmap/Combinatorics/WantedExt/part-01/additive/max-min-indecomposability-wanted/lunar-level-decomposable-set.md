@@ -14,6 +14,12 @@ monomials, `a = ⌊b/2⌋`; then `ℐ_b^n = Σ_b^n \ 𝒟_b^n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Digit Seq](digit-seq.md)
+- [Lunar Level Count](lunar-level-count.md)
+- [Max Min Mul](max-min-mul.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.MaxMinIndecomposabilityWanted](../../../../../../sources/v2/WantedExt.md)

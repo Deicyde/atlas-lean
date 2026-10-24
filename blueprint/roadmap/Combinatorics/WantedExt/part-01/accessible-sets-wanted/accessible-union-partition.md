@@ -11,7 +11,7 @@ If a union is accessible, then one of its two summands is accessible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Accessible](is-accessible.md)
 
 ## Sources
 

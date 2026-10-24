@@ -11,7 +11,14 @@ The layout machine as a host component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](../../../../complexity/host/comp.md)
+
+## Proof depends on
+
+- [K](k-2.md)
+- [Lab](lab-2.md)
+- [Prog](prog-2.md)
+- [Γ](untitled-2.md)
 
 ## Sources
 

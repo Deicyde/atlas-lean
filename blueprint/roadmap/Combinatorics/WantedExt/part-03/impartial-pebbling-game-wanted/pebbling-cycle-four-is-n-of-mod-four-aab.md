@@ -11,7 +11,9 @@ Theorem 19: every `C_4` `(2:1)`-pebbling game in `Y_{aabc}` is an N-game.
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Mod Four AABC](c4-mod-four-aabc.md)
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
 
 ## Sources
 

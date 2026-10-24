@@ -12,7 +12,16 @@ lean: Cslib.MachineLearning.Variational.kl_posterior_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Kl](kl.md)
+- [Posterior](posterior.md)
+
+## Proof depends on
+
+- [Elbo](elbo.md)
+- [ELBO = log evidence - KL](elbo-eq-log-evidence-sub-kl.md)
+- [The ELBO is a lower bound](elbo-le-log-evidence.md)
+- [Evidence](evidence.md)
 
 ## Sources
 

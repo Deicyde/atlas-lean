@@ -12,7 +12,7 @@ For odd `A, B` and `n ≥ 1`, the map `[a] ↦ [PV(a)]` is a well-defined biject
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Collatz Parity Vector](q-collatz-parity-vector.md)
 
 ## Sources
 

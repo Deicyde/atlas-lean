@@ -12,7 +12,7 @@ Proposition 8: a smooth arithmetical structure on `CT(p, s)` (`p ≥ 1`) has
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Smooth Coconut](is-smooth-coconut.md)
 
 ## Sources
 

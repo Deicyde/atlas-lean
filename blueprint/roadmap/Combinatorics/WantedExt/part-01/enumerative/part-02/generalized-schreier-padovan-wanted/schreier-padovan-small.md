@@ -13,7 +13,7 @@ for `n = 0, …, 7`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Padovan](schreier-padovan.md)
 
 ## Sources
 

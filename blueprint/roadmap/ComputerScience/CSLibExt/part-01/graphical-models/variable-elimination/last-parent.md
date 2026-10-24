@@ -11,7 +11,7 @@ The parent of the last vertex, as a vertex of the smaller tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](tree-model.md)
 
 ## Sources
 

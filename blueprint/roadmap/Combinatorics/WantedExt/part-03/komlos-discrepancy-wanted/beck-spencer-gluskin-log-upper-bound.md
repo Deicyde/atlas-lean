@@ -13,6 +13,10 @@ One positive universal multiplier gives the logarithmic upper bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dimension Constant](../../../MathlibExt/part-03/matrix-discrepancy/dimension-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.KomlosDiscrepancyWanted](../../../../../sources/v2/WantedExt.md)

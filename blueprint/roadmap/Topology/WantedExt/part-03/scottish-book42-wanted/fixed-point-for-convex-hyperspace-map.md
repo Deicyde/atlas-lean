@@ -25,7 +25,7 @@ in it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hausdorff Continuous On Convex Compacts](hausdorff-continuous-on-convex-compacts.md)
 
 ## Sources
 

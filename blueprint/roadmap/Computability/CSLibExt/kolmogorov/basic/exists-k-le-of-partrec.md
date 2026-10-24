@@ -13,7 +13,15 @@ constant worse than any partial recursive description method `D`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](k.md)
+
+## Proof depends on
+
+- [K le](k-le.md)
+- [The universal description method](u.md)
+- [Describe](describe.md)
+- [Exists run eq](exists-run-eq.md)
+- [Run](run.md)
 
 ## Sources
 

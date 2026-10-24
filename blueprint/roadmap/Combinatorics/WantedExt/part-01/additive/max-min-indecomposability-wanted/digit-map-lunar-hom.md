@@ -14,7 +14,7 @@ monotone `d : ℕ → ℕ` and all coefficient sequences; a base-`b` digit map e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Min Mul](max-min-mul.md)
 
 ## Sources
 

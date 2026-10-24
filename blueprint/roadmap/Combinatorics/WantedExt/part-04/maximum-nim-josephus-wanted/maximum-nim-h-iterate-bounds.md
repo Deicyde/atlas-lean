@@ -17,7 +17,7 @@ cast to `ℝ`, and `Nat.iterate` is the functional power; there is no deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim H](maximum-nim-h.md)
 
 ## Sources
 

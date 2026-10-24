@@ -13,7 +13,7 @@ Small values: for `ω ≡ 1` and `β = 1` (the paper's first example),
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Step Pattern Den](two-step-pattern-den.md)
 
 ## Sources
 

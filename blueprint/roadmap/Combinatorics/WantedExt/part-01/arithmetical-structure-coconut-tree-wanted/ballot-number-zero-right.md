@@ -12,7 +12,7 @@ lean: MetaMathlibExt.ballotNumber_zero_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ballot Number](ballot-number.md)
 
 ## Sources
 

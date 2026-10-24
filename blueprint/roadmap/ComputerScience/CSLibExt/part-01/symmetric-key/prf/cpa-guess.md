@@ -13,7 +13,13 @@ asks more than `q` encryption queries is stopped and guesses `false`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+
+## Proof depends on
+
+- [Encrypt](encrypt.md)
+- [Pick](pick.md)
+- [Run Enc](run-enc.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ equals `2^{s-1} - 1` or `2^s + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

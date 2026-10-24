@@ -13,6 +13,10 @@ The area distribution `∑_{w ∈ S} q^{area w}` of a finite set of words.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Word Area](word-area.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CatalanWordsCapacityWanted](../../../../../../../sources/v2/WantedExt.md)

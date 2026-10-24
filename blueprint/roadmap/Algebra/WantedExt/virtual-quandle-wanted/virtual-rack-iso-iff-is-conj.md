@@ -12,7 +12,8 @@ they are conjugate in `Aut R`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Virtual Rack Iso](virtual-rack-iso.md)
+- [Rack Aut](rack-aut.md)
 
 ## Sources
 

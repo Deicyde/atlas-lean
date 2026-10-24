@@ -15,7 +15,10 @@ second identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Is Substitution Image](is-substitution-image.md)
+- [Letter Position](letter-position.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The weights after `rs ++ rs'` are the weights after `rs'`, started from those af
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+- [Weights](weights.md)
+
+## Proof depends on
+
+- [Update](update.md)
 
 ## Sources
 

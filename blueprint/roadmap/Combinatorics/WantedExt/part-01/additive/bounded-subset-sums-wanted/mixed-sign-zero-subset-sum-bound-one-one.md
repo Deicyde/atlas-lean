@@ -12,7 +12,7 @@ lean: MetaMathlibExt.mixedSignZeroSubsetSumBound_one_one_one_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Sign Zero Subset Sum Bound](mixed-sign-zero-subset-sum-bound.md)
 
 ## Sources
 

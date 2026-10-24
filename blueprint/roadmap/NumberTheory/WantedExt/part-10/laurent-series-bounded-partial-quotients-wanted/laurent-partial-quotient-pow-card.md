@@ -12,7 +12,9 @@ Frobenius and continued fractions: over `𝔽_q` the continued fraction of `α^q
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Conv Den](laurent-conv-den.md)
+- [Laurent Conv Num](laurent-conv-num.md)
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
 
 ## Sources
 

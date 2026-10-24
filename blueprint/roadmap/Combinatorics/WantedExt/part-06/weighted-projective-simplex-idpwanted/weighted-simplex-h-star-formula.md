@@ -12,7 +12,9 @@ Ehrhart power-series identity and hence is the paper's `h*`-polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is HStar Polynomial](is-hstar-polynomial.md)
+- [H Star Formula](h-star-formula.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

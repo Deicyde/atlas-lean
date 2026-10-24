@@ -12,7 +12,7 @@ and likewise for `r, s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
 
 ## Sources
 

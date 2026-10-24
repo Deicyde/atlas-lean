@@ -12,7 +12,14 @@ Updates never increase the total weight.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+- [Total](total.md)
+- [Update](update.md)
+
+## Proof depends on
+
+- [Total update](total-update.md)
+- [Weight On](weight-on.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ entries, i.e. compositions `k'` whose boundary set contains that of `k`. Here
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiple Polylog](multiple-polylog.md)
 
 ## Sources
 

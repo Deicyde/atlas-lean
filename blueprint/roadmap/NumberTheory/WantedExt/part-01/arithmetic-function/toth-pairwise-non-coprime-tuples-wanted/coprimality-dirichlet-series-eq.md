@@ -16,7 +16,7 @@ neighbourhood of `L`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Indicator](coprimality-indicator.md)
 
 ## Sources
 

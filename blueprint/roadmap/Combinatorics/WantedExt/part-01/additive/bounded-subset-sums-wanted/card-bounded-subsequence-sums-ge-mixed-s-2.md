@@ -14,7 +14,9 @@ For `n` negative terms, the term `0` with multiplicity `t_n` and `p` positive te
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
+- [Repetition Sequence](repetition-sequence.md)
+- [Yang Chen Bound](yang-chen-bound.md)
 
 ## Sources
 

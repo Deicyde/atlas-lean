@@ -16,7 +16,7 @@ term vanishes since `r + im - α > n - ν` for `i > n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ Theorem 2: for `n ≡ 2 (mod 4)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cos Pow Area](cos-pow-area.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The whole semigroup is thick.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Add Thick](is-add-thick.md)
 
 ## Sources
 

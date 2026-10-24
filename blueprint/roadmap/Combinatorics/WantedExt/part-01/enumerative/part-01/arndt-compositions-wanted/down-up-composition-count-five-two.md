@@ -12,7 +12,7 @@ The down/up compositions of `5` with two parts are `(4,1)` and `(3,2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Down Up Composition Count](down-up-composition-count.md)
 
 ## Sources
 

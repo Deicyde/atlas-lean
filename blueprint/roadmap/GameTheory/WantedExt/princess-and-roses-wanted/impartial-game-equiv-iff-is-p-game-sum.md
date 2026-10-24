@@ -11,7 +11,10 @@ Two finite impartial games are equivalent if and only if their sum is a P-positi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
+- [Game Sum](../../MathlibExt/sprague-grundy/game-sum.md)
 
 ## Sources
 

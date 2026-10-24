@@ -12,7 +12,11 @@ The Lucas derivative of the identity is `1` at every point, for `φ ≠ φ'`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Derivative](lucas-derivative.md)
+
+## Proof depends on
+
+- [Lucas Derivative of ne zero](lucas-derivative-of-ne-zero.md)
 
 ## Sources
 

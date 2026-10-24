@@ -11,7 +11,7 @@ Source: BJ2025, arXiv2508.03961, abstract and Theorem `thm:Komlos`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bansal Jiang2025 Quarter Log Upper Bound](bansal-jiang2025-quarter-log-upper-bound.md)
 
 ## Sources
 

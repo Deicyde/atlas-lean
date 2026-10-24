@@ -13,7 +13,14 @@ cached, requests `capacity + 1` distinct pages.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Request](request.md)
+- [Cache LTS](cache-lts.md)
+- [Misses](misses.md)
+
+## Proof depends on
+
+- [Request mem of misses eq zero](request-mem-of-misses-eq-zero.md)
 
 ## Sources
 

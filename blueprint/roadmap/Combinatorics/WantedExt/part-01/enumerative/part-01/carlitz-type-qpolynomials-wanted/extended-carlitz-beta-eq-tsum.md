@@ -12,7 +12,8 @@ for `r ≥ 1`, `β_n^{(r)} = -n ∑ q^{(r+1)k} [k]^{n-1} + r (1 - q) ∑ q^{rk} 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Carlitz Beta Poly](extended-carlitz-beta-poly.md)
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

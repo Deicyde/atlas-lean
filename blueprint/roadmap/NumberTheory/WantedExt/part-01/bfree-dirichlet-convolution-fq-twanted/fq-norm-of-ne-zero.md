@@ -12,7 +12,7 @@ For `f ≠ 0`, `|f| = q ^ deg f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fq Norm](fq-norm.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Expansion emits exactly the summed number of bits, from either starting bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expand From](expand-from.md)
 
 ## Sources
 

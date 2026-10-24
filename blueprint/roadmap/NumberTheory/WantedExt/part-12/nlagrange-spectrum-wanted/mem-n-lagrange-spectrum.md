@@ -12,7 +12,8 @@ Membership in `Lₙ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Approximability](n-lagrange-approximability.md)
+- [N Lagrange Spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

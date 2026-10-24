@@ -12,7 +12,7 @@ multiplicative if and only if `N ∈ {-2, -1, 0, 2}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
 
 ## Sources
 

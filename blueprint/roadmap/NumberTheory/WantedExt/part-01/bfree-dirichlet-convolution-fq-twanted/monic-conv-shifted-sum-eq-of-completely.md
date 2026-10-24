@@ -14,7 +14,8 @@ proof applies Lemma 2, which needs `f` monic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Conv Partial Sum](monic-conv-partial-sum.md)
+- [Monic Conv Shifted Sum](monic-conv-shifted-sum.md)
 
 ## Sources
 

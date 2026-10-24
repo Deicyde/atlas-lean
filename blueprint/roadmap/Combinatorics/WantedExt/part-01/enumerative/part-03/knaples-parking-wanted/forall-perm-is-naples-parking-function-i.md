@@ -14,7 +14,9 @@ Up than Down steps so far).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Naples Parking Function](is-naples-parking-function.md)
+- [Lattice Height](lattice-height.md)
+- [Preference Path](preference-path.md)
 
 ## Sources
 

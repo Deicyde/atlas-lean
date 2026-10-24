@@ -13,7 +13,12 @@ is `r`-accessible whenever `1 ≤ r ≤ s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RAccessible](is-raccessible.md)
+
+## Proof depends on
+
+- [Is DDiff Sequence](is-ddiff-sequence.md)
+- [Is Monochromatic](is-monochromatic.md)
 
 ## Sources
 

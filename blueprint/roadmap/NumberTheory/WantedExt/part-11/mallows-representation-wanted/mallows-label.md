@@ -11,7 +11,12 @@ The label (a pair of fractions) of the Mallows-tree vertex reached by the path `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+
+## Proof depends on
+
+- [Mallows Insert](mallows-insert.md)
+- [Mallows Node](mallows-node.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ A cardinal κ is *weakly compact* if ℵ₀ < κ and κ → (κ)²₂: every 2-c
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partition Calculus](../../infinitary-combinatorics/is-homogeneous-for.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Cardinal.LargeCardinal.WeaklyCompact](../../../../../sources/v2/MathlibExt.md)

@@ -13,6 +13,10 @@ The optimal global alignment score (Needleman–Wunsch).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nw Score Aux](nw-score-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.SequenceAlignment](../../../../../../../../sources/v2/CSLibExt.md)

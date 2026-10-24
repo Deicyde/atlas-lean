@@ -11,7 +11,11 @@ Label/state code of situation `i` (its top digit).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](enc.md)
+
+## Proof depends on
+
+- [G](g-2.md)
 
 ## Sources
 

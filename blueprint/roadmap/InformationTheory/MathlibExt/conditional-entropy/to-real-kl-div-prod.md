@@ -13,7 +13,11 @@ The divergence of a finite joint law from the product of its marginals, in nats,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Entropy](../finite-entropy/shannon-entropy.md)
+
+## Proof depends on
+
+- [Kullback–Leibler divergence on a finite space](../finite-entropy/to-real-kl-div-eq-sum.md)
 
 ## Sources
 

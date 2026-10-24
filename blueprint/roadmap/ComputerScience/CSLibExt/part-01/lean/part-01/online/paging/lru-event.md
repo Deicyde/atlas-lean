@@ -12,7 +12,7 @@ room, or no room at all), or a miss evicting the least recently used page, the l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](../../greedy/offline-caching/cache-event.md)
 
 ## Sources
 

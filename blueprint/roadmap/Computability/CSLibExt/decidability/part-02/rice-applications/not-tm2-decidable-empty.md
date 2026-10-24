@@ -12,7 +12,12 @@ lean: Cslib.Decidability.not_tm2Decidable_empty
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty Code](empty-code.md)
+- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [Rice's theorem for multi-stack machines](../undecidable/rice-tm2.md)
 
 ## Sources
 

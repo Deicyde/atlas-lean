@@ -14,7 +14,8 @@ which does not depend on the enumeration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Triple Set](luroth-triple-set.md)
+- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
 
 ## Sources
 

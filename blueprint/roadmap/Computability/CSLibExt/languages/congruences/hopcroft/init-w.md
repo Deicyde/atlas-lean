@@ -14,6 +14,12 @@ nonempty.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Acc Block](acc-block.md)
+- [Rej Block](rej-block.md)
+- [Smaller](smaller.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.Hopcroft](../../../../../../sources/v2/CSLibExt.md)

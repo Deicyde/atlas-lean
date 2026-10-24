@@ -16,7 +16,7 @@ paper's `1 ≤ m` is kept.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positional Colored Composition Count](positional-colored-composition-count.md)
 
 ## Sources
 

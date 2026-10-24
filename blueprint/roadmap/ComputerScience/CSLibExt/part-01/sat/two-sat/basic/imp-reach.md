@@ -11,7 +11,11 @@ Reachability in the implication graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Imp Edge](imp-edge.md)
 
 ## Sources
 

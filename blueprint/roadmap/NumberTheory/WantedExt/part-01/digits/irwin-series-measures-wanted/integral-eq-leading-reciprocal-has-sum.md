@@ -13,7 +13,9 @@ of `1/(n+x)` against `μ_k`. `HasSum` makes convergence part of the statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Count](digit-count.md)
+- [Irwin Measure](irwin-measure.md)
+- [Leading Reciprocal Term](leading-reciprocal-term.md)
 
 ## Sources
 

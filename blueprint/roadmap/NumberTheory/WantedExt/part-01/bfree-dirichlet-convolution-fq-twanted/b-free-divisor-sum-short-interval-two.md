@@ -14,7 +14,10 @@ Theorem 5, case `h = 2`: under the hypotheses of `bFreeDivisorSum_shortInterval`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is BFree](is-bfree.md)
+- [Fq Norm](fq-norm.md)
+- [Kappa Min](kappa-min.md)
+- [Monic Divisor Count](monic-divisor-count.md)
 
 ## Sources
 

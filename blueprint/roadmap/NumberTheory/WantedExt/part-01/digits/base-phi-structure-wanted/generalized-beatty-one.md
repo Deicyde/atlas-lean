@@ -12,7 +12,7 @@ lean: MetaMathlibExt.generalizedBeatty_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Beatty](generalized-beatty.md)
 
 ## Sources
 

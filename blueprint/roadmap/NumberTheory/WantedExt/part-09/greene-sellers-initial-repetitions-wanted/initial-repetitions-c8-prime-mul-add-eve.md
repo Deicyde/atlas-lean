@@ -13,7 +13,7 @@ counts as a residue.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Repetitions C8](initial-repetitions-c8.md)
 
 ## Sources
 

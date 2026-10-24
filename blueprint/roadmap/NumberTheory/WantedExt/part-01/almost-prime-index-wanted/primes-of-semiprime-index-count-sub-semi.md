@@ -13,7 +13,7 @@ the error is stated as `O(x log log x / log³ x)` after multiplying out the main
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

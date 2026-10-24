@@ -12,7 +12,8 @@ Unfolding `λ_{f×f}(n) = ∑_{d ∣ n, d a square} λ_f(n/d)²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
+- [Rankin Selberg Coeff](rankin-selberg-coeff.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.one_not_mem_quadSchatunowskySet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quad Schatunowsky Set](quad-schatunowsky-set.md)
 
 ## Sources
 

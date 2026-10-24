@@ -12,7 +12,11 @@ The reduction never adds tokens: `r(p)_i ≤ p_i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Reduction](slow-anim-reduction.md)
+
+## Proof depends on
+
+- [Slow ANim Moves](slow-anim-moves.md)
 
 ## Sources
 

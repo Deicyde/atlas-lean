@@ -14,7 +14,7 @@ Equation (31): from the polynomial identity (28), under the paper's hypotheses
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

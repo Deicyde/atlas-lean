@@ -12,7 +12,7 @@ lean: Finpartition.cardProd_mapMonoidHom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Card Prod](card-prod.md)
 
 ## Sources
 

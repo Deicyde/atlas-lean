@@ -13,7 +13,9 @@ index `w` and every combination `x` of admissible words with `U(x) = τ(U(w))`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz Dual Index](bz-dual-index.md)
+- [Ooz QMZV](../part-01/ooz-qmzv.md)
+- [Ooz To BZ](ooz-to-bz.md)
 
 ## Sources
 

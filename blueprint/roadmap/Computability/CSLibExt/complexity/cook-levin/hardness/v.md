@@ -11,7 +11,12 @@ Input bit `i` of `x`, as the verifier sees it (left-tagged).
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](../../dense-satverifier/g.md)
+- [Pair Encode](../../dense-satverifier/pair-encode.md)
+
+## Proof depends on
+
+- [Veqv](veqv.md)
 
 ## Sources
 

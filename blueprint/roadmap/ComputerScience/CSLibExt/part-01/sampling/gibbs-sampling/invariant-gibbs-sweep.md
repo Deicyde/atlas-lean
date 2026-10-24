@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.Sampling.invariant_gibbsSweep
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibbs Sweep](gibbs-sweep.md)
+
+## Proof depends on
+
+- [Gibbs Step](gibbs-step.md)
+- [Gibbs sampling leaves the target stationary](invariant-gibbs-kernel.md)
+- [Pmf Kernel](../metropolis-hastings/pmf-kernel.md)
 
 ## Sources
 

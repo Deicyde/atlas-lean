@@ -13,7 +13,7 @@ Theorem 4.9: for fixed `t ≥ 2` and `s, c > 0`, the pattern
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

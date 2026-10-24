@@ -15,6 +15,11 @@ Explicit nonzero, degree, and cardinality conditions prevent vacuous zero-polyno
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [List Interlaces](list-interlaces.md)
+- [Canonical Line](canonical-line.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

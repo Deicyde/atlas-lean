@@ -13,7 +13,8 @@ The spans of the OOZ model: (i) `𝒵_{q,1}` is spanned by the `ζ_q^OOZ(k)` wit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz QMZV](../part-01/ooz-qmzv.md)
+- [Q MZVSpace](q-mzvspace.md)
 
 ## Sources
 

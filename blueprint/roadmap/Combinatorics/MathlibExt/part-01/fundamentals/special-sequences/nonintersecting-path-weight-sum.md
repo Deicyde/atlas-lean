@@ -16,6 +16,12 @@ The full informal statement is in the module documentation directly above.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Nonintersecting Path Family](is-nonintersecting-path-family.md)
+- [Southeast Path](southeast-path.md)
+- [Weight](weight.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Fundamentals.SpecialSequences](../../../../../../sources/v2/MathlibExt.md)

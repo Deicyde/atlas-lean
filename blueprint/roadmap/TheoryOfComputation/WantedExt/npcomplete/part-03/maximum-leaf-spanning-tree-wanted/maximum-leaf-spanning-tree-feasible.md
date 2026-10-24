@@ -11,7 +11,11 @@ A spanning tree with at least `K` leaves.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Leaf Spanning Tree Instance](maximum-leaf-spanning-tree-instance.md)
+
+## Proof depends on
+
+- [Edge Graph](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
 
 ## Sources
 

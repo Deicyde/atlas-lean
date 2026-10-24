@@ -14,6 +14,10 @@ appending in place), or `none` if the sequence stops earlier.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Three Term Hofstadter Next](three-term-hofstadter-next.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.ThreeTermHofstadterWanted](../../../../../../../sources/v2/WantedExt.md)

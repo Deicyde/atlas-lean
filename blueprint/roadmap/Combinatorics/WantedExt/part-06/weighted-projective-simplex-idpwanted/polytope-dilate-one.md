@@ -12,7 +12,7 @@ The dilate by `1` is the polytope itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polytope Dilate](polytope-dilate.md)
 
 ## Sources
 

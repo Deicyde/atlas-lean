@@ -12,7 +12,12 @@ Every monotone Boolean function is unate (increasing in every variable).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unate Bool Fun](is-unate-bool-fun.md)
+
+## Proof depends on
+
+- [Is Bool Fun Decreasing In](is-bool-fun-decreasing-in.md)
+- [Is Bool Fun Increasing In](is-bool-fun-increasing-in.md)
 
 ## Sources
 

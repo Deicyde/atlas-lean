@@ -12,7 +12,11 @@ For a terminating game, the set of P-positions is unique.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is PPosition Set](is-pposition-set.md)
+
+## Proof depends on
+
+- [Impartial Acyclic Game](../../../../GameTheory/MathlibExt/p-positions-unique.md)
 
 ## Sources
 

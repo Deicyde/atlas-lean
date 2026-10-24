@@ -11,7 +11,13 @@ Gate `g` of the adder: role `g % 5` of the full adder for bit `g / 5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Signature](arith-signature.md)
+
+## Proof depends on
+
+- [Arith Gate](arith-gate.md)
+- [Carry Wire](carry-wire.md)
+- [Bin Line](bin-line.md)
 
 ## Sources
 

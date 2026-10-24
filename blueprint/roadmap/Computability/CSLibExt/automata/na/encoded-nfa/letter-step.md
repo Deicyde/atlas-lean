@@ -11,7 +11,11 @@ One letter step from a list of states, before the ε-closure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+
+## Proof depends on
+
+- [Mem B](../../../decidability/part-01/primrec-list/mem-b.md)
 
 ## Sources
 

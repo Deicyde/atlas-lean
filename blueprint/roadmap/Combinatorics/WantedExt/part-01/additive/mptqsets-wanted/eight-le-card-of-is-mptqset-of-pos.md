@@ -11,7 +11,7 @@ Theorem 2 (quoting Chu), part 1: an MPTQ set of positive reals has at least 8 el
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MPTQSet](is-mptqset.md)
 
 ## Sources
 

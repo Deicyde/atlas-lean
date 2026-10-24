@@ -12,7 +12,8 @@ lean: Cslib.Turing.SingleTapeTM.FenceSymbol.ofCell_ne_wall
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
+- [Of Cell](of-cell.md)
 
 ## Sources
 

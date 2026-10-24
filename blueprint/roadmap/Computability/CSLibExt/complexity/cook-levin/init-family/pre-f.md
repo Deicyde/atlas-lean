@@ -11,7 +11,14 @@ Counters after the precomputation (`H = n + e + f`, `m = n + e`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [CK](ck.md)
+
+## Proof depends on
+
+- [C Idx](../family/c-idx.md)
+- [Num Vars](../family/num-vars.md)
+- [Row W](../family/row-w.md)
 
 ## Sources
 

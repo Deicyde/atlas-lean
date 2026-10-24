@@ -14,6 +14,10 @@ compression inputs.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chain Rev](chain-rev.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.Hash.MerkleDamgard](../../../../../../sources/v2/CSLibExt.md)

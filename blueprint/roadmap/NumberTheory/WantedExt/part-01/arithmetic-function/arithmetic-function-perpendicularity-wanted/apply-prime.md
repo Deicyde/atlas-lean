@@ -12,7 +12,7 @@ An antimultiplicative function vanishes at every prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Antimultiplicative](is-antimultiplicative.md)
 
 ## Sources
 

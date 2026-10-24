@@ -13,6 +13,10 @@ Exact number of steps on `w # y`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [T](t.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.DenseSATVerifier](../../../../../sources/v2/CSLibExt.md)

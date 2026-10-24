@@ -12,7 +12,9 @@ is obtained from the Bergman expansion of `N` by finitely many golden mean flips
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bergman Expansion](is-bergman-expansion.md)
+- [Is Golden Mean Flip](is-golden-mean-flip.md)
+- [Base Phi Value](base-phi-value.md)
 
 ## Sources
 

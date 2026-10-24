@@ -12,7 +12,7 @@ lean: MetaMathlibExt.harmonicExtension_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Harmonic Extension](harmonic-extension.md)
 
 ## Sources
 

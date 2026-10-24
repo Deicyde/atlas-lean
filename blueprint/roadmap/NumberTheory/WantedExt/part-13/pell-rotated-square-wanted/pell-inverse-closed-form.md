@@ -14,7 +14,8 @@ satisfies `u(g(x)) + v(g(x)) = x`. The inverse cosine is written through its log
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell U](pell-u.md)
+- [Pell V](pell-v.md)
 
 ## Sources
 

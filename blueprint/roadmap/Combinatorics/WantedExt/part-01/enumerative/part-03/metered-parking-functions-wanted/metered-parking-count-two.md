@@ -11,7 +11,7 @@ For every `t ≥ 1`, `mpf_{2,n}(t) = n^2 - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Parking Count](metered-parking-count.md)
 
 ## Sources
 

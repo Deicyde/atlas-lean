@@ -13,7 +13,8 @@ on the padded word `0 :: w`, of the same length as the result).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Improper Weight](tribonacci-improper-weight.md)
+- [Tribonacci Leftmost Carry](tribonacci-leftmost-carry.md)
 
 ## Sources
 

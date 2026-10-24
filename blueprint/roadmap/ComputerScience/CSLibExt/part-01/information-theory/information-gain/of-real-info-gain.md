@@ -12,7 +12,14 @@ lean: Cslib.MachineLearning.InformationTheory.ofReal_infoGain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Info Gain](info-gain.md)
+- [Measure Mutual Information](../../../../../InformationTheory/MathlibExt/conditional-entropy/measure-mutual-information.md)
+
+## Proof depends on
+
+- [Info Gain eq](info-gain-eq.md)
+- [Mutual information of a finite joint law](../../../../../InformationTheory/MathlibExt/conditional-entropy/measure-mutual-information-to-measure.md)
+- [Shannon Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
 
 ## Sources
 

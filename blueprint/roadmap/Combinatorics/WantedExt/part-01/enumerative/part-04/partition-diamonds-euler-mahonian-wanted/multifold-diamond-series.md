@@ -14,6 +14,10 @@ The bivariate generating function `σ_{d₁,…,d_M}(a, b) = ∑ a^{fold sum} b^
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Multifold Diamond Count](multifold-diamond-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PartitionDiamondsEulerMahonianWanted](../../../../../../../sources/v2/WantedExt.md)

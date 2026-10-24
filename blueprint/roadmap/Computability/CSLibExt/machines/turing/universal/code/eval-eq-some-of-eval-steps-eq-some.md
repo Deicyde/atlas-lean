@@ -13,7 +13,25 @@ on the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [The clocked evaluator](eval-steps.md)
+- [Machine](machine.md)
+- [Input](input.md)
+
+## Proof depends on
+
+- [Cfg](cfg.md)
+- [Output](output.md)
+- [To TM0](to-tm0.md)
+- [Cfg After](cfg-after.md)
+- [Eval Steps eq some iff output](eval-steps-eq-some-iff-output.md)
+- [Init](init.md)
+- [Init to TM0](init-to-tm0.md)
+- [Iterate step to TM0](iterate-step-to-tm0.md)
+- [Right₀ to TM0](right-to-tm0.md)
+- [Step](step.md)
+- [Step Or Stay](step-or-stay.md)
+- [Step to TM0](step-to-tm0.md)
 
 ## Sources
 

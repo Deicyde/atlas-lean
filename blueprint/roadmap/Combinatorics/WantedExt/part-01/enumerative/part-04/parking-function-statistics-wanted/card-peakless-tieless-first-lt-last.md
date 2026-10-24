@@ -12,7 +12,9 @@ For `n ≥ 0`, the number of peakless-tieless parking functions of length `n + 1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+- [Is Partial Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
+- [Fine Number](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
 
 ## Sources
 

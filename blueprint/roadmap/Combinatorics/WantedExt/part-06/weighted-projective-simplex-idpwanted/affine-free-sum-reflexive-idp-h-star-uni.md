@@ -12,7 +12,12 @@ weighted simplices are preserved by their subscript-zero affine free sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is HStar Unimodal](is-hstar-unimodal.md)
+- [Is Reflexive](is-reflexive.md)
+- [Affine Free Sum](affine-free-sum.md)
+- [Negative Weight Vertex](negative-weight-vertex.md)
+- [Weighted Simplex](weighted-simplex.md)
 
 ## Sources
 

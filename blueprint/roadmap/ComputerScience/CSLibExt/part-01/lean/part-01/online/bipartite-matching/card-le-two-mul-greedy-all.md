@@ -15,7 +15,14 @@ matched by maximality; a matching charges each greedy edge at most once on each 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../../graph/bipartite-matching/is-matching.md)
+- [Pairs](../../graph/bipartite-matching/pairs.md)
+- [Greedy All](greedy-all.md)
+
+## Proof depends on
+
+- [Free](../../graph/bipartite-matching/free.md)
+- [The greedy matching is maximal](greedy-all-maximal.md)
 
 ## Sources
 

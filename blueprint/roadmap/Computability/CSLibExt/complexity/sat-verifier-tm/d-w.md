@@ -11,7 +11,7 @@ Read a `w` symbol of the input as a bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
 
 ## Sources
 

@@ -14,7 +14,9 @@ every complex root has norm at most `1 + (d+1)!`, and every real root has real p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ehrhart Counts](ehrhart-counts.md)
+- [Is Full Dimensional](is-full-dimensional.md)
+- [Lattice Polytope](lattice-polytope.md)
 
 ## Sources
 

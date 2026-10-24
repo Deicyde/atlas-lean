@@ -13,7 +13,14 @@ the complement of equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eq Code](eq-code.md)
+- [TM2 Co Recognizable](../../part-01/basic/tm2-co-recognizable.md)
+
+## Proof depends on
+
+- [Many One Reducible halting eq](many-one-reducible-halting-eq.md)
+- [Not tm2 Co Recognizable halting](../undecidable/not-tm2-co-recognizable-halting.md)
+- [Tm2 Recognizable of many One Reducible](../undecidable/tm2-recognizable-of-many-one-reducible.md)
 
 ## Sources
 

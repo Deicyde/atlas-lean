@@ -12,7 +12,15 @@ lean: MetaMathlibExt.noncrossingBlockSingletonCount_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Block Singleton Count](noncrossing-block-singleton-count.md)
+
+## Proof depends on
+
+- [Noncrossing Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
+- [Has Crossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
+- [Is Noncrossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)
+- [Set Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
+- [Card zero](../../../../../MathlibExt/part-01/noncrossing-partition/small/card-zero.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ The Fibonacci sequence has restricted period `3` modulo `2` (`F 3 = 2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Lucas Params](../../../../../MathlibExt/part-08/lucas-sequence/fibonacci-lucas-params.md)
+- [Lucas URestricted Period](lucas-urestricted-period.md)
+
+## Proof depends on
+
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas U fibonacci Lucas Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u-fibonacci-lucas-params.md)
 
 ## Sources
 

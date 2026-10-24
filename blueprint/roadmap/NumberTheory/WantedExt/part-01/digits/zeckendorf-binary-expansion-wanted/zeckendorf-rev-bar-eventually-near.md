@@ -14,7 +14,13 @@ prefix just to the left; if `ε ∈ E*`, `rev̄(ε^±)` agree with `rev̄(ε)` o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [L Star Closure](l-star-closure.md)
+- [L Star Collection](l-star-collection.md)
+- [L Star Inf](l-star-inf.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
 
 ## Sources
 

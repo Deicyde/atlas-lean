@@ -11,7 +11,11 @@ The likelihood of the observations `x 0, …, x t`: the total weight of all stat
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+
+## Proof depends on
+
+- [Path Prob](path-prob.md)
 
 ## Sources
 

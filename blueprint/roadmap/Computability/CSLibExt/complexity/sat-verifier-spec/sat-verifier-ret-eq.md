@@ -12,7 +12,19 @@ The components compose to `satVerifier`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Check Spec](check-spec.md)
+- [Ents](ents.md)
+- [Decode CNF](../../cook-levin/decode-cnf.md)
+- [Sat Verifier](../../sat-time-m/sat-verifier.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Check Spec ents](check-spec-ents.md)
+- [Check CNF](../../sat-time-m/check-cnf.md)
+- [Sat Verifier none](../../sat-time-m/sat-verifier-none.md)
+- [Sat Verifier some](../../sat-time-m/sat-verifier-some.md)
+- [Vars Of](../../sat-time-m/vars-of.md)
 
 ## Sources
 

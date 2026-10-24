@@ -13,7 +13,7 @@ reduced iff `a · max(p) ≤ Σ(p)`. The paper assumes `n ≥ 3`; the statement 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Reduced](slow-anim-reduced.md)
 
 ## Sources
 

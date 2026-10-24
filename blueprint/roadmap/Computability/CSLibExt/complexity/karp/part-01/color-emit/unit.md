@@ -11,7 +11,13 @@ The unit symbol of a counter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Src](src.md)
+- [K](k-2.md)
+- [Γ](untitled.md)
+
+## Proof depends on
+
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

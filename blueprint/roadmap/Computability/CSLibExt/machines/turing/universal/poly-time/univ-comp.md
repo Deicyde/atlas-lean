@@ -11,7 +11,14 @@ The clocked universal machine as a host component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](../../../../complexity/host/comp.md)
+
+## Proof depends on
+
+- [K](../clocked/k.md)
+- [Lab](../clocked/lab.md)
+- [Prog](../clocked/prog.md)
+- [Γ](../clocked/untitled.md)
 
 ## Sources
 

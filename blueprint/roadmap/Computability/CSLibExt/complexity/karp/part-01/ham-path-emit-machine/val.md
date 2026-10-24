@@ -11,7 +11,8 @@ The value of a counter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MS](ms.md)
+- [Src](src.md)
 
 ## Sources
 

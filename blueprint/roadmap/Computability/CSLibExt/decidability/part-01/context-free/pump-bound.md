@@ -12,7 +12,12 @@ The pumping bound of Ogden's lemma for the decoded grammar (`pumping_of_bound`):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Dedup B](../primrec-list/dedup-b.md)
+- [Len Bound](len-bound.md)
 
 ## Sources
 

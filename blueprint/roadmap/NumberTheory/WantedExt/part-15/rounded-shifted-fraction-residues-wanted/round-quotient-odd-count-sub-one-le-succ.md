@@ -11,7 +11,7 @@ Corollary 19: `𝓡` decreases by at most `1` in any step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round Quotient Odd Count](round-quotient-odd-count.md)
 
 ## Sources
 

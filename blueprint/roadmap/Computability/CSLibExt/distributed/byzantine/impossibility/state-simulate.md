@@ -15,7 +15,16 @@ relaying the messages of the simulating traitors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
+- [Simulate](simulate.md)
+- [State](state.md)
+
+## Proof depends on
+
+- [Inbox](inbox.md)
+- [Init State](init-state.md)
+- [State succ](state-succ.md)
+- [States eq of inbox eq](states-eq-of-inbox-eq.md)
 
 ## Sources
 

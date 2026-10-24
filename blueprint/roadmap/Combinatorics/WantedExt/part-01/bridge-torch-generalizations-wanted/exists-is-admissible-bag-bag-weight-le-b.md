@@ -11,7 +11,9 @@ lean: MetaMathlibExt.BridgeTorchGeneralizations.exists_isAdmissibleBag_bagWeight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Bag](is-admissible-bag.md)
+- [Bag Weight](bag-weight.md)
+- [Bridge Time](bridge-time.md)
 
 ## Sources
 

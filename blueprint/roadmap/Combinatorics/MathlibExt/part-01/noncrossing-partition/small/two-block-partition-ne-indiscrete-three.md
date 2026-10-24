@@ -12,7 +12,15 @@ Two-block and indiscrete partitions of `Fin 3` are distinct.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Partition](../basic/noncrossing-partition.md)
+- [Indiscrete](../operations/indiscrete.md)
+- [Two Block Partition](two-block-partition.md)
+
+## Proof depends on
+
+- [Is Noncrossing](../basic/is-noncrossing.md)
+- [Set Partition](../basic/set-partition.md)
+- [Indiscrete parts pos](../operations/indiscrete-parts-pos.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ every wire up to `m` ends at most wire `m`, and each holds one of the input valu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pass](pass.md)
+- [Run](../zero-one/run.md)
+
+## Proof depends on
+
+- [Adjacent](adjacent.md)
+- [Network](../zero-one/network.md)
+- [Comparator](../zero-one/comparator.md)
 
 ## Sources
 

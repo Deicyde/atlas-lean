@@ -12,7 +12,7 @@ The integral part of `polyContFract a n` is `a₀`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Cont Fract](poly-cont-fract.md)
 
 ## Sources
 

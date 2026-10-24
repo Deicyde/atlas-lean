@@ -12,7 +12,11 @@ A DFA morphism commutes with evaluation from the start state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DFAHom](dfahom.md)
+
+## Proof depends on
+
+- [Map eval From](map-eval-from.md)
 
 ## Sources
 

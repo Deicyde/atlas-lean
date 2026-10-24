@@ -15,6 +15,10 @@ the paper; all results that need a nontruncated exponent impose a lower bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Odd Range Product](odd-range-product.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OddPartFactorialTwoAdicWanted](../../../../../sources/v2/WantedExt.md)

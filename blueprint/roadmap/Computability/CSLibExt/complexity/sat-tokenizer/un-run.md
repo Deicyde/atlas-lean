@@ -12,7 +12,17 @@ Reading `n` ones and a zero: `n + 1` steps, adding `n` to the chosen counter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Top Is Bit](top-is-bit.md)
+- [Single](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

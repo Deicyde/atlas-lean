@@ -13,6 +13,10 @@ The weighted majority vote (ties go to `true`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weight On](weight-on.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.WeightedMajority](../../../../../sources/v2/CSLibExt.md)

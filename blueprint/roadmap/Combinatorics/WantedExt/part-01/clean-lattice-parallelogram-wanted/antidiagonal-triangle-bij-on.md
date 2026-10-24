@@ -14,7 +14,7 @@ parallelogram spanned by `u` and `v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Parallelogram](lattice-parallelogram.md)
 
 ## Sources
 

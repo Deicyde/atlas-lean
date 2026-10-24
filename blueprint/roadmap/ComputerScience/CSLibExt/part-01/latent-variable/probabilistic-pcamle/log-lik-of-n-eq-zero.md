@@ -12,7 +12,12 @@ With no data the log-likelihood is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Lik](log-lik.md)
+
+## Proof depends on
+
+- [Ppca Cov](ppca-cov.md)
+- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

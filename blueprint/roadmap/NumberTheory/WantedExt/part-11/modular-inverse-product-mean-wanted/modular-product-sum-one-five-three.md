@@ -12,7 +12,7 @@ Characteristic value: `S_1(5, 3) = 3` (the only `a ∈ {1, …, 5}` with `a ≡ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Product Sum](modular-product-sum.md)
 
 ## Sources
 

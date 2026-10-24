@@ -14,7 +14,9 @@ a derivative identity on `0 < x < 1` (`Real.log` of the negative number `x - 1` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zurita C](zurita-c.md)
+- [Zurita S](zurita-s.md)
+- [Zurita T](zurita-t.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ definition: coefficients on `A` lie in `{-1,0,1}`, their absolute values sum to 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Signed Sumset](restricted-signed-sumset.md)
 
 ## Sources
 

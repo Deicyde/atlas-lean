@@ -12,7 +12,7 @@ lean: MetaMathlibExt.doubledWord_singleton
 
 ## Depends on
 
-This node has no prerequisites.
+- [Doubled Word](doubled-word.md)
 
 ## Sources
 

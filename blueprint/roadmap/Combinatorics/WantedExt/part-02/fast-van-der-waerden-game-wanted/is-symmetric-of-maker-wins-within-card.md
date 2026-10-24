@@ -11,7 +11,8 @@ For `|S| ≥ 2`, if Maker has an `|S|`-move strategy then `S` is symmetric.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Symmetric](is-symmetric.md)
+- [Maker Wins Within](maker-wins-within.md)
 
 ## Sources
 

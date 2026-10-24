@@ -12,7 +12,7 @@ then for these `k` with `3k ≤ n` the state `(0, …, 0, k, 0, n - 3k)` is losi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accel Zeck Losing](accel-zeck-losing.md)
 
 ## Sources
 

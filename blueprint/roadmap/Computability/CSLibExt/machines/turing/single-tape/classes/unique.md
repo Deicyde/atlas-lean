@@ -15,6 +15,11 @@ configuration has no successor.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mk₁ injective](mk-injective.md)
+- [Right Unique transition Relation](right-unique-transition-relation.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.Classes](../../../../../../../sources/v2/CSLibExt.md)

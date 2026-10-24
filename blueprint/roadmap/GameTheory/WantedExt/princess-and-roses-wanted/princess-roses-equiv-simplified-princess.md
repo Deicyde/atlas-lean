@@ -13,7 +13,9 @@ equivalence of the two games).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Princess Roses](princess-roses.md)
+- [Simplified Princess Roses](simplified-princess-roses.md)
 
 ## Sources
 

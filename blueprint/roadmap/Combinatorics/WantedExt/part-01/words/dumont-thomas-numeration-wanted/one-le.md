@@ -12,7 +12,11 @@ A period of a two-sided periodic point is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Two Sided Periodic Point](is-two-sided-periodic-point.md)
+
+## Proof depends on
+
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

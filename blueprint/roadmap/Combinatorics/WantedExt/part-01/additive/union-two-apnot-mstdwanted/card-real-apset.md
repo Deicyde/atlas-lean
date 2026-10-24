@@ -12,7 +12,7 @@ lean: MetaMathlibExt.card_realAPSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real APSet](real-apset.md)
 
 ## Sources
 

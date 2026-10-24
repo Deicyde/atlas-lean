@@ -11,7 +11,7 @@ Theorem 2: there is no positive integer `n` with `N(n) = n - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carmichael Index](carmichael-index.md)
 
 ## Sources
 

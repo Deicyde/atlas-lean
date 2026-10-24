@@ -13,7 +13,7 @@ and `C_8(m) = (12721)_8 = 5585`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Palindromic Half Copy](palindromic-half-copy.md)
 
 ## Sources
 

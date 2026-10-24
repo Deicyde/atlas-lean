@@ -11,7 +11,7 @@ Proposition 7: the negation of a unate function is unate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unate Bool Fun](is-unate-bool-fun.md)
 
 ## Sources
 

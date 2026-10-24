@@ -13,7 +13,7 @@ multiplicity `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Omega Mult](omega-mult.md)
 
 ## Sources
 

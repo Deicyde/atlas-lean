@@ -13,7 +13,16 @@ of a function of the root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](tree-model.md)
+- [Eliminate](eliminate.md)
+- [Weight](weight.md)
+
+## Proof depends on
+
+- [Last Parent](last-parent.md)
+- [Message](message.md)
+- [Parent](parent.md)
+- [Sum snoc](../bayesian-network/sum-snoc.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ for the single partition `1` of `1`: `a_{0,1}(1) = s_1(1) = 1`, `s_2(1) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
+- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

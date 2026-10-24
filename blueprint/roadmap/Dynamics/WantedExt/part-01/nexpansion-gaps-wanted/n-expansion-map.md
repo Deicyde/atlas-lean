@@ -13,6 +13,10 @@ The `N`-expansion map `T_α(x) = N / x - d(x)` on `I_α = [α, α + 1]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [N Expansion Digit](n-expansion-digit.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.NExpansionGapsWanted](../../../../../sources/v2/WantedExt.md)

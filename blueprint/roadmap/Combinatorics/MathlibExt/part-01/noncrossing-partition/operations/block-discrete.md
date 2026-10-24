@@ -12,7 +12,12 @@ Blocks of the discrete partition are singletons.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](../basic/block.md)
+- [Discrete](discrete.md)
+
+## Proof depends on
+
+- [Set Partition](../basic/set-partition.md)
 
 ## Sources
 

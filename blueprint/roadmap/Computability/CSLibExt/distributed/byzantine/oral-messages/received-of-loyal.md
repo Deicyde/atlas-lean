@@ -12,7 +12,7 @@ A loyal commander sends its value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Received](received.md)
 
 ## Sources
 

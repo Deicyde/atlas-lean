@@ -11,7 +11,9 @@ Stack renaming of the shift generator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](hk.md)
+- [SK](../counter-view/sk.md)
+- [CK](../shift/ck.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ each vertex at most as many movements start as there are torches there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Star Move](star-move.md)
+
+## Proof depends on
+
+- [Src](src.md)
 
 ## Sources
 

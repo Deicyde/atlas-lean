@@ -14,6 +14,10 @@ The letter `x_k[n]` of the fixed point `x_k` of `τ_k`, read off the shortest pr
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hof Grow](hof-grow.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedHofstadterOrderWanted](../../../../../sources/v2/WantedExt.md)

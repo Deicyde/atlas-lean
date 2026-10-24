@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Into P3s Instance](partition-into-p3s-instance.md)
 
 ## Sources
 

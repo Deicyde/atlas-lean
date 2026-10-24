@@ -14,7 +14,8 @@ Theorem 11, equation (asympt_form_least): for `r ≥ 1`, the number of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Density](coprimality-density.md)
+- [Coprime Pair Count](coprime-pair-count.md)
 
 ## Sources
 

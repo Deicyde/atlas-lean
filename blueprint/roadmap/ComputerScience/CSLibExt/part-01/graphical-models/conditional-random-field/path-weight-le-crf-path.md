@@ -12,7 +12,19 @@ lean: Cslib.MachineLearning.GraphicalModels.ConditionalRandomField.pathWeight_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+- [Viterbi's MAP path](crf-path.md)
+- [Path Weight](path-weight.md)
+
+## Proof depends on
+
+- [Best Path](best-path.md)
+- [Path Weight best Path](path-weight-best-path.md)
+- [Path Weight le viterbi](path-weight-le-viterbi.md)
+- [Viterbi](viterbi.md)
+- [Viterbi Tab](viterbi-tab.md)
+- [Argmax Fin](../../sequence/hidden-markov/argmax-fin.md)
+- [Argmax Vec](../../sequence/hidden-markov/argmax-vec.md)
 
 ## Sources
 

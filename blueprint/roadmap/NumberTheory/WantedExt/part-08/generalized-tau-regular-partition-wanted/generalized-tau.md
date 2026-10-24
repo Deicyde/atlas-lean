@@ -15,6 +15,10 @@ for any integer `k`. The paper requires `k ≠ 0`; `k = 0` gives `τ_0(1) = 1` a
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Unit pentagonal Series int](is-unit-pentagonal-series-int.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedTauRegularPartitionWanted](../../../../../sources/v2/WantedExt.md)

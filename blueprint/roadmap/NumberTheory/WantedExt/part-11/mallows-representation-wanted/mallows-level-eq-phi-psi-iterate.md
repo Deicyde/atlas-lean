@@ -13,7 +13,9 @@ concatenation, and the root `1/2` is the gap `(0/1, 1/1)`; Lean index `i` is pap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Level](mallows-level.md)
+- [Stern Brocot Phi](stern-brocot-phi.md)
+- [Stern Brocot Psi](stern-brocot-psi.md)
 
 ## Sources
 

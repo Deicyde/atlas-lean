@@ -13,7 +13,7 @@ degree-24 polynomial `P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Rook Partition Count](max-rook-partition-count.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ sum of Lemma 4.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+- [Soulmate Pair Count](soulmate-pair-count.md)
 
 ## Sources
 

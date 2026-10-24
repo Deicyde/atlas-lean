@@ -12,7 +12,8 @@ If every transition listed for `(s, a)` has target `t` and there is one, the ste
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+- [Step](step.md)
 
 ## Sources
 

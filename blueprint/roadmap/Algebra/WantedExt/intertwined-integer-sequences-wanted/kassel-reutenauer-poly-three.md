@@ -12,7 +12,11 @@ Characteristic value `P̄_3(X) = X² + X - 2` (Table 2).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+
+## Proof depends on
+
+- [Kassel Reutenauer Coeff](kassel-reutenauer-coeff.md)
 
 ## Sources
 

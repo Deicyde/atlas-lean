@@ -12,7 +12,7 @@ second coordinates of `s` contain elements of each order `2^j`, `1 ≤ j ≤ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect MCover](is-perfect-mcover.md)
 
 ## Sources
 

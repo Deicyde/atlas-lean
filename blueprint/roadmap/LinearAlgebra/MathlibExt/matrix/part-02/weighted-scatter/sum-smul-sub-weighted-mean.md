@@ -12,7 +12,7 @@ The weighted residuals about the weighted mean sum to zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Mean](weighted-mean.md)
 
 ## Sources
 

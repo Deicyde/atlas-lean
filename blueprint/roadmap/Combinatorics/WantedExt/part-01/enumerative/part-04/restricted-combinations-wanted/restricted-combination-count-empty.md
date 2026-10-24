@@ -12,7 +12,11 @@ With no disallowed differences, `S^{}_{n,k} = (n choose k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Combination Count](restricted-combination-count.md)
+
+## Proof depends on
+
+- [Restricted Combinations](restricted-combinations.md)
 
 ## Sources
 

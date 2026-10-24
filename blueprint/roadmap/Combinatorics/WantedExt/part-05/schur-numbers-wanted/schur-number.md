@@ -15,6 +15,10 @@ The Schur number `S(k)`: the largest `N` such that `{1, …, N}` splits into
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Schur Forces](schur-forces.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SchurNumbersWanted](../../../../../sources/v2/WantedExt.md)

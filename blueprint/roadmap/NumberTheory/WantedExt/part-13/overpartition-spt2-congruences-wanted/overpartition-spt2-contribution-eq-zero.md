@@ -12,7 +12,8 @@ An overpartition whose smallest part is odd contributes nothing to `spt2‾`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Spt2 Contribution](overpartition-spt2-contribution.md)
+- [Overpartition](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources
 

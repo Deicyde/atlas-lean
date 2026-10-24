@@ -12,7 +12,12 @@ lean: Cslib.Decidability.manyOneReducible_accepts_halts
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accepts](accepts.md)
+- [Halts](halts.md)
+
+## Proof depends on
+
+- [Exists code zero or loop](exists-code-zero-or-loop.md)
 
 ## Sources
 

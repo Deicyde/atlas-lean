@@ -16,7 +16,8 @@ since `k i ≥ n` there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pascal Diagonal Matrix](pascal-diagonal-matrix.md)
+- [Pascal Exp First Column](pascal-exp-first-column.md)
 
 ## Sources
 

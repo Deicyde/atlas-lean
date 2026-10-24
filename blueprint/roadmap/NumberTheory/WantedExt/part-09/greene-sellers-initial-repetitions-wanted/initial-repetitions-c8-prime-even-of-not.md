@@ -11,7 +11,7 @@ lean: MetaMathlibExt.initialRepetitionsC8Prime_even_of_not_isSquare
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Repetitions C8 Prime](initial-repetitions-c8-prime.md)
 
 ## Sources
 

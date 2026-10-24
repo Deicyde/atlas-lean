@@ -13,7 +13,13 @@ Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 2 (`L_x = 1` wh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PPeriod](base-pperiod.md)
+
+## Proof depends on
+
+- [Prime To PDen](prime-to-pden.md)
+- [Prime To PDen one prime To PNum one](prime-to-pden-one-prime-to-pnum-one.md)
+- [Prime To PNum](prime-to-pnum.md)
 
 ## Sources
 

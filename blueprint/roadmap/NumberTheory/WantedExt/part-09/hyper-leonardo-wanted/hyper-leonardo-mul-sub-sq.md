@@ -13,7 +13,7 @@ Proposition 4: for `r ≥ 1` and `n ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

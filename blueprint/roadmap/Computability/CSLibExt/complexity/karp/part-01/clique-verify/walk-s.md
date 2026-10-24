@@ -12,7 +12,17 @@ left on `X`; otherwise pop the top vertex bit and go on with `walkZ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [K](k.md)
+- [Lab](lab.md)
+- [Walk Z](walk-z.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

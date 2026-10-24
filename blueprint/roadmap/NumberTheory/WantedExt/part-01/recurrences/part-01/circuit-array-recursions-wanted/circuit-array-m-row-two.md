@@ -18,7 +18,9 @@ identity also holds at `s = 2`. The recursions column of Table 4 is omitted (its
 
 ## Depends on
 
-This node has no prerequisites.
+- [Annihilates Seq](annihilates-seq.md)
+- [Circuit Array M](circuit-array-m.md)
+- [Circuit Var](circuit-var.md)
 
 ## Sources
 

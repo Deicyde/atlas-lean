@@ -13,7 +13,7 @@ Recurrence `T_{q,t}(n + q) = (n + q)^{-t} + (-1)^{q+1} T_{q,t}(n)` for `n ≥ 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Signed Sum](stride-signed-sum.md)
 
 ## Sources
 

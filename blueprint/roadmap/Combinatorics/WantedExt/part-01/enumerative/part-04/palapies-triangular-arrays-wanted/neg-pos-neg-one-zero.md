@@ -12,7 +12,14 @@ Definition 1 at the corner: `a^{NP}_{-1,0} = 1/γ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+- [Neg Pos](neg-pos.md)
+
+## Proof depends on
+
+- [Neg Pos Aux](neg-pos-aux.md)
+- [Weight](weight.md)
+- [Weight'](weight-2.md)
 
 ## Sources
 

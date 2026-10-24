@@ -14,6 +14,10 @@ The norm cast through `natAbs` is the norm.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Norm nonneg'](norm-nonneg.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZsqrtdNegTwoEuclidean](../../../../../sources/v2/MathlibExt.md)

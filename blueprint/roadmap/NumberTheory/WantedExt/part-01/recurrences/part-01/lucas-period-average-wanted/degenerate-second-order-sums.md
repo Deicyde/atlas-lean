@@ -17,7 +17,9 @@ Theorem 2.1: sums of the degenerate recurrences of Theorem 1.3. For `(a, b) = (0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas All Averages Integral](lucas-all-averages-integral.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

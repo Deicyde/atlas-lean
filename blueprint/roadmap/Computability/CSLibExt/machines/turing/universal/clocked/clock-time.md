@@ -11,7 +11,12 @@ The step bound of the clocked machine on the clock `T`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../code/code.md)
+
+## Proof depends on
+
+- [Code Cells](code-cells.md)
+- [Loop Step Time](loop-step-time.md)
 
 ## Sources
 

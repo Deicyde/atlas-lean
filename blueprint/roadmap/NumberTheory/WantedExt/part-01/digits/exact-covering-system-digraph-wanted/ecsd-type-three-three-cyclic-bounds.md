@@ -13,7 +13,7 @@ For `a ∈ ℤ` even with `a ≡ 2 (mod 3)`, every cyclic vertex `m` of the Type
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.biBracketLambda_one_one_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Bracket Lambda](bi-bracket-lambda.md)
 
 ## Sources
 

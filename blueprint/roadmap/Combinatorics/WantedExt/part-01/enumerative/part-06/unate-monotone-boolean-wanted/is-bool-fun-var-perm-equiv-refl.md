@@ -12,7 +12,7 @@ Every Boolean function is permutation-equivalent to itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bool Fun Var Perm Equiv](is-bool-fun-var-perm-equiv.md)
 
 ## Sources
 

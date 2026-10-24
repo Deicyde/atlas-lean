@@ -16,7 +16,7 @@ Math. Soc. 96 (1986) 269-274.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem8 Claim](scottish-book-problem8-claim.md)
 
 ## Sources
 

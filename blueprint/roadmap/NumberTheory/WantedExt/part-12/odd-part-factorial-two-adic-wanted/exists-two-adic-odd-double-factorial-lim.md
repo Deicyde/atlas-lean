@@ -15,7 +15,7 @@ integer division, whose exactness is supplied by Corollary 10.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Double Factorial](odd-double-factorial.md)
 
 ## Sources
 

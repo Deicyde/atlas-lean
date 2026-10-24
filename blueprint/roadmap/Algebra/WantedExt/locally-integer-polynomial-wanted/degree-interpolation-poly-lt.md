@@ -12,7 +12,7 @@ lean: MetaMathlibExt.degree_interpolationPoly_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interpolation Poly](interpolation-poly.md)
 
 ## Sources
 

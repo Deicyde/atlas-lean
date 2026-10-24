@@ -23,7 +23,10 @@ for `π_U`) for `i ≥ 1` when `p ^ c ≠ 2`, and `ρ_U(2 ^ i) = 2 ^ max(i + 1 -
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas UPeriod](lucas-uperiod.md)
+- [Lucas URestricted Period](lucas-urestricted-period.md)
 
 ## Sources
 

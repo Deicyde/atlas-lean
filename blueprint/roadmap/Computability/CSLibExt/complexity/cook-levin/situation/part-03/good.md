@@ -11,7 +11,7 @@ Every stack symbol has a code (lies in the effective alphabet).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
 
 ## Sources
 

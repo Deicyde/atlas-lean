@@ -15,6 +15,10 @@ casts the rational Bernoulli number `B_{2r}` to `ℝ` and writes
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Watson Odd Cotangent Deriv](watson-odd-cotangent-deriv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DowkerHalfSumWanted](../../../../../sources/v2/WantedExt.md)

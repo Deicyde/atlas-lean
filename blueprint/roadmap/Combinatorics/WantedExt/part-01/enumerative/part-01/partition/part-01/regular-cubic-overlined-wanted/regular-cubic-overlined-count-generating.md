@@ -12,7 +12,13 @@ The defining identity `f_1² f_4 f_{2ℓ} ∑ a_ℓ(n) qⁿ = f_2 f_ℓ² f_{4�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
+
+## Proof depends on
+
+- [Constant Coeff q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
+- [Regular Cubic Overlined Series](regular-cubic-overlined-series.md)
 
 ## Sources
 

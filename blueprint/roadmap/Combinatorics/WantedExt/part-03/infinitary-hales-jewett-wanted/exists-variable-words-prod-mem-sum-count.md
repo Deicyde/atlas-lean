@@ -15,7 +15,7 @@ positive integers, there is a sequence `(w_k)` of variable words over `A` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CSet](../../../MathlibExt/part-03/semigroup-largeness/is-cset.md)
 
 ## Sources
 

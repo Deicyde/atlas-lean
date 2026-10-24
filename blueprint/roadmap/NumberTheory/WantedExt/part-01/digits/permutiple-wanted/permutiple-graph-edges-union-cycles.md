@@ -14,7 +14,9 @@ is an edge of `M`, and every edge of `G_p` lies on a directed cycle
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mother Graph Edge](is-mother-graph-edge.md)
+- [Is Permutiple](is-permutiple.md)
+- [Permutiple Graph Edges](permutiple-graph-edges.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ A set is lacunary when it is exactly the range of a lacunary sequence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Lacunary](is-lacunary.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AccessibleSetsWanted](../../../../../sources/v2/WantedExt.md)

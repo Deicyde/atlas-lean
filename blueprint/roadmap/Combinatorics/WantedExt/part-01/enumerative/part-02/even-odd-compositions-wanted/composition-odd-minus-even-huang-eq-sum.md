@@ -16,7 +16,8 @@ paper's values (`binom(-1, 0) = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Huang Small Part Placement](is-huang-small-part-placement.md)
+- [Composition Odd Minus Even](composition-odd-minus-even.md)
 
 ## Sources
 

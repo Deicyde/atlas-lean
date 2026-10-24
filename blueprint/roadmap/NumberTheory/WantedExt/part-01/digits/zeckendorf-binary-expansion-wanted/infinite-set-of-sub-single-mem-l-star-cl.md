@@ -12,7 +12,8 @@ infinitely many indices `r` (with `ε_r ≥ 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Closure](l-star-closure.md)
+- [L Star Collection](l-star-collection.md)
 
 ## Sources
 

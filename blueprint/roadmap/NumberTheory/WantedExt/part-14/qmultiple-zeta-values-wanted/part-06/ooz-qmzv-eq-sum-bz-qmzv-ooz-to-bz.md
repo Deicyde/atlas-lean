@@ -12,7 +12,9 @@ Restricted OOZ-qMZVs in the BZ model: for an admissible index `k` (`kᵢ ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz QMZV](../part-02/bz-qmzv.md)
+- [Ooz QMZV](../part-01/ooz-qmzv.md)
+- [Ooz To BZ](ooz-to-bz.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ An assignment fitting the knapsacks of total value at least the target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiple Knapsack Instance](multiple-knapsack-instance.md)
 
 ## Sources
 

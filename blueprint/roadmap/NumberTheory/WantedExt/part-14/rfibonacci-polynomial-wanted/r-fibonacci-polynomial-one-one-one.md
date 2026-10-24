@@ -13,7 +13,13 @@ numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
+
+## Proof depends on
+
+- [R Fibonacci Polynomial succ of le](r-fibonacci-polynomial-succ-of-le.md)
+- [R Fibonacci Polynomial succ of lt](r-fibonacci-polynomial-succ-of-lt.md)
+- [R Fibonacci Polynomial zero](r-fibonacci-polynomial-zero.md)
 
 ## Sources
 

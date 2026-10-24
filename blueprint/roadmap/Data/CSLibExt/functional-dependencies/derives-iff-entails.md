@@ -13,7 +13,15 @@ dependencies.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](derives.md)
+- [Entails](entails.md)
+- [FD](fd.md)
+
+## Proof depends on
+
+- [Armstrong's axioms are sound](sound.md)
+- [Satisfies](satisfies.md)
+- [Completeness](derives-of-forall-two-tuple.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ lean: MetaMathlibExt.isGoodSeq_consecutiveCyclicStackSort_examples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Good Seq](is-good-seq.md)
+- [Consecutive Cyclic Stack Sort](consecutive-cyclic-stack-sort.md)
 
 ## Sources
 

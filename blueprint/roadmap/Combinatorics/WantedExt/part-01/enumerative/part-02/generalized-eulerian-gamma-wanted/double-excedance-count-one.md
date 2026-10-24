@@ -12,7 +12,7 @@ The identity has no double excedances.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Double Excedance Count](double-excedance-count.md)
 
 ## Sources
 

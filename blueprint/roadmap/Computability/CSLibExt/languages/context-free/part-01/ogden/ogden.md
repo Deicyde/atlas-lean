@@ -15,7 +15,11 @@ marked letters, and every pumped word `u ++ v^[i] ++ x ++ y^[i] ++ z` has its le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marks](marks.md)
+
+## Proof depends on
+
+- [Ogden's lemma for a grammar, with an explicit bound](ogden-of-bound.md)
 
 ## Sources
 

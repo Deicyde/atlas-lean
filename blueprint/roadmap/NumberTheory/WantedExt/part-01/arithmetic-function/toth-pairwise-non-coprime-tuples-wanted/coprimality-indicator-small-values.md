@@ -13,7 +13,7 @@ Small values: for the single edge `(0, 1)`, `δ_G(2, 3) = 1` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Indicator](coprimality-indicator.md)
 
 ## Sources
 

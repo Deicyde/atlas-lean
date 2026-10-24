@@ -12,7 +12,12 @@ lean: Cslib.Turing.SingleTapeTM.toTape_optionMove
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [To Tape](to-tape.md)
+
+## Proof depends on
+
+- [To Tape move](to-tape-move.md)
 
 ## Sources
 

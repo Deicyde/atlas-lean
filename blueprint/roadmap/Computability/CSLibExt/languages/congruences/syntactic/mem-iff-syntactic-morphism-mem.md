@@ -12,7 +12,10 @@ A language is recognized by its canonical syntactic morphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](syntactic-monoid.md)
+- [Syntactic Accept](syntactic-accept.md)
+- [Syntactic Con](syntactic-con.md)
+- [Syntactic Morphism](syntactic-morphism.md)
 
 ## Sources
 

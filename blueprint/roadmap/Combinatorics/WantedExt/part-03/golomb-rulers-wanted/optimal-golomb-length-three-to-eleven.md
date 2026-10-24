@@ -12,7 +12,7 @@ Optimal Golomb ruler lengths for `3 ≤ m ≤ 11` marks:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Optimal Golomb Length](optimal-golomb-length.md)
 
 ## Sources
 

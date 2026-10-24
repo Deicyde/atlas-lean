@@ -13,7 +13,7 @@ shortest one, does not change the supremum.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling Word](kimberling-word.md)
 
 ## Sources
 

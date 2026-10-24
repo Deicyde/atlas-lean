@@ -12,7 +12,7 @@ Characteristic value `c_{m,k}(0) = 1` (the empty composition).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positional Colored Composition Count](positional-colored-composition-count.md)
 
 ## Sources
 

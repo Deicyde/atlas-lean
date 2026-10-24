@@ -12,7 +12,7 @@ The reciprocal sum of the primes of `k`-almost prime index tends to `1` exponent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

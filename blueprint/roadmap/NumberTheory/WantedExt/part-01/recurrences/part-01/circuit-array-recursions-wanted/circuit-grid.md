@@ -14,7 +14,11 @@ boundary values by variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Edge](circuit-edge.md)
+
+## Proof depends on
+
+- [Circuit Reduce](circuit-reduce.md)
 
 ## Sources
 

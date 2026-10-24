@@ -12,7 +12,13 @@ Row `0` of `a :: s` pairs `a` with the later vertices, last first.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pair Vals](pair-vals.md)
+
+## Proof depends on
+
+- [Map get D range](map-get-d-range.md)
+- [Pairs succ](pairs-succ.md)
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

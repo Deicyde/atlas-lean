@@ -11,7 +11,7 @@ A set of size `n ≥ 4` is symmetric of at most one type.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Symmetric Of Type](is-symmetric-of-type.md)
 
 ## Sources
 

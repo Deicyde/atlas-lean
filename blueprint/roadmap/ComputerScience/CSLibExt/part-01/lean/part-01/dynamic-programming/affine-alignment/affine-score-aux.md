@@ -13,7 +13,12 @@ The `(none, none)` column cannot occur in a valid alignment; it is scored as a n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+- [Gap State](gap-state.md)
+
+## Proof depends on
+
+- [Gap Cost](gap-cost.md)
 
 ## Sources
 

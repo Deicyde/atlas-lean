@@ -12,7 +12,7 @@ Every ciphertext of the group one-time pad is uniform, whatever the message.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group OTP](group-otp.md)
 
 ## Sources
 

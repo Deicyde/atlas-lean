@@ -11,7 +11,13 @@ The start label.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Emitter](emitter.md)
+- [L](l.md)
+
+## Proof depends on
+
+- [Lab](../../../sat-tokenizer/lab.md)
+- [Start](../../../sat-tokenizer/start.md)
 
 ## Sources
 

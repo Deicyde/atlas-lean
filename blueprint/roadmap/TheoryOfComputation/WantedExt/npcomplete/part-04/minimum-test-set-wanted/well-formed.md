@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Test Set Instance](minimum-test-set-instance.md)
 
 ## Sources
 

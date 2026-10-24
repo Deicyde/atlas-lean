@@ -15,7 +15,7 @@ Sequences are identified with their term sets; the hypotheses `0 < p + q` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beatty Set](beatty-set.md)
 
 ## Sources
 

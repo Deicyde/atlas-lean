@@ -15,7 +15,12 @@ corresponding letters; with Proposition 3 this is the paper's equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Mallows Label](mallows-label.md)
+- [Mallows Q](mallows-q.md)
+- [Stern Brocot Frac](stern-brocot-frac.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
 
 ## Sources
 

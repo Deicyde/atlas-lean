@@ -12,7 +12,8 @@ depending on `P`. Stated along natural `n` (the domain of `ex`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
+- [Pattern Ex D](pattern-ex-d.md)
 
 ## Sources
 

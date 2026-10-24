@@ -15,7 +15,7 @@ the `r` denominator printed in arXiv v1; the limit is formalized with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The first digit of the chain is set exactly when `U_2 < 1/φ²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Markov Path](zeck-markov-path.md)
 
 ## Sources
 

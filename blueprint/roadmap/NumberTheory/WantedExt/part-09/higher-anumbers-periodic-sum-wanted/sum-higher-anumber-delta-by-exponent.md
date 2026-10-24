@@ -13,7 +13,8 @@ For rational `x ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher ANumber Delta](higher-anumber-delta.md)
+- [Higher ANumber Delta Zero](higher-anumber-delta-zero.md)
 
 ## Sources
 

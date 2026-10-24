@@ -13,7 +13,8 @@ Characteristic values at the root `1/2`: `φ_SBT(1/2) = ⟨1/2, 2/3⟩` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Phi](stern-brocot-phi.md)
+- [Stern Brocot Psi](stern-brocot-psi.md)
 
 ## Sources
 

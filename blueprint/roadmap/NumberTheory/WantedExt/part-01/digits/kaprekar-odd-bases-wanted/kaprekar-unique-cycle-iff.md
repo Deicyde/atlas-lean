@@ -12,7 +12,8 @@ whose orbit contains every periodic point of `X_B`) if and only if `B ∈ {3, 5,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
+- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
 
 ## Sources
 

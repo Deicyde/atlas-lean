@@ -12,7 +12,7 @@ The last peak of `UDUUDD` has height `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyck Last Peak Height](dyck-last-peak-height.md)
 
 ## Sources
 

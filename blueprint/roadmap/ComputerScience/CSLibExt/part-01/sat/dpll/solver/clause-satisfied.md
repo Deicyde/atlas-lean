@@ -11,7 +11,7 @@ Executable clause satisfaction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

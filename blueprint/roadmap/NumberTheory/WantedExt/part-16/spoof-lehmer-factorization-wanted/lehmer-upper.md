@@ -14,6 +14,11 @@ completions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lehmer Completions](lehmer-completions.md)
+- [Lehmer Kappa](lehmer-kappa.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SpoofLehmerFactorizationWanted](../../../../../sources/v2/WantedExt.md)

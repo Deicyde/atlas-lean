@@ -11,7 +11,7 @@ Ulam's Problem 167 is false: the claim above fails already for one function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem167 Claim](scottish-book-problem167-claim.md)
 
 ## Sources
 

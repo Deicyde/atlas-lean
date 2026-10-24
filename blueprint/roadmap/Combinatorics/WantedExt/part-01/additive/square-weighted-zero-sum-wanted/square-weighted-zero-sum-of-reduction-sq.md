@@ -15,7 +15,9 @@ followed literally.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Weighted Zero Sum](has-weighted-zero-sum.md)
+- [Square Set](square-set.md)
+- [Unit Square Set](unit-square-set.md)
 
 ## Sources
 

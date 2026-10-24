@@ -12,7 +12,9 @@ Characteristic values: `Q_1 = O_L`, and on `⟨R, L, …⟩` the next values are
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Mallows Q](mallows-q.md)
 
 ## Sources
 

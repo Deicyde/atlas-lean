@@ -13,7 +13,7 @@ Lower bound: for `F` positive on `[2, ∞)^m` with `F(x) ≤ M F(⌊x⌋)` there
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Digit Seq](luroth-digit-seq.md)
 
 ## Sources
 

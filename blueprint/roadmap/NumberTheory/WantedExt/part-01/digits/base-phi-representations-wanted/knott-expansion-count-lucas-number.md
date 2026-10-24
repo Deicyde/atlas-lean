@@ -11,7 +11,8 @@ lean: MetaMathlibExt.knottExpansionCount_lucasNumber
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knott Expansion Count](knott-expansion-count.md)
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

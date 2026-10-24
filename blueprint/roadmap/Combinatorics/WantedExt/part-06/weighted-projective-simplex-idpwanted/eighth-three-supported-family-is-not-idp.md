@@ -14,7 +14,12 @@ essential because the displayed parameter equations alone need not imply it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is Reflexive](is-reflexive.md)
+- [Satisfies Support IDPNecessary](satisfies-support-idpnecessary.md)
+- [Expand Support](expand-support.md)
+- [Three Support Family](three-support-family.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

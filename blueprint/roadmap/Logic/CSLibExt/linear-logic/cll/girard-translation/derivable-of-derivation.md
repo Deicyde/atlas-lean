@@ -13,7 +13,18 @@ from a theory whose axioms translate to CLL theorems, then `⊢ ?Γ°⫠, A°` i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyps](hyps.md)
+- [Girard's translation](translate.md)
+
+## Proof depends on
+
+- [Bang hyps](bang-hyps.md)
+- [Cut closed](cut-closed.md)
+- [Cut hyps](cut-hyps.md)
+- [Hyp](hyp.md)
+- [Hyp mem](hyp-mem.md)
+- [Of insert](of-insert.md)
+- [Weaken hyps](weaken-hyps.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ generating functions on the convergence domain `|s| ≤ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pgf](pgf.md)
+
+## Proof depends on
+
+- [Integrable pow of abs le one](integrable-pow-of-abs-le-one.md)
 
 ## Sources
 

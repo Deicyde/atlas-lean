@@ -12,7 +12,9 @@ lean: MetaMathlibExt.integerGroupDeterminants_c4Sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Sq Exceptional Set](c4-sq-exceptional-set.md)
+- [Integer Group Determinants](integer-group-determinants.md)
+- [Primes Five Mod Eight](primes-five-mod-eight.md)
 
 ## Sources
 

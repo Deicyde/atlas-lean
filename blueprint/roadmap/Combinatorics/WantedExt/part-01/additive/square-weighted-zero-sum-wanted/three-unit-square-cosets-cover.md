@@ -14,7 +14,7 @@ parentheses fix the harmless associativity convention.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Square Set](unit-square-set.md)
 
 ## Sources
 

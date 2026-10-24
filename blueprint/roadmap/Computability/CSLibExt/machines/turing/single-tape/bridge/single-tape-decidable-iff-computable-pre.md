@@ -12,7 +12,12 @@ lean: Cslib.Decidability.singleTapeDecidable_iff_computablePred
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape Decidable](../classes/single-tape-decidable.md)
+
+## Proof depends on
+
+- [A predicate decided by a single-tape machine is computable](../to-recursive/computable-pred.md)
+- [Computable predicates are decidable by single-tape machines](../of-recursive/of-computable-pred.md)
 
 ## Sources
 

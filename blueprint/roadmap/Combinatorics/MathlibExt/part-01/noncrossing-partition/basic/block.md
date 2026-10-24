@@ -11,7 +11,12 @@ Block accessor for noncrossing partitions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Partition](noncrossing-partition.md)
+
+## Proof depends on
+
+- [Is Noncrossing](is-noncrossing.md)
+- [Set Partition](set-partition.md)
 
 ## Sources
 

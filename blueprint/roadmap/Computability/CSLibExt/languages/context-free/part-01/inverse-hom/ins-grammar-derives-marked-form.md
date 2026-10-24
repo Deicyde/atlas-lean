@@ -12,7 +12,13 @@ The marker loops of `markedForm u` derive exactly the left letters of `u`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ins Grammar](ins-grammar.md)
+- [Marked Form](marked-form.md)
+
+## Proof depends on
+
+- [Ins Symbol](ins-symbol.md)
+- [Proj Right](proj-right.md)
 
 ## Sources
 

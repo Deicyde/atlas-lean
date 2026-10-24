@@ -13,7 +13,17 @@ distribution the ELBO is monotone, and (for a positive joint) it stays below the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Elbo](elbo.md)
+- [Prod Dist](prod-dist.md)
+- [Sweep](sweep.md)
+
+## Proof depends on
+
+- [Cavi](cavi.md)
+- [A sweep of coordinate ascent does not decrease the ELBO](elbo-le-elbo-sweep.md)
+- [Expected Log](expected-log.md)
+- [Swap Joint](swap-joint.md)
 
 ## Sources
 

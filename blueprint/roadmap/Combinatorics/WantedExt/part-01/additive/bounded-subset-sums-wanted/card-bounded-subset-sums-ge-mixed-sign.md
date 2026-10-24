@@ -12,7 +12,8 @@ and `α + β ≤ k - 1`: `|Σ^β_α(A)| ≥ L(α, β, A)`, and the bound is atta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subset Sums](bounded-subset-sums.md)
+- [Mixed Sign Subset Sum Bound](mixed-sign-subset-sum-bound.md)
 
 ## Sources
 

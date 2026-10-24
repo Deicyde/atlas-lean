@@ -11,7 +11,11 @@ The sum-of-pairs score of a multiple alignment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MSAlignment](msalignment.md)
+
+## Proof depends on
+
+- [Column SP](column-sp.md)
 
 ## Sources
 

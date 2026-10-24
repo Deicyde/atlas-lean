@@ -12,7 +12,7 @@ it also holds at `n = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Graph](keyword-graph.md)
 
 ## Sources
 

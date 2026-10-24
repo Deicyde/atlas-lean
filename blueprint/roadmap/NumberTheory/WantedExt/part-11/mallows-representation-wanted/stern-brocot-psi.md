@@ -15,6 +15,10 @@ children of the left child followed by the right child (vertices encoded by thei
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gap Mediant](gap-mediant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.MallowsRepresentationWanted](../../../../../sources/v2/WantedExt.md)

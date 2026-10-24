@@ -11,7 +11,7 @@ lean: MetaMathlibExt.gutkovskiy_eq_two_mul_sum_mod_two_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gutkovskiy](gutkovskiy.md)
 
 ## Sources
 

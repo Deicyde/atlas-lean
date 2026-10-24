@@ -11,7 +11,12 @@ Append a symbol to a Nerode class.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](nerode-class.md)
+
+## Proof depends on
+
+- [Nerode Rel append singleton](nerode-rel-append-singleton.md)
+- [Nerode Setoid](nerode-setoid.md)
 
 ## Sources
 

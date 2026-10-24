@@ -12,7 +12,11 @@ have `m` and `n` states.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](../regular-expression/encoded-regex.md)
+
+## Proof depends on
+
+- [Num Thompson States](num-thompson-states.md)
 
 ## Sources
 

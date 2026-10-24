@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isOddSquarefreePart_360
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Squarefree Part](is-odd-squarefree-part.md)
 
 ## Sources
 

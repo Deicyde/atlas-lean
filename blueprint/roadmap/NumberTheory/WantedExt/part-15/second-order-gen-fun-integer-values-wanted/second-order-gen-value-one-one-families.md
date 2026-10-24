@@ -12,7 +12,8 @@ with `A(x) ∈ ℤ` is a ratio of consecutive terms of `A^{(0,1)}` or of `A^{(-1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Bi Seq](second-order-bi-seq.md)
+- [Second Order Gen Value](second-order-gen-value.md)
 
 ## Sources
 

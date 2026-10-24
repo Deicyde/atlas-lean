@@ -11,7 +11,13 @@ The production `A → wᵢ i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [Domino](domino.md)
+- [Index Sym](index-sym.md)
+- [Letter Sym](letter-sym.md)
 
 ## Sources
 

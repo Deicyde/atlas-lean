@@ -13,6 +13,10 @@ The compression-collision finder built from a hash-collision finder.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Find Collision](find-collision.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.Hash.MerkleDamgard](../../../../../../sources/v2/CSLibExt.md)

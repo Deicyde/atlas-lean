@@ -13,7 +13,7 @@ the parity of a sum over `k ≤ n` (digits beyond the length of `n` vanish).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic Two](meta-automatic-two.md)
 
 ## Sources
 

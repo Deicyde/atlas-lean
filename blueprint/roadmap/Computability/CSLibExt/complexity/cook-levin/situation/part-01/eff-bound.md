@@ -12,7 +12,12 @@ Pushes still on top and net consumption each grow by at most `ops q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eff](eff.md)
+- [Ops](ops.md)
+
+## Proof depends on
+
+- [Read Top](read-top.md)
 
 ## Sources
 

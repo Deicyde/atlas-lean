@@ -14,7 +14,14 @@ binary codes `encodeNat (encode a)` written through any `ι : Bool → Symbol`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape Decidable](../classes/single-tape-decidable.md)
+- [Halts On](../classes/halts-on.md)
+- [Is LBA](is-lba.md)
+
+## Proof depends on
+
+- [Single-tape decidability is Mathlib's `ComputablePred`](../bridge/single-tape-decidable-iff-computable-pre.md)
+- [The halting problem of a linear bounded automaton is decidable](computable-pred-halts-on-encode-nat.md)
 
 ## Sources
 

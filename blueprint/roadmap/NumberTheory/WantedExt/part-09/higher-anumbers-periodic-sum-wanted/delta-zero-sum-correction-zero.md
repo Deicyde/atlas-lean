@@ -14,7 +14,12 @@ Lemma 9 (`F_0 = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+
+## Proof depends on
+
+- [Higher ANumber Delta Zero](higher-anumber-delta-zero.md)
+- [Tau Den](tau-den.md)
 
 ## Sources
 

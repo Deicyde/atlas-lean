@@ -14,7 +14,7 @@ hypothesis; no extra divisibility premise is added.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triple Regular Partition Count](triple-regular-partition-count.md)
 
 ## Sources
 

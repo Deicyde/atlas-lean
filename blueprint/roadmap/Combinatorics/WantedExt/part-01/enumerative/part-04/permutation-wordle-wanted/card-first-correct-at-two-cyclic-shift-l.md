@@ -12,7 +12,10 @@ permutations are guessed in exactly three guesses with `ρ_S(π) = 2` than with 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Inductive Perm Wordle Strategy](is-inductive-perm-wordle-strategy.md)
+- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
+- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [Cyclic Shift Left Strategy](cyclic-shift-left-strategy.md)
 
 ## Sources
 

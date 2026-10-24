@@ -14,6 +14,10 @@ The generalized Eulerian polynomial `P_n(q, t; x, y)`, `n!` times the coefficien
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Eulerian Series](generalized-eulerian-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedEulerianGammaWanted](../../../../../../../sources/v2/WantedExt.md)

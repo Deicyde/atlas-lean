@@ -13,7 +13,11 @@ is IDP.  Lattice points in the product are represented by pairs of integer vecto
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is Reflexive](is-reflexive.md)
+- [Affine Free Sum](affine-free-sum.md)
+- [Negative Weight Vertex](negative-weight-vertex.md)
+- [Weighted Simplex](weighted-simplex.md)
 
 ## Sources
 

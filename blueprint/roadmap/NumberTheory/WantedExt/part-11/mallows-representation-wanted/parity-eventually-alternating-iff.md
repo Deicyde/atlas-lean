@@ -15,7 +15,9 @@ of `M` (`Nat.nth`), this says: for all `t ≥ 2k - 1`, the letters strictly betw
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
+- [Stern Brocot Frac](stern-brocot-frac.md)
 
 ## Sources
 

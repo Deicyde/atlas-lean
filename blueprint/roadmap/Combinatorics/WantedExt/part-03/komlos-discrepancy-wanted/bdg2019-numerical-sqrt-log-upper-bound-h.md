@@ -11,7 +11,7 @@ Source: BDG2019, arXiv1605.02882, retained Theorem `komlos`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bdg2019 Numerical Sqrt Log Upper Bound](bdg2019-numerical-sqrt-log-upper-bound.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Characteristic value: `x² + 1 ≡ 0 (mod 5)` has the two solutions `2, 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Markov Congruence Count](gen-markov-congruence-count.md)
 
 ## Sources
 

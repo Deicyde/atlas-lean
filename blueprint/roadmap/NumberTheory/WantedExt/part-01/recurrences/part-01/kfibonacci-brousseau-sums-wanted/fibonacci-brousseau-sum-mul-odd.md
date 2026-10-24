@@ -13,7 +13,8 @@ C_{L_m}^(p)(0) F_m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Brousseau Coeff](brousseau-coeff.md)
+- [Lucas Number](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

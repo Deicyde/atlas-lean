@@ -11,7 +11,16 @@ The value of a query on the database `db`, which assigns a relation to each name
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expr](expr.md)
+- [Tuple](tuple.md)
+
+## Proof depends on
+
+- [Cond](cond.md)
+- [Join](join.md)
+- [Project](project.md)
+- [Rename](rename.md)
+- [Select](select.md)
 
 ## Sources
 

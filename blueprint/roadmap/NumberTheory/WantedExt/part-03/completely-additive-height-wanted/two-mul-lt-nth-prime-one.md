@@ -11,7 +11,7 @@ Lemma 2: `pₖ > 2k` for all `k ≥ 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Prime One](nth-prime-one.md)
 
 ## Sources
 

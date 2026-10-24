@@ -12,7 +12,19 @@ With the oracle `F k`, the reduction runs the forgery experiment exactly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+- [Mac Game](mac-game.md)
+- [Mac Reduction](mac-reduction.md)
+- [Prf Real](prf-real.md)
+
+## Proof depends on
+
+- [Mac Wins](mac-wins.md)
+- [Done](done.md)
+- [Queries](queries.md)
+- [Query](query.md)
+- [Run](run.md)
+- [Oracle Sig](oracle-sig.md)
 
 ## Sources
 

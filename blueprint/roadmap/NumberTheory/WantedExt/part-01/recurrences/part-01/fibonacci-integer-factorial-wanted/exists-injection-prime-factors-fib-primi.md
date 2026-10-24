@@ -17,7 +17,9 @@ sub-multiset of `I`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Cyclotomic Value](fib-cyclotomic-value.md)
+- [Fib Entry Point](fib-entry-point.md)
+- [Fib Primitive Part](fib-primitive-part.md)
 
 ## Sources
 

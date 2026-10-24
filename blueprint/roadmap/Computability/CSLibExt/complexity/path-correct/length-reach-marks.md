@@ -12,7 +12,13 @@ The final marks are `n` long.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reach Marks](../path/reach-marks.md)
+
+## Proof depends on
+
+- [Init Marks](../path/init-marks.md)
+- [Length iterate mark Pass](length-iterate-mark-pass.md)
+- [Mark Pass](../path/mark-pass.md)
 
 ## Sources
 

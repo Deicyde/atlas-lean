@@ -11,7 +11,12 @@ The copy domino `(a, a)` of a letter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../../part-01/pcp/domino.md)
+- [Sym](../../part-01/pcp/sym.md)
+
+## Proof depends on
+
+- [Letter](../../part-01/pcp/letter.md)
 
 ## Sources
 

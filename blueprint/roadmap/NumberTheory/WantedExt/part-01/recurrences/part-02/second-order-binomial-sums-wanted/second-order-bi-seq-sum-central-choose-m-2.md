@@ -15,7 +15,7 @@ For `n > 0` and integers `m, r`, with `U`, `V`, `Δ` as in Proposition 3.2:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Bi Seq](../../../../part-15/second-order-gen-fun-integer-values-wanted/second-order-bi-seq.md)
 
 ## Sources
 

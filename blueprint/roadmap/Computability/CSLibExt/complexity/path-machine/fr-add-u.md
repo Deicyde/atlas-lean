@@ -12,7 +12,14 @@ The frame of a read: the input, the copy stack and the counters it pushes on.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fr](fr.md)
+- [K](k.md)
+- [Γ](untitled.md)
+- [Add U](../../../MathlibExt/turing-machine/program/add-u.md)
+
+## Proof depends on
+
+- [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

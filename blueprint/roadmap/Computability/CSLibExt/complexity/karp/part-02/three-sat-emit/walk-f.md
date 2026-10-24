@@ -13,7 +13,13 @@ clause, `g` whether the first literal of `Ls` is the last walked.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Lit Cl](lit-cl.md)
+- [Nz](nz.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

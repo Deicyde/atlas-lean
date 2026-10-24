@@ -14,6 +14,10 @@ for the input stack.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Push FS](push-fs.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Situation](../../../../../../../sources/v2/CSLibExt.md)

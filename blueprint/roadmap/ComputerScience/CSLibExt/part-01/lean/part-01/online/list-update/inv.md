@@ -14,6 +14,10 @@ The number of inversions between two lists: the pairs of items they order differ
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inv Set](inv-set.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Online.ListUpdate](../../../../../../../../sources/v2/CSLibExt.md)

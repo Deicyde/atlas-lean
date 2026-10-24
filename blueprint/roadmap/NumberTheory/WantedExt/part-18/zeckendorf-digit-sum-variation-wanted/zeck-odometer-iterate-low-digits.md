@@ -12,7 +12,8 @@ then `(x + r)_n = x_n` for `2 ≤ n ≤ ℓ - 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

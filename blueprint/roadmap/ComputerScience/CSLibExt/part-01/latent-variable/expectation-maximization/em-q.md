@@ -14,6 +14,10 @@ M-step).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Posterior](posterior.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.ExpectationMaximization](../../../../../../sources/v2/CSLibExt.md)

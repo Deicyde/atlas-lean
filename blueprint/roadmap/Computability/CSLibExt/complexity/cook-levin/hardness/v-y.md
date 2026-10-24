@@ -11,7 +11,8 @@ Certificate bit `g`, right-tagged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](../../dense-satverifier/g.md)
+- [Pair Encode](../../dense-satverifier/pair-encode.md)
 
 ## Sources
 

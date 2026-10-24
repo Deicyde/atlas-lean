@@ -13,7 +13,20 @@ lean: Cslib.Complexity.CookLevin.Precompute.horner_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [MS](../counter-view/ms.md)
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
+- [St](../counter-view/st.md)
+- [HW](hw.md)
+- [Horn S](horn-s.md)
+- [Horn T](horn-t.md)
+- [Horn Val](horn-val.md)
+- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Horn Step](horn-step.md)
+- [One Horner round](horn-round.md)
 
 ## Sources
 

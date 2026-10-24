@@ -13,7 +13,7 @@ number of independent vertex sets of size `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Density](coprimality-density.md)
 
 ## Sources
 

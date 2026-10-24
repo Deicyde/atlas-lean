@@ -12,7 +12,17 @@ The empty permutation contributes the constant term `1` of `Ā_Q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [King Flat POPAbove GF](king-flat-popabove-gf.md)
+
+## Proof depends on
+
+- [Contains Flat POPAbove](contains-flat-popabove.md)
+- [Is King Perm](is-king-perm.md)
+- [Four le of contains Flat POPAbove](four-le-of-contains-flat-popabove.md)
+- [Perm Ascent Count](perm-ascent-count.md)
+- [Perm Descent Count](perm-descent-count.md)
+- [Perm Left To Right Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-min-count.md)
+- [Perm Right To Left Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-min-count.md)
 
 ## Sources
 

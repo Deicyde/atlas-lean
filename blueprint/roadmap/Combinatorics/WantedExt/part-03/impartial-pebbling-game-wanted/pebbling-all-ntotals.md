@@ -16,6 +16,11 @@ an N-game; the paper's `m^{(k+1:k)}(G)` is its least element when the set is non
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ImpartialPebblingGameWanted](../../../../../sources/v2/WantedExt.md)

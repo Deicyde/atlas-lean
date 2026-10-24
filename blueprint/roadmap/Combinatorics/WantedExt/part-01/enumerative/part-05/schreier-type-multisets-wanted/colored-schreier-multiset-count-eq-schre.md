@@ -12,7 +12,8 @@ Lemma 1: `(|B^{(s)}_{p,n}|)` is a periodic subsequence of `(b^{(s)}_{p,n})`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Schreier Multiset Count](colored-schreier-multiset-count.md)
+- [Schreier Parent B](schreier-parent-b.md)
 
 ## Sources
 

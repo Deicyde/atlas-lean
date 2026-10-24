@@ -13,7 +13,23 @@ postcondition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [Derivable](derivable.md)
+- [Wlp](../hoare/wlp.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [Entails](../hoare/entails.md)
+- [Subst](../hoare/subst.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [Big Step](../big-step/big-step.md)
+- [Strengthen](strengthen.md)
+- [State](../syntax/state.md)
+- [While Loop](../hoare/while-loop-2.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: Cslib.Algorithms.Lean.isAlignment_hirschberg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Alignment](../sequence-alignment/is-alignment.md)
+- [Hirschberg](hirschberg.md)
+
+## Proof depends on
+
+- [Is Alignment hirschberg Align](is-alignment-hirschberg-align.md)
 
 ## Sources
 

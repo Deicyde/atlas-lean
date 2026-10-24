@@ -15,6 +15,10 @@ product of the integrals.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lmarginal prod](lmarginal-prod.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.MeasureTheory.Measure.PiWithDensity](../../../../../sources/v2/MathlibExt.md)

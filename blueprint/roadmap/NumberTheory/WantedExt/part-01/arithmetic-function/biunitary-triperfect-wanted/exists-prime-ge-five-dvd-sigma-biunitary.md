@@ -14,7 +14,7 @@ that lemma's exception.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

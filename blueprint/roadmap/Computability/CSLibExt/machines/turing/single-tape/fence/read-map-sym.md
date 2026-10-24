@@ -12,7 +12,8 @@ lean: Cslib.Turing.SingleTapeTM.FenceSymbol.read_map_sym
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
+- [Read](read.md)
 
 ## Sources
 

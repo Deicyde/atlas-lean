@@ -12,7 +12,14 @@ lean: Cslib.Algorithms.Lean.Online.Paging.lruMisses_phase
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Misses](lru-misses.md)
+- [Phase Split](phase-split.md)
+
+## Proof depends on
+
+- [Lru Step](lru-step.md)
+- [The recency invariant](lru-step-take-of-mem.md)
+- [The recency invariant](lru-step-take-of-not-mem.md)
 
 ## Sources
 

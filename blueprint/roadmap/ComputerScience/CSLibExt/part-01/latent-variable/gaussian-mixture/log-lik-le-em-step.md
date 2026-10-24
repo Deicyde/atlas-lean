@@ -13,7 +13,20 @@ theorem `logLik_le_of_emQ_le`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Lik](../expectation-maximization/log-lik.md)
+- [Not All Equal](not-all-equal.md)
+- [Valid Params](valid-params.md)
+- [Em Step](em-step.md)
+- [Joint](joint.md)
+
+## Proof depends on
+
+- [The EM theorem](../expectation-maximization/log-lik-le-of-em-q-le.md)
+- [Params](params.md)
+- [Valid](valid.md)
+- [The M-step maximizes `Q(· | θ)`](em-q-le-em-step.md)
+- [Iso Gauss PDF](iso-gauss-pdf.md)
+- [Nonempty of valid](nonempty-of-valid.md)
 
 ## Sources
 

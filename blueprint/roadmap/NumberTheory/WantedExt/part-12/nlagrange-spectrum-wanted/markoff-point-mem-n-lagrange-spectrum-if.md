@@ -16,7 +16,7 @@ Markoff points in `L_p`: for a Markoff triple `x ≤ y ≤ z` (`x² + y² + z² 
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

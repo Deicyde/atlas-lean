@@ -13,6 +13,10 @@ lean: MetaMathlibExt.C4ModFourABABHatCompl
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [C4 Mod Four ABABHat](c4-mod-four-ababhat.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ImpartialPebblingGameWanted](../../../../../sources/v2/WantedExt.md)

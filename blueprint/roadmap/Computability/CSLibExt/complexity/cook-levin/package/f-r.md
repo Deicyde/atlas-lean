@@ -11,7 +11,11 @@ The reduction function on encoded inputs: decode the raw symbols, emit `Phi`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../situation/part-01/enc.md)
+
+## Proof depends on
+
+- [Phi Of](phi-of.md)
 
 ## Sources
 

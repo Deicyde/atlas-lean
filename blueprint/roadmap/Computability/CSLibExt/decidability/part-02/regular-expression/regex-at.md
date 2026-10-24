@@ -11,7 +11,12 @@ The regular expression at node `k`; an argument that is not an earlier node read
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](encoded-regex.md)
+
+## Proof depends on
+
+- [Node](node.md)
+- [Regex Node](regex-node.md)
 
 ## Sources
 

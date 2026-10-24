@@ -12,7 +12,7 @@ Lemma 5: with `T = t(kl + l + 1)`, `1 + 4i, 2 + 4i ∈ A + A` for `0 ≤ i ≤ 2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chu Family KLT](chu-family-klt.md)
 
 ## Sources
 

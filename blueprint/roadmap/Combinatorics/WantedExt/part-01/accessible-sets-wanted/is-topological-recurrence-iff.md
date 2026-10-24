@@ -12,7 +12,8 @@ Characterization of topological recurrence as one-fold recurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LTopological Recurrence](is-ltopological-recurrence.md)
+- [Is Topological Recurrence](is-topological-recurrence.md)
 
 ## Sources
 

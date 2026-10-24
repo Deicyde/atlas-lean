@@ -13,7 +13,7 @@ running over independent subsets `L` of `J`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Density](coprimality-density.md)
 
 ## Sources
 

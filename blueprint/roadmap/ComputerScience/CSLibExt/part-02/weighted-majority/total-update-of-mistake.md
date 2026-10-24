@@ -13,7 +13,15 @@ wrong side, and it keeps only a `β ≤ 1` fraction, so `2 total' ≤ (1 + β) t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+- [Predict](predict.md)
+- [Total](total.md)
+- [Update](update.md)
+
+## Proof depends on
+
+- [Total update](total-update.md)
+- [Weight On](weight-on.md)
 
 ## Sources
 

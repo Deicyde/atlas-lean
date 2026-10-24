@@ -14,6 +14,10 @@ The alternating sums of Motzkin numbers `T_n = ∑_{k=0}^n (-1)^{n-k} M_k` (OEIS
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Motzkin Number](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinAlternatingSumsWanted](../../../../../../../sources/v2/WantedExt.md)

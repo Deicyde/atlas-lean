@@ -12,7 +12,8 @@ The mirroring strategy of the paper is not formalized; only the outcome is state
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement First Player Wins](placement-first-player-wins.md)
+- [Tak Has Road](tak-has-road.md)
 
 ## Sources
 

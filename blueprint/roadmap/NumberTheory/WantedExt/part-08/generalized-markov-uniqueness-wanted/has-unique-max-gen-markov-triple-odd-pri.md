@@ -12,7 +12,8 @@ Theorem 4.10: a `k`-generalized Markov number `b = p^m` or `2p^m` with `p` an od
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Unique Max Gen Markov Triple](has-unique-max-gen-markov-triple.md)
+- [Is Gen Markov Number](is-gen-markov-number.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ If `p ∤ i`, then `[p^{-1}](τ i) > [p^0](τ i)` if and only if `δ(i) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDigit](base-pdigit.md)
+- [Higher ANumber Delta](higher-anumber-delta.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

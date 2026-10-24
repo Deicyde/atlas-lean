@@ -12,7 +12,7 @@ at most `p` tasks share a step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
 
 ## Sources
 

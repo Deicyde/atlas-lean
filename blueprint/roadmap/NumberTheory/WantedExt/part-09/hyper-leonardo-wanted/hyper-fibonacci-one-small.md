@@ -12,7 +12,7 @@ Small values: `F^{(1)}_0, …, F^{(1)}_3 = 0, 1, 2, 4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Fibonacci](hyper-fibonacci.md)
 
 ## Sources
 

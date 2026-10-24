@@ -16,7 +16,7 @@ counterexample: `p = 1`, `k = 2`, `n = 2`, `x = (1, 1)` gives `4` versus `3`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Super Leonardo P](super-leonardo-p.md)
 
 ## Sources
 

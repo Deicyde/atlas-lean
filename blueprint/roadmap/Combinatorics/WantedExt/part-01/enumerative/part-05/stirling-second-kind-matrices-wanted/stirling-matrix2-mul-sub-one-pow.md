@@ -11,7 +11,10 @@ Theorem 1: `S(n) (V(n) - I_n)^N = E(n) Q^[N](n)` for `N ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling Matrix2](../stirling-matrix-wanted/stirling-matrix2.md)
+- [Shifted Vandermonde Matrix](shifted-vandermonde-matrix.md)
+- [Stirling QMatrix](stirling-qmatrix.md)
+- [Stirling VMatrix](stirling-vmatrix.md)
 
 ## Sources
 

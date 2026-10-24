@@ -13,7 +13,8 @@ Goldman, Joichi and White: for a Ferrers board `B = (b_1, …, b_n)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Rook Number](level-rook-number.md)
+- [M Falling Factorial](m-falling-factorial.md)
 
 ## Sources
 

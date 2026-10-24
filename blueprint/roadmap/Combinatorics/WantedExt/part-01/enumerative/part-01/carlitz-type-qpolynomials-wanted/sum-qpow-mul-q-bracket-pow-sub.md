@@ -14,7 +14,8 @@ the terms `k < d` vanish).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Carlitz Type With](is-carlitz-type-with.md)
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

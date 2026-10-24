@@ -16,7 +16,9 @@ cleared). If `J(Q(x), P(x))` is totally positive, `s² ≥ 4t` and `as + a√(s�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Riordan Array AZ](is-riordan-array-az.md)
+- [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
+- [Riordan Coeff Matrix](riordan-coeff-matrix.md)
 
 ## Sources
 

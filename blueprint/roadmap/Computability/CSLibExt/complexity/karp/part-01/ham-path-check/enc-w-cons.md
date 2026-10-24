@@ -12,7 +12,7 @@ The first vertex comes first.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc W](enc-w.md)
 
 ## Sources
 

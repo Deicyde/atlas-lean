@@ -16,6 +16,10 @@ complement of the joint covariance).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pos Semidef from Blocks linear](pos-semidef-from-blocks-linear.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.GaussianConditioning](../../../../../../sources/v2/MathlibExt.md)

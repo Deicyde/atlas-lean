@@ -11,7 +11,7 @@ For odd `B > 3`, `λ(B) ≤ φ(B) / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Projective Order Two](projective-order-two.md)
 
 ## Sources
 

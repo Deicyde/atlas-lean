@@ -12,7 +12,7 @@ The factorization `2 · 3` of `6` corresponds to the perfect partition `(1, 2^2)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Partition Of Factorization](perfect-partition-of-factorization.md)
 
 ## Sources
 

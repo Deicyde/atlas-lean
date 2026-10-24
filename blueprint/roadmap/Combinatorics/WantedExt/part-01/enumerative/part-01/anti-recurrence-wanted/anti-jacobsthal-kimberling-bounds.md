@@ -12,7 +12,8 @@ for `n ≥ 1`, `0 ≤ A_n - 7n + 4 ≤ 3`, `0 ≤ 3B¹_n - 7n + 6 ≤ 4` and `0 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Recurrence](anti-recurrence.md)
+- [Anti Recurrence Complement](anti-recurrence-complement.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ guessed in exactly three guesses with `ρ_S(π) = 1` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
+- [Perm Wordle Solved In](perm-wordle-solved-in.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The guess sequence of permutation Wordle: `permWordleGuess S π r` is the paper'
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perm Wordle Next Guess](perm-wordle-next-guess.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PermutationWordleWanted](../../../../../../../sources/v2/WantedExt.md)

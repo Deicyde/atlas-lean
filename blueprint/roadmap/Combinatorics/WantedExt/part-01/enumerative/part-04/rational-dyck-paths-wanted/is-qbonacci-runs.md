@@ -16,6 +16,10 @@ The run condition of `Q^{r/s}` (Definition 4): every block of `p` consecutive
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Run Following Valleys](run-following-valleys.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RationalDyckPathsWanted](../../../../../../../sources/v2/WantedExt.md)

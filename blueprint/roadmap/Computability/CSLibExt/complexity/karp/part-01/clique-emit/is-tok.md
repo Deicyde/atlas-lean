@@ -11,7 +11,7 @@ Symbols the walk moves between `D` and `E`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

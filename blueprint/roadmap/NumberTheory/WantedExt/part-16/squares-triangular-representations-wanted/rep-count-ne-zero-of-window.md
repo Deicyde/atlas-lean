@@ -13,7 +13,8 @@ if `r_{s-(p-1)}(n) + ⋯ + r_{s-1}(n) ≢ 0 (mod p)` then `r_s(n) ≠ 0`, and th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Squares Rep Count](sum-of-squares-rep-count.md)
+- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
 
 ## Sources
 

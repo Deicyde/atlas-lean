@@ -12,7 +12,7 @@ The defining recurrence `eₖ₊₁ = 2 eₖ + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Cunningham Chain](extended-cunningham-chain.md)
 
 ## Sources
 

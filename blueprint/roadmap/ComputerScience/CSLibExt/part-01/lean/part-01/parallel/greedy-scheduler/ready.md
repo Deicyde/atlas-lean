@@ -11,7 +11,8 @@ A task is *ready* at step `t` if it has not run yet and all its predecessors ran
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](../brent/dag.md)
+- [Schedule](../brent/schedule.md)
 
 ## Sources
 

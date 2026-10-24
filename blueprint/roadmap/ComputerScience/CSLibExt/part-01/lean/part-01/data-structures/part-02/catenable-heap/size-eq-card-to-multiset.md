@@ -12,7 +12,13 @@ The size is the cardinality of the multiset of elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Size](size.md)
+- [To Multiset](to-multiset.md)
+
+## Proof depends on
+
+- [To List](to-list.md)
 
 ## Sources
 

@@ -15,7 +15,9 @@ equivalently `φ⋆(n) = φ(u(n)) v(n)² ∏_{p ∣ v(n)} (1 - 1/p²)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Divisors](square-split-divisors.md)
+- [Square Split U](square-split-u.md)
+- [Square Split V](square-split-v.md)
 
 ## Sources
 

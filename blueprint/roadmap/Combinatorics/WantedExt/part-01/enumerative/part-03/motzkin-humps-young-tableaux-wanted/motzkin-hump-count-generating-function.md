@@ -13,7 +13,8 @@ form: for `k ≥ 1`, clearing the factor `1-X` gives the displayed identity in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Hump Count](motzkin-hump-count.md)
+- [Motzkin Series](motzkin-series.md)
 
 ## Sources
 

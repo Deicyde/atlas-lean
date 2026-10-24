@@ -14,7 +14,7 @@ point and `opx(n, P) = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

@@ -14,7 +14,9 @@ distinct Schur triples, (ii) every distinct sum-free set lies in some `F âˆˆ ğ“
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Distinct Sum Free Set](is-distinct-sum-free-set.md)
+- [Is Sum Free Set](is-sum-free-set.md)
+- [Distinct Schur Triple Count](distinct-schur-triple-count.md)
 
 ## Sources
 

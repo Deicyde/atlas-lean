@@ -13,7 +13,8 @@ Proposition 2.1: every vertex of `WMT(k)` is a `k`-generalized Markov triple, an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Wide Gen Markov Tree](wide-gen-markov-tree.md)
 
 ## Sources
 

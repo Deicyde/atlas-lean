@@ -13,7 +13,7 @@ unchanged).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pq RFibonacci](pq-rfibonacci.md)
 
 ## Sources
 

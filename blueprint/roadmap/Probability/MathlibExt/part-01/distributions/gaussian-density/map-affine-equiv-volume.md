@@ -12,7 +12,7 @@ Lebesgue measure under `x ↦ μ + A x` scales by `|det A|⁻¹`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Affine Equiv](affine-equiv.md)
 
 ## Sources
 

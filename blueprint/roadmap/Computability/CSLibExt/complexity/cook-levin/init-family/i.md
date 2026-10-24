@@ -11,7 +11,12 @@ Alphabets: the counter machine's, and `G` on the input stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [IK](ik.md)
+
+## Proof depends on
+
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
 
 ## Sources
 

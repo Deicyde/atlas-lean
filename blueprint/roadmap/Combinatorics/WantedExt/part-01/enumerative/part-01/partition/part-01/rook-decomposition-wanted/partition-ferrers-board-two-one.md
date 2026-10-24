@@ -12,7 +12,7 @@ The Ferrers board of `(2, 1)` is the three cells `(0,0), (0,1), (1,0)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Ferrers Board](partition-ferrers-board.md)
 
 ## Sources
 

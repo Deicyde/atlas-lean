@@ -11,7 +11,7 @@ For positive even `n`, `2 ^ (ω(n) - 1)` divides `σ**(n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

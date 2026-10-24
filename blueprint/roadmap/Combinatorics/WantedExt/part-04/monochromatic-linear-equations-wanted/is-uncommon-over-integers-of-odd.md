@@ -14,7 +14,7 @@ there are no solutions in `[n]^{2m+1}` (e.g. `x₁ + x₂ + x₃ = 0`) and the p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Uncommon Over Integers](is-uncommon-over-integers.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ values are real by Remark 1); (b) for `2j ≠ d`, `pᵈⱼ(it - 1/2) = 0` iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clspan](clspan.md)
+- [P Basis](p-basis.md)
 
 ## Sources
 

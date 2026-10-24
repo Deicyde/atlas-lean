@@ -13,7 +13,7 @@ at `9` has the single edge `(9, 9)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Edges](cycle-edges.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MetaMathlibExt.runLengthTransform_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
+
+## Proof depends on
+
+- [Binary Run Lengths](binary-run-lengths.md)
+- [Bit Run Lengths](bit-run-lengths.md)
 
 ## Sources
 

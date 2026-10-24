@@ -13,7 +13,7 @@ With all weights `1`, the partition sum for `n = 4` counts the `8` compositions 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trudi Partition Sum](trudi-partition-sum.md)
 
 ## Sources
 

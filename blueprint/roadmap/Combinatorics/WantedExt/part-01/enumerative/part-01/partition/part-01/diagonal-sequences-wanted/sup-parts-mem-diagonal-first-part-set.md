@@ -13,7 +13,9 @@ rephrasing (`α ∈ P(n,k)*` for some `k ∈ A_1`) is the same statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Normal Form](diagonal-normal-form.md)
+- [Diagonal Of List](diagonal-of-list.md)
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

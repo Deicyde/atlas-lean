@@ -13,7 +13,8 @@ the maximum of a unique triple when `k = 2`, or `k ≥ 4` is even and `p² ∤ k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Unique Max Gen Markov Triple](has-unique-max-gen-markov-triple.md)
+- [Is Gen Markov Number](is-gen-markov-number.md)
 
 ## Sources
 

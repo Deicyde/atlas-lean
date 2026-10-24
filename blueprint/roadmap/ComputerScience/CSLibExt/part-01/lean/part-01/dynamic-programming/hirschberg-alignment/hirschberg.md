@@ -11,7 +11,11 @@ The Hirschberg alignment: divide-and-conquer reconstruction at full fuel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+
+## Proof depends on
+
+- [Hirschberg Align](hirschberg-align.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ Simplified P&R started at `[a, b, c, d]`; the rank is the total number of object
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+
+## Proof depends on
+
+- [Simplified Princess Roses Moves](simplified-princess-roses-moves.md)
+- [Simplified Princess Roses Moves rank lt](simplified-princess-roses-moves-rank-lt.md)
 
 ## Sources
 

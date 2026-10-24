@@ -13,7 +13,7 @@ multisets whose elements all lie in `L` and whose sizes sum to `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multisets With Size Sum](multisets-with-size-sum.md)
 
 ## Sources
 

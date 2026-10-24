@@ -12,7 +12,8 @@ For `j ≥ 0` and `k ≥ 1`: (a) for `n ≥ 1`, `F_k^{-j}({n}) = (L_k^j(n-1), L_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof L](hof-l.md)
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

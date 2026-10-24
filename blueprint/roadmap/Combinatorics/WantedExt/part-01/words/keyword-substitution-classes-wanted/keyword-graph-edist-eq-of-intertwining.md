@@ -14,7 +14,8 @@ graph distance in `𝒢_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Graph](keyword-graph.md)
+- [Keyword Simple Map](keyword-simple-map.md)
 
 ## Sources
 

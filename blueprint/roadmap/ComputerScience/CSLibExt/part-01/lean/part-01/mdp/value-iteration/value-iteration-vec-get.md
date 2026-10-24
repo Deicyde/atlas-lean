@@ -12,7 +12,13 @@ The tabulated program computes value iteration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Value Iteration](value-iteration.md)
+- [Value Iteration Vec](value-iteration-vec.md)
+
+## Proof depends on
+
+- [Bellman](bellman.md)
 
 ## Sources
 

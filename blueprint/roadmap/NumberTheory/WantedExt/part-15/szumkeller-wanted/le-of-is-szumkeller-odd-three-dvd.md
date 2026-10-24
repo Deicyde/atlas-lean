@@ -12,7 +12,7 @@ An odd s-Zumkeller number divisible by `3` is at least
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SZumkeller](is-szumkeller.md)
 
 ## Sources
 

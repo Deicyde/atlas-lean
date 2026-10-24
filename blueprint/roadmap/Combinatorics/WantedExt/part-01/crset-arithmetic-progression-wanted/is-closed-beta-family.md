@@ -12,7 +12,8 @@ closed in `βS`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ramsey Family](is-ramsey-family.md)
+- [Beta Family](beta-family.md)
 
 ## Sources
 

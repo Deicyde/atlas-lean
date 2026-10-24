@@ -13,7 +13,7 @@ set and thus also records attainability of at least one root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical Line Root Set](canonical-line-root-set.md)
 
 ## Sources
 

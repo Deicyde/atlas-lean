@@ -12,7 +12,11 @@ lean: MetaMathlibExt.not_isUnitarySZumkeller_six
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unitary SZumkeller](is-unitary-szumkeller.md)
+
+## Proof depends on
+
+- [Unitary Divisors](../../../MathlibExt/part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

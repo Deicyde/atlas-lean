@@ -11,7 +11,12 @@ The responsibilities `r n k = P(z = k | xₙ)` (the E-step): the posterior of th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Posterior](../expectation-maximization/posterior.md)
+- [Joint](joint.md)
 
 ## Sources
 

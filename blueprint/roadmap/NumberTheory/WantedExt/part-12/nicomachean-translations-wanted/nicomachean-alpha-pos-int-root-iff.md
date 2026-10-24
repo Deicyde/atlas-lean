@@ -15,7 +15,7 @@ For `n ≥ 1`: (`s = 1`) `α(n, 1, a)` is divisible by `a - h` for some positive
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachean Alpha](nicomachean-alpha.md)
 
 ## Sources
 

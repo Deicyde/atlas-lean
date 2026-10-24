@@ -12,7 +12,7 @@ lean: MetaMathlibExt.triangularFrobeniusBound_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Frobenius Bound](triangular-frobenius-bound.md)
 
 ## Sources
 

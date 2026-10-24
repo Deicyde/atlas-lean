@@ -12,7 +12,7 @@ The first coefficients of `ψ`: `1, 1, 0, 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Theta Series](triangular-theta-series.md)
 
 ## Sources
 

@@ -14,7 +14,22 @@ having put the vertices back on `W`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Enc W](../../part-01/ham-path-check/enc-w.md)
+- [Prog](prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+
+## Proof depends on
+
+- [Cmp N run](cmp-n-run.md)
+- [Enc W append](../../part-01/ham-path-check/enc-w-append.md)
+- [Enc W cons](../../part-01/ham-path-check/enc-w-cons.md)
+- [If E run](if-e-run.md)
+- [Mv run](mv-run.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

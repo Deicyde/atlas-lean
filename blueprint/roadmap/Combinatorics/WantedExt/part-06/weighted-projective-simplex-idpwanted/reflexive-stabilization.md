@@ -13,6 +13,10 @@ The first reflexive stabilization `rs(q)=(1^{rsn(q)},q)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reflexive Stabilization Number](reflexive-stabilization-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

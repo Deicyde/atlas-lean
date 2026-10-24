@@ -12,7 +12,19 @@ Row-0 cell literals of the real start configuration are run literals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [C Idx](../../family/c-idx.md)
+- [Enc](../part-01/enc.md)
+- [The real run's literals](run-lit.md)
+- [Cell](../part-03/cell.md)
+- [Layout](../part-01/layout.md)
+
+## Proof depends on
+
+- [X Idx](../../family/x-idx.md)
+- [Code](../part-03/code.md)
+- [Sa](../part-01/sa.md)
+- [Sit Idx](../part-03/sit-idx.md)
+- [Run I](../part-03/run-i.md)
 
 ## Sources
 

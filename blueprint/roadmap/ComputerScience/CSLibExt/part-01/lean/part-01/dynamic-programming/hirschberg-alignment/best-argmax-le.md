@@ -12,7 +12,7 @@ The argmax lies in `0, …, n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Best Argmax](best-argmax.md)
 
 ## Sources
 

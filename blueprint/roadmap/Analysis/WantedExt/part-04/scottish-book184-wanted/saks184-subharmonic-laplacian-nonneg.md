@@ -18,7 +18,8 @@ R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Second Partial Derivatives](has-second-partial-derivatives.md)
+- [Is Subharmonic](is-subharmonic.md)
 
 ## Sources
 

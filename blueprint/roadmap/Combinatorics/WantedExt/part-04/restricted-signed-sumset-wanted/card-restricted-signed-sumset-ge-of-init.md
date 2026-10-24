@@ -14,7 +14,9 @@ the type of `t` implicit; it is represented as an integer to match cardinality a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Segment](initial-segment.md)
+- [Ordered Finset](ordered-finset.md)
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources
 

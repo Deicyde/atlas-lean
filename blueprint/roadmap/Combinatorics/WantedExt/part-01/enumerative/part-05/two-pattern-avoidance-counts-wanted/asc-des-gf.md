@@ -14,6 +14,12 @@ The joint generating function `∑_{n ≥ 0} ∑_{σ ∈ S_n(τ, ρ)} xⁿ p^{as
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Pattern](../../part-04/odd-fibonacci-wanted/has-pattern.md)
+- [Perm Ascents](perm-ascents.md)
+- [Perm Descents](perm-descents.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.TwoPatternAvoidanceCountsWanted](../../../../../../../sources/v2/WantedExt.md)

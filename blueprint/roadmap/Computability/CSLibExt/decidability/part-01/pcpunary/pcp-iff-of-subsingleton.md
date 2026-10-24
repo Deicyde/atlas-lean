@@ -12,7 +12,16 @@ lean: Cslib.Decidability.Post.pcp_iff_of_subsingleton
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [PCP](../pcp/pcp.md)
+
+## Proof depends on
+
+- [Is Solution](../pcp/is-solution.md)
+- [Bottom](../pcp/bottom.md)
+- [Length bottom lt length top](length-bottom-lt-length-top.md)
+- [Swap](swap.md)
+- [Top](../pcp/top.md)
 
 ## Sources
 

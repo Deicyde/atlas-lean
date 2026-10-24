@@ -12,7 +12,11 @@ The one-part partition `(n)`, `n ≥ 1`, has `n` lit cells as a weakly decreasin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lit Cells Decreasing](lit-cells-decreasing.md)
+
+## Proof depends on
+
+- [Decreasing Parts](decreasing-parts.md)
 
 ## Sources
 

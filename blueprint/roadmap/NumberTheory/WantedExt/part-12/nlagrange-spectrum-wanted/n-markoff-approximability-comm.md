@@ -12,7 +12,7 @@ lean: MetaMathlibExt.nMarkoffApproximability_comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Markoff Approximability](n-markoff-approximability.md)
 
 ## Sources
 

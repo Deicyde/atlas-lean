@@ -12,7 +12,7 @@ For an odd prime `p`, positive `n` and `s > 3`, some positive `x, y` have
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
 
 ## Sources
 

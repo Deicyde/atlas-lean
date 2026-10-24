@@ -13,7 +13,7 @@ The integer presentation of the Vieta jumpings displayed after Corollary 2.2: fo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ has derivative $\sum_{n=0}^{\infty} f_n'(z)$ at $z$.
 
 ## Depends on
 
-- [Extended supremum norm on a set](../../../normed/series/normal-convergence/sup-norm-on.md)
+- [Converges Locally Normally On](../../../normed/series/normal-convergence/converges-locally-normally-on.md)
 
 ## Proof depends on
 

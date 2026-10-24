@@ -11,7 +11,11 @@ A simple path from `s` to `t` with at least `K` edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest Path Instance](longest-path-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

@@ -11,7 +11,13 @@ One execution step. A halted configuration is fixed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+- [Machine](machine.md)
+
+## Proof depends on
+
+- [Move](move.md)
+- [Shift](shift.md)
 
 ## Sources
 

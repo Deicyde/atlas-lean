@@ -12,7 +12,8 @@ and if `k ≥ e^(e^34)` then `R_h⁻¹(k) ≤ k^h + (3k)^(h - 1/3)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bh Max Card](bh-max-card.md)
+- [Bh Min Length](bh-min-length.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ paper's derivation and of its Example 2 (`m = 2`: `1 - A_1 x^r - A_0 x^{2r}`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decimation Coeff](decimation-coeff.md)
 
 ## Sources
 

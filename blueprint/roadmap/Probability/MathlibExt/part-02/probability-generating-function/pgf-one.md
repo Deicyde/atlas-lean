@@ -12,7 +12,7 @@ Under a probability measure the generating function at `s = 1` is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pgf](pgf.md)
 
 ## Sources
 

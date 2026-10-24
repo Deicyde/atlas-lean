@@ -14,7 +14,7 @@ cleared of its denominator), for all integers `a`, `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Homogenized Cyclotomic](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
 
 ## Sources
 

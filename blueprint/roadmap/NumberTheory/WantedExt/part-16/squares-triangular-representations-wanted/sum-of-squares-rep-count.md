@@ -13,6 +13,11 @@ lean: MetaMathlibExt.sumOfSquaresRepCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Unit square Theta Series](is-unit-square-theta-series.md)
+- [Square Theta Series](square-theta-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SquaresTriangularRepresentationsWanted](../../../../../sources/v2/WantedExt.md)

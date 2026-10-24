@@ -11,7 +11,12 @@ The word `w_{i₁} ⋯ w_{iₙ} code(iₙ) ⋯ code(i₁)` of an index sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [Bit Codes](bit-codes.md)
+- [Flat](../cfgundecidable/flat.md)
 
 ## Sources
 

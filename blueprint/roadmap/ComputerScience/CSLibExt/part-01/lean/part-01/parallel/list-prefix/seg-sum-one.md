@@ -13,7 +13,15 @@ from `v` counts `min k (rank v + 1)` nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seg Sum](seg-sum.md)
+- [Terminates](../list-ranking/terminates.md)
+- [Rank](../list-ranking/rank.md)
+
+## Proof depends on
+
+- [Step Val](step-val.md)
+- [Jump](../list-ranking/jump.md)
+- [The characteristic property of the rank](../list-ranking/jump-eq-none-iff.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The defining mex recursion of `heightChocolateBarGrundy`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
 
 ## Sources
 

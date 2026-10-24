@@ -16,7 +16,8 @@ counts depend only on `⌊x⌋`, so the limit is taken along natural numbers `N`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](../../../MathlibExt/part-07/kfull/is-kfull.md)
+- [Is Power Free](../../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources
 

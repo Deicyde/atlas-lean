@@ -12,7 +12,7 @@ A code `U` with `U ⟨encode q, x⟩ = regularRedFun q x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Red Fun](regular-red-fun.md)
 
 ## Sources
 

@@ -15,7 +15,9 @@ their `x`-admissible sequences `s, s'`, with `n = ∑_{j<p} |η^j(m_j)|` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
+- [Is Substitution](is-substitution.md)
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

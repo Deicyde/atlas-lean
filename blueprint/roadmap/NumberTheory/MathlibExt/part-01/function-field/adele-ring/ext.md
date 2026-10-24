@@ -13,7 +13,7 @@ Two function-field adèles are equal when all their components are equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Function Field Adele Ring](function-field-adele-ring.md)
 
 ## Sources
 

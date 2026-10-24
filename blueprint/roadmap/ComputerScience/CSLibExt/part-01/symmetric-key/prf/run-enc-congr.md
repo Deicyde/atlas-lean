@@ -12,7 +12,13 @@ The encryption oracle only evaluates the keyed function at the encryption random
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+- [Run Enc](run-enc.md)
+
+## Proof depends on
+
+- [Oracle Sig](oracle-sig.md)
+- [Encrypt](encrypt.md)
 
 ## Sources
 

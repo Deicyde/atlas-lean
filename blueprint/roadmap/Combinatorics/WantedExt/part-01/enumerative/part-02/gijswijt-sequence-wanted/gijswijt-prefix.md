@@ -15,6 +15,10 @@ sequence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Curling Number](curling-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GijswijtSequenceWanted](../../../../../../../sources/v2/WantedExt.md)

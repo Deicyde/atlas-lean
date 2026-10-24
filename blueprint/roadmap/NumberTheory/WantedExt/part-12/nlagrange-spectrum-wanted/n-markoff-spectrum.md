@@ -14,6 +14,10 @@ The `n`-Markoff spectrum `Mₙ`: the real values of `μₙ(ξ, ξ')` over distin
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [N Markoff Approximability](n-markoff-approximability.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.NLagrangeSpectrumWanted](../../../../../sources/v2/WantedExt.md)

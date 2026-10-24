@@ -13,7 +13,9 @@ halting state and leaves the tape unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [Of TM0](of-tm0.md)
+- [To Tape](to-tape.md)
 
 ## Sources
 

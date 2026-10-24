@@ -11,7 +11,7 @@ Nodes as a sum type.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regex Node](regex-node.md)
 
 ## Sources
 

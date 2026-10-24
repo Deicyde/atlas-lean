@@ -13,7 +13,9 @@ numbers are `1, 2, 4, 5, 6, 7, 8, 10`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Fibonacci A](anti-fibonacci-a.md)
+- [Anti Fibonacci B](anti-fibonacci-b.md)
+- [Anti Fibonacci C](anti-fibonacci-c.md)
 
 ## Sources
 

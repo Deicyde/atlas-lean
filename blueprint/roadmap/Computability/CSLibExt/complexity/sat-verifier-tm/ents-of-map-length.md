@@ -32,7 +32,8 @@ theorem fin_run (ans v : Bool) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ent](../sat-verifier-spec/ent.md)
+- [Ents Of](../sat-verifier-spec/ents-of.md)
 
 ## Sources
 

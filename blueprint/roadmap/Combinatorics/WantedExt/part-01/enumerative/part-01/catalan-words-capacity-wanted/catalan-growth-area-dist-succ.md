@@ -12,7 +12,7 @@ Mansour and Shattuck's Lemma 1: for `m ≥ 2`, `j ≥ 1` and `ℓ ∈ [j]`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catalan Growth Area Dist](catalan-growth-area-dist.md)
 
 ## Sources
 

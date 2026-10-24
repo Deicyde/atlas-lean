@@ -12,7 +12,13 @@ The belief of a vertex is its unnormalized marginal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
+- [Belief](belief.md)
+- [Weight](../variable-elimination/weight.md)
+
+## Proof depends on
+
+- [Belief propagation is exact on trees](sum-weight-mul-eq-belief.md)
 
 ## Sources
 

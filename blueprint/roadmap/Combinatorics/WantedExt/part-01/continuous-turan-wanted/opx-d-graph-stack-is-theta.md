@@ -13,7 +13,7 @@ its graph `P` and `c > 0`: `opx(n, Q_{P,2,c}, 3) = Θ(n^{5/2})` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

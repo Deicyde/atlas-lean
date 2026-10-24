@@ -12,7 +12,13 @@ The expected absolute loss is minimized at every median, in `ℝ≥0∞`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abs Loss](abs-loss.md)
+- [Is Median](../../../../../Probability/MathlibExt/part-02/median/is-median.md)
+
+## Proof depends on
+
+- [Integrable abs sub iff](../../../../../Probability/MathlibExt/part-02/median/integrable-abs-sub-iff.md)
+- [A median minimizes the expected absolute loss](../../../../../Probability/MathlibExt/part-02/median/integral-abs-sub-le-of-is-median.md)
 
 ## Sources
 

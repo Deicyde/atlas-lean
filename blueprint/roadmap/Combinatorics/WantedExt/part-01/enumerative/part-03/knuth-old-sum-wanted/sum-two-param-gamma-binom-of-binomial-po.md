@@ -14,7 +14,7 @@ by `((-1)^q g, q, v, u)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

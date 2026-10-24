@@ -11,7 +11,11 @@ The number of state and halting symbols in a word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TMSym](tmsym.md)
+
+## Proof depends on
+
+- [Is Ctl B](is-ctl-b.md)
 
 ## Sources
 

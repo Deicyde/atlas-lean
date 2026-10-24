@@ -14,7 +14,7 @@ a unique `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

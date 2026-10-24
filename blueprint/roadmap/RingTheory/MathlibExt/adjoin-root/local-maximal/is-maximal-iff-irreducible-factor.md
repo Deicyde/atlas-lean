@@ -20,6 +20,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Exists irreducible factor of is maximal](exists-irreducible-factor-of-is-maximal.md)
+- [Is maximal of irreducible factor](is-maximal-of-irreducible-factor.md)
 
 ## Sources
 

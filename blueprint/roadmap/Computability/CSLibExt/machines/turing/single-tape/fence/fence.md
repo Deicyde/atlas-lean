@@ -14,7 +14,12 @@ move. An `abbrev`, so that its states unfold to `FenceState tm.State`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
+
+## Proof depends on
+
+- [Fence State](fence-state.md)
+- [Fence Run](fence-run.md)
 
 ## Sources
 

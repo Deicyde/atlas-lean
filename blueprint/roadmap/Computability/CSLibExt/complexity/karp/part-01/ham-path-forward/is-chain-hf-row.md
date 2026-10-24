@@ -13,7 +13,8 @@ The row is a chain for any relation holding on its forward row arcs and on the d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Row](hf-row.md)
+- [Hp R](../ham-path/hp-r.md)
 
 ## Sources
 

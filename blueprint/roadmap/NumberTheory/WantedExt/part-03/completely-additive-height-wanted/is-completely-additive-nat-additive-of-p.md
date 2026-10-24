@@ -12,7 +12,8 @@ The extension is completely additive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Completely Additive Nat](is-completely-additive-nat.md)
+- [Additive Of Prime Values](additive-of-prime-values.md)
 
 ## Sources
 

@@ -36,6 +36,11 @@ of x in the well-founded relation <. α is a *normal tree at κ* if:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [A *tree* is a partially ordered set (T, <) iwith the...](a-tree-is-a-partially-ordered-set-t-iwit.md)
+- [For an ordinal α, the *α-th level* of a well-founded...](for-an-ordinal-the-th-level-of-a-well-fo.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Tree.Basic](../../../../../sources/v2/MathlibExt.md)

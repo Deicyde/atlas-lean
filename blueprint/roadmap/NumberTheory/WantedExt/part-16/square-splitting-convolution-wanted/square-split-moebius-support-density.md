@@ -14,7 +14,7 @@ most `3`; the set `S = {n : μ⋆(n) ≠ 0}` has natural density
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Conv](square-split-conv.md)
 
 ## Sources
 

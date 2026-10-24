@@ -15,7 +15,9 @@ denominator field behavior left unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [H Full](h-full.md)
+- [Omega Mult](omega-mult.md)
 
 ## Sources
 

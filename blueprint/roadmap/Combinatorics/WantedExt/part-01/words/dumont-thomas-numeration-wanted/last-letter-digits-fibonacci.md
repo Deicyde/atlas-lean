@@ -13,7 +13,7 @@ For the Fibonacci substitution `a ↦ ab`, `b ↦ a` (`a = 0`, `b = 1`) and `p =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Last Letter Digits](last-letter-digits.md)
 
 ## Sources
 

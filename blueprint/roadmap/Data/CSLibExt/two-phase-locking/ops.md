@@ -11,7 +11,12 @@ The reads and writes of a locked schedule, in order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+- [Op](../serializability/op.md)
+
+## Proof depends on
+
+- [Lock Mode](lock-mode.md)
 
 ## Sources
 

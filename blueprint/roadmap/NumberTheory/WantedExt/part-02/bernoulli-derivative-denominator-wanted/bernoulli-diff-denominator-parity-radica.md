@@ -13,7 +13,8 @@ For `n ≥ 1`: `𝔻_n` is odd iff `n = 2^e` (`e ≥ 0`); if `n + 1` is composit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator](bernoulli-diff-denominator.md)
+- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
 
 ## Sources
 

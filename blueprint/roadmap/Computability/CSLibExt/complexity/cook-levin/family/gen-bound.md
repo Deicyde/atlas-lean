@@ -11,7 +11,12 @@ Time bound: the whole generator (explicit; its polynomial form is `genBound_le`)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [Body B](body-b.md)
+- [Pre B](pre-b.md)
 
 ## Sources
 

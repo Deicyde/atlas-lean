@@ -15,6 +15,10 @@ index (`k₁ ≥ 2`, `kᵢ ≥ 1`); junk for other indices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q MZV](q-mzv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

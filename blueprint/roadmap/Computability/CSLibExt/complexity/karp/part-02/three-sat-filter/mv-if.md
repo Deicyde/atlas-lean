@@ -11,7 +11,10 @@ If the top of `a` is `s`, move it to `b` and go to `l`; otherwise run `q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

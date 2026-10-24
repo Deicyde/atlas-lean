@@ -13,6 +13,11 @@ The block `B_t^{(m)}`, the prefix of `A^{(m)}` of length `β^{(m)}(t)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gijswijt Block Length](gijswijt-block-length.md)
+- [Gijswijt Prefix](gijswijt-prefix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GijswijtSequenceWanted](../../../../../../../sources/v2/WantedExt.md)

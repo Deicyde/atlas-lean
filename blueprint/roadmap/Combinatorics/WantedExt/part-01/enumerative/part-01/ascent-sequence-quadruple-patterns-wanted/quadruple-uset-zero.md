@@ -12,7 +12,13 @@ lean: MetaMathlibExt.quadrupleUSet_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quadruple USet](quadruple-uset.md)
+
+## Proof depends on
+
+- [Is Big Entry](is-big-entry.md)
+- [Last Descent Top](last-descent-top.md)
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources
 

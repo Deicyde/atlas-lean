@@ -13,7 +13,12 @@ on the first and the maximum on the second; other wires are untouched.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Half Cleaner](half-cleaner.md)
+- [Run N](run-n.md)
+
+## Proof depends on
+
+- [Cmp](cmp.md)
 
 ## Sources
 

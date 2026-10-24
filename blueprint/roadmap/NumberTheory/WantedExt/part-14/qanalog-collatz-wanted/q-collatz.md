@@ -15,6 +15,10 @@ the numerator `Ax + B` is divisible by `q` whenever `x` is odd, so `qShift` is e
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q Shift](q-shift.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QAnalogCollatzWanted](../../../../../sources/v2/WantedExt.md)

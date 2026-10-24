@@ -13,6 +13,12 @@ The verifier: `x` is a PATH instance, `w` a witness, and the witness a Hamiltoni
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Decode W](decode-w.md)
+- [Ham Ok](ham-ok.md)
+- [Decode P](../../../path/decode-p.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPathCheck](../../../../../../../sources/v2/CSLibExt.md)

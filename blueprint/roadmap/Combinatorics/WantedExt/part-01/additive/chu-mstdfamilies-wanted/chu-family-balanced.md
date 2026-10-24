@@ -12,7 +12,8 @@ balanced: `|A + A| = |A - A|`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chu Block](chu-block.md)
+- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
 
 ## Sources
 

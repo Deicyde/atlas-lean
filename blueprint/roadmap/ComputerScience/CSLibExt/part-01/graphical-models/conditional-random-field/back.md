@@ -11,7 +11,11 @@ The backpointer: the best predecessor of `s` at step `t`, given the previous tab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+
+## Proof depends on
+
+- [Argmax Fin](../../sequence/hidden-markov/argmax-fin.md)
 
 ## Sources
 

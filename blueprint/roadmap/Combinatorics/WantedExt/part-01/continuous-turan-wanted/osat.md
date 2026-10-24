@@ -15,6 +15,10 @@ exists).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Opx Saturating](is-opx-saturating.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ContinuousTuranWanted](../../../../../sources/v2/WantedExt.md)

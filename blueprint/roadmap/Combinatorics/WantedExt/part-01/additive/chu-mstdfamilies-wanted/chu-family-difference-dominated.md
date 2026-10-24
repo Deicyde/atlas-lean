@@ -13,7 +13,8 @@ Theorem 2: for every positive integer `k`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chu Block](chu-block.md)
+- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
 
 ## Sources
 

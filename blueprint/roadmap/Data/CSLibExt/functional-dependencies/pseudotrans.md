@@ -12,7 +12,8 @@ The pseudotransitivity rule: from `X → Y` and `Y ∪ W → Z` derive `X ∪ W 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](derives.md)
+- [FD](fd.md)
 
 ## Sources
 

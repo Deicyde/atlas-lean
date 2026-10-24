@@ -12,7 +12,14 @@ lean: Cslib.Decidability.not_tm2Recognizable_total
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Recognizable](../../part-01/basic/tm2-recognizable.md)
+- [Total Code](total-code.md)
+
+## Proof depends on
+
+- [Non-halting reduces to totality](many-one-reducible-not-halting-total.md)
+- [Not tm2 Co Recognizable halting](../undecidable/not-tm2-co-recognizable-halting.md)
+- [Tm2 Recognizable of many One Reducible](../undecidable/tm2-recognizable-of-many-one-reducible.md)
 
 ## Sources
 

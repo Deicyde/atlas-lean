@@ -11,7 +11,8 @@ The tokenizer's initial stacks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [K](../../../sat-tokenizer/k.md)
 
 ## Sources
 

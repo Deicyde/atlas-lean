@@ -12,7 +12,12 @@ lean: MetaMathlibExt.qMZVSpaceCirc_le_qMZVSpace
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q MZVSpace](../part-02/q-mzvspace.md)
+- [Q MZVSpace Circ](q-mzvspace-circ.md)
+
+## Proof depends on
+
+- [Q MZV](../part-02/q-mzv.md)
 
 ## Sources
 

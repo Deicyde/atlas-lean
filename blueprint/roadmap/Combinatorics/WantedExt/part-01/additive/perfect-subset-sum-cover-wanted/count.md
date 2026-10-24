@@ -13,6 +13,10 @@ lean: MetaMathlibExt.PerfectSubsetSumCover.count
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Perfect Cover](is-perfect-cover.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.PerfectSubsetSumCoverWanted](../../../../../../sources/v2/WantedExt.md)

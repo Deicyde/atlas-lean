@@ -13,7 +13,12 @@ alphabet, in the form of `wordMorphismPreimage`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Word Morphism Preimage](../../../congruences/word-morphisms/word-morphism-preimage.md)
+
+## Proof depends on
+
+- [Context-free languages are closed under inverse homomorphisms](preimage-hom.md)
+- [Word Morphism Preimage eq flatten](../../../congruences/word-morphisms/word-morphism-preimage-eq-flatten.md)
 
 ## Sources
 

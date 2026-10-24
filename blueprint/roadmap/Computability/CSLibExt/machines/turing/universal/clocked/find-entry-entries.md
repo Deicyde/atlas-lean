@@ -12,7 +12,10 @@ The scan finds the table entry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entries](entries.md)
+- [Find Entry](find-entry.md)
+- [Code](../code/code.md)
+- [Lookup](../code/lookup.md)
 
 ## Sources
 

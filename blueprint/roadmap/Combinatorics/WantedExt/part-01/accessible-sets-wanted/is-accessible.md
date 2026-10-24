@@ -14,6 +14,10 @@ A set is accessible when it is `r`-accessible for every positive number
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is RAccessible](is-raccessible.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AccessibleSetsWanted](../../../../../sources/v2/WantedExt.md)

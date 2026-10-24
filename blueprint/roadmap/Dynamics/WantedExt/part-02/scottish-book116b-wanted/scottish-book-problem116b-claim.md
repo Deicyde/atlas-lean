@@ -22,6 +22,11 @@ products, i.e. indices `0, ..., n - 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coin Measure](coin-measure.md)
+- [Partial Prod](partial-prod.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.ScottishBook116bWanted](../../../../../sources/v2/WantedExt.md)

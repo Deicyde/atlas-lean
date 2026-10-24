@@ -13,7 +13,8 @@ language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Rel](../syntactic/syntactic-rel.md)
+- [Word Morphism Preimage](word-morphism-preimage.md)
 
 ## Sources
 

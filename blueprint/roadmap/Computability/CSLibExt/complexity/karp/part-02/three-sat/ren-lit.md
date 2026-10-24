@@ -13,6 +13,10 @@ A literal with its variable renamed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ren](ren.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.ThreeSat](../../../../../../../sources/v2/CSLibExt.md)

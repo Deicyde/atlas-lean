@@ -13,7 +13,18 @@ the queue holds arcs of the problem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+- [Is Solution](is-solution.md)
+- [Ac3](ac3.md)
+
+## Proof depends on
+
+- [Indeg](indeg.md)
+- [Mem revise of is Solution](mem-revise-of-is-solution.md)
+- [Potential](potential.md)
+- [Potential lt](potential-lt.md)
+- [Requeue](requeue.md)
+- [Revise](revise.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ placement and its chosen level `l` contains `n` rooks, then `P(F₀)` has `m^{n-
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chosen Level And Leftmost](is-chosen-level-and-leftmost.md)
+- [Is Singleton Board](is-singleton-board.md)
+- [File Placement Block](file-placement-block.md)
+- [File Placements](file-placements.md)
+- [Level Rook Placements](level-rook-placements.md)
 
 ## Sources
 

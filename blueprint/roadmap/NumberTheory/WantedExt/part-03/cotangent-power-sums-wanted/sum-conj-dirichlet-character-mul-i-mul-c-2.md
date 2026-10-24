@@ -17,7 +17,7 @@ The character coordinate is unfolded through Equation (3) as in the odd case.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cotangent Power Coeff](cotangent-power-coeff.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Proposition 5: for `p ≥ 1`, the number of arithmetical structures on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

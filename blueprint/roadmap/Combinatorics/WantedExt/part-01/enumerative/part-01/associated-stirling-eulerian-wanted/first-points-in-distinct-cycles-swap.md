@@ -13,7 +13,7 @@ alone in its cycle but puts the first two points in one cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
 
 ## Sources
 

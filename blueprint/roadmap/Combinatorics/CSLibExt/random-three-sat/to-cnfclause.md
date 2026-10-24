@@ -12,7 +12,8 @@ literal per chosen variable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clause](clause.md)
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ CLRS's order on endpoints: by `x`; at equal `x`, left endpoints first; then by `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+
+## Proof depends on
+
+- [Point](point.md)
 
 ## Sources
 

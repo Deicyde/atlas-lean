@@ -12,7 +12,12 @@ length at most the input plus the pushes so far) and the halt.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+
+## Proof depends on
+
+- [Rtm](rtm.md)
+- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
 
 ## Sources
 

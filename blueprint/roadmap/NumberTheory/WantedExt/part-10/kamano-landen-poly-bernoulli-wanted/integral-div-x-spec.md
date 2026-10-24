@@ -13,7 +13,7 @@ whenever `h` has no constant term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Div X](integral-div-x.md)
 
 ## Sources
 

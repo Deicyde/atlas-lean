@@ -13,7 +13,8 @@ in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, P
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Trinomial](central-trinomial.md)
+- [Generalized Motzkin](generalized-motzkin.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ An area distribution evaluated at `q = 1` counts its words.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Area Dist](area-dist.md)
+
+## Proof depends on
+
+- [Word Area](word-area.md)
 
 ## Sources
 

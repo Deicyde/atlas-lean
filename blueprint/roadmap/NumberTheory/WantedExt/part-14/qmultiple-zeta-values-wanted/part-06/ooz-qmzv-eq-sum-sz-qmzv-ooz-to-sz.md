@@ -12,7 +12,9 @@ OOZ-qMZVs in the SZ model: for an SZ-admissible index `k` (empty or `k₁ ≥ 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz QMZV](../part-01/ooz-qmzv.md)
+- [Ooz To SZ](ooz-to-sz.md)
+- [Sz QMZV](../part-01/sz-qmzv.md)
 
 ## Sources
 

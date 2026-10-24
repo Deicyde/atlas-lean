@@ -11,7 +11,7 @@ For all `n ≥ 0`, `PD_2(48n + 26) ≡ 0 (mod 4)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Designated Summands Count](odd-designated-summands-count.md)
 
 ## Sources
 

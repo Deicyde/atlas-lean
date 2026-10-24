@@ -13,7 +13,12 @@ estimator in the sense of Mathlib's decision theory.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Posterior Argmax](is-posterior-argmax.md)
+- [Zero One Loss](zero-one-loss.md)
+
+## Proof depends on
+
+- [Lintegral zero One Loss](lintegral-zero-one-loss.md)
 
 ## Sources
 

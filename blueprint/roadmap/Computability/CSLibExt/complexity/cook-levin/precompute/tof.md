@@ -13,6 +13,10 @@ lean: Cslib.Complexity.CookLevin.Precompute.TOf
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [M Of](m-of.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Precompute](../../../../../../sources/v2/CSLibExt.md)

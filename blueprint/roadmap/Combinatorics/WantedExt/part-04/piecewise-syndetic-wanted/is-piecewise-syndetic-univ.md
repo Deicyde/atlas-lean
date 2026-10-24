@@ -12,7 +12,12 @@ The whole space is piecewise syndetic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Piecewise Syndetic](is-piecewise-syndetic.md)
+
+## Proof depends on
+
+- [Lattice Cube](lattice-cube.md)
+- [Lattice Cube one](lattice-cube-one.md)
 
 ## Sources
 

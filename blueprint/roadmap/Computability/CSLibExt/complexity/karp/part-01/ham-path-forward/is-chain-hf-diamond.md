@@ -13,7 +13,16 @@ the row arcs in both directions, and the detours of its direction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Diamond](hf-diamond.md)
+- [Hp R](../ham-path/hp-r.md)
+- [Hp T](../ham-path/hp-t.md)
+
+## Proof depends on
+
+- [Get Last? hf Row](get-last-hf-row.md)
+- [Head? hf Row](head-hf-row.md)
+- [Hf Row](hf-row.md)
+- [Is Chain hf Row](is-chain-hf-row.md)
 
 ## Sources
 

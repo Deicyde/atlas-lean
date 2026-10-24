@@ -15,7 +15,24 @@ or every pair condition holds (and `c` does).
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mode](mode.md)
+- [Free](free.md)
+- [Sat](sat.md)
+- [Prog](prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Stmt](stmt.md)
+- [Run one](run-one.md)
+- [Walk Z](walk-z.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

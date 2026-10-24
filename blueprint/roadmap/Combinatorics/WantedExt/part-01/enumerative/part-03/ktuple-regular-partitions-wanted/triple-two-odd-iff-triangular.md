@@ -14,7 +14,7 @@ the triangular values from integer indices duplicate those from naturals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triple Regular Partition Count](triple-regular-partition-count.md)
 
 ## Sources
 

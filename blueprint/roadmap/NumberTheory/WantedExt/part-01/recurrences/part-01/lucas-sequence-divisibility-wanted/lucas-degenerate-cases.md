@@ -21,7 +21,7 @@ because `MetaMathlibExt.LucasSequenceParams` requires `Q ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Sequence First Kind](../../../../../MathlibExt/part-02/recurrences/part-02/lucas-sequence-first-kind/is-lucas-sequence-first-kind.md)
 
 ## Sources
 

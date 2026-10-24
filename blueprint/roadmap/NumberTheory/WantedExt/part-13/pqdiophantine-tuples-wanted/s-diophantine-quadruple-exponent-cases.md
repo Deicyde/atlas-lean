@@ -16,7 +16,7 @@ Let `p ≠ q` be primes with `p ≡ 3 (mod 4)` and let `a < b < c < d` form a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
 
 ## Sources
 

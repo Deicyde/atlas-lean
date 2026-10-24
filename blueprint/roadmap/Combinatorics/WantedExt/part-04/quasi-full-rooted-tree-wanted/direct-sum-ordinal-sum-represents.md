@@ -16,7 +16,7 @@ iterate of this one and is not stated separately; the record's `P₁ + P₁ + �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poset Matrix](../../../../Order/MathlibExt/poset-matrix/is-poset-matrix.md)
 
 ## Sources
 

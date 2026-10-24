@@ -13,7 +13,7 @@ least three prime factors, `P = gpf(n)` and `d = n / P`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abs Least APLength](abs-least-aplength.md)
 
 ## Sources
 

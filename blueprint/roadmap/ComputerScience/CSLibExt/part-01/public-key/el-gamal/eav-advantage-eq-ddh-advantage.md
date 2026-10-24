@@ -14,7 +14,18 @@ DDH advantage of `reduction A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adversary](adversary.md)
+- [Ddh Advantage](ddh-advantage.md)
+- [Eav Advantage](eav-advantage.md)
+- [Reduction](reduction.md)
+
+## Proof depends on
+
+- [Ddh Rand](ddh-rand.md)
+- [Ddh Rand reduction true](ddh-rand-reduction-true.md)
+- [Ddh Real](ddh-real.md)
+- [Eav Game](eav-game.md)
+- [Eav Game eq ddh Real](eav-game-eq-ddh-real.md)
 
 ## Sources
 

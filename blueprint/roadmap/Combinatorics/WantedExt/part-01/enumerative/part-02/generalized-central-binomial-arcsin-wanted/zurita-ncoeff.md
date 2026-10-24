@@ -13,6 +13,10 @@ The coefficient `m_k / (2(k - n + 1))` of `N_{n-2}(x) = (1/2) ∑_{k=0}^{n-2} m_
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zurita MCoeff](zurita-mcoeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedCentralBinomialArcsinWanted](../../../../../../../sources/v2/WantedExt.md)

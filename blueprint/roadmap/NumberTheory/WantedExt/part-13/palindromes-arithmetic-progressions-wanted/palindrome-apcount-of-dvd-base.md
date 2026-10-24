@@ -16,7 +16,8 @@ where `S = ∑_{1 ≤ i ≤ ⌊k/2⌋} a_{k-i} b^{⌊k/2⌋-i}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Palindrome APCount](palindrome-apcount.md)
+- [Palindromic Half Copy](palindromic-half-copy.md)
 
 ## Sources
 

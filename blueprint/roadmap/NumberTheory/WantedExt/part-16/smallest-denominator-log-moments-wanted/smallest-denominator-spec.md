@@ -13,7 +13,11 @@ the window.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smallest Denominator](smallest-denominator.md)
+
+## Proof depends on
+
+- [Exists denominator mem window](exists-denominator-mem-window.md)
 
 ## Sources
 

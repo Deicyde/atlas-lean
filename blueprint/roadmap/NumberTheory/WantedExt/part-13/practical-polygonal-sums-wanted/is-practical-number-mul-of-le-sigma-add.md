@@ -11,7 +11,7 @@ If `m` is practical and `1 ≤ n ≤ σ(m) + 1`, then `m n` is practical.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Practical Number](../../../MathlibExt/part-09/is-practical-number.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ gives `0` while `v 4 = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

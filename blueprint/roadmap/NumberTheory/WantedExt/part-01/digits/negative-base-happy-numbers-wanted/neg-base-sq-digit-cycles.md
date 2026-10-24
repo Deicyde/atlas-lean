@@ -13,6 +13,10 @@ lean: MetaMathlibExt.negBaseSqDigitCycles
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.NegativeBaseHappyNumbersWanted](../../../../../../sources/v2/WantedExt.md)

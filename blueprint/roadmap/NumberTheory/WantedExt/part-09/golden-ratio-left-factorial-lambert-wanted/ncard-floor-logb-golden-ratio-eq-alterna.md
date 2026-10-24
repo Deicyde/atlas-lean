@@ -12,7 +12,7 @@ Lemma 3: for a positive integer `m`, `d m` is the number of positive integers `n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Sign Fibonacci](alternating-sign-fibonacci.md)
 
 ## Sources
 

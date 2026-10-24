@@ -12,7 +12,14 @@ lean: Cslib.Algorithms.Lean.SortingNetworks.sorts_of_sortsBool
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](network.md)
+- [Sorts](sorts.md)
+- [Sorts Bool](sorts-bool.md)
+
+## Proof depends on
+
+- [Sorts Bool eq true iff](sorts-bool-eq-true-iff.md)
+- [The 0-1 principle](sorts-of-sorts-bool.md)
 
 ## Sources
 

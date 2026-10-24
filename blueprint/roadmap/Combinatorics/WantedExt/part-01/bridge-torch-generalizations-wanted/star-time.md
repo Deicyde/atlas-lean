@@ -13,6 +13,12 @@ The minimum total duration `T(n, k, t)` of the star model.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Star Schedule](is-star-schedule.md)
+- [Star Move](star-move.md)
+- [Star Step Duration](star-step-duration.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BridgeTorchGeneralizationsWanted](../../../../../sources/v2/WantedExt.md)

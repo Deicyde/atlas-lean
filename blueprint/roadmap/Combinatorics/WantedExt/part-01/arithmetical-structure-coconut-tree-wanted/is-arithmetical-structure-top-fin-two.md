@@ -12,7 +12,7 @@ On a single edge, `d = r = (1, 1)` is an arithmetical structure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
 
 ## Sources
 

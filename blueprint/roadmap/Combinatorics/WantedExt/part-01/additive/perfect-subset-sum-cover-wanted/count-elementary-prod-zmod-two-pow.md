@@ -17,7 +17,7 @@ power, `2^{-m}` at `n = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Count](count.md)
 
 ## Sources
 

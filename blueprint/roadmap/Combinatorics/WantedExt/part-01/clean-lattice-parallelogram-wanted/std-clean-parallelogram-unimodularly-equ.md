@@ -13,7 +13,8 @@ For `n > 1`, `1 ≤ a < n` with `gcd(a, n) = 1`, and `a⁻¹ ∈ [1, n - 1]` wit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unimodularly Equivalent](unimodularly-equivalent.md)
+- [Std Clean Parallelogram](std-clean-parallelogram.md)
 
 ## Sources
 

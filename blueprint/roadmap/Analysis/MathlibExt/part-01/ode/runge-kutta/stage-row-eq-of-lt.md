@@ -12,7 +12,13 @@ A row agrees with the finished stages on all indices below its length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
+- [Stage](stage.md)
+- [Stage Row](stage-row.md)
+
+## Proof depends on
+
+- [C](c.md)
 
 ## Sources
 

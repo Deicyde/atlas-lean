@@ -13,7 +13,13 @@ symbols `Ys`, with `|x ++ y| ≤ m`. Proved from the init clauses by `init_obl`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+
+## Proof depends on
+
+- [Row-0 obligation](row0.md)
+- [Cap H](../part-05/cap-h.md)
+- [Depth](../part-01/depth.md)
 
 ## Sources
 

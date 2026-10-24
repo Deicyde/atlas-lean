@@ -18,7 +18,7 @@ Proposition 4: (i) `p_{ℓ,m+1}(x, y) = p_{ℓ,m}(x, y) - p_{ℓ,m}(x, x + y)`; 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

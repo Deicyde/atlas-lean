@@ -15,7 +15,8 @@ truncated to `0` in `ℕ`, harmless because then `C(n, r-1) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
+- [R Cycle Stirling Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/r-cycle-stirling-eulerian.md)
 
 ## Sources
 

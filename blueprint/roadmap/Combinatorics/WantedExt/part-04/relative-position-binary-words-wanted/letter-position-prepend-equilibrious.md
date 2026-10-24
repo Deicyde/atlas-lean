@@ -13,7 +13,10 @@ lean: MetaMathlibExt.letterPosition_prepend_equilibrious
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Is Equilibrious Word](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
+- [Letter Position](letter-position.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

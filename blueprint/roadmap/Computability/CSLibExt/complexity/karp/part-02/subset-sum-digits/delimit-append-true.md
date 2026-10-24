@@ -12,7 +12,7 @@ A delimited block ending in `true`: the closing bits of the target's code.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

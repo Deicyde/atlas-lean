@@ -13,7 +13,7 @@ Binomial expansion: for `n ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
 
 ## Sources
 

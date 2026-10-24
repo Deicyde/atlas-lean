@@ -13,7 +13,7 @@ Analogue of Proposition 15 mod `p^a`: for `P̃` with `P̃(x)^p ≡ P̃(x^p) (mod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Deg](laurent-deg.md)
 
 ## Sources
 

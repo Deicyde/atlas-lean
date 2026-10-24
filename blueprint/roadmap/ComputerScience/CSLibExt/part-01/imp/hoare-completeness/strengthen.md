@@ -12,7 +12,14 @@ Strengthen the precondition of a derivable triple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Entails](../hoare/entails.md)
+- [Cmd](../syntax/cmd.md)
+- [Derivable](derivable.md)
+
+## Proof depends on
+
+- [State](../syntax/state.md)
 
 ## Sources
 

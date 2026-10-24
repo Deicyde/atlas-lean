@@ -13,7 +13,8 @@ Table 2 entries at `s = 5 = 1·2 + 3`: `(x_5^{even}, y_5^{even}) = (1, 1)` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Frobenius X](triangular-frobenius-x.md)
+- [Triangular Frobenius Y](triangular-frobenius-y.md)
 
 ## Sources
 

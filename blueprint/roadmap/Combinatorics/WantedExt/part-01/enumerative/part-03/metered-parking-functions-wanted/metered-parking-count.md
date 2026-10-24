@@ -13,6 +13,11 @@ The source's `mpf_{m,n}(t)`: the number of `t`-metered `(m, n)`-parking function
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Metered Outcome](metered-outcome.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MeteredParkingFunctionsWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ The cells of an input tape: the word from position `0` on, blank elsewhere.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To Tape](to-tape.md)
 
 ## Sources
 

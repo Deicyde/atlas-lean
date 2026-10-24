@@ -11,7 +11,7 @@ Bits stored on a work stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
 
 ## Sources
 

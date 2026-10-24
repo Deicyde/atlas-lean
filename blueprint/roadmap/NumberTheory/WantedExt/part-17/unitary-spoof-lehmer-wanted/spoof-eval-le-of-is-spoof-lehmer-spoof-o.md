@@ -13,7 +13,9 @@ statement here allows every integer `k` (for `k ≤ 0` the equation forces `ε̃
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spoof Lehmer](../../part-16/spoof-lehmer-factorization-wanted/is-spoof-lehmer.md)
+- [Spoof Eval](../../part-16/spoof-lehmer-factorization-wanted/spoof-eval.md)
+- [Spoof Of Bases](../../part-16/spoof-lehmer-factorization-wanted/spoof-of-bases.md)
 
 ## Sources
 

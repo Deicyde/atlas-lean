@@ -12,7 +12,7 @@ For a prime `p`, `v_p(b) ≠ p` exactly when the entries of `b` miss a residue c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hardy Littlewood Residue Count](hardy-littlewood-residue-count.md)
 
 ## Sources
 

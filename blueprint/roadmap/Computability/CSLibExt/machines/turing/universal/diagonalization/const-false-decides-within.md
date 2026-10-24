@@ -12,7 +12,22 @@ lean: Cslib.Turing.Universal.Code.constFalse_decidesWithin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decides Within](decides-within.md)
+- [Const False](const-false.md)
+
+## Proof depends on
+
+- [Code](../code/code.md)
+- [Cfg](../code/cfg.md)
+- [Output](../code/output.md)
+- [Cfg After](../code/cfg-after.md)
+- [The clocked evaluator](../code/eval-steps.md)
+- [Eval Steps eq some iff output](../code/eval-steps-eq-some-iff-output.md)
+- [Init](../code/init.md)
+- [Step](../code/step.md)
+- [Step Or Stay](../code/step-or-stay.md)
+- [Bit Sym](../code/bit-sym.md)
+- [Input](../code/input.md)
 
 ## Sources
 

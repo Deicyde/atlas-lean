@@ -12,7 +12,7 @@ lean: MetaMathlibExt.kFibonacciBinomialTruncation_two_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Fibonacci Binomial Truncation](k-fibonacci-binomial-truncation.md)
 
 ## Sources
 

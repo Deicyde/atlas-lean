@@ -13,6 +13,10 @@ The input word of the bits `x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bit Sym](bit-sym.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.Universal.Code](../../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,7 @@ if `2n > (k - 2) s (s + 1)` and `n + s` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

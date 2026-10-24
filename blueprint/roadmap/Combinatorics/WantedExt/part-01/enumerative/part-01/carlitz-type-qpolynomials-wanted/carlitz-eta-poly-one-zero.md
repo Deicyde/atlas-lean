@@ -12,7 +12,12 @@ lean: MetaMathlibExt.carlitzEtaPoly_one_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carlitz Eta Poly](carlitz-eta-poly.md)
+
+## Proof depends on
+
+- [Q Bracket](q-bracket.md)
+- [Q Bracket one](q-bracket-one.md)
 
 ## Sources
 

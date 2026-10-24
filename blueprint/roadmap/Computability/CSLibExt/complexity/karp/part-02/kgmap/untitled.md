@@ -11,7 +11,11 @@ Stack alphabets: the output stack holds `Bool`s, every other stack `Sym`s.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+
+## Proof depends on
+
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

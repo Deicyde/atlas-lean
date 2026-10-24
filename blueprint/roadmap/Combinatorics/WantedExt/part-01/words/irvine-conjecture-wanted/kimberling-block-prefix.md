@@ -12,7 +12,11 @@ lean: MetaMathlibExt.kimberlingBlock_prefix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling Block](kimberling-block.md)
+
+## Proof depends on
+
+- [Kimberling Block prefix succ](kimberling-block-prefix-succ.md)
 
 ## Sources
 

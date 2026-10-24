@@ -11,7 +11,7 @@ Encoded NFAs as tuples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
 
 ## Sources
 

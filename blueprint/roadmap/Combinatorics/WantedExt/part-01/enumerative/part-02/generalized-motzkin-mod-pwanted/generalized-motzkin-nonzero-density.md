@@ -16,7 +16,9 @@ Article A22, Theorem 3.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Trinomial](central-trinomial.md)
+- [Generalized Motzkin](generalized-motzkin.md)
+- [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

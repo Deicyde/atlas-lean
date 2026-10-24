@@ -12,7 +12,8 @@ For `n > 0`, the class number of the holomorph `ℤ/nℤ ⋊ (ℤ/nℤ)ˣ` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Holomorph](cyclic-holomorph.md)
+- [Zmod Units Mul Aut](zmod-units-mul-aut.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ stated: at `k = 0`, `R₁(0) = 1` but `(π/4) β(1) = π²/16`; at `k = 1`, `R�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weakly Decreasing Tuple](../../../../../../NumberTheory/MathlibExt/part-01/multiple-zeta/series/weakly-decreasing-tuple.md)
 
 ## Sources
 

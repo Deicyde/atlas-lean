@@ -12,7 +12,8 @@ For `m ≥ 1`, `u ≥ 2`, and `a_1, …, a_{u-1} ∈ {0, …, m}` with `a_1 ≠ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curling Number](curling-number.md)
+- [Gijswijt Block Word](gijswijt-block-word.md)
 
 ## Sources
 

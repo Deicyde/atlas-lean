@@ -13,7 +13,9 @@ encoding, and full dimension records its dimension (`E` then has degree `d` by E
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ehrhart Counts](ehrhart-counts.md)
+- [Is Full Dimensional](is-full-dimensional.md)
+- [Lattice Polytope](lattice-polytope.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Göbel's original sequence `g_{2,2}` starts `2, 3, 5, 10, 28`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

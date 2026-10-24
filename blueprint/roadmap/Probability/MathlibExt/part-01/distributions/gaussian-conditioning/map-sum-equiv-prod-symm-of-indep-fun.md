@@ -15,6 +15,10 @@ covariance.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Independent Gaussian blocks](map-sum-equiv-prod-symm-prod-multivariat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.GaussianConditioning](../../../../../../sources/v2/MathlibExt.md)

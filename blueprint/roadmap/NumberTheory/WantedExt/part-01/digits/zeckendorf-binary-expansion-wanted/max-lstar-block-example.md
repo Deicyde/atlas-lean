@@ -13,7 +13,7 @@ at indices `0, …, 4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max LStar Block](max-lstar-block.md)
 
 ## Sources
 

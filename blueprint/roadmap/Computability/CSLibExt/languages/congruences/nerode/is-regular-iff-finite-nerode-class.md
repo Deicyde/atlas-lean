@@ -12,7 +12,11 @@ Quotient formulation of the Myhill--Nerode theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](nerode-class.md)
+
+## Proof depends on
+
+- [Finite nerode Class iff](finite-nerode-class-iff.md)
 
 ## Sources
 

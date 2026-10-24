@@ -12,7 +12,8 @@ The length is at most the size of any representation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Prime Divisor Power Sum](is-prime-divisor-power-sum.md)
+- [Weakly Prime Additive Length](weakly-prime-additive-length.md)
 
 ## Sources
 

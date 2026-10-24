@@ -11,7 +11,11 @@ The bubble sorting network on `n` wires: passes ending at wires `n - 1, n - 2, â
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](../zero-one/network.md)
+
+## Proof depends on
+
+- [Passes](passes.md)
 
 ## Sources
 

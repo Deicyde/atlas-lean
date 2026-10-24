@@ -14,7 +14,9 @@ self-dual function in `D_{n+4}`; and every self-dual function in `D_{n+4}` is of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
+- [Boolean Cube Concat](boolean-cube-concat.md)
+- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

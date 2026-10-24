@@ -19,7 +19,11 @@ computed in `ℤ` (it is `≥ 0` on the range).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Binom](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
+- [Q Poch Fin](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
+- [Is Fixed Column Hook](is-fixed-column-hook.md)
+- [Partition Hook Length](partition-hook-length.md)
+- [Partition Row Len](partition-row-len.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Theorem 3: for `n ≥ 2`, `∑_{i=0}^{2n-2} (-1)^i s(2n-1, i) / (i + 1) = H_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sabar Number](sabar-number.md)
 
 ## Sources
 

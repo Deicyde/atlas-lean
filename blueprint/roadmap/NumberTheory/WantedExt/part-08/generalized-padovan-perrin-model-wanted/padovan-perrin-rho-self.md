@@ -12,7 +12,7 @@ lean: MetaMathlibExt.padovanPerrinRho_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Rho](padovan-perrin-rho.md)
 
 ## Sources
 

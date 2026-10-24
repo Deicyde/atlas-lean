@@ -12,7 +12,7 @@ lean: MetaMathlibExt.pellV_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell V](pell-v.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The value of action `a` in state `s` against the value estimate `V`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
 
 ## Sources
 

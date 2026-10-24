@@ -14,7 +14,7 @@ Theorem 1 on the imaginary axis: for `τ = it` with `t > 0`, put `q = e^{πiτ} 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rogers Ramanujan Cont Frac Real](rogers-ramanujan-cont-frac-real.md)
 
 ## Sources
 

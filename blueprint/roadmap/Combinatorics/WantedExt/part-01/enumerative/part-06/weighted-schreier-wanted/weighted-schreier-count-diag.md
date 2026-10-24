@@ -11,7 +11,7 @@ For `n ≥ 1`, `a_{n,n} = 2 F_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Schreier Count](weighted-schreier-count.md)
 
 ## Sources
 

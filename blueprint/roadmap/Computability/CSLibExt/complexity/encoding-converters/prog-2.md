@@ -11,7 +11,8 @@ Read three-symbol blocks `[true, b, false]` onto the stash, then emit the stash.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BLab](blab.md)
+- [BStk](bstk.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ the final weights and mistake count.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Step](step.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Perceptron](../../../../../sources/v2/CSLibExt.md)

@@ -11,7 +11,7 @@ For positive integers `a > b` and `n`, `(a - b)^φ(n) ≤ Φ_n(a, b) ≤ (a + b)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Homogenized Cyclotomic](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
 
 ## Sources
 

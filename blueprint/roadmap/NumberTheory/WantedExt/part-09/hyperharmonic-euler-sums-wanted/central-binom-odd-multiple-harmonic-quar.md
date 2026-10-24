@@ -15,7 +15,8 @@ lies in `π ℚ[log 2, π, ζ(2j+1)_{j ≥ 1}, β(2j)_{j ≥ 1}]`. The sums run 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sum Beta Period Algebra](euler-sum-beta-period-algebra.md)
+- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
 
 ## Sources
 

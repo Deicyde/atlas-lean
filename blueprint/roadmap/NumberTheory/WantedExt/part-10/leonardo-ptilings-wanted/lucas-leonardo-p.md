@@ -15,6 +15,10 @@ The Lucas-Leonardo `p`-numbers: `R_{p,0} = p² + p + 1`, `R_{p,i} = 1` for
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas Type Seq](lucas-type-seq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LeonardoPTilingsWanted](../../../../../sources/v2/WantedExt.md)

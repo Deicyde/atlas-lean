@@ -12,7 +12,13 @@ lean: Cslib.Crypto.PRF.OracleComp.run_congr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+- [Queries](queries.md)
+- [Run](run.md)
+
+## Proof depends on
+
+- [Oracle Sig](oracle-sig.md)
 
 ## Sources
 

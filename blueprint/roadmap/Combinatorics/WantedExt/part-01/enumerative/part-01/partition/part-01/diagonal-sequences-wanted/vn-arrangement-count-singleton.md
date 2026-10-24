@@ -12,7 +12,7 @@ A one-element multiset has exactly one k-vn-arrangement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vn Arrangement Count](vn-arrangement-count.md)
 
 ## Sources
 

@@ -16,7 +16,8 @@ all of `ℕ^t`; only their restriction to `[1, A]^t` matters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dense In Cubes](is-dense-in-cubes.md)
+- [Lattice Cube](lattice-cube.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ After `{4, x}` with `x ≥ 5` odd, every even legal move `b` leaves an N-positio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver NPosition](is-sylver-nposition.md)
+- [Sylver Legal Moves](sylver-legal-moves.md)
 
 ## Sources
 

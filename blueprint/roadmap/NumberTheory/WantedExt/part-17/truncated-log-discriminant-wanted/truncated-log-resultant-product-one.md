@@ -12,7 +12,11 @@ lean: MetaMathlibExt.truncatedLogResultantProduct_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Resultant Product](truncated-log-resultant-product.md)
+
+## Proof depends on
+
+- [Scaled Truncated Log Polynomial](scaled-truncated-log-polynomial.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ is the dihedral quandle `R_n` is `v(R_n) = φ(n) ∑_{d ∣ n} 1/φ(d)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Virtual Rack Class Count](virtual-rack-class-count.md)
 
 ## Sources
 

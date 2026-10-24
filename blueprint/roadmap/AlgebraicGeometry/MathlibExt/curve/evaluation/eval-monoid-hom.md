@@ -15,7 +15,7 @@ $\prod_{P \in \operatorname{supp} D} f(P)^{D(P)}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curve Divisor](../divisor/curve-divisor.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Compositions and Dyck paths: `binom(n, k-1) c_{n,k}(γ) = k d_{n,k}(γ)` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Composition Count](colored-composition-count.md)
+- [Colored Dyck Path Count](colored-dyck-path-count.md)
 
 ## Sources
 

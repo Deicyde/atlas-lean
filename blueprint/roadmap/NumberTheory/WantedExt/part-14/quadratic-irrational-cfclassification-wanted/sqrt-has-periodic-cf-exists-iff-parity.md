@@ -14,7 +14,8 @@ cases `l ≤ 2`, where `r_{l-2}` needs the convention `r_0 = 0`, are omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Periodic CF](../quadratic-irrational-cfnonexistence-wanted/has-periodic-cf.md)
+- [Convergent Den](../quadratic-irrational-cfnonexistence-wanted/convergent-den.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ C_k^(p)(0) F_{k,m+1} - C_k^(p)(1) F_{k,m}`. Stated for every nonzero integer `k`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Brousseau Coeff](brousseau-coeff.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

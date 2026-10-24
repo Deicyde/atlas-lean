@@ -11,7 +11,7 @@ All numbers of a configuration, its state and its cells, are at most `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cfg](../code/cfg.md)
 
 ## Sources
 

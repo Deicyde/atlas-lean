@@ -17,7 +17,15 @@ holds with `offlineCostFree` (`offlineCostFree_noMove`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online list-update algorithm on the items...](a-deterministic-online-list-update-algor.md)
+- [Cost](cost.md)
+- [Offline Cost](offline-cost.md)
+
+## Proof depends on
+
+- [Adversary](adversary.md)
+- [List ne nil](list-ne-nil.md)
+- [On the adversary's sequence](adversary-vs-offline.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ The iteration count of a loop run is determined by its initial state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [Cmd](../syntax/cmd.md)
+- [Iterates](iterates.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [Eval](../syntax/eval-2.md)
+- [Big Step](../big-step/big-step.md)
+- [Deterministic](../big-step/deterministic.md)
 
 ## Sources
 

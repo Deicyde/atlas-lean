@@ -14,7 +14,7 @@ some `0 < x < m` satisfies `m₂ x ≡ ± m₃` and `n₂ x ≡ ± n₃ (mod m)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
 
 ## Sources
 

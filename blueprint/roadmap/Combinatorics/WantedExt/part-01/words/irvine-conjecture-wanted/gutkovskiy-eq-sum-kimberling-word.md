@@ -11,7 +11,8 @@ Irvine's conjecture: `gₙ = k₁ + ⋯ + kₙ` for `n ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gutkovskiy](gutkovskiy.md)
+- [Kimberling Word](kimberling-word.md)
 
 ## Sources
 

@@ -16,7 +16,9 @@ is double-perfect of order `r` and is not of Type A (it lies in `E_r(N)`). With
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
+- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
+- [Perfect Partition Of Factorization](perfect-partition-of-factorization.md)
 
 ## Sources
 

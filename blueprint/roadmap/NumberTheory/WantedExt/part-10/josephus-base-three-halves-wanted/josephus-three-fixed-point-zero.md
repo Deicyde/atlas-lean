@@ -12,7 +12,11 @@ The first zero-indexed positive fixed point is `1`, the paper's `n_p^{(1)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus Three Fixed Point](josephus-three-fixed-point.md)
+
+## Proof depends on
+
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Configurations are tuples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cfg](cfg.md)
 
 ## Sources
 

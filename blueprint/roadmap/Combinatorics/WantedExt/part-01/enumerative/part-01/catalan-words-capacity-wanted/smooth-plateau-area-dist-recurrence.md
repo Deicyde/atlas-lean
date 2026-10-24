@@ -13,7 +13,7 @@ Mansour and Shattuck's Lemma 6: for `m, j ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smooth Plateau Area Dist](smooth-plateau-area-dist.md)
 
 ## Sources
 

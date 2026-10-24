@@ -13,7 +13,13 @@ the part of the current letter's image already emitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Bound](bound.md)
+- [Εnfa](nfa.md)
+
+## Proof depends on
+
+- [Advance](advance.md)
 
 ## Sources
 

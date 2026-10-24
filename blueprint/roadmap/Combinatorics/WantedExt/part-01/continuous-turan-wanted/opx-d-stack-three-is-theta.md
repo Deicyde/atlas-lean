@@ -13,7 +13,8 @@ Corollary 5.17, second part: if `P ⊆ ℝ²` has three points with pairwise dis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
+- [Opx D](opx-d.md)
 
 ## Sources
 

@@ -13,7 +13,19 @@ deterministic, and the two erasures at the halting symbol commute.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Step](../../part-02/string-rewriting/step.md)
+- [TMSym](tmsym.md)
+- [Ctl Count](ctl-count.md)
+- [Rules](rules.md)
+
+## Proof depends on
+
+- [Rule](../../part-02/string-rewriting/rule.md)
+- [Is Ctl](is-ctl.md)
+- [Exists split of ctl Count eq one](exists-split-of-ctl-count-eq-one.md)
+- [Next State](next-state.md)
+- [Rules For](rules-for.md)
+- [A rewrite at the control symbol](step-result.md)
 
 ## Sources
 

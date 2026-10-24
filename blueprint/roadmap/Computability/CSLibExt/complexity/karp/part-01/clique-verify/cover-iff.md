@@ -12,7 +12,16 @@ A `k`-vertex cover is a `k`-set meeting the cover condition on every pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+- [Set Ok](set-ok.md)
+- [To Graph](../clique/to-graph.md)
+
+## Proof depends on
+
+- [Ok](ok.md)
+- [Forall ne iff lt](forall-ne-iff-lt.md)
+- [Adj Bits](../clique/adj-bits.md)
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

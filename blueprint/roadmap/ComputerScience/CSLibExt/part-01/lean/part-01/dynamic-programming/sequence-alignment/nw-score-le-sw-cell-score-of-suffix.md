@@ -12,7 +12,18 @@ lean: Cslib.Algorithms.Lean.nwScore_le_swCellScore_of_suffix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nw Score](nw-score.md)
+- [Sw Cell Score](sw-cell-score.md)
+
+## Proof depends on
+
+- [Nw Score nil left](nw-score-nil-left.md)
+- [Nw Score nil right](nw-score-nil-right.md)
+- [The Needleman–Wunsch recurrence, end-peeling](nw-score-snoc.md)
+- [Suffix append snoc](suffix-append-snoc.md)
+- [Suffix of snoc](suffix-of-snoc.md)
+- [The Smith–Waterman recurrence](sw-cell-score-eq.md)
+- [Sw Cell Score nonneg](sw-cell-score-nonneg.md)
 
 ## Sources
 

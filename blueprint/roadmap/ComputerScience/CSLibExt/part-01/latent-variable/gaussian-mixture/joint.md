@@ -11,7 +11,13 @@ The joint density `p_θ(x, k) = π k N(x | μ k, σ k² I)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Params](params.md)
+- [Valid](valid.md)
+- [Iso Gauss PDF](iso-gauss-pdf.md)
 
 ## Sources
 

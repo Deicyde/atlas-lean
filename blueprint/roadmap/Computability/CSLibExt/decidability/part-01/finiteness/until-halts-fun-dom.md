@@ -12,7 +12,7 @@ lean: Cslib.Decidability.untilHaltsFun_dom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Until Halts Fun](../../part-02/totality/until-halts-fun.md)
 
 ## Sources
 

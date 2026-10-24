@@ -14,6 +14,10 @@ target is `ν = ρ.withDensity w`: the average of `w (X i) * f (X i)` over the f
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mc Estimate](mc-estimate.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Sampling.MonteCarlo](../../../../../../sources/v2/CSLibExt.md)

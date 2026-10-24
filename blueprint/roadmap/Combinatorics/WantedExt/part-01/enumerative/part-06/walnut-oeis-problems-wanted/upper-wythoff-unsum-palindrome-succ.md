@@ -14,7 +14,7 @@ particular `|W_(i+1)| = |W_i| + |W_(i-1)|` with `|W_1| = 1`, `|W_2| = 2`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Wythoff Unsum Palindrome](upper-wythoff-unsum-palindrome.md)
 
 ## Sources
 

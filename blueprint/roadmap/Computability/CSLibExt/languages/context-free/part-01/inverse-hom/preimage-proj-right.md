@@ -13,7 +13,12 @@ lean: Cslib.Language.IsContextFree.preimage_projRight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proj Right](proj-right.md)
+
+## Proof depends on
+
+- [Ins Grammar](ins-grammar.md)
+- [`insGrammar` generates the words whose right letters form a word of the original language](ins-grammar-language.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Proposition 2.2: if `b ∣ a`, `b` is squarefree and `P, Q ∈ ℕ` satisfy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

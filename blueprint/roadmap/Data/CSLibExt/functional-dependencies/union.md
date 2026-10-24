@@ -12,7 +12,8 @@ The union rule: from `X → Y` and `X → Z` derive `X → Y ∪ Z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](derives.md)
+- [FD](fd.md)
 
 ## Sources
 

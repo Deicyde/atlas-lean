@@ -15,6 +15,10 @@ minimal period of the digit sequence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime To PDen](prime-to-pden.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HigherANumbersPeriodicSumWanted](../../../../../sources/v2/WantedExt.md)

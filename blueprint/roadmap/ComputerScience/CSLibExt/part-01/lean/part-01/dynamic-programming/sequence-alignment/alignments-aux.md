@@ -12,7 +12,7 @@ All alignments of two sequences, by fuel recursion. Implementation detail: use
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](alignment.md)
 
 ## Sources
 

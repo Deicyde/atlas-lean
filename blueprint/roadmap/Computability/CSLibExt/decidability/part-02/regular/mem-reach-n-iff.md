@@ -13,7 +13,14 @@ finds exactly the states reachable from `s₀`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reach N](reach-n.md)
+
+## Proof depends on
+
+- [Reach Round](reach-round.md)
+- [Dedup B](../../part-01/primrec-list/dedup-b.md)
+- [Iterate closed](../../part-01/primrec-list/iterate-closed.md)
+- [Mem B](../../part-01/primrec-list/mem-b.md)
 
 ## Sources
 

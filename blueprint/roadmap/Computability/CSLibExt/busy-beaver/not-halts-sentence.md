@@ -11,7 +11,12 @@ The sentence "the machine does not halt on the blank tape".
 
 ## Depends on
 
-This node has no prerequisites.
+- [Machine](machine.md)
+
+## Proof depends on
+
+- [Machine Code](machine-code.md)
+- [Sentence Code](sentence-code.md)
 
 ## Sources
 

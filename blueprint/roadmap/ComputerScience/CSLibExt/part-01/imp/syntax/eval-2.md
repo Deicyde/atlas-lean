@@ -11,7 +11,13 @@ Evaluate a Boolean expression in a state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](bexp.md)
+- [State](state.md)
+
+## Proof depends on
+
+- [AExp](aexp.md)
+- [Eval](eval.md)
 
 ## Sources
 

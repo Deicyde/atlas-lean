@@ -13,7 +13,8 @@ rank.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyson Rank](dyson-rank.md)
+- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
 
 ## Sources
 

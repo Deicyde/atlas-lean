@@ -14,7 +14,26 @@ proposer can still propose (`galeShapley_spec`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Deferred acceptance](gale-shapley.md)
+
+## Proof depends on
+
+- [Free](free.md)
+- [Inv](inv.md)
+- [Chooser](chooser.md)
+- [Init](init.md)
+- [Le rank of rejected](le-rank-of-rejected.md)
+- [Mprefs](mprefs.md)
+- [New Holder](new-holder.md)
+- [New Holder cases](new-holder-cases.md)
+- [Not blocking](not-blocking.md)
+- [Propose](propose.md)
+- [Remaining](remaining.md)
+- [Run](run.md)
+- [Wprefs](wprefs.md)
+- [Is Stable](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
+- [Perfect Matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
 
 ## Sources
 

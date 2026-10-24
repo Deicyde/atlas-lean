@@ -12,7 +12,7 @@ The partition of `Fin n` into singletons is encoded by the identity permutation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Increasing Cycle Perm](is-increasing-cycle-perm.md)
 
 ## Sources
 

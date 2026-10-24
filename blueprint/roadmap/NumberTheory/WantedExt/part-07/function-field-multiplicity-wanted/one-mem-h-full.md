@@ -13,7 +13,11 @@ divide `1`; the divisibility implication in the definition is therefore vacuous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full](h-full.md)
+
+## Proof depends on
+
+- [Monic Irreducible](monic-irreducible.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: Cslib.Algorithms.Lean.Online.Paging.lruStep_take_of_not_mem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Step](lru-step.md)
 
 ## Sources
 

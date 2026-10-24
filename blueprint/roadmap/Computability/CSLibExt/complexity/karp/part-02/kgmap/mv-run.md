@@ -12,7 +12,19 @@ Moving the pair bits: `X` is emptied onto `Y` as `Sym.val`s, reversed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mode](mode.md)
+- [Next](next.md)
+- [Prog](prog.md)
+- [Γ](untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Is T](is-t.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

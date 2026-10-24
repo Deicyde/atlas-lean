@@ -13,7 +13,8 @@ element `F` of `L(M)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver End](is-sylver-end.md)
+- [Sylver Legal Moves](sylver-legal-moves.md)
 
 ## Sources
 

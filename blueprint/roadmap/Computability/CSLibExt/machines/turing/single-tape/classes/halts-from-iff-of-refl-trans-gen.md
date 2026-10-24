@@ -13,7 +13,11 @@ forwards because the machine is deterministic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts From](halts-from.md)
+
+## Proof depends on
+
+- [Right Unique transition Relation](right-unique-transition-relation.md)
 
 ## Sources
 

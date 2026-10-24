@@ -14,7 +14,7 @@ and its class table numbered past 74 is the WA table).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ total; under the paper's hypotheses and `f 0 = 0` it does not alter legal play.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Maximum Nim Mex](maximum-nim-mex.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.MaximumNimJosephusWanted](../../../../../sources/v2/WantedExt.md)

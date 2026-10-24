@@ -11,7 +11,8 @@ Every odd `q > 3` is the winning reply to exactly one N-position `{4, x}` with `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver NPosition](is-sylver-nposition.md)
+- [Is Sylver PPosition](is-sylver-pposition.md)
 
 ## Sources
 

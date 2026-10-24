@@ -15,7 +15,8 @@ paper from Diananda-Yap and Green-Ruzsa.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Type One Group](is-type-one-group.md)
+- [Largest Sum Free Card](largest-sum-free-card.md)
 
 ## Sources
 

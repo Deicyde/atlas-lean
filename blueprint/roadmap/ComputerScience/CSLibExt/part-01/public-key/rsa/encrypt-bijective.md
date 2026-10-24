@@ -12,7 +12,15 @@ Encryption is a bijection of `ZMod n`, inverted by `c ↦ c ^ d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key](key.md)
+- [Encrypt](encrypt.md)
+- [N](n.md)
+
+## Proof depends on
+
+- [Decrypt](decrypt.md)
+- [Correctness of textbook RSA](decrypt-encrypt.md)
+- [Pow ed](pow-ed.md)
 
 ## Sources
 

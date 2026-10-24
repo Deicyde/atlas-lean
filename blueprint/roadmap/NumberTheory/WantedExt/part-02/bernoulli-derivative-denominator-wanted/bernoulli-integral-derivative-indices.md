@@ -14,6 +14,10 @@ Bernoulli polynomial has only integral coefficients; `\overline{𝒮} = \overlin
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Polynomial Denominator](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BernoulliDerivativeDenominatorWanted](../../../../../sources/v2/WantedExt.md)

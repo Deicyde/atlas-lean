@@ -13,7 +13,9 @@ Among `k`-box paths of size `n`, the mean number of returns is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [K Box Paths](k-box-paths.md)
+- [Skew Returns](skew-returns.md)
 
 ## Sources
 

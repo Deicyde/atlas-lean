@@ -14,6 +14,10 @@ column, so no open run).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gotoh Cont None](gotoh-cont-none.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.AffineAlignment](../../../../../../../../sources/v2/CSLibExt.md)

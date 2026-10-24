@@ -15,7 +15,9 @@ remark that they hold for `r ∈ {0, ±∞}`. (`EReal` inverses have `⊤⁻¹ =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Letter Position](letter-position.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

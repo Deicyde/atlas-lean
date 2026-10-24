@@ -13,7 +13,9 @@ If `x_i ∉ 𝒯({x_1, …, x_{i-1}})` for every `i` (for `i = 1` this says `x_1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect MCover](is-perfect-mcover.md)
+- [Cover Count](cover-count.md)
+- [Odd Combinations](odd-combinations.md)
 
 ## Sources
 

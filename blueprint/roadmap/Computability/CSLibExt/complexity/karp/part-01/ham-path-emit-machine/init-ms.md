@@ -11,7 +11,13 @@ The initial state of the emitter: the token stack, the output stack `o`, the res
 
 ## Depends on
 
-This node has no prerequisites.
+- [MS](ms.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Toks](../../../sat-verifier-spec/toks.md)
 
 ## Sources
 

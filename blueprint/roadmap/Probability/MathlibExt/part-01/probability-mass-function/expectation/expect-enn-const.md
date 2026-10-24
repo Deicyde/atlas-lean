@@ -13,7 +13,7 @@ an arbitrary `p` (no finiteness needed).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect ENN](expect-enn.md)
 
 ## Sources
 

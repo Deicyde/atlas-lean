@@ -13,7 +13,7 @@ diverges. The `q = 0` term is `0` in Lean; `ψ` is also assumed non-increasing a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
 
 ## Sources
 

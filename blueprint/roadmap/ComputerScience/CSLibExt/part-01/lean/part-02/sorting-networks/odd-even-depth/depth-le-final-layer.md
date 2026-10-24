@@ -12,7 +12,12 @@ The last layer of the merger has depth at most `1`: its comparators are disjoint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth LE](../depth/depth-le.md)
+- [Final Layer](../odd-even/final-layer.md)
+
+## Proof depends on
+
+- [Levels](../depth/levels.md)
 
 ## Sources
 

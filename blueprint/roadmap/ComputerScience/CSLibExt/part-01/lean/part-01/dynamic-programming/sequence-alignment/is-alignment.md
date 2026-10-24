@@ -12,7 +12,7 @@ filter to `xs` and `ys`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](alignment.md)
 
 ## Sources
 

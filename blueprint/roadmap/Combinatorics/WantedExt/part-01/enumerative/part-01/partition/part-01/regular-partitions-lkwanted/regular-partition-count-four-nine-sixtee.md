@@ -11,7 +11,7 @@ For all `n ≥ 0`, `b_{4,9}(16n + 13) ≡ 0 (mod 4)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Partition Count](regular-partition-count.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ in `ℤ[q, q⁻¹]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smooth Capacity Dist](smooth-capacity-dist.md)
+- [Smooth Max End Capacity Dist](smooth-max-end-capacity-dist.md)
+- [Smooth Plateau Area Dist](smooth-plateau-area-dist.md)
 
 ## Sources
 

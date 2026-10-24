@@ -21,7 +21,9 @@ make every form a (positive) prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primary DCarmichael](is-primary-dcarmichael.md)
+- [Is Secondary DCarmichael](is-secondary-dcarmichael.md)
+- [Is Universal Linear DForm](is-universal-linear-dform.md)
 
 ## Sources
 

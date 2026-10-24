@@ -15,7 +15,10 @@ hypothesis the paper does not state; it is assumed directly here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valuation Conjecture One](valuation-conjecture-one.md)
+- [Valuation Common Lift Count](valuation-common-lift-count.md)
+- [Valuation Curve Points](valuation-curve-points.md)
+- [Valuation Distinct Tuples](valuation-distinct-tuples.md)
 
 ## Sources
 

@@ -13,7 +13,10 @@ Corollary 2: for `p ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Ballot Number](ballot-number.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

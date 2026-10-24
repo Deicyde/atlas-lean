@@ -14,6 +14,10 @@ squares and `k` `Q`-combs.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Restricted Overlap Tilings](restricted-overlap-tilings.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RestrictedCombinationsWanted](../../../../../../../sources/v2/WantedExt.md)

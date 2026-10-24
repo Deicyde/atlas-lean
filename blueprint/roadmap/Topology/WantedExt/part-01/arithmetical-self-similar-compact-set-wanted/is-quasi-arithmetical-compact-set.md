@@ -16,6 +16,10 @@ is a function on `ℕ` whose values off `ℕ \ ρℕ` are irrelevant.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.ArithmeticalSelfSimilarCompactSetWanted](../../../../../sources/v2/WantedExt.md)

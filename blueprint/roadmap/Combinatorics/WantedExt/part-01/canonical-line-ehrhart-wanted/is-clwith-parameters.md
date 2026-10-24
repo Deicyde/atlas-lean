@@ -15,6 +15,10 @@ quadratic factors.  A list is used so later statements can refer to individual p
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cl Quadratic Product](cl-quadratic-product.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

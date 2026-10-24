@@ -13,6 +13,10 @@ Right vertices of `S` are *done*: each is matched, or all its neighbours are mat
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Free](../../graph/bipartite-matching/free.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Online.BipartiteMatching](../../../../../../../../sources/v2/CSLibExt.md)

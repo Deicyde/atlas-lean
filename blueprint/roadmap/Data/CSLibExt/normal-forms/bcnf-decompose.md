@@ -12,7 +12,13 @@ BCNF in `S` and split `S` into `X⁺ ∩ S` and `S \ (X⁺ \ X)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](../functional-dependencies/fd.md)
+
+## Proof depends on
+
+- [Is BCNFViolation](is-bcnfviolation.md)
+- [Attr Closure](../functional-dependencies/attr-closure.md)
+- [Bcnf Candidates](bcnf-candidates.md)
 
 ## Sources
 

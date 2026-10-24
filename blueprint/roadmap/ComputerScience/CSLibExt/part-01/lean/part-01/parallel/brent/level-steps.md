@@ -11,7 +11,11 @@ The steps level `d` takes on `p` processors: `⌈levelCard d / p⌉`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+
+## Proof depends on
+
+- [Level Card](level-card.md)
 
 ## Sources
 

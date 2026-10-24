@@ -12,7 +12,7 @@ A completely additive function vanishes at `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Completely Additive Nat](is-completely-additive-nat.md)
 
 ## Sources
 

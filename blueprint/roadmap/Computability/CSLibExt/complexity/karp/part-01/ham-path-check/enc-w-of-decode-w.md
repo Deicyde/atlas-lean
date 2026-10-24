@@ -12,7 +12,16 @@ lean: Cslib.Complexity.Karp.HamVerify.encW_of_decodeW
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode W](decode-w.md)
+- [Enc W](enc-w.md)
+
+## Proof depends on
+
+- [Decode W nil](decode-w-nil.md)
+- [Decode W of none](decode-w-of-none.md)
+- [Decode W of some](decode-w-of-some.md)
+- [Enc W cons](enc-w-cons.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

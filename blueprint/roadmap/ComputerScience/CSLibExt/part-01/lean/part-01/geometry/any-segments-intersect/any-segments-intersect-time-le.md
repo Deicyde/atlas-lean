@@ -13,7 +13,26 @@ in the list-based status and at most three `SEGMENTS-INTERSECT` tests per segmen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Any Segments Intersect](any-segments-intersect.md)
+
+## Proof depends on
+
+- [Event](event.md)
+- [Below](below.md)
+- [Event Cost](event-cost.md)
+- [Events](events.md)
+- [Key](key.md)
+- [Left](left.md)
+- [Right](right.md)
+- [Run](run.md)
+- [Run mem iff](run-mem-iff.md)
+- [Step](step.md)
+- [Sweep](sweep.md)
+- [Test](test.md)
+- [Test Opt](test-opt.md)
+- [Test Pair](test-pair.md)
+- [Segments Intersect](../segment-intersection/segments-intersect.md)
+- [Segments Intersect time](../segment-intersection/segments-intersect-time.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ word `w` into nonempty parts, the cell built from them holds exactly the nonterm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chomsky Normal Form](../chomsky-normal-form/is-chomsky-normal-form.md)
+- [Yields](../../part-02/yields/yields.md)
+- [Cyk Cell From](cyk-cell-from.md)
+
+## Proof depends on
+
+- [Cyk Fits](cyk-fits.md)
+- [Shape of yields under Chomsky normal form](yields-nonterminal-iff-of-ne-nil.md)
 
 ## Sources
 

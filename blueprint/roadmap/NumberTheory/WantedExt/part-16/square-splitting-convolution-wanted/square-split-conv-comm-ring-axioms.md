@@ -13,7 +13,7 @@ functions form a commutative ring under `+` and `⋆`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Conv](square-split-conv.md)
 
 ## Sources
 

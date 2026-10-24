@@ -12,7 +12,9 @@ Nothing changes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fr](fr.md)
+- [K](k.md)
+- [Γ](untitled.md)
 
 ## Sources
 

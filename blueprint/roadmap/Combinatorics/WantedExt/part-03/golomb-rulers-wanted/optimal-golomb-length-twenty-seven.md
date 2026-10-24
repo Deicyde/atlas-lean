@@ -11,7 +11,7 @@ The optimal 27-mark Golomb ruler has length `553`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Optimal Golomb Length](optimal-golomb-length.md)
 
 ## Sources
 

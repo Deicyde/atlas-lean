@@ -14,6 +14,10 @@ subsequences by `HasConsecutiveWeightedZeroSumSubseq`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Consecutive Weighted Zero Sum Subseq](has-consecutive-weighted-zero-sum-subseq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.SquareWeightedZeroSumWanted](../../../../../../sources/v2/WantedExt.md)

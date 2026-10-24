@@ -13,7 +13,7 @@ every `n ≥ 10`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](../../../../../../NumberTheory/WantedExt/part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ the set of nonzero elements of `S(M)` that are not a sum of two nonzero elements
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sylver Legal Moves](sylver-legal-moves.md)
 
 ## Sources
 

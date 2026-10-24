@@ -11,7 +11,7 @@ The start label.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
 
 ## Sources
 

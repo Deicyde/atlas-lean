@@ -13,7 +13,15 @@ probability of the node's value given the values of its parents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayes Net](bayes-net.md)
+- [Joint](joint-2.md)
+
+## Proof depends on
+
+- [To Chain](to-chain.md)
+- [Chain](chain.md)
+- [Joint](joint.md)
+- [Joint eq prod](joint-eq-prod.md)
 
 ## Sources
 

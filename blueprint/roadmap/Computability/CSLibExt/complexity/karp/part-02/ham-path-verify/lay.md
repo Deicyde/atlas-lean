@@ -13,7 +13,14 @@ stacks empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [Enc W](../../part-01/ham-path-check/enc-w.md)
+- [Edge Bits](../../part-01/color/edge-bits.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

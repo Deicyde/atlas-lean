@@ -14,7 +14,13 @@ one before halting.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts On](../classes/halts-on.md)
+- [Space Bounded By](space-bounded-by.md)
+- [Cfg Bound](cfg-bound.md)
+
+## Proof depends on
+
+- [Configurations of bounded space are finitely many](encard-le-cfg-bound.md)
 
 ## Sources
 

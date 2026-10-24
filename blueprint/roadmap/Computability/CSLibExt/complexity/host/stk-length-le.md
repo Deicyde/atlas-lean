@@ -12,7 +12,13 @@ Stack sizes grow by at most `pushBound` per step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Pushes](../../../MathlibExt/turing-machine/composition/pushes.md)
+- [Iter none](../../../MathlibExt/turing-machine/program/iter-none.md)
 
 ## Sources
 

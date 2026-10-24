@@ -12,7 +12,7 @@ reciprocal sum of `N_{k_1 ⋯ k_m k}` tends to `0` as `k → ∞`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

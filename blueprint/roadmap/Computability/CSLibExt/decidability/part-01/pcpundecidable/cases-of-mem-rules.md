@@ -12,7 +12,13 @@ The eight kinds of rules.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](../../part-02/string-rewriting/rule.md)
+- [TMSym](tmsym.md)
+- [Rules](rules.md)
+
+## Proof depends on
+
+- [Rules For](rules-for.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ primitive `d`-th root of unity with `d ∈ {1, 2, 3, 4}`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
 
 ## Sources
 

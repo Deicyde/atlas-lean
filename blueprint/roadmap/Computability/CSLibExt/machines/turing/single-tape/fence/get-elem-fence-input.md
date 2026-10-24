@@ -13,7 +13,8 @@ right padding, and the right wall at `i + w.length + j + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
+- [Fence Input](fence-input.md)
 
 ## Sources
 

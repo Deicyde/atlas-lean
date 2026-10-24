@@ -13,7 +13,11 @@ representations `x^2 + 2y^2 = N` is four times the number with `x, y > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rep X2 Y2 Count](rep-x2-y2-count.md)
+
+## Proof depends on
+
+- [Re mul re add two mul im mul im](re-mul-re-add-two-mul-im-mul-im.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Recurrence `x_{n+2} = x_{n+1} + 1/Q_{n+2}` (paper indexing).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Convergent](luroth-convergent.md)
+- [Luroth Denominator](luroth-denominator.md)
 
 ## Sources
 

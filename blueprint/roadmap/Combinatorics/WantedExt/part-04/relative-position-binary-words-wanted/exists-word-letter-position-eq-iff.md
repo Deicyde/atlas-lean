@@ -13,7 +13,8 @@ strictly increasing, `p(1) > 0` and `Δp > 1` infinitely often.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Letter Position](letter-position.md)
 
 ## Sources
 

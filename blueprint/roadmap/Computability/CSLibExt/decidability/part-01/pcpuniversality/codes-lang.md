@@ -13,6 +13,10 @@ Codes of index sequences with indices below `k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bit Codes](bit-codes.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.PCPUniversality](../../../../../../sources/v2/CSLibExt.md)

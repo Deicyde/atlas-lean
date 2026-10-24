@@ -12,7 +12,7 @@ number as `F(x)=⌊(k-1)x/k⌋`. The expression `(k-1)*x/k` is `F`; there is no 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim Grundy](maximum-nim-grundy.md)
 
 ## Sources
 

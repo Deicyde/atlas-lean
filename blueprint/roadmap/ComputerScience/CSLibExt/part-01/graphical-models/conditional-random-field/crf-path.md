@@ -11,7 +11,13 @@ lean: Cslib.MachineLearning.GraphicalModels.ConditionalRandomField.crfPath
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+
+## Proof depends on
+
+- [Best Path](best-path.md)
+- [Viterbi Tab](viterbi-tab.md)
+- [Argmax Vec](../../sequence/hidden-markov/argmax-vec.md)
 
 ## Sources
 

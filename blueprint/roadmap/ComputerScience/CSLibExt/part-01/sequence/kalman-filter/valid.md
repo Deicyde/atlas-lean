@@ -11,7 +11,7 @@ A belief is valid when its covariance is positive semidefinite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
 
 ## Sources
 

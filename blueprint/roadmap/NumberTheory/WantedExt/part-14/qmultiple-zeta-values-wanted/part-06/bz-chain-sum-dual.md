@@ -19,7 +19,8 @@ paper's closing remark (equivalence with BZ duality) is not part of this stateme
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz Chain Sum](../part-05/bz-chain-sum.md)
+- [Bz Chain Word](bz-chain-word.md)
 
 ## Sources
 

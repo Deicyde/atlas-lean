@@ -12,7 +12,8 @@ The resolvents added by `eliminate` do not mention `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
 
 ## Sources
 

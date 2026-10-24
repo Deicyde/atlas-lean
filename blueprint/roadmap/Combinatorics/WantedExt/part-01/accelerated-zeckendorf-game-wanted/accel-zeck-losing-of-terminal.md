@@ -12,7 +12,12 @@ A state with no move is losing (rule (1)).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accel Zeck Losing](accel-zeck-losing.md)
+- [Accel Zeck Move](accel-zeck-move.md)
+
+## Proof depends on
+
+- [Accel Zeck Winning](accel-zeck-winning.md)
 
 ## Sources
 

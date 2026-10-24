@@ -14,6 +14,10 @@ a later down step, has only flat steps between them, and the up step reaches hei
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Motzkin Step](motzkin-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinHumpsYoungTableauxWanted](../../../../../../../sources/v2/WantedExt.md)

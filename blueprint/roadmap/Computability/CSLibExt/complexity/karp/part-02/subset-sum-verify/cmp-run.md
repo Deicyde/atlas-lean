@@ -13,7 +13,20 @@ Comparing the sum `s` on `B` with the target `tt` on `T` (both most significant 
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Distinct4](../../../../../MathlibExt/turing-machine/bit-ops/distinct4.md)
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Comparison](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b-run.md)
 
 ## Sources
 

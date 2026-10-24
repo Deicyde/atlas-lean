@@ -12,7 +12,7 @@ The equation `x + 2y - z - 2w = 0` is `r`-uncommon over the integers for every
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Uncommon Over Integers](is-uncommon-over-integers.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Each `p`-adic digit is strictly below `p`, via `dvd_appr_sub_appr`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Digit](padic-digit.md)
 
 ## Sources
 

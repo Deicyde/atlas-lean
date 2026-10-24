@@ -12,7 +12,11 @@ A constant sequence is linearly recurrent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Linearly Recurrent Seq](is-linearly-recurrent-seq.md)
+
+## Proof depends on
+
+- [Seq Factor Occurs At](seq-factor-occurs-at.md)
 
 ## Sources
 

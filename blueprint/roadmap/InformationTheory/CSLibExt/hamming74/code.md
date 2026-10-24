@@ -11,7 +11,12 @@ The Hamming code.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](../linear-code/linear-code.md)
+
+## Proof depends on
+
+- [H](h.md)
+- [Of Parity Check](../linear-code/of-parity-check.md)
 
 ## Sources
 

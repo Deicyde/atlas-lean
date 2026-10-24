@@ -14,7 +14,7 @@ for `k = a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Std Column](std-column.md)
 
 ## Sources
 

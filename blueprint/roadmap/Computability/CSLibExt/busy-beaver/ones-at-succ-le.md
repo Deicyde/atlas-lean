@@ -12,7 +12,18 @@ A step writes at most one additional one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Machine](machine.md)
+- [Ones At](ones-at.md)
+
+## Proof depends on
+
+- [Config](config.md)
+- [Move](move.md)
+- [Shift](shift.md)
+- [Initial](initial.md)
+- [Mem window of tape eq one](mem-window-of-tape-eq-one.md)
+- [Run](run.md)
+- [Step](step.md)
 
 ## Sources
 

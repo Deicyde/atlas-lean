@@ -14,7 +14,7 @@ consecutive rows are at most `c` apart (the paper's `2^{O(k)} n`, constant depen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ with replacement.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Clause](clause.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Combinatorics.RandomThreeSat](../../../../sources/v2/CSLibExt.md)

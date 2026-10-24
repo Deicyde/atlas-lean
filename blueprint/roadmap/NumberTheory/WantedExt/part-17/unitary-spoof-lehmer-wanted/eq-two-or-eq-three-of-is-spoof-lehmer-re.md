@@ -17,7 +17,8 @@ not stated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spoof Lehmer](../../part-16/spoof-lehmer-factorization-wanted/is-spoof-lehmer.md)
+- [Spoof Of Bases](../../part-16/spoof-lehmer-factorization-wanted/spoof-of-bases.md)
 
 ## Sources
 

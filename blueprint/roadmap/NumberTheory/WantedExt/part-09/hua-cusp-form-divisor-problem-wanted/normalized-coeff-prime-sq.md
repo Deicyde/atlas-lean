@@ -12,7 +12,8 @@ For a normalized Hecke eigenform and a prime `p`, `λ_f(p)² = λ_f(p²) + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Normalized Hecke Eigenform](is-normalized-hecke-eigenform.md)
+- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
 
 ## Sources
 

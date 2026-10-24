@@ -13,7 +13,9 @@ periodic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomid Average Condition](binomid-average-condition.md)
+- [Is Binomid Index](is-binomid-index.md)
+- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
 
 ## Sources
 

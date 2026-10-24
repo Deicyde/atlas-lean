@@ -12,7 +12,7 @@ lean: MetaMathlibExt.iteratedPartialSum_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated Partial Sum](iterated-partial-sum.md)
 
 ## Sources
 

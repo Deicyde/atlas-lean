@@ -12,7 +12,7 @@ With positive thresholds the pass is not available from the empty position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nim Pass Indicator](nim-pass-indicator.md)
 
 ## Sources
 

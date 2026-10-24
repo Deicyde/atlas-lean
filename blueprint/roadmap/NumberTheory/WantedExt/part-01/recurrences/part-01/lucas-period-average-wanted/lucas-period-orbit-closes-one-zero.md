@@ -12,7 +12,13 @@ The orbit of `1` closes at once: `π_U(1) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Period Orbit Closes](lucas-period-orbit-closes.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Lucas UPeriod](lucas-uperiod.md)
+- [Lucas UPeriod one](lucas-uperiod-one.md)
 
 ## Sources
 

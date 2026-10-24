@@ -13,6 +13,10 @@ The remainder `J(x) = (1 + ⌊x⌋ - x) s_q(⌊x⌋) - h(x)` of the Trollope-Del
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trollope Delange Series](trollope-delange-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DigitSumDirichletConvolutionWanted](../../../../../sources/v2/WantedExt.md)

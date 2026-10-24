@@ -12,7 +12,9 @@ lean: MetaMathlibExt.isDominating_iff_forall_vertexDominationState_ne_uncovered
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination State](domination-state.md)
+- [Vertex Domination State](vertex-domination-state.md)
+- [Is Dominating](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-02/domination/is-dominating.md)
 
 ## Sources
 

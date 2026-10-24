@@ -12,7 +12,20 @@ lean: Cslib.Turing.Universal.Clocked.univTime_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc In](../clocked/enc-in.md)
+- [Univ Time](../clocked/univ-time.md)
+- [Code](../code/code.md)
+
+## Proof depends on
+
+- [Cell](../clocked/cell.md)
+- [Cells](../clocked/cells.md)
+- [Clock Time](../clocked/clock-time.md)
+- [Code Cells](../clocked/code-cells.md)
+- [Parse Time](../clocked/parse-time.md)
+- [Bit Sym](../code/bit-sym.md)
+- [Input](../code/input.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

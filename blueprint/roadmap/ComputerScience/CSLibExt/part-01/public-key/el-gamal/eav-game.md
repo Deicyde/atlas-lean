@@ -13,7 +13,13 @@ The eavesdropping experiment `PubK^eav` for ElGamal: secret key `x`, encryption 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adversary](adversary.md)
+
+## Proof depends on
+
+- [Encrypt](encrypt.md)
+- [Pick](pick.md)
+- [Public Key](public-key.md)
 
 ## Sources
 

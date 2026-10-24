@@ -14,7 +14,8 @@ no deviation from the theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [D3](d3.md)
+- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
 
 ## Sources
 

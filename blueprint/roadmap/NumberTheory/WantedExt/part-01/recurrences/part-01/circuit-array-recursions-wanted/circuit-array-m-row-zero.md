@@ -11,7 +11,8 @@ Corollary 4.8: `C^M₀,ₛ = (9^{s-1} - 1 + X₁)/9^{s-1}` for `s ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Array M](circuit-array-m.md)
+- [Circuit Var](circuit-var.md)
 
 ## Sources
 

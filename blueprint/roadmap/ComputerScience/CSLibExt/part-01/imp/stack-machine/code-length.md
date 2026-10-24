@@ -11,7 +11,14 @@ Number of instructions generated for a command.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cmd](../syntax/cmd.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [BExp](../syntax/bexp.md)
+- [Alen](alen.md)
+- [Blen](blen.md)
 
 ## Sources
 

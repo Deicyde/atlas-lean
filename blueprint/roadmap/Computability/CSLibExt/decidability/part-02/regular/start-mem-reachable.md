@@ -12,7 +12,11 @@ The start state is reachable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reachable](reachable.md)
+
+## Proof depends on
+
+- [A state is reachable exactly when some word leads to it](mem-reachable-iff.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ The lock mode an access requires: shared for a read, exclusive for a write.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Access](../serializability/access.md)
+- [Lock Mode](lock-mode.md)
 
 ## Sources
 

@@ -13,7 +13,16 @@ edges by `ℬ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Edge](circuit-edge.md)
+
+## Proof depends on
+
+- [Circuit Base Edge](circuit-base-edge.md)
+- [Circuit Left Edge](circuit-left-edge.md)
+- [Circuit Perimeter](circuit-perimeter.md)
+- [Circuit Right Arm](circuit-right-arm.md)
+- [Circuit Right Edge](circuit-right-edge.md)
+- [Circuit Top Arm](circuit-top-arm.md)
 
 ## Sources
 

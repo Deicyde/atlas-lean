@@ -15,6 +15,10 @@ The `p`-component of `ζ^c_{𝒜,N}(k)` for a color map `c`: `ζ^{c(p)}_{p,N}(k)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Colored Finite MZV](colored-finite-mzv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FiniteMultipleZetaLevelWanted](../../../../../sources/v2/WantedExt.md)

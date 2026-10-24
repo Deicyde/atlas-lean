@@ -11,7 +11,13 @@ The stacks during the step on vertex `a`: `lay`, with `a` on `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [Lay](lay.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

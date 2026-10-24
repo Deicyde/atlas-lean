@@ -20,6 +20,12 @@ below q: ∀ D ∈ Mₛ [ D  dense ⟶ ∀ r ≤ q ∃ a ∈ D ∩ M_c ∃ s ∈
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Predense Below](is-predense-below.md)
+- [Model Conds](model-conds.md)
+- [Model Sets](model-sets.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Forcing.ForcingAxioms.Proper](../../../../../../sources/v2/MathlibExt.md)

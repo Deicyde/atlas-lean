@@ -12,7 +12,11 @@ For `m = 1` the only index is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Average Indices](max-average-indices.md)
+
+## Proof depends on
+
+- [Binomid Average](../../part-02/binomid-index-wanted/binomid-average.md)
 
 ## Sources
 

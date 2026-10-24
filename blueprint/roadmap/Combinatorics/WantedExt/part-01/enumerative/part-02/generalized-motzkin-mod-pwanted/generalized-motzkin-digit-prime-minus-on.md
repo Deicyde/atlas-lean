@@ -14,7 +14,8 @@ Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 5(iii).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Trinomial](central-trinomial.md)
+- [Generalized Motzkin](generalized-motzkin.md)
 
 ## Sources
 

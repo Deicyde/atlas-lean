@@ -11,7 +11,7 @@ The pseudo-greedy expansion of a positive real `r` sums to `r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
 
 ## Sources
 

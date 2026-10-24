@@ -12,7 +12,7 @@ a P-position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver PPosition](is-sylver-pposition.md)
 
 ## Sources
 

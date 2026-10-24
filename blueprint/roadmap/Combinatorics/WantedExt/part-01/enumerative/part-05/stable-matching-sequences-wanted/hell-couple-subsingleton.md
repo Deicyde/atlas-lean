@@ -11,7 +11,9 @@ A stable matching has at most one hell-couple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hell Couple](is-hell-couple.md)
+- [Is Stable Matching](is-stable-matching.md)
+- [Preference Profile](preference-profile.md)
 
 ## Sources
 

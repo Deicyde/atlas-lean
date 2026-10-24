@@ -14,7 +14,14 @@ prime `25013`, contradicting the replacement-composite conjunct of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Digitally Robust Composite](is-digitally-robust-composite.md)
+
+## Proof depends on
+
+- [Delete Digit](delete-digit.md)
+- [Insert Digit](insert-digit.md)
+- [Replace Digit](replace-digit.md)
+- [Replace Digit 25011 units](replace-digit-25011-units.md)
 
 ## Sources
 

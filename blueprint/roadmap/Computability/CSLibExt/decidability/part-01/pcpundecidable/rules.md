@@ -11,7 +11,13 @@ The rewriting system simulating `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](../../part-02/string-rewriting/rule.md)
+- [TMSym](tmsym.md)
+
+## Proof depends on
+
+- [Erase Rules](erase-rules.md)
+- [Rules For](rules-for.md)
 
 ## Sources
 

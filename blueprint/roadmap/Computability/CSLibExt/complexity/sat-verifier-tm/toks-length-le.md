@@ -12,7 +12,14 @@ Moved to `SatVerifier.toks_length_le` (`SatVerifierSpec`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [Toks](../sat-verifier-spec/toks.md)
+- [Encode CNF](../../cook-levin/encode-cnf.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Toks length le](../sat-verifier-spec/toks-length-le.md)
 
 ## Sources
 

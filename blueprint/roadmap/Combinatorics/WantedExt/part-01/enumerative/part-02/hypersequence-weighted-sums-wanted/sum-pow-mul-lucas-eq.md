@@ -13,7 +13,8 @@ in the record is omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
+- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

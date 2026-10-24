@@ -13,6 +13,10 @@ The value of the node `k` steps after `v`, or `0` past the end.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jump](../list-ranking/jump.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Parallel.ListPrefix](../../../../../../../../sources/v2/CSLibExt.md)

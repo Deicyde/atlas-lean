@@ -13,7 +13,7 @@ With `q = 4`, `s_4 = 2`, `s_3 = 0`, `s_2 = 1`, `s_1 = 1` the normal form is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Normal Form](diagonal-normal-form.md)
 
 ## Sources
 

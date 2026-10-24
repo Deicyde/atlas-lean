@@ -12,7 +12,7 @@ The paper's Figure 1 example: `cap(122341123212323) = 10`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Word Capacity](word-capacity.md)
 
 ## Sources
 

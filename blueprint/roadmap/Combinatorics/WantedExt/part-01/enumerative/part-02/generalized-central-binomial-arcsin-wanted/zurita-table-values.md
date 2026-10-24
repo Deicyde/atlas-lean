@@ -14,7 +14,16 @@ Rows of the paper's Tables 1-4: `S_2 = -2/3 - (8/3)x + (16/3)x^2`, `c_2 = 5/3`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zurita C](zurita-c.md)
+- [Zurita D](zurita-d.md)
+- [Zurita MCoeff](zurita-mcoeff.md)
+- [Zurita NCoeff](zurita-ncoeff.md)
+- [Zurita SCoeff](zurita-scoeff.md)
+- [Zurita TCoeff](zurita-tcoeff.md)
+
+## Proof depends on
+
+- [Zurita TCoeff Rev](zurita-tcoeff-rev.md)
 
 ## Sources
 

@@ -11,7 +11,10 @@ For every degree-`d` polynomial `f ∈ 𝔆 ∩ 𝔖` (CL and SNN), `clspan f �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CL](is-cl.md)
+- [Is SNN](is-snn.md)
+- [Clspan](clspan.md)
+- [P Basis](p-basis.md)
 
 ## Sources
 

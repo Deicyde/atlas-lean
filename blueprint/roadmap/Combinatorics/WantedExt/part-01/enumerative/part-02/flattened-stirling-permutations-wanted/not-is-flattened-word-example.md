@@ -13,7 +13,11 @@ leaders are `1, 2, 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Flattened Word](is-flattened-word.md)
+
+## Proof depends on
+
+- [Word Run Start](word-run-start.md)
 
 ## Sources
 

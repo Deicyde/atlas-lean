@@ -12,7 +12,8 @@ Ending at `p` instead of returning to `v` costs at most `d v p` more.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metric Cost](is-metric-cost.md)
+- [Path From](path-from.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ Lemma 3: for `m ≥ 2` and nonnegative integers `s_1, …, s_m` with `S = s_1 + 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
 
 ## Sources
 

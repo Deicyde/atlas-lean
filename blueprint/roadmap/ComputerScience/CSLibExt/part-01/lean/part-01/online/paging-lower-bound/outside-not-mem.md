@@ -12,7 +12,7 @@ A cache of at most `k` pages misses one of the `k + 1` pages.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Outside](outside.md)
 
 ## Sources
 

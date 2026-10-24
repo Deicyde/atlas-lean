@@ -18,7 +18,9 @@ is dropped.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ideal Period Word](ideal-period-word.md)
+- [N Expansion Digit](n-expansion-digit.md)
+- [N Expansion Map](n-expansion-map.md)
 
 ## Sources
 

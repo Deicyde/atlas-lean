@@ -14,7 +14,7 @@ is stated for every natural `m` (trivial at `m = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tverberg Sum](tverberg-sum.md)
 
 ## Sources
 

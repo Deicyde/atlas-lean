@@ -12,7 +12,13 @@ A decidable predicate is co-recognizable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape Co Recognizable](../classes/single-tape-co-recognizable.md)
+- [Single Tape Decidable](../classes/single-tape-decidable.md)
+
+## Proof depends on
+
+- [Single Tape Recognizable](../classes/single-tape-recognizable.md)
+- [Post's theorem](single-tape-decidable-iff-single-tape-re.md)
 
 ## Sources
 

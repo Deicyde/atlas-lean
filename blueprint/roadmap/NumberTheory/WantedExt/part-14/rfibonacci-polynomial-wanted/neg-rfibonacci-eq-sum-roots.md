@@ -15,7 +15,7 @@ Theorem 9, `U` part (Binet formula): for `r ≥ 2`, if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RFibonacci](neg-rfibonacci.md)
 
 ## Sources
 

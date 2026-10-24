@@ -13,7 +13,13 @@ prefer each other to their spouses. This is the repository's Gale–Shapley
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+
+## Proof depends on
+
+- [Is Stable](../../../../../MathlibExt/part-01/matching/gale-shapley/is-stable.md)
+- [Man Prefs](man-prefs.md)
+- [Woman Prefs](woman-prefs.md)
 
 ## Sources
 

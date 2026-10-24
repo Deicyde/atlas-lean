@@ -12,7 +12,7 @@ Ramanujan's `τ` modulo `3`: `τ(n + 1) ≡ R_9(n/3)` if `3 ∣ n` and `≡ 0` o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

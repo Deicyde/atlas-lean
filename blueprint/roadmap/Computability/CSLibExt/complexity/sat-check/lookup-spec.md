@@ -13,7 +13,19 @@ steps with `V = [bit (liveVal es q)]` and every other stack unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [DLab](dlab.md)
+- [K](k.md)
+- [Prog](prog.md)
+- [Ent](../sat-verifier-spec/ent.md)
+- [Sym](../sat-verifier-spec/sym.md)
+- [Bit?](../sat-verifier-spec/bit.md)
+- [Live Val](../sat-verifier-spec/live-val.md)
+- [Tbl Stk](../sat-verifier-spec/tbl-stk.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: Cslib.Decidability.manyOneReducible_haltingSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halting Set](../../part-02/turing-reducible/halting-set.md)
+
+## Proof depends on
+
+- [Every recognizable predicate one-one reduces to the halting set](one-one-reducible-halting-set.md)
 
 ## Sources
 

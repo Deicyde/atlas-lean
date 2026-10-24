@@ -15,7 +15,7 @@ the matching of `εₚ` to `p` implicit, here `p = pᵢ` pairs with `εᵢ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Signature Carmichael](is-signature-carmichael.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ successor in `E`, `z(∑ μ H̃) = ∑ μ̄ H`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Immediate Predecessor](is-immediate-predecessor.md)
+- [Is Immediate Successor](is-immediate-successor.md)
+- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
+- [Subcollection Count](subcollection-count.md)
+- [Zeckendorf Eval](zeckendorf-eval.md)
 
 ## Sources
 

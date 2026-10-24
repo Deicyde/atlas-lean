@@ -12,7 +12,11 @@ The first values `g₀, …, g₃ = 0, 1, 2, 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gutkovskiy](gutkovskiy.md)
+
+## Proof depends on
+
+- [Gutkovskiy succ](gutkovskiy-succ.md)
 
 ## Sources
 

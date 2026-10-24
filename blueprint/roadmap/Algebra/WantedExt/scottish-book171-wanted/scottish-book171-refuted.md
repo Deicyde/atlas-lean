@@ -18,7 +18,8 @@ Scottish Book, typescript p. 76.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Associative](is-associative.md)
+- [Is Permutation Invariant](is-permutation-invariant.md)
 
 ## Sources
 

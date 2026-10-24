@@ -12,7 +12,7 @@ lean: MetaMathlibExt.cuspFormNormalizedCoeff_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
 
 ## Sources
 

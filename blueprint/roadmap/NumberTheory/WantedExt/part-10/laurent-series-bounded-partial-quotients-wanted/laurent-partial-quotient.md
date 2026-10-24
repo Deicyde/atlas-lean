@@ -13,6 +13,11 @@ The partial quotients `b_n = [α_n]` of `α = [b₀, b₁, b₂, …]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Laurent Complete Quotient](laurent-complete-quotient.md)
+- [Laurent Poly Part](laurent-poly-part.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LaurentSeriesBoundedPartialQuotientsWanted](../../../../../sources/v2/WantedExt.md)

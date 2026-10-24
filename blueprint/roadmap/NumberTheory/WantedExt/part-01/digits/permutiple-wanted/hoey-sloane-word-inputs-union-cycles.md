@@ -15,7 +15,7 @@ built from inputs of `s`). The record's trailing remarks (converse fails) are om
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hoey Sloane Word](is-hoey-sloane-word.md)
 
 ## Sources
 

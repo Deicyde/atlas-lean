@@ -14,7 +14,7 @@ ideal of the comapped subalgebra.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conductor Ideal](conductor-ideal.md)
 
 ## Proof depends on
 

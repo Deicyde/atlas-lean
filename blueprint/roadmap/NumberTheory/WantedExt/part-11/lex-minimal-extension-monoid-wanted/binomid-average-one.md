@@ -12,7 +12,7 @@ lean: MetaMathlibExt.binomidAverage_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomid Average](../../part-02/binomid-index-wanted/binomid-average.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ lean: Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.ppca_map_eq
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [The marginal of probabilistic PCA and factor analysis is Gaussian](map-eq-multivariate-gaussian.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.ProbabilisticPCA](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.seededPartialSums_succ_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seeded Partial Sums](seeded-partial-sums.md)
 
 ## Sources
 

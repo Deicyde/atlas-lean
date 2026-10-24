@@ -12,7 +12,11 @@ Appending one common symbol preserves Nerode equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Rel](nerode-rel.md)
+
+## Proof depends on
+
+- [Nerode Rel append right](nerode-rel-append-right.md)
 
 ## Sources
 

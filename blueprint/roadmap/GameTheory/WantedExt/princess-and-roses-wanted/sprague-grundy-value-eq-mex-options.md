@@ -13,7 +13,9 @@ and every value `m < n` is the value of some option. That is,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
 
 ## Sources
 

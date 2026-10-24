@@ -14,7 +14,7 @@ negative. M. Eidelheit, June 4, 1938."
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem26 Claim](scottish-book-problem26-claim.md)
 
 ## Sources
 

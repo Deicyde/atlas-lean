@@ -11,7 +11,7 @@ lean: MetaMathlibExt.ulamWordCount_sq_le_sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ulam Word Count](ulam-word-count.md)
 
 ## Sources
 

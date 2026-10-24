@@ -12,7 +12,14 @@ The bubble network has `n (n - 1) / 2` comparators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bubble](bubble.md)
+
+## Proof depends on
+
+- [Length pass](length-pass.md)
+- [Pass](pass.md)
+- [Passes](passes.md)
+- [Network](../zero-one/network.md)
 
 ## Sources
 

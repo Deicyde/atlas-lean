@@ -14,6 +14,10 @@ The answer of `diag` read from a clocked result: `true` unless the result is the
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bit Sym](../code/bit-sym.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.Universal.Diagonalization](../../../../../../../sources/v2/CSLibExt.md)

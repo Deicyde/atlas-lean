@@ -11,7 +11,23 @@ The HAMPATH emitter as an `Emitter`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Emitter](../../part-02/tok-then/emitter.md)
+
+## Proof depends on
+
+- [K](../ham-path-emit-machine/k.md)
+- [Lab](../ham-path-emit-machine/lab.md)
+- [Site](../ham-path-emit-machine/site.md)
+- [Prog](../ham-path-emit-machine/prog.md)
+- [The emitter](../ham-path-emit/run.md)
+- [Start](../ham-path-emit-machine/start.md)
+- [Γ](../ham-path-emit-machine/untitled.md)
+- [No Ham](../ham-path/no-ham.md)
+- [To Ham](../ham-path/to-ham.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Toks](../../../sat-verifier-spec/toks.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

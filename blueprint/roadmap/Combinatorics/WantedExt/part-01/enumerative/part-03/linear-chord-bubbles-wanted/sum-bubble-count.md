@@ -13,7 +13,7 @@ The hypothesis `n ≥ 2` is added: for `n = 1` the left side is `0` and the righ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bubble Count](bubble-count.md)
 
 ## Sources
 

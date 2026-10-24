@@ -12,7 +12,8 @@ lean: Cslib.Algorithms.Lean.MetricTSP.mem_completeAdjacency
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Complete Adjacency](complete-adjacency.md)
 
 ## Sources
 

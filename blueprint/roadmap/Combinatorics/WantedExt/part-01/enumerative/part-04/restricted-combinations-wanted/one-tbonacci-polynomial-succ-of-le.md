@@ -12,7 +12,7 @@ The recurrence `f^{(s+1)}_{n+1}(x) = f^{(s+1)}_n(x) + x f^{(s+1)}_{n-s}(x)` for 
 
 ## Depends on
 
-This node has no prerequisites.
+- [One TBonacci Polynomial](one-tbonacci-polynomial.md)
 
 ## Sources
 

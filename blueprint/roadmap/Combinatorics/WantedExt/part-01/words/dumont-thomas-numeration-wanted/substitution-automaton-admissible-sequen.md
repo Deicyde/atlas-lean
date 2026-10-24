@@ -12,7 +12,9 @@ automaton `𝒜_{η,x}` reading `|m_{k-1}| ⊙ ⋯ ⊙ |mᵢ|` from `x` outputs 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
+- [Is Substitution](is-substitution.md)
+- [Substitution Automaton](substitution-automaton.md)
 
 ## Sources
 

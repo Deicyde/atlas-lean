@@ -12,7 +12,7 @@ tends to zero for `ν = m = n/6` and for `ν = 5m = 5n/6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Watson Cos Sum](watson-cos-sum.md)
 
 ## Sources
 

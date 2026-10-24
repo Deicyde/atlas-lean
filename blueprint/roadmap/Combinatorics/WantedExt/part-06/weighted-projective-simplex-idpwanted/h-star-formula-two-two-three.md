@@ -13,7 +13,11 @@ The paper's example after Theorem 5: for `q = (2, 2, 3)` the formula gives
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Star Formula](h-star-formula.md)
+
+## Proof depends on
+
+- [Weight Statistic](weight-statistic.md)
 
 ## Sources
 

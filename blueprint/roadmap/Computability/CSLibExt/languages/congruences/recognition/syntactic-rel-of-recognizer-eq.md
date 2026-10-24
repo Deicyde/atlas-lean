@@ -12,7 +12,8 @@ Equal images under a recognizing morphism cannot be distinguished by a two-sided
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
+- [Syntactic Rel](../syntactic/syntactic-rel.md)
 
 ## Sources
 

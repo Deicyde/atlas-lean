@@ -13,7 +13,9 @@ seed `s = u₋₁|u₀`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
+- [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
+- [Seed Automaton](seed-automaton.md)
 
 ## Sources
 

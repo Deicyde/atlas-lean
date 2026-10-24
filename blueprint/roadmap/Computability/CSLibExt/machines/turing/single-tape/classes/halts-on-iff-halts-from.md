@@ -12,7 +12,8 @@ Halting on an input is halting from its initial configuration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts From](halts-from.md)
+- [Halts On](halts-on.md)
 
 ## Sources
 

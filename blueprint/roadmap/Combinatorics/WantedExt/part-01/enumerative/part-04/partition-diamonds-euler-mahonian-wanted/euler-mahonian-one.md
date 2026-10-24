@@ -12,7 +12,14 @@ lean: MetaMathlibExt.eulerMahonian_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Mahonian](euler-mahonian.md)
+
+## Proof depends on
+
+- [Perm Des](perm-des.md)
+- [Perm Descent Set](perm-descent-set.md)
+- [Perm Maj](perm-maj.md)
+- [Perm Value At](perm-value-at.md)
 
 ## Sources
 

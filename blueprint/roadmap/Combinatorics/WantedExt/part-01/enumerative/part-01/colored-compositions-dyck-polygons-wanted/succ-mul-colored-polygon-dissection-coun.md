@@ -13,7 +13,8 @@ sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Composition Count](colored-composition-count.md)
+- [Colored Polygon Dissection Count](colored-polygon-dissection-count.md)
 
 ## Sources
 

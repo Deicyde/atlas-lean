@@ -12,7 +12,7 @@ are positive real numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Diff Basis Number](group-diff-basis-number.md)
 
 ## Sources
 

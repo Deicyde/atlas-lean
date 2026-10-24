@@ -12,7 +12,9 @@ is the largest element of `Q` (`0` for `Q = ∅`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Combination Count](restricted-combination-count.md)
+- [Restricted Combination Total](restricted-combination-total.md)
+- [Restricted Overlap Tiling Count](restricted-overlap-tiling-count.md)
 
 ## Sources
 

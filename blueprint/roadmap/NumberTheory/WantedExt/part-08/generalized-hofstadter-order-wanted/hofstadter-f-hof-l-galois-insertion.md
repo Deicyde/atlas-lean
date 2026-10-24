@@ -12,7 +12,8 @@ For `j ≥ 0` and `k ≥ 1`, `F_k^j` and `L_k^j` form a Galois connection
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof L](hof-l.md)
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

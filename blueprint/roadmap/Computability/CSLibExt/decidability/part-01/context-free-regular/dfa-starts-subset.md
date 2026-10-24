@@ -18,7 +18,13 @@ def interEmptyB (g : EncodedCFG T) (D : EncodedDFA T) : Bool :=
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+- [States](../../../automata/da/encoded-dfa/states.md)
+- [Dfa Starts](dfa-starts.md)
+
+## Proof depends on
+
+- [Dfa Sym Fits](dfa-sym-fits.md)
 
 ## Sources
 

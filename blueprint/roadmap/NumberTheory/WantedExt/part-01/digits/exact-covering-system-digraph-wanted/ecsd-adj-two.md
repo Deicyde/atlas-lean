@@ -13,7 +13,7 @@ In a degree-2 ECSD `G(d₁n + a₁, d₂n + a₂)`, the successors of `m` are
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

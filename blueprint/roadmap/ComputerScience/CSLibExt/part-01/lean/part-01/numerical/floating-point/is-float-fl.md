@@ -12,7 +12,15 @@ lean: Cslib.Algorithms.Lean.FloatingPoint.isFloat_fl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Float](is-float.md)
+- [Round to nearest, ties to even](fl.md)
+
+## Proof depends on
+
+- [Abs rne le](abs-rne-le.md)
+- [Round to nearest](abs-rne-sub-le.md)
+- [Rne](rne.md)
+- [Ulp Exp](ulp-exp.md)
 
 ## Sources
 

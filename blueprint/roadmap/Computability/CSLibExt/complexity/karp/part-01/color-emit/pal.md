@@ -13,6 +13,10 @@ The palette triangle, as pushed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Out](out.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.ColorEmit](../../../../../../../sources/v2/CSLibExt.md)

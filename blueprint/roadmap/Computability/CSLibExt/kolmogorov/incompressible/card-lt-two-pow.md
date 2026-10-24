@@ -14,7 +14,13 @@ other than `0ᵐ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+
+## Proof depends on
+
+- [The universal description method](../basic/u.md)
+- [Exists length eq K](../basic/exists-length-eq-k.md)
+- [Pad](pad.md)
 
 ## Sources
 

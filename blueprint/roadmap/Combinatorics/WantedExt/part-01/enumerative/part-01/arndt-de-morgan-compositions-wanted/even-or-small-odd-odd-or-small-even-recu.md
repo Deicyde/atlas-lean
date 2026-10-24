@@ -14,7 +14,8 @@ negative arguments `0` (the `if` terms) and at `0` equal to `1`; at `n = 2` both
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Or Small Odd Composition Count](even-or-small-odd-composition-count.md)
+- [Odd Or Small Even Composition Count](odd-or-small-even-composition-count.md)
 
 ## Sources
 

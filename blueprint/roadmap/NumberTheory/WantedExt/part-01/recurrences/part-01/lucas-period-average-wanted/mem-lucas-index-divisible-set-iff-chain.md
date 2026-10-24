@@ -15,7 +15,10 @@ product `q₀ ⋯ q_i` of such a chain lies in `T(U)`; and if `D = 1` then `T(U)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas Index Divisible Set](lucas-index-divisible-set.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

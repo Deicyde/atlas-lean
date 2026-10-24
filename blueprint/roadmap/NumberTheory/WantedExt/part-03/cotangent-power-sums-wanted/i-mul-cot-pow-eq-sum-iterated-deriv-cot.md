@@ -17,7 +17,7 @@ Theorem 1, stated below as `sum_conj_dirichletCharacter_mul_I_mul_cot_pow_of_eve
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cotangent Power Coeff](cotangent-power-coeff.md)
 
 ## Sources
 

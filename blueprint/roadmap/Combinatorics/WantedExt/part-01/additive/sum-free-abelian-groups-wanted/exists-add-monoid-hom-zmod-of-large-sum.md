@@ -13,7 +13,8 @@ into `{k + 1, …, 2k + 1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Free Set](is-sum-free-set.md)
+- [Is Type One Group](is-type-one-group.md)
 
 ## Sources
 

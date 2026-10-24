@@ -12,7 +12,7 @@ lean: MetaMathlibExt.periodDoubling_small
 
 ## Depends on
 
-This node has no prerequisites.
+- [Period Doubling](period-doubling.md)
 
 ## Sources
 

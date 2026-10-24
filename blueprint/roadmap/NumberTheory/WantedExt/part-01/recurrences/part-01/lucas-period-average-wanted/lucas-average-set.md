@@ -11,7 +11,12 @@ The set `S'(U)` of `n ∈ S(U)` with `B_U(n) ≡ 0 (mod n)`, i.e. `A_U(n)` an in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Lucas Period Set](lucas-period-set.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

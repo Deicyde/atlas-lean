@@ -12,7 +12,9 @@ Theorem 1, first moment: for `h ≥ 2`, the mean of `ω_1` over `S_h ∩ M_n` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Function Field Mertens Constant](function-field-mertens-constant.md)
+- [H Free Moment](h-free-moment.md)
+- [H Free Omega One Sum](h-free-omega-one-sum.md)
 
 ## Sources
 

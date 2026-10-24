@@ -12,7 +12,11 @@ Every set of cells contains the empty pattern, so `ex(n, M_∅) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pattern Ex](pattern-ex.md)
+
+## Proof depends on
+
+- [Cells Contain Pattern](cells-contain-pattern.md)
 
 ## Sources
 

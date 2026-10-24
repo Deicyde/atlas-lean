@@ -13,7 +13,8 @@ the game on `n`, all states `(0, …, 0, k, 0, n - 3k)` (`k` copies of `F_3`, `n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accel Zeck Losing](accel-zeck-losing.md)
+- [Accel Zeck Winning](accel-zeck-winning.md)
 
 ## Sources
 

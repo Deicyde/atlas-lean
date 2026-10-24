@@ -14,7 +14,13 @@ outside the diagram.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Fixed Column Hook](is-fixed-column-hook.md)
+- [Partition4431](partition4431.md)
+
+## Proof depends on
+
+- [Partition Hook Length](partition-hook-length.md)
+- [Partition Row Len](partition-row-len.md)
 
 ## Sources
 

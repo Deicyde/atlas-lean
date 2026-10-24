@@ -12,7 +12,7 @@ Theorem 1, odd squarefree non-prime `n`: with `P = gpf(n)` and `d = n / P`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abs Least APLength](abs-least-aplength.md)
 
 ## Sources
 

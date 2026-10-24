@@ -12,7 +12,11 @@ lean: MetaMathlibExt.not_isSignatureCarmichael_four
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Signature Carmichael](is-signature-carmichael.md)
+
+## Proof depends on
+
+- [Is DCarmichael](is-dcarmichael.md)
 
 ## Sources
 

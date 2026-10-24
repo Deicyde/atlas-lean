@@ -12,7 +12,9 @@ guesses than any other inductive strategy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Inductive Perm Wordle Strategy](is-inductive-perm-wordle-strategy.md)
+- [Cyclic Shift Left Strategy](cyclic-shift-left-strategy.md)
+- [Perm Wordle Coeff](perm-wordle-coeff.md)
 
 ## Sources
 

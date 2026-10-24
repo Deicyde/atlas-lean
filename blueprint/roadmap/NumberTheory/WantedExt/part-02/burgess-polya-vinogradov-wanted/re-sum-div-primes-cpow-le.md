@@ -18,7 +18,7 @@ printed form fails at `α = 1`, `g ≡ 1`, `τ = 1.0001`. The paper's `α ∈ [0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meissel Mertens Constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

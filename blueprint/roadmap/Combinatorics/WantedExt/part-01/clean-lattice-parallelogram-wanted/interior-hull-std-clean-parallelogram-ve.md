@@ -13,7 +13,9 @@ if `q_0 = 1`, and `∑_{i=0}^m q_i = area(P_{a,n}) - area(P_{a,n}^{(1)})`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Points](lattice-points.md)
+- [Partial Quotient](partial-quotient.md)
+- [Std Clean Parallelogram](std-clean-parallelogram.md)
 
 ## Sources
 

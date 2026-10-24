@@ -12,7 +12,15 @@ lean: Cslib.Decidability.TM2Decidable.mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Decidable](../basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [Exists computable](exists-computable.md)
+- [Bool Lang](bool-lang.md)
+- [Mem mul iff exists append](mem-mul-iff-exists-append.md)
+- [Split Test](split-test.md)
+- [Tm2 Decidable iff computable Pred](../basic/tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

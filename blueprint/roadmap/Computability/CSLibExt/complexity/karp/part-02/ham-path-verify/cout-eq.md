@@ -12,7 +12,9 @@ An equality comparison.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CI](ci.md)
+- [Lab](lab.md)
+- [Cout](cout.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ With at least one center, a nearest-center assignment exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest](nearest.md)
 
 ## Sources
 

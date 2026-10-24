@@ -14,7 +14,8 @@ which are congruent modulo `|a - 1|` and form a 2-cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Digraph Cycle](is-digraph-cycle.md)
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

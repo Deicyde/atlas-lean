@@ -12,7 +12,12 @@ The constant sequence `1^∞ = (E_1)^∞` is atomic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Atomic Binomid Index](is-atomic-binomid-index.md)
+
+## Proof depends on
+
+- [Is Binomid Index](../../part-02/binomid-index-wanted/is-binomid-index.md)
+- [Is Binomid Index const](../../part-02/binomid-index-wanted/is-binomid-index-const.md)
 
 ## Sources
 

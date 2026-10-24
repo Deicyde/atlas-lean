@@ -14,7 +14,7 @@ Divisors near `√(an/b)`: for fixed coprime positive integers `a`, `b`, with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Short Interval Divisor Count](short-interval-divisor-count.md)
 
 ## Sources
 

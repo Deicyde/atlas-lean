@@ -12,7 +12,11 @@ Rounding does not cross an integer: `m ≤ k` gives `rne m ≤ k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rne](rne.md)
+
+## Proof depends on
+
+- [Round to nearest](abs-rne-sub-le.md)
 
 ## Sources
 

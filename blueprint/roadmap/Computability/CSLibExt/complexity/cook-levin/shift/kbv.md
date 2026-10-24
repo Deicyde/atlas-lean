@@ -11,7 +11,11 @@ lean: Cslib.Complexity.CookLevin.Shift.kbv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [Row W](../family/row-w.md)
 
 ## Sources
 

@@ -17,7 +17,8 @@ Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gobel Left Boundary](is-gobel-left-boundary.md)
+- [Is Gobel Right Boundary](is-gobel-right-boundary.md)
 
 ## Sources
 

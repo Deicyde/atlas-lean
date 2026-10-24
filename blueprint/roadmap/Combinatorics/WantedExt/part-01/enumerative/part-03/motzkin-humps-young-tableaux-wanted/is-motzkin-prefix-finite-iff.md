@@ -14,7 +14,12 @@ formulation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Motzkin Prefix](is-motzkin-prefix.md)
+- [Is Motzkin Prefix Finite](is-motzkin-prefix-finite.md)
+
+## Proof depends on
+
+- [Motzkin Step](motzkin-step.md)
 
 ## Sources
 

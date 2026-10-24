@@ -12,7 +12,7 @@ The linear coefficient of a max-min product: `(g ⊗ h)₁ = max(min(g₀, h₁)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Min Mul](max-min-mul.md)
 
 ## Sources
 

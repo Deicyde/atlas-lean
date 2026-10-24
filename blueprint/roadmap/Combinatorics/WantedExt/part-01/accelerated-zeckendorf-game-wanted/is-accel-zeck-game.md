@@ -15,6 +15,10 @@ possible from `g L`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Accel Zeck Move](accel-zeck-move.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AcceleratedZeckendorfGameWanted](../../../../../sources/v2/WantedExt.md)

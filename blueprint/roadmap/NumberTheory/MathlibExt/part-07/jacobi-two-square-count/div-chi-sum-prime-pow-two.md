@@ -12,7 +12,7 @@ On powers of 2 only the divisor 1 contributes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Div Chi Sum](div-chi-sum.md)
 
 ## Sources
 

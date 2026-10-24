@@ -12,7 +12,13 @@ The while-loop functional is monotone in the candidate loop relation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [State](../syntax/state.md)
+- [While Fun](while-fun.md)
+
+## Proof depends on
+
+- [Eval](../syntax/eval-2.md)
 
 ## Sources
 

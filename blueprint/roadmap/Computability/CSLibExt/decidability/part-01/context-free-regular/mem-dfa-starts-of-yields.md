@@ -71,7 +71,27 @@ theorem dfaFound_sound (g : EncodedCFG T) (D : EncodedDFA T) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+- [States](../../../automata/da/encoded-dfa/states.md)
+- [To DFA](../../../automata/da/encoded-dfa/to-dfa.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Dfa Found](dfa-found.md)
+- [Dfa Starts](dfa-starts.md)
+- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Yields](../../../languages/context-free/part-02/yields/yields.md)
+
+## Proof depends on
+
+- [Step](../../../automata/da/encoded-dfa/step.md)
+- [Step mem states](../../../automata/da/encoded-dfa/step-mem-states.md)
+- [Iterate closed](../primrec-list/iterate-closed.md)
+- [Mem B](../primrec-list/mem-b.md)
+- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Dfa Items](dfa-items.md)
+- [The emptiness test](dfa-starts-subset.md)
+- [Dfa Step](dfa-step.md)
+- [Dfa Sym Fits](dfa-sym-fits.md)
 
 ## Sources
 

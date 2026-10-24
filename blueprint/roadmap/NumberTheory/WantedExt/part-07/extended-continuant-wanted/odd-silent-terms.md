@@ -15,7 +15,7 @@ all `i ≥ 0`, then `x_n = y_n` for `n ≥ 0`, `x_{-σ+2} x_{-σ+1}` equals
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

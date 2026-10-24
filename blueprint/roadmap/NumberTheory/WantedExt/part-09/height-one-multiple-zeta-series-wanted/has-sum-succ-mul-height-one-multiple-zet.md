@@ -14,7 +14,8 @@ The hyperharmonic zeta function `σ(r, s) = ∑_{m ≥ 1} H_m^{[r]} m^{-s}` has 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hyperharmonic](../hyperharmonic-euler-sums-wanted/generalized-hyperharmonic.md)
+- [Height One Multiple Zeta](height-one-multiple-zeta.md)
 
 ## Sources
 

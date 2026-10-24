@@ -11,7 +11,7 @@ Non-overlapping start times meeting all release times and deadlines.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Release Deadlines Scheduling Instance](release-deadlines-scheduling-instance.md)
 
 ## Sources
 

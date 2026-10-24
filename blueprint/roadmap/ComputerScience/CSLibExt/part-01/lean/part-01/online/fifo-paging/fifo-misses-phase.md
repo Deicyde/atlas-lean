@@ -15,7 +15,9 @@ missed at most once, and a phase has at most `k` distinct pages.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fifo Step](fifo-step.md)
+- [Policy Misses](policy-misses.md)
+- [Phase Split](../paging/phase-split.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ lean: Cslib.Complexity.CookLevin.Situation.fam_force_kj
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../../family/layout.md)
+- [C Idx](../../family/c-idx.md)
+- [X Idx](../../family/x-idx.md)
+- [Family](../../family/family.md)
+- [Tr](../part-04/tr.md)
+- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+
+## Proof depends on
+
+- [L1 (D3Fam clause forcing)](fam-force.md)
 
 ## Sources
 

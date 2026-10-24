@@ -14,6 +14,10 @@ counted as one-cycles) and exactly `j` fixed points.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.FixedPointsKPermutationsWanted](../../../../../../../sources/v2/WantedExt.md)

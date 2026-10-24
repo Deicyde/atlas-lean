@@ -11,7 +11,12 @@ The intermediate automaton: the reachable subsets of the determinized reversal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mid State](mid-state.md)
+
+## Proof depends on
+
+- [Accessible Part Within](../../../decidability/part-02/regular/accessible-part-within.md)
+- [Rev Det](rev-det.md)
 
 ## Sources
 

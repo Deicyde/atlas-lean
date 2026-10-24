@@ -12,7 +12,12 @@ lean: MetaMathlibExt.isMultiplicative_multiplicativeOfPrimePowers
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiplicative Of Prime Powers](multiplicative-of-prime-powers.md)
+
+## Proof depends on
+
+- [Multiplicative Of Prime Powers apply](multiplicative-of-prime-powers-apply.md)
+- [Multiplicative Of Prime Powers one](multiplicative-of-prime-powers-one.md)
 
 ## Sources
 

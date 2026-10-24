@@ -13,7 +13,7 @@ clearing denominators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
 
 ## Sources
 

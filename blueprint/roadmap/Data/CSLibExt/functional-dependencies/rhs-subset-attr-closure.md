@@ -12,7 +12,13 @@ The closure is closed under the dependencies of `F`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+- [Attr Closure](attr-closure.md)
+
+## Proof depends on
+
+- [Closure Step](closure-step.md)
+- [Closure Step attr Closure](closure-step-attr-closure.md)
 
 ## Sources
 

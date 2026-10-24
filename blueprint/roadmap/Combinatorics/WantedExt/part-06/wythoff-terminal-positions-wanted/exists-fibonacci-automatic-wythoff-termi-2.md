@@ -15,7 +15,9 @@ for a Fibonacci-automatic `g₄ : ℕ → {0, 1, 2}`. The paper's `g₄` is the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Fibonacci Automatic](is-fibonacci-automatic.md)
+- [Wythoff Mex A](wythoff-mex-a.md)
+- [Wythoff Mex B](wythoff-mex-b.md)
 
 ## Sources
 

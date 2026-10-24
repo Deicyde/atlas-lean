@@ -14,6 +14,10 @@ The left end of the Lucas interval `Λ_m`, where `Λ_{2n} = [L_{2n}, L_{2n+1}]` 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.BasePhiStructureWanted](../../../../../../sources/v2/WantedExt.md)

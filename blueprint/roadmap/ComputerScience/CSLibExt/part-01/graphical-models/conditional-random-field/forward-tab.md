@@ -11,7 +11,11 @@ The forward variables, tabulated step by step: `O(n²)` operations per step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+
+## Proof depends on
+
+- [Forward Step](forward-step.md)
 
 ## Sources
 

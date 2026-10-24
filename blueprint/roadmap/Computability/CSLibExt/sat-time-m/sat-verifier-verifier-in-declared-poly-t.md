@@ -13,7 +13,12 @@ The SAT verifier's declared time is polynomially bounded, with bound
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sat Verifier](sat-verifier.md)
+- [Verifier In Declared Poly Time](../time-mcomplexity/verifier-in-declared-poly-time.md)
+
+## Proof depends on
+
+- [Sat Verifier time le](sat-verifier-time-le.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ the items `R` found so far.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+
+## Proof depends on
+
+- [Step](../../../automata/da/encoded-dfa/step.md)
+- [Mem B](../primrec-list/mem-b.md)
 
 ## Sources
 

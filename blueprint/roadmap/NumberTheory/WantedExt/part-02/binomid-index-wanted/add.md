@@ -12,7 +12,7 @@ lex-minimal extension (so `L` is a monoid under componentwise addition).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
 
 ## Sources
 

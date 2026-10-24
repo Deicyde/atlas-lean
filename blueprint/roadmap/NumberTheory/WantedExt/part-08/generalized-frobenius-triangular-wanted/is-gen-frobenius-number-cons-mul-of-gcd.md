@@ -14,7 +14,7 @@ Beck and Kifer's reduction: for `A = (a₁, ℓa'₂, …, ℓa'_K)` of `K ≥ 2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Frobenius Number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
 
 ## Sources
 

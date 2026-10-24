@@ -13,7 +13,8 @@ Prime bases and maximal cycles: for odd `B > 3` with a terminal cycle of length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
+- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
 
 ## Sources
 

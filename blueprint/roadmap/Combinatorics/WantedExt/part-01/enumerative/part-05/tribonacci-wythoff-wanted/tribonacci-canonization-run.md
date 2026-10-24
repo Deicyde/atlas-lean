@@ -14,6 +14,10 @@ three consecutive ones); `none` if a step is undefined.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tribonacci Canonization Step](tribonacci-canonization-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.TribonacciWythoffWanted](../../../../../../../sources/v2/WantedExt.md)

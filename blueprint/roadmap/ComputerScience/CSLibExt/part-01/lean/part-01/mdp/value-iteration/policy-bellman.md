@@ -11,7 +11,11 @@ The Bellman operator of the deterministic stationary policy `π`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+
+## Proof depends on
+
+- [Q Value](q-value.md)
 
 ## Sources
 

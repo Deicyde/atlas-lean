@@ -12,7 +12,8 @@ Degree bound for the Rowland–Zeilberger states: iterating `Q ↦ Λ_p(P^k Q)` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Cartier](laurent-cartier.md)
+- [Laurent Deg](laurent-deg.md)
 
 ## Sources
 

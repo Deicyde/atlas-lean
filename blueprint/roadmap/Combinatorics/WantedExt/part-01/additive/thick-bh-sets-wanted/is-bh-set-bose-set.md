@@ -13,7 +13,8 @@ lean: MetaMathlibExt.isBhSet_boseSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bh Set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
+- [Bose Set](bose-set.md)
 
 ## Sources
 

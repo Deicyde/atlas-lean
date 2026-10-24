@@ -12,7 +12,7 @@ lean: MetaMathlibExt.tribonacciCanonizationRun_example
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Canonization Run](tribonacci-canonization-run.md)
 
 ## Sources
 

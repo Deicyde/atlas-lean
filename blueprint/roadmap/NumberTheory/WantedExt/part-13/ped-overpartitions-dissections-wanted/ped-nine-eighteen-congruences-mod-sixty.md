@@ -17,7 +17,8 @@ All divisions are exact.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ped Nine Eighteen](ped-nine-eighteen.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

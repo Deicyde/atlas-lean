@@ -11,7 +11,12 @@ The output on bit string `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Emitter](emitter.md)
+
+## Proof depends on
+
+- [Decode CNF](../../../../cook-levin/decode-cnf.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

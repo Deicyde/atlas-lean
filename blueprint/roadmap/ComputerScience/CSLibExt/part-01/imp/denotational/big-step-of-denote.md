@@ -12,7 +12,19 @@ Every denotational execution is a big-step execution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Big Step](../big-step/big-step.md)
+- [Cmd](../syntax/cmd.md)
+- [Denote](denote.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [While ind](while-ind.md)
+- [While Fun](while-fun.md)
 
 ## Sources
 

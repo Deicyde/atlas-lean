@@ -13,7 +13,7 @@ The palindromic Arndt compositions of `5` are `(5)` and `(2,1,2)` (the `x⁵` co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Palindromic Arndt Count](palindromic-arndt-count.md)
 
 ## Sources
 

@@ -12,7 +12,20 @@ Completeness for validity, by relative completeness of the Hoare logic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [ACmd](acmd.md)
+- [Pre](pre.md)
+- [Strip](strip.md)
+- [Vc](vc.md)
+- [Assertion](../hoare/assertion.md)
+- [Entails](../hoare/entails.md)
+- [Cmd](../syntax/cmd.md)
+- [Valid](../hoare/valid.md)
+
+## Proof depends on
+
+- [Vc complete](vc-complete.md)
+- [Derivable](../hoare-completeness/derivable.md)
+- [Derivable iff valid](../hoare-completeness/derivable-iff-valid.md)
 
 ## Sources
 

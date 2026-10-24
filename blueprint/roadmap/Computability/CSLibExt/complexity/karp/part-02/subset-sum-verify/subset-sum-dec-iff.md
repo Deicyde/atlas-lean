@@ -12,7 +12,17 @@ lean: Cslib.Complexity.Karp.SSVerify.subsetSumDec_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ss Check](ss-check.md)
+- [Subset Sum Dec](../subset-sum/subset-sum-dec.md)
+
+## Proof depends on
+
+- [Decode SS](decode-ss.md)
+- [`decodeSS` inverts `encodeSS`](decode-ss-eq-some.md)
+- [Exists pick](exists-pick.md)
+- [Pick](pick.md)
+- [Encode SS](../subset-sum/encode-ss.md)
+- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

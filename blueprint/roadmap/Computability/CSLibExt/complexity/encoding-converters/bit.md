@@ -11,7 +11,11 @@ The bit carried by the state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [St](st.md)
+
+## Proof depends on
+
+- [G](../dense-satverifier/g.md)
 
 ## Sources
 

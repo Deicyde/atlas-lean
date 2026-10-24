@@ -13,7 +13,13 @@ the value `g m` at every prime power `p ^ m` with `m ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiplicative Of Prime Powers](multiplicative-of-prime-powers.md)
+
+## Proof depends on
+
+- [Is Multiplicative multiplicative Of Prime Powers](is-multiplicative-multiplicative-of-prim.md)
+- [Multiplicative Of Prime Powers one](multiplicative-of-prime-powers-one.md)
+- [Multiplicative Of Prime Powers prime pow](multiplicative-of-prime-powers-prime-pow.md)
 
 ## Sources
 

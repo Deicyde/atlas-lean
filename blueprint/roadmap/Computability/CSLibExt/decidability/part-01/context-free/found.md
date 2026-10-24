@@ -11,7 +11,12 @@ The items found: the closure of `memStep`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Items](items.md)
+- [Mem Step](mem-step.md)
 
 ## Sources
 

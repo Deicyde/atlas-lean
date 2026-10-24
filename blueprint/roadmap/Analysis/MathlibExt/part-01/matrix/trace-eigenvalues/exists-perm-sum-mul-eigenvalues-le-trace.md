@@ -16,6 +16,12 @@ for some permutation `σ` (von Neumann's trace inequality, lower form).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists perm sum le of mem doubly Stochastic](exists-perm-sum-le-of-mem-doubly-stochas.md)
+- [Overlap mem doubly Stochastic](overlap-mem-doubly-stochastic.md)
+- [Trace mul eq sum eigenvalues](trace-mul-eq-sum-eigenvalues.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Matrix.TraceEigenvalues](../../../../../../sources/v2/MathlibExt.md)

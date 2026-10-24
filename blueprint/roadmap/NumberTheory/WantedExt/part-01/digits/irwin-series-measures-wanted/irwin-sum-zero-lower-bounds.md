@@ -14,7 +14,7 @@ Jean-François Burnol, *Measures for the Summation of Irwin Series*, INTEGERS 26
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irwin Sum](irwin-sum.md)
 
 ## Sources
 

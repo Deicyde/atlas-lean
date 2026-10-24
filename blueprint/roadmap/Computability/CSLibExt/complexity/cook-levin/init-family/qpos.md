@@ -12,7 +12,12 @@ Every row-0 cell base (as a flat index `q < KK·H`) is in range with room for `g
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [Num Vars](../family/num-vars.md)
+
+## Proof depends on
+
+- [Row W](../family/row-w.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ leanprover/cslib#1039.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Acceptance as a label list](accepts-iff-exists-labels.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.Nondeterministic](../../../../../../../sources/v2/CSLibExt.md)

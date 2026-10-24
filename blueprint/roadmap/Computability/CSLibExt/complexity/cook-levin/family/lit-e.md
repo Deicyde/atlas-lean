@@ -11,7 +11,12 @@ Time bound: per-literal cost apart from the gap loop.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [Num Vars](num-vars.md)
+- [Row W](row-w.md)
 
 ## Sources
 

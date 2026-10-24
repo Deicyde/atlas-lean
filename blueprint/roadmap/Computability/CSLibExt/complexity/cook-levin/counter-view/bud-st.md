@@ -12,7 +12,10 @@ Transport a budgeted run along an equality of counter functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](sk.md)
+- [SΓ](s.md)
+- [St](st.md)
+- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ An empty property has no classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Fun Class Count](bool-fun-class-count.md)
 
 ## Sources
 

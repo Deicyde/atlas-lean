@@ -12,7 +12,12 @@ The Leibniz rule `D(mn) = D(m) n + m D(n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Derivative](arithmetic-derivative.md)
+
+## Proof depends on
+
+- [Arithmetic Derivative eq sum of subset](arithmetic-derivative-eq-sum-of-subset.md)
+- [Arithmetic Derivative zero](arithmetic-derivative-zero.md)
 
 ## Sources
 

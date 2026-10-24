@@ -15,7 +15,10 @@ Theorem 1 it is an integer for every QPP.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
+- [Consecutive Step Difference](consecutive-step-difference.md)
+- [Sector Lattice Points](sector-lattice-points.md)
+- [Staircase First Height](staircase-first-height.md)
 
 ## Sources
 

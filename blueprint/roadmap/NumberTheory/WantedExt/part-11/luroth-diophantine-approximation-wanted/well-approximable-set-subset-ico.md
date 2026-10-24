@@ -12,7 +12,7 @@ Every point of `wellApproximableSet ψ` lies in `[0, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Well Approximable Set](well-approximable-set.md)
 
 ## Sources
 

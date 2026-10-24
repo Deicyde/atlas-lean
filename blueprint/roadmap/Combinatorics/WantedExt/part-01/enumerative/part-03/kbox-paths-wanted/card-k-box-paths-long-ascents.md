@@ -13,7 +13,9 @@ The number of `k`-box paths of size `n` with exactly `j ≥ 1` long ascents is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [K Box Paths](k-box-paths.md)
+- [Skew Long Ascents](skew-long-ascents.md)
 
 ## Sources
 

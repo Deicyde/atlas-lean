@@ -14,7 +14,8 @@ functions `θ^n` of order `n - 1` for `n ≥ 2`, there is a unique Zeckendorf co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Immediate Predecessor](is-immediate-predecessor.md)
+- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
 
 ## Sources
 

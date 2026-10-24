@@ -14,7 +14,8 @@ Mansour and Shattuck's Theorem 9, degree formula (41): for `n = 8m + p ≥ 1` wi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+- [Restricted Smooth Words](restricted-smooth-words.md)
 
 ## Sources
 

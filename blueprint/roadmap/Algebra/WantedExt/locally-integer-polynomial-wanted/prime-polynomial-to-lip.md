@@ -12,7 +12,8 @@ irreducible integer polynomial of content `1`) stays prime in `LIP(U)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
+- [Polynomial To LIP](polynomial-to-lip.md)
 
 ## Sources
 

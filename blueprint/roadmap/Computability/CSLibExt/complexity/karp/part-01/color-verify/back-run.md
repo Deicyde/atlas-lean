@@ -12,7 +12,20 @@ Putting the passed colors back: `back` moves `T` onto `P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Flat](flat.md)
+- [Prog](prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Flat append](flat-append.md)
+- [Length flat](length-flat.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

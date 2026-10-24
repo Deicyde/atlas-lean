@@ -11,7 +11,19 @@ lean: Cslib.Turing.Universal.Diag.Check.polyTime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Answer](answer.md)
+
+## Proof depends on
+
+- [Comp](../../../../complexity/host/comp.md)
+- [Reduction host](../../../../complexity/host/reduction.md)
+- [K](k.md)
+- [Lab](lab.md)
+- [Comp](comp.md)
+- [Prog](prog.md)
+- [The checking run](run.md)
+- [Γ](untitled.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

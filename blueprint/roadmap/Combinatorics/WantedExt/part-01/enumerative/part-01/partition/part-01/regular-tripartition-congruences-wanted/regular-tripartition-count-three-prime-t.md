@@ -12,7 +12,7 @@ For a prime `p ≡ 3 (mod 4)`, `α, n ≥ 0` and `1 ≤ i ≤ p - 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Tripartition Count](regular-tripartition-count.md)
 
 ## Sources
 

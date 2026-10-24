@@ -12,7 +12,7 @@ The Pascal recursion (3): `[n+1, k+1] = p^{n-k} [n, k] + q^{k+1} [n, k+1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pq Binomial](pq-binomial.md)
 
 ## Sources
 

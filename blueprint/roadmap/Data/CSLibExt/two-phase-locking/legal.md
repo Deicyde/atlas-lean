@@ -12,7 +12,11 @@ change, so the points `p ≤ s.length` are all the points.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+
+## Proof depends on
+
+- [Legal At](legal-at.md)
 
 ## Sources
 

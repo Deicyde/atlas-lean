@@ -14,7 +14,9 @@ squarefree predicate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Set](square-set.md)
+- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
+- [Weighted Consecutive Defining Set](weighted-consecutive-defining-set.md)
 
 ## Sources
 

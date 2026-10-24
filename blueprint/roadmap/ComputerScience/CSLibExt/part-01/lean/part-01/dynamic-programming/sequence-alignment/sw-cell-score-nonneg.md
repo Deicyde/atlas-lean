@@ -12,7 +12,11 @@ The Smith–Waterman score is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sw Cell Score](sw-cell-score.md)
+
+## Proof depends on
+
+- [Sw Cell Front](sw-cell-front.md)
 
 ## Sources
 

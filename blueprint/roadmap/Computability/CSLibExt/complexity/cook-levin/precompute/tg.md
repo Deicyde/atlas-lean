@@ -11,7 +11,8 @@ Unit targets of a multi-target transfer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
 
 ## Sources
 

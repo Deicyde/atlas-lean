@@ -11,7 +11,12 @@ Constant offset of literal `l` of clause `c` in block `(i, k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [CL](cl.md)
+
+## Proof depends on
+
+- [Cs](cs.md)
 
 ## Sources
 

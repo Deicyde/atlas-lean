@@ -12,7 +12,15 @@ The hump table value `H_{4,1} = 8` for the supplied distinguished-hump encoding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Hump Count](motzkin-hump-count.md)
+
+## Proof depends on
+
+- [Is Motzkin Hump](is-motzkin-hump.md)
+- [Is Motzkin Prefix](is-motzkin-prefix.md)
+- [Is Motzkin Prefix Finite](is-motzkin-prefix-finite.md)
+- [Is Motzkin Prefix Finite iff](is-motzkin-prefix-finite-iff.md)
+- [Motzkin Step](motzkin-step.md)
 
 ## Sources
 

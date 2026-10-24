@@ -13,7 +13,7 @@ On all of `Fin n` (enumerated in its natural order), `permuteAlong` is precompos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Permute Along](permute-along.md)
 
 ## Sources
 

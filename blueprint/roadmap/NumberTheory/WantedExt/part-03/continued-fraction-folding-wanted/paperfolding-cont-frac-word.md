@@ -16,6 +16,10 @@ letter of `Aₖ`, which is always a letter `[1, 1]` or `[2]`, never a crease.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cloitre Mirror](../../../../Combinatorics/MathlibExt/part-01/infinite-word/cloitre-sequence/cloitre-mirror.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ContinuedFractionFoldingWanted](../../../../../sources/v2/WantedExt.md)

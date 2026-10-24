@@ -12,7 +12,11 @@ The whole semigroup is piecewise syndetic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Add Piecewise Syndetic](is-add-piecewise-syndetic.md)
+
+## Proof depends on
+
+- [Is Add Thick](is-add-thick.md)
 
 ## Sources
 

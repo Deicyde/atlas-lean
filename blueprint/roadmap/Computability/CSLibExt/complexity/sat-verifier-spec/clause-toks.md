@@ -11,7 +11,12 @@ Tokens of a clause: its literals' tokens, then `cl`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](sym.md)
+- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Lit Toks](lit-toks.md)
 
 ## Sources
 

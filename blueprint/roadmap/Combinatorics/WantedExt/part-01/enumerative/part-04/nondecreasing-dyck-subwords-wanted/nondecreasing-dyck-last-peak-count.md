@@ -14,6 +14,11 @@ last peak has height `k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dyck Last Peak Height](dyck-last-peak-height.md)
+- [Nondecreasing Dyck Words](nondecreasing-dyck-words.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NondecreasingDyckSubwordsWanted](../../../../../../../sources/v2/WantedExt.md)

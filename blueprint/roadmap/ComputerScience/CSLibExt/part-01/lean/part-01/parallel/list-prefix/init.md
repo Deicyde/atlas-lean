@@ -11,7 +11,7 @@ The initial state: pointers are the successors, sums the nodes' own values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

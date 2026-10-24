@@ -14,7 +14,7 @@ for `1 ≤ i ≤ m - 1`, every lattice point `(β, α)` with `0 < β < a`, `0 < 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Vec](convergent-vec.md)
 
 ## Sources
 

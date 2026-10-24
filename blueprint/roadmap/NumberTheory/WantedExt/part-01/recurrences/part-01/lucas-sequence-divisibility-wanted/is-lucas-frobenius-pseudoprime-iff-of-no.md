@@ -13,7 +13,11 @@ strong Lucas pseudoprime, and `2^k ∥ ρ(N)`. If `Q = -1`, `N` is a Frobenius p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Frobenius Pseudoprime](is-lucas-frobenius-pseudoprime.md)
+- [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
+- [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas Rank Of Appearance](lucas-rank-of-appearance.md)
 
 ## Sources
 

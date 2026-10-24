@@ -12,7 +12,11 @@ lean: SumSquares.divChiNeg2Sum_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Div Chi Neg2 Sum](div-chi-neg2-sum.md)
+
+## Proof depends on
+
+- [Chi Neg2 one](chi-neg2-one.md)
 
 ## Sources
 

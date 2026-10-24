@@ -12,7 +12,13 @@ lean: MetaMathlibExt.euclidPPosition_eq_true_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
+- [Euclid Game](euclid-game.md)
+- [Euclid PPosition](euclid-pposition.md)
+
+## Proof depends on
+
+- [Euclid PPosition Aux eq true iff](euclid-pposition-aux-eq-true-iff.md)
 
 ## Sources
 

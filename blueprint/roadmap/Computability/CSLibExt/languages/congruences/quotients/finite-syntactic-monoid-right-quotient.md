@@ -12,7 +12,18 @@ Finite syntactic monoids are closed under right quotients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Right Quotient](right-quotient.md)
+
+## Proof depends on
+
+- [Right Quotient](right-quotient-2.md)
+- [Finite syntactic Monoid of recognizer](../recognition/finite-syntactic-monoid-of-recognizer.md)
+- [Recognizes syntactic Morphism](../recognition/recognizes-syntactic-morphism.md)
+- [Right Quotient Accept](right-quotient-accept.md)
+- [Syntactic Accept](../syntactic/syntactic-accept.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

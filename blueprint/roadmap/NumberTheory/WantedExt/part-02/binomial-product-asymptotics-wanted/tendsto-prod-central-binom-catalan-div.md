@@ -15,7 +15,7 @@ The decimal approximations are not part of this statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

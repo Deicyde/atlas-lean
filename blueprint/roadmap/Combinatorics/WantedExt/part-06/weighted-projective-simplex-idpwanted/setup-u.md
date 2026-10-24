@@ -14,6 +14,11 @@ natural division.  Its use is restricted to positive valid setup data.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Setup Ell](setup-ell.md)
+- [Setup S](setup-s.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

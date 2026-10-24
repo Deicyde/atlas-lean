@@ -12,7 +12,7 @@ Corollary 2: for all `n ∈ ℤ`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

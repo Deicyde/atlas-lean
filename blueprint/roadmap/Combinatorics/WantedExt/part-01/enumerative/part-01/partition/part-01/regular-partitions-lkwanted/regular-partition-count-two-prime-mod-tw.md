@@ -12,7 +12,7 @@ For a prime `p ≥ 5` and `r` with `24r + 1` a quadratic nonresidue modulo `p`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Partition Count](regular-partition-count.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The next term `B(m + 1) = B(m+1 - B(m)) + B(m+1 - B(m-1)) + B(m+1 - B(m-2))` aft
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Three Term Hofstadter Lookup](three-term-hofstadter-lookup.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.ThreeTermHofstadterWanted](../../../../../../../sources/v2/WantedExt.md)

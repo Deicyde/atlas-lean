@@ -14,6 +14,10 @@ marker was passed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adj L](adj-l.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.CliqueEmit](../../../../../../../sources/v2/CSLibExt.md)

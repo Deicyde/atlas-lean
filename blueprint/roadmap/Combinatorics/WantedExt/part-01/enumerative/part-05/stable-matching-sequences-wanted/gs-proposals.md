@@ -13,7 +13,11 @@ provisionally engaged proposes to his next choice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+
+## Proof depends on
+
+- [GSEngaged](gsengaged.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ the primary text (the extracted record's display is garbled).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

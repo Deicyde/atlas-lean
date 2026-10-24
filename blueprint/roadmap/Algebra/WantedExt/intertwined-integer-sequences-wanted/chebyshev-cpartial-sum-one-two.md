@@ -12,7 +12,12 @@ Characteristic values `F_1(X) = X + 1` and `F_2(X) = X² + X - 1` (Table 4).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
+
+## Proof depends on
+
+- [Chebyshev CPartial Sum succ](chebyshev-cpartial-sum-succ.md)
+- [Chebyshev CPartial Sum zero](chebyshev-cpartial-sum-zero.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Corollary 2: `S^[m+1](n) = S^[m](n) V(n)`, hence
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling Second Shift Matrix](stirling-second-shift-matrix.md)
+- [Stirling VMatrix](stirling-vmatrix.md)
 
 ## Sources
 

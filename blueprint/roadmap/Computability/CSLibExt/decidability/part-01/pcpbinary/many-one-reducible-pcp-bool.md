@@ -12,7 +12,15 @@ lean: Cslib.Decidability.Post.manyOneReducible_pcp_bool
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [PCP](../pcp/pcp.md)
+
+## Proof depends on
+
+- [Map Instance](map-instance.md)
+- [An injective word homomorphism preserves and reflects PCP solutions](pcp-map-iff.md)
+- [Unary Code](unary-code.md)
+- [The unary code of an injective indexing is uniquely decodable](unary-hom-injective.md)
 
 ## Sources
 

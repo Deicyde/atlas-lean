@@ -15,6 +15,11 @@ this is the paper's `m̄_ℓ` with the same one-place index shift as
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus Three Fixed Point](josephus-three-fixed-point.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.JosephusBaseThreeHalvesWanted](../../../../../sources/v2/WantedExt.md)

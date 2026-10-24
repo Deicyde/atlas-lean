@@ -12,7 +12,13 @@ The size of `union h₁ h₂` is the sum of the sizes of `h₁` and `h₂`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Size](size.md)
+- [Union](union.md)
+
+## Proof depends on
+
+- [Size join](size-join.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ row sum. Stated for every `q` and `n` (the identity does not use the row structu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ghpt Row](ghpt-row.md)
 
 ## Sources
 

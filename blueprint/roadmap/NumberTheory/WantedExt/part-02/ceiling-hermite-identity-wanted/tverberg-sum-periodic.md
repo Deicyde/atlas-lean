@@ -13,7 +13,7 @@ standing hypothesis `ℓ ≥ 2` is needed: at `ℓ = 1`, `f_1({a}, m, k) = ⌊(k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tverberg Sum](tverberg-sum.md)
 
 ## Sources
 

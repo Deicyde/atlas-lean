@@ -12,7 +12,7 @@ added: `opx(n, ∅) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

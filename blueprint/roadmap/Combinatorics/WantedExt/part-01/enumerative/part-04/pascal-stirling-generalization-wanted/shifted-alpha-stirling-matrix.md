@@ -13,6 +13,10 @@ The `n × n` shifted matrix `𝖲_α(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Shifted Alpha Stirling Entry](shifted-alpha-stirling-entry.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PascalStirlingGeneralizationWanted](../../../../../../../sources/v2/WantedExt.md)

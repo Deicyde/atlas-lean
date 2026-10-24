@@ -11,7 +11,7 @@ Each `W_i` starts and ends with digit `3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Wythoff Unsum Palindrome](upper-wythoff-unsum-palindrome.md)
 
 ## Sources
 

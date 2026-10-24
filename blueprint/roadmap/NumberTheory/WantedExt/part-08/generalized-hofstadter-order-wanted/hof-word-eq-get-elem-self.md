@@ -12,7 +12,13 @@ lean: MetaMathlibExt.hofWord_eq_getElem_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Tau List](hof-tau-list.md)
+- [Hof Word](hof-word.md)
+- [Succ le length hof Tau List iterate](succ-le-length-hof-tau-list-iterate.md)
+
+## Proof depends on
+
+- [Hof Word eq get Elem](hof-word-eq-get-elem.md)
 
 ## Sources
 

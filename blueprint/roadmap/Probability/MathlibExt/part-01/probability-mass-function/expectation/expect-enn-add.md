@@ -13,7 +13,7 @@ hypotheses: `ℝ≥0∞`-valued `tsum`s are always summable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect ENN](expect-enn.md)
 
 ## Sources
 

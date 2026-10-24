@@ -12,7 +12,13 @@ Every point of `lurothWellApproximableSet ψ` lies in `(0, 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
+
+## Proof depends on
+
+- [Luroth Convergent](luroth-convergent.md)
+- [Luroth Denominator](luroth-denominator.md)
+- [Luroth Digit Seq](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
 
 ## Sources
 

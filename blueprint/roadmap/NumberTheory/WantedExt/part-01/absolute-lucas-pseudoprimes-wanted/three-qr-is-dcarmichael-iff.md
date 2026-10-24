@@ -13,7 +13,7 @@ signature: any two such `D`, `D'` give the same signs at `3`, `q` and `r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DCarmichael](is-dcarmichael.md)
 
 ## Sources
 

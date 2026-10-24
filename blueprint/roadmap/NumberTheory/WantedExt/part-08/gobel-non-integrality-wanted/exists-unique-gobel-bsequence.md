@@ -16,7 +16,7 @@ Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gobel BSequence](is-gobel-bsequence.md)
 
 ## Sources
 

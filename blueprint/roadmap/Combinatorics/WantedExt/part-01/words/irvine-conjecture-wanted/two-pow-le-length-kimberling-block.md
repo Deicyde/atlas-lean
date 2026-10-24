@@ -12,7 +12,12 @@ lean: MetaMathlibExt.two_pow_le_length_kimberlingBlock
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling Block](kimberling-block.md)
+
+## Proof depends on
+
+- [Kimberling Morphism](kimberling-morphism.md)
+- [Morph Extend](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend.md)
 
 ## Sources
 

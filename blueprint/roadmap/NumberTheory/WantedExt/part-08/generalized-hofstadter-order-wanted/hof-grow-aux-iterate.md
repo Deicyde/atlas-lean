@@ -13,7 +13,8 @@ or used all `f` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Grow Aux](hof-grow-aux.md)
+- [Hof Tau List](hof-tau-list.md)
 
 ## Sources
 

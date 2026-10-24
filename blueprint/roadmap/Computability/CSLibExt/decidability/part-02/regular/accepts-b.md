@@ -11,7 +11,12 @@ Acceptance test: run the encoded DFA and check the final state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+
+## Proof depends on
+
+- [To DFA](../../../automata/da/encoded-dfa/to-dfa.md)
+- [Mem B](../../part-01/primrec-list/mem-b.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The set `ℛ*ₙ` of smooth words of length `n` with no two adjacent `1`s.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Smooth Words](smooth-words.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CatalanWordsCapacityWanted](../../../../../../../sources/v2/WantedExt.md)

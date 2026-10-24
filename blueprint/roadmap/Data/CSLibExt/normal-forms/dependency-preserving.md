@@ -12,7 +12,12 @@ from the union of the projections of `F⁺` onto the schemes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](../functional-dependencies/fd.md)
+
+## Proof depends on
+
+- [Derives](../functional-dependencies/derives.md)
+- [Project FDs](project-fds.md)
 
 ## Sources
 

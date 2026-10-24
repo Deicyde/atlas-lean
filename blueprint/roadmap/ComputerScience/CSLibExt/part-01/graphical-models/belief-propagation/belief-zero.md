@@ -12,7 +12,16 @@ At the root, the belief is variable elimination's root message.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
+- [Belief](belief.md)
+- [Root Message](../variable-elimination/root-message.md)
+
+## Proof depends on
+
+- [Down Message](down-message.md)
+- [Drop Last](drop-last.md)
+- [Eliminate](../variable-elimination/eliminate.md)
+- [Last Parent](../variable-elimination/last-parent.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ local minimum at the points of `eval_Q̃(E*_∘)`, and a local maximum at the po
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [L Star Closure](l-star-closure.md)
+- [L Star Collection](l-star-collection.md)
+- [Zeckendorf Delta Star](zeckendorf-delta-star.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
 
 ## Sources
 

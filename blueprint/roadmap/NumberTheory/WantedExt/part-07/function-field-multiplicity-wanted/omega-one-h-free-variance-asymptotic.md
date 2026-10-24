@@ -13,7 +13,10 @@ Theorem 1, variance: for `h ≥ 2` and every `ε > 0`, the variance of `ω_1` ov
 
 ## Depends on
 
-This node has no prerequisites.
+- [Function Field Mertens Constant](function-field-mertens-constant.md)
+- [H Free Moment](h-free-moment.md)
+- [H Free Omega One Sq Sum](h-free-omega-one-sq-sum.md)
+- [H Free Omega One Sum](h-free-omega-one-sum.md)
 
 ## Sources
 

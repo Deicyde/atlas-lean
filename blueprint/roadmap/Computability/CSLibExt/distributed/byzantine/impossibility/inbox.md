@@ -12,7 +12,11 @@ the sender.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
+
+## Proof depends on
+
+- [State](state.md)
 
 ## Sources
 

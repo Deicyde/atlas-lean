@@ -14,7 +14,8 @@ grouped by length `l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
+- [Triangular Log Coeff](triangular-log-coeff.md)
 
 ## Sources
 

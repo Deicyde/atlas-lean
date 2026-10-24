@@ -14,7 +14,7 @@ limit with the strict bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

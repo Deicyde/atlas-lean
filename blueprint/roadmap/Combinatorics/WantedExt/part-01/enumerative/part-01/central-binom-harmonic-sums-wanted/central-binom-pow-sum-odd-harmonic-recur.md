@@ -13,7 +13,8 @@ Theorem 1: `S_0^O(n) = 2^{-2n} C(2n,n) ((2n+1) O_n - 2n)`, and for `r ≥ 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binom Pow Sum](central-binom-pow-sum.md)
+- [Odd Harmonic](../../../../../../NumberTheory/MathlibExt/part-01/harmonic/odd-harmonic/odd-harmonic.md)
 
 ## Sources
 

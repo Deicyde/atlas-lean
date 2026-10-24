@@ -14,6 +14,10 @@ lean: MetaMathlibExt.gijswijtBlockWord
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gijswijt Block](gijswijt-block.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GijswijtSequenceWanted](../../../../../../../sources/v2/WantedExt.md)

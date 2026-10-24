@@ -11,7 +11,7 @@ The number of arcs into `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
 
 ## Sources
 

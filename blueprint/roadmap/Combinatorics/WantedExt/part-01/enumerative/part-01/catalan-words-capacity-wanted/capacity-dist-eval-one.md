@@ -12,7 +12,11 @@ A capacity distribution evaluated at `q = 1` counts its words.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+
+## Proof depends on
+
+- [Word Capacity](word-capacity.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The partitions of `n` whose diagonal sequence is a given sequence `d`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diagonal Sequence](diagonal-sequence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.DiagonalSequencesWanted](../../../../../../../../../sources/v2/WantedExt.md)

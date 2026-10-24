@@ -18,7 +18,8 @@ the coefficient of `ab` would be `1`, not `2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Mahonian](euler-mahonian.md)
+- [Multifold Diamond Series](multifold-diamond-series.md)
 
 ## Sources
 

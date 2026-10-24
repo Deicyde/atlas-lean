@@ -13,6 +13,10 @@ The number blocks of the input, up to its end, with fuel.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Decode Nat Prefix](../../../../cook-levin/decode-nat-prefix.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.SubsetSumVerify](../../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,24 @@ but the output, push the answer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](../dense-satverifier/g.md)
+- [Comp](comp.md)
+- [HK](hk.md)
+- [HLab](hlab.md)
+- [HΓ](h.md)
+
+## Proof depends on
+
+- [P0](p0.md)
+- [Clean Ks](clean-ks.md)
+- [D W](d-w.md)
+- [D X](d-x.md)
+- [Emb](emb.md)
+- [ΦV](v.md)
+- [Map S](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
+- [Clean S](../../../MathlibExt/turing-machine/cleanup/clean-s.md)
+- [Move B](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Sources
 

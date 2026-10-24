@@ -13,7 +13,7 @@ denominators cleared. The paper's companions (10) and (12) are the existing
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ A nonempty input whose first number is cut off.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode Es](decode-es.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+
+## Proof depends on
+
+- [Length lt of read Unary Length](length-lt-of-read-unary-length.md)
 
 ## Sources
 

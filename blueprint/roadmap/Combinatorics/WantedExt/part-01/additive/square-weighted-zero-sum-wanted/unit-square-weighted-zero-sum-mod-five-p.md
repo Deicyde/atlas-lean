@@ -14,7 +14,8 @@ positions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Weighted Zero Sum](has-weighted-zero-sum.md)
+- [Unit Square Set](unit-square-set.md)
 
 ## Sources
 

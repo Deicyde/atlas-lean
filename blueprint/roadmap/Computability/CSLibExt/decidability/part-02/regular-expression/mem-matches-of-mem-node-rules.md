@@ -12,7 +12,16 @@ A production of node `k` only produces words of the language of node `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Encoded Regex](encoded-regex.md)
+- [Form Lang](form-lang.md)
+- [Node](node.md)
+- [Node Rules](node-rules.md)
+- [Regex At](regex-at.md)
+
+## Proof depends on
+
+- [Regex Node](regex-node.md)
 
 ## Sources
 

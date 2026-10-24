@@ -12,7 +12,7 @@ Corollary 4.10: `Σ_{n≥1} (4L_{6n+3} + 3L_{2n+1})/(L_{2n+1}² + 5)³ = 1/27` a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

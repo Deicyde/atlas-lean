@@ -14,6 +14,10 @@ The space `𝒵°_{q,d}`: the `ℚ`-span of the general qMZVs `ζ_q(k₁, …, k
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q MZV](../part-02/q-mzv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

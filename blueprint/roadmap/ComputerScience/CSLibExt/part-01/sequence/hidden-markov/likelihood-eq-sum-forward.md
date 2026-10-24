@@ -12,7 +12,14 @@ lean: Cslib.MachineLearning.Sequence.HiddenMarkov.likelihood_eq_sum_forward
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+- [Forward](forward.md)
+- [Likelihood](likelihood.md)
+
+## Proof depends on
+
+- [The forward variables are path sums](forward-eq.md)
+- [Path Prob](path-prob.md)
 
 ## Sources
 

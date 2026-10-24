@@ -14,7 +14,9 @@ identity `det(v_i, v_{i+1}) = (-1)^i` itself is Mathlib's `SimpContFract.determi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Vec](convergent-vec.md)
+- [Lattice Parallelogram](lattice-parallelogram.md)
+- [Lattice Points](lattice-points.md)
 
 ## Sources
 

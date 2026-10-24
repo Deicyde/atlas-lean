@@ -11,7 +11,7 @@ The nodes of a Runge–Kutta method: `c i = ∑ j, a i j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
 
 ## Sources
 

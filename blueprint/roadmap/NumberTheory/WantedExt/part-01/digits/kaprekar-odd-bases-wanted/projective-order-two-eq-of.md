@@ -12,7 +12,7 @@ Characterization of `λ(n)`: the least positive `m` with `2 ^ m ≡ ±1 (mod n)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Projective Order Two](projective-order-two.md)
 
 ## Sources
 

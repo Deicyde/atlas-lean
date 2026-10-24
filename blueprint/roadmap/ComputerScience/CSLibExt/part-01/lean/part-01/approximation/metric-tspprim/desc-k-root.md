@@ -12,7 +12,12 @@ Every vertex other than the root lies below it, fewer than `n` levels down.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Desc K](desc-k.md)
+- [Parent Tree](parent-tree.md)
+
+## Proof depends on
+
+- [Up](up.md)
 
 ## Sources
 

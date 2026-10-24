@@ -11,7 +11,7 @@ Proposition 14: `𝓡_n = -n + ∑_{d=1}^n ⌊2n/(2d-1)⌋ (-1)^{d+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round Quotient Odd Count](round-quotient-odd-count.md)
 
 ## Sources
 

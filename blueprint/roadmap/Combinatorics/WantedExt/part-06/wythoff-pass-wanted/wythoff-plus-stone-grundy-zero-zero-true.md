@@ -13,7 +13,12 @@ terminal position `(0, 0, 0)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Plus Stone Grundy](wythoff-plus-stone-grundy.md)
+
+## Proof depends on
+
+- [Wythoff Extra Move Grundy](wythoff-extra-move-grundy.md)
+- [Wythoff Extra Move Grundy eq](wythoff-extra-move-grundy-eq.md)
 
 ## Sources
 

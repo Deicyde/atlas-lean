@@ -12,7 +12,8 @@ The Mallows representations of the irrationals of `(0, 1)` are exactly the seque
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
 
 ## Sources
 

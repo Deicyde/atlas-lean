@@ -13,7 +13,7 @@ lean: MetaMathlibExt.generators_mem_eulerSumBetaPeriodAlgebra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sum Beta Period Algebra](euler-sum-beta-period-algebra.md)
 
 ## Sources
 

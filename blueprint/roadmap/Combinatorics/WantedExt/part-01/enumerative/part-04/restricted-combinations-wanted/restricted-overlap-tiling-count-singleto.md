@@ -12,7 +12,7 @@ With `Q = {1}` the comb is a domino, and a `4`-board has one tiling with two dom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Overlap Tiling Count](restricted-overlap-tiling-count.md)
 
 ## Sources
 

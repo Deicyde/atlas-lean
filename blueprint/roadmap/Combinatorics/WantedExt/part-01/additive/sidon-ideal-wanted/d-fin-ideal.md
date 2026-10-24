@@ -14,6 +14,10 @@ The ideal `Dfin`: sets `A` for which some `n` has `D(Z) ⊈ A` for every
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Positive Differences](positive-differences.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.SidonIdealWanted](../../../../../../sources/v2/WantedExt.md)

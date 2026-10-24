@@ -13,7 +13,7 @@ trivial element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sumset Trivial Elements](sumset-trivial-elements.md)
 
 ## Sources
 

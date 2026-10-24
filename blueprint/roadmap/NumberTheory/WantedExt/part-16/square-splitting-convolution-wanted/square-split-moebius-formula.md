@@ -15,7 +15,9 @@ Theorem 3: the `⋆`-inverse `μ⋆` of the constant function `1` satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Conv](square-split-conv.md)
+- [Square Split U](square-split-u.md)
+- [Square Split V](square-split-v.md)
 
 ## Sources
 

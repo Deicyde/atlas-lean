@@ -12,7 +12,7 @@ Equation (8): for natural `p`, `q` and complex `x`, `z`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Santos Beta](santos-beta.md)
 
 ## Sources
 

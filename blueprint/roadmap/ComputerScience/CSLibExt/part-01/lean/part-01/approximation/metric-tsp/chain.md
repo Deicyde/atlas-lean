@@ -11,7 +11,7 @@ The path `x₁, x₂, …` as a forest: each vertex is the only child of the pre
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
 
 ## Sources
 

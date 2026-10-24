@@ -13,7 +13,8 @@ formalized; Hirschhorn's asymptotic expansion with divergent Bernoulli sums is n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorial Product Constant](factorial-product-constant.md)
+- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

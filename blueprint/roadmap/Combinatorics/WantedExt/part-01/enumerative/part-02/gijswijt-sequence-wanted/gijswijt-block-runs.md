@@ -12,7 +12,7 @@ For `m ≥ 1` and `t ≥ 2`, the elements `m` of `B_t^{(m)}` occur in maximal ru
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block](gijswijt-block.md)
 
 ## Sources
 

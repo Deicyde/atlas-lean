@@ -12,7 +12,7 @@ singleton `{a}` is `l`-sum-free modulo `p^i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Free Mod](is-sum-free-mod.md)
 
 ## Sources
 

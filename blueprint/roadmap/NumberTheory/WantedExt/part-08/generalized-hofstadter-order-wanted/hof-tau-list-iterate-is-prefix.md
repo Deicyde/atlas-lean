@@ -12,7 +12,11 @@ Coherence of the prefixes: `τ_k^i(k)` is a prefix of `τ_k^j(k)` for `i ≤ j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Tau List](hof-tau-list.md)
+
+## Proof depends on
+
+- [Hof Tau List iterate is Prefix succ](hof-tau-list-iterate-is-prefix-succ.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For `a > b ≥ 1`, `c_{a,b} = F_a/(F_b F_{a-b})` lies in `[c_{2,1}, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorial Product Constant](factorial-product-constant.md)
 
 ## Sources
 

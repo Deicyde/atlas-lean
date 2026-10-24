@@ -12,7 +12,7 @@ lean: MetaMathlibExt.abs_re_sub_hurwitzRound_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hurwitz Round](hurwitz-round.md)
 
 ## Sources
 

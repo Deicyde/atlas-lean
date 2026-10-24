@@ -11,7 +11,7 @@ The variable `z(t) = (e^t - 1)/(c₀ e^t + d₀)` as a power series in `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
 
 ## Sources
 

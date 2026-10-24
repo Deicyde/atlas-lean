@@ -15,7 +15,7 @@ minimal period is at most `λ(B)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Projective Order Two](projective-order-two.md)
 
 ## Sources
 

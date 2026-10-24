@@ -13,7 +13,7 @@ Hoey-Sloane machine passes through the states `0, 0, 1, 1, 0` (Figure 4 of the p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hoey Sloane Carry](hoey-sloane-carry.md)
 
 ## Sources
 

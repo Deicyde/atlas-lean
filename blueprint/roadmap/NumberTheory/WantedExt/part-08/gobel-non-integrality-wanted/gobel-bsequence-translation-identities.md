@@ -14,7 +14,7 @@ the unique sequence by choice; all Proposition 20 hypotheses and `l ≥ 2` are e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gobel BSequence](is-gobel-bsequence.md)
 
 ## Sources
 

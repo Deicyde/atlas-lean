@@ -15,7 +15,8 @@ holds `U` and `i` letters `U` precede it, then `g w i` is the number of `D`s pre
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+- [Is Partial Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
 
 ## Sources
 

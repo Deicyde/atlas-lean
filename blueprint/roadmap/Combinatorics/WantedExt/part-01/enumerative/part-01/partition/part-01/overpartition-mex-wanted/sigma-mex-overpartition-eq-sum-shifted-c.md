@@ -14,7 +14,8 @@ suffices because `r ≥ 1`.  (`n ≥ 0` is automatic for `n : ℕ`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Count](overpartition-count.md)
+- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
 
 ## Sources
 

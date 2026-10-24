@@ -13,6 +13,10 @@ The constant `c_n = s_n/2 - 1` (the paper's convention `c_1 = 1` agrees with thi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zurita SCoeff](zurita-scoeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedCentralBinomialArcsinWanted](../../../../../../../sources/v2/WantedExt.md)

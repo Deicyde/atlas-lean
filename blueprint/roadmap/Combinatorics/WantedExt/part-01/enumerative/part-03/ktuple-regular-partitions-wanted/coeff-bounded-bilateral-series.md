@@ -14,7 +14,7 @@ The interval-bound adequacy is specific to the quadratic uses documented above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Bilateral Series](bounded-bilateral-series.md)
 
 ## Sources
 

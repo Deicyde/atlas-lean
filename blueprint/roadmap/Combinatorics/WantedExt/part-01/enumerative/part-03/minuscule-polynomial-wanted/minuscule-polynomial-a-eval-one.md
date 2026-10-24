@@ -11,7 +11,7 @@ lean: MetaMathlibExt.minusculePolynomialA_eval_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minuscule Polynomial A](minuscule-polynomial-a.md)
 
 ## Sources
 

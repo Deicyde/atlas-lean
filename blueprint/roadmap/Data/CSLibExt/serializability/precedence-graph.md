@@ -11,7 +11,14 @@ The precedence (serialization) graph of a schedule, on the transactions `Fin n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
+- [Op](op.md)
+
+## Proof depends on
+
+- [Access](access.md)
+- [Conflicts](conflicts.md)
+- [Precedence Edge](precedence-edge.md)
 
 ## Sources
 

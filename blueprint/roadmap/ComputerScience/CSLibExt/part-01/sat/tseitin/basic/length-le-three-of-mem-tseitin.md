@@ -12,7 +12,15 @@ Every clause of the Tseitin CNF has at most three literals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Tseitin](tseitin.md)
+
+## Proof depends on
+
+- [Neg Lit](neg-lit.md)
+- [Tseitin Aux](tseitin-aux.md)
+- [Tseitin eq](tseitin-eq.md)
 
 ## Sources
 

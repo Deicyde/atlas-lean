@@ -11,7 +11,11 @@ A Hamiltonian cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hamiltonian Cycle Undirected Instance](hamiltonian-cycle-undirected-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

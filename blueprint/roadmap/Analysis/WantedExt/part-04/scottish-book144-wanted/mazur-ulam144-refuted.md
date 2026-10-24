@@ -17,7 +17,7 @@ explicitly when it means it, e.g. Problem 7), so no
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem144 Claim](scottish-book-problem144-claim.md)
 
 ## Sources
 

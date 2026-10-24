@@ -15,7 +15,10 @@ and the same with `H` and `H̄` exchanged for `H_n^{(p,r,3)}`, with `b₁ = liCo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Generalized Harmonic](alternating-generalized-harmonic.md)
+- [Generalized Harmonic](../../part-08/generalized-harmonic-gamma-wanted/generalized-harmonic.md)
+- [Li Coeff B1](li-coeff-b1.md)
+- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
 
 ## Sources
 

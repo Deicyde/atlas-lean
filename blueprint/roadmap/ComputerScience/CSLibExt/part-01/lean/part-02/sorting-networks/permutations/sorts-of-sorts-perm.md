@@ -13,7 +13,16 @@ every input over every linear order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](../zero-one/network.md)
+- [Sorts](../zero-one/sorts.md)
+- [Run](../zero-one/run.md)
+
+## Proof depends on
+
+- [Rank](rank.md)
+- [Rank Perm](rank-perm.md)
+- [Networks commute with monotone maps](../zero-one/run-comp.md)
+- [Sorting distinct inputs suffices](sorts-of-sorts-injective.md)
 
 ## Sources
 

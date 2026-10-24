@@ -12,7 +12,7 @@ Empty data never covers `ℤ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Riesel Covering Data](is-riesel-covering-data.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ Chaining step: reset the state bit (every generator starts with `false`) and jum
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](hk.md)
+- [HL](hl.md)
+- [HΓ](h.md)
 
 ## Sources
 

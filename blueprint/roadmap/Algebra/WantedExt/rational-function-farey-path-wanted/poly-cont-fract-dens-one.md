@@ -12,7 +12,11 @@ lean: MetaMathlibExt.polyContFract_dens_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Cont Fract](poly-cont-fract.md)
+
+## Proof depends on
+
+- [Poly Cont Fract s get?](poly-cont-fract-s-get.md)
 
 ## Sources
 

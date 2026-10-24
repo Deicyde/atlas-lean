@@ -11,7 +11,12 @@ lean: MetaMathlibExt.augmentedKDyckPaths
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+
+## Proof depends on
+
+- [Augment KDyck Word](augment-kdyck-word.md)
+- [K Dyck Words](k-dyck-words.md)
 
 ## Sources
 

@@ -16,7 +16,8 @@ conditions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knight Moves](knight-moves.md)
+- [Piece Distance](piece-distance.md)
 
 ## Sources
 

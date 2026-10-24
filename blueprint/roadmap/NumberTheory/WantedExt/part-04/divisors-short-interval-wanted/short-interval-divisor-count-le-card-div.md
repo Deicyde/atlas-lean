@@ -12,7 +12,7 @@ lean: MetaMathlibExt.shortIntervalDivisorCount_le_card_divisors
 
 ## Depends on
 
-This node has no prerequisites.
+- [Short Interval Divisor Count](short-interval-divisor-count.md)
 
 ## Sources
 

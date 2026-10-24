@@ -13,7 +13,7 @@ The paper's example: `6601 = 5·7 + 7² + 5·7³ + 2·7⁴` and `(5 | 7) = -1`, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Digit Sum](lucas-digit-sum.md)
 
 ## Sources
 

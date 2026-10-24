@@ -14,7 +14,8 @@ part `β⁻(N)` of some base phi expansion: for every Bergman set
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
+- [Is Bergman Expansion](../base-phi-representations-wanted/is-bergman-expansion.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ Pop a bit of `X`; go to `next` if it is `b`, to `miss` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Γ](untitled.md)
 
 ## Sources
 

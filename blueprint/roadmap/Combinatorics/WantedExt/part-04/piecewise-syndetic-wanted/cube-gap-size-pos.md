@@ -13,7 +13,12 @@ and it is vacuously `(m + 1)`-dense there, since no subcube of side `m + 1` fits
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Gap Size](cube-gap-size.md)
+
+## Proof depends on
+
+- [Is Dense In Cubes](is-dense-in-cubes.md)
+- [Lattice Cube](lattice-cube.md)
 
 ## Sources
 

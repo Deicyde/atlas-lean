@@ -14,6 +14,11 @@ lean: MetaMathlibExt.perimeterDistinctArmLegCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is DDistinct Parts](is-ddistinct-parts.md)
+- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.FixedPerimeterAlderWanted](../../../../../../../../../sources/v2/WantedExt.md)

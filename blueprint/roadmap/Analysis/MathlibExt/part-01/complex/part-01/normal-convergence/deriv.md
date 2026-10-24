@@ -18,10 +18,12 @@ the series of derivatives $\sum_n f_n'$ also converges locally normally on $S$.
 
 ## Depends on
 
-- [Extended supremum norm on a set](../../../normed/series/normal-convergence/sup-norm-on.md)
+- [Converges Locally Normally On](../../../normed/series/normal-convergence/converges-locally-normally-on.md)
 
 ## Proof depends on
 
+- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
+- [Extended supremum norm on a set](../../../normed/series/normal-convergence/sup-norm-on.md)
 - [Monotonicity of the supremum norm in the domain](../../../normed/series/normal-convergence/sup-norm-on-mono.md)
 
 ## Sources

@@ -11,7 +11,11 @@ The number of misses in a trace.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+
+## Proof depends on
+
+- [Is Miss](is-miss.md)
 
 ## Sources
 

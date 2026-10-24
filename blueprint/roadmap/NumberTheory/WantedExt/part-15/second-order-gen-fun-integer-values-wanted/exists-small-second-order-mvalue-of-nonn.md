@@ -15,7 +15,9 @@ for `(a, b, p) = (-3, -8, 5)` and `x = 0`, `min |M| = 8` while
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Bi Seq](second-order-bi-seq.md)
+- [Second Order Gen Value](second-order-gen-value.md)
+- [Second Order MValue](second-order-mvalue.md)
 
 ## Sources
 

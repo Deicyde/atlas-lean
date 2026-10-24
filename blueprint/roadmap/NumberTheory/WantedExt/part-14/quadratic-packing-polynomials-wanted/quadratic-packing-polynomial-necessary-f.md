@@ -14,7 +14,9 @@ Proposition 17: if `P` is a QPP on `I(n/m)` with step difference `k > 0` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
+- [Consecutive Step Difference](consecutive-step-difference.md)
+- [Sector Lattice Points](sector-lattice-points.md)
 
 ## Sources
 

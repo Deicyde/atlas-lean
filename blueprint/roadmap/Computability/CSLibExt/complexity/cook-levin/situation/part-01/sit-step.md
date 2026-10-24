@@ -13,6 +13,10 @@ lean: Cslib.Complexity.CookLevin.Situation.sitStep
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eff](eff.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Situation](../../../../../../../sources/v2/CSLibExt.md)

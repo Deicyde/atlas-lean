@@ -12,7 +12,7 @@ For `f = 1 ⊕ 2x²` in base `3`: `|f_1| = 2` and `|f_2| = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lunar Level Count](lunar-level-count.md)
 
 ## Sources
 

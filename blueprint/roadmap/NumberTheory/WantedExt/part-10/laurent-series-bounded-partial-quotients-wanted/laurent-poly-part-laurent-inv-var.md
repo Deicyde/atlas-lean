@@ -12,7 +12,8 @@ The polynomial part of `x` is `x`, and that of `x⁻¹` is `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Inv Var](laurent-inv-var.md)
+- [Laurent Poly Part](laurent-poly-part.md)
 
 ## Sources
 

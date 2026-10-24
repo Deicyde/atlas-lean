@@ -12,7 +12,9 @@ A bound on all infix scores bounds the fitting score.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fitting Score](fitting-score.md)
+- [Infixes](infixes.md)
+- [Nw Score](../sequence-alignment/nw-score.md)
 
 ## Sources
 

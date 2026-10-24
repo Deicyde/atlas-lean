@@ -12,7 +12,7 @@ lean: MetaMathlibExt.cubicCoeffVector_one_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cubic Coeff Vector](cubic-coeff-vector.md)
 
 ## Sources
 

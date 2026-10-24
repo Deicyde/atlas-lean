@@ -12,7 +12,11 @@ One step on codes, following `step`: in a running state, write, move and change 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coded Cfg](coded-cfg.md)
+
+## Proof depends on
+
+- [Coded Cons](coded-cons.md)
 
 ## Sources
 

@@ -15,7 +15,9 @@ Formalization deviation: none beyond the representation choices stated above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cell R3](cell-r3.md)
+- [Tile Fixed Count](tile-fixed-count.md)
+- [Torus Shift Sum](torus-shift-sum.md)
 
 ## Sources
 

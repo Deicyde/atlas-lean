@@ -11,7 +11,11 @@ The language of an encoded grammar.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](encoded-cfg.md)
+
+## Proof depends on
+
+- [To CFG](to-cfg.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ one, and so on.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anti Tribonacci Mex](../../part-06/walnut-oeis-problems-wanted/anti-tribonacci-mex.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.AntiRecurrenceWanted](../../../../../../../sources/v2/WantedExt.md)

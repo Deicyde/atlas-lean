@@ -16,7 +16,8 @@ compact metric spaces (on the empty space the cover clauses fail vacuously).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Minimal System](is-minimal-system.md)
+- [Iterate Preimage](iterate-preimage.md)
 
 ## Sources
 

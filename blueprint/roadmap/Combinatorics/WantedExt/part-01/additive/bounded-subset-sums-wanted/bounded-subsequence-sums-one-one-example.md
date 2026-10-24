@@ -12,7 +12,8 @@ lean: MetaMathlibExt.boundedSubsequenceSums_one_one_example
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
+- [Repetition Sequence](repetition-sequence.md)
 
 ## Sources
 

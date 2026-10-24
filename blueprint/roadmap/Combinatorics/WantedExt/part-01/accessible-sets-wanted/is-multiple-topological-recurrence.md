@@ -14,6 +14,10 @@ positive `ℓ`, matching the paper's `ℓ ≥ 1` convention.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is LTopological Recurrence](is-ltopological-recurrence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AccessibleSetsWanted](../../../../../sources/v2/WantedExt.md)

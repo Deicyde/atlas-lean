@@ -15,7 +15,8 @@ record's range `⌊(n-2)/2⌋` is read with `n = N`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
+- [Ordered Factorization Count](ordered-factorization-count.md)
 
 ## Sources
 

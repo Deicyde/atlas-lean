@@ -13,7 +13,7 @@ If `S` is `n`-admissible (`n ≥ 1`), then `S` and `S ∪ {2n + 1}` are both
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Lucky Set](is-admissible-lucky-set.md)
 
 ## Sources
 

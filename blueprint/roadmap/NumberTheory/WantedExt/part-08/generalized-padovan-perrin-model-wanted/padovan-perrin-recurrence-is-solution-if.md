@@ -13,7 +13,7 @@ For `s > 0`, a sequence solves the `([k]; p; s)`-Padovan–Perrin recurrence exa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

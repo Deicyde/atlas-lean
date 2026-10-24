@@ -11,7 +11,11 @@ LRU as an online pager.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online paging algorithm with cache size...](a-deterministic-online-paging-algorithm.md)
+
+## Proof depends on
+
+- [Lru Step](../paging/lru-step.md)
 
 ## Sources
 

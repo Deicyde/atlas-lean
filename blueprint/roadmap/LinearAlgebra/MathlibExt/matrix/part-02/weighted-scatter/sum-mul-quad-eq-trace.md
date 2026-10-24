@@ -13,7 +13,7 @@ A weighted quadratic form is a trace against the weighted scatter matrix:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Scatter](weighted-scatter.md)
 
 ## Sources
 

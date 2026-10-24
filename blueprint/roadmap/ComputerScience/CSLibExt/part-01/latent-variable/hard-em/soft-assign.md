@@ -14,6 +14,10 @@ The responsibilities of a mixture whose components share the variance `v`:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Iso Gauss PDF](../gaussian-mixture/iso-gauss-pdf.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.HardEM](../../../../../../sources/v2/CSLibExt.md)

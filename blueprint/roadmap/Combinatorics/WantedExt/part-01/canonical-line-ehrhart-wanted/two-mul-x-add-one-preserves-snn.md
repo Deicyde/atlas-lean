@@ -12,7 +12,7 @@ Multiplication by `2X+1` preserves the SNN property.  The paper's degree `d` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SNN](is-snn.md)
 
 ## Sources
 

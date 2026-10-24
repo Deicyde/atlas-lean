@@ -13,7 +13,22 @@ lists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [HK](hk.md)
+- [HLab](hlab.md)
+- [HΓ](h.md)
+- [P0](p0.md)
+- [Halt List eq](halt-list-eq.md)
+- [Init List eq](init-list-eq.md)
+- [Rprog](rprog.md)
+- [The reduction host's run](rprog-run.md)
+- [Rtime](rtime.md)
+- [Rtm](rtm.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

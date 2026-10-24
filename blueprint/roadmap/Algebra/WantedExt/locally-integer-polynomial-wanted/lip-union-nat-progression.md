@@ -12,7 +12,7 @@ intersecting progressions in `ℕ`. If `f` is LIP on `U₁` and on `U₂`, it is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

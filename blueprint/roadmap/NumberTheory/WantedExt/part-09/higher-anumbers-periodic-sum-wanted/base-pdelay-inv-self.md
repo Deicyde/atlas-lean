@@ -13,7 +13,7 @@ Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Lemma 2 (`D_{1/p} = 1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDelay](base-pdelay.md)
 
 ## Sources
 

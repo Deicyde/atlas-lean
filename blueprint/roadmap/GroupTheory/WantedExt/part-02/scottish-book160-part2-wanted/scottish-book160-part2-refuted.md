@@ -19,7 +19,7 @@ groups. Part (1) is not refuted here; it remains an open conjecture
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem160 Part2 Claim](scottish-book-problem160-part2-claim.md)
 
 ## Sources
 

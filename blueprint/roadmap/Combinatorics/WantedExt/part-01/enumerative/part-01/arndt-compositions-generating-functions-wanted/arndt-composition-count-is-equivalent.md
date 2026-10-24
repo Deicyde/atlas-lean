@@ -11,7 +11,7 @@ For a fixed positive integer `m`, `a(n, m) ∼ n^{m-1} / (2^{⌊m/2⌋} (m-1)!)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

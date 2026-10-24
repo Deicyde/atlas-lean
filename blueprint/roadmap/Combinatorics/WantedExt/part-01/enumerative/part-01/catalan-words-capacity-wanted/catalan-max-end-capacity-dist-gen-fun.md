@@ -15,7 +15,9 @@ equals
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catalan Growth Den](catalan-growth-den.md)
+- [Catalan Max End Capacity Dist](catalan-max-end-capacity-dist.md)
+- [Dilate Invert Series](dilate-invert-series.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ lean: MetaMathlibExt.huffing_eta_quotients_eq_sum_garvanM
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garvan M](garvan-m.md)
 
 ## Sources
 

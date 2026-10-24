@@ -11,7 +11,7 @@ The **minimum weight**: the least number of nonzero coordinates of a nonzero cod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
 
 ## Sources
 

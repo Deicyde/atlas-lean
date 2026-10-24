@@ -12,7 +12,7 @@ The recurrence (7): `U_{n+1} = y^{-1} U_{n-r+1} - y^{-1} x U_{n-r}` for `n ≥ r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RFibonacci](neg-rfibonacci.md)
 
 ## Sources
 

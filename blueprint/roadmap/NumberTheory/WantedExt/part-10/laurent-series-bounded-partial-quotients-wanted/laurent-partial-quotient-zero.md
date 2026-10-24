@@ -12,7 +12,9 @@ lean: MetaMathlibExt.laurentPartialQuotient_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Complete Quotient](laurent-complete-quotient.md)
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
+- [Laurent Poly Part](laurent-poly-part.md)
 
 ## Sources
 

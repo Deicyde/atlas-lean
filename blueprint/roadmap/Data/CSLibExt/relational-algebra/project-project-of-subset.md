@@ -12,7 +12,12 @@ lean: Cslib.Databases.project_project_of_subset
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
+- [Project](project.md)
+
+## Proof depends on
+
+- [Cascade of projections](project-project.md)
 
 ## Sources
 

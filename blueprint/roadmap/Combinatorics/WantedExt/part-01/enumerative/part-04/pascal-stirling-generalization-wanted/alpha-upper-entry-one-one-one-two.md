@@ -13,7 +13,7 @@ paper's display of `𝖴_α(4)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alpha Upper Entry](alpha-upper-entry.md)
 
 ## Sources
 

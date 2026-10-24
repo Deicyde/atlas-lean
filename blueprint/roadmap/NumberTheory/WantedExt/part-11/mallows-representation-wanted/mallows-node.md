@@ -11,7 +11,11 @@ The gap of the Mallows-tree vertex reached from the root by the path `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+
+## Proof depends on
+
+- [Mallows Child](mallows-child.md)
 
 ## Sources
 

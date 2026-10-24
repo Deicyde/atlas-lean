@@ -12,7 +12,9 @@ ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Almost Thin Set](is-almost-thin-set.md)
+- [Generated Ideal](generated-ideal.md)
+- [Sidon Ideal](sidon-ideal.md)
 
 ## Sources
 

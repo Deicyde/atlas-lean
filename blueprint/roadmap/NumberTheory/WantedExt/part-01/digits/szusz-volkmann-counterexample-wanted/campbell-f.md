@@ -19,6 +19,11 @@ domain is `ℝ_{≥ 0}`; the first formula is used for every `x ≤ 100/11`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Campbell H2](campbell-h2.md)
+- [Campbell H3](campbell-h3.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.SzuszVolkmannCounterexampleWanted](../../../../../../sources/v2/WantedExt.md)

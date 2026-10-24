@@ -13,7 +13,7 @@ their product unchanged modulo `2^(3e-1)`.  Products and the congruence are in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Below Two Pow](odd-below-two-pow.md)
 
 ## Sources
 

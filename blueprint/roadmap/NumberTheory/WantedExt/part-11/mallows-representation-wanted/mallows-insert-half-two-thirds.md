@@ -13,7 +13,7 @@ Characteristic value (odd numerator branch): between `1/2` and `2/3` Mallows ins
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Insert](mallows-insert.md)
 
 ## Sources
 

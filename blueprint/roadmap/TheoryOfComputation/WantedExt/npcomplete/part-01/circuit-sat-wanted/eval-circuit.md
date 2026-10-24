@@ -13,6 +13,10 @@ Gate values in order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gate Value](gate-value.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.CircuitSatWanted](../../../../../../sources/v2/WantedExt.md)

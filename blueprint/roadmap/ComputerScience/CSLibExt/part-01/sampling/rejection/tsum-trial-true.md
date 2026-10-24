@@ -12,7 +12,11 @@ A round accepts with probability `1 / M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trial](trial.md)
+
+## Proof depends on
+
+- [Trial apply true](trial-apply-true.md)
 
 ## Sources
 

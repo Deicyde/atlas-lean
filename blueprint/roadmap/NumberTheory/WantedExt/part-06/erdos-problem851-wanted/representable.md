@@ -14,6 +14,10 @@ prime divisors (source EP-851 [Erdős Problems]).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has At Most RPrime Factors](has-at-most-rprime-factors.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem851Wanted](../../../../../sources/v2/WantedExt.md)

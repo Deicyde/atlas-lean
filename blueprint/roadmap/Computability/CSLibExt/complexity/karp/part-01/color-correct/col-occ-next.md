@@ -37,7 +37,8 @@ private theorem ft_ne_of_ne : ∀ x b b' : Bool, b' ≠ b →
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](../color/col-st.md)
+- [Col Occ](../color/col-occ.md)
 
 ## Sources
 

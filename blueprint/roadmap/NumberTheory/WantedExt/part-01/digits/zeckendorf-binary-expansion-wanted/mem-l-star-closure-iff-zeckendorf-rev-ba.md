@@ -11,7 +11,10 @@ Lemma 11: for `ε ∈ Ẽ*`, `ε ∈ Ē*` iff `rev̄(ε) = ε`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [L Star Closure](l-star-closure.md)
+- [L Star Collection](l-star-collection.md)
+- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
 
 ## Sources
 

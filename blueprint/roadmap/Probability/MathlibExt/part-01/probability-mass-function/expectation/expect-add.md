@@ -12,7 +12,11 @@ Expectation is additive (finite case, no integrability hypotheses).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect](expect.md)
+
+## Proof depends on
+
+- [Expect eq sum](expect-eq-sum.md)
 
 ## Sources
 

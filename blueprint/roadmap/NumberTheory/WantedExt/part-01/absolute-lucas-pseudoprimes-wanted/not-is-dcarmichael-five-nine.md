@@ -13,7 +13,15 @@ lean: MetaMathlibExt.not_isDCarmichael_five_nine
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DCarmichael](is-dcarmichael.md)
+
+## Proof depends on
+
+- [Lucas Sequence Params](../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Is Coprime](../../../MathlibExt/part-08/lucas-sequence/is-coprime.md)
+- [Fibonacci Lucas Params](../../../MathlibExt/part-08/lucas-sequence/fibonacci-lucas-params.md)
+- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas U fibonacci Lucas Params](../../../MathlibExt/part-08/lucas-sequence/lucas-u-fibonacci-lucas-params.md)
 
 ## Sources
 

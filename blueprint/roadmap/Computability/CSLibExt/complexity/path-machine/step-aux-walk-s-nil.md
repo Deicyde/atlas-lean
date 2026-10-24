@@ -12,7 +12,17 @@ A walk step with the counter exhausted runs `fin`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+- [Walk S](walk-s.md)
+- [Γ](untitled.md)
+
+## Proof depends on
+
+- [Sym](../sat-verifier-spec/sym.md)
+- [Bit?](../sat-verifier-spec/bit.md)
+- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

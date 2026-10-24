@@ -12,7 +12,12 @@ From the start of a name, the loop ends at `pol` exactly for a canonical name.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+- [Nm End](nm-end.md)
+
+## Proof depends on
+
+- [Encode Nat decode Nat eq iff](../sat-verifier-spec/encode-nat-decode-nat-eq-iff.md)
 
 ## Sources
 

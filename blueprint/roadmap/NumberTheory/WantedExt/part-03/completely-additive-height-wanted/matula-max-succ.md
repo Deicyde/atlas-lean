@@ -12,7 +12,8 @@ lean: MetaMathlibExt.matulaMax_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matula Max](matula-max.md)
+- [Nth Prime One](nth-prime-one.md)
 
 ## Sources
 

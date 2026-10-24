@@ -13,6 +13,10 @@ Exact step count of Horner rounds with coefficients `cs` from accumulator `A`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Horn Step](horn-step.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Precompute](../../../../../../sources/v2/CSLibExt.md)

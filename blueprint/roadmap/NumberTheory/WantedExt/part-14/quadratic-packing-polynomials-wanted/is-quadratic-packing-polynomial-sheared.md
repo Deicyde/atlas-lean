@@ -12,7 +12,8 @@ lattice sector `Î(12/7) = M(I(12/7))`, `M(x, y) = (x - y/2, y)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
+- [Sector Lattice Points](sector-lattice-points.md)
 
 ## Sources
 

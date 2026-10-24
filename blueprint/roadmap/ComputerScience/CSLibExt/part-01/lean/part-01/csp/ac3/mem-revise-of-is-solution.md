@@ -12,7 +12,9 @@ A revision keeps every value of a solution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+- [Is Solution](is-solution.md)
+- [Revise](revise.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ If `w` starts with `ab`, then `r(1) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Relative Position](relative-position.md)
+
+## Proof depends on
+
+- [Letter Position](letter-position.md)
+- [Letter Position one of head](letter-position-one-of-head.md)
 
 ## Sources
 

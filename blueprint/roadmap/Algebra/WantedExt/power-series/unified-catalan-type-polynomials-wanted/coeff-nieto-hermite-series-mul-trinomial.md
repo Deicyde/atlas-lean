@@ -18,7 +18,7 @@ sides vanish), all `j, m` (the paper takes `j, m ≥ 1`) and real `λ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
 
 ## Sources
 

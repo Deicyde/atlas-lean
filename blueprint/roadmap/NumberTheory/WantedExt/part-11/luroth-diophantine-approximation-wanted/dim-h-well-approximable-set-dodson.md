@@ -15,7 +15,8 @@ without it the formula fails (constant `ψ = 1/4` gives `τ_ψ = 0` and `dim W(�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Order At Infinity](lower-order-at-infinity.md)
+- [Well Approximable Set](well-approximable-set.md)
 
 ## Sources
 

@@ -16,7 +16,8 @@ Carlitz's `S_q(n,k)` enter through their defining identity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Carlitz Beta Poly](extended-carlitz-beta-poly.md)
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

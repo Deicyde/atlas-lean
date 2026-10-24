@@ -13,7 +13,21 @@ exactly when each of its restrictions is in the corresponding projection.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Over](../relational-algebra/is-over-2.md)
+- [Tuple](../relational-algebra/tuple.md)
+- [Is Over](../relational-algebra/is-over.md)
+- [Restrict](../relational-algebra/restrict.md)
+- [Join Projections](join-projections.md)
+- [Project](../relational-algebra/project.md)
+- [Schema Union](schema-union.md)
+
+## Proof depends on
+
+- [Compatible](../relational-algebra/compatible.md)
+- [Merge](../relational-algebra/merge.md)
+- [Join](../relational-algebra/join.md)
+- [Join Unit](join-unit.md)
+- [Membership in a join](../relational-algebra/mem-join-iff.md)
 
 ## Sources
 

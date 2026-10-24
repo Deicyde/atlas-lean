@@ -12,7 +12,8 @@ Theorem 4: for `n, r ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
+- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
 
 ## Sources
 

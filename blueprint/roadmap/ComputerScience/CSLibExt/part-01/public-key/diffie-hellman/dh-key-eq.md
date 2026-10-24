@@ -12,7 +12,11 @@ The shared Diffie–Hellman key is `g ^ (a b)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gpow](gpow.md)
+
+## Proof depends on
+
+- [Correctness of Diffie–Hellman key agreement](dh-agree.md)
 
 ## Sources
 

@@ -14,7 +14,26 @@ otherwise; on success those codes sit on `T`, reversed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Cols](cols.md)
+- [Flat](flat.md)
+- [Ok Col](ok-col.md)
+- [Prog](prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+
+## Proof depends on
+
+- [Col](col.md)
+- [Cols cons cons](cols-cons-cons.md)
+- [Run one](run-one.md)
+- [Update update update update](update-update-update-update.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

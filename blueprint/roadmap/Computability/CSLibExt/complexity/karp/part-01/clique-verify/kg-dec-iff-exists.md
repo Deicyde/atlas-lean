@@ -13,7 +13,18 @@ condition" is verified by `kgCheck m` with witnesses no longer than the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+- [Set Ok](set-ok.md)
+- [Kg Check](kg-check.md)
+- [Kg Dec](../clique/kg-dec.md)
+- [Pairs](../clique/pairs.md)
+- [To Graph](../clique/to-graph.md)
+
+## Proof depends on
+
+- [Exists set Ok](exists-set-ok.md)
+- [Kg Check of Fn](kg-check-of-fn.md)
+- [Encode KG](../clique/encode-kg.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ The central trinomial coefficients satisfy `T(n+1) = T(n) + 2n M(n-1)` for `n â‰
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Number](motzkin-number.md)
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
+
+## Proof depends on
+
+- [Motzkin Number eq sum range half](motzkin-number-eq-sum-range-half.md)
+- [Motzkin central trinomial recurrence](../motzkin-central-trinomial/motzkin-central-trinomial-recurrence.md)
 
 ## Sources
 

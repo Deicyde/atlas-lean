@@ -12,7 +12,7 @@ Comparison of seeded and unseeded iterated partial sums: for a seed sequence
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seeded Partial Sums](seeded-partial-sums.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Characteristic values `P_λ(0) = 1` and `P_λ(1) = -1` (`λ(q) = 1 - q + 3q^2 - 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mock Theta Lambda](mock-theta-lambda.md)
 
 ## Sources
 

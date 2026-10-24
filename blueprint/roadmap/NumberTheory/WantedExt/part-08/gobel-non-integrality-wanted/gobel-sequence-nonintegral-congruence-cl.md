@@ -16,7 +16,7 @@ directly because no threshold object is introduced. Congruence is natural-number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](../../part-09/gobel-sequence-wanted/gobel-sequence.md)
 
 ## Sources
 

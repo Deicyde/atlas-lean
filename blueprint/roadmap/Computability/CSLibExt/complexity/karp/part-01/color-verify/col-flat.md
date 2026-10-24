@@ -12,7 +12,13 @@ The color code of vertex `i` in flattened pairs is pair `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col](col.md)
+- [Flat](flat.md)
+
+## Proof depends on
+
+- [Flat cons](flat-cons.md)
+- [Length flat](length-flat.md)
 
 ## Sources
 

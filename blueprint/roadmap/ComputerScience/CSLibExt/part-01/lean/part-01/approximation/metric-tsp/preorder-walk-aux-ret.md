@@ -19,7 +19,9 @@ def approxTSPTour (r : α) (F : Forest α) : TimeM ℕ (List α) := do
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+- [Preorder](preorder.md)
+- [Preorder Walk Aux](preorder-walk-aux.md)
 
 ## Sources
 

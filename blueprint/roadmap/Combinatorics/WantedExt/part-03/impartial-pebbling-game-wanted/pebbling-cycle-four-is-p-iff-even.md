@@ -12,7 +12,10 @@ total number of pebbles is even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Pattern AABBHat](c4-pattern-aabbhat.md)
+- [C4 Pattern ABAC](c4-pattern-abac.md)
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
 
 ## Sources
 

@@ -12,7 +12,17 @@ At `p = 1` the `(p, q)`-binomial is the Gaussian binomial coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Binom](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
+- [Pq Binomial](pq-binomial.md)
+
+## Proof depends on
+
+- [Gauss Binom self](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom-self.md)
+- [Gauss Binom succ succ](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom-succ-succ.md)
+- [Gauss Binom zero right](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom-zero-right.md)
+- [Gauss Binom zero succ](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom-zero-succ.md)
+- [Pq Binomial succ succ](pq-binomial-succ-succ.md)
+- [Pq Binomial zero right](pq-binomial-zero-right.md)
 
 ## Sources
 

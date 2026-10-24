@@ -19,7 +19,9 @@ power series with constant coefficient `1`. All divisions of integers are exact.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cubic Coeff Vector](cubic-coeff-vector.md)
+- [Ped Nine Eighteen](ped-nine-eighteen.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

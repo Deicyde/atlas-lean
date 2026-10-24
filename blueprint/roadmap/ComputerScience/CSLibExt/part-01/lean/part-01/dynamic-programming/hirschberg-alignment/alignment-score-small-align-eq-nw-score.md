@@ -12,7 +12,17 @@ The base case attains the optimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Nw Score](../sequence-alignment/nw-score.md)
+- [Small Align](small-align.md)
+
+## Proof depends on
+
+- [Alignment](../sequence-alignment/alignment.md)
+- [Column Score](../sequence-alignment/column-score.md)
+- [Nw Score nil left](../sequence-alignment/nw-score-nil-left.md)
+- [Nw Score nil right](../sequence-alignment/nw-score-nil-right.md)
+- [Nw Score singleton singleton](nw-score-singleton-singleton.md)
 
 ## Sources
 

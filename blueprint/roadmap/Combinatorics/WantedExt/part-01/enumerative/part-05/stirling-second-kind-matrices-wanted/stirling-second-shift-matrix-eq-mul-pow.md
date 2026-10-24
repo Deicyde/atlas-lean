@@ -13,7 +13,9 @@ Theorem 2: `S^[m](n) = S(n) V(n)^m`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling Matrix2](../stirling-matrix-wanted/stirling-matrix2.md)
+- [Stirling Second Shift Matrix](stirling-second-shift-matrix.md)
+- [Stirling VMatrix](stirling-vmatrix.md)
 
 ## Sources
 

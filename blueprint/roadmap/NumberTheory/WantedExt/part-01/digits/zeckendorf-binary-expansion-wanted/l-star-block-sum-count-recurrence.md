@@ -12,7 +12,7 @@ Recurrence for `C_n`: `C_k = e_1 C_{k-1} + ⋯ + e_k C_0` for `1 ≤ k ≤ N`, a
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Block Sum Count](l-star-block-sum-count.md)
 
 ## Sources
 

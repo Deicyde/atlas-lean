@@ -13,7 +13,7 @@ extracted display, is read from the paper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ of lex-minimal extensions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Add Monoid Basis](is-add-monoid-basis.md)
+- [Is Atomic Binomid Index](is-atomic-binomid-index.md)
+- [Is Lex Minimal Extension](../../part-02/binomid-index-wanted/is-lex-minimal-extension.md)
 
 ## Sources
 

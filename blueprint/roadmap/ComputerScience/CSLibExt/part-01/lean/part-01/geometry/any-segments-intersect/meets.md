@@ -13,6 +13,11 @@ Segments `i` and `j` meet.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Left](left.md)
+- [Right](right.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.AnySegmentsIntersect](../../../../../../../../sources/v2/CSLibExt.md)

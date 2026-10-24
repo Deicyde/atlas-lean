@@ -11,7 +11,7 @@ A completion with every row and column a permutation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Latin Square Completion Instance](latin-square-completion-instance.md)
 
 ## Sources
 

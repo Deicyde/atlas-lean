@@ -16,7 +16,9 @@ then `(a + b - 1) B_W(n) = J(n) := W (n + 1) - W 1 + b (W n - W 0)`, and `n ∣ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas UPeriod](lucas-uperiod.md)
 
 ## Sources
 

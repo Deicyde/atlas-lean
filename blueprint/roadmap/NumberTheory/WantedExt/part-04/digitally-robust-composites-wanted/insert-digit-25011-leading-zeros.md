@@ -14,7 +14,7 @@ computation and has no encoding deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Insert Digit](insert-digit.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ The four kinds of mismatch productions belong to `mismatchRules`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bit Code](bit-code.md)
+- [Domino](../cfgundecidable/domino.md)
+- [Mismatch Rules](mismatch-rules.md)
+- [Others](others.md)
+- [U Bit](u-bit.md)
+- [U Letter](u-letter.md)
+- [U Nt](u-nt.md)
+- [Domino](../pcp/domino.md)
 
 ## Sources
 

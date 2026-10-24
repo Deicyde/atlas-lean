@@ -12,7 +12,7 @@ Proposition 3: `Le^{(r)}_n = Le^{(r)}_{n-1} + Le^{(r-1)}_n` for `r ≥ 1` and `n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

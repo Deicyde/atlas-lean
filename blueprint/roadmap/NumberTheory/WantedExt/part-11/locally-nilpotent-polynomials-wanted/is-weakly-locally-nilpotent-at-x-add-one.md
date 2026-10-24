@@ -12,7 +12,11 @@ lean: MetaMathlibExt.isWeaklyLocallyNilpotentAt_X_add_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weakly Locally Nilpotent At](is-weakly-locally-nilpotent-at.md)
+
+## Proof depends on
+
+- [Iterate eval X add one](iterate-eval-x-add-one.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ single component is isomorphic to `G(2n, -2n + 1)` or to `G(-2n + 1, -2n + a)` w
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ The rooted forest of Prim's minimum spanning tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](../metric-tsp/forest.md)
+
+## Proof depends on
+
+- [Build Forest](build-forest.md)
+- [Prim Parents](prim-parents.md)
 
 ## Sources
 

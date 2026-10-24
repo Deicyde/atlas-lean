@@ -13,7 +13,14 @@ value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Stochastic](stochastic.md)
+- [Bellman](bellman.md)
+- [Optimal Value](optimal-value.md)
+
+## Proof depends on
+
+- [Bellman's operator is a contraction](bellman-contracting.md)
 
 ## Sources
 

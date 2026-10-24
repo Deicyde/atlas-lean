@@ -12,7 +12,7 @@ lean: MetaMathlibExt.TM2ToTM0.tr_eval_dom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tr](tr.md)
 
 ## Sources
 

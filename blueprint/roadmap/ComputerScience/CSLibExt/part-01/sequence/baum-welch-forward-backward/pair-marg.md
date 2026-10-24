@@ -12,7 +12,11 @@ time `t` to time `t + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+
+## Proof depends on
+
+- [Path Prob](../hidden-markov/path-prob.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The one-block partition of `Fin n` is encoded by `finRotate n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Increasing Cycle Perm](is-increasing-cycle-perm.md)
 
 ## Sources
 

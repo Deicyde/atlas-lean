@@ -11,7 +11,7 @@ Alphabets of a counter machine: Bool output, unit counters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](sk.md)
 
 ## Sources
 

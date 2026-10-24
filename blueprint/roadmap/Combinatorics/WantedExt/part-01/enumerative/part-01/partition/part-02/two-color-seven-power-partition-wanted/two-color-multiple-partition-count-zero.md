@@ -12,7 +12,7 @@ lean: MetaMathlibExt.twoColorMultiplePartitionCount_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Color Multiple Partition Count](two-color-multiple-partition-count.md)
 
 ## Sources
 

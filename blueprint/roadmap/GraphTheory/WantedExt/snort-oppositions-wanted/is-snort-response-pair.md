@@ -15,6 +15,10 @@ move, loses.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Snort Mover Wins](snort-mover-wins.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.SnortOppositionsWanted](../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,7 @@ A158358, nonsquarefree Poulet numbers, https://oeis.org/A158358. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The terminals occurring in the productions, each listed once (repetitions would 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ SZ-admissible words bijectively onto themselves.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz To SZ](ooz-to-sz.md)
 
 ## Sources
 

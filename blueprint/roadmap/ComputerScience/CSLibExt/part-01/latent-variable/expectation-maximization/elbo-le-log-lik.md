@@ -12,7 +12,14 @@ lean: Cslib.MachineLearning.LatentVariable.ExpectationMaximization.elbo_le_logLi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dist](is-dist.md)
+- [Elbo](elbo.md)
+- [Log Lik](log-lik.md)
+
+## Proof depends on
+
+- [Marginal](marginal.md)
+- [Gibbs' inequality](sum-mul-log-sub-le.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Initial convergent vectors: `v_{-2} = (1, 0)`, `v_{-1} = (0, 1)`, `v_0 = (1, ⌊
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Vec](convergent-vec.md)
+- [Partial Quotient](partial-quotient.md)
 
 ## Sources
 

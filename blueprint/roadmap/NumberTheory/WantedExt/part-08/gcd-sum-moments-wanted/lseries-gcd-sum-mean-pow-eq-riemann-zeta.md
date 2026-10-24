@@ -16,7 +16,7 @@ product (3) for `G̃_{k,2}` is not stated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Sum Mean](gcd-sum-mean.md)
 
 ## Sources
 

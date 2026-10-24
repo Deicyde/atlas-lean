@@ -12,7 +12,7 @@ Every move of a Beatty octal game decreases the heap, so the game terminates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beatty Octal Move](beatty-octal-move.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The number `a(n) = ∑_m a(n, m)` of Arndt compositions has generating function
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

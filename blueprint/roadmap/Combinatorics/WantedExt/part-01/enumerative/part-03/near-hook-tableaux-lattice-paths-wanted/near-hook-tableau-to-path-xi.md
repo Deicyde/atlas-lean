@@ -15,7 +15,7 @@ is "in the leg". List index `k` is `i - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Near Hook Theta](near-hook-theta.md)
 
 ## Sources
 

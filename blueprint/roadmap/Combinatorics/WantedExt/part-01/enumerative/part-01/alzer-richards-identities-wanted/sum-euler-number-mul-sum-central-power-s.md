@@ -15,7 +15,7 @@ secant Euler number `chapter5EulerEven (k / 2)` at even `k`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even-index Euler numbers](../../../../../../Analysis/MathlibExt/part-01/ramanujan/part-01/part1-ch5-entry10b-euleriansymmetry/chapter5-euler-even.md)
 
 ## Sources
 

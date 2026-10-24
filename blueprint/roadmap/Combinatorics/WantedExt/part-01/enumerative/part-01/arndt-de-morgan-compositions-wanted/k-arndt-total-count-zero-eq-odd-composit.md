@@ -13,7 +13,8 @@ of these finite sets; `n = 0` (both counts `1`) is included.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Arndt Total Count](k-arndt-total-count.md)
+- [Odd Or Small Even Composition Count](odd-or-small-even-composition-count.md)
 
 ## Sources
 

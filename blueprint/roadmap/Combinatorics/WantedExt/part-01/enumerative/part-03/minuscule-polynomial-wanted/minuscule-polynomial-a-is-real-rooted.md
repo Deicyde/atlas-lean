@@ -12,7 +12,8 @@ says positive `n`, and `N_0 = 0` has no roots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Real-rooted polynomials](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
 
 ## Sources
 

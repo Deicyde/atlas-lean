@@ -12,7 +12,12 @@ it, and halt (one step).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](../of-tm0/non-blank.md)
+
+## Proof depends on
+
+- [Cell Answer](cell-answer.md)
+- [In Cell](in-cell.md)
 
 ## Sources
 

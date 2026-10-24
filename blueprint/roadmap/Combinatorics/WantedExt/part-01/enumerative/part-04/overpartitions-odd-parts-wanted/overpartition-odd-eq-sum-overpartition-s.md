@@ -15,7 +15,8 @@ function the identity fails at `n = 1` (`po(1) = 2`, `p(1) = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources
 

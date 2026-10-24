@@ -13,7 +13,8 @@ Values check against the recurrence: `L_{1,·} = 2, 1, 3, 4, 7, 11` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Leonardo P](lucas-leonardo-p.md)
+- [Lucas P](lucas-p.md)
 
 ## Sources
 

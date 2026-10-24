@@ -12,7 +12,11 @@ lean: MetaMathlibExt.isJosephusThreeFixedPoint_thirteen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Josephus Three Fixed Point](is-josephus-three-fixed-point.md)
+
+## Proof depends on
+
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ Batcher's odd-even merge sort on wires `0, …, 2 ^ k - 1`: sort both halves, th
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Odd Even Merge](odd-even-merge.md)
+- [Relabel](relabel.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.SortingNetworks.OddEven](../../../../../../../../sources/v2/CSLibExt.md)

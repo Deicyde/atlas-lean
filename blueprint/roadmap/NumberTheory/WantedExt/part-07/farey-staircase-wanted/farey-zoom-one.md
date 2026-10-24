@@ -12,7 +12,12 @@ lean: MetaMathlibExt.fareyZoom_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Zoom](farey-zoom.md)
+
+## Proof depends on
+
+- [Farey Staircase](farey-staircase.md)
+- [Farey Staircase one](farey-staircase-one.md)
 
 ## Sources
 

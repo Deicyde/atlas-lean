@@ -14,7 +14,12 @@ the output is `x` after exactly `k` rejections with probability `r ^ k * P(x, ac
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trial](trial.md)
+
+## Proof depends on
+
+- [Trial apply true](trial-apply-true.md)
+- [Tsum trial false add](tsum-trial-false-add.md)
 
 ## Sources
 

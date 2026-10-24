@@ -11,7 +11,7 @@ The marker closing a table entry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](sym.md)
 
 ## Sources
 

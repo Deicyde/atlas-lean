@@ -17,7 +17,8 @@ Embedding into Zeckendorf: `β⁺(N) = Z(N + S(N))` for all `N ≥ 0`, where
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
+- [Generalized Beatty](generalized-beatty.md)
 
 ## Sources
 

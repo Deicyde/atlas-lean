@@ -13,7 +13,9 @@ congruence are taken in `ℤ` rather than relying on truncated natural subtracti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Multiset](integer-multiset.md)
+- [Odd Below Two Pow](odd-below-two-pow.md)
+- [Reverse ESymm](reverse-esymm.md)
 
 ## Sources
 

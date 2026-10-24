@@ -12,7 +12,11 @@ The expanded output length is the sum of the run lengths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expand](expand.md)
+
+## Proof depends on
+
+- [Expand From length](expand-from-length.md)
 
 ## Sources
 

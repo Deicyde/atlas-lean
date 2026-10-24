@@ -15,7 +15,8 @@ amounts removed `(a - a', b - b', c - c', d - d')` form one of the seven moves o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simplified Princess Roses Move List](simplified-princess-roses-move-list.md)
+- [Simplified Princess Roses Moves](simplified-princess-roses-moves.md)
 
 ## Sources
 

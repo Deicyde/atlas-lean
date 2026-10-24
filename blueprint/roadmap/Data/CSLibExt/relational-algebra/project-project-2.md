@@ -12,7 +12,16 @@ lean: Cslib.Databases.Expr.project_project
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expr](expr.md)
+- [Equiv](equiv.md)
+- [Schema](schema.md)
+
+## Proof depends on
+
+- [Conforms](conforms.md)
+- [Eval](eval-2.md)
+- [Tuple](tuple.md)
+- [Cascade of projections](project-project-of-subset.md)
 
 ## Sources
 

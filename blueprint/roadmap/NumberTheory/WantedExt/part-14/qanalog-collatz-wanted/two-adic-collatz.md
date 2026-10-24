@@ -15,6 +15,11 @@ The `3x+1` map `T : ℤ₂ → ℤ₂`, `T(x) = x/2` for even `x` and `(3x+1)/2`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [To ZMod three mul add one of odd](to-zmod-three-mul-add-one-of-odd.md)
+- [Two dvd of to ZMod eq zero](two-dvd-of-to-zmod-eq-zero.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QAnalogCollatzWanted](../../../../../sources/v2/WantedExt.md)

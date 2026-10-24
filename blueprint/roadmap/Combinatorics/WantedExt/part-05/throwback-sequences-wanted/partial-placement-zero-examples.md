@@ -13,7 +13,7 @@ Characteristic values: for `X = (3, 4, 5, …)`, `P_0(X)` has `3` at positions `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Placement](partial-placement.md)
 
 ## Sources
 

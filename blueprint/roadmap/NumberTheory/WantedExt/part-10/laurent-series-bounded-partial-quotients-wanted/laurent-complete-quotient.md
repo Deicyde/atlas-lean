@@ -14,6 +14,10 @@ expansion of `α ∈ 𝔽_q((x⁻¹))` (they become `0` after a finite expansion
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Laurent Poly Part](laurent-poly-part.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LaurentSeriesBoundedPartialQuotientsWanted](../../../../../sources/v2/WantedExt.md)

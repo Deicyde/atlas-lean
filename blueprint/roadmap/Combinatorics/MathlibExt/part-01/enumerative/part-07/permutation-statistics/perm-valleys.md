@@ -13,6 +13,10 @@ lean: MetaMathlibExt.permValleys
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Valley At](is-valley-at.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PermutationStatistics](../../../../../../../sources/v2/MathlibExt.md)

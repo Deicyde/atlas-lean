@@ -12,7 +12,13 @@ Starting the gap encoding earlier just prepends absent slots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inc](inc.md)
+- [Gap Enc](gap-enc.md)
+- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+
+## Proof depends on
+
+- [Encode Slot](../../dense-sat/encode-slot.md)
 
 ## Sources
 

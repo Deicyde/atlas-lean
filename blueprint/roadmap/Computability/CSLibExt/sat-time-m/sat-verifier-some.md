@@ -12,7 +12,11 @@ On a successful decode, the verifier checks the decoded formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Check CNF](check-cnf.md)
+- [Decode CNF](../cook-levin/decode-cnf.md)
+- [Sat Verifier](sat-verifier.md)
+- [Vars Of](vars-of.md)
+- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Sources
 

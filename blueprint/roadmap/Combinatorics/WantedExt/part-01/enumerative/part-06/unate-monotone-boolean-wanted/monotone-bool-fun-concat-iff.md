@@ -12,7 +12,7 @@ are monotone and `g ≤ h` pointwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Fun Concat](bool-fun-concat.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: Cslib.Decidability.MinimalCode
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Desc Length](desc-length.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.Minimal](../../../../../../sources/v2/CSLibExt.md)

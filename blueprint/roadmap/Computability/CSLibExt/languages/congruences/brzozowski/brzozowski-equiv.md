@@ -11,7 +11,19 @@ The states of Brzozowski's automaton correspond to the continuation languages.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reachable Residuals](../minimality/reachable-residuals.md)
+- [Brzozowski State](brzozowski-state.md)
+
+## Proof depends on
+
+- [State Equivalent](../minimality/state-equivalent.md)
+- [Minimized State](../minimization/minimized-state.md)
+- [Nerode Rel](../nerode/nerode-rel.md)
+- [Nerode Rel iff state Equivalent](../minimality/nerode-rel-iff-state-equivalent.md)
+- [Brzozowski's automaton](brzozowski.md)
+- [Brzozowski Residual](brzozowski-residual.md)
+- [Brzozowski eval eq iff](brzozowski-eval-eq-iff.md)
+- [Brzozowski surjective](brzozowski-surjective.md)
 
 ## Sources
 

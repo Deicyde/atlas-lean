@@ -13,7 +13,12 @@ only operation needing a semifield, so `condProb` lives in this section while
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+
+## Proof depends on
+
+- [Partition](partition.md)
+- [Path Weight](path-weight.md)
 
 ## Sources
 

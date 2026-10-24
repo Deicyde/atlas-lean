@@ -12,7 +12,8 @@ lean: Cslib.Algorithms.Lean.CatenableHeap.union_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Union](union.md)
 
 ## Sources
 

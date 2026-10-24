@@ -12,7 +12,8 @@ The value of the domination polynomial at `1` is the number of dominating sets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination Polynomial](domination-polynomial.md)
+- [Is Dominating](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-02/domination/is-dominating.md)
 
 ## Sources
 

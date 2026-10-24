@@ -11,7 +11,7 @@ Theorem 3: Bennett's symmetric identity (Theorem 2) holds for all integers `k, â
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

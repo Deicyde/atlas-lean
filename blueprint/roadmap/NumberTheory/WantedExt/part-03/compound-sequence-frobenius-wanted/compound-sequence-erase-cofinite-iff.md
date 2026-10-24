@@ -13,7 +13,7 @@ For the compound sequence `C = {c_0, …, c_n}` (`n ≥ 1`) and `0 ≤ j ≤ n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compound Sequence](compound-sequence.md)
 
 ## Sources
 

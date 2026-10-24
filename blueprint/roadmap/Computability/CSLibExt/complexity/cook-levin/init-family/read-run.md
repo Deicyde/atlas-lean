@@ -13,7 +13,17 @@ lean: Cslib.Complexity.CookLevin.InitFamily.read_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
+- [IK](ik.md)
+- [IΓ](i.md)
+- [Emb](emb.md)
+- [Rd S](rd-s.md)
+- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Single](../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

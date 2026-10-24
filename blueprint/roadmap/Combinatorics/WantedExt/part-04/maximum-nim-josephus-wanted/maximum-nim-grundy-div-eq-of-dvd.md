@@ -13,7 +13,7 @@ division the floors; there is no deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim Grundy](maximum-nim-grundy.md)
 
 ## Sources
 

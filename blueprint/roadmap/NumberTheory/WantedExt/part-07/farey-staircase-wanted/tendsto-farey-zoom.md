@@ -11,7 +11,7 @@ Theorem 1: for `x ≥ 0`, `B_n(x) → Σ_{k=1}^{⌊x⌋} log(x/k)` as `n → ∞
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Zoom](farey-zoom.md)
 
 ## Sources
 

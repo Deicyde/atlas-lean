@@ -16,7 +16,14 @@ equivalence directly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [First Unit](first-unit.md)
+- [First Variable](first-variable.md)
+- [Restrict](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/restrict-2.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

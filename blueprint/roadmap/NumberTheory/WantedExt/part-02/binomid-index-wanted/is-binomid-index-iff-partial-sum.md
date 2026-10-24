@@ -14,7 +14,8 @@ for all `n > m` (the maximum over the empty range, for `n = 1`, is `0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Binomid Index](is-binomid-index.md)
+- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
 
 ## Sources
 

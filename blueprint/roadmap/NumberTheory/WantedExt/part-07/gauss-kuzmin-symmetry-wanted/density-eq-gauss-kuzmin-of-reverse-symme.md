@@ -13,7 +13,7 @@ infinite set `S`, then `f(x) = 1/(log 2 · (1 + x))` on `[0, 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cf Cylinder](cf-cylinder.md)
 
 ## Sources
 

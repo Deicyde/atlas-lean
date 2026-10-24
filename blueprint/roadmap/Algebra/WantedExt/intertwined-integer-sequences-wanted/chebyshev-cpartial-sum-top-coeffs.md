@@ -15,7 +15,7 @@ difference has degree `< n - 5`). The fractions are written `C(n-2, 2)` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
 
 ## Sources
 

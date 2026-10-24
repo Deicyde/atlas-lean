@@ -12,7 +12,7 @@ The residue walk has the paper's initial value at index one, with no hypotheses 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Residue Walk](gobel-residue-walk.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For `m, n ≥ k`, `D_k(m, n) = ∑_{j=0}^{min(m-k, n-k)} C(m - k, j) C(n, j + k)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Delannoy Lower](gen-delannoy-lower.md)
 
 ## Sources
 

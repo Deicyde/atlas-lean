@@ -12,7 +12,13 @@ busy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](../brent/dag.md)
+- [Schedule](../brent/schedule.md)
+
+## Proof depends on
+
+- [Ready](ready.md)
+- [Load](load.md)
 
 ## Sources
 

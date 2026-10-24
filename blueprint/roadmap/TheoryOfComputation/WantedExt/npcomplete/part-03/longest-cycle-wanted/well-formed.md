@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest Cycle Instance](longest-cycle-instance.md)
 
 ## Sources
 

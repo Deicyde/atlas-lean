@@ -12,7 +12,8 @@ The pseudo-greedy expansion and its gap sequence satisfy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
+- [Pseudo Greedy Gap](pseudo-greedy-gap.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.zeckBlocks_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Blocks](zeck-blocks.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ numbers larger than `F(M)`. A position is an ender when `F(M)` is its only end.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver End](is-sylver-end.md)
+- [Sylver Legal Moves](sylver-legal-moves.md)
 
 ## Sources
 

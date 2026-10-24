@@ -12,7 +12,7 @@ stated for every leading `n × n` section (equivalent for these lower triangular
 
 ## Depends on
 
-This node has no prerequisites.
+- [Power Series Factorial Matrix](power-series-factorial-matrix.md)
 
 ## Sources
 

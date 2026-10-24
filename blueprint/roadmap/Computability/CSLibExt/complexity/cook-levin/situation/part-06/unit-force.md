@@ -12,7 +12,15 @@ A satisfied dense unit clause forces its literal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dense Clause](../../family/dense-clause.md)
+- [Tr](../part-04/tr.md)
+- [CNF](../../../dense-sat/cnf.md)
+- [Clause](../../../dense-sat/clause.md)
+- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+
+## Proof depends on
+
+- [L0](../part-04/clause-sat-dense.md)
 
 ## Sources
 

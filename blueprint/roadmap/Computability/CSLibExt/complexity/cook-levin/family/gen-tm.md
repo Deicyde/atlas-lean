@@ -12,7 +12,20 @@ Only checks that the finiteness requirements are met; the run lemmas are about `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [MS](../counter-view/ms.md)
+- [SK](../counter-view/sk.md)
+- [CK](ck.md)
+- [GK](gk.md)
+- [GL](gl.md)
+- [GΓ](g.md)
+- [LS](ls.md)
+- [N Lits](n-lits.md)
+- [PS](ps.md)
+- [Prog](prog.md)
 
 ## Sources
 

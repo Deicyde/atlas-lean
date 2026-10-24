@@ -12,7 +12,7 @@ The `xⁿ` coefficient of `bivariateCountGF a` is `∑_{m ≤ n} a(n, m) yᵐ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bivariate Count GF](bivariate-count-gf.md)
 
 ## Sources
 

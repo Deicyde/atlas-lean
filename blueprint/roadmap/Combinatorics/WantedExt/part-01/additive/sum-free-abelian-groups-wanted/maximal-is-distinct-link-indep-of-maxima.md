@@ -14,7 +14,8 @@ added; without it the statement fails (`G = ℤ₂`, `S = G`, `B = {0}`, `I = �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Distinct Link Indep](is-distinct-link-indep.md)
+- [Is Distinct Sum Free Set](is-distinct-sum-free-set.md)
 
 ## Sources
 

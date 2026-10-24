@@ -12,7 +12,7 @@ Exact formula for `R_4(n)`, `n = 12m + a > 16`, `0 ≤ a ≤ 11`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Rook Partition Count](max-rook-partition-count.md)
 
 ## Sources
 

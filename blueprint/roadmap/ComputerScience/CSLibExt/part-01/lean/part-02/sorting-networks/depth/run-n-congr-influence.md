@@ -12,7 +12,12 @@ A wire's output depends only on the inputs in its influence set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Influence](influence.md)
+- [Run N](../bitonic/run-n.md)
+
+## Proof depends on
+
+- [Cmp](../bitonic/cmp.md)
 
 ## Sources
 

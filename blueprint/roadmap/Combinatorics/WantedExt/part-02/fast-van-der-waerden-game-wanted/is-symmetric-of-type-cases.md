@@ -12,7 +12,7 @@ A symmetric set of size `n ≥ 4` has (one-based) type `(1, n)`, `(2, n)` or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Symmetric Of Type](is-symmetric-of-type.md)
 
 ## Sources
 

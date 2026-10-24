@@ -13,7 +13,11 @@ The `p`-adic Hilbert symbol takes only the values one and negative one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Hilbert Symbol](padic-hilbert-symbol.md)
+
+## Proof depends on
+
+- [Eq one or neg one](eq-one-or-neg-one.md)
 
 ## Sources
 

@@ -16,7 +16,8 @@ of `q^N` in `ζ_q^OOZ(k₁, {0}^{d₁}, …, kᵣ, {0}^{dᵣ})` equals that of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz QMZV](../part-01/ooz-qmzv.md)
+- [Sz Block Index](../part-01/sz-block-index.md)
 
 ## Sources
 

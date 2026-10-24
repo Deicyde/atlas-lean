@@ -12,7 +12,11 @@ The `Δ`-`Y` arm from the centre of an upright triangle to its bottom-right vert
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Edge](circuit-edge.md)
+
+## Proof depends on
+
+- [Circuit Delta](circuit-delta.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ the original language.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Language From](../basic/language-from.md)
+- [Proj Right](proj-right.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.InverseHom](../../../../../../../sources/v2/CSLibExt.md)

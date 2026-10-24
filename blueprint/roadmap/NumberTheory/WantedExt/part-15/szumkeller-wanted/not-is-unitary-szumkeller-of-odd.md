@@ -11,7 +11,7 @@ There is no odd unitary s-Zumkeller number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unitary SZumkeller](is-unitary-szumkeller.md)
 
 ## Sources
 

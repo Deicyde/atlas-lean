@@ -12,7 +12,7 @@ binom(j + k, j) x^{j+k} / (1 - (α + β)x)^{j+k+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
 
 ## Sources
 

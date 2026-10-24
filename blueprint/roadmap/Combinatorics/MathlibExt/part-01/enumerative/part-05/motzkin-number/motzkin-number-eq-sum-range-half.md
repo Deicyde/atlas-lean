@@ -12,7 +12,7 @@ The defining sum may stop at `k = ⌊n/2⌋`, since `C(n,2k) = 0` for `2k > n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Number](motzkin-number.md)
 
 ## Sources
 

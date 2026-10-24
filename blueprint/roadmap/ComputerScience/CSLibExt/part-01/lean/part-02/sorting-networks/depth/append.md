@@ -12,7 +12,11 @@ Sequential composition: depth at most the sum of the two bounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth LE](depth-le.md)
+
+## Proof depends on
+
+- [Levels](levels.md)
 
 ## Sources
 

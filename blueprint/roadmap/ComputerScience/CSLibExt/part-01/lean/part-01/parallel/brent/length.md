@@ -11,7 +11,8 @@ The number of steps a schedule takes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+- [Schedule](schedule.md)
 
 ## Sources
 

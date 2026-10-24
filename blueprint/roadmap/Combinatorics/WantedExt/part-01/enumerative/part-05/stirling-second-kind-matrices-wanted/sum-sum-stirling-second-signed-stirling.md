@@ -14,7 +14,7 @@ The hypothesis `i ≥ 1` (the paper's indices are positive) is needed: for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Stirling First](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

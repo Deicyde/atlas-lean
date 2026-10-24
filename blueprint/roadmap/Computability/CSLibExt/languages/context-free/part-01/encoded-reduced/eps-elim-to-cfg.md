@@ -12,7 +12,16 @@ lean: Cslib.Language.EncodedCFG.epsElim_toCFG
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+- [Eps Elim](eps-elim.md)
+- [To CFG](../encoded/to-cfg.md)
+- [Eps Grammar](../reduced/eps-grammar.md)
+
+## Proof depends on
+
+- [Decode Rule](../encoded/decode-rule.md)
+- [Mem eps Elim rules](mem-eps-elim-rules.md)
+- [Nullable Deletions](../reduced/nullable-deletions.md)
 
 ## Sources
 

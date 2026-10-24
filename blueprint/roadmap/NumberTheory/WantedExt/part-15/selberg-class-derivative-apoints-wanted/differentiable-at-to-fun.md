@@ -12,7 +12,7 @@ A function in the Selberg class is holomorphic away from `s = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Class Function](selberg-class-function.md)
 
 ## Sources
 

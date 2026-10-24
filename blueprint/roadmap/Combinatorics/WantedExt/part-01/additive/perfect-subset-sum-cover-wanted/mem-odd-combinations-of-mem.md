@@ -12,7 +12,7 @@ Every element of `A` lies in `𝒯(A)` (coefficient `1` on it, `0` elsewhere).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Combinations](odd-combinations.md)
 
 ## Sources
 

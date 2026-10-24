@@ -13,7 +13,7 @@ into odd parts. Stated for every `n`, including `n = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

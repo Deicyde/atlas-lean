@@ -12,7 +12,7 @@ The recurrences of `ℳ₁` in the paper's form, with `ℳ₁(n)` read as `0` or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic One](meta-automatic-one.md)
 
 ## Sources
 

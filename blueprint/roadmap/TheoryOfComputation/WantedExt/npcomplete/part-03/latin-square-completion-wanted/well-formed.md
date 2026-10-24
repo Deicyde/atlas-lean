@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Latin Square Completion Instance](latin-square-completion-instance.md)
 
 ## Sources
 

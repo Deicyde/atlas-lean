@@ -25,7 +25,8 @@ are not included.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

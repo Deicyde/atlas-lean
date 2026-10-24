@@ -12,7 +12,12 @@ lean: MetaMathlibExt.sumOfSquaresRepCount_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Theta Series](square-theta-series.md)
+- [Sum Of Squares Rep Count](sum-of-squares-rep-count.md)
+
+## Proof depends on
+
+- [Is Unit square Theta Series](is-unit-square-theta-series.md)
 
 ## Sources
 

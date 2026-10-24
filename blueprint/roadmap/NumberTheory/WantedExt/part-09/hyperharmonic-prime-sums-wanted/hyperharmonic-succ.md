@@ -12,7 +12,7 @@ The defining recursion `h_n^{(r+1)} = ∑_{k=1}^{n} h_k^{(r)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyperharmonic](hyperharmonic.md)
 
 ## Sources
 

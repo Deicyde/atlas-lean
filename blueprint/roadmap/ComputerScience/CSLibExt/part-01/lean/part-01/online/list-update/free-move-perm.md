@@ -85,7 +85,7 @@ theorem mtf_nodup {M : List α} (hnd : M.Nodup) (x : α) : (mtf M x).Nodup :=
 
 ## Depends on
 
-This node has no prerequisites.
+- [Free Move](free-move.md)
 
 ## Sources
 

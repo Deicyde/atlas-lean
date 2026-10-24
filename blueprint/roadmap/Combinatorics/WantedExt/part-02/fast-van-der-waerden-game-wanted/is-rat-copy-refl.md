@@ -12,7 +12,7 @@ Every finite set of rationals is a copy of itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rat Copy](is-rat-copy.md)
 
 ## Sources
 

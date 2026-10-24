@@ -11,7 +11,7 @@ Proposition 2.3: the entries of a `k`-generalized Markov triple are pairwise cop
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
 
 ## Sources
 

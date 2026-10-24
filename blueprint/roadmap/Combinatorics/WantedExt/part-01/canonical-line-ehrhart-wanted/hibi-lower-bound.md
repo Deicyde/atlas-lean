@@ -14,7 +14,10 @@ range is retained rather than broadening the excerpt's wording.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ehrhart Counts](ehrhart-counts.md)
+- [Is Full Dimensional](is-full-dimensional.md)
+- [H Star Coeff](h-star-coeff.md)
+- [Lattice Polytope](lattice-polytope.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ First sixteen values of `ℳ₂`: `0110011010011001`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic Two](meta-automatic-two.md)
 
 ## Sources
 

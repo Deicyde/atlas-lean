@@ -16,6 +16,11 @@ sequence then converge to zero uniformly in some neighbourhood of zero?
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Bounded Set](is-bounded-set.md)
+- [Is Type Fo](is-type-fo.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted](../../../../../../../sources/v2/WantedExt.md)

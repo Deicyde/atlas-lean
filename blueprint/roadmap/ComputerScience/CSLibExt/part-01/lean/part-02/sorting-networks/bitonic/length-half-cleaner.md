@@ -56,7 +56,7 @@ theorem bitonicSortN_sorts : ∀ (k b : ℕ) (f : ℕ → Bool),
 
 ## Depends on
 
-This node has no prerequisites.
+- [Half Cleaner](half-cleaner.md)
 
 ## Sources
 

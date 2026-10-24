@@ -14,6 +14,11 @@ found so far and their successors.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dedup B](../../part-01/primrec-list/dedup-b.md)
+- [Mem B](../../part-01/primrec-list/mem-b.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.Regular](../../../../../../sources/v2/CSLibExt.md)

@@ -14,7 +14,9 @@ Catalan's identity: for `r ≤ n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Companion KJacobsthal](companion-kjacobsthal.md)
+- [K Jacobsthal Params](k-jacobsthal-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

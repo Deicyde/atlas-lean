@@ -13,7 +13,7 @@ squares of a Markov triple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
 
 ## Sources
 

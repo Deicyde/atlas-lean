@@ -12,7 +12,8 @@ lean: MetaMathlibExt.length_nearHookTableauToPathPsi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Near Hook Tableau To Path Psi](near-hook-tableau-to-path-psi.md)
+- [Near Hook Theta](near-hook-theta.md)
 
 ## Sources
 

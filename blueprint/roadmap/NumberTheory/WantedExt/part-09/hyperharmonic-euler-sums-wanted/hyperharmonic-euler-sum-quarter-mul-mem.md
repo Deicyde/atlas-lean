@@ -16,7 +16,9 @@ Here `r_i = c_i + 1/2`, `a = d + 1/4`, `b = e + 3/4` with `c_i, d, e ∈ ℤ`, a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sum Beta Period Algebra](euler-sum-beta-period-algebra.md)
+- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
+- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
 
 ## Sources
 

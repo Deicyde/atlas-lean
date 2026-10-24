@@ -13,6 +13,11 @@ The `k`-th `m`-weighted file placement number `f_{k,m}(B) = Σ_{F ∈ 𝓕_k} wt
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [File Placement Weight](file-placement-weight.md)
+- [File Placements](file-placements.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WeightedFilePlacementsWanted](../../../../../../../sources/v2/WantedExt.md)

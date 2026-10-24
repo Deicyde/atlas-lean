@@ -11,7 +11,8 @@ Lemma 1: `V(n)⁻¹ = Ṽ(n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling VMatrix](stirling-vmatrix.md)
+- [Stirling VTilde Matrix](stirling-vtilde-matrix.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ The initial configuration reads as Mathlib's.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To TM0](to-tm0.md)
+- [Init](init.md)
+- [Input](input.md)
+
+## Proof depends on
+
+- [Cfg](cfg.md)
 
 ## Sources
 

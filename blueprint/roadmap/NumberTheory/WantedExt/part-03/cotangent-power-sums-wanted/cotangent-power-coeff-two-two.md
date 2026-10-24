@@ -12,7 +12,7 @@ lean: MetaMathlibExt.cotangentPowerCoeff_two_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cotangent Power Coeff](cotangent-power-coeff.md)
 
 ## Sources
 

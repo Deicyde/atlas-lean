@@ -13,7 +13,8 @@ Characteristic values of `d(n)` and `ℓ(n)`: `d = -4, -3, -8` for `(α, g) = (0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kronecker Class Multiplier](kronecker-class-multiplier.md)
+- [Kronecker Discriminant](kronecker-discriminant.md)
 
 ## Sources
 

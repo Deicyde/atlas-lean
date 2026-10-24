@@ -12,7 +12,8 @@ The bridge weights, decomposed from the front: the first transition, then a shor
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+- [Bridge](bridge.md)
 
 ## Sources
 

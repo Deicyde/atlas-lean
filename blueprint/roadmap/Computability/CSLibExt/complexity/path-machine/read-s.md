@@ -12,7 +12,17 @@ pushes `ps`; the `false` terminator moves on to `next`; an exhausted `X` answers
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+- [Γ](untitled.md)
+
+## Proof depends on
+
+- [Sym](../sat-verifier-spec/sym.md)
+- [Bit?](../sat-verifier-spec/bit.md)
+- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Push All](../../../MathlibExt/turing-machine/program/push-all.md)
 
 ## Sources
 

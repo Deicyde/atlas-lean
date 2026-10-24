@@ -12,7 +12,9 @@ The identity of length `3` (`123`) has two ascents and no descents; `132` has on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pattern3](pattern3.md)
+- [Perm Ascents](perm-ascents.md)
+- [Perm Descents](perm-descents.md)
 
 ## Sources
 

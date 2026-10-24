@@ -12,7 +12,11 @@ The empty set is not a `C`-set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CSet](is-cset.md)
+
+## Proof depends on
+
+- [Is Mul JSet](is-mul-jset.md)
 
 ## Sources
 

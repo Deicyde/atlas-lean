@@ -13,7 +13,15 @@ whose tapes correspond.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [Of TM0](of-tm0.md)
+- [To Tape](to-tape.md)
+
+## Proof depends on
+
+- [Head to Tape](head-to-tape.md)
+- [To Tape move](to-tape-move.md)
+- [To Tape write](to-tape-write.md)
 
 ## Sources
 

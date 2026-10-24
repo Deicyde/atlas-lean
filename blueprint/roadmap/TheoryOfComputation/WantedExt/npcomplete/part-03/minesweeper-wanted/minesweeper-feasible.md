@@ -11,7 +11,7 @@ A mine placement consistent with all clues.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minesweeper Instance](minesweeper-instance.md)
 
 ## Sources
 

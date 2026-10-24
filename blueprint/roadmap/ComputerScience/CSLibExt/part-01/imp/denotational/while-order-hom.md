@@ -11,7 +11,13 @@ The while-loop functional packaged as a monotone operator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [While Fun](while-fun.md)
+- [While Fun mono](while-fun-mono.md)
 
 ## Sources
 

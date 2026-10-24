@@ -12,7 +12,7 @@ For all `n ≥ 0`: `a_5(8n + 7) ≡ 0 (mod 16)` and `a_5(20n + 2j + 1) ≡ 0 (mo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
 
 ## Sources
 

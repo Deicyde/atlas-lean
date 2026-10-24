@@ -12,7 +12,13 @@ observation a sequence, and the joint the path weight.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid HMM](valid-hmm.md)
+
+## Proof depends on
+
+- [Valid](valid.md)
+- [HMM](../hidden-markov/hmm.md)
+- [Path Prob](../hidden-markov/path-prob.md)
 
 ## Sources
 

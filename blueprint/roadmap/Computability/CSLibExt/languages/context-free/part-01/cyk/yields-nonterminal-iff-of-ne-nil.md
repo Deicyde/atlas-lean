@@ -14,7 +14,16 @@ yielding the two nonempty parts of a split of `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chomsky Normal Form](../chomsky-normal-form/is-chomsky-normal-form.md)
+- [Yields](../../part-02/yields/yields.md)
+
+## Proof depends on
+
+- [Append](../../part-02/yields/append.md)
+- [Append inv](../../part-02/yields/append-inv.md)
+- [Empty rule of yields nil](empty-rule-of-yields-nil.md)
+- [No empty rule of mem output](no-empty-rule-of-mem-output.md)
+- [Yields of rule](../../part-02/yields/yields-of-rule.md)
 
 ## Sources
 

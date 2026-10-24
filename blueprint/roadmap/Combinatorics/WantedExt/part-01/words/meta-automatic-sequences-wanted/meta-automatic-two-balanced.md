@@ -12,7 +12,7 @@ termination of the definition `metaAutomaticTwo`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic Two](meta-automatic-two.md)
 
 ## Sources
 

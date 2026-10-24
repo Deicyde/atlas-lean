@@ -16,7 +16,8 @@ trivially and `r = 0` admits no coloring of the nonempty cube.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dense In Cubes](is-dense-in-cubes.md)
+- [Lattice Cube](lattice-cube.md)
 
 ## Sources
 

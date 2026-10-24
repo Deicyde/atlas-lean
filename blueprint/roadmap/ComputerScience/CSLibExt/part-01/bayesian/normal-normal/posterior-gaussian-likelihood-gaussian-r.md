@@ -14,7 +14,17 @@ observation `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gaussian Likelihood](gaussian-likelihood.md)
+- [Gaussian Likelihood zero apply](gaussian-likelihood-zero-apply.md)
+- [Completing the square](measurable-gaussian-pdf-mean.md)
+- [Normal Post Mean](normal-post-mean.md)
+- [Normal Post Var](normal-post-var.md)
+
+## Proof depends on
+
+- [The marginal of the data](gaussian-likelihood-comp-gaussian-real.md)
+- [Completing the square](gaussian-pdfreal-mul-gaussian-pdfreal.md)
+- [Bayes' rule for densities](../density/posterior-ae-eq-of-mul-eq.md)
 
 ## Sources
 

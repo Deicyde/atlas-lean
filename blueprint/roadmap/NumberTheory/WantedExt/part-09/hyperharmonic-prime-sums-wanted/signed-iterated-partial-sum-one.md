@@ -12,7 +12,7 @@ Order `1` of the iterated partial sums is the base sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
 
 ## Sources
 

@@ -13,6 +13,12 @@ lean: MetaMathlibExt.catalanCapacityDist
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Capacity Dist](capacity-dist.md)
+- [Catalan Words](catalan-words.md)
+- [Words Ending In](words-ending-in.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CatalanWordsCapacityWanted](../../../../../../../sources/v2/WantedExt.md)

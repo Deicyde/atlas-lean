@@ -13,7 +13,15 @@ trace serving the same requests.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Request](request.md)
+- [Cache LTS](cache-lts.md)
+- [Furthest In Future](furthest-in-future.md)
+- [Misses](misses.md)
+
+## Proof depends on
+
+- [Furthest In Future min misses](furthest-in-future-min-misses.md)
 
 ## Sources
 

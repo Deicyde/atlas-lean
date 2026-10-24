@@ -18,7 +18,10 @@ Evaluation of the unweighted Hurwitz class number `H(-4n)`: writing
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Class Number](gauss-class-number.md)
+- [Kronecker Class Multiplier](kronecker-class-multiplier.md)
+- [Kronecker Discriminant](kronecker-discriminant.md)
+- [Unweighted Hurwitz Class Number](unweighted-hurwitz-class-number.md)
 
 ## Sources
 

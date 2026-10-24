@@ -17,7 +17,7 @@ from `OpenConjectures/Combinatorics/MatchingCutGirth`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

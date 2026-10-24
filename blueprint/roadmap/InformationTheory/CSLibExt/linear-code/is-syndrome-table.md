@@ -17,6 +17,10 @@ unconstrained, so for heavier errors the decoder's output need not even be a cod
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Syndrome](syndrome.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Coding.LinearCode](../../../../sources/v2/CSLibExt.md)

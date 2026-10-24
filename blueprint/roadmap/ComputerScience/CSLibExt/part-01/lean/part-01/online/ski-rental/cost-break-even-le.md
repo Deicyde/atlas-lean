@@ -13,7 +13,9 @@ lean: Cslib.Algorithms.Lean.Online.SkiRental.cost_breakEven_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Break Even](break-even.md)
+- [Cost](cost.md)
+- [Opt](opt.md)
 
 ## Sources
 

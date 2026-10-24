@@ -12,7 +12,17 @@ lean: MetaMathlibExt.marriageableSinglesCount_of_le_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marriageable Singles Count](marriageable-singles-count.md)
+
+## Proof depends on
+
+- [Is Marriageable Singles](is-marriageable-singles.md)
+- [Merged Has Crossing](merged-has-crossing.md)
+- [Merged Same Block](merged-same-block.md)
+- [Noncrossing Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
+- [Has Crossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
+- [Is Noncrossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)
+- [Set Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
 
 ## Sources
 

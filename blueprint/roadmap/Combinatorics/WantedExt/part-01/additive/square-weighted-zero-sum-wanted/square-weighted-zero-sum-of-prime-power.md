@@ -15,7 +15,8 @@ length `k` is an explicit binder required by the `Fin k` encoding, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Weighted Zero Sum](has-weighted-zero-sum.md)
+- [Square Set](square-set.md)
 
 ## Sources
 

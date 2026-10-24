@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Assignment Instance](generalized-assignment-instance.md)
 
 ## Sources
 

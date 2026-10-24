@@ -14,7 +14,7 @@ for localizations of rings of integers; here `O` is any such DVR, and the zero i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divided Power Ideal](is-divided-power-ideal.md)
 
 ## Sources
 

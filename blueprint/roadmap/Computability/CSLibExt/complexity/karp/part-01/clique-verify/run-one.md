@@ -12,7 +12,15 @@ A step whose label is known: some state and stacks follow.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

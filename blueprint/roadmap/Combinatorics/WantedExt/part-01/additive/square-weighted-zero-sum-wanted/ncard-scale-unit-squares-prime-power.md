@@ -13,7 +13,7 @@ modulo `p^(r-2k)` have equal finite cardinality. No positivity of `r` is added.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Square Set](unit-square-set.md)
 
 ## Sources
 

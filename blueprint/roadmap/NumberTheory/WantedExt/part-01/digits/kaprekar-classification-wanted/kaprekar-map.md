@@ -14,6 +14,10 @@ decimal digits padded with leading zeros, and sent to `α_M - α_L`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kaprekar Diff](kaprekar-diff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.KaprekarClassificationWanted](../../../../../../sources/v2/WantedExt.md)

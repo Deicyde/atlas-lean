@@ -12,7 +12,7 @@ for every `r ∈ ℤ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Squares Rep Count](sum-of-squares-rep-count.md)
 
 ## Sources
 

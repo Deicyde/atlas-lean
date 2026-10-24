@@ -13,7 +13,7 @@ Proposition 2.1: if `P(x), Q(x) ∈ ℚ[x]` have nonnegative leading coefficient
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

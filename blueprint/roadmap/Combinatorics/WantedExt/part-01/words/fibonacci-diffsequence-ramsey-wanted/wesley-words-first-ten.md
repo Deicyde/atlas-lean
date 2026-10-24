@@ -12,7 +12,8 @@ The first ten letters: `S = 1001101001…` and `T = 1001100100…`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wesley Word S](wesley-word-s.md)
+- [Wesley Word T](wesley-word-t.md)
 
 ## Sources
 

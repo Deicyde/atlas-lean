@@ -11,7 +11,14 @@ lean: Cslib.Complexity.Karp.sat3Dec
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Is3](is3.md)
+- [Encode CNF](../../../../cook-levin/encode-cnf.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Sources
 

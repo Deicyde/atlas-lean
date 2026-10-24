@@ -15,6 +15,10 @@ By definitionK_{v:k} is the generalized Johnson graph J(v,k,0).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Johnson](../part-02/johnson-graph.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Kneser](../../../../../../sources/v2/MathlibExt.md)

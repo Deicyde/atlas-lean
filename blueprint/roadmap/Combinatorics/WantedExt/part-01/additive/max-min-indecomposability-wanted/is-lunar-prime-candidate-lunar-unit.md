@@ -12,7 +12,8 @@ The unit `b - 1` is a prime candidate when `b ≥ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lunar Prime Candidate](is-lunar-prime-candidate.md)
+- [Lunar Unit](lunar-unit.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MetaMathlibExt.subcollectionCount_of_nonpos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subcollection Count](subcollection-count.md)
+
+## Proof depends on
+
+- [Zeckendorf Eval](zeckendorf-eval.md)
 
 ## Sources
 

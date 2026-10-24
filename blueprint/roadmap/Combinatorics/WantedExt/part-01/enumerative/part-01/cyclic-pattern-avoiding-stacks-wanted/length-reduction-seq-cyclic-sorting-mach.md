@@ -11,7 +11,8 @@ For every permutation `π` of `[n]` with `n ≥ 2`, `|red(SC_[123](π))| < |π|`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
+- [Reduction Seq](reduction-seq.md)
 
 ## Sources
 

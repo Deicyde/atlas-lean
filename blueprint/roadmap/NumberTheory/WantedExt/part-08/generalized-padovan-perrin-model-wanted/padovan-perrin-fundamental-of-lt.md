@@ -12,7 +12,11 @@ Initial values of the Fibonacci fundamental system: `v⁽ʲ⁾ n = δ_{n+1, j}` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
+
+## Proof depends on
+
+- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

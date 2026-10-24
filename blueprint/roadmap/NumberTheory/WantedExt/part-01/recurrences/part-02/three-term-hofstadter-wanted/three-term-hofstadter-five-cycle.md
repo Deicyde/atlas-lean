@@ -14,7 +14,7 @@ satisfies `B(K+5k) = 5`, `B(K+5k+1) = K+3k+μ`, `B(K+5k+2) = 3`, `B(K+5k+3) = K+
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
 
 ## Sources
 

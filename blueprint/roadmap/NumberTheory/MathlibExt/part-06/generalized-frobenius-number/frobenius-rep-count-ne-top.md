@@ -12,7 +12,7 @@ With positive generators every integer has finitely many representations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frobenius Rep Count](frobenius-rep-count.md)
 
 ## Sources
 

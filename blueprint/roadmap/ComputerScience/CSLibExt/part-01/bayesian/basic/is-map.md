@@ -14,6 +14,10 @@ lean: Cslib.MachineLearning.Bayesian.IsMAP
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bayes Posterior](bayes-posterior.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Bayesian.Basic](../../../../../../sources/v2/CSLibExt.md)

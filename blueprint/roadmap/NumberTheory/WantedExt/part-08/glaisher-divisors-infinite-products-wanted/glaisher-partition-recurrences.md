@@ -11,7 +11,7 @@ Recurrences for `p_e`, `p_d` and `p̄` in terms of Glaisher's divisors and `σ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources
 

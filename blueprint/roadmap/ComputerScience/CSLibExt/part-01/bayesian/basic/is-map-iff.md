@@ -12,7 +12,13 @@ A MAP hypothesis maximizes prior times likelihood: the evidence is a common fact
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MAP](is-map.md)
+
+## Proof depends on
+
+- [Bayes Posterior](bayes-posterior.md)
+- [Bayes' rule for countably many hypotheses](bayes-posterior-apply-singleton.md)
+- [Comp apply singleton eq tsum](comp-apply-singleton-eq-tsum.md)
 
 ## Sources
 

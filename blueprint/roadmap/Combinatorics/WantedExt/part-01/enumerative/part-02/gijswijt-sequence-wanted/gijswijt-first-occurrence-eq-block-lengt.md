@@ -12,7 +12,9 @@ block `B_t^{(m)}` for some `t ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block Length](gijswijt-block-length.md)
+- [Gijswijt First Occurrence](gijswijt-first-occurrence.md)
+- [Gijswijt Term](gijswijt-term.md)
 
 ## Sources
 

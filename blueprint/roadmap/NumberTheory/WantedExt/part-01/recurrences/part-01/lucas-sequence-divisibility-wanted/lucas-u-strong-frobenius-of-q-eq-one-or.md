@@ -15,7 +15,12 @@ or `P` is even and `Q = -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Frobenius Pseudoprime](is-lucas-frobenius-pseudoprime.md)
+- [Is Lucas Pseudoprime Second Kind](is-lucas-pseudoprime-second-kind.md)
+- [Nondegenerate Lucas Pair](../../../../../MathlibExt/part-02/recurrences/part-02/is-nondegenerate-lucas-pair.md)
+- [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.sidonBlock_one_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sidon Block](sidon-block.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ A Roman dominating function of total weight at most `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Roman Domination Instance](roman-domination-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Theorem 57: over `s`-fixed-points-permutations (every fixed point lies among the
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

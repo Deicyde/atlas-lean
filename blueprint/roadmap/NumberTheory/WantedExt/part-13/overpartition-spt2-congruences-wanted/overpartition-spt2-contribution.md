@@ -12,7 +12,7 @@ not overlined, the number of copies of `s`; otherwise `0` (also for the empty ov
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MetaMathlibExt.digitSumRemainderIntegral_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Sum Remainder Integral](digit-sum-remainder-integral.md)
+
+## Proof depends on
+
+- [Digit Sum Remainder](digit-sum-remainder.md)
 
 ## Sources
 

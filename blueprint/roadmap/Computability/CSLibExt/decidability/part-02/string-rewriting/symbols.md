@@ -11,7 +11,7 @@ The letters of an instance: those of the rules and of both words.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](rule.md)
 
 ## Sources
 

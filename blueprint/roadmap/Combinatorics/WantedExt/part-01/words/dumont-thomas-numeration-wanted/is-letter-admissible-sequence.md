@@ -14,6 +14,10 @@ An admissible sequence `(mᵢ, aᵢ)_{i = 0, …, k}` is `a`-admissible when mor
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Admissible Sequence](is-admissible-sequence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.DumontThomasNumerationWanted](../../../../../../sources/v2/WantedExt.md)

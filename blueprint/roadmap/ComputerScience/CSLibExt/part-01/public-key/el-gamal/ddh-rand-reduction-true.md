@@ -13,7 +13,15 @@ so the reduction outputs `true` with probability exactly `1/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adversary](adversary.md)
+- [Ddh Rand](ddh-rand.md)
+- [Reduction](reduction.md)
+
+## Proof depends on
+
+- [Pick](pick.md)
+- [Gpow](../diffie-hellman/gpow.md)
+- [Gpow Equiv](../diffie-hellman/gpow-equiv.md)
 
 ## Sources
 

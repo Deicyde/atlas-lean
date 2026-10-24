@@ -12,7 +12,11 @@ A gap-only tail in `ys` stays in the band when its endpoints do.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Banded From](banded-from.md)
+
+## Proof depends on
+
+- [Abs le of between](abs-le-of-between.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ weight (`x`), number of parts (`y`) and middle summand (`z`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Palindromic Arndt Count](palindromic-arndt-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.ArndtCompositionsWanted](../../../../../../../sources/v2/WantedExt.md)

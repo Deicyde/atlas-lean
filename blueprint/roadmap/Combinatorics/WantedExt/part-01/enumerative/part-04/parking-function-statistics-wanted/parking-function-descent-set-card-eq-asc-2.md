@@ -12,7 +12,8 @@ functions with ascent set `I`, stated as equality of the two finite cardinalitie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+- [Is Partial Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
 
 ## Sources
 

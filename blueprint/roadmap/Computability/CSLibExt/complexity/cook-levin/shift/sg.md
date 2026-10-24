@@ -11,7 +11,11 @@ Sign of literal `l`: only the last one is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CL](cl.md)
+
+## Proof depends on
+
+- [Nl](nl.md)
 
 ## Sources
 

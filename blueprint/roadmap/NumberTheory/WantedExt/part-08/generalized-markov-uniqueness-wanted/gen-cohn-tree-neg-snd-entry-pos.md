@@ -12,7 +12,8 @@ positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Tree](farey-tree.md)
+- [Gen Cohn Tree](gen-cohn-tree.md)
 
 ## Sources
 

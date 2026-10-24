@@ -15,7 +15,8 @@ every minimal complete block (at any position in `ℤ`) is one starting at some 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Placement](partial-placement.md)
+- [Throwback](throwback.md)
 
 ## Sources
 

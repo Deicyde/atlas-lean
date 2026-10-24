@@ -11,7 +11,7 @@ One backward step on a table of the next step's values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Evaluation check: `k₁₀₁ = 0` (OEIS A285431), read from `K₇`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling Word](kimberling-word.md)
 
 ## Sources
 

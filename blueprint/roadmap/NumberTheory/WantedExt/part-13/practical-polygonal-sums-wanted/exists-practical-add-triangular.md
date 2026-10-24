@@ -11,7 +11,8 @@ Every positive integer is a practical number plus a triangular number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Practical Number](../../../MathlibExt/part-09/is-practical-number.md)
+- [Polygonal Number](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
 
 ## Sources
 

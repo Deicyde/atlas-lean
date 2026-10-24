@@ -11,7 +11,12 @@ Overflow clause `(t, i, k, r)`: `¬S[t,i] ∨ C[t+1,k,H−c+p+r,⊥]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [C Idx](../family/c-idx.md)
+- [X Idx](../family/x-idx.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The log-density: `log N(x | μ, S) = -(n / 2) log (2 π) - (1 / 2) log det S
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multivariate Gaussian PDFReal](../gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

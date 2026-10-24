@@ -12,7 +12,7 @@ lean: MetaMathlibExt.FastVanDerWaerdenGame.zeroGeometricSet_add_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zero Geometric Set](zero-geometric-set.md)
 
 ## Sources
 

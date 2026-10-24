@@ -15,7 +15,7 @@ hold trivially at `m = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tverberg Sum](tverberg-sum.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ is expanded as `qPochhammerInfRaw (q ^ k) (q ^ k)`; this is the only notational 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf Raw](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
 
 ## Sources
 

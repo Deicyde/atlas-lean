@@ -11,7 +11,8 @@ Corollary 4.10: `C^M₁,ₛ = (9^{s-1} - 1 + X₁)/(3(X₁ + 3·9^{s-2} - 1))` f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Array M](circuit-array-m.md)
+- [Circuit Var](circuit-var.md)
 
 ## Sources
 

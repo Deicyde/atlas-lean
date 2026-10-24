@@ -15,6 +15,11 @@ result is the pair (proposal, accepted?).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Accept Prob](accept-prob.md)
+- [Coin](coin.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Sampling.Rejection](../../../../../../sources/v2/CSLibExt.md)

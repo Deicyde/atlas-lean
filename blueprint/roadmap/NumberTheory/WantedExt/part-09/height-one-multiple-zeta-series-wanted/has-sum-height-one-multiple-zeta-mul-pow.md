@@ -12,7 +12,8 @@ For `Re s > 1`, `|r - 1| < |s - 1|` and `Re r < Re s` (where (2.2) converges),
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height One Multiple Zeta](height-one-multiple-zeta.md)
+- [Multiple Hurwitz Zeta](multiple-hurwitz-zeta.md)
 
 ## Sources
 

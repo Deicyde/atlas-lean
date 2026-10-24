@@ -13,7 +13,8 @@ product, including its lower and upper endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Product Block](odd-product-block.md)
+- [Odd Range Product](odd-range-product.md)
 
 ## Sources
 

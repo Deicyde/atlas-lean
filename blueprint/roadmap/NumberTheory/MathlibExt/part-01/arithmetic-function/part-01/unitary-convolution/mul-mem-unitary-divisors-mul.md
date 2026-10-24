@@ -13,7 +13,7 @@ For coprime `m` and `n`, the product of a unitary divisor of `m` and a unitary d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

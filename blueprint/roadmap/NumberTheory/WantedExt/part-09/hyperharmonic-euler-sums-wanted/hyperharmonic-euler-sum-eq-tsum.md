@@ -12,7 +12,12 @@ lean: MetaMathlibExt.hyperharmonicEulerSum_eq_tsum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
+- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
+
+## Proof depends on
+
+- [Generalized Hyperharmonic of lt](generalized-hyperharmonic-of-lt.md)
 
 ## Sources
 

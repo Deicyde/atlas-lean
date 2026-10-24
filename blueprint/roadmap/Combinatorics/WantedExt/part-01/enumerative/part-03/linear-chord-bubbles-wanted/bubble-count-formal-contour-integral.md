@@ -21,7 +21,7 @@ calls the result a formal generating function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bubble Count](bubble-count.md)
 
 ## Sources
 

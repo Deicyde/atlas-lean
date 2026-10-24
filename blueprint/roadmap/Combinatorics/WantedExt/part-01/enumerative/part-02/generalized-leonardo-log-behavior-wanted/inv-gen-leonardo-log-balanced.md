@@ -14,7 +14,7 @@ For every `k ≥ 1`, the reciprocals `(1/L_{k,n})_{n ≥ 3}` of the generalized 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](../../../../../../NumberTheory/WantedExt/part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

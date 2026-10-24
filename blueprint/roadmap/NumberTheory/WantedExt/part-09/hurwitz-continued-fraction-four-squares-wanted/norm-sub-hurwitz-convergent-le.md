@@ -11,7 +11,9 @@ lean: MetaMathlibExt.norm_sub_hurwitz_convergent_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hurwitz Legal](hurwitz-legal.md)
+- [Hurwitz P](hurwitz-p.md)
+- [Hurwitz Q](hurwitz-q.md)
 
 ## Sources
 

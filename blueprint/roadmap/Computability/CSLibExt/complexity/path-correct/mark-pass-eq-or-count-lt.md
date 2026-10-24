@@ -12,7 +12,13 @@ A pass changes nothing or sets a new mark.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mark Pass](../path/mark-pass.md)
+
+## Proof depends on
+
+- [Count lt of get D imp](count-lt-of-get-d-imp.md)
+- [Length mark Pass](length-mark-pass.md)
+- [Mark Pass mono](mark-pass-mono.md)
 
 ## Sources
 

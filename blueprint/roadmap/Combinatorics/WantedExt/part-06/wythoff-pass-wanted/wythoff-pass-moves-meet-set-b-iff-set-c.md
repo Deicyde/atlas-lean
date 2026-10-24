@@ -12,7 +12,8 @@ For `x ≥ 9` or `y ≥ 9`, each of the horizontal, vertical, and diagonal move 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Pass Set B](wythoff-pass-set-b.md)
+- [Wythoff Pass Set C](wythoff-pass-set-c.md)
 
 ## Sources
 

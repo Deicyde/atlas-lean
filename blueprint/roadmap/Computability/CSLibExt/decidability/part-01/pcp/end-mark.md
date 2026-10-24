@@ -11,7 +11,7 @@ The end marker `◇`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](sym.md)
 
 ## Sources
 

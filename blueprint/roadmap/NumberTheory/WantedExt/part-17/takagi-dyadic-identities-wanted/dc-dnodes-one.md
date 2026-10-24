@@ -12,7 +12,7 @@ lean: MetaMathlibExt.dcDNodes_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc DNodes](dc-dnodes.md)
 
 ## Sources
 

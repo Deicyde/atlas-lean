@@ -14,6 +14,10 @@ triangle `r, r - 1, …, 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Triangular QBinomial](triangular-qbinomial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.LitCellsPartitionsWanted](../../../../../../../../../sources/v2/WantedExt.md)

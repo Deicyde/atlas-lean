@@ -11,7 +11,7 @@ One parallel round: every node adds its target's distance and jumps to its targe
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

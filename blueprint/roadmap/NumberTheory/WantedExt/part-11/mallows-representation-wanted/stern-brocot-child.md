@@ -11,7 +11,11 @@ The child gap of a Stern–Brocot vertex with gap `(a, b)` (label `a ⊕ b`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Letter](stern-brocot-letter.md)
+
+## Proof depends on
+
+- [Gap Mediant](gap-mediant.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For an s-Zumkeller number with least prime factor `p₁`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SZumkeller](is-szumkeller.md)
 
 ## Sources
 

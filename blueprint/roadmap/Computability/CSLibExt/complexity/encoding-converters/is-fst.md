@@ -11,7 +11,11 @@ Is the state a left-tagged bit?
 
 ## Depends on
 
-This node has no prerequisites.
+- [St](st.md)
+
+## Proof depends on
+
+- [G](../dense-satverifier/g.md)
 
 ## Sources
 

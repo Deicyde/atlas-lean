@@ -12,7 +12,13 @@ The M-rule recursion stops exactly at terminal positions (empty move set).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Slow Nim MRule Length Aux](exact-slow-nim-mrule-length-aux.md)
+- [Exact Slow Nim MRule Move](exact-slow-nim-mrule-move.md)
+- [Slow ANim Moves](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
+
+## Proof depends on
+
+- [Slow ANim Moves singleton eq empty iff](slow-anim-moves-singleton-eq-empty-iff.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ fourth entry, `3 < 4`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Asc Lex LT](asc-lex-lt.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ For the Fibonacci substitution `0 ↦ 01`, `1 ↦ 0`, the digit word `10` leads 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Substitution Automaton](substitution-automaton.md)
 
 ## Sources
 

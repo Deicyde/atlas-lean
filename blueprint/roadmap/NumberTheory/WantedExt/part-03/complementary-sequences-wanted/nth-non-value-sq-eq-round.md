@@ -11,7 +11,7 @@ The `n`-th non-square number is `n + ⌊√n + 1/2⌋`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

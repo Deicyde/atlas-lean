@@ -13,7 +13,11 @@ variables, `nd-[U]_n ≤ 2^n nd-[M]_n`, `nd-[BU]_n ≤ 2^n nd-[BM]_n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bool Fun Var Perm Equiv](is-bool-fun-var-perm-equiv.md)
+- [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
+- [Is Unate Bool Fun](is-unate-bool-fun.md)
+- [Bool Fun Class Count](bool-fun-class-count.md)
+- [Bool Fun Weight](bool-fun-weight.md)
 
 ## Sources
 

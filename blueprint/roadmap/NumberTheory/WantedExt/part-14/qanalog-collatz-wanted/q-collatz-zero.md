@@ -12,7 +12,11 @@ lean: MetaMathlibExt.qCollatz_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Collatz](q-collatz.md)
+
+## Proof depends on
+
+- [Q Collatz X mul](q-collatz-x-mul.md)
 
 ## Sources
 

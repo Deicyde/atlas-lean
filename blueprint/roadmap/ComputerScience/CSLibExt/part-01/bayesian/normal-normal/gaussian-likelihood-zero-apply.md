@@ -13,7 +13,7 @@ the point mass at `θ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gaussian Likelihood](gaussian-likelihood.md)
 
 ## Sources
 

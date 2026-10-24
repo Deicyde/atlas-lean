@@ -12,7 +12,7 @@ The Weighted Cross has total weight `26`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Cross Weight](weighted-cross-weight.md)
 
 ## Sources
 

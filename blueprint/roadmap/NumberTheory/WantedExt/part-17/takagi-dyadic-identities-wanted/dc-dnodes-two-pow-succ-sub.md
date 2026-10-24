@@ -11,7 +11,7 @@ Lemma 18: for `0 ≤ r ≤ 2^k`, `δ(2^(k+1) - r) = δ(2^k + r)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc DNodes](dc-dnodes.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MetaMathlibExt.quadrupleVSet_subset
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quadruple VSet](quadruple-vset.md)
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+
+## Proof depends on
+
+- [Last Descent Top](last-descent-top.md)
 
 ## Sources
 

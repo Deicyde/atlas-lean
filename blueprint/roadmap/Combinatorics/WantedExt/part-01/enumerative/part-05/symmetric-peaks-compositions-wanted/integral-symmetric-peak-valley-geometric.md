@@ -15,7 +15,10 @@ heights `p q (n - 2) / (1 - q³)`, and the sum of valley depths
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Peak Count](symmetric-peak-count.md)
+- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
+- [Symmetric Valley Count](symmetric-valley-count.md)
+- [Symmetric Valley Depth Sum](symmetric-valley-depth-sum.md)
 
 ## Sources
 

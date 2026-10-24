@@ -11,7 +11,9 @@ For `m ≥ 1` and `n ≥ m + 1`, `T^{(m)}_{t(m,n)} = B^{(m+1)}_{t(m+1,n)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block](gijswijt-block.md)
+- [Gijswijt Block Index](gijswijt-block-index.md)
+- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
 
 ## Sources
 

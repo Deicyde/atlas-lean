@@ -11,7 +11,11 @@ The initial configuration on the bits `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cfg](cfg.md)
+
+## Proof depends on
+
+- [Input](input.md)
 
 ## Sources
 

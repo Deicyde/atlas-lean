@@ -13,7 +13,9 @@ Mansour and Shattuck's Lemma 2, recurrence (3): for `1 < i < n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Area Dist](area-dist.md)
+- [Catalan Growth Words](catalan-growth-words.md)
+- [Catalan Max End Capacity Dist](catalan-max-end-capacity-dist.md)
 
 ## Sources
 

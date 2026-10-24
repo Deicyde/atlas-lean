@@ -12,7 +12,13 @@ satisfying each conjunct.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HAssertion](hassertion.md)
+
+## Proof depends on
+
+- [Heap](../heap/heap.md)
+- [Disjoint](../heap/disjoint.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For `n ≥ 2`, `mpf_{3,n}(1) = n^3 - 2n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Parking Count](metered-parking-count.md)
 
 ## Sources
 

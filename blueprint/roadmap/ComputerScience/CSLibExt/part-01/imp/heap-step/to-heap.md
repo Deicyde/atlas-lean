@@ -11,7 +11,13 @@ The embedding of a plain IMP command into the heap language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cmd](../syntax/cmd.md)
+- [Heap Cmd](heap-cmd.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [BExp](../syntax/bexp.md)
 
 ## Sources
 

@@ -14,6 +14,13 @@ lean: MetaMathlibExt.restrictedSmoothMaxEndCapacityDist
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Capacity Dist](capacity-dist.md)
+- [Restricted Smooth Words](restricted-smooth-words.md)
+- [Words Bounded By](words-bounded-by.md)
+- [Words Ending In](words-ending-in.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CatalanWordsCapacityWanted](../../../../../../../sources/v2/WantedExt.md)

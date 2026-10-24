@@ -12,7 +12,8 @@ Lemma 5: in a full binary tree with `n` leaves and `a(n)` `S`-nodes, the number 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree DNodes](tree-dnodes.md)
+- [Tree SNodes](tree-snodes.md)
 
 ## Sources
 

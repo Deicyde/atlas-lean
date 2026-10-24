@@ -13,7 +13,8 @@ parts, split by the parity of the number of parts, and `C(O, m)` as in Corollary
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
+- [Sigma Odd](sigma-odd.md)
 
 ## Sources
 

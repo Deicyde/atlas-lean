@@ -15,7 +15,22 @@ through the phases.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [HAssertion](hassertion.md)
+- [Heap](../heap/heap.md)
+- [Heap Cmd](../heap-step/heap-cmd.md)
+- [Sep Valid](sep-valid.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [HConfig](../heap-step/hconfig.md)
+- [HStep](../heap-step/hstep.md)
+- [HSteps](../heap-step/hsteps.md)
+- [Safe](../heap-step/safe.md)
 
 ## Sources
 

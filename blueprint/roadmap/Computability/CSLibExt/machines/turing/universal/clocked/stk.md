@@ -12,7 +12,16 @@ the action `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Γ](untitled.md)
+- [Code](../code/code.md)
+- [Cfg](../code/cfg.md)
+
+## Proof depends on
+
+- [Cells](cells.md)
+- [Code Cells](code-cells.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

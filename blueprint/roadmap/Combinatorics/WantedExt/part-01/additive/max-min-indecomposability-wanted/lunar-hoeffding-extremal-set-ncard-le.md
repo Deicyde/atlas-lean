@@ -12,7 +12,7 @@ Lemma 24: for fixed `b ≥ 2` there is `C > 0` such that
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lunar Hoeffding Extremal Set](lunar-hoeffding-extremal-set.md)
 
 ## Sources
 

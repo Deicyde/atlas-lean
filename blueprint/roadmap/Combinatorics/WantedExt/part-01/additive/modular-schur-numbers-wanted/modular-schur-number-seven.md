@@ -14,7 +14,7 @@ if `k = 3, l ∈ {2, 4}`, or `k ∈ {4, 5}, l ∈ {2, 3, 4}`, or `k ≥ 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

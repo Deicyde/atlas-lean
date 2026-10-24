@@ -11,7 +11,8 @@ The first player wins the Peaceable Kings game on every `n × m` board.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Snort First Player Wins](snort-first-player-wins.md)
+- [King Graph](king-graph.md)
 
 ## Sources
 

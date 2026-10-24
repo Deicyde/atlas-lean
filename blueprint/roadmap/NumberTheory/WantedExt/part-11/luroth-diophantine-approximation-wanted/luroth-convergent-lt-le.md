@@ -12,7 +12,9 @@ Lüroth convergents approximate from the left: for `x ∈ (0, 1]` and every `n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Convergent](luroth-convergent.md)
+- [Luroth Denominator](luroth-denominator.md)
+- [Luroth Digit Seq](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
 
 ## Sources
 

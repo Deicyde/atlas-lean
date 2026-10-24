@@ -11,7 +11,8 @@ The transition rule defining `Q_{j+1}` from `Q_j` and the letter `x_j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Stern Brocot Letter](stern-brocot-letter.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Theorem 6 (main result): `α n > a n` for `n > 4`, where
 
 ## Depends on
 
-This node has no prerequisites.
+- [Golden Factorial Exponent](golden-factorial-exponent.md)
+- [Lambert Map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources
 

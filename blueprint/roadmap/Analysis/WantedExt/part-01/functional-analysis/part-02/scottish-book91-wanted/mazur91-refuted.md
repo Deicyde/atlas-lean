@@ -11,7 +11,7 @@ Problem 91 is false in general: the claim fails already in even dimension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem91 Claim](scottish-book-problem91-claim.md)
 
 ## Sources
 

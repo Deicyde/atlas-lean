@@ -12,7 +12,8 @@ of `n` (zero-based `n - 1`) in `f` is the first entry of a lace of `lace(f)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Lace Decomposition](lace-decomposition.md)
 
 ## Sources
 

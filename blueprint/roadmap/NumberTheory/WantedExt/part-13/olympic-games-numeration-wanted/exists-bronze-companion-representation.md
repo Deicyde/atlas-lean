@@ -17,7 +17,10 @@ digits `a_7 = 3`, `a_6 = 1`, `a_3 = 1`) violates (7).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bronze Companion First](bronze-companion-first.md)
+- [Bronze Companion Second](bronze-companion-second.md)
+- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

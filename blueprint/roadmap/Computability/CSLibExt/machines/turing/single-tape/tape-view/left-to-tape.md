@@ -12,7 +12,8 @@ The left half of the view is the half-tape of the left half.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To Tape](to-tape.md)
+- [To List Blank](to-list-blank.md)
 
 ## Sources
 

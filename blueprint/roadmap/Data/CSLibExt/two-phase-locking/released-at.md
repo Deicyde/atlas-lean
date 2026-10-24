@@ -11,7 +11,12 @@ lean: Cslib.Databases.ReleasedAt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+
+## Proof depends on
+
+- [Lock Mode](lock-mode.md)
+- [Op](../serializability/op.md)
 
 ## Sources
 

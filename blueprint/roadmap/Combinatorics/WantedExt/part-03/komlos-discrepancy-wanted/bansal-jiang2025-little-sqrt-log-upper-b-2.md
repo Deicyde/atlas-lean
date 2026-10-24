@@ -11,7 +11,7 @@ Source: BJ2025, arXiv2508.03961, the improvement reported in its abstract.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bansal Jiang2025 Little Sqrt Log Upper Bound](bansal-jiang2025-little-sqrt-log-upper-b.md)
 
 ## Sources
 

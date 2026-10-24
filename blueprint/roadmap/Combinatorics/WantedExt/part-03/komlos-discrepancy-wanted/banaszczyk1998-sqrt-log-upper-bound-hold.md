@@ -11,7 +11,7 @@ Source: optimization catalogue C24a, line 36, Banaszczyk (1998).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Banaszczyk1998 Sqrt Log Upper Bound](banaszczyk1998-sqrt-log-upper-bound.md)
 
 ## Sources
 

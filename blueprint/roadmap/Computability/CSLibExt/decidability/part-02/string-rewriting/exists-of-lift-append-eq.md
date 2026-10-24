@@ -12,7 +12,14 @@ If `uX` equals `v#Y` and `u`, `v` are words of letters, then `u` is a prefix of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../part-01/pcp/sym.md)
+- [Star](../../part-01/pcp/star.md)
+- [Lift](lift.md)
+
+## Proof depends on
+
+- [Letter](../../part-01/pcp/letter.md)
+- [Letter ne star](letter-ne-star.md)
 
 ## Sources
 

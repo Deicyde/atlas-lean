@@ -13,7 +13,7 @@ The coefficients of `N_n(x)` are asymptotically normal with mean `n/2` and varia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minuscule Polynomial A](minuscule-polynomial-a.md)
 
 ## Sources
 

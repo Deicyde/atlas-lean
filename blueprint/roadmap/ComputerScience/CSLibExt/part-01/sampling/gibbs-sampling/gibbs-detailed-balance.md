@@ -13,7 +13,13 @@ at most in coordinate `i`, both sides are `π x π y / Z` with the same normaliz
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibbs Step](gibbs-step.md)
+
+## Proof depends on
+
+- [Cond Law](cond-law.md)
+- [Cond Norm](cond-norm.md)
+- [Update eq comm](update-eq-comm.md)
 
 ## Sources
 

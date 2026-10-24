@@ -11,7 +11,7 @@ Decode a symbol code on stack `k`; invalid codes (and 0) read as ⊥.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](enc.md)
 
 ## Sources
 

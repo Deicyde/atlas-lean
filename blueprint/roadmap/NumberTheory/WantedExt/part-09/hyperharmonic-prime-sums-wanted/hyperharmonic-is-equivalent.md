@@ -12,7 +12,7 @@ Lemma 1 (Mező): for a fixed order `r ≥ 1`, `h_n^{(r)} ∼ n^{r-1} log n / (r-
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyperharmonic](hyperharmonic.md)
 
 ## Sources
 

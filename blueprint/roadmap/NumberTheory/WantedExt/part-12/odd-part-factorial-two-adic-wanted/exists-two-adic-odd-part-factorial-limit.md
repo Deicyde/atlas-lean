@@ -13,7 +13,7 @@ every `e≥1`.  The paper's limiting equality is represented by divisibility in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Part](odd-part.md)
 
 ## Sources
 

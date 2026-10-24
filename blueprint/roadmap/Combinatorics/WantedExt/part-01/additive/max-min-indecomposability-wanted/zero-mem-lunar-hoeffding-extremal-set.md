@@ -13,7 +13,13 @@ In base `2` and degree at most `2`, the zero lunar number is `1`-Hoeffding extre
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lunar Hoeffding Extremal Set](lunar-hoeffding-extremal-set.md)
+
+## Proof depends on
+
+- [Digit Seq](digit-seq.md)
+- [Lunar Level Count](lunar-level-count.md)
+- [Max Min Mul](max-min-mul.md)
 
 ## Sources
 

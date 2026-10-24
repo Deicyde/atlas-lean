@@ -12,7 +12,7 @@ lean: MetaMathlibExt.unitCircleRatMul_three_four_five
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Circle Rat Mul](unit-circle-rat-mul.md)
 
 ## Sources
 

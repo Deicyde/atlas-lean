@@ -14,6 +14,11 @@ are `ls`: gaps of absent slots (`01`) between literal slots.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Encode Slot](../../dense-sat/encode-slot.md)
+- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Family](../../../../../../sources/v2/CSLibExt.md)

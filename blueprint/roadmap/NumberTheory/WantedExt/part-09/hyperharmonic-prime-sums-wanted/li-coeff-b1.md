@@ -21,6 +21,13 @@ the paper's `r + 1` with the paper's `r` equal to `r + 1`, and `G = g(r + 1) = r
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Li Coeff C](li-coeff-c.md)
+- [Li Coeff C1](li-coeff-c1.md)
+- [Li Coeff D](li-coeff-d.md)
+- [Li Coeff D1](li-coeff-d1.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HyperharmonicPrimeSumsWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,6 +13,10 @@ lean: MetaMathlibExt.stdCleanParallelogram
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lattice Parallelogram](lattice-parallelogram.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CleanLatticeParallelogramWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,7 @@ Table 4 values: `a^{(m)}_{1,2,n} = 0, 0, 1, 0, 1, 1, 1, 2` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Schreier Padovan](maximal-schreier-padovan.md)
 
 ## Sources
 

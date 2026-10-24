@@ -14,7 +14,8 @@ set, well based under the paper's equivalent definition, is included (`g = 1/(1-
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Well Based](is-well-based.md)
+- [Restricted Combination Count](restricted-combination-count.md)
 
 ## Sources
 

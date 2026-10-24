@@ -11,7 +11,11 @@ The score of an alignment: the sum of its column scores.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](alignment.md)
+
+## Proof depends on
+
+- [Column Score](column-score.md)
 
 ## Sources
 

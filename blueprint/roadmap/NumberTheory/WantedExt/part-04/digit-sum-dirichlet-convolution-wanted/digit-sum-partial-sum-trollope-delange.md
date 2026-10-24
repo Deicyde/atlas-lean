@@ -13,7 +13,8 @@ The Trollope-Delange formula in base `q`, for real `x ≥ 1`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+- [Trollope Delange Series](trollope-delange-series.md)
 
 ## Sources
 

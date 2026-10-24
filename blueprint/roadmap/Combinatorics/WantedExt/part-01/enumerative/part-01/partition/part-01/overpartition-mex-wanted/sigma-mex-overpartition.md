@@ -16,6 +16,11 @@ Values (by direct enumeration): `σmex̄(0..4) = 1, 3, 6, 13, 24` (the paper's
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Least Gap Overpartition](least-gap-overpartition.md)
+- [Overpartition](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.OverpartitionMexWanted](../../../../../../../../../sources/v2/WantedExt.md)

@@ -18,7 +18,7 @@ The indices `n - 2i < 0` use the extension `F : ℤ → ℝ` of `m ↦ F_m(x)` b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

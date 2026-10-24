@@ -11,7 +11,12 @@ Batcher's bitonic sorting network on `2 ^ k` wires.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](../zero-one/network.md)
+
+## Proof depends on
+
+- [Bitonic Sort N](bitonic-sort-n.md)
+- [Of Pairs](of-pairs.md)
 
 ## Sources
 

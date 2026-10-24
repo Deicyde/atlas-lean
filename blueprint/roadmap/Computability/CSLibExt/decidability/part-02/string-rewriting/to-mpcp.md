@@ -11,7 +11,18 @@ The MPCP instance of a reachability problem. Its first domino is `startCard x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../../part-01/pcp/domino.md)
+- [Sym](../../part-01/pcp/sym.md)
+- [Rule](rule.md)
+
+## Proof depends on
+
+- [Copy Card](copy-card.md)
+- [Final Card](final-card.md)
+- [Rule Card](rule-card.md)
+- [Sep Card](sep-card.md)
+- [Start Card](start-card.md)
+- [Symbols](symbols.md)
 
 ## Sources
 

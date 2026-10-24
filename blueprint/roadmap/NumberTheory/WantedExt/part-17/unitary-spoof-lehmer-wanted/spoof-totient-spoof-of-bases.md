@@ -13,7 +13,8 @@ spoof unitary totient `φ̃*(x_1 ⋯ x_r) = ∏ (x_i - 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Spoof Of Bases](../../part-16/spoof-lehmer-factorization-wanted/spoof-of-bases.md)
+- [Spoof Totient](../../part-16/spoof-lehmer-factorization-wanted/spoof-totient.md)
 
 ## Sources
 

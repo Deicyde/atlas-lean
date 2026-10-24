@@ -13,7 +13,8 @@ number of such partitions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
+- [Sigma Odd](sigma-odd.md)
 
 ## Sources
 

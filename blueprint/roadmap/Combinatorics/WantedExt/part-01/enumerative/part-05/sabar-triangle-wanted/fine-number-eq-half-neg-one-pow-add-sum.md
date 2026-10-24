@@ -12,7 +12,7 @@ Corollary 3: for `n ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fine Number](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
 
 ## Sources
 

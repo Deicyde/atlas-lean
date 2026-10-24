@@ -12,7 +12,7 @@ The Lucas-sequence parameters `(P, Q) = (k, -2)` of the `k`-Jacobsthal numbers
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

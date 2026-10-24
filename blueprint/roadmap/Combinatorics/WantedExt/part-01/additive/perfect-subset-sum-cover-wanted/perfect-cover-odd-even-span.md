@@ -14,7 +14,7 @@ Let `s = (s_1, …, s_{m+n})`, `s_i = (x_i, y_i)`, be a perfect cover of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect MCover](is-perfect-mcover.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ The recurrence of the guess sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle Guess](perm-wordle-guess.md)
+- [Perm Wordle Next Guess](perm-wordle-next-guess.md)
 
 ## Sources
 

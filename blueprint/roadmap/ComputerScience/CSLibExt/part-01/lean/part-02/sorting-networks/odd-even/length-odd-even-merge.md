@@ -12,7 +12,12 @@ The merger on `2 ^ (k + 1)` wires has `k 2 ^ k + 1` comparators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Even Merge](odd-even-merge.md)
+
+## Proof depends on
+
+- [Final Layer](final-layer.md)
+- [Relabel](relabel.md)
 
 ## Sources
 

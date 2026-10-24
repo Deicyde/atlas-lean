@@ -12,7 +12,15 @@ lean: MetaMathlibExt.pedNineNine_zero_and_pedNineEighteen_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ped Nine Eighteen](ped-nine-eighteen.md)
+- [Ped Nine Nine](ped-nine-nine.md)
+
+## Proof depends on
+
+- [Constant Coeff q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
+- [Ped Nine Eighteen generating Function](ped-nine-eighteen-generating-function.md)
+- [Ped Nine Nine generating Function](ped-nine-nine-generating-function.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The `n × n` matrix `S_α(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Alpha Stirling Entry](alpha-stirling-entry.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PascalStirlingGeneralizationWanted](../../../../../../../sources/v2/WantedExt.md)

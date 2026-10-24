@@ -13,7 +13,7 @@ each factor as printed, and integer products allow arbitrary signs of `A,B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Below Two Pow](odd-below-two-pow.md)
 
 ## Sources
 

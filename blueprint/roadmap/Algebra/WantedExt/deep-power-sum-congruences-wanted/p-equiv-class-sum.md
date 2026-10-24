@@ -15,6 +15,10 @@ symmetric polynomial in finitely many variables over `ℚ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [P Equiv Class](p-equiv-class.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.DeepPowerSumCongruencesWanted](../../../../sources/v2/WantedExt.md)

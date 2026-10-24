@@ -12,7 +12,22 @@ lean: Cslib.Algorithms.Lean.AStar.aStar_distance_minimal
 
 ## Depends on
 
-This node has no prerequisites.
+- [AStar Result](astar-result.md)
+- [Consistent](consistent.md)
+- [A Star](a-star.md)
+- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
+- [Has Path Weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
+
+## Proof depends on
+
+- [Path Weight reduced Weight](path-weight-reduced-weight.md)
+- [Reduced Weight](reduced-weight.md)
+- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Edge](../../graph/directed-adjacency-2/edge.md)
+- [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
+- [Dijkstra distance minimal](../../graph/shortest-path/dijkstra/dijkstra-distance-minimal.md)
+- [Path Weight](../../graph/shortest-path/dijkstra/path-weight.md)
 
 ## Sources
 

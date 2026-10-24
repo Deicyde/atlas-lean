@@ -11,7 +11,13 @@ The Davis-Putnam procedure: eliminate every variable, then check for the empty c
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Eliminate All](eliminate-all.md)
+- [Var List](var-list.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

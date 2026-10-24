@@ -15,7 +15,8 @@ $\mathbb{R}^2$ is contained in the Newton polygon of $f$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Newton Polygon](newton-polygon.md)
+- [Newton Polygon Interior](newton-polygon-interior.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The paper's second iterated truncated logarithm `Log₂ x = Log (Log x)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trunc Log](trunc-log.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LcmDenseSetsWanted](../../../../../sources/v2/WantedExt.md)

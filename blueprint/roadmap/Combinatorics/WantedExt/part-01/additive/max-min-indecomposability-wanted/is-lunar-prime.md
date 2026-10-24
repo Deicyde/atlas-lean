@@ -15,6 +15,11 @@ A prime lunar number of base `b` (Applegate, LeBrun and Sloane): every factoriza
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lunar Unit](lunar-unit.md)
+- [Max Min Mul](max-min-mul.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.MaxMinIndecomposabilityWanted](../../../../../../sources/v2/WantedExt.md)

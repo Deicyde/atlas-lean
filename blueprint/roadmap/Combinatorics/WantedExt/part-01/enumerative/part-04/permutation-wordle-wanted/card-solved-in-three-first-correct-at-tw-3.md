@@ -12,7 +12,10 @@ three guesses with `ρ_CSL(π) = 2` is `L_n - n - 1`, `L_n` the `n`-th Lucas num
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
+- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [Cyclic Shift Left Strategy](cyclic-shift-left-strategy.md)
+- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

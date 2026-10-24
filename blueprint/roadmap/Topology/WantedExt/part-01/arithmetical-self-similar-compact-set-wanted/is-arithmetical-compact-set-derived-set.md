@@ -12,7 +12,7 @@ and ratio `ρ` is an arithmetical compact set of the same module and ratio.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Compact Set](is-arithmetical-compact-set.md)
 
 ## Sources
 

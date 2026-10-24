@@ -12,7 +12,20 @@ After all events left of `px`, the status list is sorted (non-strictly) at `px`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Events](events.md)
+- [Left](left.md)
+- [Point](point.md)
+- [Right](right.md)
+- [Run](run.md)
+- [Line Y](line-y.md)
+
+## Proof depends on
+
+- [Key](key.md)
+- [Pairwise le of pairwise lt](pairwise-le-of-pairwise-lt.md)
+- [Run mem iff](run-mem-iff.md)
+- [Phase one](run-pairwise-lt.md)
 
 ## Sources
 

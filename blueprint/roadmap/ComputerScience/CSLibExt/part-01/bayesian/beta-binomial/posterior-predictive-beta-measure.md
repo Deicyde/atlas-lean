@@ -13,7 +13,12 @@ in `n` trials, the next trial succeeds with probability `(a + k) / (a + b + n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Kernel](binomial-kernel.md)
+
+## Proof depends on
+
+- [Binomial Kernel one comp beta Measure](binomial-kernel-one-comp-beta-measure.md)
+- [Beta–binomial conjugacy](posterior-binomial-kernel-beta-measure.md)
 
 ## Sources
 

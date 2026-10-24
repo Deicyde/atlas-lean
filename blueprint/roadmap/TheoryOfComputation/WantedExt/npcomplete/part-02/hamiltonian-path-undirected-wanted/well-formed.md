@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hamiltonian Path Undirected Instance](hamiltonian-path-undirected-instance.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Source: Nikolov, arXiv1301.4039, retained Theorem `thm:main`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nikolov2013 Vector Coloring Bound](nikolov2013-vector-coloring-bound.md)
 
 ## Sources
 

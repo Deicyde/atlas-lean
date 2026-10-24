@@ -12,7 +12,12 @@ Being `1`-dense in `M` means containing `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dense In Cubes](is-dense-in-cubes.md)
+
+## Proof depends on
+
+- [Lattice Cube](lattice-cube.md)
+- [Lattice Cube one](lattice-cube-one.md)
 
 ## Sources
 

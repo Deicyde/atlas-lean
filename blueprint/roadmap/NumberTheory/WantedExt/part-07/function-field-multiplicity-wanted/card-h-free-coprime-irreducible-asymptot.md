@@ -17,7 +17,9 @@ displayed zeta factor has a pole at `ℓ = 1`, so the formal statement restricts
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [H Free](h-free.md)
+- [Monic Irreducible](monic-irreducible.md)
 
 ## Sources
 

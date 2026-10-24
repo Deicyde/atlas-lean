@@ -14,6 +14,11 @@ The function field analogue of the first Mertens constant,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Monic Irreducible](monic-irreducible.md)
+- [Poly Norm](poly-norm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,14 @@ with `μ_x ∈ Ẽ` of order `n`, `δ(x) = z(x)/x^γ ∼ δ*(∑ rev_n(μ_x) Q̃
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Subcollection Count](subcollection-count.md)
+- [Zeckendorf Delta Star](zeckendorf-delta-star.md)
+- [Zeckendorf Eval](zeckendorf-eval.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+- [Zeckendorf Rev](zeckendorf-rev.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Corollary 31: for `n = 2^k + r` with `0 ≤ r < 2^k` and `x = r/2^k`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc DNodes](dc-dnodes.md)
+- [Takagi Newdef](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/takagi-function/takagi-newdef.md)
 
 ## Sources
 

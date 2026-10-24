@@ -12,7 +12,8 @@ numbers of `ℒ_2`) with nonzero constant term which are prime tends to `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lunar Prime](is-lunar-prime.md)
+- [Digit Seq](digit-seq.md)
 
 ## Sources
 

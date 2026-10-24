@@ -14,6 +14,11 @@ zero, `rep_F(0)` empty), for `F_0 = 1`, `F_1 = 2`, `F_{i+2} = F_{i+1} + F_i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Digit Count](fib-digit-count.md)
+- [Fib Greedy Digits](fib-greedy-digits.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WythoffTerminalPositionsWanted](../../../../../sources/v2/WantedExt.md)

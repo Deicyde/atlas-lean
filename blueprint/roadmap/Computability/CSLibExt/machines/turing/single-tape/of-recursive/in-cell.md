@@ -11,7 +11,7 @@ The tape symbol of the input bit `b`: the cell holding `b` on the input stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](../of-tm0/non-blank.md)
 
 ## Sources
 

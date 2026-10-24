@@ -13,7 +13,8 @@ For integers `k ≥ 0`, `p > m ≥ 0` and `a > -k`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sum Period Algebra](euler-sum-period-algebra.md)
+- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
 
 ## Sources
 

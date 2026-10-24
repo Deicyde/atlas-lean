@@ -13,7 +13,7 @@ integrable function. This specialises `PMF.integral_eq_tsum` to `ℝ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect](expect.md)
 
 ## Sources
 

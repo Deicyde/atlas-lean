@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Common Induced Subgraph Instance](maximum-common-induced-subgraph-instance.md)
 
 ## Sources
 

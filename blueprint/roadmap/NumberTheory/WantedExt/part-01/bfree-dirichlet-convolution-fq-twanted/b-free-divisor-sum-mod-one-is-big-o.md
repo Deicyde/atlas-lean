@@ -14,7 +14,9 @@ Theorem 3, case `h = 1`: for `κ ≥ 2`, `m ≠ 0`, `(a, m) = 1` and every `ε >
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Divisor Sum Mod](b-free-divisor-sum-mod.md)
+- [Fq Norm](fq-norm.md)
+- [Kappa Min](kappa-min.md)
 
 ## Sources
 

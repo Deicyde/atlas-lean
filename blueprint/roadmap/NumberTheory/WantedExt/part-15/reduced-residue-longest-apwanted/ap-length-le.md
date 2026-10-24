@@ -13,7 +13,7 @@ terms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reduced Residue Window](reduced-residue-window.md)
 
 ## Sources
 

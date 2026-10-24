@@ -13,7 +13,11 @@ geometric series and quartic satisfies the Ehrhart-series identity of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is HStar Polynomial](is-hstar-polynomial.md)
+- [Almost IDPQuartic](almost-idpquartic.md)
+- [Almost IDPWeights](almost-idpweights.md)
+- [Even Geometric Factor](even-geometric-factor.md)
+- [Weighted Simplex](weighted-simplex.md)
 
 ## Sources
 

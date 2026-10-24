@@ -11,7 +11,12 @@ The label a walking label moves to on a token.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [Nxt](nxt.md)
 
 ## Sources
 

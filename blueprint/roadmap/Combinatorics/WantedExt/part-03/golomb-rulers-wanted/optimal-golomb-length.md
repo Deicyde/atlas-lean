@@ -14,6 +14,10 @@ pinned to `0` at `m = 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Golomb Ruler Lengths](golomb-ruler-lengths.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.GolombRulersWanted](../../../../../sources/v2/WantedExt.md)

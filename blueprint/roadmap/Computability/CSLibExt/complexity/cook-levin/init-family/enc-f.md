@@ -11,7 +11,13 @@ Input symbols as codes `< g`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [Enc](../situation/part-01/enc.md)
+- [Layout](../situation/part-01/layout.md)
+
+## Proof depends on
+
+- [G](../situation/part-01/g.md)
 
 ## Sources
 

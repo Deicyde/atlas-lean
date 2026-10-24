@@ -12,7 +12,7 @@ Values `𝔻^+_4 = 1`, `𝔻^+_5 = 3`, `𝔻^+_9 = 5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator Large Part](bernoulli-diff-denominator-large-part.md)
 
 ## Sources
 

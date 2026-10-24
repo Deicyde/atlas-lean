@@ -11,7 +11,13 @@ One clause; its literals are walked from the last one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](col-st.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Col Lits](col-lits.md)
+- [Col Occ](col-occ.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ length-`n` blocks `u` such that both `u0` and `u1` are factors of `a`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Factor Set](../../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.MetaAutomaticSequencesWanted](../../../../../../sources/v2/WantedExt.md)

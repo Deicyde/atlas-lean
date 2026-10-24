@@ -12,7 +12,7 @@ lean: MetaMathlibExt.qEulerProduct_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](q-euler-product.md)
 
 ## Sources
 

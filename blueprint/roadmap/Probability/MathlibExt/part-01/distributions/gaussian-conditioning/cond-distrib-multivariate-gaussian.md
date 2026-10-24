@@ -14,7 +14,15 @@ of `X` given `Y = y` is `N(μ_X + S₁₂ S₂₂⁻¹ (y - μ_Y), S₁₁ - S�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block Row](block-row.md)
+
+## Proof depends on
+
+- [Gaussian conditioning](cond-distrib-of-has-gaussian-law.md)
+- [Covariance inner of map eq](covariance-inner-of-map-eq.md)
+- [Map add multivariate Gaussian](map-add-multivariate-gaussian.md)
+- [Linear images of multivariate Gaussians](map-to-euclidean-lin-multivariate-gaussi.md)
+- [Noise Kernel](noise-kernel.md)
 
 ## Sources
 

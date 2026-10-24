@@ -14,7 +14,7 @@ state `0`, output `τ(q) = q mod 2`, and transitions `δ(0, ·) = 0132`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic Two](meta-automatic-two.md)
 
 ## Sources
 

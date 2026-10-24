@@ -12,7 +12,14 @@ lean: Cslib.MachineLearning.Sequence.KalmanFilter.update_valid
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
+- [Valid](valid.md)
+- [Update](update.md)
+
+## Proof depends on
+
+- [Update cov eq](update-cov-eq.md)
+- [The posterior covariance is positive semidefinite](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-conditioning/pos-semidef-sub-mul-inv-mul.md)
 
 ## Sources
 

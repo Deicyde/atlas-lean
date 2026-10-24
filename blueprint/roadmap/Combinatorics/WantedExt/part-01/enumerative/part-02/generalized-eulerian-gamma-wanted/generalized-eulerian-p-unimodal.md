@@ -15,7 +15,7 @@ is not part of it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Eulerian P](generalized-eulerian-p.md)
 
 ## Sources
 

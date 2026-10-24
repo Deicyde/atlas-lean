@@ -12,7 +12,8 @@ The length of an encoded instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Bits](../color/edge-bits.md)
+- [Encode P](../../../path/encode-p.md)
 
 ## Sources
 

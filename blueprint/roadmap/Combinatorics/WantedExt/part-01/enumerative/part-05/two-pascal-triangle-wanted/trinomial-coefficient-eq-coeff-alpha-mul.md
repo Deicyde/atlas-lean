@@ -17,7 +17,7 @@ cancel and `α = -2 (2Q + t^2 S - t) / (Q (3t^4 + 2tS - t^2 - 4))` has rational 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

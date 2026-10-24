@@ -13,6 +13,10 @@ Reachability by a directed path of length at most `n + 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [DAdj](dadj.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.MinimumEquivalentDigraphWanted](../../../../../../sources/v2/WantedExt.md)

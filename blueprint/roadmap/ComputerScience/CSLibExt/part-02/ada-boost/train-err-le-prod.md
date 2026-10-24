@@ -12,7 +12,19 @@ lean: Cslib.MachineLearning.AdaBoost.trainErr_le_prod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Train Err](train-err.md)
+- [Zee](zee.md)
+
+## Proof depends on
+
+- [Alpha](alpha.md)
+- [Dist](dist.md)
+- [Unrolling the weights](dist-mul-prod.md)
+- [Err](err.md)
+- [Hyp](hyp.md)
+- [Normalizer](normalizer.md)
+- [Score](score.md)
+- [Sign](../perceptron/sign.md)
 
 ## Sources
 

@@ -17,6 +17,12 @@ about `B` assumes `0 < k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Exact Slow Nim Basic A0](is-exact-slow-nim-basic-a0.md)
+- [Is Exact Slow Nim Basic A1](is-exact-slow-nim-basic-a1.md)
+- [Is Exact Slow Nim Basic B](is-exact-slow-nim-basic-b.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.ExactSlowNimRemotenessWanted](../../../../sources/v2/WantedExt.md)

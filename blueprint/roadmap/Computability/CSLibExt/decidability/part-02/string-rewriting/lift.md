@@ -11,7 +11,11 @@ A word over `α` as a word of letters of `Sym α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../part-01/pcp/sym.md)
+
+## Proof depends on
+
+- [Letter](../../part-01/pcp/letter.md)
 
 ## Sources
 

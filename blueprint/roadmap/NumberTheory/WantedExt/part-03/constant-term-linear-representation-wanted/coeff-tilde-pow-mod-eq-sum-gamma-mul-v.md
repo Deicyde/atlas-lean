@@ -12,7 +12,7 @@ The step `γ̃(k) · Ṽ(n) = Ṽ(pn + k)` over `ℤ/p^aℤ`, entrywise, for `P�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Deg](laurent-deg.md)
 
 ## Sources
 

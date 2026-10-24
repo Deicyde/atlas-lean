@@ -13,7 +13,14 @@ otherwise.  For `R = cycleGraph m` this is the paper's `Ā`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination Signature](domination-signature.md)
+
+## Proof depends on
+
+- [Domination Compatible](domination-compatible.md)
+- [Domination State](domination-state.md)
+- [Is Domination Signature](is-domination-signature.md)
+- [Occupied Count](occupied-count.md)
 
 ## Sources
 

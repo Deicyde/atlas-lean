@@ -12,7 +12,12 @@ lean: MetaMathlibExt.one_mem_negBaseSqDigitCycles
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Base Sq Digit Cycles](neg-base-sq-digit-cycles.md)
+
+## Proof depends on
+
+- [Is Neg Base Happy one](is-neg-base-happy-one.md)
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
 
 ## Sources
 

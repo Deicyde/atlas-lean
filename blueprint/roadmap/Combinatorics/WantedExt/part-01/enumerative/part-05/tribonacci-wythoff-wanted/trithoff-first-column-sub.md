@@ -14,7 +14,9 @@ letters `a` and `b` in the Tribonacci word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Letter](../../../../../MathlibExt/part-01/infinite-word/tribonacci/tribonacci-letter.md)
+- [Tribonacci Word](../../../../../MathlibExt/part-01/infinite-word/tribonacci/tribonacci-word.md)
+- [Is Tribonacci Repr](is-tribonacci-repr.md)
 
 ## Sources
 

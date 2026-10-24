@@ -12,7 +12,13 @@ A Zeckendorf collection contains the zero coefficient function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
+
+## Proof depends on
+
+- [Asc Lex LT](asc-lex-lt.md)
+- [Is Immediate Predecessor](is-immediate-predecessor.md)
+- [Is Immediate Successor](is-immediate-successor.md)
 
 ## Sources
 

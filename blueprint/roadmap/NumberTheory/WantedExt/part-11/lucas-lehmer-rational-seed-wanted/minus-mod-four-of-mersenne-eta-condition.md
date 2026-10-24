@@ -12,7 +12,9 @@ then `s_1^- ≡ 1 (mod 4)` and `s_1^+ ≡ -1 (mod 4)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Squarefree Part](is-odd-squarefree-part.md)
+- [Mersenne Eta Condition](mersenne-eta-condition.md)
+- [Mersenne Omega](mersenne-omega.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ long enough to contain it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Period Doubling](period-doubling.md)
+- [Period Doubling Word](period-doubling-word.md)
+
+## Proof depends on
+
+- [Length period Doubling Word](length-period-doubling-word.md)
 
 ## Sources
 

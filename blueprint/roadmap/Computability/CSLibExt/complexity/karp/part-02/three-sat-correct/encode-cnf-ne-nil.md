@@ -12,7 +12,13 @@ No formula encodes to the empty string.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode CNF](../../../../cook-levin/encode-cnf.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Encode Clause](../../../../cook-levin/encode-clause.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

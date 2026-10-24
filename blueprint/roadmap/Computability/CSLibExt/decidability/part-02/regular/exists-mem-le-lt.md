@@ -13,7 +13,14 @@ it accepted and at least that long, until it is shorter than twice that number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+- [Language](../../../automata/da/encoded-dfa/language.md)
+- [States](../../../automata/da/encoded-dfa/states.md)
+
+## Proof depends on
+
+- [To DFA](../../../automata/da/encoded-dfa/to-dfa.md)
+- [To Fin DFA](to-fin-dfa.md)
 
 ## Sources
 

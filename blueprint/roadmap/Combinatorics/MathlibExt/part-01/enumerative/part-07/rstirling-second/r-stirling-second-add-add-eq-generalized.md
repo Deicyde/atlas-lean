@@ -13,7 +13,12 @@ Bridge to the real-parameter generalized Stirling numbers:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Stirling Second](../../part-04/generalized-stirling-numbers/generalized-stirling-second.md)
+- [R Stirling Second](r-stirling-second.md)
+
+## Proof depends on
+
+- [R Stirling Second add add](r-stirling-second-add-add.md)
 
 ## Sources
 

@@ -14,7 +14,19 @@ of `diag f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code Time](code-time.md)
+- [The diagonal language](diag.md)
+- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Code Cells](../clocked/code-cells.md)
+- [Code](../code/code.md)
+- [Decides Within](decides-within.md)
+- [The clocked evaluator](../code/eval-steps.md)
+- [Bit Sym](../code/bit-sym.md)
+- [The diagonal language on a code stack](diag-code-cells.md)
 
 ## Sources
 

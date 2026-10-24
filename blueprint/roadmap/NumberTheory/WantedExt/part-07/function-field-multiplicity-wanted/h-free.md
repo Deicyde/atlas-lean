@@ -15,6 +15,10 @@ natural `h`; the paper's asymptotic theorems separately assume `2 ≤ h`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Monic Irreducible](monic-irreducible.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

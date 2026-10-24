@@ -12,7 +12,12 @@ lean: MetaMathlibExt.extendedContinuant_neg_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
+
+## Proof depends on
+
+- [Extended Continuant Bwd](extended-continuant-bwd.md)
+- [Extended Continuant Fwd](extended-continuant-fwd.md)
 
 ## Sources
 

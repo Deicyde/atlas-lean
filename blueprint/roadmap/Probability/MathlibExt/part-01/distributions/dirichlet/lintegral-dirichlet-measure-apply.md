@@ -12,7 +12,15 @@ The **mean of the Dirichlet distribution**: `E[θᵢ] = αᵢ / ∑ α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet Measure](dirichlet-measure.md)
+
+## Proof depends on
+
+- [Dirichlet Density](dirichlet-density.md)
+- [The Dirichlet integral](lintegral-dirichlet-density.md)
+- [Multi Beta](multi-beta.md)
+- [Simplex Completion](simplex-completion.md)
+- [Dirichlet–multinomial conjugacy](with-density-prod-pow-dirichlet-measure.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The codewords of a linear code over `F_q`, as a finite set of size `q ^ dim C`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: MetaMathlibExt.perimeterResidueCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.FixedPerimeterAlderWanted](../../../../../../../../../sources/v2/WantedExt.md)

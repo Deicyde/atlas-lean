@@ -12,7 +12,12 @@ Projection distributes over union.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
+- [Project](project.md)
+
+## Proof depends on
+
+- [Restrict](restrict.md)
 
 ## Sources
 

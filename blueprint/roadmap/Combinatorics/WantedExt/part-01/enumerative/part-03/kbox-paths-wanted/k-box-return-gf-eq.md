@@ -12,7 +12,8 @@ with the denominator cleared and `G_{k+1}` mapped into `ℤ[t]⟦x⟧`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augmented KDyck GF](augmented-kdyck-gf.md)
+- [K Box Return GF](k-box-return-gf.md)
 
 ## Sources
 

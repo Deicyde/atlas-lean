@@ -13,6 +13,10 @@ An integer `a` is `b`-happy if `S_{2,b}^k(a) = 1` for some `k ≥ 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.NegativeBaseHappyNumbersWanted](../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ points of a uniform `k`-permutation of `[n]`, stated with the denominator `c(n, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ If `p ≡ 1 (mod 4)` is prime, `e ≥ 1`, and `n = p^e`, then `𝒫_n` is coprim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Resultant Product](truncated-log-resultant-product.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.valuationCurvePoints_card_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valuation Curve Points](valuation-curve-points.md)
 
 ## Sources
 

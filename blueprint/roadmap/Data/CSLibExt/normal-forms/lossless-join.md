@@ -13,7 +13,15 @@ of `R₁ ∪ R₂` is the join of its two projections.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](../functional-dependencies/fd.md)
+
+## Proof depends on
+
+- [Is Over](../relational-algebra/is-over-2.md)
+- [Satisfies On](satisfies-on.md)
+- [Tuple](../relational-algebra/tuple.md)
+- [Join](../relational-algebra/join.md)
+- [Project](../relational-algebra/project.md)
 
 ## Sources
 

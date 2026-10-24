@@ -13,7 +13,13 @@ for a non-empty name.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ren Lit](../three-sat/ren-lit.md)
+- [Encode Lit](../../../../cook-levin/encode-lit.md)
+
+## Proof depends on
+
+- [Encode Nat Prefix](../../../../cook-levin/encode-nat-prefix.md)
+- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ lean: Cslib.MachineLearning.LeastSquares.rss_eq_of_normal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rss](rss.md)
+
+## Proof depends on
+
+- [Rss add](rss-add.md)
 
 ## Sources
 

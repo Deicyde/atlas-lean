@@ -12,7 +12,7 @@ then no `S`-Diophantine quadruple exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
 
 ## Sources
 

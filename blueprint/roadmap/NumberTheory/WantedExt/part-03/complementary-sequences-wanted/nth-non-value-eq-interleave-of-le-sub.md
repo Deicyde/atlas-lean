@@ -13,7 +13,7 @@ Under the hypotheses of `nthNonValue_eq_interleave`, if moreover `f(m) - Î±(m) â
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

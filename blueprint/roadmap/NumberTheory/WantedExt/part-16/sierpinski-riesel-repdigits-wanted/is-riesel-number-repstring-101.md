@@ -12,7 +12,8 @@ a Riesel number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Riesel Number](is-riesel-number.md)
+- [Repstring](repstring.md)
 
 ## Sources
 

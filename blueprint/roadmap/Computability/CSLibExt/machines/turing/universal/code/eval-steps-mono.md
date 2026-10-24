@@ -12,7 +12,18 @@ lean: Cslib.Turing.Universal.Code.evalSteps_mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [The clocked evaluator](eval-steps.md)
+
+## Proof depends on
+
+- [Cfg](cfg.md)
+- [Output](output.md)
+- [Cfg After](cfg-after.md)
+- [Eval Steps eq some iff output](eval-steps-eq-some-iff-output.md)
+- [Init](init.md)
+- [Step](step.md)
+- [Step Or Stay](step-or-stay.md)
 
 ## Sources
 

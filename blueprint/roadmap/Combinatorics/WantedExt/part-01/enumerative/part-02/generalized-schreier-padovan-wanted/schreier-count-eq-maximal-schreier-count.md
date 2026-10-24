@@ -12,7 +12,8 @@ lean: MetaMathlibExt.schreierCount_eq_maximalSchreierCount_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Schreier Count](maximal-schreier-count.md)
+- [Schreier Count](schreier-count.md)
 
 ## Sources
 

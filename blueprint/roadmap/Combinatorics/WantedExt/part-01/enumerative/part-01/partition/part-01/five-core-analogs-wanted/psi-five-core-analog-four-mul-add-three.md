@@ -11,7 +11,7 @@ Theorem 4, first identity: `b̄_5(4n+3) = 2 b̄_5(2n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Psi Five Core Analog](psi-five-core-analog.md)
 
 ## Sources
 

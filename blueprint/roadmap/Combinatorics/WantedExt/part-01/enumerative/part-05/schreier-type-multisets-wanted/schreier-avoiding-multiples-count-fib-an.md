@@ -13,7 +13,7 @@ Theorem 3: for `u ≥ 2`, `|D_{u,n}| = F_n` for `1 ≤ n ≤ 2u - 1`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Avoiding Multiples Count](schreier-avoiding-multiples-count.md)
 
 ## Sources
 

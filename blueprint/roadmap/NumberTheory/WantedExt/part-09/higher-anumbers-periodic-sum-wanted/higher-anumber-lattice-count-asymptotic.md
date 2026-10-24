@@ -16,7 +16,8 @@ of `d/(r(p-1) + (p+1))`. Stated as `ν_r(n + lcm(2, ord_{D_r} p)) = ν_r(n)` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
+- [Prime To PDen](prime-to-pden.md)
 
 ## Sources
 

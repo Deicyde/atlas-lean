@@ -13,7 +13,7 @@ denominators in `ℤ⟦t⟧`. The intermediate partial-fraction forms are not re
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

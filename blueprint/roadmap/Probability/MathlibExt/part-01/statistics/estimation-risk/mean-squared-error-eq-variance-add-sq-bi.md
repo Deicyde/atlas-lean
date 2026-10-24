@@ -16,7 +16,9 @@ accepted `bias` definition. All integrability evidence is derived from the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bias](bias.md)
+- [Integrable sq sub of mem Lp two](integrable-sq-sub-of-mem-lp-two.md)
+- [Mean Squared Error](mean-squared-error.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The residual sum of squares is convex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rss](rss.md)
 
 ## Sources
 

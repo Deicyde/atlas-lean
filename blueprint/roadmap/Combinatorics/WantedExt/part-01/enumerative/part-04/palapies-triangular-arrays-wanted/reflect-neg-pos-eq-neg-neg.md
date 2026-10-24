@@ -16,7 +16,12 @@ a zero divisor the two identities need no existence hypothesis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+- [Neg Neg](neg-neg.md)
+- [Neg Pos](neg-pos.md)
+- [Reflect](reflect.md)
+- [Weight](weight.md)
+- [Weight'](weight-2.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ irreducible, exposing the two clauses used for `P ∈ 𝒫` in later statements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Irreducible](monic-irreducible.md)
 
 ## Sources
 

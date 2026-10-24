@@ -15,7 +15,7 @@ admissible labelling `α⁽ⁱ⁾` exists, and every admissible labelling satisf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Split Thue Recurrence Family](is-split-thue-recurrence-family.md)
 
 ## Sources
 

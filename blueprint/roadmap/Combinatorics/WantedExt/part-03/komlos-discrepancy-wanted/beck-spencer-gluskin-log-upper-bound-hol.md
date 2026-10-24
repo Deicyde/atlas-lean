@@ -11,7 +11,7 @@ Source: optimization catalogue C24a, line 35, Beck, Spencer, and Gluskin.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beck Spencer Gluskin Log Upper Bound](beck-spencer-gluskin-log-upper-bound.md)
 
 ## Sources
 

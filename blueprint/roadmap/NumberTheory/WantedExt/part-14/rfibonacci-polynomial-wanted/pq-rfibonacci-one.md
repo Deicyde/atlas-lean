@@ -12,7 +12,12 @@ At `p = q = 1`, `m = 0`, the first values agree with `U^{(r)}`: `U_1 = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pq RFibonacci](pq-rfibonacci.md)
+
+## Proof depends on
+
+- [Pq Binomial](pq-binomial.md)
+- [Pq Binomial zero right](pq-binomial-zero-right.md)
 
 ## Sources
 

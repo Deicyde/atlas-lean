@@ -12,7 +12,15 @@ lean: Cslib.Turing.Universal.codeTime_mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code Time](code-time.md)
+- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Code](../code/code.md)
+- [Decides Within](decides-within.md)
+- [Mono](mono.md)
 
 ## Sources
 

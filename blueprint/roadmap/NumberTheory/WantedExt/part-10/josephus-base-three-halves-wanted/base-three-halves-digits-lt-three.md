@@ -13,7 +13,7 @@ expressed by the strict bound `d < 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Three Halves Digits](base-three-halves-digits.md)
 
 ## Sources
 

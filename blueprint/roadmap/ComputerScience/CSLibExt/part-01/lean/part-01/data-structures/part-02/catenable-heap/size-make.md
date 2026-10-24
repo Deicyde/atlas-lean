@@ -12,7 +12,9 @@ lean: Cslib.Algorithms.Lean.CatenableHeap.size_make
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Make](make.md)
+- [Size](size.md)
 
 ## Sources
 

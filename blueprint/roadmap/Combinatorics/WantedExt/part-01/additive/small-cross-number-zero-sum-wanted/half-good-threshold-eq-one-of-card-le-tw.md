@@ -12,7 +12,13 @@ For a finite group of order at most two, `P_{1/2}(Γ) = 1`: the sequence `(0)` i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Half Good Threshold](half-good-threshold.md)
+
+## Proof depends on
+
+- [Is Good Sequence](is-good-sequence.md)
+- [Good Sequence Prob](good-sequence-prob.md)
+- [Good Sequence Prob zero](good-sequence-prob-zero.md)
 
 ## Sources
 

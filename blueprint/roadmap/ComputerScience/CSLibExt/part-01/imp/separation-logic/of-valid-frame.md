@@ -13,7 +13,21 @@ dependence avoids the embedded command's modified variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [To Heap](../heap-step/to-heap.md)
+- [HAssertion](hassertion.md)
+- [Star](star.md)
+- [Heap](../heap/heap.md)
+- [Mod Vars](../heap-step/mod-vars.md)
+- [Sep Valid](sep-valid.md)
+- [State](../syntax/state.md)
+- [Valid](../hoare/valid.md)
+
+## Proof depends on
+
+- [Frame](frame.md)
+- [Of valid](of-valid.md)
 
 ## Sources
 

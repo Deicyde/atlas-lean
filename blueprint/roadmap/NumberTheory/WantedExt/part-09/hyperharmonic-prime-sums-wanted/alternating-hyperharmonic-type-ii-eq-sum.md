@@ -12,7 +12,9 @@ Lemma 3: for `r, n, p ≥ 1`, the type II generalized alternating hyperharmonic 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Generalized Harmonic](alternating-generalized-harmonic.md)
+- [Li Coeff A](li-coeff-a.md)
+- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Gate `g + j` evaluates its line on the values of the gates before it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Append Gates](append-gates.md)
+
+## Proof depends on
+
+- [Append Gates eval le](append-gates-eval-le.md)
 
 ## Sources
 

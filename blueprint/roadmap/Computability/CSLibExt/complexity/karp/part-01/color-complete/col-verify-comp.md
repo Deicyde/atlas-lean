@@ -11,7 +11,14 @@ lean: Cslib.Complexity.Karp.colVerifyComp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](../../../host/comp.md)
+
+## Proof depends on
+
+- [K](../color-verify/k.md)
+- [Lab](../color-verify/lab.md)
+- [Prog](../color-verify/prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

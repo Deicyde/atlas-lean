@@ -12,7 +12,7 @@ Recurrence: the layer `T_{u+1}` of `K` is the layer `T_u` of the derived set `K'
 
 ## Depends on
 
-This node has no prerequisites.
+- [Self Similar Layer](self-similar-layer.md)
 
 ## Sources
 

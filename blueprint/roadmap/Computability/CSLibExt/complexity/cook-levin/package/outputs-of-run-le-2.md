@@ -11,7 +11,11 @@ lean: Cslib.Complexity.CookLevin.Package.outputsOfRunLe'
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Outputs Of Run Le](outputs-of-run-le.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The theta series `f(q^i, q^j)` has constant term `1` (only `n = 0` contributes).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Theta Pow](ramanujan-theta-pow.md)
 
 ## Sources
 

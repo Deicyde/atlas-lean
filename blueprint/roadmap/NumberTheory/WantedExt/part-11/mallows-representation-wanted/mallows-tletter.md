@@ -13,7 +13,8 @@ differ.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Parity Letter](mallows-parity-letter.md)
 
 ## Sources
 

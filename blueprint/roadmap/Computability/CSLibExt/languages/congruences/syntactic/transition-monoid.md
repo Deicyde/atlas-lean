@@ -11,7 +11,11 @@ The transition monoid is the image of the word action.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Transformation](state-transformation.md)
+
+## Proof depends on
+
+- [Transition Morphism](transition-morphism.md)
 
 ## Sources
 

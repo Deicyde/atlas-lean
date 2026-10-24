@@ -12,7 +12,12 @@ The map a mode computes: `flipKG` (CLIQUE to INDEPENDENT-SET) or `isToVc`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+
+## Proof depends on
+
+- [Flip KG](../../part-01/clique/flip-kg.md)
+- [Is To Vc](../../part-01/clique/is-to-vc.md)
 
 ## Sources
 

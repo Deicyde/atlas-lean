@@ -13,7 +13,14 @@ one mark and there are at most `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mark Pass](../path/mark-pass.md)
+- [Reach Marks](../path/reach-marks.md)
+
+## Proof depends on
+
+- [Init Marks](../path/init-marks.md)
+- [Length iterate mark Pass](length-iterate-mark-pass.md)
+- [Mark Pass eq or count lt](mark-pass-eq-or-count-lt.md)
 
 ## Sources
 

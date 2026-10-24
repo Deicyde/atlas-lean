@@ -13,7 +13,9 @@ average over one period is `x̄/(p - 1)`. Here `n ∈ ℤ` (the delay `D_x = -v_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDelay](base-pdelay.md)
+- [Base PDigit Average](base-pdigit-average.md)
+- [Base PPeriod](base-pperiod.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The paper's example after Theorem 6: for `q = (1^7, 3^4, 5^5)`, `ℓ = 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Setup Ell](setup-ell.md)
 
 ## Sources
 

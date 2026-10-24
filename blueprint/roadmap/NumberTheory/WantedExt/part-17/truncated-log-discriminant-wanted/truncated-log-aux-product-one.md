@@ -12,7 +12,7 @@ lean: MetaMathlibExt.truncatedLogAuxProduct_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Aux Product](truncated-log-aux-product.md)
 
 ## Sources
 

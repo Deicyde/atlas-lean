@@ -14,7 +14,18 @@ list otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cell](../clocked/cell.md)
+- [Cells](../clocked/cells.md)
+- [Enc In](../clocked/enc-in.md)
+- [Code](../code/code.md)
+- [Decode Code Cells](decode-code-cells.md)
+- [Diag Arg](diag-arg.md)
+- [Input](../code/input.md)
+
+## Proof depends on
+
+- [Code Cells](../clocked/code-cells.md)
+- [Code Cells of decode Code Cells eq some](code-cells-of-decode-code-cells-eq-some.md)
 
 ## Sources
 

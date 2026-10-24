@@ -12,7 +12,7 @@ The characteristic existential condition for a prefix whose last non-flat step i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Last Nonflat Step Up](last-nonflat-step-up.md)
 
 ## Sources
 

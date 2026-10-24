@@ -12,7 +12,9 @@ cleared and the convention `b̄_5(-1) = 0` written out for `n = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Five Core Count](five-core-count.md)
+- [Phi Five Core Analog](phi-five-core-analog.md)
+- [Psi Five Core Analog](psi-five-core-analog.md)
 
 ## Sources
 

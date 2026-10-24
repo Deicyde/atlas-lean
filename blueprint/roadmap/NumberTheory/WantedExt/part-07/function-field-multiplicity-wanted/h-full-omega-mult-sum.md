@@ -13,6 +13,13 @@ lean: MetaMathlibExt.hFullOmegaMultSum
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [H Full K](h-full-k.md)
+- [H Full Root](h-full-root.md)
+- [Monic Irreducible](monic-irreducible.md)
+- [Poly Norm](poly-norm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,13 @@ module and ratio.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Compact Set](is-arithmetical-compact-set.md)
+- [Is Quasi Arithmetical Compact Set](is-quasi-arithmetical-compact-set.md)
+
+## Proof depends on
+
+- [Self Similar Layer](self-similar-layer.md)
+- [Stability Gauge](stability-gauge.md)
 
 ## Sources
 

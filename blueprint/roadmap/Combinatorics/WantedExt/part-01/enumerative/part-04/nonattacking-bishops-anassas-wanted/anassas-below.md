@@ -14,6 +14,12 @@ strictly below the main diagonal (`j < i`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anassa Moves](anassa-moves.md)
+- [Nonattacking Placements](nonattacking-placements.md)
+- [Square Board](square-board.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NonattackingBishopsAnassasWanted](../../../../../../../sources/v2/WantedExt.md)

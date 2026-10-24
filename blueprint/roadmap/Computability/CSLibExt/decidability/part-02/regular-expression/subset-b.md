@@ -11,7 +11,13 @@ lean: Cslib.Language.EncodedRegex.subsetB
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+- [Encoded Regex](encoded-regex.md)
+
+## Proof depends on
+
+- [Subset B](../../part-01/context-free-regular/subset-b.md)
+- [To Grammar](to-grammar.md)
 
 ## Sources
 

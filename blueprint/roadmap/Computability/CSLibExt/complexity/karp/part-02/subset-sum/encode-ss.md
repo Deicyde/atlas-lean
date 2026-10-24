@@ -13,6 +13,10 @@ A SUBSET-SUM instance: the target, then the numbers, each in binary and delimite
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.SubsetSum](../../../../../../../sources/v2/CSLibExt.md)

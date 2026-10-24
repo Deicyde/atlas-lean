@@ -12,7 +12,12 @@ lean: Cslib.Kolmogorov.not_computable_K
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+
+## Proof depends on
+
+- [Optimality](../basic/exists-k-le-of-partrec.md)
+- [Incompressible strings exist at every length](exists-incompressible.md)
 
 ## Sources
 

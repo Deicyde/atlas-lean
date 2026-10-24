@@ -21,7 +21,7 @@ converges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

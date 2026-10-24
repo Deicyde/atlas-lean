@@ -12,7 +12,8 @@ Relabeling by an injective map relabels the levels.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Levels](../depth/levels.md)
+- [Relabel](../odd-even/relabel.md)
 
 ## Sources
 

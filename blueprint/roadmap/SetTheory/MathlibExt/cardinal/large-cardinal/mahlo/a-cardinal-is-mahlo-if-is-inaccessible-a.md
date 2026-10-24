@@ -14,6 +14,10 @@ inaccessibles below κ is stationary in κ.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [InAccBelow κ is the set of all inaccessible cardinals below...](../inaccessible/inaccbelow-is-the-set-of-all-inaccessibl.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Cardinal.LargeCardinal.Mahlo](../../../../../../sources/v2/MathlibExt.md)

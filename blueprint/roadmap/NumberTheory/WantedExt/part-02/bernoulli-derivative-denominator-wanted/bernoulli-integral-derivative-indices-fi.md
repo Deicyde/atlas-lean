@@ -12,7 +12,7 @@ The paper writes `⊂`; its proof gives inclusion, which is what is formalized.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The minimax value of a position when player `p` moves (`true` for the maximizer)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ The closure witness satisfies `F`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+- [Satisfies](satisfies.md)
+- [Closure Witness Relation](closure-witness-relation.md)
+
+## Proof depends on
+
+- [Attr Closure](attr-closure.md)
+- [Rhs subset attr Closure](rhs-subset-attr-closure.md)
 
 ## Sources
 

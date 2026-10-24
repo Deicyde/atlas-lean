@@ -12,7 +12,7 @@ Each congruence class modulo `|a₁ - a₂|` contains a cyclic vertex of the ECS
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

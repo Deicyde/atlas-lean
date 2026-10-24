@@ -12,7 +12,8 @@ occurrence of `T_t^{(m)}` as a substring of `B_t^{(m)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block](gijswijt-block.md)
+- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
 
 ## Sources
 

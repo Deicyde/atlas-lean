@@ -14,7 +14,8 @@ lean: MetaMathlibExt.relativePosition_monotonicity_runs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ Complementing the bits of a valid instance complements its graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairs](../clique/pairs.md)
+- [To Graph](../clique/to-graph.md)
+
+## Proof depends on
+
+- [Adj Bits](../clique/adj-bits.md)
+- [Adj Bits eq get Elem](adj-bits-eq-get-elem.md)
+- [Mem pairs](mem-pairs.md)
 
 ## Sources
 

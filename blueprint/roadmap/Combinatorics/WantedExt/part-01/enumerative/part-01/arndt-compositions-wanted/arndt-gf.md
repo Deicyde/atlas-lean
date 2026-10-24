@@ -14,6 +14,10 @@ compositions with parts in `S`, by weight (`x`) and number of parts (`y`), in `â
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Arndt Composition Count](arndt-composition-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.ArndtCompositionsWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,22 @@ same continuation languages.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hopcroft Rel](hopcroft-rel.md)
+
+## Proof depends on
+
+- [Inv](inv.md)
+- [Rel iff](rel-iff.md)
+- [Rel](rel.md)
+- [Acc Block](acc-block.md)
+- [Init P](init-p.md)
+- [Init W](init-w.md)
+- [Inv init](inv-init.md)
+- [Rej Block](rej-block.md)
+- [Smaller](smaller.md)
+- [Hopcroft Loop](hopcroft-loop.md)
+- [Termination](hopcroft-loop-spec.md)
+- [Hopcroft Partition](hopcroft-partition.md)
 
 ## Sources
 

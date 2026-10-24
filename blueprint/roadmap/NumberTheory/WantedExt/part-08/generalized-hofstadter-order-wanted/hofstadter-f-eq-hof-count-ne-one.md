@@ -12,7 +12,9 @@ For `k > 1`, `F_k(n) = n - C_k^{(=1)}(n) = C_k^{(≠1)}(n)`; hence `∂F_k(n) = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Count](hof-count.md)
+- [Hof Word](hof-word.md)
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

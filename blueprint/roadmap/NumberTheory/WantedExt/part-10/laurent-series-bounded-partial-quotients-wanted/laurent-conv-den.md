@@ -14,6 +14,10 @@ Denominators of the convergents, shifted by one: `laurentConvDen α (n + 1) = Q_
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LaurentSeriesBoundedPartialQuotientsWanted](../../../../../sources/v2/WantedExt.md)

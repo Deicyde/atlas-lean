@@ -11,7 +11,7 @@ Read a symbol as a pair bit or vertex mark.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

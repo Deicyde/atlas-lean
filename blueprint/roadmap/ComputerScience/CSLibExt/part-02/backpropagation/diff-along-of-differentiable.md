@@ -12,7 +12,12 @@ Globally differentiable layers are differentiable along every forward pass.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Net](net.md)
+- [Diff Along](diff-along.md)
+
+## Proof depends on
+
+- [Forward](forward.md)
 
 ## Sources
 

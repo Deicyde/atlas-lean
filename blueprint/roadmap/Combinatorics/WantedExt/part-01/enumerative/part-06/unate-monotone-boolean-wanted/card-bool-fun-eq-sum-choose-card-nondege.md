@@ -21,7 +21,7 @@ unate and their intersections satisfy it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
 
 ## Sources
 

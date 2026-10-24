@@ -12,7 +12,7 @@ lean: MetaMathlibExt.kPellLucas_not_close_two_pow_of_large_order
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Pell Lucas](k-pell-lucas.md)
 
 ## Sources
 

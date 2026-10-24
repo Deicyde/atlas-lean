@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Dimensional Matching Instance](three-dimensional-matching-instance.md)
 
 ## Sources
 

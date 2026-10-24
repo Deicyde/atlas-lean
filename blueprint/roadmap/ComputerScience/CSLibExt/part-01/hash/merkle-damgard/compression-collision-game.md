@@ -14,6 +14,10 @@ collision of `h`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Collision](is-collision.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.Hash.MerkleDamgard](../../../../../../sources/v2/CSLibExt.md)

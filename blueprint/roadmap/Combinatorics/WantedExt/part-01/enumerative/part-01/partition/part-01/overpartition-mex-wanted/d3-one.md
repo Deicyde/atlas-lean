@@ -13,7 +13,7 @@ colors, so the finite-set encoding `D3 1` equals `3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [D3](d3.md)
 
 ## Sources
 

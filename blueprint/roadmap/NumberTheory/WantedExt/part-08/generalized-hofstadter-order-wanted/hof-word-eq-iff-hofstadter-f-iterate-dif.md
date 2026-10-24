@@ -12,7 +12,8 @@ For `1 ≤ j < k`, `x_k[n] = j` iff `∂F_k^{j-1}(n) = 1` and `∂F_k^j(n) = 0`;
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Word](hof-word.md)
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

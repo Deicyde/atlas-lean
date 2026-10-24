@@ -13,7 +13,11 @@ machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Cfg Right](comp-cfg-right.md)
+
+## Proof depends on
+
+- [Step comp Cfg Right](step-comp-cfg-right.md)
 
 ## Sources
 

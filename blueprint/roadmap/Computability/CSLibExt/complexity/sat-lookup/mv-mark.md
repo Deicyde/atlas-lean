@@ -12,7 +12,13 @@ empty stack (or another symbol, which the invariants rule out) go to `e`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Sym](../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [Mv Sym](mv-sym.md)
 
 ## Sources
 

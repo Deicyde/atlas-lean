@@ -16,7 +16,8 @@ field, the case of the paper's count `(p - 1) p^t` and of its Example 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Are Poly Farey Neighbors](are-poly-farey-neighbors.md)
+- [Poly Farey Series](poly-farey-series.md)
 
 ## Sources
 

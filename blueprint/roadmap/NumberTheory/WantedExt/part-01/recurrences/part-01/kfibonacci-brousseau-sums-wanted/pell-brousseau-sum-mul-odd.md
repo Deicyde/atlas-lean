@@ -14,7 +14,10 @@ C_{Q_m}^(p)(0) P_m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Brousseau Coeff](brousseau-coeff.md)
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
+- [Pell Number Sequence](../../../../../MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

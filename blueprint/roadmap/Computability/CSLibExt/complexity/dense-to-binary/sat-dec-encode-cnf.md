@@ -35,7 +35,28 @@ theorem conv_encodeCNF (φ : CNF) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode CNF](../../cook-levin/encode-cnf.md)
+- [Sat Dec](../../cook-levin/sat-dec.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFSat](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+
+## Proof depends on
+
+- [SATLang](../../cook-levin/satlang.md)
+- [Decode CNF](../../cook-levin/decode-cnf.md)
+- [Decode CNFAux](../../cook-levin/decode-cnfaux.md)
+- [Decode Clause](../../cook-levin/decode-clause.md)
+- [Decode Clauses](../../cook-levin/decode-clauses.md)
+- [Decode Lit](../../cook-levin/decode-lit.md)
+- [Decode Lits](../../cook-levin/decode-lits.md)
+- [Decode Nat Prefix](../../cook-levin/decode-nat-prefix.md)
+- [Encode Clause](../../cook-levin/encode-clause.md)
+- [Encode Lit](../../cook-levin/encode-lit.md)
+- [Encode Nat Prefix](../../cook-levin/encode-nat-prefix.md)
+- [Read Unary Length](../../cook-levin/read-unary-length.md)
+- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Delimit](../../../MathlibExt/complexity/delimit.md)
+- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

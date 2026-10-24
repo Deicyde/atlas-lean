@@ -14,6 +14,10 @@ The row of diamond `i` left to right, with clause `j` inserted right after
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hp R](../ham-path/hp-r.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPathForward](../../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,11 @@ The composition of `0` has no shade.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total Composition Shade](total-composition-shade.md)
+
+## Proof depends on
+
+- [Composition Shade](composition-shade.md)
 
 ## Sources
 

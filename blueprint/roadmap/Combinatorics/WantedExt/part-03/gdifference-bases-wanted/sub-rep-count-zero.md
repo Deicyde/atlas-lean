@@ -12,7 +12,7 @@ lean: MetaMathlibExt.subRepCount_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sub Rep Count](sub-rep-count.md)
 
 ## Sources
 

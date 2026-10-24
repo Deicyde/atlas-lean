@@ -16,6 +16,10 @@ is characterized on boxes).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tonelli for products](lintegral-fintype-prod-eq-prod.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.MeasureTheory.Measure.PiWithDensity](../../../../../sources/v2/MathlibExt.md)

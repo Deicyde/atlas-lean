@@ -12,7 +12,8 @@ Adjacency in `𝒢_n^(a)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Graph](keyword-graph.md)
+- [Keyword Simple Map](keyword-simple-map.md)
 
 ## Sources
 

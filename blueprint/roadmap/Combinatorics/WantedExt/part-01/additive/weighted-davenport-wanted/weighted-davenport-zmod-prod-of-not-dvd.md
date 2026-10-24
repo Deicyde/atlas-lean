@@ -13,7 +13,7 @@ with `(k - 1)α < kr`, `D_A(Z_n ⊕ Z_{kn}) = m + ⌈kn/α⌉ - 1`. The paper's 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

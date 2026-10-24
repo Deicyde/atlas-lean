@@ -11,7 +11,14 @@ The productions of the substitution grammar.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [To CFG](../encoded/to-cfg.md)
+- [Main Rule](main-rule.md)
+- [Sub Rule](sub-rule.md)
+- [Grammar Terminals](../chomsky-normal-form/grammar-terminals.md)
 
 ## Sources
 

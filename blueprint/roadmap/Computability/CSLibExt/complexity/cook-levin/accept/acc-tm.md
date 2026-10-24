@@ -11,7 +11,19 @@ lean: Cslib.Complexity.CookLevin.Accept.accTM
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [AK](ak.md)
+- [CK](ck.md)
+- [GL](gl.md)
+- [LS](ls.md)
+- [PS](ps.md)
+- [Prog](prog.md)
+- [MS](../counter-view/ms.md)
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
 
 ## Sources
 

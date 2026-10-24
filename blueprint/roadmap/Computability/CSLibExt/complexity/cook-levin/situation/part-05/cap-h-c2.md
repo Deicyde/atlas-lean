@@ -12,7 +12,7 @@ Constraint 2 (`2d ≤ H`) holds when `T ≥ 1` (it is not used; see `cells_step_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cap H](cap-h.md)
 
 ## Sources
 

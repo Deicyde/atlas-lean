@@ -11,7 +11,11 @@ Blocks of situations `< n`, then the end of the time step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [GL](gl.md)
+
+## Proof depends on
+
+- [ST](st.md)
 
 ## Sources
 

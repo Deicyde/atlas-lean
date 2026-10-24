@@ -12,7 +12,8 @@ all its minors are non-negative. Row `i` and column `j` hold `N_{i+1, j+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
+- [Minuscule Polynomial A](minuscule-polynomial-a.md)
 
 ## Sources
 

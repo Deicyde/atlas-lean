@@ -12,7 +12,7 @@ The empty list tiles exactly the empty interval `[b + 1, b]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Tiling](is-lucas-tiling.md)
 
 ## Sources
 

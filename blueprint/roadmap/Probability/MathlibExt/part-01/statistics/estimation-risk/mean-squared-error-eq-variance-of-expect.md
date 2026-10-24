@@ -13,7 +13,13 @@ term vanishes. Source: the display following Definition 7.3.2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integrable sq sub of mem Lp two](integrable-sq-sub-of-mem-lp-two.md)
+- [Mean Squared Error](mean-squared-error.md)
+
+## Proof depends on
+
+- [Bias](bias.md)
+- [Mean Squared Error eq variance add sq bias](mean-squared-error-eq-variance-add-sq-bi.md)
 
 ## Sources
 

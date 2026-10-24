@@ -13,7 +13,18 @@ to it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Recognizable](../basic/tm2-recognizable.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [Language](../../../languages/context-free/part-01/encoded/language.md)
+
+## Proof depends on
+
+- [The complement of PCP many-one reduces to universality of context-free grammars](../pcpuniversality/many-one-reducible-not-pcp-univ.md)
+- [Domino](../pcp/domino.md)
+- [PCP](../pcp/pcp.md)
+- [The complement of PCP is not recognizable](exists-not-tm2-recognizable-not-pcp.md)
+- [Tm2 Recognizable of many One Reducible](../../part-02/undecidable/tm2-recognizable-of-many-one-reducible.md)
 
 ## Sources
 

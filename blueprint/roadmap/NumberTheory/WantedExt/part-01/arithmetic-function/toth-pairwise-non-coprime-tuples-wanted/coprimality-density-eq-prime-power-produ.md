@@ -12,7 +12,8 @@ Theorem 9, second representation:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Density](coprimality-density.md)
+- [Coprimality Indicator](coprimality-indicator.md)
 
 ## Sources
 

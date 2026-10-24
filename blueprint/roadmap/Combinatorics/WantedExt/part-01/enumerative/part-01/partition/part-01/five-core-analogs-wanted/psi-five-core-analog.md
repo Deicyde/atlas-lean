@@ -13,6 +13,10 @@ lean: MetaMathlibExt.psiFiveCoreAnalog
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan Theta Pow](ramanujan-theta-pow.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.FiveCoreAnalogsWanted](../../../../../../../../../sources/v2/WantedExt.md)

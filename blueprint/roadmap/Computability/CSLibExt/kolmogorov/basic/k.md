@@ -13,6 +13,12 @@ lean: Cslib.Kolmogorov.K
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [The universal description method](u.md)
+- [Describe](describe.md)
+- [Run](run.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Kolmogorov.Basic](../../../../../sources/v2/CSLibExt.md)

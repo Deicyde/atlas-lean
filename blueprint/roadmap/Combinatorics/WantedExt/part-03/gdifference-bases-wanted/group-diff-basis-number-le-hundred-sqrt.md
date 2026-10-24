@@ -11,7 +11,7 @@ For every finite field `K` of order `q`, `η_1(K) ≤ 100 √q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Diff Basis Number](group-diff-basis-number.md)
 
 ## Sources
 

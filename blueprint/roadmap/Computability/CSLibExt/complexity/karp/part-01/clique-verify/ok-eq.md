@@ -12,7 +12,10 @@ The pair condition splits into the part `i` settles and the part left to `j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+- [Free](free.md)
+- [Ok](ok.md)
+- [Sat](sat.md)
 
 ## Sources
 

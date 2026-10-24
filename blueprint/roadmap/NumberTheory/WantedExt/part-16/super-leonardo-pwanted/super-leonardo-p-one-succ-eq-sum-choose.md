@@ -12,7 +12,7 @@ lean: MetaMathlibExt.superLeonardoP_one_succ_eq_sum_choose
 
 ## Depends on
 
-This node has no prerequisites.
+- [Super Leonardo P](super-leonardo-p.md)
 
 ## Sources
 

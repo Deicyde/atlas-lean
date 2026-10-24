@@ -14,7 +14,7 @@ pairs (tree vertices are the coprime ones).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclid PPosition](euclid-pposition.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ The argmax split of `xs` attains the optimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Best Argmax](best-argmax.md)
+- [Nw Score](../sequence-alignment/nw-score.md)
+
+## Proof depends on
+
+- [Best Argmax spec](best-argmax-spec.md)
+- [Exists split eq nw Score xs](exists-split-eq-nw-score-xs.md)
+- [Split Score le nw Score xs](split-score-le-nw-score-xs.md)
 
 ## Sources
 

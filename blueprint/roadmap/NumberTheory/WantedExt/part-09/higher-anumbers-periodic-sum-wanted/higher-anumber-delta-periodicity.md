@@ -14,7 +14,9 @@ means; the paper's positivity of `i` and `n` is dropped (the claims hold at `0`)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher ANumber Delta](higher-anumber-delta.md)
+- [Higher ANumber Delta Zero](higher-anumber-delta-zero.md)
+- [Tau Den](tau-den.md)
 
 ## Sources
 

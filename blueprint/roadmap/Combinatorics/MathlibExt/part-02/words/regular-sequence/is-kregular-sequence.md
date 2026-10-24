@@ -14,6 +14,10 @@ A `k`-regular integer sequence in the sense of Allouche and Shallit: the base sa
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [K Kernel](../automatic/k-kernel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Words.RegularSequence](../../../../../../sources/v2/MathlibExt.md)

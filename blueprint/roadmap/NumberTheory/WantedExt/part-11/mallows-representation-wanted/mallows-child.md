@@ -13,7 +13,11 @@ The left, middle and right child gaps of a Mallows-tree vertex inserted in the g
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+
+## Proof depends on
+
+- [Mallows Insert](mallows-insert.md)
 
 ## Sources
 

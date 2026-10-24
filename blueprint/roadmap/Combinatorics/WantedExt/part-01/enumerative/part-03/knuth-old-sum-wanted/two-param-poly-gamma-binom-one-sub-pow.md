@@ -14,7 +14,7 @@ exchanged, `(-1)^{n-k}` replaced by `(-1)^k` and `(1-x)^{n-k}` by `x^{n-k}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

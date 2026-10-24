@@ -13,7 +13,8 @@ exactly `r` coprime pairs is `C_{k,r} x^k + O(x^{k-1} (log x)^{k-1})`, where
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Density](coprimality-density.md)
+- [Coprime Pair Count](coprime-pair-count.md)
 
 ## Sources
 

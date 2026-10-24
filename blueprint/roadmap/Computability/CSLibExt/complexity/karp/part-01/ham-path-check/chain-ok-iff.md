@@ -12,7 +12,8 @@ lean: Cslib.Complexity.Karp.HamVerify.chainOk_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain Ok](chain-ok.md)
+- [Arc](../../../path/arc.md)
 
 ## Sources
 

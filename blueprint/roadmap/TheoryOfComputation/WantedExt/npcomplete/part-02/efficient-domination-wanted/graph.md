@@ -11,7 +11,11 @@ The graph of the instance as a `SimpleGraph (Fin n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Efficient Domination Instance](efficient-domination-instance.md)
+
+## Proof depends on
+
+- [Edge Graph](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
 
 ## Sources
 

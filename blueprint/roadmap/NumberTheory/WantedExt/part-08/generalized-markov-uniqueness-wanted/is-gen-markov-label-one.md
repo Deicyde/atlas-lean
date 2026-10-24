@@ -12,7 +12,13 @@ Characteristic value: `m_{1/1} = k + 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Label](is-gen-markov-label.md)
+
+## Proof depends on
+
+- [Farey Tree](farey-tree.md)
+- [Gen Markov Tree](gen-markov-tree.md)
+- [Gen Markov Tree nil](gen-markov-tree-nil.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Corollary 45: over permutations whose first `s` points lie in distinct cycles,
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

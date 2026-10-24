@@ -12,7 +12,11 @@ Every partition lies in its own class.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Class](diagonal-class.md)
+
+## Proof depends on
+
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

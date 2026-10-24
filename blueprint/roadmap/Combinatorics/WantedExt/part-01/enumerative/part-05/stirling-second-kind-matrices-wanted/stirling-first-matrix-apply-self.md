@@ -12,7 +12,11 @@ The diagonal of `s(n)` is all ones.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling First Matrix](stirling-first-matrix.md)
+
+## Proof depends on
+
+- [Signed Stirling First](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

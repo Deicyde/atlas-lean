@@ -14,6 +14,11 @@ index `k`; its paths end at height `2k` and have last non-flat step `U`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Motzkin Prefix](is-motzkin-prefix.md)
+- [Last Nonflat Step Up](last-nonflat-step-up.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinHumpsYoungTableauxWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -11,7 +11,11 @@ The unnormalized weight of an assignment: the product of all factors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](tree-model.md)
+
+## Proof depends on
+
+- [Parent](parent.md)
 
 ## Sources
 

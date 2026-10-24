@@ -12,7 +12,7 @@ Theorem 3: for `n ≥ 3` the limits `A_n` and `A_{n-2}` exist and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cos Pow Area](cos-pow-area.md)
 
 ## Sources
 

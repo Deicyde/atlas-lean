@@ -14,7 +14,8 @@ the leading prime-sum term `x S_seq(x) = x ∑_{p ≤ x} H_seq(p)/p`, the error 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical Seq Height](canonical-seq-height.md)
+- [Profile Partial Sum](profile-partial-sum.md)
 
 ## Sources
 

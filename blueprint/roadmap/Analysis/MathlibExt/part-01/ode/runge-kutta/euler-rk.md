@@ -11,7 +11,7 @@ The Euler tableau: one stage, weight `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
 
 ## Sources
 

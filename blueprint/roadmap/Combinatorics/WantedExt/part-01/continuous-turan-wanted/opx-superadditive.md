@@ -12,7 +12,7 @@ Lemma 2.5: `opx(n, P)` is super-additive: `opx(m, P) + opx(n, P) ≤ opx(m + n, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

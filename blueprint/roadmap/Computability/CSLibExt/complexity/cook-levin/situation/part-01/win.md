@@ -11,7 +11,13 @@ Windows of situation `i`, decoded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](enc.md)
+
+## Proof depends on
+
+- [Dec O](dec-o.md)
+- [Wa](wa.md)
+- [Depth](depth.md)
 
 ## Sources
 

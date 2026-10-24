@@ -13,7 +13,7 @@ a pentagon.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Polygon Dissection Count](colored-polygon-dissection-count.md)
 
 ## Sources
 

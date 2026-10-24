@@ -13,6 +13,10 @@ lean: MetaMathlibExt.IsUlamWord
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ulam Word Aux](ulam-word-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.UlamWordsWanted](../../../../../../sources/v2/WantedExt.md)

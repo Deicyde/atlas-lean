@@ -12,7 +12,13 @@ The listed states are closed under transitions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+- [States](states.md)
+- [Step](step.md)
+
+## Proof depends on
+
+- [Step mem or eq](step-mem-or-eq.md)
 
 ## Sources
 

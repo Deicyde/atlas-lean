@@ -12,7 +12,8 @@ For `k ≥ 0` and `α = 1 + √2`: `P_{2k+1} α = P_{2k+2} + (√2 - 1)^{2k+1}` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Lucas Sequence](../../../MathlibExt/part-09/pell-lucas-sequence/pell-lucas-sequence.md)
+- [Pell Number Sequence](../../../MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ perfect covers of `G` have exactly one element whose `ℤ_{2^n}`-coordinate `y` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Cover](is-perfect-cover.md)
+- [Count](count.md)
 
 ## Sources
 

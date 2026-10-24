@@ -12,7 +12,7 @@ ranking minus one).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
 
 ## Sources
 

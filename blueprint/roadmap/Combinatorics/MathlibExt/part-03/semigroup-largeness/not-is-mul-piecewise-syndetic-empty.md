@@ -12,7 +12,7 @@ The empty set is not piecewise syndetic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mul Piecewise Syndetic](is-mul-piecewise-syndetic.md)
 
 ## Sources
 

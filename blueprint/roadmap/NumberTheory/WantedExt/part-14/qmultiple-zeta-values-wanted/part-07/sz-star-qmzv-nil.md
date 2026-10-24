@@ -12,7 +12,11 @@ lean: MetaMathlibExt.szStarQMZV_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz Star QMZV](sz-star-qmzv.md)
+
+## Proof depends on
+
+- [Sz Star QMZVPartial](sz-star-qmzvpartial.md)
 
 ## Sources
 

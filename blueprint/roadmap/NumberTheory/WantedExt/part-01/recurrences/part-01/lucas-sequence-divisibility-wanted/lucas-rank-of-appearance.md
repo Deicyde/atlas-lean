@@ -13,7 +13,11 @@ The rank of appearance `ρ(m)` of `m` in `U(P, Q)`: the least positive `r` with 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

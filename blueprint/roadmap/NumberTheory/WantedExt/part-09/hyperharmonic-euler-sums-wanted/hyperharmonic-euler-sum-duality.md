@@ -12,7 +12,8 @@ Duality: for `ℜ(r) < p + 1` and `ℜ(t) < k + 1`, both sums converge and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
+- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ Corollary 3, read for `x = ∑ ε Q̃ ≥ ω̃` (as Lemma 17): for `n ≥ p`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [L Star Collection](l-star-collection.md)
+- [Zeckendorf Delta Star](zeckendorf-delta-star.md)
+- [Zeckendorf Generic Exponent](zeckendorf-generic-exponent.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
 
 ## Sources
 

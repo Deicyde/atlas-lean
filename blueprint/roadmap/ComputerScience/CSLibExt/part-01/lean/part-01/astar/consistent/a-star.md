@@ -12,7 +12,15 @@ A* from `source` with heuristic `h`: Dijkstra on the reduced weights, whose keys
 
 ## Depends on
 
-This node has no prerequisites.
+- [AStar Result](astar-result.md)
+- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
+
+## Proof depends on
+
+- [Reduced Weight](reduced-weight.md)
+- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
 
 ## Sources
 

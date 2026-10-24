@@ -12,7 +12,12 @@ from nonterminals found so far.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Mem B](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Unit Target](unit-target.md)
 
 ## Sources
 

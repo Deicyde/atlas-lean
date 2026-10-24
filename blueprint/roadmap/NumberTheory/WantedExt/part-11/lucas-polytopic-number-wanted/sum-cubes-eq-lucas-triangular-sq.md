@@ -13,7 +13,9 @@ Stated for every `n ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Parameters](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-parameters.md)
+- [Lucas Bracket](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-bracket.md)
+- [Lucasnomial](../../../MathlibExt/part-08/lucas-polytopic-number/lucasnomial.md)
 
 ## Sources
 

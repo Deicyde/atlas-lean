@@ -12,7 +12,8 @@ anti-palindromic compositions of `n` with `m` parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
+- [Reduced Anti Palindromic Composition Count](reduced-anti-palindromic-composition-cou.md)
 
 ## Sources
 

@@ -19,7 +19,11 @@ Case 6 (`α` odd): `2 ^ ((α-1)/2)`, `2 ^ ((α-1)/2) - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Class Number](gauss-class-number.md)
+- [Kronecker Class Multiplier](kronecker-class-multiplier.md)
+- [Kronecker Discriminant](kronecker-discriminant.md)
+- [Kronecker FEven](kronecker-feven.md)
+- [Kronecker FOdd](kronecker-fodd.md)
 
 ## Sources
 

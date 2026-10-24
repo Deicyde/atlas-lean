@@ -13,6 +13,11 @@ lean: MetaMathlibExt.szQMZVWord
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sz Index Of Word Aux](sz-index-of-word-aux.md)
+- [Sz QMZV](../part-01/sz-qmzv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

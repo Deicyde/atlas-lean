@@ -12,7 +12,7 @@ The identity function does not have the NS property (`⌊0/2⌋ = ⌊1/2⌋` but
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

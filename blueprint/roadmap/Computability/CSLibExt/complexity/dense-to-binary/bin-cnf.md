@@ -11,7 +11,14 @@ The translated formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../dense-sat/cnf.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Clause](../dense-sat/clause.md)
+- [Bin Clause](bin-clause.md)
+- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

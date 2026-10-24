@@ -12,7 +12,10 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.cell_rowOK
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [Good](../part-03/good.md)
+- [Row OK](row-ok.md)
+- [Cell](../part-03/cell.md)
 
 ## Sources
 

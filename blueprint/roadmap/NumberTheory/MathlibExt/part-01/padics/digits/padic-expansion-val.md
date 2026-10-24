@@ -13,7 +13,8 @@ Value bridge between the bundled expansion and the raw digit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Digit](padic-digit.md)
+- [Padic Expansion](padic-expansion.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: Cslib.Complexity.Karp.HamVerify.decodeW_eq_some
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode W](decode-w.md)
+- [Enc W](enc-w.md)
+
+## Proof depends on
+
+- [Decode W enc W](decode-w-enc-w.md)
+- [Enc W of decode W](enc-w-of-decode-w.md)
 
 ## Sources
 

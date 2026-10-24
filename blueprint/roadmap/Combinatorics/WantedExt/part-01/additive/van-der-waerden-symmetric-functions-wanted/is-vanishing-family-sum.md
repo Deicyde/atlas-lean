@@ -12,7 +12,7 @@ the family `{(b_1, …, b_l) ↦ ∑ b_i}` over `ℤ/n` is vanishing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vanishing Family](is-vanishing-family.md)
 
 ## Sources
 

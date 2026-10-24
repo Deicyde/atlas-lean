@@ -14,7 +14,13 @@ likelihood and normalized by the evidence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayes Posterior](bayes-posterior.md)
+
+## Proof depends on
+
+- [Bayes Kernel](bayes-kernel.md)
+- [Comp apply singleton](comp-apply-singleton.md)
+- [Comp mul bayes Posterior](comp-mul-bayes-posterior.md)
 
 ## Sources
 

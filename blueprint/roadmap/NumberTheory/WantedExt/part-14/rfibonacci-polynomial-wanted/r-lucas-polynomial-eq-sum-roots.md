@@ -13,7 +13,7 @@ every `n ≥ 0`. The paper takes `1 ≤ s ≤ r`; the identity holds for every `
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Lucas Polynomial](r-lucas-polynomial.md)
 
 ## Sources
 

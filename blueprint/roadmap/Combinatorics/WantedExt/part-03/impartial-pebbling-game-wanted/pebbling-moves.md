@@ -13,6 +13,10 @@ The finite set of positions reachable from `a` by one `(k+1:k)`-pebbling move on
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pebbling Step](pebbling-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ImpartialPebblingGameWanted](../../../../../sources/v2/WantedExt.md)

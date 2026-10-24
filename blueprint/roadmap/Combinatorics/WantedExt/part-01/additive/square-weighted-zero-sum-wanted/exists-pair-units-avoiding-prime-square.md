@@ -14,7 +14,8 @@ prime `p`; `n ≥ 2` records the ambient convention.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
+- [Square Set](square-set.md)
 
 ## Sources
 

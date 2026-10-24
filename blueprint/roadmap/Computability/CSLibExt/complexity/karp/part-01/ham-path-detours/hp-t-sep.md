@@ -12,7 +12,7 @@ Distinct diamonds are `3 m + 2` apart.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hp T](../ham-path/hp-t.md)
 
 ## Sources
 

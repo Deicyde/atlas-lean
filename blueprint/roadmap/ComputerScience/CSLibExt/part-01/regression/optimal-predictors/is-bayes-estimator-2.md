@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.OptimalPredictors.IsPosteriorMedian.isBayesEstimator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Posterior Median](is-posterior-median.md)
+- [Abs Loss](abs-loss.md)
+
+## Proof depends on
+
+- [Lintegral abs Loss le of is Median](lintegral-abs-loss-le-of-is-median.md)
+- [Is Median](../../../../../Probability/MathlibExt/part-02/median/is-median.md)
 
 ## Sources
 

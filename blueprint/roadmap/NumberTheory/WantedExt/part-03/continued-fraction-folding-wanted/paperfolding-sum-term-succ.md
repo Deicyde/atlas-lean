@@ -12,7 +12,7 @@ lean: MetaMathlibExt.paperfoldingSumTerm_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Paperfolding Sum Term](paperfolding-sum-term.md)
 
 ## Sources
 

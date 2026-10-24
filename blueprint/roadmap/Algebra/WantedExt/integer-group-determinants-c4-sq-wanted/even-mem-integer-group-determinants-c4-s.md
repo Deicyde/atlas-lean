@@ -12,7 +12,8 @@ lean: MetaMathlibExt.even_mem_integerGroupDeterminants_c4Sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Group Determinants](integer-group-determinants.md)
+- [Primes Five Mod Eight](primes-five-mod-eight.md)
 
 ## Sources
 

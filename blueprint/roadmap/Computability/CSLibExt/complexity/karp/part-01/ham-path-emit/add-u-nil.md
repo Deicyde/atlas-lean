@@ -63,7 +63,9 @@ theorem drow_run (Bd m dI : ℕ) (s : MS) (v : Bool) (hmm : s.mm = 3 * m) (hl : 
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](../ham-path-emit-machine/k.md)
+- [Γ](../ham-path-emit-machine/untitled.md)
+- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
 
 ## Sources
 

@@ -12,7 +12,26 @@ Stages of block `(i, k)`: `KB := TW + A + k·HG`, `U := H − m`, the pushed-fil
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
+- [Layout](../family/layout.md)
+- [CK](ck.md)
+- [Lab](lab.md)
+- [ST](st.md)
+
+## Proof depends on
+
+- [MS](../counter-view/ms.md)
+- [Mul S](../counter-view/mul-s.md)
+- [BD](bd.md)
+- [GL](gl.md)
+- [Ik](ik.md)
+- [Pf From](pf-from.md)
+- [Sb L](sb-l.md)
+- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [For Head](../../../../MathlibExt/turing-machine/program/for-head.md)
+- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

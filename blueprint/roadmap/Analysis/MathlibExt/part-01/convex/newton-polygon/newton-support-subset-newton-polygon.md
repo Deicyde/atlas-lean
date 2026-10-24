@@ -15,7 +15,8 @@ $f$, the convex hull of the Newton support in $\mathbb{R}^2$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Newton Polygon](newton-polygon.md)
+- [Newton Support](newton-support.md)
 
 ## Sources
 

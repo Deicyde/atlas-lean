@@ -11,7 +11,7 @@ Is the top of a stack a literal marker?
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

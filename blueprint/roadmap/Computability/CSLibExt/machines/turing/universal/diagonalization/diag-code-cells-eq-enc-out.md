@@ -15,7 +15,19 @@ holds iff the clocked universal machine, which writes `encOut (c.evalSteps x T)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code Cells](../clocked/code-cells.md)
+- [Enc Out](../clocked/enc-out.md)
+- [Code](../code/code.md)
+- [The clocked evaluator](../code/eval-steps.md)
+- [Bit Sym](../code/bit-sym.md)
+- [The diagonal language](diag.md)
+
+## Proof depends on
+
+- [Cell](../clocked/cell.md)
+- [Cells](../clocked/cells.md)
+- [The diagonal language on a code stack](diag-code-cells.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

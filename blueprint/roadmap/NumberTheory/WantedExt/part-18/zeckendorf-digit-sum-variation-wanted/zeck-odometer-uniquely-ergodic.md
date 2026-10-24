@@ -12,7 +12,8 @@ carried by `𝕏` (measures on `𝕏` are taken as measures on `ℕ → Bool` wi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

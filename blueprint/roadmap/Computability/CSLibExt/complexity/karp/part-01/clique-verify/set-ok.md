@@ -11,7 +11,12 @@ A vertex set meets the mode's condition on every pair `i < j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+
+## Proof depends on
+
+- [Ok](ok.md)
+- [Adj Bits](../clique/adj-bits.md)
 
 ## Sources
 

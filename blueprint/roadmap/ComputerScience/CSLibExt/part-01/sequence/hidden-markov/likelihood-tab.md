@@ -11,7 +11,12 @@ lean: Cslib.MachineLearning.Sequence.HiddenMarkov.likelihoodTab
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+
+## Proof depends on
+
+- [Forward Tab](forward-tab.md)
+- [Sum Vec](sum-vec.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Newton's recurrence for `p_(n+1)(P)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Elem Symm](poly-elem-symm.md)
+- [Poly Power Sum](poly-power-sum.md)
 
 ## Sources
 

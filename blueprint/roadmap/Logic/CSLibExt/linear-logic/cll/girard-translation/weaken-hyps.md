@@ -12,7 +12,12 @@ Weakening by a whole `?`-context.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyps](hyps.md)
+
+## Proof depends on
+
+- [Hyp](hyp.md)
+- [Girard's translation](translate.md)
 
 ## Sources
 

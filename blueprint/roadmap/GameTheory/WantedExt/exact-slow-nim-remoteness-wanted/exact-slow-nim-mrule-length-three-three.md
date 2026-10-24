@@ -12,7 +12,7 @@ The paper's example `M(3, 3, 3) = 4` in `NIM(3, 2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Slow Nim MRule Length](exact-slow-nim-mrule-length.md)
 
 ## Sources
 

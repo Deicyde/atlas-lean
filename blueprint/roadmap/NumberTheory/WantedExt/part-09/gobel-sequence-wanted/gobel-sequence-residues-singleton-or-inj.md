@@ -16,7 +16,8 @@ residue is `ratResidue (p^r)`; `x ≡ 0 (mod p^{r-1})` is written
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
+- [Rat Residue](rat-residue.md)
 
 ## Sources
 

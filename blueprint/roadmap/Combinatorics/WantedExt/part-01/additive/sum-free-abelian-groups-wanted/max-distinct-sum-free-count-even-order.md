@@ -13,7 +13,7 @@ large even-order `G = ℤ_{2^{α₁}} ⊕ … ⊕ ℤ_{2^{α_r}} ⊕ K` (`r, α�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Distinct Sum Free Count](max-distinct-sum-free-count.md)
 
 ## Sources
 

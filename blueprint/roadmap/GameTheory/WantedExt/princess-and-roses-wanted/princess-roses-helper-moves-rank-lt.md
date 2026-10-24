@@ -12,7 +12,12 @@ Every P&R Helper move strictly decreases `x + y + z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Princess Roses Helper Moves](princess-roses-helper-moves.md)
+
+## Proof depends on
+
+- [Mem princess Roses Helper Moves](mem-princess-roses-helper-moves.md)
+- [Princess Roses Helper Move List](princess-roses-helper-move-list.md)
 
 ## Sources
 

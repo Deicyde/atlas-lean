@@ -12,7 +12,17 @@ lean: Cslib.Databases.synthesize_dependencyPreserving
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dependency Preserving](dependency-preserving.md)
+- [Equivalent](equivalent.md)
+- [FD](../functional-dependencies/fd.md)
+- [Synthesis](synthesize.md)
+
+## Proof depends on
+
+- [Derives](../functional-dependencies/derives.md)
+- [Attr Closure](../functional-dependencies/attr-closure.md)
+- [The closure algorithm decides derivability](../functional-dependencies/derives-iff-subset-attr-closure.md)
+- [Project FDs](project-fds.md)
 
 ## Sources
 

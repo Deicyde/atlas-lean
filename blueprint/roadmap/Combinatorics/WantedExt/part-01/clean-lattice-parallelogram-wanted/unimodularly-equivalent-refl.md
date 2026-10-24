@@ -12,7 +12,11 @@ Every set is unimodularly equivalent to itself (identity matrix, zero translatio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unimodularly Equivalent](unimodularly-equivalent.md)
+
+## Proof depends on
+
+- [Unimodular Map](unimodular-map.md)
 
 ## Sources
 

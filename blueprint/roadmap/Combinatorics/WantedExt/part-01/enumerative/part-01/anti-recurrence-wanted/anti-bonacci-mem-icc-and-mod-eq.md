@@ -15,7 +15,7 @@ lean: MetaMathlibExt.antiBonacci_mem_Icc_and_modEq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Recurrence](anti-recurrence.md)
 
 ## Sources
 

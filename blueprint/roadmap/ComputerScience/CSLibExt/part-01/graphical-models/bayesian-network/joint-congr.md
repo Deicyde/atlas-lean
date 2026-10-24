@@ -13,7 +13,8 @@ distribution of these variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
+- [Joint](joint.md)
 
 ## Sources
 

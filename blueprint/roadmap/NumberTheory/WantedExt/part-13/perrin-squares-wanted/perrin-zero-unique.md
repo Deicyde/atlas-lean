@@ -12,7 +12,8 @@ zero, `R_1 = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perrin Neg](perrin-neg.md)
+- [Perrin Sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources
 

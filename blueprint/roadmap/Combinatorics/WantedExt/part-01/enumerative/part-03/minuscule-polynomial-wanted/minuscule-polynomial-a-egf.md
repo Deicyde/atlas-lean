@@ -13,7 +13,7 @@ Exponential generating function: for real `x ≠ 0` and real `z`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minuscule Polynomial A](minuscule-polynomial-a.md)
 
 ## Sources
 

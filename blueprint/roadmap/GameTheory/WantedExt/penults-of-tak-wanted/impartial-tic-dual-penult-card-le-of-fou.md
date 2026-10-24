@@ -12,7 +12,8 @@ most `9` tokens.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Penult](placement-penult.md)
+- [Tic Ended](tic-ended.md)
 
 ## Sources
 

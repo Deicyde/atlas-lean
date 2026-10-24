@@ -11,7 +11,8 @@ Lookup labels in the driver: its exit returns to `DLab.ret`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DLab](../sat-check/dlab.md)
+- [Lab](../sat-lookup/lab.md)
 
 ## Sources
 

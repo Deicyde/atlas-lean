@@ -12,7 +12,7 @@ The composition `1 + 3` has `3` shaded cells, all to the right of the bargraph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Shade](composition-shade.md)
 
 ## Sources
 

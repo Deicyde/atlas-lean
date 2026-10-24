@@ -14,7 +14,7 @@ The first six rows of Chan's matrix as printed in the paper:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chan Cubic Matrix](chan-cubic-matrix.md)
 
 ## Sources
 

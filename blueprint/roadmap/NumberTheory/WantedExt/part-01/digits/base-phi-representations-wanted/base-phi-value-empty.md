@@ -12,7 +12,7 @@ The empty expansion represents `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Value](base-phi-value.md)
 
 ## Sources
 

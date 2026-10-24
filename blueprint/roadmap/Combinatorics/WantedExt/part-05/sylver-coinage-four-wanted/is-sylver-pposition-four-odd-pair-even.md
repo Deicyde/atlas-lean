@@ -18,7 +18,7 @@ The paper's hypothesis that `xy` is odd follows from the congruences. Part 5 (`x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver PPosition](is-sylver-pposition.md)
 
 ## Sources
 

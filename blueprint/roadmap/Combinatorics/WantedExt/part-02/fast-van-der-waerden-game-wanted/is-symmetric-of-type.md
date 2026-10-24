@@ -14,6 +14,10 @@ lean: MetaMathlibExt.FastVanDerWaerdenGame.IsSymmetricOfType
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Rat Copy](is-rat-copy.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.FastVanDerWaerdenGameWanted](../../../../../sources/v2/WantedExt.md)

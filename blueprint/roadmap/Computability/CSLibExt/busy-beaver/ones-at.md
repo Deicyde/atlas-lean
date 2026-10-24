@@ -12,7 +12,12 @@ window that the head can have reached.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Machine](machine.md)
+
+## Proof depends on
+
+- [Config](config.md)
+- [Run](run.md)
 
 ## Sources
 

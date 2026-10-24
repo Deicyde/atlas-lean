@@ -13,7 +13,20 @@ stack of length at most `m`, `fin ans` is reached within `m + 1` steps with only
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HK](hk.md)
+- [HLab](hlab.md)
+- [HΓ](h.md)
+- [Clean Ks](clean-ks.md)
+- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Clean S](../../../MathlibExt/turing-machine/cleanup/clean-s.md)
+
+## Proof depends on
+
+- [All Ks](all-ks.md)
+- [Mem clean Ks](mem-clean-ks.md)
+- [Cleanup](../../../MathlibExt/turing-machine/cleanup/clean-run.md)
 
 ## Sources
 

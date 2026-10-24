@@ -12,7 +12,15 @@ Input that does not parse as two unary numbers is rejected.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode KG](../clique/decode-kg.md)
+- [Kg Dec](../clique/kg-dec.md)
+
+## Proof depends on
+
+- [Encode KG](../clique/encode-kg.md)
+- [Pairs](../clique/pairs.md)
+- [To Graph](../clique/to-graph.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

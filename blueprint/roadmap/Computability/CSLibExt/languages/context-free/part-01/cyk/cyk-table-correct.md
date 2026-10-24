@@ -13,6 +13,10 @@ All recorded cells are correct.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Yields](../../part-02/yields/yields.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.CYK](../../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,7 @@ which needs `r_0 = 0`, is omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Den](convergent-den.md)
 
 ## Sources
 

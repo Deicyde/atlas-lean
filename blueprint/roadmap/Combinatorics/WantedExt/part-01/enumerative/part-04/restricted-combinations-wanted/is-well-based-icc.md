@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isWellBased_Icc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Well Based](is-well-based.md)
 
 ## Sources
 

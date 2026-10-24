@@ -13,6 +13,10 @@ The codes of an index sequence, concatenated.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bit Code](bit-code.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.PCPUniversality](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,14 @@ The recurrence `g_{n+1} = (n + 1) - g_{⌊gₙ/2⌋}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gutkovskiy](gutkovskiy.md)
+
+## Proof depends on
+
+- [Get D gutkovskiy Table](get-d-gutkovskiy-table.md)
+- [Gutkovskiy Table](gutkovskiy-table.md)
+- [Gutkovskiy le](gutkovskiy-le.md)
+- [Size gutkovskiy Table](size-gutkovskiy-table.md)
 
 ## Sources
 

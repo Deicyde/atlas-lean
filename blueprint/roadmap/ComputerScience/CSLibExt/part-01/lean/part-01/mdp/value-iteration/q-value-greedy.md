@@ -12,7 +12,10 @@ The greedy action attains the maximum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Bellman](bellman.md)
+- [Greedy](greedy.md)
+- [Q Value](q-value.md)
 
 ## Sources
 

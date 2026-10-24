@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isSingletonBoard_1223
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Singleton Board](is-singleton-board.md)
 
 ## Sources
 

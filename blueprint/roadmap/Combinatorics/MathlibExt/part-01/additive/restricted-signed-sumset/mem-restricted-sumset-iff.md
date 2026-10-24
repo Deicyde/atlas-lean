@@ -14,7 +14,7 @@ weighted sum. No deviation from the paper's definition is made.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Sumset](restricted-sumset.md)
 
 ## Sources
 

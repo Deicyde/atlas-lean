@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.AlphaBeta.alphaBeta_bot_top
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
+- [Alpha Beta](alpha-beta.md)
+- [Minimax](minimax.md)
+
+## Proof depends on
+
+- [Alpha-beta is correct](alpha-beta-spec.md)
 
 ## Sources
 

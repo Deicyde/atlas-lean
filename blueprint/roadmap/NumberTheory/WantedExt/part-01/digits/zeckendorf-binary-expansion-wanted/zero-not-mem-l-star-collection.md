@@ -12,7 +12,11 @@ The zero coefficient function is not in `E*`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Collection](l-star-collection.md)
+
+## Proof depends on
+
+- [Is LStar Block Sum](is-lstar-block-sum.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Theorem 1: for integers `m ≥ 2`, `n ≥ 1`, complex `r_1, …, r_m`, `x_1, …
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
 
 ## Sources
 

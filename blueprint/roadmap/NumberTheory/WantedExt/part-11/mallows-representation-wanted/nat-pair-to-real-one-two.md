@@ -12,7 +12,7 @@ Characteristic value: the pair `(1, 2)` encodes `1 / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nat Pair To Real](nat-pair-to-real.md)
 
 ## Sources
 

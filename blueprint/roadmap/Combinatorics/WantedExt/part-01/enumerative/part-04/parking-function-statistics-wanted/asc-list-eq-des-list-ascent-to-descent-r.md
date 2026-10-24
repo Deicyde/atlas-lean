@@ -12,7 +12,7 @@ For every word `x` over `ℕ` (so for every `x ∈ 𝔖_n(y)`, `y ∈ ℕ^n`),
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascent To Descent Rearrangement](ascent-to-descent-rearrangement.md)
 
 ## Sources
 

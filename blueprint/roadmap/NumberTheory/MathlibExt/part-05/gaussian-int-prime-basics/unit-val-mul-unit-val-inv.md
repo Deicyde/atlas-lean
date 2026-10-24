@@ -12,7 +12,8 @@ lean: GaussianInt.unitVal_mul_unitValInv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Val](unit-val.md)
+- [Unit Val Inv](unit-val-inv.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.nStepFibonacci_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Step Fibonacci](n-step-fibonacci.md)
 
 ## Sources
 

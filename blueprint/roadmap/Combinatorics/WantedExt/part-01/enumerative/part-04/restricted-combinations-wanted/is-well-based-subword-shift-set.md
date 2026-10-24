@@ -16,7 +16,8 @@ is not needed here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Well Based](is-well-based.md)
+- [Subword Shift Set](subword-shift-set.md)
 
 ## Sources
 

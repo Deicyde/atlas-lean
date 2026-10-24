@@ -12,7 +12,17 @@ lean: Cslib.Language.EncodedCFG.isEmptyB_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [The emptiness test](is-empty-b.md)
+- [Language](../../../languages/context-free/part-01/encoded/language.md)
+
+## Proof depends on
+
+- [Mem B](../primrec-list/mem-b.md)
+- [Soundness](exists-derives-of-mem-iterate.md)
+- [Generating](generating.md)
+- [Completeness](start-mem-generating-of-mem-language.md)
+- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
 
 ## Sources
 

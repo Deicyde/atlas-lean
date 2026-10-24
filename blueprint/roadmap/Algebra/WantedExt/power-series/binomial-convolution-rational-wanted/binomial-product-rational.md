@@ -16,7 +16,7 @@ Denominators are cleared; `deg T < mn` (so `T = 0` when `mn = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
 
 ## Sources
 

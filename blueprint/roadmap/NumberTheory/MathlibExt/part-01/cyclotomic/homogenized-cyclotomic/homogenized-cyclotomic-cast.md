@@ -12,7 +12,7 @@ For `b ≠ 0` in a field, `Φ_n(a, b) = b ^ φ(n) Φ_n(a / b)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Homogenized Cyclotomic](homogenized-cyclotomic.md)
 
 ## Sources
 

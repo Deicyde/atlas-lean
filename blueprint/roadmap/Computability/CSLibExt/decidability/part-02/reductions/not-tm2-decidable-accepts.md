@@ -12,7 +12,15 @@ lean: Cslib.Decidability.not_tm2Decidable_accepts
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accepts](accepts.md)
+- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [Halts](halts.md)
+- [Halting reduces to acceptance](many-one-reducible-halts-accepts.md)
+- [Halting is undecidable](not-tm2-decidable-halts.md)
+- [Tm2 Decidable of many One Reducible](../undecidable/tm2-decidable-of-many-one-reducible.md)
 
 ## Sources
 

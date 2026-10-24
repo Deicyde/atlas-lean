@@ -16,6 +16,10 @@ Series*, INTEGERS 26 (2026), Article A11, Theorem 3.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Leading Reciprocal Term](leading-reciprocal-term.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)

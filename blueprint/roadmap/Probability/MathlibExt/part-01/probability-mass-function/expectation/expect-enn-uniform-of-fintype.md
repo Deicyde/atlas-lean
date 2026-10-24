@@ -13,7 +13,12 @@ The extended expectation under the uniform distribution on a nonempty
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect ENN](expect-enn.md)
+- [Uniform Fintype](../uniform/uniform-fintype.md)
+
+## Proof depends on
+
+- [Expect ENN eq sum](expect-enn-eq-sum.md)
 
 ## Sources
 

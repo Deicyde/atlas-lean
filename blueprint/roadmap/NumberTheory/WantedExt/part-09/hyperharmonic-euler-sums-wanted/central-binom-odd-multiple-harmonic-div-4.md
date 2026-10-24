@@ -15,7 +15,8 @@ over all `n ≥ 0` (the terms with `n < k` vanish).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sum Beta Period Algebra](euler-sum-beta-period-algebra.md)
+- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
 
 ## Sources
 

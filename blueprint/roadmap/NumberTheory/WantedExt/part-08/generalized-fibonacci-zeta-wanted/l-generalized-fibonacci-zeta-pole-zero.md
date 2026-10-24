@@ -12,7 +12,11 @@ The index `κ = 0`, `n = 0` gives the possible pole `s = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Generalized Fibonacci Zeta Pole](l-generalized-fibonacci-zeta-pole.md)
+
+## Proof depends on
+
+- [L Generalized Fibonacci Other Roots](l-generalized-fibonacci-other-roots.md)
 
 ## Sources
 

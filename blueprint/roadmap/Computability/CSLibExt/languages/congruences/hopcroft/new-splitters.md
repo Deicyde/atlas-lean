@@ -14,6 +14,10 @@ waiting, and the smaller half otherwise.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Smaller](smaller.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.Hopcroft](../../../../../../sources/v2/CSLibExt.md)

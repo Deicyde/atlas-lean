@@ -12,7 +12,14 @@ The scan over the children evaluates at most their total number of leaves.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
+- [Alpha Beta List](alpha-beta-list.md)
+- [Leaves List](leaves-list.md)
+
+## Proof depends on
+
+- [Alpha Beta](alpha-beta.md)
+- [Leaves](leaves.md)
 
 ## Sources
 

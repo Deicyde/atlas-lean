@@ -12,7 +12,7 @@ lean: MetaMathlibExt.wythoffPassSetA_card
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Pass Set A](wythoff-pass-set-a.md)
 
 ## Sources
 

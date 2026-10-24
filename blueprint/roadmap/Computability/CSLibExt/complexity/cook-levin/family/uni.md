@@ -11,7 +11,7 @@ Layout with every constant equal to `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
 
 ## Sources
 

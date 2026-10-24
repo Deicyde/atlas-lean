@@ -13,6 +13,10 @@ The encoder as a linear map.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Encode](encode.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Coding.ReedSolomon](../../../../sources/v2/CSLibExt.md)

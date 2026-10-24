@@ -14,6 +14,12 @@ used on `[ω̃, 1)`; `0` if `y` has no expansion).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [L Star Collection](l-star-collection.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

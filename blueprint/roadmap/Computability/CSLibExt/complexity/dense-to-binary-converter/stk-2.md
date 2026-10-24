@@ -11,7 +11,7 @@ The stacks, with the counters as lists of `true`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stk](stk.md)
 
 ## Sources
 

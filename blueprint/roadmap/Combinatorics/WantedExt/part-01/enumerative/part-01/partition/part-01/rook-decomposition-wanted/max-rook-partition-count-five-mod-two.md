@@ -11,7 +11,7 @@ Parity of `R_5(n)` for `n > 25`: even iff `n ≡ 5, 7 (mod 8)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Rook Partition Count](max-rook-partition-count.md)
 
 ## Sources
 

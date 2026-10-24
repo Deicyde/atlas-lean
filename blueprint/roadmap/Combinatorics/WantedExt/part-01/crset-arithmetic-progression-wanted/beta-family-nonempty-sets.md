@@ -12,7 +12,7 @@ lean: MetaMathlibExt.betaFamily_nonempty_sets
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beta Family](beta-family.md)
 
 ## Sources
 

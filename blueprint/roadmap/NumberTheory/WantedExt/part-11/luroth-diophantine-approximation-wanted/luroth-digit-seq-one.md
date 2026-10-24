@@ -12,7 +12,14 @@ Every Lüroth digit of `1` is `2`, i.e. `1 = [2, 2, 2, ...]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Digit Seq](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
+
+## Proof depends on
+
+- [Luroth Digit](../luroth-consecutive-digits-wanted/luroth-digit.md)
+- [Luroth Digit one](../luroth-consecutive-digits-wanted/luroth-digit-one.md)
+- [Luroth Map](../luroth-consecutive-digits-wanted/luroth-map.md)
+- [Luroth Map one](../luroth-consecutive-digits-wanted/luroth-map-one.md)
 
 ## Sources
 

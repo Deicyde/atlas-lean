@@ -12,7 +12,7 @@ Normalizing a negated block: for positive integers `a₁, …, aₜ` with `t ≥
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Cont Frac](finite-cont-frac.md)
 
 ## Sources
 

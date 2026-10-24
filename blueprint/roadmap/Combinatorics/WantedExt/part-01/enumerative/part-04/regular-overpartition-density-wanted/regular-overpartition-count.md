@@ -16,6 +16,10 @@ placed on `ℓ` in the definition.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Overpartition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RegularOverpartitionDensityWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,7 @@ least `n^{2-ε}` (resp. `s n ≥ n^{1-ε}`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

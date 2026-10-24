@@ -12,7 +12,14 @@ The executable DPLL procedure accepts exactly the satisfiable CNF formulas.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dpll](../solver/dpll.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
+
+## Proof depends on
+
+- [Decide With Fuel eq true iff](decide-with-fuel-eq-true-iff.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Sources
 

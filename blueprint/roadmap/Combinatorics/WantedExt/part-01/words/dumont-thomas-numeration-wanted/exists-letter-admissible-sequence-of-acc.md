@@ -12,7 +12,9 @@ is an `x`-admissible sequence `(mᵢ, aᵢ)_{i = 0, …, k-1}` with `|mᵢ| = v�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
+- [Is Substitution](is-substitution.md)
+- [Substitution Automaton](substitution-automaton.md)
 
 ## Sources
 

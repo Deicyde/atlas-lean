@@ -12,7 +12,7 @@ literals takes the polarity prescribed by the clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clause](clause.md)
 
 ## Sources
 

@@ -15,7 +15,12 @@ with the constant observable and `PMF.expectENN_const` applies.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected Time](expected-time.md)
+
+## Proof depends on
+
+- [Expect ENN](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn.md)
+- [Expect ENN const](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn-const.md)
 
 ## Sources
 

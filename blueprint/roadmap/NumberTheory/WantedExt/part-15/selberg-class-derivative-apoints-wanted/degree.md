@@ -11,7 +11,7 @@ The degree `d_F = 2 ∑ λ_j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Class Function](selberg-class-function.md)
 
 ## Sources
 

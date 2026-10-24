@@ -13,7 +13,8 @@ error locator polynomial, padded to degree `e`, and `Q = p E`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Key Solution](is-key-solution.md)
+- [Encode](encode.md)
 
 ## Sources
 

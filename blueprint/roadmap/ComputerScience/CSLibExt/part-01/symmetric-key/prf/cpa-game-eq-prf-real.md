@@ -12,7 +12,24 @@ With the oracle `F k`, the reduction runs the CPA experiment exactly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CPAAdversary](cpaadversary.md)
+- [Cpa Game](cpa-game.md)
+- [Cpa Reduction](cpa-reduction.md)
+- [Prf Real](prf-real.md)
+
+## Proof depends on
+
+- [Oracle Comp](oracle-comp.md)
+- [Done](done.md)
+- [Query](query.md)
+- [Run](run.md)
+- [Run bind](run-bind.md)
+- [Oracle Sig](oracle-sig.md)
+- [Cpa Guess](cpa-guess.md)
+- [Encrypt](encrypt.md)
+- [Pick](pick.md)
+- [Run Enc](run-enc.md)
+- [Sim Enc](sim-enc.md)
 
 ## Sources
 

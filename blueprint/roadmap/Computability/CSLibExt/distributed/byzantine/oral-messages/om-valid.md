@@ -14,7 +14,11 @@ most `m` traitors, if the commander is loyal, every loyal lieutenant decides its
 
 ## Depends on
 
-This node has no prerequisites.
+- [Om](om.md)
+
+## Proof depends on
+
+- [Lemma 1](om-eq-of-loyal.md)
 
 ## Sources
 

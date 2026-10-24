@@ -11,7 +11,7 @@ The row sites.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site](../ham-path-emit-machine/site.md)
 
 ## Sources
 

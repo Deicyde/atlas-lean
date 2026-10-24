@@ -12,7 +12,11 @@ The reduced Lo Shu square is a reduced magic square of order `3` (magic sum `12`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reduced Magic Square](is-reduced-magic-square.md)
+
+## Proof depends on
+
+- [Is Magic Square](is-magic-square.md)
 
 ## Sources
 

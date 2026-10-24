@@ -16,6 +16,11 @@ Lemmas 1-7.)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chu Block](chu-block.md)
+- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.ChuMSTDFamiliesWanted](../../../../../../sources/v2/WantedExt.md)

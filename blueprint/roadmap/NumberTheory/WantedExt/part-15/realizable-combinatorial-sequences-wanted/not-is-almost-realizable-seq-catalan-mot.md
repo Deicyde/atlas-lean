@@ -13,7 +13,8 @@ The Catalan numbers, the Motzkin numbers, and the large Schröder numbers (Mathl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Almost Realizable Seq](is-almost-realizable-seq.md)
+- [Motzkin Number](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
 
 ## Sources
 

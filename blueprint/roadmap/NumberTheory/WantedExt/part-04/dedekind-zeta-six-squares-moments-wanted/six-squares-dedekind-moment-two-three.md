@@ -13,7 +13,7 @@ For a cubic field `K` of negative discriminant (so non-normal over `ℚ`) and ev
 
 ## Depends on
 
-This node has no prerequisites.
+- [Six Squares Dedekind Moment](six-squares-dedekind-moment.md)
 
 ## Sources
 

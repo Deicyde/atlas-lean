@@ -12,7 +12,12 @@ lean: MetaMathlibExt.hasDistinctMultiplesInInterval_distinctMultiplesIntervalLen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
+- [Distinct Multiples Interval Length](distinct-multiples-interval-length.md)
+
+## Proof depends on
+
+- [Exists has Distinct Multiples In Interval](exists-has-distinct-multiples-in-interva.md)
 
 ## Sources
 

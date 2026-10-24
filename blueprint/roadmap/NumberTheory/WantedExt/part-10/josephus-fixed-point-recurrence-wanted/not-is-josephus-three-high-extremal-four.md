@@ -12,7 +12,11 @@ lean: MetaMathlibExt.not_isJosephusThreeHighExtremal_four
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Josephus Three High Extremal](is-josephus-three-high-extremal.md)
+
+## Proof depends on
+
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

@@ -18,6 +18,11 @@ set has positive gap size when `t ≥ 1` (`cubeGapSize_pos`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Dense In Cubes](is-dense-in-cubes.md)
+- [Lattice Cube](lattice-cube.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PiecewiseSyndeticWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ lean: Cslib.Circuits.CarryLookahead.carry_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gp Range](gp-range.md)
 
 ## Sources
 

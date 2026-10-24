@@ -14,7 +14,7 @@ swapped, since the main term is symmetric.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

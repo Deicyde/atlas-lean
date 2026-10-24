@@ -11,7 +11,11 @@ The partition function: the total weight of all label paths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+
+## Proof depends on
+
+- [Path Weight](path-weight.md)
 
 ## Sources
 

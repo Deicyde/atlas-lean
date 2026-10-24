@@ -12,7 +12,13 @@ The pair bits of an occurrence list, read off `pairs`, are `bitsRec`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bits Rec](bits-rec.md)
+- [Occ Adj](../clique/occ-adj.md)
+- [Pairs](../clique/pairs.md)
+
+## Proof depends on
+
+- [Pairs succ](../clique-verify/pairs-succ.md)
 
 ## Sources
 

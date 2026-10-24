@@ -12,7 +12,15 @@ Level-`0` gates keep their values through the later levels.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Base](level-base.md)
+- [Levels](levels.md)
+- [Arith Signature](../ripple-carry/arith-signature.md)
+
+## Proof depends on
+
+- [Line K](line-k.md)
+- [Append Gates](append-gates.md)
+- [Append Gates eval lt](append-gates-eval-lt.md)
 
 ## Sources
 

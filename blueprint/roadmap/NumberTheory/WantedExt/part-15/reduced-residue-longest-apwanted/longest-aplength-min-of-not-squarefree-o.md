@@ -13,7 +13,7 @@ Theorem 3, `n` neither squarefree nor a prime power:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest APLength](longest-aplength.md)
 
 ## Sources
 

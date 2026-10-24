@@ -13,7 +13,8 @@ rationals at which the generating function `U(x)` is an integer is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Bi Seq](second-order-bi-seq.md)
+- [Second Order Gen Value](second-order-gen-value.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ lean: MetaMathlibExt.hFullOmegaHB_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full Omega HB](h-full-omega-hb.md)
+
+## Proof depends on
+
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [Fixed Degree Monic zero](fixed-degree-monic-zero.md)
+- [H Full](h-full.md)
+- [Omega Mult](omega-mult.md)
+- [Omega Mult one](omega-mult-one.md)
+- [One mem h Full](one-mem-h-full.md)
 
 ## Sources
 

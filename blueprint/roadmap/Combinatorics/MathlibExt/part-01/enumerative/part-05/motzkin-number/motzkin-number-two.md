@@ -12,7 +12,7 @@ lean: MetaMathlibExt.motzkinNumber_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Number](motzkin-number.md)
 
 ## Sources
 

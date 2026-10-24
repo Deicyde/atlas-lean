@@ -11,7 +11,12 @@ Moore's relation on reachable states, as a setoid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reachable](../../../decidability/part-02/regular/reachable.md)
+
+## Proof depends on
+
+- [Correctness of the refinement](mem-moore-rel-iff.md)
+- [Moore Rel](moore-rel.md)
 
 ## Sources
 

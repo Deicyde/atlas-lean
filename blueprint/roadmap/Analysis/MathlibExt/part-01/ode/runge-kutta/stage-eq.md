@@ -12,7 +12,14 @@ lean: MathlibExt.Analysis.ODE.RungeKutta.stage_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
+- [C](c.md)
+- [Stage](stage.md)
+
+## Proof depends on
+
+- [Stage Row](stage-row.md)
+- [Stage Row eq of lt](stage-row-eq-of-lt.md)
 
 ## Sources
 

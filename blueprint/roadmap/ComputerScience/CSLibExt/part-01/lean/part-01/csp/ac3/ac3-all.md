@@ -11,7 +11,11 @@ AC-3 on the whole problem: all arcs queued.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+
+## Proof depends on
+
+- [Ac3](ac3.md)
 
 ## Sources
 

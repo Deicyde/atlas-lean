@@ -12,7 +12,7 @@ Holonomic recurrence: for all `n, m ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

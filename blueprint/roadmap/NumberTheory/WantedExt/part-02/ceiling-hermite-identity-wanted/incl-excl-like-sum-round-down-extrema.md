@@ -12,7 +12,7 @@ Theorem 3: for `n ≥ 2`, `g_4` (nearest integer, ties down: `⌈x - 1/2⌉`) ha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incl Excl Like Sum](incl-excl-like-sum.md)
 
 ## Sources
 

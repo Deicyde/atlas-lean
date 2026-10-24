@@ -11,7 +11,16 @@ lean: Cslib.Complexity.CookLevin.Accept.accFam
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [CNF](../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Cell Lits](cell-lits.md)
+- [Code Lits](code-lits.md)
+- [Num Vars](../family/num-vars.md)
+- [Dense Clause](../family/dense-clause.md)
+- [Clause](../../dense-sat/clause.md)
 
 ## Sources
 

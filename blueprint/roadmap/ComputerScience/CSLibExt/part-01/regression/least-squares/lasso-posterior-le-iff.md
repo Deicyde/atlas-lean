@@ -14,7 +14,14 @@ scale `b`, the posterior kernel is a decreasing function of the lasso objective 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lasso](lasso.md)
+- [Lasso Posterior](lasso-posterior.md)
+
+## Proof depends on
+
+- [Gauss Likelihood](gauss-likelihood.md)
+- [Laplace PDF](laplace-pdf.md)
+- [Rss](rss.md)
 
 ## Sources
 

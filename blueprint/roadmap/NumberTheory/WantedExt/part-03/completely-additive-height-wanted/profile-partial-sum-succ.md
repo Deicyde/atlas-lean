@@ -12,7 +12,7 @@ lean: MetaMathlibExt.profilePartialSum_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Profile Partial Sum](profile-partial-sum.md)
 
 ## Sources
 

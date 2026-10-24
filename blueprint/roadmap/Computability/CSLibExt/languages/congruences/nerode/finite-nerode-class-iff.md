@@ -12,7 +12,11 @@ Finiteness of Nerode classes is the quotient formulation of the Myhill--Nerode c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](nerode-class.md)
+
+## Proof depends on
+
+- [Nerode Class Equiv Residual](nerode-class-equiv-residual.md)
 
 ## Sources
 

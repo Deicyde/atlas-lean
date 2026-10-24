@@ -15,7 +15,7 @@ The full informal statement is in the module documentation directly above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Southeast Path](southeast-path.md)
 
 ## Sources
 

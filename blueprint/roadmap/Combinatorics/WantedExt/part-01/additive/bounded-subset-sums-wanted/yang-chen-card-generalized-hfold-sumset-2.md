@@ -13,7 +13,9 @@ Yang–Chen inverse theorem for `k ≥ 5`: if `2 ≤ h ≤ ∑ rⱼ - 2`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized HFold Sumset](generalized-hfold-sumset.md)
+- [Yang Chen Bound](yang-chen-bound.md)
+- [Is APOf Length](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources
 

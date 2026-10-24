@@ -12,7 +12,8 @@ Lemma 5: for a prime `n ≡ 1 (mod 4)`, `F_1` over `ℤ/n` is not `m`-vanishing 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MVanishing Family](is-mvanishing-family.md)
+- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ Auxiliary for `negPos`: the value at row `-(p + 1)` and column `k ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+
+## Proof depends on
+
+- [Weight](weight.md)
+- [Weight'](weight-2.md)
 
 ## Sources
 

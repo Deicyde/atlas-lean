@@ -11,7 +11,7 @@ Lemma 6: `η(f) = lim_{x → ∞} log f(x) / log x` exists and equals `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Campbell F](campbell-f.md)
 
 ## Sources
 

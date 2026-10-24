@@ -14,7 +14,7 @@ The nilpotency annotations are not part of this statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weakly Locally Nilpotent At](is-weakly-locally-nilpotent-at.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: Cslib.Decidability.exists_minimalCode_gt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimal Code](minimal-code.md)
+
+## Proof depends on
+
+- [Exists code dom singleton](exists-code-dom-singleton.md)
+- [Exists minimal Code dom](exists-minimal-code-dom.md)
 
 ## Sources
 

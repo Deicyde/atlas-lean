@@ -11,7 +11,12 @@ A word determines an element of the transition monoid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Transformation](state-transformation.md)
+- [Transition Monoid](transition-monoid.md)
+
+## Proof depends on
+
+- [Transition Morphism](transition-morphism.md)
 
 ## Sources
 

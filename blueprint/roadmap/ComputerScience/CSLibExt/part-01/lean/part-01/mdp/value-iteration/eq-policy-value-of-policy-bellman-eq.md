@@ -12,7 +12,14 @@ The value of a policy is the only solution of the policy's Bellman equation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Stochastic](stochastic.md)
+- [Policy Bellman](policy-bellman.md)
+- [Policy Value](policy-value.md)
+
+## Proof depends on
+
+- [Q Value](q-value.md)
 
 ## Sources
 

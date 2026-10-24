@@ -14,7 +14,10 @@ sequence is `a k = a_{k+1}`, and position `j` (paper `j + 1`) with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Nat Pair To Real](nat-pair-to-real.md)
+- [Stern Brocot Frac](stern-brocot-frac.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
 
 ## Sources
 

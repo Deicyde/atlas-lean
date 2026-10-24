@@ -13,7 +13,8 @@ commutative ring instead of `ℝ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
+- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

@@ -15,7 +15,9 @@ The `a ≡ 2 (mod ℓ)` claim is restricted to odd `ℓ`: it is false as printed
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas UPeriod](lucas-uperiod.md)
+- [Lucas URestricted Period](lucas-urestricted-period.md)
 
 ## Sources
 

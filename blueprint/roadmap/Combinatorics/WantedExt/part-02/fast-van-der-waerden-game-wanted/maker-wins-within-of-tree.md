@@ -20,7 +20,8 @@ maximal directed paths are the leaf nodes. A copy is `IsRatCopy` of `S` (cast to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rat Copy](is-rat-copy.md)
+- [Maker Wins Within](maker-wins-within.md)
 
 ## Sources
 

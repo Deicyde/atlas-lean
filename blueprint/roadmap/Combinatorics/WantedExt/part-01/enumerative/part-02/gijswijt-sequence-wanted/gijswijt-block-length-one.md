@@ -12,7 +12,7 @@ lean: MetaMathlibExt.gijswijtBlockLength_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block Length](gijswijt-block-length.md)
 
 ## Sources
 

@@ -14,7 +14,16 @@ miss more than `c / d` times the optimum plus `b / d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](../../greedy/offline-caching/cache-event.md)
+- [Furthest In Future](../../greedy/offline-caching/furthest-in-future.md)
+- [Misses](../../greedy/offline-caching/misses.md)
+- [Fifo Pager](fifo-pager.md)
+- [A deterministic online paging algorithm with cache size...](../paging-lower-bound/a-deterministic-online-paging-algorithm.md)
+- [Misses](../paging-lower-bound/misses.md)
+
+## Proof depends on
+
+- [No deterministic online pager is better than `k`-competitive](../paging-lower-bound/not-competitive-of-lt.md)
 
 ## Sources
 

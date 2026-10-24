@@ -12,7 +12,7 @@ solves `(a - c)² (b² + 1) = (b - c)² (a² + 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
 
 ## Sources
 

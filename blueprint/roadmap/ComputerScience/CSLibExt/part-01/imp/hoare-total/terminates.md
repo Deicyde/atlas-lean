@@ -12,7 +12,16 @@ Total correctness yields a terminating small-step execution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+- [TValid](tvalid.md)
+- [Terminates](../small-step/terminates.md)
+
+## Proof depends on
+
+- [Big Step](../big-step/big-step.md)
+- [Terminates iff big Step](../equivalence/terminates-iff-big-step.md)
 
 ## Sources
 

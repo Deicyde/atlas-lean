@@ -11,7 +11,7 @@ All scratch counters are empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
 
 ## Sources
 

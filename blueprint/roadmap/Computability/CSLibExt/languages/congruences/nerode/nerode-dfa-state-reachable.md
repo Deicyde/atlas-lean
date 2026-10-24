@@ -12,7 +12,13 @@ Every state of the canonical Nerode automaton is reachable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](nerode-class.md)
+- [Nerode DFA](nerode-dfa.md)
+
+## Proof depends on
+
+- [Nerode Class](nerode-class-2.md)
+- [Nerode Setoid](nerode-setoid.md)
 
 ## Sources
 

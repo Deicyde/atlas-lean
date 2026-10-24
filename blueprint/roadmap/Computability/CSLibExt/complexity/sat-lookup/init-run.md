@@ -90,7 +90,16 @@ theorem liveVal_val (n : List Bool) (b : Bool) (post : List Ent) (q : List Bool)
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [Stk](stk.md)
+- [Sym](../sat-verifier-spec/sym.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Single](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

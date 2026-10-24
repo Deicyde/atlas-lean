@@ -15,7 +15,7 @@ Proposition 2 (i)–(iv): (i) `p_{ℓ,m}(x, x) = (-1)^m m! S(ℓ + 1, m + 1) x^�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

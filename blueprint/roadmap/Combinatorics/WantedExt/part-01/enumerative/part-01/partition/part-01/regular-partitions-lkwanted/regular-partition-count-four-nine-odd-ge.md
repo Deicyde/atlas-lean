@@ -12,7 +12,8 @@ cleared (both sides multiplied by `f_1^3 f_6`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [Regular Partition Count](regular-partition-count.md)
 
 ## Sources
 

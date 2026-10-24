@@ -12,7 +12,14 @@ The empty position is a P-position (it has no options).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Slow ANim Game](slow-anim-game.md)
+
+## Proof depends on
+
+- [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
+- [Is P iff](../../../../GameTheory/MathlibExt/sprague-grundy/is-p-iff.md)
+- [Slow ANim Moves zero](slow-anim-moves-zero.md)
 
 ## Sources
 

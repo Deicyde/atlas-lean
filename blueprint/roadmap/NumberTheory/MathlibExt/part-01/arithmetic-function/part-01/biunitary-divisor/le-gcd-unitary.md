@@ -12,7 +12,8 @@ Every common unitary divisor of `a` and `b` is at most `gcd₁(a, b)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Unitary](gcd-unitary.md)
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

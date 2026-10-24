@@ -18,7 +18,14 @@ declared-time form of closure under reductions, for named algorithms
 
 ## Depends on
 
-This node has no prerequisites.
+- [Declared Poly Many One Red Via](declared-poly-many-one-red-via.md)
+- [Verifier In Declared Poly Time](verifier-in-declared-poly-time.md)
+- [Verifies](verifies.md)
+- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Computes In Declared Poly Time](computes-in-declared-poly-time.md)
 
 ## Sources
 

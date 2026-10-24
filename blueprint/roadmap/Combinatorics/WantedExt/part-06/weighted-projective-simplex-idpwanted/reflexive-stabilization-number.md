@@ -16,6 +16,11 @@ weights, rather than baking its divisibility criterion into reflexivity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Reflexive](is-reflexive.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

@@ -14,6 +14,10 @@ full support.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cond Norm](cond-norm.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Sampling.GibbsSampling](../../../../../../sources/v2/CSLibExt.md)

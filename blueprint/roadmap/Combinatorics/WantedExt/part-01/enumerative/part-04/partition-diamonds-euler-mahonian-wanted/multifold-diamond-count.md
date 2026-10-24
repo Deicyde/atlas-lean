@@ -14,6 +14,14 @@ at most `i + j`, so the search over `Fin c → Fin (i + j + 1)` is exhaustive).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Multifold Diamond](is-multifold-diamond.md)
+- [Diamond Link Pos](diamond-link-pos.md)
+- [Diamond Links](diamond-links.md)
+- [Diamond Part](diamond-part.md)
+- [Diamond Size](diamond-size.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PartitionDiamondsEulerMahonianWanted](../../../../../../../sources/v2/WantedExt.md)

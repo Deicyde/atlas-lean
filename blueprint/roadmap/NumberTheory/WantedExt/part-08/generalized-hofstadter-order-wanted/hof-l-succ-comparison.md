@@ -12,7 +12,8 @@ For `k, n ≥ 1` and `0 ≤ j ≤ k`: `L_k(n) ≥ L_{k+1}(n)`, i.e.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Count](hof-count.md)
+- [Hof L](hof-l.md)
 
 ## Sources
 

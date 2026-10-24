@@ -12,7 +12,7 @@ For every `k ≥ 1`, the sequence `(L_{k,n}^n)_{n ≥ 3}` is log-convex:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](../../../../../../NumberTheory/WantedExt/part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

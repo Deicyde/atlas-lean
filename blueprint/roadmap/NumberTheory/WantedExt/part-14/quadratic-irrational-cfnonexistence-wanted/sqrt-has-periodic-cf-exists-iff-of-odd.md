@@ -14,7 +14,8 @@ existence of `d` (and `a₀`), as in Proposition 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Periodic CF](has-periodic-cf.md)
+- [Convergent Den](convergent-den.md)
 
 ## Sources
 

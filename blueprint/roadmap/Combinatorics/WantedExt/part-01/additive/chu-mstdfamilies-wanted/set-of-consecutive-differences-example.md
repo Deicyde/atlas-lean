@@ -12,7 +12,7 @@ The paper's example: `(0 | 1, 5, 1, 1, 9, 7) = {0, 1, 6, 7, 8, 17, 24}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
 
 ## Sources
 

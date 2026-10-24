@@ -14,7 +14,11 @@ Notation 2 (`τ_D = 1` when `d = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tau Den](tau-den.md)
+
+## Proof depends on
+
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

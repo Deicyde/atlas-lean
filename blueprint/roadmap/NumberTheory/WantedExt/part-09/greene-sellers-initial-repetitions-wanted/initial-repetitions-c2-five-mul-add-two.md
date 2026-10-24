@@ -11,7 +11,7 @@ Nyirenda and Mugwangwavari: `c₂(5n + 2)` is even for all `n ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Repetitions C2](initial-repetitions-c2.md)
 
 ## Sources
 

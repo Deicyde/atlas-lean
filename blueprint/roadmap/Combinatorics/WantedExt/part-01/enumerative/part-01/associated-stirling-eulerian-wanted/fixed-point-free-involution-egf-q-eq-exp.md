@@ -12,7 +12,8 @@ the `q`-analogue excedance generating function is `A^{(2)}(q,x,u) = exp(q x u^2/
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

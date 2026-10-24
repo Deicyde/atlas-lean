@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.Sampling.invariant_gibbsKernel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibbs Step](gibbs-step.md)
+- [Pmf Kernel](../metropolis-hastings/pmf-kernel.md)
+
+## Proof depends on
+
+- [Detailed balance for a Gibbs update](gibbs-detailed-balance.md)
+- [Invariant pmf Kernel](../metropolis-hastings/invariant-pmf-kernel.md)
 
 ## Sources
 

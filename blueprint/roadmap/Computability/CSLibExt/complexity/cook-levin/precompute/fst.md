@@ -11,7 +11,18 @@ Stacks during the read loop: rest of the input, codes so far, `N = n`, output `o
 
 ## Depends on
 
-This node has no prerequisites.
+- [FK](fk.md)
+- [FΓ](f.md)
+
+## Proof depends on
+
+- [CK](../accept/ck.md)
+- [HK](../assembly/hk.md)
+- [CK](../family/ck.md)
+- [CK](../init-family/ck.md)
+- [PS](ps.md)
+- [CK](../shift/ck.md)
+- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

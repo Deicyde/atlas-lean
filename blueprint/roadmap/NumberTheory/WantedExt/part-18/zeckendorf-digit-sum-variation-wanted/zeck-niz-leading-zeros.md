@@ -12,7 +12,8 @@ For `r ≥ 1` and `k ≥ 2`, the cylinders of order `k` in `NIZ_k` have names st
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck NIZ](zeck-niz.md)
 
 ## Sources
 

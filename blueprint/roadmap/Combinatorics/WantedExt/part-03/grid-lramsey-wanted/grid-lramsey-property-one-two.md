@@ -13,7 +13,7 @@ With one color, the `2 × 2` grid already contains the monochromatic L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grid LRamsey Property](grid-lramsey-property.md)
 
 ## Sources
 

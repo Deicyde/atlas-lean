@@ -13,7 +13,15 @@ input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+- [Kg Check](kg-check.md)
+- [Vertex Cover Dec](../clique/vertex-cover-dec.md)
+
+## Proof depends on
+
+- [Cover iff](cover-iff.md)
+- [Kg Dec iff exists](kg-dec-iff-exists.md)
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

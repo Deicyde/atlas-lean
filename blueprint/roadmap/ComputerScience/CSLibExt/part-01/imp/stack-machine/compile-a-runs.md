@@ -13,7 +13,19 @@ value of the expression and otherwise leaves the stack and state unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [Instr](instr.md)
+- [Steps](steps.md)
+- [Alen](alen.md)
+- [Compile A](compile-a.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [Config](config.md)
+- [Step](step.md)
+- [Fetch segment](fetch-segment.md)
 
 ## Sources
 

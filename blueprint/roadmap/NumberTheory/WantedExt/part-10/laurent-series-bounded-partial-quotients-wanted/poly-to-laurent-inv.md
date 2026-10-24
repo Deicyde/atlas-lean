@@ -13,6 +13,10 @@ The embedding `𝔽_q[x] → 𝔽_q((x⁻¹))`, `x ↦ laurentInvVar K`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Laurent Inv Var](laurent-inv-var.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LaurentSeriesBoundedPartialQuotientsWanted](../../../../../sources/v2/WantedExt.md)

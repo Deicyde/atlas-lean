@@ -12,7 +12,8 @@ The paper's positivity of `i` is dropped (the claim holds at `i = 0`) and `p` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDigit](base-pdigit.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

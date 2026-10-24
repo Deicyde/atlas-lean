@@ -11,7 +11,7 @@ The pairwise condition: bit of `{i, j}`, then whether `i` and `j` are chosen.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
 
 ## Sources
 

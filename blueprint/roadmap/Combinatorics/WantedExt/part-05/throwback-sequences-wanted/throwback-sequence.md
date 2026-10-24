@@ -13,6 +13,10 @@ The throwback sequence `T(X)`: `t_n` is the leader of `τⁿ(X)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Throwback](throwback.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ThrowbackSequencesWanted](../../../../../sources/v2/WantedExt.md)

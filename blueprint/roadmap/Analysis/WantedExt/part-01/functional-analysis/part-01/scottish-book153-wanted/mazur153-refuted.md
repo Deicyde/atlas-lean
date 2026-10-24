@@ -18,7 +18,7 @@ from the approximation-property consequence already in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem153 Claim](scottish-book-problem153-claim.md)
 
 ## Sources
 

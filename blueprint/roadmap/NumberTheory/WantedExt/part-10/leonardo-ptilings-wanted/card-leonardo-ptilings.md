@@ -11,7 +11,8 @@ lean: MetaMathlibExt.card_leonardoPTilings
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
+- [Leonardo PTilings](leonardo-ptilings.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Characteristic value: the word `345134` contains four `3 × 2` rectangles.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangle Capacity](rectangle-capacity.md)
 
 ## Sources
 

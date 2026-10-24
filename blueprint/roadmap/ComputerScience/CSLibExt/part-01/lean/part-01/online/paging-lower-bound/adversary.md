@@ -11,7 +11,11 @@ The adversary: always request the page the pager does not hold.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online paging algorithm with cache size...](a-deterministic-online-paging-algorithm.md)
+
+## Proof depends on
+
+- [Outside](outside.md)
 
 ## Sources
 

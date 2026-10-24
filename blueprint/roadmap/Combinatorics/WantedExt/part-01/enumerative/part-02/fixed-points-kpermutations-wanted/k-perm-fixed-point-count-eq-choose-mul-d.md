@@ -14,7 +14,7 @@ The paper assumes `n ≥ k ≥ 1`; the identity is stated for all `n` and `k ≥
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
 
 ## Sources
 

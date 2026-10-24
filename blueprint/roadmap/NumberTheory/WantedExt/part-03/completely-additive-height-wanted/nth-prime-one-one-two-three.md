@@ -12,7 +12,7 @@ Small values: `p₁ = 2`, `p₂ = 3`, `p₃ = 5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Prime One](nth-prime-one.md)
 
 ## Sources
 

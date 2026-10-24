@@ -12,7 +12,7 @@ lean: MetaMathlibExt.size_gutkovskiyTable
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gutkovskiy Table](gutkovskiy-table.md)
 
 ## Sources
 

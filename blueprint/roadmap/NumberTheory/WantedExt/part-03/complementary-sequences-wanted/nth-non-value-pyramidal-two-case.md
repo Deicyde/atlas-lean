@@ -12,7 +12,7 @@ For `3 ≤ k ≤ 5` the `n`-th non-`k`-gonal-pyramidal number is, with `s = ⌊�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

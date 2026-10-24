@@ -16,6 +16,11 @@ next gap in `xs` cost `gapExtend` instead of `gapOpen`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gap State](gap-state.md)
+- [Gotoh Aux](gotoh-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.AffineAlignment](../../../../../../../../sources/v2/CSLibExt.md)

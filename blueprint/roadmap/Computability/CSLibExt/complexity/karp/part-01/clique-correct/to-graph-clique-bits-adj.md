@@ -12,7 +12,17 @@ Adjacency in Karp's graph is `occAdj` on distinct occurrences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clique Bits](../clique/clique-bits.md)
+- [Occ Adj](../clique/occ-adj.md)
+- [Occs](../clique/occs.md)
+- [To Graph](../clique/to-graph.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Adj Bits](../clique/adj-bits.md)
+- [Adj Bits map pairs](adj-bits-map-pairs.md)
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

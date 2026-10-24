@@ -17,7 +17,7 @@ and a `J`-set `D ⊆ S_0` there is a sequence `(w_m)` of `n`-variable words over
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mul JSet](../../../MathlibExt/part-03/semigroup-largeness/is-mul-jset.md)
 
 ## Sources
 

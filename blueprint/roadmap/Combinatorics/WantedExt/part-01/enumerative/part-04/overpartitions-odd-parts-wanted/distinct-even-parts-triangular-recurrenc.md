@@ -13,7 +13,7 @@ otherwise; `⌈j/2⌉ = ⌊(j+1)/2⌋`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Even Parts Count](distinct-even-parts-count.md)
 
 ## Sources
 

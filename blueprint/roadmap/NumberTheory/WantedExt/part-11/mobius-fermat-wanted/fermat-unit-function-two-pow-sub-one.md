@@ -12,7 +12,7 @@ lean: MetaMathlibExt.fermatUnitFunction_two_pow_sub_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Unit Function](fermat-unit-function.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The posterior `p_θ(z | x) = p_θ(x, z) / p_θ(x)` (the E-step).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Marginal](marginal.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.ExpectationMaximization](../../../../../../sources/v2/CSLibExt.md)

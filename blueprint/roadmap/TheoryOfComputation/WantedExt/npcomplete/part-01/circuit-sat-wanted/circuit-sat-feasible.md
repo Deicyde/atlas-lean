@@ -11,7 +11,11 @@ A satisfying assignment: the last gate evaluates to true.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Sat Instance](circuit-sat-instance.md)
+
+## Proof depends on
+
+- [Eval Circuit](eval-circuit.md)
 
 ## Sources
 

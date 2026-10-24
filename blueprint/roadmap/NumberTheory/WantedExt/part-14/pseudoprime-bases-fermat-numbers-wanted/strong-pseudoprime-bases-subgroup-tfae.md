@@ -15,7 +15,7 @@ pseudoprime bases; (c) `v = 1` or `r = 1`; (d) some prime `p ≡ 3 (mod 4)` divi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strong Pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
 
 ## Sources
 

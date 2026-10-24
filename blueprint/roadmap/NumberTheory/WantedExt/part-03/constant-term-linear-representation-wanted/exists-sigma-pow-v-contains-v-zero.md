@@ -14,7 +14,7 @@ There is `t₀` such that for every `n` with `p ∤ ct[P^n]`, the block
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Deg](laurent-deg.md)
 
 ## Sources
 

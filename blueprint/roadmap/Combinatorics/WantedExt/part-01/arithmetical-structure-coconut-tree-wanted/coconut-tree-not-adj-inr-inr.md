@@ -12,7 +12,7 @@ Leaves of `CT(p, s)` are pairwise nonadjacent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

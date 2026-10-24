@@ -11,7 +11,12 @@ Auxiliary for `negNeg`: the value at row `n = -(p + 1)` and column `n - q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+
+## Proof depends on
+
+- [Weight](weight.md)
+- [Weight'](weight-2.md)
 
 ## Sources
 

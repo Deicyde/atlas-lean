@@ -11,7 +11,7 @@ The productions without terminals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
 
 ## Sources
 

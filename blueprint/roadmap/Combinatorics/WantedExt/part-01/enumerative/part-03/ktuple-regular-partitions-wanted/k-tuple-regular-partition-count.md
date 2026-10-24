@@ -16,6 +16,10 @@ partition of `i` followed by a `k`-tuple of total `n - i`, over `0 ≤ i ≤ n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [L Regular Partition Count](l-regular-partition-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KTupleRegularPartitionsWanted](../../../../../../../sources/v2/WantedExt.md)

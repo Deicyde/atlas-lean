@@ -14,6 +14,10 @@ as `odpr(1,2^e-1)`.  The parameter is the exponent `e`, not the odd endpoint.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Odd Range Product](odd-range-product.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OddPartFactorialTwoAdicWanted](../../../../../sources/v2/WantedExt.md)

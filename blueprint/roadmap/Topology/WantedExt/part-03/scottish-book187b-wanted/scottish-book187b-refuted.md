@@ -16,7 +16,7 @@ partially_solved, part (1) remaining separate). Citation: the Lunts–Lokutsievs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cover LE](cover-le.md)
 
 ## Sources
 

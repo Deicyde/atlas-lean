@@ -11,7 +11,7 @@ The `i`-th domino of `P` (empty past the end).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
 
 ## Sources
 

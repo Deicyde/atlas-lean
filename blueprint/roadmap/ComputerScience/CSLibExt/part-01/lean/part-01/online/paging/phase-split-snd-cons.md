@@ -13,7 +13,7 @@ lean: Cslib.Algorithms.Lean.Online.Paging.phaseSplit_snd_cons
 
 ## Depends on
 
-This node has no prerequisites.
+- [Phase Split](phase-split.md)
 
 ## Sources
 

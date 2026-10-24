@@ -11,7 +11,7 @@ The code of a configuration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coded Cfg](coded-cfg.md)
 
 ## Sources
 

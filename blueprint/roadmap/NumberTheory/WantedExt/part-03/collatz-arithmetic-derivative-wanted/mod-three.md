@@ -12,7 +12,7 @@ For compatible semiprimes `pq` and `rs`, `pq ≡ 2 ≡ rs (mod 3)`; hence one of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
 
 ## Sources
 

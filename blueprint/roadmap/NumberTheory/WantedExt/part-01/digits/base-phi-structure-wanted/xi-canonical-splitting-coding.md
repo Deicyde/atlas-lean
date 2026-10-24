@@ -17,7 +17,9 @@ Equation (Fib3) and `δ` the decoration morphism `a ↦ 54, b ↦ 34`. Letters a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Tiling](is-lucas-tiling.md)
+- [Canonical Lucas Splitting](canonical-lucas-splitting.md)
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

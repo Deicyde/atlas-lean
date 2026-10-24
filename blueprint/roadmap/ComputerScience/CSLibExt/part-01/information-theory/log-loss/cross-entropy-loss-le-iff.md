@@ -14,7 +14,12 @@ impossible gives likelihood `0` and loss `∞`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross Entropy Loss](cross-entropy-loss.md)
+
+## Proof depends on
+
+- [Cross Entropy Loss eq top iff](cross-entropy-loss-eq-top-iff.md)
+- [Cross Entropy Loss le iff of ne zero](cross-entropy-loss-le-iff-of-ne-zero.md)
 
 ## Sources
 

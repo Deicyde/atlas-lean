@@ -14,6 +14,10 @@ The stuffle product `∗` (`z_m ⋄ z_n = z_{m+n}`) extended bilinearly to forma
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Quasi Shuffle](../part-03/quasi-shuffle.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

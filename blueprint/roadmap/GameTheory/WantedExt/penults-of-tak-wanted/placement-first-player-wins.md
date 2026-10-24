@@ -14,6 +14,11 @@ Normal play: the player to move from `S` wins when `S` is not a P-position of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
+- [Placement Game](placement-game.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.PenultsOfTakWanted](../../../../sources/v2/WantedExt.md)

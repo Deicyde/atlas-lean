@@ -13,6 +13,11 @@ The set `D_n` of non-decreasing Dyck paths of semilength `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Nondecreasing Dyck Path](is-nondecreasing-dyck-path.md)
+- [Dyck Valley Heights](dyck-valley-heights.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NondecreasingDyckSubwordsWanted](../../../../../../../sources/v2/WantedExt.md)

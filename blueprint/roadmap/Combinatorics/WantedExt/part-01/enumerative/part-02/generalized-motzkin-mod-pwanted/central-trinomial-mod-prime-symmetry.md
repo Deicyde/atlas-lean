@@ -14,7 +14,7 @@ Article A22, Theorem 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Trinomial](central-trinomial.md)
 
 ## Sources
 

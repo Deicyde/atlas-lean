@@ -12,7 +12,7 @@ Prepending a digit multiplies the convergent matrix on the left by `[[0, 1], [1,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Matrix](convergent-matrix.md)
 
 ## Sources
 

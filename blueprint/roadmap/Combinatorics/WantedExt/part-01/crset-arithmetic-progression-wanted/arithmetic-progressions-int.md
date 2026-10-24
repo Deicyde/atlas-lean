@@ -15,7 +15,7 @@ The paper takes `k ≥ 1`; `k = 0` is included.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Add Piecewise Syndetic](is-add-piecewise-syndetic.md)
 
 ## Sources
 

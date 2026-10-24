@@ -14,7 +14,7 @@ as a `HasSum` over `n + 1`. The paper's integer `x` is replaced by real `x > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

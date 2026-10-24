@@ -12,7 +12,7 @@ divided-power ideal if and only if the ramification degree `e` is at most `p - 1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divided Power Ideal](is-divided-power-ideal.md)
 
 ## Sources
 

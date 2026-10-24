@@ -12,7 +12,7 @@ The offline step: on a miss with a full cache, evict a page not requested among 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](../../greedy/offline-caching/cache-event.md)
 
 ## Sources
 

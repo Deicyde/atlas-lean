@@ -17,7 +17,7 @@ standard complement laws (bottom `⊥`, top `⊤`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Von Neumann Sufficiency Claim](von-neumann-sufficiency-claim.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The bit of the pair `{i, j}` (`false` for pairs without a bit).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pairs](pairs.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.Clique](../../../../../../../sources/v2/CSLibExt.md)

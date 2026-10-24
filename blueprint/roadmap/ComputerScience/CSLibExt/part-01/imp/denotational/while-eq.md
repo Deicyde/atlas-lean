@@ -12,7 +12,15 @@ The denotation of a while loop is a fixed point of the loop functional.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [Cmd](../syntax/cmd.md)
+- [Denote](denote.md)
+- [State](../syntax/state.md)
+- [While Fun](while-fun.md)
+
+## Proof depends on
+
+- [While Order Hom](while-order-hom.md)
 
 ## Sources
 

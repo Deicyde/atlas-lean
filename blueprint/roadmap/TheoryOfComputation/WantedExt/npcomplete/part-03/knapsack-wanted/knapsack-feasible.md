@@ -12,7 +12,7 @@ selection is permitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knapsack Instance](knapsack-instance.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The Lüroth map `L(x) = d₁(x) (d₁(x) - 1) x - (d₁(x) - 1)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Luroth Digit](luroth-digit.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LurothConsecutiveDigitsWanted](../../../../../sources/v2/WantedExt.md)

@@ -19,6 +19,10 @@ cycle, so `C_{0,m} = 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Excedance Count](excedance-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AssociatedStirlingEulerian](../../../../../sources/v2/MathlibExt.md)

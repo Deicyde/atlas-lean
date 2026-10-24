@@ -12,7 +12,13 @@ lean: Cslib.Complexity.Karp.SSVerify.addB_encodeNat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Add B](add-b.md)
+
+## Proof depends on
+
+- [Carry](carry.md)
+- [Inc B](inc-b.md)
+- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

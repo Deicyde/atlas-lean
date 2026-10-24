@@ -37,7 +37,8 @@ theorem oddEvenSortN_sorts : ∀ (k : ℕ) (f : ℕ → Bool),
 
 ## Depends on
 
-This node has no prerequisites.
+- [Within](../bitonic/within.md)
+- [Relabel](relabel.md)
 
 ## Sources
 

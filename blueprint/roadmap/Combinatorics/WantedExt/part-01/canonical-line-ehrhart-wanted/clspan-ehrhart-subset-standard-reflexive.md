@@ -13,7 +13,11 @@ lattice translation, which does not change the Ehrhart polynomial).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ehrhart Counts](ehrhart-counts.md)
+- [Is Reflexive](../../part-06/weighted-projective-simplex-idpwanted/is-reflexive.md)
+- [Clspan](clspan.md)
+- [Lattice Polytope](lattice-polytope.md)
+- [Standard Reflexive Simplex Vertices](standard-reflexive-simplex-vertices.md)
 
 ## Sources
 

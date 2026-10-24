@@ -11,7 +11,8 @@ Stash the raw bits, then emit one block `[true, b, false]` per bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BLab](blab.md)
+- [BStk](bstk.md)
 
 ## Sources
 

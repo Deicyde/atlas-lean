@@ -12,7 +12,13 @@ for any bound `n ≥ Fintype.card σ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reachable Within](reachable-within.md)
+
+## Proof depends on
+
+- [A state is reachable exactly when some word leads to it](mem-reachable-iff.md)
+- [Reachable](reachable.md)
+- [Reachable Within eq reachable](reachable-within-eq-reachable.md)
 
 ## Sources
 

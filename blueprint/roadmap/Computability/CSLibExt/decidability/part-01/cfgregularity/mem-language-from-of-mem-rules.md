@@ -84,7 +84,17 @@ theorem isValuation_regVal (g : EncodedCFG T) : IsValuation (regGrammar g).toCFG
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+- [Reg Grammar](reg-grammar.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
+- [Language From](../../../languages/context-free/part-01/basic/language-from.md)
+
+## Proof depends on
+
+- [Is Valuation language From](../../../languages/context-free/part-01/basic/is-valuation-language-from.md)
 
 ## Sources
 

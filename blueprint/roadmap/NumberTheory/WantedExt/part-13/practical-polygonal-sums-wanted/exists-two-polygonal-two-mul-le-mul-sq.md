@@ -13,7 +13,7 @@ For `s > 3` and every natural `c` there is a constant `A` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
 
 ## Sources
 

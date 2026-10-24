@@ -12,7 +12,7 @@ lean: MetaMathlibExt.bzBlockIndex_cons
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz Block Index](bz-block-index.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ A configuration with a pebble on every vertex is solvable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pebbling Solvable](pebbling-solvable.md)
+
+## Proof depends on
+
+- [Pebbling Step](pebbling-step.md)
 
 ## Sources
 

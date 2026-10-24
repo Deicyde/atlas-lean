@@ -16,7 +16,7 @@ Article A11, Lemma 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irwin Measure](irwin-measure.md)
 
 ## Sources
 

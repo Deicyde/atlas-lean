@@ -14,7 +14,8 @@ Theorem 2 for `h ∈ {1, 2}`: for `κ ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Divisor Sum](b-free-divisor-sum.md)
+- [Fq Norm](fq-norm.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ The finite version `Ṫ` of `T`, computed from the list of positions of `O_L`/`O
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Parity Letter](mallows-parity-letter.md)
+
+## Proof depends on
+
+- [Mallows TLetter](mallows-tletter.md)
 
 ## Sources
 

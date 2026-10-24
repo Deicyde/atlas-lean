@@ -17,7 +17,9 @@ dependence of `K` and `e` on `C₀` is represented by choosing them after `C₀`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lcm Defect](lcm-defect.md)
+- [Lcm Dense Growth F](lcm-dense-growth-f.md)
+- [Recip Sum Up To](recip-sum-up-to.md)
 
 ## Sources
 

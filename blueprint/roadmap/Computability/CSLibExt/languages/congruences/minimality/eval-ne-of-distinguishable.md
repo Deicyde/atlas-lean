@@ -12,7 +12,13 @@ Distinguishable words must reach different states in every DFA recognizing the l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinguishable](distinguishable.md)
+
+## Proof depends on
+
+- [Nerode Rel](../nerode/nerode-rel.md)
+- [Nerode Rel iff](../nerode/nerode-rel-iff.md)
+- [Nerode Rel of eval eq](nerode-rel-of-eval-eq.md)
 
 ## Sources
 

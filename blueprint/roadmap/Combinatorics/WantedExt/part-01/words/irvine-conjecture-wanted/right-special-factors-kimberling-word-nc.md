@@ -13,7 +13,9 @@ lean: MetaMathlibExt.rightSpecialFactors_kimberlingWord_ncard_eq_two_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling Block](kimberling-block.md)
+- [Kimberling Word](kimberling-word.md)
+- [Right Special Factors](../meta-automatic-sequences-wanted/right-special-factors.md)
 
 ## Sources
 

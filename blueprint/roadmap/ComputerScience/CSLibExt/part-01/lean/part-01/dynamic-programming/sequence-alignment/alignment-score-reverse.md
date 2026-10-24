@@ -12,7 +12,12 @@ Reversing an alignment preserves its score.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](alignment.md)
+- [Alignment Score](alignment-score.md)
+
+## Proof depends on
+
+- [Column Score](column-score.md)
 
 ## Sources
 

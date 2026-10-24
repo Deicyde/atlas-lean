@@ -12,7 +12,7 @@ The recurrence `V_{n+1} = y^{-1} V_{n-r+1} - y^{-1} x V_{n-r}` for `n ≥ r ≥ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RLucas](neg-rlucas.md)
 
 ## Sources
 

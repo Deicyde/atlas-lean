@@ -11,7 +11,7 @@ Source: Kunisky, arXiv2111.02974v1, Theorem 1.1; catalogue C24a, line 45.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kunisky2023 Lower Bound](kunisky2023-lower-bound.md)
 
 ## Sources
 

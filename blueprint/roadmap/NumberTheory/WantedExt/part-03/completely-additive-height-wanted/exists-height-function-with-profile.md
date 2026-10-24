@@ -13,7 +13,7 @@ height `k` for every `k ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Height Function](is-height-function.md)
 
 ## Sources
 

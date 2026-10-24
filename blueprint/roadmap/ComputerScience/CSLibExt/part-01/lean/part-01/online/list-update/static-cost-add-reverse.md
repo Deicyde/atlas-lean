@@ -12,7 +12,12 @@ lean: Cslib.Algorithms.Lean.Online.ListUpdate.staticCost_add_reverse
 
 ## Depends on
 
-This node has no prerequisites.
+- [Static Cost](static-cost.md)
+
+## Proof depends on
+
+- [Access Cost](access-cost.md)
+- [Access Cost add reverse](access-cost-add-reverse.md)
 
 ## Sources
 

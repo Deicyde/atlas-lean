@@ -14,7 +14,8 @@ lucky-indicator list with the lace-start pattern.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lace Decomposition](lace-decomposition.md)
+- [Metered Outcome](metered-outcome.md)
 
 ## Sources
 

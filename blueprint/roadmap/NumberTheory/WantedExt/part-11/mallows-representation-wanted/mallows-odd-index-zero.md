@@ -13,7 +13,8 @@ Characteristic value: the first `O_L`/`O_R` position of a sequence starting with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Mallows Odd Index](mallows-odd-index.md)
 
 ## Sources
 

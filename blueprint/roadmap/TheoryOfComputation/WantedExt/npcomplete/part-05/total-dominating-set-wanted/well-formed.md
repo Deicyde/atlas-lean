@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total Dominating Set Instance](total-dominating-set-instance.md)
 
 ## Sources
 

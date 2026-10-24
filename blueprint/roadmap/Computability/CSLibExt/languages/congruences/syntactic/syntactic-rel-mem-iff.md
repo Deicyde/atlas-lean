@@ -12,7 +12,7 @@ Membership in `L` depends only on the syntactic class of a word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Rel](syntactic-rel.md)
 
 ## Sources
 

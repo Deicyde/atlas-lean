@@ -13,7 +13,15 @@ half-tape do not come from cells.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [To List Blank](to-list-blank.md)
+
+## Proof depends on
+
+- [Cell Symbol](cell-symbol.md)
+- [Cell Symbol injective](cell-symbol-injective.md)
+- [To List Blank](../tape-view/to-list-blank.md)
+- [To List Blank injective](../tape-view/to-list-blank-injective.md)
 
 ## Sources
 

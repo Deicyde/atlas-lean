@@ -11,7 +11,11 @@ A production of `g` with its terminals replaced.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Subst Symbol](subst-symbol.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The paper's polynomial `S_l(x) = ∑_{i=0}^l s_i x^i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Arcsin Antideriv SCoeff](arcsin-antideriv-scoeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CentralBinomialReciprocalMultisectionWanted](../../../../../../../sources/v2/WantedExt.md)

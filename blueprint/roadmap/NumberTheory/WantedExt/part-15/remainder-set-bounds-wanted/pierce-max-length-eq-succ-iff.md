@@ -21,7 +21,8 @@ index `P(n) - 1`. Lemma 18, and hence this lemma, needs `n ≥ 3`: `P(2) = 1` bu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated Remainder Set](iterated-remainder-set.md)
+- [Max Length](../../../MathlibExt/part-09/pierce-expansion/max-length.md)
 
 ## Sources
 

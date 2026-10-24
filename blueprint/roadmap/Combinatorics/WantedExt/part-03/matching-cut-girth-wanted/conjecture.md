@@ -14,6 +14,11 @@ vertices, average degree below `d` and girth at least `g` has a matching-cut.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Matching Cut](has-matching-cut.md)
+- [Avg Degree](avg-degree.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.MatchingCutGirthWanted](../../../../../sources/v2/WantedExt.md)

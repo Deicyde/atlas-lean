@@ -12,7 +12,12 @@ The Horner step count is polynomial in the base.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poly](is-poly.md)
+- [Horn T](horn-t.md)
+
+## Proof depends on
+
+- [Horn Step](horn-step.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ A smooth structure has every leaf label `d_{ℓ_j} ≥ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Smooth Coconut](is-smooth-coconut.md)
+
+## Proof depends on
+
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

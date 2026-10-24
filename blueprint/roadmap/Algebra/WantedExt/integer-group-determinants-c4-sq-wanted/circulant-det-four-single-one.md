@@ -12,7 +12,7 @@ lean: MetaMathlibExt.circulantDetFour_single_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circulant Det Four](circulant-det-four.md)
 
 ## Sources
 

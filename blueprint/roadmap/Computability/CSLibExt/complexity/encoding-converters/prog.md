@@ -11,7 +11,17 @@ The program. Output blocks are pushed in reverse so that they read correctly fro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+- [St](st.md)
+- [Stk](stk.md)
+- [Γ](untitled.md)
+
+## Proof depends on
+
+- [Bit](bit.md)
+- [Is Fst](is-fst.md)
+- [Is Snd](is-snd.md)
+- [G](../dense-satverifier/g.md)
 
 ## Sources
 

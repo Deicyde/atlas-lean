@@ -18,6 +18,11 @@ outside one; at the end the clause count is emitted.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [End Clause](end-clause.md)
+- [Rep](../../../MathlibExt/turing-machine/program/rep.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.DenseToBinary](../../../../../sources/v2/CSLibExt.md)

@@ -11,7 +11,7 @@ Corollary 23: for `n > 0`, `s₁(n) = (δ(n) - δ(n+1) + ⌊log₂ n⌋)/2 + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc DNodes](dc-dnodes.md)
 
 ## Sources
 

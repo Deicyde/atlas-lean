@@ -13,6 +13,10 @@ State assertions used as Hoare preconditions and postconditions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [State](../syntax/state.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Languages.IMP.Hoare](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,11 @@ set of Stern–Brocot representations onto `I` (`Set.BijOn` includes the first c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Mallows Admissible](mallows-admissible.md)
+- [Mallows Q](mallows-q.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ bounded sphere, and are not normable, hence not of type (B).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem15 Point1 Claim](scottish-book-problem15-point1-claim.md)
 
 ## Sources
 

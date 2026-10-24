@@ -12,7 +12,12 @@ The game on `0` is complete after no moves.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Accel Zeck Game](is-accel-zeck-game.md)
+
+## Proof depends on
+
+- [Accel Zeck Move](accel-zeck-move.md)
+- [Not accel Zeck Move zero](not-accel-zeck-move-zero.md)
 
 ## Sources
 

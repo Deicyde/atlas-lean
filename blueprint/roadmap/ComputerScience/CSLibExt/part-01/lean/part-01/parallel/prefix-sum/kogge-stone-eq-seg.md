@@ -13,7 +13,12 @@ ending at `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kogge Stone](kogge-stone.md)
+- [Seg](seg.md)
+
+## Proof depends on
+
+- [Seg mul seg](seg-mul-seg.md)
 
 ## Sources
 

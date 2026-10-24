@@ -17,7 +17,7 @@ index `2K + ν`, `ν = (-2, -2, 2, 1, 0, -1, -2)_γ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
 
 ## Sources
 

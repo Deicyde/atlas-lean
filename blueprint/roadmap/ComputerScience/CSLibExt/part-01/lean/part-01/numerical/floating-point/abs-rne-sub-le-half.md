@@ -12,7 +12,11 @@ The rounding error is at most `1/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rne](rne.md)
+
+## Proof depends on
+
+- [Abs rne sub le min](abs-rne-sub-le-min.md)
 
 ## Sources
 

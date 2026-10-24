@@ -14,6 +14,12 @@ two-symbol machine started on the blank tape.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Machine](machine.md)
+- [Move](move.md)
+- [Steps Of](steps-of.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.BusyBeaver](../../../../sources/v2/CSLibExt.md)

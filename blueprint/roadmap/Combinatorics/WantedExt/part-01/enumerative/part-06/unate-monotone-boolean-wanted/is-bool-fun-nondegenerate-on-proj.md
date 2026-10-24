@@ -12,7 +12,7 @@ The projection `x ↦ x i` is non-degenerate on `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bool Fun Nondegenerate On](is-bool-fun-nondegenerate-on.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Single small-step transitions between IMP configurations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
 
 ## Sources
 

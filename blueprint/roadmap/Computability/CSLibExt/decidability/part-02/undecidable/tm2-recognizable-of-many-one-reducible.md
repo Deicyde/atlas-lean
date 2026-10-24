@@ -12,7 +12,11 @@ A predicate that mapping-reduces to a recognizable one is recognizable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Recognizable](../../part-01/basic/tm2-recognizable.md)
+
+## Proof depends on
+
+- [Tm2 Recognizable iff re Pred](../../part-01/basic/tm2-recognizable-iff-re-pred.md)
 
 ## Sources
 

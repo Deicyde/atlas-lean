@@ -12,7 +12,8 @@ Characteristic values: `ẽ(3 ⋅ 3) = 9` and `φ̃(3 ⋅ 3) = 4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Spoof Eval](spoof-eval.md)
+- [Spoof Totient](spoof-totient.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ All three stacks (every alphabet is `Bool`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [BStk](bstk.md)
 
 ## Sources
 

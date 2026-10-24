@@ -15,7 +15,9 @@ def start : Lab := .rdK
 
 ## Depends on
 
-This node has no prerequisites.
+- [Val Of](val-of.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Is Bit Block](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ a large set.  The set-builder encodes `ℕ ∩ {p(n) | n ∈ ℕ}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Large](is-large.md)
 
 ## Sources
 

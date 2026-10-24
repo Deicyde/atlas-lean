@@ -12,7 +12,7 @@ some `m ∈ ℕ₀`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

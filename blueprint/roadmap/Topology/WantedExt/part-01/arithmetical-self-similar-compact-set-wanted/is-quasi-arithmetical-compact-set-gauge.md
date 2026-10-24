@@ -14,7 +14,8 @@ Proposition 6: the stability gauge satisfies `‖ρ n‖_K = ‖n‖_K + μ`. Th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quasi Arithmetical Compact Set](is-quasi-arithmetical-compact-set.md)
+- [Self Similar Layer](self-similar-layer.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ polynomial `z^r - a₀ z^{r-1} - ⋯ - a_{r-1}`; this is its specialization to t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Rho](padovan-perrin-rho.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The lower order at infinity of `q ↦ q^{-τ}` is `τ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Order At Infinity](lower-order-at-infinity.md)
+
+## Proof depends on
+
+- [Order Ratio rpow inv](order-ratio-rpow-inv.md)
 
 ## Sources
 

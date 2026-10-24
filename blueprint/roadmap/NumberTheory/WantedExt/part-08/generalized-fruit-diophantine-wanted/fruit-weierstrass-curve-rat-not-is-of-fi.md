@@ -12,7 +12,7 @@ no torsion point `P = (x₀, y₀) ≠ O` whose `x₀` has even numerator in low
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fruit Weierstrass Curve](fruit-weierstrass-curve.md)
 
 ## Sources
 

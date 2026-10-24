@@ -12,7 +12,8 @@ Unfolding `unitaryConv`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unitary Conv](unitary-conv.md)
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ clause and a dangling odd bit are ignored, so decoding is total.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+- [Clause](clause.md)
 
 ## Sources
 

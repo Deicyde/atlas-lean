@@ -13,6 +13,11 @@ Parse a graph: `n` in unary, then the edge list.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Decode Es](decode-es.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.Color](../../../../../../../sources/v2/CSLibExt.md)

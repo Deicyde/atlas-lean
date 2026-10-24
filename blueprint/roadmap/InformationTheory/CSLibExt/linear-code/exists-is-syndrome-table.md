@@ -12,7 +12,11 @@ Correct syndrome tables exist for every radius.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Syndrome Table](is-syndrome-table.md)
+
+## Proof depends on
+
+- [Syndrome](syndrome.md)
 
 ## Sources
 

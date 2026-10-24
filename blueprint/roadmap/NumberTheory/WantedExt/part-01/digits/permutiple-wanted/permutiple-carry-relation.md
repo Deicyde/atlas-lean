@@ -12,7 +12,8 @@ Carry relation: for an `(n, b, σ)`-permutiple with carries `c_j`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Permutiple](is-permutiple.md)
+- [Permutiple Carry](permutiple-carry.md)
 
 ## Sources
 

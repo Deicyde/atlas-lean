@@ -14,6 +14,10 @@ bottom.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Superimpose Push](superimpose-push.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CyclicPatternAvoidingStacksWanted](../../../../../../../sources/v2/WantedExt.md)

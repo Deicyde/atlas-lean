@@ -17,7 +17,14 @@ Proposition 5; the minimal-period claim is stated as: `lcm(L_{γ^{-1}}, 2)` is a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDelay](base-pdelay.md)
+- [Base PDigit Average](base-pdigit-average.md)
+- [Base PPeriod](base-pperiod.md)
+- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
+- [Tau Den](tau-den.md)
+- [Tower Gamma](tower-gamma.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

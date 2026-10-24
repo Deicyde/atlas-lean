@@ -12,7 +12,8 @@ tilings of an `n`-board by weighted half-squares and `(1/2, 1/2)`-fences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Periodic Fibonacci Sq](bi-periodic-fibonacci-sq.md)
+- [Fence Tiling Sum](fence-tiling-sum.md)
 
 ## Sources
 

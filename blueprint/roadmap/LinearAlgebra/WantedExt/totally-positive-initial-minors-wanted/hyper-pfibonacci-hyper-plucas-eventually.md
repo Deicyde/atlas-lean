@@ -13,7 +13,7 @@ and the hyper `p`-Lucas numbers `L_{p,n}^{(r)}` (`(a, b) = (2, p)`) are eventual
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
 
 ## Sources
 

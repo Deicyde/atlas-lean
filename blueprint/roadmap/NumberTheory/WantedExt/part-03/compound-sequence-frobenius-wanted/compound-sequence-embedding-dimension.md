@@ -14,7 +14,7 @@ sum of two nonzero elements of `⟨C⟩`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compound Sequence](compound-sequence.md)
 
 ## Sources
 

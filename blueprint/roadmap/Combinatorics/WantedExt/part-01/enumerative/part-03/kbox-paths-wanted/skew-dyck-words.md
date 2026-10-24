@@ -11,7 +11,11 @@ The skew Dyck paths of semilength `m` (they have length `2m`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+
+## Proof depends on
+
+- [Is Skew Dyck Word](is-skew-dyck-word.md)
 
 ## Sources
 

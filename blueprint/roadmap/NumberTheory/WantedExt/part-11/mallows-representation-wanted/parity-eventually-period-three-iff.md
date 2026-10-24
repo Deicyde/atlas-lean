@@ -16,7 +16,9 @@ positions (required to be infinite); the `(t+1)`-st `M` is at `Nat.nth (· = M) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
+- [Stern Brocot Frac](stern-brocot-frac.md)
 
 ## Sources
 

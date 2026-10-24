@@ -13,6 +13,10 @@ The letters other than `a`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [All Letters](all-letters.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.PCPUniversality](../../../../../../sources/v2/CSLibExt.md)

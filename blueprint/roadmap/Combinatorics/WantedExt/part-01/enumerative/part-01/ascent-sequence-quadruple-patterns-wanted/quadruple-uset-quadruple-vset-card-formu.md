@@ -18,7 +18,8 @@ truncate only where the binomial factor vanishes. The paper's second form of (ii
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quadruple USet](quadruple-uset.md)
+- [Quadruple VSet](quadruple-vset.md)
 
 ## Sources
 

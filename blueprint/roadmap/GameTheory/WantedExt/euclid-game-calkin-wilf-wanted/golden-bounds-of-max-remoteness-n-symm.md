@@ -12,7 +12,11 @@ takes the maximum `k` moves (Smith remoteness `k`), then `1/(Ï† + 1) < m/n < 1/Ï
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Calkin Wilf Row](calkin-wilf-row.md)
+- [Euclid Game](euclid-game.md)
+- [Euclid PPosition](euclid-pposition.md)
 
 ## Sources
 

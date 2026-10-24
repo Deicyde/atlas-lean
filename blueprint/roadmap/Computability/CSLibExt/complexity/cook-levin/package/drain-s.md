@@ -11,7 +11,11 @@ The drain program: stage `i < |ks|` empties `ks[i]`; stage `|ks|` resets the sta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
+
+## Proof depends on
+
+- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

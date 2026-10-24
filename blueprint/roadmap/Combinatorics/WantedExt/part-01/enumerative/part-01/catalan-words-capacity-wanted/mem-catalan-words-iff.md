@@ -13,7 +13,7 @@ the letters is automatic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catalan Words](catalan-words.md)
 
 ## Sources
 

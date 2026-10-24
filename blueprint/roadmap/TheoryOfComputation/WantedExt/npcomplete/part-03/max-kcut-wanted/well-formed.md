@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max KCut Instance](max-kcut-instance.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ The break-even strategy is `2`-competitive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Break Even](break-even.md)
+- [Cost](cost.md)
+- [Opt](opt.md)
+
+## Proof depends on
+
+- [Upper bound](cost-break-even-le.md)
 
 ## Sources
 

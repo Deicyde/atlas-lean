@@ -13,7 +13,8 @@ Counting function of the primes of semiprime index:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
+- [Meissel Mertens Constant](../prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

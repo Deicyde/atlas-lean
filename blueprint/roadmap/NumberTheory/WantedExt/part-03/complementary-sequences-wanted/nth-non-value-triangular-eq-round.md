@@ -11,7 +11,7 @@ The `n`-th non-triangular number is `n + ⌊√(2n) + 1/2⌋`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

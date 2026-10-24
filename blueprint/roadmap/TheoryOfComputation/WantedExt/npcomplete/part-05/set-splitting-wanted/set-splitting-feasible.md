@@ -11,7 +11,7 @@ A split meeting every set in both parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Splitting Instance](set-splitting-instance.md)
 
 ## Sources
 

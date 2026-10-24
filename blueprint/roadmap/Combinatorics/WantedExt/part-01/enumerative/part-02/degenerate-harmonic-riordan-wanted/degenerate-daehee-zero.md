@@ -12,7 +12,7 @@ lean: MetaMathlibExt.degenerateDaehee_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Daehee](degenerate-daehee.md)
 
 ## Sources
 

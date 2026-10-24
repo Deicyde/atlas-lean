@@ -15,6 +15,11 @@ explicit weighted-simplex formula.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is HStar Polynomial](is-hstar-polynomial.md)
+- [Is Unimodal](is-unimodal.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

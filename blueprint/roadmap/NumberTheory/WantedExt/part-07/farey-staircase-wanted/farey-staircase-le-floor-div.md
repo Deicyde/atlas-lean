@@ -11,7 +11,7 @@ Lemma 8 (a): for `n ≥ 1`, `A_n(x) ≤ ⌊nx⌋/n ≤ A_n(x) + (log n)/n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Staircase](farey-staircase.md)
 
 ## Sources
 

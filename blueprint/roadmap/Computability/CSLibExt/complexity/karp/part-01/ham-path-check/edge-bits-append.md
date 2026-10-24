@@ -12,7 +12,7 @@ The bits of a concatenation of edge lists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Bits](../color/edge-bits.md)
 
 ## Sources
 

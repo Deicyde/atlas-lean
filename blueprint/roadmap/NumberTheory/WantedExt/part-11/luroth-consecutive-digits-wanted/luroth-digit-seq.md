@@ -14,6 +14,11 @@ paper's `d_{k+1}(x)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Luroth Digit](luroth-digit.md)
+- [Luroth Map](luroth-map.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LurothConsecutiveDigitsWanted](../../../../../sources/v2/WantedExt.md)

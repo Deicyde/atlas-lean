@@ -13,7 +13,7 @@ Composition with the lower and upper Wythoff sequences
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Beatty](generalized-beatty.md)
 
 ## Sources
 

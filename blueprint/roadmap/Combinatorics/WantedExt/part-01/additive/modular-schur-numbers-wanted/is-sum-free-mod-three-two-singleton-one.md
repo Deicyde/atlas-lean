@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isSumFreeMod_three_two_singleton_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Free Mod](is-sum-free-mod.md)
 
 ## Sources
 

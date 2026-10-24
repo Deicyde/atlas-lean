@@ -13,7 +13,14 @@ coordinatewise minimizes the lasso objective.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lasso](lasso.md)
+- [Soft Threshold](soft-threshold.md)
+
+## Proof depends on
+
+- [Rss](rss.md)
+- [Pythagoras for least squares](rss-eq-of-normal.md)
+- [Soft thresholding solves the one-dimensional lasso](soft-threshold-le.md)
 
 ## Sources
 

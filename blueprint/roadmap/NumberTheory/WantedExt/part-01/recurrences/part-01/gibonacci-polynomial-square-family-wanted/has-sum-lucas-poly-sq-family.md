@@ -15,7 +15,7 @@ Theorem 3.1, Lucas-polynomial case (`μ = Δ²`, `ν* = -1`): for positive integ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

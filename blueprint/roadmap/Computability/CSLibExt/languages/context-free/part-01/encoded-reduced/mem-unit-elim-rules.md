@@ -12,7 +12,29 @@ The productions of `unitElim` are those of `unitGrammar`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+- [To CFG](../encoded/to-cfg.md)
+- [Unit Elim](unit-elim.md)
+- [Unit Grammar](../reduced/unit-grammar.md)
+
+## Proof depends on
+
+- [Dedup B](../../../../decidability/part-01/primrec-list/dedup-b.md)
+- [Mem B](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [Decode Rule](../encoded/decode-rule.md)
+- [Decode Symbol](../encoded/decode-symbol.md)
+- [Encode Symbol](../encoded/encode-symbol.md)
+- [Unit reachability is computed](mem-unit-reach-iff.md)
+- [Nt List](nt-list.md)
+- [Unit Reach](unit-reach.md)
+- [Unit Target](unit-target.md)
+- [Is Unit Output](../reduced/is-unit-output.md)
+- [Unit Steps](../reduced/unit-steps.md)
+- [Cases of mem unit Grammar rules](../reduced/cases-of-mem-unit-grammar-rules.md)
+- [Form NTs](../reduced/form-nts.md)
+- [Grammar NTs](../reduced/grammar-nts.md)
+- [Mem grammar NTs of unit Steps](../reduced/mem-grammar-nts-of-unit-steps.md)
+- [Mem unit Grammar rules](../reduced/mem-unit-grammar-rules.md)
 
 ## Sources
 

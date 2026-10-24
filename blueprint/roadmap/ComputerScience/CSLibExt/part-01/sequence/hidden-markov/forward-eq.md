@@ -13,7 +13,9 @@ length `t + 1` ending in `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+- [Forward](forward.md)
+- [Path Prob](path-prob.md)
 
 ## Sources
 

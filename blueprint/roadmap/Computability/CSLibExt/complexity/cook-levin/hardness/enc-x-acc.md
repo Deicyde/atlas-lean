@@ -12,7 +12,13 @@ The accept symbol is encodable: `phi_iff`'s `hacc`, unconditionally.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc X](enc-x.md)
+- [Enc](../situation/part-01/enc.md)
+
+## Proof depends on
+
+- [Sym Set X](sym-set-x.md)
+- [B2's `Γfin k`](../situation/part-02/sym-set.md)
 
 ## Sources
 

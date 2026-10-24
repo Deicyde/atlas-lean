@@ -12,7 +12,8 @@ for some `d ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
 
 ## Sources
 

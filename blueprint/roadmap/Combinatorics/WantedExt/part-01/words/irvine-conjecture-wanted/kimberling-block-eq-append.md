@@ -11,7 +11,7 @@ For `n ≥ 2`, `K_n = K_{n-1} K_{n-1} K_{n-2} K_{n-2}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling Block](kimberling-block.md)
 
 ## Sources
 

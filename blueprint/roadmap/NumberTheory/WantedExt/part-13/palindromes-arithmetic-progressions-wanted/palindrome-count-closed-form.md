@@ -15,7 +15,8 @@ with `α` as in Theorem 7,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Palindrome APCount](palindrome-apcount.md)
+- [Palindromic Half Copy](palindromic-half-copy.md)
 
 ## Sources
 

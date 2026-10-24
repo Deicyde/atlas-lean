@@ -14,6 +14,11 @@ The ordered set `MT_{i+1}` of the `2 ⋅ 3^i` fractions inserted at step `i + 1`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mallows Inserted](mallows-inserted.md)
+- [Mallows Refine](mallows-refine.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.MallowsRepresentationWanted](../../../../../sources/v2/WantedExt.md)

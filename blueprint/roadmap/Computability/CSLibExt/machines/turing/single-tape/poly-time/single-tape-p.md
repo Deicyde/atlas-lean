@@ -14,7 +14,11 @@ copy `ι` of the bits, halts on the one-cell tape `ι (L w)` within `p |w|` step
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+
+## Proof depends on
+
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

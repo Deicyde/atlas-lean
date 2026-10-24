@@ -13,7 +13,8 @@ strip `E₂ < Re s < E₁` (the paper uses the `E₁`, `E₂` of Lemmas 1 and 3)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Class Function](selberg-class-function.md)
+- [A Point Count](a-point-count.md)
 
 ## Sources
 

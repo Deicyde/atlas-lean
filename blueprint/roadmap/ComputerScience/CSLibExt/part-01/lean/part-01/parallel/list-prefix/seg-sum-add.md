@@ -12,7 +12,12 @@ Segments add up: the first `a + b` nodes are the first `a`, then `b` from where 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seg Sum](seg-sum.md)
+- [Jump](../list-ranking/jump.md)
+
+## Proof depends on
+
+- [Step Val](step-val.md)
 
 ## Sources
 

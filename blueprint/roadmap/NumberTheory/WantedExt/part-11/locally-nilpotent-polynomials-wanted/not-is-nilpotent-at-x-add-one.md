@@ -12,7 +12,11 @@ lean: MetaMathlibExt.not_isNilpotentAt_X_add_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nilpotent At](is-nilpotent-at.md)
+
+## Proof depends on
+
+- [Iterate eval X add one](iterate-eval-x-add-one.md)
 
 ## Sources
 

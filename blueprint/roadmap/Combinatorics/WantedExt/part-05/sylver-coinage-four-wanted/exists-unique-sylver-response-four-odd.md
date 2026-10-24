@@ -12,7 +12,8 @@ P-position, and every such `q` satisfies `q ≡ x - 2 (mod 4)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver PPosition](is-sylver-pposition.md)
+- [Sylver Legal Moves](sylver-legal-moves.md)
 
 ## Sources
 

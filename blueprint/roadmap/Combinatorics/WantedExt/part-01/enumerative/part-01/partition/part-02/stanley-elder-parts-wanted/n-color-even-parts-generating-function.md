@@ -12,7 +12,7 @@ Theorem 4: with `A_e(m)` the total number of even parts over the `n`-color parti
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
 
 ## Sources
 

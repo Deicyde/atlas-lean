@@ -15,6 +15,10 @@ blocks' characteristic functions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inner sum Equiv Prod symm](inner-sum-equiv-prod-symm.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.GaussianConditioning](../../../../../../sources/v2/MathlibExt.md)

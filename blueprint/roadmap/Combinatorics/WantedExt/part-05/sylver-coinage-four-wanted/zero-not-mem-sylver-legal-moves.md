@@ -12,7 +12,7 @@ lean: MetaMathlibExt.zero_notMem_sylverLegalMoves
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sylver Legal Moves](sylver-legal-moves.md)
 
 ## Sources
 

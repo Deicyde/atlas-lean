@@ -11,7 +11,7 @@ lean: MetaMathlibExt.isClosed_nMarkoffSpectrum
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Markoff Spectrum](n-markoff-spectrum.md)
 
 ## Sources
 

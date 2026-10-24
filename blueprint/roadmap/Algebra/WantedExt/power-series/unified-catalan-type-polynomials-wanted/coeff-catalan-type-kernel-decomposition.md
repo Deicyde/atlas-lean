@@ -17,7 +17,7 @@ paper's for `c > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
 
 ## Sources
 

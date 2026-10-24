@@ -14,6 +14,12 @@ its mutation at position `0`, and the nodes of `ShadowMarkoffTreeNode v`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Shadow Markoff Tree Node](shadow-markoff-tree-node.md)
+- [Shadow Markoff Mutate](shadow-markoff-mutate.md)
+- [Shadow Markoff Root](shadow-markoff-root.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ShadowMarkoffTreeWanted](../../../../../sources/v2/WantedExt.md)

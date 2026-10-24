@@ -11,7 +11,12 @@ A command terminates by reaching `skip` in a final state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [Steps](steps.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ The recursion of the canonical splitting.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical Lucas Splitting](canonical-lucas-splitting.md)
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ itself, every other cell is a blank.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
 
 ## Sources
 

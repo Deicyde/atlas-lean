@@ -11,7 +11,11 @@ The unweighted graph of a candidate edge set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Steiner Tree Instance](steiner-tree-instance.md)
+
+## Proof depends on
+
+- [Edge Graph](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
 
 ## Sources
 

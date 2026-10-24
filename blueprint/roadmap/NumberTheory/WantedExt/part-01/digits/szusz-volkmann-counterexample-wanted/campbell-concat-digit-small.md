@@ -12,7 +12,7 @@ The first ten digits of `0.h₂(1)h₂(2)…` are `0000000001` (nine zero blocks
 
 ## Depends on
 
-This node has no prerequisites.
+- [Campbell Concat Digit](campbell-concat-digit.md)
 
 ## Sources
 

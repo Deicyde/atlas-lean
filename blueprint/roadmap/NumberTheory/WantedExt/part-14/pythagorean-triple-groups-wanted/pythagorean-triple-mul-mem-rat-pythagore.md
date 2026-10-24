@@ -14,7 +14,8 @@ source's fraction representation `(a/b, c/d, e/f)` with `a, b, d, f ≠ 0` descr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pythagorean Triple Mul](pythagorean-triple-mul.md)
+- [Rat Pythagorean Triples](rat-pythagorean-triples.md)
 
 ## Sources
 

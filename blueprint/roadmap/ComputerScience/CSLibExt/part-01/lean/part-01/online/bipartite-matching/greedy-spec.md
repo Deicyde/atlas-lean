@@ -12,7 +12,15 @@ The invariants of the greedy run: a valid partner array, and every arrived verte
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../../graph/bipartite-matching/valid.md)
+- [Done](done.md)
+- [Greedy](greedy.md)
+
+## Proof depends on
+
+- [Free](../../graph/bipartite-matching/free.md)
+- [Step](step.md)
+- [Step extends](step-extends.md)
 
 ## Sources
 

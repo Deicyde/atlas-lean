@@ -13,7 +13,9 @@ class size: `|[d]| = |[d']|` for `d = (1, …, q, q^{(s_q)}, …, 1^{(s_1)})` an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Class Of](diagonal-class-of.md)
+- [Diagonal Normal Form](diagonal-normal-form.md)
+- [Diagonal Of List](diagonal-of-list.md)
 
 ## Sources
 

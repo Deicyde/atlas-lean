@@ -13,7 +13,8 @@ Bookkeeping identity: for a digit `k < p` and `i ∈ T = [-m, m]^r` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Cartier](laurent-cartier.md)
+- [Laurent Deg](laurent-deg.md)
 
 ## Sources
 

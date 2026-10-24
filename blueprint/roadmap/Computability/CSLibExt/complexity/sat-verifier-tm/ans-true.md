@@ -21,7 +21,17 @@ theorem cook_levin_SAT_np_complete :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is3](../karp/part-02/three-sat/is3.md)
+- [Ans](ans.md)
+- [Decode CNF](../../cook-levin/decode-cnf.md)
+- [Sat Verifier](../../sat-time-m/sat-verifier.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Check Spec](../sat-verifier-spec/check-spec.md)
+- [Ents](../sat-verifier-spec/ents.md)
+- [Sat Verifier ret eq](../sat-verifier-spec/sat-verifier-ret-eq.md)
 
 ## Sources
 

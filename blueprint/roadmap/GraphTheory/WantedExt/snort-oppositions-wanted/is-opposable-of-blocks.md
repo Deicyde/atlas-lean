@@ -15,7 +15,8 @@ is opposable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Opposable](is-opposable.md)
+- [Is Opposition](is-opposition.md)
 
 ## Sources
 

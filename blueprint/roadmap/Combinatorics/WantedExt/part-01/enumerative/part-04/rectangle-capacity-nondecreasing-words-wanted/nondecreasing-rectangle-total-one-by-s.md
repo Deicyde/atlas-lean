@@ -15,7 +15,7 @@ which agrees with the paper's value at `s = 1` (`C(-1, 0) = 1`, `C(i-1, i) = 0`)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondecreasing Rectangle Total](nondecreasing-rectangle-total.md)
 
 ## Sources
 

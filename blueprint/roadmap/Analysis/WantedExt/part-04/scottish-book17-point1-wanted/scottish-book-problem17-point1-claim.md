@@ -16,6 +16,10 @@ function `φ` with `f x = φ x` for every `x ∈ C`? The claim is stated for
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Perfect Set](is-perfect-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.ScottishBook17Point1Wanted](../../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,11 @@ deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus Elimination Order](josephus-elimination-order.md)
+
+## Proof depends on
+
+- [Josephus Elimination Order Aux](josephus-elimination-order-aux.md)
 
 ## Sources
 

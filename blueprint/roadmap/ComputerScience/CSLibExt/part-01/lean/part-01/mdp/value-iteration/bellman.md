@@ -11,7 +11,11 @@ The Bellman optimality operator: the best action value in each state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+
+## Proof depends on
+
+- [Q Value](q-value.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Lemma 1(ii): if `n > 1` is squarefree and `d > 0`, then `f_m(d, n) ≤ gpf(n) - 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest APLength With Diff](longest-aplength-with-diff.md)
 
 ## Sources
 

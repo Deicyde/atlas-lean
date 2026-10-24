@@ -15,6 +15,14 @@ for a coordinate that is not).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Desc Lex LT](desc-lex-lt.md)
+- [Max LStar Block](max-lstar-block.md)
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Zeckendorf Bar](zeckendorf-bar.md)
+- [Zeckendorf Rev](zeckendorf-rev.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

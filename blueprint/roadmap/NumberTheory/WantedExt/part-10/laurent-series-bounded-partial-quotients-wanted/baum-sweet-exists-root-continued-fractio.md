@@ -16,7 +16,8 @@ part is omitted: for `n = 0`, `P = x`, `Q = 0` the equation `f (f + x) = 1` has 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
+- [Poly To Laurent Inv](poly-to-laurent-inv.md)
 
 ## Sources
 

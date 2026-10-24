@@ -13,6 +13,11 @@ The verifier: `x` decodes to `(as, t)` and the numbers chosen by `w` sum to `t`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Decode SS](decode-ss.md)
+- [Pick](pick.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.SubsetSumVerify](../../../../../../../sources/v2/CSLibExt.md)

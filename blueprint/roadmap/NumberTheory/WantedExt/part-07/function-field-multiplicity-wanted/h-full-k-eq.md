@@ -12,7 +12,9 @@ Unfolding `K(P, h, j)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full K](h-full-k.md)
+- [H Full Root](h-full-root.md)
+- [Poly Norm](poly-norm.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.four_mem_halfEvenFibonacciSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Half Even Fibonacci Set](half-even-fibonacci-set.md)
 
 ## Sources
 

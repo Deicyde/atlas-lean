@@ -12,7 +12,8 @@ A relabeled network leaves the levels outside the image of `e` alone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Levels](../depth/levels.md)
+- [Relabel](../odd-even/relabel.md)
 
 ## Sources
 

@@ -14,7 +14,9 @@ Theorem 1, case `h = 2`: for `κ ≥ 2` and every `ε > 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Divisor Sum](b-free-divisor-sum.md)
+- [Fq Norm](fq-norm.md)
+- [Kappa Min](kappa-min.md)
 
 ## Sources
 

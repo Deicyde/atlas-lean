@@ -14,7 +14,7 @@ infinity rather than a finite value. Blueprint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean Squared Error ENN](mean-squared-error-enn.md)
 
 ## Sources
 

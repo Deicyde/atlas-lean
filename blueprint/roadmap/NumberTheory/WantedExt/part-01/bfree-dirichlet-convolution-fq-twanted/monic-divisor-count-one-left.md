@@ -12,7 +12,7 @@ lean: MetaMathlibExt.monicDivisorCount_one_left
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Divisor Count](monic-divisor-count.md)
 
 ## Sources
 

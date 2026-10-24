@@ -11,7 +11,12 @@ lean: Cslib.Decidability.Post.starAfter
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](sym.md)
+
+## Proof depends on
+
+- [Letter](letter.md)
+- [Star](star.md)
 
 ## Sources
 

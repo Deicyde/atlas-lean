@@ -12,7 +12,9 @@ Every general starts from its initial state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
+- [Init State](init-state.md)
+- [State](state.md)
 
 ## Sources
 

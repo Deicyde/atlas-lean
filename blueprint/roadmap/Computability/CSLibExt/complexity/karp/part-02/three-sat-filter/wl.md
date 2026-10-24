@@ -11,7 +11,7 @@ The walking label after `n` literals of the current clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
 
 ## Sources
 

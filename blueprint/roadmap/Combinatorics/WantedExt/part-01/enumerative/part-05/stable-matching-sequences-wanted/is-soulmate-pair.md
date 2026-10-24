@@ -11,7 +11,12 @@ Man `i` and woman `j` are soulmates: each ranks the other first.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+
+## Proof depends on
+
+- [Man Rank](man-rank.md)
+- [Woman Rank](woman-rank.md)
 
 ## Sources
 

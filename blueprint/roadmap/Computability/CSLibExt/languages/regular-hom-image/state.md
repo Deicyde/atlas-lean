@@ -14,6 +14,10 @@ inside `φ a` while it is spelled out from `q`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bound](bound.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.RegularHomImage](../../../../../sources/v2/CSLibExt.md)

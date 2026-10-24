@@ -18,6 +18,12 @@ prime to `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas Sequence Params](../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Is Coprime](../../../MathlibExt/part-08/lucas-sequence/is-coprime.md)
+- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.AbsoluteLucasPseudoprimesWanted](../../../../../sources/v2/WantedExt.md)

@@ -11,7 +11,7 @@ lean: MetaMathlibExt.upperWythoffUnsumPalindrome_isPrefix_succ_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Wythoff Unsum Palindrome](upper-wythoff-unsum-palindrome.md)
 
 ## Sources
 

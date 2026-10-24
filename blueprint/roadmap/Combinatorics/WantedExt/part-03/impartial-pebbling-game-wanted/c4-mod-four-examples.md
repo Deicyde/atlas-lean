@@ -13,7 +13,10 @@ Small values of the mod-`4` patterns: `(2,0,0,1) ∈ Y_{aabc}`, `(0,1,0,0) ∈ \
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Mod Four AABC](c4-mod-four-aabc.md)
+- [C4 Mod Four ABABHat](c4-mod-four-ababhat.md)
+- [C4 Mod Four ABABHat Compl](c4-mod-four-ababhat-compl.md)
+- [C4 Mod Four ABACHat](c4-mod-four-abachat.md)
 
 ## Sources
 

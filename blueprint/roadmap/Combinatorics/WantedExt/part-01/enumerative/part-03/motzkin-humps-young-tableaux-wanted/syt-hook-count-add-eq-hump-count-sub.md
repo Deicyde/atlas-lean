@@ -13,7 +13,8 @@ counts. Casts make the subtraction an identity in `ℤ`, avoiding natural trunca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Hump Count](motzkin-hump-count.md)
+- [Syt Hook Count](syt-hook-count.md)
 
 ## Sources
 

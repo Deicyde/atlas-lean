@@ -12,7 +12,7 @@ sign) has `opx(n, P_{s,2,c}) = Θ(s^{1/2} n^{3/2})` as `n → ∞`, with `s` fix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

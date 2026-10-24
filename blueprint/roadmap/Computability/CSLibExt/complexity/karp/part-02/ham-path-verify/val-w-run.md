@@ -14,7 +14,24 @@ already moved (reversed) on `Z`, it reaches `vWb` iff `w` parses as a vertex lis
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Decode W](../../part-01/ham-path-check/decode-w.md)
+- [Prog](prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Decode W nil](../../part-01/ham-path-check/decode-w-nil.md)
+- [Decode W of none](../../part-01/ham-path-check/decode-w-of-none.md)
+- [Decode W of some](../../part-01/ham-path-check/decode-w-of-some.md)
+- [If E run](if-e-run.md)
+- [Skip U none](skip-u-none.md)
+- [Skip U run](skip-u-run.md)
+- [Update update update update](update-update-update-update.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

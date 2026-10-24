@@ -16,7 +16,8 @@ in $f$, viewed as a point of $\mathbb{R}^2$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exponent To Real](exponent-to-real.md)
+- [Newton Support](newton-support.md)
 
 ## Sources
 

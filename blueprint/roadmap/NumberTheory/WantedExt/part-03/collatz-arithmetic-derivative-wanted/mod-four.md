@@ -12,7 +12,7 @@ If `pq` is compatible with another semiprime, then `pq ≡ 3 (mod 4)`; hence one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
 
 ## Sources
 

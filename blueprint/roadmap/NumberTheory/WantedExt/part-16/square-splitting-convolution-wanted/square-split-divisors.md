@@ -13,6 +13,11 @@ The divisor system `A(n) = {u₁ v₁² : u₁ ∣ u(n), v₁ ∣ v(n)}`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Square Split U](square-split-u.md)
+- [Square Split V](square-split-v.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SquareSplittingConvolutionWanted](../../../../../sources/v2/WantedExt.md)

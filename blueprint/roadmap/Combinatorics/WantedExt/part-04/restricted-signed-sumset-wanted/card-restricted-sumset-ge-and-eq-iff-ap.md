@@ -14,7 +14,8 @@ by `0 < d ∧ (A : Set ℤ).IsAPOfLengthWith A.card a d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
+- [Is APOf Length With](../../../MathlibExt/part-01/ap/basic/is-apof-length-with.md)
 
 ## Sources
 

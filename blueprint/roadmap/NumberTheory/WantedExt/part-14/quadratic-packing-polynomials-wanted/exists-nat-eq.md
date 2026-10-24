@@ -12,7 +12,7 @@ A quadratic packing polynomial takes a natural-number value at every point of it
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
 
 ## Sources
 

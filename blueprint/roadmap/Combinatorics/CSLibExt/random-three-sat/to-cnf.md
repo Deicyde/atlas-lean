@@ -11,7 +11,14 @@ The canonical CNF formula of a model formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formula](formula.md)
+- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Clause](clause.md)
+- [To CNFClause](to-cnfclause.md)
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

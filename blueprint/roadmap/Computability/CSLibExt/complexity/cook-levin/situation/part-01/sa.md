@@ -11,7 +11,7 @@ Position of situation `i`'s variable in the label/state block.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](enc.md)
 
 ## Sources
 

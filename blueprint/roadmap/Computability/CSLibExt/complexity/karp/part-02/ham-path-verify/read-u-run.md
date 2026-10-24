@@ -13,7 +13,19 @@ the rest of `src` left.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [Read U](read-u.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+
+## Proof depends on
+
+- [Step1](step1.md)
+- [Update update update update](update-update-update-update.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
 
 ## Sources
 

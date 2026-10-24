@@ -13,7 +13,7 @@ with `Le^{(r)}_0 = 1` and `Le^{(r)}_1 = r + 1` (written with `n + 2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

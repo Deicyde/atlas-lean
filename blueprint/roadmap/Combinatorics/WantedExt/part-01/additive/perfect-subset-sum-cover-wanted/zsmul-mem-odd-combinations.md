@@ -12,7 +12,7 @@ under taking odd multiples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Combinations](odd-combinations.md)
 
 ## Sources
 

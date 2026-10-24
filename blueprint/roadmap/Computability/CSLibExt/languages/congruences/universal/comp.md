@@ -11,7 +11,7 @@ Composition of DFA morphisms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DFAHom](dfahom.md)
 
 ## Sources
 

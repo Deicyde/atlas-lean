@@ -16,7 +16,8 @@ an integer power, so at `k=1` its value `-1` is represented by `zpow`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf Raw](../../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
+- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
 
 ## Sources
 

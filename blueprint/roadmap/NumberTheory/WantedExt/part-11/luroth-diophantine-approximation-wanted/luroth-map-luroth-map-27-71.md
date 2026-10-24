@@ -13,7 +13,11 @@ lean: MetaMathlibExt.lurothMap_lurothMap_27_71
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Map](../luroth-consecutive-digits-wanted/luroth-map.md)
+
+## Proof depends on
+
+- [Luroth Digit](../luroth-consecutive-digits-wanted/luroth-digit.md)
 
 ## Sources
 

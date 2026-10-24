@@ -13,7 +13,7 @@ even `m = 2r`: `a = b = K = r`. The paper takes `m, K ≥ 1`; the claims hold tr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tverberg Sum](tverberg-sum.md)
 
 ## Sources
 

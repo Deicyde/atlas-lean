@@ -18,6 +18,10 @@ encodings as in Theorems 4.1 and 4.2.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.DumontThomasNumerationWanted](../../../../../../sources/v2/WantedExt.md)

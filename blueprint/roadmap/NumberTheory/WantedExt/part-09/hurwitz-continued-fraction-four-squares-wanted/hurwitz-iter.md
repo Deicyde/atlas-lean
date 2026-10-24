@@ -13,6 +13,10 @@ The iteration sequence `z_0 = z`, `z_{n+1} = (z_n - [z_n])⁻¹` of the Hurwitz 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hurwitz Round](hurwitz-round.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HurwitzContinuedFractionFourSquaresWanted](../../../../../sources/v2/WantedExt.md)

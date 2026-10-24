@@ -12,7 +12,12 @@ The double least-common-multiple sum of the empty set is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lcm Reciprocal Sum](lcm-reciprocal-sum.md)
+
+## Proof depends on
+
+- [Naturals In Set Up To](naturals-in-set-up-to.md)
+- [Naturals In Set Up To empty](naturals-in-set-up-to-empty.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The number of rounds of the men-proposing Gale–Shapley algorithm: the first
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+
+## Proof depends on
+
+- [GSEngaged](gsengaged.md)
+- [Gs Proposals](gs-proposals.md)
 
 ## Sources
 

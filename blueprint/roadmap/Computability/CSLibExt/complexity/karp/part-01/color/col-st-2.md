@@ -11,7 +11,13 @@ The whole construction: palette triangle first, then the clauses from the last o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](col-st.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Col Clause](col-clause.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

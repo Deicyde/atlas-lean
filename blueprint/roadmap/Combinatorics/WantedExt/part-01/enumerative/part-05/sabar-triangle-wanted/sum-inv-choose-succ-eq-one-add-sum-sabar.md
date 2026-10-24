@@ -13,7 +13,7 @@ Corollary 1, with the sign of the paper's proof: for `n ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sabar Number](sabar-number.md)
 
 ## Sources
 

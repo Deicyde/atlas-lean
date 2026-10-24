@@ -12,7 +12,7 @@ The `n`-th positive integer not of the form `m + ∑_{i=1}^m i^k` (`m ≥ 1`, `k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: Cslib.Decidability.not_tm2Decidable_halts
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts](halts.md)
+- [TM2 Decidable](../../part-01/basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [The halting problem is undecidable by multi-stack machines](../undecidable/not-tm2-decidable-halting.md)
+- [Tm2 Decidable of many One Reducible](../undecidable/tm2-decidable-of-many-one-reducible.md)
 
 ## Sources
 

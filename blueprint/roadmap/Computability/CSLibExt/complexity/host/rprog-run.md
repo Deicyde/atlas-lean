@@ -13,7 +13,18 @@ and every other stack empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HK](hk.md)
+- [HLab](hlab.md)
+- [HΓ](h.md)
+- [P0](p0.md)
+- [Rprog](rprog.md)
+- [Rtime](rtime.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [The reduction host's run on one input](rprog-run-at.md)
 
 ## Sources
 

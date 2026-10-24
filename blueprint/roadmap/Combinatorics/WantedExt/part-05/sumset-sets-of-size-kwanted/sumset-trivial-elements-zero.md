@@ -12,7 +12,7 @@ The empty set (`k = 0`) has no trivial elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sumset Trivial Elements](sumset-trivial-elements.md)
 
 ## Sources
 

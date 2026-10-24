@@ -12,7 +12,11 @@ lean: MetaMathlibExt.c4Sq_norm_beta_gamma_prime_factor
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Sq B](c4-sq-b.md)
+- [C4 Sq Beta](c4-sq-beta.md)
+- [C4 Sq C](c4-sq-c.md)
+- [C4 Sq Gamma](c4-sq-gamma.md)
+- [Primes Five Mod Eight](primes-five-mod-eight.md)
 
 ## Sources
 

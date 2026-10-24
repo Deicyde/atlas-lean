@@ -11,7 +11,16 @@ The relational denotation of an IMP command.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [While Order Hom](while-order-hom.md)
 
 ## Sources
 

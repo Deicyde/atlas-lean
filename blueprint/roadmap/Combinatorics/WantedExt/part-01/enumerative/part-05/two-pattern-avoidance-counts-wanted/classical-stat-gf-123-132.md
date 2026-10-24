@@ -12,7 +12,8 @@ q²s²vx²z²)` with the paper's numerator `A`, stated after clearing the denomi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Classical Stat GF](classical-stat-gf.md)
+- [Pattern3](pattern3.md)
 
 ## Sources
 

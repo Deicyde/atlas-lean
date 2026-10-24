@@ -12,7 +12,11 @@ The empty board has no road.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tak Has Road](tak-has-road.md)
+
+## Proof depends on
+
+- [Tak Adjacent](tak-adjacent.md)
 
 ## Sources
 

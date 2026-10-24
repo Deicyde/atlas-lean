@@ -13,7 +13,14 @@ and each sum covers the first `2 ^ t` nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Rounds](rounds.md)
+- [Seg Sum](seg-sum.md)
+- [Jump](../list-ranking/jump.md)
+
+## Proof depends on
+
+- [Seg Sum add](seg-sum-add.md)
 
 ## Sources
 

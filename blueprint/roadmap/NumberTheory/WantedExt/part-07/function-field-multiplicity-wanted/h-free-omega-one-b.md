@@ -16,6 +16,12 @@ coefficient sequences.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [H Free](h-free.md)
+- [Omega Mult](omega-mult.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

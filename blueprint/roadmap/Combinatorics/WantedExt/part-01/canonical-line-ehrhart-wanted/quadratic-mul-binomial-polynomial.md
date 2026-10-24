@@ -15,7 +15,7 @@ requested small cases.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Polynomial](binomial-polynomial.md)
 
 ## Sources
 

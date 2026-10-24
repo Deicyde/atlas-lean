@@ -12,7 +12,12 @@ Uniform recurrence implies recurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Recurrent Seq](is-recurrent-seq.md)
+- [Is Uniformly Recurrent Seq](is-uniformly-recurrent-seq.md)
+
+## Proof depends on
+
+- [Seq Factor Occurs At](seq-factor-occurs-at.md)
 
 ## Sources
 

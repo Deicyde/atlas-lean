@@ -13,7 +13,7 @@ lean: MetaMathlibExt.exists_shortIntervalDivisorCount_le_of_window_theta_sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Short Interval Divisor Count](short-interval-divisor-count.md)
 
 ## Sources
 

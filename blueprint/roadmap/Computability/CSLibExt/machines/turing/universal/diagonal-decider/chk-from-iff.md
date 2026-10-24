@@ -12,7 +12,17 @@ lean: Cslib.Turing.Universal.Diag.chkFrom_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cells](../clocked/cells.md)
+- [Entry Nums](../clocked/entry-nums.md)
+- [Chk From](chk-from.md)
+- [Keys Ascend From](../diagonalization/keys-ascend-from.md)
+
+## Proof depends on
+
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Cell](../clocked/cell.md)
+- [Read Unary Length eq some iff cell](../diagonalization/read-unary-length-eq-some-iff-cell.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Hoggatt and Lind's formula, as recalled by the source:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Composition Count](colored-composition-count.md)
+- [Partial Bell Polynomial](../../../../../MathlibExt/part-01/enumerative/part-06/partial-bell-polynomial.md)
 
 ## Sources
 

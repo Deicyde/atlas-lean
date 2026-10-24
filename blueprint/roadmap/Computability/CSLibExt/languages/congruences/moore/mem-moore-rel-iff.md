@@ -12,7 +12,15 @@ lean: DFA.mem_mooreRel_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Moore Rel](moore-rel.md)
+
+## Proof depends on
+
+- [Moore Iter](moore-iter.md)
+- [Moore Iter spec](moore-iter-spec.md)
+- [Moore Step](moore-step.md)
+- [Subset moore Rel](subset-moore-rel.md)
+- [Gfp Fin fixed](../../../../../Order/MathlibExt/fixed-points/finset/gfp-fin-fixed.md)
 
 ## Sources
 

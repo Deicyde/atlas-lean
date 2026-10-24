@@ -14,6 +14,10 @@ The hyper-Leonardo numbers `Le^{(r)}_n`: `Le^{(0)}_n` is the Leonardo number
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gen Leonardo](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HyperLeonardoWanted](../../../../../sources/v2/WantedExt.md)

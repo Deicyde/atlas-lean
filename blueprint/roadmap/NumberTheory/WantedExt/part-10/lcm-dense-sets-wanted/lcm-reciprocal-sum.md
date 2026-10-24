@@ -14,6 +14,10 @@ natural-number quantities explicitly coerced to real numbers.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Naturals In Set Up To](naturals-in-set-up-to.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LcmDenseSetsWanted](../../../../../sources/v2/WantedExt.md)

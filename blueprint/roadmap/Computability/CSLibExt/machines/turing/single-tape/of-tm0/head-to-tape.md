@@ -12,7 +12,8 @@ The symbol under the head of `toTape t` is that of the head cell of `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [To Tape](to-tape.md)
 
 ## Sources
 

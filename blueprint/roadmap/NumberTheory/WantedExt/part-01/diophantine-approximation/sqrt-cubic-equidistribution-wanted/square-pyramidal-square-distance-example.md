@@ -13,7 +13,8 @@ lean: MetaMathlibExt.squarePyramidalSquareDistance_examples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Pyramidal Number](square-pyramidal-number.md)
+- [Square Pyramidal Square Distance](square-pyramidal-square-distance.md)
 
 ## Sources
 

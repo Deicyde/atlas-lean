@@ -15,7 +15,8 @@ omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
+- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
 
 ## Sources
 

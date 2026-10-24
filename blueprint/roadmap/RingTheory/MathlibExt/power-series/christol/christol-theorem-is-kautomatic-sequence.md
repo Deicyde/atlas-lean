@@ -16,7 +16,9 @@ Christol's theorem in DFAO form: algebraicity iff automaticity.
 
 ## Proof depends on
 
+- [Is KAutomatic](../../../../Combinatorics/MathlibExt/part-02/words/automatic/is-kautomatic.md)
 - [Christol theorem](christol-theorem.md)
+- [Is KAutomatic iff is KAutomatic Sequence](../../../../Combinatorics/MathlibExt/part-02/words/automatic/is-kautomatic-iff-is-kautomatic-sequence.md)
 
 ## Sources
 

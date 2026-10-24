@@ -11,7 +11,11 @@ A balanced complete bipartite subgraph `K_{K,K}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced Biclique Instance](balanced-biclique-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

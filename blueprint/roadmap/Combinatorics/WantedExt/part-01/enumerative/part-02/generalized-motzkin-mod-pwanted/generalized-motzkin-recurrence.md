@@ -14,7 +14,7 @@ Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Artic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Motzkin](generalized-motzkin.md)
 
 ## Sources
 

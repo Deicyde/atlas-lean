@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.CatenableHeap.toMultiset_insert
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Insert](insert.md)
+- [To Multiset](to-multiset.md)
+
+## Proof depends on
+
+- [To Multiset cons](to-multiset-cons.md)
 
 ## Sources
 

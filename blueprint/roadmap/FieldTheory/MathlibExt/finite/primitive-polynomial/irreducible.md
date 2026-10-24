@@ -13,7 +13,7 @@ A primitive polynomial is irreducible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Polynomial](is-primitive-polynomial.md)
 
 ## Sources
 

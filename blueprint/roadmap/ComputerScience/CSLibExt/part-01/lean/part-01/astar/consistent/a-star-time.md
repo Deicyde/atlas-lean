@@ -12,7 +12,19 @@ lean: Cslib.Algorithms.Lean.AStar.aStar_time
 
 ## Depends on
 
-This node has no prerequisites.
+- [AStar Result](astar-result.md)
+- [A Star](a-star.md)
+- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
+- [Total](../../graph/shortest-path/dijkstra/total.md)
+- [Adjacency Entry Count](../../graph/shortest-path/dijkstra/adjacency-entry-count.md)
+
+## Proof depends on
+
+- [Reduced Weight](reduced-weight.md)
+- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
+- [Dijkstra time](../../graph/shortest-path/dijkstra/dijkstra-time.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The effective zero part of a divisor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curve Divisor](../divisor/curve-divisor.md)
 
 ## Sources
 

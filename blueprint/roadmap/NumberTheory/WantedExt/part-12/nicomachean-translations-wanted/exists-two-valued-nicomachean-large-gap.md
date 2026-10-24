@@ -12,7 +12,7 @@ distinct entries `a < b` such that the largest gap `b - a` divided by the length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachean Nu](nicomachean-nu.md)
 
 ## Sources
 

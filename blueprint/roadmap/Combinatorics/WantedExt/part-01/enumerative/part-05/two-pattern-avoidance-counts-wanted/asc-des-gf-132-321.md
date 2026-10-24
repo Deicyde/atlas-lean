@@ -13,7 +13,8 @@ clearing the denominator; only the `(asc, des)` identity is stated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Asc Des GF](asc-des-gf.md)
+- [Pattern3](pattern3.md)
 
 ## Sources
 

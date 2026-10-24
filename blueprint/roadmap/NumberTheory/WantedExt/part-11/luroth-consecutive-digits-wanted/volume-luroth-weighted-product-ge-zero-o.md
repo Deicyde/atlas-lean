@@ -16,7 +16,7 @@ Weighted products of consecutive Lüroth digits: for `m ≥ 1`, weights `t_i > 0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Digit Seq](luroth-digit-seq.md)
 
 ## Sources
 

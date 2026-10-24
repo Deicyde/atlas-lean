@@ -13,7 +13,12 @@ end no bit may be left.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+
+## Proof depends on
+
+- [Free](free.md)
+- [Sat](sat.md)
 
 ## Sources
 

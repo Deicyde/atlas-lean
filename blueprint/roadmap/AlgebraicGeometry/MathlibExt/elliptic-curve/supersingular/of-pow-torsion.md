@@ -16,7 +16,7 @@ $P = 0$, then $E$ is supersingular.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Supersingular](is-supersingular.md)
 
 ## Sources
 

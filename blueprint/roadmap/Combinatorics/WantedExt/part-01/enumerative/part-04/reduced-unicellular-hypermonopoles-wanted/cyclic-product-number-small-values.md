@@ -13,7 +13,7 @@ Small values from the table of `H(n, k)` values: `H(3, 1) = 1`, `H(4, 2) = 5`, `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Product Number](cyclic-product-number.md)
 
 ## Sources
 

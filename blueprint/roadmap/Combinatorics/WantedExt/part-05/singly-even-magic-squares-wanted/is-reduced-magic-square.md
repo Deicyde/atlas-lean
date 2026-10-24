@@ -15,6 +15,10 @@ by `1`); "each exactly once" is stated as: entries are below `n²` and pairwise 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Magic Square](is-magic-square.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SinglyEvenMagicSquaresWanted](../../../../../sources/v2/WantedExt.md)

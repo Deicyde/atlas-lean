@@ -13,7 +13,11 @@ position 7 is not.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Big Entry](is-big-entry.md)
+
+## Proof depends on
+
+- [Word Weak Ascents](word-weak-ascents.md)
 
 ## Sources
 

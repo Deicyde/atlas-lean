@@ -11,7 +11,12 @@ The best path of length `t + 1` ending in `s`, following the backpointers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+
+## Proof depends on
+
+- [Back](back.md)
+- [Viterbi Tab](viterbi-tab.md)
 
 ## Sources
 

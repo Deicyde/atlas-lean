@@ -12,7 +12,11 @@ derivable from `F` with `X, Y ⊆ S`, either `Y ⊆ X` or `X` is a superkey of `
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](../functional-dependencies/fd.md)
+
+## Proof depends on
+
+- [Derives](../functional-dependencies/derives.md)
 
 ## Sources
 

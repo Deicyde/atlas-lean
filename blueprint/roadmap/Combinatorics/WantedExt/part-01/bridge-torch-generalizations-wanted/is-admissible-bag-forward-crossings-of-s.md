@@ -12,7 +12,12 @@ bag of forward trips `F(σ)`, and its total cost is `w(F(σ))`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Bag](is-admissible-bag.md)
+- [Is Bridge Schedule](is-bridge-schedule.md)
+- [Bag Weight](bag-weight.md)
+- [Forward Crossings](forward-crossings.md)
+- [Return Crossings](return-crossings.md)
+- [Schedule Cost](schedule-cost.md)
 
 ## Sources
 

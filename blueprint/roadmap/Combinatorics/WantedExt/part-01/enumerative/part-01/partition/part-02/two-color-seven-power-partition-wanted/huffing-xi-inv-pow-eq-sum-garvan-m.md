@@ -16,7 +16,7 @@ cut at `j ≤ 2i`, resp. `j ≤ 7i`, beyond which `m` vanishes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garvan M](garvan-m.md)
 
 ## Sources
 

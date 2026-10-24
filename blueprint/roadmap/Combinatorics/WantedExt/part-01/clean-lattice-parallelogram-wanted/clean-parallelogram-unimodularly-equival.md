@@ -13,7 +13,10 @@ square has no such `a`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Clean Parallelogram](is-clean-parallelogram.md)
+- [Unimodularly Equivalent](unimodularly-equivalent.md)
+- [Lattice Parallelogram](lattice-parallelogram.md)
+- [Std Clean Parallelogram](std-clean-parallelogram.md)
 
 ## Sources
 

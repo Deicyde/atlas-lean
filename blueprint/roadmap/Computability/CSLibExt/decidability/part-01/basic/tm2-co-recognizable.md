@@ -13,6 +13,10 @@ lean: Cslib.Decidability.TM2CoRecognizable
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [TM2 Recognizable](tm2-recognizable.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.Basic](../../../../../../sources/v2/CSLibExt.md)

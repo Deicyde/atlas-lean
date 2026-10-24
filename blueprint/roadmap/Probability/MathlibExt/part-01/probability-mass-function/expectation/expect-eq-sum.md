@@ -12,7 +12,7 @@ On a `Fintype` the expectation is an unconditional finite sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect](expect.md)
 
 ## Sources
 

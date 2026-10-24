@@ -12,7 +12,9 @@ The fitting score is attained by some infix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fitting Score](fitting-score.md)
+- [Infixes](infixes.md)
+- [Nw Score](../sequence-alignment/nw-score.md)
 
 ## Sources
 

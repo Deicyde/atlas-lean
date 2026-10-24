@@ -16,6 +16,10 @@ sets containing `B`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Independent Class](is-independent-class.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.MeasureTheory.ScottishBook191Wanted](../../../../sources/v2/WantedExt.md)

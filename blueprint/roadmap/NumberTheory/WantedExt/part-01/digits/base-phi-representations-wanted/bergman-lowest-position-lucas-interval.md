@@ -12,7 +12,9 @@ for `N ∈ Λ_{2n}` and `-R = 2n + 2` for `N ∈ Λ_{2n+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bergman Expansion](is-bergman-expansion.md)
+- [Base Phi Value](base-phi-value.md)
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

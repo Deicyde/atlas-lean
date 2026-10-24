@@ -13,7 +13,7 @@ Characteristic value: for `k = 0` the matrix `S` vanishes (classical Cohn triple
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Cohn S](gen-cohn-s.md)
 
 ## Sources
 

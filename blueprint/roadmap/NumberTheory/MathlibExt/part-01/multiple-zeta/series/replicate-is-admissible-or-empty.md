@@ -14,7 +14,13 @@ Section 1 (`ζ*({2}^k)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Or Empty](is-admissible-or-empty.md)
+- [Replicate](replicate.md)
+
+## Proof depends on
+
+- [Is Admissible](../index/is-admissible.md)
+- [Depth](../index/depth.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ lean: MeasureTheory.integral_sq_sub_condExp_le
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pythagorean identity for the conditional mean](integral-sq-sub-eq-integral-sq-sub-cond.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.MeasureTheory.Function.ConditionalExpectation.BestPredictor](../../../../../../sources/v2/MathlibExt.md)

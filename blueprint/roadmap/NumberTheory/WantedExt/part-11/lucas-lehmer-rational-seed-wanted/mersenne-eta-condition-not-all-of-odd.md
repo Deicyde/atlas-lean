@@ -12,7 +12,9 @@ If `s_1` is odd, then `q'(s_1) ≠ 1`: condition (etar) fails for some reduced r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Squarefree Part](is-odd-squarefree-part.md)
+- [Mersenne Eta Condition](mersenne-eta-condition.md)
+- [Mersenne Omega](mersenne-omega.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ composite. Since `eᵢ ≥ 2p + 1 ≥ 5` for `i ≥ 1`, compositeness is rendere
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Cunningham Chain](extended-cunningham-chain.md)
 
 ## Sources
 

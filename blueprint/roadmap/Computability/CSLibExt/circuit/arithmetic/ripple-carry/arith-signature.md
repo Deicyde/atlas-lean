@@ -13,6 +13,10 @@ The arithmetic basis: three binary gates.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Arith Gate](arith-gate.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Circuit.Arithmetic.RippleCarry](../../../../../../sources/v2/CSLibExt.md)

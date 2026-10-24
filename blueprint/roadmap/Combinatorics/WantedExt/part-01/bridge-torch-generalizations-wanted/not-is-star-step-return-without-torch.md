@@ -13,7 +13,12 @@ with the only torch cannot return from the leaf.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Star Step](is-star-step.md)
+- [Star Move](star-move.md)
+
+## Proof depends on
+
+- [Src](src.md)
 
 ## Sources
 

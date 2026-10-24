@@ -12,7 +12,7 @@ The one-part partition `(n)`, `n ≥ 1`, has `n` lit cells as a weakly increasin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lit Cells Increasing](lit-cells-increasing.md)
 
 ## Sources
 

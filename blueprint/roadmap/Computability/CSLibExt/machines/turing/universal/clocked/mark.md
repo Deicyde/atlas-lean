@@ -11,7 +11,9 @@ Move the marker on top of `C` onto `B`, then go to `next`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Γ](untitled.md)
 
 ## Sources
 

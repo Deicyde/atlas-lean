@@ -13,7 +13,14 @@ lean: Cslib.Crypto.PublicKey.RSA.Key.decrypt_encrypt_nat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key](key.md)
+- [N](n.md)
+
+## Proof depends on
+
+- [Decrypt](decrypt.md)
+- [Correctness of textbook RSA](decrypt-encrypt.md)
+- [Encrypt](encrypt.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ The `m`th reflexive stabilization
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reflexive Stabilization Number](reflexive-stabilization-number.md)
+- [Weight Lcm](weight-lcm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

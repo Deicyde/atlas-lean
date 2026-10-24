@@ -12,7 +12,13 @@ lean: Cslib.Decidability.Regularity.isRegular_regLang_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+- [Reg Lang](reg-lang.md)
+
+## Proof depends on
+
+- [Is Regular reg Lang top](is-regular-reg-lang-top.md)
+- [If `u ∉ L`, `regLang L` is not regular](not-is-regular-reg-lang.md)
 
 ## Sources
 

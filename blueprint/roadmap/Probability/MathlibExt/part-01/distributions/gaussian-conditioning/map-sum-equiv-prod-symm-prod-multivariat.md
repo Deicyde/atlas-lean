@@ -15,6 +15,12 @@ gives `N((m, m'), [[S, 0], [0, R]])`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Char Fun map sum Equiv Prod symm prod](char-fun-map-sum-equiv-prod-symm-prod.md)
+- [Inner sum Equiv Prod symm](inner-sum-equiv-prod-symm.md)
+- [Pos Semidef from Blocks zero](pos-semidef-from-blocks-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.GaussianConditioning](../../../../../../sources/v2/MathlibExt.md)

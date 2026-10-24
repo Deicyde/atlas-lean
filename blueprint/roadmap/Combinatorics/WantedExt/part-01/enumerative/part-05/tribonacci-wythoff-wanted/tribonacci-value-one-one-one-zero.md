@@ -12,7 +12,7 @@ The paper's non-canonical word `1110` evaluates to `13`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Value](tribonacci-value.md)
 
 ## Sources
 

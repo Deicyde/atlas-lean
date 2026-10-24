@@ -17,7 +17,7 @@ paper's positivity of `Ψ` is dropped.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Digit Seq](luroth-digit-seq.md)
 
 ## Sources
 

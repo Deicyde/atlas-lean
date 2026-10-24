@@ -13,7 +13,8 @@ almost opposable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Compatibly Almost Opposable](is-compatibly-almost-opposable.md)
+- [Is Opposition](is-opposition.md)
 
 ## Sources
 

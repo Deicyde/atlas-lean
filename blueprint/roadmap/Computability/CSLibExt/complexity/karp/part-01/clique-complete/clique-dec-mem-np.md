@@ -12,7 +12,16 @@ lean: Cslib.Complexity.Karp.cliqueDec_mem_NP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clique Dec](../clique/clique-dec.md)
+- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [NP](../../../../../MathlibExt/complexity/np.md)
+
+## Proof depends on
+
+- [Mode](../clique-verify/mode.md)
+- [CLIQUE is verified by `kgCheck .clique`](../clique-verify/clique-dec-iff.md)
+- [Mem NP of kg Check](mem-np-of-kg-check.md)
 
 ## Sources
 

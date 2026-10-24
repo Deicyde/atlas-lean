@@ -13,7 +13,8 @@ Arshon's formula as refined by Kotěšovec:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bishops Square](bishops-square.md)
+- [Ext Stirling Second](ext-stirling-second.md)
 
 ## Sources
 

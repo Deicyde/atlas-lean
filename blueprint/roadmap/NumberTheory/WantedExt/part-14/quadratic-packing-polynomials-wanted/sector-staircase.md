@@ -14,6 +14,10 @@ slope `n / m`, where `l = gcd(m - 1, n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sector Lattice Points](sector-lattice-points.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QuadraticPackingPolynomialsWanted](../../../../../sources/v2/WantedExt.md)

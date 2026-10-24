@@ -12,7 +12,14 @@ Every clause of `chainTail` has at most three literals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain Tail](../three-sat/chain-tail.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Fresh](../three-sat/fresh.md)
+- [Ren Lit](../three-sat/ren-lit.md)
 
 ## Sources
 

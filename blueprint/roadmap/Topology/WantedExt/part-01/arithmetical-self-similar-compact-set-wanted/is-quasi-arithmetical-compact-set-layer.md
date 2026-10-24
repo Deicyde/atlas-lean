@@ -13,7 +13,8 @@ Proposition 5: in a quasi-arithmetical compact set, if `n / ρ^p ∈ T_v` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quasi Arithmetical Compact Set](is-quasi-arithmetical-compact-set.md)
+- [Self Similar Layer](self-similar-layer.md)
 
 ## Sources
 

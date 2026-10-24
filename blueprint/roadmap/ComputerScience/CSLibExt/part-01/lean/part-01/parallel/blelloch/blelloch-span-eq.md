@@ -12,7 +12,7 @@ The span is `2 k = 2 log₂ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Blelloch Span](blelloch-span.md)
 
 ## Sources
 

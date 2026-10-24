@@ -12,7 +12,7 @@ Characteristic values: `Lucky(1122) = {1}` and `Lucky(1221) = {1, 2}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling Lucky Set](stirling-lucky-set.md)
 
 ## Sources
 

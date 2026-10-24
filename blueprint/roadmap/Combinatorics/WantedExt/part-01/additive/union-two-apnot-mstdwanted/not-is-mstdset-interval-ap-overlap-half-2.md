@@ -12,7 +12,9 @@ p₂/q₂` with `q₂` odd, `I_n ∪ J(x, m, d)` is not an MSTD set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](is-mstdset.md)
+- [Real APSet](real-apset.md)
+- [Real Interval Set](real-interval-set.md)
 
 ## Sources
 

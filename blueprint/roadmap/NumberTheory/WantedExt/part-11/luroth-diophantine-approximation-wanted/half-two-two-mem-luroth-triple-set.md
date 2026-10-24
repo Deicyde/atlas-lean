@@ -12,7 +12,14 @@ lean: MetaMathlibExt.half_two_two_mem_lurothTripleSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Triple Set](luroth-triple-set.md)
+
+## Proof depends on
+
+- [Luroth Convergent](luroth-convergent.md)
+- [Luroth Denominator](luroth-denominator.md)
+- [Luroth Digit Seq](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
+- [Luroth Digit Seq one](luroth-digit-seq-one.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ A simple map whose keyword is not applicable leaves the word unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Applicable](keyword-applicable.md)
+- [Keyword Simple Map](keyword-simple-map.md)
 
 ## Sources
 

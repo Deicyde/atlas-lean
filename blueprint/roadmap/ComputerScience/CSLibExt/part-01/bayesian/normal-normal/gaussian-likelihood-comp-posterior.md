@@ -13,7 +13,16 @@ lean: Cslib.MachineLearning.Bayesian.gaussianLikelihood_comp_posterior
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gaussian Likelihood](gaussian-likelihood.md)
+- [Gaussian Likelihood zero apply](gaussian-likelihood-zero-apply.md)
+- [Completing the square](measurable-gaussian-pdf-mean.md)
+- [Normal Post Mean](normal-post-mean.md)
+- [Normal Post Var](normal-post-var.md)
+
+## Proof depends on
+
+- [The marginal of the data](gaussian-likelihood-comp-gaussian-real.md)
+- [Normal–Normal conjugacy with known variance](posterior-gaussian-likelihood-gaussian-r.md)
 
 ## Sources
 

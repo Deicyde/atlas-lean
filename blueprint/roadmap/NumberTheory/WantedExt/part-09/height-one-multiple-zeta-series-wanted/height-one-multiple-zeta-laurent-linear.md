@@ -18,7 +18,8 @@ sign (`ζ(s) = 1/(s - 1) + γ - γ₁ (s - 1) + ⋯` with `γ₁ ≈ -0.0728`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height One Multiple Zeta](height-one-multiple-zeta.md)
+- [Multiple Hurwitz Zeta](multiple-hurwitz-zeta.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ The image of any recognizing morphism surjects onto the syntactic monoid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Recognizer Image To Syntactic](recognizer-image-to-syntactic.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+
+## Proof depends on
+
+- [Recognizer Quotient To Syntactic](recognizer-quotient-to-syntactic.md)
+- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

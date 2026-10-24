@@ -14,6 +14,10 @@ lean: MetaMathlibExt.IsAlmostOpposable
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Opposable](is-opposable.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.SnortOppositionsWanted](../../../../sources/v2/WantedExt.md)

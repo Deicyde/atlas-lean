@@ -12,7 +12,7 @@ For all `k, ℓ ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated Partial Sum](iterated-partial-sum.md)
 
 ## Sources
 

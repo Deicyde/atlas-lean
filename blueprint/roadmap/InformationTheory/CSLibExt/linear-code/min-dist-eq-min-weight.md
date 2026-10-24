@@ -12,7 +12,13 @@ For a linear code, the minimum distance equals the minimum weight.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+- [Min Dist](min-dist.md)
+- [Min Weight](min-weight.md)
+
+## Proof depends on
+
+- [Hamming Dist eq hamming Norm sub](hamming-dist-eq-hamming-norm-sub.md)
 
 ## Sources
 

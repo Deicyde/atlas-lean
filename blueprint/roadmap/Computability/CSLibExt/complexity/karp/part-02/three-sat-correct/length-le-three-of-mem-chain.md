@@ -12,7 +12,16 @@ Every clause of `chain` has at most three literals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](../three-sat/chain.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Chain Tail](../three-sat/chain-tail.md)
+- [Fresh](../three-sat/fresh.md)
+- [Length le three of mem chain Tail](length-le-three-of-mem-chain-tail.md)
+- [Ren Lit](../three-sat/ren-lit.md)
 
 ## Sources
 

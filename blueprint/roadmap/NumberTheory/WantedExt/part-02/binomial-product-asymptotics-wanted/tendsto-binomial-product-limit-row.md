@@ -14,7 +14,8 @@ does not state the range of `x`; `x > 0` is assumed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product Comparison](binomial-product-comparison.md)
+- [Factorial Product Constant](factorial-product-constant.md)
 
 ## Sources
 

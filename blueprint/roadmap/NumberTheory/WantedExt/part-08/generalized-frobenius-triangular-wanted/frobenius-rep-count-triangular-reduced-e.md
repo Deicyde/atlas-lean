@@ -12,7 +12,7 @@ Splitting off the first generator: with `d‚ÇÅ = gcd(t_{n+1}, t_{n+2})`, for `m ‚
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frobenius Rep Count](../../../MathlibExt/part-06/generalized-frobenius-number/frobenius-rep-count.md)
 
 ## Sources
 

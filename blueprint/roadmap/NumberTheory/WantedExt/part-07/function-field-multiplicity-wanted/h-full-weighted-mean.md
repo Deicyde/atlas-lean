@@ -15,6 +15,12 @@ in Theorems 5 and 7.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [H Full](h-full.md)
+- [H Full Euler Product](h-full-euler-product.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,6 +13,10 @@ The false sentence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sentence Code](sentence-code.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.BusyBeaver](../../../../sources/v2/CSLibExt.md)

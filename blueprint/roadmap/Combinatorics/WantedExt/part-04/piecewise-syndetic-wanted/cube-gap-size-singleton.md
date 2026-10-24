@@ -12,7 +12,14 @@ A one-point set has gap size `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Gap Size](cube-gap-size.md)
+
+## Proof depends on
+
+- [Is Dense In Cubes](is-dense-in-cubes.md)
+- [Is Dense In Cubes one iff](is-dense-in-cubes-one-iff.md)
+- [Lattice Cube](lattice-cube.md)
+- [Lattice Cube one](lattice-cube-one.md)
 
 ## Sources
 

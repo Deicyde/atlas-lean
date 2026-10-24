@@ -14,7 +14,7 @@ Proposition 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Trinomial](central-trinomial.md)
 
 ## Sources
 

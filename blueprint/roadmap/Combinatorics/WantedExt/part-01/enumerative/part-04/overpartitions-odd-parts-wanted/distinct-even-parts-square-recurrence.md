@@ -12,7 +12,7 @@ Merca's square recurrence for `ped`: for `n ≥ 0`, `∑_{j ∈ ℤ} (-1)^j ped(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Even Parts Count](distinct-even-parts-count.md)
 
 ## Sources
 

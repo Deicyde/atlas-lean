@@ -12,7 +12,12 @@ The language of an encoded grammar is context-free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](encoded-cfg.md)
+- [Language](language.md)
+
+## Proof depends on
+
+- [To CFG](to-cfg.md)
 
 ## Sources
 

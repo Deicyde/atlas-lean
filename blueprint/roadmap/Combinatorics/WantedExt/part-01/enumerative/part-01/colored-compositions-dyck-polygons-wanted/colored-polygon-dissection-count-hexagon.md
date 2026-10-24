@@ -14,7 +14,7 @@ pentagon: with `γ 1 = 2`, `γ 2 = 3`, `γ 3 = 5` and `γ j = 0` otherwise,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Polygon Dissection Count](colored-polygon-dissection-count.md)
 
 ## Sources
 

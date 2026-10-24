@@ -13,7 +13,7 @@ and `b` lie in a common `l`-sum-free set modulo `p^i` (equivalently `{a, b}` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Free Mod](is-sum-free-mod.md)
 
 ## Sources
 

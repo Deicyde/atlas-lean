@@ -11,7 +11,7 @@ The initial state: pointers are the successors, distances `1` (or `0` at the end
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

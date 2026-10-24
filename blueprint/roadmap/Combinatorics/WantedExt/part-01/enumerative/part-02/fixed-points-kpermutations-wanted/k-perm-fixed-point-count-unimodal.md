@@ -14,7 +14,7 @@ conclusion is not stated (the abbreviation is not defined in the extracted state
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
 
 ## Sources
 

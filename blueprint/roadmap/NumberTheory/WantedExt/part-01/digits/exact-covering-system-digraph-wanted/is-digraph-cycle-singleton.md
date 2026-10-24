@@ -12,7 +12,7 @@ A one-vertex list `(x)` is a cycle exactly when `x` carries a loop.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Digraph Cycle](is-digraph-cycle.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ this is equivalent to factoring over `ℬ_b`, by applying the digit map `min (·
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Max Min Monomial](is-max-min-monomial.md)
+- [Max Min Mul](max-min-mul.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.MaxMinIndecomposabilityWanted](../../../../../../sources/v2/WantedExt.md)

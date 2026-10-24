@@ -14,7 +14,8 @@ vacuously while `f(2) = 1`, and for `n = 1` the partition `(1)` qualifies while 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
+- [Ordered Factorization Count](ordered-factorization-count.md)
 
 ## Sources
 

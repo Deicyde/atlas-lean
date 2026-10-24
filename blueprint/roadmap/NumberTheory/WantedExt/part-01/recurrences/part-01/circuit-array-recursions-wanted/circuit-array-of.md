@@ -14,6 +14,11 @@ the right edge for odd `i`, meaningful for `0 ≤ i ≤ 2(j - 1)`, `j ≥ 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Circuit Edge](circuit-edge.md)
+- [Circuit Grid](circuit-grid.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.CircuitArrayRecursionsWanted](../../../../../../../sources/v2/WantedExt.md)

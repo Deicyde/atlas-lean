@@ -13,7 +13,7 @@ topology), the Sidon ideal is a countable union of closed sets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sidon Ideal](sidon-ideal.md)
 
 ## Sources
 

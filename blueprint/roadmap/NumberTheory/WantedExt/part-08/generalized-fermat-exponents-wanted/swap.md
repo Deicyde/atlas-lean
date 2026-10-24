@@ -12,7 +12,7 @@ Solvability is symmetric in the first two exponents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fermat Solvable](generalized-fermat-solvable.md)
 
 ## Sources
 

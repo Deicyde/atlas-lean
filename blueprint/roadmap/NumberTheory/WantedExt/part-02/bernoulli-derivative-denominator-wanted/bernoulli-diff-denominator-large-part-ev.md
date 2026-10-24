@@ -11,7 +11,7 @@ For `k ≥ 1` there is `n_k` with `𝔻^+_n > (n + k)_k = (n + 1) ⋯ (n + k)` f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator Large Part](bernoulli-diff-denominator-large-part.md)
 
 ## Sources
 

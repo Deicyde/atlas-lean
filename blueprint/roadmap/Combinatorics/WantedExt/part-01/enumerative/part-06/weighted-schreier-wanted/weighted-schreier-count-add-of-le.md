@@ -11,7 +11,7 @@ For `ℓ ≥ 0` and `k ≥ ℓ + 2`, `a_{k,k+ℓ} = 2 F_{k+ℓ}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Schreier Count](weighted-schreier-count.md)
 
 ## Sources
 

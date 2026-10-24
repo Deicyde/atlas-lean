@@ -14,6 +14,10 @@ number `k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partition Max Rook Number](partition-max-rook-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.RookDecompositionWanted](../../../../../../../../../sources/v2/WantedExt.md)

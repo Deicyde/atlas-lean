@@ -12,7 +12,7 @@ Prepending a difference `g` to `(a + g | l)` inserts `a` (the new minimum when `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
 
 ## Sources
 

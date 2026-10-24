@@ -12,7 +12,18 @@ Moving the new sum `res` from `B` back to `A`: `|res| + 1` steps to `next`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

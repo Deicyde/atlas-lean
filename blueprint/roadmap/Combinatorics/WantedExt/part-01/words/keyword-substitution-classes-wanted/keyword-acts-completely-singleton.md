@@ -12,7 +12,8 @@ A one-element list acts completely exactly when its map performs a substitution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Acts Completely](keyword-acts-completely.md)
+- [Keyword Simple Map](keyword-simple-map.md)
 
 ## Sources
 

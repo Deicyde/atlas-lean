@@ -15,7 +15,7 @@ Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordinary Moment Recurrence](ordinary-moment-recurrence.md)
 
 ## Sources
 

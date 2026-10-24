@@ -11,7 +11,15 @@ lean: Cslib.Complexity.CookLevin.OneHot.ohFamily
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [CNF](../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [C Idx](../family/c-idx.md)
+- [Num Vars](../family/num-vars.md)
+- [Cell CNF](cell-cnf.md)
+- [Clause](../../dense-sat/clause.md)
 
 ## Sources
 

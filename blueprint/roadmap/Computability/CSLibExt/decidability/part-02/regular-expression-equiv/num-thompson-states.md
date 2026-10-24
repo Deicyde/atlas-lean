@@ -11,7 +11,12 @@ The number of states of Thompson's automaton of the expression: the count of the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](../regular-expression/encoded-regex.md)
+
+## Proof depends on
+
+- [State Counts](state-counts.md)
+- [Regex Node](../regular-expression/regex-node.md)
 
 ## Sources
 

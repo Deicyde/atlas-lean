@@ -11,7 +11,16 @@ Stacks emptied by the drain: every stack except the output.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FK](../precompute/fk.md)
+
+## Proof depends on
+
+- [CK](../accept/ck.md)
+- [HK](../assembly/hk.md)
+- [CK](../family/ck.md)
+- [CK](../init-family/ck.md)
+- [PS](../precompute/ps.md)
+- [CK](../shift/ck.md)
 
 ## Sources
 

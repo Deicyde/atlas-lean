@@ -13,7 +13,8 @@ The congruence is represented by divisibility of the difference in `ℤ_[2]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stable Bits](stable-bits.md)
+- [Unstable Bits](unstable-bits.md)
 
 ## Sources
 

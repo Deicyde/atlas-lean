@@ -12,7 +12,7 @@ In a clause with at most two literals, two different members are all of its memb
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

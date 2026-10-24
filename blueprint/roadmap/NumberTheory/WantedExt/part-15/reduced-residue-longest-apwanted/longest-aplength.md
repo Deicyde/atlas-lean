@@ -14,6 +14,10 @@ a single term counts as a progression of length `1`) contained in `R_m(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reduced Residue Window](reduced-residue-window.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ReducedResidueLongestAPWanted](../../../../../sources/v2/WantedExt.md)

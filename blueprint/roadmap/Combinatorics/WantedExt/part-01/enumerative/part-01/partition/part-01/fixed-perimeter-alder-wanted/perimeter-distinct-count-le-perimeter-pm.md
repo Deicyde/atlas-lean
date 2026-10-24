@@ -12,7 +12,8 @@ Theorem 1.5 (reverse Alder-type inequality): for positive `d, n, a` with `a < (d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perimeter Distinct Count](perimeter-distinct-count.md)
+- [Perimeter PMResidue Count](perimeter-pmresidue-count.md)
 
 ## Sources
 

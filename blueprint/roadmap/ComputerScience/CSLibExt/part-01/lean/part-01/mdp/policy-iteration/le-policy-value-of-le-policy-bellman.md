@@ -13,7 +13,14 @@ policy's value from below.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](../value-iteration/mdp.md)
+- [Stochastic](../value-iteration/stochastic.md)
+- [Policy Bellman](../value-iteration/policy-bellman.md)
+- [Policy Value](../value-iteration/policy-value.md)
+
+## Proof depends on
+
+- [Q Value](../value-iteration/q-value.md)
 
 ## Sources
 

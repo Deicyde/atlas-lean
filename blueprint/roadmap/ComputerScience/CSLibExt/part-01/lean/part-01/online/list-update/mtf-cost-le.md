@@ -14,7 +14,15 @@ number of requests.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mtf Cost](mtf-cost.md)
+- [Offline Cost](offline-cost.md)
+
+## Proof depends on
+
+- [Inv](inv.md)
+- [Inv Set](inv-set.md)
+- [Mtf Cost add inv le](mtf-cost-add-inv-le.md)
+- [Mtf Final](mtf-final.md)
 
 ## Sources
 

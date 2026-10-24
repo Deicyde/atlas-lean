@@ -13,7 +13,12 @@ and only if `Xᵀ X θ₀ = Xᵀ y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rss](rss.md)
+
+## Proof depends on
+
+- [Rss add](rss-add.md)
+- [Pythagoras for least squares](rss-eq-of-normal.md)
 
 ## Sources
 

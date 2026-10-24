@@ -11,7 +11,14 @@ Set the mark on top of `M` (if any), then go to `next`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [K](k.md)
+- [Γ](untitled.md)
+- [Sym](../sat-verifier-spec/sym.md)
 
 ## Sources
 

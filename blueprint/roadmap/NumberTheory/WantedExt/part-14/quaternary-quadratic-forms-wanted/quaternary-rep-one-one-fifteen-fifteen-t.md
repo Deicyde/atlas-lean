@@ -19,7 +19,7 @@ where `∑ a₁(n)qⁿ = η₁η₃η₅η₁₅`, `∑ a₂(n)qⁿ = η₂η₆
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf Raw](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.negRLucas_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RLucas](neg-rlucas.md)
 
 ## Sources
 

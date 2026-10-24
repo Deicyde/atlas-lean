@@ -13,7 +13,8 @@ states share a block exactly when they accept the same continuation languages.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv](inv.md)
+- [Rel](rel.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ Every state of the accessible part is reached.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible Part Within](accessible-part-within.md)
+- [Reachable Within](reachable-within.md)
+
+## Proof depends on
+
+- [A state is reachable exactly when some word leads to it](mem-reachable-iff.md)
+- [Reachable](reachable.md)
+- [Reachable Within eq reachable](reachable-within-eq-reachable.md)
 
 ## Sources
 

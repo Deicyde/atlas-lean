@@ -16,7 +16,11 @@ where `W(X) = |N_h ∩ M_n|^{-1} (q^{n/h}/h) ∑_j ξ^{jn} Π_j X_j` and `ζ(2) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Function Field Mertens Constant](function-field-mertens-constant.md)
+- [H Full KSq Sum](h-full-ksq-sum.md)
+- [H Full KSum](h-full-ksum.md)
+- [H Full Moment](h-full-moment.md)
+- [H Full Weighted Mean](h-full-weighted-mean.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The empty set is not a CR-set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CRSet](is-crset.md)
 
 ## Sources
 

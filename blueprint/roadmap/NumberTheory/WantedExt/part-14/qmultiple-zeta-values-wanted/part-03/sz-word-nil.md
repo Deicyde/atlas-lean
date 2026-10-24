@@ -12,7 +12,7 @@ lean: MetaMathlibExt.szWord_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz Word](sz-word.md)
 
 ## Sources
 

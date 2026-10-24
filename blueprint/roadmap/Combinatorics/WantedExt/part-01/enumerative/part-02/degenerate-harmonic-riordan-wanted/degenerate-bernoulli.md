@@ -15,6 +15,10 @@ Equation (6) at `x = 0`), i.e. `n!` times the `tⁿ` coefficient of the inverse 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Falling Factorial](../../../../../MathlibExt/part-01/enumerative/part-04/hsu-shiue-generalized-stirling-number/generalized-falling-factorial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.DegenerateHarmonicRiordanWanted](../../../../../../../sources/v2/WantedExt.md)

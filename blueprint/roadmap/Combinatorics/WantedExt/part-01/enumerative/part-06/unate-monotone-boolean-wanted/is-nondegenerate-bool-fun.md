@@ -15,6 +15,10 @@ A non-degenerate Boolean function: non-degenerate on every variable
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Bool Fun Nondegenerate On](is-bool-fun-nondegenerate-on.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.UnateMonotoneBooleanWanted](../../../../../../../sources/v2/WantedExt.md)

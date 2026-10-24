@@ -13,7 +13,8 @@ and `m` even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
+- [Slow ANim Game](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
 
 ## Sources
 

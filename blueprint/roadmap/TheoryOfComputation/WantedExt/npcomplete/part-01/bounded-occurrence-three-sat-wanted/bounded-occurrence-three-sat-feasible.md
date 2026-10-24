@@ -11,7 +11,12 @@ A satisfying assignment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Occurrence Three Sat Instance](bounded-occurrence-three-sat-instance.md)
+
+## Proof depends on
+
+- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 
 ## Sources
 

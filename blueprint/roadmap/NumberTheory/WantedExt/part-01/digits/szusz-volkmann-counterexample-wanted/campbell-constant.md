@@ -13,6 +13,10 @@ The real number `0.h₂(1)h₂(2)…`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Campbell Concat Digit](campbell-concat-digit.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.SzuszVolkmannCounterexampleWanted](../../../../../../sources/v2/WantedExt.md)

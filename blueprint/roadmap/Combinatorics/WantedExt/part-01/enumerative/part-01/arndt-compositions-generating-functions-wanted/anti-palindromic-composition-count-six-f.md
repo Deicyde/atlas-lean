@@ -12,7 +12,8 @@ There are four anti-palindromic compositions of `6` with four parts and one flip
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Palindromic Composition Count](anti-palindromic-composition-count.md)
+- [Reduced Anti Palindromic Composition Count](reduced-anti-palindromic-composition-cou.md)
 
 ## Sources
 

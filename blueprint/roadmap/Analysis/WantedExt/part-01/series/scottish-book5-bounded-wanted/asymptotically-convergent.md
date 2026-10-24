@@ -15,6 +15,10 @@ definition, verbatim in content.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Density One](has-density-one.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.Series.ScottishBook5BoundedWanted](../../../../../../sources/v2/WantedExt.md)

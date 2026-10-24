@@ -12,7 +12,13 @@ A Gibbs update is reversible with respect to the target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibbs Step](gibbs-step.md)
+- [Pmf Kernel](../metropolis-hastings/pmf-kernel.md)
+
+## Proof depends on
+
+- [Detailed balance for a Gibbs update](gibbs-detailed-balance.md)
+- [Detailed balance implies reversibility](../metropolis-hastings/is-reversible-pmf-kernel.md)
 
 ## Sources
 

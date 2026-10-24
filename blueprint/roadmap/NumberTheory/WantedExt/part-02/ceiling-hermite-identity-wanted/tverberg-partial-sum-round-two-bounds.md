@@ -14,7 +14,7 @@ lower bound is attained. The paper's existential "there are `a, b, m, K`" is tri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tverberg Sum](tverberg-sum.md)
 
 ## Sources
 

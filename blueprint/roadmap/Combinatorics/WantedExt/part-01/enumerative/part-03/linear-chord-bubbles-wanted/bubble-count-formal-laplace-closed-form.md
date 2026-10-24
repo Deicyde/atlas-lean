@@ -19,7 +19,7 @@ at `x = 0`; Theorem 1 gives constant term `0`), so `n = 0` is excluded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bubble Count](bubble-count.md)
 
 ## Sources
 

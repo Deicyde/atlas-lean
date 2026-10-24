@@ -12,7 +12,13 @@ Lower bound: an `A`-weighted zero-sum free sequence of length `L` gives `L < D_A
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
+- [Weighted Davenport](weighted-davenport.md)
+
+## Proof depends on
+
+- [Take](take.md)
+- [Weighted Davenport eq nat Cast s Inf](weighted-davenport-eq-nat-cast-s-inf.md)
 
 ## Sources
 

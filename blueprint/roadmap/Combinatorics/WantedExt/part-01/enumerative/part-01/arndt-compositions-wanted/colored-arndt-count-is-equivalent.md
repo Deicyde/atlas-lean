@@ -11,7 +11,7 @@ For fixed `k ≥ 1`, `c(n, k) ∼ n^{2k-1} / (2^{⌊k/2⌋} (2k - 1)!)` as `n �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Arndt Count](colored-arndt-count.md)
 
 ## Sources
 

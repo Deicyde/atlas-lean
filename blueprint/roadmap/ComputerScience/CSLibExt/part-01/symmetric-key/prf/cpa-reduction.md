@@ -13,7 +13,16 @@ whether the adversary guessed `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CPAAdversary](cpaadversary.md)
+- [Oracle Comp](oracle-comp.md)
+
+## Proof depends on
+
+- [Done](done.md)
+- [Query](query.md)
+- [Oracle Sig](oracle-sig.md)
+- [Pick](pick.md)
+- [Sim Enc](sim-enc.md)
 
 ## Sources
 

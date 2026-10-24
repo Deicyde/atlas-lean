@@ -11,7 +11,11 @@ A directed Hamiltonian cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hamiltonian Cycle Directed Instance](hamiltonian-cycle-directed-instance.md)
+
+## Proof depends on
+
+- [DAdj](dadj.md)
 
 ## Sources
 

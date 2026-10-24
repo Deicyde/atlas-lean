@@ -11,7 +11,14 @@ The emitter's stack embedding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Emitter](emitter.md)
+- [K](k.md)
+- [Γ](untitled.md)
+- [SEmb](../../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+
+## Proof depends on
+
+- [K](../../../sat-tokenizer/k.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ instead, no machine would qualify, since the empty input already uses one cell.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Space Bounded By](space-bounded-by.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.SpaceBounded](../../../../../../../sources/v2/CSLibExt.md)

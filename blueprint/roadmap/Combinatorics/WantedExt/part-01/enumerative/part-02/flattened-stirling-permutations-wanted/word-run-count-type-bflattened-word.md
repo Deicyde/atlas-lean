@@ -16,7 +16,10 @@ for the zero-block, whose nonnegative part is `P₀`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Type BSet Partition](is-type-bset-partition.md)
+- [Adler Block Labels](adler-block-labels.md)
+- [Type BFlattened Word](type-bflattened-word.md)
+- [Word Run Count](word-run-count.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ exponent in the factorization of `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letendre Xi](letendre-xi.md)
+- [Short Interval Divisor Count](short-interval-divisor-count.md)
 
 ## Sources
 

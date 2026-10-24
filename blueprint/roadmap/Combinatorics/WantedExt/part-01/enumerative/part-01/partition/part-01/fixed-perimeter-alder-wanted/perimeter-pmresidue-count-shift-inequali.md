@@ -12,7 +12,7 @@ Proposition 1.6, `ℓ` part: for positive `d, n, a` with `a < (d + 3)/2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perimeter PMResidue Count](perimeter-pmresidue-count.md)
 
 ## Sources
 

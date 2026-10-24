@@ -12,7 +12,7 @@ lean: MetaMathlibExt.not_isRieselNumber_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Riesel Number](is-riesel-number.md)
 
 ## Sources
 

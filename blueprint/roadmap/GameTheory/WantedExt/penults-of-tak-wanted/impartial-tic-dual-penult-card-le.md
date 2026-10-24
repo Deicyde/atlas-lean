@@ -12,7 +12,8 @@ Proposition 4 (`n ≥ 5`): a penult of the dual of Impartial Tic on an `n × n` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Penult](placement-penult.md)
+- [Tic Ended](tic-ended.md)
 
 ## Sources
 

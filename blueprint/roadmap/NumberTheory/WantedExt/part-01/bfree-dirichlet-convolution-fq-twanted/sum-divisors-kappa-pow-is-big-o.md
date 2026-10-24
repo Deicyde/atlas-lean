@@ -12,7 +12,8 @@ Lemma 8, bound (7): for `κ ≥ 2` and every `ε > 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kappa Min](kappa-min.md)
+- [Kappa Pow](kappa-pow.md)
 
 ## Sources
 

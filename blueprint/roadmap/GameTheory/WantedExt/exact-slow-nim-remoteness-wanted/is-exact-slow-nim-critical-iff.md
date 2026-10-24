@@ -14,7 +14,7 @@ odd.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Exact Slow Nim Critical](is-exact-slow-nim-critical.md)
 
 ## Sources
 

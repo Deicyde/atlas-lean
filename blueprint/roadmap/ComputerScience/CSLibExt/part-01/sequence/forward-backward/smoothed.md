@@ -15,7 +15,13 @@ ratio.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+
+## Proof depends on
+
+- [Backward](backward.md)
+- [Forward](../hidden-markov/forward.md)
+- [Likelihood](../hidden-markov/likelihood.md)
 
 ## Sources
 

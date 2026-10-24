@@ -12,7 +12,11 @@ The expectation of a nonnegative function is nonnegative (finite case).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect](expect.md)
+
+## Proof depends on
+
+- [Expect eq sum](expect-eq-sum.md)
 
 ## Sources
 

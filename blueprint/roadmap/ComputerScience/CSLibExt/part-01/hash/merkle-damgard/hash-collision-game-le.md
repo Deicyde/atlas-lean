@@ -14,7 +14,16 @@ probability that `A` finds a hash collision.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compression Collision Game](compression-collision-game.md)
+- [Hash Collision Game](hash-collision-game.md)
+- [Reduction](reduction.md)
+
+## Proof depends on
+
+- [Is Collision](is-collision.md)
+- [Find Collision](find-collision.md)
+- [Merkle–Damgård](find-collision-spec.md)
+- [Hash](hash.md)
 
 ## Sources
 

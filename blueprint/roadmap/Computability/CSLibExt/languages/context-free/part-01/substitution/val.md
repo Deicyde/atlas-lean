@@ -12,7 +12,14 @@ what the grammar for a letter generates from a nonterminal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [To CFG](../encoded/to-cfg.md)
+- [Decode](decode.md)
+- [Language From](../basic/language-from.md)
+- [Substitution](../../../substitution.md)
 
 ## Sources
 

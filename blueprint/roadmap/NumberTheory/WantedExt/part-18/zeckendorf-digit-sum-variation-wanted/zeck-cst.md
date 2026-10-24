@@ -15,6 +15,10 @@ highest levels of each tower, i.e. `v_k + r < F_{k+1}` or `F_{k+1} ≤ v_k` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zeck Adic Prefix Value](zeck-adic-prefix-value.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ZeckendorfDigitSumVariationWanted](../../../../../sources/v2/WantedExt.md)

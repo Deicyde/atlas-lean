@@ -16,6 +16,11 @@ statements use the definition only eventually, or have a zero harmonic left side
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gcd Logarithmic Moment](gcd-logarithmic-moment.md)
+- [Recip Sum Up To](recip-sum-up-to.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LcmDenseSetsWanted](../../../../../sources/v2/WantedExt.md)

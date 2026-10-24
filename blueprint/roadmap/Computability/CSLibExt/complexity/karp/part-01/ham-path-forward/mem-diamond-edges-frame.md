@@ -12,7 +12,11 @@ The four frame arcs of a diamond.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diamond Edges](../ham-path/diamond-edges.md)
+- [Hp R](../ham-path/hp-r.md)
+- [Hp T](../ham-path/hp-t.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

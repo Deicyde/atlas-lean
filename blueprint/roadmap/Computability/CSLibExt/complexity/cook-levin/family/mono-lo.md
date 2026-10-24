@@ -12,7 +12,7 @@ Lowering the lower bound keeps a literal list increasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inc](inc.md)
 
 ## Sources
 

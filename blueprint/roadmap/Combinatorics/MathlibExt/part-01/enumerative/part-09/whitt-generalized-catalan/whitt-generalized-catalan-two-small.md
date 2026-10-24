@@ -12,7 +12,7 @@ Characteristic values: `C(2, 1) = 1`, `C(2, 2) = 3`, `C(2, 3) = 13`, `C(2, 4) = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Whitt Generalized Catalan](whitt-generalized-catalan.md)
 
 ## Sources
 

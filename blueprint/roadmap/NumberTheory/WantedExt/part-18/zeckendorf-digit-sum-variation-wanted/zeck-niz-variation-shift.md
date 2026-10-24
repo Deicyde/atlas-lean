@@ -13,7 +13,9 @@ For `r ≥ 1`, `ℓ ≥ 2` with `F_ℓ ≤ r < F_{ℓ+1}`, `k ≥ ℓ`, and a cy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
+- [Zeck NIZ](zeck-niz.md)
 
 ## Sources
 

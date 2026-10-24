@@ -15,6 +15,11 @@ bridge of capacity `c` with one torch (`T(n)` for `c = 2`, `T₃(n)` for
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Bridge Schedule](is-bridge-schedule.md)
+- [Schedule Cost](schedule-cost.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BridgeTorchGeneralizationsWanted](../../../../../sources/v2/WantedExt.md)

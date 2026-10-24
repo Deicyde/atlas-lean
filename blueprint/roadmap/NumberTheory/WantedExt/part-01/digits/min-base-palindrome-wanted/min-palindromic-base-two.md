@@ -12,7 +12,7 @@ Characteristic value `b(2) = 3`: `2 = (1,0)_2` is not a palindrome, `2 = (2)_3` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Palindromic Base](min-palindromic-base.md)
 
 ## Sources
 

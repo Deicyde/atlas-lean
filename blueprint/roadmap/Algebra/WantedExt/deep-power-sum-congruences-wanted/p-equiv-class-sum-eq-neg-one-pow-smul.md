@@ -12,7 +12,8 @@ For odd `p` the signs in `g_λ` are constant on the class:
 
 ## Depends on
 
-This node has no prerequisites.
+- [P Equiv Class](p-equiv-class.md)
+- [P Equiv Class Sum](p-equiv-class-sum.md)
 
 ## Sources
 

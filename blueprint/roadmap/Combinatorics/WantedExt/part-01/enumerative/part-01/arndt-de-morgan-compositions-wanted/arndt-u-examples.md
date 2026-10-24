@@ -13,7 +13,7 @@ Entries of Table 3: `U(2,3) = (1,1,1,2)`, `U(1,4) = (1,4)`, `U(3,2) = (5)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt U](arndt-u.md)
 
 ## Sources
 

@@ -15,7 +15,10 @@ associated with the vertex of `WMT(k)` at the same path. In particular every
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Wide Gen Cohn Tree](wide-gen-cohn-tree.md)
+- [Wide Gen Markov Tree](wide-gen-markov-tree.md)
 
 ## Sources
 

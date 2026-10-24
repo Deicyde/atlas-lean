@@ -12,7 +12,15 @@ lean: Cslib.Complexity.Path.decodeP_encodeP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode P](../path/decode-p.md)
+- [Encode P](../path/encode-p.md)
+
+## Proof depends on
+
+- [Decode E](../karp/part-01/color/decode-e.md)
+- [Decode E encode E](../karp/part-01/color/decode-e-encode-e.md)
+- [Encode E](../karp/part-01/color/encode-e.md)
+- [Read Unary Length](../../cook-levin/read-unary-length.md)
 
 ## Sources
 

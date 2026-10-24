@@ -12,7 +12,8 @@ Lemma 6: inclusion–exclusion for `β'_r`, `r ≥ 1`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Indicator](coprimality-indicator.md)
+- [Coprime Pair Count](coprime-pair-count.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ every entry `≥ 2`; junk otherwise.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Okounkov Poly](okounkov-poly.md)
+- [Q MZV](../part-02/q-mzv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

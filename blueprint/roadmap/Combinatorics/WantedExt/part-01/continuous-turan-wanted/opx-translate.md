@@ -11,7 +11,7 @@ Lemma 2.2: `opx(n, P)` is invariant under translating `P`. Stated for all real `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

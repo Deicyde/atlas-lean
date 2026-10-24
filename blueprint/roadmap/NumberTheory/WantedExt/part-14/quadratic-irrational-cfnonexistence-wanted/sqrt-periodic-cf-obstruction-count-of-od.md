@@ -15,7 +15,7 @@ and `A_m = A_{m-1} + 2A_{m-2}`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Periodic CF](has-periodic-cf.md)
 
 ## Sources
 

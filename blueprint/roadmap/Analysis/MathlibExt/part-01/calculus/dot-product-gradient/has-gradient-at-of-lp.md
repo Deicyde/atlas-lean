@@ -13,7 +13,7 @@ A Fréchet derivative `dotL g` on `ι → ℝ` is the gradient `g` in Mathlib's 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dot L](dot-l.md)
 
 ## Sources
 

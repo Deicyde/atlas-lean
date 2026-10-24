@@ -11,7 +11,12 @@ Remove empty productions, then unit productions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Eps Elim](eps-elim.md)
+- [Unit Elim](unit-elim.md)
 
 ## Sources
 

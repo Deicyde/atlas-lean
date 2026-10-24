@@ -11,7 +11,14 @@ The stacks of a quiescent state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [MS](ms.md)
+- [Γ](untitled.md)
+
+## Proof depends on
+
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

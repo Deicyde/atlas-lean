@@ -12,7 +12,13 @@ A vertex number in base 4: top digit `1`, and digit `q` is `1` exactly on the ed
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairs](../../part-01/clique/pairs.md)
+- [Touches](../subset-sum/touches.md)
+- [Vtx Num](../subset-sum/vtx-num.md)
+
+## Proof depends on
+
+- [Pair Digit](../subset-sum/pair-digit.md)
 
 ## Sources
 

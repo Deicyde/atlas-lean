@@ -11,7 +11,13 @@ The grammar `S → A | B`, `A → tᵢ A i | tᵢ i`, `B → bᵢ B i | bᵢ i`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Nt Sym](../cfgundecidable/nt-sym.md)
+- [Side Rules](../cfgundecidable/side-rules.md)
 
 ## Sources
 

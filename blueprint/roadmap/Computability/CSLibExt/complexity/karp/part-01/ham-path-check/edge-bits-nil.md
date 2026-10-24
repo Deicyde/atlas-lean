@@ -12,7 +12,7 @@ No edges, no bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Bits](../color/edge-bits.md)
 
 ## Sources
 

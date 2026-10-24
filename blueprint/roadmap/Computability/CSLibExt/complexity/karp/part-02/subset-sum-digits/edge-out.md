@@ -13,6 +13,10 @@ The edge numbers' output, for the pair bits listed from the last pair down.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Edge Enc](edge-enc.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.SubsetSumDigits](../../../../../../../sources/v2/CSLibExt.md)

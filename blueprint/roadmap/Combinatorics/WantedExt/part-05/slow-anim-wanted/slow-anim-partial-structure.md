@@ -12,7 +12,8 @@ a P-position, and a position whose number of odd stacks lies in `A` is an N-posi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Slow ANim Game](slow-anim-game.md)
 
 ## Sources
 

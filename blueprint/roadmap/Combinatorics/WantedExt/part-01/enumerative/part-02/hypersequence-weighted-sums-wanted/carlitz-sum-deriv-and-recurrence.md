@@ -13,7 +13,7 @@ for a complex variable `n` (the paper differentiates in `n`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

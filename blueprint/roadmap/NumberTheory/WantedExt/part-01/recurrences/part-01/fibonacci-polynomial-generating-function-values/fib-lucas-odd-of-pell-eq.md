@@ -13,7 +13,7 @@ Proposition 2.3: if `b ∣ a` and `P, Q ∈ ℕ` satisfy `P² - (a² + 4b) Q² =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

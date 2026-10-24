@@ -14,7 +14,8 @@ Every general qMZV `ζ_q(k₁, …, kᵣ; Q₁, …, Qᵣ) ∈ 𝒵_q` with `r �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q MZV](../part-02/q-mzv.md)
+- [Stanley Partitions](../part-02/stanley-partitions.md)
 
 ## Sources
 

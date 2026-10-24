@@ -12,7 +12,8 @@ Theorem 15: for a nonzero even exponent `r`, the consecutive
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Set](square-set.md)
+- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
 
 ## Sources
 

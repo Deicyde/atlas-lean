@@ -12,7 +12,7 @@ Corollary 2.10: if `P` has a rightmost column through `(x₀, y₀) ∈ P` and `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ At a solution of the ridge normal equations `(Xᵀ X + λ I) θ₀ = Xᵀ y`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ridge](ridge.md)
+
+## Proof depends on
+
+- [Rss](rss.md)
+- [Rss add](rss-add.md)
 
 ## Sources
 

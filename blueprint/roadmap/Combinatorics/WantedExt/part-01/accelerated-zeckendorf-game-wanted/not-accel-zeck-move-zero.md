@@ -12,7 +12,7 @@ The empty state admits no move.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accel Zeck Move](accel-zeck-move.md)
 
 ## Sources
 

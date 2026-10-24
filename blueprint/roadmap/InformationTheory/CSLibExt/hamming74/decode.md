@@ -13,6 +13,12 @@ The **decoder**: compute the syndrome and flip the bit it names.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [H](h.md)
+- [Table](table.md)
+- [Syndrome](../linear-code/syndrome.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Coding.Hamming74](../../../../sources/v2/CSLibExt.md)

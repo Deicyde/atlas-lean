@@ -12,7 +12,7 @@ Characteristic value: `495` is fixed in `D_3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Map](kaprekar-map.md)
 
 ## Sources
 

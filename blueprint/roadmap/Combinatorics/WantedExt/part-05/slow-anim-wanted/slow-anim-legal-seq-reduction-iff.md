@@ -11,7 +11,8 @@ Lemma 1: a sequence of moves is legal from `p` iff it is legal from its reductio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Legal Seq](slow-anim-legal-seq.md)
+- [Slow ANim Reduction](slow-anim-reduction.md)
 
 ## Sources
 

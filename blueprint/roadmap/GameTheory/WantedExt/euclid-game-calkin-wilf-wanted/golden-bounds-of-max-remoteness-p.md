@@ -14,7 +14,11 @@ the root `1/1` (a P-position with `0` moves in row `0`, and `1` lies in neither 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Calkin Wilf Row](calkin-wilf-row.md)
+- [Euclid Game](euclid-game.md)
+- [Euclid PPosition](euclid-pposition.md)
 
 ## Sources
 

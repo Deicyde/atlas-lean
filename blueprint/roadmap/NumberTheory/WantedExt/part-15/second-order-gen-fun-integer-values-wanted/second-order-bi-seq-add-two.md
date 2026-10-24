@@ -12,7 +12,12 @@ The defining recurrence on all of `ℤ`: `A_{n+2} = p A_{n+1} + A_n` for every i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Bi Seq](second-order-bi-seq.md)
+
+## Proof depends on
+
+- [Second Order Bwd](second-order-bwd.md)
+- [Second Order Fwd](second-order-fwd.md)
 
 ## Sources
 

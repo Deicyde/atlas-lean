@@ -13,7 +13,7 @@ Exact `ZMod p` specialization recovering ATLAS Definition 3.14.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Polynomial](is-primitive-polynomial.md)
 
 ## Sources
 

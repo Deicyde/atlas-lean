@@ -15,7 +15,9 @@ value `d - 1` equals the number of cylinders of `NIZ_k` with value `d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic Of Nat](zeck-adic-of-nat.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
+- [Zeck NIZ](zeck-niz.md)
 
 ## Sources
 

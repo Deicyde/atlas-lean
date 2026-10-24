@@ -13,7 +13,8 @@ pairwise disjoint. `Fin (l+1)` is the integer interval `[0,l]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Set](square-set.md)
+- [Unit Square Set](unit-square-set.md)
 
 ## Sources
 

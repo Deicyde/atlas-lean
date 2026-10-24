@@ -13,7 +13,7 @@ natural-number division).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ at the end of `X`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [K](k.md)
+- [Lab](lab.md)
+
+## Proof depends on
+
+- [Top Is Bit](top-is-bit.md)
 
 ## Sources
 

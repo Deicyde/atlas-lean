@@ -12,7 +12,8 @@ Inside `[lo, hi)`, the levels depend only on the levels inside.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Within](../bitonic/within.md)
+- [Levels](levels.md)
 
 ## Sources
 

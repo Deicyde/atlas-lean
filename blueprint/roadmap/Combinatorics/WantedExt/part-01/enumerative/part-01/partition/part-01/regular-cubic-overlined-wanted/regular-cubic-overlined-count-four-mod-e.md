@@ -12,7 +12,7 @@ For all `n ≥ 0`: `a_4(4n + 3) ≡ 0 (mod 8)`, `a_4(28n + 4j + 3) ≡ 0 (mod 56
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
 
 ## Sources
 

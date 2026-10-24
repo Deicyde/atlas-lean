@@ -14,7 +14,9 @@ For a positive rational `x`, the digit sequence `k ↦ [p^{-k}](x)` is periodic 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDelay](base-pdelay.md)
+- [Base PDigit](base-pdigit.md)
+- [Base PPeriod](base-pperiod.md)
 
 ## Sources
 

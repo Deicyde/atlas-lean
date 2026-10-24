@@ -13,7 +13,19 @@ derivable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [Derivable](derivable.md)
+- [Valid](../hoare/valid.md)
+
+## Proof depends on
+
+- [Entails](../hoare/entails.md)
+- [Big Step](../big-step/big-step.md)
+- [Strengthen](strengthen.md)
+- [State](../syntax/state.md)
+- [Derivable wlp](derivable-wlp.md)
+- [Wlp](../hoare/wlp.md)
 
 ## Sources
 

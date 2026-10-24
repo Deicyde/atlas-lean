@@ -11,7 +11,7 @@ The Trivial Lemma, part (i): for any constant `c`, `E - c` annihilates `{cˢ}_{s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Annihilates Seq](annihilates-seq.md)
 
 ## Sources
 

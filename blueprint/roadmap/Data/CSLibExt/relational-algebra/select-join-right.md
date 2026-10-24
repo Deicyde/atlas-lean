@@ -12,7 +12,17 @@ lean: Cslib.Databases.select_join_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond](cond.md)
+- [Attrs](attrs.md)
+- [Is Over](is-over-2.md)
+- [Tuple](tuple.md)
+- [Join](join.md)
+- [Select](select.md)
+
+## Proof depends on
+
+- [Join comm](join-comm.md)
+- [Selection pushdown](select-join-left.md)
 
 ## Sources
 

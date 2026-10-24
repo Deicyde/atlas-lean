@@ -12,7 +12,12 @@ placement, the `m`-weights over its block `P(F₀)` sum to `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chosen Level And Leftmost](is-chosen-level-and-leftmost.md)
+- [Is Singleton Board](is-singleton-board.md)
+- [File Placement Block](file-placement-block.md)
+- [File Placement Weight](file-placement-weight.md)
+- [File Placements](file-placements.md)
+- [Level Rook Placements](level-rook-placements.md)
 
 ## Sources
 

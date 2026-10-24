@@ -14,7 +14,11 @@ measure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zero One Loss](zero-one-loss.md)
+
+## Proof depends on
+
+- [Lintegral zero One Loss right](lintegral-zero-one-loss-right.md)
 
 ## Sources
 

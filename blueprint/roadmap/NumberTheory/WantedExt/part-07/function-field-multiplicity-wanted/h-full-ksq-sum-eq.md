@@ -12,7 +12,9 @@ Unfolding `∑_P K(P, h, j)^2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full K](h-full-k.md)
+- [H Full KSq Sum](h-full-ksq-sum.md)
+- [Monic Irreducible](monic-irreducible.md)
 
 ## Sources
 

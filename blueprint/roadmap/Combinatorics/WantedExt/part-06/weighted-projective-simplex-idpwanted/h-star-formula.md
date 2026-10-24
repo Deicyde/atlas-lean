@@ -15,6 +15,10 @@ independently defined Ehrhart-series condition.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weight Statistic](weight-statistic.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

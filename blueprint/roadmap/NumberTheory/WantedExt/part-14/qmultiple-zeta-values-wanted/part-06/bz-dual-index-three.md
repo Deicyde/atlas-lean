@@ -12,7 +12,7 @@ lean: MetaMathlibExt.bzDualIndex_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz Dual Index](bz-dual-index.md)
 
 ## Sources
 

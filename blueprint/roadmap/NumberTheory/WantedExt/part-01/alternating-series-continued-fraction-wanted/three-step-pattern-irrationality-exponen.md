@@ -14,7 +14,7 @@ lean: MetaMathlibExt.threeStepPattern_irrationalityExponent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Step Pattern Den](three-step-pattern-den.md)
 
 ## Sources
 

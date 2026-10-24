@@ -12,7 +12,11 @@ lean: MetaMathlibExt.opx_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
+
+## Proof depends on
+
+- [Point Set Contains Pattern](point-set-contains-pattern.md)
 
 ## Sources
 

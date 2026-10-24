@@ -12,7 +12,11 @@ lean: MetaMathlibExt.isPerfectPartition_seven
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Partition](is-perfect-partition.md)
+
+## Proof depends on
+
+- [Subpartition Count](subpartition-count.md)
 
 ## Sources
 

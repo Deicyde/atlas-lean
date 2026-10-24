@@ -12,7 +12,7 @@ natural `k` (the paper restricts to `k < p^{a-1}`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Cartier](laurent-cartier.md)
 
 ## Sources
 

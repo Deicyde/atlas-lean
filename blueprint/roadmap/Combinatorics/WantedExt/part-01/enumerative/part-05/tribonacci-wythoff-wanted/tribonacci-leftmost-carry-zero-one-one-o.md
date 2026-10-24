@@ -12,7 +12,7 @@ Carrying `0111 ↦ 1000`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Leftmost Carry](tribonacci-leftmost-carry.md)
 
 ## Sources
 

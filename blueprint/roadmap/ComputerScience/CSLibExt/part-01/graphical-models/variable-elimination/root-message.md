@@ -12,7 +12,11 @@ from the last one down, then read off the root's unary factor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](tree-model.md)
+
+## Proof depends on
+
+- [Eliminate](eliminate.md)
 
 ## Sources
 

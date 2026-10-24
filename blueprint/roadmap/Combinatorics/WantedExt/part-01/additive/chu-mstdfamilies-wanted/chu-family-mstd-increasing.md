@@ -12,7 +12,8 @@ Theorem 3: for every positive integer `k` and `M₁ ∈ {(1, 1, 2), (1, 1, 2, 1)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chu Block](chu-block.md)
+- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
 
 ## Sources
 

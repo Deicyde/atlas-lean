@@ -12,7 +12,9 @@ Weighted Cross weight at least `7`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Penult](placement-penult.md)
+- [Tak Has Road](tak-has-road.md)
+- [Weighted Cross Weight](weighted-cross-weight.md)
 
 ## Sources
 

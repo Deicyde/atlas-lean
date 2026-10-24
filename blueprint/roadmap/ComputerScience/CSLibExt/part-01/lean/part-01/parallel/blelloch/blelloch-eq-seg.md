@@ -13,7 +13,13 @@ lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.blelloch_eq_seg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Blelloch](blelloch.md)
+- [Seg](../prefix-sum/seg.md)
+
+## Proof depends on
+
+- [Pair Up](pair-up.md)
+- [Seg mul seg](../prefix-sum/seg-mul-seg.md)
 
 ## Sources
 

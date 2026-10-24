@@ -12,7 +12,7 @@ lean: MetaMathlibExt.polyElemSymm_of_natDegree_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Elem Symm](poly-elem-symm.md)
 
 ## Sources
 

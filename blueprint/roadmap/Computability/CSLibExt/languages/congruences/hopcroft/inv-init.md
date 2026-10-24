@@ -12,7 +12,17 @@ The invariants hold at the start.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv](inv.md)
+- [Init P](init-p.md)
+- [Init W](init-w.md)
+
+## Proof depends on
+
+- [Is Partition](is-partition.md)
+- [Rel](rel.md)
+- [Acc Block](acc-block.md)
+- [Rej Block](rej-block.md)
+- [Smaller](smaller.md)
 
 ## Sources
 

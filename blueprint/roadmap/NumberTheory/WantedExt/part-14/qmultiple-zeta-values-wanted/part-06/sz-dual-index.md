@@ -15,6 +15,11 @@ anti-automorphism of words with `τ̃(p) = y`, `τ̃(y) = p` (reverse the word, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sz Index Of Word Aux](../part-03/sz-index-of-word-aux.md)
+- [Sz Word](../part-03/sz-word.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

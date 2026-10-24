@@ -12,7 +12,7 @@ The one-part partition `(n)`, `n ≥ 1`, has `n` lit nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lit Nodes Increasing](lit-nodes-increasing.md)
 
 ## Sources
 

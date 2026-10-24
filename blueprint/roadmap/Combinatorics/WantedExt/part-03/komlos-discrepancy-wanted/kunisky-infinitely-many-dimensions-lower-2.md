@@ -11,7 +11,7 @@ Source: catalogue C24a, line 53, unverified exact finite-endpoint assertion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kunisky Infinitely Many Dimensions Lower Bound](kunisky-infinitely-many-dimensions-lower.md)
 
 ## Sources
 

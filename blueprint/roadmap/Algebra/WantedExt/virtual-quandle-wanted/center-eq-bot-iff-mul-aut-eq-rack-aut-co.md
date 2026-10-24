@@ -12,7 +12,7 @@ quandle automorphisms of `Conj G` (as sets of permutations of `G`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rack Aut](rack-aut.md)
 
 ## Sources
 

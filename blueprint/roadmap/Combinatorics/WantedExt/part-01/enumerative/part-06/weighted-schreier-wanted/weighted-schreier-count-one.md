@@ -11,7 +11,7 @@ First case of Theorem 1.2: `a_{1,1+ℓ} = F_{ℓ+2} + 1` for `ℓ ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Schreier Count](weighted-schreier-count.md)
 
 ## Sources
 

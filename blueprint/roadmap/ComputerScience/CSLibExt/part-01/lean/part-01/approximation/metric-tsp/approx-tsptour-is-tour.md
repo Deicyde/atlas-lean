@@ -12,7 +12,17 @@ The result is a tour.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+- [Is Spanning](is-spanning.md)
+- [Is Tour](is-tour.md)
+- [Approx TSPTour](approx-tsptour.md)
+
+## Proof depends on
+
+- [Preorder](preorder.md)
+- [Preorder Walk](preorder-walk.md)
+- [Preorder Walk Aux](preorder-walk-aux.md)
+- [Preorder Walk Aux ret](preorder-walk-aux-ret.md)
 
 ## Sources
 

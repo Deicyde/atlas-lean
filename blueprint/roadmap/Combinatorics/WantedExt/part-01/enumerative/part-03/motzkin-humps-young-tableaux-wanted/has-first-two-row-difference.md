@@ -14,6 +14,10 @@ faithfully states `λ₁ - λ₂ = k` without truncated subtraction.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tableau Row Length](tableau-row-length.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinHumpsYoungTableauxWanted](../../../../../../../sources/v2/WantedExt.md)

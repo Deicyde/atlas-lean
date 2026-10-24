@@ -14,7 +14,7 @@ Partial fractions: for real `x ∉ {0, …, k}`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

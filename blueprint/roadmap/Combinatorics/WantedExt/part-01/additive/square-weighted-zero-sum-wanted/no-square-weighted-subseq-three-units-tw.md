@@ -13,7 +13,8 @@ reduction to `(1,1,1)` imply that the three-term sequence has no
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
+- [Square Set](square-set.md)
 
 ## Sources
 

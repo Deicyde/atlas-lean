@@ -13,7 +13,7 @@ The odd clause is stated once in `watson_alternating_odd_zero`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Watson Alternating Cosecant Sum](watson-alternating-cosecant-sum.md)
 
 ## Sources
 

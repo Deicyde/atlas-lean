@@ -12,7 +12,8 @@ For `c₀ + d₀ ≠ 0`, `(c₀ e^t + d₀) z(t) = e^t - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+- [Landen Exp Variable](landen-exp-variable.md)
 
 ## Sources
 

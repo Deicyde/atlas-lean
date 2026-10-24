@@ -14,7 +14,11 @@ the stacks of `c`, each bottom first.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tr](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+
+## Proof depends on
+
+- [Init List eq init](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/init-list-eq-init.md)
 
 ## Sources
 

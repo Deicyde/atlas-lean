@@ -12,7 +12,9 @@ Updating a stack in the frame.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fr](fr.md)
+- [K](k.md)
+- [Γ](untitled.md)
 
 ## Sources
 

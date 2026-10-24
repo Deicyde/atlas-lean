@@ -12,7 +12,7 @@ Every set is affinely equivalent to itself (take `d = 1`, `s = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [ZMod Affinely Equivalent](zmod-affinely-equivalent.md)
 
 ## Sources
 

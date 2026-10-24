@@ -16,7 +16,8 @@ distinct arrangements of `λ` padded by zeros to length `m`), so the sum over
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Huang Small Part Placement](is-huang-small-part-placement.md)
+- [Composition Odd Minus Even](composition-odd-minus-even.md)
 
 ## Sources
 

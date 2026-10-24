@@ -18,7 +18,9 @@ equality of the computed values with the true positions; `r(1) ≠ 0`, so "other
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Letter Position](letter-position.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

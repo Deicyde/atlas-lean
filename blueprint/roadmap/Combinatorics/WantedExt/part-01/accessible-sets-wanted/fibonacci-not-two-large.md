@@ -11,7 +11,8 @@ Consequently, the positive Fibonacci set is not 2-large.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RLarge](is-rlarge.md)
+- [Positive Fibonacci Set](positive-fibonacci-set.md)
 
 ## Sources
 

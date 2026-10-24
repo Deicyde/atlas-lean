@@ -11,7 +11,11 @@ An independent dominating set of at most `K` vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Independent Dominating Set Instance](independent-dominating-set-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

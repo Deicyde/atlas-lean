@@ -11,7 +11,11 @@ The access cost of an online algorithm on a request sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online list-update algorithm on the items...](a-deterministic-online-list-update-algor.md)
+
+## Proof depends on
+
+- [Access Cost](access-cost.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ The `liminf` condition is written as: for every `δ > 0`, eventually
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pseudo Greedy Gap](pseudo-greedy-gap.md)
 
 ## Sources
 

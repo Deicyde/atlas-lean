@@ -11,7 +11,12 @@ The nonterminals reachable from `A` by unit productions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Nt List](nt-list.md)
+- [Unit Step](unit-step.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ covers `a` exactly `c` times, then it covers `a + x_{k+1}` exactly `2^j - c` tim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect MCover](is-perfect-mcover.md)
+- [Cover Count](cover-count.md)
 
 ## Sources
 

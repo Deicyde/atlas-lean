@@ -13,7 +13,9 @@ sets range over positive totals; this statement also covers the empty position, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Mod Four ABABHat](c4-mod-four-ababhat.md)
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
 
 ## Sources
 

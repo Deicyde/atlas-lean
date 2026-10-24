@@ -13,7 +13,20 @@ steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [Γ](untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
+
+## Proof depends on
+
+- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Xfer run](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

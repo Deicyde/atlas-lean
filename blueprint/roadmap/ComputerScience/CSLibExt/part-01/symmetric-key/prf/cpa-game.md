@@ -14,7 +14,11 @@ uniform; the game outputs whether the guess equals `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CPAAdversary](cpaadversary.md)
+
+## Proof depends on
+
+- [Cpa Guess](cpa-guess.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ formalized; only the outcome is stated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement First Player Wins](placement-first-player-wins.md)
+- [Tic Ended](tic-ended.md)
 
 ## Sources
 

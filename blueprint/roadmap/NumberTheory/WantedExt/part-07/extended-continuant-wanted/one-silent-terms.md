@@ -13,7 +13,7 @@ for the EA-generated SCF of the irrational `ᾱ`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

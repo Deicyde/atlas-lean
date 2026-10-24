@@ -12,7 +12,7 @@ injectivity on each orbit `𝔖_n(y)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascent To Descent Rearrangement](ascent-to-descent-rearrangement.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: Cslib.Decidability.not_tm2Recognizable_minimalCode
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimal Code](minimal-code.md)
+- [TM2 Recognizable](../basic/tm2-recognizable.md)
+
+## Proof depends on
+
+- [Desc Length](desc-length.md)
+- [Minimal codes are unbounded](exists-minimal-code-gt.md)
+- [Tm2 Recognizable iff re Pred](../basic/tm2-recognizable-iff-re-pred.md)
 
 ## Sources
 

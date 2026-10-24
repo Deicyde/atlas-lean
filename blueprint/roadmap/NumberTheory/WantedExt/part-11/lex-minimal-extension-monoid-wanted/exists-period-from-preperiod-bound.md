@@ -13,7 +13,8 @@ preperiod of `η̃`: the tail `(e_i)_{i > k m (m + 1) / 2}`, i.e. `η j` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lex Minimal Extension Of](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
+- [Max Average Indices](max-average-indices.md)
 
 ## Sources
 

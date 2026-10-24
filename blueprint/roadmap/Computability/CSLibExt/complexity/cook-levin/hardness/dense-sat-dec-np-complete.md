@@ -13,7 +13,16 @@ with polynomial-time many-one reductions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dense Sat Dec](../../dense-satin-np/dense-sat-dec.md)
+- [Poly Many One Red](../../../cook-levin/poly-many-one-red.md)
+- [Decision Complexity Class](../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../MathlibExt/complexity/decision-problem.md)
+- [NP](../../../../MathlibExt/complexity/np.md)
+
+## Proof depends on
+
+- [Every NP problem reduces to dense CNF-SAT](dense-sat-dec-np-hard.md)
+- [Dense CNF-SAT is in NP](../../dense-satin-np/dense-sat-dec-mem-np.md)
 
 ## Sources
 

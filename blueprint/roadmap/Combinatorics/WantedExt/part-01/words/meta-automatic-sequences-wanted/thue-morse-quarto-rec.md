@@ -13,7 +13,7 @@ The recurrences of `𝒬`: `𝒬(4n) = 𝒬(n)` and `𝒬(4n+1) = 1 - 𝒬(n)` f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thue Morse Quarto](thue-morse-quarto.md)
 
 ## Sources
 

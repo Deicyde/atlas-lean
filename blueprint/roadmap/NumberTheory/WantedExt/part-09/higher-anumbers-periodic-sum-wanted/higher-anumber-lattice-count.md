@@ -17,6 +17,11 @@ are taken in `[1, p^n]`, which loses nothing since `μ(i) ≥ ⌊τ i⌋ ≥ i` 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tower Gamma](tower-gamma.md)
+- [Tower Mu](tower-mu.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HigherANumbersPeriodicSumWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,11 @@ lean: MetaMathlibExt.degenerateStirlingSecond_zero_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Stirling Second](degenerate-stirling-second.md)
+
+## Proof depends on
+
+- [Degenerate Exp Series](degenerate-exp-series.md)
 
 ## Sources
 

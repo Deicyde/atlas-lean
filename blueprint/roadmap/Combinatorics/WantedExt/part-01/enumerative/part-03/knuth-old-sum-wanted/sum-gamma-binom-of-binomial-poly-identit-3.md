@@ -15,7 +15,7 @@ binom((p(2k)+v)/2, v/2)^{-1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

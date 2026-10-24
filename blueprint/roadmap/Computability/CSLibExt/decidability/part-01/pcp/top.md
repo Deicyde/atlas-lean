@@ -11,7 +11,7 @@ The concatenated top words of a sequence of dominoes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](domino.md)
 
 ## Sources
 

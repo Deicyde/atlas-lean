@@ -12,7 +12,11 @@ Characteristic value: the displacement normalizes the gauge so that `‖1‖_K =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stability Gauge](stability-gauge.md)
+
+## Proof depends on
+
+- [Stability Gauge Index](stability-gauge-index.md)
 
 ## Sources
 

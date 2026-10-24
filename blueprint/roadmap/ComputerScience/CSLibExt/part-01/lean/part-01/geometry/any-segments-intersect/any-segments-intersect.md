@@ -14,6 +14,11 @@ sweep.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Events](events.md)
+- [Sweep](sweep.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.AnySegmentsIntersect](../../../../../../../../sources/v2/CSLibExt.md)

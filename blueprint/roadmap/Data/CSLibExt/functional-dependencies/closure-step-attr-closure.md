@@ -12,7 +12,13 @@ The closure is a fixed point of a closure round.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+- [Attr Closure](attr-closure.md)
+- [Closure Step](closure-step.md)
+
+## Proof depends on
+
+- [Closure Loop](closure-loop.md)
 
 ## Sources
 

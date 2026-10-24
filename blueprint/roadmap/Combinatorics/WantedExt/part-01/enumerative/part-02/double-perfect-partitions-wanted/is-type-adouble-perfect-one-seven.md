@@ -13,7 +13,13 @@ from the perfect partition `(1^5)` of `5` by inserting the part `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
+
+## Proof depends on
+
+- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
+- [Is Perfect Partition](is-perfect-partition.md)
+- [Subpartition Count](subpartition-count.md)
 
 ## Sources
 

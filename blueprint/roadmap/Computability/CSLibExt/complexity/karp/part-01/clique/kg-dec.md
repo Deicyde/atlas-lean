@@ -11,7 +11,13 @@ The language of valid instances `(k, G)` satisfying `P k G`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Encode KG](encode-kg.md)
+- [Pairs](pairs.md)
+- [To Graph](to-graph.md)
 
 ## Sources
 

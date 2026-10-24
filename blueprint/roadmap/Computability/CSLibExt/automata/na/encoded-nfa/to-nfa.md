@@ -11,7 +11,7 @@ The Mathlib ε-NFA an encoding denotes, with states `ℕ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
 
 ## Sources
 

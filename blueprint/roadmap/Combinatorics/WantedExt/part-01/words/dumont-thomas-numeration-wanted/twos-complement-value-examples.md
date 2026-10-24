@@ -12,7 +12,7 @@ lean: MetaMathlibExt.twosComplementValue_examples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Twos Complement Value](twos-complement-value.md)
 
 ## Sources
 

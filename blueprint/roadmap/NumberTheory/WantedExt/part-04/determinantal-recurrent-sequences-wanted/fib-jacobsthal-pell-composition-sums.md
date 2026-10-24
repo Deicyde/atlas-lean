@@ -17,7 +17,9 @@ formalized (its weights are garbled in the extraction).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Pell Number Sequence](../../../MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ Literal routine `j` of situation `i` (`done` if `j` is out of range; never used 
 
 ## Depends on
 
-This node has no prerequisites.
+- [GL](gl.md)
+
+## Proof depends on
+
+- [LS](ls.md)
 
 ## Sources
 

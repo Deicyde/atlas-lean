@@ -12,7 +12,7 @@ itself, a blank as `pad`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
 
 ## Sources
 

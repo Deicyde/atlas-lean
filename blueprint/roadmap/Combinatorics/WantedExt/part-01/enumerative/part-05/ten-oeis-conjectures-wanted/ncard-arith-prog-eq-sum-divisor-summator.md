@@ -14,7 +14,7 @@ with `d ≥ 1` (`Set.IsAPOfLengthWith`), equals `∑_{m=0}^{n-1} D(m)` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is APOf Length With](../../../../../MathlibExt/part-01/ap/basic/is-apof-length-with.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ requires `b_i = p_i^{κ_i} > 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Indicator](b-free-indicator.md)
 
 ## Sources
 

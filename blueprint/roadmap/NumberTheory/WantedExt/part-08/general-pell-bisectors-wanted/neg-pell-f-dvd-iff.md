@@ -12,7 +12,7 @@ if and only if either `d = 2` and `n = 1`, or `m` is a multiple of `n` with odd 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
 
 ## Sources
 

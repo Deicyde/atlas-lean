@@ -13,7 +13,8 @@ Theorem 65: for a finite set `ℛ = {r_1 < ⋯ < r_ℓ}` of lengths `r_i ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

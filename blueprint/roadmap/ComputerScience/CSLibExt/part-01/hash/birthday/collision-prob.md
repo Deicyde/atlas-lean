@@ -13,6 +13,10 @@ The probability that `q` independent uniform samples from `α` contain a collisi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Collision Game](collision-game.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.Hash.Birthday](../../../../../../sources/v2/CSLibExt.md)

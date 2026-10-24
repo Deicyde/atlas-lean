@@ -21,7 +21,8 @@ Banach-Mazur game theorem (Oxtoby).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Banach Mazur AHas Winning Strategy](banach-mazur-ahas-winning-strategy.md)
+- [Banach Mazur BHas Winning Strategy](banach-mazur-bhas-winning-strategy.md)
 
 ## Sources
 

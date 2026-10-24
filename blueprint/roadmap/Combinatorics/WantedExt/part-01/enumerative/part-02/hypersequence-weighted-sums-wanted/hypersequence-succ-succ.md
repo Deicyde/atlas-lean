@@ -11,7 +11,7 @@ Theorem 2: `a^{(r+1)}_{n+1} = a^{(r+1)}_n + a^{(r)}_{n+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypersequence](hypersequence.md)
 
 ## Sources
 

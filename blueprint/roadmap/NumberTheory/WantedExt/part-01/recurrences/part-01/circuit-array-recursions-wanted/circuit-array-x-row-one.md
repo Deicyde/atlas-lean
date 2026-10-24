@@ -13,7 +13,7 @@ denominator `3·9^{s-2}X` is the row-`0` formula; Table 2 has `(3X - 1)/(3X - 3)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Array X](circuit-array-x.md)
 
 ## Sources
 

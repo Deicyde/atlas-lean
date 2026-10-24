@@ -14,6 +14,10 @@ proper superset `S' ⊆ [0, n]²` contains `P`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Point Set Contains Pattern](point-set-contains-pattern.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ContinuousTuranWanted](../../../../../sources/v2/WantedExt.md)

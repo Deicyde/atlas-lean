@@ -12,7 +12,8 @@ The odd composite numbers `n` whose strong pseudoprime bases do not form a subgr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strong Pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
+- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

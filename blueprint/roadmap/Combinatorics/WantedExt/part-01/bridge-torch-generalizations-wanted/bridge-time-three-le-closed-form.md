@@ -11,7 +11,7 @@ For `n ≥ 7`, `T₃(n) ≤ U(n) = n²/6 + 2n - 181/36 + (-1)ⁿ/4 - (2/9) cos(2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Time](bridge-time.md)
 
 ## Sources
 

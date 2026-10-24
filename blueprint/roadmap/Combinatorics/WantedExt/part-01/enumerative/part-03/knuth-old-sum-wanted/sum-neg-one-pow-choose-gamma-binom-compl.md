@@ -13,7 +13,7 @@ for even `n` and `0` for odd `n`, for real `v > -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

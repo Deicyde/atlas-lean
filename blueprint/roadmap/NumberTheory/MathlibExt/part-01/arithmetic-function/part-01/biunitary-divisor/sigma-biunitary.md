@@ -13,6 +13,10 @@ The sum of the biunitary divisors of `n`, written `σ**(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Biunitary Divisors](biunitary-divisors.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.BiunitaryDivisor](../../../../../../../sources/v2/MathlibExt.md)

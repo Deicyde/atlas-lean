@@ -12,7 +12,15 @@ lean: Cslib.Complexity.Karp.ColVerify.stepAux_mvP_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mv P](mv-p.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

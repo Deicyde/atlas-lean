@@ -12,7 +12,10 @@ Subword `DUD` in non-decreasing Dyck paths: `F_DUD(x, y)`, `D_DUD(x)`, and the c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Nondecreasing Dyck Subword Bivariate GF](nondecreasing-dyck-subword-bivariate-gf.md)
+- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
+- [Nondecreasing Dyck Subword Total GF](nondecreasing-dyck-subword-total-gf.md)
 
 ## Sources
 

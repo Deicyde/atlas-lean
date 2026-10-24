@@ -15,6 +15,12 @@ the norm-`q ^ f` fiber has `k` elements for even `f` and none for odd `f`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Card repr of shape](card-repr-of-shape.md)
+- [Inert even](inert-even.md)
+- [Inert odd](inert-odd.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZsqrtdNormFactorization](../../../../../sources/v2/MathlibExt.md)

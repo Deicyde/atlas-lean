@@ -14,7 +14,8 @@ which agrees with `SpragueGrundy.IsP euclidGame` by `euclidPPosition_eq_true_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Calkin Wilf Row](calkin-wilf-row.md)
+- [Euclid PPosition](euclid-pposition.md)
 
 ## Sources
 

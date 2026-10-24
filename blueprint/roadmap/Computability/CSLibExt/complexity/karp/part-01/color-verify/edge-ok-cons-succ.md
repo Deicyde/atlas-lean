@@ -12,7 +12,7 @@ An edge whose ends are both past the first color, seen from the second one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Ok](edge-ok.md)
 
 ## Sources
 

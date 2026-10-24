@@ -12,7 +12,11 @@ The index `ω(n)`: the least `k` with `LucasPeriodOrbitCloses params n k` (`0` w
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Lucas Period Orbit Closes](lucas-period-orbit-closes.md)
 
 ## Sources
 

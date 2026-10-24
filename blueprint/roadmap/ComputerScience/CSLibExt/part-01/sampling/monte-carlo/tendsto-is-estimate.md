@@ -13,7 +13,12 @@ converges almost surely to `∫ f d(ρ.withDensity w)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Estimate](is-estimate.md)
+
+## Proof depends on
+
+- [Integral weight mul](integral-weight-mul.md)
+- [The Monte Carlo estimator is consistent](tendsto-mc-estimate.md)
 
 ## Sources
 

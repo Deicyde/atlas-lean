@@ -13,7 +13,11 @@ squares of its proper unitary divisors `1, 3, 4, 5, 12, 15, 20`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unitary SZumkeller](is-unitary-szumkeller.md)
+
+## Proof depends on
+
+- [Unitary Divisors](../../../MathlibExt/part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

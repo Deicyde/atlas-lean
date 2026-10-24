@@ -11,7 +11,8 @@ Corollary 1: `Q^[N](n) = Q^[1](n) (V(n) - I_n)^{N-1}` for `N ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling QMatrix](stirling-qmatrix.md)
+- [Stirling VMatrix](stirling-vmatrix.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Characteristic value: `2` is the characteristic number of the Markov triple `(1,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Char Number](is-gen-markov-char-number.md)
 
 ## Sources
 

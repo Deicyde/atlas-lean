@@ -12,7 +12,7 @@ terms to the left of a negative term have the same strict sign.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Extra Trib](is-extra-trib.md)
 
 ## Sources
 

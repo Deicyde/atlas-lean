@@ -12,7 +12,7 @@ lean: MetaMathlibExt.coloredSchreierMultisetCount_small
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Schreier Multiset Count](colored-schreier-multiset-count.md)
 
 ## Sources
 

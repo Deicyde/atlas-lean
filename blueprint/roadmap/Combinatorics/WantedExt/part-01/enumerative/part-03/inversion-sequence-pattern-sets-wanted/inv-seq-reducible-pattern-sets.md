@@ -13,7 +13,7 @@ avoiding `C` avoids `τ`. The pairs are the record's bullets, one pair per liste
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Seq Contains Pattern](inv-seq-contains-pattern.md)
 
 ## Sources
 

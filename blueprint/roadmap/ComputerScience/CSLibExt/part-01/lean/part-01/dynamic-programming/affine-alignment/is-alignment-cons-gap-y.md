@@ -12,7 +12,8 @@ Prepending a gap-in-`xs` column preserves validity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+- [Is Alignment](../sequence-alignment/is-alignment.md)
 
 ## Sources
 

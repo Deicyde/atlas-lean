@@ -23,7 +23,7 @@ hypothesis unsatisfiable). The `αᵢ` are taken in `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product](../../../../RingTheory/MathlibExt/power-series/binomial-product/binomial-product.md)
 
 ## Sources
 

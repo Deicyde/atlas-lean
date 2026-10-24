@@ -11,7 +11,8 @@ Lemma 4: over `ℤ/6` and for `m > 1`, neither `F_{-1}` nor `F_1` is `m`-vanishi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MVanishing Family](is-mvanishing-family.md)
+- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
 
 ## Sources
 

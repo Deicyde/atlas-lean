@@ -11,7 +11,12 @@ Follow predecessors from `v` back to the source.
 
 ## Depends on
 
-This node has no prerequisites.
+- [AStar Result](astar-result.md)
+
+## Proof depends on
+
+- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Path To?](../../graph/shortest-path/dijkstra/path-to.md)
 
 ## Sources
 

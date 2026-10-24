@@ -12,7 +12,15 @@ lean: Cslib.Decidability.manyOneReducible_halts_regularDomain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts](halts.md)
+- [Regular Domain Code](regular-domain-code.md)
+
+## Proof depends on
+
+- [Exists code regular Red Fun](exists-code-regular-red-fun.md)
+- [The unary squares are not regular](not-is-regular-unary-lang-squares.md)
+- [Regular Red Fun](regular-red-fun.md)
+- [Unary Lang](unary-lang.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ For one block `(1, 1)`, the chain sum at `R = 2` is `∑_{m j = 2} j = 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz Chain Sum](../part-05/bz-chain-sum.md)
+- [Bz Chain Word](bz-chain-word.md)
 
 ## Sources
 

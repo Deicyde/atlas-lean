@@ -12,7 +12,12 @@ lean: MetaMathlibExt.lucasP_of_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas P](lucas-p.md)
+
+## Proof depends on
+
+- [Lucas Type Seq](lucas-type-seq.md)
+- [Lucas Type Seq get D succ](lucas-type-seq-get-d-succ.md)
 
 ## Sources
 

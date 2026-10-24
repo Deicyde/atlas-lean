@@ -15,6 +15,12 @@ The verifier: `x` decodes to `(n, es)`, every edge endpoint is below `n`, `w` ha
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Col](col.md)
+- [Ok Col](ok-col.md)
+- [Decode E](../color/decode-e.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.ColorVerify](../../../../../../../sources/v2/CSLibExt.md)

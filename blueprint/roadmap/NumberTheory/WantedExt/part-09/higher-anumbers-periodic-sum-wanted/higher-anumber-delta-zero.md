@@ -13,6 +13,10 @@ The variant `δ₀(i)`: `0` if `p ∣ i`, and `δ(i)` otherwise.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Higher ANumber Delta](higher-anumber-delta.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HigherANumbersPeriodicSumWanted](../../../../../sources/v2/WantedExt.md)

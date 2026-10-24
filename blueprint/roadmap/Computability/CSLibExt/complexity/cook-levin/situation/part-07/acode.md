@@ -11,7 +11,7 @@ The code of the halted configuration `haltList` reads: label `none`, state `init
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
 
 ## Sources
 

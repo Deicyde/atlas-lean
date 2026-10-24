@@ -12,7 +12,7 @@ The Pell–Lucas–Oresme convolution, for the odd Pell–Lucas numbers `Q_0 = Q
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Lucas Sequence](../../../MathlibExt/part-09/pell-lucas-sequence/pell-lucas-sequence.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ An instance that does not decode is rejected.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ham Check](ham-check.md)
+- [Decode P](../../../path/decode-p.md)
+
+## Proof depends on
+
+- [Decode W](decode-w.md)
+- [Ham Ok](ham-ok.md)
 
 ## Sources
 

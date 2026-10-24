@@ -14,7 +14,7 @@ of the result is a strong pseudoprime to base `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strong Pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ all three denominators are `±(s² - prs - r²) ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order MValue](second-order-mvalue.md)
 
 ## Sources
 

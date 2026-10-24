@@ -12,7 +12,12 @@ The half-cleaner has depth at most `1`: its comparators are disjoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth LE](depth-le.md)
+- [Half Cleaner](../bitonic/half-cleaner.md)
+
+## Proof depends on
+
+- [Levels](levels.md)
 
 ## Sources
 

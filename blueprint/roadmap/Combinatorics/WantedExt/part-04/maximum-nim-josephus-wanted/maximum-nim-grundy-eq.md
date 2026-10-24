@@ -14,7 +14,8 @@ each removal count is legal, so there is no mathematical deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim Grundy](maximum-nim-grundy.md)
+- [Maximum Nim Mex](maximum-nim-mex.md)
 
 ## Sources
 

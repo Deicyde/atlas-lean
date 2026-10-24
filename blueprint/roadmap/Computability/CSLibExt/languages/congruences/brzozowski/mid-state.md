@@ -14,6 +14,11 @@ The reachable subsets of the determinized reversal. The search runs at most
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reachable Within](../../../decidability/part-02/regular/reachable-within.md)
+- [Rev Det](rev-det.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.Brzozowski](../../../../../../sources/v2/CSLibExt.md)

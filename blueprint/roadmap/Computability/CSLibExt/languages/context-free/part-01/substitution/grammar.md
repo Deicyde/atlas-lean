@@ -11,7 +11,11 @@ The grammar of the substitution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Rules](rules.md)
 
 ## Sources
 

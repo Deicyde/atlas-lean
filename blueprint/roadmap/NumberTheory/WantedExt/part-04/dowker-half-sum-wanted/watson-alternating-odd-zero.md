@@ -12,7 +12,7 @@ This declaration also supplies the identical odd-vanishing clause in Theorem 6.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Watson Alternating Cosecant Sum](watson-alternating-cosecant-sum.md)
 
 ## Sources
 

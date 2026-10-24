@@ -12,7 +12,7 @@ lean: MetaMathlibExt.ulamWordCount_small
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ulam Word Count](ulam-word-count.md)
 
 ## Sources
 

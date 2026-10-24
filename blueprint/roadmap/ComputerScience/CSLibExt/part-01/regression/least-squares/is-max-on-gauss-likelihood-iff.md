@@ -13,7 +13,13 @@ if and only if it solves the normal equations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Likelihood](gauss-likelihood.md)
+
+## Proof depends on
+
+- [Gauss Likelihood le iff](gauss-likelihood-le-iff.md)
+- [Rss](rss.md)
+- [Least squares and the normal equations](rss-le-iff-normal.md)
 
 ## Sources
 

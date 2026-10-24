@@ -16,7 +16,7 @@ sums; the two digamma series converge absolutely.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Signed Sum](stride-signed-sum.md)
 
 ## Sources
 

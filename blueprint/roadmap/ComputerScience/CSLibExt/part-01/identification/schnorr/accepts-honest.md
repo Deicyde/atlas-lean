@@ -12,7 +12,9 @@ lean: Cslib.Crypto.Identification.Schnorr.accepts_honest
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accepts](accepts.md)
+- [Respond](respond.md)
+- [Gpow](../../public-key/diffie-hellman/gpow.md)
 
 ## Sources
 

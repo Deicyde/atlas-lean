@@ -13,6 +13,10 @@ lean: MetaMathlibExt.IsDenseInCubes
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lattice Cube](lattice-cube.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PiecewiseSyndeticWanted](../../../../../sources/v2/WantedExt.md)

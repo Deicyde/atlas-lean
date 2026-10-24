@@ -12,7 +12,17 @@ The bitonic sorter on `2 ^ k` wires has `k (k + 1) 2 ^ k / 4` comparators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bitonic Sorter](bitonic-sorter.md)
+
+## Proof depends on
+
+- [Within](within.md)
+- [Bitonic Merge](bitonic-merge.md)
+- [Bitonic Sort N](bitonic-sort-n.md)
+- [Half Cleaner](half-cleaner.md)
+- [Length bitonic Sort N](length-bitonic-sort-n.md)
+- [Of Pairs](of-pairs.md)
+- [Network](../zero-one/network.md)
 
 ## Sources
 

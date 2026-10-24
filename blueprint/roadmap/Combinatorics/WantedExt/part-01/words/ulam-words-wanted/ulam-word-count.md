@@ -13,6 +13,11 @@ The number `#U_n` of Ulam words of length `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Ulam Word](is-ulam-word.md)
+- [Ulam Word Aux](ulam-word-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.UlamWordsWanted](../../../../../../sources/v2/WantedExt.md)

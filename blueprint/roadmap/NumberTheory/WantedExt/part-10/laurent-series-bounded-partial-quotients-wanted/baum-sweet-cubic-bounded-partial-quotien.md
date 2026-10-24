@@ -12,7 +12,8 @@ bounded partial quotients (quoted result).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Has Bounded Partial Quotients](laurent-has-bounded-partial-quotients.md)
+- [Poly To Laurent Inv](poly-to-laurent-inv.md)
 
 ## Sources
 

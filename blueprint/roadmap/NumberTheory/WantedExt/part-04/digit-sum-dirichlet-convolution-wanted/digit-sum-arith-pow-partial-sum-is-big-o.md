@@ -12,7 +12,8 @@ For every integer `k ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Convolution Coeff](digit-convolution-coeff.md)
+- [Digit Sum Arith](digit-sum-arith.md)
 
 ## Sources
 

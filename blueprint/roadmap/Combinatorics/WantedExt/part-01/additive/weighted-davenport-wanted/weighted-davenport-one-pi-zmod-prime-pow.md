@@ -13,7 +13,7 @@ trivial group and is included).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

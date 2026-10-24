@@ -12,7 +12,7 @@ lean: MetaMathlibExt.larssonSetThree_examples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Larsson Set Three](larsson-set-three.md)
 
 ## Sources
 

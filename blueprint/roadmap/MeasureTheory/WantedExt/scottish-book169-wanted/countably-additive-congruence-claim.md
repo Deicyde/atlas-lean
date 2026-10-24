@@ -17,6 +17,11 @@ volume on measurable sets), with values in `[0, +∞]` (automatic for
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Congruence Invariant](is-congruence-invariant.md)
+- [Is Countably Additive](is-countably-additive.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.MeasureTheory.ScottishBook169Wanted](../../../../sources/v2/WantedExt.md)

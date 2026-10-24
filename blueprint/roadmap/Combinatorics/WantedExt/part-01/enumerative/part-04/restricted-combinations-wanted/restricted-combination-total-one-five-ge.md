@@ -12,7 +12,7 @@ Proposition 10: `∑ S^{1,5}_n x^n = (1+2x+2x^2+2x^3+2x^4+4x^5+3x^6+2x^7+x^8+x^9
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Combination Total](restricted-combination-total.md)
 
 ## Sources
 

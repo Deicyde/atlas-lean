@@ -15,7 +15,8 @@ topology); the sum over `i` is cut at `7^{2k+β-1}`, above the support of `y^{(2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garvan YOdd](garvan-yodd.md)
+- [Two Color Multiple Partition Count](two-color-multiple-partition-count.md)
 
 ## Sources
 

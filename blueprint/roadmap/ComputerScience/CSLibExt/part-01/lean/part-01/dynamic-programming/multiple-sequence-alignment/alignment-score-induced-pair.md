@@ -12,7 +12,14 @@ The induced pairwise score is the column sum of that pair's scores.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MSAlignment](msalignment.md)
+- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Column Score](../sequence-alignment/column-score.md)
+- [Induced Pair](induced-pair.md)
+
+## Proof depends on
+
+- [Alignment](../sequence-alignment/alignment.md)
 
 ## Sources
 

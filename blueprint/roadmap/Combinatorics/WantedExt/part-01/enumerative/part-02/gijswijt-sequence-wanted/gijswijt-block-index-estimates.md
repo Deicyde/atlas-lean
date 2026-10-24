@@ -13,7 +13,7 @@ strict when `n = m + 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block Index](gijswijt-block-index.md)
 
 ## Sources
 

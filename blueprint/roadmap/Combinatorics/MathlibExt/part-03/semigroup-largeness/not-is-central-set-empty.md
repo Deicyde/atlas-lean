@@ -12,7 +12,7 @@ The empty set is not central.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Central Set](is-central-set.md)
 
 ## Sources
 

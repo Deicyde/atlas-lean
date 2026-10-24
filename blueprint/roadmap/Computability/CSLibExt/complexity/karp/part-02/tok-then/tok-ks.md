@@ -11,7 +11,7 @@ The tokenizer's stacks, listed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](../../../sat-tokenizer/k.md)
 
 ## Sources
 

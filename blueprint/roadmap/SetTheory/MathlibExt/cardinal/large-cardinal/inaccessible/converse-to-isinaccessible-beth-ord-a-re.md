@@ -21,6 +21,10 @@ this does not promote a bare fixed point.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [A regular beth fixed point is uncountable: regularity gives...](a-regular-beth-fixed-point-is-uncountabl.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Cardinal.LargeCardinal.Inaccessible](../../../../../../sources/v2/MathlibExt.md)

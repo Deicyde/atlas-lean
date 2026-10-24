@@ -13,7 +13,15 @@ valid code of stack `k`'s own alphabet (`1 ≤ pu ≤ sz`), and it decodes to th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [Dec O](../part-01/dec-o.md)
+- [Pl](pl.md)
+- [Pu](pu.md)
+- [Res](../part-01/res.md)
+
+## Proof depends on
+
+- [Res pushed](res-pushed.md)
 
 ## Sources
 

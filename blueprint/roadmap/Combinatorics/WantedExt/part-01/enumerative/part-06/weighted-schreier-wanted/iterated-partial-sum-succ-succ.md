@@ -12,7 +12,11 @@ lean: MetaMathlibExt.iteratedPartialSum_succ_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated Partial Sum](iterated-partial-sum.md)
+
+## Proof depends on
+
+- [Seeded Partial Sums](seeded-partial-sums.md)
 
 ## Sources
 

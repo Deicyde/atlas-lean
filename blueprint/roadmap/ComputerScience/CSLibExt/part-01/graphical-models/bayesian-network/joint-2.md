@@ -11,7 +11,12 @@ The joint distribution of the network.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayes Net](bayes-net.md)
+
+## Proof depends on
+
+- [To Chain](to-chain.md)
+- [Joint](joint.md)
 
 ## Sources
 

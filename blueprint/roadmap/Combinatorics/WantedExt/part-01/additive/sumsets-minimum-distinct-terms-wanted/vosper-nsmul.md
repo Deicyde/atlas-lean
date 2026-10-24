@@ -12,7 +12,7 @@ Vosper's theorem for `h`-fold sumsets: if `A ⊆ ℤ_p`, `|A| = k ≥ 2`, `h ≥
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is APOf Length](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources
 

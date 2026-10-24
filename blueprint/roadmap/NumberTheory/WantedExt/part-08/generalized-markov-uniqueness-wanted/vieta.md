@@ -12,7 +12,7 @@ Proposition 2.7: if `(a, b, c)` is an induced solution of `GSME(k)`, then so are
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Induced Gen Second Markov Solution](is-induced-gen-second-markov-solution.md)
 
 ## Sources
 

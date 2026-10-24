@@ -13,7 +13,14 @@ endpoint's, and the edge passes iff it differs from `(a, b)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [Mv P](mv-p.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

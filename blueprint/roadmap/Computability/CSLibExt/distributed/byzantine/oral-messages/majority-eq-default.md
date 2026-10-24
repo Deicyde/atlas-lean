@@ -13,7 +13,7 @@ Without a value filling more than half of the multiset, the majority is `default
 
 ## Depends on
 
-This node has no prerequisites.
+- [Majority](majority.md)
 
 ## Sources
 

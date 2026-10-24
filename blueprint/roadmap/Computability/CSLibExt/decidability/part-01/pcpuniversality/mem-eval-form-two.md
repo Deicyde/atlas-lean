@@ -12,7 +12,12 @@ The interpretation of a form `u A v B x` with `u`, `v` and `x` terminal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
+
+## Proof depends on
+
+- [Eval Form append](../../../languages/context-free/part-01/basic/eval-form-append.md)
+- [Eval Form map terminal](../../../languages/context-free/part-01/basic/eval-form-map-terminal.md)
 
 ## Sources
 

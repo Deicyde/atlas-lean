@@ -15,7 +15,12 @@ value it sent (IC2).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Om](om.md)
+
+## Proof depends on
+
+- [Agreement](om-agree.md)
+- [Validity](om-valid.md)
 
 ## Sources
 

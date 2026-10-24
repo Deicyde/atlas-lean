@@ -13,7 +13,14 @@ message and all encryption randomness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decrypt](decrypt.md)
+- [Encrypt](encrypt.md)
+- [Public Key](public-key.md)
+
+## Proof depends on
+
+- [Correctness of Diffie–Hellman key agreement](../diffie-hellman/dh-agree.md)
+- [Gpow](../diffie-hellman/gpow.md)
 
 ## Sources
 

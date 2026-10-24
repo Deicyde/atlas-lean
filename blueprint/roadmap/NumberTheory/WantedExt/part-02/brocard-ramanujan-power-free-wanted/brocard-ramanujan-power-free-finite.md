@@ -12,7 +12,7 @@ finitely many solutions `(n, x)` with `x - 1` or `x + 1` a `k`-free number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Power Free](../../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources
 

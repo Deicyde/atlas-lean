@@ -12,7 +12,10 @@ The ELBO of a product distribution splits into a `q₁`-term and the entropy of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Elbo](elbo.md)
+- [Expected Log](expected-log.md)
+- [Prod Dist](prod-dist.md)
 
 ## Sources
 

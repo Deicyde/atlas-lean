@@ -12,7 +12,12 @@ lean: MetaMathlibExt.generalizedTau_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
+
+## Proof depends on
+
+- [Constant Coeff pentagonal Series int](constant-coeff-pentagonal-series-int.md)
+- [Is Unit pentagonal Series int](is-unit-pentagonal-series-int.md)
 
 ## Sources
 

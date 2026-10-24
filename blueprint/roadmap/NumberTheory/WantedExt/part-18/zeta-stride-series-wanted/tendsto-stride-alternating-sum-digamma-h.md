@@ -14,7 +14,7 @@ Digamma identity at `a = -1/2`: for `q, t ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Alternating Sum](stride-alternating-sum.md)
 
 ## Sources
 

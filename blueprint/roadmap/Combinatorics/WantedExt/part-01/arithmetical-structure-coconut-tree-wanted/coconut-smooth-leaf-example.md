@@ -15,7 +15,8 @@ smoothing at `v_1` and then at `v_{ℓ_4}` gives `d' = (2, 2, 2 | 2, 2, 3)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coconut Smooth Leaf](coconut-smooth-leaf.md)
+- [Coconut Smooth Path](coconut-smooth-path.md)
 
 ## Sources
 

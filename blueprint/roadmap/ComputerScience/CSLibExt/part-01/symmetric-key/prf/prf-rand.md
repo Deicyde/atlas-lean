@@ -11,7 +11,11 @@ The random world: the distinguisher queries a uniformly random function `X → Y
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+
+## Proof depends on
+
+- [Run](run.md)
 
 ## Sources
 

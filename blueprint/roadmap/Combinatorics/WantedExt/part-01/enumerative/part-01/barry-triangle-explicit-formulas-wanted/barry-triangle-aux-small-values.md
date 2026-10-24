@@ -12,7 +12,7 @@ Values from the paper's Table 1: `s(0, 2, 2) = 1`, `s(0, 4, 3) = 4`, `s(0, 6, 4)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Barry Triangle Aux](barry-triangle-aux.md)
 
 ## Sources
 

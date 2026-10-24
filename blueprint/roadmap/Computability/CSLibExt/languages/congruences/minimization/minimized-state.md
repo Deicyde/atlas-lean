@@ -11,7 +11,7 @@ The semantic state reached by a word in `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reachable Residuals](../minimality/reachable-residuals.md)
 
 ## Sources
 

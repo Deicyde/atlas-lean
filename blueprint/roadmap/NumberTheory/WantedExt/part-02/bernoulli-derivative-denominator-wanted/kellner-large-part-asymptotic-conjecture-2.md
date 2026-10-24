@@ -12,7 +12,8 @@ Conjecture 2 (ii) holds (Bordellès, Luca, Moree, and Shparlinski, with `κ = 2`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kellner Large Part Asymptotic Conjecture](kellner-large-part-asymptotic-conjecture.md)
+- [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
 
 ## Sources
 

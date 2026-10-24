@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Leaf Spanning Tree Instance](maximum-leaf-spanning-tree-instance.md)
 
 ## Sources
 

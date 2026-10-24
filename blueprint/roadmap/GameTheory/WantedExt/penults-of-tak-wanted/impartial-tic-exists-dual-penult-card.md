@@ -12,7 +12,8 @@ Tic on an `n × n` board with `x` tokens.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Penult](placement-penult.md)
+- [Tic Ended](tic-ended.md)
 
 ## Sources
 

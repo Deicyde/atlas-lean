@@ -12,7 +12,17 @@ lean: Cslib.Algorithms.Lean.Graph.MaxFlowMinCut.isFeasibleFlow_realFlow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../edmonds-karp/flow.md)
+- [Is Feasible](../edmonds-karp/is-feasible.md)
+- [Real Cap](real-cap.md)
+- [Real Flow](real-flow.md)
+- [Is Feasible Flow](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-feasible-flow.md)
+
+## Proof depends on
+
+- [Flow Value](../edmonds-karp/flow-value.md)
+- [Arc Flow](arc-flow.md)
+- [Sum real Flow sub](sum-real-flow-sub.md)
 
 ## Sources
 

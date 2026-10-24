@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Cut Instance](max-cut-instance.md)
 
 ## Sources
 

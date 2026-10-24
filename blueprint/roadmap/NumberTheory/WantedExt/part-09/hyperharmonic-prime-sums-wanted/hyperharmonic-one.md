@@ -12,7 +12,7 @@ First-order hyperharmonic numbers are the harmonic numbers: `h_n^{(1)} = H_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyperharmonic](hyperharmonic.md)
 
 ## Sources
 

@@ -17,7 +17,8 @@ Journal of Integer Sequences 29 (2026), Article 26.3.8, Lemma 6.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Residue Walk](gobel-residue-walk.md)
+- [Gobel Sequence](../../part-09/gobel-sequence-wanted/gobel-sequence.md)
 
 ## Sources
 

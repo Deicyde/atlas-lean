@@ -12,7 +12,7 @@ lean: MetaMathlibExt.polyElemSymm_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Elem Symm](poly-elem-symm.md)
 
 ## Sources
 

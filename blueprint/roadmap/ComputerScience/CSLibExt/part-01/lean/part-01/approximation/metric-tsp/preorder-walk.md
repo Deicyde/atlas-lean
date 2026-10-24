@@ -11,7 +11,11 @@ The preorder walk, one unit per vertex visited.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+
+## Proof depends on
+
+- [Preorder Walk Aux](preorder-walk-aux.md)
 
 ## Sources
 

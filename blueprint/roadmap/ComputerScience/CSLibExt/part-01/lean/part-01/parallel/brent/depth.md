@@ -11,7 +11,7 @@ The depth of a task: the number of tasks on a longest path ending at it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
 
 ## Sources
 

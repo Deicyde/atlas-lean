@@ -12,7 +12,13 @@ When no free proposer can propose, every proposer is held.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv](inv.md)
+- [State](state.md)
+- [Chooser](chooser.md)
+
+## Proof depends on
+
+- [Free](free.md)
 
 ## Sources
 

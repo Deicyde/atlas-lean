@@ -12,7 +12,7 @@ For a prime `p`, positive `i, l` with `l ≢ 1 (mod p)`, and `k ≥ p^i - 1`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

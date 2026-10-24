@@ -11,7 +11,13 @@ An item is sound when it codes `(A, i, j)` with `i ≤ j ≤ |w|` and `A` yieldi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Factor](factor.md)
+- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Yields](../../../languages/context-free/part-02/yields/yields.md)
 
 ## Sources
 

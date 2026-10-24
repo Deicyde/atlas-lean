@@ -12,7 +12,7 @@ A recognizer is unchanged when its accepting subset agrees on the image of the m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
 
 ## Sources
 

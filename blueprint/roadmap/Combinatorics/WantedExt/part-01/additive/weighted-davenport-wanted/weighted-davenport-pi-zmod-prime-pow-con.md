@@ -12,7 +12,7 @@ For a prime `p`, `1 ≤ a ≤ e` and `r ≥ 1`, every `A ⊆ {1, …, ⌈p^e/(p^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

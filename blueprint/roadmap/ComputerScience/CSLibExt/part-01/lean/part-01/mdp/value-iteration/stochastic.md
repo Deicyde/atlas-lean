@@ -11,7 +11,7 @@ Transition probabilities are nonnegative and each row sums to `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
 
 ## Sources
 

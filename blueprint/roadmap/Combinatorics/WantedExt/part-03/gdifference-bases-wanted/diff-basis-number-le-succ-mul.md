@@ -12,7 +12,7 @@ paper prints the factor `q`, obtained from the misprinted Lemma 4; its proof giv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diff Basis Number](diff-basis-number.md)
 
 ## Sources
 

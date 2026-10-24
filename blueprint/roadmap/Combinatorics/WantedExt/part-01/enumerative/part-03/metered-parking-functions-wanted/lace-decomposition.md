@@ -14,6 +14,10 @@ laces of consecutive entries, where a lace is `(p)` or `(p, p, p+1, …, p+ℓ-2
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lace Step](lace-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MeteredParkingFunctionsWanted](../../../../../../../sources/v2/WantedExt.md)

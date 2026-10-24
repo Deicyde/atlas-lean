@@ -13,7 +13,8 @@ Theorem 2 with denominators cleared: with `E_k = (q^k; q^k)_∞` and `g(0)` as a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [Triangular Theta Series](../../part-16/squares-triangular-representations-wanted/triangular-theta-series.md)
 
 ## Sources
 

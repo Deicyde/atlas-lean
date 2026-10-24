@@ -12,7 +12,7 @@ There is one Latin square of order zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Latin Square Count](latin-square-count.md)
 
 ## Sources
 

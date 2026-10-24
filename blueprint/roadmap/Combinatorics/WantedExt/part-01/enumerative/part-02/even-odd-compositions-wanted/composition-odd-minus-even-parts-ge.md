@@ -13,7 +13,7 @@ Theorem 8: for `k, n ≥ 1`, the signed count `b_{k,n}` of compositions of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Odd Minus Even](composition-odd-minus-even.md)
 
 ## Sources
 

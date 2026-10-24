@@ -14,6 +14,10 @@ lean: MetaMathlibExt.campbellH2
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Campbell H1](campbell-h1.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.SzuszVolkmannCounterexampleWanted](../../../../../../sources/v2/WantedExt.md)

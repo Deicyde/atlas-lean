@@ -11,7 +11,7 @@ Right symbols `inr (some b)` pass as `inl b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
 
 ## Sources
 

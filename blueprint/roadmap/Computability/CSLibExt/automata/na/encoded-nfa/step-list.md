@@ -11,7 +11,12 @@ One step on a list of states: the letter step, then the ε-closure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+
+## Proof depends on
+
+- [Closure](closure.md)
+- [Letter Step](letter-step.md)
 
 ## Sources
 

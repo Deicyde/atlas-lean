@@ -12,7 +12,7 @@ lean: MetaMathlibExt.campbellH1_small
 
 ## Depends on
 
-This node has no prerequisites.
+- [Campbell H1](campbell-h1.md)
 
 ## Sources
 

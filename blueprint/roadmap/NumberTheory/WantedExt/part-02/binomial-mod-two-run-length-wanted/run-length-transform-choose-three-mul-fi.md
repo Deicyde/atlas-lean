@@ -12,7 +12,7 @@ of the truncated Fibonacci sequence `1, 2, 3, 5, 8, …` (`Nat.fib (i + 2)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

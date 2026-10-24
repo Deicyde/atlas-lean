@@ -14,7 +14,7 @@ hypothesis because `M_0` is constant; this does not change an `atTop` asymptotic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Model Polynomial](model-polynomial.md)
 
 ## Sources
 

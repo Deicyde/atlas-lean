@@ -17,7 +17,8 @@ that is convex in the sense of Wilson is an absolute retract.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Absolute Retract](is-absolute-retract.md)
+- [Is Wilson Convex](is-wilson-convex.md)
 
 ## Sources
 

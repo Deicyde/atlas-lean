@@ -17,7 +17,8 @@ true value `29`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dasc Ddes GF](dasc-ddes-gf.md)
+- [Pattern3](pattern3.md)
 
 ## Sources
 

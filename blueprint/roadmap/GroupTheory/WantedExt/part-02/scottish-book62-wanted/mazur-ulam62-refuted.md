@@ -17,7 +17,7 @@ isomorphic to the integers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem62 Claim](scottish-book-problem62-claim.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Every stack holds bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k-2.md)
 
 ## Sources
 

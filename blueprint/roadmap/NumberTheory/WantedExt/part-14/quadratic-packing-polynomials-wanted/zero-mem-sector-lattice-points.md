@@ -12,7 +12,7 @@ The origin lies in every lattice sector `I(α)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sector Lattice Points](sector-lattice-points.md)
 
 ## Sources
 

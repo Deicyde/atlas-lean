@@ -11,7 +11,7 @@ Lemma 6: `4 + (4k + 4)i + (4kl + 4l + 4)j ∈ A` for `0 ≤ i ≤ l` and `0 ≤ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chu Family KLT](chu-family-klt.md)
 
 ## Sources
 

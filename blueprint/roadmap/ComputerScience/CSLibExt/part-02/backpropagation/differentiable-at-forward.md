@@ -13,7 +13,9 @@ their activations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Net](net.md)
+- [Diff Along](diff-along.md)
+- [Forward](forward.md)
 
 ## Sources
 

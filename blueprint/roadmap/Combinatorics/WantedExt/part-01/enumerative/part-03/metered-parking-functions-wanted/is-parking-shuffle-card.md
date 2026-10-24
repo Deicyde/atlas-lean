@@ -15,7 +15,7 @@ truncated `1^0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Shuffle](is-parking-shuffle.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.hasCancelingPartition_one_two_neg_one_neg_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Canceling Partition](has-canceling-partition.md)
 
 ## Sources
 

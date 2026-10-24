@@ -14,7 +14,7 @@ multiplicatively: `A_S · (1 - y² Q_S) = 1 + y P_S` with `P_S = ∑_{i ∈ S} x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt GF](arndt-gf.md)
 
 ## Sources
 

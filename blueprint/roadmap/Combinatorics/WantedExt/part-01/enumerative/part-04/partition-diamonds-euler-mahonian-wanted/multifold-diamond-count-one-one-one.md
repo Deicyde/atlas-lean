@@ -12,7 +12,7 @@ Small value: one single-fold diamond `a₁ ≤ a₂ ≤ a₃` with fold sum `1` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multifold Diamond Count](multifold-diamond-count.md)
 
 ## Sources
 

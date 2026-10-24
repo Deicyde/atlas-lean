@@ -12,7 +12,9 @@ cross terms in the `b_i`, `c_i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Sq B](c4-sq-b.md)
+- [C4 Sq C](c4-sq-c.md)
+- [C4 Sq D](c4-sq-d.md)
 
 ## Sources
 

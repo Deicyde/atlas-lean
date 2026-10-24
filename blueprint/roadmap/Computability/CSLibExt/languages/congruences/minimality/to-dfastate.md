@@ -13,7 +13,11 @@ in a nonminimal DFA.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](../nerode/nerode-class.md)
+
+## Proof depends on
+
+- [Representative](representative.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ Time bound: one iteration of the time loop.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [Row W](row-w.md)
+- [Clause B](clause-b.md)
 
 ## Sources
 

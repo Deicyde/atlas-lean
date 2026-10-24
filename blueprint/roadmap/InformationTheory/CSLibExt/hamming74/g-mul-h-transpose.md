@@ -21,7 +21,8 @@ theorem isSyndromeTable_table : IsSyndromeTable H 1 table := by
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
+- [H](h.md)
 
 ## Sources
 

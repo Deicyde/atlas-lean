@@ -13,7 +13,7 @@ each observation, the first maximizer in an enumeration of the classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Posterior Argmax](is-posterior-argmax.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ only if `χ(a) = χ(b)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Characteristic Number](characteristic-number.md)
+- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
 
 ## Sources
 

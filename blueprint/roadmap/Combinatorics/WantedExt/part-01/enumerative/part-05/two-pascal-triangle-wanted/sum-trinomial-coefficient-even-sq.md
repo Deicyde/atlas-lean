@@ -14,7 +14,7 @@ where `binom(n, n/2)_2` is read as `0` for odd `n` (the floor reading fails, e.g
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

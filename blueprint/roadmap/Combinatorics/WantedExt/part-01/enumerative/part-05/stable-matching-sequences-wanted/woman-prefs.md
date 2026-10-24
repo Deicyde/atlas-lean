@@ -12,7 +12,13 @@ The strict order on men induced by woman `j`'s ranking: `a` before `b` when
 
 ## Depends on
 
-This node has no prerequisites.
+- [WPrefs](../../../../../MathlibExt/part-01/matching/gale-shapley/wprefs.md)
+- [Preference Profile](preference-profile.md)
+
+## Proof depends on
+
+- [Strict Total Order](../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+- [Woman Rank](woman-rank.md)
 
 ## Sources
 

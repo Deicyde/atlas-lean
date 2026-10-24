@@ -12,7 +12,7 @@ Index `0` is `0` in the padded sequence and undefined in the unpadded one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
 
 ## Sources
 

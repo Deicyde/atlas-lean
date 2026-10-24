@@ -22,7 +22,7 @@ from the Scottish Book", Proc. Amer. Math. Soc. 110 (1990), 881–887).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem86 Claim](scottish-book-problem86-claim.md)
 
 ## Sources
 

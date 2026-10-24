@@ -12,7 +12,11 @@ The empty sequence is not good, so `goodSequenceProb Γ 0 = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Good Sequence Prob](good-sequence-prob.md)
+
+## Proof depends on
+
+- [Is Good Sequence](is-good-sequence.md)
 
 ## Sources
 

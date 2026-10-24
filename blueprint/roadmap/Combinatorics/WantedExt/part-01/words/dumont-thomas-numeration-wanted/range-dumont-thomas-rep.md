@@ -11,7 +11,9 @@ The image of `rep_u` is `⋃_{ℓ ∈ ℕ} ℒ_{ℓp+1}(𝒜_{η,s}) \ {0 W_min,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
+- [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
+- [Dumont Thomas Language](dumont-thomas-language.md)
 
 ## Sources
 

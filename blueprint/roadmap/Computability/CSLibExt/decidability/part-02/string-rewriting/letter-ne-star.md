@@ -44,7 +44,9 @@ theorem bottom_map_copyCard (u : List α) : bottom (u.map copyCard) = lift u := 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../part-01/pcp/sym.md)
+- [Letter](../../part-01/pcp/letter.md)
+- [Star](../../part-01/pcp/star.md)
 
 ## Sources
 

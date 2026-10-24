@@ -14,7 +14,7 @@ double-perfect.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
 
 ## Sources
 

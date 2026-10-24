@@ -12,7 +12,14 @@ A revision that shrinks the domain of `x` lowers the potential, even after reque
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+- [Potential](potential.md)
+- [Requeue](requeue.md)
+- [Revise](revise.md)
+
+## Proof depends on
+
+- [Indeg](indeg.md)
 
 ## Sources
 

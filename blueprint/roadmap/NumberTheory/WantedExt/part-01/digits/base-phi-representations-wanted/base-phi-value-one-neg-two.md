@@ -12,7 +12,7 @@ lean: MetaMathlibExt.basePhiValue_one_neg_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Value](base-phi-value.md)
 
 ## Sources
 

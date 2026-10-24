@@ -13,6 +13,11 @@ lean: MetaMathlibExt.catalanGrowthAreaDist
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Area Dist](area-dist.md)
+- [Catalan Growth Words](catalan-growth-words.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CatalanWordsCapacityWanted](../../../../../../../sources/v2/WantedExt.md)

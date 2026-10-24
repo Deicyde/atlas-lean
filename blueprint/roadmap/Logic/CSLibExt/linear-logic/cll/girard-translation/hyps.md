@@ -13,6 +13,10 @@ The hypotheses of a context, as a CLL sequent of `?`-propositions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hyp](hyp.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.LinearLogic.CLL.GirardTranslation](../../../../../../sources/v2/CSLibExt.md)

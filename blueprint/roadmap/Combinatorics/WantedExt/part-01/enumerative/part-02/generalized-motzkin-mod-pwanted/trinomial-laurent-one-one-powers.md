@@ -13,7 +13,7 @@ computational bridge is used only to prove the three requested finite characteri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Laurent](trinomial-laurent.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ the product over monic irreducible `P` (Equation (53)).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Monic Irreducible](monic-irreducible.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

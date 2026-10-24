@@ -77,7 +77,7 @@ theorem mtf_step {M L : List α} (hnd : M.Nodup) (hL : L.Perm M) {x : α} (hx : 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mtf](mtf.md)
 
 ## Sources
 

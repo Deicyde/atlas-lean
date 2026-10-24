@@ -12,7 +12,8 @@ For `k ≥ 1` let `U_k(n) = #{0 ≤ j < n : |F_k^{-1}({j})| = 1}`. For `n > 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof L](hof-l.md)
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

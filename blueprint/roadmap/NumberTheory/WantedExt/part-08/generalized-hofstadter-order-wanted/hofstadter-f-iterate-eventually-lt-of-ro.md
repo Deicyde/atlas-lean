@@ -11,7 +11,7 @@ If `α_k^j < α_{k'}^{j'}` (`k, k' ≥ 1`, `j, j' ≥ 0`), then `F_k^j <_∞ F_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

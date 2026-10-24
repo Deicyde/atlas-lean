@@ -12,7 +12,11 @@ The empty digit list represents `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tribonacci Repr](is-tribonacci-repr.md)
+
+## Proof depends on
+
+- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ is accepted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+
+## Proof depends on
+
+- [Accepts B](accepts-b.md)
+- [States](../../../automata/da/encoded-dfa/states.md)
+- [Words Of Length](words-of-length.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ For even `b ≤ -12` and `0 < v < 2b²` there are `0 ≤ w < v` and `0 ≤ c ≤
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
 
 ## Sources
 

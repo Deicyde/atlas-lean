@@ -15,7 +15,10 @@ Gauss's formula for `r₃(n)` as reformulated by Aygin and Williams: writing
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Class Number](gauss-class-number.md)
+- [Kronecker Class Multiplier](kronecker-class-multiplier.md)
+- [Kronecker Discriminant](kronecker-discriminant.md)
+- [Three Square Representation Count](../../../../MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
 
 ## Sources
 

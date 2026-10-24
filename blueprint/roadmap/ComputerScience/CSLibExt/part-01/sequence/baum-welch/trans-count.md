@@ -11,7 +11,12 @@ The expected number of transitions `s → s'`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid HMM](valid-hmm.md)
+
+## Proof depends on
+
+- [P Trans](p-trans.md)
+- [Post](post.md)
 
 ## Sources
 

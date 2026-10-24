@@ -12,7 +12,9 @@ Rows and columns of `(4, 4, 3, 1)`: `λ = (4, 4, 3, 1)` and `λ' = (4, 3, 3, 2)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition4431](partition4431.md)
+- [Partition Col Len](partition-col-len.md)
+- [Partition Row Len](partition-row-len.md)
 
 ## Sources
 

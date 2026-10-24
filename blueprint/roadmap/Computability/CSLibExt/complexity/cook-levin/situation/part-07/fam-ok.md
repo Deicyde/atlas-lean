@@ -11,7 +11,13 @@ Every clause of `φ` is a dense clause over `V` variables with faithful literals
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Dense Clause](../../family/dense-clause.md)
+- [Faithful](faithful.md)
+- [Clause](../../../dense-sat/clause.md)
 
 ## Sources
 

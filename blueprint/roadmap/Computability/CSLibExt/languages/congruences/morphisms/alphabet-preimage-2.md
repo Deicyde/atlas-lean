@@ -12,7 +12,13 @@ Regular languages are closed under alphabet preimages.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alphabet Preimage](alphabet-preimage.md)
+
+## Proof depends on
+
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Finite syntactic Monoid alphabet Preimage](finite-syntactic-monoid-alphabet-preimag.md)
+- [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources
 

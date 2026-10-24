@@ -11,7 +11,11 @@ Finite sequences of heap small steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HConfig](hconfig.md)
+
+## Proof depends on
+
+- [HStep](hstep.md)
 
 ## Sources
 

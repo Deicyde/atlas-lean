@@ -13,7 +13,7 @@ This is the extremal positive five-element example used in Theorem 10.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources
 

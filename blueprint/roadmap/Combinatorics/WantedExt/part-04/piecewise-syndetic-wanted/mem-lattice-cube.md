@@ -12,7 +12,7 @@ Membership in a lattice cube, coordinatewise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Cube](lattice-cube.md)
 
 ## Sources
 

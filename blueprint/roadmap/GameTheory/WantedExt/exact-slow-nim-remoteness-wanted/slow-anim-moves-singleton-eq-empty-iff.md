@@ -14,7 +14,11 @@ M-rule recursion, avoiding the powerset enumeration in `slowANimMoves`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Moves](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
+
+## Proof depends on
+
+- [Slow ANim After](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
 
 ## Sources
 

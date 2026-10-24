@@ -12,7 +12,9 @@ Theorem 4: if `n₀` has the property of Proposition 4 (`N(π_{n+1})^{ℓ+1} < N
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quad Prime Norm](quad-prime-norm.md)
+- [Quad Primorial Norm](quad-primorial-norm.md)
+- [Quad Schatunowsky Set](quad-schatunowsky-set.md)
 
 ## Sources
 

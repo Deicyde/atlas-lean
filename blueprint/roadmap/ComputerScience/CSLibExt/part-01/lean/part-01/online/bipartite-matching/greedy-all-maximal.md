@@ -12,7 +12,19 @@ lean: Cslib.Algorithms.Lean.Online.BipartiteMatching.greedyAll_maximal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Free](../../graph/bipartite-matching/free.md)
+- [Greedy All](greedy-all.md)
+
+## Proof depends on
+
+- [Valid](../../graph/bipartite-matching/valid.md)
+- [Done](done.md)
+- [Greedy](greedy.md)
+- [Greedy Arr](greedy-arr.md)
+- [Greedy spec](greedy-spec.md)
+- [Step](step.md)
+- [Step Arr](step-arr.md)
+- [To Fun](to-fun.md)
 
 ## Sources
 

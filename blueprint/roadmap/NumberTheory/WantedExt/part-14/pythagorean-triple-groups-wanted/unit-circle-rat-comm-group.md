@@ -17,7 +17,7 @@ fraction representatives and hold automatically in `ℚ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Circle Rat Mul](unit-circle-rat-mul.md)
 
 ## Sources
 

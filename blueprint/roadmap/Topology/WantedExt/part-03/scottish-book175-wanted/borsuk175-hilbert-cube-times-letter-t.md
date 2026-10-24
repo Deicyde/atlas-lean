@@ -18,7 +18,8 @@ R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Hilbert Cube](scottish-book-hilbert-cube.md)
+- [Scottish Book Letter T](scottish-book-letter-t.md)
 
 ## Sources
 

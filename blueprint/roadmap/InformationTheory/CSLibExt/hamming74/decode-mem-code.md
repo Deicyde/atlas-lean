@@ -12,7 +12,14 @@ The decoder always outputs a codeword.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Decode](decode.md)
+- [Linear Code](../linear-code/linear-code.md)
+
+## Proof depends on
+
+- [H](h.md)
+- [Syndrome](../linear-code/syndrome.md)
 
 ## Sources
 

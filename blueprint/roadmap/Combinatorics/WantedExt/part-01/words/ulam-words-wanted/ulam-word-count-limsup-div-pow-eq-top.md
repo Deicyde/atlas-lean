@@ -13,7 +13,7 @@ the constant of the paper's proof (`n₁ = 30`); stated as: for every `C` and `N
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ulam Word Count](ulam-word-count.md)
 
 ## Sources
 

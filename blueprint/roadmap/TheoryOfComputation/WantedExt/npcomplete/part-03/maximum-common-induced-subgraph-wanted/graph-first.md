@@ -11,7 +11,11 @@ The first graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Common Induced Subgraph Instance](maximum-common-induced-subgraph-instance.md)
+
+## Proof depends on
+
+- [Edge Graph](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Lower bound construction: for fixed `g ≥ 1` there are sets `A_n ⊆ [n]` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sub Rep Count](sub-rep-count.md)
 
 ## Sources
 

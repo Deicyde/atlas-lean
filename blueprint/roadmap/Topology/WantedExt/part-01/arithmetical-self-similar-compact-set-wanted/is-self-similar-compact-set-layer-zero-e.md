@@ -15,7 +15,8 @@ type `ω^ω` (its indices in `K` are `0` and the successor ordinals below `ω^ω
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
+- [Self Similar Layer](self-similar-layer.md)
 
 ## Sources
 

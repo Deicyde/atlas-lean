@@ -12,7 +12,8 @@ Unfolding `H_{N_h,S_ℓ}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full Free Euler H](h-full-free-euler-h.md)
+- [Monic Irreducible](monic-irreducible.md)
 
 ## Sources
 

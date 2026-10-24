@@ -11,7 +11,12 @@ Window symbol code of situation `i` on stack `k` at depth `j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](enc.md)
+
+## Proof depends on
+
+- [G](g.md)
+- [Depth](depth.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Into Triangles Instance](partition-into-triangles-instance.md)
 
 ## Sources
 

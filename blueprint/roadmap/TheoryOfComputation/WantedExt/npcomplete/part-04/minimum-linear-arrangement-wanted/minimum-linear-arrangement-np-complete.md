@@ -12,7 +12,11 @@ lean: MetaMathlibExt.Complexity.NPComplete.MinimumLinearArrangement.minimumLinea
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Many One Red](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
+- [Minimum Linear Arrangement Dec](minimum-linear-arrangement-dec.md)
+- [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
+- [NP](../../../../../Computability/MathlibExt/complexity/np.md)
 
 ## Sources
 

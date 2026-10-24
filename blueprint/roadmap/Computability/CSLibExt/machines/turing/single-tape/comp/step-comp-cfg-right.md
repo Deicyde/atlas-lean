@@ -13,7 +13,7 @@ The composite steps from a configuration of the second machine as the second mac
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Cfg Right](comp-cfg-right.md)
 
 ## Sources
 

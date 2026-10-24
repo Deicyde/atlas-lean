@@ -11,7 +11,7 @@ A `k`-cut with at least `K` edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max KCut Instance](max-kcut-instance.md)
 
 ## Sources
 

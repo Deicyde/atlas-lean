@@ -12,7 +12,7 @@ For `n = 0` the two curves coincide, so the area is `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cos Pow Area](cos-pow-area.md)
 
 ## Sources
 

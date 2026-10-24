@@ -14,6 +14,11 @@ the boundary edges are set to the variable `X_m`, so that `C^M_{2(m-1),m} = X_m`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Circuit Array Of](circuit-array-of.md)
+- [Circuit Var](circuit-var.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.CircuitArrayRecursionsWanted](../../../../../../../sources/v2/WantedExt.md)

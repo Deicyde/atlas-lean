@@ -12,7 +12,7 @@ The source deduces this from the `ℚ`-linear independence of the functions `i^j
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cotangent Power Coeff](cotangent-power-coeff.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ Characteristic value: for `s = r`, `L(t; r) = U(t; r) = κ_r(t)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer Kappa](lehmer-kappa.md)
+- [Lehmer Lower](lehmer-lower.md)
+- [Lehmer Upper](lehmer-upper.md)
+
+## Proof depends on
+
+- [Lehmer Completions](lehmer-completions.md)
+- [Lehmer Completions length](lehmer-completions-length.md)
 
 ## Sources
 

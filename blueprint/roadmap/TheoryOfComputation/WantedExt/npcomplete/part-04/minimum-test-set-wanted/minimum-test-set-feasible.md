@@ -11,7 +11,7 @@ At most `K` tests distinguishing every pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Test Set Instance](minimum-test-set-instance.md)
 
 ## Sources
 

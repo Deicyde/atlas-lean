@@ -12,7 +12,16 @@ lean: Cslib.Kolmogorov.rePred_K_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+
+## Proof depends on
+
+- [K le](../basic/k-le.md)
+- [The universal description method](../basic/u.md)
+- [Exists length eq K](../basic/exists-length-eq-k.md)
+- [Re Pred mem U](re-pred-mem-u.md)
+- [And](../../../MathlibExt/re/and-2.md)
+- [Exists](../../../MathlibExt/re/exists.md)
 
 ## Sources
 

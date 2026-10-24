@@ -12,7 +12,8 @@ lean: MetaMathlibExt.garvanYOdd_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garvan X](garvan-x.md)
+- [Garvan YOdd](garvan-yodd.md)
 
 ## Sources
 

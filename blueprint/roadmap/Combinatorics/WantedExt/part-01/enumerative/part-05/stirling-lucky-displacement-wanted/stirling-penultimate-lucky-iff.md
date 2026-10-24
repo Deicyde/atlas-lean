@@ -11,7 +11,8 @@ For `w ∈ Q_n`, car `2n - 1` is lucky if and only if `w(2n - 1) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Stirling Lucky Set](stirling-lucky-set.md)
 
 ## Sources
 

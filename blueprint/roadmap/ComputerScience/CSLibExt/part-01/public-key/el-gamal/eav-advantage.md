@@ -11,7 +11,11 @@ The advantage `|Pr[A wins] - 1/2|` of an eavesdropper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adversary](adversary.md)
+
+## Proof depends on
+
+- [Eav Game](eav-game.md)
 
 ## Sources
 

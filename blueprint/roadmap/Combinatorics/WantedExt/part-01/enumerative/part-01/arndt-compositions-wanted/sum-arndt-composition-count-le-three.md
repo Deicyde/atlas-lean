@@ -13,7 +13,8 @@ composition for `n = 0`, is the Padovan number `P(n)` (`P(0) = P(1) = P(2) = 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](arndt-composition-count.md)
+- [Shifted Padovan Sequence](../../../../../../NumberTheory/MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: MetaMathlibExt.bronzeCompanionSecond_add_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bronze Companion Second](bronze-companion-second.md)
+
+## Proof depends on
+
+- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas U bronze Lucas Params add two](lucas-u-bronze-lucas-params-add-two.md)
 
 ## Sources
 

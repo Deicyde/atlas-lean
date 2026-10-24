@@ -14,7 +14,8 @@ paper's ambient convention `n ≥ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Weighted Zero Sum](has-weighted-zero-sum.md)
+- [Square Set](square-set.md)
 
 ## Sources
 

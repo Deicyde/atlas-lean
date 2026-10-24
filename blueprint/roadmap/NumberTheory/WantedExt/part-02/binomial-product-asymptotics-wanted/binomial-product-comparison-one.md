@@ -12,7 +12,7 @@ lean: MetaMathlibExt.binomialProductComparison_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product Comparison](binomial-product-comparison.md)
 
 ## Sources
 

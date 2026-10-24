@@ -13,6 +13,10 @@ The major index `maj(τ) = ∑_{j ∈ Des(τ)} j`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perm Descent Set](perm-descent-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PartitionDiamondsEulerMahonianWanted](../../../../../../../sources/v2/WantedExt.md)

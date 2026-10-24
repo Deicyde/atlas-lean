@@ -16,7 +16,9 @@ are infinitely many `b`-repunit Sierpiński numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Prime Divisor](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
+- [Is Sierpinski Number](is-sierpinski-number.md)
+- [Repstring](repstring.md)
 
 ## Sources
 

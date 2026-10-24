@@ -12,7 +12,16 @@ lean: MetaMathlibExt.hFreeOmegaOneB_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Free Omega One B](h-free-omega-one-b.md)
+
+## Proof depends on
+
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [Fixed Degree Monic zero](fixed-degree-monic-zero.md)
+- [H Free](h-free.md)
+- [Omega Mult](omega-mult.md)
+- [Omega Mult one](omega-mult-one.md)
+- [One mem h Free](one-mem-h-free.md)
 
 ## Sources
 

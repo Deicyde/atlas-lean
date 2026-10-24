@@ -13,7 +13,8 @@ Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Notation 2 (`x_N`, `x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime To PDen](prime-to-pden.md)
+- [Prime To PNum](prime-to-pnum.md)
 
 ## Sources
 

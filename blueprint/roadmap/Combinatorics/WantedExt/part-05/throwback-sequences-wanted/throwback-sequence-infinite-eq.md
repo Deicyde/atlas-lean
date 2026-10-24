@@ -12,7 +12,7 @@ often in the throwback sequence `T(X)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Throwback Sequence](throwback-sequence.md)
 
 ## Sources
 

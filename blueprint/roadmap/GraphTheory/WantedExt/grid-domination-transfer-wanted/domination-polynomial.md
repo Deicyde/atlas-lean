@@ -14,6 +14,10 @@ dominating sets `S` (canonical `SimpleGraph.IsDominating`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Dominating](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-02/domination/is-dominating.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.GridDominationTransferWanted](../../../../sources/v2/WantedExt.md)

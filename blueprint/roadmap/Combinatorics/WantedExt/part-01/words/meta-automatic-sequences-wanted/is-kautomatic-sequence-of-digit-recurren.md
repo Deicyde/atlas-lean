@@ -18,7 +18,7 @@ shifts use natural subtraction, so for `n < a` the first arguments are truncated
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KAutomatic Sequence](../../../../MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
 
 ## Sources
 

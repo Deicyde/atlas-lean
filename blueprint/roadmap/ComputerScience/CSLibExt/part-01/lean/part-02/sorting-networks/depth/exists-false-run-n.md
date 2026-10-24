@@ -13,7 +13,12 @@ first wire of each comparator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Within](../bitonic/within.md)
+- [Run N](../bitonic/run-n.md)
+
+## Proof depends on
+
+- [Cmp](../bitonic/cmp.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ The block `K_n = h^n(1)`, so `K₀ = 1`, `K₁ = 110`, `K₂ = 11011011`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kimberling Morphism](kimberling-morphism.md)
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.IrvineConjectureWanted](../../../../../../sources/v2/WantedExt.md)

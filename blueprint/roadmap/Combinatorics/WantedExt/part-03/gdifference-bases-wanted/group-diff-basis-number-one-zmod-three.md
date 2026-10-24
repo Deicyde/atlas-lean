@@ -12,7 +12,11 @@ lean: MetaMathlibExt.groupDiffBasisNumber_one_zmod_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Diff Basis Number](group-diff-basis-number.md)
+
+## Proof depends on
+
+- [Sub Rep Count](sub-rep-count.md)
 
 ## Sources
 

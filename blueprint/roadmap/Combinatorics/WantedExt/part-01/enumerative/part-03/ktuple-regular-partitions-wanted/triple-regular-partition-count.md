@@ -13,6 +13,10 @@ The paper's abbreviation `T_ℓ(n) = T_{ℓ,3}(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [K Tuple Regular Partition Count](k-tuple-regular-partition-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KTupleRegularPartitionsWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,12 @@ Each proposal advances exactly one proposer's count, so `∑ m, next m` counts t
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Propose](propose.md)
+
+## Proof depends on
+
+- [New Holder](new-holder.md)
 
 ## Sources
 

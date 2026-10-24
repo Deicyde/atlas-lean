@@ -12,7 +12,13 @@ lean: MetaMathlibExt.gijswijtBlock_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block](gijswijt-block.md)
+
+## Proof depends on
+
+- [Curling Number](curling-number.md)
+- [Curling Number nil](curling-number-nil.md)
+- [Gijswijt Prefix](gijswijt-prefix.md)
 
 ## Sources
 

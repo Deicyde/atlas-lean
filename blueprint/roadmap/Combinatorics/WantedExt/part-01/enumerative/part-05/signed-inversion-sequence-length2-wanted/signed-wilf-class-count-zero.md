@@ -12,7 +12,12 @@ lean: MetaMathlibExt.signedWilfClassCount_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Wilf Class Count](signed-wilf-class-count.md)
+
+## Proof depends on
+
+- [Signed Pattern2](signed-pattern2.md)
+- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
 
 ## Sources
 

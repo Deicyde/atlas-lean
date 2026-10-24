@@ -13,7 +13,15 @@ effect computed from the windows of `S0`, as long as every read stays inside the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Apply Eff](apply-eff.md)
+- [Eff](../part-01/eff.md)
+- [Ops](../part-01/ops.md)
+- [Window](../part-02/window.md)
+
+## Proof depends on
+
+- [Read Top](../part-01/read-top.md)
+- [Read Top eq](read-top-eq.md)
 
 ## Sources
 

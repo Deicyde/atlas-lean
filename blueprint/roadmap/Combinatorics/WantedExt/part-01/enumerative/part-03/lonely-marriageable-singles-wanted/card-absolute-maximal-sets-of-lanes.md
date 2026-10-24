@@ -11,7 +11,10 @@ The number of absolute MSL of a standard road intersection of size `n` is `L_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Absolute Maximal Set Of Lanes](is-absolute-maximal-set-of-lanes.md)
+- [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
+- [Lanes Meet](lanes-meet.md)
+- [Lonely Singles Count](lonely-singles-count.md)
 
 ## Sources
 

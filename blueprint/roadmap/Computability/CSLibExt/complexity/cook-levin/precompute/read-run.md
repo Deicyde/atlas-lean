@@ -12,7 +12,24 @@ lean: Cslib.Complexity.CookLevin.Precompute.read_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](../accept/ck.md)
+- [HK](../assembly/hk.md)
+- [CK](../family/ck.md)
+- [CK](../init-family/ck.md)
+- [FK](fk.md)
+- [FL](fl.md)
+- [FΓ](f.md)
+- [PL](pl.md)
+- [PS](ps.md)
+- [Fst](fst.md)
+- [The read loop](rd-t.md)
+- [CK](../shift/ck.md)
+- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Single](../../../../MathlibExt/turing-machine/program/single.md)
+- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

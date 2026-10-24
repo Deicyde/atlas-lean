@@ -11,7 +11,8 @@ Theorem 1.4, first part: for `1 ≤ a ≤ d + 1`, `h_d^(a)(n) = f_d^(a)(n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perimeter Distinct Count](perimeter-distinct-count.md)
+- [Perimeter Residue Count](perimeter-residue-count.md)
 
 ## Sources
 

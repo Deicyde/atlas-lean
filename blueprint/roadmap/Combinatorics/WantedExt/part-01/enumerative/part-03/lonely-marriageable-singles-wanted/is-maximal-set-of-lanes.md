@@ -15,6 +15,10 @@ allows every lane; the restricted one forbids the U-turns `E_iX_i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lanes Meet](lanes-meet.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.LonelyMarriageableSinglesWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -46,7 +46,7 @@ end Loops
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rep](../../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

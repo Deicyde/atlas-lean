@@ -12,7 +12,17 @@ After `t` steps every cell at distance greater than `t` is blank.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+- [Machine](machine.md)
+- [Run](run.md)
+
+## Proof depends on
+
+- [Move](move.md)
+- [Shift](shift.md)
+- [Abs head le](abs-head-le.md)
+- [Initial](initial.md)
+- [Step](step.md)
 
 ## Sources
 

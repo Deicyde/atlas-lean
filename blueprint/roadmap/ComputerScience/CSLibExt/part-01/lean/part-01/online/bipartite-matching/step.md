@@ -13,6 +13,10 @@ On the arrival of right vertex `j`, match it to the first free left neighbour, i
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Free](../../graph/bipartite-matching/free.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Online.BipartiteMatching](../../../../../../../../sources/v2/CSLibExt.md)

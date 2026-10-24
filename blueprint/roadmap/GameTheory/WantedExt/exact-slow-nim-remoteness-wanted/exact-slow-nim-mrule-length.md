@@ -15,6 +15,10 @@ suffice.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exact Slow Nim MRule Length Aux](exact-slow-nim-mrule-length-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.ExactSlowNimRemotenessWanted](../../../../sources/v2/WantedExt.md)

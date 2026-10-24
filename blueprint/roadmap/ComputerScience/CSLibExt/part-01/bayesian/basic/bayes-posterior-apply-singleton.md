@@ -13,7 +13,11 @@ times its likelihood, divided by the evidence `∑ θ', μ {θ'} * κ θ' {x}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayes Posterior](bayes-posterior.md)
+
+## Proof depends on
+
+- [Comp apply singleton eq tsum](comp-apply-singleton-eq-tsum.md)
 
 ## Sources
 

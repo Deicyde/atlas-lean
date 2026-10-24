@@ -11,7 +11,7 @@ A zero partial quotient merges its neighbours: `[…, a, 0, b, …] = […, a + 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Cont Frac](finite-cont-frac.md)
 
 ## Sources
 

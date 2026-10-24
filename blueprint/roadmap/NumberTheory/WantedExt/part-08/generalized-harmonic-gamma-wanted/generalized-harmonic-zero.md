@@ -12,7 +12,7 @@ lean: MetaMathlibExt.generalizedHarmonic_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Harmonic](generalized-harmonic.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The stuffle of two letters: `a ∗ b = ab + ba + (a + b)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quasi Shuffle](quasi-shuffle.md)
 
 ## Sources
 

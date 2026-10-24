@@ -11,7 +11,7 @@ lean: MetaMathlibExt.digitSumArith_sq_partialSum_isBigO
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Sum Arith](digit-sum-arith.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ mistakes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+- [Expert Mistakes](expert-mistakes.md)
+- [Mistakes](mistakes.md)
+
+## Proof depends on
+
+- [The mistake bound](mistake-bound-general.md)
 
 ## Sources
 

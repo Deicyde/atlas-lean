@@ -12,7 +12,7 @@ The translation of an implication is a linear implication out of `!`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Girard's translation](translate.md)
 
 ## Sources
 

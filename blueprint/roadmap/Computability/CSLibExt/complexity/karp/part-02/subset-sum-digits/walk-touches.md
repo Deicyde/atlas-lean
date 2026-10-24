@@ -12,7 +12,14 @@ The touch bits a vertex walk computes are `touches`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mk L](mk-l.md)
+- [Walk M](walk-m.md)
+- [Pairs](../../part-01/clique/pairs.md)
+- [Touches](../subset-sum/touches.md)
+
+## Proof depends on
+
+- [Walk M pairs](walk-m-pairs.md)
 
 ## Sources
 

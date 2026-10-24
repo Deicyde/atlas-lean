@@ -12,7 +12,7 @@ all `n ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Repetitions C3](initial-repetitions-c3.md)
 
 ## Sources
 

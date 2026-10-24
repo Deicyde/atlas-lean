@@ -13,7 +13,7 @@ as `(1 - X t + t²) · ∑ F_n(X) tⁿ = 1 + t` in `ℤ[X]⟦t⟧` (equivalent, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
 
 ## Sources
 

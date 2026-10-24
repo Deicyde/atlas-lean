@@ -12,7 +12,9 @@ irrational or `x = s + p/q` (`0 < p < q`, coprime, `q ≠ 2`), `I_n ∪ J(x, m, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](is-mstdset.md)
+- [Real APSet](real-apset.md)
+- [Real Interval Set](real-interval-set.md)
 
 ## Sources
 

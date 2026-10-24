@@ -12,7 +12,13 @@ Selection distributes over union.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond](cond.md)
+- [Tuple](tuple.md)
+- [Select](select.md)
+
+## Proof depends on
+
+- [Eval](eval.md)
 
 ## Sources
 

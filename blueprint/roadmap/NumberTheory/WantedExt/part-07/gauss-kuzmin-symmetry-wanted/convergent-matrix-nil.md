@@ -12,7 +12,7 @@ The empty string has the identity convergent matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Matrix](convergent-matrix.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Corollary 2, Miki-type identity: for `n ≥ 4` and `𝔅_{k,λ} = 𝔅_{k,λ}(0)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
 
 ## Sources
 

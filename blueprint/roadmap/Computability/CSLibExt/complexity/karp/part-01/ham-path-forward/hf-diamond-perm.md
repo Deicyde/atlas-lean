@@ -13,7 +13,15 @@ order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Diamond](hf-diamond.md)
+- [Hf Picks](hf-picks.md)
+- [Hp T](../ham-path/hp-t.md)
+
+## Proof depends on
+
+- [Hf Row](hf-row.md)
+- [Hf Row perm](hf-row-perm.md)
+- [Hp R](../ham-path/hp-r.md)
 
 ## Sources
 

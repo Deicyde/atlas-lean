@@ -14,6 +14,11 @@ exist and the term at index `T + 1` cannot be computed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Three Term Hofstadter Next](three-term-hofstadter-next.md)
+- [Three Term Hofstadter Prefix](three-term-hofstadter-prefix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.ThreeTermHofstadterWanted](../../../../../../../sources/v2/WantedExt.md)

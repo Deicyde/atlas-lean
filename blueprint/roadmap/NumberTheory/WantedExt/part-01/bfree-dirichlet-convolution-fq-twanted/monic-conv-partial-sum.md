@@ -14,6 +14,10 @@ how the paper's Lemma 3 uses it at `n - deg(f ℓ)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BFreeDirichletConvolutionFqTWanted](../../../../../sources/v2/WantedExt.md)

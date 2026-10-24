@@ -12,7 +12,8 @@ If `n` or `m` is odd, the first player wins the Peaceable Queens game on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Snort First Player Wins](snort-first-player-wins.md)
+- [Queen Graph](queen-graph.md)
 
 ## Sources
 

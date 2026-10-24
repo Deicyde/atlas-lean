@@ -12,7 +12,8 @@ For every permutation `π` of `[n]` and every `k`, `SC_[123]^k(π) = id_n` if an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
+- [Reduction Seq](reduction-seq.md)
 
 ## Sources
 

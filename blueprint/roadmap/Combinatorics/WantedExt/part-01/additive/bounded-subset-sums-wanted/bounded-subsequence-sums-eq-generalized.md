@@ -13,7 +13,9 @@ For a sequence `𝒜 = (A, t̄)` with `A = {a₁, …, a_k}`, `0 ∉ A`, positiv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
+- [Generalized HFold Sumset](generalized-hfold-sumset.md)
+- [Repetition Sequence](repetition-sequence.md)
 
 ## Sources
 

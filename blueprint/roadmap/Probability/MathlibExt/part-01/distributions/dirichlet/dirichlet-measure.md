@@ -15,6 +15,12 @@ normalized density `∏ θᵢ^(αᵢ-1) / B(α)` in the first `n` coordinates, w
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dirichlet Density](dirichlet-density.md)
+- [Multi Beta](multi-beta.md)
+- [Simplex Completion](simplex-completion.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.Dirichlet](../../../../../../sources/v2/MathlibExt.md)

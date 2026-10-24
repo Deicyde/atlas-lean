@@ -12,7 +12,7 @@ The decoder changes at most one bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode](decode.md)
 
 ## Sources
 

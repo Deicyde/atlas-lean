@@ -14,7 +14,7 @@ Rogers–Ramanujan continued fraction is not included.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Theta Pow](ramanujan-theta-pow.md)
 
 ## Sources
 

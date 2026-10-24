@@ -14,7 +14,12 @@ Article A22, Definitions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Motzkin](generalized-motzkin.md)
+
+## Proof depends on
+
+- [Trinomial Laurent](trinomial-laurent.md)
+- [Trinomial Laurent one one powers](trinomial-laurent-one-one-powers.md)
 
 ## Sources
 

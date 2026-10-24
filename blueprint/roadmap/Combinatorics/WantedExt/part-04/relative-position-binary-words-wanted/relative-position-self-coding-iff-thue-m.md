@@ -12,7 +12,9 @@ the letters `a = 1`, `b = -1`, i.e. with `r(n) = 1` if `ℓ_{n-1} = a` and `r(n)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Relative Position](relative-position.md)
+- [Thue Morse](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources
 

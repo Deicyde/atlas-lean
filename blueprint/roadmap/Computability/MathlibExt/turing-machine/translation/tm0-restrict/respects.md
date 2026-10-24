@@ -12,7 +12,8 @@ The restricted machine is simulated step for step by `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cfg Val](cfg-val.md)
+- [Restrict](restrict.md)
 
 ## Sources
 

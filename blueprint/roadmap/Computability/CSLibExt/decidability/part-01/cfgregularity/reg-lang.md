@@ -11,7 +11,14 @@ The target language `L # {0,1}* ∪ T* # {0ⁿ1ⁿ}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+
+## Proof depends on
+
+- [Bl](bl.md)
+- [Sep](sep.md)
+- [Tl](tl.md)
+- [Zero One](zero-one.md)
 
 ## Sources
 

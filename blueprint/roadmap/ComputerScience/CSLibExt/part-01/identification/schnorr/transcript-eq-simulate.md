@@ -13,7 +13,15 @@ transcripts have the same distribution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simulate](simulate.md)
+- [Transcript](transcript.md)
+- [Gpow](../../public-key/diffie-hellman/gpow.md)
+
+## Proof depends on
+
+- [Honest Transcript](honest-transcript.md)
+- [Respond](respond.md)
+- [Sim Transcript](sim-transcript.md)
 
 ## Sources
 

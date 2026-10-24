@@ -15,7 +15,8 @@ Inverse theorem for Theorem 7 (`p` positive and `n` negative integers, `1 ≤ n 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subset Sums](bounded-subset-sums.md)
+- [Mixed Sign Subset Sum Bound](mixed-sign-subset-sum-bound.md)
 
 ## Sources
 

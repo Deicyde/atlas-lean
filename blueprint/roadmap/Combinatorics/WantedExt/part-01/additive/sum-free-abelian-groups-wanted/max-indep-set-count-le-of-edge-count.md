@@ -12,7 +12,7 @@ maximum degree `Δ ≥ 1`, then `mis(Γ) ≤ 3^{Δ/13} · 3^{n/3 - k/(13Δ)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Indep Set Count](max-indep-set-count.md)
 
 ## Sources
 

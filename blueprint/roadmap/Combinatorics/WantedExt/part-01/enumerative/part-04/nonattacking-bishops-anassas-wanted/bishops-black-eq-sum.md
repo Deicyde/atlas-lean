@@ -12,7 +12,8 @@ Equation (4): `R_K(m, k) = ∑_{j=0}^{k} binom(⌊m/2⌋, j) {m - j, m - k}` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bishops Black](bishops-black.md)
+- [Ext Stirling Second](ext-stirling-second.md)
 
 ## Sources
 

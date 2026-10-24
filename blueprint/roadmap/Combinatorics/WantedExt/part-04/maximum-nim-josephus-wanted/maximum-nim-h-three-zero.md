@@ -13,7 +13,7 @@ natural-number calculation and has no deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim H](maximum-nim-h.md)
 
 ## Sources
 

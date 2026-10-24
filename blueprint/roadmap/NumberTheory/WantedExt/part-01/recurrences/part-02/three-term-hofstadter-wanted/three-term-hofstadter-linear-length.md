@@ -12,7 +12,7 @@ For `N ≥ 14`, the sequence `B_N` with initial conditions `⟨1, 2, …, N⟩` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Ends After](three-term-hofstadter-ends-after.md)
 
 ## Sources
 

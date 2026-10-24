@@ -13,6 +13,10 @@ lean: MetaMathlibExt.invSeqAvoidCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inv Seq Contains Pattern](inv-seq-contains-pattern.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.InversionSequencePatternSetsWanted](../../../../../../../sources/v2/WantedExt.md)

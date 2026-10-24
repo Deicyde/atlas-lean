@@ -16,6 +16,10 @@ The `ℚ`-span `𝒵_{q,d}` of the general qMZVs `ζ_q(k₁, …, kᵣ; Q₁, �
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q MZV](q-mzv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

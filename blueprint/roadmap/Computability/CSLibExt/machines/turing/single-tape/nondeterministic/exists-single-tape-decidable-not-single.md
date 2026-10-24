@@ -15,7 +15,13 @@ leanprover/cslib#1039.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape Decidable](../classes/single-tape-decidable.md)
+- [Single Tape NTMRecognizable](single-tape-ntmrecognizable.md)
+
+## Proof depends on
+
+- [No single-tape NTM recognizes `n = 0`](not-single-tape-ntmrecognizable-eq-zero.md)
+- [Single-tape decidability is Mathlib's `ComputablePred`](../bridge/single-tape-decidable-iff-computable-pre.md)
 
 ## Sources
 

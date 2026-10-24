@@ -15,7 +15,8 @@ lies in `ℚ(a)[ψ(a) + γ, ψ^{(j)}(a)_{j ≥ 1}, ζ(j)_{j ≥ 2}]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
+- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
 
 ## Sources
 

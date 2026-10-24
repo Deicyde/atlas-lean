@@ -18,7 +18,8 @@ decreasing), so both are replaced by `0 < N`. For `N = 0` the claim fails (`α =
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Expansion Digit](n-expansion-digit.md)
+- [N Expansion Map](n-expansion-map.md)
 
 ## Sources
 

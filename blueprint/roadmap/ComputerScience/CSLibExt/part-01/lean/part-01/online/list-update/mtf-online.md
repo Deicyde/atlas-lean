@@ -11,7 +11,12 @@ Move-to-front as an online algorithm (requests outside `M` are ignored).
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online list-update algorithm on the items...](a-deterministic-online-list-update-algor.md)
+
+## Proof depends on
+
+- [Mtf](mtf.md)
+- [The amortized cost of a move-to-front step](mtf-perm.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ contradicts `d_{U^n}(n) = 1` at `n = m`; the vanishing case is stated for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
 
 ## Sources
 

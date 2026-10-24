@@ -13,6 +13,10 @@ The finite sign infimum for a rectangular real matrix.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sign Value](sign-value.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.MatrixDiscrepancy](../../../../../sources/v2/MathlibExt.md)

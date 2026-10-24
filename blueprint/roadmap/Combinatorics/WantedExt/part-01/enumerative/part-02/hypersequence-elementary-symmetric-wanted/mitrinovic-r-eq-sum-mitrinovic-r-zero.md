@@ -13,7 +13,7 @@ identity also holds at `b = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mitrinovic R](mitrinovic-r.md)
 
 ## Sources
 

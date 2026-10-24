@@ -14,6 +14,11 @@ isomorphic to that group.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Almost Simple](is-almost-simple.md)
+- [Same Power Equation Type](same-power-equation-type.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.Kourovka21Problem134bWanted](../../../../../sources/v2/WantedExt.md)

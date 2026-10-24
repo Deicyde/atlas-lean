@@ -12,7 +12,7 @@ The row lengths of `θ^(n)` are `n + 2, 2, 1, …, 1` (`n` ones).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Near Hook Theta](near-hook-theta.md)
 
 ## Sources
 

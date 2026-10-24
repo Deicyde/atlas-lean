@@ -15,6 +15,11 @@ part `r + 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
+- [Is Perfect Partition](is-perfect-partition.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.DoublePerfectPartitionsWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ For `m ≤ 5` the canonical splitting of `Λ_m` is `Λ_m` itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical Lucas Splitting](canonical-lucas-splitting.md)
 
 ## Sources
 

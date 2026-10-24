@@ -11,7 +11,11 @@ Clause `amo x y` (`done` if the pair is invalid; never used then).
 
 ## Depends on
 
-This node has no prerequisites.
+- [GL](gl.md)
+
+## Proof depends on
+
+- [CL](cl.md)
 
 ## Sources
 

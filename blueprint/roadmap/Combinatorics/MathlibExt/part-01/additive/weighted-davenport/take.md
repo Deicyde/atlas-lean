@@ -12,7 +12,7 @@ Prefixes of a weighted zero-sum free sequence are weighted zero-sum free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
 
 ## Sources
 

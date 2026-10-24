@@ -12,7 +12,13 @@ The score maximum is attained by a halting machine (or is zero).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Machine](machine.md)
+- [Busy Beaver Ones](busy-beaver-ones.md)
+- [Score Of](score-of.md)
+
+## Proof depends on
+
+- [Move](move.md)
 
 ## Sources
 

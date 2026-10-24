@@ -12,7 +12,7 @@ lean: MetaMathlibExt.paperfoldingContFracWord_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Paperfolding Cont Frac Word](paperfolding-cont-frac-word.md)
 
 ## Sources
 

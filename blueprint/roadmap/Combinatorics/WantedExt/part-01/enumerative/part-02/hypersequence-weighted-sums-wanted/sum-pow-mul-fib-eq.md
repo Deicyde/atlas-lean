@@ -13,7 +13,7 @@ record is omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

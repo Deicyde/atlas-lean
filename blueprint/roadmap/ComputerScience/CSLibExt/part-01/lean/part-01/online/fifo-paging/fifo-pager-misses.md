@@ -12,7 +12,11 @@ The online pager `fifoPager` misses exactly as `policyMisses (fifoStep k)` count
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fifo Pager](fifo-pager.md)
+- [Fifo Step](fifo-step.md)
+- [Policy Misses](policy-misses.md)
+- [A deterministic online paging algorithm with cache size...](../paging-lower-bound/a-deterministic-online-paging-algorithm.md)
+- [Misses](../paging-lower-bound/misses.md)
 
 ## Sources
 

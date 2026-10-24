@@ -12,7 +12,9 @@ lean: MetaMathlibExt.hyperLucasLeonardoP_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Lucas Leonardo P](hyper-lucas-leonardo-p.md)
+- [Incomplete Lucas Leonardo P](incomplete-lucas-leonardo-p.md)
+- [Lucas Leonardo P](lucas-leonardo-p.md)
 
 ## Sources
 

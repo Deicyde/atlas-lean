@@ -12,7 +12,14 @@ Hits leave the offline trace's later misses unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Misses](../../greedy/offline-caching/misses.md)
+- [Opt Trace](opt-trace.md)
+
+## Proof depends on
+
+- [Cache Event](../../greedy/offline-caching/cache-event.md)
+- [Is Miss](../../greedy/offline-caching/is-miss.md)
+- [Opt Step](opt-step.md)
 
 ## Sources
 

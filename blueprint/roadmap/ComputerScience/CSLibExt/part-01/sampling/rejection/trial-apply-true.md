@@ -12,7 +12,12 @@ A proposal `x` is drawn and accepted with probability `p x / M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trial](trial.md)
+
+## Proof depends on
+
+- [Accept Prob](accept-prob.md)
+- [Coin](coin.md)
 
 ## Sources
 

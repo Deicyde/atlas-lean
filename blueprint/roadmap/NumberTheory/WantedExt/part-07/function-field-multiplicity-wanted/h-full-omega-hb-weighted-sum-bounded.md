@@ -13,7 +13,7 @@ coefficients of `B_{h,N_h}(u, z)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full Omega HB](h-full-omega-hb.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For a nonnegative weight, fixing more variables decreases the marginal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marginal](marginal.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The constant of the time bound: depends on the layout and `N` only.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
 
 ## Sources
 

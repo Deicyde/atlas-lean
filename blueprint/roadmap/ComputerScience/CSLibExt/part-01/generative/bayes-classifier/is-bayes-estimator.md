@@ -13,7 +13,12 @@ for the 0-1 loss.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Posterior Argmax](is-posterior-argmax.md)
+- [Zero One Loss](zero-one-loss.md)
+
+## Proof depends on
+
+- [Is Argmin Estimator](is-argmin-estimator.md)
 
 ## Sources
 

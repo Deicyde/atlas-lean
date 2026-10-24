@@ -12,7 +12,7 @@ The zero sequence is not a monomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Max Min Monomial](is-max-min-monomial.md)
 
 ## Sources
 

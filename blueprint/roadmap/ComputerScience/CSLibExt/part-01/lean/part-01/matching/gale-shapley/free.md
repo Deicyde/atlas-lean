@@ -11,7 +11,7 @@ A proposer is free when no receiver holds him.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closest String Instance](closest-string-instance.md)
 
 ## Sources
 

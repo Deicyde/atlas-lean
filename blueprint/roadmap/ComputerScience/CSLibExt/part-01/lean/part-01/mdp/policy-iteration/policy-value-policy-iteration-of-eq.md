@@ -12,7 +12,16 @@ Once optimal, policy iteration stays optimal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](../value-iteration/mdp.md)
+- [Stochastic](../value-iteration/stochastic.md)
+- [Optimal Value](../value-iteration/optimal-value.md)
+- [Policy Iteration](policy-iteration.md)
+- [Policy Value](../value-iteration/policy-value.md)
+
+## Proof depends on
+
+- [No policy beats the optimal value](../value-iteration/policy-value-le-optimal-value.md)
+- [Policy Value policy Iteration mono](policy-value-policy-iteration-mono.md)
 
 ## Sources
 

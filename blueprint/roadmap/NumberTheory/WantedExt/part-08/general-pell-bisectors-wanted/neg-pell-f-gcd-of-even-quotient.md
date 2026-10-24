@@ -12,7 +12,7 @@ multiple of `n` with even quotient, then `gcd(f_m, f_n) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
 
 ## Sources
 

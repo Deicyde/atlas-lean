@@ -12,7 +12,7 @@ Theorem 2, Equation (5): for `n ≥ r`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pq RFibonacci](pq-rfibonacci.md)
 
 ## Sources
 

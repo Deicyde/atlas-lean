@@ -13,7 +13,8 @@ and height `k` at the up endpoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Motzkin Hump](is-motzkin-hump.md)
+- [Motzkin Step](motzkin-step.md)
 
 ## Sources
 

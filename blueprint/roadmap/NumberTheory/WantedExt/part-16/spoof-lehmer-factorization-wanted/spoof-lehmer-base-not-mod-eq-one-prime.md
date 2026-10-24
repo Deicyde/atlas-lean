@@ -12,7 +12,11 @@ If `F = x_1 ⋯ x_r` is a nontrivial spoof Lehmer factorization and `p` is a pri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Spoof](is-odd-spoof.md)
+- [Is Spoof Lehmer](is-spoof-lehmer.md)
+- [Is Trivial Spoof](is-trivial-spoof.md)
+- [Spoof Eval](spoof-eval.md)
+- [Spoof Of Bases](spoof-of-bases.md)
 
 ## Sources
 

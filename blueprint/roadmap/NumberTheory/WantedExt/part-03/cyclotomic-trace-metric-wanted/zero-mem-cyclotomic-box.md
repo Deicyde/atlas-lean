@@ -12,7 +12,7 @@ The coefficient vector `0` lies in every box.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Box](cyclotomic-box.md)
 
 ## Sources
 

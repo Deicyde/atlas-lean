@@ -11,7 +11,7 @@ The number of returns of a path: steps that end on the `x`-axis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
 
 ## Sources
 

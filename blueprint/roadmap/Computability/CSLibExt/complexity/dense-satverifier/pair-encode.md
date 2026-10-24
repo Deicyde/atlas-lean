@@ -12,7 +12,7 @@ The `w # y` input of the verifier: left-tagged formula bits `inl b`, the separat
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
 
 ## Sources
 

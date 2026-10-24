@@ -15,7 +15,8 @@ Their number `c_U(n)` satisfies `c_U(n) = c_U(n - 2) + c_U(n - 3)` for `n ≥ 4`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt U](arndt-u.md)
+- [Shifted Padovan Sequence](../../../../../../NumberTheory/MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
 
 ## Sources
 

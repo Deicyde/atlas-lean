@@ -12,7 +12,8 @@ Proposition 4.1 (degenerate case): for positive `n` and odd `d`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perimeter Distinct Count](perimeter-distinct-count.md)
+- [Perimeter PMResidue Count](perimeter-pmresidue-count.md)
 
 ## Sources
 

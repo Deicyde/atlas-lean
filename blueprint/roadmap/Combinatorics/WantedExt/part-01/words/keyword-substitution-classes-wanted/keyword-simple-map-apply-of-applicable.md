@@ -12,7 +12,8 @@ An applicable simple map negates exactly the letters `i, …, i + m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Applicable](keyword-applicable.md)
+- [Keyword Simple Map](keyword-simple-map.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ A labeling of total edge length at most `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Linear Arrangement Instance](minimum-linear-arrangement-instance.md)
 
 ## Sources
 

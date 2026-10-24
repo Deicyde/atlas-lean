@@ -12,7 +12,15 @@ The denotational and big-step semantics agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Big Step](../big-step/big-step.md)
+- [Cmd](../syntax/cmd.md)
+- [Denote](denote.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [Big Step of denote](big-step-of-denote.md)
+- [Denote of big Step](denote-of-big-step.md)
 
 ## Sources
 

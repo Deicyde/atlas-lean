@@ -12,7 +12,11 @@ The empty string has no nontrivial symmetry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Nontrivial Symmetry](has-nontrivial-symmetry.md)
+
+## Proof depends on
+
+- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
 
 ## Sources
 

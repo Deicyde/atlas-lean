@@ -12,7 +12,12 @@ its halting time if it halts, and `0` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Machine](machine.md)
+
+## Proof depends on
+
+- [Halts](halts.md)
+- [Halt Time](halt-time.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.inverseAckermann_eight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse Ackermann](inverse-ackermann.md)
 
 ## Sources
 

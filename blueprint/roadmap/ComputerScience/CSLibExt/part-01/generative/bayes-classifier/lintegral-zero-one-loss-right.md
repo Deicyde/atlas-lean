@@ -13,7 +13,11 @@ The expected 0-1 loss of a random prediction with law `ν` when the true class i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zero One Loss](zero-one-loss.md)
+
+## Proof depends on
+
+- [Lintegral zero One Loss](lintegral-zero-one-loss.md)
 
 ## Sources
 

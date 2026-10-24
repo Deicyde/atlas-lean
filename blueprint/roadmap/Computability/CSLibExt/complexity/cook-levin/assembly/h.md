@@ -11,7 +11,14 @@ Host alphabets: Bool output, input codes `Fin g`, unit counters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](hk.md)
+
+## Proof depends on
+
+- [CK](../accept/ck.md)
+- [CK](../family/ck.md)
+- [CK](../init-family/ck.md)
+- [CK](../shift/ck.md)
 
 ## Sources
 

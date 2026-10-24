@@ -11,7 +11,13 @@ The sequence `T(x) = ⟨T_1(x), T_2(x), …⟩` over `{L, M, R}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Parity Letter](mallows-parity-letter.md)
+
+## Proof depends on
+
+- [Mallows Odd Index](mallows-odd-index.md)
+- [Mallows TLetter](mallows-tletter.md)
 
 ## Sources
 

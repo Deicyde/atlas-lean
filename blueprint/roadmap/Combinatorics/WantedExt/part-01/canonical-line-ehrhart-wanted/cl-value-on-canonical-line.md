@@ -12,7 +12,8 @@ Membership in that one-dimensional real subspace is represented by the witness `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CL](is-cl.md)
+- [Canonical Line](canonical-line.md)
 
 ## Sources
 

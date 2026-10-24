@@ -11,7 +11,11 @@ The one-letter words over the bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+
+## Proof depends on
+
+- [Bl](bl.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ are coprime to `b` for `0 ≤ i ≤ k`, and `π_U^(k+1)(n) = π_U^j(n)` for some
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Lucas UPeriod](lucas-uperiod.md)
 
 ## Sources
 

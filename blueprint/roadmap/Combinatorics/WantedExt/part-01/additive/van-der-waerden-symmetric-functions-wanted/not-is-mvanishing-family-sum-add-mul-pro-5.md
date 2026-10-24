@@ -12,7 +12,8 @@ Lemma 8: for `n = 8u` with `u > 1`, `F_1` over `ℤ/n` is not `m`-vanishing for 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MVanishing Family](is-mvanishing-family.md)
+- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ A witness that does not decode is rejected.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode W](decode-w.md)
+- [Ham Check](ham-check.md)
+
+## Proof depends on
+
+- [Ham Ok](ham-ok.md)
+- [Decode P](../../../path/decode-p.md)
 
 ## Sources
 

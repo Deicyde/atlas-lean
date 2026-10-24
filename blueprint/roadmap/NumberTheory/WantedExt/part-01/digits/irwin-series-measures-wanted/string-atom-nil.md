@@ -17,7 +17,13 @@ Article A11, definition of `μ_k` and Remark `rem:zero`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [String Atom](string-atom.md)
+
+## Proof depends on
+
+- [Normalized String Value](normalized-string-value.md)
+- [String Value](string-value.md)
+- [String Weight](string-weight.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The chain starts at its generator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Cunningham Chain](extended-cunningham-chain.md)
 
 ## Sources
 

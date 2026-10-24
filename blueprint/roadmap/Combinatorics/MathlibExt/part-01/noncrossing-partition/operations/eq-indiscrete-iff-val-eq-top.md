@@ -12,7 +12,10 @@ Equality to indiscrete is determined by `val = ⊤`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Partition](../basic/noncrossing-partition.md)
+- [Is Noncrossing](../basic/is-noncrossing.md)
+- [Set Partition](../basic/set-partition.md)
+- [Indiscrete](indiscrete.md)
 
 ## Sources
 

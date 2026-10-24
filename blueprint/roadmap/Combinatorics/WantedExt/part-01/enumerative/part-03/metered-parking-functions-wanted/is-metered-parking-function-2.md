@@ -12,7 +12,8 @@ every `t ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Is Partial Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
 
 ## Sources
 

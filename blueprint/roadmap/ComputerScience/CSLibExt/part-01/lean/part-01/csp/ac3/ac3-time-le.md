@@ -13,7 +13,13 @@ lean: Cslib.Algorithms.Lean.ArcConsistency.ac3_time_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+- [Ac3 All](ac3-all.md)
+- [Indeg](indeg.md)
+
+## Proof depends on
+
+- [Ac3 time le potential](ac3-time-le-potential.md)
 
 ## Sources
 

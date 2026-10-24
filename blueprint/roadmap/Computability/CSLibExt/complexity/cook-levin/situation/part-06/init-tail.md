@@ -11,7 +11,16 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.initTail
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [CNF](../../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Num Vars](../../family/num-vars.md)
+- [Dense Clause](../../family/dense-clause.md)
+- [Layout](../part-01/layout.md)
+- [Z Idx](z-idx.md)
+- [Clause](../../../dense-sat/clause.md)
 
 ## Sources
 

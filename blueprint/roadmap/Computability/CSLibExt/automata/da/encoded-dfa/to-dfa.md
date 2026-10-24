@@ -11,7 +11,11 @@ The Mathlib DFA an encoding denotes, with states `ℕ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

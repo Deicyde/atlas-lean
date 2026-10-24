@@ -12,7 +12,13 @@ A banded alignment of `xs`, `ys` has its length difference within the band.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+- [Is Alignment](../sequence-alignment/is-alignment.md)
+- [Is Banded](is-banded.md)
+
+## Proof depends on
+
+- [Banded From final](banded-from-final.md)
 
 ## Sources
 

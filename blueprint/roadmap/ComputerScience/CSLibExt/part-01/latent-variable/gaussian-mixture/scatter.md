@@ -11,7 +11,12 @@ The responsibility-weighted scatter `S k = ∑ n, r n k ‖xₙ - μ k'‖²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [New Mean](new-mean.md)
+- [Resp](resp.md)
 
 ## Sources
 

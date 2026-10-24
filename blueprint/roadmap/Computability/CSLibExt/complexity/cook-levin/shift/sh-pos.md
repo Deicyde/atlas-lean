@@ -11,7 +11,12 @@ Positions of the in-range shift clause `(u, x)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [C Idx](../family/c-idx.md)
+- [X Idx](../family/x-idx.md)
 
 ## Sources
 

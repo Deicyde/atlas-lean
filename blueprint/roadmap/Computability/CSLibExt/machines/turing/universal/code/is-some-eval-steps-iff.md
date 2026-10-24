@@ -13,7 +13,22 @@ within `T` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [The clocked evaluator](eval-steps.md)
+- [Machine](machine.md)
+- [Halts Within](halts-within.md)
+- [Input](input.md)
+
+## Proof depends on
+
+- [Cfg](cfg.md)
+- [Cfg After](cfg-after.md)
+- [Halts Within machine iff](halts-within-machine-iff.md)
+- [Init](init.md)
+- [Is Some eval Steps iff step eq none](is-some-eval-steps-iff-step-eq-none.md)
+- [Step](step.md)
+- [Step Or Stay](step-or-stay.md)
+- [Iterate eq none of lt](../../../../../MathlibExt/turing-machine/recursive/halts/iterate-eq-none-of-lt.md)
 
 ## Sources
 

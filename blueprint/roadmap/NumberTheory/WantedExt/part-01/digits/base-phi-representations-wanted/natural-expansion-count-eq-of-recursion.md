@@ -13,7 +13,8 @@ Recursion for `Tot_ν(N)`: the same as for `Tot_κ(N)` except
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Value](base-phi-value.md)
+- [Natural Expansion Count](natural-expansion-count.md)
 
 ## Sources
 

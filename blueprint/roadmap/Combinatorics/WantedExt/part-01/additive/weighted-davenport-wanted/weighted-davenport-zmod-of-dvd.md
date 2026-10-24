@@ -13,7 +13,7 @@ this is the reading Corollaries 1 and 2 restate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

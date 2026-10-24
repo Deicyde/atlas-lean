@@ -13,6 +13,11 @@ lean: MetaMathlibExt.sumOfTriangularRepCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Unit triangular Theta Series](is-unit-triangular-theta-series.md)
+- [Triangular Theta Series](triangular-theta-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SquaresTriangularRepresentationsWanted](../../../../../sources/v2/WantedExt.md)

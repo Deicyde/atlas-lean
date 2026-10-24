@@ -14,6 +14,10 @@ divisor of both `a` and `b` (`0` when `a = 0` or `b = 0`, which have no unitary 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.BiunitaryDivisor](../../../../../../../sources/v2/MathlibExt.md)

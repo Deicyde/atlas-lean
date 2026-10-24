@@ -12,7 +12,18 @@ The row-by-row check is the pairwise check over `pairs`, with the bit count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+- [Ok](ok.md)
+- [Pair Vals](pair-vals.md)
+- [Rows Ok](rows-ok.md)
+
+## Proof depends on
+
+- [Free](free.md)
+- [Ok eq](ok-eq.md)
+- [Sat](sat.md)
+- [Pair Vals cons](pair-vals-cons.md)
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

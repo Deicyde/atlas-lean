@@ -12,7 +12,13 @@ The initial conditions are the first terms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Lookup](three-term-hofstadter-lookup.md)
+- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
+
+## Proof depends on
+
+- [Three Term Hofstadter Extend](three-term-hofstadter-extend.md)
+- [Three Term Hofstadter Prefix](three-term-hofstadter-prefix.md)
 
 ## Sources
 

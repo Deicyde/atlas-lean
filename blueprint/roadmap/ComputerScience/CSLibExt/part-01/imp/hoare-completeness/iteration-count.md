@@ -12,7 +12,13 @@ The number of body iterations the loop `while guard do body` performs from
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [Iterates](iterates.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MetaMathlibExt.ascentToDescentRearrangement_of_length_le_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascent To Descent Rearrangement](ascent-to-descent-rearrangement.md)
+
+## Proof depends on
+
+- [Ascent To Descent Rearrangement Aux](ascent-to-descent-rearrangement-aux.md)
 
 ## Sources
 

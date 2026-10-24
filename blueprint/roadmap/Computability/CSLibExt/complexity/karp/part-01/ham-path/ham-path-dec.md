@@ -11,7 +11,12 @@ HAMPATH: the digraph has a Hamiltonian path from `s` to `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Is Ham Path](is-ham-path.md)
+- [Encode P](../../../path/encode-p.md)
 
 ## Sources
 

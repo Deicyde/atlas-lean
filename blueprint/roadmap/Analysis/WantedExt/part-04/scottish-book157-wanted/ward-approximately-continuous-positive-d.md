@@ -14,7 +14,8 @@ monotone increasing (nondecreasing).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approx Continuous At](approx-continuous-at.md)
+- [Has Positive Upper Right Approx Deriv](has-positive-upper-right-approx-deriv.md)
 
 ## Sources
 

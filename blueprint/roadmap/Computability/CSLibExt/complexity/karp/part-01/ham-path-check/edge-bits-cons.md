@@ -12,7 +12,7 @@ The bits of an edge list, first edge first.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Bits](../color/edge-bits.md)
 
 ## Sources
 

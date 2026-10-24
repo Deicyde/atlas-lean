@@ -12,7 +12,13 @@ lean: MetaMathlibExt.maxLStarBlock_zero_mem_lStarClosure
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Closure](l-star-closure.md)
+- [Max LStar Block](max-lstar-block.md)
+
+## Proof depends on
+
+- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [L Star Collection](l-star-collection.md)
 
 ## Sources
 

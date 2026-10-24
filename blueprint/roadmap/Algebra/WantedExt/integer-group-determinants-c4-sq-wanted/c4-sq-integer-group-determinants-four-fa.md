@@ -13,7 +13,8 @@ in the displayed residue patterns mod 16 lie in `S(C₄²)` (the paper's shared 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Group Determinants](integer-group-determinants.md)
+- [Primes Five Mod Eight](primes-five-mod-eight.md)
 
 ## Sources
 

@@ -16,7 +16,11 @@ its phase, followed by the remaining pieces read clockwise (`false` a square, `t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bracelet First Tile](bracelet-first-tile.md)
+
+## Proof depends on
+
+- [Length](length.md)
 
 ## Sources
 

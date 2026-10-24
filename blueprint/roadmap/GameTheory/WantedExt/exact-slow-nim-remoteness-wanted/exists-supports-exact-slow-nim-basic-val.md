@@ -12,7 +12,10 @@ lean: MetaMathlibExt.exists_supports_exactSlowNimBasicValue
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Exact Slow Nim Basic A0](is-exact-slow-nim-basic-a0.md)
+- [Is Exact Slow Nim Basic A1](is-exact-slow-nim-basic-a1.md)
+- [Is Exact Slow Nim Basic B](is-exact-slow-nim-basic-b.md)
+- [Exact Slow Nim Basic Value](exact-slow-nim-basic-value.md)
 
 ## Sources
 

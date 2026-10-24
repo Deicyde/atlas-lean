@@ -16,7 +16,7 @@ natural subtraction truncates it to `0`, so its sole `j = 0` factor is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syt Hook Count](syt-hook-count.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ cleared (both sides multiplied by `f_4^2 f_8 f_16^2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

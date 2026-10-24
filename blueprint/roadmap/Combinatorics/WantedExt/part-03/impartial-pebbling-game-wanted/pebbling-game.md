@@ -13,7 +13,14 @@ to the empty position).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
+
+## Proof depends on
+
+- [Mem pebbling Moves](mem-pebbling-moves.md)
+- [Pebbling Moves](pebbling-moves.md)
+- [Pebbling Step](pebbling-step.md)
+- [Sum pebbling Step add one](sum-pebbling-step-add-one.md)
 
 ## Sources
 

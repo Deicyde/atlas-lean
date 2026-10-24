@@ -13,7 +13,7 @@ is a burst of length at most `L`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Burst LE](is-burst-le.md)
 
 ## Sources
 

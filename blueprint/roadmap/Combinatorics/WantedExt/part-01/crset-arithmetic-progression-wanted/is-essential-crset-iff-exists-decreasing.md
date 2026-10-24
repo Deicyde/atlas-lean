@@ -15,7 +15,8 @@ The sequence is indexed from `0` rather than `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CRSet](is-crset.md)
+- [Is Essential CRSet](is-essential-crset.md)
 
 ## Sources
 

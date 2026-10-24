@@ -14,6 +14,10 @@ The grammar for `{u | projRight u ∈ g.language}`: the translated productions, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ins Symbol](ins-symbol.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.InverseHom](../../../../../../../sources/v2/CSLibExt.md)

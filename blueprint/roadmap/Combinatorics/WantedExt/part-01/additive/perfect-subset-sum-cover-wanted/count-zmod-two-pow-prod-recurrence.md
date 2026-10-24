@@ -14,7 +14,7 @@ Rank two: `a_{m,n} = C(ℤ_{2^m} ⊕ ℤ_{2^n})` satisfies, for `m ≥ n ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Count](count.md)
 
 ## Sources
 

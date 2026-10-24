@@ -12,7 +12,18 @@ The deletions of nullable nonterminals are those of `nullableDeletions`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+- [Decode Symbol](../encoded/decode-symbol.md)
+- [Deletions](deletions.md)
+- [Nullable](nullable.md)
+- [To CFG](../encoded/to-cfg.md)
+- [Nullable Deletions](../reduced/nullable-deletions.md)
+
+## Proof depends on
+
+- [Mem B](../../../../decidability/part-01/primrec-list/mem-b.md)
+- [The nullable nonterminals are computed](mem-nullable-iff.md)
+- [Nullable](../reduced/nullable.md)
 
 ## Sources
 

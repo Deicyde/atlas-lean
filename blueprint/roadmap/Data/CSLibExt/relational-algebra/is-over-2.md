@@ -11,7 +11,11 @@ A relation (a finite set of tuples) over the schema `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
+
+## Proof depends on
+
+- [Is Over](is-over.md)
 
 ## Sources
 

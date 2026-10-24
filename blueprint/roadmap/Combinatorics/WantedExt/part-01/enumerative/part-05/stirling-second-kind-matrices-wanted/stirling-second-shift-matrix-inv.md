@@ -12,7 +12,9 @@ Theorem 3: `S^[m](n)⁻¹ = Ṽ(n)^m s(n)`. The paper takes `m ≥ 1`; the case
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling First Matrix](stirling-first-matrix.md)
+- [Stirling Second Shift Matrix](stirling-second-shift-matrix.md)
+- [Stirling VTilde Matrix](stirling-vtilde-matrix.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The gate count: `2 n` for level `0`, `3 n` per Kogge-Stone level, `3 n` for the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carry Lookahead Adder](carry-lookahead-adder.md)
+- [Arith Signature](../ripple-carry/arith-signature.md)
+
+## Proof depends on
+
+- [Level Base](level-base.md)
 
 ## Sources
 

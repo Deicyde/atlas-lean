@@ -11,7 +11,11 @@ The number of tasks at depth `d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+
+## Proof depends on
+
+- [Depth](depth.md)
 
 ## Sources
 

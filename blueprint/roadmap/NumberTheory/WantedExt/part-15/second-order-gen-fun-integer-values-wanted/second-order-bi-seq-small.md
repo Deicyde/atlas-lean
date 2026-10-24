@@ -12,7 +12,11 @@ Characteristic values: `A_0 = r`, `A_1 = s`, `A_2 = ps + r`, `A_{-1} = s - pr`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Bi Seq](second-order-bi-seq.md)
+
+## Proof depends on
+
+- [Second Order Bwd](second-order-bwd.md)
 
 ## Sources
 

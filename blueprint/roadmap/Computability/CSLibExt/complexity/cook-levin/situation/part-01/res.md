@@ -11,7 +11,13 @@ The effect of situation `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](enc.md)
+
+## Proof depends on
+
+- [La](la.md)
+- [Win](win.md)
+- [The step on `Option Λ`](sit-step.md)
 
 ## Sources
 

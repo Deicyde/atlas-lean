@@ -15,7 +15,9 @@ not end in `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
+- [Is Two Sided Periodic Point](is-two-sided-periodic-point.md)
+- [Fibonacci Complement Value](fibonacci-complement-value.md)
 
 ## Sources
 

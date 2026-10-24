@@ -13,7 +13,8 @@ lean: MetaMathlibExt.card_selfDualMonotone_add_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
+- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

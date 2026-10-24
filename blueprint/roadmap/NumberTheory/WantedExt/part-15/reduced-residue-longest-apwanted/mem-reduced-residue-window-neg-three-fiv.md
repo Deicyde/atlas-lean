@@ -12,7 +12,7 @@ lean: MetaMathlibExt.mem_reducedResidueWindow_neg_three_five
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reduced Residue Window](reduced-residue-window.md)
 
 ## Sources
 

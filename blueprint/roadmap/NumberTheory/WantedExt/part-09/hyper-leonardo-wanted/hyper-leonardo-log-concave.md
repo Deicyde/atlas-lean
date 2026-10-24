@@ -14,7 +14,7 @@ paper's proof starts its induction at `r = 1` (Proposition 13).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

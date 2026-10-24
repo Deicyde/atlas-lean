@@ -14,6 +14,10 @@ as the `n`th coefficient of `f_4 f_18 / (f_1 f_9)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ped Nine Nine Series](ped-nine-nine-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PedOverpartitionsDissectionsWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.xiPermutation_six_seven
 
 ## Depends on
 
-This node has no prerequisites.
+- [Xi Permutation](xi-permutation.md)
 
 ## Sources
 

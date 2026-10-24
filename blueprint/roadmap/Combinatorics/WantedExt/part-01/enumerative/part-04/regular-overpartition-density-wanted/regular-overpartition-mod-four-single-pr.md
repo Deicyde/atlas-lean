@@ -15,7 +15,7 @@ modulo-four condition used in Theorem 5.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Overpartition Count](regular-overpartition-count.md)
 
 ## Sources
 

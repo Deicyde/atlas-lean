@@ -12,7 +12,8 @@ lean: MetaMathlibExt.log_factorialProductConstant_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorial Product Constant](factorial-product-constant.md)
+- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ Stop with output `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+
+## Proof depends on
+
+- [Oracle Sig](oracle-sig.md)
 
 ## Sources
 

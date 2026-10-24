@@ -13,7 +13,8 @@ bar position `x t ≤ f t z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
+- [Chocolate Bar Grundy](chocolate-bar-grundy.md)
 
 ## Sources
 

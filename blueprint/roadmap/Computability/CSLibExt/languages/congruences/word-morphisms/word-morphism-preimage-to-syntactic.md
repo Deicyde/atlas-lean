@@ -12,7 +12,17 @@ recognizer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Word Morphism Preimage](word-morphism-preimage.md)
+- [Word Morphism Recognizer](word-morphism-recognizer.md)
+
+## Proof depends on
+
+- [Recognizes](../recognition/recognizes.md)
+- [Recognizer Image To Syntactic](../recognition/recognizer-image-to-syntactic.md)
+- [Syntactic Accept](../syntactic/syntactic-accept.md)
+- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

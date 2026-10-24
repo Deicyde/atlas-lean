@@ -12,7 +12,8 @@ lean: Cslib.Turing.SingleTapeTM.cellSymbol_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [Cell Symbol](cell-symbol.md)
 
 ## Sources
 

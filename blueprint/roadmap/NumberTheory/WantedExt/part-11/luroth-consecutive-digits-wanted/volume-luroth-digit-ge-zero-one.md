@@ -14,7 +14,7 @@ from Jager and de Vroedt (its reference [3]).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Digit Seq](luroth-digit-seq.md)
 
 ## Sources
 

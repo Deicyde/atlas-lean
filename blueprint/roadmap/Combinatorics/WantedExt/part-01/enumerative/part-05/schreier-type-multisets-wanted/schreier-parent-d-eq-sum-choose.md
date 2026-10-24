@@ -14,7 +14,7 @@ subtraction truncates only at `i = 0`, `n < u`, where both the paper's `binom(-1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Parent D](schreier-parent-d.md)
 
 ## Sources
 

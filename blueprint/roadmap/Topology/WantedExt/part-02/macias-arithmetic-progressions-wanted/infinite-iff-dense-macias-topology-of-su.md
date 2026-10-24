@@ -12,7 +12,7 @@ A nonempty set `A` of primes is infinite if and only if it is dense in the comax
 
 ## Depends on
 
-This node has no prerequisites.
+- [Macias Topology](../macias-coprime-topology-wanted/macias-topology.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: Cslib.Algorithms.Lean.AlphaBeta.alphaBeta_time_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
+- [Alpha Beta](alpha-beta.md)
+- [Leaves](leaves.md)
+
+## Proof depends on
+
+- [Alpha Beta List](alpha-beta-list.md)
+- [Leaves List](leaves-list.md)
 
 ## Sources
 

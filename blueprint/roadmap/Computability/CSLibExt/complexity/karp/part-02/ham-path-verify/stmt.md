@@ -13,6 +13,12 @@ Statements of the verifier.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [K](k.md)
+- [Lab](lab.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPathVerify](../../../../../../../sources/v2/CSLibExt.md)

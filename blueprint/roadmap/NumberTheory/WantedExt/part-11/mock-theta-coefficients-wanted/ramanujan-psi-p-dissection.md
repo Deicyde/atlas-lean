@@ -15,7 +15,7 @@ Cui and Gu, Theorem 2.1.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Theta Monomial](ramanujan-theta-monomial.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Theorem 1 (level construction): for a height function `H` and `n ≥ 1`, the lev
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Height Function](is-height-function.md)
 
 ## Sources
 

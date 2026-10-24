@@ -12,7 +12,9 @@ lean: Cslib.Turing.SingleTapeTM.FenceSymbol.read_ofCell
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
+- [Of Cell](of-cell.md)
+- [Read](read.md)
 
 ## Sources
 

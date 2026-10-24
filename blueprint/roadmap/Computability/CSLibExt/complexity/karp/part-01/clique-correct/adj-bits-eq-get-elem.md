@@ -12,7 +12,9 @@ On a valid instance, the bit of a pair `i < j < n` is the bit at the pair's inde
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adj Bits](../clique/adj-bits.md)
+- [Mem pairs](mem-pairs.md)
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

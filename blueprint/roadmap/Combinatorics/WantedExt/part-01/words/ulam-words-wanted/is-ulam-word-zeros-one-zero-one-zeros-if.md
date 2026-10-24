@@ -11,7 +11,7 @@ For `a + b ≥ 2`, `0^a 101 0^b` is Ulam iff `a + b` is odd.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ulam Word](is-ulam-word.md)
 
 ## Sources
 

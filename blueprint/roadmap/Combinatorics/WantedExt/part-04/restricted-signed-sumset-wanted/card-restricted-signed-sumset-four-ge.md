@@ -18,7 +18,9 @@ the `k = 5` specialization of this statement rather than a separate case.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Progression](odd-progression.md)
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
+- [Scale Finset](scale-finset.md)
 
 ## Sources
 

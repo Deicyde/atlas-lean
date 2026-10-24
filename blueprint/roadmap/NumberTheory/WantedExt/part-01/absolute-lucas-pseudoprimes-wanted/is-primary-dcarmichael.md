@@ -15,6 +15,11 @@ stated as `|sₚ(n) - εₙ| ≤ p - εₚ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is DCarmichael](is-dcarmichael.md)
+- [Lucas Digit Sum](lucas-digit-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.AbsoluteLucasPseudoprimesWanted](../../../../../sources/v2/WantedExt.md)

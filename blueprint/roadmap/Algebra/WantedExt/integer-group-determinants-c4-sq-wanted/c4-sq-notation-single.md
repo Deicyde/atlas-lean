@@ -13,7 +13,15 @@ For the identity indicator `a = δ_{(0,0)}` one has `b = c = (1, 0, 0, 0)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Sq B](c4-sq-b.md)
+- [C4 Sq Beta](c4-sq-beta.md)
+- [C4 Sq C](c4-sq-c.md)
+- [C4 Sq D](c4-sq-d.md)
+- [C4 Sq Gamma](c4-sq-gamma.md)
+
+## Proof depends on
+
+- [C4 Sq Alpha](c4-sq-alpha.md)
 
 ## Sources
 

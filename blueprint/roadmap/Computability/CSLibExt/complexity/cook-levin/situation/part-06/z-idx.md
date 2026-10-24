@@ -11,7 +11,12 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.zIdx
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+
+## Proof depends on
+
+- [C Idx](../../family/c-idx.md)
+- [Layout](../part-01/layout.md)
 
 ## Sources
 

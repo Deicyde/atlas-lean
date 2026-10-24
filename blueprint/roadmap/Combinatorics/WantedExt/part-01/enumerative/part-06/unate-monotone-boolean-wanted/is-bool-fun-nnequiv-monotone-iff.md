@@ -17,7 +17,8 @@ has exactly two elements is false for self-dual cases: for `n = 1` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bool Fun NNEquiv](is-bool-fun-nnequiv.md)
+- [Is Bool Fun Nondegenerate On](is-bool-fun-nondegenerate-on.md)
 
 ## Sources
 

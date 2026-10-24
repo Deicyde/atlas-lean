@@ -14,6 +14,10 @@ obtained from the other by a single actual substitution `a ↦ !a` or `!a ↦ a`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Keyword Simple Map](keyword-simple-map.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.KeywordSubstitutionClassesWanted](../../../../../../sources/v2/WantedExt.md)

@@ -14,6 +14,10 @@ colors; the explicit guard records the paper's positive-natural convention.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is RLarge](is-rlarge.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AccessibleSetsWanted](../../../../../sources/v2/WantedExt.md)

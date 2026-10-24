@@ -12,7 +12,7 @@ lean: MetaMathlibExt.remainderCount_eleven
 
 ## Depends on
 
-This node has no prerequisites.
+- [Remainder Count](remainder-count.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ an exact natural-number quotient).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Cubic Partition Count](generalized-cubic-partition-count.md)
 
 ## Sources
 

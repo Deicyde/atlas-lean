@@ -12,7 +12,12 @@ parent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
+
+## Proof depends on
+
+- [Last Parent](../variable-elimination/last-parent.md)
+- [Max Message](max-message.md)
 
 ## Sources
 

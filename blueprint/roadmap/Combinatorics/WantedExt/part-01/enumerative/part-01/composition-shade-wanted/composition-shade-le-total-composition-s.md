@@ -13,7 +13,8 @@ Each composition of `n` contributes its own shade: the total shade of the compos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Shade](composition-shade.md)
+- [Total Composition Shade](total-composition-shade.md)
 
 ## Sources
 

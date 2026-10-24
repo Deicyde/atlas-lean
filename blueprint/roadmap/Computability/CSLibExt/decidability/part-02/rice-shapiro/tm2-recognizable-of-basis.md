@@ -14,7 +14,14 @@ functions (finite graphs) in a recognizable set `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Recognizable](../../part-01/basic/tm2-recognizable.md)
+
+## Proof depends on
+
+- [Re Pred subgraph](re-pred-subgraph.md)
+- [Tm2 Recognizable iff re Pred](../../part-01/basic/tm2-recognizable-iff-re-pred.md)
+- [And](../../../../MathlibExt/re/and-2.md)
+- [Exists](../../../../MathlibExt/re/exists.md)
 
 ## Sources
 

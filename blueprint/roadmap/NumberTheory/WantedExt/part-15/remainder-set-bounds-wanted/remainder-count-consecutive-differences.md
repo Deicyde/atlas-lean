@@ -13,7 +13,7 @@ Theorem 2: for `n ≥ 1`, `s(n) - O(log log n) ≤ s(n+1) ≤ s(n) + 1`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Remainder Count](remainder-count.md)
 
 ## Sources
 

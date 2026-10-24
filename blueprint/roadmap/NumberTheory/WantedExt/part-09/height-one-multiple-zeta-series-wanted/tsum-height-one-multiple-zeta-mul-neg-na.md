@@ -15,7 +15,7 @@ with the Roman harmonic number `H_{r,k-1} = ∑_{i=1}^r (-1)^{i-1} C(r, i) i^{-(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height One Multiple Zeta](height-one-multiple-zeta.md)
 
 ## Sources
 

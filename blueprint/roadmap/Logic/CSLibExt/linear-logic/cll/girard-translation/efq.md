@@ -12,7 +12,7 @@ Ex falso `⊥ → B` translates to `ʔ⊤ ⅋ B°` when `⊥ ↦ 0`, which is pr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Girard's translation](translate.md)
 
 ## Sources
 

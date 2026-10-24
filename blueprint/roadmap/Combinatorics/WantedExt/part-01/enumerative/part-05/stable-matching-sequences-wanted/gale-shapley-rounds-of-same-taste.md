@@ -12,7 +12,8 @@ Gale–Shapley algorithm ends in exactly `n` rounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+- [Gale Shapley Rounds](gale-shapley-rounds.md)
 
 ## Sources
 

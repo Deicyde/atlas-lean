@@ -15,6 +15,11 @@ every `r`-coloring of the positive integers has a monochromatic positive
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is DDiff Sequence](is-ddiff-sequence.md)
+- [Is Monochromatic](is-monochromatic.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AccessibleSetsWanted](../../../../../sources/v2/WantedExt.md)

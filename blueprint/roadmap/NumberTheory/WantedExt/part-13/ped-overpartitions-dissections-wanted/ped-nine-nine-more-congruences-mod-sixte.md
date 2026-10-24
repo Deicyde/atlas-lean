@@ -21,7 +21,8 @@ Further congruences modulo `16` for `ped_{9,9}`: for all `n, α, β, γ ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ped Nine Nine](ped-nine-nine.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

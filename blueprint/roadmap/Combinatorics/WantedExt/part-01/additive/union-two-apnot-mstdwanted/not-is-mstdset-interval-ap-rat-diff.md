@@ -12,7 +12,9 @@ either `m ∈ [2, q - 1]` or (`m ≥ q` and `qd > n - 1`), `I_n ∪ J(x, m, d)` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](is-mstdset.md)
+- [Real APSet](real-apset.md)
+- [Real Interval Set](real-interval-set.md)
 
 ## Sources
 

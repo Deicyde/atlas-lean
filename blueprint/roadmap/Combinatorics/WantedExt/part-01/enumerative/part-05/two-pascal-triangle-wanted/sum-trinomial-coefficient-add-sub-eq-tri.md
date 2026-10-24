@@ -13,7 +13,8 @@ numbers (`T_0 = T_1 = 0`, `T_2 = 1`), so `T_{2n}` is the bisection A099463.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

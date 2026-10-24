@@ -16,7 +16,9 @@ and every index `k`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+- [Tilde](tilde.md)
+- [Generalized Multiple Polylog](generalized-multiple-polylog.md)
 
 ## Sources
 

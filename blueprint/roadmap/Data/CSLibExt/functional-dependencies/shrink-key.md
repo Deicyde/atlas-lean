@@ -12,7 +12,11 @@ leaves a superkey.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+
+## Proof depends on
+
+- [Attr Closure](attr-closure.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ The automaton `𝒜_{η,s}` for the seed `s = b|a`: from a new initial state `st
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Substitution Automaton](substitution-automaton.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.DumontThomasNumerationWanted](../../../../../../sources/v2/WantedExt.md)

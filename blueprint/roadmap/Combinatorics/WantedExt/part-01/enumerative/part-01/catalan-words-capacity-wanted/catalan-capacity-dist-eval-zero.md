@@ -13,7 +13,7 @@ zero-capacity Catalan words of length `n` ending in `i` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catalan Capacity Dist](catalan-capacity-dist.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ lean: MetaMathlibExt.sum_qpow_mul_qBracket_pow_eq_carlitzEta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carlitz Eta Poly](carlitz-eta-poly.md)
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

@@ -11,7 +11,14 @@ Encoded clauses of time step `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [Num Vars](num-vars.md)
+- [Dense Clause](dense-clause.md)
+- [Lits](lits.md)
+- [Encode Clause](../../dense-sat/encode-clause.md)
 
 ## Sources
 

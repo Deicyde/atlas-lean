@@ -17,6 +17,10 @@ The ordinary Davenport constant is `weightedDavenport {1} G`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Additive.WeightedDavenport](../../../../../../sources/v2/MathlibExt.md)

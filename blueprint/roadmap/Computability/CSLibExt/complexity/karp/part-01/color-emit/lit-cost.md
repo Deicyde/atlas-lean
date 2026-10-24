@@ -12,7 +12,7 @@ The cost of one literal, under the size invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Budget](budget.md)
 
 ## Sources
 

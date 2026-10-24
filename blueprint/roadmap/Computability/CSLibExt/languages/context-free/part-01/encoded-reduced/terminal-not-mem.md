@@ -12,7 +12,7 @@ A yield of the empty word uses no terminal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](../../part-02/yields/yields.md)
 
 ## Sources
 

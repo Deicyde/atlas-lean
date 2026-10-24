@@ -11,7 +11,11 @@ The theory is consistent: it does not prove the false sentence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal Theory](formal-theory.md)
+
+## Proof depends on
+
+- [False Sentence](false-sentence.md)
 
 ## Sources
 

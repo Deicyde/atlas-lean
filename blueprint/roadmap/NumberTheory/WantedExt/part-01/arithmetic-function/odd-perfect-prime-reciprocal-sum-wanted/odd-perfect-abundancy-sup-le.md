@@ -12,7 +12,7 @@ If `n` is an odd perfect number with least prime factor `p₁`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

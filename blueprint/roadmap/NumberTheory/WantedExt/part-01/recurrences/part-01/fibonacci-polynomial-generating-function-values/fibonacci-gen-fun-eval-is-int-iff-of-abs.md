@@ -13,7 +13,7 @@ interval of convergence `|q| < 2 / (a + √(a² + 4b))` of `f(t) = t / (1 - at -
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

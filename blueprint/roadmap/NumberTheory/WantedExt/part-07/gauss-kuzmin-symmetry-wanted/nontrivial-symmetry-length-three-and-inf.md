@@ -12,7 +12,7 @@ are infinitely many strings of `n` positive integers with a nontrivial symmetry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Nontrivial Symmetry](has-nontrivial-symmetry.md)
 
 ## Sources
 

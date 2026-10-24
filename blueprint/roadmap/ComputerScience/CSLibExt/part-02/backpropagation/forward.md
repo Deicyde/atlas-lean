@@ -11,7 +11,7 @@ The forward pass through the first `n` layers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Net](net.md)
 
 ## Sources
 

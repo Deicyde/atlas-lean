@@ -16,7 +16,7 @@ takes `h > 1`; the bound is vacuous for `h ≤ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sumset Trivial Elements](sumset-trivial-elements.md)
 
 ## Sources
 

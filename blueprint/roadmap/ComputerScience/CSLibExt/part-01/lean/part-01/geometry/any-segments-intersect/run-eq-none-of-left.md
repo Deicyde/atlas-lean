@@ -14,7 +14,29 @@ the sweep reports an intersection.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Events](events.md)
+- [Left](left.md)
+- [Right](right.md)
+- [Run](run.md)
+
+## Proof depends on
+
+- [Meets](meets.md)
+- [Below](below.md)
+- [Key](key.md)
+- [Point](point.md)
+- [Run mem iff](run-mem-iff.md)
+- [Phase two](run-pairwise-le.md)
+- [Step](step.md)
+- [Test](test.md)
+- [Test Opt](test-opt.md)
+- [Direction](../segment-intersection/direction.md)
+- [Direction eq line Y](direction-eq-line-y.md)
+- [Head? drop While eq of unique](head-drop-while-eq-of-unique.md)
+- [Line Y](line-y.md)
+- [Mem segment iff line Y](mem-segment-iff-line-y.md)
+- [Segments Intersect ret eq true iff](../segment-intersection/segments-intersect-ret-eq-true-iff.md)
 
 ## Sources
 

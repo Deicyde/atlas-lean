@@ -12,7 +12,8 @@ For `A = {0, a₁, …, a_{k-1}} ⊆ G` with `k` distinct elements, `1 ≤ α �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subset Sums](bounded-subset-sums.md)
+- [Generalized HFold Sumset](generalized-hfold-sumset.md)
 
 ## Sources
 

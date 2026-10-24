@@ -13,7 +13,11 @@ the last row carrying `σ` must exist.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination Signature](domination-signature.md)
+- [Domination State](domination-state.md)
+- [Is Domination Signature](is-domination-signature.md)
+- [Almost Dominating Polynomial](almost-dominating-polynomial.md)
+- [Domination Polynomial](domination-polynomial.md)
 
 ## Sources
 

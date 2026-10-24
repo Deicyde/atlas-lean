@@ -11,7 +11,7 @@ The page an event serves.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
 
 ## Sources
 

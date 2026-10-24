@@ -13,7 +13,11 @@ has the shortest description.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimal Code](minimal-code.md)
+
+## Proof depends on
+
+- [Desc Length](desc-length.md)
 
 ## Sources
 

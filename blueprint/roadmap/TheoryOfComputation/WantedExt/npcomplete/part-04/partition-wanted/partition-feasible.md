@@ -11,7 +11,7 @@ A sublist summing to half the total.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Instance](partition-instance.md)
 
 ## Sources
 

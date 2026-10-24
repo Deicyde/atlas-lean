@@ -11,7 +11,12 @@ The machine has halted within `t` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Machine](machine.md)
+
+## Proof depends on
+
+- [Config](config.md)
+- [Run](run.md)
 
 ## Sources
 

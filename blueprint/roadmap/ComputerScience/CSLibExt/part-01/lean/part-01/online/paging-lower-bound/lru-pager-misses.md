@@ -12,7 +12,14 @@ The online pager `lruPager` misses exactly as `lruMisses` counts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online paging algorithm with cache size...](a-deterministic-online-paging-algorithm.md)
+- [Misses](misses.md)
+- [Lru Misses](../paging/lru-misses.md)
+- [LRU as an online pager](lru-as-an-online-pager.md)
+
+## Proof depends on
+
+- [Lru Step](../paging/lru-step.md)
 
 ## Sources
 

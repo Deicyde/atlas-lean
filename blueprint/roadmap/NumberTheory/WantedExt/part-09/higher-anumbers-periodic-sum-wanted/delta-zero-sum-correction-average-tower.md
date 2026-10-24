@@ -13,7 +13,11 @@ The coefficient of `n` in Proposition 5 vanishes for `x = τ`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDigit Average](base-pdigit-average.md)
+- [Base PPeriod](base-pperiod.md)
+- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [Tau Den](tau-den.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

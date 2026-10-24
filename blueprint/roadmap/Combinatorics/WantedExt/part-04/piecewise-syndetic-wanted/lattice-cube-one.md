@@ -12,7 +12,11 @@ A lattice cube of side `1` is a single point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Cube](lattice-cube.md)
+
+## Proof depends on
+
+- [Mem lattice Cube](mem-lattice-cube.md)
 
 ## Sources
 

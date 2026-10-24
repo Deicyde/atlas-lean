@@ -14,6 +14,10 @@ Elements of norm `q ^ (2 * n)` for inert `q` are units times `q ^ n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inert peel](inert-peel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZsqrtdNormFactorization](../../../../../sources/v2/MathlibExt.md)

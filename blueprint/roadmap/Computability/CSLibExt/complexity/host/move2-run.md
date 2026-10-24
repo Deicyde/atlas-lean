@@ -13,7 +13,15 @@ re-encoded by `g` and in the original order, in `2 |x| + 2` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ends Bit Block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
+- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
+- [Is Bit Block](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Move B](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+
+## Proof depends on
+
+- [Move B run](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

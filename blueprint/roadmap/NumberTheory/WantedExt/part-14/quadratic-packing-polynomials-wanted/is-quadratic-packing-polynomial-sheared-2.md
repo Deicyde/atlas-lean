@@ -15,7 +15,9 @@ is a QPP on `Î(n/m) = M(I(n/m))`, `M(x, y) = (x - (m-1)/n y, y)`, if and only i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
+- [Sector Lattice Points](sector-lattice-points.md)
+- [Staircase First Height](staircase-first-height.md)
 
 ## Sources
 

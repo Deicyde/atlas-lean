@@ -13,7 +13,7 @@ record prints `n + 1 = ...`; that is false and the proof's identity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

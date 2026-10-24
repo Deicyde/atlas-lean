@@ -13,7 +13,7 @@ occurrence and each earlier one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](../color/col-st.md)
 
 ## Sources
 

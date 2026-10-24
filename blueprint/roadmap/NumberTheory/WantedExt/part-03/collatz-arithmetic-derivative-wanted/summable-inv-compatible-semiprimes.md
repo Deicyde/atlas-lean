@@ -11,7 +11,7 @@ The sum of the reciprocals of the semiprimes compatible with another semiprime c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
 
 ## Sources
 

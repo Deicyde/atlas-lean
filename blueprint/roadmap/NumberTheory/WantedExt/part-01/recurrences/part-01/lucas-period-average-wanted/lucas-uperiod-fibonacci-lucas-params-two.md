@@ -12,7 +12,12 @@ The Fibonacci sequence has period `3` modulo `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Lucas Params](../../../../../MathlibExt/part-08/lucas-sequence/fibonacci-lucas-params.md)
+- [Lucas UPeriod](lucas-uperiod.md)
+
+## Proof depends on
+
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

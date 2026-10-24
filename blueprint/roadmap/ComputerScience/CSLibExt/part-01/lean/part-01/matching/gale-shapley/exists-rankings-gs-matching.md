@@ -15,7 +15,23 @@ stable matchings.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The Gale-Shapley matching](gs-matching.md)
+- [Mprefs](mprefs.md)
+- [Wprefs](wprefs.md)
+- [Is Stable](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
+- [MPrefs](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/mprefs.md)
+- [Perfect Matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
+- [Lt](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/lt.md)
+- [WPrefs](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/wprefs.md)
+
+## Proof depends on
+
+- [Every strict total order on `Fin n` is given by a ranking](exists-to-order-eq.md)
+- [Proposer-optimality](gs-matching-proposer-optimal.md)
+- [The Gale-Shapley matching is stable](is-stable-gs-matching.md)
+- [To Order](to-order.md)
+- [Strict Total Order](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/strict-total-order.md)
+- [Strict Total Order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

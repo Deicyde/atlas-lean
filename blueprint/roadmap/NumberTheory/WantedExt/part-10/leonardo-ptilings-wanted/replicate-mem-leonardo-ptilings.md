@@ -12,7 +12,7 @@ The all-squares tiling lies in `K_{p,n}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leonardo PTilings](leonardo-ptilings.md)
 
 ## Sources
 

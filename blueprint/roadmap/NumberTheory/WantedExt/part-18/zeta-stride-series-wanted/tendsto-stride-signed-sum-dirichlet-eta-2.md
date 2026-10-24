@@ -13,7 +13,7 @@ partial sums).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Signed Sum](stride-signed-sum.md)
 
 ## Sources
 

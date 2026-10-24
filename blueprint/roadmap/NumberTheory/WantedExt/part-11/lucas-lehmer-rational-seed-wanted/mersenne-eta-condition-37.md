@@ -13,7 +13,7 @@ For `s_1 = 37` (`s_1^- = 35`, `s_1^+ = 39`), condition (etar) holds for `n = 7` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mersenne Eta Condition](mersenne-eta-condition.md)
 
 ## Sources
 

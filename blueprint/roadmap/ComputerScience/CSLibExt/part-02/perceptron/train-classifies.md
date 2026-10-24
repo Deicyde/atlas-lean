@@ -12,7 +12,13 @@ The weights `train` returns classify every example strictly correctly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sign](sign.md)
+- [Train](train.md)
+
+## Proof depends on
+
+- [Classifies of run eq zero](classifies-of-run-eq-zero.md)
+- [Run](run.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ The table is a correct syndrome table for one error.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H](h.md)
+- [Table](table.md)
+- [Is Syndrome Table](../linear-code/is-syndrome-table.md)
+
+## Proof depends on
+
+- [Syndrome](../linear-code/syndrome.md)
 
 ## Sources
 

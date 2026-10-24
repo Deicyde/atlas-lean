@@ -12,7 +12,7 @@ lean: MetaMathlibExt.binomidShift_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomid Shift](binomid-shift.md)
 
 ## Sources
 

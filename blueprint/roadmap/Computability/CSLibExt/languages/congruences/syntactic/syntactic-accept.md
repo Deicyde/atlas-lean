@@ -11,7 +11,12 @@ The accepting subset of the syntactic monoid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](syntactic-monoid.md)
+
+## Proof depends on
+
+- [Syntactic Con](syntactic-con.md)
+- [Syntactic Rel mem iff](syntactic-rel-mem-iff.md)
 
 ## Sources
 

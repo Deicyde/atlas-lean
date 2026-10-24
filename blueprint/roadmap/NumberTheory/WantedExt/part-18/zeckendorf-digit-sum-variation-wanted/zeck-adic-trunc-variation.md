@@ -14,6 +14,10 @@ The truncated variation `Δ_k^{(r)}(x) = s_k(x + r) - s_k(x)`, where
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zeck Odometer](zeck-odometer.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ZeckendorfDigitSumVariationWanted](../../../../../sources/v2/WantedExt.md)

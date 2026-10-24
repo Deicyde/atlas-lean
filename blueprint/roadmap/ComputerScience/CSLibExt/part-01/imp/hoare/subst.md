@@ -11,7 +11,13 @@ Substitute an arithmetic expression for a variable in an assertion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [AExp](../syntax/aexp.md)
+- [Assertion](assertion.md)
+
+## Proof depends on
+
+- [Eval](../syntax/eval.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ for all finite laws. When `p` charges an outcome `q` rules out, both sides are `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross Entropy](cross-entropy.md)
+- [Shannon Entropy](shannon-entropy.md)
+
+## Proof depends on
+
+- [Surprisal](surprisal.md)
+- [To Real kl Div to Measure](to-real-kl-div-to-measure.md)
 
 ## Sources
 

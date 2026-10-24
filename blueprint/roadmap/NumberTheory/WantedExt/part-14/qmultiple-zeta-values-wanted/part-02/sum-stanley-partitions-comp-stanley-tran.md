@@ -12,7 +12,8 @@ transposition `ρ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stanley Partitions](stanley-partitions.md)
+- [Stanley Transpose](stanley-transpose.md)
 
 ## Sources
 

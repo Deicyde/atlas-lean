@@ -12,7 +12,8 @@ lean: Cslib.Automata.Thompson.card_state
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Num States](num-states.md)
 
 ## Sources
 

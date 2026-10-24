@@ -183,7 +183,13 @@ theorem colorable_of_cnfSat {φ : CNF} (h : CNFSat φ) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col Proper](col-proper.md)
+- [Col St](../color/col-st.md)
+- [Col Or](../color/col-or.md)
+
+## Proof depends on
+
+- [Or gadget sound](or-gadget-sound.md)
 
 ## Sources
 

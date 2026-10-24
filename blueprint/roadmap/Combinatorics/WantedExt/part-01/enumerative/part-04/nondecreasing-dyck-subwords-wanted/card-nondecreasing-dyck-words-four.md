@@ -13,7 +13,7 @@ except `UUDUDDUD`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondecreasing Dyck Words](nondecreasing-dyck-words.md)
 
 ## Sources
 

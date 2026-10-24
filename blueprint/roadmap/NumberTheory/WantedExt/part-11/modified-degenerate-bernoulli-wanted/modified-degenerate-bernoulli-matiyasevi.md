@@ -13,7 +13,7 @@ Corollary 2, Matiyasevich-Dunne-Schubert-type identity: for `n ≥ 4` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ points, the weak hypothesis has weighted error in `(0, 1 / 2 - γ]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Err](err.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.AdaBoost](../../../../../sources/v2/CSLibExt.md)

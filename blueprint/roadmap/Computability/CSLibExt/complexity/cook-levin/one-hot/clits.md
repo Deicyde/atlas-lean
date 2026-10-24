@@ -11,7 +11,13 @@ Literals of clause kind `c` in the cell with base `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CL](cl.md)
+
+## Proof depends on
+
+- [Nl](nl.md)
+- [Off](off.md)
+- [Sg](sg.md)
 
 ## Sources
 

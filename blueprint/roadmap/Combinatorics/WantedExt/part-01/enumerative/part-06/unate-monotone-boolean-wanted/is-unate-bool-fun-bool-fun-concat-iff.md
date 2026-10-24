@@ -13,7 +13,10 @@ Proposition 6: `g || h` is unate if and only if `g` and `h` are unate,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bool Fun Decreasing In](is-bool-fun-decreasing-in.md)
+- [Is Bool Fun Increasing In](is-bool-fun-increasing-in.md)
+- [Is Unate Bool Fun](is-unate-bool-fun.md)
+- [Bool Fun Concat](bool-fun-concat.md)
 
 ## Sources
 

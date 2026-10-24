@@ -12,7 +12,8 @@ function `L(q) = ∑_{k ≥ 0} (P(q) - T_q(k))` (a sum in the coefficientwise to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lit Cells Decreasing](lit-cells-decreasing.md)
+- [Triangle Partition Series](triangle-partition-series.md)
 
 ## Sources
 

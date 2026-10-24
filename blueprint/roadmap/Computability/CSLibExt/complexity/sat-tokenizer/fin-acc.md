@@ -43,7 +43,16 @@ theorem clauses_fail : ∀ (n : ℕ) (r w : List Bool) (t b : List Sym) (v : Boo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Single](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

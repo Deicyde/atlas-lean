@@ -12,7 +12,12 @@ lean: MetaMathlibExt.boundedDiffSetNumber_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Diff Set Number](bounded-diff-set-number.md)
+
+## Proof depends on
+
+- [Bounded Diff Set Number le](bounded-diff-set-number-le.md)
+- [Sub Rep Count](sub-rep-count.md)
 
 ## Sources
 

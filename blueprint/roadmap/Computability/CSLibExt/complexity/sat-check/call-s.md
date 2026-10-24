@@ -11,7 +11,13 @@ Pop the top of `T` and push `bit p` on `P`, then start the lookup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [DLab](dlab.md)
+- [K](k.md)
+- [Sym](../sat-verifier-spec/sym.md)
 
 ## Sources
 

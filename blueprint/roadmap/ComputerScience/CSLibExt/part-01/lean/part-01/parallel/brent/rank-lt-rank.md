@@ -12,7 +12,9 @@ Ranks are distinct within a level.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+- [Depth](depth.md)
+- [Rank](rank.md)
 
 ## Sources
 

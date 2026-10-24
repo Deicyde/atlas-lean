@@ -11,7 +11,11 @@ Every lock is released later in the schedule, so transactions end holding no loc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+
+## Proof depends on
+
+- [Lock Mode](lock-mode.md)
 
 ## Sources
 

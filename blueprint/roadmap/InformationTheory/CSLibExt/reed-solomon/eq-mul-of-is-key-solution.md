@@ -15,7 +15,12 @@ points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Key Solution](is-key-solution.md)
+- [Encode](encode.md)
+
+## Proof depends on
+
+- [Card eval eq zero le](card-eval-eq-zero-le.md)
 
 ## Sources
 

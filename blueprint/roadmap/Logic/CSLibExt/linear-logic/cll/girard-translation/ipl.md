@@ -12,7 +12,13 @@ lean: Cslib.Logic.CLL.Girard.ipl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Girard's translation](translate.md)
+
+## Proof depends on
+
+- [Girard's translation preserves provability](derivable-of-derivation.md)
+- [Efq](efq.md)
+- [Hyps](hyps.md)
 
 ## Sources
 

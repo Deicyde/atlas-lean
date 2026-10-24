@@ -11,7 +11,8 @@ BZ-qMZVs of admissible indices span `𝒵_{q,1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz QMZV](bz-qmzv.md)
+- [Q MZVSpace](q-mzvspace.md)
 
 ## Sources
 

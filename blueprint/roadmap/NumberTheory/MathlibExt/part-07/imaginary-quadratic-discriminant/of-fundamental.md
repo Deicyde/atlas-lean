@@ -11,7 +11,8 @@ Construct a decomposition from its conductor, fundamental discriminant, and equa
 
 ## Depends on
 
-- [Is Fundamental Discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
+- [Imaginary Quadratic Discriminant Decomposition](imaginary-quadratic-discriminant-decompo.md)
+- [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
 
 ## Sources
 

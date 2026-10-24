@@ -14,6 +14,10 @@ lean: GaussianInt.gaussianInt_prime_one_add_I
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gaussian Int prime of nat Abs norm prime](gaussian-int-prime-of-nat-abs-norm-prime.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GaussianIntPrimeBasics](../../../../../sources/v2/MathlibExt.md)

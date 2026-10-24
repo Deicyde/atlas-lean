@@ -15,7 +15,7 @@ Formalization deviation: none beyond the representation choices stated above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus Shift Sum](torus-shift-sum.md)
 
 ## Sources
 

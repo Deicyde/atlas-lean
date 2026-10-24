@@ -11,7 +11,8 @@ A Lehmer factorization having `1` as a base is trivial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spoof Lehmer](is-spoof-lehmer.md)
+- [Is Trivial Spoof](is-trivial-spoof.md)
 
 ## Sources
 

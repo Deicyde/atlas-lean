@@ -17,7 +17,7 @@ point but which is not globally Hölder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem83 Claim](scottish-book-problem83-claim.md)
 
 ## Sources
 

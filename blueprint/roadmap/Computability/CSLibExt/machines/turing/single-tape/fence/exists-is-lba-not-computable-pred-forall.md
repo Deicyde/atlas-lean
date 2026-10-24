@@ -25,7 +25,19 @@ the slice of `c` and then runs `F` has empty language iff `F` halts on no input 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
+- [Halts On](../classes/halts-on.md)
+- [Is LBA](../space-bounded/is-lba.md)
+- [Fence Input](fence-input.md)
+
+## Proof depends on
+
+- [Single Tape Recognizable](../classes/single-tape-recognizable.md)
+- [Single Tape Recognizable halting](../bridge/single-tape-recognizable-halting.md)
+- [The fenced machine](fence.md)
+- [Forall not halts On fence iff](forall-not-halts-on-fence-iff.md)
+- [The fenced machine is a linear bounded automaton](is-lba-fence.md)
+- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

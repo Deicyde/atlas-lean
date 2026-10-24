@@ -13,7 +13,9 @@ Let `α` be irrational with convergents `P_n / Q_n`. (i) If `|α| ≥ 1`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Is Irrational](laurent-is-irrational.md)
+- [Laurent Conv Den](laurent-conv-den.md)
+- [Laurent Conv Num](laurent-conv-num.md)
 
 ## Sources
 

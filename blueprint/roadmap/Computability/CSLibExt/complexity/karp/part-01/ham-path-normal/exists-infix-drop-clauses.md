@@ -12,7 +12,17 @@ Every vertex of `dropClauses φ p` but the last top has a successor there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ham Path](../ham-path/is-ham-path.md)
+- [Drop Clauses](drop-clauses.md)
+- [Ham Edges](../ham-path/ham-edges.md)
+- [Ham Vars](../ham-path/ham-vars.md)
+- [Hp T](../ham-path/hp-t.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Arc](../../../path/arc.md)
 
 ## Sources
 

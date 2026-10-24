@@ -11,7 +11,11 @@ The Viterbi variables, tabulated step by step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+
+## Proof depends on
+
+- [Viterbi Step](viterbi-step.md)
 
 ## Sources
 

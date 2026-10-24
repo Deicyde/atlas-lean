@@ -13,7 +13,7 @@ decreasing enumerations of `K` and of its `n`-th derived set by `[0, ω^ω]`, th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
 
 ## Sources
 

@@ -12,7 +12,10 @@ lean: Cslib.Algorithms.Lean.Online.Paging.lru_tr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](../../greedy/offline-caching/cache-event.md)
+- [Cache LTS](../../greedy/offline-caching/cache-lts.md)
+- [Lru Event](lru-event.md)
+- [Lru Step](lru-step.md)
 
 ## Sources
 

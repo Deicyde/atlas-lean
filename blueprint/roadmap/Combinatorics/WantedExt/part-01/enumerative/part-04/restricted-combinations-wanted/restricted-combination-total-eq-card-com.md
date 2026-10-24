@@ -16,7 +16,8 @@ of the `Q`-comb. Parts are positive (Mathlib `Composition`), so the finite part 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metatiles Have At Most Two Combs](metatiles-have-at-most-two-combs.md)
+- [Restricted Combination Total](restricted-combination-total.md)
 
 ## Sources
 

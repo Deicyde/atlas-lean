@@ -12,7 +12,7 @@ lean: MetaMathlibExt.canonicalLucasSplitting_six
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical Lucas Splitting](canonical-lucas-splitting.md)
 
 ## Sources
 

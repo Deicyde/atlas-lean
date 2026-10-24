@@ -12,7 +12,12 @@ A bit list not ending in `false` is the binary code of its value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+
+## Proof depends on
+
+- [Bits Val cons](bits-val-cons.md)
+- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

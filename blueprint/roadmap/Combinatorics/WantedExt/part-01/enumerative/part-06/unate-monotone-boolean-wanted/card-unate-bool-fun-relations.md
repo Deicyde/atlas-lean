@@ -14,7 +14,9 @@ restricts to non-degenerate functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
+- [Is Unate Bool Fun](is-unate-bool-fun.md)
+- [Bool Fun Weight](bool-fun-weight.md)
 
 ## Sources
 

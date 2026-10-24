@@ -13,7 +13,7 @@ integers, the frequency of the indices `i` with `a_{i+1}(x) = a₁, …, a_{i+n}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ on whether their `a`-successor is in `C`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rel](rel.md)
+- [Preimage](preimage.md)
+- [Round P](round-p.md)
+
+## Proof depends on
+
+- [Splits](splits.md)
+- [Side of mem split Block](side-of-mem-split-block.md)
+- [Split Block](split-block.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ precondition is its invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [ACmd](acmd.md)
+- [Assertion](../hoare/assertion.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Subst](../hoare/subst.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

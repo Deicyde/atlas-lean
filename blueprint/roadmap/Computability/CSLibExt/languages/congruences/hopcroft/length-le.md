@@ -12,7 +12,7 @@ A partition into nonempty blocks has at most `|Q|` blocks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Partition](is-partition.md)
 
 ## Sources
 

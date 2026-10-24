@@ -11,7 +11,13 @@ Start an edge: accept if `X` is exhausted, else read the endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [K](k.md)
+- [Lab](lab.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

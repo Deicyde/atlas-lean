@@ -120,7 +120,8 @@ theorem neg_bits (s : MS) (m i j : ℕ) (hd : s.d = hpR m i (3 * j + 1)) (hj : s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Lit Toks](../../../sat-verifier-spec/lit-toks.md)
 
 ## Sources
 

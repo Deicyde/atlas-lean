@@ -12,7 +12,7 @@ The partition of `Fin n` into singletons has genus `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Partition Genus](set-partition-genus.md)
 
 ## Sources
 

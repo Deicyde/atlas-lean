@@ -13,7 +13,12 @@ A store-irrelevant frame always satisfies the side condition of
 
 ## Depends on
 
-This node has no prerequisites.
+- [HAssertion](../separation-logic/hassertion.md)
+- [Heap](../heap/heap.md)
+- [Heap Cmd](../heap-step/heap-cmd.md)
+- [Mod Vars](../heap-step/mod-vars.md)
+- [State](../syntax/state.md)
+- [Store Irrel](store-irrel.md)
 
 ## Sources
 

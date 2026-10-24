@@ -17,6 +17,10 @@ numbers `p < q`. As in the source, the upper Wythoff numbers are the positions o
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Inf](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

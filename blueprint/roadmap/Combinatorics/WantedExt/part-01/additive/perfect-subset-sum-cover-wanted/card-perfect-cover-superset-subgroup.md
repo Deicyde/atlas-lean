@@ -12,7 +12,8 @@ If `H` is a subgroup of order `2^m` of an abelian group `G` of order `2^n`, exac
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Cover](is-perfect-cover.md)
+- [Count](count.md)
 
 ## Sources
 

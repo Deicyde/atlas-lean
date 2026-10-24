@@ -12,7 +12,14 @@ bound `N` and `2N` is generated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Membership test](mem-language-b.md)
+- [Pump Bound](pump-bound.md)
+- [Terminals](terminals.md)
+- [Words Over](words-over.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The `x`-component `√(d Y² - 1)` of the least positive integral solution
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Neg Pell Fund Y](neg-pell-fund-y.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralPellBisectorsWanted](../../../../../sources/v2/WantedExt.md)

@@ -11,7 +11,12 @@ The PRF advantage `|Pr[D = 1 | F k] - Pr[D = 1 | random function]|`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+
+## Proof depends on
+
+- [Prf Rand](prf-rand.md)
+- [Prf Real](prf-real.md)
 
 ## Sources
 

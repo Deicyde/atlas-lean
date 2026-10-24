@@ -15,7 +15,8 @@ reduced position `p` leads to a position that is not reduced, then, with `a = mi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Reduced](slow-anim-reduced.md)
+- [Slow ANim After](slow-anim-after.md)
 
 ## Sources
 

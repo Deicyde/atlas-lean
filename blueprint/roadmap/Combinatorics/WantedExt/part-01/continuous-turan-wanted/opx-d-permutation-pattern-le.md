@@ -13,7 +13,7 @@ two points share a coordinate and consecutive values of each coordinate are at m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

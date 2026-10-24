@@ -11,7 +11,13 @@ The end domino `(⋆◇, ◇)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](domino.md)
+- [Sym](sym.md)
+
+## Proof depends on
+
+- [End Mark](end-mark.md)
+- [Star](star.md)
 
 ## Sources
 

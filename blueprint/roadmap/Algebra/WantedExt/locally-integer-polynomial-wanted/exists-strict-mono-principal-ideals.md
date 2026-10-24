@@ -12,7 +12,7 @@ principal ideals (so it is not Noetherian).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.pascalExpFirstColumn_of_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pascal Exp First Column](pascal-exp-first-column.md)
 
 ## Sources
 

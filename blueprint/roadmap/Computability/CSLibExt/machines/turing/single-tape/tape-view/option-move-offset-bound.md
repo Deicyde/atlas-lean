@@ -12,7 +12,7 @@ An optional move shifts by at most one cell.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Option Move Offset](option-move-offset.md)
 
 ## Sources
 

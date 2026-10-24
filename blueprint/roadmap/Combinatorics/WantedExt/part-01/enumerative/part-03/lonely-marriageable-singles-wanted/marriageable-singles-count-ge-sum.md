@@ -16,7 +16,8 @@ binomials with a negative argument being `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marriageable Singles Count](marriageable-singles-count.md)
+- [Zero Extended Choose](zero-extended-choose.md)
 
 ## Sources
 

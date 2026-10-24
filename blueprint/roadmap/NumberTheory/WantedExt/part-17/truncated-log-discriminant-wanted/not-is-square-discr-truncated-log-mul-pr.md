@@ -12,7 +12,8 @@ rational square.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Exceptional Primes](truncated-log-exceptional-primes.md)
+- [Truncated Log Polynomial](truncated-log-polynomial.md)
 
 ## Sources
 

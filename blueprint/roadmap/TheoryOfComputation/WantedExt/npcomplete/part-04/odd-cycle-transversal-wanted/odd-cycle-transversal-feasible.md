@@ -11,7 +11,11 @@ At most `K` vertices whose removal leaves a bipartite graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Cycle Transversal Instance](odd-cycle-transversal-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

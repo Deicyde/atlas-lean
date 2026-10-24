@@ -12,7 +12,7 @@ lean: MetaMathlibExt.lurothDigit_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Digit](luroth-digit.md)
 
 ## Sources
 

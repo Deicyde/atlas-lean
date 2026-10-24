@@ -14,7 +14,9 @@ word with letters `kᵢ ≥ 1` and first letter `≠ 1` has this shape, so it is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz QMZV](../part-01/sz-qmzv.md)
+- [Tbz QMZV](../part-03/tbz-qmzv.md)
+- [Tbz To SZ](tbz-to-sz.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ digit), so `r[0] = 0` and `r[ρ(r)] = r`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zeck Blocks](zeck-blocks.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ZeckendorfDigitSumVariationWanted](../../../../../sources/v2/WantedExt.md)

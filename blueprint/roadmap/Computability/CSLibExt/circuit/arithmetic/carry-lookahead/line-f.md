@@ -12,7 +12,15 @@ carry `c_{i+1} = G_i ∨ (P_i ∧ c)`, role `2` the sum bit `p_i ⊕ c_i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Base](level-base.md)
+- [Arith Signature](../ripple-carry/arith-signature.md)
+
+## Proof depends on
+
+- [Arith Gate](../ripple-carry/arith-gate.md)
+- [G Num](g-num.md)
+- [P Num](p-num.md)
+- [Bin Line](../ripple-carry/bin-line.md)
 
 ## Sources
 

@@ -17,7 +17,8 @@ divisors are non-zero-divisors in `ℝ⟦t⟧`), and `1 - e^{-t}` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hoffman Dual](hoffman-dual.md)
+- [Multiple Polylog Star](multiple-polylog-star.md)
 
 ## Sources
 

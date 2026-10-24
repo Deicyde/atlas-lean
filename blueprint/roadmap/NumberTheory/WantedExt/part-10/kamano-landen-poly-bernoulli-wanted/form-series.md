@@ -11,7 +11,11 @@ The power series `u · ∑_i w_i G_{g_i}(u)` of the weighted differential form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+
+## Proof depends on
+
+- [Landen Form Series](landen-form-series.md)
 
 ## Sources
 

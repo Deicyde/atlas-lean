@@ -16,7 +16,7 @@ Article 26.3.8, Proposition 17.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gobel ASequence](is-gobel-asequence.md)
 
 ## Sources
 

@@ -15,7 +15,8 @@ Quarter shift `1/4`: for integers `k ≥ 0`, `p > m ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sum Beta Period Algebra](euler-sum-beta-period-algebra.md)
+- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
 
 ## Sources
 

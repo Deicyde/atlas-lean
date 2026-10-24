@@ -13,7 +13,8 @@ heights `2`, `1`, `1`, and `11111` has none.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Peak Count](symmetric-peak-count.md)
+- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
 
 ## Sources
 

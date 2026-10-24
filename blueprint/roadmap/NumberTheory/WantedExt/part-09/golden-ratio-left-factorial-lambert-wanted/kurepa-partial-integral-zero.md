@@ -12,7 +12,7 @@ The partial integral vanishes at `x = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kurepa Partial Integral](kurepa-partial-integral.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MetaMathlibExt.degenerateEuler_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Euler](degenerate-euler.md)
+
+## Proof depends on
+
+- [Constant Coeff degenerate Exp Series](constant-coeff-degenerate-exp-series.md)
+- [Degenerate Exp Series](degenerate-exp-series.md)
 
 ## Sources
 

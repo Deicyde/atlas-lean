@@ -16,7 +16,7 @@ from reference [2], Lemma 2.3.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

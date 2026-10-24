@@ -14,6 +14,10 @@ lean: InformationTheory.toReal_klDiv_toMeasure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kullback–Leibler divergence on a finite space](to-real-kl-div-eq-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.FiniteEntropy](../../../../sources/v2/MathlibExt.md)

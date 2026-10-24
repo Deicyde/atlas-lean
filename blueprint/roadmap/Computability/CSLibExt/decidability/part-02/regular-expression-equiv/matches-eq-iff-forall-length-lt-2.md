@@ -13,7 +13,16 @@ shorter than `eqBound`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](../regular-expression/encoded-regex.md)
+- [Eq Bound](eq-bound.md)
+- [To Regex](../regular-expression/to-regex.md)
+
+## Proof depends on
+
+- [Short distinguishing words](matches-eq-iff-forall-length-lt.md)
+- [Num States](../../../automata/epsilon-na/thompson/num-states.md)
+- [Num Thompson States](num-thompson-states.md)
+- [The pass counts the states of Thompson's automaton](num-thompson-states-eq.md)
 
 ## Sources
 

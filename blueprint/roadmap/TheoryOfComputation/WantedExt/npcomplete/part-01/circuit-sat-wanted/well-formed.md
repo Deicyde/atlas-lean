@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Sat Instance](circuit-sat-instance.md)
 
 ## Sources
 

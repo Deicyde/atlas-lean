@@ -11,7 +11,7 @@ An assignment satisfying all domains and constraints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Csp Instance](binary-csp-instance.md)
 
 ## Sources
 

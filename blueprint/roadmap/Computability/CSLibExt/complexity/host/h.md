@@ -11,7 +11,8 @@ Host alphabets: `α` on the input, the component's alphabets on its stacks, bits
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HK](hk.md)
 
 ## Sources
 

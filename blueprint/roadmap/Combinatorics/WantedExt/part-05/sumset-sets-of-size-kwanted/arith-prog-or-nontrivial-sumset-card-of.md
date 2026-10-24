@@ -17,7 +17,7 @@ nontrivial elements.  The paper takes `h > 1`; the second alternative is vacuous
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sumset Trivial Elements](sumset-trivial-elements.md)
 
 ## Sources
 

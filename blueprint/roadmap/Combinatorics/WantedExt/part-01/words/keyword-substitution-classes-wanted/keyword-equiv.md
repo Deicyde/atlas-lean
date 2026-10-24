@@ -14,6 +14,10 @@ composition of simple maps sends `u` to `v` (the empty composition included).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Keyword Simple Map](keyword-simple-map.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.KeywordSubstitutionClassesWanted](../../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,12 @@ plus `ʔ(A°⫠)`, up to weakening when `A` was already in `Γ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyp](hyp.md)
+- [Hyps](hyps.md)
+
+## Proof depends on
+
+- [Girard's translation](translate.md)
 
 ## Sources
 

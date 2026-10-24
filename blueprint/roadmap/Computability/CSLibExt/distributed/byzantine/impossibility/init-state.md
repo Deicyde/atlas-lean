@@ -11,7 +11,7 @@ The initial state of general `i` when the commander `c` has the order `v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
 
 ## Sources
 

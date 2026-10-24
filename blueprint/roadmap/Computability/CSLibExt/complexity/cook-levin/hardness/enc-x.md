@@ -11,7 +11,14 @@ lean: Cslib.Complexity.CookLevin.Hardness.encX
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../situation/part-01/enc.md)
+
+## Proof depends on
+
+- [Sym Set X](sym-set-x.md)
+- [Push Sym](../situation/part-01/push-sym.md)
+- [Push FS](../situation/part-02/push-fs.md)
+- [B2's `Γfin k`](../situation/part-02/sym-set.md)
 
 ## Sources
 

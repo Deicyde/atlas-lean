@@ -12,7 +12,7 @@ Characteristic value: `κ_2(2, 2) = 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer Kappa](lehmer-kappa.md)
 
 ## Sources
 

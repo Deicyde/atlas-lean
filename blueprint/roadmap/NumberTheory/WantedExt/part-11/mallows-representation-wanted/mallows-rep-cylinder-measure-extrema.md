@@ -13,7 +13,8 @@ stated for all `ℓ`, including `ℓ = 0` where both values are `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
 
 ## Sources
 

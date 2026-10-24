@@ -12,7 +12,14 @@ Ones are created one per step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Machine](machine.md)
+- [Ones At](ones-at.md)
+
+## Proof depends on
+
+- [Config](config.md)
+- [Ones At succ le](ones-at-succ-le.md)
+- [Run](run.md)
 
 ## Sources
 

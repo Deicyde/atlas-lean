@@ -13,6 +13,11 @@ The union of the real and imaginary axes.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Imag Axis](imag-axis.md)
+- [Real Axis](real-axis.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.Complex.ContinuousHolomorphicOffAxesEntireWanted](../../../../../../../sources/v2/WantedExt.md)

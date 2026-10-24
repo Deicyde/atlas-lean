@@ -12,7 +12,13 @@ The cleanup empties exactly the stacks other than the output.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HK](hk.md)
+- [Clean Ks](clean-ks.md)
+
+## Proof depends on
+
+- [All Ks](all-ks.md)
 
 ## Sources
 

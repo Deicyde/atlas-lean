@@ -13,7 +13,8 @@ of the maps `S_{2,b}` and `I(t) = t + 1` (the list `ops`, `true` for `S_{2,b}`),
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Neg Base Good](is-neg-base-good.md)
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
 
 ## Sources
 

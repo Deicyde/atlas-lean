@@ -12,7 +12,7 @@ For `q = 4`, `s_4 = 2`, `s_3 = 0`, `s_2 = 1`, `s_1 = 1`, `α̲ = (4,4,4,3,2,2,1,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Min Partition](diagonal-min-partition.md)
 
 ## Sources
 

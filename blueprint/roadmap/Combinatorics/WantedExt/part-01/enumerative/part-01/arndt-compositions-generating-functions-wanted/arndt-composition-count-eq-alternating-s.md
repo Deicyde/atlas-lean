@@ -15,7 +15,7 @@ index `-1` are the generalized ones (`Ring.choose` over `ℤ`, so `C(-1, 0) = 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

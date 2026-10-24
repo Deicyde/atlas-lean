@@ -13,7 +13,8 @@ quotient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Context Quotient](context-quotient.md)
+- [Syntactic Rel](../syntactic/syntactic-rel.md)
 
 ## Sources
 

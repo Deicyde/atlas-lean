@@ -13,7 +13,11 @@ would become a unit after taking a positive power, contradicting irreducibility.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Free](h-free.md)
+
+## Proof depends on
+
+- [Monic Irreducible](monic-irreducible.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Identity (20): if `g` has the NS property and `x ≤ g z`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

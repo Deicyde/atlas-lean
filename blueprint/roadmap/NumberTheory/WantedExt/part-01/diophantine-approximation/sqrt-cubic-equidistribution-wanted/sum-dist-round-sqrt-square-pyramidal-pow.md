@@ -15,7 +15,7 @@ The source's `h(n) = √(n(n+1)(2n+1)/6)` is `√P_n`; `μ_k` is written as its 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Pyramidal Number](square-pyramidal-number.md)
 
 ## Sources
 

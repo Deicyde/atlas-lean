@@ -13,7 +13,7 @@ Characteristic example: with `k = 2` the cars of `(6, 6, 6, 5, 5, 2, 1)` park in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naples Park](naples-park.md)
 
 ## Sources
 

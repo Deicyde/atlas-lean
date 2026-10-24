@@ -12,7 +12,7 @@ lean: MetaMathlibExt.szBlockIndex_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz Block Index](sz-block-index.md)
 
 ## Sources
 

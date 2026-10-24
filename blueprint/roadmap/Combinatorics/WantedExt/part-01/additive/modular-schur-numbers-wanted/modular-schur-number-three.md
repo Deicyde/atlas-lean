@@ -12,7 +12,7 @@ For positive `k, l`: `S_3(k, l) = 0` when `l ≡ 1 (mod 3)`; otherwise `S_3(1, l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

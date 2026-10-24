@@ -12,7 +12,7 @@ lean: MetaMathlibExt.pascalDiagonalMatrix_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pascal Diagonal Matrix](pascal-diagonal-matrix.md)
 
 ## Sources
 

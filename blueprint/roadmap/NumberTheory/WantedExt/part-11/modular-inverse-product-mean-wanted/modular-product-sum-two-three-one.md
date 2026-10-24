@@ -12,7 +12,7 @@ Characteristic value: `S_2(3, 1) = 1 · 1 + 2 · 2 = 5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Product Sum](modular-product-sum.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ At most `f` steps of the M-rule in `NIM(k + 1, k)`, stopping at a terminal posit
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exact Slow Nim MRule Move](exact-slow-nim-mrule-move.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.ExactSlowNimRemotenessWanted](../../../../sources/v2/WantedExt.md)

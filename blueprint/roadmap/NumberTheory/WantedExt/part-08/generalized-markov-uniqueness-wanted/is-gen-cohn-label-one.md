@@ -12,7 +12,12 @@ Characteristic lemma: the second entry of the root of `GCT(k, ℓ)` is labeled `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Label](is-gen-cohn-label.md)
+- [Gen Cohn Tree](gen-cohn-tree.md)
+
+## Proof depends on
+
+- [Farey Tree](farey-tree.md)
 
 ## Sources
 

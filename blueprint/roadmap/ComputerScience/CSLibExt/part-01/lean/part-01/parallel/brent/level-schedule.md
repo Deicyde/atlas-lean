@@ -11,7 +11,20 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.levelSchedule
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+- [Schedule](schedule.md)
+
+## Proof depends on
+
+- [Depth](depth.md)
+- [Depth eq of level Time eq](depth-eq-of-level-time-eq.md)
+- [Depth lt of mem](depth-lt-of-mem.md)
+- [Level Card](level-card.md)
+- [Level Steps](level-steps.md)
+- [Level Time](level-time.md)
+- [Offset](offset.md)
+- [Rank](rank.md)
+- [Rank lt rank](rank-lt-rank.md)
 
 ## Sources
 

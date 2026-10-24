@@ -13,7 +13,12 @@ randomized classifiers included.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Posterior Argmax](is-posterior-argmax.md)
+- [Zero One Loss](zero-one-loss.md)
+
+## Proof depends on
+
+- [The Bayes classifier is optimal](is-bayes-estimator.md)
 
 ## Sources
 

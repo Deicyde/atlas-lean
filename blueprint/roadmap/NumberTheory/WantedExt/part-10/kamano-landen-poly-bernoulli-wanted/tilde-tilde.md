@@ -12,7 +12,8 @@ The operation `g ↦ g̃` is an involution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+- [Tilde](tilde.md)
 
 ## Sources
 

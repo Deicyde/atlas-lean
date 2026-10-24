@@ -32,7 +32,11 @@ is added.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Half Space](lower-half-space.md)
+- [Open Lower Half Space](open-lower-half-space.md)
+- [R2](r2.md)
+- [R3](r3.md)
+- [Point3](point3.md)
 
 ## Sources
 

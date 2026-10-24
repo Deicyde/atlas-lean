@@ -11,7 +11,11 @@ Polarity of literal `j`: only the last (next-code) literal is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [N Lits](n-lits.md)
 
 ## Sources
 

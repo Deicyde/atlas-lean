@@ -14,7 +14,9 @@ The minimum is represented by the first term `a 0`, using strict monotonicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Indexed AP](is-indexed-ap.md)
+- [Ordered Finset](ordered-finset.md)
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources
 

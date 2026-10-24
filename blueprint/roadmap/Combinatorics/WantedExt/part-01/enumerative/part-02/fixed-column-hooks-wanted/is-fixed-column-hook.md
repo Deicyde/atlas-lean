@@ -15,6 +15,11 @@ in the Young diagram (`1 ≤ s`, `1 ≤ m ≤ λ_s`) and the `s`-th term of the 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partition Hook Length](partition-hook-length.md)
+- [Partition Row Len](partition-row-len.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.FixedColumnHooksWanted](../../../../../../../sources/v2/WantedExt.md)

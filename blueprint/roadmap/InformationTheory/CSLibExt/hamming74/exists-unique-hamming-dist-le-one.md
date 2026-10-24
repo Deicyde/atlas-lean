@@ -12,7 +12,16 @@ lean: Cslib.CodingTheory.Hamming74.existsUnique_hammingDist_le_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Linear Code](../linear-code/linear-code.md)
+
+## Proof depends on
+
+- [Decode](decode.md)
+- [Decode mem code](decode-mem-code.md)
+- [Hamming Dist decode le one](hamming-dist-decode-le-one.md)
+- [Min Dist code](min-dist-code.md)
+- [Min Dist](../linear-code/min-dist.md)
 
 ## Sources
 

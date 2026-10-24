@@ -13,6 +13,11 @@ The partial quotients `a_n = [z_n]` of the Hurwitz algorithm.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hurwitz Iter](hurwitz-iter.md)
+- [Hurwitz Round](hurwitz-round.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HurwitzContinuedFractionFourSquaresWanted](../../../../../sources/v2/WantedExt.md)

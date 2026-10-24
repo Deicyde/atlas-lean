@@ -19,7 +19,8 @@ Proposition 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Partition](is-perfect-partition.md)
+- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
 
 ## Sources
 

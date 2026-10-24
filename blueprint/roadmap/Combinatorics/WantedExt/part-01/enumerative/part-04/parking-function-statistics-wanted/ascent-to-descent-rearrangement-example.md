@@ -13,7 +13,7 @@ sub-steps `ν(1 4) = 4 1` (Case 2) and `ν(3 1 2 1) = 1 2 1 3` (Case 1).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascent To Descent Rearrangement](ascent-to-descent-rearrangement.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The output of a configuration: the tape from the head rightwards, without traili
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cfg](cfg.md)
 
 ## Sources
 

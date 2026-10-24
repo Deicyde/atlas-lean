@@ -14,6 +14,10 @@ size-`t` configurations on the `n` vertices, is solvable (the space `D_{G,t}` of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pebbling Solvable](pebbling-solvable.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.SmallCrossNumberZeroSumWanted](../../../../../../sources/v2/WantedExt.md)

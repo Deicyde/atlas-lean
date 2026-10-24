@@ -11,7 +11,7 @@ State transformations are just endofunctions, with a multiplication chosen below
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Transformation](state-transformation.md)
 
 ## Sources
 

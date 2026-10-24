@@ -12,7 +12,16 @@ Sanity: every CNF is represented, and decodes back to itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+- [Decode CNF](decode-cnf.md)
+- [Encode CNF](encode-cnf.md)
+
+## Proof depends on
+
+- [Clause](clause.md)
+- [Decode Aux](decode-aux.md)
+- [Encode Clause](encode-clause.md)
+- [Encode Slot](encode-slot.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The characteristic function of the image of a measure under `z ↦ W z`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inner to Euclidean Lin](inner-to-euclidean-lin.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.ProbabilisticPCA](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,7 @@ Decoding the cells of a stack of height `≤ m` gives the stack back.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dec S](dec-s.md)
 
 ## Sources
 

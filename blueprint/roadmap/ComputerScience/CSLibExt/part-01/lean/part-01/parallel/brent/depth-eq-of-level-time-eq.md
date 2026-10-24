@@ -12,7 +12,16 @@ Tasks in the same step lie in the same level.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+- [Depth](depth.md)
+- [Level Time](level-time.md)
+
+## Proof depends on
+
+- [Level Card](level-card.md)
+- [Level Steps](level-steps.md)
+- [Offset](offset.md)
+- [Rank](rank.md)
 
 ## Sources
 

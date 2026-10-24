@@ -11,7 +11,7 @@ For all `α, n ≥ 0`, `PD_2(2^α (8n + 7)) ≡ 0 (mod 8)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Designated Summands Count](odd-designated-summands-count.md)
 
 ## Sources
 

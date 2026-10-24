@@ -13,7 +13,16 @@ Church–Rosser lemma from `step_confluent`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctl Step](ctl-step.md)
+- [TMSym](tmsym.md)
+
+## Proof depends on
+
+- [Step](../../part-02/string-rewriting/step.md)
+- [Ctl Count](ctl-count.md)
+- [Ctl Count eq of step](ctl-count-eq-of-step.md)
+- [Rules](rules.md)
+- [Local confluence on words with one control symbol](step-confluent.md)
 
 ## Sources
 

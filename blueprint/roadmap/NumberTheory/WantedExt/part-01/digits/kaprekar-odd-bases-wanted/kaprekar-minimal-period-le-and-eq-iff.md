@@ -13,7 +13,9 @@ at most `(B - 1) / 2`, and some terminal cycle has length `(B - 1) / 2` (i.e.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
+- [Kaprekar Four Digit Step](kaprekar-four-digit-step.md)
+- [Projective Order Two](projective-order-two.md)
 
 ## Sources
 

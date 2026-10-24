@@ -12,7 +12,7 @@ stated with the denominator cleared in `ℤ⟦X⟧`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Combination Total](restricted-combination-total.md)
 
 ## Sources
 

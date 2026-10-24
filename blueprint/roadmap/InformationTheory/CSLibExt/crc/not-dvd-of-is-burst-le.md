@@ -13,7 +13,7 @@ so `g ∣ X^i·b` would force `g ∣ b`, impossible for a nonzero `b` of smaller
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Burst LE](is-burst-le.md)
 
 ## Sources
 

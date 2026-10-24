@@ -12,7 +12,14 @@ lean: Cslib.Algorithms.Lean.Online.Paging.misses_adversary
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online paging algorithm with cache size...](a-deterministic-online-paging-algorithm.md)
+- [Misses](misses.md)
+- [Adversary](adversary.md)
+
+## Proof depends on
+
+- [Outside](outside.md)
+- [Outside not mem](outside-not-mem.md)
 
 ## Sources
 

@@ -13,7 +13,10 @@ The explicit `j.val+1<d` evidence safely names the final `Fin d` coordinate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is Reflexive](is-reflexive.md)
+- [Expand Support](expand-support.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

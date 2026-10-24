@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isConcatTwoRepdigitsBase_examples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Concat Two Repdigits Base](is-concat-two-repdigits-base.md)
 
 ## Sources
 

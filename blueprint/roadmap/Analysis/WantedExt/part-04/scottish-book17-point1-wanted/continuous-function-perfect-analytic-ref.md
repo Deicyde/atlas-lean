@@ -18,7 +18,7 @@ variable reelle admettant les derivees de tous les ordres", Fund. Math. 34
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem17 Point1 Claim](scottish-book-problem17-point1-claim.md)
 
 ## Sources
 

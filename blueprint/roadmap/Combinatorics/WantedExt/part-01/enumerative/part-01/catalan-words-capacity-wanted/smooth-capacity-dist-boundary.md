@@ -12,7 +12,8 @@ Mansour and Shattuck's Lemma 7, boundary values: `r(n, n) = s(n, n) = s(n, 1) = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smooth Capacity Dist](smooth-capacity-dist.md)
+- [Smooth Max End Capacity Dist](smooth-max-end-capacity-dist.md)
 
 ## Sources
 

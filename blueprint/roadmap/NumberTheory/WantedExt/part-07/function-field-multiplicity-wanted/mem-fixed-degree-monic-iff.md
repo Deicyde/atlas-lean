@@ -14,7 +14,7 @@ coefficient-vector construction.  This records the defining finite parametrizati
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Degree Monic](fixed-degree-monic.md)
 
 ## Sources
 

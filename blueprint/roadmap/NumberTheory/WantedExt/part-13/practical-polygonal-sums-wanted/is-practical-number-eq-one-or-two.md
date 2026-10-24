@@ -11,7 +11,7 @@ A practical number divisible by neither `3` nor `4` is `1` or `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Practical Number](../../../MathlibExt/part-09/is-practical-number.md)
 
 ## Sources
 

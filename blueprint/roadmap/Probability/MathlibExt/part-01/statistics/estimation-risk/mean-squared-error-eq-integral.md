@@ -13,7 +13,7 @@ Blueprint `af_fd40353442120bd19166139d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean Squared Error](mean-squared-error.md)
 
 ## Sources
 

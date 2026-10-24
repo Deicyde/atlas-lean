@@ -12,7 +12,8 @@ lean: Cslib.Algorithms.Lean.CatenableHeap.time_insert
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Insert](insert.md)
 
 ## Sources
 

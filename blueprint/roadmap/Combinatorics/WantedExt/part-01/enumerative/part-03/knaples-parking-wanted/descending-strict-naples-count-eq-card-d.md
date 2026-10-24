@@ -13,7 +13,8 @@ Proposition 4: for `n ≥ 1`, descending strictly `k`-Naples parking functions o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Descending Strict Naples Count](descending-strict-naples-count.md)
+- [Dyck Step Height](dyck-step-height.md)
 
 ## Sources
 

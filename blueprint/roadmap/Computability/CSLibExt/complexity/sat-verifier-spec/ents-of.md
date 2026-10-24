@@ -11,7 +11,7 @@ Pair the `i`-th occurrence with `w[i]?`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ent](ent.md)
 
 ## Sources
 

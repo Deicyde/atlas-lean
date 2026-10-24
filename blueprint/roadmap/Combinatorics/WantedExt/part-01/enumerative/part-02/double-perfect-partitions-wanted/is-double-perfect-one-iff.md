@@ -14,7 +14,8 @@ either by inserting `1^2` when `1` has multiplicity `1` in `β` (the set `E(1^2)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
+- [Is Perfect Partition](is-perfect-partition.md)
 
 ## Sources
 

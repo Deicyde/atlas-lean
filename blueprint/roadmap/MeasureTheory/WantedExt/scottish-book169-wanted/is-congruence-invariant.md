@@ -13,6 +13,10 @@ lean: MathlibExt.MeasureTheory.ScottishBook169Wanted.IsCongruenceInvariant
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Are Congruent](are-congruent.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.MeasureTheory.ScottishBook169Wanted](../../../../sources/v2/WantedExt.md)

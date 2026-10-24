@@ -13,6 +13,11 @@ The Average Condition: `A_0(η) = A_{i,0}(η)` for some `i ≥ 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binomid Average](binomid-average.md)
+- [Binomid Upper Average](binomid-upper-average.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BinomidIndexWanted](../../../../../sources/v2/WantedExt.md)

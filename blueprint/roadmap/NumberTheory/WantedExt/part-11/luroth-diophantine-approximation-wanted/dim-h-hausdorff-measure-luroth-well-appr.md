@@ -13,7 +13,7 @@ The printed statement also claims the measure part at `τ = 0`; it fails there:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
 
 ## Sources
 

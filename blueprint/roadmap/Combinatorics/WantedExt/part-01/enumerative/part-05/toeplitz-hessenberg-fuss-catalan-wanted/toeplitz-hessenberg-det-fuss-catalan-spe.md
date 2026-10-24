@@ -16,7 +16,8 @@ identifications (A000245, A115143, A006013, A007226) are omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fuss Catalan Number](../../../../../../NumberTheory/MathlibExt/part-06/generalized-fuss-catalan-numbers-fmnk/generalized-fuss-catalan-number.md)
+- [Toeplitz Hessenberg Det](../../../../../../LinearAlgebra/MathlibExt/matrix/part-02/trudi-brioschi-determinant/toeplitz-hessenberg-det.md)
 
 ## Sources
 

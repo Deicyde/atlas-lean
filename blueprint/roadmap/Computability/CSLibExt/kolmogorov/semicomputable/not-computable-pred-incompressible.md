@@ -12,7 +12,11 @@ lean: Cslib.Kolmogorov.not_computablePred_incompressible
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+
+## Proof depends on
+
+- [The incompressible strings are not recognizable](not-re-pred-incompressible.md)
 
 ## Sources
 

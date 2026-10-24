@@ -13,7 +13,8 @@ For odd `q > 3`, `{4, q}` is an N-position and there is a unique odd `x_q` such 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver NPosition](is-sylver-nposition.md)
+- [Is Sylver PPosition](is-sylver-pposition.md)
 
 ## Sources
 

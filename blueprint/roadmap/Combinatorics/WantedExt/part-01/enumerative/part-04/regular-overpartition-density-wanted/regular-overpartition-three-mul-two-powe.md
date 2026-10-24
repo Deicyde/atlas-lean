@@ -13,7 +13,7 @@ includes zero and uses the paper's denominator `X`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Overpartition Count](regular-overpartition-count.md)
 
 ## Sources
 

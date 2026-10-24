@@ -12,7 +12,8 @@ Theorem 2: for `n > 1` and `c ∈ ℤ/n ∖ {0, 1, -1}`, `F_c` is not `m`-vanish
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MVanishing Family](is-mvanishing-family.md)
+- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
 
 ## Sources
 

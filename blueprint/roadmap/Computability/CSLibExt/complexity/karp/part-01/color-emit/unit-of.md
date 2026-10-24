@@ -11,7 +11,7 @@ Read a symbol as a unary unit (`cl`); every other symbol ends a run of units.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The code with parity-check matrix `H`: the words of zero syndrome.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
 
 ## Sources
 

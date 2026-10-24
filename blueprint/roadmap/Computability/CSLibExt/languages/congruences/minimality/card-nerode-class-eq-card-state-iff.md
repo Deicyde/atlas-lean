@@ -13,7 +13,12 @@ class representatives reaching every state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](../nerode/nerode-class.md)
+- [To DFAState](to-dfastate.md)
+
+## Proof depends on
+
+- [To DFAState injective](to-dfastate-injective.md)
 
 ## Sources
 

@@ -12,7 +12,10 @@ Lemma 3.8: every arithmetical structure on `CT(p, s)` (`s ≥ 1`) with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coconut Ancestor](coconut-ancestor.md)
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

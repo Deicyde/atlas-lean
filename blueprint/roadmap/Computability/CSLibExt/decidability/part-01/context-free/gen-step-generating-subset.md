@@ -16,7 +16,16 @@ def isEmptyB (g : EncodedCFG T) : Bool :=
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Gen Step](gen-step.md)
+- [Generating](generating.md)
+
+## Proof depends on
+
+- [Iterate closed](../primrec-list/iterate-closed.md)
+- [Mem B](../primrec-list/mem-b.md)
+- [Rule Ok](rule-ok.md)
+- [Sym Ok](sym-ok.md)
 
 ## Sources
 

@@ -17,7 +17,8 @@ positions `p 0 < p 1 < ⋯ < p n`, so `β(N) = 10^{s_n} ⋯ 10^{s_1} 1` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Value](base-phi-value.md)
+- [Knott Expansion Count](knott-expansion-count.md)
 
 ## Sources
 

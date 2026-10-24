@@ -16,7 +16,7 @@ Every permutiple has a cycle-preserving digit permutation: for every
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Permutiple](is-permutiple.md)
 
 ## Sources
 

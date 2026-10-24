@@ -16,6 +16,10 @@ Series*, INTEGERS 26 (2026), Article A11, Notation and Terminology.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Digit Count](digit-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)

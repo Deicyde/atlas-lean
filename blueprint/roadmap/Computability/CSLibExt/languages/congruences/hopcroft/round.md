@@ -12,7 +12,21 @@ lean: DFA.Hopcroft.Inv.round
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv](inv.md)
+- [Round P](round-p.md)
+- [Round W](round-w.md)
+
+## Proof depends on
+
+- [Is Partition](is-partition.md)
+- [Mem iff of rel](mem-iff-of-rel.md)
+- [Rel](rel.md)
+- [Splits](splits.md)
+- [New Splitters](new-splitters.md)
+- [Preimage](preimage.md)
+- [Rel round P iff](rel-round-p-iff.md)
+- [Smaller](smaller.md)
+- [Split Block](split-block.md)
 
 ## Sources
 

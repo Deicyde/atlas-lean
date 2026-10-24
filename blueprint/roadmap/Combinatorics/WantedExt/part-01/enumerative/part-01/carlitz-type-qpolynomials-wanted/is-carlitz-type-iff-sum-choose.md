@@ -13,7 +13,8 @@ functions `T_n` is Carlitz-type iff `T_n(x) = ∑_{k=0}^{n} C(n,k) t_k q^{kx} [x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Carlitz Type With](is-carlitz-type-with.md)
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

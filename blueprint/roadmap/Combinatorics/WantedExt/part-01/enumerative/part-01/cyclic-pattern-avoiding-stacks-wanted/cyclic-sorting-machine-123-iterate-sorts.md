@@ -12,7 +12,8 @@ tight: `SC_[123]^{n-3}(ξ_n) ≠ id_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
+- [Xi Permutation](xi-permutation.md)
 
 ## Sources
 

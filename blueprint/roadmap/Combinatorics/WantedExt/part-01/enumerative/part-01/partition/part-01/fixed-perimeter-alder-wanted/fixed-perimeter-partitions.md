@@ -16,6 +16,10 @@ The partitions with perimeter `n`, as multisets `s` of positive parts with
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sym Cons Embedding](sym-cons-embedding.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.FixedPerimeterAlderWanted](../../../../../../../../../sources/v2/WantedExt.md)

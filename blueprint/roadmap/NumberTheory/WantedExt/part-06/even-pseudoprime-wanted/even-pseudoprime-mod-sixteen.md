@@ -11,7 +11,7 @@ lean: MetaMathlibExt.evenPseudoprime_mod_sixteen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Even Pseudoprime](../../../MathlibExt/part-05/even-pseudoprime/is-even-pseudoprime.md)
 
 ## Sources
 

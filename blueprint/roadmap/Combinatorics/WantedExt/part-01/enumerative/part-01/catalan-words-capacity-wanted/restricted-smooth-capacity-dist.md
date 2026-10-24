@@ -14,6 +14,12 @@ in `i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Capacity Dist](capacity-dist.md)
+- [Restricted Smooth Words](restricted-smooth-words.md)
+- [Words Ending In](words-ending-in.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CatalanWordsCapacityWanted](../../../../../../../sources/v2/WantedExt.md)

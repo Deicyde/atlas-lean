@@ -14,6 +14,13 @@ of order `n` in the `(2,1)`-hook whose first two row lengths differ by `k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has First Two Row Difference](has-first-two-row-difference.md)
+- [Is In Two One Hook](is-in-two-one-hook.md)
+- [Is Standard Young Tableau](is-standard-young-tableau.md)
+- [Tableau Row Length](tableau-row-length.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinHumpsYoungTableauxWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -13,6 +13,10 @@ The biunitary divisors of `n`: the divisors `d` of `n` with `gcd₁(d, n / d) = 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gcd Unitary](gcd-unitary.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.BiunitaryDivisor](../../../../../../../sources/v2/MathlibExt.md)

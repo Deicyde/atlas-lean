@@ -13,7 +13,8 @@ Theorem 3: for `n - 1 ≥ k ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascending Naples Count](ascending-naples-count.md)
+- [Ascending Naples One Count](ascending-naples-one-count.md)
 
 ## Sources
 

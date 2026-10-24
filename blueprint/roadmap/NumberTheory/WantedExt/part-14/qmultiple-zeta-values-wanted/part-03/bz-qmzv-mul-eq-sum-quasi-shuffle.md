@@ -13,7 +13,8 @@ for admissible `u, v`, `ζ_q^BZ(u ∗_BZ v) = ζ_q^BZ(u) ζ_q^BZ(v)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz QMZV](../part-02/bz-qmzv.md)
+- [Quasi Shuffle](quasi-shuffle.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ natural-number top `n - pk + k - 2` truncates to `0` only at `k = 1`, `n = p`, w
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Multiset Count](schreier-multiset-count.md)
 
 ## Sources
 

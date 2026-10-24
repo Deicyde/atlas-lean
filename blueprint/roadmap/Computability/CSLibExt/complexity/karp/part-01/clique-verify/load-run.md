@@ -14,7 +14,21 @@ otherwise; on success the first `n` bits sit on `V`, last on top.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mode](mode.md)
+- [Prog](prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+
+## Proof depends on
+
+- [Run one](run-one.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

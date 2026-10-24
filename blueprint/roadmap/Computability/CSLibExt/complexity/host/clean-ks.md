@@ -11,7 +11,12 @@ The stacks the cleanup empties: all but the output stack `o`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HK](hk.md)
+
+## Proof depends on
+
+- [All Ks](all-ks.md)
 
 ## Sources
 

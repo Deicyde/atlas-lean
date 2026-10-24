@@ -13,7 +13,18 @@ expression tree is exponentially larger than the node list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Num States](../../../automata/epsilon-na/thompson/num-states.md)
+- [Encoded Regex](../regular-expression/encoded-regex.md)
+- [Num Thompson States](num-thompson-states.md)
+- [To Regex](../regular-expression/to-regex.md)
+
+## Proof depends on
+
+- [Get D state Counts](get-d-state-counts.md)
+- [Node](../regular-expression/node.md)
+- [Regex At](../regular-expression/regex-at.md)
+- [State Counts](state-counts.md)
+- [Regex Node](../regular-expression/regex-node.md)
 
 ## Sources
 

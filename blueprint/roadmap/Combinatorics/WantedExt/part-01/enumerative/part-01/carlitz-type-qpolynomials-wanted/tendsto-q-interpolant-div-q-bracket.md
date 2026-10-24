@@ -13,7 +13,7 @@ positive integers `N`: `g_r(q,k) = (-1)^k [k]! ∑_{i<r} q^{ik} [r-1]_i / [k+r]_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

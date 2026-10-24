@@ -11,7 +11,11 @@ Stack alphabets: `none` is the output stack (alphabet `Bool`), `some w` a work s
 
 ## Depends on
 
-This node has no prerequisites.
+- [W](w.md)
+
+## Proof depends on
+
+- [G](g.md)
 
 ## Sources
 

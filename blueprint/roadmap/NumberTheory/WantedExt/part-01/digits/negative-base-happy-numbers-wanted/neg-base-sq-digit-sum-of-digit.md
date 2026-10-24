@@ -12,7 +12,11 @@ A single nonzero digit `0 < d < |b|` has `S_{2,b}(d) = d²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+
+## Proof depends on
+
+- [Neg Base Sq Digit Sum Aux](neg-base-sq-digit-sum-aux.md)
 
 ## Sources
 

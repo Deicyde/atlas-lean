@@ -15,6 +15,10 @@ quantifies over `k ≥ 1`; `k = 0` is trivial.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cx](../../../../NumberTheory/WantedExt/part-09/integer-complexity-wanted/cx.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.ArithmeticalSelfSimilarCompactSetWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,9 @@ Poisson stable iff the digit sequence `⟨a_1, a_2, …⟩` is (as a point of th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Positively Poisson Stable](is-positively-poisson-stable.md)
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
 
 ## Sources
 

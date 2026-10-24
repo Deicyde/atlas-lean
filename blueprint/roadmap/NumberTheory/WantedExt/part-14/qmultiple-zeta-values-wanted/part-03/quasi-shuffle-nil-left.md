@@ -12,7 +12,7 @@ lean: MetaMathlibExt.quasiShuffle_nil_left
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quasi Shuffle](quasi-shuffle.md)
 
 ## Sources
 

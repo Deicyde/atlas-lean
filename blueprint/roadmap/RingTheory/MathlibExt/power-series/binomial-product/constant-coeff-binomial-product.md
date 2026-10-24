@@ -12,7 +12,7 @@ The constant coefficient of a binomial product is the product of the constant co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product](binomial-product.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ bronze number `B_n`, with `B_0 = 0`, `B_1 = 1`, `B_{n+1} = 3B_n + B_{n-1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

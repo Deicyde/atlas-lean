@@ -16,7 +16,8 @@ Stated for `n ≥ 1` (for `n = 0`, `2^{n-1}` is not an integer); the bound is st
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
+- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

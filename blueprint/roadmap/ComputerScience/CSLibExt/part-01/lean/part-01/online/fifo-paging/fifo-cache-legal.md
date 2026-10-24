@@ -12,7 +12,11 @@ FIFO, started from a legal cache, keeps a legal cache.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fifo Step](fifo-step.md)
+
+## Proof depends on
+
+- [Fifo Step legal](fifo-step-legal.md)
 
 ## Sources
 

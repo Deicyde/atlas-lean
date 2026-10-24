@@ -12,7 +12,11 @@ lean: MetaMathlibExt.gijswijtGlueConcat_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
+
+## Proof depends on
+
+- [Gijswijt Glue](gijswijt-glue.md)
 
 ## Sources
 

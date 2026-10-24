@@ -13,7 +13,8 @@ four two-rook file placements have `2`-weights `1, 1, -1, -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Rook Number](level-rook-number.md)
+- [Weighted File Number](weighted-file-number.md)
 
 ## Sources
 

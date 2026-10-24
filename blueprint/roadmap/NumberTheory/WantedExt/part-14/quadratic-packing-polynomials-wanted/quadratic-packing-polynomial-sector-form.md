@@ -13,7 +13,8 @@ Necessary form of a QPP on a sector (Gjaldbæk): if `P` is a QPP on `I(α)`, `α
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
+- [Sector Lattice Points](sector-lattice-points.md)
 
 ## Sources
 

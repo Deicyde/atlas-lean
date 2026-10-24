@@ -13,7 +13,16 @@ when `tm2` halts on `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts On](../classes/halts-on.md)
+
+## Proof depends on
+
+- [Comp Cfg Left](comp-cfg-left.md)
+- [Comp Cfg Right](comp-cfg-right.md)
+- [Exists of refl Trans Gen comp Cfg Right](exists-of-refl-trans-gen-comp-cfg-right.md)
+- [Right Unique transition Relation](../classes/right-unique-transition-relation.md)
+- [Transition Relation comp Cfg Left](transition-relation-comp-cfg-left.md)
+- [Transition Relation comp Cfg Right](transition-relation-comp-cfg-right.md)
 
 ## Sources
 

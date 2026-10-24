@@ -12,7 +12,7 @@ lean: MetaMathlibExt.pendCount_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pend Count](pend-count.md)
 
 ## Sources
 

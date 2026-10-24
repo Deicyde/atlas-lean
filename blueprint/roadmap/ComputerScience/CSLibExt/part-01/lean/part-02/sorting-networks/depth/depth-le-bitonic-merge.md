@@ -12,7 +12,17 @@ The bitonic merger on `2 ^ k` wires has depth at most `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth LE](depth-le.md)
+- [Bitonic Merge](../bitonic/bitonic-merge.md)
+
+## Proof depends on
+
+- [Append](append.md)
+- [Append disjoint](append-disjoint.md)
+- [Within](../bitonic/within.md)
+- [Depth LE half Cleaner](depth-le-half-cleaner.md)
+- [Half Cleaner](../bitonic/half-cleaner.md)
+- [Levels](levels.md)
 
 ## Sources
 

@@ -20,7 +20,8 @@ cycle of `G(-2n, -2n + a)` (the hypothesis that `a'` is odd is dropped as implie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Digraph Cycle](is-digraph-cycle.md)
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

@@ -11,7 +11,14 @@ Every read or write is covered by a lock of its transaction in the mode the acce
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+
+## Proof depends on
+
+- [Access](../serializability/access.md)
+- [Mode](mode.md)
+- [Holds Before](holds-before.md)
+- [Op](../serializability/op.md)
 
 ## Sources
 

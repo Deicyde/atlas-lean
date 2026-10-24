@@ -13,7 +13,7 @@ Small values quoted in Theorems 2 and 4: `R_{-5} = 4`, `R_{-18} = 25`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perrin Neg](perrin-neg.md)
 
 ## Sources
 

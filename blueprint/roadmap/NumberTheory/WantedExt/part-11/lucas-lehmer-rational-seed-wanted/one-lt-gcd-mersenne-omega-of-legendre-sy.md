@@ -12,7 +12,8 @@ Let `p` be one of the primes `r_i`, `q_i` of `s_1^- s_1^+`. If `η_n(p) = (M_n |
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Squarefree Part](is-odd-squarefree-part.md)
+- [Mersenne Omega](mersenne-omega.md)
 
 ## Sources
 

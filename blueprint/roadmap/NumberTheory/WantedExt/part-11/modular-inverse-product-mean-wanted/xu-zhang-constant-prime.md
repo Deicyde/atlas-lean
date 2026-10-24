@@ -13,7 +13,7 @@ Characteristic value at a prime `p`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Xu Zhang Constant](xu-zhang-constant.md)
 
 ## Sources
 

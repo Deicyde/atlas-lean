@@ -13,7 +13,9 @@ condition `r ≥ 1`, and monochromatic `D`-APs of all positive lengths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DAP](is-dap.md)
+- [Is Monochromatic](is-monochromatic.md)
+- [Is RLarge](is-rlarge.md)
 
 ## Sources
 

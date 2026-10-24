@@ -13,7 +13,7 @@ hypothesis on the sample space.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect ENN](expect-enn.md)
 
 ## Sources
 

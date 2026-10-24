@@ -12,7 +12,7 @@ For `b ≤ -7` and each finite set `A` of positive integers there is `k ≥ 1` w
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
 
 ## Sources
 

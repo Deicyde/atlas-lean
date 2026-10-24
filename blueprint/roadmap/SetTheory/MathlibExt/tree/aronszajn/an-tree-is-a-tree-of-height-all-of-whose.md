@@ -14,6 +14,11 @@ An *ω₁-tree* is a tree of height ω₁ all of whose levels are countable: eve
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [A *tree* is a partially ordered set (T, <) iwith the...](../basic/a-tree-is-a-partially-ordered-set-t-iwit.md)
+- [For an ordinal α, the *α-th level* of a well-founded...](../basic/for-an-ordinal-the-th-level-of-a-well-fo.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Tree.Aronszajn](../../../../../sources/v2/MathlibExt.md)

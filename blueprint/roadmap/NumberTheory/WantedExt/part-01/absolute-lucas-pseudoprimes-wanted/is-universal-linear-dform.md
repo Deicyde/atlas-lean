@@ -19,6 +19,10 @@ where `x ≥ 0` would leave only finitely many positive values.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is DCarmichael](is-dcarmichael.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.AbsoluteLucasPseudoprimesWanted](../../../../../sources/v2/WantedExt.md)

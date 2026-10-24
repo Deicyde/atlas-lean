@@ -15,7 +15,8 @@ is replaced by `g(1) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hofstadter F](../../../../NumberTheory/WantedExt/part-08/generalized-hofstadter-order-wanted/hofstadter-f.md)
+- [Komak G](komak-g.md)
 
 ## Sources
 

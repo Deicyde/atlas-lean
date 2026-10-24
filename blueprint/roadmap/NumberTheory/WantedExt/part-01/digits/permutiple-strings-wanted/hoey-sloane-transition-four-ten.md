@@ -13,7 +13,7 @@ on the multi-edge `0 → 3` and `(1, 7)` on the loop `3 → 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hoey Sloane Transition](hoey-sloane-transition.md)
 
 ## Sources
 

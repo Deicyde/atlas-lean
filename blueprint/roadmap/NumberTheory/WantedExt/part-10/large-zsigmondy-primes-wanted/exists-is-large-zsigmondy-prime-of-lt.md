@@ -13,7 +13,8 @@ large Zsigmondy prime for `(a, b, n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Large Zsigmondy Prime](is-large-zsigmondy-prime.md)
+- [Homogenized Cyclotomic](../../../MathlibExt/part-01/cyclotomic/homogenized-cyclotomic/homogenized-cyclotomic.md)
 
 ## Sources
 

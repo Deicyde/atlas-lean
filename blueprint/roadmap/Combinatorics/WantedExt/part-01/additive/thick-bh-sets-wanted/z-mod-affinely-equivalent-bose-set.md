@@ -14,7 +14,8 @@ both admissible for `Bose_h`, each of (i) `b ≡ e (mod (q^h - 1)/(q - 1))`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [ZMod Affinely Equivalent](zmod-affinely-equivalent.md)
+- [Bose Set](bose-set.md)
 
 ## Sources
 

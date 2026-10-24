@@ -13,7 +13,7 @@ form subgroups `U₁`, `U_M`, `U_A` with `U_M ≤ U₁`, `U_A ≤ U₁` and `U_M
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Antimultiplicative](is-antimultiplicative.md)
 
 ## Sources
 

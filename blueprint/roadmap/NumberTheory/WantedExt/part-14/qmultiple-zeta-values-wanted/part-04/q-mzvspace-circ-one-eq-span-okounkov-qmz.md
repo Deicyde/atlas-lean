@@ -12,7 +12,8 @@ Okounkov qMZVs span `𝒵°_{q,1}`: `𝒵°_{q,1}` is the `ℚ`-span of the `ζ_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Okounkov QMZV](okounkov-qmzv.md)
+- [Q MZVSpace Circ](q-mzvspace-circ.md)
 
 ## Sources
 

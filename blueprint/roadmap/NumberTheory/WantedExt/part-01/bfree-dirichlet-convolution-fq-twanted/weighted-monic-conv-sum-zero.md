@@ -12,7 +12,13 @@ lean: MetaMathlibExt.weightedMonicConvSum_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Monic Conv Sum](weighted-monic-conv-sum.md)
+
+## Proof depends on
+
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+- [Monic Dirichlet Conv one](monic-dirichlet-conv-one.md)
+- [Monic nat Degree le zero iff](monic-nat-degree-le-zero-iff.md)
 
 ## Sources
 

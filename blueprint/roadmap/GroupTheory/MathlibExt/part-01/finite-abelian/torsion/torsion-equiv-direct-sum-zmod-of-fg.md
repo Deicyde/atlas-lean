@@ -15,6 +15,10 @@ of finite cyclic groups. This retains the archived statement's positive moduli.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite torsion of fg](finite-torsion-of-fg.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.FiniteAbelian.Torsion](../../../../../../sources/v2/MathlibExt.md)

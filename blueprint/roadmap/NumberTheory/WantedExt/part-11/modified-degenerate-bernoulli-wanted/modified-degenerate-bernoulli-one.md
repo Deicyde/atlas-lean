@@ -12,7 +12,7 @@ lean: MetaMathlibExt.modifiedDegenerateBernoulli_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
 
 ## Sources
 

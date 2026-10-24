@@ -12,7 +12,11 @@ For the constant digit sequence `2`, `Q_{n+1} = 2^{n+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Denominator](luroth-denominator.md)
+
+## Proof depends on
+
+- [Luroth Denominator succ](luroth-denominator-succ.md)
 
 ## Sources
 

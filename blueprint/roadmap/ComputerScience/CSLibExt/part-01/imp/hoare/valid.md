@@ -11,7 +11,13 @@ Semantic validity of a partial-correctness Hoare triple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](assertion.md)
+- [Cmd](../syntax/cmd.md)
+
+## Proof depends on
+
+- [Big Step](../big-step/big-step.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

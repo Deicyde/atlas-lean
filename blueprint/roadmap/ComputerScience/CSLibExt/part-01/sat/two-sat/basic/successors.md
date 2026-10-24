@@ -11,7 +11,16 @@ The implication-graph successors of a literal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lit](lit.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Imp Edge](imp-edge.md)
+- [Lit List](lit-list.md)
+- [Neg](neg.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

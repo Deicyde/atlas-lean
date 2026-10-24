@@ -13,7 +13,9 @@ Lemma 28: for fixed `b ≥ 2` there is `C > 0` such that for all `n` and `d, v >
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lunar Decomposable Set](lunar-decomposable-set.md)
+- [Lunar Hoeffding Extremal Set](lunar-hoeffding-extremal-set.md)
+- [Lunar Level Decomposable Set](lunar-level-decomposable-set.md)
 
 ## Sources
 

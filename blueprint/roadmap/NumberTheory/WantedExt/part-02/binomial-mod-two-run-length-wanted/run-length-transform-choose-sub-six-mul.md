@@ -12,7 +12,8 @@ of Narayana's cows sequence `1, 1, 1, 2, 3, 4, 6, 9, …` (`narayanaCowsSequence
 
 ## Depends on
 
-This node has no prerequisites.
+- [Narayana Sequence](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

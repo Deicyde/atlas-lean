@@ -13,7 +13,8 @@ the case `r = 0` is the paper's identity for `β`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Indicator](coprimality-indicator.md)
+- [Coprime Pair Count](coprime-pair-count.md)
 
 ## Sources
 

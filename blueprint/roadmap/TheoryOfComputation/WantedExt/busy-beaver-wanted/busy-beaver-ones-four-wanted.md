@@ -11,7 +11,7 @@ Source: Brady (1983), determination of `Σ(4) = 13`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Busy Beaver Ones](../../../Computability/CSLibExt/busy-beaver/busy-beaver-ones.md)
 
 ## Sources
 

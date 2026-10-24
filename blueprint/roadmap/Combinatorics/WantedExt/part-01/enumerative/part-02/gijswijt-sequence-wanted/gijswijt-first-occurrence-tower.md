@@ -13,7 +13,7 @@ For all `n ≥ 4`, the first occurrence of `n` in Gijswijt's sequence is at posi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt First Occurrence](gijswijt-first-occurrence.md)
 
 ## Sources
 

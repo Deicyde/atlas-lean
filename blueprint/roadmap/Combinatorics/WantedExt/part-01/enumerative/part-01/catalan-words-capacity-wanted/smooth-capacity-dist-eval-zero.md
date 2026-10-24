@@ -12,7 +12,7 @@ zero-capacity smooth words of length `n` ending in `i` is `∑_{j=i-2}^{n-2} C(n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smooth Capacity Dist](smooth-capacity-dist.md)
 
 ## Sources
 

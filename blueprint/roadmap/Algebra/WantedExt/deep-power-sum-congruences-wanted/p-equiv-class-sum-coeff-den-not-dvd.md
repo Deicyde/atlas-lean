@@ -12,7 +12,7 @@ denominator divisible by `p` (the paper's `g_λ ∈ Λ_{ℤ_(p)}`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [P Equiv Class Sum](p-equiv-class-sum.md)
 
 ## Sources
 

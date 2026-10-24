@@ -11,7 +11,8 @@ The stacks, given the token stack and the side stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

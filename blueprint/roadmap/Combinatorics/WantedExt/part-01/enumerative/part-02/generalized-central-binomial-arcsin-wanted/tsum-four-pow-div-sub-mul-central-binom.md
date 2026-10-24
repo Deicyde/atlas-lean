@@ -16,7 +16,9 @@ since `binom(2k, k) ≤ 4^k` the series diverges for `x ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zurita S](zurita-s.md)
+- [Zurita SCoeff](zurita-scoeff.md)
+- [Zurita T](zurita-t.md)
 
 ## Sources
 

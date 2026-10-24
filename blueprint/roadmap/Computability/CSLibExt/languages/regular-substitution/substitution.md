@@ -13,7 +13,14 @@ regular language.**
 
 ## Depends on
 
-This node has no prerequisites.
+- [Substitution](../substitution.md)
+
+## Proof depends on
+
+- [Detour](detour.md)
+- [Soundness of the paths](exists-of-is-path.md)
+- [Is Path run](is-path-run.md)
+- [Εnfa](nfa.md)
 
 ## Sources
 

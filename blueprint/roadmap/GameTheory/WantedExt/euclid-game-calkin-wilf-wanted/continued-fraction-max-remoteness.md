@@ -18,7 +18,10 @@ algorithm, is the quoted result of Hopkins and Tangboonduangjit and is not state
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Calkin Wilf Row](calkin-wilf-row.md)
+- [Euclid Game](euclid-game.md)
 
 ## Sources
 

@@ -13,7 +13,17 @@ regular expression matches.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Thompson's construction](to-nfa.md)
+
+## Proof depends on
+
+- [Char Aut](char-aut.md)
+- [Concat](concat.md)
+- [One Aut](one-aut.md)
+- [Star](star.md)
+- [Union](union.md)
+- [Zero Aut](zero-aut.md)
 
 ## Sources
 

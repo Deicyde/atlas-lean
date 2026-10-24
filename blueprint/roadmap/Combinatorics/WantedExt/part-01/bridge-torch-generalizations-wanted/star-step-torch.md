@@ -11,7 +11,12 @@ The torch counts after a step: each movement moves one torch from its start to i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Star Move](star-move.md)
+
+## Proof depends on
+
+- [Dst](dst.md)
+- [Src](src.md)
 
 ## Sources
 

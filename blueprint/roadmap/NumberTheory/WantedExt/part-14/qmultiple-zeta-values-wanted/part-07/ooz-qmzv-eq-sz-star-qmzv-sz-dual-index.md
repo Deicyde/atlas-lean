@@ -12,7 +12,9 @@ OOZ-qMZVs as SZ-star qMZVs, `ζ_q^OSZ = ζ_q^{SZ,⋆} ∘ τ̃` on `𝔎¹`: for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz QMZV](../part-01/ooz-qmzv.md)
+- [Sz Dual Index](../part-06/sz-dual-index.md)
+- [Sz Star QMZV](sz-star-qmzv.md)
 
 ## Sources
 

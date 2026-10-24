@@ -15,6 +15,11 @@ letter marked.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Marks](marks.md)
+- [Ogden's lemma for a grammar, with an explicit bound](ogden-of-bound.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Ogden](../../../../../../../sources/v2/CSLibExt.md)

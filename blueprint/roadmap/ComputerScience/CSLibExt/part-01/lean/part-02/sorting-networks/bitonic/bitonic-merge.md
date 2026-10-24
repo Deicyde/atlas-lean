@@ -14,6 +14,10 @@ then bitonic mergers on both halves.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Half Cleaner](half-cleaner.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.SortingNetworks.Bitonic](../../../../../../../../sources/v2/CSLibExt.md)

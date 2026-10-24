@@ -13,7 +13,7 @@ secret.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle Next Guess](perm-wordle-next-guess.md)
 
 ## Sources
 

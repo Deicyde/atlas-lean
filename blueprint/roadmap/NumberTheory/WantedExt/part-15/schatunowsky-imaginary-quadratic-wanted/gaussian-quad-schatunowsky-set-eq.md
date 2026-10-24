@@ -19,7 +19,7 @@ unique up to units. The record's closing remark on Dalezman is omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quad Schatunowsky Set](quad-schatunowsky-set.md)
 
 ## Sources
 

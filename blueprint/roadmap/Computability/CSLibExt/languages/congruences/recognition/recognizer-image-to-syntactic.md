@@ -11,7 +11,13 @@ The image of a recognizing morphism maps canonically onto the syntactic monoid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+
+## Proof depends on
+
+- [Recognizer Quotient To Syntactic](recognizer-quotient-to-syntactic.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ The events LRU emits on a request sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](../../greedy/offline-caching/cache-event.md)
+
+## Proof depends on
+
+- [Lru Event](lru-event.md)
+- [Lru Step](lru-step.md)
 
 ## Sources
 

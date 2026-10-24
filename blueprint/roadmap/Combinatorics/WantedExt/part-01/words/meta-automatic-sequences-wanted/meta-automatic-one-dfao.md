@@ -14,7 +14,8 @@ The run reads `(Nat.digits 4 n).reverse` (most significant digit first).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KAutomatic Sequence](../../../../MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
+- [Meta Automatic One](meta-automatic-one.md)
 
 ## Sources
 

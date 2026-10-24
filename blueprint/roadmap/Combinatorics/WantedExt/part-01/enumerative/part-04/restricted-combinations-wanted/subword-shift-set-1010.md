@@ -12,7 +12,7 @@ The subword `1010` gives `Q = {1, 3}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subword Shift Set](subword-shift-set.md)
 
 ## Sources
 

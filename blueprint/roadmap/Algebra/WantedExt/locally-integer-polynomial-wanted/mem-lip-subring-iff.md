@@ -12,7 +12,7 @@ Membership in `LIP(U)` unfolds to the defining condition on finite subsets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

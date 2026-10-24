@@ -12,7 +12,7 @@ lean: MetaMathlibExt.rStirlingSecond_eq_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Stirling Second](r-stirling-second.md)
 
 ## Sources
 

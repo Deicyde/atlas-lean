@@ -11,7 +11,8 @@ The Chinese remainder isomorphism `ZMod n ≃+* ZMod p × ZMod q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key](key.md)
+- [N](n.md)
 
 ## Sources
 

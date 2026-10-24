@@ -12,7 +12,7 @@ lean: MetaMathlibExt.pqRLucasSecond_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pq RLucas Second](pq-rlucas-second.md)
 
 ## Sources
 

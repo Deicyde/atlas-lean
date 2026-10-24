@@ -13,7 +13,12 @@ vacuous when `n = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](../basic/block.md)
+- [Indiscrete](indiscrete.md)
+
+## Proof depends on
+
+- [Set Partition](../basic/set-partition.md)
 
 ## Sources
 

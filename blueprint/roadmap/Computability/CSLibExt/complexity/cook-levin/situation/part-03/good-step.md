@@ -17,7 +17,19 @@ theorem tabRow_reads_lt (H i k j : ℕ) (hpl : E.pl i k ≤ j)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [Good](good.md)
+- [Step I](step-i.md)
+
+## Proof depends on
+
+- [Push Sym](../part-01/push-sym.md)
+- [Apply Eff](apply-eff.md)
+- [Eff](../part-01/eff.md)
+- [Eff pushed](../part-01/eff-pushed.md)
+- [The step on `Option Λ`](../part-01/sit-step.md)
+- [B1 (full configuration equality, no height hypothesis)](step-agree.md)
+- [Win C](win-c.md)
 
 ## Sources
 

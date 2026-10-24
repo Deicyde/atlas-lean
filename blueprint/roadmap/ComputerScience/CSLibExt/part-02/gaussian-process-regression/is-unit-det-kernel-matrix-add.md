@@ -13,7 +13,7 @@ positive definite, hence invertible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kernel Matrix](kernel-matrix.md)
 
 ## Sources
 

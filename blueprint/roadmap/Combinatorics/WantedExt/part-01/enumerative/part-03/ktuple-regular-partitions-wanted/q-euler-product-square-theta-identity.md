@@ -14,7 +14,9 @@ clearing and finite coefficient encodings are the documented deviations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Bilateral Series](bounded-bilateral-series.md)
+- [Positive Unilateral Series](positive-unilateral-series.md)
+- [Q Euler Product](../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: Cslib.Turing.SingleTapeTM.toTape_move
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [To Tape](to-tape.md)
+
+## Proof depends on
+
+- [To Tape](../tape-view/to-tape.md)
+- [To Tape move](../tape-view/to-tape-move.md)
+- [Cell Symbol](cell-symbol.md)
 
 ## Sources
 

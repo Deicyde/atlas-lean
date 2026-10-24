@@ -12,7 +12,13 @@ The Metropolis–Hastings kernel is reversible with respect to the target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mh Step](mh-step.md)
+- [Pmf Kernel](pmf-kernel.md)
+
+## Proof depends on
+
+- [Detailed balance implies reversibility](is-reversible-pmf-kernel.md)
+- [Detailed balance for Metropolis–Hastings](mh-detailed-balance.md)
 
 ## Sources
 

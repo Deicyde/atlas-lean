@@ -11,7 +11,14 @@ The final domino `(y#$, $)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../../part-01/pcp/domino.md)
+- [Sym](../../part-01/pcp/sym.md)
+
+## Proof depends on
+
+- [End Mark](../../part-01/pcp/end-mark.md)
+- [Star](../../part-01/pcp/star.md)
+- [Lift](lift.md)
 
 ## Sources
 

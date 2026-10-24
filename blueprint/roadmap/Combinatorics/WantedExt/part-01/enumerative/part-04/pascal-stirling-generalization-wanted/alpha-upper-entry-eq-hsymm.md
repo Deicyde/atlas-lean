@@ -13,7 +13,7 @@ complete homogeneous symmetric polynomial `MvPolynomial.hsymm`; in 0-based indic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alpha Upper Entry](alpha-upper-entry.md)
 
 ## Sources
 

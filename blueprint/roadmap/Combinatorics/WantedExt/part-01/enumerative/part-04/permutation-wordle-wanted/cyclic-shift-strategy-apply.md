@@ -12,7 +12,7 @@ Every component of `CS` is `finRotate`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Shift Strategy](cyclic-shift-strategy.md)
 
 ## Sources
 

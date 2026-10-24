@@ -13,7 +13,7 @@ lean: MetaMathlibExt.two_pow_mul_tribonacci_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 
 ## Sources
 

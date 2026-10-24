@@ -13,7 +13,13 @@ do: the match phase keeps the difference, the gap phases interpolate it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Banded From](banded-from.md)
+- [Diag Align](diag-align.md)
+
+## Proof depends on
+
+- [Banded From map gap X](banded-from-map-gap-x.md)
+- [Banded From map gap Y](banded-from-map-gap-y.md)
 
 ## Sources
 

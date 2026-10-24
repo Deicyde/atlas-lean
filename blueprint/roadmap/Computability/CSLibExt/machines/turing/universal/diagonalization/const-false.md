@@ -13,7 +13,7 @@ symbols `1` and `2`, and on the first blank it writes `bitSym false = 1` and ent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../code/code.md)
 
 ## Sources
 

@@ -14,7 +14,10 @@ As printed the claim fails for `n = 1`: `3 ⋅ 3` is `2`-Lehmer (`2 ⋅ 4 = 9 - 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spoof Lehmer](is-spoof-lehmer.md)
+- [Is Trivial Spoof](is-trivial-spoof.md)
+- [Spoof Eval](spoof-eval.md)
+- [Spoof Of Bases](spoof-of-bases.md)
 
 ## Sources
 

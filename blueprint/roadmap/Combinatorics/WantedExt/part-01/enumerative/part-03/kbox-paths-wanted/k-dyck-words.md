@@ -13,6 +13,10 @@ The `k`-Dyck paths of size `n` (`n` steps `D^{(k)}`, hence length `(k+1)n`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is KDyck Word](is-kdyck-word.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KBoxPathsWanted](../../../../../../../sources/v2/WantedExt.md)

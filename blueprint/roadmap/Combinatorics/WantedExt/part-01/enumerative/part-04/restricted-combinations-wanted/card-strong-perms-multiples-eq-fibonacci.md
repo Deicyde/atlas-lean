@@ -14,7 +14,7 @@ Fibonacci `p`-numbers shifted: `f^{(j+1)}_n = fibonacciP j (n + 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci P](../../../../../../NumberTheory/MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
 
 ## Sources
 

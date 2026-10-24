@@ -11,7 +11,7 @@ Lemma 8 (b): for `n ≥ 2`, `0 ≤ D_n(x) ≤ (log n)/(n(n - 1))`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Staircase](farey-staircase.md)
 
 ## Sources
 

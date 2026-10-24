@@ -16,7 +16,9 @@ order `k` (all as subsets of `𝕏`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Adic Prefix Value](zeck-adic-prefix-value.md)
+- [Zeck NIZ](zeck-niz.md)
 
 ## Sources
 

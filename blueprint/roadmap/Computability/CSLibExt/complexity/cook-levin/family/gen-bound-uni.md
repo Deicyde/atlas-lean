@@ -13,7 +13,19 @@ coefficients sum to 323 (the value at `k = y = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uni](uni.md)
+- [Gen Bound](gen-bound.md)
+
+## Proof depends on
+
+- [Layout](layout.md)
+- [N Lits](n-lits.md)
+- [Num Vars](num-vars.md)
+- [Row W](row-w.md)
+- [Body B](body-b.md)
+- [Clause B](clause-b.md)
+- [Lit E](lit-e.md)
+- [Pre B](pre-b.md)
 
 ## Sources
 

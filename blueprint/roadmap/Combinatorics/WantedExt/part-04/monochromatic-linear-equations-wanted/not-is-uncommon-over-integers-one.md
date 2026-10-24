@@ -12,7 +12,7 @@ With one colour nothing is uncommon over the integers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Uncommon Over Integers](is-uncommon-over-integers.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ A total dominating set of at most `K` vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total Dominating Set Instance](total-dominating-set-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

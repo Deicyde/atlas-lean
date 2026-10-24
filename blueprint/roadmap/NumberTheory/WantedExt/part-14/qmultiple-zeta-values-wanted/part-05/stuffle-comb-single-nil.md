@@ -12,7 +12,12 @@ lean: MetaMathlibExt.stuffleComb_single_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stuffle Comb](stuffle-comb.md)
+
+## Proof depends on
+
+- [Quasi Shuffle](../part-03/quasi-shuffle.md)
+- [Quasi Shuffle nil left](../part-03/quasi-shuffle-nil-left.md)
 
 ## Sources
 

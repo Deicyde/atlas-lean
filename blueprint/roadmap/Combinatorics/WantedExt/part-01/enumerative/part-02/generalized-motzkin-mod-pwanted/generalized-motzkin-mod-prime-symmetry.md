@@ -14,7 +14,7 @@ Article A22, Theorem 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Motzkin](generalized-motzkin.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ recurrent if and only if `p ∤ ct[P^n]` for all `n`; otherwise its zeros have d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Linearly Recurrent Seq](is-linearly-recurrent-seq.md)
+- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

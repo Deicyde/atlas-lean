@@ -20,7 +20,7 @@ terms of the Vinogradov-Korobov zero-free region and the bound for `1/ζ` there 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](../../../../MathlibExt/part-07/kfull/is-kfull.md)
 
 ## Sources
 

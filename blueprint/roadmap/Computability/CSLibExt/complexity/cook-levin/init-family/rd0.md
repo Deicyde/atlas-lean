@@ -11,7 +11,7 @@ The first read test.
 
 ## Depends on
 
-This node has no prerequisites.
+- [GL](gl.md)
 
 ## Sources
 

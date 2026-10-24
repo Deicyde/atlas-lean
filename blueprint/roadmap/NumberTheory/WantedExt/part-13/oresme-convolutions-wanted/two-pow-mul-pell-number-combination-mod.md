@@ -11,7 +11,7 @@ lean: MetaMathlibExt.two_pow_mul_pellNumber_combination_modEq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Number Sequence](../../../MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

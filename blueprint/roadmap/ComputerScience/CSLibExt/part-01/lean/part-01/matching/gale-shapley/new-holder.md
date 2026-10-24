@@ -12,7 +12,7 @@ her old holder otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

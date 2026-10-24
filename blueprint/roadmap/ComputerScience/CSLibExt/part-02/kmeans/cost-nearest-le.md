@@ -13,7 +13,8 @@ assignment is optimal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nearest](nearest.md)
+- [Cost](cost.md)
 
 ## Sources
 

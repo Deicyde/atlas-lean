@@ -14,7 +14,9 @@ Corollary 6, part 4: if `d = (1, …, q, k^{(s_k)}, …, 1^{(s_1)})` (normal for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Class Of](diagonal-class-of.md)
+- [Diagonal Normal Form](diagonal-normal-form.md)
+- [Diagonal Of List](diagonal-of-list.md)
 
 ## Sources
 

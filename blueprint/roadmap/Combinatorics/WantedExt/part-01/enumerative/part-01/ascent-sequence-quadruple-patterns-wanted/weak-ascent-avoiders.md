@@ -14,6 +14,11 @@ The weak ascent sequences of length `n` avoiding every pattern in `P`, the paper
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Contains Pattern](contains-pattern.md)
+- [Is Weak Ascent Seq](is-weak-ascent-seq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.AscentSequenceQuadruplePatternsWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,8 @@ excedance generating function over circular permutations of more than `r` object
 
 ## Depends on
 
-This node has no prerequisites.
+- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

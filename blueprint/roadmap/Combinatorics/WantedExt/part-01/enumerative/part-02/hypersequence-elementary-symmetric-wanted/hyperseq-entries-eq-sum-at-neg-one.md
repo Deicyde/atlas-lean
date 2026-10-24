@@ -17,7 +17,8 @@ source's index `j - k + i`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](../hypersequence-weighted-sums-wanted/alternating-binomial-power-sum.md)
+- [Hyperseq B](hyperseq-b.md)
 
 ## Sources
 

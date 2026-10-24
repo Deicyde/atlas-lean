@@ -15,7 +15,8 @@ Proposition 3: for natural `n`, `r`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Harmonic](../../../../../../NumberTheory/MathlibExt/part-01/harmonic/odd-harmonic/odd-harmonic.md)
+- [R Stirling Second](../../../../../MathlibExt/part-01/enumerative/part-07/rstirling-second/r-stirling-second.md)
 
 ## Sources
 

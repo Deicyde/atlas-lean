@@ -15,7 +15,8 @@ states, stated as `IsKAutomaticSequence 4` together with an MSB-first DFAO on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KAutomatic Sequence](../../../../MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
+- [Meta Automatic Two](meta-automatic-two.md)
 
 ## Sources
 

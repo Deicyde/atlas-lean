@@ -11,7 +11,8 @@ Consequently, the even-Fibonacci set is not 2-accessible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RAccessible](is-raccessible.md)
+- [Even Fibonacci Set](even-fibonacci-set.md)
 
 ## Sources
 

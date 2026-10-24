@@ -12,7 +12,12 @@ at most `H` of them.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+
+## Proof depends on
+
+- [Dec O](../part-01/dec-o.md)
+- [Dec S](../part-03/dec-s.md)
 
 ## Sources
 

@@ -15,7 +15,8 @@ Only solvability of `x² - d y² = -1` is assumed (the source's `d > 1` is not n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
+- [Neg Pell G](neg-pell-g.md)
 
 ## Sources
 

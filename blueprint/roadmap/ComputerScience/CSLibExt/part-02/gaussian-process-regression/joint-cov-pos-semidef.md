@@ -13,7 +13,12 @@ is positive semidefinite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint Cov](joint-cov.md)
+- [Kernel Matrix](kernel-matrix.md)
+
+## Proof depends on
+
+- [Joint Cov eq add](joint-cov-eq-add.md)
 
 ## Sources
 

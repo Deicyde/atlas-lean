@@ -12,7 +12,12 @@ lean: Cslib.Language.IsRegular.shuffle
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shuffle](shuffle.md)
+
+## Proof depends on
+
+- [Is Shuffle](is-shuffle.md)
+- [Shuffle NFA](shuffle-nfa.md)
 
 ## Sources
 

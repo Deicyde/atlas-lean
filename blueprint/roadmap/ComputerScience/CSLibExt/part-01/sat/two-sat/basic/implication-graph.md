@@ -12,7 +12,18 @@ from `adjacencyTable φ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../../lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
+- [Lit](lit.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Adjacency Table](adjacency-table.md)
+- [Lit List](lit-list.md)
+- [Var List](var-list.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
 
 ## Sources
 

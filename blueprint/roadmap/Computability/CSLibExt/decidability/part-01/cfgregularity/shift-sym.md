@@ -11,7 +11,11 @@ A symbol of `g`, in `regGrammar g`: nonterminals are shifted by `4`, letters map
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+
+## Proof depends on
+
+- [Tl](tl.md)
 
 ## Sources
 

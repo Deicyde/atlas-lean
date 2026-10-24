@@ -11,7 +11,11 @@ A Hamiltonian path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hamiltonian Path Undirected Instance](hamiltonian-path-undirected-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

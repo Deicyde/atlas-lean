@@ -12,7 +12,8 @@ lean: MetaMathlibExt.rectCellAction_r_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cell R2](cell-r2.md)
+- [Rect Cell Action](rect-cell-action.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: MetaMathlibExt.squareSplitDivisors_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Divisors](square-split-divisors.md)
+
+## Proof depends on
+
+- [Square Split U](square-split-u.md)
+- [Square Split U one](square-split-u-one.md)
+- [Square Split V](square-split-v.md)
+- [Square Split V one](square-split-v-one.md)
 
 ## Sources
 

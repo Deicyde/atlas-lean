@@ -12,7 +12,11 @@ its Stern–Brocot representation is.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Positively Poisson Stable](is-positively-poisson-stable.md)
+- [Mallows Letter](mallows-letter.md)
+- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Mallows Rep](mallows-rep.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
 
 ## Sources
 

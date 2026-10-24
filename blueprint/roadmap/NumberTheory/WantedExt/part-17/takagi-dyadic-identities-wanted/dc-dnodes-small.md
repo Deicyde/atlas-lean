@@ -12,7 +12,7 @@ Small values `δ(2), …, δ(7) = 0, 1, 0, 2, 2, 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc DNodes](dc-dnodes.md)
 
 ## Sources
 

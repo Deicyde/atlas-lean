@@ -15,7 +15,8 @@ written through `perfectPartitionOfFactorization`. Added hypothesis `N ≥ 4` as
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
+- [Perfect Partition Of Factorization](perfect-partition-of-factorization.md)
 
 ## Sources
 

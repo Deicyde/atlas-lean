@@ -13,7 +13,7 @@ The source's example `O^2_6(3,3,3,3,4,5,6) = (3,4,5,3,4,5,6)` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Outcome](metered-outcome.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ penult on an `n × n` board with `x` tokens.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Penult](placement-penult.md)
+- [Tak Has Road](tak-has-road.md)
 
 ## Sources
 

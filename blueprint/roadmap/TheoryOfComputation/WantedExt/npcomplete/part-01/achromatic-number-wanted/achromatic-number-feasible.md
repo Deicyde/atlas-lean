@@ -11,7 +11,7 @@ A complete coloring with at least `K` used colors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Achromatic Number Instance](achromatic-number-instance.md)
 
 ## Sources
 

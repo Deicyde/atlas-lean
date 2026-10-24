@@ -13,7 +13,8 @@ The paper sums to `r = t + α_1 - 1`; here the sum runs to `2n`, which adds only
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjugate Parts](conjugate-parts.md)
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

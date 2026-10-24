@@ -14,6 +14,11 @@ wires recursively, then compare wires `2 i + 1` and `2 i + 2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Final Layer](final-layer.md)
+- [Relabel](relabel.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.SortingNetworks.OddEven](../../../../../../../../sources/v2/CSLibExt.md)

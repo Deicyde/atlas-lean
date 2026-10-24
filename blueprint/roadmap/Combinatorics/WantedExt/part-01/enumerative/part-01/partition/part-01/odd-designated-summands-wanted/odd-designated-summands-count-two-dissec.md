@@ -12,7 +12,8 @@ The 2-dissection `∑ PD_2(2n) q^n = f_4^2 f_6^4 / (f_1^2 f_3^2 f_12^2)` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Designated Summands Count](odd-designated-summands-count.md)
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

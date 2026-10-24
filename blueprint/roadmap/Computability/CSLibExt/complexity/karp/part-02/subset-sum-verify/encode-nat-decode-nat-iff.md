@@ -12,7 +12,11 @@ A block is canonical binary iff it does not end in `false`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Last F](last-f.md)
+
+## Proof depends on
+
+- [Encode Nat decode Nat eq iff](../../../sat-verifier-spec/encode-nat-decode-nat-eq-iff.md)
 
 ## Sources
 

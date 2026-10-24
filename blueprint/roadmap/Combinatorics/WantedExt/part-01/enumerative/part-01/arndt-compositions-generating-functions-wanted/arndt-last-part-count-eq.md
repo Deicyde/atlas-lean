@@ -15,7 +15,7 @@ For `n ≥ 1` and a last part `m ≥ 1`: `b(n, m) = t₁(n - m)` if `m ≤ n < 2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Last Part Count](arndt-last-part-count.md)
 
 ## Sources
 

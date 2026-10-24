@@ -12,7 +12,16 @@ A new occurrence of `l`, with at most five fresh vertices, keeps the invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](../color/col-st.md)
+- [Inv](inv.md)
+- [Lit Rev](../../../sat-check/lit-rev.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [D Tok](d-tok.md)
+- [Name](name.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

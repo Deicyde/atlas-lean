@@ -12,7 +12,7 @@ state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Transformation](../syntactic/state-transformation.md)
 
 ## Sources
 

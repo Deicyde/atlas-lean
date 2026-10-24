@@ -12,7 +12,13 @@ Every post-fixed point of the refinement is contained in Moore's relation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Moore Rel](moore-rel.md)
+- [Moore Step](moore-step.md)
+
+## Proof depends on
+
+- [Moore Iter](moore-iter.md)
+- [Moore Iter spec](moore-iter-spec.md)
 
 ## Sources
 

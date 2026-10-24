@@ -14,7 +14,8 @@ lean: MetaMathlibExt.generalizedMultiplePolylog_landen_connection_classical
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+- [Generalized Multiple Polylog](generalized-multiple-polylog.md)
 
 ## Sources
 

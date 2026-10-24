@@ -11,7 +11,7 @@ Theorem 1, `n = 2p` with `p` an odd prime: `g(2p) = p - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abs Least APLength](abs-least-aplength.md)
 
 ## Sources
 

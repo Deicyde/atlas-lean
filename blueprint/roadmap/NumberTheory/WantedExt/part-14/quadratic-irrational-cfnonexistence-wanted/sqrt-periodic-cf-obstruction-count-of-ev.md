@@ -14,7 +14,7 @@ Theorem 4: for even `l ≥ 4`, let `B` be the number of parity patterns
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Periodic CF](has-periodic-cf.md)
 
 ## Sources
 

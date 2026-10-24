@@ -13,6 +13,10 @@ The CLL form `ʔ(A°⫠)` of a reusable hypothesis `A`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Girard's translation](translate.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.LinearLogic.CLL.GirardTranslation](../../../../../../sources/v2/CSLibExt.md)

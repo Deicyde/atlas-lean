@@ -11,7 +11,8 @@ For `n ≥ 2`, `|Sort_n(s^[321])| = 2^{n-2}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consecutive Cyclic Stack Sort](consecutive-cyclic-stack-sort.md)
+- [Sorted Permutations](sorted-permutations.md)
 
 ## Sources
 

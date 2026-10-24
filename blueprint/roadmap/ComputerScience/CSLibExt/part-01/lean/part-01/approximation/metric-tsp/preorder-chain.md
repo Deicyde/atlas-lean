@@ -18,7 +18,12 @@ theorem tourCost_preorder_le (hd : IsMetricCost d) (r : α) (F : Forest α) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
+- [Preorder](preorder.md)
+
+## Proof depends on
+
+- [Forest](forest.md)
 
 ## Sources
 

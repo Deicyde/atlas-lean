@@ -11,7 +11,15 @@ Host counter receiving each target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](../assembly/hk.md)
+- [PT](pt.md)
+
+## Proof depends on
+
+- [CK](../accept/ck.md)
+- [CK](../family/ck.md)
+- [CK](../init-family/ck.md)
+- [CK](../shift/ck.md)
 
 ## Sources
 

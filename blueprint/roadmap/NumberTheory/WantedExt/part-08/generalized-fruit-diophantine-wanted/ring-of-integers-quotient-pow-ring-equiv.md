@@ -11,7 +11,7 @@ For a prime `P ∈ T_K` and every `n ≥ 1`, `𝓞_K / P^n ≃ ℤ / 2^n ℤ` as
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Unramified Degree One Primes](two-unramified-degree-one-primes.md)
 
 ## Sources
 

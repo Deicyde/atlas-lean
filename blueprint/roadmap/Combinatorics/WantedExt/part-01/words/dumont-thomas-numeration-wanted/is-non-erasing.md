@@ -12,7 +12,12 @@ A substitution is non-erasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Non Erasing](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-non-erasing.md)
+- [Is Substitution](is-substitution.md)
+
+## Proof depends on
+
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

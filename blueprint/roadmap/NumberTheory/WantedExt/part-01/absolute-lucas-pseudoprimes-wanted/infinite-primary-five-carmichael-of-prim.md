@@ -15,7 +15,7 @@ make every form a (positive) prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primary DCarmichael](is-primary-dcarmichael.md)
 
 ## Sources
 

@@ -16,7 +16,9 @@ for the limit itself rather than introducing a separate partial definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knight Moves](knight-moves.md)
+- [Max Norm Ball](max-norm-ball.md)
+- [Piece Distance](piece-distance.md)
 
 ## Sources
 

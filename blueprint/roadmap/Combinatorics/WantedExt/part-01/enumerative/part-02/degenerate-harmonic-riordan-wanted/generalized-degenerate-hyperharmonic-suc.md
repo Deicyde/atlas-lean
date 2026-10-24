@@ -12,7 +12,7 @@ lean: MetaMathlibExt.generalizedDegenerateHyperharmonic_succ_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Degenerate Hyperharmonic](generalized-degenerate-hyperharmonic.md)
 
 ## Sources
 

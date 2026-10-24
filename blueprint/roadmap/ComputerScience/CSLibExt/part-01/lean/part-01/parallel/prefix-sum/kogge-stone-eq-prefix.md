@@ -13,7 +13,13 @@ position `i < n` holds `x 0 * ⋯ * x i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kogge Stone](kogge-stone.md)
+- [Prefix Prod](prefix-prod.md)
+
+## Proof depends on
+
+- [After `k` rounds](kogge-stone-eq-seg.md)
+- [Seg](seg.md)
 
 ## Sources
 

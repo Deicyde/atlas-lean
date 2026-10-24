@@ -13,7 +13,11 @@ configurations without a successor are those in the halting state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts From](halts-from.md)
+
+## Proof depends on
+
+- [Step eq none iff](step-eq-none-iff.md)
 
 ## Sources
 

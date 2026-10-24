@@ -12,7 +12,7 @@ penalty factor `β`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
 
 ## Sources
 

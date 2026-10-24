@@ -12,7 +12,7 @@ For all `n ≥ 0`: `pond(3n+2) ≡ 0 (mod 2)`, `pond(27n+26) ≡ 0 (mod 3)`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pond Count](pond-count.md)
 
 ## Sources
 

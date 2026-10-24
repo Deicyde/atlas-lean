@@ -13,7 +13,16 @@ lean: Cslib.Decidability.TMRewriting.manyOneReducible_tm0HaltsOn_eqvGen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Step](../../part-02/string-rewriting/step.md)
+- [TM0 Halts On](../../part-02/tm0-halting/tm0-halts-on.md)
+- [TMSym](tmsym.md)
+- [Rules](rules.md)
+
+## Proof depends on
+
+- [Halt Word](halt-word.md)
+- [Init Word](init-word.md)
+- [A single-tape machine halts iff its start word is equivalent to `⊢ H ⊣`](tm0-halts-on-iff-eqv-gen.md)
 
 ## Sources
 

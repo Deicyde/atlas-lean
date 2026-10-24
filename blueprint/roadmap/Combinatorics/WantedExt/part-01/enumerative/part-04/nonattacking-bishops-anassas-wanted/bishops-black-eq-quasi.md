@@ -12,7 +12,8 @@ equation (14), `z = π(m)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bishop Color Quasi Coeff](bishop-color-quasi-coeff.md)
+- [Bishops Black](bishops-black.md)
 
 ## Sources
 

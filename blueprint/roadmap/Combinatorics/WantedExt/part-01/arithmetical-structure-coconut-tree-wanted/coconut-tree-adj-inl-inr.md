@@ -13,7 +13,7 @@ A leaf of `CT(p, s)` is adjacent to the path vertex `v_{i+1}` exactly when
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

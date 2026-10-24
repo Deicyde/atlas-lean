@@ -12,7 +12,13 @@ lean: MetaMathlibExt.zero_neg_one_neg_two_mem_knottExpansions
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knott Expansions](knott-expansions.md)
+
+## Proof depends on
+
+- [Satisfies Knott Condition](satisfies-knott-condition.md)
+- [Base Phi Value](base-phi-value.md)
+- [Base Phi Value zero neg one neg two](base-phi-value-zero-neg-one-neg-two.md)
 
 ## Sources
 

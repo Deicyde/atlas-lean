@@ -13,7 +13,7 @@ terminates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Quotient](partial-quotient.md)
 
 ## Sources
 

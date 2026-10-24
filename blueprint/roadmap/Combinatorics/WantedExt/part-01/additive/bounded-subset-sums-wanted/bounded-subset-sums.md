@@ -15,6 +15,10 @@ at most `|A| - β` terms, as the union of the restricted sumsets `m^∧A` for `�
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Restricted Sumset](../../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.BoundedSubsetSumsWanted](../../../../../../sources/v2/WantedExt.md)

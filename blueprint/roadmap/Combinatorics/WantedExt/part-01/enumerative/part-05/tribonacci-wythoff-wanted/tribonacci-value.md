@@ -17,6 +17,10 @@ successor `out(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.TribonacciWythoffWanted](../../../../../../../sources/v2/WantedExt.md)

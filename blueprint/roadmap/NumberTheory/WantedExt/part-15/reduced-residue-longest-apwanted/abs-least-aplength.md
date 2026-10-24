@@ -14,6 +14,10 @@ system `R(n) = R_{-⌈n/2⌉}(n)` of absolute least reduced residues modulo `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Longest APLength](longest-aplength.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ReducedResidueLongestAPWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.Sampling.invariant_mhKernel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mh Step](mh-step.md)
+- [Pmf Kernel](pmf-kernel.md)
+
+## Proof depends on
+
+- [Invariant pmf Kernel](invariant-pmf-kernel.md)
+- [Detailed balance for Metropolis–Hastings](mh-detailed-balance.md)
 
 ## Sources
 

@@ -12,7 +12,10 @@ A word `u # v` determines `u` and `v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+- [Bl](bl.md)
+- [Sep](sep.md)
+- [Tl](tl.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The assignment for `to3 φ` built from an assignment `v` for `φ`: `v` on even v
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Fresh Val](fresh-val.md)
 
 ## Sources
 

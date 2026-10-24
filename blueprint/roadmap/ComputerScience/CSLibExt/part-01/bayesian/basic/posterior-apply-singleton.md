@@ -14,6 +14,12 @@ Mathlib's posterior kernel, for countably many hypotheses and observations.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bayes Posterior](bayes-posterior.md)
+- [Bayes' rule for countably many hypotheses](bayes-posterior-apply-singleton.md)
+- [Bayes' rule for discrete observations](posterior-eq-bayes-posterior.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Bayesian.Basic](../../../../../../sources/v2/CSLibExt.md)

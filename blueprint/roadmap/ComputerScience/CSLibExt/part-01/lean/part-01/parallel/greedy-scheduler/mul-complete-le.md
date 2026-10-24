@@ -12,7 +12,14 @@ Complete steps (all `p` processors busy) number at most `n / p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](../brent/dag.md)
+- [Schedule](../brent/schedule.md)
+- [Length](../brent/length.md)
+- [Load](load.md)
+
+## Proof depends on
+
+- [Sum load](sum-load.md)
 
 ## Sources
 

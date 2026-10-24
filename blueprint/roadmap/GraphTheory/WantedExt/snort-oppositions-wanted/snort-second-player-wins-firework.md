@@ -13,7 +13,9 @@ distance at least `3`, then the second player wins on the `n`-firework for every
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Snort Response Pair](is-snort-response-pair.md)
+- [Snort Second Player Wins](snort-second-player-wins.md)
+- [Firework](firework.md)
 
 ## Sources
 

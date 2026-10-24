@@ -15,7 +15,7 @@ The paper takes `l ≥ 1`; `l = 0` is included.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CRSet](is-crset.md)
 
 ## Sources
 

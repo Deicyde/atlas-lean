@@ -11,7 +11,7 @@ The upper bound `η_g(n)/√n ≤ 2(1 + 1/√n) g`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diff Basis Number](diff-basis-number.md)
 
 ## Sources
 

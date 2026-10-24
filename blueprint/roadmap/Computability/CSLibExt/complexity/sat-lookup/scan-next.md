@@ -11,7 +11,8 @@ Where the scan continues after moving a marker: compare for `val b`, else move t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
+- [Sym](../sat-verifier-spec/sym.md)
 
 ## Sources
 

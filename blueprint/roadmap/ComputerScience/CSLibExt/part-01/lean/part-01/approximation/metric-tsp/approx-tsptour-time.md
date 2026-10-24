@@ -12,7 +12,14 @@ One unit per vertex of the tour.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+- [Preorder](preorder.md)
+- [Approx TSPTour](approx-tsptour.md)
+
+## Proof depends on
+
+- [Preorder Walk](preorder-walk.md)
+- [Preorder Walk Aux](preorder-walk-aux.md)
 
 ## Sources
 

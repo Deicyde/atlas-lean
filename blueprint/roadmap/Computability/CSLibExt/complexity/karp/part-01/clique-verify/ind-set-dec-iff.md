@@ -13,7 +13,15 @@ input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
+- [Kg Check](kg-check.md)
+- [Ind Set Dec](../clique/ind-set-dec.md)
+
+## Proof depends on
+
+- [Indep iff](indep-iff.md)
+- [Kg Dec iff exists](kg-dec-iff-exists.md)
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

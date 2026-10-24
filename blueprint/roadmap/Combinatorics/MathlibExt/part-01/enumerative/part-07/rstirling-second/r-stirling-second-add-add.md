@@ -12,7 +12,7 @@ The shifted finite-sum form `{n+r \brace m+r}_r = ∑_{i ≤ n} C(n,i) {n-i \bra
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Stirling Second](r-stirling-second.md)
 
 ## Sources
 

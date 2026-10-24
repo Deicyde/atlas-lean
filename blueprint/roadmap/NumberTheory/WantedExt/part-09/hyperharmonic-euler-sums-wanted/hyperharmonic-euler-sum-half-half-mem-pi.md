@@ -14,7 +14,9 @@ Here `r = c + 1/2`, `a = d + 1/2` with `c, d ∈ ℤ`, and `p > r` is `p > c`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sum Period Algebra](euler-sum-period-algebra.md)
+- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
+- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MetaMathlibExt.add_add_mem_beattySet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beatty Set](beatty-set.md)
+
+## Proof depends on
+
+- [Generalized Beatty](generalized-beatty.md)
+- [Generalized Beatty one](generalized-beatty-one.md)
 
 ## Sources
 

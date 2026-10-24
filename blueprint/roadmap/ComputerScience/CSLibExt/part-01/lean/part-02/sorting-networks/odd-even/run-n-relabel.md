@@ -12,7 +12,12 @@ Running a relabeled network reads the original network on the relabeled wires.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run N](../bitonic/run-n.md)
+- [Relabel](relabel.md)
+
+## Proof depends on
+
+- [Cmp](../bitonic/cmp.md)
 
 ## Sources
 

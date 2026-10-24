@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.InformationTheory.infoGain_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Info Gain](info-gain.md)
+
+## Proof depends on
+
+- [Finite Conditional Entropy](../../../../../InformationTheory/MathlibExt/conditional-entropy/finite-conditional-entropy.md)
+- [Conditioning does not increase entropy](../../../../../InformationTheory/MathlibExt/conditional-entropy/finite-conditional-entropy-le.md)
+- [Shannon Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
 
 ## Sources
 

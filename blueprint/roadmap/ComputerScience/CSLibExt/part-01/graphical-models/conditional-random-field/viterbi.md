@@ -12,7 +12,7 @@ ending in `s` (`pathWeight_le_viterbi`, `exists_pathWeight_eq_viterbi`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
 
 ## Sources
 

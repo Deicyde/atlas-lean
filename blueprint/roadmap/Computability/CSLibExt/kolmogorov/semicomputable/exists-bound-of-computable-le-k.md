@@ -12,7 +12,11 @@ lean: Cslib.Kolmogorov.exists_bound_of_computable_le_K
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+
+## Proof depends on
+
+- [Chaitin's incompleteness theorem](exists-bound-of-re-pred-le-k.md)
 
 ## Sources
 

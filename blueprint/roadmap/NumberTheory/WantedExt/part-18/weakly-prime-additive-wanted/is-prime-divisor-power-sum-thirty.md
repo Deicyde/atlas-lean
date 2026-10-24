@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isPrimeDivisorPowerSum_thirty
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Prime Divisor Power Sum](is-prime-divisor-power-sum.md)
 
 ## Sources
 

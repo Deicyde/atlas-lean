@@ -12,7 +12,19 @@ Codes with the same code stack have the same table lookups.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code Cells](../clocked/code-cells.md)
+- [Code](../code/code.md)
+- [Lookup](../code/lookup.md)
+
+## Proof depends on
+
+- [Cell](../clocked/cell.md)
+- [Cells](../clocked/cells.md)
+- [Entries](../clocked/entries.md)
+- [Entry Nums](../clocked/entry-nums.md)
+- [Find Entry](../clocked/find-entry.md)
+- [Find Entry entries](../clocked/find-entry-entries.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

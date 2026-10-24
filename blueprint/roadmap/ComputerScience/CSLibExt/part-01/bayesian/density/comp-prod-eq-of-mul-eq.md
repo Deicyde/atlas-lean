@@ -15,6 +15,10 @@ Under the same factorization, the marginal `ρ.withDensity c` and the kernel `η
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [The evidence from a factorization of densities](comp-eq-with-density-of-mul-eq.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Bayesian.Density](../../../../../../sources/v2/CSLibExt.md)

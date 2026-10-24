@@ -13,6 +13,10 @@ The translation on raw bits.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Conv](../dense-to-binary/conv.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.DenseToBinaryConverter](../../../../../sources/v2/CSLibExt.md)

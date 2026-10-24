@@ -14,7 +14,16 @@ and a greedy step with a ready task is full.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](../brent/dag.md)
+- [Schedule](../brent/schedule.md)
+- [Greedy](greedy.md)
+- [Length](../brent/length.md)
+- [Load](load.md)
+
+## Proof depends on
+
+- [Ready](ready.md)
+- [Exists le time](exists-le-time.md)
 
 ## Sources
 

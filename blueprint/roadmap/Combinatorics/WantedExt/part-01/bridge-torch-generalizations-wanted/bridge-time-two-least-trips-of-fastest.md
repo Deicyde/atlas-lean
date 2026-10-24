@@ -15,7 +15,9 @@ be `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bridge Schedule](is-bridge-schedule.md)
+- [Bridge Time](bridge-time.md)
+- [Schedule Cost](schedule-cost.md)
 
 ## Sources
 

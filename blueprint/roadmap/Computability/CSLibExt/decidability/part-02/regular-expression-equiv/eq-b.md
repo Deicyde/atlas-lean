@@ -12,7 +12,13 @@ word shorter than `eqBound`, enumerated by length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](../regular-expression/encoded-regex.md)
+
+## Proof depends on
+
+- [Words Of Length](../regular/words-of-length.md)
+- [Eq Bound](eq-bound.md)
+- [Membership test](../regular-expression/mem-b.md)
 
 ## Sources
 

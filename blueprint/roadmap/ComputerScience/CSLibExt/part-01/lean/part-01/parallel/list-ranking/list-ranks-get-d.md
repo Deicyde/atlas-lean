@@ -12,7 +12,19 @@ lean: Cslib.Algorithms.Lean.Parallel.ListRanking.listRanks_getD
 
 ## Depends on
 
-This node has no prerequisites.
+- [Terminates](terminates.md)
+- [List Ranks](list-ranks.md)
+- [Rank](rank.md)
+
+## Proof depends on
+
+- [State](state.md)
+- [Round](round.md)
+- [Round Tab](round-tab.md)
+- [Rounds](rounds.md)
+- [Rounds Tab](rounds-tab.md)
+- [Rounds dist](rounds-dist.md)
+- [Tabulate](tabulate.md)
 
 ## Sources
 

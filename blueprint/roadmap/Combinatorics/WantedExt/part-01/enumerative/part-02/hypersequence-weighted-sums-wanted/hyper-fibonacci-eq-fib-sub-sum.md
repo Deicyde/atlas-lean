@@ -11,7 +11,7 @@ Theorem 3: `F^{(r)}_n = F_{n+2r} - ∑_{k=0}^{r-1} C(n + k - 1, k) F_{2(r-k)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Fibonacci](../../../../../../NumberTheory/WantedExt/part-09/hyper-leonardo-wanted/hyper-fibonacci.md)
 
 ## Sources
 

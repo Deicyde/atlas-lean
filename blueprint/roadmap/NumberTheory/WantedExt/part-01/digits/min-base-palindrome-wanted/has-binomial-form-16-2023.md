@@ -12,7 +12,7 @@ Characteristic example: `2023 = (7, 14, 7)_16 = 7 · (1, 2, 1)_16` is in binomia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Binomial Form](has-binomial-form.md)
 
 ## Sources
 

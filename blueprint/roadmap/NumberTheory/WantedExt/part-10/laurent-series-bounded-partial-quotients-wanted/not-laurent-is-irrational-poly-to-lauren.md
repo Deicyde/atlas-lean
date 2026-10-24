@@ -12,7 +12,12 @@ Polynomials are not irrational.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Is Irrational](laurent-is-irrational.md)
+- [Poly To Laurent Inv](poly-to-laurent-inv.md)
+
+## Proof depends on
+
+- [Laurent Inv Var](laurent-inv-var.md)
 
 ## Sources
 

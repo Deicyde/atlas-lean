@@ -13,7 +13,7 @@ Characteristic edges of the `(4, 10)`-mother graph: `(2, 8)` and `(9, 9)` are ed
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
 
 ## Sources
 

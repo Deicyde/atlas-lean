@@ -14,7 +14,7 @@ lean: MetaMathlibExt.nicomacheanNu_examples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachean Nu](nicomachean-nu.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Ackermann function. Stated along natural `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse Ackermann](inverse-ackermann.md)
+- [Opx](opx.md)
 
 ## Sources
 

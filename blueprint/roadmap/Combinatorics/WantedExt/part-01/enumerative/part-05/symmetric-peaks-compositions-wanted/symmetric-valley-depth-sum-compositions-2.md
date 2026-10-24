@@ -14,7 +14,7 @@ for all `n ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Valley Depth Sum](symmetric-valley-depth-sum.md)
 
 ## Sources
 

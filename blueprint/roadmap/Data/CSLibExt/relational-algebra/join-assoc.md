@@ -12,7 +12,15 @@ The natural join is associative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
+- [Join](join.md)
+
+## Proof depends on
+
+- [Compatible](compatible.md)
+- [Compatible merge left](compatible-merge-left.md)
+- [Compatible merge right](compatible-merge-right.md)
+- [Merge](merge.md)
 
 ## Sources
 

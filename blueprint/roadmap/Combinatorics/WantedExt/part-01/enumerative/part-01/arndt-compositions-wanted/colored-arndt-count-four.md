@@ -13,7 +13,7 @@ The colored Arndt compositions of `4` are `4₁, 4₂, 4₃, 4₄`, `(3_a, 1₁)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Arndt Count](colored-arndt-count.md)
 
 ## Sources
 

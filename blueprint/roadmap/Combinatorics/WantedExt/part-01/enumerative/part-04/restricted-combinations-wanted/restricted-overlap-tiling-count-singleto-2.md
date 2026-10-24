@@ -13,7 +13,7 @@ With `Q = {2}` the comb is a `(1,1,1)`-comb; two of them interlock on a `4`-boar
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Overlap Tiling Count](restricted-overlap-tiling-count.md)
 
 ## Sources
 

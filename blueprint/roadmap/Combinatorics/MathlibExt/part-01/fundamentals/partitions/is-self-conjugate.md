@@ -25,6 +25,10 @@ The empty partition is self-conjugate.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partition Conjugate](partition-conjugate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Fundamentals.Partitions](../../../../../../sources/v2/MathlibExt.md)

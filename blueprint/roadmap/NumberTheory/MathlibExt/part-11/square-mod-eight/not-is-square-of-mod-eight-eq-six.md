@@ -14,6 +14,10 @@ A natural number congruent to `6` mod 8 is not a square.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sq mod eight](sq-mod-eight.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SquareModEight](../../../../../sources/v2/MathlibExt.md)

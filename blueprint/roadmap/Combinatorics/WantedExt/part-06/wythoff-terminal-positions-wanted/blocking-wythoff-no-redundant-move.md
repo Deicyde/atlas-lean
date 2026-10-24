@@ -13,7 +13,9 @@ in `R_k` once moves by `v` are removed (`k = 2, 3`), so `R_k` stops being the P-
 
 ## Depends on
 
-This node has no prerequisites.
+- [Larsson Set Three](larsson-set-three.md)
+- [Larsson Set Two](larsson-set-two.md)
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
 
 ## Sources
 

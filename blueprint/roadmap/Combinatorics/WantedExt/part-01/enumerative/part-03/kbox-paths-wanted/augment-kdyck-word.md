@@ -11,7 +11,7 @@ The augmented path of a `k`-Dyck word: each `D^{(k)}` becomes `U D^{k-1} L D`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
 
 ## Sources
 

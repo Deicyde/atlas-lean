@@ -14,6 +14,10 @@ to the second.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [SArc](sarc.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.AlgebraicGraphTheory.SArcs](../../../../../../../../sources/v2/MathlibExt.md)

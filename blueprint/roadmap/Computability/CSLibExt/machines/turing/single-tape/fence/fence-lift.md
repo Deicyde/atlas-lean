@@ -12,7 +12,12 @@ A transition of `tm` as a transition of the fenced machine: a write is written t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence State](fence-state.md)
+- [Fence Symbol](fence-symbol.md)
+
+## Proof depends on
+
+- [Of Cell](of-cell.md)
 
 ## Sources
 

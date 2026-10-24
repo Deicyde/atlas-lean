@@ -12,7 +12,7 @@ The codeword of `∏_{j < k - 1} (X - αⱼ)` has weight at most `n - k + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode](encode.md)
 
 ## Sources
 

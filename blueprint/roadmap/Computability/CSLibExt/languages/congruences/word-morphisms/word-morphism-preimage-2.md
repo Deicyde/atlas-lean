@@ -12,7 +12,13 @@ Regular languages are closed under inverse free-monoid morphisms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Word Morphism Preimage](word-morphism-preimage.md)
+
+## Proof depends on
+
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Finite syntactic Monoid word Morphism Preimage](finite-syntactic-monoid-word-morphism-pr.md)
+- [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources
 

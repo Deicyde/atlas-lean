@@ -12,7 +12,7 @@ Every odd composite number is a strong pseudoprime to base `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strong Pseudoprime](is-strong-pseudoprime.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ and for `n < 0`, `k > n`, and for `k ≤ n < 0`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+
+## Proof depends on
+
+- [Array](array.md)
+- [Neg Neg Aux](neg-neg-aux.md)
 
 ## Sources
 

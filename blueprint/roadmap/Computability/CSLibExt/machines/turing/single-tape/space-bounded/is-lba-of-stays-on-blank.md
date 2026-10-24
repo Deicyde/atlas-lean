@@ -15,7 +15,12 @@ on a blank cell, or halt there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LBA](is-lba.md)
+
+## Proof depends on
+
+- [Step some](../classes/step-some.md)
+- [To List tail](../to-recursive/to-list-tail.md)
 
 ## Sources
 

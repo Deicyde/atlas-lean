@@ -13,6 +13,12 @@ lean: MetaMathlibExt.bishopsSquare
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bishop Moves](bishop-moves.md)
+- [Nonattacking Placements](nonattacking-placements.md)
+- [Square Board](square-board.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NonattackingBishopsAnassasWanted](../../../../../../../sources/v2/WantedExt.md)

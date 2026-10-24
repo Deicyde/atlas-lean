@@ -12,7 +12,8 @@ property iff every `m i` is even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
+- [Nim Pass Indicator](nim-pass-indicator.md)
 
 ## Sources
 

@@ -11,7 +11,13 @@ The productions of node `k`, with left-hand side `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regex Node](regex-node.md)
+
+## Proof depends on
+
+- [Comp Rules](comp-rules.md)
+- [Plus Rules](plus-rules.md)
+- [Star Rules](star-rules.md)
 
 ## Sources
 

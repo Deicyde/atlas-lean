@@ -12,7 +12,11 @@ Along a path, the reduced weight is the weight plus `h` of the end minus `h` of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent](consistent.md)
+- [Reduced Weight](reduced-weight.md)
+- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Edge](../../graph/directed-adjacency-2/edge.md)
+- [Path Weight](../../graph/shortest-path/dijkstra/path-weight.md)
 
 ## Sources
 

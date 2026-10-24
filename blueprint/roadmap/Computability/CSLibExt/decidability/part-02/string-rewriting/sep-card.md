@@ -11,7 +11,12 @@ The row separator `(#, #)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../../part-01/pcp/domino.md)
+- [Sym](../../part-01/pcp/sym.md)
+
+## Proof depends on
+
+- [Star](../../part-01/pcp/star.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ written as a sum over `n + k`; the exponent `p` is an integer.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HyperharmonicEulerSumsWanted](../../../../../sources/v2/WantedExt.md)

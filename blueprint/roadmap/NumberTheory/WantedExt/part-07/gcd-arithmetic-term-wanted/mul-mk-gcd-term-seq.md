@@ -13,7 +13,7 @@ The generating function identity `(z^a - 1)(z^b - 1) · ∑ s_{a,b}(n) zⁿ = 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Term Seq](gcd-term-seq.md)
 
 ## Sources
 

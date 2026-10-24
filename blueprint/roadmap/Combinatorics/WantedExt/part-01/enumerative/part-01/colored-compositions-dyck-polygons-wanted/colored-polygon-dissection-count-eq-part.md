@@ -13,7 +13,8 @@ Birmajer, Gil, and Weiner's formula, as recalled by the source:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Polygon Dissection Count](colored-polygon-dissection-count.md)
+- [Partial Bell Polynomial](../../../../../MathlibExt/part-01/enumerative/part-06/partial-bell-polynomial.md)
 
 ## Sources
 

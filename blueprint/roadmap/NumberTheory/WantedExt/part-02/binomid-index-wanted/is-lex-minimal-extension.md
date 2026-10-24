@@ -14,6 +14,10 @@ form the paper's set `L`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BinomidIndexWanted](../../../../../sources/v2/WantedExt.md)

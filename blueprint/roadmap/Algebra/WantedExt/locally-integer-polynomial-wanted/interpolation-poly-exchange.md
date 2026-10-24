@@ -13,7 +13,7 @@ lean: MetaMathlibExt.interpolationPoly_exchange
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interpolation Poly](interpolation-poly.md)
 
 ## Sources
 

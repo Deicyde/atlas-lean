@@ -11,7 +11,7 @@ The successor of a word `pre q post` under the rules for state `q`, if any.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TMSym](tmsym.md)
 
 ## Sources
 

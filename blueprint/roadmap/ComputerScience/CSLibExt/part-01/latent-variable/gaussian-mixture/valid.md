@@ -11,7 +11,7 @@ Valid parameters: positive weights summing to one, positive variances.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Params](params.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ If `U_2, U_3, …` are independent and uniform on `[0, 1]`, the law of `(y_j)_{j
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Markov Path](zeck-markov-path.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

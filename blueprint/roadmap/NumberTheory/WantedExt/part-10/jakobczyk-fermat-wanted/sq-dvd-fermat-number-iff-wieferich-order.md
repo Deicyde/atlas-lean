@@ -13,7 +13,12 @@ For an odd prime `p`: `p² ∣ F_n` if and only if `p` is a Wieferich prime and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sq dvd fermat Number iff](sq-dvd-fermat-number-iff.md)
+- [Is Wieferich Prime](../../../MathlibExt/part-12/wieferich-prime/is-wieferich-prime.md)
+
+## Proof depends on
+
+- [Is Wieferich Prime iff mod Eq](../../../MathlibExt/part-12/wieferich-prime/is-wieferich-prime-iff-mod-eq.md)
 
 ## Sources
 

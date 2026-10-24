@@ -26,7 +26,24 @@ hypothesis `hpq` re-establishes the store facts after the step; computing
 
 ## Depends on
 
-This node has no prerequisites.
+- [AExp](../syntax/aexp.md)
+- [Points To](../separation-logic/points-to.md)
+- [Heap](../heap/heap.md)
+- [Heap Cmd](../heap-step/heap-cmd.md)
+- [Sep Valid](../separation-logic/sep-valid.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [Eval](../syntax/eval.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [HAssertion](../separation-logic/hassertion.md)
+- [Entails](../separation-logic/entails.md)
+- [HConfig](../heap-step/hconfig.md)
+- [HStep](../heap-step/hstep.md)
+- [HSteps](../heap-step/hsteps.md)
+- [Safe](../heap-step/safe.md)
 
 ## Sources
 

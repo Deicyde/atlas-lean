@@ -15,6 +15,11 @@ with `z = -π(m)` for the white board and `z = π(m)` for the black board.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Santos Beta](santos-beta.md)
+- [Two Assoc Stirling Second](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NonattackingBishopsAnassasWanted](../../../../../../../sources/v2/WantedExt.md)

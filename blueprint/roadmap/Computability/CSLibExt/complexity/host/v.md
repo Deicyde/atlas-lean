@@ -11,7 +11,8 @@ Component labels in the verifier host: `yes` and `no` start the cleanup with the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HLab](hlab.md)
 
 ## Sources
 

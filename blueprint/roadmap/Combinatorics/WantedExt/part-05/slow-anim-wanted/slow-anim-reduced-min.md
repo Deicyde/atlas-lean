@@ -12,7 +12,7 @@ a reduced position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Reduced](slow-anim-reduced.md)
 
 ## Sources
 

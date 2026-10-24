@@ -12,7 +12,7 @@ The second Dirichlet convolution `s_q^{(2)}(n) = ∑_{d ∣ n} s_q(d) s_q(n/d)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Sum Arith](digit-sum-arith.md)
 
 ## Sources
 

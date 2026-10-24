@@ -14,6 +14,10 @@ lean: MetaMathlibExt.IsInSecondOrderFamily
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Second Order Bi Seq](second-order-bi-seq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SecondOrderGenFunIntegerValuesWanted](../../../../../sources/v2/WantedExt.md)

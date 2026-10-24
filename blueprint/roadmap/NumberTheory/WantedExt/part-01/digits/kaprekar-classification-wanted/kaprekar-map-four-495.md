@@ -12,7 +12,7 @@ Characteristic value: in `D_4`, `495` is the string `0495` and `f(0495) = 9540 -
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Map](kaprekar-map.md)
 
 ## Sources
 

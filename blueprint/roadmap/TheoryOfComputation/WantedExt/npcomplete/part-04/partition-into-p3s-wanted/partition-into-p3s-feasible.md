@@ -11,7 +11,11 @@ A partition into paths of length 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Into P3s Instance](partition-into-p3s-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

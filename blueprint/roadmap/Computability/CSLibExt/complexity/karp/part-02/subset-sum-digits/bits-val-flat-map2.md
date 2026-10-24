@@ -12,7 +12,11 @@ Values of bit lists made of two-bit digits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+
+## Proof depends on
+
+- [Bits Val cons](bits-val-cons.md)
 
 ## Sources
 

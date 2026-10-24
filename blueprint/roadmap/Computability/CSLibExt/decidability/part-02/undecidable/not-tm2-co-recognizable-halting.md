@@ -12,7 +12,11 @@ The halting set is not co-recognizable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Co Recognizable](../../part-01/basic/tm2-co-recognizable.md)
+
+## Proof depends on
+
+- [Tm2 Co Recognizable iff re Pred not](../../part-01/basic/tm2-co-recognizable-iff-re-pred-not.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ their positions in `usedNT`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](encoded-cfg.md)
+
+## Proof depends on
+
+- [Encode Rule](encode-rule.md)
+- [Nt Index](nt-index.md)
+- [Map Rule](../basic/map-rule.md)
 
 ## Sources
 

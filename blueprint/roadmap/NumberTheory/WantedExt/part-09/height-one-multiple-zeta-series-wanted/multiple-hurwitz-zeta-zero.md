@@ -12,7 +12,7 @@ Order zero: `ζ_0(s) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiple Hurwitz Zeta](multiple-hurwitz-zeta.md)
 
 ## Sources
 

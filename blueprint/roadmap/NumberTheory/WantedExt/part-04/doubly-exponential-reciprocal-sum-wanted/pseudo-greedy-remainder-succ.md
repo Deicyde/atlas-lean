@@ -12,7 +12,8 @@ The remainder recursion `x (n + 1) = x n - 1 / a n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
+- [Pseudo Greedy Remainder](pseudo-greedy-remainder.md)
 
 ## Sources
 

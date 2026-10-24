@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Induced Subgraph Isomorphism Instance](induced-subgraph-isomorphism-instance.md)
 
 ## Sources
 

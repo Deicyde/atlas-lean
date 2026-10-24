@@ -14,6 +14,11 @@ round to the nearest integer with ties to even, and scale back.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rne](rne.md)
+- [Ulp Exp](ulp-exp.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Numerical.FloatingPoint](../../../../../../../../sources/v2/CSLibExt.md)

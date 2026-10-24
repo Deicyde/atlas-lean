@@ -15,7 +15,9 @@ clause is kept explicit as requested.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Only Real Roots](has-only-real-roots.md)
+- [Real Alternates](real-alternates.md)
+- [Real Interlaces](real-interlaces.md)
 
 ## Sources
 

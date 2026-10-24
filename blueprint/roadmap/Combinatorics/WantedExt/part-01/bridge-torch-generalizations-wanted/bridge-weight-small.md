@@ -12,7 +12,7 @@ The weights `y₁, …, y₇` are `0, 0, 0, 2, 4, 5, 20/3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Weight](bridge-weight.md)
 
 ## Sources
 

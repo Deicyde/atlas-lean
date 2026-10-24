@@ -12,7 +12,7 @@ The `q`-kernel is stable under `n ↦ b (q * n + j)` for `j < q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Kernel](k-kernel.md)
 
 ## Sources
 

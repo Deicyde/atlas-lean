@@ -13,7 +13,9 @@ with `r̄ = (h - α - β + t₀, t₁, …, t_{k-1})`, and the bound is attained
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
+- [Repetition Sequence](repetition-sequence.md)
+- [Yang Chen Bound](yang-chen-bound.md)
 
 ## Sources
 

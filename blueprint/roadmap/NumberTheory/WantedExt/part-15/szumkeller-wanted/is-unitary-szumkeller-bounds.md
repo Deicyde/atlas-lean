@@ -14,7 +14,8 @@ For a unitary s-Zumkeller number `n` whose least unitary divisor exceeding
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unitary SZumkeller](is-unitary-szumkeller.md)
+- [Unitary Divisors](../../../MathlibExt/part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ For all `α, n ≥ 0`, with `A_α = ∑_{i=0}^{2α+1} 3^{2i}` and `B_α = ∑_{i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Tripartition Count](regular-tripartition-count.md)
 
 ## Sources
 

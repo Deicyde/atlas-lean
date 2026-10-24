@@ -12,7 +12,7 @@ WA-Wilf equivalent (weak-ascent reading as in Theorem 5).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources
 

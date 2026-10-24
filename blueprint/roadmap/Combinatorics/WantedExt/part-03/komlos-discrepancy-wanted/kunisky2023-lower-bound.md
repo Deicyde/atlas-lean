@@ -13,6 +13,10 @@ Kunisky's global lower endpoint, without finite-dimensional attainment.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Komlos Constant](../../../MathlibExt/part-03/matrix-discrepancy/komlos-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.KomlosDiscrepancyWanted](../../../../../sources/v2/WantedExt.md)

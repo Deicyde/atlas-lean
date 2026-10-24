@@ -13,7 +13,13 @@ labels.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross Entropy Loss](cross-entropy-loss.md)
+- [Surprisal](../../../../../InformationTheory/MathlibExt/finite-entropy/surprisal.md)
+
+## Proof depends on
+
+- [Cross Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/cross-entropy.md)
+- [Cross Entropy pure](../../../../../InformationTheory/MathlibExt/finite-entropy/cross-entropy-pure.md)
 
 ## Sources
 

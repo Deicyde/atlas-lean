@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Induced Matching Instance](maximum-induced-matching-instance.md)
 
 ## Sources
 

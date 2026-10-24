@@ -12,7 +12,7 @@ from the offset, stays within `|i - j| ≤ w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
 
 ## Sources
 

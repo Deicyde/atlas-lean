@@ -12,7 +12,7 @@ The board `B_1 = (1, 1, 2, 4)` of Figure 2 has `8` cells.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ferrers Board Cells](ferrers-board-cells.md)
 
 ## Sources
 

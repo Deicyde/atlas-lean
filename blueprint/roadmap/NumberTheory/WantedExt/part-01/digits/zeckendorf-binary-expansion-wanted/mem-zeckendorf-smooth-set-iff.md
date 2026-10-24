@@ -12,7 +12,10 @@ Membership in `U`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Closure](l-star-closure.md)
+- [L Star Collection](l-star-collection.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+- [Zeckendorf Smooth Set](zeckendorf-smooth-set.md)
 
 ## Sources
 

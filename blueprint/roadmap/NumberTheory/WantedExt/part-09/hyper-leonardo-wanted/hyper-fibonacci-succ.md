@@ -12,7 +12,7 @@ lean: MetaMathlibExt.hyperFibonacci_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Fibonacci](hyper-fibonacci.md)
 
 ## Sources
 

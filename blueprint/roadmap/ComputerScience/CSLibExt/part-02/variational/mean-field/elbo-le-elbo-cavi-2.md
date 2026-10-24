@@ -12,7 +12,15 @@ lean: Cslib.MachineLearning.Variational.elbo_le_elbo_cavi₂
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Cavi₂](cavi-2.md)
+- [Elbo](elbo.md)
+- [Prod Dist](prod-dist.md)
+
+## Proof depends on
+
+- [The CAVI update maximizes the ELBO over the first factor](elbo-le-elbo-cavi.md)
+- [Swap Joint](swap-joint.md)
 
 ## Sources
 

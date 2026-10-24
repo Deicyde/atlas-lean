@@ -12,7 +12,13 @@ A prefix pair's cell score is at most the Smith–Waterman score.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prefix Pairs](prefix-pairs.md)
+- [Sw Cell Score](sw-cell-score.md)
+- [The Smith–Waterman score](sw-score.md)
+
+## Proof depends on
+
+- [List Max](list-max.md)
 
 ## Sources
 

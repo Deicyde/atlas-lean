@@ -13,7 +13,14 @@ clauses come out in a different order (`tseitinAcc_eq`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Acc Step](acc-step.md)
+- [And Clauses](and-clauses.md)
+- [Imp Clauses](imp-clauses.md)
+- [Or Clauses](or-clauses.md)
 
 ## Sources
 

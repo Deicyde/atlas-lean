@@ -12,7 +12,7 @@ lean: MetaMathlibExt.ramanujanTheta_order_nine_product
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Theta Raw](../../../../../../../../NumberTheory/MathlibExt/part-01/modular-forms/jacobi-theta/ramanujan/ramanujan-theta-raw.md)
 
 ## Sources
 

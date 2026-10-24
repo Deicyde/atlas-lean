@@ -12,7 +12,7 @@ lowest terms with `q` arbitrarily large: for every `Q` some entry has denominato
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachean Nu](nicomachean-nu.md)
 
 ## Sources
 

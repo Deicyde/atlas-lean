@@ -11,7 +11,11 @@ Number of original symbols situation `i` consumes from stack `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+
+## Proof depends on
+
+- [Res](../part-01/res.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Small values: `A_3(2, 1) = C_3 = 5`, `A_2(2, 3) = K_2 = C_4 - C_3 = 9`, `A_3(3, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fuss Catalan Number](../../../../../../NumberTheory/MathlibExt/part-06/generalized-fuss-catalan-numbers-fmnk/generalized-fuss-catalan-number.md)
 
 ## Sources
 

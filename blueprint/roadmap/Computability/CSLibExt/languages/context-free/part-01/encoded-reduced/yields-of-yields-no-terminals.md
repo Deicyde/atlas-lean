@@ -12,7 +12,15 @@ Yields in the grammar of productions without terminals are yields of the grammar
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+- [No Terminals](no-terminals.md)
+- [To CFG](../encoded/to-cfg.md)
+- [Yields](../../part-02/yields/yields.md)
+
+## Proof depends on
+
+- [Decode Rule](../encoded/decode-rule.md)
+- [Decode Symbol](../encoded/decode-symbol.md)
 
 ## Sources
 

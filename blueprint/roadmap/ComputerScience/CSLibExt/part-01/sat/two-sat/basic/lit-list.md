@@ -11,7 +11,15 @@ All literals over the variables of `φ`, without repetition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lit](lit.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Var List](var-list.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
 
 ## Sources
 

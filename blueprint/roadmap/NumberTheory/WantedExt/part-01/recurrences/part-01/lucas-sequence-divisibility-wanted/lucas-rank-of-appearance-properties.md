@@ -20,7 +20,9 @@ primes `p`: (i) if `gcd(r, Q) = 1` then `r ∣ U_s ↔ ρ(r) ∣ s`; (ii) odd `p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas Rank Of Appearance](lucas-rank-of-appearance.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

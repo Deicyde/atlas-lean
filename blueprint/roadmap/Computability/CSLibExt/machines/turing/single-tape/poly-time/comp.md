@@ -11,7 +11,13 @@ The reversal component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](../../../../complexity/host/comp.md)
+
+## Proof depends on
+
+- [K](k.md)
+- [L](l.md)
+- [Prog](prog.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ If two solutions `v, w` of the `([k]; p; s)`-Padovan–Perrin recurrence satisfy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

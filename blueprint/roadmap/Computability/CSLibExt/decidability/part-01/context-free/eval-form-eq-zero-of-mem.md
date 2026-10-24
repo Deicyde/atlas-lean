@@ -12,7 +12,11 @@ The interpretation of a sentential form with a nonterminal assigned `0` is `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
+
+## Proof depends on
+
+- [Eval Symbol](../../../languages/context-free/part-01/basic/eval-symbol.md)
 
 ## Sources
 

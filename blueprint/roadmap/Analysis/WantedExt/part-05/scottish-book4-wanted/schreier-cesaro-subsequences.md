@@ -17,7 +17,7 @@ Scottish Book, stated as a theorem in the Scottish Book typescript.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fair Coin Measure](fair-coin-measure.md)
 
 ## Sources
 

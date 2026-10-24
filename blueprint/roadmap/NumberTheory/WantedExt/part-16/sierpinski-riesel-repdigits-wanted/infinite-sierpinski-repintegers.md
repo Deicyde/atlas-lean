@@ -12,7 +12,9 @@ for every `b ≥ 2` there are infinitely many `t ≥ 1` with `k_b^{(t)}` a Sierp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sierpinski Covering Data](is-sierpinski-covering-data.md)
+- [Is Sierpinski Number](is-sierpinski-number.md)
+- [Repstring](repstring.md)
 
 ## Sources
 

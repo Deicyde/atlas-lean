@@ -12,7 +12,11 @@ The universal description method is partial recursive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The universal description method](u.md)
+
+## Proof depends on
+
+- [Run](run.md)
 
 ## Sources
 

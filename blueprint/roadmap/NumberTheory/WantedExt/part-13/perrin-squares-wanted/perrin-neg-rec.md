@@ -12,7 +12,7 @@ The Perrin recurrence `R_{-n} = R_{-n-2} + R_{-n-3}` at negative indices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perrin Neg](perrin-neg.md)
 
 ## Sources
 

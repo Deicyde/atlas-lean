@@ -12,7 +12,7 @@ lean: MetaMathlibExt.schreierParentB_of_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Parent B](schreier-parent-b.md)
 
 ## Sources
 

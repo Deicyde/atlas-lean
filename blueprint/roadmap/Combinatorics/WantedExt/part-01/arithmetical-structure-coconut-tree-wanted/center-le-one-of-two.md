@@ -12,7 +12,7 @@ Corollary 7: no smooth arithmetical structure on `CT(p, 2)` (`p ≥ 1`) has
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Smooth Coconut](is-smooth-coconut.md)
 
 ## Sources
 

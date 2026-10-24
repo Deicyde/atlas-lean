@@ -11,7 +11,14 @@ Erase the annotations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [ACmd](acmd.md)
+- [Cmd](../syntax/cmd.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Assertion](../hoare/assertion.md)
+- [BExp](../syntax/bexp.md)
 
 ## Sources
 

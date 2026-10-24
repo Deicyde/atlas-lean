@@ -12,7 +12,21 @@ A capped walk fails on a fourth literal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Wl](wl.md)
+- [Lit Rev](../../../sat-check/lit-rev.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Stmt](stmt.md)
+- [Nxt](nxt.md)
+- [Tgt](tgt.md)
+- [Walk step](walk-step.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ Theorem 11: `U` has Lebesgue measure `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Zeckendorf Smooth Set](zeckendorf-smooth-set.md)
 
 ## Sources
 

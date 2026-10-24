@@ -14,6 +14,11 @@ lean: MetaMathlibExt.quadrupleVSet
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Last Descent Top](last-descent-top.md)
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.AscentSequenceQuadruplePatternsWanted](../../../../../../../sources/v2/WantedExt.md)

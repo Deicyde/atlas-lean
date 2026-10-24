@@ -13,7 +13,15 @@ multi-stack machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Decidable](../basic/tm2-decidable.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [Language](../../../languages/context-free/part-01/encoded/language.md)
+
+## Proof depends on
+
+- [Tm2 Decidable iff computable Pred](../basic/tm2-decidable-iff-computable-pred.md)
+- [Emptiness of context-free grammars is computable](computable-pred-language-eq-zero.md)
 
 ## Sources
 

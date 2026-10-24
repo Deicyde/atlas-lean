@@ -14,6 +14,10 @@ and `min F ≥ p|F|`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Schreier Multiset Pool](schreier-multiset-pool.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.SchreierTypeMultisetsWanted](../../../../../../../sources/v2/WantedExt.md)

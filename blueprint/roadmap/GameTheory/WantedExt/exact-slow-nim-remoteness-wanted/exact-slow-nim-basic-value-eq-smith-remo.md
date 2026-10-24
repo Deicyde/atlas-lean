@@ -12,7 +12,9 @@ basic-vector value equals Smith's remoteness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Exact Slow Nim Basic Value](exact-slow-nim-basic-value.md)
+- [Slow ANim Game](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
 
 ## Sources
 

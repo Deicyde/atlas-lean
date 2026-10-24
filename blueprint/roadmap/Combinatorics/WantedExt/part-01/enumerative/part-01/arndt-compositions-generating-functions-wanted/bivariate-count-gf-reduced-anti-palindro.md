@@ -12,7 +12,8 @@ parts is `Bp(x, y) = (1 - x - x² + x³ + xy - x³y)/(1 - x - x² + x³ - x³y²
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bivariate Count GF](bivariate-count-gf.md)
+- [Reduced Anti Palindromic Composition Count](reduced-anti-palindromic-composition-cou.md)
 
 ## Sources
 

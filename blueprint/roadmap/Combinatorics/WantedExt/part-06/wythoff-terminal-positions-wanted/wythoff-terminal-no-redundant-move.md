@@ -14,7 +14,8 @@ changes the set of P-positions (stability is inherited, `MetaMathlibExt.pPositio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
+- [Wythoff Terminal PSet](wythoff-terminal-pset.md)
 
 ## Sources
 

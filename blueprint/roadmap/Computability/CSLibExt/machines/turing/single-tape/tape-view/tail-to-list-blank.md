@@ -12,7 +12,7 @@ Dropping the first cell of a `StackTape` drops the first cell of the half-tape.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To List Blank](to-list-blank.md)
 
 ## Sources
 

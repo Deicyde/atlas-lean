@@ -13,7 +13,8 @@ Examples from the paper's list for `n = 8`: `21212` has two symmetric valleys of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Valley Count](symmetric-valley-count.md)
+- [Symmetric Valley Depth Sum](symmetric-valley-depth-sum.md)
 
 ## Sources
 

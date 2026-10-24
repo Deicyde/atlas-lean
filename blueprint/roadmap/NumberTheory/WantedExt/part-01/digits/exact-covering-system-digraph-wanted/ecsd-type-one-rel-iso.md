@@ -12,7 +12,7 @@ Every Type 1 ECSD `G(2n + a₁, 2n + a₂)` (`a₁ - a₂` odd) is isomorphic to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

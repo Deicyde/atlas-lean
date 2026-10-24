@@ -12,7 +12,7 @@ Every sequence satisfies the zero polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Satisfies Poly](satisfies-poly.md)
 
 ## Sources
 

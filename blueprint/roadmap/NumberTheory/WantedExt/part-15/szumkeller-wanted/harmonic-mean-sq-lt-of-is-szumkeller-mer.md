@@ -12,7 +12,7 @@ If `n = 2^α (2^{α+1} - 1)` with `α ≥ 1` is s-Zumkeller, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SZumkeller](is-szumkeller.md)
 
 ## Sources
 

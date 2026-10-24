@@ -12,7 +12,7 @@ entries of `α` differ by at most one, and every value below a value of `α` als
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
 
 ## Sources
 

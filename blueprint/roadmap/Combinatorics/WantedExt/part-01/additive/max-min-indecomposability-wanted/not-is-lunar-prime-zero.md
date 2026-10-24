@@ -12,7 +12,12 @@ For `b ≥ 2` the zero sequence is not a lunar prime: `0 = 0 ⊗ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lunar Prime](is-lunar-prime.md)
+
+## Proof depends on
+
+- [Lunar Unit](lunar-unit.md)
+- [Max Min Mul](max-min-mul.md)
 
 ## Sources
 

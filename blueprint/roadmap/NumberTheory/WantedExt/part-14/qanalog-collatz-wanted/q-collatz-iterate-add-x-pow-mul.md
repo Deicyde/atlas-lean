@@ -12,7 +12,7 @@ For odd `A, B`, `n ∈ ℕ`, `U, V ∈ 𝔽₂[[q]]` with `V` odd, and every `k 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Collatz](q-collatz.md)
 
 ## Sources
 

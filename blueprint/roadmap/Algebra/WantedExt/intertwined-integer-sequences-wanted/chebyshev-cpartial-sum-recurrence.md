@@ -11,7 +11,7 @@ Linear recurrence: `F_{k+1}(X) = X F_k(X) - F_{k-1}(X)` for `k ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
 
 ## Sources
 

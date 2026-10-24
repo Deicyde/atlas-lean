@@ -12,7 +12,7 @@ Row `n = 6` of Table 2: `b(6, 1) = 4`, `b(6, 2) = 2`, `b(6, 3) = 1`, `b(6, 6) = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Last Part Count](arndt-last-part-count.md)
 
 ## Sources
 

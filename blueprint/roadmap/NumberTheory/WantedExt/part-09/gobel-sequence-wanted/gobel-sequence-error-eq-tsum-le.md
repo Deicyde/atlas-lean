@@ -16,7 +16,7 @@ paper's Section 3.2; both sums are reindexed `m ↦ m + 1` over `ℕ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ last vertex a value attaining its max-product message at its parent's decoded va
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
+
+## Proof depends on
+
+- [Last Parent](../variable-elimination/last-parent.md)
+- [Max Eliminate](max-eliminate.md)
 
 ## Sources
 

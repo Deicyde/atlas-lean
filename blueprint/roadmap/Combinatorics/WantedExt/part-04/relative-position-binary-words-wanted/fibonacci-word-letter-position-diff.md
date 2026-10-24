@@ -16,7 +16,9 @@ the word with `x₁` at position `0`, as in the paper's conventions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Inf](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Letter Position](letter-position.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.kPellLucas_eq_two_pow_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Pell Lucas](k-pell-lucas.md)
 
 ## Sources
 

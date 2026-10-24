@@ -14,7 +14,7 @@ the paper's `n / 2^{ν(n)}` explicit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Part](odd-part.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The length of `(A, t̄)` is `t₀ + ⋯ + t_{k-1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Repetition Sequence](repetition-sequence.md)
 
 ## Sources
 

@@ -16,7 +16,8 @@ residue data `I(1, 2) (mod 7) = {1, 2, 3, 5}` (`N_t` is odd exactly for those `t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Riesel Number](../../part-16/sierpinski-riesel-repdigits-wanted/is-riesel-number.md)
+- [Narayana Sequence](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
 
 ## Sources
 

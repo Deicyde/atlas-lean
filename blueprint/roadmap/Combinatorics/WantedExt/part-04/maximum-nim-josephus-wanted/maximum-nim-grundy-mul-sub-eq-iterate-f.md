@@ -13,7 +13,7 @@ Lemma 5(ii.2): with `k=n*t+h` for positive `n,t,h`, `h ≤ n`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim Grundy](maximum-nim-grundy.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ Characteristic value: `SB_1(α) = L` for `α < 1/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
+
+## Proof depends on
+
+- [Gap Mediant](gap-mediant.md)
+- [Gap Mediant root](gap-mediant-root.md)
+- [Nat Pair To Real](nat-pair-to-real.md)
+- [Nat Pair To Real one two](nat-pair-to-real-one-two.md)
+- [Stern Brocot Interval](stern-brocot-interval.md)
 
 ## Sources
 

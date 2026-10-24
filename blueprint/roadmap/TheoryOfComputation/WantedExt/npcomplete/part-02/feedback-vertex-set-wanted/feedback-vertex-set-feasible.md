@@ -11,7 +11,11 @@ A feedback vertex set of at most `K` vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feedback Vertex Set Instance](feedback-vertex-set-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

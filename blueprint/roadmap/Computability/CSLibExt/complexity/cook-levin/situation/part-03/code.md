@@ -11,7 +11,7 @@ Combined (label, state) code of a configuration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
 
 ## Sources
 

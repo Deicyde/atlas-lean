@@ -16,7 +16,11 @@ terms with `|α - P/Q| < |α - A/C|`, and, writing `R₁ = DP - BQ`, `S₁ = -CP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Is Irrational](laurent-is-irrational.md)
+- [Laurent Conv Den](laurent-conv-den.md)
+- [Laurent Conv Num](laurent-conv-num.md)
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
+- [Poly To Laurent Inv](poly-to-laurent-inv.md)
 
 ## Sources
 

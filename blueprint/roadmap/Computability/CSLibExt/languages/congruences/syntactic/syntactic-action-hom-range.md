@@ -12,7 +12,21 @@ The syntactic action has exactly the transition monoid as its range.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible](../minimality/accessible.md)
+- [State Separated](../universal/state-separated.md)
+- [State Transformation](state-transformation.md)
+- [Syntactic Monoid](syntactic-monoid.md)
+- [Transition Monoid](transition-monoid.md)
+- [Syntactic Action Hom](syntactic-action-hom.md)
+- [Syntactic Con](syntactic-con.md)
+
+## Proof depends on
+
+- [Syntactic Morphism](syntactic-morphism.md)
+- [Syntactic Rel](syntactic-rel.md)
+- [Syntactic Rel iff transition Action eq](syntactic-rel-iff-transition-action-eq.md)
+- [Transition Action](transition-action.md)
+- [Transition Morphism](transition-morphism.md)
 
 ## Sources
 

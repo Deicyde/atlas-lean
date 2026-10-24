@@ -12,7 +12,7 @@ First sixteen values of `ℳ₁`: `0110101010100101`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic One](meta-automatic-one.md)
 
 ## Sources
 

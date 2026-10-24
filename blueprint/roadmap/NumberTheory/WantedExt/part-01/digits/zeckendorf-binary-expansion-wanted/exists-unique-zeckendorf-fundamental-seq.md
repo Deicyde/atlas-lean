@@ -14,7 +14,10 @@ increasing (`ε <_a δ ↔ eval_H ε < eval_H δ`). Zero-based indices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Asc Lex LT](asc-lex-lt.md)
+- [Is Immediate Predecessor](is-immediate-predecessor.md)
+- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
+- [Zeckendorf Eval](zeckendorf-eval.md)
 
 ## Sources
 

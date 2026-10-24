@@ -17,6 +17,11 @@ Index `β = 0` gives `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Garvan M](garvan-m.md)
+- [Garvan X](garvan-x.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.TwoColorSevenPowerPartitionWanted](../../../../../../../../../sources/v2/WantedExt.md)

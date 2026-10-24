@@ -13,7 +13,9 @@ Theorem 1: for `p ≥ 1` and `s ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Coconut Count Term](coconut-count-term.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

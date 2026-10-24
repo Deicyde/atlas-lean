@@ -12,7 +12,7 @@ Characteristic value: `MT_2 = ⟨1/3, 2/5, 4/7, 3/5, 3/4, 4/5⟩`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Level](mallows-level.md)
 
 ## Sources
 

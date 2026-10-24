@@ -13,6 +13,10 @@ lean: MetaMathlibExt.IsJosephusThreeFixedPoint
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.JosephusFixedPointRecurrenceWanted](../../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,7 @@ The padded sequence `B_{N̄}` with initial conditions `⟨0̄; 1, 2, …, N⟩` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Ends After](three-term-hofstadter-ends-after.md)
 
 ## Sources
 

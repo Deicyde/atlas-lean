@@ -13,7 +13,8 @@ Unified form, with `D_(-k) = D^k`: for `k ≥ 0` and `m, n ≥ k`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Delannoy Lower](gen-delannoy-lower.md)
+- [Gen Delannoy Upper](gen-delannoy-upper.md)
 
 ## Sources
 

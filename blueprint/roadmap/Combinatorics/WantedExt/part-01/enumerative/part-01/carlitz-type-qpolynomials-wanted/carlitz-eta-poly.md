@@ -14,6 +14,10 @@ Carlitz's `q`-polynomials `η_n(x)`: the Carlitz-type sequence with associated s
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q Bracket](q-bracket.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CarlitzTypeQPolynomialsWanted](../../../../../../../sources/v2/WantedExt.md)

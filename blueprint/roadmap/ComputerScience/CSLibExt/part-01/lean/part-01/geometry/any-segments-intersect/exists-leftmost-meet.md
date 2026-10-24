@@ -12,7 +12,13 @@ Among all intersection points of pairs of distinct segments, one is leftmost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meets](meets.md)
+- [Left](left.md)
+- [Right](right.md)
+
+## Proof depends on
+
+- [Exists leftmost mem inter](exists-leftmost-mem-inter.md)
 
 ## Sources
 

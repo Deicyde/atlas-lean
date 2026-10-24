@@ -12,7 +12,7 @@ lean: MetaMathlibExt.greedySubsumfreeBelow_one_two_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Subsumfree Below](greedy-subsumfree-below.md)
 
 ## Sources
 

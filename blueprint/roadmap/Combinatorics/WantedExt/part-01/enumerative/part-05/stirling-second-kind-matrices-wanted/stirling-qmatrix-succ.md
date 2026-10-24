@@ -11,7 +11,8 @@ Lemma 2: `Q^[N+1](n) = Q^[N](n) (V(n) - I_n)` for `N ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling QMatrix](stirling-qmatrix.md)
+- [Stirling VMatrix](stirling-vmatrix.md)
 
 ## Sources
 

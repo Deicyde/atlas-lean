@@ -12,7 +12,7 @@ Section 3 setting: `N` is biunitary triperfect with `2^e ∥ N`, `3^f ∥ N`, `f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ it is an affine image `a S + b` (`a ≠ 0`) of `S = {0, 2, 3, 4, 7, 11, 12, 14}`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](../union-two-apnot-mstdwanted/is-mstdset.md)
 
 ## Sources
 

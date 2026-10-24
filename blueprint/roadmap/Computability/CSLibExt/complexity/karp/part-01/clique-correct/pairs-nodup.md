@@ -12,7 +12,7 @@ No pair is listed twice (rows have distinct first components).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

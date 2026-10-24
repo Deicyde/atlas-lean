@@ -14,7 +14,12 @@ the floor; there is no deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim Grundy](maximum-nim-grundy.md)
+
+## Proof depends on
+
+- [Maximum Nim Mex](maximum-nim-mex.md)
+- [Maximum Nim Mex eq iff](maximum-nim-mex-eq-iff.md)
 
 ## Sources
 

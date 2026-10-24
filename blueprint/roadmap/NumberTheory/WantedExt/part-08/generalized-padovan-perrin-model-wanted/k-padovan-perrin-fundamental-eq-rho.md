@@ -14,7 +14,8 @@ every `n ≥ 0`: `v⁽³⁾ n = ρ(n + 1, 3)` and `v⁽²⁾ n = ρ(n + 2, 3)`. 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
+- [Padovan Perrin Rho](padovan-perrin-rho.md)
 
 ## Sources
 

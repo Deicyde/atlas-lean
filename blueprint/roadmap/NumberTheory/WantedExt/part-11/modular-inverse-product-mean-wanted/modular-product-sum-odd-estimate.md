@@ -13,7 +13,7 @@ coprime to `n`, `|S_k(n, m) - 2^{-k} n^k φ(n)^{k-1}|
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Product Sum](modular-product-sum.md)
 
 ## Sources
 

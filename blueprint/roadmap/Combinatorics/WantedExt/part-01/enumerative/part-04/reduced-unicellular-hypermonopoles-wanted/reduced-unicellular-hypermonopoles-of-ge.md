@@ -14,7 +14,7 @@ value is `u(1) = 2`), hypermonopoles are counted with the vertex normalized to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
 
 ## Sources
 

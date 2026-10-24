@@ -12,7 +12,13 @@ The dependencies derivable from `F` between attributes of `S` (the projection of
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](../functional-dependencies/fd.md)
+
+## Proof depends on
+
+- [Derives](../functional-dependencies/derives.md)
+- [Attr Closure](../functional-dependencies/attr-closure.md)
+- [The closure algorithm decides derivability](../functional-dependencies/derives-iff-subset-attr-closure.md)
 
 ## Sources
 

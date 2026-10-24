@@ -11,7 +11,7 @@ Read a `w` symbol of the `x # w` input as a bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](../dense-satverifier/g.md)
 
 ## Sources
 

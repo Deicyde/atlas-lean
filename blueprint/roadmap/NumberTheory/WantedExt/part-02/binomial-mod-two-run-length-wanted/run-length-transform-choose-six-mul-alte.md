@@ -12,7 +12,7 @@ of the sequence alternating between `1` and the positive integers, `1, 1, 1, 2, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

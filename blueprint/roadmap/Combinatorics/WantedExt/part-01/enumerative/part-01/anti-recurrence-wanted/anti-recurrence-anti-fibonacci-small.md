@@ -13,7 +13,8 @@ with `antiFibonacciC`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Fibonacci C](../../part-06/walnut-oeis-problems-wanted/anti-fibonacci-c.md)
+- [Anti Recurrence](anti-recurrence.md)
 
 ## Sources
 

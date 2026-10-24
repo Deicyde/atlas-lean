@@ -14,6 +14,11 @@ nonempty word when the initial nonterminal is in its cell of the CYK table.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cyk Lookup](cyk-lookup.md)
+- [Cyk Table](cyk-table.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.CYK](../../../../../../../sources/v2/CSLibExt.md)

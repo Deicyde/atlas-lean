@@ -12,7 +12,7 @@ For every `n ≥ 2`, `2^n` has a base-`b` binomial form representation for some
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Binomial Form](has-binomial-form.md)
 
 ## Sources
 

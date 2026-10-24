@@ -11,7 +11,7 @@ The constant of the time bound: depends on `A, KK, g, |ycs|, k0` only.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
 
 ## Sources
 

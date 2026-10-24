@@ -12,7 +12,9 @@ Before the last step some task is still to run.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](../brent/dag.md)
+- [Schedule](../brent/schedule.md)
+- [Length](../brent/length.md)
 
 ## Sources
 

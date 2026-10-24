@@ -11,7 +11,7 @@ The relation containing only the empty tuple, the unit of the natural join.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](../relational-algebra/tuple.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ converges and `x = [0; ω₀, 1, ω₁ q₁^β, 1, ω₂ q₃^β, 1, …]`, i.e.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Step Pattern Den](two-step-pattern-den.md)
 
 ## Sources
 

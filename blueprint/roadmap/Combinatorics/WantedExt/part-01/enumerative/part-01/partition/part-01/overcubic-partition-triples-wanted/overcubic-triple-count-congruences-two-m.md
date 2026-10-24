@@ -15,7 +15,7 @@ The paper's congruence (16), `bt(432n+18) ≡ bt(48n+2) (mod 8)`, is omitted: it
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overcubic Triple Count](overcubic-triple-count.md)
 
 ## Sources
 

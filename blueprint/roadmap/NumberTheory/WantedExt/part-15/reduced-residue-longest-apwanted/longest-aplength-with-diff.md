@@ -15,6 +15,10 @@ contained in `R_m(n)`. The paper uses it for `d > 0`, where the set of lengths i
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reduced Residue Window](reduced-residue-window.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ReducedResidueLongestAPWanted](../../../../../sources/v2/WantedExt.md)

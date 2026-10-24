@@ -12,7 +12,12 @@ A relabeled network leaves the wires outside the image of `e` alone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run N](../bitonic/run-n.md)
+- [Relabel](relabel.md)
+
+## Proof depends on
+
+- [Cmp](../bitonic/cmp.md)
 
 ## Sources
 

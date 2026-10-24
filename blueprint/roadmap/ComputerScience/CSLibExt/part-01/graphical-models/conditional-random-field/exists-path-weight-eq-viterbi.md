@@ -12,7 +12,9 @@ The Viterbi variable is attained by a path ending in that state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+- [Path Weight](path-weight.md)
+- [Viterbi](viterbi.md)
 
 ## Sources
 

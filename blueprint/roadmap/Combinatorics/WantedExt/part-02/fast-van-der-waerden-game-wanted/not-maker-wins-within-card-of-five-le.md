@@ -11,7 +11,7 @@ If `|S| ≥ 5`, Maker does not have an `|S|`-move strategy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maker Wins Within](maker-wins-within.md)
 
 ## Sources
 

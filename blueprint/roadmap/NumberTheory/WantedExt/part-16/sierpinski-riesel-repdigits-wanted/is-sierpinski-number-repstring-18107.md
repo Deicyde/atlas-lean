@@ -11,7 +11,8 @@ lean: MetaMathlibExt.isSierpinskiNumber_repstring_18107
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sierpinski Number](is-sierpinski-number.md)
+- [Repstring](repstring.md)
 
 ## Sources
 

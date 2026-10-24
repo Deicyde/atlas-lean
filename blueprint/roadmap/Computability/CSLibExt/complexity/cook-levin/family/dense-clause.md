@@ -11,7 +11,7 @@ Dense clause over `V` variables with the given literals (slot `v` = `lits.lookup
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clause](../../dense-sat/clause.md)
 
 ## Sources
 

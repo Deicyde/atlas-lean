@@ -13,7 +13,17 @@ halting configuration with output `[ans]` within `m + 2` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](hk.md)
+- [HLab](hlab.md)
+- [HΓ](h.md)
+- [Hprog](hprog.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Clean host](clean-host.md)
+- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

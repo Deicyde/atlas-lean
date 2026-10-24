@@ -14,7 +14,12 @@ bounded by `a`, the set would inject into `Iic a.val`, hence have size at most
 
 ## Depends on
 
-This node has no prerequisites.
+- [A cardinal κ is an *inaccessible fixed point* if κ is...](a-cardinal-is-an-inaccessible-fixed-poin.md)
+- [InAccBelow κ is the set of all inaccessible cardinals below...](inaccbelow-is-the-set-of-all-inaccessibl.md)
+
+## Proof depends on
+
+- [The fixed-point equation forces `#(inaccessibleBelow κ) =...](the-fixed-point-equation-forces-inaccess.md)
 
 ## Sources
 

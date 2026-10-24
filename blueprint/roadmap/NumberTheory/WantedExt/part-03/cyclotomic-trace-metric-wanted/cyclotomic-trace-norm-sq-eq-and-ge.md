@@ -13,7 +13,7 @@ lean: MetaMathlibExt.cyclotomicTraceNormSq_eq_and_ge
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Trace Norm Sq](cyclotomic-trace-norm-sq.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ A Nerode class determines a residual language.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nerode Congruence r iff](nerode-congruence-r-iff.md)
+- [Nerode Rel](../../../languages/congruences/nerode/nerode-rel.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Automata.DA.MathlibDFA](../../../../../../sources/v2/CSLibExt.md)

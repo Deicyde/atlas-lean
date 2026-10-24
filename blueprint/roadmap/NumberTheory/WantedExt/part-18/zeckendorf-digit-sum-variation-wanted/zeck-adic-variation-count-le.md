@@ -13,7 +13,11 @@ and in particular `(1/N)|{n < N : Δ^{(r)}(n) = d}| ≤ rφ³ ℙ(Δ^{(r)} = d)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Adic Of Nat](zeck-adic-of-nat.md)
+- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

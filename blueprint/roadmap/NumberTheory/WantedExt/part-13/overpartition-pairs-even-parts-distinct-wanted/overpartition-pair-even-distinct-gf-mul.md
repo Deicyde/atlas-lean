@@ -13,7 +13,12 @@ The generating function identity (2) in cleared form:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Pair Even Distinct GF](overpartition-pair-even-distinct-gf.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+
+## Proof depends on
+
+- [Constant Coeff q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
 
 ## Sources
 

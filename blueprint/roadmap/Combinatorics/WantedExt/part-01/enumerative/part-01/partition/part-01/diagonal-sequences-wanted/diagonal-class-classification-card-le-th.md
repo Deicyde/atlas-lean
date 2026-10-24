@@ -19,7 +19,9 @@ Part 4 (`|[d]| = 4`) is false as printed and is not stated (see the audit table)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Class](diagonal-class.md)
+- [Diagonal Of List](diagonal-of-list.md)
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

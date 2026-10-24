@@ -11,7 +11,7 @@ Corollary 1: if `f` and `g` are multiplicative, so is `f ⋆ g`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Conv](square-split-conv.md)
 
 ## Sources
 

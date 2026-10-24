@@ -13,7 +13,21 @@ lean: Cslib.MachineLearning.Sequence.BaumWelch.transCount_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../baum-welch/valid.md)
+- [Valid HMM](../baum-welch/valid-hmm.md)
+- [Trans Count](../baum-welch/trans-count.md)
+- [HMM](../hidden-markov/hmm.md)
+- [Backward](../forward-backward/backward.md)
+- [Forward](../hidden-markov/forward.md)
+- [Likelihood](../hidden-markov/likelihood.md)
+
+## Proof depends on
+
+- [P Trans](../baum-welch/p-trans.md)
+- [Post](../baum-welch/post.md)
+- [Pair Marg](pair-marg.md)
+- [Pairwise forward-backward](pair-marg-eq.md)
+- [Path Prob](../hidden-markov/path-prob.md)
 
 ## Sources
 

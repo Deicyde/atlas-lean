@@ -11,7 +11,8 @@ lean: MetaMathlibExt.pondCount_generatingFunction
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pond Count](pond-count.md)
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

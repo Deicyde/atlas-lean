@@ -12,7 +12,7 @@ The partition `(5, 3, 2, 1)` of `11` has max-rook number `4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Max Rook Number](partition-max-rook-number.md)
 
 ## Sources
 

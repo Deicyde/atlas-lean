@@ -11,7 +11,7 @@ Section 3 setting (`N` biunitary triperfect, `3^f ∥ N`, `f ≥ 3`): `2^5 ∥ N
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

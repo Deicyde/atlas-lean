@@ -12,7 +12,11 @@ of `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Pattern2](signed-pattern2.md)
+
+## Proof depends on
+
+- [Signed Inv Seq Contains](signed-inv-seq-contains.md)
 
 ## Sources
 

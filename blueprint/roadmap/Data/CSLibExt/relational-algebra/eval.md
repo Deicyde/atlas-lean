@@ -11,7 +11,8 @@ The truth value of a selection condition on a tuple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond](cond.md)
+- [Tuple](tuple.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ update `k + 1` reads the stored values of update `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+
+## Proof depends on
+
+- [Bellman](bellman.md)
 
 ## Sources
 

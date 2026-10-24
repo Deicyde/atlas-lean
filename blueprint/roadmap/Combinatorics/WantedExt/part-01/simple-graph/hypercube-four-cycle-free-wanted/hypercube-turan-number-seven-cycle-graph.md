@@ -12,7 +12,7 @@ lies in six of them, so `ex(Q₇, C₄) ≤ 14 · ex(Q₆, C₄) / 6 = 308`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypercube Turan Number](../../../../MathlibExt/part-01/simple-graph/part-03/hypercube-extremal/hypercube-turan-number.md)
 
 ## Sources
 

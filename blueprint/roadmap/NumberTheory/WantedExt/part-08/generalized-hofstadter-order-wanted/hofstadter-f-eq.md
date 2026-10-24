@@ -13,7 +13,12 @@ The defining recursion `F_k(n) = n - F_k^k(n - 1)` for `n ≥ 1` (the paper's Ro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hofstadter F](hofstadter-f.md)
+
+## Proof depends on
+
+- [Hofstadter FAux](hofstadter-faux.md)
+- [Hofstadter FAux le](hofstadter-faux-le.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ sequences `f, g`, as the statement only uses their values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divided Power Ideal](is-divided-power-ideal.md)
 
 ## Sources
 

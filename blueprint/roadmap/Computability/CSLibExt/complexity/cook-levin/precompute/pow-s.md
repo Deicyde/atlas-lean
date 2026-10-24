@@ -11,7 +11,18 @@ lean: Cslib.Complexity.CookLevin.Precompute.powS
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
+- [PW](pw.md)
+
+## Proof depends on
+
+- [MS](../counter-view/ms.md)
+- [Mul S](../counter-view/mul-s.md)
+- [Tg](tg.md)
+- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Decr](../../../../MathlibExt/turing-machine/program/decr.md)
+- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

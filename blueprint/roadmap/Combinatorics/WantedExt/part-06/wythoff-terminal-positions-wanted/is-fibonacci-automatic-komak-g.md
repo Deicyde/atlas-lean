@@ -12,7 +12,8 @@ Figure `fig:automG` is given only as an image and is not stated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Fibonacci Automatic](is-fibonacci-automatic.md)
+- [Komak G](komak-g.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Lemma 3.2: for positive `d, a, α, λ` with `a ≤ d + 1`, `f_d^(a)(α, λ) ≠ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perimeter Residue Arm Leg Count](perimeter-residue-arm-leg-count.md)
 
 ## Sources
 

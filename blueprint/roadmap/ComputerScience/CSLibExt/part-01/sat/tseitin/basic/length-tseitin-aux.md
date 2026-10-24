@@ -16,7 +16,14 @@ def tseitinBot [Bot Atom] (ι : Atom → ℕ) (A : Proposition Atom) : CNF :=
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Connective Count](connective-count.md)
+- [Tseitin Aux](tseitin-aux.md)
+
+## Proof depends on
+
+- [Neg Lit](neg-lit.md)
 
 ## Sources
 

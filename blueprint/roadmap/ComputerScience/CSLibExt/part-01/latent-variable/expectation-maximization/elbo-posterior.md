@@ -12,7 +12,14 @@ lean: Cslib.MachineLearning.LatentVariable.ExpectationMaximization.elbo_posterio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elbo](elbo.md)
+- [Log Lik](log-lik.md)
+- [Posterior](posterior.md)
+
+## Proof depends on
+
+- [Marginal](marginal.md)
+- [Sum div mul log sub](sum-div-mul-log-sub.md)
 
 ## Sources
 

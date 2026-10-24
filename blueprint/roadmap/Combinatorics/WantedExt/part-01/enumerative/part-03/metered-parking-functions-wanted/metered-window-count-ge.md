@@ -13,7 +13,7 @@ A necessary condition: if `f` is a `t`-metered `(m, n)`-parking function then fo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metered Parking Function](is-metered-parking-function.md)
 
 ## Sources
 

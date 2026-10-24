@@ -11,7 +11,7 @@ A solution within the domains `dom`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
 
 ## Sources
 

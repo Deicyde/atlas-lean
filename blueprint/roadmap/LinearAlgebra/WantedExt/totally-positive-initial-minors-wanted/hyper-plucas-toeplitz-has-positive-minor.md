@@ -13,7 +13,8 @@ positive for all large `n`, and `(L_{p,n+i-j}^{(r)})` is `TP_{r+1}` for all larg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Positive Minors](../../MathlibExt/matrix/part-02/positive-minors/has-positive-minors.md)
+- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
 
 ## Sources
 

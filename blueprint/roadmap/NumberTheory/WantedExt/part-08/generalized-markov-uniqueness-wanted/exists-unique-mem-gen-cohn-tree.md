@@ -12,7 +12,8 @@ Proposition 3.17: a `k`-generalized Cohn triple associated with `(a, b, c)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
+- [Gen Cohn Tree](gen-cohn-tree.md)
 
 ## Sources
 

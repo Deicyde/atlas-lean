@@ -13,7 +13,8 @@ the NS property iff the three-dimensional chocolate bar `CB(F, 0, w, x, y, 0)` (
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
+- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
 
 ## Sources
 

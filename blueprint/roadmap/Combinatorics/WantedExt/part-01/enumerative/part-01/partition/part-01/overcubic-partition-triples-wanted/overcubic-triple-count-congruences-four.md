@@ -13,7 +13,7 @@ For all `n, α ≥ 0`: `bt(32n+28) ≡ bt(32n+20) ≡ 0 (mod 16)`, `bt(64n+56) �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overcubic Triple Count](overcubic-triple-count.md)
 
 ## Sources
 

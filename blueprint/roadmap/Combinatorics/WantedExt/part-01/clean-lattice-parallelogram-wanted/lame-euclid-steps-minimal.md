@@ -12,7 +12,7 @@ smallest integer admitting such a `v`, then `u = F_{N+2}` and `v = F_{N+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclid Steps](euclid-steps.md)
 
 ## Sources
 

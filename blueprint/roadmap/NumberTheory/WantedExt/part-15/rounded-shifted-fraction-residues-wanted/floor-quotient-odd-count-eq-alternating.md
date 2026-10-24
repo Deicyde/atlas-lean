@@ -11,7 +11,7 @@ Proposition 2: `𝓕_n = ∑_{d=1}^n ⌊n/d⌋ (-1)^{d+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
 
 ## Sources
 

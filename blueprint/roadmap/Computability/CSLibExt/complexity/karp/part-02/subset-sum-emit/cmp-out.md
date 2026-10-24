@@ -11,7 +11,7 @@ After the count comparison: equal counts go on, others write `noSS`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
 
 ## Sources
 

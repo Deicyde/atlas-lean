@@ -14,7 +14,9 @@ paper's interval degenerate at `e=0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyadic Upper Half](dyadic-upper-half.md)
+- [Odd Below Two Pow](odd-below-two-pow.md)
+- [Odd Part](odd-part.md)
 
 ## Sources
 

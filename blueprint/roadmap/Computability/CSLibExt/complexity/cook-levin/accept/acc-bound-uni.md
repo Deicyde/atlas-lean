@@ -13,7 +13,16 @@ coefficients sum to `accBound (uni 1) 1 1 1 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Acc Bound](acc-bound.md)
+- [Uni](../family/uni.md)
+
+## Proof depends on
+
+- [Clause B](clause-b.md)
+- [Pre B](pre-b.md)
+- [Layout](../family/layout.md)
+- [Num Vars](../family/num-vars.md)
+- [Row W](../family/row-w.md)
 
 ## Sources
 

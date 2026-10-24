@@ -13,7 +13,7 @@ containing `1 + 1 + 2 = 4` rectangles of size `1 × 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondecreasing Rectangle Total](nondecreasing-rectangle-total.md)
 
 ## Sources
 

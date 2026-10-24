@@ -13,7 +13,12 @@ The same conclusion from the first-step equation: the output law `out` of the lo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trial](trial.md)
+
+## Proof depends on
+
+- [Trial apply true](trial-apply-true.md)
+- [Tsum trial false add](tsum-trial-false-add.md)
 
 ## Sources
 

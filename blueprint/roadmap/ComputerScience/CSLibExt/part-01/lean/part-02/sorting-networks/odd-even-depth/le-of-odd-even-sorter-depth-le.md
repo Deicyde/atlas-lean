@@ -12,7 +12,13 @@ The general lower bound for the odd-even sorter: every depth bound `d` has `k â‰
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth LE](../depth/depth-le-2.md)
+- [Odd Even Sorter](../odd-even/odd-even-sorter.md)
+
+## Proof depends on
+
+- [Every sorting network on `n` wires has depth at least `logâ‚‚ n`](../depth/le-two-pow-of-sorts-2.md)
+- [Batcher's odd-even merge sort sorts every input over every linear order](../odd-even/odd-even-sorter-sorts.md)
 
 ## Sources
 

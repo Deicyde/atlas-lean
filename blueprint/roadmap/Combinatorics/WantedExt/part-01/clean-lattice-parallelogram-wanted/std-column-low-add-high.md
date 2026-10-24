@@ -13,7 +13,9 @@ For `k, l ≥ 1` with `k + l = a + 1`, `L(S_k) + H(S_l) = (a + 1, n)`, i.e. `H(S
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Points](lattice-points.md)
+- [Std Clean Parallelogram](std-clean-parallelogram.md)
+- [Std Column](std-column.md)
 
 ## Sources
 

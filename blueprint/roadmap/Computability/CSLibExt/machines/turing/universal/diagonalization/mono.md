@@ -12,7 +12,14 @@ A code that decides `L` within `t` decides it within every larger bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../code/code.md)
+- [Decides Within](decides-within.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Monotonicity](../code/eval-steps-mono.md)
+- [Bit Sym](../code/bit-sym.md)
 
 ## Sources
 

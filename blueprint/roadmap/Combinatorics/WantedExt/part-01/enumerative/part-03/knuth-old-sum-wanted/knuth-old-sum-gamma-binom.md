@@ -11,7 +11,7 @@ The one-parameter generalization (15) of Knuth's old sum, for real `v > -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

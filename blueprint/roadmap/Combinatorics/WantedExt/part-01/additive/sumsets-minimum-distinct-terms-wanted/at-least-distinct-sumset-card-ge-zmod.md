@@ -13,7 +13,7 @@ For a nonempty `A ⊆ ℤ_p` with `|A| = k`, `1 ≤ r ≤ k` and `h ≥ r`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [At Least Distinct Sumset](at-least-distinct-sumset.md)
 
 ## Sources
 

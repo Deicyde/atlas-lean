@@ -11,7 +11,12 @@ Number of instructions generated for a Boolean expression.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Alen](alen.md)
 
 ## Sources
 

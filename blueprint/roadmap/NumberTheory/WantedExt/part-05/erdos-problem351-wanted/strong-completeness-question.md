@@ -15,6 +15,11 @@ positive leading coefficient?
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Erdos Set351](erdos-set351.md)
+- [Strongly Complete](strongly-complete.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem351Wanted](../../../../../sources/v2/WantedExt.md)

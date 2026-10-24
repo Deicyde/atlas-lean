@@ -12,7 +12,12 @@ lean: MetaMathlibExt.bhMinLength_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bh Min Length](bh-min-length.md)
+
+## Proof depends on
+
+- [Is Bh Set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
+- [Sum NE](../../../../MathlibExt/part-01/additive/bh-set/sum-ne.md)
 
 ## Sources
 

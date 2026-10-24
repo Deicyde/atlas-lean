@@ -14,7 +14,16 @@ more than `c / d` times the optimum plus `b / d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](../../greedy/offline-caching/cache-event.md)
+- [Furthest In Future](../../greedy/offline-caching/furthest-in-future.md)
+- [Misses](../../greedy/offline-caching/misses.md)
+- [A deterministic online paging algorithm with cache size...](a-deterministic-online-paging-algorithm.md)
+- [Misses](misses.md)
+
+## Proof depends on
+
+- [Adversary](adversary.md)
+- [The adversary forces `n` misses while the optimum misses at most `k + ⌈n / k⌉` times](adversary-vs-optimum.md)
 
 ## Sources
 

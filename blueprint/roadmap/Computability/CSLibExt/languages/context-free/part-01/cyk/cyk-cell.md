@@ -14,6 +14,10 @@ cells of its parts.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cyk Cell From](cyk-cell-from.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.CYK](../../../../../../../sources/v2/CSLibExt.md)

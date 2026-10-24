@@ -12,7 +12,12 @@ Emptiness is co-recognizable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty Code](empty-code.md)
+- [TM2 Co Recognizable](../../part-01/basic/tm2-co-recognizable.md)
+
+## Proof depends on
+
+- [Tm2 Recognizable not empty](tm2-recognizable-not-empty.md)
 
 ## Sources
 

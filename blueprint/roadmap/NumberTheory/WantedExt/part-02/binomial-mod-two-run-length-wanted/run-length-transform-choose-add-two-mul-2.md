@@ -12,7 +12,8 @@ of the Lucas numbers prepended with `1, 1`, i.e. `1, 1, 2, 1, 3, 4, 7, 11, …`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

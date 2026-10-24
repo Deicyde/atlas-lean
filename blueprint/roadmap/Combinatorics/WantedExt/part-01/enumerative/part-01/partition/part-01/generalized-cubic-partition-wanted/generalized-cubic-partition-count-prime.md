@@ -13,7 +13,7 @@ For a prime `p ≡ 5, 7 (mod 8)` and `0 ≤ l ≤ p - 1` with `p ∣ 8l + 3`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Cubic Partition Count](generalized-cubic-partition-count.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MetaMathlibExt.motzkinNumber_add_motzkinAlternatingSum_logBalanced
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Alternating Sum](motzkin-alternating-sum.md)
+- [Motzkin Number](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
 
 ## Sources
 

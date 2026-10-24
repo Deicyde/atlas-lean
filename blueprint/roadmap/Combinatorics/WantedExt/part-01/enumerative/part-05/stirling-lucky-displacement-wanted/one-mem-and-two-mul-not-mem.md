@@ -11,7 +11,7 @@ If `S` is `n`-admissible (`n ≥ 1`), then `1 ∈ S` and `2n ∉ S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Lucky Set](is-admissible-lucky-set.md)
 
 ## Sources
 

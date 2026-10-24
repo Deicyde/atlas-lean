@@ -12,7 +12,8 @@ letters `a` and `j` letters `b`, then `lcm(k, j)` is a period of `Δr`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

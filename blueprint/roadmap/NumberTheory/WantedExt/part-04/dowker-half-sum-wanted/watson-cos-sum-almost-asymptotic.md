@@ -15,7 +15,8 @@ the `λ`-weighted `N`th remainder term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Watson Cos Sum](watson-cos-sum.md)
+- [Watson Expansion Term](watson-expansion-term.md)
 
 ## Sources
 

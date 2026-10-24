@@ -12,7 +12,7 @@ lean: Cslib.Decidability.turingReducible_of_manyOneReducible
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Fun](char-fun.md)
 
 ## Sources
 

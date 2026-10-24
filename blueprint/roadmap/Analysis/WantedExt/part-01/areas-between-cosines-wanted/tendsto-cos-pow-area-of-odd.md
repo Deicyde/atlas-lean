@@ -12,7 +12,7 @@ Theorem 1: for `n` odd,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cos Pow Area](cos-pow-area.md)
 
 ## Sources
 

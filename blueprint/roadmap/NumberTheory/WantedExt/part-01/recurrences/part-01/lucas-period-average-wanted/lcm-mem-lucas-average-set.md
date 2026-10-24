@@ -13,7 +13,10 @@ Theorem 2.5: if `m, n ∈ S'(U)` and `m ∣ r`, then `B_U(r) ≡ 0 (mod m)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas All Averages Integral](lucas-all-averages-integral.md)
+- [Lucas Average Set](lucas-average-set.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

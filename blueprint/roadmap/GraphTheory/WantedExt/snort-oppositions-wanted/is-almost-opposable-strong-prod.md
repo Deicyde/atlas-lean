@@ -12,7 +12,8 @@ almost opposable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Almost Opposable](is-almost-opposable.md)
+- [Strong Prod](strong-prod.md)
 
 ## Sources
 

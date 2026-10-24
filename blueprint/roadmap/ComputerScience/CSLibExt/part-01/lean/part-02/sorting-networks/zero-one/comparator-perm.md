@@ -12,7 +12,7 @@ A comparator permutes its inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comparator](comparator.md)
 
 ## Sources
 

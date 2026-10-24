@@ -15,7 +15,7 @@ The paper's `ℕ` is the positive integers, modelled by `ℕ+`; the paper takes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Essential CRSet](is-essential-crset.md)
 
 ## Sources
 

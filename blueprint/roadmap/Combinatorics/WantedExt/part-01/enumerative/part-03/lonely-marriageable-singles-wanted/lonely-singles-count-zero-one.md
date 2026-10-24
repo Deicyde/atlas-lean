@@ -12,7 +12,19 @@ lean: MetaMathlibExt.lonelySinglesCount_zero_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lonely Singles Count](lonely-singles-count.md)
+
+## Proof depends on
+
+- [Is Marriageable Singles](is-marriageable-singles.md)
+- [Merged Has Crossing](merged-has-crossing.md)
+- [Merged Same Block](merged-same-block.md)
+- [Noncrossing Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
+- [Has Crossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
+- [Is Noncrossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)
+- [Set Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
+- [Card one](../../../../../MathlibExt/part-01/noncrossing-partition/small/card-one.md)
+- [Card zero](../../../../../MathlibExt/part-01/noncrossing-partition/small/card-zero.md)
 
 ## Sources
 

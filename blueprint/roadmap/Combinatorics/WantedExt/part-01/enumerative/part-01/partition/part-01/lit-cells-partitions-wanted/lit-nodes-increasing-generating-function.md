@@ -12,7 +12,7 @@ function `1 + P(q) (∑_{i ≥ 1} 2q^i/(1 - q^i) - 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lit Nodes Increasing](lit-nodes-increasing.md)
 
 ## Sources
 

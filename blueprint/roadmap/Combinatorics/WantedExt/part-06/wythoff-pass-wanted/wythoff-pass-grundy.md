@@ -14,6 +14,10 @@ pass is still available.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wythoff Extra Move Grundy](wythoff-extra-move-grundy.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WythoffPassWanted](../../../../../sources/v2/WantedExt.md)

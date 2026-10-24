@@ -14,6 +14,10 @@ The joint prior covariance of the test values `f(x*)` and the noisy training tar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kernel Matrix](kernel-matrix.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.GaussianProcessRegression](../../../../../sources/v2/CSLibExt.md)

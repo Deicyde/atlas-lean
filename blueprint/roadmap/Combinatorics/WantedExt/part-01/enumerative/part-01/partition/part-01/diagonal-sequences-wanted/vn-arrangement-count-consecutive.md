@@ -11,7 +11,7 @@ Corollary 5: a set of `t ≥ 1` consecutive integers has `2^{t-1}` vn-arrangemen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vn Arrangement Count](vn-arrangement-count.md)
 
 ## Sources
 

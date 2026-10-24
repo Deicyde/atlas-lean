@@ -15,7 +15,8 @@ weakly increasing, the zone of `i` is the set of columns `k` with `⌊b_k⌋_m =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Rook Number](level-rook-number.md)
+- [M Falling Factorial](m-falling-factorial.md)
 
 ## Sources
 

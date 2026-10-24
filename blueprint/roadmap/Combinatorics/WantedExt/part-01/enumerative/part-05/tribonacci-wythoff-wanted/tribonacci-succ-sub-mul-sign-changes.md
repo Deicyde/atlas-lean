@@ -12,7 +12,7 @@ the same strict sign at three consecutive `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 
 ## Sources
 

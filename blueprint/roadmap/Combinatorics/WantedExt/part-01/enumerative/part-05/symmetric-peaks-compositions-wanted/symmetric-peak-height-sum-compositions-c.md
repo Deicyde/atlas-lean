@@ -13,7 +13,7 @@ Closed form of `hsp(n)`, with `ω± = 1 ± i√3`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Peak Height Sum](symmetric-peak-height-sum.md)
 
 ## Sources
 

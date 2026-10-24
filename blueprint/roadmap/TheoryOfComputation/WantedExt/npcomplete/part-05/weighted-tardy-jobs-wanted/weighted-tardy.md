@@ -13,6 +13,10 @@ Weighted number of tardy jobs for a job order (job indices).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted Tardy Step](weighted-tardy-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.WeightedTardyJobsWanted](../../../../../../sources/v2/WantedExt.md)

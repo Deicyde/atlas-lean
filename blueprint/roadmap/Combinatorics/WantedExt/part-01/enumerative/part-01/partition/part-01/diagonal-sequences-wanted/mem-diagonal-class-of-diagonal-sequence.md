@@ -12,7 +12,8 @@ A partition `β` lies in the class of its own diagonal sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Class Of](diagonal-class-of.md)
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

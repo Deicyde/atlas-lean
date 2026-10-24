@@ -12,7 +12,11 @@ lean: MetaMathlibExt.opxD_nonneg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
+
+## Proof depends on
+
+- [Contains Pattern D](contains-pattern-d.md)
 
 ## Sources
 

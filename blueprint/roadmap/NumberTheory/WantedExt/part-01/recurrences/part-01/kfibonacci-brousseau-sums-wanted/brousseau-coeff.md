@@ -15,6 +15,10 @@ of Definition 5 (with `0^0 = 1`, which gives the paper's separate value
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Brousseau A](brousseau-a.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.KFibonacciBrousseauSumsWanted](../../../../../../../sources/v2/WantedExt.md)

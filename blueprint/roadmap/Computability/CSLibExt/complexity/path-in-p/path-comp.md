@@ -11,7 +11,15 @@ The marking machine as a host component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](../host/comp.md)
+
+## Proof depends on
+
+- [K](../path-machine/k.md)
+- [Lab](../path-machine/lab.md)
+- [Prog](../path-machine/prog.md)
+- [Γ](../path-machine/untitled.md)
+- [Sym](../sat-verifier-spec/sym.md)
 
 ## Sources
 

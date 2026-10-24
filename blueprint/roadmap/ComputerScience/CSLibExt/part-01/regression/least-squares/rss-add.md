@@ -12,7 +12,7 @@ Expansion of the residual sum of squares around `θ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rss](rss.md)
 
 ## Sources
 

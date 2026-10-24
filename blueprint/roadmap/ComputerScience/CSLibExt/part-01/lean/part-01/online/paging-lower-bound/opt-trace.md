@@ -11,7 +11,11 @@ The offline trace.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](../../greedy/offline-caching/cache-event.md)
+
+## Proof depends on
+
+- [Opt Step](opt-step.md)
 
 ## Sources
 

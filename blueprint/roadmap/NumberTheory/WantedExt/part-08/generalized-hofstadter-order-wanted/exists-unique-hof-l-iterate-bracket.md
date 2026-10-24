@@ -11,7 +11,7 @@ For `j ≥ 0` and `k, m ≥ 1` there is a unique `n ≥ 1` with `L_k^j(n-1) < m 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof L](hof-l.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ still performed, and the halting step counts toward the runtime.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Move](move.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.BusyBeaver](../../../../sources/v2/CSLibExt.md)

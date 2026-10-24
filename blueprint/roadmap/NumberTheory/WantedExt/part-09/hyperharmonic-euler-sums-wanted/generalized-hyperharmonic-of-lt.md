@@ -12,7 +12,7 @@ lean: MetaMathlibExt.generalizedHyperharmonic_of_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hyperharmonic](generalized-hyperharmonic.md)
 
 ## Sources
 

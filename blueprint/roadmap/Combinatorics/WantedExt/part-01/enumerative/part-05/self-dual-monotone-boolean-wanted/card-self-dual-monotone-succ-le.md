@@ -11,7 +11,7 @@ lean: MetaMathlibExt.card_selfDualMonotone_succ_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
 
 ## Sources
 

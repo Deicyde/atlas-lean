@@ -13,7 +13,9 @@ For `k ≥ 2` positive integers `0 < a₁ < ⋯ < a_k` with positive multiplicit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
+- [Repetition Sequence](repetition-sequence.md)
+- [Yang Chen Bound](yang-chen-bound.md)
 
 ## Sources
 

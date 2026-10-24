@@ -13,6 +13,11 @@ The glue string `S_t^{(m)}`: `B_{t+1}^{(m)}` with its first `(m+1) β^{(m)}(t)` 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gijswijt Block](gijswijt-block.md)
+- [Gijswijt Block Length](gijswijt-block-length.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GijswijtSequenceWanted](../../../../../../../sources/v2/WantedExt.md)

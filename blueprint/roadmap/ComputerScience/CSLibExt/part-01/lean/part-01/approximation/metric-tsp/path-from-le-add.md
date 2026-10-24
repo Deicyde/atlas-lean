@@ -12,7 +12,8 @@ Starting from `q` instead of `p` costs at most `d q p` more.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metric Cost](is-metric-cost.md)
+- [Path From](path-from.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MetaMathlibExt.zeckendorfDeltaStar_of_mem_Ico
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeckendorf Delta Star](zeckendorf-delta-star.md)
+- [Zeckendorf Delta Star One](zeckendorf-delta-star-one.md)
 
 ## Sources
 

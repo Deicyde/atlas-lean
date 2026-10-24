@@ -12,7 +12,7 @@ Example: `(1^2, 3^1)` expands to `(1, 1, 3)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expand Support](expand-support.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ differs from the one it had signed, and the signature verifies.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forger](forger.md)
+
+## Proof depends on
+
+- [Verify](verify.md)
+- [Public Key](public-key.md)
+- [Sign](sign.md)
 
 ## Sources
 

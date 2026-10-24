@@ -14,7 +14,7 @@ identity `s(n, i) = s(n-2, i) + C(n-1, i-1)`), checked for `i < n < 8`; it fails
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sabar Number](sabar-number.md)
 
 ## Sources
 

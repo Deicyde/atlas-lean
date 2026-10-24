@@ -11,7 +11,7 @@ The break-even strategy: buy on day `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strategy](strategy.md)
 
 ## Sources
 

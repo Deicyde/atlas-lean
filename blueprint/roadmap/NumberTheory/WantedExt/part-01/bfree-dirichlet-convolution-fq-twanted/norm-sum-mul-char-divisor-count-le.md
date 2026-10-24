@@ -14,7 +14,7 @@ eq. (8). The paper's trailing `= O(q^{h deg(m)/2})` is a coarser restatement and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Divisor Count](monic-divisor-count.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ evaluates `mooreStep` once.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Moore Step](moore-step.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.Moore](../../../../../../sources/v2/CSLibExt.md)

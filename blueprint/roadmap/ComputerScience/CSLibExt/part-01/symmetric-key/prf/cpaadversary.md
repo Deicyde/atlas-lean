@@ -15,6 +15,10 @@ the challenge ciphertext to guess the challenge bit.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Oracle Comp](oracle-comp.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.SymmetricKey.PRF](../../../../../../sources/v2/CSLibExt.md)

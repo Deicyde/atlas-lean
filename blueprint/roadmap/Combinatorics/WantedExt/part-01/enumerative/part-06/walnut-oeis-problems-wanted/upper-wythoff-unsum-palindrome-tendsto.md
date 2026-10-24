@@ -13,7 +13,8 @@ position `k` for all large `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Inf](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Upper Wythoff Unsum Palindrome](upper-wythoff-unsum-palindrome.md)
 
 ## Sources
 

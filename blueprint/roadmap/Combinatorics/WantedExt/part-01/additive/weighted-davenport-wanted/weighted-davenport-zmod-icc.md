@@ -12,7 +12,7 @@ Adhikari, David, Urroz and Xia, Li: for `1 < r < n` and `A = {1, …, r}`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

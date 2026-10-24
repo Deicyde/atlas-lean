@@ -12,7 +12,9 @@ lean: Cslib.Crypto.PublicKey.RSA.Key.pow_eq_self_of_crt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key](key.md)
+- [Crt](crt.md)
+- [N](n.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ counts unate `n`-variable functions of weight `w`. The paper assumes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unate Bool Fun](is-unate-bool-fun.md)
+- [Bool Fun Weight](bool-fun-weight.md)
 
 ## Sources
 

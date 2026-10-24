@@ -13,7 +13,11 @@ states.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Machine](machine.md)
+
+## Proof depends on
+
+- [Move](move.md)
 
 ## Sources
 

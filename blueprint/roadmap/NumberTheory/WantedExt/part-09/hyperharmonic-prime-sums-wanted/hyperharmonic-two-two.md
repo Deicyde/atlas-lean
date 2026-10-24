@@ -12,7 +12,7 @@ Small value `h_2^{(2)} = H_1 + H_2 = 5/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyperharmonic](hyperharmonic.md)
 
 ## Sources
 

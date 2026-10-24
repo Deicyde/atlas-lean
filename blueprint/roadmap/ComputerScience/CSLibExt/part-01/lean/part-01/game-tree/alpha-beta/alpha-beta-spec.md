@@ -13,7 +13,16 @@ alpha-beta agrees with the minimax value after clamping both to the window `[a, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
+- [Alpha Beta](alpha-beta.md)
+- [Minimax](minimax.md)
+
+## Proof depends on
+
+- [Alpha Beta List](alpha-beta-list.md)
+- [Alpha Beta List false le](alpha-beta-list-false-le.md)
+- [Le alpha Beta List true](le-alpha-beta-list-true.md)
+- [Minimax List](minimax-list.md)
 
 ## Sources
 

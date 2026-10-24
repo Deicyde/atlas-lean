@@ -12,7 +12,9 @@ lean: MetaMathlibExt.tendsto_letterCount_div_iff_tendsto_letterPosition_div
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Letter Count](letter-count.md)
+- [Letter Position](letter-position.md)
 
 ## Sources
 

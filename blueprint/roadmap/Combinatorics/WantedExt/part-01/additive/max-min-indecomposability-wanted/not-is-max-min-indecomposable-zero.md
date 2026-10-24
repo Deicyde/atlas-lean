@@ -12,7 +12,13 @@ The zero sequence is decomposable: `0 = 0 ⊗ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Max Min Indecomposable](is-max-min-indecomposable.md)
+
+## Proof depends on
+
+- [Is Max Min Monomial](is-max-min-monomial.md)
+- [Max Min Mul](max-min-mul.md)
+- [Not is Max Min Monomial zero](not-is-max-min-monomial-zero.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ function `A_k(x) = (1 - x²)/(1 - x - x² + x³ - x^{k+3})`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Arndt Composition Count](k-arndt-composition-count.md)
 
 ## Sources
 

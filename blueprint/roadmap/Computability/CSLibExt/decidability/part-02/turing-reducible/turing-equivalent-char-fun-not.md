@@ -12,7 +12,7 @@ lean: Cslib.Decidability.turingEquivalent_charFun_not
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Fun](char-fun.md)
 
 ## Sources
 

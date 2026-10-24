@@ -11,7 +11,7 @@ A binary assignment satisfying all inequalities.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zero One ILPInstance](zero-one-ilpinstance.md)
 
 ## Sources
 

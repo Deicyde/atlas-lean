@@ -11,7 +11,9 @@ lean: MetaMathlibExt.relativePosition_deletion_fibonacciWord
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deletion](deletion.md)
+- [Fib Inf](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

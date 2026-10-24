@@ -12,7 +12,11 @@ For positive `a` and `b`, `gcd₁(a, b)` is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Unitary](gcd-unitary.md)
+
+## Proof depends on
+
+- [Gcd Unitary dvd left](gcd-unitary-dvd-left.md)
 
 ## Sources
 

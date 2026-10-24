@@ -12,7 +12,12 @@ Blocks compose.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Combine](combine.md)
+- [Gp Range](gp-range.md)
+
+## Proof depends on
+
+- [Gp Bit](gp-bit.md)
 
 ## Sources
 

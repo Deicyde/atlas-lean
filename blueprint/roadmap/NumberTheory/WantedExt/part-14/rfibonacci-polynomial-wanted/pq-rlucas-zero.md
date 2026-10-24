@@ -12,7 +12,7 @@ lean: MetaMathlibExt.pqRLucas_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pq RLucas](pq-rlucas.md)
 
 ## Sources
 

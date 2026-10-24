@@ -12,7 +12,7 @@ lean: MetaMathlibExt.gcdSumMean_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Sum Mean](gcd-sum-mean.md)
 
 ## Sources
 

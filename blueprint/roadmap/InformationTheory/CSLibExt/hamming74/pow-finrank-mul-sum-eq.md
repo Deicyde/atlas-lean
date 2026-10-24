@@ -13,7 +13,16 @@ lean: Cslib.CodingTheory.Hamming74.pow_finrank_mul_sum_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Linear Code](../linear-code/linear-code.md)
+
+## Proof depends on
+
+- [G](g.md)
+- [Encode](encode.md)
+- [Message](message.md)
+- [Of Generator G eq code](of-generator-g-eq-code.md)
+- [Of Generator](../linear-code/of-generator.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ The base-case unfolding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+- [Hirschberg Align](hirschberg-align.md)
+- [Small Align](small-align.md)
+
+## Proof depends on
+
+- [Best Argmax](best-argmax.md)
+- [Nw Score](../sequence-alignment/nw-score.md)
 
 ## Sources
 

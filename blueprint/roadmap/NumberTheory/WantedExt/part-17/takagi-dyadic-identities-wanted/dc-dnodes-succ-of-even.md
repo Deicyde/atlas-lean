@@ -11,7 +11,7 @@ Lemma 19: for even `n > 0`, `δ(n+1) = δ(n) + ⌊log₂ n⌋ - 2 s₁(n) + 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc DNodes](dc-dnodes.md)
 
 ## Sources
 

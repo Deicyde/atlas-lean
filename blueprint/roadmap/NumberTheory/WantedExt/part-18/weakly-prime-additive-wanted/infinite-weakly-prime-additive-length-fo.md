@@ -14,7 +14,8 @@ primitive root), for every positive integer `m` there are infinitely many weakly
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weakly Prime Additive](is-weakly-prime-additive.md)
+- [Weakly Prime Additive Length](weakly-prime-additive-length.md)
 
 ## Sources
 

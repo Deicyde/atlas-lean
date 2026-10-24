@@ -12,7 +12,12 @@ lean: MetaMathlibExt.ulamValuesSorted_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ulam Values Sorted](ulam-values-sorted.md)
+
+## Proof depends on
+
+- [Is Ulam Word](is-ulam-word.md)
+- [Ulam Word Aux](ulam-word-aux.md)
 
 ## Sources
 

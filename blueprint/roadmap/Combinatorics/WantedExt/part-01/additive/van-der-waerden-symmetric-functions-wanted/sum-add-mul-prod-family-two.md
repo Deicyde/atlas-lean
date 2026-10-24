@@ -12,7 +12,7 @@ On blocks of length two, `F_c (b_0, b_1) = b_0 + b_1 + c b_0 b_1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
 
 ## Sources
 

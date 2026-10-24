@@ -13,7 +13,12 @@ not.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts From](halts-from.md)
+
+## Proof depends on
+
+- [Halting from a configuration is invariant along a run](halts-from-iff-of-refl-trans-gen.md)
+- [Step eq none iff](step-eq-none-iff.md)
 
 ## Sources
 

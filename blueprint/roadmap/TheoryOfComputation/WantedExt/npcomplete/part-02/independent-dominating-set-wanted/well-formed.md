@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Independent Dominating Set Instance](independent-dominating-set-instance.md)
 
 ## Sources
 

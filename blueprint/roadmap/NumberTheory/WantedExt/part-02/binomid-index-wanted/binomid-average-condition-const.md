@@ -12,7 +12,14 @@ Constant sequences satisfy the Average Condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomid Average Condition](binomid-average-condition.md)
+
+## Proof depends on
+
+- [Binomid Average](binomid-average.md)
+- [Binomid Average const](binomid-average-const.md)
+- [Binomid Upper Average](binomid-upper-average.md)
+- [Binomid Upper Average const](binomid-upper-average-const.md)
 
 ## Sources
 

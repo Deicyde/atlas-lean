@@ -24,7 +24,7 @@ differ by an L²-isometric rescaling, so the identity holds for both with the sa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Airy Solution](airy-solution.md)
 
 ## Sources
 

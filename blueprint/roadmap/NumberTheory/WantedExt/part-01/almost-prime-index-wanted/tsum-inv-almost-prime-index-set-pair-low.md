@@ -12,7 +12,7 @@ For fixed `j ≥ 1`, `∑_{n ∈ N_{jk}} 1/n ≫ k^{j-1}` as `k → ∞`; in par
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

@@ -16,6 +16,12 @@ nonzero coefficients). Factors range over `ℒ_b^n`, which contains every factor
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Digit Seq](digit-seq.md)
+- [Lunar Level Count](lunar-level-count.md)
+- [Max Min Mul](max-min-mul.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.MaxMinIndecomposabilityWanted](../../../../../../sources/v2/WantedExt.md)

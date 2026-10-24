@@ -11,7 +11,7 @@ For `n > 0`, `∑_{k ≥ 0} P_2(n - k(k+1)/2) ≡ 0 (mod 2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parts Not Two Mod Four Count](parts-not-two-mod-four-count.md)
 
 ## Sources
 

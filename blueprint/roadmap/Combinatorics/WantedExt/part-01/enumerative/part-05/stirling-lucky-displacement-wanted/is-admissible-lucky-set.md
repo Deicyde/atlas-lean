@@ -13,6 +13,11 @@ lean: MetaMathlibExt.IsAdmissibleLuckySet
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Stirling Lucky Set](stirling-lucky-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.StirlingLuckyDisplacementWanted](../../../../../../../sources/v2/WantedExt.md)

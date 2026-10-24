@@ -12,7 +12,25 @@ lean: Cslib.Complexity.Karp.EmitHam.final_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](../ham-path-emit-machine/k.md)
+- [Lab](../ham-path-emit-machine/lab.md)
+- [MS](../ham-path-emit-machine/ms.md)
+- [Stk](../ham-path-emit-machine/stk.md)
+- [Prog](../ham-path-emit-machine/prog.md)
+- [Γ](../ham-path-emit-machine/untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Cp run](../ham-path-emit-machine/cp-run.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Is Bit Block](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

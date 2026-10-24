@@ -13,7 +13,9 @@ intersection encoded by `Fin (ℓ+1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LTopological Recurrence](is-ltopological-recurrence.md)
+- [Is Minimal System](is-minimal-system.md)
+- [Iterate Preimage](iterate-preimage.md)
 
 ## Sources
 

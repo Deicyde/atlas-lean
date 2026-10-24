@@ -11,7 +11,13 @@ lean: Cslib.Complexity.CookLevin.Shift.shFamily
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [CNF](../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Sh Blk](sh-blk.md)
+- [Clause](../../dense-sat/clause.md)
 
 ## Sources
 

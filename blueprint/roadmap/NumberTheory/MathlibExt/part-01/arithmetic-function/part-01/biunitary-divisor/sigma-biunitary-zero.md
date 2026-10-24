@@ -12,7 +12,12 @@ lean: MetaMathlibExt.sigmaBiunitary_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](sigma-biunitary.md)
+
+## Proof depends on
+
+- [Biunitary Divisors](biunitary-divisors.md)
+- [Biunitary Divisors zero](biunitary-divisors-zero.md)
 
 ## Sources
 

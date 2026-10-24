@@ -12,7 +12,9 @@ is `F = P(0, 0) = (l²/n)(k - 1)(k + 1)/12`, `l = gcd(m - 1, n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
+- [Consecutive Step Difference](consecutive-step-difference.md)
+- [Sector Lattice Points](sector-lattice-points.md)
 
 ## Sources
 

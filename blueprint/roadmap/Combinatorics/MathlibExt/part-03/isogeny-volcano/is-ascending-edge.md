@@ -11,7 +11,11 @@ An ascending edge from `v` to `w`, where `w` lies one level above `v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Isogeny Volcano](isogeny-volcano.md)
+
+## Proof depends on
+
+- [Multigraph](multigraph.md)
 
 ## Sources
 

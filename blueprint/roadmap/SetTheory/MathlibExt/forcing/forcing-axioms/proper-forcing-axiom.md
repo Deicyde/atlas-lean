@@ -14,6 +14,10 @@ The Proper Forcing Axiom: For any proper poset ℙ, any condition p∈ℙ, for a
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Proper Forcing](proper/is-proper-forcing.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Forcing.ForcingAxioms.ProperForcingAxiom](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,8 @@ The substitution of variables is
 
 ## Depends on
 
-This node has no prerequisites.
+- [King Flat POPAbove GF](king-flat-popabove-gf.md)
+- [King Flat POPBelow GF](king-flat-popbelow-gf.md)
 
 ## Sources
 

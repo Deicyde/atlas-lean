@@ -15,7 +15,9 @@ Komatsu's conjecture, made precise: for `s, n ≥ 0` with `n > N_{s+1}` (by pari
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Frobenius Number](../../../MathlibExt/part-06/generalized-frobenius-number/is-gen-frobenius-number.md)
+- [Triangular Frobenius Bound](triangular-frobenius-bound.md)
+- [Triangular Triple](triangular-triple.md)
 
 ## Sources
 

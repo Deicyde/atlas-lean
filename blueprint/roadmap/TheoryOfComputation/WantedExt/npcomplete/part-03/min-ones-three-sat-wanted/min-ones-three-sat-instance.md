@@ -13,6 +13,10 @@ A MIN-ONES 3-SAT instance: number of variables, 3-CNF formula, bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.MinOnesThreeSatWanted](../../../../../../sources/v2/WantedExt.md)

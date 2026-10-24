@@ -13,7 +13,7 @@ The prefix `f₁⁴(0)` of `f₁^ω(0)` for `f₁ : 0 ↦ 01, 1 ↦ 2, 2 ↦ 34,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morph Iterate](../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

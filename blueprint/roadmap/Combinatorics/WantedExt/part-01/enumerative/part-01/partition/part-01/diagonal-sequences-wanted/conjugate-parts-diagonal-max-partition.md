@@ -13,7 +13,9 @@ omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjugate Parts](conjugate-parts.md)
+- [Diagonal Max Partition](diagonal-max-partition.md)
+- [Diagonal Min Partition](diagonal-min-partition.md)
 
 ## Sources
 

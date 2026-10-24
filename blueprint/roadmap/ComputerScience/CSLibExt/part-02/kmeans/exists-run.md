@@ -12,7 +12,13 @@ With at least one center, every starting assignment and centers extend to a run.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Run](is-run.md)
+
+## Proof depends on
+
+- [Nearest](nearest.md)
+- [Centers](centers.md)
+- [Exists nearest](exists-nearest.md)
 
 ## Sources
 

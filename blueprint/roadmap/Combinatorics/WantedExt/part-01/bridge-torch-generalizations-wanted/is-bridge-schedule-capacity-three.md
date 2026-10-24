@@ -13,7 +13,11 @@ capacity `2`, but it is one for capacity `3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bridge Schedule](is-bridge-schedule.md)
+
+## Proof depends on
+
+- [Bridge Schedule From](bridge-schedule-from.md)
 
 ## Sources
 

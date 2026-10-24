@@ -13,7 +13,12 @@ the second, for `i < 2 ^ (k + 1) - 1`; other wires are untouched.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run N](../bitonic/run-n.md)
+- [Final Layer](final-layer.md)
+
+## Proof depends on
+
+- [Cmp](../bitonic/cmp.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For even `b ≤ -4` there are arbitrarily long finite runs of consecutive `b`-ha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Neg Base Happy](is-neg-base-happy.md)
 
 ## Sources
 

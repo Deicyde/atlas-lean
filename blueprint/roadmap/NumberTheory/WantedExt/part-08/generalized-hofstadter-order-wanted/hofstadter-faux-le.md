@@ -12,7 +12,7 @@ lean: MetaMathlibExt.hofstadterFAux_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hofstadter FAux](hofstadter-faux.md)
 
 ## Sources
 

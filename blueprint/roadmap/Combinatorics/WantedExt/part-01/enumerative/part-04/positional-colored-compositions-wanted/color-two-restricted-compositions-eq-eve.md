@@ -14,7 +14,7 @@ For `k ≥ 0`, the number of `n`-color compositions of `k` restricting the color
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positional Colored Composition Count](positional-colored-composition-count.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ column `m` (1-indexed), as an integer.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partition Col Len](partition-col-len.md)
+- [Partition Row Len](partition-row-len.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.FixedColumnHooksWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isDDistinctParts_examples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DDistinct Parts](is-ddistinct-parts.md)
 
 ## Sources
 

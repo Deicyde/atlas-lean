@@ -12,7 +12,9 @@ Corollary 3: for `s ≥ 2`, the star `S_s = CT(1, s)` has
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

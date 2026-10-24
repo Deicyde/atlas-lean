@@ -14,7 +14,8 @@ Every Type-A double-perfect partition of `N` of order `r` has form (14)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
+- [Perfect Partition Of Factorization](perfect-partition-of-factorization.md)
 
 ## Sources
 

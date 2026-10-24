@@ -12,7 +12,7 @@ lean: MetaMathlibExt.maxSumFreeCount_elementary_two_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Sum Free Count](max-sum-free-count.md)
 
 ## Sources
 

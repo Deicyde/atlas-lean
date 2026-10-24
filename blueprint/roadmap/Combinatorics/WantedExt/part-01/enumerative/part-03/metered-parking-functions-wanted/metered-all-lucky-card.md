@@ -15,7 +15,9 @@ companion formula (12) for exactly one lucky car is not stated: it is false as p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Metered Lucky Count](metered-lucky-count.md)
+- [Metered Outcome](metered-outcome.md)
 
 ## Sources
 

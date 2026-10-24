@@ -13,7 +13,7 @@ edges, and `Δ(Γ) ≤ D`, then `mis(Γ) ≤ 2^{n/2 - k/(100D²) + 2|T|}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Indep Set Count](max-indep-set-count.md)
 
 ## Sources
 

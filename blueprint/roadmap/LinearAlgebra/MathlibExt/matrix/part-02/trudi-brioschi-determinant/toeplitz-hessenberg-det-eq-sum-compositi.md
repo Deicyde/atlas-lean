@@ -13,7 +13,11 @@ Trudi's formula in composition form: `det A_n = ∑_{c ⊨ n} (-a_0)^{n - ℓ(c)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz Hessenberg Det](toeplitz-hessenberg-det.md)
+
+## Proof depends on
+
+- [Det toeplitz Hessenberg eq sum compositions general](det-toeplitz-hessenberg-eq-sum-compositi.md)
 
 ## Sources
 

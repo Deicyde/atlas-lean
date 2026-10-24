@@ -13,7 +13,7 @@ lean: MetaMathlibExt.superLeonardoP_eq_add_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Super Leonardo P](super-leonardo-p.md)
 
 ## Sources
 

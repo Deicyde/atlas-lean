@@ -17,7 +17,7 @@ value `F_3 - F_2 = 1`); the sign `+` is the one the paper's own consequence uses
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Last Part Count](arndt-last-part-count.md)
 
 ## Sources
 

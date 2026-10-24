@@ -14,6 +14,10 @@ have order type κ (i.e. κ is the κ-th inaccessible).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [InAccBelow κ is the set of all inaccessible cardinals below...](inaccbelow-is-the-set-of-all-inaccessibl.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Cardinal.LargeCardinal.Inaccessible](../../../../../../sources/v2/MathlibExt.md)

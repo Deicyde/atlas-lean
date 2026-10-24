@@ -17,7 +17,8 @@ Gu, Theorem 2.2.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [Ramanujan Theta Monomial](ramanujan-theta-monomial.md)
 
 ## Sources
 

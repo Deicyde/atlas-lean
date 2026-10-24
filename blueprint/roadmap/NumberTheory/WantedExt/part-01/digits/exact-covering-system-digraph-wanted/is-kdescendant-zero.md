@@ -12,7 +12,7 @@ The only `0`-descendant of `m` is `m` itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KDescendant](is-kdescendant.md)
 
 ## Sources
 

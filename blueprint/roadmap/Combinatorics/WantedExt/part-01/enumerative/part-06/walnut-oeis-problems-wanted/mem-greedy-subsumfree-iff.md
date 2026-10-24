@@ -14,7 +14,7 @@ For positive integers `z`: `z ∈ S_{1,2,3}` iff `z ∈ {1, 5, 13}` or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Subsumfree Below](greedy-subsumfree-below.md)
 
 ## Sources
 

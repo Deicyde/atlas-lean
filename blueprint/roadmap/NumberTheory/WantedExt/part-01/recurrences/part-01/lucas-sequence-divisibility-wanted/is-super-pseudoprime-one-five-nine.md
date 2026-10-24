@@ -13,7 +13,13 @@ prime and a Lucas pseudoprime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
+- [Is Super Pseudoprime](is-super-pseudoprime.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Is Lucas Pseudoprime one five nine](is-lucas-pseudoprime-one-five-nine.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MetaMathlibExt.monicConvShiftedSum_of_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Conv Shifted Sum](monic-conv-shifted-sum.md)
+
+## Proof depends on
+
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
 
 ## Sources
 

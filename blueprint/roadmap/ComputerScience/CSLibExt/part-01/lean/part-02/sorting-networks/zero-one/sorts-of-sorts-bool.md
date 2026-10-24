@@ -13,7 +13,13 @@ every input over every linear order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](network.md)
+- [Sorts](sorts.md)
+
+## Proof depends on
+
+- [Run](run.md)
+- [Networks commute with monotone maps](run-comp.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Characteristic value: `MT_1 = ⟨1/2, 2/3⟩`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Insert](mallows-insert.md)
 
 ## Sources
 

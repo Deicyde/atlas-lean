@@ -14,6 +14,10 @@ lean: MetaMathlibExt.levelRookPlacements
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [File Placements](file-placements.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WeightedFilePlacementsWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -11,7 +11,11 @@ The detours of clause `j` (contents `C`) in diamond `i` of variable `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Hp R](../ham-path/hp-r.md)
 
 ## Sources
 

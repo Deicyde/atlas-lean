@@ -14,6 +14,10 @@ never goes below the line `y = -k` and ends with a Down step.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lattice Height](lattice-height.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KNaplesParkingWanted](../../../../../../../sources/v2/WantedExt.md)

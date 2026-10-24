@@ -12,7 +12,8 @@ lean: Cslib.Crypto.PRF.decrypt_encrypt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decrypt](decrypt.md)
+- [Encrypt](encrypt.md)
 
 ## Sources
 

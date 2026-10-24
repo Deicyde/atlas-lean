@@ -12,7 +12,7 @@ Recurrence `S_{q,t}(n + q) = (n + q)^{-t} - S_{q,t}(n)` for `n ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Alternating Sum](stride-alternating-sum.md)
 
 ## Sources
 

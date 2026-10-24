@@ -12,7 +12,13 @@ Every block `K_n` with `i < |K_n|` has `kimberlingWord i` at position `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling Block](kimberling-block.md)
+- [Kimberling Word](kimberling-word.md)
+
+## Proof depends on
+
+- [Kimberling Block prefix](kimberling-block-prefix.md)
+- [Two pow le length kimberling Block](two-pow-le-length-kimberling-block.md)
 
 ## Sources
 

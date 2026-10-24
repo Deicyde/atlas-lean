@@ -12,7 +12,7 @@ The two inequalities are represented as a conjunction; there is no deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim H](maximum-nim-h.md)
 
 ## Sources
 

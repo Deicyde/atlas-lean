@@ -13,7 +13,17 @@ does not halt there within `f` steps with the answer `true`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code Cells](../clocked/code-cells.md)
+- [Code](../code/code.md)
+- [The clocked evaluator](../code/eval-steps.md)
+- [Bit Sym](../code/bit-sym.md)
+- [The diagonal language](diag.md)
+
+## Proof depends on
+
+- [The code stack determines the clocked semantics](eval-steps-eq-of-code-cells-eq.md)
+- [Decode Code Cells](decode-code-cells.md)
+- [Decode Code Cells code Cells](decode-code-cells-code-cells.md)
 
 ## Sources
 

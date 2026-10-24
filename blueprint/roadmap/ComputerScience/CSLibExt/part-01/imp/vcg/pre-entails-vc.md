@@ -13,7 +13,19 @@ preserves the verification condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [ACmd](acmd.md)
+- [Pre](pre.md)
+- [Vc](vc.md)
+- [Assertion](../hoare/assertion.md)
+- [Entails](../hoare/entails.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

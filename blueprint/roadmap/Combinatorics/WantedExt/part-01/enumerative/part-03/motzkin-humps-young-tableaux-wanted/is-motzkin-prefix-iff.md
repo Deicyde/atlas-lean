@@ -13,7 +13,8 @@ height `h`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Motzkin Prefix](is-motzkin-prefix.md)
+- [Motzkin Step](motzkin-step.md)
 
 ## Sources
 

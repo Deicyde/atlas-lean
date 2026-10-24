@@ -12,7 +12,7 @@ Two-dimensional mex step: if `g` has the NS property, `x ≤ g z` and `c < x ⊕
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

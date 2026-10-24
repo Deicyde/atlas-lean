@@ -13,7 +13,7 @@ vacuously.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Huang Small Part Placement](is-huang-small-part-placement.md)
 
 ## Sources
 

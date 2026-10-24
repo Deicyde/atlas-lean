@@ -12,7 +12,12 @@ Valid parameters have at least one component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Params](params.md)
+- [Valid](valid.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ Lemma 5: for integers `a, b, k, q ≥ 1` with `b ≡ 1 (mod q)` and any integer 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Sum Congruence Count](digit-sum-congruence-count.md)
 
 ## Sources
 

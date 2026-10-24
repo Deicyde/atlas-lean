@@ -11,7 +11,14 @@ lean: Cslib.MachineLearning.Sequence.BaumWelch.mStep
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid HMM](valid-hmm.md)
+- [HMM](../hidden-markov/hmm.md)
+
+## Proof depends on
+
+- [Emit Count](emit-count.md)
+- [Init Count](init-count.md)
+- [Trans Count](trans-count.md)
 
 ## Sources
 

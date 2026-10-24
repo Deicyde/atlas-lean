@@ -11,7 +11,7 @@ The `≤ 1 × ≤ 1` base case: match singletons, or gap them.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
 
 ## Sources
 

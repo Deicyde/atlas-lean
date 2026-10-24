@@ -13,7 +13,13 @@ classifier.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Posterior Argmax](is-posterior-argmax.md)
+- [Zero One Loss](zero-one-loss.md)
+
+## Proof depends on
+
+- [Is Argmin Estimator](is-argmin-estimator.md)
+- [Lintegral zero One Loss](lintegral-zero-one-loss.md)
 
 ## Sources
 

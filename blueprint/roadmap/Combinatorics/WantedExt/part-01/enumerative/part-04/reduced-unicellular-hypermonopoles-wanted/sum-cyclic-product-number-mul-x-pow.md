@@ -14,7 +14,7 @@ For `n = 0` both sides are `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Product Number](cyclic-product-number.md)
 
 ## Sources
 

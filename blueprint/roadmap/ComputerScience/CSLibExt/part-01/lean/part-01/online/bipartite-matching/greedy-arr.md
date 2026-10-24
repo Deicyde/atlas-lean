@@ -13,6 +13,10 @@ The greedy run on arrays.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Step Arr](step-arr.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Online.BipartiteMatching](../../../../../../../../sources/v2/CSLibExt.md)

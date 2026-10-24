@@ -13,7 +13,11 @@ in the window.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smallest Denominator](smallest-denominator.md)
+
+## Proof depends on
+
+- [Smallest Denominator le](smallest-denominator-le.md)
 
 ## Sources
 

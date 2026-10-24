@@ -13,7 +13,14 @@ transition and emission, and a bridge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+- [Bridge](../forward-backward/bridge.md)
+- [Forward](../hidden-markov/forward.md)
+- [Path Prob](../hidden-markov/path-prob.md)
+
+## Proof depends on
+
+- [The forward variables are path sums](../hidden-markov/forward-eq.md)
 
 ## Sources
 

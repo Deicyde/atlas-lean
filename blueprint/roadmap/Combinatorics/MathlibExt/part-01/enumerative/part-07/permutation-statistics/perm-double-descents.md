@@ -13,6 +13,10 @@ lean: MetaMathlibExt.permDoubleDescents
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Double Descent At](is-double-descent-at.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PermutationStatistics](../../../../../../../sources/v2/MathlibExt.md)

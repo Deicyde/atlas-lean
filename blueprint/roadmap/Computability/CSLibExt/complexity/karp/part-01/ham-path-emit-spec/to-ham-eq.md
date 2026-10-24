@@ -12,7 +12,13 @@ The instance: `s = m`, `t`, `n = t + 1` in unary, then the arcs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Bits](../color/edge-bits.md)
+- [Ham Edges](../ham-path/ham-edges.md)
+- [Ham Vars](../ham-path/ham-vars.md)
+- [Hp T](../ham-path/hp-t.md)
+- [To Ham](../ham-path/to-ham.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

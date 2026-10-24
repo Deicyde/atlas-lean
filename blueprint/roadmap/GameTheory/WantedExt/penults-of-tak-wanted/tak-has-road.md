@@ -15,6 +15,10 @@ adjacent tokens to a token `b` in the last column (resp. row).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tak Adjacent](tak-adjacent.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.PenultsOfTakWanted](../../../../sources/v2/WantedExt.md)

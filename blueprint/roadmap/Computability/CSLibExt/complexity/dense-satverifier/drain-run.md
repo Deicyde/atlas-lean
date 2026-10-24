@@ -12,7 +12,21 @@ Draining `inp`, `A`, `B` and reaching `finish ans`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
+- [Lab](lab.md)
+- [St](st.md)
+- [W](w.md)
+- [Mk V](mk-v.md)
+- [Prog](prog.md)
+- [Stk](stk.md)
+- [Γ](untitled.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Stmt](stmt.md)
+- [Loop run](loop-run.md)
+- [Push All](push-all.md)
 
 ## Sources
 

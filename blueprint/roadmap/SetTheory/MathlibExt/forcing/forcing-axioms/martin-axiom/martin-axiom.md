@@ -15,6 +15,10 @@ D_α's and p∈ G.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is CCC](is-ccc.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Forcing.ForcingAxioms.MartinAxiom](../../../../../../sources/v2/MathlibExt.md)

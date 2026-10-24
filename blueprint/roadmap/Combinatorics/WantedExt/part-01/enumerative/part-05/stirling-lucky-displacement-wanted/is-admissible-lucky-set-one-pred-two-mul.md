@@ -14,7 +14,7 @@ for `n ≥ 4`. As printed the claim covers all `n`, but it fails at `n = 3`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Lucky Set](is-admissible-lucky-set.md)
 
 ## Sources
 

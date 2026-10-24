@@ -15,7 +15,25 @@ as it started.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ent](../sat-verifier-spec/ent.md)
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [Start](start.md)
+- [Sym](../sat-verifier-spec/sym.md)
+- [Bit?](../sat-verifier-spec/bit.md)
+- [Live Val](../sat-verifier-spec/live-val.md)
+- [Tbl Stk](../sat-verifier-spec/tbl-stk.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Back loop](back-loop.md)
+- [Init run](init-run.md)
+- [Scan loop](scan-loop.md)
+- [Stk](stk.md)
+- [Ent Toks](../sat-verifier-spec/ent-toks.md)
+- [Run](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

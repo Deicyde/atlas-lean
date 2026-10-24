@@ -14,6 +14,10 @@ The checking machine's answer: `true` followed by the input if the input is acce
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chk From](chk-from.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.Universal.DiagonalDecider](../../../../../../../sources/v2/CSLibExt.md)

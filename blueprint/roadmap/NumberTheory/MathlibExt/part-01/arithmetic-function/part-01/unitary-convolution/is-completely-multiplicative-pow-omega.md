@@ -12,7 +12,12 @@ lean: MetaMathlibExt.isCompletelyMultiplicative_powOmega
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Completely Multiplicative](../completely-multiplicative/is-completely-multiplicative.md)
+- [Pow Omega](pow-omega.md)
+
+## Proof depends on
+
+- [Pow Omega apply](pow-omega-apply.md)
 
 ## Sources
 

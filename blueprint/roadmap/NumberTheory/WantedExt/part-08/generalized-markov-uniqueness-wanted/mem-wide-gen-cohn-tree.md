@@ -12,7 +12,8 @@ Proposition 3.10: every `k`-generalized Cohn triple associated with `(a, b, c)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
+- [Wide Gen Cohn Tree](wide-gen-cohn-tree.md)
 
 ## Sources
 

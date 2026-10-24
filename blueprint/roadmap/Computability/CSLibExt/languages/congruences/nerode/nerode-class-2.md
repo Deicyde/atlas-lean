@@ -11,7 +11,11 @@ The Nerode class represented by a word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](nerode-class.md)
+
+## Proof depends on
+
+- [Nerode Setoid](nerode-setoid.md)
 
 ## Sources
 

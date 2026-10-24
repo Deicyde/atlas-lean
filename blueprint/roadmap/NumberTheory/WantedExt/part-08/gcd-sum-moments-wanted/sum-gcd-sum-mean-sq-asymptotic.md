@@ -12,7 +12,7 @@ lean: MetaMathlibExt.sum_gcdSumMean_sq_asymptotic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Sum Mean](gcd-sum-mean.md)
 
 ## Sources
 

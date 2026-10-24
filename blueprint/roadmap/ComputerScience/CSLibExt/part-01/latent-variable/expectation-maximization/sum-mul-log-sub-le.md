@@ -15,7 +15,11 @@ contribute `0` on both sides.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dist](is-dist.md)
+
+## Proof depends on
+
+- [Log-sum inequality](../../../../../InformationTheory/MathlibExt/sum-mul-log-sum-div-sum-le-sum-mul-log-d.md)
 
 ## Sources
 

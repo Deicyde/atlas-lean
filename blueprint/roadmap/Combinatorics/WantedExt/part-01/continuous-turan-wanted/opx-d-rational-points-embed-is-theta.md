@@ -13,7 +13,7 @@ Corollary 5.7: for nonempty open `P ⊆ ℝ²` and dimension `m + 3 > 2`, let `P
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

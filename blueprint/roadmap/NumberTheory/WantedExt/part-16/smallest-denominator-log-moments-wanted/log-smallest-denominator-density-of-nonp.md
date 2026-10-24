@@ -12,7 +12,7 @@ On `s ≤ 0`, `η_log(s) = (6/π²) e^{2s}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Smallest Denominator Density](log-smallest-denominator-density.md)
 
 ## Sources
 

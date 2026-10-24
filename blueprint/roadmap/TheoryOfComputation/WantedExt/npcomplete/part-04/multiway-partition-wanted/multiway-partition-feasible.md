@@ -11,7 +11,7 @@ A split into `K` nonempty parts of equal sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiway Partition Instance](multiway-partition-instance.md)
 
 ## Sources
 

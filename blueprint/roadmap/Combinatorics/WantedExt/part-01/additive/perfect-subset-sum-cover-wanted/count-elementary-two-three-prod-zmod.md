@@ -14,7 +14,7 @@ Special cases of Theorem 4: for all `n ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Count](count.md)
 
 ## Sources
 

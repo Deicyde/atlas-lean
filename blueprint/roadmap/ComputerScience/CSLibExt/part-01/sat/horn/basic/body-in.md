@@ -11,7 +11,7 @@ The negative literals of `C` all have their variables in `T`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

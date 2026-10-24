@@ -12,7 +12,13 @@ some literal of the clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Imp Reach](imp-reach.md)
+- [Neg](neg.md)
 
 ## Sources
 

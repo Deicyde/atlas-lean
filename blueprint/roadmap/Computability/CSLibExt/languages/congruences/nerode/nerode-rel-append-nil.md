@@ -12,7 +12,7 @@ Every word is equivalent to itself with the empty continuation appended.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Rel](nerode-rel.md)
 
 ## Sources
 

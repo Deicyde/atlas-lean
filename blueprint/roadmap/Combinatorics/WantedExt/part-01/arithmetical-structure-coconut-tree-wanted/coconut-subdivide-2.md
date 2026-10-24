@@ -12,7 +12,9 @@ Proposition 3.11: subdividing an arithmetical structure on `CT(p, s)` at any pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Coconut Subdivide](coconut-subdivide.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

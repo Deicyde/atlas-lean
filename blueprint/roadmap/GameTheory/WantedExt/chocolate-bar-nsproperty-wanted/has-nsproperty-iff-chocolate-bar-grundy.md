@@ -13,7 +13,8 @@ function `f`, depth function `0`, depth `0`) has Grundy number `x ⊕ z` at ever
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
+- [Chocolate Bar Grundy](chocolate-bar-grundy.md)
 
 ## Sources
 

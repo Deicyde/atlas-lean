@@ -15,6 +15,10 @@ every other rook of level `l` may sit in any cell of its column inside level `l`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [File Placements](file-placements.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WeightedFilePlacementsWanted](../../../../../../../sources/v2/WantedExt.md)

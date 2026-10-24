@@ -19,7 +19,8 @@ different elements, so the witness string has length `n` (as numbers, `495 ∈ T
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Diff](kaprekar-diff.md)
+- [Kaprekar Map](kaprekar-map.md)
 
 ## Sources
 

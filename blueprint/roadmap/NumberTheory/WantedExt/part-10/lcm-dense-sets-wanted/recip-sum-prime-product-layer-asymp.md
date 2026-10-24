@@ -15,7 +15,9 @@ harmonic sums are comparable to `S^k/k!`. The paper's `k ≥ 0` is automatic for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Product Layer](prime-product-layer.md)
+- [Prime Products At Most](prime-products-at-most.md)
+- [Recip Sum Up To](recip-sum-up-to.md)
 
 ## Sources
 

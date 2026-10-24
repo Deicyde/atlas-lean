@@ -13,6 +13,10 @@ The paper's `α_i = d_i + √-1 d_{i+4}`, `0 ≤ i ≤ 3`, as a Gaussian integer
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [C4 Sq D](c4-sq-d.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.IntegerGroupDeterminantsC4SqWanted](../../../../sources/v2/WantedExt.md)

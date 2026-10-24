@@ -14,7 +14,7 @@ Corollary 3: for `r ≥ 1` and `1 + x + (-1)^r y ≠ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Fibonacci Polynomial](r-fibonacci-polynomial.md)
 
 ## Sources
 

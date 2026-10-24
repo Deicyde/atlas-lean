@@ -11,7 +11,13 @@ Semantic weakest precondition for total correctness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+
+## Proof depends on
+
+- [Big Step](../big-step/big-step.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

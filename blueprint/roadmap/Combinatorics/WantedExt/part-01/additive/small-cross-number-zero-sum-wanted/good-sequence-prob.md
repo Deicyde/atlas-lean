@@ -15,6 +15,10 @@ group `Γ` as in the source.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Good Sequence](is-good-sequence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.SmallCrossNumberZeroSumWanted](../../../../../../sources/v2/WantedExt.md)

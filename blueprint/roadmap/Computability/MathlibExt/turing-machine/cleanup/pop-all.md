@@ -11,7 +11,7 @@ Pop every stack of `ks` once, or-ing into the flag whether some pop found a symb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../program/flag.md)
 
 ## Sources
 

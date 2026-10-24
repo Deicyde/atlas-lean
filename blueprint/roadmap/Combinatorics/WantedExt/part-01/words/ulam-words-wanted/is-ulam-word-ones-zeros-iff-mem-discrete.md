@@ -12,7 +12,8 @@ discrete Sierpiński triangle `𝒮`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ulam Word](is-ulam-word.md)
+- [Discrete Sierpinski](discrete-sierpinski.md)
 
 ## Sources
 

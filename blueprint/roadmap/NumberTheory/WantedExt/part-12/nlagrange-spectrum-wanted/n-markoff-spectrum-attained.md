@@ -11,7 +11,8 @@ Every `α ∈ Mₙ` is `μₙ(ξ, ξ')` for some `ξ, ξ'` at which the supremum
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Markoff Approximability](n-markoff-approximability.md)
+- [N Markoff Spectrum](n-markoff-spectrum.md)
 
 ## Sources
 

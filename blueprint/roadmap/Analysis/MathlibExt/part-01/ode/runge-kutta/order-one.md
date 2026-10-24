@@ -11,7 +11,7 @@ Order-one condition: the weights sum to `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
 
 ## Sources
 

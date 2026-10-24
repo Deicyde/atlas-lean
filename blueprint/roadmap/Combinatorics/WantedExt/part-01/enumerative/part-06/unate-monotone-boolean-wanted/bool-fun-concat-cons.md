@@ -13,7 +13,7 @@ Evaluation of `g || h`: the first variable selects `g` (when `false`) or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Fun Concat](bool-fun-concat.md)
 
 ## Sources
 

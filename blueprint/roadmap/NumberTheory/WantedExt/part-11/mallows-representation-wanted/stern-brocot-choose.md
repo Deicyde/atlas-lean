@@ -11,7 +11,12 @@ The letter chosen at a Stern–Brocot vertex with gap `I`: `L` if `α` is below 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Letter](stern-brocot-letter.md)
+
+## Proof depends on
+
+- [Gap Mediant](gap-mediant.md)
+- [Nat Pair To Real](nat-pair-to-real.md)
 
 ## Sources
 

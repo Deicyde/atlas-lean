@@ -13,7 +13,8 @@ not; the parts `1` and `2 + 2` are PEND, while `2` and `2 + 4` are not.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Pend Parts](is-pend-parts.md)
+- [Is Pond Parts](is-pond-parts.md)
 
 ## Sources
 

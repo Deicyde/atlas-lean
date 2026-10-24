@@ -13,7 +13,7 @@ Parts (i) and (ii) also hold for `n < 2`; part (iii) fails at `n = 1` (`g_1(x) =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incl Excl Like Sum](incl-excl-like-sum.md)
 
 ## Sources
 

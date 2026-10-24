@@ -18,6 +18,10 @@ Index `0` gives `0`. These are the coefficients of `H(ξ^{-i}) = ∑_j m_{i,j} T
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Garvan MTable](garvan-mtable.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.TwoColorSevenPowerPartitionWanted](../../../../../../../../../sources/v2/WantedExt.md)

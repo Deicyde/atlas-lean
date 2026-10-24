@@ -13,7 +13,7 @@ are used, so the vertex and face hypotheses are replaced by `1 ≤ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
 
 ## Sources
 

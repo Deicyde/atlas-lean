@@ -11,7 +11,8 @@ Theorem 8: the concatenation `0.h₂(1)h₂(2)…` is not normal in base 10.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Normal In Base](../../../../MathlibExt/part-08/normal-number/is-normal-in-base.md)
+- [Campbell Constant](campbell-constant.md)
 
 ## Sources
 

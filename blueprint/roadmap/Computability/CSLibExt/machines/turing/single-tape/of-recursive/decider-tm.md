@@ -11,7 +11,12 @@ The decider built from `tm`: the recognizer, then the answer machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](../of-tm0/non-blank.md)
+
+## Proof depends on
+
+- [Answer TM](answer-tm.md)
+- [Recognizer TM](recognizer-tm.md)
 
 ## Sources
 

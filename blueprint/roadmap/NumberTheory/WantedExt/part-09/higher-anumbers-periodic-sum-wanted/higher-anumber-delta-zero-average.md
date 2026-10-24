@@ -11,7 +11,8 @@ The average of `δ₀` over its period `τ_D p` is `½ (1 - 1/p)(1 - 1/τ_D)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher ANumber Delta Zero](higher-anumber-delta-zero.md)
+- [Tau Den](tau-den.md)
 
 ## Sources
 

@@ -14,7 +14,9 @@ Ayadi et al.: over `𝔽₂`, a root `α` of positive degree of `C T³ + A T² +
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Has Bounded Partial Quotients](laurent-has-bounded-partial-quotients.md)
+- [Laurent Inv Var](laurent-inv-var.md)
+- [Poly To Laurent Inv](poly-to-laurent-inv.md)
 
 ## Sources
 

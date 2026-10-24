@@ -14,6 +14,10 @@ symbol.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Left Derivation](left-derivation.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Ambiguity](../../../../../../../sources/v2/CSLibExt.md)

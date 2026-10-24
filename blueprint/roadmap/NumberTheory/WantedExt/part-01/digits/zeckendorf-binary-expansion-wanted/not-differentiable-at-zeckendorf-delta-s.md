@@ -11,7 +11,11 @@ Theorem 10: `δ*` is not differentiable at any point of `eval_Q̃(Ē*)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [L Star Closure](l-star-closure.md)
+- [Zeckendorf Delta Star](zeckendorf-delta-star.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Proposition 6: the multiset `M = {0^{(b_0)}, 1^{(b_1)}, …, t^{(b_t)}}` has
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vn Arrangement Count](vn-arrangement-count.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Characteristic value: `(1, 1, 1)` is a `k`-generalized Markov triple for every `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
 
 ## Sources
 

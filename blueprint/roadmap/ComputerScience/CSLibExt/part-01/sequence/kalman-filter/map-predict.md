@@ -13,7 +13,13 @@ lean: Cslib.MachineLearning.Sequence.KalmanFilter.map_predict
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
+- [Law](law.md)
+- [Predict](predict.md)
+
+## Proof depends on
+
+- [The marginal of a linear-Gaussian model](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-conditioning/map-linear-add-of-indep-fun.md)
 
 ## Sources
 

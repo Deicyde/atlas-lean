@@ -13,7 +13,7 @@ move to one (for this terminating game this characterizes the P-positions).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Rotation Move](cube-rotation-move.md)
 
 ## Sources
 

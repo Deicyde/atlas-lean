@@ -12,7 +12,8 @@ Theorem 9: for `1 ≤ m ≤ n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
+- [Degenerate Stirling Second](degenerate-stirling-second.md)
 
 ## Sources
 

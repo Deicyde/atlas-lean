@@ -15,7 +15,7 @@ for `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Equiv](keyword-equiv.md)
 
 ## Sources
 

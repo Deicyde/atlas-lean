@@ -13,7 +13,21 @@ input, the tape stays blank and holds no answer bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code Time](code-time.md)
+- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Code](../code/code.md)
+- [Cfg](../code/cfg.md)
+- [Output](../code/output.md)
+- [Decides Within](decides-within.md)
+- [Cfg After](../code/cfg-after.md)
+- [The clocked evaluator](../code/eval-steps.md)
+- [Eval Steps eq some iff output](../code/eval-steps-eq-some-iff-output.md)
+- [Step](../code/step.md)
+- [Bit Sym](../code/bit-sym.md)
 
 ## Sources
 

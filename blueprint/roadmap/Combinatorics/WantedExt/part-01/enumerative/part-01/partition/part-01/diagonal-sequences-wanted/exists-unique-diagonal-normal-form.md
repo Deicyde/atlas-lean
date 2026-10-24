@@ -13,7 +13,9 @@ Corollary 1: for every partition `α` of `n ≥ 1` there are unique `q > 0` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Normal Form](diagonal-normal-form.md)
+- [Diagonal Of List](diagonal-of-list.md)
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

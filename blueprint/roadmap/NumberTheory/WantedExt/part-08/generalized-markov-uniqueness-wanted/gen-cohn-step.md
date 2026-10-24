@@ -14,6 +14,10 @@ child `(P, PQ - S, Q)`, `true` to its right child `(Q, QR - S, R)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gen Cohn S](gen-cohn-s.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedMarkovUniquenessWanted](../../../../../sources/v2/WantedExt.md)

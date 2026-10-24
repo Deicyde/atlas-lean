@@ -13,7 +13,12 @@ lean: Cslib.MachineLearning.Sampling.trial_true_div_tsum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trial](trial.md)
+
+## Proof depends on
+
+- [Trial apply true](trial-apply-true.md)
+- [Tsum trial true](tsum-trial-true.md)
 
 ## Sources
 

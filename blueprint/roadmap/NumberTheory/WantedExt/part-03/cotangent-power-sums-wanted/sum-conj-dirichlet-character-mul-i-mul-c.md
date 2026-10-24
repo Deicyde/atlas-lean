@@ -18,7 +18,7 @@ i^r cot^r(πk/n)` (Equation (4)) and the Gauss sum `τ(χ̄_f) = ∑_{k=1}^f χ�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cotangent Power Coeff](cotangent-power-coeff.md)
 
 ## Sources
 

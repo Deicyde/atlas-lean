@@ -13,6 +13,10 @@ The prefix product `x 0 * ⋯ * x i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seg](seg.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Parallel.PrefixSum](../../../../../../../../sources/v2/CSLibExt.md)

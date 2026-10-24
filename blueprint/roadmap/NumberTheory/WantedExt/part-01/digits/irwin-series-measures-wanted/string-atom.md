@@ -16,6 +16,11 @@ Series*, INTEGERS 26 (2026), Article A11, definition of `μ_k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normalized String Value](normalized-string-value.md)
+- [String Weight](string-weight.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)

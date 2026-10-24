@@ -12,7 +12,7 @@ lean: MetaMathlibExt.ramanujanTau_succ_modEq_triangular_sum_seven
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

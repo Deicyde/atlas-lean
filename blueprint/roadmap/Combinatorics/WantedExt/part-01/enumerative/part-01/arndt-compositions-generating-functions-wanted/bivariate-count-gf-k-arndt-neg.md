@@ -13,7 +13,8 @@ compositions by weight and number of parts is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bivariate Count GF](bivariate-count-gf.md)
+- [K Arndt Composition Count](k-arndt-composition-count.md)
 
 ## Sources
 

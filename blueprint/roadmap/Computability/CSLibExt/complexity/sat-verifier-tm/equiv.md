@@ -11,7 +11,12 @@ lean: Cslib.Complexity.SatVerifier.Machine.HLab.equiv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](../karp/part-02/three-sat-filter/lab.md)
+- [DLab](../sat-check/dlab.md)
+- [Lab](../sat-lookup/lab.md)
+- [HLab](hlab.md)
+- [P0](p0.md)
+- [Lab](../sat-tokenizer/lab.md)
 
 ## Sources
 

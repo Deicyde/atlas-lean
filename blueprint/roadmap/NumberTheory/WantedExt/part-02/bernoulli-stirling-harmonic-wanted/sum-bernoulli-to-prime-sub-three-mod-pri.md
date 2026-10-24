@@ -13,7 +13,7 @@ by `p`, and its residue equals that of `-1`. The denominator clause and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rat Residue](../../part-09/gobel-sequence-wanted/rat-residue.md)
 
 ## Sources
 

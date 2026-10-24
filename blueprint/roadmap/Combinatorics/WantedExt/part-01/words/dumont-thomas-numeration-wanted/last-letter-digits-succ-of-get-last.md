@@ -12,7 +12,7 @@ Recurrence for `lastLetterDigits` when `η(c)` ends with `d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Last Letter Digits](last-letter-digits.md)
 
 ## Sources
 

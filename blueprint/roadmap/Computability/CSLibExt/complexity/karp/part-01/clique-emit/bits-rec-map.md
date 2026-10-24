@@ -12,7 +12,8 @@ lean: Cslib.Complexity.Karp.EmitClique.bitsRec_map
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bits Rec](bits-rec.md)
+- [Occ Adj](../clique/occ-adj.md)
 
 ## Sources
 

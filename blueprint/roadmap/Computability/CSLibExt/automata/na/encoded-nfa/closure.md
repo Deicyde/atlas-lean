@@ -11,7 +11,13 @@ The ε-closure of a list of states, by a search from each of them.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+
+## Proof depends on
+
+- [Reach N](../../../decidability/part-02/regular/reach-n.md)
+- [Eps Next](eps-next.md)
+- [States](states.md)
 
 ## Sources
 

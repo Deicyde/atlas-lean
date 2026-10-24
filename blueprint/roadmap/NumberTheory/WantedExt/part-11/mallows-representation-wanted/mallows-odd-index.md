@@ -12,7 +12,7 @@ The enumeration `o(1) < o(2) < ⋯` of the positions `j` with `x_j ∈ {O_L, O_R
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Parity Letter](mallows-parity-letter.md)
 
 ## Sources
 

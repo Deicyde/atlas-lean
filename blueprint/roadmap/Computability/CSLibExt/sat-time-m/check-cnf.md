@@ -11,7 +11,12 @@ Check every clause of a CNF formula against the witness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Check Clause](check-clause.md)
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

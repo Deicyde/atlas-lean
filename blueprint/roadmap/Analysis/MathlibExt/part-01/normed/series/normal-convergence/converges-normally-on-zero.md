@@ -15,10 +15,11 @@ converges normally on $S$.
 
 ## Depends on
 
-- [Extended supremum norm on a set](sup-norm-on.md)
+- [Converges Normally On](converges-normally-on.md)
 
 ## Proof depends on
 
+- [Extended supremum norm on a set](sup-norm-on.md)
 - [Supremum norm of the zero function](sup-norm-on-zero.md)
 
 ## Sources

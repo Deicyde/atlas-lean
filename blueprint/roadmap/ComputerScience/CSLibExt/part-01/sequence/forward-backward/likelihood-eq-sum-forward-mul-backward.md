@@ -12,7 +12,16 @@ The likelihood from the forward and backward variables at any intermediate time.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+- [Backward](backward.md)
+- [Forward](../hidden-markov/forward.md)
+- [Likelihood](../hidden-markov/likelihood.md)
+
+## Proof depends on
+
+- [Path Prob](../hidden-markov/path-prob.md)
+- [State Marg](state-marg.md)
+- [Forward-backward](state-marg-eq.md)
 
 ## Sources
 

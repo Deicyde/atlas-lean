@@ -13,6 +13,11 @@ The target: `k` on top, digit `2` on every edge.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pair Digit](pair-digit.md)
+- [Pairs](../../part-01/clique/pairs.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.SubsetSum](../../../../../../../sources/v2/CSLibExt.md)

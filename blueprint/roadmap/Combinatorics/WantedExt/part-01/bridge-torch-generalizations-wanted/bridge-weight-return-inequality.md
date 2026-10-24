@@ -12,7 +12,7 @@ Return inequality: for every non-empty set `R` of positive integers with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Weight](bridge-weight.md)
 
 ## Sources
 

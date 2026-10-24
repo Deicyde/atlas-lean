@@ -16,6 +16,11 @@ interval `[a, b]` is empty, `a = b + 1`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas Interval Hi](lucas-interval-hi.md)
+- [Lucas Interval Lo](lucas-interval-lo.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.BasePhiStructureWanted](../../../../../../sources/v2/WantedExt.md)

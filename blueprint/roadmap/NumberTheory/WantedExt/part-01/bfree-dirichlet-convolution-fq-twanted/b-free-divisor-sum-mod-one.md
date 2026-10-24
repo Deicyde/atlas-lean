@@ -12,7 +12,13 @@ Modulo `m = 1` the progression sum is the full sum: `D̃_{B_κ,h}(N, a, 1) = D̃
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Divisor Sum](b-free-divisor-sum.md)
+- [B Free Divisor Sum Mod](b-free-divisor-sum-mod.md)
+
+## Proof depends on
+
+- [Is BFree](is-bfree.md)
+- [Monic Divisor Count](monic-divisor-count.md)
 
 ## Sources
 

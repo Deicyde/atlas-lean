@@ -13,7 +13,7 @@ Wythoff's theorem: the positions of classical Wythoff's game with Grundy number 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
 
 ## Sources
 

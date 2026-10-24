@@ -12,7 +12,7 @@ A function with gradient `g` at `z` has derivative `v ⬝ᵥ g` along the line `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dot L](dot-l.md)
 
 ## Sources
 

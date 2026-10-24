@@ -17,7 +17,7 @@ values whose points have Carathéodory measure zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem117 Claim](scottish-book-problem117-claim.md)
 
 ## Sources
 

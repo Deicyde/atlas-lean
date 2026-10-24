@@ -14,6 +14,10 @@ numbers `motzkinNumber`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Motzkin Number](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinHumpsYoungTableauxWanted](../../../../../../../sources/v2/WantedExt.md)

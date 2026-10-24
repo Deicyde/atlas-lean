@@ -12,7 +12,7 @@ For an odd prime `p`, `η_1(𝔽_{p^t} × 𝔽_{p^t}) = (1 + o(1)) p^t` as `t �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Diff Basis Number](group-diff-basis-number.md)
 
 ## Sources
 

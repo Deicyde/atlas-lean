@@ -12,7 +12,7 @@ The pass indicator takes values in `{0, 1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nim Pass Indicator](nim-pass-indicator.md)
 
 ## Sources
 

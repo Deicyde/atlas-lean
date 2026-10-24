@@ -12,7 +12,7 @@ The bits of a concatenation of vertex lists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc W](enc-w.md)
 
 ## Sources
 

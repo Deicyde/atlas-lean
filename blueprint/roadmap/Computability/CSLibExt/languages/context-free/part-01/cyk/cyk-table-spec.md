@@ -13,7 +13,16 @@ length `1, …, l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyk Table Correct](cyk-table-correct.md)
+- [Is Chomsky Normal Form](../chomsky-normal-form/is-chomsky-normal-form.md)
+- [Cyk Table](cyk-table.md)
+
+## Proof depends on
+
+- [Yields](../../part-02/yields/yields.md)
+- [Cyk Cell From](cyk-cell-from.md)
+- [Cyk Lookup](cyk-lookup.md)
+- [The CYK step](mem-cyk-cell-from-iff.md)
 
 ## Sources
 

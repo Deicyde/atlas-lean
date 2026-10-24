@@ -12,7 +12,7 @@ Table value `D^1(3, 2) = 44`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Delannoy Upper](gen-delannoy-upper.md)
 
 ## Sources
 

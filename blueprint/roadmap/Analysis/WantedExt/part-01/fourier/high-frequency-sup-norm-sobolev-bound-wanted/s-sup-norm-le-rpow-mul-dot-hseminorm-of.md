@@ -20,7 +20,7 @@ $\operatorname{supp}(\widehat f)\subset \mathbb{R}\setminus [-A,A]$, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dot HSeminorm](dot-hseminorm.md)
 
 ## Sources
 

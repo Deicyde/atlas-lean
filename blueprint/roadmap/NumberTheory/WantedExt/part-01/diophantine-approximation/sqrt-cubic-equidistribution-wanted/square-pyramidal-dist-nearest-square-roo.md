@@ -17,7 +17,7 @@ real `x → ∞` is taken along integers `N`, which is equivalent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Pyramidal Number](square-pyramidal-number.md)
 
 ## Sources
 

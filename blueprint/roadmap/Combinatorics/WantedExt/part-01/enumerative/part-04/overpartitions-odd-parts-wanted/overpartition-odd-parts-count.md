@@ -14,6 +14,10 @@ The number `po(n)` of overpartitions of `n` into odd parts: overpartitions
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Overpartition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.OverpartitionsOddPartsWanted](../../../../../../../sources/v2/WantedExt.md)

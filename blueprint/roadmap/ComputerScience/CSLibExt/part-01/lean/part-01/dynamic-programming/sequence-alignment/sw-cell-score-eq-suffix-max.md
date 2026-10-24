@@ -13,7 +13,13 @@ lean: Cslib.Algorithms.Lean.swCellScore_eq_suffixMax
 
 ## Depends on
 
-This node has no prerequisites.
+- [Suffix Max](suffix-max.md)
+- [Sw Cell Score](sw-cell-score.md)
+
+## Proof depends on
+
+- [Every suffix pair scores at most the Smith–Waterman score](suffix-max-le-sw-cell-score.md)
+- [The terminal cell is at most the suffix maximum](sw-cell-score-le-suffix-max.md)
 
 ## Sources
 

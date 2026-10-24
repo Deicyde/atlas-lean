@@ -12,7 +12,8 @@ integral at `a n` and `!n = ∑_{k<n} k!`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kurepa Partial Integral](kurepa-partial-integral.md)
+- [Lambert Map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources
 

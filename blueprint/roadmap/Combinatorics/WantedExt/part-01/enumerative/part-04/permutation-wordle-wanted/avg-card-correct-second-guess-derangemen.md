@@ -13,7 +13,7 @@ of correct positions in the second guess, over all derangement secrets of length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle Guess](perm-wordle-guess.md)
 
 ## Sources
 

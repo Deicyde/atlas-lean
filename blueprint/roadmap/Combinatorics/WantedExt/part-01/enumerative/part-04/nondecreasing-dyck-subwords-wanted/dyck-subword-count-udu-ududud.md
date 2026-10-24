@@ -12,7 +12,7 @@ lean: MetaMathlibExt.dyckSubwordCount_UDU_UDUDUD
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyck Subword Count](dyck-subword-count.md)
 
 ## Sources
 

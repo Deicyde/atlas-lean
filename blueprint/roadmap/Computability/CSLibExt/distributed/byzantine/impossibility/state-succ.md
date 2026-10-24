@@ -12,7 +12,9 @@ In each round every general moves by its code on the messages it receives.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
+- [Inbox](inbox.md)
+- [State](state.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ the DFA is state-separated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible](../minimality/accessible.md)
+- [State Separated](../universal/state-separated.md)
+- [Syntactic Rel](syntactic-rel.md)
+- [Transition Action](transition-action.md)
+
+## Proof depends on
+
+- [Reachable State](../minimality/reachable-state.md)
+- [State Equivalent](../minimality/state-equivalent.md)
 
 ## Sources
 

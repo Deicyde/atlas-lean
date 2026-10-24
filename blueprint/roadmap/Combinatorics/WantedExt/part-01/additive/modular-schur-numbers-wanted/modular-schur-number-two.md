@@ -12,7 +12,7 @@ For positive `k, l`: `S_2(k, l) = 0` when `l ≡ 1 (mod 2)` and `S_2(k, l) = 1` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

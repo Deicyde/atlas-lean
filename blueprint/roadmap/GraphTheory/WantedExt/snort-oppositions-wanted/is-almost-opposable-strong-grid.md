@@ -12,7 +12,8 @@ opposable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Almost Opposable](is-almost-opposable.md)
+- [Strong Grid](strong-grid.md)
 
 ## Sources
 

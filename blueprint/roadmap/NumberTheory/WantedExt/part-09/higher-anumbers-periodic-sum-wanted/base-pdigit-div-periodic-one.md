@@ -13,7 +13,7 @@ odd prime `p` is relaxed to any prime (for `p = 2` only `d = 1` occurs).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDigit](base-pdigit.md)
 
 ## Sources
 

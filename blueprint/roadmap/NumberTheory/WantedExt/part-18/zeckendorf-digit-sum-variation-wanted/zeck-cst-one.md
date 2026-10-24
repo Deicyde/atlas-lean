@@ -12,7 +12,11 @@ lean: MetaMathlibExt.zeckCST_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck CST](zeck-cst.md)
+
+## Proof depends on
+
+- [Zeck Adic Prefix Value](zeck-adic-prefix-value.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Yang–Chen direct theorem: for integers `a₀ < ⋯ < a_{k-1}`, positive `r̄` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized HFold Sumset](generalized-hfold-sumset.md)
+- [Yang Chen Bound](yang-chen-bound.md)
 
 ## Sources
 

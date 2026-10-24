@@ -14,7 +14,7 @@ being `D`-Carmichael with signature `σ` and `D'`-Carmichael with signature `σ'
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DCarmichael](is-dcarmichael.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ binomid index of length `m ≥ 1` is `GCD {i ≤ m | A_i = A_max}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lex Minimal Extension Of](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
+- [Max Average Indices](max-average-indices.md)
 
 ## Sources
 

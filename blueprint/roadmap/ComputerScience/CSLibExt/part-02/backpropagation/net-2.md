@@ -11,7 +11,8 @@ The network with all parameters fixed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Net](net.md)
+- [PNet](pnet.md)
 
 ## Sources
 

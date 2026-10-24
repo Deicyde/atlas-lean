@@ -11,7 +11,7 @@ Whether a peeked symbol is the bit `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
 
 ## Sources
 

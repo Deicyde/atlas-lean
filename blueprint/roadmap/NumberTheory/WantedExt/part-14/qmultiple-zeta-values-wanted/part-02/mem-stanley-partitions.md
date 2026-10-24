@@ -12,7 +12,7 @@ Membership in `𝒫_r(N)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stanley Partitions](stanley-partitions.md)
 
 ## Sources
 

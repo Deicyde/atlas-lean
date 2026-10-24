@@ -12,7 +12,7 @@ Threshold functions are only determined up to positive constant factors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Threshold Function](is-threshold-function.md)
 
 ## Sources
 

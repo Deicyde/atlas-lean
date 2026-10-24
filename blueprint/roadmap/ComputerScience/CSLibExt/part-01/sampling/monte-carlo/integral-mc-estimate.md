@@ -13,7 +13,7 @@ from `n > 0` samples has expectation `∫ f dν`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mc Estimate](mc-estimate.md)
 
 ## Sources
 

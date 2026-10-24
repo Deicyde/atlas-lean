@@ -12,7 +12,12 @@ The origin lies on the staircase `J_0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sector Staircase](sector-staircase.md)
+
+## Proof depends on
+
+- [Sector Lattice Points](sector-lattice-points.md)
+- [Zero mem sector Lattice Points](zero-mem-sector-lattice-points.md)
 
 ## Sources
 

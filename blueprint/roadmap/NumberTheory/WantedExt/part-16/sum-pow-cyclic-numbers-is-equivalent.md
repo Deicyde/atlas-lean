@@ -16,7 +16,7 @@ numbers `m ≤ x`, `∑ m^k ~ C(x) c_{C(x)}^k / (k+1) ~ C(x) x^k / (k+1)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cyclic Number](../../MathlibExt/part-09/oppermann-cyclic-numbers/is-cyclic-number.md)
 
 ## Sources
 

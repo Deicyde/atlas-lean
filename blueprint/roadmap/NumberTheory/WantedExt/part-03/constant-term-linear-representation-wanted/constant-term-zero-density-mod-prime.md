@@ -13,7 +13,8 @@ density `1`, there are arbitrarily long runs of zeros, and the sequence is eithe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Uniformly Recurrent Seq](is-uniformly-recurrent-seq.md)
+- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

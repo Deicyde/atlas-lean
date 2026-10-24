@@ -16,7 +16,7 @@ record's Corollary 6) uses this shifted form, `ω(t) = τ_1(t + 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

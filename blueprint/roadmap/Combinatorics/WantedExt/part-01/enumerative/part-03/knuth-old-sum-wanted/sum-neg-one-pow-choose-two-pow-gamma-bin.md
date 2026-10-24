@@ -12,7 +12,7 @@ lean: MetaMathlibExt.sum_neg_one_pow_choose_two_pow_gammaBinom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

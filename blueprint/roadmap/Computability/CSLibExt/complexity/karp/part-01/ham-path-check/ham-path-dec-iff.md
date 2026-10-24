@@ -12,7 +12,19 @@ lean: Cslib.Complexity.Karp.HamVerify.hamPathDec_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ham Check](ham-check.md)
+- [Ham Path Dec](../ham-path/ham-path-dec.md)
+
+## Proof depends on
+
+- [Enc W](enc-w.md)
+- [Ham Check iff](ham-check-iff.md)
+- [Length enc W le](length-enc-w-le.md)
+- [Length encode P](length-encode-p.md)
+- [Is Ham Path](../ham-path/is-ham-path.md)
+- [Edge Bits](../color/edge-bits.md)
+- [Arc](../../../path/arc.md)
+- [Encode P](../../../path/encode-p.md)
 
 ## Sources
 

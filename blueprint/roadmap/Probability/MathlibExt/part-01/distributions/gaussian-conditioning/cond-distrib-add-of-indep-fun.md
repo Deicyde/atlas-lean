@@ -13,7 +13,7 @@ lean: MetaMathlibExt.condDistrib_add_of_indepFun
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noise Kernel](noise-kernel.md)
 
 ## Sources
 

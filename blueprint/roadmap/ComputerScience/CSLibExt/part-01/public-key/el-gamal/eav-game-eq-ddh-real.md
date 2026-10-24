@@ -12,7 +12,15 @@ With a real DDH triple, the reduction runs the eavesdropping game exactly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adversary](adversary.md)
+- [Ddh Real](ddh-real.md)
+- [Eav Game](eav-game.md)
+- [Reduction](reduction.md)
+
+## Proof depends on
+
+- [Pick](pick.md)
+- [Gpow](../diffie-hellman/gpow.md)
 
 ## Sources
 

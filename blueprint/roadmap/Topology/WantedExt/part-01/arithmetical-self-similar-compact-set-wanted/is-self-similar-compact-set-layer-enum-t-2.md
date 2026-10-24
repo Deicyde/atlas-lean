@@ -13,7 +13,8 @@ Proposition 4, second part: with the enumerations of the first part,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
+- [Self Similar Layer](self-similar-layer.md)
 
 ## Sources
 

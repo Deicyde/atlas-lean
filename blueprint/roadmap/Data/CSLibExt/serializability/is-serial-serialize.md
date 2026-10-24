@@ -12,7 +12,13 @@ The schedule `serialize order s` is serial when `order` lists every transaction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Serial](is-serial.md)
+- [Op](op.md)
+- [Serialize](serialize.md)
+
+## Proof depends on
+
+- [Txn Before](txn-before.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Theorem 23: odd exponent `r` gives
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Set](square-set.md)
+- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
 
 ## Sources
 

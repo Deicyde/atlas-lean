@@ -12,7 +12,7 @@ The recurrences of `ℳ₂` in the paper's form, with `ℳ₂(n)` read as `0` or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic Two](meta-automatic-two.md)
 
 ## Sources
 

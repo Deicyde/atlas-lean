@@ -12,7 +12,7 @@ horizontal segment `[x₀, x₀ + c] × {y₀}`, `c ≥ 0`, then `opx(n, P') ≤
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

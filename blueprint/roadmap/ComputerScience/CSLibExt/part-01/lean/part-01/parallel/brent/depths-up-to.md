@@ -11,7 +11,7 @@ The depths of tasks `0, …, k - 1`, computed in topological order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
 
 ## Sources
 

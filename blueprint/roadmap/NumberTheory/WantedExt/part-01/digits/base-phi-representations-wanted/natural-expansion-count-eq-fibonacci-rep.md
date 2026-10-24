@@ -12,7 +12,10 @@ For `N > 3` with Bergman expansion `β(N)` whose lowest digit `1` is at position
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bergman Expansion](is-bergman-expansion.md)
+- [Base Phi Value](base-phi-value.md)
+- [Fibonacci Representation Count](fibonacci-representation-count.md)
+- [Natural Expansion Count](natural-expansion-count.md)
 
 ## Sources
 

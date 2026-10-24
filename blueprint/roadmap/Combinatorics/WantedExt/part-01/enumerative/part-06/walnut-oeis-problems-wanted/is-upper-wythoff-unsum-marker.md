@@ -14,6 +14,10 @@ A260311 that follow the irregular prefix `1111122121` of length ten.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

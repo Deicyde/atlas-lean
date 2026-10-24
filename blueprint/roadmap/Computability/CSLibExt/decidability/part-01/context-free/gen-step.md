@@ -13,6 +13,10 @@ One round: the left-hand sides of the acceptable productions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rule Ok](rule-ok.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.ContextFree](../../../../../../sources/v2/CSLibExt.md)

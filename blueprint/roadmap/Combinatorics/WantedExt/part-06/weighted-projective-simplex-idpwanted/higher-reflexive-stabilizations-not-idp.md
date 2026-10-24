@@ -13,7 +13,9 @@ for `q = []`, `rs([],2) = [1]` gives the interval `[-1,1]`, which has IDP.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Reflexive Stabilization At](reflexive-stabilization-at.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

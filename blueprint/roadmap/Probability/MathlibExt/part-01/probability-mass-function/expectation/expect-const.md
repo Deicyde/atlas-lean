@@ -12,7 +12,11 @@ The expectation of a constant function is that constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect](expect.md)
+
+## Proof depends on
+
+- [Expect eq sum](expect-eq-sum.md)
 
 ## Sources
 

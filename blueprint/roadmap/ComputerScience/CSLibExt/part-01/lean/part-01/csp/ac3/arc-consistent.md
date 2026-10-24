@@ -11,7 +11,7 @@ The arc `(x, y)` is consistent: every value of `x` has a support in the domain o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
 
 ## Sources
 

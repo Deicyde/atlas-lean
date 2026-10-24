@@ -11,7 +11,12 @@ lean: Cslib.Language.EncodedRegex.memB
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](encoded-regex.md)
+
+## Proof depends on
+
+- [Membership test](../../part-01/context-free/mem-language-b.md)
+- [To Grammar](to-grammar.md)
 
 ## Sources
 

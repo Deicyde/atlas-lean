@@ -12,7 +12,9 @@ The syndrome of a received word depends only on the error.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+- [Of Parity Check](of-parity-check.md)
+- [Syndrome](syndrome.md)
 
 ## Sources
 

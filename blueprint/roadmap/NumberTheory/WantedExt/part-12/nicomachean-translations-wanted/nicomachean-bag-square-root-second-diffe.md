@@ -16,7 +16,7 @@ to `(3 + √105)/12`. Here `A^2 = (ij : 1 ≤ i, j ≤ m)` is the paper's sequen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachean Nu](nicomachean-nu.md)
 
 ## Sources
 

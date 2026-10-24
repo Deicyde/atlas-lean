@@ -12,7 +12,7 @@ lean: MetaMathlibExt.yangChenBound_one_one_one_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yang Chen Bound](yang-chen-bound.md)
 
 ## Sources
 

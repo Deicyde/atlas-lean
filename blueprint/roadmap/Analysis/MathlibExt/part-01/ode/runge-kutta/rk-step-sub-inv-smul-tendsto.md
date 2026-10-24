@@ -13,7 +13,14 @@ lean: MathlibExt.Analysis.ODE.RungeKutta.rkStep_sub_inv_smul_tendsto
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
+- [Order One](order-one.md)
+- [Rk Step](rk-step.md)
+
+## Proof depends on
+
+- [Stage](stage.md)
+- [Stage tendsto](stage-tendsto.md)
 
 ## Sources
 

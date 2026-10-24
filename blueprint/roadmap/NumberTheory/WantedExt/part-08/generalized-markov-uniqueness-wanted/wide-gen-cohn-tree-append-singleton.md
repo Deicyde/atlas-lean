@@ -12,7 +12,14 @@ Characteristic lemma: children in `WGCT(k, ℓ)` are steps from their parent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Cohn Step](gen-cohn-step.md)
+- [Wide Gen Cohn Tree](wide-gen-cohn-tree.md)
+
+## Proof depends on
+
+- [Gen Cohn P1](gen-cohn-p1.md)
+- [Gen Cohn Q1](gen-cohn-q1.md)
+- [Gen Cohn R1](gen-cohn-r1.md)
 
 ## Sources
 

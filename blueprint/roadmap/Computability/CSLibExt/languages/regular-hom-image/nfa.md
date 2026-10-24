@@ -11,7 +11,12 @@ The ε-NFA spelling out the images of the transitions of `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Advance](advance.md)
+- [Bound](bound.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Duality for OOZ-qMZVs, `ζ_q^OSZ = ζ_q^OSZ ∘ V⁻¹ ∘ τ̃ ∘ V` on `𝔎�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz QMZV](../part-01/ooz-qmzv.md)
+- [Ooz To SZ](ooz-to-sz.md)
+- [Sz Dual Index](sz-dual-index.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ Finiteness is undecidable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Code](finite-code.md)
+- [TM2 Decidable](../basic/tm2-decidable.md)
+
+## Proof depends on
+
+- [Tm2 Recognizable](../basic/tm2-recognizable-2.md)
+- [Finiteness is not recognizable](not-tm2-recognizable-finite.md)
 
 ## Sources
 

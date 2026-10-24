@@ -13,6 +13,10 @@ A set A⊂ ℙ is predense below q∈ P if for any r≤ q, there is a∈ A such 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Compatible](is-compatible.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Forcing.ForcingAxioms.Proper](../../../../../../sources/v2/MathlibExt.md)

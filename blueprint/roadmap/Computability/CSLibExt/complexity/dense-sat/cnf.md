@@ -13,6 +13,10 @@ A CNF formula: the conjunction of its clauses.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Clause](clause.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.DenseSAT](../../../../../sources/v2/CSLibExt.md)

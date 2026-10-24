@@ -13,6 +13,10 @@ lean: MetaMathlibExt.pondCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Pond Parts](is-pond-parts.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.PondPendCongruencesWanted](../../../../../../../../../sources/v2/WantedExt.md)

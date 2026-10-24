@@ -13,7 +13,14 @@ lossless exactly when `R₁ ∩ R₂ → R₁` or `R₁ ∩ R₂ → R₂` is de
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](../functional-dependencies/derives.md)
+- [FD](../functional-dependencies/fd.md)
+- [Lossless Join](lossless-join.md)
+
+## Proof depends on
+
+- [Derives of lossless Join](derives-of-lossless-join.md)
+- [Lossless Join of derives](lossless-join-of-derives.md)
 
 ## Sources
 

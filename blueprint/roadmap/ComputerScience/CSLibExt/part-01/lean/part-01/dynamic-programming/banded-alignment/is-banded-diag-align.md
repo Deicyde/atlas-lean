@@ -12,7 +12,12 @@ The diagonal alignment is banded when the length difference fits the band.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Banded](is-banded.md)
+- [Diag Align](diag-align.md)
+
+## Proof depends on
+
+- [Banded From diag Align](banded-from-diag-align.md)
 
 ## Sources
 

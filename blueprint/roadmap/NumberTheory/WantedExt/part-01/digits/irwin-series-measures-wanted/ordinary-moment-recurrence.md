@@ -17,6 +17,10 @@ of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 1.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Digit Power Sum](digit-power-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)

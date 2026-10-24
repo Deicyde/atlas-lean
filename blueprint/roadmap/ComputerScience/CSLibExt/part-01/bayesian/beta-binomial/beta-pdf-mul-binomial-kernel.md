@@ -12,7 +12,11 @@ Prior density times likelihood of `k` successes in `n` trials, as an identity of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Kernel](binomial-kernel.md)
+
+## Proof depends on
+
+- [Conjugacy of the beta density](beta-pdfreal-mul-pow.md)
 
 ## Sources
 

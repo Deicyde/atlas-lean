@@ -13,6 +13,10 @@ The deletion operator `D_α` on `𝒲`: delete the first occurrence of the lette
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Letter Position](letter-position.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.RelativePositionBinaryWordsWanted](../../../../../sources/v2/WantedExt.md)

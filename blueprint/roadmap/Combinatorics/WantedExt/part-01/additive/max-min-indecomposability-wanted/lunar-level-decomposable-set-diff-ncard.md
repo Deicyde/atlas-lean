@@ -11,7 +11,8 @@ Lemma 26: for `b ≥ 2` and `d > 0`, `|𝒟_b^n \ ℋ_b^n(d)| ≤ n^{2d+4} 2^{d/
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lunar Hoeffding Extremal Set](lunar-hoeffding-extremal-set.md)
+- [Lunar Level Decomposable Set](lunar-level-decomposable-set.md)
 
 ## Sources
 

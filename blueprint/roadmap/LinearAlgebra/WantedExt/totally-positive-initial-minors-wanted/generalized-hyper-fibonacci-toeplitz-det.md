@@ -11,7 +11,7 @@ For `m ≥ 1`, `det T_{m,n}^{(m-1)} > 0` for all sufficiently large `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
 
 ## Sources
 

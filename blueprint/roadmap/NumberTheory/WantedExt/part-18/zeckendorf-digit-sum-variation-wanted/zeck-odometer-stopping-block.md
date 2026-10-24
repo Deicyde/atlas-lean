@@ -15,7 +15,8 @@ Stopping condition for a block of size `m + 2`: if `x_i = 0` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

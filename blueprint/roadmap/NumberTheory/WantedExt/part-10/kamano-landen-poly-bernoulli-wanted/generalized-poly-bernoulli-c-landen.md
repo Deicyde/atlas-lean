@@ -23,7 +23,11 @@ for `1 = -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+- [Tilde](tilde.md)
+- [Generalized Multiple Polylog](generalized-multiple-polylog.md)
+- [Generalized Poly Bernoulli C](generalized-poly-bernoulli-c.md)
+- [Landen Exp Variable](landen-exp-variable.md)
 
 ## Sources
 

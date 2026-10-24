@@ -12,7 +12,12 @@ The digits of `L(x)` are the digits of `x` shifted by one: `d_{k+1}(L x) = d_{k+
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Digit Seq](luroth-digit-seq.md)
+- [Luroth Map](luroth-map.md)
+
+## Proof depends on
+
+- [Luroth Digit](luroth-digit.md)
 
 ## Sources
 

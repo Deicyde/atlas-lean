@@ -12,7 +12,9 @@ three guesses with `ρ_CS(π) = 2` is `2ⁿ - 2n - 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
+- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [Cyclic Shift Strategy](cyclic-shift-strategy.md)
 
 ## Sources
 

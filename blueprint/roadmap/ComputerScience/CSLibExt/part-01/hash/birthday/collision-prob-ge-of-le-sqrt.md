@@ -14,7 +14,11 @@ if `q ≤ √(2 N)`, the collision probability is at least `q (q - 1) / (4 N)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collision Prob](collision-prob.md)
+
+## Proof depends on
+
+- [Birthday lower bound](collision-prob-ge.md)
 
 ## Sources
 

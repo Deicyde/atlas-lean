@@ -13,6 +13,11 @@ The valid parameters, the parameter space of EM.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Params](params.md)
+- [Valid](valid.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.GaussianMixture](../../../../../../sources/v2/CSLibExt.md)

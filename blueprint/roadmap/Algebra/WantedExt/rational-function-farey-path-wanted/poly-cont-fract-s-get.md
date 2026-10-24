@@ -13,7 +13,7 @@ afterwards.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Cont Fract](poly-cont-fract.md)
 
 ## Sources
 

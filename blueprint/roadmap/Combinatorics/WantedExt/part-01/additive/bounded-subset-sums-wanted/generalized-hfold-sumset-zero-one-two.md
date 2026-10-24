@@ -12,7 +12,7 @@ lean: MetaMathlibExt.generalizedHFoldSumset_zero_one_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized HFold Sumset](generalized-hfold-sumset.md)
 
 ## Sources
 

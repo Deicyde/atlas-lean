@@ -12,7 +12,7 @@ The list is never empty when `M` is not.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online list-update algorithm on the items...](a-deterministic-online-list-update-algor.md)
 
 ## Sources
 

@@ -12,7 +12,10 @@ Proposition 14(a): the numbers of NN-inequivalent (resp. NPN-inequivalent)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bool Fun NNEquiv](is-bool-fun-nnequiv.md)
+- [Is Bool Fun NPNEquiv](is-bool-fun-npnequiv.md)
+- [Is Unate Bool Fun](is-unate-bool-fun.md)
+- [Bool Fun Class Count](bool-fun-class-count.md)
 
 ## Sources
 

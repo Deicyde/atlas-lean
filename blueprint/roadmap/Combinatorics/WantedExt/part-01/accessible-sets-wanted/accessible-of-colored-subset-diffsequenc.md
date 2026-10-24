@@ -13,7 +13,8 @@ colored in the premise are positive members of `D`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DDiff Sequence](is-ddiff-sequence.md)
+- [Is RAccessible](is-raccessible.md)
 
 ## Sources
 

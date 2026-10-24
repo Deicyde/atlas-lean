@@ -13,7 +13,8 @@ values of `L_2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof L](hof-l.md)
+- [Hof Word](hof-word.md)
 
 ## Sources
 

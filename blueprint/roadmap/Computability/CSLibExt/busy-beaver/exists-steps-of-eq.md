@@ -12,7 +12,13 @@ The step maximum is attained by a halting machine (or is zero).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Machine](machine.md)
+- [Busy Beaver Steps](busy-beaver-steps.md)
+- [Steps Of](steps-of.md)
+
+## Proof depends on
+
+- [Move](move.md)
 
 ## Sources
 

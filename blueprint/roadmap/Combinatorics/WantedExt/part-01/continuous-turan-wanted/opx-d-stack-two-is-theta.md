@@ -13,7 +13,8 @@ Corollary 5.17, first part: if `P ⊆ ℝ²` has at least two points and `opx(n,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
+- [Opx D](opx-d.md)
 
 ## Sources
 

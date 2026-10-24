@@ -12,7 +12,7 @@ Generating function: with `f(x) = 1 - ∑_{k=1}^{N-1} e_k x^k - (1 + e_N) x^N`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Block Sum Count](l-star-block-sum-count.md)
 
 ## Sources
 

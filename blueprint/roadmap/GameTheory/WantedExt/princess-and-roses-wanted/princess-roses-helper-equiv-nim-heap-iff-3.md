@@ -13,7 +13,9 @@ On region `D`, the Sprague–Grundy value of a P&R Helper position `[x, y, z]` i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [Princess Roses Helper](princess-roses-helper.md)
 
 ## Sources
 

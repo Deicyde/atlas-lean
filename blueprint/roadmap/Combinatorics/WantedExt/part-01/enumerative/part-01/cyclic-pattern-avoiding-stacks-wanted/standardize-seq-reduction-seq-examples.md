@@ -12,7 +12,8 @@ The paper's examples `st(315) = 213` and `red(16783425) = 15324`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reduction Seq](reduction-seq.md)
+- [Standardize Seq](standardize-seq.md)
 
 ## Sources
 

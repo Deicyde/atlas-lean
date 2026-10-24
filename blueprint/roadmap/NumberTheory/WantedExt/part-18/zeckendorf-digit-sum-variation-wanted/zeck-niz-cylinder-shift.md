@@ -12,7 +12,8 @@ For `r ≥ 1`, `k ≥ 2` and an admissible word `n_{k-1} ⋯ n_2` (the digits of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck NIZ](zeck-niz.md)
 
 ## Sources
 

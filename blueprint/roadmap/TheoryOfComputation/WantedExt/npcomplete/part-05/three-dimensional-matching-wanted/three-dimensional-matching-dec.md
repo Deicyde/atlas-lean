@@ -11,7 +11,21 @@ lean: MetaMathlibExt.Complexity.NPComplete.ThreeDimensionalMatching.threeDimensi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Bitstring Encoding](../../../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
+- [Bit Decode](../../../../../Computability/MathlibExt/complexity/bit-decode.md)
+- [Bit Decode bit Encode](../../../../../Computability/MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Bit Encode](../../../../../Computability/MathlibExt/complexity/bit-encode.md)
+- [Delimit](../../../../../Computability/MathlibExt/complexity/delimit.md)
+- [Undelimit](../../../../../Computability/MathlibExt/complexity/undelimit.md)
+- [Undelimit Blocks](../../../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
+- [Undelimit Blocks Aux](../../../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Three Dimensional Matching Feasible](three-dimensional-matching-feasible.md)
+- [Three Dimensional Matching Instance](three-dimensional-matching-instance.md)
+- [Well Formed](well-formed.md)
 
 ## Sources
 

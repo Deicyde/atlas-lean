@@ -12,7 +12,7 @@ The paper's improper word `1030` evaluates to `13`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Value](tribonacci-value.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.schreierMultisetCount_small
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Multiset Count](schreier-multiset-count.md)
 
 ## Sources
 

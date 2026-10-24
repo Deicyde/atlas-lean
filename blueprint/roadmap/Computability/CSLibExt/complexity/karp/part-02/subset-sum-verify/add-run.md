@@ -13,7 +13,26 @@ empty and the new sum on `B`, most significant bit on top.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Add B](add-b.md)
+- [Last F](last-f.md)
+- [Prog](prog.md)
+- [St](st.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Stmt](stmt.md)
+- [Add S](add-s.md)
+- [Carry](carry.md)
+- [Fin run](fin-run.md)
+- [Inc B](inc-b.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

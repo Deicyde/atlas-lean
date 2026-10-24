@@ -14,7 +14,7 @@ read as `∑_{j=i}^k n_j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Takagi Newdef](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/takagi-function/takagi-newdef.md)
 
 ## Sources
 

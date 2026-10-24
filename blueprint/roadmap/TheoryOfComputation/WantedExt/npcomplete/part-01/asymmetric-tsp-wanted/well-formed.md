@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Asymmetric Tsp Instance](asymmetric-tsp-instance.md)
 
 ## Sources
 

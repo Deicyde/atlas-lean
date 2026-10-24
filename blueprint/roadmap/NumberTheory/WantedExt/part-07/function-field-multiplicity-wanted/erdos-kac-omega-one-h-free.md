@@ -15,7 +15,9 @@ the real cast of `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [H Free](h-free.md)
+- [Omega Mult](omega-mult.md)
 
 ## Sources
 

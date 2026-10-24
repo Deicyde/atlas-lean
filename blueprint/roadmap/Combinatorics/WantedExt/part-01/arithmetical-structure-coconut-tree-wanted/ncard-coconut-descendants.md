@@ -13,7 +13,11 @@ Proposition 4.5: for `s ≥ 2`, `1 ≤ i ≤ p` and a smooth arithmetical struct
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coconut Ancestor](coconut-ancestor.md)
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Ballot Number](ballot-number.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

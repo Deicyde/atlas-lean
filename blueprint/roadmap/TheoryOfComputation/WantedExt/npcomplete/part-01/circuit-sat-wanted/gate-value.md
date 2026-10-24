@@ -13,6 +13,10 @@ The value of one gate, given the assignment and earlier gate values.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Circuit Ref](circuit-ref.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.CircuitSatWanted](../../../../../../sources/v2/WantedExt.md)

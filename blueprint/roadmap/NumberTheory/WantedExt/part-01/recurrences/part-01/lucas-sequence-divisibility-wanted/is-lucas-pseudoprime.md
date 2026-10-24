@@ -12,7 +12,12 @@ Lucas pseudoprime with parameters `P, Q`: a positive odd composite `N` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Lucas Pseudoprime Index](lucas-pseudoprime-index.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

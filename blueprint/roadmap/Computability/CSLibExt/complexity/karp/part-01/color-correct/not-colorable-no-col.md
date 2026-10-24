@@ -12,7 +12,7 @@ The complete graph on four vertices is not 3-colorable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Graph](../color/edge-graph.md)
 
 ## Sources
 

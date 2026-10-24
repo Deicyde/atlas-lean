@@ -12,7 +12,8 @@ Recurrence `t_k(n + 1) = ∑_{j=0}^n k (j + 1) b_{j+1} / (n + 1) · t_k(n - j)` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
+- [Triangular Log Coeff](triangular-log-coeff.md)
 
 ## Sources
 

@@ -17,7 +17,8 @@ trailing introduction text is not part of the statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Normalized Hecke Eigenform](is-normalized-hecke-eigenform.md)
+- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
 
 ## Sources
 

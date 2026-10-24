@@ -12,7 +12,7 @@ Values of `S_4(k, l)` for positive `k, l`: `0` if `l ≡ 1 (mod 4)`; otherwise `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

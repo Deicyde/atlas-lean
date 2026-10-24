@@ -13,7 +13,9 @@ occurrences with their clause index shifted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Occs](../clique/occs.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

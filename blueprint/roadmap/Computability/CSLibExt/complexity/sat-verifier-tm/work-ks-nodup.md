@@ -37,7 +37,8 @@ theorem lookupSpec : Check.LookupSpec lkH Lookup.start 8 4 := by
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](hk.md)
+- [Work Ks](work-ks.md)
 
 ## Sources
 

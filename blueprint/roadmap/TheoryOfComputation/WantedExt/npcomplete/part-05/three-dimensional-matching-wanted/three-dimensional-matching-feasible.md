@@ -11,7 +11,7 @@ A perfect matching of triples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Dimensional Matching Instance](three-dimensional-matching-instance.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ of opposite signs: if `n` has three prime factors and is `D`- and `D'`-Carmichae
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DCarmichael](is-dcarmichael.md)
 
 ## Sources
 

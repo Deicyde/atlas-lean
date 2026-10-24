@@ -12,7 +12,10 @@ finitely many disjoint `L`-blocks form a Zeckendorf collection with `β̂^n = θ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Immediate Predecessor](is-immediate-predecessor.md)
+- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
+- [Periodic Theta](periodic-theta.md)
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
 
 ## Sources
 

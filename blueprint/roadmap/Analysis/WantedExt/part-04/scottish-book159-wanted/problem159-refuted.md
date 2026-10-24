@@ -19,7 +19,7 @@ quantifier over `x`, as the Ad 159 argument uses the maximum over
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem159 Claim](scottish-book-problem159-claim.md)
 
 ## Sources
 

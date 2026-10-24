@@ -21,7 +21,7 @@ and `-` for `i ≡ 2, 3 (mod 4)`. The paper's coprimality hypothesis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Cont Fract](poly-cont-fract.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ given by its recursion: `p ∈ P` iff `p` has a move and every move from `p` lea
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Rotation Move](cube-rotation-move.md)
 
 ## Sources
 

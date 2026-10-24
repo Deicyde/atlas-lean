@@ -14,6 +14,10 @@ Partial sums of bi-brackets: for `[(k₁, d₁), …, (kᵣ, dᵣ)]` and a bound
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eulerian QSeries](eulerian-qseries.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,12 @@ lean: Cslib.MachineLearning.Bayesian.isMAP_iff_isMLE_of_uniform
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MAP](is-map.md)
+- [Is MLE](is-mle.md)
+
+## Proof depends on
+
+- [Is MAP iff](is-map-iff.md)
 
 ## Sources
 

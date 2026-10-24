@@ -12,7 +12,21 @@ lean: Cslib.MachineLearning.AdaBoost.trainErr_le_prod_sqrt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weak Learner](weak-learner.md)
+- [Eps](eps.md)
+- [Train Err](train-err.md)
+
+## Proof depends on
+
+- [Alpha](alpha.md)
+- [Dist](dist.md)
+- [Err](err.md)
+- [Hyp](hyp.md)
+- [Normalizer](normalizer.md)
+- [The normalizer of a round is `2 √(ε (1 - ε))`](normalizer-eq.md)
+- [The training error is at most the product of the normalizers](train-err-le-prod.md)
+- [Zee](zee.md)
+- [Sign](../perceptron/sign.md)
 
 ## Sources
 

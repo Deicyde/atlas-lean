@@ -14,6 +14,10 @@ unsums `a(1) < a(2) < ⋯` of OEIS A260317; this is OEIS A260311 shifted by one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Upper Wythoff Unsum](is-upper-wythoff-unsum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

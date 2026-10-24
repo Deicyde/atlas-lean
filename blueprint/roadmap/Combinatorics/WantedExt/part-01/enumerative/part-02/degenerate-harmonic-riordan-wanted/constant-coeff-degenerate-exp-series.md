@@ -12,7 +12,7 @@ The constant term of `e_λ(t)` is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Exp Series](degenerate-exp-series.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Two Sat Instance](min-two-sat-instance.md)
+
+## Proof depends on
+
+- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

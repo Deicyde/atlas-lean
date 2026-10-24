@@ -12,7 +12,7 @@ Same `G`, `c`, `β`; `A ⊆ {1, …, β}` with `p^{e_1 - c} ∈ A`. If `β ∣ p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

@@ -17,7 +17,13 @@ replaced by an existential.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDelay](base-pdelay.md)
+- [Base PDigit Average](base-pdigit-average.md)
+- [Base PPeriod](base-pperiod.md)
+- [Delta Zero Sum Correction](delta-zero-sum-correction.md)
+- [Higher ANumber Delta](higher-anumber-delta.md)
+- [Prime To PDen](prime-to-pden.md)
+- [Tau Den](tau-den.md)
 
 ## Sources
 

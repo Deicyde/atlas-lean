@@ -13,7 +13,16 @@ to `S` and to `S'` are in `r` and in `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Over](is-over-2.md)
+- [Tuple](tuple.md)
+- [Is Over](is-over.md)
+- [Restrict](restrict.md)
+- [Join](join.md)
+
+## Proof depends on
+
+- [Compatible](compatible.md)
+- [Merge](merge.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The empty set is sum-free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Free Set](is-sum-free-set.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ A unary read strictly shortens the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
 
 ## Sources
 

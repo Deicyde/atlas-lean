@@ -13,7 +13,8 @@ the stack dynamics and is not stated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
+- [Reduction Seq](reduction-seq.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ Dickson pseudoprime of the second kind: positive odd composite `N`, `gcd(N, QD) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Lucas Pseudoprime Index](lucas-pseudoprime-index.md)
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

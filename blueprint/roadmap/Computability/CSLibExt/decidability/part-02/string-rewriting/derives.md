@@ -11,7 +11,11 @@ lean: Cslib.Decidability.Rewriting.Derives
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](rule.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

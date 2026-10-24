@@ -16,7 +16,7 @@ S. Mazur, S. Ulam, Problem 108 of the Scottish Book; affirmative answer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Schauder Basis](is-schauder-basis.md)
 
 ## Sources
 

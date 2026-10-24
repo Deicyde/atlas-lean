@@ -11,7 +11,7 @@ The arcs queued after the domain of `x` shrank while revising `(x, y)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
 
 ## Sources
 

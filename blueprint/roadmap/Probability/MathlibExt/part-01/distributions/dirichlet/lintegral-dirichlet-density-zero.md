@@ -12,7 +12,8 @@ The Dirichlet integral in dimension `0`: one coordinate, density `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet Density](dirichlet-density.md)
+- [Multi Beta](multi-beta.md)
 
 ## Sources
 

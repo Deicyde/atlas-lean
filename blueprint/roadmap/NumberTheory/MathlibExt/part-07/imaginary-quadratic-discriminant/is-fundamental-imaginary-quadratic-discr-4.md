@@ -12,6 +12,7 @@ A fundamental imaginary quadratic discriminant satisfies the canonical predicate
 
 ## Depends on
 
+- [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
 - [Is Fundamental Discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
 
 ## Sources

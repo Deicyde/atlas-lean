@@ -12,7 +12,12 @@ For `k ≤ n` the encoder is injective on polynomials of degree less than `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode](encode.md)
+
+## Proof depends on
+
+- [Encode Lin](encode-lin.md)
+- [Le hamming Norm encode](le-hamming-norm-encode.md)
 
 ## Sources
 

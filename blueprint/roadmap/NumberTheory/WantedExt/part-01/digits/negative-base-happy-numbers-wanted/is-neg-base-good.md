@@ -14,6 +14,11 @@ A finite set `T` is `(2, b)`-good if for each `u ∈ U_{2,b}` there exist `n, k 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Neg Base Sq Digit Cycles](neg-base-sq-digit-cycles.md)
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.NegativeBaseHappyNumbersWanted](../../../../../../sources/v2/WantedExt.md)

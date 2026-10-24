@@ -16,7 +16,7 @@ $P \in E(\overline{\mathbb{F}}_p)$ with $p^r P = 0$ is $P = 0$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Supersingular](is-supersingular.md)
 
 ## Sources
 

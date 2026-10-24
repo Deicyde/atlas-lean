@@ -17,6 +17,12 @@ are principal `Complex.log` values.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [L Generalized Fibonacci Coefficient](l-generalized-fibonacci-coefficient.md)
+- [L Generalized Fibonacci Other Roots](l-generalized-fibonacci-other-roots.md)
+- [L Generalized Fibonacci Zeta Pole](l-generalized-fibonacci-zeta-pole.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedFibonacciZetaWanted](../../../../../sources/v2/WantedExt.md)

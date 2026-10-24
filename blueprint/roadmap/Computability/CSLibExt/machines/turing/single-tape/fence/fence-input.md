@@ -12,7 +12,7 @@ on the right: the left wall, `i` cells `lpad`, the word, `j` cells `pad` and the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
 
 ## Sources
 

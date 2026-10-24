@@ -15,7 +15,7 @@ Lemma 3), consistent with the record's `√2e > 1.21` remark (`2/√e ≈ 1.213`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Multiples Interval Length](../../../MathlibExt/part-04/distinct-multiples-interval/distinct-multiples-interval-length.md)
 
 ## Sources
 

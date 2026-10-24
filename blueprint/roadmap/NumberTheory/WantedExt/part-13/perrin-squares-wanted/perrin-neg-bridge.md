@@ -14,7 +14,8 @@ satisfies the Perrin recurrence across `0`: `R_2 = R_0 + R_{-1}` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perrin Neg](perrin-neg.md)
+- [Perrin Sequence](../../../MathlibExt/part-09/perrin-sequence.md)
 
 ## Sources
 

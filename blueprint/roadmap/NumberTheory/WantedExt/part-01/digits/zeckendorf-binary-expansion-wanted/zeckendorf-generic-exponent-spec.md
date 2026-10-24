@@ -12,7 +12,7 @@ When some positive integer satisfies the defining inequality, `p` does.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeckendorf Generic Exponent](zeckendorf-generic-exponent.md)
 
 ## Sources
 

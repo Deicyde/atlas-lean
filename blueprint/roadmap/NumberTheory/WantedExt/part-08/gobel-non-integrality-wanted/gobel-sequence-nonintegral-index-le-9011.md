@@ -16,7 +16,7 @@ Journal of Integer Sequences 29 (2026), Article 26.3.8, Theorem 26.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](../../part-09/gobel-sequence-wanted/gobel-sequence.md)
 
 ## Sources
 

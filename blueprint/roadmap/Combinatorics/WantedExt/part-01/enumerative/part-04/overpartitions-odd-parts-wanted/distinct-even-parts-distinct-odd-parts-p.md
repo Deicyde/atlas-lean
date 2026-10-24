@@ -12,7 +12,10 @@ Characteristic values `ped(0) = pod(0) = P_2(0) = q(0) = 1` (the empty partition
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Even Parts Count](distinct-even-parts-count.md)
+- [Distinct Odd Parts Count](distinct-odd-parts-count.md)
+- [Distinct Parts Bipartition Count](distinct-parts-bipartition-count.md)
+- [Parts Not Two Mod Four Count](parts-not-two-mod-four-count.md)
 
 ## Sources
 

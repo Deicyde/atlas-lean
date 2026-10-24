@@ -12,7 +12,7 @@ In characteristic 2 (e.g. over `F₂`) the encoder appends the remainder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode](encode.md)
 
 ## Sources
 

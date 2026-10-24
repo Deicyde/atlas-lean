@@ -12,7 +12,7 @@ The log-density: `log N(x | μ, v I) = -(d / 2) log (2 π v) - ‖x - μ‖² / 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iso Gauss PDF](iso-gauss-pdf.md)
 
 ## Sources
 

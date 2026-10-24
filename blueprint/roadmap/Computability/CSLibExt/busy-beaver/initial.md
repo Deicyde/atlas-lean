@@ -11,7 +11,11 @@ The initial configuration on the blank tape.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+
+## Proof depends on
+
+- [Initial State](initial-state.md)
 
 ## Sources
 

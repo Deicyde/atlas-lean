@@ -12,7 +12,7 @@ Constant sequences are binomid indices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Binomid Index](is-binomid-index.md)
 
 ## Sources
 

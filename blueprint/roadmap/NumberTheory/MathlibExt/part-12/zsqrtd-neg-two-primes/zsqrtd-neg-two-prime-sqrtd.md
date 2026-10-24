@@ -14,6 +14,10 @@ lean: Zsqrtd.NegTwo.zsqrtd_neg_two_prime_sqrtd
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zsqrtd neg two prime of nat Abs norm prime](zsqrtd-neg-two-prime-of-nat-abs-norm-pri.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZsqrtdNegTwoPrimes](../../../../../sources/v2/MathlibExt.md)

@@ -11,7 +11,11 @@ A clause is its slots followed by the terminator `00`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clause](clause.md)
+
+## Proof depends on
+
+- [Encode Slot](encode-slot.md)
 
 ## Sources
 

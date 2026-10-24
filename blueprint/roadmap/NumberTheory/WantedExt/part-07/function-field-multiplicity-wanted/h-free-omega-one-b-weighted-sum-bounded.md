@@ -13,7 +13,7 @@ coefficients of `B_{1,S_h}(u, z)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Free Omega One B](h-free-omega-one-b.md)
 
 ## Sources
 

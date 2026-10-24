@@ -13,7 +13,8 @@ existence of a proper coloring of the edges by a function on `ℕ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col Proper](col-proper.md)
+- [Edge Graph](../color/edge-graph.md)
 
 ## Sources
 

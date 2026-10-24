@@ -11,7 +11,7 @@ For compatible semiprimes `pq` and `rs`, all of `p, q, r, s` are odd.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
 
 ## Sources
 

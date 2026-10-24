@@ -13,7 +13,8 @@ training block.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Joint Cov](joint-cov.md)
+- [Kernel Matrix](kernel-matrix.md)
 
 ## Sources
 

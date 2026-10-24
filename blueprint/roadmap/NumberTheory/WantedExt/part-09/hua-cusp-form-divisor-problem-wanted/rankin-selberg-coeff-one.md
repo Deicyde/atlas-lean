@@ -12,7 +12,12 @@ lean: MetaMathlibExt.rankinSelbergCoeff_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
+- [Rankin Selberg Coeff](rankin-selberg-coeff.md)
+
+## Proof depends on
+
+- [Rankin Selberg Coeff apply](rankin-selberg-coeff-apply.md)
 
 ## Sources
 

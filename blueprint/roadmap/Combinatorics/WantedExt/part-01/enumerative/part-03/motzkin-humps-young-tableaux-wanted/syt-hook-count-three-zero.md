@@ -12,7 +12,14 @@ The table value `SYT_0(2,1;3) = 1` for the faithful finite-cell encoding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syt Hook Count](syt-hook-count.md)
+
+## Proof depends on
+
+- [Has First Two Row Difference](has-first-two-row-difference.md)
+- [Is In Two One Hook](is-in-two-one-hook.md)
+- [Is Standard Young Tableau](is-standard-young-tableau.md)
+- [Tableau Row Length](tableau-row-length.md)
 
 ## Sources
 

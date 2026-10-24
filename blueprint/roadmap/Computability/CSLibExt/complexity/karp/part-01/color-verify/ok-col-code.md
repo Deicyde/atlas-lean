@@ -12,7 +12,8 @@ Codes of colors are valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Ok Col](ok-col.md)
 
 ## Sources
 

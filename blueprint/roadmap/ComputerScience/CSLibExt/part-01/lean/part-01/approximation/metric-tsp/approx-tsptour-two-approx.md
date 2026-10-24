@@ -13,7 +13,22 @@ most twice any tour, in particular an optimal one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+- [Is Metric Cost](is-metric-cost.md)
+- [Is Min Spanning](is-min-spanning.md)
+- [Is Tour](is-tour.md)
+- [Approx TSPTour](approx-tsptour.md)
+- [Tour Cost](tour-cost.md)
+
+## Proof depends on
+
+- [Preorder](preorder.md)
+- [Weight](weight.md)
+- [Preorder Walk](preorder-walk.md)
+- [Preorder Walk Aux](preorder-walk-aux.md)
+- [Preorder Walk Aux ret](preorder-walk-aux-ret.md)
+- [Tour Cost preorder le](tour-cost-preorder-le.md)
+- [Weight le tour Cost](weight-le-tour-cost.md)
 
 ## Sources
 

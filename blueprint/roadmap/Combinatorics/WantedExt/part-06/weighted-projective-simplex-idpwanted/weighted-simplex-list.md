@@ -14,6 +14,10 @@ The simplex attached to a list of weights, using the list's canonical
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted Simplex](weighted-simplex.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

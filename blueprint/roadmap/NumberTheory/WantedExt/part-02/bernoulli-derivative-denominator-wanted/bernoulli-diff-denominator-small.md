@@ -12,7 +12,7 @@ First values `𝔻_1, …, 𝔻_10 = 1, 1, 2, 1, 6, 2, 6, 3, 10, 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator](bernoulli-diff-denominator.md)
 
 ## Sources
 

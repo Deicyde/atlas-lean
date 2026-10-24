@@ -13,7 +13,8 @@ the inputs of `s` (`d̂` reaches `d`). The paper's standing assumption `1 < n < 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
+- [Is Permutiple String](is-permutiple-string.md)
 
 ## Sources
 

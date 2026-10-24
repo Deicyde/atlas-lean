@@ -12,7 +12,7 @@ The full board is terminal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Terminal](placement-terminal.md)
 
 ## Sources
 

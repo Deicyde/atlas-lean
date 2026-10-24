@@ -14,6 +14,10 @@ an element of `Q` (a `k`-subset has `k ≤ n`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Restricted Combination Count](restricted-combination-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RestrictedCombinationsWanted](../../../../../../../sources/v2/WantedExt.md)

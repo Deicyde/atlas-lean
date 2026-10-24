@@ -15,7 +15,8 @@ lean: MetaMathlibExt.frobeniusPartitionRepCount_four_two_dissection
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

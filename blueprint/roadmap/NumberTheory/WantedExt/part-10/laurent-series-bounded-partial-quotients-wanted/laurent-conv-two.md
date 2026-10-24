@@ -12,7 +12,9 @@ The recursions of the convergents: `P₁ = b₁ b₀ + 1` and `Q₁ = b₁`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Conv Den](laurent-conv-den.md)
+- [Laurent Conv Num](laurent-conv-num.md)
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
 
 ## Sources
 

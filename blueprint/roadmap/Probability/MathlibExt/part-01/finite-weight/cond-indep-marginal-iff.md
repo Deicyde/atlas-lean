@@ -13,7 +13,12 @@ Conditional independence among variables in `W` is the same for `p` and for its
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond Indep](cond-indep.md)
+- [Marginal](marginal.md)
+
+## Proof depends on
+
+- [Marginal marginal](marginal-marginal.md)
 
 ## Sources
 

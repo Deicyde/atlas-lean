@@ -13,7 +13,8 @@ coloring sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Dyck Path Count](colored-dyck-path-count.md)
+- [Colored Polygon Dissection Count](colored-polygon-dissection-count.md)
 
 ## Sources
 

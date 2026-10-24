@@ -13,7 +13,15 @@ reject if `z` (the block ends in `false`) and run `done` otherwise. On `true`, p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stmt](stmt.md)
+
+## Proof depends on
+
+- [K](k.md)
+- [Lab](lab.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

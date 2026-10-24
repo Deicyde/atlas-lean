@@ -12,7 +12,7 @@ The `n`-th non-sum-of-`k`-th-powers for `k > 1` (values `âˆ‘_{i=1}^j i^k`, `j â‰
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

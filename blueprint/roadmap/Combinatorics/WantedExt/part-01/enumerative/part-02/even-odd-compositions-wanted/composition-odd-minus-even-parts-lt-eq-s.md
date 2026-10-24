@@ -15,7 +15,7 @@ solution (`ℓ ≤ m` and `i, j ≤ n + (k-1)(m+1)` whenever the summand is nonz
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Odd Minus Even](composition-odd-minus-even.md)
 
 ## Sources
 

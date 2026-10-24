@@ -14,6 +14,10 @@ every partial sum is nonnegative and its total vertical displacement is `h`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Motzkin Step](motzkin-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MotzkinHumpsYoungTableauxWanted](../../../../../../../sources/v2/WantedExt.md)

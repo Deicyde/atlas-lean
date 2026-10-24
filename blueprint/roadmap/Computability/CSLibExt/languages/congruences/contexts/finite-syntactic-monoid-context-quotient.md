@@ -12,7 +12,18 @@ Finite syntactic monoids are closed under inserting words into fixed contexts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Context Quotient](context-quotient.md)
+
+## Proof depends on
+
+- [Context Quotient](context-quotient-2.md)
+- [Context Accept](context-accept.md)
+- [Finite syntactic Monoid of recognizer](../recognition/finite-syntactic-monoid-of-recognizer.md)
+- [Recognizes syntactic Morphism](../recognition/recognizes-syntactic-morphism.md)
+- [Syntactic Accept](../syntactic/syntactic-accept.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

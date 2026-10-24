@@ -14,7 +14,7 @@ Kiers–O'Neill–Ponomarenko: for the compound sequence `C` of `a_1, …, a_n` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compound Sequence](compound-sequence.md)
 
 ## Sources
 

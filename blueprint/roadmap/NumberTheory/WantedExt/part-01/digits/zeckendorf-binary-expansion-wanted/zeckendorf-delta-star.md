@@ -16,6 +16,10 @@ and Equation (12) evaluate `δ*` on `[ω̃, 1)` as `δ1*`, and the proof of Theo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zeckendorf Delta Star One](zeckendorf-delta-star-one.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

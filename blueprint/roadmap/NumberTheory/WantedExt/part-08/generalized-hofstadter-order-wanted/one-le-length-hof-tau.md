@@ -12,7 +12,7 @@ Each letter is replaced by a nonempty word under `τ_k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Tau](hof-tau.md)
 
 ## Sources
 

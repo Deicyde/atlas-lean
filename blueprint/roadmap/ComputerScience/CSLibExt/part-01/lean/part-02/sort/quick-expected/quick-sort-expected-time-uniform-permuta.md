@@ -16,7 +16,21 @@ between `a` and `b` (CLRS Section 7.4).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Between Count](between-count.md)
+- [Expected Time](../../random/expected-cost/expected-time.md)
+- [Quick Sort](../quick/quick-sort.md)
+- [Uniform Permutation](../../random/expected-cost/uniform-permutation.md)
+
+## Proof depends on
+
+- [Three Way Partition](../partition/three-way-partition.md)
+- [Expected Time uniform Permutation](../../random/expected-cost/expected-time-uniform-permutation.md)
+- [Partition3](../partition/partition3.md)
+- [Partition3 above eq filter](../partition/partition3-above-eq-filter.md)
+- [Partition3 below eq filter](../partition/partition3-below-eq-filter.md)
+- [Partition3 equal eq filter](../partition/partition3-equal-eq-filter.md)
+- [Partition3 length](../partition/partition3-length.md)
+- [Partition3 time](../partition/partition3-time.md)
 
 ## Sources
 

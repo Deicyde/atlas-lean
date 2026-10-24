@@ -14,7 +14,8 @@ Modulo p*, INTEGERS 26 (2026), Article A22, Lemma 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Trinomial](central-trinomial.md)
+- [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

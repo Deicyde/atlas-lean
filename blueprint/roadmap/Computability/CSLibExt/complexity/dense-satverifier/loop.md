@@ -12,7 +12,15 @@ Generic loop: pop `s`; while the popped symbol `x` has `g x = some y`, push `y` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
+- [Lab](lab.md)
+- [Stmt](stmt.md)
+- [W](w.md)
+
+## Proof depends on
+
+- [St](st.md)
+- [Γ](untitled.md)
 
 ## Sources
 

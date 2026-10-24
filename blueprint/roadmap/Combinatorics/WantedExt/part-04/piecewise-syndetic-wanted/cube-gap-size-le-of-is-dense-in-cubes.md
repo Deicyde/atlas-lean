@@ -12,7 +12,9 @@ If `S` is `d`-dense (`d ≥ 1`) in a subcube containing `S`, then `gs(S) ≤ d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dense In Cubes](is-dense-in-cubes.md)
+- [Cube Gap Size](cube-gap-size.md)
+- [Lattice Cube](lattice-cube.md)
 
 ## Sources
 

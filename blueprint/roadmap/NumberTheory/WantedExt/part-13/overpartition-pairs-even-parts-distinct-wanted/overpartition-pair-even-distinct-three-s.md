@@ -17,7 +17,7 @@ dropped.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Pair Even Distinct](overpartition-pair-even-distinct.md)
 
 ## Sources
 

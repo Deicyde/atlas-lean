@@ -12,7 +12,7 @@ The recurrence `a_{p,q,n} = a_{p,q,n-q} + a_{p,q,n-p-q}` for `n â‰¥ p + q`, `q â
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Padovan](schreier-padovan.md)
 
 ## Sources
 

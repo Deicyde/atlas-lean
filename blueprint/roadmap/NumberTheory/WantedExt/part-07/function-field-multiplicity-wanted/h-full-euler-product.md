@@ -14,6 +14,12 @@ irreducible `P` taken factor by factor (Equation (46)).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [H Full Root](h-full-root.md)
+- [Monic Irreducible](monic-irreducible.md)
+- [Poly Norm](poly-norm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

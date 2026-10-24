@@ -12,7 +12,7 @@ with `t^{(r)}_ℓ(n) = ∑_{k=0}^{n} k^ℓ a^{(r)}_k` (so `t^{(r)}_0(n) = a^{(r+
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypersequence](hypersequence.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Definition 1 recurrence, for `n ≤ -2` and `k ≥ 1`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+- [Neg Pos](neg-pos.md)
+- [Weight](weight.md)
+- [Weight'](weight-2.md)
+
+## Proof depends on
+
+- [Neg Pos Aux](neg-pos-aux.md)
 
 ## Sources
 

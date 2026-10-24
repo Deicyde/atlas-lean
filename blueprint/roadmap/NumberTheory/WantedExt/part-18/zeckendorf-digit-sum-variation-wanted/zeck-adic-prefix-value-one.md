@@ -12,7 +12,7 @@ lean: MetaMathlibExt.zeckAdicPrefixValue_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic Prefix Value](zeck-adic-prefix-value.md)
 
 ## Sources
 

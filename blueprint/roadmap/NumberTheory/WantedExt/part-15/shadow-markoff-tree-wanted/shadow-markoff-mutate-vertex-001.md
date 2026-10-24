@@ -14,7 +14,8 @@ the paper's figure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shadow Markoff Mutate](shadow-markoff-mutate.md)
+- [Shadow Markoff Root](shadow-markoff-root.md)
 
 ## Sources
 

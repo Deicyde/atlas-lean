@@ -13,7 +13,11 @@ in each gadget the first arrival takes the vertex the second one does not.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gadgets Disjoint](gadgets-disjoint.md)
+- [Is Perfect](is-perfect.md)
+- [Online Matcher](online-matcher.md)
+- [Adversary](adversary.md)
+- [Adversary Opt](adversary-opt.md)
 
 ## Sources
 

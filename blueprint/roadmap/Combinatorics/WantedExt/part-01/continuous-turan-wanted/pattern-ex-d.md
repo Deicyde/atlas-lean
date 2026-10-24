@@ -15,6 +15,10 @@ matrix extremal function `ex(n, M_P, d)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cells Contain Pattern D](cells-contain-pattern-d.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ContinuousTuranWanted](../../../../../sources/v2/WantedExt.md)

@@ -20,7 +20,9 @@ four `1`-variable functions, then `[P]_1 = 4` but the sum is `0 + 2 = 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bool Fun Var Perm Equiv](is-bool-fun-var-perm-equiv.md)
+- [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
+- [Bool Fun Class Count](bool-fun-class-count.md)
 
 ## Sources
 

@@ -14,7 +14,9 @@ divides `n`), `A` is multiplicative in the strong sense
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Divisors](square-split-divisors.md)
+- [Square Split U](square-split-u.md)
+- [Square Split V](square-split-v.md)
 
 ## Sources
 

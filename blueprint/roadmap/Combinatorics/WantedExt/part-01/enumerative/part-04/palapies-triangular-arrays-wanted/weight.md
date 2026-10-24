@@ -11,7 +11,7 @@ The first weight `α(n + 1) + βk + γ`, the divisor in Definition 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.not_isWellBased_one_three_four
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Well Based](is-well-based.md)
 
 ## Sources
 

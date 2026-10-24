@@ -12,7 +12,16 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.init_obl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [Init obligation, input pinned](init-obl.md)
+- [The init family](init-family.md)
+- [Cap H](../part-05/cap-h.md)
+- [Depth](../part-01/depth.md)
+- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+
+## Proof depends on
+
+- [Init semantics](init-row0.md)
 
 ## Sources
 

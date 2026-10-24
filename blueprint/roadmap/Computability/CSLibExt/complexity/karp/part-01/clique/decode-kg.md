@@ -13,6 +13,10 @@ Parse the two unary numbers; the rest is taken as the pair bits.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.Clique](../../../../../../../sources/v2/CSLibExt.md)

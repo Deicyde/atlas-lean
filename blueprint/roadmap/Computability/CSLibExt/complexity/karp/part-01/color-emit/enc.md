@@ -12,7 +12,14 @@ OR output `r` and the first-literal flag `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](../color/col-st.md)
+- [MS](ms.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [D Tok](d-tok.md)
+- [Out](out.md)
 
 ## Sources
 

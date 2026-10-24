@@ -14,7 +14,7 @@ For `k ≥ 1` (with `α = α_k`, `α' = α_{k+1}`): `F_k <_∞ F_{k+1}`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

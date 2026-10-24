@@ -12,7 +12,7 @@ Outer measure is the fraction of outcomes belonging to the event.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Fintype](uniform-fintype.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ lean: MetaMathlibExt.sum_pow_mul_choose_mul_lucasNumber
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

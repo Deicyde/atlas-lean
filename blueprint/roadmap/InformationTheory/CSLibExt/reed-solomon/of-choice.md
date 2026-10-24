@@ -11,7 +11,11 @@ A key-equation solver by choice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key Solver](key-solver.md)
+
+## Proof depends on
+
+- [Is Key Solution](is-key-solution.md)
 
 ## Sources
 

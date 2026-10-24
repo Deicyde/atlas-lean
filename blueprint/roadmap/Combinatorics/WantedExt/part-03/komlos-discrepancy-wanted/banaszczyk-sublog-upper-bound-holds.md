@@ -11,7 +11,7 @@ Source: optimization catalogue C24a, line 36, its sublogarithmic comment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Banaszczyk Sublog Upper Bound](banaszczyk-sublog-upper-bound.md)
 
 ## Sources
 

@@ -12,7 +12,18 @@ lean: Cslib.Decidability.Grammar.manyOneReducible_pcp_isAmbiguous
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [PCP](../pcp/pcp.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Is Ambiguous](../../../languages/context-free/part-01/ambiguity/is-ambiguous.md)
+
+## Proof depends on
+
+- [Amb Grammar](amb-grammar.md)
+- [`ambGrammar P` is ambiguous exactly when `P` has a solution](is-ambiguous-iff-pcp.md)
+- [`ambGrammar P` is ambiguous exactly when `P` has a solution](primrec-amb-grammar.md)
 
 ## Sources
 

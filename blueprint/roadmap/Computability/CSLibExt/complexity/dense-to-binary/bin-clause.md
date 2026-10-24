@@ -11,7 +11,8 @@ Slot `j` of `c` becomes the literal on variable `2 ^ (k₀ + #slots after j) - 1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clause](../dense-sat/clause.md)
+- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

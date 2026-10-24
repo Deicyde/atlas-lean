@@ -12,7 +12,8 @@ The commander starts from the state given by its order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
+- [Init State](init-state.md)
 
 ## Sources
 

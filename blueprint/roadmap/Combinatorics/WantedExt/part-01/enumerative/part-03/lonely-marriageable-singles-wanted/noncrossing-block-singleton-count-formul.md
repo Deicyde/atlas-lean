@@ -14,7 +14,8 @@ denominator vanishes only for `m = n + 1`, where `binom(n, m) = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Block Singleton Count](noncrossing-block-singleton-count.md)
+- [Zero Extended Choose](zero-extended-choose.md)
 
 ## Sources
 

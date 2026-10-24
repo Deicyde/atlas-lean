@@ -13,7 +13,13 @@ end. Fresh numbers decrease along the chain (they are handed out from its end).
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Fresh](fresh.md)
+- [Ren Lit](ren-lit.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ runs led by `1, 3, 3, 4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Flattened Word](is-flattened-word.md)
+- [Word Run Count](word-run-count.md)
+
+## Proof depends on
+
+- [Word Run Start](word-run-start.md)
 
 ## Sources
 

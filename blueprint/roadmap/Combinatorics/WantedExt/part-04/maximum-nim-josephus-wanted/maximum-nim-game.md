@@ -15,7 +15,7 @@ deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
 
 ## Sources
 

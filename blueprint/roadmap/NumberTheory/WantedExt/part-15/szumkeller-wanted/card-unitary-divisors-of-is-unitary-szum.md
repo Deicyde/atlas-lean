@@ -13,7 +13,8 @@ respectively.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unitary SZumkeller](is-unitary-szumkeller.md)
+- [Unitary Divisors](../../../MathlibExt/part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Ward's identity (7): `{m, m - k} = ∑_{p=0}^{k} {{k + p, p}} binom(m, k + p)` f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Assoc Stirling Second](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
 
 ## Sources
 

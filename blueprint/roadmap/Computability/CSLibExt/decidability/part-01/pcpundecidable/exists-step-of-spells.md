@@ -12,7 +12,17 @@ lean: Cslib.Decidability.TMRewriting.exists_step_of_spells
 
 ## Depends on
 
-This node has no prerequisites.
+- [Step](../../part-02/string-rewriting/step.md)
+- [Spells](spells.md)
+- [TMSym](tmsym.md)
+- [Rules](rules.md)
+
+## Proof depends on
+
+- [Rule](../../part-02/string-rewriting/rule.md)
+- [Erase Rules](erase-rules.md)
+- [Rules For](rules-for.md)
+- [Spell](spell.md)
 
 ## Sources
 

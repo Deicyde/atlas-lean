@@ -15,7 +15,18 @@ tasks, the at most `D` incomplete ones at least one each.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](../brent/dag.md)
+- [Schedule](../brent/schedule.md)
+- [Greedy](greedy.md)
+- [Length](../brent/length.md)
+- [Span](../brent/span.md)
+
+## Proof depends on
+
+- [Incomplete length le](incomplete-length-le.md)
+- [Load](load.md)
+- [A greedy schedule never idles](one-le-load.md)
+- [Sum load](sum-load.md)
 
 ## Sources
 

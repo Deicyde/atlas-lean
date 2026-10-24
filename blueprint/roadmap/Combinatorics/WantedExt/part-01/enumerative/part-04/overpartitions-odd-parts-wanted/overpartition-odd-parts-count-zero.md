@@ -12,7 +12,13 @@ Characteristic value `po(0) = 1` (the empty overpartition).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+
+## Proof depends on
+
+- [Overpartition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
+- [Eq of zero](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/eq-of-zero.md)
+- [Of Partition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/of-partition.md)
 
 ## Sources
 

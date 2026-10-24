@@ -12,7 +12,11 @@ A bijection of alphabets reflects regularity as well as preserving it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alphabet Preimage](alphabet-preimage.md)
+
+## Proof depends on
+
+- [Alphabet Preimage](alphabet-preimage-2.md)
 
 ## Sources
 

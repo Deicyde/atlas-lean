@@ -12,7 +12,7 @@ a large Zsigmondy prime for `(a, b, n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Large Zsigmondy Prime](is-large-zsigmondy-prime.md)
 
 ## Sources
 

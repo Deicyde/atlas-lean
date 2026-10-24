@@ -11,7 +11,11 @@ Pairs of listed states, coded by `Nat.pair`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+
+## Proof depends on
+
+- [States](../../../automata/da/encoded-dfa/states.md)
 
 ## Sources
 

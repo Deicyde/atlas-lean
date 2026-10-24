@@ -13,7 +13,7 @@ that divergence statement and `Nat.iterate` is superscript iteration; no deviati
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim H](maximum-nim-h.md)
 
 ## Sources
 

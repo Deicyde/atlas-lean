@@ -15,7 +15,7 @@ Increasing-sequence formula for `P_n(q)/q^{n-1} = P̄_n(q + q⁻¹)` (in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
 
 ## Sources
 

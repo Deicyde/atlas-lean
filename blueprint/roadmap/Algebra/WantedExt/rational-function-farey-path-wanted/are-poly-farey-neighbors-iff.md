@@ -13,7 +13,8 @@ Theorem 2: two fractions `u / v`, `h / k` of `𝓕ₙ` are neighbours if and onl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Are Poly Farey Neighbors](are-poly-farey-neighbors.md)
+- [Poly Farey Series](poly-farey-series.md)
 
 ## Sources
 

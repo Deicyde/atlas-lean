@@ -11,7 +11,8 @@ lean: MetaMathlibExt.downUpOddGF_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Down Up Even GF](down-up-even-gf.md)
+- [Down Up Odd GF](down-up-odd-gf.md)
 
 ## Sources
 

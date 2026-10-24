@@ -11,7 +11,13 @@ Cost of one iteration of the time loop.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [Num Vars](../family/num-vars.md)
+- [Row W](../family/row-w.md)
+- [K Body B](k-body-b.md)
 
 ## Sources
 

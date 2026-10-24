@@ -15,6 +15,10 @@ multiplicity; either alternating orientation is accepted.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [List Alternates](list-alternates.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.homogenizedCyclotomic_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Homogenized Cyclotomic](homogenized-cyclotomic.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ alternating row sums `∑_k (-1)^k b_{j,k}(n) = (n + 2)^(j̄)` (3.11), with the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyperseq B](hyperseq-b.md)
 
 ## Sources
 

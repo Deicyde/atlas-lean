@@ -12,7 +12,16 @@ lean: Cslib.IMP.star_swap_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [HAssertion](../separation-logic/hassertion.md)
+- [Entails](../separation-logic/entails.md)
+- [Star](../separation-logic/star.md)
+
+## Proof depends on
+
+- [Heap](../heap/heap.md)
+- [Disjoint](../heap/disjoint.md)
+- [Symm](../heap/symm.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

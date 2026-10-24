@@ -12,7 +12,7 @@ Every interval `[a/b, c/d]` of the `n`-th Stern-Brocot generation `F_n` has leng
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Generation](farey-generation.md)
 
 ## Sources
 

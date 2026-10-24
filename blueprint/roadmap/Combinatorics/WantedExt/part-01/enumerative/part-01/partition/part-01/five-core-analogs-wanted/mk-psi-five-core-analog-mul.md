@@ -12,7 +12,12 @@ Generating function of `b̄_5`: `(∑ b̄_5(n) q^n) ψ(-q) = ψ^5(-q^5)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Psi Five Core Analog](psi-five-core-analog.md)
+- [Ramanujan Theta Pow](ramanujan-theta-pow.md)
+
+## Proof depends on
+
+- [Constant Coeff ramanujan Theta Pow](constant-coeff-ramanujan-theta-pow.md)
 
 ## Sources
 

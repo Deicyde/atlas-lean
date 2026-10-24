@@ -13,7 +13,20 @@ schemes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](../functional-dependencies/derives.md)
+- [FD](../functional-dependencies/fd.md)
+- [Lossless Join](lossless-join.md)
+
+## Proof depends on
+
+- [Holds In](../functional-dependencies/holds-in.md)
+- [Is Over](../relational-algebra/is-over-2.md)
+- [Satisfies On](satisfies-on.md)
+- [Tuple](../relational-algebra/tuple.md)
+- [Join](../relational-algebra/join.md)
+- [Join comm](../relational-algebra/join-comm.md)
+- [Heath's theorem](join-project-eq-of-holds-in.md)
+- [Project](../relational-algebra/project.md)
 
 ## Sources
 

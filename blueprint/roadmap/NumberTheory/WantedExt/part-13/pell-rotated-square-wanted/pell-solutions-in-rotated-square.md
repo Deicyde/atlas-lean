@@ -14,7 +14,8 @@ Solutions of the Pell equation in the closed rotated square `|x| + |y| ≤ λ`: 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell U](pell-u.md)
+- [Pell V](pell-v.md)
 
 ## Sources
 

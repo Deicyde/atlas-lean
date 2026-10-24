@@ -12,7 +12,8 @@ The paper's example `00203413` has five weak ascents and is a weak ascent sequen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weak Ascent Seq](is-weak-ascent-seq.md)
+- [Word Weak Ascents](word-weak-ascents.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ with `t ≤ 2p`, `α = (x + √(x² + 4))/2` and `g ∈ {f, l}`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ membership for infinitely many triples (independent of the enumeration).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Order At Infinity](lower-order-at-infinity.md)
+- [Luroth Triple Set](luroth-triple-set.md)
+- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
 
 ## Sources
 

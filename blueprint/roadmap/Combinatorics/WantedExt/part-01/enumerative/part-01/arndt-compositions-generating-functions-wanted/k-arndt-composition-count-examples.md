@@ -13,7 +13,7 @@ and `a_{-3}(4, 2) = 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Arndt Composition Count](k-arndt-composition-count.md)
 
 ## Sources
 

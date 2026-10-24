@@ -12,7 +12,13 @@ A hypothesis in the context: `⊢ ?Γ°⫠, A°` for `A ∈ Γ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyps](hyps.md)
+- [Girard's translation](translate.md)
+
+## Proof depends on
+
+- [Hyp](hyp.md)
+- [Weaken hyps](weaken-hyps.md)
 
 ## Sources
 

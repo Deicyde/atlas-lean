@@ -14,6 +14,10 @@ lean: Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.IsMLE
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Log Lik](log-lik.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.ProbabilisticPCAMLE](../../../../../../sources/v2/CSLibExt.md)

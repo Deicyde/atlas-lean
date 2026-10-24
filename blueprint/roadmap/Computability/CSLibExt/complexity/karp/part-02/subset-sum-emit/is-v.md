@@ -11,7 +11,7 @@ Is the popped symbol the mark or pair bit `val true`?
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

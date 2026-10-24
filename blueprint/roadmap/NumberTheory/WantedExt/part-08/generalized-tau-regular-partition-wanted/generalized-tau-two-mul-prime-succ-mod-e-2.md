@@ -13,7 +13,7 @@ Theorem 16) in its corrected form, which forces `p ∣ n` for a nonzero residue.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

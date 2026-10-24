@@ -12,7 +12,7 @@ The defining sum may be taken over any finite set containing the prime factors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Derivative](arithmetic-derivative.md)
 
 ## Sources
 

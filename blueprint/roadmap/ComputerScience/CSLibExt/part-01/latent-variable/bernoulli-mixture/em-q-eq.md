@@ -12,7 +12,20 @@ lean: Cslib.MachineLearning.LatentVariable.BernoulliMixture.emQ_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Params](params.md)
+- [Valid](valid.md)
+- [Valid Params](valid-params.md)
+- [Joint](joint.md)
+- [Mass](mass.md)
+- [Ones](ones.md)
+- [Zeros](zeros.md)
+- [Em Q](../expectation-maximization/em-q.md)
+
+## Proof depends on
+
+- [Bern PMF](bern-pmf.md)
+- [Resp](resp.md)
+- [Posterior](../expectation-maximization/posterior.md)
 
 ## Sources
 

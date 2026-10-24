@@ -15,7 +15,7 @@ factor of the recurrence as `R^k_{j-1}(a, b)`; it is `R^k_{j-1}(0, b)`, the case
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mitrinovic R](mitrinovic-r.md)
 
 ## Sources
 

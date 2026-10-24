@@ -12,7 +12,13 @@ The path starts at the first top.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Path](hf-path.md)
+- [Hp T](../ham-path/hp-t.md)
+
+## Proof depends on
+
+- [Hf Diamond](hf-diamond.md)
+- [Hf Row](hf-row.md)
 
 ## Sources
 

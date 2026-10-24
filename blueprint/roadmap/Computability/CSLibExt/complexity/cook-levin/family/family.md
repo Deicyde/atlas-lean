@@ -11,7 +11,15 @@ The family: clauses ordered by time, then situation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+- [CNF](../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Num Vars](num-vars.md)
+- [Dense Clause](dense-clause.md)
+- [Lits](lits.md)
+- [Clause](../../dense-sat/clause.md)
 
 ## Sources
 

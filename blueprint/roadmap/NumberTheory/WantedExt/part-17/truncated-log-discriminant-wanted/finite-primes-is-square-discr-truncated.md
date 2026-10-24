@@ -12,7 +12,7 @@ For `m ≥ 1`, all but finitely many primes `q` with `m q ≡ 1 (mod 4)` have
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Polynomial](truncated-log-polynomial.md)
 
 ## Sources
 

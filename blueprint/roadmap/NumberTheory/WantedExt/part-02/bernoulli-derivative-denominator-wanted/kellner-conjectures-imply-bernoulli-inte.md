@@ -13,7 +13,9 @@ Conjecture 2 (i) implies `\overline{𝒮} = 𝒮 = {1, 2, 4, 6, 10, 12, 28, 30, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kellner Large Part Asymptotic Conjecture](kellner-large-part-asymptotic-conjecture.md)
+- [Kellner Large Part Conjecture](kellner-large-part-conjecture.md)
+- [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
 
 ## Sources
 

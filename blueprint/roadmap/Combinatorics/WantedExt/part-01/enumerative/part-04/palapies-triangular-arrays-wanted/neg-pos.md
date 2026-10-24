@@ -13,7 +13,12 @@ The negative-positive numbers `a^{NP}_{n,k}` (`n, k ∈ ℤ`) of Definition 1:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+
+## Proof depends on
+
+- [Array](array.md)
+- [Neg Pos Aux](neg-pos-aux.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ The only box path (`k = 1`) of size `1` is `UUDL`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [K Box Paths](k-box-paths.md)
 
 ## Sources
 

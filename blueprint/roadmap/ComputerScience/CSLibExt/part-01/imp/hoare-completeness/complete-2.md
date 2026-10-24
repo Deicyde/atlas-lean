@@ -13,7 +13,19 @@ total-correctness system.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [TDerivable](tderivable.md)
+- [TValid](../hoare-total/tvalid.md)
+
+## Proof depends on
+
+- [Entails](../hoare/entails.md)
+- [Big Step](../big-step/big-step.md)
+- [State](../syntax/state.md)
+- [Strengthen](strengthen-2.md)
+- [Tderivable wp](tderivable-wp.md)
+- [Wp](../hoare-total/wp.md)
 
 ## Sources
 

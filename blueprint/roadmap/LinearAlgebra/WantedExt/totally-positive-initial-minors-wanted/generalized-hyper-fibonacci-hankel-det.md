@@ -13,7 +13,7 @@ stated for all integers `p`, `a`, `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: DFA.hopcroftRel_eq_mooreRel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hopcroft Rel](hopcroft-rel.md)
+- [Moore Rel](../moore/moore-rel.md)
+
+## Proof depends on
+
+- [Correctness](mem-hopcroft-rel-iff.md)
+- [Correctness of the refinement](../moore/mem-moore-rel-iff.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.boundedSubsetSums_one_one_neg_one_one_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subset Sums](bounded-subset-sums.md)
 
 ## Sources
 

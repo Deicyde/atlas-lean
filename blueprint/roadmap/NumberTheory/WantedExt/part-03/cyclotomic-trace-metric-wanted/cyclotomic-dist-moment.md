@@ -13,6 +13,12 @@ The `k`-th moment `M_k(p, N) = #B(p, N)⁻² ∑_{α, β ∈ B(p, N)} d(α, β)^
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cyclotomic Box](cyclotomic-box.md)
+- [Cyclotomic Lattice Point](cyclotomic-lattice-point.md)
+- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.CyclotomicTraceMetricWanted](../../../../../sources/v2/WantedExt.md)

@@ -11,7 +11,7 @@ Lemma 2.6: for `n > 0` and `0 < δ < n`, `opx(n, P) ≤ opx(n + δ, P) < opx(n, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

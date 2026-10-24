@@ -12,7 +12,8 @@ both letters infinitely often, so no separate `w ∈ 𝒲` hypothesis is needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter Count](letter-count.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

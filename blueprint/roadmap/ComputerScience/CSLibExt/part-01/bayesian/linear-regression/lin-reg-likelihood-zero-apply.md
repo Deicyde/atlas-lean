@@ -12,7 +12,11 @@ With zero noise the responses are exactly `w xᵢ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The likelihood of Bayesian linear regression](lin-reg-likelihood.md)
+
+## Proof depends on
+
+- [Lin Reg Likelihood PDF](lin-reg-likelihood-pdf.md)
 
 ## Sources
 

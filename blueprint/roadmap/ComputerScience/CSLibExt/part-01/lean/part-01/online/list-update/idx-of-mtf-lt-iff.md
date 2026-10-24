@@ -12,7 +12,11 @@ In `mtf M x`, the items other than `x` keep their relative order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mtf](mtf.md)
+
+## Proof depends on
+
+- [Idx Of erase](idx-of-erase.md)
 
 ## Sources
 

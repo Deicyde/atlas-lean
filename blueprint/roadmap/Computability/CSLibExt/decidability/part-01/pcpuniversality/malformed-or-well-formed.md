@@ -12,7 +12,12 @@ lean: Cslib.Decidability.Grammar.malformed_or_wellFormed
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bit Codes](bit-codes.md)
+- [Malformed Lang](malformed-lang.md)
+
+## Proof depends on
+
+- [Bit Code](bit-code.md)
 
 ## Sources
 

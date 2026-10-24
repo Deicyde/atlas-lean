@@ -11,7 +11,8 @@ Lemma 4: every game in `Γ{2k+3, 0, 0}` on `K_3` is a P-game (`k` positive).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
 
 ## Sources
 

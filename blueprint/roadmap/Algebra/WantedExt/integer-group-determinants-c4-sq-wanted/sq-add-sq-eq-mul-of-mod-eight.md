@@ -12,7 +12,7 @@ lean: MetaMathlibExt.sq_add_sq_eq_mul_of_mod_eight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primes Five Mod Eight](primes-five-mod-eight.md)
 
 ## Sources
 

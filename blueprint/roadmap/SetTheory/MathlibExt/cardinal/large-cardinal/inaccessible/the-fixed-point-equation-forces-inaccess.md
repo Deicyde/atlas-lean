@@ -13,7 +13,8 @@ The fixed-point equation forces `#(inaccessibleBelow κ) = lift κ`
 
 ## Depends on
 
-This node has no prerequisites.
+- [A cardinal κ is an *inaccessible fixed point* if κ is...](a-cardinal-is-an-inaccessible-fixed-poin.md)
+- [InAccBelow κ is the set of all inaccessible cardinals below...](inaccbelow-is-the-set-of-all-inaccessibl.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ holds for all `3 ≤ k ≤ 8`, as the paper reports after checking small `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

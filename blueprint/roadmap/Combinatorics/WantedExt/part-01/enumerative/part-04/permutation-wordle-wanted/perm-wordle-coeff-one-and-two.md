@@ -12,7 +12,7 @@ lean: MetaMathlibExt.permWordleCoeff_one_and_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle Coeff](perm-wordle-coeff.md)
 
 ## Sources
 

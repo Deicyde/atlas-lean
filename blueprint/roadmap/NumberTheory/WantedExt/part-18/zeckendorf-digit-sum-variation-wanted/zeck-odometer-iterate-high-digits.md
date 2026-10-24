@@ -12,7 +12,8 @@ If `r < F_{ℓ+1}` (`ℓ ≥ 2`) and `x_{ℓ+2} = x_{ℓ+3} = 0`, then `(x + r)_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

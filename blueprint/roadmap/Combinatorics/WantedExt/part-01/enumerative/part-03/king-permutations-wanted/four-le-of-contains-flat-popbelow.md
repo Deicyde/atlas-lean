@@ -12,7 +12,7 @@ A permutation containing a flat POP of size `4` has length at least `4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contains Flat POPBelow](contains-flat-popbelow.md)
 
 ## Sources
 

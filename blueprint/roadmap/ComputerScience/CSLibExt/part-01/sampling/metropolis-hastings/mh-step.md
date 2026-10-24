@@ -14,6 +14,11 @@ One **Metropolis–Hastings** step from `x` for the target `π` and proposal `Q`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coin](../rejection/coin.md)
+- [Mh Accept](mh-accept.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Sampling.MetropolisHastings](../../../../../../sources/v2/CSLibExt.md)

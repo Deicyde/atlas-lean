@@ -12,7 +12,11 @@ Constant sequences are `k`-regular for every base `k ≥ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KRegular Sequence](is-kregular-sequence.md)
+
+## Proof depends on
+
+- [K Kernel](../automatic/k-kernel.md)
 
 ## Sources
 

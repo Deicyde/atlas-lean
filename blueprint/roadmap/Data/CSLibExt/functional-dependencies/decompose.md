@@ -12,7 +12,8 @@ The decomposition rule: from `X → Y` derive `X → Z` for `Z ⊆ Y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](derives.md)
+- [FD](fd.md)
 
 ## Sources
 

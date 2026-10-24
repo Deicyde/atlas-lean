@@ -13,6 +13,10 @@ The `x # w` alphabet of the input stack.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [G](../dense-satverifier/g.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.SatVerifierTM](../../../../../sources/v2/CSLibExt.md)

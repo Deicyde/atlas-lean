@@ -12,7 +12,7 @@ bound `(n / 2) √(n - 1)` for graphs of girth at least `5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Girth Five Extremal Number](girth-five-extremal-number.md)
 
 ## Sources
 

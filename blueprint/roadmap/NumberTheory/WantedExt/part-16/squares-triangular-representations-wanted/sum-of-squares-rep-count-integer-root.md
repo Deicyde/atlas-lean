@@ -14,7 +14,7 @@ integer `k` with `r_k(n) = 0` divides `r_{n,1}` and satisfies `|k| < 2 R_n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Squares Rep Count](sum-of-squares-rep-count.md)
 
 ## Sources
 

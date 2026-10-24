@@ -12,7 +12,7 @@ lean: MetaMathlibExt.szToTBZ_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz To TBZ](sz-to-tbz.md)
 
 ## Sources
 

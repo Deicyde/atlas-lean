@@ -13,7 +13,7 @@ which are exactly the three clauses in the paper's definition of `S_e`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Below Two Pow](odd-below-two-pow.md)
 
 ## Sources
 

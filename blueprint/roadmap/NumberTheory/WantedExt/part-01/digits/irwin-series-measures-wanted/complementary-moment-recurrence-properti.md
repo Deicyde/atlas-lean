@@ -15,7 +15,7 @@ Article A11, Theorem 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complementary Moment Recurrence](complementary-moment-recurrence.md)
 
 ## Sources
 

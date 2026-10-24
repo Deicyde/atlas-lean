@@ -13,6 +13,10 @@ The states reachable from `s₀` through `next`, by `B.length` rounds.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reach Round](reach-round.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.Regular](../../../../../../sources/v2/CSLibExt.md)

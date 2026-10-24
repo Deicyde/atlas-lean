@@ -12,7 +12,7 @@ Unfolding lemma for `IsStrongPseudoprime`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strong Pseudoprime](is-strong-pseudoprime.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ Stacks from counter values `f` and output `o`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](sk.md)
+- [SΓ](s.md)
+
+## Proof depends on
+
+- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

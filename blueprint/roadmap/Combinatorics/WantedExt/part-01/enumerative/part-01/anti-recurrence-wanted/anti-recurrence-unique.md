@@ -14,7 +14,8 @@ strictly increasing, complementary in the positive integers, and satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Recurrence](anti-recurrence.md)
+- [Anti Recurrence Complement](anti-recurrence-complement.md)
 
 ## Sources
 

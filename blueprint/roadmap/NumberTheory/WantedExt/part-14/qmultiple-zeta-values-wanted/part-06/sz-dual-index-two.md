@@ -12,7 +12,7 @@ lean: MetaMathlibExt.szDualIndex_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz Dual Index](sz-dual-index.md)
 
 ## Sources
 

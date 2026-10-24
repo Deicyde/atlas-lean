@@ -14,7 +14,22 @@ iff `(b, a)` is one of `rest`, having put the edge list back on `X`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [Edge Bits](../../part-01/color/edge-bits.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+
+## Proof depends on
+
+- [Cmp N run](cmp-n-run.md)
+- [Edge Bits append](../../part-01/ham-path-check/edge-bits-append.md)
+- [Edge Bits cons](../../part-01/ham-path-check/edge-bits-cons.md)
+- [If E run](if-e-run.md)
+- [Mv run](mv-run.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

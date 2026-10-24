@@ -12,7 +12,12 @@ A biunitary divisor of `n` divides `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Biunitary Divisors](biunitary-divisors.md)
+
+## Proof depends on
+
+- [Gcd Unitary](gcd-unitary.md)
+- [Mem biunitary Divisors](mem-biunitary-divisors.md)
 
 ## Sources
 

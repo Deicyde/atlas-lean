@@ -15,7 +15,7 @@ is exact because the residue hypothesis makes `p` odd.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triple Regular Partition Count](triple-regular-partition-count.md)
 
 ## Sources
 

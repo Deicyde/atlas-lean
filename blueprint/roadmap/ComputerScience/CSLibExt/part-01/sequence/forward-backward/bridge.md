@@ -12,7 +12,7 @@ The weight of the paths from state `s` at time `t` to state `u` at time `t + k`
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
 
 ## Sources
 

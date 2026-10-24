@@ -12,7 +12,12 @@ The minimizer's scan never reports more than its starting `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
+- [Alpha Beta List](alpha-beta-list.md)
+
+## Proof depends on
+
+- [Alpha Beta](alpha-beta.md)
 
 ## Sources
 

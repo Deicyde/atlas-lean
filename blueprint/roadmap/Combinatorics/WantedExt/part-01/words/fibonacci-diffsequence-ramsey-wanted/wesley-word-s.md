@@ -14,6 +14,11 @@ prefix of `F∞` long enough to contain it.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Word](../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
+- [Thue Morse Morphism](thue-morse-morphism.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.FibonacciDiffsequenceRamseyWanted](../../../../../../sources/v2/WantedExt.md)

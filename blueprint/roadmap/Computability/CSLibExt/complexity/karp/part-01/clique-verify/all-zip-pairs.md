@@ -13,7 +13,14 @@ pair `i < j < n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adj Bits](../clique/adj-bits.md)
+- [Pairs](../clique/pairs.md)
+
+## Proof depends on
+
+- [Lookup of mem](lookup-of-mem.md)
+- [Mem pairs](../clique-correct/mem-pairs.md)
+- [Pairs nodup](../clique-correct/pairs-nodup.md)
 
 ## Sources
 

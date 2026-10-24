@@ -11,7 +11,13 @@ A rewrite from a word with exactly one control symbol.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TMSym](tmsym.md)
+
+## Proof depends on
+
+- [Step](../../part-02/string-rewriting/step.md)
+- [Ctl Count](ctl-count.md)
+- [Rules](rules.md)
 
 ## Sources
 

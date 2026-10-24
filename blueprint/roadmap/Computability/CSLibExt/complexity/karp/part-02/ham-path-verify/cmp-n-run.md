@@ -12,7 +12,21 @@ lean: Cslib.Complexity.Karp.HamVerify.cmpN_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Cb S](cb-s.md)
+- [Prog](prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
+
+## Proof depends on
+
+- [Cb run](cb-run.md)
+- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Xfer run](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

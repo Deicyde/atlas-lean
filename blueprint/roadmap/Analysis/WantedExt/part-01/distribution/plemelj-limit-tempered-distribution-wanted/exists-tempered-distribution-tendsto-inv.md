@@ -17,7 +17,8 @@ $u_\pm \in S'(\mathbb{R})$ such that for all $\phi \in S(\mathbb{R})$, $u_{\pm,\
 
 ## Depends on
 
-This node has no prerequisites.
+- [U Minus Eps](u-minus-eps.md)
+- [U Plus Eps](u-plus-eps.md)
 
 ## Sources
 

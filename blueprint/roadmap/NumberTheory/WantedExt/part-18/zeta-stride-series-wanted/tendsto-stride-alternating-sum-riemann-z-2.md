@@ -13,7 +13,7 @@ sums). The second equality of (32) uses the undefined `A^{(t)}` and is not forma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Alternating Sum](stride-alternating-sum.md)
 
 ## Sources
 

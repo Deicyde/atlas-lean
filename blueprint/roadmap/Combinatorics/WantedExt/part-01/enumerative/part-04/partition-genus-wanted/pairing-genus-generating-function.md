@@ -15,7 +15,7 @@ for a rational polynomial `Q^{(g)}` of degree `g - 1` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Genus Count](partition-genus-count.md)
 
 ## Sources
 

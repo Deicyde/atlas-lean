@@ -22,7 +22,7 @@ graph is a hyperbolic paraboloid). No continuity of `f` is assumed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Doubly Ruled Graph](doubly-ruled-graph.md)
 
 ## Sources
 

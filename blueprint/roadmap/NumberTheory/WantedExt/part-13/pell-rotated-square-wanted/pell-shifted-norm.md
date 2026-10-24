@@ -14,6 +14,11 @@ The function `f_{i,j}(x) = |i u(x) + a| + |j v(x) + b|`, the `L¹` norm of the r
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pell U](pell-u.md)
+- [Pell V](pell-v.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PellRotatedSquareWanted](../../../../../sources/v2/WantedExt.md)

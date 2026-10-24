@@ -12,7 +12,8 @@ On even inputs the accelerated map is one step of `Nat.collatzStep`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collatz Accelerated](collatz-accelerated.md)
+- [Collatz Step](../../../MathlibExt/part-04/collatz/collatz-step.md)
 
 ## Sources
 

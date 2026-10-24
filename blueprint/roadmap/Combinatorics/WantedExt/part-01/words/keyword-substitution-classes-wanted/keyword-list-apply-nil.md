@@ -12,7 +12,7 @@ The empty list acts as the identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword List Apply](keyword-list-apply.md)
 
 ## Sources
 

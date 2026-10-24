@@ -12,7 +12,20 @@ lean: Cslib.MachineLearning.Sequence.BaumWelch.logLik_le_emStep
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Lik](../../latent-variable/expectation-maximization/log-lik.md)
+- [Rich](rich.md)
+- [Valid HMM](valid-hmm.md)
+- [Em Step](em-step.md)
+- [Joint](joint.md)
+
+## Proof depends on
+
+- [The EM theorem](../../latent-variable/expectation-maximization/log-lik-le-of-em-q-le.md)
+- [Valid](valid.md)
+- [The Baum-Welch M-step maximizes `Q(· | h)`](em-q-le-em-step.md)
+- [Path Prob eq prod](path-prob-eq-prod.md)
+- [HMM](../hidden-markov/hmm.md)
+- [Path Prob](../hidden-markov/path-prob.md)
 
 ## Sources
 

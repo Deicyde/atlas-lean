@@ -12,7 +12,7 @@ lean: Cslib.Decidability.Post.unaryHom_injective
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unary Code](unary-code.md)
 
 ## Sources
 

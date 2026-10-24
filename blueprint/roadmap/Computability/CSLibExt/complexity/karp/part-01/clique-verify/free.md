@@ -12,7 +12,7 @@ chosen (cover).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mode](mode.md)
 
 ## Sources
 

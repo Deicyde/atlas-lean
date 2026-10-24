@@ -12,7 +12,8 @@ prime-additive numbers `n` (length `κ_n = 3`) with `m ∣ n` if and only if `8 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weakly Prime Additive](is-weakly-prime-additive.md)
+- [Weakly Prime Additive Length](weakly-prime-additive-length.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ lean: Cslib.Algorithms.Lean.CatenableHeap.toMultiset_make
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Make](make.md)
+- [To Multiset](to-multiset.md)
 
 ## Sources
 

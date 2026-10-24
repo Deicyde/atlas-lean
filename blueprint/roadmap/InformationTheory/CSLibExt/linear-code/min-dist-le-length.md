@@ -12,7 +12,8 @@ A nonzero linear code has finite minimum distance, at most its length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+- [Min Dist](min-dist.md)
 
 ## Sources
 

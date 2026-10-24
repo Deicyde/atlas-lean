@@ -15,7 +15,9 @@ q^s x^s ∏_{i=1}^{s} A_{r_i-1}(x) u^{r_i-1}/(r_i-1)! · (A(x,u))^q`, the power 
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

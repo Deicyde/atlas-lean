@@ -12,7 +12,8 @@ lean: MetaMathlibExt.szQMZV_mul_eq_sum_stuffle
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quasi Shuffle](quasi-shuffle.md)
+- [Sz QMZV](../part-01/sz-qmzv.md)
 
 ## Sources
 

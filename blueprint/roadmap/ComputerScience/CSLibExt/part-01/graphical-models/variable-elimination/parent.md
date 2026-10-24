@@ -11,7 +11,7 @@ The parent of vertex `k + 1`, as a vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](tree-model.md)
 
 ## Sources
 

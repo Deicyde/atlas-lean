@@ -12,7 +12,22 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.accFamily_allTrue
 
 ## Depends on
 
-This node has no prerequisites.
+- [Num Vars](../../family/num-vars.md)
+- [Enc](../part-01/enc.md)
+- [The accept family](acc-family.md)
+- [Layout](../part-01/layout.md)
+- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+
+## Proof depends on
+
+- [Layout](../../family/layout.md)
+- [Row W](../../family/row-w.md)
+- [X Idx](../../family/x-idx.md)
+- [N](../part-01/n.md)
+- [Acc code](acc-code-2.md)
+- [Acode](acode.md)
+- [Tr](../part-04/tr.md)
+- [Lt num Vars](lt-num-vars.md)
 
 ## Sources
 

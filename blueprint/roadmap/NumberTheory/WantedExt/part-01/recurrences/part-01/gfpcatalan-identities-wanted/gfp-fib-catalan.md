@@ -12,7 +12,7 @@ Theorem 3.3 (1) (Catalan identity for GFPs of Fibonacci type): for `n ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

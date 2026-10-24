@@ -17,6 +17,12 @@ polygon only for `n ≥ 1`; at `n = 0` (a degenerate `2`-gon) the count is set t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Noncrossing Diagonal Set](is-noncrossing-diagonal-set.md)
+- [Dissection Face Size](dissection-face-size.md)
+- [Polygon Diagonals](polygon-diagonals.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.ColoredCompositionsDyckPolygonsWanted](../../../../../../../sources/v2/WantedExt.md)

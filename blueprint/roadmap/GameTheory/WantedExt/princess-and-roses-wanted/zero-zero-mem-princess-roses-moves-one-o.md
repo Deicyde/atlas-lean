@@ -12,7 +12,13 @@ From the P&R position `(1, 1)` one may take one object from each pile, reaching 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Princess Roses](princess-roses.md)
+
+## Proof depends on
+
+- [Mem slow ANim Moves one two](mem-slow-anim-moves-one-two.md)
+- [Slow ANim Moves](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: InformationTheory.measureMutualInformation_toMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Measure Mutual Information](measure-mutual-information.md)
+- [Shannon Entropy](../finite-entropy/shannon-entropy.md)
+
+## Proof depends on
+
+- [To Real kl Div prod](to-real-kl-div-prod.md)
 
 ## Sources
 

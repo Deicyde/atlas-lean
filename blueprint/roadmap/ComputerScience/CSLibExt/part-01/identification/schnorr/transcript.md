@@ -13,6 +13,10 @@ The distribution of honest transcripts with uniform `k` and `r`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Honest Transcript](honest-transcript.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.Identification.Schnorr](../../../../../../sources/v2/CSLibExt.md)

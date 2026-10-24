@@ -14,6 +14,12 @@ The set `L(ψ)` of Lüroth `ψ`-well approximable numbers: the `x ∈ (0, 1]` wi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Luroth Convergent](luroth-convergent.md)
+- [Luroth Denominator](luroth-denominator.md)
+- [Luroth Digit Seq](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LurothDiophantineApproximationWanted](../../../../../sources/v2/WantedExt.md)

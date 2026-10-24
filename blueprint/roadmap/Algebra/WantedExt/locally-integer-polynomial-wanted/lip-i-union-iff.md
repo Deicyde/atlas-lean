@@ -13,7 +13,7 @@ lean: MetaMathlibExt.lip_iUnion_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

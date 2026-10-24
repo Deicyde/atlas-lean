@@ -17,7 +17,21 @@ copies the last two numbers to `N` and `A`. `rs` and `nf` move `B` back onto `C`
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Γ](untitled.md)
+
+## Proof depends on
+
+- [D U](d-u.md)
+- [Mark](mark.md)
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Cmp Step](../../../../../MathlibExt/turing-machine/program/cmp-step.md)
+- [Decr](../../../../../MathlibExt/turing-machine/program/decr.md)
+- [Incr](../../../../../MathlibExt/turing-machine/program/incr.md)
+- [Is Bit](../../../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
+- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

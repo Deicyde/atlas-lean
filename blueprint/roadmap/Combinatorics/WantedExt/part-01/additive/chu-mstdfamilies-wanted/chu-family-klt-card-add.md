@@ -11,7 +11,7 @@ Theorem 7: `|A + A| ≥ 11 + 6klt + 10lt + 8t`; with Theorem 6, `A` is MSTD.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chu Family KLT](chu-family-klt.md)
 
 ## Sources
 

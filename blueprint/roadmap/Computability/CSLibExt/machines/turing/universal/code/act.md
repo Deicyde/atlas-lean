@@ -11,7 +11,7 @@ Enter the state `q'` and do the action coded by `s` (see `decodeStmt`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cfg](cfg.md)
 
 ## Sources
 

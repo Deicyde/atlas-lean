@@ -12,7 +12,7 @@ lean: MetaMathlibExt.laurentInvVar_mul_single_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Inv Var](laurent-inv-var.md)
 
 ## Sources
 

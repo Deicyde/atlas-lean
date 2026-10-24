@@ -11,7 +11,7 @@ Theorem 3.13: the second entries of the vertices of `WGCT(k, ℓ)` are pairwise 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wide Gen Cohn Tree](wide-gen-cohn-tree.md)
 
 ## Sources
 

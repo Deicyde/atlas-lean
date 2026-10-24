@@ -13,6 +13,11 @@ The DDH advantage `|Pr[D = 1 | real] - Pr[D = 1 | random]|`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ddh Rand](ddh-rand.md)
+- [Ddh Real](ddh-real.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.PublicKey.ElGamal](../../../../../../sources/v2/CSLibExt.md)

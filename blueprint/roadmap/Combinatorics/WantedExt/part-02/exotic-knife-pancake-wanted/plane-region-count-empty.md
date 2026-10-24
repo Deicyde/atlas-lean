@@ -12,7 +12,7 @@ With no cuts the plane is a single region.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane Region Count](plane-region-count.md)
 
 ## Sources
 

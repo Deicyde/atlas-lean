@@ -12,7 +12,7 @@ lean: MetaMathlibExt.not_satisfiesKnottCondition_neg_one_neg_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Satisfies Knott Condition](satisfies-knott-condition.md)
 
 ## Sources
 

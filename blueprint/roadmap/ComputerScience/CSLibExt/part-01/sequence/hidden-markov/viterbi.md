@@ -12,7 +12,7 @@ in `s` (`pathProb_le_viterbi`, `exists_pathProb_eq_viterbi`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
 
 ## Sources
 

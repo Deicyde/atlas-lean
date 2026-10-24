@@ -12,7 +12,15 @@ The embedded CRF has the same path weights as the HMM.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hmm To CRF](hmm-to-crf.md)
+- [Path Weight](path-weight.md)
+- [HMM](../../sequence/hidden-markov/hmm.md)
+- [Nonneg](../../sequence/hidden-markov/nonneg.md)
+- [Path Prob](../../sequence/hidden-markov/path-prob.md)
+
+## Proof depends on
+
+- [Chain CRF](chain-crf.md)
 
 ## Sources
 

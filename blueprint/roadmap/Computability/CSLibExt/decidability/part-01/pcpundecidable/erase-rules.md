@@ -11,7 +11,8 @@ The rules by which the halting symbol erases the tape.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](../../part-02/string-rewriting/rule.md)
+- [TMSym](tmsym.md)
 
 ## Sources
 

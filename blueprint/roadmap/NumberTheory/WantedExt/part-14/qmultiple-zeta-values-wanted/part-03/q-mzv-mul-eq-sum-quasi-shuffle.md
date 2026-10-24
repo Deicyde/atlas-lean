@@ -14,7 +14,8 @@ product on `M` induced by `(k₁, Q₁) ⋄ (k₂, Q₂) = (k₁ + k₂, Q₁ Q�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q MZV](../part-02/q-mzv.md)
+- [Quasi Shuffle](quasi-shuffle.md)
 
 ## Sources
 

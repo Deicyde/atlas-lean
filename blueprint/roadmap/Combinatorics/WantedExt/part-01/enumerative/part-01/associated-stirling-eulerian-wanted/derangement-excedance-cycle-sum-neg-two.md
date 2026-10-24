@@ -15,7 +15,7 @@ number of entries of `cycleType`). Stated in `ℤ[X]` with the denominator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 
 ## Sources
 

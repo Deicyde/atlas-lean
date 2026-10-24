@@ -11,7 +11,7 @@ The midpoint tableau: `a = [[0, 0], [1 / 2, 0]]`, `b = [0, 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
 
 ## Sources
 

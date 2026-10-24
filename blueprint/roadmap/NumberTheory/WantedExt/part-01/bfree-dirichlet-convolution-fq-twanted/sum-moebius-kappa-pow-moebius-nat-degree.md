@@ -14,7 +14,9 @@ Proposition 2: for `κ ≥ 2`, fixed monic `m` and `ε > 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fq Norm](fq-norm.md)
+- [Kappa Min](kappa-min.md)
+- [Kappa Pow](kappa-pow.md)
 
 ## Sources
 

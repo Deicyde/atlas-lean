@@ -12,7 +12,9 @@ There is a 2-coloring of the positive integers with no monochromatic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DDiff Sequence](is-ddiff-sequence.md)
+- [Is Monochromatic](is-monochromatic.md)
+- [Even Fibonacci Set](even-fibonacci-set.md)
 
 ## Sources
 

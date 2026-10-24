@@ -12,7 +12,7 @@ Cao–Wu–Zhang: for `τ ≥ 1`, `dim L(τ) = 1/(1+τ)`, where `L(τ) = L(ψ)` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ as their `y`-coordinates.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Std Clean Parallelogram](std-clean-parallelogram.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CleanLatticeParallelogramWanted](../../../../../sources/v2/WantedExt.md)

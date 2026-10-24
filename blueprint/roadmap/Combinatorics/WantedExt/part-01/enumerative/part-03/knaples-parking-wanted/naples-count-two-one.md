@@ -13,7 +13,10 @@ Characteristic values: `I_{2,1} = 3`, `U_{2,1} = 2`, and there are `3` descendin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascending Naples Count](ascending-naples-count.md)
+- [Ascending Naples One Count](ascending-naples-one-count.md)
+- [Descending Naples Count](descending-naples-count.md)
+- [Descending Strict Naples Count](descending-strict-naples-count.md)
 
 ## Sources
 

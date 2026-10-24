@@ -14,7 +14,8 @@ Fibonacci word on `{a, b}` is `V(a-b, 2b-a, r)` for some integer `r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Inf](../../../../../Combinatorics/MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Generalized Beatty](generalized-beatty.md)
 
 ## Sources
 

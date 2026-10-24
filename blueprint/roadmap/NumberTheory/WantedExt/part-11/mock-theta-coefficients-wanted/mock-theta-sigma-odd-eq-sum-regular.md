@@ -12,7 +12,8 @@ coefficient of `q^k` in `(f_2/f_1)^2` (Equation (8)) and vanishes for `k < 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mock Theta Sigma](mock-theta-sigma.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

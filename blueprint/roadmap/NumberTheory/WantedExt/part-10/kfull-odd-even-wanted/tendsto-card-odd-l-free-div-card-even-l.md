@@ -14,7 +14,8 @@ and `E_{1,l}(x)` of odd and even `l`-free positive integers up to `x` (`[1, l]`-
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](../../../MathlibExt/part-07/kfull/is-kfull.md)
+- [Is Power Free](../../../MathlibExt/part-09/power-free/is-power-free.md)
 
 ## Sources
 

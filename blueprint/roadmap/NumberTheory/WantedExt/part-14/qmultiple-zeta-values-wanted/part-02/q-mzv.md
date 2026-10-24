@@ -17,6 +17,10 @@ computed from the summands with `m₁ ≤ N`; for other data the value is junk.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q MZVPartial](../part-01/q-mzvpartial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,13 @@ Safety is preserved along executions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HConfig](hconfig.md)
+- [HSteps](hsteps.md)
+- [Safe](safe.md)
+
+## Proof depends on
+
+- [HStep](hstep.md)
 
 ## Sources
 

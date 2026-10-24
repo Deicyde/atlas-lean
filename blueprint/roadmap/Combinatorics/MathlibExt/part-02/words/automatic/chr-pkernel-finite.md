@@ -12,7 +12,7 @@ If the `(p ^ r)`-kernel is finite then so is the `p`-kernel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Kernel](k-kernel.md)
 
 ## Sources
 

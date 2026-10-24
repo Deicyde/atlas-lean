@@ -12,7 +12,7 @@ The number of genus-`g` set partitions of `Fin n` of type `[p, n - p]` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Genus Count](partition-genus-count.md)
 
 ## Sources
 

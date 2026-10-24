@@ -12,7 +12,8 @@ For `n ≥ 7`, every capacity-`3` schedule costs at least
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bridge Schedule](is-bridge-schedule.md)
+- [Schedule Cost](schedule-cost.md)
 
 ## Sources
 

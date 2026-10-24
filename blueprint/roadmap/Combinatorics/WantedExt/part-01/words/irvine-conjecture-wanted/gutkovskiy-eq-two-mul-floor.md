@@ -14,7 +14,8 @@ representation is a digit list `a = [a₀, a₁, …]` (least significant digit 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gutkovskiy](gutkovskiy.md)
+- [Kimberling Block](kimberling-block.md)
 
 ## Sources
 

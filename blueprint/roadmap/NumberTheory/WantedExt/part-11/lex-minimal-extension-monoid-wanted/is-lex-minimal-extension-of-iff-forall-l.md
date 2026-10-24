@@ -17,7 +17,7 @@ of `isBinomidIndex_iff_partialSum`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lex Minimal Extension Of](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
 
 ## Sources
 

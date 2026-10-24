@@ -12,7 +12,9 @@ The offline optimum is a lower bound for every strategy's cost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strategy](strategy.md)
+- [Cost](cost.md)
+- [Opt](opt.md)
 
 ## Sources
 

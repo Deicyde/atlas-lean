@@ -14,7 +14,8 @@ as in Corollary 1 (`x₁ + x₂ + x₃ + x₄ = 0` has no canceling partition an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Canceling Partition](has-canceling-partition.md)
+- [Is Uncommon Over Integers](is-uncommon-over-integers.md)
 
 ## Sources
 

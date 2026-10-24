@@ -11,7 +11,11 @@ The component term of `Q`: `∑ n, r n k log N(xₙ | μ, v I)`, written out for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Resp](resp.md)
 
 ## Sources
 

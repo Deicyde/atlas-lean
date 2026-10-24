@@ -14,7 +14,8 @@ decreasing enumeration of the layer `T_u` by `[0, ω^ω)`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Similar Compact Set](is-self-similar-compact-set.md)
+- [Self Similar Layer](self-similar-layer.md)
 
 ## Sources
 

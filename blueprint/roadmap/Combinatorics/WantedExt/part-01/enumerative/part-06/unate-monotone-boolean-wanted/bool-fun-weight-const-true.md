@@ -12,7 +12,7 @@ The constant function `1` on `n` variables has weight `2 ^ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Fun Weight](bool-fun-weight.md)
 
 ## Sources
 

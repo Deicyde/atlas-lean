@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isBFree_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is BFree](is-bfree.md)
 
 ## Sources
 

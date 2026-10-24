@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.MarkovDecision.bellman_contracting
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Stochastic](stochastic.md)
+- [Bellman](bellman.md)
+
+## Proof depends on
+
+- [The Bellman operator contracts by `γ`](abs-bellman-sub-le.md)
 
 ## Sources
 

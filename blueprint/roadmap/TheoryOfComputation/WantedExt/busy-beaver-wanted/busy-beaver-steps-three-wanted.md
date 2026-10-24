@@ -11,7 +11,7 @@ Source: Lin--Radó (1965), determination of `S(3) = 21`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Busy Beaver Steps](../../../Computability/CSLibExt/busy-beaver/busy-beaver-steps.md)
 
 ## Sources
 

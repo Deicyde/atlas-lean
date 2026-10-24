@@ -11,7 +11,12 @@ lean: Cslib.Language.EncodedRegex.isEmptyB
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](encoded-regex.md)
+
+## Proof depends on
+
+- [The emptiness test](../../part-01/context-free/is-empty-b.md)
+- [To Grammar](to-grammar.md)
 
 ## Sources
 

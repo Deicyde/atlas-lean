@@ -13,7 +13,19 @@ lean: Cslib.Complexity.Karp.HamVerify.skipU_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [Skip U](skip-u.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Blk succ](blk-succ.md)
+- [Step1](step1.md)
+- [Update update update update](update-update-update-update.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
 
 ## Sources
 

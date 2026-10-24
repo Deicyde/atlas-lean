@@ -13,7 +13,8 @@ paper's `β̄^{s+1}`, `Q' 0` is `Q̃_1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Collection](l-star-collection.md)
+- [Max LStar Block](max-lstar-block.md)
 
 ## Sources
 

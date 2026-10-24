@@ -12,7 +12,7 @@ The forward variables: `forward t s` is the total weight of the label paths of l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
 
 ## Sources
 

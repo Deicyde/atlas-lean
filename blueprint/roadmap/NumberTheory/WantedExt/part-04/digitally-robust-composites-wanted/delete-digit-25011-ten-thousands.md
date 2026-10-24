@@ -14,7 +14,7 @@ deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Digit](delete-digit.md)
 
 ## Sources
 

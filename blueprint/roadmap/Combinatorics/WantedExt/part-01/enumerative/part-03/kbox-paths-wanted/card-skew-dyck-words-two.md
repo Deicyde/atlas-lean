@@ -12,7 +12,8 @@ There are three skew Dyck paths of semilength `2`: `UUDD`, `UDUD`, `UUDL`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [Skew Dyck Words](skew-dyck-words.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: MetaMathlibExt.bishopColorQuasiCoeff_zero_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bishop Color Quasi Coeff](bishop-color-quasi-coeff.md)
+
+## Proof depends on
+
+- [Santos Beta](santos-beta.md)
+- [Santos Beta zero](santos-beta-zero.md)
+- [Two Assoc Stirling Second](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
 
 ## Sources
 

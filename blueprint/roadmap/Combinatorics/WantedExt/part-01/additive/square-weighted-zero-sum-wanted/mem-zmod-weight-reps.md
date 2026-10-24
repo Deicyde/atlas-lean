@@ -12,7 +12,7 @@ Membership in `zmodWeightReps A`: a representative below `n` whose residue is in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zmod Weight Reps](zmod-weight-reps.md)
 
 ## Sources
 

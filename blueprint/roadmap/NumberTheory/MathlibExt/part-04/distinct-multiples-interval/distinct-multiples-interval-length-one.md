@@ -13,7 +13,11 @@ empty interval `(m, m]` contains nothing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Multiples Interval Length](distinct-multiples-interval-length.md)
+
+## Proof depends on
+
+- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
 
 ## Sources
 

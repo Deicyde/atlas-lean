@@ -12,7 +12,7 @@ lean: MetaMathlibExt.triangularTriple_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Triple](triangular-triple.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Characteristic value: the mediant of `0 / 1` and `1 / 1` is `1 / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gap Mediant](gap-mediant.md)
 
 ## Sources
 

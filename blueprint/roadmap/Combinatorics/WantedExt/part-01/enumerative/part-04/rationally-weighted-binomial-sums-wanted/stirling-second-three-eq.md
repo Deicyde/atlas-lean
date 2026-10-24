@@ -15,6 +15,10 @@ sides vanish at `r = 1, 2`). Proved from `stirlingSecond_mul_factorial_eq_sum` a
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stirling Second mul factorial eq sum](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-second-explicit/stirling-second-mul-factorial-eq-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RationallyWeightedBinomialSumsWanted](../../../../../../../sources/v2/WantedExt.md)

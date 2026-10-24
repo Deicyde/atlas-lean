@@ -12,7 +12,7 @@ Every average `A_{i,0}` with `i ≥ 1` of the constant sequence `c^∞` equals `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomid Average](binomid-average.md)
 
 ## Sources
 

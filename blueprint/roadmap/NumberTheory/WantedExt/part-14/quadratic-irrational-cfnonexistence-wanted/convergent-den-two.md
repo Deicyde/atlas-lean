@@ -12,7 +12,7 @@ lean: MetaMathlibExt.convergentDen_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Den](convergent-den.md)
 
 ## Sources
 

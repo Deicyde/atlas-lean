@@ -13,7 +13,10 @@ number of `(m_r, m_t, m_s)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Char Number](is-gen-markov-char-number.md)
+- [Farey Tree](farey-tree.md)
+- [Gen Cohn Tree](gen-cohn-tree.md)
+- [Gen Markov Tree](gen-markov-tree.md)
 
 ## Sources
 

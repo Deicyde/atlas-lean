@@ -14,6 +14,10 @@ a string of `1`s describes nothing.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Run](run.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Kolmogorov.Basic](../../../../../sources/v2/CSLibExt.md)

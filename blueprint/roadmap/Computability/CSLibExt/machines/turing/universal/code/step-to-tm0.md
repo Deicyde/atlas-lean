@@ -12,7 +12,17 @@ An explicit step reads as a step of the decoded machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Cfg](cfg.md)
+- [To TM0](to-tm0.md)
+- [Machine](machine.md)
+- [Step](step.md)
+
+## Proof depends on
+
+- [Act](act.md)
+- [Lookup](lookup.md)
+- [Decode Stmt](decode-stmt.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Part (a): let `N ≥ 2` and let `β(N)` end in `10^s1`, i.e. its two lowest digi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bergman Expansion](is-bergman-expansion.md)
+- [Base Phi Value](base-phi-value.md)
+- [Lucas Number](../../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

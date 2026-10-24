@@ -12,7 +12,7 @@ Theorem 24: for `1 ≤ r ≤ 2^k - 1` and `ρ₁` the position of the lowest non
 
 ## Depends on
 
-This node has no prerequisites.
+- [Takagi Newdef](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/takagi-function/takagi-newdef.md)
 
 ## Sources
 

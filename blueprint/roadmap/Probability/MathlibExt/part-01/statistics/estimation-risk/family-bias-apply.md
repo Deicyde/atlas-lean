@@ -13,7 +13,7 @@ Blueprint `af_723199a7ca6fb3e936a73618`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Family Bias](family-bias.md)
 
 ## Sources
 

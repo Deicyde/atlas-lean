@@ -17,7 +17,10 @@ where `Ñ_{B_κ,h}(A, Δ) = ∑_{|f - A| ≤ q^Δ} 1_{B_κ}(f) d_h(f)` (`|f - A|
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is BFree](is-bfree.md)
+- [B Free Divisor Sum](b-free-divisor-sum.md)
+- [Kappa Min](kappa-min.md)
+- [Monic Divisor Count](monic-divisor-count.md)
 
 ## Sources
 

@@ -15,7 +15,9 @@ that `e_n ≡ d_n (mod c_n)`, `-c_n / 2 ≤ e_n < c_n / 2`, `a_n = (d_n - e_n) /
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
+- [Pseudo Greedy Gap](pseudo-greedy-gap.md)
+- [Pseudo Greedy Remainder](pseudo-greedy-remainder.md)
 
 ## Sources
 

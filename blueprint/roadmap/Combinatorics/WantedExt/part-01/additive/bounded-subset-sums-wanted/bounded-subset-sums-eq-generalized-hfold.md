@@ -12,7 +12,8 @@ For `A = {a₁, …, a_k} ⊆ G` with `0 ∉ A` and `α + β ≤ k - 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subset Sums](bounded-subset-sums.md)
+- [Generalized HFold Sumset](generalized-hfold-sumset.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ lean: MetaMathlibExt.seedAutomaton_neutral_padding
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
+- [Last Letter Digits](last-letter-digits.md)
+- [Seed Automaton](seed-automaton.md)
 
 ## Sources
 

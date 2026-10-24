@@ -12,7 +12,9 @@ The induced pairwise alignment has no `(none, none)` column.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+- [MSAlignment](msalignment.md)
+- [Induced Pair](induced-pair.md)
 
 ## Sources
 

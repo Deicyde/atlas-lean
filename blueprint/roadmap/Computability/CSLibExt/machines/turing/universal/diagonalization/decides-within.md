@@ -13,7 +13,13 @@ answer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../code/code.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [The clocked evaluator](../code/eval-steps.md)
+- [Bit Sym](../code/bit-sym.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The rank of a task within its level (tasks of the level in numbering order).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+
+## Proof depends on
+
+- [Depth](depth.md)
 
 ## Sources
 

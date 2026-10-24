@@ -12,7 +12,7 @@ The cost of a strategy when the season lasts `d` days: rent for `t - 1` days and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strategy](strategy.md)
 
 ## Sources
 

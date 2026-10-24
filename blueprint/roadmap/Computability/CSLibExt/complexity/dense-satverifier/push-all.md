@@ -11,7 +11,8 @@ Result of pushing `ys` one at a time onto `t` (nothing if `t = none`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
+- [W](w.md)
 
 ## Sources
 

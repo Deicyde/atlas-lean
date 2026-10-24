@@ -11,7 +11,7 @@ Scratch counters that are empty whenever a clause starts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
 
 ## Sources
 

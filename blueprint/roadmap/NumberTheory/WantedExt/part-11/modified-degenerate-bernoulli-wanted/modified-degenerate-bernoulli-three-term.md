@@ -14,7 +14,7 @@ Corollary 2, three-term identity: with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modified Degenerate Bernoulli](modified-degenerate-bernoulli.md)
 
 ## Sources
 

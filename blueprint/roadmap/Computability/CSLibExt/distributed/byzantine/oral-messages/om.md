@@ -17,6 +17,11 @@ majority of the value it received itself and the values it decided for the other
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Majority](majority.md)
+- [Received](received.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Distributed.Byzantine.OralMessages](../../../../../../sources/v2/CSLibExt.md)

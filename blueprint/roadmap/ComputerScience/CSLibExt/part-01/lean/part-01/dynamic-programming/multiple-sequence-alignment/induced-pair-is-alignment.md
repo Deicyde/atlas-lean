@@ -12,7 +12,17 @@ The induced pairwise alignment is a valid pairwise alignment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Alignment](../sequence-alignment/is-alignment.md)
+- [Is MSAlignment](is-msalignment.md)
+- [MSAlignment](msalignment.md)
+- [Induced Pair](induced-pair.md)
+
+## Proof depends on
+
+- [Alignment](../sequence-alignment/alignment.md)
+- [Induced Pair filter Map fst](induced-pair-filter-map-fst.md)
+- [Induced Pair filter Map snd](induced-pair-filter-map-snd.md)
+- [Induced Pair ne none none](induced-pair-ne-none-none.md)
 
 ## Sources
 

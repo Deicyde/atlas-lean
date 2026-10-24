@@ -12,7 +12,12 @@ No fraction is a neighbour of itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poly Farey Deg Neighbor](is-poly-farey-deg-neighbor.md)
+
+## Proof depends on
+
+- [Poly Farey Series](poly-farey-series.md)
+- [Poly Frac](poly-frac.md)
 
 ## Sources
 

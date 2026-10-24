@@ -16,7 +16,7 @@ false as printed: `2 ∈ S(3)` by `|1² - 3 · 1²| = 2`, but `2` ramifies in `�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Primitive Primes](strict-primitive-primes.md)
 
 ## Sources
 

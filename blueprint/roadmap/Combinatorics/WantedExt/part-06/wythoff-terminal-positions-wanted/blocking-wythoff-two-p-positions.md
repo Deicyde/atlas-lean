@@ -13,7 +13,8 @@ may forbid one option) are `R₂`: every position of `R₂` has at most one Wyth
 
 ## Depends on
 
-This node has no prerequisites.
+- [Larsson Set Two](larsson-set-two.md)
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
 
 ## Sources
 

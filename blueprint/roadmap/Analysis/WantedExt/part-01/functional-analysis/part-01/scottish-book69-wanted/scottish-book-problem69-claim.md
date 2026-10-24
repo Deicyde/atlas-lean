@@ -16,6 +16,10 @@ metric center of `(p, x)` necessarily isometric to a Banach space?
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Metric Center](is-metric-center.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FunctionalAnalysis.ScottishBook69Wanted](../../../../../../../sources/v2/WantedExt.md)

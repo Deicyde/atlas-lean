@@ -15,7 +15,9 @@ writing `E` for `|Σ^β_α(𝒜)| = L(r̄, h - β)`: (a) for `k = 2`, `E` holds 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
+- [Repetition Sequence](repetition-sequence.md)
+- [Yang Chen Bound](yang-chen-bound.md)
 
 ## Sources
 

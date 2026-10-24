@@ -12,7 +12,10 @@ lean: MetaMathlibExt.schreierCount_eq_schreierPadovan
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Schreier Count](maximal-schreier-count.md)
+- [Maximal Schreier Padovan](maximal-schreier-padovan.md)
+- [Schreier Count](schreier-count.md)
+- [Schreier Padovan](schreier-padovan.md)
 
 ## Sources
 

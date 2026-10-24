@@ -12,7 +12,16 @@ After `t` steps the head is within distance `t` of the origin.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+- [Machine](machine.md)
+- [Run](run.md)
+
+## Proof depends on
+
+- [Move](move.md)
+- [Shift](shift.md)
+- [Initial](initial.md)
+- [Step](step.md)
 
 ## Sources
 

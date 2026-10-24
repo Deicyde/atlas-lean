@@ -12,7 +12,7 @@ For `j, n ≥ 0`: `∑_{k=0}^{n+1} (-1)^k C(n+1, k) / C(k+j+r, r) · s(k+j+r, k+
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Stirling First](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

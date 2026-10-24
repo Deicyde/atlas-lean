@@ -14,6 +14,11 @@ lean: MetaMathlibExt.fenceTilingSum
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fence Tiling Weight](fence-tiling-weight.md)
+- [Fence Tilings](fence-tilings.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.BiPeriodicFibonacciSquaredWanted](../../../../../../../sources/v2/WantedExt.md)

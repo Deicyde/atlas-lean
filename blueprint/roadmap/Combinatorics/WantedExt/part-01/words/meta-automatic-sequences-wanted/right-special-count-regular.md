@@ -14,7 +14,9 @@ omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KAutomatic Sequence](../../../../MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
+- [Is KRegular Sequence](../../../../MathlibExt/part-02/words/regular-sequence/is-kregular-sequence.md)
+- [Right Special Factors](right-special-factors.md)
 
 ## Sources
 

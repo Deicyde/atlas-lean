@@ -14,6 +14,10 @@ other by a chain of friends.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [KOut Reachable](kout-reachable.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.ScottishBook38Wanted](../../../../sources/v2/WantedExt.md)

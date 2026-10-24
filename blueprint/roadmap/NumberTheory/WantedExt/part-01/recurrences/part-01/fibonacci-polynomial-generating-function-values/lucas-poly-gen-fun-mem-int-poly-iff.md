@@ -13,7 +13,7 @@ Theorem 1.3: if `b ∣ a` and `q(x) ∈ ℚ(x)`, then `l(x, q(x)) ∈ ℤ[x]` if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

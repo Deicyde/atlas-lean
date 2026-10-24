@@ -12,7 +12,9 @@ Proposition 1 (quoted from Chen, Liang and Wang): a Riordan array `R` with `A`- 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Riordan Array AZ](is-riordan-array-az.md)
+- [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
+- [Riordan Coeff Matrix](riordan-coeff-matrix.md)
 
 ## Sources
 

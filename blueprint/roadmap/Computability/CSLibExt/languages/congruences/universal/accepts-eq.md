@@ -12,7 +12,11 @@ A DFA morphism preserves the accepted language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DFAHom](dfahom.md)
+
+## Proof depends on
+
+- [Map eval](map-eval.md)
 
 ## Sources
 

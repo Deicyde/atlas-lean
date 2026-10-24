@@ -56,7 +56,7 @@ theorem isValuation (he : ∀ a, (e a).language = s a) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grammar Terminals](../chomsky-normal-form/grammar-terminals.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ There are twelve length-2 signed patterns.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Pattern2](signed-pattern2.md)
 
 ## Sources
 

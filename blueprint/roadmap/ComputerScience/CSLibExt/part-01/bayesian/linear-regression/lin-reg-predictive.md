@@ -13,6 +13,10 @@ The law of the response at a new input `x'`: `y' ~ N(w x', σ²)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gaussian Likelihood](../normal-normal/gaussian-likelihood.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Bayesian.LinearRegression](../../../../../../sources/v2/CSLibExt.md)

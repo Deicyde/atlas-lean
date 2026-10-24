@@ -15,7 +15,7 @@ the non-native kernel evaluator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stable Bits](stable-bits.md)
 
 ## Sources
 

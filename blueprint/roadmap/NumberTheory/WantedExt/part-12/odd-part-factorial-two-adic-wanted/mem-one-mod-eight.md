@@ -13,7 +13,7 @@ Membership in `oneModEightBelowTwoPow e` is exactly the pair of clauses `n<2^e` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [One Mod Eight Below Two Pow](one-mod-eight-below-two-pow.md)
 
 ## Sources
 

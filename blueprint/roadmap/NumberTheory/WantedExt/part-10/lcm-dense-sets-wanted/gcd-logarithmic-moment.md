@@ -14,6 +14,10 @@ two independent logarithmic weights gives `∑ gcd(n,m)/(n*m)` over the finite r
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Naturals In Set Up To](naturals-in-set-up-to.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LcmDenseSetsWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ The `(p ^ r)`-kernel is contained in the `p`-kernel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Kernel](k-kernel.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Membership in the biunitary divisors: `d ∣ n`, `n ≠ 0` and `gcd₁(d, n / d)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Biunitary Divisors](biunitary-divisors.md)
+- [Gcd Unitary](gcd-unitary.md)
 
 ## Sources
 

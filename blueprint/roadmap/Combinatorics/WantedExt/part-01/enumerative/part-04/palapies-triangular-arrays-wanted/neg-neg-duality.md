@@ -14,7 +14,8 @@ continuations satisfy `a^{NN}_{-n,-k} = b^{NN}_{k-1,n-1}` for all `n, k ∈ ℤ`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+- [Neg Neg](neg-neg.md)
 
 ## Sources
 

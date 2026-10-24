@@ -16,6 +16,11 @@ requested positive length.  The universal length quantifier formalizes
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is DAP](is-dap.md)
+- [Is Monochromatic](is-monochromatic.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AccessibleSetsWanted](../../../../../sources/v2/WantedExt.md)

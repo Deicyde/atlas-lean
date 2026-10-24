@@ -13,7 +13,7 @@ then `e_1 = e_{1+p}`, so the whole sequence is periodic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
 
 ## Sources
 

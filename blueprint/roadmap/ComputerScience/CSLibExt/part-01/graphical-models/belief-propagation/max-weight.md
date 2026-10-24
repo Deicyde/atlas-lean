@@ -11,7 +11,11 @@ The maximum weight, computed by maximizing out the vertices from the last one do
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
+
+## Proof depends on
+
+- [Max Eliminate](max-eliminate.md)
 
 ## Sources
 

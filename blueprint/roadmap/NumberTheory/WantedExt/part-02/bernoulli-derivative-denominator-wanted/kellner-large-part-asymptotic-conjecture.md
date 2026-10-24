@@ -13,6 +13,10 @@ Kellner's conjecture (ii): there is `κ > 1` with `ω(𝔻^+_n) ∼ κ √n / lo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bernoulli Diff Denominator Large Part](bernoulli-diff-denominator-large-part.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BernoulliDerivativeDenominatorWanted](../../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,8 @@ stated (its `(dasc, ddes)` and `(pk, vl)` identities use statistics defined in t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Asc Des GF](asc-des-gf.md)
+- [Pattern3](pattern3.md)
 
 ## Sources
 

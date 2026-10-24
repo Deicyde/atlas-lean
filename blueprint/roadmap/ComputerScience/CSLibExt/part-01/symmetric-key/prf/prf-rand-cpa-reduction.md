@@ -14,7 +14,24 @@ randomness of one of the at most `q` encryption queries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CPAAdversary](cpaadversary.md)
+- [Cpa Reduction](cpa-reduction.md)
+- [Prf Rand](prf-rand.md)
+
+## Proof depends on
+
+- [Oracle Comp](oracle-comp.md)
+- [Done](done.md)
+- [Query](query.md)
+- [Run](run.md)
+- [Run bind](run-bind.md)
+- [Oracle Sig](oracle-sig.md)
+- [Cpa Guess](cpa-guess.md)
+- [Encrypt](encrypt.md)
+- [Pick](pick.md)
+- [Run Enc](run-enc.md)
+- [Run Enc congr](run-enc-congr.md)
+- [Sim Enc](sim-enc.md)
 
 ## Sources
 

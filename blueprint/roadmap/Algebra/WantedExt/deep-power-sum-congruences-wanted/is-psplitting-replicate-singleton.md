@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isPSplitting_replicate_singleton
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is PSplitting](is-psplitting.md)
 
 ## Sources
 

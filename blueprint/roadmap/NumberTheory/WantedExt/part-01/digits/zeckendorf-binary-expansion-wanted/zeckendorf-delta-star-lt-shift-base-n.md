@@ -17,7 +17,12 @@ for `N = 3` (`γ = 0.55467… > ω = 0.54368…`, so `p = 2`), and `δ*[ε] < δ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [L Star Collection](l-star-collection.md)
+- [Zeckendorf Delta Star](zeckendorf-delta-star.md)
+- [Zeckendorf Generic Exponent](zeckendorf-generic-exponent.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
 
 ## Sources
 

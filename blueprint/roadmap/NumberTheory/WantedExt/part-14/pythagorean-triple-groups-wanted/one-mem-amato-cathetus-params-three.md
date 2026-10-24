@@ -12,7 +12,7 @@ lean: MetaMathlibExt.one_mem_amatoCathetusParams_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amato Cathetus Params](amato-cathetus-params.md)
 
 ## Sources
 

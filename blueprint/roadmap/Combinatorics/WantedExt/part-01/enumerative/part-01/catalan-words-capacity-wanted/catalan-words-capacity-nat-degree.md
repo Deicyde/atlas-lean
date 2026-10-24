@@ -13,7 +13,8 @@ The case `n = 0` of the first formula is included (both sides are `0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+- [Catalan Words](catalan-words.md)
 
 ## Sources
 

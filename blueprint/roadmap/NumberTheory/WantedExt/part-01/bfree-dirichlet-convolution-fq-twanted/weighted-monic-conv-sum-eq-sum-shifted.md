@@ -12,7 +12,9 @@ Lemma 4: for arbitrary `α, β, γ`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Conv Shifted Sum](monic-conv-shifted-sum.md)
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+- [Weighted Monic Conv Sum](weighted-monic-conv-sum.md)
 
 ## Sources
 

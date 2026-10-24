@@ -15,7 +15,7 @@ denominators `Aᵢ = ± uᵢ`, `Bᵢ = ± vᵢ` (sign `+` for `i ≡ 0, 1 (mod 4
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Cont Fract](poly-cont-fract.md)
 
 ## Sources
 

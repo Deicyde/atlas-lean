@@ -11,7 +11,8 @@ lean: MetaMathlibExt.tendsto_lucasU_kJacobsthal_ratio
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Jacobsthal Params](k-jacobsthal-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

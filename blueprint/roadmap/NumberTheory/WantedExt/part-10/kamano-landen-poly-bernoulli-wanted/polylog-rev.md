@@ -12,7 +12,13 @@ Auxiliary recursion for `generalizedMultiplePolylog`, on the reversed index
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+
+## Proof depends on
+
+- [Form Series](form-series.md)
+- [Integral Div X](integral-div-x.md)
+- [Landen Form Series](landen-form-series.md)
 
 ## Sources
 

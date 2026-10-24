@@ -12,7 +12,7 @@ The characteristic existential condition for ending with an up step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ends With Up](ends-with-up.md)
 
 ## Sources
 

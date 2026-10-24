@@ -11,7 +11,7 @@ Apply a word map to both sides of each domino.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: Cslib.Complexity.Karp.EmitSS.bitsVal_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
 
 ## Sources
 

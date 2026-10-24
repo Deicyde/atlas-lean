@@ -12,7 +12,13 @@ Characteristic property: every `x₀` belongs to its own family (`n = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is In Second Order Family](is-in-second-order-family.md)
+
+## Proof depends on
+
+- [Second Order Bi Seq](second-order-bi-seq.md)
+- [Second Order Bwd](second-order-bwd.md)
+- [Second Order Fwd](second-order-fwd.md)
 
 ## Sources
 

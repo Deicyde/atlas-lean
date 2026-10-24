@@ -12,7 +12,10 @@ The loads of the steps add up to the work.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](../brent/dag.md)
+- [Schedule](../brent/schedule.md)
+- [Length](../brent/length.md)
+- [Load](load.md)
 
 ## Sources
 

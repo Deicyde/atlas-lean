@@ -12,7 +12,13 @@ A generated word of length at least `pumpBound` pumps: the language is infinite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Pump Bound](pump-bound.md)
+
+## Proof depends on
+
+- [Pumping pump Bound](pumping-pump-bound.md)
 
 ## Sources
 

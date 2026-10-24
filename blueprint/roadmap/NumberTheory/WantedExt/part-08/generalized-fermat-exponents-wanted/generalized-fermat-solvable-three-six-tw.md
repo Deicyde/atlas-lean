@@ -12,7 +12,7 @@ lean: MetaMathlibExt.generalizedFermatSolvable_three_six_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fermat Solvable](generalized-fermat-solvable.md)
 
 ## Sources
 

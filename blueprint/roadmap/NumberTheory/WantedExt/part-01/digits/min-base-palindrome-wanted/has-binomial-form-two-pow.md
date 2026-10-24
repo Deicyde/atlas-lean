@@ -12,7 +12,7 @@ has a representation in base `2^x - 1` in binomial form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Binomial Form](has-binomial-form.md)
 
 ## Sources
 

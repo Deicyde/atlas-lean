@@ -11,7 +11,7 @@ Theorem 1, prime case `p ≡ 1 (mod 4)`: `g(p) = (p - 1) / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abs Least APLength](abs-least-aplength.md)
 
 ## Sources
 

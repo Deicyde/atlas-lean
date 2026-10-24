@@ -12,7 +12,10 @@ lean: Cslib.Turing.SingleTapeTM.OfTM2.answerTM_outputsWithinTime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](../of-tm0/non-blank.md)
+- [Answer TM](../of-recursive/answer-tm.md)
+- [Cell Answer](../of-recursive/cell-answer.md)
+- [In Cell](../of-recursive/in-cell.md)
 
 ## Sources
 

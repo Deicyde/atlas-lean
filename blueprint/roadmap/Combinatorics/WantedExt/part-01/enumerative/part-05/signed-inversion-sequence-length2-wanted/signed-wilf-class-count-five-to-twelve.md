@@ -12,7 +12,7 @@ lean: MetaMathlibExt.signedWilfClassCount_five_to_twelve
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Wilf Class Count](signed-wilf-class-count.md)
 
 ## Sources
 

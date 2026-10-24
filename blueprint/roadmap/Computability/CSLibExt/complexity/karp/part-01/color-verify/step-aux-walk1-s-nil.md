@@ -12,7 +12,11 @@ The walk-on step with the counter exhausted: the farther endpoint's color is nex
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mv P](mv-p.md)
+- [Walk1 S](walk1-s.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

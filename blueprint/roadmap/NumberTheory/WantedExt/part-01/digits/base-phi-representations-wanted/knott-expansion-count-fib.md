@@ -11,7 +11,7 @@ lean: MetaMathlibExt.knottExpansionCount_fib
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knott Expansion Count](knott-expansion-count.md)
 
 ## Sources
 

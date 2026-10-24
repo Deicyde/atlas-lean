@@ -12,7 +12,12 @@ lean: MetaMathlibExt.gaussKuzminMass_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
+
+## Proof depends on
+
+- [Cf Cylinder](cf-cylinder.md)
+- [Cf Cylinder nil](cf-cylinder-nil.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ nonzero prime ideal of norm at most `N(π_n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quad Prime Norm](quad-prime-norm.md)
+- [Quad Schatunowsky Set](quad-schatunowsky-set.md)
 
 ## Sources
 

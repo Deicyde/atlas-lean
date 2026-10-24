@@ -12,7 +12,7 @@ The Delannoy number `D(m, n)` (the Delannoy triangle entry
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordinary Riordan Pascal Like Matrix](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/ordinary-riordan-pascal-like-matrix/ordinary-riordan-pascal-like-matrix.md)
 
 ## Sources
 

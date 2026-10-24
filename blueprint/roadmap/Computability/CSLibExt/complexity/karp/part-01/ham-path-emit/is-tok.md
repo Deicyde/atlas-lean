@@ -11,7 +11,7 @@ Tokens moved between `T` and `F`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

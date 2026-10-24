@@ -11,7 +11,11 @@ Stack alphabets: the output holds the verifier's symbols, every other stack bits
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stk](stk.md)
+
+## Proof depends on
+
+- [G](../dense-satverifier/g.md)
 
 ## Sources
 

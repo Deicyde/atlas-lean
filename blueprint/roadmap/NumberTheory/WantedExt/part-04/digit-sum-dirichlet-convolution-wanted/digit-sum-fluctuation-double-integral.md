@@ -13,6 +13,10 @@ lean: MetaMathlibExt.digitSumFluctuationDoubleIntegral
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DigitSumDirichletConvolutionWanted](../../../../../sources/v2/WantedExt.md)

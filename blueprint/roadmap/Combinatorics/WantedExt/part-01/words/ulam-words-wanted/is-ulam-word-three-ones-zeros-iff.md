@@ -11,7 +11,7 @@ For `n ≥ 3`, `1³ 0^{n-3}` is Ulam iff `n ≡ 0` or `1 (mod 4)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ulam Word](is-ulam-word.md)
 
 ## Sources
 

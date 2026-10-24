@@ -11,7 +11,11 @@ The variable stack: each name above a `cl` separator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [Name](name.md)
 
 ## Sources
 

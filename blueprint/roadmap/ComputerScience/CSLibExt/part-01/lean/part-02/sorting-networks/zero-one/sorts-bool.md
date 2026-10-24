@@ -11,7 +11,11 @@ Decide whether a network sorts every Boolean input, by running it on all `2 ^ n`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](network.md)
+
+## Proof depends on
+
+- [Run](run.md)
 
 ## Sources
 

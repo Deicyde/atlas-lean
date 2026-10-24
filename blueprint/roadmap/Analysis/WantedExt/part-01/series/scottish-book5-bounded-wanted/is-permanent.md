@@ -17,6 +17,10 @@ exactly these methods.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Matrix Sums](matrix-sums.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.Series.ScottishBook5BoundedWanted](../../../../../../sources/v2/WantedExt.md)

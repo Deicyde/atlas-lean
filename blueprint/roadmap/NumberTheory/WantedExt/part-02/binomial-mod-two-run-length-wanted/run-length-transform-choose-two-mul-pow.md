@@ -12,7 +12,7 @@ of `1, 1, 2, 4, 8, …`, i.e. `1` followed by the positive powers of `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ no meaning for the paper (for Fibonacci it is `0` although `gcd(0, 1) = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

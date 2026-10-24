@@ -12,7 +12,10 @@ Unfolding the `h`-full moment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [H Full](h-full.md)
+- [H Full Moment](h-full-moment.md)
+- [Omega Mult](omega-mult.md)
 
 ## Sources
 

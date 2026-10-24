@@ -12,7 +12,12 @@ lean: MetaMathlibExt.coconutCountTerm_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coconut Count Term](coconut-count-term.md)
+
+## Proof depends on
+
+- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Ballot Number](ballot-number.md)
 
 ## Sources
 

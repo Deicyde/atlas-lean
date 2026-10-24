@@ -11,7 +11,7 @@ lean: MetaMathlibExt.isDividedPowerIdeal_span_prime_padicInt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divided Power Ideal](is-divided-power-ideal.md)
 
 ## Sources
 

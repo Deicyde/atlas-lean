@@ -13,7 +13,7 @@ Theorem 6, second form: for `r ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RFibonacci](neg-rfibonacci.md)
 
 ## Sources
 

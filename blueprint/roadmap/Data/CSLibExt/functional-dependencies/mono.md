@@ -12,7 +12,12 @@ Supersets of superkeys are superkeys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+- [Is Superkey](is-superkey.md)
+
+## Proof depends on
+
+- [Derives](derives.md)
 
 ## Sources
 

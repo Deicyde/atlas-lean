@@ -13,7 +13,11 @@ vertex outside the last row `Fin.last n` is uncovered, and whose last row has st
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination State](domination-state.md)
+
+## Proof depends on
+
+- [Vertex Domination State](vertex-domination-state.md)
 
 ## Sources
 

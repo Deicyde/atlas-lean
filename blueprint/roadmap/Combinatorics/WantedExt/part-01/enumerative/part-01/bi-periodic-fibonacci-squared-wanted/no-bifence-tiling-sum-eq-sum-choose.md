@@ -12,7 +12,7 @@ Lemma 3.15: for nonzero `a`, `b`, the weighted number `C_n` of tilings with no b
 
 ## Depends on
 
-This node has no prerequisites.
+- [No Bifence Tiling Sum](no-bifence-tiling-sum.md)
 
 ## Sources
 

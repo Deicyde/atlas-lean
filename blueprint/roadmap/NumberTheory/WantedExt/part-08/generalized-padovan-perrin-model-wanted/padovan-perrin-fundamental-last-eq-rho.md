@@ -14,7 +14,8 @@ formula (12); the printed `n - (s + p - 1)` fails, e.g. `k₁ = k₂ = 1`, `p = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
+- [Padovan Perrin Rho](padovan-perrin-rho.md)
 
 ## Sources
 

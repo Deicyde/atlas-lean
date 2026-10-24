@@ -12,7 +12,7 @@ On `p ^ e` with `p ≡ 1 mod 4`, every divisor contributes 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Div Chi Sum](div-chi-sum.md)
 
 ## Sources
 

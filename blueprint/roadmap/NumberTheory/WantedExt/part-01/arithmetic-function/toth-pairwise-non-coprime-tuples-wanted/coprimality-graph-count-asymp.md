@@ -12,7 +12,8 @@ Theorem 1: for a coprimality graph with edge set `E` and maximum degree
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Density](coprimality-density.md)
+- [Coprimality Indicator](coprimality-indicator.md)
 
 ## Sources
 

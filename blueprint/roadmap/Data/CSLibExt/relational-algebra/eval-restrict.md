@@ -12,7 +12,11 @@ A condition only reads the attributes it mentions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond](cond.md)
+- [Attrs](attrs.md)
+- [Eval](eval.md)
+- [Tuple](tuple.md)
+- [Restrict](restrict.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A two-vertex list `(x, y)` is a cycle exactly when `x ≠ y` and both edges
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Digraph Cycle](is-digraph-cycle.md)
 
 ## Sources
 

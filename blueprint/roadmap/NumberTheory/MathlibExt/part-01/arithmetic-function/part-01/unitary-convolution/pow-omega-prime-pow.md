@@ -12,7 +12,7 @@ lean: MetaMathlibExt.powOmega_prime_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pow Omega](pow-omega.md)
 
 ## Sources
 

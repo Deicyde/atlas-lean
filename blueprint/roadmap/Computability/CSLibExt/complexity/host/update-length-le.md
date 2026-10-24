@@ -12,7 +12,9 @@ A single non-empty stack bounds every stack's length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [HK](hk.md)
+- [HΓ](h.md)
 
 ## Sources
 

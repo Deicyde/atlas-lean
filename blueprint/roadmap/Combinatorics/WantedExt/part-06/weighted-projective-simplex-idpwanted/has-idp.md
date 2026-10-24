@@ -17,6 +17,11 @@ implements the paper's intended `(m,w)`, correcting its displayed `(k,w)` typo.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Lattice Point](is-lattice-point.md)
+- [Polytope Dilate](polytope-dilate.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

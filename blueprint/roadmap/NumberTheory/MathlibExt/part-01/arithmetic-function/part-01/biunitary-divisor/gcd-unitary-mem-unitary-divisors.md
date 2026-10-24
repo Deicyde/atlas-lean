@@ -12,7 +12,8 @@ For positive `a` and `b`, `gcd₁(a, b)` is a common unitary divisor of `a` and 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Unitary](gcd-unitary.md)
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

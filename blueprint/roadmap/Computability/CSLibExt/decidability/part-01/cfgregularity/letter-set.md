@@ -11,7 +11,11 @@ The one-letter words over the letters of `T`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+
+## Proof depends on
+
+- [Tl](tl.md)
 
 ## Sources
 

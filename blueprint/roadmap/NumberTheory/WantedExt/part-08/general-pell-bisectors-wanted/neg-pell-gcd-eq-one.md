@@ -12,7 +12,8 @@ For `d > 1` whose negative Pell equation is solvable in integers and `n > 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
+- [Neg Pell G](neg-pell-g.md)
 
 ## Sources
 

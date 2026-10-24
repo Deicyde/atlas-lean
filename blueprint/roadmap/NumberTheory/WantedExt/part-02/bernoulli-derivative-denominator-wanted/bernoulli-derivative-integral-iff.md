@@ -12,7 +12,9 @@ is prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
+- [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
+- [Polynomial Denominator](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources
 

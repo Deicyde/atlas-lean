@@ -12,7 +12,11 @@ The partition obtained from `P` by joining the blocks of `i` and `j` has a cross
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
+
+## Proof depends on
+
+- [Merged Same Block](merged-same-block.md)
 
 ## Sources
 

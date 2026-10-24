@@ -14,7 +14,9 @@ ending at `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Is Proper LStar Block](is-proper-lstar-block.md)
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
 
 ## Sources
 

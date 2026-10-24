@@ -12,7 +12,12 @@ lean: MetaMathlibExt.goldenFactorialExponent_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Golden Factorial Exponent](golden-factorial-exponent.md)
+
+## Proof depends on
+
+- [Golden Factorial Exponent le](golden-factorial-exponent-le.md)
+- [Golden Factorial Exponent mem](golden-factorial-exponent-mem.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ standing assumption that `A` is infinite is not added.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sidon](../../../../MathlibExt/part-01/additive/is-sidon.md)
 
 ## Sources
 

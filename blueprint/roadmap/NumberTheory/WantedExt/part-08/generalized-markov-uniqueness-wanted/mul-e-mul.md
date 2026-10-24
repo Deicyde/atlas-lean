@@ -12,7 +12,7 @@ Lemma 3.7: for a `k`-generalized Cohn matrix `M` and `E = [[0, 0], [3 + 3k, 0]]`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Matrix](is-gen-cohn-matrix.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The `B`-sequence `⟨1, 2, 3, 4, 5⟩` continues with `B(6) = 1 + 2 + 3 = 6` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
 
 ## Sources
 

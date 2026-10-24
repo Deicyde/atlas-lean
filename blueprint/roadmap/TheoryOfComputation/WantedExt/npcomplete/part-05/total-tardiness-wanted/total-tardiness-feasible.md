@@ -11,7 +11,11 @@ An ordering of total tardiness at most `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total Tardiness Instance](total-tardiness-instance.md)
+
+## Proof depends on
+
+- [Total Tardiness Value](total-tardiness-value.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ With `K = Nat.clog 2 n` rounds the scan computes every prefix, in span `âŒˆlogâ‚
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kogge Stone](kogge-stone.md)
+- [Prefix Prod](prefix-prod.md)
+
+## Proof depends on
+
+- [The scan computes all prefix products](kogge-stone-eq-prefix.md)
 
 ## Sources
 

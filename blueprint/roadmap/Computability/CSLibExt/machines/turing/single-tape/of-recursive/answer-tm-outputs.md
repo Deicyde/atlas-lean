@@ -12,7 +12,10 @@ lean: Cslib.Turing.SingleTapeTM.OfTM2.answerTM_outputs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](../of-tm0/non-blank.md)
+- [Answer TM](answer-tm.md)
+- [Cell Answer](cell-answer.md)
+- [In Cell](in-cell.md)
 
 ## Sources
 

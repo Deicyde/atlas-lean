@@ -11,7 +11,11 @@ The left-to-right list of the elements of a heap, computed with an accumulator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+
+## Proof depends on
+
+- [To List Aux](to-list-aux.md)
 
 ## Sources
 

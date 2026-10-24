@@ -11,7 +11,7 @@ At least `K` pairwise disjoint subsets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Packing Instance](set-packing-instance.md)
 
 ## Sources
 

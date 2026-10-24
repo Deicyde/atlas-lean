@@ -12,7 +12,7 @@ The first value given by the recurrence: `m_{8,3} = 2464`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garvan M](garvan-m.md)
 
 ## Sources
 

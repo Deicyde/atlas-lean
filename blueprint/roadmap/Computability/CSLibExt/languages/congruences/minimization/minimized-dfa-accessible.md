@@ -12,7 +12,15 @@ The reachable-residual presentation remains accessible after reindexing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible](../minimality/accessible.md)
+- [Minimized DFA](minimized-dfa.md)
+- [Reachable Residuals](../minimality/reachable-residuals.md)
+
+## Proof depends on
+
+- [Reachable State](../minimality/reachable-state.md)
+- [Left Quotient Equiv Reachable Residuals](left-quotient-equiv-reachable-residuals.md)
+- [To DFA accessible](to-dfa-accessible.md)
 
 ## Sources
 

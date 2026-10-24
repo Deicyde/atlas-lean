@@ -11,7 +11,12 @@ lean: Cslib.MachineLearning.GraphicalModels.ConditionalRandomField.partitionTab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+
+## Proof depends on
+
+- [Forward Tab](forward-tab.md)
+- [Sum Vec](../../sequence/hidden-markov/sum-vec.md)
 
 ## Sources
 

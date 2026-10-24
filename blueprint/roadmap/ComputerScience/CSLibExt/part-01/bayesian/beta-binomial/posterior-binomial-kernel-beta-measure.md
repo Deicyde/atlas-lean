@@ -13,7 +13,14 @@ lean: Cslib.MachineLearning.Bayesian.posterior_binomialKernel_betaMeasure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Kernel](binomial-kernel.md)
+
+## Proof depends on
+
+- [Bayes Posterior](../basic/bayes-posterior.md)
+- [Beta PDF mul binomial Kernel](beta-pdf-mul-binomial-kernel.md)
+- [The beta-binomial distribution](binomial-kernel-comp-beta-measure.md)
+- [Bayes' rule for discrete observations](../basic/posterior-eq-bayes-posterior.md)
 
 ## Sources
 

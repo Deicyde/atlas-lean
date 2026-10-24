@@ -11,7 +11,7 @@ Positivity: for every `n ≥ 1` and every integer `N ≥ 2`, `P̄_n(N) > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
 
 ## Sources
 

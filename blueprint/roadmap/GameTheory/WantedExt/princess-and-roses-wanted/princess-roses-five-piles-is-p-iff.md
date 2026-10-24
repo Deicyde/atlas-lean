@@ -13,7 +13,9 @@ only if its parity pattern is `(E, E, E, E, E)`, `(O, O, O, E, E)`, `(E, O, O, O
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
+- [Princess Roses](princess-roses.md)
 
 ## Sources
 

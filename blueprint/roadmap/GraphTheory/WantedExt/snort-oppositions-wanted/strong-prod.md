@@ -14,6 +14,10 @@ The strong product `G ⊠ H`: the formula product for
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Formula Product](formula-product.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.SnortOppositionsWanted](../../../../sources/v2/WantedExt.md)

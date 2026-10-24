@@ -12,7 +12,7 @@ lean: MetaMathlibExt.kimberlingBlock_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling Block](kimberling-block.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ with `𝓛^{(0)}_{p,n} = 𝓛_{p,n}` (and `𝓛^{(k)}_{p,0} = 1`, proved as
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leonardo PK](../../part-11/leonardo-pwanted/leonardo-pk.md)
+- [Hyper Leonardo P](hyper-leonardo-p.md)
 
 ## Sources
 

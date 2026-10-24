@@ -13,7 +13,11 @@ where evaluating `depth` directly recomputes shared subpaths exponentially often
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+
+## Proof depends on
+
+- [Depths Up To](depths-up-to.md)
 
 ## Sources
 

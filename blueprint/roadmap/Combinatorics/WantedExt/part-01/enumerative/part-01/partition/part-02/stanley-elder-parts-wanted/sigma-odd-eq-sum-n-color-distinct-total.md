@@ -15,7 +15,8 @@ for `m ≥ 1`, `σ_odd(m) = ∑_{k=1}^{m} (C_o(D, k) + C_e(D, k)) C_{e-o}(m-k)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
+- [Sigma Odd](sigma-odd.md)
 
 ## Sources
 

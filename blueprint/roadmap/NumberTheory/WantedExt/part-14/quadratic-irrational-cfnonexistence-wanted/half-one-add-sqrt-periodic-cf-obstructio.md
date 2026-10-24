@@ -14,7 +14,7 @@ number `A'_l` of unrealized patterns is `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Periodic CF](has-periodic-cf.md)
 
 ## Sources
 

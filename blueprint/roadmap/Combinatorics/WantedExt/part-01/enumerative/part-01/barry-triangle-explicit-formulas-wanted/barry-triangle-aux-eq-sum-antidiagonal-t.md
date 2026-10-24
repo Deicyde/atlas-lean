@@ -13,7 +13,7 @@ tuples of nonnegative integers. Index `i : Fin (a - 1)` stands for the paper's `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Barry Triangle Aux](barry-triangle-aux.md)
 
 ## Sources
 

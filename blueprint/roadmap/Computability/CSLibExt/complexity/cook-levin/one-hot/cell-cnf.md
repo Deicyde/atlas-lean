@@ -11,7 +11,14 @@ All one-hot clauses of one cell.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Dense Clause](../family/dense-clause.md)
+- [Alo Lits](alo-lits.md)
+- [Rows CNF](rows-cnf.md)
+- [Clause](../../dense-sat/clause.md)
 
 ## Sources
 

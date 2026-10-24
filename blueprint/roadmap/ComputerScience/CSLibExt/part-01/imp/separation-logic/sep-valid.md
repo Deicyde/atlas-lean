@@ -12,7 +12,15 @@ command never faults, and every terminating execution ends in `Q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HAssertion](hassertion.md)
+- [Heap Cmd](../heap-step/heap-cmd.md)
+
+## Proof depends on
+
+- [HSteps](../heap-step/hsteps.md)
+- [Heap](../heap/heap.md)
+- [Safe](../heap-step/safe.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

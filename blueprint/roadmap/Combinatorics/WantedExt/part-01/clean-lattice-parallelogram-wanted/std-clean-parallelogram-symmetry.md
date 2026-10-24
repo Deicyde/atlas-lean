@@ -11,7 +11,7 @@ The map `S(x, y) = -(x, y) + (a + 1, n)` sends `P_{a,n}` onto itself and is an i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Std Clean Parallelogram](std-clean-parallelogram.md)
 
 ## Sources
 

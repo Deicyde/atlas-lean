@@ -12,7 +12,16 @@ the implication graph contains a literal together with its complement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Components](../../../lean/part-01/graph/strongly-connected-components/components.md)
+- [Lit](lit.md)
+- [Neg](neg-2.md)
+- [Implication Graph](implication-graph.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

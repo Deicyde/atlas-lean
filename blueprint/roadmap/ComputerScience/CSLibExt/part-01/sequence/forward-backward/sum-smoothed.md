@@ -12,7 +12,15 @@ The smoothing weights at each time sum to one when the likelihood is nonzero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+- [Likelihood](../hidden-markov/likelihood.md)
+- [Smoothed](smoothed.md)
+
+## Proof depends on
+
+- [Backward](backward.md)
+- [Forward](../hidden-markov/forward.md)
+- [Likelihood eq sum forward mul backward](likelihood-eq-sum-forward-mul-backward.md)
 
 ## Sources
 

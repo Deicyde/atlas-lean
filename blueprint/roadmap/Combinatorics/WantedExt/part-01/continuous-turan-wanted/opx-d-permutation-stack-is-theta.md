@@ -15,7 +15,7 @@ points on a vertical line and `opx(n, P_2, 3) ≤ n²`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

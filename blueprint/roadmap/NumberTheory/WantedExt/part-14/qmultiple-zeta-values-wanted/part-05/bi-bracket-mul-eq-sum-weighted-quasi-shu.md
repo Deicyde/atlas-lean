@@ -14,7 +14,9 @@ stuffle product of MZVs) is informal and omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Bracket](../part-04/bi-bracket.md)
+- [Bi Bracket Diamond](bi-bracket-diamond.md)
+- [Weighted Quasi Shuffle](weighted-quasi-shuffle.md)
 
 ## Sources
 

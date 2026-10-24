@@ -12,7 +12,14 @@ lean: Cslib.Complexity.Karp.subsetSumDec_noSS
 
 ## Depends on
 
-This node has no prerequisites.
+- [No SS](../subset-sum/no-ss.md)
+- [Subset Sum Dec](../subset-sum/subset-sum-dec.md)
+
+## Proof depends on
+
+- [Encode SS](../subset-sum/encode-ss.md)
+- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
+- [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

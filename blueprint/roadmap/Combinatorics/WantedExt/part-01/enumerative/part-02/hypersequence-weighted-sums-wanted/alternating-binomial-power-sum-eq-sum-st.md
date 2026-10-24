@@ -13,7 +13,7 @@ Proposition 1: (i) (Boyadzhiev)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

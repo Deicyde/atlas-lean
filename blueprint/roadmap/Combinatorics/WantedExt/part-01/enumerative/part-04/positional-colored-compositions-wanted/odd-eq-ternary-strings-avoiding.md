@@ -12,7 +12,7 @@ ternary strings of length `k - 1` avoiding the factors `01` and `12`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positional Colored Composition Count](positional-colored-composition-count.md)
 
 ## Sources
 

@@ -20,6 +20,7 @@ A satisfying input supplies an accepted certificate through the canonical trace.
 ## Proof depends on
 
 - [Verify Boolean Certificate iff](verify-boolean-certificate-iff.md)
+- [To Fin](to-fin.md)
 
 ## Sources
 

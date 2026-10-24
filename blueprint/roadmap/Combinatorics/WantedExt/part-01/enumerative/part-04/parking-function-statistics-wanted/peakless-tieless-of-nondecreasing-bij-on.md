@@ -12,7 +12,9 @@ onto the peakless-tieless parking functions `PTPF_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+- [Is Partial Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
+- [Peakless Tieless Of Nondecreasing](peakless-tieless-of-nondecreasing.md)
 
 ## Sources
 

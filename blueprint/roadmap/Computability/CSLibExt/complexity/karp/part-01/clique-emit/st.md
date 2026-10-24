@@ -12,7 +12,13 @@ side `e`, `c` clauses and `n` occurrences counted, and empty scratch stacks `B`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Γ](untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.qBracket_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The list implementation agrees with the round recursion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kogge Stone](kogge-stone.md)
+- [Scan List](scan-list.md)
+
+## Proof depends on
+
+- [Round List](round-list.md)
 
 ## Sources
 

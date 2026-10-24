@@ -13,7 +13,7 @@ Theorem 2 (Bennett): for nonnegative integers `k, ℓ, m, n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

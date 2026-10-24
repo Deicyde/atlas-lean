@@ -13,7 +13,9 @@ Theorem 1: for `n ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Daehee](degenerate-daehee.md)
+- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
+- [Generalized Degenerate Hyperharmonic](generalized-degenerate-hyperharmonic.md)
 
 ## Sources
 

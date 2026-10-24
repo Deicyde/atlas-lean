@@ -12,7 +12,8 @@ Proposition 16: the case `ℓ = 2` of Theorem 17, with `(a₀, b₀) = (3, 6)` a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
+- [Wythoff Terminal PSet](wythoff-terminal-pset.md)
 
 ## Sources
 

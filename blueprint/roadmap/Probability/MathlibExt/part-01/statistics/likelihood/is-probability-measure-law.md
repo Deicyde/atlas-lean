@@ -12,7 +12,8 @@ Probability normalization derived from the density integral.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Density Family](normalized-density-family.md)
+- [Law](law.md)
 
 ## Sources
 

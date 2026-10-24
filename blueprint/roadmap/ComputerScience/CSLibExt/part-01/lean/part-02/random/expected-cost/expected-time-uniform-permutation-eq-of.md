@@ -13,7 +13,12 @@ If the running time is the same constant `c` on every permutation of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected Time](expected-time.md)
+- [Uniform Permutation](uniform-permutation.md)
+
+## Proof depends on
+
+- [Expected Time eq of time eq](expected-time-eq-of-time-eq.md)
 
 ## Sources
 

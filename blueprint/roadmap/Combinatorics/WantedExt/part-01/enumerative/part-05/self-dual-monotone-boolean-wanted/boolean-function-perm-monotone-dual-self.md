@@ -12,7 +12,8 @@ if `f ∈ D_n` then `f* ∘ π = (f ∘ π)*`; if `f ∈ Λ_n` then every `g ∈
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
+- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

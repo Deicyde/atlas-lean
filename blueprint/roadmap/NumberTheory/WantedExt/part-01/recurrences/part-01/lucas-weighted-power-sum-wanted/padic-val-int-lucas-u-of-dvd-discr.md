@@ -15,7 +15,8 @@ standing hypothesis) is added; without it `x = 6, y = 3`, `ℓ = 3 ∣ D = 24` h
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

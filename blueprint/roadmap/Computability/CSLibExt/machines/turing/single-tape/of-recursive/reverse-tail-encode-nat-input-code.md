@@ -12,7 +12,12 @@ lean: Cslib.Turing.SingleTapeTM.OfTM2.reverse_tail_encodeNat_inputCode
 
 ## Depends on
 
-This node has no prerequisites.
+- [Input Code](input-code.md)
+
+## Proof depends on
+
+- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

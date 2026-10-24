@@ -13,6 +13,10 @@ The displacement `d(i + 1) = p(i + 1) - w(i + 1)` of car `i + 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stirling Park Spot](stirling-park-spot.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.StirlingLuckyDisplacementWanted](../../../../../../../sources/v2/WantedExt.md)

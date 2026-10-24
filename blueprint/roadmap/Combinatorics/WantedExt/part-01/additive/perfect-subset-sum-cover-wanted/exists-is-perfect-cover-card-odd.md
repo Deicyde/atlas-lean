@@ -12,7 +12,7 @@ perfect cover of `G` has exactly `k` elements whose `ℤ_{2^n}`-coordinate `y` i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect Cover](is-perfect-cover.md)
 
 ## Sources
 

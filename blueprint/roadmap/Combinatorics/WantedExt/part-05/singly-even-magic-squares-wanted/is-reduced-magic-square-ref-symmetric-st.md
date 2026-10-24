@@ -19,7 +19,7 @@ As in Theorem 1, the statement is vacuous at `m = 0`, where no `A₁` satisfies 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reduced Magic Square](is-reduced-magic-square.md)
 
 ## Sources
 

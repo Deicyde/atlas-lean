@@ -14,7 +14,9 @@ Article A22, Proposition 6.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A005717](a005717.md)
+- [Central Trinomial](central-trinomial.md)
+- [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ The sorter on `2 ^ k` wires has `(k² - k + 4) 2 ^ k / 4 - 1` comparators (exact
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Even Sort N](odd-even-sort-n.md)
+
+## Proof depends on
+
+- [Length odd Even Merge](length-odd-even-merge.md)
+- [Odd Even Merge](odd-even-merge.md)
+- [Relabel](relabel.md)
 
 ## Sources
 

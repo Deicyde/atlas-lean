@@ -12,7 +12,12 @@ lean: Cslib.Decidability.singleTapeRecognizable_iff_rePred
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape Recognizable](../classes/single-tape-recognizable.md)
+
+## Proof depends on
+
+- [R.e. predicates are recognizable by single-tape machines](../of-recursive/of-re-pred.md)
+- [A predicate recognized by a single-tape machine is r.e](../to-recursive/re-pred.md)
 
 ## Sources
 

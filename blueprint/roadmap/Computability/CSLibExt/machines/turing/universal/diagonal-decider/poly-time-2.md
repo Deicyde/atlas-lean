@@ -11,7 +11,19 @@ lean: Cslib.Turing.Universal.Diag.Layout.polyTime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [Comp](../../../../complexity/host/comp.md)
+- [Reduction host](../../../../complexity/host/reduction.md)
+- [K](k-2.md)
+- [Lab](lab-2.md)
+- [Comp](comp-2.md)
+- [Prog](prog-2.md)
+- [The layout run](run-2.md)
+- [Γ](untitled-2.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

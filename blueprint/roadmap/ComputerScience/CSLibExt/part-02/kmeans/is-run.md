@@ -15,6 +15,11 @@ center.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nearest](nearest.md)
+- [Centers](centers.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.KMeans](../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,9 @@ On `C_{001(01)^d}`: `Δ^{(1)} = -d`, and for `k ≥ 2`, `Δ_k^{(1)} = -k/2` if `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
 
 ## Sources
 

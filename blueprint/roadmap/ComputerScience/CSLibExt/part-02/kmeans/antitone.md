@@ -12,7 +12,14 @@ lean: Cslib.MachineLearning.KMeans.IsRun.antitone
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Run](is-run.md)
+- [Cost](cost.md)
+
+## Proof depends on
+
+- [Nearest](nearest.md)
+- [Centers](centers.md)
+- [One round of Lloyd's algorithm never increases the cost](cost-lloyd-le.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ of the first `n + 1` terms `m, …, m + n` in `τᵏ(X)` are pairwise distinct f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Throwback](throwback.md)
 
 ## Sources
 

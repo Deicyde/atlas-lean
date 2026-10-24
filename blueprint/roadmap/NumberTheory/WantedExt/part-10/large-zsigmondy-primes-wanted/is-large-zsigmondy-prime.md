@@ -14,6 +14,10 @@ A large Zsigmondy prime for `(a, b, n)`: a prime `p` dividing `aⁿ - bⁿ` but 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Primitive Prime Divisor](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LargeZsigmondyPrimesWanted](../../../../../sources/v2/WantedExt.md)

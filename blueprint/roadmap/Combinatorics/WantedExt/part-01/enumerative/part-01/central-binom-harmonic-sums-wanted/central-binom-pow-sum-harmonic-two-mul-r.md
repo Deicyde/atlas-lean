@@ -14,7 +14,7 @@ and `S_1^{2H}(n) = (1/9) 2^{-2n} C(2n,n) (3n(2n+1) H_{2n} - 4n^2 + 7n + 3) - 1/3
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binom Pow Sum](central-binom-pow-sum.md)
 
 ## Sources
 

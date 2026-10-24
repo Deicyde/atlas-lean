@@ -16,7 +16,11 @@ is `8192 · 10⁻⁴ · 2^{10⁻⁴} < 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Seq](digit-seq.md)
+- [Lunar Decomposable Set](lunar-decomposable-set.md)
+- [Lunar Hoeffding Extremal Set](lunar-hoeffding-extremal-set.md)
+- [Lunar Level Count](lunar-level-count.md)
+- [Max Min Mul](max-min-mul.md)
 
 ## Sources
 

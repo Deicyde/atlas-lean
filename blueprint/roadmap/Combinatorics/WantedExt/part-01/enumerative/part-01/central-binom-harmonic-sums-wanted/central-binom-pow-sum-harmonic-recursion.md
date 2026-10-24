@@ -13,7 +13,7 @@ Theorem 2: `S_0^H(n) = (2n+1) 2^{-2n} C(2n,n) (H_n - 2) + 2`, and for `r ≥ 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binom Pow Sum](central-binom-pow-sum.md)
 
 ## Sources
 

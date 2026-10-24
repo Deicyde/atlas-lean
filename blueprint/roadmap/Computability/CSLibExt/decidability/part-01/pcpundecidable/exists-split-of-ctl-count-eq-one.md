@@ -12,7 +12,13 @@ A word with exactly one control symbol splits at it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ctl](is-ctl.md)
+- [TMSym](tmsym.md)
+- [Ctl Count](ctl-count.md)
+
+## Proof depends on
+
+- [Is Ctl B](is-ctl-b.md)
 
 ## Sources
 

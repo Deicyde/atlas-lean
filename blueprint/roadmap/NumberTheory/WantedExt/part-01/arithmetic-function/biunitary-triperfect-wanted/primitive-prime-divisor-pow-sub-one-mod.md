@@ -14,7 +14,7 @@ primitive prime factor exists unless `(a, n) = (2, 6)` or `n = 2` and `a + 1` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Prime Divisor](../../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
 
 ## Sources
 

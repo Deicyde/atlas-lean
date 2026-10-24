@@ -12,7 +12,8 @@ Characterization of a lacunary set by a range representation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lacunary](is-lacunary.md)
+- [Is Lacunary Set](is-lacunary-set.md)
 
 ## Sources
 

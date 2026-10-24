@@ -13,6 +13,10 @@ The triple reached from `T` by applying the steps of the path `w` in order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gen Cohn Step](gen-cohn-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedMarkovUniquenessWanted](../../../../../sources/v2/WantedExt.md)

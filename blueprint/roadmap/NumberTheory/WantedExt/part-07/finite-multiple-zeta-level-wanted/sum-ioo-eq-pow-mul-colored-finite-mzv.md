@@ -14,7 +14,7 @@ The entries of `k` may be `0`; the paper's indices have positive entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Finite MZV](colored-finite-mzv.md)
 
 ## Sources
 

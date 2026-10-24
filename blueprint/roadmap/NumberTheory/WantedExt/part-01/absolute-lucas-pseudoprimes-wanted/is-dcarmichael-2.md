@@ -12,7 +12,12 @@ A primary `D`-Carmichael number is `D`-Carmichael.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DCarmichael](is-dcarmichael.md)
+- [Is Primary DCarmichael](is-primary-dcarmichael.md)
+
+## Proof depends on
+
+- [Lucas Digit Sum](lucas-digit-sum.md)
 
 ## Sources
 

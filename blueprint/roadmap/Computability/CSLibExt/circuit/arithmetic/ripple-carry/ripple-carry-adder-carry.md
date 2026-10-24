@@ -12,7 +12,17 @@ lean: Cslib.Circuits.rippleCarryAdder_carry
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Interpretation](arith-interpretation.md)
+- [Arith Signature](arith-signature.md)
+- [Rca Input](rca-input.md)
+- [Ripple Carry Adder](ripple-carry-adder.md)
+
+## Proof depends on
+
+- [Carry Wire](carry-wire.md)
+- [Carry Wire value](carry-wire-value.md)
+- [Rca Program](rca-program.md)
+- [Every gate's value](rca-program-eval.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ derivation uses Waring's formula, which it states for positive `n` only.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

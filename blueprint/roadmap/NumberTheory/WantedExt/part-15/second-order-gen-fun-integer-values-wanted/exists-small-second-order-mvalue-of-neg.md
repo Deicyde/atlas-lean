@@ -16,7 +16,9 @@ the claim fails: for `(a, b, p) = (-1, 8, -1)` and `x = 0` the family `A^{(0,1)}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Bi Seq](second-order-bi-seq.md)
+- [Second Order Gen Value](second-order-gen-value.md)
+- [Second Order MValue](second-order-mvalue.md)
 
 ## Sources
 

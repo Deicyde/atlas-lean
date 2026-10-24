@@ -14,7 +14,7 @@ sequences. All Proposition 20 hypotheses and the printed assumption `l ≥ 2` ar
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gobel BSequence](is-gobel-bsequence.md)
 
 ## Sources
 

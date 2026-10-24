@@ -12,7 +12,12 @@ A dependency `X → Y` gives `X → X ∪ Y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](derives.md)
+- [FD](fd.md)
+
+## Proof depends on
+
+- [Union](union.md)
 
 ## Sources
 

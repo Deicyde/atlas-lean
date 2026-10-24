@@ -12,7 +12,7 @@ The first values `d 0, …, d 4 = 0, 1, 2, 2, 5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Sign Fibonacci](alternating-sign-fibonacci.md)
 
 ## Sources
 

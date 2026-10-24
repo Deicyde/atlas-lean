@@ -13,7 +13,7 @@ little-endian order, corresponding to the paper's `(210112)_{3/2}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Three Halves Digits](base-three-halves-digits.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Reading the color of a vertex `i < n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col](col.md)
+- [Cols](cols.md)
 
 ## Sources
 

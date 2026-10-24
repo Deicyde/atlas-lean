@@ -12,7 +12,7 @@ The zero sequence is not an extraTrib.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Extra Trib](is-extra-trib.md)
 
 ## Sources
 

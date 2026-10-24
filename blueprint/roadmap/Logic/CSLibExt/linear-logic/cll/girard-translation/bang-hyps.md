@@ -12,7 +12,13 @@ From `⊢ ?Γ, A` derive `⊢ ?Γ, !A` (promotion).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyps](hyps.md)
+
+## Proof depends on
+
+- [Hyp](hyp.md)
+- [Girard's translation](translate.md)
+- [All Quest cons quest](all-quest-cons-quest.md)
 
 ## Sources
 

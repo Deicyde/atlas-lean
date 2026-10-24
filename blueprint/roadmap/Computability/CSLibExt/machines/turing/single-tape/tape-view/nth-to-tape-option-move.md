@@ -12,7 +12,12 @@ The cells after an optional move are those before, shifted by `optionMoveOffset`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Option Move Offset](option-move-offset.md)
+- [To Tape](to-tape.md)
+
+## Proof depends on
+
+- [To Tape option Move](to-tape-option-move.md)
 
 ## Sources
 

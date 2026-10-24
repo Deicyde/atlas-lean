@@ -12,7 +12,8 @@ Proposition 3: for `u ≥ 2`, `(|D_{u,n}|)` is a periodic subsequence of `(d_{u,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Avoiding Multiples Count](schreier-avoiding-multiples-count.md)
+- [Schreier Parent D](schreier-parent-d.md)
 
 ## Sources
 

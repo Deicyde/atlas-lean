@@ -11,7 +11,7 @@ Lemma 5: `f` is monotonically increasing (non-decreasing) on `ℝ_{≥ 0}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Campbell F](campbell-f.md)
 
 ## Sources
 

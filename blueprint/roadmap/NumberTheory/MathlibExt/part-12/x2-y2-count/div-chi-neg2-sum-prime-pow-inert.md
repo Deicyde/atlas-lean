@@ -13,7 +13,7 @@ and 0 for odd `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Div Chi Neg2 Sum](div-chi-neg2-sum.md)
 
 ## Sources
 

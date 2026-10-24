@@ -12,7 +12,18 @@ included), and `S[t, sitIdx (row t)]` (stored in row `t+1`). Row 0's situation b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+
+## Proof depends on
+
+- [C Idx](../../family/c-idx.md)
+- [X Idx](../../family/x-idx.md)
+- [Cell](../part-03/cell.md)
+- [Code](../part-03/code.md)
+- [Layout](../part-01/layout.md)
+- [Sa](../part-01/sa.md)
+- [Sit Idx](../part-03/sit-idx.md)
+- [Run I](../part-03/run-i.md)
 
 ## Sources
 

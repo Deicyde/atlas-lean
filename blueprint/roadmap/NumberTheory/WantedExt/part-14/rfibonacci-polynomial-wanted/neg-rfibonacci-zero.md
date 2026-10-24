@@ -12,7 +12,7 @@ lean: MetaMathlibExt.negRFibonacci_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RFibonacci](neg-rfibonacci.md)
 
 ## Sources
 

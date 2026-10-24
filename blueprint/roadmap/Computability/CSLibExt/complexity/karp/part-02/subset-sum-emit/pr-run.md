@@ -13,7 +13,19 @@ from `Y` onto `Z` and write the digit `b && (mj || a)`, `a` being the row vertex
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Blk](../subset-sum-digits/blk.md)
+- [Prog](prog.md)
+- [Γ](untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Is V](is-v.md)
+- [Is V val](is-v-val.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ is `A_k(x, y) = (1 - x²)(1 - x(1 - y))/(1 - x - x² + x³ - x^{3+k}y²)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bivariate Count GF](bivariate-count-gf.md)
+- [K Arndt Composition Count](k-arndt-composition-count.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Andrews' identity (6.23): for `|q| < 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
 
 ## Sources
 

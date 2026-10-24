@@ -12,7 +12,7 @@ The top component of `CSL` is the left shift.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Shift Left Strategy](cyclic-shift-left-strategy.md)
 
 ## Sources
 

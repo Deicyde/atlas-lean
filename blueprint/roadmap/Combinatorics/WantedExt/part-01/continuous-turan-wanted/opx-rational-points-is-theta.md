@@ -12,7 +12,7 @@ coordinates has `opx(n, Q_P) = Θ(n²)` as `n → ∞`. Nonemptiness is added (`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

@@ -39,7 +39,7 @@ theorem emp_out (m : MS) : chainOut m empSites = out [(m.n, 0), (m.n, 1), (m.n, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cons Edges](../color/cons-edges.md)
 
 ## Sources
 

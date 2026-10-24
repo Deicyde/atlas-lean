@@ -11,7 +11,8 @@ Work stacks from four lists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
+- [W](w.md)
 
 ## Sources
 

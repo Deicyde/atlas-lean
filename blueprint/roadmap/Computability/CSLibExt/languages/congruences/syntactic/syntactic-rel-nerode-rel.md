@@ -12,7 +12,12 @@ Syntactic equivalence refines Nerode equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Rel](../nerode/nerode-rel.md)
+- [Syntactic Rel](syntactic-rel.md)
+
+## Proof depends on
+
+- [Nerode Rel iff](../nerode/nerode-rel-iff.md)
 
 ## Sources
 

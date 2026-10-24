@@ -12,7 +12,14 @@ Prior density times likelihood is the evidence density times the posterior densi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lin Reg Evidence PDFReal](lin-reg-evidence-pdfreal.md)
+- [Lin Reg Likelihood PDFReal](lin-reg-likelihood-pdfreal.md)
+- [Lin Reg Post Mean](lin-reg-post-mean.md)
+- [Lin Reg Post Var](lin-reg-post-var.md)
+
+## Proof depends on
+
+- [Completing the square for linear regression](gaussian-pdfreal-mul-lin-reg-likelihood.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ The optimal alignment of two singletons: match, or two gaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nw Score](../sequence-alignment/nw-score.md)
+
+## Proof depends on
+
+- [The Needleman–Wunsch recurrence](../sequence-alignment/nw-score-eq.md)
+- [Nw Score nil left](../sequence-alignment/nw-score-nil-left.md)
+- [Nw Score nil right](../sequence-alignment/nw-score-nil-right.md)
 
 ## Sources
 

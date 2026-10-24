@@ -12,7 +12,7 @@ If `h` has the NS property, `k ≥ 1` and `⌊z' / 2^k⌋ = ⌊z / 2^k⌋`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

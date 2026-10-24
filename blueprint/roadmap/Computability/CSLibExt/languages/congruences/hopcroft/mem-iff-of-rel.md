@@ -12,7 +12,8 @@ A block contains both or neither of two related states.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Partition](is-partition.md)
+- [Rel](rel.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ consecutive zero-indexed fixed points and `m` their counted pure-high-extremal g
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Three Halves Digits](base-three-halves-digits.md)
+- [Josephus Three Fixed Point](josephus-three-fixed-point.md)
+- [Josephus Three Gap](josephus-three-gap.md)
 
 ## Sources
 

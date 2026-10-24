@@ -12,7 +12,7 @@ are covered by `2n = 5k(3k + 1)` with `k ∈ ℤ` (replace `k` by `-k`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
 
 ## Sources
 

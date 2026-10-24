@@ -13,7 +13,7 @@ For `j ∈ {1, 2, 3}` there is `K_j` such that `C(k) B(k) < e^γ D(k)` for all `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meissel Mertens Constant](../../part-01/prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

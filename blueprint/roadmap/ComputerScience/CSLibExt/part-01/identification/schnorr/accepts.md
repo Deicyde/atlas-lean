@@ -13,6 +13,10 @@ The verifier's check on a transcript `(I, r, s)`: `g ^ s * (y ^ r)⁻¹ = I`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gpow](../../public-key/diffie-hellman/gpow.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.Identification.Schnorr](../../../../../../sources/v2/CSLibExt.md)

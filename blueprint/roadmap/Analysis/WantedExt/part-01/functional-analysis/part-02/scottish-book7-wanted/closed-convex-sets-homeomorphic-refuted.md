@@ -17,7 +17,7 @@ Frechet spaces by Banakh-Cauty, Studia Mathematica 205 (2011) 1-11.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem7 Claim](scottish-book-problem7-claim.md)
 
 ## Sources
 

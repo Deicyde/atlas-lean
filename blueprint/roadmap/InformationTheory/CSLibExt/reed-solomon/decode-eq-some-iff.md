@@ -13,7 +13,15 @@ returns `p` iff `p` has degree less than `k` and its encoding is within distance
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key Solver](key-solver.md)
+- [Decode](decode.md)
+- [Encode](encode.md)
+
+## Proof depends on
+
+- [Is Key Solution](is-key-solution.md)
+- [Div By Monic eq of is Key Solution](div-by-monic-eq-of-is-key-solution.md)
+- [The key equations are solvable](exists-is-key-solution.md)
 
 ## Sources
 

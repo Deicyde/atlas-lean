@@ -14,6 +14,10 @@ scheme.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Metered Outcome](metered-outcome.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MeteredParkingFunctionsWanted](../../../../../../../sources/v2/WantedExt.md)

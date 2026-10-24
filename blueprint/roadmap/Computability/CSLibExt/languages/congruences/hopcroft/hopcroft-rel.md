@@ -13,6 +13,10 @@ The pairs of states in a common block of Hopcroft's partition.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hopcroft Partition](hopcroft-partition.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.Hopcroft](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,11 @@ This is a reindexing of Mathlib's `Language.toDFA`, not a second implementation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reachable Residuals](../minimality/reachable-residuals.md)
+
+## Proof depends on
+
+- [Left Quotient Equiv Reachable Residuals](left-quotient-equiv-reachable-residuals.md)
 
 ## Sources
 

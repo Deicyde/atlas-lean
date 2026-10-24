@@ -14,6 +14,11 @@ The companion bronze numbers of the second type, `D_n = B_{n+1} - B_n = 2B_n + B
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OlympicGamesNumerationWanted](../../../../../sources/v2/WantedExt.md)

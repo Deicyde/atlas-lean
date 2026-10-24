@@ -14,7 +14,14 @@ coefficient `m_n(α)` counts the compositions whose part multiplicities are `α`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trudi Partition Sum](trudi-partition-sum.md)
+
+## Proof depends on
+
+- [Words Of Content](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/words-of-content.md)
+- [Card words Of Content eq multinomial](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/card-words-of-content-eq-multinomial.md)
+- [Sum witt Word Content](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/sum-witt-word-content.md)
+- [Witt Word Content](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/witt-word-content.md)
 
 ## Sources
 

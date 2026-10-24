@@ -12,7 +12,8 @@ The next diamond top is the row end plus one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hp R](../ham-path/hp-r.md)
+- [Hp T](../ham-path/hp-t.md)
 
 ## Sources
 

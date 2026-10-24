@@ -12,7 +12,7 @@ uniformly recurrent: every block of consecutive terms recurs with bounded gaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Throwback Sequence](throwback-sequence.md)
 
 ## Sources
 

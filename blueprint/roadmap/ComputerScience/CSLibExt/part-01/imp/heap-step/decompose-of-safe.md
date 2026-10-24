@@ -15,7 +15,23 @@ decomposition needs at each stage.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HSteps](hsteps.md)
+- [Heap](../heap/heap.md)
+- [Disjoint](../heap/disjoint.md)
+- [Heap Cmd](heap-cmd.md)
+- [Safe](safe.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [HConfig](hconfig.md)
+- [HStep](hstep.md)
+- [Decompose of safe step](decompose-of-safe-step.md)
+- [Of steps](of-steps.md)
 
 ## Sources
 

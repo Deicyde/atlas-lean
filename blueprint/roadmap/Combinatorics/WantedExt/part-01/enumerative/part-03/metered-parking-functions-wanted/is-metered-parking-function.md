@@ -13,6 +13,10 @@ A `t`-metered `(m, n)`-parking function: every car parks under the `t`-metered s
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Metered Outcome](metered-outcome.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.MeteredParkingFunctionsWanted](../../../../../../../sources/v2/WantedExt.md)

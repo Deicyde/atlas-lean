@@ -13,7 +13,10 @@ For legal `n ≥ 0`, `Q_n z - P_n = (-1)^n (z_1 ⋯ z_{n+1})⁻¹`, and for lega
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hurwitz Legal](hurwitz-legal.md)
+- [Hurwitz Iter](hurwitz-iter.md)
+- [Hurwitz P](hurwitz-p.md)
+- [Hurwitz Q](hurwitz-q.md)
 
 ## Sources
 

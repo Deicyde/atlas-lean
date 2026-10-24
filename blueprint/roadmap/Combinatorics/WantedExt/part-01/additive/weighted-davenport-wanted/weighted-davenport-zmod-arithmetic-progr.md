@@ -13,7 +13,7 @@ common difference `1`, then `D_A(Z_n) = 2`. The progression is the image of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

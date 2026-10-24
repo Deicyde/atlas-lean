@@ -42,7 +42,7 @@ not settle the bounded question; Ad 5 (2) and its corollary do.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem5 Claim](scottish-book-problem5-claim.md)
 
 ## Sources
 

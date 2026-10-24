@@ -12,7 +12,12 @@ The likelihood of a sequence depends only on its counts: `∏ₘ θ (s m) = ∏�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counts](counts.md)
+- [Seq Likelihood](seq-likelihood.md)
+
+## Proof depends on
+
+- [Prod Comp Pow](../../../../../Algebra/MathlibExt/big-operators/prod-comp-eq-prod-pow.md)
 
 ## Sources
 

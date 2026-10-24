@@ -12,7 +12,9 @@ The `p`-Lucas numbers (`(a, b) = (2, p)`) are the companion Lucas sequence `V(p,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Generalized PFibonacci](generalized-pfibonacci.md)
+- [Lucas V](../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

@@ -16,7 +16,9 @@ Corollary 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Count](digit-count.md)
+- [Leading Reciprocal Term](leading-reciprocal-term.md)
+- [Ordinary Moment](ordinary-moment.md)
 
 ## Sources
 

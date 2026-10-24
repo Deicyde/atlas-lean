@@ -19,7 +19,8 @@ sufficient condition for `0 ≤ m ≤ ℓ + 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibonacci Number](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
+- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Equation (5): `B_S(m, k) = ∑_{j=0}^{k} ∑_{i=0}^{j} binom(⌊m/2⌋, i) {m - 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bishops Square](bishops-square.md)
+- [Ext Stirling Second](ext-stirling-second.md)
 
 ## Sources
 

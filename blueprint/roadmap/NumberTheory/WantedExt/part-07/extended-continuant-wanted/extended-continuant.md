@@ -14,6 +14,11 @@ The extended continuant `K_a(x)_b^{a+b}` of order `a ∈ ℤ` with start index `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extended Continuant Bwd](extended-continuant-bwd.md)
+- [Extended Continuant Fwd](extended-continuant-fwd.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ExtendedContinuantWanted](../../../../../sources/v2/WantedExt.md)

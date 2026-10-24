@@ -15,7 +15,9 @@ convention (Remark 6), which is not formalized.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [K Box Paths](k-box-paths.md)
+- [Skew Long Ascents](skew-long-ascents.md)
 
 ## Sources
 

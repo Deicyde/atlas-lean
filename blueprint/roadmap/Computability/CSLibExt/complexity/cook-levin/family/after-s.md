@@ -11,7 +11,11 @@ Where to go after situation `i`: the previous situation, or the end of the time 
 
 ## Depends on
 
-This node has no prerequisites.
+- [GL](gl.md)
+
+## Proof depends on
+
+- [Sit L](sit-l.md)
 
 ## Sources
 

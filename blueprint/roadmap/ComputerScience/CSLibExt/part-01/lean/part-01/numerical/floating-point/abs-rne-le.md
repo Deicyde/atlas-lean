@@ -13,7 +13,14 @@ rounding carries into the next binade.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rne](rne.md)
+- [Ulp Exp](ulp-exp.md)
+
+## Proof depends on
+
+- [Le rne of le](le-rne-of-le.md)
+- [Rne le of le](rne-le-of-le.md)
+- [Scaled bounds](scaled-bounds.md)
 
 ## Sources
 

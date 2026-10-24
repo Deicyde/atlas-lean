@@ -14,6 +14,10 @@ whose members are CR-sets, i.e. an idempotent of `β(CR)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is CRSet](is-crset.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CRSetArithmeticProgressionWanted](../../../../../sources/v2/WantedExt.md)

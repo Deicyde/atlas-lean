@@ -13,7 +13,9 @@ Theorem 1.5 (criterion): for a `k`-generalized Markov number `b ∉ {1, k + 2}`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Unique Max Gen Markov Triple](has-unique-max-gen-markov-triple.md)
+- [Is Gen Markov Number](is-gen-markov-number.md)
+- [Gen Markov Congruence Count](gen-markov-congruence-count.md)
 
 ## Sources
 

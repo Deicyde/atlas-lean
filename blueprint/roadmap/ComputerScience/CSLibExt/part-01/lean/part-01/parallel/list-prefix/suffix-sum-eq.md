@@ -13,7 +13,18 @@ successor's suffix sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Suffix Sum](suffix-sum.md)
+- [Terminates](../list-ranking/terminates.md)
+
+## Proof depends on
+
+- [Seg Sum](seg-sum.md)
+- [Seg Sum add](seg-sum-add.md)
+- [Step Val](step-val.md)
+- [Jump](../list-ranking/jump.md)
+- [The characteristic property of the rank](../list-ranking/jump-eq-none-iff.md)
+- [Rank](../list-ranking/rank.md)
+- [Rank of jump](../list-ranking/rank-of-jump.md)
 
 ## Sources
 

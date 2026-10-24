@@ -11,7 +11,11 @@ A directed tour of total weight at most `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Asymmetric Tsp Instance](asymmetric-tsp-instance.md)
+
+## Proof depends on
+
+- [Tour Length](tour-length.md)
 
 ## Sources
 

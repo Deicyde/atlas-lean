@@ -13,6 +13,10 @@ Total tardiness of running the jobs in the given order (job indices).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tardiness Step](tardiness-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.TotalTardinessWanted](../../../../../../sources/v2/WantedExt.md)

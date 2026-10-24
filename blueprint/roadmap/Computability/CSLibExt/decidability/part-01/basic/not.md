@@ -12,7 +12,11 @@ The complement of a decidable predicate is decidable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Decidable](tm2-decidable.md)
+
+## Proof depends on
+
+- [Tm2 Decidable iff computable Pred](tm2-decidable-iff-computable-pred.md)
 
 ## Sources
 

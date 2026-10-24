@@ -12,7 +12,12 @@ The `χ₋₂` divisor sum is unchanged by doubling an odd argument.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Div Chi Neg2 Sum](div-chi-neg2-sum.md)
+
+## Proof depends on
+
+- [Div Chi Neg2 Sum mul of coprime](div-chi-neg2-sum-mul-of-coprime.md)
+- [Div Chi Neg2 Sum prime pow two](div-chi-neg2-sum-prime-pow-two.md)
 
 ## Sources
 

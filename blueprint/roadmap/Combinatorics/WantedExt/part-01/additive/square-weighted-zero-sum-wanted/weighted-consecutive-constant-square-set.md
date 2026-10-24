@@ -13,7 +13,8 @@ The added `2 ≤ n` records the paper's ambient convention.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Set](square-set.md)
+- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
 
 ## Sources
 

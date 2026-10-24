@@ -17,7 +17,7 @@ be an equality). `d = 0` is admitted (trivial group).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Half Good Threshold](half-good-threshold.md)
 
 ## Sources
 

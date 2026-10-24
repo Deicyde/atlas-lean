@@ -11,7 +11,7 @@ Reads a part vector `a : Fin c → Fin n` as a function `ℕ → ℕ` (`0` beyon
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diamond Size](diamond-size.md)
 
 ## Sources
 

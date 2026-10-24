@@ -12,7 +12,8 @@ quotients, all of degree at most `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Inv Var](laurent-inv-var.md)
+- [Laurent Partial Quotient](laurent-partial-quotient.md)
 
 ## Sources
 

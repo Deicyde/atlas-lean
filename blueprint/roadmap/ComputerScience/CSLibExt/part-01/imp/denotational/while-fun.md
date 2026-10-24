@@ -11,7 +11,12 @@ One unfolding of a while loop with the given guard and body denotation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [Eval](../syntax/eval-2.md)
 
 ## Sources
 

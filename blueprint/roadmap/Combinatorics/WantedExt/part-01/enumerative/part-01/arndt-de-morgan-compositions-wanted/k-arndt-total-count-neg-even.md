@@ -11,7 +11,8 @@ For `k = -2j` a negative even number, `a(n, k) = c^{-k}_o(n)`; `n = 0` is includ
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Arndt Total Count](k-arndt-total-count.md)
+- [Odd Or Small Even Composition Count](odd-or-small-even-composition-count.md)
 
 ## Sources
 

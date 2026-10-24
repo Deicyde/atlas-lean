@@ -12,7 +12,12 @@ The canonical Nerode automaton has no more states than any finite DFA recognizin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](../nerode/nerode-class.md)
+
+## Proof depends on
+
+- [To DFAState](to-dfastate.md)
+- [To DFAState injective](to-dfastate-injective.md)
 
 ## Sources
 

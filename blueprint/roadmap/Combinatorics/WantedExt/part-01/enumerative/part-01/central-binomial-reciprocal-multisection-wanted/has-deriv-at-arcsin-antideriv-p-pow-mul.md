@@ -14,7 +14,9 @@ Lemma 5: for `l ≥ 1`, the paper's `P_l` (the polynomial with `P_l(0) = 0` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arcsin Antideriv C](arcsin-antideriv-c.md)
+- [Arcsin Antideriv Q](arcsin-antideriv-q.md)
+- [Central Binom Reciprocal H](central-binom-reciprocal-h.md)
 
 ## Sources
 

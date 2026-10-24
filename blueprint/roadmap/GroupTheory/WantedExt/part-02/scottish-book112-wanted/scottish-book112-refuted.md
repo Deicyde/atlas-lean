@@ -18,7 +18,7 @@ conjugation by any single element of `G`, refuting the claim.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem112 Claim](scottish-book-problem112-claim.md)
 
 ## Sources
 

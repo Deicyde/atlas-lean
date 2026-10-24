@@ -12,7 +12,18 @@ on `O`; otherwise write `[false, true, true, false, false]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k-2.md)
+- [Lab](lab-2.md)
+- [Γ](untitled-2.md)
+
+## Proof depends on
+
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [For Head](../../../../../MathlibExt/turing-machine/program/for-head.md)
+- [Incr](../../../../../MathlibExt/turing-machine/program/incr.md)
+- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

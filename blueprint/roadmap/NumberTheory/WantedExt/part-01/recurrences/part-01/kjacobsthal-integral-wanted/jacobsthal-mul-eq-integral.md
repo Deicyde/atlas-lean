@@ -11,7 +11,9 @@ Jacobsthal case `k = 1`: `J_{ℓn} = (n J_ℓ/2ⁿ) ∫_{-1}^{1} (j_ℓ + 3J_ℓ
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Jacobsthal Params](k-jacobsthal-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

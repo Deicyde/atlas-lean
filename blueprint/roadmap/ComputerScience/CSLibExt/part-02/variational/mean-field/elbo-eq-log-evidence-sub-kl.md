@@ -13,7 +13,11 @@ lean: Cslib.MachineLearning.Variational.elbo_eq_log_evidence_sub_kl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Elbo](elbo.md)
+- [Evidence](evidence.md)
+- [Kl](kl.md)
+- [Posterior](posterior.md)
 
 ## Sources
 

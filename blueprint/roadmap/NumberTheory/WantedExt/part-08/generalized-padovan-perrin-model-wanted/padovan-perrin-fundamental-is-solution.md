@@ -12,7 +12,8 @@ Each member of the Fibonacci fundamental system solves the Padovan–Perrin recu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
+- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
 
 ## Sources
 

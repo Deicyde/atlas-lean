@@ -14,6 +14,10 @@ ultrafilters all of whose members are `J`-sets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Mul JSet](is-mul-jset.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SemigroupLargeness](../../../../../sources/v2/MathlibExt.md)

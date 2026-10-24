@@ -12,7 +12,7 @@ Syntactic equivalence is stable under adding a common right context.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Rel](syntactic-rel.md)
 
 ## Sources
 

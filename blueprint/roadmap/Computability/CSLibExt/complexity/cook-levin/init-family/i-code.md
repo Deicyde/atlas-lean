@@ -11,7 +11,15 @@ lean: Cslib.Complexity.CookLevin.InitFamily.iCode
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [CNF](../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Num Vars](../family/num-vars.md)
+- [X Idx](../family/x-idx.md)
+- [Dense Clause](../family/dense-clause.md)
+- [Clause](../../dense-sat/clause.md)
 
 ## Sources
 

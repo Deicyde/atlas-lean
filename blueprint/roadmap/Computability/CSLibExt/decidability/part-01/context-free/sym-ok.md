@@ -13,6 +13,10 @@ A symbol is acceptable when it is a terminal or a nonterminal in `G`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mem B](../primrec-list/mem-b.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.ContextFree](../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,12 @@ numbers written through any `ι : Bool → Symbol`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts On](../classes/halts-on.md)
+
+## Proof depends on
+
+- [Primrec map encode Nat](primrec-map-encode-nat.md)
+- [The halting set of a single-tape machine is r.e](re-pred-halts-on.md)
 
 ## Sources
 

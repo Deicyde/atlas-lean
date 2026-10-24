@@ -12,7 +12,20 @@ lean: Cslib.MachineLearning.LatentVariable.GaussianMixture.emQ_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Em Q](../expectation-maximization/em-q.md)
+- [Params](params.md)
+- [Valid](valid.md)
+- [Valid Params](valid-params.md)
+- [Comp Term](comp-term.md)
+- [Joint](joint.md)
+- [Mass](mass.md)
+
+## Proof depends on
+
+- [Posterior](../expectation-maximization/posterior.md)
+- [Iso Gauss PDF](iso-gauss-pdf.md)
+- [Log iso Gauss PDF](log-iso-gauss-pdf.md)
+- [Resp](resp.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ for even `k`. The sum over `j` is cut at `7^k`: `m_{i,j} = 0` for `j > 2i`, so t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Garvan M](garvan-m.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.TwoColorSevenPowerPartitionWanted](../../../../../../../../../sources/v2/WantedExt.md)

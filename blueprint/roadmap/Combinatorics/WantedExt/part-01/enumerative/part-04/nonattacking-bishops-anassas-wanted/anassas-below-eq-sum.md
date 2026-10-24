@@ -12,7 +12,8 @@ Equation (17): for `p ≤ k`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anassas Below](anassas-below.md)
+- [Ext Stirling Second](ext-stirling-second.md)
 
 ## Sources
 

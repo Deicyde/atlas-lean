@@ -12,7 +12,16 @@ syntactic monoid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Alphabet Preimage](alphabet-preimage.md)
+- [Alphabet Preimage Morphism](alphabet-preimage-morphism.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+
+## Proof depends on
+
+- [Recognizer Image To Syntactic](../recognition/recognizer-image-to-syntactic.md)
+- [Recognizes alphabet Preimage Morphism](recognizes-alphabet-preimage-morphism.md)
+- [Syntactic Accept](../syntactic/syntactic-accept.md)
 
 ## Sources
 

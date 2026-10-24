@@ -13,6 +13,10 @@ The output bits: `false` for a timeout, otherwise `true` and the cells of the ou
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cells](cells.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.Universal.Clocked](../../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,9 @@ the path below `y = 0` is followed within `2k` steps by a point above `y = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Naples Parking Function](is-naples-parking-function.md)
+- [Lattice Height](lattice-height.md)
+- [Preference Path](preference-path.md)
 
 ## Sources
 

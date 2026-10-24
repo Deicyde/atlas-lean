@@ -12,7 +12,11 @@ There are `n` witness colors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cols](cols.md)
+
+## Proof depends on
+
+- [Col](col.md)
 
 ## Sources
 

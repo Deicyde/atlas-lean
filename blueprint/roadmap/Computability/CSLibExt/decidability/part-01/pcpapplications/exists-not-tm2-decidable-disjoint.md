@@ -12,7 +12,15 @@ lean: Cslib.Decidability.exists_not_tm2Decidable_disjoint
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Decidable](../basic/tm2-decidable.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [Language](../../../languages/context-free/part-01/encoded/language.md)
+
+## Proof depends on
+
+- [Not](../basic/not.md)
+- [Whether two context-free languages intersect is undecidable](exists-not-tm2-decidable-overlap.md)
 
 ## Sources
 

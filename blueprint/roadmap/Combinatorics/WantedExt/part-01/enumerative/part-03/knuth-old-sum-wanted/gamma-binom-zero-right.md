@@ -12,7 +12,7 @@ lean: MetaMathlibExt.gammaBinom_zero_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

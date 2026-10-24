@@ -13,7 +13,15 @@ monoid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](../recognition/recognizes.md)
+- [State Transformation](../syntactic/state-transformation.md)
+- [Transition Monoid](../syntactic/transition-monoid.md)
+- [Transition Accept](transition-accept.md)
+- [Transition Morphism](../syntactic/transition-morphism.md)
+
+## Proof depends on
+
+- [Recognizes transition Accept](recognizes-transition-accept.md)
 
 ## Sources
 

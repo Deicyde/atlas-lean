@@ -13,6 +13,11 @@ The encoder.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [G](g.md)
+- [Encode](../linear-code/encode.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Coding.Hamming74](../../../../sources/v2/CSLibExt.md)

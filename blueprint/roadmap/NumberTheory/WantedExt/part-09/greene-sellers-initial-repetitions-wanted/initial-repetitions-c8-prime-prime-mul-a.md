@@ -12,7 +12,7 @@ modulo `p` (not a square in `ZMod p`), `c₈'(pn + r)` is even for all `n ≥ 0`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Repetitions C8 Prime](initial-repetitions-c8-prime.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.coloredArndt_total_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Arndt Count](colored-arndt-count.md)
 
 ## Sources
 

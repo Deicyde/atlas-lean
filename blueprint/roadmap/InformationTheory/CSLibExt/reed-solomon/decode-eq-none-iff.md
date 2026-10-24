@@ -13,7 +13,13 @@ distance `e` of `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key Solver](key-solver.md)
+- [Decode](decode.md)
+- [Encode](encode.md)
+
+## Proof depends on
+
+- [What the decoder returns](decode-eq-some-iff.md)
 
 ## Sources
 

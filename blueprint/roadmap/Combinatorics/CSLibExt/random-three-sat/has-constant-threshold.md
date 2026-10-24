@@ -17,6 +17,11 @@ is proved); it is stated here as a proposition, not asserted.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Lower Cutoff](is-lower-cutoff.md)
+- [Is Upper Cutoff](is-upper-cutoff.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Combinatorics.RandomThreeSat](../../../../sources/v2/CSLibExt.md)

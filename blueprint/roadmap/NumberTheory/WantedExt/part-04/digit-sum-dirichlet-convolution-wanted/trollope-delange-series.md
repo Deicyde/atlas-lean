@@ -13,6 +13,10 @@ Delange's series `h(x) = ∑_{r ≥ 0} g(q^r x) / q^r`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trollope Delange Integral](trollope-delange-integral.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DigitSumDirichletConvolutionWanted](../../../../../sources/v2/WantedExt.md)

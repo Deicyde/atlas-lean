@@ -11,7 +11,8 @@ A finite union of lacunary positive sets is not 2-large.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lacunary Set](is-lacunary-set.md)
+- [Is RLarge](is-rlarge.md)
 
 ## Sources
 

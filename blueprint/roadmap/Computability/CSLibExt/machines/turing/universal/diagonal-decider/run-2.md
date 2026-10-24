@@ -13,7 +13,31 @@ lean: Cslib.Turing.Universal.Diag.Layout.run
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k-2.md)
+- [Lab](lab-2.md)
+- [Layout](layout.md)
+- [Prog](prog-2.md)
+- [Γ](untitled-2.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Cell](../clocked/cell.md)
+- [Cells](../clocked/cells.md)
+- [Bit Sym](../code/bit-sym.md)
+- [Input](../code/input.md)
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Emit](../../../../../MathlibExt/turing-machine/program/emit.md)
+- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Incr](../../../../../MathlibExt/turing-machine/program/incr.md)
+- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Mul run](../../../../../MathlibExt/turing-machine/program/mul-run.md)
+- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Xfer run](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

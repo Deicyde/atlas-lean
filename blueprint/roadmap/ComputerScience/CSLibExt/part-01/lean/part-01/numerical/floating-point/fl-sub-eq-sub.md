@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.FloatingPoint.fl_sub_eq_sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Float](is-float.md)
+- [Round to nearest, ties to even](fl.md)
+
+## Proof depends on
+
+- [Fl eq self](fl-eq-self.md)
+- [Sterbenz's lemma](is-float-sub.md)
 
 ## Sources
 

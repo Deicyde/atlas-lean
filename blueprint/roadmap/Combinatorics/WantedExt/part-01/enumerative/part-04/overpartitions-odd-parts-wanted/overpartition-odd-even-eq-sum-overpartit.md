@@ -15,7 +15,8 @@ the arXiv proof (Theorem 3.5) multiplies the overpartition generating function b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources
 

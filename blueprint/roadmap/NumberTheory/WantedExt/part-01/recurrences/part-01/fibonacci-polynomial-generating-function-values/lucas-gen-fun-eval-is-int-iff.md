@@ -13,7 +13,7 @@ Theorem 1.5 (case `d = 1`): if `b ∣ a`, `q ∈ ℚ`, `F_i = F_i(1)` and `L_i =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

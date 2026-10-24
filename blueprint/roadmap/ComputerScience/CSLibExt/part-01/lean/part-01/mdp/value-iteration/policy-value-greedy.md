@@ -12,7 +12,19 @@ lean: Cslib.Algorithms.Lean.MarkovDecision.policyValue_greedy
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Stochastic](stochastic.md)
+- [Greedy](greedy.md)
+- [Optimal Value](optimal-value.md)
+- [Policy Value](policy-value.md)
+
+## Proof depends on
+
+- [Bellman](bellman.md)
+- [Bellman optimal Value](bellman-optimal-value.md)
+- [Eq policy Value of policy Bellman eq](eq-policy-value-of-policy-bellman-eq.md)
+- [Policy Bellman](policy-bellman.md)
+- [Q Value greedy](q-value-greedy.md)
 
 ## Sources
 

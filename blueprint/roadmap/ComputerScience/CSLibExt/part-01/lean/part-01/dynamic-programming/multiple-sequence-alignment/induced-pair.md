@@ -12,7 +12,8 @@ columns that are gaps in both rows dropped.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+- [MSAlignment](msalignment.md)
 
 ## Sources
 

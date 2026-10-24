@@ -15,6 +15,15 @@ x^n p^{asc σ} q^{des σ} u^{lmax σ} v^{rmax σ}` for `P = P_{j+1}` (king permu
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Contains Flat POPBelow](contains-flat-popbelow.md)
+- [Is King Perm](is-king-perm.md)
+- [Perm Ascent Count](perm-ascent-count.md)
+- [Perm Descent Count](perm-descent-count.md)
+- [Perm Left To Right Max Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-max-count.md)
+- [Perm Right To Left Max Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-max-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KingPermutationsWanted](../../../../../../../sources/v2/WantedExt.md)

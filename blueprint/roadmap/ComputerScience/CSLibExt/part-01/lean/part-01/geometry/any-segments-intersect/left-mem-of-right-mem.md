@@ -12,7 +12,13 @@ Every right endpoint processed has its left endpoint processed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Events](events.md)
+
+## Proof depends on
+
+- [Key](key.md)
+- [Key left lt right](key-left-lt-right.md)
 
 ## Sources
 

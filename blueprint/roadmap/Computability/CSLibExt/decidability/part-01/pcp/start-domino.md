@@ -11,7 +11,14 @@ The start domino `(⋆t₀, ⋆b₀⋆)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](domino.md)
+- [Sym](sym.md)
+
+## Proof depends on
+
+- [Star](star.md)
+- [Star After](star-after.md)
+- [Star Before](star-before.md)
 
 ## Sources
 

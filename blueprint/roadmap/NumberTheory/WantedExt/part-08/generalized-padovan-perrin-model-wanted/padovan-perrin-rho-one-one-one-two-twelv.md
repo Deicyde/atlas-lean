@@ -13,7 +13,7 @@ A value check: for the Padovan–Perrin case `k₁ = k₂ = 1`, `p = 1`, `s = 2`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Rho](padovan-perrin-rho.md)
 
 ## Sources
 

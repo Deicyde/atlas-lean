@@ -12,7 +12,9 @@ M-rule realizes Smith's remoteness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
+- [Exact Slow Nim MRule Length](exact-slow-nim-mrule-length.md)
+- [Slow ANim Game](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
 
 ## Sources
 

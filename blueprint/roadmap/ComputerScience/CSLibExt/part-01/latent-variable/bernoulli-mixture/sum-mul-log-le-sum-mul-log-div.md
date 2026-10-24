@@ -17,6 +17,11 @@ counts are themselves admissible weights, so they maximize.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Dist](../expectation-maximization/is-dist.md)
+- [Gibbs' inequality](../expectation-maximization/sum-mul-log-sub-le.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.BernoulliMixture](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,11 @@ Every word is equivalent to itself (the empty composition).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Equiv](keyword-equiv.md)
+
+## Proof depends on
+
+- [Keyword Simple Map](keyword-simple-map.md)
 
 ## Sources
 

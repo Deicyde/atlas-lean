@@ -12,7 +12,15 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.span_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+- [Schedule](schedule.md)
+- [Length](length.md)
+- [Span](span.md)
+
+## Proof depends on
+
+- [Depth le time](depth-le-time.md)
+- [Depth](depth.md)
 
 ## Sources
 

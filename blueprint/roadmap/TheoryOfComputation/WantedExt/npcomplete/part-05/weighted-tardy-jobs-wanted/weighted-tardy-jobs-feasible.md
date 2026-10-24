@@ -11,7 +11,11 @@ An ordering with weighted tardy sum at most `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Tardy Jobs Instance](weighted-tardy-jobs-instance.md)
+
+## Proof depends on
+
+- [Weighted Tardy](weighted-tardy.md)
 
 ## Sources
 

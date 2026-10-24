@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.CatenableHeap.toList_union
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [To List](to-list.md)
+- [Union](union.md)
+
+## Proof depends on
+
+- [To List join](to-list-join.md)
 
 ## Sources
 

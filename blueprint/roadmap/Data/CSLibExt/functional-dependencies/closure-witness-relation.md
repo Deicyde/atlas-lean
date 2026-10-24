@@ -12,7 +12,11 @@ The closure witness for `X`: at most two tuples, which agree exactly on `attrClo
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+
+## Proof depends on
+
+- [Attr Closure](attr-closure.md)
 
 ## Sources
 

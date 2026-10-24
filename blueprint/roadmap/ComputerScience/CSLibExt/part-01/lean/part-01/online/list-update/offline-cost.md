@@ -15,6 +15,11 @@ order it changes (`inv (L t) (L (t + 1))`). `offlineCostFree` adds free exchange
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Access Cost](access-cost.md)
+- [Inv](inv.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Online.ListUpdate](../../../../../../../../sources/v2/CSLibExt.md)

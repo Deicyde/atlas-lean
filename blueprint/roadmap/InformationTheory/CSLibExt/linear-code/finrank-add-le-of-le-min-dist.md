@@ -14,7 +14,13 @@ on the minimum distance, from MathlibExt's Singleton bound for arbitrary codes. 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+- [Min Dist](min-dist.md)
+
+## Proof depends on
+
+- [Card filter mem](card-filter-mem.md)
+- [Singleton Bound](../../../Combinatorics/MathlibExt/part-01/coding/singleton-bound.md)
 
 ## Sources
 

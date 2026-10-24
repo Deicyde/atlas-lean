@@ -12,7 +12,7 @@ The convergent-denominator recurrence `q_{n+2} = a_{n+2} q_{n+1} + q_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Den](convergent-den.md)
 
 ## Sources
 

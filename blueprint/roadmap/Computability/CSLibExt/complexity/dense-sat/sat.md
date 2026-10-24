@@ -13,6 +13,11 @@ lean: Cslib.Complexity.DenseSAT.SAT
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cnf Sat](cnf-sat.md)
+- [Decode CNF](decode-cnf.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.DenseSAT](../../../../../sources/v2/CSLibExt.md)

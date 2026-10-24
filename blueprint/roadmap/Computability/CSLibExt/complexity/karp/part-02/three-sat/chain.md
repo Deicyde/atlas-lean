@@ -12,7 +12,14 @@ a clause of length `k ≥ 2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Chain Tail](chain-tail.md)
+- [Fresh](fresh.md)
+- [Ren Lit](ren-lit.md)
 
 ## Sources
 

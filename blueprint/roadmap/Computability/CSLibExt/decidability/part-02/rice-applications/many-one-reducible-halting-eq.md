@@ -13,7 +13,11 @@ every input, like `Code.const 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eq Code](eq-code.md)
+
+## Proof depends on
+
+- [Halts On Zero Code](halts-on-zero-code.md)
 
 ## Sources
 

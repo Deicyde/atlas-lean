@@ -15,7 +15,8 @@ existential here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Counting](../../../MathlibExt/part-02/prime-counting/part-01/landau-almost-prime-asymptotic/almost-prime-counting.md)
+- [Meissel Mertens Constant](../prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

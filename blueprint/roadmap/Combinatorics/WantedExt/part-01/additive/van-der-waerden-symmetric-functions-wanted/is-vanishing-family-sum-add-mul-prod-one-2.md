@@ -11,7 +11,8 @@ Lemma 2: for `n ∈ {4, 8}`, `F_1` over `ℤ/n` is vanishing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vanishing Family](is-vanishing-family.md)
+- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
 
 ## Sources
 

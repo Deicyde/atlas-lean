@@ -13,7 +13,7 @@ In the setting of Theorem 5, every composite divisor `c` of the primitive part o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strong Pseudoprime](../../../MathlibExt/part-11/strong-pseudoprime/is-strong-pseudoprime.md)
 
 ## Sources
 

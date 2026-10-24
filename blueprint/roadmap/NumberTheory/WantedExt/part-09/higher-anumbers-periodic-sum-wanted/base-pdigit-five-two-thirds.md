@@ -14,7 +14,7 @@ Counting Lattice Points*, INTEGERS 26 (2026), Article A78, Section 2.2 (base-`5`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDigit](base-pdigit.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ fractions use natural division and are exact under the hypotheses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triple Regular Partition Count](triple-regular-partition-count.md)
 
 ## Sources
 

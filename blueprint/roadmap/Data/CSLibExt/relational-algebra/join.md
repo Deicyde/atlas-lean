@@ -11,7 +11,12 @@ The natural join `r ⋈ s`: the merges of all compatible pairs of tuples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
+
+## Proof depends on
+
+- [Compatible](compatible.md)
+- [Merge](merge.md)
 
 ## Sources
 

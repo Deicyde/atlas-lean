@@ -11,7 +11,11 @@ Every dependency of `F` holds in `r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+
+## Proof depends on
+
+- [Holds In](holds-in.md)
 
 ## Sources
 

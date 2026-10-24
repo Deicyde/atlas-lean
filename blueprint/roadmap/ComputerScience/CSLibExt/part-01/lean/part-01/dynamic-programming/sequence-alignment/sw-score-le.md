@@ -12,7 +12,14 @@ A bound on all prefix-pair cell scores bounds the Smith–Waterman score.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prefix Pairs](prefix-pairs.md)
+- [Sw Cell Score](sw-cell-score.md)
+- [The Smith–Waterman score](sw-score.md)
+
+## Proof depends on
+
+- [List Max](list-max.md)
+- [Sw Cell Score nil left](sw-cell-score-nil-left.md)
 
 ## Sources
 

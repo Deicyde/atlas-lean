@@ -11,7 +11,8 @@ Theorem 5: `L^{(r)}_n = L_{n+2r} - ∑_{k=0}^{r-1} C(n + k, k) L_{2(r-k)-1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypersequence](hypersequence.md)
+- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

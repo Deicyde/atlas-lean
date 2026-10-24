@@ -12,7 +12,8 @@ and positive `n, p, q` with `max(p, q) ≤ 11` and `k ≥ 3`, `Σ_{j=1}^k j U_j^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

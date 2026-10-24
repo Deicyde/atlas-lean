@@ -14,7 +14,11 @@ polynomials; its only nontrivial step is the solver.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key Solver](key-solver.md)
+
+## Proof depends on
+
+- [Encode](encode.md)
 
 ## Sources
 

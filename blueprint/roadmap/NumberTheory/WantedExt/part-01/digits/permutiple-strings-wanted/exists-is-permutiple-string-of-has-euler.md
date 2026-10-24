@@ -14,7 +14,11 @@ ordered into a permutiple string.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Eulerian Circuit From Zero](has-eulerian-circuit-from-zero.md)
+- [Is Mother Graph Cycle](is-mother-graph-cycle.md)
+- [Is Permutiple String](is-permutiple-string.md)
+- [Cycle Union](cycle-union.md)
+- [Multi Image Union](multi-image-union.md)
 
 ## Sources
 

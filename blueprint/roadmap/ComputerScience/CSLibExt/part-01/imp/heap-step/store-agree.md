@@ -13,7 +13,19 @@ set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HStep](hstep.md)
+- [Heap](../heap/heap.md)
+- [Heap Cmd](heap-cmd.md)
+- [Mod Vars](mod-vars.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [HConfig](hconfig.md)
 
 ## Sources
 

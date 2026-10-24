@@ -16,6 +16,11 @@ The TBZ-qMZV `ζ_q^TBZ(k₁, …, kᵣ) = ∑_{m₁ > ⋯ > mᵣ > 0} f(k₁, m�
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q MZV](../part-02/q-mzv.md)
+- [Tbz Letter](tbz-letter.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

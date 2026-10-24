@@ -13,7 +13,9 @@ least two, then `D_{S(n)} ≥ 3` (in `ℕ∞`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Set](square-set.md)
+- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Zmod Weight Reps](zmod-weight-reps.md)
 
 ## Sources
 

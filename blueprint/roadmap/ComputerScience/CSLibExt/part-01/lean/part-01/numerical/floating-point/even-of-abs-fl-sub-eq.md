@@ -13,7 +13,14 @@ significand of `fl x` at the last place of `x` is even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round to nearest, ties to even](fl.md)
+- [Rne](rne.md)
+- [Ulp Exp](ulp-exp.md)
+
+## Proof depends on
+
+- [Ties to even](even-rne-of-abs-sub-eq-half.md)
+- [Fl sub eq](fl-sub-eq.md)
 
 ## Sources
 

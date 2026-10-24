@@ -13,7 +13,7 @@ base-`3/2` digits is exactly `2 * N`, equivalently the paper's expansion has val
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Three Halves Digits](base-three-halves-digits.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Embed a configuration along `Fin.castSucc`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
 
 ## Sources
 

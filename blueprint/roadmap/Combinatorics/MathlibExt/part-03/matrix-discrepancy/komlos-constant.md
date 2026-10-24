@@ -13,6 +13,10 @@ The extended supremum over positive square dimensions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dimension Constant](dimension-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.MatrixDiscrepancy](../../../../../sources/v2/MathlibExt.md)

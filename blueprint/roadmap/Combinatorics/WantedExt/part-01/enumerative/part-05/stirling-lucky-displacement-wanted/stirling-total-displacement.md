@@ -13,6 +13,10 @@ The total displacement `d(w) = ∑_i d(i)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stirling Displacement](stirling-displacement.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.StirlingLuckyDisplacementWanted](../../../../../../../sources/v2/WantedExt.md)

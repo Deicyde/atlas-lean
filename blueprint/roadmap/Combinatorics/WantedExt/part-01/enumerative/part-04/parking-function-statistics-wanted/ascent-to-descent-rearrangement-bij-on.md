@@ -12,7 +12,7 @@ rearrangements of `y` with ascent set `I` onto the rearrangements of `y` with de
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascent To Descent Rearrangement](ascent-to-descent-rearrangement.md)
 
 ## Sources
 

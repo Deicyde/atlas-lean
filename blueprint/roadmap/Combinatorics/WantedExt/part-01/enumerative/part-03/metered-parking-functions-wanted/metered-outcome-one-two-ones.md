@@ -13,7 +13,7 @@ The source's example with `t = 1`, `n = 2` and preferences `(1,1,1)`: cars park 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Outcome](metered-outcome.md)
 
 ## Sources
 

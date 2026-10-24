@@ -12,7 +12,7 @@ The one-element set `{0}` is admissible: it misses the class `1` mod `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Finset](is-admissible-finset.md)
 
 ## Sources
 

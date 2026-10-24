@@ -13,7 +13,12 @@ for `knightMoves 1 2` is `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knight Moves](knight-moves.md)
+- [Piece Distance](piece-distance.md)
+
+## Proof depends on
+
+- [Piece Distance eq of mem of forall](piece-distance-eq-of-mem-of-forall.md)
 
 ## Sources
 

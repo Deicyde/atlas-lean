@@ -11,7 +11,7 @@ Proposition 2.7: `opx(n, P)` is continuous in `n` for `n > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

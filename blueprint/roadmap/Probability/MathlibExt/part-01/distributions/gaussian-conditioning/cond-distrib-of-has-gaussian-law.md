@@ -15,7 +15,11 @@ independent of `Y`, and the conditional distribution of `X` given `Y = y` is the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noise Kernel](noise-kernel.md)
+
+## Proof depends on
+
+- [Conditioning on a signal observed in independent additive noise](cond-distrib-add-of-indep-fun.md)
 
 ## Sources
 

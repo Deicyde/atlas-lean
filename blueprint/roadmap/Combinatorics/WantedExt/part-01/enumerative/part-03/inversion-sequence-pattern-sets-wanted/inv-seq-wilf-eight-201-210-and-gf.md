@@ -15,7 +15,8 @@ radical `√(1 - 2x - 3x²)` multiplies the polynomial printed just before it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
+- [Inv Seq Avoid GF](inv-seq-avoid-gf.md)
 
 ## Sources
 

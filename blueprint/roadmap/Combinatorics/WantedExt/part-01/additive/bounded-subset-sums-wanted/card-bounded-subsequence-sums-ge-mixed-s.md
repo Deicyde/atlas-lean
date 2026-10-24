@@ -15,7 +15,9 @@ attained. Negative terms are `c`, positive terms `d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
+- [Repetition Sequence](repetition-sequence.md)
+- [Yang Chen Bound](yang-chen-bound.md)
 
 ## Sources
 

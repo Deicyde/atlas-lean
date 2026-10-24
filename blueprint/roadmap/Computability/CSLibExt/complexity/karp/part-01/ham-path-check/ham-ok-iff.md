@@ -12,7 +12,14 @@ lean: Cslib.Complexity.Karp.HamVerify.hamOk_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ham Ok](ham-ok.md)
+- [Is Ham Path](../ham-path/is-ham-path.md)
+
+## Proof depends on
+
+- [Chain Ok](chain-ok.md)
+- [Chain Ok iff](chain-ok-iff.md)
+- [Arc](../../../path/arc.md)
 
 ## Sources
 

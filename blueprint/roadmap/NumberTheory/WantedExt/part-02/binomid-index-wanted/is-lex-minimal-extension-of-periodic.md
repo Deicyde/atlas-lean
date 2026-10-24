@@ -12,7 +12,8 @@ lex-minimal extension of some finite binomid index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Binomid Index](is-binomid-index.md)
+- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
 
 ## Sources
 

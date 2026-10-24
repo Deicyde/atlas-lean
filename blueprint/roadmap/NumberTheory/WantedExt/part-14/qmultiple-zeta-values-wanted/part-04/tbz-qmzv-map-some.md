@@ -12,7 +12,13 @@ The TBZ model extends the BZ model: on indices without `1̄` it is `ζ_q^BZ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz QMZV](../part-02/bz-qmzv.md)
+- [Tbz QMZV](../part-03/tbz-qmzv.md)
+
+## Proof depends on
+
+- [Q MZV](../part-02/q-mzv.md)
+- [Tbz Letter](../part-03/tbz-letter.md)
 
 ## Sources
 

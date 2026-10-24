@@ -13,7 +13,7 @@ The paper's specializations: `α(n, 1, a) = 2n^2 + a - a^2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachean Alpha](nicomachean-alpha.md)
 
 ## Sources
 

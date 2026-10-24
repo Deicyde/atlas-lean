@@ -12,7 +12,7 @@ observation stream `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
 
 ## Sources
 

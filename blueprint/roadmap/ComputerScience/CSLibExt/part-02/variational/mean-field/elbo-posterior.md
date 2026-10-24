@@ -12,7 +12,13 @@ The bound is attained at the posterior.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elbo](elbo.md)
+- [Evidence](evidence.md)
+- [Posterior](posterior.md)
+
+## Proof depends on
+
+- [Sum div mul log sub](../../../part-01/latent-variable/expectation-maximization/sum-div-mul-log-sub.md)
 
 ## Sources
 

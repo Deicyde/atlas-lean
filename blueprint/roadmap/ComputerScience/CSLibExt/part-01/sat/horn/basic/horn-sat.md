@@ -11,7 +11,12 @@ Horn satisfiability: evaluate the formula at its least model candidate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Formula Satisfied](../../dpll/solver/formula-satisfied.md)
+- [Least Model](least-model.md)
 
 ## Sources
 

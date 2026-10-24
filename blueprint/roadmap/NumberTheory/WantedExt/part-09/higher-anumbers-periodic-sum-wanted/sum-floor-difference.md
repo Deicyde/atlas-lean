@@ -14,7 +14,10 @@ With `τ = (p + 1)/d` and `γ = ((p - 1) r + (p + 1))/d`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Floor Sum Correction](floor-sum-correction.md)
+- [Tau Den](tau-den.md)
+- [Tower Gamma](tower-gamma.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

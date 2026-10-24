@@ -11,7 +11,9 @@ For `n ≥ 2`, every `π ∈ Sort_n(s^[321])` has `π_1 = n` and `π_2 ⋯ π_n`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Good Seq](is-good-seq.md)
+- [Consecutive Cyclic Stack Sort](consecutive-cyclic-stack-sort.md)
+- [Sorted Permutations](sorted-permutations.md)
 
 ## Sources
 

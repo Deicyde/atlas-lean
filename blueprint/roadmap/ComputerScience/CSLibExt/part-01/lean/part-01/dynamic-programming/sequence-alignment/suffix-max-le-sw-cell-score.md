@@ -13,7 +13,14 @@ supremum bound (needs `gap ≤ 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Suffix Max](suffix-max.md)
+- [Sw Cell Score](sw-cell-score.md)
+
+## Proof depends on
+
+- [Every suffix pair scores at most the Smith–Waterman score](nw-score-le-sw-cell-score-of-suffix.md)
+- [Suffix Max le](suffix-max-le.md)
+- [Suffix Pairs](suffix-pairs.md)
 
 ## Sources
 

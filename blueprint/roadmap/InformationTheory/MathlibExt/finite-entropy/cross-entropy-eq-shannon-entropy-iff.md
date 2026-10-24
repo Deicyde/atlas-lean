@@ -13,7 +13,12 @@ rule.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross Entropy](cross-entropy.md)
+- [Shannon Entropy](shannon-entropy.md)
+
+## Proof depends on
+
+- [Cross-entropy is entropy plus divergence](cross-entropy-eq-shannon-entropy-add-kl.md)
 
 ## Sources
 

@@ -17,7 +17,9 @@ Part (ii) is stated with the unit `∏ⱼ (1 + Xⱼ)(1 + Yⱼ)` multiplied out i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Bracket Gen](../part-04/bi-bracket-gen.md)
+- [Log One Add Series](log-one-add-series.md)
+- [Sz Gen](../part-04/sz-gen.md)
 
 ## Sources
 

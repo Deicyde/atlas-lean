@@ -12,7 +12,7 @@ Theorem 3: for `x ≥ 0` and a positive reduced fraction `p/q`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Zoom](farey-zoom.md)
 
 ## Sources
 

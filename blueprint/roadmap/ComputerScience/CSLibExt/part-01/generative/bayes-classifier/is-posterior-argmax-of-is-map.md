@@ -14,7 +14,12 @@ argmax classifier.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Posterior Argmax](is-posterior-argmax.md)
+- [Is MAP](../../bayesian/basic/is-map.md)
+
+## Proof depends on
+
+- [Is MAP iff posterior](../../bayesian/basic/is-map-iff-posterior.md)
 
 ## Sources
 

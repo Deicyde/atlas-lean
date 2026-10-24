@@ -13,7 +13,11 @@ mass of the elements satisfying it (finite case).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect](expect.md)
+
+## Proof depends on
+
+- [Expect eq sum](expect-eq-sum.md)
 
 ## Sources
 

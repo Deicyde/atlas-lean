@@ -11,7 +11,9 @@ Tokenizer labels: accept starts the emitter, reject writes `noOut`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Emitter](emitter.md)
+- [L](l.md)
+- [Lab](../../../sat-tokenizer/lab.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Every sublist is chosen by a mask as long as the list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pick](pick.md)
 
 ## Sources
 

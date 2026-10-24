@@ -12,7 +12,9 @@ in `EReal`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Binomid Index](is-binomid-index.md)
+- [Binomid Average](binomid-average.md)
+- [Binomid Upper Average](binomid-upper-average.md)
 
 ## Sources
 

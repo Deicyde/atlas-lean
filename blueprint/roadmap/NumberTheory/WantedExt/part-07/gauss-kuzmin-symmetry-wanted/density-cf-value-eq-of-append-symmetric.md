@@ -12,7 +12,8 @@ all `t ∈ ℕ`, then `f(r) = f(0)/(1 + r)` for `r = [0; a₁, …, aₙ] = p/q`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cf Cylinder](cf-cylinder.md)
+- [Convergent Matrix](convergent-matrix.md)
 
 ## Sources
 

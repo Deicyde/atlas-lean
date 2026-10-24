@@ -12,7 +12,8 @@ Characterization of multiple topological recurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LTopological Recurrence](is-ltopological-recurrence.md)
+- [Is Multiple Topological Recurrence](is-multiple-topological-recurrence.md)
 
 ## Sources
 

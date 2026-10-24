@@ -13,7 +13,11 @@ has no repeats, brings the count to `n` and ends at `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Walk Ok](walk-ok.md)
+
+## Proof depends on
+
+- [Step Ok](step-ok.md)
 
 ## Sources
 

@@ -15,7 +15,8 @@ printed binomial `C(n + k - 1, k)` is false (at `p = 1`, `n = 2`, `k = 1`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo P](hyper-leonardo-p.md)
+- [Hyper Lucas Leonardo P](hyper-lucas-leonardo-p.md)
 
 ## Sources
 

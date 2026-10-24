@@ -13,7 +13,7 @@ are `A_E(x, y) = (1 - x⁴)(1 - x²(1 - y)) / (1 - x² - x⁴ + x⁶(1 - y²))` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt GF](arndt-gf.md)
 
 ## Sources
 

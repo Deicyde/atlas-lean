@@ -12,7 +12,12 @@ lean: MetaMathlibExt.threeTermHofstadterEndsAfter_one_two_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Ends After](three-term-hofstadter-ends-after.md)
+
+## Proof depends on
+
+- [Three Term Hofstadter Next](three-term-hofstadter-next.md)
+- [Three Term Hofstadter Prefix](three-term-hofstadter-prefix.md)
 
 ## Sources
 

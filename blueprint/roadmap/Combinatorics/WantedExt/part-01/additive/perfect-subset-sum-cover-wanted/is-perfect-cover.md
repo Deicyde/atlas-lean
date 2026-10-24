@@ -14,6 +14,10 @@ exactly one subset of `S`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Perfect MCover](is-perfect-mcover.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.PerfectSubsetSumCoverWanted](../../../../../../sources/v2/WantedExt.md)

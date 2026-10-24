@@ -12,7 +12,13 @@ lean: Cslib.MachineLearning.GraphicalModels.ConditionalRandomField.sum_condProb_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+- [Cond Prob](cond-prob.md)
+- [Partition](partition.md)
+
+## Proof depends on
+
+- [Path Weight](path-weight.md)
 
 ## Sources
 

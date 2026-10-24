@@ -12,7 +12,7 @@ lean: MetaMathlibExt.whittGeneralizedCatalan_zero_left
 
 ## Depends on
 
-This node has no prerequisites.
+- [Whitt Generalized Catalan](whitt-generalized-catalan.md)
 
 ## Sources
 

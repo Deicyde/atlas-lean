@@ -12,7 +12,9 @@ Every decoded clause is no wider than the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+- [Clause](clause.md)
+- [Decode Aux](decode-aux.md)
 
 ## Sources
 

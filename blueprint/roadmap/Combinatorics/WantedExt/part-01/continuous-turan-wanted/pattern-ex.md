@@ -15,6 +15,10 @@ extremal function `ex(n, M_P)`, the maximum number of ones in an `M_P`-free `n Ã
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cells Contain Pattern](cells-contain-pattern.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ContinuousTuranWanted](../../../../../sources/v2/WantedExt.md)

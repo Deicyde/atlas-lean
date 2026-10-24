@@ -13,7 +13,13 @@ and each `sᵢ`; polynomial equality is the displayed `h*` factorization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reflexive](is-reflexive.md)
+- [Valid Support](valid-support.md)
+- [Expand Support](expand-support.md)
+- [H Star Formula](h-star-formula.md)
+- [Setup Ell](setup-ell.md)
+- [Setup G](setup-g.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

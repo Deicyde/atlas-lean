@@ -12,7 +12,8 @@ lean: MetaMathlibExt.antiPell_kimberling_bounds
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Recurrence](anti-recurrence.md)
+- [Anti Recurrence Complement](anti-recurrence-complement.md)
 
 ## Sources
 

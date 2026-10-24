@@ -13,6 +13,11 @@ The fraction `f_{j+1}(α)` of the Stern–Brocot path of `α`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gap Mediant](gap-mediant.md)
+- [Stern Brocot Interval](stern-brocot-interval.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.MallowsRepresentationWanted](../../../../../sources/v2/WantedExt.md)

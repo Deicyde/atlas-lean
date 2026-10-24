@@ -14,7 +14,7 @@ Positivity of the entries, the paper's setting, excludes trivial families such a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachean Nu](nicomachean-nu.md)
 
 ## Sources
 

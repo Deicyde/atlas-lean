@@ -12,7 +12,15 @@ lean: Cslib.Complexity.Karp.hamPathDec_noHam
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ham Path Dec](../ham-path/ham-path-dec.md)
+- [No Ham](../ham-path/no-ham.md)
+
+## Proof depends on
+
+- [Is Ham Path](../ham-path/is-ham-path.md)
+- [Ham Path Dec encode P](ham-path-dec-encode-p.md)
+- [Arc](../../../path/arc.md)
+- [Encode P](../../../path/encode-p.md)
 
 ## Sources
 

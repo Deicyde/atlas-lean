@@ -12,7 +12,9 @@ orthogonal neighbours) contains a token.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Penult](placement-penult.md)
+- [Tak Adjacent](tak-adjacent.md)
+- [Tak Has Road](tak-has-road.md)
 
 ## Sources
 

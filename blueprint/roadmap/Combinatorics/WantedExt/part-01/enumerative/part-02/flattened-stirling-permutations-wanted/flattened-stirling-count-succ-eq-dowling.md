@@ -11,7 +11,9 @@ For `n ≥ 1`, `|flat(Q_{n+1})| = D_n`, the `n`-th Dowling number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Whitney Second](../../../../../MathlibExt/part-01/enumerative/part-07/qrwhitney-numbers/whitney-second.md)
+- [Flattened Stirling Count](flattened-stirling-count.md)
+- [Qr Dowling Number](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-number.md)
 
 ## Sources
 

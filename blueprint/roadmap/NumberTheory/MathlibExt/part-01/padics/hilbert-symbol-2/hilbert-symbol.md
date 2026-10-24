@@ -15,6 +15,10 @@ binary quadratic equation is solvable.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Solvable](is-solvable.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Padics.HilbertSymbol](../../../../../../sources/v2/MathlibExt.md)

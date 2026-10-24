@@ -14,6 +14,10 @@ The indices `1 ≤ i ≤ m` with `A_i = A_max`, where
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binomid Average](../../part-02/binomid-index-wanted/binomid-average.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LexMinimalExtensionMonoidWanted](../../../../../sources/v2/WantedExt.md)

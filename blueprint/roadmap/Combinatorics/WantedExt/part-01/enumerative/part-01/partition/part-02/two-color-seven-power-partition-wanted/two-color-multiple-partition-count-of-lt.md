@@ -12,7 +12,7 @@ Below `ℓ` the second color is unavailable: `p_{1,ℓ}(n) = p(n)` for `n < ℓ`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Color Multiple Partition Count](two-color-multiple-partition-count.md)
 
 ## Sources
 

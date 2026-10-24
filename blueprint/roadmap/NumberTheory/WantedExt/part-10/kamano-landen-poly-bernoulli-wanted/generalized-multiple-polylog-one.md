@@ -12,7 +12,14 @@ Initial condition: `Li_{(1)}(g; (β, γ); z) = ∫₀^z G_{g₀}(u) du`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+- [Generalized Multiple Polylog](generalized-multiple-polylog.md)
+- [Integral Div X](integral-div-x.md)
+- [Landen Form Series](landen-form-series.md)
+
+## Proof depends on
+
+- [Polylog Rev](polylog-rev.md)
 
 ## Sources
 

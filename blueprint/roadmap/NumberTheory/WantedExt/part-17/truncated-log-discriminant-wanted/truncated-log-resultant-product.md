@@ -14,6 +14,10 @@ lean: MetaMathlibExt.truncatedLogResultantProduct
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Scaled Truncated Log Polynomial](scaled-truncated-log-polynomial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.TruncatedLogDiscriminantWanted](../../../../../sources/v2/WantedExt.md)

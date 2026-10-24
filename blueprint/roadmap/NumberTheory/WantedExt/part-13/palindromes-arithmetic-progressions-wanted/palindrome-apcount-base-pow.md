@@ -15,7 +15,7 @@ Corollary 11: for `b ≥ 2`, `k, q ≥ 1`, `0 ≤ r < q`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Palindrome APCount](palindrome-apcount.md)
 
 ## Sources
 

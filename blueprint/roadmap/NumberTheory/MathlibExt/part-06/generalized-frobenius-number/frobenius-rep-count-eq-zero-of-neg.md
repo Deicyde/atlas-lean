@@ -12,7 +12,7 @@ A negative integer has no representation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frobenius Rep Count](frobenius-rep-count.md)
 
 ## Sources
 

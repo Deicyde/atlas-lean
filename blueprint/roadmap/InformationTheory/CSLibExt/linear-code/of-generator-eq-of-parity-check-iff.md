@@ -13,7 +13,14 @@ ranks add up to the length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+- [Of Generator](of-generator.md)
+- [Of Parity Check](of-parity-check.md)
+
+## Proof depends on
+
+- [Encode](encode.md)
+- [Syndrome](syndrome.md)
 
 ## Sources
 

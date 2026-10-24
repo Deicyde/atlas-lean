@@ -12,7 +12,7 @@ Initial value `b₁(1, 0, 0, 2) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Li Coeff B1](li-coeff-b1.md)
 
 ## Sources
 

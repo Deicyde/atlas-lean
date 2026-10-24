@@ -24,7 +24,7 @@ extending Lebesgue measure), not this claim, and is not asserted here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Countably Additive Congruence Claim](countably-additive-congruence-claim.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The emitter's stacks, listed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](../three-sat-emit/k.md)
 
 ## Sources
 

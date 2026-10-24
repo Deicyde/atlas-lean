@@ -12,7 +12,15 @@ Moore's automaton accepts the language of `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Moore State](moore-state.md)
+- [Moore's minimal automaton](moore-dfa.md)
+
+## Proof depends on
+
+- [A state is reachable exactly when some word leads to it](../../../decidability/part-02/regular/mem-reachable-iff.md)
+- [Moore Class](moore-class.md)
+- [Reachable](../../../decidability/part-02/regular/reachable.md)
+- [Step mem reachable](../../../decidability/part-02/regular/step-mem-reachable.md)
 
 ## Sources
 

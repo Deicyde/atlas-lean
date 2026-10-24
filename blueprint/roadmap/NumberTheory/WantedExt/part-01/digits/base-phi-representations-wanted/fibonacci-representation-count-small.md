@@ -12,7 +12,7 @@ Small values `Tot_FIB(0), …, Tot_FIB(8) = 1, 1, 1, 2, 1, 2, 2, 1, 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Representation Count](fibonacci-representation-count.md)
 
 ## Sources
 

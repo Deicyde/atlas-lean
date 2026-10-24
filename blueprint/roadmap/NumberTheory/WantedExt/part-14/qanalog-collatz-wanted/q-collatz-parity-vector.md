@@ -14,6 +14,10 @@ coefficient) of `T_{A,B}^k(x)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q Collatz](q-collatz.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QAnalogCollatzWanted](../../../../../sources/v2/WantedExt.md)

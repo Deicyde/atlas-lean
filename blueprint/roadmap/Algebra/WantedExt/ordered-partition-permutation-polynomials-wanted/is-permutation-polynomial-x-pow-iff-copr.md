@@ -13,7 +13,7 @@ elements if and only if `gcd(d, q - 1) = 1`. The hypothesis `d ≥ 1` is added: 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Permutation Polynomial](../../../FieldTheory/MathlibExt/finite/permutation-polynomial/is-permutation-polynomial.md)
 
 ## Sources
 

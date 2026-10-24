@@ -12,7 +12,11 @@ lean: Cslib.Crypto.Protocols.PerfectSecrecy.groupOTP_perfectlySecret
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group OTP](group-otp.md)
+
+## Proof depends on
+
+- [Group OTP ciphertext Dist eq uniform](group-otp-ciphertext-dist-eq-uniform.md)
 
 ## Sources
 

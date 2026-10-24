@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Biclique Edge Cover Instance](biclique-edge-cover-instance.md)
 
 ## Sources
 

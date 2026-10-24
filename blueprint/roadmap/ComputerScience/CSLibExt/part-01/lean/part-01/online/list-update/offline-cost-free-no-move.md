@@ -12,7 +12,14 @@ With no free moves (targets past every position), the free-exchange cost is `off
 
 ## Depends on
 
-This node has no prerequisites.
+- [Offline Cost](offline-cost.md)
+- [Offline Cost Free](offline-cost-free.md)
+
+## Proof depends on
+
+- [Access Cost](access-cost.md)
+- [Free Move](free-move.md)
+- [Inv](inv.md)
 
 ## Sources
 

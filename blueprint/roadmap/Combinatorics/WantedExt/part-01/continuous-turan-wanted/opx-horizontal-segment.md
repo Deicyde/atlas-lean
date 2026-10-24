@@ -14,7 +14,7 @@ construction `(0, c) × (0, n) ⊆ [0, n]²` uses; for `n < c` every open `S ⊆
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

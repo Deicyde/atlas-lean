@@ -13,7 +13,16 @@ the forest's edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+- [Preorder](preorder.md)
+- [Weight](weight.md)
+- [Is Metric Cost](is-metric-cost.md)
+- [Path From](path-from.md)
+
+## Proof depends on
+
+- [Path From append append le](path-from-append-append-le.md)
+- [Path From append singleton le](path-from-append-singleton-le.md)
 
 ## Sources
 

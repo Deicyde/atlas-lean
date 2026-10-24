@@ -12,7 +12,7 @@ of the positive integers `1, 2, 3, …`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

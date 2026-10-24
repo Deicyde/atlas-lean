@@ -14,7 +14,8 @@ lean: MetaMathlibExt.SelbergClassFunction.iteratedDeriv_reflected_asymptotic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Class Function](selberg-class-function.md)
+- [Degree](degree.md)
 
 ## Sources
 

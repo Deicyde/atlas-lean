@@ -12,7 +12,8 @@ Jacobsthal case `k = 1`: `J_{2n} = (n/2ⁿ) ∫_{-1}^{1} (5 + 3x)^{n-1} dx` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Jacobsthal Params](k-jacobsthal-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

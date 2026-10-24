@@ -11,7 +11,11 @@ A cover of all vertices by at most `K` directed paths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Path Cover Instance](directed-path-cover-instance.md)
+
+## Proof depends on
+
+- [DAdj](dadj.md)
 
 ## Sources
 

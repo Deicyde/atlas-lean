@@ -12,7 +12,11 @@ The third zero-indexed positive fixed point is `13`, the paper's `n_p^{(3)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus Three Fixed Point](josephus-three-fixed-point.md)
+
+## Proof depends on
+
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

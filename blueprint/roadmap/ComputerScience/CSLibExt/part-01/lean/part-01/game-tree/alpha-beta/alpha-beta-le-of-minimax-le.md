@@ -12,7 +12,13 @@ A minimax value at most `a` is reported as at most `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
+- [Alpha Beta](alpha-beta.md)
+- [Minimax](minimax.md)
+
+## Proof depends on
+
+- [Alpha-beta is correct](alpha-beta-spec.md)
 
 ## Sources
 

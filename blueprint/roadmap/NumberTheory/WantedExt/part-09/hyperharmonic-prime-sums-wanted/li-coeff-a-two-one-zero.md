@@ -12,7 +12,7 @@ Small value `a(2, 1, 0) = -a(1, 0, 0) = -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Li Coeff A](li-coeff-a.md)
 
 ## Sources
 

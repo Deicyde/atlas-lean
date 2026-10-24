@@ -14,7 +14,18 @@ the situation step computed from the label, the state and the top-`depth M` wind
 
 ## Depends on
 
-This node has no prerequisites.
+- [Apply Eff](apply-eff.md)
+- [The step on `Option Λ`](../part-01/sit-step.md)
+- [Step I](step-i.md)
+- [Win C](win-c.md)
+
+## Proof depends on
+
+- [Depth](../part-01/depth.md)
+- [Eff](../part-01/eff.md)
+- [B1-core](eff-agree.md)
+- [Ops](../part-01/ops.md)
+- [Window](../part-02/window.md)
 
 ## Sources
 

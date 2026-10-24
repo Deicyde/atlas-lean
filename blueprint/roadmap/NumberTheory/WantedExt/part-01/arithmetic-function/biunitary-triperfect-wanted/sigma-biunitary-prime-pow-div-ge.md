@@ -12,7 +12,7 @@ Lower bounds for `σ**(p^e) / p^e` (in `ℚ`) for a prime `p` and `e ≥ 1`: it 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

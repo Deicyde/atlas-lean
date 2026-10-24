@@ -12,7 +12,8 @@ bijection `h : ℤ₂ → 𝔽₂[[q]]` with `h⁻¹ ∘ T_{A,B} ∘ h = T`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Collatz](q-collatz.md)
+- [Two Adic Collatz](two-adic-collatz.md)
 
 ## Sources
 

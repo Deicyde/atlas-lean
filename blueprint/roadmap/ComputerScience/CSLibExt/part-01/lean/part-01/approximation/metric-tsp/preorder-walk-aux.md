@@ -12,7 +12,7 @@ accumulator keeps the host-language work linear: no list is appended.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
 
 ## Sources
 

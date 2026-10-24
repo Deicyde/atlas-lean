@@ -13,7 +13,14 @@ equivalent duplicate states.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible](../minimality/accessible.md)
+- [DFAHom](dfahom.md)
+- [State Separated](state-separated.md)
+- [Canonical Residual Hom](canonical-residual-hom.md)
+
+## Proof depends on
+
+- [State Equivalent](../minimality/state-equivalent.md)
 
 ## Sources
 

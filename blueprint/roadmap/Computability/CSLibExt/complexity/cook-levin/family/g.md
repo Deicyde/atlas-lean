@@ -11,7 +11,12 @@ Alphabets: Bool output, unit counters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](../counter-view/sk.md)
+- [CK](ck.md)
+
+## Proof depends on
+
+- [SΓ](../counter-view/s.md)
 
 ## Sources
 

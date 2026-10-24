@@ -11,7 +11,7 @@ Every domino has a nonempty top and bottom, as a Boolean test.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](domino.md)
 
 ## Sources
 

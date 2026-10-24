@@ -13,7 +13,11 @@ Lemma 5, Equation (51): for `0 < h < ℓ`, a primitive `h`-th root of unity `ξ`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [H Free](h-free.md)
+- [H Full](h-full.md)
+- [H Full Free Euler H](h-full-free-euler-h.md)
+- [H Full Root](h-full-root.md)
 
 ## Sources
 

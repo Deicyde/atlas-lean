@@ -16,7 +16,9 @@ Inverse theorem for Theorem 14 (`k = m + 1 ≥ 3`, `0 = a₀ < a₁ < ⋯`, `1 �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
+- [Repetition Sequence](repetition-sequence.md)
+- [Yang Chen Bound](yang-chen-bound.md)
 
 ## Sources
 

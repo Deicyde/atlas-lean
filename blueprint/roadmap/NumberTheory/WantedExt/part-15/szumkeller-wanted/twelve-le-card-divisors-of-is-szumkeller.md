@@ -11,7 +11,7 @@ An even s-Zumkeller number has at least `12` divisors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SZumkeller](is-szumkeller.md)
 
 ## Sources
 

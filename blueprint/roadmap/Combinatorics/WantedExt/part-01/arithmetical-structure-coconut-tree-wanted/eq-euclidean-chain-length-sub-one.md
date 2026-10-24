@@ -14,7 +14,8 @@ structure on `CT(p, s)` (each is the one constructed for its own labels
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Euclidean Chain Length](euclidean-chain-length.md)
 
 ## Sources
 

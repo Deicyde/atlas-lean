@@ -12,7 +12,12 @@ lean: MetaMathlibExt.noBifenceTilingSum_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [No Bifence Tiling Sum](no-bifence-tiling-sum.md)
+
+## Proof depends on
+
+- [Fence Tiling Weight](fence-tiling-weight.md)
+- [Fence Tilings](fence-tilings.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For positive integers `a ≠ b` and `c`, `χ(a, b, c) ≠ χ(b, a, c)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Characteristic Number](characteristic-number.md)
 
 ## Sources
 

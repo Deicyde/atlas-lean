@@ -12,7 +12,9 @@ paper assumes `α_1 = 1`, but both sides scale by `α_1` and `𝖴_α` does not 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alpha Stirling Matrix](alpha-stirling-matrix.md)
+- [Alpha Upper Matrix](alpha-upper-matrix.md)
+- [Shifted Alpha Stirling Matrix](shifted-alpha-stirling-matrix.md)
 
 ## Sources
 

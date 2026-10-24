@@ -13,7 +13,19 @@ lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.depthLE_bitonicSortN
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth LE](depth-le.md)
+- [Bitonic Sort N](../bitonic/bitonic-sort-n.md)
+
+## Proof depends on
+
+- [Append](append.md)
+- [Append disjoint](append-disjoint.md)
+- [Within](../bitonic/within.md)
+- [Bitonic Merge](../bitonic/bitonic-merge.md)
+- [Depth LE bitonic Merge](depth-le-bitonic-merge.md)
+- [Half Cleaner](../bitonic/half-cleaner.md)
+- [Levels](levels.md)
+- [Levels swap](levels-swap.md)
 
 ## Sources
 

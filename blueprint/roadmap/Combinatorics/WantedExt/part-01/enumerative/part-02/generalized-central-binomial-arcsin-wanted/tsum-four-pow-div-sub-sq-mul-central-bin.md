@@ -19,7 +19,10 @@ resp. `n - l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zurita M](zurita-m.md)
+- [Zurita MCoeff](zurita-mcoeff.md)
+- [Zurita SCoeff](zurita-scoeff.md)
+- [Zurita TCoeff](zurita-tcoeff.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ alphabets are all finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Halts On](tm2-halts-on.md)
+
+## Proof depends on
+
+- [Fwd TM](../to-tm2/fwd-tm.md)
+- [Tm2 Halts On fwd TM iff](tm2-halts-on-fwd-tm-iff.md)
 
 ## Sources
 

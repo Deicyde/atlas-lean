@@ -11,7 +11,12 @@ The exit label.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Emitter](emitter.md)
+- [L](l.md)
+
+## Proof depends on
+
+- [Lab](../../../sat-tokenizer/lab.md)
 
 ## Sources
 

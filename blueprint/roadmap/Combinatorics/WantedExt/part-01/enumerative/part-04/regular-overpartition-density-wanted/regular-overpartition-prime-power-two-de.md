@@ -14,7 +14,7 @@ is the paper's `X`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Overpartition Count](regular-overpartition-count.md)
 
 ## Sources
 

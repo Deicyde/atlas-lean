@@ -11,7 +11,9 @@ A strong Lucas pseudoprime is an Euler–Lucas pseudoprime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Euler Lucas Pseudoprime](is-euler-lucas-pseudoprime.md)
+- [Is Strong Lucas Pseudoprime](is-strong-lucas-pseudoprime.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 
 ## Sources
 

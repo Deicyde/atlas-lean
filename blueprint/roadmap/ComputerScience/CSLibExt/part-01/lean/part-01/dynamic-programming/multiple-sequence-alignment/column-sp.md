@@ -14,6 +14,11 @@ the pairwise column score.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Column Score](../sequence-alignment/column-score.md)
+- [Pair Finset](pair-finset.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.MultipleSequenceAlignment](../../../../../../../../sources/v2/CSLibExt.md)

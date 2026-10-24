@@ -20,7 +20,7 @@ are zero-based value functions for the classical containment
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Pattern](../../part-04/odd-fibonacci-wanted/has-pattern.md)
 
 ## Sources
 

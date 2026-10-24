@@ -11,7 +11,11 @@ The language of an encoded NFA.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+
+## Proof depends on
+
+- [ToεNFA](to-nfa.md)
 
 ## Sources
 

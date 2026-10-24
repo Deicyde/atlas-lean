@@ -13,6 +13,11 @@ The one-based spot `p(i + 1)` in which car `i + 1` parks.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Park Spots](../../part-03/lucky-cars-wanted/park-spots.md)
+- [Stirling Pref](stirling-pref.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.StirlingLuckyDisplacementWanted](../../../../../../../sources/v2/WantedExt.md)

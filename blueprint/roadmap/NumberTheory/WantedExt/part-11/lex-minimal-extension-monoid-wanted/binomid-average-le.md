@@ -13,7 +13,9 @@ for every `i ≥ 1` and every maximizing index `j ≤ m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lex Minimal Extension Of](../../part-02/binomid-index-wanted/is-lex-minimal-extension-of.md)
+- [Binomid Average](../../part-02/binomid-index-wanted/binomid-average.md)
+- [Max Average Indices](max-average-indices.md)
 
 ## Sources
 

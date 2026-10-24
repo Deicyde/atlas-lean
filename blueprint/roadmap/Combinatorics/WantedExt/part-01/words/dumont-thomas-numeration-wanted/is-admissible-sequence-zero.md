@@ -12,7 +12,7 @@ Every one-term sequence is admissible (the condition is vacuous for `k = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Sequence](is-admissible-sequence.md)
 
 ## Sources
 

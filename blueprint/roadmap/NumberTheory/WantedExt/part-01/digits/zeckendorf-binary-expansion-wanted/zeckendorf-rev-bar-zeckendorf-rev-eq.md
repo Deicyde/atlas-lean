@@ -15,7 +15,14 @@ with largest support index `b ≥ 1` (part below `b` a sum of disjoint proper `L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Desc Lex LT](desc-lex-lt.md)
+- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [L Star Collection](l-star-collection.md)
+- [Max LStar Block](max-lstar-block.md)
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Zeckendorf Bar](zeckendorf-bar.md)
+- [Zeckendorf Rev](zeckendorf-rev.md)
 
 ## Sources
 

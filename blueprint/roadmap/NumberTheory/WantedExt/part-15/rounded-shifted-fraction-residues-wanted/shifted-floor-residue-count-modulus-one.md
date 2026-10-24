@@ -13,7 +13,7 @@ Characteristic value: modulo `1` every term is counted, so
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Floor Residue Count](shifted-floor-residue-count.md)
 
 ## Sources
 

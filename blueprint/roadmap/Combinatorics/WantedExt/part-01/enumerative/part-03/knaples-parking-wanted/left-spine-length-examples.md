@@ -13,7 +13,7 @@ child and a right child has left spine length `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Left Spine Length](left-spine-length.md)
 
 ## Sources
 

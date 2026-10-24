@@ -13,7 +13,17 @@ misses filling the cache.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Misses](../../greedy/offline-caching/misses.md)
+- [Opt Trace](opt-trace.md)
+
+## Proof depends on
+
+- [Cache Event](../../greedy/offline-caching/cache-event.md)
+- [Is Miss](../../greedy/offline-caching/is-miss.md)
+- [Find? is Some](find-is-some.md)
+- [Mem of full](mem-of-full.md)
+- [Misses opt Trace hits](misses-opt-trace-hits.md)
+- [Opt Step](opt-step.md)
 
 ## Sources
 

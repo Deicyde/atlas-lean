@@ -12,7 +12,11 @@ The single bitter cube `CB(F, 0, …, 0, 0)` has no move, so its Grundy number i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
+
+## Proof depends on
+
+- [Height Chocolate Bar Grundy eq](height-chocolate-bar-grundy-eq.md)
 
 ## Sources
 

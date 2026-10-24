@@ -12,7 +12,7 @@ For `λ = -1` and `c = 1` the series is the trinomial `1 - α t + β t^m` itself
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
 
 ## Sources
 

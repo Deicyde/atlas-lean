@@ -13,7 +13,15 @@ The answer read from the universal machine's output: `true` unless the output is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc Out](../clocked/enc-out.md)
+- [Bit Sym](../code/bit-sym.md)
+- [Diag Answer](diag-answer.md)
+
+## Proof depends on
+
+- [Cell](../clocked/cell.md)
+- [Cells](../clocked/cells.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

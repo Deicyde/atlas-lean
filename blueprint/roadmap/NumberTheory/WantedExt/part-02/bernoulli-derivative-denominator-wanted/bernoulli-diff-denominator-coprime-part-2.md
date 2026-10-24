@@ -12,7 +12,7 @@ Values `𝔻^⊥_1 = 1`, `𝔻^⊥_2 = 1`, `𝔻^⊥_3 = 2`, `𝔻^⊥_5 = 6`, `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
 
 ## Sources
 

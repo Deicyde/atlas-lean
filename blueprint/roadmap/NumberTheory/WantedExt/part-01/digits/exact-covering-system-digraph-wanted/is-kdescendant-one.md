@@ -12,7 +12,7 @@ The `1`-descendants (successors) of `m` are the out-neighbours of `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KDescendant](is-kdescendant.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Lemma 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Laurent](linear-laurent.md)
 
 ## Sources
 

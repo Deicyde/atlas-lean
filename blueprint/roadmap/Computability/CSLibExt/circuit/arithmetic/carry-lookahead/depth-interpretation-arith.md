@@ -12,7 +12,9 @@ A binary gate's depth is one more than its deeper argument.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Gate](../ripple-carry/arith-gate.md)
+- [Arith Signature](../ripple-carry/arith-signature.md)
+- [Depth Interpretation](depth-interpretation.md)
 
 ## Sources
 

@@ -19,6 +19,12 @@ deviation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Delete Digit](delete-digit.md)
+- [Insert Digit](insert-digit.md)
+- [Replace Digit](replace-digit.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DigitallyRobustCompositesWanted](../../../../../sources/v2/WantedExt.md)

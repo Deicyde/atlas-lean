@@ -11,7 +11,12 @@ The posterior weight of the path `z` for the sequence `xs n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid HMM](valid-hmm.md)
+
+## Proof depends on
+
+- [Posterior](../../latent-variable/expectation-maximization/posterior.md)
+- [Joint](joint.md)
 
 ## Sources
 

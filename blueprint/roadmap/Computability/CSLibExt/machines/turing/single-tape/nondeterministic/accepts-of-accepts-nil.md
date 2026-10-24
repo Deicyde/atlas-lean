@@ -15,6 +15,10 @@ see `accepts_append`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Acceptance is closed under extension on the right](accepts-append.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.Nondeterministic](../../../../../../../sources/v2/CSLibExt.md)

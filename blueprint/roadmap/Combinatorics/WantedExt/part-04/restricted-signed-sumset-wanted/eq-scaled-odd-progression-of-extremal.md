@@ -14,7 +14,15 @@ uses `scaleFinset` and `oddProgression` for `a₁*{1,3,…,2k-1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Indexed AP](is-indexed-ap.md)
+- [Initial Segment](initial-segment.md)
+- [Odd Progression](odd-progression.md)
+- [Ordered Finset](ordered-finset.md)
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
+- [Restricted Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
+- [Scale Finset](scale-finset.md)
+- [Tail Finset](tail-finset.md)
+- [Is APOf Length With](../../../MathlibExt/part-01/ap/basic/is-apof-length-with.md)
 
 ## Sources
 

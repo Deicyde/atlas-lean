@@ -12,7 +12,7 @@ The exceptional set is empty for `x ≤ 7!`, i.e. `N_R(x) = 0` there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Robin Exceptional Set](robin-exceptional-set.md)
 
 ## Sources
 

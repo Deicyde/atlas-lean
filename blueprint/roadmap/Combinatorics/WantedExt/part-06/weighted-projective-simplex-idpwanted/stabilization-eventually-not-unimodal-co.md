@@ -16,7 +16,11 @@ unimodal).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is HStar Unimodal](is-hstar-unimodal.md)
+- [H Star Formula](h-star-formula.md)
+- [Reflexive Stabilization At](reflexive-stabilization-at.md)
+- [Weight Lcm](weight-lcm.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

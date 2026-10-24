@@ -14,6 +14,10 @@ in `ℤ[y][[x]]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Colored Arndt Count](colored-arndt-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.ArndtCompositionsWanted](../../../../../../../sources/v2/WantedExt.md)

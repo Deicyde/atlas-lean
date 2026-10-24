@@ -12,7 +12,13 @@ lean: DFA.equivB_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv B](equiv-b.md)
+
+## Proof depends on
+
+- [Is Empty B](is-empty-b.md)
+- [Emptiness of DFAs is decided by `isEmptyB`](is-empty-b-iff.md)
+- [Symm Diff](symm-diff.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ For `n ≥ 0`, `po(2n+1) = 2 ∑_{k ≥ 0} p̄(n - 2k(k+1))`, with `p̄` the ove
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The binary code of the target: its digits with leading zeros dropped.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+
+## Proof depends on
+
+- [Bits Val cons](bits-val-cons.md)
+- [Encode Nat bits Val](encode-nat-bits-val.md)
 
 ## Sources
 

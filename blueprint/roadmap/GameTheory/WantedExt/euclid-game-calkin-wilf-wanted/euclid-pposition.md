@@ -15,6 +15,10 @@ suffices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Euclid PPosition Aux](euclid-pposition-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.EuclidGameCalkinWilfWanted](../../../../sources/v2/WantedExt.md)

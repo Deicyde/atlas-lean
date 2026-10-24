@@ -12,7 +12,11 @@ A DFA with finite state space has a finite transformation monoid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Transformation](../syntactic/state-transformation.md)
+
+## Proof depends on
+
+- [State Transformation Equiv](../syntactic/state-transformation-equiv.md)
 
 ## Sources
 

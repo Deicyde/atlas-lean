@@ -11,7 +11,7 @@ Revise the arc `(x, y)`: the values of `x` with a support in the domain of `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
 
 ## Sources
 

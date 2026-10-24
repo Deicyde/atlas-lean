@@ -15,6 +15,11 @@ words by `morphExtend`) whose letter images are all nonempty and which has a gro
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Non Erasing](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-non-erasing.md)
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.DumontThomasNumerationWanted](../../../../../../sources/v2/WantedExt.md)

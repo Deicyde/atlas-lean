@@ -14,7 +14,8 @@ stable (no move inside) and absorbing (a move into it from outside) set of the m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
+- [Wythoff Terminal PSet](wythoff-terminal-pset.md)
 
 ## Sources
 

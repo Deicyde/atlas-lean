@@ -15,7 +15,7 @@ is the coefficient of `t^n` in `(1 + A(x) t) / (1 - m t + x t^m)^λ` (Definition
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
 
 ## Sources
 

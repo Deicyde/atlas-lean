@@ -12,7 +12,10 @@ Drain steps from a uniform height bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dks](dks.md)
+- [Drain B](drain-b.md)
+- [FK](../precompute/fk.md)
+- [FΓ](../precompute/f.md)
 
 ## Sources
 

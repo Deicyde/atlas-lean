@@ -14,6 +14,10 @@ lean: MetaMathlibExt.IsGenFrobeniusNumber
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Frobenius Rep Count](frobenius-rep-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GeneralizedFrobeniusNumber](../../../../../sources/v2/MathlibExt.md)

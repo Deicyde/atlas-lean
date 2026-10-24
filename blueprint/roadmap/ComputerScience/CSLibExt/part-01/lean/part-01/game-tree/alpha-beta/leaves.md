@@ -11,7 +11,7 @@ The number of leaves of a tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Game Tree](game-tree.md)
 
 ## Sources
 

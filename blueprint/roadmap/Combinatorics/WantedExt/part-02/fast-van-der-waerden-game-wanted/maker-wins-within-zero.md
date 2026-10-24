@@ -12,7 +12,8 @@ With no moves left Maker has won exactly when he already holds a copy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contains Copy](contains-copy.md)
+- [Maker Wins Within](maker-wins-within.md)
 
 ## Sources
 

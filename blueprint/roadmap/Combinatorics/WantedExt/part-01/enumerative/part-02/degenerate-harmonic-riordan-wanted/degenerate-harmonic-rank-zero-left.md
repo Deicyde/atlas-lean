@@ -12,7 +12,12 @@ lean: MetaMathlibExt.degenerateHarmonicRank_zero_left
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
+
+## Proof depends on
+
+- [Degenerate Harmonic Term](degenerate-harmonic-term.md)
+- [Degenerate Harmonic Term zero](degenerate-harmonic-term-zero.md)
 
 ## Sources
 

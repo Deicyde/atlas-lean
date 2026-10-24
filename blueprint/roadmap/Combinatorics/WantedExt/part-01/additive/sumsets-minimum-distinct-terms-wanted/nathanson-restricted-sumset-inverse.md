@@ -12,7 +12,8 @@ an arithmetic progression.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Sumset](../../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
+- [Is APOf Length](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources
 

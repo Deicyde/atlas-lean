@@ -12,7 +12,8 @@ The characteristic row-cardinality equation for first-two-row difference `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has First Two Row Difference](has-first-two-row-difference.md)
+- [Tableau Row Length](tableau-row-length.md)
 
 ## Sources
 

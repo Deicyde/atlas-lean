@@ -13,7 +13,21 @@ model makes true.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Horn](is-horn.md)
+- [Least Model](least-model.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
+
+## Proof depends on
+
+- [Body In](body-in.md)
+- [Close](close.md)
+- [Derive](derive.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
+- [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 
 ## Sources
 

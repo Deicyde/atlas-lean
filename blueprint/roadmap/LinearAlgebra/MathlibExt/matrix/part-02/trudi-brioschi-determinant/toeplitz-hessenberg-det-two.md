@@ -12,7 +12,7 @@ lean: MetaMathlibExt.toeplitzHessenbergDet_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz Hessenberg Det](toeplitz-hessenberg-det.md)
 
 ## Sources
 

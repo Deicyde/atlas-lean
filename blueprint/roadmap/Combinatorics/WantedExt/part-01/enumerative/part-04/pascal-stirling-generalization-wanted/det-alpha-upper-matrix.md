@@ -11,7 +11,7 @@ Lemma 1, determinant: `det 𝖴_α(n) = ∏_{i=1}^n α_i^{i-1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alpha Upper Matrix](alpha-upper-matrix.md)
 
 ## Sources
 

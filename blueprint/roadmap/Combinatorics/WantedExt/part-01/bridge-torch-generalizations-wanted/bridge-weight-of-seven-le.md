@@ -12,7 +12,7 @@ For `i ≥ 7`, `yᵢ = (4i - 8)/3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Weight](bridge-weight.md)
 
 ## Sources
 

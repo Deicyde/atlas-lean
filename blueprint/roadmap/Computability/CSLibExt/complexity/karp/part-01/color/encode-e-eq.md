@@ -12,7 +12,8 @@ lean: Cslib.Complexity.Karp.encodeE_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Bits](edge-bits.md)
+- [Encode E](encode-e.md)
 
 ## Sources
 

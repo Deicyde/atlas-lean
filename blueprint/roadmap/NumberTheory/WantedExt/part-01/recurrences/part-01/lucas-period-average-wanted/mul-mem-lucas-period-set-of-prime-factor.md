@@ -13,7 +13,10 @@ is an integer for all recurrences `W(a, b)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas All Averages Integral](lucas-all-averages-integral.md)
+- [Lucas Average Set](lucas-average-set.md)
+- [Lucas Period Set](lucas-period-set.md)
 
 ## Sources
 

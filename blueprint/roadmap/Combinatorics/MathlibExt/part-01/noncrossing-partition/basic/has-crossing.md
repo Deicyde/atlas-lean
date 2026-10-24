@@ -12,7 +12,7 @@ lean: NoncrossingPartition.HasCrossing
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Partition](set-partition.md)
 
 ## Sources
 

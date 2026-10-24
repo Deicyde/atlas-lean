@@ -12,7 +12,14 @@ A round adds at most `|Σ|` waiting entries per split block.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Splits](splits.md)
+- [Preimage](preimage.md)
+- [Round W](round-w.md)
+
+## Proof depends on
+
+- [New Splitters](new-splitters.md)
+- [Smaller](smaller.md)
 
 ## Sources
 

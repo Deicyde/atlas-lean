@@ -13,7 +13,9 @@ all `n` iff `ε ∈ Ē*`. As printed (no `ε ≠ 0`, decompositions with `n ≥ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Closure](l-star-closure.md)
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Zeckendorf Rev](zeckendorf-rev.md)
 
 ## Sources
 

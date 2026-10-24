@@ -11,7 +11,7 @@ Depth of the volcano.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Isogeny Volcano](isogeny-volcano.md)
 
 ## Sources
 

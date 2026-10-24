@@ -14,7 +14,7 @@ added; `2 ≤ d` is added: for `d = 1`, `P = (0, 1)` has `opx(n, P, 1) ≤ 1` (a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

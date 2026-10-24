@@ -12,7 +12,7 @@ Row `0` of `pairs (n + 1)`, then the pairs of `n` shifted by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairs](../clique/pairs.md)
 
 ## Sources
 

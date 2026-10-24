@@ -13,6 +13,16 @@ lean: MetaMathlibExt.marriageableSinglesCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Marriageable Singles](is-marriageable-singles.md)
+- [Merged Has Crossing](merged-has-crossing.md)
+- [Merged Same Block](merged-same-block.md)
+- [Noncrossing Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
+- [Has Crossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
+- [Is Noncrossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)
+- [Set Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.LonelyMarriageableSinglesWanted](../../../../../../../sources/v2/WantedExt.md)

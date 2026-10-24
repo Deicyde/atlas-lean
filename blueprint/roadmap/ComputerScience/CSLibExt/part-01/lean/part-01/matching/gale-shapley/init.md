@@ -11,7 +11,7 @@ The initial state: no proposals, nobody held.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

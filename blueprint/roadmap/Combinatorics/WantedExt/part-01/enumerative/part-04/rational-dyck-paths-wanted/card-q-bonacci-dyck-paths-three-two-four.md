@@ -13,7 +13,8 @@ Small values for `q = 3/2` (here `t = 0` and `s ≠ t r + 1`):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Bonacci Dyck Paths](q-bonacci-dyck-paths.md)
+- [Tilde Rational Dyck Paths](tilde-rational-dyck-paths.md)
 
 ## Sources
 

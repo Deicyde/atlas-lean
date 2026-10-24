@@ -11,7 +11,7 @@ For primes `p < q`, no `{p, q}`-Diophantine quintuple exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
 
 ## Sources
 

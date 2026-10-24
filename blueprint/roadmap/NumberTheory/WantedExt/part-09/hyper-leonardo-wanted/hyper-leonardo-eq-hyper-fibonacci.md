@@ -11,7 +11,8 @@ Proposition 6: `Le^{(r)}_n = 2F^{(r)}_{n+1} - C(n+r, r)` for all `n, r ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Fibonacci](hyper-fibonacci.md)
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

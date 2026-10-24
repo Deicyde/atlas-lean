@@ -13,7 +13,7 @@ difference rather than replacing it by an absolute difference.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chromatically Intersective](is-chromatically-intersective.md)
 
 ## Sources
 

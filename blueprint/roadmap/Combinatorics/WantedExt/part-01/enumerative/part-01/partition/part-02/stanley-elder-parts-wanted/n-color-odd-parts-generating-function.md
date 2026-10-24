@@ -12,7 +12,7 @@ Theorem 5: with `A_o(m)` the total number of odd parts over the `n`-color partit
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
 
 ## Sources
 

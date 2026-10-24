@@ -11,7 +11,7 @@ Horizontal difference: for `m ≥ 1`, `D^k(m, n + 1) - D^k(m, n) = 2 D^(k+1)(m -
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Delannoy Upper](gen-delannoy-upper.md)
 
 ## Sources
 

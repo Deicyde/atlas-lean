@@ -15,6 +15,10 @@ block, agreeing with `θ^{m+1}` above `lo`, smaller at `lo`, and `0` below `lo`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Periodic Theta](periodic-theta.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

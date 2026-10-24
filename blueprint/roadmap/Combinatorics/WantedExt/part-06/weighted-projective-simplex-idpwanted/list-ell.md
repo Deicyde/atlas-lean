@@ -14,6 +14,10 @@ Theorem 12.  Natural division is exact when that vector is reflexive.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weight Lcm](weight-lcm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

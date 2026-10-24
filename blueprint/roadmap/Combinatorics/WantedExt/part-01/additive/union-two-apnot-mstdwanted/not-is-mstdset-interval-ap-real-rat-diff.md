@@ -13,7 +13,9 @@ coprime, `x + id ∉ ℕ` for `i ∈ [0, m]`, and either `m ∈ [2, q - 1]` or (
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](is-mstdset.md)
+- [Real APSet](real-apset.md)
+- [Real Interval Set](real-interval-set.md)
 
 ## Sources
 

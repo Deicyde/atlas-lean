@@ -12,7 +12,12 @@ recombine with the Chinese remainder theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key](key.md)
+- [N](n.md)
+
+## Proof depends on
+
+- [Crt](crt.md)
 
 ## Sources
 

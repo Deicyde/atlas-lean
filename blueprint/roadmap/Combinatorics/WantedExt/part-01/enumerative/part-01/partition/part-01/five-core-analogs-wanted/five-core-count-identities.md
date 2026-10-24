@@ -11,7 +11,7 @@ Lemma 11: `c_5(4n+1) = c_5(2n)` and `c_5(5n+4) = 5 c_5(n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Five Core Count](five-core-count.md)
 
 ## Sources
 

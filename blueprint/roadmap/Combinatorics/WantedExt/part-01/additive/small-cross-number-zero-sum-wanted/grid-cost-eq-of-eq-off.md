@@ -12,7 +12,7 @@ On a pair differing only in coordinate `i`, the grid cost is `w i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grid Cost](grid-cost.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Every unit is enumerated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Val](unit-val.md)
+
+## Proof depends on
+
+- [Gaussian Int is Unit iff](gaussian-int-is-unit-iff.md)
 
 ## Sources
 

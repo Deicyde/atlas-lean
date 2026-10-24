@@ -12,7 +12,11 @@ The norm is multiplicative on nonzero polynomials: `|f g| = |f| |g|`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fq Norm](fq-norm.md)
+
+## Proof depends on
+
+- [Fq Norm of ne zero](fq-norm-of-ne-zero.md)
 
 ## Sources
 

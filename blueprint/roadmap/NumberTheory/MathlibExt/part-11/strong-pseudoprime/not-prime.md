@@ -12,7 +12,7 @@ A strong pseudoprime is not prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strong Pseudoprime](is-strong-pseudoprime.md)
 
 ## Sources
 

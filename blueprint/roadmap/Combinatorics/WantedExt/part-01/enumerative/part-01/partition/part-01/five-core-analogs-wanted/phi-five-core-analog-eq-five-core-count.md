@@ -13,7 +13,8 @@ Theorem 2 identities: for every `n ≥ 0`, `ā_5(5n+2) = 4 c_5(5n+1)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Five Core Count](five-core-count.md)
+- [Phi Five Core Analog](phi-five-core-analog.md)
 
 ## Sources
 

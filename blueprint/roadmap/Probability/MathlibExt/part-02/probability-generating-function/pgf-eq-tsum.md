@@ -13,7 +13,7 @@ series with coefficients `P(X = k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pgf](pgf.md)
 
 ## Sources
 

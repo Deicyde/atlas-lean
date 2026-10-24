@@ -15,7 +15,8 @@ post-Corollary 10 congruence properties; the displayed quotient is formed in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Double Factorial](odd-double-factorial.md)
+- [Odd Part](odd-part.md)
 
 ## Sources
 

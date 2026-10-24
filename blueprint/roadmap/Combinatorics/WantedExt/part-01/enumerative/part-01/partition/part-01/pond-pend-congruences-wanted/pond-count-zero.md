@@ -12,7 +12,7 @@ The empty partition is the only partition of `0`, and it is POND: `pond(0) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pond Count](pond-count.md)
 
 ## Sources
 

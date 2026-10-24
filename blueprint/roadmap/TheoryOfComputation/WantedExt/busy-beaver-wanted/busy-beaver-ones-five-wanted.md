@@ -12,7 +12,7 @@ Source: Busy Beaver Challenge (2025), determination of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Busy Beaver Ones](../../../Computability/CSLibExt/busy-beaver/busy-beaver-ones.md)
 
 ## Sources
 

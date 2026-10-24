@@ -14,7 +14,7 @@ permutation iff every fixed point forces `r = 1` and every nontrivial cycle leng
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RCycle Perm](is-rcycle-perm.md)
 
 ## Sources
 

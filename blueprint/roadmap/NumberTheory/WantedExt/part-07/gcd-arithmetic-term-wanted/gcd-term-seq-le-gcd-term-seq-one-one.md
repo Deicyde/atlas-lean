@@ -12,7 +12,7 @@ If `a, b ≥ 1` and one of them exceeds `1`, then `s_{a,b}(n) ≤ s_{1,1}(n) = n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Term Seq](gcd-term-seq.md)
 
 ## Sources
 

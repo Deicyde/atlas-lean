@@ -14,7 +14,11 @@ empty), `|ℙ(A ∩ B) - ℙ(A)ℙ(B)| ≤ 12 (1 - 1/φ^8)^{k/6} + 1/φ^{2k}`, i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
+- [Zeck Block Prefix](zeck-block-prefix.md)
+- [Zeck Blocks](zeck-blocks.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

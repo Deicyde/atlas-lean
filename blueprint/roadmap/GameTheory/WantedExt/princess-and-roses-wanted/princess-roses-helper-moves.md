@@ -14,6 +14,10 @@ legal when the result still satisfies `0 ≤ x ≤ y ≤ z`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Princess Roses Helper Move List](princess-roses-helper-move-list.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.PrincessAndRosesWanted](../../../../sources/v2/WantedExt.md)

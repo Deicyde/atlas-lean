@@ -12,7 +12,7 @@ lean: MetaMathlibExt.idealPeriodWord_five
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ideal Period Word](ideal-period-word.md)
 
 ## Sources
 

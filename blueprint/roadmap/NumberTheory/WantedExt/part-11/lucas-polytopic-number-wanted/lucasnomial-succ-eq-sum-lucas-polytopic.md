@@ -13,7 +13,8 @@ and `φ'` exchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Parameters](../../../MathlibExt/part-08/lucas-polytopic-number/lucas-parameters.md)
+- [Lucasnomial](../../../MathlibExt/part-08/lucas-polytopic-number/lucasnomial.md)
 
 ## Sources
 

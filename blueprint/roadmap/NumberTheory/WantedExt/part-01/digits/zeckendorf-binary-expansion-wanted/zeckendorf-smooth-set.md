@@ -13,6 +13,12 @@ The set `U = eval_Q̃(Ẽ* − Ē*)` (Notation 2).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [L Star Closure](l-star-closure.md)
+- [L Star Collection](l-star-collection.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

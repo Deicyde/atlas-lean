@@ -12,7 +12,12 @@ language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](../nerode/nerode-class.md)
+- [Reachable Residuals](../minimality/reachable-residuals.md)
+
+## Proof depends on
+
+- [Nerode Class Equiv Reachable Residuals](../minimality/nerode-class-equiv-reachable-residuals.md)
 
 ## Sources
 

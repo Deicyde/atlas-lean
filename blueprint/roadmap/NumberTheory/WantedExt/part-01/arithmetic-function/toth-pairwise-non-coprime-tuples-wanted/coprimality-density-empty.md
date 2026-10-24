@@ -12,7 +12,7 @@ With no edges, `A_G = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Density](coprimality-density.md)
 
 ## Sources
 

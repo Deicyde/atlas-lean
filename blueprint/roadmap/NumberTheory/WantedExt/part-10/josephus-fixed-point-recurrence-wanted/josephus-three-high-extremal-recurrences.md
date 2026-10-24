@@ -14,7 +14,8 @@ The unified recurrences (1)-(4) for consecutive high extremal points
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Josephus Three High Extremal](is-josephus-three-high-extremal.md)
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

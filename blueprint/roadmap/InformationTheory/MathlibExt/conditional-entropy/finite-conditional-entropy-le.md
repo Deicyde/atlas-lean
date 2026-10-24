@@ -12,7 +12,13 @@ lean: InformationTheory.finiteConditionalEntropy_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Conditional Entropy](finite-conditional-entropy.md)
+- [Shannon Entropy](../finite-entropy/shannon-entropy.md)
+
+## Proof depends on
+
+- [Chain rule](shannon-entropy-eq-add-finite-conditiona.md)
+- [Subadditivity of entropy](shannon-entropy-le-add.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ The second player wins Snort on every opposable graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Opposable](is-opposable.md)
+- [Snort Second Player Wins](snort-second-player-wins.md)
 
 ## Sources
 

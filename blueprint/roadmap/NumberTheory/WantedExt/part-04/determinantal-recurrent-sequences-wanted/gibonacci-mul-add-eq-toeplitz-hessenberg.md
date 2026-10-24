@@ -17,7 +17,7 @@ is `u_n(a, b, c, 0) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibonacci Number](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources
 

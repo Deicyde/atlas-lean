@@ -15,6 +15,11 @@ chosen intervals avoids `E`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Banach Mazur Play Consistent](banach-mazur-play-consistent.md)
+- [Banach Mazur Strategy Valid](banach-mazur-strategy-valid.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.ScottishBook43Wanted](../../../../../sources/v2/WantedExt.md)

@@ -14,6 +14,10 @@ The complex trace of a special unitary matrix of size two has norm at most two.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists eq of mem special Unitary Group fin two](exists-eq-of-mem-special-unitary-group-f.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.SpecialUnitaryFinTwo](../../../../../../sources/v2/MathlibExt.md)

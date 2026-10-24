@@ -12,7 +12,7 @@ Every count emitted from a legal pending run fits in the 8-bit field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compress From](compress-from.md)
 
 ## Sources
 

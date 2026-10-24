@@ -20,6 +20,10 @@ with it whenever `[n - rk]_{p,q} ≠ 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pq Binomial](pq-binomial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.RFibonacciPolynomialWanted](../../../../../sources/v2/WantedExt.md)

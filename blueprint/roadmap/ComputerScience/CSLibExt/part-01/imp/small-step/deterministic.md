@@ -12,7 +12,17 @@ The small-step relation is deterministic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Config](config.md)
+- [Step](step.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

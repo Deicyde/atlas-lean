@@ -13,7 +13,9 @@ identity on `0 < x < 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zurita D](zurita-d.md)
+- [Zurita M](zurita-m.md)
+- [Zurita N](zurita-n.md)
 
 ## Sources
 

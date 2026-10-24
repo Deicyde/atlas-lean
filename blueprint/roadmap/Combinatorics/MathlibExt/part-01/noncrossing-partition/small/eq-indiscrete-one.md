@@ -12,7 +12,16 @@ Every noncrossing partition of `Fin 1` equals the indiscrete one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Partition](../basic/noncrossing-partition.md)
+- [Indiscrete](../operations/indiscrete.md)
+
+## Proof depends on
+
+- [Card parts pos iff](../../finpartition/card/card-parts-pos-iff.md)
+- [Eq top iff card parts eq one](../../finpartition/card/eq-top-iff-card-parts-eq-one.md)
+- [Is Noncrossing](../basic/is-noncrossing.md)
+- [Set Partition](../basic/set-partition.md)
+- [Eq indiscrete iff val eq top](../operations/eq-indiscrete-iff-val-eq-top.md)
 
 ## Sources
 

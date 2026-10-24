@@ -18,6 +18,12 @@ Zero-based: `n` is `m + 1` with `m ≥ 1`, `β^n = single m 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Asc Lex LT](asc-lex-lt.md)
+- [Is Immediate Predecessor](is-immediate-predecessor.md)
+- [Is Immediate Successor](is-immediate-successor.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ZeckendorfBinaryExpansionWanted](../../../../../../sources/v2/WantedExt.md)

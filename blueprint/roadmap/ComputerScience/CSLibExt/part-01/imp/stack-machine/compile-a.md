@@ -11,7 +11,8 @@ Compile an arithmetic expression, leaving its value on top of the stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [AExp](../syntax/aexp.md)
+- [Instr](instr.md)
 
 ## Sources
 

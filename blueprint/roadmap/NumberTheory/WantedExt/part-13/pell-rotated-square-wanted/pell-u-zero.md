@@ -12,7 +12,7 @@ lean: MetaMathlibExt.pellU_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell U](pell-u.md)
 
 ## Sources
 

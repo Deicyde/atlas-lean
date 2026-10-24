@@ -13,7 +13,17 @@ lean: Cslib.MachineLearning.Sequence.HiddenMarkov.stateMarg_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+- [Backward](backward.md)
+- [Forward](../hidden-markov/forward.md)
+- [State Marg](state-marg.md)
+
+## Proof depends on
+
+- [Bridge](bridge.md)
+- [Path Prob](../hidden-markov/path-prob.md)
+- [Sum bridge](sum-bridge.md)
+- [Sum path Prob ite ite](sum-path-prob-ite-ite.md)
 
 ## Sources
 

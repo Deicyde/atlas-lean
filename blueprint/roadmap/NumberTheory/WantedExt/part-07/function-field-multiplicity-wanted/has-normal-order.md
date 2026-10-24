@@ -18,6 +18,11 @@ nonnegativity of both imposed on `U`, so that finite-set filtering remains direc
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Degree Nondecreasing](is-degree-nondecreasing.md)
+- [Fixed Degree Monic](fixed-degree-monic.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

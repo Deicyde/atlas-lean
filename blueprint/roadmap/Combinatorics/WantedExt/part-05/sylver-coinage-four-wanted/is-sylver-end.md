@@ -14,6 +14,10 @@ i.e. every other element of `L(M)` stays legal after `x` is named.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sylver Legal Moves](sylver-legal-moves.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SylverCoinageFourWanted](../../../../../sources/v2/WantedExt.md)

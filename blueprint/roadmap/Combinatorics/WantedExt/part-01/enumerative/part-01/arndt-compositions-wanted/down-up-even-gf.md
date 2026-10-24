@@ -14,6 +14,10 @@ with an even number of parts by weight (`x`), number of parts (`y`) and last par
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Down Up Composition Count](down-up-composition-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.ArndtCompositionsWanted](../../../../../../../sources/v2/WantedExt.md)

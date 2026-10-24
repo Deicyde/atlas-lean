@@ -14,6 +14,10 @@ An MSL of the standard road intersection is absolute when it has no two U-turns 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.LonelyMarriageableSinglesWanted](../../../../../../../sources/v2/WantedExt.md)

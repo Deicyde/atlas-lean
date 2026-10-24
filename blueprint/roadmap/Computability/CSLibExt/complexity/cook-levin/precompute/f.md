@@ -11,7 +11,13 @@ Alphabets of the full machine: raw input `Fin r`, host alphabets, unit counters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FK](fk.md)
+
+## Proof depends on
+
+- [HK](../assembly/hk.md)
+- [HΓ](../assembly/h.md)
+- [PS](ps.md)
 
 ## Sources
 

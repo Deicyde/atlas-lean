@@ -12,7 +12,8 @@ Lemma 8: for `0 ≤ ℓ ≤ 2k - 1`, a `K_3` game with `6k - 2ℓ` pebbles and e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
 
 ## Sources
 

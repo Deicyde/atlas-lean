@@ -16,7 +16,8 @@ not (`2 ∤ 3`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reflexive](is-reflexive.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Gaussian prior `θ i ~ N(0, τ)`, a meaningful kernel for `v ≠ 0` and `τ ≠ 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gauss Likelihood](gauss-likelihood.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Regression.LeastSquares](../../../../../../sources/v2/CSLibExt.md)

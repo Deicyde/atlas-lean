@@ -14,7 +14,7 @@ Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Proposition 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irwin Sum](irwin-sum.md)
 
 ## Sources
 

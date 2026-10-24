@@ -17,6 +17,12 @@ folds, each of which is at most the next link `b(L_{k+1})`. This is the paper's 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diamond Link Pos](diamond-link-pos.md)
+- [Diamond Links](diamond-links.md)
+- [Diamond Size](diamond-size.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PartitionDiamondsEulerMahonianWanted](../../../../../../../sources/v2/WantedExt.md)

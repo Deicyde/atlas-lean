@@ -14,6 +14,14 @@ blocks satisfy Definition 3.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Dyck Height At Most Two](is-dyck-height-at-most-two.md)
+- [Is Tilde Rational Runs](is-tilde-rational-runs.md)
+- [Bool Runs](bool-runs.md)
+- [Dyck Height Two Block Word](dyck-height-two-block-word.md)
+- [Run Following Valleys](run-following-valleys.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RationalDyckPathsWanted](../../../../../../../sources/v2/WantedExt.md)

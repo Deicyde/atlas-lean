@@ -12,7 +12,7 @@ There is exactly one placement of no pieces.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonattacking Placements](nonattacking-placements.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ waiting list is empty.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Round P](round-p.md)
+- [Round W](round-w.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.Hopcroft](../../../../../../sources/v2/CSLibExt.md)

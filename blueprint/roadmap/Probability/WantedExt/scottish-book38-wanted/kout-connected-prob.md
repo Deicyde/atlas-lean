@@ -15,6 +15,10 @@ people.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [KOut Connected](kout-connected.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.ScottishBook38Wanted](../../../../sources/v2/WantedExt.md)

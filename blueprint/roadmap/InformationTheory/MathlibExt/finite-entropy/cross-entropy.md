@@ -14,6 +14,10 @@ The **cross-entropy** `H(p, q) = ∑ p a · (-log₂ q a)` of `q` relative to `p
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Surprisal](surprisal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.FiniteEntropy](../../../../sources/v2/MathlibExt.md)

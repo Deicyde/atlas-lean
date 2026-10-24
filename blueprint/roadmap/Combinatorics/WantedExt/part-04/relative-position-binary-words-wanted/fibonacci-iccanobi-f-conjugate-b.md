@@ -13,7 +13,7 @@ lean: MetaMathlibExt.fibonacci_iccanobiF_conjugate_b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Word](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
 
 ## Sources
 

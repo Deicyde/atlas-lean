@@ -13,6 +13,10 @@ The equivalence class `[d] = δ⁻¹(δ(p)) ⊆ P(n)` of a partition `p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diagonal Sequence](diagonal-sequence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.DiagonalSequencesWanted](../../../../../../../../../sources/v2/WantedExt.md)

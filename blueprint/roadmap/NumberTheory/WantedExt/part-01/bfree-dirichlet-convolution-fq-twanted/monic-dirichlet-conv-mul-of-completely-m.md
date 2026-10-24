@@ -15,7 +15,7 @@ Complete multiplicativity is encoded by taking `α, β` to be monoid homomorphis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
 
 ## Sources
 

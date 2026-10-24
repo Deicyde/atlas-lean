@@ -12,7 +12,8 @@ Theorem 3.2, second kind: for all `n ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pq RFibonacci](pq-rfibonacci.md)
+- [Pq RLucas Second](pq-rlucas-second.md)
 
 ## Sources
 

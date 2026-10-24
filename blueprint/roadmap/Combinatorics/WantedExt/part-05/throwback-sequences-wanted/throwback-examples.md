@@ -13,7 +13,8 @@ Characteristic values: `τ(3, 4, 5, …) = (4, 5, 6, 3, 7, …)`, and the throwb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Throwback](throwback.md)
+- [Throwback Sequence](throwback-sequence.md)
 
 ## Sources
 

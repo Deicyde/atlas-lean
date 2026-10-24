@@ -15,7 +15,7 @@ earlier literature (Equation (15)): for `1 ≤ j ≤ r` with `j ≡ r (mod 2)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cotangent Power Coeff](cotangent-power-coeff.md)
 
 ## Sources
 

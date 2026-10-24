@@ -12,7 +12,12 @@ list, where `node` reads past the end).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](encoded-regex.md)
+
+## Proof depends on
+
+- [Regex At](regex-at.md)
+- [Regex Node](regex-node.md)
 
 ## Sources
 

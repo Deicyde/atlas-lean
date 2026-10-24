@@ -15,7 +15,10 @@ Lemma 3.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Base Depth](has-base-depth.md)
+- [Affine Scale Set](affine-scale-set.md)
+- [Irwin Measure](irwin-measure.md)
+- [Normalized String Value](normalized-string-value.md)
 
 ## Sources
 

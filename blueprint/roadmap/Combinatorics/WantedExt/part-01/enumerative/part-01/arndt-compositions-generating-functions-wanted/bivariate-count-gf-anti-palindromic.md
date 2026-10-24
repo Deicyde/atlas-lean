@@ -12,7 +12,8 @@ The generating function of anti-palindromic compositions by weight and number of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Palindromic Composition Count](anti-palindromic-composition-count.md)
+- [Bivariate Count GF](bivariate-count-gf.md)
 
 ## Sources
 

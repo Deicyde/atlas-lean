@@ -12,7 +12,11 @@ lean: MetaMathlibExt.factorialProductConstant_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorial Product Constant](factorial-product-constant.md)
+
+## Proof depends on
+
+- [Glaisher Kinkelin Constant](glaisher-kinkelin-constant.md)
 
 ## Sources
 

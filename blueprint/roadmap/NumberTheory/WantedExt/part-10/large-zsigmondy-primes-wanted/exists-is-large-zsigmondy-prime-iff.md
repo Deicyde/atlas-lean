@@ -15,7 +15,7 @@ or `3 · 2ˢ`; `n = 4` with `(a, b) ∈ {(2, 1), (3, 1)}`; `n = 6` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Large Zsigmondy Prime](is-large-zsigmondy-prime.md)
 
 ## Sources
 

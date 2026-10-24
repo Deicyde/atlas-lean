@@ -12,7 +12,20 @@ A halted configuration rewrites to `⊢ H ⊣`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](../../part-02/string-rewriting/derives.md)
+- [Spells](spells.md)
+- [TMSym](tmsym.md)
+- [Halt Word](halt-word.md)
+- [Rules](rules.md)
+
+## Proof depends on
+
+- [Rule](../../part-02/string-rewriting/rule.md)
+- [Step](../../part-02/string-rewriting/step.md)
+- [Derives erase](derives-erase.md)
+- [Erase Rules](erase-rules.md)
+- [Rules For](rules-for.md)
+- [Spell](spell.md)
 
 ## Sources
 

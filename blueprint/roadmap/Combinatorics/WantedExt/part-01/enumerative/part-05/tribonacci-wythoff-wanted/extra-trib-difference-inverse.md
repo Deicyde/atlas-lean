@@ -13,7 +13,7 @@ is not of Type EEOO (parities repeating even, even, odd, odd).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Extra Trib](is-extra-trib.md)
 
 ## Sources
 

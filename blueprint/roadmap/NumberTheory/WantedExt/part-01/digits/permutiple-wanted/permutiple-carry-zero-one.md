@@ -12,7 +12,7 @@ Characteristic values: `c_0 = 0` and `c_1 = ⌊n d_{σ(0)} / b⌋`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Permutiple Carry](permutiple-carry.md)
 
 ## Sources
 

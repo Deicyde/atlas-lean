@@ -14,7 +14,7 @@ proof is not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lower Cutoff](../../../CSLibExt/random-three-sat/is-lower-cutoff.md)
 
 ## Sources
 

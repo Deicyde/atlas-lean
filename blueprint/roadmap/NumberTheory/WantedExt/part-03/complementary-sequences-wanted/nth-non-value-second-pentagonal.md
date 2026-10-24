@@ -12,7 +12,7 @@ with `s = ⌊√(2n/3)⌋`, it is `n + s + 1` if `2n ≥ s(3s + 5) + 4` and `n +
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

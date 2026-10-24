@@ -13,7 +13,7 @@ Equation (42): for `ℜu, ℜv > -1` and complex `x`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

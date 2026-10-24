@@ -12,7 +12,7 @@ lean: MetaMathlibExt.almostPrimeIndexSet_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ Aigner's ratio inequality (equation (11)) for the canonical Motzkin numbers:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Number](../../part-05/motzkin-number/motzkin-number.md)
+
+## Proof depends on
+
+- [Aigner motzkin ratio inequality](aigner-motzkin-ratio-inequality.md)
+- [Motzkin Number eq sum range half](../../part-05/motzkin-number/motzkin-number-eq-sum-range-half.md)
 
 ## Sources
 

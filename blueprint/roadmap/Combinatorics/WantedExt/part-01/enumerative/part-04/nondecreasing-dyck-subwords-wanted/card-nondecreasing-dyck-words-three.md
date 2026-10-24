@@ -12,7 +12,7 @@ All five Dyck paths of semilength `3` are non-decreasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondecreasing Dyck Words](nondecreasing-dyck-words.md)
 
 ## Sources
 

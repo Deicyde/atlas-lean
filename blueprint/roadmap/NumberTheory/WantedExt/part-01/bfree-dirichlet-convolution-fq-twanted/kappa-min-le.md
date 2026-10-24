@@ -12,7 +12,7 @@ lean: MetaMathlibExt.kappaMin_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kappa Min](kappa-min.md)
 
 ## Sources
 

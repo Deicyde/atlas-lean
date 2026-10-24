@@ -12,7 +12,12 @@ lean: MetaMathlibExt.sixSquaresDedekindMoment_of_lt_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Six Squares Dedekind Moment](six-squares-dedekind-moment.md)
+
+## Proof depends on
+
+- [Dedekind Zeta Coeff](dedekind-zeta-coeff.md)
+- [Sum Of Squares Rep Count](../../part-16/squares-triangular-representations-wanted/sum-of-squares-rep-count.md)
 
 ## Sources
 

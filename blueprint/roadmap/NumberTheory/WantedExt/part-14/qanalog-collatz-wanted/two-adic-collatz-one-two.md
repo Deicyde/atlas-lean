@@ -12,7 +12,12 @@ lean: MetaMathlibExt.twoAdicCollatz_one_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Adic Collatz](two-adic-collatz.md)
+
+## Proof depends on
+
+- [Two mul two Adic Collatz of even](two-mul-two-adic-collatz-of-even.md)
+- [Two mul two Adic Collatz of odd](two-mul-two-adic-collatz-of-odd.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Letter `k` (counted from zero) of the period-doubling word, read from iterate
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Period Doubling Word](period-doubling-word.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

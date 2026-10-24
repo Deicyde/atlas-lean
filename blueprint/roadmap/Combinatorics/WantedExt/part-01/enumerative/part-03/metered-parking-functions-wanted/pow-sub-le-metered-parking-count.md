@@ -11,7 +11,7 @@ lean: MetaMathlibExt.pow_sub_le_meteredParkingCount
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Parking Count](metered-parking-count.md)
 
 ## Sources
 

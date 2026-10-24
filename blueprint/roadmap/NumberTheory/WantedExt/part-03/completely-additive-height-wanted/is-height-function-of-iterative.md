@@ -14,7 +14,9 @@ finitely many preimages. For `j ≥ 1`, a completely additive `H` with `H(pᵢ) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Completely Additive Nat](is-completely-additive-nat.md)
+- [Is Height Function](is-height-function.md)
+- [Nth Prime One](nth-prime-one.md)
 
 ## Sources
 

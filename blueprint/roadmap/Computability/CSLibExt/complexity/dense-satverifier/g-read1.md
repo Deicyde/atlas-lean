@@ -11,7 +11,7 @@ Left symbols pass (and stop at `#`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ If `w` starts with `α`, deleting the first `α` shifts `w` by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete First](delete-first.md)
+
+## Proof depends on
+
+- [Letter Position](letter-position.md)
+- [Letter Position one of head](letter-position-one-of-head.md)
 
 ## Sources
 

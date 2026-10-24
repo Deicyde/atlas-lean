@@ -12,7 +12,11 @@ lean: MetaMathlibExt.polynomialDenominator_bernoulli_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polynomial Denominator](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+
+## Proof depends on
+
+- [Polynomial Denominator eq one iff](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator-eq-one-iff.md)
 
 ## Sources
 

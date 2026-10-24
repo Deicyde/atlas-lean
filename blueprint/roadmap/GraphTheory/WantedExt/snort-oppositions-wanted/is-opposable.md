@@ -13,6 +13,10 @@ lean: MetaMathlibExt.IsOpposable
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Opposition](is-opposition.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.SnortOppositionsWanted](../../../../sources/v2/WantedExt.md)

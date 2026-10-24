@@ -11,7 +11,15 @@ Step bound of the composed machine (`D = depth` of the full machine, a constant)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../situation/part-01/enc.md)
+
+## Proof depends on
+
+- [Dks](dks.md)
+- [FK](../precompute/fk.md)
+- [Full B](../precompute/full-b.md)
+- [The full machine as a genuine `FinTM2`](../precompute/full-tm.md)
+- [Depth](../situation/part-01/depth.md)
 
 ## Sources
 

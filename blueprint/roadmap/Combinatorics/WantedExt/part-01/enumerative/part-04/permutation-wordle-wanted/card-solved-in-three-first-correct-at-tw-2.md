@@ -12,7 +12,9 @@ lean: MetaMathlibExt.card_solvedIn_three_firstCorrectAt_two_lt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Inductive Perm Wordle Strategy](is-inductive-perm-wordle-strategy.md)
+- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
+- [Perm Wordle Solved In](perm-wordle-solved-in.md)
 
 ## Sources
 

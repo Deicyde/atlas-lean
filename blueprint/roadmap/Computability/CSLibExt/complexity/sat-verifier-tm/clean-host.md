@@ -13,7 +13,18 @@ empty, it reaches `fin` within `m + 1` steps with every stack empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HK](hk.md)
+- [HLab](hlab.md)
+- [HΓ](h.md)
+- [Hprog](hprog.md)
+- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Work Ks](work-ks.md)
+- [Work Ks nodup](work-ks-nodup.md)
+- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
+- [Cleanup](../../../MathlibExt/turing-machine/cleanup/clean-run.md)
 
 ## Sources
 

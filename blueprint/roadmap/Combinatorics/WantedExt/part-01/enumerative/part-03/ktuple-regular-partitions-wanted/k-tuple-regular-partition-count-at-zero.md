@@ -12,7 +12,12 @@ Every `T_{ℓ,k}(0)` is `1`: the only tuple of total `0` is the tuple of empty p
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Tuple Regular Partition Count](k-tuple-regular-partition-count.md)
+
+## Proof depends on
+
+- [L Regular Partition Count](l-regular-partition-count.md)
+- [L Regular Partition Count zero](l-regular-partition-count-zero.md)
 
 ## Sources
 

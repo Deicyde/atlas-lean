@@ -13,7 +13,8 @@ morphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alphabet Preimage](../morphisms/alphabet-preimage.md)
+- [Word Morphism Preimage](word-morphism-preimage.md)
 
 ## Sources
 

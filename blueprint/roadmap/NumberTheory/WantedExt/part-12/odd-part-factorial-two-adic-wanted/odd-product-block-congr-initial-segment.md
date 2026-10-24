@@ -18,7 +18,8 @@ other printed case, including `B=m-1` (e.g. `(m,B)=(4,3)`: `d=1`, `h(4)=19305`, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Product Block](odd-product-block.md)
+- [Odd Range Product](odd-range-product.md)
 
 ## Sources
 

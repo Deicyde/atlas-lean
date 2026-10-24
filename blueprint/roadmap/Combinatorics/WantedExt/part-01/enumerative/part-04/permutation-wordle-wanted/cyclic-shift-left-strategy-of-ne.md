@@ -12,7 +12,7 @@ The lower components of `CSL` are right cyclic shifts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Shift Left Strategy](cyclic-shift-left-strategy.md)
 
 ## Sources
 

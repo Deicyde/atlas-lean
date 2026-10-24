@@ -12,7 +12,7 @@ Recurrence `Q_{n+2} = Q_{n+1} (d_{n+1} - 1) d_{n+2}` (paper indexing).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Denominator](luroth-denominator.md)
 
 ## Sources
 

@@ -17,7 +17,8 @@ since the elements of norm `±3` and `±9` generating primitive ideals are `(5 �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Primitive Exponent](strict-primitive-exponent.md)
+- [Strict Primitive Primes](strict-primitive-primes.md)
 
 ## Sources
 

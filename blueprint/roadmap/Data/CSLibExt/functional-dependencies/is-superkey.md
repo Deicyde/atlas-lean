@@ -11,7 +11,11 @@ lean: Cslib.Databases.IsSuperkey
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](fd.md)
+
+## Proof depends on
+
+- [Derives](derives.md)
 
 ## Sources
 

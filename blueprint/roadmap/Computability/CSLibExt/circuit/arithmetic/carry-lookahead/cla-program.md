@@ -11,7 +11,14 @@ All gates of the `n`-bit adder with `K` Kogge-Stone levels.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Base](level-base.md)
+- [Arith Signature](../ripple-carry/arith-signature.md)
+
+## Proof depends on
+
+- [Levels](levels.md)
+- [Line F](line-f.md)
+- [Append Gates](append-gates.md)
 
 ## Sources
 

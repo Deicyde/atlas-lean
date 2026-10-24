@@ -11,7 +11,11 @@ The receivers' preferences in MathlibExt's sense.
 
 ## Depends on
 
-This node has no prerequisites.
+- [WPrefs](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/wprefs.md)
+
+## Proof depends on
+
+- [To Order](to-order.md)
 
 ## Sources
 

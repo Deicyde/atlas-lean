@@ -11,7 +11,11 @@ A proper coloring with at most `K` colors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph Coloring Instance](graph-coloring-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

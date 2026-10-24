@@ -15,7 +15,11 @@ commutative group $E$ converges locally normally on the empty set.
 
 ## Depends on
 
-- [Extended supremum norm on a set](sup-norm-on.md)
+- [Converges Locally Normally On](converges-locally-normally-on.md)
+
+## Proof depends on
+
+- [Converges Normally On](converges-normally-on.md)
 
 ## Sources
 

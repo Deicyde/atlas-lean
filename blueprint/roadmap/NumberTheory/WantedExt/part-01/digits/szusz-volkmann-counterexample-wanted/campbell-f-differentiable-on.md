@@ -11,7 +11,7 @@ Lemma 4: `f` is differentiable on `ℝ_{>0}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Campbell F](campbell-f.md)
 
 ## Sources
 

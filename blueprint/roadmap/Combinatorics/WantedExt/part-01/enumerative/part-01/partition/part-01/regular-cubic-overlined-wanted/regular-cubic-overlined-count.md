@@ -15,6 +15,10 @@ each distinct odd part possibly overlined, defined as the `n`th coefficient of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Regular Cubic Overlined Series](regular-cubic-overlined-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.RegularCubicOverlinedWanted](../../../../../../../../../sources/v2/WantedExt.md)

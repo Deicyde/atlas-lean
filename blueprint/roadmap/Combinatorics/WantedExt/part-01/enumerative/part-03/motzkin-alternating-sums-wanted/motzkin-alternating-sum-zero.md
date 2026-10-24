@@ -12,7 +12,12 @@ lean: MetaMathlibExt.motzkinAlternatingSum_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Alternating Sum](motzkin-alternating-sum.md)
+
+## Proof depends on
+
+- [Motzkin Number](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
+- [Motzkin Number zero](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number-zero.md)
 
 ## Sources
 

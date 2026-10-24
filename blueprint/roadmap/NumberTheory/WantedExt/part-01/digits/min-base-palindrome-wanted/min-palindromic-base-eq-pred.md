@@ -11,7 +11,7 @@ Brown: if `b(N) = N - 1` (`N ≥ 1`), then `N ∈ {3, 4, 6}` or `N > 6` is prime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Palindromic Base](min-palindromic-base.md)
 
 ## Sources
 

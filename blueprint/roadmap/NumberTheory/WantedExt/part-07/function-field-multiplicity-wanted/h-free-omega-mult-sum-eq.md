@@ -12,7 +12,9 @@ Unfolding `S_{h,k}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Free Omega Mult Sum](h-free-omega-mult-sum.md)
+- [Monic Irreducible](monic-irreducible.md)
+- [Poly Norm](poly-norm.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MetaMathlibExt.oozToBZ_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz To BZ](ooz-to-bz.md)
+
+## Proof depends on
+
+- [Ooz To BZTail](ooz-to-bztail.md)
 
 ## Sources
 

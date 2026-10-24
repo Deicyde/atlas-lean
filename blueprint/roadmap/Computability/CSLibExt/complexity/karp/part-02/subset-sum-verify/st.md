@@ -11,7 +11,8 @@ The stacks `X`, `W`, `T`, `A`, `B`, with the scratch stacks `P`, `Q` empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Characteristic value `𝓒_9 = 5` (Figure 1 of the paper).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ceil Quotient Odd Count](ceil-quotient-odd-count.md)
 
 ## Sources
 

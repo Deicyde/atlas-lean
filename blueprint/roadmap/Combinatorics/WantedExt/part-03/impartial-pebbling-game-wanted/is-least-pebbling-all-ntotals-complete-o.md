@@ -11,7 +11,7 @@ Theorem 1(d): for odd `n ≥ 5`, `m^{(2:1)}(K_n) = n + 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pebbling All NTotals](pebbling-all-ntotals.md)
 
 ## Sources
 

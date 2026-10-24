@@ -14,7 +14,7 @@ expresses the paper's indices `n ≥ 1` as a Lean sum over `j : ℕ`; the comple
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LGeneralized Fibonacci](is-lgeneralized-fibonacci.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ of length `2` and `3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ulam Word](is-ulam-word.md)
+
+## Proof depends on
+
+- [Ulam Word Aux](ulam-word-aux.md)
 
 ## Sources
 

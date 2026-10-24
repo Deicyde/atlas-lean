@@ -13,7 +13,8 @@ In `G(-2n + a₁, -2n + a₂)` every `k`-descendant of `m` is congruent to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KDescendant](is-kdescendant.md)
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

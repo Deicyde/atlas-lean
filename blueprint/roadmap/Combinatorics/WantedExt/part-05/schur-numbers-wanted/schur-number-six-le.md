@@ -11,7 +11,7 @@ lean: MathlibExt.Combinatorics.SchurNumbersWanted.schurNumber_six_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schur Number](schur-number.md)
 
 ## Sources
 

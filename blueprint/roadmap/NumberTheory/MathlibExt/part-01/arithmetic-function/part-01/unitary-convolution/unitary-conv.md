@@ -14,6 +14,10 @@ divisors `d` of `n` (`Nat.unitaryDivisors`: `d ∣ n` with `gcd(d, n / d) = 1`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.UnitaryConvolution](../../../../../../../sources/v2/MathlibExt.md)

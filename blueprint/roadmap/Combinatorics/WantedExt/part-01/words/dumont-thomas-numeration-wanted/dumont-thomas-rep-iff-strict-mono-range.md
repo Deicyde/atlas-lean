@@ -12,7 +12,10 @@ Characterization of `rep_u`: a map `f : ℤ → ℕ*` equals `rep_u` iff it is i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complement Radix LT](complement-radix-lt.md)
+- [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
+- [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
+- [Dumont Thomas Language](dumont-thomas-language.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Theorem 3.3, first kind: for `n ≥ r`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pq RFibonacci](pq-rfibonacci.md)
+- [Pq RLucas](pq-rlucas.md)
 
 ## Sources
 

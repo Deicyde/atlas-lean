@@ -12,7 +12,8 @@ A recognizer for `L` recognizes every left quotient of `L` using the same morphi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](../recognition/recognizes.md)
+- [Left Quotient Accept](left-quotient-accept.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Prim's tree is a spanning tree of the complete graph, for any linearly ordered w
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prim Tree](prim-tree.md)
+
+## Proof depends on
+
+- [Complete Adjacency](complete-adjacency.md)
+- [Mem complete Adjacency](mem-complete-adjacency.md)
+- [Sym Weight](sym-weight.md)
+- [Prim is Tree](../../graph/prim/correctness/prim-is-tree.md)
 
 ## Sources
 

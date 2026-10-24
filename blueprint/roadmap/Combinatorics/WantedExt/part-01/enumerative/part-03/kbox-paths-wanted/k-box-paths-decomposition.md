@@ -12,7 +12,9 @@ Decomposition: the `k`-box paths (of all sizes `n ≥ 1`) are exactly the words
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [Augmented KDyck Paths](augmented-kdyck-paths.md)
+- [K Box Paths](k-box-paths.md)
 
 ## Sources
 

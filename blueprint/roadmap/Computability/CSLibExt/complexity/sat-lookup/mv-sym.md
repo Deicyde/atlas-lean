@@ -11,7 +11,9 @@ Pop the top of `a`, push the symbol `x` on `b`, go to `f x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Sym](../sat-verifier-spec/sym.md)
 
 ## Sources
 

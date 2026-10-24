@@ -17,7 +17,8 @@ absolute errors use real coercions and division; this makes each written
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knight Moves](knight-moves.md)
+- [Piece Distance](piece-distance.md)
 
 ## Sources
 

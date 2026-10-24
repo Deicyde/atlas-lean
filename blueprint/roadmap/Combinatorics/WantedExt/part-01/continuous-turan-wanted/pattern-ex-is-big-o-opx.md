@@ -12,7 +12,8 @@ natural `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
+- [Pattern Ex](pattern-ex.md)
 
 ## Sources
 

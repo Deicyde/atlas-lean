@@ -11,7 +11,11 @@ The Boolean meaning of the arithmetic gates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Signature](arith-signature.md)
+
+## Proof depends on
+
+- [Arith Gate](arith-gate.md)
 
 ## Sources
 

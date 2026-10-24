@@ -13,7 +13,12 @@ the men-proposing Gale–Shapley algorithm ends in `j` rounds, where `j` is the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Soulmate Pair](is-soulmate-pair.md)
+- [Is Stable Matching](is-stable-matching.md)
+- [Preference Profile](preference-profile.md)
+- [Gale Shapley Rounds](gale-shapley-rounds.md)
+- [Man Rank](man-rank.md)
+- [Soulmate Pair Count](soulmate-pair-count.md)
 
 ## Sources
 

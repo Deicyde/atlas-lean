@@ -12,7 +12,12 @@ A first number, then the rest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode W](decode-w.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+
+## Proof depends on
+
+- [Length lt of read Unary Length](../color/length-lt-of-read-unary-length.md)
 
 ## Sources
 

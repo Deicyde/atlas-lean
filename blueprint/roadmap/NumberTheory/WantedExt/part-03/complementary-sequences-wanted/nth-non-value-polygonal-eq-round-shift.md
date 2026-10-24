@@ -12,7 +12,7 @@ For every `k ≥ 3` the `n`-th non-`k`-gonal number is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

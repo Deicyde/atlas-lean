@@ -14,7 +14,7 @@ integer exact-division side condition for every summand.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Below Two Pow](odd-below-two-pow.md)
 
 ## Sources
 

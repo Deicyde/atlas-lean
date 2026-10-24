@@ -11,7 +11,7 @@ Proposition 21: `𝓡_n = (π/2 - 1) n + O(√n)` and `𝓡_n / n → π/2 - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round Quotient Odd Count](round-quotient-odd-count.md)
 
 ## Sources
 

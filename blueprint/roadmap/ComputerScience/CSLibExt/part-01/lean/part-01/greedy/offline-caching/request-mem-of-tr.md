@@ -12,7 +12,9 @@ With positive capacity, the served page is cached afterwards.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Request](request.md)
+- [Cache LTS](cache-lts.md)
 
 ## Sources
 

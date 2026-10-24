@@ -12,7 +12,9 @@ Running a sequential composition (CSLib's `PFunctor.FreeM.bind`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+- [Run](run.md)
+- [Oracle Sig](oracle-sig.md)
 
 ## Sources
 

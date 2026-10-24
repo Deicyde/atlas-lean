@@ -12,7 +12,12 @@ lean: MetaMathlibExt.gutkovskiy_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gutkovskiy](gutkovskiy.md)
+
+## Proof depends on
+
+- [Gutkovskiy Table](gutkovskiy-table.md)
+- [Size gutkovskiy Table](size-gutkovskiy-table.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ lean: MetaMathlibExt.IsDistinctLinkIndep
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Distinct Link Adj](distinct-link-adj.md)
+- [Distinct Link Loop](distinct-link-loop.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.SumFreeAbelianGroupsWanted](../../../../../../sources/v2/WantedExt.md)

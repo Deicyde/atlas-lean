@@ -12,7 +12,10 @@ Unfolding `κ_j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full K](h-full-k.md)
+- [H Full KSum](h-full-ksum.md)
+- [Monic Irreducible](monic-irreducible.md)
+- [Poly Norm](poly-norm.md)
 
 ## Sources
 

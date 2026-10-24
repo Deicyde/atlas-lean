@@ -14,7 +14,7 @@ spaces gives a counterexample whose measure algebra is not homogeneous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem191 Claim](scottish-book-problem191-claim.md)
 
 ## Sources
 

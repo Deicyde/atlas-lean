@@ -12,7 +12,7 @@ For `s = 0` the condition is vacuous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
 
 ## Sources
 

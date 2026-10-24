@@ -15,7 +15,12 @@ The reciprocal digit sums, for real `x ≥ 1`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Sum Fluctuation Double Integral](digit-sum-fluctuation-double-integral.md)
+- [Digit Sum Fluctuation Integral](digit-sum-fluctuation-integral.md)
+- [Digit Sum Remainder](digit-sum-remainder.md)
+- [Digit Sum Remainder Double Integral](digit-sum-remainder-double-integral.md)
+- [Digit Sum Remainder Integral](digit-sum-remainder-integral.md)
+- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.fibCyclotomicValue_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Cyclotomic Value](fib-cyclotomic-value.md)
 
 ## Sources
 

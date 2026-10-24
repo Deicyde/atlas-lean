@@ -12,7 +12,9 @@ and only if `r_{ℓ_j} < r_p` for all `j` and `r_1 < r_2 < ⋯ < r_p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isSDiophantineTuple_two_one_three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
 
 ## Sources
 

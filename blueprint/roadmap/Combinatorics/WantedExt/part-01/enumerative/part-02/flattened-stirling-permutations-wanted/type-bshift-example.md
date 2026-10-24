@@ -12,7 +12,7 @@ lean: MetaMathlibExt.typeBShift_example
 
 ## Depends on
 
-This node has no prerequisites.
+- [Type BShift](type-bshift.md)
 
 ## Sources
 

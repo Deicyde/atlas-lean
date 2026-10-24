@@ -16,7 +16,8 @@ are cut at `7^{2k+2β}`, resp. `7^{2k+2β+1}`, above the supports of the vectors
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garvan YEven](garvan-yeven.md)
+- [Two Color Multiple Partition Count](two-color-multiple-partition-count.md)
 
 ## Sources
 

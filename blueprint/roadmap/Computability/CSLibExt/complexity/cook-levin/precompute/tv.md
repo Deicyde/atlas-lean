@@ -11,7 +11,13 @@ Target values (`Fx = d·T + d + 1 = H - m`, `H = capH m T d`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [PT](pt.md)
+
+## Proof depends on
+
+- [TOf](tof.md)
+- [M Of](m-of.md)
+- [Cap H](../situation/part-05/cap-h.md)
 
 ## Sources
 

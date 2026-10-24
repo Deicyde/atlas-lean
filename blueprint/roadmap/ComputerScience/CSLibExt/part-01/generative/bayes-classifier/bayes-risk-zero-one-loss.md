@@ -13,7 +13,14 @@ observations, of the posterior probability of error of the best guess.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zero One Loss](zero-one-loss.md)
+
+## Proof depends on
+
+- [Is Posterior Argmax](is-posterior-argmax.md)
+- [Is Argmin Estimator](is-argmin-estimator.md)
+- [Exists is Posterior Argmax](exists-is-posterior-argmax.md)
+- [Lintegral zero One Loss](lintegral-zero-one-loss.md)
 
 ## Sources
 

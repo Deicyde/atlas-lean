@@ -11,7 +11,15 @@ AC-3 from domains `dom` with the queue `q`; one unit per revision.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+
+## Proof depends on
+
+- [Indeg](indeg.md)
+- [Potential](potential.md)
+- [Potential lt](potential-lt.md)
+- [Requeue](requeue.md)
+- [Revise](revise.md)
 
 ## Sources
 

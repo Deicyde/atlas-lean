@@ -13,7 +13,8 @@ steps are adjacent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Motzkin Hump](is-motzkin-hump.md)
+- [Is Motzkin Peak](is-motzkin-peak.md)
 
 ## Sources
 

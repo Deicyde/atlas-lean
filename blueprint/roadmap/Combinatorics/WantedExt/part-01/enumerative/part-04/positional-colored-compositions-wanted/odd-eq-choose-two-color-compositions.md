@@ -12,7 +12,7 @@ For `k ≥ 1`, the number `o(k)` of ODD colored compositions of `k` equals the n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positional Colored Composition Count](positional-colored-composition-count.md)
 
 ## Sources
 

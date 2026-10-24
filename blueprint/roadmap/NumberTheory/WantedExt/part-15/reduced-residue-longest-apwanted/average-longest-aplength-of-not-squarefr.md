@@ -12,7 +12,7 @@ Corollary 1: for a non-squarefree `n` with `n / rad(n) ≥ gpf(n) - 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest APLength](longest-aplength.md)
 
 ## Sources
 

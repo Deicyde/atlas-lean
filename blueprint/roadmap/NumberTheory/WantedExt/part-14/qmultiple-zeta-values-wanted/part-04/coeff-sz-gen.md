@@ -13,7 +13,9 @@ The coefficient of `∏ⱼ Xⱼ^{aⱼ} Yⱼ^{bⱼ}` in `s(X; Y)` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz Block Index](../part-01/sz-block-index.md)
+- [Sz Gen](sz-gen.md)
+- [Sz QMZV](../part-01/sz-qmzv.md)
 
 ## Sources
 

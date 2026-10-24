@@ -14,7 +14,7 @@ For `k ≥ 2`, `1 ≤ α` and `α + β ≤ k - 1`: a set `A` of `k` positive int
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Subset Sums](bounded-subset-sums.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.arcsinAntiderivSCoeff_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arcsin Antideriv SCoeff](arcsin-antideriv-scoeff.md)
 
 ## Sources
 

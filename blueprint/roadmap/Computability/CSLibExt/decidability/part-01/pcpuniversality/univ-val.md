@@ -11,7 +11,16 @@ The intended language of each nonterminal of `univGrammar P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [Bits Lang](bits-lang.md)
+- [Codes Lang](codes-lang.md)
+- [Letters1 Lang](letters1-lang.md)
+- [Letters Lang](letters-lang.md)
+- [Malformed Lang](malformed-lang.md)
+- [Mismatch Lang](mismatch-lang.md)
 
 ## Sources
 

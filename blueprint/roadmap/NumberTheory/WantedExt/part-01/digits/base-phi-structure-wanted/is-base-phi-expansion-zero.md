@@ -12,7 +12,12 @@ The empty expansion is the base phi expansion of `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
+
+## Proof depends on
+
+- [Is Bergman Expansion](../base-phi-representations-wanted/is-bergman-expansion.md)
+- [Base Phi Value](../base-phi-representations-wanted/base-phi-value.md)
 
 ## Sources
 

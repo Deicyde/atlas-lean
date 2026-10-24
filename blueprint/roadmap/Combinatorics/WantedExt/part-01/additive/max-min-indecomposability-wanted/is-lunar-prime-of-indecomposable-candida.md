@@ -12,7 +12,10 @@ prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lunar Prime](is-lunar-prime.md)
+- [Is Lunar Prime Candidate](is-lunar-prime-candidate.md)
+- [Is Max Min Indecomposable](is-max-min-indecomposable.md)
+- [Digit Seq](digit-seq.md)
 
 ## Sources
 

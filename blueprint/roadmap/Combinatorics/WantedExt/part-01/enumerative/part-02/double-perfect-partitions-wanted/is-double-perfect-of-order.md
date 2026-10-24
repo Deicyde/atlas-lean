@@ -16,6 +16,10 @@ of Definition 3.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Subpartition Count](subpartition-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.DoublePerfectPartitionsWanted](../../../../../../../sources/v2/WantedExt.md)

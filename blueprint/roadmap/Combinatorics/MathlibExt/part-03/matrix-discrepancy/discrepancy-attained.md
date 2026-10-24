@@ -12,7 +12,8 @@ The finite sign infimum is an attained minimum, including zero dimensions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Discrepancy](discrepancy.md)
+- [Sign Value](sign-value.md)
 
 ## Sources
 

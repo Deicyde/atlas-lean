@@ -11,7 +11,12 @@ All certificate symbols.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](../../dense-satverifier/g.md)
+- [Pair Encode](../../dense-satverifier/pair-encode.md)
+
+## Proof depends on
+
+- [V Y](v-y.md)
 
 ## Sources
 

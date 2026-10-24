@@ -14,7 +14,7 @@ containing none of the factors `⟨O_L,O_R⟩, ⟨O_L,E_L⟩, ⟨E_R,E_L⟩, ⟨
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Parity Letter](mallows-parity-letter.md)
 
 ## Sources
 

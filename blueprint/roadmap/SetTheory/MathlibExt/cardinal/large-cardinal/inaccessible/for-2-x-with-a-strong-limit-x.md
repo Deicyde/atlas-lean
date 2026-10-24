@@ -17,6 +17,10 @@ below `κ` (`IsStrongLimit.power_lt`), while every `y < κ` sits below
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [A strong limit `κ` is closed under cardinal exponentiation:...](a-strong-limit-is-closed-under-cardinal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Cardinal.LargeCardinal.Inaccessible](../../../../../../sources/v2/MathlibExt.md)

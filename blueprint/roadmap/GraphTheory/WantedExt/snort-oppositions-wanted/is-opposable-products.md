@@ -12,7 +12,9 @@ lexicographic, co-normal and homomorphic products with any `H`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Opposable](is-opposable.md)
+- [Formula Product](formula-product.md)
+- [Strong Prod](strong-prod.md)
 
 ## Sources
 

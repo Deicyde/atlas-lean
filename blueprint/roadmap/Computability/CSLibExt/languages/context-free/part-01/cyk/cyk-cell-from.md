@@ -14,6 +14,10 @@ whose outputs fit `w`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cyk Fits](cyk-fits.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.CYK](../../../../../../../sources/v2/CSLibExt.md)

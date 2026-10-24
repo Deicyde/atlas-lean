@@ -13,6 +13,10 @@ The trace metric `d(α, β) = ‖α - β‖` on `K = ℚ(ω)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cyclotomic Trace Norm](cyclotomic-trace-norm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.CyclotomicTraceMetricWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ Exact value of finite frequentist risk at a parameter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequentist Risk](frequentist-risk.md)
 
 ## Sources
 

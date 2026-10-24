@@ -14,6 +14,13 @@ The vertex of the wide `k`-generalized Cohn tree `WGCT(k, ℓ)`, rooted at
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gen Cohn P1](gen-cohn-p1.md)
+- [Gen Cohn Path](gen-cohn-path.md)
+- [Gen Cohn Q1](gen-cohn-q1.md)
+- [Gen Cohn R1](gen-cohn-r1.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedMarkovUniquenessWanted](../../../../../sources/v2/WantedExt.md)

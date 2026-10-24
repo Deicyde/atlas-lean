@@ -28,7 +28,7 @@ and such a hypothesis would be a new problem, not a transcription fix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem180 Claim](scottish-book-problem180-claim.md)
 
 ## Sources
 

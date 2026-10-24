@@ -12,7 +12,13 @@ Characteristic example: `3 ⋅ 3` is a `2`-Lehmer factorization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spoof Lehmer](is-spoof-lehmer.md)
+
+## Proof depends on
+
+- [Is Spoof Factorization](is-spoof-factorization.md)
+- [Spoof Eval](spoof-eval.md)
+- [Spoof Totient](spoof-totient.md)
 
 ## Sources
 

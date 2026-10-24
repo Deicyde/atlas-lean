@@ -13,7 +13,15 @@ it pushes the separator code `cs` and starts the counter program.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FK](fk.md)
+- [FL](fl.md)
+- [FΓ](f.md)
+
+## Proof depends on
+
+- [HK](../assembly/hk.md)
+- [PL](pl.md)
+- [PS](ps.md)
 
 ## Sources
 

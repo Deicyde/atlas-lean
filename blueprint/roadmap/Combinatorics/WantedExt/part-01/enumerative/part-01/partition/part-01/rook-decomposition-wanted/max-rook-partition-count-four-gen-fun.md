@@ -12,7 +12,7 @@ Generating function of `R_4(n)`, denominator cleared:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Rook Partition Count](max-rook-partition-count.md)
 
 ## Sources
 

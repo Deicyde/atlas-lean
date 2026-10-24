@@ -12,7 +12,12 @@ Floating-point numbers round to themselves.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Float](is-float.md)
+- [Round to nearest, ties to even](fl.md)
+
+## Proof depends on
+
+- [Round to nearest](abs-fl-sub-le-of-is-float.md)
 
 ## Sources
 

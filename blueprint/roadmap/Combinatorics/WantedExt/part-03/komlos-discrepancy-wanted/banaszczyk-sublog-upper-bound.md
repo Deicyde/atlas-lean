@@ -13,6 +13,10 @@ The source's sublogarithmic improvement, with every positive epsilon.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dimension Constant](../../../MathlibExt/part-03/matrix-discrepancy/dimension-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.KomlosDiscrepancyWanted](../../../../../sources/v2/WantedExt.md)

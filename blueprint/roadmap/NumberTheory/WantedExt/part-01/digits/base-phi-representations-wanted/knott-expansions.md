@@ -14,6 +14,11 @@ The Knott expansions of `N`: the finite base phi expansions of `N` with digits
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Satisfies Knott Condition](satisfies-knott-condition.md)
+- [Base Phi Value](base-phi-value.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.BasePhiRepresentationsWanted](../../../../../../sources/v2/WantedExt.md)

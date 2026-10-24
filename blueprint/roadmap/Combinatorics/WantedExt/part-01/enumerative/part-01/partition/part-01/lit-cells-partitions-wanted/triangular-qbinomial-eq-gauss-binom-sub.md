@@ -14,7 +14,8 @@ The range `s ≤ r` is where every exponent and binomial index is a natural numb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Binom](../../../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
+- [Triangular QBinomial](triangular-qbinomial.md)
 
 ## Sources
 

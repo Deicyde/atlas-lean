@@ -12,7 +12,9 @@ lean: MetaMathlibExt.not_isMSTDSet_intervalAP_overlap_half
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](is-mstdset.md)
+- [Real APSet](real-apset.md)
+- [Real Interval Set](real-interval-set.md)
 
 ## Sources
 

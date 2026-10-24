@@ -29,7 +29,7 @@ Young tableau of shape λ.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Shape](skew-shape.md)
 
 ## Sources
 

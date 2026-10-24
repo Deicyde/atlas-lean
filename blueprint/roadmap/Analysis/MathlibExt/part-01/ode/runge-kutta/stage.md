@@ -11,7 +11,11 @@ The `i`-th stage.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
+
+## Proof depends on
+
+- [Stage Row](stage-row.md)
 
 ## Sources
 

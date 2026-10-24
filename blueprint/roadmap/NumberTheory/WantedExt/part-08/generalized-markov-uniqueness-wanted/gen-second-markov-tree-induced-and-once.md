@@ -13,7 +13,8 @@ of `GSME(k)`, and each induced solution `(a, b, c)` with `b > max {a, c}` appear
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Induced Gen Second Markov Solution](is-induced-gen-second-markov-solution.md)
+- [Gen Markov Tree](gen-markov-tree.md)
 
 ## Sources
 

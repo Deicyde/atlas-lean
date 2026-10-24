@@ -12,7 +12,8 @@ predecessors in `E`, then `E ⊆ Ẽ` if and only if `β̂^n ∈ Ẽ` for all `n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Immediate Predecessor](is-immediate-predecessor.md)
+- [Is Zeckendorf Collection](is-zeckendorf-collection.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The **dual code** `C⊥`: the words orthogonal to every codeword.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+
+## Proof depends on
+
+- [Dot Form](dot-form.md)
 
 ## Sources
 

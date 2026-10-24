@@ -12,7 +12,8 @@ for all integers `n ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell U](pell-u.md)
+- [Pell V](pell-v.md)
 
 ## Sources
 

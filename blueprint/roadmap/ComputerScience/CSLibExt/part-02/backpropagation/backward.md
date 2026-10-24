@@ -12,7 +12,11 @@ adjoint of each layer's Jacobian at its forward activation, from the last layer 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Net](net.md)
+
+## Proof depends on
+
+- [Forward](forward.md)
 
 ## Sources
 

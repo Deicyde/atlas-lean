@@ -14,7 +14,7 @@ on a vertical line and `opx(n, Q_{P,2,c}, 3) ≤ c n²`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

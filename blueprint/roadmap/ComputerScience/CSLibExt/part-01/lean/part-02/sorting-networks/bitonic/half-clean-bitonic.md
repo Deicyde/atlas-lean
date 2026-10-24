@@ -12,7 +12,11 @@ lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.halfClean_bitonic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bitonic](is-bitonic.md)
+
+## Proof depends on
+
+- [Is Interval](is-interval.md)
 
 ## Sources
 

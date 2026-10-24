@@ -12,7 +12,7 @@ lean: MetaMathlibExt.bubbleCount_two_four
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bubble Count](bubble-count.md)
 
 ## Sources
 

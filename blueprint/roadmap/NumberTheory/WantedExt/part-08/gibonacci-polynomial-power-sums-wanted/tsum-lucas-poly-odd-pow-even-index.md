@@ -15,7 +15,7 @@ Theorem 1.6: for real `x > 0`, a positive integer `k` and `m ∈ ℕ`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

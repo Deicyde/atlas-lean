@@ -13,7 +13,8 @@ generating function `1/(1 - x)² + ∑_{j ≥ 0} j! xʲ` is false (its constant 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Pattern2](signed-pattern2.md)
+- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
 
 ## Sources
 

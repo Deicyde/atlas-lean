@@ -12,7 +12,7 @@ lean: MetaMathlibExt.card_realIntervalSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real Interval Set](real-interval-set.md)
 
 ## Sources
 

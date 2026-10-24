@@ -16,6 +16,10 @@ is automatic by `aleph0_lt_of_isRegular_beth_ord`): this packages
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Converse to `IsInaccessible.beth_ord`: a regular beth fixed...](converse-to-isinaccessible-beth-ord-a-re.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Cardinal.LargeCardinal.Inaccessible](../../../../../../sources/v2/MathlibExt.md)

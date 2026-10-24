@@ -11,7 +11,12 @@ Literals of clause `(t, i)`: all negative except the last (next label).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
+
+## Proof depends on
+
+- [N Lits](n-lits.md)
+- [Lit Pos](lit-pos.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b1_b0b0_b00_b01_1b0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Pattern2](signed-pattern2.md)
+- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
 
 ## Sources
 

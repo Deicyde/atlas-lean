@@ -12,7 +12,7 @@ For a fixed positive integer `m`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Last Part Count](arndt-last-part-count.md)
 
 ## Sources
 

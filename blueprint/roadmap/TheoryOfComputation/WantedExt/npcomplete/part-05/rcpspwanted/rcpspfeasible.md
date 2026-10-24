@@ -11,7 +11,7 @@ Start times meeting precedence, deadline, and resource capacity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [RCPSPInstance](rcpspinstance.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ Sequences 29 (2026), Article 26.3.8, Theorem 1(a).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](../../part-09/gobel-sequence-wanted/gobel-sequence.md)
 
 ## Sources
 

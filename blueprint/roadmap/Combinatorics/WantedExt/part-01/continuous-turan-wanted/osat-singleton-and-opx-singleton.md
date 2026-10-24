@@ -12,7 +12,8 @@ Lemma 6.5: for a single point `P = {p}`, `osat(n, P) = opx(n, P) = 0`. Stated fo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
+- [Osat](osat.md)
 
 ## Sources
 

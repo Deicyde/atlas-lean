@@ -13,6 +13,10 @@ The relative position function `r(n) = p_b(n) - p_a(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Letter Position](letter-position.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.RelativePositionBinaryWordsWanted](../../../../../sources/v2/WantedExt.md)

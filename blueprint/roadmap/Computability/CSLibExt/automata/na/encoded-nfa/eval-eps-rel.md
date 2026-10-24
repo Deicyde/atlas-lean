@@ -12,7 +12,9 @@ The states reached by some word are closed under ε-moves.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+- [Eps Rel](eps-rel.md)
+- [ToεNFA](to-nfa.md)
 
 ## Sources
 

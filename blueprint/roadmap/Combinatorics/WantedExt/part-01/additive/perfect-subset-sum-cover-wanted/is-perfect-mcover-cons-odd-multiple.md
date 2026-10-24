@@ -12,7 +12,7 @@ If `(a, s_2, …)` is a perfect `2^k`-cover and `b` is an odd multiple of `a`, t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect MCover](is-perfect-mcover.md)
 
 ## Sources
 

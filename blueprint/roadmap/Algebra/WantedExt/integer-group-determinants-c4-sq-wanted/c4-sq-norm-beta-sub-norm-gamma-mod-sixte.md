@@ -12,7 +12,10 @@ lean: MetaMathlibExt.c4Sq_norm_beta_sub_norm_gamma_mod_sixteen
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Sq B](c4-sq-b.md)
+- [C4 Sq Beta](c4-sq-beta.md)
+- [C4 Sq C](c4-sq-c.md)
+- [C4 Sq Gamma](c4-sq-gamma.md)
 
 ## Sources
 

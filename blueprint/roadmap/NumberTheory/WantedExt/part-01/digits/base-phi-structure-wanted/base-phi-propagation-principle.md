@@ -14,7 +14,8 @@ Propagation Principle, part (a): a central digit block
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Digit Block](has-digit-block.md)
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
 
 ## Sources
 

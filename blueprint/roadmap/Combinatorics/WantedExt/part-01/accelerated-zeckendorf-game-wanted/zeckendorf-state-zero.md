@@ -12,7 +12,7 @@ The Zeckendorf decomposition of `0` is the empty state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeckendorf State](zeckendorf-state.md)
 
 ## Sources
 

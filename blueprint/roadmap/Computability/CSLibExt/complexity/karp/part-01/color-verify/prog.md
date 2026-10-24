@@ -12,7 +12,20 @@ one, restoring the colors after each.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [Edge S](edge-s.md)
+- [Load S](load-s.md)
+- [Read U](read-u.md)
+- [Walk1 S](walk1-s.md)
+- [Walk S](walk-s.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Sources
 

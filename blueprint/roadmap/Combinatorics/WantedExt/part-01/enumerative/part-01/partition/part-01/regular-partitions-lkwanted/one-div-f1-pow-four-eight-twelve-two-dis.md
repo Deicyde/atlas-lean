@@ -16,7 +16,7 @@ The 2-dissections of `1 / f_1^4`, `1 / f_1^8` and `1 / f_1^12`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For positive `k, l` and `1 ≤ a ≤ m - 1` with `d = gcd(a, m)`: if `l ≡ 1 (m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

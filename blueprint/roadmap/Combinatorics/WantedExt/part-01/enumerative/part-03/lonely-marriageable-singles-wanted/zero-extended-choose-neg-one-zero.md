@@ -12,7 +12,7 @@ lean: MetaMathlibExt.zeroExtendedChoose_neg_one_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zero Extended Choose](zero-extended-choose.md)
 
 ## Sources
 

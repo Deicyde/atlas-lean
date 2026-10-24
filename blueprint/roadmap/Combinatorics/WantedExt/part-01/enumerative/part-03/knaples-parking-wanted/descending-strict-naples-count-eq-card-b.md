@@ -14,7 +14,8 @@ children in a row (left spine of `≥ k + 1` nodes).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Descending Strict Naples Count](descending-strict-naples-count.md)
+- [Left Spine Length](left-spine-length.md)
 
 ## Sources
 

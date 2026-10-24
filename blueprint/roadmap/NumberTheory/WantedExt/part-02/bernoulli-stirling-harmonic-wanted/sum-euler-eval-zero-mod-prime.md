@@ -15,7 +15,8 @@ denominator clause and residue equality replace the paper's congruence notation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Poly](../../part-06/euler-polynomial-formulas-wanted/euler-poly.md)
+- [Rat Residue](../../part-09/gobel-sequence-wanted/rat-residue.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ printed index `F_{n+2}` is off by one in the A000957 indexing the paper cites.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+- [Is Partial Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
+- [Fine Number](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
 
 ## Sources
 

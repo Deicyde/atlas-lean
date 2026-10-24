@@ -16,7 +16,9 @@ The record's `∑ N (-ω)^{i-1}` is read as the displayed expansion (coefficient
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Box](cyclotomic-box.md)
+- [Cyclotomic Lattice Point](cyclotomic-lattice-point.md)
+- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
 
 ## Sources
 

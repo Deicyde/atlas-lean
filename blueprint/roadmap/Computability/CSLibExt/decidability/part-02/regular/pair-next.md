@@ -11,7 +11,12 @@ Successors of a coded pair of states: both automata read the same letter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+
+## Proof depends on
+
+- [Letters](../../../automata/da/encoded-dfa/letters.md)
+- [Step](../../../automata/da/encoded-dfa/step.md)
 
 ## Sources
 

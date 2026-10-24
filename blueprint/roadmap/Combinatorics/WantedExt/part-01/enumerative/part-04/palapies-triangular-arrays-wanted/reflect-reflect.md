@@ -12,7 +12,8 @@ Reflection is an involution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+- [Reflect](reflect.md)
 
 ## Sources
 

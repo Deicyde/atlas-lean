@@ -12,7 +12,7 @@ Characteristic value: the bases `3, 3` give the factorization `3 ⋅ 3 = 3^1 ⋅
 
 ## Depends on
 
-This node has no prerequisites.
+- [Spoof Of Bases](spoof-of-bases.md)
 
 ## Sources
 

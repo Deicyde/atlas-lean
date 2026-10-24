@@ -12,7 +12,7 @@ The empty word is not accepted by `𝒜_{η,s}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seed Automaton](seed-automaton.md)
 
 ## Sources
 

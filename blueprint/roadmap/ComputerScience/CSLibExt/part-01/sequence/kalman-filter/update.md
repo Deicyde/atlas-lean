@@ -12,7 +12,11 @@ lean: Cslib.MachineLearning.Sequence.KalmanFilter.update
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
+
+## Proof depends on
+
+- [Gain](gain.md)
 
 ## Sources
 

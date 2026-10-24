@@ -12,7 +12,10 @@ Corollary 1, coordinate form: an IDP reflexive weighted simplex satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is Reflexive](is-reflexive.md)
+- [Satisfies IDPNecessary](satisfies-idpnecessary.md)
+- [Weighted Simplex](weighted-simplex.md)
 
 ## Sources
 

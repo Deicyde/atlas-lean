@@ -14,7 +14,7 @@ length `r`; "decreasing in the `j`-th argument" is stated with `List.set`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer Kappa](lehmer-kappa.md)
 
 ## Sources
 

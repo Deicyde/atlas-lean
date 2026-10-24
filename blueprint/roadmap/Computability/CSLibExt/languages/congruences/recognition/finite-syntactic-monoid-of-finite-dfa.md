@@ -12,7 +12,15 @@ Every language recognized by a finite-state DFA has a finite syntactic monoid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+
+## Proof depends on
+
+- [State Transformation](../syntactic/state-transformation.md)
+- [Finite syntactic Monoid of recognizer](finite-syntactic-monoid-of-recognizer.md)
+- [Recognizes transition Morphism](recognizes-transition-morphism.md)
+- [State Transformation Equiv](../syntactic/state-transformation-equiv.md)
+- [Transition Morphism](../syntactic/transition-morphism.md)
 
 ## Sources
 

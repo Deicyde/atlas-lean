@@ -13,7 +13,16 @@ congruence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Alphabet Preimage](alphabet-preimage.md)
+- [Alphabet Preimage Morphism](alphabet-preimage-morphism.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+
+## Proof depends on
+
+- [Recognizer ker le syntactic Con](../recognition/recognizer-ker-le-syntactic-con.md)
+- [Recognizes alphabet Preimage Morphism](recognizes-alphabet-preimage-morphism.md)
+- [Syntactic Accept](../syntactic/syntactic-accept.md)
 
 ## Sources
 

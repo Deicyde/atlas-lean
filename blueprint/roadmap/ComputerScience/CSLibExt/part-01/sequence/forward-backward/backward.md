@@ -12,7 +12,7 @@ The backward variables: `backward k t s` is the weight of the observations
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
 
 ## Sources
 

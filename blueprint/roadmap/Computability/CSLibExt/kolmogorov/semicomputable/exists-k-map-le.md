@@ -12,7 +12,14 @@ lean: Cslib.Kolmogorov.exists_K_map_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+
+## Proof depends on
+
+- [The universal description method](../basic/u.md)
+- [Optimality](../basic/exists-k-le-of-partrec.md)
+- [Exists length eq K](../basic/exists-length-eq-k.md)
+- [Partrec U](../basic/partrec-u.md)
 
 ## Sources
 

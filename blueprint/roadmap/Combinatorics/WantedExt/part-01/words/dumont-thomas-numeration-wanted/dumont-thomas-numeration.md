@@ -16,7 +16,10 @@ the indices `0, …, k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
+- [Is Substitution](is-substitution.md)
+- [Morph Extend](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend.md)
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

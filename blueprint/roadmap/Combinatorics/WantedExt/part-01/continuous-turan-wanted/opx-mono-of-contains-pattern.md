@@ -11,7 +11,8 @@ Lemma 2.3: if `Q` contains `P`, then `opx(n, P) ≤ opx(n, Q)`. Stated for all r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point Set Contains Pattern](point-set-contains-pattern.md)
+- [Opx](opx.md)
 
 ## Sources
 

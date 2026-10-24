@@ -12,7 +12,7 @@ The first letters of `k` are `k₁k₂k₃k₄ = 1101`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling Word](kimberling-word.md)
 
 ## Sources
 

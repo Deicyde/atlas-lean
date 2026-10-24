@@ -11,7 +11,8 @@ For `n ≥ 4`, `|Sort_n(s^[123])| = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consecutive Cyclic Stack Sort](consecutive-cyclic-stack-sort.md)
+- [Sorted Permutations](sorted-permutations.md)
 
 ## Sources
 

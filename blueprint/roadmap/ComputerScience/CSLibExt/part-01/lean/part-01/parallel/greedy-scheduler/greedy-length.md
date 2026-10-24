@@ -13,7 +13,15 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.greedy_length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](../brent/dag.md)
+- [Schedule](../brent/schedule.md)
+- [Greedy](greedy.md)
+- [Length](../brent/length.md)
+- [Span](../brent/span.md)
+
+## Proof depends on
+
+- [The greedy scheduling bound](greedy-length-le.md)
 
 ## Sources
 

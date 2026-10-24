@@ -12,7 +12,13 @@ Every state of the intermediate automaton is reached.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mid State](mid-state.md)
+- [Brzozowski Mid](brzozowski-mid.md)
+
+## Proof depends on
+
+- [Accessible Part Within surjective](../../../decidability/part-02/regular/accessible-part-within-surjective.md)
+- [Rev Det](rev-det.md)
 
 ## Sources
 

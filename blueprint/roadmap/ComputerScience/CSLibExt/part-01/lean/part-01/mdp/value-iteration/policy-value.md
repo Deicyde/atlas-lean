@@ -11,7 +11,13 @@ The value of the policy `π`: the unique fixed point of its Bellman operator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Stochastic](stochastic.md)
+
+## Proof depends on
+
+- [Policy Bellman](policy-bellman.md)
+- [Q Value](q-value.md)
 
 ## Sources
 

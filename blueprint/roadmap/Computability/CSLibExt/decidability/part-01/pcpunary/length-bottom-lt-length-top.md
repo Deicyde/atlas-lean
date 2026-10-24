@@ -12,7 +12,13 @@ If every domino of a nonempty `s` is strictly longer on top, so is `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [Bottom](../pcp/bottom.md)
+- [Top](../pcp/top.md)
+
+## Proof depends on
+
+- [Length bottom le length top](length-bottom-le-length-top.md)
 
 ## Sources
 

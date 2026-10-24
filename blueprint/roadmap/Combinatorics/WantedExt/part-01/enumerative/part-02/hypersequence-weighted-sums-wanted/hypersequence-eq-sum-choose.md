@@ -12,7 +12,7 @@ Theorem 1: for `r ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypersequence](hypersequence.md)
 
 ## Sources
 

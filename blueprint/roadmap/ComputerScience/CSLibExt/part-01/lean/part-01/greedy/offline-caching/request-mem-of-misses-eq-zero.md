@@ -12,7 +12,14 @@ A trace without misses only serves pages already cached.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Request](request.md)
+- [Cache LTS](cache-lts.md)
+- [Misses](misses.md)
+
+## Proof depends on
+
+- [Is Miss](is-miss.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ The generating function of Arndt compositions by weight (`x`) and last part (`y`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Last Part Count](arndt-last-part-count.md)
+- [Bivariate Count GF](bivariate-count-gf.md)
 
 ## Sources
 

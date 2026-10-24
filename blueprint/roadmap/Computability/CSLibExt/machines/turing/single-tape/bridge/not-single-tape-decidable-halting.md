@@ -13,7 +13,13 @@ codes of partial recursive functions run on `n`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Tape Decidable](../classes/single-tape-decidable.md)
+
+## Proof depends on
+
+- [TM2 Decidable](../../../../decidability/part-01/basic/tm2-decidable.md)
+- [The halting problem is undecidable by multi-stack machines](../../../../decidability/part-02/undecidable/not-tm2-decidable-halting.md)
+- [Single-tape and multi-stack machines decide the same predicates](single-tape-decidable-iff-tm2-decidable.md)
 
 ## Sources
 

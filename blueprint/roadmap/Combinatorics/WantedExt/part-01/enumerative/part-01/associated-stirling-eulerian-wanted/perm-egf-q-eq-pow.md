@@ -14,7 +14,7 @@ generating function over all permutations is `A(q,x,u) = (A(x,u))^q`, the power 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

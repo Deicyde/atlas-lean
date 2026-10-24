@@ -13,7 +13,15 @@ largest Viterbi variable at time `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+- [Nonneg](nonneg.md)
+- [Path Prob](path-prob.md)
+- [Viterbi](viterbi.md)
+
+## Proof depends on
+
+- [Exists path Prob eq viterbi](exists-path-prob-eq-viterbi.md)
+- [Path Prob le viterbi](path-prob-le-viterbi.md)
 
 ## Sources
 

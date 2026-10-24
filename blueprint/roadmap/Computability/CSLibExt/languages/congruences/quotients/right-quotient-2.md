@@ -12,7 +12,9 @@ A recognizer for `L` recognizes every right quotient of `L` using the same morph
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](../recognition/recognizes.md)
+- [Right Quotient](right-quotient.md)
+- [Right Quotient Accept](right-quotient-accept.md)
 
 ## Sources
 

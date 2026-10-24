@@ -15,7 +15,7 @@ has no solution in nonzero integers, unless `(m, n, r)` is `(3s, 6t, 2w)`, `(6t,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fermat Solvable](generalized-fermat-solvable.md)
 
 ## Sources
 

@@ -17,11 +17,12 @@ every $x \in S$ the series $\sum_n \|f_n(x)\|$ is summable.
 
 ## Depends on
 
-- [Extended supremum norm on a set](../../../normed/series/normal-convergence/sup-norm-on.md)
+- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
 
 ## Proof depends on
 
 - [Normal convergence gives summable real sup norms](summable-to-real-sup-norm-on.md)
+- [Extended supremum norm on a set](../../../normed/series/normal-convergence/sup-norm-on.md)
 
 ## Sources
 

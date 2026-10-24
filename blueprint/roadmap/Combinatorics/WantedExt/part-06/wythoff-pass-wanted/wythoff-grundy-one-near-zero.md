@@ -12,7 +12,7 @@ distance `√20` of a position with Grundy number `0` (a P-position).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Pass Grundy](wythoff-pass-grundy.md)
 
 ## Sources
 

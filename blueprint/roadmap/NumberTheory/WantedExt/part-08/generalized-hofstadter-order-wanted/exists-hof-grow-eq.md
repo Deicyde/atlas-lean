@@ -12,7 +12,14 @@ lean: MetaMathlibExt.exists_hofGrow_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Grow](hof-grow.md)
+- [Hof Tau List](hof-tau-list.md)
+
+## Proof depends on
+
+- [Hof Grow Aux](hof-grow-aux.md)
+- [Hof Grow Aux iterate](hof-grow-aux-iterate.md)
+- [Succ le length hof Tau List iterate](succ-le-length-hof-tau-list-iterate.md)
 
 ## Sources
 

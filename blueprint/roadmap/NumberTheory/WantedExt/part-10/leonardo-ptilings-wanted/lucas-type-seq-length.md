@@ -12,7 +12,7 @@ lean: MetaMathlibExt.lucasTypeSeq_length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Type Seq](lucas-type-seq.md)
 
 ## Sources
 

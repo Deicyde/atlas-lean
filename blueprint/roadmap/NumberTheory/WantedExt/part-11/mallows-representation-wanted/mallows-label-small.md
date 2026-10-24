@@ -13,7 +13,8 @@ and its right child `⟨3/4, 4/5⟩`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Label](mallows-label.md)
 
 ## Sources
 

@@ -16,7 +16,8 @@ Theorem 2 (ii): for a prime `p ≥ 3` with `(-2/p) = -1`, every `α ≥ 0` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mock Theta V](mock-theta-v.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

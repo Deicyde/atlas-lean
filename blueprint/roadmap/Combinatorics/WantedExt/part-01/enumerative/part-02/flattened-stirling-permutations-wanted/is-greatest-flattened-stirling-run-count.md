@@ -12,7 +12,9 @@ The maximum number of runs of a flattened Stirling permutation of order
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Flattened Word](is-flattened-word.md)
+- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Word Run Count](word-run-count.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The nonterminals a grammar mentions, its initial nonterminal first.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nt Of](nt-of.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Encoded](../../../../../../../sources/v2/CSLibExt.md)

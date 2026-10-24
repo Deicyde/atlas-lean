@@ -13,6 +13,11 @@ Generate and propagate of the block of bits `lo, …, lo + len - 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Combine](combine.md)
+- [Gp Bit](gp-bit.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Circuit.Arithmetic.CarryLookahead](../../../../../../sources/v2/CSLibExt.md)

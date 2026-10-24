@@ -12,7 +12,14 @@ The unitary convolution of two multiplicative functions is multiplicative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unitary Conv](unitary-conv.md)
+
+## Proof depends on
+
+- [Unitary Conv one](unitary-conv-one.md)
+- [Gcd mem unitary Divisors of mem mul](gcd-mem-unitary-divisors-of-mem-mul.md)
+- [Mul mem unitary Divisors mul](mul-mem-unitary-divisors-mul.md)
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

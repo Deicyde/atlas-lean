@@ -14,7 +14,7 @@ the indicator of `[m, ∞)` for an even `m` (depending on the fixed coordinates)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
 
 ## Sources
 

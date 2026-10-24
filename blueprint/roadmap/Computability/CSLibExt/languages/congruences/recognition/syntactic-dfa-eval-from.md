@@ -12,7 +12,10 @@ Evaluation in the syntactic DFA is multiplication by the syntactic class of the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Syntactic DFA](syntactic-dfa.md)
+- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Congruences modulo `9` and `27` for `ped_{9,18}`: for all `n ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ped Nine Eighteen](ped-nine-eighteen.md)
 
 ## Sources
 

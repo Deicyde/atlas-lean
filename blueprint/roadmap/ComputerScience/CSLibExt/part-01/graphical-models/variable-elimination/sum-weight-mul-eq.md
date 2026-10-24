@@ -13,7 +13,15 @@ lean: Cslib.MachineLearning.GraphicalModels.TreeModel.sum_weight_mul_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](tree-model.md)
+- [Root Message](root-message.md)
+- [Weight](weight.md)
+
+## Proof depends on
+
+- [Eliminate](eliminate.md)
+- [Parent](parent.md)
+- [One step of variable elimination](sum-weight-mul-eliminate.md)
 
 ## Sources
 

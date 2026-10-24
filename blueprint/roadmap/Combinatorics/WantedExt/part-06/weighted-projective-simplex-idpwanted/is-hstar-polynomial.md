@@ -15,6 +15,10 @@ This relation is used instead of defining `h*` by the formula in Theorem 5.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ehrhart](ehrhart.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

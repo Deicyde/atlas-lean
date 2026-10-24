@@ -13,7 +13,7 @@ The Arndt compositions of `6` with three parts are `(4,1,1)`, `(3,2,1)`, `(3,1,2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](arndt-composition-count.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ on the non-dominant-root finset describe the same tuple; values elsewhere are ig
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [L Generalized Fibonacci Zeta Pole](l-generalized-fibonacci-zeta-pole.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedFibonacciZetaWanted](../../../../../sources/v2/WantedExt.md)

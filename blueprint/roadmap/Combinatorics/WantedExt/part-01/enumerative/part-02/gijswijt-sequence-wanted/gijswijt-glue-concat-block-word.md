@@ -14,7 +14,9 @@ proper prefix `T_t^{(m)}` of `B_u^{(m+1)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gijswijt Block](gijswijt-block.md)
+- [Gijswijt Block Word](gijswijt-block-word.md)
+- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
 
 ## Sources
 

@@ -12,7 +12,17 @@ The total weight shrinks by `(1 + β)/2` per mistake.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+- [Mistakes](mistakes.md)
+- [Total](total.md)
+- [Weights](weights.md)
+
+## Proof depends on
+
+- [Predict](predict.md)
+- [Total update le](total-update-le.md)
+- [A mistake costs weight](total-update-of-mistake.md)
+- [Update](update.md)
 
 ## Sources
 

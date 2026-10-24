@@ -14,7 +14,13 @@ Members of `Ē* − E*` are indexed by `(b, ∑ ζ^m)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Block Sum](is-lstar-block-sum.md)
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [L Star Collection](l-star-collection.md)
+- [Max LStar Block](max-lstar-block.md)
+- [Zeckendorf Real Eval](zeckendorf-real-eval.md)
+- [Zeckendorf Smooth Set](zeckendorf-smooth-set.md)
 
 ## Sources
 

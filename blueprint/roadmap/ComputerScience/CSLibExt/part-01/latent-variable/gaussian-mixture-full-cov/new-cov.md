@@ -12,7 +12,13 @@ The covariance update: the responsibility-weighted sample covariance
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [New Mean](new-mean.md)
+- [Resp](resp.md)
+- [Weighted Scatter](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Comparators on `ℕ`-indexed wires as a network on `N` wires, dropping any out o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](../zero-one/network.md)
 
 ## Sources
 

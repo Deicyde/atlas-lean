@@ -12,7 +12,7 @@ lean: MetaMathlibExt.oozToBZ_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz To BZ](ooz-to-bz.md)
 
 ## Sources
 

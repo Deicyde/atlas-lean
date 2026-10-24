@@ -12,7 +12,8 @@ Nerode equivalence of words is exactly observational equivalence of the states t
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Equivalent](state-equivalent.md)
+- [Nerode Rel](../nerode/nerode-rel.md)
 
 ## Sources
 

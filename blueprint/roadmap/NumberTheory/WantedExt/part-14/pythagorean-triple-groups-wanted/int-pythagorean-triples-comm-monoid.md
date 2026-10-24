@@ -17,7 +17,7 @@ as the source states.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pythagorean Triple Mul](pythagorean-triple-mul.md)
 
 ## Sources
 

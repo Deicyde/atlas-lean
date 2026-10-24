@@ -13,7 +13,7 @@ the displayed infimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lacunary Set](is-lacunary-set.md)
 
 ## Sources
 

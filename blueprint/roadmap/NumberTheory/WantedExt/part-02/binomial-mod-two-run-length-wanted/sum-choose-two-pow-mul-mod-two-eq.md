@@ -13,7 +13,7 @@ otherwise. The paper takes `m ≥ 2`; the statement holds for every `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Run Lengths](binary-run-lengths.md)
 
 ## Sources
 

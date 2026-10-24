@@ -13,7 +13,8 @@ lean: Cslib.Algorithms.Lean.Geometry.direction_eq_lineY
 
 ## Depends on
 
-This node has no prerequisites.
+- [Direction](../segment-intersection/direction.md)
+- [Line Y](line-y.md)
 
 ## Sources
 

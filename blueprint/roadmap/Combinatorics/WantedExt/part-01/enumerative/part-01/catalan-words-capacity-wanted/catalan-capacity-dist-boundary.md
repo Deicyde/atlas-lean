@@ -12,7 +12,10 @@ Mansour and Shattuck's Lemma 2, boundary values: `a(n, 1) = a(n - 1)` for `n ≥
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+- [Catalan Capacity Dist](catalan-capacity-dist.md)
+- [Catalan Max End Capacity Dist](catalan-max-end-capacity-dist.md)
+- [Catalan Words](catalan-words.md)
 
 ## Sources
 

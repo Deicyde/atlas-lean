@@ -14,7 +14,7 @@ Lemma 20: for a prime `p`, `k, l, r ≥ 2`, `1 ≤ a < p` and `0 ≤ b < p`, if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

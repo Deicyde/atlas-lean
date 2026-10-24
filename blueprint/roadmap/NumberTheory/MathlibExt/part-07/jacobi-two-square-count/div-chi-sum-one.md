@@ -12,7 +12,7 @@ lean: SumSquares.divChiSum_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Div Chi Sum](div-chi-sum.md)
 
 ## Sources
 

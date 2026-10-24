@@ -11,7 +11,12 @@ Pushed-fill clause `(t, i, k, j)`, `j < p`: `¬S[t,i] ∨ C[t+1,k,j,pu i k j]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [C Idx](../family/c-idx.md)
+- [X Idx](../family/x-idx.md)
 
 ## Sources
 

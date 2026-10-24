@@ -12,7 +12,12 @@ On even arguments, `T_{A,B}(q y) = y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Collatz](q-collatz.md)
+
+## Proof depends on
+
+- [Q Shift](q-shift.md)
+- [Q Shift X mul](q-shift-x-mul.md)
 
 ## Sources
 

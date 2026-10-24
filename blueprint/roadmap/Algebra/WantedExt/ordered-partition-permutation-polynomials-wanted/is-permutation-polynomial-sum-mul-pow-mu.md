@@ -13,7 +13,7 @@ For an odd prime `p`, positive integers `k, t, a` with `p ∤ a`, `gcd(a, p - 1)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Permutation Polynomial](../../../FieldTheory/MathlibExt/finite/permutation-polynomial/is-permutation-polynomial.md)
 
 ## Sources
 

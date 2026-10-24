@@ -12,7 +12,7 @@ The integer part in `HasPeriodicCF` is `⌊x⌋`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Periodic CF](has-periodic-cf.md)
 
 ## Sources
 

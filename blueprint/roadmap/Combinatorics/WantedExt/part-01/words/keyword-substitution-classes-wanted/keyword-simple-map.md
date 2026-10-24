@@ -15,6 +15,10 @@ return `u` unchanged.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Keyword Applicable](keyword-applicable.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.KeywordSubstitutionClassesWanted](../../../../../../sources/v2/WantedExt.md)

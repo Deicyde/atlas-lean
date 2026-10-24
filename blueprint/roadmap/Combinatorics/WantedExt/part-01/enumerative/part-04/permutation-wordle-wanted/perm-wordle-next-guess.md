@@ -15,6 +15,10 @@ positions) and secret `π`: from the current guess `g`, keep the positions where
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Permute Along](permute-along.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PermutationWordleWanted](../../../../../../../sources/v2/WantedExt.md)

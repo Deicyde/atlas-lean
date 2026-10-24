@@ -13,7 +13,7 @@ lean: Cslib.MachineLearning.LeastSquares.softThreshold_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Soft Threshold](soft-threshold.md)
 
 ## Sources
 

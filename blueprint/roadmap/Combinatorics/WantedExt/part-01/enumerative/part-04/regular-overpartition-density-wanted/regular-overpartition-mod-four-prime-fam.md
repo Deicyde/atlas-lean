@@ -17,7 +17,7 @@ reading, and deliberately does not use the false shifted interpretation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Overpartition Count](regular-overpartition-count.md)
 
 ## Sources
 

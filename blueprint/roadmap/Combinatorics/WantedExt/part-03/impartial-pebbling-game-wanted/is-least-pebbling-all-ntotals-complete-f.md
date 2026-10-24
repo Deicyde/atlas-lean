@@ -11,7 +11,7 @@ Theorem 1(c): `m^{(2:1)}(K_4) = 23`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pebbling All NTotals](pebbling-all-ntotals.md)
 
 ## Sources
 

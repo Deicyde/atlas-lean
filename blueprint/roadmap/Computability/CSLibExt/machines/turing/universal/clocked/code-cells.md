@@ -11,7 +11,13 @@ The code stack: the cells of the numbers of the entries of the code.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../code/code.md)
+
+## Proof depends on
+
+- [Cells](cells.md)
+- [Entries](entries.md)
+- [Entry Nums](entry-nums.md)
 
 ## Sources
 

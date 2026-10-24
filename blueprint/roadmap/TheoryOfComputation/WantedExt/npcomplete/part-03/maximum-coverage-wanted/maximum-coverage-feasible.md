@@ -11,7 +11,7 @@ At most `K` sets covering at least `M` elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Coverage Instance](maximum-coverage-instance.md)
 
 ## Sources
 

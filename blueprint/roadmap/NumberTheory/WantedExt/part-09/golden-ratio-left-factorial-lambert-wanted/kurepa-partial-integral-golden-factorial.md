@@ -11,7 +11,8 @@ Theorem 12: `β n < !n < β n + 1` for every positive integer `n`, where `β n =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Golden Factorial Exponent](golden-factorial-exponent.md)
+- [Kurepa Partial Integral](kurepa-partial-integral.md)
 
 ## Sources
 

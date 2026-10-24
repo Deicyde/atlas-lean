@@ -15,7 +15,8 @@ with the complex coercion of some `q : ℚ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LGeneralized Fibonacci](is-lgeneralized-fibonacci.md)
+- [L Generalized Fibonacci Zeta Pole Set](l-generalized-fibonacci-zeta-pole-set.md)
 
 ## Sources
 

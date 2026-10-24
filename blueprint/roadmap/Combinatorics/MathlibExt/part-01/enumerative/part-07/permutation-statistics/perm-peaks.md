@@ -13,6 +13,10 @@ lean: MetaMathlibExt.permPeaks
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Peak At](is-peak-at.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PermutationStatistics](../../../../../../../sources/v2/MathlibExt.md)

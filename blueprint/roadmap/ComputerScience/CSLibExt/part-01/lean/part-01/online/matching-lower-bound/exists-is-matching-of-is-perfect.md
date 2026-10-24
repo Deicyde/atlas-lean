@@ -13,7 +13,9 @@ graph with one edge per arrival.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../../graph/bipartite-matching/is-matching.md)
+- [Is Perfect](is-perfect.md)
+- [To Adj](to-adj.md)
 
 ## Sources
 

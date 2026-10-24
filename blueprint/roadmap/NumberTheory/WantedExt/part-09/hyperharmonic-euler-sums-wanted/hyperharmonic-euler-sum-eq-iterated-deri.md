@@ -18,7 +18,7 @@ is not formalized.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyperharmonic Euler Sum](hyperharmonic-euler-sum.md)
 
 ## Sources
 

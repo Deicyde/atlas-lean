@@ -12,7 +12,9 @@ The output of a configuration reads as Mathlib's output.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cfg](cfg.md)
+- [Output](output.md)
+- [To TM0](to-tm0.md)
 
 ## Sources
 

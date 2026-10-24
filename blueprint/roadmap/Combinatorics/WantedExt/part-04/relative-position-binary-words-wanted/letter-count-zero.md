@@ -12,7 +12,7 @@ lean: MetaMathlibExt.letterCount_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter Count](letter-count.md)
 
 ## Sources
 

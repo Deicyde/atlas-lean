@@ -13,6 +13,10 @@ The list without duplicates.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mem B](mem-b.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.PrimrecList](../../../../../../sources/v2/CSLibExt.md)

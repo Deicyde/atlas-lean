@@ -13,7 +13,7 @@ and `V̄_8 = 194 = 14² - 2`, as the doubling formula (LehmerV2n) predicts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer V](lehmer-v.md)
 
 ## Sources
 

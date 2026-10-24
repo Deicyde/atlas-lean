@@ -13,7 +13,7 @@ Corollary 4: `b_{0,k}(0) = δ_{0,k}`, `b_{j,k}(0) = j b_{j-1,k}(0) - b_{j-1,k-1}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyperseq B](hyperseq-b.md)
 
 ## Sources
 

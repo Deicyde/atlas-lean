@@ -12,7 +12,9 @@ equinumerous with `k`-Dyck paths of length `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KDyck Path](is-kdyck-path.md)
+- [Descending Naples Count](descending-naples-count.md)
+- [Lattice Height](lattice-height.md)
 
 ## Sources
 

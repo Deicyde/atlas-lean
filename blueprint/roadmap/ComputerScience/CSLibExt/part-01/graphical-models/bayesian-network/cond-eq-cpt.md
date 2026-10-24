@@ -14,7 +14,14 @@ table at its parents' values. In particular it depends only on the values of the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayes Net](bayes-net.md)
+- [To Chain](to-chain.md)
+- [Joint](joint.md)
+
+## Proof depends on
+
+- [Chain](chain.md)
+- [Cond eq div](cond-eq-div.md)
 
 ## Sources
 

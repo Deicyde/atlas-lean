@@ -13,7 +13,7 @@ and `Ω(max (γ i) (γ j) ^ n)` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Split Thue Recurrence Family](is-split-thue-recurrence-family.md)
 
 ## Sources
 

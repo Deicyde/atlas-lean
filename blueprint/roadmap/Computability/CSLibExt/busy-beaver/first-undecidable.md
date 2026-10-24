@@ -14,7 +14,11 @@ a theory deciding halting at every size.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal Theory](formal-theory.md)
+
+## Proof depends on
+
+- [Decides Halting](decides-halting.md)
 
 ## Sources
 

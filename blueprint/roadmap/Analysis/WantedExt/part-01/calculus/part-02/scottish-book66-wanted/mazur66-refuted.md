@@ -17,7 +17,7 @@ derivatives", Colloq. Math. 141 (2015), 175–181, arXiv:1508.06909).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem66 Claim](scottish-book-problem66-claim.md)
 
 ## Sources
 

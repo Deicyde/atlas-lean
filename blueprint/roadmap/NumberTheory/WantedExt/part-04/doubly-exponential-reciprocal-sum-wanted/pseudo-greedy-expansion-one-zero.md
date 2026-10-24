@@ -12,7 +12,11 @@ The pseudo-greedy expansion of `1` starts with `a 0 = 2` (first Sylvester number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pseudo Greedy Expansion](pseudo-greedy-expansion.md)
+
+## Proof depends on
+
+- [Pseudo Greedy Remainder](pseudo-greedy-remainder.md)
 
 ## Sources
 

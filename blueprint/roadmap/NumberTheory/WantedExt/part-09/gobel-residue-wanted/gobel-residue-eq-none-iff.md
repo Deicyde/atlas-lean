@@ -12,7 +12,8 @@ positive integer `n` with `ν_p(n!) ≤ r`, `g_{k,p,r}(n) = F` if and only if `g
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Residue](gobel-residue.md)
+- [Gobel Sequence](../gobel-sequence-wanted/gobel-sequence.md)
 
 ## Sources
 

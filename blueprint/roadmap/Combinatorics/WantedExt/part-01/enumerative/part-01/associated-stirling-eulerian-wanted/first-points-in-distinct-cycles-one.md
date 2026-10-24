@@ -12,7 +12,7 @@ The identity permutation puts every point in its own cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
 
 ## Sources
 

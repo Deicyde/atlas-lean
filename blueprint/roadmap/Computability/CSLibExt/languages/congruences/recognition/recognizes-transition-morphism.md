@@ -13,7 +13,9 @@ accessibility or state separation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
+- [State Transformation](../syntactic/state-transformation.md)
+- [Transition Morphism](../syntactic/transition-morphism.md)
 
 ## Sources
 

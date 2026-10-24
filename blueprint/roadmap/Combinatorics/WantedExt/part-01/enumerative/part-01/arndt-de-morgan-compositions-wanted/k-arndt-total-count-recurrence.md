@@ -17,7 +17,7 @@ uses the empty composition there. At `n = 2` the recurrences fail for every `k`
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Arndt Total Count](k-arndt-total-count.md)
 
 ## Sources
 

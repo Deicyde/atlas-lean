@@ -12,7 +12,7 @@ The `mex` value is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
 
 ## Sources
 

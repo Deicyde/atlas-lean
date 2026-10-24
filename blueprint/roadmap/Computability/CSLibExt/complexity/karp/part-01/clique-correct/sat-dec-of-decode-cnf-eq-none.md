@@ -12,7 +12,13 @@ Moved to `DenseSAT.ToBinary.satDec_of_decodeCNF_eq_none` (`DenseToBinary`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decode CNF](../../../../cook-levin/decode-cnf.md)
+- [Sat Dec](../../../../cook-levin/sat-dec.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Sat Dec of decode CNF eq none](../../../dense-to-binary/sat-dec-of-decode-cnf-eq-none.md)
 
 ## Sources
 

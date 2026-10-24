@@ -11,7 +11,7 @@ An edge dominating set of at most `K` edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Dominating Set Instance](edge-dominating-set-instance.md)
 
 ## Sources
 

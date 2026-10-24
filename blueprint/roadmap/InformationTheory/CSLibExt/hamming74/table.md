@@ -13,6 +13,10 @@ The decoder's syndrome table: flip the bit the syndrome names.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Error Pos](error-pos.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Coding.Hamming74](../../../../sources/v2/CSLibExt.md)

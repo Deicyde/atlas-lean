@@ -12,7 +12,12 @@ For a non-empty weight set the weighted Davenport constant of the trivial group 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Davenport](weighted-davenport.md)
+
+## Proof depends on
+
+- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
+- [Weighted Davenport eq nat Cast s Inf](weighted-davenport-eq-nat-cast-s-inf.md)
 
 ## Sources
 

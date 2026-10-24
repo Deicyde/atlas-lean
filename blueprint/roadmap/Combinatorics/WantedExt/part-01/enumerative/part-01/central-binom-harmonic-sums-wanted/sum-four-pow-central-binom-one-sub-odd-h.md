@@ -13,7 +13,7 @@ Proposition 5: for natural `n`, `r`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Harmonic](../../../../../../NumberTheory/MathlibExt/part-01/harmonic/odd-harmonic/odd-harmonic.md)
 
 ## Sources
 

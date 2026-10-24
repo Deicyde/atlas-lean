@@ -15,7 +15,7 @@ holds for every `h` (for `h = 0` there are no nontrivial elements).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sumset Trivial Elements](sumset-trivial-elements.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ and `θ₁'` its `z`-derivative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobi Theta One Sine](jacobi-theta-one-sine.md)
 
 ## Sources
 

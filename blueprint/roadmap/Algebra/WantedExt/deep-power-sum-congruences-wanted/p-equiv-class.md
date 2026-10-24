@@ -15,6 +15,10 @@ with `μ ∼_p s`, where `∼_p` (`p`-equivalence) is the equivalence relation g
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is PSplitting](is-psplitting.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.DeepPowerSumCongruencesWanted](../../../../sources/v2/WantedExt.md)

@@ -11,7 +11,14 @@ An assignment making every clause not-all-equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nae Three Sat Instance](nae-three-sat-instance.md)
+
+## Proof depends on
+
+- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
+- [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 
 ## Sources
 

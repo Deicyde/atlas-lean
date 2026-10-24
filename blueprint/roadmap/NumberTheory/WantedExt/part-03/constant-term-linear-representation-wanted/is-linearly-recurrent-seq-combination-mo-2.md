@@ -14,7 +14,8 @@ Combinations mod `p^a`: for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Linearly Recurrent Seq](is-linearly-recurrent-seq.md)
+- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

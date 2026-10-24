@@ -13,7 +13,22 @@ with the heap unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cmd](../syntax/cmd.md)
+- [To Heap](to-heap.md)
+- [HConfig](hconfig.md)
+- [HStep](hstep.md)
+- [Heap](../heap/heap.md)
+- [Heap Cmd](heap-cmd.md)
+- [State](../syntax/state.md)
+- [Step](../small-step/step.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
+- [Config](../small-step/config.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The expansion `1.11` also represents `2`: `1 + φ⁻¹ + φ⁻² = 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Value](base-phi-value.md)
 
 ## Sources
 

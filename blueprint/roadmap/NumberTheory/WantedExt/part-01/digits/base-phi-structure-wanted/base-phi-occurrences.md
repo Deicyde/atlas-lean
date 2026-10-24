@@ -16,6 +16,11 @@ position `k`: the natural numbers `N` whose base phi expansion has
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Digit Block](has-digit-block.md)
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.BasePhiStructureWanted](../../../../../../sources/v2/WantedExt.md)

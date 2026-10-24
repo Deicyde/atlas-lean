@@ -11,7 +11,14 @@ The base-edge function `ℬ(T_{r+2,d+1}, T_{r+1,d}, T_{r+1,d+1})`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Edge](circuit-edge.md)
+
+## Proof depends on
+
+- [Circuit Left Arm](circuit-left-arm.md)
+- [Circuit Right Arm](circuit-right-arm.md)
+- [Circuit Top Arm](circuit-top-arm.md)
+- [Circuit Y](circuit-y.md)
 
 ## Sources
 

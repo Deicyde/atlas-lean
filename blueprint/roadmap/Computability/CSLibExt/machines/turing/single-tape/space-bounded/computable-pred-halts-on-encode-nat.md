@@ -14,7 +14,13 @@ lean: Cslib.Turing.SingleTapeTM.IsLBA.computablePred_haltsOn_encodeNat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts On](../classes/halts-on.md)
+- [Is LBA](is-lba.md)
+
+## Proof depends on
+
+- [The halting problem of a linear bounded automaton is decidable](computable-pred-halts-on-2.md)
+- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

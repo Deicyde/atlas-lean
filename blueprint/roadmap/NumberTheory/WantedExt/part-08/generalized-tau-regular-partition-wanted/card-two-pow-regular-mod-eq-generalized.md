@@ -11,7 +11,7 @@ lean: MetaMathlibExt.card_two_pow_regular_modEq_generalizedTau
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ it), which determines the P-positions (`MetaMathlibExt.pPositions_unique`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beatty Octal Move](beatty-octal-move.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ projections `⟪v, xᵢ⟫` are not all equal).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Scatter](weighted-scatter.md)
+
+## Proof depends on
+
+- [Dot Product weighted Scatter mul Vec](dot-product-weighted-scatter-mul-vec.md)
 
 ## Sources
 

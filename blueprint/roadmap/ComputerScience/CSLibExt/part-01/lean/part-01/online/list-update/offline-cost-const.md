@@ -12,7 +12,14 @@ The static competitor is the offline algorithm with a constant list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Offline Cost](offline-cost.md)
+- [Static Cost](static-cost.md)
+
+## Proof depends on
+
+- [Access Cost](access-cost.md)
+- [Inv](inv.md)
+- [Inv Set](inv-set.md)
 
 ## Sources
 

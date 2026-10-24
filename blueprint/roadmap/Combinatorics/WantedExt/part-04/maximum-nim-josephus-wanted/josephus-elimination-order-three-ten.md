@@ -14,7 +14,7 @@ there is no deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus Elimination Order](josephus-elimination-order.md)
 
 ## Sources
 

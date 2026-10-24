@@ -12,7 +12,7 @@ The recurrence (1.1) of `q²_{n+3}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Periodic Fibonacci Sq](bi-periodic-fibonacci-sq.md)
 
 ## Sources
 

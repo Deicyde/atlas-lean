@@ -15,6 +15,12 @@ set-theoretically vacuous.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Diamond](has-diamond.md)
+- [Is CL](is-cl.md)
+- [Canonical Line](canonical-line.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

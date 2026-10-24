@@ -12,7 +12,7 @@ Residues of `π(U₂) = {1, 2}` modulo `3`: one word in each of the classes `1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ulam Residue Count](ulam-residue-count.md)
 
 ## Sources
 

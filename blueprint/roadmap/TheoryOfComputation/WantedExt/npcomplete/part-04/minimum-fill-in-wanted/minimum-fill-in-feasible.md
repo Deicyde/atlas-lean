@@ -11,7 +11,11 @@ At most `K` added edges making the graph chordal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Fill In Instance](minimum-fill-in-instance.md)
+
+## Proof depends on
+
+- [Graph Aug](graph-aug.md)
 
 ## Sources
 

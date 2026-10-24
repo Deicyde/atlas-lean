@@ -12,7 +12,7 @@ FIFO keeps a legal cache: distinct pages, at most `k` of them.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fifo Step](fifo-step.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ every `ε > 0`, `S_ℓ(x) = x³ P_ℓ(log x) + O(x^{3 - 2/3^ℓ + ε})` for a po
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dedekind Six Squares A0](dedekind-six-squares-a0.md)
+- [Dedekind Six Squares A3](dedekind-six-squares-a3.md)
+- [Six Squares Dedekind Moment](six-squares-dedekind-moment.md)
 
 ## Sources
 

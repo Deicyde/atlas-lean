@@ -14,7 +14,7 @@ sublist of irrational entries longer than half of `σ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachean Nu](nicomachean-nu.md)
 
 ## Sources
 

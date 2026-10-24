@@ -12,7 +12,10 @@ the monomial `z^(n+1)`, where `n=q.length`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Star Formula](h-star-formula.md)
+- [List Ell](list-ell.md)
+- [Reflexive Stabilization](reflexive-stabilization.md)
+- [Reflexive Stabilization Number](reflexive-stabilization-number.md)
 
 ## Sources
 

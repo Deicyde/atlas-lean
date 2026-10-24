@@ -12,7 +12,7 @@ A characteristic polynomial of a sequence annihilates it: if `G` solves the line
 
 ## Depends on
 
-This node has no prerequisites.
+- [Annihilates Seq](annihilates-seq.md)
 
 ## Sources
 

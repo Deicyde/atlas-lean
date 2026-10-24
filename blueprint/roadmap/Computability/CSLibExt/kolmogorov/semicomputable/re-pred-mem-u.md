@@ -12,7 +12,11 @@ Being described by `p` is recognizable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The universal description method](../basic/u.md)
+
+## Proof depends on
+
+- [Partrec U](../basic/partrec-u.md)
 
 ## Sources
 

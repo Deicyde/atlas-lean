@@ -12,7 +12,7 @@ Local inequality: for every non-empty set `T` of positive integers with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Weight](bridge-weight.md)
 
 ## Sources
 

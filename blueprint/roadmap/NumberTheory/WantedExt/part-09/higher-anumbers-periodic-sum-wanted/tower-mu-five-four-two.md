@@ -14,7 +14,13 @@ Definition 1 (`μ(2) = 3` for `p = 5`, `d = 4`, where `τ · 2 = 3`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tower Mu](tower-mu.md)
+
+## Proof depends on
+
+- [Seq Lex Gt](seq-lex-gt.md)
+- [Base PDigit](base-pdigit.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

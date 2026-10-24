@@ -13,7 +13,7 @@ states it for `z ∈ ℂ`; convergence is not part of this statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RFibonacci](neg-rfibonacci.md)
 
 ## Sources
 

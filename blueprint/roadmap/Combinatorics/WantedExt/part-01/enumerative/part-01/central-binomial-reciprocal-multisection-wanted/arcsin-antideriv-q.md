@@ -13,6 +13,10 @@ The paper's polynomial `Q_l(x) = ∑_{i=0}^l q_i x^i` for `l ≥ 1`, and `Q_0 = 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Arcsin Antideriv QCoeff](arcsin-antideriv-qcoeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CentralBinomialReciprocalMultisectionWanted](../../../../../../../sources/v2/WantedExt.md)

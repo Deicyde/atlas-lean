@@ -11,7 +11,7 @@ lean: MetaMathlibExt.lip_eq_zero_of_infinite_zeros
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

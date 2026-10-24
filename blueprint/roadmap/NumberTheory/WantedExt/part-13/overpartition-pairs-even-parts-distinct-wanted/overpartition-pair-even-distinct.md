@@ -15,6 +15,10 @@ coefficient of `q^n` in `overpartitionPairEvenDistinctGF j k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Overpartition Pair Even Distinct GF](overpartition-pair-even-distinct-gf.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OverpartitionPairsEvenPartsDistinctWanted](../../../../../sources/v2/WantedExt.md)

@@ -15,7 +15,9 @@ disjoint unions `⊔` are stated as unions together with `Disjoint` conjuncts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Occurrences](base-phi-occurrences.md)
+- [Beatty Set](beatty-set.md)
+- [Beatty Set₀](beatty-set-2.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ element of largest norm in the `γ(π_3#)` part.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quad Schatunowsky Set](quad-schatunowsky-set.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Hook lengths of `(4, 4, 3, 1)` as labeled in Figure 1: first row `7, 5, 4, 2`, f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition4431](partition4431.md)
+- [Partition Hook Length](partition-hook-length.md)
 
 ## Sources
 

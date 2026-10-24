@@ -12,7 +12,8 @@ Two updates of `a` interleaved with two of `b` leave the last of each.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MetaMathlibExt.hyperLeonardo_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

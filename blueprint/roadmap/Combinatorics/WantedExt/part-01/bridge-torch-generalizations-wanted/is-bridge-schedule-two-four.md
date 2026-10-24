@@ -13,7 +13,12 @@ paper's table for `n = 4` and capacity `2` is valid and costs `11`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bridge Schedule](is-bridge-schedule.md)
+- [Schedule Cost](schedule-cost.md)
+
+## Proof depends on
+
+- [Bridge Schedule From](bridge-schedule-from.md)
 
 ## Sources
 

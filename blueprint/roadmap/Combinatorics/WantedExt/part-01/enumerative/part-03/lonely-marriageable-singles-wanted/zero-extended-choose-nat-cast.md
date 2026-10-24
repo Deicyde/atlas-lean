@@ -12,7 +12,7 @@ On natural arguments `zeroExtendedChoose` is `Nat.choose`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zero Extended Choose](zero-extended-choose.md)
 
 ## Sources
 

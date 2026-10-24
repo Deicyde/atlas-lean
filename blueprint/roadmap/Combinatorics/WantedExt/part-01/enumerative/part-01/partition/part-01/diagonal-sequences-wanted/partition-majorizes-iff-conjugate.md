@@ -13,7 +13,8 @@ decreasing part lists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Majorizes](partition-majorizes.md)
+- [Conjugate Parts](conjugate-parts.md)
 
 ## Sources
 

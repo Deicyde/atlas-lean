@@ -15,7 +15,8 @@ Square-freeness of `d` is not needed here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
+- [Neg Pell G](neg-pell-g.md)
 
 ## Sources
 

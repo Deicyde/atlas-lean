@@ -14,6 +14,10 @@ defined as the `n`th coefficient of `f_4 f_18^2 / (f_1 f_9 f_36)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ped Nine Eighteen Series](ped-nine-eighteen-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PedOverpartitionsDissectionsWanted](../../../../../sources/v2/WantedExt.md)

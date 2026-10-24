@@ -12,7 +12,13 @@ Bits computed pairwise by `f` give `f` back on each pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adj Bits](../clique/adj-bits.md)
+- [Pairs](../clique/pairs.md)
+
+## Proof depends on
+
+- [Adj Bits eq get Elem](adj-bits-eq-get-elem.md)
+- [Mem pairs](mem-pairs.md)
 
 ## Sources
 

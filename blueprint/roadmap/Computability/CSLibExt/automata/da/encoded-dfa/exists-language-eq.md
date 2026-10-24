@@ -13,7 +13,14 @@ has an encoded DFA with the same language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+- [Language](language.md)
+
+## Proof depends on
+
+- [Step](step.md)
+- [Step eq of forall](step-eq-of-forall.md)
+- [To DFA](to-dfa.md)
 
 ## Sources
 

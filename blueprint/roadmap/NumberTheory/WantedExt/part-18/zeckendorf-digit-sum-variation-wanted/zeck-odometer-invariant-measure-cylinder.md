@@ -13,7 +13,8 @@ and `1/φ^ℓ` if `r_ℓ = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

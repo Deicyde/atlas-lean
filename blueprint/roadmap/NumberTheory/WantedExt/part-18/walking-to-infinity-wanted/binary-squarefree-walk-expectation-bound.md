@@ -14,7 +14,7 @@ denominators `b^k - b^{k-1}`, which for `b = 2` would double the sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Right Trunc Squarefree Count](right-trunc-squarefree-count.md)
 
 ## Sources
 

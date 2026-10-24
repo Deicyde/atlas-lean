@@ -21,7 +21,7 @@ dropped.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Schreier Count](maximal-schreier-count.md)
 
 ## Sources
 

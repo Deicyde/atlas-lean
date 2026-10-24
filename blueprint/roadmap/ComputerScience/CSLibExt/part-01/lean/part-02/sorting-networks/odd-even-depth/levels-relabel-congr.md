@@ -12,7 +12,12 @@ Levels of a relabeled network on wires of the form `e y` depend only on the leve
 
 ## Depends on
 
-This node has no prerequisites.
+- [Levels](../depth/levels.md)
+- [Relabel](../odd-even/relabel.md)
+
+## Proof depends on
+
+- [Levels relabel](levels-relabel.md)
 
 ## Sources
 

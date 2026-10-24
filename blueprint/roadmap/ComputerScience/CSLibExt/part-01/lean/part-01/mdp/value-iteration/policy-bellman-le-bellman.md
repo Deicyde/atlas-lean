@@ -12,7 +12,13 @@ A policy's update never exceeds the optimal update.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Bellman](bellman.md)
+- [Policy Bellman](policy-bellman.md)
+
+## Proof depends on
+
+- [Q Value](q-value.md)
 
 ## Sources
 

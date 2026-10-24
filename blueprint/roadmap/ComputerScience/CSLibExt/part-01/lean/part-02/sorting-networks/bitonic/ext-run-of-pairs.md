@@ -12,7 +12,17 @@ On comparators in range, the `Fin N` network and the `ℕ`-indexed runner agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Within](within.md)
+- [Extend False](extend-false.md)
+- [Of Pairs](of-pairs.md)
+- [Run N](run-n.md)
+- [Run](../zero-one/run.md)
+
+## Proof depends on
+
+- [Cmp](cmp.md)
+- [Network](../zero-one/network.md)
+- [Comparator](../zero-one/comparator.md)
 
 ## Sources
 

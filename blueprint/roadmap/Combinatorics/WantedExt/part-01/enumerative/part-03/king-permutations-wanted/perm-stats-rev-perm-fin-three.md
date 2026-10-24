@@ -13,7 +13,12 @@ right-to-left maxima, three left-to-right minima, one right-to-left minimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Ascent Count](perm-ascent-count.md)
+- [Perm Descent Count](perm-descent-count.md)
+- [Perm Left To Right Max Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-max-count.md)
+- [Perm Left To Right Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-min-count.md)
+- [Perm Right To Left Max Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-max-count.md)
+- [Perm Right To Left Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-min-count.md)
 
 ## Sources
 

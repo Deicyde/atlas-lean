@@ -12,7 +12,7 @@ Proposition 11: the Leonardo numbers are log-balanced at `n = 3`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](../../part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

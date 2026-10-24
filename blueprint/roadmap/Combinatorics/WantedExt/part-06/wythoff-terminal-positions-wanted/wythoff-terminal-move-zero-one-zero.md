@@ -12,7 +12,7 @@ From `(1, 0)` one may move to `(0, 0)` in `K^0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Terminal Move](wythoff-terminal-move.md)
 
 ## Sources
 

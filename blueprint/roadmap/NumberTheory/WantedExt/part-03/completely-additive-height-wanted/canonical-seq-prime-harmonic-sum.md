@@ -13,7 +13,8 @@ and `S_seq(x) ≍ x^{1/α} / (log x)^{1+1/α}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Canonical Seq Height](canonical-seq-height.md)
+- [Profile Partial Sum](profile-partial-sum.md)
 
 ## Sources
 

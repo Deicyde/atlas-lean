@@ -13,7 +13,15 @@ It is also the posterior predictive law, starting from the posterior.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gaussian Likelihood](gaussian-likelihood.md)
+
+## Proof depends on
+
+- [The evidence from a factorization of densities](../density/comp-eq-with-density-of-mul-eq.md)
+- [Completing the square](gaussian-pdfreal-mul-gaussian-pdfreal.md)
+- [Completing the square](measurable-gaussian-pdf-mean.md)
+- [Normal Post Mean](normal-post-mean.md)
+- [Normal Post Var](normal-post-var.md)
 
 ## Sources
 

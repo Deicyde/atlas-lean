@@ -11,7 +11,7 @@ The unit symbol of the counters `A`, `B`, `D`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

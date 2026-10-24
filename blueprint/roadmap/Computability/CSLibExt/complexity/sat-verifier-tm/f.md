@@ -11,7 +11,13 @@ Filter labels in the host: `pass` starts the driver, `fail` cleans up with `fals
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](../karp/part-02/three-sat-filter/lab.md)
+- [HLab](hlab.md)
+
+## Proof depends on
+
+- [DLab](../sat-check/dlab.md)
+- [Lab](../sat-lookup/lab.md)
 
 ## Sources
 

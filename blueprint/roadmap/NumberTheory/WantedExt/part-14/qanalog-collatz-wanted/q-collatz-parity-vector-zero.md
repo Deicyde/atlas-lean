@@ -12,7 +12,12 @@ lean: MetaMathlibExt.qCollatzParityVector_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Collatz Parity Vector](q-collatz-parity-vector.md)
+
+## Proof depends on
+
+- [Q Collatz](q-collatz.md)
+- [Q Collatz zero](q-collatz-zero.md)
 
 ## Sources
 

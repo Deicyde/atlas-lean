@@ -16,6 +16,10 @@ valuation conditions with "and", but its text ("all prime divisors of `X(m)` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Truncated Log Aux Product](truncated-log-aux-product.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.TruncatedLogDiscriminantWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,7 @@ Characteristic values: rows `n = 5` (`1, 2, 7, 6, 5`) and `n = 10` (`0, 6, 24, 7
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sabar Number](sabar-number.md)
 
 ## Sources
 

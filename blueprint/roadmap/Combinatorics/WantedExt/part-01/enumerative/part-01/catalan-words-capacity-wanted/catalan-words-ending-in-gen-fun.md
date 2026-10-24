@@ -12,7 +12,8 @@ Mansour and Shattuck's Corollary 3: with `C(x) = ∑ Cₙ xⁿ` the Catalan gene
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catalan Words](catalan-words.md)
+- [Words Ending In](words-ending-in.md)
 
 ## Sources
 

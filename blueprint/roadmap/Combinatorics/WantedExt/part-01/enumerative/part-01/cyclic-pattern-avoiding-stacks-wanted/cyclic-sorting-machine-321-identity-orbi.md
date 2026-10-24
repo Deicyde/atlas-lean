@@ -13,7 +13,7 @@ For `n ≥ 4` and `m ≥ ⌈(n - 1 - ⌈(2n-1)/3⌉)/2⌉`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
 
 ## Sources
 

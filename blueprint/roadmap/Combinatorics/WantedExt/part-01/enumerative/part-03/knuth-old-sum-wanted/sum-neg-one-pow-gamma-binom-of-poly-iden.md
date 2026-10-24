@@ -13,7 +13,7 @@ Equation (41), second identity: under the hypotheses of the first,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

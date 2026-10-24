@@ -14,7 +14,7 @@ Equation (17), the `n = 1` case of (14):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For `n ≥ 1`, an odd prime `p` with `p - 1 ≥ n + 1`, and every integer `s ≥
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
 
 ## Sources
 

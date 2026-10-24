@@ -12,7 +12,7 @@ lean: MetaMathlibExt.diagonalOfList_one_two_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Of List](diagonal-of-list.md)
 
 ## Sources
 

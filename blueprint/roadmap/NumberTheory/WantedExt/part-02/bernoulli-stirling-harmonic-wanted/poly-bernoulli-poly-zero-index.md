@@ -14,7 +14,11 @@ generating function, with no deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Bernoulli Poly](poly-bernoulli-poly.md)
+
+## Proof depends on
+
+- [Poly Bernoulli](../../../MathlibExt/part-01/bernoulli/poly-bernoulli-duality/poly-bernoulli.md)
 
 ## Sources
 

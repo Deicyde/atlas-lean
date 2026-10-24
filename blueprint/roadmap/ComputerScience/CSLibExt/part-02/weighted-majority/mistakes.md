@@ -11,7 +11,12 @@ The mistakes of the weighted majority algorithm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round](round.md)
+
+## Proof depends on
+
+- [Predict](predict.md)
+- [Update](update.md)
 
 ## Sources
 

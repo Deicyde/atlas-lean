@@ -12,7 +12,12 @@ The bitonic merger on `2 ^ k` wires has `k 2 ^ (k - 1)` comparators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bitonic Merge](bitonic-merge.md)
+
+## Proof depends on
+
+- [Half Cleaner](half-cleaner.md)
+- [The bitonic sorter sorts every `0`-`1` input](length-half-cleaner.md)
 
 ## Sources
 

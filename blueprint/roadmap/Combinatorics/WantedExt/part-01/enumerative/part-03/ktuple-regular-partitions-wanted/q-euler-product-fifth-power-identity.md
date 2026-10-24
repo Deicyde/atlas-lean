@@ -14,7 +14,8 @@ denominator is the requested deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Bilateral Series](bounded-bilateral-series.md)
+- [Q Euler Product](../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

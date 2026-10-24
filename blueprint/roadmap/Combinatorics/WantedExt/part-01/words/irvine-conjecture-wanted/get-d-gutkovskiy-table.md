@@ -12,7 +12,12 @@ Entry `k ≤ n` of `gutkovskiyTable n` is `g_k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gutkovskiy](gutkovskiy.md)
+- [Gutkovskiy Table](gutkovskiy-table.md)
+
+## Proof depends on
+
+- [Size gutkovskiy Table](size-gutkovskiy-table.md)
 
 ## Sources
 

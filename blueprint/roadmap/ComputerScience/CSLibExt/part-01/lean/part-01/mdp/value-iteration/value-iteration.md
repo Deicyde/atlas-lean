@@ -12,7 +12,11 @@ directly recomputes earlier iterates; `valueIterationVec` is the tabulated progr
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+
+## Proof depends on
+
+- [Bellman](bellman.md)
 
 ## Sources
 

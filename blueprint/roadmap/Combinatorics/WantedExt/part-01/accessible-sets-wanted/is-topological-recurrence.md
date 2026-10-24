@@ -13,6 +13,10 @@ Topological recurrence is the special case `ℓ = 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is LTopological Recurrence](is-ltopological-recurrence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AccessibleSetsWanted](../../../../../sources/v2/WantedExt.md)

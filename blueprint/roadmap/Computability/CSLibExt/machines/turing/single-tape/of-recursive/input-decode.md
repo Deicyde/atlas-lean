@@ -14,6 +14,10 @@ binary code and drop its first bit (`inputCode` in the other direction).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.OfRecursive](../../../../../../../sources/v2/CSLibExt.md)

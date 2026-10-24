@@ -12,7 +12,16 @@ lean: Cslib.Complexity.Karp.vertexCoverDec_mem_NP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertex Cover Dec](../clique/vertex-cover-dec.md)
+- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [NP](../../../../../MathlibExt/complexity/np.md)
+
+## Proof depends on
+
+- [Mode](../clique-verify/mode.md)
+- [VERTEX-COVER is verified by `kgCheck .cover`](../clique-verify/vertex-cover-dec-iff.md)
+- [Mem NP of kg Check](mem-np-of-kg-check.md)
 
 ## Sources
 

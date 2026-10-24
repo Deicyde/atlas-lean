@@ -12,7 +12,7 @@ The path `UUDUDDUD` has valley heights `1, 0`, so it is not non-decreasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyck Valley Heights](dyck-valley-heights.md)
 
 ## Sources
 

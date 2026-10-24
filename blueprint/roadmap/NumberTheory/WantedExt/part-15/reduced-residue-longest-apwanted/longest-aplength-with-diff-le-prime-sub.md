@@ -11,7 +11,7 @@ Lemma 1(i): if a prime `p` divides `n` but not `d > 0`, then `f_m(d, n) ≤ p - 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest APLength With Diff](longest-aplength-with-diff.md)
 
 ## Sources
 

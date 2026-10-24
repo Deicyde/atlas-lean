@@ -12,7 +12,7 @@ What `Accepts` means on a `haltList`: the output's head is `acc`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accepting configuration](../part-07/accepts.md)
 
 ## Sources
 

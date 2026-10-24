@@ -11,7 +11,11 @@ The termination potential: queue length plus `∑ x, |dom x| · indeg x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+
+## Proof depends on
+
+- [Indeg](indeg.md)
 
 ## Sources
 

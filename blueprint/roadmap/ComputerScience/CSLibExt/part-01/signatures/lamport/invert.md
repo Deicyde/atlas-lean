@@ -13,7 +13,12 @@ message has `m' i = b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forger](forger.md)
+
+## Proof depends on
+
+- [Plant](plant.md)
+- [Sign](sign.md)
 
 ## Sources
 

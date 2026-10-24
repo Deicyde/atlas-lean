@@ -12,7 +12,12 @@ The diagonal alignment is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Alignment](../sequence-alignment/is-alignment.md)
+- [Diag Align](diag-align.md)
+
+## Proof depends on
+
+- [Alignment](../sequence-alignment/alignment.md)
 
 ## Sources
 

@@ -12,7 +12,20 @@ lean: Cslib.Turing.Universal.Clocked.tmo_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Enc Out](enc-out.md)
+- [Prog](prog.md)
+- [Stk](stk.md)
+- [Γ](untitled.md)
+- [Code](../code/code.md)
+- [Cfg](../code/cfg.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+
+## Proof depends on
+
+- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Incr](../../../../../MathlibExt/turing-machine/program/incr.md)
 
 ## Sources
 

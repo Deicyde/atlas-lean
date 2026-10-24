@@ -15,7 +15,7 @@ numbers satisfy `R_{n-1} R_{n+1} ≤ R_n²` for every `n ≥ 2`. The paper state
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](../../../../../../NumberTheory/WantedExt/part-08/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

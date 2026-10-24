@@ -15,6 +15,10 @@ are deliberately omitted so the definition does not depend on proving that ident
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [H Star Coeff](h-star-coeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

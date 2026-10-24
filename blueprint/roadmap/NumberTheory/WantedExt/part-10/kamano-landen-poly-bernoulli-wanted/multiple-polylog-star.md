@@ -15,6 +15,10 @@ The non-strict multiple polylogarithm
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Multiple Polylog Star Coeff Rev](multiple-polylog-star-coeff-rev.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.KamanoLandenPolyBernoulliWanted](../../../../../sources/v2/WantedExt.md)

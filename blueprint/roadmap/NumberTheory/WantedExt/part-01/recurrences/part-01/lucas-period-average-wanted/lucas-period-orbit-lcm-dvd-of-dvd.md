@@ -17,7 +17,10 @@ paper's statements about `L(g)` and `L(r s)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Period Orbit Closes](lucas-period-orbit-closes.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas Period Orbit Lcm](lucas-period-orbit-lcm.md)
+- [Lucas UPeriod](lucas-uperiod.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MetaMathlibExt.arcsinAntiderivC_one_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arcsin Antideriv C](arcsin-antideriv-c.md)
+
+## Proof depends on
+
+- [Arcsin Antideriv QCoeff](arcsin-antideriv-qcoeff.md)
 
 ## Sources
 

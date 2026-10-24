@@ -12,7 +12,14 @@ Small-step termination is deterministic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+- [Terminates](../small-step/terminates.md)
+
+## Proof depends on
+
+- [Deterministic](../big-step/deterministic.md)
+- [Of terminates](of-terminates.md)
 
 ## Sources
 

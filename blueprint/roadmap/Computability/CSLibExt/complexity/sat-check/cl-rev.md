@@ -11,7 +11,12 @@ A clause's tokens as they lie on the token stack: `cl`, then its literals last-f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Lit Rev](lit-rev.md)
 
 ## Sources
 

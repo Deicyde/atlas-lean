@@ -12,7 +12,13 @@ After `a` steps landing at `u`, the rank drops by `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Terminates](terminates.md)
+- [Jump](jump.md)
+- [Rank](rank.md)
+
+## Proof depends on
+
+- [The characteristic property of the rank](jump-eq-none-iff.md)
 
 ## Sources
 

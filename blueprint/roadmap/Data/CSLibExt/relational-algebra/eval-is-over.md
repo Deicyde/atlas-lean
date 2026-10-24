@@ -13,7 +13,26 @@ relation over its inferred schema.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expr](expr.md)
+- [Conforms](conforms.md)
+- [Eval](eval-2.md)
+- [Schema](schema.md)
+- [Is Over](is-over-2.md)
+- [Tuple](tuple.md)
+
+## Proof depends on
+
+- [Cond](cond.md)
+- [Attrs](attrs.md)
+- [Eval](eval.md)
+- [Compatible](compatible.md)
+- [Is Over](is-over.md)
+- [Merge](merge.md)
+- [Restrict](restrict.md)
+- [Join](join.md)
+- [Project](project.md)
+- [Rename](rename.md)
+- [Select](select.md)
 
 ## Sources
 

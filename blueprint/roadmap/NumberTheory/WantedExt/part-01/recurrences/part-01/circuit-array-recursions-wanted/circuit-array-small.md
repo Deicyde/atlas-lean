@@ -12,7 +12,19 @@ Table 1, first entries: `C₀,₁ = 2/3`, `C₀,₂ = 26/27`, `C₁,₂ = 13/12`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Array](circuit-array.md)
+
+## Proof depends on
+
+- [Circuit Edge](circuit-edge.md)
+- [Circuit Grid](circuit-grid.md)
+- [Circuit Left Arm](circuit-left-arm.md)
+- [Circuit Left Edge](circuit-left-edge.md)
+- [Circuit Perimeter](circuit-perimeter.md)
+- [Circuit Reduce](circuit-reduce.md)
+- [Circuit Right Arm](circuit-right-arm.md)
+- [Circuit Right Edge](circuit-right-edge.md)
+- [Circuit Top Arm](circuit-top-arm.md)
 
 ## Sources
 

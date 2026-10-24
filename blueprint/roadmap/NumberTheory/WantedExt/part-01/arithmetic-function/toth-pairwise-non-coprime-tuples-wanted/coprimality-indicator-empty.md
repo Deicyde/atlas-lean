@@ -12,7 +12,7 @@ With no edges, `δ_G = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Indicator](coprimality-indicator.md)
 
 ## Sources
 

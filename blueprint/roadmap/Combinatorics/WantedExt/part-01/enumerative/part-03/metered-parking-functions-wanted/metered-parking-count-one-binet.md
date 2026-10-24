@@ -13,7 +13,7 @@ For `m ≤ n + 1` and `n > 2`, the Binet form
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Parking Count](metered-parking-count.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ Lemma 3: a lex-minimal extension satisfies the Average Condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomid Average Condition](binomid-average-condition.md)
+- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
 
 ## Sources
 

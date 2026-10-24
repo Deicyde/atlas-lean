@@ -13,7 +13,17 @@ halting symbol it erases the letter on the left or the letter on the right.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Step](../../part-02/string-rewriting/step.md)
+- [Is Ctl](is-ctl.md)
+- [TMSym](tmsym.md)
+- [Next State](next-state.md)
+- [Rules](rules.md)
+
+## Proof depends on
+
+- [Rule](../../part-02/string-rewriting/rule.md)
+- [Cases of mem rules](cases-of-mem-rules.md)
+- [Split site](split-site.md)
 
 ## Sources
 

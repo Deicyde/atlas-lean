@@ -13,7 +13,9 @@ squares and that have exactly `k` soulmate pairs is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+- [Latin Square Count](latin-square-count.md)
+- [Soulmate Pair Count](soulmate-pair-count.md)
 
 ## Sources
 

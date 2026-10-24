@@ -13,7 +13,7 @@ For a prime `p` and positive integers `m`, `e` with `e ≥ 2m - 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Biunitary](../../../../MathlibExt/part-01/arithmetic-function/part-01/biunitary-divisor/sigma-biunitary.md)
 
 ## Sources
 

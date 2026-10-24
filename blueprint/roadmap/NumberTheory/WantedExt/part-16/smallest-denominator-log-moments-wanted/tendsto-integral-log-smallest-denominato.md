@@ -17,7 +17,8 @@ expression, through the density `η` of the cited paper, is not included.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Smallest Denominator Density](log-smallest-denominator-density.md)
+- [Smallest Denominator](smallest-denominator.md)
 
 ## Sources
 

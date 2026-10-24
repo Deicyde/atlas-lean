@@ -12,7 +12,7 @@ After a set digit the chain emits `0`: `y_j = 1 → y_{j+1} = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Markov Path](zeck-markov-path.md)
 
 ## Sources
 

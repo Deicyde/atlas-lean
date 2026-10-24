@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Efficient Domination Instance](efficient-domination-instance.md)
 
 ## Sources
 

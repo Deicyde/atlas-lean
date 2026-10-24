@@ -12,7 +12,14 @@ The result is a tour: it visits every vertex of `Fin n` exactly once.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tour](../metric-tsp/is-tour.md)
+- [Prim TSPTour](prim-tsptour.md)
+
+## Proof depends on
+
+- [Approx TSPTour is Tour](../metric-tsp/approx-tsptour-is-tour.md)
+- [Is Spanning prim Forest](is-spanning-prim-forest.md)
+- [Prim Forest](prim-forest.md)
 
 ## Sources
 

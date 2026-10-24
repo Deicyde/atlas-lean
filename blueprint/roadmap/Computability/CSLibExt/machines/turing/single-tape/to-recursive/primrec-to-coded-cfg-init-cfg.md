@@ -12,7 +12,8 @@ The code of the initial configuration is primitive recursive in the input word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To Coded Cfg](to-coded-cfg.md)
+- [Coded Cfg](coded-cfg.md)
 
 ## Sources
 

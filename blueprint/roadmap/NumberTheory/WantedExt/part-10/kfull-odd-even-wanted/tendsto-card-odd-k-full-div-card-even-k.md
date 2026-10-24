@@ -17,7 +17,7 @@ The paper's identification of these counts with its `O_{k,⌊x⌋}(x)` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](../../../MathlibExt/part-07/kfull/is-kfull.md)
 
 ## Sources
 

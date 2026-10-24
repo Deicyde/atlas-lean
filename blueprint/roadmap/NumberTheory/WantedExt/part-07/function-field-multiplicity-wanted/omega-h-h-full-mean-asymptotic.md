@@ -13,7 +13,10 @@ mean of `ω_h` over `N_h ∩ M_n` is `log(n/h) + C_1(N_h, h) + O_ε(n^{ε-1})` w
 
 ## Depends on
 
-This node has no prerequisites.
+- [Function Field Mertens Constant](function-field-mertens-constant.md)
+- [H Full KSum](h-full-ksum.md)
+- [H Full Moment](h-full-moment.md)
+- [H Full Weighted Mean](h-full-weighted-mean.md)
 
 ## Sources
 

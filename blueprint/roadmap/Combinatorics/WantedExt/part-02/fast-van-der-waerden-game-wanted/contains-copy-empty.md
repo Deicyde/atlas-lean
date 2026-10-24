@@ -12,7 +12,7 @@ The empty set is contained in every claimed set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contains Copy](contains-copy.md)
 
 ## Sources
 

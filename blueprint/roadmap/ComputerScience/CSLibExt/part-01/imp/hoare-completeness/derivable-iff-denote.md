@@ -13,7 +13,18 @@ the relational denotational semantics.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [Denote](../denotational/denote.md)
+- [Derivable](derivable.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [Big Step](../big-step/big-step.md)
+- [Iff big Step](../denotational/iff-big-step.md)
+- [Valid](../hoare/valid.md)
+- [Derivable iff valid](derivable-iff-valid.md)
 
 ## Sources
 

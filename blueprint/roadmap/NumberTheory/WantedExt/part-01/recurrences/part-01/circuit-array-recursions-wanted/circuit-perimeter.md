@@ -12,7 +12,12 @@ The left-perimeter function `𝒫(T_{r,1}, T_{r+1,1})`: series of the bottom-lef
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Edge](circuit-edge.md)
+
+## Proof depends on
+
+- [Circuit Left Arm](circuit-left-arm.md)
+- [Circuit Top Arm](circuit-top-arm.md)
 
 ## Sources
 

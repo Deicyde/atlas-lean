@@ -12,7 +12,7 @@ for `k ∈ ℕ` (the record allows `k ∈ ℤ`; negative `k` is omitted).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

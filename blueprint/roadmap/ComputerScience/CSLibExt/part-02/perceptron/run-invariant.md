@@ -12,7 +12,12 @@ After `k` mistakes, `u ⬝ᵥ w ≥ k γ` and `w ⬝ᵥ w ≤ k R ^ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run](run.md)
+- [Sign](sign.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

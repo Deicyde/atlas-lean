@@ -14,6 +14,10 @@ most `|σ × σ|` rounds.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Moore Iter](moore-iter.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.Moore](../../../../../../sources/v2/CSLibExt.md)

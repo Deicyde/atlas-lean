@@ -11,7 +11,12 @@ lean: Cslib.Automata.EncodedNFA.acceptsB
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+
+## Proof depends on
+
+- [Run](run.md)
+- [Mem B](../../../decidability/part-01/primrec-list/mem-b.md)
 
 ## Sources
 

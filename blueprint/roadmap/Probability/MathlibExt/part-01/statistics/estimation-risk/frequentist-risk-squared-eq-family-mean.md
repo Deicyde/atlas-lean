@@ -15,7 +15,8 @@ it does not duplicate or change that MSE definition. Blueprint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Family Mean Squared Error](family-mean-squared-error.md)
+- [Frequentist Risk](frequentist-risk.md)
 
 ## Sources
 

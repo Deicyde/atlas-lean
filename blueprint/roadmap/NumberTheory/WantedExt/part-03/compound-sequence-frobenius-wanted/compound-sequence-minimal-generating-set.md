@@ -14,7 +14,7 @@ elements, with equality only for `C' = M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compound Sequence](compound-sequence.md)
 
 ## Sources
 

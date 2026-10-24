@@ -11,7 +11,13 @@ Pairwise at-most-one clauses of rows `y' < y` (row `y'` = the pairs `x < y'`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../dense-sat/cnf.md)
+
+## Proof depends on
+
+- [Dense Clause](../family/dense-clause.md)
+- [Amo Lits](amo-lits.md)
+- [Clause](../../dense-sat/clause.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Small values from the paper: `L_{2,n} = 1, 2, 3, 5` for `n = 1, …, 4` and `L_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Right Trunc Squarefree Count](right-trunc-squarefree-count.md)
 
 ## Sources
 

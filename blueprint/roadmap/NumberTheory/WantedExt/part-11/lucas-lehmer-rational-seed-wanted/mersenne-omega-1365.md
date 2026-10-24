@@ -12,7 +12,7 @@ lean: MetaMathlibExt.mersenneOmega_1365
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mersenne Omega](mersenne-omega.md)
 
 ## Sources
 

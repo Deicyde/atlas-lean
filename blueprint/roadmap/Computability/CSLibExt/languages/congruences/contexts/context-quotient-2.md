@@ -13,7 +13,9 @@ its carrier or morphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](../recognition/recognizes.md)
+- [Context Accept](context-accept.md)
+- [Context Quotient](context-quotient.md)
 
 ## Sources
 

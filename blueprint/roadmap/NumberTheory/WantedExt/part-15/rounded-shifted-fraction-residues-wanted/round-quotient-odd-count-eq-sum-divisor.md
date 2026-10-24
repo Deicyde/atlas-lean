@@ -12,7 +12,7 @@ Lemma 15: `𝓡_n = -n + ∑_{k=1}^{2n} (d_{1,4}(k) - d_{3,4}(k))`, where
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round Quotient Odd Count](round-quotient-odd-count.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ cardinal  } is stationary in κ.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [A cardinal κ is *weakly inaccessible* if it is an...](../inaccessible/a-cardinal-is-weakly-inaccessible-if-it.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Cardinal.LargeCardinal.Mahlo](../../../../../../sources/v2/MathlibExt.md)

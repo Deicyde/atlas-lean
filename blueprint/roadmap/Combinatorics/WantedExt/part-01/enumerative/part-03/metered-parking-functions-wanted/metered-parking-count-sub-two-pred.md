@@ -14,7 +14,9 @@ only negative exponents are `1^{-1}` at `s = 0` and `s = m - 2`, equal to the tr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+- [Is Partial Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
+- [Metered Parking Count](metered-parking-count.md)
 
 ## Sources
 

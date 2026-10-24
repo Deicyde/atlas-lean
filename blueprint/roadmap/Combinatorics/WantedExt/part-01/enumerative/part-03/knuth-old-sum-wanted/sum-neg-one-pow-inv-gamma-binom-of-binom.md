@@ -18,7 +18,7 @@ reading stated here, which agrees with the printed one at `v = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

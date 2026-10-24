@@ -13,7 +13,7 @@ moves.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Accel Zeck Game](is-accel-zeck-game.md)
 
 ## Sources
 

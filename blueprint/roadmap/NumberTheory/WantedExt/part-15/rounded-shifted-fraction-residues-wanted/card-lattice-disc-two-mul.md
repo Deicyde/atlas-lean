@@ -13,7 +13,7 @@ Stated for every `n : ℕ` (both sides are `1` at `n = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round Quotient Odd Count](round-quotient-odd-count.md)
 
 ## Sources
 

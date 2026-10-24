@@ -15,6 +15,10 @@ far (`B_1, …, B_{nk}` and `A_1, …, A_n`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anti Recurrence Block](anti-recurrence-block.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.AntiRecurrenceWanted](../../../../../../../sources/v2/WantedExt.md)

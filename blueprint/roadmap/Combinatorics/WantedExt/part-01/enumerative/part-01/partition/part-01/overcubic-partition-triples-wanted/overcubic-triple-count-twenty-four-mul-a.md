@@ -12,7 +12,8 @@ For all `n ≥ 0`, `bt(24n+1) ≡ 2 [q^n] f_1 (mod 4)`, i.e.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overcubic Triple Count](overcubic-triple-count.md)
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

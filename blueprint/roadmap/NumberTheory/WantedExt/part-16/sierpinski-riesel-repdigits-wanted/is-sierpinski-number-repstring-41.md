@@ -12,7 +12,8 @@ Sierpiński number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sierpinski Number](is-sierpinski-number.md)
+- [Repstring](repstring.md)
 
 ## Sources
 

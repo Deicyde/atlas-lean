@@ -15,7 +15,7 @@ and all even `n ≥ n₀`, if `G = ℤ_{2^{α₁}} ⊕ … ⊕ ℤ_{2^{α_{r₁}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Distinct Sum Free Count](max-distinct-sum-free-count.md)
 
 ## Sources
 

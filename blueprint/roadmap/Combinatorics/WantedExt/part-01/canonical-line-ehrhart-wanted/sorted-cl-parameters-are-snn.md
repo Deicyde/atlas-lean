@@ -15,7 +15,8 @@ indexing matches `c₀,c₁,…`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CLWith Parameters](is-clwith-parameters.md)
+- [Is SNN](is-snn.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ the stated rule-function hypotheses, so there is no deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim Grundy](maximum-nim-grundy.md)
 
 ## Sources
 

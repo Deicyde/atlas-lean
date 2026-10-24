@@ -19,7 +19,7 @@ question follows from this by contradiction: along the sequence `x_n` both
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Polynomial On](is-polynomial-on.md)
 
 ## Sources
 

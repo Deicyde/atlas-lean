@@ -14,7 +14,7 @@ Grundy equality. We use the intended parenthesized right side
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim Grundy](maximum-nim-grundy.md)
 
 ## Sources
 

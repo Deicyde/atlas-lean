@@ -14,6 +14,10 @@ the items `R` found so far.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mem B](../primrec-list/mem-b.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.ContextFree](../../../../../../sources/v2/CSLibExt.md)

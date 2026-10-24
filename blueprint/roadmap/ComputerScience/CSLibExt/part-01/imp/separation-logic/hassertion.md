@@ -14,6 +14,11 @@ postconditions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Heap](../heap/heap.md)
+- [State](../syntax/state.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Languages.IMP.SeparationLogic](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,10 @@ Unfolding `Π_j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Full Euler Product](h-full-euler-product.md)
+- [H Full Root](h-full-root.md)
+- [Monic Irreducible](monic-irreducible.md)
+- [Poly Norm](poly-norm.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ Stopping condition for a block of size one: if `x_ℓ = ⋯ = x_{ℓ+5} = 0` (`�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ left side `∑_n (∑_{π ∈ P_{n,k}} nsp(π)) x^n`; integer power series, `1/(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Surjective Restricted Growth String](../../../../../MathlibExt/part-01/enumerative/part-01/partition/peak-generating-function/is-surjective-restricted-growth-string.md)
+- [Non Symmetric Peak Count](non-symmetric-peak-count.md)
 
 ## Sources
 

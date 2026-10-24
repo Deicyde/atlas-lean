@@ -12,7 +12,7 @@ lean: MetaMathlibExt.PerfectSubsetSumCover.zero_mem_oddCombinations
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Combinations](odd-combinations.md)
 
 ## Sources
 

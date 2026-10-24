@@ -12,7 +12,7 @@ lean: MetaMathlibExt.valuationSquareCount_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valuation Square Count](valuation-square-count.md)
 
 ## Sources
 

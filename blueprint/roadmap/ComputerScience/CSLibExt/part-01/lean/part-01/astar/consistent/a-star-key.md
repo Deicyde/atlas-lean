@@ -13,7 +13,22 @@ reduced weights satisfies `g v + h v = g' v + h source`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [AStar Result](astar-result.md)
+- [Consistent](consistent.md)
+- [A Star](a-star.md)
+- [Reduced Weight](reduced-weight.md)
+- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
+- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
+
+## Proof depends on
+
+- [Path Weight reduced Weight](path-weight-reduced-weight.md)
+- [Edge](../../graph/directed-adjacency-2/edge.md)
+- [Has Path Weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
+- [Dijkstra distance realized](../../graph/shortest-path/dijkstra/dijkstra-distance-realized.md)
+- [Path Weight](../../graph/shortest-path/dijkstra/path-weight.md)
 
 ## Sources
 

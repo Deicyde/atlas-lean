@@ -11,7 +11,7 @@ For every `g ≥ 1`, `α_g(n) = (1 + o_g(1)) √(gn)` as `n → ∞`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bounded Diff Set Number](bounded-diff-set-number.md)
 
 ## Sources
 

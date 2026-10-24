@@ -12,7 +12,10 @@ Unfolding the weighted combination.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Degree Monic](fixed-degree-monic.md)
+- [H Full](h-full.md)
+- [H Full Euler Product](h-full-euler-product.md)
+- [H Full Weighted Mean](h-full-weighted-mean.md)
 
 ## Sources
 

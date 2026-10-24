@@ -12,7 +12,12 @@ lean: MetaMathlibExt.mem_c4SqExceptionalSet_1625
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Sq Exceptional Set](c4-sq-exceptional-set.md)
+
+## Proof depends on
+
+- [Five thirteen mem primes Five Mod Eight](five-thirteen-mem-primes-five-mod-eight.md)
+- [Primes Five Mod Eight](primes-five-mod-eight.md)
 
 ## Sources
 

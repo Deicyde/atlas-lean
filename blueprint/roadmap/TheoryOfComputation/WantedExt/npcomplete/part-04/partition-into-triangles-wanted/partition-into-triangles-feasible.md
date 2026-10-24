@@ -11,7 +11,11 @@ A partition into triangles.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Into Triangles Instance](partition-into-triangles-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ A separation of all terminals with at most `K` cut edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiway Cut Instance](multiway-cut-instance.md)
 
 ## Sources
 

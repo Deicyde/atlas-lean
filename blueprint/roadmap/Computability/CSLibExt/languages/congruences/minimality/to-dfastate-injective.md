@@ -12,7 +12,16 @@ Every recognizing DFA has at least one distinct state for each Nerode class.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](../nerode/nerode-class.md)
+- [To DFAState](to-dfastate.md)
+
+## Proof depends on
+
+- [Representative](representative.md)
+- [Nerode Class](../nerode/nerode-class-2.md)
+- [Nerode Rel](../nerode/nerode-rel.md)
+- [Nerode Rel of eval eq](nerode-rel-of-eval-eq.md)
+- [Nerode Setoid](../nerode/nerode-setoid.md)
 
 ## Sources
 

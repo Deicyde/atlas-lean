@@ -13,7 +13,7 @@ Theorem 6 (3-silent BpCFs), with the paper's choice `x_{-1} = 0`: if `k_i ≐ c_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

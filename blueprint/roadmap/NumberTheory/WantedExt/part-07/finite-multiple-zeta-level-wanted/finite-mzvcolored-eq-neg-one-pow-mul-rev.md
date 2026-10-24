@@ -13,7 +13,7 @@ lean: MetaMathlibExt.finiteMZVColored_eq_neg_one_pow_mul_reverse
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite MZVColored](finite-mzvcolored.md)
 
 ## Sources
 

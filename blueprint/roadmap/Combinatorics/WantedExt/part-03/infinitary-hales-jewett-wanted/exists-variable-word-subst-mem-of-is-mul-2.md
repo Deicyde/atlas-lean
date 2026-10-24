@@ -15,7 +15,7 @@ is vacuously a `J`-set, and no word exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mul JSet](../../../MathlibExt/part-03/semigroup-largeness/is-mul-jset.md)
 
 ## Sources
 

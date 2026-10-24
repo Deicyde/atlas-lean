@@ -11,7 +11,7 @@ For `k ≥ 1` and `0 ≤ j ≤ k`, `F_k^j ≥ F_{k+1}^{j+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hofstadter F](hofstadter-f.md)
 
 ## Sources
 

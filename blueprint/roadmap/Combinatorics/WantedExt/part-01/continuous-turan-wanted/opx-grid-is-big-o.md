@@ -13,7 +13,7 @@ has `opx(n, P) = O(n^{2 - 1/t})`. Stated along natural `n`; for `t = 0` (`P = âˆ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

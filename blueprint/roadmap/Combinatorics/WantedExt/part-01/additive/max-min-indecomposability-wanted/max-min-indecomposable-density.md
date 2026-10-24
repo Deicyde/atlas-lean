@@ -12,7 +12,8 @@ Theorem 11: for every integer `b ≥ 2`, the proportion of degree-`n` polynomial
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Max Min Indecomposable](is-max-min-indecomposable.md)
+- [Digit Seq](digit-seq.md)
 
 ## Sources
 

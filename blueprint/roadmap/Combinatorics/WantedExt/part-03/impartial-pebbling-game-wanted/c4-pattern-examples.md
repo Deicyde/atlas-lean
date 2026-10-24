@@ -14,7 +14,11 @@ Small values of the mod-`3` patterns: `(0,0,0,0) ∈ \hat X_{aabb}`, `(1,0,0,0) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Pattern AAAB](c4-pattern-aaab.md)
+- [C4 Pattern AABBHat](c4-pattern-aabbhat.md)
+- [C4 Pattern AABC](c4-pattern-aabc.md)
+- [C4 Pattern ABAB](c4-pattern-abab.md)
+- [C4 Pattern ABAC](c4-pattern-abac.md)
 
 ## Sources
 

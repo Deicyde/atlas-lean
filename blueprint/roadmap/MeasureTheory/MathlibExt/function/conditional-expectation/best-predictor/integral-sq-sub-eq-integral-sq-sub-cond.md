@@ -16,6 +16,10 @@ lean: MeasureTheory.integral_sq_sub_eq_integral_sq_sub_condExp_add
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integral sub cond Exp mul eq zero](integral-sub-cond-exp-mul-eq-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.MeasureTheory.Function.ConditionalExpectation.BestPredictor](../../../../../../sources/v2/MathlibExt.md)

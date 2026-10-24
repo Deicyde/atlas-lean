@@ -12,7 +12,13 @@ The joint is a probability distribution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
+- [Joint](joint.md)
+
+## Proof depends on
+
+- [Sum joint snoc](sum-joint-snoc.md)
+- [Sum snoc](sum-snoc.md)
 
 ## Sources
 

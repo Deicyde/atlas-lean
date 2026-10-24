@@ -14,7 +14,7 @@ Proposition 1: for positive `s, p, n`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schreier Parent B](schreier-parent-b.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: Cslib.Decidability.ComputablePred.of_turingReducible
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Fun](char-fun.md)
+
+## Proof depends on
+
+- [A set is decidable iff its characteristic function is partial recursive](computable-pred-iff-partrec-char-fun.md)
 
 ## Sources
 

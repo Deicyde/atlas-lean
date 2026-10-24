@@ -12,7 +12,8 @@ most `4k - ℓ + 1` and smallest pile at most `2k - ℓ` is an N-game (`k` posit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
 
 ## Sources
 

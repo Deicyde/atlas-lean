@@ -12,7 +12,7 @@ Proposition 7: for `n ≥ 2`, `D_n = A_n - A_{n-1}` satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Staircase](farey-staircase.md)
 
 ## Sources
 

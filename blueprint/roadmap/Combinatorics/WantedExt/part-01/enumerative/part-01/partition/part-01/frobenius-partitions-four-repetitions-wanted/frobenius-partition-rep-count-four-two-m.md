@@ -11,7 +11,7 @@ If `N` is a positive integer not divisible by `5`, then `φ₄(2N + 1) ≡ 0 (mo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
 
 ## Sources
 

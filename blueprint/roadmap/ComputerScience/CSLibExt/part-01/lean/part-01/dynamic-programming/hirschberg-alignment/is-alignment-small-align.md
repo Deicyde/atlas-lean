@@ -12,7 +12,12 @@ The base case is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Alignment](../sequence-alignment/is-alignment.md)
+- [Small Align](small-align.md)
+
+## Proof depends on
+
+- [Alignment](../sequence-alignment/alignment.md)
 
 ## Sources
 

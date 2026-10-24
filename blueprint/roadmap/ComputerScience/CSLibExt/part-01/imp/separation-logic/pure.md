@@ -11,7 +11,12 @@ A pure fact holding on the empty heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HAssertion](hassertion.md)
+
+## Proof depends on
+
+- [Heap](../heap/heap.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

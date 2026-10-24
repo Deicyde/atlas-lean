@@ -12,7 +12,9 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.work_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+- [Schedule](schedule.md)
+- [Length](length.md)
 
 ## Sources
 

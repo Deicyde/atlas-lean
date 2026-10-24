@@ -13,7 +13,7 @@ half-tape do not come from cells.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To List Blank](to-list-blank.md)
 
 ## Sources
 

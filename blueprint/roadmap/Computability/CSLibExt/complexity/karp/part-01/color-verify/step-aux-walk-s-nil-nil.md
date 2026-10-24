@@ -12,7 +12,11 @@ A joint-walk step with both counters exhausted: a loop.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mv P](mv-p.md)
+- [Walk S](walk-s.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

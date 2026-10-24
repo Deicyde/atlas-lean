@@ -15,7 +15,8 @@ range `⌊(n-2)/2⌋` is read with `n = N`. The special cases (19), (20) for `r 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
+- [Ordered Factorization Count](ordered-factorization-count.md)
 
 ## Sources
 

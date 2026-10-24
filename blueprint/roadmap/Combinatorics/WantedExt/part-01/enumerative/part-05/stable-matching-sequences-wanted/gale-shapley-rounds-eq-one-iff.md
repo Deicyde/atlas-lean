@@ -12,7 +12,8 @@ and only if every woman is the first choice of exactly one man.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+- [Gale Shapley Rounds](gale-shapley-rounds.md)
 
 ## Sources
 

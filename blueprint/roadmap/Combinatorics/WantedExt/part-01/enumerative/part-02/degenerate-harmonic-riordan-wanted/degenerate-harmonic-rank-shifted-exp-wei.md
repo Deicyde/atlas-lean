@@ -12,7 +12,8 @@ Theorem 5: for `n ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
+- [Generalized Falling Factorial](../../../../../MathlibExt/part-01/enumerative/part-04/hsu-shiue-generalized-stirling-number/generalized-falling-factorial.md)
 
 ## Sources
 

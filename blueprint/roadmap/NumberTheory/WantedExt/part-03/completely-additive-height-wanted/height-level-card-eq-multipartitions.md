@@ -14,7 +14,7 @@ Stated level by level: the number of `m ≥ 1` with `H(m) = n` equals the number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Height Function](is-height-function.md)
 
 ## Sources
 

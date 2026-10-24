@@ -14,6 +14,11 @@ with `d_1, …, d_{p-1}, d_{ℓ_1}, …, d_{ℓ_s} ≥ 2` (no condition on `d_p`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Coconut Tree](coconut-tree.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ArithmeticalStructureCoconutTreeWanted](../../../../../sources/v2/WantedExt.md)

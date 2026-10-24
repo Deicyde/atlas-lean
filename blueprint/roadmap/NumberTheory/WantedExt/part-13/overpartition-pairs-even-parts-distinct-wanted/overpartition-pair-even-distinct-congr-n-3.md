@@ -19,7 +19,7 @@ fails: `p = 7, k = 1, α = γ = 0, m = 1` gives `bped_{3,3}(12715) ≡ 4 (mod 8)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Pair Even Distinct](overpartition-pair-even-distinct.md)
 
 ## Sources
 

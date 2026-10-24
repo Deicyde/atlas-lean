@@ -11,7 +11,7 @@ Nonnegative weights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
 
 ## Sources
 

@@ -14,7 +14,9 @@ of `A`; `{1,3,5,7,9}` is represented by `oddProgression 5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Progression](odd-progression.md)
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
+- [Scale Finset](scale-finset.md)
 
 ## Sources
 

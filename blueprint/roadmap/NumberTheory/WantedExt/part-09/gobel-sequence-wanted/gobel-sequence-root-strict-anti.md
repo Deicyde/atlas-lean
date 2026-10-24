@@ -12,7 +12,7 @@ Lemma 7: for `k, l ≥ 2` and `n ≥ 1`, the real numbers
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

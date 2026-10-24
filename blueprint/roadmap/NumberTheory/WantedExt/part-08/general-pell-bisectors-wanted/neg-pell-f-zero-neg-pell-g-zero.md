@@ -12,7 +12,13 @@ lean: MetaMathlibExt.negPellF_zero_negPellG_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell F](neg-pell-f.md)
+- [Neg Pell G](neg-pell-g.md)
+
+## Proof depends on
+
+- [Neg Pell Fund X](neg-pell-fund-x.md)
+- [Neg Pell Fund Y](neg-pell-fund-y.md)
 
 ## Sources
 

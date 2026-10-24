@@ -13,7 +13,7 @@ starting from `0` of the `4`-uniform morphism `0 ↦ 0132`, `1 ↦ 2310`, `2 ↦
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meta Automatic Two](meta-automatic-two.md)
 
 ## Sources
 

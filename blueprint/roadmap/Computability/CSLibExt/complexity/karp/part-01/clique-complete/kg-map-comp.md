@@ -11,7 +11,16 @@ lean: Cslib.Complexity.Karp.kgMapComp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](../../../host/comp.md)
+- [Mode](../../part-02/kgmap/mode.md)
+
+## Proof depends on
+
+- [K](../../part-02/kgmap/k.md)
+- [Lab](../../part-02/kgmap/lab.md)
+- [Prog](../../part-02/kgmap/prog.md)
+- [Γ](../../part-02/kgmap/untitled.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

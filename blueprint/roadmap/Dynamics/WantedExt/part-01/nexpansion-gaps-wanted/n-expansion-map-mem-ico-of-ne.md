@@ -12,7 +12,12 @@ For `x ≠ α` the `N`-expansion map lands in `[α, α + 1)`: `T_α(x) = α + fr
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Expansion Map](n-expansion-map.md)
+
+## Proof depends on
+
+- [N Expansion Digit](n-expansion-digit.md)
+- [N Expansion Digit of ne](n-expansion-digit-of-ne.md)
 
 ## Sources
 

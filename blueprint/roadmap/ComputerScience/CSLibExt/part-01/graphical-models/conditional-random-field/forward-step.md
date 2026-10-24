@@ -11,7 +11,7 @@ One forward step on a table of the previous step's values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
 
 ## Sources
 

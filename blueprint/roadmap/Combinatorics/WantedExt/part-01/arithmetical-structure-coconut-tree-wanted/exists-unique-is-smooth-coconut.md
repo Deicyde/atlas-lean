@@ -14,7 +14,7 @@ admitting a smooth arithmetical structure on `CT(p, s)` with `r_{ℓ_i} = a_i` a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Smooth Coconut](is-smooth-coconut.md)
 
 ## Sources
 

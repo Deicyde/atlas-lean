@@ -13,7 +13,7 @@ With one color for every part, `c_{3,2} = 2` (the compositions `(1,2)` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Composition Count](colored-composition-count.md)
 
 ## Sources
 

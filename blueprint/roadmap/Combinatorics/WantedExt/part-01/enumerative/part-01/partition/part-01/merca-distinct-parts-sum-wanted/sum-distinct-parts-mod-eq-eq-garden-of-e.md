@@ -16,7 +16,8 @@ p(n - 3j(j+1)/2)` and part (ii) sums from `j = 1`, which is the reading stated h
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyson Rank](dyson-rank.md)
+- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
 
 ## Sources
 

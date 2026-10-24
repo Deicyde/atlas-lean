@@ -12,7 +12,11 @@ lean: MetaMathlibExt.bFreeIndicator_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Indicator](b-free-indicator.md)
+
+## Proof depends on
+
+- [B Free Indicator apply](b-free-indicator-apply.md)
 
 ## Sources
 

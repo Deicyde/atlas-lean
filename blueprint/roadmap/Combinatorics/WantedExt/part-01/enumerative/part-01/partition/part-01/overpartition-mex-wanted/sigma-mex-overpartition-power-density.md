@@ -14,7 +14,7 @@ and `Tendsto ... atTop (nhds 1)` encodes the density limit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
 
 ## Sources
 

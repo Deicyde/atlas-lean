@@ -15,7 +15,7 @@ function is stated after multiplying by `(1 - X)^{k+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondecreasing Rectangle Total](nondecreasing-rectangle-total.md)
 
 ## Sources
 

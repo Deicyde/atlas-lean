@@ -12,7 +12,15 @@ The forest below `v` weighs the sum of its parent-edge costs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preorder](../metric-tsp/preorder.md)
+- [Weight](../metric-tsp/weight.md)
+- [Build Forest](build-forest.md)
+- [Up](up.md)
+
+## Proof depends on
+
+- [Forest](../metric-tsp/forest.md)
+- [Children](children.md)
 
 ## Sources
 

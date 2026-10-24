@@ -15,6 +15,11 @@ The term `A(x, y)` of Theorem 1: `A(x, 0) = C_{x-1}`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Ballot Number](ballot-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ArithmeticalStructureCoconutTreeWanted](../../../../../sources/v2/WantedExt.md)

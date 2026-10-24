@@ -12,7 +12,7 @@ The initial values: `𝓛_{p,k,x}(n) = x_n` for `n ≤ p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Super Leonardo P](super-leonardo-p.md)
 
 ## Sources
 

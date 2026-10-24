@@ -18,7 +18,8 @@ dropped: for `r = 0` there is no coloring and the statement holds vacuously.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Gap Size](cube-gap-size.md)
+- [Lattice Cube](lattice-cube.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: Cslib.Turing.Universal.HaltsWithin.mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts Within](halts-within.md)
 
 ## Sources
 

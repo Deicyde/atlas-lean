@@ -13,7 +13,14 @@ string, produced by `87912 = 4 · 21978`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Permutiple String](is-permutiple-string.md)
+
+## Proof depends on
+
+- [Is Permutiple](../permutiple-wanted/is-permutiple.md)
+- [Hoey Sloane Language](hoey-sloane-language.md)
+- [Is Permutiple 87912](../permutiple-wanted/is-permutiple-87912.md)
+- [Mem hoey Sloane Language 87912](mem-hoey-sloane-language-87912.md)
 
 ## Sources
 

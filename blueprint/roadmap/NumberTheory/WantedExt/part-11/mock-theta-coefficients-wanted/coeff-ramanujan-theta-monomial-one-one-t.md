@@ -13,7 +13,7 @@ Characteristic values of `ψ(q) = f(q, q^3) = 1 + q + q^3 + ⋯`: the coefficien
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Theta Monomial](ramanujan-theta-monomial.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ once more.
 
 ## Depends on
 
-This node has no prerequisites.
+- [GSEngaged](gsengaged.md)
+- [Preference Profile](preference-profile.md)
+- [Gs Proposals](gs-proposals.md)
 
 ## Sources
 

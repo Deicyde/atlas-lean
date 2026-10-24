@@ -11,7 +11,12 @@ One filter step: predict, then update with the new observation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
+
+## Proof depends on
+
+- [Predict](predict.md)
+- [Update](update.md)
 
 ## Sources
 

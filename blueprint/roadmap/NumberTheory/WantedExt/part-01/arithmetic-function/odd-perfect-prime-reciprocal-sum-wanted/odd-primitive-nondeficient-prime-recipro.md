@@ -14,7 +14,8 @@ The hypothesis `Odd n` is added: the printed statement fails at `n = 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Nondeficient](../../../part-14/primitive-nondeficient-wanted/is-primitive-nondeficient.md)
+- [Abundancy Sup](../../../part-14/primitive-nondeficient-wanted/abundancy-sup.md)
 
 ## Sources
 

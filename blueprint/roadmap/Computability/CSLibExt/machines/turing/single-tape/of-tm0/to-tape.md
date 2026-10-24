@@ -12,7 +12,12 @@ Read a `BiTape` over the non-blank symbols as a `TM0` tape, cell by cell: the ce
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+
+## Proof depends on
+
+- [To Tape](../tape-view/to-tape.md)
+- [Cell Symbol](cell-symbol.md)
 
 ## Sources
 

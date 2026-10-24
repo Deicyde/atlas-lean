@@ -14,7 +14,7 @@ occupied vertex of `σ` lies below a covered or occupied vertex of `τ`, and a c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination State](domination-state.md)
 
 ## Sources
 

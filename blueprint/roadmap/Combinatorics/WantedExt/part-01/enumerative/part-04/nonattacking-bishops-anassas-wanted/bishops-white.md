@@ -14,6 +14,12 @@ bishops on the white squares of `S_m`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bishop Moves](bishop-moves.md)
+- [Nonattacking Placements](nonattacking-placements.md)
+- [White Squares](white-squares.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NonattackingBishopsAnassasWanted](../../../../../../../sources/v2/WantedExt.md)

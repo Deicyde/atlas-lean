@@ -12,7 +12,13 @@ last, then `A → wᵢ i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [Cont Rule](../cfgundecidable/cont-rule.md)
+- [Term Rule](../cfgundecidable/term-rule.md)
+- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
 
 ## Sources
 

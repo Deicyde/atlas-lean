@@ -15,7 +15,7 @@ then `d < 1.03 q^{2(β' - β)}` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SDiophantine Tuple](is-sdiophantine-tuple.md)
 
 ## Sources
 

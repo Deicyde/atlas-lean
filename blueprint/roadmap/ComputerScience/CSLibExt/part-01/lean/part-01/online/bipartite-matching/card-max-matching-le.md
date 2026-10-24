@@ -13,7 +13,14 @@ the greedy online matching.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Matching](../../graph/bipartite-matching/max-matching.md)
+- [Pairs](../../graph/bipartite-matching/pairs.md)
+- [Greedy All](greedy-all.md)
+
+## Proof depends on
+
+- [Is Matching max Matching](../../graph/bipartite-matching/is-matching-max-matching.md)
+- [Greedy online matching is `1/2`-competitive](card-le-two-mul-greedy-all.md)
 
 ## Sources
 

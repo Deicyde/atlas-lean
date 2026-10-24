@@ -12,7 +12,8 @@ The nonempty-words test is primitive recursive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](domino.md)
+- [Nonempty Words B](nonempty-words-b.md)
 
 ## Sources
 

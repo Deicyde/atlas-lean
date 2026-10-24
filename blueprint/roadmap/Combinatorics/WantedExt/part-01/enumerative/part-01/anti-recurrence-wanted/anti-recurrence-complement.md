@@ -15,6 +15,10 @@ for `k = 2` the subsequences `B¹_n = B_{2n-1}` and `B²_n = B_{2n}` are the pap
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anti Recurrence State](anti-recurrence-state.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.AntiRecurrenceWanted](../../../../../../../sources/v2/WantedExt.md)

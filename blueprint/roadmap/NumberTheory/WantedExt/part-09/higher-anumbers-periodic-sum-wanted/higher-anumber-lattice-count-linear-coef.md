@@ -13,7 +13,9 @@ minimal one included), with `a^r(X_n)` replaced by the Theorem 1 lattice express
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher ANumber Lattice Count](higher-anumber-lattice-count.md)
+- [Tower Gamma](tower-gamma.md)
+- [Tower Tau](tower-tau.md)
 
 ## Sources
 

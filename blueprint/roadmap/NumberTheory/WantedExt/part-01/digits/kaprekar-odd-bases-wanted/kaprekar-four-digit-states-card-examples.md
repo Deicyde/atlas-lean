@@ -12,7 +12,7 @@ Characteristic values: `|X_3| = 5` and `|X_7| = 27`, i.e. `(B - 1)(B + 2) / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kaprekar Four Digit States](kaprekar-four-digit-states.md)
 
 ## Sources
 

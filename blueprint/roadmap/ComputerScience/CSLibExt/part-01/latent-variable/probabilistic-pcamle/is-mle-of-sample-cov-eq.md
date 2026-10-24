@@ -13,7 +13,16 @@ with `σ₀² > 0`, then `(x̄, W₀, σ₀²)` is a maximum-likelihood estimate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MLE](is-mle.md)
+- [Ppca Cov](ppca-cov.md)
+- [Sample Cov](sample-cov.md)
+- [Sample Mean](sample-mean.md)
+
+## Proof depends on
+
+- [Log Lik](log-lik.md)
+- [The probabilistic PCA likelihood is at most the unconstrained Gaussian maximum](log-lik-le-gaussian-mle.md)
+- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ The two-sided sequence `(A^{(r,s)}_n)_{n ∈ ℤ}` with `A_0 = r`, `A_1 = s` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Second Order Bwd](second-order-bwd.md)
+- [Second Order Fwd](second-order-fwd.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SecondOrderGenFunIntegerValuesWanted](../../../../../sources/v2/WantedExt.md)

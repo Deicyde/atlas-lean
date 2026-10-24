@@ -16,7 +16,8 @@ Cross bound of Proposition 13 over the `(n - 4)²` windows, each cell carrying t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Penult](placement-penult.md)
+- [Tak Has Road](tak-has-road.md)
 
 ## Sources
 

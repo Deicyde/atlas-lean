@@ -11,7 +11,11 @@ The letters `w_{i₁} ⋯ w_{iₙ}` of an index sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [Domino](domino.md)
 
 ## Sources
 

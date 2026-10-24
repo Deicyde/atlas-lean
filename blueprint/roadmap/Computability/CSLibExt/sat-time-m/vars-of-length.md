@@ -12,7 +12,12 @@ The occurrence list has one entry per literal of the formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vars Of](vars-of.md)
+- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

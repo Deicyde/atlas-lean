@@ -11,7 +11,11 @@ All alignments of two sequences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](alignment.md)
+
+## Proof depends on
+
+- [Alignments Aux](alignments-aux.md)
 
 ## Sources
 

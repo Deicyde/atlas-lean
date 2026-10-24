@@ -13,7 +13,7 @@ For fixed positive integers `k_1, …, k_m` (here `k_1 = k` and `[k_2, …, k_m]
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

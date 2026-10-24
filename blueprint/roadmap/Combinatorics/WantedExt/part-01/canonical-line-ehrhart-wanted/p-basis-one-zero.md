@@ -12,7 +12,11 @@ The first symmetric basis polynomial is `p¹₀ = 2X + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [P Basis](p-basis.md)
+
+## Proof depends on
+
+- [B Basis](b-basis.md)
 
 ## Sources
 

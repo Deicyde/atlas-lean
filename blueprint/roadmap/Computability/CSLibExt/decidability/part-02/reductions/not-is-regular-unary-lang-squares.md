@@ -13,7 +13,7 @@ length at most `N` lands strictly between two consecutive squares.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unary Lang](unary-lang.md)
 
 ## Sources
 

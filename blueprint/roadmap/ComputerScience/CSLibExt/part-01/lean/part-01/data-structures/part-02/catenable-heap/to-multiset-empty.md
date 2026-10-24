@@ -12,7 +12,8 @@ The empty heap has the empty multiset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [To Multiset](to-multiset.md)
 
 ## Sources
 

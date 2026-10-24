@@ -13,7 +13,7 @@ for occurring variables and `false` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lookup Var](lookup-var.md)
 
 ## Sources
 

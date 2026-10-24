@@ -15,6 +15,10 @@ roots are simple, but simplicity is not reproved in this statement-only formaliz
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [L Generalized Fibonacci Characteristic](l-generalized-fibonacci-characteristic.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedFibonacciZetaWanted](../../../../../sources/v2/WantedExt.md)

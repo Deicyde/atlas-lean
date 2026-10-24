@@ -12,7 +12,12 @@ Emptiness reduces to equivalence: compare with a code defined nowhere.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty Code](empty-code.md)
+- [Eq Code](eq-code.md)
+
+## Proof depends on
+
+- [Exists code empty](exists-code-empty.md)
 
 ## Sources
 

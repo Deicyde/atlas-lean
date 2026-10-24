@@ -12,7 +12,9 @@ On region `U`, a P&R Helper position has Sprague–Grundy value `6` if and only 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [Princess Roses Helper](princess-roses-helper.md)
 
 ## Sources
 

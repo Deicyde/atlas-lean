@@ -12,7 +12,7 @@ lean: MetaMathlibExt.digitConvolutionCoeff_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Convolution Coeff](digit-convolution-coeff.md)
 
 ## Sources
 

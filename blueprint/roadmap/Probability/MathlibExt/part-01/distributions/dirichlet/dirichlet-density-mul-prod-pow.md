@@ -13,7 +13,8 @@ the parameters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet Density](dirichlet-density.md)
+- [Simplex Completion](simplex-completion.md)
 
 ## Sources
 

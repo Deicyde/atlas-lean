@@ -11,7 +11,8 @@ Proposition 9: an Impartial Tak penult on an `n × n` board has at least `n²/5 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Placement Penult](placement-penult.md)
+- [Tak Has Road](tak-has-road.md)
 
 ## Sources
 

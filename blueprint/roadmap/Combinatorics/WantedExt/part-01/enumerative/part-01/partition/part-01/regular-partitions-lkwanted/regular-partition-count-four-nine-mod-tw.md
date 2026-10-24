@@ -11,7 +11,7 @@ For all `n ≥ 0` and `α ≥ 3`, `b_{4,9}(2^α n + 6 · 2^{α-3} + 1) ≡ 0 (mo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Partition Count](regular-partition-count.md)
 
 ## Sources
 

@@ -17,6 +17,12 @@ Proposition 4.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Digit Count](digit-count.md)
+- [Integer Length](integer-length.md)
+- [Leading Digits](leading-digits.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.IrwinSeriesMeasuresWanted](../../../../../../sources/v2/WantedExt.md)

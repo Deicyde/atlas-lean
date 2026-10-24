@@ -12,7 +12,7 @@ The discriminant of `E_α` is `α⁸ + 5α⁶ - 432α⁴ - 4320α² - 10800`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fruit Weierstrass Curve](fruit-weierstrass-curve.md)
 
 ## Sources
 

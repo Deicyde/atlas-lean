@@ -14,7 +14,7 @@ column `(S(0), …, S(r))ᵀ` and zeros elsewhere, `γ(1)` is the companion matr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ lean: Cslib.Algorithms.Lean.ArcConsistency.ac3_subset
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+- [Ac3](ac3.md)
+
+## Proof depends on
+
+- [Indeg](indeg.md)
+- [Potential](potential.md)
+- [Potential lt](potential-lt.md)
+- [Requeue](requeue.md)
+- [Revise](revise.md)
 
 ## Sources
 

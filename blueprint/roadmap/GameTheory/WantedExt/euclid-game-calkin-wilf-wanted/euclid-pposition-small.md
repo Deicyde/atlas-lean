@@ -12,7 +12,7 @@ Small values: `1/1` and `3/2` are P-positions, `2/1` and `1/2` are not.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclid PPosition](euclid-pposition.md)
 
 ## Sources
 

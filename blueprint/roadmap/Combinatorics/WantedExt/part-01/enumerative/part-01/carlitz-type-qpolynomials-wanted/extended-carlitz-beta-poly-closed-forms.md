@@ -14,7 +14,8 @@ with associated sequence `(k + r)/[k + r]` (`1` when `k + r = 0`), it satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Carlitz Beta Poly](extended-carlitz-beta-poly.md)
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Removing a finite set from an `r`-large set preserves `r`-largeness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RLarge](is-rlarge.md)
 
 ## Sources
 

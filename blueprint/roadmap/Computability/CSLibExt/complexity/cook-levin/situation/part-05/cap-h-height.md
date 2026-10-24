@@ -13,7 +13,13 @@ lean: Cslib.Complexity.CookLevin.Situation.capH_height
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cap H](cap-h.md)
+- [Depth](../part-01/depth.md)
+- [Run I](../part-03/run-i.md)
+
+## Proof depends on
+
+- [Run I height](run-i-height.md)
 
 ## Sources
 

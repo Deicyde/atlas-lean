@@ -13,7 +13,7 @@ under the same renaming-invariance hypothesis as
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nondegenerate Bool Fun](is-nondegenerate-bool-fun.md)
 
 ## Sources
 

@@ -11,7 +11,13 @@ The occurrence table of a formula and a witness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ent](ent.md)
+- [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Ents Of](ents-of.md)
+- [Vars Of](../../sat-time-m/vars-of.md)
 
 ## Sources
 

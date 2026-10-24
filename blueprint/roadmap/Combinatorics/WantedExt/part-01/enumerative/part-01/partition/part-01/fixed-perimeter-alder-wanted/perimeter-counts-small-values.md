@@ -13,7 +13,12 @@ Small values at `d = a = 1`, perimeter `3`: `h = f = ℓ = 2`; `h_1^(1)(2, 2) = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perimeter Distinct Arm Leg Count](perimeter-distinct-arm-leg-count.md)
+- [Perimeter Distinct Count](perimeter-distinct-count.md)
+- [Perimeter PMResidue Arm Leg Count](perimeter-pmresidue-arm-leg-count.md)
+- [Perimeter PMResidue Count](perimeter-pmresidue-count.md)
+- [Perimeter Residue Arm Leg Count](perimeter-residue-arm-leg-count.md)
+- [Perimeter Residue Count](perimeter-residue-count.md)
 
 ## Sources
 

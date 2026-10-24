@@ -16,6 +16,10 @@ Row `0` (the indeterminate root `Ω`) is represented by the empty list.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ghpt Interior](ghpt-interior.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.HyperbolicPascalAlternatingSumsWanted](../../../../../../../sources/v2/WantedExt.md)

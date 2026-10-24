@@ -12,7 +12,8 @@ Comparators inside `[lo, hi)` leave the levels outside alone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Within](../bitonic/within.md)
+- [Levels](levels.md)
 
 ## Sources
 

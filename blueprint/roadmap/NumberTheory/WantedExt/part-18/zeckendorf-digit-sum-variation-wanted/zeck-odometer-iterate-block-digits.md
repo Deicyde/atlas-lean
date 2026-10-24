@@ -12,7 +12,8 @@ If `x_{ℓ+1} = ⋯ = x_{ℓ+4} = 0` (`ℓ ≥ 2`), `r_{ℓ+2} = 1` and `r < F_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ Edges of total weight at most `K` connecting all terminals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Steiner Tree Instance](steiner-tree-instance.md)
+
+## Proof depends on
+
+- [Graph](graph.md)
 
 ## Sources
 

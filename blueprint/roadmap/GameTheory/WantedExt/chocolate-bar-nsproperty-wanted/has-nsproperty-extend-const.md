@@ -12,7 +12,7 @@ function with the NS property by the constant value `h z` beyond `z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

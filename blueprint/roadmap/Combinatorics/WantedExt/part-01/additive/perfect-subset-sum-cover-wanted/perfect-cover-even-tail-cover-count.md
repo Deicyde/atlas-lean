@@ -13,7 +13,8 @@ one subfamily.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect MCover](is-perfect-mcover.md)
+- [Cover Count](cover-count.md)
 
 ## Sources
 

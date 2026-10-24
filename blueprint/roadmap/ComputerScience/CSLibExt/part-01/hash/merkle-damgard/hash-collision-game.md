@@ -14,6 +14,10 @@ distinct messages of fewer than `maxLen` blocks with the same hash.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hash](hash.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.Hash.MerkleDamgard](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,13 @@ Regular languages are closed under fixed two-sided contexts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Context Quotient](context-quotient.md)
+
+## Proof depends on
+
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Finite syntactic Monoid context Quotient](finite-syntactic-monoid-context-quotient.md)
+- [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources
 

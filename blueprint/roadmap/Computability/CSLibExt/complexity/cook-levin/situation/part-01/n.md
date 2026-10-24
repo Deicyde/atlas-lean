@@ -11,7 +11,11 @@ Number of situations: (label, state) codes × window combinations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](enc.md)
+
+## Proof depends on
+
+- [G](g-2.md)
 
 ## Sources
 

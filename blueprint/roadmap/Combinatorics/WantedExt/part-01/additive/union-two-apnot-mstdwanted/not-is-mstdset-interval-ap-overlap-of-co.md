@@ -13,7 +13,9 @@ with `gcd(q₁, q₂) = 1`, `q₁ ≥ 3`, and `d ∉ ℕ`), then `I_n ∪ J(x, m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](is-mstdset.md)
+- [Real APSet](real-apset.md)
+- [Real Interval Set](real-interval-set.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MetaMathlibExt.longestAPLength_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest APLength](longest-aplength.md)
+
+## Proof depends on
+
+- [Ap Length le](ap-length-le.md)
+- [Reduced Residue Window](reduced-residue-window.md)
 
 ## Sources
 

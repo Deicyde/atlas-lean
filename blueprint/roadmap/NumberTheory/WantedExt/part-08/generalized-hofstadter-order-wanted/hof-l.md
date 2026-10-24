@@ -13,6 +13,11 @@ lean: MetaMathlibExt.hofL
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hof Prefix](hof-prefix.md)
+- [Hof Tau List](hof-tau-list.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedHofstadterOrderWanted](../../../../../sources/v2/WantedExt.md)

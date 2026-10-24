@@ -16,6 +16,20 @@ the variables `X 0, …, X 9` in that order (the empty permutation contributes `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Pattern](../../part-04/odd-fibonacci-wanted/has-pattern.md)
+- [Perm Ascents](perm-ascents.md)
+- [Perm Descents](perm-descents.md)
+- [Perm Double Ascents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-ascents.md)
+- [Perm Double Descents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-descents.md)
+- [Perm Left To Right Max Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-max-count.md)
+- [Perm Left To Right Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-min-count.md)
+- [Perm Peaks](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-peaks.md)
+- [Perm Right To Left Max Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-max-count.md)
+- [Perm Right To Left Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-min-count.md)
+- [Perm Valleys](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-valleys.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.TwoPatternAvoidanceCountsWanted](../../../../../../../sources/v2/WantedExt.md)

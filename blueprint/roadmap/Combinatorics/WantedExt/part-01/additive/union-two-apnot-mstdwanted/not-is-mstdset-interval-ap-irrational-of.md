@@ -12,7 +12,9 @@ lean: MetaMathlibExt.not_isMSTDSet_intervalAP_irrational_of_forall_not_nat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](is-mstdset.md)
+- [Real APSet](real-apset.md)
+- [Real Interval Set](real-interval-set.md)
 
 ## Sources
 

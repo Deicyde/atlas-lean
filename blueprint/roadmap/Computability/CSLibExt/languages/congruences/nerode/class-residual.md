@@ -11,7 +11,11 @@ Send a Nerode class to its well-defined residual language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](nerode-class.md)
+
+## Proof depends on
+
+- [Nerode Setoid](nerode-setoid.md)
 
 ## Sources
 

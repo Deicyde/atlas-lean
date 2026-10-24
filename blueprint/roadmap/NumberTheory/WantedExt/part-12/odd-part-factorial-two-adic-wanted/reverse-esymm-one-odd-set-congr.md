@@ -13,7 +13,9 @@ multiset and congruence is integer divisibility, so all subtractions are exact.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Multiset](integer-multiset.md)
+- [Odd Below Two Pow](odd-below-two-pow.md)
+- [Reverse ESymm](reverse-esymm.md)
 
 ## Sources
 

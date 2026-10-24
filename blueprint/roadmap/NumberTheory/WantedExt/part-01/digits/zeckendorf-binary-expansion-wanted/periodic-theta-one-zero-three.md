@@ -12,7 +12,7 @@ For `L = (1, 0)` (the Fibonacci case), `θ^4 = (1, 0, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Periodic Theta](periodic-theta.md)
 
 ## Sources
 

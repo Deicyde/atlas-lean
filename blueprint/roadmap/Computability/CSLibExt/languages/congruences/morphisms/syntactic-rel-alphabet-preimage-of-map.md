@@ -13,7 +13,8 @@ source words.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alphabet Preimage](alphabet-preimage.md)
+- [Syntactic Rel](../syntactic/syntactic-rel.md)
 
 ## Sources
 

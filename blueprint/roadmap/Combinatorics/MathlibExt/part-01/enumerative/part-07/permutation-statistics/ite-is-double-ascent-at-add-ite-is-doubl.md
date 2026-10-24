@@ -13,7 +13,10 @@ or a valley, and no other position is any of them.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Double Ascent At](is-double-ascent-at.md)
+- [Is Double Descent At](is-double-descent-at.md)
+- [Is Peak At](is-peak-at.md)
+- [Is Valley At](is-valley-at.md)
 
 ## Sources
 

@@ -15,6 +15,12 @@ for some `1 ≤ i ≤ b - 1`, `||h_i| - (b - i)n/b| > d/2`, or `h` has a factori
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Digit Seq](digit-seq.md)
+- [Lunar Level Count](lunar-level-count.md)
+- [Max Min Mul](max-min-mul.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.MaxMinIndecomposabilityWanted](../../../../../../sources/v2/WantedExt.md)

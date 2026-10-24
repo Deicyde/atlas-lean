@@ -12,7 +12,11 @@ lean: MetaMathlibExt.trollopeDelangeFluctuation_add_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+
+## Proof depends on
+
+- [Trollope Delange Series](trollope-delange-series.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ that is an isolated point of `L_p` and is the irrational square root of a ration
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Spectrum](n-lagrange-spectrum.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ the images of the letters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Word Morphism Preimage](word-morphism-preimage.md)
+
+## Proof depends on
+
+- [To List word Morphism of List](to-list-word-morphism-of-list.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ factorial evaluation is impractical with the non-native kernel evaluator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unstable Bits](unstable-bits.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MetaMathlibExt.fenceTilingSum_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Tiling Sum](fence-tiling-sum.md)
+
+## Proof depends on
+
+- [Fence Tiling Weight](fence-tiling-weight.md)
+- [Fence Tilings](fence-tilings.md)
 
 ## Sources
 

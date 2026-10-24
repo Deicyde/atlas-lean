@@ -11,7 +11,7 @@ For all `n ≥ 6`, `#U_n ≥ 2n + 4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ulam Word Count](ulam-word-count.md)
 
 ## Sources
 

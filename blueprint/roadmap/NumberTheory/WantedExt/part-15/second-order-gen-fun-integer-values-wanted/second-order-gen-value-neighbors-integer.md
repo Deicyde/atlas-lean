@@ -12,7 +12,7 @@ and `A((s - pr)/r)` are integers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Gen Value](second-order-gen-value.md)
 
 ## Sources
 

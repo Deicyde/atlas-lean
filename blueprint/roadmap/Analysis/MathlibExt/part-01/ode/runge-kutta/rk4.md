@@ -11,7 +11,7 @@ The classical fourth-order Runge–Kutta tableau.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Explicit RK](explicit-rk.md)
 
 ## Sources
 

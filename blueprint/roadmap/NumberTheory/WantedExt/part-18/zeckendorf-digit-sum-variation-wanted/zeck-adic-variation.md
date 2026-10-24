@@ -15,6 +15,10 @@ to be finite.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ZeckendorfDigitSumVariationWanted](../../../../../sources/v2/WantedExt.md)

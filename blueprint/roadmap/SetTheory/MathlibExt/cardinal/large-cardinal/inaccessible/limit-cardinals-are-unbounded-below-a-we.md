@@ -15,7 +15,7 @@ lies below some `μ n` (`exists_lt_of_lt_ciSup`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [A cardinal κ is *weakly inaccessible* if it is an...](a-cardinal-is-weakly-inaccessible-if-it.md)
 
 ## Sources
 

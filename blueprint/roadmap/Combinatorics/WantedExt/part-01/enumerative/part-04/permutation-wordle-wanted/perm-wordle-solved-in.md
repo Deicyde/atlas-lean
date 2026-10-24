@@ -14,6 +14,10 @@ The game with secret `π` ends after exactly `r` guesses: `γ_r = π` and `γ_j 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perm Wordle Guess](perm-wordle-guess.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PermutationWordleWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,7 @@ From `(0, 0, 0, 0, 0, 1)` the only moves empty the cube, and the empty cube has 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Rotation Move](cube-rotation-move.md)
 
 ## Sources
 

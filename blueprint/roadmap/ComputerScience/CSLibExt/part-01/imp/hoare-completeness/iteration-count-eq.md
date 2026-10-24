@@ -13,7 +13,15 @@ count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BExp](../syntax/bexp.md)
+- [Cmd](../syntax/cmd.md)
+- [Iterates](iterates.md)
+- [State](../syntax/state.md)
+- [Iteration Count](iteration-count.md)
+
+## Proof depends on
+
+- [Count unique](count-unique.md)
 
 ## Sources
 

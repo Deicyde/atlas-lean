@@ -14,7 +14,8 @@ not stated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quad Prime Norm](quad-prime-norm.md)
+- [Quad Primorial Norm](quad-primorial-norm.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ The source's examples for `q = 4/5`: `U (UD) (DU)^2 (UD)^2 (DU)^2 D` is not in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is QBonacci Runs](is-qbonacci-runs.md)
+- [Bool Runs](bool-runs.md)
+
+## Proof depends on
+
+- [Run Following Valleys](run-following-valleys.md)
 
 ## Sources
 

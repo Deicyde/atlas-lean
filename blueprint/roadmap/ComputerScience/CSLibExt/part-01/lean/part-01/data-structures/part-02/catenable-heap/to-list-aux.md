@@ -11,7 +11,7 @@ Left-to-right flattening of a heap in front of the accumulator `acc`, visiting e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ tending to `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sat Prob](sat-prob.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Combinatorics.RandomThreeSat](../../../../sources/v2/CSLibExt.md)

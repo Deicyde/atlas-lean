@@ -12,7 +12,8 @@ The map `T_q = T_{1+q,1}`, `T_q(x) = x/q` or `((1+q)x + 1)/q`, is conjugate to t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Collatz](q-collatz.md)
+- [Two Adic Collatz](two-adic-collatz.md)
 
 ## Sources
 

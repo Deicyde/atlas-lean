@@ -12,7 +12,14 @@ The first thirteen gaps between unsums are `1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 2, 3, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
+
+## Proof depends on
+
+- [Is Upper Wythoff Unsum](is-upper-wythoff-unsum.md)
+- [Fib Inf](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Fib Inf agrees](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf-agrees.md)
+- [Fib Word](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
 
 ## Sources
 

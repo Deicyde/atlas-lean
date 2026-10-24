@@ -12,7 +12,7 @@ stated for every inverse `t` of `s` modulo `s² - prs - r²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Gen Value](second-order-gen-value.md)
 
 ## Sources
 

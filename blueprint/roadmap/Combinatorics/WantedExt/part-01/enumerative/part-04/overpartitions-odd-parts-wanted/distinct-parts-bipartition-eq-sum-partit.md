@@ -13,7 +13,7 @@ distinct parts. The paper states it for positive `n`; it also holds at `n = 0` (
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Parts Bipartition Count](distinct-parts-bipartition-count.md)
 
 ## Sources
 

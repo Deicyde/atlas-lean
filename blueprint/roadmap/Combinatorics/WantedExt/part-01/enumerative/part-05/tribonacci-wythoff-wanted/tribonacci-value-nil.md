@@ -12,7 +12,11 @@ The empty word has value `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Value](tribonacci-value.md)
+
+## Proof depends on
+
+- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 
 ## Sources
 

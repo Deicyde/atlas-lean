@@ -14,6 +14,11 @@ patterns, i.e. the number of distinct counting functions `n ↦ |Ī_n(B)|` with 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Signed Pattern2](signed-pattern2.md)
+- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.SignedInversionSequenceLength2Wanted](../../../../../../../sources/v2/WantedExt.md)

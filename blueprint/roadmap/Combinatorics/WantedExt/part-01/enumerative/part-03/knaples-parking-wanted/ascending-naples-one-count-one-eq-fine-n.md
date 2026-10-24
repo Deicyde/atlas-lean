@@ -12,7 +12,8 @@ Theorem 4: `U_{n,1} = F_{n+1}`, the `(n + 1)`-th Fine number (OEIS A000957, with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascending Naples One Count](ascending-naples-one-count.md)
+- [Fine Number](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
 
 ## Sources
 

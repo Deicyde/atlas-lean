@@ -12,7 +12,18 @@ The decoded assignment attains `maxWeight`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
+- [Max-product decoding](decode.md)
+- [Max Weight](max-weight.md)
+- [Weight](../variable-elimination/weight.md)
+
+## Proof depends on
+
+- [Drop Last](drop-last.md)
+- [Last Parent](../variable-elimination/last-parent.md)
+- [Max Eliminate](max-eliminate.md)
+- [Max Message](max-message.md)
+- [Parent](../variable-elimination/parent.md)
 
 ## Sources
 

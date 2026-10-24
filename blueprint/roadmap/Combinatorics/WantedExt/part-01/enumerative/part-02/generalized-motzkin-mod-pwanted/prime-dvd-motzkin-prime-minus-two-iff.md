@@ -12,7 +12,7 @@ modulo 3 is 1. At p = 2 both sides are false because M_0 = 1, so no extra lower 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Motzkin](generalized-motzkin.md)
 
 ## Sources
 

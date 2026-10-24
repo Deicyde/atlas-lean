@@ -12,7 +12,7 @@ The inclusion sends `0` to the zero sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic Of Nat](zeck-adic-of-nat.md)
 
 ## Sources
 

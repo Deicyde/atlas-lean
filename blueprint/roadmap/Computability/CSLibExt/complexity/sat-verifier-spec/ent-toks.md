@@ -11,7 +11,12 @@ Symbols of a table entry, in reading order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ent](ent.md)
+- [Sym](sym.md)
+
+## Proof depends on
+
+- [Mark Of](mark-of.md)
 
 ## Sources
 

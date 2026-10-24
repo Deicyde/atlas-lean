@@ -14,7 +14,7 @@ standing assumption `1 < n < b` is weakened to `n ≤ b`; for `n > b` the claim 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hoey Sloane Step](is-hoey-sloane-step.md)
 
 ## Sources
 

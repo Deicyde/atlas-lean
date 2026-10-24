@@ -13,6 +13,10 @@ lean: MetaMathlibExt.monicConvShiftedSum
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BFreeDirichletConvolutionFqTWanted](../../../../../sources/v2/WantedExt.md)

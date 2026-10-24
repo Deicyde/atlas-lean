@@ -14,7 +14,21 @@ no products of hypotheses are needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uni](../family/uni.md)
+- [Sh Bound](sh-bound.md)
+
+## Proof depends on
+
+- [Layout](../family/layout.md)
+- [Num Vars](../family/num-vars.md)
+- [Row W](../family/row-w.md)
+- [Clause B](clause-b.md)
+- [Ik B](ik-b.md)
+- [Lit E](lit-e.md)
+- [O Body B](o-body-b.md)
+- [Pre B](pre-b.md)
+- [S Body B](s-body-b.md)
+- [T Body B](t-body-b.md)
 
 ## Sources
 

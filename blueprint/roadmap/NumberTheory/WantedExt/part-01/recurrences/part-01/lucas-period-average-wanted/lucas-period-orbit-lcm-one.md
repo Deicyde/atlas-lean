@@ -12,7 +12,14 @@ lean: MetaMathlibExt.lucasPeriodOrbitLcm_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas Period Orbit Lcm](lucas-period-orbit-lcm.md)
+
+## Proof depends on
+
+- [Lucas Period Orbit Index](lucas-period-orbit-index.md)
+- [Lucas Period Orbit Index one](lucas-period-orbit-index-one.md)
+- [Lucas UPeriod](lucas-uperiod.md)
 
 ## Sources
 

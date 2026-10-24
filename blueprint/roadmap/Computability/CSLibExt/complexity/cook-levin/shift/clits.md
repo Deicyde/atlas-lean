@@ -11,7 +11,12 @@ Literals of a clause of kind `cl` at positions `pos`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CL](cl.md)
+
+## Proof depends on
+
+- [Nl](nl.md)
+- [Sg](sg.md)
 
 ## Sources
 

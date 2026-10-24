@@ -14,7 +14,8 @@ of `J₃`, with `f = a - J₃(a)` and `r = a mod 2`: `(f, r) = (1, 0)` gives `2b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Josephus Three High Extremal](is-josephus-three-high-extremal.md)
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

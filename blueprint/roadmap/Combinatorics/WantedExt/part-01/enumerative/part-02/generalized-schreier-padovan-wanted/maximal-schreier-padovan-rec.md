@@ -13,7 +13,7 @@ The recurrence `a^{(m)}_{p,q,n} = a^{(m)}_{p,q,n-q} + a^{(m)}_{p,q,n-p-q}` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Schreier Padovan](maximal-schreier-padovan.md)
 
 ## Sources
 

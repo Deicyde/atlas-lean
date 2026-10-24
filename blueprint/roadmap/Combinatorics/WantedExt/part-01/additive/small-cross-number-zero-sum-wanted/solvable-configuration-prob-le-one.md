@@ -12,7 +12,11 @@ The solvability probability is at most one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solvable Configuration Prob](solvable-configuration-prob.md)
+
+## Proof depends on
+
+- [Pebbling Solvable](pebbling-solvable.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The word `U^{a₁} D^k L D ⋯ U^{a_{n-1}} D^k L D U^{a_n} D^k L` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
 
 ## Sources
 

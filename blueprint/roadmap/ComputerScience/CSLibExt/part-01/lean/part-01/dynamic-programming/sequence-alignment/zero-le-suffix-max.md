@@ -12,7 +12,12 @@ The suffix maximum is nonnegative: the empty pair scores `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Suffix Max](suffix-max.md)
+
+## Proof depends on
+
+- [Nw Score le suffix Max](nw-score-le-suffix-max.md)
+- [Suffix Pairs](suffix-pairs.md)
 
 ## Sources
 

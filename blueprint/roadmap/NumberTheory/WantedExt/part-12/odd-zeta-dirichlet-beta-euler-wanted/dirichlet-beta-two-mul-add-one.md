@@ -20,7 +20,7 @@ value. `E_{2m}` (OEIS A028296, the source's Euler numbers `1, -1, 5, -61, …`) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even-index Euler numbers](../../../../Analysis/MathlibExt/part-01/ramanujan/part-01/part1-ch5-entry10b-euleriansymmetry/chapter5-euler-even.md)
 
 ## Sources
 

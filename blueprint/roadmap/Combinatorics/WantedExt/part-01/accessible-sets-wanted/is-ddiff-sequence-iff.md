@@ -13,7 +13,7 @@ differences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DDiff Sequence](is-ddiff-sequence.md)
 
 ## Sources
 

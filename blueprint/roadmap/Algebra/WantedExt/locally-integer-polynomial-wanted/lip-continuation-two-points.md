@@ -14,7 +14,8 @@ there is `g` agreeing with `f` on `X ∪ {a, b}` that is LIP on `U ∪ {a}` and 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interpolation Poly](interpolation-poly.md)
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

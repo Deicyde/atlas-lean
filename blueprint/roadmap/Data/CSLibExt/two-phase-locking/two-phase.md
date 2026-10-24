@@ -12,7 +12,11 @@ transaction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+
+## Proof depends on
+
+- [Lock Mode](lock-mode.md)
 
 ## Sources
 

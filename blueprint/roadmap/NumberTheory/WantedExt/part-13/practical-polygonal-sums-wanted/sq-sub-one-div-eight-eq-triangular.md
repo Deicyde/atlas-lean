@@ -11,7 +11,7 @@ For odd `x`, `(x² - 1) / 8` is a triangular number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](../../../MathlibExt/part-09/polygonal-number/polygonal-number.md)
 
 ## Sources
 

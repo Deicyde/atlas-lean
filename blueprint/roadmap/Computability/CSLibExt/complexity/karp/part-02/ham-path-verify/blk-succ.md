@@ -12,7 +12,7 @@ A unary block, reversed, after one more unit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

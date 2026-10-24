@@ -14,6 +14,10 @@ primitive integral solution; `0` when `p ∉ S(d)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strict Primitive Primes](strict-primitive-primes.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralPellBisectorsWanted](../../../../../sources/v2/WantedExt.md)

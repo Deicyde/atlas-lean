@@ -12,7 +12,7 @@ lean: MetaMathlibExt.fibonacciComplementValue_examples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Complement Value](fibonacci-complement-value.md)
 
 ## Sources
 

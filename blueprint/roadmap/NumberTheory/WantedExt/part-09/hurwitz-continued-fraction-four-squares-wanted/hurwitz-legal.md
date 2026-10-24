@@ -13,6 +13,11 @@ lean: MetaMathlibExt.HurwitzLegal
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hurwitz Digit](hurwitz-digit.md)
+- [Hurwitz Iter](hurwitz-iter.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HurwitzContinuedFractionFourSquaresWanted](../../../../../sources/v2/WantedExt.md)

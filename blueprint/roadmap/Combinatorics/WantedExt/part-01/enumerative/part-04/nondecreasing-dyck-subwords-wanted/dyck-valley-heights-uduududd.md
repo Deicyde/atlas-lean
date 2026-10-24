@@ -12,7 +12,7 @@ The path `UDUUDUDD` has valley heights `0, 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyck Valley Heights](dyck-valley-heights.md)
 
 ## Sources
 

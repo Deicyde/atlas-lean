@@ -11,7 +11,11 @@ The tokens of an item of `D`: a walked occurrence, or `none` for a clause marker
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [D Tok](d-tok.md)
 
 ## Sources
 

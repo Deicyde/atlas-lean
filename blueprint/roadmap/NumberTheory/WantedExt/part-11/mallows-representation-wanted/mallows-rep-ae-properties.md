@@ -13,7 +13,11 @@ one has a transitive Mallows representation (Lebesgue measure on `(0, 1)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Factor](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/is-factor.md)
+- [Is Eventually Periodic](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+- [Is Positively Poisson Stable](is-positively-poisson-stable.md)
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
 
 ## Sources
 

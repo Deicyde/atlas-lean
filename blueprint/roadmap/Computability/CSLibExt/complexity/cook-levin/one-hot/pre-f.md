@@ -11,7 +11,13 @@ Counters after the precomputation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+- [CK](ck.md)
+
+## Proof depends on
+
+- [Num Vars](../family/num-vars.md)
+- [Row W](../family/row-w.md)
 
 ## Sources
 

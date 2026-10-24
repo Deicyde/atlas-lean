@@ -16,7 +16,11 @@ Kamano's generalized multiple polylogarithm `Li_k(g; (β, γ); z) ∈ ℝ[[z]]`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Landen Data](landen-data.md)
+
+## Proof depends on
+
+- [Polylog Rev](polylog-rev.md)
 
 ## Sources
 

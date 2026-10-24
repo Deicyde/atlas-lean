@@ -13,7 +13,12 @@ leaves the cell unchanged, does not move, and enters the trap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence State](fence-state.md)
+- [Fence Symbol](fence-symbol.md)
+
+## Proof depends on
+
+- [Fence Lift](fence-lift.md)
 
 ## Sources
 

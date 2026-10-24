@@ -14,7 +14,16 @@ assertion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HAssertion](../separation-logic/hassertion.md)
+- [Heap](../heap/heap.md)
+- [Heap Cmd](../heap-step/heap-cmd.md)
+- [Sep Valid](../separation-logic/sep-valid.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [HSteps](../heap-step/hsteps.md)
+- [Safe](../heap-step/safe.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: DFA.revDet_accepts
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rev Det](rev-det.md)
+
+## Proof depends on
+
+- [Rev Det eval](rev-det-eval.md)
 
 ## Sources
 

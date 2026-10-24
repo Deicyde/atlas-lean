@@ -11,7 +11,7 @@ A proper coloring choosing from the given lists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [List Coloring Instance](list-coloring-instance.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ and write `false` on a match, `true` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Γ](untitled.md)
+
+## Proof depends on
+
+- [Expect](expect.md)
 
 ## Sources
 

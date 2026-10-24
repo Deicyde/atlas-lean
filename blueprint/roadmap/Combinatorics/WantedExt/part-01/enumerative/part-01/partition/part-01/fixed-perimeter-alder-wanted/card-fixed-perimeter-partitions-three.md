@@ -12,7 +12,7 @@ There are four partitions with perimeter `3`: `3`, `2 + 1`, `2 + 2`, `1 + 1 + 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
 
 ## Sources
 

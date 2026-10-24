@@ -13,7 +13,8 @@ only if both `a_{l/2}` and `q_{l-1}` are odd, or `a_{l/2}` is even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Periodic CF](has-periodic-cf.md)
+- [Convergent Den](convergent-den.md)
 
 ## Sources
 

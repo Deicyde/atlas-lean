@@ -12,7 +12,13 @@ literal and all of its cell literals are true at row 0. Discharged for `s = x ++
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+
+## Proof depends on
+
+- [Cells Hold](../part-04/cells-hold.md)
+- [Code Holds](../part-05/code-holds.md)
+- [Cell](../part-03/cell.md)
 
 ## Sources
 

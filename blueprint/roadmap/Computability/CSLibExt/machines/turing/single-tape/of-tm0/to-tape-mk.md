@@ -12,7 +12,14 @@ The input tape of a word of non-blank symbols reads as the `TM0` input tape of t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [To Tape](to-tape.md)
+
+## Proof depends on
+
+- [To Tape](../tape-view/to-tape.md)
+- [To Tape mk₁](../tape-view/to-tape-mk.md)
+- [Cell Symbol](cell-symbol.md)
 
 ## Sources
 

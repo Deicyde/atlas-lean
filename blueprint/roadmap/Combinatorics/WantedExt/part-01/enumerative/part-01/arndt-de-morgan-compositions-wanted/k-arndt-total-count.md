@@ -15,6 +15,10 @@ number of parts. The empty composition gives `a(0, k) = 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [K Arndt Composition Count](../arndt-compositions-generating-functions-wanted/k-arndt-composition-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.ArndtDeMorganCompositionsWanted](../../../../../../../sources/v2/WantedExt.md)

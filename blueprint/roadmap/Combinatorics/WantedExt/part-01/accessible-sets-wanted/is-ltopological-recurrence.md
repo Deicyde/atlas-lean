@@ -15,6 +15,11 @@ intersection over `j = 0, …, ℓ` of `T⁻ʲᵈ U` is nonempty.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Minimal System](is-minimal-system.md)
+- [Iterate Preimage](iterate-preimage.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AccessibleSetsWanted](../../../../../sources/v2/WantedExt.md)

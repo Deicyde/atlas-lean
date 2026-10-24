@@ -11,7 +11,9 @@ All four stacks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stk](stk.md)
+- [Γ](untitled.md)
+- [G](../dense-satverifier/g.md)
 
 ## Sources
 

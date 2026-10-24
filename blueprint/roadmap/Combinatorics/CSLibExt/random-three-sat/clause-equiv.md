@@ -11,7 +11,7 @@ Clauses are exactly a three-element variable set with a polarity pattern.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Clause](clause.md)
 
 ## Sources
 

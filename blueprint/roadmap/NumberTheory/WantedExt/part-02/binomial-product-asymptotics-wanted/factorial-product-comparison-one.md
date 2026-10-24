@@ -12,7 +12,7 @@ lean: MetaMathlibExt.factorialProductComparison_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorial Product Comparison](factorial-product-comparison.md)
 
 ## Sources
 

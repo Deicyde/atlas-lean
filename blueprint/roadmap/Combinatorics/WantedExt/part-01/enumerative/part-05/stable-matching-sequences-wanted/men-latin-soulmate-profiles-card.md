@@ -12,7 +12,9 @@ have exactly `k` soulmate pairs is `L_n C(n, k) (n-1)^{n-k} ((n-1)!)^n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+- [Latin Square Count](latin-square-count.md)
+- [Soulmate Pair Count](soulmate-pair-count.md)
 
 ## Sources
 

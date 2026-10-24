@@ -12,7 +12,7 @@ binom((u+v)/2, u/2)^{-1}` for `ℜu, ℜv > -1` (equation (10)).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

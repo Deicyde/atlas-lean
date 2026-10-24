@@ -13,7 +13,13 @@ semilength is `0` and the set is `{ε}`; the statements below take `n ≥ 1`.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+
+## Proof depends on
+
+- [Box Factor](box-factor.md)
+- [Skew Dyck Words](skew-dyck-words.md)
+- [Skew Factor Count](skew-factor-count.md)
 
 ## Sources
 

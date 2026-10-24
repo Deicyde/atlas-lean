@@ -12,7 +12,7 @@ Initial value `g_{k,l}(1) = l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

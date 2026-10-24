@@ -11,7 +11,12 @@ The grammar of one side of `P` (the top side for `Prod.fst`, the bottom for `Pro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Side Rules](side-rules.md)
 
 ## Sources
 

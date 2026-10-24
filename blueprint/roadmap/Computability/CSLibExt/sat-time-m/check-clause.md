@@ -13,7 +13,11 @@ tick per literal examined, plus the lookup cost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+
+## Proof depends on
+
+- [Lookup Var](lookup-var.md)
 
 ## Sources
 

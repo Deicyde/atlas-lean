@@ -12,7 +12,7 @@ The Dirichlet identity `δ` is antimultiplicative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Antimultiplicative](is-antimultiplicative.md)
 
 ## Sources
 

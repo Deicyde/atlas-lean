@@ -12,7 +12,7 @@ lean: MetaMathlibExt.arithmeticDerivative_prime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Derivative](arithmetic-derivative.md)
 
 ## Sources
 

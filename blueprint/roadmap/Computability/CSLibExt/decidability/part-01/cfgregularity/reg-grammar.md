@@ -11,7 +11,13 @@ The grammar of `regLang L(g)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Fixed Rules](fixed-rules.md)
+- [Shift Rule](shift-rule.md)
 
 ## Sources
 

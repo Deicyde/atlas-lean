@@ -14,7 +14,8 @@ Mansour and Sun's formula, as recalled by the source:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Dyck Path Count](colored-dyck-path-count.md)
+- [Partial Bell Polynomial](../../../../../MathlibExt/part-01/enumerative/part-06/partial-bell-polynomial.md)
 
 ## Sources
 

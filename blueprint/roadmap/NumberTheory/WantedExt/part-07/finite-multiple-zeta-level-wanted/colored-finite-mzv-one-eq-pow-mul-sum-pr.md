@@ -16,7 +16,7 @@ monotone map `Fin (N - 1) → Fin (r + 1)`, extended by `i₀ = 0` and `i_N = r`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Finite MZV](colored-finite-mzv.md)
 
 ## Sources
 

@@ -15,7 +15,10 @@ formulas give `X_2 = 8` and `Y_3 = 3`, but `X_2 = 9` and `Y_3 = 4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Fibonacci A](anti-fibonacci-a.md)
+- [Anti Fibonacci B](anti-fibonacci-b.md)
+- [Anti Fibonacci C](anti-fibonacci-c.md)
+- [Period Doubling](period-doubling.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ divisor of `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unitary Divisors](../../../../part-12/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

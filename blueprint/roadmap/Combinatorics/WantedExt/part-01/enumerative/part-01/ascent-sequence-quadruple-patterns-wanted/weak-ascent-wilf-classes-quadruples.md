@@ -13,7 +13,8 @@ patterns is `228` or `229`, counted as the number of distinct counting sequences
 
 ## Depends on
 
-This node has no prerequisites.
+- [Length Three Patterns](length-three-patterns.md)
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources
 

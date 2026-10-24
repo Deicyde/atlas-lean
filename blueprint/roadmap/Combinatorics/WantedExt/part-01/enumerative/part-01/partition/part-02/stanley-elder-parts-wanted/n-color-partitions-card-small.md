@@ -13,7 +13,7 @@ Characteristic values: `C(0) = C(1) = 1`, `C(2) = 3` (`2_1`, `2_2`, `1_1 + 1_1`)
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ function with `πₙ = #{i ≥ 1 : f(i) = n}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Height Function](is-height-function.md)
+- [Additive Of Prime Values](additive-of-prime-values.md)
 
 ## Sources
 

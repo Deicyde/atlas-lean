@@ -13,7 +13,7 @@ lean: MetaMathlibExt.maxIndepSetCount_le_of_maxDegree_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Indep Set Count](max-indep-set-count.md)
 
 ## Sources
 

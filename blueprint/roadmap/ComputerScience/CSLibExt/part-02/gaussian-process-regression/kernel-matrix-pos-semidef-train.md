@@ -12,7 +12,7 @@ The training block of a positive semidefinite kernel matrix is positive semidefi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kernel Matrix](kernel-matrix.md)
 
 ## Sources
 

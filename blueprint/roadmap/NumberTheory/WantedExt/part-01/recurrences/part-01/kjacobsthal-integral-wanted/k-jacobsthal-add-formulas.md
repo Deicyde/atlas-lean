@@ -12,7 +12,9 @@ Addition formulas: `2J_{k,m+n} = J_{k,m} j_{k,n} + J_{k,n} j_{k,m}` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Jacobsthal Params](k-jacobsthal-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

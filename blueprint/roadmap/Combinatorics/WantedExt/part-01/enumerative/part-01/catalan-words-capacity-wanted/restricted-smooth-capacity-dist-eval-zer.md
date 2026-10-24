@@ -13,7 +13,7 @@ zero-capacity restricted smooth words of length `n` ending in `i` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Smooth Capacity Dist](restricted-smooth-capacity-dist.md)
 
 ## Sources
 

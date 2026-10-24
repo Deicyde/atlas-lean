@@ -13,6 +13,10 @@ lean: MetaMathlibExt.hofCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hof Prefix](hof-prefix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedHofstadterOrderWanted](../../../../../sources/v2/WantedExt.md)

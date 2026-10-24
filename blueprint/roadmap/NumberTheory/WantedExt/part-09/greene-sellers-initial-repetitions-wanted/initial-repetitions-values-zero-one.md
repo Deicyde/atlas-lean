@@ -13,7 +13,10 @@ Values at `0` and `1`: `c₂(0) = 0`, `c₂(1) = 1`, `c₃(1) = 1`, `c₈(0) = c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Repetitions C2](initial-repetitions-c2.md)
+- [Initial Repetitions C3](initial-repetitions-c3.md)
+- [Initial Repetitions C8](initial-repetitions-c8.md)
+- [Initial Repetitions C8 Prime](initial-repetitions-c8-prime.md)
 
 ## Sources
 

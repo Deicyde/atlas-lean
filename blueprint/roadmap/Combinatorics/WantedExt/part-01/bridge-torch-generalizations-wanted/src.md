@@ -11,7 +11,7 @@ The vertex a movement starts from.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Star Move](star-move.md)
 
 ## Sources
 

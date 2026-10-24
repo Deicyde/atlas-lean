@@ -13,7 +13,7 @@ The root of a primitive polynomial has maximal order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Polynomial](is-primitive-polynomial.md)
 
 ## Sources
 

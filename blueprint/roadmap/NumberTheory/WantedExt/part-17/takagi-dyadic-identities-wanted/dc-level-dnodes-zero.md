@@ -12,7 +12,7 @@ On level `0`, `λ₀(n) = n mod 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc Level DNodes](dc-level-dnodes.md)
 
 ## Sources
 

@@ -12,7 +12,10 @@ The all-covered signature has no occupied vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination State](domination-state.md)
+- [Is Domination Signature](is-domination-signature.md)
+- [All Covered Signature](all-covered-signature.md)
+- [Occupied Count](occupied-count.md)
 
 ## Sources
 

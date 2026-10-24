@@ -13,7 +13,12 @@ When the `TM0` machine `M` halts on `l` with the tape `Tape.mk₁ l'`, `ofTM0 M 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [Of TM0](of-tm0.md)
+
+## Proof depends on
+
+- [Outputs Within Time of TM0](outputs-within-time-of-tm0.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ applied to the values of its parents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayes Net](bayes-net.md)
+- [Chain](chain.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Renaming `ρ_f r` along a permutation `f` of the attributes: attribute `a` becom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
 
 ## Sources
 

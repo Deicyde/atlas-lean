@@ -13,7 +13,7 @@ Values of `S_6(k, l)` for positive `k, l`: `0` if `l ≡ 1 (mod 6)`; otherwise
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

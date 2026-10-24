@@ -12,7 +12,7 @@ list and two tests), a right endpoint at most `8` (one test).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
 
 ## Sources
 

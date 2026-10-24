@@ -14,7 +14,33 @@ empty, `prog` reaches `yes` if `colCheck x w` and `no` otherwise, within
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Col Check](col-check.md)
+- [Prog](prog.md)
+- [Start](start.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Col Check eq](col-check-eq.md)
+- [Cols](cols.md)
+- [Edges Ok](edges-ok.md)
+- [Edges run](edges-run.md)
+- [Flat](flat.md)
+- [Length cols](length-cols.md)
+- [Length flat](length-flat.md)
+- [Load run](load-run.md)
+- [Ok Col](ok-col.md)
+- [Read U none](read-u-none.md)
+- [Read U some](read-u-some.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ lean: Cslib.Databases.mem_attrClosure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](derives.md)
+- [FD](fd.md)
+- [Attr Closure](attr-closure.md)
+
+## Proof depends on
+
+- [The closure algorithm decides derivability](derives-iff-subset-attr-closure.md)
 
 ## Sources
 

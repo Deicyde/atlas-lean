@@ -13,7 +13,7 @@ within `⌈n^N / 2⌉` moves.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maker Wins Within](maker-wins-within.md)
 
 ## Sources
 

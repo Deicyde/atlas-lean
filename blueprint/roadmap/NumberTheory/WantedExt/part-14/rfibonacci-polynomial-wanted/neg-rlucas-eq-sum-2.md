@@ -13,7 +13,7 @@ the sum over `0 ≤ k ≤ ⌊n/(r+1)⌋ - 1` with `r ∣ n - k - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg RLucas](neg-rlucas.md)
 
 ## Sources
 

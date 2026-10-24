@@ -11,7 +11,11 @@ A picture matching all row and column run clues.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonogram Instance](nonogram-instance.md)
+
+## Proof depends on
+
+- [Runs](runs.md)
 
 ## Sources
 

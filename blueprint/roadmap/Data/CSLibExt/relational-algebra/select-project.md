@@ -12,7 +12,17 @@ Selection commutes with a projection that keeps the attributes of the condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond](cond.md)
+- [Attrs](attrs.md)
+- [Tuple](tuple.md)
+- [Project](project.md)
+- [Select](select.md)
+
+## Proof depends on
+
+- [Eval](eval.md)
+- [Eval restrict](eval-restrict.md)
+- [Restrict](restrict.md)
 
 ## Sources
 

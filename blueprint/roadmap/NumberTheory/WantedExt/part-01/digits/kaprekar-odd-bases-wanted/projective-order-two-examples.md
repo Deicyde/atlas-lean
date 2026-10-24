@@ -12,7 +12,11 @@ Characteristic values: `λ(7) = 3`, `λ(9) = 3`, `λ(11) = 5`, `λ(17) = 4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Projective Order Two](projective-order-two.md)
+
+## Proof depends on
+
+- [Projective Order Two eq of](projective-order-two-eq-of.md)
 
 ## Sources
 

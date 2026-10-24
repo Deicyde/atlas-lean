@@ -12,7 +12,14 @@ lean: Cslib.Complexity.CookLevin.Situation.clauseSat_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dense Clause](../../family/dense-clause.md)
+- [Faithful](faithful.md)
+- [Clause Sat](../../../dense-sat/clause-sat.md)
+
+## Proof depends on
+
+- [L0](../part-04/clause-sat-dense.md)
+- [Clause](../../../dense-sat/clause.md)
 
 ## Sources
 

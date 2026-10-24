@@ -13,6 +13,10 @@ Cost of one clause.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lit E](lit-e.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.OneHot](../../../../../../sources/v2/CSLibExt.md)

@@ -11,7 +11,11 @@ Where the routine goes after literal `j`: the previous literal, or the leading g
 
 ## Depends on
 
-This node has no prerequisites.
+- [GL](gl.md)
+
+## Proof depends on
+
+- [Lit L](lit-l.md)
 
 ## Sources
 

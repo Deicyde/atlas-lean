@@ -12,7 +12,7 @@ points, then `2g + 1 ≤ n ≤ 4g`. The genus is given by Jacques' formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
 
 ## Sources
 

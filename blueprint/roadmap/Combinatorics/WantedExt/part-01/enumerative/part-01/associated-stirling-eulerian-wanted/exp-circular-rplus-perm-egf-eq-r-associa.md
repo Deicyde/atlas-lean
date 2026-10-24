@@ -14,7 +14,8 @@ than `r`. The record states no bound on `r`; at `r = 0` this is Theorem 6.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RAssociated Cycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rassociated-cycle-perm.md)
+- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

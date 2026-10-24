@@ -11,7 +11,9 @@ lean: MetaMathlibExt.card_lucasLeonardoBracelets
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bracelet First Tile](bracelet-first-tile.md)
+- [Lucas Leonardo Bracelets](lucas-leonardo-bracelets.md)
+- [Lucas Leonardo P](lucas-leonardo-p.md)
 
 ## Sources
 

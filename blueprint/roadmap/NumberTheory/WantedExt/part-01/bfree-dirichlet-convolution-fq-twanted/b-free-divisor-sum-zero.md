@@ -12,7 +12,15 @@ lean: MetaMathlibExt.bFreeDivisorSum_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Divisor Sum](b-free-divisor-sum.md)
+
+## Proof depends on
+
+- [Is BFree](is-bfree.md)
+- [Is BFree one](is-bfree-one.md)
+- [Monic Divisor Count](monic-divisor-count.md)
+- [Monic Divisor Count one](monic-divisor-count-one.md)
+- [Monic nat Degree le zero iff](monic-nat-degree-le-zero-iff.md)
 
 ## Sources
 

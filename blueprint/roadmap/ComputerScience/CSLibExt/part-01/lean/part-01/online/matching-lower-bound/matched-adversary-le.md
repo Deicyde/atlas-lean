@@ -12,7 +12,9 @@ lean: Cslib.Algorithms.Lean.Online.MatchingLowerBound.matched_adversary_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Online Matcher](online-matcher.md)
+- [Adversary](adversary.md)
+- [Matched](matched.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ equivalent `Q_p` in the hypothesis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
+- [Square Set](square-set.md)
 
 ## Sources
 

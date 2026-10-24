@@ -12,7 +12,7 @@ The first entries of a Riordan array: `r_{1,0} = z_0` and `r_{1,1} = a_0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Riordan Array AZ](is-riordan-array-az.md)
 
 ## Sources
 

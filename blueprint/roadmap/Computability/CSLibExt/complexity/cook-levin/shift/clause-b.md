@@ -13,6 +13,10 @@ Cost of one clause (at most 3 literals).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lit E](lit-e.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Shift](../../../../../../sources/v2/CSLibExt.md)

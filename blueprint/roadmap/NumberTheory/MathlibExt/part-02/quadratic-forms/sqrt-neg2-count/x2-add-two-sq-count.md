@@ -13,7 +13,13 @@ the divisor sum of the canonical character `ZMod.χ₈'`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pair Equiv Sqrt Neg Two Norm Fiber](pair-equiv-sqrt-neg-two-norm-fiber.md)
+
+## Proof depends on
+
+- [Div Chi Neg2 Sum](../../../part-12/x2-y2-count/div-chi-neg2-sum.md)
+- [Rep X2 Y2 Count](../../../part-12/x2-y2-count/rep-x2-y2-count.md)
+- [X2y2 count](../../../part-12/x2-y2-count/x2y2-count.md)
 
 ## Sources
 

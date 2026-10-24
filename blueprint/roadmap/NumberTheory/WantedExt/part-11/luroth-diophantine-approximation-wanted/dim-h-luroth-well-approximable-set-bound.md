@@ -12,7 +12,9 @@ For `ψ : ℕ → (0, 1]`, `1/(1 + τ̄_ψ) ≤ dim L(ψ) ≤ 1/(1 + τ_ψ)` (in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Order At Infinity](lower-order-at-infinity.md)
+- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
+- [Upper Order At Infinity](upper-order-at-infinity.md)
 
 ## Sources
 

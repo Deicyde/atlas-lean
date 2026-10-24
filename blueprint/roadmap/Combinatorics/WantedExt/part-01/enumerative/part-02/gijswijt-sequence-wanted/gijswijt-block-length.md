@@ -14,6 +14,10 @@ The block lengths `β^{(m)}(t)`: `β(1) = 1`, and `β(t+1)` is the least `k > (m
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gijswijt Term](gijswijt-term.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GijswijtSequenceWanted](../../../../../../../sources/v2/WantedExt.md)

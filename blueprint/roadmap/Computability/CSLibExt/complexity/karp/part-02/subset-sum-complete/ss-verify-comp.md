@@ -11,7 +11,14 @@ lean: Cslib.Complexity.Karp.ssVerifyComp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](../../../host/comp.md)
+
+## Proof depends on
+
+- [K](../subset-sum-verify/k.md)
+- [Lab](../subset-sum-verify/lab.md)
+- [Prog](../subset-sum-verify/prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

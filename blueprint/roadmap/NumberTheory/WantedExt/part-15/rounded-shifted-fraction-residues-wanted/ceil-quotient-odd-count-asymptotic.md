@@ -11,7 +11,7 @@ Corollary 10: `𝓒_n = (1 - log 2) n + O(√n)` and `𝓒_n / n → 1 - log 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ceil Quotient Odd Count](ceil-quotient-odd-count.md)
 
 ## Sources
 

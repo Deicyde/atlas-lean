@@ -14,7 +14,7 @@ that for every `P ⊆ ℝ^d` and `n > 0`, with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

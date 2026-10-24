@@ -13,7 +13,7 @@ integer multiset neither adds nor removes entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Multiset](integer-multiset.md)
 
 ## Sources
 

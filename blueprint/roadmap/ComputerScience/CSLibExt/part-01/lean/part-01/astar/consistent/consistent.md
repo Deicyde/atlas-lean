@@ -11,7 +11,11 @@ A consistent (monotone) heuristic: `h u ≤ weight u v + h v` on every edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+
+## Proof depends on
+
+- [Edge](../../graph/directed-adjacency-2/edge.md)
 
 ## Sources
 

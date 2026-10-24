@@ -12,7 +12,7 @@ lean: MetaMathlibExt.kPellLucas_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Pell Lucas](k-pell-lucas.md)
 
 ## Sources
 

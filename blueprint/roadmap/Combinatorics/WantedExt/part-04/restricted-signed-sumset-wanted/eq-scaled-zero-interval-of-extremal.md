@@ -14,7 +14,15 @@ lean: MetaMathlibExt.eq_scaled_zeroInterval_of_extremal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Indexed AP](is-indexed-ap.md)
+- [Initial Segment](initial-segment.md)
+- [Ordered Finset](ordered-finset.md)
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
+- [Restricted Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
+- [Scale Finset](scale-finset.md)
+- [Tail Finset](tail-finset.md)
+- [Zero Interval](zero-interval.md)
+- [Is APOf Length With](../../../MathlibExt/part-01/ap/basic/is-apof-length-with.md)
 
 ## Sources
 

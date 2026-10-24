@@ -11,7 +11,8 @@ Proposition 6: for `l ≠ m`, `σ^l(L) ∩ σ^m(L) = {0^∞}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
+- [Binomid Shift](binomid-shift.md)
 
 ## Sources
 

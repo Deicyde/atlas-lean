@@ -12,7 +12,7 @@ If `n < ℓ` and `n < k`, every partition of `n` is `(ℓ, k)`-regular, so `b_{�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Partition Count](regular-partition-count.md)
 
 ## Sources
 

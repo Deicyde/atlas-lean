@@ -14,6 +14,10 @@ output reads `rep_F(n)` (most significant digit first) and outputs `u n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Rep](fib-rep.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WythoffTerminalPositionsWanted](../../../../../sources/v2/WantedExt.md)

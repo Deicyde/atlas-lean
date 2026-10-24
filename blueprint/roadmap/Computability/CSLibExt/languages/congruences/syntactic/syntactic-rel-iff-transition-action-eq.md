@@ -12,7 +12,15 @@ For an accessible, state-separated DFA, syntactic classes are exactly transition
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible](../minimality/accessible.md)
+- [State Separated](../universal/state-separated.md)
+- [Syntactic Rel](syntactic-rel.md)
+- [Transition Action](transition-action.md)
+
+## Proof depends on
+
+- [Syntactic Rel of transition Action eq](syntactic-rel-of-transition-action-eq.md)
+- [Transition Action eq of syntactic Rel](transition-action-eq-of-syntactic-rel.md)
 
 ## Sources
 

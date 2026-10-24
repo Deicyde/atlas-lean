@@ -14,7 +14,7 @@ defines the regular continued fraction of `uₙ / vₙ` with partial numerators
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Cont Fract](poly-cont-fract.md)
 
 ## Sources
 

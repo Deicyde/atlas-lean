@@ -12,7 +12,9 @@ Corollary 15: `!n = ⌊β n⌋ + 1` for every positive integer `n`, and for `n >
 
 ## Depends on
 
-This node has no prerequisites.
+- [Golden Factorial Exponent](golden-factorial-exponent.md)
+- [Kurepa Partial Integral](kurepa-partial-integral.md)
+- [Lambert Map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources
 

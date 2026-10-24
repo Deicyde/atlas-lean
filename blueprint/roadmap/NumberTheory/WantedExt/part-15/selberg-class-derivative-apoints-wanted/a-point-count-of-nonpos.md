@@ -12,7 +12,8 @@ lean: MetaMathlibExt.SelbergClassFunction.aPointCount_of_nonpos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Class Function](selberg-class-function.md)
+- [A Point Count](a-point-count.md)
 
 ## Sources
 

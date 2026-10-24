@@ -12,7 +12,12 @@ A word of non-blank symbols reads as itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [To List Blank](to-list-blank.md)
+
+## Proof depends on
+
+- [Cell Symbol](cell-symbol.md)
 
 ## Sources
 

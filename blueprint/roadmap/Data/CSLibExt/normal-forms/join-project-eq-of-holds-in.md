@@ -13,7 +13,18 @@ lean: Cslib.Databases.join_project_eq_of_holdsIn
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](../functional-dependencies/fd.md)
+- [Holds In](../functional-dependencies/holds-in.md)
+- [Is Over](../relational-algebra/is-over-2.md)
+- [Tuple](../relational-algebra/tuple.md)
+- [Join](../relational-algebra/join.md)
+- [Project](../relational-algebra/project.md)
+
+## Proof depends on
+
+- [Is Over](../relational-algebra/is-over.md)
+- [Restrict](../relational-algebra/restrict.md)
+- [Membership in a join](../relational-algebra/mem-join-iff.md)
 
 ## Sources
 

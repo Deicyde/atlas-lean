@@ -12,7 +12,18 @@ Equality of syntactic classes implies equality of Nerode classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](../nerode/nerode-class.md)
+- [Syntactic Monoid](syntactic-monoid.md)
+- [Nerode Class](../nerode/nerode-class-2.md)
+- [Syntactic Con](syntactic-con.md)
+- [Syntactic Morphism](syntactic-morphism.md)
+
+## Proof depends on
+
+- [Nerode Rel](../nerode/nerode-rel.md)
+- [Nerode Setoid](../nerode/nerode-setoid.md)
+- [Syntactic Rel](syntactic-rel.md)
+- [Syntactic Rel nerode Rel](syntactic-rel-nerode-rel.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ One more column extends a gap run: continuing costs `gapExtend`, opening costs `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gap State](gap-state.md)
+- [Gap Cost](gap-cost.md)
+- [Gap Run Cost](gap-run-cost.md)
 
 ## Sources
 

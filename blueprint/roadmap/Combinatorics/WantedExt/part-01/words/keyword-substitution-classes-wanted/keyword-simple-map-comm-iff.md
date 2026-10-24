@@ -14,7 +14,7 @@ nor its negation, or the lines of action are disjoint (`Δ ≥ m + 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Simple Map](keyword-simple-map.md)
 
 ## Sources
 

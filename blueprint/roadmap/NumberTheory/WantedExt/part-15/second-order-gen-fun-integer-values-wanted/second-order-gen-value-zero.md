@@ -12,7 +12,7 @@ Characteristic value: `A(0) = a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Gen Value](second-order-gen-value.md)
 
 ## Sources
 

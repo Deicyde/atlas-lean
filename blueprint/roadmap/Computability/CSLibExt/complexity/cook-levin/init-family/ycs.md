@@ -11,7 +11,7 @@ The I4 code list: the distinct codes of `Ys`, sorted (strictly increasing).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../situation/part-01/enc.md)
 
 ## Sources
 

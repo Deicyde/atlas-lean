@@ -12,7 +12,13 @@ A front node adds its element to the multiset of its tail.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [To Multiset](to-multiset.md)
+
+## Proof depends on
+
+- [To List](to-list.md)
+- [To List cons](to-list-cons.md)
 
 ## Sources
 

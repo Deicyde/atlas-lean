@@ -12,7 +12,7 @@ Equation (55): `∑ (-1)^{n-k} binom(n,k) binom(2k+v, (2k+v)/2) binom(k+v, v/2)^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

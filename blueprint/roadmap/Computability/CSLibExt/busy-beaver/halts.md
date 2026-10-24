@@ -11,7 +11,11 @@ The machine halts on the blank tape.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Machine](machine.md)
+
+## Proof depends on
+
+- [Halts Within](halts-within.md)
 
 ## Sources
 

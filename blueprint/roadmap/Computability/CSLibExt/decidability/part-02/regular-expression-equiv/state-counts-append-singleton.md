@@ -12,7 +12,9 @@ One more node appends its count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Counts](state-counts.md)
+- [Step States](step-states.md)
+- [Regex Node](../regular-expression/regex-node.md)
 
 ## Sources
 

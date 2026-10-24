@@ -12,7 +12,16 @@ The pulled-back syntactic morphism recognizes the alphabet preimage.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](../recognition/recognizes.md)
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Alphabet Preimage](alphabet-preimage.md)
+- [Alphabet Preimage Morphism](alphabet-preimage-morphism.md)
+- [Syntactic Accept](../syntactic/syntactic-accept.md)
+- [Syntactic Con](../syntactic/syntactic-con.md)
+
+## Proof depends on
+
+- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The value of `A` under the valuation read off the atom variables.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eval Bool](../../../../../../Logic/CSLibExt/propositional/natural-deduction/semantics/eval-bool.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.SAT.Tseitin.Basic](../../../../../../../sources/v2/CSLibExt.md)

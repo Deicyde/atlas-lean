@@ -14,6 +14,10 @@ Degenerate Stirling numbers of the second kind:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Degenerate Exp Series](degenerate-exp-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.DegenerateHarmonicRiordanWanted](../../../../../../../sources/v2/WantedExt.md)

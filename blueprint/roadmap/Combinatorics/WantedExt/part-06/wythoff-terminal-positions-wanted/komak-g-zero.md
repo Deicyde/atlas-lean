@@ -12,7 +12,7 @@ lean: MetaMathlibExt.komakG_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Komak G](komak-g.md)
 
 ## Sources
 

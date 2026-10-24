@@ -12,7 +12,7 @@ lean: MetaMathlibExt.fibonacciAlternatingSum_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Alternating Sum](fibonacci-alternating-sum.md)
 
 ## Sources
 

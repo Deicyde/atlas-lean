@@ -15,7 +15,12 @@ as `IsLeast`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Period Orbit Closes](lucas-period-orbit-closes.md)
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas All Averages Integral](lucas-all-averages-integral.md)
+- [Lucas Average Set](lucas-average-set.md)
+- [Lucas Period Orbit Lcm](lucas-period-orbit-lcm.md)
+- [Lucas Period Set](lucas-period-set.md)
 
 ## Sources
 

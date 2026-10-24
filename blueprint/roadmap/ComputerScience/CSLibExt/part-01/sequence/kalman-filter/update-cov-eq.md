@@ -12,7 +12,12 @@ The update's covariance in Schur form: `(1 - K H) P = P - P Hᵀ (H P Hᵀ + R)�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
+- [Update](update.md)
+
+## Proof depends on
+
+- [Gain](gain.md)
 
 ## Sources
 

@@ -19,6 +19,10 @@ Theorem 2 requires, is used.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pq Binomial](pq-binomial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.RFibonacciPolynomialWanted](../../../../../sources/v2/WantedExt.md)

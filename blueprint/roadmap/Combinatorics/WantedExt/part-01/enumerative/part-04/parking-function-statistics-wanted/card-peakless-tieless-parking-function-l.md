@@ -13,7 +13,8 @@ last entry `a_n = i` is the Catalan-triangle entry `C_{n,i} = C(n+i-2, i-1) (n-i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+- [Is Partial Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
 
 ## Sources
 

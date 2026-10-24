@@ -12,7 +12,7 @@ the state at time `t` equal to `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
 
 ## Sources
 

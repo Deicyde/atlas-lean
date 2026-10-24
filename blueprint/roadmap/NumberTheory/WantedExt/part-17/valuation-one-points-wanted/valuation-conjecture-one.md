@@ -14,6 +14,10 @@ the primes.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Valuation Rank Two Tuple Count](valuation-rank-two-tuple-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ValuationOnePointsWanted](../../../../../sources/v2/WantedExt.md)

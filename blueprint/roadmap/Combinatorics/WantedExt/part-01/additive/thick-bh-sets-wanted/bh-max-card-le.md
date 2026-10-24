@@ -12,7 +12,11 @@ lean: MetaMathlibExt.bhMaxCard_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bh Max Card](bh-max-card.md)
+
+## Proof depends on
+
+- [Is Bh Set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
 
 ## Sources
 

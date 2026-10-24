@@ -14,7 +14,9 @@ let `H̃` be the fundamental sequence of `Ẽ`. Then there are positive reals `�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Subcollection Count](subcollection-count.md)
+- [Zeckendorf Eval](zeckendorf-eval.md)
 
 ## Sources
 

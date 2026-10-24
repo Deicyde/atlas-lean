@@ -12,7 +12,7 @@ The product in the holomorph: `(a, u)(b, v) = (a + u b, u v)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zmod Units Mul Aut](zmod-units-mul-aut.md)
 
 ## Sources
 

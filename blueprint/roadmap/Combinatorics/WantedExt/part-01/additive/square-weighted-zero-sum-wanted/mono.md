@@ -14,7 +14,7 @@ index set and weights witness the conclusion after replacing `A` by a superset
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ The graph of a permutiple class is a union of cycles of the mother graph: for an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
+- [Is Permutiple](../permutiple-wanted/is-permutiple.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ digits `1`) whose value `∑ i ∈ S, φ ^ i` is `N`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Bergman Expansion](../base-phi-representations-wanted/is-bergman-expansion.md)
+- [Base Phi Value](../base-phi-representations-wanted/base-phi-value.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.BasePhiStructureWanted](../../../../../../sources/v2/WantedExt.md)

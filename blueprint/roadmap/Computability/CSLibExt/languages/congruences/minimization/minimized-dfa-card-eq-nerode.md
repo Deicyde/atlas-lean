@@ -12,7 +12,12 @@ When finite, the semantic presentation attains the universal Nerode lower bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](../nerode/nerode-class.md)
+- [Reachable Residuals](../minimality/reachable-residuals.md)
+
+## Proof depends on
+
+- [Nerode Class Equiv Minimized State](nerode-class-equiv-minimized-state.md)
 
 ## Sources
 

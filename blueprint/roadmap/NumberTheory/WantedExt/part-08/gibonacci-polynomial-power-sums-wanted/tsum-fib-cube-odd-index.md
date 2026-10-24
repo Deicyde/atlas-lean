@@ -14,7 +14,7 @@ extracted record prints the second lower limit as `n = 2`, under which the sum i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

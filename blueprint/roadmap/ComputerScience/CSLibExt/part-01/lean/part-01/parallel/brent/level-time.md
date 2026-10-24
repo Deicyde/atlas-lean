@@ -11,7 +11,13 @@ Brent's schedule: level by level, each level in `⌈levelCard / p⌉` steps of `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+
+## Proof depends on
+
+- [Depth](depth.md)
+- [Offset](offset.md)
+- [Rank](rank.md)
 
 ## Sources
 

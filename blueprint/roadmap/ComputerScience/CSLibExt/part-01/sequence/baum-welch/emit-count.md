@@ -11,7 +11,12 @@ The expected number of emissions of `o` from `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid HMM](valid-hmm.md)
+
+## Proof depends on
+
+- [P Emit](p-emit.md)
+- [Post](post.md)
 
 ## Sources
 

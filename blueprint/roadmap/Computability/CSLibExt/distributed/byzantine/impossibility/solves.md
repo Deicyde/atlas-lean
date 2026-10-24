@@ -13,7 +13,12 @@ behaviour of the traitors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oral Protocol](oral-protocol.md)
+
+## Proof depends on
+
+- [Agreement](agreement.md)
+- [Validity](validity.md)
 
 ## Sources
 

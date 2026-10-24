@@ -12,7 +12,7 @@ Lemma 5 (Onphaeng and Pongsriiam): for `n ≥ 2`, `g_1` has minimum `-2^{n-2}`, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incl Excl Like Sum](incl-excl-like-sum.md)
 
 ## Sources
 

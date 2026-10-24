@@ -14,7 +14,7 @@ reciprocal sum eventually satisfies `a_(n+1) = a_n² - a_n + 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pseudo Greedy Gap](pseudo-greedy-gap.md)
 
 ## Sources
 

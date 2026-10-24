@@ -11,7 +11,8 @@ Lemma 2.1 (vii): `U_r = Σ_{i=0}^{⌊(r-1)/2⌋} (-y)^i C(r-i-1, i) x^{r-2i-1}` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

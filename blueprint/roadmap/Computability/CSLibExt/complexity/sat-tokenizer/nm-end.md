@@ -12,7 +12,7 @@ the whole name is non-empty and ends in `false`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lab](lab.md)
 
 ## Sources
 

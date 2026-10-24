@@ -14,6 +14,10 @@ matching the paper's convention that natural numbers are positive.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Naturals In Set Up To](naturals-in-set-up-to.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LcmDenseSetsWanted](../../../../../sources/v2/WantedExt.md)

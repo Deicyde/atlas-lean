@@ -12,7 +12,14 @@ Every solution within the initial domains lies within AC-3's domains.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary CSP](binary-csp.md)
+- [Is Solution](is-solution.md)
+- [Ac3 All](ac3-all.md)
+
+## Proof depends on
+
+- [Ac3](ac3.md)
+- [No solution is lost](is-solution-ac3.md)
 
 ## Sources
 

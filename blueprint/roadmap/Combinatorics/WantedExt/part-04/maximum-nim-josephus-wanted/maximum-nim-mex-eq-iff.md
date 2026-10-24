@@ -13,7 +13,7 @@ present. This is the characteristic property of the paper's mex, with no deviati
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim Mex](maximum-nim-mex.md)
 
 ## Sources
 

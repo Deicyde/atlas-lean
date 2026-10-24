@@ -13,7 +13,7 @@ exact-covering hypothesis on `S` is not needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Initial value `g_{k,p,r}(1) = 2 mod p^r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Residue](gobel-residue.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ values `v⁽ʲ⁾ n = 1` if `n + 1 = j` and `0` otherwise, for `0 ≤ n < s + p`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Padovan Perrin Recurrence](padovan-perrin-recurrence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedPadovanPerrinModelWanted](../../../../../sources/v2/WantedExt.md)

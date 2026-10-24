@@ -14,7 +14,7 @@ of `w` and natural ceiling of `v` gives the lower and upper bounds on `n(k-1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim H](maximum-nim-h.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ states of its code.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](code.md)
+- [Machine](machine.md)
+- [States](states.md)
+
+## Proof depends on
+
+- [Decode Stmt](decode-stmt.md)
 
 ## Sources
 

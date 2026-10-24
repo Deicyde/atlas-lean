@@ -12,7 +12,9 @@ Characteristic lemma: `P_{1;ℓ}`, `Q_{1;ℓ}`, `R_{1;ℓ}` have determinant `1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Cohn P1](gen-cohn-p1.md)
+- [Gen Cohn Q1](gen-cohn-q1.md)
+- [Gen Cohn R1](gen-cohn-r1.md)
 
 ## Sources
 

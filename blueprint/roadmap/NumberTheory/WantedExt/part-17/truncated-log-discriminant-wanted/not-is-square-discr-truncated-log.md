@@ -12,7 +12,7 @@ prime, then `disc(F_n)` is not a rational square.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Truncated Log Polynomial](truncated-log-polynomial.md)
 
 ## Sources
 

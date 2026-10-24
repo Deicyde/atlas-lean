@@ -12,7 +12,7 @@ lean: MetaMathlibExt.polyNorm_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Norm](poly-norm.md)
 
 ## Sources
 

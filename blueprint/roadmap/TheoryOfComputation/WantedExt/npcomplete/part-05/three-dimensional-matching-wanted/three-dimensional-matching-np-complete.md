@@ -13,7 +13,11 @@ among combinatorial problems" (1972).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Many One Red](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
+- [Three Dimensional Matching Dec](three-dimensional-matching-dec.md)
+- [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
+- [NP](../../../../../Computability/MathlibExt/complexity/np.md)
 
 ## Sources
 

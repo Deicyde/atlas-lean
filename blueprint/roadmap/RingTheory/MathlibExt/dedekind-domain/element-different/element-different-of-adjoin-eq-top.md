@@ -14,7 +14,7 @@ different is `aeval α (derivative (minpoly A α))`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Element Different](element-different.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The states an encoding mentions as start states or as targets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The `10` peaks over the five paths of semilength `3`: `d_UD(3) = 10`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
 
 ## Sources
 

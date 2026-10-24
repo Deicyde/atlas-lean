@@ -13,7 +13,7 @@ Characteristic example (Figure 1): under the `2`-Naples rule on `ℤ` the cars o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naples Park Int](naples-park-int.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ carries. Outputs: the `n` sum bits, the carry out, and the overflow flag.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Signature](../ripple-carry/arith-signature.md)
+
+## Proof depends on
+
+- [Arith Gate](../ripple-carry/arith-gate.md)
+- [Carry Wire](../ripple-carry/carry-wire.md)
+- [Bin Line](../ripple-carry/bin-line.md)
+- [Rca Program](../ripple-carry/rca-program.md)
+- [Ripple Carry Adder](../ripple-carry/ripple-carry-adder.md)
 
 ## Sources
 

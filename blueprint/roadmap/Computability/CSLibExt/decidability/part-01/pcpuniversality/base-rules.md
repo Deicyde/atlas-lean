@@ -16,6 +16,14 @@ The productions that do not depend on the dominoes. The nonterminals are `0` (st
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [All Letters](all-letters.md)
+- [Bit Code](bit-code.md)
+- [U Bit](u-bit.md)
+- [U Letter](u-letter.md)
+- [U Nt](u-nt.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.PCPUniversality](../../../../../../sources/v2/CSLibExt.md)

@@ -14,6 +14,10 @@ it, `P ^ h` also divides it.  As in the source, theorem statements impose `2 ≤
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Monic Irreducible](monic-irreducible.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

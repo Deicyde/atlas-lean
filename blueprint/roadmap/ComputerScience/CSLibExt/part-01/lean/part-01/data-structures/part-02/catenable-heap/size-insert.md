@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.CatenableHeap.size_insert
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Insert](insert.md)
+- [Size](size.md)
+
+## Proof depends on
+
+- [Size cons](size-cons.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Domain extension: also for `r = 0` (no Lehmer factorization has no factors).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spoof Lehmer](is-spoof-lehmer.md)
+- [Is Trivial Spoof](is-trivial-spoof.md)
 
 ## Sources
 

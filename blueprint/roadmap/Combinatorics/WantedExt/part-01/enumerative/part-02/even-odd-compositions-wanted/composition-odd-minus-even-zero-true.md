@@ -13,7 +13,7 @@ compositions of `0` is `-1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Odd Minus Even](composition-odd-minus-even.md)
 
 ## Sources
 

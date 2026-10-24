@@ -16,7 +16,7 @@ bounds the range `2^{k+1} ≤ t ≤ e^{e^{k/1.99}}` by `k^{j+7-m}/2^k`, which is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Index Set](almost-prime-index-set.md)
 
 ## Sources
 

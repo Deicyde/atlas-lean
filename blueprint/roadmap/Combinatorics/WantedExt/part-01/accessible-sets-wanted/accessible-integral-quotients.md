@@ -12,7 +12,7 @@ If `A` is `(r*d)`-accessible, then the positive integral quotient set
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RAccessible](is-raccessible.md)
 
 ## Sources
 

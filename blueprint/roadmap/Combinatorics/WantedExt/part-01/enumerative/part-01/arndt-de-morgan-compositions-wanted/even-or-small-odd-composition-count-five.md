@@ -12,7 +12,7 @@ lean: MetaMathlibExt.evenOrSmallOddCompositionCount_five
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Or Small Odd Composition Count](even-or-small-odd-composition-count.md)
 
 ## Sources
 

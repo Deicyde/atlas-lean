@@ -11,7 +11,7 @@ For positive `k, l, m`: `S_m(k, l) = 0` if and only if `l ≡ 1 (mod m)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Schur Number](modular-schur-number.md)
 
 ## Sources
 

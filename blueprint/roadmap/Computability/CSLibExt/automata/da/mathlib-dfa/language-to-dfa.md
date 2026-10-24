@@ -12,7 +12,7 @@ An upstream automaton and its Mathlib form accept the same language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To DFA](to-dfa.md)
 
 ## Sources
 

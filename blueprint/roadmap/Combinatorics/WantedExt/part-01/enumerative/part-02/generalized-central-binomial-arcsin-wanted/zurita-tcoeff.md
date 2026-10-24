@@ -13,6 +13,10 @@ The coefficient `t_k` of `T_{n-2}(x) = ∑_{k=0}^{n-2} t_k x^k` (`T_{-1} = 0` fo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zurita TCoeff Rev](zurita-tcoeff-rev.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedCentralBinomialArcsinWanted](../../../../../../../sources/v2/WantedExt.md)

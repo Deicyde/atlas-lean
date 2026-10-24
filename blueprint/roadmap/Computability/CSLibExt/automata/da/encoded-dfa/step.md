@@ -11,7 +11,7 @@ The transition function: the target of the first transition listed for `(s, a)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
 
 ## Sources
 

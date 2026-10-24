@@ -15,7 +15,7 @@ without the marker fails at the first word (`3 ≠ F_5 = 5`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Wythoff Unsum Word](upper-wythoff-unsum-word.md)
 
 ## Sources
 

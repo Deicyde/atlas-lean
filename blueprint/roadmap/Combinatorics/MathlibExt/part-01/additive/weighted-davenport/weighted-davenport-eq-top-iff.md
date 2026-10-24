@@ -12,7 +12,8 @@ lean: MetaMathlibExt.weightedDavenport_eq_top_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
+- [Weighted Davenport](weighted-davenport.md)
 
 ## Sources
 

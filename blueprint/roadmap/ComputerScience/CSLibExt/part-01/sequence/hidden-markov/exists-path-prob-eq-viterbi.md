@@ -12,7 +12,9 @@ The Viterbi variable is attained by a path ending in that state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+- [Path Prob](path-prob.md)
+- [Viterbi](viterbi.md)
 
 ## Sources
 

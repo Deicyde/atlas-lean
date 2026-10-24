@@ -19,7 +19,8 @@ to `+∞` (the terms need not be nonnegative); `t` is `(1 + τ_ψ)⁻¹` convert
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Order At Infinity](lower-order-at-infinity.md)
+- [Luroth Well Approximable Set](luroth-well-approximable-set.md)
 
 ## Sources
 

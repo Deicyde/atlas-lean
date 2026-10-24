@@ -12,7 +12,11 @@ lean: MetaMathlibExt.biBracket_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Bracket](bi-bracket.md)
+
+## Proof depends on
+
+- [Bi Bracket Partial](bi-bracket-partial.md)
 
 ## Sources
 

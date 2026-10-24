@@ -12,7 +12,13 @@ Before the leftmost intersection, the order of the status list persists from `x`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Left](left.md)
+- [Right](right.md)
+- [Line Y](line-y.md)
+
+## Proof depends on
+
+- [Crossing](exists-mem-inter-of-cross.md)
 
 ## Sources
 

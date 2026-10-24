@@ -14,6 +14,10 @@ with probability at least `1/2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Good Sequence Prob](good-sequence-prob.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.SmallCrossNumberZeroSumWanted](../../../../../../sources/v2/WantedExt.md)

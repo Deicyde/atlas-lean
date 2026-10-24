@@ -13,7 +13,7 @@ of the two 3-cycles, `1 ↦ 3 ↦ 2 ↦ 1` has one excedance and `1 ↦ 2 ↦ 3 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Eulerian](circular-eulerian.md)
 
 ## Sources
 

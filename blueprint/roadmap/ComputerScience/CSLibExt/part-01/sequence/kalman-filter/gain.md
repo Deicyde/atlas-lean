@@ -11,7 +11,7 @@ The Kalman gain `K = P Hᵀ (H P Hᵀ + R)⁻¹`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Belief](belief.md)
 
 ## Sources
 

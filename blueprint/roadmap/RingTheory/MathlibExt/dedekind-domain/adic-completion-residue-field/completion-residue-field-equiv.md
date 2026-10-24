@@ -18,6 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Completion Residue Map](completion-residue-map.md)
+- [Ker completion Residue Map](ker-completion-residue-map.md)
 - [Surjective completion Residue Map](surjective-completion-residue-map.md)
 
 ## Sources

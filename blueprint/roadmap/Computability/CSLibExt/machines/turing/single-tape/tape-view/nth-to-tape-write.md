@@ -12,7 +12,11 @@ The cells after a write: the head cell is the written cell, the others are uncha
 
 ## Depends on
 
-This node has no prerequisites.
+- [To Tape](to-tape.md)
+
+## Proof depends on
+
+- [To Tape write](to-tape-write.md)
 
 ## Sources
 

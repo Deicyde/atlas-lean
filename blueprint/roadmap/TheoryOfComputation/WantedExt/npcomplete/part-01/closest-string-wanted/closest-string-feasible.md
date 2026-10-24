@@ -11,7 +11,7 @@ A center string within distance `d` of every string.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closest String Instance](closest-string-instance.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Number of instructions generated for an arithmetic expression.
 
 ## Depends on
 
-This node has no prerequisites.
+- [AExp](../syntax/aexp.md)
 
 ## Sources
 

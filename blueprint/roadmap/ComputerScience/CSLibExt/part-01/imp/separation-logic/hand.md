@@ -11,7 +11,12 @@ Ordinary conjunction of heap assertions on the same heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HAssertion](hassertion.md)
+
+## Proof depends on
+
+- [Heap](../heap/heap.md)
+- [State](../syntax/state.md)
 
 ## Sources
 

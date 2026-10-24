@@ -13,7 +13,8 @@ unquantified; the hypothesis on `n` is taken from Theorem 5(b).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bh Max Card](bh-max-card.md)
+- [Bh Min Length](bh-min-length.md)
 
 ## Sources
 

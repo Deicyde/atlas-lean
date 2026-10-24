@@ -14,6 +14,10 @@ the other coordinates.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cond Law](cond-law.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Sampling.GibbsSampling](../../../../../../sources/v2/CSLibExt.md)

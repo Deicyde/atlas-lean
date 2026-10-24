@@ -11,7 +11,12 @@ P&R Helper started at `[x, y, z]`; the rank is `x + y + z`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+
+## Proof depends on
+
+- [Princess Roses Helper Moves](princess-roses-helper-moves.md)
+- [Princess Roses Helper Moves rank lt](princess-roses-helper-moves-rank-lt.md)
 
 ## Sources
 

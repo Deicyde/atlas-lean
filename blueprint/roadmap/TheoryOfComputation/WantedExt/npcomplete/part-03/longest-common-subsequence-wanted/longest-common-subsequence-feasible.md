@@ -11,7 +11,7 @@ A common subsequence of length at least `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest Common Subsequence Instance](longest-common-subsequence-instance.md)
 
 ## Sources
 

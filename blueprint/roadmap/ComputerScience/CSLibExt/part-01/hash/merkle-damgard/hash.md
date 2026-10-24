@@ -13,6 +13,10 @@ The Merkle–Damgård hash with length strengthening: `h (z_L, lenBlock L)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chain](chain.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.Hash.MerkleDamgard](../../../../../../sources/v2/CSLibExt.md)

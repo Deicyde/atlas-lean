@@ -12,7 +12,8 @@ lean: MetaMathlibExt.palindromicArndtGF_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Down Up Even GF](down-up-even-gf.md)
+- [Palindromic Arndt GF](palindromic-arndt-gf.md)
 
 ## Sources
 

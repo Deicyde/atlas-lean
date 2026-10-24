@@ -12,7 +12,11 @@ lean: Cslib.Turing.SingleTapeTM.consComputer_outputsWithinTime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cons Computer](cons-computer.md)
+
+## Proof depends on
+
+- [Write move Left mk₁](write-move-left-mk.md)
 
 ## Sources
 

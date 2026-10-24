@@ -11,7 +11,15 @@ The single-tape emulation of `tm` as a CSLib single-tape machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](../of-tm0/non-blank.md)
+
+## Proof depends on
+
+- [Emu Support](emu-support.md)
+- [Of TM0](../of-tm0/of-tm0.md)
+- [Supports univ](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/supports-univ.md)
+- [Tr](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [The emulation visits finitely many states](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr-supports.md)
 
 ## Sources
 

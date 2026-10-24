@@ -14,6 +14,10 @@ coefficient of `f_4^3 / (f_1^6 f_2^3)` (integer-valued).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Overcubic Triple Series](overcubic-triple-series.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.OvercubicPartitionTriplesWanted](../../../../../../../../../sources/v2/WantedExt.md)

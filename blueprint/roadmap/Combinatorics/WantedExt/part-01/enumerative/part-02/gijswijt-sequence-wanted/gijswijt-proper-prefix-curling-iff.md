@@ -13,7 +13,9 @@ the strings `B_{u-1}^{a_{u-1}} ⋯ B_1^{a_1}` (blocks of order `m + 1`) with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curling Number](curling-number.md)
+- [Gijswijt Block](gijswijt-block.md)
+- [Gijswijt Block Word](gijswijt-block-word.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The terms of a fundamental sequence are positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LStar Fundamental Sequence](is-lstar-fundamental-sequence.md)
 
 ## Sources
 

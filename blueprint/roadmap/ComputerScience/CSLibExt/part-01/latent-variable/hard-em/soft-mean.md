@@ -13,6 +13,10 @@ The M-step mean of component `k` with common-variance responsibilities.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Soft Assign](soft-assign.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.HardEM](../../../../../../sources/v2/CSLibExt.md)

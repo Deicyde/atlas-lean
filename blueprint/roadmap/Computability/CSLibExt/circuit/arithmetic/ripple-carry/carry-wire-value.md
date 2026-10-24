@@ -12,7 +12,9 @@ The carry wire carries the carry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carry Wire](carry-wire.md)
+- [Rca Input](rca-input.md)
+- [Rca Spec](rca-spec.md)
 
 ## Sources
 

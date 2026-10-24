@@ -14,7 +14,7 @@ Theorem 1: for `n ≥ 2` with prime factorization `n = ∏ pᵢ^{eᵢ}`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carmichael Index](carmichael-index.md)
 
 ## Sources
 

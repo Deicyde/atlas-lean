@@ -12,7 +12,7 @@ Finite frequentist risk is nonnegative at every parameter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequentist Risk](frequentist-risk.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ from the occupied spots `occ`; returns the final occupied spots (most recent fir
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Naples Spot Int](naples-spot-int.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KNaplesParkingWanted](../../../../../../../sources/v2/WantedExt.md)

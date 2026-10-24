@@ -11,7 +11,8 @@ Corollary 3: `S^[m₁+m₂](n) = S^[m₁](n) s(n) S^[m₂](n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling First Matrix](stirling-first-matrix.md)
+- [Stirling Second Shift Matrix](stirling-second-shift-matrix.md)
 
 ## Sources
 

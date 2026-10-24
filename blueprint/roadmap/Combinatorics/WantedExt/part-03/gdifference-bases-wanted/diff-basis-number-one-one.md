@@ -12,7 +12,11 @@ lean: MetaMathlibExt.diffBasisNumber_one_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diff Basis Number](diff-basis-number.md)
+
+## Proof depends on
+
+- [Sub Rep Count](sub-rep-count.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The number of pair `q`: its digit if it is an edge, else `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pair Digit](pair-digit.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.SubsetSum](../../../../../../../sources/v2/CSLibExt.md)

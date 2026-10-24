@@ -13,7 +13,7 @@ The paper's examples `si((1,…,5), (6,…,10)) = 6,7,1,8,2,3,9,4,5,10` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Superimpose](superimpose.md)
 
 ## Sources
 

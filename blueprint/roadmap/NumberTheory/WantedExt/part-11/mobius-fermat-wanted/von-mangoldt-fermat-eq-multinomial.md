@@ -12,7 +12,7 @@ Proposition 5: under the hypotheses of Proposition 4,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Unit Function](fermat-unit-function.md)
 
 ## Sources
 

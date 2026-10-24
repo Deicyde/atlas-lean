@@ -21,7 +21,7 @@ wording matches it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is AACarmichael](is-aacarmichael.md)
 
 ## Sources
 

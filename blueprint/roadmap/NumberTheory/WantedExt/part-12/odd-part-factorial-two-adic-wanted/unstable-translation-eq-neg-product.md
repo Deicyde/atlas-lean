@@ -15,7 +15,10 @@ global constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Double Factorial](odd-double-factorial.md)
+- [Odd Part](odd-part.md)
+- [Stable Bits](stable-bits.md)
+- [Unstable Bits](unstable-bits.md)
 
 ## Sources
 

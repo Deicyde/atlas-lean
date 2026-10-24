@@ -15,7 +15,7 @@ Interleaving functions: let `f` satisfy the hypotheses of `nthNonValue_eq_one_st
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

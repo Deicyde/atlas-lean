@@ -11,7 +11,8 @@ Loop count counter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
+- [PH](ph.md)
 
 ## Sources
 

@@ -14,7 +14,10 @@ Theorem 1.10: every `k`-generalized Cohn triple associated with `(a, b, c)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
+- [Gen Cohn Path](gen-cohn-path.md)
+- [Gen Cohn Step](gen-cohn-step.md)
+- [Gen Markov Vieta](gen-markov-vieta.md)
 
 ## Sources
 

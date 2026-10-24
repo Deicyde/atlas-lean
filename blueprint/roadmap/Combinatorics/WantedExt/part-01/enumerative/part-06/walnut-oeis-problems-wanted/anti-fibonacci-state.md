@@ -17,6 +17,10 @@ anti-Fibonacci numbers (OEIS A075326 without its initial `0`) and the missing nu
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

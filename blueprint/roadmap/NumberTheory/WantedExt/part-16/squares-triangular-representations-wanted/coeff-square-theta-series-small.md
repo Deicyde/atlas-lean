@@ -12,7 +12,7 @@ The first coefficients of `θ`: `1, 2, 0, 0, 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Theta Series](square-theta-series.md)
 
 ## Sources
 

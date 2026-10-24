@@ -11,7 +11,7 @@ lean: Cslib.Complexity.Karp.ColGrows
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](../color/col-st.md)
 
 ## Sources
 

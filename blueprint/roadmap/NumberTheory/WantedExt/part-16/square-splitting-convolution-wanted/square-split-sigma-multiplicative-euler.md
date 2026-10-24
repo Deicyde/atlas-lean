@@ -18,7 +18,8 @@ paper's identification of `f` with its `σ⋆,α` (defined only in the paper bod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split U](square-split-u.md)
+- [Square Split V](square-split-v.md)
 
 ## Sources
 

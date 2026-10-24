@@ -15,7 +15,8 @@ patterns.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascent Avoiders](ascent-avoiders.md)
+- [Length Three Patterns](length-three-patterns.md)
 
 ## Sources
 

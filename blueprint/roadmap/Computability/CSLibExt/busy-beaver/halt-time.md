@@ -11,7 +11,12 @@ The halting time of a halting machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts](halts.md)
+- [Machine](machine.md)
+
+## Proof depends on
+
+- [Halts Within](halts-within.md)
 
 ## Sources
 

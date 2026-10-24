@@ -14,7 +14,7 @@ Prove that $f$ is actually holomorphic on all of $\C$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coord Axes](coord-axes.md)
 
 ## Sources
 

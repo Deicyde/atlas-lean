@@ -18,7 +18,8 @@ a misprint for this length), is given as a function whose values list equals the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Is Parking Shuffle](is-parking-shuffle.md)
 
 ## Sources
 

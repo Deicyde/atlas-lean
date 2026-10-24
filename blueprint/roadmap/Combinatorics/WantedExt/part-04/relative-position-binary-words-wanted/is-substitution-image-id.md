@@ -12,7 +12,7 @@ Every word is its own image under the identity substitution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Substitution Image](is-substitution-image.md)
 
 ## Sources
 

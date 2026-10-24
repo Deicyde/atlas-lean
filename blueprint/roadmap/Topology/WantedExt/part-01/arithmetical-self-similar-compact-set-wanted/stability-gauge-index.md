@@ -16,6 +16,10 @@ value `ℓ μ - u` is the same for every witness when `K` is quasi-arithmetical;
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Self Similar Layer](self-similar-layer.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.ArithmeticalSelfSimilarCompactSetWanted](../../../../../sources/v2/WantedExt.md)

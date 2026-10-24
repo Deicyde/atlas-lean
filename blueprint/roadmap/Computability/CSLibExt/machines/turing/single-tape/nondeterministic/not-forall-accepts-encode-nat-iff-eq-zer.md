@@ -16,6 +16,10 @@ code `encodeNat 0` is the empty word, and a machine that accepts it accepts the 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Accepts of accepts nil](accepts-of-accepts-nil.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.Nondeterministic](../../../../../../../sources/v2/CSLibExt.md)

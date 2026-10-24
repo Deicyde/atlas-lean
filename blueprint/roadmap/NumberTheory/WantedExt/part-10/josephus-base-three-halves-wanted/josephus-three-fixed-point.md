@@ -14,6 +14,10 @@ The zero-indexed increasing enumeration of positive fixed points of `josephus 3`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.JosephusBaseThreeHalvesWanted](../../../../../sources/v2/WantedExt.md)

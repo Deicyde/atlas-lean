@@ -13,7 +13,7 @@ distinct parts and `q(x) = 0` when `x` is not an integer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ kernel of `P` is reversible with respect to `π` in Mathlib's sense.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pmf Kernel](pmf-kernel.md)
 
 ## Sources
 

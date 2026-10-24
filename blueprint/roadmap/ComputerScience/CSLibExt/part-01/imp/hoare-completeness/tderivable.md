@@ -13,7 +13,8 @@ equal to `n`, terminates in the invariant with the variant below `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
 
 ## Sources
 

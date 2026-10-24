@@ -13,7 +13,7 @@ the divisor summatory function; for integer `m`, `m ≤ n/2` means
 
 ## Depends on
 
-This node has no prerequisites.
+- [Floor Quotient Odd Count](floor-quotient-odd-count.md)
 
 ## Sources
 

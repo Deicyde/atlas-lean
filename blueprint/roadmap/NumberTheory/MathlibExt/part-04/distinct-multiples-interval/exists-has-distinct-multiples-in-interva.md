@@ -12,7 +12,7 @@ Some interval length works: `a_i = i (m + 1)` lies in `(m, m + n (m + 1)]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Distinct Multiples In Interval](has-distinct-multiples-in-interval.md)
 
 ## Sources
 

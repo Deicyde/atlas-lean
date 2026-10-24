@@ -12,7 +12,9 @@ There is a 2-coloring of the positive integers with no monochromatic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DAP](is-dap.md)
+- [Is Monochromatic](is-monochromatic.md)
+- [Positive Fibonacci Set](positive-fibonacci-set.md)
 
 ## Sources
 

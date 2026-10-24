@@ -14,7 +14,7 @@ Theorem 1: for every complex sequence `a` and `j, n ∈ ℕ`, with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypersequence](../hypersequence-weighted-sums-wanted/hypersequence.md)
 
 ## Sources
 

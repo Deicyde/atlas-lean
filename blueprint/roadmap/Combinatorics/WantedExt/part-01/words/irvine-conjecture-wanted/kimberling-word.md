@@ -16,6 +16,10 @@ blocks `K_n`, indexed from `0`: `kimberlingWord i = k_{i+1}`. The letter is read
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kimberling Block](kimberling-block.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Words.IrvineConjectureWanted](../../../../../../sources/v2/WantedExt.md)

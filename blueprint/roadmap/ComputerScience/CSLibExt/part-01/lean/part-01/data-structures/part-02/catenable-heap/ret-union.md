@@ -12,7 +12,8 @@ The result of `union h₁ h₂` is the join node whose children are `h₁` and `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Union](union.md)
 
 ## Sources
 

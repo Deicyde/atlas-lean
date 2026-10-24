@@ -11,7 +11,7 @@ The max-product message from the last vertex to its parent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
 
 ## Sources
 

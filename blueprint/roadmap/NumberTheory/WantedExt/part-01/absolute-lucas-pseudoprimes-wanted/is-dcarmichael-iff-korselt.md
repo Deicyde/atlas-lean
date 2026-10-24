@@ -14,7 +14,7 @@ states it for every odd positive `n`; primes (and `1`) satisfy the criterion but
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DCarmichael](is-dcarmichael.md)
 
 ## Sources
 

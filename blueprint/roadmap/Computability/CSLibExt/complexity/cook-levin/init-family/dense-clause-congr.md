@@ -13,7 +13,12 @@ the same dense clause (order and repetitions are irrelevant).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dense Clause](../family/dense-clause.md)
+- [Clause](../../dense-sat/clause.md)
+
+## Proof depends on
+
+- [Lookup pos](lookup-pos.md)
 
 ## Sources
 

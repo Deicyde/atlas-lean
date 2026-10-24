@@ -13,6 +13,10 @@ A number as a cell of a stack: that many units (`true`), then a marker (`false`)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.Universal.Clocked](../../../../../../../sources/v2/CSLibExt.md)

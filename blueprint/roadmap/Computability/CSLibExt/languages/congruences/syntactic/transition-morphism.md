@@ -11,7 +11,11 @@ The transition morphism from the free monoid of words into state transformations
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Transformation](state-transformation.md)
+
+## Proof depends on
+
+- [Transition Transformation](transition-transformation.md)
 
 ## Sources
 

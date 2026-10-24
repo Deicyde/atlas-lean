@@ -13,7 +13,13 @@ lean: MetaMathlibExt.kimberlingBlock_prefix_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kimberling Block](kimberling-block.md)
+
+## Proof depends on
+
+- [Kimberling Morphism](kimberling-morphism.md)
+- [Morph Extend](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend.md)
+- [Morph Extend append](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend-append.md)
 
 ## Sources
 

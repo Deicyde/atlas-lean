@@ -16,6 +16,10 @@ used so far, `A_{n+1}, B_{n+1}, C_{n+1}` are successive `mex` values and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anti Tribonacci Mex](anti-tribonacci-mex.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

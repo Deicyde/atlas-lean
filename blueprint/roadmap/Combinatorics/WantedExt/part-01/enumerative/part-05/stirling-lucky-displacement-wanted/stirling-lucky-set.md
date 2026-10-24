@@ -13,6 +13,10 @@ lean: MetaMathlibExt.stirlingLuckySet
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stirling Park Spot](stirling-park-spot.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.StirlingLuckyDisplacementWanted](../../../../../../../sources/v2/WantedExt.md)

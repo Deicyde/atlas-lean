@@ -12,7 +12,13 @@ lean: Cslib.Decidability.manyOneReducible_not_halting_finite
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Code](finite-code.md)
+
+## Proof depends on
+
+- [Halts Within Fun](halts-within-fun.md)
+- [Halts Within Fun dom](halts-within-fun-dom.md)
+- [Parametrized s-m-n](../../../../MathlibExt/exists-computable-code.md)
 
 ## Sources
 

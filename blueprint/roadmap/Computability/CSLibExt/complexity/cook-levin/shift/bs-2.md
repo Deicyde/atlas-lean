@@ -11,7 +11,8 @@ Base counter of literal `l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BS](bs.md)
+- [CL](cl.md)
 
 ## Sources
 

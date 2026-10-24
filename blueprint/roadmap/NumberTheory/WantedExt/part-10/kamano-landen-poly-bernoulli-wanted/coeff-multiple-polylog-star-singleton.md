@@ -12,7 +12,11 @@ Depth one: `Li⋆_{(a)}(z) = ∑_{m ≥ 1} z^m / m^a` for `a ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiple Polylog Star](multiple-polylog-star.md)
+
+## Proof depends on
+
+- [Multiple Polylog Star Coeff Rev](multiple-polylog-star-coeff-rev.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The verifier's input on `(a, y)` is `x ++ (y mapped)`, `x` = tagged `a` then `#`
 
 ## Depends on
 
-This node has no prerequisites.
+- [V Y](v-y.md)
+- [Veqv](veqv.md)
+- [Vsep](vsep.md)
+- [Vι](v.md)
+- [G](../../dense-satverifier/g.md)
+- [Pair Encode](../../dense-satverifier/pair-encode.md)
 
 ## Sources
 

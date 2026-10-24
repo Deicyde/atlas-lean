@@ -13,7 +13,11 @@ Expectation pulls out a real scalar multiple, stated with `•`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expect](expect.md)
+
+## Proof depends on
+
+- [Expect const mul](expect-const-mul.md)
 
 ## Sources
 

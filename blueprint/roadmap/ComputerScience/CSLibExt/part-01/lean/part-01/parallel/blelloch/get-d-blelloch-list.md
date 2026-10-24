@@ -12,7 +12,14 @@ lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.getD_blellochList
 
 ## Depends on
 
-This node has no prerequisites.
+- [Blelloch](blelloch.md)
+- [Blelloch List](blelloch-list.md)
+
+## Proof depends on
+
+- [Expand](expand.md)
+- [Pair List](pair-list.md)
+- [Pair Up](pair-up.md)
 
 ## Sources
 

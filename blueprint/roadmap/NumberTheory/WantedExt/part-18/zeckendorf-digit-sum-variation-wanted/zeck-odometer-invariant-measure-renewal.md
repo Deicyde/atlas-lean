@@ -14,7 +14,8 @@ Renewal property of `ℙ`, with `σ` the shift `(σ x)_i = x_{i+1}`: for a cylin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Odometer](zeck-odometer.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Theorem 6: with `I_k(x) = ∑ I_{n,k} xⁿ` and `U_k(x) = ∑ U_{n,k} xⁿ`, for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascending Naples Count](ascending-naples-count.md)
+- [Ascending Naples One Count](ascending-naples-one-count.md)
 
 ## Sources
 

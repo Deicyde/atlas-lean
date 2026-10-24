@@ -13,6 +13,10 @@ The black squares (`i + j` odd) of `S_m`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Square Board](square-board.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NonattackingBishopsAnassasWanted](../../../../../../../sources/v2/WantedExt.md)

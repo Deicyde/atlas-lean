@@ -11,7 +11,13 @@ The cost of reading the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../code/code.md)
+
+## Proof depends on
+
+- [Cells](cells.md)
+- [Code Cells](code-cells.md)
+- [Input](../code/input.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For `3 ≤ k ≤ 10` the `n`-th non-`k`-gonal number is `n + ⌊√(2n / (k - 2)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

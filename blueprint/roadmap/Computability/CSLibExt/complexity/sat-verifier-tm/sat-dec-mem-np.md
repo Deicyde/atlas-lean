@@ -12,7 +12,15 @@ lean: Cslib.Complexity.SatVerifier.Machine.satDec_mem_NP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sat Dec](../../cook-levin/sat-dec.md)
+- [Decision Complexity Class](../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
+- [NP](../../../MathlibExt/complexity/np.md)
+
+## Proof depends on
+
+- [`satVerifier` is polynomial-time](is-poly-time-sat-verifier.md)
+- [Sat Dec mem NP of is Poly Time](../../sat-time-m/sat-dec-mem-np-of-is-poly-time.md)
 
 ## Sources
 

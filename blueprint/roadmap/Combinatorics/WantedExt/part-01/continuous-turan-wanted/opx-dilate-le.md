@@ -13,7 +13,7 @@ Then `opx(n, P') ≤ (⌈qd/c⌉ + 1)² opx(⌈⌈n/c⌉ / (⌈qd/c⌉ + 1)⌉ c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

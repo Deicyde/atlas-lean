@@ -13,7 +13,7 @@ it is one of these two.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Collatz](q-collatz.md)
 
 ## Sources
 

@@ -12,7 +12,18 @@ lean: DFA.hopcroftLoop_waiting_eq_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Init P](init-p.md)
+- [Init W](init-w.md)
+- [Hopcroft Loop](hopcroft-loop.md)
+
+## Proof depends on
+
+- [Inv](inv.md)
+- [Acc Block](acc-block.md)
+- [Inv init](inv-init.md)
+- [Rej Block](rej-block.md)
+- [Smaller](smaller.md)
+- [Termination](hopcroft-loop-spec.md)
 
 ## Sources
 

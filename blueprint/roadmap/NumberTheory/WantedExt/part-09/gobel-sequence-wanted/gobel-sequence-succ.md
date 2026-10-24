@@ -13,7 +13,7 @@ for `n ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Sequence](gobel-sequence.md)
 
 ## Sources
 

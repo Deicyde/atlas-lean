@@ -12,7 +12,8 @@ If `Δ_k^{(r)}(x)` is eventually `d`, then `Δ^{(r)}(x) = d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
 
 ## Sources
 

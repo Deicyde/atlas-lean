@@ -13,7 +13,8 @@ Corollary 12 (conjecture of Applegate, LeBrun and Sloane): for fixed `b ≥ 2`, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lunar Prime](is-lunar-prime.md)
+- [Digit Seq](digit-seq.md)
 
 ## Sources
 

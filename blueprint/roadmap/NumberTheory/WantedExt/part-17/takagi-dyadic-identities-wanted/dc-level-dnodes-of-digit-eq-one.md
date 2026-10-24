@@ -12,7 +12,7 @@ lean: MetaMathlibExt.dcLevelDNodes_of_digit_eq_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dc Level DNodes](dc-level-dnodes.md)
 
 ## Sources
 

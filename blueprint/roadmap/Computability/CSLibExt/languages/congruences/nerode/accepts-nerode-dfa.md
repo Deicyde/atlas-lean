@@ -12,7 +12,13 @@ The canonical Nerode automaton recognizes exactly `L`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](nerode-class.md)
+- [Nerode DFA](nerode-dfa.md)
+
+## Proof depends on
+
+- [Accepting](accepting.md)
+- [Nerode Class](nerode-class-2.md)
 
 ## Sources
 

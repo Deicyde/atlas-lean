@@ -12,7 +12,8 @@ re(a|b|c, h) re(a|b*|c*, h) re(b|a*|c*, h) re(c|a*|b*, h)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
+- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

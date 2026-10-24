@@ -13,7 +13,7 @@ and the same with `∑_{k=0}^{n} C(r + k - 1, k) L_{n-k}` as first sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

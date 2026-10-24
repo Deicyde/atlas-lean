@@ -11,7 +11,11 @@ Projection `π_T r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
+
+## Proof depends on
+
+- [Restrict](restrict.md)
 
 ## Sources
 

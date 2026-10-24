@@ -15,10 +15,11 @@ If the series $\sum_n f_n$ converges normally on $S$, then it converges normally
 
 ## Depends on
 
-- [Extended supremum norm on a set](sup-norm-on.md)
+- [Converges Normally On](converges-normally-on.md)
 
 ## Proof depends on
 
+- [Extended supremum norm on a set](sup-norm-on.md)
 - [Monotonicity of the supremum norm in the domain](sup-norm-on-mono.md)
 
 ## Sources

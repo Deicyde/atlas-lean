@@ -12,7 +12,7 @@ binom(n+v, (2k+v)/2)^{-1} = 2^{2n} binom(v, v/2)` for real `v > -1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

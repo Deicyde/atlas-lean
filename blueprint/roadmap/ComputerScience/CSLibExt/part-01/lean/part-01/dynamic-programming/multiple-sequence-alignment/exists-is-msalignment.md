@@ -13,7 +13,8 @@ the total length: peel the head of one nonempty sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSAlignment](is-msalignment.md)
+- [MSAlignment](msalignment.md)
 
 ## Sources
 

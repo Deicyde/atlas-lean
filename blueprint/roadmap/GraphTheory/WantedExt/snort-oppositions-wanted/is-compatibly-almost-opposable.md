@@ -14,6 +14,10 @@ opposition `f` agreeing on `V ∖ S` with an involutive automorphism `α` of `G`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Opposition](is-opposition.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.SnortOppositionsWanted](../../../../sources/v2/WantedExt.md)

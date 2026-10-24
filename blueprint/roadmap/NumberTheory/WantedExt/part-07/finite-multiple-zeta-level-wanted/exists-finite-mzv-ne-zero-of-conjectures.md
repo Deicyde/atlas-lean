@@ -18,7 +18,9 @@ relaxed to `w ≥ 0` (the empty index has value `1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Finite MZV](colored-finite-mzv.md)
+- [Finite MZVColored](finite-mzvcolored.md)
+- [Is Wieferich Prime](../../../MathlibExt/part-12/wieferich-prime/is-wieferich-prime.md)
 
 ## Sources
 

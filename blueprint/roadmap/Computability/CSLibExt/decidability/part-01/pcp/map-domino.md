@@ -11,7 +11,13 @@ The image `(⋆t, b⋆)` of a domino `(t, b)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](domino.md)
+- [Sym](sym.md)
+
+## Proof depends on
+
+- [Star After](star-after.md)
+- [Star Before](star-before.md)
 
 ## Sources
 

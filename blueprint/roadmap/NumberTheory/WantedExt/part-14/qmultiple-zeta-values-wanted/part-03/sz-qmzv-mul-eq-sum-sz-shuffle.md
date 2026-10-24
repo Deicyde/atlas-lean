@@ -12,7 +12,10 @@ lean: MetaMathlibExt.szQMZV_mul_eq_sum_szShuffle
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz QMZV](../part-01/sz-qmzv.md)
+- [Sz QMZVWord](sz-qmzvword.md)
+- [Sz Shuffle](sz-shuffle.md)
+- [Sz Word](sz-word.md)
 
 ## Sources
 

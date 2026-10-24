@@ -13,7 +13,7 @@ set, exactly as opposed to an orbit-density reformulation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Minimal System](is-minimal-system.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ cell holds exactly the nonterminals that yield the word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chomsky Normal Form](../chomsky-normal-form/is-chomsky-normal-form.md)
+- [Yields](../../part-02/yields/yields.md)
+- [Cyk Cell](cyk-cell.md)
+
+## Proof depends on
+
+- [The CYK step](mem-cyk-cell-from-iff.md)
 
 ## Sources
 

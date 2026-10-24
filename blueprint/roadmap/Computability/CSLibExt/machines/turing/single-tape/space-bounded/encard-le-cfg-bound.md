@@ -13,7 +13,7 @@ use at most `k` cells.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cfg Bound](cfg-bound.md)
 
 ## Sources
 

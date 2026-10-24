@@ -11,7 +11,7 @@ Multiplicities meeting the weight and value bounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unbounded Knapsack Instance](unbounded-knapsack-instance.md)
 
 ## Sources
 

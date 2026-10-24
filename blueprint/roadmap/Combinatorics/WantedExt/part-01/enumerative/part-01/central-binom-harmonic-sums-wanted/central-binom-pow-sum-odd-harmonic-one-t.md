@@ -11,7 +11,8 @@ Corollary 1: closed forms of `S_r^O(n)` for `r = 1, 2, 3` in terms of `O_{n+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binom Pow Sum](central-binom-pow-sum.md)
+- [Odd Harmonic](../../../../../../NumberTheory/MathlibExt/part-01/harmonic/odd-harmonic/odd-harmonic.md)
 
 ## Sources
 

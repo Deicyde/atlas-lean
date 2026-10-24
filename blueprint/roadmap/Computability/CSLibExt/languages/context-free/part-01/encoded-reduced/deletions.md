@@ -14,6 +14,10 @@ The right-hand sides obtained from `u` by deleting some occurrences of nontermin
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mem B](../../../../decidability/part-01/primrec-list/mem-b.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.EncodedReduced](../../../../../../../sources/v2/CSLibExt.md)

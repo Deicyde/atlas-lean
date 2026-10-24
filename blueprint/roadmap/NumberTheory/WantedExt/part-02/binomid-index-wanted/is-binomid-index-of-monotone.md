@@ -12,7 +12,7 @@ a binomid index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Binomid Index](is-binomid-index.md)
 
 ## Sources
 

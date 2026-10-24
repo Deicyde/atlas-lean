@@ -13,7 +13,7 @@ Series representation of the Dirichlet eta function: for `q, t ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Signed Sum](stride-signed-sum.md)
 
 ## Sources
 

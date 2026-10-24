@@ -13,6 +13,10 @@ The link positions `0 = L₀ < L₁ < ⋯ < L_M = c - 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diamond Link Pos](diamond-link-pos.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PartitionDiamondsEulerMahonianWanted](../../../../../../../sources/v2/WantedExt.md)

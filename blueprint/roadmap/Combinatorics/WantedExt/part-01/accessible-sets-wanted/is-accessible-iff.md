@@ -12,7 +12,8 @@ Characterization of accessibility as `r`-accessibility for all `r ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Accessible](is-accessible.md)
+- [Is RAccessible](is-raccessible.md)
 
 ## Sources
 

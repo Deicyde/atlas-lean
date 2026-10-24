@@ -12,7 +12,15 @@ Eilenberg's equivalence: finite kernel iff DFAO-computable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KAutomatic](is-kautomatic.md)
+- [Is KAutomatic Sequence](../cobham-uniform-morphism/is-kautomatic-sequence.md)
+
+## Proof depends on
+
+- [Base Word Value LSD](../cobham-uniform-morphism/base-word-value-lsd.md)
+- [Chr kernel lam mem](chr-kernel-lam-mem.md)
+- [Chr self mem kernel](chr-self-mem-kernel.md)
+- [K Kernel](k-kernel.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The EM marginal of the model is the HMM likelihood.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marginal](../../latent-variable/expectation-maximization/marginal.md)
+- [Valid](valid.md)
+- [Valid HMM](valid-hmm.md)
+- [Joint](joint.md)
+- [HMM](../hidden-markov/hmm.md)
+- [Likelihood](../hidden-markov/likelihood.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Flattening distributes over `++`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flat](flat.md)
 
 ## Sources
 

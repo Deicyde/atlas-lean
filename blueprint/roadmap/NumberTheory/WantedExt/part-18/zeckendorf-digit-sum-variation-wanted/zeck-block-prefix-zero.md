@@ -12,7 +12,11 @@ lean: MetaMathlibExt.zeckBlockPrefix_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Block Prefix](zeck-block-prefix.md)
+
+## Proof depends on
+
+- [Zeck Blocks](zeck-blocks.md)
 
 ## Sources
 

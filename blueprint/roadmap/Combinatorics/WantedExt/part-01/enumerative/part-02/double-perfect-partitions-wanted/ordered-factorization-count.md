@@ -14,6 +14,10 @@ lean: MetaMathlibExt.orderedFactorizationCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ordered Factorization Count Aux](ordered-factorization-count-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.DoublePerfectPartitionsWanted](../../../../../../../sources/v2/WantedExt.md)

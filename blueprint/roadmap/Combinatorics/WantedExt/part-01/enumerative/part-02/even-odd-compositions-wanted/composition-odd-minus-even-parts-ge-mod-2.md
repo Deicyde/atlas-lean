@@ -12,7 +12,7 @@ Corollary 12: if `r > s ≥ 0` and `k = r - s`, then `b^{r,s}_{k,n} = 1` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Odd Minus Even](composition-odd-minus-even.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ summands is also a set of `k`-topological recurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LTopological Recurrence](is-ltopological-recurrence.md)
 
 ## Sources
 

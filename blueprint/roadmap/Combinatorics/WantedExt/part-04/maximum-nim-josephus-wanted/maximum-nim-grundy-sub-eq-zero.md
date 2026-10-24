@@ -13,7 +13,7 @@ Lemma 3(iii): for `k ≥ 2` and each `j` from one through `k`, the position
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim Grundy](maximum-nim-grundy.md)
 
 ## Sources
 

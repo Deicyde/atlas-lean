@@ -13,7 +13,7 @@ repetition `η^∞`. The finite index is the first `m` values of `e`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
 
 ## Sources
 

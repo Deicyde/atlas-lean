@@ -12,7 +12,7 @@ side.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](rule.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ With one color for every block, `d_{3,2} = 3` (a Narayana number).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Dyck Path Count](colored-dyck-path-count.md)
 
 ## Sources
 

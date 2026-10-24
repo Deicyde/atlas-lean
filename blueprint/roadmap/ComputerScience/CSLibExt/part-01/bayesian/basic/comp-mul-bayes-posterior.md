@@ -12,7 +12,11 @@ Multiplying the posterior back by the evidence recovers the joint mass.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayes Posterior](bayes-posterior.md)
+
+## Proof depends on
+
+- [Comp apply singleton](comp-apply-singleton.md)
 
 ## Sources
 

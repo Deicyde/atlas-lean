@@ -16,6 +16,13 @@ its negative and positive elements (Definition 2).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adler Block Labels](adler-block-labels.md)
+- [Doubled Word](doubled-word.md)
+- [Type BShift](type-bshift.md)
+- [Wrapped Word](wrapped-word.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.FlattenedStirlingPermutationsWanted](../../../../../../../sources/v2/WantedExt.md)

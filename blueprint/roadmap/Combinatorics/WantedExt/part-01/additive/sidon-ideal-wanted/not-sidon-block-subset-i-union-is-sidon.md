@@ -12,7 +12,8 @@ is not covered by `n - 1` Sidon sets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sidon Block](sidon-block.md)
+- [Sidon](../../../../MathlibExt/part-01/additive/is-sidon.md)
 
 ## Sources
 

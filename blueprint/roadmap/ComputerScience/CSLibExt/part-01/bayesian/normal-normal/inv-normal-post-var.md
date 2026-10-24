@@ -12,7 +12,7 @@ Precisions add: `1 / normalPostVar = 1 / v₀ + 1 / v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal Post Var](normal-post-var.md)
 
 ## Sources
 

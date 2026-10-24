@@ -13,7 +13,18 @@ checking machine, then the layout machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc In](../clocked/enc-in.md)
+- [Code](../code/code.md)
+- [Diag Arg](../diagonalization/diag-arg.md)
+
+## Proof depends on
+
+- [Answer](answer.md)
+- [Checking in polynomial time](poly-time.md)
+- [Layout](layout.md)
+- [The layout in polynomial time](poly-time-2.md)
+- [Layout answer](layout-answer.md)
+- [Comp Computable](../../../../../MathlibExt/turing-machine/composition/comp-computable.md)
 
 ## Sources
 

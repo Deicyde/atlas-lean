@@ -12,7 +12,7 @@ lean: MetaMathlibExt.jacobiThetaOneSine_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobi Theta One Sine](jacobi-theta-one-sine.md)
 
 ## Sources
 

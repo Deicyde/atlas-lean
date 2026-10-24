@@ -13,7 +13,8 @@ For `1 ≤ a < n` and `0 ≤ i ≤ m - 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Vec](convergent-vec.md)
+- [Partial Quotient](partial-quotient.md)
 
 ## Sources
 

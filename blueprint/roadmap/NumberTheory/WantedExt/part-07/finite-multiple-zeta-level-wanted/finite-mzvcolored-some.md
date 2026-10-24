@@ -12,7 +12,8 @@ A constant color map gives the colored sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Colored Finite MZV](colored-finite-mzv.md)
+- [Finite MZVColored](finite-mzvcolored.md)
 
 ## Sources
 

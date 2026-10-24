@@ -12,7 +12,13 @@ lean: MetaMathlibExt.isSylverNPosition_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver NPosition](is-sylver-nposition.md)
+
+## Proof depends on
+
+- [Is Sylver PPosition](is-sylver-pposition.md)
+- [Is Sylver PPosition two three](is-sylver-pposition-two-three.md)
+- [Sylver Legal Moves](sylver-legal-moves.md)
 
 ## Sources
 

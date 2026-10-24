@@ -11,7 +11,11 @@ A network sorts inputs over `α` if every output is monotone in the wire order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](network.md)
+
+## Proof depends on
+
+- [Run](run.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MetaMathlibExt.garvanYEven_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garvan X](garvan-x.md)
+- [Garvan YEven](garvan-yeven.md)
 
 ## Sources
 

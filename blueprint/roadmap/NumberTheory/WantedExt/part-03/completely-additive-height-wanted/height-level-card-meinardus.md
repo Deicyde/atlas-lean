@@ -15,7 +15,8 @@ satisfy (M1)-(M3) with exponent `α > 0` and residue `C > 0`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Height Function](is-height-function.md)
+- [Meinardus Hypotheses](meinardus-hypotheses.md)
 
 ## Sources
 

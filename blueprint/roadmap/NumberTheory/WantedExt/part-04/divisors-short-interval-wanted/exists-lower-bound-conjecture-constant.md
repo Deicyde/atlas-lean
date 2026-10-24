@@ -12,7 +12,7 @@ If `k` bounds `D_n(n^θ, n^{θ-ε})` for every `n ≥ 1` (Conjecture 2), then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Short Interval Divisor Count](short-interval-divisor-count.md)
 
 ## Sources
 

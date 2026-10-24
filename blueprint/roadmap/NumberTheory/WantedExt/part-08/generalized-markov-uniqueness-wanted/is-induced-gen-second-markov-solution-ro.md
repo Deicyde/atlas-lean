@@ -13,7 +13,7 @@ solution of `GSME(k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Induced Gen Second Markov Solution](is-induced-gen-second-markov-solution.md)
 
 ## Sources
 

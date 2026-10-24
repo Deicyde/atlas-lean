@@ -13,7 +13,7 @@ the degree of the zero polynomial is not mathematically defined.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Star Coeff](h-star-coeff.md)
 
 ## Sources
 

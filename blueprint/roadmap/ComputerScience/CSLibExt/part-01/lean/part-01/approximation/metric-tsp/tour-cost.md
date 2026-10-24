@@ -13,6 +13,10 @@ The cost of the closed tour visiting `H` in order and returning to its first ver
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Path From](path-from.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.MetricTSP](../../../../../../../../sources/v2/CSLibExt.md)

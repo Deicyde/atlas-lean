@@ -12,7 +12,11 @@ A single point is contained in every nonempty set of cells, so `ex(n, M_{p}, d) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pattern Ex D](pattern-ex-d.md)
+
+## Proof depends on
+
+- [Cells Contain Pattern D](cells-contain-pattern-d.md)
 
 ## Sources
 

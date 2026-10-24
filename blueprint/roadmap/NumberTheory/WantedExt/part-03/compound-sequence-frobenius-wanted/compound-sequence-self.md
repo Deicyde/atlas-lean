@@ -12,7 +12,7 @@ lean: MetaMathlibExt.compoundSequence_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compound Sequence](compound-sequence.md)
 
 ## Sources
 

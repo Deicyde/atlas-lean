@@ -17,7 +17,7 @@ the left side has coefficient `1`, the right side `U_o(1) - U_e(1) = 0 - 1 = -1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
 
 ## Sources
 

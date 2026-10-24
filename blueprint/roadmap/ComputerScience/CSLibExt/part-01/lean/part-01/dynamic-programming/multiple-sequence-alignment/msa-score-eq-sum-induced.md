@@ -12,7 +12,16 @@ lean: Cslib.Algorithms.Lean.msaScore_eq_sum_induced
 
 ## Depends on
 
-This node has no prerequisites.
+- [MSAlignment](msalignment.md)
+- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Induced Pair](induced-pair.md)
+- [Msa Score](msa-score.md)
+- [Pair Finset](pair-finset.md)
+
+## Proof depends on
+
+- [Alignment Score induced Pair](alignment-score-induced-pair.md)
+- [Column Score](../sequence-alignment/column-score.md)
 
 ## Sources
 

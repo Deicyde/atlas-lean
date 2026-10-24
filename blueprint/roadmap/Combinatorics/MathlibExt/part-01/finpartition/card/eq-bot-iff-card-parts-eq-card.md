@@ -14,6 +14,10 @@ A partition is bottom iff its number of blocks equals the carrier cardinality.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One le card of mem parts](one-le-card-of-mem-parts.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Finpartition.Card](../../../../../../sources/v2/MathlibExt.md)

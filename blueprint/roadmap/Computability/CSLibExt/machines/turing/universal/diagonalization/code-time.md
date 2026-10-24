@@ -12,7 +12,13 @@ input `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+
+## Proof depends on
+
+- [Code](../code/code.md)
+- [Decides Within](decides-within.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

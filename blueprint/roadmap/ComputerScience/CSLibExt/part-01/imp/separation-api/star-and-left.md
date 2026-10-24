@@ -14,7 +14,14 @@ outside the separating conjunction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HAssertion](../separation-logic/hassertion.md)
+- [Star](../separation-logic/star.md)
+- [Heap](../heap/heap.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [Disjoint](../heap/disjoint.md)
 
 ## Sources
 

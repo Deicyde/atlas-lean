@@ -13,7 +13,7 @@ Corollary 12: for `b ≥ 2`, odd `q ≥ 1`, `0 ≤ r < q` and `b ≡ 1 (mod q)`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Palindrome APCount](palindrome-apcount.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.monic_sum_divisorCount_natDegree_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
 
 ## Sources
 

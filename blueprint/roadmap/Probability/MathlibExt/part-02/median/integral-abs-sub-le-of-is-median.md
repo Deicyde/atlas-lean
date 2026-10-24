@@ -14,7 +14,11 @@ convention for non-integrable functions.)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Median](is-median.md)
+
+## Proof depends on
+
+- [Integrable abs sub iff](integrable-abs-sub-iff.md)
 
 ## Sources
 

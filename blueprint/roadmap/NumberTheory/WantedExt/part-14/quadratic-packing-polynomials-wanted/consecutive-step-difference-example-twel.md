@@ -13,7 +13,7 @@ step difference `k = 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consecutive Step Difference](consecutive-step-difference.md)
 
 ## Sources
 

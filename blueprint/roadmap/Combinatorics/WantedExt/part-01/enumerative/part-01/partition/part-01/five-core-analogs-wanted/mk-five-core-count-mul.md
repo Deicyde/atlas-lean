@@ -12,7 +12,8 @@ Generating function of `c_5`: `(∑ c_5(n) q^n) f_1 = f_5^5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Five Core Count](five-core-count.md)
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

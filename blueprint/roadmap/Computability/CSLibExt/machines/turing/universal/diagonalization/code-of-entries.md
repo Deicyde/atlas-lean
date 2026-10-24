@@ -13,7 +13,11 @@ holds the first entry with its key (`Clocked.findEntry`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../code/code.md)
+
+## Proof depends on
+
+- [Find Entry](../clocked/find-entry.md)
 
 ## Sources
 

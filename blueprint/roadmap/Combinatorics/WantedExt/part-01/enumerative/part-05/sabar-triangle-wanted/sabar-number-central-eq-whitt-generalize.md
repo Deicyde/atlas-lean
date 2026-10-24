@@ -12,7 +12,8 @@ Theorem 7: for `n ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sabar Number](sabar-number.md)
+- [Whitt Generalized Catalan](../../../../../MathlibExt/part-01/enumerative/part-09/whitt-generalized-catalan/whitt-generalized-catalan.md)
 
 ## Sources
 

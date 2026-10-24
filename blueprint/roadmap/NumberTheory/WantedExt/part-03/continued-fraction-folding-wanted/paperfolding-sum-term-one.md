@@ -12,7 +12,7 @@ With `x₀ = 2`, `s₁ = 1/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Paperfolding Sum Term](paperfolding-sum-term.md)
 
 ## Sources
 

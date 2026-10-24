@@ -11,7 +11,7 @@ Initial counters: `T`, `n = |xs|`, `e = m - n`, `f = H - m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
 
 ## Sources
 

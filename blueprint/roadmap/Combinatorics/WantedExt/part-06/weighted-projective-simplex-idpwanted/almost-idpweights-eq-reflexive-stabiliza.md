@@ -14,7 +14,8 @@ the list presentation used by `reflexiveStabilization`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost IDPWeights](almost-idpweights.md)
+- [Reflexive Stabilization](reflexive-stabilization.md)
 
 ## Sources
 

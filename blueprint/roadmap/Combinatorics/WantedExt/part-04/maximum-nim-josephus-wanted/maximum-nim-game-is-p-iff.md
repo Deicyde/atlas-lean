@@ -15,7 +15,13 @@ deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Maximum Nim Game](maximum-nim-game.md)
+
+## Proof depends on
+
+- [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
+- [Is P iff](../../../../GameTheory/MathlibExt/sprague-grundy/is-p-iff.md)
 
 ## Sources
 

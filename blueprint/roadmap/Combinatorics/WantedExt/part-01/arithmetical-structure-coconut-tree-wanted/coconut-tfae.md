@@ -13,7 +13,8 @@ equivalent: (1) `d_i ≥ 2` for `1 ≤ i ≤ p - 1`; (2)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

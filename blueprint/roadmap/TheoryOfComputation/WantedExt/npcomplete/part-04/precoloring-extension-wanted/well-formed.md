@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Precoloring Extension Instance](precoloring-extension-instance.md)
 
 ## Sources
 

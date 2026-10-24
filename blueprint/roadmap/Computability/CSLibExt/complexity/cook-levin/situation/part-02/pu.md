@@ -11,7 +11,11 @@ Code of the symbol situation `i` leaves at depth `j` of stack `k` (`0` if none).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+
+## Proof depends on
+
+- [Res](../part-01/res.md)
 
 ## Sources
 

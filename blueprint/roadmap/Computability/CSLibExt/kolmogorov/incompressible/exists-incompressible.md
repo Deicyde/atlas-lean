@@ -13,7 +13,12 @@ least `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+
+## Proof depends on
+
+- [Few strings have small complexity](card-lt-two-pow.md)
+- [Strings Of Length](strings-of-length.md)
 
 ## Sources
 

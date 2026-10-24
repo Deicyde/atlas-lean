@@ -11,7 +11,7 @@ For `k ≥ 9`, `T₃(k) ≤ T₃(k - 6) + 2k + 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Time](bridge-time.md)
 
 ## Sources
 

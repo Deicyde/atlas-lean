@@ -15,7 +15,11 @@ reading `C_{2(c-1-4),j-1}` in (iii) as `C_{2(c-1)-4,j-1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Edge](circuit-edge.md)
+- [Circuit Array X](circuit-array-x.md)
+- [Circuit Left Edge](circuit-left-edge.md)
+- [Circuit Perimeter](circuit-perimeter.md)
+- [Circuit Right Edge](circuit-right-edge.md)
 
 ## Sources
 

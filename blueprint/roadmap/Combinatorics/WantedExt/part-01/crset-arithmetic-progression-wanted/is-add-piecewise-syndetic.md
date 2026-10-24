@@ -14,6 +14,10 @@ A set `A` is piecewise syndetic when for some finite `F` the union
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Add Thick](is-add-thick.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CRSetArithmeticProgressionWanted](../../../../../sources/v2/WantedExt.md)

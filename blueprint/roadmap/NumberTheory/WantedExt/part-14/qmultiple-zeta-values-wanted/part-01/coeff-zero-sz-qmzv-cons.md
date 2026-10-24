@@ -12,7 +12,11 @@ A nonempty SZ-qMZV has no constant term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz QMZV](sz-qmzv.md)
+
+## Proof depends on
+
+- [Sz QMZVPartial](sz-qmzvpartial.md)
 
 ## Sources
 

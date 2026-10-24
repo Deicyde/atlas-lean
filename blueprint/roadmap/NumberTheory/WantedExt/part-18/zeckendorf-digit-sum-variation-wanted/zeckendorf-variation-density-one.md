@@ -12,7 +12,7 @@ The distribution of `Δ^{(1)}`: `μ^{(1)}(d) = 0` for `d ≥ 2`, `μ^{(1)}(1) = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

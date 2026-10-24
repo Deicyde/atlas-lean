@@ -12,7 +12,7 @@ A lacunary set is infinite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gap Lacunary Set](is-gap-lacunary-set.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ lean: Cslib.MachineLearning.Sampling.integral_isEstimate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Estimate](is-estimate.md)
+
+## Proof depends on
+
+- [The Monte Carlo estimator is unbiased](integral-mc-estimate.md)
+- [Integral weight mul](integral-weight-mul.md)
 
 ## Sources
 

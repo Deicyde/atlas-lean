@@ -12,7 +12,14 @@ The left-side diagonal of `C^M`: `C^M₀,₁ = X₁` and `C^M₂,₂ = X₂`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circuit Array M](circuit-array-m.md)
+- [Circuit Var](circuit-var.md)
+
+## Proof depends on
+
+- [Circuit Edge](circuit-edge.md)
+- [Circuit Grid](circuit-grid.md)
+- [Circuit Reduce](circuit-reduce.md)
 
 ## Sources
 

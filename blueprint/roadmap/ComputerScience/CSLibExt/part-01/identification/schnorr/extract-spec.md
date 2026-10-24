@@ -13,7 +13,9 @@ with the same commitment and different challenges reveal a discrete logarithm of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accepts](accepts.md)
+- [Extract](extract.md)
+- [Gpow](../../public-key/diffie-hellman/gpow.md)
 
 ## Sources
 

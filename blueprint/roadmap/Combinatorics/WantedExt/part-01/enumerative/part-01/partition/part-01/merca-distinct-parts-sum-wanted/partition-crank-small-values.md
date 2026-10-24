@@ -13,7 +13,7 @@ Characteristic values of the crank: the empty partition has crank `0` and the pa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Crank](partition-crank.md)
 
 ## Sources
 

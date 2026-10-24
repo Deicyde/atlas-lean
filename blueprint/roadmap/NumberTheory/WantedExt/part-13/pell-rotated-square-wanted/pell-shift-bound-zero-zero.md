@@ -12,7 +12,7 @@ lean: MetaMathlibExt.pellShiftBound_zero_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Shift Bound](pell-shift-bound.md)
 
 ## Sources
 

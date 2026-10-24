@@ -13,7 +13,8 @@ drops the radix point, the position sets are determined up to a translation `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bergman Expansion](is-bergman-expansion.md)
+- [Base Phi Value](base-phi-value.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ lean: MetaMathlibExt.augmentedKDyckGF
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Skew Dyck Step](skew-dyck-step.md)
+- [Augmented KDyck Paths](augmented-kdyck-paths.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KBoxPathsWanted](../../../../../../../sources/v2/WantedExt.md)

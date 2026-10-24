@@ -11,7 +11,14 @@ The M-step: `π k' = N k / N`, `μ k'` the weighted mean, `σ k'² = S k / (d N 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Params](params.md)
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Mass](mass.md)
+- [New Mean](new-mean.md)
+- [New Var](new-var.md)
 
 ## Sources
 

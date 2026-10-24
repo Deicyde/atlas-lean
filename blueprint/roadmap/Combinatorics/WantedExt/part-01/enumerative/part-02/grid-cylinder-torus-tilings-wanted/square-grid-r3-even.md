@@ -15,7 +15,8 @@ Formalization deviation: none beyond the representation choices stated above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cell R3](cell-r3.md)
+- [Fixed Tiling Count](fixed-tiling-count.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ lean: Cslib.Complexity.CookLevin.Package.xfer_drain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+
+## Proof depends on
+
+- [Single](../../../../MathlibExt/turing-machine/program/single.md)
+- [Push All](../../../../MathlibExt/turing-machine/program/push-all.md)
 
 ## Sources
 

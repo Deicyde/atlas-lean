@@ -13,7 +13,8 @@ power series over `ℤ[q, q⁻¹]`, where `T*_j(q^{j+1} x; 1/q) = ∑_m q^{(j+1)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Smooth Max End Capacity Dist](restricted-smooth-max-end-capacity-dist.md)
+- [Restricted Smooth Plateau Area Dist](restricted-smooth-plateau-area-dist.md)
 
 ## Sources
 

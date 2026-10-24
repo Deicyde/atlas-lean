@@ -11,7 +11,7 @@ An ordering with at least `K` forward arcs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Ordering Tournament Instance](linear-ordering-tournament-instance.md)
 
 ## Sources
 

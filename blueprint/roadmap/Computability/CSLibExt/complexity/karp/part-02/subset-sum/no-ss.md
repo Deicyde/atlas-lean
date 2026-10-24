@@ -13,6 +13,10 @@ A fixed no-instance: no numbers, target `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Encode SS](encode-ss.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.SubsetSum](../../../../../../../sources/v2/CSLibExt.md)

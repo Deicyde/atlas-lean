@@ -13,6 +13,10 @@ The two row arcs between row vertices `l` and `l + 1` of diamond `i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hp R](../ham-path/hp-r.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPathEmitSpec](../../../../../../../sources/v2/CSLibExt.md)

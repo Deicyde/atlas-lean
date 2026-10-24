@@ -11,7 +11,7 @@ Add `x` in front of `h`, allocating one front node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
 
 ## Sources
 

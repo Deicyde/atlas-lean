@@ -15,7 +15,7 @@ Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Proposition 9.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irwin Measure](irwin-measure.md)
 
 ## Sources
 

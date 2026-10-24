@@ -12,7 +12,7 @@ with `n = P(l) + P(m) + 11 P(s) + 11 P(r)`, `P(r) = r(3r - 1)/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

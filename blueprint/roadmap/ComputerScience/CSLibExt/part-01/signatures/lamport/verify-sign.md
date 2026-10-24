@@ -12,7 +12,9 @@ lean: Cslib.Crypto.Signatures.Lamport.verify_sign
 
 ## Depends on
 
-This node has no prerequisites.
+- [Verify](verify.md)
+- [Public Key](public-key.md)
+- [Sign](sign.md)
 
 ## Sources
 

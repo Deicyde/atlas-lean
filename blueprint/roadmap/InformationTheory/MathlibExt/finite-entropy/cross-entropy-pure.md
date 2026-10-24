@@ -12,7 +12,8 @@ The cross-entropy of a point mass at `y` is the surprisal of `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross Entropy](cross-entropy.md)
+- [Surprisal](surprisal.md)
 
 ## Sources
 

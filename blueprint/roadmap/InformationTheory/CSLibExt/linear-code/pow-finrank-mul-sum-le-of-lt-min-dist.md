@@ -13,7 +13,13 @@ The **Hamming bound** for linear codes correcting `t` errors,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Code](linear-code.md)
+- [Min Dist](min-dist.md)
+
+## Proof depends on
+
+- [Card filter mem](card-filter-mem.md)
+- [Hamming Sphere Packing](../../../Combinatorics/MathlibExt/part-01/coding/hamming-sphere-packing-bound.md)
 
 ## Sources
 

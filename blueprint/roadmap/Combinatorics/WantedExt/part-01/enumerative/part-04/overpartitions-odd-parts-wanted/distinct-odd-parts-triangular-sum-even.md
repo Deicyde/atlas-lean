@@ -11,7 +11,7 @@ For `n > 0`, `∑_{k ≥ 0} pod(n - k(k+1)/2) ≡ 0 (mod 2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Odd Parts Count](distinct-odd-parts-count.md)
 
 ## Sources
 

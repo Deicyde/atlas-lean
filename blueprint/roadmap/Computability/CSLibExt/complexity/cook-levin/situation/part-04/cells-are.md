@@ -11,7 +11,14 @@ Row `t`'s cell block is exactly the one-hot image of the array `w` (no decoding)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+
+## Proof depends on
+
+- [C Idx](../../family/c-idx.md)
+- [G](../part-01/g.md)
+- [Layout](../part-01/layout.md)
+- [Tr](tr.md)
 
 ## Sources
 

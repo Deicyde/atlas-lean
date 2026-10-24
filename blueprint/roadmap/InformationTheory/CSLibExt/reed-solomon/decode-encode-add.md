@@ -13,7 +13,14 @@ budget and any key-equation solver, the decoder returns the transmitted polynomi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key Solver](key-solver.md)
+- [Decode](decode.md)
+- [Encode](encode.md)
+
+## Proof depends on
+
+- [What the decoder returns](decode-eq-some-iff.md)
+- [Hamming Dist eq hamming Norm sub](../linear-code/hamming-dist-eq-hamming-norm-sub.md)
 
 ## Sources
 

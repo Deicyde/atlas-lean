@@ -13,7 +13,7 @@ padded sequence with initial conditions `⟨0̄; a_1, …, a_K, 2, M, 2⟩` sati
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
 
 ## Sources
 

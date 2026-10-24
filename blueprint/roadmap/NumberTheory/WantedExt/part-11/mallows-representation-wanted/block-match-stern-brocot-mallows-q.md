@@ -17,7 +17,13 @@ symmetric in the two positions, and trivial for equal positions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Mallows Odd Index](mallows-odd-index.md)
+- [Mallows Q](mallows-q.md)
+- [Mallows T](mallows-t.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
 
 ## Sources
 

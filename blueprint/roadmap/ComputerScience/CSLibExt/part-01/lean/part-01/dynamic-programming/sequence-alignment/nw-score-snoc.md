@@ -12,7 +12,12 @@ lean: Cslib.Algorithms.Lean.nwScore_snoc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nw Score](nw-score.md)
+
+## Proof depends on
+
+- [The Needleman–Wunsch recurrence](nw-score-eq.md)
+- [Needleman–Wunsch is reversal-invariant](nw-score-reverse.md)
 
 ## Sources
 

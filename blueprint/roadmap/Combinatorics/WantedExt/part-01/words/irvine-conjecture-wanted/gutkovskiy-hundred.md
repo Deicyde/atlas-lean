@@ -12,7 +12,7 @@ Evaluation check: `g₁₀₀ = 74` (OEIS A286389).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gutkovskiy](gutkovskiy.md)
 
 ## Sources
 

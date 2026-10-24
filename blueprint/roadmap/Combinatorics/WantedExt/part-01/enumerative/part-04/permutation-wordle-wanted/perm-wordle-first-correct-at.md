@@ -13,6 +13,10 @@ The paper's `ρ_S(π) = r`: guess `γ_r` is the first guess with a correct posit
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perm Wordle Guess](perm-wordle-guess.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.PermutationWordleWanted](../../../../../../../sources/v2/WantedExt.md)

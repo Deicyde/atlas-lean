@@ -11,7 +11,7 @@ Theorem 2: for `n > 1`, `max_{m ∈ ℤ} f_m(n) = max(n / rad(n), gpf(n) - 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest APLength](longest-aplength.md)
 
 ## Sources
 

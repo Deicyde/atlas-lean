@@ -12,7 +12,7 @@ exactly `e_j` proper `L*`-blocks with support interval `[s, k]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Proper LStar Block](is-proper-lstar-block.md)
 
 ## Sources
 

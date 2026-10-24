@@ -12,7 +12,13 @@ Summing the bridges over their end state gives the backward variable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
+- [Backward](backward.md)
+- [Bridge](bridge.md)
+
+## Proof depends on
+
+- [Bridge succ front](bridge-succ-front.md)
 
 ## Sources
 

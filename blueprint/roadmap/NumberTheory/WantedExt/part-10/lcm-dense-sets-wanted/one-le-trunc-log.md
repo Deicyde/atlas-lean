@@ -13,7 +13,7 @@ The truncated logarithm is always at least one; this records the effect of the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trunc Log](trunc-log.md)
 
 ## Sources
 

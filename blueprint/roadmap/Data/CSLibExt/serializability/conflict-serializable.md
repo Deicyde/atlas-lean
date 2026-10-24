@@ -11,7 +11,12 @@ A conflict-serializable schedule: conflict-equivalent to a serial schedule.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Op](op.md)
+
+## Proof depends on
+
+- [Conflict Equiv](conflict-equiv.md)
+- [Is Serial](is-serial.md)
 
 ## Sources
 

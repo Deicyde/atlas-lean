@@ -12,7 +12,7 @@ lean: MetaMathlibExt.seven_pow_dvd_garvanYOdd
 
 ## Depends on
 
-This node has no prerequisites.
+- [Garvan YOdd](garvan-yodd.md)
 
 ## Sources
 

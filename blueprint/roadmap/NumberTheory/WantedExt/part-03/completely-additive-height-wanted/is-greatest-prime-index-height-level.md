@@ -12,7 +12,7 @@ Proposition 4: for the height function `H(pᵢ) = i`, the largest number at heig
 
 ## Depends on
 
-This node has no prerequisites.
+- [Additive Of Prime Values](additive-of-prime-values.md)
 
 ## Sources
 

@@ -11,7 +11,14 @@ The machine reaches `no` from `c` within `n` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [Prog](prog.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

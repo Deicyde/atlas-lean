@@ -12,7 +12,7 @@ Gate depths are evaluation under `depthInterpretation` with inputs at depth `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Depth Interpretation](depth-interpretation.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For `F (w, x) = ⌊(w + x) / k⌋` with `k = 4m + 3`, a bar position `y ≤ F (w
 
 ## Depends on
 
-This node has no prerequisites.
+- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Only the identity is guessed in one guess.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+
+## Proof depends on
+
+- [Perm Wordle Guess](perm-wordle-guess.md)
 
 ## Sources
 

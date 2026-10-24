@@ -11,7 +11,7 @@ Marcinkiewicz's Problem 124 sub-conjecture holds (solved-positive).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem124 Claim](scottish-book-problem124-claim.md)
 
 ## Sources
 

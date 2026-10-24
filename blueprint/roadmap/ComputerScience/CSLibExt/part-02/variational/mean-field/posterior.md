@@ -13,6 +13,10 @@ The posterior `p(z | x) = p(x, z) / p(x)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Evidence](evidence.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Variational.MeanField](../../../../../../sources/v2/CSLibExt.md)

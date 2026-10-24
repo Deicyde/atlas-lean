@@ -12,7 +12,7 @@ Reading the empty digit word stays at the starting state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Substitution Automaton](substitution-automaton.md)
 
 ## Sources
 

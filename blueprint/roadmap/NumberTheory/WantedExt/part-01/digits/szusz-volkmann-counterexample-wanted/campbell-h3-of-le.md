@@ -12,7 +12,8 @@ lean: MetaMathlibExt.campbellH3_of_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Campbell H2](campbell-h2.md)
+- [Campbell H3](campbell-h3.md)
 
 ## Sources
 

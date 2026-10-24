@@ -13,7 +13,7 @@ For `0 < θ² - (θ(1 - θ))²δ ≤ η < θ < 1` and `0 ≤ δ ≤ 1` there is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letendre Xi](letendre-xi.md)
 
 ## Sources
 

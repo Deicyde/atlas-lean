@@ -15,7 +15,9 @@ nonempty; `β(1) = 1` has empty negative part). Part (a) is stated in the readin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Occurrences](base-phi-occurrences.md)
+- [Beatty Set](beatty-set.md)
+- [Beatty Set₀](beatty-set-2.md)
 
 ## Sources
 

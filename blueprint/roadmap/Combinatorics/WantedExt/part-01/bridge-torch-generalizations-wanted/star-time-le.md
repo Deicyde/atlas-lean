@@ -12,7 +12,10 @@ Any star schedule bounds `T(n, k, t)` from above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Star Schedule](is-star-schedule.md)
+- [Star Move](star-move.md)
+- [Star Step Duration](star-step-duration.md)
+- [Star Time](star-time.md)
 
 ## Sources
 

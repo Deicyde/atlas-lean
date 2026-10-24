@@ -12,7 +12,9 @@ The mark on top of the marks past `j` is the mark of vertex `j` (`false` past th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [Bit?](../sat-verifier-spec/bit.md)
+- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

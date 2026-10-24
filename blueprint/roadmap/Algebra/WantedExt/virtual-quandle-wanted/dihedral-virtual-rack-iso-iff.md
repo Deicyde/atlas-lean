@@ -13,7 +13,8 @@ isomorphic if and only if `u = v` and `b = y a + (1 - u) x` for some `x ∈ ℤ/
 
 ## Depends on
 
-This node has no prerequisites.
+- [Virtual Rack Iso](virtual-rack-iso.md)
+- [Dihedral Affine Perm](dihedral-affine-perm.md)
 
 ## Sources
 

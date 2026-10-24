@@ -12,7 +12,7 @@ The Zeckendorf decomposition `4 = F_3 + F_1` (paper indexing) as a game state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeckendorf State](zeckendorf-state.md)
 
 ## Sources
 

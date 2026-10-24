@@ -12,7 +12,8 @@ For `n ≥ 1` there are `G(n - 1) = 2^{s₂(n-1)}` Ulam words of length `n` of t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ulam Word](is-ulam-word.md)
+- [Ulam Word Aux](ulam-word-aux.md)
 
 ## Sources
 

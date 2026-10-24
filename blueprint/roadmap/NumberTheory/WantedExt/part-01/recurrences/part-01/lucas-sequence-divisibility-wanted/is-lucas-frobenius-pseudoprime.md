@@ -13,7 +13,14 @@ Frobenius pseudoprime with parameters `P, Q` in the source's sense (congruences
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Is Dickson Pseudoprime](is-dickson-pseudoprime.md)
+- [Is Dickson Pseudoprime Second Kind](is-dickson-pseudoprime-second-kind.md)
+- [Is Lucas Pseudoprime](is-lucas-pseudoprime.md)
+- [Is Lucas Pseudoprime Second Kind](is-lucas-pseudoprime-second-kind.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ One-part partitions have genus `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Partition Genus](set-partition-genus.md)
 
 ## Sources
 

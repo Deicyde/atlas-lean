@@ -12,7 +12,7 @@ definition, not an instance, so instance search sees one `Fintype Sym`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
 
 ## Sources
 

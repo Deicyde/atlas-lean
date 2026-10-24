@@ -15,6 +15,10 @@ where `p(x_U)` is `marginal p U x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Marginal](marginal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.FiniteWeight](../../../../../sources/v2/MathlibExt.md)

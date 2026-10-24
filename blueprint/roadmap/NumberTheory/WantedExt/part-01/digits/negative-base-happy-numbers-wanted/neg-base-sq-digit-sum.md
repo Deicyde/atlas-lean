@@ -15,6 +15,10 @@ decreases at each digit step.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Neg Base Sq Digit Sum Aux](neg-base-sq-digit-sum-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.NegativeBaseHappyNumbersWanted](../../../../../../sources/v2/WantedExt.md)

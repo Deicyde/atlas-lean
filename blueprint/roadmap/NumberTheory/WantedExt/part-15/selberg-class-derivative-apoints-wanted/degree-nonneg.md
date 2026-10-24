@@ -12,7 +12,8 @@ The degree is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Class Function](selberg-class-function.md)
+- [Degree](degree.md)
 
 ## Sources
 

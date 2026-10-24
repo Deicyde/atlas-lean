@@ -12,7 +12,7 @@ if and only if `n ∣ m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Pell G](neg-pell-g.md)
 
 ## Sources
 

@@ -11,7 +11,13 @@ The states reachable from some start state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded NFA](encoded-nfa.md)
+
+## Proof depends on
+
+- [Reach N](../../../decidability/part-02/regular/reach-n.md)
+- [Next](next.md)
+- [States](states.md)
 
 ## Sources
 

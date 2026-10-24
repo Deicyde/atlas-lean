@@ -13,7 +13,11 @@ definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Sum Mean](gcd-sum-mean.md)
+
+## Proof depends on
+
+- [Gcd Sum Totient](../../../MathlibExt/part-01/arithmetic-function/part-01/gcd-sum-eq-totient-sum.md)
 
 ## Sources
 

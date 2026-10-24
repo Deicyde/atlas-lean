@@ -15,7 +15,8 @@ positive integers all of whose prime factors lie in `A` (`c = q_1^{s_1} ⋯ q_k^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nilpotent At](is-nilpotent-at.md)
+- [Is Weakly Locally Nilpotent At](is-weakly-locally-nilpotent-at.md)
 
 ## Sources
 

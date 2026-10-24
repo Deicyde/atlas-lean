@@ -14,7 +14,8 @@ paper's first `d` unstable bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Part](odd-part.md)
+- [Unstable Bits](unstable-bits.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The fractions Mallows inserts into an increasing list of fractions, in order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mallows Insert](mallows-insert.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.MallowsRepresentationWanted](../../../../../sources/v2/WantedExt.md)

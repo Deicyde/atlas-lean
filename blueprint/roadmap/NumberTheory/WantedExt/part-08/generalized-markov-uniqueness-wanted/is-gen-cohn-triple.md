@@ -15,6 +15,12 @@ lean: MetaMathlibExt.IsGenCohnTriple
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Gen Cohn Matrix](is-gen-cohn-matrix.md)
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
+- [Gen Cohn S](gen-cohn-s.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralizedMarkovUniquenessWanted](../../../../../sources/v2/WantedExt.md)

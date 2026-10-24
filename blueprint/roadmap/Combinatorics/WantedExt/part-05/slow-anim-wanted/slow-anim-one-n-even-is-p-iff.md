@@ -12,7 +12,8 @@ positions whose token count and minimal stack are both even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Slow ANim Game](slow-anim-game.md)
 
 ## Sources
 

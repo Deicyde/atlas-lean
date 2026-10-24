@@ -14,6 +14,11 @@ lengths equal to `r`) with exactly `m` excedances.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is RCycle Perm](is-rcycle-perm.md)
+- [Excedance Count](excedance-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AssociatedStirlingEulerian](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,8 @@ The lattice points in the interior of `P_{a,n}` are exactly
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Points](lattice-points.md)
+- [Std Clean Parallelogram](std-clean-parallelogram.md)
 
 ## Sources
 

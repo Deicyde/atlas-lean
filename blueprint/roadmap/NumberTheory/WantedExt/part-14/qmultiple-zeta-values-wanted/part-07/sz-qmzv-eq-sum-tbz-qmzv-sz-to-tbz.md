@@ -13,7 +13,9 @@ SZ-qMZVs in the TBZ model: for an SZ-admissible index `k` (empty or `k₁ ≥ 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz QMZV](../part-01/sz-qmzv.md)
+- [Sz To TBZ](sz-to-tbz.md)
+- [Tbz QMZV](../part-03/tbz-qmzv.md)
 
 ## Sources
 

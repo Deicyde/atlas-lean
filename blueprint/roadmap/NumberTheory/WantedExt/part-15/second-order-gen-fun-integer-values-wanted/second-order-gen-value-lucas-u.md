@@ -13,7 +13,9 @@ is an integer for a rational `x`, then `U(U_n/U_{n+1}) = k` for some `n ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Second Order Gen Value](second-order-gen-value.md)
 
 ## Sources
 

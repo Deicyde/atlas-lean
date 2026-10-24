@@ -23,7 +23,12 @@ end Contract
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ham Vars](../ham-path/ham-vars.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Vars Of](../../../../sat-time-m/vars-of.md)
 
 ## Sources
 

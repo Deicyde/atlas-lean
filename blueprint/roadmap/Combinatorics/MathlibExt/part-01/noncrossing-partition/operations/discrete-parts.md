@@ -12,7 +12,9 @@ Discrete parts are the singleton image of `univ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Noncrossing](../basic/is-noncrossing.md)
+- [Set Partition](../basic/set-partition.md)
+- [Discrete](discrete.md)
 
 ## Sources
 

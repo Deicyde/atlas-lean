@@ -15,6 +15,10 @@ bijection `x_i ↦ x_i + i - 1` (`0` for the empty partition).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Decreasing Parts](decreasing-parts.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.LitCellsPartitionsWanted](../../../../../../../../../sources/v2/WantedExt.md)

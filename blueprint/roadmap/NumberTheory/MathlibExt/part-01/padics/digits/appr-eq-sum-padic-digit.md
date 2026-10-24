@@ -13,7 +13,11 @@ Finite reconstruction: `appr n` is the digit sum below `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Digit](padic-digit.md)
+
+## Proof depends on
+
+- [Appr succ eq](appr-succ-eq.md)
 
 ## Sources
 

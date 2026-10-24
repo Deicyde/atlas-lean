@@ -12,7 +12,12 @@ lean: MetaMathlibExt.trianglePartitionSeries_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangle Partition Series](triangle-partition-series.md)
+
+## Proof depends on
+
+- [Triangular QBinomial](triangular-qbinomial.md)
+- [Triangular QBinomial zero right](triangular-qbinomial-zero-right.md)
 
 ## Sources
 

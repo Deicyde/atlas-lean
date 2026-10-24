@@ -12,7 +12,7 @@ Theorem 3, item 1 (Mian–Chowla, as quoted): some Sidon set `A` satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sidon](../../../../MathlibExt/part-01/additive/is-sidon.md)
 
 ## Sources
 

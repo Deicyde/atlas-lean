@@ -11,7 +11,13 @@ An assignment making exactly one literal true per clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [One In Three Sat Instance](one-in-three-sat-instance.md)
+
+## Proof depends on
+
+- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Satisfies](../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
 
 ## Sources
 

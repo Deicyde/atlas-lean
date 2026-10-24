@@ -12,7 +12,12 @@ lean: Cslib.Algorithms.Lean.Matching.GaleShapley.galeShapley
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Init](init.md)
+- [Run](run.md)
 
 ## Sources
 

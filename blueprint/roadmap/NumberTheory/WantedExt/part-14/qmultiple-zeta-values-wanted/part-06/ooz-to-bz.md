@@ -15,6 +15,10 @@ The map `U : 𝔥⁰ → 𝔥⁰` on a word: `𝟏 ↦ 𝟏` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ooz To BZTail](ooz-to-bztail.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

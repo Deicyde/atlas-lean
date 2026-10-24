@@ -13,6 +13,11 @@ The type of (cyclic) signatures of the row graph `R`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Domination State](domination-state.md)
+- [Is Domination Signature](is-domination-signature.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.GridDominationTransferWanted](../../../../sources/v2/WantedExt.md)

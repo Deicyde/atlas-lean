@@ -12,7 +12,7 @@ lean: MetaMathlibExt.IsPiecewiseSyndetic.exists_of_eq_iUnion
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Piecewise Syndetic](is-piecewise-syndetic.md)
 
 ## Sources
 

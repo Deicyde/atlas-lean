@@ -12,7 +12,7 @@ Empty data never covers `ℤ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sierpinski Covering Data](is-sierpinski-covering-data.md)
 
 ## Sources
 

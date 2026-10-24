@@ -12,7 +12,8 @@ lean: MetaMathlibExt.lucasUPeriod_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas UPeriod](lucas-uperiod.md)
 
 ## Sources
 

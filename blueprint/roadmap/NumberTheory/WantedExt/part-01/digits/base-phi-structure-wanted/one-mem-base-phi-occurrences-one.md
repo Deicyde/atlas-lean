@@ -12,7 +12,13 @@ lean: MetaMathlibExt.one_mem_basePhiOccurrences_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Occurrences](base-phi-occurrences.md)
+
+## Proof depends on
+
+- [Has Digit Block](has-digit-block.md)
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
+- [Is Base Phi Expansion one](is-base-phi-expansion-one.md)
 
 ## Sources
 

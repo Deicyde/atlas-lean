@@ -12,7 +12,7 @@ Membership in `boseSet` unfolds to its defining equation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bose Set](bose-set.md)
 
 ## Sources
 

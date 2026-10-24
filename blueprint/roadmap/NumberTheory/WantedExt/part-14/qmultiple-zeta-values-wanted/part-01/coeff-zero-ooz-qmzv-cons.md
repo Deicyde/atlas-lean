@@ -12,7 +12,11 @@ A nonempty OOZ-qMZV has no constant term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz QMZV](ooz-qmzv.md)
+
+## Proof depends on
+
+- [Ooz QMZVPartial](ooz-qmzvpartial.md)
 
 ## Sources
 

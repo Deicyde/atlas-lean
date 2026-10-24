@@ -12,7 +12,7 @@ Characteristic value `S^{1}_4 = F_6 = 8`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Combination Total](restricted-combination-total.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Equation (32): the companion of (31) with the roles of the two sides exchanged,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gamma Binom](gamma-binom.md)
 
 ## Sources
 

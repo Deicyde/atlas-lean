@@ -12,7 +12,7 @@ it contains elements of each order `2, 2^2, …, 2^n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect MCover](is-perfect-mcover.md)
 
 ## Sources
 

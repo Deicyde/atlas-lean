@@ -13,7 +13,7 @@ Lemma 4.2: for `k ≤ n` and `m ∈ ℕ`, `ℓ_{n+k}^{2m+1} - ℓ_{n-k}^{2m+1}` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

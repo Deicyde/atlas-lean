@@ -11,7 +11,8 @@ If `m ∣ n` then `Lₙ ⊆ L_m` and `Mₙ ⊆ M_m`; in particular `Lₙ ⊆ L` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Spectrum](n-lagrange-spectrum.md)
+- [N Markoff Spectrum](n-markoff-spectrum.md)
 
 ## Sources
 

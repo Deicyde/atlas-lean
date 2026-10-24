@@ -11,7 +11,7 @@ Number of literals in a label-transition clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](layout.md)
 
 ## Sources
 

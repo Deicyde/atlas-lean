@@ -12,7 +12,8 @@ lean: MetaMathlibExt.exists_lip_univ_not_polynomial_lt_rpow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
+- [Polynomial To LIP](polynomial-to-lip.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ A position with at most `k` pebbles on every vertex is terminating, hence a P-ga
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [Pebbling Game](pebbling-game.md)
+
+## Proof depends on
+
+- [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
+- [Is P iff](../../../../GameTheory/MathlibExt/sprague-grundy/is-p-iff.md)
+- [Mem pebbling Moves](mem-pebbling-moves.md)
+- [Pebbling Moves](pebbling-moves.md)
+- [Pebbling Step](pebbling-step.md)
 
 ## Sources
 

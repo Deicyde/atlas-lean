@@ -13,7 +13,8 @@ partitions in `[d]` with exactly `q` parts is `∏_{i=q}^{L-1} C(b_i + b_{i+1}, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Class](diagonal-class.md)
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

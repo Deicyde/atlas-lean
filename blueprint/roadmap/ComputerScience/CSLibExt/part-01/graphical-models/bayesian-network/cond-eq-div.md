@@ -13,7 +13,8 @@ joint, is the given conditional distribution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
+- [Joint](joint.md)
 
 ## Sources
 

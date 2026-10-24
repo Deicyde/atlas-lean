@@ -16,6 +16,10 @@ module scope note.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Upper Cutoff](is-upper-cutoff.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Combinatorics.RandomThreeSat](../../../../sources/v2/CSLibExt.md)

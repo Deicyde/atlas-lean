@@ -12,7 +12,9 @@ bijection with the type `B` set partitions of `[-n, n]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Flattened Word](is-flattened-word.md)
+- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Is Type BSet Partition](is-type-bset-partition.md)
 
 ## Sources
 

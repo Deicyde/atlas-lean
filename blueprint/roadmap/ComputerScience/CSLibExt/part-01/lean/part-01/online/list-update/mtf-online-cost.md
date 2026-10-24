@@ -12,7 +12,16 @@ The online move-to-front pays exactly `mtfCost`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online list-update algorithm on the items...](a-deterministic-online-list-update-algor.md)
+- [Cost](cost.md)
+- [Mtf Cost](mtf-cost.md)
+- [Mtf Online](mtf-online.md)
+
+## Proof depends on
+
+- [Access Cost](access-cost.md)
+- [Mtf](mtf.md)
+- [The amortized cost of a move-to-front step](mtf-perm.md)
 
 ## Sources
 

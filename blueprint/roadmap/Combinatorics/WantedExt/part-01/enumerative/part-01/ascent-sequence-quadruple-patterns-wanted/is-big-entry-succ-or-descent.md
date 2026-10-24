@@ -13,7 +13,8 @@ big entry for every `k + 2 ≤ j ≤ n` (one-indexed `w_k` at zero-based index `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Big Entry](is-big-entry.md)
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources
 

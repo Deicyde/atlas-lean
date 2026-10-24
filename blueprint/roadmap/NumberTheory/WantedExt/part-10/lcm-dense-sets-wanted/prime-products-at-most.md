@@ -14,6 +14,10 @@ some exact layer indexed by `j ≤ k` rather than by an explicit set union.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Product Layer](prime-product-layer.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LcmDenseSetsWanted](../../../../../sources/v2/WantedExt.md)

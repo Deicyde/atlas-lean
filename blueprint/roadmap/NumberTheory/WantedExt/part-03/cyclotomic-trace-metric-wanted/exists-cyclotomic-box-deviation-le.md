@@ -16,7 +16,9 @@ formalized.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Box](cyclotomic-box.md)
+- [Cyclotomic Lattice Point](cyclotomic-lattice-point.md)
+- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
 
 ## Sources
 

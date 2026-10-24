@@ -12,7 +12,16 @@ A contradictory pair of literals involves a variable of the formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Imp Reach](imp-reach.md)
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
+
+## Proof depends on
+
+- [Imp Edge](imp-edge.md)
+- [Neg](neg.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
 
 ## Sources
 

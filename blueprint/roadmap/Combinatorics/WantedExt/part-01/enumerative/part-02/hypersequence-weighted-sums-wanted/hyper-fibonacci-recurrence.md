@@ -12,7 +12,7 @@ Theorem 4 (Cristea–Martinjak–Urbiha, as quoted): `F^{(r)}_0 = 0`, `F^{(r)}_1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Fibonacci](../../../../../../NumberTheory/WantedExt/part-09/hyper-leonardo-wanted/hyper-fibonacci.md)
 
 ## Sources
 

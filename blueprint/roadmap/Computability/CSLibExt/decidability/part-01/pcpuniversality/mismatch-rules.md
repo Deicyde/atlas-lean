@@ -14,7 +14,16 @@ stop matching.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [Bit Code](bit-code.md)
+- [Domino](../cfgundecidable/domino.md)
+- [Others](others.md)
+- [U Bit](u-bit.md)
+- [U Letter](u-letter.md)
+- [U Nt](u-nt.md)
 
 ## Sources
 

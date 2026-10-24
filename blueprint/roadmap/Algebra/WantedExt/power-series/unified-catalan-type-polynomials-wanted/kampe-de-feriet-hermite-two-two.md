@@ -12,7 +12,7 @@ lean: MetaMathlibExt.kampeDeFerietHermite_two_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kampe De Feriet Hermite](kampe-de-feriet-hermite.md)
 
 ## Sources
 

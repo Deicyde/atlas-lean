@@ -11,7 +11,11 @@ The span: the number of tasks on a longest path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](dag.md)
+
+## Proof depends on
+
+- [Depth](depth.md)
 
 ## Sources
 

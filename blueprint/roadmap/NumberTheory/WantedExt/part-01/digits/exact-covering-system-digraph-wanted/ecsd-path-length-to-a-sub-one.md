@@ -15,7 +15,8 @@ cycle through `0` has `|a - 1|` edges, which holds in the single-component case.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KDescendant](is-kdescendant.md)
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

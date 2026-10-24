@@ -11,7 +11,11 @@ The arc flow as reals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../edmonds-karp/flow.md)
+
+## Proof depends on
+
+- [Arc Flow](arc-flow.md)
 
 ## Sources
 

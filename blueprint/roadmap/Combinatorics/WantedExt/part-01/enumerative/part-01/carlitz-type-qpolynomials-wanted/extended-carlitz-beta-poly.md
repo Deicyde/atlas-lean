@@ -15,6 +15,10 @@ The extended Carlitz `q`-Bernoulli polynomials `β_n^{(r)}(x)`: `β_n^{(0)}(x) =
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Carlitz Eta Poly](carlitz-eta-poly.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CarlitzTypeQPolynomialsWanted](../../../../../../../sources/v2/WantedExt.md)

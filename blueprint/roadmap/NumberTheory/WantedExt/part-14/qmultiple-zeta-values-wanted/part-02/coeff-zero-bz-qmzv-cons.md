@@ -12,7 +12,11 @@ A nonempty BZ-qMZV has no constant term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bz QMZV](bz-qmzv.md)
+
+## Proof depends on
+
+- [Coeff zero q MZV cons](coeff-zero-q-mzv-cons.md)
 
 ## Sources
 

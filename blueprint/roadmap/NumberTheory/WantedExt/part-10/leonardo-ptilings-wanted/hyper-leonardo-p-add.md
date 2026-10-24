@@ -12,7 +12,7 @@ lean: MetaMathlibExt.hyperLeonardoP_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo P](hyper-leonardo-p.md)
 
 ## Sources
 

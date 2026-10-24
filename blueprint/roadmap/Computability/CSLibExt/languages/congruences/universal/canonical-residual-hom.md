@@ -12,7 +12,13 @@ language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible](../minimality/accessible.md)
+- [DFAHom](dfahom.md)
+
+## Proof depends on
+
+- [Reachable State](../minimality/reachable-state.md)
+- [Left Quotient accepts From](../minimization/left-quotient-accepts-from.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MetaMathlibExt.secondOrderGenValue_trivial_families_integer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Second Order Bi Seq](second-order-bi-seq.md)
+- [Second Order Gen Value](second-order-gen-value.md)
 
 ## Sources
 

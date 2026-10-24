@@ -12,7 +12,7 @@ long-legged 3-armed V's (a tip with three rays of arbitrary directions) is `(9nÂ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane Region Count](plane-region-count.md)
 
 ## Sources
 

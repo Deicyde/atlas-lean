@@ -13,7 +13,7 @@ Shifted form: for `k ≥ 3` and real `r` with `-1 ≤ r ≤ k - 4`, with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

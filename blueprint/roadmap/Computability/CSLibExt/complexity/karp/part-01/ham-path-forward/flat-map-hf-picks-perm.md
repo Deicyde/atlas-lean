@@ -12,7 +12,12 @@ Over all diamonds, the rows pick up every clause exactly once.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Picks](hf-picks.md)
+
+## Proof depends on
+
+- [Mem hf Picks](mem-hf-picks.md)
+- [Nodup hf Picks](nodup-hf-picks.md)
 
 ## Sources
 

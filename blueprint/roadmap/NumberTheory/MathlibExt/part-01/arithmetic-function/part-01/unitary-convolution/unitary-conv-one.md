@@ -12,7 +12,7 @@ lean: MetaMathlibExt.unitaryConv_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unitary Conv](unitary-conv.md)
 
 ## Sources
 

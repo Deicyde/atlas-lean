@@ -12,7 +12,7 @@ Every value is at most the argmax value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Best Argmax](best-argmax.md)
 
 ## Sources
 

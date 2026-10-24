@@ -15,7 +15,7 @@ The sum runs over all `n ≥ 0`; the terms with `n < k` vanish.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Multiple Harmonic](odd-multiple-harmonic.md)
 
 ## Sources
 

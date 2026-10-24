@@ -15,7 +15,7 @@ never occurs, while `10 · 0` occurs in `β(2) = 10 · 01`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Phi Occurrences](base-phi-occurrences.md)
 
 ## Sources
 

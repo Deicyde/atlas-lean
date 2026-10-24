@@ -13,7 +13,8 @@ one associated with `(b, (b² + kbc + c²)/a, c)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Cohn Triple](is-gen-cohn-triple.md)
+- [Gen Cohn S](gen-cohn-s.md)
 
 ## Sources
 

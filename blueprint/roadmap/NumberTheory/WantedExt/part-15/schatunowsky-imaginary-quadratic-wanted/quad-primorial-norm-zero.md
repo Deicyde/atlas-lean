@@ -12,7 +12,12 @@ lean: MetaMathlibExt.quadPrimorialNorm_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quad Primorial Norm](quad-primorial-norm.md)
+
+## Proof depends on
+
+- [Quad Prime Norm](quad-prime-norm.md)
+- [Quad Prime Norm zero](quad-prime-norm-zero.md)
 
 ## Sources
 

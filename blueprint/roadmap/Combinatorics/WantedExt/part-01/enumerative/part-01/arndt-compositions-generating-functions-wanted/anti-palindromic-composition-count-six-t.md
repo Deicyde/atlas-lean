@@ -12,7 +12,7 @@ There are eight anti-palindromic compositions of `6` with three parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anti Palindromic Composition Count](anti-palindromic-composition-count.md)
 
 ## Sources
 

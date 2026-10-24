@@ -12,7 +12,9 @@ Briggs and Remmel: for a singleton board `B = (b_1, …, b_n)` for `m ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Singleton Board](is-singleton-board.md)
+- [Level Rook Number](level-rook-number.md)
+- [M Falling Factorial](m-falling-factorial.md)
 
 ## Sources
 

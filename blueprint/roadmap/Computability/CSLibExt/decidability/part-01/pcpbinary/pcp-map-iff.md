@@ -12,7 +12,15 @@ lean: Cslib.Decidability.Post.pcp_map_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+- [PCP](../pcp/pcp.md)
+- [Map Instance](map-instance.md)
+
+## Proof depends on
+
+- [Is Solution](../pcp/is-solution.md)
+- [Bottom](../pcp/bottom.md)
+- [Top](../pcp/top.md)
 
 ## Sources
 

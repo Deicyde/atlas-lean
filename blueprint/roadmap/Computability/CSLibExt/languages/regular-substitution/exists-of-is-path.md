@@ -13,7 +13,7 @@ image of a word of `M`, followed by part of a word of the current copy of `N a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Εnfa](nfa.md)
 
 ## Sources
 

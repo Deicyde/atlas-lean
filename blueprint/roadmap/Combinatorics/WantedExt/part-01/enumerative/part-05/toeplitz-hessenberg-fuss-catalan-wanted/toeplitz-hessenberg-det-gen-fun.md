@@ -15,7 +15,7 @@ hypothesis `a_0 ≠ 0`; at `a_0 = 0` it reads `H = a_1 x` and `det(A_n) = a_1ⁿ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz Hessenberg Det](../../../../../../LinearAlgebra/MathlibExt/matrix/part-02/trudi-brioschi-determinant/toeplitz-hessenberg-det.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ subword iff `Δp_a` takes the value one at least `k - 1` times in a row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Letter Position](letter-position.md)
 
 ## Sources
 

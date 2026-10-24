@@ -11,7 +11,11 @@ Decode a bit string into a CNF formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+
+## Proof depends on
+
+- [Decode Aux](decode-aux.md)
 
 ## Sources
 

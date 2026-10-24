@@ -15,6 +15,11 @@ bound at which `c` gives each listed value.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists](../../../../MathlibExt/re/exists.md)
+- [Forall mem](../../../../MathlibExt/re/forall-mem.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Decidability.RiceShapiro](../../../../../../sources/v2/CSLibExt.md)

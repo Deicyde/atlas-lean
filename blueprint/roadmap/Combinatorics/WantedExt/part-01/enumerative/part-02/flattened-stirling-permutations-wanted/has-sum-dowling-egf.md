@@ -12,7 +12,8 @@ The Dowling numbers have exponential generating function
 
 ## Depends on
 
-This node has no prerequisites.
+- [Whitney Second](../../../../../MathlibExt/part-01/enumerative/part-07/qrwhitney-numbers/whitney-second.md)
+- [Qr Dowling Number](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-number.md)
 
 ## Sources
 

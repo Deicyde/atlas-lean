@@ -14,7 +14,8 @@ when the paper's value is not positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perimeter Distinct Arm Leg Count](perimeter-distinct-arm-leg-count.md)
+- [Perimeter Residue Arm Leg Count](perimeter-residue-arm-leg-count.md)
 
 ## Sources
 

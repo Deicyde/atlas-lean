@@ -11,7 +11,9 @@ lean: MetaMathlibExt.downUpEvenGF_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Pal Alpha](arndt-pal-alpha.md)
+- [Arndt Pal Beta](arndt-pal-beta.md)
+- [Down Up Even GF](down-up-even-gf.md)
 
 ## Sources
 

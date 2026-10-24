@@ -12,7 +12,7 @@ Characteristic value: `f^(F)({a}, m, k) = F((k + a) / m) - F(k / m)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tverberg Sum](tverberg-sum.md)
 
 ## Sources
 

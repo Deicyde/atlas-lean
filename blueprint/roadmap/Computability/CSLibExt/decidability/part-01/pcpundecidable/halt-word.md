@@ -11,7 +11,7 @@ The target word `⊢ H ⊣`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TMSym](tmsym.md)
 
 ## Sources
 

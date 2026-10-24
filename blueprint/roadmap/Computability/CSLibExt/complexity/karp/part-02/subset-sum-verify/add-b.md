@@ -14,6 +14,11 @@ walking `p`; bits of `u` past its end count as `false`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Carry](carry.md)
+- [Inc B](inc-b.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.Karp.SubsetSumVerify](../../../../../../../sources/v2/CSLibExt.md)

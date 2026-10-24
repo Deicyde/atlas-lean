@@ -14,7 +14,8 @@ with `(k+2)`-ary trees with `n - 1` nodes is not stated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [K Box Paths](k-box-paths.md)
 
 ## Sources
 

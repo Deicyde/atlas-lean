@@ -17,7 +17,7 @@ alternative `{a₁, a₂} = {0, ±1}` lies in the excluded case and is dropped.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ecsd Adj](ecsd-adj.md)
 
 ## Sources
 

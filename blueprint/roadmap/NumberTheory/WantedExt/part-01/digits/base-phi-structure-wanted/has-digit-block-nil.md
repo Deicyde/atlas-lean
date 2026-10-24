@@ -12,7 +12,7 @@ The empty block always occurs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Digit Block](has-digit-block.md)
 
 ## Sources
 

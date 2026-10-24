@@ -11,7 +11,7 @@ Horizontal sum: `D^k(m, n) + D^k(m, n + 1) = 2 D^(k+1)(m, n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Delannoy Upper](gen-delannoy-upper.md)
 
 ## Sources
 

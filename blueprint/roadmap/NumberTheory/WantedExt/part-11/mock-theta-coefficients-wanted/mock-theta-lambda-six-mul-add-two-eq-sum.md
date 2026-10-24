@@ -13,7 +13,8 @@ coefficient of `q^j` in `(f_2/f_1^2)^3` (Equation (7)) and vanishes for `j < 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mock Theta Lambda](mock-theta-lambda.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

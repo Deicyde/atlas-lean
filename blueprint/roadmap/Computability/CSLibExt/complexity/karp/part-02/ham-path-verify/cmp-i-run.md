@@ -12,7 +12,22 @@ A counter comparison: all stacks are restored, and the outcome picks the next la
 
 ## Depends on
 
-This node has no prerequisites.
+- [CI](ci.md)
+- [K](k.md)
+- [Lab](lab.md)
+- [Ca](ca.md)
+- [Cb](cb.md)
+- [Cout](cout.md)
+- [Prog](prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+
+## Proof depends on
+
+- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Cmp run](../../../../../MathlibExt/turing-machine/program/cmp-run.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ The initial partition `{F, Q \ F}`, without an empty block.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Acc Block](acc-block.md)
+- [Rej Block](rej-block.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Congruences.Hopcroft](../../../../../../sources/v2/CSLibExt.md)

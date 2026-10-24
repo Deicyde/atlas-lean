@@ -11,7 +11,7 @@ A bisection into two sets of `n / 2` vertices with at most `K` crossing edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Bisection Instance](min-bisection-instance.md)
 
 ## Sources
 

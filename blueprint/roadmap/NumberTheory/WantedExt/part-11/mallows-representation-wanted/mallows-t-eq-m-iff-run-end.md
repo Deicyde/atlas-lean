@@ -15,7 +15,12 @@ makes such `e` exist, so it is replaced by `he` and `hrun`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Mallows Odd Index](mallows-odd-index.md)
+- [Mallows Q](mallows-q.md)
+- [Mallows T](mallows-t.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
 
 ## Sources
 

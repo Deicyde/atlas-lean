@@ -14,7 +14,13 @@ Proposition 4 (`A_1 = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Floor Sum Correction](floor-sum-correction.md)
+
+## Proof depends on
+
+- [Prime To PDen](prime-to-pden.md)
+- [Prime To PDen one prime To PNum one](prime-to-pden-one-prime-to-pnum-one.md)
+- [Prime To PNum](prime-to-pnum.md)
 
 ## Sources
 

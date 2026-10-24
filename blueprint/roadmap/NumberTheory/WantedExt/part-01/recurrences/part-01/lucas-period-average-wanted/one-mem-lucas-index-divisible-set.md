@@ -12,7 +12,12 @@ lean: MetaMathlibExt.one_mem_lucasIndexDivisibleSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas Index Divisible Set](lucas-index-divisible-set.md)
+
+## Proof depends on
+
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

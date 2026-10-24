@@ -11,7 +11,7 @@ The sequence `s_{a,b}` takes natural-number values, and `s_{a,b}(ab) = gcd(a, b)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Term Seq](gcd-term-seq.md)
 
 ## Sources
 

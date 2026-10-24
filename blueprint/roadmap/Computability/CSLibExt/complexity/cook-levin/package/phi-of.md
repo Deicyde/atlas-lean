@@ -11,7 +11,14 @@ The emitted formula for raw input `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../situation/part-01/enc.md)
+
+## Proof depends on
+
+- [Phi](../assembly/phi.md)
+- [TOf](../precompute/tof.md)
+- [M Of](../precompute/m-of.md)
+- [Encode CNF](../../dense-sat/encode-cnf.md)
 
 ## Sources
 

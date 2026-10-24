@@ -16,6 +16,10 @@ squared bias `(f - E Ŷ)²` plus the variance of the predictor.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expected squared error of independent random variables](integral-sq-sub-of-indep-fun.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.Regression.BiasVariance](../../../../../../sources/v2/CSLibExt.md)

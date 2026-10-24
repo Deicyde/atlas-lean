@@ -14,7 +14,12 @@ complexity below `n - c`, so at least `2 ^ n - 2 ^ (n - c) + 1` of them are inco
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+- [Strings Of Length](strings-of-length.md)
+
+## Proof depends on
+
+- [Few strings have small complexity](card-lt-two-pow.md)
 
 ## Sources
 

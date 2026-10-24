@@ -14,6 +14,11 @@ The stable complexity `‖n‖_st := ‖3^a n‖ - 3a`, for the least `a` with `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cx](../../../../NumberTheory/WantedExt/part-09/integer-complexity-wanted/cx.md)
+- [Is Complexity Stable](is-complexity-stable.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.ArithmeticalSelfSimilarCompactSetWanted](../../../../../sources/v2/WantedExt.md)

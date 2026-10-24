@@ -11,7 +11,7 @@ The factor `U D^k L`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
 
 ## Sources
 

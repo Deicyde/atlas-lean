@@ -11,7 +11,7 @@ The attributes a selection condition mentions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond](cond.md)
 
 ## Sources
 

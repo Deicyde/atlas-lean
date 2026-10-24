@@ -12,7 +12,8 @@ The smaller collection of a pair is contained in the larger one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Periodic Zeckendorf Pair](is-periodic-zeckendorf-pair.md)
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
 
 ## Sources
 

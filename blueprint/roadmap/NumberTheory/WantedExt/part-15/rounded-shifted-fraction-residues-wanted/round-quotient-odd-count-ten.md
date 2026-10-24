@@ -12,7 +12,7 @@ Characteristic value `𝓡_10 = 7` (Figure 1 of the paper).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Round Quotient Odd Count](round-quotient-odd-count.md)
 
 ## Sources
 

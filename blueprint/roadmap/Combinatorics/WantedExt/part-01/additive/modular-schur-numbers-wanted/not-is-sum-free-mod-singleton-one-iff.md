@@ -11,7 +11,7 @@ The singleton `{1}` is not `l`-sum-free modulo `m` if and only if `l ≡ 1 (mod 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Free Mod](is-sum-free-mod.md)
 
 ## Sources
 

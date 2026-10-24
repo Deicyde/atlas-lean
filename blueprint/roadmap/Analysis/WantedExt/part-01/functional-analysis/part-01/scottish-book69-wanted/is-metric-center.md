@@ -14,6 +14,10 @@ iterated set, and it is the only point that does.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Metric Center Sets](metric-center-sets.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FunctionalAnalysis.ScottishBook69Wanted](../../../../../../../sources/v2/WantedExt.md)

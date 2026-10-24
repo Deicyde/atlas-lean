@@ -12,7 +12,11 @@ The empty string is stable (`p = q' = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stable String](is-stable-string.md)
+
+## Proof depends on
+
+- [Convergent Matrix](convergent-matrix.md)
 
 ## Sources
 

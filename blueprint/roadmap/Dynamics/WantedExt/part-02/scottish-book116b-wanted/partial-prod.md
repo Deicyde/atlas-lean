@@ -16,6 +16,10 @@ as `f_1, f_1(f_2), f_1(f_2 f_3), ...`, read as successive products.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Step](step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.ScottishBook116bWanted](../../../../../sources/v2/WantedExt.md)

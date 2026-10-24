@@ -15,6 +15,10 @@ for `r ≥ 1` and `H¹_{n,λ}(α) = H_{n,λ}(α)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Degenerate Harmonic Term](degenerate-harmonic-term.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.DegenerateHarmonicRiordanWanted](../../../../../../../sources/v2/WantedExt.md)

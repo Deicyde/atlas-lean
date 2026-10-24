@@ -12,7 +12,7 @@ with `R_W(m, 0) = 1` and `R_W(0, k) = δ_{k0}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bishops White](bishops-white.md)
 
 ## Sources
 

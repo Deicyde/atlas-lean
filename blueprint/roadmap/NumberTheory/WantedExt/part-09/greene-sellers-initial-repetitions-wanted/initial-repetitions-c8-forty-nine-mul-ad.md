@@ -12,7 +12,7 @@ Nyirenda and Mugwangwavari: `c₈(49n + r)` is even for all `n ≥ 0` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Repetitions C8](initial-repetitions-c8.md)
 
 ## Sources
 

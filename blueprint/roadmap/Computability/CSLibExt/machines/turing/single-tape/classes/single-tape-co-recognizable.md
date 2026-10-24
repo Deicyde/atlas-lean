@@ -13,6 +13,10 @@ lean: Cslib.Decidability.SingleTapeCoRecognizable
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Single Tape Recognizable](single-tape-recognizable.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.Classes](../../../../../../../sources/v2/CSLibExt.md)

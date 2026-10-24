@@ -12,7 +12,13 @@ The first marker is gap index `10` and the second is `12`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Wythoff Unsum Marker](upper-wythoff-unsum-marker.md)
+
+## Proof depends on
+
+- [Is Upper Wythoff Unsum Marker](is-upper-wythoff-unsum-marker.md)
+- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
+- [Upper Wythoff Unsum Gap small](upper-wythoff-unsum-gap-small.md)
 
 ## Sources
 

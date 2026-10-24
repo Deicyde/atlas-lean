@@ -24,7 +24,9 @@ theorem FamPos.allTrue {V : ℕ} {φ : CNF} (h : FamPos V φ) : cnfSat φ (List.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../../family/layout.md)
+- [Num Vars](../../family/num-vars.md)
+- [Row W](../../family/row-w.md)
 
 ## Sources
 

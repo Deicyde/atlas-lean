@@ -14,7 +14,8 @@ multiplication, so that `1/0 = ∞` is largest).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Farey Triple](is-farey-triple.md)
+- [Farey Tree](farey-tree.md)
 
 ## Sources
 

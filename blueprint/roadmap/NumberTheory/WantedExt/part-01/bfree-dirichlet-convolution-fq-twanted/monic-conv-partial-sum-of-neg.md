@@ -12,7 +12,11 @@ lean: MetaMathlibExt.monicConvPartialSum_of_neg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Conv Partial Sum](monic-conv-partial-sum.md)
+
+## Proof depends on
+
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
 
 ## Sources
 

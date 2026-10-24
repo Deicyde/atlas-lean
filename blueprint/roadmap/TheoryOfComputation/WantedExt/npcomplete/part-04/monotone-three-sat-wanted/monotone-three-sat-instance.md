@@ -13,6 +13,10 @@ A monotone 3-SAT instance: number of variables, monotone 3-CNF formula.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [CNF](../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.NPComplete.MonotoneThreeSatWanted](../../../../../../sources/v2/WantedExt.md)

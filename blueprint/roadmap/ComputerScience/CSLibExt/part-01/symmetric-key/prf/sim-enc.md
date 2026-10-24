@@ -11,7 +11,13 @@ Simulate the encryption oracle with queries to an oracle for the keyed function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+
+## Proof depends on
+
+- [Done](done.md)
+- [Query](query.md)
+- [Oracle Sig](oracle-sig.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Generating function of `F(n)`: for `|q| < 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf](../../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
+- [Partition Max Rook Number Max](partition-max-rook-number-max.md)
 
 ## Sources
 

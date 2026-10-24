@@ -13,7 +13,10 @@ whose leaves cannot be smoothed (`d_{ℓ_j} ≥ 2` for all `j`) is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Ballot Number](ballot-number.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

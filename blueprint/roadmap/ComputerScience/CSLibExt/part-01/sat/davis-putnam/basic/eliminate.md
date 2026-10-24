@@ -13,7 +13,14 @@ containing both `x` and `¬x` are dropped.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+
+## Proof depends on
+
+- [Neg Clauses](neg-clauses.md)
+- [Pos Clauses](pos-clauses.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
 
 ## Sources
 

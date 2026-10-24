@@ -12,7 +12,7 @@ lean: MetaMathlibExt.regularPartitionCount_four_nine_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Partition Count](regular-partition-count.md)
 
 ## Sources
 

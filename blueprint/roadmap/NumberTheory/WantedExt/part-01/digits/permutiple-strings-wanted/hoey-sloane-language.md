@@ -14,6 +14,10 @@ on `Γ` (`L`-walks) whose initial and final states are zero.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Hoey Sloane Run](is-hoey-sloane-run.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.PermutipleStringsWanted](../../../../../../sources/v2/WantedExt.md)

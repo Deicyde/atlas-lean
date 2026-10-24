@@ -11,7 +11,13 @@ lean: Cslib.Complexity.CookLevin.Situation.Enc.ofFinTM2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+
+## Proof depends on
+
+- [Push Sym](../part-01/push-sym.md)
+- [Push FS](push-fs.md)
+- [B2's `Γfin k`](sym-set.md)
 
 ## Sources
 

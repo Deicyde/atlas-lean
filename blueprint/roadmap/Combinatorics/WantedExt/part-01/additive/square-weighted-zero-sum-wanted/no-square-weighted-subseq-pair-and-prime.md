@@ -17,7 +17,9 @@ the lemma to `(u_p, v_p, p)`, so `S` is taken in `ℤ_{p^r}` (then `x₁, x₂` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Weighted Zero Sum](has-weighted-zero-sum.md)
+- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
+- [Square Set](square-set.md)
 
 ## Sources
 

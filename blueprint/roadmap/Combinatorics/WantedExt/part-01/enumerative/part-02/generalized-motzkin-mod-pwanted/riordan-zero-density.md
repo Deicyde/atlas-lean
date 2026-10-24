@@ -14,7 +14,9 @@ p*, INTEGERS 26 (2026), Article A22, Proposition 7.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Trinomial](central-trinomial.md)
+- [Riordan Number](../../../../../MathlibExt/part-01/enumerative/part-07/riordan-number/riordan-number.md)
+- [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ The `n`-th non-`k`-gonal-pyramidal number for `3 ≤ k ≤ 8` (pyramidal numbers
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nth Non Value](nth-non-value.md)
 
 ## Sources
 

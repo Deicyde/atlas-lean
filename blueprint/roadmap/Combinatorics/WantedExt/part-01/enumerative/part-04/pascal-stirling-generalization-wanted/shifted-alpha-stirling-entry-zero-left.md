@@ -12,7 +12,7 @@ The first row of `𝖲_α` is constant `α_1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Alpha Stirling Entry](shifted-alpha-stirling-entry.md)
 
 ## Sources
 

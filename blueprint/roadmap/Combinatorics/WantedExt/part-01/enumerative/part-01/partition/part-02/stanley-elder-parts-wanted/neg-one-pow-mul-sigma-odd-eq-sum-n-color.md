@@ -15,7 +15,8 @@ With the printed (swapped) definition of `U_o`, `U_e` it fails at `m = 1`: `1` v
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Color Partitions](n-color-partitions.md)
+- [Sigma Odd](sigma-odd.md)
 
 ## Sources
 

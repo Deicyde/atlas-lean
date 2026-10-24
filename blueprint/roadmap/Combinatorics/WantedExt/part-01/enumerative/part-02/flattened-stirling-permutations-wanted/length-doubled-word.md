@@ -12,7 +12,7 @@ lean: MetaMathlibExt.length_doubledWord
 
 ## Depends on
 
-This node has no prerequisites.
+- [Doubled Word](doubled-word.md)
 
 ## Sources
 

@@ -15,6 +15,12 @@ otherwise, with `τ = (p + 1)/d`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seq Lex Gt](seq-lex-gt.md)
+- [Base PDigit](base-pdigit.md)
+- [Tower Tau](tower-tau.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HigherANumbersPeriodicSumWanted](../../../../../sources/v2/WantedExt.md)

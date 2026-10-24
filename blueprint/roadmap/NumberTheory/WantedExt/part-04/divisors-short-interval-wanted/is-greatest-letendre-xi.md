@@ -14,7 +14,7 @@ exponent (`a = n^α ≤ n`); without it the set is unbounded when `η = θ²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letendre Xi](letendre-xi.md)
 
 ## Sources
 

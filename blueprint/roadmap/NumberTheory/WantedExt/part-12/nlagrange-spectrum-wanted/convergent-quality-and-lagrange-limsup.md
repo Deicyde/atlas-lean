@@ -14,7 +14,7 @@ Classical facts for an irrational `ξ = [a₀; a₁, a₂, …]` with complete q
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Lagrange Approximability](n-lagrange-approximability.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ LRU is such a policy: `policyMisses` of `lruStep` is `lruMisses`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Policy Misses](policy-misses.md)
+- [Lru Misses](../paging/lru-misses.md)
+- [Lru Step](../paging/lru-step.md)
 
 ## Sources
 

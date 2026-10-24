@@ -13,7 +13,7 @@ Membership in the trivial elements: `x` is trivial exactly when `k > 0` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sumset Trivial Elements](sumset-trivial-elements.md)
 
 ## Sources
 

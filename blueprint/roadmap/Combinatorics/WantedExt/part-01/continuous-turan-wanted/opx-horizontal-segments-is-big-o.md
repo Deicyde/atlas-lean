@@ -12,7 +12,7 @@ pairwise disjoint `x`-ranges and distinct heights `y_i`, then `opx(n, P) = O(n)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx](opx.md)
 
 ## Sources
 

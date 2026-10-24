@@ -12,7 +12,7 @@ empty) sum of squares of distinct proper divisors of `n` other than `n/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is SZumkeller](is-szumkeller.md)
 
 ## Sources
 

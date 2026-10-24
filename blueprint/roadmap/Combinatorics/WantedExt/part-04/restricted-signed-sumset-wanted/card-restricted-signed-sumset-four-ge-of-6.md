@@ -13,7 +13,8 @@ All successive gaps differ from `2*a₁`; additionally `a₄-a₃=a₂-a₁` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Finset](ordered-finset.md)
+- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources
 

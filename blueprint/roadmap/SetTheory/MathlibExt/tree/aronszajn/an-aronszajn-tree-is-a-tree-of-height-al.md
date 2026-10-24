@@ -14,6 +14,10 @@ and which has no uncountable branches.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [A κ-Aronszajn tree is a κ-tree such that there are no...](a-aronszajn-tree-is-a-tree-such-that-the.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.SetTheory.Tree.Aronszajn](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ A bundled machine halts iff `TM2.eval` with its main label as default does.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TM2 Halts On](../../../../MathlibExt/turing-machine/recursive/halts/tm2-halts-on.md)
+
+## Proof depends on
+
+- [Init List eq init](../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/init-list-eq-init.md)
 
 ## Sources
 

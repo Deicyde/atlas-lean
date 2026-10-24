@@ -12,7 +12,11 @@ A move removes tokens, so the total number of tokens strictly decreases.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Moves](slow-anim-moves.md)
+
+## Proof depends on
+
+- [Slow ANim After](slow-anim-after.md)
 
 ## Sources
 

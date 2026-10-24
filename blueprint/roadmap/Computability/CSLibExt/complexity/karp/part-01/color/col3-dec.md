@@ -11,7 +11,12 @@ lean: Cslib.Complexity.Karp.col3Dec
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Edge Graph](edge-graph.md)
+- [Encode E](encode-e.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For `n > 2`, `mpf_{n,n}(1) = ∑_{k=0}^{n} (n-2)^{n-k} binom(2n+1-k, k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Parking Count](metered-parking-count.md)
 
 ## Sources
 

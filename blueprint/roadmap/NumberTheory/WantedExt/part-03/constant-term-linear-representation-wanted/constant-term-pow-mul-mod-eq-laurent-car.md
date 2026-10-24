@@ -13,7 +13,7 @@ Laurent polynomial are undefined).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Cartier](laurent-cartier.md)
 
 ## Sources
 

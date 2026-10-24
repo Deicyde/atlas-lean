@@ -12,7 +12,12 @@ The upper average of the constant sequence `c^∞` is `c`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomid Upper Average](binomid-upper-average.md)
+
+## Proof depends on
+
+- [Binomid Average](binomid-average.md)
+- [Binomid Average const](binomid-average-const.md)
 
 ## Sources
 

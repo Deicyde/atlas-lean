@@ -12,7 +12,15 @@ The halting word `⊢ H ⊣` rewrites to nothing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Step](../../part-02/string-rewriting/step.md)
+- [TMSym](tmsym.md)
+- [Halt Word](halt-word.md)
+- [Rules](rules.md)
+
+## Proof depends on
+
+- [Next State](next-state.md)
+- [A rewrite at the control symbol](step-result.md)
 
 ## Sources
 

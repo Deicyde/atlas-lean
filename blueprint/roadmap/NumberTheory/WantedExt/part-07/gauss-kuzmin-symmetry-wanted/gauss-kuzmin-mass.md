@@ -13,6 +13,10 @@ The Gauss-Kuzmin measure `P_GK(a) = μ_GK(I(a)) = (1/log 2) ∫_{I(a)} dx/(1 + x
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cf Cylinder](cf-cylinder.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GaussKuzminSymmetryWanted](../../../../../sources/v2/WantedExt.md)

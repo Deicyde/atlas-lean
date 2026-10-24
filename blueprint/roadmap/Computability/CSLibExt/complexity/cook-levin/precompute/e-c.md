@@ -11,7 +11,16 @@ Stack renaming of the counter program into the full machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](../counter-view/sk.md)
+- [CC](cc.md)
+- [FK](fk.md)
+
+## Proof depends on
+
+- [HK](../assembly/hk.md)
+- [PS](ps.md)
+- [PT](pt.md)
+- [Tgt](tgt.md)
 
 ## Sources
 

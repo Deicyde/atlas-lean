@@ -11,7 +11,7 @@ Source: Nikolov, arXiv1301.4039, retained Theorem `thm:main`; catalogue line 55.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nikolov2013 Vector Discrepancy Upper Bound](nikolov2013-vector-discrepancy-upper-bou.md)
 
 ## Sources
 

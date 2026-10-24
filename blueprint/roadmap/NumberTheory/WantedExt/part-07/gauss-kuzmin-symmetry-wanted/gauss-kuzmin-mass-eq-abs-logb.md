@@ -11,7 +11,8 @@ Explicit formula: `P_GK(a) = P_GK(a⃖) = |log₂(1 + (-1)ⁿ/((p + q)(q' + q)))
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Matrix](convergent-matrix.md)
+- [Gauss Kuzmin Mass](gauss-kuzmin-mass.md)
 
 ## Sources
 

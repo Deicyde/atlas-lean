@@ -12,7 +12,11 @@ The empty range `{1, …, 0}` always admits a partition into `k ≥ 1` sum-free 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Sum Free Partition Mod](has-sum-free-partition-mod.md)
+
+## Proof depends on
+
+- [Is Sum Free Mod](is-sum-free-mod.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.frobeniusPartitionRepCount_four_ten_mul_add_one_mod_five
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
 
 ## Sources
 

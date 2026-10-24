@@ -12,7 +12,54 @@ One whole clause: from `e00 c` to `nextC c`, all counters restored.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SK](../counter-view/sk.md)
+- [SΓ](../counter-view/s.md)
+- [St](../counter-view/st.md)
+- [Layout](../family/layout.md)
+- [Dense Clause](../family/dense-clause.md)
+- [BD](bd.md)
+- [K](k.md)
+- [CK](ck.md)
+- [CL](cl.md)
+- [Bs](bs-2.md)
+- [Nl](nl.md)
+- [GL](gl.md)
+- [Next C](next-c.md)
+- [Lab](lab.md)
+- [Mono](mono.md)
+- [Rest](rest.md)
+- [Clause B](clause-b.md)
+- [Clits](clits.md)
+- [Csv](csv.md)
+- [Prog](prog.md)
+- [Encode Clause](../../dense-sat/encode-clause.md)
+- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+
+## Proof depends on
+
+- [Inc](../family/inc.md)
+- [Mono lo](../family/mono-lo.md)
+- [Encode Clause dense Clause](../family/encode-clause-dense-clause.md)
+- [Gap Enc](../family/gap-enc.md)
+- [Gap Enc shift](../family/gap-enc-shift.md)
+- [Inc of mono](../family/inc-of-mono.md)
+- [Sg](sg.md)
+- [After](after.md)
+- [Bnd](bnd.md)
+- [Lit E](lit-e.md)
+- [Lits run](lits-run.md)
+- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Single](../../../../MathlibExt/turing-machine/program/single.md)
+- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Copy run](../../../../MathlibExt/turing-machine/program/copy-run.md)
+- [Emit](../../../../MathlibExt/turing-machine/program/emit.md)
+- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Push List](../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
+- [Xfer E](../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

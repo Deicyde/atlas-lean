@@ -11,7 +11,11 @@ The CPA advantage `|Pr[A guesses b] - 1/2|`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CPAAdversary](cpaadversary.md)
+
+## Proof depends on
+
+- [Cpa Game](cpa-game.md)
 
 ## Sources
 

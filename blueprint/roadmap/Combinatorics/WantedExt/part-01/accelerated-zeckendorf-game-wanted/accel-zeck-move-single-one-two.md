@@ -12,7 +12,7 @@ From two copies of `F_1` the move `1 · C_1` reaches one copy of `F_2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accel Zeck Move](accel-zeck-move.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Exact formula for `R_3(n)`, `n = 3m + a > 9`, `0 ≤ a ≤ 2`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Rook Partition Count](max-rook-partition-count.md)
 
 ## Sources
 

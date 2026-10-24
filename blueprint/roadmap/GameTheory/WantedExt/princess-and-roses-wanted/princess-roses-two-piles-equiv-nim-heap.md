@@ -12,7 +12,9 @@ parity classes `(E, E), (O, E), (O, O), (E, O)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
+- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [Princess Roses](princess-roses.md)
 
 ## Sources
 

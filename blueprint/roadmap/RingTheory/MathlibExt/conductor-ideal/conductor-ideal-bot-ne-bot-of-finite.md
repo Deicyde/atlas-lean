@@ -13,7 +13,7 @@ A finite overring in the fraction field has nonzero conductor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conductor Ideal](conductor-ideal.md)
 
 ## Proof depends on
 

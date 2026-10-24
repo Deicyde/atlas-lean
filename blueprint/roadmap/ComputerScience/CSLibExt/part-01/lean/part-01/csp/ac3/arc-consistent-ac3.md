@@ -13,7 +13,14 @@ orientations of an arc and arcs between distinct variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arc Consistent](arc-consistent.md)
+- [Binary CSP](binary-csp.md)
+- [Symmetric](symmetric.md)
+- [Ac3 All](ac3-all.md)
+
+## Proof depends on
+
+- [Arc Consistent ac3 of inv](arc-consistent-ac3-of-inv.md)
 
 ## Sources
 

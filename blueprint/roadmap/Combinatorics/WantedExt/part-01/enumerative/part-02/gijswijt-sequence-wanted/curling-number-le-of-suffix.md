@@ -11,7 +11,7 @@ If `T` is a suffix of `S`, then `𝒞(S) ≥ 𝒞(T)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curling Number](curling-number.md)
 
 ## Sources
 

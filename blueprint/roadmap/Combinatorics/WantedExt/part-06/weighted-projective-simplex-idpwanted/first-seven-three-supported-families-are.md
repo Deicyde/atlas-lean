@@ -12,7 +12,11 @@ support formulas produces a reflexive IDP weighted simplex for positive `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is Reflexive](is-reflexive.md)
+- [Expand Support](expand-support.md)
+- [Three Support Family](three-support-family.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

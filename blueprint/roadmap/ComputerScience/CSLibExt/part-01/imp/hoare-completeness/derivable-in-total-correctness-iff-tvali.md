@@ -13,7 +13,16 @@ valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [TDerivable](tderivable.md)
+- [TValid](../hoare-total/tvalid.md)
+- [Total Correctness](total-correctness.md)
+- [Triple](triple.md)
+
+## Proof depends on
+
+- [Tderivable iff tvalid](tderivable-iff-tvalid.md)
 
 ## Sources
 

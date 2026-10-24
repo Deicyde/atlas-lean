@@ -14,6 +14,11 @@ points on the boundary are its four vertices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lattice Parallelogram](lattice-parallelogram.md)
+- [Lattice Points](lattice-points.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CleanLatticeParallelogramWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,6 +13,10 @@ The zoomed Farey staircase `B_n(x) = n A_n(x/n) = Σ_{k=1}^n ⌊(k/n) x⌋/k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Farey Staircase](farey-staircase.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FareyStaircaseWanted](../../../../../sources/v2/WantedExt.md)

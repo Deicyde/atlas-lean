@@ -12,7 +12,7 @@ The joint weight of a state path `z` of length `t + 1` and the observations `x 0
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For every natural number `m ≥ 1`, the function `x ↦ ⌊x / 2^m⌋` has the N
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

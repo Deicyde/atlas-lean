@@ -14,7 +14,7 @@ to `∫ f dν`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mc Estimate](mc-estimate.md)
 
 ## Sources
 

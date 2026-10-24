@@ -19,7 +19,7 @@ point (`not_isInaccessibleFixedPoint_of_inaccessibleBelow_eq_empty` above).
 
 ## Depends on
 
-This node has no prerequisites.
+- [InAccBelow κ is the set of all inaccessible cardinals below...](inaccbelow-is-the-set-of-all-inaccessibl.md)
 
 ## Sources
 

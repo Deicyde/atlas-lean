@@ -12,7 +12,8 @@ dispatch, the repeat scan, the nonzero-count check and `yes`; otherwise to `no`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CI](ci.md)
+- [Lab](lab.md)
 
 ## Sources
 

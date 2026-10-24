@@ -14,7 +14,7 @@ Proposition 3 (ii): for a symmetric sequence `a₁, …, a_{l-1}` and `2 ≤ i �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convergent Den](convergent-den.md)
 
 ## Sources
 

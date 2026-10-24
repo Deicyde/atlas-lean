@@ -12,7 +12,14 @@ lean: MetaMathlibExt.szQMZVWord_szWord_singleton
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz QMZV](../part-01/sz-qmzv.md)
+- [Sz QMZVWord](sz-qmzvword.md)
+- [Sz Word](sz-word.md)
+
+## Proof depends on
+
+- [Sz Index Of Word Aux](sz-index-of-word-aux.md)
+- [Sz Index Of Word Aux replicate append](sz-index-of-word-aux-replicate-append.md)
 
 ## Sources
 

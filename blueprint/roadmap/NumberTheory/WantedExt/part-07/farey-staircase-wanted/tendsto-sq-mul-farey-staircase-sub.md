@@ -12,7 +12,7 @@ Theorem 4: for `x ≥ 0`, `n² D_n(x/n) → Σ_{k=1}^{⌊x⌋} (1 - log(x/k))` a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Staircase](farey-staircase.md)
 
 ## Sources
 

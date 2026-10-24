@@ -12,7 +12,8 @@ The `n`-bit adder has `5 n` gates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Signature](arith-signature.md)
+- [Ripple Carry Adder](ripple-carry-adder.md)
 
 ## Sources
 

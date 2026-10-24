@@ -13,7 +13,14 @@ choice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preference Profile](preference-profile.md)
+- [Soulmate Pair Count](soulmate-pair-count.md)
+
+## Proof depends on
+
+- [Is Soulmate Pair](is-soulmate-pair.md)
+- [Man Rank](man-rank.md)
+- [Woman Rank](woman-rank.md)
 
 ## Sources
 

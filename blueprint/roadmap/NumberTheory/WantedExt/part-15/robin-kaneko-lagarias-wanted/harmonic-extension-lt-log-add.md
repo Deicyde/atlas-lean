@@ -11,7 +11,7 @@ For `x ≥ 1`, `H(x) < log x + γ + 1/(2x)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Harmonic Extension](harmonic-extension.md)
 
 ## Sources
 

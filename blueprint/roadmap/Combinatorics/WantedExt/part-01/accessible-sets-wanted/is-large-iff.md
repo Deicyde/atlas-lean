@@ -12,7 +12,8 @@ Characterization of largeness as `r`-largeness for every `r ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Large](is-large.md)
+- [Is RLarge](is-rlarge.md)
 
 ## Sources
 

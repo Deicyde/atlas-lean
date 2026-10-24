@@ -16,7 +16,9 @@ omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz QMZV](../part-01/ooz-qmzv.md)
+- [Ooz T](ooz-t.md)
+- [Stuffle Comb](stuffle-comb.md)
 
 ## Sources
 

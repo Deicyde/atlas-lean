@@ -13,7 +13,8 @@ indices `≤ n` once `Δx` is small enough, for every `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L Star Collection](l-star-collection.md)
+- [L Star Inf](l-star-inf.md)
 
 ## Sources
 

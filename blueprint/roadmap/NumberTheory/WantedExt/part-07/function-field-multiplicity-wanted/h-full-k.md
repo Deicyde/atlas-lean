@@ -13,6 +13,11 @@ lean: MetaMathlibExt.hFullK
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [H Full Root](h-full-root.md)
+- [Poly Norm](poly-norm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FunctionFieldMultiplicityWanted](../../../../../sources/v2/WantedExt.md)

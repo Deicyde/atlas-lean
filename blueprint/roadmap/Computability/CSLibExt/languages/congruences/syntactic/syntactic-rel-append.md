@@ -12,7 +12,12 @@ Syntactic equivalence is compatible with concatenation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Rel](syntactic-rel.md)
+
+## Proof depends on
+
+- [Syntactic Rel prefix](syntactic-rel-prefix.md)
+- [Syntactic Rel suffix](syntactic-rel-suffix.md)
 
 ## Sources
 

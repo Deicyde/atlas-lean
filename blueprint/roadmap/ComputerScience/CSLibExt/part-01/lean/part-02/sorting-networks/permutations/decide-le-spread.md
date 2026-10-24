@@ -12,7 +12,7 @@ The Boolean input is a monotone image of the spread one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Spread](spread.md)
 
 ## Sources
 

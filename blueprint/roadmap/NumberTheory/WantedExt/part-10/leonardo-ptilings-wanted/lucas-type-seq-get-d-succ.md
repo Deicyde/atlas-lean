@@ -12,7 +12,12 @@ The last entry of `lucasTypeSeq p a₀ c (n + 1)` is the recurrence step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Type Seq](lucas-type-seq.md)
+
+## Proof depends on
+
+- [Lucas Type Seq get D](lucas-type-seq-get-d.md)
+- [Lucas Type Seq length](lucas-type-seq-length.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ with exactly `s` parts `x_1 ≥ ⋯ ≥ x_s` contained in the staircase with col
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Decreasing Parts](decreasing-parts.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.LitCellsPartitionsWanted](../../../../../../../../../sources/v2/WantedExt.md)

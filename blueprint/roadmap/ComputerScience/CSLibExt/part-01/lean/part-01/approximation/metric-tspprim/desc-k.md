@@ -13,6 +13,10 @@ lean: Cslib.Algorithms.Lean.MetricTSP.DescK
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Up](up.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.MetricTSPPrim](../../../../../../../../sources/v2/CSLibExt.md)

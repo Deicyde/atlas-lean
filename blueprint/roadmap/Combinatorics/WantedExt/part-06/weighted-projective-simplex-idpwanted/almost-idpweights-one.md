@@ -12,7 +12,7 @@ For `n = 1` the weights of Theorem 13 are `(1, 3, 10, 15)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost IDPWeights](almost-idpweights.md)
 
 ## Sources
 

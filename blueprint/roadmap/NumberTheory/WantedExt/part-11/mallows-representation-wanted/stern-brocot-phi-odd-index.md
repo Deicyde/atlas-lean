@@ -13,7 +13,13 @@ For irrational `α ∈ (0, 1)` and `i ≥ 1`, `φ_SBT(f_{o(i)}(α)) = pf_i(α)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Insert](mallows-insert.md)
+- [Mallows Interval](mallows-interval.md)
+- [Mallows Odd Index](mallows-odd-index.md)
+- [Mallows Q](mallows-q.md)
+- [Stern Brocot Interval](stern-brocot-interval.md)
+- [Stern Brocot Phi](stern-brocot-phi.md)
+- [Stern Brocot Rep](stern-brocot-rep.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ Cost of one phase loop with count bound `NB`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Body B](body-b.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.InitFamily](../../../../../../sources/v2/CSLibExt.md)

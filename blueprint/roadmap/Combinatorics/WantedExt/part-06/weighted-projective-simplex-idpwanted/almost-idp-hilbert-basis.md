@@ -12,7 +12,11 @@ vertices together with the nine displayed exceptional columns.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost IDPWeights](almost-idpweights.md)
+- [Exceptional Hilbert Column](exceptional-hilbert-column.md)
+- [Hilbert Basis](hilbert-basis.md)
+- [Homogenized Weighted Vertices](homogenized-weighted-vertices.md)
+- [Weighted Simplex](weighted-simplex.md)
 
 ## Sources
 

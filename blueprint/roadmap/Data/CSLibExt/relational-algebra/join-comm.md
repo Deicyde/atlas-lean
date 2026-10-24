@@ -12,7 +12,13 @@ The natural join is commutative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
+- [Join](join.md)
+
+## Proof depends on
+
+- [Compatible](compatible.md)
+- [Merge](merge.md)
 
 ## Sources
 

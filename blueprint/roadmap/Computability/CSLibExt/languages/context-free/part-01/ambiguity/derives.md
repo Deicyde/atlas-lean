@@ -12,7 +12,7 @@ A leftmost derivation is a derivation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Left Derivation](left-derivation.md)
 
 ## Sources
 

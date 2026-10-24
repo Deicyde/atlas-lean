@@ -12,7 +12,7 @@ The optimal crossing time for capacity `2`: for `n ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Time](bridge-time.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ iff `p₂ = p₁ + 2`, `(D | p₁) = -1` and `(D | p₂) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DCarmichael](is-dcarmichael.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ The coefficient of `∏ⱼ Xⱼ^{aⱼ} Yⱼ^{bⱼ}` in `g(X; Y)` is `g(a₁ + 1,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Bracket](bi-bracket.md)
+- [Bi Bracket Gen](bi-bracket-gen.md)
 
 ## Sources
 

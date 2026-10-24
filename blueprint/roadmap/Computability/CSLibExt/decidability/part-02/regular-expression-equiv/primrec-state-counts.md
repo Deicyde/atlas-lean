@@ -12,7 +12,14 @@ The pass over the nodes is primitive recursive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node Equiv](../regular-expression/node-equiv.md)
+- [State Counts](state-counts.md)
+- [Regex Node](../regular-expression/regex-node.md)
+
+## Proof depends on
+
+- [Primrec step States](primrec-step-states.md)
+- [Step States](step-states.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Explicit estimate for the reciprocal sum of the semiprimes: for all `x > 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meissel Mertens Constant](../prime-counting/part-01/dusart-mertens-reciprocal-sum-wanted/meissel-mertens-constant.md)
 
 ## Sources
 

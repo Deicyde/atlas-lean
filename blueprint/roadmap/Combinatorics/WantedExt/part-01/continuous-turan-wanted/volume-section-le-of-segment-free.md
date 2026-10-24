@@ -12,7 +12,7 @@ Lemma 2.8: if `P = [a, a + c] × {b}` is a closed horizontal segment of length `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point Set Contains Pattern](point-set-contains-pattern.md)
 
 ## Sources
 

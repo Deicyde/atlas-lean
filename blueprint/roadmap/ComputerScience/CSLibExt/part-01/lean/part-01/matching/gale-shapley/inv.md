@@ -11,7 +11,7 @@ The invariant of deferred acceptance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

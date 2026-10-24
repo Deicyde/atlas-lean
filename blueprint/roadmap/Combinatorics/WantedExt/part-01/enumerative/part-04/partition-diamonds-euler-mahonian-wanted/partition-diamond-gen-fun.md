@@ -14,7 +14,8 @@ multiplied out in `ℤ⟦a, b⟧`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Mahonian](euler-mahonian.md)
+- [Multifold Diamond Series](multifold-diamond-series.md)
 
 ## Sources
 

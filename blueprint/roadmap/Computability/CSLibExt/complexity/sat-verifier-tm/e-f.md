@@ -11,7 +11,8 @@ Filter stacks in the host.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](../karp/part-02/three-sat-filter/k.md)
+- [HK](hk.md)
 
 ## Sources
 

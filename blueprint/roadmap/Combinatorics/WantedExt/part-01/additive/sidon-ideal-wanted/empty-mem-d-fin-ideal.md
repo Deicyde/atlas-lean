@@ -12,7 +12,11 @@ The empty set lies in `Dfin` (witness `n = 2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [D Fin Ideal](d-fin-ideal.md)
+
+## Proof depends on
+
+- [Positive Differences](positive-differences.md)
 
 ## Sources
 

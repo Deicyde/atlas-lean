@@ -11,7 +11,8 @@ The counter holding the output's first number: `A` (`k`, `flip`) or `D` (`n - k`
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Mode](mode.md)
 
 ## Sources
 

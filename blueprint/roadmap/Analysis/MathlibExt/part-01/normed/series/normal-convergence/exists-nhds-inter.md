@@ -17,7 +17,8 @@ normally on $U \cap S$.
 
 ## Depends on
 
-- [Extended supremum norm on a set](sup-norm-on.md)
+- [Converges Locally Normally On](converges-locally-normally-on.md)
+- [Converges Normally On](converges-normally-on.md)
 
 ## Sources
 

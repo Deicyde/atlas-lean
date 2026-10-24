@@ -12,7 +12,9 @@ For positive rational `x`: (i) `⌊x p^n⌋ ≡ ⌊x p^{n+L_x}⌋ (mod x_N)` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDelay](base-pdelay.md)
+- [Base PPeriod](base-pperiod.md)
+- [Prime To PNum](prime-to-pnum.md)
 
 ## Sources
 

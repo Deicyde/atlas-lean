@@ -12,7 +12,7 @@ each occurrence by the assignment `v`: `L` is `T` iff its literal is true, `M` t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](../color/col-st.md)
 
 ## Sources
 

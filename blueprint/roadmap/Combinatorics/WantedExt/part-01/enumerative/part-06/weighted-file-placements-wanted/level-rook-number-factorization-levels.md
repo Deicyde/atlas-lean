@@ -15,7 +15,9 @@ paper's setting; without it the formula fails (`m = 1`, `B = (2)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ferrers Board Cells](ferrers-board-cells.md)
+- [Level Rook Number](level-rook-number.md)
+- [M Falling Factorial](m-falling-factorial.md)
 
 ## Sources
 

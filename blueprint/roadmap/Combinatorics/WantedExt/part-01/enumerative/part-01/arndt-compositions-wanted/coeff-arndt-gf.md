@@ -12,7 +12,8 @@ The `xⁿ` coefficient of `arndtGF S` is `∑_k a_S(n, k) yᵏ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](arndt-composition-count.md)
+- [Arndt GF](arndt-gf.md)
 
 ## Sources
 

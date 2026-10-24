@@ -12,7 +12,7 @@ lean: MetaMathlibExt.kappaPow_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kappa Pow](kappa-pow.md)
 
 ## Sources
 

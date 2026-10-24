@@ -13,7 +13,7 @@ Corollary 5.13: a full grid `P = X_1 × ⋯ × X_d` (so `M_P = J_{k_1, …, k_d}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

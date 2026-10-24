@@ -12,7 +12,7 @@ lean: MetaMathlibExt.brousseauA_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Brousseau A](brousseau-a.md)
 
 ## Sources
 

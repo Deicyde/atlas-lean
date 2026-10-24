@@ -15,7 +15,7 @@ Boolean function, and is not restated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boolean Function Dual](../../../../../../Order/MathlibExt/boolean-function/self-dual/boolean-function-dual.md)
 
 ## Sources
 

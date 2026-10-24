@@ -11,7 +11,7 @@ Evaluation of integer polynomials, as a ring homomorphism `ℤ[x] → LIP(U)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ level `m`, i.e. `A_n = {x ∈ (0, 1] : (d_1(x), …, d_m(x)) ∈ S_n}`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Digit Seq](luroth-digit-seq.md)
 
 ## Sources
 

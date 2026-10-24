@@ -12,7 +12,9 @@ Compatibility of three tuples, grouped from the left, is pairwise compatibility.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
+- [Compatible](compatible.md)
+- [Merge](merge.md)
 
 ## Sources
 

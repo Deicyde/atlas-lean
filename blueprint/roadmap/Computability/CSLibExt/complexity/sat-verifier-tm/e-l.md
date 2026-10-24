@@ -11,7 +11,8 @@ Lookup stacks in the driver.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](../sat-check/k.md)
+- [K](../sat-lookup/k.md)
 
 ## Sources
 

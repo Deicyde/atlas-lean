@@ -12,7 +12,11 @@ lean: MetaMathlibExt.polynomialDenominator_eq_one_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polynomial Denominator](polynomial-denominator.md)
+
+## Proof depends on
+
+- [Coeff den dvd polynomial Denominator](coeff-den-dvd-polynomial-denominator.md)
 
 ## Sources
 

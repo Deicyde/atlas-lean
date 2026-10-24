@@ -12,7 +12,12 @@ lean: MetaMathlibExt.valuationRankTwoTupleCount_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valuation Rank Two Tuple Count](valuation-rank-two-tuple-count.md)
+
+## Proof depends on
+
+- [Valuation Distinct Tuples](valuation-distinct-tuples.md)
+- [Valuation Row](valuation-row.md)
 
 ## Sources
 

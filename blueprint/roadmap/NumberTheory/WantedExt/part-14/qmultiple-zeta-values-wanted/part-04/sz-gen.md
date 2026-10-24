@@ -15,6 +15,11 @@ The generating series of SZ-qMZVs of depth `r`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sz Block Index](../part-01/sz-block-index.md)
+- [Sz QMZV](../part-01/sz-qmzv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)

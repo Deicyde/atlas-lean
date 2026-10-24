@@ -13,7 +13,7 @@ parts: `(6,2,1,1)`, `(5,3,1,1)`, `(5,2,1,2)`, `(4,3,2,1)`, `(4,3,1,2)`, `(4,2,1,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block Arndt Composition Count](block-arndt-composition-count.md)
 
 ## Sources
 

@@ -13,7 +13,10 @@ Theorem 8: for `n ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Bernoulli](degenerate-bernoulli.md)
+- [Degenerate Euler](degenerate-euler.md)
+- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
+- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
 
 ## Sources
 

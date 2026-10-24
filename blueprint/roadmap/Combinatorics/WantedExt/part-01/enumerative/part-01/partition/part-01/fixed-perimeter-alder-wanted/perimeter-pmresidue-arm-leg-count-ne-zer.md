@@ -13,7 +13,7 @@ and `α ≡ ±a (mod d + 3)`; then `ℓ_d^(a)(α, λ) = C(2(α - a)/(d + 3) + λ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perimeter PMResidue Arm Leg Count](perimeter-pmresidue-arm-leg-count.md)
 
 ## Sources
 

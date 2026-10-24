@@ -13,7 +13,7 @@ formalize the paper's counting quotient exactly as in Theorem 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Overpartition Count](regular-overpartition-count.md)
 
 ## Sources
 

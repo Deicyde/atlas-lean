@@ -14,6 +14,10 @@ No element has norm `q ^ (2 * n + 1)` for inert `q`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inert peel](inert-peel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZsqrtdNormFactorization](../../../../../sources/v2/MathlibExt.md)

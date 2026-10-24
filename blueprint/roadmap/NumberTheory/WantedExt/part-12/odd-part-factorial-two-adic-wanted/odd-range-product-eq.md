@@ -14,7 +14,7 @@ for the paper's `odpr(l,m)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Range Product](odd-range-product.md)
 
 ## Sources
 

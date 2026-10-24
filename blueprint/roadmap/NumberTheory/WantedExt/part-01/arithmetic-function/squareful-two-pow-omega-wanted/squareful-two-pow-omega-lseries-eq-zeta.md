@@ -14,7 +14,7 @@ converging absolutely for `Re s > 1/15`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](../../../../MathlibExt/part-07/kfull/is-kfull.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MetaMathlibExt.twoPatternAvoiderCount_four_132_321
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pattern3](pattern3.md)
+- [Two Pattern Avoider Count](two-pattern-avoider-count.md)
 
 ## Sources
 

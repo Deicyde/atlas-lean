@@ -12,7 +12,15 @@ lean: MetaMathlibExt.zeckendorfRevBar_of_not_descLexLT
 
 ## Depends on
 
-This node has no prerequisites.
+- [Desc Lex LT](desc-lex-lt.md)
+- [Max LStar Block](max-lstar-block.md)
+- [Zeckendorf Rev Bar](zeckendorf-rev-bar.md)
+
+## Proof depends on
+
+- [Periodic Zeckendorf Collection](periodic-zeckendorf-collection.md)
+- [Zeckendorf Bar](zeckendorf-bar.md)
+- [Zeckendorf Rev](zeckendorf-rev.md)
 
 ## Sources
 

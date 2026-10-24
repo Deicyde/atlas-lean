@@ -14,6 +14,10 @@ function `Fin (2 * (n + 1)) → ℕ` (positions past the end of the list read `0
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Type BFlattened Word List](type-bflattened-word-list.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.FlattenedStirlingPermutationsWanted](../../../../../../../sources/v2/WantedExt.md)

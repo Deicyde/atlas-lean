@@ -13,7 +13,7 @@ The placement of Figure 4 (two rooks in the second row, three in the fourth) has
 
 ## Depends on
 
-This node has no prerequisites.
+- [File Placement Weight](file-placement-weight.md)
 
 ## Sources
 

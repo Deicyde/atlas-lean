@@ -12,7 +12,13 @@ shift, overflow ⊥.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+
+## Proof depends on
+
+- [Cn](../part-02/cn.md)
+- [Pl](../part-02/pl.md)
+- [Pu](../part-02/pu.md)
 
 ## Sources
 

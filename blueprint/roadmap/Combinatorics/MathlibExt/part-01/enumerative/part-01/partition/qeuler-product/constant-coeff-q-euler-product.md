@@ -12,7 +12,7 @@ For `k ≥ 1`, `f_k = ∏_{m ≥ 1} (1 - q^{k m})` has constant coefficient `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](q-euler-product.md)
 
 ## Sources
 

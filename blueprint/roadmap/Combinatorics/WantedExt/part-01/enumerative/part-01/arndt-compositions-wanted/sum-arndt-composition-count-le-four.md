@@ -13,7 +13,8 @@ composition for `n = 0`, is the Narayana cows number `N(n)` (`N(0) = N(1) = N(2)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arndt Composition Count](arndt-composition-count.md)
+- [Narayana Sequence](../../../../../MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
 
 ## Sources
 

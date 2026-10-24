@@ -15,7 +15,8 @@ hypothesis `D > 0` is added (for `x = 2, y = 1`, `α = 1` and `log_α` is undefi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

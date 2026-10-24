@@ -14,7 +14,14 @@ Definition 2 recurrence, for `k < n ≤ -2`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
+- [Neg Neg](neg-neg.md)
+- [Weight](weight.md)
+- [Weight'](weight-2.md)
+
+## Proof depends on
+
+- [Neg Neg Aux](neg-neg-aux.md)
 
 ## Sources
 

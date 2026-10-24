@@ -14,7 +14,12 @@ version needs a code type for CSLib machines, which CSLib does not have).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts On](../classes/halts-on.md)
+- [Is LBA](is-lba.md)
+
+## Proof depends on
+
+- [Halting of a machine running in computable space is computable](computable-pred-halts-on.md)
 
 ## Sources
 

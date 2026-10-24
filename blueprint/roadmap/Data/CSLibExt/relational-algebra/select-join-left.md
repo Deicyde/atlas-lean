@@ -13,7 +13,21 @@ evaluated before the join.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cond](cond.md)
+- [Attrs](attrs.md)
+- [Is Over](is-over-2.md)
+- [Tuple](tuple.md)
+- [Join](join.md)
+- [Select](select.md)
+
+## Proof depends on
+
+- [Eval](eval.md)
+- [Eval restrict](eval-restrict.md)
+- [Compatible](compatible.md)
+- [Is Over](is-over.md)
+- [Merge](merge.md)
+- [Restrict](restrict.md)
 
 ## Sources
 

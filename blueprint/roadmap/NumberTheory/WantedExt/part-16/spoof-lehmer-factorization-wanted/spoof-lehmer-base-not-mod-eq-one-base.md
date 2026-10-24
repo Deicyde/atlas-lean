@@ -12,7 +12,9 @@ all `i, j` (the record's range `1 ≤ i, j ≤ n` is the paper's typo for `r`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spoof Lehmer](is-spoof-lehmer.md)
+- [Is Trivial Spoof](is-trivial-spoof.md)
+- [Spoof Of Bases](spoof-of-bases.md)
 
 ## Sources
 

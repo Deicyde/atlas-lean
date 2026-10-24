@@ -12,7 +12,13 @@ lean: Cslib.Kolmogorov.exists_shortest_incompressible
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+- [The universal description method](../basic/u.md)
+
+## Proof depends on
+
+- [A partial recursive map raises complexity by at most a constant](exists-k-map-le.md)
+- [Partrec U](../basic/partrec-u.md)
 
 ## Sources
 

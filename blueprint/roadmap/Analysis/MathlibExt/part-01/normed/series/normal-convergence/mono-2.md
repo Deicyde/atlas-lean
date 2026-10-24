@@ -16,10 +16,11 @@ normally on $S$, then it converges locally normally on $T$.
 
 ## Depends on
 
-- [Extended supremum norm on a set](sup-norm-on.md)
+- [Converges Locally Normally On](converges-locally-normally-on.md)
 
 ## Proof depends on
 
+- [Converges Normally On](converges-normally-on.md)
 - [Normal convergence passes to subsets](mono.md)
 
 ## Sources

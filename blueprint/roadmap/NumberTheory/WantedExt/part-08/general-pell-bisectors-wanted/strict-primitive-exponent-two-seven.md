@@ -12,7 +12,12 @@ lean: MetaMathlibExt.strictPrimitiveExponent_two_seven
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Primitive Exponent](strict-primitive-exponent.md)
+
+## Proof depends on
+
+- [Seven mem strict Primitive Primes two](seven-mem-strict-primitive-primes-two.md)
+- [Strict Primitive Primes](strict-primitive-primes.md)
 
 ## Sources
 

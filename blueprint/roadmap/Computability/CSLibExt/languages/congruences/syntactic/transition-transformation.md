@@ -11,7 +11,11 @@ The transformation induced by reading a word in `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State Transformation](state-transformation.md)
+
+## Proof depends on
+
+- [Transition Action](transition-action.md)
 
 ## Sources
 

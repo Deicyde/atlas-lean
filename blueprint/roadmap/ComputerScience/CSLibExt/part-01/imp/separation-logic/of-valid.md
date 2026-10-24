@@ -14,7 +14,26 @@ exactly when the plain command does.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
+- [To Heap](../heap-step/to-heap.md)
+- [Heap](../heap/heap.md)
+- [Sep Valid](sep-valid.md)
+- [State](../syntax/state.md)
+- [Valid](../hoare/valid.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [BExp](../syntax/bexp.md)
+- [HSteps](../heap-step/hsteps.md)
+- [Of to Heap](../heap-step/of-to-heap.md)
+- [Heap Cmd](../heap-step/heap-cmd.md)
+- [Safe](../heap-step/safe.md)
+- [Steps](../small-step/steps.md)
+- [Terminates](../small-step/terminates.md)
+- [Iff terminates](../equivalence/iff-terminates.md)
+- [Safe to Heap](../heap-step/safe-to-heap.md)
 
 ## Sources
 

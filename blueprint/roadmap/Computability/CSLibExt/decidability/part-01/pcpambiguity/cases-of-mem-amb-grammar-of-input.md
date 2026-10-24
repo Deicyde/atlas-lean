@@ -12,7 +12,18 @@ The rules of `ambGrammar P` with input `A ∈ {1, 2}` are those of the side gram
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amb Grammar](amb-grammar.md)
+- [Cont Rule](../cfgundecidable/cont-rule.md)
+- [Term Rule](../cfgundecidable/term-rule.md)
+- [Domino](../pcp/domino.md)
+- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+
+## Proof depends on
+
+- [Nt Sym](../cfgundecidable/nt-sym.md)
+- [Side Rules](../cfgundecidable/side-rules.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Sources
 

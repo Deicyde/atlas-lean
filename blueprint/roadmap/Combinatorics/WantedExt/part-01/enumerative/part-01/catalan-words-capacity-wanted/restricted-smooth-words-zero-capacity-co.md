@@ -14,7 +14,9 @@ Mansour and Shattuck's Theorem 10, remaining values: `r*(n, 1; 0)` is `1` for `n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+- [Restricted Smooth Capacity Dist](restricted-smooth-capacity-dist.md)
+- [Restricted Smooth Words](restricted-smooth-words.md)
 
 ## Sources
 

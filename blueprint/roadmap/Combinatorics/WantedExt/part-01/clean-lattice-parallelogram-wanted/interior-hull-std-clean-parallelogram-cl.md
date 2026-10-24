@@ -13,7 +13,8 @@ only boundary lattice points are its vertices) if and only if `n = F_k` and `a =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Points](lattice-points.md)
+- [Std Clean Parallelogram](std-clean-parallelogram.md)
 
 ## Sources
 

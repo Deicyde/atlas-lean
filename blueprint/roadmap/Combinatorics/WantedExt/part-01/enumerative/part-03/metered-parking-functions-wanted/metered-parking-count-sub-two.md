@@ -17,7 +17,7 @@ the truncated `1^0` agree. Formula taken from the arXiv source (the text layer i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metered Parking Count](metered-parking-count.md)
 
 ## Sources
 

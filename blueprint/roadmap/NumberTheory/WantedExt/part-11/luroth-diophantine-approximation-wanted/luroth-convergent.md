@@ -15,6 +15,10 @@ The Lüroth convergent of a digit sequence, indexed from `0`:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Luroth Denominator](luroth-denominator.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LurothDiophantineApproximationWanted](../../../../../sources/v2/WantedExt.md)

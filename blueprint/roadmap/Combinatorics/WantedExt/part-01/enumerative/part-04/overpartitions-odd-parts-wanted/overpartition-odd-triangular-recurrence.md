@@ -13,7 +13,7 @@ and `0` otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
 
 ## Sources
 

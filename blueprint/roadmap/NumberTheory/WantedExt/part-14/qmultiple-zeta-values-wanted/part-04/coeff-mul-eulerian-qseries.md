@@ -12,7 +12,7 @@ The coefficient of `q^{m n}` in `∑_{n ≥ 1} n^{k-1}/(k-1)! q^{m n}` is `n^{k-
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eulerian QSeries](eulerian-qseries.md)
 
 ## Sources
 

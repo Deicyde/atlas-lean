@@ -15,6 +15,10 @@ coefficients of `L(f × f, s) = ζ(2s) ∑ λ_f(n)² n^{-s}`, as an arithmetic f
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cusp Form Normalized Coeff](cusp-form-normalized-coeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HuaCuspFormDivisorProblemWanted](../../../../../sources/v2/WantedExt.md)

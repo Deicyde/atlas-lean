@@ -13,7 +13,7 @@ The first entry of the paper's Table 1: `71 · 1609 = 114239` is compatible with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ none contains `d_{2m+1} ⋯ d_0 · d_{-1} = 10^{2m+1} · 0`, for `m ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Digit Block](has-digit-block.md)
+- [Is Base Phi Expansion](is-base-phi-expansion.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ lean: MetaMathlibExt.isLargeZsigmondyPrime_two_one_three_seven
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Large Zsigmondy Prime](is-large-zsigmondy-prime.md)
+
+## Proof depends on
+
+- [Is Primitive Divisor](../../../MathlibExt/part-10/primitive-divisor/is-primitive-divisor.md)
+- [Is Primitive Prime Divisor](../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ A row is its row vertices followed by its clause vertices, up to order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hf Picks](hf-picks.md)
+- [Hf Row](hf-row.md)
+- [Hp R](../ham-path/hp-r.md)
 
 ## Sources
 

@@ -13,7 +13,23 @@ lean: Cslib.Decidability.Grammar.eq_sideWord_of_derives
 
 ## Depends on
 
-This node has no prerequisites.
+- [Side Grammar](side-grammar.md)
+- [Side Word](side-word.md)
+- [Domino](../pcp/domino.md)
+- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+
+## Proof depends on
+
+- [Cont Rule](cont-rule.md)
+- [Domino](domino.md)
+- [Eq of derives terminal](eq-of-derives-terminal.md)
+- [Eq of terminal append nonterminal](eq-of-terminal-append-nonterminal.md)
+- [Flat](flat.md)
+- [Letter Sym](letter-sym.md)
+- [Term Rule](term-rule.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 
 ## Sources
 

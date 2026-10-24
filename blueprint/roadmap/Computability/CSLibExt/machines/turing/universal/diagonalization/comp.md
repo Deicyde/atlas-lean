@@ -11,7 +11,14 @@ The readout machine as a host component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](../../../../complexity/host/comp.md)
+
+## Proof depends on
+
+- [K](k.md)
+- [Lab](lab.md)
+- [Prog](prog.md)
+- [Γ](untitled.md)
 
 ## Sources
 

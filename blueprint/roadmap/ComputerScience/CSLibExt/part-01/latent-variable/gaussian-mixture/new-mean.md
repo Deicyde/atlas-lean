@@ -11,7 +11,12 @@ The responsibility-weighted mean `μ k' = (∑ n, r n k xₙ) / N k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Mass](mass.md)
+- [Resp](resp.md)
 
 ## Sources
 

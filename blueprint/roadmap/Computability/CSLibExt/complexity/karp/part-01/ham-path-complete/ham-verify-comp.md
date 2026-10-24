@@ -11,7 +11,15 @@ lean: Cslib.Complexity.Karp.hamVerifyComp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](../../../host/comp.md)
+
+## Proof depends on
+
+- [CI](../../part-02/ham-path-verify/ci.md)
+- [K](../../part-02/ham-path-verify/k.md)
+- [Lab](../../part-02/ham-path-verify/lab.md)
+- [Prog](../../part-02/ham-path-verify/prog.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

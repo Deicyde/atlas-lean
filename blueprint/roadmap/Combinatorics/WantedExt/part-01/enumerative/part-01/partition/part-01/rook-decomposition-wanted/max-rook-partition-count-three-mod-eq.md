@@ -11,7 +11,7 @@ For `n > 9` and `p ≥ 2`, `R_3(n + 3p) ≡ R_3(n) (mod p)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Rook Partition Count](max-rook-partition-count.md)
 
 ## Sources
 

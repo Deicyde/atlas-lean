@@ -15,7 +15,8 @@ cycle of length at least `2` (`f' = 1`), and for either block `B` (the cycle of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Increasing Cycle Perm](is-increasing-cycle-perm.md)
+- [Set Partition Genus](set-partition-genus.md)
 
 ## Sources
 

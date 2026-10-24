@@ -17,7 +17,11 @@ does not compare `κ` away from the finite root set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LGeneralized Fibonacci](is-lgeneralized-fibonacci.md)
+- [L Generalized Fibonacci Other Roots](l-generalized-fibonacci-other-roots.md)
+- [L Generalized Fibonacci Zeta Pole](l-generalized-fibonacci-zeta-pole.md)
+- [L Generalized Fibonacci Zeta Pole Set](l-generalized-fibonacci-zeta-pole-set.md)
+- [L Generalized Fibonacci Zeta Residue](l-generalized-fibonacci-zeta-residue.md)
 
 ## Sources
 

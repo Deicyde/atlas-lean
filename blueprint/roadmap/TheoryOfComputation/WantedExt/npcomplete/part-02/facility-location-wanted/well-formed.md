@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Facility Location Instance](facility-location-instance.md)
 
 ## Sources
 

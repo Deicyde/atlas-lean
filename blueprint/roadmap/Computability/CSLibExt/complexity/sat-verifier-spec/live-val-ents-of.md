@@ -12,7 +12,14 @@ The occurrence table answers lookups exactly as `lookupVar`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ents Of](ents-of.md)
+- [Live Val](live-val.md)
+- [Lookup Var](../../sat-time-m/lookup-var.md)
+
+## Proof depends on
+
+- [Ent](ent.md)
+- [Encode Nat inj](encode-nat-inj.md)
 
 ## Sources
 

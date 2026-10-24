@@ -13,7 +13,7 @@ lean: Cslib.Turing.TM2Time.relatesWithinSteps_tm0_of_relatesInSteps_tm1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tr](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 
 ## Sources
 

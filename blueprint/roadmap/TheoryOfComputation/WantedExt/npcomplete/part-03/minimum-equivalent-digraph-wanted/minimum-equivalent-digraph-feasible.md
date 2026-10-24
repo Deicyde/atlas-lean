@@ -11,7 +11,11 @@ A spanning subdigraph with at most `K` arcs and the same reachability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Equivalent Digraph Instance](minimum-equivalent-digraph-instance.md)
+
+## Proof depends on
+
+- [Reachable](reachable.md)
 
 ## Sources
 

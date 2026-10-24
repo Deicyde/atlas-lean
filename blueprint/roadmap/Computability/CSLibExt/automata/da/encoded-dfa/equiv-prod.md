@@ -11,7 +11,7 @@ Encoded DFAs as triples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
 
 ## Sources
 

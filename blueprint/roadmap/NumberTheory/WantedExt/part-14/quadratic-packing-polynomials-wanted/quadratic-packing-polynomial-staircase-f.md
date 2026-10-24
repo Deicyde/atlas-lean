@@ -12,7 +12,10 @@ the staircase `J_k` has height `ȳ_k = n/l - 1`, `l = gcd(m - 1, n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Quadratic Packing Polynomial](is-quadratic-packing-polynomial.md)
+- [Consecutive Step Difference](consecutive-step-difference.md)
+- [Sector Lattice Points](sector-lattice-points.md)
+- [Staircase First Height](staircase-first-height.md)
 
 ## Sources
 

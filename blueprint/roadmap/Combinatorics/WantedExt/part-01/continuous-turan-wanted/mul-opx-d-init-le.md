@@ -12,7 +12,7 @@ Lemma 5.5: for `P ⊆ ℝ^{d+1}` with projection `Pr(P) ⊆ ℝ^d` (drop the las
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

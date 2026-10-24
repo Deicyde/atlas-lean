@@ -11,7 +11,7 @@ A vertex ordering with at most `K` backward arcs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feedback Arc Set Instance](feedback-arc-set-instance.md)
 
 ## Sources
 

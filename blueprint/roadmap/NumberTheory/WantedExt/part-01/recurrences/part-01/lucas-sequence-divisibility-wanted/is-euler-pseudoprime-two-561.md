@@ -12,7 +12,7 @@ lean: MetaMathlibExt.isEulerPseudoprime_two_561
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Euler Pseudoprime](is-euler-pseudoprime.md)
 
 ## Sources
 

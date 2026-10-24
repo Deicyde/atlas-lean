@@ -11,7 +11,11 @@ CLIQUE: `G` has a clique of `k` vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Kg Dec](kg-dec.md)
 
 ## Sources
 

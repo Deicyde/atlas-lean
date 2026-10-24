@@ -17,6 +17,10 @@ the division-free form of the paper's
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pq Binomial](pq-binomial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.RFibonacciPolynomialWanted](../../../../../sources/v2/WantedExt.md)

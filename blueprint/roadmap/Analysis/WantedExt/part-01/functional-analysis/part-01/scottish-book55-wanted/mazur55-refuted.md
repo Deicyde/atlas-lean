@@ -12,7 +12,7 @@ factorisation through an affine map with bounded image on `R` fails.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem55 Claim](scottish-book-problem55-claim.md)
 
 ## Sources
 

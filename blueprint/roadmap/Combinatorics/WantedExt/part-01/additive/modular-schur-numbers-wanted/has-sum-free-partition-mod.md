@@ -14,6 +14,10 @@ modulo `m`; the partition is a coloring `c` by `Fin k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Sum Free Mod](is-sum-free-mod.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.ModularSchurNumbersWanted](../../../../../../sources/v2/WantedExt.md)

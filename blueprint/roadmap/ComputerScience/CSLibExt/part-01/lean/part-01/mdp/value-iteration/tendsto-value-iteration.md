@@ -12,7 +12,15 @@ lean: Cslib.Algorithms.Lean.MarkovDecision.tendsto_valueIteration
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Stochastic](stochastic.md)
+- [Optimal Value](optimal-value.md)
+- [Value Iteration](value-iteration.md)
+
+## Proof depends on
+
+- [Bellman](bellman.md)
+- [Bellman's operator is a contraction](bellman-contracting.md)
 
 ## Sources
 

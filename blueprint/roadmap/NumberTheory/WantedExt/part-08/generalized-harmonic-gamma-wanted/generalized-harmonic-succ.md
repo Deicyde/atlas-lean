@@ -12,7 +12,7 @@ Recurrence `H_{n+1}^{(s)} = H_n^{(s)} + 1 / (n+1)^s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Harmonic](generalized-harmonic.md)
 
 ## Sources
 

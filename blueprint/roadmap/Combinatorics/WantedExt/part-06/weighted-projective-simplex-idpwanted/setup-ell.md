@@ -14,6 +14,10 @@ the reflexivity hypothesis in the results that use this notation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weight Lcm](weight-lcm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

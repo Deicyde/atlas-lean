@@ -19,6 +19,10 @@ over all positions; that is `swScore`, the maximum of this cell over all prefix 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sw Cell Front](sw-cell-front.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.SequenceAlignment](../../../../../../../../sources/v2/CSLibExt.md)

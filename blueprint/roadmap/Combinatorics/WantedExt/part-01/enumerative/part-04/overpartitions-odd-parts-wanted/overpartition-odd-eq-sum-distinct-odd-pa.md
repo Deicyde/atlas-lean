@@ -11,7 +11,8 @@ For `n ≥ 0`, `po(n) = ∑_{k ≥ 0} pod(n - k(k+1)/2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct Odd Parts Count](distinct-odd-parts-count.md)
+- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
 
 ## Sources
 

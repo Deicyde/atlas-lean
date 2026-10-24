@@ -12,7 +12,7 @@ Coefficients of the polynomial part.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laurent Poly Part](laurent-poly-part.md)
 
 ## Sources
 

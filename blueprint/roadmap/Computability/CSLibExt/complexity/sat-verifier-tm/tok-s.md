@@ -11,7 +11,8 @@ Tokenizer-local view of the stacks after phase 0.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [K](../sat-tokenizer/k.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ Window depth: the most `push`/`peek`/`pop` nodes on any path of any statement tr
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ops](ops.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Complexity.CookLevin.Situation](../../../../../../../sources/v2/CSLibExt.md)

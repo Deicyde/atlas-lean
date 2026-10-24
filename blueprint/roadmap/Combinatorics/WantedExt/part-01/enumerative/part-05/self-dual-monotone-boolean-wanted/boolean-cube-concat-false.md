@@ -12,7 +12,7 @@ On the all-`false` input the concatenation reads the first word entry at all-`fa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boolean Cube Concat](boolean-cube-concat.md)
 
 ## Sources
 

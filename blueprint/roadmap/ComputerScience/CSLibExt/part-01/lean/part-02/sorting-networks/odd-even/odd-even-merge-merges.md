@@ -13,7 +13,17 @@ lean: Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenMerge_merges
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run N](../bitonic/run-n.md)
+- [Odd Even Merge](odd-even-merge.md)
+
+## Proof depends on
+
+- [Cmp](../bitonic/cmp.md)
+- [Final Layer](final-layer.md)
+- [Relabel](relabel.md)
+- [Run N final Layer](run-n-final-layer.md)
+- [Run N relabel](run-n-relabel.md)
+- [Run N relabel of not mem](run-n-relabel-of-not-mem.md)
 
 ## Sources
 

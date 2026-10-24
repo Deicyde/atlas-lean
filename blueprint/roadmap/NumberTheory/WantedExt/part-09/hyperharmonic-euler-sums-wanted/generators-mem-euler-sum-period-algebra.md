@@ -12,7 +12,7 @@ lean: MetaMathlibExt.generators_mem_eulerSumPeriodAlgebra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sum Period Algebra](euler-sum-period-algebra.md)
 
 ## Sources
 

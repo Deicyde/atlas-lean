@@ -15,7 +15,8 @@ Theorem 16: `A_S(m, k) = ∑_{d=0}^{2k} c_d m^d` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anassas Below](anassas-below.md)
+- [Two Assoc Stirling Second](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
 
 ## Sources
 

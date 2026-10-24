@@ -12,7 +12,14 @@ lean: MetaMathlibExt.pellShiftedNorm_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Shifted Norm](pell-shifted-norm.md)
+
+## Proof depends on
+
+- [Pell U](pell-u.md)
+- [Pell U zero](pell-u-zero.md)
+- [Pell V](pell-v.md)
+- [Pell V zero](pell-v-zero.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Characteristic property: the constant sequence `⟨O_L⟩^∞` is not in `I`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Parity Letter](mallows-parity-letter.md)
+- [Mallows Admissible](mallows-admissible.md)
 
 ## Sources
 

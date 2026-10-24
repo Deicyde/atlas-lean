@@ -12,7 +12,7 @@ If an equation with `k ≥ 3` nonzero coefficients is `2`-uncommon over the inte
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Uncommon Over Integers](is-uncommon-over-integers.md)
 
 ## Sources
 

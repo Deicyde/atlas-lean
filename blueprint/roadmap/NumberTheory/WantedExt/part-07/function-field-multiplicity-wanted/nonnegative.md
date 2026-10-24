@@ -13,7 +13,12 @@ second defining clause of `HasNormalOrder`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Normal Order](has-normal-order.md)
+
+## Proof depends on
+
+- [Is Degree Nondecreasing](is-degree-nondecreasing.md)
+- [Fixed Degree Monic](fixed-degree-monic.md)
 
 ## Sources
 

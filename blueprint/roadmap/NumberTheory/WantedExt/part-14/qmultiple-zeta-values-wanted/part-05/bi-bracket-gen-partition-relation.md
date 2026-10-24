@@ -15,7 +15,7 @@ upper variable becomes `∑_{j < r - i} Yⱼ` and the `i`-th lower variable beco
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bi Bracket Gen](../part-04/bi-bracket-gen.md)
 
 ## Sources
 

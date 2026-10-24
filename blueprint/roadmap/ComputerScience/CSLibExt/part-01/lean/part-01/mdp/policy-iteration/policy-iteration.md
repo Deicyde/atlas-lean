@@ -11,7 +11,12 @@ Policy iteration: `n` improvement steps from `π`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](../value-iteration/mdp.md)
+- [Stochastic](../value-iteration/stochastic.md)
+
+## Proof depends on
+
+- [Improve](improve.md)
 
 ## Sources
 

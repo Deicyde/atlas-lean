@@ -19,7 +19,7 @@ counterexample refutes the corrected claim too.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem65 Claim](scottish-book-problem65-claim.md)
 
 ## Sources
 

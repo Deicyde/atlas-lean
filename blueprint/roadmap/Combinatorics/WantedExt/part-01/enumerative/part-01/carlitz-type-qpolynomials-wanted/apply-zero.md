@@ -12,7 +12,7 @@ A Carlitz-type sequence starts with the constant `T_0(x) = a_0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Carlitz Type With](is-carlitz-type-with.md)
 
 ## Sources
 

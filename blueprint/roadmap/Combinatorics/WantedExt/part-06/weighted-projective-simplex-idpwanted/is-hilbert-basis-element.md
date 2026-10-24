@@ -15,6 +15,10 @@ elements presentation of the minimal monoid generating set called a Hilbert basi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Cone Lattice Point](is-cone-lattice-point.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

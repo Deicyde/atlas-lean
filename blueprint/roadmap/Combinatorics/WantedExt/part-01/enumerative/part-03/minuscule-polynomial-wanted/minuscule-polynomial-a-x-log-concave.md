@@ -13,7 +13,7 @@ non-negative. Stated for every `n : ℕ`; for `n ≤ 1` the polynomial is `0` si
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minuscule Polynomial A](minuscule-polynomial-a.md)
 
 ## Sources
 

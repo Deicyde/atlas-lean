@@ -13,7 +13,9 @@ ascent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [Skew Long Ascents](skew-long-ascents.md)
+- [Skew Returns](skew-returns.md)
 
 ## Sources
 

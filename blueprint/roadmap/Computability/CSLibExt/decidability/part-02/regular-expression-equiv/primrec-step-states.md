@@ -12,7 +12,9 @@ The count of one node is primitive recursive in the counts before it and the nod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node Equiv](../regular-expression/node-equiv.md)
+- [Step States](step-states.md)
+- [Regex Node](../regular-expression/regex-node.md)
 
 ## Sources
 

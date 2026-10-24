@@ -12,7 +12,7 @@ Inside a copy of `N a`, reading `y` runs `N a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Εnfa](nfa.md)
 
 ## Sources
 

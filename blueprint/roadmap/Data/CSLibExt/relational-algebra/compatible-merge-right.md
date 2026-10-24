@@ -12,7 +12,13 @@ Compatibility of three tuples, grouped from the right, is pairwise compatibility
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple](tuple.md)
+- [Compatible](compatible.md)
+- [Merge](merge.md)
+
+## Proof depends on
+
+- [Compatible merge left](compatible-merge-left.md)
 
 ## Sources
 

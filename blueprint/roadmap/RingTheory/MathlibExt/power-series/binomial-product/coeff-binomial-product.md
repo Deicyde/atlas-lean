@@ -12,7 +12,7 @@ The coefficients of the binomial product are the binomial convolutions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Product](binomial-product.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Path vertices of `CT(p, s)` are adjacent exactly when consecutive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

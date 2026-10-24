@@ -13,7 +13,7 @@ the notions of `motzkinAlternatingSum_logBalanced_tempered` (conditions at every
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Alternating Sum](motzkin-alternating-sum.md)
 
 ## Sources
 

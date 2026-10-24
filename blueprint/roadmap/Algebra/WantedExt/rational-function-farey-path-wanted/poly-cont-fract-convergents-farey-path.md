@@ -16,7 +16,7 @@ vertices: each convergent `Aᵢ / Bᵢ` is a vertex of `χ'` (`Bᵢ ≠ 0` and `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Cont Fract](poly-cont-fract.md)
 
 ## Sources
 

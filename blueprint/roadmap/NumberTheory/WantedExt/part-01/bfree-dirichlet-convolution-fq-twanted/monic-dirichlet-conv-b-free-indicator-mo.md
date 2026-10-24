@@ -13,7 +13,9 @@ the sum of `μ(r)` over monic `r` with `r ^ κ = f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is BFree](is-bfree.md)
+- [Kappa Pow](kappa-pow.md)
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ bounded, so the real `limsup`/`liminf` are the classical ones).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Letter Count](letter-count.md)
+- [Letter Position](letter-position.md)
 
 ## Sources
 

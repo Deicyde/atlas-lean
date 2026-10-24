@@ -12,7 +12,13 @@ Built from `Finpartition.atomise` along the singleton cut `{a}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Partition](../basic/noncrossing-partition.md)
+
+## Proof depends on
+
+- [Is Noncrossing](../basic/is-noncrossing.md)
+- [Set Partition](../basic/set-partition.md)
+- [Is Noncrossing of le three](../basic/is-noncrossing-of-le-three.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ then `q - β ∣ 3r - αγ` and `r - γ ∣ 3q - αβ`; moreover `r = 3q + 2γ` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DCarmichael](is-dcarmichael.md)
 
 ## Sources
 

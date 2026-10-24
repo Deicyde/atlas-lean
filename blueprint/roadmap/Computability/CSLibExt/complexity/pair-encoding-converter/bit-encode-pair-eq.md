@@ -12,7 +12,16 @@ The canonical encoding of a pair of bit lists, spelled out.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc Fst](enc-fst.md)
+- [Enc Snd](enc-snd.md)
+- [Bitstring Encoding](../../../MathlibExt/complexity/bitstring-encoding.md)
+- [Bit Decode](../../../MathlibExt/complexity/bit-decode.md)
+- [Bit Decode bit Encode](../../../MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Bit Encode](../../../MathlibExt/complexity/bit-encode.md)
+- [Delimit](../../../MathlibExt/complexity/delimit.md)
+- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
+- [Undelimit Blocks](../../../MathlibExt/complexity/undelimit-blocks.md)
+- [Undelimit Blocks Aux](../../../MathlibExt/complexity/undelimit-blocks-aux.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ represents `P`. The hypothesis `P ≇ 1` follows from `1 ≤ r < n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poset Matrix](../../../../Order/MathlibExt/poset-matrix/is-poset-matrix.md)
 
 ## Sources
 

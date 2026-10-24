@@ -14,7 +14,8 @@ smooth words of length `n = 8m + p` with maximum capacity is `m + 1` for `p ∈ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+- [Restricted Smooth Words](restricted-smooth-words.md)
 
 ## Sources
 

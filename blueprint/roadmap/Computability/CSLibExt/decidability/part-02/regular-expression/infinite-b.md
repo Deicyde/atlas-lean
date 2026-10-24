@@ -12,7 +12,13 @@ nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded Regex](encoded-regex.md)
+
+## Proof depends on
+
+- [Flags](flags.md)
+- [Zero Flags](zero-flags.md)
+- [Regex Node](regex-node.md)
 
 ## Sources
 

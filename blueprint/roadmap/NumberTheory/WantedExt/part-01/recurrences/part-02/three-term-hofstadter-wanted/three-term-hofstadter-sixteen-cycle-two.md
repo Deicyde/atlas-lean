@@ -19,7 +19,7 @@ index `K + 1` through index `λ`, `B(K+16k) = μ₁ 2^k + γ₁ - 2μ₁`, `B(K+
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
 
 ## Sources
 

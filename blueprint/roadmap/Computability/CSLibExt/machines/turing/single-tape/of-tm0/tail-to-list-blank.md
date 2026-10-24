@@ -12,7 +12,14 @@ Dropping the first cell drops the first symbol of the half-tape.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Non Blank](non-blank.md)
+- [To List Blank](to-list-blank.md)
+
+## Proof depends on
+
+- [Cell Symbol](cell-symbol.md)
+- [Tail to List Blank](../tape-view/tail-to-list-blank.md)
+- [To List Blank](../tape-view/to-list-blank.md)
 
 ## Sources
 

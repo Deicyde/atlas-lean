@@ -13,7 +13,13 @@ is the total length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](../sequence-alignment/alignment.md)
+
+## Proof depends on
+
+- [Best Argmax](best-argmax.md)
+- [Nw Score](../sequence-alignment/nw-score.md)
+- [Small Align](small-align.md)
 
 ## Sources
 

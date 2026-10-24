@@ -12,7 +12,11 @@ The pieces of a block lie on one side of `pre`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Split Block](split-block.md)
+
+## Proof depends on
+
+- [Splits](splits.md)
 
 ## Sources
 

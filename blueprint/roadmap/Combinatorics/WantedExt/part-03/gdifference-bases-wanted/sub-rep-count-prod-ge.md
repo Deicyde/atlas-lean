@@ -12,7 +12,7 @@ Products of difference bases: if `A_i` is a `g_i`-difference basis of the abelia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sub Rep Count](sub-rep-count.md)
 
 ## Sources
 

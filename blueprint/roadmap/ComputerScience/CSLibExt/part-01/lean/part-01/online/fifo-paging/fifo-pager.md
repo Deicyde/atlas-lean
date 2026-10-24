@@ -11,7 +11,13 @@ FIFO as an online pager (`OnlinePager` of `PagingLowerBound.lean`), on legal cac
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online paging algorithm with cache size...](../paging-lower-bound/a-deterministic-online-paging-algorithm.md)
+
+## Proof depends on
+
+- [Legal Cache](legal-cache.md)
+- [Fifo Step](fifo-step.md)
+- [Fifo Step legal](fifo-step-legal.md)
 
 ## Sources
 

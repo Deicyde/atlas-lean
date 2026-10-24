@@ -12,7 +12,13 @@ Regular languages are closed under right quotients by fixed words.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Right Quotient](right-quotient.md)
+
+## Proof depends on
+
+- [Syntactic Monoid](../syntactic/syntactic-monoid.md)
+- [Finite syntactic Monoid right Quotient](finite-syntactic-monoid-right-quotient.md)
+- [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources
 

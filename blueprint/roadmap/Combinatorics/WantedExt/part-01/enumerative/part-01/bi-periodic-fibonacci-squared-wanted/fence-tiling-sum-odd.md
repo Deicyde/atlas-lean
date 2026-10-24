@@ -13,7 +13,7 @@ Lemma 2.1, odd case: for odd `n ≥ 3`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Tiling Sum](fence-tiling-sum.md)
 
 ## Sources
 

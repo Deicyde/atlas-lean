@@ -12,7 +12,7 @@ The systematic encoder copies the message into the first coordinates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode](encode.md)
 
 ## Sources
 

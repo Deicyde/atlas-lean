@@ -12,7 +12,12 @@ lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.runN_const
 
 ## Depends on
 
-This node has no prerequisites.
+- [Within](within.md)
+- [Run N](run-n.md)
+
+## Proof depends on
+
+- [Cmp](cmp.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ structure on `CT(p + 1, s)` with `s ≥ 1` and `d_{i+1} = 1` at a non-central pa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Coconut Smooth Path](coconut-smooth-path.md)
+- [Coconut Tree](coconut-tree.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For compatible semiprimes `pq` and `rs` with `p > q`, both `r, s ≥ 241` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Compatible Semiprime Pair](is-compatible-semiprime-pair.md)
 
 ## Sources
 

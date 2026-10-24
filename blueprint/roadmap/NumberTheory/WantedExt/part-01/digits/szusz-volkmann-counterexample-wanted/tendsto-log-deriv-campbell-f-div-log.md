@@ -11,7 +11,7 @@ Lemma 7: `η(f') = lim_{x → ∞} log f'(x) / log x` exists and equals `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Campbell F](campbell-f.md)
 
 ## Sources
 

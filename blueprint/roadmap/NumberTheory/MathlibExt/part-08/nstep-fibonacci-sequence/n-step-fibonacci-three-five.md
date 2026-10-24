@@ -12,7 +12,12 @@ lean: MetaMathlibExt.nStepFibonacci_three_five
 
 ## Depends on
 
-This node has no prerequisites.
+- [N Step Fibonacci](n-step-fibonacci.md)
+
+## Proof depends on
+
+- [N Step Fibonacci one](n-step-fibonacci-one.md)
+- [N Step Fibonacci zero](n-step-fibonacci-zero.md)
 
 ## Sources
 

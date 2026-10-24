@@ -11,7 +11,7 @@ Theorem 1: for all `h, n ∈ ℤ`, `K_{-n}(x)_h^{h-n} = (-1)^{n+1} K_{n-4}(x)_{h
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Continuant](extended-continuant.md)
 
 ## Sources
 

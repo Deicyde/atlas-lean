@@ -14,6 +14,11 @@ The norm does not grow under left multiplication by a nonzero element.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Abs nat Cast norm'](abs-nat-cast-norm.md)
+- [Norm pos'](norm-pos.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZsqrtdNegTwoEuclidean](../../../../../sources/v2/MathlibExt.md)

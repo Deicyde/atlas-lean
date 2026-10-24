@@ -12,7 +12,7 @@ The whole semigroup is a CR-set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CRSet](is-crset.md)
 
 ## Sources
 

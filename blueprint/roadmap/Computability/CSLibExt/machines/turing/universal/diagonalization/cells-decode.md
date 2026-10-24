@@ -14,6 +14,13 @@ cell at a time with `Cslib.CookLevin.readUnaryLength`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Read Unary Length](../../../../cook-levin/read-unary-length.md)
+- [Cell](../clocked/cell.md)
+- [Read Unary Length eq some iff cell](read-unary-length-eq-some-iff-cell.md)
+- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.Universal.Diagonalization](../../../../../../../sources/v2/CSLibExt.md)

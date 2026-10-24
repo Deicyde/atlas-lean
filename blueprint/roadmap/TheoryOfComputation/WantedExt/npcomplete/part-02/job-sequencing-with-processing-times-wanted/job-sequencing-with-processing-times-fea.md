@@ -11,7 +11,7 @@ A job ordering meeting all deadlines of profit at least `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Job Sequencing With Processing Times Instance](job-sequencing-with-processing-times-ins.md)
 
 ## Sources
 

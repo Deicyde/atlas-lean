@@ -12,7 +12,7 @@ i.e. `0 < m < k`, `a_{k,m} = F_{m+1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Schreier Count](weighted-schreier-count.md)
 
 ## Sources
 

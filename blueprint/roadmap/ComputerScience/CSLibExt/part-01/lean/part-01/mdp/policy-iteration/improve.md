@@ -11,7 +11,13 @@ Policy improvement: a policy greedy for the value of `π`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](../value-iteration/mdp.md)
+- [Stochastic](../value-iteration/stochastic.md)
+
+## Proof depends on
+
+- [Greedy](../value-iteration/greedy.md)
+- [Policy Value](../value-iteration/policy-value.md)
 
 ## Sources
 

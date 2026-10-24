@@ -12,7 +12,13 @@ The size bounds `h(x) = O(1)`, `F` bounded, `J(x) = O(log x)`, `G(x) = O(log x)`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Sum Fluctuation Double Integral](digit-sum-fluctuation-double-integral.md)
+- [Digit Sum Fluctuation Integral](digit-sum-fluctuation-integral.md)
+- [Digit Sum Remainder](digit-sum-remainder.md)
+- [Digit Sum Remainder Double Integral](digit-sum-remainder-double-integral.md)
+- [Digit Sum Remainder Integral](digit-sum-remainder-integral.md)
+- [Trollope Delange Fluctuation](trollope-delange-fluctuation.md)
+- [Trollope Delange Series](trollope-delange-series.md)
 
 ## Sources
 

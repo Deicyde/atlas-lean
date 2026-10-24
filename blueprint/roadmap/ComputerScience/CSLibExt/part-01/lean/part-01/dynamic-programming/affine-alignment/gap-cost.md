@@ -11,7 +11,7 @@ The cost of a gap column continuing or opening a run.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gap State](gap-state.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The single bitter square `CB(f, 0, …, 0, 0)` has no move, so its Grundy number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chocolate Bar Grundy](chocolate-bar-grundy.md)
+
+## Proof depends on
+
+- [Chocolate Bar Grundy eq](chocolate-bar-grundy-eq.md)
 
 ## Sources
 

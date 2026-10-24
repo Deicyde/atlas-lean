@@ -14,7 +14,7 @@ open subset of `[0, n + ε]`, so `opx(n + ε, P, 1) = n + ε = opx(n, P, 1) + ε
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The empty set is independent in every distinct link graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Distinct Link Indep](is-distinct-link-indep.md)
+
+## Proof depends on
+
+- [Distinct Link Adj](distinct-link-adj.md)
+- [Distinct Link Loop](distinct-link-loop.md)
 
 ## Sources
 

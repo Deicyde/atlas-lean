@@ -14,6 +14,10 @@ divisors of `n` whose positive powers sum to `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Prime Divisor Power Sum](is-prime-divisor-power-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.WeaklyPrimeAdditiveWanted](../../../../../sources/v2/WantedExt.md)

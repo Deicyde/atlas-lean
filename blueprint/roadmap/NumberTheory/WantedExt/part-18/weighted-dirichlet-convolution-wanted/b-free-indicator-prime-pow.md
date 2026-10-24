@@ -12,7 +12,11 @@ A prime power `p ^ κ(p)` is not `B_κ`-free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Indicator](b-free-indicator.md)
+
+## Proof depends on
+
+- [B Free Indicator apply](b-free-indicator-apply.md)
 
 ## Sources
 

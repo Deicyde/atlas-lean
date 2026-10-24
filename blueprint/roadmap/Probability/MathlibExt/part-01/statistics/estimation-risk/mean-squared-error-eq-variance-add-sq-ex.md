@@ -15,7 +15,12 @@ same value as the bias form through the accepted `bias` definition. Blueprint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integrable sq sub of mem Lp two](integrable-sq-sub-of-mem-lp-two.md)
+- [Mean Squared Error](mean-squared-error.md)
+
+## Proof depends on
+
+- [Mean Squared Error eq variance add sq bias](mean-squared-error-eq-variance-add-sq-bi.md)
 
 ## Sources
 

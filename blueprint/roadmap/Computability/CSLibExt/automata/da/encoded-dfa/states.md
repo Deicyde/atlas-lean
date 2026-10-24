@@ -11,7 +11,7 @@ The start state and the targets of the listed transitions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
 
 ## Sources
 

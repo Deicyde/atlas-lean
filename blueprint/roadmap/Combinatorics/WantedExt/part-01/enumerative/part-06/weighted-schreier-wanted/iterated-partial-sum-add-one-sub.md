@@ -12,7 +12,7 @@ Shifting a sequence by `1` shifts its `k`-fold partial sums by binomial coeffici
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterated Partial Sum](iterated-partial-sum.md)
 
 ## Sources
 

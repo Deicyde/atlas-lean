@@ -12,7 +12,13 @@ odd, and `U_d ≡ 0` or `V_{2^r d} ≡ 0 (mod N)` for some `0 ≤ r < s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
+
+## Proof depends on
+
+- [Lucas Pseudoprime Index](lucas-pseudoprime-index.md)
+- [Lucas U](../../../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
+- [Lucas V](../../../../../MathlibExt/part-08/lucas-sequence/lucas-v.md)
 
 ## Sources
 

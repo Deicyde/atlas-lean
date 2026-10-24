@@ -11,7 +11,13 @@ Discrete noncrossing partition of `Fin n` (singletons), bundled.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Partition](../basic/noncrossing-partition.md)
+
+## Proof depends on
+
+- [Is Noncrossing](../basic/is-noncrossing.md)
+- [Set Partition](../basic/set-partition.md)
+- [Is Noncrossing bot](is-noncrossing-bot.md)
 
 ## Sources
 

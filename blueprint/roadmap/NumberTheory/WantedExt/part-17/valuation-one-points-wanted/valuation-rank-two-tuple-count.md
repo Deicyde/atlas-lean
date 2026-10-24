@@ -15,6 +15,11 @@ independent (the `k × 2` submatrix has rank `2`); ranks are over `ZMod p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Valuation Distinct Tuples](valuation-distinct-tuples.md)
+- [Valuation Row](valuation-row.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ValuationOnePointsWanted](../../../../../sources/v2/WantedExt.md)

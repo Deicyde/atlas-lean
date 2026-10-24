@@ -11,7 +11,12 @@ The Stern–Brocot representation `SB(α)`; `sternBrocotRep α j` is `SB_{j+1}(�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Letter](stern-brocot-letter.md)
+
+## Proof depends on
+
+- [Stern Brocot Choose](stern-brocot-choose.md)
+- [Stern Brocot Interval](stern-brocot-interval.md)
 
 ## Sources
 

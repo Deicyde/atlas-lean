@@ -12,7 +12,11 @@ rewrite to `y`?
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](rule.md)
+
+## Proof depends on
+
+- [Derives](derives.md)
 
 ## Sources
 

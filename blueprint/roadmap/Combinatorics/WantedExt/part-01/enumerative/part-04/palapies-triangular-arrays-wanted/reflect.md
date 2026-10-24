@@ -12,7 +12,7 @@ The parameters `(α' + β', -β', γ'; α + β, -β, γ)` of the reflected array
 
 ## Depends on
 
-This node has no prerequisites.
+- [Triangular Recurrence](triangular-recurrence.md)
 
 ## Sources
 

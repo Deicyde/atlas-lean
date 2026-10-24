@@ -13,7 +13,10 @@ partition of `[d]` has `q` parts; if moreover `s_q ≥ 1` then `|[d]| = ∏_{i=q
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diagonal Class](diagonal-class.md)
+- [Diagonal Normal Form](diagonal-normal-form.md)
+- [Diagonal Of List](diagonal-of-list.md)
+- [Diagonal Sequence](diagonal-sequence.md)
 
 ## Sources
 

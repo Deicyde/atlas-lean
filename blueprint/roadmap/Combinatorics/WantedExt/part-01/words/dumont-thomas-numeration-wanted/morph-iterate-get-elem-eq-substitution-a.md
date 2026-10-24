@@ -15,7 +15,10 @@ correspond bijectively to the positions `ℓ < |η^p(x)|`, so no range hypothesi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
+- [Is Substitution](is-substitution.md)
+- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+- [Substitution Automaton](substitution-automaton.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ integers `γ_{n,k}`. Stated for every `n : ℕ` (`N_0 = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minuscule Polynomial A](minuscule-polynomial-a.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ have rank `0`, so `N(0) = N(1) = 1`, `R(1) = 0` and the Garden of Eden count `G(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyson Rank](dyson-rank.md)
 
 ## Sources
 

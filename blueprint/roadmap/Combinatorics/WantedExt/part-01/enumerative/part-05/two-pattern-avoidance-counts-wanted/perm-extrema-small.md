@@ -13,7 +13,11 @@ The left-to-right and right-to-left extrema of `132` and `213`: `132` has
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pattern3](pattern3.md)
+- [Perm Left To Right Max Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-max-count.md)
+- [Perm Left To Right Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-min-count.md)
+- [Perm Right To Left Max Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-max-count.md)
+- [Perm Right To Left Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-min-count.md)
 
 ## Sources
 

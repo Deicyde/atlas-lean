@@ -15,6 +15,10 @@ answer in `Y`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Oracle Sig](oracle-sig.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Crypto.SymmetricKey.PRF](../../../../../../sources/v2/CSLibExt.md)

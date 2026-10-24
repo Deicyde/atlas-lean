@@ -12,7 +12,7 @@ Lemma 2: the set of `m` such that `max {v_p(m + i) : 1 ≤ i ≤ k} ≤ 3 log k 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

@@ -14,7 +14,10 @@ A_{x^{-1}}(n)`, and `A_{x^{-1}}(n)` is periodic for `n ≥ D_{x^{-1}}` with peri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base PDelay](base-pdelay.md)
+- [Base PPeriod](base-pperiod.md)
+- [Floor Sum Correction](floor-sum-correction.md)
+- [Prime To PDen](prime-to-pden.md)
 
 ## Sources
 

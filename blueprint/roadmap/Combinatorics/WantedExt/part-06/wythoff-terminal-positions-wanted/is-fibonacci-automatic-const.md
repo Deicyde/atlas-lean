@@ -12,7 +12,11 @@ Constant sequences are Fibonacci-automatic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Fibonacci Automatic](is-fibonacci-automatic.md)
+
+## Proof depends on
+
+- [Fib Rep](fib-rep.md)
 
 ## Sources
 

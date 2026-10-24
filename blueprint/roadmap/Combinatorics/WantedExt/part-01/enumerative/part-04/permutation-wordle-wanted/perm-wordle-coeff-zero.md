@@ -12,7 +12,12 @@ The constant coefficient of `f_S` vanishes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perm Wordle Coeff](perm-wordle-coeff.md)
+
+## Proof depends on
+
+- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [Perm Wordle Guess](perm-wordle-guess.md)
 
 ## Sources
 

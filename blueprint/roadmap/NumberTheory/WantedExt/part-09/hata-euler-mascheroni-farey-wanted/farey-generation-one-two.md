@@ -13,7 +13,7 @@ The first Stern-Brocot generations: `F_1 = {[0/1, 1/2], [1/2, 1/1]}` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Generation](farey-generation.md)
 
 ## Sources
 

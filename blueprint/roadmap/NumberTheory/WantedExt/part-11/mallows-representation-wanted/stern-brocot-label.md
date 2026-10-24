@@ -12,7 +12,12 @@ the root by the path `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Letter](stern-brocot-letter.md)
+
+## Proof depends on
+
+- [Gap Mediant](gap-mediant.md)
+- [Stern Brocot Child](stern-brocot-child.md)
 
 ## Sources
 

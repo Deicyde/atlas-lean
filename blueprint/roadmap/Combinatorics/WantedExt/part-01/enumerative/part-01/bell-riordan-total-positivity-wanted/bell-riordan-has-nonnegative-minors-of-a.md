@@ -15,7 +15,8 @@ non-negative). The sum over `j` stops at `j ≤ n`, since `d(n, m) = 0` for `m >
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Toeplitz](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/lower-toeplitz/lower-toeplitz.md)
+- [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
 
 ## Sources
 

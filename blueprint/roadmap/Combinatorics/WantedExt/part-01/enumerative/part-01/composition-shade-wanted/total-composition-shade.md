@@ -13,6 +13,10 @@ The total shade `c(n)` over all compositions of `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Composition Shade](composition-shade.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.CompositionShadeWanted](../../../../../../../sources/v2/WantedExt.md)

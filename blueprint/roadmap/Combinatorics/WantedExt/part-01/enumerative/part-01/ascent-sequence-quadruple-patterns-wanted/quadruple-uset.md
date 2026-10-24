@@ -15,6 +15,12 @@ position `n - 1`, with a big entry, first `n - 2` entries not all `0`, `w_{n-1} 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Big Entry](is-big-entry.md)
+- [Last Descent Top](last-descent-top.md)
+- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.AscentSequenceQuadruplePatternsWanted](../../../../../../../sources/v2/WantedExt.md)

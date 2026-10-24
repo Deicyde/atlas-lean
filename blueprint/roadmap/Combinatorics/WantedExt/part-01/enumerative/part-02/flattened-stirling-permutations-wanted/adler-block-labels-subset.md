@@ -12,7 +12,7 @@ The labels of Adler's kept blocks are positive and at most `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adler Block Labels](adler-block-labels.md)
 
 ## Sources
 

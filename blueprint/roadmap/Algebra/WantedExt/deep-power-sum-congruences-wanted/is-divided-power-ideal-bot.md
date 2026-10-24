@@ -12,7 +12,7 @@ The zero ideal is a divided-power ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divided Power Ideal](is-divided-power-ideal.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ at most `m` traitors, any two loyal lieutenants decide the same value under `OM(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Om](om.md)
+
+## Proof depends on
+
+- [Majority](majority.md)
+- [Lemma 1](om-eq-of-loyal.md)
+- [Validity](om-valid.md)
+- [Received](received.md)
 
 ## Sources
 

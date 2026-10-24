@@ -13,7 +13,7 @@ Characteristic values: in the `(2, 4)`-mother graph, `(0, 2)` is an edge
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mother Graph Edge](is-mother-graph-edge.md)
 
 ## Sources
 

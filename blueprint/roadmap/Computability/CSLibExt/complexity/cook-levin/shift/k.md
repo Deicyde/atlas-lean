@@ -11,7 +11,8 @@ The counter holding each base.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BS](bs.md)
+- [CK](ck.md)
 
 ## Sources
 

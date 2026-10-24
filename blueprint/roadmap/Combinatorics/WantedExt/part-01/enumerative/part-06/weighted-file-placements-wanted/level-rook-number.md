@@ -13,6 +13,10 @@ The `k`-th `m`-level rook number `r_{k,m}(B)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Level Rook Placements](level-rook-placements.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WeightedFilePlacementsWanted](../../../../../../../sources/v2/WantedExt.md)

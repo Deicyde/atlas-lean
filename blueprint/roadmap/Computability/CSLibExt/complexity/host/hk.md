@@ -11,7 +11,7 @@ Host stacks: input, output, two buffers for phase 0, and the component's stacks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The state and halting symbols.
 
 ## Depends on
 
-This node has no prerequisites.
+- [TMSym](tmsym.md)
 
 ## Sources
 

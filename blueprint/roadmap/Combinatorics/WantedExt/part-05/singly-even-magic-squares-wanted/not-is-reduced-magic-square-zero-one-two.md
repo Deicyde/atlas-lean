@@ -13,7 +13,11 @@ The square `[[0, 1], [2, 3]]` has all entries `0, …, 3` once but is not magic 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reduced Magic Square](is-reduced-magic-square.md)
+
+## Proof depends on
+
+- [Is Magic Square](is-magic-square.md)
 
 ## Sources
 

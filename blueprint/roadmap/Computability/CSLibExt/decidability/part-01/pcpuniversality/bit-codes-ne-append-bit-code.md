@@ -12,7 +12,8 @@ Codes of indices below `k` never contain a code with `k` ones.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bit Code](bit-code.md)
+- [Bit Codes](bit-codes.md)
 
 ## Sources
 

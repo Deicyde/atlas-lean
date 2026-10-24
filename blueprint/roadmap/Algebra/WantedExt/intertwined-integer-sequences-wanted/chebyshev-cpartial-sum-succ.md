@@ -12,7 +12,7 @@ Defining recurrence `F_{n+1}(X) = F_n(X) + T̄_{n+1}(X)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
 
 ## Sources
 

@@ -13,7 +13,16 @@ its clauses are a permutation of the reference clauses followed by the accumulat
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Tseitin Acc](tseitin-acc.md)
+- [Tseitin Aux](tseitin-aux.md)
+
+## Proof depends on
+
+- [And Clauses](and-clauses.md)
+- [Imp Clauses](imp-clauses.md)
+- [Or Clauses](or-clauses.md)
 
 ## Sources
 

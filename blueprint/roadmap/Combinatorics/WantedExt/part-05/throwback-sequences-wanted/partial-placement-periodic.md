@@ -12,7 +12,7 @@ For an increasing sequence `X` of positive integers, every partial placement seq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Placement](partial-placement.md)
 
 ## Sources
 

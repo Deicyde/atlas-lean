@@ -14,6 +14,11 @@ The `x`-sequence `f_n` of the powers `ε^n = f_n + g_n √d` of the least positi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Neg Pell Fund X](neg-pell-fund-x.md)
+- [Neg Pell Fund Y](neg-pell-fund-y.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GeneralPellBisectorsWanted](../../../../../sources/v2/WantedExt.md)

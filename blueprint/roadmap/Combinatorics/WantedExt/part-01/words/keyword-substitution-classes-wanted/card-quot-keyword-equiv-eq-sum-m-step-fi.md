@@ -12,7 +12,7 @@ Main theorem: for `n, m ≥ 1` and every keyword `a` of length `m + 1`, the numb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Equiv](keyword-equiv.md)
 
 ## Sources
 

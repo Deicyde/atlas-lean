@@ -11,7 +11,7 @@ The empty heap; it allocates no node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ An ideal carrying a divided-power structure in Mathlib's sense is a divided-powe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divided Power Ideal](is-divided-power-ideal.md)
 
 ## Sources
 

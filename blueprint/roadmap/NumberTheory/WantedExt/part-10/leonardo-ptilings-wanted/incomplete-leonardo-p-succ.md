@@ -12,7 +12,7 @@ lean: MetaMathlibExt.incompleteLeonardoP_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incomplete Leonardo P](incomplete-leonardo-p.md)
 
 ## Sources
 

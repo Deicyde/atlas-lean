@@ -13,7 +13,7 @@ moduli `|k|/gcd(r, 24)` that Proposition 2.4 gives (`6`, `3`, `2`) are used inst
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

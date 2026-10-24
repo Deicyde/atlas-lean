@@ -17,7 +17,8 @@ right side is `4λ(t+1)` (`q = t = 1`: about `4.935` against `λ(2) = π²/8 ≈
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Alternating Sum](stride-alternating-sum.md)
+- [Stride Signed Sum](stride-signed-sum.md)
 
 ## Sources
 

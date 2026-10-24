@@ -14,7 +14,7 @@ The hypothesis `x < b` (from Theorem 9) is added: for `n = 3`, `b = x = 2` the l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

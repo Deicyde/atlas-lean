@@ -13,6 +13,10 @@ The entropy of the posteriors, `-∑ n, ∑ z, p_θ(z | xₙ) log p_θ(z | xₙ)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Posterior](posterior.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.LatentVariable.ExpectationMaximization](../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,12 @@ a finite second moment, family MSE equals variance plus squared family bias.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Family Bias](family-bias.md)
+- [Family Mean Squared Error](family-mean-squared-error.md)
+
+## Proof depends on
+
+- [Mean Squared Error eq variance add sq bias](mean-squared-error-eq-variance-add-sq-bi.md)
 
 ## Sources
 

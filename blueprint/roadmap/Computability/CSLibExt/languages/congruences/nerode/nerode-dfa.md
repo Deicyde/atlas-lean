@@ -11,7 +11,13 @@ The canonical deterministic automaton whose states are Nerode classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Class](nerode-class.md)
+
+## Proof depends on
+
+- [Accepting](accepting.md)
+- [Step](step.md)
+- [Nerode Class](nerode-class-2.md)
 
 ## Sources
 

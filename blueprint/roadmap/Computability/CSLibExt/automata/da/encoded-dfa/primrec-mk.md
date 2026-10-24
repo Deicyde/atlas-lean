@@ -12,7 +12,8 @@ Building an encoded DFA from its three components is primitive recursive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+- [Equiv Prod](equiv-prod.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For `δ > 1` the window always contains an integer, so `q_min(x, δ) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smallest Denominator](smallest-denominator.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Any rearrangement costs at most `ℓ²` inversions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv](inv.md)
+
+## Proof depends on
+
+- [Inv Set](inv-set.md)
 
 ## Sources
 

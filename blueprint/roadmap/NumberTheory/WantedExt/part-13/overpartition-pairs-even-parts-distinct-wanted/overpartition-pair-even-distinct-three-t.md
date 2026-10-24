@@ -16,7 +16,7 @@ The paper prints `p^{2α+2}` in the second summands; the proof substitutes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Pair Even Distinct](overpartition-pair-even-distinct.md)
 
 ## Sources
 

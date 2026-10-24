@@ -14,7 +14,7 @@ solution; (C) if `3 ∣ u` or `3 ∣ v` and `(u, v) ≠ (3, 2)`, it has no solut
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fermat Solvable](generalized-fermat-solvable.md)
 
 ## Sources
 

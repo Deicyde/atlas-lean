@@ -13,7 +13,17 @@ her Gale-Shapley partner.
 
 ## Depends on
 
-This node has no prerequisites.
+- [The Gale-Shapley matching](gs-matching.md)
+- [Mprefs](mprefs.md)
+- [Wprefs](wprefs.md)
+- [Is Stable](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
+- [Perfect Matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
+- [Lt](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/lt.md)
+
+## Proof depends on
+
+- [Proposer-optimality](gs-matching-proposer-optimal.md)
+- [Not blocking](not-blocking.md)
 
 ## Sources
 

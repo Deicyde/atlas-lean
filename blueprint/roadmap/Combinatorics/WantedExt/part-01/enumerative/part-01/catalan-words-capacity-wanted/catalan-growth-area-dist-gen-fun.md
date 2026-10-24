@@ -13,7 +13,8 @@ Mansour and Shattuck's Lemma 3, formula (5): for `1 ≤ i ≤ j`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catalan Growth Area Dist](catalan-growth-area-dist.md)
+- [Catalan Growth Den](catalan-growth-den.md)
 
 ## Sources
 

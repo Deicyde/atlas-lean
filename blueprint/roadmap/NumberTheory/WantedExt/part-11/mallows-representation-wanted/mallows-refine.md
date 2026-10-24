@@ -14,6 +14,10 @@ increasing list of fractions: Mallows' insertion between each pair of adjacent f
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mallows Insert](mallows-insert.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.MallowsRepresentationWanted](../../../../../sources/v2/WantedExt.md)

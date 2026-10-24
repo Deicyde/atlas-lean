@@ -13,7 +13,10 @@ has no monochromatic `3`-term `L`-diffsequence); in particular `L` is not
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DDiff Sequence](../../accessible-sets-wanted/is-ddiff-sequence.md)
+- [Is Monochromatic](../../accessible-sets-wanted/is-monochromatic.md)
+- [Is RAccessible](../../accessible-sets-wanted/is-raccessible.md)
+- [Lucas Number](../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

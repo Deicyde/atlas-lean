@@ -14,7 +14,10 @@ paper's `r`-regularity of `AP_F`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DAP](../../accessible-sets-wanted/is-dap.md)
+- [Is Monochromatic](../../accessible-sets-wanted/is-monochromatic.md)
+- [Is RLarge](../../accessible-sets-wanted/is-rlarge.md)
+- [Positive Fibonacci Set](../../accessible-sets-wanted/positive-fibonacci-set.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ The cells after a write and an optional move, the form of a machine step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Option Move Offset](option-move-offset.md)
+- [To Tape](to-tape.md)
+
+## Proof depends on
+
+- [Nth to Tape option Move](nth-to-tape-option-move.md)
+- [Nth to Tape write](nth-to-tape-write.md)
 
 ## Sources
 

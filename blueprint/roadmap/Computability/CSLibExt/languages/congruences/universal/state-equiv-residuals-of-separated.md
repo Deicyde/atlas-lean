@@ -11,7 +11,15 @@ An accessible, state-separated automaton has exactly the canonical residual stat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accessible](../minimality/accessible.md)
+- [State Separated](state-separated.md)
+
+## Proof depends on
+
+- [DFAHom](dfahom.md)
+- [Canonical Residual Hom](canonical-residual-hom.md)
+- [Canonical Residual Hom injective iff](canonical-residual-hom-injective-iff.md)
+- [Canonical Residual Hom surjective](canonical-residual-hom-surjective.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ one prime `p_t`, which is odd, and assume `(p_t + 2)/2 ≥ p₁ ≥ 11`. Then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Nondeficient](../../../part-14/primitive-nondeficient-wanted/is-primitive-nondeficient.md)
 
 ## Sources
 

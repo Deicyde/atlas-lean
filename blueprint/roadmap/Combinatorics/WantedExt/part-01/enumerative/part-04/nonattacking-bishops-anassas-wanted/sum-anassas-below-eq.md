@@ -12,7 +12,8 @@ lean: MetaMathlibExt.sum_anassasBelow_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anassas Below](anassas-below.md)
+- [Ext Stirling Second](ext-stirling-second.md)
 
 ## Sources
 

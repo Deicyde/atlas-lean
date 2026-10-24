@@ -14,7 +14,8 @@ asymptotic formula for `∑ β(n)` is the case `r = 0` of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprimality Density](coprimality-density.md)
+- [Coprime Pair Count](coprime-pair-count.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Lemma 1: with `T = t(kl + l + 1)`, the positive differences of `A` include `4i` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chu Family KLT](chu-family-klt.md)
 
 ## Sources
 

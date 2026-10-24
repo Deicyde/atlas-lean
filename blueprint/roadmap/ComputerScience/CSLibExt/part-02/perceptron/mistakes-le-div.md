@@ -12,7 +12,12 @@ Over a field: `k ≤ (u ⬝ᵥ u) R² / γ²`, the textbook `R² / γ²` for a u
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run](run.md)
+- [Sign](sign.md)
+
+## Proof depends on
+
+- [Novikoff's perceptron mistake bound](mistakes-mul-sq-le.md)
 
 ## Sources
 

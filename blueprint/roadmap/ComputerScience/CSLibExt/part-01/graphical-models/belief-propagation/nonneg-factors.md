@@ -11,7 +11,7 @@ The factors of the model are nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](../variable-elimination/tree-model.md)
 
 ## Sources
 

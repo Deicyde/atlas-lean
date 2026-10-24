@@ -14,6 +14,10 @@ from `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pseudo Greedy Remainder](pseudo-greedy-remainder.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DoublyExponentialReciprocalSumWanted](../../../../../sources/v2/WantedExt.md)

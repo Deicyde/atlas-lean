@@ -12,7 +12,7 @@ Every operator annihilates the zero sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Annihilates Seq](annihilates-seq.md)
 
 ## Sources
 

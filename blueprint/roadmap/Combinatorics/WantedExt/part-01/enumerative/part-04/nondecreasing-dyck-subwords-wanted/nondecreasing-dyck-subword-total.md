@@ -14,6 +14,11 @@ non-decreasing Dyck paths of semilength `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dyck Subword Count](dyck-subword-count.md)
+- [Nondecreasing Dyck Words](nondecreasing-dyck-words.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NondecreasingDyckSubwordsWanted](../../../../../../../sources/v2/WantedExt.md)

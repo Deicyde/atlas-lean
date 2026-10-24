@@ -14,7 +14,7 @@ verifier.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

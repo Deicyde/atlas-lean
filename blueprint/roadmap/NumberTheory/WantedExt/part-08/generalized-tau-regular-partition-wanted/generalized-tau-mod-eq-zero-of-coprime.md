@@ -12,7 +12,7 @@ coprime to `|k|/d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Tau](generalized-tau.md)
 
 ## Sources
 

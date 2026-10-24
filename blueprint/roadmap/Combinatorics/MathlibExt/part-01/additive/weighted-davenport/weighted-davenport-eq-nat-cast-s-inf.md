@@ -12,7 +12,8 @@ When some forcing length exists, `D_A(G)` is the least one, as a natural number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
+- [Weighted Davenport](weighted-davenport.md)
 
 ## Sources
 

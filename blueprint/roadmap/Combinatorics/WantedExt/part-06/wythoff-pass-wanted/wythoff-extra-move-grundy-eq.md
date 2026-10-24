@@ -12,7 +12,7 @@ The defining mex recursion of `wythoffExtraMoveGrundy`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wythoff Extra Move Grundy](wythoff-extra-move-grundy.md)
 
 ## Sources
 

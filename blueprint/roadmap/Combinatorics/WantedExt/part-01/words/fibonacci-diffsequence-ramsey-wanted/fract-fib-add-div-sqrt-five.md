@@ -16,7 +16,7 @@ every `n ≥ 13` and `ε` (checked to 50 digits for `13 ≤ n < 120`), since the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wesley Fractional Constant](wesley-fractional-constant.md)
 
 ## Sources
 

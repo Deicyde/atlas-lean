@@ -12,7 +12,7 @@ independent set of size `5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph Ramsey](../../../../MathlibExt/part-01/simple-graph/part-03/ramsey/graph-ramsey.md)
 
 ## Sources
 

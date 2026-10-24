@@ -12,7 +12,7 @@ gap `9` is `1` and no gap with index `≥ 10` is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Wythoff Unsum Gap](upper-wythoff-unsum-gap.md)
 
 ## Sources
 

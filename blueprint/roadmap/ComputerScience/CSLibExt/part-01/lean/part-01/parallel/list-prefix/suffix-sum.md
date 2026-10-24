@@ -13,6 +13,10 @@ The suffix sum of `v`: the values from `v` to the end of its list, in list order
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seg Sum](seg-sum.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Parallel.ListPrefix](../../../../../../../../sources/v2/CSLibExt.md)

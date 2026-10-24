@@ -12,7 +12,7 @@ At most `p²` common lifts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valuation Common Lift Count](valuation-common-lift-count.md)
 
 ## Sources
 

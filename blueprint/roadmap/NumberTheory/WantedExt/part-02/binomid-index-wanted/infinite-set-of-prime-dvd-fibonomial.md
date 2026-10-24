@@ -14,7 +14,7 @@ every Fibonomial coefficient `[n, k]_F = F_n! / (F_k! F_{n-k}!)` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Factorial](../../../MathlibExt/part-06/generalized-fibocatalan-number/fibonacci-factorial.md)
 
 ## Sources
 

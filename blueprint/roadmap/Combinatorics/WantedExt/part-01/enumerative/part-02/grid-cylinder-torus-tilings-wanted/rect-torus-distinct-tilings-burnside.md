@@ -17,7 +17,8 @@ Theorem 37 (Theorem 4.1.5 of the arXiv version): for a subgroup `R` of the recta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rect Cell Action](rect-cell-action.md)
+- [Torus Shift Sum](torus-shift-sum.md)
 
 ## Sources
 

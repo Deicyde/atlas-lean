@@ -12,7 +12,12 @@ Splitting at the marked symbol of a rewrite site `u (p x s) v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ctl](is-ctl.md)
+- [TMSym](tmsym.md)
+
+## Proof depends on
+
+- [Eq of append cons eq](eq-of-append-cons-eq.md)
 
 ## Sources
 

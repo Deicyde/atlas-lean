@@ -12,7 +12,7 @@ Characteristic property: a nondecreasing list of length `r` has only the empty c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer Completions](lehmer-completions.md)
 
 ## Sources
 

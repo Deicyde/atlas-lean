@@ -12,7 +12,8 @@ Characteristic values: the root is `1/2`; the path `L R` leads to `2/5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Stern Brocot Label](stern-brocot-label.md)
 
 ## Sources
 

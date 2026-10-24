@@ -12,7 +12,7 @@ Every prime is an `(a, a)`-Carmichael number, for every integer `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is AACarmichael](is-aacarmichael.md)
 
 ## Sources
 

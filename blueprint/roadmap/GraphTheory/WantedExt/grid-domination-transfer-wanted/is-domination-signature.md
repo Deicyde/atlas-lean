@@ -14,7 +14,7 @@ constraint also applies to the pair `(σ₁, σₘ)` (cyclic signatures).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination State](domination-state.md)
 
 ## Sources
 

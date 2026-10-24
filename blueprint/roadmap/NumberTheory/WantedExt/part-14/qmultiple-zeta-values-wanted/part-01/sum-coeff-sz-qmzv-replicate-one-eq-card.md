@@ -13,7 +13,7 @@ of `q^N` (`N ≥ 1`) in `∑_{r=1}^{R} ζ_q^SZ({1}^r)` is the number of partitio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz QMZV](sz-qmzv.md)
 
 ## Sources
 

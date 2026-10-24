@@ -12,7 +12,7 @@ lean: MetaMathlibExt.szShuffle_y_y
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sz Shuffle](sz-shuffle.md)
 
 ## Sources
 

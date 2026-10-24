@@ -12,7 +12,7 @@ Characteristic value: the root of `MT(k)` is `(1, k + 2, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Markov Tree](gen-markov-tree.md)
 
 ## Sources
 

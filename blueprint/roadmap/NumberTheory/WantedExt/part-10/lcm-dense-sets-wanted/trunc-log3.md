@@ -13,6 +13,11 @@ The paper's third iterated truncated logarithm `Log₃ x = Log (Log₂ x)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trunc Log](trunc-log.md)
+- [Trunc Log2](trunc-log2.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LcmDenseSetsWanted](../../../../../sources/v2/WantedExt.md)

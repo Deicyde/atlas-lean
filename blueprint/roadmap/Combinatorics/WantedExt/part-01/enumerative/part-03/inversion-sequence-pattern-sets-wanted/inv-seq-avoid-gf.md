@@ -13,6 +13,10 @@ The paper's generating function `F_B(x) = ∑_{n ≥ 1} |I_n(B)| xⁿ` in `ℚ�
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.InversionSequencePatternSetsWanted](../../../../../../../sources/v2/WantedExt.md)

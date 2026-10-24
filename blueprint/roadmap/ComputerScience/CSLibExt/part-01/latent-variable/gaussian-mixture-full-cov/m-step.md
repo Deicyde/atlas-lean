@@ -12,7 +12,14 @@ covariance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Params](params.md)
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Mass](mass.md)
+- [New Cov](new-cov.md)
+- [New Mean](new-mean.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ The first bronze numbers are `0, 1, 3, 10, 33, 109`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

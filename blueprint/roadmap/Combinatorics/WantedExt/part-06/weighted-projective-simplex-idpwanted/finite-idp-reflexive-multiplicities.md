@@ -13,7 +13,10 @@ reflexive IDP simplices is finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is Reflexive](is-reflexive.md)
+- [Expand Support](expand-support.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

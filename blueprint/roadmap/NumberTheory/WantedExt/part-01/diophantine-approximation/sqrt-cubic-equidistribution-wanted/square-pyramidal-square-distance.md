@@ -15,6 +15,10 @@ since `m² + m + 1/2` is never an integer), computed from `s = ⌊√P_n⌋` as
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Square Pyramidal Number](square-pyramidal-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DiophantineApproximation.SqrtCubicEquidistributionWanted](../../../../../../sources/v2/WantedExt.md)

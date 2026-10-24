@@ -12,7 +12,9 @@ The transition function is primitive recursive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](encoded-dfa.md)
+- [Equiv Prod](equiv-prod.md)
+- [Step](step.md)
 
 ## Sources
 

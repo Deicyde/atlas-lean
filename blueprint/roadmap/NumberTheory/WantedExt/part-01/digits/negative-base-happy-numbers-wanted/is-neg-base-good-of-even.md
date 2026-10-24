@@ -11,7 +11,7 @@ For even `b ≤ -4`, every finite set of positive integers is `(2, b)`-good.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Neg Base Good](is-neg-base-good.md)
 
 ## Sources
 

@@ -14,7 +14,22 @@ distinct segments intersect.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Any Segments Intersect](any-segments-intersect.md)
+
+## Proof depends on
+
+- [Event](event.md)
+- [Meets](meets.md)
+- [Below](below.md)
+- [Events](events.md)
+- [Soundness](exists-meets-of-run-eq-none.md)
+- [Left](left.md)
+- [Right](right.md)
+- [Run](run.md)
+- [Completeness](run-eq-none-of-meets.md)
+- [Sweep](sweep.md)
+- [Test Opt](test-opt.md)
+- [Test Pair](test-pair.md)
 
 ## Sources
 

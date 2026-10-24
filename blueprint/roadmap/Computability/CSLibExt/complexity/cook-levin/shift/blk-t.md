@@ -11,7 +11,11 @@ The blocks of time step `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [Blk I](blk-i.md)
 
 ## Sources
 

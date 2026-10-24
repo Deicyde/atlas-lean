@@ -13,7 +13,9 @@ through degree `2n+2`, the full displayed vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost IDPCoefficient Vector](almost-idpcoefficient-vector.md)
+- [Almost IDPQuartic](almost-idpquartic.md)
+- [Even Geometric Factor](even-geometric-factor.md)
 
 ## Sources
 

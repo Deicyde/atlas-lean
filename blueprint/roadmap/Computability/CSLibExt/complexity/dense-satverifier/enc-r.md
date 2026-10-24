@@ -11,7 +11,7 @@ Right-tagged certificate bits, as they appear in the pair encoding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G](g.md)
 
 ## Sources
 

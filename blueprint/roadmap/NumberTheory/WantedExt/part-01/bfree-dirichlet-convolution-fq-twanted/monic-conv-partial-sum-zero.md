@@ -12,7 +12,13 @@ lean: MetaMathlibExt.monicConvPartialSum_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Conv Partial Sum](monic-conv-partial-sum.md)
+
+## Proof depends on
+
+- [Monic Dirichlet Conv](monic-dirichlet-conv.md)
+- [Monic Dirichlet Conv one](monic-dirichlet-conv-one.md)
+- [Monic nat Degree le zero iff](monic-nat-degree-le-zero-iff.md)
 
 ## Sources
 

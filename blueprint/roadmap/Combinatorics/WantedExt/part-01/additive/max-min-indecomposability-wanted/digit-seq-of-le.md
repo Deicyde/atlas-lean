@@ -12,7 +12,7 @@ Digits beyond the length of the string vanish.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digit Seq](digit-seq.md)
 
 ## Sources
 

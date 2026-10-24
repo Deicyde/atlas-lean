@@ -15,7 +15,7 @@ The paper's hypothesis that `n` is even is dropped: it follows from the cycle co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Dual Monotone](../../../../../../Order/MathlibExt/boolean-function/self-dual/is-self-dual-monotone.md)
 
 ## Sources
 

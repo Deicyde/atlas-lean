@@ -12,7 +12,7 @@ locally LIP function on a nonempty open `U` is LIP on `U`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lip Subring](lip-subring.md)
 
 ## Sources
 

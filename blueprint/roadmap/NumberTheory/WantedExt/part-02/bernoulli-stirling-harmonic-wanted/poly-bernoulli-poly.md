@@ -19,6 +19,10 @@ at `x = 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Poly Bernoulli](../../../MathlibExt/part-01/bernoulli/poly-bernoulli-duality/poly-bernoulli.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BernoulliStirlingHarmonicWanted](../../../../../sources/v2/WantedExt.md)

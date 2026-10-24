@@ -14,6 +14,11 @@ coordinate) for predicting the label `Y` (second coordinate), in bits.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite Conditional Entropy](../../../../../InformationTheory/MathlibExt/conditional-entropy/finite-conditional-entropy.md)
+- [Shannon Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.InformationTheory.InformationGain](../../../../../../sources/v2/CSLibExt.md)

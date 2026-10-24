@@ -13,7 +13,8 @@ stopped early.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Moore Iter](moore-iter.md)
+- [Moore Step](moore-step.md)
 
 ## Sources
 

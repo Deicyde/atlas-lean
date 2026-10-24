@@ -12,7 +12,7 @@ Characteristic values `P_v(0) = 0` and `P_v(1) = 1` (`v(q) = q + q^2 + q^3 + ⋯
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mock Theta V](mock-theta-v.md)
 
 ## Sources
 

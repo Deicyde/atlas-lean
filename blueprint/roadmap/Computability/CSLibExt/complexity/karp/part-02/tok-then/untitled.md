@@ -11,7 +11,13 @@ Alphabets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Emitter](emitter.md)
+- [K](k.md)
+
+## Proof depends on
+
+- [Sym](../../../sat-verifier-spec/sym.md)
+- [K](../../../sat-tokenizer/k.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ full nim-sum, as in Lemma 5 (the case of two functions), which the proof general
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has NSProperty](has-nsproperty.md)
 
 ## Sources
 

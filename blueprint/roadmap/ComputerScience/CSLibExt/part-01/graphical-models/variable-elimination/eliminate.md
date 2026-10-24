@@ -11,7 +11,12 @@ Sum out the last vertex: multiply its message into the unary factor of its paren
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree Model](tree-model.md)
+
+## Proof depends on
+
+- [Last Parent](last-parent.md)
+- [Message](message.md)
 
 ## Sources
 

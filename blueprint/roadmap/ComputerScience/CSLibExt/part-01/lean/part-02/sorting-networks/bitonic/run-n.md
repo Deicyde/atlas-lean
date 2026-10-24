@@ -13,6 +13,10 @@ Run a list of comparators on `ℕ`-indexed wires.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cmp](cmp.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.SortingNetworks.Bitonic](../../../../../../../../sources/v2/CSLibExt.md)

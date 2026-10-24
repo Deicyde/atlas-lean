@@ -13,7 +13,11 @@ input `[true]`, which halts at once with the answer `true`, so that `diag f` rea
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../code/code.md)
+
+## Proof depends on
+
+- [Decode Code Cells](decode-code-cells.md)
 
 ## Sources
 

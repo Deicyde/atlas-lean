@@ -12,7 +12,11 @@ lean: MetaMathlibExt.negBaseSqDigitSum_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+
+## Proof depends on
+
+- [Neg Base Sq Digit Sum Aux](neg-base-sq-digit-sum-aux.md)
 
 ## Sources
 

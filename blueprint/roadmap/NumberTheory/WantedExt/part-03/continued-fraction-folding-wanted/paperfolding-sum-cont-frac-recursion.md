@@ -13,7 +13,8 @@ for every `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Paperfolding Cont Frac Word](paperfolding-cont-frac-word.md)
+- [Paperfolding Sum Term](paperfolding-sum-term.md)
 
 ## Sources
 

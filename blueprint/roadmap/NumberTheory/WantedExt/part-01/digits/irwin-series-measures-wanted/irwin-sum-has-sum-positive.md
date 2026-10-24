@@ -15,7 +15,9 @@ Summation of Irwin Series*, INTEGERS 26 (2026), Article A11, Theorem 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complementary Moment Recurrence](complementary-moment-recurrence.md)
+- [Digit Count](digit-count.md)
+- [Irwin Sum](irwin-sum.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ ElGamal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adversary](adversary.md)
+- [Ddh Advantage](ddh-advantage.md)
+- [Eav Advantage](eav-advantage.md)
+- [Reduction](reduction.md)
+
+## Proof depends on
+
+- [ElGamal is eavesdropping-secure if DDH is hard](eav-advantage-eq-ddh-advantage.md)
 
 ## Sources
 

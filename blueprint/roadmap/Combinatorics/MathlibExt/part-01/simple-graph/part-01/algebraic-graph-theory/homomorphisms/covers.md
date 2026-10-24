@@ -14,6 +14,10 @@ from X to Y.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Local Isomorphism](is-local-isomorphism.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.AlgebraicGraphTheory.Homomorphisms](../../../../../../../../sources/v2/MathlibExt.md)

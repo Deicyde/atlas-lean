@@ -12,7 +12,11 @@ Aligning anything with the empty sequence costs one gap per letter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nw Score](nw-score.md)
+
+## Proof depends on
+
+- [Nw Score Aux](nw-score-aux.md)
 
 ## Sources
 

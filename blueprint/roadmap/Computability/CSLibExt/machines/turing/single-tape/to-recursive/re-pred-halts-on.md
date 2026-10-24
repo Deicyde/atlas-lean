@@ -12,7 +12,12 @@ lean: Cslib.Turing.SingleTapeTM.rePred_haltsOn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halts On](../classes/halts-on.md)
+
+## Proof depends on
+
+- [Halts On iff dom eval](halts-on-iff-dom-eval.md)
+- [The final tape of a run is partial recursive in the input word](partrec-eval.md)
 
 ## Sources
 

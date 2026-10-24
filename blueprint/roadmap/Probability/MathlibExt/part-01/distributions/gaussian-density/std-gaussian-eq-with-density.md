@@ -12,7 +12,11 @@ lean: MetaMathlibExt.stdGaussian_eq_withDensity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Std Gaussian PDFReal](std-gaussian-pdfreal.md)
+
+## Proof depends on
+
+- [Std Gaussian Density Measure](std-gaussian-density-measure.md)
 
 ## Sources
 

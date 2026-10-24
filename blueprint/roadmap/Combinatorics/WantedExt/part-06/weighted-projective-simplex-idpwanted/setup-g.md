@@ -13,6 +13,11 @@ The polynomial `g_r^x(z)=∑_{0≤α<lcm(r)} z^{u(α)}` from the paper.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Setup U](setup-u.md)
+- [Weight Lcm](weight-lcm.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.WeightedProjectiveSimplexIDPWanted](../../../../../sources/v2/WantedExt.md)

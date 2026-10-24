@@ -12,7 +12,15 @@ lean: Cslib.Complexity.Karp.ColVerify.stepAux_mvP_cons
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [Lab](lab.md)
+- [Mv P](mv-p.md)
+- [Sym](../../../sat-verifier-spec/sym.md)
+
+## Proof depends on
+
+- [Update update update update](update-update-update-update.md)
+- [Bit?](../../../sat-verifier-spec/bit.md)
 
 ## Sources
 

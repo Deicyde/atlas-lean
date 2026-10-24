@@ -13,7 +13,8 @@ by the characterization of Proposition 7: `x_q` odd, `{4, x_q}` an N-position an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sylver NPosition](is-sylver-nposition.md)
+- [Is Sylver PPosition](is-sylver-pposition.md)
 
 ## Sources
 

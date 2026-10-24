@@ -15,7 +15,16 @@ of `polytopeDilate t P` correspond under the injective coercion `ℤ^d → ℝ^d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Enumerator](../../../../Geometry/MathlibExt/lattice-point-enumerator/lattice-enumerator.md)
+- [Ehrhart](ehrhart.md)
+
+## Proof depends on
+
+- [Lattice Point Set](../../../../Geometry/MathlibExt/lattice-point-enumerator/lattice-point-set.md)
+- [Mem std Lattice iff](../../../../Geometry/MathlibExt/lattice-point-enumerator/mem-std-lattice-iff.md)
+- [Std Lattice](../../../../Geometry/MathlibExt/lattice-point-enumerator/std-lattice.md)
+- [Is Lattice Point](is-lattice-point.md)
+- [Polytope Dilate](polytope-dilate.md)
 
 ## Sources
 

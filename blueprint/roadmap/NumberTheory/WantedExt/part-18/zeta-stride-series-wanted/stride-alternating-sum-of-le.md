@@ -12,7 +12,7 @@ For `1 ≤ n ≤ q` the alternating stride sum has the single term `n^{-t}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stride Alternating Sum](stride-alternating-sum.md)
 
 ## Sources
 

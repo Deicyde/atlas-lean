@@ -12,7 +12,13 @@ A tuple is Hardy–Littlewood admissible exactly when its set of entries is admi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Finset](is-admissible-finset.md)
+- [Is Hardy Littlewood Admissible](is-hardy-littlewood-admissible.md)
+
+## Proof depends on
+
+- [Hardy Littlewood Residue Count](hardy-littlewood-residue-count.md)
+- [Hardy Littlewood Residue Count ne iff](hardy-littlewood-residue-count-ne-iff.md)
 
 ## Sources
 

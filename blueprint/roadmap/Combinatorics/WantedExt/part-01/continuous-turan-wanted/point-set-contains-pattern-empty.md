@@ -12,7 +12,7 @@ Every set contains the empty pattern.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Point Set Contains Pattern](point-set-contains-pattern.md)
 
 ## Sources
 

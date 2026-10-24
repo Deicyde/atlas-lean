@@ -12,7 +12,7 @@ lean: Cslib.Turing.SingleTapeTM.primrec_codedCons
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coded Cons](coded-cons.md)
 
 ## Sources
 

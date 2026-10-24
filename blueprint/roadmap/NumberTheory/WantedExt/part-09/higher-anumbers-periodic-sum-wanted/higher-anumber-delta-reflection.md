@@ -13,7 +13,8 @@ For `0 ≤ i < τ_D p` with `p ∤ i`: (i) if `τ_D ∤ i` then `δ(i) + δ(τ_D
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher ANumber Delta](higher-anumber-delta.md)
+- [Tau Den](tau-den.md)
 
 ## Sources
 

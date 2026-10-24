@@ -14,6 +14,10 @@ the weak learner's hypothesis on the current weights.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reweight](reweight.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.AdaBoost](../../../../../sources/v2/CSLibExt.md)

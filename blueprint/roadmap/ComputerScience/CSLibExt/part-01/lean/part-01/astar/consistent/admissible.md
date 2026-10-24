@@ -11,7 +11,11 @@ An admissible heuristic for `goal`: it never overestimates the weight of a path 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+
+## Proof depends on
+
+- [Has Path Weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
 
 ## Sources
 

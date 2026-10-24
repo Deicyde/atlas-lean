@@ -13,7 +13,15 @@ clauses `(tseitinAux ι A 0).2.1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Tseitin](tseitin.md)
+- [Tseitin Aux](tseitin-aux.md)
+
+## Proof depends on
+
+- [Tseitin Acc](tseitin-acc.md)
+- [Tseitin Acc eq](tseitin-acc-eq.md)
 
 ## Sources
 

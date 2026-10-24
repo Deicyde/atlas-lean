@@ -12,7 +12,7 @@ Lemma 3.1 (1) (quoted from Flórez and Saunders): for `n ≥ 1`, the Fibonacci-t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

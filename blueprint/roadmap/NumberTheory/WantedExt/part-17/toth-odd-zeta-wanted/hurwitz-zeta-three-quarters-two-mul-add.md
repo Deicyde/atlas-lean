@@ -17,7 +17,7 @@ source writes `k ∈ ℕ`; `k = 0` is excluded since `s = 1` is the pole of both
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even-index Euler numbers](../../../../Analysis/MathlibExt/part-01/ramanujan/part-01/part1-ch5-entry10b-euleriansymmetry/chapter5-euler-even.md)
 
 ## Sources
 

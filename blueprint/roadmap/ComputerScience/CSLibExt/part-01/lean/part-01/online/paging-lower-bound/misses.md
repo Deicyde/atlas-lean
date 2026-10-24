@@ -11,7 +11,7 @@ The misses of an online pager: requests for pages not in its cache.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A deterministic online paging algorithm with cache size...](a-deterministic-online-paging-algorithm.md)
 
 ## Sources
 

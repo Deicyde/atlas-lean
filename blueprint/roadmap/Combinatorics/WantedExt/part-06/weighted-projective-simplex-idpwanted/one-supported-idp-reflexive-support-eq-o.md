@@ -13,7 +13,9 @@ the sole support value to be `1`; this is the journal version's conclusion
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has IDP](has-idp.md)
+- [Is Reflexive](is-reflexive.md)
+- [Weighted Simplex List](weighted-simplex-list.md)
 
 ## Sources
 

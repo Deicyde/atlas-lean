@@ -11,7 +11,7 @@ The comparators of a network on `n` wires, as pairs of wire numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Network](../zero-one/network.md)
 
 ## Sources
 

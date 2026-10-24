@@ -13,7 +13,8 @@ Mansour and Shattuck's Theorem 11: `|ℛ*ₙ|` is the grand Motzkin number `G_{n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restricted Smooth Words](restricted-smooth-words.md)
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources
 

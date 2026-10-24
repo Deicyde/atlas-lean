@@ -15,7 +15,8 @@ respect to `σ`. `D ≡ 0, 1 (mod 4)` (the paper's standing assumption) is part 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DCarmichael](is-dcarmichael.md)
+- [Is Universal Linear DForm](is-universal-linear-dform.md)
 
 ## Sources
 

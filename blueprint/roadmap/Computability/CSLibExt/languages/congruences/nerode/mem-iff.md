@@ -12,7 +12,11 @@ Equivalent words themselves have the same membership status.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nerode Rel](nerode-rel.md)
+
+## Proof depends on
+
+- [Nerode Rel iff](nerode-rel-iff.md)
 
 ## Sources
 

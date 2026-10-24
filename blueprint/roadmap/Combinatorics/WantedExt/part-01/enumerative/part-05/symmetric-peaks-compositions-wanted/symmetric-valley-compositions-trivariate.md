@@ -22,7 +22,8 @@ proof, `x^a y² p d^a ((x/d)^a - x/d)/(x/d - 1)`, and agrees with the paper's sp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Valley Count](symmetric-valley-count.md)
+- [Symmetric Valley Depth Sum](symmetric-valley-depth-sum.md)
 
 ## Sources
 

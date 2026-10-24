@@ -15,7 +15,9 @@ This is the shape of the catalogue lower bound from the determination of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decides Halting](decides-halting.md)
+- [Formal Theory](formal-theory.md)
+- [First Undecidable](first-undecidable.md)
 
 ## Sources
 

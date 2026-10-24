@@ -12,7 +12,9 @@ forbidden) is `L_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
+- [Lanes Meet](lanes-meet.md)
+- [Lonely Singles Count](lonely-singles-count.md)
 
 ## Sources
 

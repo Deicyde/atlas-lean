@@ -16,7 +16,9 @@ Vertices are paths `w`; in (ii) two paths of the same length first differ by `L`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Brocot Letter](stern-brocot-letter.md)
+- [Nat Pair To Real](nat-pair-to-real.md)
+- [Stern Brocot Label](stern-brocot-label.md)
 
 ## Sources
 

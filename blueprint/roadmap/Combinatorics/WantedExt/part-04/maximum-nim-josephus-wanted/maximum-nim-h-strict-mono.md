@@ -12,7 +12,7 @@ Lemma 6(i): for `k ≥ 2`, `h_k` is strictly increasing: `x<x'` implies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximum Nim H](maximum-nim-h.md)
 
 ## Sources
 

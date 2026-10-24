@@ -12,7 +12,7 @@ The first row of `E(n)` is all ones.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Vandermonde Matrix](shifted-vandermonde-matrix.md)
 
 ## Sources
 

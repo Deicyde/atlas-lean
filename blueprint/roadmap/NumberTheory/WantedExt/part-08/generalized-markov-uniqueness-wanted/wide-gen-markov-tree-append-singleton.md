@@ -12,7 +12,8 @@ Characteristic lemma: children in `WMT(k)` are Vieta jumpings of their parent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Markov Vieta](gen-markov-vieta.md)
+- [Wide Gen Markov Tree](wide-gen-markov-tree.md)
 
 ## Sources
 

@@ -15,7 +15,8 @@ printed main term is wrong (see the audit row).
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Free Divisor Sum Mod](b-free-divisor-sum-mod.md)
+- [Fq Norm](fq-norm.md)
 
 ## Sources
 

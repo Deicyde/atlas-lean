@@ -12,7 +12,7 @@ For `k > n`, `a_{k,n} = F_{n+1}`. Stated for all `n < k`, including `n = 0`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Schreier Count](weighted-schreier-count.md)
 
 ## Sources
 

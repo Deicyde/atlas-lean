@@ -13,7 +13,8 @@ the coefficient of `q^m` in `(f_2/f_1)^3` (Equation (8)) and vanishes for `m < 0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mock Theta Lambda](mock-theta-lambda.md)
+- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

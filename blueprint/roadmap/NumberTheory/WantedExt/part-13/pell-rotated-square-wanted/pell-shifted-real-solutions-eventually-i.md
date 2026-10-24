@@ -14,7 +14,8 @@ statement swaps the third and fourth quadrants; this is the reading of the paper
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell U](pell-u.md)
+- [Pell V](pell-v.md)
 
 ## Sources
 

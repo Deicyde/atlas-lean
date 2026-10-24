@@ -13,7 +13,24 @@ configuration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enc](../part-01/enc.md)
+- [Good](../part-03/good.md)
+- [Cell](../part-03/cell.md)
+- [C1 decoder](dec-row.md)
+- [Na](../part-01/na.md)
+- [Sit Idx](../part-03/sit-idx.md)
+- [The table-driven row update](../part-03/tab-row.md)
+- [Depth](../part-01/depth.md)
+- [Step I](../part-03/step-i.md)
+
+## Proof depends on
+
+- [Code](../part-03/code.md)
+- [C1e](dec-row-congr.md)
+- [C1a](dec-row-enc.md)
+- [Good step](../part-03/good-step.md)
+- [B1-T (the table-driven step)](../part-03/table-agree.md)
+- [Step I height](step-i-height.md)
 
 ## Sources
 

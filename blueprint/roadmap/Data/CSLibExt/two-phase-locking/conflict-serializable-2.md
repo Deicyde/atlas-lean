@@ -14,7 +14,20 @@ conflict-serializable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+- [Conflict Serializable](../serializability/conflict-serializable.md)
+- [Legal](legal.md)
+- [Locks Cover](locks-cover.md)
+- [Op](../serializability/op.md)
+- [Strict Two Phase](strict-two-phase.md)
+- [Ops](ops.md)
+
+## Proof depends on
+
+- [Holds Before](holds-before.md)
+- [Lock Mode](lock-mode.md)
+- [Two Phase](two-phase.md)
+- [The two-phase locking theorem](conflict-serializable.md)
 
 ## Sources
 

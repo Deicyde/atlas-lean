@@ -13,7 +13,8 @@ Theorem 5: for `n ≥ 2` and `1 ≤ m ≤ n`, `C_{n,m} = A_{n-1,m-1}` (with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
+- [R Associated Stirling Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/r-associated-stirling-eulerian.md)
 
 ## Sources
 

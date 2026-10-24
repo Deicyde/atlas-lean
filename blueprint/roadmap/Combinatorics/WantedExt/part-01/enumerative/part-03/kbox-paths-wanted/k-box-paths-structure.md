@@ -14,7 +14,9 @@ such a word with `a₁ + ⋯ + a_n = (k+2)n - 1` and no prefix with fewer `U`s t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skew Dyck Step](skew-dyck-step.md)
+- [Box Word](box-word.md)
+- [K Box Paths](k-box-paths.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The recurrence: `𝓛_{p,k,x}(n) = 𝓛_{p,k,x}(n-1) + 𝓛_{p,k,x}(n-p-1) + k` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Super Leonardo P](super-leonardo-p.md)
 
 ## Sources
 

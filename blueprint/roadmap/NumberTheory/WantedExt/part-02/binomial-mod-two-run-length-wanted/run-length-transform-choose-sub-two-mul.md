@@ -12,7 +12,7 @@ of the Fibonacci sequence `1, 1, 2, 3, 5, 8, …` (`Nat.fib (i + 1)`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

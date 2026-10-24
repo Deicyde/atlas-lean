@@ -12,7 +12,7 @@ stated with denominators cleared (both sides multiplied by `f_3 f_6^2 f_9^3 f_18
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

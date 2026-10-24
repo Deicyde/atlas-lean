@@ -12,7 +12,13 @@ With `claLevels n` levels, the depth is `2 log₂ n + 5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carry Lookahead Adder](carry-lookahead-adder.md)
+- [Cla Levels](cla-levels.md)
+- [Arith Signature](../ripple-carry/arith-signature.md)
+
+## Proof depends on
+
+- [Logarithmic depth](carry-lookahead-adder-depth.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Characteristic values: `dis(1122) = (0, 1, 1, 2)` and `dis(11244233) =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stirling Displacement](stirling-displacement.md)
 
 ## Sources
 

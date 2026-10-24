@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.alignmentScore_hirschberg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment Score](../sequence-alignment/alignment-score.md)
+- [Hirschberg](hirschberg.md)
+- [Nw Score](../sequence-alignment/nw-score.md)
+
+## Proof depends on
+
+- [Alignment Score hirschberg Align](alignment-score-hirschberg-align.md)
 
 ## Sources
 

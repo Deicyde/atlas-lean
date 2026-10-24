@@ -11,7 +11,7 @@ Valid HMM parameters: positive initial, transition and emission distributions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](../hidden-markov/hmm.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Lemma 5.2: `opx(m, P, d) ≤ opx(n, P, d)` for `m ≤ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

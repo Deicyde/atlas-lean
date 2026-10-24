@@ -14,6 +14,10 @@ Using a `Finset` builds finiteness and integrality into the data.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lattice Point To Real](lattice-point-to-real.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.CanonicalLineEhrhartWanted](../../../../../sources/v2/WantedExt.md)

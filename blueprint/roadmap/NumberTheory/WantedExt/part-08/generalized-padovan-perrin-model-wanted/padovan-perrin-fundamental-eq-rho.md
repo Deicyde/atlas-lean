@@ -15,7 +15,8 @@ omitted: it fails for `k₁ = 1`, `k₂ = 2`, `p = 1`, `s = 2`, `j = 1`, `n = 0`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
+- [Padovan Perrin Rho](padovan-perrin-rho.md)
 
 ## Sources
 

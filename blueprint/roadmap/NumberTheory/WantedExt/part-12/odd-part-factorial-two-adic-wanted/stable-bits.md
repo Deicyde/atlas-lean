@@ -17,6 +17,10 @@ paper's applications, where `s=e+1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Odd Part](odd-part.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OddPartFactorialTwoAdicWanted](../../../../../sources/v2/WantedExt.md)

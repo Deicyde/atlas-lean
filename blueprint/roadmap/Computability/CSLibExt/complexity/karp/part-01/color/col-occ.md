@@ -12,7 +12,11 @@ with the earlier occurrences (latest first). Returns the literal vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](col-st.md)
+
+## Proof depends on
+
+- [Cons Edges](cons-edges.md)
 
 ## Sources
 

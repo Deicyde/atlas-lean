@@ -12,7 +12,7 @@ lean: MetaMathlibExt.pqBinomial_zero_right
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pq Binomial](pq-binomial.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ written as `2 Δ_k^{(1)} = ⋯`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic](zeck-adic.md)
+- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
+- [Zeck Adic Variation](zeck-adic-variation.md)
 
 ## Sources
 

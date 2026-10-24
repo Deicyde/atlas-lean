@@ -12,7 +12,9 @@ Every variable of a literal in the formula occurs in `varsOf`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vars Of](vars-of.md)
+- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

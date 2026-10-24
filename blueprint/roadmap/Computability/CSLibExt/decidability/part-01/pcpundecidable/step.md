@@ -12,7 +12,20 @@ lean: Cslib.Decidability.TMRewriting.Inv.step
 
 ## Depends on
 
-This node has no prerequisites.
+- [Step](../../part-02/string-rewriting/step.md)
+- [Inv](inv.md)
+- [TMSym](tmsym.md)
+- [Rules](rules.md)
+
+## Proof depends on
+
+- [Rule](../../part-02/string-rewriting/rule.md)
+- [TM0 Halts On](../../part-02/tm0-halting/tm0-halts-on.md)
+- [Is Ctl](is-ctl.md)
+- [Spells](spells.md)
+- [Cases of mem rules](cases-of-mem-rules.md)
+- [Spell](spell.md)
+- [Split site](split-site.md)
 
 ## Sources
 

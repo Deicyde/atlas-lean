@@ -14,7 +14,25 @@ conflict-serializable schedule.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+- [Conflict Serializable](../serializability/conflict-serializable.md)
+- [Legal](legal.md)
+- [Locks Cover](locks-cover.md)
+- [Op](../serializability/op.md)
+- [Two Phase](two-phase.md)
+- [Ops](ops.md)
+
+## Proof depends on
+
+- [Access](../serializability/access.md)
+- [Mode](mode.md)
+- [Is Unlock By](is-unlock-by.md)
+- [Holds Before](holds-before.md)
+- [Lock Mode](lock-mode.md)
+- [Covers](covers.md)
+- [Conflicts](../serializability/conflicts.md)
+- [Precedence Edge](../serializability/precedence-edge.md)
+- [Conflict Serializable of rank](../serializability/conflict-serializable-of-rank.md)
 
 ## Sources
 

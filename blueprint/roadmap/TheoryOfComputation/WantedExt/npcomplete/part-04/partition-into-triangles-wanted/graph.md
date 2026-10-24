@@ -11,7 +11,11 @@ The graph of the instance as a `SimpleGraph (Fin n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Into Triangles Instance](partition-into-triangles-instance.md)
+
+## Proof depends on
+
+- [Edge Graph](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
 
 ## Sources
 

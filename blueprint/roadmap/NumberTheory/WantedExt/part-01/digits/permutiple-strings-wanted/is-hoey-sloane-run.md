@@ -14,6 +14,10 @@ lean: MetaMathlibExt.IsHoeySloaneRun
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Hoey Sloane Step](is-hoey-sloane-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.PermutipleStringsWanted](../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,13 @@ The prefix `τ_k^j(k)` has length at least `j + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hof Tau List](hof-tau-list.md)
+
+## Proof depends on
+
+- [Exists hof Tau List iterate eq cons](exists-hof-tau-list-iterate-eq-cons.md)
+- [Hof Tau](hof-tau.md)
+- [Length le length hof Tau List](length-le-length-hof-tau-list.md)
 
 ## Sources
 

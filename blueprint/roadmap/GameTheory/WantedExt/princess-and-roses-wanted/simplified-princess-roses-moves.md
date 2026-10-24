@@ -15,6 +15,10 @@ non-increasing order `a ≥ b ≥ c ≥ d`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Simplified Princess Roses Move List](simplified-princess-roses-move-list.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GameTheory.PrincessAndRosesWanted](../../../../sources/v2/WantedExt.md)

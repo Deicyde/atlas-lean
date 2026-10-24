@@ -12,7 +12,7 @@ filters to its sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MSAlignment](msalignment.md)
 
 ## Sources
 

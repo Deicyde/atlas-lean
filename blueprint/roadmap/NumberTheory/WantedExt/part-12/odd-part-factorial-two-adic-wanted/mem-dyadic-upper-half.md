@@ -13,7 +13,7 @@ Membership in `dyadicUpperHalf e` is precisely the conjunction
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyadic Upper Half](dyadic-upper-half.md)
 
 ## Sources
 

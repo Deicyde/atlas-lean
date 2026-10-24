@@ -11,7 +11,8 @@ lean: MetaMathlibExt.kasselReutenauerPoly_eq_chebyshevCPartialSum_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
+- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ right side diverges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyson Rank](dyson-rank.md)
+- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

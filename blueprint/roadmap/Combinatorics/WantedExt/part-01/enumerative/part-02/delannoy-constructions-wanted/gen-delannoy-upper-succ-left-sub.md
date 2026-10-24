@@ -11,7 +11,7 @@ Vertical difference: for `k ≥ 1`, `D^k(m + 1, n) - D^k(m, n) = D^(k-1)(m + 1, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Delannoy Upper](gen-delannoy-upper.md)
 
 ## Sources
 

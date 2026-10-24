@@ -12,7 +12,12 @@ The empty position is reduced.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow ANim Reduced](slow-anim-reduced.md)
+
+## Proof depends on
+
+- [Slow ANim Moves](slow-anim-moves.md)
+- [Slow ANim Moves zero](slow-anim-moves-zero.md)
 
 ## Sources
 

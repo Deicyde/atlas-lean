@@ -13,7 +13,7 @@ inequality `(Le^{(r)}_1)² ≥ Le^{(r)}_0 Le^{(r)}_2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

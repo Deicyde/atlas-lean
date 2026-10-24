@@ -12,7 +12,7 @@ For `n ≥ 1`, `|flat_2(Q_{n+1})| = 2|flat_2(Q_n)| + 2n - 1`, with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flattened Stirling Run Count](flattened-stirling-run-count.md)
 
 ## Sources
 

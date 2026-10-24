@@ -13,7 +13,14 @@ writes a blank and does not move.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fence Symbol](fence-symbol.md)
+- [Is LBA](../space-bounded/is-lba.md)
+- [The fenced machine](fence.md)
+
+## Proof depends on
+
+- [Fence State](fence-state.md)
+- [A machine that, on a blank cell, writes a blank and does not move is a linear bounded automaton](../space-bounded/is-lba-of-stays-on-blank.md)
 
 ## Sources
 

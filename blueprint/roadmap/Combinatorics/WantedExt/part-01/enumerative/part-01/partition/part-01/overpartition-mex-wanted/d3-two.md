@@ -13,7 +13,7 @@ triples of colored distinct-part sets in the finite-set encoding `D3 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [D3](d3.md)
 
 ## Sources
 

@@ -13,7 +13,10 @@ A clause check succeeds iff the clause is satisfied (canonical
 
 ## Depends on
 
-This node has no prerequisites.
+- [Check Clause](check-clause.md)
+- [Lookup Var](lookup-var.md)
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
+- [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 
 ## Sources
 

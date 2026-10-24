@@ -13,7 +13,9 @@ first-column entry has Tribonacci representation `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Extra Trib](is-extra-trib.md)
+- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci Value](tribonacci-value.md)
 
 ## Sources
 

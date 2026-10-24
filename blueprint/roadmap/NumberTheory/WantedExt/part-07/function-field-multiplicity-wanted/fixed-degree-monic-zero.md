@@ -12,7 +12,7 @@ The degree-zero slice `M_0` consists only of the constant monic polynomial `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Degree Monic](fixed-degree-monic.md)
 
 ## Sources
 

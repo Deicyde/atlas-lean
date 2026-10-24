@@ -12,7 +12,7 @@ satisfies `|[1, n] ∩ A| > c (n log n)^{1/3}` for all `n ≥ 1`, for some `c > 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sidon](../../../../MathlibExt/part-01/additive/is-sidon.md)
 
 ## Sources
 

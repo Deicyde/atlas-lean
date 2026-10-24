@@ -12,7 +12,14 @@ The accumulator flattening equals the naive recursive flattening.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [To List](to-list.md)
+- [To List Naive](to-list-naive.md)
+
+## Proof depends on
+
+- [To List Aux](to-list-aux.md)
+- [To List Aux eq](to-list-aux-eq.md)
 
 ## Sources
 

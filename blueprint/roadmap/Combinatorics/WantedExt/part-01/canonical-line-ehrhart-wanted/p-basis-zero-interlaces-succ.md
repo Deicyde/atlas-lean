@@ -12,7 +12,8 @@ degree/cardinality conditions supplied by `CLInterlaces`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CLInterlaces](clinterlaces.md)
+- [P Basis](p-basis.md)
 
 ## Sources
 

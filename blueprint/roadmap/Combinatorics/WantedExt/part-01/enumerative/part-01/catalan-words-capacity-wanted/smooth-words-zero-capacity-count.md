@@ -14,7 +14,9 @@ stated separately as `r(2; 0) = 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+- [Smooth Capacity Dist](smooth-capacity-dist.md)
+- [Smooth Words](smooth-words.md)
 
 ## Sources
 

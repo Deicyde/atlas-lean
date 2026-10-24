@@ -15,7 +15,9 @@ paper's `Q_{m+1}`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Desc Lex LT](desc-lex-lt.md)
+- [L Star Collection](l-star-collection.md)
+- [Max LStar Block](max-lstar-block.md)
 
 ## Sources
 

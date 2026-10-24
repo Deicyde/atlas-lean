@@ -13,7 +13,8 @@ equivalent for its accepted language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Syntactic Rel](syntactic-rel.md)
+- [Transition Action](transition-action.md)
 
 ## Sources
 

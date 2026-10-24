@@ -12,7 +12,7 @@ In a nonempty semigroup the whole semigroup is a `J`-set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mul JSet](is-mul-jset.md)
 
 ## Sources
 

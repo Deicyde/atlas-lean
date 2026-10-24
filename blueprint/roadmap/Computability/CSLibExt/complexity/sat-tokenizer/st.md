@@ -11,7 +11,8 @@ The stacks, with the counters `CC`, `LC` in unary over `cl`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../sat-verifier-spec/sym.md)
+- [K](k.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: MetaMathlibExt.one_mem_bernoulliIntegralDerivativeIndices_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
+
+## Proof depends on
+
+- [Polynomial Denominator](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+- [Polynomial Denominator eq one iff](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator-eq-one-iff.md)
 
 ## Sources
 

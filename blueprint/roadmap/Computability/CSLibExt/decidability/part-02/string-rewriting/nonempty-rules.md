@@ -11,7 +11,7 @@ Every rule has a nonempty left side and a nonempty right side.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rule](rule.md)
 
 ## Sources
 

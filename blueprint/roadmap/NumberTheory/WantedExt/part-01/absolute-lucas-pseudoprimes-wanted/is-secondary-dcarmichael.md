@@ -14,6 +14,11 @@ A secondary `D`-Carmichael number: a `D`-Carmichael number of degree exactly two
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is DCarmichael](is-dcarmichael.md)
+- [Lucas Digit Sum](lucas-digit-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.AbsoluteLucasPseudoprimesWanted](../../../../../sources/v2/WantedExt.md)

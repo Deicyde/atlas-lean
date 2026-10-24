@@ -12,7 +12,13 @@ The joint of a Bayesian network is a probability distribution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bayes Net](bayes-net.md)
+- [Joint](joint-2.md)
+
+## Proof depends on
+
+- [To Chain](to-chain.md)
+- [Sum joint](sum-joint.md)
 
 ## Sources
 

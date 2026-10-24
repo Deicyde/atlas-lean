@@ -15,7 +15,9 @@ from `n` copies of `F_1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Accel Zeck Move](accel-zeck-move.md)
+- [Is Accel Zeck Game](is-accel-zeck-game.md)
+- [Zeckendorf State](zeckendorf-state.md)
 
 ## Sources
 

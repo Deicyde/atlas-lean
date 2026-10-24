@@ -11,7 +11,7 @@ For a prime `p`, `η_1(𝔽_p) ≤ 2⌈√p⌉` (reduce the Rédei–Rényi set 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Diff Basis Number](group-diff-basis-number.md)
 
 ## Sources
 

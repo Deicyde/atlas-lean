@@ -11,7 +11,12 @@ The explicit time bound (its polynomial form is `ohBound_le`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../family/layout.md)
+
+## Proof depends on
+
+- [Pre B](pre-b.md)
+- [T Body B](t-body-b.md)
 
 ## Sources
 

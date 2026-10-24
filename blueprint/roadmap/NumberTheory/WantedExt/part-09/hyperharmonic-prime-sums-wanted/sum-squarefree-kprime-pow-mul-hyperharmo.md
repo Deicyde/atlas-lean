@@ -18,7 +18,11 @@ exponent may be negative (`s = 1`), so it is an integer power. Here `h^{(s)} = h
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Generalized Harmonic](alternating-generalized-harmonic.md)
+- [Alternating Zeta](alternating-zeta.md)
+- [Generalized Harmonic](../../part-08/generalized-harmonic-gamma-wanted/generalized-harmonic.md)
+- [Hyperharmonic](hyperharmonic.md)
+- [Signed Iterated Partial Sum](signed-iterated-partial-sum.md)
 
 ## Sources
 

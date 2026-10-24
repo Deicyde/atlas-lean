@@ -12,7 +12,7 @@ A strong pseudoprime exceeds `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strong Pseudoprime](is-strong-pseudoprime.md)
 
 ## Sources
 

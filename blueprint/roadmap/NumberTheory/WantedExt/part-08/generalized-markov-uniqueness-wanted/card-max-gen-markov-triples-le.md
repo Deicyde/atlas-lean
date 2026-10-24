@@ -15,7 +15,8 @@ with `k + 2`, `k - 2` squarefree (in `ℤ`), then a `k`-generalized Markov numbe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gen Markov Number](is-gen-markov-number.md)
+- [Is Gen Markov Triple](is-gen-markov-triple.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ puts a pebble on `r`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pebbling Step](pebbling-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.SmallCrossNumberZeroSumWanted](../../../../../../sources/v2/WantedExt.md)

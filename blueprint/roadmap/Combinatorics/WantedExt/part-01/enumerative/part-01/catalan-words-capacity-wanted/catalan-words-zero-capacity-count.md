@@ -12,7 +12,9 @@ Mansour and Shattuck's Theorem 3, totals: for `n ≥ 1`, `a(n, 1; 0) = F_{2n-3}`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Dist](capacity-dist.md)
+- [Catalan Capacity Dist](catalan-capacity-dist.md)
+- [Catalan Words](catalan-words.md)
 
 ## Sources
 

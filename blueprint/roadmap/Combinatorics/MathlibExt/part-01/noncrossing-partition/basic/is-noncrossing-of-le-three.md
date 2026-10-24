@@ -12,7 +12,12 @@ Every partition of `Fin n` is noncrossing when `n ≤ 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Noncrossing](is-noncrossing.md)
+- [Set Partition](set-partition.md)
+
+## Proof depends on
+
+- [Has Crossing](has-crossing.md)
 
 ## Sources
 

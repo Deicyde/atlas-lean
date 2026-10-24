@@ -17,7 +17,7 @@ satisfies `hA₁row` (a row of length `1` cannot hold `2` ones), so the statemen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reduced Magic Square](is-reduced-magic-square.md)
 
 ## Sources
 

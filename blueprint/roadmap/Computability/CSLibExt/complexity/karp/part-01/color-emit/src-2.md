@@ -11,7 +11,8 @@ The counter a site copies.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site](site.md)
+- [Src](src.md)
 
 ## Sources
 

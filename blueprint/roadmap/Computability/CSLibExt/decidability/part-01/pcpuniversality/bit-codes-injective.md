@@ -12,7 +12,7 @@ Codes of index sequences are uniquely decodable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bit Codes](bit-codes.md)
 
 ## Sources
 

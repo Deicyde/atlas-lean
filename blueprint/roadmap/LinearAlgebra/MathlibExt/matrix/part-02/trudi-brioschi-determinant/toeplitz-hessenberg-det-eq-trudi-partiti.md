@@ -12,7 +12,13 @@ The case `a_0 = -1` of Trudi's formula: `det A_n = ∑_{α̃ = n} m_n(α) a_1^{�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toeplitz Hessenberg Det](toeplitz-hessenberg-det.md)
+- [Trudi Partition Sum](trudi-partition-sum.md)
+
+## Proof depends on
+
+- [Toeplitz Hessenberg Det eq sum compositions](toeplitz-hessenberg-det-eq-sum-compositi.md)
+- [Trudi Partition Sum eq sum compositions](trudi-partition-sum-eq-sum-compositions.md)
 
 ## Sources
 

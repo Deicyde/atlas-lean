@@ -12,7 +12,9 @@ has `δ(n)` `D`-nodes, where `δ` is the recurrence `dcDNodes`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Divide Conquer Tree](is-divide-conquer-tree.md)
+- [Dc DNodes](dc-dnodes.md)
+- [Tree DNodes](tree-dnodes.md)
 
 ## Sources
 

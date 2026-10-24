@@ -11,7 +11,11 @@ The word `w_{i₁} ⋯ w_{iₙ} iₙ ⋯ i₁` of an index sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [Flat](flat.md)
 
 ## Sources
 

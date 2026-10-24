@@ -12,7 +12,12 @@ MAP hypotheses for Mathlib's posterior kernel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MAP](is-map.md)
+
+## Proof depends on
+
+- [Bayes Posterior](bayes-posterior.md)
+- [Bayes' rule for discrete observations](posterior-eq-bayes-posterior.md)
 
 ## Sources
 

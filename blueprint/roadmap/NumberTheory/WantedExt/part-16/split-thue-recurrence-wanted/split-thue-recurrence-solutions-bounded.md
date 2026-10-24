@@ -13,7 +13,7 @@ Main theorem: under the hypotheses, every integer solution of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Split Thue Recurrence Family](is-split-thue-recurrence-family.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Symbols that occur on token stacks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sym](../../../sat-verifier-spec/sym.md)
 
 ## Sources
 

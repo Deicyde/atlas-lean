@@ -13,7 +13,7 @@ states it for `y = Ψ(n)` under the hypotheses of Theorem 4; only monotonicity i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Digit Seq](luroth-digit-seq.md)
 
 ## Sources
 

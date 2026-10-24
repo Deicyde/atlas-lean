@@ -13,6 +13,10 @@ The deletion operator `D = D_a ∘ D_b`: delete the first `b` and the first `a`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Delete First](delete-first.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.RelativePositionBinaryWordsWanted](../../../../../sources/v2/WantedExt.md)

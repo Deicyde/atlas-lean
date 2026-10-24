@@ -12,7 +12,8 @@ Row vertices of diamond `i` lie below the next top.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hp R](hp-r.md)
+- [Hp T](hp-t.md)
 
 ## Sources
 

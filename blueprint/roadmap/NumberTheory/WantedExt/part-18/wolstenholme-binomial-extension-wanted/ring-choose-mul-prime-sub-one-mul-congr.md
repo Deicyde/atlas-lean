@@ -16,7 +16,7 @@ upper indices read through `Ring.choose`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher Order Harmonic](../../../MathlibExt/part-07/higher-harmonic.md)
 
 ## Sources
 

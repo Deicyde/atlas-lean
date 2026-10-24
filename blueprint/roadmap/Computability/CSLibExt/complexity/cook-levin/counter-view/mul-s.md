@@ -11,7 +11,15 @@ A `mul_run` site `c += a · b` (index stack `ad`, scratch `t`), for any counter 
 
 ## Depends on
 
-This node has no prerequisites.
+- [MS](ms.md)
+- [SK](sk.md)
+- [SΓ](s.md)
+
+## Proof depends on
+
+- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
+- [For Head](../../../../MathlibExt/turing-machine/program/for-head.md)
+- [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Every edge `(d₁, d₂)` of the mother graph induces a transition: there are in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Mother Graph Edge](../permutiple-wanted/is-mother-graph-edge.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ Consecutive `Q`-pairs `((P_{n-1}, Q_{n-1}), (P_n, Q_n))` of the Hurwitz expansio
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hurwitz Digit](hurwitz-digit.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HurwitzContinuedFractionFourSquaresWanted](../../../../../sources/v2/WantedExt.md)

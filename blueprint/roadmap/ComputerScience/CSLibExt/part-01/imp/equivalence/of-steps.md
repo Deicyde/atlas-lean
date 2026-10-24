@@ -12,7 +12,16 @@ Finitely many small steps can be prepended to a big-step derivation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Big Step](../big-step/big-step.md)
+- [Cmd](../syntax/cmd.md)
+- [Config](../small-step/config.md)
+- [State](../syntax/state.md)
+- [Steps](../small-step/steps.md)
+
+## Proof depends on
+
+- [Of step](of-step.md)
+- [Step](../small-step/step.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ lean: MathlibExt.Combinatorics.SimpleGraph.HypercubeFourCycleFreeWanted.le_hyper
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypercube Turan Number](../../../../MathlibExt/part-01/simple-graph/part-03/hypercube-extremal/hypercube-turan-number.md)
 
 ## Sources
 

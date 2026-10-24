@@ -12,7 +12,12 @@ output is joined to `F` and `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Col St](col-st.md)
+
+## Proof depends on
+
+- [Col Occ](col-occ.md)
+- [Col Or](col-or.md)
 
 ## Sources
 

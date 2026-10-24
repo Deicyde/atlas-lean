@@ -16,7 +16,7 @@ conjugates `σ α`), as in the paper's proof.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclotomic Trace Dist](cyclotomic-trace-dist.md)
 
 ## Sources
 

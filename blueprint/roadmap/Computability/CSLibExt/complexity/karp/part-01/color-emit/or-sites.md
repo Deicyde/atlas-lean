@@ -11,7 +11,7 @@ The OR gadget with inputs `N` and `R` and fresh vertices `N + 2`, `N + 3`, `N + 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Site](site.md)
 
 ## Sources
 

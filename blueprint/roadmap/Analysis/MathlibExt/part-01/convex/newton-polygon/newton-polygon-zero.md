@@ -15,10 +15,11 @@ $\mathbb{R}^2$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Newton Polygon](newton-polygon.md)
 
 ## Proof depends on
 
+- [Newton Support](newton-support.md)
 - [The Newton support of the zero polynomial is empty](newton-support-zero.md)
 
 ## Sources

@@ -11,7 +11,11 @@ The graph of the instance as a `SimpleGraph (Fin n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Into P3s Instance](partition-into-p3s-instance.md)
+
+## Proof depends on
+
+- [Edge Graph](../../../../../Computability/CSLibExt/complexity/karp/part-01/color/edge-graph.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ A one-element tuple is difference `y`-smooth for every `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Difference Smooth](is-difference-smooth.md)
 
 ## Sources
 

@@ -15,7 +15,8 @@ is `0` at `m = 0` (index `-1`), and the sum runs over `s ≤ m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
+- [R Associated Stirling Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/r-associated-stirling-eulerian.md)
 
 ## Sources
 

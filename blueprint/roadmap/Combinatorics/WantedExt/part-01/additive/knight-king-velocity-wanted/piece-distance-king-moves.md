@@ -15,7 +15,12 @@ values converted to naturals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [King Moves](king-moves.md)
+- [Piece Distance](piece-distance.md)
+
+## Proof depends on
+
+- [Piece Distance eq of mem of forall](piece-distance-eq-of-mem-of-forall.md)
 
 ## Sources
 

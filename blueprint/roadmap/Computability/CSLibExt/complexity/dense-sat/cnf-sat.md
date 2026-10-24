@@ -11,7 +11,12 @@ lean: Cslib.Complexity.DenseSAT.cnfSat
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+
+## Proof depends on
+
+- [Clause](clause.md)
+- [Clause Sat](clause-sat.md)
 
 ## Sources
 

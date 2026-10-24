@@ -19,7 +19,7 @@ matrices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poset Matrix](../../../../Order/MathlibExt/poset-matrix/is-poset-matrix.md)
 
 ## Sources
 

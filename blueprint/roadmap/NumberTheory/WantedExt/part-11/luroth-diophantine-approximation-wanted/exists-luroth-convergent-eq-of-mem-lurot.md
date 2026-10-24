@@ -12,7 +12,9 @@ If `x ∈ (0, 1]` and `(P/Q, Q, d) ∈ S` satisfy `0 < x - P/Q ≤ 1/((d - 1) Q)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Convergent](luroth-convergent.md)
+- [Luroth Digit Seq](../luroth-consecutive-digits-wanted/luroth-digit-seq.md)
+- [Luroth Triple Set](luroth-triple-set.md)
 
 ## Sources
 

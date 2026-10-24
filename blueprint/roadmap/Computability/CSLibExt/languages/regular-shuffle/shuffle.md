@@ -13,6 +13,10 @@ The shuffle of two languages: all interleavings of a word of `L` with a word of 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Shuffle](is-shuffle.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.RegularShuffle](../../../../../sources/v2/CSLibExt.md)

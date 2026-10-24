@@ -12,7 +12,13 @@ lean: Cslib.Decidability.rePred_iff_manyOneReducible_haltingSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Halting Set](../../part-02/turing-reducible/halting-set.md)
+
+## Proof depends on
+
+- [Recognizability transfers down many-one reductions](of-many-one-reducible.md)
+- [Every recognizable predicate many-one reduces to the halting set](many-one-reducible-halting-set.md)
+- [The halting set is recognizable](re-pred-halting-set.md)
 
 ## Sources
 

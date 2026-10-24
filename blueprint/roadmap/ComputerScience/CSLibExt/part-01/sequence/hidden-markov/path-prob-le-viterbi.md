@@ -12,7 +12,10 @@ Every path weighs at most the Viterbi variable of its last state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [HMM](hmm.md)
+- [Nonneg](nonneg.md)
+- [Path Prob](path-prob.md)
+- [Viterbi](viterbi.md)
 
 ## Sources
 

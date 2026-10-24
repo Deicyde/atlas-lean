@@ -11,7 +11,12 @@ Well-formed words `x code(iₙ) ⋯ code(i₁)` with `x ≠ w_{i₁} ⋯ w_{iₙ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domino](../pcp/domino.md)
+
+## Proof depends on
+
+- [Bit Codes](bit-codes.md)
+- [Flat](../cfgundecidable/flat.md)
 
 ## Sources
 

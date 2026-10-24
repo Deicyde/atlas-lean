@@ -12,7 +12,7 @@ No pairs, no bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flat](flat.md)
 
 ## Sources
 

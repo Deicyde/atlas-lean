@@ -12,7 +12,12 @@ lock on `x` at an earlier position and has not released it since.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+- [Lock Mode](lock-mode.md)
+
+## Proof depends on
+
+- [Covers](covers.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Appending a gap column on the left preserves alignment validity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alignment](alignment.md)
+- [Is Alignment](is-alignment.md)
 
 ## Sources
 

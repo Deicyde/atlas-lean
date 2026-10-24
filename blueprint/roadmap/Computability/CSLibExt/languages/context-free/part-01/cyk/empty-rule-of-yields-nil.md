@@ -13,7 +13,12 @@ with an empty production.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chomsky Normal Form](../chomsky-normal-form/is-chomsky-normal-form.md)
+- [Yields](../../part-02/yields/yields.md)
+
+## Proof depends on
+
+- [No empty rule of mem output](no-empty-rule-of-mem-output.md)
 
 ## Sources
 

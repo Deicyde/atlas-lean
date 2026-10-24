@@ -15,7 +15,7 @@ for every `s > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Harmonic](generalized-harmonic.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The denominator `τ_D` of `τ = (p + 1)/d` in lowest terms.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tower Tau](tower-tau.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HigherANumbersPeriodicSumWanted](../../../../../sources/v2/WantedExt.md)

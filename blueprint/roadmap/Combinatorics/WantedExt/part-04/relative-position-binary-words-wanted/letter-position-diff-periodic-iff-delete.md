@@ -13,7 +13,9 @@ initial run of `a`'s deleted) is periodic. (Same conventions as Lemma 16: period
 
 ## Depends on
 
-This node has no prerequisites.
+- [Both Letters Infinite](both-letters-infinite.md)
+- [Delete First](delete-first.md)
+- [Letter Position](letter-position.md)
 
 ## Sources
 

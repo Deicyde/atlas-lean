@@ -14,6 +14,10 @@ from left to right.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dyck Valley Heights](dyck-valley-heights.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NondecreasingDyckSubwordsWanted](../../../../../../../sources/v2/WantedExt.md)

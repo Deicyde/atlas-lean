@@ -13,7 +13,23 @@ lean: Cslib.Complexity.CookLevin.Situation.fam_force
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layout](../../family/layout.md)
+- [C Idx](../../family/c-idx.md)
+- [X Idx](../../family/x-idx.md)
+- [Family](../../family/family.md)
+- [Tr](../part-04/tr.md)
+- [Cnf Sat](../../../dense-sat/cnf-sat.md)
+
+## Proof depends on
+
+- [N Lits](../../family/n-lits.md)
+- [Num Vars](../../family/num-vars.md)
+- [Dense Clause](../../family/dense-clause.md)
+- [Lit Pos](../../family/lit-pos.md)
+- [Lits](../../family/lits.md)
+- [L0](../part-04/clause-sat-dense.md)
+- [CNF](../../../dense-sat/cnf.md)
+- [Clause](../../../dense-sat/clause.md)
 
 ## Sources
 

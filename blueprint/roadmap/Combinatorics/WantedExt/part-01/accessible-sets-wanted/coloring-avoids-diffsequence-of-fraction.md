@@ -13,7 +13,8 @@ If every enumerated gap has fractional part in `[ε,(r-1)/r]`, an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is DDiff Sequence](is-ddiff-sequence.md)
+- [Is Monochromatic](is-monochromatic.md)
 
 ## Sources
 

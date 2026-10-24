@@ -14,7 +14,7 @@ Keyword symmetries of the substitution graph: `𝒢_n^(a) = 𝒢_n^(!a)`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Keyword Graph](keyword-graph.md)
 
 ## Sources
 

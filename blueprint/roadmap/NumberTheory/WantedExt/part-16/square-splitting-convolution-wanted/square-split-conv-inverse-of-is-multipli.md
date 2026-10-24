@@ -16,7 +16,7 @@ with `g(1) = 1/f(1)`, `g(p) = -f(p)/f(1)²`, `g(p²) = -f(p²)/f(1)²`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Conv](square-split-conv.md)
 
 ## Sources
 

@@ -18,7 +18,12 @@ one sentence code does not formally imply provability of another.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decides Halting](decides-halting.md)
+- [Formal Theory](formal-theory.md)
+- [Machine](machine.md)
+- [Embed Machine](embed-machine.md)
+- [Halts Sentence](halts-sentence.md)
+- [Not Halts Sentence](not-halts-sentence.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ semantic entailments between assertions as premises.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assertion](../hoare/assertion.md)
+- [Cmd](../syntax/cmd.md)
 
 ## Sources
 

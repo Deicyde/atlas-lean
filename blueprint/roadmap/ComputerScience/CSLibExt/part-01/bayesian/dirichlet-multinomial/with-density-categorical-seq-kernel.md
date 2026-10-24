@@ -13,7 +13,18 @@ The evidence-weighted prior: `Dir(α)` weighted by the likelihood of `s` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [The multinomial sampling model](categorical-seq-kernel.md)
+- [Counts](counts.md)
+- [Dirichlet Measure](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/dirichlet-measure.md)
+- [Multi Beta](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/multi-beta.md)
+
+## Proof depends on
+
+- [Prob Vectors](prob-vectors.md)
+- [Seq Likelihood](seq-likelihood.md)
+- [Seq Likelihood eq prod pow](seq-likelihood-eq-prod-pow.md)
+- [Ae dirichlet Measure](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/ae-dirichlet-measure.md)
+- [Dirichlet–multinomial conjugacy](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/with-density-prod-pow-dirichlet-measure.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Second closed form of `g_r(q, k)` (same interpolation setting as Corollary 2.15)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Bracket](q-bracket.md)
 
 ## Sources
 

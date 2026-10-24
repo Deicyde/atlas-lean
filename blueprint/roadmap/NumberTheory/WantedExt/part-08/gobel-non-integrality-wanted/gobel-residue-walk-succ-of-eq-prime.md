@@ -15,7 +15,7 @@ Non-Integrality of the (k, l)-Göbel Sequences*, Journal of Integer Sequences 29
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gobel Residue Walk](gobel-residue-walk.md)
 
 ## Sources
 

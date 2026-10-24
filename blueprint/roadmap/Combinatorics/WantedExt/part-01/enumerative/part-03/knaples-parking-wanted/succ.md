@@ -11,7 +11,7 @@ Proposition 1: a `k`-Naples parking function is also a `(k + 1)`-Naples parking 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Naples Parking Function](is-naples-parking-function.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ with `T₁ = qx / (1 - qx)` (the case `j = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Capacity Continued Fraction Den](capacity-continued-fraction-den.md)
+- [Smooth Plateau Area Dist](smooth-plateau-area-dist.md)
 
 ## Sources
 

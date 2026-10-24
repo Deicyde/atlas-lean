@@ -11,7 +11,7 @@ Merca's identity (i): for `0 ≤ r < m`, `a_{r,m}(n) = ∑_{j ≥ 0} (mj + r) p(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
 
 ## Sources
 

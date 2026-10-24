@@ -12,7 +12,8 @@ A vertex is occupied exactly when it lies in `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domination State](domination-state.md)
+- [Vertex Domination State](vertex-domination-state.md)
 
 ## Sources
 

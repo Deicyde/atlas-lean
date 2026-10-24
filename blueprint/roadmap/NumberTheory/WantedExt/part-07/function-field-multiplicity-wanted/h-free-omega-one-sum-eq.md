@@ -12,7 +12,9 @@ Unfolding `T_h`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H Free Omega One Sum](h-free-omega-one-sum.md)
+- [Monic Irreducible](monic-irreducible.md)
+- [Poly Norm](poly-norm.md)
 
 ## Sources
 

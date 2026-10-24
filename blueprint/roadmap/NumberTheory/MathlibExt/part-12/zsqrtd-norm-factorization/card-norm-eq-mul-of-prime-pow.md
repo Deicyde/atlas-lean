@@ -16,6 +16,11 @@ then it agrees with `k * D` on every nonzero argument.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Card mul of coprime](card-mul-of-coprime.md)
+- [Card repr of shape](card-repr-of-shape.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZsqrtdNormFactorization](../../../../../sources/v2/MathlibExt.md)

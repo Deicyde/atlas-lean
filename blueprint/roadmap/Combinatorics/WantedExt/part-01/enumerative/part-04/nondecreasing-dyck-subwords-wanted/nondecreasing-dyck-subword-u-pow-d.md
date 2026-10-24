@@ -16,7 +16,7 @@ values, and the recurrence is stated for `n ≥ m + 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
 
 ## Sources
 

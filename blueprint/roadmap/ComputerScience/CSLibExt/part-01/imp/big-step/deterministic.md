@@ -12,7 +12,16 @@ The deterministic IMP big-step semantics has at most one final state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Big Step](big-step.md)
+- [Cmd](../syntax/cmd.md)
+- [State](../syntax/state.md)
+
+## Proof depends on
+
+- [AExp](../syntax/aexp.md)
+- [Eval](../syntax/eval.md)
+- [BExp](../syntax/bexp.md)
+- [Eval](../syntax/eval-2.md)
 
 ## Sources
 

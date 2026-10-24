@@ -14,7 +14,8 @@ element of `ℋₙ` with that value (uniqueness of a least element is automatic)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Completely Additive Nat](is-completely-additive-nat.md)
+- [Nth Prime One](nth-prime-one.md)
 
 ## Sources
 

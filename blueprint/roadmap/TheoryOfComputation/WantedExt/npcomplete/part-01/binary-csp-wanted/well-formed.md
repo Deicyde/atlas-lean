@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Csp Instance](binary-csp-instance.md)
 
 ## Sources
 

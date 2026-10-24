@@ -14,6 +14,11 @@ length `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Naples Parking Function](is-naples-parking-function.md)
+- [Naples Park](naples-park.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.KNaplesParkingWanted](../../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,8 @@ For an odd prime `p` and a prime `q` with `p/2 < q < p`: `r_q(p) ≡ 0 (mod q)` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum Of Squares Rep Count](sum-of-squares-rep-count.md)
+- [Sum Of Triangular Rep Count](sum-of-triangular-rep-count.md)
 
 ## Sources
 

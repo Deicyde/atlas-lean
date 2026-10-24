@@ -14,6 +14,10 @@ Ramanujan's function `k(q) = r(q) r²(q²)`, through its product representation
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q Pochhammer Inf Raw](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.RamanujanKFunctionWanted](../../../../../sources/v2/WantedExt.md)

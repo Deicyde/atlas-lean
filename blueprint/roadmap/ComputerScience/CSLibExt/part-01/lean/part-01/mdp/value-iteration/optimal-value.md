@@ -11,7 +11,13 @@ The optimal value: the unique fixed point of the Bellman operator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MDP](mdp.md)
+- [Stochastic](stochastic.md)
+
+## Proof depends on
+
+- [Bellman](bellman.md)
+- [Bellman's operator is a contraction](bellman-contracting.md)
 
 ## Sources
 

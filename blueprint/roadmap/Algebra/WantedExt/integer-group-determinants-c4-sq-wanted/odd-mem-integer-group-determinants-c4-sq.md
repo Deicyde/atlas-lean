@@ -11,7 +11,8 @@ lean: MetaMathlibExt.odd_mem_integerGroupDeterminants_c4Sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [C4 Sq Exceptional Set](c4-sq-exceptional-set.md)
+- [Integer Group Determinants](integer-group-determinants.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The rank of `a` under a strict total order: the number of elements preferred to 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Total Order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

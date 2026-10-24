@@ -14,7 +14,7 @@ imaginary quadratic field: the norms do not need the paper's class-number-one as
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quad Prime Norm](quad-prime-norm.md)
 
 ## Sources
 

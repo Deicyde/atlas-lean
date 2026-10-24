@@ -13,7 +13,7 @@ denominators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Valley Depth Sum](symmetric-valley-depth-sum.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ or of its complement.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Interval](is-interval.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.SortingNetworks.Bitonic](../../../../../../../../sources/v2/CSLibExt.md)

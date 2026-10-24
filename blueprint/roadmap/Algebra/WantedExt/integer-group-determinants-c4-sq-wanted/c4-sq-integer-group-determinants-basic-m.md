@@ -12,7 +12,7 @@ lean: MetaMathlibExt.c4Sq_integerGroupDeterminants_basic_members
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Group Determinants](integer-group-determinants.md)
 
 ## Sources
 

@@ -28,6 +28,10 @@ particular, β_P(∅)=α_P(∅)=1.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Flag FVector](flag-fvector.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Poset.Basic](../../../../../../sources/v2/MathlibExt.md)

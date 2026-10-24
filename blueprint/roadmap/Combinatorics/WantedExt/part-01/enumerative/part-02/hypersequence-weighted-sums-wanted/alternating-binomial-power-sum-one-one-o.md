@@ -12,7 +12,7 @@ lean: MetaMathlibExt.alternatingBinomialPowerSum_one_one_one_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

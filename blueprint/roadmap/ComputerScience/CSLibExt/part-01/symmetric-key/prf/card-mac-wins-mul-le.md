@@ -14,7 +14,14 @@ run never queries) gives `|T|` functions with the same run, of which exactly one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mac Wins](mac-wins.md)
+- [Oracle Comp](oracle-comp.md)
+- [Queries](queries.md)
+- [Run](run.md)
+
+## Proof depends on
+
+- [Locality](run-congr.md)
 
 ## Sources
 

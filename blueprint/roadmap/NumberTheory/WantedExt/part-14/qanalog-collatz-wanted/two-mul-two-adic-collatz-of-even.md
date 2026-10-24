@@ -12,7 +12,12 @@ Even branch: `2 T(x) = x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Adic Collatz](two-adic-collatz.md)
+
+## Proof depends on
+
+- [To ZMod three mul add one of odd](to-zmod-three-mul-add-one-of-odd.md)
+- [Two dvd of to ZMod eq zero](two-dvd-of-to-zmod-eq-zero.md)
 
 ## Sources
 

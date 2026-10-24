@@ -16,6 +16,11 @@ the multiplication map consists of the `k` unit translates.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dvd of coprime norms](dvd-of-coprime-norms.md)
+- [Exists factor of coprime](exists-factor-of-coprime.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZsqrtdNormFactorization](../../../../../sources/v2/MathlibExt.md)

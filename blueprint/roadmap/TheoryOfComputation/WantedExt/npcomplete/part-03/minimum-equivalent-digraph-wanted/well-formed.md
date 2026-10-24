@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Equivalent Digraph Instance](minimum-equivalent-digraph-instance.md)
 
 ## Sources
 

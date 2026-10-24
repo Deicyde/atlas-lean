@@ -14,7 +14,9 @@ writes `k ≥ 0`, but `σ_{1,k-1,1}` needs `k - 1 ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Substitution Image](is-substitution-image.md)
+- [Deletion](deletion.md)
+- [Relative Position](relative-position.md)
 
 ## Sources
 

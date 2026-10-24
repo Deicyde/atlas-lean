@@ -14,7 +14,11 @@ but not with quadrilateral `0, 1, 2, 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Inner Polygon Dissection](is-inner-polygon-dissection.md)
+
+## Proof depends on
+
+- [Inscribed Polygon Edges](inscribed-polygon-edges.md)
 
 ## Sources
 

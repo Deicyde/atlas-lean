@@ -12,7 +12,12 @@ lean: MetaMathlibExt.isNegBaseHappy_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Neg Base Happy](is-neg-base-happy.md)
+
+## Proof depends on
+
+- [Neg Base Sq Digit Sum](neg-base-sq-digit-sum.md)
+- [Neg Base Sq Digit Sum of digit](neg-base-sq-digit-sum-of-digit.md)
 
 ## Sources
 

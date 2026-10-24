@@ -12,7 +12,16 @@ A partition whose every block is `univ` is indiscrete.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Noncrossing Partition](../basic/noncrossing-partition.md)
+- [Block](../basic/block.md)
+- [Indiscrete](indiscrete.md)
+
+## Proof depends on
+
+- [Card lt of ne top](../../finpartition/card/card-lt-of-ne-top.md)
+- [Is Noncrossing](../basic/is-noncrossing.md)
+- [Set Partition](../basic/set-partition.md)
+- [Eq indiscrete iff val eq top](eq-indiscrete-iff-val-eq-top.md)
 
 ## Sources
 

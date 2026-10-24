@@ -12,7 +12,11 @@ its subtrees: the tour lists the vertices in preorder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+
+## Proof depends on
+
+- [Preorder Walk](preorder-walk.md)
 
 ## Sources
 

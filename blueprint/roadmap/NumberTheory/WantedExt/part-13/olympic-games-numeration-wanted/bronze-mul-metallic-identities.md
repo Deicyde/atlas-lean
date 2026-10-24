@@ -17,7 +17,10 @@ With `α = (3 + √13) / 2`, `β = (5 + √13) / 6` and `γ = (√13 - 3) / 2`, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bronze Companion First](bronze-companion-first.md)
+- [Bronze Companion Second](bronze-companion-second.md)
+- [Bronze Lucas Params](bronze-lucas-params.md)
+- [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
 
 ## Sources
 

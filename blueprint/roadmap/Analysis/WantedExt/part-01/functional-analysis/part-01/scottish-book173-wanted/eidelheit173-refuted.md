@@ -15,7 +15,7 @@ Scottish Book; see P. Halmos, A Hilbert Space Problem Book, Problem 109.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem173 Claim](scottish-book-problem173-claim.md)
 
 ## Sources
 

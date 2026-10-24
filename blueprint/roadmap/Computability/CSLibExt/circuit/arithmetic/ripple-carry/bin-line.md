@@ -11,7 +11,8 @@ A binary gate reading the wires `u` and `v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Gate](arith-gate.md)
+- [Arith Signature](arith-signature.md)
 
 ## Sources
 

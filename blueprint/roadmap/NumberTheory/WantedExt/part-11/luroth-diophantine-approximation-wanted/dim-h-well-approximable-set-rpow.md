@@ -13,7 +13,7 @@ Here `W(τ) = W(ψ)` with `ψ(q) = q^{-τ}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Well Approximable Set](well-approximable-set.md)
 
 ## Sources
 

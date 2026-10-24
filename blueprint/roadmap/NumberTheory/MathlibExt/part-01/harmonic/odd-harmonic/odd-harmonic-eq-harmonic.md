@@ -12,7 +12,12 @@ lean: MetaMathlibExt.oddHarmonic_eq_harmonic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Harmonic](odd-harmonic.md)
+
+## Proof depends on
+
+- [Odd Harmonic succ](odd-harmonic-succ.md)
+- [Odd Harmonic zero](odd-harmonic-zero.md)
 
 ## Sources
 

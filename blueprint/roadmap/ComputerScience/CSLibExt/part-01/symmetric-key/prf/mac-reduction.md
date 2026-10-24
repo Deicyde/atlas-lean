@@ -12,7 +12,13 @@ message and accept when the answer is the forged tag and the message is fresh.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oracle Comp](oracle-comp.md)
+
+## Proof depends on
+
+- [Done](done.md)
+- [Query](query.md)
+- [Oracle Sig](oracle-sig.md)
 
 ## Sources
 

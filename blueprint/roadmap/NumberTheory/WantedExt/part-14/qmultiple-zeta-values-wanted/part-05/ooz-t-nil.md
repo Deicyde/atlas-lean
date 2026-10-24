@@ -12,7 +12,7 @@ lean: MetaMathlibExt.oozT_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ooz T](ooz-t.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ MSE value. Blueprint `af_fd40353442120bd19166139d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mean Squared Error](mean-squared-error.md)
+- [Mean Squared Error ENN](mean-squared-error-enn.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ clearing denominators in `ℤ⟦t⟧`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyper Leonardo](hyper-leonardo.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.not_isSierpinskiNumber_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sierpinski Number](is-sierpinski-number.md)
 
 ## Sources
 

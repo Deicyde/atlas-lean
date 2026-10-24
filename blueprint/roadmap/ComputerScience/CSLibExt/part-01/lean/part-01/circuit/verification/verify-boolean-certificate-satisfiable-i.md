@@ -21,6 +21,7 @@ A short accepted valuation exists exactly when the circuit is satisfiable.
 
 - [Verify Boolean Certificate complete](verify-boolean-certificate-complete.md)
 - [Verify Boolean Certificate sound](verify-boolean-certificate-sound.md)
+- [To Fin](to-fin.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ the two integer quotients; the final clause is the paper's congruence, represent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Double Factorial](odd-double-factorial.md)
 
 ## Sources
 

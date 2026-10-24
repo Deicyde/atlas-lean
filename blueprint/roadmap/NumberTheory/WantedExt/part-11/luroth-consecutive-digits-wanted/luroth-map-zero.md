@@ -12,7 +12,11 @@ lean: MetaMathlibExt.lurothMap_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Map](luroth-map.md)
+
+## Proof depends on
+
+- [Luroth Digit](luroth-digit.md)
 
 ## Sources
 

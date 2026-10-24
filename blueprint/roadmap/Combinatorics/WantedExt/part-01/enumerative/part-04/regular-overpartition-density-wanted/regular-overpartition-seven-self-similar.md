@@ -12,7 +12,7 @@ For all natural `n,k`, `A₇(7^(2k)(4n+3))` is congruent modulo seven to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Overpartition Count](regular-overpartition-count.md)
 
 ## Sources
 

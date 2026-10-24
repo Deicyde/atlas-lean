@@ -13,7 +13,8 @@ For `r ≥ 2`, `b_1, …, b_r ≥ 1` and `a = b_1 + ⋯ + b_r`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorial Product Comparison](factorial-product-comparison.md)
+- [Factorial Product Constant](factorial-product-constant.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The quadratic form of a weighted scatter matrix:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Scatter](weighted-scatter.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ If `G` is not `2`-accessible (`Δ(G, k; 2) = ∞` for some `k`), then `F` is not
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RAccessible](../../accessible-sets-wanted/is-raccessible.md)
+- [Half Even Fibonacci Set](half-even-fibonacci-set.md)
+- [Positive Fibonacci Set](../../accessible-sets-wanted/positive-fibonacci-set.md)
 
 ## Sources
 

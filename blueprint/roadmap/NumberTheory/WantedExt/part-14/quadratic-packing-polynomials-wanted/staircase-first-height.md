@@ -14,6 +14,10 @@ The height `ȳ_i` of the first step (the point of least `y`-coordinate) of the s
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sector Staircase](sector-staircase.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.QuadraticPackingPolynomialsWanted](../../../../../sources/v2/WantedExt.md)

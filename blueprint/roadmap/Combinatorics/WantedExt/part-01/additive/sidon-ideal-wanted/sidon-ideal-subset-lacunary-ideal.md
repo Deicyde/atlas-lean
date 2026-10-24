@@ -11,7 +11,9 @@ Theorem 2: the Sidon ideal is contained in the lacunary ideal `Lac`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gap Lacunary Set](is-gap-lacunary-set.md)
+- [Generated Ideal](generated-ideal.md)
+- [Sidon Ideal](sidon-ideal.md)
 
 ## Sources
 

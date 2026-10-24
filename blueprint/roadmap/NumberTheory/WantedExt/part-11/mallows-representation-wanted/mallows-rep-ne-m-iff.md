@@ -12,7 +12,8 @@ even for all `k ≥ 1`; `a k = a_{k+1}`, so `a_{2k}` is `a (2k - 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mallows Letter](mallows-letter.md)
+- [Mallows Rep](mallows-rep.md)
 
 ## Sources
 

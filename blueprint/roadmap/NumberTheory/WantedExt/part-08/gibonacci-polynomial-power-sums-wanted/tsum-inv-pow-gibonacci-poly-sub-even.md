@@ -13,7 +13,7 @@ Lemma 2.3 (quoted from Koshy): for `x > 0`, `g ∈ {f, ℓ}`, even `k` and a pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](../../../MathlibExt/part-06/generalized-fibonacci-polynomial/generalized-fibonacci-polynomial.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: MetaMathlibExt.zeckAdicVariation_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeck Adic Variation](zeck-adic-variation.md)
+
+## Proof depends on
+
+- [Zeck Adic Trunc Variation](zeck-adic-trunc-variation.md)
+- [Zeck Adic Trunc Variation zero](zeck-adic-trunc-variation-zero.md)
+- [Zeck Adic Variation eq of eventually](zeck-adic-variation-eq-of-eventually.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The anti-Tribonacci numbers `D_n` (for `n ≥ 1`), OEIS A265389.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Anti Tribonacci State](anti-tribonacci-state.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WalnutOeisProblemsWanted](../../../../../../../sources/v2/WantedExt.md)

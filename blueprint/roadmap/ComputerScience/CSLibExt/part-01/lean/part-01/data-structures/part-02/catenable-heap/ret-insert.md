@@ -12,7 +12,8 @@ The result of `insert x h` is the front node holding `x` and `h`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catenable Heap](catenable-heap.md)
+- [Insert](insert.md)
 
 ## Sources
 

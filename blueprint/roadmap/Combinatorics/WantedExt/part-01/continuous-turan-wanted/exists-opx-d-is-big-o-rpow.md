@@ -12,7 +12,7 @@ Stated along natural `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Opx D](opx-d.md)
 
 ## Sources
 

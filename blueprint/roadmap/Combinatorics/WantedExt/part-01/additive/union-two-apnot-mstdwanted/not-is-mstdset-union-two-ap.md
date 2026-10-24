@@ -12,7 +12,8 @@ J(b, m₂, d₂)` (positive common differences) with `max X₁ < min X₂` is no
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MSTDSet](is-mstdset.md)
+- [Real APSet](real-apset.md)
 
 ## Sources
 

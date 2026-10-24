@@ -12,7 +12,12 @@ lean: Cslib.Kolmogorov.not_rePred_le_K
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov complexity](../basic/k.md)
+
+## Proof depends on
+
+- [Chaitin's incompleteness theorem](exists-bound-of-re-pred-le-k.md)
+- [Incompressible strings exist at every length](../incompressible/exists-incompressible.md)
 
 ## Sources
 

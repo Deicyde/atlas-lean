@@ -14,6 +14,7 @@ An accepted certificate agrees with the canonical trace and makes the output tru
 ## Depends on
 
 - [Verify Boolean Certificate](verify-boolean-certificate.md)
+- [To Fin](to-fin.md)
 - [Boolean Interpretation](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-interpretation.md)
 - [Boolean Signature](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
 

@@ -13,7 +13,8 @@ Upper bound: if every sequence of length `ℓ` has a non-empty `A`-weighted zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
+- [Weighted Davenport](weighted-davenport.md)
 
 ## Sources
 

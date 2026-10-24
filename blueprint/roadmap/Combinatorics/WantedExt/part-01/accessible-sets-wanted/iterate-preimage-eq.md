@@ -12,7 +12,7 @@ Characterization of the integer-iterate preimage notation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Iterate Preimage](iterate-preimage.md)
 
 ## Sources
 

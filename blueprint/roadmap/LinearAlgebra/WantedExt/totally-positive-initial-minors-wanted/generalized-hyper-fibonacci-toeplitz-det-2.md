@@ -11,7 +11,7 @@ For `r ≥ 1` and `1 ≤ m ≤ r + 1`, `det T_{m,n}^{(r)} > 0` for all sufficien
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ lean: MetaMathlibExt.iteratedPartialSum
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seeded Partial Sums](seeded-partial-sums.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.WeightedSchreierWanted](../../../../../../../sources/v2/WantedExt.md)

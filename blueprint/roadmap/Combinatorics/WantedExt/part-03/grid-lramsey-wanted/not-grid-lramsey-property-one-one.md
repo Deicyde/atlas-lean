@@ -12,7 +12,7 @@ The `1 × 1` grid has no L at all.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grid LRamsey Property](grid-lramsey-property.md)
 
 ## Sources
 

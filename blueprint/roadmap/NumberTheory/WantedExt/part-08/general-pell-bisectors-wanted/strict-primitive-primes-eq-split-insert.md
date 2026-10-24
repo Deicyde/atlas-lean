@@ -14,7 +14,7 @@ If `d ≡ 5 (mod 8)` and the fundamental unit `η` of `ℚ(√d)` does not lie i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Primitive Primes](strict-primitive-primes.md)
 
 ## Sources
 

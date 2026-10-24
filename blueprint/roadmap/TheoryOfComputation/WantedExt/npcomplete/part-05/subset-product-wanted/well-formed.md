@@ -11,7 +11,7 @@ Well-formedness of an instance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subset Product Instance](subset-product-instance.md)
 
 ## Sources
 

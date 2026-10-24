@@ -15,7 +15,8 @@ Göbel Sequences*, Journal of Integer Sequences 29 (2026), Article 26.3.8, Propo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Zigzag Below](is-zigzag-below.md)
+- [Gobel Residue Walk](gobel-residue-walk.md)
 
 ## Sources
 

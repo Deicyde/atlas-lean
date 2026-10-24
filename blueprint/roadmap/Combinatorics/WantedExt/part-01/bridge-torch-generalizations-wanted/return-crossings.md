@@ -14,6 +14,10 @@ The returns (right to left) of a schedule: its crossings at odd positions
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Forward Crossings](forward-crossings.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BridgeTorchGeneralizationsWanted](../../../../../sources/v2/WantedExt.md)

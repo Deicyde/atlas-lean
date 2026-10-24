@@ -12,7 +12,7 @@ lean: MetaMathlibExt.okounkovQMZV_nil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Okounkov QMZV](okounkov-qmzv.md)
 
 ## Sources
 

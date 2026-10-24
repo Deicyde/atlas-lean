@@ -13,6 +13,10 @@ The new-information zone `NIZ_k = CST_k \ CST_{k-1}` of the towers of order `k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zeck CST](zeck-cst.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ZeckendorfDigitSumVariationWanted](../../../../../sources/v2/WantedExt.md)

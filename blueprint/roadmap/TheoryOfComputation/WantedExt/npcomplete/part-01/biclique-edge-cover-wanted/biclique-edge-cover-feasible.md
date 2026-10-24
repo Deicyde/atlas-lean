@@ -11,7 +11,7 @@ At most `K` bicliques covering all edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Biclique Edge Cover Instance](biclique-edge-cover-instance.md)
 
 ## Sources
 

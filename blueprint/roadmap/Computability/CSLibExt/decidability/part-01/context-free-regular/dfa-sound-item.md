@@ -12,7 +12,14 @@ to `q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [To DFA](../../../automata/da/encoded-dfa/to-dfa.md)
+- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Yields](../../../languages/context-free/part-02/yields/yields.md)
 
 ## Sources
 

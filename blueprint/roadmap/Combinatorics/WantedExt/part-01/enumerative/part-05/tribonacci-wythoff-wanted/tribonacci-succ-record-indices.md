@@ -17,7 +17,9 @@ used by a negative record lies in `Q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tribonacci Repr](is-tribonacci-repr.md)
+- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
+- [Tribonacci Value](tribonacci-value.md)
 
 ## Sources
 

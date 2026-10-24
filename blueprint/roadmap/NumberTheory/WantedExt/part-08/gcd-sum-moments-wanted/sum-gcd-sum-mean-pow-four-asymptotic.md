@@ -12,7 +12,7 @@ lean: MetaMathlibExt.sum_gcdSumMean_pow_four_asymptotic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gcd Sum Mean](gcd-sum-mean.md)
 
 ## Sources
 

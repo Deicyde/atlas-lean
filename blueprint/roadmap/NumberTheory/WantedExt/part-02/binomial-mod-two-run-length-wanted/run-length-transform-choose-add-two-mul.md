@@ -12,7 +12,7 @@ of `1, 2, 2, 2, …`, the sequence of `2`s prepended with a `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run Length Transform](run-length-transform.md)
 
 ## Sources
 

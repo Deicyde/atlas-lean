@@ -13,7 +13,11 @@ noncrossing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
+
+## Proof depends on
+
+- [Merged Has Crossing](merged-has-crossing.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ largest Viterbi variable at time `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain CRF](chain-crf.md)
+- [Path Weight](path-weight.md)
+- [Viterbi](viterbi.md)
+
+## Proof depends on
+
+- [Exists path Weight eq viterbi](exists-path-weight-eq-viterbi.md)
+- [Path Weight le viterbi](path-weight-le-viterbi.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ ring.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padovan Perrin Fundamental](padovan-perrin-fundamental.md)
 
 ## Sources
 

@@ -13,7 +13,10 @@ lean: Cslib.Databases.Derives.sound
 
 ## Depends on
 
-This node has no prerequisites.
+- [Derives](derives.md)
+- [FD](fd.md)
+- [Holds In](holds-in.md)
+- [Satisfies](satisfies.md)
 
 ## Sources
 

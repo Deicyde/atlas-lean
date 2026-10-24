@@ -12,7 +12,14 @@ NP-hardness transfers along a polynomial-time many-one reduction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Many One Red](../../../../cook-levin/poly-many-one-red.md)
+- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [NP](../../../../../MathlibExt/complexity/np.md)
+
+## Proof depends on
+
+- [Poly Many One Red trans](poly-many-one-red-trans.md)
 
 ## Sources
 

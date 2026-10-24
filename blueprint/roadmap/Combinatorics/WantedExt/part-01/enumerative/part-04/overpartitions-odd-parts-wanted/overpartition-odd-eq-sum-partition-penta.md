@@ -12,7 +12,7 @@ Overpartitions into odd parts from partitions: for `n ≥ 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ lean: MetaMathlibExt.schreierAvoidingMultiplesCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Schreier](../schreier-type-sets-wanted/is-schreier.md)
+- [First Non Multiples](first-non-multiples.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.SchreierTypeMultisetsWanted](../../../../../../../sources/v2/WantedExt.md)

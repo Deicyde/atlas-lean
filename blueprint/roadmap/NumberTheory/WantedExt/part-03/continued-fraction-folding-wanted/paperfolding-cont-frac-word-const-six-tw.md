@@ -13,7 +13,7 @@ paper's expansion of `6 ∑ 12^(-2^k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Paperfolding Cont Frac Word](paperfolding-cont-frac-word.md)
 
 ## Sources
 

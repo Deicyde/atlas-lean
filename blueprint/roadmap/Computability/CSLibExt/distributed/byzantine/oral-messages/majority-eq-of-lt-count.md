@@ -12,7 +12,7 @@ A value that fills more than half of a multiset is its majority.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Majority](majority.md)
 
 ## Sources
 

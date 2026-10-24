@@ -12,7 +12,12 @@ nullable nonterminals, except empty ones.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded CFG](../encoded/encoded-cfg.md)
+
+## Proof depends on
+
+- [Deletions](deletions.md)
+- [Nullable](nullable.md)
 
 ## Sources
 

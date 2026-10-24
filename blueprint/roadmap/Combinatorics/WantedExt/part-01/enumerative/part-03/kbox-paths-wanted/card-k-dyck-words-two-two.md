@@ -12,7 +12,7 @@ There are three `2`-Dyck paths of size `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Dyck Words](k-dyck-words.md)
 
 ## Sources
 

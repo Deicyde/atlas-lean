@@ -17,7 +17,8 @@ formula gives `2`; and `L(∅; 0) = κ_0 = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer Lower](lehmer-lower.md)
+- [Lehmer Upper](lehmer-upper.md)
 
 ## Sources
 

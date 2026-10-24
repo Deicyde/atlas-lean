@@ -14,7 +14,7 @@ together with `R_{-5} = 4 = R_{-3} ^ 2 = R_{-6} ^ 2 = R_{-20} ^ 2` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perrin Neg](perrin-neg.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Recognition can be stated using equality with the inverse image of the accepting
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recognizes](recognizes.md)
 
 ## Sources
 

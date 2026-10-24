@@ -11,7 +11,12 @@ Equivalence test: every reachable pair of states agrees on acceptance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
+
+## Proof depends on
+
+- [Pair Reachable](pair-reachable.md)
+- [Mem B](../../part-01/primrec-list/mem-b.md)
 
 ## Sources
 

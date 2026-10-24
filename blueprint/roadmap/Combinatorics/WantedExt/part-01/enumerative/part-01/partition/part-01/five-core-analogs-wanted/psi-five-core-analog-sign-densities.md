@@ -13,7 +13,8 @@ Corollary 6: among the positive integers, `b̄_5(n)` is `0` with lower density a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Psi Five Core Analog](psi-five-core-analog.md)
+- [Lower Density](../../../../../../../../Data/MathlibExt/set/density/lower-density.md)
 
 ## Sources
 

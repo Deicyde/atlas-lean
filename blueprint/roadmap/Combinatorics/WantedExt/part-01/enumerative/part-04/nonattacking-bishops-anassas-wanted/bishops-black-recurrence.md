@@ -12,7 +12,7 @@ Equation (2): `R_K(m, k) = R_K(m-1, k) + (m - k + 1 - π(m)) R_K(m-1, k-1)` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bishops Black](bishops-black.md)
 
 ## Sources
 

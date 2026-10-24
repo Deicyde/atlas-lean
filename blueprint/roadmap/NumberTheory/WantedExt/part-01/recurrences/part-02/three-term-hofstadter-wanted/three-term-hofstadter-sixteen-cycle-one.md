@@ -20,7 +20,7 @@ Corrected: the paper prints `B(K+16k+12) = μ₂ 2^k`, which contradicts its own
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Term Hofstadter Term](three-term-hofstadter-term.md)
 
 ## Sources
 

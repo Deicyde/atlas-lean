@@ -14,6 +14,10 @@ sample `D`, in bits.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cross Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/cross-entropy.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.MachineLearning.InformationTheory.LogLoss](../../../../../../sources/v2/CSLibExt.md)

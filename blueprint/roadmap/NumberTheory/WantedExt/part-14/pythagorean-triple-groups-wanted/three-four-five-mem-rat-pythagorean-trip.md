@@ -12,7 +12,7 @@ lean: MetaMathlibExt.three_four_five_mem_ratPythagoreanTriples
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rat Pythagorean Triples](rat-pythagorean-triples.md)
 
 ## Sources
 

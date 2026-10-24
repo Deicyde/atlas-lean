@@ -13,7 +13,14 @@ represented by appending the input letter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimized DFA](minimized-dfa.md)
+- [Minimized State](minimized-state.md)
+- [Reachable Residuals](../minimality/reachable-residuals.md)
+
+## Proof depends on
+
+- [Left Quotient accepts From](left-quotient-accepts-from.md)
+- [Minimized DFA step val](minimized-dfa-step-val.md)
 
 ## Sources
 

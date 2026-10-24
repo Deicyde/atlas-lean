@@ -12,7 +12,9 @@ Membership in the image language unfolds to its four conditions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dumont Thomas Language](dumont-thomas-language.md)
+- [Last Letter Digits](last-letter-digits.md)
+- [Seed Automaton](seed-automaton.md)
 
 ## Sources
 

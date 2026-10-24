@@ -12,7 +12,7 @@ Gates of `p` keep their values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Append Gates](append-gates.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ A proper edge coloring with at most `K` colors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Coloring Instance](edge-coloring-instance.md)
 
 ## Sources
 

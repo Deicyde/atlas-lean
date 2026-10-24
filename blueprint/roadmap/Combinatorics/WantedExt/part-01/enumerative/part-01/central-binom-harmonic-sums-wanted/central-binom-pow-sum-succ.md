@@ -12,7 +12,7 @@ The partial-sum step: adding the term `k = n + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binom Pow Sum](central-binom-pow-sum.md)
 
 ## Sources
 

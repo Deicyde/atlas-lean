@@ -11,7 +11,7 @@ If a union is large, at least one of its two summands is large.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Large](is-large.md)
 
 ## Sources
 

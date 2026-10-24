@@ -12,7 +12,7 @@ Characterization of a positive lacunary sequence and its ratio witness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lacunary](is-lacunary.md)
 
 ## Sources
 

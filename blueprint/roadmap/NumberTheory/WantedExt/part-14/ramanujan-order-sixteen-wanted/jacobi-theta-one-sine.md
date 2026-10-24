@@ -14,6 +14,10 @@ The Jacobi theta function `θ₁(z | τ)` of Equation (11), restricted to the up
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jacobi Theta One Sine Raw](jacobi-theta-one-sine-raw.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.RamanujanOrderSixteenWanted](../../../../../sources/v2/WantedExt.md)

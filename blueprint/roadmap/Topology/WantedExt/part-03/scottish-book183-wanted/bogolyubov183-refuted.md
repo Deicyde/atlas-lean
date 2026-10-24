@@ -16,7 +16,7 @@ Problem 183 of the Scottish Book; see the commentary in R. D. Mauldin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scottish Book Problem183 Claim](scottish-book-problem183-claim.md)
 
 ## Sources
 

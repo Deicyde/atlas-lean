@@ -13,6 +13,10 @@ lean: MetaMathlibExt.maxSumFreeCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Sum Free Set](is-sum-free-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Additive.SumFreeAbelianGroupsWanted](../../../../../../sources/v2/WantedExt.md)

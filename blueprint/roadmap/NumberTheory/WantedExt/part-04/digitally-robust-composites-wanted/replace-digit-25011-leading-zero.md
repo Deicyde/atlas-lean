@@ -14,7 +14,7 @@ and has no encoding deviation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Replace Digit](replace-digit.md)
 
 ## Sources
 

@@ -13,7 +13,17 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.incomplete_lt_depth
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dag](../brent/dag.md)
+- [Schedule](../brent/schedule.md)
+- [Greedy](greedy.md)
+- [Incomplete](incomplete.md)
+- [Depth](../brent/depth.md)
+
+## Proof depends on
+
+- [Ready](ready.md)
+- [Load](load.md)
+- [Depth lt of mem](../brent/depth-lt-of-mem.md)
 
 ## Sources
 

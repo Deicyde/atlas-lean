@@ -12,7 +12,7 @@ lean: MetaMathlibExt.degenerateHarmonicTerm_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degenerate Harmonic Term](degenerate-harmonic-term.md)
 
 ## Sources
 

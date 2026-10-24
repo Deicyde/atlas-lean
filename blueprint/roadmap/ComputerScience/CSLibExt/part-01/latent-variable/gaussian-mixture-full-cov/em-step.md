@@ -12,7 +12,22 @@ position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Spans Affinely](spans-affinely.md)
+- [Valid Params](valid-params.md)
+
+## Proof depends on
+
+- [Is Dist posterior](../expectation-maximization/is-dist-posterior.md)
+- [Marginal](../expectation-maximization/marginal.md)
+- [Posterior](../expectation-maximization/posterior.md)
+- [Params](params.md)
+- [Valid](valid.md)
+- [Joint](joint.md)
+- [M Step](m-step.md)
+- [Mass](mass.md)
+- [The covariance update is positive definite](new-cov-pos-def.md)
+- [Resp](resp.md)
+- [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ lean: Cslib.Databases.synthesize
 
 ## Depends on
 
-This node has no prerequisites.
+- [FD](../functional-dependencies/fd.md)
 
 ## Sources
 

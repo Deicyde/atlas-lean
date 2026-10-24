@@ -15,7 +15,7 @@ already proved as `MetaMathlibExt.exists_isPrimitiveDivisor_fib`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Prime Divisor](../../../../../MathlibExt/part-10/primitive-divisor/is-primitive-prime-divisor.md)
 
 ## Sources
 

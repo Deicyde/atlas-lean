@@ -16,6 +16,11 @@ and ends in the state `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Mother Graph Edge](is-mother-graph-edge.md)
+- [Hoey Sloane Carry](hoey-sloane-carry.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.PermutipleWanted](../../../../../../sources/v2/WantedExt.md)

@@ -14,7 +14,7 @@ absolutely and is holomorphic for `Re s > 1/2`, and `H(1) ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Split Divisors](square-split-divisors.md)
 
 ## Sources
 

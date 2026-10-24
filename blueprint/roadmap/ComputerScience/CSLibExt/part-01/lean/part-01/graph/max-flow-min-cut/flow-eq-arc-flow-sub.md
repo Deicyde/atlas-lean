@@ -12,7 +12,8 @@ A skew-symmetric flow is the difference of its arc flow in the two directions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../edmonds-karp/flow.md)
+- [Arc Flow](arc-flow.md)
 
 ## Sources
 

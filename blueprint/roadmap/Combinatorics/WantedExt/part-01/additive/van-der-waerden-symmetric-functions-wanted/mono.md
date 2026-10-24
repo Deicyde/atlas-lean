@@ -12,7 +12,7 @@ Being `m`-vanishing is inherited by every smaller `m'`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MVanishing Family](is-mvanishing-family.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ hypothesis ensures the intended positive case.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Overpartition Count](regular-overpartition-count.md)
 
 ## Sources
 

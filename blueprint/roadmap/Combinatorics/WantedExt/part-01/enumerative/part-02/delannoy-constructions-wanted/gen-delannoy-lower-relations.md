@@ -13,7 +13,7 @@ The four relationship identities for `D_k` (`k ≥ 1`, `m, n ≥ k`):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Delannoy Lower](gen-delannoy-lower.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ permuted word need not be a Stirling permutation).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Stirling Total Displacement](stirling-total-displacement.md)
 
 ## Sources
 

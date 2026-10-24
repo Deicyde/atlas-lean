@@ -14,6 +14,10 @@ The generalized hyper-Fibonacci numbers `W_{p,n}^{(r)}`: `W_{p,n}^{(0)} = W_{p,n
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized PFibonacci](generalized-pfibonacci.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.LinearAlgebra.TotallyPositiveInitialMinorsWanted](../../../../sources/v2/WantedExt.md)

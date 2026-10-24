@@ -13,7 +13,7 @@ is a Dirichlet density in the remaining coordinates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet Density](dirichlet-density.md)
 
 ## Sources
 

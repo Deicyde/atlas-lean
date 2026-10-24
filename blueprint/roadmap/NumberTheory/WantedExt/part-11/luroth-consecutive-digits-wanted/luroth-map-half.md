@@ -12,7 +12,12 @@ lean: MetaMathlibExt.lurothMap_half
 
 ## Depends on
 
-This node has no prerequisites.
+- [Luroth Map](luroth-map.md)
+
+## Proof depends on
+
+- [Luroth Digit](luroth-digit.md)
+- [Luroth Digit half](luroth-digit-half.md)
 
 ## Sources
 

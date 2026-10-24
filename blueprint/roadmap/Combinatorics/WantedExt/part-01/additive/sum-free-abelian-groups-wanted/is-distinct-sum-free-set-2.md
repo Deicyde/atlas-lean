@@ -12,7 +12,8 @@ A sum-free set is distinct sum-free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Distinct Sum Free Set](is-distinct-sum-free-set.md)
+- [Is Sum Free Set](is-sum-free-set.md)
 
 ## Sources
 

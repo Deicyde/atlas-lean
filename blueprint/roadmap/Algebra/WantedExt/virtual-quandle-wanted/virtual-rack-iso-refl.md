@@ -13,7 +13,7 @@ particular virtual rack isomorphism is reflexive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Virtual Rack Iso](virtual-rack-iso.md)
 
 ## Sources
 
