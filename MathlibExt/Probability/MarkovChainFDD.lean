@@ -310,7 +310,7 @@ kernel `κ`, then the finite-dimensional probabilities are given by
 
   `P(X i ∈ A i, 0 ≤ i ≤ n) = ∫_{A 0} μ(dx₀) ∫_{A 1} κ(x₀, dx₁) ⋯ ∫_{A n} κ(x_{n-1}, dx_n)`.
 
-This is the user-facing wrapper around `markov_chain_fdd`. -/
+-/
 theorem markov_chain_finite_dimensional_distributions
     {Omega S : Type*} [MeasurableSpace Omega] [MeasurableSpace S]
     (P : Measure Omega) [IsProbabilityMeasure P]
