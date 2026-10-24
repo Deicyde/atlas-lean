@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import MathlibExt.Analysis.ODE.GlobalPicardExistence
+import MathlibExt.Analysis.ODE.MaximalSolution
 public import Mathlib.Analysis.Calculus.Deriv.Add
 public import Mathlib.Analysis.Calculus.Deriv.Basic
 public import Mathlib.Analysis.Calculus.Deriv.Mul
@@ -160,10 +161,21 @@ private theorem exists_solution {Vext c : ℝ → ℝ} (hV : Continuous Vext) (h
       ContDiffOn ℝ 2 u (Set.Icc 0 1) := by
   set K : ℝ≥0 := ⟨max 1 MV, by positivity⟩ with hKdef
   have hK : (K : ℝ) = max 1 MV := rfl
-  obtain ⟨Y, hYcont, hY0, hYeq⟩ :=
-    MathlibExt.Analysis.ODE.GlobalPicardExistence.exists_integral_eq
-      (hv := lipschitz_sys hMV hMV0 hK) (hc := continuous_sys hV hc)
-      (hab := zero_le_one) (y₀ := y₀)
+  obtain ⟨Y, ⟨hY0, hYder⟩, _⟩ :=
+    MathlibExt.Analysis.ODE.MaximalSolutionWanted.ode_global_exists_of_global_lipschitz
+      (sys Vext c) 0 y₀ K (continuous_sys_uncurry hV hc) (lipschitz_sys hMV hMV0 hK)
+  have hYcont : Continuous Y :=
+    continuous_iff_continuousAt.mpr fun t => (hYder t).continuousAt
+  have hInt : ∀ t : ℝ, IntervalIntegrable (fun s => sys Vext c s (Y s)) volume 0 t :=
+    fun t => ((continuous_sys_uncurry hV hc).comp
+      (continuous_id.prodMk hYcont)).intervalIntegrable 0 t
+  have hYeq : ∀ t ∈ Set.Icc (0 : ℝ) 1,
+      Y t = y₀ + ∫ s in (0 : ℝ)..t, sys Vext c s (Y s) := by
+    intro t _
+    have hFTC := intervalIntegral.integral_eq_sub_of_hasDerivAt
+      (fun s _ => hYder s) (hInt t)
+    rw [hY0] at hFTC
+    rw [hFTC, add_comm, sub_add_cancel]
   set u : ℝ → ℝ := fun t => y₀.1 + ∫ s in (0 : ℝ)..t, (Y s).2 with hu_def
   set p : ℝ → ℝ := fun t => y₀.2 + ∫ s in (0 : ℝ)..t, (Vext s * u s - c s) with hp_def
   have hu_cont : Continuous u := by
@@ -176,9 +188,6 @@ private theorem exists_solution {Vext c : ℝ → ℝ} (hV : Continuous Vext) (h
     exact Continuous.add continuous_const
       (intervalIntegral.continuous_primitive
         (fun u' w' => ((hV.mul hu_cont).sub hc).intervalIntegrable u' w') 0)
-  have hInt : ∀ t : ℝ, IntervalIntegrable (fun s => sys Vext c s (Y s)) volume 0 t :=
-    fun t => ((continuous_sys_uncurry hV hc).comp
-      (continuous_id.prodMk hYcont)).intervalIntegrable 0 t
   have hYcomp1 : ∀ t ∈ Set.Icc (0 : ℝ) 1, u t = (Y t).1 := by
     intro t ht
     have hcomp : (∫ s in (0 : ℝ)..t, sys Vext c s (Y s)).1 =
