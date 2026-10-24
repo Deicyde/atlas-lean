@@ -8,21 +8,26 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.RingTheory.Localization.Ideal
-public import Mathlib.RingTheory.Spectrum.Maximal.Defs
-public import Mathlib.RingTheory.Spectrum.Prime.Defs
+public import MathlibExt.RingTheory.Localization.Submodule
 
 /-!
 # Ideals as intersections of their localizations
 
-An ideal of a commutative ring is the intersection of its localizations
-at the maximal ideals, and also the intersection of its localizations
-at the prime ideals. This is Corollary 2.7 of ATLAS `NumberTheoryI`,
-Section 2.3. The book states it for an integral domain; the proof uses
-only the colon-ideal argument, so it holds for any commutative ring.
+For an integral domain `A` with fraction field `K`, the image of an ideal
+of `A` in `K` is the intersection of its localizations at the maximal
+ideals, and also at the prime ideals. The intersections are submodules
+of the common field `K`, including when the ideal is `⊤`. This is
+Corollary 2.7 of ATLAS `NumberTheoryI`, Section 2.3, with the ambient
+space fixed by Proposition 2.6.
+
+The contraction criteria below hold for any commutative ring. They
+intersect the extensions after contracting back to `A`.
 
 ## Main results
 
+* `Ideal.eq_iInf_localizedAt_maximal` /
+  `Ideal.eq_iInf_localizedAt_prime`: the ideal image in its fraction
+  field equals the intersection of its localized images.
 * `Ideal.eq_iInf_comap_map_localization_maximal`: an ideal equals the
   intersection, over all maximal ideals, of the contractions of its
   extensions to the corresponding localizations.
@@ -38,9 +43,8 @@ namespace Ideal
 
 variable {A : Type*} [CommRing A]
 
-/-- An ideal equals the intersection of its localizations at the
-maximal ideals: `I` is the infimum, over all `𝔪 : MaximalSpectrum A`,
-of the contraction to `A` of `I` extended to `A_𝔪`. -/
+/-- An ideal equals the intersection of the contractions of its
+extensions at the maximal ideals. -/
 theorem eq_iInf_comap_map_localization_maximal (I : Ideal A) :
     (⨅ 𝔪 : MaximalSpectrum A,
       (I.map (algebraMap A (Localization 𝔪.asIdeal.primeCompl))).comap
@@ -65,9 +69,8 @@ theorem eq_iInf_comap_map_localization_maximal (I : Ideal A) :
     rw [Ideal.mem_comap]
     exact Ideal.mem_map_of_mem _ hxI
 
-/-- An ideal equals the intersection of its localizations at the
-prime ideals: `I` is the infimum, over all `𝔭 : PrimeSpectrum A`, of
-the contraction to `A` of `I` extended to `A_𝔭`. -/
+/-- An ideal equals the intersection of the contractions of its
+extensions at the prime ideals. -/
 theorem eq_iInf_comap_map_localization_prime (I : Ideal A) :
     (⨅ 𝔭 : PrimeSpectrum A,
       (I.map (algebraMap A (Localization 𝔭.asIdeal.primeCompl))).comap
@@ -83,8 +86,8 @@ theorem eq_iInf_comap_map_localization_prime (I : Ideal A) :
     rw [Ideal.mem_comap]
     exact Ideal.mem_map_of_mem _ hxI
 
-/-- The intersections of the localizations at the maximal ideals and
-at the prime ideals agree. -/
+/-- The intersections of localization contractions at the maximal
+ideals and at the prime ideals agree. -/
 theorem iInf_comap_map_localization_maximal_eq_prime (I : Ideal A) :
     (⨅ 𝔪 : MaximalSpectrum A,
       (I.map (algebraMap A (Localization 𝔪.asIdeal.primeCompl))).comap
@@ -94,5 +97,27 @@ theorem iInf_comap_map_localization_maximal_eq_prime (I : Ideal A) :
         (algebraMap A (Localization 𝔭.asIdeal.primeCompl))) := by
   rw [eq_iInf_comap_map_localization_maximal,
     eq_iInf_comap_map_localization_prime]
+
+/-- Corollary 2.7, maximal-ideal form: the image of `I` in the fraction
+field `K` equals the intersection of its localizations inside `K`.
+Membership in a localized image means that some denominator outside
+the maximal ideal scales the element into the image of `I`. -/
+theorem eq_iInf_localizedAt_maximal [IsDomain A] (K : Type*)
+    [Field K] [Algebra A K] [IsFractionRing A K] (I : Ideal A) :
+    (⨅ 𝔪 : MaximalSpectrum A,
+      (Submodule.map (Algebra.linearMap A K) I).localizedAt
+        𝔪.asIdeal.primeCompl) =
+    Submodule.map (Algebra.linearMap A K) I :=
+  Submodule.eq_iInf_localizedAt_maximal _
+
+/-- Corollary 2.7, prime-ideal form: the image of `I` in the fraction
+field `K` equals the intersection of its localizations inside `K`. -/
+theorem eq_iInf_localizedAt_prime [IsDomain A] (K : Type*)
+    [Field K] [Algebra A K] [IsFractionRing A K] (I : Ideal A) :
+    (⨅ 𝔭 : PrimeSpectrum A,
+      (Submodule.map (Algebra.linearMap A K) I).localizedAt
+        𝔭.asIdeal.primeCompl) =
+    Submodule.map (Algebra.linearMap A K) I :=
+  Submodule.eq_iInf_localizedAt_prime _
 
 end Ideal

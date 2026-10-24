@@ -10,6 +10,7 @@ module
 
 public import MathlibExt.RingTheory.Localization.Ideal
 public import Mathlib.Data.Nat.Prime.Int
+public import Mathlib.RingTheory.Localization.Rat
 
 @[expose] public section
 
@@ -82,3 +83,55 @@ example (𝔪 : MaximalSpectrum ℤ) (h𝔪 : 𝔪.asIdeal = Ideal.span {(2 : �
       norm_num
     · obtain ⟨c, hc⟩ := hx
       exact ⟨c, by rw [hc]; ring⟩
+
+/-- The maximal intersection of `(6)` is taken inside `ℚ`. -/
+example : (⨅ 𝔪 : MaximalSpectrum ℤ,
+    (Submodule.map (Algebra.linearMap ℤ ℚ)
+      (Ideal.span {(6 : ℤ)})).localizedAt 𝔪.asIdeal.primeCompl) =
+    Submodule.map (Algebra.linearMap ℤ ℚ) (Ideal.span {(6 : ℤ)}) :=
+  Ideal.eq_iInf_localizedAt_maximal ℚ _
+
+/-- The prime intersection of `(6)` is taken inside `ℚ`. -/
+example : (⨅ 𝔭 : PrimeSpectrum ℤ,
+    (Submodule.map (Algebra.linearMap ℤ ℚ)
+      (Ideal.span {(6 : ℤ)})).localizedAt 𝔭.asIdeal.primeCompl) =
+    Submodule.map (Algebra.linearMap ℤ ℚ) (Ideal.span {(6 : ℤ)}) :=
+  Ideal.eq_iInf_localizedAt_prime ℚ _
+
+/-- At the unit ideal, the maximal intersection recovers embedded `ℤ`. -/
+example : (⨅ 𝔪 : MaximalSpectrum ℤ,
+    (Submodule.map (Algebra.linearMap ℤ ℚ)
+      (⊤ : Ideal ℤ)).localizedAt 𝔪.asIdeal.primeCompl) =
+    (1 : Submodule ℤ ℚ) := by
+  simpa only [Submodule.map_top, Submodule.one_eq_range] using
+    Ideal.eq_iInf_localizedAt_maximal ℚ (⊤ : Ideal ℤ)
+
+/-- At the unit ideal, the prime intersection recovers embedded `ℤ`. -/
+example : (⨅ 𝔭 : PrimeSpectrum ℤ,
+    (Submodule.map (Algebra.linearMap ℤ ℚ)
+      (⊤ : Ideal ℤ)).localizedAt 𝔭.asIdeal.primeCompl) =
+    (1 : Submodule ℤ ℚ) := by
+  simpa only [Submodule.map_top, Submodule.one_eq_range] using
+    Ideal.eq_iInf_localizedAt_prime ℚ (⊤ : Ideal ℤ)
+
+/-- A noninteger rational is excluded from the unit-ideal intersection. -/
+example : (1 / 2 : ℚ) ∉ (⨅ 𝔪 : MaximalSpectrum ℤ,
+    (Submodule.map (Algebra.linearMap ℤ ℚ)
+      (⊤ : Ideal ℤ)).localizedAt 𝔪.asIdeal.primeCompl) := by
+  rw [Ideal.eq_iInf_localizedAt_maximal ℚ (⊤ : Ideal ℤ)]
+  intro h
+  obtain ⟨z, _, hz⟩ := Submodule.mem_map.mp h
+  change (z : ℚ) = 1 / 2 at hz
+  have h2 : (2 : ℚ) * (z : ℚ) = 1 := by
+    rw [hz]
+    norm_num
+  have h2int : (2 : ℤ) * z = 1 := by exact_mod_cast h2
+  omega
+
+/-- `6` lies in the prime intersection of `(6)` inside `ℚ`. -/
+example : (6 : ℚ) ∈ (⨅ 𝔭 : PrimeSpectrum ℤ,
+    (Submodule.map (Algebra.linearMap ℤ ℚ)
+      (Ideal.span {(6 : ℤ)})).localizedAt 𝔭.asIdeal.primeCompl) := by
+  rw [Ideal.eq_iInf_localizedAt_prime ℚ (Ideal.span {(6 : ℤ)})]
+  exact Submodule.mem_map.mpr
+    ⟨6, Ideal.mem_span_singleton_self 6, by norm_num⟩
