@@ -22,6 +22,7 @@ public import Mathlib.RepresentationTheory.Character
 public import Mathlib.RepresentationTheory.Irreducible
 public import Mathlib.RingTheory.IntegralClosure.IntegrallyClosed
 public import Mathlib.RingTheory.IntegralClosure.IsIntegral.Basic
+import Mathlib.LinearAlgebra.Matrix.Charpoly.Eigs
 import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.Group
 import Mathlib.Tactic.Linarith
