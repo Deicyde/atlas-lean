@@ -19,7 +19,8 @@ The point group preserves the translation lattice (trivial and whole-group
 cases), conjugation of a translation is translation by the transported
 vector, and the classification of discrete additive subgroups of the plane
 applies to the trivial subgroup, to cyclic subgroups, and to arbitrary
-discrete subgroups.
+discrete subgroups. The source separation criterion and classification bridge
+are exercised on trivial and nontrivial cyclic plane-translation groups.
 -/
 
 @[expose] public section
@@ -91,5 +92,103 @@ example (a b : E2) (h : LinearIndependent ℝ ![a, b])
     (∃ a' b' : E2, LinearIndependent ℝ ![a', b'] ∧
       G = AddSubgroup.zmultiples a' ⊔ AddSubgroup.zmultiples b') :=
   Or.inr (Or.inr ⟨a, b, h, hG⟩)
+
+example (G : Subgroup M₂) {v w : E2}
+    (hv : v ∈ translationLattice G) (hw : w ∈ translationLattice G) :
+    v + w ∈ translationLattice G :=
+  (translationLatticeSubgroup G).add_mem hv hw
+
+example (G : Subgroup M₂) {v : E2} (hv : v ∈ translationLattice G) :
+    -v ∈ translationLattice G := (translationLatticeSubgroup G).neg_mem hv
+
+example (G : Subgroup M₂) : (0 : E2) ∈ translationLattice G :=
+  (translationLatticeSubgroup G).zero_mem
+
+/-- The trivial plane-isometry group meets the source criterion. -/
+private theorem isDiscrete_bot : IsDiscrete (⊥ : Subgroup M₂) := by
+  refine ⟨1, zero_lt_one, ?_, ?_⟩
+  · intro f hf hpure hne
+    exact False.elim (hne (Subgroup.mem_bot.mp hf))
+  · intro f hf hne
+    rw [Subgroup.mem_bot.mp hf] at hne
+    exact False.elim (hne rfl)
+
+private noncomputable def cyclicTranslationGroup (v : E2) : Subgroup M₂ :=
+  (AddSubgroup.zmultiples v).toSubgroup.map translationHom
+
+private theorem translationLatticeSubgroup_cyclicTranslationGroup (v : E2) :
+    translationLatticeSubgroup (cyclicTranslationGroup v) = AddSubgroup.zmultiples v := by
+  ext w
+  change translationHom (Multiplicative.ofAdd w) ∈
+      (AddSubgroup.zmultiples v).toSubgroup.map translationHom ↔
+    Multiplicative.ofAdd w ∈ (AddSubgroup.zmultiples v).toSubgroup
+  exact Subgroup.mem_map_iff_mem translationHom_injective
+
+private theorem isDiscrete_cyclicTranslationGroup (v : E2) (hv : v ≠ 0) :
+    IsDiscrete (cyclicTranslationGroup v) := by
+  refine ⟨‖v‖, norm_pos_iff.mpr hv, ?_, ?_⟩
+  · intro f hf hpure hne
+    obtain ⟨w, hw, rfl⟩ := Subgroup.mem_map.mp hf
+    have hw' : Multiplicative.toAdd w ∈ AddSubgroup.zmultiples v := hw
+    obtain ⟨n, hn⟩ := AddSubgroup.mem_zmultiples_iff.mp hw'
+    have hn0 : n ≠ 0 := by
+      intro h0
+      apply hne
+      apply AffineIsometryEquiv.ext
+      intro x
+      change Multiplicative.toAdd w + x = x
+      have hw0 : Multiplicative.toAdd w = 0 := by simpa [h0] using hn.symm
+      rw [hw0, zero_add]
+    have hnabs : (1 : ℝ) ≤ ‖(n : ℝ)‖ := by
+      rw [Real.norm_eq_abs]
+      exact_mod_cast Int.one_le_abs hn0
+    calc ‖v‖ = 1 * ‖v‖ := (one_mul _).symm
+      _ ≤ ‖(n : ℝ)‖ * ‖v‖ := mul_le_mul_of_nonneg_right hnabs (norm_nonneg _)
+      _ = ‖n • v‖ := (norm_zsmul ℝ n v).symm
+      _ = ‖translationHom w 0‖ := by rw [hn]; simp [translationHom]
+  · intro f hf hne
+    obtain ⟨w, hw, rfl⟩ := Subgroup.mem_map.mp hf
+    exact False.elim (hne (by ext x; rfl))
+
+private theorem cyclicTranslationGroup_ne_bot (v : E2) (hv : v ≠ 0) :
+    cyclicTranslationGroup v ≠ ⊥ := by
+  intro hbot
+  have hv' : Multiplicative.ofAdd v ∈ (AddSubgroup.zmultiples v).toSubgroup := by
+    change v ∈ AddSubgroup.zmultiples v
+    exact AddSubgroup.mem_zmultiples_iff.mpr ⟨1, by simp⟩
+  have hmem := Subgroup.mem_map_of_mem translationHom hv'
+  have hid : translationHom (Multiplicative.ofAdd v) = 1 := by
+    apply Subgroup.mem_bot.mp
+    rw [← hbot]
+    exact hmem
+  have hzero := congrArg (fun f : M₂ => f 0) hid
+  exact hv (by simpa [translationHom] using hzero)
+
+example (v : E2) (hv : v ≠ 0) :
+    DiscreteTopology (translationLatticeSubgroup (cyclicTranslationGroup v)) :=
+  translationLatticeSubgroup_discreteTopology _ (isDiscrete_cyclicTranslationGroup v hv)
+
+/-- The claimed corollary is callable for the trivial plane-isometry group. -/
+example : translationLatticeSubgroup (⊥ : Subgroup M₂) = ⊥ ∨
+    (∃ α : E2, α ≠ 0 ∧ translationLatticeSubgroup (⊥ : Subgroup M₂) =
+      AddSubgroup.zmultiples α) ∨
+    (∃ a b : E2, LinearIndependent ℝ ![a, b] ∧
+      translationLatticeSubgroup (⊥ : Subgroup M₂) =
+        AddSubgroup.zmultiples a ⊔ AddSubgroup.zmultiples b) :=
+  translation_lattice_classification ⊥ isDiscrete_bot
+
+/-- It is also callable for a nontrivial cyclic plane-translation group. -/
+example (v : E2) (hv : v ≠ 0) : translationLatticeSubgroup (cyclicTranslationGroup v) = ⊥ ∨
+    (∃ α : E2, α ≠ 0 ∧ translationLatticeSubgroup (cyclicTranslationGroup v) =
+      AddSubgroup.zmultiples α) ∨
+    (∃ a b : E2, LinearIndependent ℝ ![a, b] ∧
+      translationLatticeSubgroup (cyclicTranslationGroup v) =
+        AddSubgroup.zmultiples a ⊔ AddSubgroup.zmultiples b) :=
+  translation_lattice_classification _ (isDiscrete_cyclicTranslationGroup v hv)
+
+#print axioms isDiscrete_bot
+#print axioms translationLatticeSubgroup_cyclicTranslationGroup
+#print axioms isDiscrete_cyclicTranslationGroup
+#print axioms cyclicTranslationGroup_ne_bot
 
 end MathlibExtTest.Geometry.Euclidean.DiscreteGroups
