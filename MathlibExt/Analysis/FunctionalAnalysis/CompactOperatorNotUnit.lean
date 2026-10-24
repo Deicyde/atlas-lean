@@ -23,8 +23,8 @@ namespace MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorNotUnit
 A compact operator on an infinite-dimensional normed space cannot be a unit
 of the bounded-operator algebra: if it were, composing with its inverse
 would make the identity operator compact, and the identity is compact only
-on finite-dimensional spaces. In particular such an operator is not
-bijective, and `0` lies in its spectrum.
+on finite-dimensional spaces. Consequently `0` lies in its spectrum.
+On a Banach space, such an operator is also not bijective.
 
 This is not in the pinned Mathlib: Mathlib has the Fredholm alternative for
 compact operators (`IsCompactOperator.hasEigenvalue_iff_mem_spectrum`, which
@@ -36,13 +36,11 @@ MathlibExt's Lomonosov file uses the same identity-compact step inside a
 private proof (a nonzero compact operator is not a scalar), but does not
 state this consequence.
 
-Source: `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`,
-`SpectralTheory.fredholm_alternative_full` (Theorem (Fredholm alternative))
-and `v1/Atlas/IntroductionToFunctionalAnalysis/code/OpenMapping.lean`,
-`OpenMapping.bijective_bounded_inverse` (Corollary). The v1 Fredholm
-alternative is itself a Mathlib lemma and is not re-ported; the
-non-invertibility conclusion drawn here from it (via the identity-compact
-argument) is not stated in v1 or in the pinned Mathlib.
+The proof is an independent consequence of compactness under composition
+and compactness of the identity in Mathlib. For the Banach-space corollary,
+bounded-inverse provenance is
+`v1/Atlas/IntroductionToFunctionalAnalysis/code/OpenMapping.lean`,
+`OpenMapping.bijective_bounded_inverse` (Corollary).
 -/
 
 variable {𝕜 E : Type*} [RCLike 𝕜] [NormedAddCommGroup E] [NormedSpace 𝕜 E]
