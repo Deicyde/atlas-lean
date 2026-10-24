@@ -102,4 +102,7 @@ example : {μ : ℝ | Module.End.HasEigenvalue
   rw [h]
   norm_num
 
+#print axioms finite_eigenvalues_of_ge
+#print axioms tendsto_eigenvalue_of_injective
+
 end MathlibExtTest.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues

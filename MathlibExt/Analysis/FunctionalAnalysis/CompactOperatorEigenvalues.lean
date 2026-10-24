@@ -35,23 +35,20 @@ eigenvalues, but here the separation comes from Riesz's lemma, in the form
 of a unit vector in the span of the first `n + 1` eigenvectors that stays
 at distance at least `1 / 2` from the span of the first `n`.
 
-This generalizes the MathlibExt result for compact *self-adjoint* operators
-(`CompactSelfAdjointFiniteEigenvalues.finite_eigenvalues_of_ge`, Batch 13),
-which used orthogonality of eigenspaces. Mathlib itself has only the
-Fredholm alternative for compact operators
+Related Mathlib results are the Fredholm alternative on Banach spaces
 (`IsCompactOperator.hasEigenvalue_iff_mem_spectrum`, for nonzero values) and
-finiteness of each individual nonzero eigenspace
-(`ContinuousLinearMap.finite_dimensional_eigenspace`); neither states that
-the set of eigenvalues bounded away from zero is finite for a general
-compact operator, nor that an injective eigenvalue sequence tends to zero.
+finiteness of each individual nonzero eigenspace on complete inner-product
+spaces (`ContinuousLinearMap.finite_dimensional_eigenspace`). These do not
+directly give the two general normed-space results below.
 
-Source: `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`,
+Motivating source: `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`,
 `SpectralTheory.compact_selfAdjoint_maximum_principle`
-(Theorem (Maximum principle), May 11, 2021). The v1 maximum principle is
-for compact self-adjoint operators and its `|λₙ| → 0` conclusion is part of
-the full ordered eigenvalue sequence proved in Batch 18. The statement
-below is proved from scratch, drops self-adjointness entirely, and needs
-no completeness hypothesis on the space.
+(Theorem (Maximum principle), May 11, 2021). That statement concerns compact
+self-adjoint operators on Hilbert spaces and includes an ordered sequence
+with multiplicity, orthonormal eigenvectors, and a variational identity;
+its archived Lean proof is `sorry`. The two results below are proved from
+scratch and do not formalize that full existence statement. They apply
+without self-adjointness, inner-product structure, or completeness.
 -/
 
 variable {𝕜 : Type*} [RCLike 𝕜]
@@ -307,8 +304,5 @@ theorem tendsto_eigenvalue_of_injective {T : E →L[𝕜] E}
     rintro μ ⟨n, hn, rfl⟩
     exact ⟨hlam n, hn⟩
   exact (finite_eigenvalues_of_ge hc hε).subset hsub |>.not_infinite himg
-
-#print axioms finite_eigenvalues_of_ge
-#print axioms tendsto_eigenvalue_of_injective
 
 end MathlibExt.Analysis.FunctionalAnalysis.CompactOperatorEigenvalues
