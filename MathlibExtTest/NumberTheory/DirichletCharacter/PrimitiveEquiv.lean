@@ -23,12 +23,29 @@ namespace DirichletCharacter
 
 variable {R : Type*} [CommMonoidWithZero R] {m : ℕ} (hm : m ≠ 0)
 
-/-- The second source bijection evaluates the character induced to level `m`
-on units modulo `m`. -/
-example (p : PrimitiveInducer R m) (u : (ZMod m)ˣ) :
-    (PrimitiveInducer.equivUnitHom m hm p u : R) =
-      changeLevel p.level_dvd p.char (u : ZMod m) :=
-  PrimitiveInducer.equivUnitHom_apply p hm u
+/-- The nonidentity unit `2` modulo `3`, whose inverse is also `2`. -/
+private def unitTwoModThree : (ZMod 3)ˣ :=
+  ⟨2, 2, by decide, by decide⟩
+
+/-- The chosen unit is not the identity, so evaluation is not just `map_one`. -/
+example : unitTwoModThree ≠ 1 := by
+  intro h
+  have hval : (2 : ZMod 3) = 1 := congrArg Units.val h
+  exact (by decide : (2 : ZMod 3) ≠ 1) hval
+
+/-- The trivial modulus-`3` inducer evaluates to `1` at the nonidentity
+unit `2`. -/
+example :
+    (PrimitiveInducer.equivUnitHom 3 (by norm_num)
+      (equivPrimitiveInducer 3 (by norm_num) (1 : DirichletCharacter ℂ 3))
+      unitTwoModThree : ℂ) = 1 := by
+  change (MulChar.equivToUnitHom
+    ((equivPrimitiveInducer 3 (by norm_num)).symm
+      (equivPrimitiveInducer 3 (by norm_num) (1 : DirichletCharacter ℂ 3)))
+    unitTwoModThree : ℂ) = 1
+  rw [Equiv.symm_apply_apply]
+  exact (MulChar.coe_equivToUnitHom (1 : DirichletCharacter ℂ 3)
+    unitTwoModThree).trans (MulChar.one_apply_coe unitTwoModThree)
 
 /-- Round trip: inducing the primitive inducer of `χ` recovers `χ`. -/
 example (χ : DirichletCharacter R m) :
