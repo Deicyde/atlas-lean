@@ -256,7 +256,7 @@ measurable sets `A 0, …, A n`,
 
 This is the standard formula expressing the law of `(X 0, …, X n)` as an iterated integral
 against the initial distribution and the transition kernel. -/
-theorem markov_chain_fdd
+private theorem markov_chain_fdd
     {Omega S : Type*} [MeasurableSpace Omega] [MeasurableSpace S]
     (P : Measure Omega) [IsProbabilityMeasure P]
     (X : Nat -> Omega -> S) (hmeas : forall i, Measurable (X i))
