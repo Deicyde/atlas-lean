@@ -22,7 +22,8 @@ public import Mathlib.RingTheory.TensorProduct.Maps
 For a finite separable field extension `L / K` and a separably closed field
 `Ω` extending `K`, the base change `Ω ⊗[K] L` splits as a product of copies
 of `Ω` indexed by the `K`-algebra homomorphisms `L →ₐ[K] Ω`, with
-`β ⊗ 1` sent to the vector `(σ β)_σ`. This is the field case of ATLAS
+`1 ⊗ β` sent to the vector `(σ β)_σ`. The tensor factors are ordered
+opposite to the source's `L ⊗[K] Ω` formulation. This is the field case of ATLAS
 `NumberTheoryI` Proposition 4.43 (Section 4.2,
 `v1/Atlas/NumberTheoryI/targets.yaml`); the book states it for finite étale
 `K`-algebras, which are finite products of finite separable field
