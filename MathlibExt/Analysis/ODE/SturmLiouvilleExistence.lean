@@ -10,6 +10,8 @@ module
 
 public import MathlibExt.Analysis.ODE.GlobalPicardExistence
 import MathlibExt.Analysis.ODE.MaximalSolution
+import Mathlib.Analysis.ODE.ExistUnique
+import Mathlib.Analysis.Calculus.Deriv.Prod
 public import Mathlib.Analysis.Calculus.Deriv.Add
 public import Mathlib.Analysis.Calculus.Deriv.Basic
 public import Mathlib.Analysis.Calculus.Deriv.Mul
@@ -496,20 +498,26 @@ theorem sturm_liouville_existence
     · show pu₀ 0 + a * pw 0 = a
       rw [hpu00, hpw0]
       simp
-  have hYa := integral_eq_of_deriv hVext hfext huacont hpacont (0, a) hua0 hpa0 huader hpader
-  have hYsum := integral_eq_of_deriv hVext hfext
-    (show Continuous (fun t => u₀ t + a * w t) from hu0cont.add (hwcont.const_mul a))
-    (show Continuous (fun t => pu₀ t + a * pw t) from hpu0cont.add (hpwcont.const_mul a))
-    (0, a) hsum0.1 hsum0.2 husum_der hpsum_der
   have hY₁cont : ContinuousOn (fun s => (ua s, pa s)) (Set.Icc (0 : ℝ) 1) :=
     (huacont.prodMk hpacont).continuousOn
   have hY₂cont : ContinuousOn (fun s => (usum s, psum s)) (Set.Icc (0 : ℝ) 1) :=
     ((show Continuous (fun t => u₀ t + a * w t) from hu0cont.add (hwcont.const_mul a)).prodMk
       (show Continuous (fun t => pu₀ t + a * pw t) from
         hpu0cont.add (hpwcont.const_mul a))).continuousOn
-  have hEq := MathlibExt.Analysis.ODE.GlobalPicardExistence.eqOn_of_integral_eq
-    (hv := lipschitz_sys hMV hMV0 hK) (hc := continuous_sys hVext hfext)
-    (hab := zero_le_one) (hY₁ := hY₁cont) (hY₁eq := hYa) (hY₂ := hY₂cont) (hY₂eq := hYsum)
+  have hEq : Set.EqOn (fun s => (ua s, pa s)) (fun s => (usum s, psum s))
+      (Set.Icc (0 : ℝ) 1) :=
+    ODE_solution_unique_of_mem_Icc_right (v := sys Vext fext)
+      (s := fun _ => Set.univ) (K := K)
+      (fun t _ => (lipschitz_sys hMV hMV0 hK t).lipschitzOnWith)
+      hY₁cont
+      (fun t ht =>
+        (HasDerivAt.prodMk (huader t ⟨ht.1, ht.2.le⟩) (hpader t)).hasDerivWithinAt)
+      (fun _ _ => Set.mem_univ _)
+      hY₂cont
+      (fun t ht =>
+        (HasDerivAt.prodMk (husum_der t ⟨ht.1, ht.2.le⟩) (hpsum_der t)).hasDerivWithinAt)
+      (fun _ _ => Set.mem_univ _)
+      (Prod.ext (hua0.trans hsum0.1.symm) (hpa0.trans hsum0.2.symm))
   have hua1 : ua 1 = 0 := by
     have h := hEq (show (1 : ℝ) ∈ Set.Icc (0 : ℝ) 1 by norm_num)
     have h1 : ua 1 = usum 1 := congrArg Prod.fst h
