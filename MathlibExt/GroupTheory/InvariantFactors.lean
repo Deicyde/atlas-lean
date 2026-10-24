@@ -35,11 +35,20 @@ in invariant-factor form from `v1/Atlas/AlgebraNotes/code/AbelianGroups.lean`.
 
 ## Main results
 
-* `exists_invariant_factor_decomposition`: every finitely generated abelian
-  group is the product of a free abelian group and a finite product of cyclic
+* `AddCommGroup.equiv_free_prod_directSum_invariant_factors`: every finitely
+  generated abelian group is the product of a free abelian group and a finite product of cyclic
   groups `ZMod (d i)` with `1 < d i` and `d i ∣ d j` for `i ≤ j`.
-* `exists_invariant_factor_decomposition_finite`: the finite case, a product
-  of cyclic groups with invariant factors.
+* `AddCommGroup.equiv_directSum_invariant_factors_of_finite`: the finite case,
+  a product of cyclic groups with invariant factors.
+* `AddCommGroup.elementary_divisors_equiv_invariant_factors`: reorganize a finite
+  family of prime-power cyclic summands into invariant factors.
+
+The two source statements are those recorded in
+`WantedExt/GroupTheory/FiniteAbelian/InvariantFactors.lean`, from ATLAS commit
+`8de8f74fa5760eb8b768a9804494ca2ab631cf87`, lines 27–42 of the v1 source.
+Their proofs are completed here under the existing `AddCommGroup` names. Only
+the existence and divisibility clauses encoded in that Lean source are retained;
+no uniqueness claim or printed-source fidelity is asserted.
 
 The proof in v1 of the invariant-factor conversion
 (`elementary_divisors_to_invariant_factors`) is left unproved there; the proof
@@ -236,13 +245,15 @@ private theorem map_basisEquivFun_eq_pi {n r : ℕ} (hrm : r ≤ n)
           rwa [dite_eq_right hj] at h
         exact ((Submodule.mem_bot ℤ).mp hmem).symm
 
+namespace AddCommGroup
+
 /-- The fundamental theorem of finitely generated abelian groups, invariant
 factor form: every finitely generated abelian group is the product of a free
 abelian group and a finite product of cyclic groups `ZMod (d i)` with
 `1 < d i` and `d i ∣ d j` for `i ≤ j`. -/
-theorem exists_invariant_factor_decomposition (A : Type*) [AddCommGroup A]
+theorem equiv_free_prod_directSum_invariant_factors (A : Type*) [AddCommGroup A]
     [AddGroup.FG A] :
-    ∃ (a k : ℕ) (d : Fin k → ℕ),
+    ∃ (a : ℕ) (k : ℕ) (d : Fin k → ℕ),
       (∀ i, 1 < d i) ∧
       (∀ i j : Fin k, i ≤ j → d i ∣ d j) ∧
       Nonempty (A ≃+ (Fin a →₀ ℤ) × ⨁ i : Fin k, ZMod (d i)) := by
@@ -337,12 +348,12 @@ theorem exists_invariant_factor_decomposition (A : Type*) [AddCommGroup A]
 /-- The finite case of the invariant-factor decomposition: a finite abelian
 group is a product of cyclic groups `ZMod (d i)` with `1 < d i` and
 `d i ∣ d j` for `i ≤ j`. -/
-theorem exists_invariant_factor_decomposition_finite (A : Type*) [AddCommGroup A]
+theorem equiv_directSum_invariant_factors_of_finite (A : Type*) [AddCommGroup A]
     [Finite A] :
     ∃ (k : ℕ) (d : Fin k → ℕ),
       (∀ i, 1 < d i) ∧ (∀ i j : Fin k, i ≤ j → d i ∣ d j) ∧
       Nonempty (A ≃+ ⨁ i : Fin k, ZMod (d i)) := by
-  obtain ⟨a, k, d, hd1, hdvd, ⟨e⟩⟩ := exists_invariant_factor_decomposition A
+  obtain ⟨a, k, d, hd1, hdvd, ⟨e⟩⟩ := equiv_free_prod_directSum_invariant_factors A
   have ha0 : a = 0 := by
     by_contra ha
     have h0 : 0 < a := Nat.pos_of_ne_zero ha
@@ -359,3 +370,20 @@ theorem exists_invariant_factor_decomposition_finite (A : Type*) [AddCommGroup A
     (AddEquiv.prodComm.trans
       { (Equiv.prodUnique (⨁ i : Fin k, ZMod (d i)) (PUnit.{1})) with
         map_add' := by intro x y; rfl }))
+
+/-- Reorganize prime-power cyclic summands into a divisibility-ordered sequence of moduli.
+This completes the source's elementary-divisor conversion by applying the finite
+invariant-factor decomposition. Exponent zero is allowed, giving a trivial summand. -/
+theorem elementary_divisors_equiv_invariant_factors
+    (ι : Type*) [Fintype ι] (p : ι → ℕ) (hp : ∀ i, Nat.Prime (p i)) (e : ι → ℕ) :
+    ∃ (k : ℕ) (d : Fin k → ℕ),
+      (∀ i, 1 < d i) ∧
+      (∀ i j : Fin k, i ≤ j → d i ∣ d j) ∧
+      Nonempty ((⨁ i : ι, ZMod (p i ^ e i)) ≃+ (⨁ i : Fin k, ZMod (d i))) := by
+  classical
+  letI (i : ι) : NeZero (p i ^ e i) := ⟨pow_ne_zero _ (hp i).ne_zero⟩
+  letI : Finite (⨁ i : ι, ZMod (p i ^ e i)) :=
+    Finite.of_equiv (Π i : ι, ZMod (p i ^ e i)) (DirectSum.addEquivProd _).toEquiv.symm
+  exact equiv_directSum_invariant_factors_of_finite (⨁ i : ι, ZMod (p i ^ e i))
+
+end AddCommGroup
