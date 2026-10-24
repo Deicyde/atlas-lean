@@ -44,8 +44,9 @@ from `ℝ`-valued functions to functions valued in a normed space over `ℝ`,
 and the `1 ≤ p` hypothesis is kept, matching the book.
 -/
 
-/-- The piecewise-linear cutoff factor: `0` at `a` and `b`, rising linearly
-to `1` on `[a + δ, b - δ]`. -/
+/-- The clipped piecewise-linear cutoff factor, zero at `a` and `b`.
+For `δ > 0`, it equals `1` on `[a + δ, b - δ]`; this plateau is nonempty
+when `2 * δ ≤ b - a`. At `δ = 0`, the factor is identically zero. -/
 noncomputable def vanishingCutoff (a b δ : ℝ) (x : ℝ) : ℝ :=
   max 0 (min 1 (min ((x - a) / δ) ((b - x) / δ)))
 

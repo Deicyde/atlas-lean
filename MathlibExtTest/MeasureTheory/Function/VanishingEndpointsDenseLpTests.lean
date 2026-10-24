@@ -40,6 +40,10 @@ example : vanishingCutoff 0 1 (1 / 4 : ℝ) 1 = 0 := by
 example : vanishingCutoff 0 1 (1 / 4 : ℝ) (1 / 2 : ℝ) = 1 := by
   norm_num [vanishingCutoff]
 
+/-- Zero width gives the zero factor, including interior points. -/
+example (a b x : ℝ) : vanishingCutoff a b 0 x = 0 := by
+  simp [vanishingCutoff]
+
 /-- The constant function `1` on `[0, 1]` is approximated in `L^2` by a
 continuous function vanishing at both endpoints. -/
 example : ∃ g : ℝ → ℝ, Continuous g ∧ g 0 = 0 ∧ g 1 = 0 ∧
