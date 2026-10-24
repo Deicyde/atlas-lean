@@ -67,10 +67,8 @@ theorem test_exists_sparse_digits :
 `⟨b n, hb n⟩` at every place. -/
 theorem test_padicExpansion_of_exists (b : ℕ → ℕ) (hb : ∀ n, b n < p) :
     ∃ a : ℤ_[p], ∀ n, padicExpansion a n = ⟨b n, hb n⟩ := by
-  obtain ⟨a, ha⟩ := exists_padicDigit_eq b hb
-  refine ⟨a, fun n => ?_⟩
-  apply Fin.ext
-  rw [padicExpansion_val, ha n]
+  obtain ⟨a, ha⟩ := padicExpansion_surjective (fun n => ⟨b n, hb n⟩)
+  exact ⟨a, congrFun ha⟩
 
 /-- Finite reconstruction for a realization of `b`: its `n`-th approximation
 is the partial digit sum `∑ k < n, b k * p ^ k`. -/

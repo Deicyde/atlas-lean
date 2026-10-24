@@ -16,6 +16,8 @@ public import MathlibExt.NumberTheory.Padics.Digits
 Every `p`-adic integer has a unique `p`-adic expansion, and every sequence
 of digits in `[0, p - 1]` is the expansion of a `p`-adic integer. The digits
 are `PadicInt.padicDigit` from `MathlibExt/NumberTheory/Padics/Digits.lean`.
+The bundled expansion map `PadicInt.padicExpansion : ℤ_[p] → ℕ → Fin p`
+is bijective, as in ATLAS `NumberTheoryI` Proposition 8.17.
 -/
 
 @[expose] public section
@@ -127,5 +129,27 @@ theorem existsUnique_padicDigit_eq (b : ℕ → ℕ) (hb : ∀ n, b n < p) :
   obtain ⟨a, ha⟩ := exists_padicDigit_eq b hb
   exact ⟨a, ha, fun a' ha' =>
     eq_of_padicDigit_eq (fun n => (ha' n).trans (ha n).symm)⟩
+
+/-- Equal bundled expansions determine equal `p`-adic integers. -/
+theorem padicExpansion_injective :
+    Function.Injective (padicExpansion (p := p)) := by
+  intro a a' h
+  apply eq_of_padicDigit_eq
+  intro n
+  simpa only [padicExpansion_val] using
+    congrArg (fun f : ℕ → Fin p => (f n).val) h
+
+/-- Every `Fin p`-valued digit sequence is a bundled `p`-adic expansion. -/
+theorem padicExpansion_surjective :
+    Function.Surjective (padicExpansion (p := p)) := by
+  intro b
+  obtain ⟨a, ha⟩ := exists_padicDigit_eq (fun n => (b n).val)
+    (fun n => (b n).isLt)
+  exact ⟨a, funext fun n => Fin.ext (ha n)⟩
+
+/-- Proposition 8.17: the bundled `p`-adic expansion map is bijective. -/
+theorem padicExpansion_bijective :
+    Function.Bijective (padicExpansion (p := p)) :=
+  ⟨padicExpansion_injective, padicExpansion_surjective⟩
 
 end PadicInt
