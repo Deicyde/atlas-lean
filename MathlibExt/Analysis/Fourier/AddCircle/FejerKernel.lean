@@ -14,19 +14,19 @@ public import Mathlib.Analysis.Fourier.AddCircle
 # The Fejér kernel on the additive circle
 
 For a period `T > 0`, the `N`-th Fejér kernel `K_N` on `AddCircle T` is the Cesàro mean
-of the Dirichlet kernels:
-`K_N(x) = (N + 1)⁻¹ • ∑_{k=0}^{N} ∑_{n=-k}^{k} e^{2πi n x / T}`.
+of the Dirichlet kernels. For a real representative `r` of `x : AddCircle T`:
+`K_N(x) = (N + 1)⁻¹ • ∑_{k=0}^{N} ∑_{n=-k}^{k} e^{2πi n r / T}`.
 
 The main results are the defining properties of an approximation to the identity:
 
 * `AddCircle.fejerKernel_symmetric`: `K_N(-x) = K_N(x)`.
 * `AddCircle.integral_fejerKernel`: `∫ K_N = 1`.
 * `AddCircle.fejerKernel_nonneg`: `0 ≤ Re K_N(x)`.
-* `AddCircle.fejerKernel_eq_ofReal`: `K_N(x) = (N + 1)⁻¹ * ‖∑_{k=0}^{N} e^{2πi k x / T}‖²`
+* `AddCircle.fejerKernel_eq_ofReal`: `K_N(x) = (N + 1)⁻¹ * ‖∑_{k=0}^{N} fourier k x‖²`
   as a nonnegative real number, so `‖K_N(x)‖ = Re K_N(x)`.
 * `AddCircle.fejer_kernel_properties`: the bundled properties above, plus `T`-periodicity
   and the decay estimate `‖K_N(x)‖ ≤ 4 / ((N + 1) * δ²)` whenever
-  `δ ≤ ‖1 - e^{2πi x / T}‖`.
+  `δ ≤ ‖1 - fourier 1 x‖`.
 
 Source: `v1/Atlas/IntroductionToFunctionalAnalysis/code/FourierSeries.lean`
 (targets: Definition of the Fejér kernel, April 15, 2021; Proposition on its
@@ -44,10 +44,10 @@ open MeasureTheory AddCircle Finset Filter Complex
 namespace AddCircle
 
 /-- The Fejér kernel `K_N`, defined as the Cesàro mean of the Dirichlet kernels:
-for a real representative `t` of `x : AddCircle T`,
-`K_N(x) = (N+1)⁻¹ • ∑_{k=0}^{N} ∑_{n=-k}^{k} e^{2πi n t / T}`.
-When `sin(π t / T) ≠ 0`, the closed form is
-`K_N(x) = (N+1)⁻¹ * (sin((N+1) π t / T) / sin(π t / T))²`,
+for a real representative `r` of `x : AddCircle T`,
+`K_N(x) = (N+1)⁻¹ • ∑_{k=0}^{N} ∑_{n=-k}^{k} e^{2πi n r / T}`.
+When `sin(π r / T) ≠ 0`, the closed form is
+`K_N(x) = (N+1)⁻¹ * (sin((N+1) π r / T) / sin(π r / T))²`,
 with the real expression coerced into `ℂ`.
 This normalization uses Haar probability measure; at `T = 2π`, the kernel
 for integration against Lebesgue measure is `K_N / (2π)`. -/
@@ -55,7 +55,7 @@ noncomputable def fejerKernel (N : ℕ) : AddCircle T → ℂ :=
   fun x => ((N : ℂ) + 1)⁻¹ • ∑ k ∈ range (N + 1),
     ∑ n ∈ Finset.Icc (-(k : ℤ)) (k : ℤ), fourier n x
 
-/-- Each Fourier mode `t ↦ e^{2πi n t / T}` is integrable on the circle (in fact
+/-- Each Fourier character `t ↦ fourier n t` is integrable on the circle (in fact
 bounded by `1`); used repeatedly when integrating Fourier sums termwise. -/
 theorem fourier_integrable (n : ℤ) :
     Integrable (fun t : AddCircle T => (fourier n t : ℂ)) haarAddCircle :=
@@ -63,7 +63,7 @@ theorem fourier_integrable (n : ℤ) :
     (ae_of_all _ (fun t => by rw [fourier_apply, Circle.norm_coe]))
 
 /-- Orthogonality of the Fourier basis with respect to the Haar measure: the integral
-of `e^{2πi n t / T}` over the circle equals `1` if `n = 0` and `0` otherwise. -/
+of the Fourier character `fourier n` over the circle equals `1` if `n = 0` and `0` otherwise. -/
 theorem integral_fourier (n : ℤ) :
     ∫ t : AddCircle T, fourier n t ∂haarAddCircle =
     if n = 0 then 1 else 0 := by
@@ -77,7 +77,7 @@ theorem integral_fourier (n : ℤ) :
   simp only [show (-n = (0 : ℤ)) ↔ (n = 0) from neg_eq_zero] at hn
   exact hn
 
-/-- The integral of the `k`-th Dirichlet kernel `∑_{n=-k}^{k} e^{2πi n t / T}` over
+/-- The integral of the `k`-th Dirichlet kernel `∑_{n=-k}^{k} fourier n t` over
 the circle equals `1`; only the `n = 0` term contributes by orthogonality. -/
 theorem integral_dirichlet_sum (k : ℕ) :
     ∫ t : AddCircle T, ∑ n ∈ Finset.Icc (-(k : ℤ)) (k : ℤ),
@@ -193,8 +193,8 @@ theorem fejerKernel_integrable (N : ℕ) :
   · exact ae_of_all _ (fun x => norm_fejerKernel_le N x)
 
 omit hT in
-/-- Convolution identity for Fourier modes: `e^{-2πi n t / T} · e^{2πi n x / T} =
-e^{2πi n (x - t) / T}`. The basic shift identity behind expressing partial Fourier
+/-- Convolution identity for Fourier characters:
+`fourier (-n) t * fourier n x = fourier n (x - t)`. The basic shift identity behind expressing partial Fourier
 sums as convolutions with the Dirichlet kernel. -/
 theorem fourier_neg_mul_fourier_eq (n : ℤ) (x t : AddCircle T) :
     (fourier (-n) t : ℂ) * (fourier n x : ℂ) = (fourier n (x - t) : ℂ) := by
@@ -204,7 +204,7 @@ theorem fourier_neg_mul_fourier_eq (n : ℤ) (x t : AddCircle T) :
   simp [Circle.coe_mul, mul_comm]
 
 set_option linter.unusedSectionVars false in
-/-- Re-indexing lemma: the sum `∑_{k=0}^{N} e^{2πi (k - (N+1)) x / T}` equals the
+/-- Re-indexing lemma: the sum `∑_{k=0}^{N} fourier ((k : ℤ) - (N+1 : ℤ)) x` equals the
 sum over the negative range `n ∈ [-(N+1), -1]`. Used to expand `(∑ z^k) · z̄^{N+1}`
 in the proof of the Fejér kernel identity. -/
 lemma sum_range_fourier_shift_neg (N : ℕ) (x : AddCircle T) :
@@ -222,7 +222,7 @@ lemma sum_range_fourier_shift_neg (N : ℕ) (x : AddCircle T) :
 
 set_option linter.unusedSectionVars false in
 /-- Companion to `sum_range_fourier_shift_neg`: the sum
-`∑_{k=0}^{N} e^{2πi ((N+1) - k) x / T}` equals the sum over the positive range
+`∑_{k=0}^{N} fourier ((N+1 : ℤ) - (k : ℤ)) x` equals the sum over the positive range
 `n ∈ [1, N+1]`. -/
 lemma sum_range_fourier_shift_pos (N : ℕ) (x : AddCircle T) :
     ∑ k ∈ range (N + 1), (fourier ((↑(N + 1) : ℤ) + -↑k) x : ℂ) =
@@ -238,7 +238,7 @@ lemma sum_range_fourier_shift_pos (N : ℕ) (x : AddCircle T) :
   · intro k _; rfl
 
 /-- Key algebraic identity: the iterated Dirichlet sum defining `K_N` equals
-`|∑_{k=0}^{N} e^{2πi k x / T}|²`, i.e. a sum-of-Dirichlet kernels is the squared
+`|∑_{k=0}^{N} fourier k x|²`, i.e. a sum-of-Dirichlet kernels is the squared
 modulus of a geometric sum. This is what makes the Fejér kernel nonnegative. -/
 theorem fejer_dirichlet_sum_eq_sq (N : ℕ) (x : AddCircle T) :
     (∑ k ∈ range (N + 1), ∑ n ∈ Finset.Icc (-(k : ℤ)) (↑k), (fourier n x : ℂ)) =
@@ -283,7 +283,7 @@ theorem fejer_dirichlet_sum_eq_sq (N : ℕ) (x : AddCircle T) :
     ring
 
 /-- Positivity of the Fejér kernel: `0 ≤ Re K_N(x)` for every `x`. Direct
-consequence of the expression `K_N(x) = (N+1)⁻¹ · |∑_{k=0}^N e^{2πi k x / T}|²`. -/
+consequence of the expression `K_N(x) = (N+1)⁻¹ · |∑_{k=0}^N fourier k x|²`. -/
 theorem fejerKernel_nonneg (N : ℕ) (x : AddCircle T) :
     0 ≤ (fejerKernel N x).re := by
   unfold fejerKernel
@@ -298,7 +298,7 @@ theorem fejerKernel_nonneg (N : ℕ) (x : AddCircle T) :
   · exact normSq_nonneg _
 
 /-- The Fejér kernel is in fact a nonnegative real number (coerced into `ℂ`):
-`K_N(x) = (N+1)⁻¹ · |∑_{k=0}^{N} e^{2πi k x / T}|²`, written with `normSq`. This
+`K_N(x) = (N+1)⁻¹ · |∑_{k=0}^{N} fourier k x|²`, written with `normSq`. This
 makes `‖K_N(x)‖ = Re K_N(x)`. -/
 theorem fejerKernel_eq_ofReal (N : ℕ) (x : AddCircle T) :
     fejerKernel N x = ↑(((N : ℝ) + 1)⁻¹ *
@@ -318,7 +318,7 @@ theorem fejerKernel_eq_ofReal (N : ℕ) (x : AddCircle T) :
 (3) `K_N` is `T`-periodic on `ℝ`,
 (4) `∫ K_N = 1`, and
 (5) the decay estimate: for any `δ > 0` and any `x` with
-`δ ≤ ‖1 - e^{2πi x / T}‖`, we have `‖K_N(x)‖ ≤ 4 / ((N+1) δ²)`. -/
+`δ ≤ ‖1 - fourier 1 x‖`, we have `‖K_N(x)‖ ≤ 4 / ((N+1) δ²)`. -/
 theorem fejer_kernel_properties (N : ℕ) :
     (∀ x : AddCircle T, 0 ≤ (fejerKernel N x).re) ∧
     (∀ x : AddCircle T, fejerKernel N (-x) = fejerKernel N x) ∧

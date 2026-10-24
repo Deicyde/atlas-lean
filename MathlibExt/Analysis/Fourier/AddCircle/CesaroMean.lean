@@ -16,7 +16,7 @@ public import Mathlib.MeasureTheory.Measure.Haar.Unique
 # Cesàro–Fourier means as convolutions with the Fejér kernel
 
 For a period `T > 0`, the `N`-th partial Fourier sum of `f : AddCircle T → ℂ` is
-`S_N f(x) = ∑_{n = -N}^{N} ĉ_n(f) · e^{2πi n x / T}`, and the `N`-th Cesàro–Fourier mean is
+`S_N f(x) = ∑_{n = -N}^{N} ĉ_n(f) · fourier n x`, and the `N`-th Cesàro–Fourier mean is
 `σ_N f(x) = (N+1)⁻¹ • ∑_{k=0}^{N} S_k f(x)`.
 
 The main result is `AddCircle.cesaroMean_eq_fejer_convolution`:
@@ -40,7 +40,7 @@ open MeasureTheory AddCircle Finset Filter Complex
 namespace AddCircle
 
 /-- The `N`-th partial Fourier sum of a function `f : AddCircle T → ℂ`, defined as
-`S_N f(x) = ∑_{n = -N}^{N} ĉ_n(f) · e^{2πi n x / T}`, where `ĉ_n(f) = fourierCoeff f n`. -/
+`S_N f(x) = ∑_{n = -N}^{N} ĉ_n(f) · fourier n x`, where `ĉ_n(f) = fourierCoeff f n`. -/
 noncomputable def partialFourierSum (f : AddCircle T → ℂ) (N : ℕ) :
     AddCircle T → ℂ :=
   fun x => ∑ n ∈ Finset.Icc (-(N : ℤ)) (N : ℤ), fourierCoeff f n • fourier n x
@@ -54,13 +54,13 @@ noncomputable def cesaroFourierMean (f : AddCircle T → ℂ) (N : ℕ) :
 
 set_option linter.unusedSectionVars false in
 /-- Reversed form of `fourier_neg_mul_fourier_eq`:
-`e^{2πi n (x - t) / T} = e^{-2πi n t / T} · e^{2πi n x / T}`. Convenient orientation
+`fourier n (x - t) = fourier (-n) t * fourier n x`. Convenient orientation
 for the convolution computation. -/
 lemma fourier_sub_eq (n : ℤ) (x t : AddCircle T) :
     (fourier n (x - t) : ℂ) = (fourier (-n) t : ℂ) * (fourier n x : ℂ) :=
   (fourier_neg_mul_fourier_eq n x t).symm
 
-/-- If `f` is integrable on `AddCircle T`, then `t ↦ e^{2πi n t / T} • f(x - t)` is
+/-- If `f` is integrable on `AddCircle T`, then `t ↦ fourier n t • f(x - t)` is
 also integrable; a routine integrability lemma needed to interchange sums and
 integrals in the convolution computation. -/
 lemma fourier_smul_integrable (f : AddCircle T → ℂ) (hf : Integrable f haarAddCircle)
@@ -71,9 +71,9 @@ lemma fourier_smul_integrable (f : AddCircle T → ℂ) (hf : Integrable f haarA
     (ae_of_all _ fun t => by rw [fourier_apply, Circle.norm_coe])
 
 /-- Convolution-with-a-mode identity: for integrable `f`,
-`∫ e^{2πi n t / T} • f(x - t) dt = ĉ_n(f) • e^{2πi n x / T}`. This says that the
+`∫ fourier n t • f(x - t) dt = ĉ_n(f) • fourier n x`. This says that the
 `n`-th term of the partial Fourier sum at `x` is the convolution of `f` with the
-mode `e^{2πi n · / T}`. -/
+Fourier character `fourier n`. -/
 theorem fourier_integral_convolution (f : AddCircle T → ℂ)
     (_hf : Integrable f haarAddCircle) (n : ℤ) (x : AddCircle T) :
     ∫ t : AddCircle T, (fourier n t : ℂ) • f (x - t) ∂haarAddCircle =
