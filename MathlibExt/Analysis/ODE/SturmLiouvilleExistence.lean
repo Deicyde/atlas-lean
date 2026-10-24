@@ -8,10 +8,6 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import MathlibExt.Analysis.ODE.GlobalPicardExistence
-import MathlibExt.Analysis.ODE.MaximalSolution
-import Mathlib.Analysis.ODE.ExistUnique
-import Mathlib.Analysis.Calculus.Deriv.Prod
 public import Mathlib.Analysis.Calculus.Deriv.Add
 public import Mathlib.Analysis.Calculus.Deriv.Basic
 public import Mathlib.Analysis.Calculus.Deriv.Mul
@@ -23,6 +19,9 @@ public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 public import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
 public import Mathlib.MeasureTheory.Measure.OpenPos
 public import Mathlib.Topology.ContinuousMap.Basic
+import Mathlib.Analysis.Calculus.Deriv.Prod
+import Mathlib.Analysis.ODE.ExistUnique
+import MathlibExt.Analysis.ODE.MaximalSolution
 
 @[expose] public section
 
@@ -39,13 +38,12 @@ Given a continuous nonnegative potential `V` and a continuous right-hand side
 Dirichlet boundary conditions `u 0 = u 1 = 0`.
 
 The proof is by the shooting method. The second-order equation is rewritten as
-a first-order system for `(u, u')`, for which global existence on `[0, 1]`
-follows from the Picard iteration in
-`MathlibExt.Analysis.ODE.GlobalPicardExistence`. Two solutions of the system
-with initial data `(0, a)` and `(0, 0)` differ by `a` times the solution with
-initial data `(0, 1)` for the homogeneous equation (both sides satisfy the same
-integral equation, and integral equations have at most one continuous
-solution). The homogeneous solution `w` satisfies `w 0 = 0` and `w' 0 = 1`;
+a first-order system for `(u, u')`, whose globally Lipschitz vector field has
+a global solution by the existing API in
+`MathlibExt.Analysis.ODE.MaximalSolution`. Two solutions of the system with
+initial data `(0, a)` and `(0, 0)` differ by `a` times the solution with initial
+data `(0, 1)` for the homogeneous equation: both sides solve the same initial
+value problem, so Lipschitz ODE uniqueness identifies them. The homogeneous solution `w` satisfies `w 0 = 0` and `w' 0 = 1`;
 an energy argument (integration by parts, using `V ≥ 0`) shows `w 1 ≠ 0`:
 otherwise `w` would vanish identically, contradicting `w' 0 = 1`. Choosing
 `a = -u₀ 1 / w 1` then gives a solution with `u 1 = 0`.
@@ -142,11 +140,6 @@ private theorem continuous_sys_uncurry {Vext c : ℝ → ℝ} (hV : Continuous V
   apply Continuous.prodMk (continuous_snd.comp continuous_snd)
   exact ((hV.comp continuous_fst).mul (continuous_fst.comp continuous_snd)).sub
     (hc.comp continuous_fst)
-
-/-- The system is continuous in time for fixed state. -/
-private theorem continuous_sys {Vext c : ℝ → ℝ} (hV : Continuous Vext) (hc : Continuous c)
-    (y : ℝ × ℝ) : Continuous fun t => sys Vext c t y :=
-  Continuous.prodMk continuous_const ((hV.mul continuous_const).sub hc)
 
 /-- Solutions of the first-order system, with their `C²` regularity and the
 second-order equation. The functions `u`, `p` are the two components of the
@@ -278,63 +271,6 @@ private theorem exists_solution {Vext c : ℝ → ℝ} (hV : Continuous Vext) (h
     simp
 
 
-/-- A pair `(u, p)` with `u' = p` and `p' = Vext·u - c` satisfies the integral
-equation of the first-order system. -/
-private theorem integral_eq_of_deriv {Vext c : ℝ → ℝ} (hV : Continuous Vext)
-    (hc : Continuous c) {u p : ℝ → ℝ} (hucont : Continuous u) (hpcont : Continuous p)
-    (y₀ : ℝ × ℝ) (hu0 : u 0 = y₀.1) (hp0 : p 0 = y₀.2)
-    (huder : ∀ t ∈ Set.Icc (0 : ℝ) 1, HasDerivAt u (p t) t)
-    (hpder : ∀ t, HasDerivAt p (Vext t * u t - c t) t) :
-    ∀ t ∈ Set.Icc (0 : ℝ) 1,
-      (fun s => (u s, p s)) t = y₀ + ∫ s in (0 : ℝ)..t, sys Vext c s (u s, p s) := by
-  intro t ht
-  have h1 : u t = y₀.1 + ∫ s in (0 : ℝ)..t, p s := by
-    have hFTC : ∫ s in (0 : ℝ)..t, p s = u t - u 0 :=
-      intervalIntegral.integral_eq_sub_of_hasDerivAt
-        (fun x hx => by
-          have hx' : x ∈ Set.Icc (0 : ℝ) t := by rwa [Set.uIcc_of_le ht.1] at hx
-          exact huder x ⟨hx'.1, le_trans hx'.2 ht.2⟩)
-        (hpcont.intervalIntegrable 0 t)
-    rw [hu0] at hFTC
-    linarith
-  have h2 : p t = y₀.2 + ∫ s in (0 : ℝ)..t, (Vext s * u s - c s) := by
-    have hFTC : ∫ s in (0 : ℝ)..t, (Vext s * u s - c s) = p t - p 0 :=
-      intervalIntegral.integral_eq_sub_of_hasDerivAt (fun x _ => hpder x)
-        (((hV.mul hucont).sub hc).intervalIntegrable 0 t)
-    rw [hp0] at hFTC
-    linarith
-  have hInt : IntervalIntegrable (fun s => sys Vext c s (u s, p s)) volume 0 t :=
-    ((continuous_sys_uncurry hV hc).comp
-      (continuous_id.prodMk (hucont.prodMk hpcont))).intervalIntegrable 0 t
-  show (u t, p t) = y₀ + ∫ s in (0 : ℝ)..t, sys Vext c s (u s, p s)
-  refine Prod.ext ?_ ?_
-  · show u t = (y₀ + ∫ s in (0 : ℝ)..t, sys Vext c s (u s, p s)).1
-    rw [Prod.fst_add, h1]
-    congr 1
-    have hcomp : (∫ s in (0 : ℝ)..t, sys Vext c s (u s, p s)).1 =
-        ∫ s in (0 : ℝ)..t, p s := by
-      show (ContinuousLinearMap.fst ℝ ℝ ℝ) (∫ s in (0 : ℝ)..t, sys Vext c s (u s, p s)) = _
-      rw [← ContinuousLinearMap.intervalIntegral_comp_comm
-        (ContinuousLinearMap.fst ℝ ℝ ℝ) hInt]
-      apply intervalIntegral.integral_congr
-      intro s _
-      show (sys Vext c s (u s, p s)).1 = p s
-      rfl
-    rw [hcomp]
-  · show p t = (y₀ + ∫ s in (0 : ℝ)..t, sys Vext c s (u s, p s)).2
-    rw [Prod.snd_add, h2]
-    congr 1
-    have hcomp : (∫ s in (0 : ℝ)..t, sys Vext c s (u s, p s)).2 =
-        ∫ s in (0 : ℝ)..t, (Vext s * u s - c s) := by
-      show (ContinuousLinearMap.snd ℝ ℝ ℝ) (∫ s in (0 : ℝ)..t, sys Vext c s (u s, p s)) = _
-      rw [← ContinuousLinearMap.intervalIntegral_comp_comm
-        (ContinuousLinearMap.snd ℝ ℝ ℝ) hInt]
-      apply intervalIntegral.integral_congr
-      intro s _
-      show (sys Vext c s (u s, p s)).2 = Vext s * u s - c s
-      rfl
-    rw [hcomp]
-
 /-- **Energy argument.** A solution of the homogeneous equation `-w'' + Vext·w = 0`
 with `w 0 = w 1 = 0` vanishes identically, together with its derivative `p`.
 Indeed, integration by parts gives `∫₀¹ (Vext·w² + p²) = 0`; both terms are
@@ -424,12 +360,11 @@ Given a continuous nonnegative potential `V` and a continuous right-hand side
 
 This is `SpectralTheory.sturm_liouville_existence` in the v1 formalization,
 whose formalization is left unproved there. The proof here is by the shooting
-method: solve the first-order system with initial data `(0, a)` and with
-initial data `(0, 0)` for the homogeneous equation, show the homogeneous
-solution `w` satisfies `w 1 ≠ 0` by the energy argument
-`eq_zero_of_homogeneous`, and choose `a = -u₀ 1 / w 1` so that the affine
-combination `u₀ + a • w` — which, by uniqueness for the integral equation,
-is the solution with data `(0, a)` — vanishes at `1`. -/
+method: solve the inhomogeneous system with initial data `(0, 0)` and the
+homogeneous system with initial data `(0, 1)`, show the homogeneous solution
+`w` satisfies `w 1 ≠ 0` by the energy argument `eq_zero_of_homogeneous`, and
+choose `a = -u₀ 1 / w 1` so that the affine combination `u₀ + a • w`, identified
+by ODE uniqueness with the solution having initial data `(0, a)`, vanishes at `1`. -/
 theorem sturm_liouville_existence
     (V : C(Set.Icc (0 : ℝ) 1, ℝ)) (hV : ∀ x : Set.Icc (0 : ℝ) 1, 0 ≤ V x)
     (f : C(Set.Icc (0 : ℝ) 1, ℝ)) :
