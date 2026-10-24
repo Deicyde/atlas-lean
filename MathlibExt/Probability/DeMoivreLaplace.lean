@@ -70,8 +70,8 @@ namespace ProbabilityTheory
 
 /-- The standardized partial sum `(Sₙ − np) / √(np(1 − p))` for a sequence
 of real random variables `X`, where `Sₙ = ∑_{k<n} Xₖ`. -/
-noncomputable def deMoivreLaplaceStandardized (X : ℕ → Ω → ℝ) (p : ℝ) (n : ℕ)
-    (ω : Ω) : ℝ :=
+noncomputable def deMoivreLaplaceStandardized {Ω : Type*} (X : ℕ → Ω → ℝ)
+    (p : ℝ) (n : ℕ) (ω : Ω) : ℝ :=
   ((∑ k ∈ Finset.range n, X k ω) - ↑n * p) / Real.sqrt (↑n * p * (1 - p))
 
 /-- The standardization map `x ↦ (x − p) / √(p(1 − p))`. -/
