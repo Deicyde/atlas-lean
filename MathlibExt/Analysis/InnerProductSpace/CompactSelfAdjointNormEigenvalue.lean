@@ -24,10 +24,10 @@ open scoped ComplexConjugate
 namespace MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointNormEigenvalue
 
 /-!
-# The norm of a compact self-adjoint operator is an eigenvalue
+# An eigenvalue of maximal modulus for a compact self-adjoint operator
 
-For a compact self-adjoint operator `T` on a Hilbert space, the operator
-norm `‖T‖` is attained as an eigenvalue: there is a unit vector `u` with
+For a nonzero compact self-adjoint operator `T` on a Hilbert space, an
+eigenvalue of modulus `‖T‖` is attained: there is a unit vector `u` with
 `T u = r • u` for a real scalar `r` with `|r| = ‖T‖`. This is the first
 step of the maximum principle for compact self-adjoint operators — the
 book's Theorem (Maximum principle), May 11, 2021 section, orders all the
@@ -87,8 +87,8 @@ theorem exists_hasEigenvalue_norm_eq (T : H →L[𝕜] H) (hT : IsSelfAdjoint T)
     exact hT0 (norm_eq_zero.mp hnorm.symm)
   exact ⟨μ, hμ0, hnorm, (hc.hasEigenvalue_iff_mem_spectrum hμ0).mpr hμspec⟩
 
-/-- **The norm of a compact self-adjoint operator is a real eigenvalue,
-attained at a unit vector.** If `T ≠ 0` is compact and self-adjoint,
+/-- **A compact self-adjoint operator has a real eigenvalue of modulus
+`‖T‖`, attained at a unit vector.** If `T ≠ 0` is compact and self-adjoint,
 there are `r : ℝ` and a unit vector `u` with `T u = r • u` and
 `|r| = ‖T‖`. -/
 theorem exists_unit_eigenvector_real_eigenvalue (T : H →L[𝕜] H) (hT : IsSelfAdjoint T)
