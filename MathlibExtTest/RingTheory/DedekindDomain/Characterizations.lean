@@ -13,7 +13,7 @@ public import MathlibExt.RingTheory.DedekindDomain.Characterizations
 @[expose] public section
 
 /-!
-# Tests for Dedekind-domain characterizations (Theorem 3.23, (1), (5), (6))
+# Tests for Dedekind criteria (Theorem 3.23, (1), (5), corrected (6))
 
 Concrete checks at `ℤ` and `ℚ`: contain-is-divide, the principal-product
 property, and the three-way equivalence.

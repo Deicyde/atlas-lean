@@ -15,15 +15,16 @@ public import Mathlib.RingTheory.FractionalIdeal.Operations
 /-!
 # Dedekind domains: contain-is-divide and principal-product characterizations
 
-ATLAS `NumberTheoryI`, Theorem 3.23, conditions (1), (5), and (6): for a
-domain `A`, being a Dedekind domain is equivalent to `A` being noetherian
-with "to contain is to divide" for ideals, and also equivalent to every
-nonzero ideal becoming principal after multiplication by a suitable
-(nonzero-product) ideal.
+ATLAS `NumberTheoryI`, Theorem 3.23, conditions (1), (5), and a corrected
+nonvacuous form of (6): a domain `A` is Dedekind if and only if it is
+noetherian with "to contain is to divide" for ideals, and if and only if
+every nonzero ideal has a principal nonzero product with a suitable ideal.
 
-Condition (6) is stated for nonzero ideals with a nonzero product, as in
-the v1 formalization: without the nonzero-product requirement the
-statement would be vacuous (take `J = ⊥`, so `I * J = ⊥` is principal).
+The recorded target states (6) as `∀ I, ∃ J, (I * J).IsPrincipal`, which
+is vacuous: `J = ⊥` makes the product principal for every `I`. The v1
+formalization adds `I ≠ ⊥` and `I * J ≠ ⊥`. This module proves that
+corrected, stronger criterion, rather than (6) as recorded without those
+qualifiers.
 Conditions (2) and (3) of Theorem 3.23 are already Mathlib iffs
 (`IsDedekindDomainDvr` / `IsDedekindDomainInv`), condition (4) (prime
 factorization of ideals) is not claimed here -- in v1 its
@@ -87,9 +88,9 @@ theorem isDedekindDomain_iff_contain_isDivide :
     rw [hI_eq]
     exact IsUnit.mul hspan_unit hJ_unit
 
-/-- A domain is a Dedekind domain if and only if every nonzero ideal
-becomes principal (with nonzero product) after multiplication by a
-suitable ideal. -/
+/-- The corrected nonvacuous form of Theorem 3.23(6): a domain is Dedekind
+if and only if every nonzero ideal has a principal nonzero product with a
+suitable ideal. The recorded target omits both nonzero qualifiers. -/
 theorem isDedekindDomain_iff_principalProduct :
     IsDedekindDomain A ↔
       ∀ I : Ideal A, I ≠ ⊥ →
@@ -148,8 +149,8 @@ theorem isDedekindDomain_iff_principalProduct :
     rw [hI_eq]
     exact IsUnit.mul hspan_unit haI_unit
 
-/-- Theorem 3.23, conditions (1), (5), and (6): the three Dedekind-domain
-characterizations are equivalent. -/
+/-- Theorem 3.23, conditions (1), (5), and the corrected nonvacuous form
+of (6): the three Dedekind-domain characterizations are equivalent. -/
 theorem isDedekindDomain_tfae_contain_isDivide_principalProduct :
     List.TFAE
       [IsDedekindDomain A,
