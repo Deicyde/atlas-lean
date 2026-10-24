@@ -23,11 +23,11 @@ variable {α : Type*} {m : MeasurableSpace α} {μ : Measure α} [IsFiniteMeasur
 
 /-- Scheffé's lemma restates with the exact public signature. -/
 example (hfm : ∀ n, AEStronglyMeasurable (f n) μ)
-    (hgm : AEStronglyMeasurable g μ) (hg : MemLp g 1 μ)
+    (hg : MemLp g 1 μ)
     (hae : ∀ᵐ x ∂μ, Tendsto (fun n => f n x) atTop (𝓝 (g x)))
     (hnorm : Tendsto (fun n => eLpNorm (f n) 1 μ) atTop (𝓝 (eLpNorm g 1 μ))) :
     Tendsto (fun n => eLpNorm (f n - g) 1 μ) atTop (𝓝 0) :=
-  scheffe_lemma hfm hgm hg hae hnorm
+  scheffe_lemma hfm hg hae hnorm
 
 /-- Convergence in measure plus convergence of the `L¹` norms restates with
 the exact public signature. -/
@@ -55,15 +55,15 @@ example (hf : ∀ n, MemLp (f n) 1 μ) (hg : MemLp g 1 μ)
 
 /-- Constant sequence: a.e. convergence and norm convergence are both
 trivial, so Scheffé's lemma gives `L¹` convergence (to `0`). -/
-example (hgm : AEStronglyMeasurable g μ) (hg : MemLp g 1 μ) :
+example (hg : MemLp g 1 μ) :
     Tendsto (fun _n : ℕ => eLpNorm ((fun _ : ℕ => g) _n - g) 1 μ) atTop (𝓝 0) :=
-  scheffe_lemma (fun _ => hgm) hgm hg
+  scheffe_lemma (fun _ => hg.aestronglyMeasurable) hg
     (ae_of_all μ fun _ => tendsto_const_nhds) tendsto_const_nhds
 
 /-- In integral form: if `f n → g` a.e. and `∫ |f n| → ∫ |g|`, then
 `∫ |f n - g| → 0`. -/
 example (hfm : ∀ n, AEStronglyMeasurable (f n) μ)
-    (hgm : AEStronglyMeasurable g μ) (hg : MemLp g 1 μ)
+    (hg : MemLp g 1 μ)
     (hf_int : ∀ n, Integrable (f n) μ)
     (hae : ∀ᵐ x ∂μ, Tendsto (fun n => f n x) atTop (𝓝 (g x)))
     (hnorm_int : Tendsto (fun n => ∫ ω, (|f n ω|) ∂μ) atTop (𝓝 (∫ ω, (|g ω|) ∂μ))) :
@@ -82,7 +82,7 @@ example (hfm : ∀ n, AEStronglyMeasurable (f n) μ)
     rw [show (fun n => eLpNorm (f n) 1 μ) = fun n => ENNReal.ofReal (∫ ω, (|f n ω|) ∂μ) from
       funext e1, e2]
     exact ENNReal.tendsto_ofReal hnorm_int
-  have hL1 := scheffe_lemma hfm hgm hg hae hnorm
+  have hL1 := scheffe_lemma hfm hg hae hnorm
   have hne : ∀ n, eLpNorm (f n - g) 1 μ ≠ ⊤ := fun n => ((hf_memLp n).sub hg).eLpNorm_lt_top.ne
   have hto : Tendsto (fun n => (eLpNorm (f n - g) 1 μ).toReal) atTop (𝓝 0) :=
     (ENNReal.tendsto_toReal_zero_iff hne).mpr hL1

@@ -127,11 +127,11 @@ private theorem scheffe_lintegral_eq {α : Type*} {m : MeasurableSpace α} {μ :
 theorem scheffe_lemma {α : Type*} {m : MeasurableSpace α} {μ : Measure α}
     {f : ℕ → α → ℝ} {g : α → ℝ}
     (hfm : ∀ n, AEStronglyMeasurable (f n) μ)
-    (hgm : AEStronglyMeasurable g μ)
     (hg : MemLp g 1 μ)
     (hae : ∀ᵐ x ∂μ, Tendsto (fun n => f n x) atTop (𝓝 (g x)))
     (hnorm : Tendsto (fun n => eLpNorm (f n) 1 μ) atTop (𝓝 (eLpNorm g 1 μ))) :
     Tendsto (fun n => eLpNorm (f n - g) 1 μ) atTop (𝓝 0) := by
+  have hgm := hg.aestronglyMeasurable
   set hn : ℕ → α → ℝ≥0∞ := fun n x => ‖f n x‖ₑ + ‖g x‖ₑ - ‖f n x - g x‖ₑ
   have hn_tendsto_ae := scheffe_hn_tendsto_ae hae
   have C_le : eLpNorm g 1 μ + eLpNorm g 1 μ ≤ ∫⁻ x, liminf (hn · x) atTop ∂μ :=
@@ -231,7 +231,7 @@ theorem tendsto_eLpNorm_one_of_tendstoInMeasure_of_tendsto_eLpNorm
   have hfg_sub : TendstoInMeasure μ (f ∘ ns) atTop g := fun ε hε => (hfg ε hε).comp hns
   obtain ⟨ms, hms_mono, hms_ae⟩ := hfg_sub.exists_seq_tendsto_ae
   refine ⟨ms, ?_⟩
-  exact scheffe_lemma (fun n => (hf (ns (ms n))).aestronglyMeasurable) hg.aestronglyMeasurable hg hms_ae
+  exact scheffe_lemma (fun n => (hf (ns (ms n))).aestronglyMeasurable) hg hms_ae
     (hnorm.comp (hns.comp hms_mono.tendsto_atTop))
 
 /-- If `f n → g` in measure and `‖f n‖₁ → ‖g‖₁`, then the family `f n` is
