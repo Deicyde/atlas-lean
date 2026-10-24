@@ -113,4 +113,27 @@ example (b : HilbertBasis ℕ+ ℝ L2UnitInterval)
   · intro k hk
     rw [b.orthonormal.inner_eq_zero hk, mul_zero, zero_smul]
 
+/-- The full matching predicate has a concrete positive integer sine basis witness. -/
+private theorem sine_basis_witness : ∃ b : HilbertBasis ℕ+ ℝ L2UnitInterval,
+    (∀ k : ℕ+, (b k : L2UnitInterval) =ᵐ[MeasureTheory.volume.restrict (Set.Icc (0 : ℝ) 1)]
+      (sineBasisFun k : ℝ → ℝ)) ∧ b 2 ≠ 0 :=
+  ⟨sineHilbertBasis, sineHilbertBasis_coe, sineHilbertBasis.orthonormal.ne_zero 2⟩
+
+/-- The square-root definition acts on its actual nonzero second sine vector. -/
+private theorem sine_basis_sqrt_two : sineHilbertBasis 2 ≠ 0 ∧
+    greensOperatorSqrt sineHilbertBasis sineHilbertBasis_coe (sineHilbertBasis 2) =
+      (1 / (2 * Real.pi) : ℝ) • sineHilbertBasis 2 := by
+  refine ⟨sineHilbertBasis.orthonormal.ne_zero 2, ?_⟩
+  classical
+  rw [greensOperatorSqrt, tsum_eq_single (2 : ℕ+)]
+  · have h2 : inner (𝕜 := ℝ) (sineHilbertBasis 2) (sineHilbertBasis 2) = 1 := by
+      simpa using (orthonormal_iff_ite.mp sineHilbertBasis.orthonormal) 2 2
+    simp only [h2, mul_one, greensEigenvalueSqrt]
+    norm_num
+  · intro k hk
+    rw [sineHilbertBasis.orthonormal.inner_eq_zero hk, mul_zero, zero_smul]
+
+#print axioms sine_basis_witness
+#print axioms sine_basis_sqrt_two
+
 end MathlibExtTest.Analysis.ODE.GreensOperatorTests

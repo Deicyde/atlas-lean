@@ -16,6 +16,10 @@ public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 public import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
 public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
 
+import Mathlib.Analysis.Fourier.AddCircle
+import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+import Mathlib.MeasureTheory.Measure.Haar.Unique
+
 @[expose] public section
 
 namespace MathlibExt.Analysis.ODE.GreensOperator
@@ -64,9 +68,12 @@ noncomputable def greensEigenvalue (k : ℕ+) : ℝ := 1 / ((k : ℝ) ^ 2 * Real
 noncomputable def greensEigenvalueSqrt (k : ℕ+) : ℝ := 1 / ((k : ℝ) * Real.pi)
 
 /-- The square root `A^{1/2}` of the Green's operator, defined via its action
-on the orthonormal eigenbasis `{b_k}`: if `f = ∑' k, c_k b_k` where
+on the indexed sine eigenbasis `{b_k}`. Require `b_k = u_k` almost everywhere,
+as in `greens_operator_eigendecomposition`. If `f = ∑' k, c_k b_k` where
 `c_k = ⟨b_k, f⟩`, then `A^{1/2} f = ∑' k, (1 / (kπ)) c_k b_k`. -/
-noncomputable def greensOperatorSqrt (b : HilbertBasis ℕ+ ℝ L2UnitInterval) :
+noncomputable def greensOperatorSqrt (b : HilbertBasis ℕ+ ℝ L2UnitInterval)
+    (_hb : ∀ k : ℕ+, (b k : L2UnitInterval) =ᵐ[volume.restrict (Set.Icc (0 : ℝ) 1)]
+      (sineBasisFun k : ℝ → ℝ)) :
     L2UnitInterval → L2UnitInterval :=
   fun f => ∑' (k : ℕ+), (greensEigenvalueSqrt k * inner (𝕜 := ℝ) (b k) f) • b k
 
@@ -264,5 +271,350 @@ theorem greens_operator_eigendecomposition
     congr 1
     ext j
     rw [hcoeff j]
+
+private lemma sine_memLp (k : ℕ+) :
+    MemLp (sineBasisFun k) 2 (volume.restrict (Set.Icc (0 : ℝ) 1)) := by
+  have hc : Continuous (sineBasisFun k) := by
+    unfold sineBasisFun
+    fun_prop
+  refine MemLp.of_bound hc.aestronglyMeasurable (Real.sqrt 2) ?_
+  filter_upwards with x
+  change |Real.sqrt 2 * Real.sin ((k : ℝ) * Real.pi * x)| ≤ Real.sqrt 2
+  rw [abs_mul, abs_of_nonneg (Real.sqrt_nonneg 2)]
+  simpa only [mul_one] using mul_le_mul_of_nonneg_left
+    (Real.abs_sin_le_one ((k : ℝ) * Real.pi * x)) (Real.sqrt_nonneg 2)
+
+private noncomputable def sineL2 (k : ℕ+) : L2UnitInterval :=
+  MemLp.toLp (sineBasisFun k) (sine_memLp k)
+
+private lemma sineL2_coe (k : ℕ+) :
+    (sineL2 k : ℝ → ℝ) =ᵐ[volume.restrict (Set.Icc (0 : ℝ) 1)] sineBasisFun k := by
+  exact (sine_memLp k).coeFn_toLp
+
+private lemma sine_sq_integral (k : ℕ+) :
+    (∫ x in (0 : ℝ)..1, (sineBasisFun k x) ^ 2) = 1 := by
+  let a : ℝ := (k : ℝ) * Real.pi
+  have ha : a ≠ 0 := by dsimp [a]; positivity
+  have hs : Real.sin a = 0 := by
+    dsimp [a]
+    exact_mod_cast Real.sin_nat_mul_pi (k : ℕ)
+  have hf : (fun x : ℝ => (sineBasisFun k x) ^ 2) =
+      (fun x : ℝ => 2 * Real.sin (a * x) ^ 2) := by
+    funext x
+    simp only [sineBasisFun, mul_pow, Real.sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)]
+    rfl
+  rw [hf, intervalIntegral.integral_const_mul]
+  rw [intervalIntegral.integral_comp_mul_left (fun x : ℝ => Real.sin x ^ 2) ha]
+  simp only [mul_zero, mul_one, integral_sin_sq, Real.sin_zero, Real.cos_zero,
+    hs, zero_mul, zero_add, sub_zero, smul_eq_mul]
+  field_simp [ha]
+
+
+
+private lemma cos_int_mul_pi_integral (n : ℤ) (hn : n ≠ 0) :
+    (∫ x in (0 : ℝ)..1, Real.cos ((n : ℝ) * Real.pi * x)) = 0 := by
+  have ha : (n : ℝ) * Real.pi ≠ 0 :=
+    mul_ne_zero (by exact_mod_cast hn) Real.pi_ne_zero
+  rw [intervalIntegral.integral_comp_mul_left Real.cos ha]
+  simp only [mul_zero, mul_one, integral_cos, Real.sin_int_mul_pi,
+    Real.sin_zero, sub_self, smul_zero]
+
+private lemma sine_product_integral_of_ne (k j : ℕ+) (hkj : k ≠ j) :
+    (∫ x in (0 : ℝ)..1, sineBasisFun k x * sineBasisFun j x) = 0 := by
+  have hdiff : (k : ℤ) - (j : ℤ) ≠ 0 := by
+    intro h
+    apply hkj
+    exact_mod_cast sub_eq_zero.mp h
+  have hsum : (k : ℤ) + (j : ℤ) ≠ 0 := by positivity
+  have hf : (fun x : ℝ => sineBasisFun k x * sineBasisFun j x) =
+      (fun x : ℝ =>
+        Real.cos ((((k : ℤ) - (j : ℤ) : ℤ) : ℝ) * Real.pi * x) -
+        Real.cos ((((k : ℤ) + (j : ℤ) : ℤ) : ℝ) * Real.pi * x)) := by
+    funext x
+    calc
+      sineBasisFun k x * sineBasisFun j x =
+          (Real.sqrt 2) ^ 2 * Real.sin ((k : ℝ) * Real.pi * x) *
+            Real.sin ((j : ℝ) * Real.pi * x) := by
+              dsimp only [sineBasisFun]
+              ring
+      _ = 2 * Real.sin ((k : ℝ) * Real.pi * x) *
+          Real.sin ((j : ℝ) * Real.pi * x) := by
+            rw [Real.sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)]
+      _ = Real.cos ((k : ℝ) * Real.pi * x - (j : ℝ) * Real.pi * x) -
+          Real.cos ((k : ℝ) * Real.pi * x + (j : ℝ) * Real.pi * x) :=
+            Real.two_mul_sin_mul_sin _ _
+      _ = _ := by
+        congr 2 <;> push_cast <;> ring
+  have hc₁ : Continuous (fun x : ℝ =>
+      Real.cos ((((k : ℤ) - (j : ℤ) : ℤ) : ℝ) * Real.pi * x)) := by fun_prop
+  have hc₂ : Continuous (fun x : ℝ =>
+      Real.cos ((((k : ℤ) + (j : ℤ) : ℤ) : ℝ) * Real.pi * x)) := by fun_prop
+  rw [hf, intervalIntegral.integral_sub
+    (hc₁.intervalIntegrable 0 1) (hc₂.intervalIntegrable 0 1),
+    cos_int_mul_pi_integral _ hdiff, cos_int_mul_pi_integral _ hsum, sub_self]
+
+private lemma sine_product_integral (k j : ℕ+) :
+    (∫ x in (0 : ℝ)..1, sineBasisFun k x * sineBasisFun j x) =
+      if k = j then 1 else 0 := by
+  classical
+  by_cases hkj : k = j
+  · subst j
+    simpa [pow_two] using sine_sq_integral k
+  · simpa [hkj] using sine_product_integral_of_ne k j hkj
+
+private lemma sineL2_inner (k j : ℕ+) :
+    inner (𝕜 := ℝ) (sineL2 k) (sineL2 j) = if k = j then 1 else 0 := by
+  rw [L2.inner_def]
+  calc
+    (∫ x, inner (𝕜 := ℝ) (sineL2 k x) (sineL2 j x)
+        ∂volume.restrict (Set.Icc (0 : ℝ) 1)) =
+        ∫ x, sineBasisFun k x * sineBasisFun j x
+          ∂volume.restrict (Set.Icc (0 : ℝ) 1) := by
+            apply integral_congr_ae
+            filter_upwards [sineL2_coe k, sineL2_coe j] with x hx hy
+            simp only [hx, hy, RCLike.inner_apply]
+            simp [mul_comm]
+    _ = ∫ x in (0 : ℝ)..1, sineBasisFun k x * sineBasisFun j x := by
+      rw [intervalIntegral.integral_of_le zero_le_one]
+      exact (setIntegral_congr_set Ioc_ae_eq_Icc).symm
+    _ = if k = j then 1 else 0 := sine_product_integral k j
+
+private lemma orthonormal_sineL2 : Orthonormal ℝ sineL2 := by
+  classical
+  exact orthonormal_iff_ite.mpr sineL2_inner
+
+
+
+
+private noncomputable def oddExtension (f : ℝ → ℝ) : ℝ → ℂ :=
+  fun x => (((Set.Icc (0 : ℝ) 1).indicator f x : ℝ) : ℂ) -
+    (((Set.Icc (0 : ℝ) 1).indicator f (-x) : ℝ) : ℂ)
+
+private lemma oddExtension_memLp {p : ENNReal} {f : ℝ → ℝ}
+    (hf : MemLp f p (volume.restrict (Set.Icc (0 : ℝ) 1))) :
+    MemLp (oddExtension f) p volume := by
+  have hi : MemLp ((Set.Icc (0 : ℝ) 1).indicator f) p volume :=
+    (memLp_indicator_iff_restrict measurableSet_Icc.nullMeasurableSet).mpr hf
+  have hc : MemLp (fun x : ℝ =>
+      (((Set.Icc (0 : ℝ) 1).indicator f x : ℝ) : ℂ)) p volume := by
+    simpa only [Complex.ofRealCLM_apply] using
+      hi.continuousLinearMap_comp Complex.ofRealCLM
+  exact hc.sub (hc.comp_measurePreserving volume.measurePreserving_neg)
+
+private lemma oddExtension_neg (f : ℝ → ℝ) (x : ℝ) :
+    oddExtension f (-x) = -oddExtension f x := by
+  simp only [oddExtension, neg_neg]
+  ring
+
+private lemma oddExtension_pos (f : ℝ → ℝ) {x : ℝ}
+    (hx : x ∈ Set.Ioo (0 : ℝ) 1) : oddExtension f x = (f x : ℂ) := by
+  have hxp : x ∈ Set.Icc (0 : ℝ) 1 := Set.Ioo_subset_Icc_self hx
+  have hxn : -x ∉ Set.Icc (0 : ℝ) 1 := by
+    intro h
+    linarith [hx.1, h.1]
+  simp [oddExtension, hxp, hxn]
+
+private lemma oddExtension_integrable {f : ℝ → ℝ}
+    (hf : MemLp f 2 (volume.restrict (Set.Icc (0 : ℝ) 1))) :
+    Integrable (oddExtension f) volume := by
+  exact memLp_one_iff_integrable.mp
+    (oddExtension_memLp (hf.mono_exponent (by norm_num : (1 : ENNReal) ≤ 2)))
+
+private lemma fourier_two (n : ℤ) (x : ℝ) :
+    @fourier (2 : ℝ) n (x : AddCircle (2 : ℝ)) =
+      (Real.cos ((n : ℝ) * Real.pi * x) : ℂ) +
+        (Real.sin ((n : ℝ) * Real.pi * x) : ℂ) * Complex.I := by
+  rw [fourier_coe_apply]
+  calc
+    Complex.exp (2 * (Real.pi : ℂ) * Complex.I * (n : ℂ) * (x : ℂ) / (2 : ℂ)) =
+        Complex.exp ((((n : ℝ) * Real.pi * x : ℝ) : ℂ) * Complex.I) := by
+          congr 1
+          push_cast
+          ring
+    _ = _ := by
+      rw [Complex.exp_mul_I, ← Complex.ofReal_cos, ← Complex.ofReal_sin]
+
+private lemma fourier_reflect (n : ℤ) (x : ℝ) :
+    @fourier (2 : ℝ) (-n) ((-x : ℝ) : AddCircle (2 : ℝ)) =
+      @fourier (2 : ℝ) n (x : AddCircle (2 : ℝ)) := by
+  rw [fourier_coe_apply, fourier_coe_apply]
+  congr 1
+  push_cast
+  ring
+
+private lemma oddExtension_fourierCoeff {f : ℝ → ℝ}
+    (hf : MemLp f 2 (volume.restrict (Set.Icc (0 : ℝ) 1))) (n : ℤ) :
+    fourierCoeffOn (by norm_num : (-1 : ℝ) < 1) (oddExtension f) n =
+      -Complex.I *
+        ((∫ x in (0 : ℝ)..1, Real.sin ((n : ℝ) * Real.pi * x) * f x : ℝ) : ℂ) := by
+  let : NormedSpace ℝ ℂ := NormedSpace.complexToReal (E := ℂ)
+  let F : ℤ → ℝ → ℂ := fun m x =>
+    @fourier (2 : ℝ) m (x : AddCircle (2 : ℝ)) * oddExtension f x
+  have hc (m : ℤ) : Continuous (fun x : ℝ =>
+      @fourier (2 : ℝ) m (x : AddCircle (2 : ℝ))) := by fun_prop
+  have hFi (m : ℤ) (a b : ℝ) : IntervalIntegrable (F m) volume a b :=
+    (oddExtension_integrable hf).intervalIntegrable.continuousOn_mul (hc m).continuousOn
+  have hFm (x : ℝ) : F (-n) (-x) = -(F n x) := by
+    dsimp only [F]
+    rw [fourier_reflect n x, oddExtension_neg, mul_neg]
+  have hneg : (∫ x in (-1 : ℝ)..0, F (-n) x) =
+      -(∫ x in (0 : ℝ)..1, F n x) := by
+    calc
+      (∫ x in (-1 : ℝ)..0, F (-n) x) =
+          ∫ x in (0 : ℝ)..1, F (-n) (-x) := by
+            symm
+            simpa only [neg_zero] using
+              (intervalIntegral.integral_comp_neg (F (-n)) (a := 0) (b := 1))
+      _ = _ := by
+        simp_rw [hFm]
+        rw [intervalIntegral.integral_neg]
+  have hwhole : (∫ x in (-1 : ℝ)..1, F (-n) x) =
+      (-2 * Complex.I) *
+        ((∫ x in (0 : ℝ)..1, Real.sin ((n : ℝ) * Real.pi * x) * f x : ℝ) : ℂ) := by
+    calc
+      (∫ x in (-1 : ℝ)..1, F (-n) x) =
+          -(∫ x in (0 : ℝ)..1, F n x) + (∫ x in (0 : ℝ)..1, F (-n) x) := by
+            rw [← intervalIntegral.integral_add_adjacent_intervals
+              (hFi (-n) (-1) 0) (hFi (-n) 0 1), hneg]
+      _ = ∫ x in (0 : ℝ)..1, F (-n) x - F n x := by
+        rw [intervalIntegral.integral_sub (hFi (-n) 0 1) (hFi n 0 1)]
+        ring
+      _ = ∫ x in (0 : ℝ)..1,
+          (-2 * Complex.I) * ((Real.sin ((n : ℝ) * Real.pi * x) * f x : ℝ) : ℂ) := by
+        apply intervalIntegral.integral_congr_Ioo_of_le (by norm_num)
+        intro x hx
+        simp only [F, oddExtension_pos f hx, fourier_two, Int.cast_neg,
+          neg_mul, Real.cos_neg, Real.sin_neg]
+        push_cast
+        ring
+      _ = _ := by
+        rw [intervalIntegral.integral_const_mul, intervalIntegral.integral_ofReal]
+  rw [fourierCoeffOn_eq_integral]
+  simp only [smul_eq_mul, Complex.real_smul, fourier_coe_apply]
+  norm_num only
+  dsimp only [F] at hwhole
+  simp only [fourier_coe_apply] at hwhole
+  rw [hwhole]
+  push_cast
+  ring
+
+private lemma sineL2_inner_function (k : ℕ+) (f : L2UnitInterval) :
+    inner (𝕜 := ℝ) (sineL2 k) f = Real.sqrt 2 *
+      ∫ x in (0 : ℝ)..1, Real.sin ((k : ℝ) * Real.pi * x) * f x := by
+  rw [L2.inner_def]
+  calc
+    (∫ x, inner (𝕜 := ℝ) (sineL2 k x) (f x)
+        ∂volume.restrict (Set.Icc (0 : ℝ) 1)) =
+        ∫ x, Real.sqrt 2 * (Real.sin ((k : ℝ) * Real.pi * x) * f x)
+          ∂volume.restrict (Set.Icc (0 : ℝ) 1) := by
+      apply integral_congr_ae
+      filter_upwards [sineL2_coe k] with x hx
+      simp [hx, RCLike.inner_apply, sineBasisFun, mul_comm, mul_left_comm, mul_assoc]
+    _ = Real.sqrt 2 *
+        ∫ x, Real.sin ((k : ℝ) * Real.pi * x) * f x
+          ∂volume.restrict (Set.Icc (0 : ℝ) 1) := integral_const_mul _ _
+    _ = _ := by
+      congr 1
+      rw [intervalIntegral.integral_of_le zero_le_one]
+      exact (setIntegral_congr_set Ioc_ae_eq_Icc).symm
+
+private lemma sineIntegral_int_eq_zero (f : L2UnitInterval)
+    (hf : ∀ k : ℕ+, inner (𝕜 := ℝ) (sineL2 k) f = 0) (n : ℤ) :
+    (∫ x in (0 : ℝ)..1, Real.sin ((n : ℝ) * Real.pi * x) * f x) = 0 := by
+  have hs (k : ℕ+) :
+      (∫ x in (0 : ℝ)..1, Real.sin ((k : ℝ) * Real.pi * x) * f x) = 0 := by
+    have h := hf k
+    rw [sineL2_inner_function] at h
+    exact (mul_eq_zero.mp h).resolve_left
+      (Real.sqrt_pos.mpr (by norm_num : (0 : ℝ) < 2)).ne'
+  cases n with
+  | ofNat m =>
+      cases m with
+      | zero => simp
+      | succ m => simpa using hs ⟨m + 1, Nat.succ_pos m⟩
+  | negSucc m =>
+      have h : (∫ x in (0 : ℝ)..1,
+          Real.sin (((m + 1 : ℕ) : ℝ) * Real.pi * x) * f x) = 0 := by
+        simpa using hs ⟨m + 1, Nat.succ_pos m⟩
+      simp only [Int.cast_negSucc, neg_mul, Real.sin_neg, intervalIntegral.integral_neg]
+      simpa only [neg_zero] using congrArg Neg.neg h
+
+private lemma sineL2_orthogonal_eq_zero (f : L2UnitInterval)
+    (hf : ∀ k : ℕ+, inner (𝕜 := ℝ) (sineL2 k) f = 0) : f = 0 := by
+  have hfLp : MemLp (f : ℝ → ℝ) 2 (volume.restrict (Set.Icc (0 : ℝ) 1)) := Lp.memLp f
+  have hFC (n : ℤ) :
+      fourierCoeffOn (by norm_num : (-1 : ℝ) < 1) (oddExtension (f : ℝ → ℝ)) n = 0 := by
+    rw [oddExtension_fourierCoeff hfLp n, sineIntegral_int_eq_zero f hf n]
+    simp
+  have hLp : MemLp (oddExtension (f : ℝ → ℝ)) 2
+      (volume.restrict (Set.Ioc (-1 : ℝ) 1)) :=
+    (oddExtension_memLp hfLp).restrict _
+  have hi : (∫ x in (-1 : ℝ)..1, ‖oddExtension (f : ℝ → ℝ) x‖ ^ 2) = 0 := by
+    have hp := tsum_sq_fourierCoeffOn (by norm_num : (-1 : ℝ) < 1) hLp
+    simp [hFC] at hp
+    linarith
+  rw [intervalIntegral.integral_of_le (by norm_num : (-1 : ℝ) ≤ 1)] at hi
+  have hsq : (fun x => ‖oddExtension (f : ℝ → ℝ) x‖ ^ 2) =ᵐ[
+      volume.restrict (Set.Ioc (-1 : ℝ) 1)] (0 : ℝ → ℝ) :=
+    (integral_eq_zero_iff_of_nonneg (fun _ => sq_nonneg _)
+      (hLp.integrable_norm_pow (p := 2) (by norm_num))).mp hi
+  have hg : oddExtension (f : ℝ → ℝ) =ᵐ[
+      volume.restrict (Set.Ioc (-1 : ℝ) 1)] (0 : ℝ → ℂ) := by
+    filter_upwards [hsq] with x hx
+    change ‖oddExtension (f : ℝ → ℝ) x‖ ^ 2 = 0 at hx
+    apply norm_eq_zero.mp
+    nlinarith [norm_nonneg (oddExtension (f : ℝ → ℝ) x)]
+  have hμ : volume.restrict (Set.Ioo (0 : ℝ) 1) ≤
+      volume.restrict (Set.Ioc (-1 : ℝ) 1) := by
+    apply Measure.restrict_mono _ le_rfl
+    intro x hx
+    exact ⟨by linarith [hx.1], hx.2.le⟩
+  have hgp := Filter.Eventually.filter_mono (ae_mono hμ) hg
+  have hf0 : (f : ℝ → ℝ) =ᵐ[volume.restrict (Set.Ioo (0 : ℝ) 1)] (0 : ℝ → ℝ) := by
+    change ∀ᵐ x ∂volume.restrict (Set.Ioo (0 : ℝ) 1), f x = (0 : ℝ)
+    rw [ae_restrict_iff' measurableSet_Ioo] at hgp ⊢
+    filter_upwards [hgp] with x hx
+    intro hmem
+    have hz := hx hmem
+    rw [oddExtension_pos (f : ℝ → ℝ) hmem] at hz
+    change (f x : ℂ) = 0 at hz
+    exact_mod_cast hz
+  have hsets : volume.restrict (Set.Ioo (0 : ℝ) 1) =
+      volume.restrict (Set.Icc (0 : ℝ) 1) := Measure.restrict_congr_set Ioo_ae_eq_Icc
+  apply Lp.eq_zero_iff_ae_eq_zero.mpr
+  rwa [hsets] at hf0
+
+private lemma span_sineL2_orthogonal_eq_bot :
+    (Submodule.span ℝ (Set.range sineL2))ᗮ = ⊥ := by
+  apply (Submodule.eq_bot_iff _).mpr
+  intro f hf
+  apply sineL2_orthogonal_eq_zero f
+  intro k
+  exact (Submodule.mem_orthogonal _ _).mp hf (sineL2 k)
+    (Submodule.subset_span ⟨k, rfl⟩)
+
+private lemma exists_sineHilbertBasis : ∃ b : HilbertBasis ℕ+ ℝ L2UnitInterval,
+    ∀ k : ℕ+, (b k : L2UnitInterval) =ᵐ[volume.restrict (Set.Icc (0 : ℝ) 1)]
+      (sineBasisFun k : ℝ → ℝ) := by
+  let b := HilbertBasis.mkOfOrthogonalEqBot
+    orthonormal_sineL2 span_sineL2_orthogonal_eq_bot
+  refine ⟨b, ?_⟩
+  intro k
+  have hk : b k = sineL2 k := congrFun (HilbertBasis.coe_mkOfOrthogonalEqBot
+    orthonormal_sineL2 span_sineL2_orthogonal_eq_bot) k
+  rw [hk]
+  exact sineL2_coe k
+
+/-- The sine Hilbert basis of real `L²([0,1])`, indexed by positive integers. -/
+noncomputable def sineHilbertBasis : HilbertBasis ℕ+ ℝ L2UnitInterval :=
+  Classical.choose (p := fun b : HilbertBasis ℕ+ ℝ L2UnitInterval =>
+    ∀ k : ℕ+, (b k : L2UnitInterval) =ᵐ[volume.restrict (Set.Icc (0 : ℝ) 1)]
+      (sineBasisFun k : ℝ → ℝ)) (by exact exists_sineHilbertBasis)
+
+/-- The representatives of the sine Hilbert basis are exactly the source sine functions. -/
+lemma sineHilbertBasis_coe (k : ℕ+) :
+    (sineHilbertBasis k : L2UnitInterval) =ᵐ[volume.restrict (Set.Icc (0 : ℝ) 1)]
+      (sineBasisFun k : ℝ → ℝ) := by
+  exact Classical.choose_spec exists_sineHilbertBasis k
 
 end MathlibExt.Analysis.ODE.GreensOperator
