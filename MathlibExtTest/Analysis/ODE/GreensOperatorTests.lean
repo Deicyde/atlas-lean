@@ -20,6 +20,8 @@ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
   vanishes at `x = 0`; the first eigenvalue is `1 / π²`.
 * The kernel integral identity at `k = 1`, `x = 1 / 2` evaluates to
   `√2 / π²`, exercising `greens_kernel_integral_sine_eq` at a concrete point.
+* Given the indexed sine Hilbert basis, its nonzero second vector is sent
+  by the square-root operator to `1 / (2π)` times that vector.
 -/
 
 namespace MathlibExtTest.Analysis.ODE.GreensOperatorTests
@@ -95,5 +97,20 @@ example :
   have he : greensEigenvalue 1 = 1 / Real.pi ^ 2 := by simp [greensEigenvalue]
   rw [hs, he]
   ring
+
+/-- The sine-matching proof is required, and the second basis vector is nonzero. -/
+example (b : HilbertBasis ℕ+ ℝ L2UnitInterval)
+    (hb : ∀ k : ℕ+, (b k : L2UnitInterval) =ᵐ[
+      MeasureTheory.volume.restrict (Set.Icc (0 : ℝ) 1)] (sineBasisFun k : ℝ → ℝ)) :
+    b 2 ≠ 0 ∧ greensOperatorSqrt b hb (b 2) = (1 / (2 * Real.pi) : ℝ) • b 2 := by
+  refine ⟨b.orthonormal.ne_zero 2, ?_⟩
+  classical
+  rw [greensOperatorSqrt, tsum_eq_single (2 : ℕ+)]
+  · have h2 : inner (𝕜 := ℝ) (b 2) (b 2) = 1 := by
+      simpa using (orthonormal_iff_ite.mp b.orthonormal) 2 2
+    simp only [h2, mul_one, greensEigenvalueSqrt]
+    norm_num
+  · intro k hk
+    rw [b.orthonormal.inner_eq_zero hk, mul_zero, zero_smul]
 
 end MathlibExtTest.Analysis.ODE.GreensOperatorTests
