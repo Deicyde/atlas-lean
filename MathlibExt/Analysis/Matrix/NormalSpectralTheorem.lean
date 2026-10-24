@@ -19,8 +19,9 @@ import Mathlib.Tactic.Ring
 /-!
 # Spectral theorem for normal complex matrices
 
-A normal complex matrix is unitarily diagonalizable: if `M ⋆ M = M ⋆ M` (in the
-sense of `IsStarNormal`), there is a unitary matrix `P` and a diagonal `d` with
+A normal complex matrix is unitarily diagonalizable: if
+`star M * M = M * star M` (the condition `IsStarNormal M`), there is a unitary
+matrix `P` and a diagonal `d` with
 `star P * M * P = diagonal d`.
 
 This is the normal-matrix part of the spectral theorem in AlgebraNotes
