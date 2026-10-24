@@ -15,7 +15,7 @@ import Mathlib.Algebra.MonoidAlgebra.Module
 import Mathlib.LinearAlgebra.Dimension.Finrank
 
 /-!
-# Sum-of-squares formulas for characters and irreducible dimensions
+# Sum-of-squares formulas for characters and Wedderburn block sizes
 
 Two sum-of-squares formulas from the character theory of finite groups:
 
@@ -28,8 +28,8 @@ Two sum-of-squares formulas from the character theory of finite groups:
   its second half (the character criterion for irreducibility) was ported
   separately.
 
-* **Sum of squares of irreducible dimensions.** The Wedderburn–Artin
-  decomposition of the group algebra exhibits block sizes `d i` with
+* **Sum of squares of Wedderburn block sizes.** The Wedderburn–Artin
+  decomposition of the group algebra exhibits nonzero block sizes `d i` with
   `∑ i, (d i) ^ 2 = |G|`. This is the dimension-count part of the v1
   `mainTheorem`: the v1 full `mainTheorem` also asserted that the
   Wedderburn blocks give irreducible representations, which is unproved
@@ -101,9 +101,9 @@ theorem character_selfPairing_eq_sum_sq
   simp_rw [h_ortho]
   simp [Finset.sum_ite_eq', Finset.mem_univ]
 
-/-- **Sum of squares of the Wedderburn block dimensions.** The group
-algebra of a finite group over an algebraically closed field is a product
-of matrix algebras, and the squares of the block sizes sum to `|G|`. -/
+/-- **Sum of squares of the Wedderburn block sizes.** If `|G|` is nonzero in
+an algebraically closed field, the group algebra of a finite group is a product
+of matrix algebras with nonzero block sizes whose squares sum to `|G|`. -/
 theorem wedderburn_sum_sq_eq_card
     (k : Type u) [Field k] [IsAlgClosed k]
     (G : Type u) [Group G] [Fintype G] [NeZero (Nat.card G : k)] :

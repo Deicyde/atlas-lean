@@ -142,7 +142,7 @@ example {G : Type} [Group G] [Fintype G] :
   simp
   norm_num
 
-/-- Wedderburn dimensions for `S₃`: there are block sizes with
+/-- Wedderburn block sizes for `S₃`: there are nonzero block sizes with
 `∑ (d i) ^ 2 = |S₃| = 6`. -/
 example :
     ∃ (n : ℕ) (d : Fin n → ℕ), (∀ i, 1 ≤ d i) ∧ ∑ i, (d i) ^ 2 = 6 := by
@@ -153,7 +153,7 @@ example :
   rw [hsum]
   norm_num [Nat.card_eq_fintype_card, Fintype.card_perm]
 
-/-- Wedderburn dimensions for `S₂`: there are block sizes with
+/-- Wedderburn block sizes for `S₂`: there are nonzero block sizes with
 `∑ (d i) ^ 2 = |S₂| = 2`. -/
 example :
     ∃ (n : ℕ) (d : Fin n → ℕ), (∀ i, 1 ≤ d i) ∧ ∑ i, (d i) ^ 2 = 2 := by
