@@ -9,57 +9,63 @@ LICENSE file in the root directory of this source tree.
 module
 
 public import Mathlib.Analysis.Complex.Basic
-public import Mathlib.Analysis.Calculus.Deriv.Basic
 public import Mathlib.MeasureTheory.Integral.CurveIntegral.Basic
 import Mathlib.Analysis.Calculus.Deriv.Comp
 
 /-!
 # Change of variables in a contour integral
 
-For `φ` holomorphic on an open set `Ω` containing a path `γ` that is differentiable on `[0, 1]`,
-`∫_{φ ∘ γ} f(w) dw = ∫_γ f(φ(z)) φ′(z) dz` (`Complex.curveIntegral_map'`). Contour integrals are
-Mathlib's `curveIntegral` of the 1-form `f z • ContinuousLinearMap.id ℂ ℂ`, as in
-`WantedExt/Analysis/Complex/ContourIntegralWanted.lean`, and `φ ∘ γ` is `Path.map'`.
+For `φ` holomorphic on an open set `Ω` containing a path `γ` that is differentiable at almost every
+time, `∫_{φ ∘ γ} f(w) dw = ∫_γ f(φ(z)) φ′(z) dz` (`Complex.curveIntegral_map'_eq_comp_mul_deriv`).
+Almost-everywhere differentiability covers piecewise differentiable curves, which may have corners.
+Contour integrals are Mathlib's `curveIntegral` of the 1-form `f z • ContinuousLinearMap.id ℂ ℂ`, as
+in `WantedExt/Analysis/Complex/ContourIntegralWanted.lean`, and `φ ∘ γ` is `Path.map'`.
 
 Mathlib's `curveIntegral` has reversal, concatenation, segments and linearity, but no change of
-variables.
+variables. The proof rewrites both sides as interval integrals and applies the chain rule at almost
+every time.
 
-Restatement on Mathlib's `curveIntegral` of `complex_line_integral_substitution` from
+Rubric-guided revision of v1 ComplexVariables target 9 (`complex_line_integral_substitution` in
 `v1/Atlas/ComplexVariables/code/Lecture8.lean` at commit
-`6191bf1ba03d204784385ef5be2472be88035b93`, lines 21–40, which used the archived
-`complexLineIntegral` (`∫ t in a..b, f (γ t) * deriv γ t`); the chain-rule argument is the same.
-The archived formalization and its original license/provenance remain in `v1/` (the original
-license text is `v1/LICENSE`). This records equivalence to the archived Lean statement, not
-verification against the printed textbook.
+`6191bf1ba03d204784385ef5be2472be88035b93`, lines 21–40). The archived statement used its own
+`complexLineIntegral` and required the curve to be differentiable at every point, which excludes
+curves with corners; both are fixed here. The archived formalization and its original
+license/provenance remain in `v1/` (the original license text is `v1/LICENSE`).
 -/
 
 set_option autoImplicit false
 
-open Set MeasureTheory
+open MeasureTheory Set
+open scoped unitInterval
 
 namespace Complex
 
-/-- **Change of variables in a contour integral.** If `φ` is holomorphic on an open set containing
-the path `γ`, and `γ` is differentiable on `[0, 1]`, then
-`∫_{φ ∘ γ} f(w) dw = ∫_γ f(φ(z)) φ′(z) dz`. -/
-public theorem curveIntegral_map' {f φ : ℂ → ℂ} {a b : ℂ} {Ω : Set ℂ} (hΩ : IsOpen Ω)
-    (hφ : DifferentiableOn ℂ φ Ω) (γ : Path a b) (hγΩ : range γ ⊆ Ω)
-    (hγ : ∀ t ∈ Icc (0 : ℝ) 1, DifferentiableWithinAt ℝ γ.extend (Icc 0 1) t) :
+/-- **Change of variables in a complex line integral.**
+Let `φ` be holomorphic on an open set `Ω` and let `γ` be a curve in `Ω`, differentiable at almost
+every time (this covers piecewise differentiable curves, which may have corners). Then for every
+`f : ℂ → ℂ`,
+$$\int_{\varphi(\gamma)} f(w)\,dw = \int_\gamma f(\varphi(z))\,\varphi'(z)\,dz.$$
+The image curve `φ(γ)` is the path `γ.map' _`, and the 1-form `f(w) dw` is
+`f w • ContinuousLinearMap.id ℂ ℂ`. A region in the source is a connected open set; the formula
+does not use connectedness. -/
+public theorem curveIntegral_map'_eq_comp_mul_deriv {Ω : Set ℂ} {φ : ℂ → ℂ} {z₀ z₁ : ℂ}
+    (f : ℂ → ℂ) (γ : Path z₀ z₁) (hΩ : IsOpen Ω) (hφ : DifferentiableOn ℂ φ Ω)
+    (hγΩ : range γ ⊆ Ω) (hγ : ∀ᵐ t, t ∈ I → DifferentiableAt ℝ γ.extend t) :
     (∫ᶜ w in γ.map' (hφ.continuousOn.mono hγΩ), f w • ContinuousLinearMap.id ℂ ℂ) =
       ∫ᶜ z in γ, (f (φ z) * deriv φ z) • ContinuousLinearMap.id ℂ ℂ := by
-  have hext : (γ.map' (hφ.continuousOn.mono hγΩ)).extend = φ ∘ γ.extend := by
-    funext t
-    rfl
-  rw [curveIntegral_def, curveIntegral_def]
-  refine intervalIntegral.integral_congr fun t ht => ?_
-  rw [uIcc_of_le zero_le_one] at ht
-  simp only [curveIntegralFun_def, hext, Function.comp_apply, smul_apply,
-    ContinuousLinearMap.id_apply, smul_eq_mul]
-  have hmem : γ.extend t ∈ Ω := hγΩ (by rw [Path.extend_apply γ ht]; exact mem_range_self _)
-  have hd := ((hφ.differentiableAt (hΩ.mem_nhds hmem)).hasDerivAt.comp_hasDerivWithinAt t
-    (hγ t ht).hasDerivWithinAt).derivWithin (uniqueDiffOn_Icc zero_lt_one t ht)
-  rw [hd]
+  have hext : ⇑(γ.map' (hφ.continuousOn.mono hγΩ)).extend = φ ∘ γ.extend := rfl
+  rw [curveIntegral_eq_intervalIntegral_deriv (E := ℂ) (F := ℂ),
+    curveIntegral_eq_intervalIntegral_deriv (E := ℂ) (F := ℂ), hext]
+  refine intervalIntegral.integral_congr_ae ?_
+  rw [uIoc_of_le zero_le_one]
+  filter_upwards [hγ] with t hγt ht
+  have hφt : DifferentiableAt ℂ φ (γ.extend t) :=
+    hφ.differentiableAt (hΩ.mem_nhds (hγΩ (γ.extend_range.subset (mem_range_self t))))
+  -- The chain rule at a time where `γ` is differentiable.
+  have hchain : deriv (φ ∘ γ.extend) t = deriv φ (γ.extend t) * deriv γ.extend t :=
+    (hφt.hasDerivAt.comp t (hγt (Ioc_subset_Icc_self ht)).hasDerivAt).deriv
+  simp only [Function.comp_apply, smul_apply, ContinuousLinearMap.id_apply,
+    smul_eq_mul, hchain]
   ring
 
 end Complex
-
