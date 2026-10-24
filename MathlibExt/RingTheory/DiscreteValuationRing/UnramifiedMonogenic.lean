@@ -13,6 +13,9 @@ public import Mathlib.FieldTheory.SeparableClosure
 public import Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots
 public import MathlibExt.NumberTheory.HenselFactorization
 public import MathlibExt.RingTheory.DiscreteValuationRing.Monogenic
+import Mathlib.Algebra.GCDMonoid.IntegrallyClosed
+import Mathlib.LinearAlgebra.FreeModule.PID
+import Mathlib.RingTheory.IsAdjoinRoot
 
 /-!
 # Unramified DVR extensions are monogenic with separable reduced
@@ -36,9 +39,13 @@ irreducibility from a Hensel-lifting lemma that is left unproved there
 (`hensel_lemma_III` in `v1/Atlas/NumberTheoryI/code/HenselFactorization.lean`),
 so the argument below does not follow v1 at that step.
 
-Corollary 10.16 is included as a consequence: adjoining a primitive `n`th
-root of unity with `n` coprime to the residue characteristic gives an
-unramified extension.
+A conditional root-of-unity consequence is included, corresponding to
+the v1 helper `cor_10_16_of_adjoin`: if `B = A[ζ]` for a primitive `n`th
+root of unity with `n` coprime to the residue characteristic, then the
+extension is unramified. The generation equality is an input hypothesis.
+The full Corollary 10.16 concerns the integral closure in `K(ζ) / K` and
+first proves this generation equality; that setup and proof are outside
+this module's coverage.
 
 ## Main results
 
@@ -46,7 +53,8 @@ unramified extension.
   minimal polynomial: the Corollary 10.15 equivalence, with unramifiedness
   stated as separable residue-field extension plus equality of degrees.
 * `IsDiscreteValuationRing.unramified_of_primitive_root_of_unity_of_coprime`:
-  Corollary 10.16, in the form: if `B = A[ζ]` for a primitive `n`th root of
+  the conditional helper `cor_10_16_of_adjoin`: if `B = A[ζ]` for a primitive
+  `n`th root of
   unity `ζ` with `n` coprime to the residue characteristic, then `B / A`
   is unramified in the above sense.
 -/
@@ -272,9 +280,12 @@ theorem unramified_iff_exists_monogenic_separable_reduced_minpoly :
             (IsAdjoinRootMonic.mkOfAdjoinEqTop' hres).finrank.symm
     exact ⟨hres_sep, hfin⟩
 
-/-- Corollary 10.16 of ATLAS `NumberTheoryI`: adjoining a primitive `n`th
-root of unity with `n` coprime to the residue characteristic gives an
-unramified extension of discrete valuation rings. -/
+/-- Conditional root-of-unity consequence of Corollary 10.15, corresponding
+to the ATLAS `NumberTheoryI` helper `cor_10_16_of_adjoin`: if `B = A[ζ]`
+for a primitive `n`th root of unity and `n` is coprime to the residue
+characteristic, then the DVR extension is unramified. The generation
+premise `hgen` is assumed here; the full Corollary 10.16 integral-closure
+and cyclotomic setup, including its proof of `hgen`, is outside this lemma. -/
 theorem unramified_of_primitive_root_of_unity_of_coprime {n : ℕ} {ζ : B}
     (hprim : IsPrimitiveRoot ζ n)
     (hcoprime : Nat.Coprime n (ringChar (IsLocalRing.ResidueField A)))

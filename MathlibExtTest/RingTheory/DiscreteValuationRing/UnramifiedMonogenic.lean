@@ -17,7 +17,8 @@ public import MathlibExt.RingTheory.DiscreteValuationRing.UnramifiedMonogenic
 These examples exercise the two public theorems of
 `MathlibExt.RingTheory.DiscreteValuationRing.UnramifiedMonogenic`:
 the Corollary 10.15 equivalence in both directions, the identity extension
-end to end, and the Corollary 10.16 cyclotomic criterion.
+end to end, and the conditional root-of-unity helper with its generation
+premise.
 -/
 
 @[expose] public section
@@ -60,7 +61,7 @@ example (A : Type*) [CommRing A] [IsDomain A] [IsDiscreteValuationRing A]
   exact unramified_iff_exists_monogenic_separable_reduced_minpoly.mp
     ⟨inferInstance, hfin⟩
 
-/-- Generic application of the Corollary 10.16 cyclotomic criterion. -/
+/-- Generic application of the conditional root-of-unity helper, with `hgen`. -/
 example {n : ℕ} {ζ : B} (hprim : IsPrimitiveRoot ζ n)
     (hcoprime : Nat.Coprime n (ringChar (IsLocalRing.ResidueField A)))
     (hgen : Algebra.adjoin A ({ζ} : Set B) = ⊤) :
