@@ -29,8 +29,8 @@ This formalizes the target "Theorem (Uniform integrability equivalences)"
 in probability then the following are equivalent: (1) `X_n` are uniformly
 integrable, (2) `X_n → X` in `L¹`, (3) `E|X_n| → E|X| < ∞`." Its v1
 formalization is `v1/Atlas/TheoryOfProbability/code/UIConvergenceEquiv.lean`
-(`ui_convergence_equivalences`, fully proved in v1), which proves all three implications
-from scratch. Here the two implications already contained in Mathlib's Vitali
+(`ui_convergence_equivalences`, fully proved in v1), assembles the equivalence
+while reusing Mathlib's Vitali implications. Here the two implications contained in Mathlib's Vitali
 convergence theorem (`tendstoInMeasure_iff_tendsto_Lp_finite`) are taken from
 Mathlib; the new content is Scheffé's lemma and the
 norm-convergence `⇒` `L¹`-convergence implication, which Mathlib does not have.
