@@ -30,10 +30,13 @@ import Mathlib.Tactic.Ring
 Every isometry of the Euclidean plane `Plane = EuclideanSpace ℝ (Fin 2)` is a
 **translation**, a **rotation** about a point, a **reflection** across a line,
 or a **glide reflection**: a reflection across a line followed by a nonzero
-translation along that line. The four cases are distinguished by the determinant
-`linearDet f` of the linear part of `f` (`1` for translations and rotations,
-`-1` for reflections and glide reflections) and by whether the linear part has
-a fixed point.
+translation along that line. The cases are distinguished by the determinant
+`linearDet f` of the linear part, whether that linear part is the identity,
+and whether the affine isometry `f` has a fixed point. The determinant is `1`
+for translations and rotations, and `-1` for reflections and glide
+reflections. Translations have identity linear part. Rotations have
+nonidentity linear part and fix a point. Reflections fix a line pointwise;
+glide reflections have no fixed point.
 
 Source: `v1/Atlas/AlgebraNotes/code/Isometries.lean` (targets
 `Isometries.plane_isometry_classification` and
