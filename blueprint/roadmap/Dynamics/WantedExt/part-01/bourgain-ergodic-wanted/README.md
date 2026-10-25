@@ -4,6 +4,6 @@ navigation: module
 
 # Bourgain Ergodic
 
-- [Is Integer Polynomial Sequence](is-integer-polynomial-sequence.md)
-- [Polynomial Ergodic Average](polynomial-ergodic-average.md)
-- [Bourgain polynomial ergodic](bourgain-polynomial-ergodic.md)
+- [Integer polynomial sequences](is-integer-polynomial-sequence.md)
+- [Polynomial ergodic averages](polynomial-ergodic-average.md)
+- [Bourgain's polynomial ergodic theorem](bourgain-polynomial-ergodic.md)

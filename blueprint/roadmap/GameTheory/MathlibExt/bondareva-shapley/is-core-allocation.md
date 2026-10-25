@@ -6,13 +6,16 @@ statement: formalized
 lean: MathlibExt.GameTheory.BondarevaShapleyWanted.IsCoreAllocation
 ---
 
-# Is Core Allocation
+# Core allocation
 
-Core allocation: efficiency and coalitional rationality.
+**Core allocation.** A payoff vector $x \colon N \to \mathbb{R}$ is a core allocation of a
+cooperative game $v$ on a finite set $N$ of players if it is efficient,
+$\sum_{i \in N} x_i = v(N)$, and coalitionally rational, $v(S) \le \sum_{i \in S} x_i$ for every
+coalition $S \subseteq N$.
 
 ## Depends on
 
-- [Coop Game](../shapley-value/coop-game.md)
+- [Cooperative game with transferable utility](../shapley-value/coop-game.md)
 
 ## Sources
 

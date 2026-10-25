@@ -6,14 +6,16 @@ proof: formalized
 lean: InformationTheory.measureMutualInformation_toMeasure_eq_zero_iff
 ---
 
-# Measure Mutual Information to Measure eq zero iff
+# Mutual information vanishes exactly under independence
 
-The mutual information of a joint law given by a `PMF` vanishes exactly when the coordinates
-are independent.
+**Mutual information vanishes exactly under independence.** Let $p$ be a discrete probability
+distribution on $\alpha \times \beta$, where $\alpha$ and $\beta$ are measurable spaces. The mutual
+information of the probability measure defined by $p$ is $0$ if and only if this measure equals
+the product of the probability measures defined by the two marginals of $p$.
 
 ## Depends on
 
-- [Measure Mutual Information](measure-mutual-information.md)
+- [Mutual information of a joint probability measure](measure-mutual-information.md)
 
 ## Sources
 

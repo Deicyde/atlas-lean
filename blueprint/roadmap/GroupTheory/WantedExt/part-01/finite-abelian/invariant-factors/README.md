@@ -4,5 +4,5 @@ navigation: module
 
 # Invariant Factors
 
-- [Elementary divisors equiv invariant factors](elementary-divisors-equiv-invariant-fact.md)
-- [Equiv free prod direct Sum invariant factors](equiv-free-prod-direct-sum-invariant-fac.md)
+- [From elementary divisors to invariant factors](elementary-divisors-equiv-invariant-fact.md)
+- [Invariant factor decomposition of finitely generated abelian groups](equiv-free-prod-direct-sum-invariant-fac.md)

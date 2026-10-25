@@ -6,16 +6,15 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.StrictTotalOrder.trans
 ---
 
-# Trans
+# Strict preference orders for Arrow's theorem are transitive
 
-Compatibility alias for the former `ArrowWanted.StrictTotalOrder.trans` projection.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.trans` directly.
+**Strict preference orders for Arrow's theorem are transitive.** If $<$ is a strict total order
+on a type $\alpha$ and $a, b, c \in \alpha$ satisfy $a < b$ and $b < c$, then $a < c$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
-- [Lt](lt.md)
+- [Strict preference orders for Arrow's theorem](strict-total-order.md)
+- [Preference relation of a strict total order (Arrow's theorem)](lt.md)
 
 ## Proof depends on
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: BurnsidePaqb.mem_charCenter_iff
 ---
 
-# Mem char Center iff
+# Membership in the scalar center
 
-Membership unfolds to the scalar-action property.
+**Membership in the scalar center.** Let $\rho$ be a representation of a group $G$ on a nonzero
+complex vector space $V$. An element $g \in G$ lies in the scalar center of $\rho$ if and only if
+$\rho(g) = c \cdot \mathrm{id}_V$ for some $c \in \mathbb{C}$.
 
 ## Depends on
 
-- [Char Center](char-center.md)
+- [Scalar center of a representation](char-center.md)
 
 ## Sources
 

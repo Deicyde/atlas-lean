@@ -5,7 +5,7 @@ navigation: collection
 
 # MathlibExt
 
-## [Burnside Paqb to General Linear Group Exponent](part-01/README.md)
+## [Burnside Paqb to Exponent of the general linear group over a prime field](part-01/README.md)
 
 - [Burnside Paqb](part-01/burnside-paqb/README.md)
 - [Finite Abelian](part-01/finite-abelian/README.md)
@@ -15,7 +15,7 @@ navigation: collection
 - [Abelian Representation](part-01/abelian-representation/README.md)
 - [Amenable Group](part-01/amenable-group/README.md)
 - [Artin Group](part-01/artin-group/README.md)
-- [Automorphism Orbits](part-01/has-finitely-many-automorphism-orbits.md)
+- [Groups with finitely many automorphism orbits](part-01/has-finitely-many-automorphism-orbits.md)
 - [Burnside Paqb](part-01/burnside-paqb-2/README.md)
 - [Burnside Paqb Reduction](part-01/burnside-paqb-reduction/README.md)
 - [Class Breadth](part-01/class-breadth/README.md)
@@ -26,18 +26,18 @@ navigation: collection
 - [Finite Abelian Dual](part-01/finite-abelian-dual/README.md)
 - [Finite Group Convolution](part-01/finite-group-convolution/README.md)
 - [GHarmonic](part-01/gharmonic/README.md)
-- [General Linear Group Exponent](part-01/general-linear-group-exponent-eq-lcm-eq.md)
+- [Exponent of the general linear group over a prime field](part-01/general-linear-group-exponent-eq-lcm-eq.md)
 
 ## [Group Growth to Two Power Rank](part-02/README.md)
 
 - [Group Growth](part-02/group-growth/README.md)
-- [HNNEmbedding](part-02/higman-neumann-neumann-embedding.md)
+- [Higman–Neumann–Neumann embedding theorem](part-02/higman-neumann-neumann-embedding.md)
 - [Hyperbolic Group](part-02/hyperbolic-group/README.md)
 - [Irreducible Character Basis](part-02/irreducible-character-basis/README.md)
-- [Jordan Linear Groups](part-02/jordan-linear-groups.md)
-- [Linear Group Finiteness](part-02/malcev-residually-finite.md)
+- [Jordan's theorem on finite linear groups](part-02/jordan-linear-groups.md)
+- [Malcev's theorem on linear groups](part-02/malcev-residually-finite.md)
 - [Permutation Stability](part-02/permutation-stability/README.md)
-- [Schur Zassenhaus](part-02/schur-zassenhaus-conjugate-complements.md)
-- [Selberg Finite Index Torsion Free](part-02/selberg-finite-index-torsion-free.md)
-- [Szele Cyclic Number](part-02/szele-cyclic-number-criterion.md)
+- [Schur–Zassenhaus theorem: conjugacy of complements](part-02/schur-zassenhaus-conjugate-complements.md)
+- [Selberg's lemma](part-02/selberg-finite-index-torsion-free.md)
+- [Szele's criterion for cyclic numbers](part-02/szele-cyclic-number-criterion.md)
 - [Two Power Rank](part-02/two-power-rank/README.md)

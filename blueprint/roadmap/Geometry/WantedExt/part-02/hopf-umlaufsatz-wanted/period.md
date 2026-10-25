@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Geometry.HopfUmlaufsatzWanted.Geometry.HopfUmlaufsatz.period
 ---
 
-# Period
+# Parameter period for the Umlaufsatz
 
-The `2π` parameter period.
+**Parameter period for the Umlaufsatz.** The parameter period of the closed curves in the
+Hopf Umlaufsatz is the real number $2\pi$.
 
 ## Depends on
 

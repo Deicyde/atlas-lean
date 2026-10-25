@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.CodingTheory.CRC.encode
 ---
 
-# Encode
+# CRC encoder
 
-The **CRC encoder** for the generator `g`: shift the message up by `deg g` and subtract its
-remainder modulo `g`.
+**CRC encoder.** Let $F$ be a field, let $g$ be a polynomial over $F$ (the generator), and let
+$r$ be the degree of $g$ (with $r = 0$ when $g = 0$). The CRC encoding of a polynomial $m$ over
+$F$ (the message) is $m X^r - (m X^r \bmod g)$: the message shifted up by $r$ positions, minus the
+remainder of the shifted message modulo $g$.
 
 ## Depends on
 

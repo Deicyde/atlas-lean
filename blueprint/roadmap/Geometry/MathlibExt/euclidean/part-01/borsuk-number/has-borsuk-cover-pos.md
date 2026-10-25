@@ -7,13 +7,15 @@ proof: formalized
 lean: Metric.hasBorsukCover_pos
 ---
 
-# Has Borsuk Cover pos
+# Borsuk covers of nonempty sets have at least one piece
 
-A nonempty set cannot have a zero-member cover.
+**Borsuk covers of nonempty sets have at least one piece.** Let $n$ and $k$ be natural
+numbers. If a nonempty set $s$ in the Euclidean space $\mathbb{R}^n$ has a $k$-piece Borsuk
+cover, then $0 < k$.
 
 ## Depends on
 
-- [Has Borsuk Cover](has-borsuk-cover.md)
+- [Borsuk covers](has-borsuk-cover.md)
 
 ## Sources
 

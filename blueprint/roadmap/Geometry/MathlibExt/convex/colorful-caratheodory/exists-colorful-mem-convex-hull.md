@@ -7,12 +7,12 @@ proof: formalized
 lean: MathlibExt.Geometry.Convex.ColorfulCaratheodoryWanted.exists_colorful_mem_convexHull
 ---
 
-# Exists colorful mem convex Hull
+# Colorful Carathéodory theorem
 
-Colorful Carathéodory theorem for arbitrary color classes: if each of `d + 1` sets in
-`ℝ^d` has the origin in its convex hull, some choice of one point from each set has the
-origin in its convex hull. Reduces to `colorful_caratheodory` through finite subsets
-witnessing each convex-hull membership.
+**Colorful Carathéodory theorem.** Let $d \ge 0$ and let $S_0, \dots, S_d$ be subsets of the
+Euclidean space $\mathbb{R}^d$ such that the origin lies in the convex hull of each $S_i$. Then
+there are points $c_0 \in S_0, \dots, c_d \in S_d$ such that the origin lies in the convex hull of
+$\{c_0, \dots, c_d\}$.
 
 ## Depends on
 
@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Colorful caratheodory](colorful-caratheodory.md)
+- [Colorful Carathéodory theorem for finite sets](colorful-caratheodory.md)
 
 ## Sources
 

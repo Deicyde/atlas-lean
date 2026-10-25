@@ -7,10 +7,12 @@ proof: formalized
 lean: MathlibExt.Geometry.Convex.ColorfulCaratheodoryWanted.colorful_caratheodory
 ---
 
-# Colorful caratheodory
+# Colorful Carathéodory theorem for finite sets
 
-Any d+1 finite sets containing origin in their convex hull admit a colorful transversal.
-See `exists_colorful_mem_convexHull` for arbitrary sets.
+**Colorful Carathéodory theorem for finite sets.** Let $d \ge 0$ and let $S_0, \dots, S_d$ be
+finite subsets of the Euclidean space $\mathbb{R}^d$ such that the origin lies in the convex hull
+of each $S_i$. Then there are points $c_0 \in S_0, \dots, c_d \in S_d$ such that the origin lies
+in the convex hull of $\{c_0, \dots, c_d\}$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Colorful caratheodory finrank](colorful-caratheodory-finrank.md)
+- [Colorful Carathéodory theorem in finite-dimensional inner product spaces](colorful-caratheodory-finrank.md)
 
 ## Sources
 

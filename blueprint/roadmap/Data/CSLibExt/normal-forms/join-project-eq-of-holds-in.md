@@ -17,13 +17,13 @@ lean: Cslib.Databases.join_project_eq_of_holdsIn
 - [A functional dependency holds in a relation](../functional-dependencies/holds-in.md)
 - [Is Over](../relational-algebra/is-over-2.md)
 - [Tuple](../relational-algebra/tuple.md)
-- [Join](../relational-algebra/join.md)
-- [Project](../relational-algebra/project.md)
+- [Natural join](../relational-algebra/join.md)
+- [Projection of a relation](../relational-algebra/project.md)
 
 ## Proof depends on
 
-- [Is Over](../relational-algebra/is-over.md)
-- [Restrict](../relational-algebra/restrict.md)
+- [Tuple over a schema](../relational-algebra/is-over.md)
+- [Restriction of a tuple](../relational-algebra/restrict.md)
 - [Membership in a join](../relational-algebra/mem-join-iff.md)
 
 ## Sources

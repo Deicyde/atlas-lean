@@ -7,13 +7,15 @@ proof: formalized
 lean: isGHarmonic_singleton_one
 ---
 
-# Is GHarmonic singleton one
+# The tuple (1) is G-harmonic
 
-The positive singleton `(1)` is `G`-harmonic via `⊤` and `1`.
+**The tuple (1) is G-harmonic.** For every group $G$, the one-entry tuple $(1)$ is
+$G$-harmonic; the subgroup $G$ itself, of index $1$, with coset representative $1$ witnesses
+this.
 
 ## Depends on
 
-- [Is GHarmonic](is-gharmonic.md)
+- [G-harmonic tuples](is-gharmonic.md)
 
 ## Sources
 

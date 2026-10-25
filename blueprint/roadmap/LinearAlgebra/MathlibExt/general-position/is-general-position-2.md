@@ -7,13 +7,15 @@ proof: formalized
 lean: AffineIndependent.isGeneralPosition
 ---
 
-# Is General Position
+# Affinely independent families are in general position
 
-An affinely independent family is in general position in every dimension.
+**Affinely independent families are in general position.** If a family $(p_i)_{i \in \iota}$ of
+points of an affine space over a division ring $k$ is affinely independent over $k$, then it is in
+general position through dimension $d$ for every $d \in \mathbb{N}$.
 
 ## Depends on
 
-- [Is General Position](is-general-position.md)
+- [General position of affine points](is-general-position.md)
 
 ## Sources
 

@@ -7,14 +7,15 @@ proof: formalized
 lean: Matrix.SignConditionNumber.conditionNumber_zero
 ---
 
-# Condition Number zero
+# The zero matrix has infinite condition number
 
-Zero matrices, including the isolated zero-order matrix, have infinite
-condition number under the singular convention.
+**The zero matrix has infinite condition number.** For every natural number $n$, the
+condition number of the real $n \times n$ zero matrix is $\infty$; this includes the
+$0 \times 0$ matrix.
 
 ## Depends on
 
-- [Condition Number](condition-number.md)
+- [Condition number of a square real matrix](condition-number.md)
 
 ## Sources
 

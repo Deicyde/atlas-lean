@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.Geometry.ParallelPostulateWanted.Geometry.parallel_postulate_independent
 ---
 
-# Parallel postulate independent
+# Independence of the parallel postulate
 
-Source: Independence of Euclid's parallel postulate; the hyperbolic-plane models are due to E. Beltrami (1868) and F. Klein (1871). Tarski's axiomatization: W. Schwabhäuser, W. Szmielew, A. Tarski, Metamathematische Methoden in der Geometrie, Springer (1983). Formalized in HOL Light by John Harrison and in Isabelle by Tim Makarios (T.J.M. Makarios, A Mechanical Verification of the Independence of Tarski's Euclidean Axiom, MSc thesis, Victoria University of Wellington, 2012; Isabelle/AFP entry Tarskis_Geometry). Via leanprover/lean-eval@38361be, problem `parallel_postulate_independent`.
+**Independence of the parallel postulate.** Tarski's Euclidean axiom A10 is independent of
+Tarski's axioms of absolute plane geometry: there is a model of absolute plane geometry in which
+the Euclidean axiom holds, and there is a model of absolute plane geometry in which it fails.
 
 ## Depends on
 
-- [Euclidean](euclidean.md)
-- [Tarski Absolute](tarski-absolute.md)
+- [Tarski's Euclidean axiom](euclidean.md)
+- [Tarski's absolute plane geometry](tarski-absolute.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ParallelPostulateWanted](../../../../../sources/v2/WantedExt.md)
+- Independence of Euclid's parallel postulate; the hyperbolic-plane models are due to E. Beltrami (1868) and F. Klein (1871). Tarski's axiomatization: W. Schwabhäuser, W. Szmielew, A. Tarski, Metamathematische Methoden in der Geometrie, Springer (1983). Formalized in HOL Light by John Harrison and in Isabelle by Tim Makarios (T.J.M. Makarios, A Mechanical Verification of the Independence of Tarski's Euclidean Axiom, MSc thesis, Victoria University of Wellington, 2012; Isabelle/AFP entry Tarskis_Geometry). Via leanprover/lean-eval@38361be, problem `parallel_postulate_independent`.

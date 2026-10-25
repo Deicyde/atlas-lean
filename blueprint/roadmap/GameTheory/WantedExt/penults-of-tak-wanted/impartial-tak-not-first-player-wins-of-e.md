@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.impartialTak_not_firstPlayerWins_of_even
 ---
 
-# Impartial Tak not first Player Wins of even
+# The second player wins Impartial Tak on even boards
 
-Proposition 2: in Impartial Tak on an `n × n` board with `n` even the second player wins.
-The mirroring strategy of the paper is not formalized; only the outcome is stated.
+**The second player wins Impartial Tak on even boards.** Impartial Tak is the impartial
+placement game on the $n \times n$ board in which the players alternately place a token on an
+empty cell, play ends once the tokens contain a road, and the player unable to move loses. If $n$
+is even, the first player does not win from the empty $n \times n$ board, that is, the second
+player wins.
 
 ## Depends on
 
-- [Placement First Player Wins](placement-first-player-wins.md)
-- [Tak Has Road](tak-has-road.md)
+- [First-player win in a placement game](placement-first-player-wins.md)
+- [Roads in Impartial Tak](tak-has-road.md)
 
 ## Sources
 

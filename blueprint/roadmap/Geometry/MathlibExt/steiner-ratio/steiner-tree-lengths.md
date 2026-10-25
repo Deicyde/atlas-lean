@@ -6,18 +6,20 @@ statement: formalized
 lean: MathlibExt.Geometry.SteinerRatio.steinerTreeLengths
 ---
 
-# Steiner Tree Lengths
+# Lengths of Steiner trees
 
-Lengths of Steiner trees for `V`: trees on finite supersets of `V`
-(the extra vertices are Steiner points).
+**Lengths of Steiner trees.** For a finite set $V$ of points in the Euclidean plane, this is
+the set of real numbers $\ell$ such that, for some finite set $W$ of points of the plane
+containing $V$, some tree with vertex set $W$ has total length $\ell$. The points of $W$
+outside $V$ are the Steiner points.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane of the Steiner ratio problem](plane.md)
 
 ## Proof depends on
 
-- [Total Length](total-length.md)
+- [Total length of a graph on points of the plane](total-length.md)
 
 ## Sources
 

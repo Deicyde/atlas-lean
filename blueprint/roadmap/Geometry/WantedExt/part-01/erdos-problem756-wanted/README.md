@@ -5,7 +5,7 @@ navigation: module
 
 # Erdos Problem756
 
-- [Rich Distances](rich-distances.md)
-- [Max Rich Distances](max-rich-distances.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Rich distances](rich-distances.md)
+- [Maximal number of rich distances](max-rich-distances.md)
+- [Statement of Erdős Problem 756 on rich distances](conjecture.md)
+- [Bhowmick's theorem on rich distances](conjecture-holds.md)

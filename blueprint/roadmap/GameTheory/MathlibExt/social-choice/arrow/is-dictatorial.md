@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.IsDictatorial
 ---
 
-# Is Dictatorial
+# Dictatorial social welfare function
 
-Dictatorship: some fixed voter whose strict preferences are always respected socially.
+**Dictatorial social welfare function.** A social welfare function $F$ is dictatorial if some
+voter $d$ is a dictator for $F$: for every profile $p$ and all alternatives $a, b$, whenever $d$
+strictly prefers $a$ to $b$ in $p$, the social order $F(p)$ also strictly prefers $a$ to $b$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ Dictatorship: some fixed voter whose strict preferences are always respected soc
 
 ## Proof depends on
 
-- [Is Dictator](is-dictator.md)
+- [Dictator of a social welfare function](is-dictator.md)
 
 ## Sources
 

@@ -7,13 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.pick_convex_lattice_polygon
 ---
 
-# Pick convex lattice polygon
+# Pick's theorem for convex lattice polygons
 
-Pick's area formula for convex standard-lattice polygons:
-`area = I + B / 2 - 1`, where `I` counts interior lattice points and `B`
-counts boundary lattice points. The polygon is the full-dimensional convex
-hull of finitely many integer-coordinate vertices (`hfull` rules out
-degenerate cases); `B` counts integer points on the frontier of the hull.
+**Pick's theorem for convex lattice polygons.** Let $V \subset \mathbb{Z}^2$ be a finite
+set of lattice points, let $P \subset \mathbb{R}^2$ be the convex hull of $V$, and suppose that
+$P$ has nonempty interior. Let $I$ be the number of points of $\mathbb{Z}^2$ in the interior of
+$P$ and $B$ the number of points of $\mathbb{Z}^2$ on the boundary of $P$. Then the area
+(two-dimensional Lebesgue measure) of $P$ equals $I + B/2 - 1$.
 
 Proof: The triangle case counts lattice points in a half-open fundamental
 parallelogram. A crossing diagonal then cuts larger polygons into two smaller

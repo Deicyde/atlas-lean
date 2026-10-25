@@ -7,19 +7,21 @@ proof: formalized
 lean: MoserConvexWormCoverConstant.IsConvexUniversalCover.nullMeasurableSet
 ---
 
-# Null Measurable Set
+# Convex universal covers are null-measurable
 
-Source: Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc
-adaptation.
+**Convex universal covers are null-measurable.** If $\Omega \subseteq \mathbb{C}$ is a
+convex universal cover of unit arcs, then $\Omega$ is a null-measurable set for Lebesgue measure
+on $\mathbb{C}$.
 
 ## Depends on
 
-- [Is Convex Universal Cover](is-convex-universal-cover.md)
+- [Convex universal covers](is-convex-universal-cover.md)
 
 ## Proof depends on
 
-- [Covers Every Unit Arc](covers-every-unit-arc.md)
+- [Sets that cover every unit arc](covers-every-unit-arc.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../sources/v2/MathlibExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

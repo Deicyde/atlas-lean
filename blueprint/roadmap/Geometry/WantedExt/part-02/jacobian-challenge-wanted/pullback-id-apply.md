@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pullback_id_apply
 ---
 
-# Pullback id apply
+# Pullback along the identity
 
-Source: https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge Via leanprover/lean-eval@38361be, problem `jacobian_challenge_diffgeo`.
+**Pullback along the identity.** Let $X$ be a compact Riemann surface, that is, a compact,
+connected, Hausdorff complex-analytic manifold of dimension one, and write $J(X)$ for its
+Jacobian. For every $P \in J(X)$, the pullback of $P$ along the identity map of $X$ is $P$:
+$(\mathrm{id}_X)^*(P) = P$.
 
 ## Depends on
 
-- [Jacobian](jacobian.md)
-- [Pullback](pullback.md)
+- [Jacobian of a compact Riemann surface](jacobian.md)
+- [Pullback on Jacobians](pullback.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.JacobianChallengeWanted](../../../../../sources/v2/WantedExt.md)
+- https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge Via leanprover/lean-eval@38361be, problem `jacobian_challenge_diffgeo`.

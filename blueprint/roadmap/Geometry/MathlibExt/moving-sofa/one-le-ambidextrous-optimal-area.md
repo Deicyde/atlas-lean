@@ -6,20 +6,23 @@ proof: formalized
 lean: MovingSofa.one_le_ambidextrousOptimalArea
 ---
 
-# One le ambidextrous Optimal Area
+# The ambidextrous sofa constant is at least one
 
-The square witness bounds the ambidextrous supremum from below by one.
+**The ambidextrous sofa constant is at least one.** The supremum of the Lebesgue areas of all
+ambidextrous sofas, taken in $[0, \infty]$, is at least $1$.
+
+The unit square $[0, 1] \times [0, 1]$ is an ambidextrous sofa of area $1$.
 
 ## Depends on
 
-- [Ambidextrous Optimal Area](ambidextrous-optimal-area.md)
+- [Optimal area of ambidextrous sofas](ambidextrous-optimal-area.md)
 
 ## Proof depends on
 
-- [Is Ambidextrous Sofa](is-ambidextrous-sofa.md)
-- [Square area](square-area.md)
+- [Ambidextrous sofa shapes](is-ambidextrous-sofa.md)
+- [The unit square has area one](square-area.md)
 - [Square is Ambidextrous Sofa](square-is-ambidextrous-sofa.md)
-- [Unit Square](unit-square.md)
+- [Unit square](unit-square.md)
 
 ## Sources
 

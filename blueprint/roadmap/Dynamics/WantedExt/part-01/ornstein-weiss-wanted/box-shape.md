@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Dynamics.OrnsteinWeissWanted.Dynamics.boxShape
 ---
 
-# Box Shape
+# Integer box
 
-The integer box `[0, N)ᵈ` as a `Finset` of `ℤᵈ` translations.
+**Integer box.** For natural numbers $d$ and $N$, the integer box $[0, N)^d$ is the finite set
+of vectors $v \in \mathbb{Z}^d$ with $0 \le v_i < N$ for every coordinate $i$.
 
 ## Depends on
 

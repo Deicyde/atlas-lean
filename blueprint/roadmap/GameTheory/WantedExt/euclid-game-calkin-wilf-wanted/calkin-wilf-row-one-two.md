@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.calkinWilfRow_one_two
 ---
 
-# Calkin Wilf Row one two
+# The first rows of the Calkin–Wilf tree
 
-Rows `1` and `2` of the Calkin–Wilf tree.
+**The first rows of the Calkin–Wilf tree.** As lists of numerator–denominator pairs, row $1$
+of the Calkin–Wilf tree is $(1, 2), (2, 1)$ and row $2$ is $(1, 3), (3, 2), (2, 3), (3, 1)$, in
+this order.
 
 ## Depends on
 
-- [Calkin Wilf Row](calkin-wilf-row.md)
+- [Rows of the Calkin–Wilf tree](calkin-wilf-row.md)
 
 ## Sources
 

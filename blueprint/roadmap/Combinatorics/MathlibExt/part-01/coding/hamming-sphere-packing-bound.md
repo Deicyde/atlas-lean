@@ -33,8 +33,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ball](../../../../InformationTheory/MathlibExt/hamming-ball/ball.md)
-- [Card ball](../../../../InformationTheory/MathlibExt/hamming-ball/card-ball.md)
+- [Closed Hamming ball](../../../../InformationTheory/MathlibExt/hamming-ball/ball.md)
+- [Size of a Hamming ball](../../../../InformationTheory/MathlibExt/hamming-ball/card-ball.md)
 
 ## Sources
 

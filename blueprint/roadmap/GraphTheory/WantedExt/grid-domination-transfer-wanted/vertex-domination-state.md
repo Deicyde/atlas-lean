@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.vertexDominationState
 ---
 
-# Vertex Domination State
+# Domination state of a vertex
 
-The state of the vertex `v` relative to the vertex set `S` in the graph `G`
-(Mertens, Definition 1).
+**Domination state of a vertex.** Let $G$ be a simple graph, $S$ a finite set of vertices of
+$G$ and $v$ a vertex of $G$. The domination state of $v$ relative to $S$ in $G$ is occupied if
+$v \in S$, covered if $v \notin S$ and $v$ is adjacent in $G$ to some vertex of $S$, and
+uncovered otherwise.
 
 ## Depends on
 

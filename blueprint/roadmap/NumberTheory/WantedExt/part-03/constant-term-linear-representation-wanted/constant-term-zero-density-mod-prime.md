@@ -14,7 +14,7 @@ density `1`, there are arbitrarily long runs of zeros, and the sequence is eithe
 ## Depends on
 
 - [Is Uniformly Recurrent Seq](is-uniformly-recurrent-seq.md)
-- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

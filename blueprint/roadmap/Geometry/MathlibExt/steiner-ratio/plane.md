@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.SteinerRatio.Plane
 ---
 
-# Plane
+# The Euclidean plane of the Steiner ratio problem
 
-The Euclidean plane.
+**The Euclidean plane of the Steiner ratio problem.** The space $\mathbb{R}^2$ with the
+Euclidean distance, in which the point sets of the Steiner ratio problem lie.
 
 ## Depends on
 

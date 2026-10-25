@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.simplifiedPrincessRosesMoves
 ---
 
-# Simplified Princess Roses Moves
+# Options in simplified Princess and the Roses
 
-Options of a simplified P&R position `[a, b, c, d]`: a move of
-`simplifiedPrincessRosesMoveList` is legal when it leaves all piles nonnegative and in
-non-increasing order `a ≥ b ≥ c ≥ d`.
+**Options in simplified Princess and the Roses.** The seven simplified Princess and the Roses
+moves are the removal vectors $(1, 0, 0, 0)$, $(0, 1, 0, 0)$, $(0, 0, 0, 1)$, $(1, 1, 0, 0)$,
+$(1, 0, 0, 1)$, $(0, 1, 0, 1)$ and $(0, 0, 1, 1)$. For a quadruple $(a, b, c, d)$ of natural
+numbers, its options are the quadruples $(a - r_1, b - r_2, c - r_3, d - r_4)$ for those moves
+$(r_1, r_2, r_3, r_4)$ with $r_1 \le a$, $r_2 \le b$, $r_3 \le c$ and $r_4 \le d$ whose result is
+in non-increasing order: $a - r_1 \ge b - r_2 \ge c - r_3 \ge d - r_4$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Simplified Princess Roses Move List](simplified-princess-roses-move-list.md)
+- [Moves of simplified P&R](simplified-princess-roses-move-list.md)
 
 ## Sources
 

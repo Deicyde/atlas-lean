@@ -5,16 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.impartialTic_firstPlayerWins_iff_odd
 ---
 
-# Impartial Tic first Player Wins iff odd
+# The first player wins Impartial Tic exactly on odd boards
 
-Proposition 1: in Impartial Tic on an `n × n` board the first player wins exactly when `n` is
-odd (for even `n` the second player wins). The mirroring strategies of the paper are not
-formalized; only the outcome is stated.
+**The first player wins Impartial Tic exactly on odd boards.** For every natural number $n$,
+under normal play the first player wins Impartial Tic on the $n \times n$ board, starting from the
+empty board, if and only if $n$ is odd; for even $n$ the second player wins.
 
 ## Depends on
 
-- [Placement First Player Wins](placement-first-player-wins.md)
-- [Tic Ended](tic-ended.md)
+- [First-player win in a placement game](placement-first-player-wins.md)
+- [End of Impartial Tic](tic-ended.md)
 
 ## Sources
 

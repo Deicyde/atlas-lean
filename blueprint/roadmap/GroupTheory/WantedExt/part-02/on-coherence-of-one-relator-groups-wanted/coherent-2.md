@@ -6,10 +6,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OnCoherenceOfOneRelatorGroupsWanted.Ring.Coherent
 ---
 
-# Coherent
+# Coherent ring
 
-A semiring is (left) coherent if all of its finitely generated (left) ideals are
-finitely presented.
+**Coherent ring.** A semiring $R$ is (left) coherent if every finitely generated left ideal
+of $R$ is finitely presented as an $R$-module.
 
 ## Depends on
 

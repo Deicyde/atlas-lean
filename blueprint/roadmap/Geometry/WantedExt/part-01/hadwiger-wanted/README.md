@@ -5,7 +5,7 @@ navigation: module
 
 # Hadwiger
 
-- [E](e.md)
-- [Is Valuation](is-valuation.md)
-- [Valuations](valuations.md)
-- [Hadwiger](hadwiger.md)
+- [Model space for convex bodies](e.md)
+- [Continuous invariant valuation](is-valuation.md)
+- [The space of continuous invariant valuations](valuations.md)
+- [Hadwiger's theorem](hadwiger.md)

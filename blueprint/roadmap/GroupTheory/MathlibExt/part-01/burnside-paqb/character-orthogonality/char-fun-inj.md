@@ -7,18 +7,20 @@ proof: formalized
 lean: BurnsidePaqb.Irr.charFun_inj
 ---
 
-# Char Fun inj
+# Characters determine irreducible representations
 
-Characters separate iso-classes (via `FDRep.char_orthonormal`).
+**Characters determine irreducible representations.** Let $G$ be a finite group. Two
+isomorphism classes of simple finite-dimensional complex representations of $G$ that have the
+same character are equal.
 
 ## Depends on
 
-- [Irr](irr.md)
-- [Char Fun](char-fun.md)
+- [Isomorphism classes of simple representations](irr.md)
+- [Character of an isomorphism class](char-fun.md)
 
 ## Proof depends on
 
-- [Iso Setoid](iso-setoid.md)
+- [Isomorphism of simple representations](iso-setoid.md)
 
 ## Sources
 

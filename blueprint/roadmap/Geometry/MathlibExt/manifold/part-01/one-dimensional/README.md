@@ -5,5 +5,5 @@ navigation: module
 
 # One Dimensional
 
-- [Connected boundaryless one manifold classification](connected-boundaryless-one-manifold-clas.md)
-- [Compact connected one manifold with boundary classification](compact-connected-one-manifold-with-boun.md)
+- [Classification of connected $1$-manifolds without boundary](connected-boundaryless-one-manifold-clas.md)
+- [Classification of compact connected $1$-manifolds with boundary](compact-connected-one-manifold-with-boun.md)

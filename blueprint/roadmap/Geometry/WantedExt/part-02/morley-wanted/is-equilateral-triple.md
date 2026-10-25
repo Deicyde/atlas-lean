@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.MorleyWanted.Geometry.Morley.IsEquilateralTriple
 ---
 
-# Is Equilateral Triple
+# Equilateral triple of points
 
-Three points form an equilateral triangle (equal side lengths).
+**Equilateral triple of points.** Three points $P$, $Q$, $R$ of the Euclidean plane form an
+equilateral triple when, writing $d$ for the Euclidean distance, $d(P, Q) = d(Q, R)$ and
+$d(Q, R) = d(R, P)$. Coincident points are allowed, so $P = Q = R$ qualifies.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Euclidean plane for Morley's theorem](plane.md)
 
 ## Sources
 

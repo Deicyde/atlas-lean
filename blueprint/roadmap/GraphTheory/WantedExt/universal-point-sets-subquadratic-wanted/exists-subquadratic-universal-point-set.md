@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.GraphTheory.UniversalPointSetsSubquadraticWanted.UPSS.ExistsSubquadraticUniversalPointSet
 ---
 
-# Exists Subquadratic Universal Point Set
+# Subquadratic universal point sets
 
-Existence of subquadratic-size universal point sets for planar graphs
-[GRAPH-022].
+**Subquadratic universal point sets.** The statement that there is a function
+$f : \mathbb{N} \to \mathbb{N}$ with $f(n)/n^2 \to 0$ as $n \to \infty$ such that for every $n$
+some finite set of at most $f(n)$ points of $\mathbb{R}^2$ is a universal point set for
+$n$-vertex planar graphs.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Universal Point Set](is-universal-point-set.md)
+- [Universal point set for planar graphs](is-universal-point-set.md)
 
 ## Sources
 

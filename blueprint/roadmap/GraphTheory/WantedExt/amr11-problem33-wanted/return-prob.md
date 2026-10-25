@@ -6,17 +6,21 @@ statement: formalized
 lean: MathlibExt.GraphTheory.AMR11Problem33Wanted.AMR11Q33.returnProb
 ---
 
-# Return Prob
+# Return probability
 
-Simple random walk ever-return probability for [AMR-011-0033] Question 33.
+**Return probability.** The return probability of a $k$-regular Cayley graph $\Gamma$ is the
+sum $\sum_{n \ge 0} p_n$, where $p_n$ is the first-return probability of $\Gamma$ at time $n$.
+
+It is the probability that simple random walk on $\Gamma$ started at the identity ever returns
+to the identity.
 
 ## Depends on
 
-- [Regular Cayley Graph](regular-cayley-graph.md)
+- [Regular Cayley graph](regular-cayley-graph.md)
 
 ## Proof depends on
 
-- [First Return Prob](first-return-prob.md)
+- [First-return probability](first-return-prob.md)
 
 ## Sources
 

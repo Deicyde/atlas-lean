@@ -6,19 +6,19 @@ proof: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.thickness_empty
 ---
 
-# Thickness empty
+# Thickness of the empty set
 
-The empty set has infinite thickness, as an empty infimum in
-`ENNReal`.
+**Thickness of the empty set.** The empty subset of Euclidean 3-space has thickness
+$\infty$, as an empty infimum in $[0, \infty]$.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean 3-space](r3.md)
 - [Thickness](thickness.md)
 
 ## Proof depends on
 
-- [Circumradius ENN](circumradius-enn.md)
+- [Extended circumradius of three points](circumradius-enn.md)
 
 ## Sources
 

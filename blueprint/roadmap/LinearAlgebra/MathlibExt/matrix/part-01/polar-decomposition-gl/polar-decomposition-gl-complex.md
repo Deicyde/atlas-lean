@@ -7,14 +7,15 @@ proof: formalized
 lean: MathlibExt.LinearAlgebra.Matrix.PolarDecompositionGLWanted.polar_decomposition_gl_complex
 ---
 
-# Polar decomposition gl complex
+# Polar decomposition of invertible complex matrices
 
-Polar decomposition in `GL(n, ℂ)`: every invertible complex matrix is uniquely the product of
-a unitary matrix and a positive-definite Hermitian matrix.
+**Polar decomposition of invertible complex matrices.** Let $A$ be a complex square matrix with
+rows and columns indexed by a finite set, and suppose $\det A \ne 0$. Then there are a unitary
+matrix $U$ and a positive-definite Hermitian matrix $P$ with $A = UP$, and they are unique: if
+$U'$ is unitary, $P'$ is positive-definite Hermitian and $A = U'P'$, then $U' = U$ and $P' = P$.
 
-Proof: Specialize `Matrix.exists_unique_unitaryGroup_posDef_of_isUnit_det` to `ℂ` and unbundle
-its unitary witness. The generic proof takes `P` to be the CFC square root of `Aᴴ * A` and
-`U = A * P⁻¹`, the construction in Wikipedia, "Polar decomposition".
+Proof: take $P$ to be the positive-definite square root of $A^* A$ and $U = AP^{-1}$, the
+construction in Wikipedia, "Polar decomposition".
 
 ## Depends on
 
@@ -22,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists unique unitary Group pos Def of is Unit det](../factorizations/polar/exists-unique-unitary-group-pos-def-of-i.md)
+- [Uniqueness of the polar decomposition of an invertible matrix](../factorizations/polar/exists-unique-unitary-group-pos-def-of-i.md)
 
 ## Sources
 

@@ -6,20 +6,23 @@ statement: formalized
 lean: MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.IsLiouvilleIntegrable
 ---
 
-# Is Liouville Integrable
+# Liouville integrable system on a subset of $\mathbb{R}^{2n}$
 
-A tuple `F : Fin n → (E n → ℝ)` is **Liouville integrable on `U`**
-(an open subset of `ℝ^{2n}`) if each component is smooth on `U`, they
-pairwise Poisson-commute on `U`, and their Fréchet derivatives are
-linearly independent at every point of `U`.
+**Liouville integrable system on a subset of $\mathbb{R}^{2n}$.** Functions
+$F_0, \dots, F_{n-1} \colon \mathbb{R}^{2n} \to \mathbb{R}$ are Liouville integrable on a set
+$U \subseteq \mathbb{R}^{2n}$ if each $F_i$ is $C^\infty$ on $U$, the Poisson brackets
+$\{F_i, F_j\}$ vanish at every point of $U$ for all $i, j$, and at every $x \in U$ the
+Fréchet derivatives $dF_0(x), \dots, dF_{n-1}(x)$ are linearly independent over $\mathbb{R}$.
+
+The set $U$ is not required to be open; the Liouville–Arnold theorem assumes this separately.
 
 ## Depends on
 
-- [E](e.md)
+- [The model space $\mathbb{R}^{2n}$ of the Liouville–Arnold theorem](e.md)
 
 ## Proof depends on
 
-- [Poisson Bracket](poisson-bracket.md)
+- [Standard Poisson bracket on $\mathbb{R}^{2n}$](poisson-bracket.md)
 
 ## Sources
 

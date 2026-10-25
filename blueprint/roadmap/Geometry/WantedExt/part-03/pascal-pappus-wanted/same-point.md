@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.SamePoint
 ---
 
-# Same Point
+# Same projective point
 
-Two homogeneous coordinate vectors represent the same projective point.
+**Same projective point.** Two vectors $v, w \in \mathbb{R}^3$ represent the same point of the
+real projective plane when $w = c v$ for some real number $c \ne 0$.
 
 ## Depends on
 

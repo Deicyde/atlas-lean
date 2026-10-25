@@ -6,9 +6,10 @@ statement: formalized
 lean: ConvexCovering.IsConvexBody
 ---
 
-# Is Convex Body
+# Convex bodies in Euclidean space
 
-A convex body is compact and convex with nonempty ambient interior.
+**Convex bodies in Euclidean space.** A set $K$ in the Euclidean space $\mathbb{R}^n$ is a
+convex body when it is compact and convex and its interior in $\mathbb{R}^n$ is nonempty.
 
 ## Depends on
 

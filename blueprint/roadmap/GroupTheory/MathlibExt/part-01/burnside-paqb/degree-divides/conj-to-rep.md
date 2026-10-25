@@ -7,13 +7,15 @@ proof: formalized
 lean: BurnsidePaqb.conj_to_rep
 ---
 
-# Conj to rep
+# Members of a conjugacy class are conjugate to its representative
 
-Every class member is conjugate to its class representative.
+**Members of a conjugacy class are conjugate to its representative.** Let $l$ be a conjugacy
+class of a finite group $G$ and $g_l$ its chosen representative. For every $x \in l$ there is
+$c \in G$ with $c x c^{-1} = g_l$.
 
 ## Depends on
 
-- [Class Rep](../class-sum/class-rep.md)
+- [Chosen representative of a conjugacy class](../class-sum/class-rep.md)
 
 ## Sources
 

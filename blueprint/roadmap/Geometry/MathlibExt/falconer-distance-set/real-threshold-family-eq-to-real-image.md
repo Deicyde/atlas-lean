@@ -7,18 +7,21 @@ proof: formalized
 lean: FalconerDistanceSet.realThresholdFamily_eq_toReal_image
 ---
 
-# Real Threshold Family eq to Real image
+# Real form of the admissible threshold family
 
-The real source domain is exactly the image of the finite ENNReal threshold family.
+**Real form of the admissible threshold family.** The set of real numbers $r \in [0, 2]$
+such that $r$, viewed as an element of $[0, \infty]$, has the planar threshold property equals
+the image of the set of admissible planar thresholds under the map $[0, \infty] \to \mathbb{R}$
+that is the identity on finite values and sends $\infty$ to $0$.
 
 ## Depends on
 
-- [Admissible Planar Threshold](admissible-planar-threshold.md)
-- [Planar Threshold Property](planar-threshold-property.md)
+- [Admissible planar threshold](admissible-planar-threshold.md)
+- [Planar Falconer threshold property](planar-threshold-property.md)
 
 ## Proof depends on
 
-- [Of Real admissible Planar Threshold iff](of-real-admissible-planar-threshold-iff.md)
+- [Real form of admissible planar thresholds](of-real-admissible-planar-threshold-iff.md)
 
 ## Sources
 

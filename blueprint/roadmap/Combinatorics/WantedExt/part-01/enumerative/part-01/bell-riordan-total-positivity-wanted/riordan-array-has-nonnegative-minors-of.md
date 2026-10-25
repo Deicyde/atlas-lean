@@ -16,7 +16,7 @@ nonnegative.
 ## Depends on
 
 - [Riordan array with given A- and Z-sequences](is-riordan-array-az.md)
-- [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
+- [Matrices with nonnegative minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
 - [Coefficient matrix of a Riordan array](riordan-coeff-matrix.md)
 
 ## Sources

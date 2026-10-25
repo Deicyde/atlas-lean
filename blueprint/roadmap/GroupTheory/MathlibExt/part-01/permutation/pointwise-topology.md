@@ -6,12 +6,13 @@ statement: formalized
 lean: Equiv.Perm.pointwiseTopology
 ---
 
-# Pointwise Topology
+# Pointwise convergence topology on permutations
 
-The pointwise-convergence topology on permutations: the topology induced by the
-evaluation map into `α → α`, where `α` is discrete and the function space carries the
-product topology. Kept as a named definition (not an instance) so callers supply it
-explicitly.
+**Pointwise convergence topology on permutations.** For a type $\alpha$, the pointwise
+convergence topology on the group of permutations of $\alpha$ is the topology induced by the map
+sending a permutation $\sigma$ to the underlying function $\sigma \colon \alpha \to \alpha$, where
+$\alpha$ carries the discrete topology and the space of functions $\alpha \to \alpha$ carries the
+product topology.
 
 ## Depends on
 

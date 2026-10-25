@@ -7,13 +7,17 @@ proof: formalized
 lean: MathlibExt.GroupTheory.AbelianRepresentationWanted.abelian_simple_iso_of_char_eq
 ---
 
-# Abelian simple iso of char eq
+# Characters determine simple representations of a finite abelian group
 
-Simple complex representations of a finite abelian group with equal characters
-are isomorphic.
+**Characters determine simple representations of a finite abelian group.** Let $G$ be a finite
+abelian group and let $V$ and $W$ be simple finite-dimensional complex representations of $G$,
+with characters $\chi_V$ and $\chi_W$. If $\chi_V = \chi_W$, then $V$ and $W$ are isomorphic.
 
-Proof: Mathlib's character orthonormality formula gives inner product one for `V` with itself.
-Replacing the second character by the equal character of `W` forces `V ≅ W`. This is the
+Proof: For functions $\chi, \psi : G \to \mathbb{C}$ write
+$\langle \chi, \psi \rangle = \frac{1}{|G|} \sum_{g \in G} \chi(g)\,\psi(g^{-1})$, where $|G|$ is
+the order of $G$. The orthonormality of irreducible characters gives
+$\langle \chi_V, \chi_V \rangle = 1$. Replacing the second character by the equal character
+$\chi_W$ gives $\langle \chi_V, \chi_W \rangle = 1$, which forces $V \cong W$. This is the
 orthonormality of irreducible characters in Wikipedia, “Character theory”.
 
 ## Depends on

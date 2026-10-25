@@ -6,21 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.euclidPPositionAux_eq_true_iff
 ---
 
-# Euclid PPosition Aux eq true iff
+# Correctness of the fuel-bounded Euclid classifier
 
-With fuel at least `a + b`, the executable classifier agrees with the normal-play
-P-positions `SpragueGrundy.IsP euclidGame`.
+**Correctness of the fuel-bounded Euclid classifier.** For all natural numbers $f$, $a$ and $b$
+with $a + b \le f$, the fuel-bounded evaluation of the P-positions of Euclid with fuel $f$ returns
+true at $(a, b)$ if and only if $(a, b)$ is a normal-play P-position of the Euclid game.
 
 ## Depends on
 
-- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
-- [Euclid Game](euclid-game.md)
-- [Euclid PPosition Aux](euclid-pposition-aux.md)
+- [P-positions](../../MathlibExt/sprague-grundy/is-p.md)
+- [The game Euclid](euclid-game.md)
+- [Fuel-bounded Euclid classifier](euclid-pposition-aux.md)
 
 ## Proof depends on
 
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
-- [Is P iff](../../MathlibExt/sprague-grundy/is-p-iff.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Recursive characterization of P-positions](../../MathlibExt/sprague-grundy/is-p-iff.md)
 - [Euclid Moves](euclid-moves.md)
 
 ## Sources

@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Dynamics.KAMWanted.Dynamics.IsDiophantine
 ---
 
-# Is Diophantine
+# Diophantine number
 
-A real `α` is **Diophantine** (KAM exponent `2`): there is `C > 0` with
-`C / q² ≤ |α − p/q|` for all integers `p, q` with `q ≠ 0`.
+**Diophantine number.** A real number $\alpha$ is Diophantine (with exponent $2$, as used in
+KAM theory) if there is $C > 0$ such that $C / q^2 \le |\alpha - p/q|$ for all integers $p$ and
+$q$ with $q \neq 0$.
 
 ## Depends on
 

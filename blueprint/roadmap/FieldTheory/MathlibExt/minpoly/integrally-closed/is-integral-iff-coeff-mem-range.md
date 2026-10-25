@@ -7,10 +7,13 @@ proof: formalized
 lean: minpoly.isIntegral_iff_coeff_mem_range
 ---
 
-# Is Integral iff coeff mem range
+# Integrality via the coefficients of the minimal polynomial
 
-An element of `L` algebraic over `K` is integral over `R` iff every coefficient
-of its `K`-minimal polynomial lies in the range of `algebraMap R K`.
+**Integrality via the coefficients of the minimal polynomial.** Let $R$ be an integrally
+closed domain with fraction field $K$, and let $L$ be a field extension of $K$ that is also an
+$R$-algebra, with the $R$-algebra structure on $L$ the composite of $R \to K$ and $K \to L$.
+An element $x \in L$ that is algebraic over $K$ is integral over $R$ if and only if every
+coefficient of the minimal polynomial of $x$ over $K$ lies in the image of $R$ in $K$.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Integral iff mem lifts](is-integral-iff-mem-lifts.md)
+- [Integrality via a lift of the minimal polynomial](is-integral-iff-mem-lifts.md)
 
 ## Sources
 

@@ -7,13 +7,16 @@ proof: formalized
 lean: Polynomial.isKComplete_iff
 ---
 
-# Is KComplete iff
+# Unfolded form of $k$-completeness
 
-Unfolding characterization of level-`k` completeness.
+**Unfolded form of $k$-completeness.** Let $F$ be a finite field, $f \in F[X]$ and $k$ a
+natural number. Then $f$ is complete to level $k$ if and only if for every natural number
+$i \le k$ the map $F \to F$, $x \mapsto (f + iX)(x)$, is bijective, where $i$ is viewed as an
+element of $F$.
 
 ## Depends on
 
-- [Is KComplete](is-kcomplete.md)
+- [Polynomial complete to level $k$](is-kcomplete.md)
 
 ## Sources
 

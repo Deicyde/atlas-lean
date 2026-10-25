@@ -5,13 +5,17 @@ statement: formalized
 lean: MathlibExt.Geometry.LeviCivitaWanted.Geometry.LeviCivita.SameOnSmooth
 ---
 
-# Same On Smooth
+# Agreement of covariant derivatives on smooth vector fields
 
-Two covariant derivatives **agree on smooth sections** if they produce
-the same image on every smooth vector field. mathlib's
-`CovariantDerivative` is bundled over all sections; the textbook Levi-Civita
-uniqueness statement is uniqueness on the smooth-section subspace, captured
-by `SameOnSmooth`.
+**Agreement of covariant derivatives on smooth vector fields.** Let $M$ be a smooth manifold,
+possibly with boundary or corners, modelled on a finite-dimensional real normed space, whose
+tangent bundle carries a smooth Riemannian metric. Two covariant derivatives $\nabla$ and
+$\nabla'$ on the tangent bundle of $M$ agree on smooth sections when $\nabla_v Y = \nabla'_v Y$
+for every smooth vector field $Y$ on $M$, every point $x \in M$ and every tangent vector $v$ at
+$x$.
+
+Covariant derivatives here act on all sections of the tangent bundle, not only smooth ones, so the
+uniqueness in the Levi-Civita theorem is stated as agreement on smooth vector fields.
 
 ## Depends on
 

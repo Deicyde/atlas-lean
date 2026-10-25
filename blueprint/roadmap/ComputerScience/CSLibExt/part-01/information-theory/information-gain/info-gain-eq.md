@@ -16,12 +16,12 @@ $p$ equals $H(p_X) + H(p_Y) - H(p)$.
 ## Depends on
 
 - [Information gain of a split](info-gain.md)
-- [Shannon Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
+- [Shannon entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
 
 ## Proof depends on
 
-- [Finite Conditional Entropy](../../../../../InformationTheory/MathlibExt/conditional-entropy/finite-conditional-entropy.md)
-- [Chain rule](../../../../../InformationTheory/MathlibExt/conditional-entropy/shannon-entropy-eq-add-finite-conditiona.md)
+- [Conditional entropy of a finite joint law](../../../../../InformationTheory/MathlibExt/conditional-entropy/finite-conditional-entropy.md)
+- [Chain rule for entropy](../../../../../InformationTheory/MathlibExt/conditional-entropy/shannon-entropy-eq-add-finite-conditiona.md)
 
 ## Sources
 

@@ -5,19 +5,20 @@ statement: formalized
 lean: MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.isSymmetry
 ---
 
-# Is Symmetry
+# Symmetry of a convex polytope
 
-`φ` is a **symmetry** of `P` if it maps `P` onto itself.
+**Symmetry of a convex polytope.** An affine isometry $\varphi$ of $\mathbb{R}^n$ is a
+symmetry of a convex polytope $P \subseteq \mathbb{R}^n$ if $\varphi(P) = P$.
 
 ## Depends on
 
-- [Convex Polytope](convex-polytope.md)
-- [Isom](isom.md)
+- [Convex polytope](convex-polytope.md)
+- [Rigid motions](isom.md)
 
 ## Proof depends on
 
-- [To Set](to-set.md)
-- [E](e.md)
+- [Underlying set of a convex polytope](to-set.md)
+- [Ambient Euclidean space of the Platonic classification](e.md)
 
 ## Sources
 

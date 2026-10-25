@@ -6,10 +6,12 @@ statement: formalized
 lean: MoserConvexWormCoverConstant.nonconvexCoverNorwoodPoole2003
 ---
 
-# Nonconvex Cover Norwood Poole2003
+# The Norwood–Poole cover claim
 
-Source: Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc
-adaptation.
+**The Norwood–Poole cover claim.** Call a nonempty set $\Omega \subseteq \mathbb{C}$ a
+universal cover if every continuous curve $\gamma : [0, 1] \to \mathbb{C}$ of length exactly $1$
+can be moved into $\Omega$ by some rotation followed by a translation. This is the proposition
+that some universal cover has area (Lebesgue outer measure) at most $0.260437$.
 
 ## Depends on
 
@@ -17,8 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Universal Cover](../../../MathlibExt/moser-worm-cover/is-universal-cover.md)
+- [Universal covers](../../../MathlibExt/moser-worm-cover/is-universal-cover.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.MoserConvexWormCoverConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

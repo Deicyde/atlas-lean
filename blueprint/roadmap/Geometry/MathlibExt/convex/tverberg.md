@@ -7,9 +7,12 @@ proof: formalized
 lean: MathlibExt.Geometry.Convex.TverbergWanted.tverberg
 ---
 
-# Tverberg
+# Tverberg's theorem
 
-Any (d+1)(r-1)+1 points in R^d can be partitioned into r parts with intersecting hulls.
+**Tverberg's theorem.** Let $d, r$ be natural numbers with $r \ge 1$ and let $N = (d+1)(r-1)+1$.
+For any points $p_1, \dots, p_N$ of $\mathbb{R}^d$, not necessarily distinct, there are pairwise
+disjoint sets $P_1, \dots, P_r \subseteq \{1, \dots, N\}$ whose union is $\{1, \dots, N\}$ and a
+point $x \in \mathbb{R}^d$ that lies in the convex hull of $\{p_i : i \in P_j\}$ for every $j$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Colorful caratheodory finrank](colorful-caratheodory/colorful-caratheodory-finrank.md)
+- [Colorful Carathéodory theorem in finite-dimensional inner product spaces](colorful-caratheodory/colorful-caratheodory-finrank.md)
 
 ## Sources
 

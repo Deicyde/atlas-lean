@@ -15,13 +15,13 @@ a P-position.
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The Maximum Nim game](maximum-nim-game.md)
 
 ## Proof depends on
 
-- [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
-- [Is P iff](../../../../GameTheory/MathlibExt/sprague-grundy/is-p-iff.md)
+- [Impartial game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
+- [Recursive characterization of P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p-iff.md)
 
 ## Sources
 

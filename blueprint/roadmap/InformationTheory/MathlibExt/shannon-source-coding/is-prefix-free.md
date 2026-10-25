@@ -6,13 +6,11 @@ statement: formalized
 lean: MathlibExt.InformationTheory.ShannonSourceCodingWanted.IsPrefixFree
 ---
 
-# Is Prefix Free
+# Prefix-free code (Shannon source coding)
 
-A code is prefix-free if distinct source symbols have no prefix relation.
-
-Compatibility alias for the production predicate
-`MathlibExt.InformationTheory.IsPrefixFree`, which both Shannon bounds and the
-proved Kraft–McMillan theorem share.
+**Prefix-free code (Shannon source coding).** A code $c$ assigning to each element of $\alpha$
+a finite word over $\beta$ is prefix-free when, for all distinct $a_1, a_2 \in \alpha$, the word
+$c(a_1)$ is not a prefix of the word $c(a_2)$. This is the general notion of a prefix-free code.
 
 ## Depends on
 
@@ -20,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Prefix Free](../prefix-free/is-prefix-free.md)
+- [Prefix-free code](../prefix-free/is-prefix-free.md)
 
 ## Sources
 

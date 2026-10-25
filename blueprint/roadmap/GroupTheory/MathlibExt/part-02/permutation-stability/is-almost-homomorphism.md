@@ -6,12 +6,14 @@ statement: formalized
 lean: PermutationStability.IsAlmostHomomorphism
 ---
 
-# Is Almost Homomorphism
+# Almost-homomorphisms to symmetric groups
 
-A sequence of (arbitrary) set maps `f n : G → Equiv.Perm (Fin n)` is an
-almost-homomorphism when the normalized Hamming defect
-`d(f n g * f n h, f n (g * h))` tends to zero for every pair `g h`.
-Following the source, no condition such as `f n 1 = 1` is imposed.
+**Almost-homomorphisms to symmetric groups.** Let $G$ be a group and, for each natural number
+$n$, let $f_n \colon G \to S_n$ be an arbitrary map, where $S_n$ is the group of permutations of
+$\{0, \dots, n-1\}$. The sequence $(f_n)$ is an almost-homomorphism when for all $g, h \in G$ the
+normalized Hamming distance $d_n(f_n(g) f_n(h), f_n(gh))$ tends to $0$ as $n \to \infty$.
+
+Following the source, no condition such as $f_n(1) = 1$ is imposed.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Normalized Hamming Distance](normalized-hamming-distance.md)
+- [Normalized Hamming distance](normalized-hamming-distance.md)
 
 ## Sources
 

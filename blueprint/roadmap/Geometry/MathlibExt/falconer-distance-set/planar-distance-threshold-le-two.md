@@ -7,18 +7,19 @@ proof: formalized
 lean: FalconerDistanceSet.planarDistanceThreshold_le_two
 ---
 
-# Planar Distance Threshold le two
+# The planar distance threshold is at most two
 
-The planar distance threshold is at most two.
+**The planar distance threshold is at most two.** The planar distance threshold is at most
+$2$.
 
 ## Depends on
 
-- [Planar Distance Threshold](planar-distance-threshold.md)
+- [Planar distance threshold](planar-distance-threshold.md)
 
 ## Proof depends on
 
-- [Planar Distance Threshold le of admissible](planar-distance-threshold-le-of-admissib.md)
-- [Two admissible Planar Threshold](two-admissible-planar-threshold.md)
+- [Admissible thresholds bound the planar distance threshold](planar-distance-threshold-le-of-admissib.md)
+- [Two is an admissible planar threshold](two-admissible-planar-threshold.md)
 
 ## Sources
 

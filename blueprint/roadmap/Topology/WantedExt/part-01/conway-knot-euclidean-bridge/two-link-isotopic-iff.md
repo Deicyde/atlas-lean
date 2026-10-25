@@ -20,7 +20,7 @@ of the converted labeled links.
 
 ## Proof depends on
 
-- [R3](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 - [Of Euclidean Ambient Isotopy](of-euclidean-ambient-isotopy.md)
 - [Of Euclidean Circle Reparam](of-euclidean-circle-reparam.md)
 - [To Euclidean Ambient Isotopy](to-euclidean-ambient-isotopy.md)

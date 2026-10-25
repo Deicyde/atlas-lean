@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.sprague1936UpperBound
 ---
 
-# Sprague1936 Upper Bound
+# Statement of Sprague's bound
 
-Sprague's finite-decimal upper bound.
+**Statement of Sprague's bound.** The proposition that the Lebesgue universal covering
+constant is at most $0.844137708436$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+- [Lebesgue universal covering constant](lebesgue-universal-covering-constant.md)
 
 ## Sources
 

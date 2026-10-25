@@ -6,22 +6,25 @@ proof: formalized
 lean: MathlibExt.FieldTheory.EssentialDimensionSymmetric.transDegNat_generalBaseField
 ---
 
-# Trans Deg Nat general Base Field
+# Transcendence degree of the coefficient field
 
-The coefficient field has transcendence degree `n`.
+**Transcendence degree of the coefficient field.** For $n \in \mathbb{N}$, let $a_k$ be the
+$k$-th elementary symmetric function of $x_1, \dots, x_n$ in $\mathbb{C}(x_1, \dots, x_n)$. The
+coefficient field $F_n = \mathbb{C}(a_1, \dots, a_n)$ of the general polynomial has numeric
+transcendence degree $n$ over $\mathbb{C}$.
 
 ## Depends on
 
-- [General Base Field](general-base-field.md)
-- [Roots Field](roots-field.md)
-- [Trans Deg Nat](trans-deg-nat.md)
+- [Coefficient field of the general polynomial](general-base-field.md)
+- [The function field $\mathbb{C}(x_1, \dots, x_n)$](roots-field.md)
+- [Numeric transcendence degree](trans-deg-nat.md)
 
 ## Proof depends on
 
-- [Algebraic Independent coeff](algebraic-independent-coeff.md)
-- [Coeff](coeff.md)
-- [Coeff Elem](coeff-elem.md)
-- [Trdeg roots Field](trdeg-roots-field.md)
+- [The coefficients are algebraically independent](algebraic-independent-coeff.md)
+- [The coefficients of the general polynomial](coeff.md)
+- [Coefficients in the coefficient field](coeff-elem.md)
+- [Transcendence degree of $\mathbb{C}(x_1, \dots, x_n)$](trdeg-roots-field.md)
 
 ## Sources
 

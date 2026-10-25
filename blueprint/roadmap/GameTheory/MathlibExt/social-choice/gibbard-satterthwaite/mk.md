@@ -6,16 +6,16 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.StrictTotalOrder.mk
 ---
 
-# Mk
+# Building a strict preference order in the Gibbard–Satterthwaite setting
 
-Compatibility alias for the former `GibbardSatterthwaiteWanted.StrictTotalOrder.mk`
-constructor.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.mk` directly.
+**Building a strict preference order in the Gibbard–Satterthwaite setting.** A binary
+relation $<$ on a type $\alpha$ that is irreflexive ($a < a$ holds for no $a$), transitive
+($a < b$ and $b < c$ imply $a < c$) and total on distinct elements ($a \ne b$ implies $a < b$ or
+$b < a$) defines a strict total order on $\alpha$ whose relation is $<$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict preference orders for the Gibbard–Satterthwaite theorem](strict-total-order.md)
 
 ## Proof depends on
 

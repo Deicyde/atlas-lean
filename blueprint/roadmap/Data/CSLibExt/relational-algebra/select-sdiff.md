@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Databases.select_sdiff
 ---
 
-# Select sdiff
+# Selection distributes over difference
 
-Selection distributes over difference.
+**Selection distributes over difference.** Assume the set of attributes is finite. Let $c$
+be a selection condition and write $\sigma_c$ for selection by $c$. For finite sets $r$ and $s$
+of tuples, $\sigma_c(r \setminus s) = \sigma_c(r) \setminus \sigma_c(s)$.
 
 ## Depends on
 
-- [Cond](cond.md)
+- [Selection conditions](cond.md)
 - [Tuple](tuple.md)
-- [Select](select.md)
+- [Selection](select.md)
 
 ## Proof depends on
 
-- [Eval](eval.md)
+- [Truth value of a selection condition](eval.md)
 
 ## Sources
 

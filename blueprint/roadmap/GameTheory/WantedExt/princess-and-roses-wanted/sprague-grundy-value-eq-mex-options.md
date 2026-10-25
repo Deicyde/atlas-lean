@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.spragueGrundyValue_eq_mex_options
 ---
 
-# Sprague Grundy Value eq mex options
+# Mex rule for Sprague–Grundy values
 
-Mex rule: if `G` has Sprague–Grundy value `n`, then no option of `G` has value `n`,
-and every value `m < n` is the value of some option. That is,
-`SG(G) = mex {SG(G') : G' an option of G}`.
+**Mex rule for Sprague–Grundy values.** Let $G$ be a finite impartial game and $n$ a natural
+number such that $G$ is equivalent to the Nim heap $*n$, that is, $G$ has Sprague–Grundy value
+$n$. For a move from the start position of $G$ to a position $q$, write $G_q$ for the game $G$
+started at $q$. Then no $G_q$ is equivalent to $*n$, and for every natural number $m < n$ some
+$G_q$ is equivalent to $*m$. That is, the Sprague–Grundy value of $G$ is the mex of the
+Sprague–Grundy values of the games $G_q$.
 
 ## Depends on
 
-- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
-- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [Equivalence of impartial games](../../MathlibExt/sprague-grundy/equiv.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Nim heap](../../MathlibExt/sprague-grundy/nim-heap.md)
 
 ## Sources
 

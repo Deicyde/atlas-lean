@@ -14,7 +14,7 @@ the third bound has no `o(1)` in the record and is stated for every `m ∈ S`.
 
 ## Depends on
 
-- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

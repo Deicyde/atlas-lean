@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.CodingTheory.CRC.coeff_encode_add
 ---
 
-# Coeff encode add
+# CRC encoding is systematic
 
-The encoding is **systematic**: coefficients `deg g, deg g + 1, …` of the codeword are the
-message.
+**CRC encoding is systematic.** Let $F$ be a field and $g \ne 0$ a polynomial over $F$ of
+degree $r$. For every message polynomial $m$ over $F$ and every natural number $i$, the
+coefficient of $X^{i+r}$ in the CRC encoding of $m$ with generator $g$ equals the coefficient of
+$X^i$ in $m$.
 
 ## Depends on
 
-- [Encode](encode.md)
+- [CRC encoder](encode.md)
 
 ## Sources
 

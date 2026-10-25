@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.princessRoses_equiv_princessRosesHelper
 ---
 
-# Princess Roses equiv princess Roses Helper
+# Four-pile P&R reduces to P&R Helper
 
-For `a ≥ b ≥ c ≥ d`, the P&R position `(a, b, c, d)` has the Sprague–Grundy value of the
-P&R Helper position `[d, b - c + d, a - c + d]` (stated as equivalence of the two games).
+**Four-pile P&R reduces to P&R Helper.** For natural numbers $a \ge b \ge c \ge d$, the
+Princess and the Roses position $(a, b, c, d)$ is equivalent to the P&R Helper position
+$[d, b - c + d, a - c + d]$; that is, the two have the same Sprague–Grundy value.
 
 ## Depends on
 
-- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
-- [Princess Roses](princess-roses.md)
-- [Princess Roses Helper](princess-roses-helper.md)
+- [Equivalence of impartial games](../../MathlibExt/sprague-grundy/equiv.md)
+- [The Princess and the Roses game](princess-roses.md)
+- [The P&R Helper game](princess-roses-helper.md)
 
 ## Sources
 

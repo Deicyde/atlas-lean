@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 - [Prime Representable](prime-representable.md)
 - [Representable](representable.md)
-- [Lower Density](../../../../Data/MathlibExt/set/density/lower-density.md)
+- [Lower density](../../../../Data/MathlibExt/set/density/lower-density.md)
 
 ## Sources
 

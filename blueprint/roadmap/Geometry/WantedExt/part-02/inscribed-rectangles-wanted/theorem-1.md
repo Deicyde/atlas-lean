@@ -6,17 +6,17 @@ statement: formalized
 lean: MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.theorem_1
 ---
 
-# Theorem 1
+# Hugelmeyer's theorem on aspect ratios of inscribed rectangles
 
-Statement of Theorem 1:
-
-Let `γ` be a smooth Jordan curve, and let `X` be the set of all `r ∈ [0,1]` so that there is an
-inscribed rectangle in `γ` of aspect ratio `tan(r·π/4)`.
-Then the Lebesgue measure of `X` is at least `1/3`.
+**Hugelmeyer's theorem on aspect ratios of inscribed rectangles.** Let $\gamma$ be a smooth Jordan
+curve, that is, a map from the unit circle to $\mathbb{R}^2$ that is a $C^\infty$ immersion and a
+topological embedding, and let $X$ be the set of all $r \in [0, 1]$ such that some rectangle
+inscribed in $\gamma$ has aspect ratio $\tan(r\pi/4)$. Then the Lebesgue measure of $X$ is at
+least $1/3$.
 
 ## Depends on
 
-- [X](x.md)
+- [Aspect-ratio parameters of inscribed rectangles](x.md)
 
 ## Sources
 

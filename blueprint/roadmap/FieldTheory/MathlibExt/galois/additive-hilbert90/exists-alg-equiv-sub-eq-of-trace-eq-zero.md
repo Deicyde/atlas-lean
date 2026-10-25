@@ -7,9 +7,12 @@ proof: formalized
 lean: Algebra.exists_algEquiv_sub_eq_of_trace_eq_zero
 ---
 
-# Exists alg Equiv sub eq of trace eq zero
+# Additive Hilbert 90, pointwise form
 
-Pointwise additive Hilbert 90: every trace-zero element is a `σ`-coboundary.
+**Additive Hilbert 90, pointwise form.** Let $L/K$ be a finite-dimensional Galois extension
+and let $\sigma$ be a $K$-algebra automorphism of $L$ that generates its Galois group, that is,
+every $K$-algebra automorphism of $L$ is an integer power of $\sigma$. If $x \in L$ satisfies
+$\operatorname{Tr}_{L/K}(x) = 0$, then there is $y \in L$ with $\sigma(y) - y = x$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ker trace eq range alg Equiv sub id](ker-trace-eq-range-alg-equiv-sub-id.md)
+- [Additive Hilbert 90 for cyclic extensions](ker-trace-eq-range-alg-equiv-sub-id.md)
 
 ## Sources
 

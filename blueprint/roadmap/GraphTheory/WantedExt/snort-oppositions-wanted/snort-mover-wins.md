@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.snortMoverWins
 ---
 
-# Snort Mover Wins
+# Snort positions with a move bound
 
-Snort with fuel `k`: whether the player to move, who owns the coloured set
-`mine` while the opponent owns `theirs`, has a winning strategy. A legal move
-colours a vertex outside `mine ∪ theirs` with no neighbour in `theirs`; with
-no fuel left the mover is declared to lose.
+**Snort positions with a move bound.** Let $G$ be a finite simple graph, let $k$ be a natural
+number, and let $A$ and $B$ be finite sets of vertices of $G$, the vertices coloured so far by
+the player to move and by the opponent. A legal move colours a vertex $v$ that lies in neither
+$A$ nor $B$ and has no neighbour in $B$. With move bound $0$ the player to move loses. With move
+bound $k + 1$ the player to move wins at $(A, B)$ exactly when some legal move $v$ leaves a
+position $(B, A \cup \{v\})$ that the opponent, now to move with move bound $k$, does not win.
 
 ## Depends on
 

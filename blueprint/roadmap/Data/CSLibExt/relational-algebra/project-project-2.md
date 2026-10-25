@@ -12,13 +12,13 @@ lean: Cslib.Databases.Expr.project_project
 
 ## Depends on
 
-- [Expr](expr.md)
-- [Equiv](equiv.md)
-- [Schema](schema.md)
+- [Relational algebra queries](expr.md)
+- [Query equivalence](equiv.md)
+- [Schema of a query](schema.md)
 
 ## Proof depends on
 
-- [Conforms](conforms.md)
+- [Databases conforming to a schema](conforms.md)
 - [Eval](eval-2.md)
 - [Tuple](tuple.md)
 - [Cascade of projections](project-project-of-subset.md)

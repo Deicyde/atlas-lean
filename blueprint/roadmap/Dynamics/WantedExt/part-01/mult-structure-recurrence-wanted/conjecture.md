@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.Dynamics.MultStructureRecurrenceWanted.conjecture
 ---
 
-# Conjecture
+# Pythagorean-pair recurrence problem (AMR-047-0034)
 
-[AMR-047-0034] For every multiplicative measure-preserving action
-by bimeasurable transformations (measurable equivalences), indexed
-by the positive naturals so the action is not collapsed by a zero
-index, and every measurable set `A` of positive measure, there exist
-positive `m > n` with
-`μ(T_{2mn} '' A ∩ T_{(m-n)(m+n)} '' A) > 0`. (Resolved: see the
-registry status.)
+**Pythagorean-pair recurrence problem (AMR-047-0034).** The proposition that for every
+probability space $(X, \mu)$ and every family $(T_a)_{a \ge 1}$, indexed by the positive integers,
+of measurable bijections of $X$ with measurable inverses that preserve $\mu$, such that $T_1$ is
+the identity and $T_{ab} = T_a \circ T_b$ for all positive integers $a, b$, every measurable set
+$A \subseteq X$ with $\mu(A) > 0$ admits positive integers $m > n$ with
+
+$$\mu\bigl(T_{2mn}(A) \cap T_{(m-n)(m+n)}(A)\bigr) > 0.$$
 
 ## Depends on
 

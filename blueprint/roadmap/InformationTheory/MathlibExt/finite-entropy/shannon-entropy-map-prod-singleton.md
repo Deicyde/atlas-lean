@@ -6,17 +6,19 @@ proof: formalized
 lean: InformationTheory.shannonEntropy_map_prod_singleton
 ---
 
-# Shannon Entropy map prod singleton
+# Appending a singleton coordinate preserves entropy
 
-Appending a deterministic singleton coordinate preserves finite entropy.
+**Appending a singleton coordinate preserves entropy.** For a probability mass function $p$ on
+a finite alphabet $\alpha$, the image of $p$ under $a \mapsto (a, 0)$ in $\alpha \times \{0\}$
+has the same Shannon entropy as $p$.
 
 ## Depends on
 
-- [Shannon Entropy](shannon-entropy.md)
+- [Shannon entropy](shannon-entropy.md)
 
 ## Proof depends on
 
-- [Shannon Entropy map equiv](shannon-entropy-map-equiv.md)
+- [Entropy is invariant under relabeling](shannon-entropy-map-equiv.md)
 
 ## Sources
 

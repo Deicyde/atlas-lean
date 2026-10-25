@@ -26,7 +26,7 @@ P-position.
 - [The set $X_{aaab}$ of $C_4$ positions](c4-pattern-aaab.md)
 - [The set $X_{aabc}$ of $C_4$ positions](c4-pattern-aabc.md)
 - [The set $X_{abab}$ of $C_4$ positions](c4-pattern-abab.md)
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources

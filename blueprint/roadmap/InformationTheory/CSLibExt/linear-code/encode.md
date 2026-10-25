@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.CodingTheory.LinearCode.encode
 ---
 
-# Encode
+# Encoder of a generator matrix
 
-The **encoder** of a generator matrix `G`: a message `m` is sent to `m ᵥ* G`, the combination
-of the rows of `G` with coefficients `m`.
+**Encoder of a generator matrix.** Let $G$ be a $\kappa \times \iota$ matrix over a field $F$,
+with $\kappa$ finite. The encoder of $G$ sends a message $m \in F^\kappa$ to the word
+$mG \in F^\iota$ given by $(mG)_j = \sum_{k \in \kappa} m_k G_{kj}$, the combination of the rows
+of $G$ with coefficients $m$.
 
 ## Depends on
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MovingSofa.ambidextrousOptimalArea
 ---
 
-# Ambidextrous Optimal Area
+# Optimal area of ambidextrous sofas
 
-Supremal area of an ambidextrous sofa in `ENNReal`.
+**Optimal area of ambidextrous sofas.** The ambidextrous optimal area is the supremum, taken
+in $[0, \infty]$, of the Lebesgue areas of all ambidextrous sofas $K \subseteq \mathbb{C}$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Ambidextrous Sofa](is-ambidextrous-sofa.md)
+- [Ambidextrous sofa shapes](is-ambidextrous-sofa.md)
 
 ## Sources
 

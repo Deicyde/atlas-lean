@@ -7,13 +7,14 @@ proof: formalized
 lean: FalconerDistanceSet.trivialLowerBound
 ---
 
-# Trivial Lower Bound
+# Trivial lower bound for the planar distance threshold
 
-The trivial lower bound uses the bottom of the actual nonnegative threshold domain.
+**Trivial lower bound for the planar distance threshold.** The planar distance threshold is
+at least $0$.
 
 ## Depends on
 
-- [Planar Distance Threshold](planar-distance-threshold.md)
+- [Planar distance threshold](planar-distance-threshold.md)
 
 ## Sources
 

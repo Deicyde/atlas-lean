@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.hasNSProperty_iff_chocolateBarGrundy_depth_zero
 ---
 
-# Has NSProperty iff chocolate Bar Grundy depth zero
+# The NS property characterises nim-sum Grundy numbers of two-dimensional chocolate bars
 
-A monotone `f` has the NS property iff the chocolate bar `CB(f, 0, x, 0, z)` (height
-function `f`, depth function `0`, depth `0`) has Grundy number `x ⊕ z` at every bar position
-`x ≤ f z`.
+**The NS property characterises nim-sum Grundy numbers of two-dimensional chocolate bars.**
+Let $f : \mathbb{N} \to \mathbb{N}$ be monotone. Then $f$ has the NS property if and only if, for
+all $x, z \in \mathbb{N}$ with $x \le f(z)$, the chocolate bar $\mathrm{CB}(f, 0, x, 0, z)$ of
+width $z$ (first function $f$, first coordinate $x$, second function constantly $0$, second
+coordinate $0$) has Grundy number $x \oplus z$, where $\oplus$ denotes nim-sum (bitwise exclusive
+or).
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
-- [Chocolate Bar Grundy](chocolate-bar-grundy.md)
+- [NS property](has-nsproperty.md)
+- [Grundy number of a chocolate bar](chocolate-bar-grundy.md)
 
 ## Sources
 

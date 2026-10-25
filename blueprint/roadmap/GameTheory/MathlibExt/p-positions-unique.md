@@ -7,10 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.pPositions_unique
 ---
 
-# Impartial Acyclic Game
+# Uniqueness of the P-positions of a terminating impartial game
 
-The set of P-positions of a terminating impartial game is uniquely determined by stability
-and absorption. N-positions are represented by the complement of the P-positions.
+**Uniqueness of the P-positions of a terminating impartial game.** Write $x \to y$ when there is a
+move from position $x$ to position $y$, and assume there is no infinite sequence of moves
+$x_0 \to x_1 \to x_2 \to \cdots$. Call a set $P$ of positions stable if no move leads from a
+position in $P$ to a position in $P$, and absorbing if from every position outside $P$ some move
+leads to a position in $P$. Then any two stable and absorbing sets of positions are equal.
+
+In particular the P-positions are determined by stability and absorption, and the N-positions
+are their complement.
 
 ## Depends on
 

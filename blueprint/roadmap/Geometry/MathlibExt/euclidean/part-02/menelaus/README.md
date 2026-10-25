@@ -5,5 +5,5 @@ navigation: module
 
 # Menelaus
 
-- [Menelaus general](menelaus-general.md)
-- [Menelaus](menelaus.md)
+- [Menelaus's theorem, general form](menelaus-general.md)
+- [Menelaus's theorem](menelaus.md)

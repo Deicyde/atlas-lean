@@ -7,9 +7,11 @@ proof: formalized
 lean: ClassBreadth.exists_card_carrier_eq_pow
 ---
 
-# Exists card carrier eq pow
+# Conjugacy classes of a finite $p$-group have $p$-power size
 
-In a finite `p`-group, every conjugacy-class size is a power of `p`.
+**Conjugacy classes of a finite $p$-group have $p$-power size.** Let $p$ be a prime and
+$G$ a finite $p$-group. For every $g \in G$ there is a natural number $k$ such that the
+conjugacy class of $g$ has exactly $p^k$ elements.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Card carrier dvd card](card-carrier-dvd-card.md)
+- [Conjugacy class sizes divide the group order](card-carrier-dvd-card.md)
 
 ## Sources
 

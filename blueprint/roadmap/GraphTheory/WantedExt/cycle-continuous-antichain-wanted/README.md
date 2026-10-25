@@ -5,9 +5,9 @@ navigation: module
 
 # Cycle Continuous Antichain
 
-- [FGraph](fgraph.md)
-- [Is Finite Nontrivial](is-finite-nontrivial.md)
-- [Cycle Space](cycle-space.md)
-- [Is Cycle Continuous](is-cycle-continuous.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Multigraphs with loops and parallel edges](fgraph.md)
+- [Finite multigraphs with at least one edge](is-finite-nontrivial.md)
+- [Binary cycle space](cycle-space.md)
+- [Cycle-continuous maps](is-cycle-continuous.md)
+- [Infinite antichains in the cycle-continuous order](conjecture.md)
+- [Samal's theorem: infinite antichains in the cycle-continuous order exist](conjecture-holds.md)

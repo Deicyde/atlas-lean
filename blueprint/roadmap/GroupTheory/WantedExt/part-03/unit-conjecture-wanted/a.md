@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.UnitConjectureWanted.UnitConjecture.a
 ---
 
-# A
+# First free generator of Gardam's presentation
 
-The first generator of the group `P` defined in Theorem A of the paper.
+**First free generator of Gardam's presentation.** $a$ is the generator $a$, viewed as an
+element of the free group on the two generators $a$ and $b$.
 
 ## Depends on
 
-- [Generators](generators.md)
+- [Generators of Gardam's presentation](generators.md)
 
 ## Sources
 

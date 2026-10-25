@@ -7,17 +7,20 @@ proof: formalized
 lean: FalconerDistanceSet.planarDistanceThreshold_ofReal_toReal
 ---
 
-# Planar Distance Threshold of Real to Real
+# Real round trip of the planar distance threshold
 
-Conversion to the nonnegative real value and back retains the actual infimum.
+**Real round trip of the planar distance threshold.** Let $\tau \in [0, \infty]$ be the planar
+distance threshold and let $\tau_{\mathbb{R}}$ be its value as a real number (with the convention
+that $\infty$ goes to $0$). Viewing $\tau_{\mathbb{R}}$ again as an element of $[0, \infty]$
+gives back $\tau$.
 
 ## Depends on
 
-- [Planar Distance Threshold](planar-distance-threshold.md)
+- [Planar distance threshold](planar-distance-threshold.md)
 
 ## Proof depends on
 
-- [Planar Distance Threshold ne top](planar-distance-threshold-ne-top.md)
+- [The planar distance threshold is finite](planar-distance-threshold-ne-top.md)
 
 ## Sources
 

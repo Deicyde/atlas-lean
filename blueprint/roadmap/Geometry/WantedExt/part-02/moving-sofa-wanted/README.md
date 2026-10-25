@@ -4,7 +4,7 @@ navigation: module
 
 # Moving Sofa
 
-- [Hammersley upper](hammersley-upper.md)
-- [Kallus romik upper](kallus-romik-upper.md)
-- [Hammersley lower](hammersley-lower.md)
-- [Gerver printed lower](gerver-printed-lower.md)
+- [Hammersley's upper bound for the moving sofa constant](hammersley-upper.md)
+- [Kallus–Romik upper bound for the moving sofa constant](kallus-romik-upper.md)
+- [Hammersley's lower bound for the moving sofa constant](hammersley-lower.md)
+- [Gerver's lower bound for the moving sofa constant](gerver-printed-lower.md)

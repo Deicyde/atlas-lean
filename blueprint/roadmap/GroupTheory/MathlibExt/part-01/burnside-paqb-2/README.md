@@ -5,5 +5,5 @@ navigation: module
 
 # Burnside Paqb
 
-- [Burnside paqb zero](burnside-paqb-zero.md)
-- [Burnside paqb](burnside-paqb.md)
+- [Burnside's $p^a q^b$ theorem in the lowest universe](burnside-paqb-zero.md)
+- [Burnside's $p^a q^b$ theorem](burnside-paqb.md)

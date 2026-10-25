@@ -7,10 +7,10 @@ navigation: module
 
 ## ITSP
 
-- [Is Affine Hyperplane](is-affine-hyperplane.md)
-- [Spanned Hyperplane Set](spanned-hyperplane-set.md)
-- [OWR1183 Question](owr1183-question.md)
+- [Affine hyperplanes in $\mathbb{R}^d$](is-affine-hyperplane.md)
+- [Hyperplanes spanned by a point set](spanned-hyperplane-set.md)
+- [Injective point-to-hyperplane matching question](owr1183-question.md)
 
 ## Infinite Transversals Spanned Hyperplanes Wanted
 
-- [OWR1183 Question holds](owr1183-question-holds.md)
+- [Spanning point sets have injective point-to-hyperplane matchings](owr1183-question-holds.md)

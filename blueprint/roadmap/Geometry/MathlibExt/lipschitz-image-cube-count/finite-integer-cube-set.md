@@ -7,20 +7,25 @@ proof: formalized
 lean: LipschitzImageCubeCount.finite_integerCubeSet
 ---
 
-# Finite integer Cube Set
+# Dilated Lipschitz images meet finitely many integer cubes
 
-Finiteness of the integer-cube set for `t ≥ 1` and a `K`-Lipschitz map.
-The image is bounded (by `‖f 0‖ + K * √d` at the cube origin), so every met
-cube index lies in an explicit finite box.
+**Dilated Lipschitz images meet finitely many integer cubes.** Let $d$ and $n$ be natural
+numbers, let $K \ge 0$, and let $f$ be a $K$-Lipschitz map from the unit cube $[0, 1]^d$ to
+$\mathbb{R}^n$, both carrying the sup distance. For every real $t \ge 1$, the integer cube set of
+$f$ at scale $t$ is finite.
+
+The image of $f$ is bounded, since each coordinate of $f(y)$ differs from the corresponding
+coordinate of $f(0)$ by at most $K \sqrt{d}$, so every met cube index lies in an explicit
+finite box.
 
 ## Depends on
 
-- [Integer Cube Set](integer-cube-set.md)
+- [Integer cube set](integer-cube-set.md)
 - [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Proof depends on
 
-- [Mem integer Cube Set iff](mem-integer-cube-set-iff.md)
+- [Membership in the integer cube set](mem-integer-cube-set-iff.md)
 - [Unit Cube zero mem](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube-zero-mem.md)
 
 ## Sources

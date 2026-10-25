@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimMRuleMove
 ---
 
-# Exact Slow Nim MRule Move
+# The M-move
 
-The M-move: keep the pile `exactSlowNimMRuleKept x` and remove one stone from every other
-pile.
+**The M-move.** For a position $x$ on $n + 1$ piles, the M-move keeps one pile, chosen by the
+M-rule as the first pile holding the smallest even entry if some entry of $x$ is even, and
+otherwise the first pile holding a largest entry. It removes one stone from every other pile,
+where an empty pile stays empty.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exact Slow Nim MRule Kept](exact-slow-nim-mrule-kept.md)
+- [Pile kept by the M-rule](exact-slow-nim-mrule-kept.md)
 - [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
 
 ## Sources

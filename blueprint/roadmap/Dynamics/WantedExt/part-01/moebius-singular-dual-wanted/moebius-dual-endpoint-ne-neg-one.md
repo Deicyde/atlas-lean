@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.moebius_dual_endpoint_ne_neg_one
 ---
 
-# Moebius dual endpoint ne neg one
+# Moebius dual branches disagree at −1
 
-Lemma 2: the endpoint `η = -1` is impossible: for `α > 0`, `β < 1`, `δ ≥ 0`,
-`V^#_{βδ}(-1) ≠ V^#_{αδ}(-1)` (the equation would force `δ = -1`).
+**Moebius dual branches disagree at −1.** Let $\alpha, \beta, \delta$ be real numbers with
+$\alpha > 0$, $\beta < 1$ and $\delta \ge 0$, and define the dual branches
+$V^\#_{\alpha\delta}(y) = (2\alpha\delta - 1 + \alpha\delta y)/(2\alpha + 1 + \alpha y)$ and
+$V^\#_{\beta\delta}(y) = (2\delta - 2\beta\delta - 1 + (\delta - \beta\delta - 1) y)/
+(3 - 2\beta + (2 - \beta) y)$. Then $V^\#_{\beta\delta}(-1) \ne V^\#_{\alpha\delta}(-1)$.
+
+Equality would force $\delta = -1$.
 
 ## Depends on
 

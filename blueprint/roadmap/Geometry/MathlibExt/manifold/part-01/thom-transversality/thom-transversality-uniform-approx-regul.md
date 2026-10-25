@@ -7,11 +7,16 @@ proof: formalized
 lean: MathlibExt.Geometry.Manifold.ThomTransversalityWanted.thom_transversality_uniform_approx_regular_value_zero
 ---
 
-# Thom transversality uniform approx regular value zero
+# Approximation by maps having zero as a regular value
 
-For a finite-dimensional boundaryless Hausdorff second-countable `C^∞` manifold `M`, every
-`C^∞` map `f : M → ℝ^n` and `ε>0` admits a `C^∞` map `g` with `‖f x - g x‖ < ε` for all `x` such
-that `0` is a regular value of `g`. No compactness is needed.
+**Approximation by maps having zero as a regular value.** Let $M$ be a Hausdorff,
+second-countable smooth manifold without boundary modelled on a finite-dimensional real normed
+space, let $f : M \to \mathbb{R}^n$ be $C^\infty$, and let $\varepsilon > 0$. Then there is a
+$C^\infty$ map $g : M \to \mathbb{R}^n$ such that $\lVert f(x) - g(x) \rVert < \varepsilon$ for
+every $x \in M$ (Euclidean norm) and $0$ is a regular value of $g$, that is, the manifold
+derivative of $g$ at $x$ is surjective for every $x \in M$ with $g(x) = 0$.
+
+No compactness is needed.
 
 ## Depends on
 
@@ -19,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Critical Values](../sard/critical-values.md)
-- [Sard theorem](../sard/sard-theorem.md)
+- [Critical values of a map to Euclidean space](../sard/critical-values.md)
+- [Sard's theorem for maps into Euclidean space](../sard/sard-theorem.md)
 
 ## Sources
 

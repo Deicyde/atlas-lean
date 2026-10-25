@@ -5,5 +5,5 @@ navigation: module
 
 # Monge Circles
 
-- [Monge three circles general](monge-three-circles-general.md)
-- [Monge three circles](monge-three-circles.md)
+- [Monge's three-circle theorem, algebraic form](monge-three-circles-general.md)
+- [Monge's three-circle theorem](monge-three-circles.md)

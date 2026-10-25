@@ -7,17 +7,19 @@ proof: formalized
 lean: not_isGHarmonic_of_zero
 ---
 
-# Not is GHarmonic of zero
+# Tuples with a zero entry are not G-harmonic
 
-A tuple containing a zero entry is never `G`-harmonic.
+**Tuples with a zero entry are not G-harmonic.** Let $G$ be a group. If a tuple
+$a = (a_1, \dots, a_n)$ of natural numbers has $a_i = 0$ for some $i$, then $a$ is not
+$G$-harmonic.
 
 ## Depends on
 
-- [Is GHarmonic](is-gharmonic.md)
+- [G-harmonic tuples](is-gharmonic.md)
 
 ## Proof depends on
 
-- [Pos](pos.md)
+- [Entries of a G-harmonic tuple are positive](pos.md)
 
 ## Sources
 

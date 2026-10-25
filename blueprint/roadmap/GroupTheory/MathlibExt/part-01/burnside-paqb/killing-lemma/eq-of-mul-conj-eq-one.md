@@ -7,9 +7,10 @@ proof: formalized
 lean: BurnsidePaqb.eq_of_mul_conj_eq_one
 ---
 
-# Eq of mul conj eq one
+# Cancelling a unit-modulus conjugate
 
-If `a * conj b = 1` with both unit, then `a = b`.
+**Cancelling a unit-modulus conjugate.** Let $a, b \in \mathbb{C}$ with $|b| = 1$. If
+$a \bar{b} = 1$, then $a = b$.
 
 ## Depends on
 

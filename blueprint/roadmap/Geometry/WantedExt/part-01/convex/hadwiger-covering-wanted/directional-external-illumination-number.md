@@ -6,15 +6,19 @@ statement: formalized
 lean: ConvexCovering.directionalExternalIlluminationNumbersEqual
 ---
 
-# Directional External Illumination Numbers Equal
+# Directional and exterior-point illumination numbers are equal
 
-The two illumination numbers have the same minimum over actual finite families.
+**Directional and exterior-point illumination numbers are equal.** For every $n \ge 1$ and
+every convex body $K \subseteq \mathbb{R}^n$, the directional illumination number of $K$ equals
+its exterior-point illumination number. These are the least $q$ such that some $q$ unit vectors,
+respectively some $q$ points outside $K$, illuminate $K$, with the value $\infty$ when no finite
+family does.
 
 ## Depends on
 
-- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
-- [Directional Illumination Number](../../../../MathlibExt/convex/illumination/directional-illumination-number.md)
-- [External Point Illumination Number](../../../../MathlibExt/convex/illumination/external-point-illumination-number.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Directional illumination number](../../../../MathlibExt/convex/illumination/directional-illumination-number.md)
+- [External-point illumination number](../../../../MathlibExt/convex/illumination/external-point-illumination-number.md)
 
 ## Sources
 

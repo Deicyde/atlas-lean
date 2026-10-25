@@ -6,13 +6,14 @@ proof: formalized
 lean: MovingSofa.square_measurable
 ---
 
-# Square measurable
+# The unit square is Borel measurable
 
-The square is measurable for the canonical planar Borel structure.
+**The unit square is Borel measurable.** The unit square $[0,1] \times [0,1]$ is a measurable
+set for the Borel $\sigma$-algebra of the complex plane.
 
 ## Depends on
 
-- [Unit Square](unit-square.md)
+- [Unit square](unit-square.md)
 
 ## Sources
 

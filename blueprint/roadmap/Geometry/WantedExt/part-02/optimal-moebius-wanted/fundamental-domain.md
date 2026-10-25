@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.OptimalMoebiusWanted.OptimalMoebius.fundamentalDomain
 ---
 
-# Fundamental Domain
+# Fundamental domain of the Moebius band
 
-The set of points `(x, y) ∈ ℝ²` with `0 ≤ x ≤ 1` and `0 ≤ y < a`.
+**Fundamental domain of the Moebius band.** For a real number $a$, this is the set of points
+$(x, y) \in \mathbb{R}^2$ with $0 \le x \le 1$ and $0 \le y < a$.
 
 ## Depends on
 

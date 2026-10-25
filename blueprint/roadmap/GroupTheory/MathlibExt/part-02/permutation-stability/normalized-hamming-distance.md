@@ -6,12 +6,12 @@ statement: formalized
 lean: PermutationStability.normalizedHammingDistance
 ---
 
-# Normalized Hamming Distance
+# Normalized Hamming distance
 
-Normalized Hamming distance between two permutations of `Fin n`: the
-fraction of points on which they disagree. At `n = 0` the denominator is zero,
-so the quotient is `0` by the `ZeroInv₀` convention; this single value is
-harmless for `Filter.atTop` convergence statements.
+**Normalized Hamming distance.** For a natural number $n$ and permutations $\sigma$, $\tau$ of
+$\{0, \dots, n-1\}$, the normalized Hamming distance $d_n(\sigma, \tau)$ is the number of points
+$i < n$ with $\sigma(i) \ne \tau(i)$, divided by $n$, as a real number. For $n = 0$ it is $0$;
+this single value does not affect statements about limits as $n \to \infty$.
 
 ## Depends on
 

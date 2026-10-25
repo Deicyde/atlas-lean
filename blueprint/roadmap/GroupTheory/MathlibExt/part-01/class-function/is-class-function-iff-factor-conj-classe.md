@@ -7,21 +7,25 @@ proof: formalized
 lean: MathlibExt.GroupTheory.ClassFunctionWanted.isClassFunction_iff_factor_conjClasses
 ---
 
-# Is Class Function iff factor conj Classes
+# Class functions factor through conjugacy classes
 
-A function is a class function iff it factors through the quotient onto
-conjugacy classes.
+**Class functions factor through conjugacy classes.** Let $G$ be a group and $k$ a set,
+and write $[x]$ for the conjugacy class of $x \in G$. A function $f : G \to k$ is a class
+function if and only if there is a function $q$ from the set of conjugacy classes of $G$
+to $k$ such that $f(x) = q([x])$ for all $x \in G$.
 
-Proof: Descend a class function with `Quotient.lift`, using `isConj_iff` for
-well-definedness, and use equality in `ConjClasses` for the converse.
+Proof: A class function is constant on each conjugacy class, so it descends to a function
+on conjugacy classes. Conversely, if $f(x) = q([x])$ for all $x \in G$, then for all
+$g, h \in G$ we have $f(h g h^{-1}) = q([h g h^{-1}]) = q([g]) = f(g)$, because
+$h g h^{-1}$ and $g$ are conjugate.
 
 ## Depends on
 
-- [Is Class Function](is-class-function.md)
+- [Class functions on a group](is-class-function.md)
 
 ## Proof depends on
 
-- [Eq of is Conj](eq-of-is-conj.md)
+- [Class functions agree on conjugate elements](eq-of-is-conj.md)
 
 ## Sources
 

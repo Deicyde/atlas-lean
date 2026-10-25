@@ -5,14 +5,18 @@ statement: formalized
 lean: MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.genus_eq_zero_iff_homeo
 ---
 
-# Genus eq zero iff homeo
+# A compact Riemann surface has genus zero iff it is a sphere
 
-Source: https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge Via leanprover/lean-eval@38361be, problem `jacobian_challenge_diffgeo`.
+**A compact Riemann surface has genus zero iff it is a sphere.** Let $X$ be a compact
+Riemann surface, that is, a compact connected Hausdorff space with a complex-analytic atlas
+modelled on $\mathbb{C}$. The genus of $X$ is $0$ if and only if $X$ is homeomorphic to the unit
+sphere in Euclidean space $\mathbb{R}^3$.
 
 ## Depends on
 
-- [Genus](genus.md)
+- [Genus of a compact Riemann surface](genus.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.JacobianChallengeWanted](../../../../../sources/v2/WantedExt.md)
+- https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge Via leanprover/lean-eval@38361be, problem `jacobian_challenge_diffgeo`.

@@ -18,7 +18,7 @@ $T$, then the codeword of $a$ is not a prefix of the codeword of $b$.
 - [Huffman tree](huffman-tree.md)
 - [Leaf symbols of a Huffman tree](leaf-symbol.md)
 - [Codeword of a leaf symbol](code-of-leaf.md)
-- [Is Prefix Free](../../../../../../../InformationTheory/MathlibExt/prefix-free/is-prefix-free.md)
+- [Prefix-free code](../../../../../../../InformationTheory/MathlibExt/prefix-free/is-prefix-free.md)
 
 ## Proof depends on
 

@@ -6,16 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.mem_princessRosesHelperMoves
 ---
 
-# Mem princess Roses Helper Moves
+# Characterization of P&R Helper options
 
-Characterization of P&R Helper options: `[x', y', z']` is an option of `[x, y, z]` if and
-only if no coordinate grows, the result satisfies `x' ≤ y' ≤ z'`, and the amounts removed
-`(x - x', y - y', z - z')` form one of the seven moves of `princessRosesHelperMoveList`.
+**Characterization of P&R Helper options.** For natural numbers $x, y, z, x', y', z'$, the
+position $[x', y', z']$ is an option of the P&R Helper position $[x, y, z]$ if and only if
+$x' \le x$, $y' \le y$, $z' \le z$, $x' \le y' \le z'$, and the amounts removed
+$(x - x', y - y', z - z')$ form one of the seven P&R Helper moves $(1, 1, 1)$, $(1, 0, 0)$,
+$(1, 2, 1)$, $(1, 1, 2)$, $(0, 1, 0)$, $(0, 1, 1)$ and $(0, 0, 1)$.
 
 ## Depends on
 
-- [Princess Roses Helper Move List](princess-roses-helper-move-list.md)
-- [Princess Roses Helper Moves](princess-roses-helper-moves.md)
+- [Moves of P&R Helper](princess-roses-helper-move-list.md)
+- [Options in P&R Helper](princess-roses-helper-moves.md)
 
 ## Sources
 

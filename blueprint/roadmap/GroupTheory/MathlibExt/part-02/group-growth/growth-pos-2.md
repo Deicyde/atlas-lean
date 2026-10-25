@@ -7,14 +7,16 @@ proof: formalized
 lean: Group.Generators.HasPolynomialGrowth.growth_pos
 ---
 
-# Growth pos
+# Polynomial growth makes the growth function positive
 
-Polynomial growth implies positive growth at every radius.
+**Polynomial growth makes the growth function positive.** If a generating family $P$ of a
+group $G$ has polynomial growth, then the growth function of $P$ is positive at every natural
+number $n$.
 
 ## Depends on
 
-- [Has Polynomial Growth](has-polynomial-growth.md)
-- [Growth](growth.md)
+- [Polynomial growth](has-polynomial-growth.md)
+- [Growth function of a generating family](growth.md)
 
 ## Sources
 

@@ -7,11 +7,11 @@ proof: formalized
 lean: BurnsidePaqb.burnside_paqb_zero
 ---
 
-# Burnside paqb zero
+# Burnside's $p^a q^b$ theorem in the lowest universe
 
-Burnside's `p^a q^b` theorem for small-universe groups: if `G` is finite with
-`Fintype.card G = p ^ a * q ^ b` for primes `p, q`, then `G` is solvable.
-Proved via the simple-prime-power corollary and induction.
+**Burnside's $p^a q^b$ theorem in the lowest universe.** Let $G$ be a finite group whose
+underlying type lies in the lowest type universe, let $p$ and $q$ be primes and let $a$ and
+$b$ be natural numbers. If $G$ has order $p^a q^b$, then $G$ is solvable.
 
 ## Depends on
 
@@ -19,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Burnside paqb of simple prime](../burnside-paqb/solvable-induction/burnside-paqb-of-simple-prime.md)
-- [Conj Class](../burnside-paqb-reduction/conj-class.md)
-- [Cor6 of prime pow class](../burnside-paqb/simple-prime/cor6-of-prime-pow-class.md)
+- [Burnside's $p^a q^b$ theorem from the prime-power class corollary](../burnside-paqb/solvable-induction/burnside-paqb-of-simple-prime.md)
+- [Conjugacy class](../burnside-paqb-reduction/conj-class.md)
+- [A simple group with a prime-power conjugacy class has prime order](../burnside-paqb/simple-prime/cor6-of-prime-pow-class.md)
 
 ## Sources
 

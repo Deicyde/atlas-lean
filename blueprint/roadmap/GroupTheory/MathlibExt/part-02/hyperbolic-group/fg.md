@@ -7,13 +7,14 @@ proof: formalized
 lean: Group.IsHyperbolic.fg
 ---
 
-# Fg
+# Word-hyperbolic groups are finitely generated
 
-A word-hyperbolic group is finitely generated.
+**Word-hyperbolic groups are finitely generated.** Every word-hyperbolic group is finitely
+generated.
 
 ## Depends on
 
-- [Is Hyperbolic](is-hyperbolic.md)
+- [Word-hyperbolic groups](is-hyperbolic.md)
 
 ## Proof depends on
 

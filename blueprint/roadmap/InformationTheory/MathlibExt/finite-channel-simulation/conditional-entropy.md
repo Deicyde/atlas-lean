@@ -5,20 +5,23 @@ statement: formalized
 lean: InformationTheory.FiniteExtension.conditionalEntropy
 ---
 
-# Conditional Entropy
+# Conditional entropy of the output given the auxiliary
 
-Conditional entropy H(Y|S) in bits, using the exact entropy identity.
+**Conditional entropy of the output given the auxiliary.** For a finite extension $q$ of a
+finite joint law $p$, viewed as the law of a triple $(X, Y, S)$ whose $(X, Y)$ marginal is $p$,
+this is $H(Y \mid S) = H(Y, S) - H(S)$, where $H(Y, S)$ and $H(S)$ are the Shannon entropies in
+bits of the $(Y, S)$ and $S$ marginals of $q$.
 
 ## Depends on
 
-- [Finite Extension](finite-extension.md)
-- [Finite Joint Law](finite-joint-law.md)
+- [Finite extension of a joint law](finite-extension.md)
+- [Finite joint law](finite-joint-law.md)
 
 ## Proof depends on
 
-- [Auxiliary Law](auxiliary-law.md)
-- [Output Auxiliary Law](output-auxiliary-law.md)
-- [Shannon Entropy](../finite-entropy/shannon-entropy.md)
+- [Auxiliary marginal of an extension](auxiliary-law.md)
+- [Output-auxiliary law](output-auxiliary-law.md)
+- [Shannon entropy](../finite-entropy/shannon-entropy.md)
 
 ## Sources
 

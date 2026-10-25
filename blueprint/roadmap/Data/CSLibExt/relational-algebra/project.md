@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Databases.project
 ---
 
-# Project
+# Projection of a relation
 
-Projection `π_T r`.
+**Projection of a relation.** For a finite set $T$ of attributes and a finite set $r$ of
+tuples, the projection $\pi_T(r)$ is the finite set of the restrictions to $T$ of the tuples of
+$r$: $\pi_T(r) = \{ t|_T : t \in r \}$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ Projection `π_T r`.
 
 ## Proof depends on
 
-- [Restrict](restrict.md)
+- [Restriction of a tuple](restrict.md)
 
 ## Sources
 

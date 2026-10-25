@@ -5,4 +5,4 @@ navigation: transparent
 
 # Part 2 of 2
 
-- [Tubular Neighborhood](tubular-smooth-retraction.md)
+- [Smooth retraction onto a closed embedded manifold in $\mathbb{R}^n$](tubular-smooth-retraction.md)

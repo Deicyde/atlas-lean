@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.nExpansionDigit
 ---
 
-# N Expansion Digit
+# Digit of the N-expansion map
 
-The digit `d(x)` of the `N`-expansion map on `I_α = [α, α + 1]`: `d(x) = ⌊N / x - α⌋`, except
-that `d(α) = N / α - α - 1` when `N / α - α` is an integer (then `T_α(α) = α + 1`; every other
-point of `I_α` lands in `[α, α + 1)`, and no cylinder is a single point).
+**Digit of the N-expansion map.** Let $N$ be a natural number and $\alpha$ a real number, and
+write $I_\alpha = [\alpha, \alpha + 1]$. The digit of a real number $x$ is
+$d(x) = \lfloor N/x - \alpha \rfloor$, except that when $N/\alpha - \alpha$ is an integer, the
+digit of $\alpha$ itself is $d(\alpha) = N/\alpha - \alpha - 1$.
+
+With this choice the $N$-expansion map $T_\alpha(x) = N/x - d(x)$ sends $\alpha$ to $\alpha + 1$
+in the integer case, every other point of $I_\alpha$ lands in $[\alpha, \alpha + 1)$, and no
+cylinder is a single point.
 
 ## Depends on
 

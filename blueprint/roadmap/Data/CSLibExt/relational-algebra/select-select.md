@@ -8,17 +8,20 @@ lean: Cslib.Databases.select_select
 
 # Cascade of selections
 
-**Cascade of selections**: two selections are one selection by the conjunction.
+**Cascade of selections.** Write $\sigma_c$ for selection by a selection condition $c$. For
+selection conditions $c$ and $c'$ and a finite set $r$ of tuples,
+$\sigma_c(\sigma_{c'}(r)) = \sigma_{c' \land c}(r)$: selecting by $c'$ and then by $c$ is the same
+as selecting once by the conjunction $c' \land c$.
 
 ## Depends on
 
-- [Cond](cond.md)
+- [Selection conditions](cond.md)
 - [Tuple](tuple.md)
-- [Select](select.md)
+- [Selection](select.md)
 
 ## Proof depends on
 
-- [Eval](eval.md)
+- [Truth value of a selection condition](eval.md)
 
 ## Sources
 

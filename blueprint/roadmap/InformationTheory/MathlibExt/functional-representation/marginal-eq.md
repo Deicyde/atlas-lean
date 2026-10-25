@@ -6,18 +6,21 @@ proof: formalized
 lean: InformationTheory.IsGeneralRepresentation.marginal_eq
 ---
 
-# Marginal eq
+# A functional representation has the prescribed joint law
 
-A representation has the exact specified input/output marginal.
+**A functional representation has the prescribed joint law.** Let $\mu$ be a probability
+measure on $X \times Y$ and let $\nu$ be a probability measure on $(X \times Y) \times S$ that is a
+functional representation of $\mu$. Then the image of $\nu$ under the projection
+$((x, y), s) \mapsto (x, y)$ is $\mu$.
 
 ## Depends on
 
-- [Is General Representation](is-general-representation.md)
+- [Functional representation of a joint law](is-general-representation.md)
 
 ## Proof depends on
 
-- [General Recovery Entropy](general-recovery-entropy.md)
-- [Measure Mutual Information](../conditional-entropy/measure-mutual-information.md)
+- [Conditional entropy of the output given input and auxiliary variable](general-recovery-entropy.md)
+- [Mutual information of a joint probability measure](../conditional-entropy/measure-mutual-information.md)
 
 ## Sources
 

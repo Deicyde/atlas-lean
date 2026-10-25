@@ -6,20 +6,21 @@ proof: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.circumradiusENN_swap_right
 ---
 
-# Circumradius ENN swap right
+# Extended circumradius is symmetric in the last two points
 
-The extended circumradius is unchanged by swapping the last two
-points.
+**Extended circumradius is symmetric in the last two points.** For all points $p, q, r$ of
+Euclidean 3-space, the extended circumradius of $(p, r, q)$ equals the extended circumradius of
+$(p, q, r)$.
 
 ## Depends on
 
-- [R3](r3.md)
-- [Circumradius ENN](circumradius-enn.md)
+- [Euclidean 3-space](r3.md)
+- [Extended circumradius of three points](circumradius-enn.md)
 
 ## Proof depends on
 
-- [Triangle Of](triangle-of.md)
-- [Triple Points](triple-points.md)
+- [Triangle on three affinely independent points](triangle-of.md)
+- [Ordered triple of points](triple-points.md)
 
 ## Sources
 

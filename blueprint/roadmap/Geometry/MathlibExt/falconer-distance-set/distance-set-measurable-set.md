@@ -7,17 +7,18 @@ proof: formalized
 lean: FalconerDistanceSet.distanceSet_measurableSet
 ---
 
-# Distance Set measurable Set
+# Distance sets of compact sets are Borel
 
-A compact Euclidean distance set is Lebesgue measurable.
+**Distance sets of compact sets are Borel.** If $E \subseteq \mathbb{R}^d$ is compact, then
+the distance set of $E$ is a Borel measurable subset of $\mathbb{R}$.
 
 ## Depends on
 
-- [Distance Set](distance-set.md)
+- [Euclidean distance set](distance-set.md)
 
 ## Proof depends on
 
-- [Distance Set is Compact](distance-set-is-compact.md)
+- [Distance sets of compact sets are compact](distance-set-is-compact.md)
 
 ## Sources
 

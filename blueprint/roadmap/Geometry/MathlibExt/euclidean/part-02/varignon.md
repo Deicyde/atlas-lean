@@ -7,14 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.varignon
 ---
 
-# Varignon
+# Varignon's theorem
 
-Varignon's theorem (statement varignon-s1): side-midpoints of any quadrilateral form
-a parallelogram of half the area.
+**Varignon's theorem.** Let $A$, $B$, $C$, $D$ be any four points of the Euclidean plane
+$\mathbb{R}^2$, degenerate and self-crossing configurations included, and let $P$, $Q$, $R$,
+$S$ be the midpoints of $AB$, $BC$, $CD$, $DA$, that is $2P = A + B$, $2Q = B + C$,
+$2R = C + D$ and $2S = D + A$. Write $[XYZ]$ for the oriented area of the triangle $XYZ$,
+positive when $X$, $Y$, $Z$ are listed counterclockwise. Then $P + R = Q + S$, so the diagonals
+of $PQRS$ bisect each other and $PQRS$ is a possibly degenerate parallelogram, and
+
+$$2([PQR] + [PRS]) = [ABC] + [ACD],$$
+
+that is, the signed area of $PQRS$ is half the signed area of $ABCD$.
 
 ## Depends on
 
-- [Oriented Triangle Area](../../two-d/oriented-triangle-area.md)
+- [Oriented triangle area](../../two-d/oriented-triangle-area.md)
 
 ## Sources
 

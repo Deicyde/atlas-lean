@@ -7,14 +7,18 @@ proof: formalized
 lean: MathlibExt.GroupTheory.ClassFunctionWanted.classFunctionsEquivConjClasses_symm_apply
 ---
 
-# Class Functions Equiv Conj Classes symm apply
+# Lifting a function on conjugacy classes
 
-Lifting a function on conjugacy classes evaluates by the quotient map.
+**Lifting a function on conjugacy classes.** Let $G$ be a group and $k$ a field. For
+every function $q$ from the set of conjugacy classes of $G$ to $k$ and every $x \in G$,
+the class function that corresponds to $q$ under the inverse of the linear isomorphism
+between class functions and functions on conjugacy classes takes at $x$ the value of $q$
+at the conjugacy class of $x$.
 
 ## Depends on
 
-- [Class Functions](class-functions.md)
-- [Class Functions Equiv Conj Classes](class-functions-equiv-conj-classes.md)
+- [The space of class functions](class-functions.md)
+- [Class functions as functions on conjugacy classes](class-functions-equiv-conj-classes.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: InformationTheory.crossEntropy_pure
 ---
 
-# Cross Entropy pure
+# Cross-entropy of a point mass
 
-The cross-entropy of a point mass at `y` is the surprisal of `y`.
+**Cross-entropy of a point mass.** For an outcome $y$ of a finite alphabet and a probability
+mass function $q$ on it, the cross-entropy $H(\delta_y, q)$ of $q$ relative to the point mass
+$\delta_y$ at $y$ equals the surprisal $-\log_2 q(y)$ of $y$ under $q$, which is $\infty$ when
+$q(y) = 0$.
 
 ## Depends on
 
-- [Cross Entropy](cross-entropy.md)
+- [Cross-entropy](cross-entropy.md)
 - [Surprisal](surprisal.md)
 
 ## Sources

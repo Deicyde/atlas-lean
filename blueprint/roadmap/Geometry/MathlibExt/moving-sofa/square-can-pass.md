@@ -6,23 +6,34 @@ proof: formalized
 lean: MovingSofa.square_canPass
 ---
 
-# Square can Pass
+# The unit square passes the corridor
 
-One actual continuous translation carries the whole square through the corridor.
+**The unit square passes the corridor.** Let the corridor be
+$L = \{z \in \mathbb{C} : \operatorname{Re} z \le 1,\ 0 \le \operatorname{Im} z \le 1\} \cup
+\{z \in \mathbb{C} : 0 \le \operatorname{Re} z \le 1,\ 0 \le \operatorname{Im} z\}$, with entrance
+$E = \{z \in \mathbb{C} : \operatorname{Re} z \le 0,\ 0 \le \operatorname{Im} z \le 1\}$ and exit
+$X = \{z \in \mathbb{C} : 0 \le \operatorname{Re} z \le 1,\ 1 \le \operatorname{Im} z\}$. For the
+unit square
+$Q = \{z \in \mathbb{C} : 0 \le \operatorname{Re} z \le 1,\ 0 \le \operatorname{Im} z \le 1\}$
+there are continuous maps $u : [0, 1] \to \{w \in \mathbb{C} : |w| = 1\}$ and
+$c : [0, 1] \to \mathbb{C}$ such that, writing $Q_t = \{u(t)\,z + c(t) : z \in Q\}$, we have
+$Q_0 \subseteq E$, $Q_1 \subseteq X$ and $Q_t \subseteq L$ for every $t \in [0, 1]$.
+
+A pure translation, first to the right and then upward, suffices.
 
 ## Depends on
 
-- [Can Pass](can-pass.md)
-- [Unit Square](unit-square.md)
+- [Passing the corridor](can-pass.md)
+- [Unit square](unit-square.md)
 
 ## Proof depends on
 
-- [Motion](motion.md)
-- [Position](position.md)
+- [Planar rigid motion](motion.md)
+- [Position under a rigid motion](position.md)
 - [Corridor](corridor.md)
-- [Entrance](entrance.md)
-- [Exit](exit.md)
-- [Square Motion](square-motion.md)
+- [Entrance of the corridor](entrance.md)
+- [Exit of the corridor](exit.md)
+- [The square's translation through the corner](square-motion.md)
 
 ## Sources
 

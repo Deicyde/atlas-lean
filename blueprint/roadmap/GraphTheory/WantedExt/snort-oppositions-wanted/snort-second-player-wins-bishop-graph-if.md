@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.snortSecondPlayerWins_bishopGraph_iff
 ---
 
-# Snort Second Player Wins bishop Graph iff
+# Second player wins Peaceable Bishops exactly when a side is even
 
-The second player wins the Peaceable Bishops game on `n × m` iff `n` or `m`
-is even.
+**Second player wins Peaceable Bishops exactly when a side is even.** For all natural numbers
+$n \ge 1$ and $m \ge 1$, the second player wins Snort on the bishop's graph of the $n \times m$
+board (the Peaceable Bishops game) if and only if $n$ or $m$ is even.
 
 ## Depends on
 
-- [Snort Second Player Wins](snort-second-player-wins.md)
-- [Bishop Graph](bishop-graph.md)
+- [Second-player win in Snort](snort-second-player-wins.md)
+- [Bishop's graph](bishop-graph.md)
 
 ## Sources
 

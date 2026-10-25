@@ -6,15 +6,16 @@ statement: formalized
 lean: MathlibExt.Geometry.OptimalMoebiusWanted.OptimalMoebius.theorem_1_1
 ---
 
-# Theorem 1 1
+# Schwartz's optimal paper Moebius band theorem
 
-Statement of Theorem 1.1 (Main):
-
-A smooth embedded paper Moebius band has aspect ratio greater than `√3`.
+**Schwartz's optimal paper Moebius band theorem.** Let $a > 0$. If
+$f : \mathbb{R}^2 \to \mathbb{R}^3$ is a Moebius embedding of aspect ratio $a$, then
+$a > \sqrt{3}$. That is, a smooth embedded paper Moebius band has aspect ratio greater
+than $\sqrt{3}$.
 
 ## Depends on
 
-- [Is Moebius Embedding](is-moebius-embedding.md)
+- [Moebius embedding](is-moebius-embedding.md)
 
 ## Sources
 

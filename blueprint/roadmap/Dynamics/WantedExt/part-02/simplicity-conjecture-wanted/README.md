@@ -4,5 +4,5 @@ navigation: module
 
 # Simplicity Conjecture
 
-- [Homeo](homeo.md)
-- [Theorem 1 2](theorem-1-2.md)
+- [Area-preserving homeomorphisms of the disc supported in the interior](homeo.md)
+- [Simplicity conjecture](theorem-1-2.md)

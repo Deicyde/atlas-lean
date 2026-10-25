@@ -7,14 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.napoleon_theorem_general
 ---
 
-# Napoleon theorem general
+# Napoleon's theorem, general form
 
-Napoleon's theorem (outer version) with only the hypotheses the argument uses: if `ABC` is
-a nondegenerate triangle in the Euclidean plane and `A2`, `B2`, `C2` are the apexes of equilateral
-triangles erected outward on `BC`, `CA`, `AB`, then the centroids `G1`, `G2`, `G3` of those
-triangles are pairwise at the same positive distance, so they form a nondegenerate equilateral
-triangle. The hypotheses are those of `napoleon_theorem`, the source-shaped form, without
-nondegeneracy (a factor of `hout3`) and `A ≠ B`, `B ≠ C`, `C ≠ A`, which follow from it.
+**Napoleon's theorem, general form.** Let $A$, $B$, $C$, $A_2$, $B_2$, $C_2$ be points of the
+Euclidean plane $\mathbb{R}^2$ with $|BA_2| = |CA_2| = |BC|$, $|CB_2| = |AB_2| = |CA|$ and
+$|AC_2| = |BC_2| = |AB|$, such that $A_2$ and $A$ lie strictly on opposite sides of the line
+$BC$, $B_2$ and $B$ lie strictly on opposite sides of the line $CA$, and $C_2$ and $C$ lie
+strictly on opposite sides of the line $AB$. Let $G_1 = \frac{1}{3}(B + C + A_2)$,
+$G_2 = \frac{1}{3}(C + A + B_2)$ and $G_3 = \frac{1}{3}(A + B + C_2)$. Then
+$|G_1G_2| = |G_2G_3| = |G_3G_1| > 0$.
+
+Thus the centroids $G_1$, $G_2$, $G_3$ of the equilateral triangles erected outward on the sides
+of $ABC$ form a nondegenerate equilateral triangle; the hypotheses force $A$, $B$, $C$ to be
+non-collinear. Opposite sides are expressed by signed areas, for instance
+$((C - B) \times (A - B)) \, ((C - B) \times (A_2 - B)) < 0$, where
+$(x, y) \times (x', y') = x y' - y x'$.
 
 ## Depends on
 

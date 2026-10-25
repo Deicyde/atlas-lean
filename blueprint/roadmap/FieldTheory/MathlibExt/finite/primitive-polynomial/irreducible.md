@@ -7,13 +7,14 @@ proof: formalized
 lean: Polynomial.IsPrimitivePolynomial.irreducible
 ---
 
-# Irreducible
+# Primitive polynomials are irreducible
 
-A primitive polynomial is irreducible.
+**Primitive polynomials are irreducible.** Every primitive polynomial over a finite field is
+irreducible.
 
 ## Depends on
 
-- [Is Primitive Polynomial](is-primitive-polynomial.md)
+- [Primitive polynomial over a finite field](is-primitive-polynomial.md)
 
 ## Sources
 

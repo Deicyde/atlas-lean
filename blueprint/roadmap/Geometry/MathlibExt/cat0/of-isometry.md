@@ -7,13 +7,15 @@ proof: formalized
 lean: IsCAT0FourPoint.of_isometry
 ---
 
-# Of isometry
+# The CAT(0) four-point condition passes to isometrically embedded spaces
 
-The CAT(0) four-point condition pulls back along an isometry.
+**The CAT(0) four-point condition passes to isometrically embedded spaces.** Let $X$ and $Y$
+be metric spaces and let $f : X \to Y$ be an isometry, that is, $d(f(a), f(b)) = d(a, b)$ for
+all $a, b \in X$. If $Y$ satisfies the CAT(0) four-point condition, then so does $X$.
 
 ## Depends on
 
-- [Is CAT0 Four Point](is-cat0-four-point.md)
+- [CAT(0) four-point condition](is-cat0-four-point.md)
 
 ## Sources
 

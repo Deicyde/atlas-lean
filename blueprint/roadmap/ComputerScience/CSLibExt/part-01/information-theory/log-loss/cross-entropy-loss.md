@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cross Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/cross-entropy.md)
+- [Cross-entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/cross-entropy.md)
 
 ## Sources
 

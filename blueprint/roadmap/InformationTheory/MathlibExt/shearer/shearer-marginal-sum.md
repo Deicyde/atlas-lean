@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.InformationTheory.Shearer.shearerMarginal_sum
 ---
 
-# Shearer Marginal sum
+# Marginals preserve total mass
 
-Each marginal of a probability mass function sums to `1`.
+**Marginals preserve total mass.** Let $\alpha$ be a finite set, $n$ a natural number, $\mu$ a
+real-valued function on $\alpha^n$ with $\sum_{x \in \alpha^n} \mu(x) = 1$, and $S$ a set of
+coordinates in $\{0, \dots, n-1\}$. Then the marginal $P_S$ of $\mu$ on $S$ satisfies
+$\sum_{y \in \alpha^S} P_S(y) = 1$.
 
 ## Depends on
 
-- [Shearer Marginal](shearer-marginal.md)
+- [Marginal on a set of coordinates](shearer-marginal.md)
 
 ## Sources
 

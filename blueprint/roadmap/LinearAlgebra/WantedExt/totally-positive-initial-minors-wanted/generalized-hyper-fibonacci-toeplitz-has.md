@@ -12,7 +12,7 @@ totally positive for all large `n`; if `Δ < 0`, so is `T_{r+2,2n+1}^{(r)}`.
 
 ## Depends on
 
-- [Has Positive Minors](../../MathlibExt/matrix/part-02/positive-minors/has-positive-minors.md)
+- [Matrices with positive minors](../../MathlibExt/matrix/part-02/positive-minors/has-positive-minors.md)
 - [Generalized Hyper Fibonacci](generalized-hyper-fibonacci.md)
 
 ## Sources

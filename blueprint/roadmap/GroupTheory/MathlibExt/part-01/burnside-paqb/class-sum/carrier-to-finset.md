@@ -7,14 +7,16 @@ proof: formalized
 lean: BurnsidePaqb.carrier_toFinset
 ---
 
-# Carrier to Finset
+# Conjugacy class of the chosen representative
 
-The carrier finset of a class is the conjugacy class of its representative.
+**Conjugacy class of the chosen representative.** Let $G$ be a finite group. For every
+conjugacy class $K$ of $G$, the set of elements of $K$ equals the conjugacy class of the chosen
+representative of $K$.
 
 ## Depends on
 
-- [Class Rep](class-rep.md)
-- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
+- [Chosen representative of a conjugacy class](class-rep.md)
+- [Conjugacy class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Sources
 

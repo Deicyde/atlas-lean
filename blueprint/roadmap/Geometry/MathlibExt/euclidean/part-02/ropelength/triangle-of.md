@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.triangleOf
 ---
 
-# Triangle Of
+# Triangle on three affinely independent points
 
-The triangle with vertices `p`, `q`, and `r`, from an affine
-independence proof.
+**Triangle on three affinely independent points.** For points $p, q, r$ of Euclidean 3-space
+whose ordered triple $(p, q, r)$ is affinely independent, the triangle in Euclidean 3-space with
+vertices $p$, $q$, $r$, in that order.
 
 ## Depends on
 
-- [R3](r3.md)
-- [Triple Points](triple-points.md)
+- [Euclidean 3-space](r3.md)
+- [Ordered triple of points](triple-points.md)
 
 ## Sources
 

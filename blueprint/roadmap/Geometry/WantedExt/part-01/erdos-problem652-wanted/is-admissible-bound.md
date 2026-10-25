@@ -6,11 +6,12 @@ statement: formalized
 lean: MathlibExt.Geometry.ErdosProblem652Wanted.isAdmissibleBound
 ---
 
-# Is Admissible Bound
+# Admissible constants in Erdős Problem 652
 
-Admissibility of a constant for fixed `k` from [EP-652]: eventually in
-`n` there is an `n`-point set whose `k`-th smallest `R`-value is below
-the bound.
+**Admissible constants in Erdős Problem 652.** A real number $c$ is admissible for
+$k \in \mathbb{N}$ if there is $N$ such that for every $n \ge N$ some set $X$ of exactly $n$
+points in the Euclidean plane contains at least $k$ points $x$ such that the number of distinct
+distances from $x$ to the other points of $X$ is less than $c\sqrt{n}$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Small Kth](has-small-kth.md)
+- [Many points with few distinct distances](has-small-kth.md)
 
 ## Sources
 

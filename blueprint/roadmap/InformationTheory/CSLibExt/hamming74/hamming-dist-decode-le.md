@@ -6,22 +6,27 @@ proof: formalized
 lean: Cslib.CodingTheory.Hamming74.hammingDist_decode_le
 ---
 
-# Hamming Dist decode le
+# No codeword is closer than the Hamming decoder's output
 
-The decoder returns a nearest codeword.
+**No codeword is closer than the Hamming decoder's output.** Let $D$ be the Hamming (7,4)
+decoder and $C \subseteq \mathbb{F}_2^7$ the Hamming code. For every word $y \in \mathbb{F}_2^7$
+and every codeword $c \in C$, the Hamming distance between $y$ and $D(y)$ is at most the
+Hamming distance between $y$ and $c$.
+
+Since $D(y)$ is itself a codeword, the decoder returns a nearest codeword.
 
 ## Depends on
 
-- [Code](code.md)
-- [Decode](decode.md)
-- [Linear Code](../linear-code/linear-code.md)
+- [The Hamming (7,4) code](code.md)
+- [Syndrome decoder of the Hamming code](decode.md)
+- [Linear code](../linear-code/linear-code.md)
 
 ## Proof depends on
 
-- [Decode mem code](decode-mem-code.md)
-- [Hamming Dist decode le one](hamming-dist-decode-le-one.md)
-- [Min Dist code](min-dist-code.md)
-- [Min Dist](../linear-code/min-dist.md)
+- [The decoder always outputs a codeword](decode-mem-code.md)
+- [The Hamming decoder changes at most one bit](hamming-dist-decode-le-one.md)
+- [Minimum distance of the Hamming (7,4) code](min-dist-code.md)
+- [Minimum distance](../linear-code/min-dist.md)
 
 ## Sources
 

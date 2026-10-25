@@ -7,9 +7,10 @@ proof: formalized
 lean: Set.Nat.hasDensity_zero_of_finite
 ---
 
-# Has Density zero of finite
+# Finite sets have natural density zero
 
-A finite set has natural density zero.
+**Finite sets have natural density zero.** Every finite set of natural numbers has natural
+density $0$.
 
 ## Depends on
 

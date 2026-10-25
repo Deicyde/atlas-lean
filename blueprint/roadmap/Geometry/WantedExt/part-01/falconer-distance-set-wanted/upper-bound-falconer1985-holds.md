@@ -6,14 +6,18 @@ statement: formalized
 lean: FalconerDistanceSetWanted.upperBound_Falconer1985_holds
 ---
 
-# Upper Bound Falconer1985 holds
+# Falconer's upper bound for the planar distance threshold
 
-Source: optimization catalogue C34a, Falconer (1985) upper row.
+**Falconer's upper bound for the planar distance threshold.** The planar distance
+threshold, the infimum of all $s \in [0, 2]$ such that every compact set
+$E \subseteq \mathbb{R}^2$ of Hausdorff dimension strictly greater than $s$ has a distance set
+$\{\|x - y\| : x, y \in E\}$ of positive one-dimensional Lebesgue measure, is at most $3/2$.
 
 ## Depends on
 
-- [Upper Bound Falconer1985](upper-bound-falconer1985.md)
+- [Statement of the upper bound $3/2$ for the planar distance threshold](upper-bound-falconer1985.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.FalconerDistanceSetWanted](../../../../../sources/v2/WantedExt.md)
+- optimization catalogue C34a, Falconer (1985) upper row.

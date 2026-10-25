@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.Geometry.Manifold.MorseTheoryWanted.contDiff_morseQuadratic
 ---
 
-# Cont Diff morse Quadratic
+# Smoothness of the Morse quadratic form
 
-The Morse quadratic form is smooth.
+**Smoothness of the Morse quadratic form.** For all natural numbers $k$ and $n$, the Morse
+quadratic form $Q_{k,n} \colon \mathbb{R}^n \to \mathbb{R}$ of index $k$ is $C^\infty$.
 
 ## Depends on
 
-- [Morse Quadratic](morse-quadratic.md)
+- [Morse quadratic form](morse-quadratic.md)
 
 ## Sources
 

@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.count_max_remoteness_calkinWilfRow
 ---
 
-# Count max remoteness calkin Wilf Row
+# Positions of a Calkin–Wilf row with maximal optimal play in Euclid
 
-For `k ≥ 0`, the number of positions in row `k` of the Calkin–Wilf tree whose optimal play
-takes `k` moves (the most possible from row `k`) is `2^(k/2)` for even `k` and `2^((k+1)/2)` for
-odd `k`. Optimal-play length is Smith's remoteness (the winner hurries, the loser delays) of
-`euclidGame`.
+**Positions of a Calkin–Wilf row with maximal optimal play in Euclid.** For every $k \ge 0$,
+the number of positions in row $k$ of the Calkin–Wilf tree whose Smith remoteness in the Euclid
+game is $k$ equals $2^{k/2}$ if $k$ is even and $2^{(k+1)/2}$ if $k$ is odd.
+
+Smith remoteness is the length of optimal play when the winner hurries and the loser delays.
 
 ## Depends on
 
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
 - [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
-- [Calkin Wilf Row](calkin-wilf-row.md)
-- [Euclid Game](euclid-game.md)
+- [Rows of the Calkin–Wilf tree](calkin-wilf-row.md)
+- [The game Euclid](euclid-game.md)
 
 ## Sources
 

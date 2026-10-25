@@ -7,13 +7,14 @@ proof: formalized
 lean: isAmenable_of_subsingleton
 ---
 
-# Is Amenable of subsingleton
+# Trivial groups are amenable
 
-Every trivial (subsingleton) group is amenable, witnessed by `F = {1}`.
+**Trivial groups are amenable.** Every group with at most one element is amenable; the set
+$F = \{1\}$ witnesses the Følner condition.
 
 ## Depends on
 
-- [Is Amenable](is-amenable.md)
+- [Amenable group (Følner condition)](is-amenable.md)
 
 ## Sources
 

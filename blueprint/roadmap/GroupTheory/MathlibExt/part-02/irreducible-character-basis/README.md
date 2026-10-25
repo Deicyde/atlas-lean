@@ -7,12 +7,12 @@ navigation: module
 
 ## FDRep
 
-- [Simple of is Irreducible](simple-of-is-irreducible.md)
-- [Linear Independent character](linear-independent-character.md)
-- [Eq zero of is Class Function of orthogonal](eq-zero-of-is-class-function-of-orthogon.md)
+- [Irreducible representations are simple objects](simple-of-is-irreducible.md)
+- [Characters of nonisomorphic simple representations are linearly independent](linear-independent-character.md)
+- [A class function orthogonal to all irreducible characters vanishes](eq-zero-of-is-class-function-of-orthogon.md)
 
 ## Irreducible Character Basis Wanted
 
-- [Linear Independent irr Characters](linear-independent-irr-characters.md)
-- [Mem span irr Characters of is Class Function](mem-span-irr-characters-of-is-class-func.md)
-- [Card irr Characters eq card conj Classes](card-irr-characters-eq-card-conj-classes.md)
+- [Irreducible characters are linearly independent](linear-independent-irr-characters.md)
+- [Irreducible characters span the class functions](mem-span-irr-characters-of-is-class-func.md)
+- [Number of irreducible characters](card-irr-characters-eq-card-conj-classes.md)

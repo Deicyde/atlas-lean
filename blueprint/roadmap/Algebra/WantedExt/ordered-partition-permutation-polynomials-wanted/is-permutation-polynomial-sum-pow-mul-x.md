@@ -15,7 +15,7 @@ of $\mathbb{F}_p$.
 
 ## Depends on
 
-- [Is Permutation Polynomial](../../../FieldTheory/MathlibExt/finite/permutation-polynomial/is-permutation-polynomial.md)
+- [Permutation polynomial over a finite field](../../../FieldTheory/MathlibExt/finite/permutation-polynomial/is-permutation-polynomial.md)
 
 ## Sources
 

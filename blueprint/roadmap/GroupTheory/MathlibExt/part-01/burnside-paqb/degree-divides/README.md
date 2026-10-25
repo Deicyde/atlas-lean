@@ -5,10 +5,10 @@ navigation: module
 
 # Degree Divides
 
-- [Self pair sum](self-pair-sum.md)
-- [Sum over classes](sum-over-classes.md)
-- [Conj to rep](conj-to-rep.md)
-- [Char eq of mem carrier](char-eq-of-mem-carrier.md)
-- [Char inv eq of mem carrier](char-inv-eq-of-mem-carrier.md)
-- [Class inner sum](class-inner-sum.md)
-- [Degree dvd card](degree-dvd-card.md)
+- [Self-orthogonality of an irreducible character](self-pair-sum.md)
+- [Splitting a sum over conjugacy classes](sum-over-classes.md)
+- [Members of a conjugacy class are conjugate to its representative](conj-to-rep.md)
+- [Characters are constant on conjugacy classes](char-eq-of-mem-carrier.md)
+- [Characters at inverses are constant on conjugacy classes](char-inv-eq-of-mem-carrier.md)
+- [Contribution of a conjugacy class to the self-pairing sum](class-inner-sum.md)
+- [Degrees of irreducible representations divide the group order](degree-dvd-card.md)

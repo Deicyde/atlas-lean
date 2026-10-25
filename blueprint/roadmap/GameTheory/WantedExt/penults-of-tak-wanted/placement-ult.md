@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.placementUlt
 ---
 
-# Placement Ult
+# Ults of a placement game
 
-A position is an ult when it is not terminal but has a terminal option.
+**Ults of a placement game.** Let $\alpha$ be a finite set of cells and let $E$ be a predicate
+on subsets of $\alpha$, the condition under which play has ended. A position $S \subseteq \alpha$
+is an ult when it is not terminal but has a terminal option: $S$ is not terminal, and there is a
+cell $c \notin S$ such that $S \cup \{c\}$ is terminal.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Placement Terminal](placement-terminal.md)
+- [Terminal positions of a placement game](placement-terminal.md)
 
 ## Sources
 

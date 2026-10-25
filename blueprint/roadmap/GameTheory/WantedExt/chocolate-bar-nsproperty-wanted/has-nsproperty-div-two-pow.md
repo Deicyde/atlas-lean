@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.hasNSProperty_div_two_pow
 ---
 
-# Has NSProperty div two pow
+# Halving functions have the NS property
 
-For every natural number `m ≥ 1`, the function `x ↦ ⌊x / 2^m⌋` has the NS property.
+**Halving functions have the NS property.** For every natural number $m \ge 1$, the function
+$x \mapsto \lfloor x / 2^m \rfloor$ on $\mathbb{N}$ has the NS property.
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
+- [NS property](has-nsproperty.md)
 
 ## Sources
 

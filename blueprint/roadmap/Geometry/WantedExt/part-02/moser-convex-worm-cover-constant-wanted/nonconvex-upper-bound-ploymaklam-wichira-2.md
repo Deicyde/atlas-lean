@@ -7,20 +7,23 @@ proof: formalized
 lean: MoserConvexWormCoverConstant.nonconvexUpperBoundPloymaklamWichiramala2018_of_cover
 ---
 
-# Nonconvex Upper Bound Ploymaklam Wichiramala2018 of cover
+# Covers of area at most $0.26007$ bound the nonconvex worm cover constant
 
-Source: Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc
-adaptation.
+**Covers of area at most $0.26007$ bound the nonconvex worm cover constant.** If some
+nonempty planar set of area (Lebesgue outer measure) at most $0.26007$ contains a rotated and
+translated copy of every planar curve of length $1$, then the nonconvex worm cover constant is at
+most $0.26007$.
 
 ## Depends on
 
-- [Nonconvex Cover Ploymaklam Wichiramala2018](nonconvex-cover-ploymaklam-wichiramala20.md)
-- [Nonconvex Upper Bound Ploymaklam Wichiramala2018](nonconvex-upper-bound-ploymaklam-wichira.md)
+- [The Ploymaklam–Wichiramala cover claim](nonconvex-cover-ploymaklam-wichiramala20.md)
+- [Statement of the Ploymaklam–Wichiramala upper bound $0.26007$ for worm covers](nonconvex-upper-bound-ploymaklam-wichira.md)
 
 ## Proof depends on
 
-- [Nonconvex Upper Bound of cover](../../../MathlibExt/moser-worm-cover/nonconvex-upper-bound-of-cover.md)
+- [Covers give upper bounds on the nonconvex worm cover constant](../../../MathlibExt/moser-worm-cover/nonconvex-upper-bound-of-cover.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.MoserConvexWormCoverConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

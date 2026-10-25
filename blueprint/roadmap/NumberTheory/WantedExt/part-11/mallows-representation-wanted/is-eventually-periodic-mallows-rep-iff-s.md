@@ -12,7 +12,7 @@ Stern–Brocot representation is.
 
 ## Depends on
 
-- [Is Eventually Periodic](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+- [Eventually periodic sequences](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
 - [Mallows Letter](mallows-letter.md)
 - [Stern Brocot Letter](stern-brocot-letter.md)
 - [Mallows Rep](mallows-rep.md)

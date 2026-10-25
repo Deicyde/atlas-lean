@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.Databases.Expr.Conforms
 ---
 
-# Conforms
+# Databases conforming to a schema
 
-A database conforms to the database schema `sch` when each base relation is over its
-schema.
+**Databases conforming to a schema.** Let $N$ be a set of relation names. A database
+schema assigns to each name $n \in N$ a finite set of attributes $\mathrm{sch}(n)$, and a
+database assigns to each name $n$ a finite set of tuples $\mathrm{db}(n)$. The database
+$\mathrm{db}$ conforms to the database schema $\mathrm{sch}$ when, for every name $n$, the
+set $\mathrm{db}(n)$ is a relation over $\mathrm{sch}(n)$.
 
 ## Depends on
 

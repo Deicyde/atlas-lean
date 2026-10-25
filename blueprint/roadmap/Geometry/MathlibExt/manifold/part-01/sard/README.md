@@ -5,7 +5,7 @@ navigation: module
 
 # Sard
 
-- [Critical Set](critical-set.md)
-- [Critical Values](critical-values.md)
-- [Sard euclidean open](sard-euclidean-open.md)
-- [Sard theorem](sard-theorem.md)
+- [Critical points of a map to Euclidean space](critical-set.md)
+- [Critical values of a map to Euclidean space](critical-values.md)
+- [Sard's theorem on open subsets of finite-dimensional spaces](sard-euclidean-open.md)
+- [Sard's theorem for maps into Euclidean space](sard-theorem.md)

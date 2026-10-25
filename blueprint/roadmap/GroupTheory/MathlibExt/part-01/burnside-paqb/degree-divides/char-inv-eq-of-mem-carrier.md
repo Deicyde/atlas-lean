@@ -7,17 +7,20 @@ proof: formalized
 lean: BurnsidePaqb.char_inv_eq_of_mem_carrier
 ---
 
-# Char inv eq of mem carrier
+# Characters at inverses are constant on conjugacy classes
 
-Character values at inverses are constant on each class.
+**Characters at inverses are constant on conjugacy classes.** Let $\rho$ be a representation
+of a finite group $G$ on a finite-dimensional complex vector space, with character $\chi$, and let
+$g_l$ be the chosen representative of a conjugacy class $l$ of $G$. Then
+$\chi(x^{-1}) = \chi(g_l^{-1})$ for every $x \in l$.
 
 ## Depends on
 
-- [Class Rep](../class-sum/class-rep.md)
+- [Chosen representative of a conjugacy class](../class-sum/class-rep.md)
 
 ## Proof depends on
 
-- [Conj to rep](conj-to-rep.md)
+- [Members of a conjugacy class are conjugate to its representative](conj-to-rep.md)
 
 ## Sources
 

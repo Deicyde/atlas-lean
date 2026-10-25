@@ -6,18 +6,20 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.IsDictator
 ---
 
-# Is Dictator
+# Dictator of a social choice function
 
-`d` is a dictator: chosen outcome is always top-ranked by `d`.
+**Dictator of a social choice function.** For a resolute social choice function $F$, a voter
+$d$ is a dictator when, for every profile $p$, the chosen alternative $F(p)$ is top-ranked in the
+preference order $p(d)$ of voter $d$.
 
 ## Depends on
 
-- [Social Choice Function](social-choice-function.md)
+- [Social choice functions](social-choice-function.md)
 
 ## Proof depends on
 
-- [Is Top Ranked](is-top-ranked.md)
-- [Profile](profile.md)
+- [Top-ranked alternative](is-top-ranked.md)
+- [Preference profiles for the Gibbard–Satterthwaite theorem](profile.md)
 
 ## Sources
 

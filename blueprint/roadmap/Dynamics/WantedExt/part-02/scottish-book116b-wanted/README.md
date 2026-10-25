@@ -4,9 +4,9 @@ navigation: module
 
 # Scottish Book116b
 
-- [Coin Flip](coin-flip.md)
-- [Coin Measure](coin-measure.md)
-- [Step](step.md)
-- [Partial Prod](partial-prod.md)
-- [Scottish Book Problem116b Claim](scottish-book-problem116b-claim.md)
-- [Scottish Book116b refuted](scottish-book116b-refuted.md)
+- [Fair coin measure](coin-flip.md)
+- [Fair coin product measure](coin-measure.md)
+- [Generator chosen by a coin sequence](step.md)
+- [Successive products along a coin sequence](partial-prod.md)
+- [Scottish Book Problem 116(b), measurable-set form](scottish-book-problem116b-claim.md)
+- [Scottish Book Problem 116(b) fails for arbitrary measurable sets](scottish-book116b-refuted.md)

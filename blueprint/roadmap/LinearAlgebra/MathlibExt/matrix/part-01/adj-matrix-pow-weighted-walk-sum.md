@@ -7,18 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.adjMatrix_pow_weighted_walk_sum
 ---
 
-# Adj Matrix Pow Walk
+# Powers of a weighted adjacency matrix sum the weights of walks
 
-Weighted adjacency matrix powers count weighted walks: for a weighted digraph
-with vertices `Fin k` and weighted adjacency matrix `A`, the `ij`th entry of
-`A ^ n` is the sum, over all vertex sequences `p` of length `n + 1` from `i`
-to `j`, of the product of the edge weights along the walk.
+**Powers of a weighted adjacency matrix sum the weights of walks.** Let $R$ be a commutative
+semiring, let $k$ and $n$ be natural numbers, and let $A$ be a $k \times k$ matrix over $R$ with
+rows and columns indexed by $\{0, \dots, k-1\}$, viewed as the weighted adjacency matrix of a
+weighted digraph on these $k$ vertices. Then for all vertices $i$ and $j$,
 
-Walks are encoded as vertex sequences `Fin (n + 1) → Fin k` with `p 0 = i`
-and `p (Fin.last n) = j`; the edge-weight product runs over `t : Fin n`.
-The source states `n ≥ 1`; the formalization covers `n = 0` as well, where
-both sides reduce to the Kronecker delta.
-Proves `Wanted` entry `adjMatrix_pow_weighted_walk_sum`.
+$$(A^n)_{ij} = \sum_{p} \prod_{t=0}^{n-1} A_{p_t p_{t+1}},$$
+
+where the sum runs over all sequences $p = (p_0, \dots, p_n)$ of vertices with $p_0 = i$ and
+$p_n = j$, that is, over all walks of length $n$ from $i$ to $j$, each weighted by the product
+of the entries of $A$ along its edges.
+
+The source states $n \ge 1$; the case $n = 0$ is included, where both sides equal $1$ if
+$i = j$ and $0$ otherwise.
 
 ## Depends on
 

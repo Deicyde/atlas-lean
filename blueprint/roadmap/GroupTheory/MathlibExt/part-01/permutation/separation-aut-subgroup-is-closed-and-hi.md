@@ -7,23 +7,29 @@ proof: formalized
 lean: MetaMathlibExt.CameronSeparationGroupWanted.separationAutSubgroup_isClosed_and_highlyHomogeneous
 ---
 
-# Cameron Separation Group
+# The separation group of a countably infinite dense circular order is closed and highly homogeneous
 
-The separation automorphism group of a countable infinite dense circular order is
-closed in the pointwise topology and highly homogeneous (one orbit on `k`-sets for
-all `k`).
+**The separation group of a countably infinite dense circular order is closed and highly
+homogeneous.** Let $\alpha$ be a countably infinite set with a circular order, and write
+$\operatorname{btw}(a, b, c)$ when $b$ lies between $a$ and $c$ going around from $a$ to $c$.
+Suppose the circular order is dense: for all distinct $a, b \in \alpha$ there is some
+$c \in \alpha$, different from $a$ and $b$, with $\operatorname{btw}(a, c, b)$. Then the
+separation automorphism group of $\alpha$ is closed in the topology of pointwise convergence on
+the permutations of $\alpha$, where $\alpha$ carries the discrete topology, and it is highly
+homogeneous: for every natural number $k$ it has a single orbit on the $k$-element subsets of
+$\alpha$.
 
 ## Depends on
 
-- [Pointwise Topology](pointwise-topology.md)
-- [Is Highly Homogeneous](highly-homogeneous/is-highly-homogeneous.md)
-- [Separation Aut Subgroup](separation/separation-aut-subgroup.md)
+- [Pointwise convergence topology on permutations](pointwise-topology.md)
+- [Highly homogeneous permutation groups](highly-homogeneous/is-highly-homogeneous.md)
+- [Separation-preserving permutation group](separation/separation-aut-subgroup.md)
 
 ## Proof depends on
 
-- [Cameron Circular Order Group](circular-order-aut-subgroup-is-closed-an.md)
-- [Circular Order](circular-order-aut-subgroup.md)
-- [Circular Separates](separation/circular-separates.md)
+- [The automorphism group of a countably infinite dense circular order is closed and highly homogeneous](circular-order-aut-subgroup-is-closed-an.md)
+- [The automorphism group of a circular order](circular-order-aut-subgroup.md)
+- [Separation of pairs in a circular order](separation/circular-separates.md)
 
 ## Sources
 

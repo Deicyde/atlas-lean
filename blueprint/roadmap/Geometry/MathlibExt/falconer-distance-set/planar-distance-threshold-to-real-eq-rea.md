@@ -7,19 +7,22 @@ proof: formalized
 lean: FalconerDistanceSet.planarDistanceThreshold_toReal_eq_real_sInf
 ---
 
-# Planar Distance Threshold to Real eq real s Inf
+# The planar distance threshold as a real infimum
 
-The finite ENNReal representation gives the exact defining infimum over real `[0,2]`.
+**The planar distance threshold as a real infimum.** The value of the planar distance
+threshold as a real number (with the convention that $\infty$ goes to $0$) equals the infimum
+in $\mathbb{R}$ of the set of real numbers $r \in [0, 2]$ that, as elements of $[0, \infty]$,
+have the planar threshold property.
 
 ## Depends on
 
-- [Planar Distance Threshold](planar-distance-threshold.md)
-- [Planar Threshold Property](planar-threshold-property.md)
+- [Planar distance threshold](planar-distance-threshold.md)
+- [Planar Falconer threshold property](planar-threshold-property.md)
 
 ## Proof depends on
 
-- [Admissible Planar Threshold](admissible-planar-threshold.md)
-- [Real Threshold Family eq to Real image](real-threshold-family-eq-to-real-image.md)
+- [Admissible planar threshold](admissible-planar-threshold.md)
+- [Real form of the admissible threshold family](real-threshold-family-eq-to-real-image.md)
 
 ## Sources
 

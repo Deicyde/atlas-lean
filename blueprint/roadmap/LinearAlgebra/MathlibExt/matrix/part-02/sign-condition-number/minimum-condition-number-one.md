@@ -7,21 +7,22 @@ proof: formalized
 lean: Matrix.SignConditionNumber.minimumConditionNumber_one
 ---
 
-# Minimum Condition Number one
+# Minimum condition number of order one
 
-The actual order-one sign-matrix minimum is one.
+**Minimum condition number of order one.** The minimum condition number of order $1$ is $1$:
+the least condition number of a $1 \times 1$ real sign matrix is $1$.
 
 ## Depends on
 
-- [Minimum Condition Number](minimum-condition-number.md)
+- [Minimum condition number of sign matrices](minimum-condition-number.md)
 
 ## Proof depends on
 
 - [Sign Matrix](sign-matrix.md)
-- [Realize](realize.md)
-- [Condition Number](condition-number.md)
-- [Condition Number one order one](condition-number-one-order-one.md)
-- [One le minimum Condition Number](one-le-minimum-condition-number.md)
+- [Real sign matrix of a Boolean matrix](realize.md)
+- [Condition number of a square real matrix](condition-number.md)
+- [Condition number of the order-one identity](condition-number-one-order-one.md)
+- [The minimum condition number is at least one](one-le-minimum-condition-number.md)
 
 ## Sources
 

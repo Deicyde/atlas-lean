@@ -11,12 +11,12 @@ lean: Cslib.Databases.ReleasedAt
 
 ## Depends on
 
-- [Action](action.md)
+- [Action of a locked schedule](action.md)
 
 ## Proof depends on
 
-- [Lock Mode](lock-mode.md)
-- [Op](../serializability/op.md)
+- [Lock mode](lock-mode.md)
+- [Operation of a schedule](../serializability/op.md)
 
 ## Sources
 

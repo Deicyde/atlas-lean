@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.calkinWilfRow
 ---
 
-# Calkin Wilf Row
+# Rows of the Calkin–Wilf tree
 
-Row `k` of the Calkin–Wilf tree, as numerator–denominator pairs: row `0` is `1/1`, and
-`a/b` has children `a/(a+b)` and `(a+b)/b`.
+**Rows of the Calkin–Wilf tree.** Row $k$ of the Calkin–Wilf tree is a list of
+numerator–denominator pairs, the pair $(a, b)$ standing for $a/b$. Row $0$ is the single pair
+$(1, 1)$, and row $k + 1$ is obtained from row $k$ by replacing each pair $(a, b)$, in order, by
+its two children $(a, a + b)$ and $(a + b, b)$.
 
 ## Depends on
 

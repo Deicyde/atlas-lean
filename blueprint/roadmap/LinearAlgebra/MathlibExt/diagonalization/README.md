@@ -5,5 +5,5 @@ navigation: module
 
 # Diagonalization
 
-- [Exists eigenbasis of is Semisimple of splits](exists-eigenbasis-of-is-semisimple-of-sp.md)
-- [Exists diagonal similar of splits of squarefree minpoly](exists-diagonal-similar-of-splits-of-squ.md)
+- [Eigenbasis of a semisimple endomorphism with split characteristic polynomial](exists-eigenbasis-of-is-semisimple-of-sp.md)
+- [Diagonalizability from a split characteristic polynomial and a squarefree minimal polynomial](exists-diagonal-similar-of-splits-of-squ.md)

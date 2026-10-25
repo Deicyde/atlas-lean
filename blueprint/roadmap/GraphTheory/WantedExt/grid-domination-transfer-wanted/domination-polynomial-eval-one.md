@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.dominationPolynomial_eval_one
 ---
 
-# Domination Polynomial eval one
+# The domination polynomial at one counts dominating sets
 
-The value of the domination polynomial at `1` is the number of dominating sets.
+**The domination polynomial at one counts dominating sets.** For every finite graph $G$, the
+value at $1$ of the domination polynomial of $G$ equals the number of dominating sets of $G$.
 
 ## Depends on
 
-- [Domination Polynomial](domination-polynomial.md)
+- [Domination polynomial](domination-polynomial.md)
 - [Dominating set](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-02/domination/is-dominating.md)
 
 ## Sources

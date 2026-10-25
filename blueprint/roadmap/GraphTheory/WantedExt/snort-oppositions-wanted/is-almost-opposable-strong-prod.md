@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isAlmostOpposable_strongProd
 ---
 
-# Is Almost Opposable strong Prod
+# Strong products with a graph that has a universal vertex
 
-If `G` is almost opposable and `H` has a universal vertex, then `G ⊠ H` is
-almost opposable.
+**Strong products with a graph that has a universal vertex.** Let $G$ and $H$ be graphs. If
+$G$ is almost opposable and $H$ has a universal vertex, that is, a vertex adjacent to every other
+vertex of $H$, then the strong product $G \boxtimes H$ is almost opposable.
 
 ## Depends on
 
-- [Is Almost Opposable](is-almost-opposable.md)
-- [Strong Prod](strong-prod.md)
+- [Almost opposable graph](is-almost-opposable.md)
+- [Strong product of graphs](strong-prod.md)
 
 ## Sources
 

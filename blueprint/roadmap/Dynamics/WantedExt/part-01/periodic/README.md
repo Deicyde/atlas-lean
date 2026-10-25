@@ -1,3 +1,3 @@
 # Periodic
 
-- [Binary Recurrence Realizable Dimension Wanted](binaryrec-realizable-subspace-dim.md)
+- [Realizable span of a nondegenerate binary recurrence](binaryrec-realizable-subspace-dim.md)

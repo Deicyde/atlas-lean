@@ -7,21 +7,23 @@ proof: formalized
 lean: LatticePointCubeSandwich.innerCubeSet_subset_outerCubeSet
 ---
 
-# Inner Cube Set subset outer Cube Set
+# Inner cube indices are outer cube indices
 
-Every inner cube index is an outer cube index.
+**Inner cube indices are outer cube indices.** For every set $S \subseteq \mathbb{R}^n$ and
+every real $t$, the inner cube set of $S$ at scale $t$ is contained in the outer cube set of $S$
+at scale $t$.
 
 ## Depends on
 
-- [Inner Cube Set](inner-cube-set.md)
-- [Outer Cube Set](outer-cube-set.md)
+- [Inner cube set](inner-cube-set.md)
+- [Outer cube set](outer-cube-set.md)
 
 ## Proof depends on
 
-- [Integer Unit Cube](integer-unit-cube.md)
-- [Mem inner Cube Set iff](mem-inner-cube-set-iff.md)
-- [Mem integer Unit Cube iff](mem-integer-unit-cube-iff.md)
-- [Mem outer Cube Set iff](mem-outer-cube-set-iff.md)
+- [Integer unit cube](integer-unit-cube.md)
+- [Membership in the inner cube set](mem-inner-cube-set-iff.md)
+- [Membership in an integer unit cube](mem-integer-unit-cube-iff.md)
+- [Membership in the outer cube set](mem-outer-cube-set-iff.md)
 
 ## Sources
 

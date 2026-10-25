@@ -5,12 +5,12 @@ navigation: module
 
 # Class Function
 
-- [Is Class Function](is-class-function.md)
-- [Class Functions](class-functions.md)
-- [Character is Class Function](character-is-class-function.md)
-- [Eq of is Conj](eq-of-is-conj.md)
-- [Is Class Function iff factor conj Classes](is-class-function-iff-factor-conj-classe.md)
-- [Class Functions Equiv Conj Classes](class-functions-equiv-conj-classes.md)
-- [Class Functions Equiv Conj Classes apply mk](class-functions-equiv-conj-classes-apply.md)
-- [Class Functions Equiv Conj Classes symm apply](class-functions-equiv-conj-classes-symm.md)
-- [Finrank class Functions eq card conj Classes](finrank-class-functions-eq-card-conj-cla.md)
+- [Class functions on a group](is-class-function.md)
+- [The space of class functions](class-functions.md)
+- [Characters are class functions](character-is-class-function.md)
+- [Class functions agree on conjugate elements](eq-of-is-conj.md)
+- [Class functions factor through conjugacy classes](is-class-function-iff-factor-conj-classe.md)
+- [Class functions as functions on conjugacy classes](class-functions-equiv-conj-classes.md)
+- [Evaluating a class function on conjugacy classes](class-functions-equiv-conj-classes-apply.md)
+- [Lifting a function on conjugacy classes](class-functions-equiv-conj-classes-symm.md)
+- [Dimension of the space of class functions](finrank-class-functions-eq-card-conj-cla.md)

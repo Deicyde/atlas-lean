@@ -6,22 +6,24 @@ proof: formalized
 lean: InformationTheory.FiniteExtension.trivial_auxiliaryInformation
 ---
 
-# Trivial auxiliary Information
+# The trivial extension has zero auxiliary information
 
-The constructed singleton auxiliary is independent of the actual input.
+**The trivial extension has zero auxiliary information.** For every finite joint law $p$, the
+mutual information $I(X; S)$ between the input $X$ and the auxiliary $S$ in the trivial extension
+of $p$, whose auxiliary alphabet has a single letter, is $0$.
 
 ## Depends on
 
-- [Auxiliary Information](auxiliary-information.md)
-- [Trivial](trivial.md)
-- [Finite Joint Law](finite-joint-law.md)
+- [Mutual information between the input and the auxiliary](auxiliary-information.md)
+- [Trivial extension](trivial.md)
+- [Finite joint law](finite-joint-law.md)
 
 ## Proof depends on
 
-- [Input Law](input-law.md)
-- [Shannon Entropy](../finite-entropy/shannon-entropy.md)
-- [Shannon Entropy map const](../finite-entropy/shannon-entropy-map-const.md)
-- [Shannon Entropy map prod singleton](../finite-entropy/shannon-entropy-map-prod-singleton.md)
+- [Input law](input-law.md)
+- [Shannon entropy](../finite-entropy/shannon-entropy.md)
+- [A constant observation has zero entropy](../finite-entropy/shannon-entropy-map-const.md)
+- [Appending a singleton coordinate preserves entropy](../finite-entropy/shannon-entropy-map-prod-singleton.md)
 
 ## Sources
 

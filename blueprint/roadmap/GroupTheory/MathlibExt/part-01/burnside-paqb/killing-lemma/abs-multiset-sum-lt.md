@@ -7,10 +7,12 @@ proof: formalized
 lean: BurnsidePaqb.abs_multiset_sum_lt
 ---
 
-# Abs multiset sum lt
+# Strict triangle inequality for unit complex numbers, multiset form
 
-Strict triangle inequality for a multiset sum of unit-modulus numbers,
-not all equal.
+**Strict triangle inequality for unit complex numbers, multiset form.** Let $s$ be a finite
+multiset of complex numbers, each of absolute value $1$, containing two distinct elements. Then
+the absolute value of the sum of $s$ is strictly less than the number of elements of $s$,
+counted with multiplicity.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Abs add two ne unit lt two](abs-add-two-ne-unit-lt-two.md)
+- [Sum of two distinct unit complex numbers](abs-add-two-ne-unit-lt-two.md)
 
 ## Sources
 

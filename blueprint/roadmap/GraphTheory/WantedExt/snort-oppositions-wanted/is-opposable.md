@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsOpposable
 ---
 
-# Is Opposable
+# Opposable graphs
 
-`G` is opposable: it has an opposition.
+**Opposable graphs.** A graph $G$ is opposable if it has an opposition: an automorphism $f$
+of $G$ such that for every vertex $v$, $f(f(v)) = v$, $f(v) \neq v$, and $f(v)$ is not adjacent
+to $v$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Opposition](is-opposition.md)
+- [Oppositions](is-opposition.md)
 
 ## Sources
 

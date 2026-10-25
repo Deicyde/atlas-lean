@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.princessRoses_equiv_simplifiedPrincessRoses
 ---
 
-# Princess Roses equiv simplified Princess Roses
+# Four-pile P&R is equivalent to simplified P&R
 
-For `a ≥ b ≥ c ≥ d` and `n ≥ 0`, the P&R position `(a, b, c, d)` and the simplified P&R
-position `[a + n, b + n, c + n, d]` have the same Sprague–Grundy value (stated as
-equivalence of the two games).
+**Four-pile P&R is equivalent to simplified P&R.** For natural numbers $a \ge b \ge c \ge d$
+and every natural number $n$, the Princess and the Roses position $(a, b, c, d)$ is equivalent to
+the simplified P&R position $[a + n, b + n, c + n, d]$; that is, the two have the same
+Sprague–Grundy value.
 
 ## Depends on
 
-- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
-- [Princess Roses](princess-roses.md)
-- [Simplified Princess Roses](simplified-princess-roses.md)
+- [Equivalence of impartial games](../../MathlibExt/sprague-grundy/equiv.md)
+- [The Princess and the Roses game](princess-roses.md)
+- [Simplified Princess and the Roses](simplified-princess-roses.md)
 
 ## Sources
 

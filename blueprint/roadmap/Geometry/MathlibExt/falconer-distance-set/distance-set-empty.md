@@ -7,13 +7,14 @@ proof: formalized
 lean: FalconerDistanceSet.distanceSet_empty
 ---
 
-# Distance Set empty
+# Distance set of the empty set
 
-The empty set determines no distances.
+**Distance set of the empty set.** For every $d$, the distance set of the empty subset of
+$\mathbb{R}^d$ is empty.
 
 ## Depends on
 
-- [Distance Set](distance-set.md)
+- [Euclidean distance set](distance-set.md)
 
 ## Sources
 

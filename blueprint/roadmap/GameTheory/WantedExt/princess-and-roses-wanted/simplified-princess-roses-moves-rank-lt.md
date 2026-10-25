@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.simplifiedPrincessRosesMoves_rank_lt
 ---
 
-# Simplified Princess Roses Moves rank lt
+# Simplified P&R moves decrease the number of objects
 
-Every simplified P&R move strictly decreases the total number of objects.
+**Simplified P&R moves decrease the number of objects.** For all quadruples $(a, b, c, d)$
+and $(a', b', c', d')$ of natural numbers, if $(a', b', c', d')$ is an option of $(a, b, c, d)$
+in simplified Princess and the Roses, then $a' + b' + c' + d' < a + b + c + d$.
 
 ## Depends on
 
-- [Simplified Princess Roses Moves](simplified-princess-roses-moves.md)
+- [Options in simplified Princess and the Roses](simplified-princess-roses-moves.md)
 
 ## Proof depends on
 
-- [Mem simplified Princess Roses Moves](mem-simplified-princess-roses-moves.md)
-- [Simplified Princess Roses Move List](simplified-princess-roses-move-list.md)
+- [Characterization of simplified P&R options](mem-simplified-princess-roses-moves.md)
+- [Moves of simplified P&R](simplified-princess-roses-move-list.md)
 
 ## Sources
 

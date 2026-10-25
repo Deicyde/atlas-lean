@@ -7,15 +7,17 @@ proof: formalized
 lean: MathlibExt.GameTheory.BondarevaShapleyWanted.bondareva_shapley
 ---
 
-# Bondareva shapley
+# Bondareva–Shapley theorem
 
-Bondareva-Shapley: cooperative game has nonempty core iff balanced.
+**Bondareva–Shapley theorem.** Let $v$ be a cooperative game with transferable utility on a
+finite set $N$ of players. Then $v$ has a core allocation $x \colon N \to \mathbb{R}$, that is,
+the core of $v$ is nonempty, if and only if $v$ is balanced.
 
 ## Depends on
 
-- [Is Balanced](is-balanced.md)
-- [Is Core Allocation](is-core-allocation.md)
-- [Coop Game](../shapley-value/coop-game.md)
+- [Balanced cooperative game](is-balanced.md)
+- [Core allocation](is-core-allocation.md)
+- [Cooperative game with transferable utility](../shapley-value/coop-game.md)
 
 ## Sources
 

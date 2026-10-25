@@ -6,9 +6,11 @@ statement: formalized
 lean: Metric.twoDistanceBorsukNumber
 ---
 
-# Two Distance Borsuk Number
+# Two-distance Borsuk number in dimension $n$
 
-The dimensional Borsuk supremum restricted to two-distance sets.
+**Two-distance Borsuk number in dimension $n$.** The two-distance Borsuk number in dimension
+$n$ is the supremum, taken in $\mathbb{N} \cup \{\infty\}$, of the Borsuk numbers of all bounded
+two-distance sets with at least two points in the Euclidean space $\mathbb{R}^n$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Two Distance Set](is-two-distance-set.md)
-- [Set Borsuk Number](set-borsuk-number.md)
+- [Two-distance sets](is-two-distance-set.md)
+- [Borsuk number of a set](set-borsuk-number.md)
 
 ## Sources
 

@@ -6,9 +6,13 @@ statement: formalized
 lean: MathlibExt.Geometry.Manifold.SardWanted.criticalValues
 ---
 
-# Critical Values
+# Critical values of a map to Euclidean space
 
-Image of `criticalSet` under `f`, i.e., the critical values.
+**Critical values of a map to Euclidean space.** Let $M$ be a Hausdorff, second-countable
+smooth manifold without boundary modelled on a finite-dimensional real normed space, and let
+$f : M \to \mathbb{R}^n$ be a map. The set of critical values of $f$ is the image under $f$ of its
+critical set, the set of points $x \in M$ at which the manifold derivative of $f$ at $x$ is not
+surjective.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Critical Set](critical-set.md)
+- [Critical points of a map to Euclidean space](critical-set.md)
 
 ## Sources
 

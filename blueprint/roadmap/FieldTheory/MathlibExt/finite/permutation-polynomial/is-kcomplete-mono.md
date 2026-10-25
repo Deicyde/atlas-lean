@@ -7,13 +7,14 @@ proof: formalized
 lean: Polynomial.isKComplete_mono
 ---
 
-# Is KComplete mono
+# Completeness at a lower level
 
-Level-`k` completeness is downward monotone in the level.
+**Completeness at a lower level.** Let $F$ be a finite field, $f \in F[X]$ and let $j \le k$
+be natural numbers. If $f$ is complete to level $k$, then $f$ is complete to level $j$.
 
 ## Depends on
 
-- [Is KComplete](is-kcomplete.md)
+- [Polynomial complete to level $k$](is-kcomplete.md)
 
 ## Sources
 

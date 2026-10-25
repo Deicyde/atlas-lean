@@ -5,8 +5,8 @@ navigation: module
 
 # Finite Group Convolution
 
-- [Conv](conv.md)
-- [Conv assoc](conv-assoc.md)
-- [Conv single one](conv-single-one.md)
-- [Conv comm of comm](conv-comm-of-comm.md)
-- [Char Pair conv](char-pair-conv.md)
+- [Convolution on a finite group](conv.md)
+- [Associativity of convolution](conv-assoc.md)
+- [The delta function at the identity is a left unit for convolution](conv-single-one.md)
+- [Convolution on a finite abelian group is commutative](conv-comm-of-comm.md)
+- [Convolution theorem for one-dimensional characters](char-pair-conv.md)

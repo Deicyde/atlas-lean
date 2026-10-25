@@ -7,14 +7,17 @@ proof: formalized
 lean: ConvexCovering.symmetricHadwigerCoveringNumber_eq_of_isLeast
 ---
 
-# Symmetric Hadwiger Covering Number eq of is Least
+# A least uniform bound is the symmetric Hadwiger covering number
 
-The same characteristic API for the centrally symmetric class.
+**A least uniform bound is the symmetric Hadwiger covering number.** If $q$ is the least
+natural number such that every centrally symmetric convex body $K$ in the Euclidean space
+$\mathbb{R}^n$ is covered by $q$ translates of its interior, then the symmetric Hadwiger
+covering number of dimension $n$ equals $q$.
 
 ## Depends on
 
-- [Uniform Symmetric Interior Translate Bound](uniform-symmetric-interior-translate-bou.md)
-- [Symmetric Hadwiger Covering Number](symmetric-hadwiger-covering-number.md)
+- [Uniform bound for covering centrally symmetric convex bodies by interior translates](uniform-symmetric-interior-translate-bou.md)
+- [Symmetric Hadwiger covering number](symmetric-hadwiger-covering-number.md)
 
 ## Sources
 

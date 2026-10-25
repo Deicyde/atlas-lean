@@ -6,10 +6,13 @@ statement: formalized
 lean: MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.X
 ---
 
-# X
+# Aspect-ratio parameters of inscribed rectangles
 
-The set `X` from Theorem 1. More precisely, let `X` be the set of all `r ∈ [0,1]` so that there
-is an inscribed rectangle in `γ` of aspect ratio `tan(r·π/4)`.
+**Aspect-ratio parameters of inscribed rectangles.** For a map $\gamma$ from the unit circle
+to $\mathbb{R}^2$, let $X(\gamma)$ be the set of all $r \in [0, 1]$ for which there are points
+$a, b \in \mathbb{R}^2$ and an angle $\theta \in \mathbb{R}$ such that the rotated rectangle given
+by $a$, $b$ and $\theta$ is inscribed in $\gamma$ and the axis-aligned rectangle with opposite
+corners $a$ and $b$ has aspect ratio $\tan(r\pi/4)$.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Inscribed Rectangle](is-inscribed-rectangle.md)
-- [Aspect Ratio](aspect-ratio.md)
+- [Inscribed rectangle](is-inscribed-rectangle.md)
+- [Aspect ratio](aspect-ratio.md)
 
 ## Sources
 

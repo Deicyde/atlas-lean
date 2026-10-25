@@ -5,5 +5,5 @@ navigation: module
 
 # Matrix Exp Det Trace
 
-- [Matrix det exp eq exp trace](matrix-det-exp-eq-exp-trace.md)
-- [Matrix exp eq sum of is Nilpotent](matrix-exp-eq-sum-of-is-nilpotent.md)
+- [Determinant of the matrix exponential](matrix-det-exp-eq-exp-trace.md)
+- [Exponential of a nilpotent matrix](matrix-exp-eq-sum-of-is-nilpotent.md)

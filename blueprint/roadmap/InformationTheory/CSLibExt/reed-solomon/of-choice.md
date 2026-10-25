@@ -5,17 +5,21 @@ statement: formalized
 lean: Cslib.CodingTheory.ReedSolomon.KeySolver.ofChoice
 ---
 
-# Of Choice
+# A key-equation solver by choice
 
-A key-equation solver by choice.
+**A key-equation solver by choice.** For points $\alpha_0, \dots, \alpha_{n-1}$ in a field
+$F$ and natural numbers $k$ and $e$, this is the solver for the key equations that, on a received
+word $y \in F^n$, returns a pair $(Q, E)$ of polynomials solving the key equations for $y$ (that
+is, $E$ is monic of degree $e$, $\deg Q < e + k$ and $Q(\alpha_i) = y_i E(\alpha_i)$ for all $i$),
+picked by the axiom of choice, whenever such a pair exists, and reports failure otherwise.
 
 ## Depends on
 
-- [Key Solver](key-solver.md)
+- [Solver for the key equations](key-solver.md)
 
 ## Proof depends on
 
-- [Is Key Solution](is-key-solution.md)
+- [Berlekamp-Welch key equations](is-key-solution.md)
 
 ## Sources
 

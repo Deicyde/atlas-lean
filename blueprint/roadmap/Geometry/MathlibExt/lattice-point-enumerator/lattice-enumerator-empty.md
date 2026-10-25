@@ -7,18 +7,20 @@ proof: formalized
 lean: LatticePointEnumerator.latticeEnumerator_empty
 ---
 
-# Lattice Enumerator empty
+# The lattice-point count of the empty set vanishes
 
-The empty set enumerates to zero, at any dilate.
+**The lattice-point count of the empty set vanishes.** For every natural number $d$ and every
+real number $t$, the lattice-point count of the empty set $\emptyset \subseteq \mathbb{R}^d$ at the
+dilate $t$ is $0$.
 
 ## Depends on
 
-- [Lattice Enumerator](lattice-enumerator.md)
+- [Lattice-point count of a real dilate](lattice-enumerator.md)
 
 ## Proof depends on
 
-- [Lattice Point Set](lattice-point-set.md)
-- [Std Lattice](std-lattice.md)
+- [Lattice points in a dilate](lattice-point-set.md)
+- [The standard integer lattice](std-lattice.md)
 
 ## Sources
 

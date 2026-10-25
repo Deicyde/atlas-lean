@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.CodingTheory.ReedSolomon.le_hammingNorm_encode
 ---
 
-# Le hamming Norm encode
+# Nonzero Reed-Solomon codewords are heavy
 
-A nonzero codeword has weight at least `n - k + 1`.
+**Nonzero Reed-Solomon codewords are heavy.** Let $F$ be a field, let $\alpha_0, \dots,
+\alpha_{n-1} \in F$ be pairwise distinct and let $k \le n$. For every nonzero polynomial
+$p \in F[X]$ of degree less than $k$, the encoding $(p(\alpha_0), \dots, p(\alpha_{n-1}))$ has at
+least $n - k + 1$ nonzero coordinates.
 
 ## Depends on
 
-- [Encode](encode.md)
+- [Reed-Solomon encoder](encode.md)
 
 ## Proof depends on
 
-- [Card eval eq zero le](card-eval-eq-zero-le.md)
+- [Root count at distinct points](card-eval-eq-zero-le.md)
 
 ## Sources
 

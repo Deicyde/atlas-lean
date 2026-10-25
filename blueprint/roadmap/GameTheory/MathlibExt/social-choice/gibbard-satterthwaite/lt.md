@@ -6,16 +6,15 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.StrictTotalOrder.lt
 ---
 
-# Lt
+# Relation of a strict preference order
 
-Compatibility alias for the former `GibbardSatterthwaiteWanted.StrictTotalOrder.lt`
-projection.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.lt` directly.
+**Relation of a strict preference order.** The relation of a strict total order $T$ on a type
+$\alpha$ is its underlying binary relation $\lt _T$ on $\alpha$, which is irreflexive, transitive,
+and relates any two distinct elements in one direction or the other.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict preference orders for the Gibbard–Satterthwaite theorem](strict-total-order.md)
 
 ## Proof depends on
 

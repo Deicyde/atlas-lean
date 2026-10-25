@@ -6,22 +6,25 @@ statement: formalized
 lean: MathlibExt.Geometry.NewlanderNirenbergWanted.Geometry.NewlanderNirenberg.nijenhuis
 ---
 
-# Nijenhuis
+# Nijenhuis tensor
 
-The **Nijenhuis tensor** of a field of endomorphisms `J` on `ℝ^{2n}`,
-evaluated on two vector fields `V`, `W` at a point:
+**Nijenhuis tensor.** Let $n$ be a natural number, let $J$ assign to each point
+$y \in \mathbb{R}^{2n}$ a real linear map $J(y) : \mathbb{R}^{2n} \to \mathbb{R}^{2n}$, and let
+$V, W : \mathbb{R}^{2n} \to \mathbb{R}^{2n}$ be vector fields. Write $JV$ for the vector field
+$y \mapsto J(y)V(y)$ and $[V, W]$ for the Lie bracket of vector fields. The Nijenhuis tensor of
+$J$ at a point $x \in \mathbb{R}^{2n}$ is
 
-`N(V, W) = [JV, JW] - J[JV, W] - J[V, JW] - [V, W]`.
+$$N(V, W)(x) = [JV, JW](x) - J(x)[JV, W](x) - J(x)[V, JW](x) - [V, W](x).$$
 
-For an almost complex structure the last term is `J²[V, W]`, so this is the
-usual torsion of `J`. When `U` is open and `IsAlmostComplexOn J U` holds, the
-expression is `C^∞(U)`-bilinear in `V` and `W` on `U`: the terms involving the
-derivatives of `V` and `W` cancel using `J² = -1`, so the value at a point of
-`U` depends only on `V x`, `W x` and the derivative of `J` there.
+For an almost complex structure the last term is $J^2[V, W]$, so this is the usual torsion of
+$J$. When $J$ is an almost complex structure on an open set $U \subseteq \mathbb{R}^{2n}$, the
+expression is $C^\infty(U)$-bilinear in $V$ and $W$ on $U$: the terms involving the derivatives
+of $V$ and $W$ cancel using $J^2 = -1$, so the value at a point $x$ of $U$ depends only on
+$V(x)$, $W(x)$ and the derivative of $J$ there.
 
 ## Depends on
 
-- [E](e.md)
+- [Model space $\mathbb{R}^{2n}$ for the Newlander–Nirenberg theorem](e.md)
 
 ## Sources
 

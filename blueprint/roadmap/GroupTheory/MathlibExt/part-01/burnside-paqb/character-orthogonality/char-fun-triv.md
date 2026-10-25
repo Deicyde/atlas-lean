@@ -7,14 +7,16 @@ proof: formalized
 lean: BurnsidePaqb.Irr.charFun_triv
 ---
 
-# Char Fun triv
+# Character of the trivial representation
 
-The character of the trivial class is `1`.
+**Character of the trivial representation.** Let $G$ be a finite group. The character of the
+isomorphism class of the trivial representation of $G$ on $\mathbb{C}$ takes the value $1$ at
+every $g \in G$.
 
 ## Depends on
 
-- [Char Fun](char-fun.md)
-- [Triv](triv.md)
+- [Character of an isomorphism class](char-fun.md)
+- [The trivial irreducible class](triv.md)
 
 ## Sources
 

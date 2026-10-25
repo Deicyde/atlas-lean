@@ -5,7 +5,7 @@ navigation: module
 
 # Dickson PGL2 Tame
 
-- [K](k.md)
-- [PGL](pgl.md)
-- [PSL](psl.md)
-- [Dickson's classification](classification-tame.md)
+- [Algebraic closure of the field with p elements](k.md)
+- [Projective general linear group of degree two](pgl.md)
+- [Projective special linear group of degree two](psl.md)
+- [Dickson's classification, tame case](classification-tame.md)

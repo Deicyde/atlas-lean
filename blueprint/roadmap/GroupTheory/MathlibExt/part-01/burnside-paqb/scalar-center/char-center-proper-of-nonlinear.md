@@ -7,13 +7,15 @@ proof: formalized
 lean: BurnsidePaqb.charCenter_proper_of_nonlinear
 ---
 
-# Char Center proper of nonlinear
+# The scalar center of a nonlinear irreducible representation is proper
 
-A nonlinear irreducible representation has proper scalar center.
+**The scalar center of a nonlinear irreducible representation is proper.** Let $\rho$ be an
+irreducible representation of a group $G$ on a finite-dimensional complex vector space $V$ with
+$\dim V > 1$. Then the scalar center of $\rho$ is a proper subgroup of $G$.
 
 ## Depends on
 
-- [Char Center](char-center.md)
+- [Scalar center of a representation](char-center.md)
 
 ## Sources
 

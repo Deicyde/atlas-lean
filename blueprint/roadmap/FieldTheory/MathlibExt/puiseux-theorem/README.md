@@ -7,8 +7,8 @@ navigation: module
 
 ## Hahn Series
 
-- [Is Alg Closed rat](is-alg-closed-rat.md)
+- [Algebraic closedness of rational Hahn series](is-alg-closed-rat.md)
 
 ## Meta Mathlib Ext
 
-- [Puiseux theorem](puiseux-theorem.md)
+- [Puiseux's theorem](puiseux-theorem.md)

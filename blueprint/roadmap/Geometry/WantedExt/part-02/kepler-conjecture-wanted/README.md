@@ -5,9 +5,9 @@ navigation: module
 
 # Kepler Conjecture
 
-- [E](e.md)
-- [Is Packing](is-packing.md)
-- [Covered Fraction](covered-fraction.md)
-- [Density](density.md)
-- [Δ](untitled.md)
+- [Euclidean space for sphere packings](e.md)
+- [Unit sphere packing](is-packing.md)
+- [Covered fraction of a ball](covered-fraction.md)
+- [Density of a sphere packing](density.md)
+- [Optimal sphere packing density](untitled.md)
 - [Kepler conjecture](kepler-conjecture.md)

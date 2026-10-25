@@ -5,8 +5,8 @@ navigation: module
 
 # Morley
 
-- [Plane](plane.md)
-- [Is Equilateral Triple](is-equilateral-triple.md)
-- [Lies In Triangle](lies-in-triangle.md)
-- [Is Morley Configuration](is-morley-configuration.md)
-- [Morley theorem](morley-theorem.md)
+- [Euclidean plane for Morley's theorem](plane.md)
+- [Equilateral triple of points](is-equilateral-triple.md)
+- [Point in a closed triangle](lies-in-triangle.md)
+- [Morley configuration](is-morley-configuration.md)
+- [Morley's trisector theorem](morley-theorem.md)

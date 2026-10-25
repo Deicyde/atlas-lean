@@ -7,13 +7,16 @@ proof: formalized
 lean: Metric.hasBorsukCover_iff_exactUnion
 ---
 
-# Has Borsuk Cover iff exact Union
+# Borsuk covers by subsets
 
-Canonical covers can be intersected with the original set to give an exact union.
+**Borsuk covers by subsets.** For natural numbers $n$ and $k$, a set $s$ in the Euclidean
+space $\mathbb{R}^n$ has a $k$-piece Borsuk cover if and only if there are subsets
+$c_1, \dots, c_k$ of $s$ with $s = c_1 \cup \dots \cup c_k$, each of extended diameter strictly
+smaller than that of $s$.
 
 ## Depends on
 
-- [Has Borsuk Cover](has-borsuk-cover.md)
+- [Borsuk covers](has-borsuk-cover.md)
 
 ## Sources
 

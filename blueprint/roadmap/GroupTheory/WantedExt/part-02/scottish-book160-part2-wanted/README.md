@@ -4,7 +4,7 @@ navigation: module
 
 # Scottish Book160 Part2
 
-- [Is Hausdorff Connected](is-hausdorff-connected.md)
-- [Is Arcwise Connected](is-arcwise-connected.md)
-- [Scottish Book Problem160 Part2 Claim](scottish-book-problem160-part2-claim.md)
-- [Scottish Book160 Part2 refuted](scottish-book160-part2-refuted.md)
+- [Connectedness in the sense of Hausdorff](is-hausdorff-connected.md)
+- [Arcwise connected space](is-arcwise-connected.md)
+- [Claim of Scottish Book Problem 160, part (2)](scottish-book-problem160-part2-claim.md)
+- [Connected metric groups need not be arcwise connected](scottish-book160-part2-refuted.md)

@@ -7,23 +7,24 @@ proof: formalized
 lean: MathlibExt.Geometry.Manifold.SardWanted.sard_theorem
 ---
 
-# Sard theorem
+# Sard's theorem for maps into Euclidean space
 
-If `M` is finite-dimensional Hausdorff second-countable boundaryless `C^∞` and `f : M → ℝ^n` is
-`C^∞`, then the set of critical values has `volume` zero. Source: A. Sard, Bull. Amer. Math. Soc.
-48 (1942) 883–890 measure of critical values; J. Lee, Introduction to Smooth Manifolds, 2nd ed.;
-Guillemin-Pollack, Differential Topology; Lean states finite-dimensional manifold to
-`EuclideanSpace ℝ (Fin n)` specialization.
+**Sard's theorem for maps into Euclidean space.** Let $M$ be a Hausdorff, second-countable smooth
+manifold without boundary modelled on a finite-dimensional real normed space, and let
+$f : M \to \mathbb{R}^n$ be a $C^\infty$ map. Then the set of critical values of $f$, the image
+under $f$ of the points of $M$ at which the manifold derivative of $f$ is not surjective, has
+Lebesgue measure zero.
 
 ## Depends on
 
-- [Critical Values](critical-values.md)
+- [Critical values of a map to Euclidean space](critical-values.md)
 
 ## Proof depends on
 
-- [Critical Set](critical-set.md)
+- [Critical points of a map to Euclidean space](critical-set.md)
 - [Image Null](../../../../../MeasureTheory/MathlibExt/measure/measure-image-null-of-locally-null.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.Sard](../../../../../../sources/v2/MathlibExt.md)
+- A. Sard, Bull. Amer. Math. Soc. 48 (1942) 883–890 measure of critical values; J. Lee, Introduction to Smooth Manifolds, 2nd ed.; Guillemin-Pollack, Differential Topology; Lean states finite-dimensional manifold to `EuclideanSpace ℝ (Fin n)` specialization.

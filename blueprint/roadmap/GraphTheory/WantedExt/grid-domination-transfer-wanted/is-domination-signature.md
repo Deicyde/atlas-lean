@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.IsDominationSignature
 ---
 
-# Is Domination Signature
+# Domination signature
 
-A signature for the row graph `R` (Mertens, Definition 3): a state for every vertex of the
-row such that no uncovered vertex is adjacent to an occupied one.  For `R = pathGraph m` these
-are the strings avoiding the substrings `(∘,•)` and `(•,∘)`; for `R = cycleGraph m` the
-constraint also applies to the pair `(σ₁, σₘ)` (cyclic signatures).
+**Domination signature.** Let $R$ be a simple graph on a vertex set $V$ (the row). A map
+$\sigma$ assigning to each vertex of $V$ a domination state (uncovered, covered or occupied) is a
+signature for $R$ if no uncovered vertex is adjacent in $R$ to an occupied vertex: for all
+vertices $i, j$ adjacent in $R$, it is not the case that $\sigma(i)$ is uncovered and $\sigma(j)$
+is occupied.
+
+When $R$ is the path on $m$ vertices, signatures are the strings of length $m$ in which no
+uncovered entry is next to an occupied one; when $R$ is the cycle on $m$ vertices the condition
+also applies to the first and last entries (the paper's cyclic signatures).
 
 ## Depends on
 

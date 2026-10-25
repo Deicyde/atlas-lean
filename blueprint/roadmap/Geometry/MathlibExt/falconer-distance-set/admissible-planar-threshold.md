@@ -6,9 +6,12 @@ statement: formalized
 lean: FalconerDistanceSet.admissiblePlanarThreshold
 ---
 
-# Admissible Planar Threshold
+# Admissible planar threshold
 
-Sufficient thresholds in the source's closed interval `[0,2]`.
+**Admissible planar threshold.** An extended nonnegative real $s$ is an admissible planar
+threshold when $0 \le s \le 2$ and $s$ has the planar threshold property: every compact set
+$E \subseteq \mathbb{R}^2$ with Hausdorff dimension $\dim_H E > s$ has a distance set of
+positive one-dimensional Lebesgue measure.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Planar Threshold Property](planar-threshold-property.md)
+- [Planar Falconer threshold property](planar-threshold-property.md)
 
 ## Sources
 

@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.indicator_sections_iff_heightChocolateBarGrundy_eq_xor
 ---
 
-# Indicator sections iff height Chocolate Bar Grundy eq xor
+# Height-one chocolate bars with nim-sum Grundy numbers
 
-Let `F` be monotone with `F ≤ 1`, and suppose every section `t ↦ F (x[i ↦ t])` takes the
-value `1` (the hypothesis of Lemma 9, from which the corollary is derived). Then every section is
-the indicator of `[m, ∞)` for an even `m` (depending on the fixed coordinates) iff
-`CB(F, x₁, …, x_s, y)` has Grundy number `x₁ ⊕ ⋯ ⊕ x_s ⊕ y` at every bar position `y ≤ F x`.
+**Height-one chocolate bars with nim-sum Grundy numbers.** Let $s \in \mathbb{N}$ and let
+$F : \mathbb{N}^s \to \mathbb{N}$ be monotone for the coordinatewise order, with $F(x) \le 1$ for
+all $x$. For $x \in \mathbb{N}^s$, $i < s$ and $t \in \mathbb{N}$ write $x[i \mapsto t]$ for $x$
+with its $i$-th coordinate replaced by $t$, and suppose that for all $x$ and $i$ there is a $t$
+with $F(x[i \mapsto t]) = 1$. Write $\oplus$ for nim-sum. Then the following are equivalent:
+(a) for all $x \in \mathbb{N}^s$ and $i < s$ there is an even $m \in \mathbb{N}$ (depending on $x$
+and $i$) such that $F(x[i \mapsto t]) = 1$ for $t \ge m$ and $F(x[i \mapsto t]) = 0$ for $t < m$;
+(b) for all $x \in \mathbb{N}^s$ and $y \in \mathbb{N}$ with $y \le F(x)$, the Grundy number of the
+chocolate bar $\mathrm{CB}(F, x_0, \dots, x_{s-1}, y)$ is
+$x_0 \oplus \cdots \oplus x_{s-1} \oplus y$.
+
+The hypothesis that every section takes the value $1$ is that of Lemma 9, from which the
+corollary is derived.
 
 ## Depends on
 
-- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
+- [Grundy number of a chocolate bar with a height function](height-chocolate-bar-grundy.md)
 
 ## Sources
 

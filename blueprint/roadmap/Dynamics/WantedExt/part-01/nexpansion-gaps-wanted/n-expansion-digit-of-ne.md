@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.nExpansionDigit_of_ne
 ---
 
-# N Expansion Digit of ne
+# The digit away from the left endpoint
 
-Away from the left endpoint `α`, the digit is `⌊N / x - α⌋`.
+**The digit away from the left endpoint.** Let $N$ be a natural number and let $\alpha$ and
+$x$ be real numbers with $x \ne \alpha$. Then the digit of $x$ for the $N$-expansion map on
+$[\alpha, \alpha + 1]$ is $\lfloor N/x - \alpha \rfloor$.
 
 ## Depends on
 
-- [N Expansion Digit](n-expansion-digit.md)
+- [Digit of the N-expansion map](n-expansion-digit.md)
 
 ## Sources
 

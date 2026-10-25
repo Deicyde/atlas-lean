@@ -6,19 +6,20 @@ proof: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.thickness_singleton
 ---
 
-# Thickness singleton
+# Thickness of a single point
 
-A singleton has infinite thickness: its only triple is degenerate.
+**Thickness of a single point.** For every point $p$ of Euclidean 3-space, the set $\{p\}$
+has thickness $\infty$: its only triple $(p, p, p)$ is degenerate.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean 3-space](r3.md)
 - [Thickness](thickness.md)
 
 ## Proof depends on
 
-- [Circumradius ENN](circumradius-enn.md)
-- [Circumradius ENN eq top of eq left](circumradius-enn-eq-top-of-eq-left.md)
+- [Extended circumradius of three points](circumradius-enn.md)
+- [Equal first two points give infinite extended circumradius](circumradius-enn-eq-top-of-eq-left.md)
 
 ## Sources
 

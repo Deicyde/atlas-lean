@@ -4,5 +4,5 @@ navigation: module
 
 # Furstenberg Topological
 
-- [Is Multiply Recurrent](is-multiply-recurrent.md)
-- [Furstenberg topological recurrence](furstenberg-topological-recurrence.md)
+- [Multiply recurrent point](is-multiply-recurrent.md)
+- [Furstenberg–Weiss multiple recurrence for a single homeomorphism](furstenberg-topological-recurrence.md)

@@ -5,19 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.dominationPolynomial_cylinder_eq_sum_transferMatrix_pow
 ---
 
-# Domination Polynomial cylinder eq sum transfer Matrix pow
+# Transfer-matrix formula for the domination polynomial of the cylinder
 
-Mertens' Theorem 7, cylinder case: `G_{m̄×n}(z) = ∑_{σ : unc(σ) = 0} (Ā^n)_{σ, σ_•}`, the
-sum over cyclic signatures.
+**Transfer-matrix formula for the domination polynomial of the cylinder.** For all natural
+numbers $m$ and $n$, let $C_m$ be the cycle graph on the vertices $0, \dots, m - 1$, in which
+distinct $i$ and $j$ are adjacent when $i - j \equiv \pm 1 \pmod m$, and let $P_n$ be the path on
+the vertices $0, \dots, n - 1$. Let $\bar A$ be the domination transfer matrix of the row graph
+$C_m$, indexed by the signatures of $C_m$, and let $\sigma_\bullet$ be the all-covered signature.
+Then the domination polynomial of the cylinder $C_m \mathbin{\square} P_n$ is
+
+$$\sum_\sigma (\bar A^n)_{\sigma, \sigma_\bullet},$$
+
+the sum running over the signatures $\sigma$ of $C_m$ with no uncovered vertex.
 
 ## Depends on
 
-- [Domination Signature](domination-signature.md)
+- [Signatures of a row graph](domination-signature.md)
 - [Domination State](domination-state.md)
-- [Is Domination Signature](is-domination-signature.md)
-- [All Covered Signature](all-covered-signature.md)
-- [Domination Polynomial](domination-polynomial.md)
-- [Domination Transfer Matrix](domination-transfer-matrix.md)
+- [Domination signature](is-domination-signature.md)
+- [All-covered signature](all-covered-signature.md)
+- [Domination polynomial](domination-polynomial.md)
+- [Domination transfer matrix](domination-transfer-matrix.md)
 
 ## Sources
 

@@ -6,10 +6,13 @@ statement: formalized
 lean: LatticePointEnumerator.latticePointSetPos
 ---
 
-# Lattice Point Set Pos
+# Lattice points in a positive dilate
 
-Positive-dilation helper, not a full source-domain object: no boundedness carried.
-`latticeEnumeratorPos` combines positivity with boundedness proof for Rocha-Neves lines 24-31.
+**Lattice points in a positive dilate.** For a natural number $d$, a set
+$P \subseteq \mathbb{R}^d$ and a real number $t > 0$, this is the set $(tP) \cap \mathbb{Z}^d$ of
+points of the integer lattice $\mathbb{Z}^d$ in the dilate $tP = \{tp : p \in P\}$.
+
+No boundedness of $P$ is assumed.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lattice Point Set](lattice-point-set.md)
+- [Lattice points in a dilate](lattice-point-set.md)
 
 ## Sources
 

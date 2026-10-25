@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.GoldenRatioThompsonEmbedWanted.IsDyadic
 ---
 
-# Is Dyadic
+# Dyadic rationals
 
-`x` lies in `ℤ[1/2]`.
+**Dyadic rationals.** A real number $x$ is dyadic when $x = a / 2^n$ for some integer $a$ and
+some natural number $n$, that is, when $x$ lies in $\mathbb{Z}[1/2]$.
 
 ## Depends on
 

@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.princessRoses_two_piles_equiv_nimHeap
 ---
 
-# Princess Roses two piles equiv nim Heap
+# Sprague–Grundy values of two-pile Princess and the Roses
 
-Two-pile P&R: for `a ≥ b`, the Sprague–Grundy value of `(a, b)` is `0, 1, 2, 3` on the
-parity classes `(E, E), (O, E), (O, O), (E, O)`.
+**Sprague–Grundy values of two-pile Princess and the Roses.** For natural numbers $a \ge b$,
+the Princess and the Roses position $(a, b)$ is equivalent to the Nim heap $*n$, that is, it has
+Sprague–Grundy value $n$, where $n = 0$ if $a$ and $b$ are both even, $n = 1$ if $a$ is odd and
+$b$ is even, $n = 2$ if $a$ and $b$ are both odd, and $n = 3$ if $a$ is even and $b$ is odd.
 
 ## Depends on
 
-- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
-- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
-- [Princess Roses](princess-roses.md)
+- [Equivalence of impartial games](../../MathlibExt/sprague-grundy/equiv.md)
+- [Nim heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [The Princess and the Roses game](princess-roses.md)
 
 ## Sources
 

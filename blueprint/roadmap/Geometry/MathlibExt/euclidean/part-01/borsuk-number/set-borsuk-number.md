@@ -6,9 +6,12 @@ statement: formalized
 lean: Metric.setBorsukNumber
 ---
 
-# Set Borsuk Number
+# Borsuk number of a set
 
-Least number of strictly smaller-diameter pieces, with infinity if no finite cover exists.
+**Borsuk number of a set.** The Borsuk number of a set $s$ in the Euclidean space
+$\mathbb{R}^n$ is the least natural number $k$ such that $s$ has a $k$-piece Borsuk cover, that
+is, $s$ is covered by $k$ sets each of strictly smaller extended diameter than $s$; it is
+$\infty$ if no such $k$ exists.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Borsuk Cover](has-borsuk-cover.md)
+- [Borsuk covers](has-borsuk-cover.md)
 
 ## Sources
 

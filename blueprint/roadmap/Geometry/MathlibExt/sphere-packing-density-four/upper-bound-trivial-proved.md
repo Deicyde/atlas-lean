@@ -7,20 +7,22 @@ proof: formalized
 lean: MathlibExt.Geometry.SpherePackingDensityFourWanted.upperBound_trivial_proved
 ---
 
-# Upper Bound trivial proved
+# The sphere-packing density of $\mathbb{R}^4$ is at most one
 
-Source: catalogue C36 trivial upper bound, proved for the actual optimized constant.
+**The sphere-packing density of $\mathbb{R}^4$ is at most one.** The trivial upper bound holds:
+the sphere-packing density of $\mathbb{R}^4$ is at most $1$.
 
 ## Depends on
 
-- [Upper Bound trivial](upper-bound-trivial.md)
+- [Trivial upper bound for the sphere-packing density of $\mathbb{R}^4$](upper-bound-trivial.md)
 
 ## Proof depends on
 
-- [Packing](packing.md)
-- [Upper Density](upper-density.md)
-- [Upper Density le one](upper-density-le-one.md)
+- [Packings of congruent balls in $\mathbb{R}^4$](packing.md)
+- [Upper density of a packing](upper-density.md)
+- [The upper density of a packing is at most one](upper-density-le-one.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SpherePackingDensityFour](../../../../sources/v2/MathlibExt.md)
+- catalogue C36 trivial upper bound, proved for the actual optimized constant.

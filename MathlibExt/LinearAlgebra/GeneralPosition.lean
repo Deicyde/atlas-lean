@@ -32,20 +32,26 @@ variable {k : Type u} {V : Type v} {P : Type w} {ι ι' : Type*}
 
 section Affine
 
-/-- An indexed family of affine points is in general position through dimension `d` if every
-subfamily of at most `d + 1` points is affinely independent. -/
+/-- **General position of affine points.** Let $k$ be a division ring and $P$ an affine space over
+$k$. A family $(p_i)_{i \in \iota}$ of points of $P$ is in general position through dimension
+$d \in \mathbb{N}$ if for every finite set $S \subseteq \iota$ of at most $d + 1$ indices, the
+subfamily $(p_i)_{i \in S}$ is affinely independent over $k$. -/
 def IsGeneralPosition (k : Type u) [DivisionRing k] {V : Type v} {P : Type w} [AddCommGroup V]
     [Module k V] [AffineSpace V P] {ι : Type*} (d : ℕ) (p : ι → P) : Prop :=
   ∀ s : Finset ι, s.card ≤ d + 1 → AffineIndependent k (s.restrict p)
 
 variable [DivisionRing k] [AddCommGroup V] [Module k V] [AffineSpace V P]
 
-/-- An affinely independent family is in general position in every dimension. -/
+/-- **Affinely independent families are in general position.** If a family $(p_i)_{i \in \iota}$ of
+points of an affine space over a division ring $k$ is affinely independent over $k$, then it is in
+general position through dimension $d$ for every $d \in \mathbb{N}$. -/
 theorem AffineIndependent.isGeneralPosition {p : ι → P} (hp : AffineIndependent k p) (d : ℕ) :
     IsGeneralPosition k d p :=
   fun s _ ↦ hp.subtype s
 
-/-- General position through a larger dimension implies general position through a smaller one. -/
+/-- **General position in affine space is monotone in the dimension.** Let $d \le e$ be natural
+numbers. If a family of points of an affine space over a division ring $k$ is in general position
+through dimension $e$, then it is in general position through dimension $d$. -/
 theorem IsGeneralPosition.mono {d e : ℕ} {p : ι → P} (hp : IsGeneralPosition k e p)
     (hde : d ≤ e) : IsGeneralPosition k d p :=
   fun s hs ↦ hp s (hs.trans (Nat.add_le_add_right hde 1))
@@ -74,7 +80,10 @@ def IsGeneralPosition {k : Type u} [DivisionRing k] {V : Type v} [AddCommGroup V
 
 variable [DivisionRing k] [AddCommGroup V] [Module k V]
 
-/-- A projectively independent family is in general position in every dimension. -/
+/-- **Projectively independent families are in general position.** If a family
+$(p_i)_{i \in \iota}$ of points of the projective space $\mathbb{P}(V)$ of a vector space $V$ over a
+division ring $k$ is projectively independent, then it is in general position through dimension $d$
+for every $d \in \mathbb{N}$. -/
 theorem Independent.isGeneralPosition {p : ι → ℙ k V} (hp : Independent p) (d : ℕ) :
     IsGeneralPosition d p := by
   intro s _

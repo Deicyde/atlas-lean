@@ -7,14 +7,15 @@ proof: formalized
 lean: FalconerDistanceSet.planarDistanceThreshold_le_of_admissible
 ---
 
-# Planar Distance Threshold le of admissible
+# Admissible thresholds bound the planar distance threshold
 
-Every admissible threshold is an upper bound for the defining infimum.
+**Admissible thresholds bound the planar distance threshold.** For every $s \in [0, \infty]$
+that is an admissible planar threshold, the planar distance threshold is at most $s$.
 
 ## Depends on
 
-- [Admissible Planar Threshold](admissible-planar-threshold.md)
-- [Planar Distance Threshold](planar-distance-threshold.md)
+- [Admissible planar threshold](admissible-planar-threshold.md)
+- [Planar distance threshold](planar-distance-threshold.md)
 
 ## Sources
 

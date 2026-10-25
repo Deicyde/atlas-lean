@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.Lacunary
 ---
 
-# Lacunary
+# Lacunary sequence
 
-We say a sequence `a : ℕ → ℝ≥0` is `Λ-lacunary` if for each `n ∈ ℕ`, `a (n + 1) / a n > Λ`.
+**Lacunary sequence.** For a real number $\Lambda \ge 0$, a sequence
+$(a_n)_{n \in \mathbb{N}}$ of nonnegative real numbers is $\Lambda$-lacunary if
+$a_{n+1} / a_n > \Lambda$ for every $n \in \mathbb{N}$, where division by $0$ gives $0$; in
+particular every term of a $\Lambda$-lacunary sequence is positive.
 
 ## Depends on
 

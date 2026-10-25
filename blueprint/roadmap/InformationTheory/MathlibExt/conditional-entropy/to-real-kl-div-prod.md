@@ -6,14 +6,18 @@ proof: formalized
 lean: InformationTheory.toReal_klDiv_prod
 ---
 
-# To Real kl Div prod
+# Divergence of a finite joint law from the product of its marginals
 
-The divergence of a finite joint law from the product of its marginals, in nats, is
-`(H(X) + H(Y) - H(X, Y)) log 2`.
+**Divergence of a finite joint law from the product of its marginals.** Let $\alpha$ and
+$\beta$ be finite sets with measurable structures in which singletons are measurable, let $p$ be
+a probability law on $\alpha \times \beta$ with marginals $p_X$ and $p_Y$, and write $H$ for
+Shannon entropy in bits. Then the Kullback–Leibler divergence of $p$ from the product measure
+$p_X \otimes p_Y$, computed with the natural logarithm and taken as a real number, equals
+$(H(p_X) + H(p_Y) - H(p)) \log 2$.
 
 ## Depends on
 
-- [Shannon Entropy](../finite-entropy/shannon-entropy.md)
+- [Shannon entropy](../finite-entropy/shannon-entropy.md)
 
 ## Proof depends on
 

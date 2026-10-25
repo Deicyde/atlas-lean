@@ -6,9 +6,11 @@ statement: formalized
 lean: FalconerDistanceSet.distanceSet
 ---
 
-# Distance Set
+# Euclidean distance set
 
-The Euclidean distances determined by every pair of points of `E`.
+**Euclidean distance set.** For a set $E \subseteq \mathbb{R}^d$, the distance set of $E$ is
+$\Delta(E) = \{\lvert x - y \rvert : x, y \in E\}$, the set of Euclidean distances between pairs
+of points of $E$.
 
 ## Depends on
 

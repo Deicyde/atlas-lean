@@ -7,20 +7,21 @@ proof: formalized
 lean: Matrix.SignConditionNumber.one_le_minimumConditionNumber
 ---
 
-# One le minimum Condition Number
+# The minimum condition number is at least one
 
-Every positive-order minimum is at least one.
+**The minimum condition number is at least one.** For every positive integer $n$, the minimum
+condition number of the real $n \times n$ sign matrices is at least $1$.
 
 ## Depends on
 
-- [Minimum Condition Number](minimum-condition-number.md)
+- [Minimum condition number of sign matrices](minimum-condition-number.md)
 
 ## Proof depends on
 
 - [Sign Matrix](sign-matrix.md)
-- [Realize](realize.md)
-- [Condition Number](condition-number.md)
-- [One le condition Number](one-le-condition-number.md)
+- [Real sign matrix of a Boolean matrix](realize.md)
+- [Condition number of a square real matrix](condition-number.md)
+- [Condition numbers are at least one](one-le-condition-number.md)
 
 ## Sources
 

@@ -7,9 +7,12 @@ proof: formalized
 lean: MathlibExt.Geometry.Manifold.ComplexRigidityWanted.holomorphic_open_mapping_one_dim
 ---
 
-# Holomorphic open mapping one dim
+# Open mapping theorem for Riemann surfaces
 
-A nonconstant `MDiff` map between connected `1`-dimensional complex manifolds is an open map.
+**Open mapping theorem for Riemann surfaces.** Let $M$ and $N$ be complex manifolds without
+boundary modeled on complex normed spaces of dimension one, with complex $C^1$ (that is,
+holomorphic) transition maps, and suppose $M$ is connected. Then every holomorphic (everywhere
+complex differentiable) map $f : M \to N$ that is not constant is an open map.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Open Map of finrank eq one](is-open-map-of-finrank-eq-one.md)
+- [Open mapping theorem for one-dimensional complex manifolds](is-open-map-of-finrank-eq-one.md)
 
 ## Sources
 

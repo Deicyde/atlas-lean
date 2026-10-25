@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.snortSecondPlayerWins_of_isOpposable
 ---
 
-# Snort Second Player Wins of is Opposable
+# The second player wins Snort on opposable graphs
 
-The second player wins Snort on every opposable graph.
+**The second player wins Snort on opposable graphs.** If a finite simple graph $G$ is
+opposable, then the second player wins Snort on $G$.
 
 ## Depends on
 
-- [Is Opposable](is-opposable.md)
-- [Snort Second Player Wins](snort-second-player-wins.md)
+- [Opposable graphs](is-opposable.md)
+- [Second-player win in Snort](snort-second-player-wins.md)
 
 ## Sources
 

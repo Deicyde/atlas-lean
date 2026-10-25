@@ -5,6 +5,6 @@ navigation: module
 
 # Hamming Ball
 
-- [Ball](ball.md)
-- [Card ball](card-ball.md)
-- [Card ball fin](card-ball-fin.md)
+- [Closed Hamming ball](ball.md)
+- [Size of a Hamming ball](card-ball.md)
+- [Size of a Hamming ball of fixed-length words](card-ball-fin.md)

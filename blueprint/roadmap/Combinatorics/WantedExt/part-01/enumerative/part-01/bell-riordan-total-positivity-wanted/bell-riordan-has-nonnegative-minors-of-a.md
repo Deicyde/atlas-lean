@@ -23,8 +23,8 @@ The sum stops at $j = n$ because $d_{n,m} = 0$ for $m > n$.
 
 ## Depends on
 
-- [Lower Toeplitz](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/lower-toeplitz/lower-toeplitz.md)
-- [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
+- [Lower-triangular Toeplitz matrix](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/lower-toeplitz/lower-toeplitz.md)
+- [Matrices with nonnegative minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
 
 ## Sources
 

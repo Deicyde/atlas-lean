@@ -6,17 +6,20 @@ statement: formalized
 lean: MathlibExt.GameTheory.ShapleyValue.SatisfiesNullPlayerAxiom
 ---
 
-# Satisfies Null Player Axiom
+# Null player axiom
 
-Null/dummy player axiom: a null player receives zero.
+**Null player axiom.** Let $N$ be a finite set of players and $\varphi$ an $\mathbb{R}$-linear
+map from cooperative games on $N$ (added and scaled pointwise) to payoff vectors in
+$\mathbb{R}^N$. Then $\varphi$ satisfies the null player axiom if $\varphi(v)_i = 0$ for every
+game $v$ and every null player $i$ of $v$.
 
 ## Depends on
 
-- [Coop Game](coop-game.md)
+- [Cooperative game with transferable utility](coop-game.md)
 
 ## Proof depends on
 
-- [Is Null Player](is-null-player.md)
+- [Null player](is-null-player.md)
 
 ## Sources
 

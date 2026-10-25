@@ -6,14 +6,18 @@ statement: formalized
 lean: MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.ToralDynamicalSystem.toVolumePreservingEquiv
 ---
 
-# To Volume Preserving Equiv
+# Toral dynamical systems as volume-preserving transformations
 
-A toral dynamical system as an element of `𝒳`.
+**Toral dynamical systems as volume-preserving transformations.** Let $d$ be a natural
+number. A volume-preserving homeomorphism $T$ of the torus
+$\mathbb{T}^d = (\mathbb{R}/\mathbb{Z})^d$ is regarded as a measurable, invertible,
+volume-preserving transformation of $\mathbb{T}^d$: the same map, with its inverse, viewed as
+a measurable equivalence.
 
 ## Depends on
 
-- [Toral Dynamical System](toral-dynamical-system.md)
-- [Volume Preserving Equiv](volume-preserving-equiv.md)
+- [Toral dynamical system](toral-dynamical-system.md)
+- [Volume-preserving transformations of the torus](volume-preserving-equiv.md)
 
 ## Proof depends on
 

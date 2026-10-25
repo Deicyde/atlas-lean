@@ -6,18 +6,21 @@ statement: formalized
 lean: MathlibExt.Dynamics.AMR43Problem1Wanted.AperiodicX
 ---
 
-# Aperiodic X
+# Aperiodic part of the full 2-shift
 
-[AMR-043-0001] Aperiodic part of `X`: `X \ Per(X)`.
+**Aperiodic part of the full 2-shift.** Let $\sigma$ be the left shift on the full 2-shift
+$X$, given by $(\sigma x)_i = x_{i+1}$. The aperiodic part of $X$ is the set of all $x \in X$
+that are not periodic for $\sigma$, that is, with $\sigma^n x \ne x$ for every $n \ge 1$.
 
 ## Depends on
 
-- [X](x.md)
+- [The full 2-shift](x.md)
 
 ## Proof depends on
 
-- [Unit Shift](../../../MathlibExt/symbolic-dynamics/full-shift/unit-shift.md)
+- [Unit shift](../../../MathlibExt/symbolic-dynamics/full-shift/unit-shift.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.AMR43Problem1Wanted](../../../../../sources/v2/WantedExt.md)
+- [AMR-043-0001].

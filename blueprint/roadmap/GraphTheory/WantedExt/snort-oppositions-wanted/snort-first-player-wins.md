@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.SnortFirstPlayerWins
 ---
 
-# Snort First Player Wins
+# First player wins Snort
 
-The first player wins Snort on the (untinted) graph `G`.
+**First player wins Snort.** Let $G$ be a finite simple graph. In Snort on $G$ the two players
+alternately colour a vertex that is not yet coloured and is not adjacent to any vertex coloured
+by the opponent, and a player with no legal move loses. The first player wins Snort on $G$ when
+the player who moves first has a winning strategy from the position in which no vertex is
+coloured.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Snort Mover Wins](snort-mover-wins.md)
+- [Snort positions with a move bound](snort-mover-wins.md)
 
 ## Sources
 

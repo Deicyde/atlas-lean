@@ -7,13 +7,17 @@ proof: formalized
 lean: LinearMap.BilinForm.dualSubmodule_dualSubmodule_of_isLattice
 ---
 
-# Dual Submodule dual Submodule of is Lattice
+# Double dual of a lattice over a Dedekind domain
 
-Double dual of a lattice over a Dedekind domain against a symmetric form.
+**Double dual of a lattice over a Dedekind domain.** Let $A$ be a Dedekind domain with
+fraction field $K$, let $V$ be a finite-dimensional $K$-vector space, viewed as an $A$-module
+through $A \subseteq K$, and let $B$ be a nondegenerate symmetric bilinear form on $V$. For an
+$A$-submodule $N$ of $V$ write $N^\vee = \{x \in V : B(x, y) \in A \text{ for all } y \in N\}$.
+If $M$ is an $A$-lattice in $V$, that is, a finitely generated $A$-submodule that spans $V$ over
+$K$, then $(M^\vee)^\vee = M$.
 
-This is ATLAS `NumberTheoryI` Proposition 5.16: reflexivity of the lattice is obtained
-from the Dedekind hypotheses (finite plus torsion-free gives flat, hence projective),
-so no explicit `Module.IsReflexive` assumption is needed.
+No reflexivity hypothesis on $M$ is needed: over a Dedekind domain a finitely generated
+torsion-free module is flat, hence projective, hence reflexive.
 
 ## Depends on
 
@@ -21,8 +25,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dual Submodule flip dual Submodule of is Lattice](dual-submodule-flip-dual-submodule-of-is.md)
+- [Double dual of a reflexive lattice](dual-submodule-flip-dual-submodule-of-is.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.BilinearForm.DualLatticeReflexive](../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI, Proposition 5.16.

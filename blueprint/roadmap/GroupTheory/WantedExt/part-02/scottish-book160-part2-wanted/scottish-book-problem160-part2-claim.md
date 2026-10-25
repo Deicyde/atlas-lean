@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ScottishBook160Part2Wanted.ScottishBookProblem160Part2Claim
 ---
 
-# Scottish Book Problem160 Part2 Claim
+# Claim of Scottish Book Problem 160, part (2)
 
-Part (2) of Scottish Book 160: every connected (in the sense of
-Hausdorff) metric group is arcwise connected.
+**Claim of Scottish Book Problem 160, part (2).** The claim that every metric group $G$
+(a group with a metric for which multiplication and inversion are continuous) that is
+connected in the sense of Hausdorff is arcwise connected.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Arcwise Connected](is-arcwise-connected.md)
-- [Is Hausdorff Connected](is-hausdorff-connected.md)
+- [Arcwise connected space](is-arcwise-connected.md)
+- [Connectedness in the sense of Hausdorff](is-hausdorff-connected.md)
 
 ## Sources
 

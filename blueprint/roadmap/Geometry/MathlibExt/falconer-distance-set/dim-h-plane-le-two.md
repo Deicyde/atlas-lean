@@ -7,9 +7,10 @@ proof: formalized
 lean: FalconerDistanceSet.dimH_plane_le_two
 ---
 
-# Dim H plane le two
+# Subsets of the plane have Hausdorff dimension at most two
 
-Hausdorff dimension of every subset of the Euclidean plane is at most two.
+**Subsets of the plane have Hausdorff dimension at most two.** Every subset $E$ of the
+Euclidean plane $\mathbb{R}^2$ satisfies $\dim_H E \le 2$.
 
 ## Depends on
 

@@ -5,6 +5,6 @@ navigation: module
 
 # Erdos Problem426
 
-- [Conjecture](conjecture.md)
-- [Disproved Form](disproved-form.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Many unique subgraphs (Erdős Problem 426)](conjecture.md)
+- [Negation of the Erdős Problem 426 statement](disproved-form.md)
+- [Erdős Problem 426 is false (Bradač–Christoph)](conjecture-refuted.md)

@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.Dynamics.Periodic.LiYorkeWanted.liYorke_period_three_implies_periods
 ---
 
-# Li Yorke
+# Li–Yorke theorem: period three implies all periods
 
-Period three implies existence of points of every positive minimal period for interval maps.
+**Li–Yorke theorem: period three implies all periods.** Let $f \colon [0, 1] \to [0, 1]$ be a
+continuous map. If some point of $[0, 1]$ has minimal period $3$ under $f$, then for every
+positive integer $n$ some point of $[0, 1]$ has minimal period $n$ under $f$.
 
 ## Depends on
 

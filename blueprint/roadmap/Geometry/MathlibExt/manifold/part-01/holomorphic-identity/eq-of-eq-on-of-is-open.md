@@ -7,11 +7,13 @@ proof: formalized
 lean: MDifferentiable.eq_of_eqOn_of_isOpen
 ---
 
-# Eq of eq On of is Open
+# Holomorphic maps on a connected manifold that agree on a nonempty open set are equal
 
-Identity theorem for holomorphic maps: two `MDiff` maps from a connected complex manifold
-without boundary to a complex normed space that agree on a nonempty open set are equal.
-`holomorphic_identity_on_connected_complex_manifold` is the source-shaped form.
+**Holomorphic maps on a connected manifold that agree on a nonempty open set are equal.**
+Let $M$ be a connected complex manifold without boundary, modeled on a complex normed space with
+complex $C^1$ (that is, holomorphic) transition maps, and let $F$ be a complex normed space. If
+two holomorphic (everywhere complex differentiable) maps $f, g : M \to F$ agree on a nonempty
+open subset $U \subseteq M$, then $f = g$.
 
 ## Depends on
 

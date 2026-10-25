@@ -7,8 +7,8 @@ navigation: module
 
 ## MDifferentiable
 
-- [Is Open Map of finrank eq one](is-open-map-of-finrank-eq-one.md)
+- [Open mapping theorem for one-dimensional complex manifolds](is-open-map-of-finrank-eq-one.md)
 
 ## Complex Rigidity Wanted
 
-- [Holomorphic open mapping one dim](holomorphic-open-mapping-one-dim.md)
+- [Open mapping theorem for Riemann surfaces](holomorphic-open-mapping-one-dim.md)

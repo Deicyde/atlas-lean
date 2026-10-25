@@ -17,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Plane](plane.md)
-- [Mst Length](mst-length.md)
-- [Steiner Length](steiner-length.md)
+- [The Euclidean plane of the Steiner ratio problem](plane.md)
+- [Minimum spanning tree length](mst-length.md)
+- [Steiner minimal tree length](steiner-length.md)
 
 ## Sources
 

@@ -5,6 +5,6 @@ navigation: module
 
 # Hyperbolic Group
 
-- [Is Hyperbolic](is-hyperbolic.md)
-- [Fg](fg.md)
-- [Of subsingleton](of-subsingleton.md)
+- [Word-hyperbolic groups](is-hyperbolic.md)
+- [Word-hyperbolic groups are finitely generated](fg.md)
+- [The trivial group is word-hyperbolic](of-subsingleton.md)

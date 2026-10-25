@@ -6,16 +6,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.SpreadOfAFiniteGroupWanted.SpreadOfAFiniteGroup.theorem_1
 ---
 
-# Theorem 1
+# Burness–Guralnick–Harper spread theorem
 
-Statement of Theorem 1:
-
-Let `G` be a finite group. Then the spread `s(G) ≥ 2` if and only if every proper quotient of `G`
-is cyclic.
+**Burness–Guralnick–Harper spread theorem.** Let $G$ be a finite group. Then the spread $s(G)$
+is at least $2$ if and only if every proper quotient of $G$ is cyclic, that is, $G/N$ is cyclic
+for every non-trivial normal subgroup $N$ of $G$.
 
 ## Depends on
 
-- [S](s.md)
+- [Spread of a group](s.md)
 
 ## Sources
 

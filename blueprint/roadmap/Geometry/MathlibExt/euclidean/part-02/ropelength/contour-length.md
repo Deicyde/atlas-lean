@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.contourLength
 ---
 
-# Contour Length
+# Contour length
 
-The contour length of a parametrized curve on `[a, b]`, defined as
-extended variation. For `C¹` curves this is the integral of speed by
-`contourLength_eq_ofReal_integral_norm_deriv`.
+**Contour length.** Let $\gamma$ be a map from $\mathbb{R}$ to Euclidean 3-space and let
+$a, b$ be real numbers. The contour length of $\gamma$ on $[a, b]$ is the total variation of
+$\gamma$ on $[a, b]$: the supremum, over all finite sequences $t_0 \le t_1 \le \dots \le t_n$
+of points of $[a, b]$, of $\sum_{i < n} \lVert \gamma(t_{i+1}) - \gamma(t_i) \rVert$. It is a
+value in $[0, \infty]$.
+
+For continuously differentiable curves it equals the integral of the speed.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean 3-space](r3.md)
 
 ## Sources
 

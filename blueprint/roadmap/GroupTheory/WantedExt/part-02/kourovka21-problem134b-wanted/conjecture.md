@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.Kourovka21Problem134bWanted.conjecture
 ---
 
-# Conjecture
+# Characterization of almost simple groups by power-equation type (Kourovka 21.134(b))
 
-A finite group having the same power-equation type as an almost simple group is
-isomorphic to that group.
+**Characterization of almost simple groups by power-equation type (Kourovka 21.134(b)).**
+The conjecture that for all finite groups $G$ and $H$, if $G$ is almost simple and $G$ and $H$
+have the same power-equation type, then $G$ is isomorphic to $H$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Almost Simple](is-almost-simple.md)
-- [Same Power Equation Type](same-power-equation-type.md)
+- [Almost simple group](is-almost-simple.md)
+- [Same power-equation type](same-power-equation-type.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.SpragueGrundy.smithRemoteness_of_moves_eq_empty
 ---
 
-# Smith Remoteness of moves eq empty
+# Smith's remoteness vanishes at terminal positions
 
-A terminal position has remoteness `0`.
+**Smith's remoteness vanishes at terminal positions.** In an impartial game, the remoteness
+of a terminal position (a position with no moves) is $0$.
 
 ## Depends on
 
-- [Impartial Game](../sprague-grundy/impartial-game.md)
+- [Impartial game](../sprague-grundy/impartial-game.md)
 - [Smith Remoteness](smith-remoteness.md)
 
 ## Proof depends on
 
-- [Smith Remoteness eq](smith-remoteness-eq.md)
+- [Recursion for Smith's remoteness](smith-remoteness-eq.md)
 
 ## Sources
 

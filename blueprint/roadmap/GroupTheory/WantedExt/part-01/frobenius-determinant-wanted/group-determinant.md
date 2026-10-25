@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FrobeniusDeterminantWanted.RepresentationTheory.FrobeniusDeterminant.groupDeterminant
 ---
 
-# Group Determinant
+# Group determinant
 
-The **group determinant** `Θ(G) = det(A)`, a polynomial in the variables
-`x_g`.
+**Group determinant.** For a finite group $G$, the group determinant $\Theta(G)$ is the
+determinant of the group matrix of $G$, the $G \times G$ matrix over $\mathbb{C}[x_g : g \in G]$
+whose entry at $(g, h)$ is the variable $x_{gh}$; it is a polynomial in these variables.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Group Matrix](group-matrix.md)
+- [Group matrix](group-matrix.md)
 
 ## Sources
 

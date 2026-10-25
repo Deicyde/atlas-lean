@@ -5,11 +5,11 @@ navigation: module
 
 # Permutation Stability
 
-- [Normalized Hamming Distance](normalized-hamming-distance.md)
-- [Is Almost Homomorphism](is-almost-homomorphism.md)
-- [Is Close To Homomorphisms](is-close-to-homomorphisms.md)
+- [Normalized Hamming distance](normalized-hamming-distance.md)
+- [Almost-homomorphisms to symmetric groups](is-almost-homomorphism.md)
+- [Closeness to homomorphisms](is-close-to-homomorphisms.md)
 - [Permutation Stable](permutation-stable.md)
-- [Flexible Hamming Distance](flexible-hamming-distance.md)
-- [Is Flexibly Close To Homomorphisms](is-flexibly-close-to-homomorphisms.md)
-- [Flexible Permutation Stable](flexible-permutation-stable.md)
+- [Flexible Hamming distance](flexible-hamming-distance.md)
+- [Flexible closeness to homomorphisms](is-flexibly-close-to-homomorphisms.md)
+- [Flexible permutation stability](flexible-permutation-stable.md)
 - [Metabelian](metabelian.md)

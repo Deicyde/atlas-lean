@@ -7,13 +7,15 @@ proof: formalized
 lean: ClassBreadth.elementBreadth_eq_of_card_eq
 ---
 
-# Element Breadth eq of card eq
+# Breadth from an exact class size
 
-The logarithm recovers the exact exponent when the class size is a power.
+**Breadth from an exact class size.** Let $G$ be a finite group, $p$ a prime, $k$ a natural
+number and $g \in G$. If the conjugacy class of $g$ has exactly $p^k$ elements, then the breadth
+$\operatorname{br}_p(g)$ of $g$ equals $k$.
 
 ## Depends on
 
-- [Element Breadth](element-breadth.md)
+- [Breadth of an element](element-breadth.md)
 
 ## Sources
 

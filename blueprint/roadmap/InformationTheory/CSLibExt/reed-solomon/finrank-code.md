@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.CodingTheory.ReedSolomon.finrank_code
 ---
 
-# Finrank code
+# Dimension of a Reed-Solomon code
 
-The Reed-Solomon code has dimension `k`.
+**Dimension of a Reed-Solomon code.** Let $F$ be a field, let $\alpha_0, \dots, \alpha_{n-1} \in
+F$ be pairwise distinct and let $k \le n$. The Reed-Solomon code of the points $\alpha$ with
+parameter $k$ has dimension $k$ over $F$.
 
 ## Depends on
 
-- [Linear Code](../linear-code/linear-code.md)
-- [Code](code.md)
+- [Linear code](../linear-code/linear-code.md)
+- [Reed-Solomon code](code.md)
 
 ## Proof depends on
 
-- [Encode Lin](encode-lin.md)
-- [Inj On encode](inj-on-encode.md)
+- [Reed-Solomon encoder as a linear map](encode-lin.md)
+- [The Reed-Solomon encoder is injective on low-degree polynomials](inj-on-encode.md)
 
 ## Sources
 

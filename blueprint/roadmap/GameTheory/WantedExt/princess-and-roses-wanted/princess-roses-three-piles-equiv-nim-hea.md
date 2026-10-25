@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.princessRoses_three_piles_equiv_nimHeap
 ---
 
-# Princess Roses three piles equiv nim Heap
+# Sprague–Grundy values of three-pile Princess and the Roses
 
-Three-pile P&R: for `a ≥ b ≥ c`, the Sprague–Grundy value of `(a, b, c)` is `0` on
-`(E, E, E) ∪ (O, O, O)`, `1` on `(O, E, E) ∪ (E, O, O)`, `2` on `(O, O, E) ∪ (E, E, O)` and `3`
-on `(E, O, E) ∪ (O, E, O)`; each union is "`a` and `b` agree or disagree in parity with `c`".
+**Sprague–Grundy values of three-pile Princess and the Roses.** For natural numbers
+$a \ge b \ge c$, the Princess and the Roses position $(a, b, c)$ is equivalent to the Nim heap
+$*n$, that is, it has Sprague–Grundy value $n$, where $n = 0$ if $a$ and $b$ both have the parity
+of $c$, $n = 1$ if $a$ differs from $c$ in parity and $b$ does not, $n = 2$ if $a$ and $b$ both
+differ from $c$ in parity, and $n = 3$ if $b$ differs from $c$ in parity and $a$ does not.
+
+Writing $E$ for even and $O$ for odd, the value is $0$ on $(E, E, E)$ and $(O, O, O)$, $1$ on
+$(O, E, E)$ and $(E, O, O)$, $2$ on $(O, O, E)$ and $(E, E, O)$, and $3$ on $(E, O, E)$ and
+$(O, E, O)$.
 
 ## Depends on
 
-- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
-- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
-- [Princess Roses](princess-roses.md)
+- [Equivalence of impartial games](../../MathlibExt/sprague-grundy/equiv.md)
+- [Nim heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [The Princess and the Roses game](princess-roses.md)
 
 ## Sources
 

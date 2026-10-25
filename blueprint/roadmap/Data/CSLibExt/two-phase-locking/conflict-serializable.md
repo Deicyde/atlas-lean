@@ -14,25 +14,25 @@ conflict-serializable schedule.
 
 ## Depends on
 
-- [Action](action.md)
-- [Conflict Serializable](../serializability/conflict-serializable.md)
-- [Legal](legal.md)
-- [Locks Cover](locks-cover.md)
-- [Op](../serializability/op.md)
-- [Two Phase](two-phase.md)
-- [Ops](ops.md)
+- [Action of a locked schedule](action.md)
+- [Conflict-serializable schedule](../serializability/conflict-serializable.md)
+- [Legal locked schedule](legal.md)
+- [Schedules covered by locks](locks-cover.md)
+- [Operation of a schedule](../serializability/op.md)
+- [Two-phase schedules](two-phase.md)
+- [Reads and writes of a locked schedule](ops.md)
 
 ## Proof depends on
 
-- [Access](../serializability/access.md)
-- [Mode](mode.md)
-- [Is Unlock By](is-unlock-by.md)
-- [Holds Before](holds-before.md)
-- [Lock Mode](lock-mode.md)
-- [Covers](covers.md)
+- [Read or write access](../serializability/access.md)
+- [Lock mode required by an access](mode.md)
+- [Release test](is-unlock-by.md)
+- [Holding a lock](holds-before.md)
+- [Lock mode](lock-mode.md)
+- [Lock mode coverage](covers.md)
 - [Conflicts](../serializability/conflicts.md)
-- [Precedence Edge](../serializability/precedence-edge.md)
-- [Conflict Serializable of rank](../serializability/conflict-serializable-of-rank.md)
+- [Edge of the precedence graph](../serializability/precedence-edge.md)
+- [A rank increasing along precedence edges gives conflict serializability](../serializability/conflict-serializable-of-rank.md)
 
 ## Sources
 

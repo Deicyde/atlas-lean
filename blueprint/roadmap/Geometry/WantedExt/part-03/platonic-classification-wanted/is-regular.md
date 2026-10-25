@@ -5,22 +5,24 @@ statement: formalized
 lean: MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.IsRegular
 ---
 
-# Is Regular
+# Regular convex polytope
 
-`P` is **regular** (Platonic) if it is full-dimensional and its
-symmetry group acts transitively on its flags.
+**Regular convex polytope.** A convex polytope $P \subseteq \mathbb{R}^n$ is regular
+(Platonic) if it is full-dimensional and for any two flags $(F_0, \dots, F_{n-1})$ and
+$(G_0, \dots, G_{n-1})$ of $P$ there is an affine isometry $\varphi$ of $\mathbb{R}^n$ with
+$\varphi(P) = P$ and $\varphi(F_k) = G_k$ for every $k < n$.
 
 ## Depends on
 
-- [Convex Polytope](convex-polytope.md)
+- [Convex polytope](convex-polytope.md)
 
 ## Proof depends on
 
-- [Flag](flag.md)
-- [Is Full Dim](is-full-dim.md)
-- [Isom](isom.md)
-- [Is Symmetry](is-symmetry.md)
-- [E](e.md)
+- [Flag of a convex polytope](flag.md)
+- [Full-dimensional convex polytope](is-full-dim.md)
+- [Rigid motions](isom.md)
+- [Symmetry of a convex polytope](is-symmetry.md)
+- [Ambient Euclidean space of the Platonic classification](e.md)
 
 ## Sources
 

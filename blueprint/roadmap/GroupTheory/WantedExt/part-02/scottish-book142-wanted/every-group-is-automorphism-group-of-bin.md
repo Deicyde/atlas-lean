@@ -5,16 +5,19 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ScottishBook142Wanted.everyGroupIsAutomorphismGroupOfBinaryRelation
 ---
 
-# Every Group Is Automorphism Group Of Binary Relation
+# Birkhoff's theorem: every group is the automorphism group of a binary relation
 
-Every abstract group is the group of all injective transformations of some
-set preserving some binary relation: for every group `G` there are a set
-`Z` and a subset `X` of `Z × Z` such that `G` is isomorphic to the
-automorphism group of the binary relation `X` on `Z`.
+**Birkhoff's theorem: every group is the automorphism group of a binary relation.** For every
+group $G$ there are a set $Z$ and a binary relation $X \subseteq Z \times Z$ such that $G$ is
+the full automorphism group of $X$: there is an injective group homomorphism $\varphi$ from $G$
+to the group of permutations of $Z$ whose image is exactly the set of permutations $f$ of $Z$
+with $(x, y) \in X \iff (f(x), f(y)) \in X$ for all $x, y \in Z$.
+
+The set $Z$ lies in the same universe as $G$.
 
 ## Depends on
 
-- [Is Automorphism Group Of](is-automorphism-group-of.md)
+- [Full automorphism group of a binary relation](is-automorphism-group-of.md)
 
 ## Sources
 

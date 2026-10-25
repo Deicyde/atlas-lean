@@ -5,6 +5,6 @@ navigation: module
 
 # Bondareva Shapley
 
-- [Is Core Allocation](is-core-allocation.md)
-- [Is Balanced](is-balanced.md)
-- [Bondareva shapley](bondareva-shapley.md)
+- [Core allocation](is-core-allocation.md)
+- [Balanced cooperative game](is-balanced.md)
+- [Bondareva–Shapley theorem](bondareva-shapley.md)

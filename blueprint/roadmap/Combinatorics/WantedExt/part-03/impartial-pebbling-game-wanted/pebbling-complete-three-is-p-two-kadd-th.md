@@ -14,7 +14,7 @@ $2k + 3$ pebbles on one vertex and none on the other two is a P-position.
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources

@@ -6,7 +6,7 @@ navigation: module
 # Optimal Moebius
 
 - [Unit Strip](unit-strip.md)
-- [Period](period.md)
-- [Fundamental Domain](fundamental-domain.md)
-- [Is Moebius Embedding](is-moebius-embedding.md)
-- [Theorem 1 1](theorem-1-1.md)
+- [Gluing map of the Moebius band](period.md)
+- [Fundamental domain of the Moebius band](fundamental-domain.md)
+- [Moebius embedding](is-moebius-embedding.md)
+- [Schwartz's optimal paper Moebius band theorem](theorem-1-1.md)

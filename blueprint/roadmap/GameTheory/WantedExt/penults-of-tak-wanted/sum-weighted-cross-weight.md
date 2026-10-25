@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.sum_weightedCrossWeight
 ---
 
-# Sum weighted Cross Weight
+# Total weight of the Weighted Cross
 
-The Weighted Cross has total weight `26`.
+**Total weight of the Weighted Cross.** The weights $w(a, b)$ of the Weighted Cross over the
+$5 \times 5$ window sum to $26$: $\sum_{a=0}^{4} \sum_{b=0}^{4} w(a, b) = 26$.
 
 ## Depends on
 
-- [Weighted Cross Weight](weighted-cross-weight.md)
+- [Weights of the Weighted Cross](weighted-cross-weight.md)
 
 ## Sources
 

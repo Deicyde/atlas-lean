@@ -13,7 +13,7 @@ where `(2 / p)` is the Legendre symbol.
 
 ## Depends on
 
-- [Ordinary Riordan Pascal Like Matrix](../../../../LinearAlgebra/MathlibExt/matrix/part-01/ordinary-riordan-pascal-like-matrix/ordinary-riordan-pascal-like-matrix.md)
+- [Ordinary Riordan Pascal-like triangle](../../../../LinearAlgebra/MathlibExt/matrix/part-01/ordinary-riordan-pascal-like-matrix/ordinary-riordan-pascal-like-matrix.md)
 
 ## Sources
 

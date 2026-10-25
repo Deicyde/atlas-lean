@@ -5,5 +5,5 @@ navigation: module
 
 # Viviani
 
-- [Viviani general](viviani-general.md)
-- [Viviani](viviani.md)
+- [Viviani's theorem](viviani-general.md)
+- [Viviani's theorem with a positive side length](viviani.md)

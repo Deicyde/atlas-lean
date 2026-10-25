@@ -7,9 +7,11 @@ proof: formalized
 lean: BurnsidePaqb.irreducible_of_simple_fdrep
 ---
 
-# Irreducible of simple fdrep
+# Simple finite-dimensional representations are irreducible
 
-Bridge (reverse): the underlying representation of a simple `FDRep` is irreducible.
+**Simple finite-dimensional representations are irreducible.** Let $G$ be a finite group. If
+$V$ is a simple object of the category of finite-dimensional complex representations of $G$, then
+the representation of $G$ on the underlying vector space of $V$ is irreducible.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Irreducible of simple fdrep aux](irreducible-of-simple-fdrep-aux.md)
+- [Simple finite-dimensional representations are irreducible (auxiliary form)](irreducible-of-simple-fdrep-aux.md)
 
 ## Sources
 

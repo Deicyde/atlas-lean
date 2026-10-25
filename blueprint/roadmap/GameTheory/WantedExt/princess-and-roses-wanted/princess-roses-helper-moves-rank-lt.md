@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.princessRosesHelperMoves_rank_lt
 ---
 
-# Princess Roses Helper Moves rank lt
+# P&R Helper moves decrease the coordinate sum
 
-Every P&R Helper move strictly decreases `x + y + z`.
+**P&R Helper moves decrease the coordinate sum.** For all triples $(x, y, z)$ and
+$(x', y', z')$ of natural numbers, if $(x', y', z')$ is an option of $(x, y, z)$ in the P&R Helper
+game, then $x' + y' + z' < x + y + z$.
 
 ## Depends on
 
-- [Princess Roses Helper Moves](princess-roses-helper-moves.md)
+- [Options in P&R Helper](princess-roses-helper-moves.md)
 
 ## Proof depends on
 
-- [Mem princess Roses Helper Moves](mem-princess-roses-helper-moves.md)
-- [Princess Roses Helper Move List](princess-roses-helper-move-list.md)
+- [Characterization of P&R Helper options](mem-princess-roses-helper-moves.md)
+- [Moves of P&R Helper](princess-roses-helper-move-list.md)
 
 ## Sources
 

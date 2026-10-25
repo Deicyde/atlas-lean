@@ -7,9 +7,10 @@ proof: formalized
 lean: BurnsidePaqb.cyc_rootSet
 ---
 
-# Cyc root Set
+# Complex roots of $X^m - 1$
 
-The `ℚ`-root set of `X ^ m - C 1` in `ℂ` is exactly the roots of unity.
+**Complex roots of $X^m - 1$.** For every natural number $m \neq 0$, the set of complex roots
+of the rational polynomial $X^m - 1$ is exactly the set of $m$-th roots of unity in $\mathbb{C}$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Map X pow sub C rat](map-x-pow-sub-c-rat.md)
+- [$X^m - 1$ over $\mathbb{Q}$ and over $\mathbb{C}$](map-x-pow-sub-c-rat.md)
 
 ## Sources
 

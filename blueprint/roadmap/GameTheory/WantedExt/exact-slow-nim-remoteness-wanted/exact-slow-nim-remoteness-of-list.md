@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimRemotenessOfList
 ---
 
-# Exact Slow Nim Remoteness Of List
+# Remoteness of exact slow k-NIM from a list of piles
 
-Smith's remoteness of a position of `NIM(k + 1, k)` given as the list of its `k + 1` pile
-sizes, so that `k` is part of the input. The empty list is read as the empty game.
+**Remoteness of exact slow k-NIM from a list of piles.** For a list $(x_0, \dots, x_{n-1})$
+of natural numbers of length $n$, the value is Smith's remoteness of the position
+$(x_0, \dots, x_{n-1})$ of Slow$A$-Nim on $n$ stacks with $A = \{n - 1\}$, where $0 - 1 = 0$. For
+$n = k + 1$ this game is exact slow $k$-NIM $\mathrm{NIM}(k + 1, k)$, so $k$ is part of the input;
+the empty list gives the game on no stacks.
 
 ## Depends on
 

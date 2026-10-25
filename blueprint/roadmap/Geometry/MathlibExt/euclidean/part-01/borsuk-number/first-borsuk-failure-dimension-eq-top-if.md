@@ -7,14 +7,16 @@ proof: formalized
 lean: Metric.firstBorsukFailureDimension_eq_top_iff
 ---
 
-# First Borsuk Failure Dimension eq top iff
+# When the first Borsuk failure dimension is infinite
 
-The source's infinity convention holds exactly when no positive dimension fails.
+**When the first Borsuk failure dimension is infinite.** The first Borsuk failure dimension
+is $\infty$ if and only if, for every positive integer $n$, the Borsuk number of the Euclidean
+space $\mathbb{R}^n$ is at most $n + 1$.
 
 ## Depends on
 
-- [Dimension Borsuk Number](dimension-borsuk-number.md)
-- [First Borsuk Failure Dimension](first-borsuk-failure-dimension.md)
+- [Borsuk number of a Euclidean space](dimension-borsuk-number.md)
+- [First Borsuk failure dimension](first-borsuk-failure-dimension.md)
 
 ## Sources
 

@@ -39,7 +39,11 @@ noncomputable def smithRemoteness (G : ImpartialGame) : G.Pos → ℕ :=
     if hE : (V.filter Even).Nonempty then 1 + (V.filter Even).min' hE
     else if hV : V.Nonempty then 1 + V.max' hV else 0
 
-/-- The defining recursion of `smithRemoteness`.
+/-- **Recursion for Smith's remoteness.** Let $G$ be an impartial game, $p$ a position of $G$, and
+$R$ the set of remotenesses of the options of $p$ (the positions reachable from $p$ in one move).
+If $R$ contains an even number, the remoteness of $p$ is $1$ plus the least even element of $R$;
+otherwise, if $R$ is nonempty, it is $1$ plus the largest element of $R$; and if $R$ is empty,
+it is $0$.
 
 Source: C. A. B. Smith, *Graphs and composite games*, J. Combin. Theory 1 (1966), 51–81. -/
 theorem smithRemoteness_eq (G : ImpartialGame) (p : G.Pos) :
@@ -56,7 +60,8 @@ theorem smithRemoteness_eq (G : ImpartialGame) (p : G.Pos) :
     simp
   rw [smithRemoteness, WellFounded.fix_eq, key]
 
-/-- A terminal position has remoteness `0`.
+/-- **Smith's remoteness vanishes at terminal positions.** In an impartial game, the remoteness
+of a terminal position (a position with no moves) is $0$.
 
 Source: C. A. B. Smith, *Graphs and composite games*, J. Combin. Theory 1 (1966), 51–81. -/
 theorem smithRemoteness_of_moves_eq_empty (G : ImpartialGame) (p : G.Pos)

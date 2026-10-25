@@ -7,13 +7,14 @@ proof: formalized
 lean: ConvexCovering.coordinateCube_interior_iff
 ---
 
-# Coordinate Cube interior iff
+# Interior of the coordinate cube
 
-Interior membership is strict in every coordinate.
+**Interior of the coordinate cube.** A point $x \in \mathbb{R}^n$ lies in the interior of
+the coordinate cube $[-1, 1]^n$ if and only if $-1 < x_i < 1$ for every coordinate $i$.
 
 ## Depends on
 
-- [Coordinate Cube](coordinate-cube.md)
+- [Coordinate cube](coordinate-cube.md)
 
 ## Sources
 

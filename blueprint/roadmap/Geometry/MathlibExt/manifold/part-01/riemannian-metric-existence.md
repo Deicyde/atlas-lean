@@ -7,13 +7,11 @@ proof: formalized
 lean: MathlibExt.Geometry.Manifold.RiemannianMetricExistenceWanted.riemannianMetricExistence
 ---
 
-# Riemannian Metric Existence
+# Existence of Riemannian metrics
 
-Every finite-dimensional Hausdorff second-countable `C^∞` manifold `M` admits a `C^∞`
-Riemannian metric on its tangent bundle. Source: J. Lee, Introduction to Smooth Manifolds, 2nd ed.
-existence of Riemannian metrics via partition of unity; also Lee, Riemannian Manifolds; Lean
-states finite-dimensional Hausdorff second-countable specialization.
-Proves `Wanted` entry `riemannianMetricExistence`.
+**Existence of Riemannian metrics.** Let $E$ be a finite-dimensional real normed space and let
+$M$ be a Hausdorff, second-countable $C^\infty$ manifold modeled on $E$ (possibly with boundary
+or corners). Then $M$ admits a $C^\infty$ Riemannian metric on its tangent bundle.
 
 ## Depends on
 
@@ -22,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.RiemannianMetricExistence](../../../../../sources/v2/MathlibExt.md)
+- J. Lee, Introduction to Smooth Manifolds, 2nd ed. existence of Riemannian metrics via partition of unity; also Lee, Riemannian Manifolds; Lean states finite-dimensional Hausdorff second-countable specialization.

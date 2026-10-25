@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_ticEnded_empty
 ---
 
-# Not tic Ended empty
+# Impartial Tic has not ended on the empty board
 
-The empty `n × n` board with `n ≥ 1` has not ended in Impartial Tic.
+**Impartial Tic has not ended on the empty board.** For $n \ge 1$, play of Impartial Tic has
+not ended on the empty $n \times n$ board: no row and no column is full.
 
 ## Depends on
 
-- [Tic Ended](tic-ended.md)
+- [End of Impartial Tic](tic-ended.md)
 
 ## Sources
 

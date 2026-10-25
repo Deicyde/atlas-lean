@@ -7,8 +7,8 @@ navigation: module
 
 ## Defs
 
-- [P Core](p-core.md)
+- [The $p$-core of a group](p-core.md)
 
 ## Group Theory
 
-- [Baer suzuki](baer-suzuki.md)
+- [Baer–Suzuki theorem](baer-suzuki.md)

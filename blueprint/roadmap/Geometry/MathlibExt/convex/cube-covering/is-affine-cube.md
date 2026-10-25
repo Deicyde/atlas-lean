@@ -6,9 +6,11 @@ statement: formalized
 lean: ConvexCovering.IsAffineCube
 ---
 
-# Is Affine Cube
+# Affine cube
 
-An affine cube is the image under a genuinely invertible affine map.
+**Affine cube.** A set $K \subseteq \mathbb{R}^n$ is an affine cube if $K = e([-1, 1]^n)$ for
+some affine bijection $e : \mathbb{R}^n \to \mathbb{R}^n$, where $[-1, 1]^n$ is the coordinate cube
+$\{x \in \mathbb{R}^n : -1 \le x_i \le 1 \text{ for all } i\}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Coordinate Cube](coordinate-cube.md)
+- [Coordinate cube](coordinate-cube.md)
 
 ## Sources
 

@@ -7,23 +7,27 @@ proof: formalized
 lean: BurnsidePaqb.classSum_centralScalar_isIntegral
 ---
 
-# Class Sum central Scalar is Integral
+# Class size times character ratio is an algebraic integer
 
-Bielefeld Prop 1: `|C|χ(g)/χ(1)` is an algebraic integer.
+**Class size times character ratio is an algebraic integer.** Let $\rho$ be an irreducible
+representation of a finite group $G$ on a finite-dimensional complex vector space $V$, with
+character $\chi$. For every $g \in G$, if $C$ is the conjugacy class of $g$, then
+$|C|\,\chi(g)/\chi(1)$ is an algebraic integer.
 
 ## Depends on
 
-- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
+- [Conjugacy class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Proof depends on
 
-- [Carrier to Finset](../class-sum/carrier-to-finset.md)
-- [Central Scalar](central-scalar.md)
-- [Central Scalar is Integral](central-scalar-is-integral.md)
-- [Central Scalar trace](central-scalar-trace.md)
-- [Class Rep](../class-sum/class-rep.md)
-- [Conj Class eq of is Conj](../class-sum/conj-class-eq-of-is-conj.md)
+- [Conjugacy class of the chosen representative](../class-sum/carrier-to-finset.md)
+- [Central scalar of a conjugacy class](central-scalar.md)
+- [Central scalars are algebraic integers](central-scalar-is-integral.md)
+- [Trace formula for central scalars](central-scalar-trace.md)
+- [Chosen representative of a conjugacy class](../class-sum/class-rep.md)
+- [Conjugate elements have the same conjugacy class](../class-sum/conj-class-eq-of-is-conj.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.CentralCharacter](../../../../../../sources/v2/MathlibExt.md)
+- Bielefeld Prop 1.

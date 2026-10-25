@@ -7,15 +7,17 @@ proof: formalized
 lean: MoserConvexWormCoverConstant.move_isometry
 ---
 
-# Move isometry
+# Direct rigid motions of the plane are isometries
 
-Source: Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc
-adaptation.
+**Direct rigid motions of the plane are isometries.** For every real angle $\theta$ and every
+complex number $\tau$, the map $z \mapsto e^{i\theta} z + \tau$ of the complex plane is an
+isometry: it preserves the distance $|z - w|$ between any two points $z, w \in \mathbb{C}$.
 
 ## Depends on
 
-- [Move](move.md)
+- [Direct rigid motion of the plane](move.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../sources/v2/MathlibExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

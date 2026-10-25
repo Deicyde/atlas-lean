@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.admissibleCoverAreas
 ---
 
-# Admissible Cover Areas
+# Areas of universal convex covers
 
-Areas of precisely the admissible universal convex covers.
+**Areas of universal convex covers.** The set of admissible cover areas is the set of all
+$a \in [0, \infty]$ for which there is a universal convex cover $\Omega$ in the plane (a nonempty
+convex set containing a congruent copy of every nonempty convex planar set of diameter $1$) whose
+Lebesgue area is $a$.
 
 ## Depends on
 
@@ -16,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Universal Convex Cover](is-universal-convex-cover.md)
-- [Plane](plane.md)
-- [Planar Area](planar-area.md)
+- [Universal convex covers](is-universal-convex-cover.md)
+- [The Euclidean plane of Lebesgue's covering problem](plane.md)
+- [Planar area](planar-area.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: InformationTheory.shannonEntropy_pure
 ---
 
-# Shannon Entropy pure
+# A point mass has zero entropy
 
-A deterministic finite law has zero entropy.
+**A point mass has zero entropy.** For every outcome $a$ of a finite alphabet, the point mass
+at $a$ has Shannon entropy $0$.
 
 ## Depends on
 
-- [Shannon Entropy](shannon-entropy.md)
+- [Shannon entropy](shannon-entropy.md)
 
 ## Sources
 

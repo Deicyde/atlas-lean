@@ -6,20 +6,26 @@ statement: formalized
 lean: MathlibExt.Geometry.UlamWanted.Ulam.CuttingHyperplaneAtLevel.lineThroughCentersOfMass
 ---
 
-# Line Through Centers Of Mass
+# Direction of the line through the centers of mass
 
-The direction vector of the line `l(ξ)` passing through the center of mass of `K` and the
-center of mass of the "submerged part" `K ∩ H⁻(ξ)`.
+**Direction of the line through the centers of mass.** Let $d$ be a natural number, let
+$K \subseteq \mathbb{R}^d$, let $\xi$ be a unit vector in $\mathbb{R}^d$, let
+$\delta \in \mathbb{R}$, and let $H$ be a cutting hyperplane of $K$ in direction $\xi$ at level
+$\delta$, with translation $t$, so that
+$H^-(\xi) = \{x \in \mathbb{R}^d : \langle x, \xi \rangle \le t\}$. Writing $c(A)$ for the center
+of mass of a set $A \subseteq \mathbb{R}^d$, the direction vector of the line $l(\xi)$ through the
+center of mass of $K$ and the center of mass of the submerged part $K \cap H^-(\xi)$ is the vector
+$c(K) - c(K \cap H^-(\xi))$.
 
 ## Depends on
 
-- [Cutting Hyperplane At Level](cutting-hyperplane-at-level.md)
-- [S](s.md)
+- [Cutting hyperplane at a level](cutting-hyperplane-at-level.md)
+- [Unit sphere](s.md)
 
 ## Proof depends on
 
-- [H minus](h-minus.md)
-- [Center Of Mass](center-of-mass.md)
+- [Lower half-space](h-minus.md)
+- [Center of mass](center-of-mass.md)
 
 ## Sources
 

@@ -7,18 +7,20 @@ proof: formalized
 lean: ConvexCovering.coordinateCube_isConvexBody
 ---
 
-# Coordinate Cube is Convex Body
+# The coordinate cube is a convex body
 
-The cube is compact, convex and has nonempty ambient interior.
+**The coordinate cube is a convex body.** For every $n$, the coordinate cube $[-1, 1]^n$ in
+$\mathbb{R}^n$ is a convex body: it is compact and convex, and its interior in $\mathbb{R}^n$ is
+nonempty.
 
 ## Depends on
 
-- [Is Convex Body](../covering/is-convex-body.md)
-- [Coordinate Cube](coordinate-cube.md)
+- [Convex bodies in Euclidean space](../covering/is-convex-body.md)
+- [Coordinate cube](coordinate-cube.md)
 
 ## Proof depends on
 
-- [Coordinate Cube interior iff](coordinate-cube-interior-iff.md)
+- [Interior of the coordinate cube](coordinate-cube-interior-iff.md)
 
 ## Sources
 

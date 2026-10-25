@@ -7,16 +7,22 @@ proof: formalized
 lean: MathlibExt.LinearAlgebra.KernelsLemmaWanted.kernels_lemma_pairwise_isCoprime
 ---
 
-# Kernels lemma pairwise is Coprime
+# Kernels lemma
 
-Kernels lemma, finite-family version (primary decomposition machinery): for pairwise coprime
-polynomials, the individual kernels are independent and their supremum is the kernel of the
-product. The decomposition is internal to the product kernel; it need not span all of `M`.
+**Kernels lemma.** Let $R$ be a commutative ring, $M$ an $R$-module, $f$ an $R$-linear
+endomorphism of $M$, and $(p_i)_{i \in \iota}$ a family of polynomials in $R[X]$, indexed by a
+finite type $\iota$, that are pairwise coprime, meaning that for all $i \ne j$ there are
+$a, b \in R[X]$ with $a p_i + b p_j = 1$. Then the submodules $\ker p_i(f)$ are independent
+(each meets the sum of the others only in $0$), and their sum is
+$\ker \bigl(\prod_{i \in \iota} p_i\bigr)(f)$.
+
+The decomposition is internal to $\ker \bigl(\prod_{i \in \iota} p_i\bigr)(f)$; it need not span
+all of $M$.
 
 Proof: induction on the number of polynomials from the two-polynomial case, as in the cited French
-Wikipedia article. Mathlib's `Polynomial.sup_ker_aeval_eq_ker_aeval_mul_of_coprime` is the
-two-polynomial step, and independence follows from `Polynomial.disjoint_ker_aeval_of_isCoprime`
-applied to each polynomial and the product of the others.
+Wikipedia article. For coprime $p$ and $q$ one has $\ker p(f) + \ker q(f) = \ker (pq)(f)$, which
+gives the inductive step, and independence follows because $\ker p_i(f) \cap \ker q(f) = 0$ when
+$q$ is the product of the other polynomials.
 
 ## Depends on
 
@@ -24,7 +30,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [I Sup Indep ker aeval and i Sup eq of pairwise is Coprime](i-sup-indep-ker-aeval-and-i-sup-eq-of-pa.md)
+- [Independence and sum of kernels of pairwise coprime polynomials](i-sup-indep-ker-aeval-and-i-sup-eq-of-pa.md)
 
 ## Sources
 

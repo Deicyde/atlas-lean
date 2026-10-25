@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.euclidPPosition
 ---
 
-# Euclid PPosition
+# Euclid P-position test
 
-`euclidPPosition a b` is `true` iff `(a, b)` (positive entries) is a P-position of
-Euclid: every move leads to an N-position. Each move lowers `a + b`, so fuel `a + b`
-suffices.
+**Euclid P-position test.** For natural numbers $a$ and $b$, the Euclid P-position test at
+$(a, b)$ is the value at $(a, b)$ of the fuel-bounded evaluation of the P-positions of Euclid with
+fuel $a + b$.
+
+It is true exactly at the P-positions of Euclid, the positions from which every move leads to a
+position that is not a P-position: each move lowers $a + b$, so fuel $a + b$ suffices.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Euclid PPosition Aux](euclid-pposition-aux.md)
+- [Fuel-bounded Euclid classifier](euclid-pposition-aux.md)
 
 ## Sources
 

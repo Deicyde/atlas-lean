@@ -7,13 +7,15 @@ proof: formalized
 lean: BurnsidePaqb.conjClass_eq_of_isConj
 ---
 
-# Conj Class eq of is Conj
+# Conjugate elements have the same conjugacy class
 
-Conjugate elements have equal conjugacy classes.
+**Conjugate elements have the same conjugacy class.** Let $G$ be a finite group. If
+$g_1, g_2 \in G$ are conjugate, then the conjugacy class of $g_1$ equals the conjugacy class of
+$g_2$.
 
 ## Depends on
 
-- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
+- [Conjugacy class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Sources
 

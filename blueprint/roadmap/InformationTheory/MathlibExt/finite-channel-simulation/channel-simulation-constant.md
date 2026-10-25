@@ -5,9 +5,12 @@ statement: formalized
 lean: InformationTheory.channelSimulationConstant
 ---
 
-# Channel Simulation Constant
+# Channel simulation constant
 
-The worst-case one-shot conditional-prefix asymptotic constant term.
+**Channel simulation constant.** The constant $c_c^*$ is the limit superior in the extended
+reals, as the real number $t$ tends to $+\infty$, of $W(t) - t - \log_2 t$, where $W(t)$ is the
+worst-case optimum at $t$: the supremum of the conditional-prefix optimum over all finite joint
+laws whose mutual information in bits is exactly $t$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Worst Case Optimum](worst-case-optimum.md)
+- [Worst-case conditional-prefix optimum](worst-case-optimum.md)
 
 ## Sources
 

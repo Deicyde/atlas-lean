@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.isBetween
 ---
 
-# Is Between
+# Strict betweenness
 
-The ternary linear-betweenness relation on a linear order: `b` lies strictly
-between `a` and `c` in either direction.
+**Strict betweenness.** Let $\alpha$ be a type with a relation $<$ and let $a, b, c \in \alpha$.
+Then $b$ lies strictly between $a$ and $c$ when either $a < b$ and $b < c$, or $c < b$ and
+$b < a$.
 
 ## Depends on
 

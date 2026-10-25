@@ -6,21 +6,22 @@ proof: formalized
 lean: MovingSofa.ambidextrousOptimalArea_le_optimalArea
 ---
 
-# Ambidextrous Optimal Area le optimal Area
+# The ambidextrous optimal area is at most the optimal area
 
-Every ambidextrous sofa is an ordinary sofa, so its supremal area is at
-most the ordinary moving-sofa supremum.
+**The ambidextrous optimal area is at most the optimal area.** The supremum, in $[0, \infty]$,
+of the Lebesgue areas of all ambidextrous sofas is at most the supremum of the Lebesgue areas of
+all sofas. This holds because every ambidextrous sofa is a sofa.
 
 ## Depends on
 
-- [Ambidextrous Optimal Area](ambidextrous-optimal-area.md)
-- [Optimal Area](optimal-area.md)
+- [Optimal area of ambidextrous sofas](ambidextrous-optimal-area.md)
+- [Optimal sofa area](optimal-area.md)
 
 ## Proof depends on
 
-- [Can Pass Z](can-pass-z.md)
-- [Is Ambidextrous Sofa](is-ambidextrous-sofa.md)
-- [Is Sofa](is-sofa.md)
+- [Passing the Z corridor for all large separations](can-pass-z.md)
+- [Ambidextrous sofa shapes](is-ambidextrous-sofa.md)
+- [Sofa shapes](is-sofa.md)
 
 ## Sources
 

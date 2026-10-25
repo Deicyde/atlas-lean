@@ -6,17 +6,18 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.IsOnto
 ---
 
-# Is Onto
+# Onto social choice function
 
-Onto / surjective: every alternative is chosen for some profile.
+**Onto social choice function.** A resolute social choice function $F$ is onto when every
+alternative $a$ is chosen at some profile, that is, $F(p) = a$ for some profile $p$.
 
 ## Depends on
 
-- [Social Choice Function](social-choice-function.md)
+- [Social choice functions](social-choice-function.md)
 
 ## Proof depends on
 
-- [Profile](profile.md)
+- [Preference profiles for the Gibbard–Satterthwaite theorem](profile.md)
 
 ## Sources
 

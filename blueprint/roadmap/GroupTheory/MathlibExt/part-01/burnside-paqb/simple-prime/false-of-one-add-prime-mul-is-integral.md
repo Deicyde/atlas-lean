@@ -7,10 +7,11 @@ proof: formalized
 lean: BurnsidePaqb.false_of_one_add_prime_mul_isIntegral
 ---
 
-# False of one add prime mul is Integral
+# An algebraic integer cannot solve $1 + p\beta = 0$ for a prime $p$
 
-An equation `1 + p * β = 0` with `β` an algebraic integer is impossible
-for prime `p`: it would make `-1/p` an algebraic integer.
+**An algebraic integer cannot solve $1 + p\beta = 0$ for a prime $p$.** Let $p$ be a prime
+number. There is no algebraic integer $\beta \in \mathbb{C}$ with $1 + p\beta = 0$, since such a
+$\beta$ would make $-1/p$ an algebraic integer.
 
 ## Depends on
 

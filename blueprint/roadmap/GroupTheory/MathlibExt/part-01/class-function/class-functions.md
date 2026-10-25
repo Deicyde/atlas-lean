@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClassFunctionWanted.classFunctions
 ---
 
-# Class Functions
+# The space of class functions
 
-Class functions as a submodule of all functions.
+**The space of class functions.** Let $G$ be a group and $k$ a field. The space of
+class functions $G \to k$ is the $k$-linear subspace of the vector space of all functions
+$G \to k$, under pointwise addition and scalar multiplication, consisting of the class
+functions.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Class Function](is-class-function.md)
+- [Class functions on a group](is-class-function.md)
 
 ## Sources
 

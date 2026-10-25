@@ -5,21 +5,24 @@ statement: formalized
 lean: Cslib.Databases.StrictTwoPhase
 ---
 
-# Strict Two Phase
+# Strict two-phase schedules
 
-Strict two-phase locking: two-phase, and exclusive locks are released only after the last read
-or write of their transaction.
+**Strict two-phase schedules.** A locked schedule $s$ is strict two-phase when it is two-phase
+and every transaction releases its exclusive locks only after its last read or write: whenever
+$s$ has at position $p$ a release by transaction $t$ of item $x$ and just before position $p$
+transaction $t$ holds an exclusive lock on $x$, every read or write of $t$ in $s$ occurs at a
+position before $p$.
 
 ## Depends on
 
-- [Action](action.md)
+- [Action of a locked schedule](action.md)
 
 ## Proof depends on
 
-- [Holds Before](holds-before.md)
-- [Lock Mode](lock-mode.md)
-- [Op](../serializability/op.md)
-- [Two Phase](two-phase.md)
+- [Holding a lock](holds-before.md)
+- [Lock mode](lock-mode.md)
+- [Operation of a schedule](../serializability/op.md)
+- [Two-phase schedules](two-phase.md)
 
 ## Sources
 

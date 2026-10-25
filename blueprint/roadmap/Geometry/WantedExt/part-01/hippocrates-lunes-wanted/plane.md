@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.HippocratesLunesWanted.Geometry.HippocratesLunes.Plane
 ---
 
-# Plane
+# Coordinate plane for Hippocrates' lunes
 
-The coordinate plane.
+**Coordinate plane for Hippocrates' lunes.** The coordinate plane is the set
+$\mathbb{R} \times \mathbb{R}$ of ordered pairs $(x, y)$ of real numbers.
 
 ## Depends on
 

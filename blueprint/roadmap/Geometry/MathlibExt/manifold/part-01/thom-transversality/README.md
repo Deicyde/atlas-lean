@@ -5,5 +5,5 @@ navigation: module
 
 # Thom Transversality
 
-- [Thom transversality uniform approx regular value zero](thom-transversality-uniform-approx-regul.md)
-- [Thom transversality compact source uniform approx regular value zero](thom-transversality-compact-source-unifo.md)
+- [Approximation by maps having zero as a regular value](thom-transversality-uniform-approx-regul.md)
+- [Approximation by maps having zero as a regular value, compact case](thom-transversality-compact-source-unifo.md)

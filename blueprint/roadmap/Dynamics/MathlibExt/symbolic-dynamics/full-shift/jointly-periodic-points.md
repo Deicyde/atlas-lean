@@ -6,18 +6,23 @@ statement: formalized
 lean: SymbolicDynamics.FullShift.jointlyPeriodicPoints
 ---
 
-# Jointly Periodic Points
+# Jointly periodic points
 
-The jointly periodic points of `f`: points periodic for `f` and periodic for
-the unit shift. No common temporal period is required.
+**Jointly periodic points.** For a map $f$ from the full shift
+$\{0, \dots, N-1\}^{\mathbb{Z}}$ on $N$ symbols to itself, the jointly periodic points of $f$
+are the configurations $x$ that are periodic for $f$ and periodic for the unit shift $\sigma$,
+given by $(\sigma x)_i = x_{i+1}$: there are $m \ge 1$ and $n \ge 1$ with $f^m(x) = x$ and
+$\sigma^n(x) = x$.
+
+No common period for $f$ and $\sigma$ is required.
 
 ## Depends on
 
-- [Full Shift Space](full-shift-space.md)
+- [Full shift space](full-shift-space.md)
 
 ## Proof depends on
 
-- [Unit Shift](unit-shift.md)
+- [Unit shift](unit-shift.md)
 
 ## Sources
 

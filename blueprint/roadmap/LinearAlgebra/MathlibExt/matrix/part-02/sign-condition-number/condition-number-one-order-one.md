@@ -7,17 +7,18 @@ proof: formalized
 lean: Matrix.SignConditionNumber.conditionNumber_one_order_one
 ---
 
-# Condition Number one order one
+# Condition number of the order-one identity
 
-The order-one identity is nonsingular and has condition number one.
+**Condition number of the order-one identity.** The condition number of the $1 \times 1$
+real identity matrix is $1$.
 
 ## Depends on
 
-- [Condition Number](condition-number.md)
+- [Condition number of a square real matrix](condition-number.md)
 
 ## Proof depends on
 
-- [Condition Number eq ratio of smallest ne zero](condition-number-eq-ratio-of-smallest-ne.md)
+- [Condition number as a singular-value ratio](condition-number-eq-ratio-of-smallest-ne.md)
 
 ## Sources
 

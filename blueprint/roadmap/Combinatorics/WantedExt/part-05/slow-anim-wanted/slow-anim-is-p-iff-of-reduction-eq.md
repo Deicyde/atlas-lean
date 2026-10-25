@@ -14,7 +14,7 @@ P-position.
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [Slow$A$-Nim](slow-anim-game.md)
 - [Reduction of a Slow$A$-Nim position](slow-anim-reduction.md)
 

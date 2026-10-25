@@ -15,7 +15,7 @@ every pile is at most $3k - \ell$ is a P-position.
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources

@@ -7,19 +7,22 @@ proof: formalized
 lean: FalconerDistanceSet.le_planarDistanceThreshold_of_zeroMeasureWitness
 ---
 
-# Le planar Distance Threshold of zero Measure Witness
+# Zero-measure distance sets give lower bounds for the planar distance threshold
 
-A compact zero-measure distance example rules out all strictly smaller thresholds.
+**Zero-measure distance sets give lower bounds for the planar distance threshold.** Let
+$t \in [0, \infty]$. If $E$ is a compact subset of the Euclidean plane $\mathbb{R}^2$ whose
+Hausdorff dimension $\dim_H E$ satisfies $t \le \dim_H E$ and whose distance set has Lebesgue
+measure zero, then $t$ is at most the planar distance threshold.
 
 ## Depends on
 
-- [Distance Set](distance-set.md)
-- [Planar Distance Threshold](planar-distance-threshold.md)
+- [Euclidean distance set](distance-set.md)
+- [Planar distance threshold](planar-distance-threshold.md)
 
 ## Proof depends on
 
-- [Admissible Planar Threshold](admissible-planar-threshold.md)
-- [Planar Threshold Property](planar-threshold-property.md)
+- [Admissible planar threshold](admissible-planar-threshold.md)
+- [Planar Falconer threshold property](planar-threshold-property.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Dynamics.ScottishBook116bWanted.coinFlip
 ---
 
-# Coin Flip
+# Fair coin measure
 
-The fair-coin measure on `Bool`: mass `1 / 2` on each of `false`, `true`.
+**Fair coin measure.** The fair coin measure is the measure
+$\tfrac12 \delta_{\mathrm{false}} + \tfrac12 \delta_{\mathrm{true}}$ on the Booleans
+$\{\mathrm{false}, \mathrm{true}\}$: it gives mass $1/2$ to each of the two values.
 
 ## Depends on
 

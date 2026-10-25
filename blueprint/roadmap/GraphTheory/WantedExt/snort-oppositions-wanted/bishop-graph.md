@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.bishopGraph
 ---
 
-# Bishop Graph
+# Bishop's graph
 
-The Bishop's grid on `Fin n × Fin m`: distinct cells on a common diagonal.
+**Bishop's graph.** For natural numbers $n$ and $m$, the bishop's graph on the $n \times m$
+board has as vertices the cells $(i, j)$ with $0 \le i < n$ and $0 \le j < m$, and two distinct
+cells $(i, j)$ and $(i', j')$ are adjacent when they lie on a common diagonal, that is, when
+$|i - i'| = |j - j'|$.
 
 ## Depends on
 

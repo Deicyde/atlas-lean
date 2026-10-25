@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.Matrix.HasPositiveMinors.entry_pos
 ---
 
-# Entry pos
+# Entries of a matrix with positive minors are positive
 
-Every entry of a matrix with positive minors is positive (its `1 × 1` minors).
+**Entries of a matrix with positive minors are positive.** Let $M$ be a real matrix whose rows
+and columns are indexed by linearly ordered sets $R$ and $C$. If $M$ has positive minors, then
+$M_{ij} > 0$ for all $i \in R$ and $j \in C$; these entries are the $1 \times 1$ minors of $M$.
 
 ## Depends on
 
-- [Has Positive Minors](has-positive-minors.md)
+- [Matrices with positive minors](has-positive-minors.md)
 
 ## Sources
 

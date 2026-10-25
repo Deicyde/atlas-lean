@@ -7,10 +7,11 @@ proof: formalized
 lean: MathlibExt.GroupTheory.SchurZassenhausWanted.schur_zassenhaus_conjugate_complements
 ---
 
-# Schur Zassenhaus
+# Schur–Zassenhaus theorem: conjugacy of complements
 
-Any two complements of a normal Hall subgroup `N` of a finite group `G` are conjugate by an element
-of `N` when `N` is solvable.
+**Schur–Zassenhaus theorem: conjugacy of complements.** Let $G$ be a finite group and $N$ a normal
+subgroup of $G$ whose order is coprime to its index, and suppose $N$ is solvable. If $K_1$ and
+$K_2$ are complements of $N$ in $G$, then there is an element $g \in N$ with $g K_1 g^{-1} = K_2$.
 
 ## Depends on
 

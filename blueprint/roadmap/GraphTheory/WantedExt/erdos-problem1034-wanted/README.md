@@ -5,10 +5,10 @@ navigation: module
 
 # Erdos Problem1034
 
-- [Joined To Two](joined-to-two.md)
-- [Conjecture](conjecture.md)
-- [Disproved Form](disproved-form.md)
-- [Book Lower Bound](book-lower-bound.md)
-- [Ma Tang Upper Bound](ma-tang-upper-bound.md)
-- [K4 Free Upper Bound](k4-free-upper-bound.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Vertices joined to two vertices of a set](joined-to-two.md)
+- [Erdős–Faudree triangle conjecture](conjecture.md)
+- [Negation of the Erdős–Faudree triangle conjecture](disproved-form.md)
+- [Book lower bound for Erdős Problem 1034](book-lower-bound.md)
+- [Ma–Tang upper bound for Erdős Problem 1034](ma-tang-upper-bound.md)
+- [$K_4$-free upper bound for Erdős Problem 1034](k4-free-upper-bound.md)
+- [The Erdős–Faudree triangle conjecture is false](conjecture-refuted.md)

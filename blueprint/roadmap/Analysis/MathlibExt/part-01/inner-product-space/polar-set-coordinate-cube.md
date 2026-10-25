@@ -15,12 +15,12 @@ $\{y \in \mathbb{R}^n : \sum_i |y_i| \le 1\}$.
 
 ## Depends on
 
-- [Coordinate Cube](../../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube.md)
+- [Coordinate cube](../../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube.md)
 - [Polar of a set](polar-set/polar-set.md)
 
 ## Proof depends on
 
-- [Coordinate Cube eq abs Set](../../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube-eq-abs-set.md)
+- [The coordinate cube as an absolute-value box](../../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube-eq-abs-set.md)
 
 ## Sources
 

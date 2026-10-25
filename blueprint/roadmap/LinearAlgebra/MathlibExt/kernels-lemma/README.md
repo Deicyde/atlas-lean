@@ -5,7 +5,7 @@ navigation: module
 
 # Kernels Lemma
 
-- [I Sup ker aeval eq ker aeval prod of pairwise is Coprime](i-sup-ker-aeval-eq-ker-aeval-prod-of-pai.md)
-- [Sup Indep ker aeval of pairwise is Coprime](sup-indep-ker-aeval-of-pairwise-is-copri.md)
-- [I Sup Indep ker aeval and i Sup eq of pairwise is Coprime](i-sup-indep-ker-aeval-and-i-sup-eq-of-pa.md)
-- [Kernels lemma pairwise is Coprime](kernels-lemma-pairwise-is-coprime.md)
+- [Kernel of a product of pairwise coprime polynomials](i-sup-ker-aeval-eq-ker-aeval-prod-of-pai.md)
+- [Kernels of pairwise coprime polynomials are independent over a finite set](sup-indep-ker-aeval-of-pairwise-is-copri.md)
+- [Independence and sum of kernels of pairwise coprime polynomials](i-sup-indep-ker-aeval-and-i-sup-eq-of-pa.md)
+- [Kernels lemma](kernels-lemma-pairwise-is-coprime.md)

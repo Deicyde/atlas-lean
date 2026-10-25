@@ -5,5 +5,5 @@ navigation: module
 
 # Finite Abelian Dual
 
-- [Finite abelian dual iso](finite-abelian-dual-iso.md)
-- [Dual prod](dual-prod.md)
+- [A finite abelian group is isomorphic to its dual group](finite-abelian-dual-iso.md)
+- [Characters of a product of abelian groups](dual-prod.md)

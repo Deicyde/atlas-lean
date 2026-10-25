@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.princessRoses_four_piles_equiv_add_three_largest
 ---
 
-# Princess Roses four piles equiv add three largest
+# Adding to the three largest piles of four-pile P&R
 
-Four-pile P&R: adding `n` objects to each of the three largest piles of
-`a ≥ b ≥ c ≥ d` does not change the Sprague–Grundy value (stated as equivalence of the two
-games, which is equality of Sprague–Grundy values).
+**Adding to the three largest piles of four-pile P&R.** For natural numbers
+$a \ge b \ge c \ge d$ and every natural number $n$, the Princess and the Roses positions
+$(a, b, c, d)$ and $(a + n, b + n, c + n, d)$ are equivalent; that is, they have the same
+Sprague–Grundy value.
 
 ## Depends on
 
-- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
-- [Princess Roses](princess-roses.md)
+- [Equivalence of impartial games](../../MathlibExt/sprague-grundy/equiv.md)
+- [The Princess and the Roses game](princess-roses.md)
 
 ## Sources
 

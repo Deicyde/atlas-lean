@@ -7,19 +7,20 @@ proof: formalized
 lean: Group.Generators.hasPolynomialGrowth_of_finite
 ---
 
-# Has Polynomial Growth of finite
+# Finite groups have polynomial growth
 
-Every generating family of a finite group has polynomial growth: the growth function is bounded
-by the (constant) order of the group, i.e. by a polynomial of degree `0`.
+**Finite groups have polynomial growth.** Every generating family of a finite group has
+polynomial growth: its growth function is bounded by the order of the group, a polynomial of
+degree $0$.
 
 ## Depends on
 
-- [Has Polynomial Growth](has-polynomial-growth.md)
+- [Polynomial growth](has-polynomial-growth.md)
 
 ## Proof depends on
 
-- [Growth](growth.md)
-- [Growth le card](growth-le-card.md)
+- [Growth function of a generating family](growth.md)
+- [The growth function is bounded by the order of the group](growth-le-card.md)
 
 ## Sources
 

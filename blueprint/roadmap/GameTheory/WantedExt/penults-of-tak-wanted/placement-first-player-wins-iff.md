@@ -6,21 +6,25 @@ proof: formalized
 lean: MetaMathlibExt.placementFirstPlayerWins_iff
 ---
 
-# Placement First Player Wins iff
+# Normal-play recursion for placement games
 
-The defining recursion of normal play.
+**Normal-play recursion for placement games.** Let $\alpha$ be a finite set of cells and $E$ a
+predicate on subsets of $\alpha$ saying when play has ended. In the placement game on $\alpha$
+with end predicate $E$, the player to move from a position $S \subseteq \alpha$ wins if and only
+if $E(S)$ fails and there is a cell $c \notin S$ such that the player to move from $S \cup \{c\}$
+does not win.
 
 ## Depends on
 
-- [Placement First Player Wins](placement-first-player-wins.md)
+- [First-player win in a placement game](placement-first-player-wins.md)
 
 ## Proof depends on
 
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
-- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
-- [Is P iff](../../MathlibExt/sprague-grundy/is-p-iff.md)
-- [Mem placement Game moves](mem-placement-game-moves.md)
-- [Placement Game](placement-game.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [P-positions](../../MathlibExt/sprague-grundy/is-p.md)
+- [Recursive characterization of P-positions](../../MathlibExt/sprague-grundy/is-p-iff.md)
+- [Moves of a placement game](mem-placement-game-moves.md)
+- [The placement game](placement-game.md)
 
 ## Sources
 

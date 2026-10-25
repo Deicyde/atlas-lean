@@ -5,10 +5,10 @@ navigation: module
 
 # Permutation Polynomial
 
-- [Is Permutation Polynomial](is-permutation-polynomial.md)
-- [Is KComplete](is-kcomplete.md)
-- [Is KComplete iff](is-kcomplete-iff.md)
-- [Is KComplete mono](is-kcomplete-mono.md)
-- [Is KComplete zero](is-kcomplete-zero.md)
-- [Is KComplete succ iff](is-kcomplete-succ-iff.md)
-- [Is KComplete self](is-kcomplete-self.md)
+- [Permutation polynomial over a finite field](is-permutation-polynomial.md)
+- [Polynomial complete to level $k$](is-kcomplete.md)
+- [Unfolded form of $k$-completeness](is-kcomplete-iff.md)
+- [Completeness at a lower level](is-kcomplete-mono.md)
+- [Completeness at level zero](is-kcomplete-zero.md)
+- [Completeness at the next level](is-kcomplete-succ-iff.md)
+- [A $k$-complete polynomial is a permutation polynomial](is-kcomplete-self.md)

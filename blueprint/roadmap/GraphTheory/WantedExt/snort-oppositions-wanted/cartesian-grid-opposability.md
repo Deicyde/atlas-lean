@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.cartesianGrid_opposability
 ---
 
-# Cartesian Grid opposability
+# Opposability of Cartesian grids
 
-For `k ≥ 1` and all `nᵢ ≥ 1`, the Cartesian grid `□_{i=1}^k P_{nᵢ}` is almost
-opposable iff at most one `nᵢ` is even, and otherwise it is opposable.
+**Opposability of Cartesian grids.** Let $k \ge 1$ and $n_1, \dots, n_k \ge 1$, and let
+$G = P_{n_1} \square \cdots \square P_{n_k}$ be the $k$-dimensional Cartesian grid, the Cartesian
+product of the paths $P_{n_i}$ on $n_i$ vertices. Then $G$ is almost opposable if and only if at
+most one of $n_1, \dots, n_k$ is even, and $G$ is opposable if more than one of them is even.
 
 ## Depends on
 
-- [Is Almost Opposable](is-almost-opposable.md)
-- [Is Opposable](is-opposable.md)
-- [Cartesian Grid](cartesian-grid.md)
+- [Almost opposable graph](is-almost-opposable.md)
+- [Opposable graphs](is-opposable.md)
+- [Cartesian grid](cartesian-grid.md)
 
 ## Sources
 

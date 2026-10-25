@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dual Localization](../../../../LinearAlgebra/MathlibExt/bilinear-form/dual-submodule-span-localization.md)
+- [Dual submodules commute with localization](../../../../LinearAlgebra/MathlibExt/bilinear-form/dual-submodule-span-localization.md)
 
 ## Sources
 

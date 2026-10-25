@@ -6,16 +6,16 @@ statement: formalized
 lean: MetaMathlibExt.mckay_irr_equicardinal
 ---
 
-# Mckay irr equicardinal
+# McKay conjecture (Cabanes–Späth theorem)
 
-The **McKay conjecture**, now the theorem of Cabanes and Späth: for every
-finite group `G`, every prime `p`, and every Sylow `p`-subgroup `P` of `G`, the
-irreducible complex characters of `G` of degree not divisible by `p` are
-equinumerous with those of the normalizer of `P` in `G`.
+**McKay conjecture (Cabanes–Späth theorem).** For every finite group $G$, every prime $p$ and
+every Sylow $p$-subgroup $P$ of $G$, with normalizer $N_G(P)$ in $G$, the sets
+$\mathrm{Irr}_{p'}(G)$ and $\mathrm{Irr}_{p'}(N_G(P))$ of irreducible complex characters of
+degree not divisible by $p$ have the same cardinality.
 
 ## Depends on
 
-- [P Prime Characters](p-prime-characters.md)
+- [Irreducible characters of $p'$-degree](p-prime-characters.md)
 
 ## Sources
 

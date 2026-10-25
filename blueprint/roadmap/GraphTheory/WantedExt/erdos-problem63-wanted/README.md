@@ -5,5 +5,5 @@ navigation: module
 
 # Erdos Problem63
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Statement of Erdős Problem 63](conjecture.md)
+- [Erdős Problem 63 (Liu–Montgomery)](conjecture-holds.md)

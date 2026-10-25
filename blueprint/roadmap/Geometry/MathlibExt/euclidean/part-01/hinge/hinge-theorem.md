@@ -9,13 +9,15 @@ lean: MetaMathlibExt.hinge_theorem
 
 # Hinge theorem
 
-Hinge theorem: two nondegenerate (noncollinear) triangles with two pairs of
-equal sides (`AB = DE`, `AC = DF`); if the included angle at `A` exceeds the
-included angle at `D` (compared via inner products), then the opposite side
-`BC` exceeds `EF`.
+**Hinge theorem.** Let $A, B, C$ and $D, E, F$ be two triples of pairwise distinct points of
+the Euclidean plane $\mathbb{R}^2$ forming nondegenerate triangles: $C - A$ is not a real
+multiple of $B - A$, and $F - D$ is not a real multiple of $E - D$. Write $XY$ for the distance
+between points $X$ and $Y$. If $AB = DE$, $AC = DF$ and
+$\langle B - A, C - A \rangle < \langle E - D, F - D \rangle$, that is, the angle at $A$ is
+larger than the angle at $D$, then $EF < BC$.
 
-Proof: Mathlib's vector law of cosines, `norm_sub_sq_real`, compares the squared opposite-side
-lengths, following Euclid's *Elements*, Book I, Proposition 24.
+Proof: The vector law of cosines compares the squared opposite sides, following Euclid's
+*Elements*, Book I, Proposition 24.
 
 ## Depends on
 
@@ -23,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hinge theorem of inner lt](hinge-theorem-of-inner-lt.md)
+- [Hinge theorem in inner product spaces](hinge-theorem-of-inner-lt.md)
 
 ## Sources
 

@@ -7,17 +7,20 @@ proof: formalized
 lean: LatticePointEnumerator.finite_latticePointSetPos
 ---
 
-# Finite lattice Point Set Pos
+# Finiteness of the lattice points in a positive dilate
 
-Source-domain finiteness: for bounded `P` and positive `t`.
+**Finiteness of the lattice points in a positive dilate.** For a natural number $d$, a
+bounded set $P \subseteq \mathbb{R}^d$ and a real number $t > 0$, the set $(tP) \cap \mathbb{Z}^d$
+of points of the integer lattice $\mathbb{Z}^d$ in the dilate $tP = \{tp : p \in P\}$ is
+finite.
 
 ## Depends on
 
-- [Lattice Point Set Pos](lattice-point-set-pos.md)
+- [Lattice points in a positive dilate](lattice-point-set-pos.md)
 
 ## Proof depends on
 
-- [Finite lattice Point Set](finite-lattice-point-set.md)
+- [Finiteness of the lattice points in a dilate](finite-lattice-point-set.md)
 
 ## Sources
 

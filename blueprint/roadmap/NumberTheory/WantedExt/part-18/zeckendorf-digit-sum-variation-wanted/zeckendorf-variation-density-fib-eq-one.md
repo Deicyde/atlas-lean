@@ -13,7 +13,7 @@ lean: MetaMathlibExt.zeckendorf_variation_density_fib_eq_one
 
 ## Depends on
 
-- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.dominationPolynomial_cylinder_eq_sum_almostDominatingPolynomial
 ---
 
-# Domination Polynomial cylinder eq sum almost Dominating Polynomial
+# Cylinder domination polynomial as a sum of almost dominating polynomials
 
-Mertens' Lemma 4, cylinder case: the domination polynomial of the `m × (n + 1)` cylinder is
-the sum of `G^σ` over the cyclic signatures `σ` with no uncovered vertex.
+**Cylinder domination polynomial as a sum of almost dominating polynomials.** For all
+natural numbers $m$ and $n$, let $C_m$ be the cycle graph on the vertices $0, \dots, m - 1$, in
+which distinct $i$ and $j$ are adjacent when $i - j \equiv \pm 1 \pmod m$, and let $P_{n+1}$ be
+the path on the vertices $0, \dots, n$. Then the domination polynomial of the cylinder
+$C_m \mathbin{\square} P_{n+1}$ equals $\sum_\sigma G^\sigma(z)$, the sum running over the
+signatures $\sigma$ of the row graph $C_m$ with no uncovered vertex, where $G^\sigma(z)$ is the
+almost dominating polynomial of $C_m$ with $n + 1$ rows and last-row state $\sigma$.
 
 ## Depends on
 
-- [Domination Signature](domination-signature.md)
+- [Signatures of a row graph](domination-signature.md)
 - [Domination State](domination-state.md)
-- [Is Domination Signature](is-domination-signature.md)
-- [Almost Dominating Polynomial](almost-dominating-polynomial.md)
-- [Domination Polynomial](domination-polynomial.md)
+- [Domination signature](is-domination-signature.md)
+- [Almost dominating polynomial](almost-dominating-polynomial.md)
+- [Domination polynomial](domination-polynomial.md)
 
 ## Sources
 

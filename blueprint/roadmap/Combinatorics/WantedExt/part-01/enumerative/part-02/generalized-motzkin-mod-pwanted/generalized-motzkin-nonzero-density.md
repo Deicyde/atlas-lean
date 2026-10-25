@@ -29,7 +29,7 @@ The hypothesis $a \not\equiv 0 \pmod p$ is implicit in the source, which cancels
 
 - [Generalized central trinomial coefficients](central-trinomial.md)
 - [Generalized Motzkin numbers](generalized-motzkin.md)
-- [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

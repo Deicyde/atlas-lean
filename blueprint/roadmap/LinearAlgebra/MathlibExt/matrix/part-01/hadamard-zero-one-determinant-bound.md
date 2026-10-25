@@ -7,20 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.hadamard_zero_one_determinant_bound
 ---
 
-# Hadamard Zero One Determinant Bound
+# Hadamard bound for zero-one determinants
 
-Hadamard-derived determinant bound for arbitrary zero-one real matrices:
-for every `{0,1}` matrix `B` of order `n`, `|det B| ≤ 2^(-n) (n+1)^((n+1)/2)`.
+**Hadamard bound for zero-one determinants.** Let $n \ge 1$ and let $B$ be an $n \times n$
+real matrix each of whose entries is $0$ or $1$. Then
 
-The source derives this by bordering and signing `2B` to obtain an
-`(n+1) × (n+1)` sign matrix whose determinant is `2^n det B`, then applying
-Hadamard's determinant inequality.
+$$|\det B| \le 2^{-n} (n+1)^{(n+1)/2}.$$
 
-This is the sharper zero-one corollary, distinct from the already-proved
-general row-norm theorem
-`MathlibExt.LinearAlgebra.Matrix.HadamardDeterminant.hadamard_determinant_inequality`
-and from the Hadamard existence conjecture.
-Proves `Wanted` entry `hadamard_zero_one_determinant_bound`.
+The bound comes from bordering and signing $2B$ to obtain an $(n+1) \times (n+1)$ matrix with
+entries $\pm 1$ whose determinant is $2^n \det B$, and applying Hadamard's determinant inequality.
 
 ## Depends on
 

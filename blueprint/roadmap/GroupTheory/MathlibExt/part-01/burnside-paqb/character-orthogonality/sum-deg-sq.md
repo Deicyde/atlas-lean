@@ -7,22 +7,24 @@ proof: formalized
 lean: BurnsidePaqb.sum_deg_sq
 ---
 
-# Sum deg sq
+# Sum of squared degrees
 
-The sum of squared degrees equals the group order.
+**Sum of squared degrees.** Let $G$ be a finite group and, for each isomorphism class $c$ of
+simple finite-dimensional complex representations of $G$, let $\chi_c$ be its character. Then
+$\sum_c \chi_c(1)^2 = |G|$, where the sum runs over all such classes $c$.
 
 ## Depends on
 
-- [Irr](irr.md)
-- [Char Fun](char-fun.md)
-- [Card Bound](card-bound.md)
+- [Isomorphism classes of simple representations](irr.md)
+- [Character of an isomorphism class](char-fun.md)
+- [Bound on the number of irreducible representations](card-bound.md)
 
 ## Proof depends on
 
-- [Is Class Fun](is-class-fun.md)
-- [Classfun expand](classfun-expand.md)
-- [Delta One](delta-one.md)
-- [Delta One inner](delta-one-inner.md)
+- [Class function](is-class-fun.md)
+- [Expansion of class functions in irreducible characters](classfun-expand.md)
+- [Delta function at the identity](delta-one.md)
+- [Pairing of the identity indicator with a character](delta-one-inner.md)
 
 ## Sources
 

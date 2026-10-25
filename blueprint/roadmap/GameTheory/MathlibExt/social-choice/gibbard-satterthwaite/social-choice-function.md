@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.SocialChoiceFunction
 ---
 
-# Social Choice Function
+# Social choice functions
 
-Resolute social choice function: profile ↦ chosen alternative.
+**Social choice functions.** For a type $A$ of alternatives and a type $V$ of voters, a
+resolute social choice function is a function $F$ sending each profile $p$ (an assignment of a
+strict total order on $A$ to each voter in $V$) to a single chosen alternative $F(p) \in A$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Profile](profile.md)
+- [Preference profiles for the Gibbard–Satterthwaite theorem](profile.md)
 
 ## Sources
 

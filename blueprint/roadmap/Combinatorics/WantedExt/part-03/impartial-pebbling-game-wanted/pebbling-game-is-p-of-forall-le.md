@@ -17,13 +17,13 @@ Such a position is terminating: no move is possible from it.
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Proof depends on
 
-- [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
-- [Is P iff](../../../../GameTheory/MathlibExt/sprague-grundy/is-p-iff.md)
+- [Impartial game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
+- [Recursive characterization of P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p-iff.md)
 - [Successors of a pebbling position](mem-pebbling-moves.md)
 - [Moves of the $(k+1:k)$-pebbling game](pebbling-moves.md)
 - [A $(k+1:k)$-pebbling move](pebbling-step.md)

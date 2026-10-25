@@ -7,9 +7,9 @@ proof: formalized
 lean: MetaMathlibExt.erdos_anning
 ---
 
-# Erdos Anning
+# Erdős–Anning theorem
 
-Erdős–Anning theorem: an infinite set of points in the plane with pairwise
+**Erdős–Anning theorem.** An infinite set of points in the plane with pairwise
 integer distances is collinear.
 
 ## Depends on

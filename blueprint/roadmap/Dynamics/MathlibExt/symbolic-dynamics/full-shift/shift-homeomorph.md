@@ -6,17 +6,20 @@ statement: formalized
 lean: SymbolicDynamics.FullShift.shiftHomeomorph
 ---
 
-# Shift Homeomorph
+# The unit shift as a homeomorphism
 
-The unit left-translation of the two-sided full shift, bundled as a homeomorphism.
+**The unit shift as a homeomorphism.** The unit shift $\sigma$ of the full shift on $N$
+symbols, given by $(\sigma x)_i = x_{i+1}$, is a homeomorphism of
+$\{0, \dots, N-1\}^{\mathbb{Z}}$ onto itself, with inverse given by
+$(\sigma^{-1} x)_i = x_{i-1}$.
 
 ## Depends on
 
-- [Full Shift Space](full-shift-space.md)
+- [Full shift space](full-shift-space.md)
 
 ## Proof depends on
 
-- [Unit Shift](unit-shift.md)
+- [Unit shift](unit-shift.md)
 
 ## Sources
 

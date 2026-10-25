@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.Geometry.SteinerRatio.edgeLength
 ---
 
-# Edge Length
+# Length of an edge
 
-Euclidean length of an unordered pair of points.
+**Length of an edge.** For points $x$ and $y$ of the Euclidean plane, the length of the
+unordered pair $\{x, y\}$ is the Euclidean distance between $x$ and $y$.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane of the Steiner ratio problem](plane.md)
 
 ## Sources
 

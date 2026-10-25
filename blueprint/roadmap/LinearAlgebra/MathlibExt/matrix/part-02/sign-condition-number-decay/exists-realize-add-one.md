@@ -7,19 +7,21 @@ proof: formalized
 lean: Matrix.SignConditionNumber.IsSymmetricConference.exists_realize_add_one
 ---
 
-# Exists realize add one
+# Adding the identity to a symmetric conference matrix gives a sign matrix
 
-Adding the identity to an actual conference matrix gives an actual sign matrix.
+**Adding the identity to a symmetric conference matrix gives a sign matrix.** If $C$ is a real
+$n \times n$ symmetric conference matrix and $I$ is the $n \times n$ identity matrix, then there is
+a Boolean $n \times n$ matrix whose realization as a real sign matrix equals $C + I$.
 
 ## Depends on
 
-- [Is Symmetric Conference](is-symmetric-conference.md)
+- [Symmetric conference matrices](is-symmetric-conference.md)
 - [Sign Matrix](../sign-condition-number/sign-matrix.md)
-- [Realize](../sign-condition-number/realize.md)
+- [Real sign matrix of a Boolean matrix](../sign-condition-number/realize.md)
 
 ## Proof depends on
 
-- [Exists realize iff](../sign-condition-number/exists-realize-iff.md)
+- [Boolean matrices realize exactly the sign matrices](../sign-condition-number/exists-realize-iff.md)
 
 ## Sources
 

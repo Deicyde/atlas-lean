@@ -7,14 +7,15 @@ proof: formalized
 lean: Group.Generators.growth_pos
 ---
 
-# Growth pos
+# The growth function of a finite group is positive
 
-Over a finite group every ball is nonempty (it contains the identity), so the growth function
-is positive.
+**The growth function of a finite group is positive.** For every generating family $P$ of a
+finite group $G$ and every natural number $n$, the growth function of $P$ is positive at $n$: the
+ball of radius $n$ contains the identity.
 
 ## Depends on
 
-- [Growth](growth.md)
+- [Growth function of a generating family](growth.md)
 
 ## Sources
 

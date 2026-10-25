@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.HippocratesLunesWanted.Geometry.HippocratesLunes.A
 ---
 
-# A
+# Right-angle vertex of the lune triangle
 
-The right-angle vertex.
+**Right-angle vertex of the lune triangle.** The point $A = (0, 0)$, the origin of the
+coordinate plane; it is the right-angle vertex of the triangle in Hippocrates' theorem on
+lunes.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Coordinate plane for Hippocrates' lunes](plane.md)
 
 ## Sources
 

@@ -7,15 +7,17 @@ proof: formalized
 lean: MathlibExt.GroupTheory.AbelianRepresentationWanted.abelian_simple_char_is_hom
 ---
 
-# Abelian simple char is hom
+# Characters of simple representations of a finite abelian group are homomorphisms
 
-The character of a simple complex representation of a finite abelian group is
-a monoid homomorphism.
+**Characters of simple representations of a finite abelian group are homomorphisms.** Let $G$
+be a finite abelian group and let $V$ be a simple finite-dimensional complex representation of
+$G$. Then there is a monoid homomorphism $\varphi : G \to \mathbb{C}$ such that the character of
+$V$ equals $\varphi$.
 
-Proof: Categorical simplicity gives irreducibility, then Mathlib's commutative irreducible
-representation theorem makes `V` one-dimensional (the corollary in Wikipedia, “Schur's lemma”,
-that complex irreducible representations of abelian groups are one-dimensional). Rank-one
-endomorphisms are scalars, and their traces give the multiplicative character.
+Proof: Simplicity of $V$ makes it irreducible, and complex irreducible representations of an
+abelian group are one-dimensional (the corollary in Wikipedia, “Schur's lemma”), so $V$ is
+one-dimensional. Endomorphisms of a one-dimensional space are scalars, and their traces give the
+multiplicative character.
 
 ## Depends on
 

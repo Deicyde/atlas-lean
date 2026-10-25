@@ -14,7 +14,7 @@ quotients `9` and `4`.
 
 ## Depends on
 
-- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
+- [Digit reversal](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources
 

@@ -7,12 +7,17 @@ proof: formalized
 lean: LinearMap.BilinForm.dualSubmodule_flip_dualSubmodule_of_isLattice
 ---
 
-# Dual Submodule flip dual Submodule of is Lattice
+# Double dual of a reflexive lattice
 
-Double dual of a reflexive lattice, with the duals taken against `B` and `B.flip`.
+**Double dual of a reflexive lattice.** Let $A$ be an integral domain with fraction field $K$,
+let $V$ be a finite-dimensional $K$-vector space, viewed as an $A$-module through $A \subseteq K$,
+and let $B$ be a nondegenerate bilinear form on $V$. Let $M$ be an $A$-lattice in $V$, that is, a
+finitely generated $A$-submodule that spans $V$ over $K$, and suppose that $M$ is reflexive as an
+$A$-module. Let $M^\vee = \{x \in V : B(x, y) \in A \text{ for all } y \in M\}$. Then
+$\{x \in V : B(y, x) \in A \text{ for all } y \in M^\vee\} = M$.
 
-This is the lattice analogue of `BilinForm.dualSubmodule_flip_dualSubmodule_of_basis`:
-no basis is needed when the lattice `M` is reflexive as an `A`-module.
+This is the lattice analogue of the corresponding statement for the $A$-span of a $K$-basis of
+$V$: no basis is needed when $M$ is reflexive as an $A$-module.
 
 ## Depends on
 
@@ -20,8 +25,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dual Submodule Linear Equiv](../dual-lattice/dual-submodule-linear-equiv.md)
-- [Dual Submodule span eq top](../dual-lattice/dual-submodule-span-eq-top.md)
+- [The dual submodule is the dual module](../dual-lattice/dual-submodule-linear-equiv.md)
+- [The dual of a finitely generated submodule spans](../dual-lattice/dual-submodule-span-eq-top.md)
 
 ## Sources
 

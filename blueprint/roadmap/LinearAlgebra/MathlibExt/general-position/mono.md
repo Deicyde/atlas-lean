@@ -7,13 +7,15 @@ proof: formalized
 lean: IsGeneralPosition.mono
 ---
 
-# Mono
+# General position in affine space is monotone in the dimension
 
-General position through a larger dimension implies general position through a smaller one.
+**General position in affine space is monotone in the dimension.** Let $d \le e$ be natural
+numbers. If a family of points of an affine space over a division ring $k$ is in general position
+through dimension $e$, then it is in general position through dimension $d$.
 
 ## Depends on
 
-- [Is General Position](is-general-position.md)
+- [General position of affine points](is-general-position.md)
 
 ## Sources
 

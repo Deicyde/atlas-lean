@@ -6,9 +6,12 @@ statement: formalized
 lean: FalconerDistanceSetWanted.guthIosevichOuWang2018PlanarSufficiency
 ---
 
-# Guth Iosevich Ou Wang2018 Planar Sufficiency
+# Statement of the Guth–Iosevich–Ou–Wang planar distance set theorem
 
-The strict compact planar `5/4` sufficient threshold.
+**Statement of the Guth–Iosevich–Ou–Wang planar distance set theorem.** This is the
+proposition that $5/4$ has the planar threshold property: every compact set
+$E \subseteq \mathbb{R}^2$ whose Hausdorff dimension is strictly greater than $5/4$ has a
+distance set $\{\|x - y\| : x, y \in E\}$ of positive one-dimensional Lebesgue measure.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Planar Threshold Property](../../../MathlibExt/falconer-distance-set/planar-threshold-property.md)
+- [Planar Falconer threshold property](../../../MathlibExt/falconer-distance-set/planar-threshold-property.md)
 
 ## Sources
 

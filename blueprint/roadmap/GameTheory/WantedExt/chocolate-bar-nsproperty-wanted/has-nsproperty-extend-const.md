@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.hasNSProperty_extend_const
 ---
 
-# Has NSProperty extend const
+# Constant extension preserves the NS property
 
-A function that is monotone and satisfies the NS condition on `[0, z]` extends to a
-function with the NS property by the constant value `h z` beyond `z`.
+**Constant extension preserves the NS property.** Let $z \in \mathbb{N}$ and let
+$h : \mathbb{N} \to \mathbb{N}$ satisfy $h(a) \le h(b)$ whenever $a \le b \le z$, and
+$\lfloor h(a) / 2^{i-1} \rfloor = \lfloor h(b) / 2^{i-1} \rfloor$ whenever $a, b \le z$,
+$i \ge 1$ and $\lfloor a / 2^i \rfloor = \lfloor b / 2^i \rfloor$. Then the function sending
+$x$ to $h(x)$ for $x \le z$ and to $h(z)$ for $x > z$ has the NS property.
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
+- [NS property](has-nsproperty.md)
 
 ## Sources
 

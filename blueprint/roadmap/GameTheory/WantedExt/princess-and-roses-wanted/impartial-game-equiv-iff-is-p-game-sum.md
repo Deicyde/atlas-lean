@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.impartialGame_equiv_iff_isP_gameSum
 ---
 
-# Impartial Game equiv iff is P game Sum
+# Equivalence of impartial games via their sum
 
-Two finite impartial games are equivalent if and only if their sum is a P-position.
+**Equivalence of impartial games via their sum.** Two finite impartial games $G$ and $H$ are
+equivalent if and only if their sum $G + H$ is a P-position, that is, the position of $G + H$ in
+which both $G$ and $H$ are at their starting positions is a P-position.
 
 ## Depends on
 
-- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
-- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
-- [Game Sum](../../MathlibExt/sprague-grundy/game-sum.md)
+- [Equivalence of impartial games](../../MathlibExt/sprague-grundy/equiv.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [P-positions](../../MathlibExt/sprague-grundy/is-p.md)
+- [Sum of impartial games](../../MathlibExt/sprague-grundy/game-sum.md)
 
 ## Sources
 

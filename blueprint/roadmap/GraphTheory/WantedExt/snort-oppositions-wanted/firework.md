@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.firework
 ---
 
-# Firework
+# Firework of a graph
 
-The `n`-firework of `G` at `(u, v)`: `n` new leaves attached to `u`
-(`inr (i, false)`) and `n` to `v` (`inr (i, true)`).
+**Firework of a graph.** For a graph $G$, vertices $u$ and $v$ of $G$ and a natural number $n$,
+the $n$-firework of $G$ at $(u, v)$ is the graph obtained from $G$ by adding $2n$ new vertices,
+$n$ of which are adjacent only to $u$ and the other $n$ adjacent only to $v$.
 
 ## Depends on
 

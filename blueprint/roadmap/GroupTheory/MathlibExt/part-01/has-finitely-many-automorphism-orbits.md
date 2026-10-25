@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.HasFinitelyManyAutomorphismOrbits
 ---
 
-# Automorphism Orbits
+# Groups with finitely many automorphism orbits
 
-The full automorphism group has finitely many orbits on the elements of the group.
+**Groups with finitely many automorphism orbits.** A group $G$ has finitely many automorphism
+orbits if the action of its automorphism group $\operatorname{Aut}(G)$ on $G$ has only finitely
+many orbits.
 
 ## Depends on
 

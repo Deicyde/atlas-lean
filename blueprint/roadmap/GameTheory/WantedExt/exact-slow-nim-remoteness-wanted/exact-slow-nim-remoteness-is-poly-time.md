@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimRemoteness_isPolyTime
 ---
 
-# Theorem 3
+# Theorem 3 (Smith's remoteness of exact slow k-NIM is polynomial-time computable)
 
-**Theorem 3.** Smith's remoteness `R` of `NIM(k + 1, k)` is computable in polynomial time
-even when `k` is part of the input and integers are given in binary: the map from the list of
-pile sizes to `R` is `IsPolyTime` for the binary encoding of `ℕ` and the repository's
-self-delimiting list encoding.
+**Theorem 3 (Smith's remoteness of exact slow k-NIM is polynomial-time computable).** The map
+sending a list $(x_0, \dots, x_{n-1})$ of natural numbers of length $n$ to Smith's remoteness of
+the position $(x_0, \dots, x_{n-1})$ of Slow$A$-Nim on $n$ stacks with $A = \{n - 1\}$ (where
+$0 - 1 = 0$) is polynomial-time computable. Here natural numbers, in the input and the output,
+are encoded in binary, and a list is encoded as the concatenation of the self-delimiting forms
+of the encodings of its entries. For $n = k + 1$ this is the game $\mathrm{NIM}(k + 1, k)$, so $k$
+is part of the input.
 
 ## Depends on
 
@@ -23,8 +26,8 @@ self-delimiting list encoding.
 - [Parsing a list of booleans into self-delimiting blocks](../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
 - [Bounded parsing of self-delimiting blocks](../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
 - [Polynomial-time computable functions](../../../Computability/MathlibExt/complexity/is-poly-time.md)
-- [Exact Slow Nim Binary Nat Encoding](exact-slow-nim-binary-nat-encoding.md)
-- [Exact Slow Nim Remoteness Of List](exact-slow-nim-remoteness-of-list.md)
+- [Binary encoding of natural numbers](exact-slow-nim-binary-nat-encoding.md)
+- [Remoteness of exact slow k-NIM from a list of piles](exact-slow-nim-remoteness-of-list.md)
 
 ## Sources
 

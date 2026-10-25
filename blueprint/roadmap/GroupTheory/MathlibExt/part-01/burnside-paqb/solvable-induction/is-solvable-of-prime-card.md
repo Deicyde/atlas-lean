@@ -7,9 +7,10 @@ proof: formalized
 lean: BurnsidePaqb.isSolvable_of_prime_card
 ---
 
-# Is Solvable of prime card
+# Groups of prime order are solvable
 
-A group of prime order is solvable.
+**Groups of prime order are solvable.** Every finite group whose order is a prime number is
+solvable.
 
 ## Depends on
 

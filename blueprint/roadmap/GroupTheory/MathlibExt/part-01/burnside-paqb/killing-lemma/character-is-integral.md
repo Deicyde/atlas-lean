@@ -7,9 +7,13 @@ proof: formalized
 lean: BurnsidePaqb.character_isIntegral
 ---
 
-# Character is Integral
+# Character values are algebraic integers
 
-Character values are algebraic integers (sums of roots of unity).
+**Character values are algebraic integers.** Let $\rho$ be a representation of a finite group
+$G$ on a finite-dimensional complex vector space, with character $\chi$. Then $\chi(g)$ is an
+algebraic integer for every $g \in G$.
+
+Each value $\chi(g)$ is a sum of roots of unity.
 
 ## Depends on
 
@@ -17,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Character eq sum roots](character-eq-sum-roots.md)
-- [Charpoly root pow order Of](charpoly-root-pow-order-of.md)
+- [Character value as the sum of characteristic roots](character-eq-sum-roots.md)
+- [Characteristic roots are killed by the order of the element](charpoly-root-pow-order-of.md)
 
 ## Sources
 

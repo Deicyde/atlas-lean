@@ -6,13 +6,15 @@ statement: formalized
 lean: ConvexCovering.prymak2023UpperBound
 ---
 
-# Prymak2023 Upper Bound
+# Prymak's bound for Hadwiger's covering problem in dimension 3
 
-The `H_3 <= 14` covering construction.
+**Prymak's bound for Hadwiger's covering problem in dimension 3.** Every convex body
+$K \subseteq \mathbb{R}^3$ is covered by $14$ translates of its interior $\operatorname{int} K$,
+repetitions allowed.
 
 ## Depends on
 
-- [Uniform Interior Translate Bound](../../../../MathlibExt/convex/covering/uniform-interior-translate-bound.md)
+- [Uniform bound for covering convex bodies by interior translates](../../../../MathlibExt/convex/covering/uniform-interior-translate-bound.md)
 
 ## Sources
 

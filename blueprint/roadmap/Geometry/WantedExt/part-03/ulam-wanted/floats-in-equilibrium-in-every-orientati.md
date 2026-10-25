@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.UlamWanted.Ulam.FloatsInEquilibriumInEveryOrientationAtLevel
 ---
 
-# Floats In Equilibrium In Every Orientation At Level
+# Floating in equilibrium in every orientation
 
-We say that `K` floats in equilibrium in every orientation at level `δ`, if it floats
-in equilibrium in direction `ξ` at level `δ`, for all `ξ ∈ S^d`.
+**Floating in equilibrium in every orientation.** A set $K \subseteq \mathbb{R}^d$ floats in
+equilibrium in every orientation at level $\delta \in \mathbb{R}$ if it floats in equilibrium in
+direction $\xi$ at level $\delta$ for every unit vector $\xi \in \mathbb{R}^d$.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Floats In Equilibrium In Direction At Level](floats-in-equilibrium-in-direction-at-le.md)
-- [S](s.md)
+- [Floating in equilibrium in a direction](floats-in-equilibrium-in-direction-at-le.md)
+- [Unit sphere](s.md)
 
 ## Sources
 

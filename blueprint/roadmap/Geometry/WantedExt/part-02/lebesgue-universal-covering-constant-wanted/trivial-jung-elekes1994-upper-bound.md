@@ -6,9 +6,13 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.trivialJungElekes1994UpperBound
 ---
 
-# Trivial Jung Elekes1994 Upper Bound
+# Jung's upper bound for Lebesgue's universal covering constant (statement)
 
-Jung's theorem gives the exact upper bound `π / 3`.
+**Jung's upper bound for Lebesgue's universal covering constant (statement).** The proposition
+that Lebesgue's universal covering constant is at most $\pi/3$.
+
+This is the bound given by Jung's theorem: a closed disk of radius $1/\sqrt{3}$, of area $\pi/3$,
+contains a translate of every planar set of diameter $1$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+- [Lebesgue universal covering constant](lebesgue-universal-covering-constant.md)
 
 ## Sources
 

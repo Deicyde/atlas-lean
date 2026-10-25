@@ -6,18 +6,20 @@ statement: formalized
 lean: MathlibExt.Geometry.SteinerRatio.steinerLength
 ---
 
-# Steiner Length
+# Steiner minimal tree length
 
-Steiner minimal tree length, totalized by `sInf`. The Steiner length
-set is bounded below by `0`.
+**Steiner minimal tree length.** For a finite set $V$ of points in the Euclidean plane, the
+Steiner length of $V$ is the infimum of the total lengths of the trees whose vertex set is a
+finite set of points of the plane containing $V$. This set of lengths is nonempty and bounded
+below by $0$, so the infimum exists.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane of the Steiner ratio problem](plane.md)
 
 ## Proof depends on
 
-- [Steiner Tree Lengths](steiner-tree-lengths.md)
+- [Lengths of Steiner trees](steiner-tree-lengths.md)
 
 ## Sources
 

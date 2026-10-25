@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Databases.select_comm
 ---
 
-# Select comm
+# Selections commute
 
-Selections commute.
+**Selections commute.** For all selection conditions $c$ and $c'$ and every finite set $r$ of
+tuples, selecting by $c'$ and then by $c$ gives the same result as selecting by $c$ and then by
+$c'$: $\sigma_c(\sigma_{c'}(r)) = \sigma_{c'}(\sigma_c(r))$.
 
 ## Depends on
 
-- [Cond](cond.md)
+- [Selection conditions](cond.md)
 - [Tuple](tuple.md)
-- [Select](select.md)
+- [Selection](select.md)
 
 ## Proof depends on
 
-- [Eval](eval.md)
+- [Truth value of a selection condition](eval.md)
 
 ## Sources
 

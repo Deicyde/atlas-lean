@@ -7,19 +7,20 @@ proof: formalized
 lean: MoserConvexWormCoverConstant.nonconvexWormCoverConstant_nonneg
 ---
 
-# Nonconvex Worm Cover Constant nonneg
+# Nonnegativity of the nonconvex worm cover constant
 
-Source: Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc
-adaptation.
+**Nonnegativity of the nonconvex worm cover constant.** The nonconvex worm cover constant
+is greater than or equal to $0$.
 
 ## Depends on
 
-- [Nonconvex Worm Cover Constant](nonconvex-worm-cover-constant.md)
+- [Nonconvex worm cover constant](nonconvex-worm-cover-constant.md)
 
 ## Proof depends on
 
-- [Cover Area Infimum](cover-area-infimum.md)
+- [Infimal area of a universal cover](cover-area-infimum.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../sources/v2/MathlibExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

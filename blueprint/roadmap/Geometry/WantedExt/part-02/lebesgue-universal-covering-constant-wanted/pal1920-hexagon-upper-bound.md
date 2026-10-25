@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.pal1920HexagonUpperBound
 ---
 
-# Pal1920 Hexagon Upper Bound
+# Statement of Pál's hexagon bound
 
-Pál's regular hexagon gives the exact upper bound `√3 / 2`.
+**Statement of Pál's hexagon bound.** The proposition that the Lebesgue universal covering
+constant is at most $\sqrt{3}/2$, the bound given by Pál's regular hexagon.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+- [Lebesgue universal covering constant](lebesgue-universal-covering-constant.md)
 
 ## Sources
 

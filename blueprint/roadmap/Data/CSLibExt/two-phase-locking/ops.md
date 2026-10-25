@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Databases.ops
 ---
 
-# Ops
+# Reads and writes of a locked schedule
 
-The reads and writes of a locked schedule, in order.
+**Reads and writes of a locked schedule.** For a locked schedule $s$, the schedule of reads and
+writes of $s$: its reads and writes in order, with the lock requests and releases erased.
 
 ## Depends on
 
-- [Action](action.md)
-- [Op](../serializability/op.md)
+- [Action of a locked schedule](action.md)
+- [Operation of a schedule](../serializability/op.md)
 
 ## Proof depends on
 
-- [Lock Mode](lock-mode.md)
+- [Lock mode](lock-mode.md)
 
 ## Sources
 

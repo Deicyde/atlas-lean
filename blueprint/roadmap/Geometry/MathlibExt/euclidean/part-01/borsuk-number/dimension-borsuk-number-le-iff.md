@@ -7,20 +7,24 @@ proof: formalized
 lean: Metric.dimensionBorsukNumber_le_iff
 ---
 
-# Dimension Borsuk Number le iff
+# Upper bounds on the Borsuk number of a Euclidean space
 
-A dimensional upper bound is exactly the universal canonical smaller-diameter cover law.
+**Upper bounds on the Borsuk number of a Euclidean space.** For natural numbers $n$ and $k$,
+the Borsuk number of the Euclidean space $\mathbb{R}^n$ is at most $k$ if and only if every
+bounded subset $s$ of $\mathbb{R}^n$ with at least two points has a $k$-piece Borsuk cover,
+that is, $s$ is covered by $k$ sets, each of extended diameter strictly smaller than that of
+$s$.
 
 ## Depends on
 
-- [Has Borsuk Cover](has-borsuk-cover.md)
-- [Dimension Borsuk Number](dimension-borsuk-number.md)
+- [Borsuk covers](has-borsuk-cover.md)
+- [Borsuk number of a Euclidean space](dimension-borsuk-number.md)
 
 ## Proof depends on
 
-- [Set Borsuk Number](set-borsuk-number.md)
-- [Set Borsuk Number le iff](set-borsuk-number-le-iff.md)
-- [Set Borsuk Number le of cover](set-borsuk-number-le-of-cover.md)
+- [Borsuk number of a set](set-borsuk-number.md)
+- [Bounds on the Borsuk number of a set](set-borsuk-number-le-iff.md)
+- [A Borsuk cover bounds the Borsuk number](set-borsuk-number-le-of-cover.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ The matrix vanishes on and above its diagonal, since $N_n$ has degree at most $n
 
 ## Depends on
 
-- [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
+- [Matrices with nonnegative minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
 - [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources

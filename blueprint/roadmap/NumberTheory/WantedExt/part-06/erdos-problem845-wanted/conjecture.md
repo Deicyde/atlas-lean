@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

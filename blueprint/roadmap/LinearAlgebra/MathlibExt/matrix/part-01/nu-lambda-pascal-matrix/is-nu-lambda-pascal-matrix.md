@@ -6,18 +6,19 @@ statement: formalized
 lean: MetaMathlibExt.IsNuLambdaPascalMatrix
 ---
 
-# Is Nu Lambda Pascal Matrix
+# Nu-lambda Pascal matrix with coefficients
 
-Nu,lambda-Pascal matrix with coefficients (concept `jis_sem_48e0bb143520a73f6b828a27`,
-source statement `jis_445c3486a9ca32dba0e8a333`): zero-extended `2n × 2n`
-skew-symmetric matrix over `ℂ` given by the corner value, the last-column sum,
-and the interior recurrence. The unused binder `_hn : 0 < n` records the source
-hypothesis `n > 0` licensing the zero-based positions `2 * n - 2` and
-`2 * n - 1`.
+**Nu-lambda Pascal matrix with coefficients.** Let $N$ and $n$ be natural numbers with
+$n > 0$, let $\nu, \lambda \in \mathbb{C}$ and $\beta_0, \dots, \beta_{N-1} \in \mathbb{C}$.
+An array $S = (S_{i,j})_{i,j \ge 0}$ of complex numbers, indexed from $0$, is a
+$(\nu, \lambda)$-Pascal matrix of size $2n$ with coefficients $\beta$ when the following
+hold: $S_{i,j} = 0$ whenever $i \ge 2n$ or $j \ge 2n$; $S_{i,j} = -S_{j,i}$ for all $i, j$;
+$S_{2n-2,\,2n-1} = 1$; $S_{j,\,2n-1} = \sum_{t=0}^{N-1} \beta_t S_{j+t+1,\,2n-1}$ for every
+$j < 2n - 2$; and $S_{i,j} = \lambda S_{i+1,j+1} + \nu (S_{i+1,j} + S_{i,j+1})$ for all
+$i, j < 2n - 1$.
 
-The API deliberately also permits `N = 0`; then the beta-index is empty and
-the last-column sum is zero. The source's intended coefficient families have
-`N > 0`.
+The definition also allows $N = 0$; then the sum is empty, so the entries $S_{j,\,2n-1}$
+with $j < 2n - 2$ vanish. The intended coefficient families have $N > 0$.
 
 ## Depends on
 

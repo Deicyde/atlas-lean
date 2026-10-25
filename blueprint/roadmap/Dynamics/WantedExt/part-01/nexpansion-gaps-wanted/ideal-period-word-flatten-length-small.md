@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.idealPeriodWord_flatten_length_small
 ---
 
-# Ideal Period Word flatten length small
+# Lengths of the first ideal period words
 
-The digit lengths of `d₁, …, d₅` are `5, 7, 17, 31, 65`.
+**Lengths of the first ideal period words.** The digit strings of the ideal period words
+$d_1, d_2, d_3, d_4, d_5$ have lengths $5, 7, 17, 31, 65$ respectively.
 
 ## Depends on
 
-- [Ideal Period Word](ideal-period-word.md)
+- [Ideal period words](ideal-period-word.md)
 
 ## Sources
 

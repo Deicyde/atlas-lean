@@ -18,7 +18,7 @@ component `0` is `L.K` and component `1` is `L.L`.
 
 ## Proof depends on
 
-- [R3](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 - [To Parametrized Knot](to-parametrized-knot.md)
 - [Knot](../conway-knot-shared/knot.md)
 - [R3](../conway-knot-shared/r3.md)

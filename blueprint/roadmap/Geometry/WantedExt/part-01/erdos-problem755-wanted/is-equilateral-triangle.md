@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.ErdosProblem755Wanted.IsEquilateralTriangle
 ---
 
-# Is Equilateral Triangle
+# Equilateral triangle with given side
 
-Three points with all pairwise distances equal to `side`.
+**Equilateral triangle with given side.** For a real number $s$, a finite set $T$ of
+points in the Euclidean space $\mathbb{R}^d$ is an equilateral triangle of side $s$ when $T$ has
+exactly three elements and any two distinct points of $T$ are at distance $s$.
 
 ## Depends on
 

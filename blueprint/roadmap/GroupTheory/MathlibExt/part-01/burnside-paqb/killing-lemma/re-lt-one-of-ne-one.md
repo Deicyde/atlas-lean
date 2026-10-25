@@ -7,9 +7,10 @@ proof: formalized
 lean: BurnsidePaqb.re_lt_one_of_ne_one
 ---
 
-# Re lt one of ne one
+# Real part of a unit complex number other than $1$
 
-Strict bound: real part of a non-1 unit complex is less than 1.
+**Real part of a unit complex number other than $1$.** If $w \in \mathbb{C}$ satisfies
+$|w| = 1$ and $w \neq 1$, then $\operatorname{Re} w < 1$.
 
 ## Depends on
 

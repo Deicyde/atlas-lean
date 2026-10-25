@@ -5,6 +5,6 @@ navigation: module
 
 # Colorful Caratheodory
 
-- [Colorful caratheodory finrank](colorful-caratheodory-finrank.md)
-- [Colorful caratheodory](colorful-caratheodory.md)
-- [Exists colorful mem convex Hull](exists-colorful-mem-convex-hull.md)
+- [Colorful Carathéodory theorem in finite-dimensional inner product spaces](colorful-caratheodory-finrank.md)
+- [Colorful Carathéodory theorem for finite sets](colorful-caratheodory.md)
+- [Colorful Carathéodory theorem](exists-colorful-mem-convex-hull.md)

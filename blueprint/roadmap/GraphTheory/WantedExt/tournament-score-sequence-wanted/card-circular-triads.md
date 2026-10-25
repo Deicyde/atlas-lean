@@ -5,16 +5,16 @@ statement: formalized
 lean: MathlibExt.GraphTheory.TournamentScoreSequenceWanted.card_circularTriads
 ---
 
-# Theorem 6
+# Moon's count of circular triads
 
-**Theorem 6** (Moon): the number of circular triads
-in a tournament with scores `s_1, …, s_n` is
-`C(n, 3) - ∑_i C(s_i, 2)`.
+**Moon's count of circular triads.** In a tournament on $n$ players with scores
+$s_1, \dots, s_n$, the number of circular triads is
+$\binom{n}{3} - \sum_{i=1}^{n} \binom{s_i}{2}$.
 
 ## Depends on
 
-- [Is Circular Triad](is-circular-triad.md)
-- [Is Tournament](is-tournament.md)
+- [Circular triad](is-circular-triad.md)
+- [Tournament](is-tournament.md)
 - [Score](score.md)
 
 ## Sources

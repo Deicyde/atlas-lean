@@ -16,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Profile](profile.md)
-- [Strict Total Order](strict-total-order.md)
+- [Preference profile (Arrow's theorem)](profile.md)
+- [Strict preference orders for Arrow's theorem](strict-total-order.md)
 
 ## Sources
 

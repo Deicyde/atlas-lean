@@ -13,7 +13,7 @@ lean: MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowing
 
 ## Depends on
 
-- [E](e.md)
+- [Euclidean model space for the shadowing lemma](e.md)
 
 ## Sources
 

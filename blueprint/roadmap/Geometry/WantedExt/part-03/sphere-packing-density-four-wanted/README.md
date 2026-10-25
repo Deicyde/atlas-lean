@@ -4,13 +4,13 @@ navigation: module
 
 # Sphere Packing Density Four
 
-- [Periodic Approximation](periodic-approximation.md)
-- [Upper Bound CE2003 Rogers](upper-bound-ce2003-rogers.md)
-- [Upper Bound CE2003 new](upper-bound-ce2003-new.md)
-- [Upper Bound d LOV2014](upper-bound-d-lov2014.md)
-- [Lower Bound d LOV2014](lower-bound-d-lov2014.md)
-- [Upper Bound CE2003 Rogers wanted](upper-bound-ce2003-rogers-wanted.md)
-- [Upper Bound CE2003 new wanted](upper-bound-ce2003-new-wanted.md)
-- [Upper Bound d LOV2014 wanted](upper-bound-d-lov2014-wanted.md)
-- [Lower Bound d LOV2014 wanted](lower-bound-d-lov2014-wanted.md)
-- [Periodic Approximation wanted](periodic-approximation-wanted.md)
+- [Statement that periodic packings approach the optimal density in dimension four](periodic-approximation.md)
+- [Statement of the Rogers upper bound in dimension four](upper-bound-ce2003-rogers.md)
+- [Statement of the Cohn–Elkies upper bound in dimension four](upper-bound-ce2003-new.md)
+- [Statement of the de Laat–Oliveira–Vallentin upper bound in dimension four](upper-bound-d-lov2014.md)
+- [Statement of the lower bound for sphere packing in dimension four](lower-bound-d-lov2014.md)
+- [Rogers upper bound for sphere packing in dimension four](upper-bound-ce2003-rogers-wanted.md)
+- [Cohn–Elkies upper bound for sphere packing in dimension four](upper-bound-ce2003-new-wanted.md)
+- [de Laat–Oliveira–Vallentin upper bound for sphere packing in dimension four](upper-bound-d-lov2014-wanted.md)
+- [Lower bound for sphere packing in dimension four](lower-bound-d-lov2014-wanted.md)
+- [Periodic packings approach the optimal density in dimension four](periodic-approximation-wanted.md)

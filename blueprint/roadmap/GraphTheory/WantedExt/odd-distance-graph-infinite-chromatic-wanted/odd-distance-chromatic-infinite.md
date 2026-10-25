@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.GraphTheory.OddDistanceGraphInfiniteChromaticWanted.ODGIC.OddDistanceChromaticInfinite
 ---
 
-# Odd Distance Chromatic Infinite
+# Infinite chromatic number of the odd distance graph
 
-Question: is `χ(O) = ∞`? (record OPG-616)
+**Infinite chromatic number of the odd distance graph.** The proposition that the odd distance
+graph on $\mathbb{R}^2$ has infinite chromatic number, that is, has no proper colouring with
+finitely many colours.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Odd Distance Graph](odd-distance-graph.md)
+- [Odd distance graph](odd-distance-graph.md)
 
 ## Sources
 

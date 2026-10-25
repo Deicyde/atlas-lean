@@ -20,7 +20,7 @@ $D_0 = (N_1 + p N_2) / ((p - 1)(p + 1))$, and $D_0 \ge 1/(p - 1)$.
 
 - [OEIS A005717](a005717.md)
 - [Generalized central trinomial coefficients](central-trinomial.md)
-- [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

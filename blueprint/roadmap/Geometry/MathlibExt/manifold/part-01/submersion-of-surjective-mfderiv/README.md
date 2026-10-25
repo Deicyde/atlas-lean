@@ -7,8 +7,8 @@ navigation: module
 
 ## Is Submersion At
 
-- [Of surjective mfderiv](of-surjective-mfderiv.md)
+- [Surjective differential into a finite-dimensional manifold gives a submersion](of-surjective-mfderiv.md)
 
 ## Submersion Of Surjective MFDeriv Wanted
 
-- [Submersion At of surjective mfderiv](submersion-at-of-surjective-mfderiv.md)
+- [Surjective differential gives a submersion between finite-dimensional manifolds](submersion-at-of-surjective-mfderiv.md)

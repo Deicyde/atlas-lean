@@ -7,13 +7,14 @@ proof: formalized
 lean: AddSubgroup.IsCyclicSublattice.le
 ---
 
-# Le
+# A cyclic sublattice is contained in its ambient subgroup
 
-A cyclic sublattice is contained in the ambient subgroup.
+**A cyclic sublattice is contained in its ambient subgroup.** Let $L'$ and $L$ be subgroups
+of an abelian group $A$. If $L'$ is a cyclic sublattice of $L$, then $L' \subseteq L$.
 
 ## Depends on
 
-- [Is Cyclic Sublattice](is-cyclic-sublattice.md)
+- [Cyclic sublattice of a subgroup](is-cyclic-sublattice.md)
 
 ## Sources
 

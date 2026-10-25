@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.dim
 ---
 
-# Dim
+# Dimension of a convex polytope
 
-The affine dimension of `P`.
+**Dimension of a convex polytope.** The dimension of a convex polytope
+$P \subseteq \mathbb{R}^n$ is its affine dimension: the dimension of the real vector space
+spanned by the differences $x - y$ of points $x, y \in P$.
 
 ## Depends on
 
-- [Convex Polytope](convex-polytope.md)
+- [Convex polytope](convex-polytope.md)
 
 ## Proof depends on
 
-- [To Set](to-set.md)
-- [E](e.md)
+- [Underlying set of a convex polytope](to-set.md)
+- [Ambient Euclidean space of the Platonic classification](e.md)
 
 ## Sources
 

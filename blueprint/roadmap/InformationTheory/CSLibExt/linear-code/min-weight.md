@@ -5,13 +5,16 @@ statement: formalized
 lean: Cslib.CodingTheory.LinearCode.minWeight
 ---
 
-# Min Weight
+# Minimum weight
 
-The **minimum weight**: the least number of nonzero coordinates of a nonzero codeword.
+**Minimum weight.** The minimum weight of a linear code $C$ of finite length is the least
+weight of a nonzero codeword of $C$, where the weight of a word is its number of nonzero
+coordinates; it is taken in $\mathbb{N} \cup \{\infty\}$ and is $\infty$ if $C$ has no nonzero
+codeword.
 
 ## Depends on
 
-- [Linear Code](linear-code.md)
+- [Linear code](linear-code.md)
 
 ## Sources
 

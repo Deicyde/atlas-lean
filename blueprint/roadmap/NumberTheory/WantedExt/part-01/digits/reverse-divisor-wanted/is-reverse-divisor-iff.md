@@ -14,7 +14,7 @@ defining existential.
 ## Depends on
 
 - [Is Reverse Divisor](is-reverse-divisor.md)
-- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
+- [Digit reversal](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources
 

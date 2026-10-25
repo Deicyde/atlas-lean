@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.idealPeriodWord_point_le_orbit
 ---
 
-# Ideal Period Word point le orbit
+# The ideal periodic point is the least point of its orbit
 
-Lemma 5: for `n ≥ 1`, the periodic point `d_n` is the smallest point of its orbit: if
-`x ∈ I_α` has purely periodic `N`-expansion with period word `d_n`, then `x ≤ T_α^j(x)` for
-all `j`.
+**The ideal periodic point is the least point of its orbit.** Let $N$ be a natural number,
+let $\alpha$ be a real number with $0 < \alpha \le \sqrt N - 1$, and let $T_\alpha$ be the
+$N$-expansion map on $I_\alpha = [\alpha, \alpha + 1]$. Let $n \ge 1$, write $|d_n|$ for the
+length of the digit string of the ideal period word $d_n$, and let $x \in I_\alpha$ be such that
+for every $i \ge 0$ the digit of $T_\alpha^i(x)$ is entry $i \bmod |d_n|$ (counting from $0$) of
+that digit string, so that the expansion of $x$ is purely periodic with period word $d_n$. Then
+$x \le T_\alpha^j(x)$ for every $j \ge 0$.
 
-As for Lemma 4, Phase I is dropped; the standing assumptions of Definition 1 are kept.
+The source assumes Phase I; only the assumption $0 < \alpha \le \sqrt N - 1$ is kept here.
 
 ## Depends on
 
-- [Ideal Period Word](ideal-period-word.md)
-- [N Expansion Digit](n-expansion-digit.md)
-- [N Expansion Map](n-expansion-map.md)
+- [Ideal period words](ideal-period-word.md)
+- [Digit of the N-expansion map](n-expansion-digit.md)
+- [The $N$-expansion map](n-expansion-map.md)
 
 ## Sources
 

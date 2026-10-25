@@ -6,14 +6,15 @@ statement: formalized
 lean: Polynomial.IsKComplete
 ---
 
-# Is KComplete
+# Polynomial complete to level $k$
 
-A polynomial `f` over a finite field is complete to level `k`
-(`k`-complete) when `f + i * X` is a permutation polynomial for every natural
-index `i ≤ k`, with `i` cast into `F`. The source assumes positive `k`; the
-predicate is stated for all natural levels, with the positive-level
-characterization `isKComplete_succ_iff` and the zero-level boundary
-`isKComplete_zero` below.
+**Polynomial complete to level $k$.** Let $F$ be a finite field,
+$f \in F[X]$ and $k$ a natural number. The polynomial $f$ is complete to level $k$ ($k$-complete)
+when $f + iX$ is a permutation polynomial for every natural number $i \le k$, where $i$ is viewed
+as an element of $F$.
+
+The source considers only positive levels $k$; here every natural level is allowed, and
+completeness to level $0$ says that $f$ itself is a permutation polynomial.
 
 ## Depends on
 
@@ -21,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Permutation Polynomial](is-permutation-polynomial.md)
+- [Permutation polynomial over a finite field](is-permutation-polynomial.md)
 
 ## Sources
 

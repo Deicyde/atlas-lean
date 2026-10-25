@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.CodingTheory.LinearCode.card_filter_mem
 ---
 
-# Card filter mem
+# Number of codewords of a linear code
 
-The codewords of a linear code over `F_q`, as a finite set of size `q ^ dim C`.
+**Number of codewords of a linear code.** If $C$ is a linear code of length $n$ over a finite
+field $F$, then exactly $|F|^{\dim C}$ of the $|F|^n$ words of length $n$ lie in $C$, where
+$\dim C$ is the dimension of $C$ over $F$.
 
 ## Depends on
 
-- [Linear Code](linear-code.md)
+- [Linear code](linear-code.md)
 
 ## Sources
 

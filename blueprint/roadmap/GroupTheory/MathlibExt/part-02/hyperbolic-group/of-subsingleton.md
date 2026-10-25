@@ -7,14 +7,14 @@ proof: formalized
 lean: Group.IsHyperbolic.of_subsingleton
 ---
 
-# Of subsingleton
+# The trivial group is word-hyperbolic
 
-A trivial (subsingleton) group is word-hyperbolic, witnessed by the empty generating family and
-`δ = 0`.
+**The trivial group is word-hyperbolic.** Every trivial group is word-hyperbolic: the empty
+family generates it, and its word metric is $0$-hyperbolic.
 
 ## Depends on
 
-- [Is Hyperbolic](is-hyperbolic.md)
+- [Word-hyperbolic groups](is-hyperbolic.md)
 
 ## Proof depends on
 

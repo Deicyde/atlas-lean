@@ -7,13 +7,14 @@ proof: formalized
 lean: IsGHarmonic.pos
 ---
 
-# Pos
+# Entries of a G-harmonic tuple are positive
 
-Each entry of a `G`-harmonic tuple is positive.
+**Entries of a G-harmonic tuple are positive.** Let $G$ be a group. If a tuple
+$a = (a_1, \dots, a_n)$ of natural numbers is $G$-harmonic, then $a_i > 0$ for every $i$.
 
 ## Depends on
 
-- [Is GHarmonic](is-gharmonic.md)
+- [G-harmonic tuples](is-gharmonic.md)
 
 ## Sources
 

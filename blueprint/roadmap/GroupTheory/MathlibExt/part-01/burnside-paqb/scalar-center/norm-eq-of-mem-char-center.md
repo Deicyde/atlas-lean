@@ -7,13 +7,16 @@ proof: formalized
 lean: BurnsidePaqb.norm_eq_of_mem_charCenter
 ---
 
-# Norm eq of mem char Center
+# Elements of the scalar center have character of full absolute value
 
-Elements of the scalar center attain the norm bound.
+**Elements of the scalar center have character of full absolute value.** Let $G$ be a finite
+group, $V$ a nonzero finite-dimensional complex vector space and $\rho$ a representation of $G$
+on $V$ with character $\chi$. If $g$ lies in the scalar center of $\rho$, then
+$|\chi(g)| = \dim V$.
 
 ## Depends on
 
-- [Char Center](char-center.md)
+- [Scalar center of a representation](char-center.md)
 
 ## Sources
 

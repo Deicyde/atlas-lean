@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.palindrome_hasProperty
 ## Depends on
 
 - [Has Property PStar](has-property-pstar.md)
-- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
+- [Digit reversal](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources
 

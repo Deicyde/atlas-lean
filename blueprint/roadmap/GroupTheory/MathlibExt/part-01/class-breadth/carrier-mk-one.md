@@ -7,9 +7,10 @@ proof: formalized
 lean: ClassBreadth.carrier_mk_one
 ---
 
-# Carrier mk one
+# The conjugacy class of the identity
 
-The conjugacy class of `1` is the singleton `{1}`.
+**The conjugacy class of the identity.** In every group, the conjugacy class of the identity
+element $1$ is the singleton $\{1\}$.
 
 ## Depends on
 

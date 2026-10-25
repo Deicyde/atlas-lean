@@ -6,13 +6,17 @@ statement: formalized
 lean: MathlibExt.Geometry.EquichordalWanted.Geometry.Equichordal.IsEquichordalPoint
 ---
 
-# Is Equichordal Point
+# Equichordal point
 
-A point `P` is equichordal for the boundary of a planar domain `K` if
-there is a constant chord length `L` such that every unit direction through
-`P` meets the boundary at opposite chord endpoints whose total chord length
-is `L`.  The open segment condition rules out choosing non-endpoint boundary
-crossings for nonconvex star-like domains.
+**Equichordal point.** Let $K$ be a subset of the Euclidean plane. A point $P$ is an
+equichordal point of $K$ if $P$ lies in the interior of $K$ and there is a real $L > 0$ such
+that for every unit vector $u$ there are reals $a > 0$ and $b > 0$ for which $P + a u$ and
+$P - b u$ lie in the boundary (frontier) of $K$, the open segment between $P - b u$ and
+$P + a u$ lies in the interior of $K$, and the distance between $P + a u$ and $P - b u$
+equals $L$.
+
+The open segment condition makes $P + a u$ and $P - b u$ the endpoints of the chord through $P$
+in direction $u$, ruling out other boundary crossings for nonconvex star-shaped domains.
 
 ## Depends on
 

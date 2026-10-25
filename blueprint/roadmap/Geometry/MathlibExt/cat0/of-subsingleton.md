@@ -7,13 +7,15 @@ proof: formalized
 lean: IsCAT0FourPoint.of_subsingleton
 ---
 
-# Of subsingleton
+# Spaces with at most one point satisfy the CAT(0) four-point condition
 
-Every subsingleton metric space satisfies the CAT(0) four-point condition.
+**Spaces with at most one point satisfy the CAT(0) four-point condition.** Every metric
+space with at most one point (including the empty space) satisfies the CAT(0) four-point
+condition.
 
 ## Depends on
 
-- [Is CAT0 Four Point](is-cat0-four-point.md)
+- [CAT(0) four-point condition](is-cat0-four-point.md)
 
 ## Sources
 

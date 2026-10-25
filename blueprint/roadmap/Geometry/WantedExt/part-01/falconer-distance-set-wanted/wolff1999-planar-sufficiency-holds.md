@@ -6,14 +6,17 @@ statement: formalized
 lean: FalconerDistanceSetWanted.wolff1999PlanarSufficiency_holds
 ---
 
-# Wolff1999 Planar Sufficiency holds
+# Wolff's planar distance set theorem
 
-Source: GIOW, arXiv:1808.09346v1, line 78, reporting Wolff (1999).
+**Wolff's planar distance set theorem.** Every compact set $E \subseteq \mathbb{R}^2$ with
+Hausdorff dimension greater than $4/3$ has a distance set $\{|x - y| : x, y \in E\}$ of positive
+Lebesgue measure.
 
 ## Depends on
 
-- [Wolff1999 Planar Sufficiency](wolff1999-planar-sufficiency.md)
+- [Wolff's planar distance set condition, as a proposition](wolff1999-planar-sufficiency.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.FalconerDistanceSetWanted](../../../../../sources/v2/WantedExt.md)
+- GIOW, arXiv:1808.09346v1, line 78, reporting Wolff (1999).

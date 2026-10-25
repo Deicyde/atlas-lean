@@ -5,19 +5,26 @@ statement: formalized
 lean: Cslib.Databases.Expr.schema
 ---
 
-# Schema
+# Schema of a query
 
-The schema of a query, given the schema `sch n` of each base relation; `none` if the query
-is ill-formed (a selection on missing attributes, a projection on attributes the operand lacks,
-or a union or difference of relations with different schemas).
+**Schema of a query.** Given a database schema assigning a finite set $\mathrm{sch}(n)$ of
+attributes to each base relation name $n$, the schema of a relational algebra query is either a
+finite set of attributes or undefined (the query is ill-formed), defined by recursion on the
+query: the base relation $n$ has schema $\mathrm{sch}(n)$; if $e$ has schema $S$, then the
+selection $\sigma_c(e)$ has schema $S$ when every attribute of the condition $c$ lies in $S$, the
+projection $\pi_T(e)$ has schema $T$ when $T \subseteq S$, and the renaming $\rho_f(e)$ along a
+permutation $f$ of the attributes has schema $f(S)$; if $e$ and $e'$ have schemas $S$ and $S'$,
+then the natural join of $e$ and $e'$ has schema $S \cup S'$, and their union and their
+difference have schema $S$ when $S = S'$. In every other case, including when an operand is
+ill-formed, the schema is undefined.
 
 ## Depends on
 
-- [Expr](expr.md)
+- [Relational algebra queries](expr.md)
 
 ## Proof depends on
 
-- [Cond](cond.md)
+- [Selection conditions](cond.md)
 - [Attributes of a selection condition](attrs.md)
 
 ## Sources

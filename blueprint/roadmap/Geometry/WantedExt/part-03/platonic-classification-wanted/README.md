@@ -6,25 +6,25 @@ navigation: module
 
 ## Platonic Classification
 
-- [E](e.md)
-- [Convex Polytope](convex-polytope.md)
+- [Ambient Euclidean space of the Platonic classification](e.md)
+- [Convex polytope](convex-polytope.md)
 
 ## Convex Polytope
 
-- [To Set](to-set.md)
-- [Dim](dim.md)
-- [Is Full Dim](is-full-dim.md)
-- [Is Face](is-face.md)
-- [Face Dim](face-dim.md)
-- [Flag](flag.md)
-- [Isom](isom.md)
-- [Is Symmetry](is-symmetry.md)
-- [Is Regular](is-regular.md)
-- [Similar](similar.md)
+- [Underlying set of a convex polytope](to-set.md)
+- [Dimension of a convex polytope](dim.md)
+- [Full-dimensional convex polytope](is-full-dim.md)
+- [Face of a convex polytope](is-face.md)
+- [Affine dimension of a set](face-dim.md)
+- [Flag of a convex polytope](flag.md)
+- [Rigid motions](isom.md)
+- [Symmetry of a convex polytope](is-symmetry.md)
+- [Regular convex polytope](is-regular.md)
+- [Similar polytopes](similar.md)
 
 ## Platonic Classification
 
-- [Regular Polytopes](regular-polytopes.md)
-- [Regular Similar](regular-similar.md)
-- [Platonic Count](platonic-count.md)
-- [Platonic classification](platonic-classification.md)
+- [Regular polytopes](regular-polytopes.md)
+- [Similarity of regular polytopes](regular-similar.md)
+- [Number of Platonic polytopes](platonic-count.md)
+- [Classification of the Platonic polytopes](platonic-classification.md)

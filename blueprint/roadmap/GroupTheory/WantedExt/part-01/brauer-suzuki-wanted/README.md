@@ -7,8 +7,8 @@ navigation: module
 
 ## Defs
 
-- [Odd Core](odd-core.md)
+- [Odd core of a group](odd-core.md)
 
 ## Group Theory
 
-- [Brauer suzuki](brauer-suzuki.md)
+- [Brauer–Suzuki theorem](brauer-suzuki.md)

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ClassFunctionWanted.IsClassFunction
 ---
 
-# Is Class Function
+# Class functions on a group
 
-A function is a class function when it is constant on conjugacy classes.
+**Class functions on a group.** Let $G$ be a group and $k$ a set. A function
+$f : G \to k$ is a class function when it is constant on conjugacy classes, that is,
+$f(h g h^{-1}) = f(g)$ for all $g, h \in G$.
 
 ## Depends on
 

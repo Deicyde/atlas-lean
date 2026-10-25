@@ -7,14 +7,15 @@ proof: formalized
 lean: Matrix.SignConditionNumber.SignMatrix.realize_entries
 ---
 
-# Realize entries
+# Realized sign matrices have entries $\pm 1$
 
-Realization produces only the two allowed entries.
+**Realized sign matrices have entries $\pm 1$.** For every Boolean $n \times n$ matrix $A$ and
+all indices $i, j$, the $(i, j)$ entry of the real realization of $A$ is $1$ or $-1$.
 
 ## Depends on
 
 - [Sign Matrix](sign-matrix.md)
-- [Realize](realize.md)
+- [Real sign matrix of a Boolean matrix](realize.md)
 
 ## Sources
 

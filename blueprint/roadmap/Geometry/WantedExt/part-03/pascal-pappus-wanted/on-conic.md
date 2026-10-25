@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Geometry.PascalPappusWanted.Geometry.PascalPappus.OnConic
 ---
 
-# On Conic
+# Points on a conic
 
-`[v]` lies on the conic `xᵀ M x = 0`.
+**Points on a conic.** For a real $3 \times 3$ matrix $M$, a vector $v \in \mathbb{R}^3$ lies on
+the conic $x^\top M x = 0$ when $v^\top M v = 0$.
 
 ## Depends on
 

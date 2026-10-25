@@ -6,17 +6,19 @@ statement: formalized
 lean: BurnsidePaqb.Irr.repBundle
 ---
 
-# Rep Bundle
+# Chosen representative of an isomorphism class
 
-Chosen representative bundle of a class.
+**Chosen representative of an isomorphism class.** For a finite group $G$ and an isomorphism
+class $c$ of simple finite-dimensional complex representations of $G$, this is a simple
+finite-dimensional complex representation of $G$ in the class $c$, fixed by the axiom of choice.
 
 ## Depends on
 
-- [Irr](irr.md)
+- [Isomorphism classes of simple representations](irr.md)
 
 ## Proof depends on
 
-- [Iso Setoid](iso-setoid.md)
+- [Isomorphism of simple representations](iso-setoid.md)
 
 ## Sources
 

@@ -7,17 +7,19 @@ proof: formalized
 lean: Matrix.lowerToeplitz_apply_diag
 ---
 
-# Lower Toeplitz apply diag
+# Diagonal entries of a lower-triangular Toeplitz matrix
 
-Diagonal entries of a lower-triangular Toeplitz matrix equal `a 0`.
+**Diagonal entries of a lower-triangular Toeplitz matrix.** Let $R$ be a set with a zero
+element and $a = (a_0, a_1, \dots)$ a sequence in $R$. For every natural number $i$, the
+$(i, i)$ entry of the lower-triangular Toeplitz matrix of $a$ is $a_0$.
 
 ## Depends on
 
-- [Lower Toeplitz](lower-toeplitz.md)
+- [Lower-triangular Toeplitz matrix](lower-toeplitz.md)
 
 ## Proof depends on
 
-- [Lower Toeplitz apply of le](lower-toeplitz-apply-of-le.md)
+- [Entries on and below the diagonal of a lower-triangular Toeplitz matrix](lower-toeplitz-apply-of-le.md)
 
 ## Sources
 

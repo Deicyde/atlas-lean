@@ -6,14 +6,13 @@ statement: formalized
 lean: EuclideanGeometry.maximalDistinctDistancesFrom
 ---
 
-# Maximal Distinct Distances From
+# Maximum number of distinct distance counts
 
-Let $x_1,\ldots,x_n\in \mathbb{R}^2$ and let $R(x_i)=\#\{ \lvert x_j-x_i\rvert : j\neq i\}$,
-where the points are ordered such that
-
-$$R(x_1)\leq \cdots \leq R(x_n).$$
-
-Let $g(n)$ be the maximum number of distinct values the $R(x_i)$ can take.
+**Maximum number of distinct distance counts.** For a finite set $X \subseteq \mathbb{R}^2$
+and a point $x \in X$, let $R_X(x)$ be the number of distinct distances $\lvert y - x \rvert$
+from $x$ to the points $y \in X$ other than $x$. For $n \in \mathbb{N}$, $g(n)$ is the maximum,
+over all sets $X \subseteq \mathbb{R}^2$ of exactly $n$ points, of the number of distinct values
+among the numbers $R_X(x)$ with $x \in X$.
 
 ## Depends on
 
@@ -21,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Distinct Distances From](../metric/distinct-distances-from.md)
+- [Number of distinct distances from a point](../metric/distinct-distances-from.md)
 
 ## Sources
 

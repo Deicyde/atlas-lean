@@ -20,7 +20,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Is Kth Smallest Prime Factor](is-kth-smallest-prime-factor.md)
-- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

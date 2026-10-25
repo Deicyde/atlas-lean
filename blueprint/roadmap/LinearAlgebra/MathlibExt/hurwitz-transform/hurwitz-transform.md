@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.hurwitzTransform
 ---
 
-# Hurwitz Transform
+# Hurwitz transform
 
-The Hurwitz transform is the sequence of determinants of the Hurwitz matrices.
+**Hurwitz transform.** For sequences $a, b \colon \mathbb{N} \to R$ in a commutative ring $R$,
+the Hurwitz transform of $a$ and $b$ is the sequence whose $n$-th term, for $n \in \mathbb{N}$, is
+the determinant of the Hurwitz matrix of $a$ and $b$ of order $n$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hurwitz Matrix](hurwitz-matrix.md)
+- [Hurwitz matrix](hurwitz-matrix.md)
 
 ## Sources
 

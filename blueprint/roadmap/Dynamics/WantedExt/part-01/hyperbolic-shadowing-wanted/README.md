@@ -4,9 +4,9 @@ navigation: module
 
 # Hyperbolic Shadowing
 
-- [E](e.md)
-- [Hyperbolic Structure](hyperbolic-structure.md)
-- [Is Hyperbolic](is-hyperbolic.md)
+- [Euclidean model space for the shadowing lemma](e.md)
+- [Hyperbolic structure](hyperbolic-structure.md)
+- [Hyperbolic invariant set](is-hyperbolic.md)
 - [Is Pseudo Orbit](is-pseudo-orbit.md)
-- [Has Shadowing](has-shadowing.md)
-- [Hyperbolic has shadowing](hyperbolic-has-shadowing.md)
+- [Shadowing property](has-shadowing.md)
+- [Anosov–Bowen shadowing lemma](hyperbolic-has-shadowing.md)

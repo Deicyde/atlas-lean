@@ -5,12 +5,12 @@ navigation: module
 
 # Bose Gases
 
-- [Box](box.md)
-- [CInfty0 Box](cinfty0-box.md)
-- [Is Radial](is-radial.md)
-- [Is Scattering Solution](is-scattering-solution.md)
-- [A](a.md)
-- [𝓡](untitled.md)
-- [Η](untitled-2.md)
-- [𝓒](untitled-3.md)
-- [Theorem 1 2](theorem-1-2.md)
+- [The box $((0,L)^3)^N$](box.md)
+- [Smooth functions supported inside the box](cinfty0-box.md)
+- [Radial functions](is-radial.md)
+- [Scattering solutions](is-scattering-solution.md)
+- [Scattering length](a.md)
+- [The ratio $\mathcal{R}(v)$](untitled.md)
+- [Lee–Huang–Yang error exponent](untitled-2.md)
+- [Lee–Huang–Yang error constant](untitled-3.md)
+- [Lee–Huang–Yang lower bound for dilute Bose gases](theorem-1-2.md)

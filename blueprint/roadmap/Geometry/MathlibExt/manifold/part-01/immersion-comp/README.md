@@ -9,5 +9,5 @@ navigation: module
 - [Comp](comp-2.md)
 - [Comp](comp-3.md)
 - [Comp](comp-4.md)
-- [Immersion At comp](immersion-at-comp.md)
-- [Immersion comp](immersion-comp.md)
+- [Composition of immersions at a point](immersion-at-comp.md)
+- [Composition of immersions](immersion-comp.md)

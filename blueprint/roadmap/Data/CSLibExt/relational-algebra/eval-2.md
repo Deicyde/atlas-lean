@@ -11,16 +11,16 @@ The value of a query on the database `db`, which assigns a relation to each name
 
 ## Depends on
 
-- [Expr](expr.md)
+- [Relational algebra queries](expr.md)
 - [Tuple](tuple.md)
 
 ## Proof depends on
 
-- [Cond](cond.md)
-- [Join](join.md)
-- [Project](project.md)
-- [Rename](rename.md)
-- [Select](select.md)
+- [Selection conditions](cond.md)
+- [Natural join](join.md)
+- [Projection of a relation](project.md)
+- [Renaming of attributes](rename.md)
+- [Selection](select.md)
 
 ## Sources
 

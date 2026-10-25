@@ -7,13 +7,15 @@ proof: formalized
 lean: AddSubgroup.IsCyclicSublattice.isAddCyclic_quotient
 ---
 
-# Is Add Cyclic quotient
+# The quotient by a cyclic sublattice is cyclic
 
-The quotient witnessing cyclicity of a cyclic sublattice.
+**The quotient by a cyclic sublattice is cyclic.** Let $L'$ and $L$ be subgroups of an
+abelian group $A$. If $L'$ is a cyclic sublattice of $L$, then the quotient group $L/L'$ is
+cyclic.
 
 ## Depends on
 
-- [Is Cyclic Sublattice](is-cyclic-sublattice.md)
+- [Cyclic sublattice of a subgroup](is-cyclic-sublattice.md)
 
 ## Sources
 

@@ -6,17 +6,16 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.StrictTotalOrder.total
 ---
 
-# Total
+# Strict preferences in the Gibbard–Satterthwaite setting are total
 
-Compatibility alias for the former `GibbardSatterthwaiteWanted.StrictTotalOrder.total`
-projection.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.total` directly.
+**Strict preferences in the Gibbard–Satterthwaite setting are total.** Let $<$ be the relation
+of a strict total order on a type $\alpha$. If $a, b \in \alpha$ and $a \ne b$, then $a < b$ or
+$b < a$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
-- [Lt](lt.md)
+- [Strict preference orders for the Gibbard–Satterthwaite theorem](strict-total-order.md)
+- [Relation of a strict preference order](lt.md)
 
 ## Proof depends on
 

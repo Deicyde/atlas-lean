@@ -18,7 +18,7 @@ Crossing number depends only on the ambient-isotopy type.
 
 ## Proof depends on
 
-- [R3](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 - [Ambient Isotopy](../euclidean-link/ambient-isotopy.md)
 - [Comp](../euclidean-link/comp.md)
 - [Symm](../euclidean-link/symm.md)

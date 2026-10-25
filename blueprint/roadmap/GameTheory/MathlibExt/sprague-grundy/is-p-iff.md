@@ -7,14 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.SpragueGrundy.isP_iff
 ---
 
-# Is P iff
+# Recursive characterization of P-positions
 
-A position is a P-position iff every move from it leads to a position that is not.
+**Recursive characterization of P-positions.** In an impartial game $G$, a position $p$ is a
+P-position if and only if every position reachable from $p$ in one move is not a P-position.
 
 ## Depends on
 
-- [Impartial Game](impartial-game.md)
-- [Is P](is-p.md)
+- [Impartial game](impartial-game.md)
+- [P-positions](is-p.md)
 
 ## Sources
 

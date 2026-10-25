@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.GroupTheory.Kourovka21Problem134bWanted.SamePowerEquationType
 ---
 
-# Same Power Equation Type
+# Same power-equation type
 
-Two finite groups have the same power-equation type when `x ^ n = 1` has the same
-number of solutions in both groups for every positive `n`.
+**Same power-equation type.** Two groups $G$ and $H$ have the same power-equation type when,
+for every positive integer $n$, the equation $x^n = 1$ has the same number of solutions in $G$ as
+in $H$. An infinite set of solutions is counted as $0$, so the notion is meant for finite
+groups.
 
 ## Depends on
 

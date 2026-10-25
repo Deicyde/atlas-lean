@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.forall_hasNSProperty_iff_chocolateBarGrundy_eq_xor_four
 ---
 
-# Forall has NSProperty iff chocolate Bar Grundy eq xor four
+# Nim-sum Grundy numbers of chocolate bars with four functions
 
-For monotone `f 0, …, f 3`, all four have the NS property iff the five-coordinate chocolate
-bar `CB(f₁, f₂, f₃, f₄, x₁, x₂, x₃, x₄, z)` has Grundy number `x₁ ⊕ x₂ ⊕ x₃ ⊕ x₄ ⊕ z` at every
-bar position `x t ≤ f t z`.
+**Nim-sum Grundy numbers of chocolate bars with four functions.** Let
+$f_1, f_2, f_3, f_4 : \mathbb{N} \to \mathbb{N}$ be monotone. Then all four have the NS property if
+and only if, for all natural numbers $x_1, x_2, x_3, x_4, z$ with $x_t \le f_t(z)$ for every $t$,
+the Grundy number of the chocolate bar $\mathrm{CB}(f_1, f_2, f_3, f_4, x_1, x_2, x_3, x_4, z)$
+equals $x_1 \oplus x_2 \oplus x_3 \oplus x_4 \oplus z$, where $\oplus$ is nim-sum (bitwise
+exclusive or).
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
-- [Chocolate Bar Grundy](chocolate-bar-grundy.md)
+- [NS property](has-nsproperty.md)
+- [Grundy number of a chocolate bar](chocolate-bar-grundy.md)
 
 ## Sources
 

@@ -7,21 +7,25 @@ proof: formalized
 lean: BurnsidePaqb.scalarGens_mul
 ---
 
-# Scalar Gens mul
+# Products of central-scalar generators stay in their span
 
-Generator-generator products stay in the span.
+**Products of central-scalar generators stay in their span.** Let $\rho$ be an irreducible
+representation of a finite group $G$ on a finite-dimensional complex vector space $V$, and let
+$S_\rho$ be the finite set of complex numbers consisting of $1$ and the scalars by which the
+class sums of the conjugacy classes of $G$ act on $V$. If $a, b \in S_\rho$, then $ab$ lies in
+the $\mathbb{Z}$-linear span of $S_\rho$.
 
 ## Depends on
 
-- [Scalar Gens](scalar-gens.md)
+- [Generators of the central-scalar ring](scalar-gens.md)
 
 ## Proof depends on
 
-- [Central Scalar](central-scalar.md)
-- [Central Scalar mul](central-scalar-mul.md)
-- [Class Rep](../class-sum/class-rep.md)
-- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
-- [Struct Const](../class-sum/struct-const.md)
+- [Central scalar of a conjugacy class](central-scalar.md)
+- [Central scalars multiply via the class structure constants](central-scalar-mul.md)
+- [Chosen representative of a conjugacy class](../class-sum/class-rep.md)
+- [Conjugacy class](../../burnside-paqb-reduction/conj-class.md)
+- [Structure constants of a pair of subsets](../class-sum/struct-const.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ a position is the pile size itself, and the starting position is the empty pile 
 
 ## Depends on
 
-- [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
+- [Impartial game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
 
 ## Sources
 

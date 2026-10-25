@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book62
 
-- [Scottish Book Problem62 Claim](scottish-book-problem62-claim.md)
-- [Mazur Ulam62 refuted](mazur-ulam62-refuted.md)
+- [Claim of Scottish Book Problem 62](scottish-book-problem62-claim.md)
+- [Refutation of Scottish Book Problem 62](mazur-ulam62-refuted.md)

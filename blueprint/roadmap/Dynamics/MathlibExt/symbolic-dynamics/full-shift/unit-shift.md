@@ -6,13 +6,15 @@ statement: formalized
 lean: SymbolicDynamics.FullShift.unitShift
 ---
 
-# Unit Shift
+# Unit shift
 
-The unit left-translation of the two-sided full shift.
+**Unit shift.** The unit shift on the full shift on $N$ symbols is the map $\sigma$ from
+$\{0, \dots, N-1\}^{\mathbb{Z}}$ to itself given by $(\sigma x)_i = x_{i+1}$ for all
+$i \in \mathbb{Z}$, the left translation by one step.
 
 ## Depends on
 
-- [Full Shift Space](full-shift-space.md)
+- [Full shift space](full-shift-space.md)
 
 ## Sources
 

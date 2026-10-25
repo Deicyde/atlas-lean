@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.FieldTheory.EssentialDimensionSymmetric.essDimRatio
 ---
 
-# Ess Dim Ratio
+# Asymptotic essential-dimension ratio of the symmetric groups
 
-The asymptotic essential-dimension ratio, catalogue constant
-`C₇₉ = limsup (ed_ℂ(Sₙ) / n)` in the general-polynomial parameter
-sense of this file.
+**Asymptotic essential-dimension ratio of the symmetric groups.** The catalogue constant
+$C_{79}$ is the limit superior, as $n \to \infty$, of $\operatorname{ed}_{\mathbb{C}}(S_n) / n$,
+where $\operatorname{ed}_{\mathbb{C}}(S_n)$ is the essential dimension of the symmetric group
+$S_n$ over $\mathbb{C}$ in the general-polynomial parameter sense.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ed Sn](ed-sn.md)
+- [Essential dimension of the symmetric group](ed-sn.md)
 
 ## Sources
 

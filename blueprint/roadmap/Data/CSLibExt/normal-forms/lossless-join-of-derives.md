@@ -25,10 +25,10 @@ the decomposition of $R_1 \cup R_2$ into $R_1$ and $R_2$ is lossless for $F$ wit
 - [Is Over](../relational-algebra/is-over-2.md)
 - [Satisfying a set of dependencies on a scheme](satisfies-on.md)
 - [Tuple](../relational-algebra/tuple.md)
-- [Join](../relational-algebra/join.md)
+- [Natural join](../relational-algebra/join.md)
 - [Join comm](../relational-algebra/join-comm.md)
 - [Heath's theorem](join-project-eq-of-holds-in.md)
-- [Project](../relational-algebra/project.md)
+- [Projection of a relation](../relational-algebra/project.md)
 
 ## Sources
 

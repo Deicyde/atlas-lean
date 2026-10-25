@@ -7,17 +7,19 @@ proof: formalized
 lean: EuclideanGeometry.isConvexPolygon_three_of_affineIndependent
 ---
 
-# Is Convex Polygon three of affine Independent
+# Affinely independent triples are convex polygons
 
-Three affine independent points always form a convex polygon.
+**Affinely independent triples are convex polygons.** If three points $A, B, C$ of an oriented
+two-dimensional Euclidean affine space are affinely independent, then $A, B, C$ form a convex
+polygon.
 
 ## Depends on
 
-- [Is Convex Polygon](is-convex-polygon.md)
+- [Convex polygons](is-convex-polygon.md)
 
 ## Proof depends on
 
-- [Is Ccw Convex Polygon](is-ccw-convex-polygon.md)
+- [Counterclockwise convex polygons](is-ccw-convex-polygon.md)
 
 ## Sources
 

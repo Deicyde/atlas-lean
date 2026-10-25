@@ -7,9 +7,12 @@ proof: formalized
 lean: BurnsidePaqb.irreducible_of_simple_fdrep_aux
 ---
 
-# Irreducible of simple fdrep aux
+# Simple finite-dimensional representations are irreducible (auxiliary form)
 
-Bridge (reverse), auxiliary form with the representation named.
+**Simple finite-dimensional representations are irreducible (auxiliary form).** Let $G$ be a
+finite group and $V$ a simple object of the category of finite-dimensional complex representations
+of $G$. If $\sigma$ is a representation of $G$ on the underlying vector space of $V$ that equals the
+action of $G$ on $V$, then $\sigma$ is irreducible.
 
 ## Depends on
 

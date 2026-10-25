@@ -4,6 +4,6 @@ navigation: module
 
 # Mandelbrot Boundary
 
-- [Tc](tc.md)
-- [Mandelbrot](mandelbrot.md)
-- [Mandelbrot boundary dimh](mandelbrot-boundary-dimh.md)
+- [Quadratic family](tc.md)
+- [Mandelbrot set](mandelbrot.md)
+- [Hausdorff dimension of the Mandelbrot boundary (Shishikura)](mandelbrot-boundary-dimh.md)

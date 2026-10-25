@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.max_remoteness_path_alternates
 ---
 
-# Max remoteness path alternates
+# Maximal-remoteness paths alternate in pairs
 
-Every position requiring the maximum number of moves in optimal play lies on a path from
-`1/1` whose steps `2n-1` and `2n` are `LR` or `RL`: if the vertex reached from `1/1` along
-`w` (`false` = left/son, `true` = right/daughter) has Smith remoteness `|w|` (its row), then
-`w[2i] ≠ w[2i+1]` whenever `2i + 1 < |w|`.
+**Maximal-remoteness paths alternate in pairs.** In the Calkin–Wilf tree the vertex $a/b$ has
+son $a/(a+b)$ and daughter $(a+b)/b$. Let $w = (w_0, \dots, w_{\ell-1})$ be a sequence of steps,
+each "son" or "daughter", and let $a/b$ be the vertex reached from the root $1/1$ by following
+$w$. If the Smith remoteness of the position $(a, b)$ of Euclid equals $\ell$, then
+$w_{2i} \ne w_{2i+1}$ for every $i$ with $2i + 1 < \ell$; that is, steps $2i+1$ and $2i+2$ are
+one son step and one daughter step, in either order.
 
 ## Depends on
 
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
 - [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
-- [Euclid Game](euclid-game.md)
+- [The game Euclid](euclid-game.md)
 
 ## Sources
 

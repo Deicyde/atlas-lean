@@ -4,10 +4,10 @@ navigation: module
 
 # Golden Ratio Thompson Embed
 
-- [Is Dyadic](is-dyadic.md)
-- [Is Golden Integer](is-golden-integer.md)
-- [Is PLHomeo With](is-plhomeo-with.md)
-- [Thompson F](thompson-f.md)
-- [Cleary FTau](cleary-ftau.md)
-- [Conjecture](conjecture.md)
+- [Dyadic rationals](is-dyadic.md)
+- [Golden integers](is-golden-integer.md)
+- [Piecewise-linear maps with prescribed breakpoints and slopes](is-plhomeo-with.md)
+- [Thompson's group F](thompson-f.md)
+- [Cleary's golden-ratio Thompson group](cleary-ftau.md)
+- [Golden-ratio Thompson embedding conjecture](conjecture.md)
 - [Conjecture refuted](conjecture-refuted.md)

@@ -5,9 +5,9 @@ navigation: module
 
 # Illumination
 
-- [Direction Illuminates](direction-illuminates.md)
-- [Illuminated By Directions](illuminated-by-directions.md)
-- [External Point Illuminates](external-point-illuminates.md)
-- [Illuminated By External Points](illuminated-by-external-points.md)
-- [Directional Illumination Number](directional-illumination-number.md)
-- [External Point Illumination Number](external-point-illumination-number.md)
+- [Illumination by a direction](direction-illuminates.md)
+- [Illumination by $q$ directions](illuminated-by-directions.md)
+- [Illumination by an external point](external-point-illuminates.md)
+- [Illumination by $q$ external points](illuminated-by-external-points.md)
+- [Directional illumination number](directional-illumination-number.md)
+- [External-point illumination number](external-point-illumination-number.md)

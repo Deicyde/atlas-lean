@@ -7,11 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.angle_bisector_theorem_general
 ---
 
-# Angle bisector theorem general
+# Angle bisector theorem without distinctness hypotheses
 
-Forward direction of the angle bisector theorem, without the hypotheses `A ≠ B`, `A ≠ C`
-and `A ≠ D`, which follow from the others: if `AD` internally bisects angle `A` of triangle
-`ABC` with `D` strictly between `B` and `C`, then `BD / DC = AB / AC`.
+**Angle bisector theorem without distinctness hypotheses.** Let $A$, $B$, $C$, $D$ be points of
+a Euclidean affine space (a metric affine space over a real inner product space) with $A$, $B$, $C$
+affinely independent, so that $ABC$ is a nondegenerate triangle. If $D$ lies strictly between $B$
+and $C$ and $\angle BAD = \angle DAC$ (unoriented angles), then $BD / DC = AB / AC$.
+
+The hypotheses $A \ne B$, $A \ne C$ and $A \ne D$ of the usual statement are not needed: they
+follow from the others.
 
 ## Depends on
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.Dickson.K
 ---
 
-# K
+# Algebraic closure of the field with p elements
 
-An algebraic closure `K p` of the finite field `𝔽_p = ZMod p`.
+**Algebraic closure of the field with p elements.** For a prime $p$, $K_p$ denotes a fixed
+algebraic closure of the finite field $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$.
 
 ## Depends on
 

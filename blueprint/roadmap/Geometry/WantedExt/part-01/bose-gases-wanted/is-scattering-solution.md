@@ -6,16 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.BoseGasesWanted.BoseGases.IsScatteringSolution
 ---
 
-# Is Scattering Solution
+# Scattering solutions
 
-We say that `w : ℝ³ → ℝ` is a scattering solution to the scattering equation with potential
-`v` if `w` is locally integrable, `w x → 0` as `|x| → ∞`, and `w` satisfies the equation:
+**Scattering solutions.** Let $v, w : \mathbb{R}^3 \to \mathbb{R}$. The function $w$ is a
+scattering solution for the potential $v$ if $w$ and $v\,(1 - w)$ are locally integrable,
+$w(x) \to 0$ as $\|x\| \to \infty$, and $w$ solves the scattering equation
+$-\Delta w = \frac{1}{2} v\,(1 - w)$ (Equation (3.4) of Fournais–Solovej) in the weak sense:
+for every smooth, compactly supported $\varphi : \mathbb{R}^3 \to \mathbb{R}$,
 
-`- Δ w = 1/2 v (1 - w)` (Equation (3.4) in the paper)
-
-in the weak sense that `w, v(1 - w) ∈ L¹_loc (ℝ³)` and for any `φ ∈ C∞c(ℝ³)`
-
-`- ∫ w * (Δ φ) = (1 / 2) * ∫ v * (1 - w) * φ`.
+$$-\int_{\mathbb{R}^3} w\,\Delta\varphi = \frac{1}{2} \int_{\mathbb{R}^3} v\,(1 - w)\,\varphi.$$
 
 ## Depends on
 

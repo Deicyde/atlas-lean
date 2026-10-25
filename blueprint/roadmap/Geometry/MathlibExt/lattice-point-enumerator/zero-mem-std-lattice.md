@@ -7,13 +7,14 @@ proof: formalized
 lean: LatticePointEnumerator.zero_mem_stdLattice
 ---
 
-# Zero mem std Lattice
+# The origin is a lattice point
 
-The origin lies in the standard integer lattice.
+**The origin is a lattice point.** For every $d \in \mathbb{N}$, the origin of $\mathbb{R}^d$
+lies in the standard integer lattice $\mathbb{Z}^d$.
 
 ## Depends on
 
-- [Std Lattice](std-lattice.md)
+- [The standard integer lattice](std-lattice.md)
 
 ## Sources
 

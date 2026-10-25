@@ -6,10 +6,13 @@ statement: formalized
 lean: MoserConvexWormCoverConstant.lowerBoundWetzel1973
 ---
 
-# Lower Bound Wetzel1973
+# Wetzel's 1973 lower bound for the convex worm cover constant (claim)
 
-Source: Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc
-adaptation.
+**Wetzel's 1973 lower bound for the convex worm cover constant (claim).** This proposition
+asserts that $0.2194 \le \mu$, where $\mu$ is the convex worm cover constant: the infimum of the
+areas of the nonempty convex sets $\Omega \subseteq \mathbb{C}$ such that every continuous curve
+$\gamma : [0, 1] \to \mathbb{C}$ of length exactly $1$ can be moved into $\Omega$ by a rotation
+followed by a translation.
 
 ## Depends on
 
@@ -17,8 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Convex Worm Cover Constant](../../../MathlibExt/moser-worm-cover/convex-worm-cover-constant.md)
+- [Moser's convex worm cover constant](../../../MathlibExt/moser-worm-cover/convex-worm-cover-constant.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.MoserConvexWormCoverConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

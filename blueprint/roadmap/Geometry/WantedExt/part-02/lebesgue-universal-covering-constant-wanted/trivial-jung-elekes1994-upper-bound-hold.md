@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.trivialJungElekes1994UpperBound_holds
 ---
 
-# Trivial Jung Elekes1994 Upper Bound holds
+# Jung's bound for the Lebesgue covering problem
 
-Source: Jung's theorem, quoted in Elekes (1994), catalogue constant 13b.
+**Jung's bound for the Lebesgue covering problem.** The Lebesgue universal covering constant
+is at most $\pi/3$.
 
 ## Depends on
 
-- [Trivial Jung Elekes1994 Upper Bound](trivial-jung-elekes1994-upper-bound.md)
+- [Jung's upper bound for Lebesgue's universal covering constant (statement)](trivial-jung-elekes1994-upper-bound.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Jung's theorem, quoted in Elekes (1994), catalogue constant 13b.

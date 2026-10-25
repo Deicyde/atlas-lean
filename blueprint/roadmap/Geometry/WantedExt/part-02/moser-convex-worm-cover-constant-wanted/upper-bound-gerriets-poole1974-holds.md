@@ -6,14 +6,17 @@ statement: formalized
 lean: MoserConvexWormCoverConstant.upperBoundGerrietsPoole1974_holds
 ---
 
-# Upper Bound Gerriets Poole1974 holds
+# Gerriets–Poole upper bound for the convex worm cover constant
 
-Source: Optimization Problems, constant 13a, closed claim `upperBoundGerrietsPoole1974`.
+**Gerriets–Poole upper bound for the convex worm cover constant.** Moser's convex worm cover
+constant, the infimum of the areas of convex planar sets containing a rotated and translated copy
+of every planar curve of length $1$, is at most $0.2861$.
 
 ## Depends on
 
-- [Upper Bound Gerriets Poole1974](upper-bound-gerriets-poole1974.md)
+- [Statement of the Gerriets–Poole upper bound $0.2861$ for convex worm covers](upper-bound-gerriets-poole1974.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.MoserConvexWormCoverConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Optimization Problems, constant 13a, closed claim `upperBoundGerrietsPoole1974`.

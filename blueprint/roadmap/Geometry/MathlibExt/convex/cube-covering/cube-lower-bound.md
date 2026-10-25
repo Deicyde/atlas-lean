@@ -7,17 +7,19 @@ proof: formalized
 lean: ConvexCovering.cubeLowerBound
 ---
 
-# Cube Lower Bound
+# Uniform interior-translate bounds in dimension three are at least eight
 
-The classical three-dimensional lower-bound row.
+**Uniform interior-translate bounds in dimension three are at least eight.** If $q$ is a
+natural number such that every convex body $K \subseteq \mathbb{R}^3$ is contained in the union of
+$q$ translates of its interior $\operatorname{int} K$, then $8 \le q$.
 
 ## Depends on
 
-- [Uniform Interior Translate Bound](../covering/uniform-interior-translate-bound.md)
+- [Uniform bound for covering convex bodies by interior translates](../covering/uniform-interior-translate-bound.md)
 
 ## Proof depends on
 
-- [Uniform Interior Translate Bound ge two pow](uniform-interior-translate-bound-ge-two.md)
+- [Lower bound $2^n$ for uniform interior-translate covering](uniform-interior-translate-bound-ge-two.md)
 
 ## Sources
 

@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsOppositionMatching
 ---
 
-# Is Opposition Matching
+# Opposition matchings
 
-An opposition matching of `K`: a perfect matching such that for any two
-distinct matching edges `ab`, `cd` the graph `K` induces on `{a, b, c, d}` is
-`K₄`, `C₄`, or just the two matching edges; since both matching edges are
-present, this says exactly that `ac ∈ E ↔ bd ∈ E` and `ad ∈ E ↔ bc ∈ E`.
+**Opposition matchings.** Let $K$ be a graph. A subgraph $M$ of $K$ is an opposition matching
+of $K$ if it is a perfect matching of $K$ and for any two distinct edges $ab$ and $cd$ of $M$,
+$ac \in E(K) \iff bd \in E(K)$ and $ad \in E(K) \iff bc \in E(K)$.
+
+Since both matching edges are present, this says that $K$ induces on $\{a, b, c, d\}$ either
+$K_4$, a $4$-cycle, or just the two matching edges.
 
 ## Depends on
 

@@ -6,14 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.pal1920HexagonUpperBound_holds
 ---
 
-# Pal1920 Hexagon Upper Bound holds
+# Pál's hexagon bound
 
-Source: Pál, Über ein elementares Variationsproblem (1920), hexagon bound.
+**Pál's hexagon bound.** The Lebesgue universal covering constant is at most $\sqrt{3}/2$.
 
 ## Depends on
 
-- [Pal1920 Hexagon Upper Bound](pal1920-hexagon-upper-bound.md)
+- [Statement of Pál's hexagon bound](pal1920-hexagon-upper-bound.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Pál, Über ein elementares Variationsproblem (1920), hexagon bound.

@@ -7,19 +7,21 @@ proof: formalized
 lean: Metric.setBorsukNumber_le_iff
 ---
 
-# Set Borsuk Number le iff
+# Bounds on the Borsuk number of a set
 
-For a nonempty set, an upper bound on its least number is equivalent to an actual cover.
+**Bounds on the Borsuk number of a set.** For a nonempty set $s$ in the Euclidean space
+$\mathbb{R}^n$ and a natural number $k$, the Borsuk number of $s$ is at most $k$ if and only if
+$s$ has a $k$-piece Borsuk cover.
 
 ## Depends on
 
-- [Has Borsuk Cover](has-borsuk-cover.md)
-- [Set Borsuk Number](set-borsuk-number.md)
+- [Borsuk covers](has-borsuk-cover.md)
+- [Borsuk number of a set](set-borsuk-number.md)
 
 ## Proof depends on
 
 - [Has Borsuk Cover mono](has-borsuk-cover-mono.md)
-- [Set Borsuk Number le of cover](set-borsuk-number-le-of-cover.md)
+- [A Borsuk cover bounds the Borsuk number](set-borsuk-number-le-of-cover.md)
 
 ## Sources
 

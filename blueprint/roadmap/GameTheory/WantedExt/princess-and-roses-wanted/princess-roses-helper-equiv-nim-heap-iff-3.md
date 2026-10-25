@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.princessRosesHelper_equiv_nimHeap_iff_of_mem_D
 ---
 
-# Princess Roses Helper equiv nim Heap iff of mem D
+# Sprague–Grundy values of P&R Helper on region D
 
-On region `D`, the Sprague–Grundy value of a P&R Helper position `[x, y, z]` is
-`0, 1, …, 7` on the parity classes `[E, E, E], [E, E, O], [E, O, O], [E, O, E], [O, E, O],
-[O, E, E], [O, O, E], [O, O, O]`.
+**Sprague–Grundy values of P&R Helper on region D.** Let $x \le y \le z$ be natural numbers
+with $z \ge x + y$ and $y > 2x$ (the region $D$). For every natural number $n$, the P&R Helper
+game started at $[x, y, z]$ is equivalent to the Nim heap of size $n$ (that is, has
+Sprague–Grundy value $n$) if and only if $n$ is the number assigned to the parities of
+$(x, y, z)$ as follows: $0$ to (even, even, even), $1$ to (even, even, odd), $2$ to
+(even, odd, odd), $3$ to (even, odd, even), $4$ to (odd, even, odd), $5$ to (odd, even, even),
+$6$ to (odd, odd, even) and $7$ to (odd, odd, odd).
 
 ## Depends on
 
-- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
-- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
-- [Princess Roses Helper](princess-roses-helper.md)
+- [Equivalence of impartial games](../../MathlibExt/sprague-grundy/equiv.md)
+- [Nim heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [The P&R Helper game](princess-roses-helper.md)
 
 ## Sources
 

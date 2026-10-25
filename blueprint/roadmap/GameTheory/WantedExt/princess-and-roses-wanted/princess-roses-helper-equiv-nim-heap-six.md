@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.princessRosesHelper_equiv_nimHeap_six_iff_of_mem_U
 ---
 
-# Princess Roses Helper equiv nim Heap six iff of mem U
+# P&R Helper positions of Sprague–Grundy value 6 or 7 on region U
 
-On region `U`, a P&R Helper position has Sprague–Grundy value `6` if and only if it is
-`[x, x + 2, x + 5]` with `x ≡ 1 (mod 8)`, and it never has value `7`.
+**P&R Helper positions of Sprague–Grundy value 6 or 7 on region U.** For natural numbers
+$x \le y \le z$ with $z < x + y$ and $y \le 2x + 1$ (the region $U$), the P&R Helper game started
+at $[x, y, z]$ is equivalent to the Nim heap of size $6$ (that is, has Sprague–Grundy value $6$)
+if and only if $y = x + 2$, $z = x + 5$ and $x \equiv 1 \pmod 8$; and it is never equivalent to
+the Nim heap of size $7$.
 
 ## Depends on
 
-- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
-- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
-- [Princess Roses Helper](princess-roses-helper.md)
+- [Equivalence of impartial games](../../MathlibExt/sprague-grundy/equiv.md)
+- [Nim heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [The P&R Helper game](princess-roses-helper.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.FaryMilnorWanted.Geometry.FaryMilnorProblem.velocity
 ---
 
-# Velocity
+# Velocity of a space curve
 
-Velocity.
+**Velocity of a space curve.** For a curve $r \colon \mathbb{R} \to \mathbb{R}^3$ and a real
+number $t$, the velocity of $r$ at $t$ is its derivative $r'(t)$, taken to be $0$ when $r$ is not
+differentiable at $t$.
 
 ## Depends on
 
-- [Space](space.md)
+- [Euclidean 3-space](space.md)
 
 ## Sources
 

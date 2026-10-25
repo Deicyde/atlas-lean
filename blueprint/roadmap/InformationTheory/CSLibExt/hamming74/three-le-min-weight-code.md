@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.CodingTheory.Hamming74.three_le_minWeight_code
 ---
 
-# Three le min Weight code
+# The Hamming (7,4) code has minimum weight at least 3
 
-Every nonzero codeword has weight at least 3.
+**The Hamming (7,4) code has minimum weight at least 3.** Every nonzero codeword of the
+Hamming (7,4) code over $\mathbb{F}_2$ has at least $3$ nonzero coordinates; that is, the minimum
+weight of the code is at least $3$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Min Weight](../linear-code/min-weight.md)
+- [The Hamming (7,4) code](code.md)
+- [Minimum weight](../linear-code/min-weight.md)
 
 ## Proof depends on
 
-- [H](h.md)
-- [Linear Code](../linear-code/linear-code.md)
+- [Parity-check matrix of the Hamming (7,4) code](h.md)
+- [Linear code](../linear-code/linear-code.md)
 - [Syndrome](../linear-code/syndrome.md)
 
 ## Sources

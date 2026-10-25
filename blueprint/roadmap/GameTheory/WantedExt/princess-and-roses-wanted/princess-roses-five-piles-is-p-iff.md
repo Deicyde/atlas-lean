@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.princessRoses_five_piles_isP_iff
 ---
 
-# Princess Roses five piles is P iff
+# Lim's theorem on five-pile P&R
 
-Lim's theorem: a P&R position with five piles `a ≥ b ≥ c ≥ d ≥ e` is a P-position if and
-only if its parity pattern is `(E, E, E, E, E)`, `(O, O, O, E, E)`, `(E, O, O, O, O)` or
-`(O, E, E, O, O)`. Positions with fewer piles are the cases with trailing zero piles.
+**Lim's theorem on five-pile P&R.** Let $a \ge b \ge c \ge d \ge e$ be natural numbers. The
+Princess and the Roses position $(a, b, c, d, e)$ is a P-position if and only if the parities of
+$a, b, c, d, e$ are, in this order, (even, even, even, even, even), (odd, odd, odd, even, even),
+(even, odd, odd, odd, odd) or (odd, even, even, odd, odd).
+
+Positions with fewer piles are the cases with trailing zero piles.
 
 ## Depends on
 
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
-- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
-- [Princess Roses](princess-roses.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [P-positions](../../MathlibExt/sprague-grundy/is-p.md)
+- [The Princess and the Roses game](princess-roses.md)
 
 ## Sources
 

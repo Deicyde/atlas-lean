@@ -5,10 +5,10 @@ navigation: module
 
 # Sprague Grundy
 
-- [Impartial Game](impartial-game.md)
-- [Is P](is-p.md)
-- [Game Sum](game-sum.md)
-- [Nim Heap](nim-heap.md)
-- [Equiv](equiv.md)
-- [Is P iff](is-p-iff.md)
+- [Impartial game](impartial-game.md)
+- [P-positions](is-p.md)
+- [Sum of impartial games](game-sum.md)
+- [Nim heap](nim-heap.md)
+- [Equivalence of impartial games](equiv.md)
+- [Recursive characterization of P-positions](is-p-iff.md)
 - [Sprague grundy](sprague-grundy.md)

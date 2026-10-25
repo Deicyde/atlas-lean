@@ -6,18 +6,19 @@ proof: formalized
 lean: MovingSofa.square_canPassZAt_one
 ---
 
-# Square can Pass ZAt one
+# Z-corridor passage of the unit square at separation one
 
-The unit square passes the Z corridor at separation one.
+**Z-corridor passage of the unit square at separation one.** The unit square passes the Z
+corridor with corner separation $1$.
 
 ## Depends on
 
-- [Can Pass ZAt](can-pass-zat.md)
-- [Unit Square](unit-square.md)
+- [Passing the Z corridor at a given separation](can-pass-zat.md)
+- [Unit square](unit-square.md)
 
 ## Proof depends on
 
-- [Square can Pass ZAt](square-can-pass-zat.md)
+- [Z-corridor passage of the unit square](square-can-pass-zat.md)
 
 ## Sources
 

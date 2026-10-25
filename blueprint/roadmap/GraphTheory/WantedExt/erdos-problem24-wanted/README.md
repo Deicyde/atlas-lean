@@ -5,5 +5,5 @@ navigation: module
 
 # Erdos Problem24
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Pentagons in triangle-free graphs (Erdős Problem 24)](conjecture.md)
+- [Pentagon bound for triangle-free graphs (five-cycle case of Erdős Problem 24)](conjecture-holds.md)

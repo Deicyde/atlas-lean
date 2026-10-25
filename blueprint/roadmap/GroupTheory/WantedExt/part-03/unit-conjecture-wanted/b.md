@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.GroupTheory.UnitConjectureWanted.UnitConjecture.b
 ---
 
-# B
+# Second free generator of Gardam's presentation
 
-The second generator of the group `P` defined in Theorem A of the paper.
+**Second free generator of Gardam's presentation.** $b$ is the generator $b$, viewed as an
+element of the free group on the two generators $a$ and $b$.
 
 ## Depends on
 
-- [Generators](generators.md)
+- [Generators of Gardam's presentation](generators.md)
 
 ## Sources
 

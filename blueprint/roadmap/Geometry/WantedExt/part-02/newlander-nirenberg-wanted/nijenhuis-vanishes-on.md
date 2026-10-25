@@ -6,21 +6,26 @@ statement: formalized
 lean: MathlibExt.Geometry.NewlanderNirenbergWanted.Geometry.NewlanderNirenberg.NijenhuisVanishesOn
 ---
 
-# Nijenhuis Vanishes On
+# Vanishing of the Nijenhuis tensor on a set
 
-The Nijenhuis tensor of `J` vanishes on `U`. This is stated for all
-globally smooth vector fields, which is the textbook hypothesis. Whenever `U`
-is open and `IsAlmostComplexOn J U` holds it is equivalent to the pointwise
-condition: the tensor is bilinear over functions, and constant vector fields
-already realize every pair of tangent vectors.
+**Vanishing of the Nijenhuis tensor on a set.** Let $n$ be a natural number, let
+$U \subseteq \mathbb{R}^{2n}$, let $J$ assign to each point $y \in \mathbb{R}^{2n}$ a real linear
+map $J(y) : \mathbb{R}^{2n} \to \mathbb{R}^{2n}$, and write $N$ for the Nijenhuis tensor of $J$.
+The Nijenhuis tensor of $J$ vanishes on $U$ if $N(V, W)(x) = 0$ for all $C^\infty$ vector fields
+$V, W : \mathbb{R}^{2n} \to \mathbb{R}^{2n}$ and every $x \in U$.
+
+The vector fields range over globally smooth fields, which is the textbook hypothesis. Whenever
+$U$ is open and $J$ is an almost complex structure on $U$ this is equivalent to the pointwise
+condition: the tensor is bilinear over functions, and constant vector fields already realize
+every pair of tangent vectors.
 
 ## Depends on
 
-- [E](e.md)
+- [Model space $\mathbb{R}^{2n}$ for the Newlander–Nirenberg theorem](e.md)
 
 ## Proof depends on
 
-- [Nijenhuis](nijenhuis.md)
+- [Nijenhuis tensor](nijenhuis.md)
 
 ## Sources
 

@@ -14,11 +14,11 @@ triples.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean 3-space](r3.md)
 
 ## Proof depends on
 
-- [Circumradius ENN](circumradius-enn.md)
+- [Extended circumradius of three points](circumradius-enn.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Pan Vandermonde
 
-- [Pan vandermonde general](pan-vandermonde-general.md)
-- [Pan vandermonde](pan-vandermonde.md)
+- [Generalized factorial matrices: decomposition, determinant and inverse](pan-vandermonde-general.md)
+- [Pan's theorem on generalized factorial matrices](pan-vandermonde.md)

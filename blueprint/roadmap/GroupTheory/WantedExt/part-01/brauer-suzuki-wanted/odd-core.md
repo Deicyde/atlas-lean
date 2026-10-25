@@ -6,17 +6,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.BrauerSuzukiWanted.GroupTheory.Defs.oddCore
 ---
 
-# Odd Core
+# Odd core of a group
 
-`oddCore G` is the largest normal subgroup of `G` of odd order — the
-supremum of all normal subgroups whose cardinality is odd. Classically
-denoted `O(G)` (in older notation `O_{2'}(G)`).
+**Odd core of a group.** The odd core $O(G)$ of a group $G$ is the supremum, in the lattice of
+subgroups of $G$, of all normal subgroups of $G$ whose order is finite and odd.
 
-For a finite group, the join of two normal odd-order subgroups is again
-a normal odd-order subgroup, and finiteness bounds the chain — so the
-supremum is itself a normal subgroup of odd order, agreeing with the
-textbook definition. For an infinite group the definition still makes
-sense as a subgroup, though it need not be of odd order.
+For a finite group this is the largest normal subgroup of odd order, classically denoted $O(G)$
+(in older notation $O_{2'}(G)$): the join of two normal subgroups of odd order is again a normal
+subgroup of odd order, so the supremum is itself one. For an infinite group the definition still
+makes sense as a subgroup, though it need not be of odd order.
 
 ## Depends on
 

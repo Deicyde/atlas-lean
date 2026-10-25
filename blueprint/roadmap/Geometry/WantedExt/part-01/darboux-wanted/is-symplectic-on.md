@@ -6,15 +6,18 @@ statement: formalized
 lean: MathlibExt.Geometry.DarbouxWanted.Geometry.Darboux.IsSymplecticOn
 ---
 
-# Is Symplectic On
+# Symplectic 2-form fields
 
-A 2-form field `α` on an open set `U ⊆ ℝ^{2n}` is **symplectic** on `U`
-if it is smooth on `U`, closed on `U` (`dα = 0`), and pointwise
-non-degenerate.
+**Symplectic 2-form fields.** Let $n$ be a natural number and $U$ a subset of
+$\mathbb{R}^{2n}$. A field $\alpha$ of continuous alternating 2-forms on $\mathbb{R}^{2n}$ is
+symplectic on $U$ if $\alpha$ is $C^\infty$ on $U$, its exterior derivative $d\alpha$ vanishes
+at every point of $U$, and $\alpha$ is non-degenerate at every point of $U$: for every $x \in U$
+and every nonzero $v \in \mathbb{R}^{2n}$ there is $w \in \mathbb{R}^{2n}$ with
+$\alpha(x)(v, w) \neq 0$.
 
 ## Depends on
 
-- [E](e.md)
+- [Model space $\mathbb{R}^{2n}$ for Darboux's theorem](e.md)
 
 ## Sources
 

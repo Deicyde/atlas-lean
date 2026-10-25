@@ -6,16 +6,17 @@ statement: formalized
 lean: MathlibExt.GraphTheory.ErdosProblem63Wanted.conjecture_holds
 ---
 
-# Conjecture holds
+# Erdős Problem 63 (Liu–Montgomery)
 
-Resolved true: Resolved true (Liu–Montgomery [LiMo20]), per erdosproblems.com/63. Source:
-Liu–Montgomery [LiMo20], per erdosproblems.com/63, https://www.erdosproblems.com/63. Moved from
-`OpenConjectures/GraphTheory/ErdosProblem63`.
+**Erdős Problem 63 (Liu–Montgomery).** Every simple graph $G$ with infinite chromatic number has
+cycles of length $2^n$ for infinitely many $n$: for every natural number $N$ there is some
+$n \ge N$ such that $G$ contains a cycle of length $2^n$.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Statement of Erdős Problem 63](conjecture.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.ErdosProblem63Wanted](../../../../sources/v2/WantedExt.md)
+- Liu–Montgomery [LiMo20], per erdosproblems.com/63, https://www.erdosproblems.com/63. Moved from `OpenConjectures/GraphTheory/ErdosProblem63`.

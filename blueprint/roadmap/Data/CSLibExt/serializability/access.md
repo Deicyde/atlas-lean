@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Databases.Access
 ---
 
-# Access
+# Read or write access
 
-Whether an operation reads or writes its item.
+**Read or write access.** The kind of access an operation makes to its data item is one of
+two values: a read or a write.
 
 ## Depends on
 

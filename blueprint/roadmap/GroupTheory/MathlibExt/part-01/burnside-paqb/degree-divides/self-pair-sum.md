@@ -7,9 +7,11 @@ proof: formalized
 lean: BurnsidePaqb.self_pair_sum
 ---
 
-# Self pair sum
+# Self-orthogonality of an irreducible character
 
-Row orthogonality, self-pairing: `∑ g, χ g * χ g⁻¹ = |G|`.
+**Self-orthogonality of an irreducible character.** Let $\rho$ be an irreducible representation
+of a finite group $G$ on a finite-dimensional complex vector space, with character $\chi$. Then
+$\sum_{g \in G} \chi(g)\chi(g^{-1}) = |G|$.
 
 ## Depends on
 

@@ -16,8 +16,8 @@ period `[0, 2π]`.
 
 ## Proof depends on
 
-- [R3](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
-- [Contour Length](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/contour-length.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Contour length](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/contour-length.md)
 - [Parametrized Knot](parametrized-knot.md)
 
 ## Sources

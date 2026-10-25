@@ -6,15 +6,17 @@ proof: formalized
 lean: MathieuGroup.m23_le_iff
 ---
 
-# M23 le iff
+# Subgroups containing $M_{23}$
 
-A subgroup contains `M23` exactly when it contains the two standard generators.
+**Subgroups containing $M_{23}$.** A subgroup $H$ of the symmetric group on
+$\{0, 1, \dots, 22\}$ contains the Mathieu group $M_{23}$ if and only if $H$ contains both the
+standard 23-cycle and the standard product of four 5-cycles that generate $M_{23}$.
 
 ## Depends on
 
-- [M23](m23.md)
-- [M23 Cycle](m23-cycle.md)
-- [M23 Five Cycles](m23-five-cycles.md)
+- [The Mathieu group $M_{23}$](m23.md)
+- [The standard 23-cycle in $M_{23}$](m23-cycle.md)
+- [The standard product of four 5-cycles in $M_{23}$](m23-five-cycles.md)
 
 ## Sources
 

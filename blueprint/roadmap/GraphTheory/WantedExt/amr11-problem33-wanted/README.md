@@ -7,11 +7,11 @@ navigation: module
 
 ## AMR11 Q33
 
-- [Regular Cayley Graph](regular-cayley-graph.md)
-- [First Return Prob](first-return-prob.md)
-- [Return Prob](return-prob.md)
-- [Return Prob Uniform Gap](return-prob-uniform-gap.md)
+- [Regular Cayley graph](regular-cayley-graph.md)
+- [First-return probability](first-return-prob.md)
+- [Return probability](return-prob.md)
+- [Uniform return-probability gap](return-prob-uniform-gap.md)
 
 ## AMR11 Problem33 Wanted
 
-- [Return Prob Uniform Gap holds](return-prob-uniform-gap-holds.md)
+- [Uniform return-probability gap for transient Cayley graphs](return-prob-uniform-gap-holds.md)

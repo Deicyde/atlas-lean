@@ -6,9 +6,11 @@ statement: formalized
 lean: ConvexCovering.directionalIlluminationNumber
 ---
 
-# Directional Illumination Number
+# Directional illumination number
 
-The least directional count, with infinity if no finite family exists.
+**Directional illumination number.** The directional illumination number of a set
+$K \subseteq \mathbb{R}^n$ is the least natural number $q$ such that $K$ is illuminated by $q$
+directions, and $\infty$ if there is no such $q$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Illuminated By Directions](illuminated-by-directions.md)
+- [Illumination by $q$ directions](illuminated-by-directions.md)
 
 ## Sources
 

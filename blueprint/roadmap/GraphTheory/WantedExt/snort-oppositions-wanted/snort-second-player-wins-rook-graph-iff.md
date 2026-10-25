@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.snortSecondPlayerWins_rookGraph_iff
 ---
 
-# Snort Second Player Wins rook Graph iff
+# Snort on the rook's graph
 
-The second player wins the Peaceable Rooks game on `n × m` iff `n` and `m`
-are both even.
+**Snort on the rook's graph.** For natural numbers $n \ge 1$ and $m \ge 1$, the
+second player wins Snort on the rook's graph of the $n \times m$ board (the Peaceable
+Rooks game) if and only if $n$ and $m$ are both even.
 
 ## Depends on
 
-- [Snort Second Player Wins](snort-second-player-wins.md)
+- [Second-player win in Snort](snort-second-player-wins.md)
 - [Rook graph](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-04/rook-graph/rook-graph.md)
 
 ## Sources

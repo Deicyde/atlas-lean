@@ -6,9 +6,14 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.hansen1992CorrectedBBG2015UpperBound
 ---
 
-# Hansen1992 Corrected BBG2015 Upper Bound
+# Statement of Hansen's corrected upper bound
 
-Hansen's finite-decimal upper bound, corrected by Baez, Bagdasaryan and Gibbs.
+**Statement of Hansen's corrected upper bound.** This proposition states that the Lebesgue
+universal covering constant, the infimum of the areas of the nonempty convex sets in the Euclidean
+plane that contain a congruent copy of every nonempty convex planar set of diameter $1$, is at most
+$0.844137708398$.
+
+This is Hansen's finite-decimal upper bound, as corrected by Baez, Bagdasaryan and Gibbs.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+- [Lebesgue universal covering constant](lebesgue-universal-covering-constant.md)
 
 ## Sources
 

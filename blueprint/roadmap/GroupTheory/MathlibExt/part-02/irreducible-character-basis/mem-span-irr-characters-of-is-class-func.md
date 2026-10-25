@@ -7,9 +7,13 @@ proof: formalized
 lean: MathlibExt.GroupTheory.IrreducibleCharacterBasisWanted.mem_span_irrCharacters_of_isClassFunction
 ---
 
-# Mem span irr Characters of is Class Function
+# Irreducible characters span the class functions
 
-Every class function is a linear combination of irreducible characters.
+**Irreducible characters span the class functions.** Let $G$ be a finite group and let
+$f : G \to \mathbb{C}$ satisfy $f(hgh^{-1}) = f(g)$ for all $g, h \in G$. Then $f$ is a
+$\mathbb{C}$-linear combination of irreducible complex characters of $G$, that is, of functions
+$G \to \mathbb{C}$ that are the character of some simple finite-dimensional complex representation
+of $G$.
 
 Proof: Subtract the orthogonal projection onto the irreducible characters. The
 remainder vanishes by Schur's lemma, Maschke's theorem, and the regular
@@ -22,9 +26,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eq zero of is Class Function of orthogonal](eq-zero-of-is-class-function-of-orthogon.md)
-- [Character is Class Function](../../part-01/class-function/character-is-class-function.md)
-- [Linear Independent irr Characters](linear-independent-irr-characters.md)
+- [A class function orthogonal to all irreducible characters vanishes](eq-zero-of-is-class-function-of-orthogon.md)
+- [Characters are class functions](../../part-01/class-function/character-is-class-function.md)
+- [Irreducible characters are linearly independent](linear-independent-irr-characters.md)
 
 ## Sources
 

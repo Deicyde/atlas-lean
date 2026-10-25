@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.arch_branch_levels
 ---
 
-# Arch branch levels
+# Levels of the branches of an arch
 
-Branches of an arch. If `a/b` (a right/female vertex, `a > b`) and `c/d` (a left/male
-vertex, `c < d`) are the top left and right positions of an arch, the left branch descends by
-nieces and the right branch by nephews: level `k` of the left branch (level `0` the top) is the
-daughter of the `k`-fold son of the parent `(a-b)/b`, equal to `((k+1)a - kb)/(ka - (k-1)b)`, and
-level `k` of the right branch is the son of the `k`-fold daughter of the parent `c/(d-c)`, equal
-to `(kd - (k-1)c)/((k+1)d - kc)`. The arch-top hypothesis is dropped: the formulas hold for every
-such pair.
+**Levels of the branches of an arch.** On numerator–denominator pairs write
+$s(x, y) = (x, x + y)$ for the son and $t(x, y) = (x + y, y)$ for the daughter of a vertex of the
+Calkin–Wilf tree. Let $a, b, c, d, k$ be natural numbers with $0 < b < a$ and $0 < c < d$. Then
+$t(s^k(a - b, b))$, the daughter of the $k$-fold son of $(a - b, b)$, has first entry
+$(k+1)a - kb$ and second entry $ka - (k-1)b$, and $s(t^k(c, d - c))$, the son of the $k$-fold
+daughter of $(c, d - c)$, has first entry $kd - (k-1)c$ and second entry $(k+1)d - kc$, the
+right-hand sides computed in the integers.
+
+When $a/b$ and $c/d$ are the left and right tops of an arch, these pairs are level $k$ (level $0$
+the top) of its left branch, which descends by nieces, and of its right branch, which descends by
+nephews; the formulas hold without the arch-top hypothesis.
 
 ## Depends on
 

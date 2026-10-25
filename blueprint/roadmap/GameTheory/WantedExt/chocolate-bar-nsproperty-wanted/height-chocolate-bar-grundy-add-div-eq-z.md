@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.heightChocolateBarGrundy_add_div_eq_zero_iff
 ---
 
-# Height Chocolate Bar Grundy add div eq zero iff
+# P-positions of a three-dimensional chocolate bar with floor-quotient height
 
-For `F (w, x) = ⌊(w + x) / k⌋` with `k = 4m + 3`, a bar position `y ≤ F (w, x)` of
-`CB(F, 0, w, x, y, 0)` is a P-position (Grundy number `0`) iff `w ⊕ x ⊕ y = 0`.
+**P-positions of a three-dimensional chocolate bar with floor-quotient height.** Let $k$ be a
+natural number with $k \equiv 3 \pmod 4$, and let $F(w, x) = \lfloor (w + x) / k \rfloor$. For
+all $w, x, y \in \mathbb{N}$ with $y \le F(w, x)$, the three-dimensional chocolate bar
+$\mathrm{CB}(F, w, x, y)$ has Grundy number $0$ (is a P-position) if and only if
+$w \oplus x \oplus y = 0$, where $\oplus$ denotes nim-sum (bitwise exclusive or).
 
 ## Depends on
 
-- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
+- [Grundy number of a chocolate bar with a height function](height-chocolate-bar-grundy.md)
 
 ## Sources
 

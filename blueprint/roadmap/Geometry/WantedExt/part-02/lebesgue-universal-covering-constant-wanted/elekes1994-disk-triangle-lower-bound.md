@@ -6,9 +6,13 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.elekes1994DiskTriangleLowerBound
 ---
 
-# Elekes1994 Disk Triangle Lower Bound
+# Statement of Elekes's disk-and-triangle lower bound
 
-Elekes's disk-and-triangle finite-decimal lower bound.
+**Statement of Elekes's disk-and-triangle lower bound.** This is the proposition that the
+Lebesgue universal covering constant (the infimum of the areas of universal convex covers) is at
+least $0.8257$.
+
+The bound comes from simultaneously covering a disk and an equilateral triangle of diameter $1$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+- [Lebesgue universal covering constant](lebesgue-universal-covering-constant.md)
 
 ## Sources
 

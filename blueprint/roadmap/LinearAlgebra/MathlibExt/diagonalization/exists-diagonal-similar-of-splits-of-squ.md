@@ -7,14 +7,18 @@ proof: formalized
 lean: MathlibExt.LinearAlgebra.DiagonalizationWanted.exists_diagonal_similar_of_splits_of_squarefree_minpoly
 ---
 
-# Exists diagonal similar of splits of squarefree minpoly
+# Diagonalizability from a split characteristic polynomial and a squarefree minimal polynomial
 
-A square matrix whose characteristic polynomial splits and whose minimal polynomial is
-squarefree is similar to a diagonal matrix.
+**Diagonalizability from a split characteristic polynomial and a squarefree minimal polynomial.**
+Let $K$ be a field and let $A$ be a square matrix over $K$ with rows and columns indexed by a
+finite type $n$. If the characteristic polynomial of $A$ splits over $K$ and the minimal
+polynomial of $A$ (that is, of the linear map $x \mapsto Ax$ on $K^n$) is squarefree, then there
+are matrices $P$ and $D$ over $K$ indexed by $n$, with $D$ diagonal and $P$ invertible, such that
+$A = P D P^{-1}$.
 
-Proof: a squarefree minimal polynomial makes `Matrix.toLin' A` semisimple, so it has an eigenbasis
-by `exists_eigenbasis_of_isSemisimple_of_splits`; conjugating by the change-of-basis matrix from
-the standard basis gives the diagonal form.
+Proof: A squarefree minimal polynomial makes the linear map $x \mapsto Ax$ semisimple, so it has a
+basis of eigenvectors by the eigenbasis theorem for semisimple endomorphisms; conjugating by the
+change-of-basis matrix from the standard basis gives the diagonal form.
 
 ## Depends on
 

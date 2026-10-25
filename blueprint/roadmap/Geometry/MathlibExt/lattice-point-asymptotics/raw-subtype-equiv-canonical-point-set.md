@@ -6,20 +6,20 @@ statement: formalized
 lean: LatticePointAsymptotics.rawSubtypeEquivCanonicalPointSet
 ---
 
-# Raw Subtype Equiv Canonical Point Set
+# Integer points of a dilate
 
-Compatibility equiv between the raw integer subtype and the subtype of the
-canonical `LatticePointEnumerator.latticePointSet`, for `0 < t`, proved directly
-via `Equiv.ofBijective` on the coordinatewise cast map.
+**Integer points of a dilate.** Let $S \subseteq \mathbb{R}^n$ and $t > 0$. Viewing an
+integer vector as a real vector gives a bijection from the set of $x \in \mathbb{Z}^n$ with
+$x / t \in S$ onto the lattice point set $tS \cap \mathbb{Z}^n$.
 
 ## Depends on
 
-- [Lattice Point Set](../lattice-point-enumerator/lattice-point-set.md)
+- [Lattice points in a dilate](../lattice-point-enumerator/lattice-point-set.md)
 
 ## Proof depends on
 
-- [Mem std Lattice iff](../lattice-point-enumerator/mem-std-lattice-iff.md)
-- [Std Lattice](../lattice-point-enumerator/std-lattice.md)
+- [Membership in the standard lattice](../lattice-point-enumerator/mem-std-lattice-iff.md)
+- [The standard integer lattice](../lattice-point-enumerator/std-lattice.md)
 
 ## Sources
 

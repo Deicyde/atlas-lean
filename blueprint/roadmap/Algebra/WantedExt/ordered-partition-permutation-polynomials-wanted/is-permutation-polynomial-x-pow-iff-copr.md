@@ -16,7 +16,7 @@ holds, but $X^0 = 1$ is constant.
 
 ## Depends on
 
-- [Is Permutation Polynomial](../../../FieldTheory/MathlibExt/finite/permutation-polynomial/is-permutation-polynomial.md)
+- [Permutation polynomial over a finite field](../../../FieldTheory/MathlibExt/finite/permutation-polynomial/is-permutation-polynomial.md)
 
 ## Sources
 

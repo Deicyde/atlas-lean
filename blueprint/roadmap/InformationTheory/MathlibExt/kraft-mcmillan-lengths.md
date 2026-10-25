@@ -7,18 +7,21 @@ proof: formalized
 lean: MathlibExt.InformationTheory.KraftMcMillan.kraft_mcmillan_lengths
 ---
 
-# Kraft Mc Millan
+# Kraft's inequality for prefix codes
 
-Finite prefix-code lengths iff the Kraft sum is at most one.
+**Kraft's inequality for prefix codes.** Let $\alpha$ be a finite set of source symbols,
+let $\beta$ be a finite alphabet with $D \ge 2$ letters, and let $l : \alpha \to \mathbb{N}$.
+There is a prefix-free code assigning to each $a \in \alpha$ a word over $\beta$ of length
+$l(a)$ if and only if $\sum_{a \in \alpha} D^{-l(a)} \le 1$.
 
 ## Depends on
 
-- [Is Prefix Free](prefix-free/is-prefix-free.md)
+- [Prefix-free code](prefix-free/is-prefix-free.md)
 
 ## Proof depends on
 
-- [Eq of mem nil](prefix-free/eq-of-mem-nil.md)
-- [Injective](prefix-free/injective.md)
+- [A prefix-free code with an empty codeword has one symbol](prefix-free/eq-of-mem-nil.md)
+- [Prefix-free codes are injective](prefix-free/injective.md)
 
 ## Sources
 

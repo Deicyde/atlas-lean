@@ -7,19 +7,21 @@ proof: formalized
 lean: BurnsidePaqb.Irr.charFun_one
 ---
 
-# Char Fun one
+# Character value at the identity
 
-The character at `1` is the degree.
+**Character value at the identity.** Let $G$ be a group and let $c$ be an isomorphism class of
+simple finite-dimensional complex representations of $G$. The character of $c$ at the identity
+$1 \in G$ equals the dimension over $\mathbb{C}$ of the chosen representative of $c$.
 
 ## Depends on
 
-- [Irr](irr.md)
-- [Char Fun](char-fun.md)
-- [Rep Bundle](rep-bundle.md)
+- [Isomorphism classes of simple representations](irr.md)
+- [Character of an isomorphism class](char-fun.md)
+- [Chosen representative of an isomorphism class](rep-bundle.md)
 
 ## Proof depends on
 
-- [Iso Setoid](iso-setoid.md)
+- [Isomorphism of simple representations](iso-setoid.md)
 
 ## Sources
 

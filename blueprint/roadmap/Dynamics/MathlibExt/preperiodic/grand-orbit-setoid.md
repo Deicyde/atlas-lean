@@ -6,9 +6,11 @@ statement: formalized
 lean: Function.grandOrbitSetoid
 ---
 
-# Grand Orbit Setoid
+# Grand orbit equivalence relation
 
-The setoid whose classes are grand orbits of `f`.
+**Grand orbit equivalence relation.** For a self-map $f$ of a set $X$, the relation on $X$ in
+which $x \sim y$ when $f^m(x) = f^n(y)$ for some natural numbers $m$ and $n$ is an equivalence
+relation; its equivalence classes are the grand orbits of $f$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Grand Orbit Rel](grand-orbit-rel.md)
+- [Grand orbit relation](grand-orbit-rel.md)
 
 ## Sources
 

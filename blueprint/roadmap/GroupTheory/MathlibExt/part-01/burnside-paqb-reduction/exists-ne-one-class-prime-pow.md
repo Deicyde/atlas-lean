@@ -7,19 +7,23 @@ proof: formalized
 lean: BurnsidePaqb.exists_ne_one_class_prime_pow
 ---
 
-# Exists ne one class prime pow
+# A nontrivial element whose class size is a power of $p$
 
-A Sylow-center element has prime-power conjugacy class. From `|G| = p^a q^b`
-with `b ≥ 1`, get `g ≠ 1` in the center of a Sylow `q`-subgroup whose class has
-size `p^k`, `k ≤ a`.
+**A nontrivial element whose class size is a power of $p$.** Let $p$ and $q$ be primes, let
+$a$ and $b$ be natural numbers with $b \ge 1$, and let $G$ be a finite group of order
+$p^a q^b$. Then there are an element $g \ne 1$ of $G$ and a natural number $k \le a$ such that
+the conjugacy class of $g$ has exactly $p^k$ elements.
+
+In the proof, $g$ is a nontrivial element of the center of a subgroup of $G$ of order $q^b$
+(a Sylow $q$-subgroup when $p \ne q$).
 
 ## Depends on
 
-- [Conj Class](conj-class.md)
+- [Conjugacy class](conj-class.md)
 
 ## Proof depends on
 
-- [Conj Class card mul centralizer card](conj-class-card-mul-centralizer-card.md)
+- [Class size times centralizer order](conj-class-card-mul-centralizer-card.md)
 
 ## Sources
 

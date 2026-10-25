@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.nimPassIndicator_sections_hasNSProperty_iff
 ---
 
-# Nim Pass Indicator sections has NSProperty iff
+# Sections of the Nim pass indicator with the NS property
 
-For positive thresholds `m i`, every section `t ↦ nimPassIndicator m (x[i ↦ t])` has the NS
-property iff every `m i` is even.
+**Sections of the Nim pass indicator with the NS property.** Let $s \in \mathbb{N}$ and
+$m \in \mathbb{N}^s$ with $m_i > 0$ for every $i < s$, and let $F : \mathbb{N}^s \to \mathbb{N}$ be
+the pass indicator of $m$: $F(x) = 1$ if $m_j \le x_j$ for some $j$, and $F(x) = 0$ otherwise.
+For $x \in \mathbb{N}^s$, $i < s$ and $t \in \mathbb{N}$ write $x[i \mapsto t]$ for $x$ with its
+$i$-th coordinate replaced by $t$. Then the following are equivalent: (a) for all
+$x \in \mathbb{N}^s$ and $i < s$, the function $t \mapsto F(x[i \mapsto t])$ has the NS property;
+(b) $m_i$ is even for every $i < s$.
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
-- [Nim Pass Indicator](nim-pass-indicator.md)
+- [NS property](has-nsproperty.md)
+- [Pass indicator of Nim with a restricted pass](nim-pass-indicator.md)
 
 ## Sources
 

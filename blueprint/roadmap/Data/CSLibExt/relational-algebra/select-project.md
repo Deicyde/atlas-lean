@@ -12,17 +12,17 @@ Selection commutes with a projection that keeps the attributes of the condition.
 
 ## Depends on
 
-- [Cond](cond.md)
+- [Selection conditions](cond.md)
 - [Attributes of a selection condition](attrs.md)
 - [Tuple](tuple.md)
-- [Project](project.md)
-- [Select](select.md)
+- [Projection of a relation](project.md)
+- [Selection](select.md)
 
 ## Proof depends on
 
-- [Eval](eval.md)
-- [Eval restrict](eval-restrict.md)
-- [Restrict](restrict.md)
+- [Truth value of a selection condition](eval.md)
+- [Selection conditions depend only on their attributes](eval-restrict.md)
+- [Restriction of a tuple](restrict.md)
 
 ## Sources
 

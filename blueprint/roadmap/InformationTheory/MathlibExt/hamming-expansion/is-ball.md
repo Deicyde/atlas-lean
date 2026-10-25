@@ -6,10 +6,12 @@ statement: formalized
 lean: Hamming.IsBall
 ---
 
-# Is Ball
+# Hamming ball predicate
 
-A subset `B` of the Hamming space is a Hamming ball if `B = ball c e`
-for some center `c` and radius `e`.
+**Hamming ball predicate.** Let $\iota$ and $F$ be finite, and view functions $\iota \to F$
+as words with the Hamming distance. A set $B$ of words is a Hamming ball if there are a word
+$c$ and a radius $e \in \mathbb{N}$ such that $B$ is the closed Hamming ball of radius $e$
+about $c$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ball](../hamming-ball/ball.md)
+- [Closed Hamming ball](../hamming-ball/ball.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: Metric.dimensionBorsukNumber
 ---
 
-# Dimension Borsuk Number
+# Borsuk number of a Euclidean space
 
-The supremum of set Borsuk numbers over bounded sets with at least two points.
+**Borsuk number of a Euclidean space.** For a natural number $n$, the Borsuk number of the
+Euclidean space $\mathbb{R}^n$ is the supremum, in $\mathbb{N} \cup \{\infty\}$, of the Borsuk
+numbers of the bounded subsets of $\mathbb{R}^n$ with at least two points.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Set Borsuk Number](set-borsuk-number.md)
+- [Borsuk number of a set](set-borsuk-number.md)
 
 ## Sources
 

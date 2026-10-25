@@ -7,10 +7,11 @@ proof: formalized
 lean: Matrix.exists_unitaryGroup_posSemidef
 ---
 
-# Exists unitary Group pos Semidef
+# Polar decomposition of a complex square matrix
 
-Polar decomposition: every square complex matrix is `U * P` for some
-`U : Matrix.unitaryGroup n ℂ` and positive semidefinite `P` with `P * P = Aᴴ * A`.
+**Polar decomposition of a complex square matrix.** Let $A$ be a square complex matrix indexed by
+a finite type, and let $A^*$ be its conjugate transpose. Then there are a unitary matrix $U$ and a
+positive semidefinite matrix $P$ such that $P^2 = A^* A$ and $A = UP$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [SVD](../exists-unitary-group-diagonal-nonneg.md)
+- [Singular value decomposition of a complex square matrix](../exists-unitary-group-diagonal-nonneg.md)
 
 ## Sources
 

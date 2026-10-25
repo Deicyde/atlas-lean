@@ -7,15 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.IsNuLambdaPascalMatrix.interior
 ---
 
-# Interior
+# Interior recurrence of a nu-lambda Pascal matrix
 
-Interior clause `interior` of concept `jis_sem_48e0bb143520a73f6b828a27`
-(source statement `jis_445c3486a9ca32dba0e8a333`): the two-parameter recurrence
-involving `lam` and `nu`.
+**Interior recurrence of a nu-lambda Pascal matrix.** Let $N$ and $n$ be natural numbers
+with $n > 0$, let $\nu, \lambda \in \mathbb{C}$ and $\beta_0, \dots, \beta_{N-1} \in \mathbb{C}$,
+and let $S = (S_{i,j})_{i,j \ge 0}$ be a $(\nu, \lambda)$-Pascal matrix of size $2n$ with
+coefficients $\beta$. Then for all $i, j < 2n - 1$,
+$S_{i,j} = \lambda S_{i+1,j+1} + \nu (S_{i+1,j} + S_{i,j+1})$.
 
 ## Depends on
 
-- [Is Nu Lambda Pascal Matrix](is-nu-lambda-pascal-matrix.md)
+- [Nu-lambda Pascal matrix with coefficients](is-nu-lambda-pascal-matrix.md)
 
 ## Sources
 

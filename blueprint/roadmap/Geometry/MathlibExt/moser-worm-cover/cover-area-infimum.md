@@ -6,10 +6,12 @@ statement: formalized
 lean: MoserConvexWormCoverConstant.coverAreaInfimum
 ---
 
-# Cover Area Infimum
+# Infimal area of a universal cover
 
-Source: Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc
-adaptation.
+**Infimal area of a universal cover.** The infimum in $[0, \infty]$ of the areas
+$\lambda(\Omega)$ of the universal covers $\Omega \subseteq \mathbb{C}$, where $\lambda$ is
+Lebesgue measure on $\mathbb{C} \cong \mathbb{R}^2$, applied as an outer measure since $\Omega$
+need not be measurable.
 
 ## Depends on
 
@@ -17,8 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cover Areas](cover-areas.md)
+- [Areas of universal covers](cover-areas.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../sources/v2/MathlibExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

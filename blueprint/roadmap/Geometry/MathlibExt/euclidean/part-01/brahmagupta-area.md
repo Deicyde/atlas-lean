@@ -7,17 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.brahmagupta_area
 ---
 
-# Brahmagupta Area
+# Brahmagupta's formula
 
-Brahmagupta's formula (https://en.wikipedia.org/wiki/Brahmagupta%27s_formula): a cyclic
-    quadrilateral with sides `a`, `b`, `c`, `d` and semiperimeter `s` has area
-    `√((s - a) * (s - b) * (s - c) * (s - d))`. Vertices `P Q R S` lie in the
-    Euclidean plane; cyclicity is stated via a circumcenter `O` at equal
-    distance from all four vertices; convex cyclic order `P, Q, R, S` is enforced
-    by an interior diagonal-intersection point `T` lying strictly inside both
-    segments `P-R` and `Q-S` (dist-additivity with positive parts); `A` is the
-    polygon area, stated as the triangle-sum of the two Heron areas over the
-    diagonal `e = dist P R`.
+**Brahmagupta's formula.** Let $P, Q, R, S$ be points of the Euclidean plane with side
+lengths $|PQ| = a$, $|QR| = b$, $|RS| = c$, $|SP| = d$ and diagonal $|PR| = e$, and let
+$s = (a + b + c + d)/2$. Suppose that some point $O$ is equidistant from $P, Q, R, S$ (so the
+quadrilateral $PQRS$ is cyclic) and that some point $T$ satisfies $|PT| + |TR| = |PR|$ and
+$|QT| + |TS| = |QS|$ with $|PT|, |TR|, |QT|, |TS| > 0$ (so $T$ lies strictly inside both
+diagonals and $PQRS$ is convex). Let $p = (a + b + e)/2$ and $q = (c + d + e)/2$, and let $A$ be
+the sum of the Heron areas of the triangles $PQR$ and $RSP$:
+
+$$A = \sqrt{p(p - a)(p - b)(p - e)} + \sqrt{q(q - c)(q - d)(q - e)}.$$
+
+Then $A = \sqrt{(s - a)(s - b)(s - c)(s - d)}$.
 
 ## Depends on
 
@@ -26,3 +28,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.BrahmaguptaArea](../../../../../sources/v2/MathlibExt.md)
+- https://en.wikipedia.org/wiki/Brahmagupta%27s_formula

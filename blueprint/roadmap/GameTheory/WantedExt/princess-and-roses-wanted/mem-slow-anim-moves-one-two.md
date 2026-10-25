@@ -6,11 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.mem_slowANimMoves_one_two
 ---
 
-# Mem slow ANim Moves one two
+# Options in Princess and the Roses
 
-Characterization of P&R options: `q` is an option of `p` if and only if, for some piles
-`i ≤ j` that are both nonempty in `p`, `q` takes one object from pile `i` when `i = j`, and one
-object from each of piles `i` and `j` otherwise, leaving every other pile unchanged.
+**Options in Princess and the Roses.** Let $p$ and $q$ be positions of Slow$A$-Nim on $k$
+stacks with $A = \{1, 2\}$, which is the Princess and the Roses game. Then $q$ is an option of
+$p$ if and only if there are stacks $i \le j$ with $p_i \ge 1$ and $p_j \ge 1$ such that
+$q_l = p_l - 1$ for $l \in \{i, j\}$ and $q_l = p_l$ for every other stack $l$; that is, $q$
+removes one token from stack $i$ when $i = j$, and one token from each of stacks $i$ and $j$
+otherwise.
 
 ## Depends on
 

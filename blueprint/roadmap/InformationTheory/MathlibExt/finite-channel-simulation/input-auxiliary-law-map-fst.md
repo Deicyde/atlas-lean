@@ -6,16 +6,18 @@ proof: formalized
 lean: InformationTheory.FiniteExtension.inputAuxiliaryLaw_map_fst
 ---
 
-# Input Auxiliary Law map fst
+# Input marginal of the input-auxiliary law
 
-The XS marginal has precisely the specified X law.
+**Input marginal of the input-auxiliary law.** Let $q$ be a finite extension of a finite
+joint law $p$ of $(X, Y)$ by an auxiliary variable $S$. Then the marginal of $X$ under the
+joint law of $(X, S)$ in $q$ equals the law of $X$ under $p$.
 
 ## Depends on
 
-- [Finite Extension](finite-extension.md)
-- [Input Auxiliary Law](input-auxiliary-law.md)
-- [Finite Joint Law](finite-joint-law.md)
-- [Input Law](input-law.md)
+- [Finite extension of a joint law](finite-extension.md)
+- [Input-auxiliary law](input-auxiliary-law.md)
+- [Finite joint law](finite-joint-law.md)
+- [Input law](input-law.md)
 
 ## Sources
 

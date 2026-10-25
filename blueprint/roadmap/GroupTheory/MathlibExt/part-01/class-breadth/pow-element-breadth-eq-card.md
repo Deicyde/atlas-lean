@@ -7,18 +7,20 @@ proof: formalized
 lean: ClassBreadth.pow_elementBreadth_eq_card
 ---
 
-# Pow element Breadth eq card
+# Class sizes in a $p$-group via breadth
 
-Characteristic property: `p ^ br(g)` is the conjugacy-class size.
+**Class sizes in a $p$-group via breadth.** Let $p$ be a prime, $G$ a finite $p$-group and
+$g \in G$, and write $g^G$ for the conjugacy class of $g$. Then the breadth
+$\operatorname{br}_p(g)$ of $g$ satisfies $p^{\operatorname{br}_p(g)} = |g^G|$.
 
 ## Depends on
 
-- [Element Breadth](element-breadth.md)
+- [Breadth of an element](element-breadth.md)
 
 ## Proof depends on
 
-- [Element Breadth eq of card eq](element-breadth-eq-of-card-eq.md)
-- [Exists card carrier eq pow](exists-card-carrier-eq-pow.md)
+- [Breadth from an exact class size](element-breadth-eq-of-card-eq.md)
+- [Conjugacy classes of a finite $p$-group have $p$-power size](exists-card-carrier-eq-pow.md)
 
 ## Sources
 

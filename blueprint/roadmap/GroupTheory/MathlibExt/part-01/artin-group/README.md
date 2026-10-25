@@ -7,14 +7,14 @@ navigation: module
 
 ## Coxeter Matrix
 
-- [Alternating Word](alternating-word.md)
-- [Map alternating Word](map-alternating-word.md)
-- [Artin Relation](artin-relation.md)
-- [Artin Relations Set](artin-relations-set.md)
-- [Artin Group](artin-group.md)
+- [Alternating word](alternating-word.md)
+- [Monoid homomorphisms preserve alternating words](map-alternating-word.md)
+- [Artin relator](artin-relation.md)
+- [Artin relators of a Coxeter matrix](artin-relations-set.md)
+- [Artin group](artin-group.md)
 
 ## Artin Group
 
-- [Of](of.md)
-- [Closure range of](closure-range-of.md)
-- [Braid relation](braid-relation.md)
+- [Generators of the Artin group](of.md)
+- [The generators generate the Artin group](closure-range-of.md)
+- [Braid relations in the Artin group](braid-relation.md)

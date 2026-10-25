@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.dominationPolynomial_torus_eq_trace_transferMatrix_pow
 ---
 
-# Domination Polynomial torus eq trace transfer Matrix pow
+# Transfer-matrix formula for the domination polynomial of the torus
 
-Mertens' Theorem 8: the domination polynomial of the `m × n` torus is `Tr Ā^n`.  Stated for
-`n ≥ 1` (at `n = 0` the trace counts the cyclic signatures instead of the empty set); for
-`n = 1, 2` the torus is `cycleGraph m □ cycleGraph n` with Mathlib's `cycleGraph 1 = ⊥` and
-`cycleGraph 2 = K₂`.
+**Transfer-matrix formula for the domination polynomial of the torus.** For all natural
+numbers $m$ and $n$ with $n \ge 1$, let $C_k$ denote the cycle graph on the vertices
+$0, \dots, k - 1$, in which distinct $i$ and $j$ are adjacent when $i - j \equiv \pm 1 \pmod k$,
+and let $\bar A$ be the domination transfer matrix of the row graph $C_m$. Then the domination
+polynomial of the torus $C_m \mathbin{\square} C_n$ equals the trace of $\bar A^n$.
+
+The hypothesis $n \ge 1$ is needed: for $n = 0$ the trace counts the signatures of $C_m$, while
+the torus $C_m \mathbin{\square} C_0$ has no vertices, so its domination polynomial is $1$. For
+$n = 1$ and $n = 2$ the cycle $C_n$ is a single vertex and a single edge respectively.
 
 ## Depends on
 
-- [Domination Signature](domination-signature.md)
+- [Signatures of a row graph](domination-signature.md)
 - [Domination State](domination-state.md)
-- [Is Domination Signature](is-domination-signature.md)
-- [Domination Polynomial](domination-polynomial.md)
-- [Domination Transfer Matrix](domination-transfer-matrix.md)
+- [Domination signature](is-domination-signature.md)
+- [Domination polynomial](domination-polynomial.md)
+- [Domination transfer matrix](domination-transfer-matrix.md)
 
 ## Sources
 

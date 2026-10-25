@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.Geometry.SpherePackingDensityFourWanted.unitBallVolume4_eq
 ---
 
-# Unit Ball Volume4 eq
+# The unit ball in $\mathbb{R}^4$ has volume $\pi^2/2$
 
-Source: the standard four-dimensional unit-ball volume `π²/2`.
+**The unit ball in $\mathbb{R}^4$ has volume $\pi^2/2$.** The Lebesgue measure of the open unit
+ball centred at the origin of $\mathbb{R}^4$ equals $\pi^2/2$.
 
 ## Depends on
 
-- [Unit Ball Volume4](unit-ball-volume4.md)
+- [Volume of the unit ball in $\mathbb{R}^4$](unit-ball-volume4.md)
 
 ## Proof depends on
 
-- [Space](space.md)
+- [Four-dimensional Euclidean space](space.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SpherePackingDensityFour](../../../../sources/v2/MathlibExt.md)
+- the standard four-dimensional unit-ball volume `π²/2`.

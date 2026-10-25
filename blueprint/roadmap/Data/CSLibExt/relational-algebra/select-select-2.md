@@ -12,15 +12,15 @@ lean: Cslib.Databases.Expr.select_select
 
 ## Depends on
 
-- [Cond](cond.md)
+- [Selection conditions](cond.md)
 - [Attributes of a selection condition](attrs.md)
-- [Expr](expr.md)
-- [Equiv](equiv.md)
-- [Schema](schema.md)
+- [Relational algebra queries](expr.md)
+- [Query equivalence](equiv.md)
+- [Schema of a query](schema.md)
 
 ## Proof depends on
 
-- [Conforms](conforms.md)
+- [Databases conforming to a schema](conforms.md)
 - [Eval](eval-2.md)
 - [Tuple](tuple.md)
 - [Cascade of selections](select-select.md)

@@ -8,8 +8,10 @@ lean: MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.kolmogorovSinaiEntropy
 
 # Kolmogorov–Sinai entropy
 
-**Kolmogorov–Sinai entropy** of `(M, T, μ)`: the supremum of `entropyW`
-over finite measurable partitions.
+**Kolmogorov–Sinai entropy.** Let $\mu$ be a measure on a measurable space $M$ and let
+$T : M \to M$ be a map. The Kolmogorov–Sinai entropy $h_\mu(T)$ is the supremum of the
+entropies $h_\mu(T, P)$ of $T$ relative to $P$ over all finite measurable partitions $P$ of $M$
+modulo $\mu$-null sets, taken to be $0$ when these entropies are not bounded above.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Measurable Partition](is-measurable-partition.md)
-- [Entropy W](entropy-w.md)
+- [Measurable partition modulo null sets](is-measurable-partition.md)
+- [Entropy of a map relative to a partition](entropy-w.md)
 
 ## Sources
 

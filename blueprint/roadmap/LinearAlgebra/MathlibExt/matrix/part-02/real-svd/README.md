@@ -6,8 +6,8 @@ navigation: module
 
 ## Matrix
 
-- [Exists orthogonal Group mul eq rectangular Diagonal](exists-orthogonal-group-mul-eq-rectangul.md)
-- [Exists orthogonal Group rectangular Diagonal antitone](exists-orthogonal-group-rectangular-diag.md)
+- [Orthogonal reduction of a real matrix to rectangular diagonal form](exists-orthogonal-group-mul-eq-rectangul.md)
+- [Real singular value decomposition with nonincreasing singular values](exists-orthogonal-group-rectangular-diag.md)
 
 ## Real SVDWanted
 

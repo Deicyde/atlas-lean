@@ -16,7 +16,7 @@ generalized Motzkin number $M^{(a,b)}_n$ has natural density $1$.
 
 - [Generalized central trinomial coefficients](central-trinomial.md)
 - [Generalized Motzkin numbers](generalized-motzkin.md)
-- [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

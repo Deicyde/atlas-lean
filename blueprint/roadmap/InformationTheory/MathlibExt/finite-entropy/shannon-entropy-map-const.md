@@ -6,17 +6,19 @@ proof: formalized
 lean: InformationTheory.shannonEntropy_map_const
 ---
 
-# Shannon Entropy map const
+# A constant observation has zero entropy
 
-A constant observation has zero entropy.
+**A constant observation has zero entropy.** For any probability mass function $p$ on a type
+$\alpha$ and any point $b$ of a finite alphabet $\beta$, the image of $p$ under the constant map
+$\alpha \to \beta$ with value $b$ has Shannon entropy $0$.
 
 ## Depends on
 
-- [Shannon Entropy](shannon-entropy.md)
+- [Shannon entropy](shannon-entropy.md)
 
 ## Proof depends on
 
-- [Shannon Entropy pure](shannon-entropy-pure.md)
+- [A point mass has zero entropy](shannon-entropy-pure.md)
 
 ## Sources
 

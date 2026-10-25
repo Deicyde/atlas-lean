@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Dynamics.StableUnstableManifoldsWanted.Dynamics.StableUnstableManifoldsProblem.complexEigenvalues
 ---
 
-# Complex Eigenvalues
+# Complex eigenvalues of a real linear map
 
-Multiset of complex eigenvalues of `L : ℝⁿ →L[ℝ] ℝⁿ`.
+**Complex eigenvalues of a real linear map.** For a continuous linear map $L$ from
+$\mathbb{R}^n$ to itself, the complex eigenvalues of $L$ form the multiset of complex roots of the
+characteristic polynomial of $L$, each counted with its multiplicity as a root.
 
 ## Depends on
 
-- [E](e.md)
+- [Euclidean space $\mathbb{R}^n$ for local stable and unstable sets](e.md)
 
 ## Sources
 

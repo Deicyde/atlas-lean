@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isOpposable_products
 ---
 
-# Is Opposable products
+# Standard products with an opposable first factor
 
-If `G` is opposable then so are its Cartesian, strong, tensor,
-lexicographic, co-normal and homomorphic products with any `H`.
+**Standard products with an opposable first factor.** If $G$ is an opposable graph, then for
+every graph $H$ the Cartesian product $G \mathbin{\square} H$, the strong product $G \boxtimes H$,
+and the tensor, lexicographic, co-normal and homomorphic products of $G$ with $H$ are opposable.
+Here distinct pairs $(g_1, h_1)$ and $(g_2, h_2)$ are adjacent in the tensor product when
+$g_1g_2 \in E(G)$ and $h_1h_2 \in E(H)$; in the lexicographic product when $g_1g_2 \in E(G)$,
+or $g_1 = g_2$ and $h_1h_2 \in E(H)$; in the co-normal product when $g_1g_2 \in E(G)$ or
+$h_1h_2 \in E(H)$; and in the homomorphic product when $g_1 = g_2$, or $g_1g_2 \in E(G)$ and
+$h_1h_2 \notin E(H)$.
 
 ## Depends on
 
-- [Is Opposable](is-opposable.md)
-- [Formula Product](formula-product.md)
-- [Strong Prod](strong-prod.md)
+- [Opposable graphs](is-opposable.md)
+- [Graph product given by a Boolean formula](formula-product.md)
+- [Strong product of graphs](strong-prod.md)
 
 ## Sources
 

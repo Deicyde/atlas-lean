@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.HasNSProperty.image_xor_xor_eq
 ---
 
-# Image xor xor eq
+# Nim-sum image identity for two NS functions
 
-Identity (19): if `g`, `h` have the NS property, `x ≤ g z` and `y ≤ h z`, then
-`{x ⊕ y ⊕ w : w < z} = {min (g w') x ⊕ min (h w') y ⊕ w' : w' < z}`.
+**Nim-sum image identity for two NS functions.** Let $g, h : \mathbb{N} \to \mathbb{N}$ have
+the NS property and let $x, y, z \in \mathbb{N}$ with $x \le g(z)$ and $y \le h(z)$. Writing
+$\oplus$ for the nim-sum (bitwise exclusive or) of natural numbers, the sets
+$\{x \oplus y \oplus w : w < z\}$ and $\{\min(g(w), x) \oplus \min(h(w), y) \oplus w : w < z\}$
+are equal, where $w$ ranges over the natural numbers.
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
+- [NS property](has-nsproperty.md)
 
 ## Sources
 

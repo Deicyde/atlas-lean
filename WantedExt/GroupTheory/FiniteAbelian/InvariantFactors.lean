@@ -31,7 +31,11 @@ set_option autoImplicit false
 
 namespace AddCommGroup
 
-/-- Reorganize prime-power cyclic summands into a divisibility-ordered sequence of moduli. -/
+/-- **From elementary divisors to invariant factors.** Let $\iota$ be a finite type and, for each
+$i \in \iota$, let $p_i$ be a prime and $e_i$ a natural number. Then there are a natural number
+$k$ and natural numbers $d_0, \dots, d_{k-1}$, each greater than $1$, with $d_m \mid d_n$ whenever
+$m \le n$, such that $\bigoplus_{i \in \iota} \mathbb{Z}/p_i^{e_i}\mathbb{Z}$ is isomorphic as an
+additive group to $\bigoplus_{m < k} \mathbb{Z}/d_m\mathbb{Z}$. -/
 theorem_wanted elementary_divisors_equiv_invariant_factors
     (ι : Type*) [Fintype ι] (p : ι → ℕ) (hp : ∀ i, Nat.Prime (p i)) (e : ι → ℕ) :
     ∃ (k : ℕ) (d : Fin k → ℕ),
@@ -39,7 +43,11 @@ theorem_wanted elementary_divisors_equiv_invariant_factors
       (∀ i j : Fin k, i ≤ j → d i ∣ d j) ∧
       Nonempty ((⨁ i : ι, ZMod (p i ^ e i)) ≃+ (⨁ i : Fin k, ZMod (d i)))
 
-/-- A finitely generated abelian group admits a free part and divisibility-ordered cyclic factors. -/
+/-- **Invariant factor decomposition of finitely generated abelian groups.** For every finitely
+generated abelian group $A$ there are natural numbers $a$ and $k$ and natural numbers
+$d_0, \dots, d_{k-1}$, each greater than $1$, with $d_m \mid d_n$ whenever $m \le n$, such that
+$A$ is isomorphic as an additive group to
+$\mathbb{Z}^a \times \bigoplus_{m < k} \mathbb{Z}/d_m\mathbb{Z}$. -/
 theorem_wanted equiv_free_prod_directSum_invariant_factors
     (A : Type*) [AddCommGroup A] [AddGroup.FG A] :
     ∃ (a : ℕ) (k : ℕ) (d : Fin k → ℕ),

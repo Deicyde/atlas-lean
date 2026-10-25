@@ -6,9 +6,10 @@ statement: formalized
 lean: Function.IsPreperiodicPt
 ---
 
-# Is Preperiodic Pt
+# Preperiodic point
 
-A point is preperiodic when its forward orbit is finite.
+**Preperiodic point.** A point $x$ is preperiodic for a self-map $f$ when its forward orbit
+$\{f^n(x) : n \in \mathbb{N}\}$ under $f$ is a finite set.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Forward Orbit](forward-orbit.md)
+- [Forward orbit](forward-orbit.md)
 
 ## Sources
 

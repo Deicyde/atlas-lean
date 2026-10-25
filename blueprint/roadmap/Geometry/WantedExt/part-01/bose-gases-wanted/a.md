@@ -6,15 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.BoseGasesWanted.BoseGases.a
 ---
 
-# A
+# Scattering length
 
-When the potential `v : ℝ³ → ℝ` has a radial scattering solution `w : ℝ³ → ℝ`, we define
-the scattering length `a` of `v` (using Equation (3.5)) by
+**Scattering length.** Let $v : \mathbb{R}^3 \to \mathbb{R}$ be a potential. If there is a
+radial scattering solution $w$ to the scattering equation with potential $v$, the scattering
+length of $v$ is $a(v) = (8\pi)^{-1} \int_{\mathbb{R}^3} v(x)\,(1 - w(x))\,dx$, where $w$ is
+one such solution, chosen arbitrarily; if there is no radial scattering solution, $a(v) = 0$.
 
-`a = (8 π)⁻¹ ∫ v * (1 - w)`.
-
-Under the assumptions of theorem 1.2 we know that `v` has a unique radial scattering solution,
-and hence a well-defined scattering length `a`.
+This is Equation (3.5) of Fournais–Solovej. Under the assumptions of Theorem 1.2 the radial
+scattering solution exists and is unique, so the choice does not matter there.
 
 ## Depends on
 
@@ -22,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Radial](is-radial.md)
-- [Is Scattering Solution](is-scattering-solution.md)
+- [Radial functions](is-radial.md)
+- [Scattering solutions](is-scattering-solution.md)
 
 ## Sources
 

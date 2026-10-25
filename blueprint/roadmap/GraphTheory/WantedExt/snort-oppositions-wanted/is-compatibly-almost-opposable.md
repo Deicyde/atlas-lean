@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsCompatiblyAlmostOpposable
 ---
 
-# Is Compatibly Almost Opposable
+# Compatibly almost opposable graphs
 
-`G` is compatibly almost opposable: for some admissible `S`, `G - S` has an
-opposition `f` agreeing on `V ∖ S` with an involutive automorphism `α` of `G`.
+**Compatibly almost opposable graphs.** A graph $G$ is compatibly almost opposable if there
+are a vertex $u$, a set $S$ of vertices with $u \in S \subseteq N[u]$ (the closed neighbourhood
+of $u$), an automorphism $\alpha$ of $G$ with $\alpha(\alpha(v)) = v$ for every vertex $v$, and
+an opposition $f$ of the subgraph $G - S$ induced on the vertices outside $S$, such that
+$\alpha(x) = f(x)$ for every vertex $x \notin S$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Opposition](is-opposition.md)
+- [Oppositions](is-opposition.md)
 
 ## Sources
 

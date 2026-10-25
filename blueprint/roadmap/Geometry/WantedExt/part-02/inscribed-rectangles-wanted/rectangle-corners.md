@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.rectangleCorners
 ---
 
-# Rectangle Corners
+# Rotated rectangle
 
-A rectangle in the Euclidean plane with opposite vertices `a` and `b` rotated by an angle `θ`.
+**Rotated rectangle.** For points $a, b \in \mathbb{R}^2$ and an angle $\theta \in \mathbb{R}$,
+the rotated rectangle given by $a$, $b$ and $\theta$ is the list of four points obtained by applying
+the rotation $(x, y) \mapsto (x \cos\theta + y \sin\theta, -x \sin\theta + y \cos\theta)$ about the
+origin to each vertex, in order, of the axis-aligned rectangle with opposite corners $a$ and $b$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Axis Aligned Rectangle Corners](axis-aligned-rectangle-corners.md)
+- [Axis-aligned rectangle](axis-aligned-rectangle-corners.md)
 
 ## Sources
 

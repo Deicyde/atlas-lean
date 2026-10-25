@@ -6,11 +6,13 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.IsIIA
 ---
 
-# Is IIA
+# Independence of irrelevant alternatives
 
-Independence of irrelevant alternatives: the social comparison of each pair `a,b`
-depends only on voters' comparisons of that pair. That is, if two profiles agree on all
-voters' `a`-vs-`b` comparisons, the social `a`-vs-`b` comparison agrees.
+**Independence of irrelevant alternatives.** A social welfare function $F$ satisfies
+independence of irrelevant alternatives if for all profiles $p_1, p_2$ and all alternatives
+$a, b$ the following holds: if every voter strictly prefers $a$ to $b$ in $p_1$ exactly when that
+voter strictly prefers $a$ to $b$ in $p_2$, then $F(p_1)$ strictly prefers $a$ to $b$ exactly
+when $F(p_2)$ does.
 
 ## Depends on
 
@@ -18,8 +20,8 @@ voters' `a`-vs-`b` comparisons, the social `a`-vs-`b` comparison agrees.
 
 ## Proof depends on
 
-- [Profile](profile.md)
-- [Lt](lt.md)
+- [Preference profile (Arrow's theorem)](profile.md)
+- [Preference relation of a strict total order (Arrow's theorem)](lt.md)
 
 ## Sources
 

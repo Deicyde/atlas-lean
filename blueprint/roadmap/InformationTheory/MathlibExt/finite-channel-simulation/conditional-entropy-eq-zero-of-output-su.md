@@ -6,22 +6,24 @@ proof: formalized
 lean: InformationTheory.FiniteExtension.conditionalEntropy_eq_zero_of_output_subsingleton
 ---
 
-# Conditional Entropy eq zero of output subsingleton
+# Conditional entropy vanishes for a one-letter output
 
-A singleton output has zero conditional entropy for every actual extension.
+**Conditional entropy vanishes for a one-letter output.** If the output alphabet of a finite
+joint law $p$ of $(X, Y)$ has exactly one element, then for every finite extension of $p$ by an
+auxiliary variable $S$, the conditional entropy $H(Y \mid S)$ is $0$.
 
 ## Depends on
 
-- [Finite Extension](finite-extension.md)
-- [Conditional Entropy](conditional-entropy.md)
-- [Finite Joint Law](finite-joint-law.md)
+- [Finite extension of a joint law](finite-extension.md)
+- [Conditional entropy of the output given the auxiliary](conditional-entropy.md)
+- [Finite joint law](finite-joint-law.md)
 
 ## Proof depends on
 
-- [Auxiliary Law](auxiliary-law.md)
-- [Output Auxiliary Law](output-auxiliary-law.md)
-- [Shannon Entropy](../finite-entropy/shannon-entropy.md)
-- [Shannon Entropy map equiv](../finite-entropy/shannon-entropy-map-equiv.md)
+- [Auxiliary marginal of an extension](auxiliary-law.md)
+- [Output-auxiliary law](output-auxiliary-law.md)
+- [Shannon entropy](../finite-entropy/shannon-entropy.md)
+- [Entropy is invariant under relabeling](../finite-entropy/shannon-entropy-map-equiv.md)
 
 ## Sources
 

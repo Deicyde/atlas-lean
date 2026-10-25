@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.CodingTheory.ReedSolomon.encode
 ---
 
-# Encode
+# Reed-Solomon encoder
 
-The Reed-Solomon **encoder**: evaluate the message polynomial at the points.
+**Reed-Solomon encoder.** For a field $F$ and points $\alpha_0, \dots, \alpha_{n-1} \in F$,
+the encoding of a polynomial $p \in F[X]$ is the word $(p(\alpha_0), \dots, p(\alpha_{n-1}))$
+in $F^n$.
 
 ## Depends on
 

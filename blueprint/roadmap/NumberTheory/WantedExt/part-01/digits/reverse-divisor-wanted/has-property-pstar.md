@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
+- [Digit reversal](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources
 

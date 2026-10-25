@@ -14,7 +14,7 @@ is $0$ if and only if $x$ is a P-position (a previous-player win under normal pl
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The Maximum Nim game](maximum-nim-game.md)
 - [Grundy numbers of Maximum Nim](maximum-nim-grundy.md)
 

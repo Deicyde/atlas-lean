@@ -30,14 +30,14 @@ schemes.
 - [Armstrong's axioms are sound](../functional-dependencies/sound.md)
 - [Union rule](../functional-dependencies/union.md)
 - [A functional dependency holds in a relation](../functional-dependencies/holds-in.md)
-- [Is Over](../relational-algebra/is-over.md)
-- [Restrict](../relational-algebra/restrict.md)
+- [Tuple over a schema](../relational-algebra/is-over.md)
+- [Restriction of a tuple](../relational-algebra/restrict.md)
 - [Attribute closure](../functional-dependencies/attr-closure.md)
 - [Iterated closure rounds](../functional-dependencies/closure-loop.md)
 - [One round of the attribute-closure algorithm](../functional-dependencies/closure-step.md)
 - [The closure algorithm decides derivability](../functional-dependencies/derives-iff-subset-attr-closure.md)
 - [Membership in a join of projections](mem-join-projections.md)
-- [Project](../relational-algebra/project.md)
+- [Projection of a relation](../relational-algebra/project.md)
 - [Schema Union](schema-union.md)
 
 ## Sources

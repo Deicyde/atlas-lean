@@ -7,13 +7,17 @@ proof: formalized
 lean: LinearMap.toMatrix_eq_jordanBlock
 ---
 
-# To Matrix eq jordan Block
+# Matrix of an endomorphism on a Jordan chain
 
-The matrix of a linear map on a Jordan chain is the corresponding Jordan block.
+**Matrix of an endomorphism on a Jordan chain.** Let $V$ be a vector space over a field $K$,
+let $f$ be a linear endomorphism of $V$, let $\mu \in K$, and let $b_0, \dots, b_d$ be a basis of
+$V$ such that $f(b_0) = \mu b_0$ and $f(b_{j+1}) = \mu b_{j+1} + b_j$ for every $j < d$. Then the
+matrix of $f$ with respect to the basis $(b_0, \dots, b_d)$ is the Jordan block of size $d + 1$
+with eigenvalue $\mu$.
 
 ## Depends on
 
-- [Jordan Block](jordan-block.md)
+- [Jordan block](jordan-block.md)
 
 ## Sources
 

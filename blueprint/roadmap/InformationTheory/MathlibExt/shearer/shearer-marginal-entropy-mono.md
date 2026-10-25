@@ -7,18 +7,21 @@ proof: formalized
 lean: MathlibExt.InformationTheory.Shearer.shearerMarginalEntropy_mono
 ---
 
-# Shearer Marginal Entropy mono
+# Monotonicity of marginal entropy
 
-Marginal entropy is monotone in the set.
+**Monotonicity of marginal entropy.** Let $\alpha$ be a finite set, $n$ a natural number, and
+$\mu$ a real-valued function on $\alpha^n$ with $\mu(x) \ge 0$ for all $x$. If $T \subseteq S$
+are sets of coordinates in $\{0, \dots, n-1\}$, then the marginal entropy of $\mu$ on $T$ is at
+most the marginal entropy of $\mu$ on $S$.
 
 ## Depends on
 
-- [Shearer Marginal Entropy](shearer-marginal-entropy.md)
+- [Marginal entropy](shearer-marginal-entropy.md)
 
 ## Proof depends on
 
-- [Shearer Marginal](shearer-marginal.md)
-- [Shearer Marginal nonneg](shearer-marginal-nonneg.md)
+- [Marginal on a set of coordinates](shearer-marginal.md)
+- [Marginals of a nonnegative function are nonnegative](shearer-marginal-nonneg.md)
 
 ## Sources
 

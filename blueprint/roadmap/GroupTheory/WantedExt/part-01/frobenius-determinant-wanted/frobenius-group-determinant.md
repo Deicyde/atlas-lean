@@ -8,14 +8,15 @@ lean: MathlibExt.GroupTheory.FrobeniusDeterminantWanted.RepresentationTheory.Fro
 
 # Frobenius determinant theorem
 
-**Frobenius determinant theorem** (§171). The group determinant factors as
-a product of irreducible polynomials, each appearing to the power of its own
-(total) degree `d_j = deg p_j`, with the factors pairwise non-associated
-(*distinct*) and their number equal to the number of conjugacy classes of `G`.
+**Frobenius determinant theorem.** Let $G$ be a finite group and let $r$ be the number of
+conjugacy classes of $G$. Then there exist polynomials $p_1, \dots, p_r$ in
+$\mathbb{C}[x_g : g \in G]$ such that each $p_j$ is irreducible, $p_i$ and $p_j$ are not associated
+for $i \neq j$, and the group determinant of $G$ equals $\prod_{j=1}^{r} p_j^{\deg p_j}$, where
+$\deg p_j$ is the total degree of $p_j$.
 
 ## Depends on
 
-- [Group Determinant](group-determinant.md)
+- [Group determinant](group-determinant.md)
 
 ## Sources
 

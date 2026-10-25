@@ -7,12 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.hinge_theorem_of_inner_lt
 ---
 
-# Hinge theorem of inner lt
+# Hinge theorem in inner product spaces
 
-Hinge theorem for a real inner product space: if two pairs of adjacent sides have equal
-lengths and the first included inner product is smaller, then its opposite side is longer.
+**Hinge theorem in inner product spaces.** Let $V$ be a real inner product space and let
+$A, B, C, D, E, F \in V$. If $\|B - A\| = \|E - D\|$, $\|C - A\| = \|F - D\|$ and
+$\langle B - A, C - A \rangle < \langle E - D, F - D \rangle$, then $\|F - E\| < \|C - B\|$.
 
-Proof: Apply the law of cosines via `norm_sub_sq_real` and compare the squared side lengths.
+Proof: Expand both squared opposite sides by the law of cosines and compare them.
 
 ## Depends on
 

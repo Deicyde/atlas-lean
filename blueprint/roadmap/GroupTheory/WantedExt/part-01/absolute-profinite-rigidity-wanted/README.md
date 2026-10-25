@@ -7,6 +7,6 @@ navigation: module
 
 - [Profinite Completion](profinite-completion.md)
 - [Profinitely Rigid](profinitely-rigid.md)
-- [Ring Of Integers](ring-of-integers.md)
-- [Bianchi Group](bianchi-group.md)
-- [Theorem 7 1](theorem-7-1.md)
+- [Ring of integers of a field obtained by adjoining a square root to $\mathbb{Q}$](ring-of-integers.md)
+- [Bianchi group](bianchi-group.md)
+- [Profinite rigidity of the Bianchi group over the Eisenstein integers](theorem-7-1.md)

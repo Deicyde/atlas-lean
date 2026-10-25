@@ -6,11 +6,11 @@ statement: formalized
 lean: MathlibExt.GraphTheory.PartialListColoringWanted.lambdaMax
 ---
 
-# Lambda Max
+# Maximum number of list-colourable vertices
 
-`lambdaMax G L` is `λ_L`: the maximum number of vertices of `G` colorable
-with respect to the list assignment `L` (the largest `k` for which some
-`k`-element subset admits a proper list coloring).
+**Maximum number of list-colourable vertices.** For a graph $G$ on a finite vertex set and an
+assignment $L$ of a finite list $L(v)$ of natural-number colours to each vertex $v$, $\lambda_L$
+is the largest $k$ such that some set of $k$ vertices of $G$ has a proper $L$-colouring.
 
 ## Depends on
 
@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is List Coloring](is-list-coloring.md)
+- [Proper list colouring of a vertex subset](is-list-coloring.md)
 
 ## Sources
 

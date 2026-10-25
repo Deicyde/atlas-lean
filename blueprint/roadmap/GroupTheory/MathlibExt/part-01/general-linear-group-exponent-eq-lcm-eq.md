@@ -7,13 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.generalLinearGroup_exponent_eq_lcm_eq_cyclotomicProduct
 ---
 
-# General Linear Group Exponent
+# Exponent of the general linear group over a prime field
 
-Exponent of `GL(m, 𝔽_p)` as a `p`-power times an lcm, equivalently a
-cyclotomic product.
+**Exponent of the general linear group over a prime field.** Let $p$ be a prime and let
+$m \ge 1$. The exponent of the group $\mathrm{GL}_m(\mathbb{F}_p)$ of invertible $m \times m$
+matrices over $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ is
 
-`Nat.clog p m` is `⌈log_p m⌉`; the lcm runs over `p^1 - 1, …, p^m - 1` and
-the product over `Φ_1(p)⋯Φ_m(p)`.
+$$p^{\lceil \log_p m \rceil} \cdot \operatorname{lcm}(p - 1, p^2 - 1, \dots, p^m - 1),$$
+
+and this number equals $p^{\lceil \log_p m \rceil} \prod_{k=1}^{m} \Phi_k(p)$, where $\Phi_k$
+denotes the $k$-th cyclotomic polynomial.
 
 ## Depends on
 

@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.NikolovSegalWanted.GroupTheory.IsTopologicallyFinitelyGenerated
 ---
 
-# Is Topologically Finitely Generated
+# Topologically finitely generated group
 
-A topological group is topologically finitely generated if some finite set generates a dense
-abstract subgroup.
+**Topologically finitely generated group.** A topological group is topologically finitely
+generated if some finite set generates a dense abstract subgroup.
 
 ## Depends on
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Levi Civita
 
-- [Same On Smooth](same-on-smooth.md)
-- [Levi civita exists unique](levi-civita-exists-unique.md)
+- [Agreement of covariant derivatives on smooth vector fields](same-on-smooth.md)
+- [Fundamental theorem of Riemannian geometry (Levi-Civita)](levi-civita-exists-unique.md)

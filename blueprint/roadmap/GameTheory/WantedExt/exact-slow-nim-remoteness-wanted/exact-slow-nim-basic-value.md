@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimBasicValue
 ---
 
-# Exact Slow Nim Basic Value
+# Basic-vector value
 
-`B(x) = max {b(z) : z ≤ x, z basic}` for `0 < k`. Then every basic `z ≤ x` has
-`b(z) ≤ k b(z) ≤ Σ z ≤ Σ x`, so the maximum is searched below `Σ x`. For `k = 0` the source
-maximum does not exist (`z = 0` is basic of type (A0) for every even `b`); this definition
-totalizes that degenerate case as the largest admissible `b ≤ Σ x`, and every statement below
-about `B` assumes `0 < k`.
+**Basic-vector value.** For $k \in \mathbb{N}$ and $x \in \mathbb{N}^{k+1}$, the basic-vector
+value $B(x)$ is the largest $b \le \sum_i x_i$ for which some $z \le x$ (componentwise) is a
+basic vector of type (A0), (A1) or (B) with parameter $b$; such a $b$ exists, since $z = 0$ is
+basic of type (A0) with parameter $0$. For $k \ge 1$ the bound is automatic, because every basic
+$z \le x$ with parameter $b$ has $b \le k b \le \sum_i z_i \le \sum_i x_i$, so $B(x)$ is the
+largest parameter of a basic vector $z \le x$.
+
+For $k = 0$ that maximum does not exist ($z = 0$ is basic of type (A0) for every even $b$), and
+the bound $b \le \sum_i x_i$ totalizes this degenerate case.
 
 ## Depends on
 
@@ -19,9 +23,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Exact Slow Nim Basic A0](is-exact-slow-nim-basic-a0.md)
-- [Is Exact Slow Nim Basic A1](is-exact-slow-nim-basic-a1.md)
-- [Is Exact Slow Nim Basic B](is-exact-slow-nim-basic-b.md)
+- [Basic vectors of type (A0)](is-exact-slow-nim-basic-a0.md)
+- [Basic vectors of type (A1)](is-exact-slow-nim-basic-a1.md)
+- [Basic vectors of type (B)](is-exact-slow-nim-basic-b.md)
 
 ## Sources
 

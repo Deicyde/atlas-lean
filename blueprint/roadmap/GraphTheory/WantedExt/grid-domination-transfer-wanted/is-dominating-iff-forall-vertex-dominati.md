@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isDominating_iff_forall_vertexDominationState_ne_uncovered
 ---
 
-# Is Dominating iff forall vertex Domination State ne uncovered
+# Dominating sets have no uncovered vertex
 
-`S` is dominating exactly when no vertex is uncovered.
+**Dominating sets have no uncovered vertex.** Let $G$ be a simple graph and $S$ a finite set
+of vertices of $G$. Then $S$ dominates $G$ if and only if no vertex of $G$ has domination state
+uncovered relative to $S$ in $G$.
 
 ## Depends on
 
 - [Domination State](domination-state.md)
-- [Vertex Domination State](vertex-domination-state.md)
+- [Domination state of a vertex](vertex-domination-state.md)
 - [Dominating set](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-02/domination/is-dominating.md)
 
 ## Sources

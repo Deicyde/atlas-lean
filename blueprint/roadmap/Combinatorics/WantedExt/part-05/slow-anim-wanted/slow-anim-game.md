@@ -16,7 +16,7 @@ and its start position is the empty position.
 
 ## Depends on
 
-- [Impartial Game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
+- [Impartial game](../../../../GameTheory/MathlibExt/sprague-grundy/impartial-game.md)
 
 ## Proof depends on
 

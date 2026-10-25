@@ -4,5 +4,5 @@ navigation: module
 
 # Morse Inequalities
 
-- [Alternating Partial Sum](alternating-partial-sum.md)
-- [Morse inequality](morse-inequality.md)
+- [Alternating partial sum](alternating-partial-sum.md)
+- [Morse inequalities](morse-inequality.md)

@@ -7,13 +7,14 @@ proof: formalized
 lean: Polynomial.IsPrimitivePolynomial.monic
 ---
 
-# Monic
+# Primitive polynomials are monic
 
-A primitive polynomial is monic.
+**Primitive polynomials are monic.** Every primitive polynomial over a finite field is
+monic.
 
 ## Depends on
 
-- [Is Primitive Polynomial](is-primitive-polynomial.md)
+- [Primitive polynomial over a finite field](is-primitive-polynomial.md)
 
 ## Sources
 

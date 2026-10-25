@@ -6,20 +6,19 @@ statement: formalized
 lean: MathlibExt.Geometry.UlamWanted.Ulam.theorem_1
 ---
 
-# Theorem 1
+# Ryabogin's negative answer to Ulam's floating body problem
 
-Statement of Theorem 1:
-
-Let `d ≥ 3`. There exists a strictly convex non-centrally-symmetric body of revolution `K ⊂ ℝᵈ`
-that floats in equilibrium in every orientation at the level `vol(K)/2`.
+**Ryabogin's negative answer to Ulam's floating body problem.** Let $d \ge 3$. There exists a
+body of revolution $K \subset \mathbb{R}^d$ that is a strictly convex body, is not centrally
+symmetric, and floats in equilibrium in every orientation at the level $\operatorname{vol}(K)/2$.
 
 ## Depends on
 
-- [Body Of Revolution](body-of-revolution.md)
-- [Body](body.md)
-- [Floats In Equilibrium In Every Orientation At Level](floats-in-equilibrium-in-every-orientati.md)
-- [Is Centrally Symmetric](is-centrally-symmetric.md)
-- [Is Strictly Convex Body](is-strictly-convex-body.md)
+- [Body of revolution](body-of-revolution.md)
+- [Solid of revolution](body.md)
+- [Floating in equilibrium in every orientation](floats-in-equilibrium-in-every-orientati.md)
+- [Centrally symmetric set](is-centrally-symmetric.md)
+- [Strictly convex body](is-strictly-convex-body.md)
 
 ## Sources
 

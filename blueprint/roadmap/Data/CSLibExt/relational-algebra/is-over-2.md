@@ -15,7 +15,7 @@ A relation (a finite set of tuples) over the schema `S`.
 
 ## Proof depends on
 
-- [Is Over](is-over.md)
+- [Tuple over a schema](is-over.md)
 
 ## Sources
 

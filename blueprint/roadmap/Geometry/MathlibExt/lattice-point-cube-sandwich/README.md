@@ -5,12 +5,12 @@ navigation: module
 
 # Lattice Point Cube Sandwich
 
-- [Integer Unit Cube](integer-unit-cube.md)
-- [Mem integer Unit Cube iff](mem-integer-unit-cube-iff.md)
-- [Outer Cube Set](outer-cube-set.md)
-- [Mem outer Cube Set iff](mem-outer-cube-set-iff.md)
-- [Inner Cube Set](inner-cube-set.md)
-- [Mem inner Cube Set iff](mem-inner-cube-set-iff.md)
-- [Inner Cube Set subset outer Cube Set](inner-cube-set-subset-outer-cube-set.md)
-- [Finite outer Cube Set](finite-outer-cube-set.md)
-- [Cube measure sandwich](cube-measure-sandwich.md)
+- [Integer unit cube](integer-unit-cube.md)
+- [Membership in an integer unit cube](mem-integer-unit-cube-iff.md)
+- [Outer cube set](outer-cube-set.md)
+- [Membership in the outer cube set](mem-outer-cube-set-iff.md)
+- [Inner cube set](inner-cube-set.md)
+- [Membership in the inner cube set](mem-inner-cube-set-iff.md)
+- [Inner cube indices are outer cube indices](inner-cube-set-subset-outer-cube-set.md)
+- [Finiteness of the outer cube set](finite-outer-cube-set.md)
+- [Cubical measure sandwich](cube-measure-sandwich.md)

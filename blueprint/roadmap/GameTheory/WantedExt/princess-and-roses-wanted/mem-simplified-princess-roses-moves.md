@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.mem_simplifiedPrincessRosesMoves
 ---
 
-# Mem simplified Princess Roses Moves
+# Characterization of simplified P&R options
 
-Characterization of simplified P&R options: `[a', b', c', d']` is an option of
-`[a, b, c, d]` if and only if no pile grows, the result is sorted `a' ≥ b' ≥ c' ≥ d'`, and the
-amounts removed `(a - a', b - b', c - c', d - d')` form one of the seven moves of
-`simplifiedPrincessRosesMoveList`.
+**Characterization of simplified P&R options.** For natural numbers $a, b, c, d$ and
+$a', b', c', d'$, the position $[a', b', c', d']$ is an option of the simplified P&R position
+$[a, b, c, d]$ if and only if $a' \le a$, $b' \le b$, $c' \le c$, $d' \le d$,
+$a' \ge b' \ge c' \ge d'$, and the amounts removed $(a - a', b - b', c - c', d - d')$ form one of
+the seven simplified P&R moves $(1, 0, 0, 0)$, $(0, 1, 0, 0)$, $(0, 0, 0, 1)$, $(1, 1, 0, 0)$,
+$(1, 0, 0, 1)$, $(0, 1, 0, 1)$ and $(0, 0, 1, 1)$.
 
 ## Depends on
 
-- [Simplified Princess Roses Move List](simplified-princess-roses-move-list.md)
-- [Simplified Princess Roses Moves](simplified-princess-roses-moves.md)
+- [Moves of simplified P&R](simplified-princess-roses-move-list.md)
+- [Options in simplified Princess and the Roses](simplified-princess-roses-moves.md)
 
 ## Sources
 

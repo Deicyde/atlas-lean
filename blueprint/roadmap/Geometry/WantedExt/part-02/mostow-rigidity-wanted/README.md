@@ -5,5 +5,5 @@ navigation: module
 
 # Mostow Rigidity
 
-- [PO](po.md)
-- [Mostow rigidity](mostow-rigidity.md)
+- [Projective indefinite orthogonal group](po.md)
+- [Mostow rigidity, algebraic form](mostow-rigidity.md)

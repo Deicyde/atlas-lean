@@ -6,14 +6,17 @@ proof: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.contourLength_eq_ofReal_integral_norm_deriv
 ---
 
-# Contour Length eq of Real integral norm deriv
+# Contour length of a $C^1$ curve
 
-For a `C¹` curve, contour length is the integral of speed.
+**Contour length of a $C^1$ curve.** Let $a \le b$ be real numbers and let $\gamma$ be a
+map from $\mathbb{R}$ to Euclidean 3-space that is continuously differentiable on $[a, b]$.
+Then the contour length of $\gamma$ on $[a, b]$ equals
+$\int_a^b \lVert \gamma'(t) \rVert \, dt$.
 
 ## Depends on
 
-- [R3](r3.md)
-- [Contour Length](contour-length.md)
+- [Euclidean 3-space](r3.md)
+- [Contour length](contour-length.md)
 
 ## Proof depends on
 

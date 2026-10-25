@@ -7,15 +7,18 @@ proof: formalized
 lean: MathlibExt.Geometry.SpherePackingDensityFourWanted.observationVolume_ne_zero
 ---
 
-# Observation Volume ne zero
+# Balls of positive radius in $\mathbb{R}^4$ have nonzero volume
 
-Source: positive observation radii give nonzero volume denominators.
+**Balls of positive radius in $\mathbb{R}^4$ have nonzero volume.** For every point
+$p \in \mathbb{R}^4$ and every real $R > 0$, the open ball of radius $R$ centred at $p$ has nonzero
+Lebesgue measure.
 
 ## Depends on
 
-- [Positive Radius](positive-radius.md)
-- [Space](space.md)
+- [Positive radii](positive-radius.md)
+- [Four-dimensional Euclidean space](space.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SpherePackingDensityFour](../../../../sources/v2/MathlibExt.md)
+- positive observation radii give nonzero volume denominators.

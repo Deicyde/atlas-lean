@@ -7,18 +7,20 @@ proof: formalized
 lean: BurnsidePaqb.conjClass_card_mul_centralizer_card
 ---
 
-# Conj Class card mul centralizer card
+# Class size times centralizer order
 
-Class equation for one class: class card times centralizer card is group card.
+**Class size times centralizer order.** Let $g$ be an element of a finite group $G$, let
+$g^G$ be its conjugacy class and let $C_G(g) = \{x \in G : xg = gx\}$ be its centralizer.
+Then $|g^G| \cdot |C_G(g)| = |G|$.
 
 ## Depends on
 
-- [Conj Class](conj-class.md)
+- [Conjugacy class](conj-class.md)
 
 ## Proof depends on
 
-- [Centralizer Equiv Stabilizer](centralizer-equiv-stabilizer.md)
-- [Conj Class card mul stabilizer card](conj-class-card-mul-stabilizer-card.md)
+- [Centralizer as a conjugation stabilizer](centralizer-equiv-stabilizer.md)
+- [Orbit–stabilizer for a conjugacy class](conj-class-card-mul-stabilizer-card.md)
 
 ## Sources
 

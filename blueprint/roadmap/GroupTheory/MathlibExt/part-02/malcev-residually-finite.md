@@ -7,11 +7,10 @@ proof: formalized
 lean: MathlibExt.GroupTheory.LinearGroupFinitenessWanted.malcev_residuallyFinite
 ---
 
-# Linear Group Finiteness
+# Malcev's theorem on linear groups
 
-Every finitely generated subgroup of `GL_n(K)` over a field `K` is residually finite. Source: A.
-I. Malcev, Mat. Sb. 8 (1940) 405–422; Wehrfritz, Infinite Linear Groups; Lean states subgroup `G ≤
-GL_n(K)` with `Group.FG G`.
+**Malcev's theorem on linear groups.** Let $K$ be a field and $n$ a natural number. Every finitely
+generated subgroup of the general linear group $\mathrm{GL}_n(K)$ is residually finite.
 
 ## Depends on
 
@@ -20,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.LinearGroupFiniteness](../../../../sources/v2/MathlibExt.md)
+- A. I. Malcev, Mat. Sb. 8 (1940) 405–422; Wehrfritz, Infinite Linear Groups; Lean states subgroup `G ≤ GL_n(K)` with `Group.FG G`.

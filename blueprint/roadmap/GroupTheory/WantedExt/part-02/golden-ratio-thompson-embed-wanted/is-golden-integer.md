@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.GoldenRatioThompsonEmbedWanted.IsGoldenInteger
 ---
 
-# Is Golden Integer
+# Golden integers
 
-`x` lies in `ℤ[τ]`, where `τ` is the golden ratio (`τ ^ 2 = τ + 1`, `τ > 1`).
+**Golden integers.** Let $\tau = (1 + \sqrt{5})/2$ be the golden ratio. A real number $x$ is a
+golden integer when $x = a + b\tau$ for some integers $a$ and $b$. Since $\tau^2 = \tau + 1$, these
+are exactly the elements of $\mathbb{Z}[\tau]$.
 
 ## Depends on
 

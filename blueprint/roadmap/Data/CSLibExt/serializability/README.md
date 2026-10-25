@@ -6,25 +6,25 @@ navigation: module
 
 ## Databases
 
-- [Access](access.md)
-- [Op](op.md)
+- [Read or write access](access.md)
+- [Operation of a schedule](op.md)
 
 ## Op
 
 - [Conflicts](conflicts.md)
-- [Order Matters](order-matters.md)
+- [Operations whose relative order matters](order-matters.md)
 
 ## Databases
 
-- [Conflict Equiv](conflict-equiv.md)
-- [Txn Before](txn-before.md)
-- [Is Serial](is-serial.md)
-- [Conflict Serializable](conflict-serializable.md)
-- [Precedence Edge](precedence-edge.md)
-- [Precedence Graph](precedence-graph.md)
-- [Serialize](serialize.md)
-- [Is Acyclic](is-acyclic.md)
-- [Is Serial serialize](is-serial-serialize.md)
-- [Conflict Equiv serialize](conflict-equiv-serialize.md)
+- [Conflict equivalence](conflict-equiv.md)
+- [One transaction before another in a schedule](txn-before.md)
+- [Serial schedule](is-serial.md)
+- [Conflict-serializable schedule](conflict-serializable.md)
+- [Edge of the precedence graph](precedence-edge.md)
+- [Precedence graph](precedence-graph.md)
+- [Serialization of a schedule along a transaction order](serialize.md)
+- [A conflict-serializable schedule has an acyclic precedence graph](is-acyclic.md)
+- [Serializing along a complete transaction order gives a serial schedule](is-serial-serialize.md)
+- [Serializing along a topological order preserves conflict equivalence](conflict-equiv-serialize.md)
 - [The serializability theorem](conflict-serializable-iff-is-acyclic.md)
-- [Conflict Serializable of rank](conflict-serializable-of-rank.md)
+- [A rank increasing along precedence edges gives conflict serializability](conflict-serializable-of-rank.md)

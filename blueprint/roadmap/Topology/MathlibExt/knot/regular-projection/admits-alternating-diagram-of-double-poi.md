@@ -21,7 +21,7 @@ alternating diagram (itself, vacuously).
 
 ## Proof depends on
 
-- [R3](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 - [Ambient Isotopy](../euclidean-link/ambient-isotopy.md)
 - [Id](../euclidean-link/id.md)
 - [Circle Reparam](../euclidean-link/circle-reparam.md)

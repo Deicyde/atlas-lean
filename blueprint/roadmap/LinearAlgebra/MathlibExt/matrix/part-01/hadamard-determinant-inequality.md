@@ -7,11 +7,15 @@ proof: formalized
 lean: MathlibExt.LinearAlgebra.Matrix.HadamardDeterminant.hadamard_determinant_inequality
 ---
 
-# Hadamard Determinant
+# Hadamard's determinant inequality
 
-Hadamard's determinant inequality for a complex `n × n` matrix:
-`‖det A‖ ≤ ∏ i, √(∑ j, ‖A i j‖^2)` via `normSq`,
-i.e. `‖det A‖ ≤ ∏ i, sqrt(∑ j, normSq(A i j))`.
+**Hadamard's determinant inequality.** For every natural number $n$ and every $n \times n$
+complex matrix $A = (a_{ij})$,
+
+$$|\det A| \le \prod_{i=1}^{n} \Big( \sum_{j=1}^{n} |a_{ij}|^2 \Big)^{1/2},$$
+
+that is, the absolute value of the determinant of $A$ is at most the product of the Euclidean
+lengths of its rows.
 
 ## Depends on
 

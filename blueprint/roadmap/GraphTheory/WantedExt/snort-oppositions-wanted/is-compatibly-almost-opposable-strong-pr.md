@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isCompatiblyAlmostOpposable_strongProd
 ---
 
-# Is Compatibly Almost Opposable strong Prod
+# Strong products of compatibly almost opposable graphs
 
-The strong product of compatibly almost opposable graphs is compatibly almost
+**Strong products of compatibly almost opposable graphs.** If $G$ and $H$ are compatibly
+almost opposable graphs, then their strong product $G \boxtimes H$ is compatibly almost
 opposable.
 
 ## Depends on
 
-- [Is Compatibly Almost Opposable](is-compatibly-almost-opposable.md)
-- [Strong Prod](strong-prod.md)
+- [Compatibly almost opposable graphs](is-compatibly-almost-opposable.md)
+- [Strong product of graphs](strong-prod.md)
 
 ## Sources
 

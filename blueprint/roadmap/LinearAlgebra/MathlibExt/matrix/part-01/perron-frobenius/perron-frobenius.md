@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [To Complex Matrix](to-complex-matrix.md)
+- [Complexification of a real matrix](to-complex-matrix.md)
 
 ## Sources
 

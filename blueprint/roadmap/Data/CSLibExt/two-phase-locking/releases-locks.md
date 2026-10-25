@@ -5,17 +5,22 @@ statement: formalized
 lean: Cslib.Databases.ReleasesLocks
 ---
 
-# Releases Locks
+# Schedules that release every lock
 
-Every lock is released later in the schedule, so transactions end holding no locks.
+**Schedules that release every lock.** A locked schedule $s$ releases its locks when every lock
+request is followed by a matching release: whenever $s$ has at position $q$ a lock request (in
+either mode) by transaction $t$ on item $x$, there is a position $r > q$ at which $s$ has a
+release by $t$ of $x$.
+
+In particular, transactions end holding no locks.
 
 ## Depends on
 
-- [Action](action.md)
+- [Action of a locked schedule](action.md)
 
 ## Proof depends on
 
-- [Lock Mode](lock-mode.md)
+- [Lock mode](lock-mode.md)
 
 ## Sources
 

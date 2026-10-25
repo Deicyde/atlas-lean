@@ -7,20 +7,22 @@ proof: formalized
 lean: BurnsidePaqb.classSum_carrier_central
 ---
 
-# Class Sum carrier central
+# Class sums of conjugacy classes are central
 
-Carrier class sums commute with every group-algebra element.
+**Class sums of conjugacy classes are central.** Let $G$ be a finite group. For every
+conjugacy class $K$ of $G$ and every element $w$ of the complex group algebra $\mathbb{C}[G]$,
+the class sum $\widehat{K} = \sum_{x \in K} x$ satisfies $w \widehat{K} = \widehat{K} w$.
 
 ## Depends on
 
-- [Class Sum](class-sum.md)
+- [Class sum of a finite subset](class-sum.md)
 
 ## Proof depends on
 
-- [Carrier to Finset](carrier-to-finset.md)
-- [Class Rep](class-rep.md)
-- [Class Sum central'](class-sum-central-2.md)
-- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
+- [Conjugacy class of the chosen representative](carrier-to-finset.md)
+- [Chosen representative of a conjugacy class](class-rep.md)
+- [The class sum of the conjugacy class of an element is central](class-sum-central-2.md)
+- [Conjugacy class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Sources
 

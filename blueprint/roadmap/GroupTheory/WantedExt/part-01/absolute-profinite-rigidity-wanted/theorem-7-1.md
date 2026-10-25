@@ -6,17 +6,22 @@ statement: formalized
 lean: MathlibExt.GroupTheory.AbsoluteProfiniteRigidityWanted.AbsoluteProfiniteRigidity.theorem_7_1
 ---
 
-# Theorem 7 1
+# Profinite rigidity of the Bianchi group over the Eisenstein integers
 
-Statement of Theorem 7.1:
+**Profinite rigidity of the Bianchi group over the Eisenstein integers.** Let $\omega$ be a
+primitive cube root of unity, so that the ring $\mathbb{Z}[\omega]$ of Eisenstein integers is the
+ring of integers of $\mathbb{Q}(\sqrt{-3})$. The Bianchi group $\mathrm{PSL}(2, \mathbb{Z}[\omega])$
+is profinitely rigid: it is finitely generated and residually finite, and it is isomorphic to
+every finitely generated residually finite group whose profinite completion is isomorphic, as a
+group, to its own.
 
-The group `Γ = PSL(2, Z[ω])` is profinitely rigid.
+This is Theorem 7.1 of the source.
 
 ## Depends on
 
-- [Bianchi Group](bianchi-group.md)
+- [Bianchi group](bianchi-group.md)
 - [Profinitely Rigid](profinitely-rigid.md)
-- [Ring Of Integers](ring-of-integers.md)
+- [Ring of integers of a field obtained by adjoining a square root to $\mathbb{Q}$](ring-of-integers.md)
 
 ## Sources
 

@@ -15,8 +15,8 @@ are pairwise compatible, that is, $t$ and $u$, $t$ and $v$, and $u$ and $v$ are 
 ## Depends on
 
 - [Tuple](tuple.md)
-- [Compatible](compatible.md)
-- [Merge](merge.md)
+- [Compatible tuples](compatible.md)
+- [Merge of two tuples](merge.md)
 
 ## Sources
 

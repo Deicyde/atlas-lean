@@ -5,10 +5,14 @@ statement: formalized
 lean: MovingSofa.CanPassOther
 ---
 
-# Can Pass Other
+# Passing the mirrored corridor
 
-A continuous rigid motion carries the whole shape through the mirrored
-corridor, making the opposite turn.
+**Passing the mirrored corridor.** A set $K \subseteq \mathbb{C}$ can pass the mirrored
+corridor if there are continuous maps $u$ from $[0, 1]$ to the unit circle
+$\{w \in \mathbb{C} : |w| = 1\}$ and $c$ from $[0, 1]$ to $\mathbb{C}$ such that, writing
+$K_t = \{u(t) z + c(t) : z \in K\}$ for the position of $K$ at time $t$, $K_0$ lies in the
+entrance arm of the mirrored corridor, $K_1$ lies in the exit arm of the mirrored corridor, and
+$K_t$ lies in the mirrored corridor for every $t \in [0, 1]$.
 
 ## Depends on
 
@@ -16,11 +20,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Motion](motion.md)
-- [Position](position.md)
-- [Corridor Other](corridor-other.md)
-- [Entrance Other](entrance-other.md)
-- [Exit Other](exit-other.md)
+- [Planar rigid motion](motion.md)
+- [Position under a rigid motion](position.md)
+- [Mirrored corridor](corridor-other.md)
+- [Entrance arm of the mirrored corridor](entrance-other.md)
+- [Exit of the mirrored corridor](exit-other.md)
 
 ## Sources
 

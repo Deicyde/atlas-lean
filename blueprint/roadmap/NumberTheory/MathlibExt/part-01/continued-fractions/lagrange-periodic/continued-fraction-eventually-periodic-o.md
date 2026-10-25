@@ -22,9 +22,9 @@ Euler direction are proved in
 
 ## Proof depends on
 
-- [Is Eventually Periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
-- [Of finite orbit](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-finite-orbit.md)
-- [Of witness](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-witness.md)
+- [Eventually periodic sequences](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+- [Orbits in a finite set are eventually periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-finite-orbit.md)
+- [Explicit period and preperiod give eventual periodicity](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-witness.md)
 
 ## Sources
 

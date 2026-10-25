@@ -7,13 +7,18 @@ proof: formalized
 lean: MathlibExt.LinearAlgebra.Matrix.ReducedRowEchelonWanted.isReducedRowEchelon_unique_of_rowEquivalent
 ---
 
-# Is Reduced Row Echelon unique of row Equivalent
+# Uniqueness of the reduced row echelon form
 
-The reduced row echelon form in a row-equivalence class is unique.
+**Uniqueness of the reduced row echelon form.** Let $K$ be a field, let $m$ and $n$ be finite
+linearly ordered sets, and let $R_1$ and $R_2$ be $m \times n$ matrices over $K$ in reduced row
+echelon form. If $R_2 = P R_1$ for some invertible $m \times m$ matrix $P$ over $K$, then
+$R_1 = R_2$. In other words, a row-equivalence class contains at most one matrix in reduced row
+echelon form.
 
-Proof: Reindex the columns along the order isomorphism with `Fin (Fintype.card n)`. For `Fin`
-columns, induct on the number of columns: the matrices agree on all but the last column by
-induction, and that forces their last columns to agree.
+Proof: Reindex the columns along the order isomorphism between $\{0, \dots, |n| - 1\}$ and $n$.
+For columns indexed by an initial segment of the natural numbers, induct on the number of
+columns: the matrices agree on all but the last column by induction, and that forces their last
+columns to agree.
 
 ## Depends on
 
@@ -21,8 +26,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Col eq single of is Leading Entry](col-eq-single-of-is-leading-entry.md)
-- [Submatrix order Iso](submatrix-order-iso.md)
+- [Pivot columns of a reduced row echelon matrix](col-eq-single-of-is-leading-entry.md)
+- [Order-preserving reindexing of columns preserves reduced row echelon form](submatrix-order-iso.md)
 
 ## Sources
 

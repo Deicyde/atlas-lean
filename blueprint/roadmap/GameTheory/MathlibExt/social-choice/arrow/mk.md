@@ -6,15 +6,16 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.StrictTotalOrder.mk
 ---
 
-# Mk
+# Strict total order from a relation (Arrow's theorem)
 
-Compatibility alias for the former `ArrowWanted.StrictTotalOrder.mk` constructor.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.mk` directly.
+**Strict total order from a relation (Arrow's theorem).** A relation $<$ on a type $\alpha$
+that is irreflexive ($a < a$ holds for no $a$), transitive ($a < b$ and $b < c$ imply $a < c$)
+and total on distinct elements ($a \ne b$ implies $a < b$ or $b < a$) defines a strict total
+order on $\alpha$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict preference orders for Arrow's theorem](strict-total-order.md)
 
 ## Proof depends on
 

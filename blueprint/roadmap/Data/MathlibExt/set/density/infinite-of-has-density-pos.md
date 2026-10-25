@@ -7,9 +7,10 @@ proof: formalized
 lean: Set.Nat.infinite_of_hasDensity_pos
 ---
 
-# Infinite of has Density pos
+# Sets of nonzero natural density are infinite
 
-A set of positive natural density is infinite.
+**Sets of nonzero natural density are infinite.** If a set $S$ of natural numbers has
+natural density $\alpha$ with $\alpha \neq 0$, then $S$ is infinite.
 
 ## Depends on
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: FalconerDistanceSet.distanceSet_subset_nonnegative
 ---
 
-# Distance Set subset nonnegative
+# Distances are nonnegative
 
-Every realized Euclidean distance is nonnegative.
+**Distances are nonnegative.** For every set $E \subseteq \mathbb{R}^d$, the distance set of
+$E$ is contained in $[0, \infty)$.
 
 ## Depends on
 
-- [Distance Set](distance-set.md)
+- [Euclidean distance set](distance-set.md)
 
 ## Sources
 

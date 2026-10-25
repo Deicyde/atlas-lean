@@ -7,17 +7,20 @@ proof: formalized
 lean: MathlibExt.Dynamics.Ergodic.BirkhoffWanted.dick_iter
 ---
 
-# Dick iter
+# Invariance of the maximal divergence set under iterates
 
-The maximal divergence set is invariant under iterates of `T`.
+**Invariance of the maximal divergence set under iterates.** Let $\alpha$ be a measurable
+space, $T : \alpha \to \alpha$ a map, $g : \alpha \to \mathbb{R}$ a function and $c$ a real number.
+For every natural number $k$ and every $x \in \alpha$, the point $T^k x$ lies in the maximal
+divergence set of $T$, $g$ and $c$ if and only if $x$ does.
 
 ## Depends on
 
-- [Dick Set](dick-set.md)
+- [Maximal divergence set](dick-set.md)
 
 ## Proof depends on
 
-- [Dick mem](dick-mem.md)
+- [Membership in the maximal divergence set](dick-mem.md)
 
 ## Sources
 

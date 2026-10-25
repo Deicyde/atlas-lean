@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.ErdosProblem755Wanted.unitEquilateralTriangleCount
 ---
 
-# Unit Equilateral Triangle Count
+# Number of unit equilateral triangles in a point set
 
-Unit equilateral triangles spanned by a point set.
+**Number of unit equilateral triangles in a point set.** For a finite set $P$ of points in
+the Euclidean space $\mathbb{R}^d$, this is the number of three-element subsets of $P$ that are
+unit equilateral triangles, that is, whose three points are pairwise at distance $1$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Unit Equilateral Triangle](is-unit-equilateral-triangle.md)
+- [Unit equilateral triangle](is-unit-equilateral-triangle.md)
 
 ## Sources
 

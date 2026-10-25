@@ -17,7 +17,7 @@ lean-eval two-component link, reading components `0` and `1`.
 
 ## Proof depends on
 
-- [R3](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 - [Of Parametrized Knot](of-parametrized-knot.md)
 - [Knot](../conway-knot-shared/knot.md)
 - [R3](../conway-knot-shared/r3.md)

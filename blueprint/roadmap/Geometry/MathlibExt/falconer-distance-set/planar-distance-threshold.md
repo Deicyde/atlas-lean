@@ -6,9 +6,12 @@ statement: formalized
 lean: FalconerDistanceSet.planarDistanceThreshold
 ---
 
-# Planar Distance Threshold
+# Planar distance threshold
 
-The infimum of sufficient planar thresholds in `[0,2]`.
+**Planar distance threshold.** The planar distance threshold is the infimum, taken in
+$[0, \infty]$, of the admissible planar thresholds, that is, of all $s \in [0, 2]$ such that
+every compact subset $E$ of the Euclidean plane $\mathbb{R}^2$ with Hausdorff dimension greater
+than $s$ has a distance set of positive Lebesgue measure.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Admissible Planar Threshold](admissible-planar-threshold.md)
+- [Admissible planar threshold](admissible-planar-threshold.md)
 
 ## Sources
 

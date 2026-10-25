@@ -16,7 +16,7 @@ Then $\operatorname{ed}(S_n) \le n - 3$ for every natural number $n \ge 5$.
 
 ## Depends on
 
-- [Ed Sn](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/ed-sn.md)
+- [Essential dimension of the symmetric group](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/ed-sn.md)
 
 ## Sources
 

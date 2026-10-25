@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.circumradiusENN_reverse
 ---
 
-# Circumradius ENN reverse
+# Extended circumradius is invariant under reversal
 
-The extended circumradius is unchanged by reversing the triple.
+**Extended circumradius is invariant under reversal.** For all points $p, q, r$ of Euclidean
+3-space, the extended circumradius of $(r, q, p)$ equals the extended circumradius of
+$(p, q, r)$.
 
 ## Depends on
 
-- [R3](r3.md)
-- [Circumradius ENN](circumradius-enn.md)
+- [Euclidean 3-space](r3.md)
+- [Extended circumradius of three points](circumradius-enn.md)
 
 ## Proof depends on
 
-- [Triangle Of](triangle-of.md)
-- [Triple Points](triple-points.md)
+- [Triangle on three affinely independent points](triangle-of.md)
+- [Ordered triple of points](triple-points.md)
 
 ## Sources
 

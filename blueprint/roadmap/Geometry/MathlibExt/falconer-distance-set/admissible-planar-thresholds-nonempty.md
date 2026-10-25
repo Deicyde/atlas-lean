@@ -7,17 +7,18 @@ proof: formalized
 lean: FalconerDistanceSet.admissiblePlanarThresholds_nonempty
 ---
 
-# Admissible Planar Thresholds nonempty
+# Admissible planar thresholds exist
 
-The interval-restricted sufficient-threshold family is nonempty.
+**Admissible planar thresholds exist.** There is an admissible planar threshold, that is, the
+set of admissible planar thresholds is nonempty.
 
 ## Depends on
 
-- [Admissible Planar Threshold](admissible-planar-threshold.md)
+- [Admissible planar threshold](admissible-planar-threshold.md)
 
 ## Proof depends on
 
-- [Two admissible Planar Threshold](two-admissible-planar-threshold.md)
+- [Two is an admissible planar threshold](two-admissible-planar-threshold.md)
 
 ## Sources
 

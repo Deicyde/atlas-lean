@@ -7,11 +7,12 @@ proof: formalized
 lean: MathlibExt.Geometry.Euclidean.JungWanted.jung
 ---
 
-# Jung
+# Jung's theorem
 
-Every bounded subset of finite-dimensional real Euclidean space is contained in a closed ball whose
-radius is bounded by the sharp Jung constant times its diameter: `0 < n`, `Bornology.IsBounded s`,
-existence of centre `c` with `s ⊆ closedBall c (√(n / (2(n+1))) * diam s)`.
+**Jung's theorem.** Let $n \ge 1$ and let $s$ be a bounded subset of the Euclidean space
+$\mathbb{R}^n$ with diameter $\operatorname{diam} s$. Then there is a point $c \in \mathbb{R}^n$
+such that $s$ is contained in the closed ball with center $c$ and radius
+$\sqrt{n / (2(n + 1))} \cdot \operatorname{diam} s$.
 
 ## Depends on
 

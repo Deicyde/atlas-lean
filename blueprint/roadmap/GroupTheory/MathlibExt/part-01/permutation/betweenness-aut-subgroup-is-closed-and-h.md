@@ -7,20 +7,25 @@ proof: formalized
 lean: MetaMathlibExt.CameronBetweennessGroupWanted.betweennessAutSubgroup_isClosed_and_highlyHomogeneous
 ---
 
-# Cameron Betweenness Group
+# The betweenness group of the rationals is closed and highly homogeneous
 
-The betweenness automorphism group of `ℚ` is closed in the pointwise topology and
-highly homogeneous (one orbit on `k`-sets for all `k`).
+**The betweenness group of the rationals is closed and highly homogeneous.** Let $G$ be the
+group of permutations $\sigma$ of $\mathbb{Q}$ preserving strict betweenness in both directions:
+for all $a, b, c \in \mathbb{Q}$, $b$ lies strictly between $a$ and $c$ (that is, $a < b < c$ or
+$c < b < a$) if and only if $\sigma(b)$ lies strictly between $\sigma(a)$ and $\sigma(c)$. Then
+$G$ is closed in the topology of pointwise convergence on the permutations of $\mathbb{Q}$, where
+$\mathbb{Q}$ carries the discrete topology, and $G$ is highly homogeneous: for every natural
+number $k$ it has a single orbit on the $k$-element subsets of $\mathbb{Q}$.
 
 ## Depends on
 
-- [Pointwise Topology](pointwise-topology.md)
-- [Is Highly Homogeneous](highly-homogeneous/is-highly-homogeneous.md)
-- [Betweenness Aut Subgroup](betweenness/betweenness-aut-subgroup.md)
+- [Pointwise convergence topology on permutations](pointwise-topology.md)
+- [Highly homogeneous permutation groups](highly-homogeneous/is-highly-homogeneous.md)
+- [The betweenness automorphism group of a linear order](betweenness/betweenness-aut-subgroup.md)
 
 ## Proof depends on
 
-- [Is Between](betweenness/is-between.md)
+- [Strict betweenness](betweenness/is-between.md)
 
 ## Sources
 

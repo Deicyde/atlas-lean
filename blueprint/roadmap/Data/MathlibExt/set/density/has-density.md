@@ -6,14 +6,16 @@ statement: formalized
 lean: Set.HasDensity
 ---
 
-# Has Density
+# Density of a set
 
-A set `S` in an order `β` where all intervals bounded above are finite is said to have
-density `α : ℝ` (relative to a set `A`) if the proportion of `x ∈ S` such that `x < n`
-in `A` tends to `α` as `n → ∞`.
+**Density of a set.** Let $\beta$ be a preorder in which every set
+$\{x \in \beta \mid x \le b\}$ is finite, let $S, A \subseteq \beta$ and $\alpha \in \mathbb{R}$,
+and write $\beta_{\lt b} = \{x \in \beta \mid x < b\}$. The set $S$ has density $\alpha$ relative to
+$A$ if the partial density
+$\lvert S \cap A \cap \beta_{\lt b} \rvert / \lvert A \cap \beta_{\lt b} \rvert$, taken to be $0$ when
+the denominator is $0$, tends to $\alpha$ as $b \to \infty$ in $\beta$.
 
-When `β = ℕ` this by default defines the natural density of a set
-(i.e., relative to all of `ℕ`).
+By default $A = \beta$; for $\beta = \mathbb{N}$ this is the natural density of $S$.
 
 ## Depends on
 
@@ -21,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partial Density](partial-density.md)
+- [Partial density](partial-density.md)
 
 ## Sources
 

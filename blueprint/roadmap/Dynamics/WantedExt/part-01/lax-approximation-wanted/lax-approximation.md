@@ -12,11 +12,11 @@ Source: P. D. Lax, *Approximation of measure preserving transformations*, Comm. 
 
 ## Depends on
 
-- [Is Cyclic Cube Exchange](is-cyclic-cube-exchange.md)
-- [Toral Dynamical System](toral-dynamical-system.md)
-- [To Volume Preserving Equiv](to-volume-preserving-equiv.md)
-- [Volume Preserving Equiv](volume-preserving-equiv.md)
-- [Delta Dist](delta-dist.md)
+- [Cyclic cube exchange](is-cyclic-cube-exchange.md)
+- [Toral dynamical system](toral-dynamical-system.md)
+- [Toral dynamical systems as volume-preserving transformations](to-volume-preserving-equiv.md)
+- [Volume-preserving transformations of the torus](volume-preserving-equiv.md)
+- [Essential-supremum distance between volume-preserving maps](delta-dist.md)
 
 ## Sources
 

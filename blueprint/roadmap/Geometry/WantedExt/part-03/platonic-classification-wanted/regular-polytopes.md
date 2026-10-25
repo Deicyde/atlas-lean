@@ -5,17 +5,19 @@ statement: formalized
 lean: MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.regularPolytopes
 ---
 
-# Regular Polytopes
+# Regular polytopes
 
-The set of regular (Platonic) polytopes in dimension `d`.
+**Regular polytopes.** For $d \in \mathbb{N}$, this is the set of regular (Platonic) convex
+polytopes in $\mathbb{R}^d$: the convex polytopes in $\mathbb{R}^d$ that are full-dimensional and
+whose symmetry group acts transitively on their flags.
 
 ## Depends on
 
-- [Convex Polytope](convex-polytope.md)
+- [Convex polytope](convex-polytope.md)
 
 ## Proof depends on
 
-- [Is Regular](is-regular.md)
+- [Regular convex polytope](is-regular.md)
 
 ## Sources
 

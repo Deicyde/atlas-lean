@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.trivialUnitDiskLowerBound
 ---
 
-# Trivial Unit Disk Lower Bound
+# Disk lower bound for Lebesgue's universal covering constant (statement)
 
-The radius-half disk gives the exact lower bound `π / 4`.
+**Disk lower bound for Lebesgue's universal covering constant (statement).** The proposition
+that Lebesgue's universal covering constant is at least $\pi/4$.
+
+This is the bound given by a disk of radius $1/2$, which has diameter $1$ and area $\pi/4$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+- [Lebesgue universal covering constant](lebesgue-universal-covering-constant.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.snortSecondPlayerWins_firework
 ---
 
-# Snort Second Player Wins firework
+# Fireworks preserve second-player wins in Snort
 
-If the second player wins Snort on `G` with a response pair `(u, v)` at
-distance at least `3`, then the second player wins on the `n`-firework for every
-`n ≥ |V(G)|`.
+**Fireworks preserve second-player wins in Snort.** Let $G$ be a finite simple graph and let
+$(u, v)$ be a response pair of $G$ whose distance in $G$ is at least $3$ (infinite distance,
+when $u$ and $v$ lie in different components, is allowed). If the second player wins Snort on
+$G$, then for every natural number $n$ at least the number $|V(G)|$ of vertices of $G$, the
+second player wins Snort on the $n$-firework of $G$ at $(u, v)$.
 
 ## Depends on
 
-- [Is Snort Response Pair](is-snort-response-pair.md)
-- [Snort Second Player Wins](snort-second-player-wins.md)
-- [Firework](firework.md)
+- [Snort response pairs](is-snort-response-pair.md)
+- [Second-player win in Snort](snort-second-player-wins.md)
+- [Firework of a graph](firework.md)
 
 ## Sources
 

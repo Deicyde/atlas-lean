@@ -5,5 +5,5 @@ navigation: module
 
 # Integrally Closed
 
-- [Is Integral iff mem lifts](is-integral-iff-mem-lifts.md)
-- [Is Integral iff coeff mem range](is-integral-iff-coeff-mem-range.md)
+- [Integrality via a lift of the minimal polynomial](is-integral-iff-mem-lifts.md)
+- [Integrality via the coefficients of the minimal polynomial](is-integral-iff-coeff-mem-range.md)

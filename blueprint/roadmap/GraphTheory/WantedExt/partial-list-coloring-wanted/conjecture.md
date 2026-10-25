@@ -6,11 +6,13 @@ statement: formalized
 lean: MathlibExt.GraphTheory.PartialListColoringWanted.conjecture
 ---
 
-# Conjecture
+# Iradmusa's partial list colouring conjecture
 
-Iradmusa's conjecture: for a graph with choice number `χ_ℓ` (via the
-shared `SimpleGraph.IsChoiceNumber` predicate) and `1 ≤ r ≤ s ≤ χ_ℓ`, one
-has `λ_r / r ≥ λ_s / s`.
+**Iradmusa's partial list colouring conjecture.** For every finite graph $G$ with choice
+number $\chi_\ell$ and all natural numbers $r$, $s$ with $1 \le r \le s \le \chi_\ell$, one has
+$\lambda_r / r \ge \lambda_s / s$, where $\lambda_t$ is the minimum, over all assignments of
+lists of exactly $t$ colours to the vertices, of the largest number of vertices of $G$ that can
+be properly coloured from their lists.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lambda Min](lambda-min.md)
+- [The partial list colouring number $\lambda_t$](lambda-min.md)
 - [Choice number](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-03/list-coloring/is-choice-number.md)
 
 ## Sources

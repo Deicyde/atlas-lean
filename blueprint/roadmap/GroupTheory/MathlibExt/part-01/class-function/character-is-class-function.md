@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.GroupTheory.ClassFunctionWanted.character_isClassFunction
 ---
 
-# Character is Class Function
+# Characters are class functions
 
-Characters of finite-dimensional representations are class functions.
+**Characters are class functions.** Let $G$ be a group and $k$ a field. For every
+finite-dimensional representation $V$ of $G$ over $k$, the character of $V$, the function
+sending $g \in G$ to the trace of the linear map by which $g$ acts on $V$, is a class
+function on $G$.
 
 ## Depends on
 
-- [Is Class Function](is-class-function.md)
+- [Class functions on a group](is-class-function.md)
 
 ## Sources
 

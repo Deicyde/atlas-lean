@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.impartialTak_penult_weightedCross
 ---
 
-# Impartial Tak penult weighted Cross
+# Weighted Cross bound for Impartial Tak penults
 
-Proposition 13: in an Impartial Tak penult the tokens of every `5 × 5` window have total
-Weighted Cross weight at least `7`.
+**Weighted Cross bound for Impartial Tak penults.** Let $S$ be a penult of Impartial Tak on
+the $n \times n$ board, with rows and columns numbered from $0$. For all natural numbers $r, c$
+with $r + 5 \le n$ and $c + 5 \le n$, consider the $5 \times 5$ window of rows $r, \dots, r + 4$
+and columns $c, \dots, c + 4$, and give each token of $S$ in the window, lying in row $i$ and
+column $j$ of the board, the Weighted Cross weight of position $(i - r, j - c)$. Then the tokens
+of $S$ in the window have total weight at least $7$.
 
 ## Depends on
 
-- [Placement Penult](placement-penult.md)
-- [Tak Has Road](tak-has-road.md)
-- [Weighted Cross Weight](weighted-cross-weight.md)
+- [Penults of a placement game](placement-penult.md)
+- [Roads in Impartial Tak](tak-has-road.md)
+- [Weights of the Weighted Cross](weighted-cross-weight.md)
 
 ## Sources
 

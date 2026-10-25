@@ -6,14 +6,16 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.brassSharifi2005LowerBound_holds
 ---
 
-# Brass Sharifi2005 Lower Bound holds
+# Brass–Sharifi lower bound
 
-Source: Brass and Sharifi, A lower bound for Lebesgue's universal cover problem (2005).
+**Brass–Sharifi lower bound.** The Lebesgue universal covering constant (the infimum of the
+areas of universal convex covers) is at least $0.832$.
 
 ## Depends on
 
-- [Brass Sharifi2005 Lower Bound](brass-sharifi2005-lower-bound.md)
+- [Statement of the Brass–Sharifi lower bound](brass-sharifi2005-lower-bound.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Brass and Sharifi, A lower bound for Lebesgue's universal cover problem (2005).

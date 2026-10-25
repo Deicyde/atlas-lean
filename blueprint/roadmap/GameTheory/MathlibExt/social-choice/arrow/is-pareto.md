@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.IsPareto
 ---
 
-# Is Pareto
+# Pareto condition
 
-Pareto/unanimity: if every voter strictly prefers `a` to `b`, so does society.
+**Pareto condition.** A social welfare function $F$ satisfies the Pareto condition if for
+every profile $p$ and all alternatives $a, b$, whenever every voter strictly prefers $a$ to $b$ in
+$p$, the social order $F(p)$ also strictly prefers $a$ to $b$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ Pareto/unanimity: if every voter strictly prefers `a` to `b`, so does society.
 
 ## Proof depends on
 
-- [Profile](profile.md)
-- [Lt](lt.md)
+- [Preference profile (Arrow's theorem)](profile.md)
+- [Preference relation of a strict total order (Arrow's theorem)](lt.md)
 
 ## Sources
 

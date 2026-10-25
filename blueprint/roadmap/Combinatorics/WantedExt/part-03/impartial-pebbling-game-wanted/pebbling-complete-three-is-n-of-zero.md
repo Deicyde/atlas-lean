@@ -18,7 +18,7 @@ The paper's ordering $a_1 \ge a_2$ follows from these hypotheses.
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources

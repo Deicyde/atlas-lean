@@ -15,7 +15,7 @@ $p_3, p_4$ are even, or $p_1, p_2, p_3, p_4$ are odd and $p_5$ is even.
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [Slow$A$-Nim](slow-anim-game.md)
 
 ## Sources

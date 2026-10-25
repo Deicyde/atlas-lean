@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.CodingTheory.LinearCode
 ---
 
-# Linear Code
+# Linear code
 
-A linear code of length `ι` over `F`: a subspace of the words `ι → F`.
+**Linear code.** Let $F$ be a field and $\iota$ an index set, not necessarily finite.
+A linear code over $F$ with coordinates indexed by $\iota$ is an $F$-linear subspace of the
+space of words, the functions $\iota \to F$.
 
 ## Depends on
 

@@ -6,10 +6,14 @@ statement: formalized
 lean: MoserConvexWormCoverConstant.convexWormCoverConstant
 ---
 
-# Convex Worm Cover Constant
+# Moser's convex worm cover constant
 
-The real infimal area; finiteness is proved before this projection is used. Source:
-Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.
+**Moser's convex worm cover constant.** The convex worm cover constant is the real number
+obtained from the convex cover area infimum, the infimum in $[0, \infty]$ of the Lebesgue areas of
+all convex universal covers in $\mathbb{C}$, by the conversion $[0, \infty] \to \mathbb{R}$ that
+is the identity on finite values and sends $\infty$ to $0$.
+
+That infimum is finite, so the constant equals the infimal area itself.
 
 ## Depends on
 
@@ -17,8 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Convex Cover Area Infimum](convex-cover-area-infimum.md)
+- [Infimal area of convex universal covers](convex-cover-area-infimum.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../sources/v2/MathlibExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

@@ -7,18 +7,20 @@ proof: formalized
 lean: BurnsidePaqb.cardBound
 ---
 
-# Card Bound
+# Bound on the number of irreducible representations
 
-Every finite set of iso-classes has cardinality at most `|G|`.
+**Bound on the number of irreducible representations.** Let $G$ be a finite group. Every
+finite set of isomorphism classes of simple finite-dimensional complex representations of $G$
+has at most $|G|$ elements.
 
 ## Depends on
 
-- [Irr](irr.md)
+- [Isomorphism classes of simple representations](irr.md)
 
 ## Proof depends on
 
-- [Char Fun](char-fun.md)
-- [Char Inner orth](char-inner-orth.md)
+- [Character of an isomorphism class](char-fun.md)
+- [Orthogonality of irreducible characters](char-inner-orth.md)
 
 ## Sources
 

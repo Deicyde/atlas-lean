@@ -5,5 +5,5 @@ navigation: module
 
 # Fano
 
-- [Fano inequality general](fano-inequality-general.md)
-- [Fano inequality](fano-inequality.md)
+- [Fano's inequality, general form](fano-inequality-general.md)
+- [Fano's inequality](fano-inequality.md)

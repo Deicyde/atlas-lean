@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimMRuleLength
 ---
 
-# Exact Slow Nim MRule Length
+# M-rule length
 
-`M(x)`: the number of moves from `x` to a terminal position when both players follow the
-M-rule. Every move of `NIM(k + 1, k)` with `0 < k` removes `k` stones, so `∑ i, x i` steps
-suffice.
+**M-rule length.** Let $k$ be a natural number and let $x = (x_0, \dots, x_k)$ be a position
+on $k + 1$ piles. Then $M(x)$ is the number of M-moves played from $x$ until a terminal position
+(one with $k = 0$ or fewer than $k$ nonempty piles) is reached, computed as the fuel-bounded
+length of M-rule play with fuel $x_0 + \dots + x_k$.
+
+For $0 < k$ every M-move from a nonterminal position removes $k$ stones, so this much fuel
+suffices and $M(x)$ is the full length of the M-rule play from $x$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exact Slow Nim MRule Length Aux](exact-slow-nim-mrule-length-aux.md)
+- [Fuel-bounded length of M-rule play](exact-slow-nim-mrule-length-aux.md)
 
 ## Sources
 

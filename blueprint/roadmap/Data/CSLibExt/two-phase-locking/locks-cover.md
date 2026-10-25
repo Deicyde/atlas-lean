@@ -5,20 +5,24 @@ statement: formalized
 lean: Cslib.Databases.LocksCover
 ---
 
-# Locks Cover
+# Schedules covered by locks
 
-Every read or write is covered by a lock of its transaction in the mode the access requires.
+**Schedules covered by locks.** A locked schedule $s$ is covered by locks when every read or
+write is protected by a lock of its transaction: whenever $s$ has at position $p$ a read or write
+$o$ by transaction $t$ on item $x$, just before position $p$ transaction $t$ holds a lock on $x$
+(acquired at an earlier position and not released since) whose mode covers the mode $o$ requires,
+namely shared for a read and exclusive for a write; an exclusive lock covers both modes.
 
 ## Depends on
 
-- [Action](action.md)
+- [Action of a locked schedule](action.md)
 
 ## Proof depends on
 
-- [Access](../serializability/access.md)
-- [Mode](mode.md)
-- [Holds Before](holds-before.md)
-- [Op](../serializability/op.md)
+- [Read or write access](../serializability/access.md)
+- [Lock mode required by an access](mode.md)
+- [Holding a lock](holds-before.md)
+- [Operation of a schedule](../serializability/op.md)
 
 ## Sources
 

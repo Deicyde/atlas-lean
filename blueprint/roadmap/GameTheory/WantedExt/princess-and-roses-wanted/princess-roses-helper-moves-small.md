@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.princessRosesHelperMoves_small
 ---
 
-# Princess Roses Helper Moves small
+# Small P&R Helper positions
 
-`[0, 0, 0]` is terminal in P&R Helper, and `[1, 1, 1]` has the options `[0, 0, 0]` and
-`[0, 1, 1]`.
+**Small P&R Helper positions.** In the P&R Helper game, the position $(0, 0, 0)$ has no
+options, and the options of $(1, 1, 1)$ are exactly $(0, 0, 0)$ and $(0, 1, 1)$.
 
 ## Depends on
 
-- [Princess Roses Helper Moves](princess-roses-helper-moves.md)
+- [Options in P&R Helper](princess-roses-helper-moves.md)
 
 ## Sources
 

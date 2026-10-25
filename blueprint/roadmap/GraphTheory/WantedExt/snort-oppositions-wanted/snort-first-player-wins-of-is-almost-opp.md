@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.snortFirstPlayerWins_of_isAlmostOpposable
 ---
 
-# Snort First Player Wins of is Almost Opposable
+# Almost opposable graphs are first-player wins in Snort
 
-The first player wins Snort on every almost opposable graph.
+**Almost opposable graphs are first-player wins in Snort.** For every finite simple graph $G$
+that is almost opposable, the first player wins Snort on $G$.
 
 ## Depends on
 
-- [Is Almost Opposable](is-almost-opposable.md)
-- [Snort First Player Wins](snort-first-player-wins.md)
+- [Almost opposable graph](is-almost-opposable.md)
+- [First player wins Snort](snort-first-player-wins.md)
 
 ## Sources
 

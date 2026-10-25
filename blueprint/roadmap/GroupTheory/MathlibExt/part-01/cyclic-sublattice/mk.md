@@ -7,13 +7,15 @@ proof: formalized
 lean: AddSubgroup.IsCyclicSublattice.mk
 ---
 
-# Mk
+# Criterion for a cyclic sublattice
 
-Constructor for `IsCyclicSublattice` from containment and cyclicity.
+**Criterion for a cyclic sublattice.** Let $L'$ and $L$ be subgroups of an abelian group $A$.
+If $L' \subseteq L$ and the quotient group $L/L'$ is cyclic, then $L'$ is a cyclic sublattice
+of $L$.
 
 ## Depends on
 
-- [Is Cyclic Sublattice](is-cyclic-sublattice.md)
+- [Cyclic sublattice of a subgroup](is-cyclic-sublattice.md)
 
 ## Sources
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.golden_bounds_of_max_remoteness_N_symm
 ---
 
-# Golden bounds of max remoteness N symm
+# Golden-ratio bounds for N-positions of maximal remoteness below 1
 
-If the player to move from the tree position `m/n` (row `k`), `n > m`, wins and optimal play
-takes the maximum `k` moves (Smith remoteness `k`), then `1/(φ + 1) < m/n < 1/φ`.
+**Golden-ratio bounds for N-positions of maximal remoteness below 1.** Let $\varphi$ be the
+golden ratio. If the pair $(m, n)$, read as the fraction $m/n$, lies in row $k$ of the Calkin–Wilf
+tree, $m < n$, the position $(m, n)$ of Euclid is not a P-position, and its Smith remoteness in
+Euclid equals $k$, then $1/(\varphi + 1) < m/n < 1/\varphi$.
 
 ## Depends on
 
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
 - [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
-- [Calkin Wilf Row](calkin-wilf-row.md)
-- [Euclid Game](euclid-game.md)
-- [Euclid PPosition](euclid-pposition.md)
+- [Rows of the Calkin–Wilf tree](calkin-wilf-row.md)
+- [The game Euclid](euclid-game.md)
+- [Euclid P-position test](euclid-pposition.md)
 
 ## Sources
 

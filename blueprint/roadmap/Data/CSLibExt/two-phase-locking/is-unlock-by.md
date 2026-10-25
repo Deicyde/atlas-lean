@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Databases.Action.isUnlockBy
 ---
 
-# Is Unlock By
+# Release test
 
-Whether an action is a release by transaction `t`.
+**Release test.** For a transaction $t$, this Boolean test on the actions of a locked schedule
+returns true exactly when the action is a release by $t$ of its lock on some item.
 
 ## Depends on
 
-- [Action](action.md)
+- [Action of a locked schedule](action.md)
 
 ## Proof depends on
 
-- [Lock Mode](lock-mode.md)
-- [Op](../serializability/op.md)
+- [Lock mode](lock-mode.md)
+- [Operation of a schedule](../serializability/op.md)
 
 ## Sources
 

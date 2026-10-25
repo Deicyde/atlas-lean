@@ -7,10 +7,12 @@ proof: formalized
 lean: Matrix.exists_unitaryGroup_isUpperTriangular
 ---
 
-# Schur
+# Schur decomposition of a complex square matrix
 
-Schur decomposition: every square complex matrix is `U * T * star U` for some
-`U : Matrix.unitaryGroup n ℂ` and upper-triangular `T`.
+**Schur decomposition of a complex square matrix.** Let $A$ be a square complex matrix whose rows
+and columns are indexed by a finite linearly ordered type $n$. Then there are a unitary matrix $U$,
+with conjugate transpose $U^*$, and a matrix $T$ that is upper triangular with respect to the order
+on $n$ (that is, $T_{ij} = 0$ whenever $j < i$) such that $A = U T U^*$.
 
 ## Depends on
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Geometry.SpaceGroupsWanted.Geometry.SpaceGroupsProblem.E
 ---
 
-# E
+# Euclidean space $\mathbb{R}^d$ for the space-group problem
 
-The Euclidean model space `ℝᵈ`.
+**Euclidean space $\mathbb{R}^d$ for the space-group problem.** For a natural number $d$, this
+is the $d$-dimensional real Euclidean space $\mathbb{R}^d$ with its standard inner product.
 
 ## Depends on
 

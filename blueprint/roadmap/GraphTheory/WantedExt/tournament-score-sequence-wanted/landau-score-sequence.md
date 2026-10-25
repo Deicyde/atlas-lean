@@ -5,16 +5,16 @@ statement: formalized
 lean: MathlibExt.GraphTheory.TournamentScoreSequenceWanted.landau_score_sequence
 ---
 
-# Theorem 4
+# Landau's theorem on score sequences
 
-**Theorem 4** (Landau, via Moon): a nondecreasing
-sequence `s_1 ≤ ⋯ ≤ s_n` is the score sequence of a
-tournament if and only if `∑_{i=1}^k s_i ≥ C(k, 2)` for
-`1 ≤ k ≤ n`, with equality when `k = n`.
+**Landau's theorem on score sequences.** Let $s_1 \le s_2 \le \dots \le s_n$ be a
+nondecreasing sequence of natural numbers. There is a tournament on $n$ players in which player
+$i$ has score $s_i$ for every $i$ if and only if $\sum_{i=1}^{k} s_i \ge \binom{k}{2}$ for every
+$k$ with $1 \le k \le n$ and $\sum_{i=1}^{n} s_i = \binom{n}{2}$.
 
 ## Depends on
 
-- [Is Tournament](is-tournament.md)
+- [Tournament](is-tournament.md)
 - [Score](score.md)
 
 ## Sources

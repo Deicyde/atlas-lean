@@ -16,7 +16,7 @@ conditions $\varphi$ and $\psi$ it is the union of the attributes of $\varphi$ a
 
 ## Depends on
 
-- [Cond](cond.md)
+- [Selection conditions](cond.md)
 
 ## Sources
 

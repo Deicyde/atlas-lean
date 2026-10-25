@@ -7,17 +7,18 @@ proof: formalized
 lean: ClassBreadth.elementBreadth_one
 ---
 
-# Element Breadth one
+# Breadth of the identity
 
-The breadth of the identity element is zero.
+**Breadth of the identity.** In a finite group, the breadth $\operatorname{br}_p(1)$ of the
+identity element $1$ is $0$ for every natural number $p$.
 
 ## Depends on
 
-- [Element Breadth](element-breadth.md)
+- [Breadth of an element](element-breadth.md)
 
 ## Proof depends on
 
-- [Carrier mk one](carrier-mk-one.md)
+- [The conjugacy class of the identity](carrier-mk-one.md)
 
 ## Sources
 

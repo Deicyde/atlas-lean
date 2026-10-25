@@ -6,18 +6,21 @@ proof: formalized
 lean: InformationTheory.conditionalPrefixOptimum_le
 ---
 
-# Conditional Prefix Optimum le
+# Each admissible extension bounds the conditional-prefix optimum
 
-Every actual admissible extension bounds the fixed-law infimum from above.
+**Each admissible extension bounds the conditional-prefix optimum.** Let $p$ be a finite
+joint law of $(X, Y)$ and let $q$ be a finite extension of $p$ by an auxiliary variable $S$ with
+$I(X; S) = 0$ and $H(Y \mid X, S) = 0$. Then the conditional-prefix optimum of $p$ is at most
+the conditional entropy $H(Y \mid S)$ of $q$.
 
 ## Depends on
 
-- [Finite Extension](finite-extension.md)
-- [Auxiliary Information](auxiliary-information.md)
-- [Conditional Entropy](conditional-entropy.md)
-- [Output Given Input Auxiliary Entropy](output-given-input-auxiliary-entropy.md)
-- [Finite Joint Law](finite-joint-law.md)
-- [Conditional Prefix Optimum](conditional-prefix-optimum.md)
+- [Finite extension of a joint law](finite-extension.md)
+- [Mutual information between the input and the auxiliary](auxiliary-information.md)
+- [Conditional entropy of the output given the auxiliary](conditional-entropy.md)
+- [Conditional entropy of the output given the input and the auxiliary](output-given-input-auxiliary-entropy.md)
+- [Finite joint law](finite-joint-law.md)
+- [Conditional-prefix optimum of a joint law](conditional-prefix-optimum.md)
 
 ## Sources
 

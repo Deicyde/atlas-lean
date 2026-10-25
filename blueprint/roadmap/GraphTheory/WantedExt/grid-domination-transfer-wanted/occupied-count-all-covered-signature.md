@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.occupiedCount_allCoveredSignature
 ---
 
-# Occupied Count all Covered Signature
+# The all-covered signature has no occupied vertex
 
-The all-covered signature has no occupied vertex.
+**The all-covered signature has no occupied vertex.** For every simple graph $R$ on a finite
+vertex set, the number of occupied vertices of the all-covered signature of $R$ is $0$.
 
 ## Depends on
 
 - [Domination State](domination-state.md)
-- [Is Domination Signature](is-domination-signature.md)
-- [All Covered Signature](all-covered-signature.md)
+- [Domination signature](is-domination-signature.md)
+- [All-covered signature](all-covered-signature.md)
 - [Occupied Count](occupied-count.md)
 
 ## Sources

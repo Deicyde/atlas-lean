@@ -6,11 +6,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.GoldenRatioThompsonEmbedWanted.conjecture
 ---
 
-# Conjecture
+# Golden-ratio Thompson embedding conjecture
 
-[OWR-16167-018] `F_τ` embeds in `F`: some map sends `F_τ` injectively into `F` and is
-multiplicative on `F_τ`. Since `F_τ` is a group under composition, this is an injective group
-homomorphism `F_τ → F`.
+**Golden-ratio Thompson embedding conjecture.** The proposition that there is a map
+$\varphi$ from permutations of $\mathbb{R}$ to permutations of $\mathbb{R}$ that sends every
+element of Cleary's golden-ratio Thompson group $F_\tau$ into Thompson's group $F$, is injective
+on $F_\tau$, and satisfies $\varphi(g h) = \varphi(g) \varphi(h)$ for all $g, h \in F_\tau$,
+where the product of permutations is composition.
+
+Since $F_\tau$ is a group under composition, this says that $F_\tau$ embeds in $F$ as a group.
 
 ## Depends on
 
@@ -18,9 +22,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cleary FTau](cleary-ftau.md)
-- [Thompson F](thompson-f.md)
+- [Cleary's golden-ratio Thompson group](cleary-ftau.md)
+- [Thompson's group F](thompson-f.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.GoldenRatioThompsonEmbedWanted](../../../../../sources/v2/WantedExt.md)
+- record OWR-16167-018.

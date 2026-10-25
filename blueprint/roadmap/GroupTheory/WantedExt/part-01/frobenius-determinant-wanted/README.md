@@ -5,6 +5,6 @@ navigation: module
 
 # Frobenius Determinant
 
-- [Group Matrix](group-matrix.md)
-- [Group Determinant](group-determinant.md)
+- [Group matrix](group-matrix.md)
+- [Group determinant](group-determinant.md)
 - [Frobenius determinant theorem](frobenius-group-determinant.md)

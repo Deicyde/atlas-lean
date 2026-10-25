@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.Geometry.HadwigerWanted.ConvexGeometry.valuations
 ---
 
-# Valuations
+# The space of continuous invariant valuations
 
-The valuations form an `ℝ`-subspace of `ConvexBody ℝⁿ → ℝ`.
+**The space of continuous invariant valuations.** For a natural number $n$, the continuous
+invariant valuations on the convex bodies of $\mathbb{R}^n$ form a real linear subspace of the
+vector space of all functions from the convex bodies of $\mathbb{R}^n$ to $\mathbb{R}$.
 
 ## Depends on
 
-- [E](e.md)
+- [Model space for convex bodies](e.md)
 
 ## Proof depends on
 
-- [Is Valuation](is-valuation.md)
+- [Continuous invariant valuation](is-valuation.md)
 
 ## Sources
 

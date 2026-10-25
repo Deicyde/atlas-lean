@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.nimPassIndicator_le_one
 ---
 
-# Nim Pass Indicator le one
+# The Nim pass indicator is at most one
 
-The pass indicator takes values in `{0, 1}`.
+**The Nim pass indicator is at most one.** For every $s \in \mathbb{N}$ and all
+$m, x \in \mathbb{N}^s$, the pass indicator of $m$ at $x$ is at most $1$; that is, it takes values
+in $\{0, 1\}$.
 
 ## Depends on
 
-- [Nim Pass Indicator](nim-pass-indicator.md)
+- [Pass indicator of Nim with a restricted pass](nim-pass-indicator.md)
 
 ## Sources
 

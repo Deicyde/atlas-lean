@@ -6,14 +6,16 @@ proof: formalized
 lean: MathlibExt.FieldTheory.EssentialDimensionSymmetric.root_injective
 ---
 
-# Root injective
+# The roots $x_i$ are pairwise distinct
 
-The roots are pairwise distinct.
+**The roots $x_i$ are pairwise distinct.** For every $n \in \mathbb{N}$, the elements
+$x_1, \dots, x_n$ of the function field $\mathbb{C}(x_1, \dots, x_n)$ are pairwise distinct:
+$x_i = x_j$ implies $i = j$.
 
 ## Depends on
 
-- [Root](root.md)
-- [Roots Field](roots-field.md)
+- [The roots $x_i$](root.md)
+- [The function field $\mathbb{C}(x_1, \dots, x_n)$](roots-field.md)
 
 ## Sources
 

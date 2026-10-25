@@ -3,7 +3,7 @@ article_id: af_b1385140a5dce86848f6c5ce
 navigation: transparent
 ---
 
-# Burnside Paqb to General Linear Group Exponent
+# Burnside Paqb to Exponent of the general linear group over a prime field
 
 - [Burnside Paqb](burnside-paqb/README.md)
 - [Finite Abelian](finite-abelian/README.md)
@@ -13,7 +13,7 @@ navigation: transparent
 - [Abelian Representation](abelian-representation/README.md)
 - [Amenable Group](amenable-group/README.md)
 - [Artin Group](artin-group/README.md)
-- [Automorphism Orbits](has-finitely-many-automorphism-orbits.md)
+- [Groups with finitely many automorphism orbits](has-finitely-many-automorphism-orbits.md)
 - [Burnside Paqb](burnside-paqb-2/README.md)
 - [Burnside Paqb Reduction](burnside-paqb-reduction/README.md)
 - [Class Breadth](class-breadth/README.md)
@@ -24,4 +24,4 @@ navigation: transparent
 - [Finite Abelian Dual](finite-abelian-dual/README.md)
 - [Finite Group Convolution](finite-group-convolution/README.md)
 - [GHarmonic](gharmonic/README.md)
-- [General Linear Group Exponent](general-linear-group-exponent-eq-lcm-eq.md)
+- [Exponent of the general linear group over a prime field](general-linear-group-exponent-eq-lcm-eq.md)

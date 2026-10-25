@@ -5,21 +5,20 @@ statement: formalized
 lean: MathlibExt.GroupTheory.ScottishBook160Part2Wanted.scottishBook160Part2_refuted
 ---
 
-# Scottish Book160 Part2 refuted
+# Connected metric groups need not be arcwise connected
 
-Part (2) of Scottish Book 160 is false. Counterexample: the p-adic
-solenoid, the inverse limit of circles under `z ↦ z ^ p` (the case of
-the solenoid construction with every `nᵢ = p`). It is a compact
-connected metrizable topological group, but it is not path connected:
-for some `x y` no continuous `γ : ℝ → G` joins them (such a `γ` would
-restrict to a continuous path on `[0, 1]`). Hence connectedness in the
-sense of Hausdorff does not imply arcwise connectedness for metric
-groups. Part (1) is not refuted here; it remains an open conjecture
-(`OpenConjectures.GroupTheory.ScottishBook160.conjecture`).
+**Connected metric groups need not be arcwise connected.** The claim of part (2) of Scottish
+Book Problem 160 is false: there is a metric group $G$ (a group with a metric for which
+multiplication and inversion are continuous) that is connected in the sense of Hausdorff but
+not arcwise connected, that is, there are points $x, y \in G$ such that no continuous map
+$\gamma \colon \mathbb{R} \to G$ has $\gamma(0) = x$ and $\gamma(1) = y$.
+
+The $p$-adic solenoid, the inverse limit of circles under $z \mapsto z^p$, is such a group:
+it is a compact connected metrizable topological group that is not path connected.
 
 ## Depends on
 
-- [Scottish Book Problem160 Part2 Claim](scottish-book-problem160-part2-claim.md)
+- [Claim of Scottish Book Problem 160, part (2)](scottish-book-problem160-part2-claim.md)
 
 ## Sources
 

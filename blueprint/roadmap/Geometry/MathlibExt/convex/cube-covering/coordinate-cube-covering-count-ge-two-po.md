@@ -7,18 +7,21 @@ proof: formalized
 lean: ConvexCovering.coordinateCube_coveringCount_ge_two_pow
 ---
 
-# Coordinate Cube covering Count ge two pow
+# Covering the cube by translates of its interior needs $2^n$ translates
 
-An actual interior-translate cover of the cube requires at least `2^n` members.
+**Covering the cube by translates of its interior needs $2^n$ translates.** Let
+$C_n = [-1, 1]^n$ be the coordinate cube in $\mathbb{R}^n$. If $C_n$ is contained in the union of
+$q$ translates $v_1 + \operatorname{int} C_n, \dots, v_q + \operatorname{int} C_n$ of its interior,
+then $2^n \le q$.
 
 ## Depends on
 
-- [Covered By Interior Translates](../covering/covered-by-interior-translates.md)
-- [Coordinate Cube](coordinate-cube.md)
+- [Covering by interior translates](../covering/covered-by-interior-translates.md)
+- [Coordinate cube](coordinate-cube.md)
 
 ## Proof depends on
 
-- [Coordinate Cube interior iff](coordinate-cube-interior-iff.md)
+- [Interior of the coordinate cube](coordinate-cube-interior-iff.md)
 
 ## Sources
 

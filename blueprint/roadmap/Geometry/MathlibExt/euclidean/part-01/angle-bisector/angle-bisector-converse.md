@@ -7,10 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.angle_bisector_converse
 ---
 
-# Angle bisector converse
+# Converse of the angle bisector theorem
 
-Converse of the Angle bisector theorem: a point `D` on segment `BC`
-dividing `BC` in the ratio `AB : AC` lies on the internal bisector of angle `A`.
+**Converse of the angle bisector theorem.** Let $A$, $B$, $C$, $D$ be points of a Euclidean
+affine space (a metric affine space over a real inner product space) with $A$, $B$, $C$ affinely
+independent, so that $ABC$ is a nondegenerate triangle, and with $A \ne B$, $A \ne C$ and
+$A \ne D$. If $D$ lies on the closed segment $BC$ and $BD / DC = AB / AC$, then
+$\angle BAD = \angle DAC$ (unoriented angles), that is, $D$ lies on the internal bisector of the
+angle at $A$.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Angle bisector converse general](angle-bisector-converse-general.md)
+- [Converse of the angle bisector theorem without distinctness hypotheses](angle-bisector-converse-general.md)
 
 ## Sources
 

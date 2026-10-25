@@ -7,20 +7,23 @@ proof: formalized
 lean: BurnsidePaqb.charDivDeg_isIntegral_of_coprime
 ---
 
-# Char Div Deg is Integral of coprime
+# Integrality of the normalized character value at a coprime class
 
-Bielefeld Thm 5, integrality step: if `|C|` and `χ(1)` are coprime,
-then `χ(g)/χ(1)` is an algebraic integer.
+**Integrality of the normalized character value at a coprime class.** Let $G$ be a finite
+group, let $\rho$ be an irreducible representation of $G$ on a nonzero finite-dimensional complex
+vector space $V$, with character $\chi$, and let $g \in G$. If the size of the conjugacy class of
+$g$ is coprime to $\dim V$, then $\chi(g)/\chi(1)$ is an algebraic integer.
 
 ## Depends on
 
-- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
+- [Conjugacy class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Proof depends on
 
-- [Character is Integral](character-is-integral.md)
-- [Class Sum central Scalar is Integral](../central-character/class-sum-central-scalar-is-integral.md)
+- [Character values are algebraic integers](character-is-integral.md)
+- [Class size times character ratio is an algebraic integer](../central-character/class-sum-central-scalar-is-integral.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.KillingLemma](../../../../../../sources/v2/MathlibExt.md)
+- Bielefeld Theorem 5, integrality step.

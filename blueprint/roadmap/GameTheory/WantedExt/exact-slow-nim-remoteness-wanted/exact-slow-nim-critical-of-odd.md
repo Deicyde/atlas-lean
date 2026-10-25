@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNim_critical_of_odd
 ---
 
-# Corollary 1 (ii)
+# Unique critical-lowering move for odd parameter (Corollary 1 (ii))
 
-**Corollary 1 (ii).** For `2 ≤ k`, if `x` is `m`-critical with `m` odd, then `x` has a unique
-even entry `x i`, and exactly one move leads to an `(m - 1)`-critical position: the move keeping
-pile `i` and reducing all others, which is the M-move.
+**Unique critical-lowering move for odd parameter (Corollary 1 (ii)).** Let $k \ge 2$, let
+$m$ be odd, and let $x \in \mathbb{N}^{k+1}$ be an $m$-critical position of Slow$\{k\}$-Nim on
+$k + 1$ stacks. Then $x$ has exactly one even entry $x_i$. The position $x'$ obtained from $x$ by
+removing one token from every pile other than $i$ is an option of $x$, it is the only option of
+$x$ that is $(m - 1)$-critical, and it is the position reached from $x$ by the M-move.
 
 ## Depends on
 
-- [Is Exact Slow Nim Critical](is-exact-slow-nim-critical.md)
-- [Exact Slow Nim MRule Move](exact-slow-nim-mrule-move.md)
+- [$m$-critical positions of exact slow $k$-NIM](is-exact-slow-nim-critical.md)
+- [The M-move](exact-slow-nim-mrule-move.md)
 - [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
 - [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
 

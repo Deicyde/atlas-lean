@@ -6,9 +6,12 @@ statement: formalized
 lean: FalconerDistanceSetWanted.falconer1985LatticeExamples
 ---
 
-# Falconer1985 Lattice Examples
+# Statement of Falconer's measure-zero distance set examples
 
-Compact Euclidean lattice examples include the endpoint `s = d/2`.
+**Statement of Falconer's measure-zero distance set examples.** This is the proposition
+that for every integer $d \ge 2$ and every $s$ with $0 \le s \le d/2$, there is a compact set
+$E \subseteq \mathbb{R}^d$ of Hausdorff dimension exactly $s$ whose distance set
+$\{\|x - y\| : x, y \in E\}$ has one-dimensional Lebesgue measure zero.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Distance Set](../../../MathlibExt/falconer-distance-set/distance-set.md)
+- [Euclidean distance set](../../../MathlibExt/falconer-distance-set/distance-set.md)
 
 ## Sources
 

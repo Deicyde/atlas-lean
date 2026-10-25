@@ -213,20 +213,22 @@ theorem _root_.FDRep.ofMonoidHom_simple {k G : Type*} [Field k] [Monoid G]
   exact Functor.simple_of_simple_obj (Action.forget (FGModuleCat k) G) _
 
 /--
-The character of a simple complex representation of a finite abelian group is
-a monoid homomorphism.
+**Characters of simple representations of a finite abelian group are homomorphisms.** Let $G$
+be a finite abelian group and let $V$ be a simple finite-dimensional complex representation of
+$G$. Then there is a monoid homomorphism $\varphi : G \to \mathbb{C}$ such that the character of
+$V$ equals $\varphi$.
+
+Proof: Simplicity of $V$ makes it irreducible, and complex irreducible representations of an
+abelian group are one-dimensional (the corollary in Wikipedia, “Schur's lemma”), so $V$ is
+one-dimensional. Endomorphisms of a one-dimensional space are scalars, and their traces give the
+multiplicative character.
+
+Proves `Wanted` entry `abelian_simple_char_is_hom`.
 
 Sources: `undergrad.yaml`, section "Representation theory of finite groups",
 entry "representations of abelian groups"; J.-P. Serre, Linear
 Representations of Finite Groups, GTM 42, §2.8 (degree-one characters of
 abelian groups).
-
-Proves `Wanted` entry `abelian_simple_char_is_hom`.
-
-Proof: Categorical simplicity gives irreducibility, then Mathlib's commutative irreducible
-representation theorem makes `V` one-dimensional (the corollary in Wikipedia, “Schur's lemma”,
-that complex irreducible representations of abelian groups are one-dimensional). Rank-one
-endomorphisms are scalars, and their traces give the multiplicative character.
 -/
 public theorem abelian_simple_char_is_hom (G : Type*) [CommGroup G]
     [Finite G] (V : FDRep ℂ G) [Simple V] :
@@ -234,19 +236,22 @@ public theorem abelian_simple_char_is_hom (G : Type*) [CommGroup G]
   exact ⟨V.characterMonoidHom, V.coe_characterMonoidHom.symm⟩
 
 /--
-Every monoid homomorphism to `ℂ` is the character of a simple complex
-representation of a finite abelian group.
+**Every homomorphism of a finite abelian group to the complex numbers is a simple character.**
+Let $G$ be a finite abelian group and let $\varphi : G \to \mathbb{C}$ be a monoid homomorphism.
+Then there is a simple finite-dimensional complex representation $V$ of $G$ whose character
+equals $\varphi$.
+
+Proof: Let each $g \in G$ act on the one-dimensional space $\mathbb{C}$ by the scalar
+$\varphi(g)$; its trace is $\varphi(g)$. One-dimensional modules are simple. Wikipedia,
+“Representation theory of finite groups”, notes that the irreducible characters of an abelian
+group are its homomorphisms to $\mathbb{C}^\times$.
+
+Proves `Wanted` entry `abelian_hom_is_simple_char`.
 
 Sources: `undergrad.yaml`, section "Representation theory of finite groups",
 entry "representations of abelian groups"; J.-P. Serre, Linear
 Representations of Finite Groups, GTM 42, Ch. I (one-dimensional
 representations from characters).
-
-Proves `Wanted` entry `abelian_hom_is_simple_char`.
-
-Proof: Let `g` act on the one-dimensional space `ℂ` by the scalar `φ g`; its trace is `φ g`.
-One-dimensional modules are simple. Wikipedia, “Representation theory of finite groups”, notes that
-the irreducible characters of an abelian group are its homomorphisms to `ℂˣ`.
 -/
 public theorem abelian_hom_is_simple_char (G : Type*) [CommGroup G]
     [Finite G] (φ : G →* ℂ) :
@@ -272,19 +277,23 @@ private theorem abelianRep_simple_iso_of_char_eq (G : Type*) [CommGroup G] [Fini
   · simp [hVW_nonempty] at hif
 
 /--
-Simple complex representations of a finite abelian group with equal characters
-are isomorphic.
+**Characters determine simple representations of a finite abelian group.** Let $G$ be a finite
+abelian group and let $V$ and $W$ be simple finite-dimensional complex representations of $G$,
+with characters $\chi_V$ and $\chi_W$. If $\chi_V = \chi_W$, then $V$ and $W$ are isomorphic.
+
+Proof: For functions $\chi, \psi : G \to \mathbb{C}$ write
+$\langle \chi, \psi \rangle = \frac{1}{|G|} \sum_{g \in G} \chi(g)\,\psi(g^{-1})$, where $|G|$ is
+the order of $G$. The orthonormality of irreducible characters gives
+$\langle \chi_V, \chi_V \rangle = 1$. Replacing the second character by the equal character
+$\chi_W$ gives $\langle \chi_V, \chi_W \rangle = 1$, which forces $V \cong W$. This is the
+orthonormality of irreducible characters in Wikipedia, “Character theory”.
+
+Proves `Wanted` entry `abelian_simple_iso_of_char_eq`.
 
 Sources: `undergrad.yaml`, section "Representation theory of finite groups",
 entry "representations of abelian groups"; J.-P. Serre, Linear
 Representations of Finite Groups, GTM 42, §2.8 (characters determine
 representations of abelian groups).
-
-Proves `Wanted` entry `abelian_simple_iso_of_char_eq`.
-
-Proof: Mathlib's character orthonormality formula gives inner product one for `V` with itself.
-Replacing the second character by the equal character of `W` forces `V ≅ W`. This is the
-orthonormality of irreducible characters in Wikipedia, “Character theory”.
 -/
 public theorem abelian_simple_iso_of_char_eq (G : Type*) [CommGroup G]
     [Finite G] (V W : FDRep ℂ G) [Simple V] [Simple W]

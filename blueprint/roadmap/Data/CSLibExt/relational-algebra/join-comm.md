@@ -13,12 +13,12 @@ The natural join is commutative.
 ## Depends on
 
 - [Tuple](tuple.md)
-- [Join](join.md)
+- [Natural join](join.md)
 
 ## Proof depends on
 
-- [Compatible](compatible.md)
-- [Merge](merge.md)
+- [Compatible tuples](compatible.md)
+- [Merge of two tuples](merge.md)
 
 ## Sources
 

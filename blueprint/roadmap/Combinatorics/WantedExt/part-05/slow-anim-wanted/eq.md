@@ -19,7 +19,7 @@ both sets of P-positions for $R$, then $P = Q$.
 
 ## Proof depends on
 
-- [Impartial Acyclic Game](../../../../GameTheory/MathlibExt/p-positions-unique.md)
+- [Uniqueness of the P-positions of a terminating impartial game](../../../../GameTheory/MathlibExt/p-positions-unique.md)
 
 ## Sources
 

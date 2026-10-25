@@ -7,13 +7,15 @@ proof: formalized
 lean: BurnsidePaqb.exists_eq_smul_of_mem_charCenter
 ---
 
-# Exists eq smul of mem char Center
+# Elements of the scalar center act by scalars
 
-An element of the scalar center acts by some scalar.
+**Elements of the scalar center act by scalars.** Let $\rho$ be a representation of a group $G$
+on a nonzero complex vector space $V$. If $g$ lies in the scalar center of $\rho$, then there is
+$c \in \mathbb{C}$ with $\rho(g) = c \cdot \mathrm{id}_V$.
 
 ## Depends on
 
-- [Char Center](char-center.md)
+- [Scalar center of a representation](char-center.md)
 
 ## Sources
 

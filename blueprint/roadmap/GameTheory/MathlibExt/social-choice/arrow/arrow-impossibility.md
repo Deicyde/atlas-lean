@@ -7,21 +7,24 @@ proof: formalized
 lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.arrow_impossibility
 ---
 
-# Arrow impossibility
+# Arrow's impossibility theorem for strict preferences
 
-For ≥3 alternatives, every Pareto + IIA SWF on unrestricted strict profiles over finite nonempty
-voter type is dictatorial.
+**Arrow's impossibility theorem for strict preferences.** Suppose there are finitely many
+alternatives, at least three of them, and finitely many voters, at least one. Then every social
+welfare function, which assigns a strict total order of the alternatives to each profile of strict
+total orders (one per voter), that satisfies the Pareto condition and independence of irrelevant
+alternatives is dictatorial.
 
 ## Depends on
 
-- [Is Dictatorial](is-dictatorial.md)
-- [Is IIA](is-iia.md)
-- [Is Pareto](is-pareto.md)
+- [Dictatorial social welfare function](is-dictatorial.md)
+- [Independence of irrelevant alternatives](is-iia.md)
+- [Pareto condition](is-pareto.md)
 - [Social Welfare Function](social-welfare-function.md)
 
 ## Proof depends on
 
-- [Arrow impossibility general](arrow-impossibility-general.md)
+- [Arrow's impossibility theorem for strict preferences, general form](arrow-impossibility-general.md)
 
 ## Sources
 

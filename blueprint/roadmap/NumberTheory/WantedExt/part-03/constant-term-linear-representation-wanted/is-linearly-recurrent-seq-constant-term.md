@@ -13,7 +13,7 @@ recurrent if and only if `p ∤ ct[P^n]` for all `n`; otherwise its zeros have d
 ## Depends on
 
 - [Is Linearly Recurrent Seq](is-linearly-recurrent-seq.md)
-- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: Group.Generators.growth_le_card
 ---
 
-# Growth le card
+# The growth function is bounded by the order of the group
 
-The growth function is bounded by the order of the group, since every ball is a subset of `G`.
+**The growth function is bounded by the order of the group.** For every generating family $P$
+of a finite group $G$ and every natural number $n$, the value of the growth function of $P$ at $n$
+is at most the order of $G$, since every ball is a subset of $G$.
 
 ## Depends on
 
-- [Growth](growth.md)
+- [Growth function of a generating family](growth.md)
 
 ## Sources
 

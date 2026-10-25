@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope
 ---
 
-# Convex Polytope
+# Convex polytope
 
-A **convex polytope** in `ℝⁿ`: the convex hull of a finite nonempty set
-whose listed vertices are exactly the extreme points of the hull.
+**Convex polytope.** A convex polytope in $\mathbb{R}^n$ is given by its vertex set: a finite
+nonempty set $V \subseteq \mathbb{R}^n$ that equals the set of extreme points of its convex hull
+$\operatorname{conv}(V)$. The polytope itself is the convex set $\operatorname{conv}(V)$.
 
 ## Depends on
 

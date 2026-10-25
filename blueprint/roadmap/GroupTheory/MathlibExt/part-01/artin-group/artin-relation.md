@@ -6,12 +6,13 @@ statement: formalized
 lean: CoxeterMatrix.artinRelation
 ---
 
-# Artin Relation
+# Artin relator
 
-The Artin (braid) relation for the ordered pair `(i, j)`: the two alternating words of length
-`M i j` in the generators `i` and `j` agree. It is encoded in the free group as
-`⟨s i · s j · ⋯⟩ · ⟨s j · s i · ⋯⟩⁻¹`, which lies in the relation set exactly when both words are
-declared equal.
+**Artin relator.** Let $M = (m_{ij})$ be a Coxeter matrix over an index type $B$, and write
+$s_i$ for the free generators of the free group on $B$. For $i, j \in B$, let $u$ and $v$ be the
+alternating words $s_i s_j s_i \cdots$ and $s_j s_i s_j \cdots$ of length $m_{ij}$. The Artin
+relator of the ordered pair $(i, j)$ is the element $u v^{-1}$ of the free group; setting it equal
+to $1$ imposes the braid relation $u = v$.
 
 ## Depends on
 
@@ -19,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Alternating Word](alternating-word.md)
+- [Alternating word](alternating-word.md)
 
 ## Sources
 

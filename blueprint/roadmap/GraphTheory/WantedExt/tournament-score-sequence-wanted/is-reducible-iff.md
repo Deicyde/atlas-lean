@@ -5,17 +5,16 @@ statement: formalized
 lean: MathlibExt.GraphTheory.TournamentScoreSequenceWanted.isReducible_iff
 ---
 
-# Theorem 5
+# Moon's reducibility criterion
 
-**Theorem 5** (Moon): a tournament with score
-sequence `s_1 ≤ ⋯ ≤ s_n` is reducible if and only if
-`∑_{i=1}^k s_i = C(k, 2)` for some positive integer
-`k < n`.
+**Moon's reducibility criterion.** Let $T$ be a tournament on $n$ players in which the score
+$s_i$ of player $i$ satisfies $s_1 \le s_2 \le \dots \le s_n$. Then $T$ is reducible if and only
+if $\sum_{i=1}^{k} s_i = \binom{k}{2}$ for some integer $k$ with $1 \le k < n$.
 
 ## Depends on
 
-- [Is Reducible](is-reducible.md)
-- [Is Tournament](is-tournament.md)
+- [Reducible tournament](is-reducible.md)
+- [Tournament](is-tournament.md)
 - [Score](score.md)
 
 ## Sources

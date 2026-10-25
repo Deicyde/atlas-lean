@@ -6,14 +6,18 @@ statement: formalized
 lean: MoserConvexWormCoverConstant.halfDiskCovers_holds
 ---
 
-# Half Disk Covers holds
+# The disk of diameter one covers every unit arc
 
-Source: Optimization Problems, constant 13a, closed claim `halfDiskCovers`.
+**The disk of diameter one covers every unit arc.** For every continuous curve
+$\gamma : [0, 1] \to \mathbb{C}$ of length exactly $1$ there are an angle $\theta \in \mathbb{R}$
+and a translation $c \in \mathbb{C}$ such that $|e^{i\theta}\gamma(t) + c| \le 1/2$ for every
+$t \in [0, 1]$.
 
 ## Depends on
 
-- [Half Disk Covers](half-disk-covers.md)
+- [The disk of diameter one covers every unit arc (claim)](half-disk-covers.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.MoserConvexWormCoverConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Optimization Problems, constant 13a, closed claim `halfDiskCovers`.

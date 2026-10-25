@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lower Density](../../../../Data/MathlibExt/set/density/lower-density.md)
+- [Lower density](../../../../Data/MathlibExt/set/density/lower-density.md)
 
 ## Sources
 

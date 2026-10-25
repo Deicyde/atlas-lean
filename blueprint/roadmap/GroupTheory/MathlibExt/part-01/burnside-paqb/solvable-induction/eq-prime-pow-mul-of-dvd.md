@@ -7,9 +7,11 @@ proof: formalized
 lean: BurnsidePaqb.eq_prime_pow_mul_of_dvd
 ---
 
-# Eq prime pow mul of dvd
+# Divisors of $p^a q^b$
 
-A divisor of `p^a * q^b` has the same shape.
+**Divisors of $p^a q^b$.** Let $p$ and $q$ be primes and let $a$ and $b$ be natural numbers.
+Every natural number $d$ dividing $p^a q^b$ has the form $d = p^{a'} q^{b'}$ for some natural
+numbers $a'$ and $b'$.
 
 ## Depends on
 

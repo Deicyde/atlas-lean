@@ -12,7 +12,7 @@ For every `r ∈ ℕ` the densities `μ^{(r)}(d)` exist for all `d ∈ ℤ`, and
 
 ## Depends on
 
-- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

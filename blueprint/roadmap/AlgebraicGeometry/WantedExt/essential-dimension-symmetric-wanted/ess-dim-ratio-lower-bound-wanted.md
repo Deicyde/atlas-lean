@@ -16,7 +16,7 @@ Then $\limsup_{n \to \infty} \operatorname{ed}(S_n)/n \ge 1/2$.
 
 ## Depends on
 
-- [Ess Dim Ratio](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/ess-dim-ratio.md)
+- [Asymptotic essential-dimension ratio of the symmetric groups](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/ess-dim-ratio.md)
 
 ## Sources
 

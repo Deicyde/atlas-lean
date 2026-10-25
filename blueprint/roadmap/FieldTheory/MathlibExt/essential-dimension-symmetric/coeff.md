@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.FieldTheory.EssentialDimensionSymmetric.coeff
 ---
 
-# Coeff
+# The coefficients of the general polynomial
 
-The coefficient `aₖ₊₁`: the `(k+1)`-st elementary symmetric
-function of the roots, as an element of the function field.
+**The coefficients of the general polynomial.** For $0 \le i < n$, the coefficient
+$a_{i+1}$ is the $(i+1)$-st elementary symmetric function of $x_1, \dots, x_n$, as an element of
+the function field $\mathbb{C}(x_1, \dots, x_n)$.
 
 ## Depends on
 
-- [Roots Field](roots-field.md)
+- [The function field $\mathbb{C}(x_1, \dots, x_n)$](roots-field.md)
 
 ## Sources
 

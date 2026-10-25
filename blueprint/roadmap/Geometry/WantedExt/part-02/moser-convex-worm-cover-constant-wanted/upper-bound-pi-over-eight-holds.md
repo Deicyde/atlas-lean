@@ -6,14 +6,19 @@ statement: formalized
 lean: MoserConvexWormCoverConstant.upperBoundPiOverEight_holds
 ---
 
-# Upper Bound Pi Over Eight holds
+# The convex worm cover constant is at most π/8
 
-Source: Optimization Problems, constant 13a, closed claim `upperBoundPiOverEight`.
+**The convex worm cover constant is at most π/8.** A unit arc is a continuous
+curve $\gamma : [0, 1] \to \mathbb{C}$ of length exactly $1$. The convex worm cover constant,
+the infimum of the areas of the nonempty convex sets $\Omega \subseteq \mathbb{C}$ that contain,
+for every unit arc $\gamma$, the image of $\gamma$ under some rotation followed by a translation,
+is at most $\pi/8$.
 
 ## Depends on
 
-- [Upper Bound Pi Over Eight](upper-bound-pi-over-eight.md)
+- [Proposition: the convex worm cover constant is at most π/8](upper-bound-pi-over-eight.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.MoserConvexWormCoverConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Optimization Problems, constant 13a, closed claim `upperBoundPiOverEight`.

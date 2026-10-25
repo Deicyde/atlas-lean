@@ -6,14 +6,18 @@ statement: formalized
 lean: MathlibExt.Geometry.UlamWanted.Ulam.CuttingHyperplaneAtLevel
 ---
 
-# Cutting Hyperplane At Level
+# Cutting hyperplane at a level
 
-A hyperplane `H(ξ) = { p ∈ ℝᵈ | ξ ∙ p = t }` is called the cutting hyperplane of `K` at
-level `δ ∈ ℝ`, if `vol(K ∩ H⁻(ξ)) = δ`.
+**Cutting hyperplane at a level.** Let $K \subseteq \mathbb{R}^d$, let $\xi \in \mathbb{R}^d$ be
+a unit vector and let $\delta \in \mathbb{R}$. A cutting hyperplane of $K$ in direction $\xi$ at
+level $\delta$ is a real number $t$, standing for the hyperplane
+$\{p \in \mathbb{R}^d : \xi \cdot p = t\}$, such that the volume of
+$K \cap \{p \in \mathbb{R}^d : \xi \cdot p \le t\}$ equals $\delta$. Here a set of infinite volume
+is assigned volume $0$.
 
 ## Depends on
 
-- [S](s.md)
+- [Unit sphere](s.md)
 
 ## Sources
 

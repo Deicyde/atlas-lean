@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.nExpansionMap_self_of_int
 ---
 
-# N Expansion Map self of int
+# The left endpoint goes to the right endpoint when $N/\alpha - \alpha$ is an integer
 
-When `N / α - α` is an integer, the left endpoint is mapped to the right endpoint:
-`T_α(α) = α + 1`.
+**The left endpoint goes to the right endpoint when $N/\alpha - \alpha$ is an integer.** Let
+$N$ be a natural number and $\alpha$ a real number such that $N/\alpha - \alpha$ is an integer,
+with the convention $N/0 = 0$. Then the $N$-expansion map $T_\alpha$ satisfies
+$T_\alpha(\alpha) = \alpha + 1$.
 
 ## Depends on
 
-- [N Expansion Map](n-expansion-map.md)
+- [The $N$-expansion map](n-expansion-map.md)
 
 ## Proof depends on
 
-- [N Expansion Digit](n-expansion-digit.md)
+- [Digit of the N-expansion map](n-expansion-digit.md)
 
 ## Sources
 

@@ -7,9 +7,12 @@ proof: formalized
 lean: MathlibExt.GroupTheory.IrreducibleCharacterBasisWanted.linearIndependent_irrCharacters
 ---
 
-# Linear Independent irr Characters
+# Irreducible characters are linearly independent
 
-Distinct irreducible complex characters are linearly independent as functions.
+**Irreducible characters are linearly independent.** Let $G$ be a finite group. The irreducible
+complex characters of $G$, that is, the functions $G \to \mathbb{C}$ that are the character of
+some simple finite-dimensional complex representation of $G$, are linearly independent over
+$\mathbb{C}$ in the space of functions $G \to \mathbb{C}$.
 
 Proof: Apply row orthogonality (C. Teleman, *Representation Theory*, Cambridge lecture
 notes, 2005, Theorem 8.10) as coordinate functionals to a vanishing finite linear
@@ -21,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Linear Independent character](linear-independent-character.md)
+- [Characters of nonisomorphic simple representations are linearly independent](linear-independent-character.md)
 
 ## Sources
 

@@ -7,19 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.Dickson.classification_tame
 ---
 
-# Dickson's classification
+# Dickson's classification, tame case
 
-**Dickson's classification**, tame case: a finite nontrivial subgroup of
-`PGL₂` over an algebraic closure of `𝔽_p` (odd `p`), of order prime to `p`, is
-cyclic, dihedral, or one of `A₄`, `S₄`, `A₅`.
+**Dickson's classification, tame case.** Let $p$ be an odd prime and let $K$ be an algebraic
+closure of $\mathbb{F}_p$. Every finite nontrivial subgroup $G$ of $\mathrm{PGL}_2(K)$ whose order
+is not divisible by $p$ is cyclic, or isomorphic to the dihedral group of order $2n$ for some
+$n \ge 2$, or isomorphic to one of the groups $A_4$, $S_4$, $A_5$.
 
 Proof: Klein's orbit count on the projective line, followed by identification
 of the resulting orbit signatures.
 
 ## Depends on
 
-- [K](k.md)
-- [PGL](pgl.md)
+- [Algebraic closure of the field with p elements](k.md)
+- [Projective general linear group of degree two](pgl.md)
 
 ## Proof depends on
 

@@ -7,14 +7,16 @@ proof: formalized
 lean: ClassBreadth.exists_breadth_eq_elementBreadth
 ---
 
-# Exists breadth eq element Breadth
+# The group breadth is attained
 
-The group breadth is attained at some element.
+**The group breadth is attained.** Let $G$ be a finite group and $p$ a natural number.
+There is an element $g \in G$ whose breadth $\operatorname{br}_p(g)$ equals the breadth
+$\operatorname{br}_p(G)$ of $G$.
 
 ## Depends on
 
-- [Breadth](breadth.md)
-- [Element Breadth](element-breadth.md)
+- [Breadth of a finite group](breadth.md)
+- [Breadth of an element](element-breadth.md)
 
 ## Sources
 

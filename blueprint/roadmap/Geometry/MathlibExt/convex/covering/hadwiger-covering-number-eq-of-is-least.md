@@ -7,14 +7,16 @@ proof: formalized
 lean: ConvexCovering.hadwigerCoveringNumber_eq_of_isLeast
 ---
 
-# Hadwiger Covering Number eq of is Least
+# A least uniform bound is the Hadwiger covering number
 
-A least universal count gives the Hadwiger number without any finiteness oracle.
+**A least uniform bound is the Hadwiger covering number.** If $q$ is the least natural number
+such that every convex body $K$ in the Euclidean space $\mathbb{R}^n$ is covered by $q$ translates
+of its interior, then the Hadwiger covering number of dimension $n$ equals $q$.
 
 ## Depends on
 
-- [Uniform Interior Translate Bound](uniform-interior-translate-bound.md)
-- [Hadwiger Covering Number](hadwiger-covering-number.md)
+- [Uniform bound for covering convex bodies by interior translates](uniform-interior-translate-bound.md)
+- [Hadwiger covering number](hadwiger-covering-number.md)
 
 ## Sources
 

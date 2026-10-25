@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.GraphTheory.RookDominationPolynomialWanted.rookCoverCount
 ---
 
-# Rook Cover Count
+# Rook placements covering all rows and columns
 
-The number of `k`-rook placements on an `n × m` board meeting
-every row and every column (Mertens' `E_{n,m}(k)`).
+**Rook placements covering all rows and columns.** For natural numbers $n$, $m$ and $k$,
+$E_{n,m}(k)$ is the number of $k$-element sets of cells of the $n \times m$ board that contain a
+cell in every row and a cell in every column (Mertens' $E_{n,m}(k)$).
 
 ## Depends on
 

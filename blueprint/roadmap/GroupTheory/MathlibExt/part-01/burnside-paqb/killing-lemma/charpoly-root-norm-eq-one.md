@@ -7,9 +7,12 @@ proof: formalized
 lean: BurnsidePaqb.charpoly_root_norm_eq_one
 ---
 
-# Charpoly root norm eq one
+# Eigenvalues of a finite group representation have modulus one
 
-Characteristic roots of `ρ g` have absolute value 1.
+**Eigenvalues of a finite group representation have modulus one.** Let $G$ be a finite
+group, $V$ a finite-dimensional complex vector space and $\rho$ a representation of $G$ on $V$.
+For every $g \in G$, every root $\mu$ of the characteristic polynomial of $\rho(g)$ satisfies
+$|\mu| = 1$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Charpoly root pow order Of](charpoly-root-pow-order-of.md)
+- [Characteristic roots are killed by the order of the element](charpoly-root-pow-order-of.md)
 
 ## Sources
 

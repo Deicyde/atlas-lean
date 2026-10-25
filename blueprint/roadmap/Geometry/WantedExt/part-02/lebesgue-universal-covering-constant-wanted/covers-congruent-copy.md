@@ -6,13 +6,16 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.CoversCongruentCopy
 ---
 
-# Covers Congruent Copy
+# Covering a congruent copy
 
-A surjective planar isometry carries the entire set `K` into `Ω`.
+**Covering a congruent copy.** A planar set $\Omega$ covers a congruent copy of a planar set
+$K$ when some isometry $e$ of the plane onto itself satisfies $e(K) \subseteq \Omega$.
+
+Isometries include reflections.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane of Lebesgue's covering problem](plane.md)
 
 ## Sources
 

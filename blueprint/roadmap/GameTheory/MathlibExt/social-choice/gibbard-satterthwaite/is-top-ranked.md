@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.IsTopRanked
 ---
 
-# Is Top Ranked
+# Top-ranked alternative
 
-`top` is top-ranked by `o` if it beats every other distinct alternative.
+**Top-ranked alternative.** For a strict total order $o$ on the alternatives, write
+$x \succ_o y$ when $x$ is related to $y$ by $o$ ($o$ ranks $x$ above $y$). An alternative $t$ is
+top-ranked by $o$ when $t \succ_o b$ for every alternative $b \ne t$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict preference orders for the Gibbard–Satterthwaite theorem](strict-total-order.md)
 
 ## Proof depends on
 
-- [Lt](lt.md)
+- [Relation of a strict preference order](lt.md)
 
 ## Sources
 

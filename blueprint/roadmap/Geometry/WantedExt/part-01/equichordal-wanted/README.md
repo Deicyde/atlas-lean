@@ -6,5 +6,5 @@ navigation: module
 # Equichordal
 
 - [Plane](plane.md)
-- [Is Equichordal Point](is-equichordal-point.md)
-- [Equichordal point unique](equichordal-point-unique.md)
+- [Equichordal point](is-equichordal-point.md)
+- [Equichordal point theorem](equichordal-point-unique.md)

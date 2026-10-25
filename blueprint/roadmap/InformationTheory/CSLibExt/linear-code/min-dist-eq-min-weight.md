@@ -6,15 +6,16 @@ proof: formalized
 lean: Cslib.CodingTheory.LinearCode.minDist_eq_minWeight
 ---
 
-# Min Dist eq min Weight
+# Minimum distance equals minimum weight
 
-For a linear code, the minimum distance equals the minimum weight.
+**Minimum distance equals minimum weight.** For a linear code of finite length over a
+field, the minimum distance equals the minimum weight.
 
 ## Depends on
 
-- [Linear Code](linear-code.md)
-- [Min Dist](min-dist.md)
-- [Min Weight](min-weight.md)
+- [Linear code](linear-code.md)
+- [Minimum distance](min-dist.md)
+- [Minimum weight](min-weight.md)
 
 ## Proof depends on
 

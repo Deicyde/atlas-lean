@@ -6,10 +6,12 @@ statement: formalized
 lean: MoserConvexWormCoverConstant.coverAreas
 ---
 
-# Cover Areas
+# Areas of universal covers
 
-Source: Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc
-adaptation.
+**Areas of universal covers.** The set of values $\lambda(\Omega) \in [0, \infty]$, where
+$\Omega \subseteq \mathbb{C}$ ranges over the universal covers and $\lambda$ is Lebesgue measure on
+$\mathbb{C} \cong \mathbb{R}^2$, applied as an outer measure since $\Omega$ need not be
+measurable.
 
 ## Depends on
 
@@ -17,8 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Universal Cover](is-universal-cover.md)
+- [Universal covers](is-universal-cover.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../sources/v2/MathlibExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

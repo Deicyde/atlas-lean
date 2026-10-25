@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.formulaProduct
 ---
 
-# Formula Product
+# Graph product given by a Boolean formula
 
-The graph product `G φ H` on `V × W` given by a Boolean function `φ` of the
-atoms `g₁g₂ ∈ E(G)`, `h₁h₂ ∈ E(H)`, `g₁ = g₂`, `h₁ = h₂` (symmetric in the two
-endpoints, so `fromRel` only removes loops).
+**Graph product given by a Boolean formula.** Let $G$ and $H$ be graphs with vertex sets $V$
+and $W$, and let $\varphi$ be a Boolean function of four Boolean arguments. The product
+$G \varphi H$ is the graph on $V \times W$ in which two distinct vertices $(g_1, h_1)$ and
+$(g_2, h_2)$ are adjacent exactly when
+$\varphi(g_1 g_2 \in E(G), h_1 h_2 \in E(H), g_1 = g_2, h_1 = h_2)$ is true.
 
 ## Depends on
 

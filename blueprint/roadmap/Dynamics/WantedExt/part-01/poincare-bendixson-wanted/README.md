@@ -4,5 +4,5 @@ navigation: module
 
 # Poincare Bendixson
 
-- [Plane](plane.md)
-- [Poincare bendixson](poincare-bendixson.md)
+- [The Euclidean plane](plane.md)
+- [Poincaré–Bendixson theorem](poincare-bendixson.md)

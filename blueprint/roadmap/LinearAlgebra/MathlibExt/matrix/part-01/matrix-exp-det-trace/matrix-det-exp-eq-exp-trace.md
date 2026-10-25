@@ -7,16 +7,18 @@ proof: formalized
 lean: MathlibExt.LinearAlgebra.Matrix.MatrixExpDetTraceWanted.matrix_det_exp_eq_exp_trace
 ---
 
-# Matrix det exp eq exp trace
+# Determinant of the matrix exponential
 
-Jacobi's formula: the determinant of the matrix exponential is the exponential of the trace.
+**Determinant of the matrix exponential.** For every complex square matrix $A$ indexed by a
+finite set, $\det(e^A) = e^{\operatorname{tr} A}$, where $e^A$ is the matrix exponential. This
+identity is sometimes called Jacobi's formula.
 
 Proof: the three cases of B. C. Hall, An Elementary Introduction to Groups and Representations,
-https://arxiv.org/abs/math-ph/0005032, Theorem 3.10. The Jordan-Chevalley decomposition
-(`Module.End.exists_isNilpotent_isSemisimple`) writes `A = N + S` with `N` nilpotent, `S`
-semisimple and `N`, `S` commuting, so `exp A = exp N * exp S`. Diagonalizing `S` gives
-`det (exp S) = exp (trace S)`. For the nilpotent part, where Hall uses a strictly upper-triangular
-form, `exp N - 1` is nilpotent, so `det (exp N) = 1`, while `trace N = 0`.
+https://arxiv.org/abs/math-ph/0005032, Theorem 3.10. The Jordan-Chevalley decomposition writes
+$A = N + S$ with $N$ nilpotent, $S$ semisimple and $NS = SN$, so $e^A = e^N e^S$. Diagonalizing
+$S$ gives $\det(e^S) = e^{\operatorname{tr} S}$. For the nilpotent part, where Hall uses a
+strictly upper-triangular form, $e^N - I$ is nilpotent, so $\det(e^N) = 1$, while
+$\operatorname{tr} N = 0$.
 
 ## Depends on
 

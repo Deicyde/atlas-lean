@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.viviani
 ---
 
-# Viviani
+# Viviani's theorem with a positive side length
 
-Viviani's theorem, source-shaped form (statement `viviani-s1`): thin
-wrapper over `viviani_general` retaining the frozen Wanted signature,
-including its (unused) positivity hypothesis `0 < dist A B`, for exact
-compatibility with the former `Wanted` entry. New callers should prefer
-`viviani_general`, which needs no positivity hypothesis.
+**Viviani's theorem with a positive side length.** Let $A$, $B$, $C$ be points of the
+Euclidean plane $\mathbb{R}^2$ with $AB = BC = CA$ and $AB > 0$, and let $P$ be a point of the
+interior of the convex hull of $\lbrace A, B, C \rbrace$. Then the sum of the distances from
+$P$ to the lines $AB$, $BC$ and $CA$ equals the distance from $A$ to the line $BC$, the
+altitude of the triangle.
+
+The hypothesis $AB > 0$ is not needed: Viviani's theorem gives the same conclusion without it.
 
 ## Depends on
 
@@ -21,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Viviani general](viviani-general.md)
+- [Viviani's theorem](viviani-general.md)
 
 ## Sources
 

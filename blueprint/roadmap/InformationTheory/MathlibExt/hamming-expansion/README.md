@@ -5,5 +5,5 @@ navigation: module
 
 # Hamming Expansion
 
-- [Expansion](expansion.md)
-- [Is Ball](is-ball.md)
+- [Hamming expansion](expansion.md)
+- [Hamming ball predicate](is-ball.md)

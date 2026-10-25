@@ -12,7 +12,7 @@ the zeros of `ct[P̃^n Q] mod p^a` have density `1`.
 
 ## Depends on
 
-- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

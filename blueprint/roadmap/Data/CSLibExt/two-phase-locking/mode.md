@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Databases.Access.mode
 ---
 
-# Mode
+# Lock mode required by an access
 
-The lock mode an access requires: shared for a read, exclusive for a write.
+**Lock mode required by an access.** The lock mode an access requires: shared for a read,
+exclusive for a write.
 
 ## Depends on
 
-- [Access](../serializability/access.md)
-- [Lock Mode](lock-mode.md)
+- [Read or write access](../serializability/access.md)
+- [Lock mode](lock-mode.md)
 
 ## Sources
 

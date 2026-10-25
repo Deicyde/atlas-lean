@@ -12,8 +12,8 @@ The syndrome of a single flipped bit names its position.
 
 ## Depends on
 
-- [H](h.md)
-- [Error Pos](error-pos.md)
+- [Parity-check matrix of the Hamming (7,4) code](h.md)
+- [Error position of a syndrome](error-pos.md)
 - [Syndrome](../linear-code/syndrome.md)
 
 ## Sources

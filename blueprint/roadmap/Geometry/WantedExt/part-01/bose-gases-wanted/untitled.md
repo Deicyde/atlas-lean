@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.BoseGasesWanted.BoseGases.𝓡
 ---
 
-# 𝓡
+# The ratio $\mathcal{R}(v)$
 
-We define `𝓡 v = ∫ x, v x / (8 * π * a v)`.
+**The ratio $\mathcal{R}(v)$.** For a potential $v : \mathbb{R}^3 \to \mathbb{R}$ with
+scattering length $a(v)$, let $\mathcal{R}(v) = \int_{\mathbb{R}^3} v(x)/(8\pi a(v))\,dx$. When
+$a(v) \neq 0$ this is the ratio of $(8\pi)^{-1} \int v$ to $a(v)$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [A](a.md)
+- [Scattering length](a.md)
 
 ## Sources
 

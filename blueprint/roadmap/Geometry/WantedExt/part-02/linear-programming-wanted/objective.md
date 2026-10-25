@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.LinearProgram.objective
 ---
 
-# Objective
+# Objective function of a linear program
 
-The **objective** `f(x) = c · x`.
+**Objective function of a linear program.** The objective function of a linear program
+with $m$ variables and objective vector $c \in \mathbb{R}^m$ is the map
+$f \colon \mathbb{R}^m \to \mathbb{R}$ given by $f(x) = c \cdot x = \sum_i c_i x_i$.
 
 ## Depends on
 
-- [Linear Program](linear-program.md)
+- [Linear program](linear-program.md)
 
 ## Sources
 

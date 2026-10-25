@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.impartialTak_exists_snake_penult
 ---
 
-# Impartial Tak exists snake penult
+# Impartial Tak penults with about $n^2/3$ tokens
 
-Proposition 7: for `n ≥ 6` there is an Impartial Tak penult on an `n × n` board with
-`n²/3 + 4n/3 - 8/3` tokens if `n ≡ 1, 4 (mod 6)`, `n²/3 + 4n/3 - 4` if `n ≡ 2, 3`,
-`n²/3 + 2n - 16/3` if `n ≡ 5`, and `n²/3 + 2n - 6` if `n ≡ 0`; the counts are stated multiplied
-by `3`.
+**Impartial Tak penults with about $n^2/3$ tokens.** Impartial Tak is the placement game on
+the $n \times n$ board whose play ends once the tokens contain a road. For every $n \ge 6$ there
+is an Impartial Tak penult $S$ on the $n \times n$ board whose number of tokens $|S|$ satisfies
+$3|S| + 8 = n^2 + 4n$ if $n \equiv 1$ or $4 \pmod 6$, $3|S| + 12 = n^2 + 4n$ if
+$n \equiv 2$ or $3 \pmod 6$, $3|S| + 16 = n^2 + 6n$ if $n \equiv 5 \pmod 6$, and
+$3|S| + 18 = n^2 + 6n$ if $n \equiv 0 \pmod 6$.
+
+That is, $|S|$ is $n^2/3 + 4n/3 - 8/3$, $n^2/3 + 4n/3 - 4$, $n^2/3 + 2n - 16/3$ and
+$n^2/3 + 2n - 6$ in the four cases.
 
 ## Depends on
 
-- [Placement Penult](placement-penult.md)
-- [Tak Has Road](tak-has-road.md)
+- [Penults of a placement game](placement-penult.md)
+- [Roads in Impartial Tak](tak-has-road.md)
 
 ## Sources
 

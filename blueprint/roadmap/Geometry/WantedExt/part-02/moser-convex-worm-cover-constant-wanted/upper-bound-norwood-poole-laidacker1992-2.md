@@ -6,15 +6,17 @@ statement: formalized
 lean: MoserConvexWormCoverConstant.upperBoundNorwoodPooleLaidacker1992_holds
 ---
 
-# Upper Bound Norwood Poole Laidacker1992 holds
+# Norwood–Poole–Laidacker upper bound for the convex worm cover constant
 
-Source: Optimization Problems, constant 13a, closed claim
-`upperBoundNorwoodPooleLaidacker1992`.
+**Norwood–Poole–Laidacker upper bound for the convex worm cover constant.** Moser's convex
+worm cover constant, the infimum of the areas of convex planar sets containing a rotated and
+translated copy of every planar curve of length $1$, is at most $0.27524$.
 
 ## Depends on
 
-- [Upper Bound Norwood Poole Laidacker1992](upper-bound-norwood-poole-laidacker1992.md)
+- [Statement of the Norwood–Poole–Laidacker upper bound $0.27524$ for convex worm covers](upper-bound-norwood-poole-laidacker1992.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.MoserConvexWormCoverConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Optimization Problems, constant 13a, closed claim `upperBoundNorwoodPooleLaidacker1992`.

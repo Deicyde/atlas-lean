@@ -5,5 +5,5 @@ navigation: module
 
 # Betweenness
 
-- [Is Between](is-between.md)
-- [Betweenness Aut Subgroup](betweenness-aut-subgroup.md)
+- [Strict betweenness](is-between.md)
+- [The betweenness automorphism group of a linear order](betweenness-aut-subgroup.md)

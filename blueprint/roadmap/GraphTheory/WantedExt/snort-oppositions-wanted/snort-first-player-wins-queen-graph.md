@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.snortFirstPlayerWins_queenGraph
 ---
 
-# Snort First Player Wins queen Graph
+# First player wins Peaceable Queens on boards with an odd side
 
-If `n` or `m` is odd, the first player wins the Peaceable Queens game on
-`n × m`.
+**First player wins Peaceable Queens on boards with an odd side.** Let $n \ge 1$ and
+$m \ge 1$ be natural numbers such that $n$ or $m$ is odd. Then the first player wins Snort on the
+queen's graph of the $n \times m$ board (the Peaceable Queens game).
 
 ## Depends on
 
-- [Snort First Player Wins](snort-first-player-wins.md)
-- [Queen Graph](queen-graph.md)
+- [First player wins Snort](snort-first-player-wins.md)
+- [Queen's graph](queen-graph.md)
 
 ## Sources
 

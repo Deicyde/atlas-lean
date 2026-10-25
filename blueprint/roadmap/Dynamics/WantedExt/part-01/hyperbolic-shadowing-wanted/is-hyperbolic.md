@@ -6,18 +6,19 @@ statement: formalized
 lean: MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.IsHyperbolic
 ---
 
-# Is Hyperbolic
+# Hyperbolic invariant set
 
-`K ⊆ ℝᵈ` is a **hyperbolic invariant set** for `T` if it admits a
-hyperbolic splitting.
+**Hyperbolic invariant set.** Let $T : \mathbb{R}^d \to \mathbb{R}^d$ be a homeomorphism. A set
+$K \subseteq \mathbb{R}^d$ is a hyperbolic invariant set for $T$ if there exists a hyperbolic
+structure for $T$ on $K$.
 
 ## Depends on
 
-- [E](e.md)
+- [Euclidean model space for the shadowing lemma](e.md)
 
 ## Proof depends on
 
-- [Hyperbolic Structure](hyperbolic-structure.md)
+- [Hyperbolic structure](hyperbolic-structure.md)
 
 ## Sources
 

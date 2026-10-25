@@ -6,9 +6,12 @@ statement: formalized
 lean: FalconerDistanceSet.planarThresholdProperty
 ---
 
-# Planar Threshold Property
+# Planar Falconer threshold property
 
-A planar threshold forces positive one-dimensional Lebesgue distance measure.
+**Planar Falconer threshold property.** An element $s \in [0, \infty]$ has the planar
+threshold property when every compact set $E \subseteq \mathbb{R}^2$ with Hausdorff dimension
+$\dim_H E > s$ has a distance set $\{|x - y| : x, y \in E\}$ of positive one-dimensional
+Lebesgue measure.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Distance Set](distance-set.md)
+- [Euclidean distance set](distance-set.md)
 
 ## Sources
 

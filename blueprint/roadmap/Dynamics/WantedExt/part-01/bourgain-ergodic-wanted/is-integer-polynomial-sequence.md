@@ -6,11 +6,11 @@ statement: formalized
 lean: MathlibExt.Dynamics.BourgainErgodicWanted.Dynamics.BourgainErgodic.IsIntegerPolynomialSequence
 ---
 
-# Is Integer Polynomial Sequence
+# Integer polynomial sequences
 
-A sequence of natural iterate exponents coming from an integer polynomial
-which is nonnegative on `ℕ`.  This avoids baking a particular coefficient
-representation into the ergodic theorem statements.
+**Integer polynomial sequences.** A sequence $a : \mathbb{N} \to \mathbb{N}$ is an integer
+polynomial sequence if there is a polynomial $P$ with integer coefficients such that
+$P(n) \ge 0$ and $a(n) = P(n)$ for every $n \in \mathbb{N}$.
 
 ## Depends on
 

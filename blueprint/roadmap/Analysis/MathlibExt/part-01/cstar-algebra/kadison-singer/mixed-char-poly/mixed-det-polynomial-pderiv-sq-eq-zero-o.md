@@ -24,7 +24,7 @@ it has degree at most one in $z_i$.
 ## Proof depends on
 
 - [Values of the mixed determinant polynomial](eval-mixed-det-polynomial.md)
-- [Det add smul vec Mul Vec](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-add-smul-vec-mul-vec.md)
+- [The determinant is affine along a rank-one direction](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-add-smul-vec-mul-vec.md)
 
 ## Sources
 

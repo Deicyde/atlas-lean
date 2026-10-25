@@ -6,16 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.isHadamardMatrix
 ---
 
-# Is Hadamard Matrix
+# Hadamard matrix
 
-Hadamard matrix with circulant core (Paley and twin-prime cases).
+**Hadamard matrix.** For a natural number $m$, an $m \times m$ matrix $H$ with integer
+entries is a Hadamard matrix when every entry of $H$ is $1$ or $-1$ and
+$H^{\mathsf T} H = m I$, where $I$ is the $m \times m$ identity matrix.
 
-`isHadamardMatrix m H` is the sign-matrix orthogonality predicate
-(entries `±1`, `Hᵀ * H = m • 1`); `hasCirculantCore n H` says the trailing
-`n × n` block is circulant, `H (i+1) (j+1) = v (i - j)` with `Fin`
-modular difference. The formalized theorem is the prime specialization of
-cases (1)–(2): such a matrix of order `n + 1` exists when `n` is a prime
-congruent to 3 mod 4 (Paley) or `n = p * (p + 2)` with `p` and `p + 2`
+This predicate is used for Hadamard matrices of order $n + 1$ with circulant core, which exist
+when $n$ is a prime congruent to $3$ mod $4$ (Paley) or $n = p(p + 2)$ with $p$ and $p + 2$
 both prime (Stanton–Sprott/Whiteman).
 
 ## Depends on

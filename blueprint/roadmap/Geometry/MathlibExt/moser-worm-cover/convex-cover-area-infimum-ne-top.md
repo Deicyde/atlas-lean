@@ -7,21 +7,23 @@ proof: formalized
 lean: MoserConvexWormCoverConstant.convexCoverAreaInfimum_ne_top
 ---
 
-# Convex Cover Area Infimum ne top
+# The infimal area of convex universal covers is finite
 
-Source: Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc
-adaptation.
+**The infimal area of convex universal covers is finite.** The convex cover area infimum, the
+infimum in $[0, \infty]$ of the Lebesgue areas of all convex universal covers in $\mathbb{C}$, is
+not $\infty$.
 
 ## Depends on
 
-- [Convex Cover Area Infimum](convex-cover-area-infimum.md)
+- [Infimal area of convex universal covers](convex-cover-area-infimum.md)
 
 ## Proof depends on
 
-- [Is Convex Universal Cover](is-convex-universal-cover.md)
-- [Closed Ball one is Convex Universal Cover](closed-ball-one-is-convex-universal-cove.md)
-- [Convex Cover Areas](convex-cover-areas.md)
+- [Convex universal covers](is-convex-universal-cover.md)
+- [The closed unit disk is a convex universal cover](closed-ball-one-is-convex-universal-cove.md)
+- [Areas of convex universal covers](convex-cover-areas.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../sources/v2/MathlibExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

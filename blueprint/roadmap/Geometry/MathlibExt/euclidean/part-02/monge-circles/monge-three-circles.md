@@ -7,13 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.monge_three_circles
 ---
 
-# Monge three circles
+# Monge's three-circle theorem
 
-Monge's theorem (three circles): three circles in the plane with positive, pairwise
-distinct radii and pairwise disjoint closed disks have collinear external homothety centers.
-Circles are center-radius pairs, and each external homothety center is the explicit
-externally-dividing ratio point on its center-line, well-defined by the distinct-radii
-hypotheses.
+**Monge's three-circle theorem.** Let $c_1, c_2, c_3$ be points of the Euclidean plane
+$\mathbb{R}^2$ and let $r_1, r_2, r_3$ be pairwise distinct positive real numbers such that the
+closed disks of radius $r_i$ centered at $c_i$ are pairwise disjoint. Then the external homothety
+centers $(r_1 - r_2)^{-1}(r_1 c_2 - r_2 c_1)$, $(r_2 - r_3)^{-1}(r_2 c_3 - r_3 c_2)$ and
+$(r_1 - r_3)^{-1}(r_1 c_3 - r_3 c_1)$ of the three pairs of circles are collinear.
 
 ## Depends on
 
@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Monge three circles general](monge-three-circles-general.md)
+- [Monge's three-circle theorem, algebraic form](monge-three-circles-general.md)
 
 ## Sources
 

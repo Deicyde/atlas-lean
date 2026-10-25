@@ -6,11 +6,15 @@ statement: formalized
 lean: minimalDistinctDistances
 ---
 
-# Minimal Distinct Distances
+# Minimum number of distinct distances
 
-The minimum number of distinct distances determined by a set of `n` points in `X`.
-The explicit existence witness prevents an empty candidate set, so the infimum is never
-taken silently over `∅` (where `Nat.sInf_empty = 0` would apply).
+**Minimum number of distinct distances.** Let $X$ be a metric space and $n$ a natural number
+such that $X$ contains a set of exactly $n$ points. The minimum number of distinct distances for
+$n$ points in $X$ is the least number of distinct distances determined by a set of exactly $n$
+points of $X$.
+
+The hypothesis that some $n$-point set exists makes the minimum range over a nonempty
+collection of sets.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Distinct Distances](distinct-distances.md)
+- [Number of distinct distances](distinct-distances.md)
 
 ## Sources
 

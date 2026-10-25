@@ -6,10 +6,10 @@ statement: formalized
 lean: PermutationStability.FlexiblePermutationStable
 ---
 
-# Flexible Permutation Stable
+# Flexible permutation stability
 
-`G` is flexibly permutation stable when every almost-homomorphism is
-flexibly close to genuine homomorphisms.
+**Flexible permutation stability.** A group $G$ is flexibly permutation stable when every
+almost-homomorphism $(f_n)$ from $G$ to the symmetric groups is flexibly close to homomorphisms.
 
 ## Depends on
 
@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Almost Homomorphism](is-almost-homomorphism.md)
-- [Is Flexibly Close To Homomorphisms](is-flexibly-close-to-homomorphisms.md)
+- [Almost-homomorphisms to symmetric groups](is-almost-homomorphism.md)
+- [Flexible closeness to homomorphisms](is-flexibly-close-to-homomorphisms.md)
 
 ## Sources
 

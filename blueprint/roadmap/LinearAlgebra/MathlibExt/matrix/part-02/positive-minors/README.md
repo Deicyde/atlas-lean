@@ -4,5 +4,5 @@ navigation: module
 
 # Positive Minors
 
-- [Has Positive Minors](has-positive-minors.md)
-- [Entry pos](entry-pos.md)
+- [Matrices with positive minors](has-positive-minors.md)
+- [Entries of a matrix with positive minors are positive](entry-pos.md)

@@ -6,10 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.BoseGasesWanted.BoseGases.IsRadial
 ---
 
-# Is Radial
+# Radial functions
 
-We say that a function `v : ℝ³ → ℝ` is radial if for all `x,y ∈ ℝ³`, `‖x‖ = ‖y‖`
-implies `v x = v y`.
+**Radial functions.** A function $v : \mathbb{R}^3 \to \mathbb{R}$ is radial if
+$v(x) = v(y)$ for all $x, y \in \mathbb{R}^3$ with $\|x\| = \|y\|$.
 
 ## Depends on
 

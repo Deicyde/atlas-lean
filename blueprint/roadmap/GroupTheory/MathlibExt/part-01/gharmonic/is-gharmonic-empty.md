@@ -7,13 +7,14 @@ proof: formalized
 lean: isGHarmonic_empty
 ---
 
-# Is GHarmonic empty
+# The empty tuple is G-harmonic
 
-The empty tuple is vacuously `G`-harmonic.
+**The empty tuple is G-harmonic.** For every group $G$, the empty tuple of natural numbers is
+(vacuously) $G$-harmonic.
 
 ## Depends on
 
-- [Is GHarmonic](is-gharmonic.md)
+- [G-harmonic tuples](is-gharmonic.md)
 
 ## Sources
 

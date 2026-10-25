@@ -6,15 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.UlamWanted.Ulam.BodyOfRevolution.body
 ---
 
-# Body
+# Solid of revolution
 
-The convex body of revolution defined by a smooth concave function `f : ℝ → ℝ` supported on
-`[-R₁, R₂]` is `K_f := { x ∈ ℝᵈ | x₁ ∈ [-R₁, R₂] and x₂² + ... + x²_d ≤ f(x₁)² }`.
-Note: we actually index the `xᵢ` starting from zero, for convenience.
+**Solid of revolution.** Let $d \ge 1$ and let a body of revolution in $\mathbb{R}^d$ be given
+by $R_1$, $R_2$ and $f$. Writing points of $\mathbb{R}^d$ as $x = (x_0, \dots, x_{d-1})$, its solid
+is the set of all $x$ with $x_0 \in [-R_1, R_2]$ and $x_1^2 + \dots + x_{d-1}^2 \le f(x_0)^2$.
 
 ## Depends on
 
-- [Body Of Revolution](body-of-revolution.md)
+- [Body of revolution](body-of-revolution.md)
 
 ## Sources
 

@@ -5,6 +5,6 @@ navigation: module
 
 # Erdos Problem22
 
-- [Conjecture](conjecture.md)
-- [Test bot](test-bot.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Ramsey–Turán problem for $K_4$ (Erdős Problem 22)](conjecture.md)
+- [The empty graph meets the Ramsey–Turán edge bound for $K_4$](test-bot.md)
+- [Resolution of Erdős Problem 22 (Fox–Loh–Zhao)](conjecture-holds.md)

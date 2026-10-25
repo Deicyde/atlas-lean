@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Dynamics.ScottishBook116bWanted.coinMeasure
 ---
 
-# Coin Measure
+# Fair coin product measure
 
-Fair-coin product measure on 0-1 sequences: the infinite product of
-`coinFlip` over `ℕ`.
+**Fair coin product measure.** The fair coin product measure is the measure on the space of
+Boolean sequences $c : \mathbb{N} \to \{\mathrm{false}, \mathrm{true}\}$ given by the infinite
+product, over $n \in \mathbb{N}$, of the fair coin measure, which gives mass $1/2$ to each of
+$\mathrm{false}$ and $\mathrm{true}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Coin Flip](coin-flip.md)
+- [Fair coin measure](coin-flip.md)
 
 ## Sources
 

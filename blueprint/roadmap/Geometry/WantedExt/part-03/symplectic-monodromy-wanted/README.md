@@ -5,5 +5,5 @@ navigation: module
 
 # Symplectic Monodromy
 
-- [Milnor Number](milnor-number.md)
-- [Theorem 1 1](theorem-1-1.md)
+- [Milnor number](milnor-number.md)
+- [Equimultiplicity of μ-constant families](theorem-1-1.md)

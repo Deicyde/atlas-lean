@@ -6,18 +6,17 @@ statement: formalized
 lean: MetaMathlibExt.ordinaryRiordanPascalLikeMatrix
 ---
 
-# Ordinary Riordan Pascal Like Matrix
+# Ordinary Riordan Pascal-like triangle
 
-Ordinary Riordan Pascal-like matrix entry `T(n, k; r)` (concept
-`jis_sem_d14a1d74e61f27c561413829`; statements `jis_55826aed9bbc43db2e540fc8`,
-`jis_a1500757725c00536c86ba35`, `jis_ac99ac2ae8aedbaafe1c53e3`).
+**Ordinary Riordan Pascal-like triangle.** For natural numbers $n, k$ and an integer $r$,
+the entry $T(n, k; r)$ is the integer
 
-This is the entry formula for the ordinary Riordan array
-`(1 / (1 - x), x * (1 + r * x) / (1 - x))`, denoted `T(r)`, with integer
-parameter `r`. The second binomial factor is written `choose (n - j) k` by
-binomial symmetry, so terms with `j > n - k` vanish rather than being
-corrupted by truncated subtraction. Source specializations: `r = 0` gives
-Pascal's triangle and `r = 1` gives the Delannoy triangle.
+$$T(n, k; r) = \sum_{j=0}^{k} \binom{k}{j} \binom{\max(n - j, 0)}{k} r^j.$$
+
+This is the entry formula of the ordinary Riordan array
+$\bigl(1/(1 - x),\ x(1 + rx)/(1 - x)\bigr)$, denoted $T(r)$. Terms with $j > n - k$ vanish,
+because then $\max(n - j, 0) < k$. For $r = 0$ this is Pascal's triangle and for $r = 1$ the
+Delannoy triangle.
 
 ## Depends on
 

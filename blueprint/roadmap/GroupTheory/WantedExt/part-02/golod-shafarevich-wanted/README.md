@@ -4,7 +4,7 @@ navigation: module
 
 # Golod Shafarevich
 
-- [Generator Rank](generator-rank.md)
-- [Trivial ZModp Rep](trivial-zmodp-rep.md)
-- [Relation Rank](relation-rank.md)
-- [Golod shafarevich inequality](golod-shafarevich-inequality.md)
+- [Generator rank](generator-rank.md)
+- [Trivial representation on $\mathbb{Z}/p\mathbb{Z}$](trivial-zmodp-rep.md)
+- [Relation rank](relation-rank.md)
+- [Golod–Shafarevich inequality](golod-shafarevich-inequality.md)

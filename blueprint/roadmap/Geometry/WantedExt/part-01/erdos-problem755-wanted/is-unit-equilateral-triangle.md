@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.ErdosProblem755Wanted.IsUnitEquilateralTriangle
 ---
 
-# Is Unit Equilateral Triangle
+# Unit equilateral triangle
 
-A unit equilateral triangle.
+**Unit equilateral triangle.** A finite set $T$ of points in the Euclidean space $\mathbb{R}^d$
+is a unit equilateral triangle when it is an equilateral triangle of side $1$: $T$ has exactly
+three elements and any two distinct points of $T$ are at distance $1$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Equilateral Triangle](is-equilateral-triangle.md)
+- [Equilateral triangle with given side](is-equilateral-triangle.md)
 
 ## Sources
 

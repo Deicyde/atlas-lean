@@ -27,7 +27,7 @@ No assumption $p > 2$ is made.
 ## Depends on
 
 - [Generalized central trinomial coefficients](central-trinomial.md)
-- [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

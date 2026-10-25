@@ -77,16 +77,26 @@ def ProfinitelyRigid (Γ : Type u) [Group Γ] : Prop :=
   FG Γ ∧ ResiduallyFinite Γ ∧ ∀ (Λ : Type u) [Group Λ] [FG Λ] [ResiduallyFinite Λ],
     Nonempty (profiniteCompletion Γ ≃* profiniteCompletion Λ) → Nonempty (Γ ≃* Λ)
 
-/-- The ring of integers of the number field `ℚ(√(-d))`. -/
+/-- **Ring of integers of a field obtained by adjoining a square root to $\mathbb{Q}$.** For a
+natural number $d$, the ring of integers of the number field $\mathbb{Q}(\sqrt{-d})$, realized as
+the splitting field of $X^2 + d$ over $\mathbb{Q}$. -/
 abbrev RingOfIntegers (d : ℕ) := NumberField.RingOfIntegers (SplittingField (X ^ 2 + C (d : ℚ)))
 
-/-- The Bianchi group `PSL(2, 𝓞)` where `𝓞` is the ring of integers of `ℚ(√(-d))`. -/
+/-- **Bianchi group.** For a natural number $d$, let $\mathcal{O}_d$ be the ring of integers of
+$\mathbb{Q}(\sqrt{-d})$. The Bianchi group is $\mathrm{PSL}(2, \mathcal{O}_d)$, the projective
+special linear group of $2 \times 2$ matrices over $\mathcal{O}_d$. -/
 abbrev BianchiGroup (d : ℕ) := Matrix.ProjectiveSpecialLinearGroup (Fin 2) (RingOfIntegers d)
 
 /--
-Statement of Theorem 7.1:
+**Profinite rigidity of the Bianchi group over the Eisenstein integers.** Let $\omega$ be a
+primitive cube root of unity, so that the ring $\mathbb{Z}[\omega]$ of Eisenstein integers is the
+ring of integers of $\mathbb{Q}(\sqrt{-3})$. The Bianchi group $\mathrm{PSL}(2, \mathbb{Z}[\omega])$
+is profinitely rigid: it is finitely generated and residually finite, and it is isomorphic to
+every finitely generated residually finite group whose profinite completion is isomorphic, as a
+group, to its own.
 
-The group `Γ = PSL(2, Z[ω])` is profinitely rigid.
+This is Theorem 7.1 of the source.
+
 Source: M. R. Bridson, D. B. McReynolds, A. W. Reid, and R. Spitler, `Absolute profinite rigidity and hyperbolic geometry`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2020-192-3-AbsoluteProfiniteRigidity.lean Via leanprover/lean-eval@38361be, problem `annals_absolute_profinite_rigidity`.
 -/
 public theorem_wanted theorem_7_1 : ProfinitelyRigid (BianchiGroup 3)

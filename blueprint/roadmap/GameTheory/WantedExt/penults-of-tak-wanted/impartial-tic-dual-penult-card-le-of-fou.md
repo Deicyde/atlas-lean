@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.impartialTic_dual_penult_card_le_of_four
 ---
 
-# Impartial Tic dual penult card le of four
+# Dual Impartial Tic penults on the 4 × 4 board have at most 9 tokens
 
-Proposition 4 (`n = 4`): a penult of the dual of Impartial Tic on the `4 × 4` board has at
-most `9` tokens.
+**Dual Impartial Tic penults on the 4 × 4 board have at most 9 tokens.** If $S$ is a penult of
+Impartial Tic on the $4 \times 4$ board, then at most $9$ cells of the board lie outside $S$.
+
+In the dual of Impartial Tic, tokens are removed from a full board and play ends once some row or
+column is empty; its penults are the sets of empty cells of Impartial Tic penults, so this says
+that a penult of the dual game on the $4 \times 4$ board has at most $9$ tokens.
 
 ## Depends on
 
-- [Placement Penult](placement-penult.md)
-- [Tic Ended](tic-ended.md)
+- [Penults of a placement game](placement-penult.md)
+- [End of Impartial Tic](tic-ended.md)
 
 ## Sources
 

@@ -5,6 +5,6 @@ navigation: module
 
 # Amenable Group
 
-- [Is Amenable](is-amenable.md)
-- [Is Amenable of finite](is-amenable-of-finite.md)
-- [Is Amenable of subsingleton](is-amenable-of-subsingleton.md)
+- [Amenable group (Følner condition)](is-amenable.md)
+- [Finite groups are amenable](is-amenable-of-finite.md)
+- [Trivial groups are amenable](is-amenable-of-subsingleton.md)

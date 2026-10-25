@@ -6,9 +6,11 @@ statement: formalized
 lean: BurnsidePaqb.structConst
 ---
 
-# Struct Const
+# Structure constants of a pair of subsets
 
-Structure constant: number of pairs `(x, y) ∈ Ci × Cj` with `x * y = z`.
+**Structure constants of a pair of subsets.** Let $G$ be a finite group. For finite subsets
+$C_i, C_j \subseteq G$ and an element $z \in G$, the structure constant is the number of pairs
+$(x, y) \in C_i \times C_j$ with $xy = z$.
 
 ## Depends on
 

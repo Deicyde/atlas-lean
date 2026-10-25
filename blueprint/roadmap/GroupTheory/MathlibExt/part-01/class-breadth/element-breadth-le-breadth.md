@@ -7,14 +7,16 @@ proof: formalized
 lean: ClassBreadth.elementBreadth_le_breadth
 ---
 
-# Element Breadth le breadth
+# Element breadth is at most the group breadth
 
-Every element breadth is bounded by the group breadth.
+**Element breadth is at most the group breadth.** Let $G$ be a finite group and $p$ a
+natural number. For every $g \in G$, the breadth $\operatorname{br}_p(g)$ of $g$ is at most
+the breadth $\operatorname{br}_p(G)$ of $G$.
 
 ## Depends on
 
-- [Breadth](breadth.md)
-- [Element Breadth](element-breadth.md)
+- [Breadth of a finite group](breadth.md)
+- [Breadth of an element](element-breadth.md)
 
 ## Sources
 

@@ -7,9 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.Dickson.card_projGenLinGroup_fin_two
 ---
 
-# Card proj Gen Lin Group fin two
+# Order of $\mathrm{PGL}_2$ over a finite field
 
-Over a finite field `F`, the group `PGL₂(F)` has order `|F| (|F|² - 1)`.
+**Order of $\mathrm{PGL}_2$ over a finite field.** If $F$ is a finite field with $q$ elements,
+then the projective general linear group $\mathrm{PGL}_2(F)$ has order $q(q^2 - 1)$.
 
 ## Depends on
 

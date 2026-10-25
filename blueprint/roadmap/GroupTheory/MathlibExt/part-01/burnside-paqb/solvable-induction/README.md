@@ -5,6 +5,6 @@ navigation: module
 
 # Solvable Induction
 
-- [Eq prime pow mul of dvd](eq-prime-pow-mul-of-dvd.md)
-- [Is Solvable of prime card](is-solvable-of-prime-card.md)
-- [Burnside paqb of simple prime](burnside-paqb-of-simple-prime.md)
+- [Divisors of $p^a q^b$](eq-prime-pow-mul-of-dvd.md)
+- [Groups of prime order are solvable](is-solvable-of-prime-card.md)
+- [Burnside's $p^a q^b$ theorem from the prime-power class corollary](burnside-paqb-of-simple-prime.md)

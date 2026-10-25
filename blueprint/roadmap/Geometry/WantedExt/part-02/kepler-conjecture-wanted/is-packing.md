@@ -6,14 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.KeplerConjectureWanted.Geometry.KeplerConjectureProblem.IsPacking
 ---
 
-# Is Packing
+# Unit sphere packing
 
-`X ⊆ ℝ^d` is the centre set of a **unit sphere packing**: the open
-unit balls centred at the points of `X` are pairwise disjoint.
+**Unit sphere packing.** For a natural number $d$, a set $X \subseteq \mathbb{R}^d$ is the
+centre set of a unit sphere packing if the open balls of radius $1$ centred at any two distinct
+points of $X$ are disjoint.
 
 ## Depends on
 
-- [E](e.md)
+- [Euclidean space for sphere packings](e.md)
 
 ## Sources
 

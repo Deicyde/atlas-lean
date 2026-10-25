@@ -17,7 +17,7 @@ conversion is the identity on every field.
 
 ## Proof depends on
 
-- [R3](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 - [R3](../conway-knot-shared/r3.md)
 
 ## Sources

@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.hurwitzSingle
 ---
 
-# Hurwitz Single
+# Hurwitz transform of a single sequence
 
-Single-sequence specialization from the source, with second sequence `0 ^ n`.
+**Hurwitz transform of a single sequence.** For a sequence $a \colon \mathbb{N} \to R$ in a
+commutative ring $R$, its Hurwitz transform is the Hurwitz transform of $a$ and the sequence
+$(0^k)_{k \in \mathbb{N}}$, which is $1$ at $k = 0$ and $0$ for $k \ge 1$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hurwitz Transform](hurwitz-transform.md)
+- [Hurwitz transform](hurwitz-transform.md)
 
 ## Sources
 

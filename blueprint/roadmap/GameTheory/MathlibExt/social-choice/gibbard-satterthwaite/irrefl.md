@@ -6,17 +6,15 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.StrictTotalOrder.irrefl
 ---
 
-# Irrefl
+# Irreflexivity of strict preference
 
-Compatibility alias for the former `GibbardSatterthwaiteWanted.StrictTotalOrder.irrefl`
-projection.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.irrefl` directly.
+**Irreflexivity of strict preference.** Let $T$ be a strict total order on a type $\alpha$,
+with relation $\lt _T$. Then $a \lt _T a$ fails for every $a \in \alpha$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
-- [Lt](lt.md)
+- [Strict preference orders for the Gibbard–Satterthwaite theorem](strict-total-order.md)
+- [Relation of a strict preference order](lt.md)
 
 ## Proof depends on
 

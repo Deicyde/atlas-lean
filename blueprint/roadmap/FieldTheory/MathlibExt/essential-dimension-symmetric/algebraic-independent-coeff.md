@@ -6,20 +6,22 @@ proof: formalized
 lean: MathlibExt.FieldTheory.EssentialDimensionSymmetric.algebraicIndependent_coeff
 ---
 
-# Algebraic Independent coeff
+# The coefficients are algebraically independent
 
-The coefficients `a₁, …, aₙ` are algebraically independent in the
-function field.
+**The coefficients are algebraically independent.** For every natural number $n$, the
+coefficients $a_1, \dots, a_n$ of the general polynomial, the elementary symmetric functions of
+$x_1, \dots, x_n$, are algebraically independent over $\mathbb{C}$ in the function field
+$\mathbb{C}(x_1, \dots, x_n)$.
 
 ## Depends on
 
-- [Coeff](coeff.md)
-- [Roots Field](roots-field.md)
+- [The coefficients of the general polynomial](coeff.md)
+- [The function field $\mathbb{C}(x_1, \dots, x_n)$](roots-field.md)
 
 ## Proof depends on
 
-- [Algebraic Independent esymm](algebraic-independent-esymm.md)
-- [Algebraic Independent map](algebraic-independent-map.md)
+- [Algebraic independence of the elementary symmetric polynomials](algebraic-independent-esymm.md)
+- [Injective algebra maps preserve algebraic independence](algebraic-independent-map.md)
 
 ## Sources
 

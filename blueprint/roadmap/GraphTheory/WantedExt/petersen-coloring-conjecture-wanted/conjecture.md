@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.GraphTheory.PetersenColoringConjectureWanted.conjecture
 ---
 
-# Conjecture
+# Petersen coloring conjecture
 
-The Petersen coloring conjecture: every finite bridgeless cubic simple
-graph (every vertex has exactly three neighbors) admits a Petersen coloring.
+**Petersen coloring conjecture.** For every finite vertex type $V$ and every simple graph $G$
+on $V$, if every vertex of $G$ has exactly three neighbors and $G$ is bridgeless, then $G$ admits
+a Petersen coloring.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Petersen Coloring](is-petersen-coloring.md)
-- [PVertex](pvertex.md)
+- [Petersen coloring](is-petersen-coloring.md)
+- [Vertices of the Petersen graph](pvertex.md)
 - [Bridgeless graph](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-01/bridgeless/is-bridgeless.md)
 
 ## Sources

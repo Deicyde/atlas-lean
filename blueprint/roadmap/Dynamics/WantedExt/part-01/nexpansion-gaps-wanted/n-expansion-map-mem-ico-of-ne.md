@@ -6,18 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.nExpansionMap_mem_Ico_of_ne
 ---
 
-# N Expansion Map mem Ico of ne
+# The N-expansion map away from the left endpoint
 
-For `x ≠ α` the `N`-expansion map lands in `[α, α + 1)`: `T_α(x) = α + fract(N / x - α)`.
+**The N-expansion map away from the left endpoint.** Let $N$ be a natural number and let
+$\alpha$ and $x$ be real numbers with $x \ne \alpha$. Then the $N$-expansion map $T_\alpha$
+satisfies $\alpha \le T_\alpha(x) < \alpha + 1$.
+
+Indeed $T_\alpha(x) = \alpha + \{N/x - \alpha\}$, where $\{\cdot\}$ denotes the fractional part.
 
 ## Depends on
 
-- [N Expansion Map](n-expansion-map.md)
+- [The $N$-expansion map](n-expansion-map.md)
 
 ## Proof depends on
 
-- [N Expansion Digit](n-expansion-digit.md)
-- [N Expansion Digit of ne](n-expansion-digit-of-ne.md)
+- [Digit of the N-expansion map](n-expansion-digit.md)
+- [The digit away from the left endpoint](n-expansion-digit-of-ne.md)
 
 ## Sources
 

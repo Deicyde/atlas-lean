@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.snortFirstPlayerWins_kingGraph
 ---
 
-# Snort First Player Wins king Graph
+# First player wins Peaceable Kings
 
-The first player wins the Peaceable Kings game on every `n × m` board.
+**First player wins Peaceable Kings.** For all natural numbers $n \ge 1$ and $m \ge 1$, the
+first player wins Snort on the king's graph of the $n \times m$ board (the Peaceable Kings game).
 
 ## Depends on
 
-- [Snort First Player Wins](snort-first-player-wins.md)
-- [King Graph](king-graph.md)
+- [First player wins Snort](snort-first-player-wins.md)
+- [King's graph](king-graph.md)
 
 ## Sources
 

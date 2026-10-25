@@ -4,7 +4,7 @@ navigation: module
 
 # Moebius Singular Dual
 
-- [Moebius fixed Point eq iff](moebius-fixed-point-eq-iff.md)
-- [Moebius dual endpoint ne neg one](moebius-dual-endpoint-ne-neg-one.md)
-- [Moebius dual central equations](moebius-dual-central-equations.md)
-- [Moebius natural Dual singular](moebius-natural-dual-singular.md)
+- [Fixed points of a Moebius dual branch](moebius-fixed-point-eq-iff.md)
+- [Moebius dual branches disagree at −1](moebius-dual-endpoint-ne-neg-one.md)
+- [Central equations for natural duals of Moebius maps](moebius-dual-central-equations.md)
+- [Singularity of natural duals of Moebius maps (algebraic form)](moebius-natural-dual-singular.md)

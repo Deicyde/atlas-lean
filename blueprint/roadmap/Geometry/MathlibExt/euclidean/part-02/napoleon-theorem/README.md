@@ -5,5 +5,5 @@ navigation: module
 
 # Napoleon Theorem
 
-- [Napoleon theorem general](napoleon-theorem-general.md)
-- [Napoleon theorem](napoleon-theorem.md)
+- [Napoleon's theorem, general form](napoleon-theorem-general.md)
+- [Napoleon's theorem](napoleon-theorem.md)

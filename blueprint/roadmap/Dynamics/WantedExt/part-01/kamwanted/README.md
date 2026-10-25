@@ -4,5 +4,5 @@ navigation: module
 
 # KAM
 
-- [Is Diophantine](is-diophantine.md)
-- [Kam invariant curve](kam-invariant-curve.md)
+- [Diophantine number](is-diophantine.md)
+- [KAM theorem for twist maps (persistence of an invariant curve)](kam-invariant-curve.md)

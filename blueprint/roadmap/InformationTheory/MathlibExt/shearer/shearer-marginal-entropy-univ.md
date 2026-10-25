@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.InformationTheory.Shearer.shearerMarginalEntropy_univ
 ---
 
-# Shearer Marginal Entropy univ
+# Marginal entropy on all coordinates is the full entropy
 
-The marginal on all coordinates has the full entropy.
+**Marginal entropy on all coordinates is the full entropy.** For a finite set $\alpha$, a
+natural number $n$ and a real-valued function $\mu$ on $\alpha^n$, the marginal entropy of $\mu$
+on the set $\{0, \dots, n-1\}$ of all coordinates equals the full entropy of $\mu$.
 
 ## Depends on
 
-- [Shearer Full Entropy](shearer-full-entropy.md)
-- [Shearer Marginal Entropy](shearer-marginal-entropy.md)
+- [Joint entropy](shearer-full-entropy.md)
+- [Marginal entropy](shearer-marginal-entropy.md)
 
 ## Proof depends on
 
-- [Shearer Marginal](shearer-marginal.md)
+- [Marginal on a set of coordinates](shearer-marginal.md)
 
 ## Sources
 

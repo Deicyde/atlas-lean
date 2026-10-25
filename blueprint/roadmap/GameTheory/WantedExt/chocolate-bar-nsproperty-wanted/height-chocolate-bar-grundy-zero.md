@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.heightChocolateBarGrundy_zero
 ---
 
-# Height Chocolate Bar Grundy zero
+# The single bitter cube has Grundy number zero
 
-The single bitter cube `CB(F, 0, …, 0, 0)` has no move, so its Grundy number is `0`.
+**The single bitter cube has Grundy number zero.** For every $s \in \mathbb{N}$ and every
+$F : \mathbb{N}^s \to \mathbb{N}$, the chocolate bar $\mathrm{CB}(F, 0, \dots, 0, 0)$ has no move,
+so its Grundy number is $0$.
 
 ## Depends on
 
-- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
+- [Grundy number of a chocolate bar with a height function](height-chocolate-bar-grundy.md)
 
 ## Proof depends on
 
-- [Height Chocolate Bar Grundy eq](height-chocolate-bar-grundy-eq.md)
+- [Mex recursion for chocolate bars with a height function](height-chocolate-bar-grundy-eq.md)
 
 ## Sources
 

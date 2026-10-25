@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partial Density](partial-density.md)
+- [Partial density](partial-density.md)
 
 ## Sources
 

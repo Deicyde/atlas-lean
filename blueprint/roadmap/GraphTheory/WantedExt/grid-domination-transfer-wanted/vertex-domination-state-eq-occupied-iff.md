@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.vertexDominationState_eq_occupied_iff
 ---
 
-# Vertex Domination State eq occupied iff
+# A vertex is occupied exactly when it lies in the set
 
-A vertex is occupied exactly when it lies in `S`.
+**A vertex is occupied exactly when it lies in the set.** Let $G$ be a simple graph, $S$ a
+finite set of vertices of $G$ and $v$ a vertex of $G$. Then the domination state of $v$ relative
+to $S$ in $G$ is occupied if and only if $v \in S$.
 
 ## Depends on
 
 - [Domination State](domination-state.md)
-- [Vertex Domination State](vertex-domination-state.md)
+- [Domination state of a vertex](vertex-domination-state.md)
 
 ## Sources
 

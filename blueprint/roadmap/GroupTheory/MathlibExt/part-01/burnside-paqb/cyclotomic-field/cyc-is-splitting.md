@@ -7,18 +7,20 @@ proof: formalized
 lean: BurnsidePaqb.cyc_isSplitting
 ---
 
-# Cyc is Splitting
+# The $m$-th cyclotomic field is a splitting field of $X^m - 1$
 
-`cycSubfield m` is the splitting field of `X ^ m - C 1` over `ℚ` (for `m ≠ 0`).
+**The $m$-th cyclotomic field is a splitting field of $X^m - 1$.** For every natural number
+$m \neq 0$, the subfield of $\mathbb{C}$ generated over $\mathbb{Q}$ by the $m$-th roots of unity
+is a splitting field over $\mathbb{Q}$ of the polynomial $X^m - 1 \in \mathbb{Q}[X]$.
 
 ## Depends on
 
-- [Cyc Subfield](cyc-subfield.md)
+- [Cyclotomic subfield of $\mathbb{C}$](cyc-subfield.md)
 
 ## Proof depends on
 
-- [Cyc root Set](cyc-root-set.md)
-- [Map X pow sub C rat](map-x-pow-sub-c-rat.md)
+- [Complex roots of $X^m - 1$](cyc-root-set.md)
+- [$X^m - 1$ over $\mathbb{Q}$ and over $\mathbb{C}$](map-x-pow-sub-c-rat.md)
 
 ## Sources
 

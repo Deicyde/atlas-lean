@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.EucPlane
 ---
 
-# Euc Plane
+# Euclidean plane
 
-The Euclidean plane, used as the chart codomain for a compact surface.
+**Euclidean plane.** The Euclidean plane $\mathbb{R}^2$ with its Euclidean inner product and
+norm. The theorems of this module model a compact surface by a compact invariant subset of
+this plane.
 
 ## Depends on
 

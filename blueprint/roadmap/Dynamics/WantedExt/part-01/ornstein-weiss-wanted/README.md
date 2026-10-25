@@ -4,6 +4,6 @@ navigation: module
 
 # Ornstein Weiss
 
-- [Is Free Action](is-free-action.md)
-- [Box Shape](box-shape.md)
-- [Ornstein weiss rokhlin](ornstein-weiss-rokhlin.md)
+- [Free $\mathbb{Z}^d$-action](is-free-action.md)
+- [Integer box](box-shape.md)
+- [Ornstein–Weiss Rokhlin lemma for $\mathbb{Z}^d$-actions](ornstein-weiss-rokhlin.md)

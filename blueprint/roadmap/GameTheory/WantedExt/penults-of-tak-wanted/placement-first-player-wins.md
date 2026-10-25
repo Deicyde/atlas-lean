@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.placementFirstPlayerWins
 ---
 
-# Placement First Player Wins
+# First-player win in a placement game
 
-Normal play: the player to move from `S` wins when `S` is not a P-position of
-`placementGame` (`SpragueGrundy.IsP`, the player unable to move loses).
+**First-player win in a placement game.** Let $\alpha$ be a finite set of cells and $E$ a
+predicate on subsets of $\alpha$ saying when play has ended. The player to move from a position
+$S \subseteq \alpha$ wins the placement game on $\alpha$ with end predicate $E$ when $S$ is not a
+P-position of that game under normal play, in which the player unable to move loses.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is P](../../MathlibExt/sprague-grundy/is-p.md)
-- [Placement Game](placement-game.md)
+- [P-positions](../../MathlibExt/sprague-grundy/is-p.md)
+- [The placement game](placement-game.md)
 
 ## Sources
 

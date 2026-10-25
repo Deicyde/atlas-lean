@@ -7,18 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.carnot_inradius_circumradius_general
 ---
 
-# Carnot inradius circumradius general
+# Carnot's theorem (inradius and circumradius), general form
 
-Carnot's theorem (inradius, circumradius), general form: for a nondegenerate triangle with
-    circumcenter `O`, circumradius `R`, incenter `I`, and inradius `r`, the signed
-    distances `x`, `y`, `z` from `O` to the three sidelines (each measured with an
-    inward unit normal, hence positive toward the opposite vertex) satisfy
-    `x + y + z = R + r`.
-    Source: https://en.wikipedia.org/wiki/Carnot%27s_theorem_(inradius,_circumradius).
-    Statement ID: carnot-inradius-s1.
+**Carnot's theorem (inradius and circumradius), general form.** Let $A, B, C$ be non-collinear
+points of a Euclidean affine plane lying on the circle with center $O$ and radius $R > 0$. Take
+unit vectors $n_a$, $n_b$, $n_c$ normal to the sides and pointing toward the opposite vertices:
+$n_a \perp C - B$ with $\langle A - B, n_a \rangle > 0$, $n_b \perp A - C$ with
+$\langle B - C, n_b \rangle > 0$, and $n_c \perp B - A$ with $\langle C - A, n_c \rangle > 0$.
+Let $x = \langle O - B, n_a \rangle$, $y = \langle O - C, n_b \rangle$ and
+$z = \langle O - A, n_c \rangle$ be the signed distances from $O$ to the lines $BC$, $CA$, $AB$.
+If a point $I$ and a real number $r$ satisfy
+$\langle I - B, n_a \rangle = \langle I - C, n_b \rangle = \langle I - A, n_c \rangle = r$
+(so $I$ is the incenter and $r$ the inradius), then $x + y + z = R + r$.
 
-Unlike `carnot_inradius_circumradius`, this drops the hypotheses `O ∈ affineSpan ℝ {A, B, C}`
-    and `0 < r`, which the proof never needs.
+This form does not assume $r > 0$ or that $O$ lies in the affine span of $A, B, C$.
 
 ## Depends on
 
@@ -27,3 +29,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.CarnotInradius](../../../../../../sources/v2/MathlibExt.md)
+- https://en.wikipedia.org/wiki/Carnot%27s_theorem_(inradius,_circumradius). Statement ID: carnot-inradius-s1.

@@ -7,19 +7,21 @@ proof: formalized
 lean: FalconerDistanceSet.isLeast_admissiblePlanarThresholds
 ---
 
-# Is Least admissible Planar Thresholds
+# The planar distance threshold is attained
 
-The infimum is the least sufficient threshold in the source domain.
+**The planar distance threshold is attained.** The planar distance threshold is the least
+admissible planar threshold: it is itself an admissible planar threshold, and it is at most every
+admissible planar threshold.
 
 ## Depends on
 
-- [Admissible Planar Threshold](admissible-planar-threshold.md)
-- [Planar Distance Threshold](planar-distance-threshold.md)
+- [Admissible planar threshold](admissible-planar-threshold.md)
+- [Planar distance threshold](planar-distance-threshold.md)
 
 ## Proof depends on
 
-- [Planar Distance Threshold admissible](planar-distance-threshold-admissible.md)
-- [Planar Distance Threshold le of admissible](planar-distance-threshold-le-of-admissib.md)
+- [The planar distance threshold is admissible](planar-distance-threshold-admissible.md)
+- [Admissible thresholds bound the planar distance threshold](planar-distance-threshold-le-of-admissib.md)
 
 ## Sources
 

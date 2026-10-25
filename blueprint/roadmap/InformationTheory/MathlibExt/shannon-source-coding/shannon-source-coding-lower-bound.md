@@ -9,7 +9,13 @@ lean: MathlibExt.InformationTheory.ShannonSourceCodingWanted.shannon_source_codi
 
 # Shannon source coding lower bound
 
-Any injective uniquely decodable code has expected length at least its base-q entropy.
+**Shannon source coding lower bound.** Let $\alpha$ and $\beta$ be finite types with
+$q = |\beta| \ge 2$, and let $p : \alpha \to \mathbb{R}$ satisfy $p(a) > 0$ for every $a \in \alpha$
+and $\sum_{a \in \alpha} p(a) = 1$. Let $c$ assign to each $a \in \alpha$ a finite word $c(a)$ over
+$\beta$, of length $|c(a)|$, such that $c$ is injective and its set of codewords is uniquely
+decodable: any two finite lists of codewords with the same concatenation are equal. Then the
+expected length $\sum_{a \in \alpha} p(a)\,|c(a)|$ is at least the base-$q$ entropy
+$-\left(\sum_{a \in \alpha} p(a) \log p(a)\right) / \log q$, where $\log$ is the natural logarithm.
 
 ## Depends on
 

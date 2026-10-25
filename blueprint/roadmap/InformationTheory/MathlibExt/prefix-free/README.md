@@ -5,7 +5,7 @@ navigation: module
 
 # Prefix Free
 
-- [Is Prefix Free](is-prefix-free.md)
-- [Eq of is Prefix](eq-of-is-prefix.md)
-- [Injective](injective.md)
-- [Eq of mem nil](eq-of-mem-nil.md)
+- [Prefix-free code](is-prefix-free.md)
+- [Prefix-related codewords come from the same symbol](eq-of-is-prefix.md)
+- [Prefix-free codes are injective](injective.md)
+- [A prefix-free code with an empty codeword has one symbol](eq-of-mem-nil.md)

@@ -7,10 +7,10 @@ navigation: module
 
 ## UPSS
 
-- [Is Straight Line Planar Embedding](is-straight-line-planar-embedding.md)
-- [Is Universal Point Set](is-universal-point-set.md)
-- [Exists Subquadratic Universal Point Set](exists-subquadratic-universal-point-set.md)
+- [Straight-line planar embedding](is-straight-line-planar-embedding.md)
+- [Universal point set for planar graphs](is-universal-point-set.md)
+- [Subquadratic universal point sets](exists-subquadratic-universal-point-set.md)
 
 ## Universal Point Sets Subquadratic Wanted
 
-- [Exists Subquadratic Universal Point Set holds](exists-subquadratic-universal-point-set-2.md)
+- [Planar graphs have subquadratic universal point sets](exists-subquadratic-universal-point-set-2.md)

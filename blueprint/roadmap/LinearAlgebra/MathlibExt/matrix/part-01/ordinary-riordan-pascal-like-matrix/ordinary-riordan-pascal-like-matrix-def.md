@@ -7,16 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.ordinaryRiordanPascalLikeMatrix_def
 ---
 
-# Ordinary Riordan Pascal Like Matrix def
+# Entry formula for the ordinary Riordan Pascal-like triangle
 
-Definitional equation for `ordinaryRiordanPascalLikeMatrix` (concept
-`jis_sem_d14a1d74e61f27c561413829`; statements `jis_55826aed9bbc43db2e540fc8`,
-`jis_a1500757725c00536c86ba35`, `jis_ac99ac2ae8aedbaafe1c53e3`): the
-definition unfolds to the finite sum over `j`.
+**Entry formula for the ordinary Riordan Pascal-like triangle.** For natural numbers
+$n, k$ and an integer $r$, the ordinary Riordan Pascal-like matrix entry $T(n, k; r)$ equals
+$\sum_{j=0}^{k} \binom{k}{j} \binom{\max(n - j, 0)}{k} r^j$; this holds by definition.
 
 ## Depends on
 
-- [Ordinary Riordan Pascal Like Matrix](ordinary-riordan-pascal-like-matrix.md)
+- [Ordinary Riordan Pascal-like triangle](ordinary-riordan-pascal-like-matrix.md)
 
 ## Sources
 

@@ -7,20 +7,22 @@ proof: formalized
 lean: MoserConvexWormCoverConstant.convexCoverAreas_nonempty
 ---
 
-# Convex Cover Areas nonempty
+# The set of convex cover areas is nonempty
 
-Source: Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc
-adaptation.
+**The set of convex cover areas is nonempty.** The set of convex cover areas, the Lebesgue
+areas of all convex universal covers in $\mathbb{C}$, is nonempty; that is, some convex universal
+cover exists.
 
 ## Depends on
 
-- [Convex Cover Areas](convex-cover-areas.md)
+- [Areas of convex universal covers](convex-cover-areas.md)
 
 ## Proof depends on
 
-- [Is Convex Universal Cover](is-convex-universal-cover.md)
-- [Closed Ball one is Convex Universal Cover](closed-ball-one-is-convex-universal-cove.md)
+- [Convex universal covers](is-convex-universal-cover.md)
+- [The closed unit disk is a convex universal cover](closed-ball-one-is-convex-universal-cove.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../sources/v2/MathlibExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

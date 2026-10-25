@@ -6,19 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.snort_two_vertices
 ---
 
-# Snort two vertices
+# Snort on two vertices
 
-The first player wins Snort on `K₂`, and the second player wins on two
-isolated vertices.
+**Snort on two vertices.** The first player wins Snort on the complete graph $K_2$, and
+the second player wins Snort on the graph with two vertices and no edges.
 
 ## Depends on
 
-- [Snort First Player Wins](snort-first-player-wins.md)
-- [Snort Second Player Wins](snort-second-player-wins.md)
+- [First player wins Snort](snort-first-player-wins.md)
+- [Second-player win in Snort](snort-second-player-wins.md)
 
 ## Proof depends on
 
-- [Snort Mover Wins](snort-mover-wins.md)
+- [Snort positions with a move bound](snort-mover-wins.md)
 
 ## Sources
 

@@ -6,18 +6,21 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.IsUniversalConvexCover
 ---
 
-# Is Universal Convex Cover
+# Universal convex covers
 
-Nonempty convex covers of every nonempty convex planar unit-diameter set.
+**Universal convex covers.** A set $\Omega$ in the Euclidean plane $\mathbb{R}^2$ is a universal
+convex cover when it is nonempty and convex and, for every nonempty convex set
+$K \subseteq \mathbb{R}^2$ of diameter $1$, some isometry $e$ of the plane onto itself satisfies
+$e(K) \subseteq \Omega$.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane of Lebesgue's covering problem](plane.md)
 
 ## Proof depends on
 
-- [Covers Congruent Copy](covers-congruent-copy.md)
-- [Is Unit Diameter Convex Set](is-unit-diameter-convex-set.md)
+- [Covering a congruent copy](covers-congruent-copy.md)
+- [Convex sets of diameter one](is-unit-diameter-convex-set.md)
 
 ## Sources
 

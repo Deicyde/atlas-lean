@@ -5,13 +5,13 @@ navigation: module
 
 # Steiner Ratio
 
-- [Plane](plane.md)
-- [Edge Length](edge-length.md)
-- [Total Length](total-length.md)
-- [Spanning Tree Lengths](spanning-tree-lengths.md)
-- [Steiner Tree Lengths](steiner-tree-lengths.md)
-- [Mst Length](mst-length.md)
-- [Steiner Length](steiner-length.md)
-- [Steiner Length le mst Length](steiner-length-le-mst-length.md)
+- [The Euclidean plane of the Steiner ratio problem](plane.md)
+- [Length of an edge](edge-length.md)
+- [Total length of a graph on points of the plane](total-length.md)
+- [Lengths of spanning trees](spanning-tree-lengths.md)
+- [Lengths of Steiner trees](steiner-tree-lengths.md)
+- [Minimum spanning tree length](mst-length.md)
+- [Steiner minimal tree length](steiner-length.md)
+- [The Steiner length is at most the minimum spanning tree length](steiner-length-le-mst-length.md)
 - [Steiner Ratio Constant](steiner-ratio-constant.md)
-- [Gilbert Pollak Conjecture](gilbert-pollak-conjecture.md)
+- [Gilbert–Pollak conjecture](gilbert-pollak-conjecture.md)

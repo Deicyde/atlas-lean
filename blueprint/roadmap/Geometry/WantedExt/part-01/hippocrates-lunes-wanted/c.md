@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.HippocratesLunesWanted.Geometry.HippocratesLunes.C
 ---
 
-# C
+# Vertical leg endpoint of the lune triangle
 
-The leg endpoint on the y-axis.
+**Vertical leg endpoint of the lune triangle.** For a real number $b$, the point
+$C = (0, b)$ on the $y$-axis of the coordinate plane; it is the endpoint of the vertical leg of
+the right triangle in Hippocrates' theorem on lunes.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Coordinate plane for Hippocrates' lunes](plane.md)
 
 ## Sources
 

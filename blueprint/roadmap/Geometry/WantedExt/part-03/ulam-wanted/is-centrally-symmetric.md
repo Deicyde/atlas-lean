@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.UlamWanted.Ulam.IsCentrallySymmetric
 ---
 
-# Is Centrally Symmetric
+# Centrally symmetric set
 
-A subset `K ⊆ ℝᵈ` is called centrally symmetric, if there exists `p ∈ ℝᵈ` such that `K - p`
-is origin symmetric.
+**Centrally symmetric set.** A set $K \subseteq \mathbb{R}^d$ is centrally symmetric if there
+is a point $p \in \mathbb{R}^d$ such that the translate $K - p = \{x - p : x \in K\}$ is
+origin-symmetric, that is, $K - p = -(K - p)$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Origin Symmetric](is-origin-symmetric.md)
+- [Origin-symmetric set](is-origin-symmetric.md)
 
 ## Sources
 

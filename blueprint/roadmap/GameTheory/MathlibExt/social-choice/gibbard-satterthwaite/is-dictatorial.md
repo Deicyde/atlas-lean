@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.IsDictatorial
 ---
 
-# Is Dictatorial
+# Dictatorial social choice function
 
-Dictatorial SCF: some fixed voter always gets top choice.
+**Dictatorial social choice function.** A resolute social choice function $F$ is dictatorial
+when some voter is a dictator for $F$: there is a voter $d$ such that, for every profile $p$, the
+chosen alternative $F(p)$ is top-ranked in the preference order $p(d)$ of voter $d$.
 
 ## Depends on
 
-- [Social Choice Function](social-choice-function.md)
+- [Social choice functions](social-choice-function.md)
 
 ## Proof depends on
 
-- [Is Dictator](is-dictator.md)
+- [Dictator of a social choice function](is-dictator.md)
 
 ## Sources
 

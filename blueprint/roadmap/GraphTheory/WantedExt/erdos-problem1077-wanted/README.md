@@ -5,6 +5,6 @@ navigation: module
 
 # Erdos Problem1077
 
-- [Main Positive](main-positive.md)
-- [Disproved Main](disproved-main.md)
-- [Main Positive refuted](main-positive-refuted.md)
+- [Erdős–Simonovits balanced subgraph claim](main-positive.md)
+- [Negation of the Erdős–Simonovits balanced subgraph claim](disproved-main.md)
+- [The Erdős–Simonovits balanced subgraph claim is false](main-positive-refuted.md)

@@ -16,7 +16,7 @@ $a_{i+1} \equiv a_{i-1} + 1 \pmod 4$. Then $a$ is an N-position, that is, not a 
 ## Depends on
 
 - [The set $Y_{aabc}$ of $C_4$ positions](c4-mod-four-aabc.md)
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources

@@ -7,17 +7,18 @@ proof: formalized
 lean: FalconerDistanceSet.planarDistanceThreshold_ne_top
 ---
 
-# Planar Distance Threshold ne top
+# The planar distance threshold is finite
 
-The planar distance threshold is finite, without any analytic bound being assumed.
+**The planar distance threshold is finite.** The planar distance threshold, an element of
+$[0, \infty]$, is not $\infty$.
 
 ## Depends on
 
-- [Planar Distance Threshold](planar-distance-threshold.md)
+- [Planar distance threshold](planar-distance-threshold.md)
 
 ## Proof depends on
 
-- [Planar Distance Threshold le two](planar-distance-threshold-le-two.md)
+- [The planar distance threshold is at most two](planar-distance-threshold-le-two.md)
 
 ## Sources
 

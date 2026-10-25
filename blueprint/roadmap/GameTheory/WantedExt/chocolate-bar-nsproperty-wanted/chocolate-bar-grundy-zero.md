@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.chocolateBarGrundy_zero
 ---
 
-# Chocolate Bar Grundy zero
+# The single bitter square has Grundy number zero
 
-The single bitter square `CB(f, 0, …, 0, 0)` has no move, so its Grundy number is `0`.
+**The single bitter square has Grundy number zero.** For all functions
+$f_1, \dots, f_s : \mathbb{N} \to \mathbb{N}$, the chocolate bar
+$\mathrm{CB}(f_1, \dots, f_s, 0, \dots, 0, 0)$, whose coordinates and width are all $0$, has
+Grundy number $0$: it is a single bitter square and has no move.
 
 ## Depends on
 
-- [Chocolate Bar Grundy](chocolate-bar-grundy.md)
+- [Grundy number of a chocolate bar](chocolate-bar-grundy.md)
 
 ## Proof depends on
 
-- [Chocolate Bar Grundy eq](chocolate-bar-grundy-eq.md)
+- [Mex recursion for the Grundy number of a chocolate bar](chocolate-bar-grundy-eq.md)
 
 ## Sources
 

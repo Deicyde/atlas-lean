@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.exactSlowNimMRuleLength_three_five_five
 ---
 
-# Exact Slow Nim MRule Length three five five
+# M-rule length of the position (3, 5, 5)
 
-The paper's example `M(3, 5, 5) = 6` in `NIM(3, 2)`.
+**M-rule length of the position (3, 5, 5).** In exact slow $2$-NIM on three piles,
+$\mathrm{NIM}(3, 2)$, where a move removes one stone from each of exactly two nonempty piles, the
+M-rule length of the position $(3, 5, 5)$ is $M(3, 5, 5) = 6$.
 
 ## Depends on
 
-- [Exact Slow Nim MRule Length](exact-slow-nim-mrule-length.md)
+- [M-rule length](exact-slow-nim-mrule-length.md)
 
 ## Sources
 

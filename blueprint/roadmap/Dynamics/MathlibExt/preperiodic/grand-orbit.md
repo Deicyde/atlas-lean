@@ -6,9 +6,11 @@ statement: formalized
 lean: Function.grandOrbit
 ---
 
-# Grand Orbit
+# Grand orbit
 
-Grand orbit of `x`, viewed as its equivalence class.
+**Grand orbit.** For a self-map $f$ of a set $X$ and a point $x \in X$, the grand orbit of $x$
+is the set of all $y \in X$ such that $f^m(x) = f^n(y)$ for some natural numbers $m$ and $n$,
+that is, the equivalence class of $x$ under the grand orbit relation.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Grand Orbit Rel](grand-orbit-rel.md)
+- [Grand orbit relation](grand-orbit-rel.md)
 
 ## Sources
 

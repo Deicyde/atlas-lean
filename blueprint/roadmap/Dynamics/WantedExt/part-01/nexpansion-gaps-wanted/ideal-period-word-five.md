@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.idealPeriodWord_five
 ---
 
-# Ideal Period Word five
+# The fifth ideal period word
 
-`d₅ = [d₄, abb, ab, ab, abb, ab, ab]`, obtained from `d₄ = [j, abb]` by the second rule.
+**The fifth ideal period word.** Writing $a$ for the block $2, 1, 1$ and $b$ for the block
+$2, 2$ of partial quotients, the ideal period word $d_5$ is $d_4$ followed by the blocks
+$abb\,ab\,ab\,abb\,ab\,ab$, in this order.
+
+This is the second recursion rule applied to $d_4 = [j, abb]$ with $j = [abb, ab, ab, abb]$.
 
 ## Depends on
 
-- [Ideal Period Word](ideal-period-word.md)
+- [Ideal period words](ideal-period-word.md)
 
 ## Sources
 

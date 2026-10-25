@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OnCoherenceOfOneRelatorGroupsWanted.Group.Coherent
 ---
 
-# Coherent
+# Coherent group
 
-A group is coherent if all of its finitely generated subgroups are finitely presented.
+**Coherent group.** A group is coherent if all of its finitely generated subgroups are
+finitely presented.
 
 ## Depends on
 

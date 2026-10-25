@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.CodingTheory.LinearCode.minDist
 ---
 
-# Min Dist
+# Minimum distance
 
-The **minimum distance**: the least Hamming distance between two distinct codewords (`⊤` if
-there is at most one codeword).
+**Minimum distance.** The minimum distance of a linear code $C$ of finite length is the least
+Hamming distance (number of coordinates where they differ) between two distinct codewords of
+$C$, taken in $\mathbb{N} \cup \{\infty\}$; it is $\infty$ if $C$ has at most one codeword.
 
 ## Depends on
 
-- [Linear Code](linear-code.md)
+- [Linear code](linear-code.md)
 
 ## Sources
 

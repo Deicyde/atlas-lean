@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nimPassIndicator
 ---
 
-# Nim Pass Indicator
+# Pass indicator of Nim with a restricted pass
 
-The pass indicator of Nim with a restricted pass: `1` if `m j ≤ x j` for some pile `j`
-(the pass may be used), and `0` if `x j < m j` for every pile.
+**Pass indicator of Nim with a restricted pass.** For $s$ piles with thresholds
+$m_0, \dots, m_{s-1}$ and pile sizes $x_0, \dots, x_{s-1}$ (natural numbers), the pass
+indicator is $1$ if $m_j \le x_j$ for some pile $j$ (the pass may be used), and $0$ if
+$x_j < m_j$ for every pile $j$.
 
 ## Depends on
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.UlamWanted.Ulam.IsOriginSymmetric
 ---
 
-# Is Origin Symmetric
+# Origin-symmetric set
 
-A subset `K ⊆ ℝᵈ` is called origin-symmetric if `K = -K`.
+**Origin-symmetric set.** A set $K \subseteq \mathbb{R}^d$ is origin-symmetric if $K = -K$,
+where $-K = \{-x : x \in K\}$.
 
 ## Depends on
 

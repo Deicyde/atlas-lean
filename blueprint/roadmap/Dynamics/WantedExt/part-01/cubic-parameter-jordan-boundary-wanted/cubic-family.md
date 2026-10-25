@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.cubicFamily
 ---
 
-# Cubic Family
+# Cubic family
 
-Cubic family f_λ(z) = λ z ^ 2 + z ^ 3. Cites [AMR-052-0019].
+**Cubic family.** For a parameter $\lambda \in \mathbb{C}$, the cubic polynomial map
+$f_\lambda : \mathbb{C} \to \mathbb{C}$ is given by $f_\lambda(z) = \lambda z^2 + z^3$.
 
 ## Depends on
 
@@ -17,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.CubicParameterJordanBoundaryWanted](../../../../../sources/v2/WantedExt.md)
+- [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.

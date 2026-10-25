@@ -17,7 +17,7 @@ navigation: collection
 - [Lattice Point Boundary Cubes](lattice-point-boundary-cubes/README.md)
 - [Lattice Point Cube Sandwich](lattice-point-cube-sandwich/README.md)
 - [Lattice Point Enumerator](lattice-point-enumerator/README.md)
-- [Lens Curvature Recurrence](is-lens-curvature-recurrence.md)
+- [Lens curvature recurrence](is-lens-curvature-recurrence.md)
 - [Lipschitz Image Cube Count](lipschitz-image-cube-count/README.md)
 - [Metric](metric/README.md)
 - [Moser Worm Cover](moser-worm-cover/README.md)

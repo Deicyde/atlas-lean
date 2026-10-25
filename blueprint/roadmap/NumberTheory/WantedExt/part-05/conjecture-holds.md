@@ -14,7 +14,7 @@ https://doi.org/10.1090/s0002-9939-1954-0063389-3. Moved from
 
 ## Depends on
 
-- [Has Density](../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

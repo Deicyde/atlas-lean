@@ -7,14 +7,15 @@ proof: formalized
 lean: Polynomial.isKComplete_zero
 ---
 
-# Is KComplete zero
+# Completeness at level zero
 
-Level zero is no extra condition: `0`-completeness is permutation.
+**Completeness at level zero.** Let $F$ be a finite field and $f \in F[X]$. Then $f$ is
+complete to level $0$ if and only if $f$ is a permutation polynomial.
 
 ## Depends on
 
-- [Is KComplete](is-kcomplete.md)
-- [Is Permutation Polynomial](is-permutation-polynomial.md)
+- [Polynomial complete to level $k$](is-kcomplete.md)
+- [Permutation polynomial over a finite field](is-permutation-polynomial.md)
 
 ## Sources
 

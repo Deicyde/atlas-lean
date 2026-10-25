@@ -23,7 +23,7 @@ and $D_0 \ge \frac{1}{p-1}$.
 
 - [Generalized central trinomial coefficients](central-trinomial.md)
 - [Riordan numbers](../../../../../MathlibExt/part-01/enumerative/part-07/riordan-number/riordan-number.md)
-- [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
+- [Density of a set](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 

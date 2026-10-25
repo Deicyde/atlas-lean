@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.impartialTic_exists_dual_penult_card
 ---
 
-# Impartial Tic exists dual penult card
+# Token counts of dual Impartial Tic penults
 
-Proposition 5: for `n ≥ 5` and `2n ≤ x ≤ 4(n - 2)` there is a penult of the dual of Impartial
-Tic on an `n × n` board with `x` tokens.
+**Token counts of dual Impartial Tic penults.** Let $n \ge 5$ and let $x$ be a natural number
+with $2n \le x \le 4(n - 2)$. Then there is a penult $S$ of Impartial Tic on the $n \times n$
+board such that exactly $x$ cells of the board lie outside $S$.
+
+In the dual of Impartial Tic, tokens are removed from a full board and play ends once some row or
+column is empty; its penults are the sets of empty cells of Impartial Tic penults, so this gives a
+penult of the dual game on the $n \times n$ board with exactly $x$ tokens.
 
 ## Depends on
 
-- [Placement Penult](placement-penult.md)
-- [Tic Ended](tic-ended.md)
+- [Penults of a placement game](placement-penult.md)
+- [End of Impartial Tic](tic-ended.md)
 
 ## Sources
 

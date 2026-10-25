@@ -7,9 +7,11 @@ proof: formalized
 lean: BurnsidePaqb.degree_dvd_card
 ---
 
-# Degree dvd card
+# Degrees of irreducible representations divide the group order
 
-Bielefeld Corollary 2: the degree of an irreducible divides the group order.
+**Degrees of irreducible representations divide the group order.** Let $\rho$ be an
+irreducible representation of a finite group $G$ on a nonzero finite-dimensional complex vector
+space $V$. Then $\dim_{\mathbb{C}} V$ divides $|G|$.
 
 ## Depends on
 
@@ -17,14 +19,15 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Central Scalar](../central-character/central-scalar.md)
-- [Central Scalar is Integral](../central-character/central-scalar-is-integral.md)
-- [Character is Integral](../killing-lemma/character-is-integral.md)
-- [Class Rep](../class-sum/class-rep.md)
-- [Class inner sum](class-inner-sum.md)
-- [Self pair sum](self-pair-sum.md)
-- [Sum over classes](sum-over-classes.md)
+- [Central scalar of a conjugacy class](../central-character/central-scalar.md)
+- [Central scalars are algebraic integers](../central-character/central-scalar-is-integral.md)
+- [Character values are algebraic integers](../killing-lemma/character-is-integral.md)
+- [Chosen representative of a conjugacy class](../class-sum/class-rep.md)
+- [Contribution of a conjugacy class to the self-pairing sum](class-inner-sum.md)
+- [Self-orthogonality of an irreducible character](self-pair-sum.md)
+- [Splitting a sum over conjugacy classes](sum-over-classes.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.DegreeDivides](../../../../../../sources/v2/MathlibExt.md)
+- Bielefeld Corollary 2.

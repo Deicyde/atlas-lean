@@ -6,13 +6,15 @@ proof: formalized
 lean: MovingSofa.square_connected
 ---
 
-# Square connected
+# The unit square is connected
 
-The square is connected, including its nonemptiness.
+**The unit square is connected.** The unit square
+$\{z \in \mathbb{C} : 0 \le \operatorname{Re} z \le 1,\ 0 \le \operatorname{Im} z \le 1\}$ is a
+nonempty connected subset of $\mathbb{C}$.
 
 ## Depends on
 
-- [Unit Square](unit-square.md)
+- [Unit square](unit-square.md)
 
 ## Sources
 

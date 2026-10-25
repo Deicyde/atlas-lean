@@ -7,10 +7,10 @@ proof: formalized
 lean: BurnsidePaqb.burnside_paqb
 ---
 
-# Burnside paqb
+# Burnside's $p^a q^b$ theorem
 
-If `G` is finite and `Fintype.card G = p ^ a * q ^ b` for primes `p, q` and
-`a, b : ℕ`, then `G` is solvable. Proved by descent to `Fin (Fintype.card G)`.
+**Burnside's $p^a q^b$ theorem.** Let $G$ be a finite group, let $p$ and $q$ be primes and
+let $a$ and $b$ be natural numbers. If $G$ has order $p^a q^b$, then $G$ is solvable.
 
 ## Depends on
 
@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Burnside paqb zero](burnside-paqb-zero.md)
+- [Burnside's $p^a q^b$ theorem in the lowest universe](burnside-paqb-zero.md)
 
 ## Sources
 

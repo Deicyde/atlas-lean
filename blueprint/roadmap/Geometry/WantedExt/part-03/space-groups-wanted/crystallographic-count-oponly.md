@@ -5,10 +5,16 @@ statement: formalized
 lean: MathlibExt.Geometry.SpaceGroupsWanted.Geometry.SpaceGroupsProblem.crystallographicCountOPOnly
 ---
 
-# Crystallographic Count OPOnly
+# Number of orientation-preserving affine classes of orientation-preserving crystallographic groups
 
-Count of orientation-preserving crystallographic groups modulo
-orientation-preserving affine equivalence.
+**Number of orientation-preserving affine classes of orientation-preserving crystallographic
+groups.** For a natural number $d$, this is the number, in $\mathbb{N} \cup \{\infty\}$, of classes
+under orientation-preserving affine equivalence of those $d$-dimensional crystallographic groups
+all of whose elements are orientation-preserving isometries. Here a crystallographic group is a
+subgroup $G$ of the group of affine isometries of $\mathbb{R}^d$ that is discrete (for every
+point $x$ and every $\varepsilon > 0$ only finitely many $g \in G$ satisfy
+$\operatorname{dist}(g x, x) \le \varepsilon$) and contains translations by $d$ linearly
+independent vectors.
 
 ## Depends on
 
@@ -16,9 +22,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Crystallographic Shared](../../part-01/e.md)
-- [Aff OPEquivalent](aff-opequivalent.md)
-- [Is Orientation Preserving Isom](is-orientation-preserving-isom.md)
+- [Euclidean space $\mathbb{R}^d$](../../part-01/e.md)
+- [Orientation-preserving affine equivalence](aff-opequivalent.md)
+- [Orientation-preserving isometry](is-orientation-preserving-isom.md)
 
 ## Sources
 

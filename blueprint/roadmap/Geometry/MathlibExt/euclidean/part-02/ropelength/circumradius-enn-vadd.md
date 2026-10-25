@@ -6,19 +6,21 @@ proof: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.circumradiusENN_vadd
 ---
 
-# Circumradius ENN vadd
+# Translation invariance of the extended circumradius
 
-The extended circumradius is translation invariant.
+**Translation invariance of the extended circumradius.** For every vector $v$ and all points
+$p, q, r$ of Euclidean 3-space, the extended circumradius of $(v + p, v + q, v + r)$ equals the
+extended circumradius of $(p, q, r)$.
 
 ## Depends on
 
-- [R3](r3.md)
-- [Circumradius ENN](circumradius-enn.md)
+- [Euclidean 3-space](r3.md)
+- [Extended circumradius of three points](circumradius-enn.md)
 
 ## Proof depends on
 
-- [Triangle Of](triangle-of.md)
-- [Triple Points](triple-points.md)
+- [Triangle on three affinely independent points](triangle-of.md)
+- [Ordered triple of points](triple-points.md)
 
 ## Sources
 

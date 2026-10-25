@@ -15,7 +15,7 @@ $2k - 1 - \ell_1 - \ell_2$, $k - \ell_1$ and $k - \ell_2$ in some order is a P-p
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources

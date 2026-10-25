@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Databases.select
 ---
 
-# Select
+# Selection
 
-Selection `σ_c r`.
+**Selection.** For a selection condition $c$ and a finite set $r$ of tuples, the selection
+$\sigma_c(r)$ is the set of tuples $t \in r$ on which $c$ evaluates to true.
 
 ## Depends on
 
-- [Cond](cond.md)
+- [Selection conditions](cond.md)
 - [Tuple](tuple.md)
 
 ## Proof depends on
 
-- [Eval](eval.md)
+- [Truth value of a selection condition](eval.md)
 
 ## Sources
 

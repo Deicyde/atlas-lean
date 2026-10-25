@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.ErdosProblem652Wanted.countSmallPoints
 ---
 
-# Count Small Points
+# Points with few distinct distances
 
-Count of points of `X` with pinned-distance count below a threshold,
-from [EP-652], via the shared `distinctDistancesFrom` API.
+**Points with few distinct distances.** For a finite set $X$ of points in the Euclidean plane
+and a real number $t$, the number of points $x \in X$ such that the number of distinct distances
+from $x$ to the other points of $X$ is less than $t$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ from [EP-652], via the shared `distinctDistancesFrom` API.
 
 ## Proof depends on
 
-- [Distinct Distances From](../../../MathlibExt/metric/distinct-distances-from.md)
+- [Number of distinct distances from a point](../../../MathlibExt/metric/distinct-distances-from.md)
 
 ## Sources
 

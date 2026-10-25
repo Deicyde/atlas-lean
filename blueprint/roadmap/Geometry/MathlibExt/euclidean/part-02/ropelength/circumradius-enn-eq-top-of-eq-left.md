@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.circumradiusENN_eq_top_of_eq_left
 ---
 
-# Circumradius ENN eq top of eq left
+# Equal first two points give infinite extended circumradius
 
-Coincident triples are degenerate, not radius zero.
+**Equal first two points give infinite extended circumradius.** If $p, q, r$ are points of
+Euclidean 3-space with $p = q$, then the extended circumradius of $(p, q, r)$ is $\infty$.
+
+A triple with coincident points is treated as degenerate, not as having radius zero.
 
 ## Depends on
 
-- [R3](r3.md)
-- [Circumradius ENN](circumradius-enn.md)
+- [Euclidean 3-space](r3.md)
+- [Extended circumradius of three points](circumradius-enn.md)
 
 ## Proof depends on
 
-- [Triangle Of](triangle-of.md)
-- [Triple Points](triple-points.md)
+- [Triangle on three affinely independent points](triangle-of.md)
+- [Ordered triple of points](triple-points.md)
 
 ## Sources
 

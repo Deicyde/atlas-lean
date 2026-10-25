@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.Geometry.FaryMilnorWanted.Geometry.FaryMilnorProblem.standardCircle
 ---
 
-# Standard Circle
+# Standard circle
 
-The standard round unknot in the `xy`-plane.
+**Standard circle.** The standard circle is the curve $\mathbb{R} \to \mathbb{R}^3$ given by
+$t \mapsto (\cos t, \sin t, 0)$: the unit circle centred at the origin in the $xy$-plane.
 
 ## Depends on
 
-- [Space](space.md)
+- [Euclidean 3-space](space.md)
 
 ## Sources
 

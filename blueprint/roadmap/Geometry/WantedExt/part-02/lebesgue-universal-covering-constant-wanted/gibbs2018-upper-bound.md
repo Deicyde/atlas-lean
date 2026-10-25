@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.gibbs2018UpperBound
 ---
 
-# Gibbs2018 Upper Bound
+# Statement of Gibbs's upper bound
 
-Gibbs's finite-decimal upper bound.
+**Statement of Gibbs's upper bound.** This proposition states that the Lebesgue universal
+covering constant, the infimum of the areas of the nonempty convex sets in the Euclidean plane that
+contain a congruent copy of every nonempty convex planar set of diameter $1$, is at most
+$0.8440935944$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+- [Lebesgue universal covering constant](lebesgue-universal-covering-constant.md)
 
 ## Sources
 

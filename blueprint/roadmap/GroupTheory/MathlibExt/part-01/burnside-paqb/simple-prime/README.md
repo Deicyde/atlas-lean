@@ -5,9 +5,9 @@ navigation: module
 
 # Simple Prime
 
-- [False of one add prime mul is Integral](false-of-one-add-prime-mul-is-integral.md)
-- [Eq smul one of finrank one](eq-smul-one-of-finrank-one.md)
-- [Linear Char Hom](linear-char-hom.md)
-- [Card eq prime of nontrivial linear](card-eq-prime-of-nontrivial-linear.md)
-- [Char zero of nonlinear of coprime](char-zero-of-nonlinear-of-coprime.md)
-- [Cor6 of prime pow class](cor6-of-prime-pow-class.md)
+- [An algebraic integer cannot solve $1 + p\beta = 0$ for a prime $p$](false-of-one-add-prime-mul-is-integral.md)
+- [One-dimensional representations act by their character](eq-smul-one-of-finrank-one.md)
+- [A linear character as a homomorphism to $\mathbb{C}^\times$](linear-char-hom.md)
+- [A simple group with a nontrivial linear character has prime order](card-eq-prime-of-nontrivial-linear.md)
+- [Nonlinear irreducible characters of a simple group vanish on nonidentity classes of coprime size](char-zero-of-nonlinear-of-coprime.md)
+- [A simple group with a prime-power conjugacy class has prime order](cor6-of-prime-pow-class.md)

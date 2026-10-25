@@ -20,7 +20,7 @@ Then $a$ is a P-position if and only if $a_0 + a_1 + a_2 + a_3$ is even.
 
 - [The set $\hat X_{aabb}$ of $C_4$ positions](c4-pattern-aabbhat.md)
 - [The set $X_{abac}$ of $C_4$ positions](c4-pattern-abac.md)
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources

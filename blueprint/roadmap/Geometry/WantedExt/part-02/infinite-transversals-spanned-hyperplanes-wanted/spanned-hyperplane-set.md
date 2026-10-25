@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.ITSP.SpannedHyperplaneSet
 ---
 
-# Spanned Hyperplane Set
+# Hyperplanes spanned by a point set
 
-The set `H` of hyperplanes spanned by `P` [OWR-1183-011]: hyperplanes
-whose affine span is attained by some subset of `P`.
+**Hyperplanes spanned by a point set.** For a set $P \subseteq \mathbb{R}^d$, the hyperplanes
+spanned by $P$ are the affine hyperplanes of $\mathbb{R}^d$ that equal the affine span of some
+subset of $P$.
 
 ## Depends on
 
@@ -17,8 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Affine Hyperplane](is-affine-hyperplane.md)
+- [Affine hyperplanes in $\mathbb{R}^d$](is-affine-hyperplane.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted](../../../../../sources/v2/WantedExt.md)
+- `OWR-1183-011`.

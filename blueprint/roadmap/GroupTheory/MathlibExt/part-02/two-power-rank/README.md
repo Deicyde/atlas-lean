@@ -5,7 +5,7 @@ navigation: module
 
 # Two Power Rank
 
-- [Two Power Image](two-power-image.md)
-- [Higher Two Power Layer](higher-two-power-layer.md)
-- [Higher Two Power Rank](higher-two-power-rank.md)
-- [Four Rank](four-rank.md)
+- [The subgroup $2^kA$](two-power-image.md)
+- [The two-power layer $2^{j-1}A / 2^jA$](higher-two-power-layer.md)
+- [The $2^j$-rank of a finite abelian group](higher-two-power-rank.md)
+- [The $4$-rank of a finite abelian group](four-rank.md)

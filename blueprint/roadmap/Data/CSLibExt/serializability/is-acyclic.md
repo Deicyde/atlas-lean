@@ -6,17 +6,21 @@ proof: formalized
 lean: Cslib.Databases.ConflictSerializable.isAcyclic
 ---
 
-# Is Acyclic
+# A conflict-serializable schedule has an acyclic precedence graph
 
-A conflict-serializable schedule has an acyclic precedence graph: the position of the first
-operation of each transaction in the serial schedule increases along every edge.
+**A conflict-serializable schedule has an acyclic precedence graph.** If a schedule $s$ in
+which no operation occurs twice is conflict-serializable, then the precedence graph of $s$ is
+acyclic.
+
+In a conflict-equivalent serial schedule, the position of the first operation of each
+transaction increases along every edge of the precedence graph.
 
 ## Depends on
 
 - [Is Acyclic](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-acyclic.md)
-- [Conflict Serializable](conflict-serializable.md)
-- [Op](op.md)
-- [Precedence Graph](precedence-graph.md)
+- [Conflict-serializable schedule](conflict-serializable.md)
+- [Operation of a schedule](op.md)
+- [Precedence graph](precedence-graph.md)
 
 ## Proof depends on
 
@@ -24,13 +28,13 @@ operation of each transaction in the serial schedule increases along every edge.
 - [Edge of a directed adjacency graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/edge.md)
 - [Directed cycle within a vertex list](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/directed-cycle-in.md)
 - [Characterization of directed cycles within a vertex list](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/directed-cycle-in-iff.md)
-- [Access](access.md)
-- [Conflict Equiv](conflict-equiv.md)
-- [Is Serial](is-serial.md)
+- [Read or write access](access.md)
+- [Conflict equivalence](conflict-equiv.md)
+- [Serial schedule](is-serial.md)
 - [Conflicts](conflicts.md)
-- [Order Matters](order-matters.md)
-- [Precedence Edge](precedence-edge.md)
-- [Txn Before](txn-before.md)
+- [Operations whose relative order matters](order-matters.md)
+- [Edge of the precedence graph](precedence-edge.md)
+- [One transaction before another in a schedule](txn-before.md)
 
 ## Sources
 

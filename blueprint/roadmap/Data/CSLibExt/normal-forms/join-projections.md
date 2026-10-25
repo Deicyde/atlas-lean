@@ -19,9 +19,9 @@ the relation containing only the empty tuple; for the empty list it is $U$.
 
 ## Proof depends on
 
-- [Join](../relational-algebra/join.md)
+- [Natural join](../relational-algebra/join.md)
 - [Join Unit](join-unit.md)
-- [Project](../relational-algebra/project.md)
+- [Projection of a relation](../relational-algebra/project.md)
 
 ## Sources
 

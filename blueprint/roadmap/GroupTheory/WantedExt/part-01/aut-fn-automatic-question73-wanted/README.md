@@ -5,6 +5,6 @@ navigation: module
 
 # Aut Fn Automatic Question73
 
-- [Is Automatic Group](is-automatic-group.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Automatic group](is-automatic-group.md)
+- [Automaticity of automorphism groups of free groups (Farb's Question 7.3)](conjecture.md)
+- [Negative answer to Farb's Question 7.3](conjecture-refuted.md)

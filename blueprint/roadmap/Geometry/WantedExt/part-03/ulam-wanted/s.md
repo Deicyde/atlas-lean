@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.UlamWanted.Ulam.S
 ---
 
-# S
+# Unit sphere
 
-The unit sphere in `ℝᵈ`, centered at the origin. This is denoted `Sᵈ⁻¹` in the paper.
+**Unit sphere.** For a natural number $d$, the unit sphere
+$S^{d-1} = \{x \in \mathbb{R}^d : \|x\| = 1\}$ in $\mathbb{R}^d$, centered at the origin.
 
 ## Depends on
 

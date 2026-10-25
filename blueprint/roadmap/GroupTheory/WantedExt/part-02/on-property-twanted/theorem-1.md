@@ -6,15 +6,15 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OnPropertyTWanted.OnPropertyT.theorem_1
 ---
 
-# Theorem 1
+# Property (T) for automorphism groups of free groups of rank at least 6
 
-Statement of Theorem 1:
-
-`Aut(F_n)` has property (T) for all `n ≥ 6`.
+**Property (T) for automorphism groups of free groups of rank at least 6.** For every natural
+number $n \ge 6$, the automorphism group $\operatorname{Aut}(F_n)$ of the free group $F_n$ on $n$
+generators has property (T).
 
 ## Depends on
 
-- [Property T](property-t.md)
+- [Property (T)](property-t.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ A representative bounds the ropelength of its own type.
 
 ## Proof depends on
 
-- [R3](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Euclidean 3-space](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 - [Ambient Isotopy](ambient-isotopy.md)
 - [Id](id.md)
 - [Circle Reparam](circle-reparam.md)

@@ -6,15 +6,20 @@ statement: formalized
 lean: ConvexCovering.directionalExternalFormulationsEquivalent
 ---
 
-# Directional External Formulations Equivalent
+# Directional and exterior-point illumination are equivalent
 
-Finite directional and actual exterior-point illumination counts agree.
+**Directional and exterior-point illumination are equivalent.** Let $n \ge 1$, let
+$K \subseteq \mathbb{R}^n$ be a convex body and let $q$ be a natural number. Then some $q$ unit
+vectors $v_1, \dots, v_q$ illuminate $K$ if and only if some $q$ points $p_1, \dots, p_q$ outside
+$K$ illuminate $K$. Here the vectors illuminate $K$ when every boundary point $x$ of $K$ has an $i$
+and a $t > 0$ with $x + t v_i$ in the interior of $K$, and the points illuminate $K$ when every
+boundary point $x$ of $K$ has an $i$ and a $t > 1$ with $p_i + t (x - p_i)$ in the interior of $K$.
 
 ## Depends on
 
-- [Illuminated By Directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
-- [Illuminated By External Points](../../../../MathlibExt/convex/illumination/illuminated-by-external-points.md)
-- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Illumination by $q$ directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
+- [Illumination by $q$ external points](../../../../MathlibExt/convex/illumination/illuminated-by-external-points.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
 
 ## Sources
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.simplifiedPrincessRosesMoveList
 ---
 
-# Simplified Princess Roses Move List
+# Moves of simplified P&R
 
-The seven moves of simplified P&R on sorted piles `[a, b, c, d]`, as the amounts removed
-from `(a, b, c, d)`: P&R moves except `(0, 0, -1, 0)`, `(-1, 0, -1, 0)` and `(0, -1, -1, 0)`, so
-the third pile may be taken from only together with the fourth.
+**Moves of simplified P&R.** The simplified Princess and the Roses game on four sorted piles
+$(a, b, c, d)$ has seven moves, given as the amounts removed from $(a, b, c, d)$: $(1, 0, 0, 0)$,
+$(0, 1, 0, 0)$, $(0, 0, 0, 1)$, $(1, 1, 0, 0)$, $(1, 0, 0, 1)$, $(0, 1, 0, 1)$ and $(0, 0, 1, 1)$.
+
+These are the moves of four-pile Princess and the Roses except taking one object from the third
+pile alone or together with the first or second pile, so the third pile may be taken from only
+together with the fourth.
 
 ## Depends on
 

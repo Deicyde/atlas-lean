@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.Geometry.FaryMilnorWanted.Geometry.FaryMilnorProblem.acceleration
 ---
 
-# Acceleration
+# Acceleration of a space curve
 
-Acceleration.
+**Acceleration of a space curve.** For a curve $r \colon \mathbb{R} \to \mathbb{R}^3$ and a real
+number $t$, the acceleration of $r$ at $t$ is the derivative at $t$ of its velocity
+$s \mapsto r'(s)$, that is $r''(t)$, where a derivative that does not exist is taken to be $0$.
 
 ## Depends on
 
-- [Space](space.md)
+- [Euclidean 3-space](space.md)
 
 ## Proof depends on
 
-- [Velocity](velocity.md)
+- [Velocity of a space curve](velocity.md)
 
 ## Sources
 

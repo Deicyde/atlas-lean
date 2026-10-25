@@ -7,9 +7,10 @@ proof: formalized
 lean: BurnsidePaqb.abs_add_two_ne_unit_lt_two
 ---
 
-# Abs add two ne unit lt two
+# Sum of two distinct unit complex numbers
 
-The sum of two distinct unit-modulus numbers has modulus `< 2`.
+**Sum of two distinct unit complex numbers.** If $a$ and $b$ are distinct complex numbers
+with $|a| = |b| = 1$, then $|a + b| < 2$.
 
 ## Depends on
 
@@ -17,10 +18,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eq of mul conj eq one](eq-of-mul-conj-eq-one.md)
-- [Norm mul conj eq one](norm-mul-conj-eq-one.md)
-- [Re lt one of ne one](re-lt-one-of-ne-one.md)
-- [Re mul conj](re-mul-conj.md)
+- [Cancelling a unit-modulus conjugate](eq-of-mul-conj-eq-one.md)
+- [Product of a unit complex number with a conjugate unit](norm-mul-conj-eq-one.md)
+- [Real part of a unit complex number other than $1$](re-lt-one-of-ne-one.md)
+- [Real part of a product with a conjugate](re-mul-conj.md)
 
 ## Sources
 

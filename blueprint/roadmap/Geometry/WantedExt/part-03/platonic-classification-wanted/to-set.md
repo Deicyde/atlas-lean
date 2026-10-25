@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.toSet
 ---
 
-# To Set
+# Underlying set of a convex polytope
 
-The underlying convex set of the polytope.
+**Underlying set of a convex polytope.** The underlying set of a convex polytope $P$ in
+$\mathbb{R}^n$ is the convex hull of its vertex set.
 
 ## Depends on
 
-- [Convex Polytope](convex-polytope.md)
-- [E](e.md)
+- [Convex polytope](convex-polytope.md)
+- [Ambient Euclidean space of the Platonic classification](e.md)
 
 ## Sources
 

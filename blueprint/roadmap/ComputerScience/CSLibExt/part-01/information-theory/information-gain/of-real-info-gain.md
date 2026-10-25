@@ -16,13 +16,13 @@ the mutual information in bits of $p$ viewed as a probability measure on $\alpha
 ## Depends on
 
 - [Information gain of a split](info-gain.md)
-- [Measure Mutual Information](../../../../../InformationTheory/MathlibExt/conditional-entropy/measure-mutual-information.md)
+- [Mutual information of a joint probability measure](../../../../../InformationTheory/MathlibExt/conditional-entropy/measure-mutual-information.md)
 
 ## Proof depends on
 
 - [Information gain in terms of entropies](info-gain-eq.md)
 - [Mutual information of a finite joint law](../../../../../InformationTheory/MathlibExt/conditional-entropy/measure-mutual-information-to-measure.md)
-- [Shannon Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
+- [Shannon entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
 
 ## Sources
 

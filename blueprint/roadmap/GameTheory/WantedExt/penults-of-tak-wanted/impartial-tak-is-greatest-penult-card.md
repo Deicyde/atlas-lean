@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.impartialTak_isGreatest_penult_card
 ---
 
-# Impartial Tak is Greatest penult card
+# The largest Impartial Tak penult
 
-Corollary 1: for `n ≥ 2` the largest Impartial Tak penult on an `n × n` board has
-`U(n) = n² - 2n` tokens.
+**The largest Impartial Tak penult.** Impartial Tak is the placement game on the $n \times n$
+board whose play ends once the tokens contain a road. For every $n \ge 2$, the largest number of
+tokens in an Impartial Tak penult on the $n \times n$ board is $U(n) = n^2 - 2n$: some penult has
+exactly $n^2 - 2n$ tokens and no penult has more.
 
 ## Depends on
 
-- [Placement Penult](placement-penult.md)
-- [Tak Has Road](tak-has-road.md)
+- [Penults of a placement game](placement-penult.md)
+- [Roads in Impartial Tak](tak-has-road.md)
 
 ## Sources
 

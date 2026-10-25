@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.simplifiedPrincessRosesMoves_three_three_three_zero
 ---
 
-# Simplified Princess Roses Moves three three three zero
+# A terminal position of simplified P&R
 
-The paper's example: `[3, 3, 3, 0]` is terminal in simplified P&R.
+**A terminal position of simplified P&R.** In simplified Princess and the Roses, the
+position $(3, 3, 3, 0)$ has no options.
 
 ## Depends on
 
-- [Simplified Princess Roses Moves](simplified-princess-roses-moves.md)
+- [Options in simplified Princess and the Roses](simplified-princess-roses-moves.md)
 
 ## Sources
 

@@ -7,10 +7,10 @@ navigation: module
 
 ## Prod
 
-- [Prod](prod.md)
-- [Prod apply](prod-apply.md)
-- [Nondegenerate prod iff](nondegenerate-prod-iff.md)
+- [Orthogonal product of bilinear forms](prod.md)
+- [Evaluation of an orthogonal product](prod-apply.md)
+- [Nondegeneracy of an orthogonal product](nondegenerate-prod-iff.md)
 
 ## Dual Submodule
 
-- [Dual Submodule prod](dual-submodule-prod.md)
+- [Dual submodule of an orthogonal product](dual-submodule-prod.md)

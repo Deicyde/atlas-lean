@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.HasNSProperty.exists_of_lt_xor_xor
 ---
 
-# Exists of lt xor xor
+# Mex step for chocolate bars with two functions
 
-Three-dimensional mex step: if `g`, `h` have the NS property, `x ≤ g z`, `y ≤ h z` and
-`c < x ⊕ y ⊕ z`, then `c = u ⊕ y ⊕ z` with `u < x`, or `c = x ⊕ v ⊕ z` with `v < y`, or
-`c = min (g w) x ⊕ min (h w) y ⊕ w` with `w < z`.
+**Mex step for chocolate bars with two functions.** Let $g, h : \mathbb{N} \to \mathbb{N}$
+have the NS property, and let $x, y, z, c$ be natural numbers with $x \le g(z)$, $y \le h(z)$
+and $c < x \oplus y \oplus z$, where $\oplus$ is nim-sum (bitwise exclusive or). Then
+$c = u \oplus y \oplus z$ for some $u < x$, or $c = x \oplus v \oplus z$ for some $v < y$, or
+$c = \min(g(w), x) \oplus \min(h(w), y) \oplus w$ for some $w < z$.
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
+- [NS property](has-nsproperty.md)
 
 ## Sources
 

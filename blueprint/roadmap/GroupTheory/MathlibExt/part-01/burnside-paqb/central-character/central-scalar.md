@@ -6,9 +6,13 @@ statement: formalized
 lean: BurnsidePaqb.centralScalar
 ---
 
-# Central Scalar
+# Central scalar of a conjugacy class
 
-Central character scalar: the scalar by which the class sum of `l` acts.
+**Central scalar of a conjugacy class.** Let $\rho$ be an irreducible representation of a
+finite group $G$ on a finite-dimensional complex vector space $V$. For a conjugacy class $C$ of
+$G$, the class sum $\sum_{x \in C} x$ is central in the group algebra $\mathbb{C}[G]$, so it acts
+on $V$ as multiplication by a complex number. The central scalar $\omega_\rho(C)$ is that number:
+$\rho\bigl(\sum_{x \in C} x\bigr) v = \omega_\rho(C)\, v$ for all $v \in V$.
 
 ## Depends on
 
@@ -16,9 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Class Sum](../class-sum/class-sum.md)
-- [Class Sum carrier central](../class-sum/class-sum-carrier-central.md)
-- [Exists scalar of central](exists-scalar-of-central.md)
+- [Class sum of a finite subset](../class-sum/class-sum.md)
+- [Class sums of conjugacy classes are central](../class-sum/class-sum-carrier-central.md)
+- [Schur's lemma for central elements of the group algebra](exists-scalar-of-central.md)
 
 ## Sources
 

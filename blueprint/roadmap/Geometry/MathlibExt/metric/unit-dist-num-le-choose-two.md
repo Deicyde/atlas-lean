@@ -7,18 +7,19 @@ proof: formalized
 lean: unitDistNum_le_choose_two
 ---
 
-# Unit Dist Num le choose two
+# Trivial upper bound on unit distances
 
-The number of unit-distance pairs of a finite set of `n` points is at most $\binom{n}{2}$,
-the total number of unordered pairs of distinct points.
+**Trivial upper bound on unit distances.** For a finite set of $n$ points in a metric space,
+the number of unit distances is at most $\binom{n}{2}$, the total number of unordered pairs of
+distinct points.
 
 ## Depends on
 
-- [Unit Dist Num](unit-dist-num.md)
+- [Number of unit distances](unit-dist-num.md)
 
 ## Proof depends on
 
-- [Distance Multiplicity](distance-multiplicity.md)
+- [Multiplicity of a distance](distance-multiplicity.md)
 
 ## Sources
 

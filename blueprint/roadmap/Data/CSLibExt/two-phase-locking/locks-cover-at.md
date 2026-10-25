@@ -5,21 +5,25 @@ statement: formalized
 lean: Cslib.Databases.LocksCoverAt
 ---
 
-# Locks Cover At
+# Lock coverage at a position
 
-`LocksCover` at one position.
+**Lock coverage at a position.** For a locked schedule $s$ and a position $p$: if $s$ has at
+position $p$ a read or write $o$ by transaction $t$ on item $x$, then just before position $p$
+transaction $t$ holds a lock on $x$ whose mode covers the mode $o$ requires (shared for a read,
+exclusive for a write; an exclusive lock covers both modes). If position $p$ holds a lock request
+or a release, or lies beyond the end of $s$, the condition holds trivially.
 
 ## Depends on
 
-- [Action](action.md)
+- [Action of a locked schedule](action.md)
 
 ## Proof depends on
 
-- [Access](../serializability/access.md)
-- [Mode](mode.md)
-- [Holds Before](holds-before.md)
-- [Lock Mode](lock-mode.md)
-- [Op](../serializability/op.md)
+- [Read or write access](../serializability/access.md)
+- [Lock mode required by an access](mode.md)
+- [Holding a lock](holds-before.md)
+- [Lock mode](lock-mode.md)
+- [Operation of a schedule](../serializability/op.md)
 
 ## Sources
 

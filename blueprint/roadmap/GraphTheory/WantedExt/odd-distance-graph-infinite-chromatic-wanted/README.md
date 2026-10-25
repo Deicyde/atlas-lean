@@ -7,9 +7,9 @@ navigation: module
 
 ## ODGIC
 
-- [Odd Distance Graph](odd-distance-graph.md)
-- [Odd Distance Chromatic Infinite](odd-distance-chromatic-infinite.md)
+- [Odd distance graph](odd-distance-graph.md)
+- [Infinite chromatic number of the odd distance graph](odd-distance-chromatic-infinite.md)
 
 ## Odd Distance Graph Infinite Chromatic Wanted
 
-- [Odd Distance Chromatic Infinite holds](odd-distance-chromatic-infinite-holds.md)
+- [Davies' odd distance theorem](odd-distance-chromatic-infinite-holds.md)

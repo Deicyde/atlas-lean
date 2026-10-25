@@ -7,17 +7,20 @@ proof: formalized
 lean: LatticePointEnumerator.finite_translatedLatticePointSetPos
 ---
 
-# Finite translated Lattice Point Set Pos
+# Finiteness of the lattice points in a translated positive dilate
 
-Source-domain translated finiteness for bounded `P` and positive `t`.
+**Finiteness of the lattice points in a translated positive dilate.** For a natural number
+$d$, a bounded set $P \subseteq \mathbb{R}^d$, a real number $t > 0$ and a vector
+$x \in \mathbb{R}^d$, the set $(tP + x) \cap \mathbb{Z}^d$ of points of the integer lattice
+$\mathbb{Z}^d$ in the translated dilate $tP + x = \{tp + x : p \in P\}$ is finite.
 
 ## Depends on
 
-- [Translated Lattice Point Set Pos](translated-lattice-point-set-pos.md)
+- [Translated lattice-point set at a positive dilation](translated-lattice-point-set-pos.md)
 
 ## Proof depends on
 
-- [Finite translated Lattice Point Set](finite-translated-lattice-point-set.md)
+- [Finiteness of the lattice points in a translated dilate](finite-translated-lattice-point-set.md)
 
 ## Sources
 

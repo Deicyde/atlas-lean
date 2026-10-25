@@ -6,15 +6,16 @@ proof: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.thickness_le
 ---
 
-# Thickness le
+# Thickness is at most every circumradius
 
-Thickness is at most the extended circumradius of every triple from
-the set.
+**Thickness is at most every circumradius.** For every set $s$ in Euclidean 3-space and all
+points $p, q, r \in s$, the thickness of $s$ is at most the extended circumradius of
+$p, q, r$.
 
 ## Depends on
 
-- [R3](r3.md)
-- [Circumradius ENN](circumradius-enn.md)
+- [Euclidean 3-space](r3.md)
+- [Extended circumradius of three points](circumradius-enn.md)
 - [Thickness](thickness.md)
 
 ## Sources

@@ -5,8 +5,8 @@ navigation: module
 
 # Partial List Coloring
 
-- [Is List Coloring](is-list-coloring.md)
-- [Lambda Max](lambda-max.md)
-- [Lambda Min](lambda-min.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Proper list colouring of a vertex subset](is-list-coloring.md)
+- [Maximum number of list-colourable vertices](lambda-max.md)
+- [The partial list colouring number $\lambda_t$](lambda-min.md)
+- [Iradmusa's partial list colouring conjecture](conjecture.md)
+- [The partial list colouring conjecture is false](conjecture-refuted.md)

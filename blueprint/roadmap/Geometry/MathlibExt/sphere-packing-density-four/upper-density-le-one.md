@@ -7,21 +7,23 @@ proof: formalized
 lean: MathlibExt.Geometry.SpherePackingDensityFourWanted.upperDensity_le_one
 ---
 
-# Upper Density le one
+# The upper density of a packing is at most one
 
-Source: taking the radius limsup preserves the bound by one.
+**The upper density of a packing is at most one.** For every packing $P$ of congruent balls in
+$\mathbb{R}^4$, the upper density of $P$ is at most $1$.
 
 ## Depends on
 
-- [Packing](packing.md)
-- [Upper Density](upper-density.md)
+- [Packings of congruent balls in $\mathbb{R}^4$](packing.md)
+- [Upper density of a packing](upper-density.md)
 
 ## Proof depends on
 
-- [Positive Radius](positive-radius.md)
-- [Centered Radius Density](centered-radius-density.md)
-- [Centered Radius Density le one](centered-radius-density-le-one.md)
+- [Positive radii](positive-radius.md)
+- [Density of a packing at a fixed radius](centered-radius-density.md)
+- [The density at a fixed radius is at most one](centered-radius-density-le-one.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SpherePackingDensityFour](../../../../sources/v2/MathlibExt.md)
+- taking the radius limsup preserves the bound by one.

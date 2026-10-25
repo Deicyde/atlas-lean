@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.MorleyWanted.Geometry.Morley.LiesInTriangle
 ---
 
-# Lies In Triangle
+# Point in a closed triangle
 
-A point lies in the closed triangle spanned by `A`, `B`, `C`.
+**Point in a closed triangle.** A point $X$ of the Euclidean plane lies in the triangle with
+vertices $A$, $B$, $C$ when $X$ belongs to the convex hull of $\{A, B, C\}$, the closed triangle
+$ABC$ (a segment or a point when $A$, $B$, $C$ are collinear).
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Euclidean plane for Morley's theorem](plane.md)
 
 ## Sources
 

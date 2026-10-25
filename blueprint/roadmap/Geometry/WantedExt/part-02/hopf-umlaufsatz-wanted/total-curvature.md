@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Geometry.HopfUmlaufsatzWanted.Geometry.HopfUmlaufsatz.totalCurvature
 ---
 
-# Total Curvature
+# Total signed curvature of a tangent-angle lift
 
-Total signed curvature over one period.
+**Total signed curvature of a tangent-angle lift.** For a function
+$\alpha : \mathbb{R} \to \mathbb{R}$, the total signed curvature is $\int_0^{2\pi} \alpha'(t)\,dt$,
+the integral of the signed curvature $\alpha'$ over one parameter period $[0, 2\pi]$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Period](period.md)
+- [Parameter period for the Umlaufsatz](period.md)
 - [Signed Curvature](signed-curvature.md)
 
 ## Sources

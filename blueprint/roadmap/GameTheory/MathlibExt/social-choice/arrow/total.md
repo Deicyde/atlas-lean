@@ -6,16 +6,15 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.StrictTotalOrder.total
 ---
 
-# Total
+# Strict preference orders for Arrow's theorem are total
 
-Compatibility alias for the former `ArrowWanted.StrictTotalOrder.total` projection.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.total` directly.
+**Strict preference orders for Arrow's theorem are total.** If $<$ is a strict total order on
+a type $\alpha$ and $a, b \in \alpha$ are distinct, then $a < b$ or $b < a$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
-- [Lt](lt.md)
+- [Strict preference orders for Arrow's theorem](strict-total-order.md)
+- [Preference relation of a strict total order (Arrow's theorem)](lt.md)
 
 ## Proof depends on
 

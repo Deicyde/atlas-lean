@@ -7,14 +7,14 @@ proof: formalized
 lean: MathlibExt.InformationTheory.IsPrefixFree.eq_of_isPrefix
 ---
 
-# Eq of is Prefix
+# Prefix-related codewords come from the same symbol
 
-In a prefix-free code, a prefix relation between codewords forces equality
-of the source symbols.
+**Prefix-related codewords come from the same symbol.** If $c$ is a prefix-free code and the
+codeword $c(a_1)$ is a prefix of $c(a_2)$, then $a_1 = a_2$.
 
 ## Depends on
 
-- [Is Prefix Free](is-prefix-free.md)
+- [Prefix-free code](is-prefix-free.md)
 
 ## Sources
 

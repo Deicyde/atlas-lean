@@ -6,21 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.snort_two_by_two
 ---
 
-# Snort two by two
+# Snort on the $2 \times 2$ queen's and rook's graphs
 
-The first player wins the Peaceable Queens game on a `2 × 2` board, and the
-second player wins the Peaceable Rooks game there.
+**Snort on the $2 \times 2$ queen's and rook's graphs.** The first player wins Snort on
+the queen's graph of the $2 \times 2$ board (the Peaceable Queens game), and the second
+player wins Snort on the rook's graph of the $2 \times 2$ board (the Peaceable Rooks game).
 
 ## Depends on
 
-- [Snort First Player Wins](snort-first-player-wins.md)
-- [Snort Second Player Wins](snort-second-player-wins.md)
-- [Queen Graph](queen-graph.md)
+- [First player wins Snort](snort-first-player-wins.md)
+- [Second-player win in Snort](snort-second-player-wins.md)
+- [Queen's graph](queen-graph.md)
 - [Rook graph](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-04/rook-graph/rook-graph.md)
 
 ## Proof depends on
 
-- [Snort Mover Wins](snort-mover-wins.md)
+- [Snort positions with a move bound](snort-mover-wins.md)
 
 ## Sources
 

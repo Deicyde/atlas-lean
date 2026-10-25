@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Databases.Cond.eval_restrict
 ---
 
-# Eval restrict
+# Selection conditions depend only on their attributes
 
-A condition only reads the attributes it mentions.
+**Selection conditions depend only on their attributes.** Let $c$ be a selection condition,
+$t$ a tuple and $T$ a finite set of attributes containing every attribute of $c$. Then $c$ has
+the same truth value on the restriction of $t$ to $T$ as on $t$.
 
 ## Depends on
 
-- [Cond](cond.md)
+- [Selection conditions](cond.md)
 - [Attributes of a selection condition](attrs.md)
-- [Eval](eval.md)
+- [Truth value of a selection condition](eval.md)
 - [Tuple](tuple.md)
-- [Restrict](restrict.md)
+- [Restriction of a tuple](restrict.md)
 
 ## Sources
 

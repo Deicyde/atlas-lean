@@ -13,7 +13,7 @@ lean: Cslib.Databases.project_project_of_subset
 ## Depends on
 
 - [Tuple](tuple.md)
-- [Project](project.md)
+- [Projection of a relation](project.md)
 
 ## Proof depends on
 

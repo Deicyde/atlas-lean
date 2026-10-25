@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.GameTheory.ShapleyValue.IsNullPlayer
 ---
 
-# Is Null Player
+# Null player
 
-`i` is null/dummy in `v` if it never changes worth of a coalition not containing it.
+**Null player.** Let $v$ be a cooperative game on a finite set $N$ of players. A player
+$i \in N$ is a null player of $v$ if $v(S \cup \{i\}) = v(S)$ for every coalition
+$S \subseteq N$ with $i \notin S$.
 
 ## Depends on
 
-- [Coop Game](coop-game.md)
+- [Cooperative game with transferable utility](coop-game.md)
 
 ## Sources
 

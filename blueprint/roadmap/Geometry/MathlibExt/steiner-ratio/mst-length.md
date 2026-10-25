@@ -6,18 +6,20 @@ statement: formalized
 lean: MathlibExt.Geometry.SteinerRatio.mstLength
 ---
 
-# Mst Length
+# Minimum spanning tree length
 
-Minimum spanning tree length, totalized by `sInf` (the length set is
-finite and, for nonempty `V`, nonempty).
+**Minimum spanning tree length.** For a finite set $V$ of points in the Euclidean plane, the
+minimum spanning tree length of $V$ is the infimum of the total lengths of the trees with
+vertex set $V$. For nonempty $V$ this set of lengths is finite and nonempty, so the infimum
+is a minimum; for empty $V$ the value is $0$ by convention.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane of the Steiner ratio problem](plane.md)
 
 ## Proof depends on
 
-- [Spanning Tree Lengths](spanning-tree-lengths.md)
+- [Lengths of spanning trees](spanning-tree-lengths.md)
 
 ## Sources
 

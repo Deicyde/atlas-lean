@@ -18,9 +18,9 @@ $0$.
 
 ## Proof depends on
 
-- [Finite Conditional Entropy](../../../../../InformationTheory/MathlibExt/conditional-entropy/finite-conditional-entropy.md)
+- [Conditional entropy of a finite joint law](../../../../../InformationTheory/MathlibExt/conditional-entropy/finite-conditional-entropy.md)
 - [Conditioning does not increase entropy](../../../../../InformationTheory/MathlibExt/conditional-entropy/finite-conditional-entropy-le.md)
-- [Shannon Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
+- [Shannon entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
 
 ## Sources
 

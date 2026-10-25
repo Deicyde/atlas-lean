@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.Geometry.SteinerRatio.spanningTreeLengths
 ---
 
-# Spanning Tree Lengths
+# Lengths of spanning trees
 
-Lengths of spanning trees of `V`.
+**Lengths of spanning trees.** For a finite set $V$ of points in the Euclidean plane, this is
+the set of real numbers $\ell$ such that some tree with vertex set $V$ has total length $\ell$,
+the total length being the sum of the Euclidean lengths of its edges.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane of the Steiner ratio problem](plane.md)
 
 ## Proof depends on
 
-- [Total Length](total-length.md)
+- [Total length of a graph on points of the plane](total-length.md)
 
 ## Sources
 

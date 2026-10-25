@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Geometry.ParallelPostulateWanted.Geometry.Euclidean
 ---
 
-# Euclidean
+# Tarski's Euclidean axiom
 
-The **Euclidean axiom** `A10` (Tarski's form of the parallel postulate,
-equivalent to Euclid's fifth in the presence of the other axioms): for any
-point `d` inside the angle `bac` and any point `t` on the ray from `a`
-through `d`, the two sides of the angle, suitably extended, meet on a line
-through `t`.
+**Tarski's Euclidean axiom.** For a model $M$ of Tarski's absolute plane geometry with
+betweenness relation $B$, where $B(a, b, c)$ means that $b$ lies between $a$ and $c$ (allowing
+$b = a$ or $b = c$), the Euclidean axiom A10 holds in $M$ when for all points $a, b, c, d, t$ of
+$M$ with $B(a, d, t)$, $B(b, d, c)$ and $a \ne d$ there are points $x$ and $y$ of $M$ with
+$B(a, b, x)$, $B(a, c, y)$ and $B(x, t, y)$.
+
+In the presence of the other axioms of absolute geometry, this axiom is equivalent to Euclid's
+parallel postulate.
 
 ## Depends on
 
-- [Tarski Absolute](tarski-absolute.md)
+- [Tarski's absolute plane geometry](tarski-absolute.md)
 
 ## Sources
 

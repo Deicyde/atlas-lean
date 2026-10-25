@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.IsAttractor
 ---
 
-# Is Attractor
+# Attractor of an iterated function system
 
-A set `S ⊆ X` is an **attractor** of the IFS `f : Fin n → X → X` if it is
-nonempty compact and fixed by the Hutchinson operator `H(A) = ⋃ᵢ fᵢ(A)`.
+**Attractor of an iterated function system.** Let $X$ be a topological space and let
+$(f_i)_{i < n}$ be a finite family of maps $X \to X$. A set $S \subseteq X$ is an attractor of the
+family if it is nonempty and compact and is fixed by the Hutchinson operator, that is,
+$S = \bigcup_{i < n} f_i(S)$.
 
 ## Depends on
 

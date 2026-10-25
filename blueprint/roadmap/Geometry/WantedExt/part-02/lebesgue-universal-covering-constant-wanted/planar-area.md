@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.planarArea
 ---
 
-# Planar Area
+# Planar area
 
-Planar Lebesgue area, retained in `ENNReal` to preserve infinite area.
+**Planar area.** The area of a set $S$ in the Euclidean plane $\mathbb{R}^2$
+is its Lebesgue measure (outer measure if $S$ is not measurable), a value in $[0, \infty]$,
+so infinite area is allowed.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane of Lebesgue's covering problem](plane.md)
 
 ## Sources
 

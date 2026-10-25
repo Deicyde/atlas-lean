@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.euclidGame
 ---
 
-# Euclid Game
+# The game Euclid
 
-Euclid as a `SpragueGrundy.ImpartialGame` on pairs of naturals, ranked by `a + b` and
-started at `(1, 1)`.
+**The game Euclid.** Euclid as an impartial game: its positions are the pairs $(a, b)$ of
+natural numbers, its moves from $(a, b)$ are the Euclid moves, the rank of $(a, b)$ is $a + b$,
+and its starting position is $(1, 1)$.
 
 ## Depends on
 
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
 
 ## Proof depends on
 
 - [Euclid Moves](euclid-moves.md)
-- [Euclid Moves rank lt](euclid-moves-rank-lt.md)
+- [Euclid moves lower the sum](euclid-moves-rank-lt.md)
 
 ## Sources
 

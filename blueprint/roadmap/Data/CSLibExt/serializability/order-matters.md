@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Databases.Op.OrderMatters
 ---
 
-# Order Matters
+# Operations whose relative order matters
 
-The pairs whose relative order a conflict-equivalent schedule must keep: operations of the
-same transaction, and conflicting operations.
+**Operations whose relative order matters.** Two operations $a$ and $b$ are order-relevant when
+they belong to the same transaction or they conflict. These are the pairs whose relative order a
+conflict-equivalent schedule must keep.
 
 ## Depends on
 
-- [Op](op.md)
+- [Operation of a schedule](op.md)
 
 ## Proof depends on
 

@@ -7,12 +7,11 @@ proof: formalized
 lean: MathlibExt.Geometry.Manifold.OneDimensionalWanted.compact_connected_one_manifold_with_boundary_classification
 ---
 
-# Compact connected one manifold with boundary classification
+# Classification of compact connected $1$-manifolds with boundary
 
-Every compact connected Hausdorff second-countable smooth 1-manifold with boundary (`𝓡∂ 1`) is
-diffeomorphic to either `Circle` or `Icc (0:ℝ) 1`. Source: Classification of 1-manifolds with
-boundary; Hirsch, Differential Topology; J. Lee, Introduction to Smooth Manifolds, 2nd ed.,
-collar theorem; Lean states compact connected `𝓡∂ 1` with closed interval specialization.
+**Classification of compact connected $1$-manifolds with boundary.** Every compact, connected,
+Hausdorff, second-countable smooth $1$-manifold $M$ with (possibly empty) boundary is
+diffeomorphic either to the circle $S^1$ or to the closed interval $[0, 1]$.
 
 ## Depends on
 
@@ -20,8 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Connected boundaryless one manifold classification](connected-boundaryless-one-manifold-clas.md)
+- [Classification of connected $1$-manifolds without boundary](connected-boundaryless-one-manifold-clas.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.OneDimensional](../../../../../../sources/v2/MathlibExt.md)
+- Classification of 1-manifolds with boundary; Hirsch, Differential Topology; J. Lee, Introduction to Smooth Manifolds, 2nd ed., collar theorem; Lean states compact connected `𝓡∂ 1` with closed interval specialization.

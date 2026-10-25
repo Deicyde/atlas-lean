@@ -5,14 +5,16 @@ statement: formalized
 lean: InformationTheory.FiniteExtension.outputAuxiliaryLaw
 ---
 
-# Output Auxiliary Law
+# Output-auxiliary law
 
-The actual YS marginal of a finite extension.
+**Output-auxiliary law.** Let $q$ be a finite extension of a finite joint law of $(X, Y)$,
+that is, a law of $((X, Y), S)$ with an auxiliary variable $S$. Its output-auxiliary law is the
+joint law of $(Y, S)$: the image of the law of $q$ under $((x, y), s) \mapsto (y, s)$.
 
 ## Depends on
 
-- [Finite Extension](finite-extension.md)
-- [Finite Joint Law](finite-joint-law.md)
+- [Finite extension of a joint law](finite-extension.md)
+- [Finite joint law](finite-joint-law.md)
 
 ## Sources
 

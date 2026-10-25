@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.exists_large_tree_snortSecondPlayerWins
 ---
 
-# Exists large tree snort Second Player Wins
+# Arbitrarily large trees on which the second player wins Snort
 
-There are infinitely many trees on which the second player wins Snort.
+**Arbitrarily large trees on which the second player wins Snort.** For every natural number
+$N$ there is a tree $T$ on $n \ge N$ vertices such that the second player wins Snort on $T$.
 
 ## Depends on
 
-- [Snort Second Player Wins](snort-second-player-wins.md)
+- [Second-player win in Snort](snort-second-player-wins.md)
 
 ## Sources
 

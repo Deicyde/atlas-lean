@@ -5,22 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.idealPeriodWord_point_lt_iff
 ---
 
-# Ideal Period Word point lt iff
+# The ideal periodic points decrease
 
-Lemma 4: the periodic points `d₁, d₂, …` decrease: for `k, ℓ ≥ 1`, `d_k < d_ℓ` if and only if
-`k > ℓ`. Here `x` and `y` are points of `I_α` whose `N`-expansions are purely periodic with
-period words `d_k` and `d_ℓ` respectively (digit `i` of `x` is entry `i mod |d_k|` of the digit
-string of `d_k`).
+**The ideal periodic points decrease.** Let $N$ be a natural number, let $\alpha$ be a real
+number with $0 < \alpha \le \sqrt N - 1$, and let $T_\alpha$ be the $N$-expansion map on
+$I_\alpha = [\alpha, \alpha + 1]$. For $m \ge 1$ write $|d_m|$ for the length of the digit string
+of the ideal period word $d_m$. Let $k, \ell \ge 1$ and let $x, y \in I_\alpha$ be such that for
+every $i \ge 0$ the digit of $T_\alpha^i(x)$ is entry $i \bmod |d_k|$ (counting from $0$) of the
+digit string of $d_k$, and the digit of $T_\alpha^i(y)$ is entry $i \bmod |d_\ell|$ of the digit
+string of $d_\ell$; that is, the expansions of $x$ and $y$ are purely periodic with period words
+$d_k$ and $d_\ell$. Then $x < y$ if and only if $\ell < k$.
 
-The paper works in Phase I; the ordering only needs the standing assumption `0 < α ≤ √N - 1` of
-Definition 1 (which makes `T_α` expanding, so a digit sequence determines its point), so Phase I
-is dropped.
+The source works in Phase I; only the assumption $0 < \alpha \le \sqrt N - 1$ is kept here, which
+makes $T_\alpha$ expanding, so that a digit sequence determines its point.
 
 ## Depends on
 
-- [Ideal Period Word](ideal-period-word.md)
-- [N Expansion Digit](n-expansion-digit.md)
-- [N Expansion Map](n-expansion-map.md)
+- [Ideal period words](ideal-period-word.md)
+- [Digit of the N-expansion map](n-expansion-digit.md)
+- [The $N$-expansion map](n-expansion-map.md)
 
 ## Sources
 

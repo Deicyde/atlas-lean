@@ -7,19 +7,22 @@ proof: formalized
 lean: ConvexCovering.coordinateCube_three_least_coveringCount
 ---
 
-# Coordinate Cube three least covering Count
+# Eight is the least number of interior translates covering the three-dimensional cube
 
-The matching cover and vertex obstruction give an actual least count of eight.
+**Eight is the least number of interior translates covering the three-dimensional cube.**
+Let $C_3 = [-1, 1]^3$ be the coordinate cube in $\mathbb{R}^3$. Then $8$ is the least natural
+number $q$ such that $C_3$ is contained in the union of $q$ translates of its interior
+$\operatorname{int} C_3$.
 
 ## Depends on
 
-- [Covered By Interior Translates](../covering/covered-by-interior-translates.md)
-- [Coordinate Cube](coordinate-cube.md)
+- [Covering by interior translates](../covering/covered-by-interior-translates.md)
+- [Coordinate cube](coordinate-cube.md)
 
 ## Proof depends on
 
-- [Coordinate Cube covering Count ge two pow](coordinate-cube-covering-count-ge-two-po.md)
-- [Coordinate Cube three covered By Interior Translates](coordinate-cube-three-covered-by-interio.md)
+- [Covering the cube by translates of its interior needs $2^n$ translates](coordinate-cube-covering-count-ge-two-po.md)
+- [Eight translates of the interior cover the three-dimensional cube](coordinate-cube-three-covered-by-interio.md)
 
 ## Sources
 

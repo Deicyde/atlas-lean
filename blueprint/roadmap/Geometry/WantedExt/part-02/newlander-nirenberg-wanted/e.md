@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.NewlanderNirenbergWanted.Geometry.NewlanderNirenberg.E
 ---
 
-# E
+# Model space $\mathbb{R}^{2n}$ for the Newlander–Nirenberg theorem
 
-The model space `ℝ^{2n}` carrying the almost complex structure.
+**Model space $\mathbb{R}^{2n}$ for the Newlander–Nirenberg theorem.** For a natural number
+$n$, $E_n$ is the Euclidean space $\mathbb{R}^{2n}$, the model space carrying the almost complex
+structure.
 
 ## Depends on
 

@@ -6,15 +6,19 @@ statement: formalized
 lean: ConvexCovering.directionalInteriorFormulationsEquivalent
 ---
 
-# Directional Interior Formulations Equivalent
+# Directional illumination is equivalent to covering by interior translates
 
-Finite illumination and actual interior-translate covering counts agree.
+**Directional illumination is equivalent to covering by interior translates.** Let $n \ge 1$,
+let $K \subseteq \mathbb{R}^n$ be a convex body and let $q$ be a natural number. Then some $q$ unit
+vectors illuminate $K$ if and only if $K$ is covered by $q$ translates
+$v_1 + \operatorname{int} K, \dots, v_q + \operatorname{int} K$ of its interior, repetitions
+allowed.
 
 ## Depends on
 
-- [Covered By Interior Translates](../../../../MathlibExt/convex/covering/covered-by-interior-translates.md)
-- [Illuminated By Directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
-- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Covering by interior translates](../../../../MathlibExt/convex/covering/covered-by-interior-translates.md)
+- [Illumination by $q$ directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
 
 ## Sources
 

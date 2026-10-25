@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.placementGame
 ---
 
-# Placement Game
+# The placement game
 
-The placement game as a `SpragueGrundy.ImpartialGame` on positions `Finset α`, starting from
-the empty board: from a position where play has not ended, a move places one token on an empty
-cell; once `ended` holds there are no moves. The rank is the number of empty cells.
+**The placement game.** Let $\alpha$ be a finite set of cells and let $E$ be a predicate on
+subsets of $\alpha$, the condition under which play has ended. The placement game is the impartial
+game whose positions are the subsets $S \subseteq \alpha$ (the occupied cells), starting from the
+empty board $\emptyset$. If $E(S)$ holds there are no moves from $S$; otherwise the moves from $S$
+lead to the positions $S \cup \{c\}$ with $c \notin S$. The rank of $S$ is the number
+$|\alpha| - |S|$ of empty cells.
 
 ## Depends on
 
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
 
 ## Sources
 

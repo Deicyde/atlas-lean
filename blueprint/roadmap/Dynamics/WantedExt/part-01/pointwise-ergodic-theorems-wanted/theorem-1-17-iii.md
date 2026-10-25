@@ -6,16 +6,32 @@ statement: formalized
 lean: MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_iii
 ---
 
-# Theorem 1 17 iii
+# Maximal inequality for bilinear polynomial averages
 
-Statement of Theorem 1.17(iii) (Maximal ergodic theorem):
+**Maximal inequality for bilinear polynomial averages.** Let $(X, \mu)$ be a $\sigma$-finite
+measure space and let $T : X \to X$ be a measurable bijection with measurable inverse that
+preserves $\mu$. Let $P \in \mathbb{Z}[t]$ have degree at least $2$, and let
+$p_1, p_2 \in (1, \infty)$ and $p \in [0, \infty]$ satisfy $p_1^{-1} + p_2^{-1} = p^{-1}$ and
+$p^{-1} \le 1$. For a real number $N \ge 0$, functions $f, g : X \to \mathbb{C}$ and $x \in X$ let
 
-There exists a constant `C ≥ 0` such that for any `f ∈ Lᵖ₁(X)` and `g ∈ Lᵖ₂(X)`,
-`‖A T (N : ℕ+) X P f g‖_{Lᵖ(X;ℓ∞)} ≤ C ‖f‖_{Lᵖ₁(X)} ‖g‖_{Lᵖ₂(X)}`.
+$$A_N(f, g)(x) = \frac{1}{\lfloor N \rfloor}
+\sum_{n=1}^{\lfloor N \rfloor} f(T^n x)\, g(T^{P(n)} x),$$
+
+with $A_N(f, g)(x) = 0$ when $\lfloor N \rfloor = 0$, where $T^k$ for $k \in \mathbb{Z}$ is the
+$k$-th power of $T$ in the group of bijections of $X$. Then there is
+a constant $C \ge 0$, which may depend on $(X, \mu, T)$, $P$, $p_1$, $p_2$ and $p$, such that
+for all $f \in L^{p_1}(\mu)$ and $g \in L^{p_2}(\mu)$ with values in $\mathbb{C}$,
+
+$$\Big\| \sup_{N \in \mathbb{Z}_{>0}} |A_N(f, g)| \Big\|_{L^p(\mu)} \le
+C \, \|f\|_{L^{p_1}(\mu)} \, \|g\|_{L^{p_2}(\mu)},$$
+
+where the supremum is taken pointwise in $[0, \infty]$.
+
+This is Theorem 1.17(iii) of Krause, Mirek and Tao.
 
 ## Depends on
 
-- [A](a.md)
+- [Bilinear polynomial ergodic averages](a.md)
 
 ## Sources
 

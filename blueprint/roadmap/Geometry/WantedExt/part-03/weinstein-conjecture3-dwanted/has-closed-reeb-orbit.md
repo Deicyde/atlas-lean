@@ -6,9 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.HasClosedReebOrbit
 ---
 
-# Has Closed Reeb Orbit
+# Vector fields with a closed orbit
 
-A closed Reeb orbit: a nonconstant periodic integral curve.
+**Vector fields with a closed orbit.** Let $M$ be a smooth manifold (possibly with boundary or
+corners) and let $R$ assign to each point $x \in M$ a tangent vector $R(x) \in T_xM$. We say that
+$R$ has a closed orbit when there are a curve $\gamma : \mathbb{R} \to M$ and a real number
+$T > 0$ such that $\gamma$ is $T$-periodic, $\gamma$ is a smooth integral curve of $R$, and
+$\gamma$ is not constant.
+
+The main theorem applies this to a Reeb vector field, whence the name closed Reeb orbit.
 
 ## Depends on
 
@@ -16,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Integral Curve](is-integral-curve.md)
+- [Integral curves](is-integral-curve.md)
 
 ## Sources
 

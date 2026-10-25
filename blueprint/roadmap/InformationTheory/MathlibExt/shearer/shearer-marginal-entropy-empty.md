@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.InformationTheory.Shearer.shearerMarginalEntropy_empty
 ---
 
-# Shearer Marginal Entropy empty
+# Marginal entropy on the empty set vanishes
 
-The empty marginal has entropy `0`.
+**Marginal entropy on the empty set vanishes.** Let $\alpha$ be a finite set, $n$ a natural
+number, and $\mu$ a real-valued function on $\alpha^n$ with $\sum_{x \in \alpha^n} \mu(x) = 1$.
+Then the marginal entropy of $\mu$ on the empty set of coordinates is $0$.
 
 ## Depends on
 
-- [Shearer Marginal Entropy](shearer-marginal-entropy.md)
+- [Marginal entropy](shearer-marginal-entropy.md)
 
 ## Proof depends on
 
-- [Shearer Marginal](shearer-marginal.md)
-- [Shearer Marginal sum](shearer-marginal-sum.md)
+- [Marginal on a set of coordinates](shearer-marginal.md)
+- [Marginals preserve total mass](shearer-marginal-sum.md)
 
 ## Sources
 

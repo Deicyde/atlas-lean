@@ -7,13 +7,14 @@ proof: formalized
 lean: FalconerDistanceSet.distanceSet_singleton
 ---
 
-# Distance Set singleton
+# Distance set of a singleton
 
-A singleton determines exactly the distance zero.
+**Distance set of a singleton.** For every point $x \in \mathbb{R}^d$, the distance set of
+$\{x\}$ is $\{0\}$.
 
 ## Depends on
 
-- [Distance Set](distance-set.md)
+- [Euclidean distance set](distance-set.md)
 
 ## Sources
 

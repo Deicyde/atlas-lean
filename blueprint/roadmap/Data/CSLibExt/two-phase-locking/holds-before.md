@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Databases.HoldsBefore
 ---
 
-# Holds Before
+# Holding a lock
 
-Transaction `t` holds a lock on `x` covering mode `m` just before position `p`: it acquired a
-lock on `x` at an earlier position and has not released it since.
+**Holding a lock.** Let $s$ be a locked schedule, $t$ a transaction, $x$ a data item, $m$ a
+lock mode and $p$ a natural number. Transaction $t$ holds a lock on $x$ covering mode $m$ just
+before position $p$ of $s$ when there is a position $q < p$ at which $s$ has a lock request by $t$
+on $x$ in some mode $m'$ that covers $m$, and for no position $r$ with $q < r < p$ is the action
+of $s$ at $r$ a release of $x$ by $t$.
 
 ## Depends on
 
-- [Action](action.md)
-- [Lock Mode](lock-mode.md)
+- [Action of a locked schedule](action.md)
+- [Lock mode](lock-mode.md)
 
 ## Proof depends on
 
-- [Covers](covers.md)
+- [Lock mode coverage](covers.md)
 
 ## Sources
 

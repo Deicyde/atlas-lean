@@ -5,12 +5,12 @@ navigation: module
 
 # Weinstein Conjecture3 D
 
-- [One Form](one-form.md)
-- [Two Form](two-form.md)
-- [Smooth Vector Field](smooth-vector-field.md)
-- [Is Exterior Derivative](is-exterior-derivative.md)
-- [Is Contact Form3](is-contact-form3.md)
-- [Is Reeb Vector Field](is-reeb-vector-field.md)
-- [Is Integral Curve](is-integral-curve.md)
-- [Has Closed Reeb Orbit](has-closed-reeb-orbit.md)
-- [Weinstein conjecture dim three](weinstein-conjecture-dim-three.md)
+- [Smooth one-forms](one-form.md)
+- [Two-forms as fields of bilinear forms](two-form.md)
+- [Smooth vector fields](smooth-vector-field.md)
+- [Exterior derivative of a one-form](is-exterior-derivative.md)
+- [Contact condition for a one-form](is-contact-form3.md)
+- [Reeb vector fields](is-reeb-vector-field.md)
+- [Integral curves](is-integral-curve.md)
+- [Vector fields with a closed orbit](has-closed-reeb-orbit.md)
+- [Weinstein conjecture in dimension three (Taubes)](weinstein-conjecture-dim-three.md)

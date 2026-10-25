@@ -7,15 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.IsNuLambdaPascalMatrix.finite_support
 ---
 
-# Finite support
+# Finite support of a nu-lambda Pascal matrix
 
-Zero-extension clause `finite_support` of concept `jis_sem_48e0bb143520a73f6b828a27`
-(source statement `jis_445c3486a9ca32dba0e8a333`): any entry with an index at
-least `2 * n` is zero.
+**Finite support of a nu-lambda Pascal matrix.** Let $N$ and $n$ be natural numbers
+with $n > 0$, let $\nu, \lambda \in \mathbb{C}$ and $\beta_0, \dots, \beta_{N-1} \in \mathbb{C}$,
+and let $S = (S_{i,j})_{i,j \ge 0}$ be a $(\nu, \lambda)$-Pascal matrix of size $2n$ with
+coefficients $\beta$. Then $S_{i,j} = 0$ for all $i, j$ with $i \ge 2n$ or
+$j \ge 2n$.
 
 ## Depends on
 
-- [Is Nu Lambda Pascal Matrix](is-nu-lambda-pascal-matrix.md)
+- [Nu-lambda Pascal matrix with coefficients](is-nu-lambda-pascal-matrix.md)
 
 ## Sources
 

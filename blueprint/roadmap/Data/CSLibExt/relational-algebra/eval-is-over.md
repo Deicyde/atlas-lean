@@ -13,26 +13,26 @@ relation over its inferred schema.
 
 ## Depends on
 
-- [Expr](expr.md)
-- [Conforms](conforms.md)
+- [Relational algebra queries](expr.md)
+- [Databases conforming to a schema](conforms.md)
 - [Eval](eval-2.md)
-- [Schema](schema.md)
+- [Schema of a query](schema.md)
 - [Is Over](is-over-2.md)
 - [Tuple](tuple.md)
 
 ## Proof depends on
 
-- [Cond](cond.md)
+- [Selection conditions](cond.md)
 - [Attributes of a selection condition](attrs.md)
-- [Eval](eval.md)
-- [Compatible](compatible.md)
-- [Is Over](is-over.md)
-- [Merge](merge.md)
-- [Restrict](restrict.md)
-- [Join](join.md)
-- [Project](project.md)
-- [Rename](rename.md)
-- [Select](select.md)
+- [Truth value of a selection condition](eval.md)
+- [Compatible tuples](compatible.md)
+- [Tuple over a schema](is-over.md)
+- [Merge of two tuples](merge.md)
+- [Restriction of a tuple](restrict.md)
+- [Natural join](join.md)
+- [Projection of a relation](project.md)
+- [Renaming of attributes](rename.md)
+- [Selection](select.md)
 
 ## Sources
 

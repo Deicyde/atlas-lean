@@ -16,14 +16,14 @@ $tP \cap \mathbb{Z}^d$. Both counts are taken to be $0$ when the set counted is 
 
 ## Depends on
 
-- [Lattice Enumerator](../../../../Geometry/MathlibExt/lattice-point-enumerator/lattice-enumerator.md)
+- [Lattice-point count of a real dilate](../../../../Geometry/MathlibExt/lattice-point-enumerator/lattice-enumerator.md)
 - [Ehrhart function](ehrhart.md)
 
 ## Proof depends on
 
-- [Lattice Point Set](../../../../Geometry/MathlibExt/lattice-point-enumerator/lattice-point-set.md)
-- [Mem std Lattice iff](../../../../Geometry/MathlibExt/lattice-point-enumerator/mem-std-lattice-iff.md)
-- [Std Lattice](../../../../Geometry/MathlibExt/lattice-point-enumerator/std-lattice.md)
+- [Lattice points in a dilate](../../../../Geometry/MathlibExt/lattice-point-enumerator/lattice-point-set.md)
+- [Membership in the standard lattice](../../../../Geometry/MathlibExt/lattice-point-enumerator/mem-std-lattice-iff.md)
+- [The standard integer lattice](../../../../Geometry/MathlibExt/lattice-point-enumerator/std-lattice.md)
 - [Lattice points of a set](is-lattice-point.md)
 - [Dilate of a set](polytope-dilate.md)
 

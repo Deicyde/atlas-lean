@@ -5,8 +5,8 @@ navigation: module
 
 # Hadamard Circulant Core
 
-- [Is Hadamard Matrix](is-hadamard-matrix.md)
-- [Exists hadamard matrix with circulant core](exists-hadamard-matrix-with-circulant-co.md)
-- [Is Hadamard Matrix iff is Hadamard](is-hadamard-matrix-iff-is-hadamard.md)
-- [Has Circulant Core iff circulant](has-circulant-core-iff-circulant.md)
-- [Exists is Hadamard with circulant core](exists-is-hadamard-with-circulant-core.md)
+- [Hadamard matrix](is-hadamard-matrix.md)
+- [Hadamard matrices with circulant core: Paley and twin-prime cases](exists-hadamard-matrix-with-circulant-co.md)
+- [One-sided orthogonality characterizes Hadamard matrices](is-hadamard-matrix-iff-is-hadamard.md)
+- [A circulant core is a circulant submatrix](has-circulant-core-iff-circulant.md)
+- [Circulant-core Hadamard matrices with orthogonal rows and columns](exists-is-hadamard-with-circulant-core.md)

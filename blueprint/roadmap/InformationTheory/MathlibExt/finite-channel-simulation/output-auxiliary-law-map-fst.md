@@ -6,16 +6,18 @@ proof: formalized
 lean: InformationTheory.FiniteExtension.outputAuxiliaryLaw_map_fst
 ---
 
-# Output Auxiliary Law map fst
+# Output marginal of the output-auxiliary law
 
-The YS marginal has precisely the specified Y law.
+**Output marginal of the output-auxiliary law.** Let $q$ be a finite extension of a finite
+joint law $p$ of $(X, Y)$ by an auxiliary variable $S$. Then the marginal of $Y$ under the
+joint law of $(Y, S)$ in $q$ equals the law of $Y$ under $p$.
 
 ## Depends on
 
-- [Finite Extension](finite-extension.md)
-- [Output Auxiliary Law](output-auxiliary-law.md)
-- [Finite Joint Law](finite-joint-law.md)
-- [Output Law](output-law.md)
+- [Finite extension of a joint law](finite-extension.md)
+- [Output-auxiliary law](output-auxiliary-law.md)
+- [Finite joint law](finite-joint-law.md)
+- [Output law](output-law.md)
 
 ## Sources
 

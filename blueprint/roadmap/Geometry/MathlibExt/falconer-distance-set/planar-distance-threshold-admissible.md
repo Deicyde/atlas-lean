@@ -7,20 +7,21 @@ proof: formalized
 lean: FalconerDistanceSet.planarDistanceThreshold_admissible
 ---
 
-# Planar Distance Threshold admissible
+# The planar distance threshold is admissible
 
-The actual finite infimum belongs to the closed threshold family.
+**The planar distance threshold is admissible.** The planar distance threshold is an
+admissible planar threshold: it lies in $[0, 2]$ and has the planar threshold property.
 
 ## Depends on
 
-- [Admissible Planar Threshold](admissible-planar-threshold.md)
-- [Planar Distance Threshold](planar-distance-threshold.md)
+- [Admissible planar threshold](admissible-planar-threshold.md)
+- [Planar distance threshold](planar-distance-threshold.md)
 
 ## Proof depends on
 
-- [Planar Distance Threshold le two](planar-distance-threshold-le-two.md)
-- [Planar Threshold Property](planar-threshold-property.md)
-- [Planar Threshold Property planar Distance Threshold](planar-threshold-property-planar-distanc.md)
+- [The planar distance threshold is at most two](planar-distance-threshold-le-two.md)
+- [Planar Falconer threshold property](planar-threshold-property.md)
+- [The planar distance threshold is itself a threshold](planar-threshold-property-planar-distanc.md)
 
 ## Sources
 

@@ -19,9 +19,9 @@ MC-finite.
 
 ## Proof depends on
 
-- [Is Eventually Periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
-- [Of finite orbit](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-finite-orbit.md)
-- [Of periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-periodic.md)
+- [Eventually periodic sequences](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+- [Orbits in a finite set are eventually periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-finite-orbit.md)
+- [Periodic sequences are eventually periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-periodic.md)
 
 ## Sources
 

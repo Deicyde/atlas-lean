@@ -6,24 +6,24 @@ proof: formalized
 lean: MovingSofa.square_canPassZAt
 ---
 
-# Square can Pass ZAt
+# Z-corridor passage of the unit square
 
-The unit square passes the Z corridor at any nonnegative
-separation.
+**Z-corridor passage of the unit square.** For every real $d \ge 0$, the unit square passes
+the Z corridor with corner separation $d$.
 
 ## Depends on
 
-- [Can Pass ZAt](can-pass-zat.md)
-- [Unit Square](unit-square.md)
+- [Passing the Z corridor at a given separation](can-pass-zat.md)
+- [Unit square](unit-square.md)
 
 ## Proof depends on
 
-- [Motion](motion.md)
-- [Position](position.md)
-- [Corridor Z](corridor-z.md)
-- [Entrance Z](entrance-z.md)
-- [Exit Z](exit-z.md)
-- [Square Motion ZAt](square-motion-zat.md)
+- [Planar rigid motion](motion.md)
+- [Position under a rigid motion](position.md)
+- [Z-shaped corridor](corridor-z.md)
+- [Entrance arm of the Z corridor](entrance-z.md)
+- [Exit arm of the Z corridor](exit-z.md)
+- [The square's translation through the Z corridor](square-motion-zat.md)
 
 ## Sources
 

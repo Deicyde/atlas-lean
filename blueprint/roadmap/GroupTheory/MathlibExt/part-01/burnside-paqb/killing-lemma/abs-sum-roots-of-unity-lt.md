@@ -7,9 +7,11 @@ proof: formalized
 lean: BurnsidePaqb.abs_sum_roots_of_unity_lt
 ---
 
-# Abs sum roots of unity lt
+# Strict triangle inequality for unit complex numbers
 
-Strict triangle inequality for a sum of unit-modulus numbers, not all equal.
+**Strict triangle inequality for unit complex numbers.** Let $\mu_1, \dots, \mu_n$ be complex
+numbers with $|\mu_i| = 1$ for every $i$, not all equal. Then
+$\left|\sum_{i=1}^{n} \mu_i\right| < n$.
 
 ## Depends on
 
@@ -17,10 +19,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eq of mul conj eq one](eq-of-mul-conj-eq-one.md)
-- [Norm mul conj eq one](norm-mul-conj-eq-one.md)
-- [Re lt one of ne one](re-lt-one-of-ne-one.md)
-- [Re mul conj](re-mul-conj.md)
+- [Cancelling a unit-modulus conjugate](eq-of-mul-conj-eq-one.md)
+- [Product of a unit complex number with a conjugate unit](norm-mul-conj-eq-one.md)
+- [Real part of a unit complex number other than $1$](re-lt-one-of-ne-one.md)
+- [Real part of a product with a conjugate](re-mul-conj.md)
 
 ## Sources
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.ConvexPolytope.IsFullDim
 ---
 
-# Is Full Dim
+# Full-dimensional convex polytope
 
-`P` is **full-dimensional** if `dim P = n`.
+**Full-dimensional convex polytope.** A convex polytope $P \subseteq \mathbb{R}^n$ is
+full-dimensional if its dimension equals $n$.
 
 ## Depends on
 
-- [Convex Polytope](convex-polytope.md)
+- [Convex polytope](convex-polytope.md)
 
 ## Proof depends on
 
-- [Dim](dim.md)
+- [Dimension of a convex polytope](dim.md)
 
 ## Sources
 

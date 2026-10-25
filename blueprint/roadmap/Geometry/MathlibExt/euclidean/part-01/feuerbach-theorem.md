@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.Feuerbach_theorem
 ---
 
-# Feuerbach Theorem
+# Feuerbach's theorem
 
-Feuerbach's theorem (Feuerbach, 1822; statement `feuerbach-s1` from
-https://en.wikipedia.org/wiki/Feuerbach_point): the incircle and nine-point
-circle of a non-equilateral triangle are internally tangent to each other at
-the Feuerbach point of the triangle; more generally, the nine-point circle is
-tangent to the three excircles of the triangle as well as its incircle.
+**Feuerbach's theorem.** Let $T$ be a triangle in a two-dimensional Euclidean affine space,
+with incircle $\omega$, nine-point circle $N$, and excircle $\omega_i$ opposite its $i$-th vertex
+for each $i$. If $T$ is not equilateral, then there is a point $F$ at which $\omega$ is internally
+tangent to $N$ (that is, $F$ lies on both circles and the center of $\omega$ lies on the segment
+from the center of $N$ to $F$), and $F$ is the only common point of $\omega$ and $N$. For every
+triangle $T$ and every $i$, the nine-point circle $N$ is externally tangent to $\omega_i$.
 
 ## Depends on
 
@@ -22,3 +23,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.FeuerbachTheorem](../../../../../sources/v2/MathlibExt.md)
+- K. W. Feuerbach, 1822; https://en.wikipedia.org/wiki/Feuerbach_point

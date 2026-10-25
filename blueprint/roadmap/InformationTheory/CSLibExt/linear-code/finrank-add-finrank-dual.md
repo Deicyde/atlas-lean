@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.CodingTheory.LinearCode.finrank_add_finrank_dual
 ---
 
-# Finrank add finrank dual
+# Dimension of the dual code
 
-The dimensions of a code and its dual add up to the length.
+**Dimension of the dual code.** Let $F$ be a field and $\iota$ a finite set. For every linear
+code $C \subseteq F^\iota$, $\dim C + \dim C^\perp = |\iota|$, where $C^\perp$ is the dual code.
 
 ## Depends on
 
-- [Linear Code](linear-code.md)
-- [Dual](dual.md)
+- [Linear code](linear-code.md)
+- [Dual code](dual.md)
 
 ## Proof depends on
 

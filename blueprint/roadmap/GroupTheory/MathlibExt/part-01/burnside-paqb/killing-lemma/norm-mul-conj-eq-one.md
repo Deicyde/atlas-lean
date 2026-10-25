@@ -7,9 +7,10 @@ proof: formalized
 lean: BurnsidePaqb.norm_mul_conj_eq_one
 ---
 
-# Norm mul conj eq one
+# Product of a unit complex number with a conjugate unit
 
-A product of unit-modulus numbers with a conjugate has modulus 1.
+**Product of a unit complex number with a conjugate unit.** For complex numbers $a$ and $b$
+with $|a| = |b| = 1$, we have $|a \bar{b}| = 1$.
 
 ## Depends on
 

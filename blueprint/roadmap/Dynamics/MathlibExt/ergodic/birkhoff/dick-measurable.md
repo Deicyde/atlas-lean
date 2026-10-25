@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.Dynamics.Ergodic.BirkhoffWanted.dick_measurable
 ---
 
-# Dick measurable
+# Measurability of the maximal divergence set
 
-The maximal divergence set is measurable.
+**Measurability of the maximal divergence set.** Let $\mu$ be a measure on a measurable space
+$\alpha$, let $T : \alpha \to \alpha$ preserve $\mu$, and let $g : \alpha \to \mathbb{R}$ be
+measurable. Then for every real number $c$, the maximal divergence set of $T$, $g$ and $c$ is a
+measurable set.
 
 ## Depends on
 
-- [Dick Set](dick-set.md)
+- [Maximal divergence set](dick-set.md)
 
 ## Sources
 

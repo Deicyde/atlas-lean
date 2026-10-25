@@ -6,10 +6,13 @@ statement: formalized
 lean: Group.Generators.HasPolynomialGrowth
 ---
 
-# Has Polynomial Growth
+# Polynomial growth
 
-`P` has *polynomial growth* if its growth function is bounded by a polynomial: there exist
-`C d : ℕ` such that the ball of radius `n` has at most `C * (n + 1) ^ d` elements for every `n`.
+**Polynomial growth.** Let $P$ be a generating family of a group $G$, with growth function
+$\gamma_P$. Then $P$ has polynomial growth if, for every natural number $n$, the ball of radius
+$n$ (the set of elements of $G$ of word length at most $n$ with respect to $P$) is finite, and
+there are natural numbers $C$ and $d$ such that $\gamma_P(n) \le C (n + 1)^d$ for every
+natural number $n$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Growth](growth.md)
+- [Growth function of a generating family](growth.md)
 
 ## Sources
 

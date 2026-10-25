@@ -7,10 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.szele_cyclic_number_criterion
 ---
 
-# Szele Cyclic Number
+# Szele's criterion for cyclic numbers
 
-A positive natural number `n` is cyclic, meaning every group of order `n` is
-cyclic, if and only if `n` is relatively prime to its Euler totient.
+**Szele's criterion for cyclic numbers.** Let $n$ be a positive integer. Every group of order $n$
+is cyclic if and only if $n$ is relatively prime to $\varphi(n)$, that is,
+$\gcd(n, \varphi(n)) = 1$, where $\varphi$ is Euler's totient function.
 
 ## Depends on
 

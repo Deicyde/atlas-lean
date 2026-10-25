@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.princessRosesHelper_equiv_nimHeap_one_iff_of_lt_add
 ---
 
-# Princess Roses Helper equiv nim Heap one iff of lt add
+# P&R Helper positions of Sprague–Grundy value 1 on regions U and R
 
-On `U ∪ R` (that is, `z < x + y`), a P&R Helper position `[x, y, z]` has
-Sprague–Grundy value `1` if and only if it is `[1, 1, 1]`, `[x, x, x]` with `x ≡ 3 (mod 4)`,
-`[x, x, x + 1]` with `x ≡ 1 (mod 4)` and `x ≠ 1`, `[x, x + 1, x + 1]` with `x ≡ 0 (mod 4)` and
-`x ≠ 0`, or `y + z - x ≡ 1 (mod 4)` with `z > x + 1`.
+**P&R Helper positions of Sprague–Grundy value 1 on regions U and R.** For natural numbers
+$x \le y \le z$ with $z < x + y$ (the union of the regions $U$ and $R$), the P&R Helper game
+started at $[x, y, z]$ is equivalent to the Nim heap of size $1$ (that is, has Sprague–Grundy
+value $1$) if and only if one of the following holds: $(x, y, z) = (1, 1, 1)$; or $y = x$,
+$z = x$ and $x \equiv 3 \pmod 4$; or $y = x$, $z = x + 1$, $x \equiv 1 \pmod 4$ and $x \ne 1$;
+or $y = x + 1$, $z = x + 1$, $x \equiv 0 \pmod 4$ and $x \ne 0$; or $y + z - x \equiv 1 \pmod 4$
+and $z > x + 1$.
 
 ## Depends on
 
-- [Equiv](../../MathlibExt/sprague-grundy/equiv.md)
-- [Nim Heap](../../MathlibExt/sprague-grundy/nim-heap.md)
-- [Princess Roses Helper](princess-roses-helper.md)
+- [Equivalence of impartial games](../../MathlibExt/sprague-grundy/equiv.md)
+- [Nim heap](../../MathlibExt/sprague-grundy/nim-heap.md)
+- [The P&R Helper game](princess-roses-helper.md)
 
 ## Sources
 

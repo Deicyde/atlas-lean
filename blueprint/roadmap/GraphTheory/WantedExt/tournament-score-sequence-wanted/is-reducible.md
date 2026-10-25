@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.GraphTheory.TournamentScoreSequenceWanted.IsReducible
 ---
 
-# Is Reducible
+# Reducible tournament
 
-A tournament is reducible if some nonempty proper
+**Reducible tournament.** A tournament is reducible if some nonempty proper
 set of players loses all games against the complement.
 
 ## Depends on

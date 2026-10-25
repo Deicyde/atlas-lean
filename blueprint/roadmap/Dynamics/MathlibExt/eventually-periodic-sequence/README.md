@@ -5,9 +5,9 @@ navigation: module
 
 # Eventually Periodic Sequence
 
-- [Is Eventually Periodic](is-eventually-periodic.md)
-- [Of witness](of-witness.md)
-- [Witness spec](witness-spec.md)
-- [Of periodic](of-periodic.md)
-- [Is Ultimately Periodic](is-ultimately-periodic.md)
-- [Of finite orbit](of-finite-orbit.md)
+- [Eventually periodic sequences](is-eventually-periodic.md)
+- [Explicit period and preperiod give eventual periodicity](of-witness.md)
+- [Period and preperiod of an eventually periodic sequence](witness-spec.md)
+- [Periodic sequences are eventually periodic](of-periodic.md)
+- [Ultimately periodic sequences](is-ultimately-periodic.md)
+- [Orbits in a finite set are eventually periodic](of-finite-orbit.md)

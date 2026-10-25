@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.hasNSProperty_const
 ---
 
-# Has NSProperty const
+# Constant functions have the NS property
 
-Constant functions have the NS property.
+**Constant functions have the NS property.** For every natural number $c$, the constant
+function $\mathbb{N} \to \mathbb{N}$ with value $c$ has the NS property.
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
+- [NS property](has-nsproperty.md)
 
 ## Sources
 

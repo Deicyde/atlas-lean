@@ -14,7 +14,7 @@ is not a P-position.
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [Slow$A$-Nim](slow-anim-game.md)
 
 ## Sources

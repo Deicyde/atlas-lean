@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.Dickson.PGL
 ---
 
-# PGL
+# Projective general linear group of degree two
 
-The projective general linear group `PGL₂(K p)`.
+**Projective general linear group of degree two.** For a prime $p$, $\mathrm{PGL}_2(K_p)$ is
+the quotient of the group $\mathrm{GL}_2(K_p)$ of invertible $2 \times 2$ matrices over the
+algebraic closure $K_p$ of $\mathbb{F}_p$ by its center.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [K](k.md)
+- [Algebraic closure of the field with p elements](k.md)
 
 ## Sources
 

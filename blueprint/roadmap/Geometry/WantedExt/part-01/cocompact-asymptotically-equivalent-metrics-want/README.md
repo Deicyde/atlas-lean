@@ -5,6 +5,6 @@ navigation: module
 
 # Cocompact Asymptotically Equivalent Metrics
 
-- [OWR1319022 Data](owr1319022-data.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Cocompact asymptotically equivalent length-space pair](owr1319022-data.md)
+- [Bounded-difference conjecture for cocompact asymptotically equivalent metrics](conjecture.md)
+- [Negative answer to the cocompact asymptotic-metrics question](conjecture-refuted.md)

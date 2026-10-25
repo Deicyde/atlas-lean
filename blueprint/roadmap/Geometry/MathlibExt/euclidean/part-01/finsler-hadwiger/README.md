@@ -5,5 +5,5 @@ navigation: module
 
 # Finsler Hadwiger
 
-- [Finsler hadwiger](finsler-hadwiger.md)
-- [Finsler hadwiger of ne](finsler-hadwiger-of-ne.md)
+- [Finsler–Hadwiger theorem](finsler-hadwiger.md)
+- [Finsler–Hadwiger theorem for distinct squares](finsler-hadwiger-of-ne.md)

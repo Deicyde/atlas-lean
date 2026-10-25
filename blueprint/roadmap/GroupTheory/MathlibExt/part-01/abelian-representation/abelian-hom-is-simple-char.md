@@ -7,14 +7,17 @@ proof: formalized
 lean: MathlibExt.GroupTheory.AbelianRepresentationWanted.abelian_hom_is_simple_char
 ---
 
-# Abelian hom is simple char
+# Every homomorphism of a finite abelian group to the complex numbers is a simple character
 
-Every monoid homomorphism to `ℂ` is the character of a simple complex
-representation of a finite abelian group.
+**Every homomorphism of a finite abelian group to the complex numbers is a simple character.**
+Let $G$ be a finite abelian group and let $\varphi : G \to \mathbb{C}$ be a monoid homomorphism.
+Then there is a simple finite-dimensional complex representation $V$ of $G$ whose character
+equals $\varphi$.
 
-Proof: Let `g` act on the one-dimensional space `ℂ` by the scalar `φ g`; its trace is `φ g`.
-One-dimensional modules are simple. Wikipedia, “Representation theory of finite groups”, notes that
-the irreducible characters of an abelian group are its homomorphisms to `ℂˣ`.
+Proof: Let each $g \in G$ act on the one-dimensional space $\mathbb{C}$ by the scalar
+$\varphi(g)$; its trace is $\varphi(g)$. One-dimensional modules are simple. Wikipedia,
+“Representation theory of finite groups”, notes that the irreducible characters of an abelian
+group are its homomorphisms to $\mathbb{C}^\times$.
 
 ## Depends on
 

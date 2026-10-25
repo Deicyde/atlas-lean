@@ -6,24 +6,27 @@ proof: formalized
 lean: MetaMathlibExt.dominationTransferMatrix_apply_allCoveredSignature
 ---
 
-# Domination Transfer Matrix apply all Covered Signature
+# Transfer matrix column of the all-covered signature
 
-The transfer matrix entry `A τ σ_•` is `z^{occ(τ)}` exactly when every covered vertex of
-`τ` has an occupied neighbour in the row (the initial-value step in the proof of Theorem 7), and
-`0` otherwise.
+**Transfer matrix column of the all-covered signature.** Let $R$ be a simple graph on a
+finite vertex set (the row), let $A$ be its domination transfer matrix, with entries in
+$\mathbb{Z}[z]$, and let $\sigma_\bullet$ be its all-covered signature. For every signature $\tau$
+of $R$, the entry $A_{\tau\sigma_\bullet}$ equals $z^{\operatorname{occ}(\tau)}$, where
+$\operatorname{occ}(\tau)$ is the number of occupied vertices of $\tau$, if every covered vertex of
+$\tau$ is adjacent in $R$ to an occupied vertex of $\tau$, and equals $0$ otherwise.
 
 ## Depends on
 
-- [Domination Signature](domination-signature.md)
+- [Signatures of a row graph](domination-signature.md)
 - [Domination State](domination-state.md)
-- [Is Domination Signature](is-domination-signature.md)
-- [All Covered Signature](all-covered-signature.md)
-- [Domination Transfer Matrix](domination-transfer-matrix.md)
+- [Domination signature](is-domination-signature.md)
+- [All-covered signature](all-covered-signature.md)
+- [Domination transfer matrix](domination-transfer-matrix.md)
 - [Occupied Count](occupied-count.md)
 
 ## Proof depends on
 
-- [Domination Compatible](domination-compatible.md)
+- [Compatible row signatures](domination-compatible.md)
 
 ## Sources
 

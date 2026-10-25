@@ -5,6 +5,6 @@ navigation: module
 
 # Hopf Rinow
 
-- [Is Geodesic](is-geodesic.md)
-- [Is Geodesically Complete](is-geodesically-complete.md)
-- [Hopf rinow](hopf-rinow.md)
+- [Constant-speed geodesic in a metric space](is-geodesic.md)
+- [Geodesically complete metric space](is-geodesically-complete.md)
+- [Hopf–Rinow theorem](hopf-rinow.md)

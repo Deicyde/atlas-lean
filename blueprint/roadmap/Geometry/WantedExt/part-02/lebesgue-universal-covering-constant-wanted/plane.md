@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.Plane
 ---
 
-# Plane
+# The Euclidean plane of Lebesgue's covering problem
 
-The planar ambient space in the source.
+**The Euclidean plane of Lebesgue's covering problem.** The ambient space is the Euclidean
+plane $\mathbb{R}^2$, with the Euclidean distance.
 
 ## Depends on
 

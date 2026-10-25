@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.CodingTheory.LinearCode.syndrome_add_of_mem
 ---
 
-# Syndrome add of mem
+# The syndrome depends only on the error
 
-The syndrome of a received word depends only on the error.
+**The syndrome depends only on the error.** Let $F$ be a field, $\iota$ a finite set and
+$H$ a parity-check matrix over $F$ with columns indexed by $\iota$. If $c \in F^\iota$ is a
+codeword of the code with parity-check matrix $H$ and $e \in F^\iota$ is any word, then the
+received word $c + e$ has the same syndrome as $e$, that is, $H(c + e) = He$.
 
 ## Depends on
 
-- [Linear Code](linear-code.md)
-- [Of Parity Check](of-parity-check.md)
+- [Linear code](linear-code.md)
+- [Code with a given parity-check matrix](of-parity-check.md)
 - [Syndrome](syndrome.md)
 
 ## Sources

@@ -7,20 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.CameronOrderGroupWanted.orderAutSubgroup_isClosed_and_highlyHomogeneous
 ---
 
-# Cameron Order Group
+# The order-automorphism group of the rationals is closed and highly homogeneous
 
-The order-automorphism group of `ℚ` is closed in the pointwise-convergence topology and
-highly homogeneous (Cameron group A).
-
-Interpretation boundary: only Cameron group A (the order-automorphism group of `ℚ`) is
-asserted here — not the exhaustive classification, uniqueness, or conjugacy of the
-Cameron groups.
+**The order-automorphism group of the rationals is closed and highly homogeneous.** The group of
+order automorphisms of $\mathbb{Q}$, that is, of the permutations $\sigma$ of $\mathbb{Q}$ such
+that $a < b$ if and only if $\sigma(a) < \sigma(b)$ for all $a, b \in \mathbb{Q}$, is closed in
+the topology of pointwise convergence on the permutations of $\mathbb{Q}$, where $\mathbb{Q}$
+carries the discrete topology, and it is highly homogeneous: for every natural number $k$ it has
+a single orbit on the $k$-element subsets of $\mathbb{Q}$.
 
 ## Depends on
 
-- [Pointwise Topology](pointwise-topology.md)
-- [Is Highly Homogeneous](highly-homogeneous/is-highly-homogeneous.md)
-- [Order](order-aut-subgroup.md)
+- [Pointwise convergence topology on permutations](pointwise-topology.md)
+- [Highly homogeneous permutation groups](highly-homogeneous/is-highly-homogeneous.md)
+- [Order automorphism group](order-aut-subgroup.md)
 
 ## Sources
 

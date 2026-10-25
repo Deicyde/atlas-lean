@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.SpherePackingDensityFourWanted.Space
 ---
 
-# Space
+# Four-dimensional Euclidean space
 
-Source: CE2003, the ambient Euclidean space `ℝ⁴`.
+**Four-dimensional Euclidean space.** The ambient space is $\mathbb{R}^4$, the space of real
+$4$-tuples with the standard Euclidean inner product and the distance it induces.
 
 ## Depends on
 
@@ -17,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SpherePackingDensityFour](../../../../sources/v2/MathlibExt.md)
+- CE2003, the ambient Euclidean space `ℝ⁴`.

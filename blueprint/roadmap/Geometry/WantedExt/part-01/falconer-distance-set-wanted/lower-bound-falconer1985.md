@@ -6,9 +6,13 @@ statement: formalized
 lean: FalconerDistanceSetWanted.lowerBound_Falconer1985
 ---
 
-# Lower Bound Falconer1985
+# Statement of the lower bound $1$ for the planar distance threshold
 
-The planar threshold is at least one.
+**Statement of the lower bound $1$ for the planar distance threshold.** This is the
+proposition that the planar distance threshold, the infimum of all $s \in [0, 2]$ such that
+every compact set $E \subseteq \mathbb{R}^2$ of Hausdorff dimension strictly greater than $s$
+has a distance set $\{\|x - y\| : x, y \in E\}$ of positive one-dimensional Lebesgue measure,
+is at least $1$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Planar Distance Threshold](../../../MathlibExt/falconer-distance-set/planar-distance-threshold.md)
+- [Planar distance threshold](../../../MathlibExt/falconer-distance-set/planar-distance-threshold.md)
 
 ## Sources
 

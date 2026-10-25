@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.GraphTheory.ErdosProblem24Wanted.conjecture
 ---
 
-# Conjecture
+# Pentagons in triangle-free graphs (Erdős Problem 24)
 
-Triangle-free graphs on `5n` vertices have at most `n^5` copies of `C₅`.
+**Pentagons in triangle-free graphs (Erdős Problem 24).** For every natural number $n$, every
+graph on $5n$ vertices with no three pairwise adjacent vertices has at most $n^5$ subgraphs
+isomorphic to the $5$-cycle $C_5$.
 
 ## Depends on
 

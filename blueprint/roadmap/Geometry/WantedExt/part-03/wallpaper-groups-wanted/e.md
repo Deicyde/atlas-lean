@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Geometry.WallpaperGroupsWanted.Geometry.WallpaperGroupsProblem.E
 ---
 
-# E
+# Euclidean space for wallpaper groups
 
-The Euclidean model space `ℝᵈ`.
+**Euclidean space for wallpaper groups.** For a natural number $d$, the $d$-dimensional real
+Euclidean space $\mathbb{R}^d$ with its standard inner product.
 
 ## Depends on
 

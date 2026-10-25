@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.nimPassIndicator_zero
 ---
 
-# Nim Pass Indicator zero
+# The pass is unavailable from the empty position
 
-With positive thresholds the pass is not available from the empty position.
+**The pass is unavailable from the empty position.** Let $s \in \mathbb{N}$ and
+$m \in \mathbb{N}^s$ with $m_i > 0$ for every $i < s$. Then the pass indicator of $m$ takes the
+value $0$ at the zero tuple $(0, \dots, 0)$.
 
 ## Depends on
 
-- [Nim Pass Indicator](nim-pass-indicator.md)
+- [Pass indicator of Nim with a restricted pass](nim-pass-indicator.md)
 
 ## Sources
 

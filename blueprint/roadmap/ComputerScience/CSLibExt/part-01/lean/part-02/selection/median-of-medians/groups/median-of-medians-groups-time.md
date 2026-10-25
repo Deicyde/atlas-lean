@@ -19,7 +19,7 @@ order, computing the group medians of $xs$ takes at most $2n$ comparisons.
 
 - [Insertion sort with comparison cost](../../../sort/insertion-cost/insertion-sort.md)
 - [Comparison bound for insertion sort](../../../sort/insertion-cost/insertion-sort-time.md)
-- [To Chunks](../../../../../../../../Data/MathlibExt/list/length-le-of-mem-to-chunks.md)
+- [Chunks of a list have length at most the chunk size](../../../../../../../../Data/MathlibExt/list/length-le-of-mem-to-chunks.md)
 
 ## Sources
 

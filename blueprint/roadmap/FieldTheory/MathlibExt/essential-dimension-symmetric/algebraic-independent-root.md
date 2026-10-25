@@ -6,18 +6,20 @@ proof: formalized
 lean: MathlibExt.FieldTheory.EssentialDimensionSymmetric.algebraicIndependent_root
 ---
 
-# Algebraic Independent root
+# The roots are algebraically independent
 
-The roots are algebraically independent in the function field.
+**The roots are algebraically independent.** For every natural number $n$, the roots
+$x_1, \dots, x_n$ are algebraically independent over $\mathbb{C}$ in the function field
+$\mathbb{C}(x_1, \dots, x_n)$.
 
 ## Depends on
 
-- [Root](root.md)
-- [Roots Field](roots-field.md)
+- [The roots $x_i$](root.md)
+- [The function field $\mathbb{C}(x_1, \dots, x_n)$](roots-field.md)
 
 ## Proof depends on
 
-- [Algebraic Independent map](algebraic-independent-map.md)
+- [Injective algebra maps preserve algebraic independence](algebraic-independent-map.md)
 
 ## Sources
 

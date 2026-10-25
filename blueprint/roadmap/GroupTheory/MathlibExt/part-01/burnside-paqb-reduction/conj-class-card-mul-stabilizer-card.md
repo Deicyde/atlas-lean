@@ -7,13 +7,15 @@ proof: formalized
 lean: BurnsidePaqb.conjClass_card_mul_stabilizer_card
 ---
 
-# Conj Class card mul stabilizer card
+# Orbit–stabilizer for a conjugacy class
 
-Orbit-stabilizer for the class: class card times stabilizer card is group card.
+**Orbit–stabilizer for a conjugacy class.** For every element $g$ of a finite group $G$, the
+size of the conjugacy class of $g$ times the order of the stabilizer of $g$ under the action of
+$G$ on itself by conjugation, $x \cdot y = x y x^{-1}$, equals the order of $G$.
 
 ## Depends on
 
-- [Conj Class](conj-class.md)
+- [Conjugacy class](conj-class.md)
 
 ## Sources
 

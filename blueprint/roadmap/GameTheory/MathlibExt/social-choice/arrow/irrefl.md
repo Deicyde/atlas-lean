@@ -6,16 +6,16 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.StrictTotalOrder.irrefl
 ---
 
-# Irrefl
+# Irreflexivity of strict preference (Arrow's theorem)
 
-Compatibility alias for the former `ArrowWanted.StrictTotalOrder.irrefl` projection.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.irrefl` directly.
+**Irreflexivity of strict preference (Arrow's theorem).** Let $T$ be a strict total order on a
+type $\alpha$, and write $a \lt _T b$ for its relation. Then for every $a \in \alpha$, $a \lt _T a$ does
+not hold.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
-- [Lt](lt.md)
+- [Strict preference orders for Arrow's theorem](strict-total-order.md)
+- [Preference relation of a strict total order (Arrow's theorem)](lt.md)
 
 ## Proof depends on
 

@@ -6,11 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.ErdosProblem652Wanted.HasSmallKth
 ---
 
-# Has Small Kth
+# Many points with few distinct distances
 
-The `k`-th order statistic bound from [EP-652]: some `n`-point planar
-set has `k`-th smallest `R`-value below `bound * √n`, characterized by at
-least `k` points satisfying the bound.
+**Many points with few distinct distances.** For natural numbers $n$, $k$ and a real number
+$c$, the property that some set $X$ of exactly $n$ points in the Euclidean plane contains at
+least $k$ points $x$ such that the number of distinct distances from $x$ to the other points of
+$X$ is less than $c\sqrt{n}$.
+
+For $1 \le k \le n$ this says that, with the points of $X$ ordered by this number, the $k$-th
+smallest value is less than $c\sqrt{n}$.
 
 ## Depends on
 
@@ -19,7 +23,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Plane](plane.md)
-- [Count Small Points](count-small-points.md)
+- [Points with few distinct distances](count-small-points.md)
 
 ## Sources
 

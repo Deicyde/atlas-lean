@@ -4,5 +4,5 @@ navigation: module
 
 # Einsiedler Katok Lindenstrauss
 
-- [Dist To Nearest Int](dist-to-nearest-int.md)
-- [Einsiedler katok lindenstrauss](einsiedler-katok-lindenstrauss.md)
+- [Distance to the nearest integer](dist-to-nearest-int.md)
+- [Einsiedler–Katok–Lindenstrauss theorem](einsiedler-katok-lindenstrauss.md)

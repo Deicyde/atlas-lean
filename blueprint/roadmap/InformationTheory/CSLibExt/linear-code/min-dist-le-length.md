@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.CodingTheory.LinearCode.minDist_le_length
 ---
 
-# Min Dist le length
+# Minimum distance is at most the length
 
-A nonzero linear code has finite minimum distance, at most its length.
+**Minimum distance is at most the length.** If $C$ is a linear code of length $n$ over a
+field and $C$ is not the zero subspace, then the minimum distance of $C$ is finite and at most
+$n$.
 
 ## Depends on
 
-- [Linear Code](linear-code.md)
-- [Min Dist](min-dist.md)
+- [Linear code](linear-code.md)
+- [Minimum distance](min-dist.md)
 
 ## Sources
 

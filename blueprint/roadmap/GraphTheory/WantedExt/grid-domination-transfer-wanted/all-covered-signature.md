@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.allCoveredSignature
 ---
 
-# All Covered Signature
+# All-covered signature
 
-The signature that is covered everywhere, `σ_• = (•,…,•)` in gray (Mertens, Theorem 7).
+**All-covered signature.** For a graph $R$ (the row), the all-covered signature
+$\sigma_\bullet$ of $R$ is the signature that gives every vertex of $R$ the state covered; it
+is a signature because it has no uncovered vertex.
 
 ## Depends on
 
-- [Domination Signature](domination-signature.md)
+- [Signatures of a row graph](domination-signature.md)
 
 ## Proof depends on
 
 - [Domination State](domination-state.md)
-- [Is Domination Signature](is-domination-signature.md)
+- [Domination signature](is-domination-signature.md)
 
 ## Sources
 

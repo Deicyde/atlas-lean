@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.CodingTheory.LinearCode.minDist_le_of_ne_bot
 ---
 
-# Min Dist le of ne bot
+# Singleton bound for linear codes
 
-The **Singleton bound** in its textbook form: a nonzero linear code of length `n` and
-dimension `k` has minimum distance at most `n - k + 1`.
+**Singleton bound for linear codes.** Let $F$ be a finite field and $C$ a linear code of
+length $n$ and dimension $k$ over $F$ that is not the zero subspace. Then the minimum distance
+of $C$ is at most $n - k + 1$.
 
 ## Depends on
 
-- [Linear Code](linear-code.md)
-- [Min Dist](min-dist.md)
+- [Linear code](linear-code.md)
+- [Minimum distance](min-dist.md)
 
 ## Proof depends on
 
-- [Finrank add le of le min Dist](finrank-add-le-of-le-min-dist.md)
-- [Min Dist le length](min-dist-le-length.md)
+- [Singleton bound for linear codes, dimension form](finrank-add-le-of-le-min-dist.md)
+- [Minimum distance is at most the length](min-dist-le-length.md)
 
 ## Sources
 

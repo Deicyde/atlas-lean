@@ -14,15 +14,15 @@ single Nim heap.
 
 ## Depends on
 
-- [Equiv](equiv.md)
-- [Impartial Game](impartial-game.md)
-- [Nim Heap](nim-heap.md)
+- [Equivalence of impartial games](equiv.md)
+- [Impartial game](impartial-game.md)
+- [Nim heap](nim-heap.md)
 
 ## Proof depends on
 
-- [Is P](is-p.md)
-- [Game Sum](game-sum.md)
-- [Is P iff](is-p-iff.md)
+- [P-positions](is-p.md)
+- [Sum of impartial games](game-sum.md)
+- [Recursive characterization of P-positions](is-p-iff.md)
 
 ## Sources
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: Matrix.SignConditionNumber.one_le_conditionNumber
 ---
 
-# One le condition Number
+# Condition numbers are at least one
 
-Descending, nonnegative singular values make every defined ratio at least one.
+**Condition numbers are at least one.** For every natural number $n$ and every real
+$n \times n$ matrix $A$, the condition number of $A$ is at least $1$.
 
 ## Depends on
 
-- [Condition Number](condition-number.md)
+- [Condition number of a square real matrix](condition-number.md)
 
 ## Sources
 

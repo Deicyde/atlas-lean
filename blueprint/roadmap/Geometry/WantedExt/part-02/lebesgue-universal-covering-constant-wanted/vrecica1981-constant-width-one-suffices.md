@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.vrecica1981ConstantWidthOneSuffices
 ---
 
-# Vrecica1981 Constant Width One Suffices
+# Covering sets of constant width one suffices (statement)
 
-Covering every constant-width-one set suffices for a nonempty convex cover.
+**Covering sets of constant width one suffices (statement).** The proposition that every
+nonempty convex subset $\Omega$ of the Euclidean plane that contains a congruent copy of every
+nonempty compact convex planar set of constant width $1$ is a universal convex cover, that is,
+contains a congruent copy of every nonempty convex planar set of diameter $1$.
 
 ## Depends on
 
@@ -16,10 +19,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Covers Congruent Copy](covers-congruent-copy.md)
-- [Is Constant Width One](is-constant-width-one.md)
-- [Is Universal Convex Cover](is-universal-convex-cover.md)
-- [Plane](plane.md)
+- [Covering a congruent copy](covers-congruent-copy.md)
+- [Sets of constant width one](is-constant-width-one.md)
+- [Universal convex covers](is-universal-convex-cover.md)
+- [The Euclidean plane of Lebesgue's covering problem](plane.md)
 
 ## Sources
 

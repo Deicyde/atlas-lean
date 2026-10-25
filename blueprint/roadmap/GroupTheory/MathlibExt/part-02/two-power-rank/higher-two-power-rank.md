@@ -6,10 +6,12 @@ statement: formalized
 lean: AbelianGroup.higherTwoPowerRank
 ---
 
-# Higher Two Power Rank
+# The $2^j$-rank of a finite abelian group
 
-For positive `j`, the `2^j`-rank of a finite abelian group `A` is the
-`F₂`-dimension of `2^(j-1) A / 2^j A`.
+**The $2^j$-rank of a finite abelian group.** Let $A$ be a finite abelian group, written
+additively, and let $j \ge 1$ be an integer. Writing $2^kA$ for the subgroup
+$\{2^k a : a \in A\}$, the $2^j$-rank of $A$ is the dimension over $\mathbb{F}_2$ of the
+quotient $2^{j-1}A / 2^jA$, which is an $\mathbb{F}_2$-vector space because $2$ kills it.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Higher Two Power Layer](higher-two-power-layer.md)
-- [Two Power Image](two-power-image.md)
+- [The two-power layer $2^{j-1}A / 2^jA$](higher-two-power-layer.md)
+- [The subgroup $2^kA$](two-power-image.md)
 
 ## Sources
 

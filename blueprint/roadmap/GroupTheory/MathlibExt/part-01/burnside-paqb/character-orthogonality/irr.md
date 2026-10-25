@@ -6,9 +6,10 @@ statement: formalized
 lean: BurnsidePaqb.Irr
 ---
 
-# Irr
+# Isomorphism classes of simple representations
 
-Iso-classes of simple finite-dimensional complex representations.
+**Isomorphism classes of simple representations.** For a finite group $G$, $\mathrm{Irr}(G)$ is
+the set of isomorphism classes of simple finite-dimensional complex representations of $G$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Iso Setoid](iso-setoid.md)
+- [Isomorphism of simple representations](iso-setoid.md)
 
 ## Sources
 

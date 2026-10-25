@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimBasicValue_eq_smithRemoteness
 ---
 
-# Lemma 4
+# Basic-vector value equals Smith's remoteness (Lemma 4)
 
-**Lemma 4.** For `0 < k`, `B(x) = R(x)` for every position `x` of `NIM(k + 1, k)`: the
-basic-vector value equals Smith's remoteness.
+**Basic-vector value equals Smith's remoteness (Lemma 4).** Let $k \ge 1$ and consider
+Slow$\{k\}$-Nim on $k + 1$ stacks, in which a move removes one token from each of exactly $k$
+nonempty stacks. For every position $x \in \mathbb{N}^{k+1}$, the basic-vector value $B(x)$
+equals Smith's remoteness of $x$ in this game.
 
 ## Depends on
 
 - [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
-- [Exact Slow Nim Basic Value](exact-slow-nim-basic-value.md)
+- [Basic-vector value](exact-slow-nim-basic-value.md)
 - [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
 
 ## Sources

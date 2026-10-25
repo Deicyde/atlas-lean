@@ -4,5 +4,5 @@ navigation: module
 
 # Rectangular Peg Problem
 
-- [R](r.md)
-- [Theorem 1](theorem-1.md)
+- [Rotated rectangle with given opposite corners](r.md)
+- [Rectangular peg theorem (Greene–Lobb)](theorem-1.md)

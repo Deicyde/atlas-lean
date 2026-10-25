@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.CodingTheory.CRC.dvd_encode
 ---
 
-# Dvd encode
+# CRC codewords are multiples of the generator
 
-Every codeword is a multiple of the generator.
+**CRC codewords are multiples of the generator.** Let $F$ be a field. For all polynomials $g$
+and $m$ over $F$, the polynomial $g$ divides the CRC encoding of $m$ with generator $g$.
 
 ## Depends on
 
-- [Encode](encode.md)
+- [CRC encoder](encode.md)
 
 ## Sources
 

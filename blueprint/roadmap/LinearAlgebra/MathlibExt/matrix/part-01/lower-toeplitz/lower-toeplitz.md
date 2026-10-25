@@ -6,12 +6,13 @@ statement: formalized
 lean: Matrix.lowerToeplitz
 ---
 
-# Lower Toeplitz
+# Lower-triangular Toeplitz matrix
 
-Lower-triangular Toeplitz matrix over `ℕ × ℕ`: given a sequence `a`,
-the `(i, j)` entry is `a (i - j)` when `j ≤ i`, and `0` otherwise. In
-particular the matrix is constant on each subdiagonal and vanishes strictly
-above the main diagonal.
+**Lower-triangular Toeplitz matrix.** Let $R$ be a set with a zero element $0$ and let
+$a = (a_0, a_1, a_2, \dots)$ be a sequence in $R$. The lower-triangular Toeplitz matrix of $a$
+is the matrix with rows and columns indexed by $\mathbb{N}$ whose $(i, j)$ entry is $a_{i-j}$
+when $j \le i$ and $0$ when $j > i$. In particular it is constant along each diagonal and
+vanishes strictly above the main diagonal.
 
 ## Depends on
 

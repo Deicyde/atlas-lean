@@ -6,13 +6,16 @@ proof: formalized
 lean: InformationTheory.lintegral_surprisal
 ---
 
-# Lintegral surprisal
+# Cross-entropy is expected surprisal
 
-The expected surprisal `E_{a ~ p}[-log₂ q a]` is the cross-entropy.
+**Cross-entropy is expected surprisal.** For probability mass functions $p$ and $q$ on a
+finite alphabet, the expected surprisal $\mathbb{E}_{a \sim p}[-\log_2 q(a)]$ (with
+$-\log_2 0 = \infty$), taken as the integral of a $[0, \infty]$-valued function with respect to
+the law $p$, equals the cross-entropy $H(p, q)$.
 
 ## Depends on
 
-- [Cross Entropy](cross-entropy.md)
+- [Cross-entropy](cross-entropy.md)
 - [Surprisal](surprisal.md)
 
 ## Sources

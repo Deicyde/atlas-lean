@@ -6,19 +6,25 @@ statement: formalized
 lean: MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.IsContactForm3
 ---
 
-# Is Contact Form3
+# Contact condition for a one-form
 
-The pointwise contact condition in dimension 3: `α` nowhere zero
-and `dα` nondegenerate on the two-plane `ker α`.
+**Contact condition for a one-form.** Let $\alpha$ be a one-form and $d\alpha$ a two-form on
+$M$. The pair satisfies the contact condition when $d\alpha$ is the exterior derivative of
+$\alpha$ and, at every point $x \in M$, the covector $\alpha_x$ is nonzero and there are tangent
+vectors $u, v \in T_xM$ with $\alpha_x(u) = \alpha_x(v) = 0$ and $d\alpha_x(u, v) \ne 0$.
+
+When $M$ has dimension $3$, this says that $\alpha$ vanishes nowhere and $d\alpha$ is
+nondegenerate on the plane $\ker \alpha_x$, which is equivalent to $\alpha \wedge d\alpha$
+vanishing nowhere.
 
 ## Depends on
 
-- [One Form](one-form.md)
-- [Two Form](two-form.md)
+- [Smooth one-forms](one-form.md)
+- [Two-forms as fields of bilinear forms](two-form.md)
 
 ## Proof depends on
 
-- [Is Exterior Derivative](is-exterior-derivative.md)
+- [Exterior derivative of a one-form](is-exterior-derivative.md)
 
 ## Sources
 

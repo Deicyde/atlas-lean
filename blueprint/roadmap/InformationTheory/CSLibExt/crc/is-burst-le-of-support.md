@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.CodingTheory.CRC.isBurstLE_of_support
 ---
 
-# Is Burst LE of support
+# Errors confined to a window are bursts
 
-A nonzero error whose nonzero symbols all lie in `L` consecutive positions `i, …, i + L - 1`
-is a burst of length at most `L`.
+**Errors confined to a window are bursts.** Let $F$ be a field, let $e \ne 0$ be a polynomial
+over $F$, and let $i$ and $L$ be natural numbers. If every $j$ for which the coefficient of $X^j$
+in $e$ is nonzero satisfies $i \le j < i + L$, then $e$ is a burst of length at most $L$.
 
 ## Depends on
 
-- [Is Burst LE](is-burst-le.md)
+- [Burst errors](is-burst-le.md)
 
 ## Sources
 

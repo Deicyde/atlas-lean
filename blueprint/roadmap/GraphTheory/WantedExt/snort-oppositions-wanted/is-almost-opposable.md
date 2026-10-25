@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsAlmostOpposable
 ---
 
-# Is Almost Opposable
+# Almost opposable graph
 
-`G` is almost opposable: `G - S` is opposable for some admissible `S`
-(`u ∈ S ⊆ N[u]`).
+**Almost opposable graph.** A graph $G$ is almost opposable if there are a vertex $u$ and a
+set $S$ of vertices with $u \in S \subseteq N[u]$, where $N[u]$ is the closed neighbourhood of $u$
+($u$ together with its neighbours), such that the subgraph $G - S$ induced on the vertices
+outside $S$ is opposable.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Opposable](is-opposable.md)
+- [Opposable graphs](is-opposable.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Polar
 
-- [Exists unitary Group pos Semidef](exists-unitary-group-pos-semidef.md)
-- [Exists unique unitary Group pos Def of is Unit det](exists-unique-unitary-group-pos-def-of-i.md)
+- [Polar decomposition of a complex square matrix](exists-unitary-group-pos-semidef.md)
+- [Uniqueness of the polar decomposition of an invertible matrix](exists-unique-unitary-group-pos-def-of-i.md)

@@ -6,9 +6,11 @@ statement: formalized
 lean: BurnsidePaqb.classSum
 ---
 
-# Class Sum
+# Class sum of a finite subset
 
-The class sum of a finset: sum of the group elements in the group algebra.
+**Class sum of a finite subset.** Let $G$ be a group. The class sum of a finite subset
+$C \subseteq G$ is the element $\widehat{C} = \sum_{x \in C} x$ of the complex group algebra
+$\mathbb{C}[G]$.
 
 ## Depends on
 

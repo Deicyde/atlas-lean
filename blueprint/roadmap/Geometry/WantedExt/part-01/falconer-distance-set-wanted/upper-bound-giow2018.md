@@ -6,9 +6,13 @@ statement: formalized
 lean: FalconerDistanceSetWanted.upperBound_GIOW2018
 ---
 
-# Upper Bound GIOW2018
+# The Guth–Iosevich–Ou–Wang bound, as a proposition
 
-The planar threshold is at most `5/4`.
+**The Guth–Iosevich–Ou–Wang bound, as a proposition.** The proposition that the planar
+Falconer distance threshold is at most $5/4$. Here the planar Falconer distance threshold is the
+infimum of the $s \in [0, 2]$ such that every compact set $E \subseteq \mathbb{R}^2$ with
+Hausdorff dimension greater than $s$ has a distance set $\{|x - y| : x, y \in E\}$ of positive
+Lebesgue measure.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Planar Distance Threshold](../../../MathlibExt/falconer-distance-set/planar-distance-threshold.md)
+- [Planar distance threshold](../../../MathlibExt/falconer-distance-set/planar-distance-threshold.md)
 
 ## Sources
 

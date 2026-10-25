@@ -7,10 +7,13 @@ proof: formalized
 lean: InfiniteGalois.topologicalClosure_eq_fixingSubgroup_fixedField
 ---
 
-# Infinite
+# The closure of a Galois subgroup is the fixing group of its fixed field
 
-The topological closure of a subgroup of an infinite Galois group is the
-fixing subgroup of its fixed field.
+**The closure of a Galois subgroup is the fixing group of its fixed field.** Let $K/k$ be a
+Galois extension, not necessarily finite, and give $\operatorname{Gal}(K/k)$ the Krull topology.
+For every subgroup $H$ of $\operatorname{Gal}(K/k)$ with fixed field $K^H$, the closure of $H$
+equals the subgroup of $\operatorname{Gal}(K/k)$ consisting of the automorphisms that fix $K^H$
+pointwise.
 
 ## Depends on
 

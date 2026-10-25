@@ -7,8 +7,8 @@ navigation: module
 
 ## MDifferentiable
 
-- [Eq of eq On of is Open](eq-of-eq-on-of-is-open.md)
+- [Holomorphic maps on a connected manifold that agree on a nonempty open set are equal](eq-of-eq-on-of-is-open.md)
 
 ## Complex Rigidity Wanted
 
-- [Holomorphic identity on connected complex manifold](holomorphic-identity-on-connected-comple.md)
+- [Identity theorem for holomorphic maps](holomorphic-identity-on-connected-comple.md)

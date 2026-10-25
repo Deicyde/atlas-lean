@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.dominationPolynomial_grid_eq_sum_almostDominatingPolynomial
 ---
 
-# Domination Polynomial grid eq sum almost Dominating Polynomial
+# Grid domination polynomial as a sum of almost dominating polynomials
 
-Mertens' Lemma 4, grid case: the domination polynomial of the `m × (n + 1)` grid is the sum
-of `G^σ` over the signatures `σ` with no uncovered vertex.  Stated for `n + 1 ≥ 1` rows, since
-the last row carrying `σ` must exist.
+**Grid domination polynomial as a sum of almost dominating polynomials.** For all natural
+numbers $m$ and $n$, let $P_k$ denote the path on the vertices $0, \dots, k - 1$. Then the
+domination polynomial of the grid $P_m \mathbin{\square} P_{n+1}$ equals $\sum_\sigma G^\sigma(z)$,
+the sum running over the signatures $\sigma$ of the row graph $P_m$ with no uncovered vertex,
+where $G^\sigma(z)$ is the almost dominating polynomial of $P_m$ with $n + 1$ rows and last-row
+state $\sigma$.
+
+The grid is taken with at least one row, so that the last row carrying $\sigma$ exists.
 
 ## Depends on
 
-- [Domination Signature](domination-signature.md)
+- [Signatures of a row graph](domination-signature.md)
 - [Domination State](domination-state.md)
-- [Is Domination Signature](is-domination-signature.md)
-- [Almost Dominating Polynomial](almost-dominating-polynomial.md)
-- [Domination Polynomial](domination-polynomial.md)
+- [Domination signature](is-domination-signature.md)
+- [Almost dominating polynomial](almost-dominating-polynomial.md)
+- [Domination polynomial](domination-polynomial.md)
 
 ## Sources
 

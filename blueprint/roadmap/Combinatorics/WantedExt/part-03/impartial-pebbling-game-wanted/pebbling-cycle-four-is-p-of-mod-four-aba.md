@@ -19,7 +19,7 @@ which lies in $\hat Y_{abab}$ and is a P-position because no move is possible fr
 ## Depends on
 
 - [The set $\hat Y_{abab}$ of $C_4$ positions](c4-mod-four-ababhat.md)
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [The $(k+1:k)$-pebbling game](pebbling-game.md)
 
 ## Sources

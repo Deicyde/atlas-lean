@@ -7,20 +7,23 @@ proof: formalized
 lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.gibbard_satterthwaite
 ---
 
-# Gibbard satterthwaite
+# Gibbard–Satterthwaite theorem
 
-Resolute SCF on ≥3 alternatives, onto and strategy-proof, is dictatorial.
+**Gibbard–Satterthwaite theorem.** Let the set of alternatives be finite and the set of voters be
+finite and nonempty, and suppose there are at least three distinct alternatives. Then every
+resolute social choice function on profiles of strict preference orders that is onto and
+strategy-proof is dictatorial.
 
 ## Depends on
 
-- [Is Dictatorial](is-dictatorial.md)
-- [Is Onto](is-onto.md)
-- [Is Strategy Proof](is-strategy-proof.md)
-- [Social Choice Function](social-choice-function.md)
+- [Dictatorial social choice function](is-dictatorial.md)
+- [Onto social choice function](is-onto.md)
+- [Strategy-proof social choice function](is-strategy-proof.md)
+- [Social choice functions](social-choice-function.md)
 
 ## Proof depends on
 
-- [Gibbard satterthwaite general](gibbard-satterthwaite-general.md)
+- [Gibbard–Satterthwaite theorem, finiteness form](gibbard-satterthwaite-general.md)
 
 ## Sources
 

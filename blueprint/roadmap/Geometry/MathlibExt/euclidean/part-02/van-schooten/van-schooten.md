@@ -7,10 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.vanSchooten
 ---
 
-# Van Schooten
+# Van Schooten's theorem with distinctness hypotheses
 
-Van Schooten's theorem: an equilateral triangle `ABC` with a point `P` on the
-circumcircle on arc `AB` not containing `C` satisfies `PA + PB = PC`.
+**Van Schooten's theorem with distinctness hypotheses.** Let $A$, $B$, $C$, $P$ and $O$ be
+points of the Euclidean plane $\mathbb{R}^2$ and let $r > 0$. Suppose that $AB = BC = CA$,
+that $A$, $B$, $C$ and $P$ lie on the circle of radius $r$ about $O$, that $P \ne A$,
+$P \ne B$ and $P \ne C$, and that $CP > AP$ and $CP > BP$. Then $PA + PB = PC$.
+
+In the source, $P$ is a point on the arc $AB$ of the circumcircle not containing $C$; here that
+condition is expressed by $CP > AP$ and $CP > BP$.
 
 ## Depends on
 
@@ -18,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Van Schooten general](van-schooten-general.md)
+- [Van Schooten's theorem](van-schooten-general.md)
 
 ## Sources
 

@@ -20,8 +20,8 @@ of `R₁ ∪ R₂` is the join of its two projections.
 - [Is Over](../relational-algebra/is-over-2.md)
 - [Satisfying a set of dependencies on a scheme](satisfies-on.md)
 - [Tuple](../relational-algebra/tuple.md)
-- [Join](../relational-algebra/join.md)
-- [Project](../relational-algebra/project.md)
+- [Natural join](../relational-algebra/join.md)
+- [Projection of a relation](../relational-algebra/project.md)
 
 ## Sources
 

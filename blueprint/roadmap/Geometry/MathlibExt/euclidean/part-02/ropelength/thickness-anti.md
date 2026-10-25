@@ -6,19 +6,20 @@ proof: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.thickness_anti
 ---
 
-# Thickness anti
+# Thickness is antitone
 
-Thickness is antitone in the set: enlarging a set can only add
-triples and hence can only decrease the infimum.
+**Thickness is antitone.** If $s \subseteq t$ are sets in Euclidean 3-space, then the
+thickness of $t$ is at most the thickness of $s$: enlarging a set can only add triples and
+hence can only decrease the infimum.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean 3-space](r3.md)
 - [Thickness](thickness.md)
 
 ## Proof depends on
 
-- [Circumradius ENN](circumradius-enn.md)
+- [Extended circumradius of three points](circumradius-enn.md)
 
 ## Sources
 

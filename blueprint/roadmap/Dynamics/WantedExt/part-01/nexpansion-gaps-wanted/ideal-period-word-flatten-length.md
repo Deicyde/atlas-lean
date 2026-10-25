@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.idealPeriodWord_flatten_length
 ---
 
-# Ideal Period Word flatten length
+# Length of the ideal period words
 
-Lemma 7: for `n ≥ 1` the period length of `d_n` is `|d_n| = 2^{n+1} - (-1)^n`.
+**Length of the ideal period words.** For every $n \ge 1$, the digit string of the ideal
+period word $d_n$ (the concatenation of its blocks of partial quotients) has length
+$|d_n| = 2^{n+1} - (-1)^n$.
 
-`|d_n|` is read as the number of partial quotients in the defining word of Definition 7 (the
-paper derives it from `|d_n| = 2|d_{n-1}| - 3(-1)^n`).
+The source derives this from the recursion $|d_n| = 2|d_{n-1}| - 3(-1)^n$.
 
 ## Depends on
 
-- [Ideal Period Word](ideal-period-word.md)
+- [Ideal period words](ideal-period-word.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: ConvexCovering.externalPointIlluminationNumber
 ---
 
-# External Point Illumination Number
+# External-point illumination number
 
-The corresponding minimum number of actual exterior light sources.
+**External-point illumination number.** The external-point illumination number of a set
+$K \subseteq \mathbb{R}^n$ is the least natural number $q$ such that $K$ is illuminated by $q$
+external points, and $\infty$ if there is no such $q$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Illuminated By External Points](illuminated-by-external-points.md)
+- [Illumination by $q$ external points](illuminated-by-external-points.md)
 
 ## Sources
 

@@ -4,12 +4,12 @@ navigation: module
 
 # Picks Theorem
 
-- [To Plane](to-plane.md)
-- [Lat Poly](lat-poly.md)
-- [Inside](inside.md)
-- [Area](area.md)
-- [Adjacent](adjacent.md)
-- [Is Simple](is-simple.md)
-- [Boundary Pts](boundary-pts.md)
-- [Interior Pts](interior-pts.md)
-- [Pick](pick.md)
+- [Lattice points in the plane](to-plane.md)
+- [Lattice polygon](lat-poly.md)
+- [Region enclosed by a planar set](inside.md)
+- [Enclosed area](area.md)
+- [Cyclically adjacent indices](adjacent.md)
+- [Simple polygon](is-simple.md)
+- [Number of boundary lattice points](boundary-pts.md)
+- [Number of interior lattice points](interior-pts.md)
+- [Pick's theorem](pick.md)

@@ -6,19 +6,21 @@ statement: formalized
 lean: MathlibExt.Geometry.HippocratesLunesWanted.Geometry.HippocratesLunes.rightTriangle
 ---
 
-# Right Triangle
+# Right triangle with legs on the axes
 
-The right triangle.
+**Right triangle with legs on the axes.** For real numbers $a$ and $b$, the right triangle
+$T(a, b)$ is the convex hull in the plane $\mathbb{R}^2$ of the three points $(0, 0)$, $(a, 0)$
+and $(0, b)$.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Coordinate plane for Hippocrates' lunes](plane.md)
 
 ## Proof depends on
 
-- [A](a.md)
-- [B](b.md)
-- [C](c.md)
+- [Right-angle vertex of the lune triangle](a.md)
+- [Horizontal leg endpoint of the lune triangle](b.md)
+- [Vertical leg endpoint of the lune triangle](c.md)
 
 ## Sources
 

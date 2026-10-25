@@ -13,7 +13,7 @@ initial minors are positive; an initial minor has rows `i₀, …, i₀ + k - 1`
 
 ## Depends on
 
-- [Has Positive Minors](../../MathlibExt/matrix/part-02/positive-minors/has-positive-minors.md)
+- [Matrices with positive minors](../../MathlibExt/matrix/part-02/positive-minors/has-positive-minors.md)
 
 ## Sources
 

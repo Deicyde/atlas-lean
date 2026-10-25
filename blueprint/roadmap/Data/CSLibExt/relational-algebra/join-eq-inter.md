@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Databases.join_eq_inter
 ---
 
-# Join eq inter
+# The natural join on a common schema is the intersection
 
-On a common schema, the natural join is the intersection.
+**The natural join on a common schema is the intersection.** If $r$ and $s$ are relations
+over the same schema $S$, that is, finite sets of tuples each over $S$, then their natural join
+is their intersection: $r \bowtie s = r \cap s$.
 
 ## Depends on
 
 - [Is Over](is-over-2.md)
 - [Tuple](tuple.md)
-- [Join](join.md)
+- [Natural join](join.md)
 
 ## Proof depends on
 
-- [Compatible](compatible.md)
-- [Is Over](is-over.md)
-- [Merge](merge.md)
+- [Compatible tuples](compatible.md)
+- [Tuple over a schema](is-over.md)
+- [Merge of two tuples](merge.md)
 
 ## Sources
 

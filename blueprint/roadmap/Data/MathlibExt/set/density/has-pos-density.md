@@ -6,11 +6,12 @@ statement: formalized
 lean: Set.HasPosDensity
 ---
 
-# Has Pos Density
+# Positive density
 
-A set `S` in an order `β` where all intervals bounded above are finite is said to have
-positive density (relative to a set `A`) if there exists a positive `α : ℝ` such that
-`S` has density `α` (relative to a set `A`).
+**Positive density.** Let $\beta$ be a preorder in which every set
+$\{x \in \beta \mid x \le b\}$ is finite, and let $S, A \subseteq \beta$. The set $S$ has positive
+density relative to $A$ if there is a real number $\alpha > 0$ such that $S$ has density $\alpha$
+relative to $A$. By default $A = \beta$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Density](has-density.md)
+- [Density of a set](has-density.md)
 
 ## Sources
 

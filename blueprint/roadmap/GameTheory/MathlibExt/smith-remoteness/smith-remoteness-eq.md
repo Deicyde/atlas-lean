@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.SpragueGrundy.smithRemoteness_eq
 ---
 
-# Smith Remoteness eq
+# Recursion for Smith's remoteness
 
-The defining recursion of `smithRemoteness`.
+**Recursion for Smith's remoteness.** Let $G$ be an impartial game, $p$ a position of $G$, and
+$R$ the set of remotenesses of the options of $p$ (the positions reachable from $p$ in one move).
+If $R$ contains an even number, the remoteness of $p$ is $1$ plus the least even element of $R$;
+otherwise, if $R$ is nonempty, it is $1$ plus the largest element of $R$; and if $R$ is empty,
+it is $0$.
 
 ## Depends on
 
-- [Impartial Game](../sprague-grundy/impartial-game.md)
+- [Impartial game](../sprague-grundy/impartial-game.md)
 - [Smith Remoteness](smith-remoteness.md)
 
 ## Sources

@@ -7,22 +7,25 @@ proof: formalized
 lean: CoxeterMatrix.ArtinGroup.braid_relation
 ---
 
-# Braid relation
+# Braid relations in the Artin group
 
-The defining braid relation holds among the generators: for distinct `i j` with `M i j ≠ ∞`,
-the two length-`M i j` alternating words in `of M i` and `of M j` agree.
+**Braid relations in the Artin group.** Let $M = (m_{ij})$ be a Coxeter matrix over an index
+type $B$, where $m_{ij} = 0$ encodes $m_{ij} = \infty$, and let $s_i$ ($i \in B$) be the
+generators of the Artin group of $M$. For distinct $i, j \in B$ with $m_{ij} \neq 0$, the
+alternating words $s_i s_j s_i \cdots$ and $s_j s_i s_j \cdots$ of length $m_{ij}$ are equal in
+the Artin group.
 
 ## Depends on
 
-- [Artin Group](artin-group.md)
-- [Of](of.md)
-- [Alternating Word](alternating-word.md)
-- [Artin Relations Set](artin-relations-set.md)
+- [Artin group](artin-group.md)
+- [Generators of the Artin group](of.md)
+- [Alternating word](alternating-word.md)
+- [Artin relators of a Coxeter matrix](artin-relations-set.md)
 
 ## Proof depends on
 
-- [Artin Relation](artin-relation.md)
-- [Map alternating Word](map-alternating-word.md)
+- [Artin relator](artin-relation.md)
+- [Monoid homomorphisms preserve alternating words](map-alternating-word.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Erdos Problem57
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Odd cycle lengths and infinite chromatic number (Erdős Problem 57)](conjecture.md)
+- [Resolution of the Erdős–Hajnal odd cycle problem (Liu–Montgomery)](conjecture-holds.md)

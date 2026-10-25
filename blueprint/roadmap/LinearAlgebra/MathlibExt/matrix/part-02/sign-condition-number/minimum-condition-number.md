@@ -6,10 +6,12 @@ statement: formalized
 lean: Matrix.SignConditionNumber.minimumConditionNumber
 ---
 
-# Minimum Condition Number
+# Minimum condition number of sign matrices
 
-Attained minimum over the nonempty finite set of all sign matrices, at a
-positive order.
+**Minimum condition number of sign matrices.** For a positive integer $n$, the minimum
+condition number of order $n$ is the least condition number of a real $n \times n$ sign matrix,
+that is, a matrix all of whose entries are $1$ or $-1$; the minimum is taken over the finitely
+many such matrices.
 
 ## Depends on
 
@@ -18,8 +20,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Sign Matrix](sign-matrix.md)
-- [Realize](realize.md)
-- [Condition Number](condition-number.md)
+- [Real sign matrix of a Boolean matrix](realize.md)
+- [Condition number of a square real matrix](condition-number.md)
 
 ## Sources
 

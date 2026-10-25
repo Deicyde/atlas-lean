@@ -13,7 +13,7 @@ infinitely many `k ≥ 1` with `n ∣ reverse(k * n)`.
 
 ## Depends on
 
-- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
+- [Digit reversal](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources
 

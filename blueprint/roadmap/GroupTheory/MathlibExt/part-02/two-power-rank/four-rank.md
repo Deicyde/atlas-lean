@@ -6,9 +6,12 @@ statement: formalized
 lean: AbelianGroup.fourRank
 ---
 
-# Four Rank
+# The $4$-rank of a finite abelian group
 
-The `4`-rank is the `F₂`-dimension of `2A / 4A`.
+**The $4$-rank of a finite abelian group.** For a finite abelian group $A$, written
+additively, the $4$-rank of $A$ is the dimension over $\mathbb{F}_2$ of the quotient $2A / 4A$,
+where $2A = \{2a : a \in A\}$ and $4A = \{4a : a \in A\}$; it is the $2^j$-rank of $A$ for
+$j = 2$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Higher Two Power Rank](higher-two-power-rank.md)
+- [The $2^j$-rank of a finite abelian group](higher-two-power-rank.md)
 
 ## Sources
 

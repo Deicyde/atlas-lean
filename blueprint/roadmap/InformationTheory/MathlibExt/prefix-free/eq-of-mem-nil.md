@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.InformationTheory.IsPrefixFree.eq_of_mem_nil
 ---
 
-# Eq of mem nil
+# A prefix-free code with an empty codeword has one symbol
 
-If a prefix-free code assigns the empty word to one symbol, that symbol is
-the only one: `[]` is a prefix of every word.
+**A prefix-free code with an empty codeword has one symbol.** If a prefix-free code $c$
+assigns the empty word to a symbol $a_0$, then every symbol $a$ equals $a_0$.
+
+This holds because the empty word is a prefix of every word.
 
 ## Depends on
 
-- [Is Prefix Free](is-prefix-free.md)
+- [Prefix-free code](is-prefix-free.md)
 
 ## Sources
 

@@ -7,9 +7,11 @@ proof: formalized
 lean: BurnsidePaqb.map_X_pow_sub_C_rat
 ---
 
-# Map X pow sub C rat
+# $X^m - 1$ over $\mathbb{Q}$ and over $\mathbb{C}$
 
-`X ^ m - C 1` over `ℚ` maps to the same shape over `ℂ`.
+**$X^m - 1$ over $\mathbb{Q}$ and over $\mathbb{C}$.** For every natural number $m$, mapping
+the coefficients of the rational polynomial $X^m - 1$ along the inclusion
+$\mathbb{Q} \to \mathbb{C}$ gives the complex polynomial $X^m - 1$.
 
 ## Depends on
 

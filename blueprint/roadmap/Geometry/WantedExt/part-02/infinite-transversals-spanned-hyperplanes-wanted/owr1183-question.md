@@ -6,11 +6,13 @@ statement: formalized
 lean: MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.ITSP.OWR1183Question
 ---
 
-# OWR1183 Question
+# Injective point-to-hyperplane matching question
 
-The question of [OWR-1183-011]: for every `d ≥ 1` and every `P`
-spanning the ambient space, with `H` the hyperplanes spanned by `P`,
-is there an injective `f : P → H` with `p ∈ f p` for every `p`?
+**Injective point-to-hyperplane matching question.** The statement that for every $d \ge 1$
+and every set $P \subseteq \mathbb{R}^d$ whose affine span is all of $\mathbb{R}^d$, writing
+$\mathcal{H}$ for the set of affine hyperplanes of $\mathbb{R}^d$ that equal the affine span of
+some subset of $P$, there is an injective map $f \colon P \to \mathcal{H}$ with $p \in f(p)$ for
+every $p \in P$.
 
 ## Depends on
 
@@ -18,8 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Spanned Hyperplane Set](spanned-hyperplane-set.md)
+- [Hyperplanes spanned by a point set](spanned-hyperplane-set.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted](../../../../../sources/v2/WantedExt.md)
+- the question of `OWR-1183-011`.

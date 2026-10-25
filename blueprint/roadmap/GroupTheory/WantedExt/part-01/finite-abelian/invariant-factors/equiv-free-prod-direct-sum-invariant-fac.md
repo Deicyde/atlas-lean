@@ -5,9 +5,13 @@ statement: formalized
 lean: AddCommGroup.equiv_free_prod_directSum_invariant_factors
 ---
 
-# Equiv free prod direct Sum invariant factors
+# Invariant factor decomposition of finitely generated abelian groups
 
-A finitely generated abelian group admits a free part and divisibility-ordered cyclic factors.
+**Invariant factor decomposition of finitely generated abelian groups.** For every finitely
+generated abelian group $A$ there are natural numbers $a$ and $k$ and natural numbers
+$d_0, \dots, d_{k-1}$, each greater than $1$, with $d_m \mid d_n$ whenever $m \le n$, such that
+$A$ is isomorphic as an additive group to
+$\mathbb{Z}^a \times \bigoplus_{m < k} \mathbb{Z}/d_m\mathbb{Z}$.
 
 ## Depends on
 

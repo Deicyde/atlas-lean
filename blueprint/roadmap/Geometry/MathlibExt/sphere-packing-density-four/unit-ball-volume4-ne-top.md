@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.Geometry.SpherePackingDensityFourWanted.unitBallVolume4_ne_top
 ---
 
-# Unit Ball Volume4 ne top
+# The unit ball in $\mathbb{R}^4$ has finite volume
 
-Source: the center-density divisor is finite.
+**The unit ball in $\mathbb{R}^4$ has finite volume.** The Lebesgue volume of the open unit
+ball of radius $1$ about the origin in $\mathbb{R}^4$ is not $\infty$.
 
 ## Depends on
 
-- [Unit Ball Volume4](unit-ball-volume4.md)
+- [Volume of the unit ball in $\mathbb{R}^4$](unit-ball-volume4.md)
 
 ## Proof depends on
 
-- [Space](space.md)
+- [Four-dimensional Euclidean space](space.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SpherePackingDensityFour](../../../../sources/v2/MathlibExt.md)
+- the center-density divisor is finite.

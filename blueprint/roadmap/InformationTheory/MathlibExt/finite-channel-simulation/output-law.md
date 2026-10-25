@@ -5,13 +5,15 @@ statement: formalized
 lean: InformationTheory.FiniteJointLaw.outputLaw
 ---
 
-# Output Law
+# Output law
 
-The actual Y marginal of the joint law.
+**Output law.** The output law of a finite joint law $p$ of an input $X$ and an output $Y$
+is the law of $Y$: the marginal of $p$ on the output alphabet, obtained by pushing $p$ forward
+along the projection onto the second coordinate.
 
 ## Depends on
 
-- [Finite Joint Law](finite-joint-law.md)
+- [Finite joint law](finite-joint-law.md)
 
 ## Sources
 

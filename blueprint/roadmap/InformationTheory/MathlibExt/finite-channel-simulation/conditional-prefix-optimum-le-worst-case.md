@@ -6,16 +6,18 @@ proof: formalized
 lean: InformationTheory.conditionalPrefixOptimum_le_worstCaseOptimum
 ---
 
-# Conditional Prefix Optimum le worst Case Optimum
+# The worst-case optimum dominates each conditional-prefix optimum
 
-Every actual information-slice member contributes to the worst-case supremum.
+**The worst-case optimum dominates each conditional-prefix optimum.** For every finite joint
+law $p$ of $(X, Y)$, the conditional-prefix optimum of $p$ is at most the worst-case optimum at
+$t = I(X; Y)$, the mutual information of $p$ in bits.
 
 ## Depends on
 
-- [Finite Joint Law](finite-joint-law.md)
-- [Mutual Information](mutual-information.md)
-- [Conditional Prefix Optimum](conditional-prefix-optimum.md)
-- [Worst Case Optimum](worst-case-optimum.md)
+- [Finite joint law](finite-joint-law.md)
+- [Mutual information](mutual-information.md)
+- [Conditional-prefix optimum of a joint law](conditional-prefix-optimum.md)
+- [Worst-case conditional-prefix optimum](worst-case-optimum.md)
 
 ## Sources
 

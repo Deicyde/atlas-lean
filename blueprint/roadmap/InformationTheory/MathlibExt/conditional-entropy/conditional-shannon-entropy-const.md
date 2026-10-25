@@ -6,18 +6,21 @@ proof: formalized
 lean: InformationTheory.conditionalShannonEntropy_const
 ---
 
-# Conditional Shannon Entropy const
+# Conditional entropy of a constant output vanishes
 
-The quantization supremum of an actual constant output is zero.
+**Conditional entropy of a constant output vanishes.** Let $\mu$ be a probability measure on a
+measurable space $\Omega$, let $m$ be a sub-$\sigma$-algebra of the $\sigma$-algebra of $\Omega$,
+and let $y$ be a point of a measurable space $Y$. The conditional Shannon entropy given $m$ of the
+constant output $\omega \mapsto y$ is $0$.
 
 ## Depends on
 
-- [Conditional Shannon Entropy](conditional-shannon-entropy.md)
+- [Conditional Shannon entropy given a sub-$\sigma$-algebra](conditional-shannon-entropy.md)
 
 ## Proof depends on
 
-- [Quantized Conditional Entropy](quantized-conditional-entropy.md)
-- [Quantized Conditional Entropy const](quantized-conditional-entropy-const.md)
+- [Conditional entropy of a finite observation given a sub-$\sigma$-algebra](quantized-conditional-entropy.md)
+- [Constant quantized observations have zero conditional entropy](quantized-conditional-entropy-const.md)
 
 ## Sources
 

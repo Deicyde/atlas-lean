@@ -7,19 +7,24 @@ proof: formalized
 lean: BurnsidePaqb.charInner_orth
 ---
 
-# Char Inner orth
+# Orthogonality of irreducible characters
 
-Row orthogonality over iso-classes.
+**Orthogonality of irreducible characters.** Let $G$ be a finite group and let $\chi_i$ and
+$\chi_j$ be the characters of isomorphism classes $i$ and $j$ of simple finite-dimensional
+complex representations of $G$. Then
+
+$$\frac{1}{|G|} \sum_{g \in G} \chi_i(g)\, \chi_j(g^{-1}) =
+\begin{cases} 1 & \text{if } i = j, \\ 0 & \text{otherwise.} \end{cases}$$
 
 ## Depends on
 
-- [Irr](irr.md)
-- [Char Fun](char-fun.md)
+- [Isomorphism classes of simple representations](irr.md)
+- [Character of an isomorphism class](char-fun.md)
 
 ## Proof depends on
 
-- [Rep Bundle](rep-bundle.md)
-- [Iso Setoid](iso-setoid.md)
+- [Chosen representative of an isomorphism class](rep-bundle.md)
+- [Isomorphism of simple representations](iso-setoid.md)
 
 ## Sources
 

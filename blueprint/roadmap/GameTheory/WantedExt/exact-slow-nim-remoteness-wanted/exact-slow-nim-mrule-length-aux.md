@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimMRuleLengthAux
 ---
 
-# Exact Slow Nim MRule Length Aux
+# Fuel-bounded length of M-rule play
 
-At most `f` steps of the M-rule in `NIM(k + 1, k)`, stopping at a terminal position.
+**Fuel-bounded length of M-rule play.** Let $k$ and $f$ be natural numbers and let $x$ be a
+position on $k + 1$ piles. Call $x$ terminal when $k = 0$ or fewer than $k$ of its piles are
+nonempty. The value at $f$ and $x$ is $0$ when $f = 0$ or $x$ is terminal; otherwise it is $1$
+plus the value at $f - 1$ and the position reached from $x$ by the M-move. Thus it counts the
+M-moves played from $x$, stopping at a terminal position or after $f$ moves.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exact Slow Nim MRule Move](exact-slow-nim-mrule-move.md)
+- [The M-move](exact-slow-nim-mrule-move.md)
 
 ## Sources
 

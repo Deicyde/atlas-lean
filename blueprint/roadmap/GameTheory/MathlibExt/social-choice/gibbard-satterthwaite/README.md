@@ -7,25 +7,25 @@ navigation: module
 
 ## Gibbard Satterthwaite Wanted
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict preference orders for the Gibbard–Satterthwaite theorem](strict-total-order.md)
 
 ## Strict Total Order
 
-- [Mk](mk.md)
-- [Lt](lt.md)
-- [Irrefl](irrefl.md)
-- [Trans](trans.md)
-- [Total](total.md)
+- [Building a strict preference order in the Gibbard–Satterthwaite setting](mk.md)
+- [Relation of a strict preference order](lt.md)
+- [Irreflexivity of strict preference](irrefl.md)
+- [Transitivity of strict preferences in the Gibbard–Satterthwaite setting](trans.md)
+- [Strict preferences in the Gibbard–Satterthwaite setting are total](total.md)
 
 ## Gibbard Satterthwaite Wanted
 
-- [Profile](profile.md)
-- [Social Choice Function](social-choice-function.md)
-- [Is Top Ranked](is-top-ranked.md)
-- [Is Onto](is-onto.md)
-- [Diff At Most At](diff-at-most-at.md)
-- [Is Strategy Proof](is-strategy-proof.md)
-- [Is Dictator](is-dictator.md)
-- [Is Dictatorial](is-dictatorial.md)
-- [Gibbard satterthwaite general](gibbard-satterthwaite-general.md)
-- [Gibbard satterthwaite](gibbard-satterthwaite.md)
+- [Preference profiles for the Gibbard–Satterthwaite theorem](profile.md)
+- [Social choice functions](social-choice-function.md)
+- [Top-ranked alternative](is-top-ranked.md)
+- [Onto social choice function](is-onto.md)
+- [Profiles differing only at one voter](diff-at-most-at.md)
+- [Strategy-proof social choice function](is-strategy-proof.md)
+- [Dictator of a social choice function](is-dictator.md)
+- [Dictatorial social choice function](is-dictatorial.md)
+- [Gibbard–Satterthwaite theorem, finiteness form](gibbard-satterthwaite-general.md)
+- [Gibbard–Satterthwaite theorem](gibbard-satterthwaite.md)

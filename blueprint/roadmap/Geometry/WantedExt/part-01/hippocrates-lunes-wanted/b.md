@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.HippocratesLunesWanted.Geometry.HippocratesLunes.B
 ---
 
-# B
+# Horizontal leg endpoint of the lune triangle
 
-The leg endpoint on the x-axis.
+**Horizontal leg endpoint of the lune triangle.** For a real number $a$, the point
+$B = (a, 0)$ on the $x$-axis of the coordinate plane; it is the endpoint of the horizontal leg of
+the right triangle in Hippocrates' theorem on lunes.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [Coordinate plane for Hippocrates' lunes](plane.md)
 
 ## Sources
 

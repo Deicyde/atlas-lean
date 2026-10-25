@@ -12,11 +12,11 @@ accesses is a write.
 
 ## Depends on
 
-- [Op](op.md)
+- [Operation of a schedule](op.md)
 
 ## Proof depends on
 
-- [Access](access.md)
+- [Read or write access](access.md)
 
 ## Sources
 

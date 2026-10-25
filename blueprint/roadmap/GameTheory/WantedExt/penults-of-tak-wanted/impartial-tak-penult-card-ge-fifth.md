@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.impartialTak_penult_card_ge_fifth
 ---
 
-# Impartial Tak penult card ge fifth
+# An $n^2/5$ lower bound for Impartial Tak penults
 
-Proposition 9: an Impartial Tak penult on an `n × n` board has at least `n²/5 + O(n)` tokens.
+**An $n^2/5$ lower bound for Impartial Tak penults.** Impartial Tak is the placement game on
+the $n \times n$ board whose play ends once the tokens contain a road. There is a real constant $C$
+such that for every natural number $n$, every Impartial Tak penult on the $n \times n$ board has at
+least $n^2/5 - Cn$ tokens; that is, every penult has at least $n^2/5 + O(n)$ tokens.
 
 ## Depends on
 
-- [Placement Penult](placement-penult.md)
-- [Tak Has Road](tak-has-road.md)
+- [Penults of a placement game](placement-penult.md)
+- [Roads in Impartial Tak](tak-has-road.md)
 
 ## Sources
 

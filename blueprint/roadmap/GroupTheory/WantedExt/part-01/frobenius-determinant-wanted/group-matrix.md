@@ -6,11 +6,11 @@ statement: formalized
 lean: MathlibExt.GroupTheory.FrobeniusDeterminantWanted.RepresentationTheory.FrobeniusDeterminant.groupMatrix
 ---
 
-# Group Matrix
+# Group matrix
 
-The **group matrix** of Dedekind/Frobenius: a `G × G` matrix over the
-polynomial ring `ℂ[x_g : g ∈ G]`, with entry `(g, h)` the variable indexed by
-the product `g * h`.
+**Group matrix.** For a finite group $G$, the group matrix of Dedekind and Frobenius is the
+$G \times G$ matrix over the polynomial ring $\mathbb{C}[x_g : g \in G]$ whose entry at $(g, h)$ is
+the variable $x_{gh}$.
 
 ## Depends on
 

@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Databases.IsSerial
 ---
 
-# Is Serial
+# Serial schedule
 
-A serial schedule: for any two transactions, all operations of one precede all operations of
-the other.
+**Serial schedule.** A schedule $s$ is serial when, for any two distinct transactions $i$ and
+$j$, either every operation of $i$ in $s$ occurs before every operation of $j$ in $s$, or every
+operation of $j$ in $s$ occurs before every operation of $i$ in $s$.
 
 ## Depends on
 
-- [Op](op.md)
+- [Operation of a schedule](op.md)
 
 ## Proof depends on
 
-- [Txn Before](txn-before.md)
+- [One transaction before another in a schedule](txn-before.md)
 
 ## Sources
 

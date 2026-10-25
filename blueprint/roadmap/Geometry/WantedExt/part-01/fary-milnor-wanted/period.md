@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.FaryMilnorWanted.Geometry.FaryMilnorProblem.period
 ---
 
-# Period
+# Period of a parametrised knot
 
-The period used by the parametrisation.
+**Period of a parametrised knot.** The period used for parametrised knots is the real number
+$2\pi$.
 
 ## Depends on
 

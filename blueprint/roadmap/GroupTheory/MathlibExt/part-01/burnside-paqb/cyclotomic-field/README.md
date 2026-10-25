@@ -5,8 +5,8 @@ navigation: module
 
 # Cyclotomic Field
 
-- [Cyc Subfield](cyc-subfield.md)
-- [Map X pow sub C rat](map-x-pow-sub-c-rat.md)
-- [Cyc root Set](cyc-root-set.md)
-- [Cyc is Splitting](cyc-is-splitting.md)
-- [Cyc Subfield zero](cyc-subfield-zero.md)
+- [Cyclotomic subfield of $\mathbb{C}$](cyc-subfield.md)
+- [$X^m - 1$ over $\mathbb{Q}$ and over $\mathbb{C}$](map-x-pow-sub-c-rat.md)
+- [Complex roots of $X^m - 1$](cyc-root-set.md)
+- [The $m$-th cyclotomic field is a splitting field of $X^m - 1$](cyc-is-splitting.md)
+- [The zeroth cyclotomic field is $\mathbb{Q}$](cyc-subfield-zero.md)

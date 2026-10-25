@@ -6,13 +6,15 @@ statement: formalized
 lean: ConvexCovering.papadoperakis1999UpperBound
 ---
 
-# Papadoperakis1999 Upper Bound
+# Papadoperakis's bound for Hadwiger's covering problem in dimension 3
 
-The historical `H_3 <= 16` covering construction.
+**Papadoperakis's bound for Hadwiger's covering problem in dimension 3.** Every convex body
+$K \subseteq \mathbb{R}^3$ is covered by $16$ translates of its interior $\operatorname{int} K$,
+repetitions allowed.
 
 ## Depends on
 
-- [Uniform Interior Translate Bound](../../../../MathlibExt/convex/covering/uniform-interior-translate-bound.md)
+- [Uniform bound for covering convex bodies by interior translates](../../../../MathlibExt/convex/covering/uniform-interior-translate-bound.md)
 
 ## Sources
 

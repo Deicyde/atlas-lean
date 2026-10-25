@@ -46,7 +46,7 @@ change the growth class of $\sigma$ without changing $w$.
 
 ## Depends on
 
-- [Is Eventually Periodic](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+- [Eventually periodic sequences](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
 - [Factor complexity of an infinite word](../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources

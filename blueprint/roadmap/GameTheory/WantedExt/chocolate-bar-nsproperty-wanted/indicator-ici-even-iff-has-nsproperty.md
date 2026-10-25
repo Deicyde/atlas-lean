@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.indicator_Ici_even_iff_hasNSProperty
 ---
 
-# Indicator Ici even iff has NSProperty
+# Indicator functions with the NS property
 
-A monotone function `f : ℕ → ℕ` with `f ≤ 1` that takes the value `1` is the indicator
-of `[m, ∞)` for an even `m` if and only if it has the NS property.
+**Indicator functions with the NS property.** Let $f : \mathbb{N} \to \mathbb{N}$ be monotone,
+with $f(x) \le 1$ for all $x$ and $f(x) = 1$ for some $x$. Then $f$ has the NS property if and
+only if there is an even $m \in \mathbb{N}$ such that $f$ is the indicator function of
+$\{n \in \mathbb{N} : n \ge m\}$, that is, $f(n) = 1$ for $n \ge m$ and $f(n) = 0$ for $n < m$.
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
+- [NS property](has-nsproperty.md)
 
 ## Sources
 

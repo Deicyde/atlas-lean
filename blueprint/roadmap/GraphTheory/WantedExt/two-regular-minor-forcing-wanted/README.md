@@ -5,6 +5,6 @@ navigation: module
 
 # Two Regular Minor Forcing
 
-- [Has Minor](has-minor.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Minor via branch sets](has-minor.md)
+- [Average-degree conjecture for 2-regular minors](conjecture.md)
+- [Csóka–Lo–Norin–Wu–Yepremyan theorem on 2-regular minors](conjecture-holds.md)

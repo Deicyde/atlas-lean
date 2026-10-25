@@ -15,7 +15,7 @@ Cobham's theorem with aperiodicity stated for the characteristic sequence.
 
 - [Bases Multiplicatively Independent](bases-multiplicatively-independent.md)
 - [Is Base Recognizable](../base-recognizable/is-base-recognizable.md)
-- [Is Ultimately Periodic](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-ultimately-periodic.md)
+- [Ultimately periodic sequences](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-ultimately-periodic.md)
 
 ## Proof depends on
 

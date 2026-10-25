@@ -7,9 +7,12 @@ proof: formalized
 lean: BurnsidePaqb.eq_smul_one_of_all_roots_eq
 ---
 
-# Eq smul one of all roots eq
+# Elements with a single eigenvalue act as scalars
 
-If all characteristic roots of `ρ g` equal `μ₀`, then `ρ g` is the scalar `μ₀`.
+**Elements with a single eigenvalue act as scalars.** Let $G$ be a finite group, $V$ a nonzero
+finite-dimensional complex vector space, $\rho$ a representation of $G$ on $V$, $g \in G$ and
+$\mu_0 \in \mathbb{C}$. If every root of the characteristic polynomial of $\rho(g)$ equals
+$\mu_0$, then $\rho(g) = \mu_0 \cdot \mathrm{id}_V$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Charpoly roots card](../killing-lemma/charpoly-roots-card.md)
+- [Number of characteristic roots of a representation matrix](../killing-lemma/charpoly-roots-card.md)
 
 ## Sources
 

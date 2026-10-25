@@ -6,18 +6,22 @@ statement: formalized
 lean: SymbolicDynamics.FullShift.IsOneDimensionalCA
 ---
 
-# Is One Dimensional CA
+# One-dimensional cellular automaton
 
-A one-dimensional cellular automaton, via the Curtis--Hedlund--Lyndon
-characterization: a continuous self-map commuting with the unit shift.
+**One-dimensional cellular automaton.** A map $f$ from the full shift
+$\{0, \dots, N-1\}^{\mathbb{Z}}$ on $N$ symbols to itself is a one-dimensional cellular
+automaton if $f$ is continuous and commutes with the unit shift $\sigma$, given by
+$(\sigma x)_i = x_{i+1}$, that is, $f \circ \sigma = \sigma \circ f$.
+
+This is the Curtis–Hedlund–Lyndon characterization of cellular automata.
 
 ## Depends on
 
-- [Full Shift Space](full-shift-space.md)
+- [Full shift space](full-shift-space.md)
 
 ## Proof depends on
 
-- [Unit Shift](unit-shift.md)
+- [Unit shift](unit-shift.md)
 
 ## Sources
 

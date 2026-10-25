@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.snortSecondPlayerWins_knightGraph_iff
 ---
 
-# Snort Second Player Wins knight Graph iff
+# Snort on the knight's graph
 
-The second player wins the Peaceable Knights game on `n × m` iff `n` or `m`
-is even.
+**Snort on the knight's graph.** For natural numbers $n \ge 1$ and $m \ge 1$, the
+second player wins Snort on the knight's graph of the $n \times m$ board (the Peaceable
+Knights game) if and only if $n$ is even or $m$ is even.
 
 ## Depends on
 
-- [Snort Second Player Wins](snort-second-player-wins.md)
-- [Knight Graph](knight-graph.md)
+- [Second-player win in Snort](snort-second-player-wins.md)
+- [Knight's graph](knight-graph.md)
 
 ## Sources
 

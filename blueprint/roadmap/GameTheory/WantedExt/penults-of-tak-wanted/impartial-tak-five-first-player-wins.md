@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.impartialTak_five_firstPlayerWins
 ---
 
-# Impartial Tak five first Player Wins
+# The first player wins Impartial Tak on the $5 \times 5$ board
 
-Proposition 3: in Impartial Tak on the `5 × 5` board the first player wins. The mirroring
-strategy of the paper is not formalized; only the outcome is stated.
+**The first player wins Impartial Tak on the $5 \times 5$ board.** Impartial Tak is the
+impartial placement game on the $n \times n$ board in which the players alternately place a token
+on an empty cell, play ends once the tokens contain a road, and the player unable to move loses.
+On the $5 \times 5$ board the first player wins from the empty board.
 
 ## Depends on
 
-- [Placement First Player Wins](placement-first-player-wins.md)
-- [Tak Has Road](tak-has-road.md)
+- [First-player win in a placement game](placement-first-player-wins.md)
+- [Roads in Impartial Tak](tak-has-road.md)
 
 ## Sources
 

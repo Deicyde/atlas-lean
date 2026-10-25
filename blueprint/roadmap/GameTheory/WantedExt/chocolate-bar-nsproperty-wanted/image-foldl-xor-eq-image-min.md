@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.image_foldl_xor_eq_image_min
 ---
 
-# Image foldl xor eq image min
+# Nim-sum sets under clamping by functions with the NS property
 
-Identity of Lemma 6: if `f t` (`t < m`) have the NS property and `x t ≤ f t z`, then
-`{x 0 ⊕ ⋯ ⊕ x (m-1) ⊕ w : w < z} = {min (x 0) (f 0 w) ⊕ ⋯ ⊕ min (x (m-1)) (f (m-1) w) ⊕ w : w < z}`.
-The printed left-hand nim-sum carries a stray index `j ≠ i` with `i` unbound; it is read as the
+**Nim-sum sets under clamping by functions with the NS property.** Let $m \in \mathbb{N}$,
+let $f_0, \dots, f_{m-1} : \mathbb{N} \to \mathbb{N}$ have the NS property, and let
+$x_0, \dots, x_{m-1}, z \in \mathbb{N}$ satisfy $x_t \le f_t(z)$ for every $t < m$. Then
+
+$$
+\{x_0 \oplus \cdots \oplus x_{m-1} \oplus w : w < z\} =
+\{\min(x_0, f_0(w)) \oplus \cdots \oplus \min(x_{m-1}, f_{m-1}(w)) \oplus w : w < z\},
+$$
+
+where $\oplus$ denotes nim-sum (bitwise exclusive or).
+
+The printed left-hand nim-sum carries a stray index $j \ne i$ with $i$ unbound; it is read as the
 full nim-sum, as in Lemma 5 (the case of two functions), which the proof generalises.
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
+- [NS property](has-nsproperty.md)
 
 ## Sources
 

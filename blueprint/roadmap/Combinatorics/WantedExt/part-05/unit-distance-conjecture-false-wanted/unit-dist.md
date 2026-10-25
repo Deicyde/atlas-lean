@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Unit Dist Num](../../../../Geometry/MathlibExt/metric/unit-dist-num.md)
+- [Number of unit distances](../../../../Geometry/MathlibExt/metric/unit-dist-num.md)
 
 ## Sources
 

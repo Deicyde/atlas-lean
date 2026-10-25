@@ -7,15 +7,16 @@ proof: formalized
 lean: Polynomial.isKComplete_self
 ---
 
-# Is KComplete self
+# A $k$-complete polynomial is a permutation polynomial
 
-The level condition includes index `0`, so a `k`-complete polynomial is
-itself a permutation polynomial.
+**A $k$-complete polynomial is a permutation polynomial.** Let $F$ be a finite field,
+$f \in F[X]$ and $k$ a natural number. If $f$ is complete to level $k$, then $f$ is a
+permutation polynomial.
 
 ## Depends on
 
-- [Is KComplete](is-kcomplete.md)
-- [Is Permutation Polynomial](is-permutation-polynomial.md)
+- [Polynomial complete to level $k$](is-kcomplete.md)
+- [Permutation polynomial over a finite field](is-permutation-polynomial.md)
 
 ## Sources
 

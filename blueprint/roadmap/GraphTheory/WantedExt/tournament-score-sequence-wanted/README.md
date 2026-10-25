@@ -4,11 +4,11 @@ navigation: module
 
 # Tournament Score Sequence
 
-- [Is Tournament](is-tournament.md)
+- [Tournament](is-tournament.md)
 - [Score](score.md)
-- [Is Reducible](is-reducible.md)
-- [Is Circular Triad](is-circular-triad.md)
-- [Theorem 1](egf-factorial-choose.md)
-- [Theorem 4](landau-score-sequence.md)
-- [Theorem 5](is-reducible-iff.md)
-- [Theorem 6](card-circular-triads.md)
+- [Reducible tournament](is-reducible.md)
+- [Circular triad](is-circular-triad.md)
+- [Exponential generating function of a shifted binomial sequence](egf-factorial-choose.md)
+- [Landau's theorem on score sequences](landau-score-sequence.md)
+- [Moon's reducibility criterion](is-reducible-iff.md)
+- [Moon's count of circular triads](card-circular-triads.md)

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.not_hasNSProperty_id
 ---
 
-# Not has NSProperty id
+# The identity function lacks the NS property
 
-The identity function does not have the NS property (`⌊0/2⌋ = ⌊1/2⌋` but `0 ≠ 1`).
+**The identity function lacks the NS property.** The identity function on the natural
+numbers does not have the NS property: $\lfloor 0/2 \rfloor = \lfloor 1/2 \rfloor$, but
+$0 \ne 1$.
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
+- [NS property](has-nsproperty.md)
 
 ## Sources
 

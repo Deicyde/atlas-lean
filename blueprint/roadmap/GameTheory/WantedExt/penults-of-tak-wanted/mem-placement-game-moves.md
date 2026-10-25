@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.mem_placementGame_moves
 ---
 
-# Mem placement Game moves
+# Moves of a placement game
 
-The moves of `placementGame`: place a token on an empty cell of a position where play has
-not ended.
+**Moves of a placement game.** Let $\alpha$ be a finite set of cells and $E$ a predicate on
+subsets of $\alpha$ saying when play has ended. In the placement game on $\alpha$ with end
+predicate $E$, a position $T$ is a move from a position $S$ if and only if $E(S)$ fails and
+$T = S \cup \{c\}$ for some cell $c \notin S$.
 
 ## Depends on
 
-- [Impartial Game](../../MathlibExt/sprague-grundy/impartial-game.md)
-- [Placement Game](placement-game.md)
+- [Impartial game](../../MathlibExt/sprague-grundy/impartial-game.md)
+- [The placement game](placement-game.md)
 
 ## Sources
 

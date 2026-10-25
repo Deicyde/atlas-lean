@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsExactSlowNimBasicA1
 ---
 
-# Is Exact Slow Nim Basic A1
+# Basic vectors of type (A1)
 
-Basic vectors of type (A1): `Σ z = k b`, every `z i ≤ b`, `b` odd, exactly one `z i` even.
+**Basic vectors of type (A1).** Let $k$ and $b$ be natural numbers. A vector
+$z = (z_0, \dots, z_k)$ of $k + 1$ natural numbers is basic of type (A1) for $b$ when
+$z_0 + \dots + z_k = kb$, $z_i \le b$ for every $i$, $b$ is odd, and exactly one $z_i$ is even.
 
 ## Depends on
 

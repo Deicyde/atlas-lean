@@ -5,8 +5,8 @@ navigation: module
 
 # Cyclic Sublattice
 
-- [Is Cyclic Sublattice](is-cyclic-sublattice.md)
-- [Is Cyclic Sublattice iff](is-cyclic-sublattice-iff.md)
-- [Le](le.md)
-- [Is Add Cyclic quotient](is-add-cyclic-quotient.md)
-- [Mk](mk.md)
+- [Cyclic sublattice of a subgroup](is-cyclic-sublattice.md)
+- [Characterization of cyclic sublattices](is-cyclic-sublattice-iff.md)
+- [A cyclic sublattice is contained in its ambient subgroup](le.md)
+- [The quotient by a cyclic sublattice is cyclic](is-add-cyclic-quotient.md)
+- [Criterion for a cyclic sublattice](mk.md)

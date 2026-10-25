@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNim_critical_of_even
 ---
 
-# Corollary 1 (i)
+# Moves from critical positions with even parameter (Corollary 1 (i))
 
-**Corollary 1 (i)**, Case (A). Let `x` be `m`-critical with `m` even and positive. Then `x`
-is all odd or all even. If `x` is all even, some entry is `< m`; every move that reduces all
-entries equal to `m` leads to an `(m - 1)`-critical position; and the M-move is such a move.
-The positivity of `m` and the restriction of the move claims to even `x` are deviations; see the
-audit row.
+**Moves from critical positions with even parameter (Corollary 1 (i)).** Let $k \ge 1$, let
+$m > 0$ be even, and let $x \in \mathbb{N}^{k+1}$ be an $m$-critical position of Slow$\{k\}$-Nim
+on $k + 1$ stacks. Then the entries of $x$ are either all odd or all even. If they are all even,
+then some entry satisfies $x_i < m$; every option $y$ of $x$ with $y_i < x_i$ for every $i$ such
+that $x_i = m$ is $(m - 1)$-critical; and the position $x'$ obtained from $x$ by the M-move
+satisfies $x'_i < x_i$ for every $i$ with $x_i = m$ and is $(m - 1)$-critical.
+
+The hypothesis $m > 0$ and the restriction of the move claims to all-even $x$ are deviations from
+the source.
 
 ## Depends on
 
-- [Is Exact Slow Nim Critical](is-exact-slow-nim-critical.md)
-- [Exact Slow Nim MRule Move](exact-slow-nim-mrule-move.md)
+- [$m$-critical positions of exact slow $k$-NIM](is-exact-slow-nim-critical.md)
+- [The M-move](exact-slow-nim-mrule-move.md)
 - [Options in Slow A-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-moves.md)
 
 ## Sources

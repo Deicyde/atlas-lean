@@ -5,9 +5,9 @@ navigation: module
 
 # Inscribed Rectangles
 
-- [Axis Aligned Rectangle Corners](axis-aligned-rectangle-corners.md)
-- [Rectangle Corners](rectangle-corners.md)
-- [Is Inscribed Rectangle](is-inscribed-rectangle.md)
-- [Aspect Ratio](aspect-ratio.md)
-- [X](x.md)
-- [Theorem 1](theorem-1.md)
+- [Axis-aligned rectangle](axis-aligned-rectangle-corners.md)
+- [Rotated rectangle](rectangle-corners.md)
+- [Inscribed rectangle](is-inscribed-rectangle.md)
+- [Aspect ratio](aspect-ratio.md)
+- [Aspect-ratio parameters of inscribed rectangles](x.md)
+- [Hugelmeyer's theorem on aspect ratios of inscribed rectangles](theorem-1.md)

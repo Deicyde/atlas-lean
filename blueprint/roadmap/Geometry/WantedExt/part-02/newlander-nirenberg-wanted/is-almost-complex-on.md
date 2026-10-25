@@ -6,14 +6,17 @@ statement: formalized
 lean: MathlibExt.Geometry.NewlanderNirenbergWanted.Geometry.NewlanderNirenberg.IsAlmostComplexOn
 ---
 
-# Is Almost Complex On
+# Almost complex structure on a subset of $\mathbb{R}^{2n}$
 
-`J` is an **almost complex structure** on an open set `U ⊆ ℝ^{2n}` if it
-is a smooth field of endomorphisms on `U` squaring to `-1`.
+**Almost complex structure on a subset of $\mathbb{R}^{2n}$.** Let $n$ be a natural number,
+let $U \subseteq \mathbb{R}^{2n}$ and let $J$ assign to each point $y \in \mathbb{R}^{2n}$ a real
+linear map $J(y) : \mathbb{R}^{2n} \to \mathbb{R}^{2n}$. Then $J$ is an almost complex structure
+on $U$ if $J$ is $C^\infty$ on $U$ and $J(x)(J(x)v) = -v$ for every $x \in U$ and every
+$v \in \mathbb{R}^{2n}$.
 
 ## Depends on
 
-- [E](e.md)
+- [Model space $\mathbb{R}^{2n}$ for the Newlander–Nirenberg theorem](e.md)
 
 ## Sources
 

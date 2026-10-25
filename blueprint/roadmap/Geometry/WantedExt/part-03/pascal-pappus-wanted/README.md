@@ -4,8 +4,8 @@ navigation: module
 
 # Pascal Pappus
 
-- [Same Point](same-point.md)
-- [On Conic](on-conic.md)
-- [Meet](meet.md)
-- [Collinear3](collinear3.md)
-- [Pascal](pascal.md)
+- [Same projective point](same-point.md)
+- [Points on a conic](on-conic.md)
+- [Meet of two lines](meet.md)
+- [Collinear projective points](collinear3.md)
+- [Pascal's theorem](pascal.md)

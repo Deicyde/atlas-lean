@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.nimPassGrundy_eq_xor_iff
 ---
 
-# Nim Pass Grundy eq xor iff
+# Nim with a restricted pass
 
-Nim on `s` piles with a one-time pass usable only while `m j ≤ x j` for some pile `j`,
-played as the chocolate bar `CB(F, x₁, …, x_s, p)` with `F = nimPassIndicator m`: removing
-stones sets `p` to `min (F x') p`, and the pass lowers `p` from `1` to `0`. For positive
-thresholds, the Grundy number is `x₁ ⊕ ⋯ ⊕ x_s ⊕ p` at every position with `p ≤ F x` iff every
-`m i` is even.
+**Nim with a restricted pass.** Let $s \in \mathbb{N}$ and $m \in \mathbb{N}^s$ with $m_i > 0$
+for every $i < s$, and let $F : \mathbb{N}^s \to \mathbb{N}$ be the pass indicator of $m$:
+$F(x) = 1$ if $m_j \le x_j$ for some $j$, and $F(x) = 0$ otherwise. Write $\oplus$ for nim-sum.
+Then the following are equivalent: (a) for all $x \in \mathbb{N}^s$ and $p \in \mathbb{N}$ with
+$p \le F(x)$, the Grundy number of the chocolate bar $\mathrm{CB}(F, x_0, \dots, x_{s-1}, p)$ is
+$x_0 \oplus \cdots \oplus x_{s-1} \oplus p$; (b) $m_i$ is even for every $i < s$.
+
+The bar is Nim on $s$ piles with a one-time pass usable only while $F(x) = 1$: removing stones
+from a pile, reaching $x'$, replaces $p$ by $\min(F(x'), p)$, and the pass lowers $p$ from $1$
+to $0$.
 
 ## Depends on
 
-- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
-- [Nim Pass Indicator](nim-pass-indicator.md)
+- [Grundy number of a chocolate bar with a height function](height-chocolate-bar-grundy.md)
+- [Pass indicator of Nim with a restricted pass](nim-pass-indicator.md)
 
 ## Sources
 

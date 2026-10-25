@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.ITSP.IsAffineHyperplane
 ---
 
-# Is Affine Hyperplane
+# Affine hyperplanes in $\mathbb{R}^d$
 
-Affine hyperplane in `Fin d → ℝ` [OWR-1183-011]: an affine subspace
-that is the level set of a nonzero linear functional.
+**Affine hyperplanes in $\mathbb{R}^d$.** An affine subspace $A$ of $\mathbb{R}^d$ is an affine
+hyperplane when there are a nonzero linear functional $\ell \colon \mathbb{R}^d \to \mathbb{R}$ and
+a real number $c$ such that $A = \{x \in \mathbb{R}^d : \ell(x) = c\}$.
 
 ## Depends on
 
@@ -18,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted](../../../../../sources/v2/WantedExt.md)
+- `OWR-1183-011`.

@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.impartialTak_penult_cross_nonempty
 ---
 
-# Impartial Tak penult cross nonempty
+# Every Cross meets an Impartial Tak penult
 
-Proposition 8: in an Impartial Tak penult every Cross (an interior cell together with its four
+**Every Cross meets an Impartial Tak penult.** Impartial Tak is the placement game on the
+$n \times n$ board whose play ends once the tokens contain a road. Let $S$ be an Impartial Tak
+penult on the $n \times n$ board and let $c$ be an interior cell, that is, a cell in neither the
+first nor the last row and in neither the first nor the last column. Then $S$ contains $c$ or a
+cell orthogonally adjacent to $c$: every Cross (an interior cell together with its four
 orthogonal neighbours) contains a token.
 
 ## Depends on
 
-- [Placement Penult](placement-penult.md)
-- [Tak Adjacent](tak-adjacent.md)
-- [Tak Has Road](tak-has-road.md)
+- [Penults of a placement game](placement-penult.md)
+- [Orthogonal adjacency](tak-adjacent.md)
+- [Roads in Impartial Tak](tak-has-road.md)
 
 ## Sources
 

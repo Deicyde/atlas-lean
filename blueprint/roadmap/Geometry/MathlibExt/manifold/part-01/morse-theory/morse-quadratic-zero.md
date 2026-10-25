@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.Geometry.Manifold.MorseTheoryWanted.morseQuadratic_zero
 ---
 
-# Morse Quadratic zero
+# The Morse quadratic form vanishes at the origin
 
-The Morse quadratic form vanishes at the origin.
+**The Morse quadratic form vanishes at the origin.** For all natural numbers $k$ and $n$, the
+Morse quadratic form $Q_{k,n}$ of index $k$ on $\mathbb{R}^n$ satisfies $Q_{k,n}(0) = 0$.
 
 ## Depends on
 
-- [Morse Quadratic](morse-quadratic.md)
+- [Morse quadratic form](morse-quadratic.md)
 
 ## Sources
 

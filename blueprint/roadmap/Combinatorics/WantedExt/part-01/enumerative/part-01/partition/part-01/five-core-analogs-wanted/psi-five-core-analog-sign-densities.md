@@ -18,7 +18,7 @@ $\bar b_5(n) < 0$ has lower density at least $1/10$.
 ## Depends on
 
 - [The ψ-analog of the 5-core partition function](psi-five-core-analog.md)
-- [Lower Density](../../../../../../../../Data/MathlibExt/set/density/lower-density.md)
+- [Lower density](../../../../../../../../Data/MathlibExt/set/density/lower-density.md)
 
 ## Sources
 

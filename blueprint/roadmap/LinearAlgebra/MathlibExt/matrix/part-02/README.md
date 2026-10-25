@@ -8,7 +8,7 @@ navigation: transparent
 - [Positive Minors](positive-minors/README.md)
 - [Real SVD](real-svd/README.md)
 - [Reduced Row Echelon](reduced-row-echelon/README.md)
-- [Rouche Capelli](rouche-capelli.md)
+- [Rouché–Capelli theorem](rouche-capelli.md)
 - [Sign Condition Number](sign-condition-number/README.md)
 - [Sign Condition Number Decay](sign-condition-number-decay/README.md)
 - [Simultaneous Diagonalization](simultaneous-diagonalization/README.md)

@@ -7,9 +7,12 @@ proof: formalized
 lean: BurnsidePaqb.all_roots_eq_of_norm_eq
 ---
 
-# All roots eq of norm eq
+# Characters of full absolute value have equal eigenvalues
 
-If `‖χ g‖` attains the degree, all characteristic roots of `ρ g` coincide.
+**Characters of full absolute value have equal eigenvalues.** Let $G$ be a finite group,
+$V$ a nonzero finite-dimensional complex vector space and $\rho$ an irreducible representation of
+$G$ on $V$ with character $\chi$. If $g \in G$ satisfies $|\chi(g)| = \dim V$, then any two roots
+of the characteristic polynomial of $\rho(g)$ are equal.
 
 ## Depends on
 
@@ -17,10 +20,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Abs multiset sum lt](../killing-lemma/abs-multiset-sum-lt.md)
-- [Character eq sum roots](../killing-lemma/character-eq-sum-roots.md)
-- [Charpoly root norm eq one](../killing-lemma/charpoly-root-norm-eq-one.md)
-- [Charpoly roots card](../killing-lemma/charpoly-roots-card.md)
+- [Strict triangle inequality for unit complex numbers, multiset form](../killing-lemma/abs-multiset-sum-lt.md)
+- [Character value as the sum of characteristic roots](../killing-lemma/character-eq-sum-roots.md)
+- [Eigenvalues of a finite group representation have modulus one](../killing-lemma/charpoly-root-norm-eq-one.md)
+- [Number of characteristic roots of a representation matrix](../killing-lemma/charpoly-roots-card.md)
 
 ## Sources
 

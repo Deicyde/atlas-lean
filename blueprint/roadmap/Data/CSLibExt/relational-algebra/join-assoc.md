@@ -13,14 +13,14 @@ The natural join is associative.
 ## Depends on
 
 - [Tuple](tuple.md)
-- [Join](join.md)
+- [Natural join](join.md)
 
 ## Proof depends on
 
-- [Compatible](compatible.md)
+- [Compatible tuples](compatible.md)
 - [Compatibility with a merge, grouped from the left](compatible-merge-left.md)
 - [Compatibility with a merge, grouped from the right](compatible-merge-right.md)
-- [Merge](merge.md)
+- [Merge of two tuples](merge.md)
 
 ## Sources
 

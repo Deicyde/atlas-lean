@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.strongProd
 ---
 
-# Strong Prod
+# Strong product of graphs
 
-The strong product `G ⊠ H`: the formula product for
-`(g₁ = g₂ ∧ h₁h₂ ∈ E) ∨ (g₁g₂ ∈ E ∧ h₁ = h₂) ∨ (g₁g₂ ∈ E ∧ h₁h₂ ∈ E)`.
+**Strong product of graphs.** For simple graphs $G$ on $V$ and $H$ on $W$, the strong
+product $G \boxtimes H$ is the simple graph on $V \times W$ in which $(g_1, h_1)$ and
+$(g_2, h_2)$ are adjacent if and only if $g_1 = g_2$ and $h_1 h_2$ is an edge of $H$, or
+$g_1 g_2$ is an edge of $G$ and $h_1 = h_2$, or $g_1 g_2$ is an edge of $G$ and $h_1 h_2$ is
+an edge of $H$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Formula Product](formula-product.md)
+- [Graph product given by a Boolean formula](formula-product.md)
 
 ## Sources
 

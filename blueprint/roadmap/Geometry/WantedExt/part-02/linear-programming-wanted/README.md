@@ -7,14 +7,14 @@ navigation: module
 
 ## Convex Geometry
 
-- [Linear Program](linear-program.md)
+- [Linear program](linear-program.md)
 
 ## Linear Program
 
-- [Feasible](feasible.md)
-- [Objective](objective.md)
+- [Feasible region of a linear program](feasible.md)
+- [Objective function of a linear program](objective.md)
 
 ## Convex Geometry
 
-- [Lp maximum principle](lp-maximum-principle.md)
-- [Simplex algorithm](simplex-algorithm.md)
+- [Maximum principle for linear programming](lp-maximum-principle.md)
+- [Optimal vertices of linear programs](simplex-algorithm.md)

@@ -7,10 +7,13 @@ proof: formalized
 lean: Matrix.exists_unitaryGroup_diagonal_nonneg
 ---
 
-# SVD
+# Singular value decomposition of a complex square matrix
 
-Singular value decomposition: every square complex matrix is `U * diagonal σ * star V` for some
-`U V : Matrix.unitaryGroup n ℂ` and nonnegative `σ`.
+**Singular value decomposition of a complex square matrix.** Let $A$ be a square complex matrix
+whose rows and columns are indexed by a finite type $n$. Then there are unitary matrices $U$ and $V$
+and nonnegative real numbers $\sigma_i$ for $i \in n$ such that, writing $D$ for the diagonal
+matrix with diagonal entries $\sigma_i$ and $V^*$ for the conjugate transpose of $V$, we have
+$A = U D V^*$.
 
 ## Depends on
 

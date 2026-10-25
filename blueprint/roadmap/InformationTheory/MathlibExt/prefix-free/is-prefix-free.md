@@ -6,11 +6,12 @@ statement: formalized
 lean: MathlibExt.InformationTheory.IsPrefixFree
 ---
 
-# Is Prefix Free
+# Prefix-free code
 
-A code is prefix-free when no two distinct source symbols map to words in a
-prefix relation. Since the condition quantifies over all ordered pairs of
-distinct symbols, both prefix directions are forbidden.
+**Prefix-free code.** A code $c$ assigning to each source symbol a finite word over an
+alphabet is prefix-free if for all distinct symbols $a_1 \ne a_2$ the word $c(a_1)$ is not a
+prefix of $c(a_2)$. Since the condition covers all ordered pairs of distinct symbols, both
+prefix directions are forbidden.
 
 ## Depends on
 

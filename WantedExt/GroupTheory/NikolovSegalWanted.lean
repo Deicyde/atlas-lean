@@ -59,8 +59,8 @@ complete. In particular, its topology is determined by its underlying abstract g
   groups*](https://doi.org/10.4007/annals.2007.165.239).
 -/
 
-/-- A topological group is topologically finitely generated if some finite set generates a dense
-abstract subgroup. -/
+/-- **Topologically finitely generated group.** A topological group is topologically finitely
+generated if some finite set generates a dense abstract subgroup. -/
 def IsTopologicallyFinitelyGenerated
     (G : Type*) [Group G] [TopologicalSpace G] [IsTopologicalGroup G] : Prop :=
   ∃ S : Finset G, (Subgroup.closure (S : Set G)).topologicalClosure = ⊤

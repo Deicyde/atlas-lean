@@ -12,16 +12,16 @@ lean: Cslib.CodingTheory.Hamming74.existsUnique_hammingDist_le_one
 
 ## Depends on
 
-- [Code](code.md)
-- [Linear Code](../linear-code/linear-code.md)
+- [The Hamming (7,4) code](code.md)
+- [Linear code](../linear-code/linear-code.md)
 
 ## Proof depends on
 
-- [Decode](decode.md)
-- [Decode mem code](decode-mem-code.md)
-- [Hamming Dist decode le one](hamming-dist-decode-le-one.md)
-- [Min Dist code](min-dist-code.md)
-- [Min Dist](../linear-code/min-dist.md)
+- [Syndrome decoder of the Hamming code](decode.md)
+- [The decoder always outputs a codeword](decode-mem-code.md)
+- [The Hamming decoder changes at most one bit](hamming-dist-decode-le-one.md)
+- [Minimum distance of the Hamming (7,4) code](min-dist-code.md)
+- [Minimum distance](../linear-code/min-dist.md)
 
 ## Sources
 

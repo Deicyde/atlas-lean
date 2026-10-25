@@ -6,20 +6,20 @@ proof: formalized
 lean: MovingSofa.square_canPassZ
 ---
 
-# Square can Pass Z
+# Z-corridor passage of the unit square for large separations
 
-The unit square passes the Z corridor for all sufficiently large
-separations.
+**Z-corridor passage of the unit square for large separations.** There is a real $D$ such
+that for every $d \ge D$ the unit square passes the Z corridor with corner separation $d$.
 
 ## Depends on
 
-- [Can Pass Z](can-pass-z.md)
-- [Unit Square](unit-square.md)
+- [Passing the Z corridor for all large separations](can-pass-z.md)
+- [Unit square](unit-square.md)
 
 ## Proof depends on
 
-- [Can Pass ZAt](can-pass-zat.md)
-- [Square can Pass ZAt](square-can-pass-zat.md)
+- [Passing the Z corridor at a given separation](can-pass-zat.md)
+- [Z-corridor passage of the unit square](square-can-pass-zat.md)
 
 ## Sources
 

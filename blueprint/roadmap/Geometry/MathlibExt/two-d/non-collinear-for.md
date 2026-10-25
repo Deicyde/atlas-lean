@@ -6,10 +6,10 @@ statement: formalized
 lean: EuclideanGeometry.NonCollinearFor
 ---
 
-# Non Collinear For
+# Sets with no $n$ collinear points
 
-We say a subset `S` of points is non-collinear for $n$ points
-if it contains no $n$ points that lie on the same line.
+**Sets with no $n$ collinear points.** A set $S$ of points in a Euclidean affine space has no
+$n$ collinear points if no subset of $S$ consisting of exactly $n$ points is collinear.
 
 ## Depends on
 

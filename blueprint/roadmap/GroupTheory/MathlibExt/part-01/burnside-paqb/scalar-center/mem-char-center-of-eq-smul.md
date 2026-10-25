@@ -7,13 +7,15 @@ proof: formalized
 lean: BurnsidePaqb.mem_charCenter_of_eq_smul
 ---
 
-# Mem char Center of eq smul
+# Elements acting by a scalar lie in the scalar center
 
-A scalar action puts an element in the scalar center.
+**Elements acting by a scalar lie in the scalar center.** Let $\rho$ be a representation of a
+group $G$ on a nonzero complex vector space $V$. If $g \in G$ and $c \in \mathbb{C}$ satisfy
+$\rho(g) = c \cdot \mathrm{id}_V$, then $g$ lies in the scalar center of $\rho$.
 
 ## Depends on
 
-- [Char Center](char-center.md)
+- [Scalar center of a representation](char-center.md)
 
 ## Sources
 

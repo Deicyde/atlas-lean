@@ -7,18 +7,24 @@ proof: formalized
 lean: MathlibExt.InformationTheory.Shearer.shearer_entropy_inequality
 ---
 
-# Shearer entropy inequality
+# Shearer's entropy inequality
 
-Finite Shearer: `k`-cover `C` gives `k * H(full) ≤ ∑_{S∈C} H(S)`.
+**Shearer's entropy inequality.** Let $\alpha$ be a nonempty finite set, $n$ a natural number,
+and $\mu$ a probability mass function on $\alpha^n$, that is, $\mu(x) \ge 0$ for all
+$x \in \alpha^n$ and $\sum_{x \in \alpha^n} \mu(x) = 1$. Write $H(\mu)$ for the full entropy of
+$\mu$ and, for a set $S$ of coordinates in $\{0, \dots, n-1\}$, write $H_S(\mu)$ for the
+marginal entropy of $\mu$ on $S$. Let $C$ be a set of subsets of $\{0, \dots, n-1\}$ and
+$k \ge 1$ an integer such that every coordinate lies in at least $k$ members of $C$. Then
+$k \, H(\mu) \le \sum_{S \in C} H_S(\mu)$.
 
 ## Depends on
 
-- [Shearer Full Entropy](shearer-full-entropy.md)
-- [Shearer Marginal Entropy](shearer-marginal-entropy.md)
+- [Joint entropy](shearer-full-entropy.md)
+- [Marginal entropy](shearer-marginal-entropy.md)
 
 ## Proof depends on
 
-- [Shearer entropy inequality general](shearer-entropy-inequality-general.md)
+- [Shearer's entropy inequality for every cover multiplicity](shearer-entropy-inequality-general.md)
 
 ## Sources
 

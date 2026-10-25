@@ -6,13 +6,15 @@ proof: formalized
 lean: MovingSofa.square_area
 ---
 
-# Square area
+# The unit square has area one
 
-Canonical planar Lebesgue measure assigns the square area one.
+**The unit square has area one.** The unit square
+$\{z \in \mathbb{C} : 0 \le \operatorname{Re} z \le 1,\ 0 \le \operatorname{Im} z \le 1\}$ has
+Lebesgue measure $1$.
 
 ## Depends on
 
-- [Unit Square](unit-square.md)
+- [Unit square](unit-square.md)
 
 ## Sources
 

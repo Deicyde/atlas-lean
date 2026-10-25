@@ -6,15 +6,18 @@ statement: formalized
 lean: ConvexCovering.directionalInteriorCoveringNumbersEqual
 ---
 
-# Directional Interior Covering Numbers Equal
+# Directional illumination number equals the interior-translate covering number
 
-Directional illumination equals covering by actual translates of the interior.
+**Directional illumination number equals the interior-translate covering number.** For every
+$n \ge 1$ and every convex body $K \subseteq \mathbb{R}^n$, the directional illumination number of
+$K$ equals the least $q$ such that $K$ is covered by $q$ translates of its interior
+$\operatorname{int} K$. Both sides take the value $\infty$ when no finite family exists.
 
 ## Depends on
 
-- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
-- [Directional Illumination Number](../../../../MathlibExt/convex/illumination/directional-illumination-number.md)
-- [Translate Covering Number](../../../../MathlibExt/convex/covering/translate-covering-number.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Directional illumination number](../../../../MathlibExt/convex/illumination/directional-illumination-number.md)
+- [Translate covering number](../../../../MathlibExt/convex/covering/translate-covering-number.md)
 
 ## Sources
 

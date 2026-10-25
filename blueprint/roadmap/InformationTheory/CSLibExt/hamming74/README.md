@@ -4,23 +4,23 @@ navigation: module
 
 # Hamming74
 
-- [G](g.md)
-- [H](h.md)
-- [Code](code.md)
-- [Encode](encode.md)
-- [Message](message.md)
-- [Error Pos](error-pos.md)
-- [Table](table.md)
-- [Decode](decode.md)
+- [Generator matrix of the Hamming (7,4) code](g.md)
+- [Parity-check matrix of the Hamming (7,4) code](h.md)
+- [The Hamming (7,4) code](code.md)
+- [Encoder of the Hamming code](encode.md)
+- [Message bits of a word](message.md)
+- [Error position of a syndrome](error-pos.md)
+- [Syndrome table of the Hamming (7,4) code](table.md)
+- [Syndrome decoder of the Hamming code](decode.md)
 - [Error Pos syndrome single](error-pos-syndrome-single.md)
-- [Is Syndrome Table table](is-syndrome-table-table.md)
+- [The Hamming decoder's syndrome table is correct](is-syndrome-table-table.md)
 
 ## The code
 
-- [G mul H transpose](g-mul-h-transpose.md)
-- [Of Generator G eq code](of-generator-g-eq-code.md)
-- [Three le min Weight code](three-le-min-weight-code.md)
-- [Min Dist code](min-dist-code.md)
+- [The Hamming decoder's syndrome table is correct](g-mul-h-transpose.md)
+- [The Hamming generator matrix generates the Hamming code](of-generator-g-eq-code.md)
+- [The Hamming (7,4) code has minimum weight at least 3](three-le-min-weight-code.md)
+- [Minimum distance of the Hamming (7,4) code](min-dist-code.md)
 
 ## Decoding
 
@@ -29,9 +29,9 @@ navigation: module
 
 ## The code is perfect
 
-- [Decode mem code](decode-mem-code.md)
-- [Hamming Dist decode le one](hamming-dist-decode-le-one.md)
+- [The decoder always outputs a codeword](decode-mem-code.md)
+- [The Hamming decoder changes at most one bit](hamming-dist-decode-le-one.md)
 - [The Hamming code is perfect](exists-unique-hamming-dist-le-one.md)
-- [Hamming Dist decode le](hamming-dist-decode-le.md)
-- [Pow finrank mul sum le](pow-finrank-mul-sum-le.md)
+- [No codeword is closer than the Hamming decoder's output](hamming-dist-decode-le.md)
+- [Hamming bound for the Hamming (7,4) code](pow-finrank-mul-sum-le.md)
 - [The Hamming bound is attained](pow-finrank-mul-sum-eq.md)

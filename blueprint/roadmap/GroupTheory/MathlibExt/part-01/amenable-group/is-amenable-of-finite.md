@@ -7,14 +7,16 @@ proof: formalized
 lean: isAmenable_of_finite
 ---
 
-# Is Amenable of finite
+# Finite groups are amenable
 
-Every finite group is amenable: the whole group `Finset.univ` is invariant under
-left translation, so it is a Følner set with symmetric-difference ratio `0`.
+**Finite groups are amenable.** Every finite group is amenable.
+
+The whole group $F = G$ is invariant under left translation, so it is a Følner set whose
+symmetric-difference ratio is $0$.
 
 ## Depends on
 
-- [Is Amenable](is-amenable.md)
+- [Amenable group (Følner condition)](is-amenable.md)
 
 ## Sources
 

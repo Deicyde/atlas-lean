@@ -1986,11 +1986,17 @@ private theorem pick_polygon_doubled (vertices : Finset (Fin 2 → ℤ))
       · exact finish (e j₁) (e j₀) hj₁V hj₀V hj₁pos hj₀neg
           (by simpa [openSegment_symm ℝ] using hybd)
 
-/-- Pick's area formula for convex standard-lattice polygons:
-`area = I + B / 2 - 1`, where `I` counts interior lattice points and `B`
-counts boundary lattice points. The polygon is the full-dimensional convex
-hull of finitely many integer-coordinate vertices (`hfull` rules out
-degenerate cases); `B` counts integer points on the frontier of the hull.
+/-- **Pick's theorem for convex lattice polygons.** Let $V \subset \mathbb{Z}^2$ be a finite
+set of lattice points, let $P \subset \mathbb{R}^2$ be the convex hull of $V$, and suppose that
+$P$ has nonempty interior. Let $I$ be the number of points of $\mathbb{Z}^2$ in the interior of
+$P$ and $B$ the number of points of $\mathbb{Z}^2$ on the boundary of $P$. Then the area
+(two-dimensional Lebesgue measure) of $P$ equals $I + B/2 - 1$.
+
+Proof: The triangle case counts lattice points in a half-open fundamental
+parallelogram. A crossing diagonal then cuts larger polygons into two smaller
+full-dimensional lattice polygons, allowing strong induction on the vertex set.
+
+Proves `Wanted` entry `pick_convex_lattice_polygon`.
 
 Sources: Eugen J. Ionascu, "A Parametrization of Equilateral Triangles
 Having Integer Coordinates", Journal of Integer Sequences 10 (2007),
@@ -2007,12 +2013,6 @@ Article 05.5.2, generalized lattice version
 `A(P) = δ * (h + b / 2 - 1)`, lines 633–638 (this module is the `δ = 1`
 standard-lattice case),
 <https://cs.uwaterloo.ca/journals/JIS/VOL8/Clark/clark80.tex>.
-
-Proves `Wanted` entry `pick_convex_lattice_polygon`.
-
-Proof: The triangle case counts lattice points in a half-open fundamental
-parallelogram. A crossing diagonal then cuts larger polygons into two smaller
-full-dimensional lattice polygons, allowing strong induction on the vertex set.
 -/
 theorem pick_convex_lattice_polygon (vertices : Finset (Fin 2 → ℤ))
     (hfull :

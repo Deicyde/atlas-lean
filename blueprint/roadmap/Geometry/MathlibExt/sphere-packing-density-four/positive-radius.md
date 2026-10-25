@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.SpherePackingDensityFourWanted.PositiveRadius
 ---
 
-# Positive Radius
+# Positive radii
 
-Source: CE2003 Appendix A, positive observation radii tending to infinity.
+**Positive radii.** A positive radius is a real number $R$ with $R > 0$; the positive radii
+form the set $\{R \in \mathbb{R} : R > 0\}$.
 
 ## Depends on
 
@@ -17,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SpherePackingDensityFour](../../../../sources/v2/MathlibExt.md)
+- CE2003 Appendix A, positive observation radii tending to infinity.

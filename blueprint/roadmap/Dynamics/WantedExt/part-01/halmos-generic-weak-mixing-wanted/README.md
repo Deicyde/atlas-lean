@@ -4,6 +4,6 @@ navigation: module
 
 # Halmos Generic Weak Mixing
 
-- [Automorphism](automorphism.md)
-- [Is Weakly Mixing](is-weakly-mixing.md)
-- [Generic weakly mixing](generic-weakly-mixing.md)
+- [Measure-preserving automorphism](automorphism.md)
+- [Weakly mixing automorphism](is-weakly-mixing.md)
+- [Halmos's theorem: weak mixing is generic](generic-weakly-mixing.md)

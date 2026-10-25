@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimMRuleKept
 ---
 
-# Exact Slow Nim MRule Kept
+# Pile kept by the M-rule
 
-The pile kept by the M-move: the first pile holding the smallest even entry if some entry is
-even, and otherwise the first pile holding a largest entry.
+**Pile kept by the M-rule.** For a position $x \in \mathbb{N}^{n+1}$ with piles indexed by
+$0, \dots, n$: if some entry of $x$ is even, the kept pile is the least index $i$ such that $x_i$
+is even and $x_i \le x_j$ for every $j$ with $x_j$ even; otherwise it is the least index $i$
+such that $x_j \le x_i$ for every $j$.
 
 ## Depends on
 

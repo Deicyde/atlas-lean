@@ -6,9 +6,11 @@ statement: formalized
 lean: BurnsidePaqb.classRep
 ---
 
-# Class Rep
+# Chosen representative of a conjugacy class
 
-Chosen representative of each conjugacy class.
+**Chosen representative of a conjugacy class.** For each conjugacy class $K$ of a group $G$,
+the representative of $K$ is an element $g_K \in G$, fixed once and for all by choice, whose
+conjugacy class is $K$.
 
 ## Depends on
 

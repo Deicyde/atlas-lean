@@ -18,7 +18,7 @@ $a_0 e^{\gamma x} \prod_{i \ge 0} (1 + \alpha_i x) / \prod_{i \ge 0} (1 - \beta_
 
 ## Depends on
 
-- [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
+- [Matrices with nonnegative minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
 
 ## Sources
 

@@ -18,17 +18,17 @@ $\pi_{S_i} r$.
 
 - [Is Over](../relational-algebra/is-over-2.md)
 - [Tuple](../relational-algebra/tuple.md)
-- [Is Over](../relational-algebra/is-over.md)
-- [Restrict](../relational-algebra/restrict.md)
+- [Tuple over a schema](../relational-algebra/is-over.md)
+- [Restriction of a tuple](../relational-algebra/restrict.md)
 - [Join of the projections of a relation](join-projections.md)
-- [Project](../relational-algebra/project.md)
+- [Projection of a relation](../relational-algebra/project.md)
 - [Schema Union](schema-union.md)
 
 ## Proof depends on
 
-- [Compatible](../relational-algebra/compatible.md)
-- [Merge](../relational-algebra/merge.md)
-- [Join](../relational-algebra/join.md)
+- [Compatible tuples](../relational-algebra/compatible.md)
+- [Merge of two tuples](../relational-algebra/merge.md)
+- [Natural join](../relational-algebra/join.md)
 - [Join Unit](join-unit.md)
 - [Membership in a join](../relational-algebra/mem-join-iff.md)
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isAlmostOpposable_strongGrid
 ---
 
-# Is Almost Opposable strong Grid
+# Almost opposability of strong grids
 
-Every strong grid `⊠_{i=1}^k P_{nᵢ}` with `k ≥ 1` and all `nᵢ ≥ 1` is almost
-opposable.
+**Almost opposability of strong grids.** Let $k \ge 1$ and $n_1, \dots, n_k \ge 1$. Then the
+$k$-dimensional strong grid $P_{n_1} \boxtimes \cdots \boxtimes P_{n_k}$, the strong product of the
+paths $P_{n_i}$ on $n_i$ vertices, is almost opposable.
 
 ## Depends on
 
-- [Is Almost Opposable](is-almost-opposable.md)
-- [Strong Grid](strong-grid.md)
+- [Almost opposable graph](is-almost-opposable.md)
+- [Strong grid](strong-grid.md)
 
 ## Sources
 

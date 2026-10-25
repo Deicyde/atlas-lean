@@ -7,22 +7,23 @@ proof: formalized
 lean: MathlibExt.GroupTheory.ClassFunctionWanted.finrank_classFunctions_eq_card_conjClasses
 ---
 
-# Finrank class Functions eq card conj Classes
+# Dimension of the space of class functions
 
-The space of class functions has dimension equal to the number of conjugacy
-classes.
+**Dimension of the space of class functions.** Let $G$ be a finite group and $k$ a field.
+The space of class functions $G \to k$ is a $k$-vector space whose dimension equals the
+number of conjugacy classes of $G$.
 
-Proof: Use `classFunctionsEquivConjClasses` and
-`Module.finrank_fintype_fun_eq_card`, after obtaining a finite quotient from
-`ConjClasses.mk_surjective`.
+Proof: The linear isomorphism between class functions and functions on conjugacy classes
+reduces this to the space of all functions from the finite set of conjugacy classes of
+$G$ to $k$, whose dimension is the number of conjugacy classes.
 
 ## Depends on
 
-- [Class Functions](class-functions.md)
+- [The space of class functions](class-functions.md)
 
 ## Proof depends on
 
-- [Class Functions Equiv Conj Classes](class-functions-equiv-conj-classes.md)
+- [Class functions as functions on conjugacy classes](class-functions-equiv-conj-classes.md)
 
 ## Sources
 

@@ -6,21 +6,22 @@ proof: formalized
 lean: MathlibExt.FieldTheory.EssentialDimensionSymmetric.trdeg_rootsField
 ---
 
-# Trdeg roots Field
+# Transcendence degree of $\mathbb{C}(x_1, \dots, x_n)$
 
-The transcendence degree of the function field over `ℂ` is `n`, as a
+**Transcendence degree of $\mathbb{C}(x_1, \dots, x_n)$.** For every $n \in \mathbb{N}$, the
+function field $\mathbb{C}(x_1, \dots, x_n)$ has transcendence degree $n$ over $\mathbb{C}$, as a
 cardinal.
 
 ## Depends on
 
-- [Roots Field](roots-field.md)
+- [The function field $\mathbb{C}(x_1, \dots, x_n)$](roots-field.md)
 
 ## Proof depends on
 
-- [Algebraic Independent root](algebraic-independent-root.md)
-- [Is Algebraic adjoin roots](is-algebraic-adjoin-roots.md)
-- [Root](root.md)
-- [Root injective](root-injective.md)
+- [The roots are algebraically independent](algebraic-independent-root.md)
+- [Rational functions are algebraic over the polynomial subalgebra](is-algebraic-adjoin-roots.md)
+- [The roots $x_i$](root.md)
+- [The roots $x_i$ are pairwise distinct](root-injective.md)
 
 ## Sources
 

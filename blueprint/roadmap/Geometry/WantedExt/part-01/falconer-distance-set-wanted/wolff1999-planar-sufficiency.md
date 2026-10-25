@@ -6,9 +6,11 @@ statement: formalized
 lean: FalconerDistanceSetWanted.wolff1999PlanarSufficiency
 ---
 
-# Wolff1999 Planar Sufficiency
+# Wolff's planar distance set condition, as a proposition
 
-Wolff's strict compact planar `4/3` sufficient threshold.
+**Wolff's planar distance set condition, as a proposition.** The proposition that every
+compact set $E \subseteq \mathbb{R}^2$ with Hausdorff dimension greater than $4/3$ has a distance
+set $\{|x - y| : x, y \in E\}$ of positive Lebesgue measure.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Planar Threshold Property](../../../MathlibExt/falconer-distance-set/planar-threshold-property.md)
+- [Planar Falconer threshold property](../../../MathlibExt/falconer-distance-set/planar-threshold-property.md)
 
 ## Sources
 

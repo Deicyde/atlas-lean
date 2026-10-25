@@ -7,17 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.IsEventuallyPeriodic.of_witness
 ---
 
-# Of witness
+# Explicit period and preperiod give eventual periodicity
 
-Constructor for eventual periodicity (concept `jis_sem_2c65b9e5cf5a27c75318c558`;
-source statements `jis_2541b4a8b30e59c04cfc2cab`, `jis_6271663997522001b37d9cd0`,
-`jis_7be4cb01363efa6d047e19af`, `jis_9f6420ee91649658b50a752a`, clause `witness_api`):
-explicit period and preperiod witnesses give eventual periodicity.
+**Explicit period and preperiod give eventual periodicity.** Let $\alpha$ be a type and
+$u : \mathbb{N} \to \alpha$ a sequence. If there are natural numbers $p > 0$ and $n_0$ such that
+$u(n + p) = u(n)$ for every natural number $n \ge n_0$, then $u$ is eventually periodic.
 
 ## Depends on
 
-- [Is Eventually Periodic](is-eventually-periodic.md)
+- [Eventually periodic sequences](is-eventually-periodic.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.EventuallyPeriodicSequence](../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_2c65b9e5cf5a27c75318c558`; source statements `jis_2541b4a8b30e59c04cfc2cab`, `jis_6271663997522001b37d9cd0`, `jis_7be4cb01363efa6d047e19af`, `jis_9f6420ee91649658b50a752a`, clause `witness_api`.

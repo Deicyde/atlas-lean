@@ -6,13 +6,16 @@ statement: formalized
 lean: MathlibExt.GraphTheory.ErdosProblem1034Wanted.conjecture_refuted
 ---
 
-# Conjecture refuted
+# The Erdős–Faudree triangle conjecture is false
 
-Resolved false: Disproved by Ma and Tang (formalized in Lean), per erdosproblems.com/1034.
+**The Erdős–Faudree triangle conjecture is false.** It is not true that for every real
+$\varepsilon > 0$ and all sufficiently large $n$, every simple graph on the vertex set
+$\{0, \dots, n-1\}$ with more than $n^2/4$ edges contains a triangle $T$ and a set of more than
+$(1/2 - \varepsilon)n$ vertices, each adjacent to two distinct vertices of $T$.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Erdős–Faudree triangle conjecture](conjecture.md)
 
 ## Sources
 

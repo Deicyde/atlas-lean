@@ -6,10 +6,11 @@ statement: formalized
 lean: distinctDistancesFrom
 ---
 
-# Distinct Distances From
+# Number of distinct distances from a point
 
-Given a finite set of points in a metric space, we define the number of distinct distances
-between a given point and all other points.
+**Number of distinct distances from a point.** For a finite set $P$ of points in a metric
+space and a point $x$ of the space, this is the number of distinct values
+$\operatorname{dist}(y, x)$ with $y$ a point of $P$ other than $x$.
 
 ## Depends on
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Polar Decomposition GL
 
-- [Polar decomposition gl real](polar-decomposition-gl-real.md)
-- [Polar decomposition gl complex](polar-decomposition-gl-complex.md)
+- [Polar decomposition of invertible real matrices](polar-decomposition-gl-real.md)
+- [Polar decomposition of invertible complex matrices](polar-decomposition-gl-complex.md)

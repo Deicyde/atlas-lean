@@ -4,5 +4,5 @@ navigation: collection
 
 # WantedExt
 
-- [Complex Partial Fractions Wanted](rat-func-partial-fractions-complex.md)
-- [Real Partial Fractions Wanted](rat-func-partial-fractions-real.md)
+- [Partial fraction decomposition over $\mathbb{C}$](rat-func-partial-fractions-complex.md)
+- [Partial fraction decomposition over $\mathbb{R}$](rat-func-partial-fractions-real.md)

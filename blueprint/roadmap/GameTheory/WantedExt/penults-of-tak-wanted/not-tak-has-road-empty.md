@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.not_takHasRoad_empty
 ---
 
-# Not tak Has Road empty
+# The empty board has no Tak road
 
-The empty board has no road.
+**The empty board has no Tak road.** For every $n$, the empty $n \times n$ board contains no
+road of Impartial Tak.
 
 ## Depends on
 
-- [Tak Has Road](tak-has-road.md)
+- [Roads in Impartial Tak](tak-has-road.md)
 
 ## Proof depends on
 
-- [Tak Adjacent](tak-adjacent.md)
+- [Orthogonal adjacency](tak-adjacent.md)
 
 ## Sources
 

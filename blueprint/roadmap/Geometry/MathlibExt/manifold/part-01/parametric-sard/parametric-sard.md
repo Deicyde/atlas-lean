@@ -18,11 +18,11 @@ finite-dimensional measure-zero form with `fderiv ℝ F` surjective hypothesis.
 
 ## Depends on
 
-- [Bad Parameter Set](bad-parameter-set.md)
+- [Bad parameter set](bad-parameter-set.md)
 
 ## Proof depends on
 
-- [Sard euclidean open](../sard/sard-euclidean-open.md)
+- [Sard's theorem on open subsets of finite-dimensional spaces](../sard/sard-euclidean-open.md)
 - [Image Null](../../../../../MeasureTheory/MathlibExt/measure/measure-image-null-of-locally-null.md)
 
 ## Sources

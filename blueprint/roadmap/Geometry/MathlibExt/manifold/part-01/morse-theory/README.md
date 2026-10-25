@@ -5,8 +5,8 @@ navigation: module
 
 # Morse Theory
 
-- [Morse Quadratic](morse-quadratic.md)
-- [Morse Quadratic zero](morse-quadratic-zero.md)
-- [Cont Diff morse Quadratic](cont-diff-morse-quadratic.md)
-- [Morse Quadratic zero index](morse-quadratic-zero-index.md)
-- [Morse Quadratic of le](morse-quadratic-of-le.md)
+- [Morse quadratic form](morse-quadratic.md)
+- [The Morse quadratic form vanishes at the origin](morse-quadratic-zero.md)
+- [Smoothness of the Morse quadratic form](cont-diff-morse-quadratic.md)
+- [The Morse quadratic form of index zero](morse-quadratic-zero-index.md)
+- [The Morse quadratic form when the index is at least the dimension](morse-quadratic-of-le.md)

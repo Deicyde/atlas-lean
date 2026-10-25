@@ -16,7 +16,7 @@ Then $\operatorname{ed}(S_5) = 2$.
 
 ## Depends on
 
-- [Ed Sn](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/ed-sn.md)
+- [Essential dimension of the symmetric group](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/ed-sn.md)
 
 ## Sources
 

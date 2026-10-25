@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Eventually Periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+- [Eventually periodic sequences](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ heights are even, or $p_0$ is even and $p_1$, $p_2$, $p_3$ are odd.
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [Slow$A$-Nim](slow-anim-game.md)
 
 ## Sources

@@ -5,7 +5,7 @@ navigation: module
 
 # Hyperplane Slicing Universal
 
-- [Is Convex Body](is-convex-body.md)
-- [Is Hyperplane](is-hyperplane.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Convex bodies in $\mathbb{R}^n$](is-convex-body.md)
+- [Hyperplanes in $\mathbb{R}^n$](is-hyperplane.md)
+- [Hyperplane slicing conjecture](conjecture.md)
+- [Hyperplane slicing theorem](conjecture-holds.md)

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Dynamics.EinsiedlerKatokLindenstraussWanted.Dynamics.EinsiedlerKatokLindenstrauss.distToNearestInt
 ---
 
-# Dist To Nearest Int
+# Distance to the nearest integer
 
-The distance from a real number to the nearest integer.
+**Distance to the nearest integer.** For a real number $x$, this is $|x - r|$, where $r$
+is the integer nearest to $x$ (halves rounded up); equivalently, it is the minimum of
+$|x - n|$ over all integers $n$.
 
 ## Depends on
 

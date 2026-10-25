@@ -13,7 +13,7 @@ P-position if and only if its total number of tokens $p_1 + \dots + p_n$ is even
 
 ## Depends on
 
-- [Is P](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
+- [P-positions](../../../../GameTheory/MathlibExt/sprague-grundy/is-p.md)
 - [Slow$A$-Nim](slow-anim-game.md)
 
 ## Sources

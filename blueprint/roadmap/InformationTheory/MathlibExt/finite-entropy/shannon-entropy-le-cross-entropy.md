@@ -13,8 +13,8 @@ truth `p`.
 
 ## Depends on
 
-- [Cross Entropy](cross-entropy.md)
-- [Shannon Entropy](shannon-entropy.md)
+- [Cross-entropy](cross-entropy.md)
+- [Shannon entropy](shannon-entropy.md)
 
 ## Proof depends on
 

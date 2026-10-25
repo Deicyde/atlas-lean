@@ -6,15 +6,14 @@ statement: formalized
 lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.StrictTotalOrder.lt
 ---
 
-# Lt
+# Preference relation of a strict total order (Arrow's theorem)
 
-Compatibility alias for the former `ArrowWanted.StrictTotalOrder.lt` projection.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.lt` directly.
+**Preference relation of a strict total order (Arrow's theorem).** For a strict total order
+$T$ on a type $\alpha$, this is its underlying binary relation $\lt _T$ on $\alpha$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict preference orders for Arrow's theorem](strict-total-order.md)
 
 ## Proof depends on
 

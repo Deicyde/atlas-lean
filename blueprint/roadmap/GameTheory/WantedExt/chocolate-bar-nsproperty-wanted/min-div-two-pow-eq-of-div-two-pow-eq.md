@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.min_div_two_pow_eq_of_div_two_pow_eq
 ---
 
-# Min div two pow eq of div two pow eq
+# Taking a minimum preserves quotients by powers of two
 
-If `⌊a / 2^k⌋ = ⌊b / 2^k⌋`, then `⌊min a c / 2^k⌋ = ⌊min b c / 2^k⌋` for every `c`.
+**Taking a minimum preserves quotients by powers of two.** Let $a, b, c, k \in \mathbb{N}$. If
+$\lfloor a / 2^k \rfloor = \lfloor b / 2^k \rfloor$, then
+$\lfloor \min(a, c) / 2^k \rfloor = \lfloor \min(b, c) / 2^k \rfloor$.
 
 ## Depends on
 

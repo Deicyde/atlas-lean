@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.placementPenult
 ---
 
-# Placement Penult
+# Penults of a placement game
 
-A position is a penult when it is not terminal and all of its options are ults.
+**Penults of a placement game.** Let $\alpha$ be a finite set of cells and let $E$ be a
+predicate on subsets of $\alpha$, the condition under which play has ended. A position
+$S \subseteq \alpha$ is a penult when it is not terminal and all of its options are ults: $S$ is
+not terminal, and $S \cup \{c\}$ is an ult for every cell $c \notin S$.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Placement Terminal](placement-terminal.md)
-- [Placement Ult](placement-ult.md)
+- [Terminal positions of a placement game](placement-terminal.md)
+- [Ults of a placement game](placement-ult.md)
 
 ## Sources
 

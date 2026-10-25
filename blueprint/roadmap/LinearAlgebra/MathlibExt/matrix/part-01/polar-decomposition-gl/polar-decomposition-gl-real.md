@@ -7,15 +7,16 @@ proof: formalized
 lean: MathlibExt.LinearAlgebra.Matrix.PolarDecompositionGLWanted.polar_decomposition_gl_real
 ---
 
-# Polar decomposition gl real
+# Polar decomposition of invertible real matrices
 
-Polar decomposition in `GL(n, ℝ)`: every invertible real matrix is uniquely the product of an
-orthogonal matrix and a positive-definite symmetric matrix.
+**Polar decomposition of invertible real matrices.** Let $A$ be a real square matrix with rows
+and columns indexed by a finite set, and suppose $\det A \ne 0$. Then there are an orthogonal
+matrix $O$ and a positive-definite symmetric matrix $S$ with $A = OS$, and they are unique: if
+$O'$ is orthogonal, $S'$ is positive-definite symmetric and $A = O'S'$, then $O' = O$ and
+$S' = S$.
 
-Proof: Specialize `Matrix.exists_unique_unitaryGroup_posDef_of_isUnit_det` to `ℝ`, where the
-unitary group is the orthogonal group, and unbundle its unitary witness. The generic proof takes
-`P` to be the CFC square root of `Aᴴ * A` and `U = A * P⁻¹`, the construction in Wikipedia,
-"Polar decomposition".
+Proof: take $S$ to be the positive-definite square root of $A^{\mathsf{T}} A$ and $O = AS^{-1}$,
+the construction in Wikipedia, "Polar decomposition".
 
 ## Depends on
 
@@ -23,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists unique unitary Group pos Def of is Unit det](../factorizations/polar/exists-unique-unitary-group-pos-def-of-i.md)
+- [Uniqueness of the polar decomposition of an invertible matrix](../factorizations/polar/exists-unique-unitary-group-pos-def-of-i.md)
 
 ## Sources
 

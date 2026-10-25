@@ -7,18 +7,20 @@ proof: formalized
 lean: FalconerDistanceSet.planarDistanceThreshold_le_of_property
 ---
 
-# Planar Distance Threshold le of property
+# Thresholds up to two with the planar threshold property bound the planar distance threshold
 
-A sufficient threshold in the interval gives an upper bound for the infimum.
+**Thresholds up to two with the planar threshold property bound the planar distance
+threshold.** For every $s \in [0, \infty]$ with $s \le 2$ that has the planar threshold
+property, the planar distance threshold is at most $s$.
 
 ## Depends on
 
-- [Planar Distance Threshold](planar-distance-threshold.md)
-- [Planar Threshold Property](planar-threshold-property.md)
+- [Planar distance threshold](planar-distance-threshold.md)
+- [Planar Falconer threshold property](planar-threshold-property.md)
 
 ## Proof depends on
 
-- [Planar Distance Threshold le of admissible](planar-distance-threshold-le-of-admissib.md)
+- [Admissible thresholds bound the planar distance threshold](planar-distance-threshold-le-of-admissib.md)
 
 ## Sources
 

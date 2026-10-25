@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.div_two_pow_eq_iff_exists_block
 ---
 
-# Div two pow eq iff exists block
+# Equal quotients by a power of two lie in one dyadic block
 
-For `z < z'`, `⌊z / 2^i⌋ = ⌊z' / 2^i⌋` if and only if `d 2^i ≤ z < z' < (d + 1) 2^i`
-for some `d`.
+**Equal quotients by a power of two lie in one dyadic block.** Let $i$ be a natural number
+and let $z < z'$ be natural numbers. Then $\lfloor z / 2^i \rfloor = \lfloor z' / 2^i \rfloor$ if
+and only if there is a natural number $d$ with $d \cdot 2^i \le z$ and $z' < (d + 1) \cdot 2^i$.
 
 ## Depends on
 

@@ -6,9 +6,12 @@ statement: formalized
 lean: FalconerDistanceSetWanted.falconer1985GeneralSufficiency
 ---
 
-# Falconer1985 General Sufficiency
+# Statement of Falconer's distance set theorem
 
-Falconer's general sufficient exponent is `(d+1)/2`, not `d+1/2`.
+**Statement of Falconer's distance set theorem.** This is the proposition that for every
+integer $d \ge 2$ and every compact set $E \subseteq \mathbb{R}^d$ whose Hausdorff dimension is
+strictly greater than $(d+1)/2$, the distance set $\{\|x - y\| : x, y \in E\}$ has positive
+one-dimensional Lebesgue measure.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Distance Set](../../../MathlibExt/falconer-distance-set/distance-set.md)
+- [Euclidean distance set](../../../MathlibExt/falconer-distance-set/distance-set.md)
 
 ## Sources
 

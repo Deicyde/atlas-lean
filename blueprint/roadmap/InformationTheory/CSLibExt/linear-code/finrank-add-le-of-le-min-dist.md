@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.CodingTheory.LinearCode.finrank_add_le_of_le_minDist
 ---
 
-# Finrank add le of le min Dist
+# Singleton bound for linear codes, dimension form
 
-The **Singleton bound** for linear codes, `dim C + d ≤ n + 1` for every lower bound `d ≤ n`
-on the minimum distance, from MathlibExt's Singleton bound for arbitrary codes. (The hypothesis
-`d ≤ n` matters only for the zero code, whose minimum distance is `⊤`.)
+**Singleton bound for linear codes, dimension form.** Let $C$ be a linear code of length $n$
+over a finite field $F$, and let $d \le n$ be a natural number that is at most the minimum
+distance of $C$. Then $\dim C + d \le n + 1$.
+
+The hypothesis $d \le n$ matters only for the zero code, whose minimum distance is $\infty$.
 
 ## Depends on
 
-- [Linear Code](linear-code.md)
-- [Min Dist](min-dist.md)
+- [Linear code](linear-code.md)
+- [Minimum distance](min-dist.md)
 
 ## Proof depends on
 
-- [Card filter mem](card-filter-mem.md)
+- [Number of codewords of a linear code](card-filter-mem.md)
 - [Singleton bound](../../../Combinatorics/MathlibExt/part-01/coding/singleton-bound.md)
 
 ## Sources

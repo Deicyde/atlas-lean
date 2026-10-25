@@ -5,5 +5,5 @@ navigation: module
 
 # LUDecomposition
 
-- [Exists lu decomposition of minors ne zero](exists-lu-decomposition-of-minors-ne-zer.md)
-- [Lu decomposition unique](lu-decomposition-unique.md)
+- [LU decomposition without pivoting](exists-lu-decomposition-of-minors-ne-zer.md)
+- [Uniqueness of the LU decomposition](lu-decomposition-unique.md)

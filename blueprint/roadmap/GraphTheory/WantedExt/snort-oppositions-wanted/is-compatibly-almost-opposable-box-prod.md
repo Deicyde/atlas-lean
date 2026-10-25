@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isCompatiblyAlmostOpposable_boxProd
 ---
 
-# Is Compatibly Almost Opposable box Prod
+# Cartesian products of compatibly almost opposable graphs
 
-If `G` and `H` are compatibly almost opposable and `G - u` has a compatible
-opposition for some `u` (the admissible set `{u}`), then `G □ H` is compatibly
-almost opposable.
+**Cartesian products of compatibly almost opposable graphs.** Let $G$ and $H$ be compatibly
+almost opposable graphs. Suppose that for some vertex $u$ of $G$ there are an involutive
+automorphism $\alpha$ of $G$ and an opposition $f$ of the induced subgraph $G - u$ on the vertices
+other than $u$ such that $\alpha(x) = f(x)$ for every vertex $x \neq u$. Then the Cartesian product
+$G \square H$ is compatibly almost opposable.
 
 ## Depends on
 
-- [Is Compatibly Almost Opposable](is-compatibly-almost-opposable.md)
-- [Is Opposition](is-opposition.md)
+- [Compatibly almost opposable graphs](is-compatibly-almost-opposable.md)
+- [Oppositions](is-opposition.md)
 
 ## Sources
 

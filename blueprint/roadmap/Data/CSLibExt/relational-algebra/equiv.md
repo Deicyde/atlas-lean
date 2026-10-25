@@ -5,20 +5,24 @@ statement: formalized
 lean: Cslib.Databases.Expr.Equiv
 ---
 
-# Equiv
+# Query equivalence
 
-Query equivalence: both queries are well-formed with the same schema, and they have equal
-values on every database conforming to the schema `sch`.
+**Query equivalence.** Let $\mathrm{sch}$ be a database schema, assigning a finite set of
+attributes to each relation name. Two queries $e$ and $e'$ are equivalent with respect to
+$\mathrm{sch}$ when there is a finite set of attributes $S$ such that the inferred schemas of
+$e$ and of $e'$ with respect to $\mathrm{sch}$ are both $S$ (in particular both queries are
+well-formed), and $e$ and $e'$ evaluate to the same relation on every database that conforms
+to $\mathrm{sch}$.
 
 ## Depends on
 
-- [Expr](expr.md)
+- [Relational algebra queries](expr.md)
 
 ## Proof depends on
 
-- [Conforms](conforms.md)
+- [Databases conforming to a schema](conforms.md)
 - [Eval](eval-2.md)
-- [Schema](schema.md)
+- [Schema of a query](schema.md)
 - [Tuple](tuple.md)
 
 ## Sources

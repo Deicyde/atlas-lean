@@ -7,24 +7,24 @@ navigation: module
 
 ## Set
 
-- [Partial Density](partial-density.md)
+- [Partial density](partial-density.md)
 - [Upper Density](upper-density.md)
-- [Lower Density](lower-density.md)
-- [Has Density](has-density.md)
-- [Has Pos Density](has-pos-density.md)
-- [Int Partial Density](int-partial-density.md)
-- [Has Int Density](has-int-density.md)
+- [Lower density](lower-density.md)
+- [Density of a set](has-density.md)
+- [Positive density](has-pos-density.md)
+- [Two-sided partial density](int-partial-density.md)
+- [Two-sided natural density](has-int-density.md)
 
 ## Has Density
 
-- [Univ](univ.md)
+- [The whole order has density one](univ.md)
 
 ## Nat
 
-- [Has Density even](has-density-even.md)
-- [Has Density zero of finite](has-density-zero-of-finite.md)
-- [Infinite of has Density pos](infinite-of-has-density-pos.md)
+- [Natural density of the even numbers](has-density-even.md)
+- [Finite sets have natural density zero](has-density-zero-of-finite.md)
+- [Sets of nonzero natural density are infinite](infinite-of-has-density-pos.md)
 
 ## Has Density
 
-- [Has Log Density](has-log-density.md)
+- [Logarithmic density](has-log-density.md)

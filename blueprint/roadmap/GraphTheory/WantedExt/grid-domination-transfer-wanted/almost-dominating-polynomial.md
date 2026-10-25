@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.almostDominatingPolynomial
 ---
 
-# Almost Dominating Polynomial
+# Almost dominating polynomial
 
-The generating function `G^σ_{m×(n+1)}(z)` of almost dominating sets with signature `σ`
-on `R □ pathGraph (n + 1)` (Mertens, Definition 2 and Section 2): vertex sets `S` such that no
-vertex outside the last row `Fin.last n` is uncovered, and whose last row has state `σ`.
+**Almost dominating polynomial.** Let $R$ be a finite graph (the row), $n$ a natural number
+and $\sigma$ an assignment of a domination state to each vertex of $R$. Let $H$ be the box
+product of $R$ with the path on the vertices $0, \dots, n$, so that the last row of $H$ consists
+of the vertices $(i, n)$. Relative to a vertex set $S$ of $H$, a vertex is occupied if it lies in
+$S$, covered if it lies outside $S$ but is adjacent to a vertex of $S$, and uncovered otherwise.
+The almost dominating polynomial $G^\sigma(z)$ is the polynomial $\sum_S z^{|S|}$ with integer
+coefficients, the sum running over the vertex sets $S$ of $H$ such that no vertex of $H$ outside
+the last row is uncovered and every vertex $(i, n)$ of the last row has state $\sigma(i)$.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ vertex outside the last row `Fin.last n` is uncovered, and whose last row has st
 
 ## Proof depends on
 
-- [Vertex Domination State](vertex-domination-state.md)
+- [Domination state of a vertex](vertex-domination-state.md)
 
 ## Sources
 

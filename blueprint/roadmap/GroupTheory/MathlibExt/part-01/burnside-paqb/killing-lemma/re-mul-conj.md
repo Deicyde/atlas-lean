@@ -7,9 +7,11 @@ proof: formalized
 lean: BurnsidePaqb.re_mul_conj
 ---
 
-# Re mul conj
+# Real part of a product with a conjugate
 
-Real part of a product with a conjugate, expanded.
+**Real part of a product with a conjugate.** For complex numbers $a$ and $b$,
+$\operatorname{Re} a \operatorname{Re} b + \operatorname{Im} a \operatorname{Im} b =
+\operatorname{Re}(a \bar{b})$.
 
 ## Depends on
 

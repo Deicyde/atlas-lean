@@ -7,23 +7,23 @@ navigation: module
 
 ## Arrow Wanted
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict preference orders for Arrow's theorem](strict-total-order.md)
 
 ## Strict Total Order
 
-- [Mk](mk.md)
-- [Lt](lt.md)
-- [Irrefl](irrefl.md)
-- [Trans](trans.md)
-- [Total](total.md)
+- [Strict total order from a relation (Arrow's theorem)](mk.md)
+- [Preference relation of a strict total order (Arrow's theorem)](lt.md)
+- [Irreflexivity of strict preference (Arrow's theorem)](irrefl.md)
+- [Strict preference orders for Arrow's theorem are transitive](trans.md)
+- [Strict preference orders for Arrow's theorem are total](total.md)
 
 ## Arrow Wanted
 
-- [Profile](profile.md)
+- [Preference profile (Arrow's theorem)](profile.md)
 - [Social Welfare Function](social-welfare-function.md)
-- [Is Pareto](is-pareto.md)
-- [Is IIA](is-iia.md)
-- [Is Dictator](is-dictator.md)
-- [Is Dictatorial](is-dictatorial.md)
-- [Arrow impossibility general](arrow-impossibility-general.md)
-- [Arrow impossibility](arrow-impossibility.md)
+- [Pareto condition](is-pareto.md)
+- [Independence of irrelevant alternatives](is-iia.md)
+- [Dictator of a social welfare function](is-dictator.md)
+- [Dictatorial social welfare function](is-dictatorial.md)
+- [Arrow's impossibility theorem for strict preferences, general form](arrow-impossibility-general.md)
+- [Arrow's impossibility theorem for strict preferences](arrow-impossibility.md)

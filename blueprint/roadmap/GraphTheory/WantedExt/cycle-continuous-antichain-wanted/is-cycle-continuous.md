@@ -6,19 +6,21 @@ statement: formalized
 lean: MathlibExt.GraphTheory.CycleContinuousAntichainWanted.IsCycleContinuous
 ---
 
-# Is Cycle Continuous
+# Cycle-continuous maps
 
-Cycle-continuous map: preimage of every binary cycle in `H` is a binary
-cycle in `G`. Source: [OPG-323] (URL: http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order).
+**Cycle-continuous maps.** Let $G$ and $H$ be multigraphs. A map $f$ from the edges of $G$
+to the edges of $H$ is cycle-continuous when, for every binary cycle $C$ of $H$, the preimage
+$f^{-1}(C)$ is a binary cycle of $G$.
 
 ## Depends on
 
-- [FGraph](fgraph.md)
+- [Multigraphs with loops and parallel edges](fgraph.md)
 
 ## Proof depends on
 
-- [Cycle Space](cycle-space.md)
+- [Binary cycle space](cycle-space.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.CycleContinuousAntichainWanted](../../../../sources/v2/WantedExt.md)
+- [OPG-323] (URL: http://www.openproblemgarden.org/op/antichains_in_the_cycle_continuous_order).

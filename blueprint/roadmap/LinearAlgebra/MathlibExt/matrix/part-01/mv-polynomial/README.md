@@ -5,8 +5,8 @@ navigation: module
 
 # Mv Polynomial
 
-- [Det add smul vec Mul Vec](det-add-smul-vec-mul-vec.md)
-- [Det Linear](det-linear.md)
-- [Coeff one det add X smul](coeff-one-det-add-x-smul.md)
-- [Det Linear add](det-linear-add.md)
-- [Det Linear smul](det-linear-smul.md)
+- [The determinant is affine along a rank-one direction](det-add-smul-vec-mul-vec.md)
+- [First-order term of the determinant](det-linear.md)
+- [The coefficient of $X$ in $\det(B + XA)$](coeff-one-det-add-x-smul.md)
+- [Additivity of the first-order term of the determinant](det-linear-add.md)
+- [Homogeneity of the first-order term of the determinant](det-linear-smul.md)

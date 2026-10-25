@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isOpposable_iff_exists_oppositionMatching
 ---
 
-# Is Opposable iff exists opposition Matching
+# Oppositions and opposition matchings
 
-`G` has an opposition iff its complement has an opposition matching.
+**Oppositions and opposition matchings.** A graph $G$ is opposable if and only if its
+complement $\overline{G}$ has an opposition matching.
 
 ## Depends on
 
-- [Is Opposable](is-opposable.md)
-- [Is Opposition Matching](is-opposition-matching.md)
+- [Opposable graphs](is-opposable.md)
+- [Opposition matchings](is-opposition-matching.md)
 
 ## Sources
 

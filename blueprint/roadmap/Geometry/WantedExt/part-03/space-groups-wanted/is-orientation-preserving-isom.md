@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.Geometry.SpaceGroupsWanted.Geometry.SpaceGroupsProblem.IsOrientationPreservingIsom
 ---
 
-# Is Orientation Preserving Isom
+# Orientation-preserving isometry
 
-An affine isometry is **orientation-preserving** if its linear part
-has positive determinant.
+**Orientation-preserving isometry.** An affine isometry of the Euclidean space $\mathbb{R}^d$
+is orientation-preserving if its linear part has positive determinant.
 
 ## Depends on
 
-- [Crystallographic Shared](../../part-01/e.md)
+- [Euclidean space $\mathbb{R}^d$](../../part-01/e.md)
 
 ## Sources
 

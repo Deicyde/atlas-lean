@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.GroupTheory.ClassFunctionWanted.IsClassFunction.eq_of_isConj
 ---
 
-# Eq of is Conj
+# Class functions agree on conjugate elements
 
-A class function takes equal values on conjugate elements.
+**Class functions agree on conjugate elements.** Let $G$ be a group and let
+$f : G \to k$ be a class function with values in a set $k$. If $x, y \in G$ are conjugate,
+then $f(x) = f(y)$.
 
 ## Depends on
 
-- [Is Class Function](is-class-function.md)
+- [Class functions on a group](is-class-function.md)
 
 ## Sources
 

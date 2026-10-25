@@ -5,6 +5,6 @@ navigation: module
 
 # Perron Frobenius
 
-- [To Complex Matrix](to-complex-matrix.md)
+- [Complexification of a real matrix](to-complex-matrix.md)
 - [Perron frobenius](perron-frobenius.md)
-- [Perron frobenius](perron-frobenius-2.md)
+- [Perron–Frobenius theorem for nonzero irreducible nonnegative matrices](perron-frobenius-2.md)

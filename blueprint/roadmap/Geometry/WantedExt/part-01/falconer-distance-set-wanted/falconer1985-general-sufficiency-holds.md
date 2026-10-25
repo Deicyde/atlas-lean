@@ -6,14 +6,17 @@ statement: formalized
 lean: FalconerDistanceSetWanted.falconer1985GeneralSufficiency_holds
 ---
 
-# Falconer1985 General Sufficiency holds
+# Falconer's distance set theorem
 
-Source: GIOW, arXiv:1808.09346v1, line 76, reporting Falconer (1985).
+**Falconer's distance set theorem.** For every integer $d \ge 2$ and every compact set
+$E \subseteq \mathbb{R}^d$ whose Hausdorff dimension is strictly greater than $(d+1)/2$, the
+distance set $\{\|x - y\| : x, y \in E\}$ has positive one-dimensional Lebesgue measure.
 
 ## Depends on
 
-- [Falconer1985 General Sufficiency](falconer1985-general-sufficiency.md)
+- [Statement of Falconer's distance set theorem](falconer1985-general-sufficiency.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.FalconerDistanceSetWanted](../../../../../sources/v2/WantedExt.md)
+- GIOW, arXiv:1808.09346v1, line 76, reporting Falconer (1985).

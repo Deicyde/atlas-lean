@@ -7,14 +7,16 @@ proof: formalized
 lean: Metric.setBorsukNumber_le_of_cover
 ---
 
-# Set Borsuk Number le of cover
+# A Borsuk cover bounds the Borsuk number
 
-Every actual finite cover bounds the set's least partition number.
+**A Borsuk cover bounds the Borsuk number.** If a set $s$ in the Euclidean space
+$\mathbb{R}^n$ has a $k$-piece Borsuk cover for a natural number $k$, then the Borsuk number of
+$s$ is at most $k$.
 
 ## Depends on
 
-- [Has Borsuk Cover](has-borsuk-cover.md)
-- [Set Borsuk Number](set-borsuk-number.md)
+- [Borsuk covers](has-borsuk-cover.md)
+- [Borsuk number of a set](set-borsuk-number.md)
 
 ## Sources
 

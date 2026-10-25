@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.pal1920TruncatedHexagonUpperBound
 ---
 
-# Pal1920 Truncated Hexagon Upper Bound
+# Statement of Pál's truncated hexagon bound
 
-Pál's truncated hexagon gives the exact upper bound `2 - 2 / √3`.
+**Statement of Pál's truncated hexagon bound.** The proposition that the Lebesgue universal
+covering constant is at most $2 - 2/\sqrt{3}$, the bound given by Pál's truncated hexagon.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+- [Lebesgue universal covering constant](lebesgue-universal-covering-constant.md)
 
 ## Sources
 

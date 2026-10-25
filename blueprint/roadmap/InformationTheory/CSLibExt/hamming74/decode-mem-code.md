@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.CodingTheory.Hamming74.decode_mem_code
 ---
 
-# Decode mem code
+# The decoder always outputs a codeword
 
-The decoder always outputs a codeword.
+**The decoder always outputs a codeword.** For every word $y \in \mathbb{F}_2^7$, the
+decoding of $y$ belongs to the Hamming code.
 
 ## Depends on
 
-- [Code](code.md)
-- [Decode](decode.md)
-- [Linear Code](../linear-code/linear-code.md)
+- [The Hamming (7,4) code](code.md)
+- [Syndrome decoder of the Hamming code](decode.md)
+- [Linear code](../linear-code/linear-code.md)
 
 ## Proof depends on
 
-- [H](h.md)
+- [Parity-check matrix of the Hamming (7,4) code](h.md)
 - [Syndrome](../linear-code/syndrome.md)
 
 ## Sources

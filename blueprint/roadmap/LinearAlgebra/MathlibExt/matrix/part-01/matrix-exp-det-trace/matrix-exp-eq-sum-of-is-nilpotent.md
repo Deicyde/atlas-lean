@@ -7,11 +7,13 @@ proof: formalized
 lean: MathlibExt.LinearAlgebra.Matrix.MatrixExpDetTraceWanted.matrix_exp_eq_sum_of_isNilpotent
 ---
 
-# Matrix exp eq sum of is Nilpotent
+# Exponential of a nilpotent matrix
 
-The exponential of a nilpotent matrix is a finite partial sum of the exponential series.
+**Exponential of a nilpotent matrix.** If $A$ is a nilpotent complex square matrix indexed by a
+finite set, then there is a natural number $m$ such that
+$e^A = \sum_{k=0}^{m-1} \frac{1}{k!} A^k$, where $e^A$ is the matrix exponential.
 
-Proof: if `A ^ m = 0`, every term of the exponential series from index `m` on vanishes.
+Proof: if $A^m = 0$, every term of the exponential series from index $m$ on vanishes.
 
 ## Depends on
 

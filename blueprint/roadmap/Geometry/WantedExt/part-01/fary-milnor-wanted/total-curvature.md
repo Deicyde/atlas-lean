@@ -6,19 +6,22 @@ statement: formalized
 lean: MathlibExt.Geometry.FaryMilnorWanted.Geometry.FaryMilnorProblem.totalCurvature
 ---
 
-# Total Curvature
+# Total curvature of a space curve
 
-Total curvature over one `2π` period, against arc length.
+**Total curvature of a space curve.** For a curve $r \colon \mathbb{R} \to \mathbb{R}^3$ with
+velocity $r'$ and curvature $\kappa$, the total curvature of $r$ is the arc-length integral
+$\int_0^{2\pi} \kappa(t) \, \lVert r'(t) \rVert \, dt$ over one period, where the integral is taken
+to be $0$ if the integrand is not integrable.
 
 ## Depends on
 
-- [Space](space.md)
+- [Euclidean 3-space](space.md)
 
 ## Proof depends on
 
-- [Curvature](curvature.md)
-- [Period](period.md)
-- [Velocity](velocity.md)
+- [Curvature of a space curve](curvature.md)
+- [Period of a parametrised knot](period.md)
+- [Velocity of a space curve](velocity.md)
 
 ## Sources
 

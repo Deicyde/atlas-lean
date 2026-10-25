@@ -16,6 +16,6 @@ navigation: collection
 - [General Position](general-position/README.md)
 - [Hurwitz Transform](hurwitz-transform/README.md)
 - [Kernels Lemma](kernels-lemma/README.md)
-- [Left Exact](exact-and-surjective-iff-forall-lcomp.md)
+- [Hom detects exact sequences ending in a surjection](exact-and-surjective-iff-forall-lcomp.md)
 - [Smith Normal Form](smith-normal-form/README.md)
 - [Triangularization](triangularization/README.md)

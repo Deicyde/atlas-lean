@@ -8,18 +8,22 @@ lean: InformationTheory.crossEntropy_eq_shannonEntropy_add_klDiv
 
 # Cross-entropy is entropy plus divergence
 
-**Cross-entropy is entropy plus divergence**: `H(p, q) = H(p) + KL(p ‖ q) / log 2` in bits,
-for all finite laws. When `p` charges an outcome `q` rules out, both sides are `∞`.
+**Cross-entropy is entropy plus divergence.** For probability mass functions $p$ and $q$ on a
+finite alphabet, the cross-entropy $H(p, q)$ in bits equals $H(p) + D(p \parallel q) / \ln 2$,
+where $H(p)$ is the Shannon entropy of $p$ in bits and $D(p \parallel q)$ is the
+Kullback–Leibler divergence of $p$ from $q$ with the natural logarithm. The identity holds in
+$[0, \infty]$ with no support hypothesis: when $p$ charges an outcome that $q$ rules out, both
+sides are $\infty$.
 
 ## Depends on
 
-- [Cross Entropy](cross-entropy.md)
-- [Shannon Entropy](shannon-entropy.md)
+- [Cross-entropy](cross-entropy.md)
+- [Shannon entropy](shannon-entropy.md)
 
 ## Proof depends on
 
 - [Surprisal](surprisal.md)
-- [To Real kl Div to Measure](to-real-kl-div-to-measure.md)
+- [Kullback–Leibler divergence of finite probability laws](to-real-kl-div-to-measure.md)
 
 ## Sources
 

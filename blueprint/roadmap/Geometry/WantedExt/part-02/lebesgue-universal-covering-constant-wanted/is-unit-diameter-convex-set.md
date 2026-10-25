@@ -6,14 +6,15 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.IsUnitDiameterConvexSet
 ---
 
-# Is Unit Diameter Convex Set
+# Convex sets of diameter one
 
-The source's quantified objects: nonempty convex planar sets whose metric
-diameter is exactly `1`. Nonemptiness excludes the totalized empty diameter.
+**Convex sets of diameter one.** A set $K$ in the Euclidean plane $\mathbb{R}^2$ is a
+unit-diameter convex set when it is nonempty and convex and its diameter
+$\sup_{x, y \in K} \lVert x - y \rVert$ is exactly $1$.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane of Lebesgue's covering problem](plane.md)
 
 ## Sources
 

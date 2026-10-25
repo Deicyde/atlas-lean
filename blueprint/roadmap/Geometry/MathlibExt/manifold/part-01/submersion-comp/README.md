@@ -10,5 +10,5 @@ navigation: module
 - [Comp](comp-2.md)
 - [Comp](comp-3.md)
 - [Comp](comp-4.md)
-- [Submersion At comp](submersion-at-comp.md)
-- [Submersion comp](submersion-comp.md)
+- [Composition of submersions at a point](submersion-at-comp.md)
+- [Composition of submersions](submersion-comp.md)

@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.CodingTheory.LinearCode.exists_isSyndromeTable
 ---
 
-# Exists is Syndrome Table
+# Existence of correct syndrome tables
 
-Correct syndrome tables exist for every radius.
+**Existence of correct syndrome tables.** Let $H$ be a matrix over a field $F$ whose columns
+are indexed by a finite set. For every natural number $t$ there is a syndrome table for $H$ that
+is correct up to radius $t$.
 
 ## Depends on
 
-- [Is Syndrome Table](is-syndrome-table.md)
+- [Syndrome table correct up to a radius](is-syndrome-table.md)
 
 ## Proof depends on
 

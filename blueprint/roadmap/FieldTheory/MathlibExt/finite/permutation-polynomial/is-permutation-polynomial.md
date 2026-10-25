@@ -6,10 +6,10 @@ statement: formalized
 lean: Polynomial.IsPermutationPolynomial
 ---
 
-# Is Permutation Polynomial
+# Permutation polynomial over a finite field
 
-A polynomial over a finite field is a permutation polynomial when its
-evaluation self-map is bijective.
+**Permutation polynomial over a finite field.** A polynomial $f$ over a finite field $F$ is a
+permutation polynomial when its evaluation map $F \to F$, $x \mapsto f(x)$, is bijective.
 
 ## Depends on
 

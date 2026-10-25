@@ -7,16 +7,19 @@ proof: formalized
 lean: MathlibExt.GroupTheory.FiniteGroupConvolutionWanted.conv_single_one
 ---
 
-# Conv single one
+# The delta function at the identity is a left unit for convolution
 
-The delta function at the identity is a left identity for convolution.
+**The delta function at the identity is a left unit for convolution.** Let $G$ be a finite group,
+write $f \ast g$ for the convolution $(f \ast g)(x) = \sum_{y \in G} f(y)\, g(y^{-1} x)$ of
+functions on $G$, and let $\delta_1 : G \to \mathbb{C}$ be given by $\delta_1(1) = 1$ and
+$\delta_1(x) = 0$ for $x \neq 1$. Then $\delta_1 \ast f = f$ for every $f : G \to \mathbb{C}$.
 
 Proof: Expand the convolution and collapse the sum at the unique nonzero value
-of `Pi.single`, following the identity-element argument in Terras, Ch. 1.
+of the delta function, following the identity-element argument in Terras, Ch. 1.
 
 ## Depends on
 
-- [Conv](conv.md)
+- [Convolution on a finite group](conv.md)
 
 ## Sources
 

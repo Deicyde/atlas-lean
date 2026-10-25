@@ -6,9 +6,10 @@ statement: formalized
 lean: Function.IsStrictlyPreperiodicPt
 ---
 
-# Is Strictly Preperiodic Pt
+# Strictly preperiodic point
 
-A strictly preperiodic point is preperiodic but not periodic.
+**Strictly preperiodic point.** A point $x$ is strictly preperiodic for a self-map $f$ when it
+is preperiodic for $f$ but not periodic, that is, there is no $n > 0$ with $f^n(x) = x$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Preperiodic Pt](is-preperiodic-pt.md)
+- [Preperiodic point](is-preperiodic-pt.md)
 
 ## Sources
 

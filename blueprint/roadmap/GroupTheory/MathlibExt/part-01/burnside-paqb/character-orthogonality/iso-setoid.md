@@ -6,9 +6,11 @@ statement: formalized
 lean: BurnsidePaqb.Simple.isoSetoid
 ---
 
-# Iso Setoid
+# Isomorphism of simple representations
 
-Isomorphism classes of simple `FDRep`s: two simples are related when isomorphic.
+**Isomorphism of simple representations.** For a finite group $G$, two simple
+finite-dimensional complex representations of $G$ are related when they are isomorphic; this is an
+equivalence relation on the simple finite-dimensional complex representations of $G$.
 
 ## Depends on
 

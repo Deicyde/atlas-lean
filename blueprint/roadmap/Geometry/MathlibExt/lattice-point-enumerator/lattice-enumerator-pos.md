@@ -6,11 +6,15 @@ statement: formalized
 lean: LatticePointEnumerator.latticeEnumeratorPos
 ---
 
-# Lattice Enumerator Pos
+# Lattice-point enumerator
 
-Source-domain enumerator `L_P(t)` for bounded `P` and positive `t`, as in
-Rocha-Neves, lines 24-31. The `hb` proof rules out unbounded `P`, where
-`ncard` would silently return junk `0`.
+**Lattice-point enumerator.** For a natural number $d$, a bounded set
+$P \subseteq \mathbb{R}^d$ and a real number $t > 0$, the lattice-point enumerator $L_P(t)$ is
+the number of points of the integer lattice $\mathbb{Z}^d$ in the dilate
+$tP = \{tp : p \in P\}$, that is, $L_P(t) = |(tP) \cap \mathbb{Z}^d|$.
+
+Since $P$ is bounded, the set $(tP) \cap \mathbb{Z}^d$ is finite, so $L_P(t)$ is its actual
+number of elements.
 
 ## Depends on
 
@@ -18,8 +22,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lattice Enumerator](lattice-enumerator.md)
+- [Lattice-point count of a real dilate](lattice-enumerator.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointEnumerator](../../../../sources/v2/MathlibExt.md)
+- Rocha-Neves, A Fourier-analytic Uniqueness Theorem for Lattice-point Enumerators, arXiv:2608.11078v1, lines 24-31.

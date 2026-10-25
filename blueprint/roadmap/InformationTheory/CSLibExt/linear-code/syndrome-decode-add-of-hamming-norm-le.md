@@ -6,26 +6,32 @@ proof: formalized
 lean: Cslib.CodingTheory.LinearCode.syndromeDecode_add_of_hammingNorm_le
 ---
 
-# Syndrome decoding corrects every error of weight at most `t`
+# Syndrome decoding corrects every error of weight at most $t$
 
-**Syndrome decoding corrects every error of weight at most `t`** when `2t < d`: the error
-pattern the table returns differs from the true error by a codeword of weight at most `2t`,
-which must be zero.
+**Syndrome decoding corrects every error of weight at most $t$.** Let $H$ be a parity-check
+matrix over a field $F$, let $C$ be the code with parity-check matrix $H$, let
+$d \in \mathbb{N} \cup \{\infty\}$ be its minimum distance, and let $t \in \mathbb{N}$ with
+$2t < d$. If a syndrome table is correct up to radius $t$ for $H$, then for every codeword
+$c \in C$ and every word $e$ of Hamming weight at most $t$, syndrome decoding with this table
+sends the received word $c + e$ to $c$.
+
+The error pattern the table returns differs from the true error by a codeword of weight at most
+$2t$, which must be zero.
 
 ## Depends on
 
-- [Linear Code](linear-code.md)
-- [Is Syndrome Table](is-syndrome-table.md)
-- [Min Dist](min-dist.md)
-- [Of Parity Check](of-parity-check.md)
+- [Linear code](linear-code.md)
+- [Syndrome table correct up to a radius](is-syndrome-table.md)
+- [Minimum distance](min-dist.md)
+- [Code with a given parity-check matrix](of-parity-check.md)
 - [Syndrome decoding](syndrome-decode.md)
 
 ## Proof depends on
 
-- [Min Dist eq min Weight](min-dist-eq-min-weight.md)
-- [Min Weight](min-weight.md)
+- [Minimum distance equals minimum weight](min-dist-eq-min-weight.md)
+- [Minimum weight](min-weight.md)
 - [Syndrome](syndrome.md)
-- [Syndrome add of mem](syndrome-add-of-mem.md)
+- [The syndrome depends only on the error](syndrome-add-of-mem.md)
 - [Hamming Dist eq hamming Norm sub](hamming-dist-eq-hamming-norm-sub.md)
 
 ## Sources

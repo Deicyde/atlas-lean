@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.platonicCount
 ---
 
-# Platonic Count
+# Number of Platonic polytopes
 
-`p_d` — count of Platonic polytopes in dimension `d` up to similarity,
-in `ℕ∞ = ℕ ∪ {⊤}` so `⊤` records "infinitely many".
+**Number of Platonic polytopes.** For $d \in \mathbb{N}$, $p_d \in \mathbb{N} \cup \{\infty\}$
+is the number of similarity classes of regular convex polytopes in $\mathbb{R}^d$, with
+$p_d = \infty$ when there are infinitely many classes.
 
 ## Depends on
 
@@ -16,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Convex Polytope](convex-polytope.md)
-- [Regular Polytopes](regular-polytopes.md)
-- [Regular Similar](regular-similar.md)
+- [Convex polytope](convex-polytope.md)
+- [Regular polytopes](regular-polytopes.md)
+- [Similarity of regular polytopes](regular-similar.md)
 
 ## Sources
 

@@ -5,20 +5,23 @@ statement: formalized
 lean: InformationTheory.conditionalPrefixOptimum
 ---
 
-# Conditional Prefix Optimum
+# Conditional-prefix optimum of a joint law
 
-The fixed-law conditional-prefix entropy optimum, preserving empty-infimum infinity.
+**Conditional-prefix optimum of a joint law.** For a finite joint law $p$ of $(X, Y)$, this
+is the infimum in the extended reals of the conditional entropy $H(Y \mid S)$ in bits over all
+finite extensions of $p$ by an auxiliary variable $S$ such that $I(X; S) = 0$ and
+$H(Y \mid X, S) = 0$. The infimum of the empty set is $+\infty$.
 
 ## Depends on
 
-- [Finite Joint Law](finite-joint-law.md)
+- [Finite joint law](finite-joint-law.md)
 
 ## Proof depends on
 
-- [Finite Extension](finite-extension.md)
-- [Auxiliary Information](auxiliary-information.md)
-- [Conditional Entropy](conditional-entropy.md)
-- [Output Given Input Auxiliary Entropy](output-given-input-auxiliary-entropy.md)
+- [Finite extension of a joint law](finite-extension.md)
+- [Mutual information between the input and the auxiliary](auxiliary-information.md)
+- [Conditional entropy of the output given the auxiliary](conditional-entropy.md)
+- [Conditional entropy of the output given the input and the auxiliary](output-given-input-auxiliary-entropy.md)
 
 ## Sources
 

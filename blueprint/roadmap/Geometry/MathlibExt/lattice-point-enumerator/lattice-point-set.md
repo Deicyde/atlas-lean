@@ -6,10 +6,13 @@ statement: formalized
 lean: LatticePointEnumerator.latticePointSet
 ---
 
-# Lattice Point Set
+# Lattice points in a dilate
 
-Lattice-point set `(t • P) ∩ ℤᵈ` for a real dilate `t`. General helper; the
-source only evaluates at `t > 0` (see `latticePointSetPos`).
+**Lattice points in a dilate.** For a natural number $d$, a set $P \subseteq \mathbb{R}^d$
+and a real number $t$, this is the set $(tP) \cap \mathbb{Z}^d$ of points of the integer lattice
+$\mathbb{Z}^d$ in the dilate $tP = \{tp : p \in P\}$.
+
+The source only uses this set for $t > 0$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Std Lattice](std-lattice.md)
+- [The standard integer lattice](std-lattice.md)
 
 ## Sources
 

@@ -6,9 +6,12 @@ statement: formalized
 lean: BurnsidePaqb.linearCharHom
 ---
 
-# Linear Char Hom
+# A linear character as a homomorphism to $\mathbb{C}^\times$
 
-The scalar character of a degree-1 representation, as a hom to units.
+**A linear character as a homomorphism to $\mathbb{C}^\times$.** Let $G$ be a finite group and
+let $\rho$ be a representation of $G$ on a complex vector space $V$ of dimension $1$, with
+character $\chi$. This is the group homomorphism from $G$ to the multiplicative group
+$\mathbb{C}^\times$ of nonzero complex numbers that sends $g$ to $\chi(g)$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eq smul one of finrank one](eq-smul-one-of-finrank-one.md)
+- [One-dimensional representations act by their character](eq-smul-one-of-finrank-one.md)
 
 ## Sources
 

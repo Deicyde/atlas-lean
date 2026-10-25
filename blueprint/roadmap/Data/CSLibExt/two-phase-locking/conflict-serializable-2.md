@@ -6,27 +6,27 @@ proof: formalized
 lean: Cslib.Databases.StrictTwoPhase.conflictSerializable
 ---
 
-# Strict two-phase locking
+# Strict two-phase locking theorem
 
-**Strict two-phase locking** produces conflict-serializable schedules: the reads and writes of
-a strict two-phase, legal locked schedule whose distinct accesses are covered by locks are
-conflict-serializable.
+**Strict two-phase locking theorem.** If the reads and writes of a locked schedule are
+distinct, are covered by locks, and the schedule is legal and strict two-phase, then its reads and
+writes form a conflict-serializable schedule.
 
 ## Depends on
 
-- [Action](action.md)
-- [Conflict Serializable](../serializability/conflict-serializable.md)
-- [Legal](legal.md)
-- [Locks Cover](locks-cover.md)
-- [Op](../serializability/op.md)
-- [Strict Two Phase](strict-two-phase.md)
-- [Ops](ops.md)
+- [Action of a locked schedule](action.md)
+- [Conflict-serializable schedule](../serializability/conflict-serializable.md)
+- [Legal locked schedule](legal.md)
+- [Schedules covered by locks](locks-cover.md)
+- [Operation of a schedule](../serializability/op.md)
+- [Strict two-phase schedules](strict-two-phase.md)
+- [Reads and writes of a locked schedule](ops.md)
 
 ## Proof depends on
 
-- [Holds Before](holds-before.md)
-- [Lock Mode](lock-mode.md)
-- [Two Phase](two-phase.md)
+- [Holding a lock](holds-before.md)
+- [Lock mode](lock-mode.md)
+- [Two-phase schedules](two-phase.md)
 - [The two-phase locking theorem](conflict-serializable.md)
 
 ## Sources

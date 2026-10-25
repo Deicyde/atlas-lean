@@ -6,10 +6,10 @@ statement: formalized
 lean: MoserConvexWormCoverConstant.UnitArc
 ---
 
-# Unit Arc
+# Unit arc
 
-A continuous parametrized planar curve of metric length exactly one. Source: Optimization
-Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.
+**Unit arc.** A unit arc is a continuous map $\gamma$ from the closed interval $[0, 1]$ to
+the complex plane whose length, the total variation of $\gamma$ on $[0, 1]$, equals $1$.
 
 ## Depends on
 
@@ -18,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../sources/v2/MathlibExt.md)
+- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.

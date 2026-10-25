@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Dynamics.PoincareBendixsonWanted.Dynamics.Plane
 ---
 
-# Plane
+# The Euclidean plane
 
-Ambient space: `ℝ²`.
+**The Euclidean plane.** The ambient space is the plane $\mathbb{R}^2$ with its Euclidean
+inner product and norm.
 
 ## Depends on
 

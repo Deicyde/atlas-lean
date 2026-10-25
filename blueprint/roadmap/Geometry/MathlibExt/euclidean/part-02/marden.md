@@ -7,14 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.marden
 ---
 
-# Marden
+# Marden's theorem
 
-Marden's theorem (statement `marden-s1`): the foci of the Steiner inellipse,
-  tangent at the edge midpoints of a nondegenerate triangle with vertices `a`, `b`, `c`,
-  are the zeros of the derivative of `(z - a) * (z - b) * (z - c)`, allowing coincident
-  foci for the equilateral (circular) case. The inellipse is encoded by the common
-  distance sum `L` through the three edge midpoints plus tangency of each sideline
-  at its midpoint.
+**Marden's theorem.** Let $a, b, c$ be complex numbers such that $(b - a)/(c - a)$ has
+nonzero imaginary part, so that they are the vertices of a nondegenerate triangle, and let
+$p(z) = (z - a)(z - b)(z - c)$. Then there are complex numbers $f_1, f_2$ and a real number $L$
+such that the roots of $p'$, counted with multiplicity, are exactly $f_1$ and $f_2$, and such
+that the function $\sigma(z) = |z - f_1| + |z - f_2|$ satisfies
+$\sigma((a + b)/2) = \sigma((b + c)/2) = \sigma((c + a)/2) = L$ and, for every real $t \ne 0$,
+$\sigma((a + b)/2 + t(b - a)) > L$, $\sigma((b + c)/2 + t(c - b)) > L$ and
+$\sigma((c + a)/2 + t(a - c)) > L$.
+
+Thus the ellipse $\sigma(z) = L$ with foci $f_1$ and $f_2$ (a circle when $f_1 = f_2$) passes
+through the midpoints of the three sides and touches each side line only at its midpoint: it is
+the Steiner inellipse, and its foci are the roots of $p'$.
 
 Proof: The statement is Marden's theorem (M. Marden, *Geometry of Polynomials*, 2nd ed.,
 Math. Surveys No. 3, AMS, 1966; D. Kalman, *An Elementary Proof of Marden's Theorem*,

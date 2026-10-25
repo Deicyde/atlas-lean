@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.GroupTheory.IrreducibleCharacterBasisWanted.card_irrCharacters_eq_card_conjClasses
 ---
 
-# Card irr Characters eq card conj Classes
+# Number of irreducible characters
 
-The number of irreducible complex characters equals the number of conjugacy
-classes.
+**Number of irreducible characters.** Let $G$ be a finite group. The number of irreducible
+complex characters of $G$, that is, of functions $G \to \mathbb{C}$ that are the character of
+some simple finite-dimensional complex representation of $G$, equals the number of conjugacy
+classes of $G$.
 
-Proof: The first two theorems identify the irreducible characters as a basis of
-the class functions; compare its cardinality with the known finrank of that
+Proof: The irreducible characters are linearly independent and span the class functions, so
+they form a basis of that space; compare its cardinality with the known dimension of that
 space (P. Etingof et al., *Introduction to representation theory*, arXiv:0901.0827,
 Theorem 3.5 and Corollary 3.6).
 
@@ -23,12 +25,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Class Function](../../part-01/class-function/is-class-function.md)
-- [Character is Class Function](../../part-01/class-function/character-is-class-function.md)
-- [Class Functions](../../part-01/class-function/class-functions.md)
-- [Finrank class Functions eq card conj Classes](../../part-01/class-function/finrank-class-functions-eq-card-conj-cla.md)
-- [Linear Independent irr Characters](linear-independent-irr-characters.md)
-- [Mem span irr Characters of is Class Function](mem-span-irr-characters-of-is-class-func.md)
+- [Class functions on a group](../../part-01/class-function/is-class-function.md)
+- [Characters are class functions](../../part-01/class-function/character-is-class-function.md)
+- [The space of class functions](../../part-01/class-function/class-functions.md)
+- [Dimension of the space of class functions](../../part-01/class-function/finrank-class-functions-eq-card-conj-cla.md)
+- [Irreducible characters are linearly independent](linear-independent-irr-characters.md)
+- [Irreducible characters span the class functions](mem-span-irr-characters-of-is-class-func.md)
 
 ## Sources
 

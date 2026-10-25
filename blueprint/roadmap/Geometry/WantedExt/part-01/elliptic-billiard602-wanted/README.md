@@ -5,5 +5,5 @@ navigation: module
 
 # Elliptic Billiard602
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Elliptic billiard invariant $k_{602}$](conjecture.md)
+- [Bialy–Tabachnikov: $k_{602}$ is invariant](conjecture-holds.md)

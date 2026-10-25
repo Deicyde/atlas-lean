@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.euclidPPosition_aunt_xor_cousin
 ---
 
-# Euclid PPosition aunt xor cousin
+# Aunt or cousin of a P-position
 
-For positive `x, y` and `r = x/y` (a tree vertex when coprime), with son `s(a/b) = a/(a+b)` and daughter `d(a/b) = (a+b)/b`:
-a right/female P-position `V = d(q)` with grandparent `r` has exactly one P-position among its
-aunt (the sibling of `q`) and its male cousin (the son of the aunt); a left/male P-position
-`V = s(q)` has exactly one P-position among its uncle (the sibling of `q`) and its female cousin
-(the daughter of the uncle). Both cases `q = s(r)` and `q = d(r)` are stated.
+**Aunt or cousin of a P-position.** Call a pair $(a, b)$ of natural numbers a P-position when
+the Euclid P-position test returns true at $(a, b)$, and let its son be $s(a, b) = (a, a + b)$ and
+its daughter $d(a, b) = (a + b, b)$, as in the Calkin–Wilf tree. Let $x, y$ be positive integers,
+let $r = (x, y)$, let $q$ be one of the two children $s(r)$ and $d(r)$ of $r$, and let $q'$ be the
+other one. If the daughter $d(q)$ is a P-position, then exactly one of its aunt $q'$ and its male
+cousin $s(q')$ is a P-position. If the son $s(q)$ is a P-position, then exactly one of its uncle
+$q'$ and its female cousin $d(q')$ is a P-position.
 
 ## Depends on
 
-- [Euclid PPosition](euclid-pposition.md)
+- [Euclid P-position test](euclid-pposition.md)
 
 ## Sources
 

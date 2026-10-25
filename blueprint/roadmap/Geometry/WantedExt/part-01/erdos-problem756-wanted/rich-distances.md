@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Geometry.ErdosProblem756Wanted.richDistances
 ---
 
-# Rich Distances
+# Rich distances
 
-The distances determined by `A` occurring for at least `k` pairs.
+**Rich distances.** For a finite set $A$ of points in the Euclidean plane and a natural number
+$k$, the rich distances of $A$ at level $k$ are the distances $d$ between two distinct points of
+$A$ such that at least $k$ unordered pairs of distinct points of $A$ are at distance $d$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Distance Multiplicity](../../../MathlibExt/metric/distance-multiplicity.md)
-- [Distance Set](../../../MathlibExt/metric/distance-set.md)
+- [Multiplicity of a distance](../../../MathlibExt/metric/distance-multiplicity.md)
+- [Distance set of a finite point set](../../../MathlibExt/metric/distance-set.md)
 
 ## Sources
 

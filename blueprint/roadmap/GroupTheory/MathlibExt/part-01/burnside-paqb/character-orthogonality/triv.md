@@ -6,18 +6,21 @@ statement: formalized
 lean: BurnsidePaqb.Irr.triv
 ---
 
-# Triv
+# The trivial irreducible class
 
-The iso-class of the trivial representation.
+**The trivial irreducible class.** Let $G$ be a finite group. The trivial representation of
+$G$ on $\mathbb{C}$, where every element of $G$ acts as the identity, is simple, and this is its
+class among the isomorphism classes of simple finite-dimensional complex representations of
+$G$.
 
 ## Depends on
 
-- [Irr](irr.md)
+- [Isomorphism classes of simple representations](irr.md)
 
 ## Proof depends on
 
-- [Iso Setoid](iso-setoid.md)
-- [Simple fdrep of irreducible](simple-fdrep-of-irreducible.md)
+- [Isomorphism of simple representations](iso-setoid.md)
+- [Irreducible representations are simple](simple-fdrep-of-irreducible.md)
 
 ## Sources
 

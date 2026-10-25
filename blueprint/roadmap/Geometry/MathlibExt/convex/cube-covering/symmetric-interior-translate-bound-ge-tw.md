@@ -7,20 +7,25 @@ proof: formalized
 lean: ConvexCovering.symmetricInteriorTranslateBound_ge_two_pow
 ---
 
-# Symmetric Interior Translate Bound ge two pow
+# Lower bound $2^n$ for centrally symmetric interior-translate covering
 
-The centrally symmetric class has the same actual cube obstruction.
+**Lower bound $2^n$ for centrally symmetric interior-translate covering.** Let $n$ and $q$ be
+natural numbers. If every centrally symmetric convex body $K \subseteq \mathbb{R}^n$ (a compact
+convex set with nonempty interior that is symmetric about some point) can be covered by $q$ not
+necessarily distinct translates of its interior, then $2^n \le q$.
+
+The coordinate cube $[-1, 1]^n$ is such a body and already needs $2^n$ translates.
 
 ## Depends on
 
-- [Uniform Symmetric Interior Translate Bound](../covering/uniform-symmetric-interior-translate-bou.md)
+- [Uniform bound for covering centrally symmetric convex bodies by interior translates](../covering/uniform-symmetric-interior-translate-bou.md)
 
 ## Proof depends on
 
-- [Coordinate Cube](coordinate-cube.md)
-- [Coordinate Cube covering Count ge two pow](coordinate-cube-covering-count-ge-two-po.md)
-- [Coordinate Cube is Centrally Symmetric](coordinate-cube-is-centrally-symmetric.md)
-- [Coordinate Cube is Convex Body](coordinate-cube-is-convex-body.md)
+- [Coordinate cube](coordinate-cube.md)
+- [Covering the cube by translates of its interior needs $2^n$ translates](coordinate-cube-covering-count-ge-two-po.md)
+- [The coordinate cube is centrally symmetric](coordinate-cube-is-centrally-symmetric.md)
+- [The coordinate cube is a convex body](coordinate-cube-is-convex-body.md)
 
 ## Sources
 

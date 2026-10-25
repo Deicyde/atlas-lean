@@ -19,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Finite Conditional Entropy](../../../../../InformationTheory/MathlibExt/conditional-entropy/finite-conditional-entropy.md)
-- [Shannon Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
+- [Conditional entropy of a finite joint law](../../../../../InformationTheory/MathlibExt/conditional-entropy/finite-conditional-entropy.md)
+- [Shannon entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/shannon-entropy.md)
 
 ## Sources
 

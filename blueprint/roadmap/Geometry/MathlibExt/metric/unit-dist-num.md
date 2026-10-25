@@ -6,9 +6,11 @@ statement: formalized
 lean: unitDistNum
 ---
 
-# Unit Dist Num
+# Number of unit distances
 
-The number of pairs of points of a finite set `s` in a metric space that are distance 1 apart.
+**Number of unit distances.** For a finite set $S$ of points in a metric space, the number of
+unit distances of $S$ is the number of unordered pairs $\{p, q\}$ of points of $S$ with
+$\operatorname{dist}(p, q) = 1$, that is, the multiplicity of the distance $1$ in $S$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Distance Multiplicity](distance-multiplicity.md)
+- [Multiplicity of a distance](distance-multiplicity.md)
 
 ## Sources
 

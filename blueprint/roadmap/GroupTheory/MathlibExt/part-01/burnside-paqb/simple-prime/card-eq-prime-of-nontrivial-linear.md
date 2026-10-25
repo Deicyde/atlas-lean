@@ -7,9 +7,12 @@ proof: formalized
 lean: BurnsidePaqb.card_eq_prime_of_nontrivial_linear
 ---
 
-# Card eq prime of nontrivial linear
+# A simple group with a nontrivial linear character has prime order
 
-A nontrivial linear character of a simple group forces prime order.
+**A simple group with a nontrivial linear character has prime order.** Let $G$ be a finite
+simple group and let $\rho$ be a representation of $G$ on a complex vector space $V$ of
+dimension $1$. If the character of $\rho$ is not the constant function $1$, then the order of
+$G$ is a prime number.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Linear Char Hom](linear-char-hom.md)
+- [A linear character as a homomorphism to $\mathbb{C}^\times$](linear-char-hom.md)
 
 ## Sources
 

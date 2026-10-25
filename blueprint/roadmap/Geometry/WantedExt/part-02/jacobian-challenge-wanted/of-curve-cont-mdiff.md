@@ -5,16 +5,19 @@ statement: formalized
 lean: MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.ofCurve_contMDiff
 ---
 
-# Of Curve cont MDiff
+# The Abel–Jacobi map is holomorphic
 
-Source: https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge Via leanprover/lean-eval@38361be, problem `jacobian_challenge_diffgeo`.
+**The Abel–Jacobi map is holomorphic.** Let $X$ be a compact Riemann surface of genus $g$,
+and let $J(X)$ be its Jacobian, a complex manifold modelled on $\mathbb{C}^g$. For every point
+$P \in X$, the Abel–Jacobi map $X \to J(X)$ based at $P$ is holomorphic.
 
 ## Depends on
 
-- [Jacobian](jacobian.md)
-- [Of Curve](of-curve.md)
-- [Genus](genus.md)
+- [Jacobian of a compact Riemann surface](jacobian.md)
+- [Abel–Jacobi map](of-curve.md)
+- [Genus of a compact Riemann surface](genus.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.JacobianChallengeWanted](../../../../../sources/v2/WantedExt.md)
+- https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge Via leanprover/lean-eval@38361be, problem `jacobian_challenge_diffgeo`.

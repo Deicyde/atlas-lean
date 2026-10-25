@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.impartialTak_penult_thickCross
 ---
 
-# Impartial Tak penult thick Cross
+# Every Thick Cross holds three tokens of an Impartial Tak penult
 
-Proposition 11: in an Impartial Tak penult every Thick Cross (a `4 × 4` window without its
-four corners) contains at least `3` tokens.
+**Every Thick Cross holds three tokens of an Impartial Tak penult.** Impartial Tak is the
+placement game on the $n \times n$ board whose play ends once the tokens contain a road. Index the
+rows and columns by $0, \dots, n - 1$, let $S$ be an Impartial Tak penult on the $n \times n$
+board, and let $r, c$ be natural numbers with $r + 4 \le n$ and $c + 4 \le n$. The Thick Cross at
+$(r, c)$ is the $4 \times 4$ window of cells in rows $r, \dots, r + 3$ and columns
+$c, \dots, c + 3$ with its four corners $(r, c)$, $(r, c + 3)$, $(r + 3, c)$ and
+$(r + 3, c + 3)$ removed. Then at least $3$ cells of the Thick Cross belong to $S$.
 
 ## Depends on
 
-- [Placement Penult](placement-penult.md)
-- [Tak Has Road](tak-has-road.md)
+- [Penults of a placement game](placement-penult.md)
+- [Roads in Impartial Tak](tak-has-road.md)
 
 ## Sources
 

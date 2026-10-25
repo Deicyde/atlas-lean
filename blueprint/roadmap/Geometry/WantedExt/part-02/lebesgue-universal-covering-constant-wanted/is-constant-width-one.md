@@ -6,17 +6,20 @@ statement: formalized
 lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.IsConstantWidthOne
 ---
 
-# Is Constant Width One
+# Sets of constant width one
 
-Nonempty compact convex planar sets of width one in every unit direction.
+**Sets of constant width one.** A set $K$ in the Euclidean plane $\mathbb{R}^2$ has constant
+width $1$ when it is nonempty, compact and convex and, for every unit vector $u$, its width in
+direction $u$, namely $\sup_{x \in K} \langle u, x \rangle - \inf_{x \in K} \langle u, x \rangle$,
+equals $1$.
 
 ## Depends on
 
-- [Plane](plane.md)
+- [The Euclidean plane of Lebesgue's covering problem](plane.md)
 
 ## Proof depends on
 
-- [Directional Width](directional-width.md)
+- [Directional width](directional-width.md)
 
 ## Sources
 

@@ -7,18 +7,21 @@ proof: formalized
 lean: BurnsidePaqb.char_mem_cycSubfield
 ---
 
-# Char mem cyc Subfield
+# Character values lie in a cyclotomic field
 
-Character values lie in the cyclotomic field for `orderOf g`.
+**Character values lie in a cyclotomic field.** Let $\rho$ be a representation of a group $G$
+on a finite-dimensional complex vector space, with character $\chi$, and let $g \in G$ have
+finite order $m$. Then $\chi(g)$ lies in the subfield of $\mathbb{C}$ generated over $\mathbb{Q}$
+by the $m$-th roots of unity.
 
 ## Depends on
 
-- [Cyc Subfield](../cyclotomic-field/cyc-subfield.md)
+- [Cyclotomic subfield of $\mathbb{C}$](../cyclotomic-field/cyc-subfield.md)
 
 ## Proof depends on
 
-- [Character eq sum roots](character-eq-sum-roots.md)
-- [Charpoly root pow order Of](charpoly-root-pow-order-of.md)
+- [Character value as the sum of characteristic roots](character-eq-sum-roots.md)
+- [Characteristic roots are killed by the order of the element](charpoly-root-pow-order-of.md)
 
 ## Sources
 

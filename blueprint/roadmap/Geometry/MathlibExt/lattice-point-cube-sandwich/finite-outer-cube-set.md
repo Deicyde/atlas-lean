@@ -7,19 +7,21 @@ proof: formalized
 lean: LatticePointCubeSandwich.finite_outerCubeSet
 ---
 
-# Finite outer Cube Set
+# Finiteness of the outer cube set
 
-The outer cube index set of a bounded set is finite for `0 < t`.
+**Finiteness of the outer cube set.** If $S \subseteq \mathbb{R}^n$ is bounded and $t > 0$,
+then the outer cube set of $S$ at scale $t$, the set of $v \in \mathbb{Z}^n$ whose integer unit
+cube $\prod_i [v_i, v_i + 1)$ meets $tS$, is finite.
 
 ## Depends on
 
-- [Outer Cube Set](outer-cube-set.md)
+- [Outer cube set](outer-cube-set.md)
 
 ## Proof depends on
 
-- [Integer Unit Cube](integer-unit-cube.md)
-- [Mem integer Unit Cube iff](mem-integer-unit-cube-iff.md)
-- [Mem outer Cube Set iff](mem-outer-cube-set-iff.md)
+- [Integer unit cube](integer-unit-cube.md)
+- [Membership in an integer unit cube](mem-integer-unit-cube-iff.md)
+- [Membership in the outer cube set](mem-outer-cube-set-iff.md)
 
 ## Sources
 

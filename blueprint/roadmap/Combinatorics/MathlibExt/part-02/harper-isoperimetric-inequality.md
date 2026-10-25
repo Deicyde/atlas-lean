@@ -22,13 +22,13 @@ exists at every cardinality and gives no equality cases.
 
 ## Depends on
 
-- [Is Ball](../../../InformationTheory/MathlibExt/hamming-expansion/is-ball.md)
-- [Expansion](../../../InformationTheory/MathlibExt/hamming-expansion/expansion.md)
+- [Hamming ball predicate](../../../InformationTheory/MathlibExt/hamming-expansion/is-ball.md)
+- [Hamming expansion](../../../InformationTheory/MathlibExt/hamming-expansion/expansion.md)
 
 ## Proof depends on
 
-- [Ball](../../../InformationTheory/MathlibExt/hamming-ball/ball.md)
-- [Card ball](../../../InformationTheory/MathlibExt/hamming-ball/card-ball.md)
+- [Closed Hamming ball](../../../InformationTheory/MathlibExt/hamming-ball/ball.md)
+- [Size of a Hamming ball](../../../InformationTheory/MathlibExt/hamming-ball/card-ball.md)
 
 ## Sources
 

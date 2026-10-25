@@ -7,19 +7,22 @@ proof: formalized
 lean: BurnsidePaqb.centralScalar_trace
 ---
 
-# Central Scalar trace
+# Trace formula for central scalars
 
-Trace equation: the central scalar times the degree is the character sum.
+**Trace formula for central scalars.** Let $\rho$ be an irreducible representation of a
+finite group $G$ on a finite-dimensional complex vector space $V$ with character $\chi$, and let
+$\omega_\rho(C)$ be the scalar by which the class sum of a conjugacy class $C$ acts on $V$. Then
+$\omega_\rho(C) \cdot \dim V = \sum_{x \in C} \chi(x)$.
 
 ## Depends on
 
-- [Central Scalar](central-scalar.md)
+- [Central scalar of a conjugacy class](central-scalar.md)
 
 ## Proof depends on
 
-- [Class Sum](../class-sum/class-sum.md)
-- [Class Sum carrier central](../class-sum/class-sum-carrier-central.md)
-- [Exists scalar of central](exists-scalar-of-central.md)
+- [Class sum of a finite subset](../class-sum/class-sum.md)
+- [Class sums of conjugacy classes are central](../class-sum/class-sum-carrier-central.md)
+- [Schur's lemma for central elements of the group algebra](exists-scalar-of-central.md)
 
 ## Sources
 

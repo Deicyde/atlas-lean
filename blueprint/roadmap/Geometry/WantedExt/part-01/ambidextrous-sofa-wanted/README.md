@@ -4,7 +4,7 @@ navigation: module
 
 # Ambidextrous Sofa
 
-- [Hammersley upper](hammersley-upper.md)
-- [Baek upper](baek-upper.md)
-- [Gibbs lower](gibbs-lower.md)
-- [Romik lower](romik-lower.md)
+- [Hammersley upper bound for the ambidextrous sofa](hammersley-upper.md)
+- [Baek upper bound for the ambidextrous sofa](baek-upper.md)
+- [Gibbs lower bound for the ambidextrous sofa](gibbs-lower.md)
+- [Romik lower bound for the ambidextrous sofa](romik-lower.md)

@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.HasNSProperty
 ---
 
-# Has NSProperty
+# NS property
 
-A function `h : ℕ → ℕ` has the *NS property* if it is monotonically increasing and,
-whenever `⌊z / 2^i⌋ = ⌊z' / 2^i⌋` for a natural number `i ≥ 1`, also
-`⌊h z / 2^(i-1)⌋ = ⌊h z' / 2^(i-1)⌋`.
+**NS property.** A function $h : \mathbb{N} \to \mathbb{N}$ has the *NS property* if it is
+monotone (weakly increasing) and, for all $z, z' \in \mathbb{N}$ and every natural number
+$i \ge 1$, $\lfloor z / 2^i \rfloor = \lfloor z' / 2^i \rfloor$ implies
+$\lfloor h(z) / 2^{i-1} \rfloor = \lfloor h(z') / 2^{i-1} \rfloor$.
 
 ## Depends on
 

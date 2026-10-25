@@ -13,11 +13,11 @@ lean: Cslib.Databases.project_project
 ## Depends on
 
 - [Tuple](tuple.md)
-- [Project](project.md)
+- [Projection of a relation](project.md)
 
 ## Proof depends on
 
-- [Restrict](restrict.md)
+- [Restriction of a tuple](restrict.md)
 
 ## Sources
 

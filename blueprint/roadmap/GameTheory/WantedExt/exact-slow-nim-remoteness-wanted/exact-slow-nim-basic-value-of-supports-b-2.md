@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimBasicValue_of_supports_basicA0
 ---
 
-# Lemma 2
+# Moves at a position supported by an (A0) basic vector (Lemma 2)
 
-**Lemma 2.** If `x` is supported by a basic vector `z ≤ x` of type (A0), then every move
-`x → x' = x - d(j)` (keep pile `j`) has `B(x') ≤ B(x) - 1` with `B(x')` odd, and
-`B(x') = B(x) - 1` when `z j < b(z)`, or `z j = b(z)` and `z i < min(b(z), x i)` for some `i`.
+**Moves at a position supported by an (A0) basic vector (Lemma 2).** Let $k \ge 1$, let
+$B$ be the basic-vector value on $\mathbb{N}^{k+1}$, and let $x, z \in \mathbb{N}^{k+1}$ with
+$z \le x$ componentwise, where $z$ is a basic vector of type (A0) with parameter $B(x)$. Let $j$
+be a pile with $x_i > 0$ for every $i \ne j$, and let $x'$ be obtained from $x$ by removing one
+token from every pile other than $j$. Then $B(x') \le B(x) - 1$ and $B(x')$ is odd. Moreover, if
+$z_j < B(x)$, or if $z_j = B(x)$ and $z_i < \min(B(x), x_i)$ for some $i$, then
+$B(x') = B(x) - 1$. Here $B(x) - 1$ is truncated subtraction in $\mathbb{N}$.
 
 ## Depends on
 
-- [Is Exact Slow Nim Basic A0](is-exact-slow-nim-basic-a0.md)
-- [Exact Slow Nim Basic Value](exact-slow-nim-basic-value.md)
+- [Basic vectors of type (A0)](is-exact-slow-nim-basic-a0.md)
+- [Basic-vector value](exact-slow-nim-basic-value.md)
 - [Playing on a set of stacks](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-after.md)
 
 ## Sources

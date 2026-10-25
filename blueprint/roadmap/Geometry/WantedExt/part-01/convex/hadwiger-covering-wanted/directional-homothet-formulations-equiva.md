@@ -6,15 +6,19 @@ statement: formalized
 lean: ConvexCovering.directionalHomothetFormulationsEquivalent
 ---
 
-# Directional Homothet Formulations Equivalent
+# Directional illumination is equivalent to covering by smaller homothets
 
-Finite illumination and smaller positive homothet covering counts agree.
+**Directional illumination is equivalent to covering by smaller homothets.** Let $n \ge 1$,
+let $K \subseteq \mathbb{R}^n$ be a convex body and let $q$ be a natural number. Then some $q$
+unit vectors illuminate $K$ if and only if $K$ is covered by $q$ homothets
+$v_1 + r_1 K, \dots, v_q + r_q K$ with $v_i \in \mathbb{R}^n$ and $0 < r_i < 1$, repetitions
+allowed.
 
 ## Depends on
 
-- [Covered By Smaller Positive Homothets](../../../../MathlibExt/convex/covering/covered-by-smaller-positive-homothets.md)
-- [Illuminated By Directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
-- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Covering by smaller positive homothets](../../../../MathlibExt/convex/covering/covered-by-smaller-positive-homothets.md)
+- [Illumination by $q$ directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
+- [Convex bodies in Euclidean space](../../../../MathlibExt/convex/covering/is-convex-body.md)
 
 ## Sources
 

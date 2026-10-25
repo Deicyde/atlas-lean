@@ -5,14 +5,16 @@ statement: formalized
 lean: AmbidextrousSofaWanted.hammersley_upper
 ---
 
-# Hammersley upper
+# Hammersley upper bound for the ambidextrous sofa
 
-Source: catalogue upper row, Hammersley (1968), adapted from C41a.
+**Hammersley upper bound for the ambidextrous sofa.** The supremum of the areas of
+ambidextrous sofas, taken in $[0, \infty]$, is at most $2\sqrt{2}$.
 
 ## Depends on
 
-- [Ambidextrous Optimal Area](../../../MathlibExt/moving-sofa/ambidextrous-optimal-area.md)
+- [Optimal area of ambidextrous sofas](../../../MathlibExt/moving-sofa/ambidextrous-optimal-area.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.AmbidextrousSofaWanted](../../../../../sources/v2/WantedExt.md)
+- catalogue upper row, Hammersley (1968), adapted from C41a.

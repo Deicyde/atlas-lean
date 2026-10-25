@@ -6,11 +6,14 @@ statement: formalized
 lean: CoxeterMatrix.ArtinGroup
 ---
 
-# Artin Group
+# Artin group
 
-The **Artin group** (Artin–Tits group) of a Coxeter matrix `M`: the group presented by the
-generators `s i` (`i : B`) subject only to the braid relations of `artinRelationsSet M`. Unlike the
-Coxeter group `M.Group`, no involution relations `s i ^ 2 = 1` are imposed.
+**Artin group.** Let $M = (m_{ij})_{i, j \in B}$ be a Coxeter matrix over an index type $B$,
+where $m_{ij} = 0$ encodes $m_{ij} = \infty$. The Artin group (Artin–Tits group) of $M$ is the
+group presented by generators $s_i$, one for each $i \in B$, subject only to the braid relations:
+for every ordered pair of distinct $i, j \in B$ with $m_{ij} \neq 0$, the alternating words
+$s_i s_j s_i \cdots$ and $s_j s_i s_j \cdots$ of length $m_{ij}$ are equal. Unlike for the
+Coxeter group of $M$, no relations $s_i^2 = 1$ are imposed.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Artin Relations Set](artin-relations-set.md)
+- [Artin relators of a Coxeter matrix](artin-relations-set.md)
 
 ## Sources
 

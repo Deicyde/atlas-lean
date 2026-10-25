@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.FieldTheory.EssentialDimensionSymmetric.coeffElem
 ---
 
-# Coeff Elem
+# Coefficients in the coefficient field
 
-The coefficient `aₖ₊₁` as an element of the coefficient field.
+**Coefficients in the coefficient field.** For $0 \le i < n$, the coefficient $a_{i+1}$,
+the $(i+1)$-st elementary symmetric function of $x_1, \dots, x_n$, regarded as an element of the
+coefficient field $\mathbb{C}(a_1, \dots, a_n)$.
 
 ## Depends on
 
-- [General Base Field](general-base-field.md)
-- [Roots Field](roots-field.md)
+- [Coefficient field of the general polynomial](general-base-field.md)
+- [The function field $\mathbb{C}(x_1, \dots, x_n)$](roots-field.md)
 
 ## Proof depends on
 
-- [Coeff](coeff.md)
+- [The coefficients of the general polynomial](coeff.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.euclidPPosition_small
 ---
 
-# Euclid PPosition small
+# Small P-positions of Euclid
 
-Small values: `1/1` and `3/2` are P-positions, `2/1` and `1/2` are not.
+**Small P-positions of Euclid.** The Euclid P-position test returns true at the pairs $(1, 1)$
+and $(3, 2)$ and false at the pairs $(2, 1)$ and $(1, 2)$.
 
 ## Depends on
 
-- [Euclid PPosition](euclid-pposition.md)
+- [Euclid P-position test](euclid-pposition.md)
 
 ## Sources
 

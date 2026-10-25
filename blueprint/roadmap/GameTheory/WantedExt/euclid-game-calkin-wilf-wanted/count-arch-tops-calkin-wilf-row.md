@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.count_arch_tops_calkinWilfRow
 ---
 
-# Count arch tops calkin Wilf Row
+# Number of arch tops in a row of the Calkin–Wilf tree
 
-The number `T_k` of arches whose tops lie in row `k ≥ 2` of the Calkin–Wilf tree satisfies
-`T_k = 2^(k-2)/3 + 2(-1)^k/3`, stated as `3 T_k = 2^(k-2) + 2(-1)^k`. An arch top is the pair
-(son's daughter, daughter's son) of a P-position two rows above; `T_k` counts the left tops, the
-vertices `(2m+n)/(m+n)` of row `k` with `m/n` a P-position in row `k - 2`.
+**Number of arch tops in a row of the Calkin–Wilf tree.** For $k \ge 2$ let $T_k$ be the
+number of vertices of row $k$ of the Calkin–Wilf tree of the form $(2m+n)/(m+n)$ with $m/n$ a
+P-position of Euclid in row $k - 2$. Then $3T_k = 2^{k-2} + 2(-1)^k$, that is,
+$T_k = 2^{k-2}/3 + 2(-1)^k/3$.
+
+The vertex $(2m+n)/(m+n)$ is the son's daughter of $m/n$, the left top of the arch below $m/n$;
+the daughter's son $(m+n)/(m+2n)$ is the right top, so $T_k$ counts the arches whose tops lie in
+row $k$.
 
 ## Depends on
 
-- [Calkin Wilf Row](calkin-wilf-row.md)
-- [Euclid PPosition](euclid-pposition.md)
+- [Rows of the Calkin–Wilf tree](calkin-wilf-row.md)
+- [Euclid P-position test](euclid-pposition.md)
 
 ## Sources
 

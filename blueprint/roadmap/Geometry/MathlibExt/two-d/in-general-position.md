@@ -6,12 +6,11 @@ statement: formalized
 lean: EuclideanGeometry.InGeneralPosition
 ---
 
-# In General Position
+# Points in general position
 
-A collection $x_1, \dots, x_n\in\mathbb{R}^2$ is in _general position_
-if no three are collinear and no four lie on a circle.
-
-Stated for `Set ℝ²` so that infinite collections are covered; a `Finset` argument coerces.
+**Points in general position.** A set $X \subseteq \mathbb{R}^2$, finite or infinite, is in
+_general position_ if no three distinct points of $X$ are collinear and no four distinct points
+of $X$ lie on a common circle.
 
 ## Depends on
 
@@ -19,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Non Trilinear](non-trilinear.md)
+- [Sets with no three collinear points](non-trilinear.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: MathlibExt.FieldTheory.EssentialDimensionSymmetric.adjoin_roots_eq_top
 ---
 
-# Adjoin roots eq top
+# The roots generate the function field
 
-The roots generate the function field over `ℂ`.
+**The roots generate the function field.** For every natural number $n$, the intermediate
+field of $\mathbb{C}(x_1, \dots, x_n)$ generated over $\mathbb{C}$ by the roots
+$x_1, \dots, x_n$ is the whole function field $\mathbb{C}(x_1, \dots, x_n)$.
 
 ## Depends on
 
-- [Root](root.md)
-- [Roots Field](roots-field.md)
+- [The roots $x_i$](root.md)
+- [The function field $\mathbb{C}(x_1, \dots, x_n)$](roots-field.md)
 
 ## Proof depends on
 
-- [Algebra Map mem adjoin roots](algebra-map-mem-adjoin-roots.md)
+- [Polynomials in the roots](algebra-map-mem-adjoin-roots.md)
 
 ## Sources
 

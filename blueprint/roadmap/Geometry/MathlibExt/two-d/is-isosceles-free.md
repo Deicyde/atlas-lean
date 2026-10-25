@@ -6,9 +6,11 @@ statement: formalized
 lean: Set.IsIsoscelesFree
 ---
 
-# Is Isosceles Free
+# Isosceles-free sets
 
-A set is isosceles-free if no three distinct points in it form an isosceles triangle.
+**Isosceles-free sets.** A set $A$ in a space with a distance function $d$ is isosceles-free if
+there are no three distinct points $x, y, z \in A$ such that two of the distances $d(x, y)$,
+$d(y, z)$, $d(z, x)$ are equal.
 
 ## Depends on
 

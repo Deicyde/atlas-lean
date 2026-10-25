@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsJordanCurve
 ---
 
-# Is Jordan Curve
+# Jordan curves in the plane
 
-Jordan curve in ℂ: continuous injective image of the unit circle.
-Cites [AMR-052-0019].
+**Jordan curves in the plane.** A set $S \subseteq \mathbb{C}$ is a Jordan curve when there is
+a continuous injective map $f$ from the unit circle $\{z \in \mathbb{C} : |z| = 1\}$ to
+$\mathbb{C}$ whose image is exactly $S$.
 
 ## Depends on
 
@@ -18,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.CubicParameterJordanBoundaryWanted](../../../../../sources/v2/WantedExt.md)
+- [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.

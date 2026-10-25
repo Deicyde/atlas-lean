@@ -7,24 +7,27 @@ proof: formalized
 lean: BurnsidePaqb.char_zero_of_nonlinear_of_coprime
 ---
 
-# Char zero of nonlinear of coprime
+# Nonlinear irreducible characters of a simple group vanish on nonidentity classes of coprime size
 
-For a nonlinear irreducible of a simple group, a coprime-size class
-element with `g ≠ 1` is killed by the character.
+**Nonlinear irreducible characters of a simple group vanish on nonidentity classes of
+coprime size.** Let $G$ be a finite simple group, let $\rho$ be an irreducible representation of
+$G$ on a finite-dimensional complex vector space $V$ of dimension $d > 1$, and let $\chi$ be the
+character of $\rho$. If $g \ne 1$ is an element of $G$ whose conjugacy class has size coprime to
+$d$, then $\chi(g) = 0$.
 
 ## Depends on
 
-- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
+- [Conjugacy class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Proof depends on
 
-- [All roots eq of norm eq](../scalar-center/all-roots-eq-of-norm-eq.md)
-- [Burnside coprime vanish](../killing-lemma/burnside-coprime-vanish.md)
-- [Char Center](../scalar-center/char-center.md)
-- [Char Center proper of nonlinear](../scalar-center/char-center-proper-of-nonlinear.md)
-- [Charpoly roots card](../killing-lemma/charpoly-roots-card.md)
-- [Eq smul one of all roots eq](../scalar-center/eq-smul-one-of-all-roots-eq.md)
-- [Mem char Center of eq smul](../scalar-center/mem-char-center-of-eq-smul.md)
+- [Characters of full absolute value have equal eigenvalues](../scalar-center/all-roots-eq-of-norm-eq.md)
+- [Burnside's vanishing theorem for coprime class sizes](../killing-lemma/burnside-coprime-vanish.md)
+- [Scalar center of a representation](../scalar-center/char-center.md)
+- [The scalar center of a nonlinear irreducible representation is proper](../scalar-center/char-center-proper-of-nonlinear.md)
+- [Number of characteristic roots of a representation matrix](../killing-lemma/charpoly-roots-card.md)
+- [Elements with a single eigenvalue act as scalars](../scalar-center/eq-smul-one-of-all-roots-eq.md)
+- [Elements acting by a scalar lie in the scalar center](../scalar-center/mem-char-center-of-eq-smul.md)
 
 ## Sources
 

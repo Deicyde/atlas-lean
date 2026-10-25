@@ -5,5 +5,5 @@ navigation: module
 
 # Separation
 
-- [Circular Separates](circular-separates.md)
-- [Separation Aut Subgroup](separation-aut-subgroup.md)
+- [Separation of pairs in a circular order](circular-separates.md)
+- [Separation-preserving permutation group](separation-aut-subgroup.md)

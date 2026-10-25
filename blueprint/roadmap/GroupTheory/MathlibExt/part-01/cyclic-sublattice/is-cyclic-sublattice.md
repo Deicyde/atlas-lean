@@ -6,10 +6,12 @@ statement: formalized
 lean: AddSubgroup.IsCyclicSublattice
 ---
 
-# Is Cyclic Sublattice
+# Cyclic sublattice of a subgroup
 
-`L'` is a cyclic sublattice of `L` when `L'` is contained in `L` and
-the quotient of `L` by (the restriction of) `L'` is cyclic.
+**Cyclic sublattice of a subgroup.** Let $A$ be an abelian group and let $L'$ and $L$ be
+subgroups of $A$. Then $L'$ is a cyclic sublattice of $L$ when $L' \subseteq L$ and the quotient
+group $L/L'$ is cyclic; formally the quotient is taken by $L' \cap L$, regarded as a subgroup
+of $L$.
 
 ## Depends on
 

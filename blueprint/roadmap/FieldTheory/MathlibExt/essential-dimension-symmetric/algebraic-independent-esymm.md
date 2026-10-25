@@ -6,10 +6,13 @@ proof: formalized
 lean: MathlibExt.FieldTheory.EssentialDimensionSymmetric.algebraicIndependent_esymm
 ---
 
-# Algebraic Independent esymm
+# Algebraic independence of the elementary symmetric polynomials
 
-The elementary symmetric polynomials are algebraically independent,
-by the fundamental theorem (`esymmAlgEquiv` is an isomorphism).
+**Algebraic independence of the elementary symmetric polynomials.** For every natural number
+$n$, the elementary symmetric polynomials $e_1, \dots, e_n \in \mathbb{C}[X_1, \dots, X_n]$ are
+algebraically independent over $\mathbb{C}$.
+
+This follows from the fundamental theorem of symmetric polynomials.
 
 ## Depends on
 

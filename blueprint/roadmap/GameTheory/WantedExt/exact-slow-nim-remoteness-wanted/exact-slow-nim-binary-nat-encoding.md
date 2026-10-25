@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimBinaryNatEncoding
 ---
 
-# Exact Slow Nim Binary Nat Encoding
+# Binary encoding of natural numbers
 
-The binary encoding of natural numbers (Mathlib's `Computability.encodingNatBool`) as a
-`BitstringEncoding`. A definition, not an instance; Theorem 3 installs it locally so that lists
-of piles are encoded as self-delimiting binary blocks.
+**Binary encoding of natural numbers.** The bitstring encoding of $\mathbb{N}$ that writes
+$0$ as the empty string and a positive integer $n$ as its binary digits, least significant bit
+first, together with Mathlib's decoding map, which recovers $n$ from its encoding. It is a
+definition, not an instance; Theorem 3 installs it locally so that lists of piles are encoded as
+self-delimiting binary blocks.
 
 ## Depends on
 

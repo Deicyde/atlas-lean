@@ -5,5 +5,5 @@ navigation: module
 
 # Erdos Problem898
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Statement of the Erdős–Mordell inequality](conjecture.md)
+- [Erdős–Mordell inequality](conjecture-holds.md)

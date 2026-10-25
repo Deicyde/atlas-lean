@@ -7,13 +7,13 @@ proof: formalized
 lean: MathlibExt.Geometry.Manifold.ComplexRigidityWanted.holomorphic_identity_on_connected_complex_manifold
 ---
 
-# Holomorphic identity on connected complex manifold
+# Identity theorem for holomorphic maps
 
-If `M` is connected and `f, g : M → F` are `MDiff` and agree on a nonempty open `U ⊂ M`, then `f =
-g`. Source: O. Forster, Lectures on Riemann Surfaces, identity theorem for holomorphic maps; Lean
-states connected-complex-manifold vector-valued form.
-It is `MDifferentiable.eq_of_eqOn_of_isOpen`, kept under the source's name.
-Proves `Wanted` entry `holomorphic_identity_on_connected_complex_manifold`.
+**Identity theorem for holomorphic maps.** Let $M$ be a connected complex manifold without
+boundary, modeled on a complex normed space with complex $C^1$ (that is, holomorphic) transition
+maps, and let $F$ be a complex normed space. If two holomorphic (everywhere complex
+differentiable) maps $f, g : M \to F$ agree on a nonempty open subset $U \subseteq M$, then
+$f = g$.
 
 ## Depends on
 
@@ -21,8 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eq of eq On of is Open](eq-of-eq-on-of-is-open.md)
+- [Holomorphic maps on a connected manifold that agree on a nonempty open set are equal](eq-of-eq-on-of-is-open.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.HolomorphicIdentity](../../../../../../sources/v2/MathlibExt.md)
+- O. Forster, Lectures on Riemann Surfaces, identity theorem for holomorphic maps; Lean states connected-complex-manifold vector-valued form. It is `MDifferentiable.eq_of_eqOn_of_isOpen`, kept under the source's name. Proves `Wanted` entry `holomorphic_identity_on_connected_complex_manifold`.

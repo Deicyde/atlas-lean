@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Dynamics.AMR43Problem1Wanted.X
 ---
 
-# X
+# The full 2-shift
 
-[AMR-043-0001] Full two-shift space `X = {0,1}^Z`.
+**The full 2-shift.** $X$ is the space of all two-sided sequences
+$x = (x_i)_{i \in \mathbb{Z}}$ with every $x_i \in \{0, 1\}$, carrying the product topology.
 
 ## Depends on
 
@@ -16,8 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Full Shift Space](../../../MathlibExt/symbolic-dynamics/full-shift/full-shift-space.md)
+- [Full shift space](../../../MathlibExt/symbolic-dynamics/full-shift/full-shift-space.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.AMR43Problem1Wanted](../../../../../sources/v2/WantedExt.md)
+- [AMR-043-0001].

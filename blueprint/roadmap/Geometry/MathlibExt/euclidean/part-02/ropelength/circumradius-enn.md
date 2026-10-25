@@ -5,21 +5,24 @@ statement: formalized
 lean: MathlibExt.Geometry.Euclidean.Ropelength.circumradiusENN
 ---
 
-# Circumradius ENN
+# Extended circumradius of three points
 
-The total extended circumradius of three points. Affinely
-independent triples use Mathlib's simplex circumradius; every collinear
-or coincident triple has value `⊤`, matching the convention that
-collinear points determine a circle of infinite radius.
+**Extended circumradius of three points.** For points $p, q, r$ of Euclidean 3-space, the
+extended circumradius of $(p, q, r)$ is the following value in $[0, \infty]$. If $p, q, r$ are
+affinely independent, it is the circumradius of the triangle with vertices $p$, $q$ and $r$.
+Otherwise, that is, when the three points are collinear (in particular when two of them
+coincide), it is $\infty$.
+
+This matches the convention that collinear points determine a circle of infinite radius.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean 3-space](r3.md)
 
 ## Proof depends on
 
-- [Triangle Of](triangle-of.md)
-- [Triple Points](triple-points.md)
+- [Triangle on three affinely independent points](triangle-of.md)
+- [Ordered triple of points](triple-points.md)
 
 ## Sources
 

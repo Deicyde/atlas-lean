@@ -7,20 +7,21 @@ proof: formalized
 lean: LatticePointEnumerator.finite_latticePointSet
 ---
 
-# Finite lattice Point Set
+# Finiteness of the lattice points in a dilate
 
-The counted dilate intersection is finite for bounded `P`
-(via `ZSpan.setFinite_inter`). This holds for every real dilate `t`, so no
-positivity is assumed here; positivity is tracked structurally in the
-source-domain declarations `latticePointSetPos` / `latticeEnumeratorPos`.
+**Finiteness of the lattice points in a dilate.** For a natural number $d$, a bounded set
+$P \subseteq \mathbb{R}^d$ and any real number $t$, the set $(tP) \cap \mathbb{Z}^d$ of points of
+the integer lattice $\mathbb{Z}^d$ in the dilate $tP = \{tp : p \in P\}$ is finite.
+
+No positivity of $t$ is needed.
 
 ## Depends on
 
-- [Lattice Point Set](lattice-point-set.md)
+- [Lattice points in a dilate](lattice-point-set.md)
 
 ## Proof depends on
 
-- [Std Lattice](std-lattice.md)
+- [The standard integer lattice](std-lattice.md)
 
 ## Sources
 

@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.dominationPolynomial_grid_eq_sum_transferMatrix_pow
 ---
 
-# Domination Polynomial grid eq sum transfer Matrix pow
+# Transfer-matrix formula for the domination polynomial of the grid
 
-Mertens' Theorem 7, grid case: `G_{m×n}(z) = ∑_{σ : unc(σ) = 0} (A^n)_{σ, σ_•}`.
+**Transfer-matrix formula for the domination polynomial of the grid.** For all natural
+numbers $m$ and $n$, let $P_k$ denote the path on the vertices $0, \dots, k - 1$, let $A$ be the
+domination transfer matrix of the row graph $P_m$, indexed by the signatures of $P_m$, and let
+$\sigma_\bullet$ be the all-covered signature. Then the domination polynomial of the grid
+$P_m \mathbin{\square} P_n$ is
+
+$$\sum_\sigma (A^n)_{\sigma, \sigma_\bullet},$$
+
+the sum running over the signatures $\sigma$ of $P_m$ with no uncovered vertex.
 
 ## Depends on
 
-- [Domination Signature](domination-signature.md)
+- [Signatures of a row graph](domination-signature.md)
 - [Domination State](domination-state.md)
-- [Is Domination Signature](is-domination-signature.md)
-- [All Covered Signature](all-covered-signature.md)
-- [Domination Polynomial](domination-polynomial.md)
-- [Domination Transfer Matrix](domination-transfer-matrix.md)
+- [Domination signature](is-domination-signature.md)
+- [All-covered signature](all-covered-signature.md)
+- [Domination polynomial](domination-polynomial.md)
+- [Domination transfer matrix](domination-transfer-matrix.md)
 
 ## Sources
 

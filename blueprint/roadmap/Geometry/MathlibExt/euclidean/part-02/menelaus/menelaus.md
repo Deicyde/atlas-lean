@@ -7,15 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.menelaus
 ---
 
-# Menelaus
+# Menelaus's theorem
 
-Menelaus's theorem (statement ID menelaus-s1): a transversal meets the sidelines
-of triangle `ABC` in collinear points iff the signed ratio product is `-1`.
-See https://en.wikipedia.org/wiki/Menelaus%27s_theorem.
-It follows from `menelaus_general`; the three `lineMap` incidence hypotheses (implied by the
-ratio equations), `B ≠ C` and `A ≠ C` (implied by non-collinearity), and
-`D ≠ B`, `D ≠ C`, `E ≠ C`, `E ≠ A`, `F ≠ A`, `F ≠ B` are unused and keep the source's shape.
-Proves `Wanted` entry `menelaus`.
+**Menelaus's theorem.** Let $A$, $B$, $C$ be pairwise distinct points of the Euclidean plane
+$\mathbb{R}^2$ with $C$ not on the line $AB$. Let $D$, $E$, $F$ be points on the lines $BC$, $CA$
+and $AB$ respectively, with $D \ne B$, $D \ne C$, $E \ne C$, $E \ne A$, $F \ne A$ and $F \ne B$.
+Let $\alpha, \alpha', \beta, \beta', \gamma, \gamma'$ be real numbers with
+$F - A = \alpha (B - A)$, $B - F = \alpha' (B - A)$, $D - B = \beta (C - B)$,
+$C - D = \beta' (C - B)$, $E - C = \gamma (A - C)$, $A - E = \gamma' (A - C)$, and
+$\alpha', \beta', \gamma' \ne 0$. Then $F$ lies on the line through $D$ and $E$ if and only if
+$\frac{\alpha}{\alpha'} \cdot \frac{\beta}{\beta'} \cdot \frac{\gamma}{\gamma'} = -1$.
+
+The numbers $\alpha, \alpha', \beta, \beta', \gamma, \gamma'$ are the signed ratios $AF/AB$,
+$FB/AB$, $BD/BC$, $DC/BC$, $CE/CA$, $EA/CA$, so the product is the classical signed ratio
+product $\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA}$. The incidence hypotheses,
+$B \ne C$, $A \ne C$ and the conditions that $D$, $E$, $F$ avoid the vertices follow from the
+other hypotheses or are not needed; they keep the shape of the classical statement.
 
 ## Depends on
 
@@ -23,8 +30,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Menelaus general](menelaus-general.md)
+- [Menelaus's theorem, general form](menelaus-general.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.Menelaus](../../../../../../sources/v2/MathlibExt.md)
+- https://en.wikipedia.org/wiki/Menelaus%27s_theorem (statement menelaus-s1).

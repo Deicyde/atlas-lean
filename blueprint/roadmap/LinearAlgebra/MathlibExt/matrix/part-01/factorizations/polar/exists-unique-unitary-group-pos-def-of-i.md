@@ -7,10 +7,13 @@ proof: formalized
 lean: Matrix.exists_unique_unitaryGroup_posDef_of_isUnit_det
 ---
 
-# Exists unique unitary Group pos Def of is Unit det
+# Uniqueness of the polar decomposition of an invertible matrix
 
-An invertible square matrix over an `RCLike` field has a unique factorization as a bundled
-unitary matrix times a positive-definite matrix.
+**Uniqueness of the polar decomposition of an invertible matrix.** Let $\mathbb{K}$ be
+$\mathbb{R}$ or $\mathbb{C}$, and let $A$ be a square matrix over $\mathbb{K}$, indexed by a finite
+type, with $\det A \neq 0$. Then there are a unitary matrix $U$ and a positive-definite matrix $P$
+with $A = UP$, and they are unique: if $U'$ is unitary, $P'$ is positive definite and
+$A = U'P'$, then $U' = U$ and $P' = P$.
 
 ## Depends on
 

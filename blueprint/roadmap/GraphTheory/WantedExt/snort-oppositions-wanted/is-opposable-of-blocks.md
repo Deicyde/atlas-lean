@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isOpposable_of_blocks
 ---
 
-# Is Opposable of blocks
+# Gluing oppositions of blocks
 
-If the blocks `{v | p v = i}` induce opposable graphs with oppositions given
-by `f`, and for paired vertices `{u, f u}` and `{w, f w}` in different blocks the
-four vertices induce `C₄`, `2K₂` or `4K₁` (as the two nonedges `u f(u)`,
-`w f(w)` force: `uw ∈ E ↔ f(u)f(w) ∈ E` and `u f(w) ∈ E ↔ f(u) w ∈ E`), then `G`
-is opposable.
+**Gluing oppositions of blocks.** Let $G$ be a graph, let $p$ be a map from its vertices to
+an index set, with blocks $B_i = \{v : p(v) = i\}$, and let $f$ be a map from the vertices of $G$
+to themselves. Suppose that for every index $i$ there is an opposition of the subgraph of $G$
+induced on $B_i$ that agrees with $f$ on $B_i$, and that for all vertices $u, w$ with
+$p(u) \neq p(w)$ we have $uw \in E(G) \iff f(u)f(w) \in E(G)$ and
+$uf(w) \in E(G) \iff f(u)w \in E(G)$. Then $G$ is opposable.
+
+Since $uf(u)$ and $wf(w)$ are non-edges, the second condition says that the four vertices
+$u, f(u), w, f(w)$ induce $C_4$, $2K_2$ or $4K_1$.
 
 ## Depends on
 
-- [Is Opposable](is-opposable.md)
-- [Is Opposition](is-opposition.md)
+- [Opposable graphs](is-opposable.md)
+- [Oppositions](is-opposition.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Immersion Of Injective MFDeriv
 
-- [Of injective mfderiv of closed Complemented range](of-injective-mfderiv-of-closed-complemen.md)
-- [Immersion At of injective mfderiv](immersion-at-of-injective-mfderiv.md)
+- [Injective differential with complemented range gives an immersion](of-injective-mfderiv-of-closed-complemen.md)
+- [Injective differential gives an immersion](immersion-at-of-injective-mfderiv.md)

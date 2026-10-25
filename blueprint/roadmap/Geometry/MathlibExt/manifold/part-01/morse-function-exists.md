@@ -7,23 +7,23 @@ proof: formalized
 lean: MathlibExt.Geometry.Manifold.MorseExistenceWanted.morse_function_exists
 ---
 
-# Morse Existence
+# Existence of Morse functions
 
-Every Hausdorff second-countable boundaryless finite-dimensional `C^∞` manifold `M` admits a `C^∞`
-Morse function `f : M → ℝ`. Source: J. Milnor, Morse Theory, Ann. of Math. Studies 51 (1963); M.
-Hirsch, Differential Topology; J. Lee, Intro to Smooth Manifolds, 2nd ed.; Lean states
-boundaryless finite-dimensional second-countable specialization.
+**Existence of Morse functions.** Every Hausdorff, second-countable $C^\infty$ manifold $M$
+without boundary, modelled on a finite-dimensional real normed space, admits a Morse function
+$f \colon M \to \mathbb{R}$.
 
 ## Depends on
 
-- [Morse Function](is-morse-function.md)
+- [Morse function](is-morse-function.md)
 
 ## Proof depends on
 
-- [Morse Lemma](morse-lemma.md)
-- [Morse Quadratic](morse-theory/morse-quadratic.md)
-- [Sard euclidean open](sard/sard-euclidean-open.md)
+- [Morse lemma](morse-lemma.md)
+- [Morse quadratic form](morse-theory/morse-quadratic.md)
+- [Sard's theorem on open subsets of finite-dimensional spaces](sard/sard-euclidean-open.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.MorseExistence](../../../../../sources/v2/MathlibExt.md)
+- J. Milnor, Morse Theory, Ann. of Math. Studies 51 (1963); M. Hirsch, Differential Topology; J. Lee, Intro to Smooth Manifolds, 2nd ed.; Lean states boundaryless finite-dimensional second-countable specialization.

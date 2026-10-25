@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sections_hasNSProperty_iff_heightChocolateBarGrundy_eq_xor
 ---
 
-# Sections has NSProperty iff height Chocolate Bar Grundy eq xor
+# NS property of sections and the three-dimensional chocolate bar
 
-Let `F` be monotone in both variables. The sections `x ↦ F n x` and `w ↦ F w n` all have
-the NS property iff the three-dimensional chocolate bar `CB(F, 0, w, x, y, 0)` (depth function
-`0`, depth `0`) has Grundy number `w ⊕ x ⊕ y` at every bar position `y ≤ F w x`.
+**NS property of sections and the three-dimensional chocolate bar.** Let
+$F : \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ be monotone for the componentwise order. Then
+the sections $x \mapsto F(n, x)$ and $w \mapsto F(w, n)$ have the NS property for every
+$n \in \mathbb{N}$ if and only if, for all natural numbers $w$, $x$, $y$ with $y \le F(w, x)$,
+the Grundy number of the chocolate bar $\mathrm{CB}(F, w, x, y)$, whose column at $(u, v)$
+(with $u \le w$, $v \le x$) has height $\min(F(u, v), y) + 1$, equals the nim-sum
+$w \oplus x \oplus y$ (bitwise exclusive or).
 
 ## Depends on
 
-- [Has NSProperty](has-nsproperty.md)
-- [Height Chocolate Bar Grundy](height-chocolate-bar-grundy.md)
+- [NS property](has-nsproperty.md)
+- [Grundy number of a chocolate bar with a height function](height-chocolate-bar-grundy.md)
 
 ## Sources
 

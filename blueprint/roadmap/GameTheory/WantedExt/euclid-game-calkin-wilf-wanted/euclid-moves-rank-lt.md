@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.euclidMoves_rank_lt
 ---
 
-# Euclid Moves rank lt
+# Euclid moves lower the sum
 
-Every move of Euclid lowers `a + b`.
+**Euclid moves lower the sum.** If $(a', b')$ is a Euclid move from $(a, b)$, then
+$a' + b' < a + b$.
 
 ## Depends on
 

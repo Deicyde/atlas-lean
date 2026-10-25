@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Databases.ConflictSerializable
 ---
 
-# Conflict Serializable
+# Conflict-serializable schedule
 
-A conflict-serializable schedule: conflict-equivalent to a serial schedule.
+**Conflict-serializable schedule.** A schedule $s$ is conflict-serializable when some serial
+schedule is conflict-equivalent to $s$.
 
 ## Depends on
 
-- [Op](op.md)
+- [Operation of a schedule](op.md)
 
 ## Proof depends on
 
-- [Conflict Equiv](conflict-equiv.md)
-- [Is Serial](is-serial.md)
+- [Conflict equivalence](conflict-equiv.md)
+- [Serial schedule](is-serial.md)
 
 ## Sources
 

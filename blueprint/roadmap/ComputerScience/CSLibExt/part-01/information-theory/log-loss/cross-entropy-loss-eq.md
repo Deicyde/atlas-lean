@@ -25,8 +25,8 @@ average is computed in $[0, \infty]$.
 
 ## Proof depends on
 
-- [Cross Entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/cross-entropy.md)
-- [Cross Entropy pure](../../../../../InformationTheory/MathlibExt/finite-entropy/cross-entropy-pure.md)
+- [Cross-entropy](../../../../../InformationTheory/MathlibExt/finite-entropy/cross-entropy.md)
+- [Cross-entropy of a point mass](../../../../../InformationTheory/MathlibExt/finite-entropy/cross-entropy-pure.md)
 
 ## Sources
 

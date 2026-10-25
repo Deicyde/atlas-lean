@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exactSlowNimMRuleLength_eq_smithRemoteness
 ---
 
-# Theorem 2
+# Theorem 2 (the M-rule realizes Smith's remoteness)
 
-**Theorem 2.** For `0 < k`, `M(x) = R(x)` for every position `x` of `NIM(k + 1, k)`: the
-M-rule realizes Smith's remoteness.
+**Theorem 2 (the M-rule realizes Smith's remoteness).** Let $0 < k$ and let
+$\mathrm{NIM}(k + 1, k)$ be exact slow $k$-NIM on $k + 1$ piles, that is, Slow$A$-Nim on $k + 1$
+stacks with $A = \{k\}$, where a move removes one stone from each of exactly $k$ nonempty piles.
+For every position $x$ of $\mathrm{NIM}(k + 1, k)$, the M-rule length $M(x)$ equals Smith's
+remoteness $R(x)$ of $x$ in $\mathrm{NIM}(k + 1, k)$.
 
 ## Depends on
 
 - [Smith Remoteness](../../MathlibExt/smith-remoteness/smith-remoteness.md)
-- [Exact Slow Nim MRule Length](exact-slow-nim-mrule-length.md)
+- [M-rule length](exact-slow-nim-mrule-length.md)
 - [Slow$A$-Nim](../../../Combinatorics/WantedExt/part-05/slow-anim-wanted/slow-anim-game.md)
 
 ## Sources

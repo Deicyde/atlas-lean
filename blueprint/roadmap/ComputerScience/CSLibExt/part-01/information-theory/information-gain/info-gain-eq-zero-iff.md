@@ -22,8 +22,8 @@ the attribute (first coordinate) and the label (second coordinate) are independe
 
 - [No split has negative information gain](info-gain-nonneg.md)
 - [Information gain is mutual information](of-real-info-gain.md)
-- [Measure Mutual Information](../../../../../InformationTheory/MathlibExt/conditional-entropy/measure-mutual-information.md)
-- [Measure Mutual Information to Measure eq zero iff](../../../../../InformationTheory/MathlibExt/conditional-entropy/measure-mutual-information-to-measure-eq.md)
+- [Mutual information of a joint probability measure](../../../../../InformationTheory/MathlibExt/conditional-entropy/measure-mutual-information.md)
+- [Mutual information vanishes exactly under independence](../../../../../InformationTheory/MathlibExt/conditional-entropy/measure-mutual-information-to-measure-eq.md)
 
 ## Sources
 

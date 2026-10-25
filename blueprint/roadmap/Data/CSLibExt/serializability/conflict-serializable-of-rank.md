@@ -6,16 +6,18 @@ proof: formalized
 lean: Cslib.Databases.conflictSerializable_of_rank
 ---
 
-# Conflict Serializable of rank
+# A rank increasing along precedence edges gives conflict serializability
 
-A schedule whose precedence graph increases a numeric rank of the transactions is
-conflict-serializable.
+**A rank increasing along precedence edges gives conflict serializability.** Let $s$ be a
+schedule in which no operation occurs twice. If $r$ is a function from the transactions to the
+natural numbers with $r(i) < r(j)$ whenever the precedence graph of $s$ has an edge from $i$ to
+$j$, then $s$ is conflict-serializable.
 
 ## Depends on
 
-- [Conflict Serializable](conflict-serializable.md)
-- [Op](op.md)
-- [Precedence Edge](precedence-edge.md)
+- [Conflict-serializable schedule](conflict-serializable.md)
+- [Operation of a schedule](op.md)
+- [Edge of the precedence graph](precedence-edge.md)
 
 ## Proof depends on
 
@@ -24,10 +26,10 @@ conflict-serializable.
 - [Directed cycle within a vertex list](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/directed-cycle-in.md)
 - [Is Acyclic](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-acyclic.md)
 - [Characterization of directed cycles within a vertex list](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/directed-cycle-in-iff.md)
-- [Access](access.md)
+- [Read or write access](access.md)
 - [Conflicts](conflicts.md)
 - [The serializability theorem](conflict-serializable-iff-is-acyclic.md)
-- [Precedence Graph](precedence-graph.md)
+- [Precedence graph](precedence-graph.md)
 
 ## Sources
 

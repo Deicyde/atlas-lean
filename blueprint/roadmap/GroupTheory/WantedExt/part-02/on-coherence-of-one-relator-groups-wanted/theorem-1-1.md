@@ -6,18 +6,17 @@ statement: formalized
 lean: MathlibExt.GroupTheory.OnCoherenceOfOneRelatorGroupsWanted.OnCoherenceOfOneRelatorGroups.theorem_1_1
 ---
 
-# Theorem 1 1
+# Jaikin-Zapirain–Linton theorem: one-relator groups are coherent
 
-Statement of Theorem 1.1:
-
-Let `G` be a one-relator group and `K` be an arbitrary field.
-Then `G` is a coherent group and the group algebra `K[G]` is a coherent ring.
+**Jaikin-Zapirain–Linton theorem: one-relator groups are coherent.** Let $G$ be a one-relator
+group and $K$ a field. Then $G$ is a coherent group and the group algebra $K[G]$ is a (left)
+coherent ring.
 
 ## Depends on
 
-- [Coherent](coherent.md)
+- [Coherent group](coherent.md)
 - [A group `G` is called one-relator if it has a presentation...](a-group-g-is-called-one-relator-if-it-ha.md)
-- [Coherent](coherent-2.md)
+- [Coherent ring](coherent-2.md)
 
 ## Sources
 
