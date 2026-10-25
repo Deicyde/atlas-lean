@@ -40,7 +40,7 @@ for finite-dimensional vector spaces, under `Module.Finite`. The theorem
 below applies on a complete inner-product space of arbitrary dimension:
 compactness, self-adjointness and a positive norm threshold give a finite
 set of distinct eigenvalues. A related private MathlibExt lemma,
-`CompactSpectral.aux_finite_eigenvalues`, handles compact normal operators
+`CompactSpectralWanted.aux_finite_eigenvalues`, handles compact normal operators
 over `ℂ`; `compactNormal_hilbertBasis` provides a related public spectral
 decomposition over `ℂ`.
 
