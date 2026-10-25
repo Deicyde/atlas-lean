@@ -6,24 +6,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.dijkstra_predecessor_spec
 ---
 
-# Dijkstra predecessor spec
+# Dijkstra's predecessor pointers satisfy the distance equation
 
-Every predecessor is an edge realizing the final distance equation.
+**Dijkstra's predecessor pointers satisfy the distance equation.** Let $G$ be a directed
+graph on the vertices $0, \dots, n-1$, let $w(u, v)$ be a natural-number weight for every
+ordered pair of vertices, and let $s$, $t$ and $p$ be vertices. If Dijkstra's algorithm on $G$
+with weights $w$ from source $s$ outputs $p$ as the predecessor of $t$, then $G$ has an edge
+from $p$ to $t$, the distances $d(p)$ and $d(t)$ output for $p$ and $t$ are both finite, and
+$d(t) = d(p) + w(p, t)$.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](dijkstra-cost.md)
-- [Dijkstra Result](dijkstra-result.md)
-- [Edge](../../directed-adjacency-2/edge.md)
-- [Dijkstra](dijkstra.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](dijkstra-cost.md)
+- [Output of Dijkstra's algorithm](dijkstra-result.md)
+- [Edge of a directed adjacency graph](../../directed-adjacency-2/edge.md)
+- [Dense Dijkstra's algorithm](dijkstra.md)
 
 ## Proof depends on
 
-- [Has Path Weight](has-path-weight.md)
-- [Reachable](../../directed-adjacency-2/reachable.md)
-- [Path Weight](path-weight.md)
-- [Reachable iff exists has Path Weight](reachable-iff-exists-has-path-weight.md)
+- [Walks of a given weight](has-path-weight.md)
+- [Reachability in a directed graph](../../directed-adjacency-2/reachable.md)
+- [Endpoint-weight sum along a vertex list](path-weight.md)
+- [Reachability via weighted walks](reachable-iff-exists-has-path-weight.md)
 
 ## Sources
 

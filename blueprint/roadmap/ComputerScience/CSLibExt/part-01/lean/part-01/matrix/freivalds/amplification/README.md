@@ -4,9 +4,9 @@ navigation: module
 
 # Amplification
 
-- [Freivalds Repeat Law](freivalds-repeat-law.md)
-- [Freivalds History point Mass](freivalds-history-point-mass.md)
-- [Freivalds Repeat acceptance Card](freivalds-repeat-acceptance-card.md)
-- [Freivalds Repeat Law acceptance power](freivalds-repeat-law-acceptance-power.md)
-- [Freivalds Repeat Law complete](freivalds-repeat-law-complete.md)
-- [Freivalds Repeat Law sound](freivalds-repeat-law-sound.md)
+- [Output distribution of repeated Freivalds trials](freivalds-repeat-law.md)
+- [Uniform mass of a Freivalds seed history](freivalds-history-point-mass.md)
+- [Counting accepted histories of repeated Freivalds trials](freivalds-repeat-acceptance-card.md)
+- [Acceptance probability of repeated Freivalds trials](freivalds-repeat-law-acceptance-power.md)
+- [Completeness of repeated Freivalds trials](freivalds-repeat-law-complete.md)
+- [Soundness of repeated Freivalds trials](freivalds-repeat-law-sound.md)

@@ -4,25 +4,25 @@ navigation: module
 
 # Forward Backward
 
-- [Backward](backward.md)
-- [Bridge](bridge.md)
-- [State Marg](state-marg.md)
-- [Bridge succ front](bridge-succ-front.md)
-- [Sum bridge](sum-bridge.md)
-- [Sum path Prob ite ite](sum-path-prob-ite-ite.md)
-- [Forward-backward](state-marg-eq.md)
-- [Likelihood eq sum forward mul backward](likelihood-eq-sum-forward-mul-backward.md)
+- [Backward variables of a hidden Markov model](backward.md)
+- [Bridge weights of a hidden Markov model](bridge.md)
+- [Joint weight of the observations and a state](state-marg.md)
+- [Front decomposition of the bridge weights](bridge-succ-front.md)
+- [Bridge weights sum to the backward variable](sum-bridge.md)
+- [Paths through two fixed states](sum-path-prob-ite-ite.md)
+- [Forward-backward identity](state-marg-eq.md)
+- [The likelihood from the forward and backward variables](likelihood-eq-sum-forward-mul-backward.md)
 
 ## Smoothing weights
 
-- [Smoothed](smoothed.md)
+- [Smoothed state weights](smoothed.md)
 - [Forward-backward smoothing is a joint-to-likelihood ratio](smoothed-eq.md)
-- [Sum smoothed](sum-smoothed.md)
-- [Smoothed nonneg](smoothed-nonneg.md)
+- [Smoothed weights sum to one](sum-smoothed.md)
+- [Smoothing weights are nonnegative](smoothed-nonneg.md)
 
 ## Tabulated on `Fin n`
 
-- [Backward Step](backward-step.md)
-- [Backward Tab](backward-tab.md)
-- [Smooth Step](smooth-step.md)
-- [Forward-backward smoothing](smoothed-tab.md)
+- [One step of the tabulated backward algorithm](backward-step.md)
+- [The tabulated backward algorithm](backward-tab.md)
+- [Smoothing step on tables](smooth-step.md)
+- [Tabulated forward-backward smoothing](smoothed-tab.md)

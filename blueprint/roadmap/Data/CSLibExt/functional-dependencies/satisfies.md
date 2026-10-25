@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Databases.Satisfies
 ---
 
-# Satisfies
+# A relation satisfies a set of dependencies
 
-Every dependency of `F` holds in `r`.
+**A relation satisfies a set of dependencies.** Let $F$ be a finite set of functional
+dependencies over attributes $A$, and let $r$ be a relation, given as a set of tuples $A \to V$
+with values in a type $V$. Then $r$ satisfies $F$ when every dependency of $F$ holds in $r$.
 
 ## Depends on
 
-- [FD](fd.md)
+- [Functional dependency](fd.md)
 
 ## Proof depends on
 
-- [Holds In](holds-in.md)
+- [A functional dependency holds in a relation](holds-in.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ guessed `b`.
 
 ## Depends on
 
-- [Adversary](adversary.md)
+- [ElGamal eavesdropping adversary](adversary.md)
 
 ## Proof depends on
 

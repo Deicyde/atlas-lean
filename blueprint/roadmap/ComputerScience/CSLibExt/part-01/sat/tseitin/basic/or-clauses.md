@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Tseitin.orClauses
 ---
 
-# Or Clauses
+# Tseitin clauses for a disjunction
 
-Defining clauses for the gate literal `g` of a disjunction of literals `a` and `b`.
+**Tseitin clauses for a disjunction.** For literals $g$, $a$ and $b$, the defining clauses
+of the gate literal $g$ for the disjunction of $a$ and $b$ are the three clauses
+$\lnot g \lor a \lor b$, $g \lor \lnot a$ and $g \lor \lnot b$, where $\lnot \ell$ denotes the
+complementary literal of $\ell$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ Defining clauses for the gate literal `g` of a disjunction of literals `a` and `
 
 ## Proof depends on
 
-- [Neg Lit](neg-lit.md)
+- [Complementary literal](neg-lit.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

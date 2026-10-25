@@ -6,13 +6,18 @@ proof: formalized
 lean: Cslib.MachineLearning.OptimalPredictors.lintegral_absLoss_le_of_isMedian
 ---
 
-# Lintegral abs Loss le of is Median
+# The expected absolute loss is minimized at every median
 
-The expected absolute loss is minimized at every median, in `ℝ≥0∞`.
+**The expected absolute loss is minimized at every median.** Let $\nu$ be a probability measure
+on $\mathbb{R}$ and let $m$ be a median of $\nu$. Then for every $y \in \mathbb{R}$,
+
+$$\int |\theta - m| \, d\nu(\theta) \le \int |\theta - y| \, d\nu(\theta),$$
+
+where both integrals are taken in $[0, \infty]$.
 
 ## Depends on
 
-- [Abs Loss](abs-loss.md)
+- [Absolute loss](abs-loss.md)
 - [Is Median](../../../../../Probability/MathlibExt/part-02/median/is-median.md)
 
 ## Proof depends on

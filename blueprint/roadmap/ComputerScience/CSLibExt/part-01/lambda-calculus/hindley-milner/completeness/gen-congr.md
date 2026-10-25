@@ -24,8 +24,8 @@ $\Gamma'$.
 ## Proof depends on
 
 - [Monotypes as type schemes](../typing/to-scheme.md)
-- [Term](../../../../part-02/unification/basic/term.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Sources
 

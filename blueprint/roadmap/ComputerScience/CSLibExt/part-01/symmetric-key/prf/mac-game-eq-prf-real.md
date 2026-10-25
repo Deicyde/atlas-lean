@@ -6,25 +6,31 @@ proof: formalized
 lean: Cslib.Crypto.PRF.macGame_eq_prfReal
 ---
 
-# Mac Game eq prf Real
+# The MAC reduction in the real PRF world
 
-With the oracle `F k`, the reduction runs the forgery experiment exactly.
+**The MAC reduction in the real PRF world.** Let $K$ and $R$ be finite nonempty types, let
+$F \colon K \to M \to T$ be a keyed function, and let $A$ be a forger: for coins $r \in R$,
+$A(r)$ is an adaptive oracle algorithm with queries in $M$, answers in $T$ and output in
+$M \times T$. Then the output distribution of the existential-forgery experiment for $F$ and $A$
+equals the output distribution of the real world of the PRF experiment for $F$ with the
+distinguisher that, on coins $r$, runs the MAC reduction on $A(r)$ starting from the empty query
+log.
 
 ## Depends on
 
-- [Oracle Comp](oracle-comp.md)
-- [Mac Game](mac-game.md)
-- [Mac Reduction](mac-reduction.md)
-- [Prf Real](prf-real.md)
+- [Adaptive oracle algorithms](oracle-comp.md)
+- [The MAC forgery experiment](mac-game.md)
+- [The distinguisher built from a forger](mac-reduction.md)
+- [Real world of the PRF experiment](prf-real.md)
 
 ## Proof depends on
 
-- [Mac Wins](mac-wins.md)
-- [Done](done.md)
-- [Queries](queries.md)
-- [Query](query.md)
-- [Run](run.md)
-- [Oracle Sig](oracle-sig.md)
+- [Winning the forgery game](mac-wins.md)
+- [The oracle algorithm that stops at once](done.md)
+- [Queries of an oracle algorithm](queries.md)
+- [Query step](query.md)
+- [Running an oracle algorithm](run.md)
+- [The signature of one oracle](oracle-sig.md)
 
 ## Sources
 

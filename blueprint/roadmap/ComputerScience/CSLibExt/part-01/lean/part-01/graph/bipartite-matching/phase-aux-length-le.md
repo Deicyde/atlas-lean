@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.phaseAux_length_le
 ---
 
-# Phase Aux length le
+# Length bound for phase paths
 
-Every path of `phaseAux` at level `k` has at most `k + 1` pairs.
+**Length bound for phase paths.** For every partner assignment $\mathrm{mate}$, level $k$,
+list of candidate right vertices and sets of used left and right vertices, every path that the
+phase search at level $k$ collects from these candidates has at most $k + 1$ pairs.
 
 ## Depends on
 
-- [Phase Aux](phase-aux.md)
+- [Phase search over candidates](phase-aux.md)
 
 ## Proof depends on
 
-- [Mark L](mark-l.md)
-- [Mark R](mark-r.md)
-- [Search Path](search-path.md)
-- [Search Path length le](search-path-length-le.md)
+- [Marking the left vertices of a path used](mark-l.md)
+- [Marking the right vertices of a path used](mark-r.md)
+- [Depth-first search of a Hopcroft–Karp phase](search-path.md)
+- [Length bound for search paths](search-path-length-le.md)
 
 ## Sources
 

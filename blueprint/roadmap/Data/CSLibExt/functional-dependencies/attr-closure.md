@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Databases.attrClosure
 ---
 
-# Attr Closure
+# Attribute closure
 
-The **attribute closure** `X⁺` of `X` under `F`, computed by the closure algorithm; the
-number of rounds is bounded by the number of attributes.
+**Attribute closure.** Let $A$ be a finite set of attributes, $F$ a finite set of functional
+dependencies over $A$ and $X \subseteq A$. The attribute closure $X^+$ of $X$ under $F$ is
+computed by the closure algorithm: starting from $X$, repeat closure rounds (each adds the right
+side of every dependency of $F$ whose left side is already included) until nothing changes, for
+at most $|A|$ rounds.
 
 ## Depends on
 
-- [FD](fd.md)
+- [Functional dependency](fd.md)
 
 ## Proof depends on
 
-- [Closure Loop](closure-loop.md)
+- [Iterated closure rounds](closure-loop.md)
 
 ## Sources
 

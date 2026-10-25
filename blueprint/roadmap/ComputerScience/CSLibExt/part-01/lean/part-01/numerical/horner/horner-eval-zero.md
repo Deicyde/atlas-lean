@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.hornerEval_zero
 ---
 
-# Horner Eval zero
+# Horner evaluation at zero
 
-At zero a nonempty coefficient vector returns its constant coefficient.
+**Horner evaluation at zero.** For every commutative semiring $R$ and all coefficients
+$a_0, \dots, a_n \in R$ (at least one coefficient), the value returned by Horner evaluation
+of $a_0, \dots, a_n$ at $x = 0$ is $a_0$.
 
 ## Depends on
 
-- [Horner Eval](horner-eval.md)
+- [Horner evaluation with operation count](horner-eval.md)
 
 ## Proof depends on
 
-- [Horner Eval ret eq sum](horner-eval-ret-eq-sum.md)
+- [Horner evaluation computes the coefficient sum](horner-eval-ret-eq-sum.md)
 
 ## Sources
 

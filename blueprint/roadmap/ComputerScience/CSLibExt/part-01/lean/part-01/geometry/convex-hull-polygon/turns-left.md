@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cross](../segment-intersection/cross.md)
+- [Cross product of plane vectors](../segment-intersection/cross.md)
 
 ## Sources
 

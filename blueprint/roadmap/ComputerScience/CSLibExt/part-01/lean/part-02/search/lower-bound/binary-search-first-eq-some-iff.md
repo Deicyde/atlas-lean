@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.binarySearchFirst?_eq_some_iff
 ---
 
-# Binary Search First? eq some iff
+# Binary search returns the first occurrence of the key
 
-The membership wrapper returns exactly the first occurrence of `key`.
+**Binary search returns the first occurrence of the key.** Let $a = (a_0, \dots, a_{n-1})$ be
+an array over a linearly ordered type, sorted in nondecreasing order, let $k$ be a key and let $i$
+be a natural number. Binary search for the first occurrence of $k$ in $a$ returns the index $i$ if
+and only if $i < n$, $a_i = k$, and $a_j < k$ for every $j < i$.
 
 ## Depends on
 
-- [Binary Search First?](binary-search-first.md)
+- [Binary search for the first occurrence](binary-search-first.md)
 
 ## Proof depends on
 
-- [Lower Bound](lower-bound.md)
-- [Lower Bound spec](lower-bound-spec.md)
+- [Lower-bound search](lower-bound.md)
+- [Correctness of lower-bound search](lower-bound-spec.md)
 
 ## Sources
 

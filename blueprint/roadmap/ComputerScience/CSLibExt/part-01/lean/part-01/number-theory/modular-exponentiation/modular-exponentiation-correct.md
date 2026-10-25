@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_correct
 ---
 
-# Modular Exponentiation correct
+# Correctness of modular exponentiation
 
-For a positive exponent, the raw result is the least residue of `a ^ b`.
+**Correctness of modular exponentiation.** For natural numbers $a$, $b$, $n$ with $b > 0$
+and $n > 0$, the value returned by modular exponentiation on base $a$, exponent $b$ and
+modulus $n$ equals $a^b \bmod n$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation ret is reduced](modular-exponentiation-ret-is-reduced.md)
-- [Modular Exponentiation ret mod](modular-exponentiation-ret-mod.md)
+- [Modular exponentiation returns a reduced value](modular-exponentiation-ret-is-reduced.md)
+- [Modular exponentiation is correct up to reduction](modular-exponentiation-ret-mod.md)
 
 ## Sources
 

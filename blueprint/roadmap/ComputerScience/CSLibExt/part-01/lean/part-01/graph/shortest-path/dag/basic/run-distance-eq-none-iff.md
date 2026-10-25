@@ -6,35 +6,39 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DAGShortestPaths.run_distance_eq_none_iff
 ---
 
-# Run distance eq none iff
+# Infinite DAG distances are exactly unreachable vertices
 
-Infinity is exactly absence of a path in the canonical weight-forgetting graph.
+**Infinite DAG distances are exactly unreachable vertices.** Let $E$ be a list of
+integer-weighted edges on $n$ vertices, $s$ a source, and $\sigma$ a topological order of the
+directed graph $G$ obtained from $E$ by forgetting weights. For every vertex $t$, the one-pass
+relaxation from $s$ in the order $\sigma$ leaves the distance of $t$ infinite if and only if $t$ is
+not reachable from $s$ in $G$.
 
 ## Depends on
 
-- [Distances](../../bellman-ford/basic/distances.md)
-- [Edge](../../bellman-ford/basic/edge.md)
-- [To Directed Adjacency](../../bellman-ford/basic/to-directed-adjacency.md)
-- [Cost](cost.md)
-- [Run](run.md)
-- [Reachable](../../../directed-adjacency-2/reachable.md)
-- [Is Topological Order](../../../topological-sort/is-topological-order.md)
+- [Bellman-Ford distance table](../../bellman-ford/basic/distances.md)
+- [Weighted directed edge](../../bellman-ford/basic/edge.md)
+- [Weight-forgetting directed graph](../../bellman-ford/basic/to-directed-adjacency.md)
+- [Cost of the DAG shortest-path pass](cost.md)
+- [One-pass DAG shortest-path relaxation](run.md)
+- [Reachability in a directed graph](../../../directed-adjacency-2/reachable.md)
+- [Topological order](../../../topological-sort/is-topological-order.md)
 
 ## Proof depends on
 
-- [Is Weighted Path](../../bellman-ford/basic/is-weighted-path.md)
-- [Edge to Directed Adjacency iff](../../bellman-ford/basic/edge-to-directed-adjacency-iff.md)
+- [Weighted path in an edge list](../../bellman-ford/basic/is-weighted-path.md)
+- [Edges of the weight-forgetting graph](../../bellman-ford/basic/edge-to-directed-adjacency-iff.md)
 - [Is Weighted Path append edge](../../bellman-ford/basic/is-weighted-path-append-edge.md)
 - [Is Weighted Path tail](../../bellman-ford/basic/is-weighted-path-tail.md)
 - [Is Weighted Path walk](../../bellman-ford/basic/is-weighted-path-walk.md)
-- [Path Weight](../../bellman-ford/basic/path-weight.md)
+- [Bellman–Ford path weight](../../bellman-ford/basic/path-weight.md)
 - [Path Weight append edge](../../bellman-ford/basic/path-weight-append-edge.md)
-- [Reachable iff exists is Weighted Path](../../bellman-ford/basic/reachable-iff-exists-is-weighted-path.md)
-- [Run distance realized](run-distance-realized.md)
-- [Run source distance](run-source-distance.md)
-- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/edge.md)
-- [Walk](../../../directed-adjacency-2/walk.md)
+- [Reachability by weighted paths](../../bellman-ford/basic/reachable-iff-exists-is-weighted-path.md)
+- [Finite DAG distances are path weights](run-distance-realized.md)
+- [The DAG shortest-path pass gives the source distance zero](run-source-distance.md)
+- [Directed adjacency graph](../../../directed-adjacency-2/directed-adjacency.md)
+- [Edge of a directed adjacency graph](../../../directed-adjacency-2/edge.md)
+- [Walks of a given length](../../../directed-adjacency-2/walk.md)
 
 ## Sources
 

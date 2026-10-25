@@ -13,8 +13,8 @@ lies on the segment.
 
 ## Depends on
 
-- [Direction](direction.md)
-- [On Segment](on-segment.md)
+- [Direction of three points](direction.md)
+- [The ON-SEGMENT test](on-segment.md)
 
 ## Sources
 

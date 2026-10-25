@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.selectionSort_time
 ---
 
-# Selection Sort time
+# Comparison count of selection sort
 
-Selection sort performs exactly `n * (n - 1) / 2` comparisons on `n` elements.
+**Comparison count of selection sort.** For every list of length $n$ over a linearly ordered
+type, selection sort has cost exactly $n(n-1)/2$ in the model that charges one unit per order
+comparison; that is, it performs exactly $n(n-1)/2$ comparisons.
 
 ## Depends on
 
-- [Selection Sort](selection-sort.md)
+- [Selection sort](selection-sort.md)
 
 ## Proof depends on
 
-- [Extract Min](extract-min.md)
-- [Extract Min time](extract-min-time.md)
+- [Minimum extraction](extract-min.md)
+- [Cost of minimum extraction](extract-min-time.md)
 
 ## Sources
 

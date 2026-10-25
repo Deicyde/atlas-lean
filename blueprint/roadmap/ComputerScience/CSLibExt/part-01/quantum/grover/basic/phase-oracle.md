@@ -12,7 +12,7 @@ The phase oracle negates exactly the marked amplitudes.
 
 ## Depends on
 
-- [Amplitude](amplitude.md)
+- [Real amplitude vectors](amplitude.md)
 
 ## Sources
 

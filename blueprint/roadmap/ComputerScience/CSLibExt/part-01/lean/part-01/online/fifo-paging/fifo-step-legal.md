@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.FifoPaging.fifoStep_legal
 ---
 
-# Fifo Step legal
+# One FIFO step keeps the cache legal
 
-FIFO keeps a legal cache: distinct pages, at most `k` of them.
+**One FIFO step keeps the cache legal.** If a list $c$ of pages has no duplicates and at most
+$k$ entries, then for every page $p$ the cache produced from $c$ by one FIFO step with capacity
+$k$ on request $p$ also has no duplicates and at most $k$ entries.
 
 ## Depends on
 
-- [Fifo Step](fifo-step.md)
+- [One step of FIFO paging](fifo-step.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Crypto.PRF.pick
 ---
 
-# Pick
+# Selecting the challenge message by a bit
 
-The message selected by the challenge bit: `m.2` for `true`, `m.1` for `false`.
+**Selecting the challenge message by a bit.** Given a pair of messages
+$(m_0, m_1) \in Y \times Y$ and a challenge bit $b$, the selected message is $m_1$ when $b$ is
+true and $m_0$ when $b$ is false.
 
 ## Depends on
 

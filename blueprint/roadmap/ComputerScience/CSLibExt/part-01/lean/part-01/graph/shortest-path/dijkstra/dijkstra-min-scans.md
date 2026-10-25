@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.dijkstra_minScans
 ---
 
-# Dijkstra min Scans
+# Minimum-selection count of dense Dijkstra
 
-Dense minimum selection inspects exactly `n * n` vertex entries.
+**Minimum-selection count of dense Dijkstra.** Let $G$ be a directed graph on the vertices
+$0, \dots, n-1$, let $w(u, v)$ be a natural-number weight for every ordered pair of vertices,
+and let $s$ be a vertex. Dijkstra's algorithm on $G$ with weights $w$ from source $s$ inspects
+exactly $n^2$ vertex entries during minimum selection.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](dijkstra-cost.md)
-- [Dijkstra Result](dijkstra-result.md)
-- [Dijkstra](dijkstra.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](dijkstra-cost.md)
+- [Output of Dijkstra's algorithm](dijkstra-result.md)
+- [Dense Dijkstra's algorithm](dijkstra.md)
 
 ## Sources
 

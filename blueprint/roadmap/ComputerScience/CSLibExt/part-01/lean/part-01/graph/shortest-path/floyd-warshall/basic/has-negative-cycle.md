@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FloydWarshall.HasNegativeCycle
 ---
 
-# Has Negative Cycle
+# Matrices with a negative cycle
 
-The direct-weight matrix contains a negative cycle.
+**Matrices with a negative cycle.** An $n \times n$ matrix $w$ of weights in
+$\mathbb{Z} \cup \{+\infty\}$ has a negative cycle when some list of vertices is a negative
+cycle for $w$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Negative Cycle](is-negative-cycle.md)
+- [Negative cycles](is-negative-cycle.md)
 
 ## Sources
 

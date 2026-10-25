@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_ret_is_reduced
 ---
 
-# Modular Exponentiation ret is reduced
+# Modular exponentiation returns a reduced value
 
-Every positive-exponent result has already been reduced modulo `n`.
+**Modular exponentiation returns a reduced value.** For natural numbers $a$, $b$, $n$ with
+$b > 0$, the value $r$ returned by modular exponentiation on base $a$, exponent $b$ and
+modulus $n$ satisfies $r \bmod n = r$ (with the convention $r \bmod 0 = r$).
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation ret even](modular-exponentiation-ret-even.md)
-- [Modular Exponentiation ret odd](modular-exponentiation-ret-odd.md)
+- [Value of the even step of modular exponentiation](modular-exponentiation-ret-even.md)
+- [Value of the odd step of modular exponentiation](modular-exponentiation-ret-odd.md)
 
 ## Sources
 

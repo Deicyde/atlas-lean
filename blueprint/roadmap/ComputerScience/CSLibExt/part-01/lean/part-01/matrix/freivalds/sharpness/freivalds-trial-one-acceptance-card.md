@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsTrial_one_acceptanceCard
 ---
 
-# Freivalds Trial one acceptance Card
+# The sharp Freivalds example has exactly one accepted seed
 
-Exactly one complete one-dimensional seed is accepted by the wrong-product trial.
+**The sharp Freivalds example has exactly one accepted seed.** Let $A = B = (1)$ and
+$C = (0)$ be $1 \times 1$ matrices over $\mathbb{Z}/2\mathbb{Z}$. Exactly one seed
+$r \in (\mathbb{Z}/2\mathbb{Z})^1$ is accepted by the Freivalds trial on $A$, $B$, $C$.
 
 ## Depends on
 
-- [Freivalds Trial](../basic/freivalds-trial.md)
+- [Freivalds trial](../basic/freivalds-trial.md)
 
 ## Proof depends on
 
-- [Freivalds Trial one accept iff](freivalds-trial-one-accept-iff.md)
+- [The sharp Freivalds example accepts exactly the zero seed](freivalds-trial-one-accept-iff.md)
 
 ## Sources
 

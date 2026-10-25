@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_singleton
 ---
 
-# Hire Assistant singleton
+# Hire-assistant scan on one candidate
 
-The first candidate is hired regardless of its quality.
+**Hire-assistant scan on one candidate.** For every element $a$ of a linearly ordered type,
+on the one-element list $[a]$ the hire-assistant scan returns manager index $0$ and hire list
+$[0]$, with cost pair $(1, 1)$: the single candidate is hired regardless of its quality.
 
 ## Depends on
 
-- [Hire Assistant](hire-assistant.md)
+- [The hire-assistant scan](hire-assistant.md)
 
 ## Sources
 

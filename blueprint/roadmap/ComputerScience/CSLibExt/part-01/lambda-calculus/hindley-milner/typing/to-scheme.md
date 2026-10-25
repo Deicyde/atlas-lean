@@ -19,7 +19,7 @@ images of $\tau_1$ and $\tau_2$.
 
 ## Proof depends on
 
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Sources
 

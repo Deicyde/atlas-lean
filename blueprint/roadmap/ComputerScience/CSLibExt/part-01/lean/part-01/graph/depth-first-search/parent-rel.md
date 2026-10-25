@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.ParentRel
 ---
 
-# Parent Rel
+# Parent relation of a list of pairs
 
-The parent relation represented by `(child, parent)` pairs.
+**Parent relation of a list of pairs.** Given a list $P$ of (child, parent) pairs, $p$ is a
+parent of $c$ in $P$ when the pair $(c, p)$ occurs in $P$.
 
 ## Depends on
 

@@ -4,7 +4,7 @@ navigation: module
 
 # Correctness
 
-- [Prim root](prim-root.md)
-- [Prim parent edge](prim-parent-edge.md)
-- [Prim is Tree](prim-is-tree.md)
-- [Prim minimum spanning Tree](prim-minimum-spanning-tree.md)
+- [The root has no parent in Prim's algorithm](prim-root.md)
+- [Parents returned by Prim's algorithm are adjacency-list neighbors](prim-parent-edge.md)
+- [Prim's algorithm returns a tree](prim-is-tree.md)
+- [Prim's algorithm returns a minimum spanning tree](prim-minimum-spanning-tree.md)

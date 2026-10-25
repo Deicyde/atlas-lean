@@ -7,17 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TransitiveClosure.transitiveClosure_time_zero
 ---
 
-# Transitive Closure time zero
+# Cost of transitive closure on the empty graph
 
-The empty graph performs no cell assignments.
+**Cost of transitive closure on the empty graph.** For the graph with no vertices, the
+transitive-closure algorithm charges $0$ time units: it performs no cell assignments.
 
 ## Depends on
 
-- [Transitive Closure](transitive-closure.md)
+- [Saved-matrix transitive-closure algorithm](transitive-closure.md)
 
 ## Proof depends on
 
-- [Transitive Closure time](transitive-closure-time.md)
+- [Running time of the transitive-closure algorithm](transitive-closure-time.md)
 
 ## Sources
 

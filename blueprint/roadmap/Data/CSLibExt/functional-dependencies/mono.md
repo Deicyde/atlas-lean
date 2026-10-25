@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Databases.IsSuperkey.mono
 ---
 
-# Mono
+# Supersets of superkeys are superkeys
 
-Supersets of superkeys are superkeys.
+**Supersets of superkeys are superkeys.** Let $F$ be a finite set of functional dependencies
+over a finite set of attributes. If $K$ is a superkey for $F$ and $K \subseteq K'$, then $K'$ is a
+superkey for $F$.
 
 ## Depends on
 
-- [FD](fd.md)
-- [Is Superkey](is-superkey.md)
+- [Functional dependency](fd.md)
+- [Superkey](is-superkey.md)
 
 ## Proof depends on
 
-- [Derives](derives.md)
+- [Derivability with Armstrong's axioms](derives.md)
 
 ## Sources
 

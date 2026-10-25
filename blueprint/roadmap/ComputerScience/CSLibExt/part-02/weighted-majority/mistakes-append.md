@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.MachineLearning.WeightedMajority.mistakes_append
 ---
 
-# Mistakes append
+# Mistakes split over concatenated runs
 
-The mistakes over `rs ++ rs'` are those over `rs` plus those over `rs'` from the weights after
-`rs`.
+**Mistakes split over concatenated runs.** Let $K$ be a field with a linear order, let
+$\beta \in K$ be a penalty, let $w$ be weights in $K$ on $n$ experts, and let $R$ and $R'$ be
+lists of rounds. The number of mistakes of the weighted majority algorithm with penalty $\beta$
+on $R$ followed by $R'$, starting from $w$, equals its number of mistakes on $R$ starting from
+$w$ plus its number of mistakes on $R'$ starting from the weights reached after $R$.
 
 ## Depends on
 
-- [Round](round.md)
-- [Mistakes](mistakes.md)
-- [Weights](weights.md)
+- [Round of prediction with expert advice](round.md)
+- [Mistakes of the weighted majority algorithm](mistakes.md)
+- [Weights after a run](weights.md)
 
 ## Proof depends on
 
-- [Predict](predict.md)
-- [Update](update.md)
+- [Weighted majority vote](predict.md)
+- [Weighted majority update](update.md)
 
 ## Sources
 

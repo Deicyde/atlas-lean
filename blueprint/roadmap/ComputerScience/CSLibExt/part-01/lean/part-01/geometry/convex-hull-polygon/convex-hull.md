@@ -16,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lower Hull](../convex-hull/lower-hull.md)
-- [Upper Hull](upper-hull.md)
+- [Lower chain](../convex-hull/lower-hull.md)
+- [Upper chain](upper-hull.md)
 
 ## Sources
 

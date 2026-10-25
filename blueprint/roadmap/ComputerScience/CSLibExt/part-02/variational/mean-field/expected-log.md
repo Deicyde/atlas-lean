@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.MachineLearning.Variational.expectedLog
 ---
 
-# Expected Log
+# Expected log-joint
 
-The expected log-joint of `a` under `q₂`: `E_{q₂}[log p(a, ·)]`.
+**Expected log-joint.** Let $A$ and $B$ be finite sets and let $p : A \times B \to \mathbb{R}$
+and $q_2 : B \to \mathbb{R}$. For $a \in A$, the expected log-joint of $a$ under $q_2$ is
+$\mathbb{E}_{q_2}[\log p(a, \cdot)] = \sum_{b \in B} q_2(b) \log p(a, b)$.
 
 ## Depends on
 

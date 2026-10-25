@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.rank
 ---
 
-# Rank
+# Rank within a level
 
-The rank of a task within its level (tasks of the level in numbering order).
+**Rank within a level.** In a computation DAG, the rank of a task $v$ is the number of tasks
+of the same depth as $v$ with a smaller number than $v$. Taken in numbering order, the tasks of a
+level have ranks $0, 1, 2, \dots$
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 
 ## Proof depends on
 
-- [Depth](depth.md)
+- [Depth of a task in a computation DAG](depth.md)
 
 ## Sources
 

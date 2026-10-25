@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.SemanticallyEquivalent.symm
 ---
 
-# Symm
+# Semantic equivalence of directed adjacency graphs is symmetric
 
-Semantic graph equivalence is symmetric.
+**Semantic equivalence of directed adjacency graphs is symmetric.** If a directed adjacency
+graph $G_1$ is semantically equivalent to a directed adjacency graph $G_2$, then $G_2$ is
+semantically equivalent to $G_1$.
 
 ## Depends on
 
-- [Directed Adjacency](directed-adjacency.md)
-- [Semantically Equivalent](semantically-equivalent.md)
+- [Directed adjacency graph](directed-adjacency.md)
+- [Semantic equivalence of directed adjacency graphs](semantically-equivalent.md)
 
 ## Proof depends on
 
-- [Edge](edge.md)
+- [Edge of a directed adjacency graph](edge.md)
 
 ## Sources
 

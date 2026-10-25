@@ -6,28 +6,38 @@ proof: formalized
 lean: Cslib.Algorithms.SAT.Tseitin.spec_tseitinAux
 ---
 
-# Spec tseitin Aux
+# Correctness invariant of the Tseitin encoding
 
-The invariant holds for the encoding of every proposition.
+**Correctness invariant of the Tseitin encoding.** Let $\iota$ map atoms to natural numbers,
+let $A$ be a proposition and $k$ a natural number, and let $(\ell, \Phi, k')$ be the reference
+Tseitin encoding of $A$ with gates numbered from $k$: the literal naming $A$, its defining
+clauses and the next unused gate number. For an assignment $\sigma$ of Boolean values to the
+natural-number variables, let $A[\sigma]$ be the truth value of $A$ when each atom $a$ gets
+the value $\sigma(2\iota(a))$, and call a variable a gate in range if it equals $2j + 1$ for
+some $j$ with $k \le j < k'$. Then $k \le k'$; the variable of $\ell$ and every variable
+occurring in a literal of $\Phi$ is even or a gate in range; every assignment $\sigma$ that
+satisfies $\Phi$ gives $\ell$ the value $A[\sigma]$; and for every assignment $\sigma$ there is
+an assignment $\tau$ that agrees with $\sigma$ on every variable that is not a gate in range,
+satisfies $\Phi$ and gives $\ell$ the value $A[\sigma]$.
 
 ## Depends on
 
-- [Spec](spec.md)
-- [Atom Val](atom-val.md)
-- [Tseitin Aux](tseitin-aux.md)
+- [Tseitin encoding invariant](spec.md)
+- [Value of a proposition read off the atom variables](atom-val.md)
+- [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
 
 ## Proof depends on
 
-- [Allowed](allowed.md)
-- [Atom Dependent](atom-dependent.md)
-- [Is Gate](is-gate.md)
-- [And Clauses](and-clauses.md)
-- [Imp Clauses](imp-clauses.md)
-- [Lit Val](lit-val.md)
-- [Neg Lit](neg-lit.md)
-- [Or Clauses](or-clauses.md)
-- [Satisfies of agree](satisfies-of-agree.md)
-- [Tseitin Step](tseitin-step.md)
+- [Allowed variables for a gate range](allowed.md)
+- [Functions of the atom variables](atom-dependent.md)
+- [Gate variables in a range](is-gate.md)
+- [Tseitin clauses for a conjunction](and-clauses.md)
+- [Tseitin clauses for an implication](imp-clauses.md)
+- [Truth value of a literal](lit-val.md)
+- [Complementary literal](neg-lit.md)
+- [Tseitin clauses for a disjunction](or-clauses.md)
+- [Satisfaction depends only on the occurring variables](satisfies-of-agree.md)
+- [One step of the Tseitin encoding](tseitin-step.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)

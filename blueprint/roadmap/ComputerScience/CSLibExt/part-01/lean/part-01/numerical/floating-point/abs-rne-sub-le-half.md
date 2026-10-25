@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FloatingPoint.abs_rne_sub_le_half
 ---
 
-# Abs rne sub le half
+# Rounding to the nearest integer is within one half
 
-The rounding error is at most `1/2`.
+**Rounding to the nearest integer is within one half.** Let $K$ be a linearly ordered field
+with a floor function. For every $m \in K$, the integer $\operatorname{rne}(m)$ obtained by
+rounding $m$ to the nearest integer, ties to even, satisfies
+$|\operatorname{rne}(m) - m| \le 1/2$.
 
 ## Depends on
 
-- [Rne](rne.md)
+- [Nearest-integer rounding with ties to even](rne.md)
 
 ## Proof depends on
 
-- [Abs rne sub le min](abs-rne-sub-le-min.md)
+- [Rounding error bounded by the distances to neighbouring integers](abs-rne-sub-le-min.md)
 
 ## Sources
 

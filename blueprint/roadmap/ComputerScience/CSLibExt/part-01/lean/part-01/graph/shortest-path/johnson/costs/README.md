@@ -4,5 +4,5 @@ navigation: module
 
 # Costs
 
-- [Johnson time of success](johnson-time-of-success.md)
-- [Johnson time le](johnson-time-le.md)
+- [Exact cost of a successful run of Johnson's algorithm](johnson-time-of-success.md)
+- [Cost bound for Johnson's algorithm](johnson-time-le.md)

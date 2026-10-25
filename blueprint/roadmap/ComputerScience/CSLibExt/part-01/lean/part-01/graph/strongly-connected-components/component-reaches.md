@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.StronglyConnectedComponents.ComponentReaches
 ---
 
-# Component Reaches
+# Reachability between components
 
-A component reaches another when some vertex of the first reaches some vertex of the second.
+**Reachability between components.** In a directed graph $G$, a list $S$ of vertices reaches
+a list $T$ of vertices when some vertex of $S$ reaches some vertex of $T$ by a directed path in
+$G$, possibly of length zero.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Reachable](../directed-adjacency-2/reachable.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Tseitin.impClauses
 ---
 
-# Imp Clauses
+# Tseitin clauses for an implication
 
-Defining clauses for the gate literal `g` of an implication of literals `a` and `b`.
+**Tseitin clauses for an implication.** For literals $g$, $a$ and $b$, the defining clauses of
+the gate literal $g$ for the implication from $a$ to $b$ are, in this order, the three clauses
+$\lnot g \lor \lnot a \lor b$, $g \lor a$ and $g \lor \lnot b$, where $\lnot \ell$ denotes the
+complementary literal of $\ell$ (same variable, opposite polarity).
 
 ## Depends on
 
@@ -15,7 +18,7 @@ Defining clauses for the gate literal `g` of an implication of literals `a` and 
 
 ## Proof depends on
 
-- [Neg Lit](neg-lit.md)
+- [Complementary literal](neg-lit.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

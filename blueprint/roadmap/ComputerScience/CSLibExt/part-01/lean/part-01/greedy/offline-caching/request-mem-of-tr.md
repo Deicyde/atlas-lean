@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OfflineCaching.request_mem_of_tr
 ---
 
-# Request mem of tr
+# A legal step caches the served page
 
-With positive capacity, the served page is cached afterwards.
+**A legal step caches the served page.** Let $k > 0$ be a capacity. If a legal transition for
+capacity $k$ takes a cache $C$ to a cache $C'$ by a cache event, then the page served by that
+event lies in $C'$.
 
 ## Depends on
 
-- [Cache Event](cache-event.md)
-- [Request](request.md)
-- [Cache LTS](cache-lts.md)
+- [Cache events](cache-event.md)
+- [Page served by a cache event](request.md)
+- [Legal cache transitions](cache-lts.md)
 
 ## Sources
 

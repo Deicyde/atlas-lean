@@ -26,9 +26,9 @@ This is the completeness theorem of Damas and Milner.
 - [Hindley–Milner typing](../typing/has-type.md)
 - [Monotypes](../typing/ty.md)
 - [Algorithm W](../algorithm-w/w.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
-- [Term](../../../../part-02/unification/basic/term.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Proof depends on
 
@@ -52,15 +52,15 @@ This is the completeness theorem of Damas and Milner.
 - [Substitution lemma](../typing/has-type-var-iff.md)
 - [Substituting into a generalization is more general](subst-ty-gen-more-general.md)
 - [Monotypes as type schemes](../typing/to-scheme.md)
-- [Equations](../../../../part-02/unification/basic/equations.md)
-- [Comp](../../../../part-02/unification/basic/comp.md)
-- [Exists of mem vars subst](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
-- [Subst congr](../../../../part-02/unification/basic/subst-congr.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
-- [Unifies](../../../../part-02/unification/basic/unifies.md)
-- [Unify](../../../../part-02/unification/basic/unify.md)
-- [Completeness](../../../../part-02/unification/basic/unify-eq-none-iff.md)
-- [Most generality](../../../../part-02/unification/basic/unify-eq-some-comp.md)
+- [Lists of equations](../../../../part-02/unification/basic/equations.md)
+- [Composition of substitutions](../../../../part-02/unification/basic/comp.md)
+- [Variables of a substituted term](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
+- [Substitution depends only on the variables of the term](../../../../part-02/unification/basic/subst-congr.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
+- [Unifier of a list of equations](../../../../part-02/unification/basic/unifies.md)
+- [Martelli–Montanari unification](../../../../part-02/unification/basic/unify.md)
+- [Completeness of unification](../../../../part-02/unification/basic/unify-eq-none-iff.md)
+- [Most generality of unification](../../../../part-02/unification/basic/unify-eq-some-comp.md)
 
 ## Sources
 

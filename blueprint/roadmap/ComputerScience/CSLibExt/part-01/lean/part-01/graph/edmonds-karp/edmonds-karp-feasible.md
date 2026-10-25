@@ -6,31 +6,35 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EdmondsKarp.edmondsKarp_feasible
 ---
 
-# Edmonds Karp feasible
+# The Edmonds–Karp flow is feasible
 
-The returned flow satisfies skew symmetry, capacity bounds, and conservation.
+**The Edmonds–Karp flow is feasible.** For every capacity matrix $c$ with
+natural-number entries on the vertices $\{0, \dots, n-1\}$ and all vertices $s$ and $t$,
+the flow $f$ returned by the Edmonds–Karp algorithm on $c$, $s$, $t$ is feasible for $c$,
+$s$, $t$: it is skew-symmetric, satisfies $f(u, v) \le c(u, v)$ for all vertices $u, v$,
+and has zero net outflow at every vertex other than $s$ and $t$.
 
 ## Depends on
 
-- [Is Feasible](is-feasible.md)
-- [Edmonds Karp](edmonds-karp.md)
+- [Feasible flow](is-feasible.md)
+- [Edmonds–Karp maximum flow](edmonds-karp.md)
 
 ## Proof depends on
 
-- [BFSResult](../breadth-first-search-2/bfsresult.md)
-- [Bfs](../breadth-first-search-2/bfs.md)
+- [Result of breadth-first search](../breadth-first-search-2/bfsresult.md)
+- [Breadth-first search](../breadth-first-search-2/bfs.md)
 - [Flow](flow.md)
-- [Is Path](is-path.md)
-- [Augment](augment.md)
-- [Augment path Bottleneck feasible](augment-path-bottleneck-feasible.md)
-- [Path Bottleneck](path-bottleneck.md)
+- [Directed path](is-path.md)
+- [Augmenting a flow along a path](augment.md)
+- [Bottleneck augmentation preserves feasibility](augment-path-bottleneck-feasible.md)
+- [Bottleneck of a path](path-bottleneck.md)
 - [Residual Graph](residual-graph.md)
-- [Run](run.md)
-- [Shortest Path](shortest-path.md)
-- [Shortest Path sound](shortest-path-sound.md)
-- [Source Capacity](source-capacity.md)
-- [Zero Flow](zero-flow.md)
-- [Zero Flow feasible](zero-flow-feasible.md)
+- [Augmenting-path iteration with fuel](run.md)
+- [Shortest path via breadth-first search](shortest-path.md)
+- [Soundness of the shortest-path search](shortest-path-sound.md)
+- [Source capacity](source-capacity.md)
+- [Zero flow](zero-flow.md)
+- [The zero flow is feasible](zero-flow-feasible.md)
 
 ## Sources
 

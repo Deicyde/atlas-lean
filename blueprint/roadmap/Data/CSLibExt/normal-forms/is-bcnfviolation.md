@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Databases.IsBCNFViolation
 ---
 
-# Is BCNFViolation
+# BCNF violations
 
-`X ⊆ S` violates BCNF in `S`: its closure within `S` is neither `X` itself nor all of `S`.
+**BCNF violations.** Let $F$ be a set of functional dependencies and $S$ a scheme, and write
+$X^+$ for the attribute closure of a set $X$ of attributes under $F$. A set $X \subseteq S$
+violates BCNF in $S$ when $S \not\subseteq X^+$ and $X^+ \cap S \not\subseteq X$, that is, when
+the closure $X^+ \cap S$ of $X$ within $S$ is neither $X$ nor $S$.
 
 ## Depends on
 
-- [FD](../functional-dependencies/fd.md)
+- [Functional dependency](../functional-dependencies/fd.md)
 
 ## Proof depends on
 
-- [Attr Closure](../functional-dependencies/attr-closure.md)
+- [Attribute closure](../functional-dependencies/attr-closure.md)
 
 ## Sources
 

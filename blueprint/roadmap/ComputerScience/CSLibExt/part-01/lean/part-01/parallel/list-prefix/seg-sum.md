@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.ListPrefix.segSum
 ---
 
-# Seg Sum
+# Segment sums
 
-The sum of the values of the first `k` nodes from `v` on (fewer at the end of the list), in
-list order.
+**Segment sums.** Let $n$ nodes be linked into lists by a partial successor function, and
+let each node $v$ carry a value $x_v$ in an additive monoid $M$ (not necessarily commutative).
+For $k \in \mathbb{N}$ and a node $v$, the segment sum of length $k$ from $v$ is the sum, in
+list order, of the values of the first $k$ nodes of the list starting at $v$ (fewer if the list
+ends sooner); for $k = 0$ it is $0$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Step Val](step-val.md)
+- [The value $k$ steps ahead](step-val.md)
 
 ## Sources
 

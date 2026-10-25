@@ -13,10 +13,10 @@ lean: Cslib.Databases.Derives.sound
 
 ## Depends on
 
-- [Derives](derives.md)
-- [FD](fd.md)
-- [Holds In](holds-in.md)
-- [Satisfies](satisfies.md)
+- [Derivability with Armstrong's axioms](derives.md)
+- [Functional dependency](fd.md)
+- [A functional dependency holds in a relation](holds-in.md)
+- [A relation satisfies a set of dependencies](satisfies.md)
 
 ## Sources
 

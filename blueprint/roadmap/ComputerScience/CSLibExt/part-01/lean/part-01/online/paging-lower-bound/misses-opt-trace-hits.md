@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.Paging.misses_optTrace_hits
 ---
 
-# Misses opt Trace hits
+# Hits do not change the offline strategy's misses
 
-Hits leave the offline trace's later misses unchanged.
+**Hits do not change the offline strategy's misses.** Let $k$ be a capacity, let $c$ be a
+cache and let $w$ be a request sequence all of whose requests lie in $c$. Then for every request
+sequence $\tau$, the offline strategy with capacity $k$ (on a miss with a full cache, evict the
+first cached page not among the next $k - 1$ requests, if there is one) started with cache $c$
+misses as many times on $w$ followed by $\tau$ as on $\tau$ alone.
 
 ## Depends on
 
-- [Misses](../../greedy/offline-caching/misses.md)
-- [Opt Trace](opt-trace.md)
+- [Number of misses in a trace](../../greedy/offline-caching/misses.md)
+- [Offline paging trace](opt-trace.md)
 
 ## Proof depends on
 
-- [Cache Event](../../greedy/offline-caching/cache-event.md)
-- [Is Miss](../../greedy/offline-caching/is-miss.md)
-- [Opt Step](opt-step.md)
+- [Cache events](../../greedy/offline-caching/cache-event.md)
+- [Miss indicator](../../greedy/offline-caching/is-miss.md)
+- [Offline paging step](opt-step.md)
 
 ## Sources
 

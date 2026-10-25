@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.mem_dfsAll_preorder
 ---
 
-# Mem dfs All preorder
+# Whole-graph DFS discovers every vertex
 
-Every vertex occurs in the preorder of a whole-graph traversal.
+**Whole-graph DFS discovers every vertex.** For every finite directed graph $G$ given by
+ordered adjacency lists and every vertex $v$ of $G$, $v$ occurs in the preorder of the whole-graph
+depth-first search of $G$, that is, the left-first depth-first search of $G$ whose roots are all
+vertices of $G$ in the graph's vertex order.
 
 ## Depends on
 
-- [Traversal](traversal.md)
-- [Dfs All](dfs-all.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Depth-first traversal record](traversal.md)
+- [Depth-first search of the whole graph](dfs-all.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Preorder complete](preorder-complete.md)
-- [Edge](../directed-adjacency-2/edge.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
+- [Depth-first search discovers every reachable vertex](preorder-complete.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 
 ## Sources
 

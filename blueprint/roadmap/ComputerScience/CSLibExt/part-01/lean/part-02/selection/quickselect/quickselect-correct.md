@@ -7,9 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.quickselect_correct
 ---
 
-# Quickselect correct
+# Correctness of quickselect
 
-A successful selection returns the value occupying rank `k`, including duplicate blocks.
+**Correctness of quickselect.** Let $L$ be a list over a linear order and let $k$ be a
+natural number. If quickselect on $L$ with zero-based rank $k$ returns an element $x$, then $x$
+is an entry of $L$, and, counting entries of $L$ with multiplicity, the number of entries less
+than $x$ is at most $k$ and $k$ is less than the number of entries at most $x$.
+
+Thus $x$ occupies zero-based position $k$ in the sorted order of $L$, also when $x$ is repeated.
 
 ## Depends on
 
@@ -17,10 +22,10 @@ A successful selection returns the value occupying rank `k`, including duplicate
 
 ## Proof depends on
 
-- [Three Way Partition](../../sort/partition/three-way-partition.md)
-- [Partition3](../../sort/partition/partition3.md)
-- [Partition3 correct](../../sort/partition/partition3-correct.md)
-- [Partition3 length](../../sort/partition/partition3-length.md)
+- [Three-way partition record](../../sort/partition/three-way-partition.md)
+- [Stable three-way partition](../../sort/partition/partition3.md)
+- [Correctness of the stable three-way partition](../../sort/partition/partition3-correct.md)
+- [Sizes of the three parts of a three-way partition](../../sort/partition/partition3-length.md)
 
 ## Sources
 

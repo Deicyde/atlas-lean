@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.eraseSymbols_totalWeight
 ---
 
-# Erase Symbols total Weight
+# Erasing symbols preserves total weight
 
-Erasure preserves total weight after casting to the reals.
+**Erasing symbols preserves total weight.** For every Huffman tree $T$, the total weight of
+the weight tree obtained from $T$ by erasing its symbols equals the total weight of $T$, viewed as
+a real number.
 
 ## Depends on
 
-- [Huffman Tree](../huffman/huffman-tree.md)
-- [Erase Symbols](erase-symbols.md)
-- [Total Weight](../huffman/total-weight.md)
-- [Total Weight](total-weight.md)
+- [Huffman tree](../huffman/huffman-tree.md)
+- [Erasing symbols from a Huffman tree](erase-symbols.md)
+- [Total weight of a Huffman tree](../huffman/total-weight.md)
+- [Total leaf weight of a Huffman weight tree](total-weight.md)
 
 ## Sources
 

@@ -6,24 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BreadthFirstSearch.predecessor_eq_none_iff
 ---
 
-# Predecessor eq none iff
+# Exactly the source and the unreachable vertices have no BFS parent
 
-A vertex lacks a saved parent exactly when it is the source or unreachable.
+**Exactly the source and the unreachable vertices have no BFS parent.** Let $G$ be a finite
+directed graph with ordered adjacency lists, $s$ a vertex, and $F$ the predecessor forest
+computed by breadth-first search with parents from $s$ in $G$. A vertex $v$ has no recorded
+predecessor in $F$ if and only if $v = s$ or $v$ is not reachable from $s$ along directed edges
+of $G$.
 
 ## Depends on
 
-- [BFSForest](../parents/internal/bfsforest.md)
-- [Bfs With Parents](../parents/internal/bfs-with-parents.md)
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Reachable](../../directed-adjacency-2/reachable.md)
+- [Breadth-first search forest](../parents/internal/bfsforest.md)
+- [Breadth-first search with parent pointers](../parents/internal/bfs-with-parents.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Reachability in a directed graph](../../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
-- [BFSResult](../../breadth-first-search-2/bfsresult.md)
-- [Bfs](../../breadth-first-search-2/bfs.md)
-- [Bfs With Parents ret](bfs-with-parents-ret.md)
-- [Distance present iff reachable](../../breadth-first-search-2/distance-present-iff-reachable.md)
-- [Edge](../../directed-adjacency-2/edge.md)
+- [Result of breadth-first search](../../breadth-first-search-2/bfsresult.md)
+- [Breadth-first search](../../breadth-first-search-2/bfs.md)
+- [Breadth-first search with parents returns the ordinary BFS result](bfs-with-parents-ret.md)
+- [BFS reports a distance exactly for the reachable vertices](../../breadth-first-search-2/distance-present-iff-reachable.md)
+- [Edge of a directed adjacency graph](../../directed-adjacency-2/edge.md)
 - [Contents of a two-list queue](../../../data-structures/part-01/queue/semantics/contents.md)
 - [Enqueueing appends to the contents](../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
 - [A successful dequeue splits off the first element](../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)

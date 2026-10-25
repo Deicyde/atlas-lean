@@ -20,7 +20,7 @@ $v_{s'} \, \psi_t(s', s)$.
 
 ## Proof depends on
 
-- [Argmax Fin](../../sequence/hidden-markov/argmax-fin.md)
+- [First maximizer of a function on a finite range](../../sequence/hidden-markov/argmax-fin.md)
 
 ## Sources
 

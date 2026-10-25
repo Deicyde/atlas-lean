@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Unification.Subst.single
 ---
 
-# Single
+# Single-variable substitution
 
-The substitution replacing `x` by `t` and fixing every other variable.
+**Single-variable substitution.** For a variable $x$ and a term $t$, the substitution
+$[x \mapsto t]$ sends $x$ to $t$ and every other variable $y$ to the term $y$.
 
 ## Depends on
 
-- [Subst](subst.md)
-- [Term](term.md)
+- [Substitution](subst.md)
+- [Terms for unification](term.md)
 
 ## Sources
 

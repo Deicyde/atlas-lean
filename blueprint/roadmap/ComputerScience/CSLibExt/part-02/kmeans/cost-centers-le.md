@@ -13,14 +13,14 @@ best centers.
 
 ## Depends on
 
-- [Centers](centers.md)
-- [Cost](cost.md)
+- [The centroid update step](centers.md)
+- [The k-means cost](cost.md)
 
 ## Proof depends on
 
 - [Centroid](centroid.md)
-- [Cost eq sum clusters](cost-eq-sum-clusters.md)
-- [The centroid minimizes the sum of squared distances](sum-sq-eq.md)
+- [The cost as a sum over clusters](cost-eq-sum-clusters.md)
+- [Sum of squared distances about the centroid](sum-sq-eq.md)
 
 ## Sources
 

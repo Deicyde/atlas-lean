@@ -19,20 +19,20 @@ both finite, and $g(v) = g(u) + w(u, v)$.
 - [Output of A-star search](astar-result.md)
 - [Consistent heuristic](consistent.md)
 - [A Star](a-star.md)
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
-- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
-- [Edge](../../graph/directed-adjacency-2/edge.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
+- [Output of Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Edge of a directed adjacency graph](../../graph/directed-adjacency-2/edge.md)
 
 ## Proof depends on
 
 - [Path Weight reduced Weight](path-weight-reduced-weight.md)
 - [Reduced weight](reduced-weight.md)
-- [Has Path Weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
-- [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
-- [Dijkstra distance realized](../../graph/shortest-path/dijkstra/dijkstra-distance-realized.md)
-- [Dijkstra predecessor spec](../../graph/shortest-path/dijkstra/dijkstra-predecessor-spec.md)
-- [Path Weight](../../graph/shortest-path/dijkstra/path-weight.md)
+- [Walks of a given weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
+- [Dense Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra.md)
+- [Dijkstra's finite distances are realized by walks](../../graph/shortest-path/dijkstra/dijkstra-distance-realized.md)
+- [Dijkstra's predecessor pointers satisfy the distance equation](../../graph/shortest-path/dijkstra/dijkstra-predecessor-spec.md)
+- [Endpoint-weight sum along a vertex list](../../graph/shortest-path/dijkstra/path-weight.md)
 
 ## Sources
 

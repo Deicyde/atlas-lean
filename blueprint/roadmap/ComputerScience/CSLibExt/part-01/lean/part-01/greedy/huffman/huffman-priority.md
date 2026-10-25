@@ -6,9 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanPriority
 ---
 
-# Huffman Priority
+# Huffman priority
 
-A Huffman queue priority. Serial numbers make equal-weight choices stable.
+**Huffman priority.** A Huffman priority is a pair $(w, s)$ of natural numbers: a weight $w$
+and a serial number $s$.
+
+Priorities are ordered lexicographically, first by weight and then by serial number, so serial
+numbers break ties between equal weights deterministically.
 
 ## Depends on
 

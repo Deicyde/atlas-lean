@@ -4,16 +4,16 @@ navigation: module
 
 # Greedy Matroid Characterization
 
-- [Is Indep System](is-indep-system.md)
+- [Independence system](is-indep-system.md)
 
 ## Greedy runs on an independence system
 
-- [Matroid Greedy Scan of subset](matroid-greedy-scan-of-subset.md)
-- [Matroid Greedy Scan of forall not](matroid-greedy-scan-of-forall-not.md)
+- [A scan inside an independent set keeps everything](matroid-greedy-scan-of-subset.md)
+- [A scan that accepts nothing](matroid-greedy-scan-of-forall-not.md)
 
 ## The converse
 
-- [Greedy Optimal](greedy-optimal.md)
-- [Augment of greedy Optimal](augment-of-greedy-optimal.md)
-- [Exists matroid of greedy Optimal](exists-matroid-of-greedy-optimal.md)
-- [Greedy Optimal iff exists matroid](greedy-optimal-iff-exists-matroid.md)
+- [Greedy optimality](greedy-optimal.md)
+- [Greedy optimality gives the augmentation axiom](augment-of-greedy-optimal.md)
+- [Greedy-optimal independence systems are matroids](exists-matroid-of-greedy-optimal.md)
+- [Rado–Edmonds theorem](greedy-optimal-iff-exists-matroid.md)

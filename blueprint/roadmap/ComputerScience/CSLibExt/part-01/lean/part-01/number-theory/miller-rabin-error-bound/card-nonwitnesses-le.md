@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MillerRabin.card_nonwitnesses_le
 ---
 
-# Card nonwitnesses le
+# At most half the bases are non-witnesses
 
-CLRS Theorem 31.38: an odd composite `n` has at most `(n - 1) / 2` non-witnesses among the
-bases `1, …, n - 1`, that is, at least `(n - 1) / 2` witnesses.
+**At most half the bases are non-witnesses.** Let $n > 1$ be odd and not prime. Then at most
+$(n - 1)/2$ of the bases $1, \dots, n - 1$ are non-witnesses for $n$; equivalently, at least
+$(n - 1)/2$ of them are witnesses to the compositeness of $n$.
 
 ## Depends on
 
-- [Nonwitnesses](nonwitnesses.md)
+- [Non-witnesses of a number](nonwitnesses.md)
 
 ## Proof depends on
 
-- [Card nonwitnesses le of carmichael](card-nonwitnesses-le-of-carmichael.md)
-- [Card nonwitnesses le of pow ne one](card-nonwitnesses-le-of-pow-ne-one.md)
+- [At most half the bases are non-witnesses for a Carmichael number](card-nonwitnesses-le-of-carmichael.md)
+- [At most half the bases are non-witnesses when some unit fails Fermat's test](card-nonwitnesses-le-of-pow-ne-one.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.NumberTheory.MillerRabinErrorBound](../../../../../../../../sources/v2/CSLibExt.md)
+- CLRS, third edition, Theorem 31.38.

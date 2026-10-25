@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.greedy_iff
 ---
 
-# Greedy iff
+# Greediness need only be checked at the steps of the schedule
 
-Greediness only constrains the steps of the schedule: a task is never ready at or after the
-last step.
+**Greediness need only be checked at the steps of the schedule.** Let $S$ be a schedule of a
+computation DAG on $p$ processors taking $T$ steps. Then $S$ is greedy if and only if, for every
+step $t < T$ and every task $v$ that is ready at step $t$, exactly $p$ tasks run in step $t$.
+
+This holds because a task is never ready at or after the last step.
 
 ## Depends on
 
-- [Dag](../brent/dag.md)
+- [Computation DAG](../brent/dag.md)
 - [Schedule](../brent/schedule.md)
-- [Greedy](greedy.md)
-- [Ready](ready.md)
-- [Length](../brent/length.md)
-- [Load](load.md)
+- [Greedy schedule](greedy.md)
+- [Ready task](ready.md)
+- [Length of a schedule](../brent/length.md)
+- [Load of a step](load.md)
 
 ## Sources
 

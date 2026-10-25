@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Crypto.PRF.OracleComp.queries
 ---
 
-# Queries
+# Queries of an oracle algorithm
 
-The queries the algorithm asks when the oracle is the function `O`, in order.
+**Queries of an oracle algorithm.** For an oracle algorithm $c$ and a function
+$O : X \to Y$, the queries of $c$ against $O$ are the list of the points of $X$ that $c$ asks,
+in order, when every query $x$ is answered by $O(x)$: the empty list if $c$ stops, and otherwise
+the first query $x$ followed by the queries of the continuation on the answer $O(x)$.
 
 ## Depends on
 
-- [Oracle Comp](oracle-comp.md)
+- [Adaptive oracle algorithms](oracle-comp.md)
 
 ## Proof depends on
 
-- [Oracle Sig](oracle-sig.md)
+- [The signature of one oracle](oracle-sig.md)
 
 ## Sources
 

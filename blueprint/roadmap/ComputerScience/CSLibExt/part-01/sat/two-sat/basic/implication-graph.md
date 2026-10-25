@@ -5,22 +5,24 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.TwoSAT.implicationGraph
 ---
 
-# Implication Graph
+# Implication graph as a finite directed graph
 
-The implication graph of `φ` on the literals over its variables, with adjacency read
-from `adjacencyTable φ`.
+**Implication graph as a finite directed graph.** For a CNF formula $\varphi$, the finite
+directed graph whose vertices are the literals over the variables of $\varphi$, listed without
+repetition, and whose out-neighbours of a literal $l$ are the literals $m$ over the variables of
+$\varphi$ with an implication edge from $l$ to $m$, read from the adjacency table of $\varphi$.
 
 ## Depends on
 
-- [Directed Adjacency](../../../lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
-- [Lit](lit.md)
+- [Directed adjacency graph](../../../lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
+- [Literals over the variables of a formula](lit.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Adjacency Table](adjacency-table.md)
-- [Lit List](lit-list.md)
-- [Var List](var-list.md)
+- [Adjacency table of the implication graph](adjacency-table.md)
+- [List of the literals of a CNF formula](lit-list.md)
+- [Duplicate-free list of the variables of a CNF formula](var-list.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)

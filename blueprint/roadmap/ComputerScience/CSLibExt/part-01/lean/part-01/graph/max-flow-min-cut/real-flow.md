@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Graph.MaxFlowMinCut.realFlow
 ---
 
-# Real Flow
+# Real arc flow
 
-The arc flow as reals.
+**Real arc flow.** For an integer flow matrix $f$ on the vertices $0, \dots, n-1$, its real
+arc flow is the function $(u, v) \mapsto \max(f(u, v), 0)$, the arc flow of $f$, viewed as real
+numbers.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ The arc flow as reals.
 
 ## Proof depends on
 
-- [Arc Flow](arc-flow.md)
+- [Arc flow of an integer flow](arc-flow.md)
 
 ## Sources
 

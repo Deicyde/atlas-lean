@@ -40,7 +40,7 @@ through the endpoints of $k$.
 - [Splitting a list at the first occurrence of a member](take-while-append-cons-tail-drop-while.md)
 - [Testing a segment against an optional neighbour](test-opt.md)
 - [Testing the neighbours of a deleted segment](test-pair.md)
-- [Direction](../segment-intersection/direction.md)
+- [Direction of three points](../segment-intersection/direction.md)
 - [DIRECTION as a scaled vertical offset](direction-eq-line-y.md)
 - [A non-vertical segment is the graph of its line](mem-segment-iff-line-y.md)
 - [Inserting into a strictly sorted list](pairwise-take-while-append-cons-drop-whi.md)

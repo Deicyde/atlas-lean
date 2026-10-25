@@ -6,18 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.runN_congr_influence
 ---
 
-# Run N congr influence
+# Outputs depend only on the influence set
 
-A wire's output depends only on the inputs in its influence set.
+**Outputs depend only on the influence set.** Let $f_0, g_0 : \mathbb{N} \to \alpha$ be two
+inputs with values in a linear order $\alpha$, let $S$ assign to each wire $x$ a finite set $S(x)$
+of input positions, and let $F, G : \mathbb{N} \to \alpha$ be wire values such that for every wire
+$x$, if $f_0$ and $g_0$ agree on $S(x)$, then $F(x) = G(x)$. Then for every list of comparators
+and every wire $x$, if $f_0$ and $g_0$ agree on the influence set of $x$ obtained from $S$ through
+the comparators, running the comparators on $F$ and on $G$ gives the same value at wire $x$.
 
 ## Depends on
 
-- [Influence](influence.md)
-- [Run N](../bitonic/run-n.md)
+- [Influence sets of wires](influence.md)
+- [Running a comparator network](../bitonic/run-n.md)
 
 ## Proof depends on
 
-- [Cmp](../bitonic/cmp.md)
+- [Comparator on natural-number-indexed wires](../bitonic/cmp.md)
 
 ## Sources
 

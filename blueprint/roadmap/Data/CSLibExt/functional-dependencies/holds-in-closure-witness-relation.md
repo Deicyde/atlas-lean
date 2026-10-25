@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Databases.holdsIn_closureWitnessRelation
 ---
 
-# Holds In closure Witness Relation
+# The closure witness satisfies the dependencies
 
-The closure witness satisfies `F`.
+**The closure witness satisfies the dependencies.** Let $F$ be a finite set of functional
+dependencies on a finite set of attributes $A$. For every set $X \subseteq A$ of attributes, the
+closure witness relation for $X$ under $F$ satisfies $F$.
 
 ## Depends on
 
-- [FD](fd.md)
-- [Satisfies](satisfies.md)
-- [Closure Witness Relation](closure-witness-relation.md)
+- [Functional dependency](fd.md)
+- [A relation satisfies a set of dependencies](satisfies.md)
+- [Closure witness relation](closure-witness-relation.md)
 
 ## Proof depends on
 
-- [Attr Closure](attr-closure.md)
-- [Rhs subset attr Closure](rhs-subset-attr-closure.md)
+- [Attribute closure](attr-closure.md)
+- [The attribute closure is closed under the dependencies](rhs-subset-attr-closure.md)
 
 ## Sources
 

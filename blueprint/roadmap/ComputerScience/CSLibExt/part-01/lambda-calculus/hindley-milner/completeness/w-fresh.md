@@ -23,7 +23,7 @@ $n'$.
 - [Monotypes](../typing/ty.md)
 - [Variables below a bound](vars-below.md)
 - [Algorithm W](../algorithm-w/w.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
 
 ## Proof depends on
 
@@ -37,14 +37,14 @@ $n'$.
 - [Applying a type substitution to a scheme](../typing/subst-ty.md)
 - [Generalization of a monotype](../typing/gen.md)
 - [Monotypes as type schemes](../typing/to-scheme.md)
-- [Comp](../../../../part-02/unification/basic/comp.md)
-- [Term](../../../../part-02/unification/basic/term.md)
-- [Exists of mem vars subst](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
-- [Eq Vars](../../../../part-02/unification/basic/eq-vars.md)
-- [Unify](../../../../part-02/unification/basic/unify.md)
-- [Vars unify subset](../../../../part-02/unification/basic/vars-unify-subset.md)
+- [Composition of substitutions](../../../../part-02/unification/basic/comp.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
+- [Variables of a substituted term](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
+- [Variables of a list of equations](../../../../part-02/unification/basic/eq-vars.md)
+- [Martelli–Montanari unification](../../../../part-02/unification/basic/unify.md)
+- [Unification introduces no new variables](../../../../part-02/unification/basic/vars-unify-subset.md)
 
 ## Sources
 

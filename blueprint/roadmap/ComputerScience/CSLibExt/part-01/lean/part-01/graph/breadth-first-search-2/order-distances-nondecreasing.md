@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BreadthFirstSearch.order_distances_nondecreasing
 ---
 
-# Order distances nondecreasing
+# BFS discovers vertices in nondecreasing distance
 
-Distances attached to first-discovery order are nondecreasing.
+**BFS discovers vertices in nondecreasing distance.** For every finite directed graph $G$ with
+ordered adjacency lists and every vertex $s$, the distances reported by breadth-first search
+from $s$, listed along its first-discovery order, form a nondecreasing sequence, where a vertex
+without a reported distance counts as $0$.
 
 ## Depends on
 
-- [BFSResult](bfsresult.md)
-- [Bfs](bfs.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Result of breadth-first search](bfsresult.md)
+- [Breadth-first search](bfs.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Edge](../directed-adjacency-2/edge.md)
-- [Walk](../directed-adjacency-2/walk.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
+- [Walks of a given length](../directed-adjacency-2/walk.md)
 - [Contents of a two-list queue](../../data-structures/part-01/queue/semantics/contents.md)
 - [Enqueueing appends to the contents](../../data-structures/part-01/queue/semantics/contents-enqueue.md)
 - [A successful dequeue splits off the first element](../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)

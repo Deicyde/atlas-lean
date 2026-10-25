@@ -6,16 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MarkovDecision.bellman_optimalValue
 ---
 
-# Bellman optimal Value
+# The optimal value solves the Bellman optimality equation
 
-The optimal value satisfies the Bellman optimality equation.
+**The optimal value solves the Bellman optimality equation.** Let $M$ be a Markov decision
+process with finitely many states, a nonempty finite set of actions, real rewards and stochastic
+transition probabilities, and let $0 \le \gamma < 1$. Then the optimal value $V^*$ of $M$ with
+discount $\gamma$ is a fixed point of the Bellman optimality operator $T$ of $M$ with discount
+$\gamma$: $T V^* = V^*$.
 
 ## Depends on
 
-- [MDP](mdp.md)
-- [Stochastic](stochastic.md)
-- [Bellman](bellman.md)
-- [Optimal Value](optimal-value.md)
+- [Markov decision process](mdp.md)
+- [Stochastic Markov decision process](stochastic.md)
+- [Bellman optimality operator](bellman.md)
+- [Optimal value of a discounted Markov decision process](optimal-value.md)
 
 ## Proof depends on
 

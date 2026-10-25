@@ -22,8 +22,8 @@ former, and every free type variable of the former is a free type variable of th
 - [Applying a type substitution to a scheme](../typing/subst-ty.md)
 - [Monotypes](../typing/ty.md)
 - [Generalization of a monotype](../typing/gen.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Proof depends on
 
@@ -34,11 +34,11 @@ former, and every free type variable of the former is a free type variable of th
 - [Evaluation of a type scheme](../typing/eval.md)
 - [Instantiation of a type scheme](../typing/inst.md)
 - [Monotypes as type schemes](../typing/to-scheme.md)
-- [Term](../../../../part-02/unification/basic/term.md)
-- [Exists of mem vars subst](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
-- [Subst congr](../../../../part-02/unification/basic/subst-congr.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
-- [Vars subset vars subst](../../../../part-02/unification/basic/vars-subset-vars-subst.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
+- [Variables of a substituted term](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
+- [Substitution depends only on the variables of the term](../../../../part-02/unification/basic/subst-congr.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
+- [Variables of a substituted variable occur in the substituted term](../../../../part-02/unification/basic/vars-subset-vars-subst.md)
 
 ## Sources
 

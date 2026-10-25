@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.weightedLeaves
 ---
 
-# Weighted Leaves
+# Weighted leaves of a Huffman tree
 
-The weighted leaves, in left-to-right order.
+**Weighted leaves of a Huffman tree.** The list of pairs $(s, w)$, one for each leaf of a
+Huffman tree, where $s$ is the symbol and $w$ the weight at that leaf, read from left to
+right.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
+- [Huffman tree](huffman-tree.md)
 
 ## Sources
 

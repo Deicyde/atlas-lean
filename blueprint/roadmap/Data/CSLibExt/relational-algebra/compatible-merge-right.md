@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Databases.Tuple.compatible_merge_right
 ---
 
-# Compatible merge right
+# Compatibility with a merge, grouped from the right
 
-Compatibility of three tuples, grouped from the right, is pairwise compatibility.
+**Compatibility with a merge, grouped from the right.** For tuples $t$, $u$, $v$: $u$ and $v$
+are compatible and $t$ is compatible with the merge of $u$ and $v$ if and only if $t$, $u$, $v$
+are pairwise compatible, that is, $t$ and $u$, $t$ and $v$, and $u$ and $v$ are compatible.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ Compatibility of three tuples, grouped from the right, is pairwise compatibility
 
 ## Proof depends on
 
-- [Compatible merge left](compatible-merge-left.md)
+- [Compatibility with a merge, grouped from the left](compatible-merge-left.md)
 
 ## Sources
 

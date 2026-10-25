@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.naiveMatches_time_le
 ---
 
-# Naive Matches time le
+# Upper bound on the comparisons of naive matching
 
-At most `m` comparisons per alignment, and no comparisons when the pattern is too long.
+**Upper bound on the comparisons of naive matching.** For a pattern of length $m$ and a text
+of length $n$, the naive matcher performs at most $(n - m + 1) \cdot m$ symbol comparisons if
+$m \le n$, and no comparisons if $m > n$.
 
 ## Depends on
 
-- [Naive Matches](naive-matches.md)
+- [Naive string matcher](naive-matches.md)
 
 ## Proof depends on
 
-- [Naive Matches time eq](naive-matches-time-eq.md)
+- [Exact comparison count of naive matching](naive-matches-time-eq.md)
 
 ## Sources
 

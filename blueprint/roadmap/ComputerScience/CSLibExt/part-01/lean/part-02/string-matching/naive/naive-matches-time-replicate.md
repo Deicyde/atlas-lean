@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.naiveMatches_time_replicate
 ---
 
-# Naive Matches time replicate
+# Comparison count of naive matching on a repeated symbol
 
-Repeated-symbol inputs attain the comparison upper bound exactly.
+**Comparison count of naive matching on a repeated symbol.** Let $\alpha$ be a type whose
+Boolean equality is reflexive, let $x \in \alpha$, and let $m \le n$ be natural numbers. On the
+pattern consisting of $m$ copies of $x$ and the text consisting of $n$ copies of $x$, the naive
+matcher performs exactly $(n - m + 1) \cdot m$ symbol comparisons.
 
 ## Depends on
 
-- [Naive Matches](naive-matches.md)
+- [Naive string matcher](naive-matches.md)
 
 ## Sources
 

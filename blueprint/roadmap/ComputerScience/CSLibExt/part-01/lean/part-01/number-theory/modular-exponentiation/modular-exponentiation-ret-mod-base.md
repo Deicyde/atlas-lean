@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_ret_mod_base
 ---
 
-# Modular Exponentiation ret mod base
+# Modular exponentiation with a reduced base
 
-The same invariant with the base reduced before exponentiation.
+**Modular exponentiation with a reduced base.** For natural numbers $a$, $b$, $n$ with
+$n > 0$, the value $r$ returned by modular exponentiation on base $a$, exponent $b$ and
+modulus $n$ satisfies $r \bmod n = (a \bmod n)^b \bmod n$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation ret mod](modular-exponentiation-ret-mod.md)
+- [Modular exponentiation is correct up to reduction](modular-exponentiation-ret-mod.md)
 
 ## Sources
 

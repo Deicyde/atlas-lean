@@ -14,8 +14,8 @@ her Gale-Shapley partner.
 ## Depends on
 
 - [The Gale-Shapley matching](gs-matching.md)
-- [Mprefs](mprefs.md)
-- [Wprefs](wprefs.md)
+- [Proposers' preferences from rankings](mprefs.md)
+- [Receivers' preference profile from rankings](wprefs.md)
 - [Stable perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
 - [Perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
 - [Relation of a strict total order](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/lt.md)
@@ -23,7 +23,7 @@ her Gale-Shapley partner.
 ## Proof depends on
 
 - [Proposer-optimality](gs-matching-proposer-optimal.md)
-- [Not blocking](not-blocking.md)
+- [A stable matching has no blocking pair](not-blocking.md)
 
 ## Sources
 

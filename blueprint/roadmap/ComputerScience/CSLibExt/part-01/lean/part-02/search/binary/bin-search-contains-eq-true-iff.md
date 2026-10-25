@@ -7,10 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.binSearchContains_eq_true_iff
 ---
 
-# Bin Search Contains eq true iff
+# Bounded binary search membership test on a sorted array is correct
 
-On a sorted array, bounded `binSearchContains` is true exactly when the key occurs at a valid
-index between the inclusive raw bounds.
+**Bounded binary search membership test on a sorted array is correct.** Let
+$A = (a_0, \dots, a_{n-1})$ be an array of length $n$ with entries in a linearly ordered type,
+with $a_i \le a_j$ whenever $i < j$. Let $k$ be an element of that type and $\ell$, $h$ natural
+numbers. Lean core's Boolean binary search membership test for $k$ in $A$, with the strict order
+$<$ as comparison and inclusive bounds $\ell$ and $h$, returns true if and only if there is an
+index $i < n$ with $\ell \le i \le h$ and $a_i = k$.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bin Search Contains eq is Some](bin-search-contains-eq-is-some.md)
+- [Array binary search membership test agrees with binary search](bin-search-contains-eq-is-some.md)
 
 ## Sources
 

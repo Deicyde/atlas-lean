@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BreadthFirstSearch.BFSForest.pathTo?_source
 ---
 
-# Path To? source
+# Path reconstruction at the source
 
-The saved-parent walker returns the singleton source path, including at zero fuel.
+**Path reconstruction at the source.** For every breadth-first search forest $F$ and every
+vertex $s$, following the saved parents of $F$ from $s$ back to $s$ returns the one-vertex path
+$[s]$. This holds for every forest, including one whose discovery order is empty.
 
 ## Depends on
 
-- [BFSForest](../internal/bfsforest.md)
-- [Path To?](../internal/path-to.md)
+- [Breadth-first search forest](../internal/bfsforest.md)
+- [Path reconstruction from BFS parents](../internal/path-to.md)
 
 ## Proof depends on
 
-- [BFSResult](../../../breadth-first-search-2/bfsresult.md)
+- [Result of breadth-first search](../../../breadth-first-search-2/bfsresult.md)
 
 ## Sources
 

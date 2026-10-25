@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Unification.Subst.subst_single_of_not_mem
 ---
 
-# Subst single of not mem
+# A term is fixed by substituting it for a variable it avoids
 
-`single x t` fixes `t` when `x` does not occur in it.
+**A term is fixed by substituting it for a variable it avoids.** If the variable $x$ does
+not occur in the term $t$, then applying to $t$ the substitution $[x \mapsto t]$, which replaces
+$x$ by $t$ and fixes every other variable, leaves $t$ unchanged.
 
 ## Depends on
 
-- [Single](single.md)
-- [Term](term.md)
-- [Subst](subst-2.md)
-- [Vars](vars.md)
+- [Single-variable substitution](single.md)
+- [Terms for unification](term.md)
+- [Applying a substitution to a term](subst-2.md)
+- [Variables of a term](vars.md)
 
 ## Proof depends on
 
-- [Subst congr](subst-congr.md)
+- [Substitution depends only on the variables of the term](subst-congr.md)
 
 ## Sources
 

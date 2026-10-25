@@ -6,28 +6,33 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DAGShortestPaths.dagShortestPaths_returns_iff_acyclic
 ---
 
-# Dag Shortest Paths returns iff acyclic
+# The DAG shortest-path algorithm succeeds exactly on acyclic graphs
 
-The total wrapper succeeds exactly on DAGs, including disconnected DAGs.
+**The DAG shortest-path algorithm succeeds exactly on acyclic graphs.** Let $E$ be a list of
+integer-weighted directed edges on the vertices $\{0, \dots, n-1\}$ and $s$ a source vertex. The
+DAG shortest-path algorithm on $E$ from $s$ succeeds if and only if the directed graph with an
+edge $u \to v$ for each edge of $E$ from $u$ to $v$ has no directed cycle.
+
+This includes disconnected graphs: a cycle unreachable from $s$ still causes failure.
 
 ## Depends on
 
-- [Distances](../../bellman-ford/basic/distances.md)
-- [Edge](../../bellman-ford/basic/edge.md)
-- [To Directed Adjacency](../../bellman-ford/basic/to-directed-adjacency.md)
-- [Cost](../basic/cost.md)
-- [Dag Shortest Paths](../basic/dag-shortest-paths.md)
+- [Bellman-Ford distance table](../../bellman-ford/basic/distances.md)
+- [Weighted directed edge](../../bellman-ford/basic/edge.md)
+- [Weight-forgetting directed graph](../../bellman-ford/basic/to-directed-adjacency.md)
+- [Cost of the DAG shortest-path pass](../basic/cost.md)
+- [Shortest paths in a DAG with a topology check](../basic/dag-shortest-paths.md)
 - [Is Acyclic](../../../topological-sort/is-acyclic.md)
 
 ## Proof depends on
 
-- [Dag Shortest Paths eq ok iff](../basic/dag-shortest-paths-eq-ok-iff.md)
-- [Run](../basic/run.md)
-- [Is Topological Order](../../../topological-sort/is-topological-order.md)
-- [Result](../../../topological-sort/result.md)
-- [Sort](../../../topological-sort/sort.md)
-- [Succeeds iff acyclic](../../../topological-sort/succeeds-iff-acyclic.md)
-- [Success is Topological Order](../../../topological-sort/success-is-topological-order.md)
+- [Successful output of DAG shortest paths](../basic/dag-shortest-paths-eq-ok-iff.md)
+- [One-pass DAG shortest-path relaxation](../basic/run.md)
+- [Topological order](../../../topological-sort/is-topological-order.md)
+- [Outcome of Kahn's topological sort](../../../topological-sort/result.md)
+- [Kahn's topological sort](../../../topological-sort/sort.md)
+- [Kahn's algorithm succeeds exactly on acyclic graphs](../../../topological-sort/succeeds-iff-acyclic.md)
+- [A successful topological sort is a topological order](../../../topological-sort/success-is-topological-order.md)
 
 ## Sources
 

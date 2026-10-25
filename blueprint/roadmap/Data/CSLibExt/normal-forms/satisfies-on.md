@@ -5,20 +5,21 @@ statement: formalized
 lean: Cslib.Databases.SatisfiesOn
 ---
 
-# Satisfies On
+# Satisfying a set of dependencies on a scheme
 
-`r` satisfies, within the scheme `S`, every dependency derivable from `F` between attributes of
-`S`.
+**Satisfying a set of dependencies on a scheme.** A relation $r$ satisfies a finite set $F$ of
+functional dependencies on a set $S$ of attributes when every dependency $X \to Y$ with
+$X, Y \subseteq S$ that is derivable from $F$ by Armstrong's axioms holds in $r$.
 
 ## Depends on
 
-- [FD](../functional-dependencies/fd.md)
+- [Functional dependency](../functional-dependencies/fd.md)
 - [Tuple](../relational-algebra/tuple.md)
 
 ## Proof depends on
 
-- [Derives](../functional-dependencies/derives.md)
-- [Holds In](../functional-dependencies/holds-in.md)
+- [Derivability with Armstrong's axioms](../functional-dependencies/derives.md)
+- [A functional dependency holds in a relation](../functional-dependencies/holds-in.md)
 
 ## Sources
 

@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TransitiveClosure.transitiveClosure_initializations
 ---
 
-# Transitive Closure initializations
+# Cost of initializing the transitive-closure matrix
 
-Initialization performs exactly `n²` cell assignments.
+**Cost of initializing the transitive-closure matrix.** For every Boolean adjacency matrix on
+$n$ vertices, the staged transitive-closure computation with no pivot stages (only the
+initialization of the $n \times n$ matrix) charges exactly $n^2$ time units, one for each cell
+assignment.
 
 ## Depends on
 
-- [Transitive Closure Stages](transitive-closure-stages.md)
+- [Staged transitive-closure computation](transitive-closure-stages.md)
 
 ## Sources
 

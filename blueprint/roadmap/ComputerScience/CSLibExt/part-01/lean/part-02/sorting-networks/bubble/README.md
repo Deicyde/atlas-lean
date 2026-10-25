@@ -4,12 +4,12 @@ navigation: module
 
 # Bubble
 
-- [Adjacent](adjacent.md)
-- [Pass](pass.md)
-- [Passes](passes.md)
-- [Bubble](bubble.md)
-- [One pass carries the maximum of wires `0..m` to wire `m`](pass-spec.md)
-- [Settled](settled.md)
+- [Adjacent comparator](adjacent.md)
+- [Bubble pass](pass.md)
+- [Successive bubble passes](passes.md)
+- [Bubble sorting network](bubble.md)
+- [Effect of one bubble pass](pass-spec.md)
+- [Settled top wires](settled.md)
 - [The bubble network sorts](bubble-sorts.md)
-- [Length pass](length-pass.md)
-- [Length bubble](length-bubble.md)
+- [Size of a bubble pass](length-pass.md)
+- [Size of the bubble sorting network](length-bubble.md)

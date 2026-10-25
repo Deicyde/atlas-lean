@@ -4,6 +4,6 @@ navigation: module
 
 # Quick Expected
 
-- [Between Count](between-count.md)
-- [Quick Sort expected Time uniform Permutation](quick-sort-expected-time-uniform-permuta.md)
-- [Quick Sort expected Time uniform Permutation to Real](quick-sort-expected-time-uniform-permuta-2.md)
+- [Number of list entries strictly between two values](between-count.md)
+- [Expected comparisons of quicksort on a random permutation](quick-sort-expected-time-uniform-permuta.md)
+- [Expected comparisons of quicksort on a random permutation, as a real number](quick-sort-expected-time-uniform-permuta-2.md)

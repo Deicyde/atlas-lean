@@ -6,16 +6,18 @@ proof: formalized
 lean: Cslib.Unification.Term.vars_subset_vars_subst
 ---
 
-# Vars subset vars subst
+# Variables of a substituted variable occur in the substituted term
 
-The variables of `s y` occur in `t.subst s` when `y` occurs in `t`.
+**Variables of a substituted variable occur in the substituted term.** For every
+substitution $s$, term $t$ and variable $y$ occurring in $t$, every variable of the term $s(y)$
+occurs in the term obtained from $t$ by applying $s$.
 
 ## Depends on
 
-- [Subst](subst.md)
-- [Term](term.md)
-- [Subst](subst-2.md)
-- [Vars](vars.md)
+- [Substitution](subst.md)
+- [Terms for unification](term.md)
+- [Applying a substitution to a term](subst-2.md)
+- [Variables of a term](vars.md)
 
 ## Sources
 

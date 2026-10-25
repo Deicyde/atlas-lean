@@ -7,9 +7,10 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.heapSort_sorted
 ---
 
-# Heap Sort sorted
+# Heap sort output is sorted
 
-Heap sort returns its output in nondecreasing order.
+**Heap sort output is sorted.** For every list $xs$ of elements of a linearly ordered type,
+heap sort returns a list sorted in nondecreasing order.
 
 ## Depends on
 

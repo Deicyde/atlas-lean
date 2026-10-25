@@ -13,7 +13,7 @@ Selection commutes with a projection that keeps the attributes of the condition.
 ## Depends on
 
 - [Cond](cond.md)
-- [Attrs](attrs.md)
+- [Attributes of a selection condition](attrs.md)
 - [Tuple](tuple.md)
 - [Project](project.md)
 - [Select](select.md)

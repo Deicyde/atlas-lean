@@ -6,14 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Prim.prim_root
 ---
 
-# Prim root
+# The root has no parent in Prim's algorithm
 
-The chosen root has no parent.
+**The root has no parent in Prim's algorithm.** Let $W$ be a linearly ordered type with a
+zero element, let $D$ be a directed adjacency structure on the vertices $0, \dots, n-1$, let $w$
+assign a weight in $W$ to every unordered pair of vertices, not necessarily distinct, and let
+$r$ be a vertex. In the output of Prim's algorithm on $D$, $w$ and $r$, the vertex $r$ has no
+parent.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Basic](../prim.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Prim's algorithm with an indexed binary heap](../prim.md)
 
 ## Proof depends on
 

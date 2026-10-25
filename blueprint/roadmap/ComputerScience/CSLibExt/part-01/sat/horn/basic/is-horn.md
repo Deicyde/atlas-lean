@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Horn.IsHorn
 ---
 
-# Is Horn
+# Horn formula
 
-A Horn formula: every clause has at most one positive literal.
+**Horn formula.** A CNF formula is a Horn formula when every clause contains at most one
+distinct positive literal.
 
 ## Depends on
 

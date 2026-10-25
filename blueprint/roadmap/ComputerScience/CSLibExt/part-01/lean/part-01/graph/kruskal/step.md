@@ -6,14 +6,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.State.step
 ---
 
-# Step
+# One Kruskal step
 
-Process one edge, accepting it exactly when it joins two current classes.
+**One Kruskal step.** Let $s$ be a Kruskal scan state and $e$ a validated edge with endpoints
+$u$ and $v$. If $u$ and $v$ are equivalent in the union-find forest of $s$, processing $e$ leaves
+$s$ unchanged. Otherwise $e$ is accepted: the new forest is the union of $u$ and $v$ in the forest
+of $s$, and $e$ is put at the front of the list of accepted edges.
 
 ## Depends on
 
-- [State](state.md)
-- [Weighted Edge](weighted-edge.md)
+- [Kruskal scan state](state.md)
+- [Weighted edge](weighted-edge.md)
 
 ## Proof depends on
 

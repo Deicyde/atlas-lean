@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.RawEdge
 ---
 
-# Raw Edge
+# Raw input edge
 
-An unchecked weighted undirected input edge.
+**Raw input edge.** A raw edge is an undirected weighted input edge given by three natural
+numbers: two endpoints, which are not yet checked to be vertices of the graph, and a weight.
 
 ## Depends on
 

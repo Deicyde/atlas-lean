@@ -17,16 +17,16 @@ $v$ is infinite if and only if $v$ is not reachable from $s$ in $G$.
 
 - [Output of A-star search](astar-result.md)
 - [A Star](a-star.md)
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
-- [Reachable](../../graph/directed-adjacency-2/reachable.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
+- [Reachability in a directed graph](../../graph/directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
 - [Reduced weight](reduced-weight.md)
-- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
-- [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
-- [Dijkstra distance eq none iff](../../graph/shortest-path/dijkstra/dijkstra-distance-eq-none-iff.md)
+- [Output of Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Dense Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra.md)
+- [Dijkstra's distance is infinite exactly at unreachable vertices](../../graph/shortest-path/dijkstra/dijkstra-distance-eq-none-iff.md)
 
 ## Sources
 

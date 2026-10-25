@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.StronglyConnectedComponents.sameComponentB
 ---
 
-# Same Component B
+# Executable mutual-reachability test
 
-Executable mutual-reachability test, implemented only through the verified DFS API.
+**Executable mutual-reachability test.** For a directed graph $G$ and vertices $u$ and $v$, the
+test returns true exactly when $v$ occurs in the preorder of the depth-first search of $G$ from
+the single root $u$, and $u$ occurs in the preorder of the depth-first search of $G$ from the
+single root $v$.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Traversal](../depth-first-search/traversal.md)
-- [Dfs](../depth-first-search/dfs.md)
+- [Depth-first traversal record](../depth-first-search/traversal.md)
+- [Left-first depth-first search](../depth-first-search/dfs.md)
 
 ## Sources
 

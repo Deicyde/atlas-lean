@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_length
 ---
 
-# Modular Linear Equation Solver length
+# Number of residues returned by the solver
 
-The solver returns `gcd a n` residues exactly when the congruence is solvable.
+**Number of residues returned by the solver.** For natural numbers $a > 0$ and $n > 0$ and an
+integer $b$, the output of the modular linear equation solver on $a$, $b$, $n$ has $\gcd(a, n)$
+entries if $\gcd(a, n)$ divides $b$, and no entries otherwise.
 
 ## Depends on
 
-- [Modular Linear Equation Solver](modular-linear-equation-solver.md)
+- [Modular linear equation solver](modular-linear-equation-solver.md)
 
 ## Proof depends on
 
-- [Modular Linear Equation Solver ret](modular-linear-equation-solver-ret.md)
+- [Output of the modular linear equation solver](modular-linear-equation-solver-ret.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.length
 ---
 
-# Length
+# Length of a schedule
 
-The number of steps a schedule takes.
+**Length of a schedule.** The length of a schedule is the number of steps it takes: one more
+than the latest step in which a task runs (steps are numbered from $0$), or $0$ if there are no
+tasks.
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 - [Schedule](schedule.md)
 
 ## Sources

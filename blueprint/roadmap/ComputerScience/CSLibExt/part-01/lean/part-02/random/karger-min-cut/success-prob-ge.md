@@ -6,27 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Karger.successProb_ge
 ---
 
-# Success Prob ge
+# Karger's bound
 
-Karger's bound: on a valid multigraph with `n ≥ 2` vertices and minimum cut size `k`, the
-contraction process returns `k` with probability at least `2 / (n (n - 1))`.
+**Karger's bound.** Let $G$ be a valid multigraph with $n \ge 2$ vertices and minimum cut
+size $k$. Then the contraction process on $G$, with $n$ contractions allowed, returns $k$ with
+probability at least $2 / (n(n-1))$.
 
 ## Depends on
 
-- [Is Min Cut](is-min-cut.md)
-- [State](state.md)
-- [Valid](valid.md)
-- [Success Prob](success-prob.md)
+- [Minimum cut size](is-min-cut.md)
+- [Multigraph state of Karger's algorithm](state.md)
+- [Valid multigraph](valid.md)
+- [Success probability of the contraction process](success-prob.md)
 
 ## Proof depends on
 
-- [Is Cut](is-cut.md)
-- [Card mul le two mul edges](card-mul-le-two-mul-edges.md)
-- [Contract](contract.md)
-- [Cut Size](cut-size.md)
-- [Is Min Cut contract](is-min-cut-contract.md)
-- [Success Prob nonneg](success-prob-nonneg.md)
-- [Valid contract](valid-contract.md)
+- [Cuts of a multigraph](is-cut.md)
+- [Minimum cut size bounds the number of edges](card-mul-le-two-mul-edges.md)
+- [Edge contraction](contract.md)
+- [Size of a cut](cut-size.md)
+- [Contraction preserves the minimum cut size](is-min-cut-contract.md)
+- [Minimum cut size bounds the number of edges](success-prob-nonneg.md)
+- [Contraction preserves validity and removes one vertex](valid-contract.md)
 
 ## Sources
 

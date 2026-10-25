@@ -6,26 +6,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.hierholzer_isEulerCircuit
 ---
 
-# Hierholzer is Euler Circuit
+# Hierholzer's algorithm finds Euler circuits
 
-CLRS Problem 22-3, sufficiency with the algorithm: on a balanced graph whose edges all start
-at vertices reachable from `s`, `hierholzer graph s` is an Euler circuit from `s`.
+**Hierholzer's algorithm finds Euler circuits.** Let $G$ be a directed adjacency graph, read
+as a multigraph with one edge per adjacency entry, that is balanced (every vertex is the source of
+exactly as many edge occurrences as it is the target of), and let $s$ be a vertex such that the
+source of every edge of $G$ is reachable from $s$. Then the vertex sequence returned by
+Hierholzer's algorithm on $G$ from $s$ is an Euler circuit of $G$ from $s$.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Edge](../directed-adjacency-2/edge.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
-- [Is Balanced](is-balanced.md)
-- [Is Euler Circuit](is-euler-circuit.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
+- [Balanced directed multigraph](is-balanced.md)
+- [Euler circuit in a directed multigraph](is-euler-circuit.md)
 - [Hierholzer](hierholzer.md)
 
 ## Proof depends on
 
-- [Is Semi Balanced](is-semi-balanced.md)
-- [Edge List](edge-list.md)
-- [Hierholzer is Euler Path](hierholzer-is-euler-path.md)
+- [Semi-balanced directed multigraph](is-semi-balanced.md)
+- [Edge list of a directed graph](edge-list.md)
+- [Hierholzer's algorithm finds Euler paths](hierholzer-is-euler-path.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.Hierholzer](../../../../../../../../sources/v2/CSLibExt.md)
+- CLRS, third edition, Problem 22-3, sufficiency with the algorithm; strong connectivity is weakened to reachability from $s$ of the source of every edge.

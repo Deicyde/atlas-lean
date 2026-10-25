@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.usym
 ---
 
-# Usym
+# Unordered edge of an ordered pair
 
-An ordered pair as an unordered edge.
+**Unordered edge of an ordered pair.** The ordered pair $(a, b)$ of vertices, viewed as the
+unordered pair $\{a, b\}$, so that $(a, b)$ and $(b, a)$ give the same unordered edge.
 
 ## Depends on
 

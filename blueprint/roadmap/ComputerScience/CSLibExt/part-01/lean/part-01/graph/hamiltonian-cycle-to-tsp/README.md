@@ -4,11 +4,11 @@ navigation: module
 
 # Hamiltonian Cycle To Tsp
 
-- [Hamiltonian Cycle To Tsp](hamiltonian-cycle-to-tsp.md)
-- [Hamiltonian Cycle To Tsp size](hamiltonian-cycle-to-tsp-size.md)
-- [Hamiltonian Cycle To Tsp get Elem?](hamiltonian-cycle-to-tsp-get-elem.md)
-- [Hamiltonian Cycle To Tsp time](hamiltonian-cycle-to-tsp-time.md)
-- [Hamiltonian Cycle To Tsp costs](hamiltonian-cycle-to-tsp-costs.md)
-- [Hamiltonian Cycle To Tsp forward](hamiltonian-cycle-to-tsp-forward.md)
-- [Hamiltonian Cycle To Tsp reverse](hamiltonian-cycle-to-tsp-reverse.md)
-- [Hamiltonian Cycle To Tsp iff](hamiltonian-cycle-to-tsp-iff.md)
+- [Hamiltonian-cycle to TSP converter](hamiltonian-cycle-to-tsp.md)
+- [The Hamiltonian-cycle to TSP converter preserves length](hamiltonian-cycle-to-tsp-size.md)
+- [The Hamiltonian-cycle to TSP converter negates every cell](hamiltonian-cycle-to-tsp-get-elem.md)
+- [Running time of the Hamiltonian-cycle to TSP converter](hamiltonian-cycle-to-tsp-time.md)
+- [Costs produced by the Hamiltonian-cycle to TSP converter](hamiltonian-cycle-to-tsp-costs.md)
+- [Hamiltonian cycles of the source graph give zero-cost tours](hamiltonian-cycle-to-tsp-forward.md)
+- [Tours of cost zero give Hamiltonian cycles of the source graph](hamiltonian-cycle-to-tsp-reverse.md)
+- [Correctness of the Hamiltonian-cycle to TSP reduction](hamiltonian-cycle-to-tsp-iff.md)

@@ -23,8 +23,8 @@ weight of the edges of Prim's tree is at most the total weight of the edges of $
 
 - [Complete graph as an ordered adjacency](complete-adjacency.md)
 - [Neighbours in the complete adjacency](mem-complete-adjacency.md)
-- [Basic](../../graph/prim/prim.md)
-- [Prim minimum spanning Tree](../../graph/prim/correctness/prim-minimum-spanning-tree.md)
+- [Prim's algorithm with an indexed binary heap](../../graph/prim/prim.md)
+- [Prim's algorithm returns a minimum spanning tree](../../graph/prim/correctness/prim-minimum-spanning-tree.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.onSegment_of_mem
 ---
 
-# On Segment of mem
+# Points of a segment lie in its bounding box
 
-Points of a segment are in its bounding box.
+**Points of a segment lie in its bounding box.** Let $K$ be a linearly ordered field and
+$p, q, r \in K^2$. If $r$ lies on the closed segment from $p$ to $q$, then ON-SEGMENT$(p, q, r)$ is
+true, that is, $r$ lies in the bounding box of $p$ and $q$.
 
 ## Depends on
 
-- [On Segment](on-segment.md)
+- [The ON-SEGMENT test](on-segment.md)
 
 ## Sources
 

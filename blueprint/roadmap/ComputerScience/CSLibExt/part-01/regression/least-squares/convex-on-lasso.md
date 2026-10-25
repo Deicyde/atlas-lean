@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.MachineLearning.LeastSquares.convexOn_lasso
 ---
 
-# Convex On lasso
+# Convexity of the lasso objective
 
-The lasso objective is convex for `λ ≥ 0`.
+**Convexity of the lasso objective.** Let $X$ be a real matrix with $m$ rows and columns
+indexed by a finite set $\iota$, let $y \in \mathbb{R}^m$ and let $\lambda \ge 0$. Then the lasso
+objective $\theta \mapsto \sum_k (y_k - (X\theta)_k)^2 + \lambda \sum_{i \in \iota} |\theta_i|$
+is a convex function on all of $\mathbb{R}^\iota$.
 
 ## Depends on
 
-- [Lasso](lasso.md)
+- [Lasso objective](lasso.md)
 
 ## Proof depends on
 
-- [Convex On rss](convex-on-rss.md)
-- [Rss](rss.md)
+- [Convexity of the residual sum of squares](convex-on-rss.md)
+- [Residual sum of squares](rss.md)
 
 ## Sources
 

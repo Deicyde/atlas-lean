@@ -6,23 +6,23 @@ navigation: module
 
 ## The scan
 
-- [Pop Non Left](pop-non-left.md)
-- [Chain Scan](chain-scan.md)
-- [Lower Hull](lower-hull.md)
-- [Lower Hull Of Points](lower-hull-of-points.md)
+- [Pop step of the monotone-chain scan](pop-non-left.md)
+- [Monotone chain scan](chain-scan.md)
+- [Lower chain](lower-hull.md)
+- [Lower chain of unsorted points](lower-hull-of-points.md)
 
 ## Correctness
 
-- [Lower Hull sublist](lower-hull-sublist.md)
-- [Lower Hull head?](lower-hull-head.md)
-- [Lower Hull get Last?](lower-hull-get-last.md)
-- [Lower Hull turn left](lower-hull-turn-left.md)
-- [Lower Hull left of edges](lower-hull-left-of-edges.md)
+- [The lower chain is a sublist of the input](lower-hull-sublist.md)
+- [The lower chain starts at the first point](lower-hull-head.md)
+- [The lower chain ends at the last point](lower-hull-get-last.md)
+- [The lower chain turns strictly left](lower-hull-turn-left.md)
+- [Every input point lies on or left of each lower-chain edge](lower-hull-left-of-edges.md)
 
 ## Cost
 
-- [Lower Hull time le](lower-hull-time-le.md)
+- [The lower-chain scan makes linearly many tests](lower-hull-time-le.md)
 
 ## Unsorted input
 
-- [Lower Hull Of Points spec](lower-hull-of-points-spec.md)
+- [Correctness of the lower chain for unsorted input](lower-hull-of-points-spec.md)

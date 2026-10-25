@@ -23,8 +23,8 @@ on an expression $e$ if and only if $e$ has some monotype in the empty context.
 
 - [Soundness of type inference for closed expressions](../algorithm-w/has-type-of-infer-eq-some.md)
 - [Completeness of type inference for closed expressions](infer-complete.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Sources
 

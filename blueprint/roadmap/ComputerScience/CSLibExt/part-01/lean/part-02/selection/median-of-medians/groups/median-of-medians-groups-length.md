@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_length
 ---
 
-# Median Of Medians Groups length
+# Number of group medians
 
-The returned median list has the actual ceiling of the number of columns.
+**Number of group medians.** For every list $xs$ of length $n$ over a linear order, the
+list of group medians of $xs$ has exactly $\lfloor (n + 4)/5 \rfloor = \lceil n/5 \rceil$
+entries.
 
 ## Depends on
 
-- [Median Of Medians Groups](median-of-medians-groups.md)
+- [Group medians for median-of-medians selection](median-of-medians-groups.md)
 
 ## Proof depends on
 
-- [Median Of Medians Groups correct](median-of-medians-groups-correct.md)
+- [Group medians are lower medians of their blocks](median-of-medians-groups-correct.md)
 
 ## Sources
 

@@ -6,25 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.uhierholzer_isUEulerPath
 ---
 
-# Euler paths
+# Hierholzer's algorithm finds Euler paths
 
-**Euler paths.** If exactly `s` and `t` have odd degree (none when `s = t`) and every edge
-starts at a vertex reachable from `s`, the result is an Euler path from `s` to `t`.
+**Hierholzer's algorithm finds Euler paths.** Let $E$ be a list of undirected edges
+(ordered pairs of vertices) and $s$, $t$ vertices such that exactly $s$ and $t$ have odd degree in
+$E$ (no vertex has odd degree when $s = t$), and suppose the first endpoint of every edge of $E$ is
+reachable from $s$ through edges of $E$. Then the vertex sequence returned by the undirected
+Hierholzer algorithm on $E$ from $s$ is an Euler path of $E$ from $s$ to $t$.
 
 ## Depends on
 
-- [Even Except](even-except.md)
-- [Is UEuler Path](is-ueuler-path.md)
-- [UReach](ureach.md)
-- [Uhierholzer](uhierholzer.md)
+- [Degree parity condition for two endpoints](even-except.md)
+- [Euler path in an undirected multigraph](is-ueuler-path.md)
+- [Reachability in an undirected multigraph](ureach.md)
+- [Undirected Hierholzer's algorithm](uhierholzer.md)
 
 ## Proof depends on
 
-- [Udeg](udeg.md)
-- [Usym](usym.md)
-- [Uvisit](uvisit.md)
-- [Uvisit spec](uvisit-spec.md)
-- [Walk Edges](../hierholzer/walk-edges.md)
+- [Degree in an undirected edge list](udeg.md)
+- [Unordered edge of an ordered pair](usym.md)
+- [Undirected Hierholzer recursion](uvisit.md)
+- [Invariant of the undirected Hierholzer recursion](uvisit-spec.md)
+- [Steps of a walk](../hierholzer/walk-edges.md)
 
 ## Sources
 

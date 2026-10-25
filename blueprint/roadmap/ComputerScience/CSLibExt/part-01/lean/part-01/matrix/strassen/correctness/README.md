@@ -4,5 +4,5 @@ navigation: module
 
 # Correctness
 
-- [Strassen Matrix Accumulate ret](strassen-matrix-accumulate-ret.md)
-- [Strassen Matrix Accumulate apply](strassen-matrix-accumulate-apply.md)
+- [Correctness of Strassen's matrix accumulator](strassen-matrix-accumulate-ret.md)
+- [Entries of Strassen's matrix accumulator](strassen-matrix-accumulate-apply.md)

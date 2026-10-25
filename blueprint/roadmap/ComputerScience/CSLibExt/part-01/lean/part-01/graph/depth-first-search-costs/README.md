@@ -4,5 +4,5 @@ navigation: module
 
 # Depth First Search Costs
 
-- [Dfs exact steps](dfs-exact-steps.md)
-- [Dfs All exact steps](dfs-all-exact-steps.md)
+- [Exact transition count of depth-first search](dfs-exact-steps.md)
+- [Exact transition count of whole-graph depth-first search](dfs-all-exact-steps.md)

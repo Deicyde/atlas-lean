@@ -7,14 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate_ret
 ---
 
-# Strassen Matrix Accumulate ret
+# Correctness of Strassen's matrix accumulator
 
-Strassen accumulation returns the saved matrix `C` plus the canonical
-Matrix product `A * B`, preserving multiplication operand order.
+**Correctness of Strassen's matrix accumulator.** Let $R$ be a non-unital, non-associative
+ring. For every $k \ge 0$ and all $2^k \times 2^k$ matrices $A$, $B$, $C$ over $R$, the matrix
+returned by Strassen's accumulator on $A$, $B$, $C$ equals $C + AB$, where $AB$ is the usual
+matrix product, $(AB)_{ij} = \sum_t A_{it} B_{tj}$.
+
+Multiplication in $R$ need not be commutative or associative.
 
 ## Depends on
 
-- [Basic](../strassen-matrix-accumulate.md)
+- [Strassen's matrix accumulator](../strassen-matrix-accumulate.md)
 
 ## Sources
 

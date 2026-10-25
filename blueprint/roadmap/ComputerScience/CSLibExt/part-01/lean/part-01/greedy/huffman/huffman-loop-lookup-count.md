@@ -7,22 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.huffmanLoop_lookupCount
 ---
 
-# Huffman Loop lookup Count
+# Indexed reads of a successful Huffman loop
 
-A successful loop performs exactly `2 * fuel + 1` indexed payload reads.
+**Indexed reads of a successful Huffman loop.** Let $k$ be a merge budget, $n$ a next serial
+number, $h$ a binary min-heap of Huffman priorities and $t$ a serial-indexed table of optional
+Huffman work items. If the Huffman loop with budget $k$ on $n$, $h$ and $t$ returns a tree $T$,
+then the Huffman loop with lookup counting on the same arguments returns $T$ together with the
+count $2k + 1$ of indexed payload-table reads.
 
 ## Depends on
 
-- [Huffman Priority](huffman-priority.md)
-- [Huffman Tree](huffman-tree.md)
-- [Huffman Work Item](huffman-work-item.md)
+- [Huffman priority](huffman-priority.md)
+- [Huffman tree](huffman-tree.md)
+- [Huffman work item](huffman-work-item.md)
 - [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
-- [Huffman Loop](huffman-loop.md)
-- [Huffman Loop With Lookup Count](huffman-loop-with-lookup-count.md)
+- [Bounded Huffman merge loop](huffman-loop.md)
+- [Huffman loop with lookup count](huffman-loop-with-lookup-count.md)
 
 ## Proof depends on
 
-- [Huffman Loop With Lookup Count eq](huffman-loop-with-lookup-count-eq.md)
+- [Lookup count of the instrumented Huffman loop](huffman-loop-with-lookup-count-eq.md)
 
 ## Sources
 

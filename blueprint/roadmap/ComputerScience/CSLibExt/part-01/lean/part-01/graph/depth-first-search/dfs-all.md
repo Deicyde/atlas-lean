@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.dfsAll
 ---
 
-# Dfs All
+# Depth-first search of the whole graph
 
-Traverse every vertex, using the graph's certified vertex order as the root schedule.
+**Depth-first search of the whole graph.** For a directed graph $G$ with ordered adjacency
+lists, the whole-graph traversal is the left-first depth-first search of $G$ whose roots are all
+vertices of $G$, taken in the graph's fixed vertex enumeration order.
 
 ## Depends on
 
-- [Traversal](traversal.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Depth-first traversal record](traversal.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Dfs](dfs.md)
+- [Left-first depth-first search](dfs.md)
 
 ## Sources
 

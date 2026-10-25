@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Unification.Equations
 ---
 
-# Equations
+# Lists of equations
 
-Equations between terms.
+**Lists of equations.** A list of equations over constants $C$ is a finite list of pairs
+$(t, u)$ of terms over $C$, each pair standing for the equation $t = u$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Term](term.md)
+- [Terms for unification](term.md)
 
 ## Sources
 

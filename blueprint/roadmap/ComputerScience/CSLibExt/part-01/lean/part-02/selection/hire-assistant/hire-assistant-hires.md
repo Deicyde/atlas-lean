@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_hires
 ---
 
-# Hire Assistant hires
+# The hire-assistant scan hires exactly the strict prefix maxima
 
-The actual chronological history consists exactly of strict prefix records.
+**The hire-assistant scan hires exactly the strict prefix maxima.** For every list
+$x_0, \dots, x_{n-1}$ in a linearly ordered type, the list of indices hired by the hire-assistant
+scan, in chronological order, is the increasing list of all indices $i < n$ such that $x_j < x_i$
+for every $j < i$.
 
 ## Depends on
 
-- [Hire Assistant](hire-assistant.md)
+- [The hire-assistant scan](hire-assistant.md)
 
 ## Sources
 

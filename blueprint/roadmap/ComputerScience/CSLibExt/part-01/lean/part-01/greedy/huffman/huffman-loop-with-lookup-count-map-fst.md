@@ -7,22 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.huffmanLoopWithLookupCount_map_fst
 ---
 
-# Huffman Loop With Lookup Count map fst
+# Discarding the lookup count recovers the Huffman loop
 
-Forgetting the instrumentation yields exactly the existing loop result.
+**Discarding the lookup count recovers the Huffman loop.** For every fuel $n$, next serial
+number $s$, binary min-heap $H$ of Huffman priorities and table $T$ whose cells each hold at most
+one work item, discarding the count from the result of the Huffman loop with lookup count on
+$(n, s, H, T)$ gives the result of the bounded Huffman merge loop on $(n, s, H, T)$: the two fail
+together, and otherwise they return the same tree.
 
 ## Depends on
 
-- [Huffman Priority](huffman-priority.md)
-- [Huffman Tree](huffman-tree.md)
-- [Huffman Work Item](huffman-work-item.md)
+- [Huffman priority](huffman-priority.md)
+- [Huffman tree](huffman-tree.md)
+- [Huffman work item](huffman-work-item.md)
 - [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
-- [Huffman Loop](huffman-loop.md)
-- [Huffman Loop With Lookup Count](huffman-loop-with-lookup-count.md)
+- [Bounded Huffman merge loop](huffman-loop.md)
+- [Huffman loop with lookup count](huffman-loop-with-lookup-count.md)
 
 ## Proof depends on
 
-- [Huffman Loop With Lookup Count eq](huffman-loop-with-lookup-count-eq.md)
+- [Lookup count of the instrumented Huffman loop](huffman-loop-with-lookup-count-eq.md)
 
 ## Sources
 

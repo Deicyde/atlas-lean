@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.extractMin_time
 ---
 
-# Extract Min time
+# Cost of minimum extraction
 
-Minimum extraction compares the candidate with every remaining element exactly once.
+**Cost of minimum extraction.** For every element $c$ of a linearly ordered type and every
+list $L$ over it, minimum extraction from $L$ with initial candidate $c$ has cost exactly $|L|$,
+the length of $L$; that is, it performs exactly $|L|$ order comparisons.
 
 ## Depends on
 
-- [Extract Min](extract-min.md)
+- [Minimum extraction](extract-min.md)
 
 ## Sources
 

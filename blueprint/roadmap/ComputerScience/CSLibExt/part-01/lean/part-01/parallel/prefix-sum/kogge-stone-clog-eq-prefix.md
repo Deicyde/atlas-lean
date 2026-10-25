@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.koggeStone_clog_eq_prefix
 ---
 
-# Kogge Stone clog eq prefix
+# The scan computes all prefixes in logarithmically many rounds
 
-With `K = Nat.clog 2 n` rounds the scan computes every prefix, in span `⌈log₂ n⌉`.
+**The scan computes all prefixes in logarithmically many rounds.** Let $x_0, x_1, \dots$ be a
+sequence in a monoid $M$ and let $n$ be a natural number. After $\lceil \log_2 n \rceil$ rounds of
+the Kogge–Stone scan (the least $K$ with $n \le 2^K$), every position $i < n$ holds the prefix
+product $x_0 x_1 \cdots x_i$.
 
 ## Depends on
 
-- [Kogge Stone](kogge-stone.md)
-- [Prefix Prod](prefix-prod.md)
+- [The Kogge–Stone scan](kogge-stone.md)
+- [Prefix product](prefix-prod.md)
 
 ## Proof depends on
 

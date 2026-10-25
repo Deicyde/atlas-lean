@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_even
 ---
 
-# Modular Exponentiation even
+# Even step of modular exponentiation
 
-The positive even branch squares the result of the source `b / 2` recursion.
+**Even step of modular exponentiation.** Let $a$, $b$, $n$ be natural numbers with $b > 0$
+and $b$ even. If modular exponentiation on base $a$, exponent $b/2$ and modulus $n$ returns the
+value $d$ using $t$ multiplications, then on base $a$, exponent $b$ and modulus $n$ it returns
+the value $(d \cdot d) \bmod n$ using $t + 1$ multiplications.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Sources
 

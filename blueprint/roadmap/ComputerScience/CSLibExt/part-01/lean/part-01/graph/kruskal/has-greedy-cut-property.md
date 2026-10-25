@@ -6,26 +6,31 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.HasGreedyCutProperty
 ---
 
-# Has Greedy Cut Property
+# Greedy cut property of Kruskal's scan
 
-At every ordered scan position whose edge joins distinct current components,
-that edge has minimum stable key among all valid edges crossing the current
-union-find partition.
+**Greedy cut property of Kruskal's scan.** Let $G$ be an input graph on the vertices
+$\{0, \dots, n-1\}$, give each valid edge with weight $w$ and input ordinal $o$ the key
+$(w, o)$, and compare keys lexicographically. The graph $G$ has the greedy cut property when
+the following holds for every way of splitting the valid edges of $G$, sorted by key, into an
+initial segment, an edge $e$ and a final segment. Let $P$ be the union-find partition obtained
+by scanning the initial segment from the discrete parent forest with no accepted edges. If the
+endpoints of $e$ lie in different classes of $P$, then the key of $e$ is at most the key of
+every valid edge of $G$ whose endpoints lie in different classes of $P$.
 
 ## Depends on
 
-- [Graph](graph.md)
+- [Kruskal input graph](graph.md)
 
 ## Proof depends on
 
-- [Key LE](key-le.md)
-- [State](state.md)
-- [Weighted Edge](weighted-edge.md)
-- [Key](key.md)
-- [Initial Forest](initial-forest.md)
-- [Ordered Edges](ordered-edges.md)
-- [Scan](scan.md)
-- [Valid Edges](valid-edges.md)
+- [Lexicographic order on edge keys](key-le.md)
+- [Kruskal scan state](state.md)
+- [Weighted edge](weighted-edge.md)
+- [Sorting key of a weighted edge](key.md)
+- [Discrete parent forest](initial-forest.md)
+- [Valid edges in Kruskal order](ordered-edges.md)
+- [Scanning a list of edges](scan.md)
+- [Valid edges of an input graph](valid-edges.md)
 - [Equivalent vertices of a parent forest](../../data-structures/part-03/union-find/equivalent.md)
 - [Parent forest with a depth certificate](../../data-structures/part-03/union-find/forest.md)
 

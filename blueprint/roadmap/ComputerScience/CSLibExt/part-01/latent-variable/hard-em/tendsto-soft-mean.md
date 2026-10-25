@@ -18,7 +18,7 @@ $a(n) = k$.
 
 ## Depends on
 
-- [Centers](../../../part-02/kmeans/centers.md)
+- [The centroid update step](../../../part-02/kmeans/centers.md)
 - [Common-variance M-step mean](soft-mean.md)
 
 ## Proof depends on

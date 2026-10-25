@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.MachineLearning.KMeans.exists_nearest
 ---
 
-# Exists nearest
+# Nearest-center assignments exist
 
-With at least one center, a nearest-center assignment exists.
+**Nearest-center assignments exist.** For any points $x_i$ in a normed additive commutative
+group and any centers $c_0, \dots, c_{k-1}$ with $k \ge 1$, there is an assignment that sends
+every point to a nearest center.
 
 ## Depends on
 
-- [Nearest](nearest.md)
+- [Nearest-center assignment](nearest.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.minMax_singleton
 ---
 
-# Min Max singleton
+# The min–max algorithm on a one-element list
 
-One element seeds both extrema without comparing elements.
+**The min–max algorithm on a one-element list.** For every element $a$ of a linearly ordered
+type, on the list $[a]$ the simultaneous minimum and maximum algorithm returns the pair $(a, a)$
+and makes no comparisons.
 
 ## Depends on
 
-- [Min Max](min-max.md)
+- [Simultaneous minimum and maximum](min-max.md)
 
 ## Sources
 

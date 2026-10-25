@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.IntervalCompatible.symm
 ---
 
-# Symm
+# Symmetry of interval compatibility
 
-Compatibility is symmetric.
+**Symmetry of interval compatibility.** For any start and finish times and any activities $a$
+and $b$, if $a$ is compatible with $b$, then $b$ is compatible with $a$.
 
 ## Depends on
 
-- [Interval Compatible](interval-compatible.md)
+- [Compatible activities](interval-compatible.md)
 
 ## Sources
 

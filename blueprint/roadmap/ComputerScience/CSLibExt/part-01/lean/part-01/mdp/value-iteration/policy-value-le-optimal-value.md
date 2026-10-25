@@ -8,22 +8,26 @@ lean: Cslib.Algorithms.Lean.MarkovDecision.policyValue_le_optimalValue
 
 # No policy beats the optimal value
 
-**No policy beats the optimal value.**
+**No policy beats the optimal value.** Let $M$ be a Markov decision process with finitely
+many states, finitely many actions (at least one), real rewards $r(s,a)$, and transition
+probabilities $P(s,a,s')$ that are nonnegative and sum to $1$ over $s'$, and let
+$0 \le \gamma < 1$. For every deterministic stationary policy $\pi$, the value $V^\pi$ of $\pi$
+is at most the optimal value $V^*$ in every state: $V^\pi(s) \le V^*(s)$ for all states $s$.
 
 ## Depends on
 
-- [MDP](mdp.md)
-- [Stochastic](stochastic.md)
-- [Optimal Value](optimal-value.md)
-- [Policy Value](policy-value.md)
+- [Markov decision process](mdp.md)
+- [Stochastic Markov decision process](stochastic.md)
+- [Optimal value of a discounted Markov decision process](optimal-value.md)
+- [Value of a policy](policy-value.md)
 
 ## Proof depends on
 
-- [Bellman](bellman.md)
-- [Bellman optimal Value](bellman-optimal-value.md)
-- [Policy Bellman](policy-bellman.md)
-- [Policy Bellman le bellman](policy-bellman-le-bellman.md)
-- [Q Value](q-value.md)
+- [Bellman optimality operator](bellman.md)
+- [The optimal value solves the Bellman optimality equation](bellman-optimal-value.md)
+- [Bellman operator of a policy](policy-bellman.md)
+- [A policy's Bellman update is at most the optimal one](policy-bellman-le-bellman.md)
+- [Q-value of an action](q-value.md)
 
 ## Sources
 

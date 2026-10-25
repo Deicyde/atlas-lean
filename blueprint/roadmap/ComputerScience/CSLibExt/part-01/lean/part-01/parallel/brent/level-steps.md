@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.levelSteps
 ---
 
-# Level Steps
+# Steps of a level
 
-The steps level `d` takes on `p` processors: `⌈levelCard d / p⌉`.
+**Steps of a level.** For a computation DAG and natural numbers $p$ and $d$, let $L_d$ be the
+number of tasks of depth $d$. The number of steps of level $d$ on $p$ processors is
+$\lceil L_d / p \rceil$ if $p \ge 1$, and $0$ if $p = 0$.
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 
 ## Proof depends on
 
-- [Level Card](level-card.md)
+- [Level size](level-card.md)
 
 ## Sources
 

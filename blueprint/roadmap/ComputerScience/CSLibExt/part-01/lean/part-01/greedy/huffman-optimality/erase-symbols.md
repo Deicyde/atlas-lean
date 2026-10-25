@@ -6,13 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.eraseSymbols
 ---
 
-# Erase Symbols
+# Erasing symbols from a Huffman tree
 
-Erase symbols and cast natural weights to real weights.
+**Erasing symbols from a Huffman tree.** Erasing the symbols of a Huffman tree gives the
+weight tree of the same shape: a leaf with symbol $s$ and natural-number weight $w$ becomes the
+leaf of real weight $w$, and a fork with subtrees $L$ and $R$ becomes the fork whose subtrees are
+the erasures of $L$ and $R$.
 
 ## Depends on
 
-- [Huffman Tree](../huffman/huffman-tree.md)
+- [Huffman tree](../huffman/huffman-tree.md)
 - [Huffman Weight Tree](huffman-weight-tree.md)
 
 ## Sources

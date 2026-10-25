@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FloatingPoint.le_rne_of_le
 ---
 
-# Le rne of le
+# Rounding to nearest preserves integer lower bounds
 
-Rounding does not cross an integer: `k ≤ m` gives `k ≤ rne m`.
+**Rounding to nearest preserves integer lower bounds.** Let $K$ be a linearly ordered field
+with a floor function, let $m \in K$ and let $k$ be an integer. If $k \le m$, then
+$k \le \operatorname{rne}(m)$, where $\operatorname{rne}(m)$ is $m$ rounded to the nearest
+integer with ties to even.
 
 ## Depends on
 
-- [Rne](rne.md)
+- [Nearest-integer rounding with ties to even](rne.md)
 
 ## Proof depends on
 
-- [Round to nearest](abs-rne-sub-le.md)
+- [Round to nearest integer](abs-rne-sub-le.md)
 
 ## Sources
 

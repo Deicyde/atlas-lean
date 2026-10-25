@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.totalWeight
 ---
 
-# Total Weight
+# Total weight of a Huffman tree
 
-The total weight of all leaves.
+**Total weight of a Huffman tree.** The sum of the weights at all leaves of a Huffman tree,
+counted once per leaf.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
+- [Huffman tree](huffman-tree.md)
 
 ## Sources
 

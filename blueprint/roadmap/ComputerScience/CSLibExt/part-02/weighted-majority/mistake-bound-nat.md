@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.MachineLearning.WeightedMajority.mistake_bound_nat
 ---
 
-# The mistake bound in integers
+# Mistake bound for the penalty $1/2$ in integers
 
-**The mistake bound in integers**: `4 ^ M ≤ n 3 ^ M 2 ^ m`, i.e.
-`M ≤ (m + log₂ n) / log₂ (4/3) ≈ 2.41 (m + log₂ n)`.
+**Mistake bound for the penalty $1/2$ in integers.** Run the weighted majority algorithm
+with rational weights and penalty $1/2$ on a list of rounds with $n$ experts, starting from
+weight $1$ on every expert, and let $M$ be its number of mistakes. Then every expert $i$, with
+$m$ mistakes on these rounds, satisfies $4^M \le n \cdot 3^M \cdot 2^m$ in the natural numbers.
+
+Taking logarithms, $M \le (m + \log_2 n) / \log_2 (4/3) \approx 2.41 (m + \log_2 n)$.
 
 ## Depends on
 
-- [Round](round.md)
-- [Expert Mistakes](expert-mistakes.md)
-- [Mistakes](mistakes.md)
+- [Round of prediction with expert advice](round.md)
+- [Mistakes of an expert](expert-mistakes.md)
+- [Mistakes of the weighted majority algorithm](mistakes.md)
 
 ## Proof depends on
 
-- [The mistake bound for the penalty `1/2`](mistake-bound.md)
+- [Mistake bound for the penalty $1/2$](mistake-bound.md)
 
 ## Sources
 

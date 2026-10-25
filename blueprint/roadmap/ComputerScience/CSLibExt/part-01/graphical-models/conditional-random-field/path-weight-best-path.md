@@ -25,7 +25,7 @@ Viterbi variable at time $t$ of $s$.
 
 - [Backpointer of the tabulated CRF Viterbi algorithm](back.md)
 - [The tabulated Viterbi variables of a chain CRF](viterbi-tab.md)
-- [Argmax Fin](../../sequence/hidden-markov/argmax-fin.md)
+- [First maximizer of a function on a finite range](../../sequence/hidden-markov/argmax-fin.md)
 
 ## Sources
 

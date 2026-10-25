@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.evenExcept_of_isUEulerPath
 ---
 
-# Even Except of is UEuler Path
+# Degrees of an undirected Euler path
 
-An Euler path from `s` to `t` forces the degree condition: exactly `s` and `t` have odd degree
-(none when `s = t`).
+**Degrees of an undirected Euler path.** Let $E$ be a finite list of edges of an undirected
+multigraph and let $W$ be an Euler path of $E$ from $s$ to $t$. Then every vertex other than $s$
+and $t$ has even degree in $E$ (a loop counts twice); if $s \ne t$, then $s$ and $t$ have odd
+degree, and if $s = t$, every vertex has even degree.
 
 ## Depends on
 
-- [Even Except](even-except.md)
-- [Is UEuler Path](is-ueuler-path.md)
+- [Degree parity condition for two endpoints](even-except.md)
+- [Euler path in an undirected multigraph](is-ueuler-path.md)
 
 ## Proof depends on
 
-- [Even Except walk Edges](even-except-walk-edges.md)
-- [Udeg](udeg.md)
-- [Udeg eq of perm](udeg-eq-of-perm.md)
-- [Usym](usym.md)
-- [Walk Edges](../hierholzer/walk-edges.md)
+- [Degrees along a walk](even-except-walk-edges.md)
+- [Degree in an undirected edge list](udeg.md)
+- [Degrees depend only on the unordered edges](udeg-eq-of-perm.md)
+- [Unordered edge of an ordered pair](usym.md)
+- [Steps of a walk](../hierholzer/walk-edges.md)
 
 ## Sources
 

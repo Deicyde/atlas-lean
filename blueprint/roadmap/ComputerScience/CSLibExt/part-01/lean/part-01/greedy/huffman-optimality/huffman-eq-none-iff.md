@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.huffman_eq_none_iff
 ---
 
-# Huffman eq none iff
+# Huffman's construction fails exactly on empty or repeated-symbol inputs
 
-The constructor rejects exactly the empty inputs and the inputs with a
-repeated symbol.
+**Huffman's construction fails exactly on empty or repeated-symbol inputs.** Let $L$ be a
+list of symbol–weight pairs with natural-number weights, over a symbol type with decidable
+equality. The Huffman construction returns no tree on $L$ if and only if $L$ is empty or some
+symbol occurs in $L$ more than once.
 
 ## Depends on
 
-- [Huffman Tree](../huffman/huffman-tree.md)
-- [Huffman](../huffman/huffman.md)
+- [Huffman tree](../huffman/huffman-tree.md)
+- [Huffman's algorithm](../huffman/huffman.md)
 
 ## Proof depends on
 
-- [Huffman Work Item](../huffman/huffman-work-item.md)
-- [Huffman Heap Of Forest](../huffman/huffman-heap-of-forest.md)
-- [Huffman Loop](../huffman/huffman-loop.md)
-- [Huffman is Some](huffman-is-some.md)
-- [Initial Huffman Forest](../huffman/initial-huffman-forest.md)
-- [Initial Huffman Table](../huffman/initial-huffman-table.md)
+- [Huffman work item](../huffman/huffman-work-item.md)
+- [Heap of a Huffman work forest](../huffman/huffman-heap-of-forest.md)
+- [Bounded Huffman merge loop](../huffman/huffman-loop.md)
+- [Huffman's construction succeeds on nonempty inputs with distinct symbols](huffman-is-some.md)
+- [Initial Huffman forest](../huffman/initial-huffman-forest.md)
+- [Initial Huffman table](../huffman/initial-huffman-table.md)
 
 ## Sources
 

@@ -6,23 +6,28 @@ proof: formalized
 lean: Cslib.Logic.PL.Proposition.tseitinAcc_eq
 ---
 
-# Tseitin Acc eq
+# The linear-time Tseitin builder agrees with the reference encoding
 
-The builder computes the same literal and next gate as the reference `tseitinAux`, and
-its clauses are a permutation of the reference clauses followed by the accumulator.
+**The linear-time Tseitin builder agrees with the reference encoding.**
+For every map $\iota$ from atoms to natural numbers, every formula $A$, every gate number $k$
+and every clause list $\mathit{acc}$, the linear-time Tseitin builder run on $A$ from gate $k$
+with accumulator $\mathit{acc}$ returns the same literal naming $A$ and the same next unused
+gate number as the reference Tseitin encoding of $A$ with gates numbered from $k$, and its
+clause list is $X$ followed by $\mathit{acc}$ for some list of clauses $X$ that is a
+permutation of the defining clauses of the reference encoding.
 
 ## Depends on
 
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Tseitin Acc](tseitin-acc.md)
-- [Tseitin Aux](tseitin-aux.md)
+- [Linear-time Tseitin builder](tseitin-acc.md)
+- [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
 
 ## Proof depends on
 
-- [And Clauses](and-clauses.md)
-- [Imp Clauses](imp-clauses.md)
-- [Or Clauses](or-clauses.md)
+- [Tseitin clauses for a conjunction](and-clauses.md)
+- [Tseitin clauses for an implication](imp-clauses.md)
+- [Tseitin clauses for a disjunction](or-clauses.md)
 
 ## Sources
 

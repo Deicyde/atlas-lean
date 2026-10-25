@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_time
 ---
 
-# Median Of Medians Groups time
+# Comparison cost of the group medians
 
-Group sorting spends at most two comparisons per input occurrence.
+**Comparison cost of the group medians.** For every list $xs$ of length $n$ over a linear
+order, computing the group medians of $xs$ takes at most $2n$ comparisons.
 
 ## Depends on
 
-- [Median Of Medians Groups](median-of-medians-groups.md)
+- [Group medians for median-of-medians selection](median-of-medians-groups.md)
 
 ## Proof depends on
 
-- [Insertion Sort](../../../sort/insertion-cost/insertion-sort.md)
-- [Insertion Sort time](../../../sort/insertion-cost/insertion-sort-time.md)
+- [Insertion sort with comparison cost](../../../sort/insertion-cost/insertion-sort.md)
+- [Comparison bound for insertion sort](../../../sort/insertion-cost/insertion-sort-time.md)
 - [To Chunks](../../../../../../../../Data/MathlibExt/list/length-le-of-mem-to-chunks.md)
 
 ## Sources

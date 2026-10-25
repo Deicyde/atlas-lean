@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.walk_zero_iff
 ---
 
-# Walk zero iff
+# Walks of length zero
 
-A zero-length walk exists exactly when its endpoints coincide.
+**Walks of length zero.** In a directed adjacency graph, there is a walk of length $0$ from
+a vertex $s$ to a vertex $t$ if and only if $s = t$.
 
 ## Depends on
 
-- [Directed Adjacency](directed-adjacency.md)
-- [Walk](walk.md)
+- [Directed adjacency graph](directed-adjacency.md)
+- [Walks of a given length](walk.md)
 
 ## Proof depends on
 
-- [Edge](edge.md)
+- [Edge of a directed adjacency graph](edge.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.naiveMatches_of_length_lt
 ---
 
-# Naive Matches of length lt
+# Naive matching with a pattern longer than the text
 
-A pattern longer than the text has no candidates and performs no symbol comparisons.
+**Naive matching with a pattern longer than the text.** If the pattern $p$ is longer than
+the text $t$, then the naive matcher run on $p$ and $t$ reports no shifts and performs no symbol
+comparisons.
 
 ## Depends on
 
-- [Naive Matches](naive-matches.md)
+- [Naive string matcher](naive-matches.md)
 
 ## Sources
 

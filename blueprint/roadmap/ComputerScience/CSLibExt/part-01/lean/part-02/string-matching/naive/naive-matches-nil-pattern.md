@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.naiveMatches_nil_pattern
 ---
 
-# Naive Matches nil pattern
+# Naive matching with the empty pattern
 
-The empty pattern matches every text boundary without any symbol comparisons.
+**Naive matching with the empty pattern.** For every text $t$ of length $n$, the naive
+matcher run on the empty pattern and $t$ reports exactly the shifts $0, 1, \dots, n$ in
+increasing order and performs no symbol comparisons.
 
 ## Depends on
 
-- [Naive Matches](naive-matches.md)
+- [Naive string matcher](naive-matches.md)
 
 ## Proof depends on
 
-- [Naive Matches ret](naive-matches-ret.md)
-- [Naive Matches time eq](naive-matches-time-eq.md)
+- [Output of naive matching](naive-matches-ret.md)
+- [Exact comparison count of naive matching](naive-matches-time-eq.md)
 
 ## Sources
 

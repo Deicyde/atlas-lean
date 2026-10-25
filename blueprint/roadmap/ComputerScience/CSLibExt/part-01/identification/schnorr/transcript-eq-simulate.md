@@ -20,7 +20,7 @@ $\mathbb{Z}/q \times \mathbb{Z}/q$.
 
 - [Schnorr simulator](simulate.md)
 - [Distribution of honest Schnorr transcripts](transcript.md)
-- [Gpow](../../public-key/diffie-hellman/gpow.md)
+- [Group exponentiation with modular exponents](../../public-key/diffie-hellman/gpow.md)
 
 ## Proof depends on
 

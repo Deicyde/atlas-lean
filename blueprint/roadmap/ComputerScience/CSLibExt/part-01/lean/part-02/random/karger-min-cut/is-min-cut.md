@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Karger.IsMinCut
 ---
 
-# Is Min Cut
+# Minimum cut size
 
-`k` is the minimum cut size of the state.
+**Minimum cut size.** A natural number $k$ is the minimum cut size of a multigraph state $G$
+when some cut of $G$ has size $k$ and every cut of $G$ has size at least $k$.
 
 ## Depends on
 
-- [State](state.md)
+- [Multigraph state of Karger's algorithm](state.md)
 
 ## Proof depends on
 
-- [Is Cut](is-cut.md)
-- [Cut Size](cut-size.md)
+- [Cuts of a multigraph](is-cut.md)
+- [Size of a cut](cut-size.md)
 
 ## Sources
 

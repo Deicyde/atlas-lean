@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsRepeatLaw
 ---
 
-# Freivalds Repeat Law
+# Output distribution of repeated Freivalds trials
 
-Uniform complete binary histories mapped through the repeated executor.
+**Output distribution of repeated Freivalds trials.** For natural numbers $n, k$ and
+$n \times n$ matrices $A, B, C$ over $\mathbb{F}_2$, this is the probability distribution on
+$\{\mathrm{true}, \mathrm{false}\}$ of the result returned by the repeated Freivalds executor on
+$A, B, C$ when its history of $k$ seeds is drawn uniformly from $(\mathbb{F}_2^n)^k$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Freivalds Repeat](../repeat/freivalds-repeat.md)
+- [Repeated Freivalds test on fixed seeds](../repeat/freivalds-repeat.md)
 
 ## Sources
 

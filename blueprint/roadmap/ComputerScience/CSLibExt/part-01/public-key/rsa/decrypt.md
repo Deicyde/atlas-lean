@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Crypto.PublicKey.RSA.Key.decrypt
 ---
 
-# Decrypt
+# RSA decryption
 
-Decryption `c ↦ c ^ d` modulo `n`.
+**RSA decryption.** For an RSA key with modulus $n = pq$ and private exponent $d$, decryption is
+the map $\mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ given by $c \mapsto c^d$.
 
 ## Depends on
 
-- [Key](key.md)
-- [N](n.md)
+- [RSA key](key.md)
+- [RSA modulus](n.md)
 
 ## Sources
 

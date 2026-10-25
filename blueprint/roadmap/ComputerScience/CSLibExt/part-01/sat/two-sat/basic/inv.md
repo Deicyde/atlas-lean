@@ -5,10 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.TwoSAT.Inv
 ---
 
-# Inv
+# Resolution invariant of the implication graph
 
-The invariant of clauses derived by resolution: the complement of each literal reaches
-some literal of the clause.
+**Resolution invariant of the implication graph.** A clause $C$ satisfies the invariant
+with respect to a CNF formula $\varphi$ when for every literal $a$ of $C$ there is a literal
+$b$ of $C$ such that the complementary literal $\lnot a$ reaches $b$ in the implication graph
+of $\varphi$ (by a path of zero or more edges).
+
+Every clause derivable from $\varphi$ by resolution satisfies this invariant.
 
 ## Depends on
 
@@ -17,8 +21,8 @@ some literal of the clause.
 
 ## Proof depends on
 
-- [Imp Reach](imp-reach.md)
-- [Neg](neg.md)
+- [Reachability in the implication graph](imp-reach.md)
+- [Complement of a literal](neg.md)
 
 ## Sources
 

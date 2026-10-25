@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.reachable_iff_exists_walk
 ---
 
-# Reachable iff exists walk
+# Reachability by walks
 
-Reachability is equivalent to the existence of an exact-length walk.
+**Reachability by walks.** In a directed adjacency graph $G$, a vertex $t$ is reachable from
+a vertex $s$ if and only if there is a natural number $n$ such that $G$ has a walk of length
+exactly $n$ from $s$ to $t$.
 
 ## Depends on
 
-- [Directed Adjacency](directed-adjacency.md)
-- [Reachable](reachable.md)
-- [Walk](walk.md)
+- [Directed adjacency graph](directed-adjacency.md)
+- [Reachability in a directed graph](reachable.md)
+- [Walks of a given length](walk.md)
 
 ## Proof depends on
 
-- [Edge](edge.md)
+- [Edge of a directed adjacency graph](edge.md)
 
 ## Sources
 

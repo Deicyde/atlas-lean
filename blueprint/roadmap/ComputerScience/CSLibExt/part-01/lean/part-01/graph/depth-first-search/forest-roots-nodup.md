@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.forestRoots_nodup
 ---
 
-# Forest Roots nodup
+# DFS forest roots are distinct
 
-Actual forest roots contain no duplicates.
+**DFS forest roots are distinct.** For every finite directed graph $G$ given by ordered
+adjacency lists and every list $r$ of root vertices, the list of forest roots of the left-first
+depth-first search of $G$ from $r$ contains no vertex twice.
 
 ## Depends on
 
-- [Forest Roots](forest-roots.md)
-- [Dfs](dfs.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Roots of a DFS forest](forest-roots.md)
+- [Left-first depth-first search](dfs.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Traversal](traversal.md)
-- [Preorder nodup](preorder-nodup.md)
+- [Depth-first traversal record](traversal.md)
+- [Depth-first search discovers each vertex at most once](preorder-nodup.md)
 
 ## Sources
 

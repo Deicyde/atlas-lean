@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.convexHull_time_le
 ---
 
-# Convex Hull time le
+# The monotone chain hull makes at most $4n$ orientation tests
 
-The hull costs at most `4 n` orientation tests.
+**The monotone chain hull makes at most $4n$ orientation tests.** Let $\Bbbk$ be a field with
+a linear order. For every list of $n$ points of $\Bbbk^2$, computing their convex hull by the
+monotone chain algorithm costs at most $4n$, where each orientation test costs one unit.
 
 ## Depends on
 
@@ -16,10 +18,10 @@ The hull costs at most `4 n` orientation tests.
 
 ## Proof depends on
 
-- [Lower Hull](../convex-hull/lower-hull.md)
-- [Lower Hull time le](../convex-hull/lower-hull-time-le.md)
-- [Upper Hull](upper-hull.md)
-- [Upper Hull time le](upper-hull-time-le.md)
+- [Lower chain](../convex-hull/lower-hull.md)
+- [The lower-chain scan makes linearly many tests](../convex-hull/lower-hull-time-le.md)
+- [Upper chain](upper-hull.md)
+- [Running time of the upper chain scan](upper-hull-time-le.md)
 
 ## Sources
 

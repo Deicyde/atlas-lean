@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.FifoPaging.fifoPager
 ---
 
-# Fifo Pager
+# FIFO paging as an online pager
 
-FIFO as an online pager (`OnlinePager` of `PagingLowerBound.lean`), on legal caches.
+**FIFO paging as an online pager.** The online pager with capacity $k$ whose states are the
+legal caches of capacity $k$ (lists of at most $k$ distinct pages, oldest first), whose initial
+state is the empty cache, whose cache in a state is that list itself, and which serves a request
+$p$ by one FIFO step with capacity $k$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ FIFO as an online pager (`OnlinePager` of `PagingLowerBound.lean`), on legal cac
 ## Proof depends on
 
 - [Legal Cache](legal-cache.md)
-- [Fifo Step](fifo-step.md)
-- [Fifo Step legal](fifo-step-legal.md)
+- [One step of FIFO paging](fifo-step.md)
+- [One FIFO step keeps the cache legal](fifo-step-legal.md)
 
 ## Sources
 

@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.inv_triangle
 ---
 
-# The triangle inequality
+# Triangle inequality for inversions
 
-**The triangle inequality** for inversions: rearranging `L` into `L'` changes the inversions
-against `M` by at most `inv L L'`.
+**Triangle inequality for inversions.** Let $M$, $L$ and $L'$ be lists with $L$ a
+rearrangement of $M$. Then the number of inversions of $L'$ against $M$ is at most the number of
+inversions of $L$ against $M$ plus the number of inversions of $L'$ against $L$.
 
 ## Depends on
 
-- [Inv](inv.md)
+- [Number of inversions between two lists](inv.md)
 
 ## Proof depends on
 
-- [Inv Set](inv-set.md)
-- [Mem of mem inv Set](mem-of-mem-inv-set.md)
+- [Inversion set of two lists](inv-set.md)
+- [Counting the entries before an entry](mem-of-mem-inv-set.md)
 
 ## Sources
 

@@ -15,8 +15,8 @@ Vertices reachable from the source in the residual graph of a flow.
 
 ## Proof depends on
 
-- [BFSResult](../breadth-first-search-2/bfsresult.md)
-- [Bfs](../breadth-first-search-2/bfs.md)
+- [Result of breadth-first search](../breadth-first-search-2/bfsresult.md)
+- [Breadth-first search](../breadth-first-search-2/bfs.md)
 - [Residual Graph](residual-graph.md)
 
 ## Sources

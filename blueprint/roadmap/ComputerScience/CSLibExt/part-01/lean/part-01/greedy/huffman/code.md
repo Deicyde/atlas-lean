@@ -6,20 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.code?
 ---
 
-# Code?
+# Codeword lookup in a Huffman tree
 
-The codeword for a symbol, when the symbol occurs in the tree.
-
-A singleton tree uses `[false]`; larger trees use `false` for a left edge and
-`true` for a right edge.
+**Codeword lookup in a Huffman tree.** Let $T$ be a Huffman tree and $a$ a symbol, and write
+$0$ for the bit false and $1$ for the bit true. If $T$ is a single leaf labelled $s$, the codeword
+of $a$ is the one-bit word $0$ when $a = s$ and is undefined otherwise. Otherwise the codeword of
+$a$ records the edges from the root of $T$ to the leftmost leaf labelled $a$, with $0$ for a left
+edge and $1$ for a right edge; it is undefined when no leaf of $T$ is labelled $a$.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
+- [Huffman tree](huffman-tree.md)
 
 ## Proof depends on
 
-- [Path Code?](path-code.md)
+- [Root-to-leaf path code](path-code.md)
 
 ## Sources
 

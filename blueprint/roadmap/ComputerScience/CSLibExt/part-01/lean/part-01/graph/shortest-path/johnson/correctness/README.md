@@ -4,5 +4,5 @@ navigation: module
 
 # Correctness
 
-- [Johnson eq none iff](johnson-eq-none-iff.md)
-- [Johnson distance spec](johnson-distance-spec.md)
+- [Johnson's algorithm fails exactly on reachable negative cycles](johnson-eq-none-iff.md)
+- [Correctness of Johnson's algorithm](johnson-distance-spec.md)

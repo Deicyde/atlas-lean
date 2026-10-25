@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.hornerEval_empty
 ---
 
-# Horner Eval empty
+# Horner evaluation of the empty coefficient list
 
-The total extension to no coefficients computes zero without arithmetic.
+**Horner evaluation of the empty coefficient list.** For every commutative semiring $R$
+and every $x \in R$, Horner evaluation at $x$ with no coefficients ($n = 0$) returns $0$
+and charges $0$ operations.
 
 ## Depends on
 
-- [Horner Eval](horner-eval.md)
+- [Horner evaluation with operation count](horner-eval.md)
 
 ## Proof depends on
 
-- [Horner Eval ret eq sum](horner-eval-ret-eq-sum.md)
-- [Horner Eval time](horner-eval-time.md)
+- [Horner evaluation computes the coefficient sum](horner-eval-ret-eq-sum.md)
+- [Horner evaluation uses $2n$ operations](horner-eval-time.md)
 
 ## Sources
 

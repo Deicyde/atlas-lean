@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.walk_eraseEdge_imp
 ---
 
-# Walk erase Edge imp
+# Walks after erasing an edge are walks in the original graph
 
-Every exact-length walk after erasure was already a walk in the original graph.
+**Walks after erasing an edge are walks in the original graph.** For every
+directed-adjacency graph $G$, vertices $s$, $t$, $u$ and $v$, and natural number $n$, if there
+is a walk of length $n$ from $u$ to $v$ in the graph obtained from $G$ by erasing the edge
+$s \to t$, then there is a walk of length $n$ from $u$ to $v$ in $G$.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Walk](../../directed-adjacency-2/walk.md)
-- [Erase Edge](erase-edge.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Walks of a given length](../../directed-adjacency-2/walk.md)
+- [Erasing a directed edge](erase-edge.md)
 
 ## Proof depends on
 
-- [Edge](../../directed-adjacency-2/edge.md)
-- [Edge erase Edge](edge-erase-edge.md)
+- [Edge of a directed adjacency graph](../../directed-adjacency-2/edge.md)
+- [Edges after erasing an edge](edge-erase-edge.md)
 
 ## Sources
 

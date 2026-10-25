@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GraphicMatroid.forestOracle_iff
 ---
 
-# Forest Oracle iff
+# The forest oracle decides graphic-matroid independence
 
-The oracle decides independence in the graphic matroid.
+**The forest oracle decides graphic-matroid independence.** For a simple graph $G$ on a
+finite vertex set and a finite set $S$ of unordered pairs of vertices, the forest oracle of $G$
+accepts $S$ if and only if $S$ is independent in the graphic matroid of $G$.
 
 ## Depends on
 
-- [Forest Oracle](forest-oracle.md)
-- [Graphic Matroid](graphic-matroid.md)
+- [Forest oracle](forest-oracle.md)
+- [Graphic matroid](graphic-matroid.md)
 
 ## Proof depends on
 
-- [Is Forest Set](is-forest-set.md)
-- [Bridge In](bridge-in.md)
+- [Forests of a graph](is-forest-set.md)
+- [Bridge test for an edge set](bridge-in.md)
 - [Chosen](chosen.md)
 
 ## Sources

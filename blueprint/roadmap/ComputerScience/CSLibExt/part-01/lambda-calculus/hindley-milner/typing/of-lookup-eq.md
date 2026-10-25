@@ -26,7 +26,7 @@ Since the hypothesis is symmetric, $\Gamma$ is then also more general than $\Gam
 - [More general type scheme](more-general.md)
 - [Instantiation of a type scheme](inst.md)
 - [Monotypes](ty.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
 
 ## Sources
 

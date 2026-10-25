@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.preorder_sound
 ---
 
-# Preorder sound
+# Depth-first search discovers only reachable vertices
 
-Every vertex in DFS preorder is directed-reachable from a supplied root.
+**Depth-first search discovers only reachable vertices.** Let $G$ be a finite directed graph
+given by ordered adjacency lists and let $R$ be a list of roots. Every vertex in the preorder
+(discovery order) of the depth-first search of $G$ from $R$ is reachable in $G$ from some root
+in $R$ by a directed path (possibly of length zero).
 
 ## Depends on
 
-- [Traversal](traversal.md)
-- [Dfs](dfs.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
+- [Depth-first traversal record](traversal.md)
+- [Left-first depth-first search](dfs.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
 - [Steps](steps.md)
-- [Edge](../directed-adjacency-2/edge.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
 
 ## Sources
 

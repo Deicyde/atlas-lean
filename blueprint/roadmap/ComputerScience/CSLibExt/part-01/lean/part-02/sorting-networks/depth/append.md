@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.DepthLE.append
 ---
 
-# Append
+# Depth of sequential composition of comparator lists
 
-Sequential composition: depth at most the sum of the two bounds.
+**Depth of sequential composition of comparator lists.** If a list $p$ of comparators on wires
+indexed by $\mathbb{N}$ has depth at most $d$ and a list $q$ of comparators has depth at most
+$e$, then the concatenation of $p$ followed by $q$ has depth at most $d + e$.
 
 ## Depends on
 
-- [Depth LE](depth-le.md)
+- [Depth bound for a comparator list](depth-le.md)
 
 ## Proof depends on
 
-- [Levels](levels.md)
+- [Comparator levels under earliest scheduling](levels.md)
 
 ## Sources
 

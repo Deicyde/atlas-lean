@@ -4,33 +4,33 @@ navigation: module
 
 # Baum Welch
 
-- [Path Prob eq prod](path-prob-eq-prod.md)
+- [Path weight as a product](path-prob-eq-prod.md)
 
 ## The EM model of an HMM
 
-- [Valid](valid.md)
-- [Valid HMM](valid-hmm.md)
-- [Joint](joint.md)
-- [Marginal joint](marginal-joint.md)
-- [P Init](p-init.md)
-- [P Trans](p-trans.md)
-- [P Emit](p-emit.md)
-- [Log joint](log-joint.md)
+- [Valid hidden Markov model parameters](valid.md)
+- [Valid HMMs](valid-hmm.md)
+- [The EM model of a hidden Markov model](joint.md)
+- [The EM marginal of an HMM is its likelihood](marginal-joint.md)
+- [Initial-state indicator of a state path](p-init.md)
+- [Transition count of a state path](p-trans.md)
+- [Emission count of a state path](p-emit.md)
+- [The log path weight is linear in the path's counts](log-joint.md)
 
 ## Expected counts and the M-step
 
-- [Post](post.md)
-- [Init Count](init-count.md)
-- [Trans Count](trans-count.md)
-- [Emit Count](emit-count.md)
+- [Posterior weight of a state path](post.md)
+- [Expected initial-state counts](init-count.md)
+- [Expected transition count](trans-count.md)
+- [Expected emission counts](emit-count.md)
 - [The Baum-Welch M-step](m-step.md)
-- [Em Q eq](em-q-eq.md)
-- [Rich](rich.md)
-- [Em Step](em-step.md)
+- [The Baum-Welch objective in terms of expected counts](em-q-eq.md)
+- [Data rich enough for the Baum-Welch M-step](rich.md)
+- [One Baum-Welch step](em-step.md)
 
 ## Baum-Welch is an EM algorithm
 
-- [The Baum-Welch M-step maximizes `Q(· | h)`](em-q-le-em-step.md)
+- [The Baum-Welch update maximizes the EM objective](em-q-le-em-step.md)
 - [Each Baum-Welch step does not decrease the log-likelihood](log-lik-le-em-step.md)
 - [The log-likelihood is monotone along the Baum-Welch iterates](log-lik-iterate-em-step-monotone.md)
-- [Log Lik eq](log-lik-eq.md)
+- [The Baum-Welch log-likelihood is the HMM log-likelihood](log-lik-eq.md)

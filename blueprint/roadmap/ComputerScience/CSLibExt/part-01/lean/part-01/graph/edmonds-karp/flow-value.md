@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EdmondsKarp.flowValue
 ---
 
-# Flow Value
+# Flow value
 
-Net flow leaving a vertex.
+**Flow value.** For a flow $f$ on $n$ vertices and a vertex $s$, the value of $f$ at $s$ is
+the net flow leaving $s$, namely the integer $\sum_v f(s, v)$, where $v$ runs over all vertices.
 
 ## Depends on
 

@@ -5,9 +5,16 @@ statement: formalized
 lean: Cslib.MachineLearning.AdaBoost.score
 ---
 
-# Score
+# AdaBoost's combined score
 
-The combined score `F T i = ∑_{t < T} α_t h_t(xᵢ)`; the final classifier is its sign.
+**AdaBoost's combined score.** After $T$ rounds, the combined score of training point $i$ is
+
+$$F_T(i) = \sum_{t < T} \alpha(\varepsilon_t)\, h_t(i),$$
+
+where $\varepsilon_t$ is the weighted error and $h_t$ the weak hypothesis of round $t$,
+$\alpha(\varepsilon) = \frac{1}{2} \log \frac{1 - \varepsilon}{\varepsilon}$ is the hypothesis
+weight, and the prediction $h_t(i)$ is read as $\pm 1$. The final classifier is the sign of
+$F_T$.
 
 ## Depends on
 
@@ -15,10 +22,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Alpha](alpha.md)
-- [Eps](eps.md)
-- [Hyp](hyp.md)
-- [Sign](../perceptron/sign.md)
+- [AdaBoost's hypothesis weight](alpha.md)
+- [Weighted error of an AdaBoost round](eps.md)
+- [Weak hypothesis of an AdaBoost round](hyp.md)
+- [Sign of a Boolean label](../perceptron/sign.md)
 
 ## Sources
 

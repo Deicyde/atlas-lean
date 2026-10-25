@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.card_matched_flip_flatten
 ---
 
-# Card matched flip flatten
+# Flipping disjoint augmenting paths matches at least one more vertex
 
-Flipping a nonempty set of vertex-disjoint augmenting paths matches at least one more right
-vertex: the right vertices matched before stay matched, and so does the start of the first
-path.
+**Flipping disjoint augmenting paths matches at least one more vertex.** Let $\mu$ be a
+partner array and let $P_1, \dots, P_n$, with $n \ge 1$, be augmenting paths for $\mu$, all for
+the same number $k$ of search rounds, such that no right vertex occurs twice in the concatenation
+$P_1 P_2 \cdots P_n$. Then flipping this concatenation in $\mu$ gives a partner array with at
+least one more matched right vertex than $\mu$: the right vertices matched before stay matched,
+and so does the start of the first path.
 
 ## Depends on
 
 - [Is Augmenting Path](is-augmenting-path.md)
-- [Flip](flip.md)
-- [Matched](matched.md)
+- [Flipping a list of pairs](flip.md)
+- [Matched right vertices](matched.md)
 
 ## Proof depends on
 
-- [Alt Path](alt-path.md)
+- [Alternating path](alt-path.md)
 
 ## Sources
 

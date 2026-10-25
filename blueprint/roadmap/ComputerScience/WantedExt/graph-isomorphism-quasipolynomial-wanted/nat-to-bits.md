@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.ComputerScience.GraphIsomorphismQuasipolynomialWanted.natToBits
 ---
 
-# Nat To Bits
+# Prefix-free encoding of a natural number
 
-Prefix-free encoding of `n`: unary length, separator, binary digits.
+**Prefix-free encoding of a natural number.** The prefix-free encoding of $n \in \mathbb{N}$
+consists of $k$ true bits, where $k$ is the number of binary digits of $n$, then one false bit,
+then the binary digits of $n$, most significant first.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nat Bits](nat-bits.md)
+- [Binary digits of a natural number](nat-bits.md)
 
 ## Sources
 

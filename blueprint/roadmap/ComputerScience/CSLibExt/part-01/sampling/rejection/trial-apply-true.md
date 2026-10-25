@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.MachineLearning.Sampling.trial_apply_true
 ---
 
-# Trial apply true
+# Probability that a round proposes and accepts a given point
 
-A proposal `x` is drawn and accepted with probability `p x / M`.
+**Probability that a round proposes and accepts a given point.** Let $p$ and $q$ be probability
+mass functions on $\alpha$ and $M \in [0, \infty]$ with $p(y) \le M\,q(y)$ for all $y \in \alpha$.
+For every $x \in \alpha$, one round of rejection sampling for target $p$, proposal $q$ and envelope
+$M$ yields the pair $(x, \mathrm{true})$, that is, proposes $x$ and accepts it, with probability
+$p(x) / M$.
 
 ## Depends on
 
-- [Trial](trial.md)
+- [One round of rejection sampling](trial.md)
 
 ## Proof depends on
 
-- [Accept Prob](accept-prob.md)
-- [Coin](coin.md)
+- [Acceptance probability](accept-prob.md)
+- [Biased coin](coin.md)
 
 ## Sources
 

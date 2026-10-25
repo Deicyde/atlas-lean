@@ -15,7 +15,7 @@ $u \ne v$.
 
 ## Depends on
 
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
 - [Complete graph as an ordered adjacency](complete-adjacency.md)
 
 ## Sources

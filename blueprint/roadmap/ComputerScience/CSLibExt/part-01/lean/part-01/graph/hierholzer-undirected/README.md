@@ -4,35 +4,35 @@ navigation: module
 
 # Hierholzer Undirected
 
-- [Usym](usym.md)
-- [Udeg](udeg.md)
-- [Even Except](even-except.md)
-- [UReach](ureach.md)
-- [Is UEuler Path](is-ueuler-path.md)
-- [Other End](other-end.md)
-- [Uvisit](uvisit.md)
-- [Uhierholzer](uhierholzer.md)
+- [Unordered edge of an ordered pair](usym.md)
+- [Degree in an undirected edge list](udeg.md)
+- [Degree parity condition for two endpoints](even-except.md)
+- [Reachability in an undirected multigraph](ureach.md)
+- [Euler path in an undirected multigraph](is-ueuler-path.md)
+- [Other endpoint of an edge](other-end.md)
+- [Undirected Hierholzer recursion](uvisit.md)
+- [Undirected Hierholzer's algorithm](uhierholzer.md)
 
 ## Degrees
 
-- [Udeg erase](udeg-erase.md)
-- [Usym eq other End](usym-eq-other-end.md)
+- [Undirected Hierholzer's algorithm](udeg-erase.md)
+- [An edge at a vertex joins it to its other endpoint](usym-eq-other-end.md)
 
 ## The recursion
 
-- [Uvisit spec](uvisit-spec.md)
+- [Invariant of the undirected Hierholzer recursion](uvisit-spec.md)
 
 ## Correctness
 
-- [Uhierholzer trail](uhierholzer-trail.md)
-- [Euler paths](uhierholzer-is-ueuler-path.md)
-- [Euler circuits](uhierholzer-is-ueuler-circuit.md)
-- [Cost](uhierholzer-time.md)
+- [Hierholzer's algorithm returns a trail](uhierholzer-trail.md)
+- [Hierholzer's algorithm finds Euler paths](uhierholzer-is-ueuler-path.md)
+- [Hierholzer's algorithm finds Euler circuits](uhierholzer-is-ueuler-circuit.md)
+- [Cost of the undirected Hierholzer algorithm](uhierholzer-time.md)
 
 ## The converse: degrees of an Euler path
 
-- [Ends At](ends-at.md)
-- [Udeg eq of perm](udeg-eq-of-perm.md)
-- [Even Except walk Edges](even-except-walk-edges.md)
-- [Even Except of is UEuler Path](even-except-of-is-ueuler-path.md)
-- [Euler's theorem](exists-is-ueuler-path-iff.md)
+- [Multiplicity of a vertex in an unordered edge](ends-at.md)
+- [Degrees depend only on the unordered edges](udeg-eq-of-perm.md)
+- [Degrees along a walk](even-except-walk-edges.md)
+- [Degrees of an undirected Euler path](even-except-of-is-ueuler-path.md)
+- [Euler's theorem for undirected multigraphs](exists-is-ueuler-path-iff.md)

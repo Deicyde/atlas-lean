@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FloydWarshall.hasNegativeDiagonal_eq_true_iff
 ---
 
-# Has Negative Diagonal eq true iff
+# Characterization of the negative-diagonal test
 
-The Boolean detector is true exactly when some diagonal entry is negative.
+**Characterization of the negative-diagonal test.** For every $n \times n$ matrix $d$ with
+entries in $\mathbb{Z} \cup \{+\infty\}$, the negative-diagonal test on $d$ returns true if and
+only if $d_{vv} < 0$ for some vertex $v$.
 
 ## Depends on
 
-- [Has Negative Diagonal](has-negative-diagonal.md)
+- [Negative-diagonal test](has-negative-diagonal.md)
 
 ## Sources
 

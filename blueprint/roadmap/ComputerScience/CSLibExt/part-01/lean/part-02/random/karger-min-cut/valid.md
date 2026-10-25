@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Karger.State.Valid
 ---
 
-# Valid
+# Valid multigraph
 
-Duplicate-free vertices, and every edge joins two distinct vertices of the state.
+**Valid multigraph.** A multigraph, given by a list of vertices and a list of edges (pairs of
+vertices, with multiplicity), is valid when its vertex list has no repeated entries and every
+edge joins two distinct vertices of the list.
 
 ## Depends on
 
-- [State](state.md)
+- [Multigraph state of Karger's algorithm](state.md)
 
 ## Sources
 

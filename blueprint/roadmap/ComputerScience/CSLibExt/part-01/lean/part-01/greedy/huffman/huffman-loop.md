@@ -6,25 +6,38 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.huffmanLoop
 ---
 
-# Huffman Loop
+# Bounded Huffman merge loop
 
-Run a bounded sequence of Huffman merges.
+**Bounded Huffman merge loop.** The loop takes a fuel $n$, a next serial number $s$, a binary
+min-heap $H$ of Huffman priorities, ordered lexicographically by weight and then serial number,
+and a table $T$ whose cells each hold at most one work item. Taking serial $i$ from a table
+succeeds when cell $i$ holds a work item whose priority has serial number $i$, and returns that
+item's tree together with the table with cell $i$ emptied. With fuel $0$, the loop extracts the
+minimum $p$ of $H$, leaving a heap $H'$, and takes the serial number of $p$ from $T$, obtaining a
+tree $t$ and a table $T'$; it returns $t$ if $H'$ is empty and no cell of $T'$ holds a work item,
+and fails otherwise. With fuel $n + 1$, it extracts the minimum $p_1 = (w_1, s_1)$ of $H$ and then
+the minimum $p_2 = (w_2, s_2)$ of the remaining heap, leaving a heap $H'$; it takes $s_1$ from $T$
+and then $s_2$ from the resulting table, obtaining trees $t_1$, $t_2$ and a table $T'$. It then
+runs with fuel $n$, next serial number $s + 1$, the heap $H'$ with the priority
+$p = (w_1 + w_2, s)$ inserted, and the table $T'$ with a new last cell holding the work item of
+priority $p$ whose tree has left subtree $t_1$ and right subtree $t_2$. If any extraction or take
+fails, the loop fails.
 
 ## Depends on
 
-- [Huffman Priority](huffman-priority.md)
-- [Huffman Tree](huffman-tree.md)
-- [Huffman Work Item](huffman-work-item.md)
+- [Huffman priority](huffman-priority.md)
+- [Huffman tree](huffman-tree.md)
+- [Huffman work item](huffman-work-item.md)
 - [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 
 ## Proof depends on
 
-- [Huffman Two Min](huffman-two-min.md)
+- [Result of a two-minimum extraction](huffman-two-min.md)
 - [Extracting the minimum of a binary min-heap](../../data-structures/part-02/binary-heap/extract-min.md)
 - [Insertion into a binary min-heap](../../data-structures/part-02/binary-heap/push.md)
-- [Extract Two Min?](extract-two-min.md)
-- [Huffman Table Forest](huffman-table-forest.md)
-- [Take Serial?](take-serial.md)
+- [Extracting two minima from a Huffman heap](extract-two-min.md)
+- [Work forest of a table](huffman-table-forest.md)
+- [Removing a work item by serial](take-serial.md)
 
 ## Sources
 

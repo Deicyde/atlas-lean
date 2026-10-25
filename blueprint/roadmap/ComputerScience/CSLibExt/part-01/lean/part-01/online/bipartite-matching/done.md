@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.BipartiteMatching.Done
 ---
 
-# Done
+# Done right vertices
 
-Right vertices of `S` are *done*: each is matched, or all its neighbours are matched.
+**Done right vertices.** Given a partner array, which assigns to each right vertex its partner
+on the left if it has one, the right vertices of a list $S$ are done when, for every right vertex
+$j$ of $S$ and every left vertex $i$ adjacent to $j$, $j$ is matched or $i$ is matched.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Free](../../graph/bipartite-matching/free.md)
+- [Unmatched left vertex](../../graph/bipartite-matching/free.md)
 
 ## Sources
 

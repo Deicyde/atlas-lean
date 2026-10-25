@@ -6,19 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.Spans
 ---
 
-# Spans
+# Edge lists spanning a graph
 
-Every valid input edge has endpoints connected by the candidate forest.
+**Edge lists spanning a graph.** A list $L$ of validated edges spans a finite weighted
+multigraph $G$ on the vertices $\{0, \dots, n-1\}$ when, for every valid input edge of $G$ (one
+whose endpoints are both less than $n$), the two endpoints of that edge are connected using the
+edges of $L$.
 
 ## Depends on
 
-- [Graph](graph.md)
-- [Weighted Edge](weighted-edge.md)
+- [Kruskal input graph](graph.md)
+- [Weighted edge](weighted-edge.md)
 
 ## Proof depends on
 
-- [Connected](connected.md)
-- [Valid Edges](valid-edges.md)
+- [Connectivity by an edge list](connected.md)
+- [Valid edges of an input graph](valid-edges.md)
 
 ## Sources
 

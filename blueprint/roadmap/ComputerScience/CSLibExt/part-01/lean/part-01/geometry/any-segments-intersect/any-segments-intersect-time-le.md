@@ -36,8 +36,8 @@ status and at most three SEGMENTS-INTERSECT tests per segment.
 - [Intersection test for two input segments](test.md)
 - [Testing a segment against an optional neighbour](test-opt.md)
 - [Testing the neighbours of a deleted segment](test-pair.md)
-- [Segments Intersect](../segment-intersection/segments-intersect.md)
-- [Segments Intersect time](../segment-intersection/segments-intersect-time.md)
+- [The SEGMENTS-INTERSECT procedure](../segment-intersection/segments-intersect.md)
+- [Running time of SEGMENTS-INTERSECT](../segment-intersection/segments-intersect-time.md)
 
 ## Sources
 

@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BreadthFirstSearch.bfsWithParents_time_le
 ---
 
-# Bfs With Parents time le
+# Linear bound on the cost of BFS with parents
 
-The selected event count is bounded by three vertex passes plus all adjacency entries.
+**Linear bound on the cost of BFS with parents.** Let $G$ be a finite directed graph with
+vertex list $V$ and adjacency lists $\mathrm{adj}(u)$, and let $s$ be a vertex. The cost of
+breadth-first search with parents from $s$, counting dequeue attempts, adjacency checks, enqueues
+and parent writes, is at most $3|V| + \sum_{u \in V} |\mathrm{adj}(u)|$, where adjacency lists
+are counted with repetitions.
 
 ## Depends on
 
-- [BFSForest](../internal/bfsforest.md)
-- [Bfs With Parents](../internal/bfs-with-parents.md)
-- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Breadth-first search forest](../internal/bfsforest.md)
+- [Breadth-first search with parent pointers](../internal/bfs-with-parents.md)
+- [Directed adjacency graph](../../../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [BFSResult](../../../breadth-first-search-2/bfsresult.md)
-- [Bfs](../../../breadth-first-search-2/bfs.md)
-- [Bfs With Parents time](bfs-with-parents-time.md)
-- [Order nodup](../../../breadth-first-search-2/order-nodup.md)
+- [Result of breadth-first search](../../../breadth-first-search-2/bfsresult.md)
+- [Breadth-first search](../../../breadth-first-search-2/bfs.md)
+- [Exact cost of BFS with parents](bfs-with-parents-time.md)
+- [BFS discovers each vertex at most once](../../../breadth-first-search-2/order-nodup.md)
 
 ## Sources
 

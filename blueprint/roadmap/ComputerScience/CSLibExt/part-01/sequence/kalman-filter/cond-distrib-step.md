@@ -8,17 +8,22 @@ lean: Cslib.MachineLearning.Sequence.KalmanFilter.condDistrib_step
 
 # One filter step is the exact posterior
 
-**One filter step is the exact posterior**: with prior state `x ~ N(m, P)`, dynamics
-`x' = F x + w` and observation `y = H x' + v`, where `x`, `w` are independent, `(x, w)` is
-independent of `v`, `w ~ N(0, Q)`, `v ~ N(0, R)` and the innovation covariance is invertible, the
-posterior of `x'` given `y` is `step F Q H R y` (for almost every `y`).
+**One filter step is the exact posterior.** Let $x$ and $w$ be measurable random vectors in
+$\mathbb{R}^n$ and $v$ a measurable random vector in $\mathbb{R}^p$ on a probability space, with
+$x$ independent of $w$ and the pair $(x, w)$ independent of $v$. Suppose $x$ has the law
+$N(m, P)$ of a belief with mean $m$ and positive semidefinite covariance $P$, $w$ has law
+$N(0, Q)$ and $v$ has law $N(0, R)$, with $Q$ and $R$ positive semidefinite. Let $F$ be a real
+$n \times n$ matrix and $H$ a real $p \times n$ matrix with $H (F P F^\top + Q) H^\top + R$
+invertible, and put $x' = F x + w$ and $Y = H x' + v$. Then for almost every $y$ with respect to
+the law of $Y$, the conditional distribution of $x'$ given $Y = y$ is the law of the belief
+obtained from $(m, P)$ by one filter step with $F$, $Q$, $H$, $R$ and the observation $y$.
 
 ## Depends on
 
-- [Belief](belief.md)
-- [Law](law.md)
-- [Predict](predict.md)
-- [Step](step.md)
+- [Gaussian belief](belief.md)
+- [Law of a belief](law.md)
+- [Kalman prediction](predict.md)
+- [Kalman filter step](step.md)
 
 ## Proof depends on
 

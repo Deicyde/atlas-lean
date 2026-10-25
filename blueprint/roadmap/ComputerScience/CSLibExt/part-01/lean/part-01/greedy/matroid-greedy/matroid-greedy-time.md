@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.matroidGreedy_time
 ---
 
-# Matroid Greedy time
+# Running time of the matroid greedy algorithm
 
-One oracle query per element.
+**Running time of the matroid greedy algorithm.** For every oracle $O$ on finite subsets of a
+type $\alpha$ and every list $L$ of elements of $\alpha$, the greedy algorithm with oracle $O$ on
+$L$ takes time exactly the length of $L$, one oracle query per element.
 
 ## Depends on
 
-- [Matroid Greedy](matroid-greedy.md)
+- [Greedy algorithm on a matroid](matroid-greedy.md)
 
 ## Proof depends on
 
-- [Matroid Greedy Scan time](matroid-greedy-scan-time.md)
+- [Greedy algorithm on a matroid](matroid-greedy-scan-time.md)
 
 ## Sources
 

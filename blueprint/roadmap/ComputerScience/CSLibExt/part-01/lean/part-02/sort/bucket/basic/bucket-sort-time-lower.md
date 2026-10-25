@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_lower
 ---
 
-# Bucket Sort time lower
+# Linear lower bound on the cost of bucket sort
 
-Every valid array pays the five mandatory saved-bucket phase events per input.
+**Linear lower bound on the cost of bucket sort.** Let $R$ be a linearly ordered field with
+a floor function. For every array of $n$ elements of $R$ that all lie in $[0, 1)$, the cost
+of bucket sort on this array is at least $5n$.
 
 ## Depends on
 
-- [Bucket Sort](bucket-sort.md)
+- [Bucket sort](bucket-sort.md)
 
 ## Proof depends on
 
-- [Bucket Sort time](bucket-sort-time.md)
-- [Insertion Sort](../../insertion-cost/insertion-sort.md)
+- [Exact cost of bucket sort](bucket-sort-time.md)
+- [Insertion sort with comparison cost](../../insertion-cost/insertion-sort.md)
 
 ## Sources
 

@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.bellmanFord_cycleWitnessSteps_le
 ---
 
-# Bellman Ford cycle Witness Steps le
+# Bellman-Ford spends at most $3n$ witness steps
 
-Negative-cycle witness reconstruction uses at most three vertex-count passes.
+**Bellman-Ford spends at most $3n$ witness steps.** For every list $E$ of weighted edges on
+$n$ vertices and every source $s$, Bellman-Ford run on $E$ from $s$ charges at most $3n$
+negative-cycle witness reconstruction steps.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Edge](../basic/edge.md)
-- [Result](../basic/result.md)
+- [Bellman-Ford cost counters](../basic/cost.md)
+- [Weighted directed edge](../basic/edge.md)
+- [Bellman–Ford result](../basic/result.md)
 - [Bellman Ford](../correctness/bellman-ford.md)
 
 ## Proof depends on
 
-- [Distances](../basic/distances.md)
-- [Is Weighted Path](../basic/is-weighted-path.md)
-- [Reachable Negative Cycle](../basic/reachable-negative-cycle.md)
-- [Path Vertices](../basic/path-vertices.md)
-- [Path Weight](../basic/path-weight.md)
+- [Bellman-Ford distance table](../basic/distances.md)
+- [Weighted path in an edge list](../basic/is-weighted-path.md)
+- [Reachable negative cycle witness](../basic/reachable-negative-cycle.md)
+- [Vertices of a path](../basic/path-vertices.md)
+- [Bellman–Ford path weight](../basic/path-weight.md)
 
 ## Sources
 

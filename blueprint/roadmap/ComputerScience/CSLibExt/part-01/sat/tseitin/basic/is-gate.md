@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Tseitin.IsGate
 ---
 
-# Is Gate
+# Gate variables in a range
 
-A variable is a *gate in range* `[k, k')` if it is `2 * j + 1` with `k ≤ j < k'`.
+**Gate variables in a range.** For natural numbers $k$ and $k'$, a variable $x \in \mathbb{N}$
+is a gate in range $[k, k')$ if $x = 2j + 1$ for some $j \in \mathbb{N}$ with $k \le j < k'$.
 
 ## Depends on
 

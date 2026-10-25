@@ -6,13 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FloydWarshall.Cost.total
 ---
 
-# Total
+# Total Floyd–Warshall cost
 
-The sum of both abstract event counts.
+**Total Floyd–Warshall cost.** The total of a Floyd–Warshall cost record is its number of
+initialization events plus its number of min-plus transition events.
 
 ## Depends on
 
-- [Cost](cost.md)
+- [Floyd–Warshall cost record](cost.md)
 
 ## Sources
 

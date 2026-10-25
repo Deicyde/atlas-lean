@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MillerRabin.witness_eq_false_imp
 ---
 
-# Witness eq false imp
+# What a non-witness satisfies
 
-CLRS's description of a non-witness: with `n - 1 = 2^t u`, either `a^u ≡ 1` or
-`a^(2^i u) ≡ -1` for some `i < t`.
+**What a non-witness satisfies.** Let $n > 1$ and write $n - 1 = 2^t u$ with $u$ odd. If $a$ is
+a natural number for which the Miller–Rabin witness test $\mathrm{WITNESS}(a, n)$ returns false,
+then $a^u \equiv 1 \pmod n$, or $a^{2^i u} \equiv -1 \pmod n$ for some $i < t$.
 
 ## Depends on
 
-- [Two Adic Split](../miller-rabin/two-adic-split.md)
-- [Witness](../miller-rabin/witness.md)
+- [Splitting off the power of two](../miller-rabin/two-adic-split.md)
+- [Miller–Rabin witness test](../miller-rabin/witness.md)
 
 ## Proof depends on
 
-- [Witness Loop](../miller-rabin/witness-loop.md)
-- [Witness Loop eq false imp](witness-loop-eq-false-imp.md)
-- [Modular Exponentiation](../modular-exponentiation/modular-exponentiation.md)
-- [Modular Exponentiation correct](../modular-exponentiation/modular-exponentiation-correct.md)
+- [The Miller–Rabin squaring loop](../miller-rabin/witness-loop.md)
+- [When the squaring loop finds no witness](witness-loop-eq-false-imp.md)
+- [Modular exponentiation](../modular-exponentiation/modular-exponentiation.md)
+- [Correctness of modular exponentiation](../modular-exponentiation/modular-exponentiation-correct.md)
 
 ## Sources
 

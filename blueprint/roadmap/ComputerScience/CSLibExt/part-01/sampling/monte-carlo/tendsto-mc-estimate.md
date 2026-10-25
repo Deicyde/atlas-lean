@@ -8,13 +8,16 @@ lean: Cslib.MachineLearning.Sampling.tendsto_mcEstimate
 
 # The Monte Carlo estimator is consistent
 
-**The Monte Carlo estimator is consistent** (strong law of large numbers): for pairwise
-independent samples with a common law `ν` and `f ∈ L¹(ν)`, the estimate converges almost surely
-to `∫ f dν`.
+**The Monte Carlo estimator is consistent** (strong law of large numbers). Let $\mu$ be a
+measure on $\Omega$, let $\nu$ be a measure on $\alpha$, and let $f : \alpha \to \mathbb{R}$ be
+measurable and integrable with respect to $\nu$. If $X_0, X_1, \ldots : \Omega \to \alpha$ are
+measurable, pairwise independent under $\mu$, and the pushforward of $\mu$ along each $X_i$ is
+$\nu$, then for $\mu$-almost every $\omega$ the Monte Carlo estimate
+$\frac{1}{n} \sum_{i < n} f(X_i(\omega))$ converges to $\int f \, d\nu$ as $n \to \infty$.
 
 ## Depends on
 
-- [Mc Estimate](mc-estimate.md)
+- [Monte Carlo estimate](mc-estimate.md)
 
 ## Sources
 

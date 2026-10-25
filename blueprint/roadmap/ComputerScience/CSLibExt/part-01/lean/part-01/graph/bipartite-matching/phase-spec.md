@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.phase_spec
 ---
 
-# Phase spec
+# The paths of a phase are vertex-disjoint augmenting paths
 
-The paths of a phase are augmenting paths at level `d`, with no left or right vertex twice.
+**The paths of a phase are vertex-disjoint augmenting paths.** Suppose the partner array
+describes a matching and $d$ is the earliest round such that round $d + 1$ of the alternating
+breadth-first search reaches an unmatched right vertex. Then every path of the phase is an
+augmenting path at level $d$ from some right vertex, and no left vertex and no right vertex occurs
+twice among the pairs of all the paths of the phase.
 
 ## Depends on
 
 - [Is Augmenting Path](is-augmenting-path.md)
-- [Valid](valid.md)
-- [First Free Round](first-free-round.md)
-- [Phase](phase.md)
+- [Partner arrays that describe a matching](valid.md)
+- [First free round](first-free-round.md)
+- [Hopcroft–Karp phase](phase.md)
 
 ## Proof depends on
 
-- [Layers](layers.md)
-- [Phase Aux](phase-aux.md)
-- [Phase Aux spec](phase-aux-spec.md)
+- [Alternating breadth-first layers](layers.md)
+- [Phase search over candidates](phase-aux.md)
+- [Phase paths are disjoint augmenting paths](phase-aux-spec.md)
 
 ## Sources
 

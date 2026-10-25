@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.OddEven.runN_relabel_of_not_mem
 ---
 
-# Run N relabel of not mem
+# Relabeled networks fix the wires outside the image
 
-A relabeled network leaves the wires outside the image of `e` alone.
+**Relabeled networks fix the wires outside the image.** Let $\alpha$ be a linearly ordered
+type, $e : \mathbb{N} \to \mathbb{N}$ any map and $f : \mathbb{N} \to \alpha$ an assignment of
+values to the wires. For every list of comparators and every wire $x$ that is not of the form
+$e(y)$, running the list relabeled by $e$ on $f$ gives the value $f(x)$ at wire $x$.
 
 ## Depends on
 
-- [Run N](../bitonic/run-n.md)
-- [Relabel](relabel.md)
+- [Running a comparator network](../bitonic/run-n.md)
+- [Relabeling the wires of a comparator list](relabel.md)
 
 ## Proof depends on
 
-- [Cmp](../bitonic/cmp.md)
+- [Comparator on natural-number-indexed wires](../bitonic/cmp.md)
 
 ## Sources
 

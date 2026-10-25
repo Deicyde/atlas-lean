@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Karger.successProb_le_one
 ---
 
-# Success Prob le one
+# The success probability is at most one
 
-`successProb` is a probability: it is at most `1`.
+**The success probability is at most one.** For every natural number $k$, every number of
+allowed contractions and every multigraph $G$, the probability that the contraction process on
+$G$ returns $k$ is at most $1$.
 
 ## Depends on
 
-- [State](state.md)
-- [Success Prob](success-prob.md)
+- [Multigraph state of Karger's algorithm](state.md)
+- [Success probability of the contraction process](success-prob.md)
 
 ## Proof depends on
 
-- [Contract](contract.md)
+- [Edge contraction](contract.md)
 
 ## Sources
 

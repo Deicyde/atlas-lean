@@ -11,7 +11,7 @@ The residual graph contains exactly the ordered pairs with positive residual cap
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 - [Flow](flow.md)
 
 ## Sources

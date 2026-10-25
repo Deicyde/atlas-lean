@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FloydWarshall.floydWarshall_time
 ---
 
-# Floyd Warshall time
+# Floyd–Warshall performs $n^2 + n^3$ steps
 
-The total abstract event count is `n^2 + n^3`.
+**Floyd–Warshall performs $n^2 + n^3$ steps.** For every $n$ and every $n \times n$ matrix of
+weights in $\mathbb{Z} \cup \{+\infty\}$, the total number of events counted by the Floyd–Warshall
+algorithm, initialization events plus min-plus transition events, is exactly $n^2 + n^3$.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Total](total.md)
-- [Floyd Warshall](floyd-warshall.md)
+- [Floyd–Warshall cost record](cost.md)
+- [Total Floyd–Warshall cost](total.md)
+- [Floyd–Warshall algorithm](floyd-warshall.md)
 
 ## Proof depends on
 
-- [Floyd Warshall initializations](floyd-warshall-initializations.md)
-- [Floyd Warshall transitions](floyd-warshall-transitions.md)
+- [Initialization count of Floyd–Warshall](floyd-warshall-initializations.md)
+- [Transition count of Floyd–Warshall](floyd-warshall-transitions.md)
 
 ## Sources
 

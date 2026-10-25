@@ -7,23 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FloydWarshall.floydWarshall_distance_minimal
 ---
 
-# Floyd Warshall distance minimal
+# No path is shorter than the Floyd–Warshall distance
 
-Under the no-negative-cycle hypothesis, no concrete path is cheaper than the output.
+**No path is shorter than the Floyd–Warshall distance.** Let $w$ assign a weight in
+$\mathbb{Z} \cup \{\infty\}$ to each ordered pair of vertices in $\{0, \dots, n-1\}$, suppose that
+$w$ has no negative cycle, and let $D$ be the distance matrix computed by Floyd–Warshall from $w$.
+Then for all vertices $s$ and $t$ and every weighted path $p$ from $s$ to $t$ (a nonempty vertex
+sequence from $s$ to $t$ in which every consecutive pair has finite weight), $D(s, t)$ is at most
+the weight of $p$, the sum of the weights of its consecutive pairs.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Is Weighted Path](../basic/is-weighted-path.md)
-- [No Negative Cycle](../basic/no-negative-cycle.md)
-- [Floyd Warshall](../basic/floyd-warshall.md)
-- [Path Weight](../basic/path-weight.md)
+- [Floyd–Warshall cost record](../basic/cost.md)
+- [Finite-weight vertex path in a weight matrix](../basic/is-weighted-path.md)
+- [Weight matrices without negative cycles](../basic/no-negative-cycle.md)
+- [Floyd–Warshall algorithm](../basic/floyd-warshall.md)
+- [Weight of a vertex path in an extended-integer weight matrix](../basic/path-weight.md)
 
 ## Proof depends on
 
-- [Has Negative Cycle](../basic/has-negative-cycle.md)
-- [Internal Vertices Below](../basic/internal-vertices-below.md)
-- [Is Negative Cycle](../basic/is-negative-cycle.md)
+- [Matrices with a negative cycle](../basic/has-negative-cycle.md)
+- [Intermediate vertices below a bound](../basic/internal-vertices-below.md)
+- [Negative cycles](../basic/is-negative-cycle.md)
 
 ## Sources
 

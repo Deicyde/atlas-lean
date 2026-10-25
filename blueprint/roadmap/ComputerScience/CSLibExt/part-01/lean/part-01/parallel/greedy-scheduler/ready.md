@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.Ready
 ---
 
-# Ready
+# Ready task
 
-A task is *ready* at step `t` if it has not run yet and all its predecessors ran earlier.
+**Ready task.** In a schedule $S$ of a task graph, a task $v$ is ready at step $t$ if $v$
+runs in a step later than $t$ and every predecessor of $v$ runs in a step earlier than $t$.
 
 ## Depends on
 
-- [Dag](../brent/dag.md)
+- [Computation DAG](../brent/dag.md)
 - [Schedule](../brent/schedule.md)
 
 ## Sources

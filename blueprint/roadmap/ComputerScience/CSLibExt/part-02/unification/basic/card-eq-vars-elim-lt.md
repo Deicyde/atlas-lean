@@ -6,23 +6,27 @@ proof: formalized
 lean: Cslib.Unification.card_eqVars_elim_lt
 ---
 
-# Card eq Vars elim lt
+# Eliminating a solved variable lowers the number of variables
 
-Eliminating `x = t` (with `x` not in `t`) from `(x, t) :: E` lowers the variable count.
+**Eliminating a solved variable lowers the number of variables.** Let $x$ be a variable,
+$t$ a term in which $x$ does not occur, and $E$ a list of equations. Applying the substitution
+that replaces $x$ by $t$ (and fixes every other variable) to both sides of every equation of
+$E$ gives a list of equations with strictly fewer distinct variables than the list obtained
+by putting the equation $x = t$ in front of $E$.
 
 ## Depends on
 
-- [Equations](equations.md)
-- [Single](single.md)
-- [Term](term.md)
-- [Vars](vars.md)
-- [Eq Vars](eq-vars.md)
-- [Subst Eqs](subst-eqs.md)
+- [Lists of equations](equations.md)
+- [Single-variable substitution](single.md)
+- [Terms for unification](term.md)
+- [Variables of a term](vars.md)
+- [Variables of a list of equations](eq-vars.md)
+- [Applying a substitution to a list of equations](subst-eqs.md)
 
 ## Proof depends on
 
-- [Subst](subst-2.md)
-- [Vars subst single subset](vars-subst-single-subset.md)
+- [Applying a substitution to a term](subst-2.md)
+- [Substituting for a variable that does not occur in the substituted term](vars-subst-single-subset.md)
 
 ## Sources
 

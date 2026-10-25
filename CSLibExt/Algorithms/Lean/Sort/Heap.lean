@@ -88,7 +88,9 @@ private theorem heapSort_loop_correct (fuel : Nat) (heap : MinHeap α)
             rw [hrestElements]
             exact helements⟩
 
-/-- Heap sort preserves every input occurrence, including duplicates. -/
+/-- **Heap sort preserves multiplicities.** For every list $xs$ of elements of a linearly ordered
+type, the output of heap sort on $xs$ and $xs$ itself are equal as multisets: every value occurs
+in both lists the same number of times. -/
 theorem heapSort_multiset (xs : List α) :
     (↑(heapSort xs) : Multiset α) = (↑xs : Multiset α) := by
   let heap := xs.foldl (fun current value => current.push value) MinHeap.empty
@@ -99,18 +101,21 @@ theorem heapSort_multiset (xs : List α) :
     exact hcorrect.2.trans (by simpa [heap, MinHeap.empty, MinHeap.elements] using helements)
   simpa only [heapSort, heap] using hresult
 
-/-- Heap sort returns a permutation of its input. -/
+/-- **Heap sort permutes its input.** For every list $xs$ of elements of a linearly ordered type,
+heap sort returns a permutation of $xs$. -/
 theorem heapSort_perm (xs : List α) : List.Perm (heapSort xs) xs :=
   Multiset.coe_eq_coe.mp (heapSort_multiset xs)
 
-/-- Heap sort returns its output in nondecreasing order. -/
+/-- **Heap sort output is sorted.** For every list $xs$ of elements of a linearly ordered type,
+heap sort returns a list sorted in nondecreasing order. -/
 theorem heapSort_sorted (xs : List α) :
     List.Pairwise (fun x y => x ≤ y) (heapSort xs) := by
   let heap := xs.foldl (fun current value => current.push value) MinHeap.empty
   have hcorrect := heapSort_loop_correct heap.data.size heap rfl
   simpa only [heapSort, heap] using hcorrect.1
 
-/-- Heap sort refines the standard sorted-permutation specification. -/
+/-- **Correctness of heap sort.** For every list $xs$ of elements of a linearly ordered type, heap
+sort returns a list that is sorted in nondecreasing order and is a permutation of $xs$. -/
 theorem heapSort_correct (xs : List α) :
     List.Pairwise (fun x y => x ≤ y) (heapSort xs) ∧ List.Perm (heapSort xs) xs :=
   ⟨heapSort_sorted xs, heapSort_perm xs⟩

@@ -8,15 +8,15 @@ navigation: module
 - [Is Over](is-over.md)
 - [Compatible](compatible.md)
 - [Merge](merge.md)
-- [Compatible merge left](compatible-merge-left.md)
-- [Compatible merge right](compatible-merge-right.md)
+- [Compatibility with a merge, grouped from the left](compatible-merge-left.md)
+- [Compatibility with a merge, grouped from the right](compatible-merge-right.md)
 - [Restrict](restrict.md)
 
 ## Selection conditions
 
 - [Cond](cond.md)
 - [Eval](eval.md)
-- [Attrs](attrs.md)
+- [Attributes of a selection condition](attrs.md)
 - [Eval restrict](eval-restrict.md)
 
 ## The operators

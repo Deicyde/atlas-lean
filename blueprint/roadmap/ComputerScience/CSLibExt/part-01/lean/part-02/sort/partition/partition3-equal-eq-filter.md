@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.partition3_equal_eq_filter
 ---
 
-# Partition3 equal eq filter
+# The equal list of a three-way partition is a filter
 
-The equal field preserves the input order of all occurrences equal to the pivot.
+**The equal list of a three-way partition is a filter.** For every element $p$ of a linearly
+ordered type $\alpha$ and every list $xs$ over $\alpha$, the equal list of the stable three-way
+partition of $xs$ around $p$ is the list of the elements $x$ of $xs$ with $x = p$, in their order
+in $xs$ and with their multiplicities.
 
 ## Depends on
 
-- [Three Way Partition](three-way-partition.md)
-- [Partition3](partition3.md)
+- [Three-way partition record](three-way-partition.md)
+- [Stable three-way partition](partition3.md)
 
 ## Sources
 

@@ -4,8 +4,8 @@ navigation: module
 
 # Groups
 
-- [Median Of Medians Groups](median-of-medians-groups.md)
-- [Median Of Medians Groups time](median-of-medians-groups-time.md)
-- [Median Of Medians Groups mem](median-of-medians-groups-mem.md)
-- [Median Of Medians Groups correct](median-of-medians-groups-correct.md)
-- [Median Of Medians Groups length](median-of-medians-groups-length.md)
+- [Group medians for median-of-medians selection](median-of-medians-groups.md)
+- [Comparison cost of the group medians](median-of-medians-groups-time.md)
+- [Group medians come from the input](median-of-medians-groups-mem.md)
+- [Group medians are lower medians of their blocks](median-of-medians-groups-correct.md)
+- [Number of group medians](median-of-medians-groups-length.md)

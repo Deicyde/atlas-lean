@@ -20,8 +20,8 @@ returned by the patience scan of $xs$ from $t$.
 
 ## Proof depends on
 
-- [Lower Bound](../../../part-02/search/lower-bound/lower-bound.md)
-- [Lower Bound spec](../../../part-02/search/lower-bound/lower-bound-spec.md)
+- [Lower-bound search](../../../part-02/search/lower-bound/lower-bound.md)
+- [Correctness of lower-bound search](../../../part-02/search/lower-bound/lower-bound-spec.md)
 - [Patience step](patience-step.md)
 
 ## Sources

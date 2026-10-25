@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.bellmanFord_relaxationChecks_eq_mul
 ---
 
-# Bellman Ford relaxation Checks eq mul
+# Bellman-Ford makes exactly $n \cdot |E|$ relaxation checks
 
-Because a source exists, the exact number of relaxation checks is `n * |edges|`.
+**Bellman-Ford makes exactly $n \cdot |E|$ relaxation checks.** For every list $E$ of weighted
+edges on $n$ vertices and every source $s$, Bellman-Ford run on $E$ from $s$ charges exactly
+$n \cdot |E|$ relaxation checks, where $|E|$ is the length of $E$ counting repeated edges.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Edge](../basic/edge.md)
-- [Result](../basic/result.md)
+- [Bellman-Ford cost counters](../basic/cost.md)
+- [Weighted directed edge](../basic/edge.md)
+- [Bellman–Ford result](../basic/result.md)
 - [Bellman Ford](../correctness/bellman-ford.md)
 
 ## Proof depends on
 
-- [Bellman Ford relaxation Checks](bellman-ford-relaxation-checks.md)
+- [Relaxation checks of Bellman-Ford pass by pass](bellman-ford-relaxation-checks.md)
 
 ## Sources
 

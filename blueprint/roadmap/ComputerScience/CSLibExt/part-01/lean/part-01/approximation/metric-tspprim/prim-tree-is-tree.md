@@ -22,7 +22,7 @@ the complete graph.
 - [Complete graph as an ordered adjacency](complete-adjacency.md)
 - [Neighbours in the complete adjacency](mem-complete-adjacency.md)
 - [Symmetrized edge weights](sym-weight.md)
-- [Prim is Tree](../../graph/prim/correctness/prim-is-tree.md)
+- [Prim's algorithm returns a tree](../../graph/prim/correctness/prim-is-tree.md)
 
 ## Sources
 

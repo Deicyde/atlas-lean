@@ -26,7 +26,7 @@ $\mathtt{let}\ x = e_1\ \mathtt{in}\ e_2$ has type $\tau_2$ in $s\Gamma$.
 - [Applying a type substitution to a scheme](../typing/subst-ty.md)
 - [Monotypes](../typing/ty.md)
 - [Generalization of a monotype](../typing/gen.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
 
 ## Proof depends on
 
@@ -40,8 +40,8 @@ $\mathtt{let}\ x = e_1\ \mathtt{in}\ e_2$ has type $\tau_2$ in $s\Gamma$.
 - [Substitution lemma](../typing/subst-2.md)
 - [Strict upper bound of a finite set of naturals](../typing/above.md)
 - [Renaming step of the substitution lemma](../typing/gen-subst-more-general.md)
-- [Term](../../../../part-02/unification/basic/term.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Sources
 

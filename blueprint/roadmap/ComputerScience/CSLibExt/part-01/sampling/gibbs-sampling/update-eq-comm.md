@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.MachineLearning.Sampling.update_eq_comm
 ---
 
-# Update eq comm
+# Symmetry of differing in one coordinate
 
-Two states that differ at most in coordinate `i`: resetting the other one's coordinate `i`
-recovers each from the other.
+**Symmetry of differing in one coordinate.** For functions $x, y : \iota \to S$ and a coordinate
+$i \in \iota$, if setting coordinate $i$ of $x$ to $y(i)$ gives $y$, then setting coordinate $i$ of
+$y$ to $x(i)$ gives $x$.
 
 ## Depends on
 

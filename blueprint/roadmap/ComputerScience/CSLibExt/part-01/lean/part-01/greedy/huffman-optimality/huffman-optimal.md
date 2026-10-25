@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.huffman_optimal
 ---
 
-# Huffman optimal
+# Optimality of Huffman coding
 
-The tree returned by `huffman` globally minimizes weighted path length
-among full prefix-code trees with exactly the input's weighted symbols.
+**Optimality of Huffman coding.** Let $L$ be a list of symbol–weight pairs with
+natural-number weights, over a symbol type with decidable equality, and suppose the Huffman
+construction returns the tree $t$ on $L$. Then every coding tree $t'$ (a full binary tree whose
+leaves carry symbols and weights) whose weighted leaves, listed left to right, form a permutation
+of $L$ has weighted path length at least that of $t$.
 
 ## Depends on
 
-- [Huffman Tree](../huffman/huffman-tree.md)
-- [Admissible](admissible.md)
-- [Weighted Path Length](../huffman/weighted-path-length.md)
-- [Huffman](../huffman/huffman.md)
+- [Huffman tree](../huffman/huffman-tree.md)
+- [Admissible Huffman trees](admissible.md)
+- [Weighted path length](../huffman/weighted-path-length.md)
+- [Huffman's algorithm](../huffman/huffman.md)
 
 ## Proof depends on
 
-- [Huffman merge Trace](huffman-merge-trace.md)
-- [Huffman optimal of merge Trace](huffman-optimal-of-merge-trace.md)
+- [Huffman's construction follows a two-minimum merge trace](huffman-merge-trace.md)
+- [A two-minimum merge trace gives a minimum weighted path length](huffman-optimal-of-merge-trace.md)
 
 ## Sources
 

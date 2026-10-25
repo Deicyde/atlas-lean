@@ -6,18 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.validEdgesFrom
 ---
 
-# Valid Edges From
+# Validating an edge list from a given ordinal
 
-Validate a suffix whose first edge has the supplied input ordinal.
+**Validating an edge list from a given ordinal.** Given $n$, a starting ordinal $o$ and a
+list of raw edges $e_0, e_1, \dots, e_{m-1}$, this returns, in input order, the weighted edges on
+the vertices $\{0, \dots, n-1\}$ obtained from those $e_k$ whose two endpoints are both less than
+$n$; each keeps the endpoints and weight of $e_k$ and carries the ordinal $o + k$. Edges with an
+endpoint at least $n$ are omitted, but they still count towards the ordinals of later edges.
 
 ## Depends on
 
-- [Raw Edge](raw-edge.md)
-- [Weighted Edge](weighted-edge.md)
+- [Raw input edge](raw-edge.md)
+- [Weighted edge](weighted-edge.md)
 
 ## Proof depends on
 
-- [Decode At](decode-at.md)
+- [Decoding a raw edge at an ordinal](decode-at.md)
 
 ## Sources
 

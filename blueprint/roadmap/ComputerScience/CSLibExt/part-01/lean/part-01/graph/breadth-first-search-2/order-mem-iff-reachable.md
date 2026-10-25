@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BreadthFirstSearch.order_mem_iff_reachable
 ---
 
-# Order mem iff reachable
+# BFS lists exactly the reachable vertices
 
-A vertex occurs in first-discovery order exactly when it is reachable.
+**BFS lists exactly the reachable vertices.** For every finite directed graph $G$ with ordered
+adjacency lists and all vertices $s$ and $v$, the vertex $v$ occurs in the first-discovery order
+of breadth-first search from $s$ if and only if $v$ is reachable from $s$ in $G$.
 
 ## Depends on
 
-- [BFSResult](bfsresult.md)
-- [Bfs](bfs.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
+- [Result of breadth-first search](bfsresult.md)
+- [Breadth-first search](bfs.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
-- [Edge](../directed-adjacency-2/edge.md)
-- [Walk](../directed-adjacency-2/walk.md)
-- [Reachable iff exists walk](../directed-adjacency-2/reachable-iff-exists-walk.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
+- [Walks of a given length](../directed-adjacency-2/walk.md)
+- [Reachability by walks](../directed-adjacency-2/reachable-iff-exists-walk.md)
 - [Contents of a two-list queue](../../data-structures/part-01/queue/semantics/contents.md)
 - [Enqueueing appends to the contents](../../data-structures/part-01/queue/semantics/contents-enqueue.md)
 - [A successful dequeue splits off the first element](../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)

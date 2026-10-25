@@ -5,11 +5,12 @@ statement: formalized
 lean: Cslib.Crypto.PublicKey.ElGamal.Adversary
 ---
 
-# Adversary
+# ElGamal eavesdropping adversary
 
-An eavesdropping adversary with random coins in `R`: from the public key it chooses two
-messages, and from the public key and the challenge ciphertext it guesses which one was
-encrypted.
+**ElGamal eavesdropping adversary.** Given a type $G$ of public keys and messages and a type
+$R$ of random coins, an eavesdropping adversary consists of a choice function, which maps a public
+key $h \in G$ and coins $r \in R$ to a pair of messages in $G \times G$, and a guessing function,
+which maps a public key $h \in G$, a ciphertext in $G \times G$ and coins $r \in R$ to a bit.
 
 ## Depends on
 

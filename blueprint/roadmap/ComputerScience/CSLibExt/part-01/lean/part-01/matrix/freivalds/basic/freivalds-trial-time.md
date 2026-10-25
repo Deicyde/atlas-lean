@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsTrial_time
 ---
 
-# Freivalds Trial time
+# Cost of the Freivalds trial
 
-The arithmetic counts belong to the same execution that returns the
-acceptance Boolean, including all zero-initialized accumulator updates.
+**Cost of the Freivalds trial.** For $n \times n$ matrices $A$, $B$, $C$ over
+$\mathbb{F}_2$ and every seed $r \in \mathbb{F}_2^n$, the Freivalds trial performs exactly
+$3n^2$ scalar multiplications and exactly $3n^2$ scalar additions.
+
+These counts belong to the same run that returns the acceptance bit and include the additions
+into the zero-initialized accumulators.
 
 ## Depends on
 
-- [Freivalds Trial](freivalds-trial.md)
+- [Freivalds trial](freivalds-trial.md)
 
 ## Proof depends on
 
-- [Rectangular Matrix Accumulate](../../multiply/rectangular-matrix-accumulate.md)
-- [Rectangular Matrix Accumulate time](../../multiply/rectangular-matrix-accumulate-time.md)
+- [Rectangular matrix accumulation](../../multiply/rectangular-matrix-accumulate.md)
+- [Operation count of rectangular matrix accumulation](../../multiply/rectangular-matrix-accumulate-time.md)
 
 ## Sources
 

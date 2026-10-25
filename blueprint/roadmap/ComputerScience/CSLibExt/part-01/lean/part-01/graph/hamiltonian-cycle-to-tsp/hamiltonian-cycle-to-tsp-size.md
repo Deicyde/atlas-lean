@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Graph.hamiltonianCycleToTsp_size
 ---
 
-# Hamiltonian Cycle To Tsp size
+# The Hamiltonian-cycle to TSP converter preserves length
 
-The converter preserves the number of input cells, including malformed arrays.
+**The Hamiltonian-cycle to TSP converter preserves length.** For every Boolean array $x$, the
+array output by the Hamiltonian-cycle to TSP converter on $x$ has the same length as $x$.
+
+No assumption that $x$ encodes a graph is needed.
 
 ## Depends on
 
-- [Hamiltonian Cycle To Tsp](hamiltonian-cycle-to-tsp.md)
+- [Hamiltonian-cycle to TSP converter](hamiltonian-cycle-to-tsp.md)
 
 ## Sources
 

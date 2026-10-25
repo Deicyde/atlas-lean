@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Unification.eqSize
 ---
 
-# Eq Size
+# Total size of a list of equations
 
-The total size of a list of equations.
+**Total size of a list of equations.** The total size of a list of equations is the sum,
+over all its equations, of the sizes of the two sides, where the size of a term is its number
+of variable, constant and node symbols.
 
 ## Depends on
 
-- [Equations](equations.md)
+- [Lists of equations](equations.md)
 
 ## Proof depends on
 
-- [Term](term.md)
-- [Size](size.md)
+- [Terms for unification](term.md)
+- [Size of a term](size.md)
 
 ## Sources
 

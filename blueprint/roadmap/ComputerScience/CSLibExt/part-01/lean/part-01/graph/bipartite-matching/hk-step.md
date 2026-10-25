@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.hkStep
 ---
 
-# Hk Step
+# Hopcroft–Karp step
 
-Flip all the paths of a phase at once; `none` if the phase found none.
+**Hopcroft–Karp step.** Given a partner array $\mu$, consider the phase of $\mu$, a list of
+paths, each a list of pairs. If the phase is empty, the step returns nothing; otherwise it returns
+the flip of $\mu$ along the concatenation of all the paths of the phase.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Flip](flip.md)
-- [Phase](phase.md)
+- [Flipping a list of pairs](flip.md)
+- [Hopcroft–Karp phase](phase.md)
 
 ## Sources
 

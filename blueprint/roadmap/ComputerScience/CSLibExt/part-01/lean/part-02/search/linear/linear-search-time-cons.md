@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.linearSearch_time_cons
 ---
 
-# Linear Search time cons
+# Cost recurrence for linear search
 
-The explicit unit-cost recurrence: the head predicate costs one unit, and the tail is searched
-only when the head fails.
+**Cost recurrence for linear search.** For every predicate $p$ on a type $\alpha$, every
+$x \in \alpha$ and every list $T$ over $\alpha$, the cost of linear search for $p$ on the list
+with head $x$ and tail $T$ is $1$ if $p(x)$ is true, and $1$ plus the cost of linear search for
+$p$ on $T$ if $p(x)$ is false. The head costs one evaluation of $p$, and the tail is searched only
+when the head fails.
 
 ## Depends on
 
-- [Linear Search](linear-search.md)
+- [Linear search](linear-search.md)
 
 ## Proof depends on
 
-- [Ret linear Search](ret-linear-search.md)
+- [Linear search returns the first satisfying index](ret-linear-search.md)
 
 ## Sources
 

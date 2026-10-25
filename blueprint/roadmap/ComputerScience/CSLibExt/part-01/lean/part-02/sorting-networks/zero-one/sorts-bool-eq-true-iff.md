@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.sortsBool_eq_true_iff
 ---
 
-# Sorts Bool eq true iff
+# The Boolean sorting test is correct
 
-`sortsBool` decides whether a network sorts every Boolean input.
+**The Boolean sorting test is correct.** A comparator network passes the Boolean sorting test
+if and only if it sorts inputs over the Booleans, that is, for every assignment of a Boolean
+value to each wire, the output of the network is monotone in the wire order.
 
 ## Depends on
 
-- [Network](network.md)
-- [Sorts](sorts.md)
-- [Sorts Bool](sorts-bool.md)
+- [Comparator network](network.md)
+- [Networks that sort](sorts.md)
+- [Boolean sorting test](sorts-bool.md)
 
 ## Proof depends on
 
-- [Run](run.md)
+- [Running a comparator network](run.md)
 
 ## Sources
 

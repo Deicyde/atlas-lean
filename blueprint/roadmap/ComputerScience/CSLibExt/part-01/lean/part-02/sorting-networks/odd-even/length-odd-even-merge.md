@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.OddEven.length_oddEvenMerge
 ---
 
-# Length odd Even Merge
+# Size of the odd-even merger
 
-The merger on `2 ^ (k + 1)` wires has `k 2 ^ k + 1` comparators.
+**Size of the odd-even merger.** For every $k \in \mathbb{N}$, Batcher's odd-even merger on
+$2^{k+1}$ wires consists of exactly $k \cdot 2^k + 1$ comparators.
 
 ## Depends on
 
-- [Odd Even Merge](odd-even-merge.md)
+- [Batcher's odd-even merger](odd-even-merge.md)
 
 ## Proof depends on
 
-- [Final Layer](final-layer.md)
-- [Relabel](relabel.md)
+- [Last layer of the odd-even merger](final-layer.md)
+- [Relabeling the wires of a comparator list](relabel.md)
 
 ## Sources
 

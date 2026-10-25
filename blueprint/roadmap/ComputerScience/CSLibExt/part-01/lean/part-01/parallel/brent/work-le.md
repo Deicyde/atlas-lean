@@ -8,13 +8,15 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.work_le
 
 # The work law
 
-**The work law**: `p` processors need at least `n / p` steps, `n ≤ p * length`.
+**The work law.** For a computation DAG on $n$ tasks, every schedule of it on $p$ processors
+that takes $T$ steps satisfies $n \le p T$. In particular, for $p > 0$ the schedule takes at
+least $n / p$ steps.
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 - [Schedule](schedule.md)
-- [Length](length.md)
+- [Length of a schedule](length.md)
 
 ## Sources
 

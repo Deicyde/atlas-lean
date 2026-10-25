@@ -23,7 +23,7 @@ This node has no prerequisites.
 
 - [Left endpoint of a segment](left.md)
 - [Right endpoint of a segment](right.md)
-- [Direction](../segment-intersection/direction.md)
+- [Direction of three points](../segment-intersection/direction.md)
 
 ## Sources
 

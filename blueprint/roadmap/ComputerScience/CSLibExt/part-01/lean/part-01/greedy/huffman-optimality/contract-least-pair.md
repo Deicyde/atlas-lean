@@ -7,22 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanWeightTree.contractLeastPair
 ---
 
-# Contract Least Pair
+# Contracting the two least weights
 
-Contract the two least weights after an independently derived sibling
-exchange argument on structural tree cost.
+**Contracting the two least weights.** Let $T$ be a weight tree, let $a$ and $b$ be real
+numbers and let $M$ be a multiset of real numbers such that the multiset of leaf weights of $T$ is
+$\{a, b\} + M$, $a \le b$, and $b \le w$ for every $w \in M$. Then there is a weight tree $T'$
+whose multiset of leaf weights is $\{a + b\} + M$ and whose path cost satisfies
+$\mathrm{cost}(T') + a + b \le \mathrm{cost}(T)$, where $\mathrm{cost}$ denotes path cost.
+
+The proof is a sibling exchange argument on the structural path cost.
 
 ## Depends on
 
 - [Huffman Weight Tree](huffman-weight-tree.md)
-- [Path Cost](path-cost.md)
-- [Weights](weights.md)
+- [Weighted external path length of a Huffman weight tree](path-cost.md)
+- [Multiset of leaf weights](weights.md)
 
 ## Proof depends on
 
-- [Exists cherry contraction](exists-cherry-contraction.md)
-- [Height](height.md)
-- [Raise Pair](raise-pair.md)
+- [Contracting a deepest sibling pair](exists-cherry-contraction.md)
+- [Height of a weight tree](height.md)
+- [Raising two leaf weights in a bounded-height tree](raise-pair.md)
 
 ## Sources
 

@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.Reachable
 ---
 
-# Reachable
+# Reachability in a directed graph
 
-Reflexive-transitive directed reachability.
+**Reachability in a directed graph.** For a directed adjacency graph $G$ and vertices $s$
+and $t$, $t$ is reachable from $s$ when the pair $(s, t)$ lies in the reflexive-transitive
+closure of the edge relation of $G$: either $s = t$, or a finite sequence of edges of $G$ leads
+from $s$ to $t$.
 
 ## Depends on
 
-- [Directed Adjacency](directed-adjacency.md)
+- [Directed adjacency graph](directed-adjacency.md)
 
 ## Proof depends on
 
-- [Edge](edge.md)
+- [Edge of a directed adjacency graph](edge.md)
 
 ## Sources
 

@@ -6,17 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BreadthFirstSearch.bfsWithParents_ret
 ---
 
-# Bfs With Parents ret
+# Breadth-first search with parents returns the ordinary BFS result
 
-Erasing the timing and predecessor table gives the whole existing ordered BFS result.
+**Breadth-first search with parents returns the ordinary BFS result.** For every finite
+directed graph $G$ with ordered adjacency lists and every source vertex $s$, the output of
+breadth-first search with parents from $s$ in $G$, with its cost and its predecessor table
+forgotten, equals the result of ordinary FIFO breadth-first search from $s$ in $G$: the same
+distance table and the same first-discovery order.
 
 ## Depends on
 
-- [BFSForest](../parents/internal/bfsforest.md)
-- [BFSResult](../../breadth-first-search-2/bfsresult.md)
-- [Bfs](../../breadth-first-search-2/bfs.md)
-- [Bfs With Parents](../parents/internal/bfs-with-parents.md)
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
+- [Breadth-first search forest](../parents/internal/bfsforest.md)
+- [Result of breadth-first search](../../breadth-first-search-2/bfsresult.md)
+- [Breadth-first search](../../breadth-first-search-2/bfs.md)
+- [Breadth-first search with parent pointers](../parents/internal/bfs-with-parents.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
 
 ## Sources
 

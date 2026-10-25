@@ -7,9 +7,12 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.quickselect_eq_some_of_count_rank
 ---
 
-# Quickselect eq some of count rank
+# Rank inequalities determine the quickselect value
 
-The duplicate-safe rank inequalities characterize a successful quickselect value.
+**Rank inequalities determine the quickselect value.** Let $L$ be a list over a linear
+order, let $k$ be a natural number and let $x$ be an element. Counting entries of $L$ with
+multiplicity, if the number of entries less than $x$ is at most $k$ and $k$ is less than the
+number of entries at most $x$, then quickselect on $L$ with zero-based rank $k$ returns $x$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ The duplicate-safe rank inequalities characterize a successful quickselect value
 
 ## Proof depends on
 
-- [Quickselect eq get Elem? insertion Sort](quickselect-eq-get-elem-insertion-sort.md)
+- [Quickselect agrees with sorting](quickselect-eq-get-elem-insertion-sort.md)
 
 ## Sources
 

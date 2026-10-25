@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.linearSearch_time_eq_of_ret_eq_some
 ---
 
-# Linear Search time eq of ret eq some
+# Cost of a successful linear search
 
-A successful search at index `i` performs exactly `i + 1` predicate evaluations.
+**Cost of a successful linear search.** For every predicate $p$ on a type $\alpha$, every
+list $L$ over $\alpha$ and every natural number $i$, if linear search for $p$ on $L$ returns the
+index $i$, then its cost is $i + 1$: it evaluates $p$ exactly $i + 1$ times.
 
 ## Depends on
 
-- [Linear Search](linear-search.md)
+- [Linear search](linear-search.md)
 
 ## Proof depends on
 
-- [Linear Search time cons](linear-search-time-cons.md)
-- [Ret linear Search](ret-linear-search.md)
+- [Cost recurrence for linear search](linear-search-time-cons.md)
+- [Linear search returns the first satisfying index](ret-linear-search.md)
 
 ## Sources
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.minMax_nil
 ---
 
-# Min Max nil
+# The min–max algorithm on the empty list
 
-Empty input performs no element comparisons.
+**The min–max algorithm on the empty list.** On the empty list, the simultaneous minimum and
+maximum algorithm returns no result and makes no comparisons.
 
 ## Depends on
 
-- [Min Max](min-max.md)
+- [Simultaneous minimum and maximum](min-max.md)
 
 ## Sources
 

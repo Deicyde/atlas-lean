@@ -4,9 +4,9 @@ navigation: module
 
 # Costs
 
-- [Bellman Ford relaxation Checks](bellman-ford-relaxation-checks.md)
-- [Bellman Ford relaxation Checks eq mul](bellman-ford-relaxation-checks-eq-mul.md)
-- [Bellman Ford cycle Witness Steps le](bellman-ford-cycle-witness-steps-le.md)
-- [Bellman Ford cycle Witness Steps eq zero](bellman-ford-cycle-witness-steps-eq-zero.md)
-- [Bellman Ford cycle Witness Steps eq](bellman-ford-cycle-witness-steps-eq.md)
-- [Bellman Ford total le](bellman-ford-total-le.md)
+- [Relaxation checks of Bellman-Ford pass by pass](bellman-ford-relaxation-checks.md)
+- [Bellman-Ford makes exactly $n \cdot |E|$ relaxation checks](bellman-ford-relaxation-checks-eq-mul.md)
+- [Bellman-Ford spends at most $3n$ witness steps](bellman-ford-cycle-witness-steps-le.md)
+- [Bellman-Ford spends no witness steps when it returns distances](bellman-ford-cycle-witness-steps-eq-zero.md)
+- [Witness cost of a returned negative cycle](bellman-ford-cycle-witness-steps-eq.md)
+- [Bellman-Ford makes at most $4 n |E|$ counted steps](bellman-ford-total-le.md)

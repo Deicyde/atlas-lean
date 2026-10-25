@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Horn.leastModel
 ---
 
-# Least Model
+# Least model candidate
 
-The least model candidate: true exactly on the forward-chaining closure of `∅`.
+**Least model candidate.** For a CNF formula $\varphi$, the least model candidate is the
+assignment that makes a variable true exactly when it lies in the forward-chaining closure of
+the empty set under $\varphi$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ The least model candidate: true exactly on the forward-chaining closure of `∅`
 
 ## Proof depends on
 
-- [Close](close.md)
+- [Forward-chaining closure](close.md)
 
 ## Sources
 

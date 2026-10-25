@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.greedy_length
 ---
 
-# CLRS Theorem 27.1
+# The work-span bound for greedy schedules
 
-**CLRS Theorem 27.1** (third edition): a greedy schedule takes `T ≤ n / p + D` steps,
-`p T ≤ n + p D`; a weakening of `greedy_length_le`.
+**The work-span bound for greedy schedules.** Let $G$ be a computation DAG with $n$ tasks and
+span $D$, and let $S$ be a greedy schedule of $G$ on $p$ processors taking $T$ steps. Then
+$pT \le n + pD$, that is, $T \le n/p + D$ when $p \ge 1$.
+
+This is a weakening of the greedy scheduling bound $pT \le n + (p - 1)D$.
 
 ## Depends on
 
-- [Dag](../brent/dag.md)
+- [Computation DAG](../brent/dag.md)
 - [Schedule](../brent/schedule.md)
-- [Greedy](greedy.md)
-- [Length](../brent/length.md)
-- [Span](../brent/span.md)
+- [Greedy schedule](greedy.md)
+- [Length of a schedule](../brent/length.md)
+- [Span of a computation DAG](../brent/span.md)
 
 ## Proof depends on
 
@@ -26,3 +29,4 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.greedy_length
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Parallel.GreedyScheduler](../../../../../../../../sources/v2/CSLibExt.md)
+- CLRS, third edition, Theorem 27.1.

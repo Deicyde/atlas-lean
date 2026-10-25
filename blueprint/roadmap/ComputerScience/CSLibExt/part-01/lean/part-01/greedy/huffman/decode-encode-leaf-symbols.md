@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.decode_encode_leafSymbols
 ---
 
-# Decode encode leaf Symbols
+# Decoding inverts encoding
 
-Encoding and then decoding any leaf-subtype message is a round trip.
+**Decoding inverts encoding.** Let $T$ be a Huffman tree and let $s_1, \dots, s_n$
+($n \ge 0$) be symbols occurring at leaves of $T$. Encoding $s_1, \dots, s_n$ with $T$ and then
+decoding the resulting bit string with $T$, failing if the encoding fails, returns
+$s_1, \dots, s_n$. In particular, the encoding succeeds.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Leaf Symbol](leaf-symbol.md)
-- [Decode?](decode.md)
-- [Encode?](encode.md)
-- [Symbols](symbols.md)
+- [Huffman tree](huffman-tree.md)
+- [Leaf symbols of a Huffman tree](leaf-symbol.md)
+- [Decoding a bit string](decode.md)
+- [Huffman encoding of a message](encode.md)
+- [Leaf symbols of a Huffman tree](symbols.md)
 
 ## Proof depends on
 
-- [Code Of Leaf](code-of-leaf.md)
-- [Decode code Of Leaf](decode-code-of-leaf.md)
-- [Encode code Of Leaf](encode-code-of-leaf.md)
+- [Codeword of a leaf symbol](code-of-leaf.md)
+- [Decoding inverts the leaf code](decode-code-of-leaf.md)
+- [Encoding concatenates leaf codewords](encode-code-of-leaf.md)
 
 ## Sources
 

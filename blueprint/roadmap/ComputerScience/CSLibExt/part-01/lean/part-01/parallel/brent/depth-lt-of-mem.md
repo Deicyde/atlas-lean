@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.depth_lt_of_mem
 ---
 
-# Depth lt of mem
+# Predecessors have smaller depth
 
-A predecessor is strictly shallower.
+**Predecessors have smaller depth.** In a computation DAG, if $u$ is a predecessor of $v$,
+then the depth of $u$ is strictly less than the depth of $v$.
 
 ## Depends on
 
-- [Dag](dag.md)
-- [Depth](depth.md)
+- [Computation DAG](dag.md)
+- [Depth of a task in a computation DAG](depth.md)
 
 ## Sources
 

@@ -19,14 +19,14 @@ a scheme through its free type variables only.
 - [Instantiation of a type scheme](inst.md)
 - [Applying a type substitution to a scheme](subst-ty.md)
 - [Monotypes](ty.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Proof depends on
 
 - [Evaluation of a type scheme](eval.md)
 - [Monotypes as type schemes](to-scheme.md)
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Sources
 

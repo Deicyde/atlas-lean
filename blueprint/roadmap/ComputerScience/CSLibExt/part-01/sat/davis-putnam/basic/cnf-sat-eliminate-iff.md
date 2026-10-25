@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.cnfSat_eliminate_iff
 ---
 
-# Davis-Putnam step
+# Davis-Putnam elimination preserves satisfiability
 
-**Davis-Putnam step**: eliminating a variable preserves satisfiability.
+**Davis-Putnam elimination preserves satisfiability.** For every variable $x$ and every CNF
+formula $\varphi$, the formula obtained from $\varphi$ by eliminating $x$ is satisfiable if and
+only if $\varphi$ is satisfiable.
 
 ## Depends on
 
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Eliminate](eliminate.md)
+- [Davis-Putnam elimination of a variable](eliminate.md)
 - [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
-- [Exists satisfies update of satisfies eliminate](exists-satisfies-update-of-satisfies-eli.md)
-- [Satisfies eliminate](satisfies-eliminate.md)
+- [Completeness of a Davis-Putnam step](exists-satisfies-update-of-satisfies-eli.md)
+- [Soundness of a Davis-Putnam step](satisfies-eliminate.md)
 - [Cnf Sat iff exists satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources

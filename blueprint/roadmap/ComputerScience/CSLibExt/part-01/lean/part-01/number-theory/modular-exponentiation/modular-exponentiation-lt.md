@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_lt
 ---
 
-# Modular Exponentiation lt
+# Modular exponentiation returns a value below the modulus
 
-Positive-exponent results lie strictly below a positive modulus.
+**Modular exponentiation returns a value below the modulus.** For natural numbers $a$, $b$,
+$n$ with $b > 0$ and $n > 0$, the value returned by modular exponentiation on base $a$,
+exponent $b$ and modulus $n$ is less than $n$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation correct](modular-exponentiation-correct.md)
+- [Correctness of modular exponentiation](modular-exponentiation-correct.md)
 
 ## Sources
 

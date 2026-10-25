@@ -6,18 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.ListPrefix.segSum_add
 ---
 
-# Seg Sum add
+# Segment sums add up
 
-Segments add up: the first `a + b` nodes are the first `a`, then `b` from where those end.
+**Segment sums add up.** Let $\mathrm{succ}$ be a partial successor function on nodes
+$0, \dots, n-1$ and $x_v$ values in an additive monoid $M$. For $k \in \mathbb{N}$ write
+$S_k(v)$ for the sum, in list order, of the values of the nodes reached from $v$ in
+$0, 1, \dots, k - 1$ steps along $\mathrm{succ}$ (a missing node contributes $0$). Then for all
+$a, b \in \mathbb{N}$ and every node $v$, $S_{a+b}(v) = S_a(v) + S_b(u)$ if the node $u$ reached
+from $v$ in $a$ steps exists, and $S_{a+b}(v) = S_a(v)$ otherwise.
 
 ## Depends on
 
-- [Seg Sum](seg-sum.md)
-- [Jump](../list-ranking/jump.md)
+- [Segment sums](seg-sum.md)
+- [Iterated successor](../list-ranking/jump.md)
 
 ## Proof depends on
 
-- [Step Val](step-val.md)
+- [The value $k$ steps ahead](step-val.md)
 
 ## Sources
 

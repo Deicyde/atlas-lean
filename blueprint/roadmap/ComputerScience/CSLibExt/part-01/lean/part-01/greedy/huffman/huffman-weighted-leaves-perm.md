@@ -7,36 +7,39 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.huffman_weightedLeaves_perm
 ---
 
-# Huffman weighted Leaves perm
+# Huffman's construction keeps the weighted leaves
 
-A successful construction preserves every weighted input symbol exactly once.
+**Huffman's construction keeps the weighted leaves.** Let $L$ be a list of pairs $(a, w)$ of
+a symbol $a$ and a natural-number weight $w$, with decidable equality on symbols. If the Huffman
+construction on $L$ succeeds with a tree $T$, then the list of weighted leaves of $T$, read left
+to right, is a permutation of $L$.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Weighted Leaves](weighted-leaves.md)
-- [Huffman](huffman.md)
+- [Huffman tree](huffman-tree.md)
+- [Weighted leaves of a Huffman tree](weighted-leaves.md)
+- [Huffman's algorithm](huffman.md)
 
 ## Proof depends on
 
-- [Huffman Priority](huffman-priority.md)
-- [Huffman Two Min](huffman-two-min.md)
-- [Huffman Work Item](huffman-work-item.md)
+- [Huffman priority](huffman-priority.md)
+- [Result of a two-minimum extraction](huffman-two-min.md)
+- [Huffman work item](huffman-work-item.md)
 - [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 - [Extracting the minimum of a binary min-heap](../../data-structures/part-02/binary-heap/extract-min.md)
 - [Insertion into a binary min-heap](../../data-structures/part-02/binary-heap/push.md)
-- [Extract Two Min?](extract-two-min.md)
-- [Huffman Forest Leaves](huffman-forest-leaves.md)
-- [Huffman Heap Of Forest](huffman-heap-of-forest.md)
-- [Huffman Loop](huffman-loop.md)
-- [Huffman Table Forest](huffman-table-forest.md)
-- [Huffman Table Forest initial](huffman-table-forest-initial.md)
-- [Huffman Table Forest push some](huffman-table-forest-push-some.md)
-- [Initial Huffman Forest](initial-huffman-forest.md)
-- [Initial Huffman Forest From](initial-huffman-forest-from.md)
-- [Initial Huffman Table](initial-huffman-table.md)
-- [Take Serial?](take-serial.md)
-- [Take Serial? item](take-serial-item.md)
+- [Extracting two minima from a Huffman heap](extract-two-min.md)
+- [Weighted leaves of a Huffman work forest](huffman-forest-leaves.md)
+- [Heap of a Huffman work forest](huffman-heap-of-forest.md)
+- [Bounded Huffman merge loop](huffman-loop.md)
+- [Work forest of a table](huffman-table-forest.md)
+- [The initial table holds the initial forest](huffman-table-forest-initial.md)
+- [Appending to the table appends to the forest](huffman-table-forest-push-some.md)
+- [Initial Huffman forest](initial-huffman-forest.md)
+- [Numbered leaf work items](initial-huffman-forest-from.md)
+- [Initial Huffman table](initial-huffman-table.md)
+- [Removing a work item by serial](take-serial.md)
+- [Removing a serial removes one work item from the forest](take-serial-item.md)
 
 ## Sources
 

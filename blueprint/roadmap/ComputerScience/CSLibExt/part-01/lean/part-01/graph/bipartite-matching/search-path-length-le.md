@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.searchPath_length_le
 ---
 
-# Search Path length le
+# Length bound for search paths
 
-What `searchPath` at level `k` finds has at most `k + 1` pairs.
+**Length bound for search paths.** For every set of used left vertices, every level $k$,
+every right vertex $j$ and every set of dead right vertices, a path found by the search at level
+$k$ from $j$ has at most $k + 1$ pairs.
 
 ## Depends on
 
-- [Search Path](search-path.md)
+- [Depth-first search of a Hopcroft–Karp phase](search-path.md)
 
 ## Proof depends on
 
-- [Layers](layers.md)
-- [Partner Of](partner-of.md)
-- [Search Path mono](search-path-mono.md)
-- [Try Preds](try-preds.md)
-- [Try Preds some](try-preds-some.md)
+- [Alternating breadth-first layers](layers.md)
+- [Partner of a left vertex](partner-of.md)
+- [The dead set of a search only grows](search-path-mono.md)
+- [Trying the candidate predecessors of a right vertex](try-preds.md)
+- [A path found by trying candidates comes from one candidate](try-preds-some.md)
 
 ## Sources
 

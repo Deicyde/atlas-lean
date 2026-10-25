@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.StringMatching.exists_matchAt_iff_isInfix
 ---
 
-# Exists match At iff is Infix
+# A pattern occurs in a text iff it matches at some offset
 
-A pattern occurs as an infix exactly when it matches at some bounded offset.
+**A pattern occurs in a text iff it matches at some offset.** For lists $p$ and $t$, there
+is an offset $k$ such that the pattern $p$ matches the text $t$ at $k$ if and only if $p$ is an
+infix of $t$, that is, $t$ is the concatenation of some list $u$, then $p$, then some list $v$.
 
 ## Depends on
 
-- [Match At](match-at.md)
+- [Pattern match at an offset](match-at.md)
 
 ## Sources
 

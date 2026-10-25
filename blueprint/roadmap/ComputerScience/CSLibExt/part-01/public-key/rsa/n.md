@@ -5,13 +5,13 @@ statement: formalized
 lean: Cslib.Crypto.PublicKey.RSA.Key.n
 ---
 
-# N
+# RSA modulus
 
-The modulus `n = p q`.
+**RSA modulus.** The modulus of an RSA key with primes $p$ and $q$ is $n = pq$.
 
 ## Depends on
 
-- [Key](key.md)
+- [RSA key](key.md)
 
 ## Sources
 

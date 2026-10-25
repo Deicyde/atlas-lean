@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Kernel Matrix](kernel-matrix.md)
+- [Kernel matrix](kernel-matrix.md)
 
 ## Sources
 

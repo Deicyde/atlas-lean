@@ -6,17 +6,18 @@ statement: formalized
 lean: MathlibExt.ComputerScience.GraphIsomorphismQuasipolynomialWanted.encodePair
 ---
 
-# Encode Pair
+# Bit encoding of a pair of graph codes
 
-Bit serialization of a graph pair: concatenation of the two codes.
+**Bit encoding of a pair of graph codes.** The bit encoding of a pair $(G, H)$ of graph codes
+is the bit encoding of $G$ followed by the bit encoding of $H$.
 
 ## Depends on
 
-- [Graph Code](graph-code.md)
+- [Graph codes](graph-code.md)
 
 ## Proof depends on
 
-- [Encode](encode.md)
+- [Bit encoding of a graph code](encode.md)
 
 ## Sources
 

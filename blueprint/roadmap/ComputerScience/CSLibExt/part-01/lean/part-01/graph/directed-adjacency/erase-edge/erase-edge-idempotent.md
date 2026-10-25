@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.eraseEdge_idempotent
 ---
 
-# Erase Edge idempotent
+# Erasing an edge twice gives the same out-neighbour lists
 
-Repeating the same erasure leaves every observable adjacency row unchanged.
+**Erasing an edge twice gives the same out-neighbour lists.** For every directed-adjacency
+graph $G$ and vertices $s$ and $t$, erasing the edge $s \to t$ from $G$ and then erasing it
+again gives, at every vertex, the same out-neighbour list as erasing it once.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Erase Edge](erase-edge.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Erasing a directed edge](erase-edge.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ evaluation of $\sigma_1$ to the evaluation of $\sigma_2$.
 
 ## Proof depends on
 
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Sources
 

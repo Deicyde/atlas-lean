@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.span
 ---
 
-# Span
+# Span of the Kogge–Stone scan
 
-The span: `K` rounds, each one parallel step.
+**Span of the Kogge–Stone scan.** The span of $K$ rounds of the scan is $K$: each round is
+one parallel step.
 
 ## Depends on
 

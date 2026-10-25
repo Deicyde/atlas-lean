@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.forestRoot_mem_roots
 ---
 
-# Forest Root mem roots
+# DFS forest roots are scheduled roots
 
-Every actual forest root came from the supplied root schedule.
+**DFS forest roots are scheduled roots.** Let $G$ be a finite directed graph given by ordered
+adjacency lists, let $r$ be a list of root vertices, and let $v$ be a vertex. If $v$ is a forest
+root of the left-first depth-first search of $G$ from $r$, then $v$ occurs in $r$.
 
 ## Depends on
 
-- [Forest Roots](forest-roots.md)
-- [Dfs](dfs.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Roots of a DFS forest](forest-roots.md)
+- [Left-first depth-first search](dfs.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Before](before.md)
+- [Occurring before in a list](before.md)
 - [Steps](steps.md)
-- [Parent Rel](parent-rel.md)
-- [Traversal](traversal.md)
-- [Forest Root has no parent](forest-root-has-no-parent.md)
-- [Edge](../directed-adjacency-2/edge.md)
+- [Parent relation of a list of pairs](parent-rel.md)
+- [Depth-first traversal record](traversal.md)
+- [A DFS forest root has no parent](forest-root-has-no-parent.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
 
 ## Sources
 

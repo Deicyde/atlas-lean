@@ -15,7 +15,7 @@ $\mathrm{DIRECTION}(p, q, r) = (q_x - p_x)\,(y_{pq}(r_x) - r_y)$.
 
 ## Depends on
 
-- [Direction](../segment-intersection/direction.md)
+- [Direction of three points](../segment-intersection/direction.md)
 - [Height of a line at an abscissa](line-y.md)
 
 ## Sources

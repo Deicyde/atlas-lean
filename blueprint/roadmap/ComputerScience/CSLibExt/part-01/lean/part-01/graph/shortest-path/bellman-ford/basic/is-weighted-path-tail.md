@@ -12,8 +12,8 @@ Removing the first edge leaves a weighted path from that edge's target.
 
 ## Depends on
 
-- [Edge](edge.md)
-- [Is Weighted Path](is-weighted-path.md)
+- [Weighted directed edge](edge.md)
+- [Weighted path in an edge list](is-weighted-path.md)
 
 ## Sources
 

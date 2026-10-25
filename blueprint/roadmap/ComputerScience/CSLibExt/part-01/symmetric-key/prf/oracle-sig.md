@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Crypto.PRF.OracleSig
 ---
 
-# Oracle Sig
+# The signature of one oracle
 
-The polynomial functor of one oracle: an operation is a query `x : X`, answered by `y : Y`.
+**The signature of one oracle.** For types $X$ and $Y$, this is the polynomial functor whose
+operations are the queries $x \in X$, each answered by an element of $Y$.
 
 ## Depends on
 

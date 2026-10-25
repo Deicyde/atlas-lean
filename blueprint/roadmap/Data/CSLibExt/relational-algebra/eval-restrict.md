@@ -13,7 +13,7 @@ A condition only reads the attributes it mentions.
 ## Depends on
 
 - [Cond](cond.md)
-- [Attrs](attrs.md)
+- [Attributes of a selection condition](attrs.md)
 - [Eval](eval.md)
 - [Tuple](tuple.md)
 - [Restrict](restrict.md)

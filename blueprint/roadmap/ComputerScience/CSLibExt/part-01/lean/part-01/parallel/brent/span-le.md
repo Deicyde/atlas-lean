@@ -12,15 +12,15 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.span_le
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 - [Schedule](schedule.md)
-- [Length](length.md)
-- [Span](span.md)
+- [Length of a schedule](length.md)
+- [Span of a computation DAG](span.md)
 
 ## Proof depends on
 
-- [Depth le time](depth-le-time.md)
-- [Depth](depth.md)
+- [Depth bounds the step of a task](depth-le-time.md)
+- [Depth of a task in a computation DAG](depth.md)
 
 ## Sources
 

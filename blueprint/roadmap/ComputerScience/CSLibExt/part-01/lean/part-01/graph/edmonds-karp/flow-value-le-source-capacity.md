@@ -6,16 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EdmondsKarp.flowValue_le_sourceCapacity
 ---
 
-# Flow Value le source Capacity
+# The flow value is at most the source capacity
 
-Every feasible flow is bounded by total capacity leaving the source.
+**The flow value is at most the source capacity.** Let $c$ be a capacity function, $s$ and
+$t$ vertices, and $f$ a flow that is feasible for $c$, $s$ and $t$. Then the net flow leaving $s$
+under $f$ is at most $\sum_v c(s, v)$, the total capacity leaving $s$.
 
 ## Depends on
 
 - [Flow](flow.md)
-- [Is Feasible](is-feasible.md)
-- [Flow Value](flow-value.md)
-- [Source Capacity](source-capacity.md)
+- [Feasible flow](is-feasible.md)
+- [Flow value](flow-value.md)
+- [Source capacity](source-capacity.md)
 
 ## Sources
 

@@ -6,17 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.symbols
 ---
 
-# Symbols
+# Leaf symbols of a Huffman tree
 
-The leaf symbols, in left-to-right order.
+**Leaf symbols of a Huffman tree.** The list of the symbols at the leaves of a Huffman tree,
+read from left to right, with one entry per leaf.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
+- [Huffman tree](huffman-tree.md)
 
 ## Proof depends on
 
-- [Weighted Leaves](weighted-leaves.md)
+- [Weighted leaves of a Huffman tree](weighted-leaves.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.huffmanForestLeaves
 ---
 
-# Huffman Forest Leaves
+# Weighted leaves of a Huffman work forest
 
-The weighted leaves represented by a work forest.
+**Weighted leaves of a Huffman work forest.** The weighted leaves of a list of Huffman work
+items are the concatenation, in list order, of the weighted leaves of the items' trees.
 
 ## Depends on
 
-- [Huffman Work Item](huffman-work-item.md)
+- [Huffman work item](huffman-work-item.md)
 
 ## Proof depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Weighted Leaves](weighted-leaves.md)
+- [Huffman tree](huffman-tree.md)
+- [Weighted leaves of a Huffman tree](weighted-leaves.md)
 
 ## Sources
 

@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.matrixAccumulate_time
 ---
 
-# Matrix Accumulate time
+# Operation count of square matrix accumulation
 
-The square wrapper emits exactly `n^3` ticks in each scalar-operation component.
+**Operation count of square matrix accumulation.** Let $\alpha$ be a type with an addition
+and a multiplication, and let $A$, $B$, $C$ be $n \times n$ matrices over $\alpha$. Square matrix
+accumulation on $A$, $B$, $C$ has cost $(n^3, n^3)$: it charges exactly $n^3$ scalar
+multiplications and exactly $n^3$ scalar additions.
 
 ## Depends on
 
-- [Matrix Accumulate](matrix-accumulate.md)
+- [Square matrix accumulation](matrix-accumulate.md)
 
 ## Proof depends on
 
-- [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)
-- [Rectangular Matrix Accumulate time](rectangular-matrix-accumulate-time.md)
+- [Rectangular matrix accumulation](rectangular-matrix-accumulate.md)
+- [Operation count of rectangular matrix accumulation](rectangular-matrix-accumulate-time.md)
 
 ## Sources
 

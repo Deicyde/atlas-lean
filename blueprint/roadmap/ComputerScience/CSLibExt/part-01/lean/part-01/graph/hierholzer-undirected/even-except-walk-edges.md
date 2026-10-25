@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.evenExcept_walkEdges
 ---
 
-# Even Except walk Edges
+# Degrees along a walk
 
-In the steps of a walk from `s` to `t`, every degree is even except at `s` and `t`.
+**Degrees along a walk.** Let $W = (w_0, \dots, w_n)$ be a nonempty sequence of vertices with
+$w_0 = s$ and $w_n = t$, and consider the multigraph whose edges are the consecutive pairs
+$(w_{i-1}, w_i)$ for $1 \le i \le n$. In it every vertex other than $s$ and $t$ has even degree
+(a loop counts twice); if $s \ne t$, then $s$ and $t$ have odd degree, and if $s = t$, every
+vertex has even degree.
 
 ## Depends on
 
-- [Even Except](even-except.md)
-- [Walk Edges](../hierholzer/walk-edges.md)
+- [Degree parity condition for two endpoints](even-except.md)
+- [Steps of a walk](../hierholzer/walk-edges.md)
 
 ## Proof depends on
 
-- [Udeg](udeg.md)
+- [Degree in an undirected edge list](udeg.md)
 
 ## Sources
 

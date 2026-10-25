@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.TwoSAT.decide2SAT
 ---
 
-# Decide2 SAT
+# SCC-based 2-SAT decision procedure
 
-The 2-SAT decision procedure: reject an empty clause, then accept iff no SCC block of
-the implication graph contains a literal together with its complement.
+**SCC-based 2-SAT decision procedure.** For a CNF formula $\varphi$, the procedure returns
+false if $\varphi$ contains the empty clause; otherwise it returns true if and only if no block
+of the strongly connected components computed for the implication graph of $\varphi$ contains a
+literal together with its complementary literal.
 
 ## Depends on
 
@@ -16,10 +18,10 @@ the implication graph contains a literal together with its complement.
 
 ## Proof depends on
 
-- [Components](../../../lean/part-01/graph/strongly-connected-components/components.md)
-- [Lit](lit.md)
-- [Neg](neg-2.md)
-- [Implication Graph](implication-graph.md)
+- [Strongly connected components algorithm](../../../lean/part-01/graph/strongly-connected-components/components.md)
+- [Literals over the variables of a formula](lit.md)
+- [Complement of a literal over a formula](neg-2.md)
+- [Implication graph as a finite directed graph](implication-graph.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 

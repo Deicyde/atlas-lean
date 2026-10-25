@@ -6,8 +6,8 @@ navigation: module
 
 ## Hidden Markov
 
-- [Sum path Prob ite pair](sum-path-prob-ite-pair.md)
-- [Pair Marg](pair-marg.md)
+- [Pairwise path sums with a fixed endpoint](sum-path-prob-ite-pair.md)
+- [Pairwise state marginal of a hidden Markov model](pair-marg.md)
 - [Pairwise forward-backward](pair-marg-eq.md)
 
 ## Baum Welch

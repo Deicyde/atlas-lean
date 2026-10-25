@@ -19,7 +19,7 @@ the extracted exponent $e = (s - s')(r - r')^{-1}$ is a discrete logarithm of $y
 
 - [Schnorr verifier's acceptance condition](accepts.md)
 - [Schnorr knowledge extractor](extract.md)
-- [Gpow](../../public-key/diffie-hellman/gpow.md)
+- [Group exponentiation with modular exponents](../../public-key/diffie-hellman/gpow.md)
 
 ## Sources
 

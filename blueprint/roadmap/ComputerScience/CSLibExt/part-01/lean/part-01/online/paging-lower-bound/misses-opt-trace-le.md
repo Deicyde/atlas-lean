@@ -13,17 +13,17 @@ misses filling the cache.
 
 ## Depends on
 
-- [Misses](../../greedy/offline-caching/misses.md)
-- [Opt Trace](opt-trace.md)
+- [Number of misses in a trace](../../greedy/offline-caching/misses.md)
+- [Offline paging trace](opt-trace.md)
 
 ## Proof depends on
 
-- [Cache Event](../../greedy/offline-caching/cache-event.md)
-- [Is Miss](../../greedy/offline-caching/is-miss.md)
-- [Find? is Some](find-is-some.md)
-- [Mem of full](mem-of-full.md)
-- [Misses opt Trace hits](misses-opt-trace-hits.md)
-- [Opt Step](opt-step.md)
+- [Cache events](../../greedy/offline-caching/cache-event.md)
+- [Miss indicator](../../greedy/offline-caching/is-miss.md)
+- [A full cache has a page outside the next $k - 1$ requests](find-is-some.md)
+- [After a miss on a full cache, every page except the evicted one is present](mem-of-full.md)
+- [Hits do not change the offline strategy's misses](misses-opt-trace-hits.md)
+- [Offline paging step](opt-step.md)
 
 ## Sources
 

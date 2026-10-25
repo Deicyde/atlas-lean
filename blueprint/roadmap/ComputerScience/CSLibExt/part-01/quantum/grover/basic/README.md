@@ -4,9 +4,9 @@ navigation: module
 
 # Basic
 
-- [Amplitude](amplitude.md)
+- [Real amplitude vectors](amplitude.md)
 - [Phase Oracle](phase-oracle.md)
-- [Amplitude Norm Sq](amplitude-norm-sq.md)
-- [Marked Probability](marked-probability.md)
-- [Uniform Amplitude](uniform-amplitude.md)
-- [Amplitude Norm Sq uniform Amplitude](amplitude-norm-sq-uniform-amplitude.md)
+- [Squared norm of an amplitude vector](amplitude-norm-sq.md)
+- [Probability of the marked outcomes](marked-probability.md)
+- [Uniform amplitude vector](uniform-amplitude.md)
+- [The uniform amplitude vector is normalized](amplitude-norm-sq-uniform-amplitude.md)

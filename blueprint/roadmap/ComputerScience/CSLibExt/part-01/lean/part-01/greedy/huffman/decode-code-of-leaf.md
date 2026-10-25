@@ -7,25 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.decode_codeOfLeaf
 ---
 
-# Decode code Of Leaf
+# Decoding inverts the leaf code
 
-Decoding concatenated leaf codewords recovers their symbols.
+**Decoding inverts the leaf code.** Let $T$ be a Huffman tree and let $s_1, \dots, s_n$
+($n \ge 0$) be symbols occurring at leaves of $T$, with codewords $c(s_1), \dots, c(s_n)$ as
+leaf symbols of $T$. Decoding the concatenation $c(s_1) c(s_2) \cdots c(s_n)$ with $T$ succeeds
+and returns the sequence $s_1, \dots, s_n$.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Leaf Symbol](leaf-symbol.md)
-- [Code Of Leaf](code-of-leaf.md)
-- [Decode?](decode.md)
-- [Symbols](symbols.md)
+- [Huffman tree](huffman-tree.md)
+- [Leaf symbols of a Huffman tree](leaf-symbol.md)
+- [Codeword of a leaf symbol](code-of-leaf.md)
+- [Decoding a bit string](decode.md)
+- [Leaf symbols of a Huffman tree](symbols.md)
 
 ## Proof depends on
 
-- [Code?](code.md)
-- [Code? code Of Leaf](code-code-of-leaf.md)
-- [Decode One?](decode-one.md)
-- [Decode Path?](decode-path.md)
-- [Path Code?](path-code.md)
+- [Codeword lookup in a Huffman tree](code.md)
+- [Codeword lookup agrees with the leaf code](code-code-of-leaf.md)
+- [Decoding one codeword](decode-one.md)
+- [Following a path in a Huffman tree](decode-path.md)
+- [Root-to-leaf path code](path-code.md)
 
 ## Sources
 

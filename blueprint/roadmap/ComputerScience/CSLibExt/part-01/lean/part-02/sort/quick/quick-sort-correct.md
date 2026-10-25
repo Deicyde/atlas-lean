@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.quickSort_correct
 ---
 
-# Quick Sort correct
+# Correctness of quicksort
 
-Quicksort returns a nondecreasing permutation, preserving duplicate occurrences.
+**Correctness of quicksort.** For every list $\ell$ over a linear order, the output of
+quicksort on $\ell$ is sorted in nondecreasing order and is a permutation of $\ell$; in
+particular every value occurs in the output exactly as often as in $\ell$.
 
 ## Depends on
 
-- [Quick Sort](quick-sort.md)
+- [Quicksort](quick-sort.md)
 
 ## Proof depends on
 
-- [Three Way Partition](../partition/three-way-partition.md)
-- [Partition3](../partition/partition3.md)
-- [Partition3 correct](../partition/partition3-correct.md)
-- [Partition3 length](../partition/partition3-length.md)
+- [Three-way partition record](../partition/three-way-partition.md)
+- [Stable three-way partition](../partition/partition3.md)
+- [Correctness of the stable three-way partition](../partition/partition3-correct.md)
+- [Sizes of the three parts of a three-way partition](../partition/partition3-length.md)
 
 ## Sources
 

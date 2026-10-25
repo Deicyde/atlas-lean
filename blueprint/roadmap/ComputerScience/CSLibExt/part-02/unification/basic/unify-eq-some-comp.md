@@ -6,34 +6,36 @@ proof: formalized
 lean: Cslib.Unification.unify_eq_some_comp
 ---
 
-# Most generality
+# Most generality of unification
 
-**Most generality**, strong form: every unifier `s'` satisfies `s' = s ≫ s'`.
+**Most generality of unification.** For every list $E$ of equations between terms, if the
+Martelli–Montanari algorithm returns a substitution $s$ on $E$, then every substitution $s'$
+that unifies $E$ equals the composite substitution that applies first $s$ and then $s'$.
 
 ## Depends on
 
-- [Equations](equations.md)
-- [Subst](subst.md)
-- [Comp](comp.md)
-- [Unifies](unifies.md)
-- [Unify](unify.md)
+- [Lists of equations](equations.md)
+- [Substitution](subst.md)
+- [Composition of substitutions](comp.md)
+- [Unifier of a list of equations](unifies.md)
+- [Martelli–Montanari unification](unify.md)
 
 ## Proof depends on
 
-- [Single](single.md)
-- [Term](term.md)
-- [Size](size.md)
-- [Size subst lt of mem](size-subst-lt-of-mem.md)
-- [Subst](subst-2.md)
-- [Vars](vars.md)
-- [Unify Spec](unify-spec.md)
-- [Congr](congr.md)
-- [Elim](elim.md)
-- [None of head](none-of-head.md)
-- [Card eq Vars elim lt](card-eq-vars-elim-lt.md)
-- [Eq Size](eq-size.md)
-- [Eq Vars](eq-vars.md)
-- [Subst Eqs](subst-eqs.md)
+- [Single-variable substitution](single.md)
+- [Terms for unification](term.md)
+- [Size of a term](size.md)
+- [Occurs check: size bound](size-subst-lt-of-mem.md)
+- [Applying a substitution to a term](subst-2.md)
+- [Variables of a term](vars.md)
+- [Specification of a unification result](unify-spec.md)
+- [Lists of equations with the same unifiers satisfy the same specification](congr.md)
+- [The elimination step preserves the unification specification](elim.md)
+- [Failure is correct when the first equation has no unifier](none-of-head.md)
+- [Eliminating a solved variable lowers the number of variables](card-eq-vars-elim-lt.md)
+- [Total size of a list of equations](eq-size.md)
+- [Variables of a list of equations](eq-vars.md)
+- [Applying a substitution to a list of equations](subst-eqs.md)
 
 ## Sources
 

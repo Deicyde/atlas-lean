@@ -4,5 +4,5 @@ navigation: module
 
 # Basic
 
-- [Randomly Permute](randomly-permute.md)
-- [Randomly Permute time](randomly-permute-time.md)
+- [Fisher–Yates shuffle with supplied draws](randomly-permute.md)
+- [Cost of the Fisher–Yates shuffle](randomly-permute-time.md)

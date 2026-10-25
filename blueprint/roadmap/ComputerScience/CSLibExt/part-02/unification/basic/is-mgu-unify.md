@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Unification.isMGU_unify
 ---
 
-# Is MGU unify
+# Unification returns a most general unifier
 
-The returned substitution is a most general unifier.
+**Unification returns a most general unifier.** If the Martelli-Montanari unification
+algorithm, run on a list of equations $E$, returns a substitution $s$, then $s$ is a most
+general unifier of $E$.
 
 ## Depends on
 
-- [Equations](equations.md)
-- [Is MGU](is-mgu.md)
-- [Subst](subst.md)
-- [Unify](unify.md)
+- [Lists of equations](equations.md)
+- [Most general unifier](is-mgu.md)
+- [Substitution](subst.md)
+- [Martelli–Montanari unification](unify.md)
 
 ## Proof depends on
 
-- [Comp](comp.md)
-- [Unifies](unifies.md)
-- [Soundness](unifies-unify.md)
-- [Most generality](unify-eq-some-comp.md)
+- [Composition of substitutions](comp.md)
+- [Unifier of a list of equations](unifies.md)
+- [Soundness of unification](unifies-unify.md)
+- [Most generality of unification](unify-eq-some-comp.md)
 
 ## Sources
 

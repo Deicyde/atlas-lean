@@ -5,10 +5,14 @@ statement: formalized
 lean: Cslib.MachineLearning.Perceptron.train
 ---
 
-# Train
+# Perceptron training
 
-Repeat passes over `xs` from `w`, for at most `n` passes, until a pass makes no mistake;
-returns the weights of that pass (`none` if every pass made a mistake).
+**Perceptron training.** Given a finite list $D$ of labelled examples, a number $n$ of passes
+and weights $w$, training returns nothing when $n = 0$. When $n = m + 1$, it runs one perceptron
+pass over $D$ from $w$ with mistake count $0$; if that pass makes no mistake it returns $w$, and
+otherwise it trains on $D$ for $m$ passes from the weights the pass produced. So training repeats
+passes until one makes no mistake, for at most $n$ passes, and returns the weights of that pass,
+or nothing if every pass made a mistake.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Run](run.md)
+- [Perceptron run](run.md)
 
 ## Sources
 

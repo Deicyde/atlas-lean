@@ -6,27 +6,31 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.phase_ne_nil
 ---
 
-# Phase ne nil
+# A phase finds a path when an unmatched right vertex is reached
 
-The first candidate always yields a path, so a phase finds a path whenever the search reaches
-an unmatched right vertex.
+**A phase finds a path when an unmatched right vertex is reached.** If the partner array
+describes a matching and some unmatched right vertex is reached within $a + 1$ rounds of the
+alternating breadth-first search, where $a$ is the number of left vertices, then the phase finds
+at least one path.
+
+The search from the first candidate always yields a path.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Layers](layers.md)
-- [Phase](phase.md)
+- [Partner arrays that describe a matching](valid.md)
+- [Alternating breadth-first layers](layers.md)
+- [Hopcroft–Karp phase](phase.md)
 
 ## Proof depends on
 
-- [First Free Round](first-free-round.md)
-- [First Free Round eq none](first-free-round-eq-none.md)
-- [First Free Round eq some](first-free-round-eq-some.md)
-- [Mark L](mark-l.md)
-- [Mark R](mark-r.md)
-- [Phase Aux](phase-aux.md)
-- [Search Path](search-path.md)
-- [Search Path is Some](search-path-is-some.md)
+- [First free round](first-free-round.md)
+- [When there is no first free round](first-free-round-eq-none.md)
+- [Characterization of the first free round](first-free-round-eq-some.md)
+- [Marking the left vertices of a path used](mark-l.md)
+- [Marking the right vertices of a path used](mark-r.md)
+- [Phase search over candidates](phase-aux.md)
+- [Depth-first search of a Hopcroft–Karp phase](search-path.md)
+- [Searches from reached vertices succeed when nothing is used or dead](search-path-is-some.md)
 
 ## Sources
 

@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.SAT.DPLL.dpll_eq_true_iff
 ---
 
-# Dpll eq true iff
+# Correctness of DPLL
 
-The executable DPLL procedure accepts exactly the satisfiable CNF formulas.
+**Correctness of DPLL.** For every CNF formula $\varphi$, the DPLL procedure returns true on
+$\varphi$ if and only if $\varphi$ is satisfiable.
 
 ## Depends on
 
-- [Dpll](../solver/dpll.md)
+- [The DPLL procedure](../solver/dpll.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
-- [Decide With Fuel eq true iff](decide-with-fuel-eq-true-iff.md)
+- [Correctness of DPLL with sufficient fuel](decide-with-fuel-eq-true-iff.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Sources

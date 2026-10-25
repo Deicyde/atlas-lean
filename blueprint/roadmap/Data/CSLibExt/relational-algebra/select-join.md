@@ -13,7 +13,7 @@ lean: Cslib.Databases.Expr.select_join
 ## Depends on
 
 - [Cond](cond.md)
-- [Attrs](attrs.md)
+- [Attributes of a selection condition](attrs.md)
 - [Expr](expr.md)
 - [Equiv](equiv.md)
 - [Schema](schema.md)

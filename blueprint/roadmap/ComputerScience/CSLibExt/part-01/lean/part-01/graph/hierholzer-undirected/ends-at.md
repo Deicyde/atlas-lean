@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.endsAt
 ---
 
-# Ends At
+# Multiplicity of a vertex in an unordered edge
 
-The number of endpoints of an unordered edge equal to `x` (`2` for the loop `s(x, x)`).
+**Multiplicity of a vertex in an unordered edge.** For a vertex $x$, this assigns to an
+unordered pair $\{a, b\}$ the number $[x = a] + [x = b]$ of its endpoints equal to $x$, where
+$[P]$ is $1$ if $P$ holds and $0$ otherwise; in particular a loop $\{x, x\}$ gives $2$.
 
 ## Depends on
 

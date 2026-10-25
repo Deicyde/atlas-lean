@@ -5,9 +5,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EdmondsKarp.run
 ---
 
-# Run
+# Augmenting-path iteration with fuel
 
-Iterate bottleneck augmentation, stopping for equal endpoints or no residual path.
+**Augmenting-path iteration with fuel.** Let $c$ be a capacity matrix with natural-number
+entries on the vertices $\{0, \dots, n - 1\}$, let $s$ be a source and $t$ a sink, let $k$ be a fuel
+bound and let $f$ be a flow (an integer-valued matrix on pairs of vertices). The iteration returns
+$f$ if $k = 0$ or $s = t$. Otherwise it runs the breadth-first shortest-path search from $s$ to $t$
+in the residual graph of $f$ with respect to $c$. If the search finds no path, the iteration returns
+$f$. If it returns a path $P$, let $b$ be the bottleneck of $P$, the least residual capacity
+$c(u, v) - f(u, v)$ over the edges $(u, v)$ of $P$; the iteration augments $f$ along $P$ by $b$,
+adding $b$ to $f(u, v)$ and subtracting $b$ from $f(v, u)$ for each edge $(u, v)$ of $P$, and
+continues from the augmented flow with fuel $k - 1$.
 
 ## Depends on
 
@@ -15,10 +23,10 @@ Iterate bottleneck augmentation, stopping for equal endpoints or no residual pat
 
 ## Proof depends on
 
-- [Augment](augment.md)
-- [Path Bottleneck](path-bottleneck.md)
+- [Augmenting a flow along a path](augment.md)
+- [Bottleneck of a path](path-bottleneck.md)
 - [Residual Graph](residual-graph.md)
-- [Shortest Path](shortest-path.md)
+- [Shortest path via breadth-first search](shortest-path.md)
 
 ## Sources
 

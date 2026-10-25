@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.card_pairs
 ---
 
-# Card pairs
+# Matched pairs and matched right vertices are equinumerous
 
-The matched pairs correspond to the matched right vertices.
+**Matched pairs and matched right vertices are equinumerous.** For every partner array
+$\mu$, the number of matched pairs $(i, j)$ of $\mu$, those with $\mu(j) = i$, equals the number
+of matched right vertices of $\mu$.
 
 ## Depends on
 
-- [Matched](matched.md)
-- [Pairs](pairs.md)
+- [Matched right vertices](matched.md)
+- [Matched pairs of a partner assignment](pairs.md)
 
 ## Sources
 

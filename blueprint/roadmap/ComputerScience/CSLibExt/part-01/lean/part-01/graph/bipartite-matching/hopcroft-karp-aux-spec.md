@@ -6,24 +6,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarpAux_spec
 ---
 
-# Hopcroft Karp Aux spec
+# Correctness of the phase loop
 
-With more fuel than unmatched right vertices, the phases end with a maximum matching.
+**Correctness of the phase loop.** Let $\mu$ be a valid partner array (a matching of the
+graph) on $b$ right vertices, and let $n \in \mathbb{N}$ be a fuel with
+$b < |\mathrm{matched}(\mu)| + n$, where $\mathrm{matched}(\mu)$ is the set of right vertices with
+a partner in $\mu$; so $n$ exceeds the number of unmatched right vertices. Let $\mu'$ be the
+result of the Hopcroft–Karp phase loop with fuel $n$ from $\mu$. Then $\mu'$ is valid, and every
+matching $M$ of the graph satisfies $|M| \le |\mathrm{pairs}(\mu')|$, where $\mathrm{pairs}(\mu')$
+is the set of pairs $(i, j)$ with $\mu'(j) = i$.
 
 ## Depends on
 
-- [Is Matching](is-matching.md)
-- [Valid](valid.md)
-- [Hopcroft Karp Aux](hopcroft-karp-aux.md)
-- [Matched](matched.md)
-- [Pairs](pairs.md)
+- [Matching in a bipartite graph](is-matching.md)
+- [Partner arrays that describe a matching](valid.md)
+- [Hopcroft–Karp phase loop](hopcroft-karp-aux.md)
+- [Matched right vertices](matched.md)
+- [Matched pairs of a partner assignment](pairs.md)
 
 ## Proof depends on
 
 - [Kőnig's certificate](card-le-of-no-free.md)
-- [Hk Step](hk-step.md)
-- [Hk Step none](hk-step-none.md)
-- [Hk Step some](hk-step-some.md)
+- [Hopcroft–Karp step](hk-step.md)
+- [A Hopcroft–Karp step that finds nothing](hk-step-none.md)
+- [A successful Hopcroft–Karp step grows the matching](hk-step-some.md)
 
 ## Sources
 

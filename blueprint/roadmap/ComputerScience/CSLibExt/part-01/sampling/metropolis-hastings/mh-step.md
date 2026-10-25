@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.MachineLearning.Sampling.mhStep
 ---
 
-# Mh Step
+# Metropolis–Hastings step
 
-One **Metropolis–Hastings** step from `x` for the target `π` and proposal `Q`: propose
-`y ~ Q x`, move to `y` with probability `mhAccept π Q x y`, and otherwise stay at `x`.
+**Metropolis–Hastings step.** For a probability distribution $\pi$ on $\alpha$ (the target)
+and a proposal $Q$ assigning to each $x \in \alpha$ a probability distribution $Q(x, \cdot)$ on
+$\alpha$, one Metropolis–Hastings step from $x$ is the distribution of the following move: draw
+$y$ from $Q(x, \cdot)$, then move to $y$ with the Metropolis–Hastings acceptance probability
+$a(x, y)$, and otherwise stay at $x$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Coin](../rejection/coin.md)
-- [Mh Accept](mh-accept.md)
+- [Biased coin](../rejection/coin.md)
+- [Metropolis–Hastings acceptance probability](mh-accept.md)
 
 ## Sources
 

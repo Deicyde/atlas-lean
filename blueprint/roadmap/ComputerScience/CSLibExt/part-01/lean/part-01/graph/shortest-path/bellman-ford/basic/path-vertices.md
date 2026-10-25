@@ -5,13 +5,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.pathVertices
 ---
 
-# Path Vertices
+# Vertices of a path
 
-The vertices visited by a path represented by forward edge occurrences.
+**Vertices of a path.** For a vertex $s$ of $\{0, \dots, n-1\}$ and a list of weighted edges
+$e_1, \dots, e_k$ on these vertices, the vertices of the path from $s$ along this list are the
+list $s, t_1, \dots, t_k$, where $t_i$ is the target of $e_i$.
+
+The edges are not required to be consecutive.
 
 ## Depends on
 
-- [Edge](edge.md)
+- [Weighted directed edge](edge.md)
 
 ## Sources
 

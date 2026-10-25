@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.walk_succ_iff
 ---
 
-# Walk succ iff
+# Splitting off the first edge of a walk
 
-A successor-length walk is an initial edge followed by the remaining walk.
+**Splitting off the first edge of a walk.** In a directed adjacency graph $G$, for every
+natural number $n$ and all vertices $s$ and $t$, there is a walk of length $n + 1$ from $s$ to
+$t$ if and only if there is a vertex $v$ such that $(s, v)$ is an edge of $G$ and there is a
+walk of length $n$ from $v$ to $t$.
 
 ## Depends on
 
-- [Directed Adjacency](directed-adjacency.md)
-- [Edge](edge.md)
-- [Walk](walk.md)
+- [Directed adjacency graph](directed-adjacency.md)
+- [Edge of a directed adjacency graph](edge.md)
+- [Walks of a given length](walk.md)
 
 ## Sources
 

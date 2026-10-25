@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.depth_le_time
 ---
 
-# Depth le time
+# Depth bounds the step of a task
 
-Every task runs no earlier than its depth allows.
+**Depth bounds the step of a task.** For every schedule of a computation DAG on $p$
+processors, with steps numbered from $0$, every task $v$ runs in a step $t$ with
+$\operatorname{depth}(v) \le t + 1$.
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 - [Schedule](schedule.md)
-- [Depth](depth.md)
+- [Depth of a task in a computation DAG](depth.md)
 
 ## Sources
 

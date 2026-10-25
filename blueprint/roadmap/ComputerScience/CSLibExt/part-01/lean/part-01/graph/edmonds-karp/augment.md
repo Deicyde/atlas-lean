@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.EdmondsKarp.augment
 ---
 
-# Augment
+# Augmenting a flow along a path
 
-Add `amount` along each path edge and subtract it on reverse entries.
+**Augmenting a flow along a path.** Given an integer flow matrix $f$ on the vertices
+$\{0, \dots, n-1\}$, a list of vertices $P$ and an integer $a$, the augmentation of $f$
+along $P$ by $a$ is the matrix whose entry at $(u, v)$ is $f(u, v) + a \cdot d$, where $d$
+is the number of consecutive pairs of $P$ equal to $(u, v)$ minus the number of
+consecutive pairs of $P$ equal to $(v, u)$, counted with multiplicity.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ Add `amount` along each path edge and subtract it on reverse entries.
 
 ## Proof depends on
 
-- [Edge Delta](edge-delta.md)
+- [Edge delta of a path](edge-delta.md)
 
 ## Sources
 

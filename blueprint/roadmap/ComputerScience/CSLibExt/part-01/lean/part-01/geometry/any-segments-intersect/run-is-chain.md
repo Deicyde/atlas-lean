@@ -32,7 +32,7 @@ ends with status list $T$, then no two consecutive segments of $T$ meet.
 - [Intersection test for two input segments](test.md)
 - [Testing a segment against an optional neighbour](test-opt.md)
 - [Testing the neighbours of a deleted segment](test-pair.md)
-- [Segments Intersect ret eq true iff](../segment-intersection/segments-intersect-ret-eq-true-iff.md)
+- [Correctness of SEGMENTS-INTERSECT](../segment-intersection/segments-intersect-ret-eq-true-iff.md)
 
 ## Sources
 

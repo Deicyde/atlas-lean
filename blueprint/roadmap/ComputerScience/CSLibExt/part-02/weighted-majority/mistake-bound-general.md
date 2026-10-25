@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.MachineLearning.WeightedMajority.mistake_bound_general
 ---
 
-# The mistake bound
+# Littlestone–Warmuth mistake bound
 
-**The mistake bound** (Littlestone and Warmuth): starting from unit weights with penalty
-`β ∈ [0, 1]`, the weighted majority algorithm makes `M` mistakes with
-`β ^ m * 2 ^ M ≤ n (1 + β) ^ M` for every expert with `m` mistakes.
+**Littlestone–Warmuth mistake bound.** Let $K$ be a linearly ordered field and let
+$\beta \in K$ with $0 \le \beta \le 1$. Run the weighted majority algorithm with penalty $\beta$
+on a list of rounds with $n$ experts, starting from weight $1$ on every expert, and let $M$ be its
+number of mistakes. Then every expert $i$, with $m$ mistakes on these rounds, satisfies
+$\beta^m 2^M \le n (1 + \beta)^M$.
 
 ## Depends on
 
-- [Round](round.md)
-- [Expert Mistakes](expert-mistakes.md)
-- [Mistakes](mistakes.md)
+- [Round of prediction with expert advice](round.md)
+- [Mistakes of an expert](expert-mistakes.md)
+- [Mistakes of the weighted majority algorithm](mistakes.md)
 
 ## Proof depends on
 
-- [Total](total.md)
-- [Total weights mul le](total-weights-mul-le.md)
-- [Update](update.md)
-- [Weights](weights.md)
-- [Weights apply](weights-apply.md)
+- [Total weight](total.md)
+- [Total weight bound in terms of mistakes](total-weights-mul-le.md)
+- [Weighted majority update](update.md)
+- [Weights after a run](weights.md)
+- [Final weight of an expert](weights-apply.md)
 
 ## Sources
 

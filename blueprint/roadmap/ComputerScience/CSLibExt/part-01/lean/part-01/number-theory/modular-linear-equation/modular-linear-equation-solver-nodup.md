@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_nodup
 ---
 
-# Modular Linear Equation Solver nodup
+# The solver returns no repeated residues
 
-The ordered result contains no repeated residues.
+**The solver returns no repeated residues.** For natural numbers $a > 0$ and $n > 0$ and an
+integer $b$, the entries of the output of the modular linear equation solver on $a$, $b$, $n$ are
+pairwise distinct.
 
 ## Depends on
 
-- [Modular Linear Equation Solver](modular-linear-equation-solver.md)
+- [Modular linear equation solver](modular-linear-equation-solver.md)
 
 ## Proof depends on
 
-- [Modular Linear Equation Solver ret](modular-linear-equation-solver-ret.md)
+- [Output of the modular linear equation solver](modular-linear-equation-solver-ret.md)
 
 ## Sources
 

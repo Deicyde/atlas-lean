@@ -7,28 +7,31 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.encodedLength_eq_sum_codeLengths
 ---
 
-# Encoded Length eq sum code Lengths
+# Encoded length is the total weighted codeword length
 
-With unique symbols, `encodedLength` is exactly the encoder's total cost:
-the sum over the weighted leaves of weight times emitted codeword length.
-Without unique symbols the encoder resolves repeated symbols to their first
-leaf, and `encodedLength` remains the structural path cost.
+**Encoded length is the total weighted codeword length.** Let $T$ be a coding tree whose leaf
+symbols are pairwise distinct. For a symbol $s$, let $\ell(s)$ be the length of the codeword of
+$s$ in $T$, or $0$ if $s$ has no codeword. Then the encoded length of $T$ equals
+$\sum_{(s, w)} w \cdot \ell(s)$, the sum over the weighted leaves $(s, w)$ of $T$.
+
+Without distinct symbols, the encoder resolves a repeated symbol to its first leaf, and the
+encoded length remains the structural weighted path cost.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Code?](code.md)
-- [Encoded Length](encoded-length.md)
-- [Symbols](symbols.md)
-- [Weighted Leaves](weighted-leaves.md)
+- [Huffman tree](huffman-tree.md)
+- [Codeword lookup in a Huffman tree](code.md)
+- [Encoded length of a coding tree](encoded-length.md)
+- [Leaf symbols of a Huffman tree](symbols.md)
+- [Weighted leaves of a Huffman tree](weighted-leaves.md)
 
 ## Proof depends on
 
-- [Path Code?](path-code.md)
-- [Path Code? eq none iff](path-code-eq-none-iff.md)
-- [Total Weight](total-weight.md)
-- [Weighted Path Length](weighted-path-length.md)
-- [Weighted Path Length eq sum path Lengths](weighted-path-length-eq-sum-path-lengths.md)
+- [Root-to-leaf path code](path-code.md)
+- [A symbol has a path code exactly when it labels a leaf](path-code-eq-none-iff.md)
+- [Total weight of a Huffman tree](total-weight.md)
+- [Weighted path length](weighted-path-length.md)
+- [Weighted path length as a sum over leaves](weighted-path-length-eq-sum-path-lengths.md)
 
 ## Sources
 

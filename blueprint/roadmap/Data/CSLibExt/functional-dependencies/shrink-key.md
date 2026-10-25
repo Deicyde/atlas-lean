@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Databases.shrinkKey
 ---
 
-# Shrink Key
+# Shrinking a key along a list
 
-Remove the attributes of `l` from `K` one at a time, dropping each one whose removal
-leaves a superkey.
+**Shrinking a key along a list.** Let $F$ be a finite set of functional dependencies over a
+finite set of attributes. Given a list $l$ of attributes and a set of attributes $K$, go through
+$l$ in order and, for each attribute $a$, remove $a$ from the current set whenever the attribute
+closure under $F$ of the current set without $a$ is the set of all attributes (that is, the set
+without $a$ is still a superkey); the result is the set reached at the end of the list.
 
 ## Depends on
 
-- [FD](fd.md)
+- [Functional dependency](fd.md)
 
 ## Proof depends on
 
-- [Attr Closure](attr-closure.md)
+- [Attribute closure](attr-closure.md)
 
 ## Sources
 

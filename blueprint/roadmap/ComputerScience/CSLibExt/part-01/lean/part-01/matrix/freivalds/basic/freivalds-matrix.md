@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsMatrix
 ---
 
-# Freivalds Matrix
+# Matrix of a Freivalds input
 
-The canonical matrix view of the existing array-backed input.
+**Matrix of a Freivalds input.** An $n \times n$ array $A$ of rows over
+$\mathbb{F}_2 = \mathbb{Z}/2$ determines the $n \times n$ matrix over $\mathbb{F}_2$ whose
+$(i, j)$ entry is entry $j$ of row $i$ of $A$.
 
 ## Depends on
 

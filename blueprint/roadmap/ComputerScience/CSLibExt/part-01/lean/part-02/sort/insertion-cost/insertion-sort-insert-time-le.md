@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.insertionSortInsert_time_le
 ---
 
-# Insertion Sort Insert time le
+# Cost of a single insertion
 
-Inserting one element charges at most one comparison per existing element.
+**Cost of a single insertion.** For an element $a$ and a list $l$ over a linearly ordered
+type, costed insertion of $a$ into $l$ charges at most $n$ comparisons, where $n$ is the length
+of $l$.
 
 ## Depends on
 
-- [Insertion Sort Insert](insertion-sort-insert.md)
+- [Costed insertion into a list](insertion-sort-insert.md)
 
 ## Proof depends on
 
-- [Compare LE](compare-le.md)
+- [Charged comparison](compare-le.md)
 
 ## Sources
 

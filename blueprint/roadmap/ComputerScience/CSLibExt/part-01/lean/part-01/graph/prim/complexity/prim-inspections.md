@@ -6,14 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Prim.prim_inspections
 ---
 
-# Prim inspections
+# Number of adjacency inspections in Prim's algorithm
 
-Each adjacency occurrence is inspected exactly once.
+**Number of adjacency inspections in Prim's algorithm.** Let $W$ be a linearly ordered type
+with a zero element, let $D$ be a directed adjacency structure on the vertices $0, \dots, n-1$
+with adjacency lists $A(u)$, let $w$ assign a weight in $W$ to every unordered pair of vertices,
+not necessarily distinct, and let $r$ be a vertex. The number of adjacency entries inspected by
+Prim's algorithm on $D$, $w$ and $r$ equals the sum of the lengths $|A(u)|$ over all vertices
+$u$.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Basic](../prim.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Prim's algorithm with an indexed binary heap](../prim.md)
 
 ## Proof depends on
 

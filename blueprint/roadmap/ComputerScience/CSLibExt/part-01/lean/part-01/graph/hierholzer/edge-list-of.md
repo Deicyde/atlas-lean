@@ -5,13 +5,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.edgeListOf
 ---
 
-# Edge List Of
+# Edge list of an adjacency function
 
-The edge occurrences of a remaining adjacency `R`, in vertex order: one pair per entry.
+**Edge list of an adjacency function.** Given a directed adjacency graph $G$ and a function
+$R$ assigning to each vertex $u$ a list $R(u)$ of vertices, the edge list of $R$ is the list of
+pairs $(u, w)$, one for each entry $w$ of $R(u)$, taken over the vertices $u$ in the order of the
+vertex enumeration of $G$ and, for each $u$, in the order of $R(u)$. A repeated entry gives a
+repeated pair.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Sources
 

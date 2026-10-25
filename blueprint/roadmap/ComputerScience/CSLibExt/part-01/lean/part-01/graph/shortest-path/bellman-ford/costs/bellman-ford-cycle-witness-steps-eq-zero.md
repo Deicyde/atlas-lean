@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.bellmanFord_cycleWitnessSteps_eq_zero
 ---
 
-# Bellman Ford cycle Witness Steps eq zero
+# Bellman-Ford spends no witness steps when it returns distances
 
-Successful runs perform no negative-cycle reconstruction steps.
+**Bellman-Ford spends no witness steps when it returns distances.** For every list $E$ of
+weighted edges on $n$ vertices and every source $s$, if Bellman-Ford run on $E$ from $s$ returns
+distances rather than a negative cycle, then the run charges zero negative-cycle witness
+reconstruction steps.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Distances](../basic/distances.md)
-- [Edge](../basic/edge.md)
-- [Result](../basic/result.md)
+- [Bellman-Ford cost counters](../basic/cost.md)
+- [Bellman-Ford distance table](../basic/distances.md)
+- [Weighted directed edge](../basic/edge.md)
+- [Bellman–Ford result](../basic/result.md)
 - [Bellman Ford](../correctness/bellman-ford.md)
 
 ## Proof depends on
 
-- [Is Weighted Path](../basic/is-weighted-path.md)
-- [Reachable Negative Cycle](../basic/reachable-negative-cycle.md)
-- [Path Vertices](../basic/path-vertices.md)
-- [Path Weight](../basic/path-weight.md)
+- [Weighted path in an edge list](../basic/is-weighted-path.md)
+- [Reachable negative cycle witness](../basic/reachable-negative-cycle.md)
+- [Vertices of a path](../basic/path-vertices.md)
+- [Bellman–Ford path weight](../basic/path-weight.md)
 
 ## Sources
 

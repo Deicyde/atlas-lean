@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.Unification.eqVars
 ---
 
-# Eq Vars
+# Variables of a list of equations
 
-The variables of a list of equations.
+**Variables of a list of equations.** The variables of a list of equations form the finite
+set of all variables that occur on either side of any of its equations.
 
 ## Depends on
 
-- [Equations](equations.md)
+- [Lists of equations](equations.md)
 
 ## Proof depends on
 
-- [Term](term.md)
-- [Vars](vars.md)
+- [Terms for unification](term.md)
+- [Variables of a term](vars.md)
 
 ## Sources
 

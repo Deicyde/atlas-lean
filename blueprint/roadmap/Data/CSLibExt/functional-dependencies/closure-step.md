@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Databases.closureStep
 ---
 
-# Closure Step
+# One round of the attribute-closure algorithm
 
-One round of the closure algorithm: add the right side of every dependency whose left side
-is contained in `Y`.
+**One round of the attribute-closure algorithm.** For a finite set $F$ of functional
+dependencies and a finite set $Y$ of attributes, one closure round returns $Y$ together with the
+right side of every dependency of $F$ whose left side is contained in $Y$, that is, the set
+$Y \cup \bigcup \{R : (L \to R) \in F,\ L \subseteq Y\}$.
 
 ## Depends on
 
-- [FD](fd.md)
+- [Functional dependency](fd.md)
 
 ## Sources
 

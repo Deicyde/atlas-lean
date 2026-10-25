@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.naiveMatches_pairwise
 ---
 
-# Naive Matches pairwise
+# Naive matching reports shifts in increasing order
 
-Reported offsets are strictly increasing, so each occurrence is reported only once.
+**Naive matching reports shifts in increasing order.** For every pattern $p$ and text $t$,
+the list of shifts reported by the naive matcher on $p$ and $t$ is strictly increasing; in
+particular, no shift is reported twice.
 
 ## Depends on
 
-- [Naive Matches](naive-matches.md)
+- [Naive string matcher](naive-matches.md)
 
 ## Proof depends on
 
-- [Naive Matches ret](naive-matches-ret.md)
+- [Output of naive matching](naive-matches-ret.md)
 
 ## Sources
 

@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EdmondsKarp.flowValue_le_cutCapacity
 ---
 
-# Flow Value le cut Capacity
+# Weak max-flow min-cut duality
 
-Weak duality for every feasible skew flow and source-sink cut.
+**Weak max-flow min-cut duality.** Let $c$ be a capacity function, $s$ and $t$ vertices, and
+$f$ a flow that is feasible for $c$, $s$ and $t$. For every set $S$ of vertices with $s \in S$
+and $t \notin S$, the net flow leaving $s$ under $f$ is at most the capacity of the cut $S$,
+namely $\sum_{u \in S} \sum_{v \notin S} c(u, v)$.
 
 ## Depends on
 
 - [Flow](flow.md)
-- [Is Feasible](is-feasible.md)
-- [Cut Capacity](cut-capacity.md)
-- [Flow Value](flow-value.md)
+- [Feasible flow](is-feasible.md)
+- [Cut capacity](cut-capacity.md)
+- [Flow value](flow-value.md)
 
 ## Sources
 

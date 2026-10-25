@@ -4,11 +4,11 @@ navigation: module
 
 # Correctness
 
-- [Predecessor chain unique](predecessor-chain-unique.md)
-- [Predecessor chain nodup](predecessor-chain-nodup.md)
-- [Predecessor relation acyclic](predecessor-relation-acyclic.md)
-- [Path To? source](path-to-source.md)
-- [Path To? eq none iff](path-to-eq-none-iff.md)
-- [Path To? spec](path-to-spec.md)
-- [Path To? time](path-to-time.md)
-- [Path To? time of not reachable](path-to-time-of-not-reachable.md)
+- [Each reachable vertex has a unique saved-parent chain](predecessor-chain-unique.md)
+- [Saved-parent chains are simple](predecessor-chain-nodup.md)
+- [The saved-parent relation is acyclic](predecessor-relation-acyclic.md)
+- [Path reconstruction at the source](path-to-source.md)
+- [Path reconstruction fails exactly at unreachable vertices](path-to-eq-none-iff.md)
+- [Reconstructed BFS paths are shortest paths](path-to-spec.md)
+- [Cost of path reconstruction for a reachable vertex](path-to-time.md)
+- [Cost of path reconstruction for an unreachable vertex](path-to-time-of-not-reachable.md)

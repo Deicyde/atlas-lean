@@ -27,7 +27,7 @@ type $\tau$ in the empty context.
 - [Applying a type substitution to a scheme](../typing/subst-ty.md)
 - [Algorithm W](w.md)
 - [Soundness of Algorithm W](has-type-of-w-eq-some.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
 
 ## Sources
 

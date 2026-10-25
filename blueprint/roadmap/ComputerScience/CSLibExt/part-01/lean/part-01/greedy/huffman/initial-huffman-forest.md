@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.initialHuffmanForest
 ---
 
-# Initial Huffman Forest
+# Initial Huffman forest
 
-The initial leaf forest, numbered in input order.
+**Initial Huffman forest.** For a list of pairs $(a_0, w_0), \dots, (a_{k-1}, w_{k-1})$ of
+symbols and natural-number weights, the initial forest is the list of $k$ Huffman work items
+whose $i$-th entry has priority (weight $w_i$, serial $i$) and whose tree is the leaf with symbol
+$a_i$ and weight $w_i$.
 
 ## Depends on
 
-- [Huffman Work Item](huffman-work-item.md)
+- [Huffman work item](huffman-work-item.md)
 
 ## Proof depends on
 
-- [Initial Huffman Forest From](initial-huffman-forest-from.md)
+- [Numbered leaf work items](initial-huffman-forest-from.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OfflineCaching.CacheEvent.isMiss
 ---
 
-# Is Miss
+# Miss indicator
 
-Whether an event is a miss.
+**Miss indicator.** The miss indicator of a cache event is true if the event is a miss and
+false if it is a hit.
 
 ## Depends on
 
-- [Cache Event](cache-event.md)
+- [Cache events](cache-event.md)
 
 ## Sources
 

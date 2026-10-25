@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.Paging.lruMisses
 ---
 
-# Lru Misses
+# Number of LRU misses
 
-The number of misses (faults) of LRU on a request sequence.
+**Number of LRU misses.** For a capacity $k$, a cache $c$ and a request sequence $\sigma$, this
+is the number of requests of $\sigma$ that are not in the current cache when they are served,
+where the cache starts at $c$ and after each request is updated by one LRU step with capacity
+$k$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lru Step](lru-step.md)
+- [One LRU step](lru-step.md)
 
 ## Sources
 

@@ -6,51 +6,51 @@ navigation: module
 
 ## Preferences
 
-- [To Order](to-order.md)
-- [Mprefs](mprefs.md)
-- [Wprefs](wprefs.md)
+- [Preference order of a ranking](to-order.md)
+- [Proposers' preferences from rankings](mprefs.md)
+- [Receivers' preference profile from rankings](wprefs.md)
 
 ## The algorithm
 
-- [State](state.md)
-- [Init](init.md)
-- [Free](free.md)
-- [New Holder](new-holder.md)
-- [Propose](propose.md)
-- [Chooser](chooser.md)
-- [Run](run.md)
+- [Deferred-acceptance state](state.md)
+- [Initial state of deferred acceptance](init.md)
+- [Free proposer](free.md)
+- [Receiver's holder after a proposal](new-holder.md)
+- [A proposal](propose.md)
+- [Choosing the next proposer](chooser.md)
+- [Running deferred acceptance](run.md)
 - [Deferred acceptance](gale-shapley.md)
 
 ## The invariant
 
-- [Inv](inv.md)
-- [Not blocking](not-blocking.md)
-- [Le rank of rejected](le-rank-of-rejected.md)
-- [New Holder cases](new-holder-cases.md)
+- [Invariant of deferred acceptance](inv.md)
+- [A stable matching has no blocking pair](not-blocking.md)
+- [Rejected proposals bound stable partners](le-rank-of-rejected.md)
+- [Cases of the receiver's new holder](new-holder-cases.md)
 
 ## Termination within `n²` proposals
 
-- [Remaining](remaining.md)
-- [Sum next propose](sum-next-propose.md)
-- [At most `n²` proposals](sum-next-gale-shapley-le.md)
+- [Remaining proposals](remaining.md)
+- [A proposal adds one to the proposal count](sum-next-propose.md)
+- [Deferred acceptance makes at most n² proposals](sum-next-gale-shapley-le.md)
 
 ## The output is a perfect matching
 
-- [Held of done](held-of-done.md)
-- [Holds of held](holds-of-held.md)
-- [Partner W](partner-w.md)
-- [Partner M](partner-m.md)
+- [When deferred acceptance stops, every proposer is held](held-of-done.md)
+- [Every receiver holds someone once every proposer is held](holds-of-held.md)
+- [Receiver's partner](partner-w.md)
+- [Proposer's partner](partner-m.md)
 - [The Gale-Shapley matching](gs-matching.md)
 
 ## Stability and optimality
 
-- [Exists rank gs Matching](exists-rank-gs-matching.md)
+- [A proposer's final partner is his last proposal](exists-rank-gs-matching.md)
 - [The Gale-Shapley matching is stable](is-stable-gs-matching.md)
 - [Proposer-optimality](gs-matching-proposer-optimal.md)
 - [Receiver-pessimality](gs-matching-receiver-pessimal.md)
 
 ## Every MathlibExt preference on `Fin n` is a ranking
 
-- [Order Rank](order-rank.md)
-- [Every strict total order on `Fin n` is given by a ranking](exists-to-order-eq.md)
+- [Rank under a strict total order](order-rank.md)
+- [Every strict total order on $\{0, \dots, n-1\}$ is given by a ranking](exists-to-order-eq.md)
 - [The algorithm serves every MathlibExt preference profile on `Fin n`](exists-rankings-gs-matching.md)

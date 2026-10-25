@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.StronglyConnectedComponents.components_nodup
 ---
 
-# Components nodup
+# Computed components have no repeated vertices
 
-Every returned component contains no duplicate vertex.
+**Computed components have no repeated vertices.** For every directed graph $G$, each block
+returned by the strongly connected components algorithm on $G$ contains no vertex more than
+once.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Components](components.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Strongly connected components algorithm](components.md)
 
 ## Proof depends on
 
-- [Decreasing Finish All](../depth-first-search/decreasing-finish-all.md)
-- [Decreasing Finish All nodup](../depth-first-search/decreasing-finish-all-nodup.md)
-- [Same Component B](same-component-b.md)
+- [Whole-graph decreasing finish order](../depth-first-search/decreasing-finish-all.md)
+- [Whole-graph decreasing finish order has no repeated vertices](../depth-first-search/decreasing-finish-all-nodup.md)
+- [Executable mutual-reachability test](same-component-b.md)
 
 ## Sources
 

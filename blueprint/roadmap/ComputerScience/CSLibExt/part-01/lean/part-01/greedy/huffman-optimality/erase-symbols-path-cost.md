@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.eraseSymbols_pathCost
 ---
 
-# Erase Symbols path Cost
+# Erasing symbols preserves weighted path length
 
-Erasure preserves weighted path length after casting to the reals.
+**Erasing symbols preserves weighted path length.** For every Huffman tree $T$, the path cost
+of the weight tree obtained from $T$ by erasing its symbols equals the weighted path length of $T$,
+viewed as a real number.
 
 ## Depends on
 
-- [Huffman Tree](../huffman/huffman-tree.md)
-- [Erase Symbols](erase-symbols.md)
-- [Weighted Path Length](../huffman/weighted-path-length.md)
-- [Path Cost](path-cost.md)
+- [Huffman tree](../huffman/huffman-tree.md)
+- [Erasing symbols from a Huffman tree](erase-symbols.md)
+- [Weighted path length](../huffman/weighted-path-length.md)
+- [Weighted external path length of a Huffman weight tree](path-cost.md)
 
 ## Proof depends on
 
-- [Erase Symbols total Weight](erase-symbols-total-weight.md)
-- [Total Weight](../huffman/total-weight.md)
-- [Total Weight](total-weight.md)
+- [Erasing symbols preserves total weight](erase-symbols-total-weight.md)
+- [Total weight of a Huffman tree](../huffman/total-weight.md)
+- [Total leaf weight of a Huffman weight tree](total-weight.md)
 
 ## Sources
 

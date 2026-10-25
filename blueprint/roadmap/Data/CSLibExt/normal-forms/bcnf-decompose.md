@@ -5,20 +5,25 @@ statement: formalized
 lean: Cslib.Databases.bcnfDecompose
 ---
 
-# Bcnf Decompose
+# BCNF decomposition with bounded depth
 
-The BCNF decomposition algorithm with at most `n` rounds of splitting: find a violation `X` of
-BCNF in `S` and split `S` into `X⁺ ∩ S` and `S \ (X⁺ \ X)`.
+**BCNF decomposition with bounded depth.** Let $F$ be a set of functional dependencies, $l$ a
+list of attributes, $n$ a natural number and $S$ a scheme. For $n = 0$ the result is the list $[S]$.
+For $n > 0$, the candidate violations of BCNF in $S$ built from $l$ are searched in order for the
+first $X$ that violates BCNF in $S$ for $F$. If there is none, the result is $[S]$. Otherwise, with
+$X^+$ the attribute closure of $X$ under $F$, the result is the decomposition of $X^+ \cap S$
+followed by the decomposition of $S \setminus (X^+ \setminus X)$, both computed with depth bound
+$n - 1$.
 
 ## Depends on
 
-- [FD](../functional-dependencies/fd.md)
+- [Functional dependency](../functional-dependencies/fd.md)
 
 ## Proof depends on
 
-- [Is BCNFViolation](is-bcnfviolation.md)
-- [Attr Closure](../functional-dependencies/attr-closure.md)
-- [Bcnf Candidates](bcnf-candidates.md)
+- [BCNF violations](is-bcnfviolation.md)
+- [Attribute closure](../functional-dependencies/attr-closure.md)
+- [Candidate BCNF violations](bcnf-candidates.md)
 
 ## Sources
 

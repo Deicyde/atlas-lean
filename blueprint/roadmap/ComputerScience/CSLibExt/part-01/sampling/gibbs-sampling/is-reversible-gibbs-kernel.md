@@ -6,14 +6,18 @@ proof: formalized
 lean: Cslib.MachineLearning.Sampling.isReversible_gibbsKernel
 ---
 
-# Is Reversible gibbs Kernel
+# Gibbs updates are reversible
 
-A Gibbs update is reversible with respect to the target.
+**Gibbs updates are reversible.** Let $\pi$ be a probability distribution on the
+configurations $x : \iota \to S$, with $\iota$ and $S$ finite, such that $\pi(x) \neq 0$ for every
+$x$. For every coordinate $i$, the Markov kernel $K$ of the Gibbs update of coordinate $i$ is
+reversible with respect to $\pi$: for all measurable sets $A$ and $B$ of configurations,
+$\int_A K(x, B) \, d\pi(x) = \int_B K(x, A) \, d\pi(x)$.
 
 ## Depends on
 
-- [Gibbs Step](gibbs-step.md)
-- [Pmf Kernel](../metropolis-hastings/pmf-kernel.md)
+- [Gibbs update](gibbs-step.md)
+- [Markov kernel of a transition rule](../metropolis-hastings/pmf-kernel.md)
 
 ## Proof depends on
 

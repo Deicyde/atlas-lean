@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.medianOfMedians_source_exists
 ---
 
-# Median Of Medians source exists
+# Median of medians selects every one-based rank
 
-Every valid one-based rank on distinct input returns a member with that set rank.
+**Median of medians selects every one-based rank.** Let $L$ be a list without repeated
+entries over a linear order, of length $n$, and let $1 \le i \le n$. Then median-of-medians
+selection on $L$ at zero-based rank $i - 1$ returns an element $x$ of $L$, and the set
+$\{y \in L : y \le x\}$ has exactly $i$ elements.
 
 ## Depends on
 
-- [Median Of Medians](median-of-medians.md)
+- [Median-of-medians selection](median-of-medians.md)
 
 ## Proof depends on
 
-- [Median Of Medians correct](median-of-medians-correct.md)
-- [Median Of Medians exists](median-of-medians-exists.md)
-- [Median Of Medians source rank](median-of-medians-source-rank.md)
+- [Correctness of median-of-medians selection](median-of-medians-correct.md)
+- [Median-of-medians selection succeeds on valid ranks](median-of-medians-exists.md)
+- [One-based rank of a median-of-medians result](median-of-medians-source-rank.md)
 
 ## Sources
 

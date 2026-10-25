@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.Edge
 ---
 
-# Edge
+# Edge of a directed adjacency graph
 
-Directed edge membership in an ordered adjacency list.
+**Edge of a directed adjacency graph.** For a directed adjacency graph $G$ on $V$ and
+vertices $s, t \in V$, there is an edge from $s$ to $t$ in $G$ when $t$ occurs in the adjacency
+list of $s$.
 
 ## Depends on
 
-- [Directed Adjacency](directed-adjacency.md)
+- [Directed adjacency graph](directed-adjacency.md)
 
 ## Sources
 

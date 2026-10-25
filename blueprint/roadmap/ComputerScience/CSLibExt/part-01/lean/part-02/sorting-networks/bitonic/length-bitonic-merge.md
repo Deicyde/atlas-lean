@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.length_bitonicMerge
 ---
 
-# Length bitonic Merge
+# Size of the bitonic merger
 
-The bitonic merger on `2 ^ k` wires has `k 2 ^ (k - 1)` comparators.
+**Size of the bitonic merger.** For all natural numbers $k$ and $b$, the bitonic merger on
+the block of wires $[b, b + 2^k)$ has $k \cdot 2^{k-1}$ comparators; precisely, twice its number
+of comparators equals $k \cdot 2^k$.
 
 ## Depends on
 
-- [Bitonic Merge](bitonic-merge.md)
+- [Bitonic merger](bitonic-merge.md)
 
 ## Proof depends on
 
-- [Half Cleaner](half-cleaner.md)
+- [Half-cleaner](half-cleaner.md)
 - [The bitonic sorter sorts every `0`-`1` input](length-half-cleaner.md)
 
 ## Sources

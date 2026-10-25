@@ -13,9 +13,9 @@ reassign every point to a nearest new center.
 
 ## Depends on
 
-- [Nearest](nearest.md)
-- [Centers](centers.md)
-- [Cost](cost.md)
+- [Nearest-center assignment](nearest.md)
+- [The centroid update step](centers.md)
+- [The k-means cost](cost.md)
 
 ## Proof depends on
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Crypto.Protocols.PerfectSecrecy.groupOTP_ciphertextDist_eq_uniform
 ---
 
-# Group OTP ciphertext Dist eq uniform
+# Group one-time pad ciphertexts are uniform
 
-Every ciphertext of the group one-time pad is uniform, whatever the message.
+**Group one-time pad ciphertexts are uniform.** Let $G$ be a finite group. For every
+message $m \in G$, the ciphertext of $m$ under the group one-time pad on $G$, whose key is
+drawn uniformly from $G$, is uniformly distributed on $G$.
 
 ## Depends on
 
-- [Group OTP](group-otp.md)
+- [The group one-time pad](group-otp.md)
 
 ## Sources
 

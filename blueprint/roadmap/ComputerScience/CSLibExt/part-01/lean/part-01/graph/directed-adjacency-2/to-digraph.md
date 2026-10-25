@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.toDigraph
 ---
 
-# To Digraph
+# The digraph of a directed adjacency graph
 
-The Mathlib directed graph obtained by forgetting traversal orders and multiplicity.
+**The digraph of a directed adjacency graph.** The digraph associated with a directed
+adjacency graph $G$ on a vertex type $V$ is the directed graph on $V$ in which $s$ is adjacent to
+$t$ exactly when $G$ has an edge from $s$ to $t$. It forgets the order of the adjacency lists and
+the multiplicity of their entries.
 
 ## Depends on
 
-- [Directed Adjacency](directed-adjacency.md)
+- [Directed adjacency graph](directed-adjacency.md)
 
 ## Proof depends on
 
-- [Edge](edge.md)
+- [Edge of a directed adjacency graph](edge.md)
 
 ## Sources
 

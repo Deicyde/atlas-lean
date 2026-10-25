@@ -11,11 +11,11 @@ A finite directed graph is acyclic when it contains no explicit simple directed 
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Directed Cycle In](directed-cycle-in.md)
+- [Directed cycle within a vertex list](directed-cycle-in.md)
 
 ## Sources
 

@@ -6,24 +6,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Karger.sum_surviveProb_le_one
 ---
 
-# The survival events of distinct cuts are disjoint
+# Survival probabilities of distinct cuts sum to at most one
 
-**The survival events of distinct cuts are disjoint**: a run outputs at most one partition, so
-the survival probabilities of pairwise distinct cuts add up to at most `1`.
+**Survival probabilities of distinct cuts sum to at most one.** Let $G$ be a valid multigraph
+with vertex list $S$, let $f$ be a number of allowed contractions, and let $X_1, \dots, X_m$ be
+Boolean functions on the vertex type that are pairwise distinct as partitions of $S$. Then the
+probabilities that the contraction process on $G$, with $f$ contractions allowed, outputs
+$X_1, \dots, X_m$ add up to at most $1$.
+
+The survival events are disjoint: a run outputs at most one partition.
 
 ## Depends on
 
-- [Distinct On](distinct-on.md)
-- [State](state.md)
-- [Valid](valid.md)
-- [Survive Prob](survive-prob.md)
+- [Cuts distinct as partitions](distinct-on.md)
+- [Multigraph state of Karger's algorithm](state.md)
+- [Valid multigraph](valid.md)
+- [Probability that a run outputs a given cut](survive-prob.md)
 
 ## Proof depends on
 
-- [Is Cut](is-cut.md)
-- [Contract](contract.md)
-- [Rename](rename.md)
-- [Valid contract](valid-contract.md)
+- [Cuts of a multigraph](is-cut.md)
+- [Edge contraction](contract.md)
+- [Renaming a vertex](rename.md)
+- [Contraction preserves validity and removes one vertex](valid-contract.md)
 
 ## Sources
 

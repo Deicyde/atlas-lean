@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.DijkstraCost.total
 ---
 
-# Total
+# Total Dijkstra cost
 
-Total charged events in the dense Dijkstra cost model.
+**Total Dijkstra cost.** The total of a Dijkstra cost record is its number of vertex entries
+inspected by minimum selection plus its number of adjacency entries inspected by relaxation.
 
 ## Depends on
 
-- [Dijkstra Cost](dijkstra-cost.md)
+- [Cost of dense Dijkstra](dijkstra-cost.md)
 
 ## Sources
 

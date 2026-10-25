@@ -4,7 +4,7 @@ navigation: module
 
 # Recursive
 
-- [Recursive Matrix Accumulate](recursive-matrix-accumulate.md)
-- [Recursive Matrix Accumulate apply](recursive-matrix-accumulate-apply.md)
-- [Recursive Matrix Accumulate ret](recursive-matrix-accumulate-ret.md)
-- [Recursive Matrix Accumulate time](recursive-matrix-accumulate-time.md)
+- [Recursive matrix multiply-accumulate](recursive-matrix-accumulate.md)
+- [Entries of the recursive matrix multiply-accumulate](recursive-matrix-accumulate-apply.md)
+- [Correctness of the recursive matrix multiply-accumulate](recursive-matrix-accumulate-ret.md)
+- [Operation count of the recursive matrix multiply-accumulate](recursive-matrix-accumulate-time.md)

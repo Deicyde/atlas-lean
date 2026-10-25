@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivalds_one_wrong
 ---
 
-# Freivalds one wrong
+# The sharp Freivalds example has a wrong product
 
-The sharpness inputs really have an incorrect matrix product.
+**The sharp Freivalds example has a wrong product.** Let $A = B = (1)$ and $C = (0)$ be
+$1 \times 1$ matrices over $\mathbb{Z}/2\mathbb{Z}$. Then $AB \neq C$.
 
 ## Depends on
 
-- [Freivalds Matrix](../basic/freivalds-matrix.md)
+- [Matrix of a Freivalds input](../basic/freivalds-matrix.md)
 
 ## Sources
 

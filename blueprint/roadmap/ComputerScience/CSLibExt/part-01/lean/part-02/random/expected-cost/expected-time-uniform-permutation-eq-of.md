@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.expectedTime_uniformPermutation_eq_of_time_eq
 ---
 
-# Expected Time uniform Permutation eq of time eq
+# Constant running time on all rearrangements gives that expected time
 
-If the running time is the same constant `c` on every permutation of
-`xs`, the expected running time over the uniform permutation is `c`.
+**Constant running time on all rearrangements gives that expected time.** Let $A$ be an
+algorithm on lists whose running time $T_A(y)$ on each list $y$ is a natural number, let
+$x = (x_0, \dots, x_{n-1})$ be a list of length $n$, and let $c$ be a natural number. If
+$T_A(x_{\sigma(0)}, \dots, x_{\sigma(n-1)}) = c$ for every permutation $\sigma$ of
+$\{0, \dots, n-1\}$, then the expected running time of $A$ when its input is $x$ rearranged by a
+uniformly random permutation equals $c$.
 
 ## Depends on
 
-- [Expected Time](expected-time.md)
-- [Uniform Permutation](uniform-permutation.md)
+- [Expected running time](expected-time.md)
+- [Uniformly random rearrangement of a list](uniform-permutation.md)
 
 ## Proof depends on
 
-- [Expected Time eq of time eq](expected-time-eq-of-time-eq.md)
+- [Constant running time on the support gives that expected time](expected-time-eq-of-time-eq.md)
 
 ## Sources
 

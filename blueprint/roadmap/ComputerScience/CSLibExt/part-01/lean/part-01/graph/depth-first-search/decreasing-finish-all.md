@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.decreasingFinishAll
 ---
 
-# Decreasing Finish All
+# Whole-graph decreasing finish order
 
-Vertices of a whole-graph traversal, ordered from latest finish to earliest finish.
+**Whole-graph decreasing finish order.** For a directed graph $G$ with ordered adjacency
+lists, the whole-graph decreasing finish order is the decreasing finish order of the left-first
+depth-first search of $G$ whose roots are all vertices of $G$, taken in the graph's vertex
+enumeration order; its vertices are listed from the latest finished to the earliest finished.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Decreasing Finish](decreasing-finish.md)
+- [Decreasing finish order](decreasing-finish.md)
 
 ## Sources
 

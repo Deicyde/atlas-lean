@@ -14,16 +14,16 @@ a perfect matching while the algorithm matches at most `n` of them.
 
 ## Depends on
 
-- [Is Perfect](is-perfect.md)
+- [Perfect matchings of a sequence of arrivals](is-perfect.md)
 - [Online Matcher](online-matcher.md)
-- [Matched](matched.md)
+- [Number of arrivals an online matcher matches](matched.md)
 
 ## Proof depends on
 
-- [Gadgets Disjoint](gadgets-disjoint.md)
-- [Adversary](adversary.md)
-- [Adversary Opt](adversary-opt.md)
-- [Gadgets](gadgets.md)
+- [Gadgets with distinct vertices](gadgets-disjoint.md)
+- [The adversary for online bipartite matching](adversary.md)
+- [The adversary's offline matching](adversary-opt.md)
+- [The $n$ gadgets on $2n$ left vertices](gadgets.md)
 - [The adversary's arrivals have a perfect matching](is-perfect-adversary-opt.md)
 - [The adversary holds every algorithm to one match per gadget](matched-adversary-le.md)
 

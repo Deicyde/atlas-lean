@@ -12,7 +12,7 @@ at most `p` tasks share a step.
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 
 ## Sources
 

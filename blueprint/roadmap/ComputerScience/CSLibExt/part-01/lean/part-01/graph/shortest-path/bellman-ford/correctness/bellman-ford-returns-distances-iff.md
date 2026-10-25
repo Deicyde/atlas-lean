@@ -6,25 +6,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.bellmanFord_returns_distances_iff
 ---
 
-# Bellman Ford returns distances iff
+# Bellman-Ford succeeds exactly when no negative cycle is reachable
 
-Bellman-Ford returns distances exactly when no reachable negative cycle exists.
+**Bellman-Ford succeeds exactly when no negative cycle is reachable.** Let $E$ be a list of
+integer-weighted directed edges on the vertices $\{0, \dots, n-1\}$ and let $s$ be a vertex.
+Bellman-Ford run on $E$ from $s$ returns distances if and only if there is no negative cycle
+reachable from $s$, that is, no simple path from $s$ to a vertex $b$ together with a nonempty
+cycle through $b$ along edges of $E$ whose edge sources are pairwise distinct and whose total
+weight is negative.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Distances](../basic/distances.md)
-- [Edge](../basic/edge.md)
-- [Has Reachable Negative Cycle](../basic/has-reachable-negative-cycle.md)
-- [Result](../basic/result.md)
+- [Bellman-Ford cost counters](../basic/cost.md)
+- [Bellman-Ford distance table](../basic/distances.md)
+- [Weighted directed edge](../basic/edge.md)
+- [Existence of a reachable negative cycle](../basic/has-reachable-negative-cycle.md)
+- [Bellman–Ford result](../basic/result.md)
 - [Bellman Ford](bellman-ford.md)
 
 ## Proof depends on
 
-- [Is Weighted Path](../basic/is-weighted-path.md)
-- [Reachable Negative Cycle](../basic/reachable-negative-cycle.md)
-- [Path Vertices](../basic/path-vertices.md)
-- [Path Weight](../basic/path-weight.md)
+- [Weighted path in an edge list](../basic/is-weighted-path.md)
+- [Reachable negative cycle witness](../basic/reachable-negative-cycle.md)
+- [Vertices of a path](../basic/path-vertices.md)
+- [Bellman–Ford path weight](../basic/path-weight.md)
 
 ## Sources
 

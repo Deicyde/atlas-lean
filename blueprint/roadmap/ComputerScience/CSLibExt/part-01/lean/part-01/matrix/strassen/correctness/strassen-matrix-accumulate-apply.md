@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate_apply
 ---
 
-# Strassen Matrix Accumulate apply
+# Entries of Strassen's matrix accumulator
 
-Every Strassen output entry is its saved `C` entry plus the finite row-column
-product sum, with the left factor drawn from `A` and the right factor from `B`.
+**Entries of Strassen's matrix accumulator.** Let $R$ be a non-unital, non-associative ring.
+For every $k \ge 0$, all $2^k \times 2^k$ matrices $A$, $B$, $C$ over $R$ and all indices
+$i, j$, the $(i, j)$ entry of the matrix returned by Strassen's accumulator on $A$, $B$, $C$ is
+$C_{ij} + \sum_{t} A_{it} B_{tj}$, the sum running over all $2^k$ indices $t$.
 
 ## Depends on
 
-- [Basic](../strassen-matrix-accumulate.md)
+- [Strassen's matrix accumulator](../strassen-matrix-accumulate.md)
 
 ## Proof depends on
 
-- [Strassen Matrix Accumulate ret](strassen-matrix-accumulate-ret.md)
+- [Correctness of Strassen's matrix accumulator](strassen-matrix-accumulate-ret.md)
 
 ## Sources
 

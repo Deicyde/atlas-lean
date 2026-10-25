@@ -5,11 +5,13 @@ statement: formalized
 lean: Cslib.Crypto.PRF.OracleComp
 ---
 
-# Oracle Comp
+# Adaptive oracle algorithms
 
-An adaptive deterministic oracle algorithm: a computation in CSLib's free monad over one oracle;
-it either stops with an output in `α`, or asks a query in `X` and continues depending on the
-answer in `Y`.
+**Adaptive oracle algorithms.** For a type $X$ of queries, a type $Y$ of answers and a type
+$\alpha$ of outputs, an adaptive deterministic oracle algorithm is an element of CSLib's free
+monad over the polynomial functor of one oracle with queries $X$ and answers $Y$. It is built
+inductively: it either stops with an output in $\alpha$, or asks a query $x \in X$ and continues
+with an algorithm that depends on the answer $y \in Y$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Oracle Sig](oracle-sig.md)
+- [The signature of one oracle](oracle-sig.md)
 
 ## Sources
 

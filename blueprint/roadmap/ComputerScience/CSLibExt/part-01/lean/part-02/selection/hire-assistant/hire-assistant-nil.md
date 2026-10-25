@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_nil
 ---
 
-# Hire Assistant nil
+# Hire-assistant scan on no candidates
 
-Empty input interviews and hires nobody and returns no manager.
+**Hire-assistant scan on no candidates.** On the empty list, the hire-assistant scan returns
+no manager and an empty list of hires, with cost pair $(0, 0)$.
 
 ## Depends on
 
-- [Hire Assistant](hire-assistant.md)
+- [The hire-assistant scan](hire-assistant.md)
 
 ## Sources
 

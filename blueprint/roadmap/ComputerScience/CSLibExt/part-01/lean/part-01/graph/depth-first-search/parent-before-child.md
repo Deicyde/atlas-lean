@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.parent_before_child
 ---
 
-# Parent before child
+# In preorder, a DFS parent precedes its child
 
-A parent is discovered before its child in preorder.
+**In preorder, a DFS parent precedes its child.** Let $G$ be a finite directed graph and $R$ a
+list of root vertices, and run depth-first search on $G$ from $R$. If the pair $(c, p)$ occurs in
+the list of (child, parent) pairs recorded by the search, then $p$ occurs strictly before $c$ in
+the discovery order (preorder) of the search.
 
 ## Depends on
 
-- [Before](before.md)
-- [Traversal](traversal.md)
-- [Dfs](dfs.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Occurring before in a list](before.md)
+- [Depth-first traversal record](traversal.md)
+- [Left-first depth-first search](dfs.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
 - [Steps](steps.md)
-- [Parent Rel](parent-rel.md)
-- [Edge](../directed-adjacency-2/edge.md)
+- [Parent relation of a list of pairs](parent-rel.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
 
 ## Sources
 

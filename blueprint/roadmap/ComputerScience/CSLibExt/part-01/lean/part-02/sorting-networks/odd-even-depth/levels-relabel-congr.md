@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.OddEven.levels_relabel_congr
 ---
 
-# Levels relabel congr
+# Levels of a relabeled comparator list on the image wires
 
-Levels of a relabeled network on wires of the form `e y` depend only on the levels there.
+**Levels of a relabeled comparator list on the image wires.** Let $p$ be a comparator
+list and let $e : \mathbb{N} \to \mathbb{N}$ be injective. If two initial level assignments
+$\ell$ and $\ell'$ agree on every wire $e(y)$, then the levels after running $p$ with its
+wires relabeled by $e$, starting from $\ell$ and from $\ell'$, agree on every wire $e(y)$.
 
 ## Depends on
 
-- [Levels](../depth/levels.md)
-- [Relabel](../odd-even/relabel.md)
+- [Comparator levels under earliest scheduling](../depth/levels.md)
+- [Relabeling the wires of a comparator list](../odd-even/relabel.md)
 
 ## Proof depends on
 
-- [Levels relabel](levels-relabel.md)
+- [Levels of a relabeled comparator list](levels-relabel.md)
 
 ## Sources
 

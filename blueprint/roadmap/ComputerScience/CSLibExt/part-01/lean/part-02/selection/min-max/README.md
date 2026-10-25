@@ -4,12 +4,12 @@ navigation: module
 
 # Min Max
 
-- [Min Max](min-max.md)
-- [Min Max ret](min-max-ret.md)
-- [Min Max eq none iff](min-max-eq-none-iff.md)
-- [Min Max eq some iff](min-max-eq-some-iff.md)
-- [Min Max nil](min-max-nil.md)
-- [Min Max singleton](min-max-singleton.md)
-- [Min Max time odd](min-max-time-odd.md)
-- [Min Max time even](min-max-time-even.md)
-- [Min Max time](min-max-time.md)
+- [Simultaneous minimum and maximum](min-max.md)
+- [Correctness of the simultaneous minimum and maximum algorithm](min-max-ret.md)
+- [The min–max algorithm returns no result exactly on the empty list](min-max-eq-none-iff.md)
+- [Characterization of the min–max output](min-max-eq-some-iff.md)
+- [The min–max algorithm on the empty list](min-max-nil.md)
+- [The min–max algorithm on a one-element list](min-max-singleton.md)
+- [Comparisons of the min–max algorithm on odd-length lists](min-max-time-odd.md)
+- [Comparisons of the min–max algorithm on even-length lists](min-max-time-even.md)
+- [Comparison count of the simultaneous minimum and maximum algorithm](min-max-time.md)

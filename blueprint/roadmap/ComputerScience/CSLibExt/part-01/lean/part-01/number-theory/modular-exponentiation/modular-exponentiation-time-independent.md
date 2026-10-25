@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_time_independent
 ---
 
-# Modular Exponentiation time independent
+# The multiplication count depends only on the exponent
 
-Multiplication count depends on the exponent, not the base or modulus.
+**The multiplication count depends only on the exponent.** For all natural numbers $a$, $a'$,
+$b$, $n$ and $n'$, modular exponentiation performs the same number of multiplications with base
+$a$, exponent $b$ and modulus $n$ as with base $a'$, exponent $b$ and modulus $n'$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation time even](modular-exponentiation-time-even.md)
-- [Modular Exponentiation time odd](modular-exponentiation-time-odd.md)
-- [Modular Exponentiation zero](modular-exponentiation-zero.md)
+- [Multiplication count in the even case](modular-exponentiation-time-even.md)
+- [Multiplication count in the odd case](modular-exponentiation-time-odd.md)
+- [Base case of modular exponentiation](modular-exponentiation-zero.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.OddEven.depthLE_finalLayer
 ---
 
-# Depth LE final Layer
+# The final layer of the odd-even merger has depth at most one
 
-The last layer of the merger has depth at most `1`: its comparators are disjoint.
+**The final layer of the odd-even merger has depth at most one.** For every $k$, the
+final layer of the odd-even merger on $2^{k+2}$ wires, which compares wires $2i + 1$ and
+$2i + 2$ for each $i < 2^{k+1} - 1$, has depth at most $1$: its comparators are disjoint.
 
 ## Depends on
 
-- [Depth LE](../depth/depth-le.md)
-- [Final Layer](../odd-even/final-layer.md)
+- [Depth bound for a comparator list](../depth/depth-le.md)
+- [Last layer of the odd-even merger](../odd-even/final-layer.md)
 
 ## Proof depends on
 
-- [Levels](../depth/levels.md)
+- [Comparator levels under earliest scheduling](../depth/levels.md)
 
 ## Sources
 

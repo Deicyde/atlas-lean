@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.semanticEquivalent_refl
 ---
 
-# Semantic Equivalent refl
+# Semantic equivalence of directed adjacency graphs is reflexive
 
-Semantic graph equivalence is reflexive.
+**Semantic equivalence of directed adjacency graphs is reflexive.** Every directed adjacency
+graph $G$ is semantically equivalent to itself.
 
 ## Depends on
 
-- [Directed Adjacency](directed-adjacency.md)
-- [Semantically Equivalent](semantically-equivalent.md)
+- [Directed adjacency graph](directed-adjacency.md)
+- [Semantic equivalence of directed adjacency graphs](semantically-equivalent.md)
 
 ## Proof depends on
 
-- [Edge](edge.md)
+- [Edge of a directed adjacency graph](edge.md)
 
 ## Sources
 

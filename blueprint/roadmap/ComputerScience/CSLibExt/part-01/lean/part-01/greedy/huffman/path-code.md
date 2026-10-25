@@ -6,13 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.pathCode?
 ---
 
-# Path Code?
+# Root-to-leaf path code
 
-The root-to-leaf path for a symbol, using the empty path for a leaf root.
+**Root-to-leaf path code.** For a Huffman tree $T$ and a symbol $s$, the path code of $s$
+in $T$ records the edges on the path from the root of $T$ to the leftmost leaf labelled $s$,
+writing false for a left edge and true for a right edge. If $T$ is a single leaf labelled $s$,
+the path code is empty; if no leaf of $T$ is labelled $s$, there is no path code.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
+- [Huffman tree](huffman-tree.md)
 
 ## Sources
 

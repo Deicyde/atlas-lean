@@ -18,7 +18,7 @@ weights and means tends to $1$ if $k = a(n)$ and to $0$ otherwise as $v \to 0^+$
 
 ## Depends on
 
-- [Nearest](../../../part-02/kmeans/nearest.md)
+- [Nearest-center assignment](../../../part-02/kmeans/nearest.md)
 - [Responsibilities with a common variance](soft-assign.md)
 
 ## Proof depends on

@@ -6,21 +6,22 @@ proof: formalized
 lean: Cslib.MachineLearning.WeightedMajority.mistake_bound
 ---
 
-# The mistake bound for the penalty `1/2`
+# Mistake bound for the penalty $1/2$
 
-**The mistake bound for the penalty `1/2`**: starting from unit weights, the weighted
-majority algorithm makes `M` mistakes with `(4/3) ^ M ≤ n 2 ^ m` for every expert with `m`
-mistakes.
+**Mistake bound for the penalty $1/2$.** Run the weighted majority algorithm with rational
+weights and penalty $1/2$ on a list of rounds with $n$ experts, starting from weight $1$ on every
+expert, and let $M$ be its number of mistakes. Then every expert $i$, with $m$ mistakes on these
+rounds, satisfies $(4/3)^M \le n \cdot 2^m$.
 
 ## Depends on
 
-- [Round](round.md)
-- [Expert Mistakes](expert-mistakes.md)
-- [Mistakes](mistakes.md)
+- [Round of prediction with expert advice](round.md)
+- [Mistakes of an expert](expert-mistakes.md)
+- [Mistakes of the weighted majority algorithm](mistakes.md)
 
 ## Proof depends on
 
-- [The mistake bound](mistake-bound-general.md)
+- [Littlestone–Warmuth mistake bound](mistake-bound-general.md)
 
 ## Sources
 

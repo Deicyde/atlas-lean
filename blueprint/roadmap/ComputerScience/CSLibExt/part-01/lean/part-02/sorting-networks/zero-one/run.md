@@ -5,13 +5,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.run
 ---
 
-# Run
+# Running a comparator network
 
-Run a network on the input `v`.
+**Running a comparator network.** Let $\alpha$ be a linear order. The output of a comparator
+network on an assignment $v$ of a value in $\alpha$ to each of its $n$ wires is obtained by
+starting from $v$ and applying the comparators of the network one after another, in list
+order.
 
 ## Depends on
 
-- [Network](network.md)
+- [Comparator network](network.md)
 
 ## Proof depends on
 

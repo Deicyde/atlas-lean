@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Logic.PL.Proposition.length_le_three_of_mem_tseitin
 ---
 
-# Length le three of mem tseitin
+# Tseitin clauses have at most three literals
 
-Every clause of the Tseitin CNF has at most three literals.
+**Tseitin clauses have at most three literals.** For every proposition $A$ and every map
+$\iota$ from atoms to natural numbers, every clause of the Tseitin CNF of $A$ with respect to
+$\iota$ has at most three literals.
 
 ## Depends on
 
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Tseitin](tseitin.md)
+- [Tseitin CNF](tseitin.md)
 
 ## Proof depends on
 
-- [Neg Lit](neg-lit.md)
-- [Tseitin Aux](tseitin-aux.md)
-- [Tseitin eq](tseitin-eq.md)
+- [Complementary literal](neg-lit.md)
+- [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
+- [The Tseitin CNF reorders the reference encoding](tseitin-eq.md)
 
 ## Sources
 

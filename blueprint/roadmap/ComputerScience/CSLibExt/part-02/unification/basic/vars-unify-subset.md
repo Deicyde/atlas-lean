@@ -6,29 +6,31 @@ proof: formalized
 lean: Cslib.Unification.vars_unify_subset
 ---
 
-# Vars unify subset
+# Unification introduces no new variables
 
-`unify` introduces no variables: each value of its result uses only the variable itself
-and the variables of the equations.
+**Unification introduces no new variables.** Let $E$ be a list of equations between terms.
+If the unification algorithm succeeds on $E$ and returns the substitution $s$, then for every
+variable $x$, each variable of the term $s(x)$ is either $x$ itself or a variable occurring in
+some equation of $E$.
 
 ## Depends on
 
-- [Equations](equations.md)
-- [Subst](subst.md)
-- [Vars](vars.md)
-- [Eq Vars](eq-vars.md)
-- [Unify](unify.md)
+- [Lists of equations](equations.md)
+- [Substitution](subst.md)
+- [Variables of a term](vars.md)
+- [Variables of a list of equations](eq-vars.md)
+- [Martelli–Montanari unification](unify.md)
 
 ## Proof depends on
 
-- [Comp](comp.md)
-- [Single](single.md)
-- [Term](term.md)
-- [Size](size.md)
-- [Card eq Vars elim lt](card-eq-vars-elim-lt.md)
-- [Eq Size](eq-size.md)
-- [Subst Eqs](subst-eqs.md)
-- [Vars single comp subset](vars-single-comp-subset.md)
+- [Composition of substitutions](comp.md)
+- [Single-variable substitution](single.md)
+- [Terms for unification](term.md)
+- [Size of a term](size.md)
+- [Eliminating a solved variable lowers the number of variables](card-eq-vars-elim-lt.md)
+- [Total size of a list of equations](eq-size.md)
+- [Applying a substitution to a list of equations](subst-eqs.md)
+- [The elimination step of unification introduces no variables](vars-single-comp-subset.md)
 
 ## Sources
 

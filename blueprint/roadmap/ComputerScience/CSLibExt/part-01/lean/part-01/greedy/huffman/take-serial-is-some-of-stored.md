@@ -7,16 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.takeSerial?_isSome_of_stored
 ---
 
-# Take Serial? is Some of stored
+# A stored work item can be removed by its serial
 
-A work item stored at its own serial can always be taken from the table.
+**A stored work item can be removed by its serial.** Let $t$ be a table of optional Huffman
+work items and let $w$ be a work item with serial number $s$. If the entry of $t$ at index $s$
+is $w$, then removing serial $s$ from $t$ succeeds and returns the tree of $w$ together with an
+updated table.
 
 ## Depends on
 
-- [Huffman Priority](huffman-priority.md)
-- [Huffman Tree](huffman-tree.md)
-- [Huffman Work Item](huffman-work-item.md)
-- [Take Serial?](take-serial.md)
+- [Huffman priority](huffman-priority.md)
+- [Huffman tree](huffman-tree.md)
+- [Huffman work item](huffman-work-item.md)
+- [Removing a work item by serial](take-serial.md)
 
 ## Sources
 

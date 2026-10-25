@@ -21,7 +21,7 @@ if W fails, $e$ has no inferred type.
 
 - [Type schemes](../typing/scheme.md)
 - [Algorithm W](w.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
 
 ## Sources
 

@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.insertionSort_time
 ---
 
-# Insertion Sort time
+# Comparison bound for insertion sort
 
-Insertion sort performs at most `n * (n - 1) / 2` comparisons on a list of length `n`.
+**Comparison bound for insertion sort.** On a list of length $n$ over a linearly ordered
+type, insertion sort charges at most $n(n-1)/2$ comparisons.
 
 ## Depends on
 
-- [Insertion Sort](insertion-sort.md)
+- [Insertion sort with comparison cost](insertion-sort.md)
 
 ## Proof depends on
 
-- [Insertion Sort Insert](insertion-sort-insert.md)
-- [Insertion Sort Insert time le](insertion-sort-insert-time-le.md)
-- [Insertion Sort perm](insertion-sort-perm.md)
+- [Costed insertion into a list](insertion-sort-insert.md)
+- [Cost of a single insertion](insertion-sort-insert-time-le.md)
+- [Insertion sort permutes its input](insertion-sort-perm.md)
 
 ## Sources
 

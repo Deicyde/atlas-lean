@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.SkiRental.breakEven
 ---
 
-# Break Even
+# Break-even strategy
 
-The break-even strategy: buy on day `B`.
+**Break-even strategy.** For a purchase price $B$, the break-even strategy is the deterministic
+strategy that buys on day $B$.
 
 ## Depends on
 
-- [Strategy](strategy.md)
+- [Deterministic ski-rental strategy](strategy.md)
 
 ## Sources
 

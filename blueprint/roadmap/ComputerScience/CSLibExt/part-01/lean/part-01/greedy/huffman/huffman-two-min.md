@@ -6,9 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTwoMin
 ---
 
-# Huffman Two Min
+# Result of a two-minimum extraction
 
-The two successive minima and the heap left after extracting them.
+**Result of a two-minimum extraction.** A record consisting of two Huffman priorities, the
+first and the second, together with a binary min-heap of Huffman priorities, the rest.
+
+The two-minimum extraction fills it with the two successive minima of a heap and the heap left
+after removing them.
 
 ## Depends on
 

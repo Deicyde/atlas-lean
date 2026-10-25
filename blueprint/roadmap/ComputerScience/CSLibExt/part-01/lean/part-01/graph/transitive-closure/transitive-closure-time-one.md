@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TransitiveClosure.transitiveClosure_time_one
 ---
 
-# Transitive Closure time one
+# Cost of transitive closure on one vertex
 
-A singleton graph performs one initialization and one transition assignment.
+**Cost of transitive closure on one vertex.** For every Boolean adjacency matrix on a single
+vertex, the transitive-closure algorithm charges exactly $2$ time units: one cell assignment for
+the initialization and one for the single transition stage.
 
 ## Depends on
 
-- [Transitive Closure](transitive-closure.md)
+- [Saved-matrix transitive-closure algorithm](transitive-closure.md)
 
 ## Proof depends on
 
-- [Transitive Closure time](transitive-closure-time.md)
+- [Running time of the transitive-closure algorithm](transitive-closure-time.md)
 
 ## Sources
 

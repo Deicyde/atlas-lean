@@ -7,17 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.minMax_eq_some_iff
 ---
 
-# Min Max eq some iff
+# Characterization of the min–max output
 
-Both returned extrema occur in the input and bound all its members.
+**Characterization of the min–max output.** For every list $xs$ over a linearly ordered type
+and all elements $lo$ and $hi$ of that type, the simultaneous minimum and maximum algorithm returns
+the pair $(lo, hi)$ on $xs$ if and only if $lo$ and $hi$ both belong to $xs$, $lo \le x$ for every
+$x$ in $xs$, and $x \le hi$ for every $x$ in $xs$.
 
 ## Depends on
 
-- [Min Max](min-max.md)
+- [Simultaneous minimum and maximum](min-max.md)
 
 ## Proof depends on
 
-- [Min Max ret](min-max-ret.md)
+- [Correctness of the simultaneous minimum and maximum algorithm](min-max-ret.md)
 
 ## Sources
 

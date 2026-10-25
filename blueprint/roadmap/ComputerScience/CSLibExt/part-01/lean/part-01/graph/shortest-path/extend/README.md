@@ -6,10 +6,10 @@ navigation: module
 
 ## Floyd Warshall
 
-- [Is Edge Bounded Shortest Path Weight](is-edge-bounded-shortest-path-weight.md)
-- [Is Edge Bounded Shortest Path Weight iff](is-edge-bounded-shortest-path-weight-iff.md)
+- [Shortest path weight with at most $r$ edges](is-edge-bounded-shortest-path-weight.md)
+- [Characterization of the shortest path weight with at most $r$ edges](is-edge-bounded-shortest-path-weight-iff.md)
 
 ## Matrix
 
-- [Matrix Accumulate min Plus apply](matrix-accumulate-min-plus-apply.md)
-- [Matrix Accumulate edge Bounded](matrix-accumulate-edge-bounded.md)
+- [Entries of the min-plus matrix accumulator](matrix-accumulate-min-plus-apply.md)
+- [One min-plus multiplication extends shortest paths by one edge](matrix-accumulate-edge-bounded.md)

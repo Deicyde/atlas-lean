@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.medianOfMedians_base_correct
 ---
 
-# Median Of Medians base correct
+# Correctness of median-of-medians selection on short lists
 
-Successful base-case selection satisfies the duplicate-safe rank specification.
+**Correctness of median-of-medians selection on short lists.** Let $L$ be a list of length
+at most $140$ over a linearly ordered type and let $k$ be a natural number. If median-of-medians
+selection of rank $k$ in $L$ returns an element $x$, then $x$ occurs in $L$, the number of entries
+of $L$ less than $x$, counted with multiplicity, is at most $k$, and $k$ is less than the number
+of entries of $L$ that are at most $x$.
 
 ## Depends on
 
-- [Median Of Medians](median-of-medians.md)
+- [Median-of-medians selection](median-of-medians.md)
 
 ## Proof depends on
 
-- [Median Of Medians eq quickselect of length le](median-of-medians-eq-quickselect-of-leng.md)
+- [Median-of-medians selection is quickselect on short lists](median-of-medians-eq-quickselect-of-leng.md)
 - [Quickselect](../quickselect/quickselect.md)
-- [Quickselect correct](../quickselect/quickselect-correct.md)
+- [Correctness of quickselect](../quickselect/quickselect-correct.md)
 
 ## Sources
 

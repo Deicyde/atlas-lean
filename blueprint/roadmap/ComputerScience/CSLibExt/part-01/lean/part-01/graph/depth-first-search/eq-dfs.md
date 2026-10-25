@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.IsLeftFirstDFS.eq_dfs
 ---
 
-# Eq dfs
+# The left-first DFS specification determines the traversal
 
-The ordered relational specification determines exactly the executable traversal.
+**The left-first DFS specification determines the traversal.** Let $G$ be a directed graph
+with ordered adjacency lists, fix an ordered list of roots, and let $T$ be a traversal. If $T$
+conforms to left-first DFS for $G$ and these roots, then $T$ equals the traversal computed by
+left-first depth-first search of $G$ from these roots.
 
 ## Depends on
 
-- [Is Left First DFS](is-left-first-dfs.md)
-- [Traversal](traversal.md)
-- [Dfs](dfs.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Left-first depth-first traversals](is-left-first-dfs.md)
+- [Depth-first traversal record](traversal.md)
+- [Left-first depth-first search](dfs.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 

@@ -55,7 +55,7 @@ theorem HasType.subst {Γ : Ctx B} {e : Expr} {τ : Ty B} (hτ : HasType Γ e τ
 
 - [Generalization of a monotype](gen.md)
 - [Monotypes as type schemes](to-scheme.md)
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Sources
 

@@ -5,13 +5,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.ListRanking.round
 ---
 
-# Round
+# One round of pointer jumping
 
-One parallel round: every node adds its target's distance and jumps to its target's target.
+**One round of pointer jumping.** In one parallel round, every node $v$ whose pointer is a node
+$u$ adds the distance of $u$ to its own distance and moves its pointer to the pointer of $u$
+(undefined if that of $u$ is); a node whose pointer is undefined keeps its distance and its
+undefined pointer.
 
 ## Depends on
 
-- [State](state.md)
+- [Pointer-jumping state for list ranking](state.md)
 
 ## Sources
 

@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_time_odd
 ---
 
-# Modular Exponentiation time odd
+# Multiplication count in the odd case
 
-The odd source branch adds exactly one multiplication after its `b - 1` child.
+**Multiplication count in the odd case.** Let $a$, $b$ and $n$ be natural numbers with $b$ odd.
+Modular exponentiation with base $a$, exponent $b$ and modulus $n$ performs exactly one more
+multiplication than it does with base $a$, exponent $b - 1$ and modulus $n$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation odd](modular-exponentiation-odd.md)
+- [Odd step of modular exponentiation](modular-exponentiation-odd.md)
 
 ## Sources
 

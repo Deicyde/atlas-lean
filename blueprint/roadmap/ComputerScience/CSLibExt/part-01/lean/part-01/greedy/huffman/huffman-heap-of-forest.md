@@ -6,14 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.huffmanHeapOfForest
 ---
 
-# Huffman Heap Of Forest
+# Heap of a Huffman work forest
 
-Insert all priorities from a forest into a fresh binary heap.
+**Heap of a Huffman work forest.** The heap of a list of Huffman work items is obtained from
+the empty binary min-heap by inserting the priorities of the items one at a time, in list
+order.
 
 ## Depends on
 
-- [Huffman Priority](huffman-priority.md)
-- [Huffman Work Item](huffman-work-item.md)
+- [Huffman priority](huffman-priority.md)
+- [Huffman work item](huffman-work-item.md)
 - [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 
 ## Proof depends on

@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.insertionSort_correct
 ---
 
-# Insertion Sort correct
+# Correctness of insertion sort
 
-Insertion sort returns a sorted permutation of its input.
+**Correctness of insertion sort.** For every list $l$ over a linearly ordered type, the list
+returned by insertion sort is nondecreasing and is a permutation of $l$.
 
 ## Depends on
 
-- [Insertion Sort](insertion-sort.md)
+- [Insertion sort with comparison cost](insertion-sort.md)
 
 ## Proof depends on
 
-- [Insertion Sort perm](insertion-sort-perm.md)
-- [Insertion Sort sorted](insertion-sort-sorted.md)
+- [Insertion sort permutes its input](insertion-sort-perm.md)
+- [Insertion sort returns a sorted list](insertion-sort-sorted.md)
 
 ## Sources
 

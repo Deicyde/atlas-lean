@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Logic.PL.CNF.negClauses
 ---
 
-# Neg Clauses
+# Clauses containing a variable only negatively
 
-Clauses containing `x` negatively and not positively.
+**Clauses containing a variable only negatively.** For a variable $x$ and a CNF formula
+$\varphi$, the formula consisting of the clauses of $\varphi$, in their order, that contain the
+literal $\neg x$ and do not contain the literal $x$.
 
 ## Depends on
 

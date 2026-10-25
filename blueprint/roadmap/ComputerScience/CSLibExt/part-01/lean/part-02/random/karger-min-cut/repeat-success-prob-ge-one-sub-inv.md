@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Karger.repeatSuccessProb_ge_one_sub_inv
 ---
 
-# Repeat Success Prob ge one sub inv
+# Karger's algorithm succeeds with high probability
 
-With `⌈log₂ n⌉ · n (n - 1) / 2` runs (or more), the minimum cut size is found with probability
-at least `1 - 1 / n` (Karger's algorithm succeeds with high probability after `O(n² log n)`
-runs).
+**Karger's algorithm succeeds with high probability.** Let $G$ be a valid multigraph with
+$n \ge 2$ vertices and minimum cut size $k$, and let $t$ be a natural number with
+$\lceil \log_2 n \rceil \cdot n(n-1) \le 2t$. Then the probability that at least one of $t$
+independent runs of the contraction process on $G$ returns $k$ is at least $1 - 1/n$.
+
+Thus $O(n^2 \log n)$ runs find the minimum cut size with high probability.
 
 ## Depends on
 
-- [Is Min Cut](is-min-cut.md)
-- [State](state.md)
-- [Valid](valid.md)
-- [Repeat Success Prob](repeat-success-prob.md)
+- [Minimum cut size](is-min-cut.md)
+- [Multigraph state of Karger's algorithm](state.md)
+- [Valid multigraph](valid.md)
+- [Success probability of repeated runs](repeat-success-prob.md)
 
 ## Proof depends on
 

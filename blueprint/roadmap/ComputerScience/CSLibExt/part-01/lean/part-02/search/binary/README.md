@@ -4,10 +4,10 @@ navigation: module
 
 # Binary
 
-- [Bin Search Contains eq is Some](bin-search-contains-eq-is-some.md)
-- [Bin Search eq some iff](bin-search-eq-some-iff.md)
-- [Bin Search eq none iff](bin-search-eq-none-iff.md)
-- [Bin Search Contains eq true iff](bin-search-contains-eq-true-iff.md)
-- [Bin Search eq some iff mem](bin-search-eq-some-iff-mem.md)
-- [Bin Search eq none iff not mem](bin-search-eq-none-iff-not-mem.md)
-- [Bin Search Contains eq true iff mem](bin-search-contains-eq-true-iff-mem.md)
+- [Array binary search membership test agrees with binary search](bin-search-contains-eq-is-some.md)
+- [Result of bounded binary search on a sorted array](bin-search-eq-some-iff.md)
+- [Bounded binary search on a sorted array fails exactly when the key is absent](bin-search-eq-none-iff.md)
+- [Bounded binary search membership test on a sorted array is correct](bin-search-contains-eq-true-iff.md)
+- [Binary search on a sorted array finds exactly its members](bin-search-eq-some-iff-mem.md)
+- [Binary search on a sorted array fails exactly on non-members](bin-search-eq-none-iff-not-mem.md)
+- [Binary search membership test on a sorted array is correct](bin-search-contains-eq-true-iff-mem.md)

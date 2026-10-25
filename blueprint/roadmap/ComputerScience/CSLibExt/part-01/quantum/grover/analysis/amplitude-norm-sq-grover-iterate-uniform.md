@@ -7,20 +7,24 @@ proof: formalized
 lean: Cslib.Grover.amplitudeNormSq_groverIterate_uniform
 ---
 
-# Amplitude Norm Sq grover Iterate uniform
+# Grover iterates of the uniform state are unit vectors
 
-Grover iteration preserves normalization of the uniform initial state.
+**Grover iterates of the uniform state are unit vectors.** Let $\alpha$ be a nonempty finite
+search space, $M \subseteq \alpha$ a marked set, and $u$ the uniform amplitude vector, given by
+$u(x) = 1/\sqrt{|\alpha|}$ for every $x \in \alpha$. For every $k \in \mathbb{N}$, let $\psi_k$
+be the vector obtained from $u$ by applying the Grover step for $M$ $k$ times. Then
+$\sum_{x \in \alpha} \psi_k(x)^2 = 1$.
 
 ## Depends on
 
-- [Amplitude Norm Sq](../basic/amplitude-norm-sq.md)
-- [Grover Iterate](grover-iterate.md)
-- [Uniform Amplitude](../basic/uniform-amplitude.md)
+- [Squared norm of an amplitude vector](../basic/amplitude-norm-sq.md)
+- [Grover iterate](grover-iterate.md)
+- [Uniform amplitude vector](../basic/uniform-amplitude.md)
 
 ## Proof depends on
 
-- [Amplitude Norm Sq grover Iterate](amplitude-norm-sq-grover-iterate.md)
-- [Amplitude Norm Sq uniform Amplitude](../basic/amplitude-norm-sq-uniform-amplitude.md)
+- [Grover iteration preserves the squared norm](amplitude-norm-sq-grover-iterate.md)
+- [The uniform amplitude vector is normalized](../basic/amplitude-norm-sq-uniform-amplitude.md)
 
 ## Sources
 

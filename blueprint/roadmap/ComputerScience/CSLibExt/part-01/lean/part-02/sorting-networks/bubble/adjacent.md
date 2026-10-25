@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bubble.adjacent
 ---
 
-# Adjacent
+# Adjacent comparator
 
-The comparator on wires `i, i + 1`, if both exist.
+**Adjacent comparator.** For $n$ wires and an index $i$, this is the comparator on
+wires $i$ and $i + 1$ when $i + 1 < n$, and nothing when wire $i + 1$ does not exist.
 
 ## Depends on
 

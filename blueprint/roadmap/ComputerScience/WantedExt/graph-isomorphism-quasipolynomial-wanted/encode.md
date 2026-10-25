@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.ComputerScience.GraphIsomorphismQuasipolynomialWanted.encode
 ---
 
-# Encode
+# Bit encoding of a graph code
 
-Bit serialization of a graph code: vertex count then row-major adjacency.
+**Bit encoding of a graph code.** The bit encoding of a graph code with $n$ vertices and
+adjacency matrix $A$ is the prefix-free encoding of $n$ followed by the $n^2$ entries of $A$, as
+bits, in row-major order: $A_{0,0}, A_{0,1}, \dots, A_{0,n-1}, A_{1,0}, \dots, A_{n-1,n-1}$.
 
 ## Depends on
 
-- [Graph Code](graph-code.md)
+- [Graph codes](graph-code.md)
 
 ## Proof depends on
 
-- [Nat To Bits](nat-to-bits.md)
+- [Prefix-free encoding of a natural number](nat-to-bits.md)
 
 ## Sources
 

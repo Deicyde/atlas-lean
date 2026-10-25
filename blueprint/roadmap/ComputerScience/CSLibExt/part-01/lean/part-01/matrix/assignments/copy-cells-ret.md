@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.copyCells_ret
 ---
 
-# Copy Cells ret
+# The counted matrix copy returns its input
 
-The counted copy returns the unchanged saved matrix.
+**The counted matrix copy returns its input.** For every $n \times n$ matrix $A$ with entries
+in any type, the value returned by the counted copy of $A$ is $A$ itself.
 
 ## Depends on
 
-- [Copy Cells](copy-cells.md)
+- [Counted copy of a square matrix](copy-cells.md)
 
 ## Sources
 

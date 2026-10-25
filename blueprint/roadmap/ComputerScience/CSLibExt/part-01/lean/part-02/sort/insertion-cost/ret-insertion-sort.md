@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.ret_insertionSort
 ---
 
-# Ret insertion Sort
+# Cost-annotated insertion sort returns the standard insertion sort
 
-Erasing comparison costs recovers Mathlib's insertion sort.
+**Cost-annotated insertion sort returns the standard insertion sort.** For every list $xs$
+over a linearly ordered type, the list returned by insertion sort with comparison costs equals the
+standard insertion sort of $xs$ with respect to $\le$, which inserts the head into the sorted
+tail.
 
 ## Depends on
 
-- [Insertion Sort](insertion-sort.md)
+- [Insertion sort with comparison cost](insertion-sort.md)
 
 ## Proof depends on
 
-- [Insertion Sort Insert](insertion-sort-insert.md)
-- [Ret insertion Sort Insert](ret-insertion-sort-insert.md)
+- [Costed insertion into a list](insertion-sort-insert.md)
+- [Costed insertion returns the ordered insertion](ret-insertion-sort-insert.md)
 
 ## Sources
 

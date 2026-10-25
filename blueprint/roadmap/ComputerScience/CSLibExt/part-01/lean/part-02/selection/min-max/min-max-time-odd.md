@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.minMax_time_odd
 ---
 
-# Min Max time odd
+# Comparisons of the min–max algorithm on odd-length lists
 
-Odd inputs use a free first-element seed and compare each remaining pair three times.
+**Comparisons of the min–max algorithm on odd-length lists.** For every natural number $k$ and
+every list of length $2k + 1$ over a linearly ordered type, the simultaneous minimum and maximum
+algorithm makes exactly $3k$ comparisons.
 
 ## Depends on
 
-- [Min Max](min-max.md)
+- [Simultaneous minimum and maximum](min-max.md)
 
 ## Proof depends on
 
-- [Min Max singleton](min-max-singleton.md)
+- [The min–max algorithm on a one-element list](min-max-singleton.md)
 
 ## Sources
 

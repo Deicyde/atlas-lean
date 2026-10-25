@@ -6,26 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.bitonicSorter_depthLE
 ---
 
-# Batcher's bitonic sorter on `2 ^ k` wires has depth at most `k (k + 1) / 2`
+# Batcher's bitonic sorting network has depth at most $k(k+1)/2$
 
-**Batcher's bitonic sorter on `2 ^ k` wires has depth at most `k (k + 1) / 2`**.
+**Batcher's bitonic sorting network has depth at most $k(k+1)/2$.** For every natural number
+$k$, Batcher's bitonic sorting network on $2^k$ wires has depth at most $d$ for some natural
+number $d$ with $2d \le k(k+1)$; that is, its depth is at most $k(k+1)/2$.
 
 ## Depends on
 
-- [Bitonic Sorter](../bitonic/bitonic-sorter.md)
-- [Depth LE](depth-le-2.md)
+- [Batcher's bitonic sorting network](../bitonic/bitonic-sorter.md)
+- [Depth bound for a comparator network](depth-le-2.md)
 
 ## Proof depends on
 
-- [Depth LE](depth-le.md)
-- [Within](../bitonic/within.md)
-- [Bitonic Merge](../bitonic/bitonic-merge.md)
-- [Bitonic Sort N](../bitonic/bitonic-sort-n.md)
-- [The bitonic sorter on `2 ^ k` wires has depth at most `k (k + 1) / 2`](depth-le-bitonic-sort-n.md)
-- [Half Cleaner](../bitonic/half-cleaner.md)
-- [Of Pairs](../bitonic/of-pairs.md)
-- [Network](../zero-one/network.md)
-- [To Pairs](to-pairs.md)
+- [Depth bound for a comparator list](depth-le.md)
+- [Comparators within an interval](../bitonic/within.md)
+- [Bitonic merger](../bitonic/bitonic-merge.md)
+- [Batcher's bitonic sorter on a block of wires](../bitonic/bitonic-sort-n.md)
+- [Depth of the bitonic sorter's comparator list](depth-le-bitonic-sort-n.md)
+- [Half-cleaner](../bitonic/half-cleaner.md)
+- [Restricting comparators to finitely many wires](../bitonic/of-pairs.md)
+- [Comparator network](../zero-one/network.md)
+- [Comparator list of a network](to-pairs.md)
 
 ## Sources
 

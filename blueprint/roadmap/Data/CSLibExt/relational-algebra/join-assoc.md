@@ -18,8 +18,8 @@ The natural join is associative.
 ## Proof depends on
 
 - [Compatible](compatible.md)
-- [Compatible merge left](compatible-merge-left.md)
-- [Compatible merge right](compatible-merge-right.md)
+- [Compatibility with a merge, grouped from the left](compatible-merge-left.md)
+- [Compatibility with a merge, grouped from the right](compatible-merge-right.md)
 - [Merge](merge.md)
 
 ## Sources

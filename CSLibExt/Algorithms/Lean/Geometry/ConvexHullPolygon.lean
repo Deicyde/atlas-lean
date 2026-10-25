@@ -54,8 +54,10 @@ universe u
 
 variable {𝕜 : Type u} [Field 𝕜] [LinearOrder 𝕜] [IsStrictOrderedRing 𝕜]
 
-/-- The upper chain of points sorted by `(x, y)`: the lower-chain scan over the reversed list,
-from the last point back to the first. -/
+/-- **Upper chain.** Let $K$ be a field with a linear order. The upper chain of a list of points
+$p_1, \dots, p_n \in K^2$ is the lower chain of the reversed list $p_n, \dots, p_1$, together with
+its cost: the same scan, counting the same orientation tests. For points sorted by $(x, y)$ it
+runs from the last point back to the first. -/
 def upperHull (ps : List (𝕜 × 𝕜)) : TimeM ℕ (List (𝕜 × 𝕜)) := lowerHull ps.reverse
 
 /-- The hull of points sorted by `(x, y)`, counterclockwise from the first point: the lower chain,
@@ -106,7 +108,10 @@ private theorem chainScan_neg : ∀ (st ps : List (𝕜 × 𝕜)),
       exact ⟨this.1, by rw [this.2]⟩
 
 omit [IsStrictOrderedRing 𝕜] in
-/-- The upper chain is the reflected lower chain of the reflected, reversed input. -/
+/-- **The upper chain is a reflected lower chain.** Let $\Bbbk$ be a field with a linear order.
+For every list $p_1, \dots, p_n$ of points of $\Bbbk^2$, the upper chain of the list is the image
+under $p \mapsto -p$ of the lower chain of $-p_n, \dots, -p_1$, and the two computations have the
+same cost. -/
 theorem upperHull_eq (ps : List (𝕜 × 𝕜)) :
     (upperHull ps).ret = (lowerHull (ps.reverse.map Neg.neg)).ret.map Neg.neg ∧
       (upperHull ps).time = (lowerHull (ps.reverse.map Neg.neg)).time := by
@@ -125,7 +130,10 @@ private theorem sorted_reflect {ps : List (𝕜 × 𝕜)} (hs : ps.Pairwise fun 
   rw [List.pairwise_map]
   exact (List.pairwise_reverse.2 hs).imp fun h => toLex_neg_lt_iff.2 h
 
-/-- The upper chain is a sublist of the reversed input. -/
+/-- **The upper chain is a subsequence of the reversed input.** Let $K$ be an ordered field and
+let $p_1, \dots, p_n \in K^2$ be strictly increasing in the lexicographic $(x, y)$ order. Then the
+upper chain of $p_1, \dots, p_n$ is a sublist of the reversed list $p_n, \dots, p_1$: it is
+obtained from $p_n, \dots, p_1$ by deleting some of the entries. -/
 theorem upperHull_sublist (ps : List (𝕜 × 𝕜)) (hs : ps.Pairwise fun a b => toLex a < toLex b) :
     (upperHull ps).ret <+ ps.reverse := by
   rw [(upperHull_eq ps).1]
@@ -133,7 +141,9 @@ theorem upperHull_sublist (ps : List (𝕜 × 𝕜)) (hs : ps.Pairwise fun a b =
   rwa [List.map_map, show Neg.neg ∘ Neg.neg = (id : 𝕜 × 𝕜 → 𝕜 × 𝕜) from funext neg_neg,
     List.map_id] at this
 
-/-- The upper chain starts at the last input point. -/
+/-- **The upper chain starts at the last point.** Let $p_1, \dots, p_n$ be points of $\Bbbk^2$,
+for an ordered field $\Bbbk$, strictly increasing in the lexicographic order on $(x, y)$. If
+$n = 0$ the upper chain is empty; otherwise its first vertex is $p_n$. -/
 theorem upperHull_head? (ps : List (𝕜 × 𝕜)) (hs : ps.Pairwise fun a b => toLex a < toLex b) :
     (upperHull ps).ret.head? = ps.getLast? := by
   rw [(upperHull_eq ps).1, List.head?_map, lowerHull_head? _ (sorted_reflect hs), List.head?_map,
@@ -141,7 +151,9 @@ theorem upperHull_head? (ps : List (𝕜 × 𝕜)) (hs : ps.Pairwise fun a b => 
     Option.map_id, List.head?_reverse]
   rfl
 
-/-- The upper chain ends at the first input point. -/
+/-- **The upper chain ends at the first point.** Let $p_1, \dots, p_n$ be points of $\Bbbk^2$, for
+an ordered field $\Bbbk$, strictly increasing in the lexicographic order on $(x, y)$. If $n = 0$
+the upper chain is empty; otherwise its last vertex is $p_1$. -/
 theorem upperHull_getLast? (ps : List (𝕜 × 𝕜)) (hs : ps.Pairwise fun a b => toLex a < toLex b) :
     (upperHull ps).ret.getLast? = ps.head? := by
   rw [(upperHull_eq ps).1, List.getLast?_map, lowerHull_getLast? _ (sorted_reflect hs),
@@ -150,7 +162,12 @@ theorem upperHull_getLast? (ps : List (𝕜 × 𝕜)) (hs : ps.Pairwise fun a b 
     List.getLast?_reverse]
   rfl
 
-/-- The upper chain turns strictly left at every inner vertex. -/
+/-- **The upper chain turns strictly left.** Let $K$ be an ordered field, let
+$p_1, \dots, p_n \in K^2$ be strictly increasing in the lexicographic $(x, y)$ order, and let
+$c_0, c_1, \dots, c_{m-1}$ be the upper chain of $p_1, \dots, p_n$. Then for every $i$ with
+$i + 2 < m$, we have $(c_{i+1} - c_i) \times (c_{i+2} - c_i) > 0$, where
+$(u_1, u_2) \times (v_1, v_2) = u_1 v_2 - v_1 u_2$ is the cross product: the vertices $c_i$,
+$c_{i+1}$, $c_{i+2}$ make a strict left turn. -/
 theorem upperHull_turn_left (ps : List (𝕜 × 𝕜)) (hs : ps.Pairwise fun a b => toLex a < toLex b)
     (i : ℕ) (h : i + 2 < (upperHull ps).ret.length) :
     0 < cross ((upperHull ps).ret[i + 1] - (upperHull ps).ret[i])
@@ -163,7 +180,11 @@ theorem upperHull_turn_left (ps : List (𝕜 × 𝕜)) (hs : ps.Pairwise fun a b
   rw [cross_neg_sub]
   exact key
 
-/-- Every input point is on or left of every edge of the upper chain. -/
+/-- **Every input point lies left of the upper chain.** Let $p_1, \dots, p_n$ be points of
+$\Bbbk^2$, for an ordered field $\Bbbk$, strictly increasing in the lexicographic order on
+$(x, y)$. Then for every input point $s$ and every two consecutive vertices $a, b$ of the upper
+chain, the cross product $(b - a) \times (s - a)$ is nonnegative: $s$ lies on or to the left of
+the edge from $a$ to $b$. -/
 theorem upperHull_left_of_edges (ps : List (𝕜 × 𝕜))
     (hs : ps.Pairwise fun a b => toLex a < toLex b) {s : 𝕜 × 𝕜} (hsps : s ∈ ps) :
     (upperHull ps).ret.IsChain fun a b => 0 ≤ cross (b - a) (s - a) := by
@@ -176,7 +197,10 @@ theorem upperHull_left_of_edges (ps : List (𝕜 × 𝕜))
   rwa [this]
 
 omit [IsStrictOrderedRing 𝕜] in
-/-- The upper chain makes at most `2 n` orientation tests. -/
+/-- **Running time of the upper chain scan.** Let $K$ be a field with a linear order and let
+$p_1, \dots, p_n \in K^2$ be any $n$ points, sorted or not. Computing the upper chain of
+$p_1, \dots, p_n$ costs at most $2n$, where the cost counts one unit per orientation test (one
+cross-product comparison) and nothing else. -/
 theorem upperHull_time_le (ps : List (𝕜 × 𝕜)) : (upperHull ps).time ≤ 2 * ps.length := by
   have := lowerHull_time_le (ps.reverse.map Neg.neg)
   rwa [List.length_map, List.length_reverse, ← (upperHull_eq ps).2] at this
@@ -187,7 +211,9 @@ omit [IsStrictOrderedRing 𝕜] in
 private theorem convexHull_ret (ps : List (𝕜 × 𝕜)) :
     (convexHull ps).ret = (lowerHull ps).ret ++ (upperHull ps).ret.tail.dropLast := rfl
 
-/-- The hull's vertices are input points. -/
+/-- **The hull's vertices are input points.** Let $p_1, \dots, p_n$ be points of $\Bbbk^2$, for an
+ordered field $\Bbbk$, strictly increasing in the lexicographic order on $(x, y)$. Then every
+vertex of their convex hull computed by the monotone chain algorithm is one of the $p_i$. -/
 theorem convexHull_subset (ps : List (𝕜 × 𝕜)) (hs : ps.Pairwise fun a b => toLex a < toLex b) :
     ∀ c ∈ (convexHull ps).ret, c ∈ ps := by
   intro c hc
@@ -197,8 +223,12 @@ theorem convexHull_subset (ps : List (𝕜 × 𝕜)) (hs : ps.Pairwise fun a b =
   · exact List.mem_reverse.1 ((upperHull_sublist ps hs).subset
       (List.mem_of_mem_tail (List.mem_of_mem_dropLast h)))
 
-/-- For at least two points, every input point is on or left of every edge of the closed hull
-polygon `H ++ [H.head]`: the polygon contains all the points. -/
+/-- **The hull polygon contains every input point.** Let $p_1, \dots, p_n$ be $n \ge 2$ points of
+$\Bbbk^2$, for an ordered field $\Bbbk$, strictly increasing in the lexicographic order on $(x, y)$,
+and let $v_1, \dots, v_m$ be the vertices of their convex hull computed by the monotone chain
+algorithm. Then for every input point $s$ and every edge $(a, b)$ of the closed polygon
+$v_1, \dots, v_m, v_1$ (that is, $a, b$ consecutive in this sequence), the cross product
+$(b - a) \times (s - a)$ is nonnegative: $s$ lies on or to the left of the edge from $a$ to $b$. -/
 theorem convexHull_left_of_edges (ps : List (𝕜 × 𝕜))
     (hs : ps.Pairwise fun a b => toLex a < toLex b) (hlen : 2 ≤ ps.length) {s : 𝕜 × 𝕜}
     (hsps : s ∈ ps) :
@@ -257,7 +287,9 @@ theorem convexHull_left_of_edges (ps : List (𝕜 × 𝕜))
   exact hUc.1
 
 omit [IsStrictOrderedRing 𝕜] in
-/-- The hull costs at most `4 n` orientation tests. -/
+/-- **The monotone chain hull makes at most $4n$ orientation tests.** Let $\Bbbk$ be a field with
+a linear order. For every list of $n$ points of $\Bbbk^2$, computing their convex hull by the
+monotone chain algorithm costs at most $4n$, where each orientation test costs one unit. -/
 theorem convexHull_time_le (ps : List (𝕜 × 𝕜)) : (convexHull ps).time ≤ 4 * ps.length := by
   have h1 := lowerHull_time_le ps
   have h2 := upperHull_time_le ps

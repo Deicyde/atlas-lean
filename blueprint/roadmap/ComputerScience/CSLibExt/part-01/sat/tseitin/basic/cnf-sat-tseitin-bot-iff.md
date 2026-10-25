@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Logic.PL.Proposition.cnfSat_tseitinBot_iff
 ---
 
-# Equisatisfiability
+# Equisatisfiability of the Tseitin transformation
 
-**Equisatisfiability**: the Tseitin CNF with `⊥` forced false is satisfiable iff `A` is
-true under some valuation with `⊥` false.
+**Equisatisfiability of the Tseitin transformation.** Let the atoms have a distinguished atom
+$\bot$, let $\iota$ be an injective map from atoms to natural numbers and let $A$ be a
+proposition. The Tseitin CNF of $A$ with respect to $\iota$, together with the unit clause making
+the variable $2\iota(\bot)$ false, is satisfiable if and only if $A$ is true under some valuation
+$v$ of the atoms with $v(\bot)$ false.
 
 ## Depends on
 
 - [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 - [Eval Bool](../../../../../../Logic/CSLibExt/propositional/natural-deduction/semantics/eval-bool.md)
-- [Tseitin Bot](tseitin-bot.md)
+- [Tseitin CNF with $\bot$ false](tseitin-bot.md)
 
 ## Proof depends on
 
@@ -24,7 +27,7 @@ true under some valuation with `⊥` false.
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Tseitin correctness](eval-bool-iff-exists-satisfies-tseitin.md)
-- [Tseitin](tseitin.md)
+- [Tseitin CNF](tseitin.md)
 - [Cnf Sat iff exists satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources

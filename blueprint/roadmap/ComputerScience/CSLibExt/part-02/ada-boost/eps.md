@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.MachineLearning.AdaBoost.eps
 ---
 
-# Eps
+# Weighted error of an AdaBoost round
 
-The weighted error of round `t`.
+**Weighted error of an AdaBoost round.** The weighted error $\varepsilon_t$ of round $t$ is the
+weighted training error of the weak hypothesis $h_t$ of round $t$ under the weights $D_t$ of
+round $t$.
 
 ## Depends on
 
@@ -15,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dist](dist.md)
-- [Err](err.md)
-- [Hyp](hyp.md)
+- [AdaBoost's weights](dist.md)
+- [Weighted training error](err.md)
+- [Weak hypothesis of an AdaBoost round](hyp.md)
 
 ## Sources
 

@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 - [Complete graph as an ordered adjacency](complete-adjacency.md)
 - [Symmetrized edge weights](sym-weight.md)
-- [Basic](../../graph/prim/prim.md)
+- [Prim's algorithm with an indexed binary heap](../../graph/prim/prim.md)
 
 ## Sources
 

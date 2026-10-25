@@ -12,8 +12,8 @@ Appending one edge adds exactly its integer weight.
 
 ## Depends on
 
-- [Edge](edge.md)
-- [Path Weight](path-weight.md)
+- [Weighted directed edge](edge.md)
+- [Bellman–Ford path weight](path-weight.md)
 
 ## Sources
 

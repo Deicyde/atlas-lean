@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.decreasingFinish_nodup
 ---
 
-# Decreasing Finish nodup
+# Decreasing finish order has no repeated vertices
 
-Decreasing finish order has no duplicate vertices.
+**Decreasing finish order has no repeated vertices.** For every directed graph $G$ with
+ordered adjacency lists and every ordered list of roots, the decreasing finish order of the
+depth-first search of $G$ from those roots contains no vertex twice.
 
 ## Depends on
 
-- [Decreasing Finish](decreasing-finish.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Decreasing finish order](decreasing-finish.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Traversal](traversal.md)
-- [Dfs](dfs.md)
-- [Postorder nodup](postorder-nodup.md)
+- [Depth-first traversal record](traversal.md)
+- [Left-first depth-first search](dfs.md)
+- [DFS finishes each vertex at most once](postorder-nodup.md)
 
 ## Sources
 

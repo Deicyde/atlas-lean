@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MillerRabin.not_prime_of_millerRabin_eq_false
 ---
 
-# Not prime of miller Rabin eq false
+# With bases in range, a composite answer of the Miller–Rabin test is correct
 
-A *composite* answer from `MILLER-RABIN` is always correct.
+**With bases in range, a composite answer of the Miller–Rabin test is correct.** Let $n$ be
+a natural number and $a_1, \dots, a_s$ a list of bases with $0 < a_i < n$ for each $i$. If the
+Miller–Rabin test run on $n$ with these bases answers *composite*, then $n$ is not prime.
 
 ## Depends on
 
-- [Miller Rabin](miller-rabin.md)
+- [The Miller–Rabin test](miller-rabin.md)
 
 ## Proof depends on
 
-- [Miller Rabin of prime](miller-rabin-of-prime.md)
+- [The Miller–Rabin test never rejects a prime when its bases lie in range](miller-rabin-of-prime.md)
 
 ## Sources
 

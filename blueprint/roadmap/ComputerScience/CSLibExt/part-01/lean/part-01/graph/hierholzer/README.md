@@ -4,43 +4,43 @@ navigation: module
 
 # Hierholzer
 
-- [Edge List Of](edge-list-of.md)
-- [Edge List](edge-list.md)
-- [Walk Edges](walk-edges.md)
-- [Is Balanced](is-balanced.md)
-- [Is Semi Balanced](is-semi-balanced.md)
-- [Is Euler Path](is-euler-path.md)
-- [Is Euler Circuit](is-euler-circuit.md)
+- [Edge list of an adjacency function](edge-list-of.md)
+- [Edge list of a directed graph](edge-list.md)
+- [Steps of a walk](walk-edges.md)
+- [Balanced directed multigraph](is-balanced.md)
+- [Semi-balanced directed multigraph](is-semi-balanced.md)
+- [Euler path in a directed multigraph](is-euler-path.md)
+- [Euler circuit in a directed multigraph](is-euler-circuit.md)
 
 ## The algorithm
 
-- [Visit](visit.md)
+- [Hierholzer's recursion](visit.md)
 - [Hierholzer](hierholzer.md)
 
 ## Edge lists
 
-- [Walk Edges append](walk-edges-append.md)
-- [Perm splice](perm-splice.md)
+- [Steps of a concatenated walk](walk-edges-append.md)
+- [Moving a block of a list in front of an element is a permutation](perm-splice.md)
 
 ## Degree bookkeeping
 
-- [Semi Balanced Edges](semi-balanced-edges.md)
-- [Balanced Edges](balanced-edges.md)
+- [Semi-balanced edge list](semi-balanced-edges.md)
+- [Balanced edge list](balanced-edges.md)
 
 ## The recursion
 
-- [Visit spec](visit-spec.md)
+- [Contract of Hierholzer's recursion](visit-spec.md)
 
 ## Correctness
 
-- [Hierholzer trail](hierholzer-trail.md)
-- [Hierholzer is Euler Path](hierholzer-is-euler-path.md)
-- [Hierholzer is Euler Circuit](hierholzer-is-euler-circuit.md)
-- [Hierholzer time](hierholzer-time.md)
+- [Hierholzer's algorithm returns a trail](hierholzer-trail.md)
+- [Hierholzer's algorithm finds Euler paths](hierholzer-is-euler-path.md)
+- [Hierholzer's algorithm finds Euler circuits](hierholzer-is-euler-circuit.md)
+- [Running time of Hierholzer's algorithm](hierholzer-time.md)
 
 ## Necessity
 
-- [Is Semi Balanced of is Euler Path](is-semi-balanced-of-is-euler-path.md)
-- [Is Balanced of is Euler Circuit](is-balanced-of-is-euler-circuit.md)
-- [Exists is Euler Path iff](exists-is-euler-path-iff.md)
-- [Exists is Euler Circuit iff](exists-is-euler-circuit-iff.md)
+- [A directed multigraph with an Euler path is semi-balanced](is-semi-balanced-of-is-euler-path.md)
+- [A directed multigraph with an Euler circuit is balanced](is-balanced-of-is-euler-circuit.md)
+- [Euler path criterion for directed multigraphs](exists-is-euler-path-iff.md)
+- [Euler circuit criterion for directed multigraphs](exists-is-euler-circuit-iff.md)

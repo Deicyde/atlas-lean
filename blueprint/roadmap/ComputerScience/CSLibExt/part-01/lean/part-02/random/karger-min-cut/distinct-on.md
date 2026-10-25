@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Karger.DistinctOn
 ---
 
-# Distinct On
+# Cuts distinct as partitions
 
-Two cuts that are distinct as partitions of `S`: they differ somewhere and agree somewhere on
-`S`, so neither is the other or its complement.
+**Cuts distinct as partitions.** Two maps $X, Y$ from vertices to booleans are distinct on a
+list of vertices $S$ when some $v \in S$ has $X(v) \ne Y(v)$ and some $w \in S$ has
+$X(w) = Y(w)$; so on $S$ neither cut is the other or its complement.
 
 ## Depends on
 

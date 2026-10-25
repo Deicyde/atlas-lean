@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.searchPath_mono
 ---
 
-# Search Path mono
+# The dead set of a search only grows
 
-The dead set of `searchPath` only grows.
+**The dead set of a search only grows.** For every set of used left vertices, every level
+$k$, every right vertex $j$ and every set of dead right vertices, each right vertex that is dead
+before the search at level $k$ from $j$ is still dead after it.
 
 ## Depends on
 
-- [Search Path](search-path.md)
+- [Depth-first search of a Hopcroft–Karp phase](search-path.md)
 
 ## Proof depends on
 
-- [Layers](layers.md)
-- [Partner Of](partner-of.md)
-- [Try Preds](try-preds.md)
-- [Try Preds mono](try-preds-mono.md)
+- [Alternating breadth-first layers](layers.md)
+- [Partner of a left vertex](partner-of.md)
+- [Trying the candidate predecessors of a right vertex](try-preds.md)
+- [Trying candidates keeps dead vertices dead](try-preds-mono.md)
 
 ## Sources
 

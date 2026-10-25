@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Crypto.PRF.OracleComp.done
 ---
 
-# Done
+# The oracle algorithm that stops at once
 
-Stop with output `a`.
+**The oracle algorithm that stops at once.** For an output $a \in \alpha$, this is the
+adaptive oracle algorithm with queries in $X$ and answers in $Y$ that asks no query and stops
+with output $a$.
 
 ## Depends on
 
-- [Oracle Comp](oracle-comp.md)
+- [Adaptive oracle algorithms](oracle-comp.md)
 
 ## Proof depends on
 
-- [Oracle Sig](oracle-sig.md)
+- [The signature of one oracle](oracle-sig.md)
 
 ## Sources
 

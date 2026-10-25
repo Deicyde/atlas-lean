@@ -6,14 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Prim.prim_edge_inspections
 ---
 
-# Prim edge inspections
+# Adjacency inspections of Prim's algorithm on a simple graph
 
-Exact duplicate-free undirected adjacency gives exactly two inspections per edge.
+**Adjacency inspections of Prim's algorithm on a simple graph.** Let $W$ be a linearly
+ordered type with a zero element, let $G$ be a simple graph on the vertices $0, \dots, n-1$, let
+$D$ be a directed adjacency structure on the same vertices with adjacency lists $A(u)$, let $w$
+assign a weight in $W$ to every unordered pair of vertices, not necessarily distinct, and let
+$r$ be a vertex. Suppose that for all vertices $u$ and $v$, $v$ occurs in $A(u)$ exactly when
+$u$ and $v$ are adjacent in $G$, and that no list $A(u)$ has repeated entries. Then the number
+of adjacency entries inspected by Prim's algorithm on $D$, $w$ and $r$ is twice the number of
+edges of $G$.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Basic](../prim.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Prim's algorithm with an indexed binary heap](../prim.md)
 
 ## Proof depends on
 

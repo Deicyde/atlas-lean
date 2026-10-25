@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.bellmanFord_source_predecessor_eq_none
 ---
 
-# Bellman Ford source predecessor eq none
+# Bellman-Ford gives the source no predecessor
 
-The successful predecessor tree has no predecessor at the source.
+**Bellman-Ford gives the source no predecessor.** Let $E$ be a list of integer-weighted
+directed edges on the vertices $\{0, \dots, n-1\}$ and let $s$ be a vertex. If Bellman-Ford run
+on $E$ from $s$ returns distances together with predecessor edges, then $s$ has no predecessor
+edge.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Distances](../basic/distances.md)
-- [Edge](../basic/edge.md)
-- [Result](../basic/result.md)
+- [Bellman-Ford cost counters](../basic/cost.md)
+- [Bellman-Ford distance table](../basic/distances.md)
+- [Weighted directed edge](../basic/edge.md)
+- [Bellman–Ford result](../basic/result.md)
 - [Bellman Ford](bellman-ford.md)
 
 ## Proof depends on
 
-- [Is Weighted Path](../basic/is-weighted-path.md)
-- [Reachable Negative Cycle](../basic/reachable-negative-cycle.md)
-- [Path Vertices](../basic/path-vertices.md)
-- [Path Weight](../basic/path-weight.md)
+- [Weighted path in an edge list](../basic/is-weighted-path.md)
+- [Reachable negative cycle witness](../basic/reachable-negative-cycle.md)
+- [Vertices of a path](../basic/path-vertices.md)
+- [Bellman–Ford path weight](../basic/path-weight.md)
 
 ## Sources
 

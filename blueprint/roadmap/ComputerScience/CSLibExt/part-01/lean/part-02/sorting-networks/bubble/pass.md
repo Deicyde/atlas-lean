@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bubble.pass
 ---
 
-# Pass
+# Bubble pass
 
-One bubble pass: the comparators `(0, 1), (1, 2), …, (m - 1, m)`.
+**Bubble pass.** On $n$ wires, the bubble pass ending at wire $m$ is the comparator
+network $(0, 1), (1, 2), \ldots, (m - 1, m)$, applied in this order, where a comparator
+$(i, i + 1)$ is left out when wire $i + 1$ does not exist (that is, when $i + 1 \ge n$).
 
 ## Depends on
 
-- [Network](../zero-one/network.md)
+- [Comparator network](../zero-one/network.md)
 
 ## Proof depends on
 
-- [Adjacent](adjacent.md)
+- [Adjacent comparator](adjacent.md)
 
 ## Sources
 

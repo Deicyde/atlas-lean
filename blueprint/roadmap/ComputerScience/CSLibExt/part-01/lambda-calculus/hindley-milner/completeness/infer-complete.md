@@ -20,8 +20,8 @@ substitution $r$.
 - [Type schemes](../typing/scheme.md)
 - [Monotypes](../typing/ty.md)
 - [Type inference for closed expressions](../algorithm-w/infer.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Proof depends on
 
@@ -32,7 +32,7 @@ substitution $r$.
 - [Applying a type substitution to a scheme](../typing/subst-ty.md)
 - [Algorithm W](../algorithm-w/w.md)
 - [Completeness of Algorithm W](w-complete.md)
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Sources
 

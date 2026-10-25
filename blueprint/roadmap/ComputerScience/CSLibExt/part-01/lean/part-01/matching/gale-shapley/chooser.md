@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.chooser
 ---
 
-# Chooser
+# Choosing the next proposer
 
-The first free proposer who has not proposed to everyone, if any.
+**Choosing the next proposer.** In a state $s$ of deferred acceptance with proposers
+$0, 1, \dots, n-1$, the chooser returns the least proposer $m$ who is free in $s$ and has made
+fewer than $n$ proposals in $s$, or no proposer if there is none.
 
 ## Depends on
 
-- [State](state.md)
+- [Deferred-acceptance state](state.md)
 
 ## Proof depends on
 
-- [Free](free.md)
+- [Free proposer](free.md)
 
 ## Sources
 

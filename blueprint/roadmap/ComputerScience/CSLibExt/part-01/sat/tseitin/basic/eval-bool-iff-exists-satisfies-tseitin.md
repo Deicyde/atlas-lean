@@ -8,28 +8,30 @@ lean: Cslib.Logic.PL.Proposition.evalBool_iff_exists_satisfies_tseitin
 
 # Tseitin correctness
 
-**Tseitin correctness**: for every valuation `v` of the atoms, `A` is true under `v`
-iff some assignment agreeing with `v` on the atom variables satisfies the Tseitin CNF.
+**Tseitin correctness.** Let $\iota$ be an injective map from atoms to natural numbers, let
+$A$ be a proposition and let $v$ be a valuation of the atoms. Then $A$ is true under $v$ if and
+only if some assignment $\sigma : \mathbb{N} \to \mathrm{Bool}$ with $\sigma(2\iota(a)) = v(a)$
+for every atom $a$ satisfies the Tseitin CNF of $A$ with respect to $\iota$.
 
 ## Depends on
 
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [Eval Bool](../../../../../../Logic/CSLibExt/propositional/natural-deduction/semantics/eval-bool.md)
-- [Tseitin](tseitin.md)
+- [Tseitin CNF](tseitin.md)
 
 ## Proof depends on
 
-- [Is Gate](is-gate.md)
-- [Spec](spec.md)
-- [Atom Val](atom-val.md)
-- [Lit Val](lit-val.md)
-- [Spec tseitin Aux](spec-tseitin-aux.md)
+- [Gate variables in a range](is-gate.md)
+- [Tseitin encoding invariant](spec.md)
+- [Value of a proposition read off the atom variables](atom-val.md)
+- [Truth value of a literal](lit-val.md)
+- [Correctness invariant of the Tseitin encoding](spec-tseitin-aux.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies.md)
-- [Tseitin Aux](tseitin-aux.md)
-- [Tseitin eq](tseitin-eq.md)
+- [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
+- [The Tseitin CNF reorders the reference encoding](tseitin-eq.md)
 
 ## Sources
 

@@ -23,7 +23,7 @@ relation over its inferred schema.
 ## Proof depends on
 
 - [Cond](cond.md)
-- [Attrs](attrs.md)
+- [Attributes of a selection condition](attrs.md)
 - [Eval](eval.md)
 - [Compatible](compatible.md)
 - [Is Over](is-over.md)

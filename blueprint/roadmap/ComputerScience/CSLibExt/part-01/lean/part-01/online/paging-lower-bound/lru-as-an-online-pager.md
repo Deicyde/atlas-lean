@@ -15,7 +15,7 @@ LRU as an online pager.
 
 ## Proof depends on
 
-- [Lru Step](../paging/lru-step.md)
+- [One LRU step](../paging/lru-step.md)
 
 ## Sources
 

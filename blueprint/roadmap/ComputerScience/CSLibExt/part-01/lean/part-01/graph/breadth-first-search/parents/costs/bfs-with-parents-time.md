@@ -6,22 +6,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BreadthFirstSearch.bfsWithParents_time
 ---
 
-# Bfs With Parents time
+# Exact cost of BFS with parents
 
-Exact selected BFS events: attempts, adjacency checks, enqueues and parent writes.
+**Exact cost of BFS with parents.** Let $G$ be a finite directed graph with vertex list $V$
+and adjacency lists $\mathrm{adj}(u)$, let $s$ be a vertex, and let $L$ be the list of vertices in
+the order in which breadth-first search from $s$ discovers them. The cost of breadth-first search
+with parents from $s$, counting dequeue attempts, adjacency checks, enqueues and parent writes,
+equals $|V| + \sum_{u \in L} |\mathrm{adj}(u)| + |L| + (|L| - 1)$, where adjacency lists are
+counted with repetitions and $|L| - 1$ is truncated at $0$.
 
 ## Depends on
 
-- [BFSForest](../internal/bfsforest.md)
-- [BFSResult](../../../breadth-first-search-2/bfsresult.md)
-- [Bfs](../../../breadth-first-search-2/bfs.md)
-- [Bfs With Parents](../internal/bfs-with-parents.md)
-- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Breadth-first search forest](../internal/bfsforest.md)
+- [Result of breadth-first search](../../../breadth-first-search-2/bfsresult.md)
+- [Breadth-first search](../../../breadth-first-search-2/bfs.md)
+- [Breadth-first search with parent pointers](../internal/bfs-with-parents.md)
+- [Directed adjacency graph](../../../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Bfs With Parents ret](../../parents-2/bfs-with-parents-ret.md)
-- [Edge](../../../directed-adjacency-2/edge.md)
+- [Breadth-first search with parents returns the ordinary BFS result](../../parents-2/bfs-with-parents-ret.md)
+- [Edge of a directed adjacency graph](../../../directed-adjacency-2/edge.md)
 - [Contents of a two-list queue](../../../../data-structures/part-01/queue/semantics/contents.md)
 - [Enqueueing appends to the contents](../../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
 - [A successful dequeue splits off the first element](../../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)

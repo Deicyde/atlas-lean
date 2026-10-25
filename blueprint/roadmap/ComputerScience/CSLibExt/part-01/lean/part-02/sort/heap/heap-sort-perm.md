@@ -7,9 +7,10 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.heapSort_perm
 ---
 
-# Heap Sort perm
+# Heap sort permutes its input
 
-Heap sort returns a permutation of its input.
+**Heap sort permutes its input.** For every list $xs$ of elements of a linearly ordered type,
+heap sort returns a permutation of $xs$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ Heap sort returns a permutation of its input.
 
 ## Proof depends on
 
-- [Heap Sort multiset](heap-sort-multiset.md)
+- [Heap sort preserves multiplicities](heap-sort-multiset.md)
 
 ## Sources
 

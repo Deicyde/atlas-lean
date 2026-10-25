@@ -4,6 +4,6 @@ navigation: module
 
 # Bounds
 
-- [Verify Hamiltonian Cycle certificate size](verify-hamiltonian-cycle-certificate-siz.md)
-- [Verify Hamiltonian Cycle time le](verify-hamiltonian-cycle-time-le.md)
-- [Verify Hamiltonian Cycle time le of accept](verify-hamiltonian-cycle-time-le-of-acce.md)
+- [Size of an accepted Hamiltonian-cycle certificate](verify-hamiltonian-cycle-certificate-siz.md)
+- [Quadratic step bound for the Hamiltonian-cycle verifier](verify-hamiltonian-cycle-time-le.md)
+- [Step bound for accepted Hamiltonian-cycle certificates](verify-hamiltonian-cycle-time-le-of-acce.md)

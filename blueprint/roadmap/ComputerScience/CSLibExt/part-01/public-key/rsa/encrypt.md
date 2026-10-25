@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Crypto.PublicKey.RSA.Key.encrypt
 ---
 
-# Encrypt
+# RSA encryption
 
-Encryption `m ↦ m ^ e` modulo `n`.
+**RSA encryption.** For an RSA key with modulus $n = pq$ and public exponent $e$, encryption is
+the map $\mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ given by $m \mapsto m^e$.
 
 ## Depends on
 
-- [Key](key.md)
-- [N](n.md)
+- [RSA key](key.md)
+- [RSA modulus](n.md)
 
 ## Sources
 

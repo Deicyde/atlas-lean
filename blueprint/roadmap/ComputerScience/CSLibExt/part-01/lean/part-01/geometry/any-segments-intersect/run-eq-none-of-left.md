@@ -37,12 +37,12 @@ Inserting $a$ places it right next to $b$, so the two are tested.
 - [One step of the sweep](step.md)
 - [Intersection test for two input segments](test.md)
 - [Testing a segment against an optional neighbour](test-opt.md)
-- [Direction](../segment-intersection/direction.md)
+- [Direction of three points](../segment-intersection/direction.md)
 - [DIRECTION as a scaled vertical offset](direction-eq-line-y.md)
 - [First element at or above a uniquely attained height](head-drop-while-eq-of-unique.md)
 - [Height of a line at an abscissa](line-y.md)
 - [A non-vertical segment is the graph of its line](mem-segment-iff-line-y.md)
-- [Segments Intersect ret eq true iff](../segment-intersection/segments-intersect-ret-eq-true-iff.md)
+- [Correctness of SEGMENTS-INTERSECT](../segment-intersection/segments-intersect-ret-eq-true-iff.md)
 
 ## Sources
 

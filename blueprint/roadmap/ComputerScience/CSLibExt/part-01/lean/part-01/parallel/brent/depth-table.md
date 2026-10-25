@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.depthTable
 ---
 
-# Depth Table
+# Table of depths
 
-The depths of all tasks, tabulated: each depth is computed once, from its predecessors'
-entries. With lists (append and indexed reads are linear) this costs `O(n² + n |E|)`, polynomial,
-where evaluating `depth` directly recomputes shared subpaths exponentially often.
+**Table of depths.** The list of the depths of tasks $0, \dots, n - 1$ of a computation DAG on
+$n$ tasks, computed once each in topological order: the entry for task $k$ is $1$ plus the largest
+entry at a predecessor of $k$, or $1$ if $k$ has no predecessors.
+
+With lists (appending and indexed reads take linear time) this costs $O(n^2 + n|E|)$, where $|E|$
+is the total number of predecessor entries; evaluating the depth directly from its recursive
+definition instead recomputes shared subpaths exponentially often.
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 
 ## Proof depends on
 
-- [Depths Up To](depths-up-to.md)
+- [Depths of an initial segment of tasks](depths-up-to.md)
 
 ## Sources
 

@@ -5,13 +5,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.GreedyOptimal
 ---
 
-# Greedy Optimal
+# Greedy optimality
 
-The greedy algorithm is optimal for `indep` on the finite type `α`: for every weight function
-and every listing of all elements in nonincreasing weight order, its result weighs at least as
-much as every independent set. (`Finite α` keeps this from holding vacuously: on an infinite type
-no list covers every element; the instance is a hypothesis of the definition, not used in its
-body, hence the `nolint`.)
+**Greedy optimality.** Let $\alpha$ be a finite type and let $\mathrm{indep}$ be an
+independence oracle on the finite subsets of $\alpha$. The greedy algorithm is optimal for
+$\mathrm{indep}$ when, for every weight function $w : \alpha \to \mathbb{N}$ and every list $L$
+that contains every element of $\alpha$ exactly once, in nonincreasing order of $w$, the set $T$
+returned by the matroid greedy algorithm on $L$ with oracle $\mathrm{indep}$ satisfies
+$\sum_{x \in I} w(x) \le \sum_{x \in T} w(x)$ for every finite set $I$ independent under
+$\mathrm{indep}$.
+
+Finiteness of $\alpha$ keeps this from holding vacuously: on an infinite type no list contains
+every element.
 
 ## Depends on
 
@@ -19,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Matroid Greedy](../matroid-greedy/matroid-greedy.md)
+- [Greedy algorithm on a matroid](../matroid-greedy/matroid-greedy.md)
 
 ## Sources
 

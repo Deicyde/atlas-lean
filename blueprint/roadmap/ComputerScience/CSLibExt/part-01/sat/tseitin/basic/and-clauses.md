@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Tseitin.andClauses
 ---
 
-# And Clauses
+# Tseitin clauses for a conjunction
 
-Defining clauses for the gate literal `g` of a conjunction of literals `a` and `b`.
+**Tseitin clauses for a conjunction.** For literals $g$, $a$ and $b$, the defining clauses of
+the gate literal $g$ for the conjunction of $a$ and $b$ are, in this order, the three clauses
+$\lnot g \lor a$, $\lnot g \lor b$ and $g \lor \lnot a \lor \lnot b$, where $\lnot \ell$ denotes the
+complementary literal of $\ell$ (same variable, opposite polarity).
 
 ## Depends on
 
@@ -15,7 +18,7 @@ Defining clauses for the gate literal `g` of a conjunction of literals `a` and `
 
 ## Proof depends on
 
-- [Neg Lit](neg-lit.md)
+- [Complementary literal](neg-lit.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

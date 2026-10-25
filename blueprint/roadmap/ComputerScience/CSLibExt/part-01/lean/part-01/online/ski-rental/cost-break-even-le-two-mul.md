@@ -12,13 +12,13 @@ The break-even strategy is `2`-competitive.
 
 ## Depends on
 
-- [Break Even](break-even.md)
-- [Cost](cost.md)
-- [Opt](opt.md)
+- [Break-even strategy](break-even.md)
+- [Cost of a ski-rental strategy](cost.md)
+- [Offline optimum for ski rental](opt.md)
 
 ## Proof depends on
 
-- [Upper bound](cost-break-even-le.md)
+- [Ski-rental upper bound for the break-even strategy](cost-break-even-le.md)
 
 ## Sources
 

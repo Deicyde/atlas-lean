@@ -8,22 +8,24 @@ lean: Cslib.Algorithms.Lean.Karger.repeatSuccessProb_ge
 
 # Amplification with high probability
 
-**Amplification with high probability.** Repeating the algorithm `c · n (n - 1) / 2` times (or
-more) finds the minimum cut size with probability at least `1 - (1/2)^c`.
+**Amplification with high probability.** Let $G$ be a valid multigraph with $n \ge 2$
+vertices and minimum cut size $k$, and let $c$ and $t$ be natural numbers with
+$c \cdot n(n-1) \le 2t$. Then the probability that at least one of $t$ independent runs of the
+contraction process on $G$ returns $k$ is at least $1 - (1/2)^c$.
 
 ## Depends on
 
-- [Is Min Cut](is-min-cut.md)
-- [State](state.md)
-- [Valid](valid.md)
-- [Repeat Success Prob](repeat-success-prob.md)
+- [Minimum cut size](is-min-cut.md)
+- [Multigraph state of Karger's algorithm](state.md)
+- [Valid multigraph](valid.md)
+- [Success probability of repeated runs](repeat-success-prob.md)
 
 ## Proof depends on
 
-- [Success Prob](success-prob.md)
-- [Success Prob ge](success-prob-ge.md)
-- [Success Prob le one](success-prob-le-one.md)
-- [Success Prob nonneg](success-prob-nonneg.md)
+- [Success probability of the contraction process](success-prob.md)
+- [Karger's bound](success-prob-ge.md)
+- [The success probability is at most one](success-prob-le-one.md)
+- [Minimum cut size bounds the number of edges](success-prob-nonneg.md)
 
 ## Sources
 

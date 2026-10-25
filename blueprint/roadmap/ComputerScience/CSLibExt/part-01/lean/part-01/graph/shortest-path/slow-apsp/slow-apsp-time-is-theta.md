@@ -7,17 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.slowAPSP_time_isTheta
 ---
 
-# Slow APSP time is Theta
+# SLOW-APSP takes quartic time
 
-The sum of the three actual executed cost coordinates is `Θ(n^4)`.
+**SLOW-APSP takes quartic time.** For any choice, for each $n$, of $n \times n$ matrices $W_n$
+and $L^{(0)}_n$ over the min-plus semiring on $\mathbb{Z} \cup \{\infty\}$, the total cost of
+SLOW-APSP on $W_n$ and $L^{(0)}_n$, that is the number of cell assignments (copies and fills)
+plus the number of scalar additions plus the number of scalar minimums, is $\Theta(n^4)$ as
+$n \to \infty$.
 
 ## Depends on
 
-- [Slow APSP](slow-apsp.md)
+- [Slow all-pairs shortest paths (SLOW-APSP)](slow-apsp.md)
 
 ## Proof depends on
 
-- [Slow APSP time](slow-apsp-time.md)
+- [Exact operation counts of SLOW-APSP](slow-apsp-time.md)
 
 ## Sources
 

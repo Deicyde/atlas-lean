@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EdmondsKarp.residualGraph_edge_iff
 ---
 
-# Residual Graph edge iff
+# Edges of the residual graph
 
-Residual adjacency is exactly strict slack in the directed capacity bound.
+**Edges of the residual graph.** Let $c$ be a capacity matrix with natural-number entries and
+$f$ an integer matrix (the flow) on the vertices $0, \dots, n - 1$. For all vertices $u$ and $v$,
+the residual graph of $c$ and $f$ has an edge from $u$ to $v$ if and only if
+$f(u, v) < c(u, v)$.
 
 ## Depends on
 
-- [Edge](../directed-adjacency-2/edge.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
 - [Flow](flow.md)
 - [Residual Graph](residual-graph.md)
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.pathCode?_eq_none_iff
 ---
 
-# Path Code? eq none iff
+# A symbol has a path code exactly when it labels a leaf
 
-A symbol has no root-to-leaf path exactly when it is not a leaf symbol.
+**A symbol has a path code exactly when it labels a leaf.** For a Huffman tree $T$ over an
+alphabet $\alpha$ with decidable equality and a symbol $a \in \alpha$, the root-to-leaf path code
+of $a$ in $T$ is undefined exactly when $a$ is not among the leaf symbols of $T$.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Path Code?](path-code.md)
-- [Symbols](symbols.md)
+- [Huffman tree](huffman-tree.md)
+- [Root-to-leaf path code](path-code.md)
+- [Leaf symbols of a Huffman tree](symbols.md)
 
 ## Proof depends on
 
-- [Weighted Leaves](weighted-leaves.md)
+- [Weighted leaves of a Huffman tree](weighted-leaves.md)
 
 ## Sources
 

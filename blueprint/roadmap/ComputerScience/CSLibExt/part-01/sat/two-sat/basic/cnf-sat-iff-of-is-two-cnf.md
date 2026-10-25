@@ -14,17 +14,17 @@ implication graph.
 
 ## Depends on
 
-- [Imp Reach](imp-reach.md)
-- [Is Two CNF](is-two-cnf.md)
+- [Reachability in the implication graph](imp-reach.md)
+- [2-CNF formulas](is-two-cnf.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
-- [Imp Edge](imp-edge.md)
-- [Exists contradictory of resolution Derivable nil](exists-contradictory-of-resolution-deriv.md)
-- [Satisfies of imp Edge](satisfies-of-imp-edge.md)
+- [Implication edge](imp-edge.md)
+- [Resolution refutations give contradictory cycles](exists-contradictory-of-resolution-deriv.md)
+- [Satisfying assignments respect implication edges](satisfies-of-imp-edge.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [Refutation completeness](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolution-derivable-nil-of-not-cnf-sat.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)

@@ -8,13 +8,15 @@ lean: Cslib.MachineLearning.Variational.kl_nonneg
 
 # Gibbs' inequality
 
-**Gibbs' inequality**: `KL(q ‖ r) ≥ 0` for a distribution `q` and a full-support distribution
-`r`.
+**Gibbs' inequality.** Let $Z$ be a finite set, let $q$ be a probability distribution on $Z$,
+and let $r : Z \to \mathbb{R}$ satisfy $r(z) > 0$ for every $z \in Z$ and
+$\sum_{z \in Z} r(z) = 1$. Then
+$\mathrm{KL}(q \,\|\, r) = \sum_{z \in Z} q(z) \bigl(\log q(z) - \log r(z)\bigr) \ge 0$.
 
 ## Depends on
 
 - [Probability distributions on a finite latent space](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
-- [Kl](kl.md)
+- [Finite Kullback–Leibler formula](kl.md)
 
 ## Proof depends on
 

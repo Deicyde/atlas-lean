@@ -20,13 +20,13 @@ conflict-serializable exactly when its precedence graph is acyclic.
 
 ## Proof depends on
 
-- [Directed Adjacency](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
-- [Edge](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/edge.md)
-- [Is Topological Order](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-topological-order.md)
-- [Result](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/result.md)
-- [Acyclic implies success](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/acyclic-implies-success.md)
-- [Sort](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/sort.md)
-- [Success is Topological Order](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/success-is-topological-order.md)
+- [Directed adjacency graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
+- [Edge of a directed adjacency graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/edge.md)
+- [Topological order](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-topological-order.md)
+- [Outcome of Kahn's topological sort](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/result.md)
+- [Kahn's algorithm succeeds on acyclic graphs](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/acyclic-implies-success.md)
+- [Kahn's topological sort](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/sort.md)
+- [A successful topological sort is a topological order](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/success-is-topological-order.md)
 - [Conflict Equiv](conflict-equiv.md)
 - [Is Acyclic](is-acyclic.md)
 - [Is Serial](is-serial.md)

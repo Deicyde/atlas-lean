@@ -22,19 +22,19 @@ weight of $p$ (the sum of $w$ over its consecutive pairs) equals $g(v)$.
 - [Path recovered from an A-star result](path-to.md)
 - [Consistent heuristic](consistent.md)
 - [A Star](a-star.md)
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
-- [Edge](../../graph/directed-adjacency-2/edge.md)
-- [Path Weight](../../graph/shortest-path/dijkstra/path-weight.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
+- [Edge of a directed adjacency graph](../../graph/directed-adjacency-2/edge.md)
+- [Endpoint-weight sum along a vertex list](../../graph/shortest-path/dijkstra/path-weight.md)
 
 ## Proof depends on
 
 - [Path Weight reduced Weight](path-weight-reduced-weight.md)
 - [Reduced weight](reduced-weight.md)
-- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
-- [Path To?](../../graph/shortest-path/dijkstra/path-to.md)
-- [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
-- [Dijkstra path To? spec](../../graph/shortest-path/dijkstra/dijkstra-path-to-spec.md)
+- [Output of Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Path recovery from Dijkstra predecessors](../../graph/shortest-path/dijkstra/path-to.md)
+- [Dense Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra.md)
+- [Reconstructed Dijkstra paths are simple and have the output weight](../../graph/shortest-path/dijkstra/dijkstra-path-to-spec.md)
 
 ## Sources
 

@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TransitiveClosure.transitiveClosure_stage_assignments
 ---
 
-# Transitive Closure stage assignments
+# Cost of one transition stage
 
-Each saved transition stage performs exactly `n²` new-cell assignments.
+**Cost of one transition stage.** For every Boolean adjacency matrix on $n$ vertices and every
+$k < n$, the time charged by the staged transitive-closure computation with $k + 1$ pivot stages
+minus the time charged with $k$ pivot stages equals $n^2$: one time unit for each cell assignment
+of the new stage.
 
 ## Depends on
 
-- [Transitive Closure Stages](transitive-closure-stages.md)
+- [Staged transitive-closure computation](transitive-closure-stages.md)
 
 ## Sources
 

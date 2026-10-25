@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.load
 ---
 
-# Load
+# Load of a step
 
-The tasks run in step `t`.
+**Load of a step.** The load of step $t$ in a schedule $S$ of a computation DAG is the number
+of tasks that $S$ runs in step $t$.
 
 ## Depends on
 
-- [Dag](../brent/dag.md)
+- [Computation DAG](../brent/dag.md)
 - [Schedule](../brent/schedule.md)
 
 ## Sources

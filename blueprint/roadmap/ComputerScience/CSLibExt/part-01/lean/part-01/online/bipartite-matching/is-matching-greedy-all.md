@@ -6,28 +6,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.BipartiteMatching.isMatching_greedyAll
 ---
 
-# Is Matching greedy All
+# The greedy online matching is a matching
 
-The greedy matching is a matching.
+**The greedy online matching is a matching.** The set of pairs $(i, j)$ such that the greedy
+online matching assigns the left vertex $i$ to the right vertex $j$ is a matching of the bipartite
+graph.
 
 ## Depends on
 
-- [Is Matching](../../graph/bipartite-matching/is-matching.md)
-- [Pairs](../../graph/bipartite-matching/pairs.md)
-- [Greedy All](greedy-all.md)
+- [Matching in a bipartite graph](../../graph/bipartite-matching/is-matching.md)
+- [Matched pairs of a partner assignment](../../graph/bipartite-matching/pairs.md)
+- [The greedy online matching](greedy-all.md)
 
 ## Proof depends on
 
-- [Free](../../graph/bipartite-matching/free.md)
-- [Valid](../../graph/bipartite-matching/valid.md)
-- [Is Matching pairs](../../graph/bipartite-matching/is-matching-pairs.md)
-- [Done](done.md)
+- [Unmatched left vertex](../../graph/bipartite-matching/free.md)
+- [Partner arrays that describe a matching](../../graph/bipartite-matching/valid.md)
+- [A valid partner array gives a matching](../../graph/bipartite-matching/is-matching-pairs.md)
+- [Done right vertices](done.md)
 - [Greedy](greedy.md)
-- [Greedy Arr](greedy-arr.md)
-- [Greedy spec](greedy-spec.md)
-- [Step](step.md)
-- [Step Arr](step-arr.md)
-- [To Fun](to-fun.md)
+- [Greedy run on an array](greedy-arr.md)
+- [Invariants of the greedy run](greedy-spec.md)
+- [Greedy step of online bipartite matching](step.md)
+- [Greedy step on an array](step-arr.md)
+- [Partner assignment from an array](to-fun.md)
 
 ## Sources
 

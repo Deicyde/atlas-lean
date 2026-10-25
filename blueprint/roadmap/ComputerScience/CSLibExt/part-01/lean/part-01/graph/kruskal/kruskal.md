@@ -6,21 +6,27 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.kruskal
 ---
 
-# Kruskal
+# Kruskal's algorithm
 
-Run stable Kruskal selection and return accepted edges in processing order.
+**Kruskal's algorithm.** For a finite weighted multigraph $G$ on the vertices
+$\{0, \dots, n-1\}$, Kruskal's algorithm starts from the partition of the vertices into
+singletons and processes the valid input edges of $G$ (those whose endpoints are both less than
+$n$) in lexicographic order of (weight, input position). An edge whose endpoints lie in different
+classes of the current partition is accepted and its two classes are merged; an edge whose
+endpoints lie in the same class is skipped. The result is the list of accepted edges in the order
+in which they were processed.
 
 ## Depends on
 
-- [Graph](graph.md)
-- [Weighted Edge](weighted-edge.md)
+- [Kruskal input graph](graph.md)
+- [Weighted edge](weighted-edge.md)
 
 ## Proof depends on
 
-- [State](state.md)
-- [Initial Forest](initial-forest.md)
-- [Ordered Edges](ordered-edges.md)
-- [Scan](scan.md)
+- [Kruskal scan state](state.md)
+- [Discrete parent forest](initial-forest.md)
+- [Valid edges in Kruskal order](ordered-edges.md)
+- [Scanning a list of edges](scan.md)
 - [Parent forest with a depth certificate](../../data-structures/part-03/union-find/forest.md)
 
 ## Sources

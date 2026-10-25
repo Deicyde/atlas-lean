@@ -7,17 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.extractTwoMin_greedy
 ---
 
-# Extract Two Min greedy
+# Two-minimum extraction is greedy
 
-Each extracted priority is minimal in the heap from which it is removed.
+**Two-minimum extraction is greedy.** Order Huffman priorities lexicographically by weight and
+then serial number. If extracting two minima from a binary min-heap $h$ of Huffman priorities
+succeeds with first priority $p_1$, second priority $p_2$ and remaining heap $h'$, then
+$p_1 \le q$ for every element $q$ of $h$, and $p_2 \le q$ for every $q$ that is $p_2$ or an
+element of $h'$.
 
 ## Depends on
 
-- [Huffman Priority](huffman-priority.md)
-- [Huffman Two Min](huffman-two-min.md)
+- [Huffman priority](huffman-priority.md)
+- [Result of a two-minimum extraction](huffman-two-min.md)
 - [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 - [Elements of a binary min-heap](../../data-structures/part-02/binary-heap/elements.md)
-- [Extract Two Min?](extract-two-min.md)
+- [Extracting two minima from a Huffman heap](extract-two-min.md)
 
 ## Proof depends on
 

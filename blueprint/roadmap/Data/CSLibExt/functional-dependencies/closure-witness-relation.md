@@ -5,18 +5,22 @@ statement: formalized
 lean: Cslib.Databases.closureWitnessRelation
 ---
 
-# Closure Witness Relation
+# Closure witness relation
 
-The closure witness for `X`: at most two tuples, which agree exactly on `attrClosure F X`
-(they coincide when the closure is everything).
+**Closure witness relation.** Let $A$ be a finite set of attributes, $F$ a finite set of
+functional dependencies over $A$ and $X \subseteq A$. The closure witness relation for $X$ is the
+relation with values in $\{\mathrm{true}, \mathrm{false}\}$ whose tuples are the tuple that is
+$\mathrm{true}$ on every attribute and the tuple that is $\mathrm{true}$ exactly on the attribute
+closure $X^+$ of $X$ under $F$. These two tuples agree exactly on $X^+$, and they coincide when
+$X^+ = A$.
 
 ## Depends on
 
-- [FD](fd.md)
+- [Functional dependency](fd.md)
 
 ## Proof depends on
 
-- [Attr Closure](attr-closure.md)
+- [Attribute closure](attr-closure.md)
 
 ## Sources
 

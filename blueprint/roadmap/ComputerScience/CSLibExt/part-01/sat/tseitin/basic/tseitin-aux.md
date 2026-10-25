@@ -5,12 +5,19 @@ statement: formalized
 lean: Cslib.Logic.PL.Proposition.tseitinAux
 ---
 
-# Tseitin Aux
+# Tseitin encoding with gates numbered from $k$
 
-The Tseitin encoding of `A` with gates numbered from `k`: the literal naming `A`, the
-defining clauses of its compound subformulas, and the next unused gate number. This is the
-reference form used in the proofs; its list concatenations make it quadratic, and `tseitin`
-runs the linear-time builder `tseitinAcc` instead.
+**Tseitin encoding with gates numbered from $k$.** Fix a map $\iota$ from atoms to natural
+numbers. Given a formula $A$ and a gate number $k$, the encoding returns a literal naming $A$, a
+list of defining clauses and the next unused gate number. For an atom $a$ it returns the
+positive literal of variable $2\iota(a)$, no clauses, and $k$. For $A \circ B$ with $\circ$ one of
+$\wedge$, $\vee$, $\to$, it encodes $A$ from gate $k$, obtaining a literal $a$, clauses $C_A$ and a
+gate number $k'$, then $B$ from gate $k'$, obtaining $b$, $C_B$ and $k''$; it returns the positive
+literal $g$ of variable $2k''+1$, the clauses $C_A$, then $C_B$, then the three defining clauses
+of $g$ for $a \circ b$, and $k''+1$.
+
+Its list concatenations make it quadratic; the Tseitin CNF is computed by a linear-time builder
+that produces the same clauses in another order.
 
 ## Depends on
 
@@ -18,10 +25,10 @@ runs the linear-time builder `tseitinAcc` instead.
 
 ## Proof depends on
 
-- [And Clauses](and-clauses.md)
-- [Imp Clauses](imp-clauses.md)
-- [Or Clauses](or-clauses.md)
-- [Tseitin Step](tseitin-step.md)
+- [Tseitin clauses for a conjunction](and-clauses.md)
+- [Tseitin clauses for an implication](imp-clauses.md)
+- [Tseitin clauses for a disjunction](or-clauses.md)
+- [One step of the Tseitin encoding](tseitin-step.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

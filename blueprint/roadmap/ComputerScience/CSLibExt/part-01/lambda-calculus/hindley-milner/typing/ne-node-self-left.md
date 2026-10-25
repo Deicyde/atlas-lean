@@ -14,11 +14,11 @@ $\tau_1 \ne (\tau_1 \to \tau_2)$.
 ## Depends on
 
 - [Monotypes](ty.md)
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Proof depends on
 
-- [Size](../../../../part-02/unification/basic/size.md)
+- [Size of a term](../../../../part-02/unification/basic/size.md)
 
 ## Sources
 

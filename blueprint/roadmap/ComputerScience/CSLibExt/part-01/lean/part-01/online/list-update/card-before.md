@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.card_before
 ---
 
-# Card before
+# Counting the entries before an entry
 
-The items before `x` in a list number `idxOf x`.
+**Counting the entries before an entry.** If $L$ is a list with no repeated entries and $x$
+is an entry of $L$, then the number of entries of $L$ whose index is less than the index of $x$
+equals the index of $x$ (indices counted from $0$).
 
 ## Depends on
 

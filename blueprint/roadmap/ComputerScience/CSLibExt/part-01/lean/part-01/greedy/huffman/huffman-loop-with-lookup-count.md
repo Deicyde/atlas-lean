@@ -6,23 +6,28 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.huffmanLoopWithLookupCount
 ---
 
-# Huffman Loop With Lookup Count
+# Huffman loop with lookup count
 
-Instrumented Huffman execution that reports indexed payload-table reads on
-successful runs. Each call to `takeSerial?` performs one `table[serial]?` read.
-The count excludes heap operations, table writes (cell clearing and merged-item
-insertion), and the terminal `huffmanTableForest` scan.
+**Huffman loop with lookup count.** For a fuel $n$, a next serial number $s$, a binary min-heap
+$H$ of Huffman priorities and a table $T$ whose cells each hold at most one work item, the Huffman
+loop with lookup count on $(n, s, H, T)$ is the Huffman loop with an accumulated lookup count on
+$(n, s, H, T)$ started with counter $0$. It runs the bounded sequence of Huffman merges and counts
+indexed table lookups, one for each work item taken from the table: two per merge and one at the
+final step. On success it returns the resulting tree together with the count; otherwise it fails.
+
+The count excludes heap operations, table writes (emptying cells and appending merged work items)
+and the final check that the table holds no work item.
 
 ## Depends on
 
-- [Huffman Priority](huffman-priority.md)
-- [Huffman Tree](huffman-tree.md)
-- [Huffman Work Item](huffman-work-item.md)
+- [Huffman priority](huffman-priority.md)
+- [Huffman tree](huffman-tree.md)
+- [Huffman work item](huffman-work-item.md)
 - [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 
 ## Proof depends on
 
-- [Huffman Loop With Lookup Count Aux](huffman-loop-with-lookup-count-aux.md)
+- [Huffman loop with an accumulated lookup count](huffman-loop-with-lookup-count-aux.md)
 
 ## Sources
 

@@ -8,40 +8,43 @@ lean: Cslib.Algorithms.Lean.BipartiteMatching.lt_firstFreeRound_flip_phase
 
 # The next phase's paths are strictly longer
 
-**The next phase's paths are strictly longer** (Hopcroft and Karp): if `firstFreeRound` is `d`
-before a phase and `d'` after it, then `d < d'`. A shortest augmenting path after the phase of the
-same length would be a shortest augmenting chain before it, disjoint from the phase's paths,
-contradicting `phase_maximal`'s invariant.
+**The next phase's paths are strictly longer** (Hopcroft and Karp). Let $\mu$ be a valid
+partner assignment of a bipartite graph (a matching), and let $\mu'$ be obtained from $\mu$ by
+flipping all the paths of the phase of $\mu$ at once. If the first free round of $\mu$ is $d$ and
+the first free round of $\mu'$ is $d'$, then $d < d'$.
+
+A shortest augmenting path for $\mu'$ of the same length would be a shortest augmenting chain for
+$\mu$ that is disjoint from the paths of the phase, contradicting the maximality of the phase.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [First Free Round](first-free-round.md)
-- [Flip](flip.md)
-- [Phase](phase.md)
+- [Partner arrays that describe a matching](valid.md)
+- [First free round](first-free-round.md)
+- [Flipping a list of pairs](flip.md)
+- [Hopcroft–Karp phase](phase.md)
 
 ## Proof depends on
 
-- [Alt Path](alt-path.md)
-- [Exact Level](exact-level.md)
-- [Free](free.md)
+- [Alternating path](alt-path.md)
+- [Exact level of a right vertex](exact-level.md)
+- [Unmatched left vertex](free.md)
 - [Is Augmenting Path](is-augmenting-path.md)
-- [Is Chain From](is-chain-from.md)
-- [No Escape](no-escape.md)
-- [Chain of chain flip phase](chain-of-chain-flip-phase.md)
-- [First Free Round eq some](first-free-round-eq-some.md)
-- [Layers](layers.md)
+- [Alternating chain to an unmatched left vertex](is-chain-from.md)
+- [No shortest escape](no-escape.md)
+- [Shortest chains from a vertex whose level a phase keeps were chains before it](chain-of-chain-flip-phase.md)
+- [Characterization of the first free round](first-free-round-eq-some.md)
+- [Alternating breadth-first layers](layers.md)
 - [Distances do not decrease across a phase](layers-flip-phase-subset.md)
-- [Le first Free Round flip phase](le-first-free-round-flip-phase.md)
+- [The first free round does not decrease across a phase](le-first-free-round-flip-phase.md)
 - [No augmenting path is shorter than a phase's](le-length-of-is-augmenting-path.md)
-- [Phase Aux](phase-aux.md)
-- [Phase Aux maximal](phase-aux-maximal.md)
-- [Phase spec](phase-spec.md)
-- [Search Path](search-path.md)
-- [Search Path is Some](search-path-is-some.md)
-- [Search Path length le](search-path-length-le.md)
-- [Search Path spec](search-path-spec.md)
-- [Valid flip flatten](valid-flip-flatten.md)
+- [Phase search over candidates](phase-aux.md)
+- [Invariant of a phase](phase-aux-maximal.md)
+- [The paths of a phase are vertex-disjoint augmenting paths](phase-spec.md)
+- [Depth-first search of a Hopcroft–Karp phase](search-path.md)
+- [Searches from reached vertices succeed when nothing is used or dead](search-path-is-some.md)
+- [Length bound for search paths](search-path-length-le.md)
+- [Search paths are alternating paths through unused vertices](search-path-spec.md)
+- [Flipping disjoint alternating paths at once keeps a matching](valid-flip-flatten.md)
 
 ## Sources
 

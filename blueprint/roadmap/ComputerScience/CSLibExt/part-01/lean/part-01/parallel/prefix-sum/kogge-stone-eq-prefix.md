@@ -8,18 +8,19 @@ lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.koggeStone_eq_prefix
 
 # The scan computes all prefix products
 
-**The scan computes all prefix products**: after `K` rounds with `n ≤ 2 ^ K`, every
-position `i < n` holds `x 0 * ⋯ * x i`.
+**The scan computes all prefix products.** Let $x_0, x_1, \dots$ be a sequence in a monoid $M$
+and let $n$ and $K$ be natural numbers with $n \le 2^K$. After $K$ rounds of the Kogge–Stone scan,
+every position $i < n$ holds the prefix product $x_0 x_1 \cdots x_i$.
 
 ## Depends on
 
-- [Kogge Stone](kogge-stone.md)
-- [Prefix Prod](prefix-prod.md)
+- [The Kogge–Stone scan](kogge-stone.md)
+- [Prefix product](prefix-prod.md)
 
 ## Proof depends on
 
-- [After `k` rounds](kogge-stone-eq-seg.md)
-- [Seg](seg.md)
+- [What the scan holds after each round](kogge-stone-eq-seg.md)
+- [Window product](seg.md)
 
 ## Sources
 

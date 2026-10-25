@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FloydWarshall.floydWarshall_initializations
 ---
 
-# Floyd Warshall initializations
+# Initialization count of Floyd–Warshall
 
-Floyd-Warshall initializes exactly one cell for each ordered vertex pair.
+**Initialization count of Floyd–Warshall.** For every $n$ and every $n \times n$ matrix of
+weights in $\mathbb{Z} \cup \{+\infty\}$, the Floyd–Warshall algorithm performs exactly $n^2$
+initialization events, one for each ordered pair of vertices.
 
 ## Depends on
 
-- [Cost](cost.md)
-- [Floyd Warshall](floyd-warshall.md)
+- [Floyd–Warshall cost record](cost.md)
+- [Floyd–Warshall algorithm](floyd-warshall.md)
 
 ## Sources
 

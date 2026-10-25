@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.partition3_count_lt
 ---
 
-# Partition3 count lt
+# Entries below the pivot
 
-The below block counts exactly the original occurrences below the pivot.
+**Entries below the pivot.** Let $L$ be a list over a linear order, let $p$ be an element,
+and let $B$ be the block of entries below $p$ in the three-way partition of $L$ around $p$.
+Then the number of entries of $L$ that are strictly less than $p$, counted with multiplicity,
+equals $|B|$.
 
 ## Depends on
 
-- [Three Way Partition](../../sort/partition/three-way-partition.md)
-- [Partition3](../../sort/partition/partition3.md)
+- [Three-way partition record](../../sort/partition/three-way-partition.md)
+- [Stable three-way partition](../../sort/partition/partition3.md)
 
 ## Proof depends on
 
-- [Partition3 correct](../../sort/partition/partition3-correct.md)
+- [Correctness of the stable three-way partition](../../sort/partition/partition3-correct.md)
 
 ## Sources
 

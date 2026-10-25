@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.otherEnd
 ---
 
-# Other End
+# Other endpoint of an edge
 
-The other endpoint of the edge `e` at `v`.
+**Other endpoint of an edge.** For an edge $e = (a, b)$ and a vertex $v$, the other endpoint
+of $e$ at $v$ is $b$ if $a = v$, and $a$ otherwise; in particular a loop $(v, v)$ gives $v$.
 
 ## Depends on
 

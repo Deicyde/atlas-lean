@@ -6,21 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.ListPrefix.segSum_one
 ---
 
-# List ranking is the special case of unit values
+# Segment sums of unit values count nodes
 
-**List ranking is the special case of unit values**: summing `1` over the first `k` nodes
-from `v` counts `min k (rank v + 1)` nodes.
+**Segment sums of unit values count nodes.** Let $n$ nodes be linked into lists by a
+partial successor function such that, starting from any node, $n$ steps run off the end of its
+list, and give every node the value $1 \in \mathbb{N}$. Then for every $k \in \mathbb{N}$ and
+every node $v$, the segment sum of length $k$ from $v$ (the sum of the values of the first $k$
+nodes from $v$, fewer at the end of the list) is $\min(k, \operatorname{rank}(v) + 1)$, where
+$\operatorname{rank}(v)$ is the number of nodes after $v$ in its list.
 
 ## Depends on
 
-- [Seg Sum](seg-sum.md)
-- [Terminates](../list-ranking/terminates.md)
-- [Rank](../list-ranking/rank.md)
+- [Segment sums](seg-sum.md)
+- [Terminating successor functions](../list-ranking/terminates.md)
+- [Rank of a node in a linked list](../list-ranking/rank.md)
 
 ## Proof depends on
 
-- [Step Val](step-val.md)
-- [Jump](../list-ranking/jump.md)
+- [The value $k$ steps ahead](step-val.md)
+- [Iterated successor](../list-ranking/jump.md)
 - [The characteristic property of the rank](../list-ranking/jump-eq-none-iff.md)
 
 ## Sources

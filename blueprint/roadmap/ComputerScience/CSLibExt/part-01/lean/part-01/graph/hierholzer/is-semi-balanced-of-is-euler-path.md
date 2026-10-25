@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.isSemiBalanced_of_isEulerPath
 ---
 
-# Is Semi Balanced of is Euler Path
+# A directed multigraph with an Euler path is semi-balanced
 
-A graph with an Euler path from `s` to `t` is semi-balanced.
+**A directed multigraph with an Euler path is semi-balanced.** If a finite directed
+multigraph has an Euler path from $s$ to $t$, then it is semi-balanced for $s$ and $t$: counting
+edge occurrences, $s$ has one more outgoing than incoming edge, $t$ one more incoming than
+outgoing, and every other vertex is balanced (every vertex, when $s = t$).
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Is Euler Path](is-euler-path.md)
-- [Is Semi Balanced](is-semi-balanced.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Euler path in a directed multigraph](is-euler-path.md)
+- [Semi-balanced directed multigraph](is-semi-balanced.md)
 
 ## Proof depends on
 
-- [Edge List](edge-list.md)
-- [Walk Edges](walk-edges.md)
+- [Edge list of a directed graph](edge-list.md)
+- [Steps of a walk](walk-edges.md)
 
 ## Sources
 

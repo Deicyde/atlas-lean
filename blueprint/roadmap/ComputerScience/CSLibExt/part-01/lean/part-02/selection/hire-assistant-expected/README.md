@@ -4,6 +4,6 @@ navigation: module
 
 # Hire Assistant Expected
 
-- [Hire Assistant expected Hires](hire-assistant-expected-hires.md)
-- [Hire Assistant expected Hires to Real](hire-assistant-expected-hires-to-real.md)
-- [Hire Assistant expected Hires to Real eq harmonic](hire-assistant-expected-hires-to-real-eq.md)
+- [Expected number of hires under a random permutation](hire-assistant-expected-hires.md)
+- [Expected number of hires as a real harmonic sum](hire-assistant-expected-hires-to-real.md)
+- [Expected number of hires is the harmonic number](hire-assistant-expected-hires-to-real-eq.md)

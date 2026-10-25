@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.decreasingFinish
 ---
 
-# Decreasing Finish
+# Decreasing finish order
 
-Vertices ordered from latest finish to earliest finish.
+**Decreasing finish order.** For a directed graph $G$ with ordered adjacency lists and an
+ordered list of roots, the decreasing finish order is the reverse of the postorder of the
+left-first depth-first search of $G$ from those roots: the vertices that search visits, listed
+from the latest finished to the earliest finished.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Traversal](traversal.md)
-- [Dfs](dfs.md)
+- [Depth-first traversal record](traversal.md)
+- [Left-first depth-first search](dfs.md)
 
 ## Sources
 

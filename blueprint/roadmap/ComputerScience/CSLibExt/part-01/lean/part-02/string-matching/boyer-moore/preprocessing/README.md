@@ -4,8 +4,8 @@ navigation: module
 
 # Preprocessing
 
-- [Preprocess](preprocess.md)
-- [Preprocess time le](preprocess-time-le.md)
-- [Preprocess bad Character](preprocess-bad-character.md)
-- [Preprocess good Suffix](preprocess-good-suffix.md)
-- [Preprocess full Match](preprocess-full-match.md)
+- [Boyer–Moore preprocessing](preprocess.md)
+- [Cost of Boyer–Moore preprocessing](preprocess-time-le.md)
+- [Bad-character table of Boyer–Moore preprocessing](preprocess-bad-character.md)
+- [Good-suffix table of Boyer–Moore preprocessing](preprocess-good-suffix.md)
+- [The full-match shift is the least period of the pattern](preprocess-full-match.md)

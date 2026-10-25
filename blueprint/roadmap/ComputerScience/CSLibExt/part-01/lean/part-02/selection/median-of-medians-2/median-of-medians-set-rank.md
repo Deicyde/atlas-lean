@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.medianOfMedians_set_rank
 ---
 
-# Median Of Medians set rank
+# Set rank of a median-of-medians result
 
-On distinct input the returned value has the source's one-based set rank.
+**Set rank of a median-of-medians result.** Let $L$ be a list without repeated entries over a
+linear order and let $k \in \mathbb{N}$. If median-of-medians selection on $L$ at zero-based rank
+$k$ returns an element $x$, then the set $\{y \in L : y \le x\}$ has exactly $k + 1$ elements.
 
 ## Depends on
 
-- [Median Of Medians](median-of-medians.md)
+- [Median-of-medians selection](median-of-medians.md)
 
 ## Proof depends on
 
-- [Three Way Partition](../../sort/partition/three-way-partition.md)
-- [Median Of Medians correct](median-of-medians-correct.md)
-- [Partition3](../../sort/partition/partition3.md)
-- [Partition3 count le](../quickselect/partition3-count-le.md)
-- [Partition3 count lt](../quickselect/partition3-count-lt.md)
-- [Partition3 equal eq filter](../../sort/partition/partition3-equal-eq-filter.md)
+- [Three-way partition record](../../sort/partition/three-way-partition.md)
+- [Correctness of median-of-medians selection](median-of-medians-correct.md)
+- [Stable three-way partition](../../sort/partition/partition3.md)
+- [Entries at most the pivot](../quickselect/partition3-count-le.md)
+- [Entries below the pivot](../quickselect/partition3-count-lt.md)
+- [The equal list of a three-way partition is a filter](../../sort/partition/partition3-equal-eq-filter.md)
 
 ## Sources
 

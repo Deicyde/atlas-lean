@@ -7,24 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.StringMatching.finiteAutomatonMatches_ret
 ---
 
-# Finite Automaton Matches ret
+# Correctness of the finite-automaton matcher
 
-The complete increasing list of zero-based shifts, including overlaps and empty boundaries.
+**Correctness of the finite-automaton matcher.** For every pattern $P$ and text $T$ over the
+alphabet $\{0, \dots, A-1\}$, the list of shifts returned by the finite-automaton matcher equals
+the list returned by the naive string matcher.
+
+So it is the complete increasing list of zero-based shifts at which $P$ occurs in $T$, including
+overlapping occurrences and, for the empty pattern, every boundary.
 
 ## Depends on
 
-- [Finite Automaton Matches](finite-automaton-matches.md)
-- [Naive Matches](../naive/naive-matches.md)
+- [Finite-automaton string matcher](finite-automaton-matches.md)
+- [Naive string matcher](../naive/naive-matches.md)
 
 ## Proof depends on
 
-- [Match At](../basic/match-at.md)
-- [Compute Transition](compute-transition.md)
-- [Compute Transition spec](compute-transition-spec.md)
-- [Pattern Automaton](pattern-automaton.md)
-- [Pattern Automaton state](pattern-automaton-state.md)
-- [Mem naive Matches iff](../naive/mem-naive-matches-iff.md)
-- [Naive Matches pairwise](../naive/naive-matches-pairwise.md)
+- [Pattern match at an offset](../basic/match-at.md)
+- [Transition table of the string-matching automaton](compute-transition.md)
+- [Correctness of the string-matching transition table](compute-transition-spec.md)
+- [String-matching automaton](pattern-automaton.md)
+- [The string-matching automaton tracks the longest matched prefix](pattern-automaton-state.md)
+- [Correctness of naive string matching](../naive/mem-naive-matches-iff.md)
+- [Naive matching reports shifts in increasing order](../naive/naive-matches-pairwise.md)
 
 ## Sources
 

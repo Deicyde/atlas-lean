@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.mprefs
 ---
 
-# Mprefs
+# Proposers' preferences from rankings
 
-The proposers' preferences in MathlibExt's sense.
+**Proposers' preferences from rankings.** Given for each proposer $m$ a ranking $\sigma_m$ of
+the $n$ receivers ($\sigma_m(k)$ is the choice of $m$ of rank $k$, rank $0$ the best), the
+proposers' preference profile assigns to $m$ the strict total order in which $m$ prefers $w$ to
+$w'$ when $\sigma_m^{-1}(w) < \sigma_m^{-1}(w')$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ The proposers' preferences in MathlibExt's sense.
 
 ## Proof depends on
 
-- [To Order](to-order.md)
+- [Preference order of a ranking](to-order.md)
 
 ## Sources
 

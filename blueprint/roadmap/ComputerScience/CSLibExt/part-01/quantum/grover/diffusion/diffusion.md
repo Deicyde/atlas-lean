@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Grover.diffusion
 ---
 
-# Diffusion
+# Inversion about the mean
 
-Inversion about the mean.
+**Inversion about the mean.** For a finite type $\alpha$, the diffusion operator sends a
+real amplitude vector $\psi$ on $\alpha$ to the amplitude vector $x \mapsto 2\bar\psi - \psi(x)$,
+where $\bar\psi$ is the arithmetic mean of the amplitudes of $\psi$.
 
 ## Depends on
 
-- [Amplitude](../basic/amplitude.md)
+- [Real amplitude vectors](../basic/amplitude.md)
 
 ## Proof depends on
 

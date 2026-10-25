@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Horn.bodyIn
 ---
 
-# Body In
+# Body of a clause contained in a set
 
-The negative literals of `C` all have their variables in `T`.
+**Body of a clause contained in a set.** For a finite set $T$ of variables and a CNF
+clause $C$, this Boolean test is true exactly when every negative literal of $C$ has its
+variable in $T$.
 
 ## Depends on
 

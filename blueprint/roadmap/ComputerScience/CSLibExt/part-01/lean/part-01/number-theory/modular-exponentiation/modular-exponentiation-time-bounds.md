@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_time_bounds
 ---
 
-# Modular Exponentiation time bounds
+# Multiplication count of modular exponentiation
 
-For positive `b`, multiplication count lies between one and two per exponent bit.
+**Multiplication count of modular exponentiation.** Let $a$, $b$ and $n$ be natural numbers
+with $b > 0$, and let $\beta = \lfloor \log_2 b \rfloor + 1$ be the number of binary digits of $b$.
+The number of multiplications performed by modular exponentiation with base $a$, exponent $b$ and
+modulus $n$ is at least $\beta$ and at most $2\beta - 1$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation time even](modular-exponentiation-time-even.md)
-- [Modular Exponentiation time odd](modular-exponentiation-time-odd.md)
-- [Modular Exponentiation zero](modular-exponentiation-zero.md)
+- [Multiplication count in the even case](modular-exponentiation-time-even.md)
+- [Multiplication count in the odd case](modular-exponentiation-time-odd.md)
+- [Base case of modular exponentiation](modular-exponentiation-zero.md)
 
 ## Sources
 

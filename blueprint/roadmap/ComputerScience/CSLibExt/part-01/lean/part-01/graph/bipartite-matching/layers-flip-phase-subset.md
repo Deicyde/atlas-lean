@@ -8,28 +8,33 @@ lean: Cslib.Algorithms.Lean.BipartiteMatching.layers_flip_phase_subset
 
 # Distances do not decrease across a phase
 
-**Distances do not decrease across a phase** (Hopcroft and Karp): after flipping the paths of a
-phase, every vertex reached by round `k` of the layered search was already reached by round `k`
-before.
+**Distances do not decrease across a phase.** Let the partner array of a bipartite graph with
+$a$ left vertices be valid, and suppose that some round $r \le a + 1$ of the layered search
+reaches an unmatched right vertex, so that a phase runs from the earliest such round. After
+flipping all the paths that phase finds, for every $k \in \mathbb{N}$ the left vertices and the
+right vertices reached within $k$ rounds of the layered search were already reached within $k$
+rounds before the flip.
+
+This is a step of Hopcroft and Karp's analysis.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [First Free Round](first-free-round.md)
-- [Flip](flip.md)
-- [Layers](layers.md)
-- [Phase](phase.md)
+- [Partner arrays that describe a matching](valid.md)
+- [First free round](first-free-round.md)
+- [Flipping a list of pairs](flip.md)
+- [Alternating breadth-first layers](layers.md)
+- [Hopcroft–Karp phase](phase.md)
 
 ## Proof depends on
 
-- [Exact Level](exact-level.md)
-- [Free](free.md)
+- [Exact level of a right vertex](exact-level.md)
+- [Unmatched left vertex](free.md)
 - [Is Augmenting Path](is-augmenting-path.md)
-- [Free of free flip](free-of-free-flip.md)
-- [Mem layers snd of mate](mem-layers-snd-of-mate.md)
-- [Pair levels of mem phase](pair-levels-of-mem-phase.md)
-- [Phase Aux](phase-aux.md)
-- [Phase Aux spec](phase-aux-spec.md)
+- [A phase leaves no new unmatched left vertex](free-of-free-flip.md)
+- [A matched right vertex is reached no later than its partner](mem-layers-snd-of-mate.md)
+- [Levels of the pairs of a phase](pair-levels-of-mem-phase.md)
+- [Phase search over candidates](phase-aux.md)
+- [Phase paths are disjoint augmenting paths](phase-aux-spec.md)
 
 ## Sources
 

@@ -175,7 +175,8 @@ namespace Array
 
 universe u
 
-/-- The KMP prefix table has one entry for every pattern symbol. -/
+/-- **Size of the KMP prefix table.** For every pattern $p$, the KMP prefix table of $p$ has
+exactly as many entries as $p$ has symbols, one for each symbol of $p$. -/
 @[simp]
 theorem mkPrefixTable_size {α : Type u} [BEq α] (pattern : List α) :
     (mkPrefixTable pattern.toArray).size = pattern.length := by
@@ -186,7 +187,10 @@ theorem mkPrefixTable_size {α : Type u} [BEq α] (pattern : List α) :
   rw [hdefault, Nat.zero_add] at h
   exact h
 
-/-- Reading the first component of each prefix-table entry recovers the pattern. -/
+/-- **The KMP prefix table stores the pattern.** Each entry of the Knuth–Morris–Pratt prefix
+table is a pair consisting of a symbol and a failure length. For every type with a Boolean
+equality test and every list $p$ over it, the list of first components of the entries of the
+prefix table built from $p$, read in order, equals $p$. -/
 theorem mkPrefixTable_symbols {α : Type u} [BEq α] (pattern : List α) :
     (mkPrefixTable pattern.toArray).toArray.toList.map Prod.fst = pattern := by
   rw [mkPrefixTable, List.foldl_toArray]
@@ -690,7 +694,11 @@ private theorem kmpSearch_none_sound [BEq α] [LawfulBEq α]
       exact (kmpSearch_cons_correct head tail text).2 hresult
         (offset + (head :: tail).length) hsuffix.1 hsuffix.2
 
-/-- KMP returns an offset exactly when it is the least offset matching the pattern. -/
+/-- **KMP returns the first match.** Let $p$ and $t$ be lists over a type with a lawful boolean
+equality, and write $|t|$ for the length of $t$. For every natural number $i$, KMP search for
+$p$ in $t$ returns the offset $i$ if and only if $p$ matches $t$ at $i$ and at no $j < i$, where
+$p$ matches $t$ at $i$ when $i \le |t|$ and $p$ is a prefix of the list obtained from $t$ by
+dropping its first $i$ elements. -/
 theorem kmpSearch_eq_some_iff [BEq α] [LawfulBEq α]
     (pattern text : List α) (offset : Nat) :
     (kmpSearch pattern text).ret = some offset ↔
@@ -712,7 +720,11 @@ theorem kmpSearch_eq_some_iff [BEq α] [LawfulBEq α]
         subst found
         rfl
 
-/-- KMP returns no offset exactly when no bounded offset matches the pattern. -/
+/-- **KMP finds no match exactly when no offset matches.** For lists $p$ and $t$ over a type
+with a lawful boolean equality, write $|t|$ for the length of $t$. KMP search for $p$ in $t$
+returns no offset if and only if there is no natural number $i$ at which $p$ matches $t$, where
+$p$ matches $t$ at $i$ when $i \le |t|$ and $p$ is a prefix of the list obtained from $t$ by
+dropping its first $i$ elements. -/
 theorem kmpSearch_eq_none_iff [BEq α] [LawfulBEq α]
     (pattern text : List α) :
     (kmpSearch pattern text).ret = none ↔
@@ -725,7 +737,10 @@ theorem kmpSearch_eq_none_iff [BEq α] [LawfulBEq α]
     | some offset =>
         exact False.elim (hnone offset (kmpSearch_some_sound pattern text offset hresult).1)
 
-/-- KMP returns no offset exactly when the pattern is not an infix of the text. -/
+/-- **KMP finds no match exactly when the pattern does not occur.** For lists $p$ (the pattern)
+and $t$ (the text) over a type with a lawful boolean equality, KMP search for $p$ in $t$ returns
+no offset if and only if $p$ is not a contiguous sublist of $t$, that is, there are no lists
+$u$, $v$ with $t = u \, p \, v$ (concatenation). -/
 theorem kmpSearch_eq_none_iff_not_isInfix [BEq α] [LawfulBEq α]
     (pattern text : List α) :
     (kmpSearch pattern text).ret = none ↔ ¬pattern.IsInfix text := by
@@ -787,7 +802,11 @@ private theorem dropInfix?_map_length_eq_some_iff [BEq α] [LawfulBEq α]
     exact ⟨(text.take offset, suffix), hdrop, by
       simp [List.length_take, Nat.min_eq_left hmatch.1]⟩
 
-/-- For a nonempty pattern, KMP agrees with the start-offset projection of `List.dropInfix?`. -/
+/-- **KMP search agrees with the first-infix split.** Let $p$ and $t$ be lists over a type
+with a lawful boolean equality, with $p$ nonempty. Let the first-infix split of $t$ by $p$ be
+the pair $(u, v)$ with $t = u \, p \, v$ (concatenation) and $u$ as short as possible, or
+nothing if $p$ does not occur in $t$. Then the value returned by KMP search for $p$ in $t$ is
+the length of $u$ if the split exists, and no offset otherwise. -/
 theorem kmpSearch_eq_dropInfix?_map_length [BEq α] [LawfulBEq α]
     (pattern text : List α) (hpattern : pattern ≠ []) :
     (kmpSearch pattern text).ret =
@@ -938,7 +957,10 @@ private theorem timedBuild_time_le [BEq α] (pattern : List α) :
   have hdefault : failurePotential (default : Array.PrefixTable α) = 0 := rfl
   omega
 
-/-- KMP uses at most twice the combined pattern and text lengths in symbol comparisons. -/
+/-- **KMP search makes linearly many comparisons.** For any pattern $p$ and text $t$, lists over
+a type with a boolean equality, KMP search for $p$ in $t$ makes at most $2|p| + 2|t|$ symbol
+comparisons in total, those made while building the prefix table included, where $|p|$ and
+$|t|$ are the lengths of $p$ and $t$. -/
 theorem kmpSearch_time_le [BEq α] (pattern text : List α) :
     (kmpSearch pattern text).time ≤ 2 * pattern.length + 2 * text.length := by
   cases pattern with
@@ -962,7 +984,12 @@ namespace Array
 
 universe u
 
-/-- Each failure entry is the longest proper prefix that is also a suffix. -/
+/-- **The KMP failure function.** Let $p$ be a pattern of length $n$ over a type with a lawful
+boolean equality, and write $p_{<k}$ for its prefix of length $k$. Each entry of the KMP prefix
+table of $p$ pairs a symbol of $p$ with a failure value. For every $q < n$, the failure value
+$f$ of entry $q$ (counting from $0$) is the length of the longest proper prefix of $p_{<q+1}$
+that is also a suffix of $p_{<q+1}$: $f \le q$, $p_{<f}$ is a suffix of $p_{<q+1}$, and every
+$k \le q$ such that $p_{<k}$ is a suffix of $p_{<q+1}$ satisfies $k \le f$. -/
 theorem mkPrefixTable_failure_spec {α : Type u} [BEq α] [LawfulBEq α]
     (pattern : List α) (q : Nat) (hq : q < pattern.length) :
     let table := mkPrefixTable pattern.toArray
@@ -975,7 +1002,14 @@ theorem mkPrefixTable_failure_spec {α : Type u} [BEq α] [LawfulBEq α]
       ∀ k, k ≤ q → (pattern.take k).IsSuffix (pattern.take (q + 1)) → k ≤ failure :=
   Cslib.Algorithms.Lean.TimeM.prefixTable_failure_spec_internal pattern q hq
 
-/-- The KMP transition returns the longest pattern prefix that is a suffix after one symbol. -/
+/-- **Correctness of the KMP transition.** Let $p$ be a pattern of length $n$ over a type with
+a lawful boolean equality, and write $p_{<k}$ for its prefix of length $k$. Let $c$ be a list,
+$x$ a symbol, and $cx$ the list $c$ followed by $x$. Suppose the state $s \le n$ is the length
+of the longest prefix of $p$ that is a suffix of $c$: $p_{<s}$ is a suffix of $c$, and every
+$k \le n$ such that $p_{<k}$ is a suffix of $c$ satisfies $k \le s$. Then the state $s'$ that
+the transition of the KMP prefix table of $p$ produces from $s$ on reading $x$ is the length of
+the longest prefix of $p$ that is a suffix of $cx$: $s' \le n$, $p_{<s'}$ is a suffix of $cx$,
+and every $k \le n$ such that $p_{<k}$ is a suffix of $cx$ satisfies $k \le s'$. -/
 theorem mkPrefixTable_step_spec {α : Type u} [BEq α] [LawfulBEq α]
     (pattern consumed : List α) (x : α)
     (state : Fin ((mkPrefixTable pattern.toArray).size + 1))
@@ -999,7 +1033,8 @@ universe u
 
 variable {α : Type u}
 
-/-- The empty pattern occurs at offset zero without any symbol comparisons. -/
+/-- **KMP search on the empty pattern.** For every text $t$, KMP search for the empty pattern in
+$t$ returns offset $0$ at cost $0$, that is, without any symbol comparisons. -/
 @[simp]
 theorem kmpSearch_nil_pattern [BEq α] (text : List α) :
     kmpSearch [] text = pure (some 0) := by

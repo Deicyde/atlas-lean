@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TopologicalSort.DirectedCycleIn
 ---
 
-# Directed Cycle In
+# Directed cycle within a vertex list
 
-A nonempty simple directed cycle wholly contained in `remaining`.
+**Directed cycle within a vertex list.** Let $G$ be a finite directed graph and $R$ a list of
+vertices. A list $c = [c_1, \dots, c_k]$ of vertices is a directed cycle of $G$ in $R$ when
+$k \ge 1$, the vertices $c_1, \dots, c_k$ are pairwise distinct, $G$ has an edge from $c_i$ to
+$c_{i+1}$ for each $1 \le i < k$ and an edge from $c_k$ to $c_1$, and every $c_i$ lies in $R$.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Edge](../directed-adjacency-2/edge.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
 
 ## Sources
 

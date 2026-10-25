@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.reachable_transpose_iff
 ---
 
-# Reachable transpose iff
+# Reachability in the transpose graph
 
-Transposition reverses reachability.
+**Reachability in the transpose graph.** Let $G$ be a directed adjacency graph on a vertex
+type with decidable equality, and let $G^{\mathsf{T}}$ be its transpose. For all vertices $s$ and
+$t$, $t$ is reachable from $s$ in $G^{\mathsf{T}}$ if and only if $s$ is reachable from $t$ in
+$G$.
 
 ## Depends on
 
-- [Directed Adjacency](directed-adjacency.md)
-- [Reachable](reachable.md)
-- [Transpose](transpose.md)
+- [Directed adjacency graph](directed-adjacency.md)
+- [Reachability in a directed graph](reachable.md)
+- [Transpose of a directed adjacency graph](transpose.md)
 
 ## Proof depends on
 
-- [Walk](walk.md)
-- [Reachable iff exists walk](reachable-iff-exists-walk.md)
-- [Walk transpose iff](walk-transpose-iff.md)
+- [Walks of a given length](walk.md)
+- [Reachability by walks](reachable-iff-exists-walk.md)
+- [Walks in the transpose are reversed walks](walk-transpose-iff.md)
 
 ## Sources
 

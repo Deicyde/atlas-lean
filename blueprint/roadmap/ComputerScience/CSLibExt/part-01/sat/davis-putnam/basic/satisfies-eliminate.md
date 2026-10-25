@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.satisfies_eliminate
 ---
 
-# Satisfies eliminate
+# Soundness of a Davis-Putnam step
 
-Soundness of a step: an assignment satisfying `φ` satisfies `eliminate x φ`.
+**Soundness of a Davis-Putnam step.** Let $x$ be a variable and $\varphi$ a CNF formula. Every
+assignment that satisfies $\varphi$ also satisfies the formula obtained from $\varphi$ by
+eliminating $x$.
 
 ## Depends on
 
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
-- [Eliminate](eliminate.md)
+- [Davis-Putnam elimination of a variable](eliminate.md)
 
 ## Proof depends on
 
-- [Neg Clauses](neg-clauses.md)
-- [Pos Clauses](pos-clauses.md)
+- [Clauses containing a variable only negatively](neg-clauses.md)
+- [Clauses containing a variable only positively](pos-clauses.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)

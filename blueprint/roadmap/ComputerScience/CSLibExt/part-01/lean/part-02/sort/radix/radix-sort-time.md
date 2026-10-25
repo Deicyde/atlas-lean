@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.radixSort_time
 ---
 
-# Radix Sort time
+# Cost bound for radix sort
 
-Radix sort uses at most `d * (7 * n + 3 * b)` charged operations.
+**Cost bound for radix sort.** Let $b \ge 2$ and let every record carry a key that is a vector
+of $d$ digits in $\{0, \dots, b-1\}$. On an array of $n$ records, radix sort uses at most
+$d(7n + 3b)$ charged operations, where each counting-sort pass charges one unit for every counter
+initialization, key evaluation, counter read, counter write and output write.
 
 ## Depends on
 
-- [Radix Sort](radix-sort.md)
+- [Radix sort](radix-sort.md)
 
 ## Proof depends on
 
-- [Counting Sort](../counting/counting-sort.md)
-- [Counting Sort correct](../counting/counting-sort-correct.md)
-- [Counting Sort time](../counting/counting-sort-time.md)
+- [Counting sort](../counting/counting-sort.md)
+- [Correctness of counting sort](../counting/counting-sort-correct.md)
+- [Running time of counting sort](../counting/counting-sort-time.md)
 
 ## Sources
 

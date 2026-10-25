@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.Paging.lruStep
 ---
 
-# Lru Step
+# One LRU step
 
-One LRU step with capacity `k`: the requested page moves to the front (most recent first),
-and the cache is cut to `k` pages, evicting the least recently used one.
+**One LRU step.** For a capacity $k$, a cache $c$ (a list of pages, most recently used first)
+and a requested page $p$, the LRU step removes the first occurrence of $p$ from $c$ (if any), puts
+$p$ at the front, and keeps the first $k$ pages of the result. On a miss with a cache of exactly
+$k \ge 1$ pages, this evicts the last page, the least recently used one.
 
 ## Depends on
 

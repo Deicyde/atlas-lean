@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.StronglyConnectedComponents.stronglyConnectedSetoid
 ---
 
-# Strongly Connected Setoid
+# Strong connectivity as an equivalence relation
 
-The equivalence relation of mutual directed reachability.
+**Strong connectivity as an equivalence relation.** For a directed graph $G$, the relation on
+the vertices of $G$ that holds between $u$ and $v$ exactly when $u$ and $v$ are strongly connected
+in $G$, packaged as an equivalence relation.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
 - [Strongly Connected](strongly-connected.md)
-- [Symm](symm.md)
-- [Trans](trans.md)
-- [Strongly Connected refl](strongly-connected-refl.md)
+- [Strong connectivity is symmetric](symm.md)
+- [Strong connectivity is transitive](trans.md)
+- [Strong connectivity is reflexive](strongly-connected-refl.md)
 
 ## Sources
 

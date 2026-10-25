@@ -5,7 +5,7 @@ navigation: module
 # Heap
 
 - [Heap Sort](heap-sort.md)
-- [Heap Sort multiset](heap-sort-multiset.md)
-- [Heap Sort perm](heap-sort-perm.md)
-- [Heap Sort sorted](heap-sort-sorted.md)
-- [Heap Sort correct](heap-sort-correct.md)
+- [Heap sort preserves multiplicities](heap-sort-multiset.md)
+- [Heap sort permutes its input](heap-sort-perm.md)
+- [Heap sort output is sorted](heap-sort-sorted.md)
+- [Correctness of heap sort](heap-sort-correct.md)

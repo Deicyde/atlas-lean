@@ -6,14 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Prim.prim_parent_edge
 ---
 
-# Prim parent edge
+# Parents returned by Prim's algorithm are adjacency-list neighbors
 
-Every returned parent is an inspected graph neighbor.
+**Parents returned by Prim's algorithm are adjacency-list neighbors.** Let $W$ be a linearly
+ordered type with a zero element, let $D$ be a directed adjacency structure on the vertices
+$0, \dots, n-1$ with adjacency lists $A(u)$, let $w$ assign a weight in $W$ to every unordered
+pair of vertices, not necessarily distinct, and let $r$ be a vertex. For all vertices $u$ and
+$v$, if Prim's algorithm on $D$, $w$ and $r$ returns $u$ as the parent of $v$, then $v$ occurs
+in $A(u)$.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Basic](../prim.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Prim's algorithm with an indexed binary heap](../prim.md)
 
 ## Proof depends on
 

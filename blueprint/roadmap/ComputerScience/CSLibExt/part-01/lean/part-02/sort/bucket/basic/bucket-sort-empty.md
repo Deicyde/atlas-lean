@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.bucketSort_empty
 ---
 
-# Bucket Sort empty
+# Bucket sort on the empty array
 
-The empty saved-bucket computation returns the empty array with zero cost.
+**Bucket sort on the empty array.** For every linearly ordered field $R$ with a floor
+function, bucket sort applied to the empty array of elements of $R$ returns the empty array
+at zero cost.
 
 ## Depends on
 
-- [Bucket Sort](bucket-sort.md)
+- [Bucket sort](bucket-sort.md)
 
 ## Proof depends on
 
-- [Insertion Sort](../../insertion-cost/insertion-sort.md)
+- [Insertion sort with comparison cost](../../insertion-cost/insertion-sort.md)
 
 ## Sources
 

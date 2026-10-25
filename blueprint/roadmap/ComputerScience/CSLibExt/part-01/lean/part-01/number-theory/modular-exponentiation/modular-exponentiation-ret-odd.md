@@ -7,17 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_ret_odd
 ---
 
-# Modular Exponentiation ret odd
+# Value of the odd step of modular exponentiation
 
-Raw-result projection of the source odd branch, with the original base first.
+**Value of the odd step of modular exponentiation.** Let $a$, $b$, $n$ be natural numbers
+with $b$ odd, and let $d$ be the value returned by modular exponentiation on base $a$, exponent
+$b - 1$ and modulus $n$. Then the value returned on base $a$, exponent $b$ and modulus $n$ is
+$(a \cdot d) \bmod n$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation odd](modular-exponentiation-odd.md)
+- [Odd step of modular exponentiation](modular-exponentiation-odd.md)
 
 ## Sources
 

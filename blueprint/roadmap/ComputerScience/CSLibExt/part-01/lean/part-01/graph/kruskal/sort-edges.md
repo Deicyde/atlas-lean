@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.sortEdges
 ---
 
-# Sort Edges
+# Sorting edges by weight and input position
 
-Merge sort by `(weight, input ordinal)`; unique keys make the order deterministic.
+**Sorting edges by weight and input position.** Sorting a list of validated edges is merge
+sort with the comparison $(w, i) \preceq (w', i')$ if $w < w'$, or $w = w'$ and $i \le i'$, applied
+to the pairs (weight, input position) of the edges.
 
 ## Depends on
 
-- [Weighted Edge](weighted-edge.md)
+- [Weighted edge](weighted-edge.md)
 
 ## Proof depends on
 
-- [Key LE](key-le.md)
-- [Key](key.md)
+- [Lexicographic order on edge keys](key-le.md)
+- [Sorting key of a weighted edge](key.md)
 
 ## Sources
 

@@ -4,10 +4,10 @@ navigation: module
 
 # Horner
 
-- [Horner Eval](horner-eval.md)
-- [Horner Eval time](horner-eval-time.md)
-- [Horner Eval ret eq sum](horner-eval-ret-eq-sum.md)
-- [Horner Eval ret eq eval](horner-eval-ret-eq-eval.md)
-- [Horner Eval empty](horner-eval-empty.md)
-- [Horner Eval singleton](horner-eval-singleton.md)
-- [Horner Eval zero](horner-eval-zero.md)
+- [Horner evaluation with operation count](horner-eval.md)
+- [Horner evaluation uses $2n$ operations](horner-eval-time.md)
+- [Horner evaluation computes the coefficient sum](horner-eval-ret-eq-sum.md)
+- [Horner evaluation is polynomial evaluation](horner-eval-ret-eq-eval.md)
+- [Horner evaluation of the empty coefficient list](horner-eval-empty.md)
+- [Horner evaluation of a constant polynomial](horner-eval-singleton.md)
+- [Horner evaluation at zero](horner-eval-zero.md)

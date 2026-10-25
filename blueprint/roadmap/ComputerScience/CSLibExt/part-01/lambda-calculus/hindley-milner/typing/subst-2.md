@@ -20,8 +20,8 @@ applies $s$ to $\tau$.
 - [Expressions of the λ-calculus with let](expr.md)
 - [Hindley–Milner typing](has-type.md)
 - [Monotypes](ty.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Proof depends on
 
@@ -40,7 +40,7 @@ applies $s$ to $\tau$.
 - [Renaming step of the substitution lemma](gen-subst-more-general.md)
 - [Instantiation commutes with substitution](inst-subst-ty.md)
 - [Monotypes as type schemes](to-scheme.md)
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Sources
 

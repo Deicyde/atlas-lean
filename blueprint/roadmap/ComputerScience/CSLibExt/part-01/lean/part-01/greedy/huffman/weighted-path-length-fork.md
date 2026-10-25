@@ -7,15 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.weightedPathLength_fork
 ---
 
-# Weighted Path Length fork
+# Weighted path length of a merged tree
 
-Merging two trees increases weighted path length by their total weights.
+**Weighted path length of a merged tree.** For Huffman trees $L$ and $R$, the weighted path
+length of the tree with left subtree $L$ and right subtree $R$ equals the weighted path length of
+$L$ plus the weighted path length of $R$ plus the total weight of $L$ plus the total weight of
+$R$.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Total Weight](total-weight.md)
-- [Weighted Path Length](weighted-path-length.md)
+- [Huffman tree](huffman-tree.md)
+- [Total weight of a Huffman tree](total-weight.md)
+- [Weighted path length](weighted-path-length.md)
 
 ## Sources
 

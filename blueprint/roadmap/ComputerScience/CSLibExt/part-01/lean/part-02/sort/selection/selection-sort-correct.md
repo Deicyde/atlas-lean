@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.selectionSort_correct
 ---
 
-# Selection Sort correct
+# Correctness of selection sort
 
-Selection sort returns a nondecreasing permutation, preserving duplicate multiplicities.
+**Correctness of selection sort.** For every list $L$ over a linearly ordered type, the list
+returned by selection sort on $L$ is sorted in nondecreasing order (each entry is $\le$ every
+later entry) and is a permutation of $L$, so it preserves duplicate multiplicities.
 
 ## Depends on
 
-- [Selection Sort](selection-sort.md)
+- [Selection sort](selection-sort.md)
 
 ## Proof depends on
 
-- [Extract Min](extract-min.md)
+- [Minimum extraction](extract-min.md)
 
 ## Sources
 

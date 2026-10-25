@@ -18,7 +18,7 @@ or a union or difference of relations with different schemas).
 ## Proof depends on
 
 - [Cond](cond.md)
-- [Attrs](attrs.md)
+- [Attributes of a selection condition](attrs.md)
 
 ## Sources
 

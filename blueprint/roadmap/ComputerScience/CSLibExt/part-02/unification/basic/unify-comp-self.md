@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Unification.unify_comp_self
 ---
 
-# Unify comp self
+# Unification returns an idempotent substitution
 
-The returned substitution is idempotent.
+**Unification returns an idempotent substitution.** For every list $E$ of equations between
+terms, if the Martelli–Montanari algorithm returns a substitution $s$ on $E$, then $s$ is
+idempotent: the composite substitution that applies first $s$ and then $s$ equals $s$.
 
 ## Depends on
 
-- [Equations](equations.md)
-- [Subst](subst.md)
-- [Comp](comp.md)
-- [Unify](unify.md)
+- [Lists of equations](equations.md)
+- [Substitution](subst.md)
+- [Composition of substitutions](comp.md)
+- [Martelli–Montanari unification](unify.md)
 
 ## Proof depends on
 
-- [Soundness](unifies-unify.md)
-- [Most generality](unify-eq-some-comp.md)
+- [Soundness of unification](unifies-unify.md)
+- [Most generality of unification](unify-eq-some-comp.md)
 
 ## Sources
 

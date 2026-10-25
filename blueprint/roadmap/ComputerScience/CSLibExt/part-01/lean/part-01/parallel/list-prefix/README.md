@@ -4,27 +4,27 @@ navigation: module
 
 # List Prefix
 
-- [Step Val](step-val.md)
-- [Seg Sum](seg-sum.md)
-- [Seg Sum add](seg-sum-add.md)
-- [Suffix Sum](suffix-sum.md)
+- [The value $k$ steps ahead](step-val.md)
+- [Segment sums](seg-sum.md)
+- [Segment sums add up](seg-sum-add.md)
+- [Suffix sums](suffix-sum.md)
 - [The characteristic property of suffix sums](suffix-sum-eq.md)
-- [List ranking is the special case of unit values](seg-sum-one.md)
-- [Suffix Sum one](suffix-sum-one.md)
+- [Segment sums of unit values count nodes](seg-sum-one.md)
+- [List ranking is the special case of unit values](suffix-sum-one.md)
 
 ## Pointer jumping
 
-- [State](state.md)
-- [Init](init.md)
-- [Round](round.md)
-- [Rounds](rounds.md)
-- [The invariant of pointer jumping](rounds-spec.md)
-- [Rounds acc](rounds-acc.md)
+- [State of pointer jumping for suffix sums](state.md)
+- [Initial state of pointer jumping for suffix sums](init.md)
+- [One round of pointer jumping for suffix sums](round.md)
+- [State after $t$ rounds of pointer jumping for suffix sums](rounds.md)
+- [The invariant of pointer jumping for suffix sums](rounds-spec.md)
+- [Pointer-jumping sums are the suffix sums once $n \le 2^t$](rounds-acc.md)
 
 ## Tabulated rounds
 
-- [Tabulate](tabulate.md)
-- [Round Tab](round-tab.md)
-- [Rounds Tab](rounds-tab.md)
-- [List Sums](list-sums.md)
-- [Pointer jumping computes all suffix sums in `⌈log₂ n⌉` rounds](list-sums-get-d.md)
+- [Pointer-jumping state as arrays](tabulate.md)
+- [One round of pointer jumping on arrays](round-tab.md)
+- [Arrays after $t$ rounds of pointer jumping for suffix sums](rounds-tab.md)
+- [Suffix sums by pointer jumping on arrays](list-sums.md)
+- [Pointer jumping computes all suffix sums in $\lceil \log_2 n \rceil$ rounds](list-sums-get-d.md)

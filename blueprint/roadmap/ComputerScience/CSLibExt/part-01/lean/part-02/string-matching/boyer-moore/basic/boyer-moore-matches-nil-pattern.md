@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_nil_pattern
 ---
 
-# Boyer Moore Matches nil pattern
+# Boyer–Moore with the empty pattern
 
-An empty pattern occurs at every bounded text boundary.
+**Boyer–Moore with the empty pattern.** For every text $t$ of length $n$ over the alphabet
+$\{0, \dots, \sigma - 1\}$, the Boyer–Moore matcher with the empty pattern and text $t$ returns
+the list $0, 1, \dots, n$ of all offsets from $0$ to $n$ in increasing order, at cost $n + 1$.
 
 ## Depends on
 
-- [Boyer Moore Matches](boyer-moore-matches.md)
+- [Boyer–Moore matcher for all occurrences](boyer-moore-matches.md)
 
 ## Sources
 

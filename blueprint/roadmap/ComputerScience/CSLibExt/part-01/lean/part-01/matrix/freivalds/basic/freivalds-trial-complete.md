@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsTrial_complete
 ---
 
-# Freivalds Trial complete
+# Completeness of the Freivalds trial
 
-Correct products accept for every complete seed, including dimension zero.
+**Completeness of the Freivalds trial.** Let $A$, $B$, $C$ be $n \times n$ matrices over
+$\mathbb{F}_2$ with $AB = C$. Then for every seed $r \in \mathbb{F}_2^n$ the Freivalds trial on
+$A$, $B$, $C$, $r$ returns true. This includes the case $n = 0$.
 
 ## Depends on
 
-- [Freivalds Matrix](freivalds-matrix.md)
-- [Freivalds Trial](freivalds-trial.md)
+- [Matrix of a Freivalds input](freivalds-matrix.md)
+- [Freivalds trial](freivalds-trial.md)
 
 ## Proof depends on
 
-- [Freivalds Trial accept discrepancy iff](freivalds-trial-accept-discrepancy-iff.md)
+- [Acceptance via the product discrepancy](freivalds-trial-accept-discrepancy-iff.md)
 
 ## Sources
 

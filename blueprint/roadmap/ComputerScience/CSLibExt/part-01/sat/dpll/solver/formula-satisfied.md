@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.DPLL.formulaSatisfied
 ---
 
-# Formula Satisfied
+# Boolean formula satisfaction check
 
-Executable formula satisfaction.
+**Boolean formula satisfaction check.** For an assignment $v$ of Boolean values to the
+variables $0, 1, 2, \ldots$ and a CNF formula $\varphi$, this Boolean is true exactly when every
+clause of $\varphi$ passes the Boolean clause satisfaction check for $v$, that is, every clause
+contains a literal $(x, b)$ with $v(x) = b$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ Executable formula satisfaction.
 
 ## Proof depends on
 
-- [Clause Satisfied](clause-satisfied.md)
+- [Boolean clause satisfaction check](clause-satisfied.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

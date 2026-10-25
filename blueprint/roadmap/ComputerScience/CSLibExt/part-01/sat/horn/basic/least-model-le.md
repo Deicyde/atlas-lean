@@ -6,23 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.SAT.Horn.leastModel_le
 ---
 
-# Least model
+# On Horn formulas, the least model candidate lies below every model
 
-**Least model**: on a Horn formula, `leastModel φ` makes true only variables that every
-model makes true.
+**On Horn formulas, the least model candidate lies below every model.** Let $\varphi$ be a
+Horn CNF formula and $\sigma$ an assignment satisfying $\varphi$. Every variable that the least
+model candidate of $\varphi$ makes true is also true under $\sigma$.
 
 ## Depends on
 
-- [Is Horn](is-horn.md)
-- [Least Model](least-model.md)
+- [Horn formula](is-horn.md)
+- [Least model candidate](least-model.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 
 ## Proof depends on
 
-- [Body In](body-in.md)
-- [Close](close.md)
-- [Derive](derive.md)
+- [Body of a clause contained in a set](body-in.md)
+- [Forward-chaining closure](close.md)
+- [Forward-chaining step](derive.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)

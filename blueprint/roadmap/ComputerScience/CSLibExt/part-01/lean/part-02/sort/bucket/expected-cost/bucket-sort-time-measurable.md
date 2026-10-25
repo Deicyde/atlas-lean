@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_measurable
 ---
 
-# Bucket Sort time measurable
+# The running time of bucket sort is measurable
 
-The actual conditional saved-bucket executor time is measurable, with no caller premise.
+**The running time of bucket sort is measurable.** For every $n$, the function
+$T : \mathbb{R}^n \to \mathbb{R}$ that maps $\omega = (\omega_0, \dots, \omega_{n-1})$ to the
+number of time steps that bucket sort charges on the array $(\omega_0, \dots, \omega_{n-1})$ if
+every $\omega_j$ lies in $[0, 1)$, and to $0$ otherwise, is measurable.
 
 ## Depends on
 
-- [Bucket Sort](../basic/bucket-sort.md)
+- [Bucket sort](../basic/bucket-sort.md)
 
 ## Proof depends on
 
-- [Bucket Sort empty](../basic/bucket-sort-empty.md)
-- [Bucket Sort time](../basic/bucket-sort-time.md)
-- [Compare LE](../../insertion-cost/compare-le.md)
-- [Insertion Sort](../../insertion-cost/insertion-sort.md)
-- [Insertion Sort eq insertion Sort M](../../insertion-cost/insertion-sort-eq-insertion-sort-m.md)
-- [Insertion Sort perm](../../insertion-cost/insertion-sort-perm.md)
+- [Bucket sort on the empty array](../basic/bucket-sort-empty.md)
+- [Exact cost of bucket sort](../basic/bucket-sort-time.md)
+- [Charged comparison](../../insertion-cost/compare-le.md)
+- [Insertion sort with comparison cost](../../insertion-cost/insertion-sort.md)
+- [Agreement with CSLib's monadic insertion sort](../../insertion-cost/insertion-sort-eq-insertion-sort-m.md)
+- [Insertion sort permutes its input](../../insertion-cost/insertion-sort-perm.md)
 
 ## Sources
 

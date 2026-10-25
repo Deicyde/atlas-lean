@@ -7,9 +7,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.quickselect_time
 ---
 
-# Quickselect time
+# Worst-case comparison bound for quickselect
 
-Quickselect uses at most `n * (n - 1) / 2` comparisons on a list of length `n`.
+**Worst-case comparison bound for quickselect.** For every list $L$ over a linear order, of
+length $n$, and every natural number $k$, quickselect on $L$ with rank $k$ makes at most
+$n(n-1)/2$ comparisons.
 
 ## Depends on
 
@@ -17,10 +19,10 @@ Quickselect uses at most `n * (n - 1) / 2` comparisons on a list of length `n`.
 
 ## Proof depends on
 
-- [Three Way Partition](../../sort/partition/three-way-partition.md)
-- [Partition3](../../sort/partition/partition3.md)
-- [Partition3 length](../../sort/partition/partition3-length.md)
-- [Partition3 time](../../sort/partition/partition3-time.md)
+- [Three-way partition record](../../sort/partition/three-way-partition.md)
+- [Stable three-way partition](../../sort/partition/partition3.md)
+- [Sizes of the three parts of a three-way partition](../../sort/partition/partition3-length.md)
+- [Cost of the stable three-way partition](../../sort/partition/partition3-time.md)
 
 ## Sources
 

@@ -13,14 +13,14 @@ reached by round `m`.
 
 ## Depends on
 
-- [Exact Level](exact-level.md)
-- [Is Chain From](is-chain-from.md)
-- [Layers](layers.md)
+- [Exact level of a right vertex](exact-level.md)
+- [Alternating chain to an unmatched left vertex](is-chain-from.md)
+- [Alternating breadth-first layers](layers.md)
 
 ## Proof depends on
 
-- [Tail](tail.md)
-- [Free](free.md)
+- [The second pair of a shortest alternating chain](tail.md)
+- [Unmatched left vertex](free.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.Paging.lruCache
 ---
 
-# Lru Cache
+# Cache after LRU serves a request sequence
 
-The cache after serving a request sequence.
+**Cache after LRU serves a request sequence.** For a capacity $k$, a cache $c$ (a list of
+pages, most recently used first) and a request sequence $\sigma$, this is the cache obtained from
+$c$ by applying one LRU step with capacity $k$ for each request of $\sigma$, in order.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lru Step](lru-step.md)
+- [One LRU step](lru-step.md)
 
 ## Sources
 

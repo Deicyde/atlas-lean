@@ -13,14 +13,14 @@ messages that are not coprime to `n`.
 
 ## Depends on
 
-- [Key](key.md)
-- [Decrypt](decrypt.md)
-- [Encrypt](encrypt.md)
-- [N](n.md)
+- [RSA key](key.md)
+- [RSA decryption](decrypt.md)
+- [RSA encryption](encrypt.md)
+- [RSA modulus](n.md)
 
 ## Proof depends on
 
-- [Pow ed](pow-ed.md)
+- [RSA exponent identity](pow-ed.md)
 
 ## Sources
 

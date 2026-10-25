@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.quickSort_time
 ---
 
-# Quick Sort time
+# Worst-case comparison bound for quicksort
 
-Quicksort uses at most `n * (n - 1) / 2` comparisons on a list of length `n`.
+**Worst-case comparison bound for quicksort.** For every list of length $n$ over a linear
+order, quicksort performs at most $n(n-1)/2$ comparisons.
 
 ## Depends on
 
-- [Quick Sort](quick-sort.md)
+- [Quicksort](quick-sort.md)
 
 ## Proof depends on
 
-- [Three Way Partition](../partition/three-way-partition.md)
-- [Partition3](../partition/partition3.md)
-- [Partition3 length](../partition/partition3-length.md)
-- [Partition3 time](../partition/partition3-time.md)
+- [Three-way partition record](../partition/three-way-partition.md)
+- [Stable three-way partition](../partition/partition3.md)
+- [Sizes of the three parts of a three-way partition](../partition/partition3-length.md)
+- [Cost of the stable three-way partition](../partition/partition3-time.md)
 
 ## Sources
 

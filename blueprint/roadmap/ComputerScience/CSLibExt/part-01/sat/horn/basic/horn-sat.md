@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Horn.hornSat
 ---
 
-# Horn Sat
+# Horn satisfiability test
 
-Horn satisfiability: evaluate the formula at its least model candidate.
+**Horn satisfiability test.** For a CNF formula $\varphi$, the Horn satisfiability test
+returns the Boolean truth value of $\varphi$ under its least model candidate.
 
 ## Depends on
 
@@ -15,8 +16,8 @@ Horn satisfiability: evaluate the formula at its least model candidate.
 
 ## Proof depends on
 
-- [Formula Satisfied](../../dpll/solver/formula-satisfied.md)
-- [Least Model](least-model.md)
+- [Boolean formula satisfaction check](../../dpll/solver/formula-satisfied.md)
+- [Least model candidate](least-model.md)
 
 ## Sources
 

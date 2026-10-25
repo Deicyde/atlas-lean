@@ -6,17 +6,22 @@ proof: formalized
 lean: Cslib.MachineLearning.Sequence.HiddenMarkov.sum_pathProb_ite_ite
 ---
 
-# Sum path Prob ite ite
+# Paths through two fixed states
 
-The path sums with fixed states at times `t` and `t + k` factor through the forward variable
-and a bridge.
+**Paths through two fixed states.** For a hidden Markov model with a finite set of states $S$
+and weights in a semiring, observations $x_0, x_1, \dots$, all $k, t \in \mathbb{N}$ and states
+$s, u \in S$, the sum of the path weights $p_{t+k}(z)$ over all state paths
+$z = (z_0, \dots, z_{t+k})$ in $S$ with $z_t = s$ and $z_{t+k} = u$ equals
+$\alpha_t(s)\, b_{k,t}(s, u)$. Here $p_{t+k}(z)$ is the joint weight of the path $z$ and the
+observations $x_0, \dots, x_{t+k}$, $\alpha_t(s)$ is the forward variable and $b_{k,t}(s, u)$ is
+the bridge weight from state $s$ at time $t$ to state $u$ at time $t + k$.
 
 ## Depends on
 
-- [HMM](../hidden-markov/hmm.md)
-- [Bridge](bridge.md)
-- [Forward](../hidden-markov/forward.md)
-- [Path Prob](../hidden-markov/path-prob.md)
+- [Hidden Markov model](../hidden-markov/hmm.md)
+- [Bridge weights of a hidden Markov model](bridge.md)
+- [Forward variables of a hidden Markov model](../hidden-markov/forward.md)
+- [Joint weight of a state path and the observations](../hidden-markov/path-prob.md)
 
 ## Proof depends on
 

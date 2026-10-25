@@ -4,6 +4,6 @@ navigation: module
 
 # Counting
 
-- [Counting Sort](counting-sort.md)
-- [Counting Sort correct](counting-sort-correct.md)
-- [Counting Sort time](counting-sort-time.md)
+- [Counting sort](counting-sort.md)
+- [Correctness of counting sort](counting-sort-correct.md)
+- [Running time of counting sort](counting-sort-time.md)

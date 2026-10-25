@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.BipartiteMatching.step_extends
 ---
 
-# Step extends
+# Earlier partners survive an arrival
 
-Every left vertex matched before a step stays matched with the same partner.
+**Earlier partners survive an arrival.** Let $m$ be an assignment giving each right vertex of
+a bipartite graph either a left partner or none, and let $j$ be a right vertex with no partner
+in $m$. If a right vertex $j'$ has partner $i$ in $m$, then $j'$ still has partner $i$ after
+the greedy step for the arrival of $j$.
 
 ## Depends on
 
-- [Step](step.md)
+- [Greedy step of online bipartite matching](step.md)
 
 ## Proof depends on
 
-- [Free](../../graph/bipartite-matching/free.md)
+- [Unmatched left vertex](../../graph/bipartite-matching/free.md)
 
 ## Sources
 

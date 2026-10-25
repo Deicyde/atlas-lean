@@ -19,7 +19,7 @@ variable $i$ by $t_i$, keeping its free type variables and base types unchanged.
 ## Proof depends on
 
 - [Evaluation of a type scheme](eval.md)
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Sources
 

@@ -4,13 +4,13 @@ navigation: module
 
 # Naive
 
-- [Naive Matches](naive-matches.md)
-- [Naive Matches ret](naive-matches-ret.md)
-- [Mem naive Matches iff](mem-naive-matches-iff.md)
-- [Naive Matches pairwise](naive-matches-pairwise.md)
-- [Naive Matches time eq](naive-matches-time-eq.md)
-- [Naive Matches time le](naive-matches-time-le.md)
-- [Naive Matches ret replicate](naive-matches-ret-replicate.md)
-- [Naive Matches time replicate](naive-matches-time-replicate.md)
-- [Naive Matches nil pattern](naive-matches-nil-pattern.md)
-- [Naive Matches of length lt](naive-matches-of-length-lt.md)
+- [Naive string matcher](naive-matches.md)
+- [Output of naive matching](naive-matches-ret.md)
+- [Correctness of naive string matching](mem-naive-matches-iff.md)
+- [Naive matching reports shifts in increasing order](naive-matches-pairwise.md)
+- [Exact comparison count of naive matching](naive-matches-time-eq.md)
+- [Upper bound on the comparisons of naive matching](naive-matches-time-le.md)
+- [Naive matching on a repeated symbol reports every shift](naive-matches-ret-replicate.md)
+- [Comparison count of naive matching on a repeated symbol](naive-matches-time-replicate.md)
+- [Naive matching with the empty pattern](naive-matches-nil-pattern.md)
+- [Naive matching with a pattern longer than the text](naive-matches-of-length-lt.md)

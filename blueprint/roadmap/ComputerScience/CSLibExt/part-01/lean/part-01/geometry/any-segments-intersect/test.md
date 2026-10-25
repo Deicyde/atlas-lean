@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 - [Left endpoint of a segment](left.md)
 - [Right endpoint of a segment](right.md)
-- [Segments Intersect](../segment-intersection/segments-intersect.md)
+- [The SEGMENTS-INTERSECT procedure](../segment-intersection/segments-intersect.md)
 
 ## Sources
 

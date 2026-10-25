@@ -4,12 +4,12 @@ navigation: module
 
 # Basic
 
-- [Is Horn](is-horn.md)
-- [Body In](body-in.md)
-- [Derive](derive.md)
-- [Close](close.md)
-- [Least Model](least-model.md)
-- [Least model](least-model-le.md)
-- [Satisfies least Model iff](satisfies-least-model-iff.md)
-- [Horn Sat](horn-sat.md)
-- [Correctness](horn-sat-eq-true-iff.md)
+- [Horn formula](is-horn.md)
+- [Body of a clause contained in a set](body-in.md)
+- [Forward-chaining step](derive.md)
+- [Forward-chaining closure](close.md)
+- [Least model candidate](least-model.md)
+- [On Horn formulas, the least model candidate lies below every model](least-model-le.md)
+- [Horn satisfiability via the least model](satisfies-least-model-iff.md)
+- [Horn satisfiability test](horn-sat.md)
+- [Correctness of the Horn satisfiability test](horn-sat-eq-true-iff.md)

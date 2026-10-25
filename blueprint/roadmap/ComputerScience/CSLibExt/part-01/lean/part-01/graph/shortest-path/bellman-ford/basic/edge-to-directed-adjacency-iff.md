@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.edge_toDirectedAdjacency_iff
 ---
 
-# Edge to Directed Adjacency iff
+# Edges of the weight-forgetting graph
 
-The weight-forgetting graph contains exactly the endpoint pairs of input edges.
+**Edges of the weight-forgetting graph.** For a list $E$ of weighted directed edges on the
+vertices $0, \dots, n-1$ and vertices $u$, $v$, the graph obtained from $E$ by forgetting weights
+has an edge from $u$ to $v$ if and only if some edge in $E$ has source $u$ and target $v$.
 
 ## Depends on
 
-- [Edge](edge.md)
-- [To Directed Adjacency](to-directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/edge.md)
+- [Weighted directed edge](edge.md)
+- [Weight-forgetting directed graph](to-directed-adjacency.md)
+- [Edge of a directed adjacency graph](../../../directed-adjacency-2/edge.md)
 
 ## Sources
 

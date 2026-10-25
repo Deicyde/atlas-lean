@@ -8,35 +8,36 @@ lean: Cslib.Databases.bcnfDecomposition_lossless
 
 # The BCNF decomposition is lossless
 
-**The BCNF decomposition is lossless**: every relation over `S` satisfying the dependencies
-derivable from `F` between attributes of `S` is the join of its projections onto the output
-schemes.
+**The BCNF decomposition is lossless.** Let $F$ be a set of functional dependencies, $l$ a list
+of attributes and $S$ a set of attributes, and let $r$ be a relation over $S$ that satisfies every
+dependency $X \to Y$ derivable from $F$ with $X, Y \subseteq S$. Then $r$ is the natural join of
+its projections onto the schemes of the BCNF decomposition of $S$ for $F$ and $l$.
 
 ## Depends on
 
-- [FD](../functional-dependencies/fd.md)
+- [Functional dependency](../functional-dependencies/fd.md)
 - [Is Over](../relational-algebra/is-over-2.md)
-- [Satisfies On](satisfies-on.md)
+- [Satisfying a set of dependencies on a scheme](satisfies-on.md)
 - [Tuple](../relational-algebra/tuple.md)
-- [Bcnf Decomposition](bcnf-decomposition.md)
-- [Join Projections](join-projections.md)
+- [BCNF decomposition](bcnf-decomposition.md)
+- [Join of the projections of a relation](join-projections.md)
 
 ## Proof depends on
 
-- [Derives](../functional-dependencies/derives.md)
-- [Decompose](../functional-dependencies/decompose.md)
-- [Union](../functional-dependencies/union.md)
-- [Holds In](../functional-dependencies/holds-in.md)
-- [Is BCNFViolation](is-bcnfviolation.md)
+- [Derivability with Armstrong's axioms](../functional-dependencies/derives.md)
+- [Decomposition rule](../functional-dependencies/decompose.md)
+- [Union rule](../functional-dependencies/union.md)
+- [A functional dependency holds in a relation](../functional-dependencies/holds-in.md)
+- [BCNF violations](is-bcnfviolation.md)
 - [Compatible](../relational-algebra/compatible.md)
 - [Is Over](../relational-algebra/is-over.md)
 - [Merge](../relational-algebra/merge.md)
 - [Restrict](../relational-algebra/restrict.md)
-- [Attr Closure](../functional-dependencies/attr-closure.md)
-- [Bcnf Candidates](bcnf-candidates.md)
-- [Bcnf Decompose](bcnf-decompose.md)
-- [Closure Loop](../functional-dependencies/closure-loop.md)
-- [Closure Step](../functional-dependencies/closure-step.md)
+- [Attribute closure](../functional-dependencies/attr-closure.md)
+- [Candidate BCNF violations](bcnf-candidates.md)
+- [BCNF decomposition with bounded depth](bcnf-decompose.md)
+- [Iterated closure rounds](../functional-dependencies/closure-loop.md)
+- [One round of the attribute-closure algorithm](../functional-dependencies/closure-step.md)
 - [Join](../relational-algebra/join.md)
 - [Join Unit](join-unit.md)
 - [Join assoc](../relational-algebra/join-assoc.md)

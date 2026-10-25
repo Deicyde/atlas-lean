@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Logic.PL.CNF.exists_satisfies_update_of_satisfies_eliminate
 ---
 
-# Exists satisfies update of satisfies eliminate
+# Completeness of a Davis-Putnam step
 
-Completeness of a step: from an assignment satisfying `eliminate x φ`, changing the value
-of `x` alone gives one satisfying `φ`.
+**Completeness of a Davis-Putnam step.** Let $x$ be a variable, $\varphi$ a CNF formula and
+$\sigma$ an assignment that satisfies the formula obtained from $\varphi$ by eliminating $x$. Then
+there is a truth value $b$ such that the assignment that agrees with $\sigma$ except that it sends
+$x$ to $b$ satisfies $\varphi$.
 
 ## Depends on
 
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
-- [Eliminate](eliminate.md)
+- [Davis-Putnam elimination of a variable](eliminate.md)
 
 ## Proof depends on
 
-- [Fst ne of mem resolvent](fst-ne-of-mem-resolvent.md)
-- [Neg Clauses](neg-clauses.md)
-- [Pos Clauses](pos-clauses.md)
+- [Resolvents do not mention the resolved variable](fst-ne-of-mem-resolvent.md)
+- [Clauses containing a variable only negatively](neg-clauses.md)
+- [Clauses containing a variable only positively](pos-clauses.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 - [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)

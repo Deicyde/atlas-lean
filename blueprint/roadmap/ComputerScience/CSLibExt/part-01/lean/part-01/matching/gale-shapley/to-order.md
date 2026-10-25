@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.toOrder
 ---
 
-# To Order
+# Preference order of a ranking
 
-The strict preference given by a ranking `σ` (`σ k` is the `k`-th choice, `0` the best):
-`a` is preferred to `b` when `σ.symm a < σ.symm b`.
+**Preference order of a ranking.** A permutation $\sigma$ of $\{0, \dots, n-1\}$, read as a
+ranking ($\sigma(k)$ is the $k$-th choice, $\sigma(0)$ the best), gives the strict total order on
+$\{0, \dots, n-1\}$ in which $a$ is preferred to $b$ when $\sigma^{-1}(a) < \sigma^{-1}(b)$.
 
 ## Depends on
 

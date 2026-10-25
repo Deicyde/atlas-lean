@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.searchPath_none_marks
 ---
 
-# Search Path none marks
+# A failed search marks its start dead
 
-A failed search marks its start dead.
+**A failed search marks its start dead.** For every set of used left vertices, every level
+$k$, every right vertex $z$ and every set of dead right vertices, if the search at level $k$ from
+$z$ finds no path, then $z$ is dead after it.
 
 ## Depends on
 
-- [Search Path](search-path.md)
+- [Depth-first search of a Hopcroft–Karp phase](search-path.md)
 
 ## Proof depends on
 
-- [Layers](layers.md)
-- [Partner Of](partner-of.md)
-- [Search Path mono](search-path-mono.md)
-- [Try Preds](try-preds.md)
-- [Try Preds none](try-preds-none.md)
+- [Alternating breadth-first layers](layers.md)
+- [Partner of a left vertex](partner-of.md)
+- [The dead set of a search only grows](search-path-mono.md)
+- [Trying the candidate predecessors of a right vertex](try-preds.md)
+- [When trying candidates fails](try-preds-none.md)
 
 ## Sources
 

@@ -122,14 +122,18 @@ private theorem compat_or (o₁ o₂ o₃ : Option D) :
         (o₂ = none ∨ o₃ = none ∨ o₂ = o₃)) := by
   rcases o₁ with _ | x <;> rcases o₂ with _ | y <;> rcases o₃ with _ | z <;> aesop
 
-/-- Compatibility of three tuples, grouped from the left, is pairwise compatibility. -/
+/-- **Compatibility with a merge, grouped from the left.** For tuples $t$, $u$, $v$: $t$ and $u$
+are compatible and the merge of $t$ and $u$ is compatible with $v$ if and only if $t$, $u$, $v$
+are pairwise compatible, that is, $t$ and $u$, $t$ and $v$, and $u$ and $v$ are compatible. -/
 theorem compatible_merge_left {t u v : Tuple A D} :
     Compatible t u ∧ Compatible (merge t u) v ↔
       Compatible t u ∧ Compatible t v ∧ Compatible u v := by
   simp only [Compatible, merge, ← forall_and]
   exact forall_congr' fun a => compat_or (t a) (u a) (v a)
 
-/-- Compatibility of three tuples, grouped from the right, is pairwise compatibility. -/
+/-- **Compatibility with a merge, grouped from the right.** For tuples $t$, $u$, $v$: $u$ and $v$
+are compatible and $t$ is compatible with the merge of $u$ and $v$ if and only if $t$, $u$, $v$
+are pairwise compatible, that is, $t$ and $u$, $t$ and $v$, and $u$ and $v$ are compatible. -/
 theorem compatible_merge_right {t u v : Tuple A D} :
     Compatible u v ∧ Compatible t (merge u v) ↔
       Compatible t u ∧ Compatible t v ∧ Compatible u v := by
@@ -229,7 +233,12 @@ def eval [DecidableEq D] : Cond A D → Tuple A D → Bool
   | not c, t => !c.eval t
   | and c c', t => c.eval t && c'.eval t
 
-/-- The attributes a selection condition mentions. -/
+/-- **Attributes of a selection condition.** The set of attributes mentioned by a selection
+condition, defined by recursion: it is empty for the always-true condition; for the comparison
+$a = d$ of an attribute $a$ with a constant $d$ it is $\{a\}$; for the comparison $a = b$ of
+attributes $a$ and $b$ it is $\{a, b\}$; for the negation $\neg \varphi$ of a condition $\varphi$
+it is the set of attributes of $\varphi$; and for the conjunction $\varphi \land \psi$ of
+conditions $\varphi$ and $\psi$ it is the union of the attributes of $\varphi$ and of $\psi$. -/
 def attrs [DecidableEq A] : Cond A D → Finset A
   | tt => ∅
   | eqConst a _ => {a}

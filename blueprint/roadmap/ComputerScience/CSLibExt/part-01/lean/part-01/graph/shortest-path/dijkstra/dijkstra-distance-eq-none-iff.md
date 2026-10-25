@@ -6,24 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.dijkstra_distance_eq_none_iff
 ---
 
-# Dijkstra distance eq none iff
+# Dijkstra's distance is infinite exactly at unreachable vertices
 
-An infinite output distance is equivalent to graph unreachability.
+**Dijkstra's distance is infinite exactly at unreachable vertices.** Let $G$ be a directed
+graph on the vertices $0, \dots, n-1$, let $w(u, v)$ be a natural-number weight for every
+ordered pair of vertices, and let $s$ and $t$ be vertices. The distance to $t$ output by
+Dijkstra's algorithm on $G$ with weights $w$ from source $s$ is infinite if and only if $t$ is
+not reachable from $s$ in $G$.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](dijkstra-cost.md)
-- [Dijkstra Result](dijkstra-result.md)
-- [Reachable](../../directed-adjacency-2/reachable.md)
-- [Dijkstra](dijkstra.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](dijkstra-cost.md)
+- [Output of Dijkstra's algorithm](dijkstra-result.md)
+- [Reachability in a directed graph](../../directed-adjacency-2/reachable.md)
+- [Dense Dijkstra's algorithm](dijkstra.md)
 
 ## Proof depends on
 
-- [Edge](../../directed-adjacency-2/edge.md)
-- [Has Path Weight](has-path-weight.md)
-- [Path Weight](path-weight.md)
-- [Reachable iff exists has Path Weight](reachable-iff-exists-has-path-weight.md)
+- [Edge of a directed adjacency graph](../../directed-adjacency-2/edge.md)
+- [Walks of a given weight](has-path-weight.md)
+- [Endpoint-weight sum along a vertex list](path-weight.md)
+- [Reachability via weighted walks](reachable-iff-exists-has-path-weight.md)
 
 ## Sources
 

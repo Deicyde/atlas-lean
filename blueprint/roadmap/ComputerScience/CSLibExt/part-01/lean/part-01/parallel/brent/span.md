@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.span
 ---
 
-# Span
+# Span of a computation DAG
 
-The span: the number of tasks on a longest path.
+**Span of a computation DAG.** The span of a computation DAG is the number of tasks on a
+longest path, that is, the largest depth of a task, and $0$ when there are no tasks.
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 
 ## Proof depends on
 
-- [Depth](depth.md)
+- [Depth of a task in a computation DAG](depth.md)
 
 ## Sources
 

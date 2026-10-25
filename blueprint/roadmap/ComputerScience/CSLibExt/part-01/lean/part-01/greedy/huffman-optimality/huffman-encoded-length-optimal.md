@@ -16,18 +16,18 @@ cost whenever the leaf symbols are unique.
 
 ## Depends on
 
-- [Huffman Tree](../huffman/huffman-tree.md)
-- [Admissible](admissible.md)
-- [Encoded Length](../huffman/encoded-length.md)
-- [Huffman](../huffman/huffman.md)
+- [Huffman tree](../huffman/huffman-tree.md)
+- [Admissible Huffman trees](admissible.md)
+- [Encoded length of a coding tree](../huffman/encoded-length.md)
+- [Huffman's algorithm](../huffman/huffman.md)
 
 ## Proof depends on
 
-- [Encoded Length fork](../huffman/encoded-length-fork.md)
-- [Weighted Leaves](../huffman/weighted-leaves.md)
-- [Weighted Path Length](../huffman/weighted-path-length.md)
-- [Huffman optimal](huffman-optimal.md)
-- [Huffman weighted Leaves perm](../huffman/huffman-weighted-leaves-perm.md)
+- [Encoded length of a fork](../huffman/encoded-length-fork.md)
+- [Weighted leaves of a Huffman tree](../huffman/weighted-leaves.md)
+- [Weighted path length](../huffman/weighted-path-length.md)
+- [Optimality of Huffman coding](huffman-optimal.md)
+- [Huffman's construction keeps the weighted leaves](../huffman/huffman-weighted-leaves-perm.md)
 
 ## Sources
 

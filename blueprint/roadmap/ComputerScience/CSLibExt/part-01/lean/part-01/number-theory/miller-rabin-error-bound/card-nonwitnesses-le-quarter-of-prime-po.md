@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MillerRabin.card_nonwitnesses_le_quarter_of_prime_pow
 ---
 
-# Card nonwitnesses le quarter of prime pow
+# At most a quarter of the bases are non-witnesses for an odd prime power
 
-The non-witnesses of an odd prime power `p^k` with `k ≥ 2` number at most `p - 1 ≤ (p^k - 1)/4`:
-they satisfy `a^(p^k - 1) ≡ 1`, and two of them that agree modulo `p` agree modulo `p^k`, since
-their quotient `x` has `x^(p^(k-1)) = 1` (lifting the exponent) and `x^(p^k - 1) = 1` with
-coprime exponents.
+**At most a quarter of the bases are non-witnesses for an odd prime power.** Let $p$ be a prime
+and $k \ge 2$ with $p^k$ odd. Then at most $(p^k - 1)/4$ of the bases $1, \dots, p^k - 1$ are
+non-witnesses for $p^k$.
+
+The proof shows that there are at most $p - 1$ non-witnesses: they satisfy
+$a^{p^k - 1} \equiv 1 \pmod{p^k}$, and two of them that agree modulo $p$ agree modulo $p^k$.
 
 ## Depends on
 
-- [Nonwitnesses](nonwitnesses.md)
+- [Non-witnesses of a number](nonwitnesses.md)
 
 ## Proof depends on
 
-- [Coprime of witness eq false](coprime-of-witness-eq-false.md)
-- [Witness](../miller-rabin/witness.md)
+- [Non-witnesses pass Fermat's test and are units](coprime-of-witness-eq-false.md)
+- [Miller–Rabin witness test](../miller-rabin/witness.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsTrial_accept_discrepancy_iff
 ---
 
-# Freivalds Trial accept discrepancy iff
+# Acceptance via the product discrepancy
 
-Acceptance is exactly a zero image under the actual product discrepancy.
+**Acceptance via the product discrepancy.** For $n \times n$ matrices $A$, $B$, $C$ over
+$\mathbb{F}_2$ and every seed $r \in \mathbb{F}_2^n$, the Freivalds trial on $A$, $B$, $C$, $r$
+returns true if and only if $(AB - C)r = 0$.
 
 ## Depends on
 
-- [Freivalds Matrix](freivalds-matrix.md)
-- [Freivalds Trial](freivalds-trial.md)
+- [Matrix of a Freivalds input](freivalds-matrix.md)
+- [Freivalds trial](freivalds-trial.md)
 
 ## Proof depends on
 
-- [Freivalds Trial accept iff](freivalds-trial-accept-iff.md)
+- [Acceptance criterion of the Freivalds trial](freivalds-trial-accept-iff.md)
 
 ## Sources
 

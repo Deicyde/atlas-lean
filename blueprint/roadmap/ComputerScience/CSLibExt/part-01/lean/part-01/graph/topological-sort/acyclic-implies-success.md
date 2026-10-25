@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TopologicalSort.acyclic_implies_success
 ---
 
-# Acyclic implies success
+# Kahn's algorithm succeeds on acyclic graphs
 
-Every acyclic finite graph makes the executable Kahn traversal return success.
+**Kahn's algorithm succeeds on acyclic graphs.** If a finite directed graph $G$, given by a
+vertex enumeration and adjacency lists, is acyclic, then deterministic FIFO Kahn topological
+sorting of $G$ returns success with some vertex order.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 - [Is Acyclic](is-acyclic.md)
-- [Result](result.md)
-- [Sort](sort.md)
+- [Outcome of Kahn's topological sort](result.md)
+- [Kahn's topological sort](sort.md)
 
 ## Proof depends on
 
-- [Edge](../directed-adjacency-2/edge.md)
-- [Directed Cycle In](directed-cycle-in.md)
-- [Directed Cycle In iff](directed-cycle-in-iff.md)
-- [Failure cycle](failure-cycle.md)
-- [Failure remainder](failure-remainder.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
+- [Directed cycle within a vertex list](directed-cycle-in.md)
+- [Characterization of directed cycles within a vertex list](directed-cycle-in-iff.md)
+- [A failed Kahn run leaves a directed cycle](failure-cycle.md)
+- [A failed Kahn run splits the vertices into processed and unprocessed ones](failure-remainder.md)
 
 ## Sources
 

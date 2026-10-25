@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.postorder_nodup
 ---
 
-# Postorder nodup
+# DFS finishes each vertex at most once
 
-Every discovered vertex finishes exactly once.
+**DFS finishes each vertex at most once.** Let $G$ be a finite directed graph and $R$ a list of
+root vertices. The finish order (postorder) of the depth-first search of $G$ from $R$ contains no
+vertex twice.
 
 ## Depends on
 
-- [Traversal](traversal.md)
-- [Dfs](dfs.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Depth-first traversal record](traversal.md)
+- [Left-first depth-first search](dfs.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 

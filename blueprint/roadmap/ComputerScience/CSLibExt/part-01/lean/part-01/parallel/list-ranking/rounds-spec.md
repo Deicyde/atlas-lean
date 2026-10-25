@@ -6,23 +6,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.ListRanking.rounds_spec
 ---
 
-# The invariant of pointer jumping
+# The invariant of pointer jumping for list ranking
 
-**The invariant of pointer jumping**: after `t` rounds each pointer is `2 ^ t` steps ahead and
-the distance is `min (2 ^ t) (rank v)`.
+**The invariant of pointer jumping for list ranking.** Let $\mathrm{succ}$ map each of the
+nodes $0, \dots, n - 1$ to its successor or to nothing, and suppose the lists terminate: from
+every node, $n$ steps run off the end. Write $\mathrm{rank}(v)$ for the number of nodes after
+$v$. Then for every $t \ge 0$ and every node $v$, after $t$ rounds of pointer jumping, the
+pointer of $v$ is the node $2^t$ steps down the list from $v$ (no node if the list ends before
+that), and the distance of $v$ is $\min(2^t, \mathrm{rank}(v))$.
 
 ## Depends on
 
-- [State](state.md)
-- [Terminates](terminates.md)
-- [Jump](jump.md)
-- [Rank](rank.md)
-- [Rounds](rounds.md)
+- [Pointer-jumping state for list ranking](state.md)
+- [Terminating successor functions](terminates.md)
+- [Iterated successor](jump.md)
+- [Rank of a node in a linked list](rank.md)
+- [The list-ranking state after $t$ rounds](rounds.md)
 
 ## Proof depends on
 
 - [The characteristic property of the rank](jump-eq-none-iff.md)
-- [Rank of jump](rank-of-jump.md)
+- [Rank decreases along jumps](rank-of-jump.md)
 
 ## Sources
 

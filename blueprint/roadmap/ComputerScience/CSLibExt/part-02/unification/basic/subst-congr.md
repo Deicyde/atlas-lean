@@ -6,16 +6,18 @@ proof: formalized
 lean: Cslib.Unification.Term.subst_congr
 ---
 
-# Subst congr
+# Substitution depends only on the variables of the term
 
-Substitutions that agree on the variables of a term act on it alike.
+**Substitution depends only on the variables of the term.** If two substitutions $\sigma$
+and $\tau$ agree on every variable occurring in a term $u$, then applying $\sigma$ to $u$ gives
+the same term as applying $\tau$ to $u$.
 
 ## Depends on
 
-- [Subst](subst.md)
-- [Term](term.md)
-- [Subst](subst-2.md)
-- [Vars](vars.md)
+- [Substitution](subst.md)
+- [Terms for unification](term.md)
+- [Applying a substitution to a term](subst-2.md)
+- [Variables of a term](vars.md)
 
 ## Sources
 

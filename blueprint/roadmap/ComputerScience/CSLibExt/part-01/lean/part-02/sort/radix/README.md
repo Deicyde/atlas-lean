@@ -4,6 +4,6 @@ navigation: module
 
 # Radix
 
-- [Radix Sort](radix-sort.md)
-- [Radix Sort correct](radix-sort-correct.md)
-- [Radix Sort time](radix-sort-time.md)
+- [Radix sort](radix-sort.md)
+- [Correctness of radix sort](radix-sort-correct.md)
+- [Cost bound for radix sort](radix-sort-time.md)

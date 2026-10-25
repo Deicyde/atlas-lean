@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.lowerBound_time_le
 ---
 
-# Lower Bound time le
+# Comparison bound for lower-bound search
 
-Lower-bound search uses at most `clog₂(n + 1)` element comparisons.
+**Comparison bound for lower-bound search.** For every array $a$ of length $n$ over a linearly
+ordered type and every key $k$, lower-bound search for $k$ in $a$ makes at most
+$\lceil \log_2 (n + 1) \rceil$ element comparisons.
 
 ## Depends on
 
-- [Lower Bound](lower-bound.md)
+- [Lower-bound search](lower-bound.md)
 
 ## Sources
 

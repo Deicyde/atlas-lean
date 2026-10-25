@@ -7,11 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.binSearch_eq_some_iff
 ---
 
-# Bin Search eq some iff
+# Result of bounded binary search on a sorted array
 
-On a sorted array, bounded binary search returns `a` exactly when `a` is the key and the key
-occurs at a valid index between the inclusive raw bounds. The validity condition on the index
-expresses the implementation's clamping of an oversized upper bound.
+**Result of bounded binary search on a sorted array.** Let $A = (a_0, \dots, a_{n-1})$ be an
+array of length $n$ with entries in a linearly ordered type, with $a_i \le a_j$ whenever $i < j$.
+Let $k$ and $a$ be elements of that type and $\ell$, $h$ natural numbers. Lean core's array binary
+search for $k$ in $A$, with the strict order $<$ as comparison and inclusive bounds $\ell$ and
+$h$, returns $a$ if and only if $a = k$ and there is an index $i < n$ with $\ell \le i \le h$ and
+$a_i = k$.
+
+The requirement $i < n$ reflects the implementation's clamping of an upper bound $h \ge n$ to
+$n - 1$.
 
 ## Depends on
 

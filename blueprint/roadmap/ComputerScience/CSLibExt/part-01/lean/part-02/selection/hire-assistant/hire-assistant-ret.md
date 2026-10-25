@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_ret
 ---
 
-# Hire Assistant ret
+# The hire-assistant scan returns the earliest best candidate
 
-The returned manager is the canonical earliest maximum index.
+**The hire-assistant scan returns the earliest best candidate.** For every list
+$x_0, \dots, x_{n-1}$ in a linearly ordered type, the manager returned by the hire-assistant scan
+is none when the list is empty, and otherwise is the smallest index $i$ such that $x_i$ is a
+maximum of the list.
 
 ## Depends on
 
-- [Hire Assistant](hire-assistant.md)
+- [The hire-assistant scan](hire-assistant.md)
 
 ## Sources
 

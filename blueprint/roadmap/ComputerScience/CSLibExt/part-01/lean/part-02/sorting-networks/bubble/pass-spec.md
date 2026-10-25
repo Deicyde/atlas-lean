@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bubble.pass_spec
 ---
 
-# One pass carries the maximum of wires `0..m` to wire `m`
+# Effect of one bubble pass
 
-**One pass carries the maximum of wires `0..m` to wire `m`**: wires above `m` are untouched,
-every wire up to `m` ends at most wire `m`, and each holds one of the input values of wires
-`0..m`.
+**Effect of one bubble pass.** Let $w$ be an input on $n$ wires with values in a linearly
+ordered type, let $m < n$, and let $w'$ be the output of the bubble pass ending at wire $m$
+(the comparators $(0, 1), \ldots, (m - 1, m)$) run on $w$. Then $w'_i = w_i$ for every wire
+$i > m$; $w'_i \le w'_m$ for every wire $i \le m$; and for every wire $i \le m$ there is a wire
+$j \le m$ with $w'_i = w_j$.
 
 ## Depends on
 
-- [Pass](pass.md)
-- [Run](../zero-one/run.md)
+- [Bubble pass](pass.md)
+- [Running a comparator network](../zero-one/run.md)
 
 ## Proof depends on
 
-- [Adjacent](adjacent.md)
-- [Network](../zero-one/network.md)
+- [Adjacent comparator](adjacent.md)
+- [Comparator network](../zero-one/network.md)
 - [Comparator](../zero-one/comparator.md)
 
 ## Sources

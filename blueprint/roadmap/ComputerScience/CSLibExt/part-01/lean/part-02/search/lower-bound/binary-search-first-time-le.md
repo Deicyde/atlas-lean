@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.binarySearchFirst?_time_le
 ---
 
-# Binary Search First? time le
+# Comparison bound for binary search for the first occurrence
 
-The membership wrapper uses at most one comparison beyond lower-bound search.
+**Comparison bound for binary search for the first occurrence.** For every array $a$ of length
+$n$ over a linearly ordered type and every key $k$, binary search for the first occurrence of $k$
+in $a$ makes at most $\lceil \log_2 (n + 1) \rceil + 1$ element comparisons.
 
 ## Depends on
 
-- [Binary Search First?](binary-search-first.md)
+- [Binary search for the first occurrence](binary-search-first.md)
 
 ## Proof depends on
 
-- [Binary Search First? time](binary-search-first-time.md)
-- [Lower Bound](lower-bound.md)
-- [Lower Bound time le](lower-bound-time-le.md)
+- [Exact comparison count of binary search for the first occurrence](binary-search-first-time.md)
+- [Lower-bound search](lower-bound.md)
+- [Comparison bound for lower-bound search](lower-bound-time-le.md)
 
 ## Sources
 

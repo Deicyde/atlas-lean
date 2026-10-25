@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.compareLE
 ---
 
-# Compare LE
+# Charged comparison
 
-Decides `x ≤ y`, charging one unit for the comparison.
+**Charged comparison.** For elements $x$ and $y$ of a linearly ordered type, this
+computation returns the truth value of $x \le y$ and charges one unit of time.
 
 ## Depends on
 

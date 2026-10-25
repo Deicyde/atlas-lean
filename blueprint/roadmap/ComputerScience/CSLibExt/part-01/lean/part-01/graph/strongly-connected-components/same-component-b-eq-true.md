@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.StronglyConnectedComponents.sameComponentB_eq_true
 ---
 
-# Same Component B eq true
+# The mutual-reachability test is correct
 
-The executable test reflects declarative strong connectivity.
+**The mutual-reachability test is correct.** For a directed graph $G$ and vertices $u$ and $v$,
+the executable mutual-reachability test on $u$ and $v$ returns true if and only if $u$ and $v$ are
+strongly connected in $G$.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 - [Strongly Connected](strongly-connected.md)
-- [Same Component B](same-component-b.md)
+- [Executable mutual-reachability test](same-component-b.md)
 
 ## Proof depends on
 
-- [Traversal](../depth-first-search/traversal.md)
-- [Dfs](../depth-first-search/dfs.md)
-- [Mem preorder iff reachable](../depth-first-search/mem-preorder-iff-reachable.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
+- [Depth-first traversal record](../depth-first-search/traversal.md)
+- [Left-first depth-first search](../depth-first-search/dfs.md)
+- [Depth-first search discovers exactly the reachable vertices](../depth-first-search/mem-preorder-iff-reachable.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 
 ## Sources
 

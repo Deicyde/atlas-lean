@@ -6,30 +6,35 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DAGShortestPaths.run_infinite_predecessor
 ---
 
-# Run infinite predecessor
+# Unreached vertices have no DAG shortest-path predecessor
 
-An infinite estimate has no installed predecessor.
+**Unreached vertices have no DAG shortest-path predecessor.** Let $E$ be a list of
+integer-weighted directed edge occurrences on the vertices $\{0, \dots, n-1\}$, let $s$ be a
+source vertex, and let $\sigma$ be a topological order of the directed graph obtained from $E$
+by forgetting weights. If the one-pass DAG shortest-path relaxation of $E$ from $s$ in the
+order $\sigma$ ends with an infinite distance estimate at a vertex $v$, then it records no
+predecessor edge for $v$.
 
 ## Depends on
 
-- [Distances](../../bellman-ford/basic/distances.md)
-- [Edge](../../bellman-ford/basic/edge.md)
-- [To Directed Adjacency](../../bellman-ford/basic/to-directed-adjacency.md)
-- [Cost](cost.md)
-- [Run](run.md)
-- [Is Topological Order](../../../topological-sort/is-topological-order.md)
+- [Bellman-Ford distance table](../../bellman-ford/basic/distances.md)
+- [Weighted directed edge](../../bellman-ford/basic/edge.md)
+- [Weight-forgetting directed graph](../../bellman-ford/basic/to-directed-adjacency.md)
+- [Cost of the DAG shortest-path pass](cost.md)
+- [One-pass DAG shortest-path relaxation](run.md)
+- [Topological order](../../../topological-sort/is-topological-order.md)
 
 ## Proof depends on
 
-- [Is Weighted Path](../../bellman-ford/basic/is-weighted-path.md)
-- [Edge to Directed Adjacency iff](../../bellman-ford/basic/edge-to-directed-adjacency-iff.md)
+- [Weighted path in an edge list](../../bellman-ford/basic/is-weighted-path.md)
+- [Edges of the weight-forgetting graph](../../bellman-ford/basic/edge-to-directed-adjacency-iff.md)
 - [Is Weighted Path append edge](../../bellman-ford/basic/is-weighted-path-append-edge.md)
 - [Is Weighted Path walk](../../bellman-ford/basic/is-weighted-path-walk.md)
-- [Path Weight](../../bellman-ford/basic/path-weight.md)
+- [Bellman–Ford path weight](../../bellman-ford/basic/path-weight.md)
 - [Path Weight append edge](../../bellman-ford/basic/path-weight-append-edge.md)
-- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/edge.md)
-- [Walk](../../../directed-adjacency-2/walk.md)
+- [Directed adjacency graph](../../../directed-adjacency-2/directed-adjacency.md)
+- [Edge of a directed adjacency graph](../../../directed-adjacency-2/edge.md)
+- [Walks of a given length](../../../directed-adjacency-2/walk.md)
 
 ## Sources
 

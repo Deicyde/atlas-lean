@@ -6,34 +6,37 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Johnson.johnson_eq_none_iff
 ---
 
-# Johnson eq none iff
+# Johnson's algorithm fails exactly on reachable negative cycles
 
-Johnson reports failure exactly when an original source can reach a negative cycle.
+**Johnson's algorithm fails exactly on reachable negative cycles.** For every list $E$ of
+directed edges on the vertices $\{0, \dots, n-1\}$ with integer weights, Johnson's algorithm on
+$E$ returns no table if and only if there is a vertex $s$ from which a negative cycle of $E$ is
+reachable.
 
 ## Depends on
 
-- [Edge](../../bellman-ford/basic/edge.md)
-- [Has Reachable Negative Cycle](../../bellman-ford/basic/has-reachable-negative-cycle.md)
-- [Basic](../johnson.md)
+- [Weighted directed edge](../../bellman-ford/basic/edge.md)
+- [Existence of a reachable negative cycle](../../bellman-ford/basic/has-reachable-negative-cycle.md)
+- [Johnson's algorithm](../johnson.md)
 
 ## Proof depends on
 
-- [Cost](../../bellman-ford/basic/cost.md)
-- [Total](../../bellman-ford/basic/total.md)
-- [Distances](../../bellman-ford/basic/distances.md)
-- [Is Weighted Path](../../bellman-ford/basic/is-weighted-path.md)
-- [Reachable Negative Cycle](../../bellman-ford/basic/reachable-negative-cycle.md)
-- [Result](../../bellman-ford/basic/result.md)
+- [Bellman-Ford cost counters](../../bellman-ford/basic/cost.md)
+- [Total Bellman–Ford cost](../../bellman-ford/basic/total.md)
+- [Bellman-Ford distance table](../../bellman-ford/basic/distances.md)
+- [Weighted path in an edge list](../../bellman-ford/basic/is-weighted-path.md)
+- [Reachable negative cycle witness](../../bellman-ford/basic/reachable-negative-cycle.md)
+- [Bellman–Ford result](../../bellman-ford/basic/result.md)
 - [Bellman Ford](../../bellman-ford/correctness/bellman-ford.md)
-- [Bellman Ford returns distances iff](../../bellman-ford/correctness/bellman-ford-returns-distances-iff.md)
+- [Bellman-Ford succeeds exactly when no negative cycle is reachable](../../bellman-ford/correctness/bellman-ford-returns-distances-iff.md)
 - [Is Weighted Path tail](../../bellman-ford/basic/is-weighted-path-tail.md)
-- [Path Vertices](../../bellman-ford/basic/path-vertices.md)
-- [Path Weight](../../bellman-ford/basic/path-weight.md)
-- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](../../dijkstra/dijkstra-cost.md)
-- [Total](../../dijkstra/total.md)
-- [Dijkstra Result](../../dijkstra/dijkstra-result.md)
-- [Dijkstra](../../dijkstra/dijkstra.md)
+- [Vertices of a path](../../bellman-ford/basic/path-vertices.md)
+- [Bellman–Ford path weight](../../bellman-ford/basic/path-weight.md)
+- [Directed adjacency graph](../../../directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](../../dijkstra/dijkstra-cost.md)
+- [Total Dijkstra cost](../../dijkstra/total.md)
+- [Output of Dijkstra's algorithm](../../dijkstra/dijkstra-result.md)
+- [Dense Dijkstra's algorithm](../../dijkstra/dijkstra.md)
 
 ## Sources
 

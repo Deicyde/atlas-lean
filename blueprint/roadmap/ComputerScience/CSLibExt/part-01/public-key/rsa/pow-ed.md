@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Crypto.PublicKey.RSA.Key.pow_ed
 ---
 
-# Pow ed
+# RSA exponent identity
 
-`x ^ (e d) = x` for every `x : ZMod n`.
+**RSA exponent identity.** For an RSA key with modulus $n$ and exponents $e$ and $d$, every
+$x \in \mathbb{Z}/n\mathbb{Z}$ satisfies $x^{ed} = x$.
 
 ## Depends on
 
-- [Key](key.md)
-- [N](n.md)
+- [RSA key](key.md)
+- [RSA modulus](n.md)
 
 ## Proof depends on
 
-- [Crt](crt.md)
-- [Pow eq self of crt](pow-eq-self-of-crt.md)
-- [Fermat](pow-eq-self-of-mod-eq.md)
+- [Chinese remainder isomorphism for an RSA modulus](crt.md)
+- [Checking a power identity through the Chinese remainder theorem](pow-eq-self-of-crt.md)
+- [Fermat's little theorem with exponents congruent to one](pow-eq-self-of-mod-eq.md)
 
 ## Sources
 

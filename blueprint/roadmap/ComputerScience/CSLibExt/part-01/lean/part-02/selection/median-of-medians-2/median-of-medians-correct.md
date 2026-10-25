@@ -6,27 +6,31 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.medianOfMedians_correct
 ---
 
-# Median Of Medians correct
+# Correctness of median-of-medians selection
 
-Every successful return satisfies the rank specification, including duplicates.
+**Correctness of median-of-medians selection.** Let $L$ be a list over a linearly ordered type
+and let $k$ be a natural number. If median-of-medians selection of rank $k$ in $L$ returns an
+element $x$, then $x$ occurs in $L$, the number of entries of $L$ less than $x$, counted with
+multiplicity, is at most $k$, and $k$ is less than the number of entries of $L$ that are at
+most $x$.
 
 ## Depends on
 
-- [Median Of Medians](median-of-medians.md)
+- [Median-of-medians selection](median-of-medians.md)
 
 ## Proof depends on
 
-- [Three Way Partition](../../sort/partition/three-way-partition.md)
-- [Median Of Medians Groups](../median-of-medians/groups/median-of-medians-groups.md)
-- [Median Of Medians Groups mem](../median-of-medians/groups/median-of-medians-groups-mem.md)
-- [Partition3](../../sort/partition/partition3.md)
-- [Partition3 correct](../../sort/partition/partition3-correct.md)
-- [Partition3 count P eq below](../quickselect/partition3-count-p-eq-below.md)
-- [Partition3 count P eq block add above](../quickselect/partition3-count-p-eq-block-add-above.md)
-- [Partition3 count le](../quickselect/partition3-count-le.md)
-- [Partition3 count lt](../quickselect/partition3-count-lt.md)
+- [Three-way partition record](../../sort/partition/three-way-partition.md)
+- [Group medians for median-of-medians selection](../median-of-medians/groups/median-of-medians-groups.md)
+- [Group medians come from the input](../median-of-medians/groups/median-of-medians-groups-mem.md)
+- [Stable three-way partition](../../sort/partition/partition3.md)
+- [Correctness of the stable three-way partition](../../sort/partition/partition3-correct.md)
+- [Counting through the below block](../quickselect/partition3-count-p-eq-below.md)
+- [Counting through the above block](../quickselect/partition3-count-p-eq-block-add-above.md)
+- [Entries at most the pivot](../quickselect/partition3-count-le.md)
+- [Entries below the pivot](../quickselect/partition3-count-lt.md)
 - [Quickselect](../quickselect/quickselect.md)
-- [Quickselect correct](../quickselect/quickselect-correct.md)
+- [Correctness of quickselect](../quickselect/quickselect-correct.md)
 
 ## Sources
 

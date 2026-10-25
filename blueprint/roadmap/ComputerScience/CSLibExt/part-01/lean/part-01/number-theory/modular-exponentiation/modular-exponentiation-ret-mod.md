@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_ret_mod
 ---
 
-# Modular Exponentiation ret mod
+# Modular exponentiation is correct up to reduction
 
-Reducing the raw result gives the canonical modular power, including at exponent zero.
+**Modular exponentiation is correct up to reduction.** For natural numbers $a$, $b$, $n$
+with $n > 0$, including $b = 0$, the value $r$ returned by modular exponentiation on base $a$,
+exponent $b$ and modulus $n$ satisfies $r \bmod n = a^b \bmod n$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation ret even](modular-exponentiation-ret-even.md)
-- [Modular Exponentiation ret odd](modular-exponentiation-ret-odd.md)
-- [Modular Exponentiation zero](modular-exponentiation-zero.md)
+- [Value of the even step of modular exponentiation](modular-exponentiation-ret-even.md)
+- [Value of the odd step of modular exponentiation](modular-exponentiation-ret-odd.md)
+- [Base case of modular exponentiation](modular-exponentiation-zero.md)
 
 ## Sources
 

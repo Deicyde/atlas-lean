@@ -21,7 +21,7 @@ Viterbi table at time $t$.
 
 - [Backtracked path of the tabulated CRF Viterbi algorithm](best-path.md)
 - [The tabulated Viterbi variables of a chain CRF](viterbi-tab.md)
-- [Argmax Vec](../../sequence/hidden-markov/argmax-vec.md)
+- [Index of a largest entry of a table](../../sequence/hidden-markov/argmax-vec.md)
 
 ## Sources
 

@@ -13,16 +13,16 @@ values sorts every input over every linear order.
 
 ## Depends on
 
-- [Network](../zero-one/network.md)
-- [Sorts](../zero-one/sorts.md)
-- [Run](../zero-one/run.md)
+- [Comparator network](../zero-one/network.md)
+- [Networks that sort](../zero-one/sorts.md)
+- [Running a comparator network](../zero-one/run.md)
 
 ## Proof depends on
 
-- [Decide le spread](decide-le-spread.md)
+- [A Boolean input is a threshold of its spread](decide-le-spread.md)
 - [Networks commute with monotone maps](../zero-one/run-comp.md)
 - [The 0-1 principle](../zero-one/sorts-of-sorts-bool.md)
-- [Spread](spread.md)
+- [Spread of a Boolean input](spread.md)
 
 ## Sources
 

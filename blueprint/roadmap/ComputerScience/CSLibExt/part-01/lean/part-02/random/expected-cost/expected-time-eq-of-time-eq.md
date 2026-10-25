@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.expectedTime_eq_of_time_eq
 ---
 
-# Expected Time eq of time eq
+# Constant running time on the support gives that expected time
 
-If the running time is the same constant `c` on every input in the
-support of `dist`, the expected running time is `c`. Terms outside the
-support have weight `dist ys = 0`, so the defining `tsum` agrees termwise
-with the constant observable and `PMF.expectENN_const` applies.
+**Constant running time on the support gives that expected time.** Let $A$ be an algorithm
+on inputs of a type $\gamma$ whose running time $T_A(x)$ on each input $x$ is a natural number,
+let $D$ be a probability mass function on $\gamma$, and let $c$ be a natural number. If
+$T_A(x) = c$ for every input $x$ in the support of $D$, then the expected running time of $A$
+under $D$ equals $c$.
+
+Inputs outside the support have probability $0$, so their running times do not contribute.
 
 ## Depends on
 
-- [Expected Time](expected-time.md)
+- [Expected running time](expected-time.md)
 
 ## Proof depends on
 

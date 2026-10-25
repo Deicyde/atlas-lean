@@ -7,27 +7,32 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.kruskal_light_edge
 ---
 
-# Kruskal light edge
+# Kruskal accepts light edges
 
-Each accepted edge has minimum weight among all edges crossing the current partition.
+**Kruskal accepts light edges.** Let $G$ be a graph and let $e_1, \dots, e_m$ be its valid
+edges sorted lexicographically by key (weight, then input ordinal). For a position $k$, let
+$P_k$ be the partition of the vertices given by the union-find forest after Kruskal's scan,
+started from the discrete forest, has processed $e_1, \dots, e_{k-1}$. If the endpoints of $e_k$
+lie in different classes of $P_k$, then the weight of $e_k$ is at most the weight of every valid
+edge of $G$ whose endpoints lie in different classes of $P_k$.
 
 ## Depends on
 
-- [Graph](graph.md)
-- [State](state.md)
-- [Weighted Edge](weighted-edge.md)
-- [Initial Forest](initial-forest.md)
-- [Ordered Edges](ordered-edges.md)
-- [Scan](scan.md)
-- [Valid Edges](valid-edges.md)
+- [Kruskal input graph](graph.md)
+- [Kruskal scan state](state.md)
+- [Weighted edge](weighted-edge.md)
+- [Discrete parent forest](initial-forest.md)
+- [Valid edges in Kruskal order](ordered-edges.md)
+- [Scanning a list of edges](scan.md)
+- [Valid edges of an input graph](valid-edges.md)
 - [Equivalent vertices of a parent forest](../../data-structures/part-03/union-find/equivalent.md)
 - [Parent forest with a depth certificate](../../data-structures/part-03/union-find/forest.md)
 
 ## Proof depends on
 
-- [Key LE](key-le.md)
-- [Key](key.md)
-- [Kruskal greedy cut property](kruskal-greedy-cut-property.md)
+- [Lexicographic order on edge keys](key-le.md)
+- [Sorting key of a weighted edge](key.md)
+- [Kruskal's greedy cut property](kruskal-greedy-cut-property.md)
 
 ## Sources
 

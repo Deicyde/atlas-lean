@@ -7,15 +7,17 @@ lean: Cslib.Algorithms.Lean.TopologicalSort.indegree
 
 # Indegree
 
-The number of graph edges entering `v`; duplicate adjacency entries count once.
+**Indegree.** The indegree of a vertex $v$ in a finite directed graph $G$ is the number of
+vertices $u$ such that $G$ has an edge from $u$ to $v$; repeated entries in adjacency lists
+count once.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Indegree Within](indegree-within.md)
+- [Indegree within a vertex list](indegree-within.md)
 
 ## Sources
 

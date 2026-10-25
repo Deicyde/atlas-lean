@@ -22,7 +22,7 @@ $\Gamma$ and $\Gamma'$ have the same free type variables.
 ## Proof depends on
 
 - [Free type variables of a name's visible scheme](visible-vars.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
 
 ## Sources
 

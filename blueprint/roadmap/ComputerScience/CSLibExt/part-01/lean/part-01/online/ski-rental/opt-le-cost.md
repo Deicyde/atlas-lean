@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.SkiRental.opt_le_cost
 ---
 
-# Opt le cost
+# The offline optimum bounds every strategy's cost
 
-The offline optimum is a lower bound for every strategy's cost.
+**The offline optimum bounds every strategy's cost.** For every purchase price $B$, every
+deterministic strategy $s$ and every season length $d$, the offline optimum $\mathrm{opt}_B(d)$ is
+at most the cost $\mathrm{cost}_B(s, d)$ of $s$ for a season of $d$ days.
 
 ## Depends on
 
-- [Strategy](strategy.md)
-- [Cost](cost.md)
-- [Opt](opt.md)
+- [Deterministic ski-rental strategy](strategy.md)
+- [Cost of a ski-rental strategy](cost.md)
+- [Offline optimum for ski rental](opt.md)
 
 ## Sources
 

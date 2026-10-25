@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TransitiveClosure.transitiveClosure_time
 ---
 
-# Transitive Closure time
+# Running time of the transitive-closure algorithm
 
-The same run performs `n²` initialization assignments and `n³` transition assignments.
+**Running time of the transitive-closure algorithm.** For every Boolean adjacency matrix on
+$n$ vertices, the transitive-closure algorithm charges exactly $n^2 + n^3$ time units: $n^2$ cell
+assignments to initialize the matrix and $n^2$ in each of the $n$ transition stages.
 
 ## Depends on
 
-- [Transitive Closure](transitive-closure.md)
+- [Saved-matrix transitive-closure algorithm](transitive-closure.md)
 
 ## Proof depends on
 
-- [Transitive Closure Stages](transitive-closure-stages.md)
+- [Staged transitive-closure computation](transitive-closure-stages.md)
 
 ## Sources
 

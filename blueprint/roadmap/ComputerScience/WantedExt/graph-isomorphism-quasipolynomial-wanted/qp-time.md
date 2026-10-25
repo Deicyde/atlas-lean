@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.ComputerScience.GraphIsomorphismQuasipolynomialWanted.qpTime
 ---
 
-# Qp Time
+# Quasipolynomial time bound
 
-Quasipolynomial time bound in the encoded input length `n`, with fixed
-exponent `c`: `2 ^ ((log2(n+2)+2)^c)`.
+**Quasipolynomial time bound.** For an exponent $c \in \mathbb{N}$ and an input length
+$n \in \mathbb{N}$, the quasipolynomial time bound is
+$q_c(n) = 2^{(\lfloor \log_2(n+2) \rfloor + 2)^c}$.
 
 ## Depends on
 

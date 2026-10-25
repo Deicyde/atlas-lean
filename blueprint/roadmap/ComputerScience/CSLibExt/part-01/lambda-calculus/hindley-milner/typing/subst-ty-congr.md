@@ -16,14 +16,14 @@ scheme $\sigma$, then applying $s$ to $\sigma$ gives the same scheme as applying
 
 - [Type schemes](scheme.md)
 - [Applying a type substitution to a scheme](subst-ty.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
-- [Term](../../../../part-02/unification/basic/term.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
 
 ## Proof depends on
 
 - [Monotypes as type schemes](to-scheme.md)
-- [Subst congr](../../../../part-02/unification/basic/subst-congr.md)
+- [Substitution depends only on the variables of the term](../../../../part-02/unification/basic/subst-congr.md)
 
 ## Sources
 

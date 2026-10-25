@@ -6,26 +6,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.augment_some
 ---
 
-# Augment some
+# A successful augmentation grows the matching by one edge
 
-A successful augmentation keeps a matching and matches one more right vertex.
+**A successful augmentation grows the matching by one edge.** Let $\mu$ be a partner array
+that describes a matching. If the augmentation step on $\mu$ returns a partner array $\mu'$, then
+$\mu'$ also describes a matching, and $\mu'$ has exactly one more matched right vertex than
+$\mu$.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Augment](augment.md)
-- [Matched](matched.md)
+- [Partner arrays that describe a matching](valid.md)
+- [One augmentation step](augment.md)
+- [Matched right vertices](matched.md)
 
 ## Proof depends on
 
-- [Alt Path](alt-path.md)
+- [Alternating path](alt-path.md)
 - [Is Augmenting Path](is-augmenting-path.md)
-- [Card matched flip](card-matched-flip.md)
-- [Flip](flip.md)
-- [Layers](layers.md)
-- [Path To](path-to.md)
+- [Flipping an augmenting path adds one matched vertex](card-matched-flip.md)
+- [Flipping a list of pairs](flip.md)
+- [Alternating breadth-first layers](layers.md)
+- [Walking the layers back](path-to.md)
 - [Path To is Augmenting Path](path-to-is-augmenting-path.md)
-- [Valid flip](valid-flip.md)
+- [Flipping an alternating path keeps a matching](valid-flip.md)
 
 ## Sources
 

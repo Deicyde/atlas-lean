@@ -7,13 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.StringMatching.computeTransition_time_le
 ---
 
-# Compute Transition time le
+# Cost bound for the string-matching transition table
 
-Bound on the actual candidate/comparison/decrement/write event count.
+**Cost bound for the string-matching transition table.** For every pattern of length $m$
+over the alphabet $\{0, \dots, A-1\}$, the cost of computing its transition table is at most
+$2A(m+1)^3$.
+
+The cost counts executed candidates, symbol comparisons, failed decrements and table writes.
 
 ## Depends on
 
-- [Compute Transition](compute-transition.md)
+- [Transition table of the string-matching automaton](compute-transition.md)
 
 ## Sources
 

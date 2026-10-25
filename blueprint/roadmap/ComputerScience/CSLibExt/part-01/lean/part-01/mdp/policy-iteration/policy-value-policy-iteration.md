@@ -8,23 +8,27 @@ lean: Cslib.Algorithms.Lean.MarkovDecision.policyValue_policyIteration
 
 # Policy iteration terminates
 
-**Policy iteration terminates**: after `Fintype.card (S → A)` steps (at most `|A| ^ |S|`), the
-policy is optimal.
+**Policy iteration terminates.** Let $M$ be a Markov decision process with a finite set of
+states $S$, a finite nonempty set of actions $A$, real rewards and stochastic transition
+probabilities, and let $0 \le \gamma < 1$. Write $V^\pi$ for the value of a deterministic policy
+$\pi : S \to A$, $V^*$ for the optimal value, and $N = |A|^{|S|}$ for the number of deterministic
+policies. For every deterministic policy $\pi$, the policy $\pi_N$ obtained after $N$ steps of
+policy iteration from $\pi$ is optimal: $V^{\pi_N} = V^*$.
 
 ## Depends on
 
-- [MDP](../value-iteration/mdp.md)
-- [Stochastic](../value-iteration/stochastic.md)
-- [Optimal Value](../value-iteration/optimal-value.md)
-- [Policy Iteration](policy-iteration.md)
-- [Policy Value](../value-iteration/policy-value.md)
+- [Markov decision process](../value-iteration/mdp.md)
+- [Stochastic Markov decision process](../value-iteration/stochastic.md)
+- [Optimal value of a discounted Markov decision process](../value-iteration/optimal-value.md)
+- [Policy iteration](policy-iteration.md)
+- [Value of a policy](../value-iteration/policy-value.md)
 
 ## Proof depends on
 
-- [Improve](improve.md)
-- [Policy Value improve ne](policy-value-improve-ne.md)
-- [Policy Value policy Iteration mono](policy-value-policy-iteration-mono.md)
-- [Policy Value policy Iteration of eq](policy-value-policy-iteration-of-eq.md)
+- [Policy improvement step](improve.md)
+- [Away from optimality, improvement changes the value](policy-value-improve-ne.md)
+- [Policy iteration never decreases the value](policy-value-policy-iteration-mono.md)
+- [Once optimal, policy iteration stays optimal](policy-value-policy-iteration-of-eq.md)
 
 ## Sources
 

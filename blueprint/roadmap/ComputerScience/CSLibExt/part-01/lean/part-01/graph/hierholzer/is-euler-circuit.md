@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.IsEulerCircuit
 ---
 
-# Is Euler Circuit
+# Euler circuit in a directed multigraph
 
-`W` is an Euler circuit from `s`: an Euler path from `s` back to `s`.
+**Euler circuit in a directed multigraph.** In a finite directed multigraph, a list of
+vertices $W$ is an Euler circuit from a vertex $s$ when it is an Euler path from $s$ to $s$: it
+starts and ends at $s$, and its list of consecutive pairs is a permutation of the list of edge
+occurrences of the graph.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Is Euler Path](is-euler-path.md)
+- [Euler path in a directed multigraph](is-euler-path.md)
 
 ## Sources
 

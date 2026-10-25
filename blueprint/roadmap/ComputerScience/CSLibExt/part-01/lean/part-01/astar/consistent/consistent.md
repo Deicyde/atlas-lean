@@ -14,11 +14,11 @@ edge $u \to v$ of $G$.
 
 ## Depends on
 
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Edge](../../graph/directed-adjacency-2/edge.md)
+- [Edge of a directed adjacency graph](../../graph/directed-adjacency-2/edge.md)
 
 ## Sources
 

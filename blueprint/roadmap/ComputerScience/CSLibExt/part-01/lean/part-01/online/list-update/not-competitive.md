@@ -18,14 +18,14 @@ holds with `offlineCostFree` (`offlineCostFree_noMove`).
 ## Depends on
 
 - [A deterministic online list-update algorithm on the items...](a-deterministic-online-list-update-algor.md)
-- [Cost](cost.md)
-- [Offline Cost](offline-cost.md)
+- [Cost of an online list-update algorithm](cost.md)
+- [Offline cost without free exchanges](offline-cost.md)
 
 ## Proof depends on
 
-- [Adversary](adversary.md)
-- [List ne nil](list-ne-nil.md)
-- [On the adversary's sequence](adversary-vs-offline.md)
+- [The list-update adversary](adversary.md)
+- [The list of an algorithm on a nonempty list is never empty](list-ne-nil.md)
+- [Online and offline costs on the adversary's sequence](adversary-vs-offline.md)
 
 ## Sources
 

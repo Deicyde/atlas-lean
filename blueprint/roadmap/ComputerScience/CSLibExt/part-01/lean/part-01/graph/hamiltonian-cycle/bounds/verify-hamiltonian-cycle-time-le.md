@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Graph.verifyHamiltonianCycle_time_le
 ---
 
-# Verify Hamiltonian Cycle time le
+# Quadratic step bound for the Hamiltonian-cycle verifier
 
-The actual verifier's selected events are polynomially bounded for every input.
+**Quadratic step bound for the Hamiltonian-cycle verifier.** There is a constant $c > 0$ such
+that for all bit strings $x$ and $y$, the step count of the Hamiltonian-cycle verifier on $x$ and
+$y$ is at most $c\,(|x| + |y| + 1)^2$.
 
 ## Depends on
 
-- [Basic](../verify-hamiltonian-cycle.md)
+- [Hamiltonian-cycle verifier](../verify-hamiltonian-cycle.md)
 
 ## Sources
 

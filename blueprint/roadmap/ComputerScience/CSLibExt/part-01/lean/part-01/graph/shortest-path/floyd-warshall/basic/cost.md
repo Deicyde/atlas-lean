@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.FloydWarshall.Cost
 ---
 
-# Cost
+# Floyd–Warshall cost record
 
-Separate initialization and min-plus transition event counts.
+**Floyd–Warshall cost record.** A cost record for the Floyd–Warshall algorithm is a pair of
+natural numbers: the number of initialization events (input matrix cells copied into the initial
+distance table) and the number of min-plus transition events (table entries updated).
 
 ## Depends on
 

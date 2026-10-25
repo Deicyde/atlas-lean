@@ -7,18 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Graph.verifyHamiltonianCycle_language_iff
 ---
 
-# Verify Hamiltonian Cycle language iff
+# Certificates exist exactly for Hamiltonian graphs
 
-Certificate existence is exactly strict canonical Hamiltonian-cycle existence.
+**Certificates exist exactly for Hamiltonian graphs.** For every bit string $x$, with
+$m = \lfloor \sqrt{|x|} \rfloor$, some bit string $y$ makes the Hamiltonian-cycle verifier accept
+$x$ and $y$ if and only if $|x| = m^2$, $m \ge 3$, and there is a simple graph $G$ on the vertices
+$0, \dots, m - 1$ in which $i$ and $j$ are adjacent exactly when entry $im + j$ of $x$ (counting
+from $0$) is true, and $G$ has a Hamiltonian cycle.
 
 ## Depends on
 
-- [Basic](../verify-hamiltonian-cycle.md)
+- [Hamiltonian-cycle verifier](../verify-hamiltonian-cycle.md)
 
 ## Proof depends on
 
-- [Verify Hamiltonian Cycle complete](verify-hamiltonian-cycle-complete.md)
-- [Verify Hamiltonian Cycle sound](verify-hamiltonian-cycle-sound.md)
+- [Completeness of the Hamiltonian-cycle verifier](verify-hamiltonian-cycle-complete.md)
+- [Soundness of the Hamiltonian-cycle verifier](verify-hamiltonian-cycle-sound.md)
 
 ## Sources
 

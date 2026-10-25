@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MarkovDecision.le_policyValue_of_le_policyBellman
 ---
 
-# Le policy Value of le policy Bellman
+# Values below their Bellman image lie below the policy value
 
-Iterating a policy's Bellman operator from a value it does not decrease converges to the
-policy's value from below.
+**Values below their Bellman image lie below the policy value.** Let $M$ be a Markov decision
+process with a finite set of states $S$, real rewards and stochastic transition probabilities,
+and let $0 \le \gamma < 1$. Let $\pi$ be a deterministic policy, with Bellman operator $T^\pi$ and
+value $V^\pi$. If $V : S \to \mathbb{R}$ satisfies $V(s) \le (T^\pi V)(s)$ for every state $s$,
+then $V(s) \le V^\pi(s)$ for every state $s$.
 
 ## Depends on
 
-- [MDP](../value-iteration/mdp.md)
-- [Stochastic](../value-iteration/stochastic.md)
-- [Policy Bellman](../value-iteration/policy-bellman.md)
-- [Policy Value](../value-iteration/policy-value.md)
+- [Markov decision process](../value-iteration/mdp.md)
+- [Stochastic Markov decision process](../value-iteration/stochastic.md)
+- [Bellman operator of a policy](../value-iteration/policy-bellman.md)
+- [Value of a policy](../value-iteration/policy-value.md)
 
 ## Proof depends on
 
-- [Q Value](../value-iteration/q-value.md)
+- [Q-value of an action](../value-iteration/q-value.md)
 
 ## Sources
 

@@ -6,24 +6,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.dijkstra_distance_realized
 ---
 
-# Dijkstra distance realized
+# Dijkstra's finite distances are realized by walks
 
-Every finite output distance is realized by a concrete source path.
+**Dijkstra's finite distances are realized by walks.** Let $G$ be a directed graph on the
+vertices $0, \dots, n-1$, let $w(u, v)$ be a natural-number weight for every ordered pair of
+vertices, and let $s$ and $t$ be vertices. If Dijkstra's algorithm on $G$ with weights $w$ from
+source $s$ outputs a finite distance $d$ for $t$, then $G$ has a walk
+$s = v_0, v_1, \dots, v_k = t$, with an edge from each $v_{i-1}$ to $v_i$, of weight
+$\sum_{i=1}^{k} w(v_{i-1}, v_i) = d$.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](dijkstra-cost.md)
-- [Dijkstra Result](dijkstra-result.md)
-- [Has Path Weight](has-path-weight.md)
-- [Dijkstra](dijkstra.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](dijkstra-cost.md)
+- [Output of Dijkstra's algorithm](dijkstra-result.md)
+- [Walks of a given weight](has-path-weight.md)
+- [Dense Dijkstra's algorithm](dijkstra.md)
 
 ## Proof depends on
 
-- [Edge](../../directed-adjacency-2/edge.md)
-- [Reachable](../../directed-adjacency-2/reachable.md)
-- [Path Weight](path-weight.md)
-- [Reachable iff exists has Path Weight](reachable-iff-exists-has-path-weight.md)
+- [Edge of a directed adjacency graph](../../directed-adjacency-2/edge.md)
+- [Reachability in a directed graph](../../directed-adjacency-2/reachable.md)
+- [Endpoint-weight sum along a vertex list](path-weight.md)
+- [Reachability via weighted walks](reachable-iff-exists-has-path-weight.md)
 
 ## Sources
 

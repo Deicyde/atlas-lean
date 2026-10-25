@@ -7,26 +7,34 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.fasterAPSP_distance_spec
 ---
 
-# Faster APSP distance spec
+# FASTER-APSP computes shortest-path weights
 
-Without negative cycles the actual return realizes unrestricted shortest-path weights.
+**FASTER-APSP computes shortest-path weights.** Let $W$ be an $n \times n$ matrix with
+entries in $\mathbb{Z} \cup \{\infty\}$, read as edge weights of a directed graph on the
+vertices $0, \dots, n - 1$ (weight $\infty$ meaning no edge), such that $W_{ii} = 0$ for every
+$i$ and $W$ has no negative cycle. Run FASTER-APSP on $W$ over the min-plus semiring, whose
+addition is $\min$ and whose multiplication is $+$. Then for all vertices $i$ and $j$, the
+returned entry $d$ at $(i, j)$ is the shortest-path weight from $i$ to $j$: $d$ is at most the
+weight of every path from $i$ to $j$ all of whose edges have finite weight, and either
+$d = \infty$ or $d$ is the weight of such a path. Paths are nonempty vertex sequences and may
+repeat vertices.
 
 ## Depends on
 
-- [Is Stage Shortest Path Weight](../../floyd-warshall/basic/is-stage-shortest-path-weight.md)
-- [No Negative Cycle](../../floyd-warshall/basic/no-negative-cycle.md)
-- [Faster APSP](../basic/faster-apsp.md)
+- [Stage-$k$ shortest-path weight](../../floyd-warshall/basic/is-stage-shortest-path-weight.md)
+- [Weight matrices without negative cycles](../../floyd-warshall/basic/no-negative-cycle.md)
+- [FASTER-APSP](../basic/faster-apsp.md)
 
 ## Proof depends on
 
-- [Internal Vertices Below](../../floyd-warshall/basic/internal-vertices-below.md)
-- [Is Edge Bounded Shortest Path Weight](../../extend/is-edge-bounded-shortest-path-weight.md)
-- [Is Weighted Path](../../floyd-warshall/basic/is-weighted-path.md)
-- [Path Weight](../../floyd-warshall/basic/path-weight.md)
-- [Faster APSP edge Bounded](faster-apsp-edge-bounded.md)
-- [Slow APSP](../../slow-apsp/slow-apsp.md)
-- [Slow APSP distance spec](../../slow-apsp/slow-apsp-distance-spec.md)
-- [Slow APSP edge Bounded](../../slow-apsp/slow-apsp-edge-bounded.md)
+- [Intermediate vertices below a bound](../../floyd-warshall/basic/internal-vertices-below.md)
+- [Shortest path weight with at most $r$ edges](../../extend/is-edge-bounded-shortest-path-weight.md)
+- [Finite-weight vertex path in a weight matrix](../../floyd-warshall/basic/is-weighted-path.md)
+- [Weight of a vertex path in an extended-integer weight matrix](../../floyd-warshall/basic/path-weight.md)
+- [FASTER-APSP computes edge-bounded shortest-path weights](faster-apsp-edge-bounded.md)
+- [Slow all-pairs shortest paths (SLOW-APSP)](../../slow-apsp/slow-apsp.md)
+- [SLOW-APSP computes shortest-path weights](../../slow-apsp/slow-apsp-distance-spec.md)
+- [Bounded-edge shortest weights from SLOW-APSP](../../slow-apsp/slow-apsp-edge-bounded.md)
 
 ## Sources
 

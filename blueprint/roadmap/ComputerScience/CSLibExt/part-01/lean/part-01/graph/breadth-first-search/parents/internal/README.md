@@ -4,6 +4,6 @@ navigation: module
 
 # Internal
 
-- [BFSForest](bfsforest.md)
-- [Bfs With Parents](bfs-with-parents.md)
-- [Path To?](path-to.md)
+- [Breadth-first search forest](bfsforest.md)
+- [Breadth-first search with parent pointers](bfs-with-parents.md)
+- [Path reconstruction from BFS parents](path-to.md)

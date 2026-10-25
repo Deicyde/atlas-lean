@@ -5,14 +5,29 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.searchPath
 ---
 
-# Search Path
+# Depth-first search of a Hopcroft–Karp phase
 
-`pathTo` restricted to unused vertices, as a depth-first search over the layers with the
-pruning of Hopcroft and Karp: from a reached right vertex `j` that is not dead, descend to the
-round where `j` is first reached and try each predecessor `i` of the round before that is not in
-`usedL`, continuing from the partner of `i`. A right vertex from which the search fails is marked
-dead, so each right vertex fails at most once per phase. Returns the path found, if any, and the
-dead set.
+**Depth-first search of a Hopcroft–Karp phase.** Fix a partner array $\mu$ assigning each right
+vertex at most one left partner, and a set $U$ of used left vertices. Write $L_n$ and $R_n$ for
+the left and right vertices reached within $n$ rounds of the alternating breadth-first layers of
+$\mu$ (so $R_0 = \emptyset$). A left vertex $i$ is unmatched if no right vertex has partner $i$;
+otherwise its partner is the least right vertex $j'$ with $\mu(j') = i$. The search from a right
+vertex $j$ with bound $n$ and a set $D$ of dead right vertices returns an optional path (a list of
+pairs of a left and a right vertex) together with a new dead set:
+
+* if $j \in D$, it fails and returns $D$ unchanged;
+* otherwise, if $j \in R_n$, it is the search from $j$ with bound $n - 1$ and dead set $D$;
+* otherwise it goes through the candidates, the left vertices $i \in L_n$ in increasing order with
+  $j$ adjacent to $i$, $\mu(j) \ne i$ and $i \notin U$. For an unmatched candidate $i$ it returns
+  the path $[(i, j)]$ and the current dead set. For a matched candidate $i$ it searches from the
+  partner of $i$ with bound $n - 1$ and the current dead set (when $n = 0$ this search fails and
+  returns the dead set unchanged); if that search finds a path $P$, it returns $(i, j)$ followed
+  by $P$, with the dead set that search returned, and otherwise it moves on to the next candidate
+  with the dead set that search returned. If every candidate fails, it fails and returns the
+  current dead set with $j$ added.
+
+This is the pruning of Hopcroft and Karp: a right vertex from which the search fails is marked
+dead and not searched again.
 
 ## Depends on
 
@@ -20,9 +35,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Layers](layers.md)
-- [Partner Of](partner-of.md)
-- [Try Preds](try-preds.md)
+- [Alternating breadth-first layers](layers.md)
+- [Partner of a left vertex](partner-of.md)
+- [Trying the candidate predecessors of a right vertex](try-preds.md)
 
 ## Sources
 

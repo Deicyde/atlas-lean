@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Databases.Entails
 ---
 
-# Entails
+# Entailment of functional dependencies
 
-`F` entails `f`: `f` holds in every relation (with values in any type) satisfying `F`.
+**Entailment of functional dependencies.** Let $A$ be a type of attributes. A finite set $F$
+of functional dependencies on $A$ entails a functional dependency $f$ on $A$ when, for every
+type $V$ and every relation $r$ with values in $V$ (a set of tuples $A \to V$) that satisfies
+$F$, the dependency $f$ holds in $r$.
 
 ## Depends on
 
-- [FD](fd.md)
+- [Functional dependency](fd.md)
 
 ## Proof depends on
 
-- [Holds In](holds-in.md)
-- [Satisfies](satisfies.md)
+- [A functional dependency holds in a relation](holds-in.md)
+- [A relation satisfies a set of dependencies](satisfies.md)
 
 ## Sources
 

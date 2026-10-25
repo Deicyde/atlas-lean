@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Tseitin.Allowed
 ---
 
-# Allowed
+# Allowed variables for a gate range
 
-A variable is *allowed* for gate range `[k, k')` if it names an atom (it is even) or a
-gate in range.
+**Allowed variables for a gate range.** For natural numbers $k$ and $k'$, a variable
+$x \in \mathbb{N}$ is allowed for the gate range $[k, k')$ if $x$ is even (it names an atom) or
+$x$ is a gate in range $[k, k')$, that is, $x = 2j + 1$ for some $j \in \mathbb{N}$ with
+$k \le j < k'$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Gate](is-gate.md)
+- [Gate variables in a range](is-gate.md)
 
 ## Sources
 

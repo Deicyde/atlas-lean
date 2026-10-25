@@ -26,7 +26,7 @@ the clause list produced by the auxiliary translation of $\varphi$.
 
 ## Proof depends on
 
-- [Clause Satisfied](../../../../../../ComputerScience/CSLibExt/part-01/sat/dpll/solver/clause-satisfied.md)
+- [Boolean clause satisfaction check](../../../../../../ComputerScience/CSLibExt/part-01/sat/dpll/solver/clause-satisfied.md)
 - [The chain of clauses replacing one clause](../three-sat/chain.md)
 - [Completeness of the chain of one clause](chain-complete.md)
 - [Fresh variables reserved for a clause](../three-sat/used.md)

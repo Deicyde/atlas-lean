@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TransitiveClosure.transitiveClosureStages_zero_cell
 ---
 
-# Transitive Closure Stages zero cell
+# Initial matrix of the transitive-closure computation
 
-Before any pivot, a cell is the diagonal test or the corresponding input edge.
+**Initial matrix of the transitive-closure computation.** Let $A$ be a Boolean adjacency
+matrix on the vertices $0, \dots, n-1$. For all vertices $i$ and $j$, the entry $(i, j)$ of the
+matrix produced by the staged transitive-closure computation with no pivot stages is true if and
+only if $i = j$ or $A_{ij}$ is true.
 
 ## Depends on
 
-- [Transitive Closure Stages](transitive-closure-stages.md)
+- [Staged transitive-closure computation](transitive-closure-stages.md)
 
 ## Sources
 

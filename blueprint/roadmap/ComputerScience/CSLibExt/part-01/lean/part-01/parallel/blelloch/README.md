@@ -4,21 +4,21 @@ navigation: module
 
 # Blelloch
 
-- [Pair Up](pair-up.md)
-- [Blelloch](blelloch.md)
+- [Adjacent pair products of a sequence](pair-up.md)
+- [Blelloch's scan](blelloch.md)
 - [Blelloch's scan computes the exclusive prefix products](blelloch-eq-seg.md)
 
 ## Work and span
 
-- [Blelloch Work](blelloch-work.md)
-- [Blelloch Span](blelloch-span.md)
+- [Work of Blelloch's scan](blelloch-work.md)
+- [Parallel steps of Blelloch's scan](blelloch-span.md)
 - [Blelloch's scan is work-efficient](blelloch-work-eq.md)
-- [Blelloch Span eq](blelloch-span-eq.md)
+- [Blelloch's scan has logarithmic span](blelloch-span-eq.md)
 
 ## The scan on lists
 
-- [Pair List](pair-list.md)
-- [Expand](expand.md)
-- [Blelloch List](blelloch-list.md)
+- [Adjacent pair products of a list](pair-list.md)
+- [Interleaving step of Blelloch's list scan](expand.md)
+- [Blelloch's scan on lists](blelloch-list.md)
 - [The list implementation computes Blelloch's scan](get-d-blelloch-list.md)
 - [The list implementation computes the exclusive prefix products](get-d-blelloch-list-eq-seg.md)

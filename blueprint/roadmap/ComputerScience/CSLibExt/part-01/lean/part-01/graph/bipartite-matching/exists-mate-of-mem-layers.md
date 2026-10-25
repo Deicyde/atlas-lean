@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.exists_mate_of_mem_layers
 ---
 
-# Exists mate of mem layers
+# Matched reached left vertices are reached through a partner
 
-A reached left vertex that is matched was reached through its partner.
+**Matched reached left vertices are reached through a partner.** Let $\mu$ be a partner array
+and $k$ a natural number. If a left vertex $i$ is reached within $k$ rounds of the layered search
+and is matched (some right vertex has partner $i$), then some right vertex $j$ reached within $k$
+rounds has partner $i$, that is, $\mu(j) = i$.
 
 ## Depends on
 
-- [Free](free.md)
-- [Layers](layers.md)
+- [Unmatched left vertex](free.md)
+- [Alternating breadth-first layers](layers.md)
 
 ## Sources
 

@@ -6,32 +6,34 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.sum_next_galeShapley_le
 ---
 
-# At most `n²` proposals
+# Deferred acceptance makes at most n² proposals
 
-**At most `n²` proposals**: no proposer proposes more than `n` times, so the total number of
-proposals `∑ m, next m` (`sum_next_propose`) is at most `n * n`; and when the run stops no free
-proposer can still propose (`galeShapley_spec`).
+**Deferred acceptance makes at most n² proposals.** For any rankings of the $n$ receivers by
+each of the $n$ proposers and of the proposers by each receiver, in the final state of deferred
+acceptance the numbers of proposals made by the proposers sum to at most $n \cdot n$.
+
+No proposer proposes more than $n$ times.
 
 ## Depends on
 
-- [State](state.md)
+- [Deferred-acceptance state](state.md)
 - [Deferred acceptance](gale-shapley.md)
 
 ## Proof depends on
 
-- [Free](free.md)
-- [Inv](inv.md)
-- [Chooser](chooser.md)
-- [Init](init.md)
-- [Le rank of rejected](le-rank-of-rejected.md)
-- [Mprefs](mprefs.md)
-- [New Holder](new-holder.md)
-- [New Holder cases](new-holder-cases.md)
-- [Not blocking](not-blocking.md)
-- [Propose](propose.md)
-- [Remaining](remaining.md)
-- [Run](run.md)
-- [Wprefs](wprefs.md)
+- [Free proposer](free.md)
+- [Invariant of deferred acceptance](inv.md)
+- [Choosing the next proposer](chooser.md)
+- [Initial state of deferred acceptance](init.md)
+- [Rejected proposals bound stable partners](le-rank-of-rejected.md)
+- [Proposers' preferences from rankings](mprefs.md)
+- [Receiver's holder after a proposal](new-holder.md)
+- [Cases of the receiver's new holder](new-holder-cases.md)
+- [A stable matching has no blocking pair](not-blocking.md)
+- [A proposal](propose.md)
+- [Remaining proposals](remaining.md)
+- [Running deferred acceptance](run.md)
+- [Receivers' preference profile from rankings](wprefs.md)
 - [Stable perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
 - [Perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
 

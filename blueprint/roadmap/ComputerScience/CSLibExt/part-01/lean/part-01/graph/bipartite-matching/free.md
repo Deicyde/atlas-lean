@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.Free
 ---
 
-# Free
+# Unmatched left vertex
 
-`i` is unmatched.
+**Unmatched left vertex.** Given a partner array $\mu$, which assigns to each right vertex $j$
+either a left vertex $\mu(j)$ as partner or no partner, a left vertex $i$ is unmatched (free) when
+no right vertex $j$ has $\mu(j) = i$.
 
 ## Depends on
 

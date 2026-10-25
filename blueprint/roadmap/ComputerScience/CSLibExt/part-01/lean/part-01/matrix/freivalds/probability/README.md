@@ -4,8 +4,8 @@ navigation: module
 
 # Probability
 
-- [Freivalds Trial Law](freivalds-trial-law.md)
-- [Freivalds Seed point Mass](freivalds-seed-point-mass.md)
-- [Freivalds Trial Law acceptance](freivalds-trial-law-acceptance.md)
-- [Freivalds Trial Law complete](freivalds-trial-law-complete.md)
-- [Freivalds Trial Law sound](freivalds-trial-law-sound.md)
+- [Freivalds trial law](freivalds-trial-law.md)
+- [Uniform mass of a Freivalds seed](freivalds-seed-point-mass.md)
+- [Acceptance probability of the Freivalds trial as a seed count](freivalds-trial-law-acceptance.md)
+- [The Freivalds trial accepts a correct product with probability one](freivalds-trial-law-complete.md)
+- [The Freivalds trial accepts a wrong product with probability at most one half](freivalds-trial-law-sound.md)

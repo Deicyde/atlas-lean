@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.hasEdge_eraseEdge_self
 ---
 
-# Has Edge erase Edge self
+# The erased edge is absent
 
-Boolean lookup reports that the erased ordered edge is absent.
+**The erased edge is absent.** For every directed-adjacency graph $G$ and vertices $s$ and
+$t$, the Boolean edge lookup for $s \to t$ in the graph obtained from $G$ by erasing the edge
+$s \to t$ returns false.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Erase Edge](erase-edge.md)
-- [Has Edge](../../directed-adjacency-2/has-edge.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Erasing a directed edge](erase-edge.md)
+- [Boolean edge test](../../directed-adjacency-2/has-edge.md)
 
 ## Sources
 

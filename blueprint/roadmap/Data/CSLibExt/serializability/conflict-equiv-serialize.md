@@ -13,7 +13,7 @@ order of the precedence graph of `s`.
 
 ## Depends on
 
-- [Is Topological Order](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-topological-order.md)
+- [Topological order](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/topological-sort/is-topological-order.md)
 - [Conflict Equiv](conflict-equiv.md)
 - [Op](op.md)
 - [Precedence Graph](precedence-graph.md)
@@ -21,8 +21,8 @@ order of the precedence graph of `s`.
 
 ## Proof depends on
 
-- [Directed Adjacency](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
-- [Edge](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/edge.md)
+- [Directed adjacency graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/directed-adjacency.md)
+- [Edge of a directed adjacency graph](../../../ComputerScience/CSLibExt/part-01/lean/part-01/graph/directed-adjacency-2/edge.md)
 - [Access](access.md)
 - [Conflicts](conflicts.md)
 - [Order Matters](order-matters.md)

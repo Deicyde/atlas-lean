@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.work_le
 ---
 
-# Work le
+# Work bound for the Kogge–Stone scan
 
-The scan does at most `n K` combinations.
+**Work bound for the Kogge–Stone scan.** For all $n, K \in \mathbb{N}$, the total work of $K$
+rounds of the scan on $n$ positions is at most $nK$.
 
 ## Depends on
 
-- [Work](work.md)
+- [Work of the Kogge–Stone scan](work.md)
 
 ## Proof depends on
 
-- [Round Work](round-work.md)
+- [Work of a scan round](round-work.md)
 
 ## Sources
 

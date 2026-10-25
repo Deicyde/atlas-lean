@@ -7,19 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.intervalSchedule_correct
 ---
 
-# Interval Schedule correct
+# Correctness and optimality of earliest-finish interval scheduling
 
-The output preserves input occurrences, is feasible, and has maximum cardinality
-among all feasible subpermutations of the input. Strictly positive durations are required.
+**Correctness and optimality of earliest-finish interval scheduling.** Let $s$ and $f$ assign
+start and finish times in a linear order to activities, and let $L$ be a list of activities with
+$s(a) < f(a)$ for every $a$ in $L$. Let $S$ be the list returned by the earliest-finish schedule
+of $L$. Then $S$ is a subpermutation of $L$ (each activity occurs in $S$ at most as often as in
+$L$), any two entries of $S$ at distinct positions are compatible, and every subpermutation $M$
+of $L$ whose entries at distinct positions are pairwise compatible has length at most the length
+of $S$.
 
 ## Depends on
 
-- [Interval Compatible](interval-compatible.md)
-- [Interval Schedule](interval-schedule.md)
+- [Compatible activities](interval-compatible.md)
+- [Earliest-finish greedy interval scheduling](interval-schedule.md)
 
 ## Proof depends on
 
-- [Symm](symm.md)
+- [Symmetry of interval compatibility](symm.md)
 
 ## Sources
 

@@ -31,8 +31,8 @@ a context more general than $\Gamma$, then $\Gamma' \vdash e : \tau$.
 - [Generalization of a monotype](gen.md)
 - [Generalizing in a context with fewer free variables](gen-more-general.md)
 - [Monotypes as type schemes](to-scheme.md)
-- [Term](../../../../part-02/unification/basic/term.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
 
 ## Sources
 

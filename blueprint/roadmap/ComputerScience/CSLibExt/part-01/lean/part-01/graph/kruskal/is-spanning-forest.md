@@ -6,20 +6,23 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.IsSpanningForest
 ---
 
-# Is Spanning Forest
+# Spanning forest of an input graph
 
-A source-contained acyclic edge list spanning every input component.
+**Spanning forest of an input graph.** For an input graph $G$ on the vertices
+$\{0, \dots, n-1\}$, a list $F$ of validated edges is a spanning forest of $G$ when every
+edge of $F$ is a valid edge of $G$, $F$ is acyclic, and $F$ spans $G$: for every valid edge
+of $G$, its endpoints are connected by $F$.
 
 ## Depends on
 
-- [Graph](graph.md)
-- [Weighted Edge](weighted-edge.md)
+- [Kruskal input graph](graph.md)
+- [Weighted edge](weighted-edge.md)
 
 ## Proof depends on
 
-- [Acyclic](acyclic.md)
-- [Spans](spans.md)
-- [Valid Edges](valid-edges.md)
+- [Acyclic edge list](acyclic.md)
+- [Edge lists spanning a graph](spans.md)
+- [Valid edges of an input graph](valid-edges.md)
 
 ## Sources
 

@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.newHolder
 ---
 
-# New Holder
+# Receiver's holder after a proposal
 
-Whom receiver `w` holds after `m` proposes to her: `m` if she held nobody or prefers him,
-her old holder otherwise.
+**Receiver's holder after a proposal.** In a state $s$ of deferred acceptance, the proposer
+whom receiver $w$ holds after proposer $m$ proposes to her is $m$ if she holds nobody in $s$ or
+ranks $m$ strictly better than her current holder $m'$ in her ranking, and $m'$ otherwise.
 
 ## Depends on
 
-- [State](state.md)
+- [Deferred-acceptance state](state.md)
 
 ## Sources
 

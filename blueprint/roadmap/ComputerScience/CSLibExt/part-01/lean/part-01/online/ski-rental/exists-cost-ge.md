@@ -13,9 +13,9 @@ some season, `(2 B - 1) * opt ≤ B * cost`.
 
 ## Depends on
 
-- [Strategy](strategy.md)
-- [Cost](cost.md)
-- [Opt](opt.md)
+- [Deterministic ski-rental strategy](strategy.md)
+- [Cost of a ski-rental strategy](cost.md)
+- [Offline optimum for ski rental](opt.md)
 
 ## Sources
 

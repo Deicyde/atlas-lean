@@ -13,20 +13,20 @@ of a matching `M`, then `f` more phases reach at least `M`'s size.
 
 ## Depends on
 
-- [Is Matching](is-matching.md)
-- [Valid](valid.md)
-- [Hopcroft Karp Aux](hopcroft-karp-aux.md)
-- [Pairs](pairs.md)
+- [Matching in a bipartite graph](is-matching.md)
+- [Partner arrays that describe a matching](valid.md)
+- [Hopcroft–Karp phase loop](hopcroft-karp-aux.md)
+- [Matched pairs of a partner assignment](pairs.md)
 
 ## Proof depends on
 
 - [Kőnig's certificate](card-le-of-no-free.md)
-- [Card pairs](card-pairs.md)
-- [Hk Step](hk-step.md)
-- [Hk Step none](hk-step-none.md)
-- [Hk Step some](hk-step-some.md)
-- [Hopcroft Karp Aux of hk Step none](hopcroft-karp-aux-of-hk-step-none.md)
-- [Matched](matched.md)
+- [Matched pairs and matched right vertices are equinumerous](card-pairs.md)
+- [Hopcroft–Karp step](hk-step.md)
+- [A Hopcroft–Karp step that finds nothing](hk-step-none.md)
+- [A successful Hopcroft–Karp step grows the matching](hk-step-some.md)
+- [The phase loop stops when a step finds nothing](hopcroft-karp-aux-of-hk-step-none.md)
+- [Matched right vertices](matched.md)
 
 ## Sources
 

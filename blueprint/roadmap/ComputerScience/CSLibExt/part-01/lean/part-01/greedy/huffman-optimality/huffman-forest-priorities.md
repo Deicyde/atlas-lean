@@ -6,14 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.huffmanForestPriorities
 ---
 
-# Huffman Forest Priorities
+# Priorities of a Huffman work forest
 
-Priorities represented by a work forest.
+**Priorities of a Huffman work forest.** The priorities of a list of Huffman work items form
+the multiset consisting of the priority of each item in the list, counted with multiplicity.
 
 ## Depends on
 
-- [Huffman Priority](../huffman/huffman-priority.md)
-- [Huffman Work Item](../huffman/huffman-work-item.md)
+- [Huffman priority](../huffman/huffman-priority.md)
+- [Huffman work item](../huffman/huffman-work-item.md)
 
 ## Sources
 

@@ -4,10 +4,10 @@ navigation: module
 
 # Analysis
 
-- [Grover Angle](grover-angle.md)
-- [Angle Amplitude](angle-amplitude.md)
-- [Grover Iterate](grover-iterate.md)
-- [Amplitude Norm Sq grover Iterate](amplitude-norm-sq-grover-iterate.md)
-- [Amplitude Norm Sq grover Iterate uniform](amplitude-norm-sq-grover-iterate-uniform.md)
-- [Grover Phase](grover-phase.md)
-- [Marked Probability grover Iterate uniform](marked-probability-grover-iterate-unifor.md)
+- [Grover angle](grover-angle.md)
+- [Symmetric Grover state at a given angle](angle-amplitude.md)
+- [Grover iterate](grover-iterate.md)
+- [Grover iteration preserves the squared norm](amplitude-norm-sq-grover-iterate.md)
+- [Grover iterates of the uniform state are unit vectors](amplitude-norm-sq-grover-iterate-uniform.md)
+- [Grover phase](grover-phase.md)
+- [Exact success probability of Grover search](marked-probability-grover-iterate-unifor.md)

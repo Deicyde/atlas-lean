@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Karger.IsCut
 ---
 
-# Is Cut
+# Cuts of a multigraph
 
-`X` is a cut of the state: a vertex on each side.
+**Cuts of a multigraph.** A map $X$ from vertices to booleans is a cut of a multigraph state
+$G$ when some vertex $v$ of $G$ has $X(v) = \mathrm{true}$ and some vertex $w$ of $G$ has
+$X(w) = \mathrm{false}$.
 
 ## Depends on
 
-- [State](state.md)
+- [Multigraph state of Karger's algorithm](state.md)
 
 ## Sources
 

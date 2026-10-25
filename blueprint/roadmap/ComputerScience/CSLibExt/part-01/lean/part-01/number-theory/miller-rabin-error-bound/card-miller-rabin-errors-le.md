@@ -6,23 +6,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MillerRabin.card_millerRabin_errors_le
 ---
 
-# Card miller Rabin errors le
+# Half error bound for Miller–Rabin with several bases
 
-CLRS Theorem 31.39 in counting form: of the `(n - 1)^s` lists of `s` bases from
-`1, …, n - 1`, at most `((n - 1) / 2)^s` make `MILLER-RABIN` answer *prime* on an odd composite
-`n`, so with uniformly random bases the error probability is at most `2^(-s)`.
+**Half error bound for Miller–Rabin with several bases.** Let $n > 1$ be odd and not prime,
+and let $s$ be a natural number. Among the $(n - 1)^s$ lists $(b_1, \dots, b_s)$ of bases with
+$0 < b_i < n$, at most $((n - 1)/2)^s$ make the Miller–Rabin test of $n$ with bases
+$b_1, \dots, b_s$ answer *prime*.
+
+With uniformly random bases the error probability is therefore at most $2^{-s}$.
 
 ## Depends on
 
-- [Miller Rabin](../miller-rabin/miller-rabin.md)
+- [The Miller–Rabin test](../miller-rabin/miller-rabin.md)
 
 ## Proof depends on
 
-- [Card nonwitnesses le](card-nonwitnesses-le.md)
-- [Miller Rabin eq true iff](miller-rabin-eq-true-iff.md)
-- [Nonwitnesses](nonwitnesses.md)
-- [Witness](../miller-rabin/witness.md)
+- [At most half the bases are non-witnesses](card-nonwitnesses-le.md)
+- [Miller–Rabin answers prime exactly when no base is a witness](miller-rabin-eq-true-iff.md)
+- [Non-witnesses of a number](nonwitnesses.md)
+- [Miller–Rabin witness test](../miller-rabin/witness.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.NumberTheory.MillerRabinErrorBound](../../../../../../../../sources/v2/CSLibExt.md)
+- CLRS, third edition, Theorem 31.39, in counting form.

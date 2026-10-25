@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.huffmanTableForest_initial
 ---
 
-# Huffman Table Forest initial
+# The initial table holds the initial forest
 
-The initial table represents exactly the initial leaf forest.
+**The initial table holds the initial forest.** For every list of weighted symbols, the work
+forest read off the initial serial-indexed table of the list is exactly the initial leaf forest
+of the list, in the same order.
 
 ## Depends on
 
-- [Huffman Work Item](huffman-work-item.md)
-- [Huffman Table Forest](huffman-table-forest.md)
-- [Initial Huffman Forest](initial-huffman-forest.md)
-- [Initial Huffman Table](initial-huffman-table.md)
+- [Huffman work item](huffman-work-item.md)
+- [Work forest of a table](huffman-table-forest.md)
+- [Initial Huffman forest](initial-huffman-forest.md)
+- [Initial Huffman table](initial-huffman-table.md)
 
 ## Sources
 

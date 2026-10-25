@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Databases.Derives.union_left
 ---
 
-# Union left
+# Adding the left side to the right side
 
-A dependency `X → Y` gives `X → X ∪ Y`.
+**Adding the left side to the right side.** Let $F$ be a finite set of functional dependencies
+and $X, Y$ finite sets of attributes. If $X \to Y$ is derivable from $F$ with Armstrong's axioms,
+then so is $X \to X \cup Y$.
 
 ## Depends on
 
-- [Derives](derives.md)
-- [FD](fd.md)
+- [Derivability with Armstrong's axioms](derives.md)
+- [Functional dependency](fd.md)
 
 ## Proof depends on
 
-- [Union](union.md)
+- [Union rule](union.md)
 
 ## Sources
 

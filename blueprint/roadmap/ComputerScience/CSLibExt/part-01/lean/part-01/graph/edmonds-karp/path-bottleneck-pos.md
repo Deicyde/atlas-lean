@@ -6,24 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EdmondsKarp.pathBottleneck_pos
 ---
 
-# Path Bottleneck pos
+# Augmenting paths have positive bottleneck
 
-A residual source-to-sink path has a positive integral bottleneck.
+**Augmenting paths have positive bottleneck.** Let $c$ be a capacity matrix with
+natural-number entries and $f$ any integer matrix (the flow) on the vertices $0, \dots, n - 1$,
+and let $s \ne t$ be vertices. If $p$ is a duplicate-free path from $s$ to $t$ in the residual
+graph of $c$ and $f$, then the bottleneck of $p$, the minimum of $c(u, v) - f(u, v)$ over
+consecutive vertices $u, v$ of $p$, is positive.
 
 ## Depends on
 
 - [Flow](flow.md)
-- [Is Path](is-path.md)
-- [Path Bottleneck](path-bottleneck.md)
+- [Directed path](is-path.md)
+- [Bottleneck of a path](path-bottleneck.md)
 - [Residual Graph](residual-graph.md)
 
 ## Proof depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Edge](../directed-adjacency-2/edge.md)
-- [Path Edges](path-edges.md)
-- [Residual Amount](residual-amount.md)
-- [Residual Graph edge iff](residual-graph-edge-iff.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
+- [Edges of a path](path-edges.md)
+- [Residual capacity](residual-amount.md)
+- [Edges of the residual graph](residual-graph-edge-iff.md)
 
 ## Sources
 

@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.MatchingLowerBound.exists_isMatching_matched_le
 ---
 
-# Exists is Matching matched le
+# The $1/2$ lower bound with a matching of the arrivals' graph
 
-The same in the vocabulary of `Graph/BipartiteMatching.lean`: the arrivals' graph has a
-matching (`BipartiteMatching.IsMatching`) with `2 n` edges.
+**The $1/2$ lower bound with a matching of the arrivals' graph.** For every $n \in \mathbb{N}$
+and every online matcher $A$ with $2n$ left vertices, there is a sequence $\sigma$ of arrivals
+(neighbour lists) such that the bipartite graph of $\sigma$, in which left vertex $i$ is adjacent
+to arrival $j$ when $i$ lies in the $j$-th neighbour list, has a matching with $2n$ edges, while
+$A$, run on $\sigma$ from the empty history with no left vertex matched, matches at most $n$
+arrivals.
 
 ## Depends on
 
-- [Is Matching](../../graph/bipartite-matching/is-matching.md)
+- [Matching in a bipartite graph](../../graph/bipartite-matching/is-matching.md)
 - [Online Matcher](online-matcher.md)
-- [Matched](matched.md)
-- [To Adj](to-adj.md)
+- [Number of arrivals an online matcher matches](matched.md)
+- [Graph of a sequence of arrivals](to-adj.md)
 
 ## Proof depends on
 
-- [Is Perfect](is-perfect.md)
-- [Exists is Matching of is Perfect](exists-is-matching-of-is-perfect.md)
+- [Perfect matchings of a sequence of arrivals](is-perfect.md)
+- [Perfect matchings of the arrivals are matchings of their graph](exists-is-matching-of-is-perfect.md)
 - [No deterministic online bipartite matching algorithm beats `1/2`](exists-perfect-matched-le.md)
 
 ## Sources

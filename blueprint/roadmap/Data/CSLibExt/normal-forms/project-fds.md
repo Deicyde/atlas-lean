@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.Databases.projectFDs
 ---
 
-# Project FDs
+# Projection of the dependency closure onto a scheme
 
-The dependencies derivable from `F` between attributes of `S` (the projection of `F⁺` onto
-`S`).
+**Projection of the dependency closure onto a scheme.** For a finite set $F$ of functional
+dependencies and a set $S$ of attributes, this is the finite set of all dependencies $X \to Y$
+with $X, Y \subseteq S$ that are derivable from $F$ by Armstrong's axioms, that is, the projection
+onto $S$ of the closure $F^+$ of $F$.
 
 ## Depends on
 
-- [FD](../functional-dependencies/fd.md)
+- [Functional dependency](../functional-dependencies/fd.md)
 
 ## Proof depends on
 
-- [Derives](../functional-dependencies/derives.md)
-- [Attr Closure](../functional-dependencies/attr-closure.md)
+- [Derivability with Armstrong's axioms](../functional-dependencies/derives.md)
+- [Attribute closure](../functional-dependencies/attr-closure.md)
 - [The closure algorithm decides derivability](../functional-dependencies/derives-iff-subset-attr-closure.md)
 
 ## Sources

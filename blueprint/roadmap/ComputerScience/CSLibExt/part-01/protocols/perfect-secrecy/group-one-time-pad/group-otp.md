@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Crypto.Protocols.PerfectSecrecy.groupOTP
 ---
 
-# Group OTP
+# The group one-time pad
 
-The group one-time pad: `Enc_k(m) = k * m` with `k` uniform on `G`.
+**The group one-time pad.** Let $G$ be a finite group. The group one-time pad on $G$ is the
+private-key encryption scheme with messages, keys and ciphertexts in $G$ whose key $k$ is drawn
+uniformly from $G$, which encrypts a message $m$ as $k m$, and which decrypts a ciphertext $c$
+as $k^{-1} c$.
 
 ## Depends on
 

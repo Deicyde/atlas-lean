@@ -6,14 +6,15 @@ statement: formalized
 lean: Cslib.Grover.uniformAmplitude
 ---
 
-# Uniform Amplitude
+# Uniform amplitude vector
 
-The uniform real amplitude vector. For a nonempty search space its value is
-`1 / sqrt(card α)` at every point.
+**Uniform amplitude vector.** For a finite type $\alpha$, the uniform amplitude vector on
+$\alpha$ is the real amplitude vector whose value at every point is $1/\sqrt{|\alpha|}$, where
+$|\alpha|$ is the number of elements of $\alpha$.
 
 ## Depends on
 
-- [Amplitude](amplitude.md)
+- [Real amplitude vectors](amplitude.md)
 
 ## Sources
 

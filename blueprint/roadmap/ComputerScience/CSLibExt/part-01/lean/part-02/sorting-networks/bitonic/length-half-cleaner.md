@@ -8,7 +8,11 @@ lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.length_halfCleaner
 
 # The bitonic sorter sorts every `0`-`1` input
 
-**The bitonic sorter sorts every `0`-`1` input.** -/
+**The bitonic sorter sorts every `0`-`1` input.** Let $k, b \in \mathbb{N}$ and let $f$ assign
+a Boolean value to each wire $x \in \mathbb{N}$, with Booleans ordered by
+$\mathrm{false} < \mathrm{true}$. Running Batcher's bitonic sorter on the block $[b, b + 2^k)$
+on $f$ gives an assignment $g$ that is sorted on that block: $g(b + i) \le g(b + j)$ whenever
+$i \le j < 2^k$. -/
 theorem bitonicSortN_sorts : ∀ (k b : ℕ) (f : ℕ → Bool),
     SortedOn (runN (bitonicSortN k b) f) b (2 ^ k)
   | 0, b, f => fun i j hij hj => by
@@ -56,7 +60,7 @@ theorem bitonicSortN_sorts : ∀ (k b : ℕ) (f : ℕ → Bool),
 
 ## Depends on
 
-- [Half Cleaner](half-cleaner.md)
+- [Half-cleaner](half-cleaner.md)
 
 ## Sources
 

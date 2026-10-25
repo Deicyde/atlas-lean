@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Databases.losslessJoin_of_derives
 ---
 
-# Lossless Join of derives
+# Lossless binary decompositions from derivable dependencies
 
-A binary decomposition is lossless when the common attributes determine one of the two
-schemes.
+**Lossless binary decompositions from derivable dependencies.** Let $F$ be a finite set of
+functional dependencies and let $R_1$, $R_2$ be sets of attributes. If $R_1 \cap R_2 \to R_1$ or
+$R_1 \cap R_2 \to R_2$ is derivable from $F$ by Armstrong's axioms, then for every value type $D$
+the decomposition of $R_1 \cup R_2$ into $R_1$ and $R_2$ is lossless for $F$ with values in $D$.
 
 ## Depends on
 
-- [Derives](../functional-dependencies/derives.md)
-- [FD](../functional-dependencies/fd.md)
+- [Derivability with Armstrong's axioms](../functional-dependencies/derives.md)
+- [Functional dependency](../functional-dependencies/fd.md)
 - [Lossless Join](lossless-join.md)
 
 ## Proof depends on
 
-- [Holds In](../functional-dependencies/holds-in.md)
+- [A functional dependency holds in a relation](../functional-dependencies/holds-in.md)
 - [Is Over](../relational-algebra/is-over-2.md)
-- [Satisfies On](satisfies-on.md)
+- [Satisfying a set of dependencies on a scheme](satisfies-on.md)
 - [Tuple](../relational-algebra/tuple.md)
 - [Join](../relational-algebra/join.md)
 - [Join comm](../relational-algebra/join-comm.md)

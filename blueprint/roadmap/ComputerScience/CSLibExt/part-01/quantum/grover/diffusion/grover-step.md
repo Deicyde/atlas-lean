@@ -12,11 +12,11 @@ One Grover iteration: phase inversion followed by inversion about the mean.
 
 ## Depends on
 
-- [Amplitude](../basic/amplitude.md)
+- [Real amplitude vectors](../basic/amplitude.md)
 
 ## Proof depends on
 
-- [Diffusion](diffusion.md)
+- [Inversion about the mean](diffusion.md)
 - [Phase Oracle](../basic/phase-oracle.md)
 
 ## Sources

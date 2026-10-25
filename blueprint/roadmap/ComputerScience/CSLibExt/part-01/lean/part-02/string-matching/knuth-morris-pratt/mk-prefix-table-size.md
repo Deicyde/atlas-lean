@@ -7,9 +7,10 @@ proof: formalized
 lean: Array.mkPrefixTable_size
 ---
 
-# Mk Prefix Table size
+# Size of the KMP prefix table
 
-The KMP prefix table has one entry for every pattern symbol.
+**Size of the KMP prefix table.** For every pattern $p$, the KMP prefix table of $p$ has
+exactly as many entries as $p$ has symbols, one for each symbol of $p$.
 
 ## Depends on
 

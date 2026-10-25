@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.pathWeight
 ---
 
-# Path Weight
+# Bellman–Ford path weight
 
-Sum the integer weights of concrete edge occurrences.
+**Bellman–Ford path weight.** The weight of a list of integer-weighted edges is the sum of the
+weights of its entries, an edge occurring several times being counted each time.
 
 ## Depends on
 
-- [Edge](edge.md)
+- [Weighted directed edge](edge.md)
 
 ## Sources
 

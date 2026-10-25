@@ -35,7 +35,7 @@ through the endpoints of $j$ is at most that of the line through the endpoints o
 - [The status list is weakly sorted after the events left of a vertical line](run-pairwise-le-of-lt.md)
 - [One step of the sweep](step.md)
 - [Testing a segment against an optional neighbour](test-opt.md)
-- [Direction](../segment-intersection/direction.md)
+- [Direction of three points](../segment-intersection/direction.md)
 - [DIRECTION as a scaled vertical offset](direction-eq-line-y.md)
 - [Inserting into a weakly sorted list](pairwise-take-while-append-cons-drop-whi-2.md)
 

@@ -7,19 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess_time_le
 ---
 
-# Preprocess time le
+# Cost of Boyer–Moore preprocessing
 
-The executed preprocessor's selected-event cost, including alphabet-table
-initialization. This is not a word-RAM or bit-cost bound.
+**Cost of Boyer–Moore preprocessing.** For a pattern of length $m$ over an alphabet of size
+$\sigma$, the event cost of the Boyer–Moore preprocessing is at most $\sigma$ when $m = 0$ and at
+most $\sigma + 10m - 6$ when $m \ge 1$.
+
+The cost counts the selected events of the preprocessor, including initialization of the
+alphabet table; it is not a word-RAM or bit-cost bound.
 
 ## Depends on
 
-- [Preprocess](preprocess.md)
+- [Boyer–Moore preprocessing](preprocess.md)
 
 ## Proof depends on
 
-- [Compute Z](../../zalgorithm/compute-z.md)
-- [Compute Z time le](../../zalgorithm/compute-z-time-le.md)
+- [Z-algorithm](../../zalgorithm/compute-z.md)
+- [Linear upper bound for the Z-algorithm](../../zalgorithm/compute-z-time-le.md)
 
 ## Sources
 

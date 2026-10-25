@@ -4,5 +4,5 @@ navigation: module
 
 # Costs
 
-- [Bfs With Parents time](bfs-with-parents-time.md)
-- [Bfs With Parents time le](bfs-with-parents-time-le.md)
+- [Exact cost of BFS with parents](bfs-with-parents-time.md)
+- [Linear bound on the cost of BFS with parents](bfs-with-parents-time-le.md)

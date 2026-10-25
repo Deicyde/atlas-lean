@@ -13,7 +13,7 @@ lean: Cslib.Databases.select_join_right
 ## Depends on
 
 - [Cond](cond.md)
-- [Attrs](attrs.md)
+- [Attributes of a selection condition](attrs.md)
 - [Is Over](is-over-2.md)
 - [Tuple](tuple.md)
 - [Join](join.md)

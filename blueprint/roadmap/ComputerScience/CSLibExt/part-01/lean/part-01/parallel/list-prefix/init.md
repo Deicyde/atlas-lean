@@ -5,13 +5,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.ListPrefix.init
 ---
 
-# Init
+# Initial state of pointer jumping for suffix sums
 
-The initial state: pointers are the successors, sums the nodes' own values.
+**Initial state of pointer jumping for suffix sums.** Given nodes $0, \dots, n-1$ with a
+partial successor function $\mathrm{succ}$ and values $x_v$ in an additive monoid $M$, the
+initial state gives each node $v$ the pointer $\mathrm{succ}(v)$ (undefined at the end of a
+list) and the sum $x_v$.
 
 ## Depends on
 
-- [State](state.md)
+- [State of pointer jumping for suffix sums](state.md)
 
 ## Sources
 

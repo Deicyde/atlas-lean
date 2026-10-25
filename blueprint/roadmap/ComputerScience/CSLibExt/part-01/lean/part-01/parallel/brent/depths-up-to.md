@@ -5,13 +5,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.depthsUpTo
 ---
 
-# Depths Up To
+# Depths of an initial segment of tasks
 
-The depths of tasks `0, …, k - 1`, computed in topological order.
+**Depths of an initial segment of tasks.** For $k \le n$, the list of the depths of tasks
+$0, \dots, k - 1$ of a computation DAG on $n$ tasks, computed in topological order: the empty
+list for $k = 0$, and for $k + 1$ the list for $k$ followed by $1$ plus the largest entry of that
+list at a predecessor of task $k$ (or $1$ if task $k$ has no predecessors).
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 
 ## Sources
 

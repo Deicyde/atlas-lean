@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.StronglyConnectedComponents.mem_flatten_components
 ---
 
-# Mem flatten components
+# The computed components cover the vertex list
 
-The union of all returned components is exactly the certified carrier.
+**The computed components cover the vertex list.** For a directed graph $G$ and a vertex
+$v$, $v$ belongs to some block of the computed strongly connected components of $G$ if and only
+if $v$ occurs in the vertex enumeration of $G$.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Components](components.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Strongly connected components algorithm](components.md)
 
 ## Proof depends on
 
-- [Decreasing Finish All](../depth-first-search/decreasing-finish-all.md)
-- [Mem decreasing Finish All](../depth-first-search/mem-decreasing-finish-all.md)
+- [Whole-graph decreasing finish order](../depth-first-search/decreasing-finish-all.md)
+- [Whole-graph decreasing finish order contains every vertex](../depth-first-search/mem-decreasing-finish-all.md)
 - [Strongly Connected](strongly-connected.md)
-- [Same Component B](same-component-b.md)
-- [Same Component B eq true](same-component-b-eq-true.md)
-- [Strongly Connected refl](strongly-connected-refl.md)
+- [Executable mutual-reachability test](same-component-b.md)
+- [The mutual-reachability test is correct](same-component-b-eq-true.md)
+- [Strong connectivity is reflexive](strongly-connected-refl.md)
 
 ## Sources
 

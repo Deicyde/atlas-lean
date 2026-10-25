@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.huffmanForestWeights
 ---
 
-# Huffman Forest Weights
+# Weights of a Huffman work forest
 
-Total weights represented by a work forest.
+**Weights of a Huffman work forest.** The weights of a list of Huffman work items form the
+multiset consisting of the total leaf weight of each item's tree, taken as a real number, counted
+with multiplicity.
 
 ## Depends on
 
-- [Huffman Work Item](../huffman/huffman-work-item.md)
+- [Huffman work item](../huffman/huffman-work-item.md)
 
 ## Proof depends on
 
-- [Huffman Tree](../huffman/huffman-tree.md)
-- [Total Weight](../huffman/total-weight.md)
+- [Huffman tree](../huffman/huffman-tree.md)
+- [Total weight of a Huffman tree](../huffman/total-weight.md)
 
 ## Sources
 

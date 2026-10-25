@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Databases.rhs_subset_attrClosure
 ---
 
-# Rhs subset attr Closure
+# The attribute closure is closed under the dependencies
 
-The closure is closed under the dependencies of `F`.
+**The attribute closure is closed under the dependencies.** Let $F$ be a finite set of
+functional dependencies over a finite set of attributes, $X$ a set of attributes and $X^+$ its
+attribute closure under $F$. For every dependency $Y \to Z$ in $F$ with $Y \subseteq X^+$, also
+$Z \subseteq X^+$.
 
 ## Depends on
 
-- [FD](fd.md)
-- [Attr Closure](attr-closure.md)
+- [Functional dependency](fd.md)
+- [Attribute closure](attr-closure.md)
 
 ## Proof depends on
 
-- [Closure Step](closure-step.md)
-- [Closure Step attr Closure](closure-step-attr-closure.md)
+- [One round of the attribute-closure algorithm](closure-step.md)
+- [The attribute closure is a fixed point of a closure round](closure-step-attr-closure.md)
 
 ## Sources
 

@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.OddEven.length_oddEvenSortN
 ---
 
-# Length odd Even Sort N
+# Size of Batcher's odd-even merge sort
 
-The sorter on `2 ^ k` wires has `(k² - k + 4) 2 ^ k / 4 - 1` comparators (exact for every
-`k`), stated without subtraction or division: `4 (length + 1) + k 2 ^ k = (k² + 4) 2 ^ k`.
+**Size of Batcher's odd-even merge sort.** For every $k \in \mathbb{N}$, the number $L$ of
+comparators of Batcher's odd-even merge sort on $2^k$ wires satisfies
+$4(L + 1) + k \cdot 2^k = (k^2 + 4) \cdot 2^k$, that is, $L = (k^2 - k + 4) \cdot 2^k / 4 - 1$.
+
+The identity is stated without subtraction or division, and is exact for every $k$.
 
 ## Depends on
 
-- [Odd Even Sort N](odd-even-sort-n.md)
+- [Batcher's odd-even merge sort](odd-even-sort-n.md)
 
 ## Proof depends on
 
-- [Length odd Even Merge](length-odd-even-merge.md)
-- [Odd Even Merge](odd-even-merge.md)
-- [Relabel](relabel.md)
+- [Size of the odd-even merger](length-odd-even-merge.md)
+- [Batcher's odd-even merger](odd-even-merge.md)
+- [Relabeling the wires of a comparator list](relabel.md)
 
 ## Sources
 

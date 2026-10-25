@@ -8,12 +8,13 @@ lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.blellochWork_eq
 
 # Blelloch's scan is work-efficient
 
-**Blelloch's scan is work-efficient**: `2 ^ (k + 1) - 2 < 2 n` combinations on `n = 2 ^ k`
-positions.
+**Blelloch's scan is work-efficient.** For every natural number $k$, the number $W(k)$ of
+monoid multiplications Blelloch's scan performs on $n = 2^k$ positions satisfies
+$W(k) + 2 = 2^{k+1}$, so $W(k) = 2^{k+1} - 2 < 2n$.
 
 ## Depends on
 
-- [Blelloch Work](blelloch-work.md)
+- [Work of Blelloch's scan](blelloch-work.md)
 
 ## Sources
 

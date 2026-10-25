@@ -14,10 +14,10 @@ lean: Cslib.MachineLearning.Variational.elbo_eq_log_evidence_sub_kl
 ## Depends on
 
 - [Probability distributions on a finite latent space](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
-- [Elbo](elbo.md)
-- [Evidence](evidence.md)
-- [Kl](kl.md)
-- [Posterior](posterior.md)
+- [Evidence lower bound of a single observation](elbo.md)
+- [Evidence of an unnormalized posterior](evidence.md)
+- [Finite Kullback–Leibler formula](kl.md)
+- [Posterior of an unnormalized joint](posterior.md)
 
 ## Sources
 

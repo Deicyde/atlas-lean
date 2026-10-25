@@ -8,14 +8,17 @@ lean: Cslib.Algorithms.Lean.Online.Paging.lru_tr
 
 # Each LRU step is a legal transition
 
-**Each LRU step is a legal transition** of the cache system.
+**Each LRU step is a legal transition.** Let $k$ be a capacity and $c$ a duplicate-free cache
+with at most $k$ pages. For every page $p$, the cache system with capacity $k$ has a transition
+from $c$, labelled by the LRU event for $p$ at $c$, to the cache produced by one LRU step with
+capacity $k$ serving $p$.
 
 ## Depends on
 
-- [Cache Event](../../greedy/offline-caching/cache-event.md)
-- [Cache LTS](../../greedy/offline-caching/cache-lts.md)
-- [Lru Event](lru-event.md)
-- [Lru Step](lru-step.md)
+- [Cache events](../../greedy/offline-caching/cache-event.md)
+- [Legal cache transitions](../../greedy/offline-caching/cache-lts.md)
+- [The event of an LRU step](lru-event.md)
+- [One LRU step](lru-step.md)
 
 ## Sources
 

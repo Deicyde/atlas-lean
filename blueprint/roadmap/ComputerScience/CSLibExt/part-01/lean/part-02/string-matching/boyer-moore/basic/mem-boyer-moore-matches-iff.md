@@ -7,23 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.mem_boyerMooreMatches_iff
 ---
 
-# Mem boyer Moore Matches iff
+# Boyer–Moore returns exactly the occurrences
 
-The matcher returns exactly the canonical occurrences, including overlaps.
+**Boyer–Moore returns exactly the occurrences.** For all words $p$ and $t$ over the alphabet
+$\{0, \dots, \sigma - 1\}$ and every natural number $k$, the offset $k$ belongs to the list
+returned by the Boyer–Moore matcher with pattern $p$ and text $t$ if and only if $p$ occurs in
+$t$ at offset $k$, that is, $k \le |t|$ and $p$ is a prefix of the word obtained from $t$ by
+deleting its first $k$ letters. In particular, overlapping occurrences are all returned.
 
 ## Depends on
 
-- [Match At](../../basic/match-at.md)
-- [Boyer Moore Matches](boyer-moore-matches.md)
+- [Pattern match at an offset](../../basic/match-at.md)
+- [Boyer–Moore matcher for all occurrences](boyer-moore-matches.md)
 
 ## Proof depends on
 
-- [Preprocess](../preprocessing/preprocess.md)
-- [Preprocess bad Character](../preprocessing/preprocess-bad-character.md)
-- [Preprocess full Match](../preprocessing/preprocess-full-match.md)
-- [Preprocess good Suffix](../preprocessing/preprocess-good-suffix.md)
-- [Boyer Moore Matches nil pattern](boyer-moore-matches-nil-pattern.md)
-- [Boyer Moore Matches of length lt](boyer-moore-matches-of-length-lt.md)
+- [Boyer–Moore preprocessing](../preprocessing/preprocess.md)
+- [Bad-character table of Boyer–Moore preprocessing](../preprocessing/preprocess-bad-character.md)
+- [The full-match shift is the least period of the pattern](../preprocessing/preprocess-full-match.md)
+- [Good-suffix table of Boyer–Moore preprocessing](../preprocessing/preprocess-good-suffix.md)
+- [Boyer–Moore with the empty pattern](boyer-moore-matches-nil-pattern.md)
+- [Boyer–Moore with a pattern longer than the text](boyer-moore-matches-of-length-lt.md)
 
 ## Sources
 

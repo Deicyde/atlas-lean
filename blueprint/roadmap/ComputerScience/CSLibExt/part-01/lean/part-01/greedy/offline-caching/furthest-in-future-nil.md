@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_nil
 ---
 
-# Furthest In Future nil
+# Furthest-in-future on no requests
 
-An empty request list preserves the exact initial cache representation.
+**Furthest-in-future on no requests.** For every capacity $k$ and every list $C$ of blocks,
+the furthest-in-future manager with capacity $k$ on the empty request list from the initial
+cache $C$ emits no events and ends with the cache $C$, unchanged.
 
 ## Depends on
 
-- [Cache Event](cache-event.md)
-- [Furthest In Future](furthest-in-future.md)
+- [Cache events](cache-event.md)
+- [Furthest-in-future caching](furthest-in-future.md)
 
 ## Sources
 

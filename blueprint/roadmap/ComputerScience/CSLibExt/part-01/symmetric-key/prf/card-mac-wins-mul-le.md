@@ -8,20 +8,25 @@ lean: Cslib.Crypto.PRF.card_macWins_mul_le
 
 # Counting forgeries against a random function
 
-**Counting forgeries against a random function**: the functions against which the forger
-wins number at most `|T|^|M| / |T|`, since changing the tag of the fresh forged message (which the
-run never queries) gives `|T|` functions with the same run, of which exactly one is a win.
+**Counting forgeries against a random function.** Let $M$ and $T$ be finite sets and let $c$ be
+an adaptive oracle algorithm that queries messages in $M$, receives tags in $T$ and outputs a pair
+in $M \times T$. Call a function $f \colon M \to T$ a win for $c$ when the run of $c$ with oracle
+$f$ outputs a pair $(m, t)$ with $f(m) = t$ and $m$ not among the messages queried in that run.
+If $W$ is the set of functions $M \to T$ that are wins for $c$, then $|W| \cdot |T| \le |T|^{|M|}$.
+
+Changing the tag of the fresh forged message, which the run never queries, gives $|T|$ functions
+with the same run, of which exactly one is a win.
 
 ## Depends on
 
-- [Mac Wins](mac-wins.md)
-- [Oracle Comp](oracle-comp.md)
-- [Queries](queries.md)
-- [Run](run.md)
+- [Winning the forgery game](mac-wins.md)
+- [Adaptive oracle algorithms](oracle-comp.md)
+- [Queries of an oracle algorithm](queries.md)
+- [Running an oracle algorithm](run.md)
 
 ## Proof depends on
 
-- [Locality](run-congr.md)
+- [Locality of oracle runs](run-congr.md)
 
 ## Sources
 

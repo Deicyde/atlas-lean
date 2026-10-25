@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_mem_iff
 ---
 
-# Modular Linear Equation Solver mem iff
+# The solver returns exactly the solutions below $n$
 
-Membership characterizes exactly the least nonnegative solutions of the congruence.
+**The solver returns exactly the solutions below $n$.** Let $a > 0$ and $n > 0$ be natural
+numbers and $b$ an integer. A natural number $x$ occurs in the output of the modular linear
+equation solver on $a$, $b$, $n$ if and only if $x < n$ and $a x \equiv b \pmod{n}$.
 
 ## Depends on
 
-- [Modular Linear Equation Solver](modular-linear-equation-solver.md)
+- [Modular linear equation solver](modular-linear-equation-solver.md)
 
 ## Proof depends on
 
-- [Modular Linear Equation Solver ret](modular-linear-equation-solver-ret.md)
+- [Output of the modular linear equation solver](modular-linear-equation-solver-ret.md)
 
 ## Sources
 

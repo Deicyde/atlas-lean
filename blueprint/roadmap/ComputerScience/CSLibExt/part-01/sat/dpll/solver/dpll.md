@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.DPLL.dpll
 ---
 
-# Dpll
+# The DPLL procedure
 
-Decide satisfiability using one assignment step per distinct input variable.
+**The DPLL procedure.** On a CNF formula $\varphi$, the DPLL procedure runs DPLL with fuel
+equal to the number of distinct variables occurring in $\varphi$ and returns its Boolean result.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ Decide satisfiability using one assignment step per distinct input variable.
 
 ## Proof depends on
 
-- [Decide With Fuel](decide-with-fuel.md)
+- [DPLL with a fuel budget](decide-with-fuel.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Sources

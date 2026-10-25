@@ -7,9 +7,10 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.heapSort_correct
 ---
 
-# Heap Sort correct
+# Correctness of heap sort
 
-Heap sort refines the standard sorted-permutation specification.
+**Correctness of heap sort.** For every list $xs$ of elements of a linearly ordered type, heap
+sort returns a list that is sorted in nondecreasing order and is a permutation of $xs$.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ Heap sort refines the standard sorted-permutation specification.
 
 ## Proof depends on
 
-- [Heap Sort perm](heap-sort-perm.md)
-- [Heap Sort sorted](heap-sort-sorted.md)
+- [Heap sort permutes its input](heap-sort-perm.md)
+- [Heap sort output is sorted](heap-sort-sorted.md)
 
 ## Sources
 

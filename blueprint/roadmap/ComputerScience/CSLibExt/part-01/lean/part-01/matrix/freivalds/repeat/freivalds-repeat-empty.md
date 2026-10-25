@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsRepeat_empty
 ---
 
-# Freivalds Repeat empty
+# Repeated Freivalds test on empty matrices
 
-Empty matrices accept every history and perform no arithmetic.
+**Repeated Freivalds test on empty matrices.** For $0 \times 0$ matrices $A$, $B$, $C$ over
+$\mathbb{Z}/2$ and any number $k$ of seeds (each the empty vector), the repeated Freivalds test
+accepts and performs no scalar multiplications or additions.
 
 ## Depends on
 
-- [Freivalds Repeat](freivalds-repeat.md)
+- [Repeated Freivalds test on fixed seeds](freivalds-repeat.md)
 
 ## Proof depends on
 
-- [Freivalds Matrix](../basic/freivalds-matrix.md)
-- [Freivalds Repeat complete](freivalds-repeat-complete.md)
-- [Freivalds Repeat time](freivalds-repeat-time.md)
+- [Matrix of a Freivalds input](../basic/freivalds-matrix.md)
+- [Completeness of the repeated Freivalds test on fixed seeds](freivalds-repeat-complete.md)
+- [Cost of the repeated Freivalds test on fixed seeds](freivalds-repeat-time.md)
 
 ## Sources
 

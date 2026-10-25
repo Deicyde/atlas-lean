@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.Cost.total
 ---
 
-# Total
+# Total Bellman–Ford cost
 
-Total abstract events charged by the Bellman-Ford cost model.
+**Total Bellman–Ford cost.** The total of a Bellman–Ford cost record is its number of edge
+relaxation checks plus its number of negative-cycle witness reconstruction steps.
 
 ## Depends on
 
-- [Cost](cost.md)
+- [Bellman-Ford cost counters](cost.md)
 
 ## Sources
 

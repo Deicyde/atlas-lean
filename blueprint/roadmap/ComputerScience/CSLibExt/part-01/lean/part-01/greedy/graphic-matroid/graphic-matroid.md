@@ -5,10 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GraphicMatroid.graphicMatroid
 ---
 
-# Graphic Matroid
+# Graphic matroid
 
-The graphic matroid of `G` (CLRS Theorem 16.5): ground set `G.edgeSet`, independent sets the
-forests of `G`.
+**Graphic matroid.** For a simple graph $G$ on a finite vertex set, the graphic matroid of $G$
+is the matroid on unordered pairs of vertices whose ground set is the edge set of $G$ and whose
+independent sets are the forests of $G$, that is, the sets of edges of $G$ that form an acyclic
+graph.
+
+That these sets form a matroid is CLRS Theorem 16.5.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Forest Set](is-forest-set.md)
-- [Exists insert is Acyclic](exists-insert-is-acyclic.md)
+- [Forests of a graph](is-forest-set.md)
+- [Augmentation property of forests](exists-insert-is-acyclic.md)
 
 ## Sources
 

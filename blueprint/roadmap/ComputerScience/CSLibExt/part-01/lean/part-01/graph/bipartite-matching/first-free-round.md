@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound
 ---
 
-# First Free Round
+# First free round
 
-The earliest round `d` such that round `d + 1` of the search reaches an unmatched right
-vertex, if any round does.
+**First free round.** For a partner array $\mu$ of a bipartite graph with $a$ left vertices,
+the first free round of $\mu$ is the least $d \le a$ such that some unmatched right vertex is
+reached within $d + 1$ rounds of the layered search; it is undefined if there is no such $d$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Layers](layers.md)
+- [Alternating breadth-first layers](layers.md)
 
 ## Sources
 

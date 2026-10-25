@@ -5,20 +5,24 @@ statement: formalized
 lean: Cslib.MachineLearning.Sequence.BaumWelch.joint
 ---
 
-# Joint
+# The EM model of a hidden Markov model
 
-The EM model of an HMM: the latent variable is the state path of length `T + 1`, the
-observation a sequence, and the joint the path weight.
+**The EM model of a hidden Markov model.** Let $S$ and $O$ be finite sets and let $T$ be a
+natural number. Let $h$ be a valid hidden Markov model on states $S$ and observations $O$, with
+positive initial probabilities $\pi_s$, transition probabilities $a_{ss'}$ and emission
+probabilities $b_{so}$, each distribution summing to one. The joint of its EM model at an
+observation sequence $x = (x_0, x_1, \dots)$ in $O$ and a state path $z = (z_0, \dots, z_T)$ in $S$
+is the path weight $p_h(x, z) = \pi_{z_0} b_{z_0 x_0} \prod_{t=1}^{T} a_{z_{t-1} z_t} b_{z_t x_t}$.
 
 ## Depends on
 
-- [Valid HMM](valid-hmm.md)
+- [Valid HMMs](valid-hmm.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
-- [HMM](../hidden-markov/hmm.md)
-- [Path Prob](../hidden-markov/path-prob.md)
+- [Valid hidden Markov model parameters](valid.md)
+- [Hidden Markov model](../hidden-markov/hmm.md)
+- [Joint weight of a state path and the observations](../hidden-markov/path-prob.md)
 
 ## Sources
 

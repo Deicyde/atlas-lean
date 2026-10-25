@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.randomlyPermute_singleton
 ---
 
-# Randomly Permute singleton
+# Fisher–Yates on a one-element vector
 
-Singleton execution retains its element but still retrieves the final
-unique draw and executes its self-swap.
+**Fisher–Yates on a one-element vector.** For every vector $x$ of length $1$ and every draw
+history $d$, the Fisher–Yates computation returns $x$ unchanged with cost pair $(1, 1)$: it still
+retrieves the single draw $d_0 = 0$ and performs the self-swap at position $0$.
 
 ## Depends on
 
-- [Randomly Permute](../basic/randomly-permute.md)
+- [Fisher–Yates shuffle with supplied draws](../basic/randomly-permute.md)
 
 ## Proof depends on
 
-- [Randomly Permute time](../basic/randomly-permute-time.md)
+- [Cost of the Fisher–Yates shuffle](../basic/randomly-permute-time.md)
 
 ## Sources
 

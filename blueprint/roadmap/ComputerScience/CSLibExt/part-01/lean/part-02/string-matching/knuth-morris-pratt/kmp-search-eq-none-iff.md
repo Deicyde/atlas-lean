@@ -7,13 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_none_iff
 ---
 
-# Kmp Search eq none iff
+# KMP finds no match exactly when no offset matches
 
-KMP returns no offset exactly when no bounded offset matches the pattern.
+**KMP finds no match exactly when no offset matches.** For lists $p$ and $t$ over a type
+with a lawful boolean equality, write $|t|$ for the length of $t$. KMP search for $p$ in $t$
+returns no offset if and only if there is no natural number $i$ at which $p$ matches $t$, where
+$p$ matches $t$ at $i$ when $i \le |t|$ and $p$ is a prefix of the list obtained from $t$ by
+dropping its first $i$ elements.
 
 ## Depends on
 
-- [Match At](../basic/match-at.md)
+- [Pattern match at an offset](../basic/match-at.md)
 - [Kmp Search](kmp-search.md)
 
 ## Sources

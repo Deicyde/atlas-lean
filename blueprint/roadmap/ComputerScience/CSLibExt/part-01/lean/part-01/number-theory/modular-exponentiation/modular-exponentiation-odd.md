@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_odd
 ---
 
-# Modular Exponentiation odd
+# Odd step of modular exponentiation
 
-The odd branch first recurses at `b - 1`, then multiplies by the original base.
+**Odd step of modular exponentiation.** Let $a$, $b$, $n$ be natural numbers with $b$ odd.
+If modular exponentiation on base $a$, exponent $b - 1$ and modulus $n$ returns the value $d$
+using $t$ multiplications, then on base $a$, exponent $b$ and modulus $n$ it returns the value
+$(a \cdot d) \bmod n$ using $t + 1$ multiplications.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Sources
 

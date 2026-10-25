@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Logic.PL.Proposition.tseitinBot
 ---
 
-# Tseitin Bot
+# Tseitin CNF with $\bot$ false
 
-The Tseitin CNF together with the unit clause making the atom `⊥` false.
+**Tseitin CNF with $\bot$ false.** For an atom type with a distinguished atom $\bot$, a map
+$\iota$ from atoms to natural numbers and a formula $A$, this is the CNF consisting of the unit
+clause whose literal is the negative literal of variable $2\iota(\bot)$, followed by the Tseitin
+CNF of $A$ with respect to $\iota$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ The Tseitin CNF together with the unit clause making the atom `⊥` false.
 ## Proof depends on
 
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Tseitin](tseitin.md)
+- [Tseitin CNF](tseitin.md)
 
 ## Sources
 

@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Karger.contract
 ---
 
-# Contract
+# Edge contraction
 
-Contract the edge `e`: merge `e.2` into `e.1` and delete the resulting self-loops.
+**Edge contraction.** For a multigraph state $G$ and a pair of vertices $e = (a, b)$, the
+contraction of $G$ along $e$ deletes the first occurrence of $b$ from the vertex list, replaces
+$b$ by $a$ in both endpoints of every edge, and then deletes every edge whose two endpoints are
+equal.
 
 ## Depends on
 
-- [State](state.md)
+- [Multigraph state of Karger's algorithm](state.md)
 
 ## Proof depends on
 
-- [Rename](rename.md)
+- [Renaming a vertex](rename.md)
 
 ## Sources
 

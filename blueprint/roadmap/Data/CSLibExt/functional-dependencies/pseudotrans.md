@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Databases.Derives.pseudotrans
 ---
 
-# Pseudotrans
+# Pseudotransitivity rule
 
-The pseudotransitivity rule: from `X → Y` and `Y ∪ W → Z` derive `X ∪ W → Z`.
+**Pseudotransitivity rule.** Let $F$ be a finite set of functional dependencies and
+$X, Y, W, Z$ finite sets of attributes. If $X \to Y$ and $Y \cup W \to Z$ are derivable from $F$
+with Armstrong's axioms, then so is $X \cup W \to Z$.
 
 ## Depends on
 
-- [Derives](derives.md)
-- [FD](fd.md)
+- [Derivability with Armstrong's axioms](derives.md)
+- [Functional dependency](fd.md)
 
 ## Sources
 

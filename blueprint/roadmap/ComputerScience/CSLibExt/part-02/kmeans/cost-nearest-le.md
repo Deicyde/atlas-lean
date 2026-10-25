@@ -13,8 +13,8 @@ assignment is optimal.
 
 ## Depends on
 
-- [Nearest](nearest.md)
-- [Cost](cost.md)
+- [Nearest-center assignment](nearest.md)
+- [The k-means cost](cost.md)
 
 ## Sources
 

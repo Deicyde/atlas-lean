@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanWeightTree.MergeTrace.le_pathCost
 ---
 
-# Le path Cost
+# Two-minimum merge costs lower-bound weighted path length
 
-Repeated two-minimum merges lower-bound every full tree with the same
-weight multiset.
+**Two-minimum merge costs lower-bound weighted path length.** Let $W$ be a multiset of real
+weights and let $c$ be a merge cost of $W$ certified by a two-minimum merge trace. Then every
+Huffman weight tree whose multiset of leaf weights is $W$ has weighted external path length at
+least $c$.
 
 ## Depends on
 
 - [Huffman Weight Tree](huffman-weight-tree.md)
-- [Merge Trace](merge-trace.md)
-- [Path Cost](path-cost.md)
-- [Weights](weights.md)
+- [Two-minimum merge trace](merge-trace.md)
+- [Weighted external path length of a Huffman weight tree](path-cost.md)
+- [Multiset of leaf weights](weights.md)
 
 ## Proof depends on
 
-- [Contract Least Pair](contract-least-pair.md)
+- [Contracting the two least weights](contract-least-pair.md)
 
 ## Sources
 

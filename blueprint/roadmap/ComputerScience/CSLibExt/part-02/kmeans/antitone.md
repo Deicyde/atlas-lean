@@ -12,13 +12,13 @@ lean: Cslib.MachineLearning.KMeans.IsRun.antitone
 
 ## Depends on
 
-- [Is Run](is-run.md)
-- [Cost](cost.md)
+- [Run of Lloyd's algorithm](is-run.md)
+- [The k-means cost](cost.md)
 
 ## Proof depends on
 
-- [Nearest](nearest.md)
-- [Centers](centers.md)
+- [Nearest-center assignment](nearest.md)
+- [The centroid update step](centers.md)
 - [One round of Lloyd's algorithm never increases the cost](cost-lloyd-le.md)
 
 ## Sources

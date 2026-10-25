@@ -23,7 +23,7 @@ theorem patienceLength_eq_length_longestIncreasingSubsequence (xs : List α) :
 
 ## Proof depends on
 
-- [Lower Bound](../../../part-02/search/lower-bound/lower-bound.md)
+- [Lower-bound search](../../../part-02/search/lower-bound/lower-bound.md)
 
 ## Sources
 

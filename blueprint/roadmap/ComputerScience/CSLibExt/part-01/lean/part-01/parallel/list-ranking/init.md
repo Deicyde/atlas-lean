@@ -5,13 +5,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.ListRanking.init
 ---
 
-# Init
+# Initial state of pointer jumping
 
-The initial state: pointers are the successors, distances `1` (or `0` at the end).
+**Initial state of pointer jumping.** For a successor map $\mathrm{succ}$ on the nodes
+$0, \dots, n-1$, where $\mathrm{succ}(v)$ is either a node or undefined (at the end of a list), the
+initial pointer-jumping state gives each node $v$ the pointer $\mathrm{succ}(v)$ and the distance
+$0$ if $\mathrm{succ}(v)$ is undefined and $1$ otherwise.
 
 ## Depends on
 
-- [State](state.md)
+- [Pointer-jumping state for list ranking](state.md)
 
 ## Sources
 

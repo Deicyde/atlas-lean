@@ -10,22 +10,22 @@ navigation: module
 
 ## Array
 
-- [Mk Prefix Table size](mk-prefix-table-size.md)
-- [Mk Prefix Table symbols](mk-prefix-table-symbols.md)
+- [Size of the KMP prefix table](mk-prefix-table-size.md)
+- [The KMP prefix table stores the pattern](mk-prefix-table-symbols.md)
 
 ## Time M
 
-- [Kmp Search eq some iff](kmp-search-eq-some-iff.md)
-- [Kmp Search eq none iff](kmp-search-eq-none-iff.md)
-- [Kmp Search eq none iff not is Infix](kmp-search-eq-none-iff-not-is-infix.md)
-- [Kmp Search eq drop Infix? map length](kmp-search-eq-drop-infix-map-length.md)
-- [Kmp Search time le](kmp-search-time-le.md)
+- [KMP returns the first match](kmp-search-eq-some-iff.md)
+- [KMP finds no match exactly when no offset matches](kmp-search-eq-none-iff.md)
+- [KMP finds no match exactly when the pattern does not occur](kmp-search-eq-none-iff-not-is-infix.md)
+- [KMP search agrees with the first-infix split](kmp-search-eq-drop-infix-map-length.md)
+- [KMP search makes linearly many comparisons](kmp-search-time-le.md)
 
 ## Array
 
-- [Mk Prefix Table failure spec](mk-prefix-table-failure-spec.md)
-- [Mk Prefix Table step spec](mk-prefix-table-step-spec.md)
+- [The KMP failure function](mk-prefix-table-failure-spec.md)
+- [Correctness of the KMP transition](mk-prefix-table-step-spec.md)
 
 ## Time M
 
-- [Kmp Search nil pattern](kmp-search-nil-pattern.md)
+- [KMP search on the empty pattern](kmp-search-nil-pattern.md)

@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.totalWeight
 ---
 
-# Total Weight
+# Total weight of a Kruskal edge list
 
-Sum of edge weights, counting parallel edge occurrences separately.
+**Total weight of a Kruskal edge list.** The total weight of a list of validated edges is the
+sum of the weights of its entries, each entry counted once, so parallel edges and repeated
+entries each contribute their weight.
 
 ## Depends on
 
-- [Weighted Edge](weighted-edge.md)
+- [Weighted edge](weighted-edge.md)
 
 ## Sources
 

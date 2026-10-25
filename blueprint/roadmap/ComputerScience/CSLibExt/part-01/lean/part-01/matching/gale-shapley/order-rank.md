@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.orderRank
 ---
 
-# Order Rank
+# Rank under a strict total order
 
-The rank of `a` under a strict total order: the number of elements preferred to it.
+**Rank under a strict total order.** For a strict total order $<$ on $\{0, \dots, n-1\}$, the
+rank of an element $a$ is the number of elements $b$ with $b < a$ (the elements preferred to $a$),
+as an element of $\{0, \dots, n-1\}$.
 
 ## Depends on
 

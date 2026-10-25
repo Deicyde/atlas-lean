@@ -13,12 +13,12 @@ every input over every linear order.
 
 ## Depends on
 
-- [Network](network.md)
-- [Sorts](sorts.md)
+- [Comparator network](network.md)
+- [Networks that sort](sorts.md)
 
 ## Proof depends on
 
-- [Run](run.md)
+- [Running a comparator network](run.md)
 - [Networks commute with monotone maps](run-comp.md)
 
 ## Sources

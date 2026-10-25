@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.MachineLearning.WeightedMajority.weights_append
 ---
 
-# Weights append
+# Weights over a concatenated run
 
-The weights after `rs ++ rs'` are the weights after `rs'`, started from those after `rs`.
+**Weights over a concatenated run.** For a penalty factor $\beta$ in a field $K$, initial
+weights $w$ in $K$ and sequences of rounds $\rho$ and $\rho'$, the weights after running $\rho$
+followed by $\rho'$ from $w$ equal the weights after running $\rho'$ from the weights obtained by
+running $\rho$ from $w$.
 
 ## Depends on
 
-- [Round](round.md)
-- [Weights](weights.md)
+- [Round of prediction with expert advice](round.md)
+- [Weights after a run](weights.md)
 
 ## Proof depends on
 
-- [Update](update.md)
+- [Weighted majority update](update.md)
 
 ## Sources
 

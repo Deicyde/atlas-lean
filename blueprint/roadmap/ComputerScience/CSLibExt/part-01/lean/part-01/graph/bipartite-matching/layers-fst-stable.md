@@ -12,11 +12,11 @@ The left layers are stable after `a` rounds.
 
 ## Depends on
 
-- [Layers](layers.md)
+- [Alternating breadth-first layers](layers.md)
 
 ## Proof depends on
 
-- [Layers fst eq of eq](layers-fst-eq-of-eq.md)
+- [The left layers stop growing once two consecutive ones agree](layers-fst-eq-of-eq.md)
 
 ## Sources
 

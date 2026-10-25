@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.udeg_eq_of_perm
 ---
 
-# Udeg eq of perm
+# Degrees depend only on the unordered edges
 
-Degrees depend only on the edges as unordered pairs.
+**Degrees depend only on the unordered edges.** Let $A$ and $B$ be finite lists of edges of an
+undirected multigraph such that the multiset of edges of $A$, taken as unordered pairs, equals that
+of $B$. Then every vertex has the same degree in $A$ as in $B$.
 
 ## Depends on
 
-- [Udeg](udeg.md)
-- [Usym](usym.md)
+- [Degree in an undirected edge list](udeg.md)
+- [Unordered edge of an ordered pair](usym.md)
 
 ## Proof depends on
 
-- [Ends At](ends-at.md)
+- [Multiplicity of a vertex in an unordered edge](ends-at.md)
 
 ## Sources
 

@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.Crypto.PublicKey.RSA.pow_eq_self_of_modEq
 ---
 
-# Fermat
+# Fermat's little theorem with exponents congruent to one
 
-**Fermat**: in `ZMod p` for a prime `p`, `x ^ k = x` for every `x` when `k ≥ 1` and
-`k ≡ 1 [MOD p - 1]`.
+**Fermat's little theorem with exponents congruent to one.** Let $p$ be a prime and let
+$k \ge 1$ be a natural number with $k \equiv 1 \pmod{p - 1}$. Then $x^k = x$ for every
+$x \in \mathbb{Z}/p\mathbb{Z}$.
 
 ## Depends on
 

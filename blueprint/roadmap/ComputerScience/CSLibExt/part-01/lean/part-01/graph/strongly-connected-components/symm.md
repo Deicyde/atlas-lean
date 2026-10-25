@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.StronglyConnectedComponents.StronglyConnected.symm
 ---
 
-# Symm
+# Strong connectivity is symmetric
 
-Strong connectivity is symmetric.
+**Strong connectivity is symmetric.** In a directed graph $G$, if $u$ is strongly connected to
+$v$, then $v$ is strongly connected to $u$.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 - [Strongly Connected](strongly-connected.md)
 
 ## Proof depends on
 
-- [Reachable](../directed-adjacency-2/reachable.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 
 ## Sources
 

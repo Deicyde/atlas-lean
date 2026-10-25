@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Algorithms.SAT.TwoSAT.eq_or_eq_of_length_le_two
 ---
 
-# Eq or eq of length le two
+# Clauses with at most two literals
 
-In a clause with at most two literals, two different members are all of its members.
+**Clauses with at most two literals.** In a clause with at most two literals, any two different
+members $a$ and $b$ are all of its members: every member $c$ of the clause equals $a$ or $b$.
 
 ## Depends on
 

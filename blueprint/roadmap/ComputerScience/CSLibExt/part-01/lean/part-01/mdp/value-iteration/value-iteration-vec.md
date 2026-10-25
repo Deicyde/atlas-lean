@@ -12,11 +12,11 @@ update `k + 1` reads the stored values of update `k`.
 
 ## Depends on
 
-- [MDP](mdp.md)
+- [Markov decision process](mdp.md)
 
 ## Proof depends on
 
-- [Bellman](bellman.md)
+- [Bellman optimality operator](bellman.md)
 
 ## Sources
 

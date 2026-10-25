@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.slowAPSP_ret
 ---
 
-# Slow APSP ret
+# SLOW-APSP returns a min-plus matrix power
 
-The saved matrix after all phases is `L0 * W^(n-1)`.
+**SLOW-APSP returns a min-plus matrix power.** For $n \times n$ matrices $W$ and $L^{(0)}$ over
+the min-plus semiring on $\mathbb{Z} \cup \{\infty\}$, in which addition is $\min$ and
+multiplication is $+$, the matrix returned by SLOW-APSP on $W$ and $L^{(0)}$ equals the
+min-plus matrix product $L^{(0)} W^{n-1}$.
 
 ## Depends on
 
-- [Slow APSP](slow-apsp.md)
+- [Slow all-pairs shortest paths (SLOW-APSP)](slow-apsp.md)
 
 ## Proof depends on
 
-- [Copy Cells](../../../matrix/assignments/copy-cells.md)
-- [Copy Cells ret](../../../matrix/assignments/copy-cells-ret.md)
-- [Fill Cells](../../../matrix/assignments/fill-cells.md)
-- [Fill Cells ret](../../../matrix/assignments/fill-cells-ret.md)
-- [Matrix Accumulate](../../../matrix/multiply/matrix-accumulate.md)
-- [Matrix Accumulate ret](../../../matrix/multiply/matrix-accumulate-ret.md)
+- [Counted copy of a square matrix](../../../matrix/assignments/copy-cells.md)
+- [The counted matrix copy returns its input](../../../matrix/assignments/copy-cells-ret.md)
+- [Counted zero initialization of a square matrix](../../../matrix/assignments/fill-cells.md)
+- [The counted zero initialization returns the zero matrix](../../../matrix/assignments/fill-cells-ret.md)
+- [Square matrix accumulation](../../../matrix/multiply/matrix-accumulate.md)
+- [Square matrix accumulation computes $C + AB$](../../../matrix/multiply/matrix-accumulate-ret.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.roundWork_eq_card
 ---
 
-# Round Work eq card
+# The work of a round counts its combining positions
 
-Round `k` combines exactly at the positions `2 ^ k ≤ i < n`.
+**The work of a round counts its combining positions.** For natural numbers $n$ and $k$, the
+work of round $k$ on $n$ positions equals the number of positions $i$ with $2^k \le i < n$.
 
 ## Depends on
 
-- [Round Work](round-work.md)
+- [Work of a scan round](round-work.md)
 
 ## Sources
 

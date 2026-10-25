@@ -6,19 +6,28 @@ proof: formalized
 lean: Cslib.MachineLearning.Sampling.eq_of_firstStep
 ---
 
-# Eq of first Step
+# Uniqueness for the first-step equation of rejection sampling
 
-The same conclusion from the first-step equation: the output law `out` of the loop satisfies
-`out x = P(x, accepted) + P(reject) * out x`, and `p` is its only finite solution.
+**Uniqueness for the first-step equation of rejection sampling.** Let $p$ and $q$ be
+probability mass functions on $\alpha$ and $M \in [0, \infty]$ with $M \ne 0$, $M \ne \infty$ and
+$p(y) \le M\,q(y)$ for all $y \in \alpha$. For one round of rejection sampling for target $p$,
+proposal $q$ and envelope $M$, write $P(x, \mathrm{accepted})$ for the probability that the round
+proposes $x$ and accepts it, and $r$ for the sum over $y \in \alpha$ of the probabilities that it
+proposes $y$ and rejects it. If $f \colon \alpha \to [0, \infty]$ takes only finite values and
+satisfies $f(x) = P(x, \mathrm{accepted}) + r \, f(x)$ for every $x \in \alpha$, then $f(x) = p(x)$
+for every $x \in \alpha$.
+
+The law of the output of the loop that repeats independent rounds until one accepts satisfies this
+first-step equation, so this result identifies that law as $p$.
 
 ## Depends on
 
-- [Trial](trial.md)
+- [One round of rejection sampling](trial.md)
 
 ## Proof depends on
 
-- [Trial apply true](trial-apply-true.md)
-- [Tsum trial false add](tsum-trial-false-add.md)
+- [Probability that a round proposes and accepts a given point](trial-apply-true.md)
+- [Probability that a round rejects](tsum-trial-false-add.md)
 
 ## Sources
 

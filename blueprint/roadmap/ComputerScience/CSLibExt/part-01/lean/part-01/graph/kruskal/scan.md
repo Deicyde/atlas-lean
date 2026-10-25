@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.scan
 ---
 
-# Scan
+# Scanning a list of edges
 
-Process a list of already ordered edges.
+**Scanning a list of edges.** Starting from a Kruskal scan state $s$, scanning a list of
+validated edges $e_1, \dots, e_k$ applies one Kruskal step to each edge in list order: the scan
+of the empty list returns $s$, and the scan of $e_1, \dots, e_k$ is the scan of $e_2, \dots, e_k$
+from the state obtained by processing $e_1$ in $s$.
 
 ## Depends on
 
-- [State](state.md)
-- [Weighted Edge](weighted-edge.md)
+- [Kruskal scan state](state.md)
+- [Weighted edge](weighted-edge.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [One Kruskal step](step.md)
 
 ## Sources
 

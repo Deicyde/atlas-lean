@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OfflineCaching.CacheEvent.request
 ---
 
-# Request
+# Page served by a cache event
 
-The page an event serves.
+**Page served by a cache event.** The page served by a cache event is the page it requests,
+whether the event is a hit or a miss.
 
 ## Depends on
 
-- [Cache Event](cache-event.md)
+- [Cache events](cache-event.md)
 
 ## Sources
 

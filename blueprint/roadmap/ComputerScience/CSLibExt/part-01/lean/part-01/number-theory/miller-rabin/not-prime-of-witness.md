@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MillerRabin.not_prime_of_witness
 ---
 
-# Not prime of witness
+# A Miller–Rabin witness in range proves compositeness
 
-A witness proves compositeness.
+**A Miller–Rabin witness in range proves compositeness.** Let $n$ and $a$ be natural numbers
+with $0 < a < n$. If the witness test reports $a$ as a witness to the compositeness of $n$, then
+$n$ is not prime.
 
 ## Depends on
 
-- [Witness](witness.md)
+- [Miller–Rabin witness test](witness.md)
 
 ## Proof depends on
 
-- [Witness eq false of prime](witness-eq-false-of-prime.md)
+- [A prime has no Miller–Rabin witnesses in range](witness-eq-false-of-prime.md)
 
 ## Sources
 

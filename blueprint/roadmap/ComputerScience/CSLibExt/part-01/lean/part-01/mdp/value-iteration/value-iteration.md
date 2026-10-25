@@ -12,11 +12,11 @@ directly recomputes earlier iterates; `valueIterationVec` is the tabulated progr
 
 ## Depends on
 
-- [MDP](mdp.md)
+- [Markov decision process](mdp.md)
 
 ## Proof depends on
 
-- [Bellman](bellman.md)
+- [Bellman optimality operator](bellman.md)
 
 ## Sources
 

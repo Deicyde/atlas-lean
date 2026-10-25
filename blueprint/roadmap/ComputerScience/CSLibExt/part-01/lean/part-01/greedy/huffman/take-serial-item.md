@@ -7,17 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.takeSerial?_item
 ---
 
-# Take Serial? item
+# Removing a serial removes one work item from the forest
 
-Taking a serial removes exactly the work item stored at that index.
+**Removing a serial removes one work item from the forest.** Let $t$ be a table of optional
+Huffman work items, and call the list of work items present in a table its work forest. If
+removing serial number $s$ from $t$ succeeds and returns a tree $T$ and an updated table $t'$,
+then there is a work item $w$ with tree $T$ and serial number $s$ such that $w$ followed by the
+work forest of $t'$ is a permutation of the work forest of $t$.
 
 ## Depends on
 
-- [Huffman Priority](huffman-priority.md)
-- [Huffman Tree](huffman-tree.md)
-- [Huffman Work Item](huffman-work-item.md)
-- [Huffman Table Forest](huffman-table-forest.md)
-- [Take Serial?](take-serial.md)
+- [Huffman priority](huffman-priority.md)
+- [Huffman tree](huffman-tree.md)
+- [Huffman work item](huffman-work-item.md)
+- [Work forest of a table](huffman-table-forest.md)
+- [Removing a work item by serial](take-serial.md)
 
 ## Sources
 

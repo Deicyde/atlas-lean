@@ -6,19 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.OddEven.runN_finalLayer
 ---
 
-# Run N final Layer
+# Output of the last layer of the odd-even merger
 
-The last layer puts the minimum of wires `2 i + 1`, `2 i + 2` on the first and the maximum on
-the second, for `i < 2 ^ (k + 1) - 1`; other wires are untouched.
+**Output of the last layer of the odd-even merger.** Let $\alpha$ be a linearly ordered type,
+$k \in \mathbb{N}$ and $f : \mathbb{N} \to \alpha$ an assignment of values to the wires. Running
+the final layer for $k$ on $f$ gives at a wire $x$ the value $\min(f(x), f(x + 1))$ if $x$ is
+odd and $\lfloor x / 2 \rfloor < 2^{k+1} - 1$; otherwise the value $\max(f(x - 1), f(x))$ if
+$x$ is even, $x > 0$ and $(x - 2) / 2 < 2^{k+1} - 1$; and the value $f(x)$ in all other cases.
+In other words, for each $i < 2^{k+1} - 1$ wire $2i + 1$ receives the minimum and wire $2i + 2$
+the maximum of the values of $f$ on these two wires, and every other wire keeps its value.
 
 ## Depends on
 
-- [Run N](../bitonic/run-n.md)
-- [Final Layer](final-layer.md)
+- [Running a comparator network](../bitonic/run-n.md)
+- [Last layer of the odd-even merger](final-layer.md)
 
 ## Proof depends on
 
-- [Cmp](../bitonic/cmp.md)
+- [Comparator on natural-number-indexed wires](../bitonic/cmp.md)
 
 ## Sources
 

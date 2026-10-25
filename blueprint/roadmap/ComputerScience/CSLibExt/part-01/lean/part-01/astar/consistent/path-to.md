@@ -19,8 +19,8 @@ source is not reached within $n$ steps.
 
 ## Proof depends on
 
-- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
-- [Path To?](../../graph/shortest-path/dijkstra/path-to.md)
+- [Output of Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Path recovery from Dijkstra predecessors](../../graph/shortest-path/dijkstra/path-to.md)
 
 ## Sources
 

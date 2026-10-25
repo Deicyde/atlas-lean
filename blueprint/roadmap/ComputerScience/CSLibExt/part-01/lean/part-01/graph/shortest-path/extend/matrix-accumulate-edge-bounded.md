@@ -7,22 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.matrixAccumulate_edgeBounded
 ---
 
-# Matrix Accumulate edge Bounded
+# One min-plus multiplication extends shortest paths by one edge
 
-With a zero diagonal and a previous at-most-`r`-edge distance matrix,
-the actual infinity-initialized min-plus run returns at-most-`r+1`-edge
-shortest weights. This includes repeated walks and signed edge weights.
+**One min-plus multiplication extends shortest paths by one edge.** Let $A$ and $B$ be
+$n \times n$ matrices with entries in $\mathbb{Z} \cup \{\infty\}$, viewed in the min-plus
+semiring, and let $r$ be a natural number. Suppose that $B_{jj} = 0$ for every $j$, and that for
+all $i$ and $j$ the entry $A_{ij}$ is the shortest weight of a path from $i$ to $j$ with at most
+$r$ edges for the weight matrix $B$. Then for all $i$ and $j$, the entry $(i, j)$ of the matrix
+returned by the matrix accumulator on $A$, $B$ and the accumulator whose entries are all $\infty$
+is the shortest weight of a path from $i$ to $j$ with at most $r + 1$ edges for the weight
+matrix $B$.
+
+Paths may repeat vertices and edge weights may be negative.
 
 ## Depends on
 
-- [Is Edge Bounded Shortest Path Weight](is-edge-bounded-shortest-path-weight.md)
-- [Matrix Accumulate](../../../matrix/multiply/matrix-accumulate.md)
+- [Shortest path weight with at most $r$ edges](is-edge-bounded-shortest-path-weight.md)
+- [Square matrix accumulation](../../../matrix/multiply/matrix-accumulate.md)
 
 ## Proof depends on
 
-- [Is Weighted Path](../floyd-warshall/basic/is-weighted-path.md)
-- [Path Weight](../floyd-warshall/basic/path-weight.md)
-- [Matrix Accumulate min Plus apply](matrix-accumulate-min-plus-apply.md)
+- [Finite-weight vertex path in a weight matrix](../floyd-warshall/basic/is-weighted-path.md)
+- [Weight of a vertex path in an extended-integer weight matrix](../floyd-warshall/basic/path-weight.md)
+- [Entries of the min-plus matrix accumulator](matrix-accumulate-min-plus-apply.md)
 
 ## Sources
 

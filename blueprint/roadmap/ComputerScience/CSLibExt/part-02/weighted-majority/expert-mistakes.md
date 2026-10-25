@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.MachineLearning.WeightedMajority.expertMistakes
 ---
 
-# Expert Mistakes
+# Mistakes of an expert
 
-The mistakes of expert `i`.
+**Mistakes of an expert.** Given a list of rounds with $n$ experts and an expert $i$, the
+number of mistakes of $i$ is the number of rounds in the list in which the advice of expert $i$
+differs from the true outcome.
 
 ## Depends on
 
-- [Round](round.md)
+- [Round of prediction with expert advice](round.md)
 
 ## Sources
 

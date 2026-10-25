@@ -4,10 +4,10 @@ navigation: module
 
 # Modular Linear Equation
 
-- [Modular Linear Equation Solver](modular-linear-equation-solver.md)
-- [Modular Linear Equation Solver ret](modular-linear-equation-solver-ret.md)
-- [Modular Linear Equation Solver mem iff](modular-linear-equation-solver-mem-iff.md)
-- [Modular Linear Equation Solver nodup](modular-linear-equation-solver-nodup.md)
-- [Modular Linear Equation Solver length](modular-linear-equation-solver-length.md)
-- [Modular Linear Equation Solver empty iff](modular-linear-equation-solver-empty-iff.md)
-- [Modular Linear Equation Solver time bounds](modular-linear-equation-solver-time-boun.md)
+- [Modular linear equation solver](modular-linear-equation-solver.md)
+- [Output of the modular linear equation solver](modular-linear-equation-solver-ret.md)
+- [The solver returns exactly the solutions below $n$](modular-linear-equation-solver-mem-iff.md)
+- [The solver returns no repeated residues](modular-linear-equation-solver-nodup.md)
+- [Number of residues returned by the solver](modular-linear-equation-solver-length.md)
+- [The solver returns nothing exactly when $\gcd(a, n) \nmid b$](modular-linear-equation-solver-empty-iff.md)
+- [Cost bounds for the modular linear equation solver](modular-linear-equation-solver-time-boun.md)

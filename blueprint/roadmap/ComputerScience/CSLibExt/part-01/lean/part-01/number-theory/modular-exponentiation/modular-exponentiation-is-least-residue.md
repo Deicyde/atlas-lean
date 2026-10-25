@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_is_leastResidue
 ---
 
-# Modular Exponentiation is least Residue
+# Modular exponentiation returns the least residue
 
-The modular-power equality and least-residue range for positive exponents.
+**Modular exponentiation returns the least residue.** For natural numbers $a$, $b$, $n$ with
+$b > 0$ and $n > 0$, the value $r$ returned by modular exponentiation on base $a$, exponent $b$
+and modulus $n$ satisfies $r = a^b \bmod n$ and $r < n$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation correct](modular-exponentiation-correct.md)
-- [Modular Exponentiation lt](modular-exponentiation-lt.md)
+- [Correctness of modular exponentiation](modular-exponentiation-correct.md)
+- [Modular exponentiation returns a value below the modulus](modular-exponentiation-lt.md)
 
 ## Sources
 

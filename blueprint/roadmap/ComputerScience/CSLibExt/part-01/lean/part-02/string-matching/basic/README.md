@@ -4,6 +4,6 @@ navigation: module
 
 # Basic
 
-- [Match At](match-at.md)
-- [Match At iff](match-at-iff.md)
-- [Exists match At iff is Infix](exists-match-at-iff-is-infix.md)
+- [Pattern match at an offset](match-at.md)
+- [Characterization of a match at an offset](match-at-iff.md)
+- [A pattern occurs in a text iff it matches at some offset](exists-match-at-iff-is-infix.md)

@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsRepeat_complete
 ---
 
-# Freivalds Repeat complete
+# Completeness of the repeated Freivalds test on fixed seeds
 
-Every supplied trial accepts a correct product, including empty histories.
+**Completeness of the repeated Freivalds test on fixed seeds.** Let $A$, $B$, $C$ be
+$n \times n$ matrices over $\mathbb{Z}/2$ with $AB = C$. Then for every $k$, including $k = 0$,
+and all seeds $r_0, \dots, r_{k-1} \in (\mathbb{Z}/2)^n$, the repeated Freivalds test on these
+seeds accepts.
 
 ## Depends on
 
-- [Freivalds Matrix](../basic/freivalds-matrix.md)
-- [Freivalds Repeat](freivalds-repeat.md)
+- [Matrix of a Freivalds input](../basic/freivalds-matrix.md)
+- [Repeated Freivalds test on fixed seeds](freivalds-repeat.md)
 
 ## Proof depends on
 
-- [Freivalds Repeat accept iff](freivalds-repeat-accept-iff.md)
-- [Freivalds Trial](../basic/freivalds-trial.md)
-- [Freivalds Trial complete](../basic/freivalds-trial-complete.md)
+- [Acceptance of the repeated Freivalds test on fixed seeds](freivalds-repeat-accept-iff.md)
+- [Freivalds trial](../basic/freivalds-trial.md)
+- [Completeness of the Freivalds trial](../basic/freivalds-trial-complete.md)
 
 ## Sources
 

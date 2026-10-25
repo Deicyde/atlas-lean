@@ -4,34 +4,34 @@ navigation: module
 
 # Basic
 
-- [Is Two CNF](is-two-cnf.md)
-- [Neg](neg.md)
-- [Eq or eq of length le two](eq-or-eq-of-length-le-two.md)
+- [2-CNF formulas](is-two-cnf.md)
+- [Complement of a literal](neg.md)
+- [Clauses with at most two literals](eq-or-eq-of-length-le-two.md)
 
 ## The implication graph on literals
 
-- [Imp Edge](imp-edge.md)
-- [Imp Reach](imp-reach.md)
-- [Skew symmetry](skew.md)
-- [Satisfies of imp Edge](satisfies-of-imp-edge.md)
+- [Implication edge](imp-edge.md)
+- [Reachability in the implication graph](imp-reach.md)
+- [Skew symmetry of the implication graph](skew.md)
+- [Satisfying assignments respect implication edges](satisfies-of-imp-edge.md)
 
 ## Resolution derivations from a 2-CNF formula
 
-- [Inv](inv.md)
-- [Exists contradictory of resolution Derivable nil](exists-contradictory-of-resolution-deriv.md)
+- [Resolution invariant of the implication graph](inv.md)
+- [Resolution refutations give contradictory cycles](exists-contradictory-of-resolution-deriv.md)
 - [2-SAT characterization](cnf-sat-iff-of-is-two-cnf.md)
 
 ## The implication graph as a finite directed graph, and the SCC decision procedure
 
-- [Lit](lit.md)
-- [Neg](neg-2.md)
-- [Var List](var-list.md)
-- [Lit List](lit-list.md)
-- [Successors](successors.md)
-- [Adjacency Table](adjacency-table.md)
-- [Implication Graph](implication-graph.md)
-- [Mem vars of imp Edge](mem-vars-of-imp-edge.md)
-- [Implication Graph reachable iff](implication-graph-reachable-iff.md)
-- [Decide2 SAT](decide2-sat.md)
-- [Mem vars of imp Reach true false](mem-vars-of-imp-reach-true-false.md)
+- [Literals over the variables of a formula](lit.md)
+- [Complement of a literal over a formula](neg-2.md)
+- [Duplicate-free list of the variables of a CNF formula](var-list.md)
+- [List of the literals of a CNF formula](lit-list.md)
+- [Successors in the implication graph](successors.md)
+- [Adjacency table of the implication graph](adjacency-table.md)
+- [Implication graph as a finite directed graph](implication-graph.md)
+- [Implication edges end over variables of the formula](mem-vars-of-imp-edge.md)
+- [Reachability in the finite implication graph](implication-graph-reachable-iff.md)
+- [SCC-based 2-SAT decision procedure](decide2-sat.md)
+- [A positive literal reaching its complement lies over a variable of the formula](mem-vars-of-imp-reach-true-false.md)
 - [Correctness of the SCC-based 2-SAT procedure](decide2-sat-eq-true-iff.md)

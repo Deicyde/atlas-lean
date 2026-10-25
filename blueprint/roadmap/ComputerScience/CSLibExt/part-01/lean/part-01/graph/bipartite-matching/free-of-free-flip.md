@@ -6,27 +6,31 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.free_of_free_flip
 ---
 
-# Free of free flip
+# A phase leaves no new unmatched left vertex
 
-A left vertex unmatched after a phase was unmatched before it: the first pair of each path
-starts at an unmatched right vertex, and every other right vertex of a path had the previous left
-vertex as partner, which the phase rematches.
+**A phase leaves no new unmatched left vertex.** Let $\mu$ be a valid partner array (a
+matching of the graph) whose first free round is defined, equal to some $d$. If a left vertex $i$
+is unmatched in the flip of $\mu$ along the concatenation of all the paths of the phase of $\mu$,
+then $i$ is unmatched in $\mu$.
+
+The first pair of each path starts at an unmatched right vertex, and every other right vertex of a
+path had the previous left vertex as partner, which the phase rematches.
 
 ## Depends on
 
-- [Free](free.md)
-- [Valid](valid.md)
-- [First Free Round](first-free-round.md)
-- [Flip](flip.md)
-- [Phase](phase.md)
+- [Unmatched left vertex](free.md)
+- [Partner arrays that describe a matching](valid.md)
+- [First free round](first-free-round.md)
+- [Flipping a list of pairs](flip.md)
+- [Hopcroft–Karp phase](phase.md)
 
 ## Proof depends on
 
-- [Alt Path](alt-path.md)
+- [Alternating path](alt-path.md)
 - [Is Augmenting Path](is-augmenting-path.md)
-- [Layers](layers.md)
-- [Phase Aux](phase-aux.md)
-- [Phase Aux spec](phase-aux-spec.md)
+- [Alternating breadth-first layers](layers.md)
+- [Phase search over candidates](phase-aux.md)
+- [Phase paths are disjoint augmenting paths](phase-aux-spec.md)
 
 ## Sources
 

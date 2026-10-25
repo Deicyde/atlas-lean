@@ -7,18 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.partition3_countP_eq_below
 ---
 
-# Partition3 count P eq below
+# Counting through the below block
 
-Predicate counts survive partitioning when both other parts contribute zero.
+**Counting through the below block.** Let $L$ be a list over a linear order, let $p$ be an
+element, let $q$ be a Boolean predicate on the elements, and let $B$, $E$, $A$ be the blocks of
+entries below, equal to and above $p$ in the three-way partition of $L$ around $p$. If $q$ is
+false on every entry of $E$ and on every entry of $A$, then the number of entries of $L$
+satisfying $q$ equals the number of entries of $B$ satisfying $q$, both counted with
+multiplicity.
 
 ## Depends on
 
-- [Three Way Partition](../../sort/partition/three-way-partition.md)
-- [Partition3](../../sort/partition/partition3.md)
+- [Three-way partition record](../../sort/partition/three-way-partition.md)
+- [Stable three-way partition](../../sort/partition/partition3.md)
 
 ## Proof depends on
 
-- [Partition3 correct](../../sort/partition/partition3-correct.md)
+- [Correctness of the stable three-way partition](../../sort/partition/partition3-correct.md)
 
 ## Sources
 

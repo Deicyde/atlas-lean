@@ -8,28 +8,31 @@ lean: Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound_hopcroftKarpAux
 
 # Each phase lengthens the shortest augmenting paths
 
-**Each phase lengthens the shortest augmenting paths.** After `f` phases from a matching whose
-`firstFreeRound` is at least `c`, the `firstFreeRound` is at least `c + f` (or there is none).
+**Each phase lengthens the shortest augmenting paths.** Let $\mu$ be a valid partner array
+and $c$ a natural number such that the first free round of $\mu$, if defined, is at least $c$.
+For every natural number $f$, running at most $f$ Hopcroft–Karp phases from $\mu$, stopping
+early when a phase finds no path, gives a valid partner array whose first free round, if
+defined, is at least $c + f$.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [First Free Round](first-free-round.md)
-- [Hopcroft Karp Aux](hopcroft-karp-aux.md)
+- [Partner arrays that describe a matching](valid.md)
+- [First free round](first-free-round.md)
+- [Hopcroft–Karp phase loop](hopcroft-karp-aux.md)
 
 ## Proof depends on
 
-- [First Free Round eq none](first-free-round-eq-none.md)
-- [Flip](flip.md)
-- [Hk Step](hk-step.md)
-- [Hk Step none](hk-step-none.md)
-- [Hk Step some](hk-step-some.md)
-- [Hopcroft Karp Aux of hk Step none](hopcroft-karp-aux-of-hk-step-none.md)
-- [Layers](layers.md)
+- [When there is no first free round](first-free-round-eq-none.md)
+- [Flipping a list of pairs](flip.md)
+- [Hopcroft–Karp step](hk-step.md)
+- [A Hopcroft–Karp step that finds nothing](hk-step-none.md)
+- [A successful Hopcroft–Karp step grows the matching](hk-step-some.md)
+- [The phase loop stops when a step finds nothing](hopcroft-karp-aux-of-hk-step-none.md)
+- [Alternating breadth-first layers](layers.md)
 - [The next phase's paths are strictly longer](lt-first-free-round-flip-phase.md)
-- [Matched](matched.md)
-- [Phase](phase.md)
-- [Phase Aux](phase-aux.md)
+- [Matched right vertices](matched.md)
+- [Hopcroft–Karp phase](phase.md)
+- [Phase search over candidates](phase-aux.md)
 
 ## Sources
 

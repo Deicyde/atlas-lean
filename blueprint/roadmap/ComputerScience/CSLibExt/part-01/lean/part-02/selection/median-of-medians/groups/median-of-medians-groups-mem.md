@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.medianOfMediansGroups_mem
 ---
 
-# Median Of Medians Groups mem
+# Group medians come from the input
 
-Every returned group median is an occurrence from the original input.
+**Group medians come from the input.** For every list $xs$ over a linear order, every
+entry of the list of group medians of $xs$ is an element of $xs$.
 
 ## Depends on
 
-- [Median Of Medians Groups](median-of-medians-groups.md)
+- [Group medians for median-of-medians selection](median-of-medians-groups.md)
 
 ## Proof depends on
 
-- [Insertion Sort](../../../sort/insertion-cost/insertion-sort.md)
-- [Insertion Sort perm](../../../sort/insertion-cost/insertion-sort-perm.md)
+- [Insertion sort with comparison cost](../../../sort/insertion-cost/insertion-sort.md)
+- [Insertion sort permutes its input](../../../sort/insertion-cost/insertion-sort-perm.md)
 
 ## Sources
 

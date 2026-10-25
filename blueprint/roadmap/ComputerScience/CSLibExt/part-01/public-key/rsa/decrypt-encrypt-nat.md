@@ -6,21 +6,21 @@ proof: formalized
 lean: Cslib.Crypto.PublicKey.RSA.Key.decrypt_encrypt_nat
 ---
 
-# Correctness of textbook RSA
+# Correctness of textbook RSA on natural numbers
 
-**Correctness of textbook RSA** on natural numbers: for `m < n`,
-`(m ^ e mod n) ^ d mod n = m`.
+**Correctness of textbook RSA on natural numbers.** For an RSA key with modulus $n = pq$ and
+exponents $e$, $d$, every natural number $m < n$ satisfies $(m^e \bmod n)^d \bmod n = m$.
 
 ## Depends on
 
-- [Key](key.md)
-- [N](n.md)
+- [RSA key](key.md)
+- [RSA modulus](n.md)
 
 ## Proof depends on
 
-- [Decrypt](decrypt.md)
+- [RSA decryption](decrypt.md)
 - [Correctness of textbook RSA](decrypt-encrypt.md)
-- [Encrypt](encrypt.md)
+- [RSA encryption](encrypt.md)
 
 ## Sources
 

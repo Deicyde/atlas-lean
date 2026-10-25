@@ -18,7 +18,7 @@ $(g^k, r, rx + k)$ is accepted, that is, $g^{rx + k} (y^r)^{-1} = g^k$.
 
 - [Schnorr verifier's acceptance condition](accepts.md)
 - [Schnorr prover's response](respond.md)
-- [Gpow](../../public-key/diffie-hellman/gpow.md)
+- [Group exponentiation with modular exponents](../../public-key/diffie-hellman/gpow.md)
 
 ## Sources
 

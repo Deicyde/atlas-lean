@@ -4,22 +4,22 @@ navigation: module
 
 # Miller Rabin
 
-- [Two Adic Split](two-adic-split.md)
-- [Witness Loop](witness-loop.md)
-- [Witness](witness.md)
-- [Miller Rabin](miller-rabin.md)
+- [Splitting off the power of two](two-adic-split.md)
+- [The Miller–Rabin squaring loop](witness-loop.md)
+- [Miller–Rabin witness test](witness.md)
+- [The Miller–Rabin test](miller-rabin.md)
 
 ## Cost
 
-- [Witness Loop time le](witness-loop-time-le.md)
-- [Witness time le](witness-time-le.md)
+- [The Miller–Rabin test](witness-loop-time-le.md)
+- [Cost of the Miller–Rabin witness test](witness-time-le.md)
 
 ## Correctness
 
-- [Witness Loop eq false](witness-loop-eq-false.md)
-- [Witness eq false of prime](witness-eq-false-of-prime.md)
-- [Not prime of witness](not-prime-of-witness.md)
-- [Miller Rabin of prime](miller-rabin-of-prime.md)
-- [Not prime of miller Rabin eq false](not-prime-of-miller-rabin-eq-false.md)
-- [Witness Loop eq true](witness-loop-eq-true.md)
-- [Witness of pow ne one](witness-of-pow-ne-one.md)
+- [The squaring loop modulo a prime finds no witness when it ends at 1](witness-loop-eq-false.md)
+- [A prime has no Miller–Rabin witnesses in range](witness-eq-false-of-prime.md)
+- [A Miller–Rabin witness in range proves compositeness](not-prime-of-witness.md)
+- [The Miller–Rabin test never rejects a prime when its bases lie in range](miller-rabin-of-prime.md)
+- [With bases in range, a composite answer of the Miller–Rabin test is correct](not-prime-of-miller-rabin-eq-false.md)
+- [The squaring loop reports a witness when it does not end at 1](witness-loop-eq-true.md)
+- [Fermat witnesses are Miller–Rabin witnesses](witness-of-pow-ne-one.md)

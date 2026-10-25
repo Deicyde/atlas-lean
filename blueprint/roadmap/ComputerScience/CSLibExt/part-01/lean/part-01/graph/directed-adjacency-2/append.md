@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.Walk.append
 ---
 
-# Append
+# Concatenation of walks
 
-Exact walks concatenate and their lengths add.
+**Concatenation of walks.** Let $G$ be a directed adjacency graph on $V$ and let
+$s, m, t \in V$. If $G$ has a walk of length exactly $a$ from $s$ to $m$ and a walk of length
+exactly $b$ from $m$ to $t$, then $G$ has a walk of length exactly $a + b$ from $s$ to $t$.
 
 ## Depends on
 
-- [Directed Adjacency](directed-adjacency.md)
-- [Walk](walk.md)
+- [Directed adjacency graph](directed-adjacency.md)
+- [Walks of a given length](walk.md)
 
 ## Proof depends on
 
-- [Edge](edge.md)
+- [Edge of a directed adjacency graph](edge.md)
 
 ## Sources
 

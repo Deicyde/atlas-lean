@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GraphicMatroid.kruskal_isBase
 ---
 
-# Kruskal is Base
+# Kruskal's algorithm returns a maximal forest
 
-If the order lists exactly the edges of `G`, the result is a maximal forest of `G` (a base of
-the graphic matroid).
+**Kruskal's algorithm returns a maximal forest.** Let $G$ be a simple graph on a finite vertex
+set and let $L$ be a list of unordered pairs of vertices such that a pair is an edge of $G$ if and
+only if it occurs in $L$. Then the matroid greedy algorithm run with the forest oracle of $G$ on
+$L$ returns a base of the graphic matroid of $G$, that is, a maximal forest of $G$.
 
 ## Depends on
 
-- [Forest Oracle](forest-oracle.md)
-- [Graphic Matroid](graphic-matroid.md)
-- [Matroid Greedy](../matroid-greedy/matroid-greedy.md)
+- [Forest oracle](forest-oracle.md)
+- [Graphic matroid](graphic-matroid.md)
+- [Greedy algorithm on a matroid](../matroid-greedy/matroid-greedy.md)
 
 ## Proof depends on
 
-- [Forest Oracle iff](forest-oracle-iff.md)
-- [Matroid Greedy is Base](../matroid-greedy/matroid-greedy-is-base.md)
+- [The forest oracle decides graphic-matroid independence](forest-oracle-iff.md)
+- [The matroid greedy result is a base](../matroid-greedy/matroid-greedy-is-base.md)
 
 ## Sources
 

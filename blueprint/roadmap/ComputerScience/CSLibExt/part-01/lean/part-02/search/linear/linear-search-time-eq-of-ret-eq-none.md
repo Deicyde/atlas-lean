@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.linearSearch_time_eq_of_ret_eq_none
 ---
 
-# Linear Search time eq of ret eq none
+# Cost of an unsuccessful linear search
 
-An unsuccessful search evaluates the predicate once for every list element.
+**Cost of an unsuccessful linear search.** For every predicate $p$ on a type $\alpha$ and
+every list $L$ over $\alpha$, if linear search for $p$ on $L$ returns no index, then its cost is
+the length of $L$: it evaluates $p$ once for every element of $L$.
 
 ## Depends on
 
-- [Linear Search](linear-search.md)
+- [Linear search](linear-search.md)
 
 ## Proof depends on
 
-- [Linear Search time cons](linear-search-time-cons.md)
-- [Ret linear Search](ret-linear-search.md)
+- [Cost recurrence for linear search](linear-search-time-cons.md)
+- [Linear search returns the first satisfying index](ret-linear-search.md)
 
 ## Sources
 

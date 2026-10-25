@@ -8,26 +8,27 @@ lean: Cslib.Algorithms.Lean.Parallel.Brent.levelSchedule_length
 
 # Brent's theorem
 
-**Brent's theorem**: on `p ≥ 1` processors the level schedule takes `T` steps with
-`p T ≤ n + (p - 1) D`, i.e. `T ≤ (n - D) / p + D` for work `n` and span `D`.
+**Brent's theorem.** Let $G$ be a computation DAG with $n$ tasks and span $D$, and let
+$p \ge 1$. If Brent's level schedule of $G$ on $p$ processors takes $T$ steps, then
+$pT \le n + (p - 1) D$, that is, $T \le (n - D)/p + D$.
 
 ## Depends on
 
-- [Dag](dag.md)
-- [Length](length.md)
+- [Computation DAG](dag.md)
+- [Length of a schedule](length.md)
 - [Brent's level schedule](level-schedule.md)
-- [Span](span.md)
+- [Span of a computation DAG](span.md)
 
 ## Proof depends on
 
 - [Schedule](schedule.md)
-- [Depth](depth.md)
-- [Level Card](level-card.md)
-- [Level Card zero](level-card-zero.md)
-- [Level Steps](level-steps.md)
-- [Level Time](level-time.md)
-- [Offset](offset.md)
-- [Rank](rank.md)
+- [Depth of a task in a computation DAG](depth.md)
+- [Level size](level-card.md)
+- [Level $0$ is empty](level-card-zero.md)
+- [Steps of a level](level-steps.md)
+- [Step of a task in Brent's schedule](level-time.md)
+- [First step of a level](offset.md)
+- [Rank within a level](rank.md)
 
 ## Sources
 

@@ -20,14 +20,14 @@ $f = g + h$ shifted by $h(s)$.
 ## Depends on
 
 - [Output of A-star search](astar-result.md)
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
 
 ## Proof depends on
 
 - [Reduced weight](reduced-weight.md)
-- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
-- [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
+- [Output of Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Dense Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra.md)
 
 ## Sources
 

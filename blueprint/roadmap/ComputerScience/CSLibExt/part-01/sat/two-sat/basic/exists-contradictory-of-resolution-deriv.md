@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.SAT.TwoSAT.exists_contradictory_of_resolutionDerivable_nil
 ---
 
-# Exists contradictory of resolution Derivable nil
+# Resolution refutations give contradictory cycles
 
-A resolution refutation of a formula without the empty clause yields a variable `x`
-with `x` and `¬x` reaching each other.
+**Resolution refutations give contradictory cycles.** If a CNF formula $\varphi$ does not
+contain the empty clause and the empty clause is derivable from $\varphi$ by resolution, then
+there is a variable $x$ such that the literals $x$ and $\neg x$ reach each other in the
+implication graph of $\varphi$.
 
 ## Depends on
 
-- [Imp Reach](imp-reach.md)
+- [Reachability in the implication graph](imp-reach.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Resolution Derivable](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolution-derivable.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Imp Edge](imp-edge.md)
-- [Skew symmetry](skew.md)
-- [Inv](inv.md)
-- [Neg](neg.md)
+- [Implication edge](imp-edge.md)
+- [Skew symmetry of the implication graph](skew.md)
+- [Resolution invariant of the implication graph](inv.md)
+- [Complement of a literal](neg.md)
 - [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
 
 ## Sources

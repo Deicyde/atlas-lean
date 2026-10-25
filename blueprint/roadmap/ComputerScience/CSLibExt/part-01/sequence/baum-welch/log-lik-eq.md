@@ -6,18 +6,24 @@ proof: formalized
 lean: Cslib.MachineLearning.Sequence.BaumWelch.logLik_eq
 ---
 
-# Log Lik eq
+# The Baum-Welch log-likelihood is the HMM log-likelihood
 
-The EM log-likelihood is the sum of the HMM log-likelihoods of the sequences.
+**The Baum-Welch log-likelihood is the HMM log-likelihood.** Let $S$ and $O$ be finite sets,
+let $T$ be a natural number, and let $x_1, \dots, x_N$ be sequences
+$x_n = (x_{n,0}, x_{n,1}, \dots)$ of observations in $O$. For every valid hidden Markov model $h$
+on states $S$ and observations $O$, the log-likelihood of its EM model (latent state paths
+$(z_0, \dots, z_T)$, joint the path weight) on these data equals $\sum_{n=1}^{N} \log L_h(x_n)$,
+where $L_h(x_n)$ is the likelihood of the observations $x_{n,0}, \dots, x_{n,T}$ under $h$: the
+total path weight over all state paths $(z_0, \dots, z_T)$.
 
 ## Depends on
 
 - [Log-likelihood of a latent-variable model](../../latent-variable/expectation-maximization/log-lik.md)
-- [Valid](valid.md)
-- [Valid HMM](valid-hmm.md)
-- [Joint](joint.md)
-- [HMM](../hidden-markov/hmm.md)
-- [Likelihood](../hidden-markov/likelihood.md)
+- [Valid hidden Markov model parameters](valid.md)
+- [Valid HMMs](valid-hmm.md)
+- [The EM model of a hidden Markov model](joint.md)
+- [Hidden Markov model](../hidden-markov/hmm.md)
+- [Likelihood of the observations](../hidden-markov/likelihood.md)
 
 ## Sources
 

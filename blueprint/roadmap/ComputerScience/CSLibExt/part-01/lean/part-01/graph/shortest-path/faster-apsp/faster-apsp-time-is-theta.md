@@ -7,17 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.fasterAPSP_time_isTheta
 ---
 
-# Complexity
+# Asymptotic operation count of FASTER-APSP
 
-The total selected event count of this execution family is Θ(n³ log n).
+**Asymptotic operation count of FASTER-APSP.** Let $\alpha$ be a type with addition,
+multiplication and zero, and for each $n$ let $W_n$ be an $n \times n$ matrix over $\alpha$. The
+total number of copy and fill assignments, scalar additions and scalar multiplications that
+FASTER-APSP performs on $W_n$ is $\Theta(n^3 \log n)$ as $n \to \infty$.
 
 ## Depends on
 
-- [Faster APSP](basic/faster-apsp.md)
+- [FASTER-APSP](basic/faster-apsp.md)
 
 ## Proof depends on
 
-- [Faster APSP time](basic/faster-apsp-time.md)
+- [Operation counts of FASTER-APSP](basic/faster-apsp-time.md)
 
 ## Sources
 

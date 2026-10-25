@@ -4,6 +4,6 @@ navigation: module
 
 # Quick
 
-- [Quick Sort](quick-sort.md)
-- [Quick Sort correct](quick-sort-correct.md)
-- [Quick Sort time](quick-sort-time.md)
+- [Quicksort](quick-sort.md)
+- [Correctness of quicksort](quick-sort-correct.md)
+- [Worst-case comparison bound for quicksort](quick-sort-time.md)

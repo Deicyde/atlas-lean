@@ -15,15 +15,15 @@ by round `k + 1` cover every edge.
 
 ## Depends on
 
-- [Is Matching](is-matching.md)
-- [Valid](valid.md)
-- [Layers](layers.md)
-- [Pairs](pairs.md)
+- [Matching in a bipartite graph](is-matching.md)
+- [Partner arrays that describe a matching](valid.md)
+- [Alternating breadth-first layers](layers.md)
+- [Matched pairs of a partner assignment](pairs.md)
 
 ## Proof depends on
 
-- [Free](free.md)
-- [Mem layers snd of mate](mem-layers-snd-of-mate.md)
+- [Unmatched left vertex](free.md)
+- [A matched right vertex is reached no later than its partner](mem-layers-snd-of-mate.md)
 
 ## Sources
 

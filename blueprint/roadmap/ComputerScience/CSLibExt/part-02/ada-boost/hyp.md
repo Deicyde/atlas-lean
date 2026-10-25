@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.MachineLearning.AdaBoost.hyp
 ---
 
-# Hyp
+# Weak hypothesis of an AdaBoost round
 
-The weak hypothesis of round `t`.
+**Weak hypothesis of an AdaBoost round.** The weak hypothesis $h_t$ of round $t$ is the weak
+learner's output $\mathrm{wl}(D_t)$ on the weights $D_t$ of round $t$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dist](dist.md)
+- [AdaBoost's weights](dist.md)
 
 ## Sources
 

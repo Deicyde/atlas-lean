@@ -13,15 +13,15 @@ trace serving the same requests.
 
 ## Depends on
 
-- [Cache Event](cache-event.md)
-- [Request](request.md)
-- [Cache LTS](cache-lts.md)
-- [Furthest In Future](furthest-in-future.md)
-- [Misses](misses.md)
+- [Cache events](cache-event.md)
+- [Page served by a cache event](request.md)
+- [Legal cache transitions](cache-lts.md)
+- [Furthest-in-future caching](furthest-in-future.md)
+- [Number of misses in a trace](misses.md)
 
 ## Proof depends on
 
-- [Furthest In Future min misses](furthest-in-future-min-misses.md)
+- [Optimality of furthest-in-future caching](furthest-in-future-min-misses.md)
 
 ## Sources
 

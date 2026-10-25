@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.EdmondsKarp.shortestPath_eq_none_iff_not_reachable
 ---
 
-# Shortest Path eq none iff not reachable
+# The shortest-path search fails exactly when the sink is unreachable
 
-No returned path is equivalent to absence of residual reachability.
+**The shortest-path search fails exactly when the sink is unreachable.** Let $G$ be a finite
+directed graph on the vertices $\{0, \dots, n - 1\}$ and let $s$ and $t$ be vertices. The
+breadth-first shortest-path search in $G$ from $s$ to $t$ returns no path if and only if $t$ is not
+reachable from $s$ in $G$.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
-- [Shortest Path](shortest-path.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
+- [Shortest path via breadth-first search](shortest-path.md)
 
 ## Proof depends on
 
-- [Shortest Path present iff reachable](shortest-path-present-iff-reachable.md)
+- [The shortest-path search succeeds exactly when the sink is reachable](shortest-path-present-iff-reachable.md)
 
 ## Sources
 

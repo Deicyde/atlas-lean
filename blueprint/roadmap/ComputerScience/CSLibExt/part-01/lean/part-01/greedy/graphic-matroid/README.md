@@ -6,31 +6,31 @@ navigation: module
 
 ## Deleting a bridge adds one component
 
-- [Card connected Component delete Edges of not reachable](card-connected-component-delete-edges-of.md)
+- [Deleting a bridge adds one component](card-connected-component-delete-edges-of.md)
 
 ## Forests: edges plus components equal vertices
 
-- [Ncard edge Set add card connected Component](ncard-edge-set-add-card-connected-compon.md)
+- [Edges plus components of a forest](ncard-edge-set-add-card-connected-compon.md)
 
 ## Augmentation
 
-- [Exists insert is Acyclic](exists-insert-is-acyclic.md)
+- [Augmentation property of forests](exists-insert-is-acyclic.md)
 
 ## The graphic matroid
 
-- [Is Forest Set](is-forest-set.md)
-- [Graphic Matroid](graphic-matroid.md)
+- [Forests of a graph](is-forest-set.md)
+- [Graphic matroid](graphic-matroid.md)
 
 ## An executable independence oracle
 
 - [Chosen](chosen.md)
-- [Bridge In](bridge-in.md)
-- [Bridge In iff](bridge-in-iff.md)
-- [Forest Oracle](forest-oracle.md)
-- [Forest Oracle iff](forest-oracle-iff.md)
+- [Bridge test for an edge set](bridge-in.md)
+- [Characterization of the bridge test](bridge-in-iff.md)
+- [Forest oracle](forest-oracle.md)
+- [The forest oracle decides graphic-matroid independence](forest-oracle-iff.md)
 
 ## Kruskal's algorithm as matroid greedy
 
-- [Kruskal is Forest](kruskal-is-forest.md)
-- [Kruskal optimal](kruskal-optimal.md)
-- [Kruskal is Base](kruskal-is-base.md)
+- [Kruskal's algorithm returns a forest](kruskal-is-forest.md)
+- [Optimality of Kruskal's algorithm](kruskal-optimal.md)
+- [Kruskal's algorithm returns a maximal forest](kruskal-is-base.md)

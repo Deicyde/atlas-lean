@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Unification.Subst
 ---
 
-# Subst
+# Substitution
 
-Substitutions: every variable is mapped to a term.
+**Substitution.** A substitution is a map assigning a term to every variable, that is, a
+function from the set $\mathbb{N}$ of variables to terms.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Term](term.md)
+- [Terms for unification](term.md)
 
 ## Sources
 

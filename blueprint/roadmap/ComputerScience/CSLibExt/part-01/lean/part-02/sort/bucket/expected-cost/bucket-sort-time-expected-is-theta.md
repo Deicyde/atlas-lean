@@ -7,18 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_expected_isTheta
 ---
 
-# Bucket Sort time expected is Theta
+# Bucket sort runs in expected linear time
 
-The actual continuous expected saved-bucket execution time is Theta of input size.
+**Bucket sort runs in expected linear time.** For each $n$, let
+$\omega = (\omega_0, \dots, \omega_{n-1})$ have independent coordinates, each uniformly
+distributed on $[0, 1)$. Let $T_n(\omega)$ be the number of time steps that bucket sort charges
+on the array $(\omega_0, \dots, \omega_{n-1})$ if every $\omega_j$ lies in $[0, 1)$, and
+$T_n(\omega) = 0$ otherwise. Then $\mathbb{E}[T_n] = \Theta(n)$ as $n \to \infty$.
 
 ## Depends on
 
-- [Bucket Sort](../basic/bucket-sort.md)
+- [Bucket sort](../basic/bucket-sort.md)
 
 ## Proof depends on
 
-- [Bucket Sort time expected lower](bucket-sort-time-expected-lower.md)
-- [Bucket Sort time expected upper](bucket-sort-time-expected-upper.md)
+- [Lower bound on the expected time of bucket sort](bucket-sort-time-expected-lower.md)
+- [Upper bound on the expected time of bucket sort](bucket-sort-time-expected-upper.md)
 
 ## Sources
 

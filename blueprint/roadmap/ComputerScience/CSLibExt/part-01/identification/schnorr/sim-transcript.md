@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gpow](../../public-key/diffie-hellman/gpow.md)
+- [Group exponentiation with modular exponents](../../public-key/diffie-hellman/gpow.md)
 
 ## Sources
 

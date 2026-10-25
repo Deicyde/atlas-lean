@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution_eq_map_uniform
 ---
 
-# Randomly Permute Distribution eq map uniform
+# Fisher–Yates produces a uniformly random permutation
 
-The actual ideal-oracle computation is the pushforward of the canonical uniform
-position permutation. This equation retains the saved vector and the exact same-run cost.
+**Fisher–Yates produces a uniformly random permutation.** Let $x = (x_0, \dots, x_{n-1})$ be a
+vector and let $\sigma$ be a permutation of $\{0, \dots, n - 1\}$ chosen uniformly at random. Then
+the Fisher–Yates output distribution of $x$ equals the distribution of the outcome consisting of
+the vector $(x_{\sigma(0)}, \dots, x_{\sigma(n-1)})$ with cost pair $(n, n)$.
 
 ## Depends on
 
-- [Randomly Permute Distribution](randomly-permute-distribution.md)
+- [Output distribution of the Fisher–Yates shuffle](randomly-permute-distribution.md)
 
 ## Proof depends on
 
-- [Randomly Permute](../basic/randomly-permute.md)
-- [Randomly Permute time](../basic/randomly-permute-time.md)
+- [Fisher–Yates shuffle with supplied draws](../basic/randomly-permute.md)
+- [Cost of the Fisher–Yates shuffle](../basic/randomly-permute-time.md)
 
 ## Sources
 

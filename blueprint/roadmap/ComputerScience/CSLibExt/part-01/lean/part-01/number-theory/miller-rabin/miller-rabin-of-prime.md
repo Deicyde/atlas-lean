@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MillerRabin.millerRabin_of_prime
 ---
 
-# Miller Rabin of prime
+# The Miller–Rabin test never rejects a prime when its bases lie in range
 
-On a prime, `MILLER-RABIN` answers *prime* for every list of bases in `1, …, n - 1`.
+**The Miller–Rabin test never rejects a prime when its bases lie in range.** Let $n$ be a
+prime. For every list of bases $a_1, \dots, a_s$ (possibly empty) with $0 < a_i < n$ for each
+$i$, the Miller–Rabin test run on $n$ with these bases answers *prime*.
 
 ## Depends on
 
-- [Miller Rabin](miller-rabin.md)
+- [The Miller–Rabin test](miller-rabin.md)
 
 ## Proof depends on
 
-- [Witness](witness.md)
-- [Witness eq false of prime](witness-eq-false-of-prime.md)
+- [Miller–Rabin witness test](witness.md)
+- [A prime has no Miller–Rabin witnesses in range](witness-eq-false-of-prime.md)
 
 ## Sources
 

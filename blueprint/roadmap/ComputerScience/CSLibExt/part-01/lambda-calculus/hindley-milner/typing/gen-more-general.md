@@ -27,10 +27,10 @@ general than the generalization of $\tau$ with respect to $\Gamma$.
 - [Evaluation of a type scheme](eval.md)
 - [Instantiation of a type scheme](inst.md)
 - [Monotypes as type schemes](to-scheme.md)
-- [Term](../../../../part-02/unification/basic/term.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
-- [Subst congr](../../../../part-02/unification/basic/subst-congr.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
+- [Substitution depends only on the variables of the term](../../../../part-02/unification/basic/subst-congr.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
 
 ## Sources
 

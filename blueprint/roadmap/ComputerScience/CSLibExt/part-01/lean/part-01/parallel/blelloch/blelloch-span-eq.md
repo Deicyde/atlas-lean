@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.blellochSpan_eq
 ---
 
-# Blelloch Span eq
+# Blelloch's scan has logarithmic span
 
-The span is `2 k = 2 log₂ n`.
+**Blelloch's scan has logarithmic span.** For every natural number $k$, the span of
+Blelloch's scan on $n = 2^k$ positions is $2k = 2 \log_2 n$.
 
 ## Depends on
 
-- [Blelloch Span](blelloch-span.md)
+- [Parallel steps of Blelloch's scan](blelloch-span.md)
 
 ## Sources
 

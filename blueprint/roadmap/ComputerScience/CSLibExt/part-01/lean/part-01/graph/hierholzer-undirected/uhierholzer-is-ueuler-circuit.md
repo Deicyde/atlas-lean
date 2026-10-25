@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.uhierholzer_isUEulerCircuit
 ---
 
-# Euler circuits
+# Hierholzer's algorithm finds Euler circuits
 
-**Euler circuits.** If every degree is even and every edge starts at a vertex reachable from
-`s`, the result is an Euler circuit from `s`.
+**Hierholzer's algorithm finds Euler circuits.** Let $E$ be a list of undirected edges
+(ordered pairs of vertices) in which every vertex has even degree, and let $s$ be a vertex such
+that the first endpoint of every edge of $E$ is reachable from $s$ through edges of $E$. Then the
+vertex sequence returned by the undirected Hierholzer algorithm on $E$ from $s$ is an Euler path
+of $E$ from $s$ to $s$, that is, an Euler circuit at $s$.
 
 ## Depends on
 
-- [Is UEuler Path](is-ueuler-path.md)
-- [UReach](ureach.md)
-- [Udeg](udeg.md)
-- [Uhierholzer](uhierholzer.md)
+- [Euler path in an undirected multigraph](is-ueuler-path.md)
+- [Reachability in an undirected multigraph](ureach.md)
+- [Degree in an undirected edge list](udeg.md)
+- [Undirected Hierholzer's algorithm](uhierholzer.md)
 
 ## Proof depends on
 
-- [Euler paths](uhierholzer-is-ueuler-path.md)
+- [Hierholzer's algorithm finds Euler paths](uhierholzer-is-ueuler-path.md)
 
 ## Sources
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.levelCard
 ---
 
-# Level Card
+# Level size
 
-The number of tasks at depth `d`.
+**Level size.** For a computation DAG and a natural number $d$, the size of level $d$ is the
+number of tasks of depth $d$.
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 
 ## Proof depends on
 
-- [Depth](depth.md)
+- [Depth of a task in a computation DAG](depth.md)
 
 ## Sources
 

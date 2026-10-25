@@ -14,15 +14,15 @@ lean: Cslib.Algorithms.Lean.AStar.admissible_of_consistent
 
 - [Admissible heuristic](admissible.md)
 - [Consistent heuristic](consistent.md)
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
 - [Path Weight reduced Weight](path-weight-reduced-weight.md)
 - [Reduced weight](reduced-weight.md)
-- [Edge](../../graph/directed-adjacency-2/edge.md)
-- [Has Path Weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
-- [Path Weight](../../graph/shortest-path/dijkstra/path-weight.md)
+- [Edge of a directed adjacency graph](../../graph/directed-adjacency-2/edge.md)
+- [Walks of a given weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
+- [Endpoint-weight sum along a vertex list](../../graph/shortest-path/dijkstra/path-weight.md)
 
 ## Sources
 

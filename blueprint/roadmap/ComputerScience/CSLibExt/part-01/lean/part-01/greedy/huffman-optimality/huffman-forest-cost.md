@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.huffmanForestCost
 ---
 
-# Huffman Forest Cost
+# Cost of a Huffman work forest
 
-Sum of the already-incurred subtree costs in a work forest.
+**Cost of a Huffman work forest.** The cost of a list of Huffman work items is the real
+number obtained by summing, over the items in the list, the weighted path length of each item's
+tree.
 
 ## Depends on
 
-- [Huffman Work Item](../huffman/huffman-work-item.md)
+- [Huffman work item](../huffman/huffman-work-item.md)
 
 ## Proof depends on
 
-- [Huffman Tree](../huffman/huffman-tree.md)
-- [Weighted Path Length](../huffman/weighted-path-length.md)
+- [Huffman tree](../huffman/huffman-tree.md)
+- [Weighted path length](../huffman/weighted-path-length.md)
 
 ## Sources
 

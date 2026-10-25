@@ -4,12 +4,12 @@ navigation: module
 
 # Erase Edge
 
-- [Erase Edge](erase-edge.md)
-- [Vertices erase Edge](vertices-erase-edge.md)
-- [Adjacency erase Edge source](adjacency-erase-edge-source.md)
-- [Adjacency erase Edge of ne](adjacency-erase-edge-of-ne.md)
-- [Edge erase Edge](edge-erase-edge.md)
-- [Has Edge erase Edge self](has-edge-erase-edge-self.md)
-- [Erase Edge idempotent](erase-edge-idempotent.md)
-- [Walk erase Edge imp](walk-erase-edge-imp.md)
-- [Reachable erase Edge imp](reachable-erase-edge-imp.md)
+- [Erasing a directed edge](erase-edge.md)
+- [Erasing an edge keeps the vertex enumeration](vertices-erase-edge.md)
+- [Out-neighbours of the source after erasing an edge](adjacency-erase-edge-source.md)
+- [Erasing an edge leaves the other out-neighbour lists unchanged](adjacency-erase-edge-of-ne.md)
+- [Edges after erasing an edge](edge-erase-edge.md)
+- [The erased edge is absent](has-edge-erase-edge-self.md)
+- [Erasing an edge twice gives the same out-neighbour lists](erase-edge-idempotent.md)
+- [Walks after erasing an edge are walks in the original graph](walk-erase-edge-imp.md)
+- [Reachability after erasing an edge implies reachability in the original graph](reachable-erase-edge-imp.md)

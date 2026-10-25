@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MarkovDecision.eq_policyValue_of_policyBellman_eq
 ---
 
-# Eq policy Value of policy Bellman eq
+# Uniqueness of the solution of a policy's Bellman equation
 
-The value of a policy is the only solution of the policy's Bellman equation.
+**Uniqueness of the solution of a policy's Bellman equation.** Let $M$ be a Markov decision
+process with finitely many states, real rewards and stochastic transition probabilities, let
+$0 \le \gamma < 1$, and let $\pi$ be a deterministic stationary policy, a map from states to
+actions. If a real-valued function $V$ on the states satisfies $T_\pi V = V$, where $T_\pi$ is the
+Bellman operator of $\pi$ in $M$ with discount $\gamma$, then $V$ is the value of $\pi$.
 
 ## Depends on
 
-- [MDP](mdp.md)
-- [Stochastic](stochastic.md)
-- [Policy Bellman](policy-bellman.md)
-- [Policy Value](policy-value.md)
+- [Markov decision process](mdp.md)
+- [Stochastic Markov decision process](stochastic.md)
+- [Bellman operator of a policy](policy-bellman.md)
+- [Value of a policy](policy-value.md)
 
 ## Proof depends on
 
-- [Q Value](q-value.md)
+- [Q-value of an action](q-value.md)
 
 ## Sources
 

@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.linearSearch_eq_none_iff
 ---
 
-# Linear Search eq none iff
+# Linear search fails exactly when no element satisfies the predicate
 
-Search fails exactly when no list element satisfies the predicate.
+**Linear search fails exactly when no element satisfies the predicate.** For every predicate
+$p$ on a type $\alpha$ and every list $L$ over $\alpha$, linear search for $p$ on $L$ returns no
+index if and only if $p(x)$ is false for every element $x$ of $L$.
 
 ## Depends on
 
-- [Linear Search](linear-search.md)
+- [Linear search](linear-search.md)
 
 ## Proof depends on
 
-- [Ret linear Search](ret-linear-search.md)
+- [Linear search returns the first satisfying index](ret-linear-search.md)
 
 ## Sources
 

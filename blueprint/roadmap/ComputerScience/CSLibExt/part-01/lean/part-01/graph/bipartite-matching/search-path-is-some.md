@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.searchPath_isSome
 ---
 
-# Search Path is Some
+# Searches from reached vertices succeed when nothing is used or dead
 
-With no vertex used or dead, `searchPath` finds a path from every reached right vertex.
+**Searches from reached vertices succeed when nothing is used or dead.** If the partner array
+describes a matching, then for every $k$ and every right vertex $j$ reached within $k + 1$ rounds
+of the alternating breadth-first search, the search at level $k$ from $j$, with no left vertex
+used and no right vertex dead, finds a path.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Layers](layers.md)
-- [Search Path](search-path.md)
+- [Partner arrays that describe a matching](valid.md)
+- [Alternating breadth-first layers](layers.md)
+- [Depth-first search of a Hopcroft–Karp phase](search-path.md)
 
 ## Proof depends on
 
-- [Free](free.md)
-- [Exists mate of mem layers](exists-mate-of-mem-layers.md)
-- [Partner Of](partner-of.md)
-- [Try Preds](try-preds.md)
-- [Try Preds is Some](try-preds-is-some.md)
+- [Unmatched left vertex](free.md)
+- [Matched reached left vertices are reached through a partner](exists-mate-of-mem-layers.md)
+- [Partner of a left vertex](partner-of.md)
+- [Trying the candidate predecessors of a right vertex](try-preds.md)
+- [When trying candidates finds a path](try-preds-is-some.md)
 
 ## Sources
 

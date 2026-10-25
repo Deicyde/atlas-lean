@@ -17,7 +17,7 @@ has type $\alpha \to \alpha$ in $\Gamma$.
 - [Typing context](ctx.md)
 - [Expressions of the λ-calculus with let](expr.md)
 - [Hindley–Milner typing](has-type.md)
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Proof depends on
 
@@ -30,7 +30,7 @@ has type $\alpha \to \alpha$ in $\Gamma$.
 - [Strict upper bound of a finite set of naturals](above.md)
 - [Generalization of a monotype](gen.md)
 - [Monotypes as type schemes](to-scheme.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Sources
 

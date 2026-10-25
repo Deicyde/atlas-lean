@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TransitiveClosure.transitiveClosure_cell_eq_true_iff
 ---
 
-# Transitive Closure cell eq true iff
+# Correctness of the transitive-closure algorithm
 
-The returned Boolean is true exactly for canonical reflexive-transitive reachability.
+**Correctness of the transitive-closure algorithm.** Let $A$ be a Boolean adjacency matrix
+of a directed graph on the vertices $0, \dots, n-1$. For all vertices $i$ and $j$, the entry
+$(i, j)$ of the matrix returned by the transitive-closure algorithm on $A$ is true if and only if
+$j$ is reachable from $i$ by a sequence of zero or more edges of the graph.
 
 ## Depends on
 
-- [Transitive Closure](transitive-closure.md)
+- [Saved-matrix transitive-closure algorithm](transitive-closure.md)
 
 ## Proof depends on
 
-- [Internal Vertices Below](../shortest-path/floyd-warshall/basic/internal-vertices-below.md)
-- [Transitive Closure Stages](transitive-closure-stages.md)
-- [Transitive Closure Stages cell eq true iff](transitive-closure-stages-cell-eq-true-i.md)
+- [Intermediate vertices below a bound](../shortest-path/floyd-warshall/basic/internal-vertices-below.md)
+- [Staged transitive-closure computation](transitive-closure-stages.md)
+- [Invariant of the transitive-closure stages](transitive-closure-stages-cell-eq-true-i.md)
 
 ## Sources
 

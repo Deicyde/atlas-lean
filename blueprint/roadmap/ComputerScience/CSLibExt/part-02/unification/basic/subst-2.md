@@ -5,14 +5,17 @@ statement: formalized
 lean: Cslib.Unification.Term.subst
 ---
 
-# Subst
+# Applying a substitution to a term
 
-Apply a substitution to every variable of a term.
+**Applying a substitution to a term.** For a substitution $\sigma$ and a term $t$, the term
+$t\sigma$ is obtained from $t$ by replacing every variable $x$ by $\sigma(x)$: a variable $x$
+becomes $\sigma(x)$, a constant is unchanged, and a node with subterms $l$ and $r$ becomes the
+node with subterms $l\sigma$ and $r\sigma$.
 
 ## Depends on
 
-- [Subst](subst.md)
-- [Term](term.md)
+- [Substitution](subst.md)
+- [Terms for unification](term.md)
 
 ## Sources
 

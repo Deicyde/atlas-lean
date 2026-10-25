@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Databases.IsSuperkey
 ---
 
-# Is Superkey
+# Superkey
 
-`K` is a superkey: it determines every attribute.
+**Superkey.** Let $F$ be a finite set of functional dependencies over a finite set of
+attributes $A$. A set of attributes $K$ is a superkey for $F$ when the dependency $K \to A$ is
+derivable from $F$ with Armstrong's axioms, that is, $K$ determines every attribute.
 
 ## Depends on
 
-- [FD](fd.md)
+- [Functional dependency](fd.md)
 
 ## Proof depends on
 
-- [Derives](derives.md)
+- [Derivability with Armstrong's axioms](derives.md)
 
 ## Sources
 

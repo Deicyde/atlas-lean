@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.length_bitonicSorter
 ---
 
-# Length bitonic Sorter
+# Comparator count of Batcher's bitonic sorter
 
-The bitonic sorter on `2 ^ k` wires has `k (k + 1) 2 ^ k / 4` comparators.
+**Comparator count of Batcher's bitonic sorter.** For every natural number $k$, Batcher's
+bitonic sorting network on $2^k$ wires has $k(k+1)2^k/4$ comparators; precisely, four times its
+number of comparators equals $k(k+1)2^k$.
 
 ## Depends on
 
-- [Bitonic Sorter](bitonic-sorter.md)
+- [Batcher's bitonic sorting network](bitonic-sorter.md)
 
 ## Proof depends on
 
-- [Within](within.md)
-- [Bitonic Merge](bitonic-merge.md)
-- [Bitonic Sort N](bitonic-sort-n.md)
-- [Half Cleaner](half-cleaner.md)
-- [Length bitonic Sort N](length-bitonic-sort-n.md)
-- [Of Pairs](of-pairs.md)
-- [Network](../zero-one/network.md)
+- [Comparators within an interval](within.md)
+- [Bitonic merger](bitonic-merge.md)
+- [Batcher's bitonic sorter on a block of wires](bitonic-sort-n.md)
+- [Half-cleaner](half-cleaner.md)
+- [Size of the bitonic sorter on a block of wires](length-bitonic-sort-n.md)
+- [Restricting comparators to finitely many wires](of-pairs.md)
+- [Comparator network](../zero-one/network.md)
 
 ## Sources
 

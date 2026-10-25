@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.IsIndepSystem
 ---
 
-# Is Indep System
+# Independence system
 
-`indep` is an independence system: `∅` is independent and independence passes to subsets.
+**Independence system.** A predicate $\mathrm{indep}$ on the finite subsets of a type
+$\alpha$ is an independence system when the empty set is independent and every subset of an
+independent set is independent.
 
 ## Depends on
 

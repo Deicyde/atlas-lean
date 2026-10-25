@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Databases.IsBCNF
 ---
 
-# Is BCNF
+# Boyce–Codd normal form
 
-The scheme `S` is in **Boyce–Codd normal form** for `F`: for every dependency `X → Y`
-derivable from `F` with `X, Y ⊆ S`, either `Y ⊆ X` or `X` is a superkey of `S`.
+**Boyce–Codd normal form.** A scheme $S$ is in Boyce–Codd normal form for a set $F$ of
+functional dependencies when, for every dependency $X \to Y$ derivable from $F$ with
+$X, Y \subseteq S$, either $Y \subseteq X$ or $F$ derives $X \to S$ (that is, $X$ is a superkey of
+$S$).
 
 ## Depends on
 
-- [FD](../functional-dependencies/fd.md)
+- [Functional dependency](../functional-dependencies/fd.md)
 
 ## Proof depends on
 
-- [Derives](../functional-dependencies/derives.md)
+- [Derivability with Armstrong's axioms](../functional-dependencies/derives.md)
 
 ## Sources
 

@@ -7,25 +7,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.kruskal_isSpanningForest
 ---
 
-# Kruskal is Spanning Forest
+# Kruskal's output is a spanning forest
 
-Kruskal returns a source-contained acyclic edge list spanning every input component.
+**Kruskal's output is a spanning forest.** For every graph $G$, the edge list returned by
+Kruskal's algorithm on $G$ is a spanning forest of $G$: every edge in it is a valid edge of $G$,
+it is acyclic, and it connects the two endpoints of every valid edge of $G$.
 
 ## Depends on
 
-- [Graph](graph.md)
-- [Is Spanning Forest](is-spanning-forest.md)
-- [Kruskal](kruskal.md)
+- [Kruskal input graph](graph.md)
+- [Spanning forest of an input graph](is-spanning-forest.md)
+- [Kruskal's algorithm](kruskal.md)
 
 ## Proof depends on
 
-- [Acyclic](acyclic.md)
-- [Spans](spans.md)
-- [Weighted Edge](weighted-edge.md)
-- [Kruskal acyclic](kruskal-acyclic.md)
-- [Kruskal edge mem valid](kruskal-edge-mem-valid.md)
-- [Kruskal spans](kruskal-spans.md)
-- [Valid Edges](valid-edges.md)
+- [Acyclic edge list](acyclic.md)
+- [Edge lists spanning a graph](spans.md)
+- [Weighted edge](weighted-edge.md)
+- [Kruskal's output is acyclic](kruskal-acyclic.md)
+- [Kruskal selects only valid input edges](kruskal-edge-mem-valid.md)
+- [Kruskal's selected edges span the graph](kruskal-spans.md)
+- [Valid edges of an input graph](valid-edges.md)
 
 ## Sources
 

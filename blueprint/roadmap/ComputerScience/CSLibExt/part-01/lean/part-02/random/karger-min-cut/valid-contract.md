@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Karger.valid_contract
 ---
 
-# Valid contract
+# Contraction preserves validity and removes one vertex
 
-Contraction keeps the state valid and removes one vertex.
+**Contraction preserves validity and removes one vertex.** If a multigraph $G$ is valid and
+$e$ is one of its edges, then the contraction of $G$ along $e$ is valid and has exactly one
+vertex fewer than $G$.
 
 ## Depends on
 
-- [State](state.md)
-- [Valid](valid.md)
-- [Contract](contract.md)
+- [Multigraph state of Karger's algorithm](state.md)
+- [Valid multigraph](valid.md)
+- [Edge contraction](contract.md)
 
 ## Proof depends on
 
-- [Rename](rename.md)
+- [Renaming a vertex](rename.md)
 
 ## Sources
 

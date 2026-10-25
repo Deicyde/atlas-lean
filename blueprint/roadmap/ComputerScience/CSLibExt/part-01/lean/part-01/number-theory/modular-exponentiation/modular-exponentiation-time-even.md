@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_time_even
 ---
 
-# Modular Exponentiation time even
+# Multiplication count in the even case
 
-The even source branch adds exactly one multiplication to its child cost.
+**Multiplication count in the even case.** Let $a$, $b$ and $n$ be natural numbers with $b$
+positive and even. Modular exponentiation with base $a$, exponent $b$ and modulus $n$ performs
+exactly one more multiplication than it does with base $a$, exponent $b/2$ and modulus $n$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation even](modular-exponentiation-even.md)
+- [Even step of modular exponentiation](modular-exponentiation-even.md)
 
 ## Sources
 

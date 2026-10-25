@@ -5,12 +5,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.offlineCostFree
 ---
 
-# Offline Cost Free
+# Offline cost with free exchanges
 
-The cost of an offline algorithm with free exchanges, the model of Sleator and Tarjan: it
-serves request `t` with list `L t`, moves the accessed item forward to position `J t` for free
-(`freeMove`), and pays one per reordered pair (`inv`) to reach `L (t + 1)`. With no free moves
-this is `offlineCost` (`offlineCostFree_noMove`).
+**Offline cost with free exchanges.** Given lists $L_0, L_1, L_2, \dots$, target indices
+$J_0, J_1, J_2, \dots$ and a request sequence $\sigma = x_0 x_1 \cdots x_{m-1}$, let $L_t'$ be the
+list obtained from $L_t$ by the free exchange that moves $x_t$ forward to index $J_t$ (counting
+from $0$); it equals $L_t$ if $x_t$ already has index at most $J_t$. The offline cost with free
+exchanges of $\sigma$ is the sum over $t < m$ of the access cost of $x_t$ in $L_t$ (its position,
+counting from $1$) plus the number of inversions between $L_t'$ and $L_{t+1}$.
+
+This is the model of Sleator and Tarjan: the free exchange costs nothing, and each pair of items
+whose relative order changes from $L_t'$ to $L_{t+1}$ costs one. With no free moves it is the
+offline cost without free exchanges.
 
 ## Depends on
 
@@ -18,9 +24,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Access Cost](access-cost.md)
-- [Free Move](free-move.md)
-- [Inv](inv.md)
+- [Access cost](access-cost.md)
+- [Free move](free-move.md)
+- [Number of inversions between two lists](inv.md)
 
 ## Sources
 

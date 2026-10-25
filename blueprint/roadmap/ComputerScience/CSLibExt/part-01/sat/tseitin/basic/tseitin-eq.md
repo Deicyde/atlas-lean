@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Logic.PL.Proposition.tseitin_eq
 ---
 
-# Tseitin eq
+# The Tseitin CNF reorders the reference encoding
 
-`tseitin` is the unit clause for `A` followed by a permutation of the reference
-clauses `(tseitinAux ι A 0).2.1`.
+**The Tseitin CNF reorders the reference encoding.** For every map $\iota$ from atoms to
+natural numbers and every formula $A$, the Tseitin CNF of $A$ is the unit clause whose literal
+is the literal naming $A$ in the reference Tseitin encoding of $A$ with gates numbered from $0$,
+followed by a list of clauses that is a permutation of the defining clauses of that encoding.
 
 ## Depends on
 
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Tseitin](tseitin.md)
-- [Tseitin Aux](tseitin-aux.md)
+- [Tseitin CNF](tseitin.md)
+- [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
 
 ## Proof depends on
 
-- [Tseitin Acc](tseitin-acc.md)
-- [Tseitin Acc eq](tseitin-acc-eq.md)
+- [Linear-time Tseitin builder](tseitin-acc.md)
+- [The linear-time Tseitin builder agrees with the reference encoding](tseitin-acc-eq.md)
 
 ## Sources
 

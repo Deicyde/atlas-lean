@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bubble.passes
 ---
 
-# Passes
+# Successive bubble passes
 
-The passes ending at wires `m - 1, m - 2, …, 0`.
+**Successive bubble passes.** On $n$ wires and for a number $m$, this is the comparator
+network obtained by concatenating the bubble passes ending at wires $m - 1, m - 2, \ldots, 0$,
+in this order; for $m = 0$ it is empty.
 
 ## Depends on
 
-- [Network](../zero-one/network.md)
+- [Comparator network](../zero-one/network.md)
 
 ## Proof depends on
 
-- [Pass](pass.md)
+- [Bubble pass](pass.md)
 
 ## Sources
 

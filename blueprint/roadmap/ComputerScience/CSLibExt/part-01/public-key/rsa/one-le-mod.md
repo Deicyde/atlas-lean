@@ -6,10 +6,12 @@ proof: formalized
 lean: Cslib.Crypto.PublicKey.RSA.one_le_mod
 ---
 
-# One le mod
+# Positivity of the reduced RSA exponent
 
-The reduced exponent `d mod (p - 1)` is positive for an odd prime `p`: otherwise `p - 1`
-divides `e d`, contradicting `e d ≡ 1`.
+**Positivity of the reduced RSA exponent.** Let $p$, $e$ and $d$ be natural numbers with
+$p > 2$ and $ed \equiv 1 \pmod{p - 1}$. Then $d \bmod (p - 1) \ge 1$.
+
+Otherwise $p - 1$ divides $ed$, contradicting $ed \equiv 1 \pmod{p - 1}$.
 
 ## Depends on
 

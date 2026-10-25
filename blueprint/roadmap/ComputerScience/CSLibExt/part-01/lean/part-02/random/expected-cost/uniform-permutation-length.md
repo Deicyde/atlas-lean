@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.uniformPermutation_length
 ---
 
-# Uniform Permutation length
+# Rearrangements preserve length
 
-A permuted list has the same length as the original.
+**Rearrangements preserve length.** For a list $x$, every list in the support of the uniform
+permutation of $x$ has the same length as $x$.
 
 ## Depends on
 
-- [Uniform Permutation](uniform-permutation.md)
+- [Uniformly random rearrangement of a list](uniform-permutation.md)
 
 ## Sources
 

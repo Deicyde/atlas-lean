@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.OddEven.relabel
 ---
 
-# Relabel
+# Relabeling the wires of a comparator list
 
-Rename the wires of a comparator list by `e`.
+**Relabeling the wires of a comparator list.** Given a map $e : \mathbb{N} \to \mathbb{N}$
+and a list of comparators, each a pair $(i, j)$ of wires in $\mathbb{N}$, the relabeled list
+replaces every comparator $(i, j)$ by $(e(i), e(j))$ and keeps the order of the list.
 
 ## Depends on
 

@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.medianOfMedians_eq_pure_none_of_length_le_rank
 ---
 
-# Median Of Medians eq pure none of length le rank
+# Out-of-range ranks cost no comparisons
 
-An out-of-range rank returns immediately with zero comparison charges.
+**Out-of-range ranks cost no comparisons.** For every list $L$ over a linearly ordered type
+and every natural number $k$ at least the length of $L$, median-of-medians selection of rank $k$
+in $L$ returns nothing and is charged zero comparisons.
 
 ## Depends on
 
-- [Median Of Medians](median-of-medians.md)
+- [Median-of-medians selection](median-of-medians.md)
 
 ## Proof depends on
 
-- [Three Way Partition](../../sort/partition/three-way-partition.md)
-- [Median Of Medians Groups](../median-of-medians/groups/median-of-medians-groups.md)
-- [Partition3](../../sort/partition/partition3.md)
+- [Three-way partition record](../../sort/partition/three-way-partition.md)
+- [Group medians for median-of-medians selection](../median-of-medians/groups/median-of-medians-groups.md)
+- [Stable three-way partition](../../sort/partition/partition3.md)
 - [Quickselect](../quickselect/quickselect.md)
 
 ## Sources

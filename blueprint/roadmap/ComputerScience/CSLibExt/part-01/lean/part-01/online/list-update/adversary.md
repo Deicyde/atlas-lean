@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.OnlineListUpdate.adversary
 ---
 
-# Adversary
+# The list-update adversary
 
-The adversary: request the last item of the algorithm's current list, `n` times (`d` is a
-default item, used only if the list is empty).
+**The list-update adversary.** Given a deterministic online list-update algorithm $A$, a
+default item $d$, a number $n$ and a state $q$ of $A$, the adversary's sequence is the sequence of
+$n$ requests that starts in state $q$, always requests the last item of $A$'s current list, and
+then moves $A$ to its next state on that request. If the current list is empty, the default item
+$d$ is requested instead.
 
 ## Depends on
 

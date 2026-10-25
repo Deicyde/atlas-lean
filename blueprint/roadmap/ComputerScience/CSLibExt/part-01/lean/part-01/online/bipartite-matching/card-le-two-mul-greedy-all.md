@@ -15,13 +15,13 @@ matched by maximality; a matching charges each greedy edge at most once on each 
 
 ## Depends on
 
-- [Is Matching](../../graph/bipartite-matching/is-matching.md)
-- [Pairs](../../graph/bipartite-matching/pairs.md)
-- [Greedy All](greedy-all.md)
+- [Matching in a bipartite graph](../../graph/bipartite-matching/is-matching.md)
+- [Matched pairs of a partner assignment](../../graph/bipartite-matching/pairs.md)
+- [The greedy online matching](greedy-all.md)
 
 ## Proof depends on
 
-- [Free](../../graph/bipartite-matching/free.md)
+- [Unmatched left vertex](../../graph/bipartite-matching/free.md)
 - [The greedy matching is maximal](greedy-all-maximal.md)
 
 ## Sources

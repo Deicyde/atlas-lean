@@ -5,14 +5,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.SkiRental.cost
 ---
 
-# Cost
+# Cost of a ski-rental strategy
 
-The cost of a strategy when the season lasts `d` days: rent for `t - 1` days and buy on day
-`t` if `t ≤ d`, otherwise rent every day.
+**Cost of a ski-rental strategy.** Renting skis costs $1$ per day and buying them costs a
+natural number $B$. The cost $\mathrm{cost}_B(s, d) \in \mathbb{N}$ of a strategy $s$ for a season
+of $d \in \mathbb{N}$ days is $(t - 1) + B$ if $s$ buys on a day $t$ with $1 \le t \le d$ (rent for
+$t - 1$ days, then buy), and $d$ otherwise, that is, if $s$ rents forever or buys on a day $t$
+with $t = 0$ or $t > d$ (rent every day).
 
 ## Depends on
 
-- [Strategy](strategy.md)
+- [Deterministic ski-rental strategy](strategy.md)
 
 ## Sources
 

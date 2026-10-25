@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.MachineLearning.LeastSquares.softThreshold
 ---
 
-# Soft Threshold
+# Soft thresholding
 
-Soft thresholding at `t`: for `t ≥ 0`, shrink `z` towards `0` by `t`, and set it to `0` when
-`|z| ≤ t`.
+**Soft thresholding.** For real numbers $t$ and $z$, the soft thresholding of $z$ at $t$ is
+$S_t(z) = z - t$ if $z > t$; otherwise $S_t(z) = z + t$ if $z < -t$; and $S_t(z) = 0$ in the
+remaining case.
+
+For $t \ge 0$ this shrinks $z$ towards $0$ by $t$ and sets it to $0$ when $|z| \le t$.
 
 ## Depends on
 

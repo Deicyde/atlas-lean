@@ -7,7 +7,9 @@ lean: Cslib.MachineLearning.KMeans.centroid
 
 # Centroid
 
-The centroid of the points in `s` (the zero vector if `s` is empty).
+**Centroid.** Let $x_i$ be points in a real inner product space and $s$ a finite set of
+indices. The centroid of the points indexed by $s$ is $\frac{1}{|s|} \sum_{i \in s} x_i$; when $s$
+is empty it is the zero vector.
 
 ## Depends on
 

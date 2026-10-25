@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_expected_zero
 ---
 
-# Bucket Sort time expected zero
+# Bucket sort on the empty input has expected time zero
 
-Empty continuous input has actual expected time zero.
+**Bucket sort on the empty input has expected time zero.** Let $T$ be the number of time
+steps that bucket sort charges on the empty array, the only input of length $n = 0$. Its
+expectation under the product of zero copies of the uniform distribution on $[0, 1)$ is $0$.
 
 ## Depends on
 
-- [Bucket Sort](../basic/bucket-sort.md)
+- [Bucket sort](../basic/bucket-sort.md)
 
 ## Proof depends on
 
-- [Bucket Sort empty](../basic/bucket-sort-empty.md)
+- [Bucket sort on the empty array](../basic/bucket-sort-empty.md)
 
 ## Sources
 

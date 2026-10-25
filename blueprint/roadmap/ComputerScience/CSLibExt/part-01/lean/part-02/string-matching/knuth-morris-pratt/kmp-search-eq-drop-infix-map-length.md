@@ -7,9 +7,13 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_dropInfix?_map_length
 ---
 
-# Kmp Search eq drop Infix? map length
+# KMP search agrees with the first-infix split
 
-For a nonempty pattern, KMP agrees with the start-offset projection of `List.dropInfix?`.
+**KMP search agrees with the first-infix split.** Let $p$ and $t$ be lists over a type
+with a lawful boolean equality, with $p$ nonempty. Let the first-infix split of $t$ by $p$ be
+the pair $(u, v)$ with $t = u \, p \, v$ (concatenation) and $u$ as short as possible, or
+nothing if $p$ does not occur in $t$. Then the value returned by KMP search for $p$ in $t$ is
+the length of $u$ if the split exists, and no offset otherwise.
 
 ## Depends on
 
@@ -17,8 +21,8 @@ For a nonempty pattern, KMP agrees with the start-offset projection of `List.dro
 
 ## Proof depends on
 
-- [Match At](../basic/match-at.md)
-- [Kmp Search eq some iff](kmp-search-eq-some-iff.md)
+- [Pattern match at an offset](../basic/match-at.md)
+- [KMP returns the first match](kmp-search-eq-some-iff.md)
 
 ## Sources
 

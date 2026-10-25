@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_zero_inner
 ---
 
-# Rectangular Matrix Accumulate zero inner
+# Rectangular matrix accumulation with zero inner dimension
 
-A zero inner dimension preserves the entire incoming accumulator at zero scalar cost.
+**Rectangular matrix accumulation with zero inner dimension.** Let $\alpha$ be a type with an
+addition and a multiplication. If $A$ is a $p \times 0$ matrix, $B$ a $0 \times r$ matrix and $C$
+a $p \times r$ matrix over $\alpha$, then rectangular matrix accumulation on $A$, $B$, $C$ returns
+$C$ unchanged at cost $(0, 0)$.
 
 ## Depends on
 
-- [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)
+- [Rectangular matrix accumulation](rectangular-matrix-accumulate.md)
 
 ## Sources
 

@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.exists_le_time
 ---
 
-# Exists le time
+# Every step of a schedule has a task running at or after it
 
-Before the last step some task is still to run.
+**Every step of a schedule has a task running at or after it.** Let $S$ be a schedule of a
+computation DAG on $p$ processors taking $T$ steps, numbered from $0$. For every step $t < T$
+there is a task that $S$ runs at step $t$ or later.
 
 ## Depends on
 
-- [Dag](../brent/dag.md)
+- [Computation DAG](../brent/dag.md)
 - [Schedule](../brent/schedule.md)
-- [Length](../brent/length.md)
+- [Length of a schedule](../brent/length.md)
 
 ## Sources
 

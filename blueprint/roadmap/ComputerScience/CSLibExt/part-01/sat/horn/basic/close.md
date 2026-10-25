@@ -5,9 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Horn.close
 ---
 
-# Close
+# Forward-chaining closure
 
-The closure of `T` under forward chaining.
+**Forward-chaining closure.** For a CNF formula $\varphi$ and a finite set $T$ of
+variables, the closure of $T$ is computed by iterating the forward-chaining step of $\varphi$:
+if every variable derived from $T$ already lies in $T$, the closure is $T$; otherwise it is the
+closure of the union of $T$ with the derived variables.
+
+The iteration terminates because each step that does not stop adds a variable of $\varphi$.
 
 ## Depends on
 
@@ -15,8 +20,8 @@ The closure of `T` under forward chaining.
 
 ## Proof depends on
 
-- [Body In](body-in.md)
-- [Derive](derive.md)
+- [Body of a clause contained in a set](body-in.md)
+- [Forward-chaining step](derive.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)

@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bubble.length_pass
 ---
 
-# Length pass
+# Size of a bubble pass
 
-One pass ending at wire `m` has `m` comparators.
+**Size of a bubble pass.** On $n$ wires, for every $m < n$ the bubble pass ending at wire
+$m$ has exactly $m$ comparators.
 
 ## Depends on
 
-- [Pass](pass.md)
+- [Bubble pass](pass.md)
 
 ## Proof depends on
 
-- [Adjacent](adjacent.md)
-- [Network](../zero-one/network.md)
+- [Adjacent comparator](adjacent.md)
+- [Comparator network](../zero-one/network.md)
 
 ## Sources
 

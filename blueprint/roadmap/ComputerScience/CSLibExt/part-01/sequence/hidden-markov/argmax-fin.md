@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.MachineLearning.Sequence.HiddenMarkov.argmaxFin
 ---
 
-# Argmax Fin
+# First maximizer of a function on a finite range
 
-A maximizer over `Fin n` (the first one).
+**First maximizer of a function on a finite range.** Let $n \ge 1$ and let $R$ be a
+commutative semiring with a linear order. For a function $f$ from $\{0, \dots, n-1\}$ to $R$, the
+maximizer of $f$ is the first $i$, in the order $0, \dots, n-1$, at which $f$ attains its
+maximum, that is, $f(j) \le f(i)$ for every $j$.
 
 ## Depends on
 

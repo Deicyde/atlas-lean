@@ -8,19 +8,20 @@ lean: Cslib.Algorithms.Lean.SortingNetworks.sorts_of_sorts_perm
 
 # The permutation principle
 
-**The permutation principle**: a network that sorts all `n!` permutations of `Fin n` sorts
-every input over every linear order.
+**The permutation principle.** A comparator network on $n$ wires that sorts each of the $n!$
+permutations $\sigma$ of $\{0, \dots, n-1\}$, viewed as the input whose value on wire $i$ is
+$\sigma(i)$, sorts every input over every linear order.
 
 ## Depends on
 
-- [Network](../zero-one/network.md)
-- [Sorts](../zero-one/sorts.md)
-- [Run](../zero-one/run.md)
+- [Comparator network](../zero-one/network.md)
+- [Networks that sort](../zero-one/sorts.md)
+- [Running a comparator network](../zero-one/run.md)
 
 ## Proof depends on
 
-- [Rank](rank.md)
-- [Rank Perm](rank-perm.md)
+- [Rank among the values of an input](rank.md)
+- [The ranking permutation](rank-perm.md)
 - [Networks commute with monotone maps](../zero-one/run-comp.md)
 - [Sorting distinct inputs suffices](sorts-of-sorts-injective.md)
 

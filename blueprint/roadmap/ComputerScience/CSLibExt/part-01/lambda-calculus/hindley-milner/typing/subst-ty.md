@@ -15,12 +15,12 @@ variables of $\sigma$ are left unchanged.
 ## Depends on
 
 - [Type schemes](scheme.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
 
 ## Proof depends on
 
 - [Monotypes as type schemes](to-scheme.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Sources
 

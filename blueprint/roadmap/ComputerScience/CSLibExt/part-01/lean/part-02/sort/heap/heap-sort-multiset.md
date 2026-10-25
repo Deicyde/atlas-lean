@@ -7,9 +7,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.heapSort_multiset
 ---
 
-# Heap Sort multiset
+# Heap sort preserves multiplicities
 
-Heap sort preserves every input occurrence, including duplicates.
+**Heap sort preserves multiplicities.** For every list $xs$ of elements of a linearly ordered
+type, the output of heap sort on $xs$ and $xs$ itself are equal as multisets: every value occurs
+in both lists the same number of times.
 
 ## Depends on
 

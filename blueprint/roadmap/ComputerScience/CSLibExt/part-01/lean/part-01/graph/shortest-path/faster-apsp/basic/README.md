@@ -4,6 +4,6 @@ navigation: module
 
 # Basic
 
-- [Faster APSP](faster-apsp.md)
-- [Faster APSP ret](faster-apsp-ret.md)
-- [Faster APSP time](faster-apsp-time.md)
+- [FASTER-APSP](faster-apsp.md)
+- [FASTER-APSP returns a power of the input matrix](faster-apsp-ret.md)
+- [Operation counts of FASTER-APSP](faster-apsp-time.md)

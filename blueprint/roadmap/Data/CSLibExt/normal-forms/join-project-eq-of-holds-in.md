@@ -13,8 +13,8 @@ lean: Cslib.Databases.join_project_eq_of_holdsIn
 
 ## Depends on
 
-- [FD](../functional-dependencies/fd.md)
-- [Holds In](../functional-dependencies/holds-in.md)
+- [Functional dependency](../functional-dependencies/fd.md)
+- [A functional dependency holds in a relation](../functional-dependencies/holds-in.md)
 - [Is Over](../relational-algebra/is-over-2.md)
 - [Tuple](../relational-algebra/tuple.md)
 - [Join](../relational-algebra/join.md)

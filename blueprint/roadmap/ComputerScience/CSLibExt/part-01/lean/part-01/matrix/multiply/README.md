@@ -4,11 +4,11 @@ navigation: module
 
 # Multiply
 
-- [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)
-- [Matrix Accumulate](matrix-accumulate.md)
-- [Rectangular Matrix Accumulate apply](rectangular-matrix-accumulate-apply.md)
-- [Rectangular Matrix Accumulate ret](rectangular-matrix-accumulate-ret.md)
-- [Rectangular Matrix Accumulate time](rectangular-matrix-accumulate-time.md)
-- [Rectangular Matrix Accumulate zero inner](rectangular-matrix-accumulate-zero-inner.md)
-- [Matrix Accumulate ret](matrix-accumulate-ret.md)
-- [Matrix Accumulate time](matrix-accumulate-time.md)
+- [Rectangular matrix accumulation](rectangular-matrix-accumulate.md)
+- [Square matrix accumulation](matrix-accumulate.md)
+- [Entries of rectangular matrix accumulation](rectangular-matrix-accumulate-apply.md)
+- [Rectangular matrix accumulation computes $C + AB$](rectangular-matrix-accumulate-ret.md)
+- [Operation count of rectangular matrix accumulation](rectangular-matrix-accumulate-time.md)
+- [Rectangular matrix accumulation with zero inner dimension](rectangular-matrix-accumulate-zero-inner.md)
+- [Square matrix accumulation computes $C + AB$](matrix-accumulate-ret.md)
+- [Operation count of square matrix accumulation](matrix-accumulate-time.md)

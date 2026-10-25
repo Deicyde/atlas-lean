@@ -8,25 +8,32 @@ lean: Cslib.MachineLearning.Sequence.BaumWelch.initCount_eq
 
 # The expected starts from forward-backward
 
-**The expected starts from forward-backward**: `initCount s = ∑ n, α₀(s) β₀(s) / L_n`.
+**The expected starts from forward-backward.** Let $h$ be a valid hidden Markov model with
+finite state set $S$ and finite observation set $O$, let $T \in \mathbb{N}$, and let
+$x_0, \dots, x_{N-1}$ be observation sequences. For a sequence $x_n$ write $\alpha^n_0(s)$ for its
+forward variable at time $0$ and state $s$, $\beta^n_{T,0}(s)$ for its backward variable from
+time $0$ with $T$ remaining steps (the weight of the observations $x_n(1), \dots, x_n(T)$ given the
+state $s$ at time $0$), and $L_n$ for the likelihood of $x_n(0), \dots, x_n(T)$. Then for every
+state $s$, the expected number of sequences whose state path of length $T + 1$ starts in $s$,
+under the posterior of $h$, is $\sum_{n < N} \alpha^n_0(s)\, \beta^n_{T,0}(s) / L_n$.
 
 ## Depends on
 
-- [Valid](../baum-welch/valid.md)
-- [Valid HMM](../baum-welch/valid-hmm.md)
-- [Init Count](../baum-welch/init-count.md)
-- [HMM](../hidden-markov/hmm.md)
-- [Backward](../forward-backward/backward.md)
-- [Forward](../hidden-markov/forward.md)
-- [Likelihood](../hidden-markov/likelihood.md)
+- [Valid hidden Markov model parameters](../baum-welch/valid.md)
+- [Valid HMMs](../baum-welch/valid-hmm.md)
+- [Expected initial-state counts](../baum-welch/init-count.md)
+- [Hidden Markov model](../hidden-markov/hmm.md)
+- [Backward variables of a hidden Markov model](../forward-backward/backward.md)
+- [Forward variables of a hidden Markov model](../hidden-markov/forward.md)
+- [Likelihood of the observations](../hidden-markov/likelihood.md)
 
 ## Proof depends on
 
-- [P Init](../baum-welch/p-init.md)
-- [Post](../baum-welch/post.md)
-- [Path Prob](../hidden-markov/path-prob.md)
-- [State Marg](../forward-backward/state-marg.md)
-- [Forward-backward](../forward-backward/state-marg-eq.md)
+- [Initial-state indicator of a state path](../baum-welch/p-init.md)
+- [Posterior weight of a state path](../baum-welch/post.md)
+- [Joint weight of a state path and the observations](../hidden-markov/path-prob.md)
+- [Joint weight of the observations and a state](../forward-backward/state-marg.md)
+- [Forward-backward identity](../forward-backward/state-marg-eq.md)
 
 ## Sources
 

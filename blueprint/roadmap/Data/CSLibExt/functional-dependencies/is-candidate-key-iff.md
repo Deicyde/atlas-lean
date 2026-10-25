@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Databases.isCandidateKey_iff
 ---
 
-# Is Candidate Key iff
+# Candidate keys are the superkeys minimal under single removals
 
-A candidate key is a superkey from which no single attribute can be removed.
+**Candidate keys are the superkeys minimal under single removals.** Let $F$ be a finite set
+of functional dependencies on a finite set of attributes $A$. A set $K \subseteq A$ of attributes
+is a candidate key for $F$ if and only if $K$ is a superkey for $F$ and, for every $a \in K$, the
+set $K \setminus \{a\}$ is not a superkey for $F$.
 
 ## Depends on
 
-- [FD](fd.md)
-- [Is Candidate Key](is-candidate-key.md)
-- [Is Superkey](is-superkey.md)
+- [Functional dependency](fd.md)
+- [Candidate key](is-candidate-key.md)
+- [Superkey](is-superkey.md)
 
 ## Proof depends on
 
-- [Mono](mono.md)
+- [Supersets of superkeys are superkeys](mono.md)
 
 ## Sources
 

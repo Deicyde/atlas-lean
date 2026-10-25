@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_increasing
 ---
 
-# Hire Assistant increasing
+# Strictly increasing input hires every candidate
 
-Every candidate in a strictly increasing input is hired, including empty input.
+**Strictly increasing input hires every candidate.** For every strictly increasing list
+$x_0 < x_1 < \dots < x_{n-1}$ in a linearly ordered type, including the empty list, the
+hire-assistant scan hires the indices $0, 1, \dots, n - 1$ in that order, and its cost pair is
+$(n, n)$.
 
 ## Depends on
 
-- [Hire Assistant](hire-assistant.md)
+- [The hire-assistant scan](hire-assistant.md)
 
 ## Proof depends on
 
-- [Hire Assistant hires](hire-assistant-hires.md)
-- [Hire Assistant time](hire-assistant-time.md)
+- [The hire-assistant scan hires exactly the strict prefix maxima](hire-assistant-hires.md)
+- [Cost of the hire-assistant scan](hire-assistant-time.md)
 
 ## Sources
 

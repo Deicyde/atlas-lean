@@ -6,17 +6,22 @@ proof: formalized
 lean: Cslib.MachineLearning.Sequence.HiddenMarkov.sum_pathProb_ite_pair
 ---
 
-# Sum path Prob ite pair
+# Pairwise path sums with a fixed endpoint
 
-Path sums with fixed states at times `t`, `t + 1` and `t + 1 + k`: the forward variable, one
-transition and emission, and a bridge.
+**Pairwise path sums with a fixed endpoint.** Let $h$ be a hidden Markov model with finite
+state set $S$, transition weights $a$ and emission weights $b$ in a semiring, and let $x$ be an
+observation sequence. For all $k, t \in \mathbb{N}$ and states $s, s', u$, the sum of the path
+weights of the state paths $z_0, \dots, z_{t + 1 + k}$ with $z_t = s$, $z_{t + 1} = s'$ and
+$z_{t + 1 + k} = u$ equals $\alpha_t(s)\, a(s, s')\, b(s', x(t + 1))\, B_{k, t + 1}(s', u)$, where
+$\alpha_t(s)$ is the forward variable and $B_{k, t + 1}(s', u)$ is the bridge weight of the paths
+from the state $s'$ at time $t + 1$ to the state $u$ at time $t + 1 + k$.
 
 ## Depends on
 
-- [HMM](../hidden-markov/hmm.md)
-- [Bridge](../forward-backward/bridge.md)
-- [Forward](../hidden-markov/forward.md)
-- [Path Prob](../hidden-markov/path-prob.md)
+- [Hidden Markov model](../hidden-markov/hmm.md)
+- [Bridge weights of a hidden Markov model](../forward-backward/bridge.md)
+- [Forward variables of a hidden Markov model](../hidden-markov/forward.md)
+- [Joint weight of a state path and the observations](../hidden-markov/path-prob.md)
 
 ## Proof depends on
 

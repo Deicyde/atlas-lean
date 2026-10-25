@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Crypto.PublicKey.RSA.pow_eq_pow_of_modEq
 ---
 
-# Pow eq pow of mod Eq
+# Fermat's little theorem for congruent exponents
 
-Exponents congruent modulo `p - 1` (and at least `1`) give the same powers in `ZMod p`.
+**Fermat's little theorem for congruent exponents.** Let $p$ be a prime and let $a$ and $b$
+be natural numbers with $a, b \ge 1$ and $a \equiv b \pmod{p - 1}$. Then $x^a = x^b$ for every
+$x \in \mathbb{Z}/p\mathbb{Z}$.
 
 ## Depends on
 

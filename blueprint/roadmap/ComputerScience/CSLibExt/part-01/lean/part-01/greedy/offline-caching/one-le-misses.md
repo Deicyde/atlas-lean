@@ -8,19 +8,21 @@ lean: Cslib.Algorithms.Lean.OfflineCaching.one_le_misses
 
 # A legal trace misses at least once
 
-**A legal trace misses at least once** on a segment that, together with a page `p` already
-cached, requests `capacity + 1` distinct pages.
+**A legal trace misses at least once.** Let $k$ be a capacity and $C$ a cache listing at most
+$k$ pages, and consider a legal trace of cache events for capacity $k$ that starts from $C$. Let
+$p$ be a page in $C$. If at least $k + 1$ distinct pages are each equal to $p$ or served by some
+event of the trace, then the trace contains at least one miss.
 
 ## Depends on
 
-- [Cache Event](cache-event.md)
-- [Request](request.md)
-- [Cache LTS](cache-lts.md)
-- [Misses](misses.md)
+- [Cache events](cache-event.md)
+- [Page served by a cache event](request.md)
+- [Legal cache transitions](cache-lts.md)
+- [Number of misses in a trace](misses.md)
 
 ## Proof depends on
 
-- [Request mem of misses eq zero](request-mem-of-misses-eq-zero.md)
+- [A legal trace without misses serves only cached pages](request-mem-of-misses-eq-zero.md)
 
 ## Sources
 

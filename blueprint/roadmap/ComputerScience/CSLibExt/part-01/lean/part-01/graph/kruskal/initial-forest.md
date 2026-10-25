@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.initialForest
 ---
 
-# Initial Forest
+# Discrete parent forest
 
-The discrete union-find forest used before scanning any edges.
+**Discrete parent forest.** The initial forest on the vertices $\{0, \dots, n-1\}$ is
+the parent forest in which every vertex is its own parent, so every vertex is a root, and
+whose depth certificate is $0$ at every vertex.
 
 ## Depends on
 

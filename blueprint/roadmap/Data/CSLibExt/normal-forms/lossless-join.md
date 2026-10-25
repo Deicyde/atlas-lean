@@ -13,12 +13,12 @@ of `R₁ ∪ R₂` is the join of its two projections.
 
 ## Depends on
 
-- [FD](../functional-dependencies/fd.md)
+- [Functional dependency](../functional-dependencies/fd.md)
 
 ## Proof depends on
 
 - [Is Over](../relational-algebra/is-over-2.md)
-- [Satisfies On](satisfies-on.md)
+- [Satisfying a set of dependencies on a scheme](satisfies-on.md)
 - [Tuple](../relational-algebra/tuple.md)
 - [Join](../relational-algebra/join.md)
 - [Project](../relational-algebra/project.md)

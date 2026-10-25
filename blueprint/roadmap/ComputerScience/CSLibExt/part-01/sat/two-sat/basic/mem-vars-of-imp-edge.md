@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.SAT.TwoSAT.mem_vars_of_impEdge
 ---
 
-# Mem vars of imp Edge
+# Implication edges end over variables of the formula
 
-An implication edge ends at a literal over a variable of `φ`.
+**Implication edges end over variables of the formula.** For a CNF formula $\varphi$ and
+literals $l$ and $m$, if the implication graph of $\varphi$ has an edge from $l$ to $m$, then
+the variable of $m$ occurs in $\varphi$.
 
 ## Depends on
 
-- [Imp Edge](imp-edge.md)
+- [Implication edge](imp-edge.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars-2.md)
 
 ## Proof depends on
 
-- [Neg](neg.md)
+- [Complement of a literal](neg.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Vars](../../../../../../Logic/CSLibExt/propositional/cnf/restriction/vars.md)
 

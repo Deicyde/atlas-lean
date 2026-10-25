@@ -7,17 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.ret_insertionSortInsert
 ---
 
-# Ret insertion Sort Insert
+# Costed insertion returns the ordered insertion
 
-Inserting one element returns Mathlib's ordered insert of that element.
+**Costed insertion returns the ordered insertion.** For an element $a$ and a list $l$ over a
+linearly ordered type, the list returned by costed insertion of $a$ into $l$ is the ordered
+insertion of $a$ into $l$ with respect to $\le$: $a$ is placed immediately before the first
+element $b$ of $l$ with $a \le b$, or at the end of $l$ if there is no such element.
 
 ## Depends on
 
-- [Insertion Sort Insert](insertion-sort-insert.md)
+- [Costed insertion into a list](insertion-sort-insert.md)
 
 ## Proof depends on
 
-- [Compare LE](compare-le.md)
+- [Charged comparison](compare-le.md)
 
 ## Sources
 

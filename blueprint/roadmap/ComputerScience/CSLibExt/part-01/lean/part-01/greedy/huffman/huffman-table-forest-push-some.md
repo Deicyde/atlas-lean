@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.huffmanTableForest_push_some
 ---
 
-# Huffman Table Forest push some
+# Appending to the table appends to the forest
 
-Appending a merged work item to the table appends it to the work forest.
+**Appending to the table appends to the forest.** For every table $T$ whose cells each hold at
+most one work item and every work item $x$, the work forest of the table obtained from $T$ by
+appending a new last cell holding $x$ is the work forest of $T$ followed by $x$.
 
 ## Depends on
 
-- [Huffman Work Item](huffman-work-item.md)
-- [Huffman Table Forest](huffman-table-forest.md)
+- [Huffman work item](huffman-work-item.md)
+- [Work forest of a table](huffman-table-forest.md)
 
 ## Sources
 

@@ -6,15 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanLoopInvariant
 ---
 
-# Huffman Loop Invariant
+# Huffman loop invariant
 
-The heap and the serial-indexed table describe the same
-uniquely-serial-numbered weighted trees.
+**Huffman loop invariant.** Let $n$ be a natural number, $H$ a binary min-heap of Huffman
+priorities and $T$ an array of optional Huffman work items, and let $F$ be the list of work
+items stored in $T$, in array order. The invariant holds when the multiset of elements of $H$
+equals the multiset of priorities of the items of $F$; the serial numbers of the items of $F$ are
+pairwise distinct; every item of $F$ has serial number less than $n$; every item of $F$ has
+priority weight equal to the total leaf weight of its tree; $T$ has exactly $n$ cells; and every
+item of $F$ is stored in the cell of $T$ whose index is its serial number.
 
 ## Depends on
 
-- [Huffman Priority](../huffman/huffman-priority.md)
-- [Huffman Work Item](../huffman/huffman-work-item.md)
+- [Huffman priority](../huffman/huffman-priority.md)
+- [Huffman work item](../huffman/huffman-work-item.md)
 - [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 
 ## Sources

@@ -4,43 +4,43 @@ navigation: module
 
 # Karger Min Cut
 
-- [State](state.md)
-- [Valid](valid.md)
-- [Cut Size](cut-size.md)
-- [Is Cut](is-cut.md)
-- [Is Min Cut](is-min-cut.md)
-- [Rename](rename.md)
-- [Contract](contract.md)
-- [Success Prob](success-prob.md)
+- [Multigraph state of Karger's algorithm](state.md)
+- [Valid multigraph](valid.md)
+- [Size of a cut](cut-size.md)
+- [Cuts of a multigraph](is-cut.md)
+- [Minimum cut size](is-min-cut.md)
+- [Renaming a vertex](rename.md)
+- [Edge contraction](contract.md)
+- [Success probability of the contraction process](success-prob.md)
 
 ## Contraction and cuts
 
-- [Cut Size contract](cut-size-contract.md)
-- [Is Min Cut contract](is-min-cut-contract.md)
-- [Valid contract](valid-contract.md)
+- [Cut sizes under contraction](cut-size-contract.md)
+- [Contraction preserves the minimum cut size](is-min-cut-contract.md)
+- [Contraction preserves validity and removes one vertex](valid-contract.md)
 
 ## Degrees
 
-- [Sum degree](sum-degree.md)
-- [Card mul le two mul edges](card-mul-le-two-mul-edges.md)
+- [Handshake lemma](sum-degree.md)
+- [Minimum cut size bounds the number of edges](card-mul-le-two-mul-edges.md)
 
 ## The success probability
 
-- [Success Prob nonneg](success-prob-nonneg.md)
-- [Success Prob le one](success-prob-le-one.md)
-- [Success Prob ge](success-prob-ge.md)
+- [Minimum cut size bounds the number of edges](success-prob-nonneg.md)
+- [The success probability is at most one](success-prob-le-one.md)
+- [Karger's bound](success-prob-ge.md)
 
 ## Amplification
 
-- [Repeat Success Prob](repeat-success-prob.md)
-- [Repeat Success Prob ge half](repeat-success-prob-ge-half.md)
+- [Success probability of repeated runs](repeat-success-prob.md)
+- [Repeating Karger's algorithm succeeds with probability at least one half](repeat-success-prob-ge-half.md)
 - [Amplification with high probability](repeat-success-prob-ge.md)
-- [Repeat Success Prob ge one sub inv](repeat-success-prob-ge-one-sub-inv.md)
+- [Karger's algorithm succeeds with high probability](repeat-success-prob-ge-one-sub-inv.md)
 
 ## Counting minimum cuts
 
-- [Survive Prob](survive-prob.md)
-- [Distinct On](distinct-on.md)
-- [Each minimum cut survives with probability at least `2 / (n (n - 1))`](survive-prob-ge.md)
-- [The survival events of distinct cuts are disjoint](sum-survive-prob-le-one.md)
-- [At most `n (n - 1) / 2` minimum cuts](two-mul-length-min-cuts-le.md)
+- [Probability that a run outputs a given cut](survive-prob.md)
+- [Cuts distinct as partitions](distinct-on.md)
+- [Each minimum cut survives with probability at least $2/(n(n-1))$](survive-prob-ge.md)
+- [Survival probabilities of distinct cuts sum to at most one](sum-survive-prob-le-one.md)
+- [At most $n(n-1)/2$ minimum cuts](two-mul-length-min-cuts-le.md)

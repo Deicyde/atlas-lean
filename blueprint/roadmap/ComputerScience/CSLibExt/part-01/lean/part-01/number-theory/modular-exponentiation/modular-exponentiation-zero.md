@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_zero
 ---
 
-# Modular Exponentiation zero
+# Base case of modular exponentiation
 
-The source base clause returns literal `1` and performs no multiplication.
+**Base case of modular exponentiation.** For all natural numbers $a$ and $n$, modular
+exponentiation with base $a$, exponent $0$ and modulus $n$ returns $1$ and performs no
+multiplications.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Sources
 

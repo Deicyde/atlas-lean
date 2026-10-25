@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Graph.hamiltonianCycleToTsp_getElem?
 ---
 
-# Hamiltonian Cycle To Tsp get Elem?
+# The Hamiltonian-cycle to TSP converter negates every cell
 
-Every optional output cell is the negation of the corresponding optional input cell.
+**The Hamiltonian-cycle to TSP converter negates every cell.** For every Boolean array $x$ and
+every index $k$, the array output by the Hamiltonian-cycle to TSP converter on $x$ has a cell at
+index $k$ exactly when $x$ does, and that cell is the negation of the cell of $x$ at index $k$.
 
 ## Depends on
 
-- [Hamiltonian Cycle To Tsp](hamiltonian-cycle-to-tsp.md)
+- [Hamiltonian-cycle to TSP converter](hamiltonian-cycle-to-tsp.md)
 
 ## Sources
 

@@ -1,5 +1,5 @@
 # Strassen
 
-- [Basic](strassen-matrix-accumulate.md)
+- [Strassen's matrix accumulator](strassen-matrix-accumulate.md)
 - [Correctness](correctness/README.md)
-- [Costs](strassen-matrix-accumulate-time.md)
+- [Operation counts of Strassen's matrix accumulator](strassen-matrix-accumulate-time.md)

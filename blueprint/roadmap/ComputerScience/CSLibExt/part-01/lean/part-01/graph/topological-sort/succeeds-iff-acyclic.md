@@ -6,21 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TopologicalSort.succeeds_iff_acyclic
 ---
 
-# Succeeds iff acyclic
+# Kahn's algorithm succeeds exactly on acyclic graphs
 
-The executable algorithm succeeds exactly for acyclic input graphs.
+**Kahn's algorithm succeeds exactly on acyclic graphs.** For every finite directed graph $G$,
+Kahn's topological sort on $G$ returns a success if and only if $G$ is acyclic.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 - [Is Acyclic](is-acyclic.md)
-- [Result](result.md)
-- [Sort](sort.md)
+- [Outcome of Kahn's topological sort](result.md)
+- [Kahn's topological sort](sort.md)
 
 ## Proof depends on
 
-- [Acyclic implies success](acyclic-implies-success.md)
-- [Success implies acyclic](success-implies-acyclic.md)
+- [Kahn's algorithm succeeds on acyclic graphs](acyclic-implies-success.md)
+- [Success of Kahn's algorithm implies acyclicity](success-implies-acyclic.md)
 
 ## Sources
 

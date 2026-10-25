@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsSeed_pointMass
 ---
 
-# Freivalds Seed point Mass
+# Uniform mass of a Freivalds seed
 
-Each complete binary assignment has its exact uniform point mass.
+**Uniform mass of a Freivalds seed.** Let $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$. For every
+$n$ and every vector $r \in \mathbb{F}_2^n$, the uniform probability distribution on
+$\mathbb{F}_2^n$ assigns to $r$ the probability $(2^n)^{-1}$.
 
 ## Depends on
 

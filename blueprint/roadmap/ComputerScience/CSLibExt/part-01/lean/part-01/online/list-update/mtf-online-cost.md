@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.mtfOnline_cost
 ---
 
-# Mtf Online cost
+# Online move-to-front pays the move-to-front cost
 
-The online move-to-front pays exactly `mtfCost`.
+**Online move-to-front pays the move-to-front cost.** Let $M$ be a list and $\sigma$ a
+request sequence whose requests are all items of $M$. From any state of online move-to-front
+on $M$, its access cost on $\sigma$ equals the cost of move-to-front on $\sigma$ starting from
+the list of that state.
 
 ## Depends on
 
 - [A deterministic online list-update algorithm on the items...](a-deterministic-online-list-update-algor.md)
-- [Cost](cost.md)
-- [Mtf Cost](mtf-cost.md)
-- [Mtf Online](mtf-online.md)
+- [Cost of an online list-update algorithm](cost.md)
+- [Cost of move-to-front](mtf-cost.md)
+- [Online move-to-front](mtf-online.md)
 
 ## Proof depends on
 
-- [Access Cost](access-cost.md)
-- [Mtf](mtf.md)
+- [Access cost](access-cost.md)
+- [Move-to-front](mtf.md)
 - [The amortized cost of a move-to-front step](mtf-perm.md)
 
 ## Sources

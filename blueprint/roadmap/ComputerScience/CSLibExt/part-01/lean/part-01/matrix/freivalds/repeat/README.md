@@ -4,9 +4,9 @@ navigation: module
 
 # Repeat
 
-- [Freivalds Repeat](freivalds-repeat.md)
-- [Freivalds Repeat time](freivalds-repeat-time.md)
-- [Freivalds Repeat accept iff](freivalds-repeat-accept-iff.md)
-- [Freivalds Repeat complete](freivalds-repeat-complete.md)
-- [Freivalds Repeat zero](freivalds-repeat-zero.md)
-- [Freivalds Repeat empty](freivalds-repeat-empty.md)
+- [Repeated Freivalds test on fixed seeds](freivalds-repeat.md)
+- [Cost of the repeated Freivalds test on fixed seeds](freivalds-repeat-time.md)
+- [Acceptance of the repeated Freivalds test on fixed seeds](freivalds-repeat-accept-iff.md)
+- [Completeness of the repeated Freivalds test on fixed seeds](freivalds-repeat-complete.md)
+- [Repeated Freivalds test with no trials](freivalds-repeat-zero.md)
+- [Repeated Freivalds test on empty matrices](freivalds-repeat-empty.md)

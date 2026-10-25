@@ -6,23 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.isMatching_maxMatching
 ---
 
-# Is Matching max Matching
+# The augmenting-path algorithm returns a matching
 
-The result is a matching.
+**The augmenting-path algorithm returns a matching.** For every bipartite graph with left
+vertices $0, \dots, a-1$, right vertices $0, \dots, b-1$ and an adjacency list for each left
+vertex, the pairs $(i, j)$ such that the augmenting-path maximum matching algorithm (from the
+empty matching, repeatedly flip an augmenting path found by the layered search) makes $i$ the
+partner of $j$ form a matching of the graph: each pair is an edge, and no two distinct pairs
+share a left or a right vertex.
 
 ## Depends on
 
-- [Is Matching](is-matching.md)
-- [Max Matching](max-matching.md)
-- [Pairs](pairs.md)
+- [Matching in a bipartite graph](is-matching.md)
+- [The augmenting-path maximum matching](max-matching.md)
+- [Matched pairs of a partner assignment](pairs.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
-- [Is Matching pairs](is-matching-pairs.md)
-- [Matched](matched.md)
-- [Max Matching Aux](max-matching-aux.md)
-- [Max Matching Aux spec](max-matching-aux-spec.md)
+- [Partner arrays that describe a matching](valid.md)
+- [A valid partner array gives a matching](is-matching-pairs.md)
+- [Matched right vertices](matched.md)
+- [Augmentation loop](max-matching-aux.md)
+- [Enough augmentations reach a maximum matching](max-matching-aux-spec.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Unification.Subst.comp
 ---
 
-# Comp
+# Composition of substitutions
 
-Composition: first `s`, then `t`.
+**Composition of substitutions.** For substitutions $s$ and $t$, the composite $s \gg t$
+(first $s$, then $t$) sends each variable $x$ to the term obtained from $s(x)$ by applying $t$
+to every variable of $s(x)$.
 
 ## Depends on
 
-- [Subst](subst.md)
+- [Substitution](subst.md)
 
 ## Proof depends on
 
-- [Subst](subst-2.md)
+- [Applying a substitution to a term](subst-2.md)
 
 ## Sources
 

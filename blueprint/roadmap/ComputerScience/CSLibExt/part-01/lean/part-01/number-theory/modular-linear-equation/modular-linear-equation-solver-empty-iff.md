@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularLinearEquation.modularLinearEquationSolver_empty_iff
 ---
 
-# Modular Linear Equation Solver empty iff
+# The solver returns nothing exactly when $\gcd(a, n) \nmid b$
 
-The returned array is empty exactly when `gcd a n` does not divide `b`.
+**The solver returns nothing exactly when $\gcd(a, n) \nmid b$.** For natural numbers $a > 0$
+and $n > 0$ and an integer $b$, the modular linear equation solver on $a$, $b$, $n$ returns the
+empty array if and only if $\gcd(a, n)$ does not divide $b$.
 
 ## Depends on
 
-- [Modular Linear Equation Solver](modular-linear-equation-solver.md)
+- [Modular linear equation solver](modular-linear-equation-solver.md)
 
 ## Proof depends on
 
-- [Modular Linear Equation Solver length](modular-linear-equation-solver-length.md)
-- [Modular Linear Equation Solver ret](modular-linear-equation-solver-ret.md)
+- [Number of residues returned by the solver](modular-linear-equation-solver-length.md)
+- [Output of the modular linear equation solver](modular-linear-equation-solver-ret.md)
 
 ## Sources
 

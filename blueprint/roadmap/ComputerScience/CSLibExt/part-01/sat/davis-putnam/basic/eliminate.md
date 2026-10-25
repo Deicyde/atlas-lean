@@ -5,11 +5,13 @@ statement: formalized
 lean: Cslib.Logic.PL.CNF.eliminate
 ---
 
-# Eliminate
+# Davis-Putnam elimination of a variable
 
-One Davis-Putnam step: keep the clauses that do not mention `x`, and add every resolvent
-on `x` of a clause of `posClauses x φ` with one of `negClauses x φ` (computed once). Clauses
-containing both `x` and `¬x` are dropped.
+**Davis-Putnam elimination of a variable.** Eliminating a variable $x$ from a CNF formula
+$\varphi$ gives the formula consisting of the clauses of $\varphi$ that contain neither $x$ nor
+$\neg x$, followed by the resolvents on $x$ of $C$ and $D$, for every clause $C$ of $\varphi$ that
+contains $x$ but not $\neg x$ and every clause $D$ of $\varphi$ that contains $\neg x$ but not $x$.
+Clauses containing both $x$ and $\neg x$ are dropped.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ containing both `x` and `¬x` are dropped.
 
 ## Proof depends on
 
-- [Neg Clauses](neg-clauses.md)
-- [Pos Clauses](pos-clauses.md)
+- [Clauses containing a variable only negatively](neg-clauses.md)
+- [Clauses containing a variable only positively](pos-clauses.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Resolvent](../../../../../../Logic/CSLibExt/propositional/cnf/resolution/resolvent.md)
 

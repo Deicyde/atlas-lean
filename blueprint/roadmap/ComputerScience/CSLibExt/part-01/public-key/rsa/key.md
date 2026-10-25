@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Crypto.PublicKey.RSA.Key
 ---
 
-# Key
+# RSA key
 
-A textbook RSA key: distinct primes `p`, `q` and exponents `e`, `d` with `e d ≡ 1` modulo
-`p - 1` and modulo `q - 1`.
+**RSA key.** A textbook RSA key consists of distinct primes $p$ and $q$ and natural numbers $e$
+(the public exponent) and $d$ (the private exponent) such that $ed \equiv 1 \pmod{p - 1}$ and
+$ed \equiv 1 \pmod{q - 1}$.
 
 ## Depends on
 

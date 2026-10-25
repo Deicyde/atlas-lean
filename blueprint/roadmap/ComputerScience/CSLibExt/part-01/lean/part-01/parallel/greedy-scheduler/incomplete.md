@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.incomplete
 ---
 
-# Incomplete
+# Number of incomplete steps
 
-The number of incomplete steps (fewer than `p` tasks) before step `t`.
+**Number of incomplete steps.** For a schedule $S$ of a computation DAG on $p$ processors and
+a natural number $t$, the number of incomplete steps before step $t$ is the number of steps
+$s < t$ in which $S$ runs fewer than $p$ tasks.
 
 ## Depends on
 
-- [Dag](../brent/dag.md)
+- [Computation DAG](../brent/dag.md)
 - [Schedule](../brent/schedule.md)
 
 ## Proof depends on
 
-- [Load](load.md)
+- [Load of a step](load.md)
 
 ## Sources
 

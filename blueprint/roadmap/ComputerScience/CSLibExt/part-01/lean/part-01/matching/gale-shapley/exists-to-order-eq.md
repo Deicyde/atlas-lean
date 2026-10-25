@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.exists_toOrder_eq
 ---
 
-# Every strict total order on `Fin n` is given by a ranking
+# Every strict total order on $\{0, \dots, n-1\}$ is given by a ranking
 
-**Every strict total order on `Fin n` is given by a ranking**, so the algorithm applies to all
-of MathlibExt's preferences on `Fin n`.
+**Every strict total order on $\{0, \dots, n-1\}$ is given by a ranking.** For every strict
+total order $\prec$ on $\{0, \dots, n-1\}$ there is a permutation $\sigma$ of $\{0, \dots, n-1\}$
+such that, for all $a$ and $b$, $a \prec b$ holds exactly when $\sigma^{-1}(a) < \sigma^{-1}(b)$.
+
+Hence the Gale-Shapley algorithm on rankings applies to every preference on $\{0, \dots, n-1\}$.
 
 ## Depends on
 
-- [To Order](to-order.md)
+- [Preference order of a ranking](to-order.md)
 - [Strict Total Order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Proof depends on
 
-- [Order Rank](order-rank.md)
+- [Rank under a strict total order](order-rank.md)
 - [Ext](../../../../../../../Order/MathlibExt/strict-total-order/ext.md)
 
 ## Sources

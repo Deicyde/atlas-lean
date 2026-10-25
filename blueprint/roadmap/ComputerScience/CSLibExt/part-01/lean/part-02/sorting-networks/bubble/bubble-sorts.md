@@ -12,18 +12,18 @@ lean: Cslib.Algorithms.Lean.SortingNetworks.Bubble.bubble_sorts
 
 ## Depends on
 
-- [Bubble](bubble.md)
-- [Sorts](../zero-one/sorts.md)
+- [Bubble sorting network](bubble.md)
+- [Networks that sort](../zero-one/sorts.md)
 
 ## Proof depends on
 
-- [Settled](settled.md)
-- [Pass](pass.md)
-- [One pass carries the maximum of wires `0..m` to wire `m`](pass-spec.md)
-- [Passes](passes.md)
-- [Network](../zero-one/network.md)
+- [Settled top wires](settled.md)
+- [Bubble pass](pass.md)
+- [Effect of one bubble pass](pass-spec.md)
+- [Successive bubble passes](passes.md)
+- [Comparator network](../zero-one/network.md)
 - [Comparator](../zero-one/comparator.md)
-- [Run](../zero-one/run.md)
+- [Running a comparator network](../zero-one/run.md)
 
 ## Sources
 

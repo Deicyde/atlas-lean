@@ -6,22 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MillerRabin.witness_of_pow_ne_one
 ---
 
-# Witness of pow ne one
+# Fermat witnesses are Miller–Rabin witnesses
 
-Every Fermat witness is a Miller–Rabin witness: if `a^(n-1) ≢ 1 (mod n)` then `WITNESS(a, n)`
-returns `true`.
+**Fermat witnesses are Miller–Rabin witnesses.** Let $a$ and $n$ be natural numbers with
+$n > 1$. If $a^{n-1} \bmod n \ne 1$, that is, $a^{n-1} \not\equiv 1 \pmod{n}$, then the Miller–Rabin
+witness test on base $a$ and modulus $n$ returns true.
 
 ## Depends on
 
-- [Witness](witness.md)
+- [Miller–Rabin witness test](witness.md)
 
 ## Proof depends on
 
-- [Two Adic Split](two-adic-split.md)
-- [Witness Loop](witness-loop.md)
-- [Witness Loop eq true](witness-loop-eq-true.md)
-- [Modular Exponentiation](../modular-exponentiation/modular-exponentiation.md)
-- [Modular Exponentiation correct](../modular-exponentiation/modular-exponentiation-correct.md)
+- [Splitting off the power of two](two-adic-split.md)
+- [The Miller–Rabin squaring loop](witness-loop.md)
+- [The squaring loop reports a witness when it does not end at 1](witness-loop-eq-true.md)
+- [Modular exponentiation](../modular-exponentiation/modular-exponentiation.md)
+- [Correctness of modular exponentiation](../modular-exponentiation/modular-exponentiation-correct.md)
 
 ## Sources
 

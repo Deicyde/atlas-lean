@@ -12,16 +12,16 @@ The certificate cut is a minimum cut: no `s`-`t` cut has smaller capacity.
 
 ## Depends on
 
-- [Edmonds Karp](../edmonds-karp/edmonds-karp.md)
+- [Edmonds–Karp maximum flow](../edmonds-karp/edmonds-karp.md)
 - [Residual Cut](../edmonds-karp/residual-cut.md)
-- [Real Cap](real-cap.md)
+- [Real capacities](real-cap.md)
 - [Source–sink cut](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-stcut.md)
 - [Cut capacity](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/cut-capacity.md)
 
 ## Proof depends on
 
 - [Edmonds-Karp computes a maximum flow and a minimum cut](edmonds-karp-max-flow-min-cut.md)
-- [Real Flow](real-flow.md)
+- [Real arc flow](real-flow.md)
 - [Feasible flow](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-feasible-flow.md)
 - [Flow value](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/flow-value.md)
 

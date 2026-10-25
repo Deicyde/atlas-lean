@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.offlineCost_switch_le
 ---
 
-# Offline Cost switch le
+# Switching lists after the first request
 
-The offline algorithm that serves the first request with `M`, then switches to `R` for good,
-pays at most `ℓ + inv M R` more than the static list `R`.
+**Switching lists after the first request.** Let $M$ be a list of length $\ell$ and $R$ a list,
+and write $\mathrm{inv}(M, R)$ for the number of inversions between $M$ and $R$. For every request
+sequence $\sigma$ of items of $M$, the offline cost (without free exchanges) of serving $\sigma$
+with the lists $M, R, R, R, \dots$ is at most $\ell + \mathrm{inv}(M, R)$ plus the static cost of
+serving $\sigma$ with $R$.
 
 ## Depends on
 
-- [Inv](inv.md)
-- [Offline Cost](offline-cost.md)
-- [Static Cost](static-cost.md)
+- [Number of inversions between two lists](inv.md)
+- [Offline cost without free exchanges](offline-cost.md)
+- [Static cost](static-cost.md)
 
 ## Proof depends on
 
-- [Access Cost](access-cost.md)
-- [Offline Cost const](offline-cost-const.md)
+- [Access cost](access-cost.md)
+- [The static cost is the offline cost of a constant list](offline-cost-const.md)
 
 ## Sources
 

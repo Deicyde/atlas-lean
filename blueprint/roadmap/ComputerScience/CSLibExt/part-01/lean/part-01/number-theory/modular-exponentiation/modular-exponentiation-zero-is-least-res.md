@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_zero_is_leastResidue
 ---
 
-# Modular Exponentiation zero is least Residue
+# Least residue at exponent zero
 
-With `n > 1`, the literal zero-exponent result is also the least residue.
+**Least residue at exponent zero.** For all natural numbers $a$ and $n$ with $n > 1$, the value
+returned by modular exponentiation with base $a$, exponent $0$ and modulus $n$ equals $a^0 \bmod n$
+and is less than $n$.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation ret zero](modular-exponentiation-ret-zero.md)
+- [Modular exponentiation returns 1 at exponent zero](modular-exponentiation-ret-zero.md)
 
 ## Sources
 

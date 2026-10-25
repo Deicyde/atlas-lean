@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.cmp
 ---
 
-# Cmp
+# Comparator on natural-number-indexed wires
 
-A comparator on `ℕ`-indexed wires: the minimum of wires `i` and `j` to `i`, the maximum to
-`j`.
+**Comparator on natural-number-indexed wires.** Let $\alpha$ be a linear order. For wires
+$i, j \in \mathbb{N}$ and an assignment $f$ of values in $\alpha$ to the wires $x \in \mathbb{N}$,
+the comparator $(i, j)$ applied to $f$ puts $\min(f(i), f(j))$ on wire $i$, puts
+$\max(f(i), f(j))$ on wire $j$ when $j \ne i$, and leaves every other wire unchanged.
 
 ## Depends on
 

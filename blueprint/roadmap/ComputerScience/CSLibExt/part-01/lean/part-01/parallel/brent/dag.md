@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.Dag
 ---
 
-# Dag
+# Computation DAG
 
-A computation DAG on `n` unit-time tasks, numbered in a topological order: every predecessor
-of a task has a smaller number.
+**Computation DAG.** A computation DAG on $n$ unit-time tasks, numbered $0, \dots, n - 1$,
+assigns to each task $v$ a list of predecessors (the tasks $v$ waits for), each numbered below
+$v$; so the numbering is a topological order.
 
 ## Depends on
 

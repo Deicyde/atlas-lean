@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.card_le_maxMatching
 ---
 
-# Correctness
+# Optimality of the augmenting-path matching algorithm
 
-**Correctness.** No matching is larger than the result.
+**Optimality of the augmenting-path matching algorithm.** In a bipartite graph with $b$ right
+vertices, start from the empty matching and repeat the augmentation step until it fails, at most
+$b + 1$ times. No matching of the graph has more edges than the resulting matching.
 
 ## Depends on
 
-- [Is Matching](is-matching.md)
-- [Max Matching](max-matching.md)
-- [Pairs](pairs.md)
+- [Matching in a bipartite graph](is-matching.md)
+- [The augmenting-path maximum matching](max-matching.md)
+- [Matched pairs of a partner assignment](pairs.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
-- [Matched](matched.md)
-- [Max Matching Aux](max-matching-aux.md)
-- [Max Matching Aux spec](max-matching-aux-spec.md)
+- [Partner arrays that describe a matching](valid.md)
+- [Matched right vertices](matched.md)
+- [Augmentation loop](max-matching-aux.md)
+- [Enough augmentations reach a maximum matching](max-matching-aux-spec.md)
 
 ## Sources
 

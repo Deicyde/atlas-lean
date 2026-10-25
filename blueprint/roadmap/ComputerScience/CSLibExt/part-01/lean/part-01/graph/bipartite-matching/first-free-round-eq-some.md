@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.firstFreeRound_eq_some
 ---
 
-# First Free Round eq some
+# Characterization of the first free round
 
-`firstFreeRound` is the earliest round `d` (at most `a`) such that round `d + 1` reaches an
-unmatched right vertex.
+**Characterization of the first free round.** For a partner array $\mu$ of a bipartite graph
+with $a$ left vertices and a natural number $d$, the first free round of $\mu$ equals $d$ if and
+only if $d \le a$, some unmatched right vertex is reached within $d + 1$ rounds of the layered
+search, and for every $k < d$ no unmatched right vertex is reached within $k + 1$ rounds.
 
 ## Depends on
 
-- [First Free Round](first-free-round.md)
-- [Layers](layers.md)
+- [First free round](first-free-round.md)
+- [Alternating breadth-first layers](layers.md)
 
 ## Sources
 

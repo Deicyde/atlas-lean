@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.preorder_complete
 ---
 
-# Preorder complete
+# Depth-first search discovers every reachable vertex
 
-Every directed-reachable vertex occurs in DFS preorder.
+**Depth-first search discovers every reachable vertex.** Let $G$ be a finite directed graph
+given by ordered adjacency lists and let $R$ be a list of roots. If a vertex $v$ is reachable in
+$G$ from some root in $R$ by a directed path (possibly of length zero), then $v$ occurs in the
+preorder (discovery order) of the depth-first search of $G$ from $R$.
 
 ## Depends on
 
-- [Traversal](traversal.md)
-- [Dfs](dfs.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
+- [Depth-first traversal record](traversal.md)
+- [Left-first depth-first search](dfs.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
 - [Steps](steps.md)
-- [Edge](../directed-adjacency-2/edge.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
 
 ## Sources
 

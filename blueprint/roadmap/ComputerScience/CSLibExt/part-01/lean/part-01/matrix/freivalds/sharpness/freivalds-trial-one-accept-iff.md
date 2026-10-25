@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsTrial_one_accept_iff
 ---
 
-# Freivalds Trial one accept iff
+# The sharp Freivalds example accepts exactly the zero seed
 
-The actual one-by-one incorrect-product trial accepts exactly the zero bit.
+**The sharp Freivalds example accepts exactly the zero seed.** Let $A = B = (1)$ and
+$C = (0)$ be $1 \times 1$ matrices over $\mathbb{Z}/2\mathbb{Z}$. For every seed
+$r \in (\mathbb{Z}/2\mathbb{Z})^1$, the Freivalds trial on $A$, $B$, $C$ with seed $r$, which
+compares $A(Br)$ with $Cr$, accepts if and only if the single entry $r_0$ of $r$ is $0$.
 
 ## Depends on
 
-- [Freivalds Trial](../basic/freivalds-trial.md)
+- [Freivalds trial](../basic/freivalds-trial.md)
 
 ## Proof depends on
 
-- [Freivalds Matrix](../basic/freivalds-matrix.md)
-- [Freivalds Trial accept iff](../basic/freivalds-trial-accept-iff.md)
+- [Matrix of a Freivalds input](../basic/freivalds-matrix.md)
+- [Acceptance criterion of the Freivalds trial](../basic/freivalds-trial-accept-iff.md)
 
 ## Sources
 

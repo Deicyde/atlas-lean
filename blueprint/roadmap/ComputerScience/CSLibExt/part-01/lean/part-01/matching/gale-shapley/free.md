@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.Free
 ---
 
-# Free
+# Free proposer
 
-A proposer is free when no receiver holds him.
+**Free proposer.** A proposer $m$ is free in a state $s$ of deferred acceptance when no
+receiver holds $m$ in $s$.
 
 ## Depends on
 
-- [State](state.md)
+- [Deferred-acceptance state](state.md)
 
 ## Sources
 

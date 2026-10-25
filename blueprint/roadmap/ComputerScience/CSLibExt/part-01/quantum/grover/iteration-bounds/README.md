@@ -4,5 +4,5 @@ navigation: module
 
 # Iteration Bounds
 
-- [Floor Iterations](floor-iterations.md)
-- [One step success of four mul card eq](one-step-success-of-four-mul-card-eq.md)
+- [Standard Grover iteration count](floor-iterations.md)
+- [One Grover iteration suffices when a quarter is marked](one-step-success-of-four-mul-card-eq.md)

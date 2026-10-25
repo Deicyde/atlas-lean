@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.MachineLearning.Backpropagation.Net.shift
 ---
 
-# Shift
+# Shifted network
 
-The layers from `j` on, as a network of their own.
+**Shifted network.** For a feedforward network $N$ with layer widths $d$ and a natural number
+$j$, the shifted network has layer widths $i \mapsto d(j + i)$, and its layer $i$ is layer
+$j + i$ of $N$. It is made of the layers of $N$ from layer $j$ on.
 
 ## Depends on
 
-- [Net](net.md)
+- [Feedforward network](net.md)
 
 ## Sources
 

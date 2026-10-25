@@ -19,7 +19,7 @@ first binding of $x$ in $\Gamma$), or the empty set if $\Gamma$ does not bind $x
 
 - [Context lookup](lookup.md)
 - [Type schemes](scheme.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
 
 ## Sources
 

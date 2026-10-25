@@ -6,14 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.levels_congr
 ---
 
-# Levels congr
+# Levels inside a block depend only on initial levels inside it
 
-Inside `[lo, hi)`, the levels depend only on the levels inside.
+**Levels inside a block depend only on initial levels inside it.** Let $ps$ be a list of
+comparators all of whose wires lie in $[a, b)$, and let $\ell, \ell' : \mathbb{N} \to \mathbb{N}$
+be initial levels that agree on every wire in $[a, b)$. Then for every wire $x$ in $[a, b)$, the
+level of $x$ after $ps$ starting from $\ell$ equals the level of $x$ after $ps$ starting from
+$\ell'$.
 
 ## Depends on
 
-- [Within](../bitonic/within.md)
-- [Levels](levels.md)
+- [Comparators within an interval](../bitonic/within.md)
+- [Comparator levels under earliest scheduling](levels.md)
 
 ## Sources
 

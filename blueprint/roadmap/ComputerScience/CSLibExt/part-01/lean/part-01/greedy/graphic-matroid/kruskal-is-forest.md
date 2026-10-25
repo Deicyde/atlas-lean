@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GraphicMatroid.kruskal_isForest
 ---
 
-# Kruskal is Forest
+# Kruskal's algorithm returns a forest
 
-Kruskal's algorithm in the form of CLRS Section 16.4: the matroid greedy algorithm on the
-graphic matroid returns a forest of `G`.
+**Kruskal's algorithm returns a forest.** Let $G$ be a simple graph on a finite vertex type
+$V$. For every list $L$ of unordered pairs of vertices, the matroid greedy algorithm run on $L$
+with the forest oracle of $G$ returns a forest of $G$: a set of edges of $G$ without cycles.
+
+This is Kruskal's algorithm in the form of CLRS Section 16.4, the greedy algorithm on the graphic
+matroid.
 
 ## Depends on
 
-- [Is Forest Set](is-forest-set.md)
-- [Forest Oracle](forest-oracle.md)
-- [Matroid Greedy](../matroid-greedy/matroid-greedy.md)
+- [Forests of a graph](is-forest-set.md)
+- [Forest oracle](forest-oracle.md)
+- [Greedy algorithm on a matroid](../matroid-greedy/matroid-greedy.md)
 
 ## Proof depends on
 
-- [Forest Oracle iff](forest-oracle-iff.md)
-- [Graphic Matroid](graphic-matroid.md)
-- [Matroid Greedy indep](../matroid-greedy/matroid-greedy-indep.md)
+- [The forest oracle decides graphic-matroid independence](forest-oracle-iff.md)
+- [Graphic matroid](graphic-matroid.md)
+- [The matroid greedy result is independent](../matroid-greedy/matroid-greedy-indep.md)
 
 ## Sources
 

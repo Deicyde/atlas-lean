@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Horn.derive
 ---
 
-# Derive
+# Forward-chaining step
 
-One forward-chaining step: the positive literals of the clauses whose bodies lie in
-`T`.
+**Forward-chaining step.** For a CNF formula $\varphi$ and a finite set $T$ of variables,
+the derived set consists of the variables $x$ such that some clause of $\varphi$ contains the
+positive literal $x$ and has every one of its negative literals on a variable in $T$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ One forward-chaining step: the positive literals of the clauses whose bodies lie
 
 ## Proof depends on
 
-- [Body In](body-in.md)
+- [Body of a clause contained in a set](body-in.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

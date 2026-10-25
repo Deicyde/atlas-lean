@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gpow](../diffie-hellman/gpow.md)
+- [Group exponentiation with modular exponents](../diffie-hellman/gpow.md)
 
 ## Sources
 

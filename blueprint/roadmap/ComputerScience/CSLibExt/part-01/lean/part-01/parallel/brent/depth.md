@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.depth
 ---
 
-# Depth
+# Depth of a task in a computation DAG
 
-The depth of a task: the number of tasks on a longest path ending at it.
+**Depth of a task in a computation DAG.** The depth of a task $v$ is the number of tasks on a
+longest path ending at $v$: it is $1$ plus the largest depth of a predecessor of $v$, or $1$ if
+$v$ has no predecessors.
 
 ## Depends on
 
-- [Dag](dag.md)
+- [Computation DAG](dag.md)
 
 ## Sources
 

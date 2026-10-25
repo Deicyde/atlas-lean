@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.sum_next_propose
 ---
 
-# Sum next propose
+# A proposal adds one to the proposal count
 
-Each proposal advances exactly one proposer's count, so `∑ m, next m` counts the proposals.
+**A proposal adds one to the proposal count.** Fix rankings for $n$ proposers and $n$
+receivers. If proposer $m$ has made fewer than $n$ proposals in a state $s$ of deferred
+acceptance, then after $m$ proposes, the total number of proposals made by all proposers is one
+more than in $s$.
 
 ## Depends on
 
-- [State](state.md)
-- [Propose](propose.md)
+- [Deferred-acceptance state](state.md)
+- [A proposal](propose.md)
 
 ## Proof depends on
 
-- [New Holder](new-holder.md)
+- [Receiver's holder after a proposal](new-holder.md)
 
 ## Sources
 

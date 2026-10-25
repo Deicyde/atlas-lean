@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.init
 ---
 
-# Init
+# Initial state of deferred acceptance
 
-The initial state: no proposals, nobody held.
+**Initial state of deferred acceptance.** The initial state with $n$ proposers and
+$n$ receivers: every proposer has made $0$ proposals and no receiver holds anyone.
 
 ## Depends on
 
-- [State](state.md)
+- [Deferred-acceptance state](state.md)
 
 ## Sources
 

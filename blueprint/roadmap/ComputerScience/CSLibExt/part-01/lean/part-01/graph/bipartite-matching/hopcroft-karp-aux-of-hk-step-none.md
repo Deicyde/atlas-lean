@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarpAux_of_hkStep_none
 ---
 
-# Hopcroft Karp Aux of hk Step none
+# The phase loop stops when a step finds nothing
 
-With no phase to run, the matching is maximum and `hopcroftKarpAux` returns it.
+**The phase loop stops when a step finds nothing.** If the Hopcroft–Karp step on a partner
+array $\mu$ returns nothing, then for every fuel $f \in \mathbb{N}$ the Hopcroft–Karp phase loop
+with fuel $f$ from $\mu$ returns $\mu$.
 
 ## Depends on
 
-- [Hk Step](hk-step.md)
-- [Hopcroft Karp Aux](hopcroft-karp-aux.md)
+- [Hopcroft–Karp step](hk-step.md)
+- [Hopcroft–Karp phase loop](hopcroft-karp-aux.md)
 
 ## Sources
 

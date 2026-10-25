@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.mem_postorder_iff_reachable
 ---
 
-# Mem postorder iff reachable
+# Depth-first search finishes exactly the reachable vertices
 
-Finish order contains exactly the vertices reachable from the roots.
+**Depth-first search finishes exactly the reachable vertices.** Let $G$ be a finite directed
+graph and $R$ a list of root vertices. A vertex $v$ occurs in the finish order (postorder) of the
+depth-first search of $G$ from $R$ if and only if there is a root $r$ in $R$ from which $v$ is
+reachable in $G$ by a directed path of length zero or more.
 
 ## Depends on
 
-- [Traversal](traversal.md)
-- [Dfs](dfs.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
+- [Depth-first traversal record](traversal.md)
+- [Left-first depth-first search](dfs.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
 - [Steps](steps.md)
-- [Mem preorder iff reachable](mem-preorder-iff-reachable.md)
+- [Depth-first search discovers exactly the reachable vertices](mem-preorder-iff-reachable.md)
 
 ## Sources
 

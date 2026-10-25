@@ -27,8 +27,8 @@ place.
 - [Prim's tree is a spanning tree](prim-tree-is-tree.md)
 - [Symmetrized edge weights](sym-weight.md)
 - [One step up a parent array](up.md)
-- [Basic](../../graph/prim/prim.md)
-- [Prim root](../../graph/prim/correctness/prim-root.md)
+- [Prim's algorithm with an indexed binary heap](../../graph/prim/prim.md)
+- [The root has no parent in Prim's algorithm](../../graph/prim/correctness/prim-root.md)
 
 ## Sources
 

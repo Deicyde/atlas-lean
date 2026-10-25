@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.GraphicMatroid.IsForestSet
 ---
 
-# Is Forest Set
+# Forests of a graph
 
-`I` is a forest of `G`: a set of edges of `G` without cycles.
+**Forests of a graph.** A set $I$ of unordered pairs of vertices is a forest of a simple graph
+$G$ when every element of $I$ is an edge of $G$ and the graph with edge set $I$ has no cycles.
 
 ## Depends on
 

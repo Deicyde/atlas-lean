@@ -4,37 +4,37 @@ navigation: module
 
 # Segment Intersection
 
-- [Cross](cross.md)
-- [Direction](direction.md)
-- [On Segment](on-segment.md)
-- [Straddles](straddles.md)
-- [Collinear Branch](collinear-branch.md)
-- [Segments Intersect](segments-intersect.md)
+- [Cross product of plane vectors](cross.md)
+- [Direction of three points](direction.md)
+- [The ON-SEGMENT test](on-segment.md)
+- [Values of opposite sign](straddles.md)
+- [Collinear-endpoint step of SEGMENTS-INTERSECT](collinear-branch.md)
+- [The SEGMENTS-INTERSECT procedure](segments-intersect.md)
 
 ## Cost
 
-- [Segments Intersect time](segments-intersect-time.md)
+- [Running time of SEGMENTS-INTERSECT](segments-intersect-time.md)
 
 ## Geometry of the tests
 
-- [Segments Intersect ret](segments-intersect-ret.md)
-- [On Segment of mem](on-segment-of-mem.md)
-- [Direction eq zero of mem](direction-eq-zero-of-mem.md)
+- [SEGMENTS-INTERSECT as a Boolean formula](segments-intersect-ret.md)
+- [Points of a segment lie in its bounding box](on-segment-of-mem.md)
+- [Points of a segment have direction zero](direction-eq-zero-of-mem.md)
 - [Mem segment of direction eq zero](mem-segment-of-direction-eq-zero.md)
 
 ## Straddling
 
 - [Sub ne zero](sub-ne-zero.md)
-- [Param mem](param-mem.md)
-- [Straddles of combo](straddles-of-combo.md)
-- [Inter nonempty of straddles](inter-nonempty-of-straddles.md)
+- [Zero-crossing parameter of values of opposite sign](param-mem.md)
+- [A vanishing convex combination of nonzero values forces opposite signs](straddles-of-combo.md)
+- [Properly crossing segments meet](inter-nonempty-of-straddles.md)
 
 ## Completeness
 
-- [Eq param of direction eq zero](eq-param-of-direction-eq-zero.md)
-- [Endpoint mem of collinear](endpoint-mem-of-collinear.md)
-- [Straddles or endpoint mem](straddles-or-endpoint-mem.md)
+- [Points with direction zero lie on the line](eq-param-of-direction-eq-zero.md)
+- [Collinear case of segment intersection](endpoint-mem-of-collinear.md)
+- [Meeting segments cross properly or an endpoint lies on the other](straddles-or-endpoint-mem.md)
 
 ## Correctness
 
-- [Segments Intersect ret eq true iff](segments-intersect-ret-eq-true-iff.md)
+- [Correctness of SEGMENTS-INTERSECT](segments-intersect-ret-eq-true-iff.md)

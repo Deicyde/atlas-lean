@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.minMax_ret
 ---
 
-# Min Max ret
+# Correctness of the simultaneous minimum and maximum algorithm
 
-The paired scan returns the canonical minimum and maximum of the original list.
+**Correctness of the simultaneous minimum and maximum algorithm.** For every list $xs$ over a
+linearly ordered type, the simultaneous minimum and maximum algorithm returns no result on $xs$
+when $xs$ is empty, and returns the pair $(\min xs, \max xs)$ of the least and greatest elements
+of $xs$ otherwise.
 
 ## Depends on
 
-- [Min Max](min-max.md)
+- [Simultaneous minimum and maximum](min-max.md)
 
 ## Sources
 

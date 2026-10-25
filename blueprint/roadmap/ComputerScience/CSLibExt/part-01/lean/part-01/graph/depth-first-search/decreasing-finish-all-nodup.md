@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DepthFirstSearch.decreasingFinishAll_nodup
 ---
 
-# Decreasing Finish All nodup
+# Whole-graph decreasing finish order has no repeated vertices
 
-Whole-graph decreasing finish order contains no duplicate vertices.
+**Whole-graph decreasing finish order has no repeated vertices.** For every directed graph
+$G$ with ordered adjacency lists, the whole-graph decreasing finish order of $G$ contains no
+vertex twice.
 
 ## Depends on
 
-- [Decreasing Finish All](decreasing-finish-all.md)
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Whole-graph decreasing finish order](decreasing-finish-all.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Decreasing Finish nodup](decreasing-finish-nodup.md)
+- [Decreasing finish order has no repeated vertices](decreasing-finish-nodup.md)
 
 ## Sources
 

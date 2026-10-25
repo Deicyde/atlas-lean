@@ -7,17 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_zero_modulus_one
 ---
 
-# Modular Exponentiation zero modulus one
+# Unreduced result at modulus one
 
-The CLRS base clause is deliberately visible at the modulus-one boundary.
+**Unreduced result at modulus one.** For every natural number $a$, modular exponentiation with
+base $a$, exponent $0$ and modulus $1$ returns $1$, whereas $a^0 \bmod 1 = 0$.
+
+The base case of the CLRS procedure returns $1$ without reducing it modulo the modulus; this
+boundary case keeps that visible.
 
 ## Depends on
 
-- [Modular Exponentiation](modular-exponentiation.md)
+- [Modular exponentiation](modular-exponentiation.md)
 
 ## Proof depends on
 
-- [Modular Exponentiation zero](modular-exponentiation-zero.md)
+- [Base case of modular exponentiation](modular-exponentiation-zero.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.Tseitin.negLit
 ---
 
-# Neg Lit
+# Complementary literal
 
-The complementary literal.
+**Complementary literal.** The complement of a literal $(x, b)$ with variable $x$ and
+polarity $b$ is the literal $(x, \lnot b)$: the same variable with the opposite polarity.
 
 ## Depends on
 

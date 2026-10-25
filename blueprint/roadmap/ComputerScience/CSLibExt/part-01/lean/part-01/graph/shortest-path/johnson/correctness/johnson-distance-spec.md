@@ -6,47 +6,52 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Johnson.johnson_distance_spec
 ---
 
-# Johnson distance spec
+# Correctness of Johnson's algorithm
 
-Every returned Johnson cell has the canonical infinity, realization and minimum semantics.
+**Correctness of Johnson's algorithm.** Let $E$ be a list of directed edges on the vertices
+$\{0, \dots, n-1\}$ with integer weights, and suppose Johnson's algorithm on $E$ returns a
+table $d$. Then for all vertices $s$ and $t$, $d(s, t) = \infty$ if and only if $t$ is not
+reachable from $s$ along edges of $E$. Moreover, if $d(s, t)$ is an integer $x$, then some
+weighted path in $E$ from $s$ to $t$ has weight $x$, and every weighted path in $E$ from $s$ to
+$t$ has weight at least $x$.
 
 ## Depends on
 
-- [Edge](../../bellman-ford/basic/edge.md)
-- [Is Weighted Path](../../bellman-ford/basic/is-weighted-path.md)
-- [Path Weight](../../bellman-ford/basic/path-weight.md)
-- [To Directed Adjacency](../../bellman-ford/basic/to-directed-adjacency.md)
-- [Reachable](../../../directed-adjacency-2/reachable.md)
-- [Basic](../johnson.md)
+- [Weighted directed edge](../../bellman-ford/basic/edge.md)
+- [Weighted path in an edge list](../../bellman-ford/basic/is-weighted-path.md)
+- [Bellman–Ford path weight](../../bellman-ford/basic/path-weight.md)
+- [Weight-forgetting directed graph](../../bellman-ford/basic/to-directed-adjacency.md)
+- [Reachability in a directed graph](../../../directed-adjacency-2/reachable.md)
+- [Johnson's algorithm](../johnson.md)
 
 ## Proof depends on
 
-- [Cost](../../bellman-ford/basic/cost.md)
-- [Total](../../bellman-ford/basic/total.md)
-- [Distances](../../bellman-ford/basic/distances.md)
-- [Reachable Negative Cycle](../../bellman-ford/basic/reachable-negative-cycle.md)
-- [Result](../../bellman-ford/basic/result.md)
+- [Bellman-Ford cost counters](../../bellman-ford/basic/cost.md)
+- [Total Bellman–Ford cost](../../bellman-ford/basic/total.md)
+- [Bellman-Ford distance table](../../bellman-ford/basic/distances.md)
+- [Reachable negative cycle witness](../../bellman-ford/basic/reachable-negative-cycle.md)
+- [Bellman–Ford result](../../bellman-ford/basic/result.md)
 - [Bellman Ford](../../bellman-ford/correctness/bellman-ford.md)
-- [Bellman Ford distance eq none iff](../../bellman-ford/correctness/bellman-ford-distance-eq-none-iff.md)
-- [Bellman Ford distance minimal](../../bellman-ford/correctness/bellman-ford-distance-minimal.md)
-- [Bellman Ford distance realized](../../bellman-ford/correctness/bellman-ford-distance-realized.md)
-- [Edge to Directed Adjacency iff](../../bellman-ford/basic/edge-to-directed-adjacency-iff.md)
+- [Bellman-Ford leaves exactly the unreachable vertices at infinite distance](../../bellman-ford/correctness/bellman-ford-distance-eq-none-iff.md)
+- [Bellman-Ford distances are lower bounds on walk weights](../../bellman-ford/correctness/bellman-ford-distance-minimal.md)
+- [Bellman-Ford distances are realized by walks](../../bellman-ford/correctness/bellman-ford-distance-realized.md)
+- [Edges of the weight-forgetting graph](../../bellman-ford/basic/edge-to-directed-adjacency-iff.md)
 - [Is Weighted Path append edge](../../bellman-ford/basic/is-weighted-path-append-edge.md)
 - [Is Weighted Path tail](../../bellman-ford/basic/is-weighted-path-tail.md)
 - [Path Weight append edge](../../bellman-ford/basic/path-weight-append-edge.md)
-- [Reachable iff exists is Weighted Path](../../bellman-ford/basic/reachable-iff-exists-is-weighted-path.md)
-- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](../../dijkstra/dijkstra-cost.md)
-- [Total](../../dijkstra/total.md)
-- [Dijkstra Result](../../dijkstra/dijkstra-result.md)
-- [Edge](../../../directed-adjacency-2/edge.md)
-- [Has Path Weight](../../dijkstra/has-path-weight.md)
-- [Reachable iff](../../../directed-adjacency-2/reachable-iff.md)
-- [Dijkstra](../../dijkstra/dijkstra.md)
-- [Dijkstra distance eq none iff](../../dijkstra/dijkstra-distance-eq-none-iff.md)
-- [Dijkstra distance minimal](../../dijkstra/dijkstra-distance-minimal.md)
-- [Dijkstra distance realized](../../dijkstra/dijkstra-distance-realized.md)
-- [Path Weight](../../dijkstra/path-weight.md)
+- [Reachability by weighted paths](../../bellman-ford/basic/reachable-iff-exists-is-weighted-path.md)
+- [Directed adjacency graph](../../../directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](../../dijkstra/dijkstra-cost.md)
+- [Total Dijkstra cost](../../dijkstra/total.md)
+- [Output of Dijkstra's algorithm](../../dijkstra/dijkstra-result.md)
+- [Edge of a directed adjacency graph](../../../directed-adjacency-2/edge.md)
+- [Walks of a given weight](../../dijkstra/has-path-weight.md)
+- [Semantically equivalent graphs have the same reachability](../../../directed-adjacency-2/reachable-iff.md)
+- [Dense Dijkstra's algorithm](../../dijkstra/dijkstra.md)
+- [Dijkstra's distance is infinite exactly at unreachable vertices](../../dijkstra/dijkstra-distance-eq-none-iff.md)
+- [Dijkstra's finite distances are lower bounds on walk weights](../../dijkstra/dijkstra-distance-minimal.md)
+- [Dijkstra's finite distances are realized by walks](../../dijkstra/dijkstra-distance-realized.md)
+- [Endpoint-weight sum along a vertex list](../../dijkstra/path-weight.md)
 
 ## Sources
 

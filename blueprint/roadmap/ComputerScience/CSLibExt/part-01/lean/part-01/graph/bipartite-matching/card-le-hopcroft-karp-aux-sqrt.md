@@ -6,31 +6,35 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BipartiteMatching.card_le_hopcroftKarpAux_sqrt
 ---
 
-# Hopcroft and Karp's bound: `2 ⌊√b⌋ + 2` phases suffice
+# Hopcroft and Karp's bound on the number of phases
 
-**Hopcroft and Karp's bound: `2 ⌊√b⌋ + 2` phases suffice.** From the empty matching, after
-`2 ⌊√b⌋ + 2` phases the matching is maximum. After the first `⌊√b⌋ + 1` phases every augmenting
-path has more than `⌊√b⌋` pairs (`firstFreeRound_hopcroftKarpAux`), so the deficit is at most
-`⌊√b⌋` (`mul_card_sub_le`), and each further phase adds an edge.
+**Hopcroft and Karp's bound on the number of phases.** In a bipartite graph with $b$ right
+vertices, run at most $2 \lfloor \sqrt{b} \rfloor + 2$ Hopcroft–Karp phases from the empty
+matching, stopping early when a phase finds no augmenting path. Then no matching of the graph has
+more edges than the resulting one.
+
+After the first $\lfloor \sqrt{b} \rfloor + 1$ phases every augmenting path has more than
+$\lfloor \sqrt{b} \rfloor$ pairs, so the deficit against any matching is at most
+$\lfloor \sqrt{b} \rfloor$, and each further phase adds an edge.
 
 ## Depends on
 
-- [Is Matching](is-matching.md)
-- [Hopcroft Karp Aux](hopcroft-karp-aux.md)
-- [Pairs](pairs.md)
+- [Matching in a bipartite graph](is-matching.md)
+- [Hopcroft–Karp phase loop](hopcroft-karp-aux.md)
+- [Matched pairs of a partner assignment](pairs.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
+- [Partner arrays that describe a matching](valid.md)
 - [Card le hopcroft Karp Aux of le](card-le-hopcroft-karp-aux-of-le.md)
 - [Kőnig's certificate](card-le-of-no-free.md)
-- [First Free Round](first-free-round.md)
-- [First Free Round eq none](first-free-round-eq-none.md)
-- [First Free Round eq some](first-free-round-eq-some.md)
+- [First free round](first-free-round.md)
+- [When there is no first free round](first-free-round-eq-none.md)
+- [Characterization of the first free round](first-free-round-eq-some.md)
 - [Each phase lengthens the shortest augmenting paths](first-free-round-hopcroft-karp-aux.md)
-- [Hopcroft Karp Aux add](hopcroft-karp-aux-add.md)
-- [Layers](layers.md)
-- [The deficit is at most `b / d`](mul-card-sub-le.md)
+- [Fuel adds up in the phase loop](hopcroft-karp-aux-add.md)
+- [Alternating breadth-first layers](layers.md)
+- [The deficit is at most $b / d$](mul-card-sub-le.md)
 
 ## Sources
 

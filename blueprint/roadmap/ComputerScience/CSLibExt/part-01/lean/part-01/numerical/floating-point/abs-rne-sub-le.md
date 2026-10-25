@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FloatingPoint.abs_rne_sub_le
 ---
 
-# Round to nearest
+# Round to nearest integer
 
-**Round to nearest**: no integer is closer than `rne m`.
+**Round to nearest integer.** Let $K$ be a linearly ordered field with a floor function. For
+every $m \in K$ and every integer $k$, the integer $\operatorname{rne}(m)$ obtained by rounding
+$m$ to the nearest integer, ties to even, satisfies $|\operatorname{rne}(m) - m| \le |k - m|$:
+no integer is closer to $m$ than $\operatorname{rne}(m)$.
 
 ## Depends on
 
-- [Rne](rne.md)
+- [Nearest-integer rounding with ties to even](rne.md)
 
 ## Proof depends on
 
-- [Abs rne sub le min](abs-rne-sub-le-min.md)
+- [Rounding error bounded by the distances to neighbouring integers](abs-rne-sub-le-min.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Arithmetic mean of a finite real amplitude vector.
 
 ## Depends on
 
-- [Amplitude](../basic/amplitude.md)
+- [Real amplitude vectors](../basic/amplitude.md)
 
 ## Sources
 

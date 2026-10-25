@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.insertionSort_perm
 ---
 
-# Insertion Sort perm
+# Insertion sort permutes its input
 
-Insertion sort preserves every input occurrence, including duplicates.
+**Insertion sort permutes its input.** For every list $l$ over a linearly ordered type, the
+list returned by insertion sort is a permutation of $l$; in particular every element occurs in
+it exactly as often as in $l$.
 
 ## Depends on
 
-- [Insertion Sort](insertion-sort.md)
+- [Insertion sort with comparison cost](insertion-sort.md)
 
 ## Proof depends on
 
-- [Ret insertion Sort](ret-insertion-sort.md)
+- [Cost-annotated insertion sort returns the standard insertion sort](ret-insertion-sort.md)
 
 ## Sources
 

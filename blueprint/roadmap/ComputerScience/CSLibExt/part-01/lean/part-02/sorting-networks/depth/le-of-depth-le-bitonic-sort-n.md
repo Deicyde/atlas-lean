@@ -6,25 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.le_of_depthLE_bitonicSortN
 ---
 
-# Le of depth LE bitonic Sort N
+# The bitonic sorting comparator list on $2^k$ wires has depth at least $k$
 
-The general lower bound for the bitonic sorter's comparator list: every depth bound `d` for
-it has `k ≤ d`.
+**The bitonic sorting comparator list on $2^k$ wires has depth at least $k$.** For all natural
+numbers $k$ and $d$, if the comparator list of Batcher's bitonic sorter on the wires
+$0, \dots, 2^k - 1$ has depth at most $d$, then $k \le d$.
 
 ## Depends on
 
-- [Depth LE](depth-le.md)
-- [Bitonic Sort N](../bitonic/bitonic-sort-n.md)
+- [Depth bound for a comparator list](depth-le.md)
+- [Batcher's bitonic sorter on a block of wires](../bitonic/bitonic-sort-n.md)
 
 ## Proof depends on
 
-- [Within](../bitonic/within.md)
-- [Bitonic Merge](../bitonic/bitonic-merge.md)
+- [Comparators within an interval](../bitonic/within.md)
+- [Bitonic merger](../bitonic/bitonic-merge.md)
 - [The bitonic sorter sorts every `0`-`1` input](../bitonic/bitonic-sort-n-sorts.md)
-- [Extend False](../bitonic/extend-false.md)
-- [Half Cleaner](../bitonic/half-cleaner.md)
-- [Every sorting network on `n` wires has depth at least `log₂ n`](le-two-pow-of-sorts.md)
-- [Run N](../bitonic/run-n.md)
+- [Extension of a Boolean vector by false](../bitonic/extend-false.md)
+- [Half-cleaner](../bitonic/half-cleaner.md)
+- [Sorting comparator lists on $n$ wires have depth at least $\log_2 n$](le-two-pow-of-sorts.md)
+- [Running a comparator network](../bitonic/run-n.md)
 
 ## Sources
 

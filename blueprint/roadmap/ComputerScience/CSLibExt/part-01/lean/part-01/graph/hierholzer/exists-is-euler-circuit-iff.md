@@ -6,25 +6,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.exists_isEulerCircuit_iff
 ---
 
-# Exists is Euler Circuit iff
+# Euler circuit criterion for directed multigraphs
 
-CLRS Problem 22-3: when every edge starts at a vertex reachable from `s`, an Euler circuit from
-`s` exists iff every vertex is balanced.
+**Euler circuit criterion for directed multigraphs.** Let $G$ be a directed adjacency graph,
+read as a multigraph with one edge per adjacency entry, and let $s$ be a vertex such that the
+source of every edge of $G$ is reachable from $s$. Then $G$ has an Euler circuit from $s$ if and
+only if $G$ is balanced, that is, every vertex is the source of exactly as many edge occurrences
+as it is the target of.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Edge](../directed-adjacency-2/edge.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
-- [Is Balanced](is-balanced.md)
-- [Is Euler Circuit](is-euler-circuit.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
+- [Balanced directed multigraph](is-balanced.md)
+- [Euler circuit in a directed multigraph](is-euler-circuit.md)
 
 ## Proof depends on
 
 - [Hierholzer](hierholzer.md)
-- [Hierholzer is Euler Circuit](hierholzer-is-euler-circuit.md)
-- [Is Balanced of is Euler Circuit](is-balanced-of-is-euler-circuit.md)
+- [Hierholzer's algorithm finds Euler circuits](hierholzer-is-euler-circuit.md)
+- [A directed multigraph with an Euler circuit is balanced](is-balanced-of-is-euler-circuit.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.Hierholzer](../../../../../../../../sources/v2/CSLibExt.md)
+- CLRS, third edition, Problem 22-3; strong connectivity is weakened to reachability from $s$ of the source of every edge.

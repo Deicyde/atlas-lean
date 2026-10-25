@@ -5,17 +5,21 @@ statement: formalized
 lean: Cslib.MachineLearning.Sequence.HiddenMarkov.back
 ---
 
-# Back
+# Backpointer of the tabulated Viterbi algorithm
 
-The backpointer: the best predecessor of `s`, given the previous step's table.
+**Backpointer of the tabulated Viterbi algorithm.** Let $h$ be a hidden Markov model with
+states $\{0, \dots, n-1\}$, where $n \ge 1$, and weights in a linearly ordered commutative
+semiring $R$, and let $a(s', s)$ be its transition weight from $s'$ to $s$. For a table
+$v \in R^n$ and a state $s$, the backpointer of $s$ is the first state $s'$, in the order
+$0, \dots, n-1$, that maximizes $v_{s'} \, a(s', s)$.
 
 ## Depends on
 
-- [HMM](hmm.md)
+- [Hidden Markov model](hmm.md)
 
 ## Proof depends on
 
-- [Argmax Fin](argmax-fin.md)
+- [First maximizer of a function on a finite range](argmax-fin.md)
 
 ## Sources
 

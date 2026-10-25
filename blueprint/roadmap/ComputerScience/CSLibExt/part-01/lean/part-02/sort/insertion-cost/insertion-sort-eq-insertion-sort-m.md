@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.insertionSort_eq_insertionSortM
 ---
 
-# Insertion Sort eq insertion Sort M
+# Agreement with CSLib's monadic insertion sort
 
-On `Type 0`, the complete return value and comparison charges equal CSLib's API.
+**Agreement with CSLib's monadic insertion sort.** For a list $l$ over a linearly ordered
+type in the lowest universe, the costed insertion sort of $l$ equals CSLib's generic monadic
+insertion sort run in the time-counting monad with the charged comparison: the returned lists
+agree and the numbers of charged comparisons agree.
 
 ## Depends on
 
-- [Compare LE](compare-le.md)
-- [Insertion Sort](insertion-sort.md)
+- [Charged comparison](compare-le.md)
+- [Insertion sort with comparison cost](insertion-sort.md)
 
 ## Proof depends on
 
-- [Insertion Sort Insert](insertion-sort-insert.md)
+- [Costed insertion into a list](insertion-sort-insert.md)
 
 ## Sources
 

@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.IsSemiBalanced
 ---
 
-# Is Semi Balanced
+# Semi-balanced directed multigraph
 
-At `s` one more edge occurrence leaves than enters, at `t` one more enters than leaves, and
-every other vertex is balanced (every vertex, when `s = t`).
+**Semi-balanced directed multigraph.** A finite directed multigraph is semi-balanced for
+vertices $s$ and $t$ when, for every vertex $x$, the number of edge occurrences leaving $x$ plus
+$[x = t]$ equals the number entering $x$ plus $[x = s]$, where $[P]$ is $1$ if $P$ holds and $0$
+otherwise. So for $s \ne t$, one more edge occurrence leaves $s$ than enters it, one more enters
+$t$ than leaves it, and every other vertex is balanced; for $s = t$ every vertex is balanced.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Edge List](edge-list.md)
+- [Edge list of a directed graph](edge-list.md)
 
 ## Sources
 

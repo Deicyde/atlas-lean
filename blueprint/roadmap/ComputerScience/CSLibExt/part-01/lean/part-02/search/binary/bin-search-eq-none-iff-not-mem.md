@@ -7,9 +7,13 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.binSearch_eq_none_iff_not_mem
 ---
 
-# Bin Search eq none iff not mem
+# Binary search on a sorted array fails exactly on non-members
 
-Full-range binary search returns `none` exactly when the key is absent.
+**Binary search on a sorted array fails exactly on non-members.** Let $A$ be an array with
+entries in a linearly ordered type, sorted so that an earlier entry is never greater than a later
+one, and let $k$ be an element of that type. Lean core's array binary search for $k$ over the
+whole of $A$, with the strict order $<$ as comparison, returns no element if and only if $k$ is
+not an entry of $A$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bin Search eq none iff](bin-search-eq-none-iff.md)
+- [Bounded binary search on a sorted array fails exactly when the key is absent](bin-search-eq-none-iff.md)
 
 ## Sources
 

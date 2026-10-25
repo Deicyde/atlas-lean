@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.getD_depthTable
 ---
 
-# Get D depth Table
+# The table of depths is correct
 
-The tabulated depths are the depths.
+**The table of depths is correct.** For every task $v$ of a computation DAG, the entry of the
+table of depths at position $v$ equals the depth of $v$.
 
 ## Depends on
 
-- [Dag](dag.md)
-- [Depth](depth.md)
-- [Depth Table](depth-table.md)
+- [Computation DAG](dag.md)
+- [Depth of a task in a computation DAG](depth.md)
+- [Table of depths](depth-table.md)
 
 ## Proof depends on
 
-- [Depths Up To](depths-up-to.md)
+- [Depths of an initial segment of tasks](depths-up-to.md)
 
 ## Sources
 

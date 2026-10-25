@@ -13,14 +13,14 @@ lean: Cslib.Algorithms.Lean.BipartiteMatching.pathTo_isAugmentingPath
 ## Depends on
 
 - [Is Augmenting Path](is-augmenting-path.md)
-- [Valid](valid.md)
-- [Layers](layers.md)
-- [Path To](path-to.md)
+- [Partner arrays that describe a matching](valid.md)
+- [Alternating breadth-first layers](layers.md)
+- [Walking the layers back](path-to.md)
 
 ## Proof depends on
 
-- [Alt Path](alt-path.md)
-- [Path To spec](path-to-spec.md)
+- [Alternating path](alt-path.md)
+- [The walk back is an alternating path](path-to-spec.md)
 
 ## Sources
 

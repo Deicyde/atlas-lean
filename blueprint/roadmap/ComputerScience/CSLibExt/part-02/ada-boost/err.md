@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.MachineLearning.AdaBoost.err
 ---
 
-# Err
+# Weighted training error
 
-The weighted training error of the predictions `h` under the weights `D`.
+**Weighted training error.** For labels $y$, weights $D$ and predictions $h$ on $m$ training
+points, the weighted training error of $h$ under $D$ is $\sum_{i : h(i) \ne y(i)} D(i)$, the total
+weight of the points that $h$ misclassifies.
 
 ## Depends on
 

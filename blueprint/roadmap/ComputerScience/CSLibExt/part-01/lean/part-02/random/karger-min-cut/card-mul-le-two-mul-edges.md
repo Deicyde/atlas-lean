@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Karger.card_mul_le_two_mul_edges
 ---
 
-# Card mul le two mul edges
+# Minimum cut size bounds the number of edges
 
-Every vertex has degree at least the minimum cut size, so `n k ≤ 2 |E|`.
+**Minimum cut size bounds the number of edges.** Let $G$ be a valid multigraph state with
+$n \ge 2$ vertices, $m$ edges (counted with multiplicity) and minimum cut size $k$. Then
+$n k \le 2m$: every vertex has degree at least $k$, since its singleton is a cut.
 
 ## Depends on
 
-- [Is Min Cut](is-min-cut.md)
-- [State](state.md)
-- [Valid](valid.md)
+- [Minimum cut size](is-min-cut.md)
+- [Multigraph state of Karger's algorithm](state.md)
+- [Valid multigraph](valid.md)
 
 ## Proof depends on
 
-- [Is Cut](is-cut.md)
-- [Cut Size](cut-size.md)
-- [Sum degree](sum-degree.md)
+- [Cuts of a multigraph](is-cut.md)
+- [Size of a cut](cut-size.md)
+- [Handshake lemma](sum-degree.md)
 
 ## Sources
 

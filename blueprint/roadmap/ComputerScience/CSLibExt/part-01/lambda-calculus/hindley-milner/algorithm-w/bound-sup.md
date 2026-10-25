@@ -17,7 +17,7 @@ $0$ if no bound variable occurs in $\sigma$.
 
 ## Proof depends on
 
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Sources
 

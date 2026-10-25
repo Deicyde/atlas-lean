@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Geometry.lowerHull_turn_left
 ---
 
-# Lower Hull turn left
+# The lower chain turns strictly left
 
-The chain turns strictly left at every inner vertex.
+**The lower chain turns strictly left.** Let $\Bbbk$ be a linearly ordered field and let
+$p_1, \dots, p_n$ be points of $\Bbbk^2$ that are strictly increasing in lexicographic $(x, y)$
+order, with lower chain $c_0, \dots, c_{m-1}$. Writing
+$\operatorname{cross}(u, v) = u_x v_y - v_x u_y$, for every $i$ with $i + 2 < m$ we have
+$\operatorname{cross}(c_{i+1} - c_i, c_{i+2} - c_i) > 0$.
 
 ## Depends on
 
-- [Cross](../segment-intersection/cross.md)
-- [Lower Hull](lower-hull.md)
+- [Cross product of plane vectors](../segment-intersection/cross.md)
+- [Lower chain](lower-hull.md)
 
 ## Proof depends on
 
-- [Chain Scan](chain-scan.md)
-- [Pop Non Left](pop-non-left.md)
+- [Monotone chain scan](chain-scan.md)
+- [Pop step of the monotone-chain scan](pop-non-left.md)
 
 ## Sources
 

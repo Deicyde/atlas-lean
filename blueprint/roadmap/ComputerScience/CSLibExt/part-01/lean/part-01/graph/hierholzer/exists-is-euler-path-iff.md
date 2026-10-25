@@ -6,24 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.exists_isEulerPath_iff
 ---
 
-# Exists is Euler Path iff
+# Euler path criterion for directed multigraphs
 
-When every edge starts at a vertex reachable from `s`, an Euler path from `s` to `t` exists
-iff the graph is semi-balanced for `s` and `t`.
+**Euler path criterion for directed multigraphs.** Let $G$ be a directed adjacency graph, read
+as a multigraph with one edge per adjacency entry, and let $s$ and $t$ be vertices such that the
+source of every edge of $G$ is reachable from $s$. Then $G$ has an Euler path from $s$ to $t$ if
+and only if $G$ is semi-balanced for $s$ and $t$: at $s$ one more edge occurrence leaves than
+enters, at $t$ one more enters than leaves, and every other vertex is the source of exactly as
+many edge occurrences as it is the target of (every vertex, when $s = t$).
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Edge](../directed-adjacency-2/edge.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
-- [Is Euler Path](is-euler-path.md)
-- [Is Semi Balanced](is-semi-balanced.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
+- [Euler path in a directed multigraph](is-euler-path.md)
+- [Semi-balanced directed multigraph](is-semi-balanced.md)
 
 ## Proof depends on
 
 - [Hierholzer](hierholzer.md)
-- [Hierholzer is Euler Path](hierholzer-is-euler-path.md)
-- [Is Semi Balanced of is Euler Path](is-semi-balanced-of-is-euler-path.md)
+- [Hierholzer's algorithm finds Euler paths](hierholzer-is-euler-path.md)
+- [A directed multigraph with an Euler path is semi-balanced](is-semi-balanced-of-is-euler-path.md)
 
 ## Sources
 

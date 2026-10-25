@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.augment_of_greedyOptimal
 ---
 
-# Augment of greedy Optimal
+# Greedy optimality gives the augmentation axiom
 
-Greedy optimality implies the augmentation axiom.
+**Greedy optimality gives the augmentation axiom.** Let $\alpha$ be a finite type and let
+$\mathrm{indep}$ be an independence system on the finite subsets of $\alpha$ for which the greedy
+algorithm is optimal. If $I$ and $J$ are independent sets with $|I| < |J|$, then some element
+$e \in J$ with $e \notin I$ makes $I \cup \{e\}$ independent.
 
 ## Depends on
 
-- [Greedy Optimal](greedy-optimal.md)
-- [Is Indep System](is-indep-system.md)
+- [Greedy optimality](greedy-optimal.md)
+- [Independence system](is-indep-system.md)
 
 ## Proof depends on
 
-- [Matroid Greedy](../matroid-greedy/matroid-greedy.md)
-- [Matroid Greedy Scan](../matroid-greedy/matroid-greedy-scan.md)
-- [Matroid Greedy Scan append](../matroid-greedy/matroid-greedy-scan-append.md)
-- [Matroid Greedy Scan of forall not](matroid-greedy-scan-of-forall-not.md)
-- [Matroid Greedy Scan of subset](matroid-greedy-scan-of-subset.md)
+- [Greedy algorithm on a matroid](../matroid-greedy/matroid-greedy.md)
+- [Greedy scan with an independence oracle](../matroid-greedy/matroid-greedy-scan.md)
+- [Running time of the matroid greedy algorithm](../matroid-greedy/matroid-greedy-scan-append.md)
+- [A scan that accepts nothing](matroid-greedy-scan-of-forall-not.md)
+- [A scan inside an independent set keeps everything](matroid-greedy-scan-of-subset.md)
 
 ## Sources
 

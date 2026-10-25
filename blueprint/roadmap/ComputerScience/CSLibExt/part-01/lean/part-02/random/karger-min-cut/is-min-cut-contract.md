@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Karger.isMinCut_contract
 ---
 
-# Is Min Cut contract
+# Contraction preserves the minimum cut size
 
-Contracting an edge that does not cross a minimum cut keeps the minimum cut size.
+**Contraction preserves the minimum cut size.** Let $G$ be a valid multigraph state with
+minimum cut size $k$, and let $X$ be a cut of $G$ of size $k$. If $e = (a, b)$ is an edge of $G$
+with $X(a) = X(b)$, then the contraction of $G$ along $e$ also has minimum cut size $k$.
 
 ## Depends on
 
-- [Is Cut](is-cut.md)
-- [Is Min Cut](is-min-cut.md)
-- [State](state.md)
-- [Valid](valid.md)
-- [Contract](contract.md)
-- [Cut Size](cut-size.md)
+- [Cuts of a multigraph](is-cut.md)
+- [Minimum cut size](is-min-cut.md)
+- [Multigraph state of Karger's algorithm](state.md)
+- [Valid multigraph](valid.md)
+- [Edge contraction](contract.md)
+- [Size of a cut](cut-size.md)
 
 ## Proof depends on
 
-- [Cut Size contract](cut-size-contract.md)
-- [Rename](rename.md)
+- [Cut sizes under contraction](cut-size-contract.md)
+- [Renaming a vertex](rename.md)
 
 ## Sources
 

@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.takeSerial?_getElem?_of_ne
 ---
 
-# Take Serial? get Elem? of ne
+# Removing a serial leaves the other table entries unchanged
 
-Taking one serial leaves every other table cell unchanged.
+**Removing a serial leaves the other table entries unchanged.** Let $t$ be a table of
+optional Huffman work items. If removing serial number $s$ from $t$ succeeds and returns a tree
+together with an updated table $t'$, then for every index $j \ne s$ the entry of $t'$ at $j$
+equals the entry of $t$ at $j$ (both are absent when $j$ is out of bounds).
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Huffman Work Item](huffman-work-item.md)
-- [Take Serial?](take-serial.md)
+- [Huffman tree](huffman-tree.md)
+- [Huffman work item](huffman-work-item.md)
+- [Removing a work item by serial](take-serial.md)
 
 ## Proof depends on
 
-- [Huffman Priority](huffman-priority.md)
+- [Huffman priority](huffman-priority.md)
 
 ## Sources
 

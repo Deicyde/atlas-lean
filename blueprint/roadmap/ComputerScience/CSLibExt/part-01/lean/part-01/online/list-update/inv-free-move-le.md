@@ -6,21 +6,27 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.inv_freeMove_le
 ---
 
-# A free move of `x` forward never adds inversions against a list that starts with `x`
+# Free moves never add inversions against a list headed by the moved item
 
-**A free move of `x` forward never adds inversions against a list that starts with `x`**
-(such as move-to-front's list right after accessing `x`).
+**Free moves never add inversions against a list headed by the moved item.** Let $L$ be a list
+without duplicates, $x$ an item of $L$, and $N$ a list that is empty or starts with $x$, all of
+whose items occur in $L$. For every $j \in \mathbb{N}$, let $L'$ be the list obtained from $L$ by
+moving $x$ forward for free so that exactly $j$ items precede it, where $L' = L$ if at most $j$
+items already precede $x$ in $L$. Then the number of inversions of $L'$ against $N$ is at most the
+number of inversions of $L$ against $N$.
+
+This applies to move-to-front's list right after accessing $x$.
 
 ## Depends on
 
-- [Free Move](free-move.md)
-- [Inv](inv.md)
+- [Free move](free-move.md)
+- [Number of inversions between two lists](inv.md)
 
 ## Proof depends on
 
-- [Idx Of erase](idx-of-erase.md)
-- [Inv Set](inv-set.md)
-- [Mem of mem inv Set](mem-of-mem-inv-set.md)
+- [Indices after erasing an entry](idx-of-erase.md)
+- [Inversion set of two lists](inv-set.md)
+- [Counting the entries before an entry](mem-of-mem-inv-set.md)
 
 ## Sources
 

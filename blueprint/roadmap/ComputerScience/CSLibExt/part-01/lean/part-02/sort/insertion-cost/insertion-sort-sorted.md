@@ -7,17 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.insertionSort_sorted
 ---
 
-# Insertion Sort sorted
+# Insertion sort returns a sorted list
 
-Insertion sort returns a nondecreasing list.
+**Insertion sort returns a sorted list.** For every list $l$ over a linearly ordered type,
+the list returned by insertion sort on $l$ is nondecreasing.
 
 ## Depends on
 
-- [Insertion Sort](insertion-sort.md)
+- [Insertion sort with comparison cost](insertion-sort.md)
 
 ## Proof depends on
 
-- [Ret insertion Sort](ret-insertion-sort.md)
+- [Cost-annotated insertion sort returns the standard insertion sort](ret-insertion-sort.md)
 
 ## Sources
 

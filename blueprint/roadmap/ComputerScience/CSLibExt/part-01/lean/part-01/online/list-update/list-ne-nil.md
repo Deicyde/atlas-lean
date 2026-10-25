@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.OnlineListUpdate.list_ne_nil
 ---
 
-# List ne nil
+# The list of an algorithm on a nonempty list is never empty
 
-The list is never empty when `M` is not.
+**The list of an algorithm on a nonempty list is never empty.** Let $A$ be a deterministic
+online list-update algorithm on the items of a nonempty list $M$. Then in every state of $A$, the
+list of $A$ is nonempty.
 
 ## Depends on
 

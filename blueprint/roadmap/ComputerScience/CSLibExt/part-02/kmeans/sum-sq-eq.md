@@ -6,10 +6,17 @@ proof: formalized
 lean: Cslib.MachineLearning.KMeans.sum_sq_eq
 ---
 
-# The centroid minimizes the sum of squared distances
+# Sum of squared distances about the centroid
 
-**The centroid minimizes the sum of squared distances**: for every point `c`,
-`∑ ‖x i - c‖² = ∑ ‖x i - μ‖² + |s| ‖μ - c‖²` with `μ` the centroid.
+**Sum of squared distances about the centroid.** Let $x_i$ ($i \in \iota$) be points in a
+real inner product space $E$, let $s$ be a finite set of indices, and let $\mu$ be the centroid of
+the points $x_i$ with $i \in s$. Then for every point $c \in E$,
+
+$$
+\sum_{i \in s} \|x_i - c\|^2 = \sum_{i \in s} \|x_i - \mu\|^2 + |s| \, \|\mu - c\|^2.
+$$
+
+Consequently the centroid minimizes the sum of squared distances to the points $x_i$, $i \in s$.
 
 ## Depends on
 

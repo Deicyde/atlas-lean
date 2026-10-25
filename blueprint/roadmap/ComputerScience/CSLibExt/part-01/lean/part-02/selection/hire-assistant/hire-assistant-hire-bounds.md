@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_hire_bounds
 ---
 
-# Hire Assistant hire bounds
+# Hire-count bounds for the hire-assistant scan
 
-A nonempty input makes at least one hire and at most one per interview.
+**Hire-count bounds for the hire-assistant scan.** For every nonempty list of $n$ candidates
+in a linearly ordered type, the number of hires $h$ recorded in the cost pair of the
+hire-assistant scan satisfies $1 \le h \le n$.
 
 ## Depends on
 
-- [Hire Assistant](hire-assistant.md)
+- [The hire-assistant scan](hire-assistant.md)
 
 ## Proof depends on
 
-- [Hire Assistant hires](hire-assistant-hires.md)
-- [Hire Assistant time](hire-assistant-time.md)
+- [The hire-assistant scan hires exactly the strict prefix maxima](hire-assistant-hires.md)
+- [Cost of the hire-assistant scan](hire-assistant-time.md)
 
 ## Sources
 

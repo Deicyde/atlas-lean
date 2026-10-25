@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GraphicMatroid.card_connectedComponent_deleteEdges_of_not_reachable
 ---
 
-# Card connected Component delete Edges of not reachable
+# Deleting a bridge adds one component
 
-Deleting an edge `a – b` whose endpoints become disconnected adds exactly one component.
+**Deleting a bridge adds one component.** Let $H$ be a simple graph on a finite vertex set
+and let $ab$ be an edge of $H$. If $a$ and $b$ are not connected in the graph obtained from $H$
+by deleting the edge $ab$, then that graph has exactly one more connected component than $H$.
 
 ## Depends on
 

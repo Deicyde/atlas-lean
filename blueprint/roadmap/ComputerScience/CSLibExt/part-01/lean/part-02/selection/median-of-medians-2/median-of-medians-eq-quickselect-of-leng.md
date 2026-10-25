@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.medianOfMedians_eq_quickselect_of_length_le
 ---
 
-# Median Of Medians eq quickselect of length le
+# Median-of-medians selection is quickselect on short lists
 
-Inputs in the fixed base range use the canonical timed quickselect exactly.
+**Median-of-medians selection is quickselect on short lists.** For every list $L$ of length
+at most $140$ over a linearly ordered type and every natural number $k$, median-of-medians
+selection of rank $k$ in $L$ coincides with timed quickselect of rank $k$ in $L$: both return
+the same result and are charged the same number of comparisons.
 
 ## Depends on
 
-- [Median Of Medians](median-of-medians.md)
+- [Median-of-medians selection](median-of-medians.md)
 - [Quickselect](../quickselect/quickselect.md)
 
 ## Proof depends on
 
-- [Three Way Partition](../../sort/partition/three-way-partition.md)
-- [Median Of Medians Groups](../median-of-medians/groups/median-of-medians-groups.md)
-- [Partition3](../../sort/partition/partition3.md)
+- [Three-way partition record](../../sort/partition/three-way-partition.md)
+- [Group medians for median-of-medians selection](../median-of-medians/groups/median-of-medians-groups.md)
+- [Stable three-way partition](../../sort/partition/partition3.md)
 
 ## Sources
 

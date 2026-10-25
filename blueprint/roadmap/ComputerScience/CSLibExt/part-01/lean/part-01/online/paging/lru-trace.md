@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.Paging.lruTrace
 ---
 
-# Lru Trace
+# The LRU trace
 
-The events LRU emits on a request sequence.
+**The LRU trace.** Given a capacity $k$, a cache $c$ and a request sequence $\sigma$, the
+events LRU emits on $\sigma$ from $c$: nothing on the empty sequence, and on a sequence $p$
+followed by $\sigma'$, the event LRU emits when serving $p$ from $c$, followed by the events LRU
+emits on $\sigma'$ from the cache after one LRU step with capacity $k$ serving $p$ from $c$.
 
 ## Depends on
 
-- [Cache Event](../../greedy/offline-caching/cache-event.md)
+- [Cache events](../../greedy/offline-caching/cache-event.md)
 
 ## Proof depends on
 
-- [Lru Event](lru-event.md)
-- [Lru Step](lru-step.md)
+- [The event of an LRU step](lru-event.md)
+- [One LRU step](lru-step.md)
 
 ## Sources
 

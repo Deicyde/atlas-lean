@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.udeg_erase
 ---
 
-# Udeg erase
+# Undirected Hierholzer's algorithm
 
-Hierholzer's algorithm on an undirected edge list, from `s`. -/
+**Undirected Hierholzer's algorithm.** Given a list $E$ of undirected edges (ordered pairs of
+vertices) and a start vertex $s$, run the undirected Hierholzer recursion from $s$ on $E$ with an
+empty accumulator and fuel $|E| + 1$, and return the list of emitted vertices; its cost is the
+cost of that recursion. -/
 def uhierholzer (E : List (V × V)) (s : V) : TimeM ℕ (List V) := do
   let r ← uvisit (E.length + 1) s E []
   pure r.1
@@ -17,7 +20,7 @@ def uhierholzer (E : List (V × V)) (s : V) : TimeM ℕ (List V) := do
 
 ## Depends on
 
-- [Udeg](udeg.md)
+- [Degree in an undirected edge list](udeg.md)
 
 ## Sources
 

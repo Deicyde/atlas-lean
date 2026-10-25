@@ -6,9 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.StringMatching.patternAutomaton
 ---
 
-# Pattern Automaton
+# String-matching automaton
 
-Canonical deterministic automaton whose transition is the constructed table.
+**String-matching automaton.** For a pattern $P$ of length $m$ over the alphabet
+$\{0, \dots, A-1\}$, the string-matching automaton of $P$ is the deterministic finite automaton
+with states $\{0, \dots, m\}$, input symbols $\{0, \dots, A-1\}$, start state $0$, accepting set
+$\{m\}$, and transition from state $q$ on symbol $a$ given by the entry at index $qA + a$ of the
+transition table of $P$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Compute Transition](compute-transition.md)
+- [Transition table of the string-matching automaton](compute-transition.md)
 
 ## Sources
 

@@ -6,24 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.bellmanFord_predecessor_spec
 ---
 
-# Bellman Ford predecessor spec
+# Bellman-Ford predecessor edges are tight
 
-Every returned predecessor is a tight input edge for the final distances.
+**Bellman-Ford predecessor edges are tight.** Let $E$ be a list of integer-weighted directed
+edges on the vertices $\{0, \dots, n-1\}$ and let $s$ be a vertex. Suppose Bellman-Ford run on
+$E$ from $s$ returns distances $d$ together with predecessor edges, and the predecessor edge of a
+vertex $t$ is an edge $e$ from $u$ to $v$ of weight $w$. Then $e$ belongs to $E$, $v = t$, and
+$d(u)$ and $d(t)$ are both finite with $d(t) = d(u) + w$.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Distances](../basic/distances.md)
-- [Edge](../basic/edge.md)
-- [Result](../basic/result.md)
+- [Bellman-Ford cost counters](../basic/cost.md)
+- [Bellman-Ford distance table](../basic/distances.md)
+- [Weighted directed edge](../basic/edge.md)
+- [Bellman–Ford result](../basic/result.md)
 - [Bellman Ford](bellman-ford.md)
 
 ## Proof depends on
 
-- [Is Weighted Path](../basic/is-weighted-path.md)
-- [Reachable Negative Cycle](../basic/reachable-negative-cycle.md)
-- [Path Vertices](../basic/path-vertices.md)
-- [Path Weight](../basic/path-weight.md)
+- [Weighted path in an edge list](../basic/is-weighted-path.md)
+- [Reachable negative cycle witness](../basic/reachable-negative-cycle.md)
+- [Vertices of a path](../basic/path-vertices.md)
+- [Bellman–Ford path weight](../basic/path-weight.md)
 
 ## Sources
 

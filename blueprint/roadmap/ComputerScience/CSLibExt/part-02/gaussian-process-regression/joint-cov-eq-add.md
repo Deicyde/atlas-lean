@@ -6,15 +6,19 @@ proof: formalized
 lean: Cslib.MachineLearning.GaussianProcessRegression.jointCov_eq_add
 ---
 
-# Joint Cov eq add
+# The joint covariance as a kernel matrix plus noise
 
-The joint covariance is the kernel matrix of all the inputs plus the noise variance on the
-training block.
+**The joint covariance as a kernel matrix plus noise.** For a kernel
+$k : X \times X \to \mathbb{R}$, a real number $\sigma^2$, test inputs $x^* = (x^*_i)_{i \in \tau}$
+and training inputs $x = (x_j)_{j \in \nu}$, the joint covariance of $k$, $\sigma^2$, $x^*$ and $x$
+equals $K + D$, where $K$ is the kernel matrix of the combined family $(x^*, x)$ indexed by
+$\tau \sqcup \nu$ and $D$ is the diagonal matrix with entry $0$ at each test index and $\sigma^2$
+at each training index.
 
 ## Depends on
 
 - [Joint Cov](joint-cov.md)
-- [Kernel Matrix](kernel-matrix.md)
+- [Kernel matrix](kernel-matrix.md)
 
 ## Sources
 

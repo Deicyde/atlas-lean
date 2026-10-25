@@ -27,9 +27,9 @@ to $\Gamma$.
 - [Monotypes](ty.md)
 - [Strict upper bound of a finite set of naturals](above.md)
 - [Generalization of a monotype](gen.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
-- [Term](../../../../part-02/unification/basic/term.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Proof depends on
 
@@ -39,10 +39,10 @@ to $\Gamma$.
 - [Evaluation of a type scheme](eval.md)
 - [Instantiation of a type scheme](inst.md)
 - [Monotypes as type schemes](to-scheme.md)
-- [Exists of mem vars subst](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
-- [Subst congr](../../../../part-02/unification/basic/subst-congr.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
-- [Vars subset vars subst](../../../../part-02/unification/basic/vars-subset-vars-subst.md)
+- [Variables of a substituted term](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
+- [Substitution depends only on the variables of the term](../../../../part-02/unification/basic/subst-congr.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
+- [Variables of a substituted variable occur in the substituted term](../../../../part-02/unification/basic/vars-subset-vars-subst.md)
 
 ## Sources
 

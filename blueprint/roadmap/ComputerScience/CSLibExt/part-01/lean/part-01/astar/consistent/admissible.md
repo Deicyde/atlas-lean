@@ -14,11 +14,11 @@ to $t$.
 
 ## Depends on
 
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Has Path Weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
+- [Walks of a given weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
 
 ## Sources
 

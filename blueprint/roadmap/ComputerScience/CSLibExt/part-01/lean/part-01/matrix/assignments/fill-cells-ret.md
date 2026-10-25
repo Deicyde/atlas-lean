@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.fillCells_ret
 ---
 
-# Fill Cells ret
+# The counted zero initialization returns the zero matrix
 
-The counted initialization returns the constant zero matrix.
+**The counted zero initialization returns the zero matrix.** For every type $\alpha$ with a
+zero element and every natural number $n$, the counted zero initialization of size $n$ over
+$\alpha$ returns the $n \times n$ matrix all of whose entries are $0$.
 
 ## Depends on
 
-- [Fill Cells](fill-cells.md)
+- [Counted zero initialization of a square matrix](fill-cells.md)
 
 ## Sources
 

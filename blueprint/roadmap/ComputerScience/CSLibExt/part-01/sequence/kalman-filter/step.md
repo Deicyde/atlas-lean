@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.MachineLearning.Sequence.KalmanFilter.step
 ---
 
-# Step
+# Kalman filter step
 
-One filter step: predict, then update with the new observation.
+**Kalman filter step.** Given real $n \times n$ matrices $F$ and $Q$, a real $p \times n$
+matrix $H$, a real $p \times p$ matrix $R$ and an observation $y \in \mathbb{R}^p$, one filter
+step sends a belief to the update, with $H$, $R$ and $y$, of its prediction with $F$ and $Q$.
 
 ## Depends on
 
-- [Belief](belief.md)
+- [Gaussian belief](belief.md)
 
 ## Proof depends on
 
-- [Predict](predict.md)
-- [Update](update.md)
+- [Kalman prediction](predict.md)
+- [Kalman filter update](update.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_time
 ---
 
-# Hire Assistant time
+# Cost of the hire-assistant scan
 
-The fee pair counts interviews and the actual chronological hiring history.
+**Cost of the hire-assistant scan.** For every list of $n$ candidates in a linearly ordered
+type, the cost pair of the hire-assistant scan is $(n, h)$, where $h$ is the length of the list
+of hired indices that the scan returns.
 
 ## Depends on
 
-- [Hire Assistant](hire-assistant.md)
+- [The hire-assistant scan](hire-assistant.md)
 
 ## Sources
 

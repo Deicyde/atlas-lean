@@ -7,9 +7,12 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.kmpSearch_eq_none_iff_not_isInfix
 ---
 
-# Kmp Search eq none iff not is Infix
+# KMP finds no match exactly when the pattern does not occur
 
-KMP returns no offset exactly when the pattern is not an infix of the text.
+**KMP finds no match exactly when the pattern does not occur.** For lists $p$ (the pattern)
+and $t$ (the text) over a type with a lawful boolean equality, KMP search for $p$ in $t$ returns
+no offset if and only if $p$ is not a contiguous sublist of $t$, that is, there are no lists
+$u$, $v$ with $t = u \, p \, v$ (concatenation).
 
 ## Depends on
 
@@ -17,9 +20,9 @@ KMP returns no offset exactly when the pattern is not an infix of the text.
 
 ## Proof depends on
 
-- [Match At](../basic/match-at.md)
-- [Exists match At iff is Infix](../basic/exists-match-at-iff-is-infix.md)
-- [Kmp Search eq none iff](kmp-search-eq-none-iff.md)
+- [Pattern match at an offset](../basic/match-at.md)
+- [A pattern occurs in a text iff it matches at some offset](../basic/exists-match-at-iff-is-infix.md)
+- [KMP finds no match exactly when no offset matches](kmp-search-eq-none-iff.md)
 
 ## Sources
 

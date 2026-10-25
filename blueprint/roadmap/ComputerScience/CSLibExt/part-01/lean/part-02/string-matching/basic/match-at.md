@@ -6,10 +6,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.StringMatching.MatchAt
 ---
 
-# Match At
+# Pattern match at an offset
 
-`MatchAt pattern text offset` means that `pattern` is a prefix of `text` starting at the
-zero-based `offset`. The explicit bound excludes offsets beyond the end for an empty pattern.
+**Pattern match at an offset.** For lists $p$ (the pattern) and $t$ (the text) over a type
+$\alpha$ and a natural number $k$, the pattern $p$ matches the text $t$ at the zero-based offset
+$k$ when $k$ is at most the length of $t$ and $p$ is a prefix of the list obtained from $t$ by
+dropping its first $k$ entries.
+
+The explicit bound on $k$ excludes offsets beyond the end of the text for an empty pattern.
 
 ## Depends on
 

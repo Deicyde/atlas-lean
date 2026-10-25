@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.partnerW
 ---
 
-# Partner W
+# Receiver's partner
 
-The receiver's partner: the proposer she holds.
+**Receiver's partner.** In a state $s$ of deferred acceptance with $n$ proposers and $n$
+receivers, both numbered $0, \dots, n-1$, the partner of a receiver $w$ is the proposer she holds
+in $s$; if she holds nobody, it is the proposer numbered $w$ (a default value).
 
 ## Depends on
 
-- [State](state.md)
+- [Deferred-acceptance state](state.md)
 
 ## Sources
 

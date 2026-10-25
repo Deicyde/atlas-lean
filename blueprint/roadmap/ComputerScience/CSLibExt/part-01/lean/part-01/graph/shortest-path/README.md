@@ -7,5 +7,5 @@
 - [Johnson](johnson/README.md)
 - [Dijkstra](dijkstra/README.md)
 - [Extend](extend/README.md)
-- [Matrix Power](matrix-pow-edge-bounded.md)
+- [Min-plus matrix powers give shortest path weights with at most $r$ edges](matrix-pow-edge-bounded.md)
 - [Slow APSP](slow-apsp/README.md)

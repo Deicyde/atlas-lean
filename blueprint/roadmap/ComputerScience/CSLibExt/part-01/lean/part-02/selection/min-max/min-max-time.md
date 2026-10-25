@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.minMax_time
 ---
 
-# Min Max time
+# Comparison count of the simultaneous minimum and maximum algorithm
 
-The same run uses exactly `ceil (3 * length / 2) - 2` comparisons when nonempty.
+**Comparison count of the simultaneous minimum and maximum algorithm.** For every list of
+length $n$ over a linearly ordered type, the simultaneous minimum and maximum algorithm makes no
+comparisons when $n = 0$ and exactly $\lceil 3n/2 \rceil - 2$ comparisons when $n \ge 1$.
+
 This counts element-order decisions, not full RAM instructions or comparator bit complexity.
 
 ## Depends on
 
-- [Min Max](min-max.md)
+- [Simultaneous minimum and maximum](min-max.md)
 
 ## Proof depends on
 
-- [Min Max nil](min-max-nil.md)
-- [Min Max time even](min-max-time-even.md)
-- [Min Max time odd](min-max-time-odd.md)
+- [The min–max algorithm on the empty list](min-max-nil.md)
+- [Comparisons of the min–max algorithm on even-length lists](min-max-time-even.md)
+- [Comparisons of the min–max algorithm on odd-length lists](min-max-time-odd.md)
 
 ## Sources
 

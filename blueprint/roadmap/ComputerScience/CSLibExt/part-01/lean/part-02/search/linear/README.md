@@ -4,12 +4,12 @@ navigation: module
 
 # Linear
 
-- [Linear Search](linear-search.md)
-- [Ret linear Search](ret-linear-search.md)
-- [Linear Search eq some iff](linear-search-eq-some-iff.md)
-- [Linear Search eq none iff](linear-search-eq-none-iff.md)
-- [Linear Search time nil](linear-search-time-nil.md)
-- [Linear Search time cons](linear-search-time-cons.md)
-- [Linear Search time eq of ret eq some](linear-search-time-eq-of-ret-eq-some.md)
-- [Linear Search time eq of ret eq none](linear-search-time-eq-of-ret-eq-none.md)
-- [Linear Search time le](linear-search-time-le.md)
+- [Linear search](linear-search.md)
+- [Linear search returns the first satisfying index](ret-linear-search.md)
+- [Characterization of a successful linear search](linear-search-eq-some-iff.md)
+- [Linear search fails exactly when no element satisfies the predicate](linear-search-eq-none-iff.md)
+- [Cost of linear search on the empty list](linear-search-time-nil.md)
+- [Cost recurrence for linear search](linear-search-time-cons.md)
+- [Cost of a successful linear search](linear-search-time-eq-of-ret-eq-some.md)
+- [Cost of an unsuccessful linear search](linear-search-time-eq-of-ret-eq-none.md)
+- [Linear search costs at most the list length](linear-search-time-le.md)

@@ -7,21 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FloydWarshall.floydWarshall_distance_eq_top_iff
 ---
 
-# Floyd Warshall distance eq top iff
+# Floyd–Warshall reports $\infty$ exactly for unreachable pairs
 
-An output cell is infinite exactly when no weighted path connects its endpoints.
+**Floyd–Warshall reports $\infty$ exactly for unreachable pairs.** Let $w$ assign a weight
+in $\mathbb{Z} \cup \{\infty\}$ to each ordered pair of vertices in $\{0, \dots, n-1\}$, and let $D$
+be the distance matrix computed by Floyd–Warshall from $w$. For all vertices $s$ and $t$,
+$D(s, t) = \infty$ if and only if there is no weighted path from $s$ to $t$, that is, no nonempty
+vertex sequence from $s$ to $t$ in which every consecutive pair has finite weight.
 
 ## Depends on
 
-- [Cost](../basic/cost.md)
-- [Is Weighted Path](../basic/is-weighted-path.md)
-- [Floyd Warshall](../basic/floyd-warshall.md)
+- [Floyd–Warshall cost record](../basic/cost.md)
+- [Finite-weight vertex path in a weight matrix](../basic/is-weighted-path.md)
+- [Floyd–Warshall algorithm](../basic/floyd-warshall.md)
 
 ## Proof depends on
 
-- [Internal Vertices Below](../basic/internal-vertices-below.md)
-- [Floyd Warshall distance realized](floyd-warshall-distance-realized.md)
-- [Path Weight](../basic/path-weight.md)
+- [Intermediate vertices below a bound](../basic/internal-vertices-below.md)
+- [Finite Floyd–Warshall distances are attained](floyd-warshall-distance-realized.md)
+- [Weight of a vertex path in an extended-integer weight matrix](../basic/path-weight.md)
 
 ## Sources
 

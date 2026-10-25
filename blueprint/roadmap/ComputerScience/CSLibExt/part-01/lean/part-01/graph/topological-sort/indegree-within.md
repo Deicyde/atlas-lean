@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TopologicalSort.indegreeWithin
 ---
 
-# Indegree Within
+# Indegree within a vertex list
 
-The number of incoming edges to `v` whose sources lie in `remaining`.
+**Indegree within a vertex list.** For a finite directed graph $G$, a list $R$ of vertices and
+a vertex $v$, the indegree of $v$ within $R$ is the number of entries $u$ of $R$, counted with
+multiplicity, such that $G$ has an edge from $u$ to $v$.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Has Edge](../directed-adjacency-2/has-edge.md)
+- [Boolean edge test](../directed-adjacency-2/has-edge.md)
 
 ## Sources
 

@@ -4,9 +4,9 @@ navigation: module
 
 # Slow APSP
 
-- [Slow APSP](slow-apsp.md)
-- [Slow APSP ret](slow-apsp-ret.md)
-- [Slow APSP edge Bounded](slow-apsp-edge-bounded.md)
-- [Slow APSP distance spec](slow-apsp-distance-spec.md)
-- [Slow APSP time](slow-apsp-time.md)
-- [Slow APSP time is Theta](slow-apsp-time-is-theta.md)
+- [Slow all-pairs shortest paths (SLOW-APSP)](slow-apsp.md)
+- [SLOW-APSP returns a min-plus matrix power](slow-apsp-ret.md)
+- [Bounded-edge shortest weights from SLOW-APSP](slow-apsp-edge-bounded.md)
+- [SLOW-APSP computes shortest-path weights](slow-apsp-distance-spec.md)
+- [Exact operation counts of SLOW-APSP](slow-apsp-time.md)
+- [SLOW-APSP takes quartic time](slow-apsp-time-is-theta.md)

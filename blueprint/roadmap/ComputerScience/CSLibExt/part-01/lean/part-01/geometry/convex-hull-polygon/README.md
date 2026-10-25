@@ -4,27 +4,27 @@ navigation: module
 
 # Convex Hull Polygon
 
-- [Upper Hull](upper-hull.md)
+- [Upper chain](upper-hull.md)
 - [Convex Hull](convex-hull.md)
 
 ## Point reflection
 
-- [Upper Hull eq](upper-hull-eq.md)
+- [The upper chain is a reflected lower chain](upper-hull-eq.md)
 
 ## The upper chain
 
-- [Upper Hull sublist](upper-hull-sublist.md)
-- [Upper Hull head?](upper-hull-head.md)
-- [Upper Hull get Last?](upper-hull-get-last.md)
-- [Upper Hull turn left](upper-hull-turn-left.md)
-- [Upper Hull left of edges](upper-hull-left-of-edges.md)
-- [Upper Hull time le](upper-hull-time-le.md)
+- [The upper chain is a subsequence of the reversed input](upper-hull-sublist.md)
+- [The upper chain starts at the last point](upper-hull-head.md)
+- [The upper chain ends at the first point](upper-hull-get-last.md)
+- [The upper chain turns strictly left](upper-hull-turn-left.md)
+- [Every input point lies left of the upper chain](upper-hull-left-of-edges.md)
+- [Running time of the upper chain scan](upper-hull-time-le.md)
 
 ## The hull
 
-- [Convex Hull subset](convex-hull-subset.md)
-- [Convex Hull left of edges](convex-hull-left-of-edges.md)
-- [Convex Hull time le](convex-hull-time-le.md)
+- [The hull's vertices are input points](convex-hull-subset.md)
+- [The hull polygon contains every input point](convex-hull-left-of-edges.md)
+- [The monotone chain hull makes at most $4n$ orientation tests](convex-hull-time-le.md)
 
 ## Strict convexity of the polygon
 

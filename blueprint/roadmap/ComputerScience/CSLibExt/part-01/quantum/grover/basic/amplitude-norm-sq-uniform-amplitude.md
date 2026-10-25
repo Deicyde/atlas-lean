@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Grover.amplitudeNormSq_uniformAmplitude
 ---
 
-# Amplitude Norm Sq uniform Amplitude
+# The uniform amplitude vector is normalized
 
-The uniform amplitude vector on a nonempty finite type has squared norm one.
+**The uniform amplitude vector is normalized.** For every nonempty finite type
+$\alpha$, the uniform amplitude vector on $\alpha$ has squared Euclidean norm $1$.
 
 ## Depends on
 
-- [Amplitude Norm Sq](amplitude-norm-sq.md)
-- [Uniform Amplitude](uniform-amplitude.md)
+- [Squared norm of an amplitude vector](amplitude-norm-sq.md)
+- [Uniform amplitude vector](uniform-amplitude.md)
 
 ## Proof depends on
 
-- [Amplitude](amplitude.md)
+- [Real amplitude vectors](amplitude.md)
 
 ## Sources
 

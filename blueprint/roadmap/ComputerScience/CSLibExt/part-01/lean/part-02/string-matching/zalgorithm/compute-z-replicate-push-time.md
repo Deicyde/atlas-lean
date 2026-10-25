@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.StringMatching.computeZ_replicate_push_time
 ---
 
-# Compute Z replicate push time
+# Z-algorithm cost on a repeated symbol followed by a distinct one
 
-A repeated prefix followed by a distinct final symbol preserves every explicit failure.
-For total input length `N = n + 1`, this is `3 * N - 4` events.
+**Z-algorithm cost on a repeated symbol followed by a distinct one.** Let $\alpha$ be a type
+with a lawful Boolean equality test and let $a \ne b$ be elements of $\alpha$. For every $n \ge 1$,
+the Z-algorithm run on the word $a^n b$ has cost exactly $3n - 1$, where the cost counts one unit
+for each visited position $i \ge 1$ and one unit for each symbol comparison. In terms of the
+input length $N = n + 1$, this is $3N - 4$.
 
 ## Depends on
 
-- [Compute Z](compute-z.md)
+- [Z-algorithm](compute-z.md)
 
 ## Sources
 

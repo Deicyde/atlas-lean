@@ -6,24 +6,32 @@ proof: formalized
 lean: Cslib.MachineLearning.Sequence.BaumWelch.log_joint
 ---
 
-# Log joint
+# The log path weight is linear in the path's counts
 
-The log of the path weight in terms of the path's counts.
+**The log path weight is linear in the path's counts.** Let $S$ and $O$ be finite sets, let
+$T$ be a natural number, and let $h$ be a valid hidden Markov model on states $S$ and observations
+$O$, with positive initial probabilities $\pi_s$, transition probabilities $a_{ss'}$ and emission
+probabilities $b_{so}$, each distribution summing to one. For every observation sequence
+$x = (x_0, x_1, \dots)$ in $O$ and every state path $z = (z_0, \dots, z_T)$ in $S$, the path
+weight $p_h(x, z) = \pi_{z_0} b_{z_0 x_0} \prod_{t=1}^{T} a_{z_{t-1} z_t} b_{z_t x_t}$ satisfies
+$\log p_h(x, z) = \sum_{s} [z_0 = s] \log \pi_s + \sum_{s, s'} n_{ss'} \log a_{ss'} +
+\sum_{s, o} m_{so} \log b_{so}$, where $[z_0 = s]$ is $1$ if $z_0 = s$ and $0$ otherwise,
+$n_{ss'} = \#\{t < T : z_t = s,\ z_{t+1} = s'\}$ and $m_{so} = \#\{t \le T : z_t = s,\ x_t = o\}$.
 
 ## Depends on
 
-- [Valid](valid.md)
-- [Valid HMM](valid-hmm.md)
-- [Joint](joint.md)
-- [P Emit](p-emit.md)
-- [P Init](p-init.md)
-- [P Trans](p-trans.md)
-- [HMM](../hidden-markov/hmm.md)
+- [Valid hidden Markov model parameters](valid.md)
+- [Valid HMMs](valid-hmm.md)
+- [The EM model of a hidden Markov model](joint.md)
+- [Emission count of a state path](p-emit.md)
+- [Initial-state indicator of a state path](p-init.md)
+- [Transition count of a state path](p-trans.md)
+- [Hidden Markov model](../hidden-markov/hmm.md)
 
 ## Proof depends on
 
-- [Path Prob eq prod](path-prob-eq-prod.md)
-- [Path Prob](../hidden-markov/path-prob.md)
+- [Path weight as a product](path-prob-eq-prod.md)
+- [Joint weight of a state path and the observations](../hidden-markov/path-prob.md)
 
 ## Sources
 

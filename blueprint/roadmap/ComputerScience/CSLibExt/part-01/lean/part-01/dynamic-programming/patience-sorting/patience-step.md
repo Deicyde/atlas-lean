@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lower Bound](../../../part-02/search/lower-bound/lower-bound.md)
+- [Lower-bound search](../../../part-02/search/lower-bound/lower-bound.md)
 
 ## Sources
 

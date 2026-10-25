@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Unification.substEqs
 ---
 
-# Subst Eqs
+# Applying a substitution to a list of equations
 
-Apply a substitution to both sides of every equation.
+**Applying a substitution to a list of equations.** For a substitution $\sigma$ and a list
+$E$ of equations between terms, the result is the list obtained by replacing each equation
+$u = v$ of $E$, in order, by $u\sigma = v\sigma$, where $u\sigma$ is the result of applying
+$\sigma$ to $u$.
 
 ## Depends on
 
-- [Equations](equations.md)
-- [Subst](subst.md)
+- [Lists of equations](equations.md)
+- [Substitution](subst.md)
 
 ## Proof depends on
 
-- [Term](term.md)
-- [Subst](subst-2.md)
+- [Terms for unification](term.md)
+- [Applying a substitution to a term](subst-2.md)
 
 ## Sources
 

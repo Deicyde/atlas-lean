@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture_zero_capacity
 ---
 
-# Furthest In Future zero capacity
+# Furthest-in-future caching with zero capacity
 
-With no storage, each real request produces exactly one miss and the cache stays empty.
+**Furthest-in-future caching with zero capacity.** Run with capacity $0$ on a request
+sequence $r_1, \dots, r_n$ from the empty cache, the furthest-in-future manager emits exactly
+the events $\mathrm{miss}(r_1), \dots, \mathrm{miss}(r_n)$, one miss per request in order and
+each evicting no page, and its final cache is empty.
 
 ## Depends on
 
-- [Cache Event](cache-event.md)
-- [Furthest In Future](furthest-in-future.md)
+- [Cache events](cache-event.md)
+- [Furthest-in-future caching](furthest-in-future.md)
 
 ## Sources
 

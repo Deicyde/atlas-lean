@@ -19,7 +19,7 @@ $\sigma'$ is a free type variable of $\sigma$.
 
 - [Instantiation of a type scheme](inst.md)
 - [Monotypes](ty.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
 
 ## Sources
 

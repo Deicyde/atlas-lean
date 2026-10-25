@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Karger.cutSize_contract
 ---
 
-# Cut Size contract
+# Cut sizes under contraction
 
-Every cut of the contracted multigraph is a cut of the original of the same size: `Y` on the
-contraction counts the same edges as `Y ∘ rename` on the original.
+**Cut sizes under contraction.** Let $G$ be a multigraph state, $e = (a, b)$ a pair of
+vertices and $Y$ a map from vertices to booleans, and let $\rho$ send $b$ to $a$ and fix every
+other vertex. The size of the cut $Y$ in the contraction of $G$ along $e$ equals the size of the
+cut $Y \circ \rho$ in $G$.
 
 ## Depends on
 
-- [State](state.md)
-- [Contract](contract.md)
-- [Cut Size](cut-size.md)
-- [Rename](rename.md)
+- [Multigraph state of Karger's algorithm](state.md)
+- [Edge contraction](contract.md)
+- [Size of a cut](cut-size.md)
+- [Renaming a vertex](rename.md)
 
 ## Sources
 

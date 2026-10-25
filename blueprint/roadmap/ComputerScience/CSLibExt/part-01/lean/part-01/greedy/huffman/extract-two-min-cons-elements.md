@@ -7,17 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.extractTwoMin_cons_elements
 ---
 
-# Extract Two Min cons elements
+# Extracting two minima preserves the heap's elements
 
-Two-minimum extraction partitions the original heap without losing multiplicities.
+**Extracting two minima preserves the heap's elements.** If extracting two minima from a
+binary min-heap $h$ of Huffman priorities succeeds with first priority $p_1$, second priority
+$p_2$ and remaining heap $h'$, then the multiset of elements of $h$ equals the multiset of
+elements of $h'$ with $p_1$ and $p_2$ added, counted with multiplicity.
 
 ## Depends on
 
-- [Huffman Priority](huffman-priority.md)
-- [Huffman Two Min](huffman-two-min.md)
+- [Huffman priority](huffman-priority.md)
+- [Result of a two-minimum extraction](huffman-two-min.md)
 - [Binary min-heap](../../data-structures/part-02/binary-heap/min-heap.md)
 - [Elements of a binary min-heap](../../data-structures/part-02/binary-heap/elements.md)
-- [Extract Two Min?](extract-two-min.md)
+- [Extracting two minima from a Huffman heap](extract-two-min.md)
 
 ## Proof depends on
 

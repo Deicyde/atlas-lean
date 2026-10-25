@@ -7,26 +7,26 @@ navigation: module
 ## Online pagers and the adversary
 
 - [A deterministic online paging algorithm with cache size...](a-deterministic-online-paging-algorithm.md)
-- [Misses](misses.md)
+- [Misses of an online pager](misses.md)
 - [LRU as an online pager](lru-as-an-online-pager.md)
-- [Lru Pager misses](lru-pager-misses.md)
-- [Outside](outside.md)
-- [Outside not mem](outside-not-mem.md)
-- [Adversary](adversary.md)
+- [LRU as an online pager has LRU's miss count](lru-pager-misses.md)
+- [Outside page of a cache](outside.md)
+- [The outside page is not cached](outside-not-mem.md)
+- [The paging adversary](adversary.md)
 - [The pager misses every request](misses-adversary.md)
 
 ## An offline strategy that misses once every `k` requests
 
-- [Opt Step](opt-step.md)
-- [Opt Trace](opt-trace.md)
-- [Find? is Some](find-is-some.md)
+- [Offline paging step](opt-step.md)
+- [Offline paging trace](opt-trace.md)
+- [A full cache has a page outside the next $k - 1$ requests](find-is-some.md)
 - [Each offline step is a legal transition](opt-step-tr.md)
 - [The offline trace is legal](opt-trace-legal.md)
-- [Misses opt Trace hits](misses-opt-trace-hits.md)
-- [Mem of full](mem-of-full.md)
+- [Hits do not change the offline strategy's misses](misses-opt-trace-hits.md)
+- [After a miss on a full cache, every page except the evicted one is present](mem-of-full.md)
 - [The offline trace misses at most once every `k` requests](misses-opt-trace-le.md)
 
 ## The lower bound
 
-- [The adversary forces `n` misses while the optimum misses at most `k + ⌈n / k⌉` times](adversary-vs-optimum.md)
-- [No deterministic online pager is better than `k`-competitive](not-competitive-of-lt.md)
+- [The adversary forces $n$ misses while the optimum misses at most $k + \lceil n / k \rceil$ times](adversary-vs-optimum.md)
+- [No deterministic online pager is better than $k$-competitive](not-competitive-of-lt.md)

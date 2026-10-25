@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.linearSearch_time_nil
 ---
 
-# Linear Search time nil
+# Cost of linear search on the empty list
 
-Searching an empty list evaluates the predicate zero times.
+**Cost of linear search on the empty list.** For every predicate $p$ on a type $\alpha$, linear
+search for $p$ on the empty list has cost $0$: it evaluates $p$ zero times.
 
 ## Depends on
 
-- [Linear Search](linear-search.md)
+- [Linear search](linear-search.md)
 
 ## Sources
 

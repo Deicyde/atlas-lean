@@ -12,16 +12,16 @@ lean: Cslib.Algorithms.Lean.BipartiteMatching.card_le_hopcroftKarp
 
 ## Depends on
 
-- [Is Matching](is-matching.md)
+- [Matching in a bipartite graph](is-matching.md)
 - [Hopcroft–Karp](hopcroft-karp.md)
-- [Pairs](pairs.md)
+- [Matched pairs of a partner assignment](pairs.md)
 
 ## Proof depends on
 
-- [Valid](valid.md)
-- [Hopcroft Karp Aux](hopcroft-karp-aux.md)
-- [Hopcroft Karp Aux spec](hopcroft-karp-aux-spec.md)
-- [Matched](matched.md)
+- [Partner arrays that describe a matching](valid.md)
+- [Hopcroft–Karp phase loop](hopcroft-karp-aux.md)
+- [Correctness of the phase loop](hopcroft-karp-aux-spec.md)
+- [Matched right vertices](matched.md)
 
 ## Sources
 

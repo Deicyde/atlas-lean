@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.StronglyConnectedComponents.stronglyConnected_refl
 ---
 
-# Strongly Connected refl
+# Strong connectivity is reflexive
 
-Every vertex is strongly connected to itself.
+**Strong connectivity is reflexive.** In a directed graph $G$, every vertex is strongly
+connected to itself.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
 - [Strongly Connected](strongly-connected.md)
 
 ## Proof depends on
 
-- [Edge](../directed-adjacency-2/edge.md)
-- [Reachable](../directed-adjacency-2/reachable.md)
+- [Edge of a directed adjacency graph](../directed-adjacency-2/edge.md)
+- [Reachability in a directed graph](../directed-adjacency-2/reachable.md)
 
 ## Sources
 

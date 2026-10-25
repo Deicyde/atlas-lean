@@ -14,7 +14,7 @@ of $\Gamma$, keeping the names and their order.
 ## Depends on
 
 - [Typing context](ctx.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
 
 ## Proof depends on
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.mtfOnline
 ---
 
-# Mtf Online
+# Online move-to-front
 
-Move-to-front as an online algorithm (requests outside `M` are ignored).
+**Online move-to-front.** For a list $M$, online move-to-front is the online list-update
+algorithm on the items of $M$ whose states are the rearrangements of $M$, starting from $M$
+itself: on a request $x$ that is in the current list it moves $x$ to the front, and it ignores
+requests that are not in the current list.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ Move-to-front as an online algorithm (requests outside `M` are ignored).
 
 ## Proof depends on
 
-- [Mtf](mtf.md)
+- [Move-to-front](mtf.md)
 - [The amortized cost of a move-to-front step](mtf-perm.md)
 
 ## Sources

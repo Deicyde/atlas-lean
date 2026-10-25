@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_expectedHires_toReal_eq_harmonic
 ---
 
-# Hire Assistant expected Hires to Real eq harmonic
+# Expected number of hires is the harmonic number
 
-The expected number of hires as a real number is the harmonic number
-`H_n`.
+**Expected number of hires is the harmonic number.** Let $x$ be a list of $n$ pairwise
+distinct elements of a linearly ordered type, and rearrange its entries by a uniformly random
+permutation of the indices. The expected number of hires that the hire-assistant procedure
+(interview the entries in order, hiring each one strictly better than every earlier one) makes
+on the rearranged list, an element of $[0, \infty]$, converted to a real number, equals the
+harmonic number $H_n = \sum_{k=1}^{n} \frac{1}{k}$.
 
 ## Depends on
 
-- [Hire Assistant](../hire-assistant/hire-assistant.md)
-- [Uniform Permutation](../../random/expected-cost/uniform-permutation.md)
+- [The hire-assistant scan](../hire-assistant/hire-assistant.md)
+- [Uniformly random rearrangement of a list](../../random/expected-cost/uniform-permutation.md)
 - [Expect ENN](../../../../../../../Probability/MathlibExt/part-01/probability-mass-function/expectation/expect-enn.md)
 
 ## Proof depends on
 
-- [Hire Assistant expected Hires to Real](hire-assistant-expected-hires-to-real.md)
+- [Expected number of hires as a real harmonic sum](hire-assistant-expected-hires-to-real.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.PrefixSum.seg
 ---
 
-# Seg
+# Window product
 
-The product `x a * x (a + 1) * ⋯ * x (b - 1)` (empty if `b ≤ a`).
+**Window product.** For a sequence $x : \mathbb{N} \to M$ in a monoid $M$ and
+$a, b \in \mathbb{N}$, the window product is the ordered product $x_a x_{a+1} \cdots x_{b-1}$ of
+the terms with indices $a \le j < b$; it is the empty product $1$ when $b \le a$.
 
 ## Depends on
 

@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.GraphicMatroid.ncard_edgeSet_add_card_connectedComponent
 ---
 
-# Ncard edge Set add card connected Component
+# Edges plus components of a forest
 
-A forest on `V` with `e` edges has `|V| - e` connected components.
+**Edges plus components of a forest.** Let $V$ be a finite vertex set. For every natural
+number $n$ and every forest (acyclic simple graph) $F$ on $V$ with exactly $n$ edges, the number
+of edges of $F$ plus the number of connected components of $F$ equals $|V|$. So a forest on $V$
+with $e$ edges has $|V| - e$ connected components.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Card connected Component delete Edges of not reachable](card-connected-component-delete-edges-of.md)
+- [Deleting a bridge adds one component](card-connected-component-delete-edges-of.md)
 
 ## Sources
 

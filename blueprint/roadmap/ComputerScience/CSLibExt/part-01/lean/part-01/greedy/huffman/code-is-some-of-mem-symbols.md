@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.code?_isSome_of_mem_symbols
 ---
 
-# Code? is Some of mem symbols
+# Every leaf symbol has a codeword
 
-Every leaf symbol has a codeword.
+**Every leaf symbol has a codeword.** Let $T$ be a Huffman tree and $s$ a symbol occurring at
+a leaf of $T$. Then the codeword lookup of $s$ in $T$ succeeds.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Code?](code.md)
-- [Symbols](symbols.md)
+- [Huffman tree](huffman-tree.md)
+- [Codeword lookup in a Huffman tree](code.md)
+- [Leaf symbols of a Huffman tree](symbols.md)
 
 ## Proof depends on
 
-- [Path Code?](path-code.md)
-- [Weighted Leaves](weighted-leaves.md)
+- [Root-to-leaf path code](path-code.md)
+- [Weighted leaves of a Huffman tree](weighted-leaves.md)
 
 ## Sources
 

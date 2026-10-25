@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Step](step.md)
+- [Greedy step of online bipartite matching](step.md)
 
 ## Sources
 

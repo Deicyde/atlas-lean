@@ -19,17 +19,17 @@ self-loops.
 
 - [Output of A-star search](astar-result.md)
 - [A Star](a-star.md)
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
-- [Total](../../graph/shortest-path/dijkstra/total.md)
-- [Adjacency Entry Count](../../graph/shortest-path/dijkstra/adjacency-entry-count.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
+- [Total Dijkstra cost](../../graph/shortest-path/dijkstra/total.md)
+- [Adjacency entry count](../../graph/shortest-path/dijkstra/adjacency-entry-count.md)
 
 ## Proof depends on
 
 - [Reduced weight](reduced-weight.md)
-- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
-- [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
-- [Dijkstra time](../../graph/shortest-path/dijkstra/dijkstra-time.md)
+- [Output of Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Dense Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra.md)
+- [Running time of dense Dijkstra](../../graph/shortest-path/dijkstra/dijkstra-time.md)
 
 ## Sources
 

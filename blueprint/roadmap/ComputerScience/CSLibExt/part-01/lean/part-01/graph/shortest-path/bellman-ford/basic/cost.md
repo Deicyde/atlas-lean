@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BellmanFord.Cost
 ---
 
-# Cost
+# Bellman-Ford cost counters
 
-Separate counts for edge checks and negative-cycle witness reconstruction.
+**Bellman-Ford cost counters.** The cost of a Bellman-Ford run is a pair of natural numbers:
+the number of edge occurrences checked by relaxation passes, and the number of predecessor edges
+read or emitted while reconstructing a negative-cycle witness.
 
 ## Depends on
 

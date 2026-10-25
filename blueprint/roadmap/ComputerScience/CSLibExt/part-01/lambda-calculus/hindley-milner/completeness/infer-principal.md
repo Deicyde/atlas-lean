@@ -18,8 +18,8 @@ every type of it is an instance of the inferred one.
 - [Type schemes](../typing/scheme.md)
 - [Monotypes](../typing/ty.md)
 - [Type inference for closed expressions](../algorithm-w/infer.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
 
 ## Proof depends on
 

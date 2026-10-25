@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Graph.verifyHamiltonianCycle_certificate_size
 ---
 
-# Verify Hamiltonian Cycle certificate size
+# Size of an accepted Hamiltonian-cycle certificate
 
-An accepted certificate has the exact fixed-word size and is no longer than the graph.
+**Size of an accepted Hamiltonian-cycle certificate.** If the Hamiltonian-cycle verifier
+accepts the bit strings $x$ and $y$, then $|y| = mw$, where $m = \lfloor \sqrt{|x|} \rfloor$ and
+$w$ is the least natural number with $m \le 2^w$, and moreover $|y| \le |x|$.
 
 ## Depends on
 
-- [Basic](../verify-hamiltonian-cycle.md)
+- [Hamiltonian-cycle verifier](../verify-hamiltonian-cycle.md)
 
 ## Proof depends on
 
-- [Verify Hamiltonian Cycle iff](../correctness/verify-hamiltonian-cycle-iff.md)
+- [Acceptance condition of the Hamiltonian-cycle verifier](../correctness/verify-hamiltonian-cycle-iff.md)
 
 ## Sources
 

@@ -16,22 +16,22 @@ where the lower and upper chains meet.
 
 - [Turns Left](turns-left.md)
 - [Convex Hull](convex-hull.md)
-- [Cross](../segment-intersection/cross.md)
+- [Cross product of plane vectors](../segment-intersection/cross.md)
 
 ## Proof depends on
 
-- [Lower Hull](../convex-hull/lower-hull.md)
-- [Lower Hull get Last?](../convex-hull/lower-hull-get-last.md)
-- [Lower Hull head?](../convex-hull/lower-hull-head.md)
-- [Lower Hull left of edges](../convex-hull/lower-hull-left-of-edges.md)
-- [Lower Hull sublist](../convex-hull/lower-hull-sublist.md)
-- [Lower Hull turn left](../convex-hull/lower-hull-turn-left.md)
-- [Upper Hull](upper-hull.md)
-- [Upper Hull get Last?](upper-hull-get-last.md)
-- [Upper Hull head?](upper-hull-head.md)
-- [Upper Hull left of edges](upper-hull-left-of-edges.md)
-- [Upper Hull sublist](upper-hull-sublist.md)
-- [Upper Hull turn left](upper-hull-turn-left.md)
+- [Lower chain](../convex-hull/lower-hull.md)
+- [The lower chain ends at the last point](../convex-hull/lower-hull-get-last.md)
+- [The lower chain starts at the first point](../convex-hull/lower-hull-head.md)
+- [Every input point lies on or left of each lower-chain edge](../convex-hull/lower-hull-left-of-edges.md)
+- [The lower chain is a sublist of the input](../convex-hull/lower-hull-sublist.md)
+- [The lower chain turns strictly left](../convex-hull/lower-hull-turn-left.md)
+- [Upper chain](upper-hull.md)
+- [The upper chain ends at the first point](upper-hull-get-last.md)
+- [The upper chain starts at the last point](upper-hull-head.md)
+- [Every input point lies left of the upper chain](upper-hull-left-of-edges.md)
+- [The upper chain is a subsequence of the reversed input](upper-hull-sublist.md)
+- [The upper chain turns strictly left](upper-hull-turn-left.md)
 
 ## Sources
 

@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.medianOfMedians_base_time
 ---
 
-# Median Of Medians base time
+# Comparison bound for median-of-medians selection on short lists
 
-The fixed base range fits the final eighty-comparisons-per-occurrence budget.
+**Comparison bound for median-of-medians selection on short lists.** For every list $L$ of
+length $n \le 140$ over a linearly ordered type and every natural number $k$, median-of-medians
+selection of rank $k$ in $L$ is charged at most $80n$ comparisons.
 
 ## Depends on
 
-- [Median Of Medians](median-of-medians.md)
+- [Median-of-medians selection](median-of-medians.md)
 
 ## Proof depends on
 
-- [Median Of Medians eq quickselect of length le](median-of-medians-eq-quickselect-of-leng.md)
+- [Median-of-medians selection is quickselect on short lists](median-of-medians-eq-quickselect-of-leng.md)
 - [Quickselect](../quickselect/quickselect.md)
-- [Quickselect time](../quickselect/quickselect-time.md)
+- [Worst-case comparison bound for quickselect](../quickselect/quickselect-time.md)
 
 ## Sources
 

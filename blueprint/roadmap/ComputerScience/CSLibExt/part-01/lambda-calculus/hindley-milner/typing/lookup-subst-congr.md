@@ -20,15 +20,15 @@ same scheme.
 - [Context lookup](lookup.md)
 - [Applying a type substitution to a context](subst.md)
 - [Type schemes](scheme.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Proof depends on
 
 - [Free type variables of a name's visible scheme](visible-vars.md)
 - [Applying a type substitution to a scheme](subst-ty.md)
 - [Substitution into a scheme depends only on its free variables](subst-ty-congr.md)
-- [Vars](../../../../part-02/unification/basic/vars.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
 
 ## Sources
 

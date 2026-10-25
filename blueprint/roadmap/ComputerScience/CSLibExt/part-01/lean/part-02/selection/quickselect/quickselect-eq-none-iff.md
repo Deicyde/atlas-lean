@@ -7,9 +7,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.quickselect_eq_none_iff
 ---
 
-# Quickselect eq none iff
+# Quickselect fails exactly out of range
 
-Quickselect returns `none` exactly for an out-of-range rank.
+**Quickselect fails exactly out of range.** Let $L$ be a list over a linear order and let
+$k$ be a natural number. Quickselect on $L$ with zero-based rank $k$ returns no element if and
+only if $|L| \le k$.
 
 ## Depends on
 
@@ -17,9 +19,9 @@ Quickselect returns `none` exactly for an out-of-range rank.
 
 ## Proof depends on
 
-- [Three Way Partition](../../sort/partition/three-way-partition.md)
-- [Partition3](../../sort/partition/partition3.md)
-- [Partition3 length](../../sort/partition/partition3-length.md)
+- [Three-way partition record](../../sort/partition/three-way-partition.md)
+- [Stable three-way partition](../../sort/partition/partition3.md)
+- [Sizes of the three parts of a three-way partition](../../sort/partition/partition3-length.md)
 
 ## Sources
 

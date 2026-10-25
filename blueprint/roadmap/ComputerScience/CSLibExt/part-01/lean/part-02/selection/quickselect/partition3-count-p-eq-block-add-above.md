@@ -7,18 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.partition3_countP_eq_block_add_above
 ---
 
-# Partition3 count P eq block add above
+# Counting through the above block
 
-Filled below and equal blocks contribute their lengths to an above-part count.
+**Counting through the above block.** Let $L$ be a list over a linear order, let $p$ be an
+element, let $q$ be a Boolean predicate on the elements, and let $B$, $E$, $A$ be the blocks of
+entries below, equal to and above $p$ in the three-way partition of $L$ around $p$. If $q$ is
+true on every entry of $B$ and on every entry of $E$, then the number of entries of $L$
+satisfying $q$ equals $|B| + |E|$ plus the number of entries of $A$ satisfying $q$, all counted
+with multiplicity.
 
 ## Depends on
 
-- [Three Way Partition](../../sort/partition/three-way-partition.md)
-- [Partition3](../../sort/partition/partition3.md)
+- [Three-way partition record](../../sort/partition/three-way-partition.md)
+- [Stable three-way partition](../../sort/partition/partition3.md)
 
 ## Proof depends on
 
-- [Partition3 correct](../../sort/partition/partition3-correct.md)
+- [Correctness of the stable three-way partition](../../sort/partition/partition3-correct.md)
 
 ## Sources
 

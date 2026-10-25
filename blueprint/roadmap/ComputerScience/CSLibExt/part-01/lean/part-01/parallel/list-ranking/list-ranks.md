@@ -5,10 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.ListRanking.listRanks
 ---
 
-# List Ranks
+# List ranking by pointer jumping
 
-List ranking by pointer jumping: `⌈log₂ n⌉` rounds (`Nat.clog 2 n`) on arrays, returning the
-whole table of ranks (entry `v` is the rank of node `v`).
+**List ranking by pointer jumping.** For a successor map $\mathrm{succ}$ on the nodes
+$0, \dots, n-1$, list ranking by pointer jumping runs $\lceil \log_2 n \rceil$ rounds of pointer
+jumping on arrays, starting from the initial state, and returns the resulting array of distances,
+whose entry $v$ is the distance of node $v$.
+
+When the lists terminate, entry $v$ is the rank of node $v$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rounds Tab](rounds-tab.md)
+- [List-ranking rounds on arrays](rounds-tab.md)
 
 ## Sources
 

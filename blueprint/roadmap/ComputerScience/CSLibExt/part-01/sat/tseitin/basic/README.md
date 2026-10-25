@@ -4,42 +4,42 @@ navigation: module
 
 # Basic
 
-- [Neg Lit](neg-lit.md)
-- [And Clauses](and-clauses.md)
-- [Or Clauses](or-clauses.md)
-- [Imp Clauses](imp-clauses.md)
-- [Tseitin Step](tseitin-step.md)
-- [Acc Step](acc-step.md)
+- [Complementary literal](neg-lit.md)
+- [Tseitin clauses for a conjunction](and-clauses.md)
+- [Tseitin clauses for a disjunction](or-clauses.md)
+- [Tseitin clauses for an implication](imp-clauses.md)
+- [One step of the Tseitin encoding](tseitin-step.md)
+- [One step of the linear-time Tseitin builder](acc-step.md)
 - [Connective Count](connective-count.md)
-- [Tseitin Aux](tseitin-aux.md)
-- [Tseitin Acc](tseitin-acc.md)
-- [Tseitin Acc eq](tseitin-acc-eq.md)
-- [Tseitin](tseitin.md)
-- [Tseitin eq](tseitin-eq.md)
-- [Tseitin Bot](tseitin-bot.md)
+- [Tseitin encoding with gates numbered from $k$](tseitin-aux.md)
+- [Linear-time Tseitin builder](tseitin-acc.md)
+- [The linear-time Tseitin builder agrees with the reference encoding](tseitin-acc-eq.md)
+- [Tseitin CNF](tseitin.md)
+- [The Tseitin CNF reorders the reference encoding](tseitin-eq.md)
+- [Tseitin CNF with $\bot$ false](tseitin-bot.md)
 
 ## Size
 
-- [Length tseitin Aux](length-tseitin-aux.md)
-- [Length tseitin](length-tseitin.md)
-- [Length le three of mem tseitin](length-le-three-of-mem-tseitin.md)
+- [Tseitin CNF with $\bot$ false](length-tseitin-aux.md)
+- [Number of clauses of the Tseitin CNF](length-tseitin.md)
+- [Tseitin clauses have at most three literals](length-le-three-of-mem-tseitin.md)
 
 ## Literal semantics and gate clauses
 
-- [Lit Val](lit-val.md)
-- [Satisfies append](satisfies-append.md)
+- [Truth value of a literal](lit-val.md)
+- [Satisfying a concatenation of CNF formulas](satisfies-append.md)
 
 ## The invariant of one encoding step
 
-- [Is Gate](is-gate.md)
-- [Allowed](allowed.md)
-- [Atom Dependent](atom-dependent.md)
-- [Spec](spec.md)
-- [Satisfies of agree](satisfies-of-agree.md)
-- [Atom Val](atom-val.md)
-- [Spec tseitin Aux](spec-tseitin-aux.md)
+- [Gate variables in a range](is-gate.md)
+- [Allowed variables for a gate range](allowed.md)
+- [Functions of the atom variables](atom-dependent.md)
+- [Tseitin encoding invariant](spec.md)
+- [Satisfaction depends only on the occurring variables](satisfies-of-agree.md)
+- [Value of a proposition read off the atom variables](atom-val.md)
+- [Correctness invariant of the Tseitin encoding](spec-tseitin-aux.md)
 
 ## Main theorems
 
 - [Tseitin correctness](eval-bool-iff-exists-satisfies-tseitin.md)
-- [Equisatisfiability](cnf-sat-tseitin-bot-iff.md)
+- [Equisatisfiability of the Tseitin transformation](cnf-sat-tseitin-bot-iff.md)

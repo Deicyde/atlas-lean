@@ -12,19 +12,19 @@ lean: Cslib.Algorithms.Lean.Online.BipartiteMatching.greedyAll_maximal
 
 ## Depends on
 
-- [Free](../../graph/bipartite-matching/free.md)
-- [Greedy All](greedy-all.md)
+- [Unmatched left vertex](../../graph/bipartite-matching/free.md)
+- [The greedy online matching](greedy-all.md)
 
 ## Proof depends on
 
-- [Valid](../../graph/bipartite-matching/valid.md)
-- [Done](done.md)
+- [Partner arrays that describe a matching](../../graph/bipartite-matching/valid.md)
+- [Done right vertices](done.md)
 - [Greedy](greedy.md)
-- [Greedy Arr](greedy-arr.md)
-- [Greedy spec](greedy-spec.md)
-- [Step](step.md)
-- [Step Arr](step-arr.md)
-- [To Fun](to-fun.md)
+- [Greedy run on an array](greedy-arr.md)
+- [Invariants of the greedy run](greedy-spec.md)
+- [Greedy step of online bipartite matching](step.md)
+- [Greedy step on an array](step-arr.md)
+- [Partner assignment from an array](to-fun.md)
 
 ## Sources
 

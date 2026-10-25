@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.MachineLearning.Sequence.KalmanFilter.Belief.Valid
 ---
 
-# Valid
+# Valid Gaussian beliefs
 
-A belief is valid when its covariance is positive semidefinite.
+**Valid Gaussian beliefs.** A belief is valid when its covariance matrix is positive
+semidefinite.
 
 ## Depends on
 
-- [Belief](belief.md)
+- [Gaussian belief](belief.md)
 
 ## Sources
 

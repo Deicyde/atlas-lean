@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Parallel.ListRanking.rank
 ---
 
-# Rank
+# Rank of a node in a linked list
 
-The rank of `v`: the number of nodes after it.
+**Rank of a node in a linked list.** Let $\mathrm{succ}$ be a successor map on the nodes
+$0, \dots, n-1$ whose lists terminate. The rank of a node $v$ is the least $k$ such that following
+$\mathrm{succ}$ for $k + 1$ steps from $v$ runs off the end of the list, that is, the number of
+nodes after $v$ in its list.
 
 ## Depends on
 
-- [Terminates](terminates.md)
+- [Terminating successor functions](terminates.md)
 
 ## Proof depends on
 
-- [Jump](jump.md)
+- [Iterated successor](jump.md)
 
 ## Sources
 

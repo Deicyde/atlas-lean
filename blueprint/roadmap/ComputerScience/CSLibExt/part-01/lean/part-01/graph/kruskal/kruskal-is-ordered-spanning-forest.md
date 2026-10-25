@@ -7,24 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Kruskal.kruskal_isOrderedSpanningForest
 ---
 
-# Kruskal is Ordered Spanning Forest
+# Kruskal's output is a sorted spanning forest
 
-Kruskal returns a spanning forest in deterministic stable processing order.
+**Kruskal's output is a sorted spanning forest.** For every graph $G$, the edge list returned
+by Kruskal's algorithm on $G$ is a spanning forest of $G$ (its edges are valid edges of $G$, it
+is acyclic, and it connects the endpoints of every valid edge of $G$), and whenever an edge $e$
+comes before an edge $f$ in it, the key (weight, input ordinal) of $e$ is lexicographically at
+most that of $f$.
 
 ## Depends on
 
-- [Graph](graph.md)
-- [Is Ordered Spanning Forest](is-ordered-spanning-forest.md)
-- [Kruskal](kruskal.md)
+- [Kruskal input graph](graph.md)
+- [Ordered spanning forest](is-ordered-spanning-forest.md)
+- [Kruskal's algorithm](kruskal.md)
 
 ## Proof depends on
 
-- [Is Spanning Forest](is-spanning-forest.md)
-- [Key LE](key-le.md)
-- [Weighted Edge](weighted-edge.md)
-- [Key](key.md)
-- [Kruskal is Spanning Forest](kruskal-is-spanning-forest.md)
-- [Kruskal pairwise key le](kruskal-pairwise-key-le.md)
+- [Spanning forest of an input graph](is-spanning-forest.md)
+- [Lexicographic order on edge keys](key-le.md)
+- [Weighted edge](weighted-edge.md)
+- [Sorting key of a weighted edge](key.md)
+- [Kruskal's output is a spanning forest](kruskal-is-spanning-forest.md)
+- [Kruskal's output is sorted by key](kruskal-pairwise-key-le.md)
 
 ## Sources
 

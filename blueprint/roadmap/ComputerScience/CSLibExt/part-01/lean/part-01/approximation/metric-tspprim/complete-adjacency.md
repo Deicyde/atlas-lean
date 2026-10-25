@@ -14,7 +14,7 @@ order.
 
 ## Depends on
 
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
 
 ## Sources
 

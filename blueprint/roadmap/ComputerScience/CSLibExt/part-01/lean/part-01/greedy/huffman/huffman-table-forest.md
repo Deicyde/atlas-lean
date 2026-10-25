@@ -6,13 +6,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.huffmanTableForest
 ---
 
-# Huffman Table Forest
+# Work forest of a table
 
-The work items still available to merge, read off the serial-indexed table.
+**Work forest of a table.** For a table $T$ whose cells each hold at most one work item, the
+work forest of $T$ is the list of the work items held in the cells of $T$, in increasing cell
+order; empty cells are skipped.
+
+In the Huffman loop these are the work items still available to merge.
 
 ## Depends on
 
-- [Huffman Work Item](huffman-work-item.md)
+- [Huffman work item](huffman-work-item.md)
 
 ## Sources
 

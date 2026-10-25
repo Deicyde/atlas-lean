@@ -18,19 +18,19 @@ vertex $v$ is finite, then $g(v) \le d$ for every weight $d$ of a path in $G$ fr
 - [Output of A-star search](astar-result.md)
 - [Consistent heuristic](consistent.md)
 - [A Star](a-star.md)
-- [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
-- [Has Path Weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
+- [Directed adjacency graph](../../graph/directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
+- [Walks of a given weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
 
 ## Proof depends on
 
 - [Path Weight reduced Weight](path-weight-reduced-weight.md)
 - [Reduced weight](reduced-weight.md)
-- [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
-- [Edge](../../graph/directed-adjacency-2/edge.md)
-- [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
-- [Dijkstra distance minimal](../../graph/shortest-path/dijkstra/dijkstra-distance-minimal.md)
-- [Path Weight](../../graph/shortest-path/dijkstra/path-weight.md)
+- [Output of Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra-result.md)
+- [Edge of a directed adjacency graph](../../graph/directed-adjacency-2/edge.md)
+- [Dense Dijkstra's algorithm](../../graph/shortest-path/dijkstra/dijkstra.md)
+- [Dijkstra's finite distances are lower bounds on walk weights](../../graph/shortest-path/dijkstra/dijkstra-distance-minimal.md)
+- [Endpoint-weight sum along a vertex list](../../graph/shortest-path/dijkstra/path-weight.md)
 
 ## Sources
 

@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Online.ListUpdate.inv_le_sq
 ---
 
-# Inv le sq
+# Inversions are at most the squared length
 
-Any rearrangement costs at most `ℓ²` inversions.
+**Inversions are at most the squared length.** For any lists $M$ and $L$, the number of
+inversions of $L$ against $M$ is at most $\ell^2$, where $\ell$ is the length of $M$.
 
 ## Depends on
 
-- [Inv](inv.md)
+- [Number of inversions between two lists](inv.md)
 
 ## Proof depends on
 
-- [Inv Set](inv-set.md)
+- [Inversion set of two lists](inv-set.md)
 
 ## Sources
 

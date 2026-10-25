@@ -5,10 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.OddEven.oddEvenMerge
 ---
 
-# Odd Even Merge
+# Batcher's odd-even merger
 
-Batcher's odd-even merger on wires `0, …, 2 ^ (k + 1) - 1`: merge the even wires and the odd
-wires recursively, then compare wires `2 i + 1` and `2 i + 2`.
+**Batcher's odd-even merger.** For $k \in \mathbb{N}$, the odd-even merger on wires
+$0, \dots, 2^{k+1} - 1$ is the comparator list defined by recursion on $k$. For $k = 0$ it is the
+single comparator $(0, 1)$. For $k + 1$ it is the merger for $k$ with each wire $i$ renamed to
+$2i$ (merging the even wires), followed by the merger for $k$ with each wire $i$ renamed to
+$2i + 1$ (merging the odd wires), followed by the comparators $(2i + 1, 2i + 2)$ for
+$i = 0, 1, \dots, 2^{k+1} - 2$ in increasing order of $i$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Final Layer](final-layer.md)
-- [Relabel](relabel.md)
+- [Last layer of the odd-even merger](final-layer.md)
+- [Relabeling the wires of a comparator list](relabel.md)
 
 ## Sources
 

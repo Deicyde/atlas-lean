@@ -6,23 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.SAT.Horn.hornSat_eq_true_iff
 ---
 
-# Correctness
+# Correctness of the Horn satisfiability test
 
-**Correctness**: `hornSat` decides satisfiability of Horn formulas.
+**Correctness of the Horn satisfiability test.** If $\varphi$ is a Horn CNF formula, then
+the Horn satisfiability test returns true on $\varphi$ if and only if $\varphi$ is satisfiable.
 
 ## Depends on
 
-- [Is Horn](is-horn.md)
-- [Horn Sat](horn-sat.md)
+- [Horn formula](is-horn.md)
+- [Horn satisfiability test](horn-sat.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFSat](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Proof depends on
 
-- [Clause Satisfied](../../dpll/solver/clause-satisfied.md)
-- [Formula Satisfied](../../dpll/solver/formula-satisfied.md)
-- [Least Model](least-model.md)
-- [Satisfies least Model iff](satisfies-least-model-iff.md)
+- [Boolean clause satisfaction check](../../dpll/solver/clause-satisfied.md)
+- [Boolean formula satisfaction check](../../dpll/solver/formula-satisfied.md)
+- [Least model candidate](least-model.md)
+- [Horn satisfiability via the least model](satisfies-least-model-iff.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-3.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)

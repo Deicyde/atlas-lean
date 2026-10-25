@@ -22,7 +22,7 @@ $\Gamma$.
 - [Hindley–Milner typing](../typing/has-type.md)
 - [Monotypes](../typing/ty.md)
 - [Algorithm W](w.md)
-- [Subst](../../../../part-02/unification/basic/subst.md)
+- [Substitution](../../../../part-02/unification/basic/subst.md)
 
 ## Proof depends on
 
@@ -35,13 +35,13 @@ $\Gamma$.
 - [Applying a type substitution to a scheme](../typing/subst-ty.md)
 - [Generalization of a monotype](../typing/gen.md)
 - [Monotypes as type schemes](../typing/to-scheme.md)
-- [Equations](../../../../part-02/unification/basic/equations.md)
-- [Comp](../../../../part-02/unification/basic/comp.md)
-- [Term](../../../../part-02/unification/basic/term.md)
-- [Subst](../../../../part-02/unification/basic/subst-2.md)
-- [Unifies](../../../../part-02/unification/basic/unifies.md)
-- [Soundness](../../../../part-02/unification/basic/unifies-unify.md)
-- [Unify](../../../../part-02/unification/basic/unify.md)
+- [Lists of equations](../../../../part-02/unification/basic/equations.md)
+- [Composition of substitutions](../../../../part-02/unification/basic/comp.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
+- [Applying a substitution to a term](../../../../part-02/unification/basic/subst-2.md)
+- [Unifier of a list of equations](../../../../part-02/unification/basic/unifies.md)
+- [Soundness of unification](../../../../part-02/unification/basic/unifies-unify.md)
+- [Martelli–Montanari unification](../../../../part-02/unification/basic/unify.md)
 
 ## Sources
 

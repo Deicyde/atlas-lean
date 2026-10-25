@@ -6,25 +6,30 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DirectedAdjacency.dijkstra_pathTo?_eq_none_iff
 ---
 
-# Dijkstra path To? eq none iff
+# Dijkstra's path reconstruction fails exactly at infinite distance
 
-Predecessor reconstruction fails exactly at vertices with infinite distance.
+**Dijkstra's path reconstruction fails exactly at infinite distance.** Let $G$ be a directed
+graph on the vertices $0, \dots, n-1$, let $w(u, v)$ be a natural-number weight for every
+ordered pair of vertices, and let $s$ and $t$ be vertices. Reconstructing a path from $s$ to
+$t$ by following, for at most $n$ steps, the predecessor pointers output by Dijkstra's
+algorithm on $G$ with weights $w$ from source $s$ fails if and only if the distance output
+for $t$ is infinite.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
-- [Dijkstra Cost](dijkstra-cost.md)
-- [Dijkstra Result](dijkstra-result.md)
-- [Path To?](path-to.md)
-- [Dijkstra](dijkstra.md)
+- [Directed adjacency graph](../../directed-adjacency-2/directed-adjacency.md)
+- [Cost of dense Dijkstra](dijkstra-cost.md)
+- [Output of Dijkstra's algorithm](dijkstra-result.md)
+- [Path recovery from Dijkstra predecessors](path-to.md)
+- [Dense Dijkstra's algorithm](dijkstra.md)
 
 ## Proof depends on
 
-- [Edge](../../directed-adjacency-2/edge.md)
-- [Has Path Weight](has-path-weight.md)
-- [Reachable](../../directed-adjacency-2/reachable.md)
-- [Path Weight](path-weight.md)
-- [Reachable iff exists has Path Weight](reachable-iff-exists-has-path-weight.md)
+- [Edge of a directed adjacency graph](../../directed-adjacency-2/edge.md)
+- [Walks of a given weight](has-path-weight.md)
+- [Reachability in a directed graph](../../directed-adjacency-2/reachable.md)
+- [Endpoint-weight sum along a vertex list](path-weight.md)
+- [Reachability via weighted walks](reachable-iff-exists-has-path-weight.md)
 
 ## Sources
 

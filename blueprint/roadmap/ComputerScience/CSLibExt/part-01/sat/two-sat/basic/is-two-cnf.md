@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Algorithms.SAT.TwoSAT.IsTwoCNF
 ---
 
-# Is Two CNF
+# 2-CNF formulas
 
-A CNF formula in which every clause has at most two literals.
+**2-CNF formulas.** A CNF formula is a 2-CNF formula when each of its clauses, viewed as a
+list of literals, has length at most $2$ (repeated literals are counted with multiplicity).
 
 ## Depends on
 

@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsRepeatLaw_complete
 ---
 
-# Freivalds Repeat Law complete
+# Completeness of repeated Freivalds trials
 
-A correct product is accepted with probability one for every number of trials.
+**Completeness of repeated Freivalds trials.** Let $n, k$ be natural numbers and let
+$A, B, C$ be $n \times n$ matrices over $\mathbb{F}_2$ with $AB = C$. If the history of $k$
+seeds is drawn uniformly from $(\mathbb{F}_2^n)^k$, then the repeated Freivalds executor accepts
+with probability $1$.
 
 ## Depends on
 
-- [Freivalds Matrix](../basic/freivalds-matrix.md)
-- [Freivalds Repeat Law](freivalds-repeat-law.md)
+- [Matrix of a Freivalds input](../basic/freivalds-matrix.md)
+- [Output distribution of repeated Freivalds trials](freivalds-repeat-law.md)
 
 ## Proof depends on
 
-- [Freivalds Repeat Law acceptance power](freivalds-repeat-law-acceptance-power.md)
-- [Freivalds Trial Law](../probability/freivalds-trial-law.md)
-- [Freivalds Trial Law complete](../probability/freivalds-trial-law-complete.md)
+- [Acceptance probability of repeated Freivalds trials](freivalds-repeat-law-acceptance-power.md)
+- [Freivalds trial law](../probability/freivalds-trial-law.md)
+- [The Freivalds trial accepts a correct product with probability one](../probability/freivalds-trial-law-complete.md)
 
 ## Sources
 

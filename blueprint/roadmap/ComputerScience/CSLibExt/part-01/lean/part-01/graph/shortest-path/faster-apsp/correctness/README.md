@@ -4,5 +4,5 @@ navigation: module
 
 # Correctness
 
-- [Faster APSP edge Bounded](faster-apsp-edge-bounded.md)
-- [Faster APSP distance spec](faster-apsp-distance-spec.md)
+- [FASTER-APSP computes edge-bounded shortest-path weights](faster-apsp-edge-bounded.md)
+- [FASTER-APSP computes shortest-path weights](faster-apsp-distance-spec.md)

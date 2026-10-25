@@ -12,12 +12,12 @@ The ridge estimate with `λ = v / τ` maximizes the posterior kernel.
 
 ## Depends on
 
-- [Ridge Estimate](ridge-estimate.md)
-- [Ridge Posterior](ridge-posterior.md)
+- [Ridge estimate](ridge-estimate.md)
+- [Posterior kernel of ridge regression](ridge-posterior.md)
 
 ## Proof depends on
 
-- [Ridge](ridge.md)
+- [Ridge objective](ridge.md)
 - [Ridge regression is MAP estimation](ridge-posterior-le-iff.md)
 - [Closed form of ridge regression](ridge-le-ridge-estimate.md)
 

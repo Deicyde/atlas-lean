@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.SortingNetworks.Bitonic.IsBitonic
 ---
 
-# Is Bitonic
+# Bitonic 0-1 sequences
 
-A bitonic `0`-`1` sequence of length `L`: `0ᵃ1ᵇ0ᶜ` or `1ᵃ0ᵇ1ᶜ`, the indicator of an interval
-or of its complement.
+**Bitonic 0-1 sequences.** A sequence $s : \mathbb{N} \to \{0, 1\}$ is bitonic of length $L$
+if either $s$ or its complement $1 - s$ is an interval indicator of length $L$; that is, on the
+positions $0, \dots, L - 1$ it has the form $0^a 1^b 0^c$ or $1^a 0^b 1^c$. Values of $s$ at
+positions $i \ge L$ are unconstrained.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Interval](is-interval.md)
+- [Interval indicators](is-interval.md)
 
 ## Sources
 

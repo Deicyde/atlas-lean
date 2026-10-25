@@ -7,18 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Graph.hamiltonianCycleToTsp_costs
 ---
 
-# Hamiltonian Cycle To Tsp costs
+# Costs produced by the Hamiltonian-cycle to TSP converter
 
-An encoded simple graph yields zero on edges, one on nonedges and the diagonal,
-and symmetric cells.
+**Costs produced by the Hamiltonian-cycle to TSP converter.** Let $G$ be a simple graph on the
+vertex set $\{0, \dots, n-1\}$, let $x$ be a Boolean array of length $n^2$ such that for all
+$i, j < n$ the cell of $x$ at index $in + j$ exists and is true exactly when $i$ and $j$ are
+adjacent in $G$, and let $y$ be the array output by the Hamiltonian-cycle to TSP converter on $x$,
+with a Boolean cell read as $1$ if true and $0$ if false. Then for all $i, j < n$ the cell of $y$
+at index $in + j$ exists and equals $0$ if $i$ and $j$ are adjacent in $G$ and $1$ otherwise; for
+every $i < n$ the cell of $y$ at index $in + i$ exists and equals $1$; and for all $i, j < n$ the
+cells of $y$ at indices $in + j$ and $jn + i$ are equal.
 
 ## Depends on
 
-- [Hamiltonian Cycle To Tsp](hamiltonian-cycle-to-tsp.md)
+- [Hamiltonian-cycle to TSP converter](hamiltonian-cycle-to-tsp.md)
 
 ## Proof depends on
 
-- [Hamiltonian Cycle To Tsp get Elem?](hamiltonian-cycle-to-tsp-get-elem.md)
+- [The Hamiltonian-cycle to TSP converter negates every cell](hamiltonian-cycle-to-tsp-get-elem.md)
 
 ## Sources
 

@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.matroidGreedy_isBase
 ---
 
-# Matroid Greedy is Base
+# The matroid greedy result is a base
 
-If `es` lists exactly the ground set, the result is a base.
+**The matroid greedy result is a base.** Let $M$ be a matroid on a type $\alpha$ with ground set
+$E$, and let $O$ be an oracle that accepts a finite set $A \subseteq \alpha$ exactly when $A$ is
+independent in $M$. For every list $L$ in which an element of $\alpha$ occurs if and only if it lies
+in $E$, the set returned by the greedy algorithm with oracle $O$ on $L$ is a base of $M$.
 
 ## Depends on
 
-- [Matroid Greedy](matroid-greedy.md)
+- [Greedy algorithm on a matroid](matroid-greedy.md)
 
 ## Proof depends on
 
-- [Matroid Greedy Scan](matroid-greedy-scan.md)
-- [Matroid Greedy Scan spec](matroid-greedy-scan-spec.md)
+- [Greedy scan with an independence oracle](matroid-greedy-scan.md)
+- [Invariant of the greedy scan](matroid-greedy-scan-spec.md)
 
 ## Sources
 

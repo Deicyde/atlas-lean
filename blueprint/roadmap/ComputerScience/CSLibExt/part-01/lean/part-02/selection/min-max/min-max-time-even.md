@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.minMax_time_even
 ---
 
-# Min Max time even
+# Comparisons of the min–max algorithm on even-length lists
 
-Positive even inputs save two comparisons by initializing from one ordered pair.
+**Comparisons of the min–max algorithm on even-length lists.** For every natural number
+$k \ge 1$ and every list of length $2k$ over a linearly ordered type, the simultaneous minimum and
+maximum algorithm makes exactly $3k - 2$ comparisons.
 
 ## Depends on
 
-- [Min Max](min-max.md)
+- [Simultaneous minimum and maximum](min-max.md)
 
 ## Sources
 

@@ -6,16 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Parallel.Brent.Schedule.sum_load
 ---
 
-# Sum load
+# The step loads add up to the number of tasks
 
-The loads of the steps add up to the work.
+**The step loads add up to the number of tasks.** For a schedule $S$ of a task graph with $n$
+tasks that takes $T$ steps, the numbers of tasks run in the steps $0, 1, \dots, T - 1$ add up
+to $n$.
 
 ## Depends on
 
-- [Dag](../brent/dag.md)
+- [Computation DAG](../brent/dag.md)
 - [Schedule](../brent/schedule.md)
-- [Length](../brent/length.md)
-- [Load](load.md)
+- [Length of a schedule](../brent/length.md)
+- [Load of a step](load.md)
 
 ## Sources
 

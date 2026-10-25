@@ -8,9 +8,14 @@ lean: Cslib.Algorithms.Lean.Online.ListUpdate.mtf_perm
 
 # The amortized cost of a move-to-front step
 
-**The amortized cost of a move-to-front step** (Sleator and Tarjan): accessing `x` costs at
-most `2 i - 1` in amortized terms, where `i` is the position of `x` in the offline list,
-`k + Φ' ≤ Φ + 2 i - 1`. -/
+**The amortized cost of a move-to-front step.** Let $M$ be a list of distinct items, $L$ a
+rearrangement of $M$ (the offline list), and $x$ an item of $M$ at position $k$ in $M$ and
+position $i$ in $L$, counting from $1$. Let $\Phi$ be the number of inversions between $M$ and
+$L$ (the pairs of items that the two lists order differently), and $\Phi'$ the number of
+inversions between the list obtained from $M$ by moving $x$ to the front and $L$. Then
+$k + \Phi' \le \Phi + 2i - 1$.
+
+This is the amortized step of Sleator and Tarjan's analysis, with potential $\Phi$. -/
 theorem mtf_step {M L : List α} (hnd : M.Nodup) (hL : L.Perm M) {x : α} (hx : x ∈ M) :
     accessCost M x + inv (mtf M x) L + 1 ≤ inv M L + 2 * accessCost L x := by
   have hndL : L.Nodup := hL.nodup_iff.2 hnd
@@ -77,7 +82,7 @@ theorem mtf_step {M L : List α} (hnd : M.Nodup) (hL : L.Perm M) {x : α} (hx : 
 
 ## Depends on
 
-- [Mtf](mtf.md)
+- [Move-to-front](mtf.md)
 
 ## Sources
 

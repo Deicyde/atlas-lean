@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Online.Paging.outside
 ---
 
-# Outside
+# Outside page of a cache
 
-A page of `Fin (k + 1)` outside a cache (when there is one).
+**Outside page of a cache.** For a natural number $k$ and a list $c$ of pages from
+$\{0, \dots, k\}$, the outside page of $c$ is the smallest $x \in \{0, \dots, k\}$ that does not
+occur in $c$, or $0$ if every page of $\{0, \dots, k\}$ occurs in $c$.
 
 ## Depends on
 

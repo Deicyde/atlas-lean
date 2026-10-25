@@ -6,14 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matching.GaleShapley.newHolder_cases
 ---
 
-# New Holder cases
+# Cases of the receiver's new holder
 
-`newHolder` keeps the better of the old holder and the proposer.
+**Cases of the receiver's new holder.** Let $s$ be a state of deferred acceptance, $m$ a
+proposer and $w$ a receiver with ranking $\tau_w$ of the proposers ($\tau_w^{-1}(x)$ is the rank
+of $x$, rank $0$ the best). Then one of the following holds: $w$ holds nobody in $s$ and holds $m$
+after $m$ proposes to her; or $w$ holds some $y$ in $s$ with $\tau_w^{-1}(m) < \tau_w^{-1}(y)$
+and holds $m$ after $m$ proposes to her; or $w$ holds some $y$ in $s$ with
+$\tau_w^{-1}(m) \ge \tau_w^{-1}(y)$ and holds $y$ after $m$ proposes to her.
 
 ## Depends on
 
-- [State](state.md)
-- [New Holder](new-holder.md)
+- [Deferred-acceptance state](state.md)
+- [Receiver's holder after a proposal](new-holder.md)
 
 ## Sources
 

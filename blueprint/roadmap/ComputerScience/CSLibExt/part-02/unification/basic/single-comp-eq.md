@@ -6,17 +6,21 @@ proof: formalized
 lean: Cslib.Unification.Subst.single_comp_eq
 ---
 
-# Single comp eq
+# Absorbing a single-variable substitution
 
-A substitution that already sends `x` to `t.subst s` absorbs `single x t`.
+**Absorbing a single-variable substitution.** Let $x$ be a variable, $t$ a term, and
+$[x \mapsto t]$ the substitution replacing $x$ by $t$ and fixing every other variable. If a
+substitution $\sigma$ satisfies $\sigma(x) = t\sigma$, where $t\sigma$ is the result of applying
+$\sigma$ to $t$, then the composite substitution that applies $[x \mapsto t]$ first and
+$\sigma$ second equals $\sigma$.
 
 ## Depends on
 
-- [Subst](subst.md)
-- [Comp](comp.md)
-- [Single](single.md)
-- [Term](term.md)
-- [Subst](subst-2.md)
+- [Substitution](subst.md)
+- [Composition of substitutions](comp.md)
+- [Single-variable substitution](single.md)
+- [Terms for unification](term.md)
+- [Applying a substitution to a term](subst-2.md)
 
 ## Sources
 

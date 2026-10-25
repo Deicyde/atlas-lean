@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.FloatingPoint.abs_rne_sub_le_min
 ---
 
-# Abs rne sub le min
+# Rounding error bounded by the distances to neighbouring integers
 
-The rounding error is at most the distance to the floor and at most the distance to the
-ceiling.
+**Rounding error bounded by the distances to neighbouring integers.** Let $K$ be a linearly
+ordered field with a floor function. For every $m \in K$, the integer $\operatorname{rne}(m)$
+obtained by rounding $m$ to the nearest integer, ties to even, satisfies
+$|\operatorname{rne}(m) - m| \le m - \lfloor m \rfloor$ and
+$|\operatorname{rne}(m) - m| \le \lfloor m \rfloor + 1 - m$.
 
 ## Depends on
 
-- [Rne](rne.md)
+- [Nearest-integer rounding with ties to even](rne.md)
 
 ## Sources
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.takeSerial?_size
 ---
 
-# Take Serial? size
+# Removing a serial preserves the table size
 
-Taking a serial preserves the size of the table.
+**Removing a serial preserves the table size.** Let $t$ be a table of optional Huffman work
+items. If removing serial number $s$ from $t$ succeeds and returns a tree together with an
+updated table $t'$, then $t'$ has the same size as $t$.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Huffman Work Item](huffman-work-item.md)
-- [Take Serial?](take-serial.md)
+- [Huffman tree](huffman-tree.md)
+- [Huffman work item](huffman-work-item.md)
+- [Removing a work item by serial](take-serial.md)
 
 ## Proof depends on
 
-- [Huffman Priority](huffman-priority.md)
+- [Huffman priority](huffman-priority.md)
 
 ## Sources
 

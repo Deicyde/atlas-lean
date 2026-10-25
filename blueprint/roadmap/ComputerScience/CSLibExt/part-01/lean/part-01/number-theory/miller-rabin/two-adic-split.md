@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MillerRabin.twoAdicSplit
 ---
 
-# Two Adic Split
+# Splitting off the power of two
 
-The split `m = 2^t * u` with `u` odd, as `(t, u)`, for `m > 0` (and `(0, 0)` for `m = 0`).
+**Splitting off the power of two.** For a natural number $m > 0$, the two-adic split of $m$
+is the pair $(t, u)$ of natural numbers with $m = 2^t u$ and $u$ odd. For $m = 0$ it is
+$(0, 0)$.
 
 ## Depends on
 

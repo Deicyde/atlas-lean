@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.countingSort_time
 ---
 
-# Counting Sort time
+# Running time of counting sort
 
-Counting sort uses at most `7 * n + 3 * k` charged operations.
+**Running time of counting sort.** Let $k$ be a natural number, let $\mathrm{key}$ assign to
+each record a key in $\{0, \dots, k-1\}$, and let $A$ be an array of $n$ records. Counting sort on
+$A$ with this key is charged at most $7n + 3k$ operations, where one operation is charged for each
+counter initialization, key evaluation, counter read, counter write and output write.
 
 ## Depends on
 
-- [Counting Sort](counting-sort.md)
+- [Counting sort](counting-sort.md)
 
 ## Sources
 

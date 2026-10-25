@@ -17,7 +17,7 @@ $v'$ satisfies every clause of $\mathrm{chainTail}(C, z)$.
 
 ## Depends on
 
-- [Clause Satisfied](../../../../../../ComputerScience/CSLibExt/part-01/sat/dpll/solver/clause-satisfied.md)
+- [Boolean clause satisfaction check](../../../../../../ComputerScience/CSLibExt/part-01/sat/dpll/solver/clause-satisfied.md)
 - [The tail of a clause chain](../three-sat/chain-tail.md)
 - [Fresh variable indices](../three-sat/fresh.md)
 - [Renaming of the original variables](../three-sat/ren.md)

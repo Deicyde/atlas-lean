@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.OfflineCaching.misses
 ---
 
-# Misses
+# Number of misses in a trace
 
-The number of misses in a trace.
+**Number of misses in a trace.** The number of misses of a finite list of cache events is the
+number of events in the list that are misses.
 
 ## Depends on
 
-- [Cache Event](cache-event.md)
+- [Cache events](cache-event.md)
 
 ## Proof depends on
 
-- [Is Miss](is-miss.md)
+- [Miss indicator](is-miss.md)
 
 ## Sources
 

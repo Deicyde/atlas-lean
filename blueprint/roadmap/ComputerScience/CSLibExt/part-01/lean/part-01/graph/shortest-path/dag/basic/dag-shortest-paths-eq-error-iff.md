@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DAGShortestPaths.dagShortestPaths_eq_error_iff
 ---
 
-# Dag Shortest Paths eq error iff
+# Failure output of DAG shortest paths
 
-The wrapper relays exactly the sorter's processed/remainder failure data.
+**Failure output of DAG shortest paths.** For a list $E$ of integer-weighted edges on $n$
+vertices, a source $s$, and lists $P$ and $R$ of vertices, the DAG shortest-path algorithm on $E$
+from $s$ returns the error $(P, R)$ if and only if Kahn's topological sort of the directed graph
+obtained from $E$ by forgetting weights fails after processing $P$ and leaving $R$.
 
 ## Depends on
 
-- [Distances](../../bellman-ford/basic/distances.md)
-- [Edge](../../bellman-ford/basic/edge.md)
-- [To Directed Adjacency](../../bellman-ford/basic/to-directed-adjacency.md)
-- [Cost](cost.md)
-- [Dag Shortest Paths](dag-shortest-paths.md)
-- [Result](../../../topological-sort/result.md)
-- [Sort](../../../topological-sort/sort.md)
+- [Bellman-Ford distance table](../../bellman-ford/basic/distances.md)
+- [Weighted directed edge](../../bellman-ford/basic/edge.md)
+- [Weight-forgetting directed graph](../../bellman-ford/basic/to-directed-adjacency.md)
+- [Cost of the DAG shortest-path pass](cost.md)
+- [Shortest paths in a DAG with a topology check](dag-shortest-paths.md)
+- [Outcome of Kahn's topological sort](../../../topological-sort/result.md)
+- [Kahn's topological sort](../../../topological-sort/sort.md)
 
 ## Proof depends on
 
-- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Directed adjacency graph](../../../directed-adjacency-2/directed-adjacency.md)
 
 ## Sources
 

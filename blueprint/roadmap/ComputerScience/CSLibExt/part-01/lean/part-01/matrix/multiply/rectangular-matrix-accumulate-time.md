@@ -7,13 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_time
 ---
 
-# Rectangular Matrix Accumulate time
+# Operation count of rectangular matrix accumulation
 
-Exact multiplication and accumulator-addition counts of the actual rectangular run.
+**Operation count of rectangular matrix accumulation.** Let $\alpha$ be a type with an
+addition and a multiplication, and let $A$, $B$, $C$ be $p \times q$, $q \times r$ and
+$p \times r$ matrices over $\alpha$. Rectangular matrix accumulation on $A$, $B$, $C$ has cost
+$(pqr, pqr)$: it charges exactly $pqr$ scalar multiplications and exactly $pqr$ scalar
+additions.
 
 ## Depends on
 
-- [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)
+- [Rectangular matrix accumulation](rectangular-matrix-accumulate.md)
 
 ## Sources
 

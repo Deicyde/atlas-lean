@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Matrix.freivaldsHistory_pointMass
 ---
 
-# Freivalds History point Mass
+# Uniform mass of a Freivalds seed history
 
-Every complete history has its exact uniform mass, including zero trials
-and zero-dimensional matrices.
+**Uniform mass of a Freivalds seed history.** For all natural numbers $n$ and $k$, under the
+uniform distribution on histories of $k$ seeds, that is, on $(\mathbb{F}_2^n)^k$, every history
+has probability exactly $(2^{nk})^{-1}$. This includes the cases $k = 0$ and $n = 0$.
 
 ## Depends on
 

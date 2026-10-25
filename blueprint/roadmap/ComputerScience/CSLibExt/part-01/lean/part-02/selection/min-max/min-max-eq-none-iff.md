@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.minMax_eq_none_iff
 ---
 
-# Min Max eq none iff
+# The min–max algorithm returns no result exactly on the empty list
 
-Empty input is exactly the case without extrema.
+**The min–max algorithm returns no result exactly on the empty list.** For every list $xs$
+over a linearly ordered type, the simultaneous minimum and maximum algorithm returns no result on
+$xs$ if and only if $xs$ is empty.
 
 ## Depends on
 
-- [Min Max](min-max.md)
+- [Simultaneous minimum and maximum](min-max.md)
 
 ## Proof depends on
 
-- [Min Max ret](min-max-ret.md)
+- [Correctness of the simultaneous minimum and maximum algorithm](min-max-ret.md)
 
 ## Sources
 

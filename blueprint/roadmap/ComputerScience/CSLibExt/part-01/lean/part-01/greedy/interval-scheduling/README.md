@@ -4,8 +4,8 @@ navigation: module
 
 # Interval Scheduling
 
-- [Interval Compatible](interval-compatible.md)
-- [Symm](symm.md)
-- [Interval Schedule](interval-schedule.md)
-- [Interval Schedule correct](interval-schedule-correct.md)
-- [Interval Schedule time](interval-schedule-time.md)
+- [Compatible activities](interval-compatible.md)
+- [Symmetry of interval compatibility](symm.md)
+- [Earliest-finish greedy interval scheduling](interval-schedule.md)
+- [Correctness and optimality of earliest-finish interval scheduling](interval-schedule-correct.md)
+- [Comparison bound for earliest-finish interval scheduling](interval-schedule-time.md)

@@ -7,15 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.encodedLength_fork
 ---
 
-# Encoded Length fork
+# Encoded length of a fork
 
-At a fork, the encoded-length objective agrees with weighted path length.
+**Encoded length of a fork.** For any two coding trees $L$ and $R$, the encoded length of the
+tree with left subtree $L$ and right subtree $R$ equals its weighted path length.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
-- [Encoded Length](encoded-length.md)
-- [Weighted Path Length](weighted-path-length.md)
+- [Huffman tree](huffman-tree.md)
+- [Encoded length of a coding tree](encoded-length.md)
+- [Weighted path length](weighted-path-length.md)
 
 ## Sources
 

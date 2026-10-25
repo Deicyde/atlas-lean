@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_ret_eq_naiveMatches
 ---
 
-# Rabin Karp Matches ret eq naive Matches
+# Rabin–Karp and naive matching return the same offsets
 
-Erasing cost gives the same all-occurrence result as canonical naive matching.
+**Rabin–Karp and naive matching return the same offsets.** For every base $d$, modulus
+$q > 0$ and lists of natural numbers $P$ and $T$, the list of offsets returned by Rabin–Karp
+matching of $P$ in $T$ with base $d$ and modulus $q$ equals the list returned by naive matching
+of $P$ in $T$.
 
 ## Depends on
 
-- [Naive Matches](../naive/naive-matches.md)
-- [Rabin Karp Matches](rabin-karp-matches.md)
+- [Naive string matcher](../naive/naive-matches.md)
+- [Rabin–Karp string matching](rabin-karp-matches.md)
 
 ## Proof depends on
 
-- [Naive Matches nil pattern](../naive/naive-matches-nil-pattern.md)
-- [Naive Matches ret](../naive/naive-matches-ret.md)
+- [Naive matching with the empty pattern](../naive/naive-matches-nil-pattern.md)
+- [Output of naive matching](../naive/naive-matches-ret.md)
 
 ## Sources
 

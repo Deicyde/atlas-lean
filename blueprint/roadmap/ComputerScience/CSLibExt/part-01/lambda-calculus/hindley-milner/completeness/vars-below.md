@@ -12,11 +12,11 @@ $z$ occurring in $t$ satisfies $z < n$.
 
 ## Depends on
 
-- [Term](../../../../part-02/unification/basic/term.md)
+- [Terms for unification](../../../../part-02/unification/basic/term.md)
 
 ## Proof depends on
 
-- [Vars](../../../../part-02/unification/basic/vars.md)
+- [Variables of a term](../../../../part-02/unification/basic/vars.md)
 
 ## Sources
 

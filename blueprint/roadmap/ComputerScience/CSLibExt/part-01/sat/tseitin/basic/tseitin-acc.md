@@ -5,11 +5,21 @@ statement: formalized
 lean: Cslib.Logic.PL.Proposition.tseitinAcc
 ---
 
-# Tseitin Acc
+# Linear-time Tseitin builder
 
-The linear-time Tseitin builder: like `tseitinAux`, but prepends each gate's defining
-clauses to an accumulator `acc` instead of concatenating the operands' clause lists. The
-clauses come out in a different order (`tseitinAcc_eq`).
+**Linear-time Tseitin builder.** Fix a map $\iota$ from atoms to natural numbers. Given a
+formula $A$, a gate number $k$ and a clause list $\mathit{acc}$, the builder returns a literal
+naming $A$, a clause list and the next unused gate number. For an atom $a$ it returns the
+positive literal of variable $2\iota(a)$, the list $\mathit{acc}$ unchanged, and $k$. For
+$A \circ B$ with $\circ$ one of $\wedge$, $\vee$, $\to$, it runs on $A$ from gate $k$ with
+accumulator $\mathit{acc}$, obtaining a literal $a$, a list $L_A$ and a gate number $k'$, then on
+$B$ from gate $k'$ with accumulator $L_A$, obtaining $b$, $L_B$ and $k''$; it returns the positive
+literal $g$ of variable $2k''+1$, the three defining clauses of $g$ for $a \circ b$ followed by
+$L_B$, and $k''+1$.
+
+Unlike the reference Tseitin encoding, which concatenates the operands' clause lists, it
+prepends each gate's clauses to the accumulator, so it runs in linear time and the clauses come
+out in a different order.
 
 ## Depends on
 
@@ -17,10 +27,10 @@ clauses come out in a different order (`tseitinAcc_eq`).
 
 ## Proof depends on
 
-- [Acc Step](acc-step.md)
-- [And Clauses](and-clauses.md)
-- [Imp Clauses](imp-clauses.md)
-- [Or Clauses](or-clauses.md)
+- [One step of the linear-time Tseitin builder](acc-step.md)
+- [Tseitin clauses for a conjunction](and-clauses.md)
+- [Tseitin clauses for an implication](imp-clauses.md)
+- [Tseitin clauses for a disjunction](or-clauses.md)
 
 ## Sources
 

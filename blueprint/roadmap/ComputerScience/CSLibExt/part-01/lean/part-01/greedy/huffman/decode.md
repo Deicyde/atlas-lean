@@ -6,18 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.HuffmanTree.decode?
 ---
 
-# Decode?
+# Decoding a bit string
 
-Decode a complete bit string, rejecting an incomplete or invalid final codeword.
+**Decoding a bit string.** Let $T$ be a Huffman tree. Decoding the empty bit string with $T$
+returns the empty sequence of symbols. To decode a nonempty bit string $w$, decode one codeword
+from $w$ with $T$, obtaining a symbol $s$ and the unread bits $w'$, and return $s$ followed by
+the decoding of $w'$; decoding fails if decoding one codeword from $w$ fails or if decoding
+$w'$ fails.
 
 ## Depends on
 
-- [Huffman Tree](huffman-tree.md)
+- [Huffman tree](huffman-tree.md)
 
 ## Proof depends on
 
-- [Decode One?](decode-one.md)
-- [Decode Path?](decode-path.md)
+- [Decoding one codeword](decode-one.md)
+- [Following a path in a Huffman tree](decode-path.md)
 
 ## Sources
 

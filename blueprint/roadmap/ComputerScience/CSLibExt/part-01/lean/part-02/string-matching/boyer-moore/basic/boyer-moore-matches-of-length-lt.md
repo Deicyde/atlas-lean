@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_of_length_lt
 ---
 
-# Boyer Moore Matches of length lt
+# Boyer–Moore with a pattern longer than the text
 
-Overlength patterns return immediately, without preprocessing or search events.
+**Boyer–Moore with a pattern longer than the text.** Let $p$ and $t$ be words over the
+alphabet $\{0, \dots, \sigma - 1\}$. If $t$ is strictly shorter than $p$, then the Boyer–Moore
+matcher with pattern $p$ and text $t$ returns the empty list at cost $0$: no preprocessing or
+search events are charged.
 
 ## Depends on
 
-- [Boyer Moore Matches](boyer-moore-matches.md)
+- [Boyer–Moore matcher for all occurrences](boyer-moore-matches.md)
 
 ## Proof depends on
 
-- [Preprocess](../preprocessing/preprocess.md)
-- [Preprocess good Suffix](../preprocessing/preprocess-good-suffix.md)
+- [Boyer–Moore preprocessing](../preprocessing/preprocess.md)
+- [Good-suffix table of Boyer–Moore preprocessing](../preprocessing/preprocess-good-suffix.md)
 
 ## Sources
 

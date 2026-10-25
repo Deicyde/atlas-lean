@@ -16,8 +16,8 @@ stable matchings.
 ## Depends on
 
 - [The Gale-Shapley matching](gs-matching.md)
-- [Mprefs](mprefs.md)
-- [Wprefs](wprefs.md)
+- [Proposers' preferences from rankings](mprefs.md)
+- [Receivers' preference profile from rankings](wprefs.md)
 - [Stable perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
 - [Men's preferences](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/mprefs.md)
 - [Perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
@@ -26,10 +26,10 @@ stable matchings.
 
 ## Proof depends on
 
-- [Every strict total order on `Fin n` is given by a ranking](exists-to-order-eq.md)
+- [Every strict total order on $\{0, \dots, n-1\}$ is given by a ranking](exists-to-order-eq.md)
 - [Proposer-optimality](gs-matching-proposer-optimal.md)
 - [The Gale-Shapley matching is stable](is-stable-gs-matching.md)
-- [To Order](to-order.md)
+- [Preference order of a ranking](to-order.md)
 - [Strict preference order](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/strict-total-order.md)
 - [Strict Total Order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 

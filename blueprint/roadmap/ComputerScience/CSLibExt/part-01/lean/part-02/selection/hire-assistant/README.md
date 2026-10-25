@@ -4,11 +4,11 @@ navigation: module
 
 # Hire Assistant
 
-- [Hire Assistant](hire-assistant.md)
-- [Hire Assistant ret](hire-assistant-ret.md)
-- [Hire Assistant hires](hire-assistant-hires.md)
-- [Hire Assistant time](hire-assistant-time.md)
-- [Hire Assistant nil](hire-assistant-nil.md)
-- [Hire Assistant singleton](hire-assistant-singleton.md)
-- [Hire Assistant hire bounds](hire-assistant-hire-bounds.md)
-- [Hire Assistant increasing](hire-assistant-increasing.md)
+- [The hire-assistant scan](hire-assistant.md)
+- [The hire-assistant scan returns the earliest best candidate](hire-assistant-ret.md)
+- [The hire-assistant scan hires exactly the strict prefix maxima](hire-assistant-hires.md)
+- [Cost of the hire-assistant scan](hire-assistant-time.md)
+- [Hire-assistant scan on no candidates](hire-assistant-nil.md)
+- [Hire-assistant scan on one candidate](hire-assistant-singleton.md)
+- [Hire-count bounds for the hire-assistant scan](hire-assistant-hire-bounds.md)
+- [Strictly increasing input hires every candidate](hire-assistant-increasing.md)

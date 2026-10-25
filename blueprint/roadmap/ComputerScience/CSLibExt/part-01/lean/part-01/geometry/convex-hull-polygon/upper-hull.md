@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Geometry.upperHull
 ---
 
-# Upper Hull
+# Upper chain
 
-The upper chain of points sorted by `(x, y)`: the lower-chain scan over the reversed list,
-from the last point back to the first.
+**Upper chain.** Let $K$ be a field with a linear order. The upper chain of a list of points
+$p_1, \dots, p_n \in K^2$ is the lower chain of the reversed list $p_n, \dots, p_1$, together with
+its cost: the same scan, counting the same orientation tests. For points sorted by $(x, y)$ it
+runs from the last point back to the first.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lower Hull](../convex-hull/lower-hull.md)
+- [Lower chain](../convex-hull/lower-hull.md)
 
 ## Sources
 

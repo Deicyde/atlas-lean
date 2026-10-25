@@ -6,25 +6,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Hierholzer.hierholzer_trail
 ---
 
-# Hierholzer trail
+# Hierholzer's algorithm returns a trail
 
-On a semi-balanced graph the result is a walk from `s` to `t` that uses each edge occurrence
-at most once (closed when `s = t`).
+**Hierholzer's algorithm returns a trail.** Let $G$ be a directed adjacency graph, read as a
+multigraph with one edge per adjacency entry, and let $s$ and $t$ be vertices such that $G$ is
+semi-balanced for $s$ and $t$. Then the vertex sequence $W$ returned by Hierholzer's algorithm on
+$G$ from $s$ starts at $s$ and ends at $t$, and the edge list of $G$ is a permutation of the list
+of consecutive pairs of $W$ followed by some further list of pairs. So $W$ is a walk from $s$ to
+$t$ that uses each edge occurrence at most once; reachability is not assumed.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
-- [Is Semi Balanced](is-semi-balanced.md)
-- [Edge List](edge-list.md)
+- [Directed adjacency graph](../directed-adjacency-2/directed-adjacency.md)
+- [Semi-balanced directed multigraph](is-semi-balanced.md)
+- [Edge list of a directed graph](edge-list.md)
 - [Hierholzer](hierholzer.md)
-- [Walk Edges](walk-edges.md)
+- [Steps of a walk](walk-edges.md)
 
 ## Proof depends on
 
-- [Balanced Edges](balanced-edges.md)
-- [Edge List Of](edge-list-of.md)
-- [Visit](visit.md)
-- [Visit spec](visit-spec.md)
+- [Balanced edge list](balanced-edges.md)
+- [Edge list of an adjacency function](edge-list-of.md)
+- [Hierholzer's recursion](visit.md)
+- [Contract of Hierholzer's recursion](visit-spec.md)
 
 ## Sources
 

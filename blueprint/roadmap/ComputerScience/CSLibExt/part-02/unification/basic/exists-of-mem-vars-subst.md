@@ -6,16 +6,18 @@ proof: formalized
 lean: Cslib.Unification.Term.exists_of_mem_vars_subst
 ---
 
-# Exists of mem vars subst
+# Variables of a substituted term
 
-A variable of `t.subst s` is a variable of `s y` for a variable `y` of `t`.
+**Variables of a substituted term.** Let $s$ be a substitution and $t$ a term. Every
+variable of the term obtained by applying $s$ to $t$ is a variable of $s(y)$ for some variable
+$y$ of $t$.
 
 ## Depends on
 
-- [Subst](subst.md)
-- [Term](term.md)
-- [Subst](subst-2.md)
-- [Vars](vars.md)
+- [Substitution](subst.md)
+- [Terms for unification](term.md)
+- [Applying a substitution to a term](subst-2.md)
+- [Variables of a term](vars.md)
 
 ## Sources
 
