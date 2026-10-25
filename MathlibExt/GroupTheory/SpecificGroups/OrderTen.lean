@@ -20,7 +20,7 @@ import Mathlib.Tactic.Ring
 /-!
 # Groups of order ten
 
-Adapted from `v1/Atlas/AlgebraNotes/code/SylowTheorems.lean`, lines 108-313 at
+Adapted from `v1/Atlas/AlgebraNotes/code/SylowTheorems.lean`, lines 108-325 at
 commit `8de8f74fa5760eb8b768a9804494ca2ab631cf87`.
 The public statement preserves the archived code's domains and hypotheses.
 This provenance is code-to-code, not verification of the unavailable textbook PDF.
