@@ -64,7 +64,7 @@ theorem abs_discr_gt_exp_term_rat :
   NumberField.abs_discr_gt_exp_term ℚ
 
 /-- Corollary 14.26 for `ℚ`, in the Minkowski-term form: the middle
-term equals `π / 4` and is at most `|D_ℚ| = 1`. -/
+term equals `1`, so the first inequality is an equality: `1 = |D_ℚ|`. -/
 theorem middle_term_le_abs_discr_rat :
     (((Module.finrank ℚ ℚ : ℝ) ^ (Module.finrank ℚ ℚ) /
       (Nat.factorial (Module.finrank ℚ ℚ) : ℝ)) ^ 2 *
