@@ -22,8 +22,8 @@ concatenations $u_1 \cdots u_k$ with $k \ge 0$ and $u_1, \dots, u_k \in L$.
 - [Extending a list of pieces by a letter](extend-partitions.md)
 - [Partitions of a word into nonempty factors](partitions.md)
 - [Multi-stack recognizable predicates are exactly the r.e. predicates](../basic/tm2-recognizable-iff-re-pred.md)
-- [Dovetailing](../../../../MathlibExt/re/exists-mem.md)
-- [Forall mem](../../../../MathlibExt/re/forall-mem.md)
+- [Bounded existential quantification preserves recursive enumerability](../../../../MathlibExt/re/exists-mem.md)
+- [Bounded universal quantification preserves recursive enumerability](../../../../MathlibExt/re/forall-mem.md)
 
 ## Sources
 

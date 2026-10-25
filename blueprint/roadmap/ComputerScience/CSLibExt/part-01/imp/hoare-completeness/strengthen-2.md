@@ -13,13 +13,13 @@ Strengthen the precondition of a derivable total-correctness triple.
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Entails](../hoare/entails.md)
-- [Cmd](../syntax/cmd.md)
-- [TDerivable](tderivable.md)
+- [Entailment of assertions](../hoare/entails.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Total-correctness Hoare logic](tderivable.md)
 
 ## Proof depends on
 
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

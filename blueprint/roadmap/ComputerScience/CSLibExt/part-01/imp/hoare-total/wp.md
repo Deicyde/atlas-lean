@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.IMP.wp
 ---
 
-# Wp
+# Weakest precondition for total correctness
 
-Semantic weakest precondition for total correctness.
+**Weakest precondition for total correctness.** For a command $c$ and a postcondition $Q$,
+the weakest precondition $\mathrm{wp}(c, Q)$ is the assertion that holds at a state $s$ exactly
+when there is a terminating big-step execution of $c$ from $s$ ending in a state that satisfies
+$Q$.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
+- [Commands of IMP](../syntax/cmd.md)
 
 ## Proof depends on
 
-- [Big Step](../big-step/big-step.md)
-- [State](../syntax/state.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

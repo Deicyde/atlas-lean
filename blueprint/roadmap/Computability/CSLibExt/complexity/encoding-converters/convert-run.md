@@ -36,8 +36,8 @@ $\mathrm{encFst}(x)$, then $0$, then $\mathrm{encSnd}(w)$ from the top.
 - [Left-tagged state test](is-fst.md)
 - [Right-tagged state test](is-snd.md)
 - [Program of the converter to the canonical pair encoding](prog.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

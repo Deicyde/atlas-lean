@@ -8,15 +8,17 @@ lean: Cslib.Turing.SingleTapeTM.rePred_haltsOn
 
 # The halting set of a single-tape machine is r.e
 
-**The halting set of a single-tape machine is r.e.**, on input words.
+**The halting set of a single-tape machine is r.e.** Let $M$ be a single-tape Turing machine
+over a finite alphabet $\Sigma$, and fix a primitive recursive coding of $\Sigma$. Then the set of
+input words over $\Sigma$ on which $M$ halts is recursively enumerable.
 
 ## Depends on
 
-- [Halts On](../classes/halts-on.md)
+- [Halting on an input](../classes/halts-on.md)
 
 ## Proof depends on
 
-- [Halts On iff dom eval](halts-on-iff-dom-eval.md)
+- [Halting is termination of the run](halts-on-iff-dom-eval.md)
 - [The final tape of a run is partial recursive in the input word](partrec-eval.md)
 
 ## Sources

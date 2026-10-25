@@ -19,7 +19,7 @@ multi-stack machines, then so is the predicate $a \mapsto p(a) \wedge q(a)$.
 ## Proof depends on
 
 - [Multi-stack decidable predicates are exactly the computable predicates](../basic/tm2-decidable-iff-computable-pred.md)
-- [And](../../../../MathlibExt/re/and.md)
+- [Computable predicates are closed under conjunction](../../../../MathlibExt/re/and.md)
 
 ## Sources
 

@@ -26,7 +26,7 @@ otherwise.
 - [Prog](prog.md)
 - [Start label of the clique verifier](start.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -41,8 +41,8 @@ otherwise.
 - [Encoding of a graph instance](../clique/encode-kg.md)
 - [Vertex pairs in encoding order](../clique/pairs.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

@@ -42,13 +42,13 @@ unchanged.
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Live value of a name in a table](../sat-verifier-spec/live-val.md)
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
-- [Agree](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
-- [Embeds](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
-- [Frame](../../../MathlibExt/turing-machine/stack-embedding/frame.md)
-- [SEmb](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
-- [Map S](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
-- [Run Le embed](../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Agreement of host and sub-machine stacks](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
+- [Embedding of a machine in a host](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
+- [Frame condition for a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/frame.md)
+- [Stack embedding](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Translating a statement along a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Run embedding for bounded runs](../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

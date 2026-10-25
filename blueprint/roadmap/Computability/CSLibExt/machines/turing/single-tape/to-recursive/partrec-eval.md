@@ -8,8 +8,11 @@ lean: Cslib.Turing.SingleTapeTM.partrec_eval
 
 # The final tape of a run is partial recursive in the input word
 
-**The final tape of a run is partial recursive in the input word**: the head symbol and the
-cell lists left and right of the head of the configuration where `tm` halts on `l`.
+**The final tape of a run is partial recursive in the input word.** Let $M$ be a single-tape
+Turing machine whose finite alphabet $\Sigma$ carries a primitive recursive coding. The partial
+function sending an input word $l$ over $\Sigma$ to the final tape of the run of $M$ on $l$ (the
+symbol under the head, and the lists of cells to the left and to the right of the head), defined
+exactly when $M$ halts on $l$, is partial recursive.
 
 ## Depends on
 
@@ -17,12 +20,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [To Coded Cfg](to-coded-cfg.md)
-- [Coded Cfg](coded-cfg.md)
-- [Coded Step](coded-step.md)
-- [Eval coded Step](eval-coded-step.md)
-- [Primrec coded Step](primrec-coded-step.md)
-- [Primrec to Coded Cfg init Cfg](primrec-to-coded-cfg-init-cfg.md)
+- [Code of a single-tape configuration](to-coded-cfg.md)
+- [Coded configurations of a single-tape machine](coded-cfg.md)
+- [One step of a single-tape machine on coded configurations](coded-step.md)
+- [Running the coded step mirrors running the machine](eval-coded-step.md)
+- [The coded step of a single-tape machine is primitive recursive](primrec-coded-step.md)
+- [The code of the initial configuration is primitive recursive](primrec-to-coded-cfg-init-cfg.md)
 
 ## Sources
 

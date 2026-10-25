@@ -5,18 +5,23 @@ statement: formalized
 lean: Cslib.MachineLearning.LatentVariable.GaussianMixture.resp
 ---
 
-# Resp
+# Responsibilities in an isotropic Gaussian mixture
 
-The responsibilities `r n k = P(z = k | xₙ)` (the E-step): the posterior of the mixture.
+**Responsibilities in an isotropic Gaussian mixture.** For valid parameters $\theta$ with mixing
+weights $\pi_k$, means $\mu_k$ and variances $\sigma_k^2$, a point $x \in \mathbb{R}^d$ and a
+component $k$, the responsibility of $k$ for $x$ is the posterior
+$p_\theta(k \mid x) = \pi_k \mathcal{N}(x \mid \mu_k, \sigma_k^2 I) /
+\sum_j \pi_j \mathcal{N}(x \mid \mu_j, \sigma_j^2 I)$, where $\mathcal{N}(x \mid \mu, v I)$ is the
+isotropic Gaussian density. Computing it at each data point is the E-step.
 
 ## Depends on
 
-- [Valid Params](valid-params.md)
+- [The parameter space of isotropic Gaussian mixture EM](valid-params.md)
 
 ## Proof depends on
 
-- [Posterior](../expectation-maximization/posterior.md)
-- [Joint](joint.md)
+- [Posterior of a latent-variable model](../expectation-maximization/posterior.md)
+- [Joint density of an isotropic Gaussian mixture](joint.md)
 
 ## Sources
 

@@ -74,7 +74,7 @@ theorem drow_run (Bd m dI : ℕ) (s : MS) (v : Bool) (hmm : s.mm = 3 * m) (hl : 
 
 - [Stacks of the HAMPATH emitter](../ham-path-emit-machine/k.md)
 - [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
-- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Adding units to target stacks](../../../../../MathlibExt/turing-machine/program/add-u.md)
 
 ## Sources
 

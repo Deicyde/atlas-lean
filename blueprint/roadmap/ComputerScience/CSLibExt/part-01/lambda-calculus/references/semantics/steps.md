@@ -5,15 +5,16 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Steps
 ---
 
-# Steps
+# Multi-step evaluation with references
 
-Evaluation in any number of steps: the reflexive-transitive closure of
-`Step` on configurations `(t, μ)`.
+**Multi-step evaluation with references.** The relation $t \mid \mu \to^* t' \mid \mu'$ holds
+when the configuration $(t, \mu)$ reaches $(t', \mu')$ in zero or more evaluation steps; that is,
+it is the reflexive-transitive closure of one-step evaluation on pairs of a term and a store.
 
 ## Depends on
 
 - [Store](store.md)
-- [Term](../syntax/term.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 
 ## Proof depends on
 

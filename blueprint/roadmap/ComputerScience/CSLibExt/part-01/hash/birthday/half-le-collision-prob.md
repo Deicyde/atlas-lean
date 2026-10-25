@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Crypto.Birthday.half_le_collisionProb
 ---
 
-# Even odds
+# Even odds of a collision
 
-**Even odds**: if `2 N ≤ q (q - 1)`, a collision has probability at least `1/2`.
+**Even odds of a collision.** Let $\alpha$ be a nonempty finite set with $N$ elements and $q$ a
+natural number with $2 N \le q (q - 1)$. The probability that $q$ independent uniform samples from
+$\alpha$ contain a collision is at least $1/2$.
 
 ## Depends on
 
-- [Collision Prob](collision-prob.md)
+- [Collision probability](collision-prob.md)
 
 ## Proof depends on
 
-- [Div one add le collision Prob](div-one-add-le-collision-prob.md)
+- [Birthday lower bound, rational form](div-one-add-le-collision-prob.md)
 
 ## Sources
 

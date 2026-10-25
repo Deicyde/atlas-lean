@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Language.Yields.of_yieldsH
 ---
 
-# Of yields H
+# Height-bounded yields are yields
 
-A height-bounded derivation forest is a yield.
+**Height-bounded yields are yields.** Let $g$ be a context-free grammar. If a sentential
+form $\alpha$ yields the terminal word $w$ through a derivation forest of height at most $n$,
+then $\alpha$ yields $w$.
 
 ## Depends on
 
-- [Yields](../../part-02/yields/yields.md)
-- [Yields H](yields-h.md)
+- [Yield of a sentential form](../../part-02/yields/yields.md)
+- [Height-bounded derivations](yields-h.md)
 
 ## Sources
 

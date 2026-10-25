@@ -12,7 +12,7 @@ true exactly when the start nonterminal of $g$ is not among the generating nonte
 
 ## Depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Proof depends on
 

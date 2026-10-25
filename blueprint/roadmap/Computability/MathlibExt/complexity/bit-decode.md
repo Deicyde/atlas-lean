@@ -6,13 +6,15 @@ statement: formalized
 lean: MetaMathlibExt.BitstringEncoding.bitDecode
 ---
 
-# Bit Decode
+# Decoding function of a bitstring encoding
 
-The decoding function of the canonical `BitstringEncoding` of `α`.
+**Decoding function of a bitstring encoding.** For a type $\alpha$ with a canonical bitstring
+encoding, bitstring decoding is the decoding function of that encoding: it sends each finite list
+of booleans either to an element of $\alpha$ or to failure.
 
 ## Depends on
 
-- [Bitstring Encoding](bitstring-encoding.md)
+- [Bitstring encodings](bitstring-encoding.md)
 
 ## Sources
 

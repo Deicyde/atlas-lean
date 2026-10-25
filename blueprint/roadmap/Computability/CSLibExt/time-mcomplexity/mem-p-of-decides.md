@@ -6,32 +6,32 @@ proof: formalized
 lean: Cslib.TimeMComplexity.mem_P_of_decides
 ---
 
-# Mem P of decides
+# A timed decider with polynomial-time output function gives membership in P
 
-Repackaging for the canonical class `P`: a named `TimeM` decider
-whose computed function is polynomial-time in the canonical TM2 sense
-puts its language in `MetaMathlibExt.ComplexityTheory.P`. The
-`IsPolyTime` hypothesis is canonical complexity evidence that must be
-proved independently for the specific decider; it cannot be derived
-from `DecidesInDeclaredPolyTime`, which by
-`exists_decidesInDeclaredPolyTime` holds for `fun x => pure (L x)` for
-arbitrary `L`. A sound `TimeM`-to-TM simulation would first need a
-restricted executable representation with enforced cost accounting.
+**A timed decider with polynomial-time output function gives membership in P.** Let $L$ be
+a decision problem and let $f$ assign to each bit string $x$ a timed computation, that is, a
+Boolean return value together with a declared time in $\mathbb{N}$, whose return value equals
+$L(x)$ for every $x$. If the function sending $x$ to the return value of $f(x)$ is
+polynomial-time computable, then $L$ belongs to the class P.
+
+The polynomial-time hypothesis must be proved for the specific decider: it does not follow from a
+polynomial bound on the declared times, which are trusted annotations, since every decision
+problem has a decider of declared time zero.
 
 ## Depends on
 
-- [Bitstring Encoding](../../MathlibExt/complexity/bitstring-encoding.md)
-- [Bit Decode](../../MathlibExt/complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../MathlibExt/complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../MathlibExt/complexity/bit-encode.md)
-- [Delimit](../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../MathlibExt/complexity/undelimit.md)
-- [Undelimit Blocks](../../MathlibExt/complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Decision Complexity Class](../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
-- [Is Poly Time](../../MathlibExt/complexity/is-poly-time.md)
-- [P](../../MathlibExt/complexity/p.md)
+- [Bitstring encodings](../../MathlibExt/complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../MathlibExt/complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../MathlibExt/complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../MathlibExt/complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../MathlibExt/complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Complexity classes](../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../MathlibExt/complexity/decision-problem.md)
+- [Polynomial-time computable functions](../../MathlibExt/complexity/is-poly-time.md)
+- [The complexity class P](../../MathlibExt/complexity/p.md)
 
 ## Sources
 

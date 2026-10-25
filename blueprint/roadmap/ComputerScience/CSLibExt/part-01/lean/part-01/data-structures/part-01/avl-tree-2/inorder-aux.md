@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.inorderAux
 ---
 
-# Inorder Aux
+# Inorder traversal of an AVL tree onto a suffix
 
-Append the inorder traversal of a tree to an existing suffix in linear
-time; inherited from `BinarySearchTree` through `toBinaryTree`.
+**Inorder traversal of an AVL tree onto a suffix.** Given a tree $t$ and a list $s$, this is
+the list of keys of $t$ in inorder (left subtree, root key, right subtree, recursively)
+followed by $s$. It is computed in linear time by the binary search tree traversal of $t$ with
+its cached heights erased.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Binary trees with cached heights](tree.md)
 
 ## Proof depends on
 
-- [To Binary Tree](to-binary-tree.md)
+- [Erasing the cached heights of an AVL tree](to-binary-tree.md)
 - [Inorder Aux](../../part-02/binary-search-tree/inorder-aux.md)
 
 ## Sources

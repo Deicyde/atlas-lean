@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.weightedGreedySetCover_cost_le_sum_harmonic
 ---
 
-# The potential bound
+# Potential bound for weighted greedy set cover
 
-**The potential bound.** With nonnegative costs, for every cover `C*` of `U` drawn from `F`,
-the greedy cover costs at most `∑_{S ∈ C*} w S · H(|S ∩ U|)`.
+**Potential bound for weighted greedy set cover.** Let $F$ be a list of finite sets, $U$ a
+finite set and $w$ a rational cost function on finite sets with $w(S) \ge 0$ for every $S$ in $F$.
+If $C^*$ is a list of sets from $F$ whose union contains $U$, then the weighted greedy set cover of
+$U$ from $F$ with costs $w$ has total cost at most $\sum_{S \in C^*} w(S)\, H(|S \cap U|)$, the sum
+running over the entries of $C^*$ with repetition, where
+$H(n) = 1 + \frac{1}{2} + \dots + \frac{1}{n}$ is the $n$-th harmonic number.
 
 ## Depends on
 
-- [Total Cost](total-cost.md)
-- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
+- [Total cost of a list of sets](total-cost.md)
 
 ## Proof depends on
 
-- [Best Ratio Set](best-ratio-set.md)
-- [Card le sum card inter](../set-cover/card-le-sum-card-inter.md)
-- [Div le harmonic sub](../set-cover/div-le-harmonic-sub.md)
+- [Set with the least cost per new element](best-ratio-set.md)
+- [Covering bound by intersections](../set-cover/card-le-sum-card-inter.md)
+- [Lower bound for a difference of harmonic numbers](../set-cover/div-le-harmonic-sub.md)
 
 ## Sources
 

@@ -11,11 +11,11 @@ A production of `g` with its terminals replaced.
 
 ## Depends on
 
-- [Encoded CFG](../encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../encoded/encoded-cfg.md)
 
 ## Proof depends on
 
-- [Subst Symbol](subst-symbol.md)
+- [Substituting the symbols of a grammar](subst-symbol.md)
 
 ## Sources
 

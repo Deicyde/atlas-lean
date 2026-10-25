@@ -13,18 +13,18 @@ modified set.
 
 ## Depends on
 
-- [HSteps](hsteps.md)
+- [Multi-step heap execution](hsteps.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](heap-cmd.md)
-- [Mod Vars](mod-vars.md)
-- [State](../syntax/state.md)
+- [Heap commands](heap-cmd.md)
+- [Modified variables of a heap command](mod-vars.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [HConfig](hconfig.md)
-- [HStep](hstep.md)
-- [Mod Vars subset](mod-vars-subset.md)
-- [Store agree](store-agree.md)
+- [Heap configurations](hconfig.md)
+- [Small-step semantics of heap commands](hstep.md)
+- [Steps do not enlarge the modified variables](mod-vars-subset.md)
+- [A heap step only changes assignable variables](store-agree.md)
 
 ## Sources
 

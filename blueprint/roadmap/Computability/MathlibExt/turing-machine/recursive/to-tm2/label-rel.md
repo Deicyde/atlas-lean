@@ -12,12 +12,12 @@ post-phase.
 
 ## Depends on
 
-- [FΛ](f-2.md)
+- [Labels of the wrapped machine](f-2.md)
 
 ## Proof depends on
 
-- [Phase](phase.md)
-- [Supp](supp.md)
+- [Adapter labels](phase.md)
+- [Support of a code](supp.md)
 
 ## Sources
 

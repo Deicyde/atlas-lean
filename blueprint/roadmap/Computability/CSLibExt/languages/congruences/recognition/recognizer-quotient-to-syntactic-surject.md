@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Language.recognizerQuotientToSyntactic_surjective
 ---
 
-# Recognizer Quotient To Syntactic surjective
+# The kernel quotient of a recognizer maps onto the syntactic monoid
 
-The canonical map from a recognizer's kernel quotient onto the syntactic monoid is
-surjective.
+**The kernel quotient of a recognizer maps onto the syntactic monoid.** If a monoid morphism
+$\varphi$ from the free monoid $\Sigma^*$ recognizes a language $L$ over $\Sigma$ through a subset
+$A$ of its codomain, then the canonical monoid morphism from the quotient of $\Sigma^*$ by the
+kernel congruence of $\varphi$ to the syntactic monoid of $L$, which sends the class of a word
+$x$ to its syntactic class, is surjective.
 
 ## Depends on
 
-- [Recognizes](recognizes.md)
+- [Recognition of a language by a monoid morphism](recognizes.md)
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Recognizer Quotient To Syntactic](recognizer-quotient-to-syntactic.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Canonical map from a recognizer's kernel quotient to the syntactic monoid](recognizer-quotient-to-syntactic.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
 
 ## Proof depends on
 
-- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
+- [Syntactic morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

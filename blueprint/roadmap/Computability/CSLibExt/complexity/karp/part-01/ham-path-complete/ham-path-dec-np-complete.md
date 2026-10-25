@@ -14,9 +14,9 @@ lean: Cslib.Complexity.Karp.hamPathDec_npComplete
 
 - [The HAMPATH problem](../ham-path/ham-path-dec.md)
 - [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
-- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
-- [NP](../../../../../MathlibExt/complexity/np.md)
+- [Complexity classes](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
+- [The complexity class NP](../../../../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 

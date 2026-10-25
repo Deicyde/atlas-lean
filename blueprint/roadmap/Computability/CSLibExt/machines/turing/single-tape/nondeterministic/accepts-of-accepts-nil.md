@@ -6,10 +6,13 @@ proof: formalized
 lean: Cslib.Computability.Turing.SingleTape.SingleTapeNTM.accepts_of_accepts_nil
 ---
 
-# Accepts of accepts nil
+# An NTM that accepts the empty word accepts every word
 
-A machine that accepts the empty word accepts every word (a defect of the pinned definition,
-see `accepts_append`).
+**An NTM that accepts the empty word accepts every word.** If a single-tape nondeterministic
+Turing machine $m$ accepts the empty word, then $m$ accepts every word over its tape alphabet.
+
+This is a special case of acceptance being closed under extension on the right, a defect of
+CSLib's definition of these machines.
 
 ## Depends on
 

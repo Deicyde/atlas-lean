@@ -29,7 +29,7 @@ with empty machine state and all stacks empty.
 - [All stacks of the verifier from work stacks and output](stk.md)
 - [Stack alphabets of the dense CNF-SAT verifier](untitled.md)
 - [Single-pass evaluation of a dense CNF encoding](../dense-sat/eval-cnf.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 

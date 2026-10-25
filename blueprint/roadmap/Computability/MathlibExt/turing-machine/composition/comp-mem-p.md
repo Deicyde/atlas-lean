@@ -6,29 +6,30 @@ proof: formalized
 lean: MetaMathlibExt.ComplexityTheory.comp_mem_P
 ---
 
-# Comp mem P
+# P is closed under polynomial-time preimages
 
-`P` is closed under polynomial-time preimages: if `L ∈ P` and `f` is polynomial-time,
-then `L ∘ f ∈ P`. In particular `P` is closed under polynomial-time many-one reductions.
+**P is closed under polynomial-time preimages.** Let $L$ be a decision problem on bitstrings and
+let $f$ be a polynomial-time computable function from bitstrings to bitstrings. If $L$ is in P,
+then $L \circ f$ is in P. In particular P is closed under polynomial-time many-one reductions.
 
 ## Depends on
 
-- [Bitstring Encoding](../../complexity/bitstring-encoding.md)
-- [Bit Decode](../../complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../complexity/bit-encode.md)
-- [Delimit](../../complexity/delimit.md)
-- [Undelimit](../../complexity/undelimit.md)
-- [Undelimit Blocks](../../complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../complexity/undelimit-blocks-aux.md)
-- [Decision Complexity Class](../../complexity/decision-complexity-class.md)
-- [Decision Problem](../../complexity/decision-problem.md)
-- [Is Poly Time](../../complexity/is-poly-time.md)
-- [P](../../complexity/p.md)
+- [Bitstring encodings](../../complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../complexity/delimit.md)
+- [Parsing one self-delimiting block](../../complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../complexity/undelimit-blocks-aux.md)
+- [Complexity classes](../../complexity/decision-complexity-class.md)
+- [Decision problems](../../complexity/decision-problem.md)
+- [Polynomial-time computable functions](../../complexity/is-poly-time.md)
+- [The complexity class P](../../complexity/p.md)
 
 ## Proof depends on
 
-- [Comp](comp-2.md)
+- [Polynomial-time functions are closed under composition](comp-2.md)
 
 ## Sources
 

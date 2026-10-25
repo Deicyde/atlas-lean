@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Language.derives_of_mem_evalForm_languageFrom
 ---
 
-# Derives of mem eval Form language From
+# Words of the canonical interpretation are derivable
 
-A word in the interpreted language of a sentential form, under the
-canonical assignment `languageFrom`, is really derivable from that form.
+**Words of the canonical interpretation are derivable.** Let $g$ be a context-free grammar and
+assign to each nonterminal $A$ of $g$ the language of terminal words that $g$ derives from $A$. If a
+terminal word $w$ lies in the language that a sentential form $u$ of $g$ denotes under this
+assignment, then $u$ derives $w$ in $g$.
 
 ## Depends on
 
-- [Eval Form](eval-form.md)
-- [Language From](language-from.md)
+- [Interpretation of a sentential form](eval-form.md)
+- [Language generated from a nonterminal](language-from.md)
 
 ## Proof depends on
 
-- [Derives append](derives-append.md)
-- [Eval Symbol](eval-symbol.md)
+- [Concatenating derivations](derives-append.md)
+- [Interpretation of a grammar symbol](eval-symbol.md)
 
 ## Sources
 

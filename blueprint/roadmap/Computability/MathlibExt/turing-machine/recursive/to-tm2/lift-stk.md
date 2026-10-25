@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.TM2Recursive.liftStk
 ---
 
-# Lift Stk
+# Lifting stacks of tr
 
-`tr`'s stacks inside the wrapped machine, with empty input and output stacks.
+**Lifting stacks of tr.** Given contents $s$ of the four stacks main, rev, aux and stack of
+Mathlib's code-evaluating machine $\mathrm{tr}$, the stack contents of the wrapped machine that
+agree with $s$ on these four stacks and have empty input and output stacks.
 
 ## Depends on
 
-- [FΓ](f.md)
+- [Stack alphabets of the wrapped machine](f.md)
 
 ## Proof depends on
 
-- [Mk Stk](mk-stk.md)
+- [Stack contents of the wrapped machine](mk-stk.md)
 
 ## Sources
 

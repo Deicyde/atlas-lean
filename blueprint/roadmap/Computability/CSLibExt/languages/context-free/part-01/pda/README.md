@@ -4,9 +4,9 @@ navigation: module
 
 # PDA
 
-- [Cfg Step](cfg-step.md)
-- [Cfg PDA](cfg-pda.md)
-- [Cfg PDA accepts](cfg-pda-accepts.md)
-- [Exists pda accepts](exists-pda-accepts.md)
-- [Cfg PDA finitely Supported](cfg-pda-finitely-supported.md)
-- [Exists finitely supported pda accepts](exists-finitely-supported-pda-accepts.md)
+- [Transitions of the grammar-simulating pushdown automaton](cfg-step.md)
+- [The pushdown automaton simulating a context-free grammar](cfg-pda.md)
+- [The grammar-simulating pushdown automaton accepts the grammar's language](cfg-pda-accepts.md)
+- [Context-free languages are accepted by pushdown automata](exists-pda-accepts.md)
+- [The grammar-simulating pushdown automaton is finitely supported](cfg-pda-finitely-supported.md)
+- [Context-free languages are accepted by finitely supported pushdown automata](exists-finitely-supported-pda-accepts.md)

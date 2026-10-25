@@ -6,16 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.TM2Embedding.stepAux_mapS
 ---
 
-# Step Aux map S
+# Executing a translated statement
 
-One block of statements: the host's result is the sub-machine's, embedded.
+**Executing a translated statement.** Let $E$ be a stack embedding with stack renaming $e$, and
+let $\varphi$ map sub-machine labels to host labels. Let $q$ be a sub-machine statement, $v$ a
+state, $S$ sub-machine stacks and $S'$ host stacks that agree with $S$. Let executing $q$ from
+state $v$ and stacks $S$ yield the next label $\ell$ (possibly none), state $w$ and stacks $T$.
+Then there are host stacks $T'$ such that executing the translation of $q$ along $E$ and
+$\varphi$ from state $v$ and stacks $S'$ yields the next label $\varphi(\ell)$ (none if $\ell$ is
+none), state $w$ and stacks $T'$. Moreover $T'$ agrees with $T$, and $S'$, $T'$ satisfy the frame
+condition.
 
 ## Depends on
 
-- [Agree](agree.md)
-- [Frame](frame.md)
-- [SEmb](semb.md)
-- [Map S](map-s.md)
+- [Agreement of host and sub-machine stacks](agree.md)
+- [Frame condition for a stack embedding](frame.md)
+- [Stack embedding](semb.md)
+- [Translating a statement along a stack embedding](map-s.md)
 
 ## Sources
 

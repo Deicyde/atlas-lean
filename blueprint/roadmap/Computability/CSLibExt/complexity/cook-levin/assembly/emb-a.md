@@ -19,7 +19,7 @@ accept block, identifying each stack's alphabet with itself.
 - [Alphabets of the Cook–Levin host machine](h.md)
 - [Stacks of a counter machine](../counter-view/sk.md)
 - [Alphabets of a counter machine](../counter-view/s.md)
-- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: Cslib.MachineLearning.LatentVariable.GaussianMixtureFullCov.SpansAffinely
 ---
 
-# Spans Affinely
+# Data that span the space affinely
 
-Data in general position: at least one point, and not all contained in an affine hyperplane
-(for every nonzero direction `v`, the projections `⟪v, xₙ⟫` are not all equal). Then every
-responsibility-weighted sample covariance is positive definite (`newCov_posDef`).
+**Data that span the space affinely.** A family $(x_n)_{n\lt N}$ of points of $\mathbb{R}^d$
+is in general position when it has at least one point ($N > 0$) and is not contained in an
+affine hyperplane: for every nonzero $v \in \mathbb{R}^d$ there are indices $n, n'$ with
+$\langle v, x_n \rangle \neq \langle v, x_{n'} \rangle$.
+
+On such data every responsibility-weighted sample covariance is positive definite.
 
 ## Depends on
 

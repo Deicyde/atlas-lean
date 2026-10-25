@@ -6,32 +6,33 @@ proof: formalized
 lean: Cslib.Turing.Universal.codeCells_of_decodeCodeCells_eq_some
 ---
 
-# Code Cells of decode Code Cells eq some
+# Decoding inverts the code stack
 
-A decoded code has the bit list as its code stack.
+**Decoding inverts the code stack.** For every bit list $x$ and every code $c$, if $x$
+decodes to $c$, then the code stack of $c$ is $x$.
 
 ## Depends on
 
-- [Code Cells](../clocked/code-cells.md)
-- [Code](../code/code.md)
+- [The code stack](../clocked/code-cells.md)
+- [Codes for single-tape machines](../code/code.md)
 - [Decode Code Cells](decode-code-cells.md)
 
 ## Proof depends on
 
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Cell](../clocked/cell.md)
-- [Cells](../clocked/cells.md)
-- [Entries](../clocked/entries.md)
-- [Entry Nums](../clocked/entry-nums.md)
-- [Find Entry](../clocked/find-entry.md)
-- [Find Entry entries](../clocked/find-entry-entries.md)
-- [Lookup](../code/lookup.md)
-- [Cells Decode](cells-decode.md)
-- [Code Of Entries](code-of-entries.md)
-- [Entries Of Nums](entries-of-nums.md)
-- [Keys Ascend From](keys-ascend-from.md)
-- [Read Unary Length eq some iff cell](read-unary-length-eq-some-iff-cell.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [The cell of a number](../clocked/cell.md)
+- [The cells of a list of numbers](../clocked/cells.md)
+- [Entries of a code](../clocked/entries.md)
+- [Numbers of a list of entries](../clocked/entry-nums.md)
+- [Looking up a key in a list of entries](../clocked/find-entry.md)
+- [Scanning the entries finds the table entry](../clocked/find-entry-entries.md)
+- [Table lookup of a code](../code/lookup.md)
+- [Decoding a list of cells](cells-decode.md)
+- [The code of a list of entries](code-of-entries.md)
+- [Reading entries from numbers](entries-of-nums.md)
+- [Ascending keys of a list of entries](keys-ascend-from.md)
+- [Reading a unary length prefix reads one cell](read-unary-length-eq-some-iff-cell.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

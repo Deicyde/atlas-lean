@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.flatten_deleteRebuild_deleteRebuild
 ---
 
-# Flatten delete Rebuild delete Rebuild
+# Rebuilding deletion of the same key twice
 
-Deleting the same key twice has the same flattening as deleting it once.
+**Rebuilding deletion of the same key twice.** Let $t \ge 2$, let $T$ be an ordered tree (its
+flattening is strictly increasing) and let $x$ be a key. Deleting $x$ twice by rebuilding with
+minimum degree $t$ gives a tree with the same flattening as deleting $x$ once.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Ordered](../../btree-2/ordered.md)
-- [Delete Rebuild](delete-rebuild.md)
-- [Flatten](../../btree-2/flatten.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [Ordered B-tree](../../btree-2/ordered.md)
+- [B-tree deletion by rebuilding](delete-rebuild.md)
+- [Inorder flattening of a B-tree](../../btree-2/flatten.md)
 
 ## Proof depends on
 
-- [Flatten nodup](../../btree-2/flatten-nodup.md)
-- [Flatten delete Rebuild](flatten-delete-rebuild.md)
-- [Ordered delete Rebuild](ordered-delete-rebuild.md)
+- [An ordered B-tree has no duplicate keys](../../btree-2/flatten-nodup.md)
+- [Flattening after rebuilding deletion](flatten-delete-rebuild.md)
+- [Rebuild deletion yields an ordered tree](ordered-delete-rebuild.md)
 
 ## Sources
 

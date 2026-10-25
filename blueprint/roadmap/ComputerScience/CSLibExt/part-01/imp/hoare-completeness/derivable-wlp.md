@@ -6,29 +6,31 @@ proof: formalized
 lean: Cslib.IMP.derivable_wlp
 ---
 
-# Derivable wlp
+# The weakest liberal precondition gives a derivable triple
 
-The weakest liberal precondition is derivable for every command and
-postcondition.
+**The weakest liberal precondition gives a derivable triple.** For every command $c$ and
+every assertion $Q$, the triple whose precondition is the weakest liberal precondition of $c$
+with respect to $Q$, whose command is $c$ and whose postcondition is $Q$ is derivable in
+partial-correctness Hoare logic.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
-- [Derivable](derivable.md)
-- [Wlp](../hoare/wlp.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Derivability in Hoare logic for partial correctness](derivable.md)
+- [Weakest liberal precondition](../hoare/wlp.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [Entails](../hoare/entails.md)
-- [Subst](../hoare/subst.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Entailment of assertions](../hoare/entails.md)
+- [Substitution in an assertion](../hoare/subst.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Big Step](../big-step/big-step.md)
-- [Strengthen](strengthen.md)
-- [State](../syntax/state.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Precondition strengthening for partial correctness](strengthen.md)
+- [IMP program states](../syntax/state.md)
 - [While Loop](../hoare/while-loop-2.md)
 
 ## Sources

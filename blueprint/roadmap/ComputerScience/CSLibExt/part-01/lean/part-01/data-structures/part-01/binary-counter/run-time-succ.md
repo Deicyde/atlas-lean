@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.run_time_succ
 ---
 
-# Run time succ
+# Cost recurrence for the binary counter run
 
-A successor run adds the next increment cost to the actual accumulated cost.
+**Cost recurrence for the binary counter run.** For every width $k$, every $k$-bit counter
+$b$ and every $n$, the cost of running $n + 1$ successive increments from $b$ equals the cost of
+running $n$ increments from $b$ plus the cost of incrementing the counter that the $n$-step run
+returns.
 
 ## Depends on
 
-- [Increment](increment.md)
-- [Run](run.md)
+- [Binary counter increment](increment.md)
+- [Running the binary counter](run.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Knot.loopA
 ---
 
-# Loop A
+# Cycle term of Landin's knot
 
-The two configurations of the cycle: `(!l₀) unit` and `body₀ unit`, with
-`body₀` in the store.
+**Cycle term of Landin's knot.** The term $(!\ell_0)\ \mathrm{unit}$: the dereference of
+the store location $\ell_0$ (location $0$), applied to the unit value.
+
+When $\ell_0$ holds $b_0 = \lambda x{:}\mathrm{Unit}.\,(!\ell_0)\,x$, this term steps to
+$b_0\ \mathrm{unit}$, which steps back to it; these are the two configurations of the cycle.
 
 ## Depends on
 
-- [Term](../syntax/term.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 
 ## Sources
 

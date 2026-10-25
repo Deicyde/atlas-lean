@@ -16,7 +16,7 @@ every start state $p$ of $\beta$ for $q$ given $R$.
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Proof depends on
 

@@ -24,7 +24,7 @@ verifier accepts $(x, w)$.
 - [Every sublist is selected by a mask](exists-pick.md)
 - [Numbers chosen by a mask](pick.md)
 - [Bit-string encoding of SUBSET-SUM instances](../subset-sum/encode-ss.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

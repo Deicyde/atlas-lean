@@ -21,11 +21,11 @@ state $v'$ and stacks $S'$.
 - [Labels of the CLIQUE verifier](lab.md)
 - [Statements of the clique verifier](stmt.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

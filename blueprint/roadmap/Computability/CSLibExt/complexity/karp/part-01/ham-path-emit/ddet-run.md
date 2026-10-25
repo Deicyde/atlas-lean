@@ -40,17 +40,17 @@ $i$ for variable $y$.
 - [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Copying a counter in the HAMPATH emitter](../ham-path-emit-machine/cp-run.md)
 - [The detour walk of a diamond in the HAMPATH emitter](dwalk-run.md)
 - [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

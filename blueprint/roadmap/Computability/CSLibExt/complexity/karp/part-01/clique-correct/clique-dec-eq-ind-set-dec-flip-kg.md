@@ -39,7 +39,7 @@ theorem toGraph_map_not {n : ℕ} {bits : List Bool} (h : bits.length = (pairs n
 - [The graph encoded by pair bits](../clique/to-graph.md)
 - [Complementing the pair bits complements the graph](to-graph-map-not.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

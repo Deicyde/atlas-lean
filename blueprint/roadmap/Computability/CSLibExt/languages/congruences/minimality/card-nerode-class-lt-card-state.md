@@ -16,7 +16,7 @@ then the number of Nerode classes of $L$ is strictly less than $|Q|$.
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 - [Nerode classes to DFA states](to-dfastate.md)
 
 ## Proof depends on

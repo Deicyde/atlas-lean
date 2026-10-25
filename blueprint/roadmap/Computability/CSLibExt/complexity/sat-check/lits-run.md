@@ -35,15 +35,15 @@ every other stack unchanged.
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Live value of a name in a table](../sat-verifier-spec/live-val.md)
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Calling the lookup](call-s.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Is Bit](../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Bit test for the top of a stack](../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
 
 ## Sources
 

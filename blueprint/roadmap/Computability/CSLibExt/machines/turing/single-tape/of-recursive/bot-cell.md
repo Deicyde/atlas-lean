@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Turing.SingleTapeTM.OfTM2.botCell
 ---
 
-# Bot Cell
+# The bottom cell of the start tape
 
-The bottom cell of the emulation's start tape: the flagged cell holding `true` on the input
-stack.
+**The bottom cell of the start tape.** Let $M$ be a finite multi-stack machine whose input
+stack alphabet is identified with the bits. The bottom cell of the emulation's start tape is the
+cell flagged as the stack bottom that holds the symbol for $\mathrm{true}$ on the input stack and
+nothing on every other stack.
 
 ## Depends on
 
-- [Non Blank](../of-tm0/non-blank.md)
+- [Non-blank symbols](../of-tm0/non-blank.md)
 
 ## Sources
 

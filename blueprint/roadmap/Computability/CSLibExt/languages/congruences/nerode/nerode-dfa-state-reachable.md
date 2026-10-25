@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Language.nerodeDFA_state_reachable
 ---
 
-# Nerode DFA state reachable
+# Every state of the Nerode automaton is reachable
 
-Every state of the canonical Nerode automaton is reachable.
+**Every state of the Nerode automaton is reachable.** For every language $L$ and every
+Nerode class $q$ of $L$, there is a word $x$ such that the Nerode automaton of $L$, started in
+its start state and reading $x$, ends in the state $q$.
 
 ## Depends on
 
-- [Nerode Class](nerode-class.md)
-- [Nerode DFA](nerode-dfa.md)
+- [Nerode classes](nerode-class.md)
+- [The Nerode automaton](nerode-dfa.md)
 
 ## Proof depends on
 
-- [Nerode Class](nerode-class-2.md)
-- [Nerode Setoid](nerode-setoid.md)
+- [Nerode class of a word](nerode-class-2.md)
+- [The Nerode setoid](nerode-setoid.md)
 
 ## Sources
 

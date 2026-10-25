@@ -30,7 +30,7 @@ base $B$ over $V$ variables followed by $o$.
 - [One-hot clauses of a cell](cell-cnf.md)
 - [The one-hot generator](prog.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -44,15 +44,15 @@ base $B$ over $V$ variables followed by $o$.
 - [At-most-one clauses of the first rows of a cell](rows-cnf.md)
 - [Generator run over the first rows and the at-least-one clause](rows-run.md)
 - [Dense clause](../../dense-sat/clause.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Add U](../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Copy run](../../../../MathlibExt/turing-machine/program/copy-run.md)
-- [Mul run](../../../../MathlibExt/turing-machine/program/mul-run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [Adding units to target stacks](../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Copying a counter through a scratch stack](../../../../MathlibExt/turing-machine/program/copy-run.md)
+- [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer run](../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

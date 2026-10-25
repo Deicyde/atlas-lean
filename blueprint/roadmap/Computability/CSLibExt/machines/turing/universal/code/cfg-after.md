@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Turing.Universal.Code.cfgAfter
 ---
 
-# Cfg After
+# Clocked configuration of a code
 
-The configuration after `T` steps on the bits `x`, or the halting configuration if the
-machine halts earlier.
+**Clocked configuration of a code.** For a code $c$, a list of bits $x$ and $T \in \mathbb{N}$,
+the configuration of $c$ on $x$ after $T$ steps is obtained from the initial configuration on $x$
+by applying $T$ times the step of $c$, where a step leaves a halted configuration unchanged. It is
+the configuration after $T$ steps, or the halting configuration if the machine halts earlier.
 
 ## Depends on
 
-- [Code](code.md)
-- [Cfg](cfg.md)
+- [Codes for single-tape machines](code.md)
+- [Explicit configurations](cfg.md)
 
 ## Proof depends on
 
-- [Init](init.md)
-- [Step Or Stay](step-or-stay.md)
+- [Initial configuration of the code simulation](init.md)
+- [One step of a code, or stay when halted](step-or-stay.md)
 
 ## Sources
 

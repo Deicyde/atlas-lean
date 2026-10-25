@@ -16,9 +16,9 @@ One Baum-Welch step, on rich data.
 
 ## Proof depends on
 
-- [Is Dist posterior](../../latent-variable/expectation-maximization/is-dist-posterior.md)
-- [Marginal](../../latent-variable/expectation-maximization/marginal.md)
-- [Posterior](../../latent-variable/expectation-maximization/posterior.md)
+- [Posteriors are probability distributions](../../latent-variable/expectation-maximization/is-dist-posterior.md)
+- [Marginal of a latent-variable model](../../latent-variable/expectation-maximization/marginal.md)
+- [Posterior of a latent-variable model](../../latent-variable/expectation-maximization/posterior.md)
 - [Valid](valid.md)
 - [Emit Count](emit-count.md)
 - [Init Count](init-count.md)

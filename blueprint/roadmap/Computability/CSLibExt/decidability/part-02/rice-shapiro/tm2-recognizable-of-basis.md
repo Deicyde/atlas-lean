@@ -23,8 +23,8 @@ function computed by $c$ is in $C$, is recognizable.
 
 - [Extending a finite list of pairs is recursively enumerable](re-pred-subgraph.md)
 - [Multi-stack recognizable predicates are exactly the r.e. predicates](../../part-01/basic/tm2-recognizable-iff-re-pred.md)
-- [And](../../../../MathlibExt/re/and-2.md)
-- [Exists](../../../../MathlibExt/re/exists.md)
+- [Recursively enumerable predicates are closed under conjunction](../../../../MathlibExt/re/and-2.md)
+- [Existential projection preserves recursive enumerability](../../../../MathlibExt/re/exists.md)
 
 ## Sources
 

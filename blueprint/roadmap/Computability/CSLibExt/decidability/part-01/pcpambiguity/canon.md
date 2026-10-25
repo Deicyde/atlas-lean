@@ -18,7 +18,7 @@ last, then `A → wᵢ i`.
 
 - [The continuation production](../cfgundecidable/cont-rule.md)
 - [The terminating production of a side grammar](../cfgundecidable/term-rule.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 
 ## Sources
 

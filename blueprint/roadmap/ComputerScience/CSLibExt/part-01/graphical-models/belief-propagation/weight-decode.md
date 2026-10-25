@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.MachineLearning.GraphicalModels.TreeModel.weight_decode
 ---
 
-# Weight decode
+# Max-product decoding attains the max-product value
 
-The decoded assignment attains `maxWeight`.
+**Max-product decoding attains the max-product value.** Let $m$ be a pairwise tree model with
+values in a finite nonempty type, and let $M$ be its max-product value, obtained by maximizing out
+the vertices from the last one down. Then the weight of the assignment produced by max-product
+decoding equals $M$.
 
 ## Depends on
 
-- [Tree Model](../variable-elimination/tree-model.md)
+- [Pairwise model on a tree](../variable-elimination/tree-model.md)
 - [Max-product decoding](decode.md)
-- [Max Weight](max-weight.md)
-- [Weight](../variable-elimination/weight.md)
+- [Max-product value](max-weight.md)
+- [Weight of an assignment in a tree model](../variable-elimination/weight.md)
 
 ## Proof depends on
 
-- [Drop Last](drop-last.md)
-- [Last Parent](../variable-elimination/last-parent.md)
-- [Max Eliminate](max-eliminate.md)
-- [Max Message](max-message.md)
-- [Parent](../variable-elimination/parent.md)
+- [Removing the last vertex](drop-last.md)
+- [Parent of the last vertex](../variable-elimination/last-parent.md)
+- [Maximizing out the last vertex](max-eliminate.md)
+- [Max-product message](max-message.md)
+- [Parent of a vertex](../variable-elimination/parent.md)
 
 ## Sources
 

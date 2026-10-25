@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.ntOf
 ---
 
-# Nt Of
+# Nonterminal of a symbol
 
-The nonterminal of a symbol, if it is one.
+**Nonterminal of a symbol.** The partial map from grammar symbols with terminals in $T$ and
+nonterminals in $N$ to $N$ that sends a nonterminal $A$ to $A$ and has no value on terminals.
 
 ## Depends on
 

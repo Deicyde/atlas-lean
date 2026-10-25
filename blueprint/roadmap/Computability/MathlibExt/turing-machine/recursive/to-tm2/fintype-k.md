@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.TM2Recursive.fintypeK'
 ---
 
-# Fintype K'
+# The stack set $K'$ is finite
 
-`tr`'s four stacks form a finite type (a local instance; Mathlib's `K'` has none).
+**The stack set $K'$ is finite.** The set
+$K' = \{\mathrm{main}, \mathrm{rev}, \mathrm{aux}, \mathrm{stack}\}$ of the four stacks of
+Mathlib's multi-stack machine that evaluates partial recursive codes is a finite type whose
+elements are exactly these four stacks.
 
 ## Depends on
 

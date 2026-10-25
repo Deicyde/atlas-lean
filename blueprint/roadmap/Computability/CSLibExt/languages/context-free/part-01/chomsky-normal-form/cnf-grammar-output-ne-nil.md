@@ -6,21 +6,22 @@ proof: formalized
 lean: Cslib.Language.cnfGrammar_output_ne_nil
 ---
 
-# Cnf Grammar output ne nil
+# Binarization has no empty productions
 
-The binarization of a reduced grammar has no empty outputs.
+**Binarization has no empty productions.** If a context-free grammar $g$ is reduced, then
+no production of the binarization of $g$ has the empty word as output.
 
 ## Depends on
 
-- [Is Reduced](../reduced/is-reduced.md)
+- [Reduced grammars](../reduced/is-reduced.md)
 - [Cnf Grammar](cnf-grammar.md)
 
 ## Proof depends on
 
-- [Is Unit Output](../reduced/is-unit-output.md)
-- [Cnf Head](cnf-head.md)
-- [Grammar Terminals](grammar-terminals.md)
-- [To Cnf NT](to-cnf-nt.md)
+- [Unit output](../reduced/is-unit-output.md)
+- [Head of a binarized output](cnf-head.md)
+- [Terminals of a grammar](grammar-terminals.md)
+- [Encoding symbols as basic nonterminals of the binarized grammar](to-cnf-nt.md)
 
 ## Sources
 

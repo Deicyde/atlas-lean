@@ -41,7 +41,7 @@ $\mathrm{wa}$, $T$, $H$ and $N$, followed by $o$.
 - [Window symbol code of a situation](../part-01/wa.md)
 - [Window depth of a machine](../part-01/depth.md)
 - [Dense encoding of a CNF formula](../../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 

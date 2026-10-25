@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Turing.Universal.Code.stepOrStay
 ---
 
-# Step Or Stay
+# One step of a code, or stay when halted
 
-One step of the simulation, or no change once the machine has halted.
+**One step of a code, or stay when halted.** For a code $c$ and a configuration $k$ of the
+simulation, the configuration after one step of $c$ from $k$ if that step is defined, and $k$
+itself if $c$ halts at $k$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Cfg](cfg.md)
+- [Codes for single-tape machines](code.md)
+- [Explicit configurations](cfg.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [One step of a code](step.md)
 
 ## Sources
 

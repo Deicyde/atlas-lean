@@ -24,13 +24,13 @@ $S$. That is, each popped bit $b$ is written as $b$ and then $\mathrm{true}$.
 - [The subset-sum emitter machine](prog.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Test for the input bit true (SUBSET-SUM reduction machine)](is-t.md)
 - [Start label of the subset-sum emitter](is-t-bit.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

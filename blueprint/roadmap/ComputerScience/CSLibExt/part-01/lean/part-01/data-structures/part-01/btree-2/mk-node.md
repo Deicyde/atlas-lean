@@ -6,19 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.mkNode
 ---
 
-# Mk Node
+# Rebuilding an internal node after insertion
 
-The smart constructor for internal nodes after insertion below: keep the node when it
-has at most `2 * t - 1` keys, and split it otherwise.
+**Rebuilding an internal node after insertion.** For minimum degree $t$, a separator list $K$
+and a child list $C$, the result is the internal node with separators $K$ and children $C$, kept
+as a single tree when $K$ has at most $2t - 1$ keys, and otherwise split by node splitting into
+two nodes and a promoted median key.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Ins Result](ins-result.md)
+- [Raw B-trees](btree.md)
+- [Result of inserting into a B-tree subtree](ins-result.md)
 
 ## Proof depends on
 
-- [Split Node](split-node.md)
+- [Splitting a B-tree node](split-node.md)
 
 ## Sources
 

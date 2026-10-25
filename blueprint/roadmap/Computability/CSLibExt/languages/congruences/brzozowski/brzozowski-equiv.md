@@ -22,7 +22,7 @@ is a chosen word leading Brzozowski's automaton from its start state to $p$.
 
 - [Equivalent states of a DFA](../minimality/state-equivalent.md)
 - [Residual reached by a word](../minimization/minimized-state.md)
-- [Nerode Rel](../nerode/nerode-rel.md)
+- [Nerode equivalence](../nerode/nerode-rel.md)
 - [Nerode equivalence is equivalence of the reached states](../minimality/nerode-rel-iff-state-equivalent.md)
 - [Brzozowski's automaton](brzozowski.md)
 - [Residual language of a state of Brzozowski's automaton](brzozowski-residual.md)

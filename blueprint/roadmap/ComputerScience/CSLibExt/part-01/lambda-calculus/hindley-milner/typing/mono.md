@@ -6,30 +6,31 @@ proof: formalized
 lean: Cslib.HindleyMilner.HasType.mono
 ---
 
-# Generality
+# Typing is preserved in more general contexts
 
-**Generality**: a derivation stays valid in a more general context.
+**Typing is preserved in more general contexts.** If $\Gamma \vdash e : \tau$ and $\Gamma'$ is
+a context more general than $\Gamma$, then $\Gamma' \vdash e : \tau$.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [More General](more-general-2.md)
-- [Expr](expr.md)
-- [Has Type](has-type.md)
-- [Ty](ty.md)
+- [Typing context](ctx.md)
+- [More general context](more-general-2.md)
+- [Expressions of the λ-calculus with let](expr.md)
+- [Hindley–Milner typing](has-type.md)
+- [Monotypes](ty.md)
 
 ## Proof depends on
 
-- [Cons](cons.md)
-- [Ftv](ftv.md)
-- [Lookup](lookup.md)
-- [Visible Vars](visible-vars.md)
-- [Scheme](scheme.md)
-- [More General](more-general.md)
-- [Inst](inst.md)
-- [Gen](gen.md)
-- [Gen more General](gen-more-general.md)
-- [To Scheme](to-scheme.md)
+- [Extending more general contexts by a binding](cons.md)
+- [Free type variables of a context](ftv.md)
+- [Context lookup](lookup.md)
+- [Free type variables of a name's visible scheme](visible-vars.md)
+- [Type schemes](scheme.md)
+- [More general type scheme](more-general.md)
+- [Instantiation of a type scheme](inst.md)
+- [Generalization of a monotype](gen.md)
+- [Generalizing in a context with fewer free variables](gen-more-general.md)
+- [Monotypes as type schemes](to-scheme.md)
 - [Term](../../../../part-02/unification/basic/term.md)
 - [Vars](../../../../part-02/unification/basic/vars.md)
 

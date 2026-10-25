@@ -36,7 +36,7 @@ $y = 0, \dots, x$, then $o$.
 - [Variable layout of the transition clauses](../family/layout.md)
 - [Dense clause from a list of literals](../family/dense-clause.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -49,8 +49,8 @@ $y = 0, \dots, x$, then $o$.
 - [Next label after a clause of the accept generator](next-c.md)
 - [Clause run](clause-run.md)
 - [Run of the code-clause chain of the accept generator](codes-run.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

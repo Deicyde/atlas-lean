@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Term.liftSub
 ---
 
-# Lift Sub
+# Lifting a substitution under a binder
 
-Extend a substitution under one binder.
+**Lifting a substitution under a binder.** Given a substitution $\sigma$ assigning a term to
+each de Bruijn index, its lift is the substitution that sends $0$ to the variable $0$ and each
+$x + 1$ to the term $\sigma(x)$ renamed by $n \mapsto n + 1$, that is, with every free variable
+raised by one.
 
 ## Depends on
 
-- [Term](term.md)
+- [Terms of the simply typed lambda calculus with references](term.md)
 
 ## Proof depends on
 
-- [Rename](rename.md)
+- [Renaming the variables of a term](rename.md)
 
 ## Sources
 

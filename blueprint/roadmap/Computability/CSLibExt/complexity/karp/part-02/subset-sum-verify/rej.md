@@ -20,7 +20,7 @@ steps to a configuration with label $\mathsf{no}$, with any internal state and s
 ## Proof depends on
 
 - [The SUBSET-SUM verifier program](prog.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

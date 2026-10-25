@@ -7,9 +7,9 @@ proof: formalized
 lean: Cslib.Language.IsRegular.of_finite
 ---
 
-# Of finite
+# Finite languages are regular
 
-Every finite language is regular.
+**Finite languages are regular.** Every finite language over any alphabet is regular.
 
 ## Depends on
 
@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Singleton word](singleton-word.md)
+- [Single-word languages are regular](singleton-word.md)
 
 ## Sources
 

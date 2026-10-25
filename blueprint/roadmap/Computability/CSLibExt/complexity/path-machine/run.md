@@ -22,7 +22,7 @@ output stack $O$ holding exactly one entry: the answer of the marking algorithm 
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [The marking algorithm for PATH](../path/path-check.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -52,11 +52,11 @@ output stack $O$ holding exactly one entry: the answer of the marking algorithm 
 - [Reach marks](../path/reach-marks.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Add U](../../../MathlibExt/turing-machine/program/add-u.md)
-- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
-- [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Adding units to target stacks](../../../MathlibExt/turing-machine/program/add-u.md)
+- [Bit on top of a stack](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Unary counter](../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

@@ -6,10 +6,13 @@ proof: formalized
 lean: Cslib.Language.PDA.isContextFree_accepts
 ---
 
-# Is Context Free accepts
+# Finite pushdown automata accept context-free languages
 
-Languages accepted by finite pushdown automata (with transitions
-consuming letters from a finite set) are context-free.
+**Finite pushdown automata accept context-free languages.** Let $M$ be a pushdown automaton
+with a finite set of states and a finite stack alphabet, and suppose that there is a finite set
+$T_0$ of input letters such that $M$ has no transition, from any state and popping any stack
+symbol, that consumes a letter outside $T_0$. Then the language accepted by $M$ by empty stack
+is context-free.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ consuming letters from a finite set) are context-free.
 
 ## Proof depends on
 
-- [Pda Grammar language](pda-grammar-language.md)
-- [Pda Grammar](pda-grammar.md)
+- [The triple grammar generates the accepted language](pda-grammar-language.md)
+- [Triple grammar of a pushdown automaton](pda-grammar.md)
 
 ## Sources
 

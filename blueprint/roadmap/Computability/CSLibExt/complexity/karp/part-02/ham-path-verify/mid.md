@@ -19,7 +19,7 @@ between vertex steps for $es, s, t, n, c, b, q$, except that stack $A$ holds $a$
 ## Proof depends on
 
 - [Stack layout between vertex steps](lay.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

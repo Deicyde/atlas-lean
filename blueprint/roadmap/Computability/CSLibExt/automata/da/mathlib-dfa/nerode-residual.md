@@ -20,7 +20,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [The Nerode congruence relates words with equal left quotients](nerode-congruence-r-iff.md)
-- [Nerode Rel](../../../languages/congruences/nerode/nerode-rel.md)
+- [Nerode equivalence](../../../languages/congruences/nerode/nerode-rel.md)
 
 ## Sources
 

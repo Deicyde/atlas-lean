@@ -47,9 +47,9 @@ $\mathrm{KB}$ and goes to the entry label of the stack chain of situation $i$ fo
 - [Entry label of the stack chain of a situation](ik.md)
 - [Entry label of the pushed-fill chain](pf-from.md)
 - [Label of the decrement chain](sb-l.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [For Head](../../../../MathlibExt/turing-machine/program/for-head.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

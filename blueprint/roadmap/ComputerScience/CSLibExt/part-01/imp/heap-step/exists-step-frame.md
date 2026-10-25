@@ -6,28 +6,30 @@ proof: formalized
 lean: Cslib.IMP.HStep.exists_step_frame
 ---
 
-# Exists step frame
+# Adding a frame heap preserves the ability to step
 
-If a configuration can step, then it can step after adding a disjoint
-frame heap. Allocation may choose a different fresh address on the
-larger heap.
+**Adding a frame heap preserves the ability to step.** Let $h$ and $h_f$ be disjoint heaps,
+$c$ a heap command and $s$ a store. If the configuration $(c, s, h)$ can take a small step, then
+so can $(c, s, h \cup h_f)$.
+
+Allocation may choose a different fresh address on the larger heap.
 
 ## Depends on
 
-- [HConfig](hconfig.md)
-- [HStep](hstep.md)
+- [Heap configurations](hconfig.md)
+- [Small-step semantics of heap commands](hstep.md)
 - [Heap](../heap/heap.md)
 - [Disjoint](../heap/disjoint.md)
-- [Heap Cmd](heap-cmd.md)
-- [State](../syntax/state.md)
+- [Heap commands](heap-cmd.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Exists not Mem](../heap/exists-not-mem.md)
+- [Every heap has a free address](../heap/exists-not-mem.md)
 
 ## Sources
 

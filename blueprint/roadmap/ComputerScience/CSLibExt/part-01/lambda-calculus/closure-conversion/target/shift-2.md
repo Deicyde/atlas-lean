@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.Target.Tm.Eval.shift
 ---
 
-# Shift
+# Evaluation of a shifted term
 
-Evaluation of a shifted term under one more binding.
+**Evaluation of a shifted term.** If a target term $e$ evaluates to $v$ in an environment
+$\rho$, then for every value $x$ the shift of $e$ evaluates to $v$ in the environment $x :: \rho$
+obtained from $\rho$ by adding $x$ at index $0$.
 
 ## Depends on
 
-- [Tm](tm.md)
-- [Eval](eval.md)
-- [Shift](shift.md)
-- [Value](value.md)
+- [Target terms of closure conversion](tm.md)
+- [Big-step semantics of the closure-conversion target](eval.md)
+- [Shifting a target term](shift.md)
+- [Target values of closure conversion](value.md)
 
 ## Proof depends on
 
-- [Rename](rename-2.md)
+- [Evaluation is stable under renaming](rename-2.md)
 
 ## Sources
 

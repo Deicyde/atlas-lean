@@ -7,26 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.inorder_balance
 ---
 
-# Inorder balance
+# AVL rebalancing preserves the inorder traversal
 
-Rebalancing preserves the inorder traversal.
+**AVL rebalancing preserves the inorder traversal.** For all trees $l$ and $r$ and every
+key $k$, the inorder traversal of the rebalanced node built from $l$, $k$ and $r$ is the
+inorder traversal of $l$, followed by $k$, followed by the inorder traversal of $r$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Balance](balance.md)
-- [Inorder](inorder.md)
+- [Binary trees with cached heights](tree.md)
+- [AVL rebalancing](balance.md)
+- [Inorder traversal of an AVL tree](inorder.md)
 
 ## Proof depends on
 
-- [Balance eq mk Node of le](balance-eq-mk-node-of-le.md)
-- [Balance left double](balance-left-double.md)
-- [Balance left single](balance-left-single.md)
-- [Balance right double](balance-right-double.md)
-- [Balance right single](balance-right-single.md)
-- [Height](height.md)
-- [Mk Node](mk-node.md)
-- [To Binary Tree](to-binary-tree.md)
+- [Rebalancing when the heights of the children differ by at most one](balance-eq-mk-node-of-le.md)
+- [Left-right double rotation in AVL rebalancing](balance-left-double.md)
+- [Single right rotation in AVL rebalancing](balance-left-single.md)
+- [Right-left double rotation in AVL rebalancing](balance-right-double.md)
+- [Single left rotation in AVL rebalancing](balance-right-single.md)
+- [Cached height of an AVL tree](height.md)
+- [AVL node with computed height](mk-node.md)
+- [Erasing the cached heights of an AVL tree](to-binary-tree.md)
 - [Inorder](../../part-02/binary-search-tree/inorder.md)
 - [Inorder Aux](../../part-02/binary-search-tree/inorder-aux.md)
 

@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Turing.BiTape.toTape_move
 ---
 
-# To Tape move
+# The cell view commutes with head moves
 
-The view commutes with moving the head.
+**The cell view commutes with head moves.** For every tape $t$ and each direction $d$ (left or
+right), the cell view of the tape obtained from $t$ by moving the head one cell in direction $d$
+equals the tape obtained from the cell view of $t$ by moving its head one cell in direction $d$.
 
 ## Depends on
 
-- [To Tape](to-tape.md)
+- [Cell view of a two-way tape](to-tape.md)
 
 ## Proof depends on
 
-- [Head to List Blank](head-to-list-blank.md)
-- [Tail to List Blank](tail-to-list-blank.md)
-- [To List Blank](to-list-blank.md)
-- [To List Blank cons](to-list-blank-cons.md)
+- [First cell of the half-tape view of a stack tape](head-to-list-blank.md)
+- [Tail of the half-tape view of a stack tape](tail-to-list-blank.md)
+- [Half-tape view of a stack tape](to-list-blank.md)
+- [Pushing a cell onto a stack tape](to-list-blank-cons.md)
 
 ## Sources
 

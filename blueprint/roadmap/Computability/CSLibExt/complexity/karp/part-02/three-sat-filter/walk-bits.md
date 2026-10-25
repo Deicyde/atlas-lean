@@ -25,7 +25,7 @@ stack $\mathrm{bit}(b_k), \dots, \mathrm{bit}(b_1)$ on top of $U$.
 - [Filter stacks from two lists](st.md)
 - [Walking label for a literal count](wl.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 

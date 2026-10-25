@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.MachineLearning.GraphicalModels.TreeModel.NonnegFactors
 ---
 
-# Nonneg Factors
+# Nonnegative factors
 
-The factors of the model are nonnegative.
+**Nonnegative factors.** A tree model has nonnegative factors when all its unary factors and
+all its edge factors take only nonnegative values.
 
 ## Depends on
 
-- [Tree Model](../variable-elimination/tree-model.md)
+- [Pairwise model on a tree](../variable-elimination/tree-model.md)
 
 ## Sources
 

@@ -8,21 +8,27 @@ lean: Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_le_gaussianML
 
 # The probabilistic PCA likelihood is at most the unconstrained Gaussian maximum
 
-**The probabilistic PCA likelihood is at most the unconstrained Gaussian maximum**: when the
-sample covariance is positive definite (for example, data not all in an affine hyperplane,
-`weightedScatter_posDef`), every `(μ, W, σ²)` has log-likelihood at most that of the Gaussian with
-the sample mean and the sample covariance.
+**The probabilistic PCA likelihood is at most the unconstrained Gaussian maximum.** Let
+$x_1, \dots, x_N \in \mathbb{R}^d$ be data whose sample covariance $S$ is positive definite, and
+let $\bar{x}$ be their sample mean. Then for every $\mu \in \mathbb{R}^d$, every real
+$d \times q$ matrix $W$ and every real $\sigma^2 > 0$, the probabilistic PCA log-likelihood of the
+data at $(\mu, W, \sigma^2)$ is at most $\sum_{n=1}^N \log \mathcal{N}(x_n \mid \bar{x}, S)$,
+where $\mathcal{N}(x \mid \bar{x}, S)$ is the multivariate Gaussian density with mean $\bar{x}$
+and covariance $S$.
+
+The sample covariance is positive definite, for example, when the data do not all lie in an
+affine hyperplane.
 
 ## Depends on
 
-- [Log Lik](log-lik.md)
-- [Sample Cov](sample-cov.md)
-- [Sample Mean](sample-mean.md)
+- [Probabilistic PCA log-likelihood](log-lik.md)
+- [Sample covariance](sample-cov.md)
+- [Sample mean](sample-mean.md)
 - [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Proof depends on
 
-- [Ppca Cov](ppca-cov.md)
+- [Probabilistic PCA covariance](ppca-cov.md)
 - [The weighted Gaussian MLE](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-mle/sum-mul-log-multivariate-gaussian-pdfrea-3.md)
 - [Weighted Mean](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-mean.md)
 - [Weighted Scatter](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)

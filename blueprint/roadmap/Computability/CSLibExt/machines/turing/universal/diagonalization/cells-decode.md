@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.Turing.Universal.Diag.cellsDecode
 ---
 
-# Cells Decode
+# Decoding a list of cells
 
-The numbers whose cells are the bit list, if any: the inverse of `Clocked.cells`, reading one
-cell at a time with `Cslib.CookLevin.readUnaryLength`.
+**Decoding a list of cells.** For a bit list $x$, the list of natural numbers $l$ whose
+cells are $x$, if there is one, and nothing otherwise. Here the cells of $l$ are its numbers
+written in order, each number $n$ as $n$ copies of $\mathrm{true}$ followed by one
+$\mathrm{false}$; distinct lists have distinct cells. The decoder reads one cell at a time
+with the unary length reader.
 
 ## Depends on
 
@@ -17,9 +20,9 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Cell](../clocked/cell.md)
-- [Read Unary Length eq some iff cell](read-unary-length-eq-some-iff-cell.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [The cell of a number](../clocked/cell.md)
+- [Reading a unary length prefix reads one cell](read-unary-length-eq-some-iff-cell.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

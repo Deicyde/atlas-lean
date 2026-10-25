@@ -29,8 +29,8 @@ $b$, so the loop replaces $p$ by $p \cdot b^k$ and ends with $k = 0$.
 - [Stages of the multiplication routine](../counter-view/ms.md)
 - [The multiplication routine of a counter machine](../counter-view/mul-s.md)
 - [Unit targets of a multi-target transfer](tg.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Decr](../../../../MathlibExt/turing-machine/program/decr.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

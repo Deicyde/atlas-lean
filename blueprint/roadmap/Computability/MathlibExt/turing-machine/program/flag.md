@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.TM2Program.Flag
 ---
 
-# Flag
+# Flag bit of a machine state
 
-One bit of machine state, used by the primitives to branch on the result of a pop.
+**Flag bit of a machine state.** A flag on a type $\sigma$ of machine states consists of a map
+$\mathrm{tag} : \mathrm{Bool} \to \sigma$ that stores a bit in a state and a map
+$\mathrm{untag} : \sigma \to \mathrm{Bool}$ that reads it back, such that
+$\mathrm{untag}(\mathrm{tag}(\beta)) = \beta$ for every bit $\beta$. The program primitives use it
+to branch on whether a pop found a symbol.
 
 ## Depends on
 

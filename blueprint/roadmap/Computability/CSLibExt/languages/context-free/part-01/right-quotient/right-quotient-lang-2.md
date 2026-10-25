@@ -13,19 +13,19 @@ a finite alphabet.
 
 ## Depends on
 
-- [Right Quotient Lang](right-quotient-lang.md)
+- [Right quotient of a language by a language](right-quotient-lang.md)
 
 ## Proof depends on
 
-- [Hom](../hom-image.md)
-- [Inf is Regular](../inter-regular/inf-is-regular.md)
+- [Context-free languages are closed under homomorphic images](../hom-image.md)
+- [Intersection of a context-free language with a regular language](../inter-regular/inf-is-regular.md)
 - [Context-free languages are closed under inverse homomorphisms](../inverse-hom/preimage-hom.md)
-- [Left DFA](left-dfa.md)
-- [Left Words](left-words.md)
-- [Right DFA](right-dfa.md)
-- [Right Words](right-words.md)
-- [Unmark](unmark.md)
-- [Erase Right](../inverse-hom/erase-right.md)
+- [Automaton for words over the left copy](left-dfa.md)
+- [Words over the left copy of a doubled alphabet](left-words.md)
+- [Automaton running a deterministic automaton on the right copy](right-dfa.md)
+- [Words of a language marked by the right copy](right-words.md)
+- [Forgetting the copy of a letter](unmark.md)
+- [Erasing right letters](../inverse-hom/erase-right.md)
 
 ## Sources
 

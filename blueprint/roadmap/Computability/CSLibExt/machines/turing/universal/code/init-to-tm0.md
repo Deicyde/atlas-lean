@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Turing.Universal.Code.init_toTM0
 ---
 
-# Init to TM0
+# The explicit initial configuration is the machine's
 
-The initial configuration reads as Mathlib's.
+**The explicit initial configuration is the machine's.** For a list of bits $x$, the initial
+configuration of the simulation on $x$, read as a configuration of a single-tape machine, is the
+initial configuration of a single-tape machine on the input word of $x$.
 
 ## Depends on
 
-- [To TM0](to-tm0.md)
-- [Init](init.md)
-- [Input](input.md)
+- [TM0 configuration of a simulation configuration](to-tm0.md)
+- [Initial configuration of the code simulation](init.md)
+- [Input word of a list of bits](input.md)
 
 ## Proof depends on
 
-- [Cfg](cfg.md)
+- [Explicit configurations](cfg.md)
 
 ## Sources
 

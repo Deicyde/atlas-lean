@@ -6,17 +6,22 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.SpaceBoundedBy.exists_halted_relatesWithinSteps
 ---
 
-# A machine running in space `s` that halts on `l` halts within `cfgBound (s l.length)` steps
+# Space-bounded machines halt within the configuration bound
 
-**A machine running in space `s` that halts on `l` halts within `cfgBound (s l.length)`
-steps**: its run visits only configurations of space at most `s l.length`, and does not repeat
-one before halting.
+**Space-bounded machines halt within the configuration bound.** Let $M$ be a single-tape
+machine with state set $Q$ over a finite alphabet $\Sigma$ that runs in space
+$s : \mathbb{N} \to \mathbb{N}$. If $M$ halts on an input word $w$ of length $n$, then from the
+initial configuration on $w$ it reaches a configuration in the halting state in at most
+$(|Q| + 1)(|\Sigma| + 1)(|\Sigma| + 2)^{2 s(n)}$ steps.
+
+Its run visits only configurations of space at most $s(n)$, and does not repeat one before
+halting.
 
 ## Depends on
 
-- [Halts On](../classes/halts-on.md)
-- [Space Bounded By](space-bounded-by.md)
-- [Cfg Bound](cfg-bound.md)
+- [Halting on an input](../classes/halts-on.md)
+- [Space-bounded single-tape machines](space-bounded-by.md)
+- [Configuration bound](cfg-bound.md)
 
 ## Proof depends on
 

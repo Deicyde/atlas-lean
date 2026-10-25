@@ -17,13 +17,13 @@ requester that is not pending, or a pending list with repetitions).
 
 ## Depends on
 
-- [System](system.md)
+- [Claims and allocations of processes](system.md)
 
 ## Proof depends on
 
-- [Grant](grant.md)
-- [Need](need.md)
-- [Safety Check](safety-check.md)
+- [Granting a request](grant.md)
+- [Remaining need](need.md)
+- [Banker's safety algorithm](safety-check.md)
 
 ## Sources
 

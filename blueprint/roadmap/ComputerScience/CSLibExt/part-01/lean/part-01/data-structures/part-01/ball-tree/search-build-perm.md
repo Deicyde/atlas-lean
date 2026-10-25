@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BallTree.search_build_perm
 ---
 
-# Search build perm
+# Ball-tree search of a built tree, up to order
 
-The search of a built tree permutes the input filtered by the
-distance predicate.
+**Ball-tree search of a built tree, up to order.** For every list $P$ of points of
+$\mathbb{Z}^d$, every query point $q \in \mathbb{Z}^d$ and every $r \in \mathbb{N}$, the search of
+the ball tree built from $P$ for $q$ and $r$ is a permutation of the sublist of $P$ consisting of
+the points $p$ whose squared distance from $q$ is at most $r$, kept with their multiplicities.
 
 ## Depends on
 
-- [Build](build.md)
-- [Dist Sq](dist-sq.md)
-- [Search](search.md)
+- [Building a ball tree by halving](build.md)
+- [Squared Euclidean distance](dist-sq.md)
+- [Ball-tree similarity search](search.md)
 
 ## Proof depends on
 
-- [Search build](search-build.md)
-- [To List](to-list.md)
-- [To List build perm](to-list-build-perm.md)
+- [Ball-tree search of a built tree](search-build.md)
+- [Point list of a ball tree](to-list.md)
+- [A built ball tree stores a permutation of its input](to-list-build-perm.md)
 
 ## Sources
 

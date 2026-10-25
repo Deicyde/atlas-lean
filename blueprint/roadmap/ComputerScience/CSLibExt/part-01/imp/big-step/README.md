@@ -6,8 +6,8 @@ navigation: module
 
 ## IMP
 
-- [Big Step](big-step.md)
+- [Big-step semantics of IMP](big-step.md)
 
 ## Big Step
 
-- [Deterministic](deterministic.md)
+- [Determinism of IMP big-step semantics](deterministic.md)

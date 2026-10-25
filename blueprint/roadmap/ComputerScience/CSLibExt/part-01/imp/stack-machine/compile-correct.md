@@ -16,18 +16,18 @@ stack. The converse simulation is not claimed.
 
 ## Depends on
 
-- [Big Step](../big-step/big-step.md)
-- [Cmd](../syntax/cmd.md)
-- [Steps](steps.md)
-- [Code Length](code-length.md)
-- [Compile](compile.md)
-- [State](../syntax/state.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Multi-step execution of the stack machine](steps.md)
+- [Instruction count of a command](code-length.md)
+- [Compilation of commands](compile.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [Config](config.md)
-- [Instr](instr.md)
-- [Compile runs](compile-runs.md)
+- [Stack machine configurations](config.md)
+- [Stack machine instructions](instr.md)
+- [Compiled command code simulates big-step execution](compile-runs.md)
 
 ## Sources
 

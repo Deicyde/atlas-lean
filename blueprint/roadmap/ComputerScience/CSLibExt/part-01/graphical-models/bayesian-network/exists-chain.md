@@ -8,19 +8,21 @@ lean: Cslib.MachineLearning.GraphicalModels.exists_chain
 
 # The chain rule
 
-**The chain rule**: every probability distribution of `n` variables is the joint of a chain
-of conditional distributions.
+**The chain rule.** Let $\alpha$ be a finite nonempty type and $n \in \mathbb{N}$. For every
+function $P : \alpha^n \to \mathbb{R}$ with $P(x) \ge 0$ for all $x$ and $\sum_x P(x) = 1$,
+there is a chain of conditional distributions with values in $\alpha$ whose joint distribution
+of the first $n$ variables equals $P$.
 
 ## Depends on
 
-- [Chain](chain.md)
-- [Joint](joint.md)
+- [Chain of conditional distributions](chain.md)
+- [Joint distribution of a chain](joint.md)
 
 ## Proof depends on
 
-- [Joint congr](joint-congr.md)
-- [Update](update.md)
-- [Sum snoc](sum-snoc.md)
+- [Joint distribution determined by the first conditionals](joint-congr.md)
+- [Replacing one conditional of a chain](update.md)
+- [Splitting a sum over $\alpha^{n+1}$ at the last coordinate](sum-snoc.md)
 
 ## Sources
 

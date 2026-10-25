@@ -15,12 +15,12 @@ Deletion removes exactly the last logical item from the contents.
 
 - [Table](../basic/table.md)
 - [Well Formed](../basic/well-formed.md)
-- [Contents](../basic/contents.md)
+- [Contents of a dynamic table](../basic/contents.md)
 - [Table Delete](table-delete.md)
 
 ## Proof depends on
 
-- [Contents eq](../basic/contents-eq.md)
+- [Formula for the contents of a dynamic table](../basic/contents-eq.md)
 - [Table Delete num](table-delete-num.md)
 - [Table Delete slots](table-delete-slots.md)
 - [Well Formed iff](../basic/well-formed-iff.md)

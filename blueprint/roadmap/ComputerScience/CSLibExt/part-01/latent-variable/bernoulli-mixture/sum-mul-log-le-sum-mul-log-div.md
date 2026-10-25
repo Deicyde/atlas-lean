@@ -8,10 +8,14 @@ lean: Cslib.MachineLearning.LatentVariable.BernoulliMixture.sum_mul_log_le_sum_m
 
 # The weighted log-likelihood is bounded by its value at the normalized counts
 
-**The weighted log-likelihood is bounded by its value at the normalized counts**: for
-nonnegative counts `c` with a positive total and any positive weights `w` summing to one,
-`∑ c log w ≤ ∑ c log (c / ∑ c)` (Gibbs' inequality). When every count is positive the normalized
-counts are themselves admissible weights, so they maximize.
+**The weighted log-likelihood is bounded by its value at the normalized counts.** Let $Z$ be
+a finite set, let $c \colon Z \to \mathbb{R}$ be nonnegative counts with positive total
+$C = \sum_{z \in Z} c_z > 0$, and let $w \colon Z \to \mathbb{R}$ be positive weights with
+$\sum_{z \in Z} w_z = 1$. Then $\sum_{z \in Z} c_z \log w_z \le \sum_{z \in Z} c_z \log(c_z / C)$
+(Gibbs' inequality).
+
+When every count is positive the normalized counts $c_z / C$ are themselves admissible weights,
+so they maximize.
 
 ## Depends on
 
@@ -19,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Dist](../expectation-maximization/is-dist.md)
-- [Gibbs' inequality](../expectation-maximization/sum-mul-log-sub-le.md)
+- [Probability distributions on a finite latent space](../expectation-maximization/is-dist.md)
+- [Gibbs' inequality (evidence lower bound form)](../expectation-maximization/sum-mul-log-sub-le.md)
 
 ## Sources
 

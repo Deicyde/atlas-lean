@@ -31,7 +31,7 @@ length one) sends $K$ to $a^{-1}K$, and it accepts the $K$ that contain the empt
 - [States reached in the minimized DFA](../minimization/minimized-dfa-eval.md)
 - [Transitions of the minimized DFA on reached states](../minimization/minimized-dfa-step-minimized-state.md)
 - [Residual reached by a word](../minimization/minimized-state.md)
-- [Nerode Rel](../nerode/nerode-rel.md)
+- [Nerode equivalence](../nerode/nerode-rel.md)
 - [Nerode equivalence is equivalence of the reached states](../minimality/nerode-rel-iff-state-equivalent.md)
 - [Residual language of a state of Brzozowski's automaton](brzozowski-residual.md)
 - [Brzozowski's automaton accepts the language of the original automaton](brzozowski-accepts.md)

@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.head_toTape
 ---
 
-# Head to Tape
+# Head symbol of a tape read from non-blank cells
 
-The symbol under the head of `toTape t` is that of the head cell of `t`.
+**Head symbol of a tape read from non-blank cells.** For every two-way tape $t$ of cells over
+the non-blank symbols of an alphabet $\Gamma_0$, the symbol under the head of the tape over
+$\Gamma_0$ read from $t$ is the cell symbol of the cell under the head of $t$.
 
 ## Depends on
 
-- [Non Blank](non-blank.md)
-- [To Tape](to-tape.md)
+- [Non-blank symbols](non-blank.md)
+- [Post–Turing reading of a tape over the non-blank symbols](to-tape.md)
 
 ## Sources
 

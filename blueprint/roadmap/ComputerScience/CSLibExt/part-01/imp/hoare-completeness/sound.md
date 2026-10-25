@@ -6,28 +6,31 @@ proof: formalized
 lean: Cslib.IMP.Derivable.sound
 ---
 
-# Sound
+# Soundness of Hoare logic for partial correctness
 
-Soundness: every derivable triple is valid.
+**Soundness of Hoare logic for partial correctness.** Every partial-correctness Hoare triple
+$\{P\}\,c\,\{Q\}$ that is derivable in the partial-correctness proof system is valid: for all
+states $s$ and $s'$, if $s$ satisfies $P$ and $c$ has a terminating big-step execution from $s$ to
+$s'$, then $s'$ satisfies $Q$.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
-- [Derivable](derivable.md)
-- [Valid](../hoare/valid.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Derivability in Hoare logic for partial correctness](derivable.md)
+- [Validity of a Hoare triple](../hoare/valid.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [Entails](../hoare/entails.md)
-- [Subst](../hoare/subst.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Entailment of assertions](../hoare/entails.md)
+- [Substitution in an assertion](../hoare/subst.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Big Step](../big-step/big-step.md)
-- [State](../syntax/state.md)
-- [While Loop](../hoare/while-loop.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [IMP program states](../syntax/state.md)
+- [Invariant rule for while loops](../hoare/while-loop.md)
 
 ## Sources
 

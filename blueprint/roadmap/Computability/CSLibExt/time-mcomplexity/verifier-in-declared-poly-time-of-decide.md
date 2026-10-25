@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.TimeMComplexity.verifierInDeclaredPolyTime_of_decidesInDeclaredPolyTime
 ---
 
-# Verifier In Declared Poly Time of decides In Declared Poly Time
+# A decider with polynomial declared time gives a verifier with polynomial declared time
 
-A decider with polynomial declared time, ignoring the witness, is a
-verifier with polynomial declared time.
+**A decider with polynomial declared time gives a verifier with polynomial declared time.**
+If a timed decider $f$ on bit strings has declared time bounded by a polynomial in the input
+length, then the verifier that sends an input $x$ and a witness $w$ to $f(x)$, ignoring $w$, has
+declared time bounded by a polynomial in $|x| + |w|$.
 
 ## Depends on
 
-- [Decides In Declared Poly Time](decides-in-declared-poly-time.md)
-- [Verifier In Declared Poly Time](verifier-in-declared-poly-time.md)
+- [Declared polynomial time for timed deciders](decides-in-declared-poly-time.md)
+- [Verifiers with polynomial declared time](verifier-in-declared-poly-time.md)
 
 ## Sources
 

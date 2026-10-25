@@ -24,12 +24,12 @@ $\ell$ if $c = 1$, and $m$ and $\ell + n$ if $c = 0$.
 - [Labels of the SAT tokenizer](lab.md)
 - [The tokenizer program](prog.md)
 - [Tokenizer stack contents](st.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Testing whether the top symbol is a given bit](top-is-bit.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

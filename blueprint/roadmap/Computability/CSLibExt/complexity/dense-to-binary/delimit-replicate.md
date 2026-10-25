@@ -13,8 +13,8 @@ form of the bit string of $k$ ones is $k$ copies of $11$ followed by a single $0
 
 ## Depends on
 
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Rep](../../../MathlibExt/turing-machine/program/rep.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Repeated block](../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

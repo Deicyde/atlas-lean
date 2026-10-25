@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.toTape_injective
 ---
 
-# To Tape injective
+# Distinct tapes of non-blank symbols read as distinct TM0 tapes
 
-`toTape` is injective.
+**Distinct tapes of non-blank symbols read as distinct TM0 tapes.** For an alphabet
+$\Gamma_0$ with blank symbol $b$, two tapes over the non-blank symbols of $\Gamma_0$ that read,
+cell by cell, as the same TM0 tape over $\Gamma_0$ are equal.
 
 ## Depends on
 
-- [Non Blank](non-blank.md)
-- [To Tape](to-tape.md)
+- [Non-blank symbols](non-blank.md)
+- [Post–Turing reading of a tape over the non-blank symbols](to-tape.md)
 
 ## Proof depends on
 
-- [To Tape](../tape-view/to-tape.md)
-- [To Tape injective](../tape-view/to-tape-injective.md)
-- [Cell Symbol](cell-symbol.md)
-- [Cell Symbol injective](cell-symbol-injective.md)
+- [Cell view of a two-way tape](../tape-view/to-tape.md)
+- [The tape view is injective](../tape-view/to-tape-injective.md)
+- [Cell symbol](cell-symbol.md)
+- [The cell-symbol map is injective](cell-symbol-injective.md)
 
 ## Sources
 

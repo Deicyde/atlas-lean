@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.TimeM.bestSet
 ---
 
-# Best Set
+# Greedy choice of a set
 
-A set of `F` meeting `U` in the most elements (the first such in list order), or `∅` when
-`F` is empty.
+**Greedy choice of a set.** Given a list $F$ of finite sets and a finite set $U$, the best set
+of $F$ for $U$ is the first set $S$ in the list $F$ that maximizes $|S \cap U|$, or $\emptyset$
+when $F$ is empty.
 
 ## Depends on
 

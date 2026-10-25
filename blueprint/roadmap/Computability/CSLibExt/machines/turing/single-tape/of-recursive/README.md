@@ -6,35 +6,35 @@ navigation: module
 
 ## Prepending a symbol
 
-- [Cons Computer](cons-computer.md)
-- [Write move Left mk₁](write-move-left-mk.md)
-- [Cons Computer outputs Within Time](cons-computer-outputs-within-time.md)
-- [Cons Computer outputs](cons-computer-outputs.md)
+- [The machine that prepends a symbol](cons-computer.md)
+- [Prepending a symbol by stepping left](write-move-left-mk.md)
+- [Prepending a symbol takes at most two steps](cons-computer-outputs-within-time.md)
+- [Correctness of the prepending machine](cons-computer-outputs.md)
 
 ## The input stack of the emulation as a number
 
-- [Input Code](input-code.md)
-- [Reverse tail encode Nat input Code](reverse-tail-encode-nat-input-code.md)
-- [Input Decode](input-decode.md)
+- [Input code of a bit word](input-code.md)
+- [Recovering a word from its input code](reverse-tail-encode-nat-input-code.md)
+- [Input decoding](input-decode.md)
 
 ## The single-tape emulation of a multi-stack machine
 
-- [In Cell](in-cell.md)
-- [Bot Cell](bot-cell.md)
-- [Emu Support](emu-support.md)
-- [Emu TM](emu-tm.md)
-- [Recognizer TM](recognizer-tm.md)
-- [Map val bot Cell cons](map-val-bot-cell-cons.md)
+- [Input cell of a bit](in-cell.md)
+- [The bottom cell of the start tape](bot-cell.md)
+- [States of the single-tape emulation](emu-support.md)
+- [Single-tape emulation of a multi-stack machine](emu-tm.md)
+- [The recognizer of a multi-stack machine](recognizer-tm.md)
+- [The bottom cell followed by the input word is the emulation's start tape](map-val-bot-cell-cons.md)
 - [The recognizer halts iff the multi-stack machine does](halts-on-recognizer-tm-iff.md)
 
 ## The emulation's final tape, and deciders
 
 - [The emulation's final tape](exists-mem-eval-tr.md)
-- [Add Bottom eq of length le one](add-bottom-eq-of-length-le-one.md)
-- [Cell Answer](cell-answer.md)
-- [Answer TM](answer-tm.md)
-- [Answer TM outputs](answer-tm-outputs.md)
-- [Decider TM](decider-tm.md)
+- [Stacks of height at most one give a one-cell tape](add-bottom-eq-of-length-le-one.md)
+- [The answer bit of a cell](cell-answer.md)
+- [The answer machine](answer-tm.md)
+- [The answer machine outputs the answer of a one-cell input](answer-tm-outputs.md)
+- [The decider of a multi-stack machine](decider-tm.md)
 - [The decider outputs the answer bit](decider-tm-outputs.md)
 - [R.e. predicates are recognizable by single-tape machines](of-re-pred.md)
 - [Computable predicates are decidable by single-tape machines](of-computable-pred.md)

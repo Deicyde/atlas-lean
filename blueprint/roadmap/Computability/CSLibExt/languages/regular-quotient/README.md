@@ -6,8 +6,8 @@ navigation: module
 
 ## Regular Quotient
 
-- [Right DFA](right-dfa.md)
-- [Left NFA](left-nfa.md)
+- [DFA for the right quotient by a language](right-dfa.md)
+- [NFA for the left quotient by a language](left-nfa.md)
 
 ## Language
 

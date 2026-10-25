@@ -30,14 +30,14 @@ stacks, top first.
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Binary code of a literal](../../../../cook-levin/encode-lit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Name copy loop of the 3SAT emitter](cp-run.md)
 - [Code of a renamed literal](encode-lit-ren-lit.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

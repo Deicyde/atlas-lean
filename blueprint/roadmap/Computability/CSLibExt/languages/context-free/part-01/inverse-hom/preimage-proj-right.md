@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Language.IsContextFree.preimage_projRight
 ---
 
-# Inserting letters
+# Context-free languages are closed under inserting letters
 
-**Inserting letters**: if `L` is context-free over `T'`, so is the set of words over
-`T ⊕ T'` whose letters from `T'` form a word of `L`, for a finite `T`.
+**Context-free languages are closed under inserting letters.** Let $T$ be a finite alphabet
+and let $L$ be a context-free language over an alphabet $T'$. Then the language of words $u$ over
+the disjoint union $T \oplus T'$ whose letters from $T'$, read in order, form a word of $L$ is
+context-free.
 
 ## Depends on
 
-- [Proj Right](proj-right.md)
+- [Right projection of a word](proj-right.md)
 
 ## Proof depends on
 
-- [Ins Grammar](ins-grammar.md)
-- [`insGrammar` generates the words whose right letters form a word of the original language](ins-grammar-language.md)
+- [Marker-insertion grammar](ins-grammar.md)
+- [Language of the marker-insertion grammar](ins-grammar-language.md)
 
 ## Sources
 

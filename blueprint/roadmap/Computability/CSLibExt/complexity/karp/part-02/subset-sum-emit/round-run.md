@@ -33,8 +33,8 @@ and every stack other than $L$, $R$, $\mathrm{Rt}$, $Y$, $Z$ and $O$ is unchange
 - [Vertex pairs in encoding order](../../part-01/clique/pairs.md)
 - [Vertex numbers of the SUBSET-SUM reduction](../subset-sum/vtx-num.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
@@ -50,12 +50,12 @@ and every stack other than $L$, $R$, $\mathrm{Rt}$, $Y$, $Z$ and $O$ is unchange
 - [Walk touches](../subset-sum-digits/walk-touches.md)
 - [Place value of a vertex pair in the SUBSET-SUM reduction](../subset-sum/pair-digit.md)
 - [Pairs touching a vertex](../subset-sum/touches.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Emit](../../../../../MathlibExt/turing-machine/program/emit.md)
-- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
+- [Running the bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Value of a little-endian bit list](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
 
 ## Sources
 

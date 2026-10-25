@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.haltsFrom_iff_of_step_eq
 ---
 
-# Halts From iff of step eq
+# Configurations with the same successor halt together
 
-Two configurations with the same successor, or both without one, both halt or both do
-not.
+**Configurations with the same successor halt together.** Let $M$ be a single-tape Turing
+machine and let $a$ and $b$ be configurations of $M$ that have the same successor, or that both
+have no successor. Then $M$ halts from $a$ if and only if $M$ halts from $b$.
 
 ## Depends on
 
-- [Halts From](halts-from.md)
+- [Halting from a configuration](halts-from.md)
 
 ## Proof depends on
 
 - [Halting from a configuration is invariant along a run](halts-from-iff-of-refl-trans-gen.md)
-- [Step eq none iff](step-eq-none-iff.md)
+- [Halting configurations are exactly those without a successor](step-eq-none-iff.md)
 
 ## Sources
 

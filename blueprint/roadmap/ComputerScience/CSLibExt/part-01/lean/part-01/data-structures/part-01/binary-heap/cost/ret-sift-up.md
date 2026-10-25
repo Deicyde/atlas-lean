@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.ret_siftUp
 ---
 
-# Ret sift Up
+# Counting does not change the result of sift-up
 
-Erasing the comparison and swap events recovers the canonical returned array.
+**Counting does not change the result of sift-up.** For every array $a$ over a linearly
+ordered type and every natural number $i$, the array returned by sift-up with comparison and
+swap counts on $a$ at index $i$ equals the array returned by the plain sift-up of $a$ at $i$.
 
 ## Depends on
 
-- [Sift Up](sift-up.md)
+- [Sift-up with comparison and swap counts](sift-up.md)
 - [Sift Up](../../../part-02/binary-heap/sift-up.md)
 
 ## Proof depends on

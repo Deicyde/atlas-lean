@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Term.subst_id
 ---
 
-# Subst id
+# Substitution by variables is the identity
 
-The identity substitution.
+**Substitution by variables is the identity.** For every term $t$ of the simply typed lambda
+calculus with references, applying the parallel substitution that sends each de Bruijn index $x$
+to the variable term $x$ gives back $t$.
 
 ## Depends on
 
-- [Term](../syntax/term.md)
-- [Subst](../syntax/subst.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Parallel substitution in a term](../syntax/subst.md)
 
 ## Proof depends on
 
-- [Lift Sub](../syntax/lift-sub.md)
-- [Subst congr](subst-congr.md)
-- [Ty](../syntax/ty.md)
+- [Lifting a substitution under a binder](../syntax/lift-sub.md)
+- [Substitution respects pointwise equality](subst-congr.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

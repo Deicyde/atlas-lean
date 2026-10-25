@@ -12,11 +12,11 @@ the representative of $q$ is a word whose Nerode class is $q$, chosen once and f
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 
 ## Proof depends on
 
-- [Nerode Setoid](../nerode/nerode-setoid.md)
+- [The Nerode setoid](../nerode/nerode-setoid.md)
 
 ## Sources
 

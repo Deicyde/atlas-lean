@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Crypto.Birthday.collisionProb_ge_of_le_sqrt_card
 ---
 
-# Collision Prob ge of le sqrt card
+# Birthday lower bound for at most square-root many samples
 
-The birthday lower bound under the hypothesis `q ≤ √N`, which implies `q ≤ √(2 N)`.
+**Birthday lower bound for at most square-root many samples.** Let $\alpha$ be a nonempty
+finite set with $N$ elements and $q$ a natural number with $q \le \sqrt{N}$. The probability that
+$q$ independent uniform samples from $\alpha$ contain a collision is at least
+$q (q - 1) / (4 N)$.
 
 ## Depends on
 
-- [Collision Prob](collision-prob.md)
+- [Collision probability](collision-prob.md)
 
 ## Proof depends on
 

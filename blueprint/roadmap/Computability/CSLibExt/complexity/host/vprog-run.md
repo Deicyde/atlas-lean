@@ -33,7 +33,7 @@ output stack and every other stack empty.
 - [Phase-0 labels of the generic host](p0.md)
 - [Vprog](vprog.md)
 - [Vtime](vtime.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -48,14 +48,13 @@ output stack and every other stack empty.
 - [Stack lengths when only one stack is filled](update-length-le.md)
 - [The verifier host machine](vtm.md)
 - [Relabelling in the verifier host](v.md)
-- [Eval mono](../../../MathlibExt/turing-machine/composition/eval-mono.md)
-- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
-- [Agree](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
-- [Frame](../../../MathlibExt/turing-machine/stack-embedding/frame.md)
-- [SEmb](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
-- [Run Le embed](../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Evaluation of a natural-number polynomial is monotone](../../../MathlibExt/turing-machine/composition/eval-mono.md)
+- [Agreement of host and sub-machine stacks](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
+- [Frame condition for a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/frame.md)
+- [Stack embedding](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Run embedding for bounded runs](../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

@@ -32,7 +32,7 @@ the encoding of the complete graph $K_4$.
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

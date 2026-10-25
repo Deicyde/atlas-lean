@@ -7,17 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.reset_ret_idempotent
 ---
 
-# Reset ret idempotent
+# Reset is idempotent
 
-Resetting a reset counter preserves the complete returned vector.
+**Reset is idempotent.** For every $k$-bit counter $b$, resetting the counter returned by
+resetting $b$ returns the same counter as resetting $b$ once.
 
 ## Depends on
 
-- [Reset](reset.md)
+- [Resetting a binary counter](reset.md)
 
 ## Proof depends on
 
-- [Reset to List](reset-to-list.md)
+- [Reset returns the all-false counter](reset-to-list.md)
 
 ## Sources
 

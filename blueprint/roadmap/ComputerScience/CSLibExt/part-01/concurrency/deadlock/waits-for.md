@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Algorithms.Concurrency.Deadlock.AllocState.WaitsFor
 ---
 
-# Waits For
+# Wait-for relation
 
-`p` waits for `q`: `p` requests a resource held by `q`.
+**Wait-for relation.** In a resource-allocation snapshot $s$, a process $p$ waits for a
+process $q$ when there is a resource $r$ that $p$ requests in $s$ and that $q$ holds in $s$.
 
 ## Depends on
 
-- [Alloc State](alloc-state.md)
+- [Resource-allocation snapshot](alloc-state.md)
 
 ## Sources
 

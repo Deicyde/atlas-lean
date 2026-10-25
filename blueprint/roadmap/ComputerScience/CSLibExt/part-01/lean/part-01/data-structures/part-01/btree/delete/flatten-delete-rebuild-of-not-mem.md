@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.flatten_deleteRebuild_of_not_mem
 ---
 
-# Flatten delete Rebuild of not mem
+# Rebuilding deletion of an absent key
 
-Deleting an absent key leaves the flattening, hence the stored set,
-unchanged. The tree itself may be rebuilt to a different shape with the same
-flattening.
+**Rebuilding deletion of an absent key.** Let $t \ge 2$, let $T$ be an ordered tree and let
+$x$ be a key that does not occur in the flattening of $T$. Then the rebuilding deletion of $x$
+from $T$ with minimum degree $t$ has the same flattening as $T$.
+
+The tree itself may be rebuilt to a different shape with the same flattening.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Ordered](../../btree-2/ordered.md)
-- [Delete Rebuild](delete-rebuild.md)
-- [Flatten](../../btree-2/flatten.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [Ordered B-tree](../../btree-2/ordered.md)
+- [B-tree deletion by rebuilding](delete-rebuild.md)
+- [Inorder flattening of a B-tree](../../btree-2/flatten.md)
 
 ## Proof depends on
 
-- [Flatten delete Rebuild](flatten-delete-rebuild.md)
+- [Flattening after rebuilding deletion](flatten-delete-rebuild.md)
 
 ## Sources
 

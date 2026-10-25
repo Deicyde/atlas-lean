@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Language.StateSeparated
 ---
 
-# State Separated
+# State-separated DFA
 
-An automaton is state-separated when distinct states have distinct continuation languages.
+**State-separated DFA.** A DFA $M$ is state-separated when any two equivalent states of $M$
+are equal: if $p \ne q$, then the languages of words accepted by $M$ starting from $p$ and from
+$q$ are different.
 
 ## Depends on
 

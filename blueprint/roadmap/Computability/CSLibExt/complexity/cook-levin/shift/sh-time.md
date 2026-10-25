@@ -37,7 +37,7 @@ $N$, $T$ and $H$, followed by $o$.
 - [Constant of the shift-generator time bound](sh-c.md)
 - [The cell-shift clause family](sh-family.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -54,7 +54,7 @@ $N$, $T$ and $H$, followed by $o$.
 - [Time bound of the shift generator on uniform layouts](sh-bound-uni.md)
 - [Correctness of the shift generator, with its explicit time bound](sh-run.md)
 - [Step budget for one time step of the shift generator](t-body-b.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

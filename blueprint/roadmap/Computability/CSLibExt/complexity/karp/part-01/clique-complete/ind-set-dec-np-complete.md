@@ -15,9 +15,9 @@ in NP has a polynomial-time many-one reduction to INDEPENDENT-SET.
 
 - [INDEPENDENT-SET](../clique/ind-set-dec.md)
 - [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
-- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
-- [NP](../../../../../MathlibExt/complexity/np.md)
+- [Complexity classes](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
+- [The complexity class NP](../../../../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 

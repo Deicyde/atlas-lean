@@ -5,20 +5,21 @@ statement: formalized
 lean: Cslib.IMP.HAssertion.star
 ---
 
-# Star
+# Separating conjunction
 
-Separating conjunction: the heap splits into disjoint parts
-satisfying each conjunct.
+**Separating conjunction.** For heap assertions $P$ and $Q$, the assertion $P \star Q$ holds
+of a store $s$ and a heap $h$ when there are disjoint heaps $h_1$ and $h_2$ with
+$h = h_1 \cup h_2$ such that $P(s, h_1)$ and $Q(s, h_2)$.
 
 ## Depends on
 
-- [HAssertion](hassertion.md)
+- [Heap assertion](hassertion.md)
 
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
 - [Disjoint](../heap/disjoint.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

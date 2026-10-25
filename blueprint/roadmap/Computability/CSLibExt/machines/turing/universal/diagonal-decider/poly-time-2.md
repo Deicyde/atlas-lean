@@ -11,7 +11,7 @@ lean: Cslib.Turing.Universal.Diag.Layout.polyTime
 
 ## Depends on
 
-- [Layout](layout.md)
+- [The layout function](layout.md)
 
 ## Proof depends on
 
@@ -23,7 +23,7 @@ lean: Cslib.Turing.Universal.Diag.Layout.polyTime
 - [Prog](prog-2.md)
 - [The layout run](run-2.md)
 - [Γ](untitled-2.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

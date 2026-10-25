@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.neighbors_empty
 ---
 
-# Neighbors empty
+# Out-neighbor lists of the empty graph
 
-Every vertex of the empty graph has an empty neighbor list.
+**Out-neighbor lists of the empty graph.** In the graph with no edges on the vertex set
+$\{0, \dots, n-1\}$, the out-neighbor list of every vertex $i$ is the empty list.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Neighbors](neighbors.md)
+- [Empty adjacency matrix](empty.md)
+- [Out-neighbor list](neighbors.md)
 
 ## Proof depends on
 
-- [Has Edge](has-edge.md)
-- [Mem neighbors](mem-neighbors.md)
+- [Edge query of an adjacency matrix](has-edge.md)
+- [The out-neighbor list matches the edge query](mem-neighbors.md)
 
 ## Sources
 

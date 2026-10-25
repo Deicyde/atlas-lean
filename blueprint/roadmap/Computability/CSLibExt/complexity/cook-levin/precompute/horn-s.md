@@ -26,8 +26,8 @@ $\nu$.
 - [Stages of the multiplication routine](../counter-view/ms.md)
 - [The multiplication routine of a counter machine](../counter-view/mul-s.md)
 - [Unit targets of a multi-target transfer](tg.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.Sequence.BaumWelch.emQ_eq
 
 ## Depends on
 
-- [Em Q](../../latent-variable/expectation-maximization/em-q.md)
+- [The EM objective](../../latent-variable/expectation-maximization/em-q.md)
 - [Valid](valid.md)
 - [Valid HMM](valid-hmm.md)
 - [Emit Count](emit-count.md)
@@ -23,7 +23,7 @@ lean: Cslib.MachineLearning.Sequence.BaumWelch.emQ_eq
 
 ## Proof depends on
 
-- [Posterior](../../latent-variable/expectation-maximization/posterior.md)
+- [Posterior of a latent-variable model](../../latent-variable/expectation-maximization/posterior.md)
 - [Log joint](log-joint.md)
 - [P Emit](p-emit.md)
 - [P Init](p-init.md)

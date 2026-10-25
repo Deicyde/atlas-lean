@@ -5,29 +5,35 @@ statement: formalized
 lean: Cslib.MachineLearning.LatentVariable.BernoulliMixture.emStep
 ---
 
-# Em Step
+# One EM step for the Bernoulli mixture
 
-One EM step for the Bernoulli mixture, on rich data.
+**One EM step for the Bernoulli mixture.** Let $x_1, \dots, x_N \in \{0, 1\}^d$ be data with
+$N \ge 1$ in which every coordinate takes both values. For valid parameters $\theta$ of a mixture
+of $K$ products of $d$ Bernoulli distributions, the EM step maps $\theta$ to the parameters with
+mixing weights $\pi'_k = N_k / N$ and success probabilities $p'_{kj} = A_{kj} / N_k$, where
+$r_{nk}$ is the posterior probability of component $k$ given $x_n$ under $\theta$,
+$N_k = \sum_n r_{nk}$, and $A_{kj}$ is the sum of $r_{nk}$ over the points with $x_{nj} = 1$. On
+such data these parameters are again valid.
 
 ## Depends on
 
-- [Rich](rich.md)
-- [Valid Params](valid-params.md)
+- [Rich data for a Bernoulli mixture](rich.md)
+- [The parameter space of a Bernoulli mixture](valid-params.md)
 
 ## Proof depends on
 
-- [Params](params.md)
-- [Valid](valid.md)
-- [Bern PMF](bern-pmf.md)
-- [Joint](joint.md)
-- [M Step](m-step.md)
-- [Mass](mass.md)
-- [Ones](ones.md)
-- [Resp](resp.md)
-- [Zeros](zeros.md)
-- [Is Dist posterior](../expectation-maximization/is-dist-posterior.md)
-- [Marginal](../expectation-maximization/marginal.md)
-- [Posterior](../expectation-maximization/posterior.md)
+- [Parameters of a Bernoulli mixture](params.md)
+- [Valid parameters of a Bernoulli mixture](valid.md)
+- [Product Bernoulli probability mass function](bern-pmf.md)
+- [Joint distribution of the Bernoulli mixture](joint.md)
+- [The M-step of the Bernoulli mixture](m-step.md)
+- [Effective number of points of a Bernoulli-mixture component](mass.md)
+- [Responsibility-weighted count of ones](ones.md)
+- [Responsibilities of a Bernoulli mixture](resp.md)
+- [Responsibility-weighted count of zeros](zeros.md)
+- [Posteriors are probability distributions](../expectation-maximization/is-dist-posterior.md)
+- [Marginal of a latent-variable model](../expectation-maximization/marginal.md)
+- [Posterior of a latent-variable model](../expectation-maximization/posterior.md)
 
 ## Sources
 

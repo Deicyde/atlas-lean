@@ -8,12 +8,16 @@ lean: Cslib.Algorithms.Lean.AStar.aStar_predecessor_spec
 
 # A Star predecessor spec
 
-Each predecessor edge `u → v` satisfies `g v = g u + weight u v`.
+**A\*'s predecessor edges are tight.** Let $G$ be a directed graph on the vertices
+$\{0, \dots, n-1\}$ with natural edge weights $w$, let $h$ be a consistent heuristic with natural
+values and let $s$ be a source vertex. If A* from $s$ records $u$ as the predecessor of a vertex
+$v$, then $G$ has an edge from $u$ to $v$, the path weights $g(u)$ and $g(v)$ that A* returns are
+both finite, and $g(v) = g(u) + w(u, v)$.
 
 ## Depends on
 
-- [AStar Result](astar-result.md)
-- [Consistent](consistent.md)
+- [Output of A-star search](astar-result.md)
+- [Consistent heuristic](consistent.md)
 - [A Star](a-star.md)
 - [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
 - [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
@@ -23,7 +27,7 @@ Each predecessor edge `u → v` satisfies `g v = g u + weight u v`.
 ## Proof depends on
 
 - [Path Weight reduced Weight](path-weight-reduced-weight.md)
-- [Reduced Weight](reduced-weight.md)
+- [Reduced weight](reduced-weight.md)
 - [Has Path Weight](../../graph/shortest-path/dijkstra/has-path-weight.md)
 - [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
 - [Dijkstra distance realized](../../graph/shortest-path/dijkstra/dijkstra-distance-realized.md)

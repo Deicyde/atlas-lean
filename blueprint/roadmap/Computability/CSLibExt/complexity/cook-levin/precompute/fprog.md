@@ -41,7 +41,7 @@ label $l$, the statement $h(l)$ on the host stacks.
 - [Embedding of the counter program's stacks](emb-c.md)
 - [Embedding of the host's stacks](emb-h.md)
 - [The read loop](rd-t.md)
-- [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Translating a statement along a stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 
 ## Sources
 

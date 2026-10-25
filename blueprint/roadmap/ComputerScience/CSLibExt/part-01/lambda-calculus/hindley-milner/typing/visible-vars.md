@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.HindleyMilner.Ctx.visibleVars
 ---
 
-# Visible Vars
+# Free type variables of a name's visible scheme
 
-The free type variables of the visible scheme of a name.
+**Free type variables of a name's visible scheme.** For a typing context $\Gamma$ and a
+name $x$, this is the set of free type variables of the scheme that $\Gamma$ binds to $x$ (the
+first binding of $x$ in $\Gamma$), or the empty set if $\Gamma$ does not bind $x$.
 
 ## Depends on
 
-- [Ctx](ctx.md)
+- [Typing context](ctx.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
-- [Scheme](scheme.md)
+- [Context lookup](lookup.md)
+- [Type schemes](scheme.md)
 - [Vars](../../../../part-02/unification/basic/vars.md)
 
 ## Sources

@@ -25,8 +25,8 @@ unchanged.
 - [Prog](prog.md)
 - [The unary reader of the Hamiltonian path verifier](read-u.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 

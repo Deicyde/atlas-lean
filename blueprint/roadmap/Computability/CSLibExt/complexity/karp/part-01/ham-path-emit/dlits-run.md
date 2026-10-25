@@ -31,12 +31,12 @@ $T$.
 - [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Dlit run](dlit-run.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Language.yields_of_rule
 ---
 
-# Yields of rule
+# Yield through one production
 
-One production, expanded once at the head, gives a yield from its
-left-hand side.
+**Yield through one production.** Let $g$ be a context-free grammar and $A \to \alpha$ a
+production of $g$. If $\alpha$ yields the terminal word $w$, then the one-symbol sentential
+form $A$ yields $w$.
 
 ## Depends on
 
-- [Yields](yields.md)
+- [Yield of a sentential form](yields.md)
 
 ## Sources
 

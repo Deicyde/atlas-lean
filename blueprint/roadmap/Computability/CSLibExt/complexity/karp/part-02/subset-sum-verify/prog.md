@@ -46,9 +46,9 @@ true it reads a payload bit $b$, going to $\mathsf{no}$ if $X$ has ended.
 - [Starting the next number](next-s.md)
 - [Reading one pair of a block](rd-s.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Cmp B](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b.md)
-- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit-block comparison statement](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b.md)
+- [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Sources
 

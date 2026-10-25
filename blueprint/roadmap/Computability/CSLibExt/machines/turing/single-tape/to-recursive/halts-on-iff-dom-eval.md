@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.haltsOn_iff_dom_eval
 ---
 
-# Halts On iff dom eval
+# Halting is termination of the run
 
-`tm` halts on `l` iff Mathlib's evaluation of the step function from `initCfg l` is
-defined.
+**Halting is termination of the run.** A single-tape machine $M$ halts on an input word $l$ if
+and only if iterating the step function of $M$ from the initial configuration on $l$, until a
+configuration with no successor is reached, terminates.
 
 ## Depends on
 
-- [Halts On](../classes/halts-on.md)
+- [Halting on an input](../classes/halts-on.md)
 
 ## Sources
 

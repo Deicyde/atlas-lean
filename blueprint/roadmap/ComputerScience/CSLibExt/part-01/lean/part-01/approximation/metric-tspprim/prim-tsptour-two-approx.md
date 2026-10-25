@@ -6,40 +6,46 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.primTSPTour_two_approx
 ---
 
-# Prim TSPTour two approx
+# APPROX-TSP-TOUR with Prim's tree is a 2-approximation
 
-CLRS Theorem 35.2 with the minimum spanning tree computed by Prim: for a metric cost on
-`Fin n`, the preorder walk of Prim's tree costs at most twice any tour.
+**APPROX-TSP-TOUR with Prim's tree is a 2-approximation.** Let $d$ be a real metric cost
+on the vertices $\{0, \dots, n-1\}$ (symmetric, zero on the diagonal, nonnegative, and
+satisfying the triangle inequality), and let $r$ be a vertex. Then the cost of the closed tour
+through the list returned by APPROX-TSP-TOUR with Prim's tree for $d$ and $r$ is at most twice
+the cost of the closed tour through $H$, for every list $H$ that visits each of
+$0, 1, \dots, n-1$ exactly once.
+
+This is CLRS Theorem 35.2, with the minimum spanning tree computed by Prim.
 
 ## Depends on
 
-- [Is Metric Cost](../metric-tsp/is-metric-cost.md)
-- [Is Tour](../metric-tsp/is-tour.md)
-- [Prim TSPTour](prim-tsptour.md)
-- [Tour Cost](../metric-tsp/tour-cost.md)
+- [Metric cost function](../metric-tsp/is-metric-cost.md)
+- [Tour of a vertex list](../metric-tsp/is-tour.md)
+- [APPROX-TSP-TOUR with Prim's tree](prim-tsptour.md)
+- [Cost of a closed tour](../metric-tsp/tour-cost.md)
 
 ## Proof depends on
 
-- [Forest](../metric-tsp/forest.md)
-- [Preorder](../metric-tsp/preorder.md)
-- [Weight](../metric-tsp/weight.md)
-- [Parent Tree](parent-tree.md)
-- [Approx TSPTour](../metric-tsp/approx-tsptour.md)
-- [Build Forest](build-forest.md)
-- [Parent Tree prim Parents](parent-tree-prim-parents.md)
-- [Path From](../metric-tsp/path-from.md)
-- [Preorder Walk](../metric-tsp/preorder-walk.md)
-- [Preorder Walk Aux](../metric-tsp/preorder-walk-aux.md)
-- [Preorder Walk Aux ret](../metric-tsp/preorder-walk-aux-ret.md)
-- [Prim Forest](prim-forest.md)
-- [Prim Parents](prim-parents.md)
-- [Prim Tree](prim-tree.md)
-- [Prim Tree is Minimum Spanning Tree](prim-tree-is-minimum-spanning-tree.md)
-- [Sum edge Finset eq](sum-edge-finset-eq.md)
-- [Sym Weight](sym-weight.md)
-- [Tour Cost preorder le](../metric-tsp/tour-cost-preorder-le.md)
-- [Up](up.md)
-- [Weight build Forest](weight-build-forest.md)
+- [Rooted forest in left-child right-sibling form](../metric-tsp/forest.md)
+- [Preorder of a forest](../metric-tsp/preorder.md)
+- [Weight of a forest below a vertex](../metric-tsp/weight.md)
+- [Parent tree](parent-tree.md)
+- [The APPROX-TSP-TOUR algorithm](../metric-tsp/approx-tsptour.md)
+- [Forest of a parent array below a vertex](build-forest.md)
+- [Prim's parent array is a parent tree](parent-tree-prim-parents.md)
+- [Cost of a walk](../metric-tsp/path-from.md)
+- [Preorder walk](../metric-tsp/preorder-walk.md)
+- [Preorder walk with an accumulator](../metric-tsp/preorder-walk-aux.md)
+- [The APPROX-TSP-TOUR algorithm](../metric-tsp/preorder-walk-aux-ret.md)
+- [Forest of Prim's tree](prim-forest.md)
+- [Prim's parent array on the complete graph](prim-parents.md)
+- [Prim's tree](prim-tree.md)
+- [Prim's tree is a minimum spanning tree](prim-tree-is-minimum-spanning-tree.md)
+- [Edge sums over a parent tree](sum-edge-finset-eq.md)
+- [Symmetrized edge weights](sym-weight.md)
+- [The preorder tour costs at most twice the tree](../metric-tsp/tour-cost-preorder-le.md)
+- [One step up a parent array](up.md)
+- [Weight of the forest built from a parent array](weight-build-forest.md)
 
 ## Sources
 

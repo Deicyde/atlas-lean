@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.ArcConsistency.ac3All
 ---
 
-# Ac3 All
+# AC-3 on the whole problem
 
-AC-3 on the whole problem: all arcs queued.
+**AC-3 on the whole problem.** For a binary CSP $P$ with finitely many variables and
+domains $\mathrm{dom}$, AC-3 on the whole problem is AC-3 run from $\mathrm{dom}$ with the queue
+initialized to the arc list of $P$; it returns the final domains together with the number of
+revisions performed.
 
 ## Depends on
 
-- [Binary CSP](binary-csp.md)
+- [Binary constraint satisfaction problem](binary-csp.md)
 
 ## Proof depends on
 
-- [Ac3](ac3.md)
+- [The AC-3 algorithm](ac3.md)
 
 ## Sources
 

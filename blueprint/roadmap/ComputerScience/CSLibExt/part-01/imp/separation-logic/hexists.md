@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.IMP.HAssertion.hexists
 ---
 
-# Hexists
+# Existential heap assertion
 
-Existential quantification over addresses or values.
+**Existential heap assertion.** For a function $p$ assigning a heap assertion $p(n)$ to each
+natural number $n$ (an address or a value), the assertion $\exists n,\ p(n)$ holds of a store $s$
+and a heap $h$ exactly when $p(n)$ holds of $s$ and $h$ for some natural number $n$.
 
 ## Depends on
 
-- [HAssertion](hassertion.md)
+- [Heap assertion](hassertion.md)
 
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

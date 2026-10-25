@@ -25,16 +25,16 @@ and above $b$ on $B$, and the same counters.
 - [Name-loop outcome](nm-end.md)
 - [The tokenizer program](prog.md)
 - [Tokenizer stack contents](st.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Testing whether the top symbol is a given bit](top-is-bit.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
-- [Is Bit](../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Bit on top of a stack](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Bit test for the top of a stack](../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
 
 ## Sources
 

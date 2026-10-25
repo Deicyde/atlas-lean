@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Language.shuffle
 ---
 
-# Shuffle
+# Shuffle of two languages
 
-The shuffle of two languages: all interleavings of a word of `L` with a word of `M`.
+**Shuffle of two languages.** For languages $L$ and $M$ over $\alpha$, the shuffle of $L$ and
+$M$ is the language of all words $w$ over $\alpha$ such that $w$ is a shuffle of some word $u \in L$
+and some word $v \in M$, that is, $w$ interleaves $u$ and $v$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Shuffle](is-shuffle.md)
+- [Shuffle of two words](is-shuffle.md)
 
 ## Sources
 

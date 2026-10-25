@@ -24,7 +24,7 @@ derivation of $b_{i_1} \cdots b_{i_n}\, i_n \cdots i_1$ from $S$.
 - [The side word of an index sequence](../cfgundecidable/side-word.md)
 - [Start Rule](start-rule.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Left Derivation](../../../languages/context-free/part-01/ambiguity/left-derivation.md)
 
 ## Proof depends on
@@ -32,8 +32,8 @@ derivation of $b_{i_1} \cdots b_{i_n}\, i_n \cdots i_1$ from $S$.
 - [The leftmost derivation along an index sequence](left-derivation-canon.md)
 - [Encoded nonterminal symbol](../cfgundecidable/nt-sym.md)
 - [The productions of a side grammar](../cfgundecidable/side-rules.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 
 ## Sources
 

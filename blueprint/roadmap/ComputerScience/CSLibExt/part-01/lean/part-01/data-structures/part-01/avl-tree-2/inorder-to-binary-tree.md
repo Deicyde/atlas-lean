@@ -7,16 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.inorder_toBinaryTree
 ---
 
-# Inorder to Binary Tree
+# AVL inorder traversal agrees with the erased binary search tree
 
-The inorder traversal of an AVL tree is the `BinarySearchTree` inorder
-traversal of its cache-erased tree, by definition.
+**AVL inorder traversal agrees with the erased binary search tree.** For every AVL tree
+$t$, the inorder traversal of $t$ equals the binary search tree inorder traversal of the binary
+tree obtained from $t$ by erasing its cached heights; this holds by definition.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Inorder](inorder.md)
-- [To Binary Tree](to-binary-tree.md)
+- [Binary trees with cached heights](tree.md)
+- [Inorder traversal of an AVL tree](inorder.md)
+- [Erasing the cached heights of an AVL tree](to-binary-tree.md)
 - [Inorder](../../part-02/binary-search-tree/inorder.md)
 
 ## Sources

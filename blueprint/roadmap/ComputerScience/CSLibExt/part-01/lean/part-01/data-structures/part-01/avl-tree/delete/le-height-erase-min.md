@@ -7,26 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.le_height_eraseMin
 ---
 
-# Le height erase Min
+# Removing the leftmost key lowers the height of an AVL tree by at most one
 
-Removing the minimum shrinks the height of a balanced tree by at most one.
+**Removing the leftmost key lowers the height of an AVL tree by at most one.** If $t$ is a
+tree whose cached heights are correct and which is balanced, then the cached height of $t$ is at
+most one more than the cached height of the tree obtained from $t$ by removing its leftmost key.
 
 ## Depends on
 
-- [Balanced](../../avl-tree-2/balanced.md)
-- [Cache Correct](../../avl-tree-2/cache-correct.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Erase Min](erase-min.md)
-- [Height](../../avl-tree-2/height.md)
+- [AVL balance invariant](../../avl-tree-2/balanced.md)
+- [Correct cached heights](../../avl-tree-2/cache-correct.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [Removing the leftmost key of an AVL tree](erase-min.md)
+- [Cached height of an AVL tree](../../avl-tree-2/height.md)
 
 ## Proof depends on
 
-- [Balance](../../avl-tree-2/balance.md)
-- [Balance eq mk Node of le](../../avl-tree-2/balance-eq-mk-node-of-le.md)
-- [Cache Correct erase Min](cache-correct-erase-min.md)
-- [Height erase Min le](height-erase-min-le.md)
-- [Le height balance](../../avl-tree-2/le-height-balance.md)
-- [Mk Node](../../avl-tree-2/mk-node.md)
+- [AVL rebalancing](../../avl-tree-2/balance.md)
+- [Rebalancing when the heights of the children differ by at most one](../../avl-tree-2/balance-eq-mk-node-of-le.md)
+- [Removing the minimum keeps cached heights correct](cache-correct-erase-min.md)
+- [Removing the leftmost key does not increase the height of an AVL tree](height-erase-min-le.md)
+- [Rebalancing does not drop below the taller child](../../avl-tree-2/le-height-balance.md)
+- [AVL node with computed height](../../avl-tree-2/mk-node.md)
 
 ## Sources
 

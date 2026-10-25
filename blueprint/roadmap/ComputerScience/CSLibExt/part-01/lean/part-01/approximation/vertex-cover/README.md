@@ -4,28 +4,28 @@ navigation: module
 
 # Vertex Cover
 
-- [Vertex Cover Scan](vertex-cover-scan.md)
-- [Approx Vertex Cover](approx-vertex-cover.md)
+- [Vertex cover scan](vertex-cover-scan.md)
+- [APPROX-VERTEX-COVER](approx-vertex-cover.md)
 
 ## Cost
 
-- [Vertex Cover Scan time](vertex-cover-scan-time.md)
-- [Approx Vertex Cover time](approx-vertex-cover-time.md)
+- [APPROX-VERTEX-COVER](vertex-cover-scan-time.md)
+- [Running time of APPROX-VERTEX-COVER](approx-vertex-cover-time.md)
 
 ## The result is a vertex cover
 
-- [Subset vertex Cover Scan](subset-vertex-cover-scan.md)
-- [Approx Vertex Cover covers](approx-vertex-cover-covers.md)
-- [Approx Vertex Cover is Vertex Cover](approx-vertex-cover-is-vertex-cover.md)
+- [Running time of APPROX-VERTEX-COVER](subset-vertex-cover-scan.md)
+- [APPROX-VERTEX-COVER covers every listed pair](approx-vertex-cover-covers.md)
+- [APPROX-VERTEX-COVER returns a vertex cover](approx-vertex-cover-is-vertex-cover.md)
 
 ## The factor-two bound
 
-- [Card vertex Cover Scan le](card-vertex-cover-scan-le.md)
-- [Card approx Vertex Cover le two mul](card-approx-vertex-cover-le-two-mul.md)
-- [Approx Vertex Cover two approximation](approx-vertex-cover-two-approximation.md)
+- [Counting invariant of the vertex cover scan](card-vertex-cover-scan-le.md)
+- [APPROX-VERTEX-COVER is at most twice any vertex cover](card-approx-vertex-cover-le-two-mul.md)
+- [APPROX-VERTEX-COVER is a 2-approximation](approx-vertex-cover-two-approximation.md)
 
 ## The edges taken form a maximal matching
 
-- [Vertex Disjoint](vertex-disjoint.md)
-- [Exists matching vertex Cover Scan](exists-matching-vertex-cover-scan.md)
-- [Approx Vertex Cover matching](approx-vertex-cover-matching.md)
+- [Vertex-disjoint pairs](vertex-disjoint.md)
+- [Matching invariant of the vertex cover scan](exists-matching-vertex-cover-scan.md)
+- [The edges APPROX-VERTEX-COVER takes form a maximal matching of the listed pairs](approx-vertex-cover-matching.md)

@@ -25,7 +25,7 @@ the machine reaches the rejecting label within $|p| + 1$ steps.
 - [Whether a bit string ends in false](last-f.md)
 - [Stack contents of the SUBSET-SUM verifier](st.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
 
 ## Proof depends on
 
@@ -35,10 +35,10 @@ the machine reaches the rejecting label within $|p| + 1$ steps.
 - [The SUBSET-SUM verifier program](prog.md)
 - [Rejecting in one step](rej-one.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
-- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Bit on top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

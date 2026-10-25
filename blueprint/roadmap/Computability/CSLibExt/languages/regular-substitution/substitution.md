@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Language.IsRegular.substitution
 ---
 
-# Substitution of regular languages into a regular language over a finite alphabet gives a regular language
+# Regular languages are closed under substitution over a finite alphabet
 
-**Substitution of regular languages into a regular language over a finite alphabet gives a
-regular language.**
+**Regular languages are closed under substitution over a finite alphabet.** Let $T$ be a
+finite alphabet and $T'$ any alphabet. If $L$ is a regular language over $T$ and $s(a)$ is a
+regular language over $T'$ for every letter $a \in T$, then the substitution of $s$ into $L$ is a
+regular language over $T'$.
 
 ## Depends on
 
-- [Substitution](../substitution.md)
+- [Substitution of languages for letters](../substitution.md)
 
 ## Proof depends on
 
-- [Detour](detour.md)
-- [Soundness of the paths](exists-of-is-path.md)
-- [Is Path run](is-path-run.md)
-- [Εnfa](nfa.md)
+- [Detour labels](detour.md)
+- [Soundness of the paths of the substitution ε-NFA](exists-of-is-path.md)
+- [Paths inside one copy of a letter automaton](is-path-run.md)
+- [The ε-NFA for a substitution](nfa.md)
 
 ## Sources
 

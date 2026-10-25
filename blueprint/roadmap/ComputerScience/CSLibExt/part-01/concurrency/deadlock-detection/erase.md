@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.Algorithms.Concurrency.DeadlockDetection.State.Reduces.erase
 ---
 
-# Erase
+# Letting a process that fits finish first preserves reduction sequences
 
-If a process can finish now, letting it finish first keeps any reduction
-sequence valid without it.
+**Letting a process that fits finish first preserves reduction sequences.** Let $w$ be a
+resource vector and $p$ a process whose request is at most $w$. If $\sigma$ is a reduction sequence
+from $w$, then the list obtained from $\sigma$ by removing the first occurrence of $p$, if any, is a
+reduction sequence from $w$ plus the allocation of $p$.
 
 ## Depends on
 
-- [State](state.md)
-- [Reduces](reduces.md)
+- [Resource-allocation state](state.md)
+- [Reduction sequences](reduces.md)
 
 ## Sources
 

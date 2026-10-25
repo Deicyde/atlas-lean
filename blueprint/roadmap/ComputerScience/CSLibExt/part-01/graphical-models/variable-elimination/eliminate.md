@@ -11,12 +11,12 @@ Sum out the last vertex: multiply its message into the unary factor of its paren
 
 ## Depends on
 
-- [Tree Model](tree-model.md)
+- [Pairwise model on a tree](tree-model.md)
 
 ## Proof depends on
 
-- [Last Parent](last-parent.md)
-- [Message](message.md)
+- [Parent of the last vertex](last-parent.md)
+- [Message from the last vertex](message.md)
 
 ## Sources
 

@@ -6,18 +6,18 @@ navigation: module
 
 ## Knot
 
-- [Id U](id-u.md)
-- [Body](body.md)
-- [Knot](knot.md)
-- [Body₀](body-2.md)
-- [Loop A](loop-a.md)
-- [C₁](c.md)
-- [Knot prefix](knot-prefix.md)
-- [Knot cycle](knot-cycle.md)
-- [Reachable](reachable.md)
+- [The identity on Unit](id-u.md)
+- [The recursive function of Landin's knot, with the cell free](body.md)
+- [Landin's knot](knot.md)
+- [The stored recursive function of Landin's knot](body-2.md)
+- [Cycle term of Landin's knot](loop-a.md)
+- [The knot after allocation](c.md)
+- [The first four steps of Landin's knot](knot-prefix.md)
+- [The cycle of Landin's knot](knot-cycle.md)
+- [Configurations on the evaluation path of Landin's knot](reachable.md)
 
 ## References
 
-- [Knot has Type](knot-has-type.md)
+- [Landin's knot is well typed](knot-has-type.md)
 - [Knot diverges](knot-diverges.md)
-- [Knot runs forever](knot-runs-forever.md)
+- [Landin's knot never gets stuck](knot-runs-forever.md)

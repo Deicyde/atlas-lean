@@ -20,15 +20,15 @@ less than $k$, with $u = w_{i_1} \cdots w_{i_n} \, i_n \cdots i_1$.
 - [The side grammar of a PCP instance](side-grammar.md)
 - [The side word of an index sequence](side-word.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 
 - [The construction of derivations](derives-side-word.md)
 - [The analysis of derivations](eq-side-word-of-derives.md)
 - [The productions of a side grammar](side-rules.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 
 ## Sources
 

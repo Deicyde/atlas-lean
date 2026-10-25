@@ -4,68 +4,68 @@ navigation: module
 
 # Program
 
-- [Flag](flag.md)
+- [Flag bit of a machine state](flag.md)
 
 ## Runs and sequencing
 
-- [Iter none](iter-none.md)
-- [Run](run.md)
-- [Single](single.md)
+- [A halted run stays halted](iter-none.md)
+- [Exact-length runs of a TM2 machine](run.md)
+- [A single step executes the statement at the current label](single.md)
 
 ## Unary counters
 
-- [Cnt](cnt.md)
+- [Unary counter](cnt.md)
 
 ## Increment and decrement
 
-- [Incr](incr.md)
-- [Decr](decr.md)
+- [Counter increment](incr.md)
+- [Decrement](decr.md)
 
 ## Transfer: drain, move, copy
 
-- [Push All](push-all.md)
-- [Add U](add-u.md)
+- [Pushing symbols onto several stacks](push-all.md)
+- [Adding units to target stacks](add-u.md)
 - [Xfer](xfer.md)
-- [Xfer run](xfer-run.md)
+- [Running a counter transfer](xfer-run.md)
 
 ## Comparison of two counters
 
-- [Cmp Step](cmp-step.md)
-- [Cmp Loop run](cmp-loop-run.md)
+- [One round of counter comparison](cmp-step.md)
+- [The comparison loop](cmp-loop-run.md)
 - [Cmp run](cmp-run.md)
 
 ## For-loops over a counter
 
-- [Sum From](sum-from.md)
-- [Sum From le](sum-from-le.md)
-- [For Head](for-head.md)
-- [For Loop run](for-loop-run.md)
+- [Sum of consecutive values](sum-from.md)
+- [Termwise bound on a sum of consecutive values](sum-from-le.md)
+- [Loop head of a for loop over a counter](for-head.md)
+- [Exact running time of a for loop over a counter](for-loop-run.md)
 
 ## Emitting constant symbols
 
-- [Push List](push-list.md)
-- [Emit](emit.md)
+- [Pushing a list of symbols onto one stack](push-list.md)
+- [Pushing a constant list](emit.md)
 
 ## Counter arithmetic
 
-- [Copy run](copy-run.md)
-- [Add run](add-run.md)
-- [Mul run](mul-run.md)
+- [Copying a counter through a scratch stack](copy-run.md)
+- [Adding two counters into a third](add-run.md)
+- [Multiplying unary counters](mul-run.md)
 
 ## Prepending emission: repeated blocks and gaps
 
-- [Rep](rep.md)
-- [Emit R](emit-r.md)
-- [Xfer E](xfer-e.md)
-- [Emit Diff run](emit-diff-run.md)
+- [Repeated block](rep.md)
+- [Prepending a constant list](emit-r.md)
+- [Draining a counter while prepending a block](xfer-e.md)
+- [Gap emission](emit-diff-run.md)
 
 ## Runs of unspecified length, and for-loops with data-dependent bodies
 
-- [Reach](reach.md)
-- [For Loop reach](for-loop-reach.md)
+- [Reachability for a TM2 machine](reach.md)
+- [A for loop over a counter reaches its exit](for-loop-reach.md)
 
 ## Runs with an upper bound on their length (time bounds)
 
-- [Run Le](run-le.md)
-- [Bud](bud.md)
-- [For Loop le](for-loop-le.md)
+- [Runs within a step budget](run-le.md)
+- [Budgeted run](bud.md)
+- [Time bound for a for loop over a counter](for-loop-le.md)

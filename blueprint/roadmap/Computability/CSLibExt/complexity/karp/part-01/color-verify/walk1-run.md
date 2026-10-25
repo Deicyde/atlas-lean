@@ -32,8 +32,8 @@ on $T$, nothing on $k$, and agree with $S$ on every other stack.
 - [The 3-COLOR verifier machine](prog.md)
 - [One step of the walk towards the farther endpoint](walk1-s.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
@@ -45,9 +45,9 @@ on $T$, nothing on $k$, and agree with $S$ on every other stack.
 - [Walk-on step with a unit on the counter](step-aux-walk1-s-cons.md)
 - [Walk-on step with the counter exhausted](step-aux-walk1-s-nil.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Bit on top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

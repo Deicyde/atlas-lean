@@ -24,15 +24,15 @@ followed by $\mathit{post}$, and every stack other than $T$ and $P$ is unchanged
 - [Flattening pairs of bits](flat.md)
 - [The 3-COLOR verifier machine](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Flattening a concatenation](flat-append.md)
 - [Length of a flattening](length-flat.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Running the bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

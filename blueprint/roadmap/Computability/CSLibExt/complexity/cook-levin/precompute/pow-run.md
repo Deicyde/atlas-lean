@@ -18,7 +18,7 @@ lean: Cslib.Complexity.CookLevin.Precompute.pow_run
 - [Stages of the power loop](pw.md)
 - [Step budget of the power loop](pow-b.md)
 - [Power-loop program](pow-s.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -26,15 +26,15 @@ lean: Cslib.Complexity.CookLevin.Precompute.pow_run
 - [The multiplication routine of a counter machine](../counter-view/mul-s.md)
 - [Counters after a multi-target transfer](xf.md)
 - [Multi-target transfer](xfer-s.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
-- [Add U](../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Decr](../../../../MathlibExt/turing-machine/program/decr.md)
-- [Mul run](../../../../MathlibExt/turing-machine/program/mul-run.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
+- [Adding units to target stacks](../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
+- [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer run](../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

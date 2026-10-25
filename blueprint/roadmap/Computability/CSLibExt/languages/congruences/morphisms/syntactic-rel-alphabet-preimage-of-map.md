@@ -17,7 +17,7 @@ syntactically equivalent for $L$, then $x$ and $y$ are syntactically equivalent 
 ## Depends on
 
 - [Alphabet preimage](alphabet-preimage.md)
-- [Syntactic Rel](../syntactic/syntactic-rel.md)
+- [Syntactic equivalence](../syntactic/syntactic-rel.md)
 
 ## Sources
 

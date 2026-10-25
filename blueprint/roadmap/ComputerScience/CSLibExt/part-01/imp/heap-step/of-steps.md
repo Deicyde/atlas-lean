@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.IMP.Safe.of_steps
 ---
 
-# Of steps
+# Safety is preserved along executions
 
-Safety is preserved along executions.
+**Safety is preserved along executions.** If a heap configuration is safe and reaches a second
+configuration by finitely many (possibly zero) small steps, then the second configuration is
+safe.
 
 ## Depends on
 
-- [HConfig](hconfig.md)
-- [HSteps](hsteps.md)
-- [Safe](safe.md)
+- [Heap configurations](hconfig.md)
+- [Multi-step heap execution](hsteps.md)
+- [Safe heap configurations](safe.md)
 
 ## Proof depends on
 
-- [HStep](hstep.md)
+- [Small-step semantics of heap commands](hstep.md)
 
 ## Sources
 

@@ -20,13 +20,13 @@ whose contents are empty on each $k_i$ and equal to $S$ on every other stack.
 
 - [Drain step count](drain-b.md)
 - [The drain program](drain-s.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Draining a stack with the transfer loop](xfer-drain.md)
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

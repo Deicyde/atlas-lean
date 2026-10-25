@@ -18,7 +18,7 @@ def start : Lab := .rdK
 
 - [Reading a pair bit or vertex mark](val-of.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Is Bit Block](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [Bit blocks](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
 
 ## Sources
 

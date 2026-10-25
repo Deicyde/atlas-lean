@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.pricingVertexCover_time
 ---
 
-# Cost
+# Running time of the pricing method
 
-**Cost.** Exactly one unit per listed edge and one per vertex.
+**Running time of the pricing method.** For all rational vertex weights $w$ on a finite
+vertex set $V$ and every list $L$ of edges, the pricing method on $w$ and $L$ takes exactly
+$|L| + |V|$ time units, where $|L|$ is the length of the list: one unit per listed edge and
+one per vertex.
 
 ## Depends on
 
-- [Pricing Vertex Cover](pricing-vertex-cover.md)
+- [Pricing method for weighted vertex cover](pricing-vertex-cover.md)
 
 ## Proof depends on
 
-- [Pricing Scan](pricing-scan.md)
+- [Pricing scan](pricing-scan.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Language.nerodeRel_append_right
 ---
 
-# Nerode Rel append right
+# Nerode equivalence is a right congruence
 
-Appending the same continuation preserves Nerode equivalence.
+**Nerode equivalence is a right congruence.** Let $L$ be a language over an alphabet
+$\Sigma$. If two words $x, y \in \Sigma^*$ are Nerode equivalent for $L$, then for every word
+$z \in \Sigma^*$ the words $xz$ and $yz$ are Nerode equivalent for $L$.
 
 ## Depends on
 
-- [Nerode Rel](nerode-rel.md)
+- [Nerode equivalence](nerode-rel.md)
 
 ## Sources
 

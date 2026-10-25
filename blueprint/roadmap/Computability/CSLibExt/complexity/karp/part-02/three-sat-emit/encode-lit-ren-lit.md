@@ -21,7 +21,7 @@ $n = 0$, then the pair $\mathrm{true}, b$ for each bit $b$ of the binary represe
 ## Proof depends on
 
 - [Prefix-free code of a natural number](../../../../cook-levin/encode-nat-prefix.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

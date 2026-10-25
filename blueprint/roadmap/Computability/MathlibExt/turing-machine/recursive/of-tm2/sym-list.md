@@ -15,8 +15,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pushes](pushes.md)
-- [Relevant](relevant.md)
+- [Symbols a statement may push](pushes.md)
+- [Relevant symbols of a stack](relevant.md)
 
 ## Sources
 

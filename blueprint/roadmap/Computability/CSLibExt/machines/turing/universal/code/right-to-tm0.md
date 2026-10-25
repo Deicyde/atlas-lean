@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Turing.Universal.Code.right₀_toTM0
 ---
 
-# Right₀ to TM0
+# The output of a configuration as a Mathlib half-tape
 
-The output of a configuration reads as Mathlib's output.
+**The output of a configuration as a Mathlib half-tape.** For every explicit configuration
+$k$, the half-tape of the Mathlib configuration of $k$ from the head rightwards (the cell under
+the head followed by the cells to its right) is the output of $k$, read with blanks beyond its
+end.
 
 ## Depends on
 
-- [Cfg](cfg.md)
+- [Explicit configurations](cfg.md)
 - [Output](output.md)
-- [To TM0](to-tm0.md)
+- [TM0 configuration of a simulation configuration](to-tm0.md)
 
 ## Sources
 

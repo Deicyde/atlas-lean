@@ -21,7 +21,7 @@ $c$, $\varphi_c(0)$ is undefined if and only if $f(c)$ is total.
 ## Proof depends on
 
 - [Diverging once a code halts on zero](until-halts-fun.md)
-- [Parametrized s-m-n](../../../../MathlibExt/exists-computable-code.md)
+- [Parametrized s-m-n theorem](../../../../MathlibExt/exists-computable-code.md)
 
 ## Sources
 

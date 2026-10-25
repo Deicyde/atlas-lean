@@ -5,19 +5,20 @@ statement: formalized
 lean: Cslib.HindleyMilner.Scheme.MoreGeneral
 ---
 
-# More General
+# More general type scheme
 
-`σ'` is more general than `σ`: every instance of `σ` is one of `σ'`, and `σ'` has no
-other free variables.
+**More general type scheme.** A scheme $\sigma'$ is more general than a scheme $\sigma$ when
+every instance of $\sigma$ is also an instance of $\sigma'$ and every free type variable of
+$\sigma'$ is a free type variable of $\sigma$.
 
 ## Depends on
 
-- [Scheme](scheme.md)
+- [Type schemes](scheme.md)
 
 ## Proof depends on
 
-- [Inst](inst.md)
-- [Ty](ty.md)
+- [Instantiation of a type scheme](inst.md)
+- [Monotypes](ty.md)
 - [Vars](../../../../part-02/unification/basic/vars.md)
 
 ## Sources

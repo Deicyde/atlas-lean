@@ -13,7 +13,7 @@ of piles are encoded as self-delimiting binary blocks.
 
 ## Depends on
 
-- [Bitstring Encoding](../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
+- [Bitstring encodings](../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
 
 ## Sources
 

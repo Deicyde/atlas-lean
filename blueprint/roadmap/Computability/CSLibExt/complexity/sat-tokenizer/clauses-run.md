@@ -32,10 +32,10 @@ the table stack of the occurrence table of $N$ against $w$.
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
 - [Token sequence of a CNF formula](../sat-verifier-spec/toks.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
-- [Vars Of](../../sat-time-m/vars-of.md)
+- [Occurrence list of a CNF formula](../../sat-time-m/vars-of.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -44,8 +44,8 @@ the table stack of the occurrence table of $N$ against $w$.
 - [Tokenizer rejects an undecodable literal](ents-of-cons.md)
 - [Tokens of a clause](../sat-verifier-spec/clause-toks.md)
 - [Symbols of a table entry](../sat-verifier-spec/ent-toks.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

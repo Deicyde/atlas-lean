@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.delete_validRoot_exists
 ---
 
-# Delete valid Root exists
+# Top-down deletion yields a root-valid tree
 
-The result of a deletion is root-valid at some height: the height of
-the input or one less (see `delete_validRoot`).
+**Top-down deletion yields a root-valid tree.** Let $t \ge 2$ and let $T$ be a B-tree of
+minimum degree $t$ over a linearly ordered key type. For every key $x$, the tree obtained by
+deleting $x$ from $T$ with minimum degree $t$ satisfies the root invariant of B-trees of minimum
+degree $t$ at some height.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Is BTree](../../btree-2/is-btree.md)
-- [Valid Root](../../btree-2/valid-root.md)
-- [Delete](delete.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [B-trees of a given minimum degree](../../btree-2/is-btree.md)
+- [Root invariant of a B-tree](../../btree-2/valid-root.md)
+- [Top-down B-tree deletion](delete.md)
 
 ## Proof depends on
 
-- [Delete](delete-2.md)
-- [Exists valid Root](../../btree-2/exists-valid-root.md)
+- [Top-down deletion preserves the B-tree invariant](delete-2.md)
+- [B-trees satisfy the root invariant](../../btree-2/exists-valid-root.md)
 
 ## Sources
 

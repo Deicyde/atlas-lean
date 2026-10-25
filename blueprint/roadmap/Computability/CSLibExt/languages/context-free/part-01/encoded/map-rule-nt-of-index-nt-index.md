@@ -6,21 +6,26 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.mapRule_ntOfIndex_ntIndex
 ---
 
-# Map Rule nt Of Index nt Index
+# Numbering the nonterminals of a production and back recovers it
 
-Renaming a production of `G` to numbers and back gives it back.
+**Numbering the nonterminals of a production and back recovers it.** Let $G$ be a context-free
+grammar over $T$ and $r$ a production of $G$. Replacing each nonterminal $A$ of $r$ by its number,
+the position, counting from $0$, of the first occurrence of $A$ in the list of nonterminals that
+$G$ mentions, and then replacing each number $n$ by the nonterminal of $G$ with number $n$ (the
+entry at position $n$ of that list, or the initial nonterminal of $G$ if the list has no such
+entry) gives $r$ again.
 
 ## Depends on
 
-- [Nt Index](nt-index.md)
-- [Nt Of Index](nt-of-index.md)
-- [Map Rule](../basic/map-rule.md)
+- [Numbering of nonterminals](nt-index.md)
+- [Nonterminal with a given number](nt-of-index.md)
+- [Renaming the nonterminals of a production](../basic/map-rule.md)
 
 ## Proof depends on
 
-- [Nt Of](nt-of.md)
-- [Used NT](used-nt.md)
-- [Map Symbol](../basic/map-symbol.md)
+- [Nonterminal of a symbol](nt-of.md)
+- [Nonterminals mentioned by a grammar](used-nt.md)
+- [Renaming the nonterminals of a symbol](../basic/map-symbol.md)
 
 ## Sources
 

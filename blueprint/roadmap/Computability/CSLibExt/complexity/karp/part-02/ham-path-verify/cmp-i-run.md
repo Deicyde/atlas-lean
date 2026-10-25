@@ -28,13 +28,13 @@ false and the same stacks $\sigma$.
 - [Exit labels of the counter comparisons](cout.md)
 - [Prog](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 - [Cmp run](../../../../../MathlibExt/turing-machine/program/cmp-run.md)
 
 ## Sources

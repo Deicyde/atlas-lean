@@ -38,7 +38,7 @@ $CB$) with flag false, the same counters, and output stack $e_y \, o$ (concatena
 - [At-most-one clauses of the first rows of a cell](rows-cnf.md)
 - [Dense clause](../../dense-sat/clause.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -49,8 +49,8 @@ $CB$) with flag false, the same counters, and output stack $e_y \, o$ (concatena
 - [Generator run over one row of at-most-one clauses](row-run.md)
 - [Dense CNF formula](../../dense-sat/cnf.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

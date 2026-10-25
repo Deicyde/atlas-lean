@@ -28,13 +28,13 @@ token stack $X$ on top of $R$, and side stack $U$.
 - [A clause's tokens on the token stack](../../../sat-check/cl-rev.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [A clause with more than three literals makes the capped 3SAT filter fail](clause-fail.md)
 - [The 3SAT filter walks one clause within the cap](clause-ok.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

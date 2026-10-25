@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.cacheCorrect_mkNode
 ---
 
-# Cache Correct mk Node
+# The AVL node constructor preserves cached heights
 
-The smart constructor produces a node with a correct cached height.
+**The AVL node constructor preserves cached heights.** If two AVL trees $\ell$ and $r$ have
+correct cached heights, then for every key $k$ the node built from $\ell$, $k$ and $r$ by the
+smart constructor, which stores the height $\max(h(\ell), h(r)) + 1$ where $h$ denotes the height
+cached at the root (and $0$ for the empty tree), also has correct cached heights.
 
 ## Depends on
 
-- [Cache Correct](cache-correct.md)
-- [Tree](tree.md)
-- [Mk Node](mk-node.md)
+- [Correct cached heights](cache-correct.md)
+- [Binary trees with cached heights](tree.md)
+- [AVL node with computed height](mk-node.md)
 
 ## Proof depends on
 
-- [Height](height.md)
+- [Cached height of an AVL tree](height.md)
 
 ## Sources
 

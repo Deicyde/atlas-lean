@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Language.finite_syntacticMonoid_leftQuotient
 ---
 
-# Finite syntactic Monoid left Quotient
+# Left quotients preserve finiteness of the syntactic monoid
 
-Finite syntactic monoids are closed under left quotients.
+**Left quotients preserve finiteness of the syntactic monoid.** Let $L$ be a language over an
+alphabet $A$ whose syntactic monoid is finite. Then for every word $u$ over $A$, the syntactic
+monoid of the left quotient $u^{-1} L = \{x \mid ux \in L\}$ is finite.
 
 ## Depends on
 
@@ -16,13 +18,13 @@ Finite syntactic monoids are closed under left quotients.
 
 ## Proof depends on
 
-- [Left Quotient](left-quotient.md)
-- [Finite syntactic Monoid of recognizer](../recognition/finite-syntactic-monoid-of-recognizer.md)
-- [Left Quotient Accept](left-quotient-accept.md)
-- [Recognizes syntactic Morphism](../recognition/recognizes-syntactic-morphism.md)
-- [Syntactic Accept](../syntactic/syntactic-accept.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
-- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
+- [Recognizers recognize left quotients](left-quotient.md)
+- [Finite recognizers give finite syntactic monoids](../recognition/finite-syntactic-monoid-of-recognizer.md)
+- [Accepting set for a left quotient](left-quotient-accept.md)
+- [The syntactic morphism recognizes its language](../recognition/recognizes-syntactic-morphism.md)
+- [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
+- [Syntactic morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

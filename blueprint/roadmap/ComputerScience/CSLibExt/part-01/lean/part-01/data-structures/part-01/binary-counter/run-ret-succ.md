@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.run_ret_succ
 ---
 
-# Run ret succ
+# One more increment
 
-A successor run returns the increment of its actual predecessor state.
+**One more increment.** For every bit vector $b$ and every natural number $n$, the bit vector
+returned by running $n + 1$ increments from $b$ is the increment of the bit vector returned by
+running $n$ increments from $b$.
 
 ## Depends on
 
-- [Increment](increment.md)
-- [Run](run.md)
+- [Binary counter increment](increment.md)
+- [Running the binary counter](run.md)
 
 ## Sources
 

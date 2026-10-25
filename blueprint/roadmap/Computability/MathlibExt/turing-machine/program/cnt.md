@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.TM2Program.cnt
 ---
 
-# Cnt
+# Unary counter
 
-The value `n` of a counter with unit symbol `u`: the stack is exactly `u^n`.
+**Unary counter.** The unary counter with unit symbol $u$ and value $n \in \mathbb{N}$ is the
+list $u^n$ consisting of exactly $n$ copies of $u$.
 
 ## Depends on
 

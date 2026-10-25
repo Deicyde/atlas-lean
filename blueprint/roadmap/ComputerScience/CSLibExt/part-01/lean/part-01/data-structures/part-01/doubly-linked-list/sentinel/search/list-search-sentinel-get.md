@@ -7,16 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.listSearchSentinel_get
 ---
 
-# List Search Sentinel get
+# Sentinel search changes only the sentinel's key
 
-The complete returned pool differs only in the sentinel key; all other cells and
-all next/prev links and satellite payloads are unchanged.
+**Sentinel search changes only the sentinel's key.** Let $s$ be the sentinel of some list of
+data nodes that a store circularly represents, and let $k$ be a key. In the store returned by
+sentinel search for $k$, the cell $s$ holds the original sentinel node with its key replaced by
+$k$ and its satellite data and next and prev links unchanged, and every cell $z \ne s$ holds
+exactly what it held in the input store.
 
 ## Depends on
 
-- [Circular Represents](../basic/circular-represents.md)
-- [Node](../../basic/node.md)
-- [List Search Sentinel](list-search-sentinel.md)
+- [Circular doubly linked list with a sentinel](../basic/circular-represents.md)
+- [Doubly linked list node](../../basic/node.md)
+- [Search in a circular list with a sentinel](list-search-sentinel.md)
 
 ## Sources
 

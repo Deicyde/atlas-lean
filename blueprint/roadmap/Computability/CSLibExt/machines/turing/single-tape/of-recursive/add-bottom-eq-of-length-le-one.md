@@ -6,10 +6,14 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.OfTM2.addBottom_eq_of_length_le_one
 ---
 
-# Add Bottom eq of length le one
+# Stacks of height at most one give a one-cell tape
 
-Stacks holding at most one symbol each make a one-cell tape: the bottom cell with the top of
-every stack.
+**Stacks of height at most one give a one-cell tape.** Let $M$ be a finite multi-stack
+machine, and let $S$ assign to every stack $k$ of $M$ a list $S_k$ of length at most $1$. Let $L'$
+be a tape of stack columns whose $k$-th track, for every $k$, is $S_k$ laid out bottom first and
+followed by blanks. Then adding the bottom marker to $L'$, as in the translation of $M$ to a
+single-tape machine, gives the tape whose first cell is flagged as the bottom and holds the top of
+$S_k$ on every stack $k$ (nothing if $S_k$ is empty), followed by blank cells.
 
 ## Depends on
 

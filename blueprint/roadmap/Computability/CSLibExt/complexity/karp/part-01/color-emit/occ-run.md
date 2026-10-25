@@ -39,7 +39,7 @@ with the occurrences in $qs$, in order, pushed on top. The counter $N$ is not ad
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -57,9 +57,9 @@ with the occurrences in $qs$, in order, pushed on top. The counter $N$ is not ad
 - [Copy sites of the occurrence triangle](occ-sites.md)
 - [Recording the current occurrence](put-run.md)
 - [Walking the earlier occurrences](walk-run.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

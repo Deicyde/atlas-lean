@@ -7,23 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.IsBTree.deleteRebuild
 ---
 
-# Delete Rebuild
+# Rebuilding deletion yields a B-tree
 
-The result of a deletion is a B-tree: ordered, and root-valid at some
-height, hence satisfying the occupancy bounds and uniform height of
-`Valid`/`ValidRoot`. This holds for every input tree, because the result is
-built by `fromList`.
+**Rebuilding deletion yields a B-tree.** Let $t \ge 2$. For every key $x$ and every tree $T$,
+whether or not $T$ is itself a B-tree, the rebuilding deletion of $x$ from $T$ with minimum
+degree $t$ is a B-tree of minimum degree $t$.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Is BTree](../../btree-2/is-btree.md)
-- [Delete Rebuild](delete-rebuild.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [B-trees of a given minimum degree](../../btree-2/is-btree.md)
+- [B-tree deletion by rebuilding](delete-rebuild.md)
 
 ## Proof depends on
 
-- [From List](../../btree-2/from-list-2.md)
-- [Flatten](../../btree-2/flatten.md)
+- [Building from a list yields a B-tree](../../btree-2/from-list-2.md)
+- [Inorder flattening of a B-tree](../../btree-2/flatten.md)
 
 ## Sources
 

@@ -24,7 +24,7 @@ stacks unchanged.
 - [Witness decoder](../../part-01/ham-path-check/decode-w.md)
 - [Prog](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -36,7 +36,7 @@ stacks unchanged.
 - [The unary mover of the Hamiltonian path verifier moves a terminated number](skip-u-run.md)
 - [Interleaved stack updates in the Hamiltonian-path verifier](update-update-update-update.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

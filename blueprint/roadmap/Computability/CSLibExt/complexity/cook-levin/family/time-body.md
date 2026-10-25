@@ -32,8 +32,8 @@ bound for $N$, $T$ and $H$.
 - [Encoded transition clauses of one time step](blk.md)
 - [Step bound for one time-loop iteration of the transition-family generator](body-b.md)
 - [Prog](prog.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -49,12 +49,12 @@ bound for $N$, $T$ and $H$.
 - [Dense clause from a list of literals](dense-clause.md)
 - [Literals of a transition clause](lits.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Add U](../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Mul run](../../../../MathlibExt/turing-machine/program/mul-run.md)
-- [Xfer run](../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [Adding units to target stacks](../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
+- [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

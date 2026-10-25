@@ -6,18 +6,18 @@ navigation: module
 
 ## Deadlock Detection
 
-- [State](state.md)
+- [Resource-allocation state](state.md)
 
 ## State
 
-- [Reduces](reduces.md)
-- [Erase](erase.md)
-- [Eq nil](eq-nil.md)
-- [Reduce Aux](reduce-aux.md)
-- [Finished](finished.md)
+- [Reduction sequences](reduces.md)
+- [Letting a process that fits finish first preserves reduction sequences](erase.md)
+- [A reduction sequence in which no process fits is empty](eq-nil.md)
+- [The detection algorithm with fuel](reduce-aux.md)
+- [The processes the detection algorithm lets finish](finished.md)
 - [The detection algorithm](detect.md)
-- [Reduce Aux disjoint](reduce-aux-disjoint.md)
+- [The algorithm with fuel leaves over no process of a reduction sequence](reduce-aux-disjoint.md)
 - [Every reported process is stuck](detect-stuck.md)
-- [Finished reduces](finished-reduces.md)
+- [The processes the algorithm lets finish form a reduction sequence](finished-reduces.md)
 - [Correctness of deadlock detection](mem-detect-iff.md)
 - [No deadlock is reported exactly when all the processes can finish](detect-eq-nil-iff.md)

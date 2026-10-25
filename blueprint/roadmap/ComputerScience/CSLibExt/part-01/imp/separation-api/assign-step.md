@@ -6,31 +6,37 @@ proof: formalized
 lean: Cslib.IMP.assign_step
 ---
 
-# Assign step
+# Assignment rule with a store-irrelevant heap assertion
 
-Assignment needs no framing: the heap is untouched, so only the store
-facts change, provided the heap assertion is store-irrelevant.
+**Assignment rule with a store-irrelevant heap assertion.** Let $x$ and $y$ be variables,
+let $p$ and $q$ be predicates on stores, and let $H$ be a store-irrelevant heap assertion.
+Write $s[x := n]$ for the store that agrees with $s$ except that it maps $x$ to $n$. If every
+store $s$ satisfying $p$ has $q(s[x := s(y)])$, then the separation-logic triple for the
+assignment $x := y$ is valid with precondition "$p(s)$ and $H(s, h)$" and postcondition
+"$q(s)$ and $H(s, h)$", where $s$ is the store and $h$ the heap.
+
+An assignment leaves the heap untouched, so no framing is needed.
 
 ## Depends on
 
-- [AExp](../syntax/aexp.md)
-- [HAssertion](../separation-logic/hassertion.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Heap assertion](../separation-logic/hassertion.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](../heap-step/heap-cmd.md)
-- [Sep Valid](../separation-logic/sep-valid.md)
-- [State](../syntax/state.md)
-- [Store Irrel](store-irrel.md)
+- [Heap commands](../heap-step/heap-cmd.md)
+- [Separation-logic triple validity](../separation-logic/sep-valid.md)
+- [IMP program states](../syntax/state.md)
+- [Store-irrelevant heap assertions](store-irrel.md)
 
 ## Proof depends on
 
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Entails](../separation-logic/entails.md)
-- [HConfig](../heap-step/hconfig.md)
-- [HStep](../heap-step/hstep.md)
-- [HSteps](../heap-step/hsteps.md)
-- [Safe](../heap-step/safe.md)
+- [Entailment of heap assertions](../separation-logic/entails.md)
+- [Heap configurations](../heap-step/hconfig.md)
+- [Small-step semantics of heap commands](../heap-step/hstep.md)
+- [Multi-step heap execution](../heap-step/hsteps.md)
+- [Safe heap configurations](../heap-step/safe.md)
 
 ## Sources
 

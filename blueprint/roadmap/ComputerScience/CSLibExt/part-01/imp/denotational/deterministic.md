@@ -6,21 +6,25 @@ proof: formalized
 lean: Cslib.IMP.Denote.deterministic
 ---
 
-# Deterministic
+# The denotational semantics of IMP is deterministic
 
-Denotations are deterministic, by agreement with the big-step semantics.
+**The denotational semantics of IMP is deterministic.** For every IMP command $c$ and all
+states $s$, $s_1$ and $s_2$, if the relational denotation of $c$ relates $s$ to $s_1$ and $s$
+to $s_2$, then $s_1 = s_2$.
+
+The proof goes through the agreement with the deterministic big-step semantics.
 
 ## Depends on
 
-- [Cmd](../syntax/cmd.md)
-- [Denote](denote.md)
-- [State](../syntax/state.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Relational denotational semantics of IMP](denote.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [Big Step](../big-step/big-step.md)
-- [Deterministic](../big-step/deterministic.md)
-- [Iff big Step](iff-big-step.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Determinism of IMP big-step semantics](../big-step/deterministic.md)
+- [Agreement of the denotational and big-step semantics of IMP](iff-big-step.md)
 
 ## Sources
 

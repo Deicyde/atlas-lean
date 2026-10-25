@@ -12,11 +12,11 @@ wait-for edges.
 
 ## Depends on
 
-- [Alloc State](alloc-state.md)
+- [Resource-allocation snapshot](alloc-state.md)
 
 ## Proof depends on
 
-- [Waits For](waits-for.md)
+- [Wait-for relation](waits-for.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.MachineLearning.LatentVariable.ExpectationMaximization.marginal
 ---
 
-# Marginal
+# Marginal of a latent-variable model
 
-The marginal `p_θ(x) = ∑ z, p_θ(x, z)` of a joint model `p` with finite latent space `Z`.
+**Marginal of a latent-variable model.** For a joint model $p$ assigning a real number
+$p_\theta(x, z)$ to each parameter $\theta$, observation $x$ and latent value $z$ in a finite
+latent space $Z$, the marginal is $p_\theta(x) = \sum_{z \in Z} p_\theta(x, z)$.
 
 ## Depends on
 

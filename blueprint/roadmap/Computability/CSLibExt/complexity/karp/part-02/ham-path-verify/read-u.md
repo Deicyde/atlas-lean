@@ -27,7 +27,7 @@ consumes the terminator.
 
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Bit on top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ $(\mathrm{true}, u_1, \mathrm{true}, u_2, \dots, \mathrm{true}, u_k,
 
 ## Depends on
 
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

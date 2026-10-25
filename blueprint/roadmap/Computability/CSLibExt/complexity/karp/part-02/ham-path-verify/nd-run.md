@@ -27,8 +27,8 @@ encoding of $d$ followed by $q$, and $\mathsf{Z}$ is empty.
 - [Witness encoding](../../part-01/ham-path-check/enc-w.md)
 - [Prog](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
@@ -37,7 +37,7 @@ encoding of $d$ followed by $q$, and $\mathsf{Z}$ is empty.
 - [Witness encoding of a nonempty list](../../part-01/ham-path-check/enc-w-cons.md)
 - [One step of the emptiness test](if-e-run.md)
 - [Moving a stack of bits](mv-run.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

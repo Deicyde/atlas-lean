@@ -41,7 +41,7 @@ $k$, $q$ becomes the bits of all arcs of the construction for $\varphi$, and $G$
 - [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -49,7 +49,7 @@ $k$, $q$ becomes the bits of all arcs of the construction for $\varphi$, and $G$
 - [Name of a variable in the HAMPATH emitter](../ham-path-emit-machine/name.md)
 - [Bits of concatenated edge lists](../ham-path-check/edge-bits-append.md)
 - [Tops are monotone in the diamond index](../ham-path/hp-t-mono.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

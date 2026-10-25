@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.not_mem_delete
 ---
 
-# Not mem delete
+# The deleted key is absent after deletion from a B-tree
 
-The deleted key is absent from the result.
+**The deleted key is absent after deletion from a B-tree.** Let $t \ge 2$ and let $T$ be a
+B-tree of minimum degree $t$ over a linearly ordered key type. For every key $x$, $x$ does not
+belong to the tree obtained from $T$ by deleting $x$ (with minimum degree $t$).
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Is BTree](../../btree-2/is-btree.md)
-- [Mem](../../btree-2/mem.md)
-- [Delete](delete.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [B-trees of a given minimum degree](../../btree-2/is-btree.md)
+- [Membership in a B-tree](../../btree-2/mem.md)
+- [Top-down B-tree deletion](delete.md)
 
 ## Proof depends on
 
-- [Mem delete](mem-delete.md)
+- [Membership after deletion from a B-tree](mem-delete.md)
 
 ## Sources
 

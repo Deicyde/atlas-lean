@@ -6,10 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.ComplexityTheory.DecisionProblem
 ---
 
-# Decision Problem
+# Decision problems
 
-The type of decision problems: functions from lists of booleans to
-booleans. Inlined from FormalConjectures (absent from Mathlib).
+**Decision problems.** A decision problem is a function from finite lists of booleans
+(bitstrings) to booleans.
 
 ## Depends on
 
@@ -18,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.Complexity](../../../../sources/v2/MathlibExt.md)
+- inlined from FormalConjectures (absent from Mathlib).

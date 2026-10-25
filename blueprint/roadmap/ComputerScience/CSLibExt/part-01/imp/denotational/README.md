@@ -6,17 +6,17 @@ navigation: module
 
 ## IMP
 
-- [While Fun](while-fun.md)
-- [While Fun mono](while-fun-mono.md)
-- [While Order Hom](while-order-hom.md)
-- [Denote](denote.md)
+- [One-step unfolding functional of a while loop](while-fun.md)
+- [Monotonicity of the while-loop unfolding functional](while-fun-mono.md)
+- [The while-loop functional as a monotone map](while-order-hom.md)
+- [Relational denotational semantics of IMP](denote.md)
 
 ## Denote
 
-- [While eq](while-eq.md)
-- [While iff](while-iff.md)
-- [While ind](while-ind.md)
-- [Big Step of denote](big-step-of-denote.md)
-- [Denote of big Step](denote-of-big-step.md)
-- [Iff big Step](iff-big-step.md)
-- [Deterministic](deterministic.md)
+- [The while denotation is a fixed point](while-eq.md)
+- [Unfolding equation for the while denotation](while-iff.md)
+- [Park induction for while loops](while-ind.md)
+- [Denotational executions are big-step executions](big-step-of-denote.md)
+- [Big-step executions are denotational executions](denote-of-big-step.md)
+- [Agreement of the denotational and big-step semantics of IMP](iff-big-step.md)
+- [The denotational semantics of IMP is deterministic](deterministic.md)

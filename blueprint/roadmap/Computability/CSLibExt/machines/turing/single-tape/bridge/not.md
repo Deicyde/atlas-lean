@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Decidability.SingleTapeDecidable.not
 ---
 
-# Not
+# Single-tape decidable predicates are closed under complement
 
-The complement of a decidable predicate is decidable.
+**Single-tape decidable predicates are closed under complement.** Let $\alpha$ be a
+primcodable type (it has an encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is
+primitive recursive). If a predicate $p$ on $\alpha$ is decidable by a single-tape machine, then so
+is its complement $\neg p$.
 
 ## Depends on
 
-- [Single Tape Decidable](../classes/single-tape-decidable.md)
+- [Predicates decidable by a single-tape Turing machine](../classes/single-tape-decidable.md)
 
 ## Proof depends on
 
-- [Single-tape decidability is Mathlib's `ComputablePred`](single-tape-decidable-iff-computable-pre.md)
+- [Single-tape decidable predicates are exactly the computable predicates](single-tape-decidable-iff-computable-pre.md)
 
 ## Sources
 

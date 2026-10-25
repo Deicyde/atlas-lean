@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.neighbors_nodup
 ---
 
-# Neighbors nodup
+# Out-neighbor lists have no duplicates
 
-The neighbor list has no duplicate vertices.
+**Out-neighbor lists have no duplicates.** For an adjacency matrix $m$ on the vertex set
+$\{0, \dots, n-1\}$ and a vertex $i$, no vertex occurs twice in the out-neighbor list of $i$.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
-- [Neighbors](neighbors.md)
+- [Adjacency matrix](adjacency-matrix.md)
+- [Out-neighbor list](neighbors.md)
 
 ## Proof depends on
 
-- [Has Edge](has-edge.md)
+- [Edge query of an adjacency matrix](has-edge.md)
 
 ## Sources
 

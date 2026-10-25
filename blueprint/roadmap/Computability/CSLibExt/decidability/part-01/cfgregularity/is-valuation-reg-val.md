@@ -24,9 +24,9 @@ contained in $V(A)$.
 - [Alphabet of the reduction from universality to regularity](letter.md)
 - [Grammar of the reduction from universality to regularity](reg-grammar.md)
 - [Reg Val](reg-val.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Is Valuation](../../../languages/context-free/part-01/basic/is-valuation.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Valuation of a grammar](../../../languages/context-free/part-01/basic/is-valuation.md)
 
 ## Proof depends on
 
@@ -36,13 +36,13 @@ contained in $V(A)$.
 - [Shift Rule](shift-rule.md)
 - [Alphabet letters in the extended alphabet](tl.md)
 - [The language $\{0^n 1^n\}$](zero-one.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
-- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
-- [Eval Symbol](../../../languages/context-free/part-01/basic/eval-symbol.md)
-- [Is Valuation language From](../../../languages/context-free/part-01/basic/is-valuation-language-from.md)
-- [Language From](../../../languages/context-free/part-01/basic/language-from.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
+- [Interpretation of a sentential form](../../../languages/context-free/part-01/basic/eval-form.md)
+- [Interpretation of a grammar symbol](../../../languages/context-free/part-01/basic/eval-symbol.md)
+- [The languages generated from each nonterminal form a valuation](../../../languages/context-free/part-01/basic/is-valuation-language-from.md)
+- [Language generated from a nonterminal](../../../languages/context-free/part-01/basic/language-from.md)
 
 ## Sources
 

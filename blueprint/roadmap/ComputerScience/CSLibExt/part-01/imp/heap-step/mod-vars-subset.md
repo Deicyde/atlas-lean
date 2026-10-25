@@ -6,26 +6,27 @@ proof: formalized
 lean: Cslib.IMP.HStep.modVars_subset
 ---
 
-# Mod Vars subset
+# Steps do not enlarge the modified variables
 
-A step never enlarges the set of variables the remaining command
-may assign to.
+**Steps do not enlarge the modified variables.** Write $\mathrm{mod}(c)$ for the set of
+variables a heap command $c$ may assign to. If the configuration $(c, s, h)$ takes a small step to
+$(c', s', h')$, then $\mathrm{mod}(c') \subseteq \mathrm{mod}(c)$.
 
 ## Depends on
 
-- [HStep](hstep.md)
+- [Small-step semantics of heap commands](hstep.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](heap-cmd.md)
-- [Mod Vars](mod-vars.md)
-- [State](../syntax/state.md)
+- [Heap commands](heap-cmd.md)
+- [Modified variables of a heap command](mod-vars.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [HConfig](hconfig.md)
+- [Heap configurations](hconfig.md)
 
 ## Sources
 

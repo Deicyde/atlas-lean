@@ -15,7 +15,7 @@ empties $k_i$. For $i \ge m$ it sets the state to store the flag bit false and h
 
 ## Depends on
 
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 
 ## Proof depends on
 

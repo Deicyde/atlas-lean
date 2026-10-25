@@ -35,7 +35,7 @@ construction to the clauses of $C_s$ in order.
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -47,7 +47,7 @@ construction to the clauses of $C_s$ in order.
 - [Adding a literal occurrence in the 3-COLOR construction](../color/col-occ.md)
 - [OR gadget of the 3-COLOR construction](../color/col-or.md)
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

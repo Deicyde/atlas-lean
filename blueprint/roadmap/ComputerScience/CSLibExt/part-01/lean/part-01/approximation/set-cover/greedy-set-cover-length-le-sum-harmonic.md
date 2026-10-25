@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.greedySetCover_length_le_sum_harmonic
 ---
 
-# Greedy Set Cover length le sum harmonic
+# Potential bound for greedy set cover
 
-The potential bound: for every cover `C*` of `U` drawn from `F`, the greedy cover has at most
-`∑_{S ∈ C*} H(|S ∩ U|)` sets.
+**Potential bound for greedy set cover.** Let $F$ be a list of finite sets, $U$ a finite set,
+and $H(n) = 1 + \frac12 + \dots + \frac1n$ the $n$-th harmonic number. For every list $C^*$ of
+members of $F$ that together cover $U$, the list of sets returned by the greedy set cover
+algorithm on $F$ and $U$ has length at most $\sum_{S \in C^*} H(|S \cap U|)$, where the sum
+runs over the list $C^*$ with repetitions.
 
 ## Depends on
 
-- [Greedy Set Cover](greedy-set-cover.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
-- [Best Set](best-set.md)
-- [Card le sum card inter](card-le-sum-card-inter.md)
-- [Div le harmonic sub](div-le-harmonic-sub.md)
+- [Greedy choice of a set](best-set.md)
+- [Covering bound by intersections](card-le-sum-card-inter.md)
+- [Lower bound for a difference of harmonic numbers](div-le-harmonic-sub.md)
 
 ## Sources
 

@@ -49,9 +49,9 @@ bits, whose labels act as follows; the counters $A$, $B$, $D$ use a fixed unit s
 - [Test for the moved bit true](is-v.md)
 - [Fixed no-instance](../../part-01/clique/no-kg.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Emit](../../../../../MathlibExt/turing-machine/program/emit.md)
-- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
+- [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

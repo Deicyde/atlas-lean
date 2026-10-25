@@ -48,7 +48,7 @@ $a$ under the reduction built from $V$ and $p$ is in CNF-SAT.
 - [Dense decoding of CNF formulas](../../dense-sat/decode-cnf.md)
 - [Decoding inverts the dense encoding](../../dense-sat/decode-cnf-encode-cnf.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Eval mono](../../../../MathlibExt/turing-machine/composition/eval-mono.md)
+- [Evaluation of a natural-number polynomial is monotone](../../../../MathlibExt/turing-machine/composition/eval-mono.md)
 
 ## Sources
 

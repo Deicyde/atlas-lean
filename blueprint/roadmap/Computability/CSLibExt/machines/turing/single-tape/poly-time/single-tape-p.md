@@ -7,18 +7,20 @@ lean: Cslib.Complexity.SingleTapeP
 
 # Polynomial time on single-tape machines
 
-**Polynomial time on single-tape machines.** A decision problem `L` is in `SingleTapeP` when a
-CSLib single-tape machine over a finite alphabet, reading the input word `w` through an injective
-copy `ι` of the bits, halts on the one-cell tape `ι (L w)` within `p |w|` steps, for a polynomial
-`p`.
+**Polynomial time on single-tape machines.** The class of decision problems $L$ for which
+there are a finite alphabet $\Sigma$ with a designated default element, an injective map $\iota$
+from the bits to $\Sigma$, a single-tape Turing machine $M$ over $\Sigma$ and a polynomial $p$
+with natural-number coefficients such that, for every bit list $w$, the machine $M$ started on the
+word $\iota(w)$ (the bits of $w$ mapped by $\iota$) halts on the one-cell tape $\iota(L(w))$
+within $p(|w|)$ steps.
 
 ## Depends on
 
-- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Complexity classes](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 
 ## Proof depends on
 
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_of_N_eq_zero
 ---
 
-# Log Lik of N eq zero
+# The log-likelihood of no data is zero
 
-With no data the log-likelihood is zero.
+**The log-likelihood of no data is zero.** For the empty data set ($N = 0$), the
+probabilistic PCA log-likelihood at every $\mu \in \mathbb{R}^d$, every real $d \times q$ matrix
+$W$ and every real number $\sigma^2$ is $0$.
 
 ## Depends on
 
-- [Log Lik](log-lik.md)
+- [Probabilistic PCA log-likelihood](log-lik.md)
 
 ## Proof depends on
 
-- [Ppca Cov](ppca-cov.md)
+- [Probabilistic PCA covariance](ppca-cov.md)
 - [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources

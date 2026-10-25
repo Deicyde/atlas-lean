@@ -33,7 +33,7 @@ the binary encoding of the binary-index translation of $\varphi$.
 - [Binary code of a literal](../../cook-levin/encode-lit.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Rep](../../../MathlibExt/turing-machine/program/rep.md)
+- [Repeated block](../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

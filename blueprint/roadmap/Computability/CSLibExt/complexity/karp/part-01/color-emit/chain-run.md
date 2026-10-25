@@ -28,7 +28,7 @@ $j_1, \dots, j_k$ at $m$ placed on top of the output stack.
 - [The 3-COLOR emitter machine](prog.md)
 - [Stack alphabets of the 3-coloring emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -38,7 +38,7 @@ $j_1, \dots, j_k$ at $m$ placed on top of the output stack.
 - [Counters read by copy sites](src.md)
 - [Bit list of a copy site of the 3-COLOR emitter](atom.md)
 - [Running a copy site of the 3-COLOR emitter](site-run.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

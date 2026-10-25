@@ -13,7 +13,7 @@ than the Baum-Welch update.
 
 ## Depends on
 
-- [Em Q](../../latent-variable/expectation-maximization/em-q.md)
+- [The EM objective](../../latent-variable/expectation-maximization/em-q.md)
 - [Rich](rich.md)
 - [Valid HMM](valid-hmm.md)
 - [Em Step](em-step.md)
@@ -22,9 +22,9 @@ than the Baum-Welch update.
 ## Proof depends on
 
 - [The weighted log-likelihood is bounded by its value at the normalized counts](../../latent-variable/bernoulli-mixture/sum-mul-log-le-sum-mul-log-div.md)
-- [Is Dist posterior](../../latent-variable/expectation-maximization/is-dist-posterior.md)
-- [Marginal](../../latent-variable/expectation-maximization/marginal.md)
-- [Posterior](../../latent-variable/expectation-maximization/posterior.md)
+- [Posteriors are probability distributions](../../latent-variable/expectation-maximization/is-dist-posterior.md)
+- [Marginal of a latent-variable model](../../latent-variable/expectation-maximization/marginal.md)
+- [Posterior of a latent-variable model](../../latent-variable/expectation-maximization/posterior.md)
 - [Valid](valid.md)
 - [Em Q eq](em-q-eq.md)
 - [Emit Count](emit-count.md)

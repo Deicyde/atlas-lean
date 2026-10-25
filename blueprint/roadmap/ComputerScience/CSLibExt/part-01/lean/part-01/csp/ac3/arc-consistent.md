@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.ArcConsistency.ArcConsistent
 ---
 
-# Arc Consistent
+# Arc consistency
 
-The arc `(x, y)` is consistent: every value of `x` has a support in the domain of `y`.
+**Arc consistency.** Given a binary CSP $P$ and domains $\mathrm{dom}$, an arc $(x, y)$ is
+consistent when for every value $a \in \mathrm{dom}(x)$ there is a value $b \in \mathrm{dom}(y)$
+such that the arc $(x, y)$ allows $x = a$ together with $y = b$.
 
 ## Depends on
 
-- [Binary CSP](binary-csp.md)
+- [Binary constraint satisfaction problem](binary-csp.md)
 
 ## Sources
 

@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BallTree.mem_search_iff
 ---
 
-# Mem search iff
+# Search of a valid ball tree
 
-Membership in the search of a valid tree, stated on its point list.
+**Search of a valid ball tree.** Let $t$ be a ball tree satisfying the bounding-sphere
+invariant. For all $q, p \in \mathbb{Z}^d$ and every natural number $r$, $p$ is returned by the
+similarity search of $t$ with query $q$ and squared radius $r$ if and only if $p$ is one of the
+points stored in $t$ and the squared distance from $q$ to $p$ is at most $r$.
 
 ## Depends on
 
-- [Ball Tree](ball-tree.md)
-- [Valid](valid.md)
-- [Dist Sq](dist-sq.md)
-- [Search](search.md)
-- [To List](to-list.md)
+- [Ball tree](ball-tree.md)
+- [Bounding-sphere invariant of a ball tree](valid.md)
+- [Squared Euclidean distance](dist-sq.md)
+- [Ball-tree similarity search](search.md)
+- [Point list of a ball tree](to-list.md)
 
 ## Proof depends on
 
-- [Search eq filter](search-eq-filter.md)
+- [Ball-tree search is exact](search-eq-filter.md)
 
 ## Sources
 

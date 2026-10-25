@@ -6,20 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.IsBTree
 ---
 
-# Is BTree
+# B-trees of a given minimum degree
 
-A tree is a B-tree of minimum degree `t` when `2 ≤ t` (the CLRS Chapter 18
-minimum-degree requirement), it is ordered, and it is root-valid at some height.
-This is the invariant maintained by `insert` and `fromList`.
+**B-trees of a given minimum degree.** A tree $T$ is a B-tree of minimum degree $t$ when
+$t \ge 2$ (the CLRS Chapter 18 minimum-degree requirement), $T$ is ordered, and $T$ is
+root-valid at some height. This is the invariant preserved by insertion and by building a tree
+from a list.
 
 ## Depends on
 
-- [BTree](btree.md)
+- [Raw B-trees](btree.md)
 
 ## Proof depends on
 
-- [Ordered](ordered.md)
-- [Valid Root](valid-root.md)
+- [Ordered B-tree](ordered.md)
+- [Root invariant of a B-tree](valid-root.md)
 
 ## Sources
 

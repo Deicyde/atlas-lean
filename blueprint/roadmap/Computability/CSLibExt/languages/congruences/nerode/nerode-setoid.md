@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Language.nerodeSetoid
 ---
 
-# Nerode Setoid
+# The Nerode setoid
 
-The Setoid of Nerode equivalence classes.
+**The Nerode setoid.** For a language $L$ over an alphabet $\Sigma$, the Nerode setoid of $L$
+is the set $\Sigma^*$ of words equipped with Nerode equivalence for $L$, which is reflexive,
+symmetric and transitive.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nerode Rel](nerode-rel.md)
+- [Nerode equivalence](nerode-rel.md)
 
 ## Sources
 

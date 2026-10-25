@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Language.mapRule_injective
 ---
 
-# Map Rule injective
+# Injective renamings are injective on productions
 
-Renaming with an injective function on nonterminals is injective on
-productions, so renamed rule sets can be formed with `Finset.map`.
+**Injective renamings are injective on productions.** If $f$ is an injective map from
+nonterminals $N$ to nonterminals $N'$, then renaming the nonterminals of productions over $N$ by
+$f$ is injective: two productions with the same renaming are equal.
+
+In particular, renaming a finite set of productions by $f$ merges none of them.
 
 ## Depends on
 
-- [Map Rule](map-rule.md)
+- [Renaming the nonterminals of a production](map-rule.md)
 
 ## Proof depends on
 
-- [Map Symbol](map-symbol.md)
-- [Map Symbol injective](map-symbol-injective.md)
+- [Renaming the nonterminals of a symbol](map-symbol.md)
+- [Injective renamings are injective on symbols](map-symbol-injective.md)
 
 ## Sources
 

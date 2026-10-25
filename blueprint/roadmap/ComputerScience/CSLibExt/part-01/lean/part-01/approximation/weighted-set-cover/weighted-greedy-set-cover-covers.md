@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.weightedGreedySetCover_covers
 ---
 
-# Weighted Greedy Set Cover covers
+# The weighted greedy set cover is a cover
 
-If every element of `U` lies in some set of `F`, the greedy result covers `U`.
+**The weighted greedy set cover is a cover.** Let $F$ be a list of finite sets, $U$ a finite
+set and $w$ any rational cost function on finite sets. If every element of $U$ lies in some set of
+$F$, then every element of $U$ lies in some set chosen by the weighted greedy set cover of $U$ from
+$F$ with costs $w$.
 
 ## Depends on
 
-- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
-- [Best Ratio Set](best-ratio-set.md)
+- [Set with the least cost per new element](best-ratio-set.md)
 
 ## Sources
 

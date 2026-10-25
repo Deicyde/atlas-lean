@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.IMP.terminates_iff_bigStep
 ---
 
-# Terminates iff big Step
+# Equivalence of small-step and big-step semantics
 
-Small-step termination and big-step execution coincide.
+**Equivalence of small-step and big-step semantics.** For every IMP command $c$ and states $s$
+and $s'$, $c$ started in $s$ terminates by small steps in $s'$ if and only if $c$ evaluates from
+$s$ to $s'$ in the big-step semantics.
 
 ## Depends on
 
-- [Big Step](../big-step/big-step.md)
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
-- [Terminates](../small-step/terminates.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
+- [Termination of an IMP command](../small-step/terminates.md)
 
 ## Proof depends on
 
-- [Of terminates](of-terminates.md)
-- [Of big Step](of-big-step.md)
+- [Small-step termination implies big-step evaluation](of-terminates.md)
+- [Big-step executions terminate in small steps](of-big-step.md)
 
 ## Sources
 

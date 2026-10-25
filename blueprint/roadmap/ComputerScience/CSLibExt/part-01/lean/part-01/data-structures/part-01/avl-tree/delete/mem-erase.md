@@ -7,28 +7,32 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.mem_erase
 ---
 
-# Mem erase
+# Keys of an ordered AVL tree after deletion
 
-Deletion from an ordered tree removes exactly the deleted key.
+**Keys of an ordered AVL tree after deletion.** Let $T$ be a binary tree with cached heights
+over a linearly ordered type, ordered as a search tree (every key in a left subtree is smaller,
+and every key in a right subtree is larger, than the key at the node). Then for all keys $x$
+and $y$, $y$ occurs in the tree obtained by deleting $x$ from $T$ if and only if $y$ occurs in
+$T$ and $y \ne x$.
 
 ## Depends on
 
-- [Mem](../../avl-tree-2/mem.md)
-- [Ordered](../../avl-tree-2/ordered.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Erase](erase.md)
+- [Membership in an AVL tree](../../avl-tree-2/mem.md)
+- [Ordered AVL trees](../../avl-tree-2/ordered.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [AVL tree deletion](erase.md)
 
 ## Proof depends on
 
-- [Balance](../../avl-tree-2/balance.md)
-- [Delete Min](delete-min.md)
-- [Erase Min](erase-min.md)
-- [Mem balance](../../avl-tree-2/mem-balance.md)
-- [Mem erase of mem](mem-erase-of-mem.md)
-- [Min D](min-d.md)
-- [Min D mem](min-d-mem.md)
-- [Not mem erase self](not-mem-erase-self.md)
-- [To Binary Tree](../../avl-tree-2/to-binary-tree.md)
+- [AVL rebalancing](../../avl-tree-2/balance.md)
+- [Minimum deletion in an AVL tree](delete-min.md)
+- [Removing the leftmost key of an AVL tree](erase-min.md)
+- [Membership after AVL rebalancing](../../avl-tree-2/mem-balance.md)
+- [AVL deletion keeps every other key](mem-erase-of-mem.md)
+- [Leftmost key of a tree](min-d.md)
+- [The leftmost key lies in the tree](min-d-mem.md)
+- [Deletion removes the deleted key from an ordered AVL tree](not-mem-erase-self.md)
+- [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
 - [Mem](../../../part-02/binary-search-tree/mem.md)
 
 ## Sources

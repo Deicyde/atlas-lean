@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Term.rename_rename
 ---
 
-# Rename rename
+# Composition of renamings
 
-Composition of renamings.
+**Composition of renamings.** For all renamings $\rho, \rho' : \mathbb{N} \to \mathbb{N}$ of
+de Bruijn variables and every term $t$ of the simply typed lambda calculus with references,
+renaming $t$ by $\rho$ and then renaming the result by $\rho'$ gives the same term as renaming $t$
+by the composite $\rho' \circ \rho$.
 
 ## Depends on
 
-- [Term](../syntax/term.md)
-- [Rename](../syntax/rename.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Renaming the variables of a term](../syntax/rename.md)
 
 ## Proof depends on
 
-- [Lift Ren](../syntax/lift-ren.md)
-- [Rename congr](rename-congr.md)
-- [Ty](../syntax/ty.md)
+- [Lifting a renaming under a binder](../syntax/lift-ren.md)
+- [Renaming respects pointwise equality](rename-congr.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

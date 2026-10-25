@@ -20,11 +20,11 @@ that have an entry in $ps$.
 - [Agreement off a set of stacks](fr.md)
 - [K](k.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
-- [Add U](../../../MathlibExt/turing-machine/program/add-u.md)
+- [Adding units to target stacks](../../../MathlibExt/turing-machine/program/add-u.md)
 
 ## Proof depends on
 
-- [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

@@ -12,11 +12,11 @@ lean: Cslib.Language.IsRegular.cyclicShift
 
 ## Depends on
 
-- [Cyclic Shift](cyclic-shift.md)
+- [Cyclic shift of a language](cyclic-shift.md)
 
 ## Proof depends on
 
-- [From To](from-to.md)
+- [Words leading a DFA from a state into a set of states](from-to.md)
 
 ## Sources
 

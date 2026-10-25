@@ -30,8 +30,8 @@ lean: Cslib.Complexity.CookLevin.Precompute.cprog
 - [The statements of one Horner round](horn-s.md)
 - [Power-loop program](pow-s.md)
 - [Unit targets of a multi-target transfer](tg.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

@@ -6,21 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Concurrency.Banker.System.safe_iff_safe_erase
 ---
 
-# Safe iff safe erase
+# Letting a process that fits finish preserves safety
 
-Once a pending process that fits has finished, safety of the remaining
-processes is equivalent to safety of all of them.
+**Letting a process that fits finish preserves safety.** Let $S$ be a system of processes
+with maximum claims and current allocations, $w$ a vector of free resources (a natural number
+for each resource type) and $L$ a list of pending processes without repetitions. If $p$ occurs in
+$L$ and its remaining need $\mathrm{need}(p)$ in $S$ satisfies $\mathrm{need}(p) \le w$
+componentwise, then $S$ is safe from $w$ for $L$ if and only if $S$ is safe from
+$w + \mathrm{alloc}(p)$ for the list obtained from $L$ by removing $p$, where
+$\mathrm{alloc}(p)$ is the current allocation of $p$ and the sum is taken componentwise.
 
 ## Depends on
 
-- [System](system.md)
-- [Safe](safe.md)
-- [Need](need.md)
+- [Claims and allocations of processes](system.md)
+- [Safe state](safe.md)
+- [Remaining need](need.md)
 
 ## Proof depends on
 
-- [Safe Seq](safe-seq.md)
-- [Erase](erase.md)
+- [Safe sequence](safe-seq.md)
+- [Removing a process from a safe sequence](erase.md)
 
 ## Sources
 

@@ -8,19 +8,26 @@ lean: Cslib.MachineLearning.Bayesian.posterior_eq_bayesPosterior
 
 # Bayes' rule for discrete observations
 
-**Bayes' rule for discrete observations.** For a countable observation space, Mathlib's
-posterior kernel `κ†μ` is, at every observation of positive evidence, the prior reweighted by the
-likelihood and normalized by the evidence.
+**Bayes' rule for discrete observations.** Let the parameter space $\Theta$ be a nonempty
+standard Borel space and the observation space $\mathcal X$ be countable with measurable
+singletons. Let $\kappa$ be a Markov kernel from $\Theta$ to $\mathcal X$ (the likelihood),
+writing $\kappa_\theta$ for the probability measure it assigns to $\theta \in \Theta$, let $\mu$
+be a finite measure on $\Theta$ (the prior), and let $\kappa^\dagger\mu$ be Mathlib's posterior
+kernel from $\mathcal X$ to $\Theta$. If the observation $x \in \mathcal X$ has nonzero evidence
+$(\kappa \circ \mu)(\{x\})$, where $\kappa \circ \mu$ is the law of the observation under the
+prior, then the posterior measure $\kappa^\dagger\mu(x)$ equals the Bayes posterior after
+observing $x$: the prior $\mu$ reweighted by the likelihood $\theta \mapsto \kappa_\theta(\{x\})$
+and divided by the evidence.
 
 ## Depends on
 
-- [Bayes Posterior](bayes-posterior.md)
+- [Bayes posterior](bayes-posterior.md)
 
 ## Proof depends on
 
-- [Bayes Kernel](bayes-kernel.md)
-- [Comp apply singleton](comp-apply-singleton.md)
-- [Comp mul bayes Posterior](comp-mul-bayes-posterior.md)
+- [Bayes posterior kernel](bayes-kernel.md)
+- [The evidence is the integral of the likelihood](comp-apply-singleton.md)
+- [Evidence times posterior is the joint mass](comp-mul-bayes-posterior.md)
 
 ## Sources
 

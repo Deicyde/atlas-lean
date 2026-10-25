@@ -29,7 +29,7 @@ stack is as it started.
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Live value of a name in a table](../sat-verifier-spec/live-val.md)
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -38,7 +38,7 @@ stack is as it started.
 - [The scan loop of the lookup machine](scan-loop.md)
 - [Stack contents of the lookup machine](stk.md)
 - [Symbols of a table entry](../sat-verifier-spec/ent-toks.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

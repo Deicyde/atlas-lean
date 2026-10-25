@@ -21,14 +21,14 @@ $i < m$.
 - [The continuation production](../cfgundecidable/cont-rule.md)
 - [The terminating production of a side grammar](../cfgundecidable/term-rule.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 
 ## Proof depends on
 
 - [Encoded nonterminal symbol](../cfgundecidable/nt-sym.md)
 - [The productions of a side grammar](../cfgundecidable/side-rules.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Sources
 

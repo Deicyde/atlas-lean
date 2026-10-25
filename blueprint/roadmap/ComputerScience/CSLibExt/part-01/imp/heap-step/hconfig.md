@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.IMP.HConfig
 ---
 
-# HConfig
+# Heap configurations
 
-A heap configuration pairs a command with a store and a heap.
+**Heap configurations.** A heap configuration is a triple $(c, s, h)$ of a heap command $c$,
+a store $s$ and a heap $h$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [Heap Cmd](heap-cmd.md)
-- [State](../syntax/state.md)
+- [Heap commands](heap-cmd.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

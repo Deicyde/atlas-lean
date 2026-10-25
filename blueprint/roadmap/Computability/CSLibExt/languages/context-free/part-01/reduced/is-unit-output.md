@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Language.IsUnitOutput
 ---
 
-# Is Unit Output
+# Unit output
 
-A form is a unit output when it consists of a single nonterminal.
+**Unit output.** A sentential form is a unit output when it consists of a single
+nonterminal.
 
 ## Depends on
 

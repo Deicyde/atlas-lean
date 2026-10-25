@@ -56,11 +56,11 @@ theorem clauses_fail : ∀ (n : ℕ) (r w : List Bool) (t b : List Sym) (v : Boo
 - [Labels of the SAT tokenizer](lab.md)
 - [The tokenizer program](prog.md)
 - [Tokenizer stack contents](st.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

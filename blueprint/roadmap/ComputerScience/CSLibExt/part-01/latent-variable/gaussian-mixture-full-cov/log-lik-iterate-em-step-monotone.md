@@ -13,17 +13,17 @@ mixture.
 
 ## Depends on
 
-- [Log Lik](../expectation-maximization/log-lik.md)
-- [Spans Affinely](spans-affinely.md)
-- [Valid Params](valid-params.md)
-- [Em Step](em-step.md)
-- [Joint](joint.md)
+- [Log-likelihood of a latent-variable model](../expectation-maximization/log-lik.md)
+- [Data that span the space affinely](spans-affinely.md)
+- [Valid parameters of a full-covariance Gaussian mixture](valid-params.md)
+- [EM step for the full-covariance Gaussian mixture](em-step.md)
+- [Joint density of the full-covariance Gaussian mixture](joint.md)
 
 ## Proof depends on
 
 - [EM iterates have monotone likelihood](../expectation-maximization/log-lik-iterate-monotone.md)
-- [Params](params.md)
-- [Valid](valid.md)
+- [Parameters of a full-covariance Gaussian mixture](params.md)
+- [Validity of full-covariance Gaussian mixture parameters](valid.md)
 - [The M-step maximizes `Q(· | θ)`](em-q-le-em-step.md)
 - [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 

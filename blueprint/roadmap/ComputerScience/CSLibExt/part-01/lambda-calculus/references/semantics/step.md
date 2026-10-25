@@ -13,7 +13,7 @@ Figure 13-1 with fresh locations allocated at `μ.length`.
 ## Depends on
 
 - [Store](store.md)
-- [Term](../syntax/term.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 
 ## Sources
 

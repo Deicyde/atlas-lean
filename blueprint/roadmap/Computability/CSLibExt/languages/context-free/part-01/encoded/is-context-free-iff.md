@@ -13,14 +13,14 @@ it.**
 
 ## Depends on
 
-- [Encoded CFG](encoded-cfg.md)
-- [Language](language.md)
+- [Encoded context-free grammars](encoded-cfg.md)
+- [Language of an encoded grammar](language.md)
 
 ## Proof depends on
 
-- [Language is Context Free](language-is-context-free.md)
+- [Encoded grammars generate context-free languages](language-is-context-free.md)
 - [The encoding of a grammar generates the same language](language-of-cfg.md)
-- [Of CFG](of-cfg.md)
+- [Encoding of a context-free grammar](of-cfg.md)
 
 ## Sources
 

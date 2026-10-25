@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.TM2Recursive.stepC
 ---
 
-# Step C
+# The coded step
 
-The coded step.
+**The coded step.** For a coded configuration $(l, v, S)$, consisting of an optional label $l$,
+an internal state $v$ and coded stacks $S$, the coded step is undefined when $l$ is absent (the
+configuration has halted). When $l$ is a label, it is the coded configuration obtained by the coded
+execution of the program statement of $l$ from the internal state $v$ on the coded stacks $S$.
 
 ## Depends on
 
-- [Coded Cfg](coded-cfg.md)
+- [Coded configurations of a multi-stack machine](coded-cfg.md)
 
 ## Proof depends on
 
-- [Step Aux C](step-aux-c.md)
+- [The coded execution of a statement](step-aux-c.md)
 
 ## Sources
 

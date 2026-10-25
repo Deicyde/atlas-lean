@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Turing.Universal.Diag.Readout.K
 ---
 
-# K
+# Stacks of the readout machine
 
-The stacks of the readout machine: the input `X` and the output `O`.
+**Stacks of the readout machine.** The readout machine, which reads the answer of the
+diagonal language off the output of the clocked universal machine, has exactly two stacks: the
+input stack $X$ and the output stack $O$.
 
 ## Depends on
 

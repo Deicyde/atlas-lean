@@ -33,8 +33,8 @@ $post$, and $T$, $A$ and $C$ are unchanged.
 - [Symbols of a table entry](../sat-verifier-spec/ent-toks.md)
 - [Live value of a name in a table](../sat-verifier-spec/live-val.md)
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
-- [Ends Bit Block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [End of a bit block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -42,8 +42,8 @@ $post$, and $T$, $A$ and $C$ are unchanged.
 - [Moving a symbol between stacks](mv-sym.md)
 - [Next label of the lookup scan](scan-next.md)
 - [Closing marker of a table entry](../sat-verifier-spec/mark-of.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

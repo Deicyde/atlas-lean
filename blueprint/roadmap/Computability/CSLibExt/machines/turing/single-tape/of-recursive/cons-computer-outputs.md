@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.consComputer_outputs
 ---
 
-# Cons Computer outputs
+# Correctness of the prepending machine
 
-`consComputer c` outputs `c :: l` on `l`.
+**Correctness of the prepending machine.** For every symbol $c$ and every word $l$, the
+machine that prepends $c$, started on $l$, halts with output the word $c$ followed by $l$.
 
 ## Depends on
 
-- [Cons Computer](cons-computer.md)
+- [The machine that prepends a symbol](cons-computer.md)
 
 ## Proof depends on
 
-- [Cons Computer outputs Within Time](cons-computer-outputs-within-time.md)
+- [Prepending a symbol takes at most two steps](cons-computer-outputs-within-time.md)
 
 ## Sources
 

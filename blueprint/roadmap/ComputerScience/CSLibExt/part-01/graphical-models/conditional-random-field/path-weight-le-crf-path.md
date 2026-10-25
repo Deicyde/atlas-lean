@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.MachineLearning.GraphicalModels.ConditionalRandomField.pathWeight_le_crfPath
 ---
 
-# The Viterbi path is a most probable path
+# The Viterbi path of a chain CRF has maximal weight
 
-**The Viterbi path is a most probable path**: no path weighs more.
+**The Viterbi path of a chain CRF has maximal weight.** For a chain conditional random field
+with states $0, \dots, n - 1$ where $n \ge 1$, weights in a linearly ordered commutative
+semiring, and an observation stream $x$, for every $t$ and every label path $z$ of length
+$t + 1$, the weight of $z$ is at most the weight of Viterbi's MAP path of length $t + 1$.
 
 ## Depends on
 
-- [Chain CRF](chain-crf.md)
-- [Viterbi's MAP path](crf-path.md)
-- [Path Weight](path-weight.md)
+- [Linear-chain conditional random field](chain-crf.md)
+- [The Viterbi path of a chain CRF](crf-path.md)
+- [Weight of a label path in a chain CRF](path-weight.md)
 
 ## Proof depends on
 
-- [Best Path](best-path.md)
-- [Path Weight best Path](path-weight-best-path.md)
-- [Path Weight le viterbi](path-weight-le-viterbi.md)
-- [Viterbi](viterbi.md)
-- [Viterbi Tab](viterbi-tab.md)
+- [Backtracked path of the tabulated CRF Viterbi algorithm](best-path.md)
+- [The backtracked path attains the Viterbi variable](path-weight-best-path.md)
+- [Path weights are bounded by the Viterbi variables](path-weight-le-viterbi.md)
+- [The Viterbi variables of a chain CRF](viterbi.md)
+- [The tabulated Viterbi variables of a chain CRF](viterbi-tab.md)
 - [Argmax Fin](../../sequence/hidden-markov/argmax-fin.md)
 - [Argmax Vec](../../sequence/hidden-markov/argmax-vec.md)
 

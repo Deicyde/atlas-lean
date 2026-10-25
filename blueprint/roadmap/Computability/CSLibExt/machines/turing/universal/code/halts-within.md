@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Turing.Universal.HaltsWithin
 ---
 
-# Halts Within
+# Bounded halting of a single-tape machine
 
-`HaltsWithin M l T`: started on `l`, the `TM0` machine `M` reaches a configuration without a
-successor after at most `T` steps.
+**Bounded halting of a single-tape machine.** A single-tape Turing machine $M$ halts within
+$T$ steps on a word $l$ when, started in its initial state with $l$ on the tape and the head on
+the first letter of $l$ (on a blank if $l$ is empty), it reaches after some $j \le T$ steps a
+configuration that has no successor.
 
 ## Depends on
 

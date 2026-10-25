@@ -30,19 +30,19 @@ and again the stacks of $s$.
 - [Stack alphabets of the HAMPATH emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
-- [Cmp B](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b.md)
-- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Bit-block comparison statement](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b.md)
+- [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Proof depends on
 
 - [Running a chain of copy sites in the HAMPATH emitter](bit-inv.md)
-- [Distinct4](../../../../../MathlibExt/turing-machine/bit-ops/distinct4.md)
-- [Is Bit Block](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Comparison](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b-run.md)
-- [Restoring after `cmpB`](../../../../../MathlibExt/turing-machine/bit-ops/move-b-restore.md)
+- [Four pairwise distinct stacks](../../../../../MathlibExt/turing-machine/bit-ops/distinct4.md)
+- [Bit blocks](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Correctness of the bit-block comparison](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b-run.md)
+- [Restoring a stack after a comparison](../../../../../MathlibExt/turing-machine/bit-ops/move-b-restore.md)
 
 ## Sources
 

@@ -13,13 +13,13 @@ symbol under the head of its final tape.
 
 ## Depends on
 
-- [Single Tape Decidable](../classes/single-tape-decidable.md)
+- [Predicates decidable by a single-tape Turing machine](../classes/single-tape-decidable.md)
 
 ## Proof depends on
 
-- [Outputs iff mem eval](outputs-iff-mem-eval.md)
+- [Outputs are the ends of runs](outputs-iff-mem-eval.md)
 - [The final tape of a run is partial recursive in the input word](partrec-eval.md)
-- [Primrec map encode Nat](primrec-map-encode-nat.md)
+- [Binary codes of natural numbers in a tape alphabet are primitive recursive](primrec-map-encode-nat.md)
 
 ## Sources
 

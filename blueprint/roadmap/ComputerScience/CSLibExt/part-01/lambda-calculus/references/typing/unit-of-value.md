@@ -6,16 +6,17 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.HasType.unit_of_value
 ---
 
-# Unit of value
+# Canonical forms for the unit type
 
-Canonical forms for `Unit`: the only value of type `Unit` is `unit`.
+**Canonical forms for the unit type.** For every context $\Gamma$ and store typing $S$, if
+$v$ is a value and $\Gamma \mid S \vdash v : \mathrm{Unit}$, then $v = \mathtt{unit}$.
 
 ## Depends on
 
-- [Has Type](has-type.md)
-- [Term](../syntax/term.md)
-- [Value](../syntax/value.md)
-- [Ty](../syntax/ty.md)
+- [Typing judgment for the lambda calculus with references](has-type.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

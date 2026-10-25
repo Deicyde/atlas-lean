@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Undelimit](../../MathlibExt/complexity/undelimit.md)
+- [Parsing one self-delimiting block](../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

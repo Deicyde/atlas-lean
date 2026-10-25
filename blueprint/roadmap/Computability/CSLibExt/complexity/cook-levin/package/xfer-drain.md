@@ -19,14 +19,14 @@ $k$ replaced by the empty list, all other stacks unchanged.
 
 ## Depends on
 
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Proof depends on
 
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
-- [Push All](../../../../MathlibExt/turing-machine/program/push-all.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
+- [Pushing symbols onto several stacks](../../../../MathlibExt/turing-machine/program/push-all.md)
 
 ## Sources
 

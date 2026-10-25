@@ -8,12 +8,15 @@ lean: Cslib.Algorithms.Lean.AStar.aStar_distance_minimal
 
 # A Star distance minimal
 
-**A* is optimal**: no path from the source to `v` is lighter than a finite `g v`.
+**A\* with a consistent heuristic is optimal.** Let $G$ be a directed graph on the vertices
+$\{0, \dots, n-1\}$ with natural edge weights $w$, let $h$ be a consistent heuristic with natural
+values and let $s$ be a source vertex. If the path weight $g(v)$ that A* from $s$ returns for a
+vertex $v$ is finite, then $g(v) \le d$ for every weight $d$ of a path in $G$ from $s$ to $v$.
 
 ## Depends on
 
-- [AStar Result](astar-result.md)
-- [Consistent](consistent.md)
+- [Output of A-star search](astar-result.md)
+- [Consistent heuristic](consistent.md)
 - [A Star](a-star.md)
 - [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
 - [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
@@ -22,7 +25,7 @@ lean: Cslib.Algorithms.Lean.AStar.aStar_distance_minimal
 ## Proof depends on
 
 - [Path Weight reduced Weight](path-weight-reduced-weight.md)
-- [Reduced Weight](reduced-weight.md)
+- [Reduced weight](reduced-weight.md)
 - [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
 - [Edge](../../graph/directed-adjacency-2/edge.md)
 - [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)

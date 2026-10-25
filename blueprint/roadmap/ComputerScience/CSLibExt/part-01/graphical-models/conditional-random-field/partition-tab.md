@@ -5,17 +5,23 @@ statement: formalized
 lean: Cslib.MachineLearning.GraphicalModels.ConditionalRandomField.partitionTab
 ---
 
-# The tabulated forward algorithm
+# The tabulated forward algorithm for chain CRFs
 
-**The tabulated forward algorithm**: the partition function in `O(t n²)` operations.
+**The tabulated forward algorithm for chain CRFs.** For a chain conditional random field with
+states $0, \dots, n - 1$ and weights in a semiring, and an observation stream $x$, the tabulated
+partition function at time $t$ is the sum of the entries of the forward table at time $t$, the
+vector $(\alpha_t(0), \dots, \alpha_t(n - 1))$ of forward variables computed step by step from
+time $0$.
+
+It equals the partition function at time $t$ and takes $O(t n^2)$ operations.
 
 ## Depends on
 
-- [Chain CRF](chain-crf.md)
+- [Linear-chain conditional random field](chain-crf.md)
 
 ## Proof depends on
 
-- [Forward Tab](forward-tab.md)
+- [Tabulated CRF forward algorithm](forward-tab.md)
 - [Sum Vec](../../sequence/hidden-markov/sum-vec.md)
 
 ## Sources

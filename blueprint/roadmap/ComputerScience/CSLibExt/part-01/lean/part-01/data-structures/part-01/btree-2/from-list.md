@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.fromList
 ---
 
-# From List
+# B-tree built from a list
 
-Build a B-tree by inserting the list from right to left into the empty tree.
+**B-tree built from a list.** For a linearly ordered key type and a natural number $t$, the
+tree built from the empty list is the empty tree, and the tree built from a list with head $x$
+and tail $L$ is the result of inserting $x$, with minimum degree $t$, into the tree built from
+$L$. Thus the elements are inserted from right to left.
 
 ## Depends on
 
-- [BTree](btree.md)
+- [Raw B-trees](btree.md)
 
 ## Proof depends on
 
-- [Empty](empty.md)
-- [Insert](insert.md)
+- [The empty B-tree](empty.md)
+- [B-tree insertion](insert.md)
 
 ## Sources
 

@@ -17,8 +17,8 @@ leftmost derivations from its start symbol, if and only if $P$ has a PCP solutio
 - [The ambiguity grammar of a PCP instance](amb-grammar.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
 - [The Post correspondence problem](../pcp/pcp.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Is Ambiguous](../../../languages/context-free/part-01/ambiguity/is-ambiguous.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Ambiguous grammar](../../../languages/context-free/part-01/ambiguity/is-ambiguous.md)
 
 ## Proof depends on
 
@@ -33,7 +33,7 @@ leftmost derivations from its start symbol, if and only if $P$ has a PCP solutio
 - [The side grammar of a PCP instance](../cfgundecidable/side-grammar.md)
 - [The side word of an index sequence](../cfgundecidable/side-word.md)
 - [Start Rule](start-rule.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 - [Left Derivation](../../../languages/context-free/part-01/ambiguity/left-derivation.md)
 
 ## Sources

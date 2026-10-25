@@ -12,12 +12,12 @@ A sentential form yields a word iff it derives that word as terminals.
 
 ## Depends on
 
-- [Yields](yields.md)
+- [Yield of a sentential form](yields.md)
 
 ## Proof depends on
 
-- [Derives of yields](derives-of-yields.md)
-- [Yields of derives](yields-of-derives.md)
+- [Yields are derivable](derives-of-yields.md)
+- [Derivable terminal words are yields](yields-of-derives.md)
 
 ## Sources
 

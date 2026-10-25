@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.increment_time_le
 ---
 
-# Increment time le
+# Increment costs at most the width
 
-Increment changes at most the fixed number of existing bits.
+**Increment costs at most the width.** For every $k$-bit counter $b$ (a vector of $k$ bits,
+lowest bit first), the cost of incrementing $b$ is at most $k$.
 
 ## Depends on
 
-- [Increment](increment.md)
+- [Binary counter increment](increment.md)
 
 ## Sources
 

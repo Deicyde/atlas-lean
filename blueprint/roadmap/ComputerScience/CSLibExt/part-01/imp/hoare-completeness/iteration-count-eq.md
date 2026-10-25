@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.IMP.Iterates.iterationCount_eq
 ---
 
-# Iteration Count eq
+# The iteration count of a terminating loop run
 
-On a terminating loop run, `iterationCount` is the run's iteration
-count.
+**The iteration count of a terminating loop run.** Let $b$ be a Boolean expression, $c$ a
+command, $n$ a natural number and $s$, $s'$ states. If the loop $\mathtt{while}\ b\ \mathtt{do}\ c$,
+started in $s$, exits in $s'$ after exactly $n$ executions of the body $c$, then the iteration
+count of the loop from $s$ is $n$.
 
 ## Depends on
 
-- [BExp](../syntax/bexp.md)
-- [Cmd](../syntax/cmd.md)
-- [Iterates](iterates.md)
-- [State](../syntax/state.md)
-- [Iteration Count](iteration-count.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Loop runs with a given number of iterations](iterates.md)
+- [IMP program states](../syntax/state.md)
+- [Loop iteration count](iteration-count.md)
 
 ## Proof depends on
 
-- [Count unique](count-unique.md)
+- [Uniqueness of the loop iteration count](count-unique.md)
 
 ## Sources
 

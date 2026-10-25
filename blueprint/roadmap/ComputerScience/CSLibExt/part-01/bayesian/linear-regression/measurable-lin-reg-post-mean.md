@@ -6,9 +6,12 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.measurable_linRegPostMean
 ---
 
-# Measurable lin Reg Post Mean
+# The linear regression likelihood is a product of Gaussians
 
-The likelihood is the product of the Gaussian laws of the responses. -/
+**The linear regression likelihood is a product of Gaussians.** Let $\sigma^2 \ge 0$ be
+nonzero, $x \in \mathbb{R}^n$ and $w \in \mathbb{R}$. Given the weight $w$, the linear regression
+likelihood with noise variance $\sigma^2$ and inputs $x$ is the product measure
+$\bigotimes_i \mathcal{N}(w x_i, \sigma^2)$ on $\mathbb{R}^n$. -/
 theorem linRegLikelihood_apply {σ2 : ℝ≥0} (h : σ2 ≠ 0) (x : Fin n → ℝ) (w : ℝ) :
     linRegLikelihood σ2 x w = Measure.pi fun i ↦ gaussianReal (w * x i) σ2 := by
   have : ∀ i, SigmaFinite (volume.withDensity (gaussianPDF (w * x i) σ2)) := fun i ↦ by
@@ -29,7 +32,7 @@ instance {σ2 : ℝ≥0} (x : Fin n → ℝ) : IsMarkovKernel (linRegLikelihood 
 
 ## Depends on
 
-- [Lin Reg Post Mean](lin-reg-post-mean.md)
+- [Posterior mean in Bayesian linear regression](lin-reg-post-mean.md)
 
 ## Sources
 

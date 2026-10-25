@@ -6,21 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.flattenAux
 ---
 
-# Flatten Aux
+# Accumulating flattening of a B-tree
 
-Append the inorder traversal of a tree to an existing suffix in linear
-time: subtrees interleaved with separator keys, accumulated without
-recopying left results. The suffix is built right to left: at an internal
-node the suffix passed to each child already holds everything to its right,
-so `flattenAux child suffix` only prepends that child's keys, and each key
-is copied once (as part of its node's key list at a leaf, or by one `cons`
-for a separator). Children or keys beyond the interleaving pattern of a
-well-formed node are appended in order (see `flatten`), so every key of
+**Accumulating flattening of a B-tree.** Given a raw B-tree $T$ and a list $s$, this returns
+the inorder traversal of $T$ followed by $s$. For a leaf it is the leaf's key list followed by
+$s$. For an internal node with separator keys $k_1, \dots, k_m$ and children $c_0, \dots, c_n$
+it is the sequence $c_0, k_1, c_1, k_2, \dots$, in which children and keys alternate starting
+with a child until one of the two lists runs out, then the remaining keys or children in
+order, and finally $s$; each key contributes itself, and each child contributes its own
+accumulating flattening with everything after it as the suffix. In particular every key of
 the tree occurs in the result.
+
+The result is built from right to left, so each key is copied only once.
 
 ## Depends on
 
-- [BTree](btree.md)
+- [Raw B-trees](btree.md)
 
 ## Sources
 

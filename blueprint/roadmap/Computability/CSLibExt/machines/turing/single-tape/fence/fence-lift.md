@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Turing.SingleTapeTM.fenceLift
 ---
 
-# Fence Lift
+# A transition lifted to the fenced machine
 
-A transition of `tm` as a transition of the fenced machine: a write is written through
-`FenceSymbol.ofCell`, the move is kept, and a state `q` becomes `run q`.
+**A transition lifted to the fenced machine.** A transition of a single-tape machine $M$, made
+of an optional symbol to write, an optional move and an optional next state, becomes the
+transition of the fenced machine of $M$ that writes the symbol, or a right padding cell where $M$
+writes a blank, makes the same move, and goes to the running state of the next state $q$ of $M$,
+or halts where $M$ halts.
 
 ## Depends on
 
-- [Fence State](fence-state.md)
-- [Fence Symbol](fence-symbol.md)
+- [States of the fenced machine](fence-state.md)
+- [Fenced alphabet](fence-symbol.md)
 
 ## Proof depends on
 
-- [Of Cell](of-cell.md)
+- [Fenced cell of a write](of-cell.md)
 
 ## Sources
 

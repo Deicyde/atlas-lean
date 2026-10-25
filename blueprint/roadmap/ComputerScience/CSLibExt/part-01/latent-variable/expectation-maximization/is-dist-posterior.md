@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.MachineLearning.LatentVariable.ExpectationMaximization.isDist_posterior
 ---
 
-# Is Dist posterior
+# Posteriors are probability distributions
 
-The posterior is a distribution.
+**Posteriors are probability distributions.** Let $Z$ be a nonempty finite set and let
+$p_\theta(x, z)$ be real numbers indexed by parameters $\theta$, observations $x$ and latent values
+$z \in Z$, with $p_\theta(x, z) > 0$ for all $\theta$, $x$, $z$. For every parameter $\theta$ and
+observation $x$, the posterior $z \mapsto p_\theta(x, z) / \sum_{z' \in Z} p_\theta(x, z')$ is a
+probability distribution on $Z$: its values are nonnegative and sum to $1$.
 
 ## Depends on
 
-- [Is Dist](is-dist.md)
-- [Posterior](posterior.md)
+- [Probability distributions on a finite latent space](is-dist.md)
+- [Posterior of a latent-variable model](posterior.md)
 
 ## Proof depends on
 
-- [Marginal](marginal.md)
+- [Marginal of a latent-variable model](marginal.md)
 
 ## Sources
 

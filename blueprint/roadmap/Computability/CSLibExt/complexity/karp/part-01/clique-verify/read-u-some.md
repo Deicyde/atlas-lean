@@ -27,13 +27,13 @@ the bit $1$, and every stack other than $X$ and $c$ is as in $S$.
 - [Prog](prog.md)
 - [The clique verifier's unary reader](read-u.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

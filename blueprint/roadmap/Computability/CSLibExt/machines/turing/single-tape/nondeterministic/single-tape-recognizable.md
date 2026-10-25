@@ -14,13 +14,13 @@ machine** (Sipser, Theorem 3.16, through recursion theory).
 ## Depends on
 
 - [Single Tape NTMRecognizable](single-tape-ntmrecognizable.md)
-- [Single Tape Recognizable](../classes/single-tape-recognizable.md)
+- [Predicates recognizable by a single-tape Turing machine](../classes/single-tape-recognizable.md)
 
 ## Proof depends on
 
 - [Acceptance by an NTM with finite state and tape alphabets is r.e](re-pred-accepts.md)
-- [Single-tape recognizability is Mathlib's `REPred`](../bridge/single-tape-recognizable-iff-re-pred.md)
-- [Primrec map encode Nat](../to-recursive/primrec-map-encode-nat.md)
+- [Single-tape recognizable predicates are exactly the r.e. predicates](../bridge/single-tape-recognizable-iff-re-pred.md)
+- [Binary codes of natural numbers in a tape alphabet are primitive recursive](../to-recursive/primrec-map-encode-nat.md)
 
 ## Sources
 

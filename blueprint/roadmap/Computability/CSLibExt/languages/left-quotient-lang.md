@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [The right quotient of a context-free language by a regular language is context-free](context-free/part-01/right-quotient/right-quotient-lang-2.md)
-- [Right Quotient Lang](context-free/part-01/right-quotient/right-quotient-lang.md)
+- [Right quotient of a language by a language](context-free/part-01/right-quotient/right-quotient-lang.md)
 
 ## Sources
 

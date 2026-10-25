@@ -7,24 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.contains_deleteRebuild_iff
 ---
 
-# Contains delete Rebuild iff
+# Search after rebuilding deletion
 
-Search in the result of a deletion agrees with membership in the original
-tree minus the deleted key.
+**Search after rebuilding deletion.** Let $t \ge 2$, let $T$ be a B-tree of minimum degree
+$t$, and let $x$ and $y$ be keys. The B-tree search for $y$ in the rebuilding deletion of $x$
+from $T$ with minimum degree $t$ returns true if and only if $y \ne x$ and $y$ is stored in $T$.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Is BTree](../../btree-2/is-btree.md)
-- [Mem](../../btree-2/mem.md)
-- [Contains](../../btree-2/contains.md)
-- [Delete Rebuild](delete-rebuild.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [B-trees of a given minimum degree](../../btree-2/is-btree.md)
+- [Membership in a B-tree](../../btree-2/mem.md)
+- [B-tree search](../../btree-2/contains.md)
+- [B-tree deletion by rebuilding](delete-rebuild.md)
 
 ## Proof depends on
 
-- [Delete Rebuild](delete-rebuild-2.md)
-- [Contains eq true iff](../../btree-2/contains-eq-true-iff.md)
-- [Mem delete Rebuild](mem-delete-rebuild.md)
+- [Rebuilding deletion yields a B-tree](delete-rebuild-2.md)
+- [Correctness of B-tree search](../../btree-2/contains-eq-true-iff.md)
+- [Membership after rebuild deletion from a B-tree](mem-delete-rebuild.md)
 
 ## Sources
 

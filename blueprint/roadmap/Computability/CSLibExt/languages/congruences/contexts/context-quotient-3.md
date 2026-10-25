@@ -20,7 +20,7 @@ $u^{-1} L v^{-1} = \{x \mid uxv \in L\}$ is regular.
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
 - [Context quotients preserve finiteness of the syntactic monoid](finite-syntactic-monoid-context-quotient.md)
-- [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
+- [Regular languages are those with finite syntactic monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources
 

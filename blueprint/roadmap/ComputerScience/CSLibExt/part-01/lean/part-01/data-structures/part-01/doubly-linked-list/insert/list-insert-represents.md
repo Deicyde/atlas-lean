@@ -7,20 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.listInsert_represents
 ---
 
-# List Insert represents
+# Insertion into a represented doubly-linked list
 
-Inserting an allocated fresh node after index `k` preserves the exact source-list
-representation, with no head write. Freshness is a proof premise, not an execution guard.
+**Insertion into a represented doubly-linked list.** Suppose the store $S$ with head $h$
+represents the list of distinct cells $(i_0, \dots, i_{m-1})$. Let $k < m$, let $x$ be an
+allocated cell not among $i_0, \dots, i_{m-1}$, and assume that cell $i_k$ and its successor in
+$S$, if any, are allocated. Then the store returned by inserting $x$ after $i_k$, with the same
+head $h$, represents the list $(i_0, \dots, i_k, x, i_{k+1}, \dots, i_{m-1})$.
+
+The hypothesis that $x$ is not in the list is used only in the proof; the insertion itself runs
+without it.
 
 ## Depends on
 
-- [Node](../basic/node.md)
-- [Represents](../basic/represents.md)
-- [List Insert](list-insert.md)
+- [Doubly linked list node](../basic/node.md)
+- [Store representing a doubly linked list](../basic/represents.md)
+- [Doubly-linked-list insertion (LIST-INSERT)](list-insert.md)
 
 ## Proof depends on
 
-- [List Insert get](list-insert-get.md)
+- [Cells after doubly-linked-list insertion](list-insert-get.md)
 
 ## Sources
 

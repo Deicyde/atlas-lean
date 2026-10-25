@@ -7,23 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BallTree.toList_build_perm
 ---
 
-# To List build perm
+# A built ball tree stores a permutation of its input
 
-The point list of a built tree is a permutation of the input.
+**A built ball tree stores a permutation of its input.** For every list $P$ of points of
+$\mathbb{Z}^d$, the list of points of the ball tree built from $P$, from left to right, is a
+permutation of $P$.
 
 ## Depends on
 
-- [Build](build.md)
-- [To List](to-list.md)
+- [Building a ball tree by halving](build.md)
+- [Point list of a ball tree](to-list.md)
 
 ## Proof depends on
 
-- [Ball Tree](ball-tree.md)
-- [Valid](valid.md)
-- [Dist Sq](dist-sq.md)
-- [Dist Sq le radius Sq](dist-sq-le-radius-sq.md)
-- [Radius Sq](radius-sq.md)
-- [To List Aux](to-list-aux.md)
+- [Ball tree](ball-tree.md)
+- [Bounding-sphere invariant of a ball tree](valid.md)
+- [Squared Euclidean distance](dist-sq.md)
+- [Points lie within the squared radius](dist-sq-le-radius-sq.md)
+- [Squared covering radius](radius-sq.md)
+- [Accumulating traversal of a ball tree](to-list-aux.md)
 
 ## Sources
 

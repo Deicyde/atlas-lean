@@ -22,10 +22,10 @@ $f$ to each letter of $w$.
 ## Proof depends on
 
 - [Alphabet preimage morphism](alphabet-preimage-morphism.md)
-- [Finite syntactic Monoid of recognizer](../recognition/finite-syntactic-monoid-of-recognizer.md)
+- [Finite recognizers give finite syntactic monoids](../recognition/finite-syntactic-monoid-of-recognizer.md)
 - [The alphabet preimage morphism recognizes the alphabet preimage](recognizes-alphabet-preimage-morphism.md)
-- [Syntactic Accept](../syntactic/syntactic-accept.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
 
 ## Sources
 

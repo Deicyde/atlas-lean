@@ -6,54 +6,54 @@ navigation: module
 
 ## The binary encoding of `ℕ`
 
-- [Encode Nat eq cons](encode-nat-eq-cons.md)
-- [Bits Val](bits-val.md)
+- [Binary encoding, least significant bit first](encode-nat-eq-cons.md)
+- [Value of a little-endian bit list](bits-val.md)
 
 ## Running a primitive recursive step function
 
-- [Partrec run](partrec-run.md)
+- [Running a primitive recursive machine is partial recursive](partrec-run.md)
 
 ## Primitive recursive helpers
 
-- [Primrec of eventually const](primrec-of-eventually-const.md)
-- [Primrec₂ of eventually const](primrec-of-eventually-const-2.md)
-- [Primrec₂ of finite left](primrec-of-finite-left.md)
-- [Primcodable Arrow](primcodable-arrow.md)
+- [Eventually constant functions on ℕ are primitive recursive](primrec-of-eventually-const.md)
+- [Eventually constant functions of a finite parameter are primitive recursive](primrec-of-eventually-const-2.md)
+- [Joint primitive recursion over a finite first argument](primrec-of-finite-left.md)
+- [Encoding of functions on a finite type](primcodable-arrow.md)
 
 ## Relevant stack symbols
 
-- [Pushes](pushes.md)
-- [Relevant](relevant.md)
+- [Symbols a statement may push](pushes.md)
+- [Relevant symbols of a stack](relevant.md)
 - [Sym List](sym-list.md)
-- [Code](code.md)
-- [Decode](decode.md)
-- [Relevant](relevant-2.md)
+- [Code of a stack symbol](code.md)
+- [Decoding a stack symbol](decode.md)
+- [Stacks with only relevant symbols](relevant-2.md)
 
 ## The coded machine
 
-- [PrimcodableΛ](primcodable.md)
-- [Primcodableσ](primcodable-2.md)
-- [Coded Cfg](coded-cfg.md)
-- [Enc Stk](enc-stk.md)
-- [Enc](enc.md)
-- [Read Top](read-top.md)
-- [Step Aux C](step-aux-c.md)
-- [Step C](step-c.md)
+- [Encoding of labels](primcodable.md)
+- [Encoding of internal states](primcodable-2.md)
+- [Coded configurations of a multi-stack machine](coded-cfg.md)
+- [Coded stacks](enc-stk.md)
+- [Coding a configuration](enc.md)
+- [Reading the top of a coded stack](read-top.md)
+- [The coded execution of a statement](step-aux-c.md)
+- [The coded step](step-c.md)
 
 ## The coded step is primitive recursive
 
-- [Primrec₂ read Top](primrec-read-top.md)
+- [The coded step](primrec-read-top.md)
 
 ## The coded step simulates the machine
 
-- [Enc Stk update](enc-stk-update.md)
-- [Opt Step C](opt-step-c.md)
-- [Opt Step C iterate](opt-step-c-iterate.md)
+- [The coded step](enc-stk-update.md)
+- [The coded step on optional configurations](opt-step-c.md)
+- [The coded run simulates the machine's run](opt-step-c-iterate.md)
 
 ## Input, output and halting
 
-- [Relevant init List](relevant-init-list.md)
-- [Running before halt](running-before-halt.md)
+- [The coded run simulates the machine's run](relevant-init-list.md)
+- [Configurations before a reached one are running](running-before-halt.md)
 
 ## Turing-computable functions are computable
 

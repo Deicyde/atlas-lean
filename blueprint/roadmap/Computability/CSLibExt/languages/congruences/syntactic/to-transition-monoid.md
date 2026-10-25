@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Language.toTransitionMonoid
 ---
 
-# To Transition Monoid
+# Transition monoid element of a word
 
-A word determines an element of the transition monoid.
+**Transition monoid element of a word.** Let $M$ be a DFA over an alphabet $\Sigma$. Each word
+$x \in \Sigma^*$ determines the element of the transition monoid of $M$ given by the state
+transformation that sends each state $q$ to the state $M$ reaches from $q$ after reading $x$.
 
 ## Depends on
 
-- [State Transformation](state-transformation.md)
-- [Transition Monoid](transition-monoid.md)
+- [State transformation monoid](state-transformation.md)
+- [Transition monoid of a DFA](transition-monoid.md)
 
 ## Proof depends on
 
-- [Transition Morphism](transition-morphism.md)
+- [Transition morphism of a DFA](transition-morphism.md)
 
 ## Sources
 

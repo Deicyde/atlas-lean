@@ -84,19 +84,19 @@ theorem found_sound (g : EncodedCFG T) (w : List T) : ∀ x ∈ found g w, Sound
 
 ## Depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [Factor of a word](factor.md)
 - [Items found by the membership procedure](found.md)
 - [Start positions of a right-hand side](starts.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Yields](../../../languages/context-free/part-02/yields/yields.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Yield of a sentential form](../../../languages/context-free/part-02/yields/yields.md)
 
 ## Proof depends on
 
 - [Bounded monotone rounds on lists close off](../primrec-list/iterate-closed.md)
 - [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Splitting a factor](factor-eq-append.md)
 - [Candidate items for membership](items.md)
 - [One round of the membership procedure](mem-step.md)

@@ -13,13 +13,13 @@ states of its code.
 
 ## Depends on
 
-- [Code](code.md)
-- [Machine](machine.md)
+- [Codes for single-tape machines](code.md)
+- [The machine of a code](machine.md)
 - [States](states.md)
 
 ## Proof depends on
 
-- [Decode Stmt](decode-stmt.md)
+- [Decoding an action](decode-stmt.md)
 
 ## Sources
 

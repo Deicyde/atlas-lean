@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.gaussianLikelihood_zero_apply
 ---
 
-# Gaussian Likelihood zero apply
+# Noiseless Gaussian likelihood
 
-With zero noise the observation is the parameter: `gaussianLikelihood 0 θ = gaussianReal θ 0`,
-the point mass at `θ`.
+**Noiseless Gaussian likelihood.** With noise variance $0$, the Gaussian likelihood sends each
+$\theta \in \mathbb{R}$ to the Gaussian law with mean $\theta$ and variance $0$, which is the point
+mass at $\theta$: the observation is the parameter.
 
 ## Depends on
 
-- [Gaussian Likelihood](gaussian-likelihood.md)
+- [Gaussian likelihood with known variance](gaussian-likelihood.md)
 
 ## Sources
 

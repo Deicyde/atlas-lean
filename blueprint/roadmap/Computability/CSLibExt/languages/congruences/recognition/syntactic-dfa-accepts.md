@@ -13,14 +13,14 @@ The syntactic DFA accepts exactly the language from which it was constructed.
 ## Depends on
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Syntactic DFA](syntactic-dfa.md)
+- [The syntactic DFA](syntactic-dfa.md)
 
 ## Proof depends on
 
-- [Syntactic Accept](../syntactic/syntactic-accept.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
-- [Syntactic DFA eval From](syntactic-dfa-eval-from.md)
-- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
+- [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
+- [Runs of the syntactic DFA](syntactic-dfa-eval-from.md)
+- [Syntactic morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

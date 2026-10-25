@@ -31,12 +31,12 @@ $N = n + \ell$, output stack $o$ and every other stack empty.
 - [Stacks during the read loop](fst.md)
 - [The read loop](rd-t.md)
 - [Counters of the cell-shift generator](../shift/ck.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ of the converter, the statement that $n$ steps of the converter program lead fro
 ## Proof depends on
 
 - [Program of the pair-encoding converter](prog.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

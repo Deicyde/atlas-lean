@@ -6,52 +6,62 @@ proof: formalized
 lean: Cslib.Turing.Universal.Clocked.univ_run
 ---
 
-# The whole machine
+# Correctness and running time of the clocked universal machine
 
-**The whole machine.** From `encIn c x T` on `X`, the machine reaches `done` with
-`encOut (c.evalSteps x T)` on `O` within `univTime c x T` steps.
+**Correctness and running time of the clocked universal machine.** Let $c$ be a code, $x$ a
+list of bits and $T$ a natural number. Start the clocked universal stack program at the label
+$\mathrm{pc0}$ with internal bit $\mathrm{false}$, with every stack empty except $X$, which holds
+the input encoding of $(c, x, T)$: the cell of $T$, the cells of the input symbols of $x$ (the
+symbol $1$ for $\mathrm{false}$ and $2$ for $\mathrm{true}$), the bit $\mathrm{false}$, and the
+code stack of $c$ reversed, where the cell of a number $n$ is $n$ bits $\mathrm{true}$ followed
+by the bit $\mathrm{false}$. Then within at most $N(c, x, T)$ steps, where $N$ is the step bound
+of the whole machine, the program reaches the label $\mathrm{done}$ (with some internal bit and
+some stack contents) with the output encoding of the clocked evaluation of $c$ on $x$ with clock
+$T$ on the stack $O$: the single bit $\mathrm{false}$ if the coded machine does not halt within
+$T$ steps, and otherwise the bit $\mathrm{true}$ followed by the cells of its output, the tape
+from the head rightwards without trailing blanks.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Enc In](enc-in.md)
-- [Enc Out](enc-out.md)
-- [Prog](prog.md)
-- [Univ Time](univ-time.md)
-- [Γ](untitled.md)
-- [Code](../code/code.md)
+- [Stacks of the clocked universal machine](k.md)
+- [Labels of the clocked universal machine](lab.md)
+- [Input encoding of the clocked universal machine](enc-in.md)
+- [Output encoding of the clocked universal machine](enc-out.md)
+- [The clocked universal program](prog.md)
+- [Step bound of the clocked universal machine](univ-time.md)
+- [Stack alphabet of the clocked universal machine](untitled.md)
+- [Codes for single-tape machines](../code/code.md)
 - [The clocked evaluator](../code/eval-steps.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
-- [Bounded](bounded.md)
-- [Cell](cell.md)
-- [Cells](cells.md)
-- [Clock Time](clock-time.md)
+- [Configurations bounded by $M$](bounded.md)
+- [The cell of a number](cell.md)
+- [The cells of a list of numbers](cells.md)
+- [Step bound of the clocked universal machine](clock-time.md)
 - [The clocked universal machine on stacks](clocked-run.md)
-- [Code Cells](code-cells.md)
-- [Entries](entries.md)
-- [Entry Nums](entry-nums.md)
+- [The code stack](code-cells.md)
+- [Entries of a code](entries.md)
+- [Numbers of a list of entries](entry-nums.md)
 - [Writing the output](out-run.md)
-- [Parse Time](parse-time.md)
+- [Cost of reading the input](parse-time.md)
 - [Reading the input](parse-run.md)
-- [Stk](stk.md)
+- [The stacks of a simulated configuration](stk.md)
 - [Writing a timeout](tmo-run.md)
-- [Cfg](../code/cfg.md)
-- [Act](../code/act.md)
+- [Explicit configurations](../code/cfg.md)
+- [Acting on a configuration](../code/act.md)
 - [Output](../code/output.md)
-- [Cfg After](../code/cfg-after.md)
-- [Eval Steps eq some iff output](../code/eval-steps-eq-some-iff-output.md)
-- [Init](../code/init.md)
-- [Lookup](../code/lookup.md)
-- [Step](../code/step.md)
-- [Step Or Stay](../code/step-or-stay.md)
-- [Bit Sym](../code/bit-sym.md)
-- [Input](../code/input.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Clocked configuration of a code](../code/cfg-after.md)
+- [Characterization of clocked results](../code/eval-steps-eq-some-iff-output.md)
+- [Initial configuration of the code simulation](../code/init.md)
+- [Table lookup of a code](../code/lookup.md)
+- [One step of a code](../code/step.md)
+- [One step of a code, or stay when halted](../code/step-or-stay.md)
+- [Symbol of an input bit](../code/bit-sym.md)
+- [Input word of a list of bits](../code/input.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

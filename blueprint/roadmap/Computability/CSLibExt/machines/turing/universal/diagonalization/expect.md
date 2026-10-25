@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Turing.Universal.Diag.Readout.expect
 ---
 
-# Expect
+# Expecting a bit in the readout machine
 
-Pop a bit of `X`; go to `next` if it is `b`, to `miss` otherwise.
+**Expecting a bit in the readout machine.** For a bit $b$ and a label $\ell$, the statement
+that pops the top of the input stack $X$ and goes to $\ell$ if the popped symbol is $b$, and to the
+label miss otherwise, including when $X$ is empty.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Γ](untitled.md)
+- [Stacks of the readout machine](k.md)
+- [Labels of the readout machine](lab.md)
+- [Stack alphabet of the readout machine](untitled.md)
 
 ## Sources
 

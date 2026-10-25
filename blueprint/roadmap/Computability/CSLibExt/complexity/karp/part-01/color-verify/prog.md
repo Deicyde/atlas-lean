@@ -32,8 +32,8 @@ color. The accepting and rejecting labels halt.
 - [One step of the walk towards the farther endpoint](walk1-s.md)
 - [One step of the joint walk of the 3-COLOR verifier](walk-s.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Sources
 

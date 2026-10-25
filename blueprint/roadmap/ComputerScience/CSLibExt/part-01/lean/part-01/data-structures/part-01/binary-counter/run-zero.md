@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.run_zero
 ---
 
-# Run zero
+# Running zero increments
 
-A zero-step run returns the full pure input, with zero accumulated cost.
+**Running zero increments.** For every width $k$ and every $k$-bit counter $b$, running zero
+increments from $b$ returns $b$ unchanged at cost zero.
 
 ## Depends on
 
-- [Run](run.md)
+- [Running the binary counter](run.md)
 
 ## Sources
 

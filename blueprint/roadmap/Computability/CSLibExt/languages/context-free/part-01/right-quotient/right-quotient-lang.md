@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Language.rightQuotientLang
 ---
 
-# Right Quotient Lang
+# Right quotient of a language by a language
 
-The right quotient of `L` by `R`: the words `x` with `x ++ y ∈ L` for some `y ∈ R`. The
-quotient by a single word is `rightQuotient` (`Congruences/Quotients.lean`).
+**Right quotient of a language by a language.** For languages $L$ and $R$ over an alphabet $T$,
+the right quotient of $L$ by $R$ is the language of all words $x$ over $T$ such that the
+concatenation $xy$ lies in $L$ for some word $y \in R$.
 
 ## Depends on
 

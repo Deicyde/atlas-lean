@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.HindleyMilner.Ctx.MoreGeneral.cons
 ---
 
-# Cons
+# Extending more general contexts by a binding
 
-Extending both contexts with a binding of the same name keeps them related.
+**Extending more general contexts by a binding.** Let $\Gamma'$ and $\Gamma$ be typing
+contexts such that $\Gamma'$ is more general than $\Gamma$, let $x$ be a name, and let $\sigma'$
+and $\sigma$ be type schemes such that $\sigma'$ is more general than $\sigma$. Then the context
+obtained by putting the binding $x : \sigma'$ in front of $\Gamma'$ is more general than the
+context obtained by putting the binding $x : \sigma$ in front of $\Gamma$.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [More General](more-general-2.md)
-- [Scheme](scheme.md)
-- [More General](more-general.md)
+- [Typing context](ctx.md)
+- [More general context](more-general-2.md)
+- [Type schemes](scheme.md)
+- [More general type scheme](more-general.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
+- [Context lookup](lookup.md)
 
 ## Sources
 

@@ -59,10 +59,10 @@ else go to $\mathrm{done}$. At $\mathrm{done}$: halt.
 - [Literal-marker test of the 3SAT emitter](../../part-02/three-sat-emit/is-lit.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Cmp B](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b.md)
-- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
-- [Xfer E](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit-block comparison statement](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b.md)
+- [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Draining a counter while prepending a block](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

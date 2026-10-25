@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.run_time_ge
 ---
 
-# Run time ge
+# Lower bound on the cost of increments from zero
 
-A positive-width zero-start run costs at least its length.
+**Lower bound on the cost of increments from zero.** For all natural numbers $k$
+and $n$ with $k > 0$, running $n$ increments from the all-false bit vector of width $k$
+costs at least $n$.
 
 ## Depends on
 
-- [Run](run.md)
+- [Running the binary counter](run.md)
 
 ## Proof depends on
 
-- [Increment](increment.md)
-- [Run time succ](run-time-succ.md)
-- [Run value](run-value.md)
+- [Binary counter increment](increment.md)
+- [Cost recurrence for the binary counter run](run-time-succ.md)
+- [Counter value after successive increments](run-value.md)
 
 ## Sources
 

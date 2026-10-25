@@ -7,9 +7,10 @@ proof: formalized
 lean: Cslib.Language.IsRegular.of_length_le
 ---
 
-# Of length le
+# Languages of bounded word length are regular
 
-Over a finite alphabet, a language whose words all have length at most `n` is regular.
+**Languages of bounded word length are regular.** Over a finite alphabet, if every word of a
+language $L$ has length at most $n$, for some natural number $n$, then $L$ is regular.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Of finite](of-finite.md)
+- [Finite languages are regular](of-finite.md)
 
 ## Sources
 

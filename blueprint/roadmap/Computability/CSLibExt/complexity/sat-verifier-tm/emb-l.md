@@ -17,7 +17,7 @@ injective map) and identifying the alphabets by the identity of $\mathrm{Sym}$.
 - [Stacks of the clause check](../sat-check/k.md)
 - [Stacks of the lookup machine](../sat-lookup/k.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
-- [SEmb](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 

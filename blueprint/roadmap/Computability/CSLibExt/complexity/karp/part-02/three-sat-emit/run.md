@@ -28,7 +28,7 @@ the top, holds the binary code of the SAT-to-3SAT translation of $\varphi$ follo
 - [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
 - [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -45,13 +45,13 @@ the top, holds the binary code of the SAT-to-3SAT translation of $\varphi$ follo
 - [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
 - [Length-prefixed binary code of a clause](../../../../cook-levin/encode-clause.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Rep](../../../../../MathlibExt/turing-machine/program/rep.md)
-- [Xfer E](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Repeated block](../../../../../MathlibExt/turing-machine/program/rep.md)
+- [Draining a counter while prepending a block](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

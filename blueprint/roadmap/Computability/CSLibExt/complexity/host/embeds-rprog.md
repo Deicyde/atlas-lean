@@ -26,11 +26,11 @@ stacks and labels translated.
 - [The component's stacks inside a host](emb.md)
 - [Reduction host program](rprog.md)
 - [Component labels in the reduction host](r.md)
-- [Embeds](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
+- [Embedding of a machine in a host](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
 
 ## Proof depends on
 
-- [Map S](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Translating a statement along a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 
 ## Sources
 

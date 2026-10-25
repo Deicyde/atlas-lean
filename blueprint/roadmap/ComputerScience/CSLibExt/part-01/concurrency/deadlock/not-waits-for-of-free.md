@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Algorithms.Concurrency.Deadlock.AllocState.not_waitsFor_of_free
 ---
 
-# Not waits For of free
+# A process whose requests are all free waits for no one
 
-A request for a free resource creates no wait-for edge.
+**A process whose requests are all free waits for no one.** In a resource-allocation
+snapshot, if no resource requested by a process $p$ has a holder, then $p$ waits for no
+process $q$.
 
 ## Depends on
 
-- [Alloc State](alloc-state.md)
-- [Waits For](waits-for.md)
+- [Resource-allocation snapshot](alloc-state.md)
+- [Wait-for relation](waits-for.md)
 
 ## Sources
 

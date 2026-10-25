@@ -18,7 +18,7 @@ Its language is the union of the complements of the top and bottom list language
 ## Depends on
 
 - [Domino (Post correspondence problem)](../pcp/domino.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Proof depends on
 

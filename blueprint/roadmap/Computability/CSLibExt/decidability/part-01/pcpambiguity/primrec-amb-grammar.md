@@ -51,8 +51,8 @@ end Derivations
 
 - [The ambiguity grammar of a PCP instance](amb-grammar.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded grammars as pairs](../../../languages/context-free/part-01/encoded/equiv-prod.md)
 
 ## Proof depends on
 

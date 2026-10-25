@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Crypto.Identification.Schnorr.simTranscript
 ---
 
-# Sim Transcript
+# Simulated Schnorr transcript
 
-The simulated transcript for challenge `r` and answer `s`: `(g ^ s * (y ^ r)⁻¹, r, s)`.
+**Simulated Schnorr transcript.** Let $G$ be a commutative group, $q \ge 1$ and $g, y \in G$;
+for $h \in G$ and $a \in \mathbb{Z}/q$ write $h^a$ for $h^{\bar a}$, where
+$\bar a \in \{0, \dots, q - 1\}$ is the representative of $a$. For a challenge $r$ and an answer
+$s$ in $\mathbb{Z}/q$, the simulated transcript is the element $(g^s (y^r)^{-1}, r, s)$ of
+$G \times \mathbb{Z}/q \times \mathbb{Z}/q$.
 
 ## Depends on
 

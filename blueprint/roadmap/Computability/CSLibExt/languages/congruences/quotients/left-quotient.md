@@ -6,14 +6,18 @@ proof: formalized
 lean: Cslib.Language.Recognizes.leftQuotient
 ---
 
-# Left Quotient
+# Recognizers recognize left quotients
 
-A recognizer for `L` recognizes every left quotient of `L` using the same morphism.
+**Recognizers recognize left quotients.** Let $\varphi \colon A^* \to M$ be a monoid morphism
+from the free monoid on an alphabet $A$ to a monoid $M$ that recognizes a language $L$ over $A$
+through $P \subseteq M$, that is, a word $x$ lies in $L$ exactly when $\varphi(x) \in P$. Then
+for every word $u$ over $A$, $\varphi$ recognizes the left quotient $\{x \mid ux \in L\}$ through
+the set $\{m \in M \mid \varphi(u)\, m \in P\}$.
 
 ## Depends on
 
-- [Recognizes](../recognition/recognizes.md)
-- [Left Quotient Accept](left-quotient-accept.md)
+- [Recognition of a language by a monoid morphism](../recognition/recognizes.md)
+- [Accepting set for a left quotient](left-quotient-accept.md)
 
 ## Sources
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.run_time_eq
 ---
 
-# Run time eq
+# Exact cost of increments from zero
 
-The actual zero-start run cost is the sum of its existing bits' exact flip counts.
+**Exact cost of increments from zero.** For all natural numbers $k$ and $n$, running
+$n$ increments from the all-false bit vector of width $k$ costs exactly
+$\sum_{i=0}^{k-1} \lfloor n / 2^i \rfloor$.
 
 ## Depends on
 
-- [Run](run.md)
+- [Running the binary counter](run.md)
 
 ## Proof depends on
 
-- [Increment](increment.md)
-- [Run time succ](run-time-succ.md)
-- [Run value](run-value.md)
+- [Binary counter increment](increment.md)
+- [Cost recurrence for the binary counter run](run-time-succ.md)
+- [Counter value after successive increments](run-value.md)
 
 ## Sources
 

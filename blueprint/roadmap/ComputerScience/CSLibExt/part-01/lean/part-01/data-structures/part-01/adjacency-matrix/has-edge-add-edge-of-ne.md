@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.hasEdge_addEdge_of_ne
 ---
 
-# Has Edge add Edge of ne
+# Inserting an edge leaves other pairs unchanged
 
-Insertion does not change any other ordered pair.
+**Inserting an edge leaves other pairs unchanged.** For an adjacency matrix $m$ on $n$
+vertices and vertices $i$, $j$, $a$, $b$ with $a \ne i$ or $b \ne j$, the matrix obtained from $m$
+by adding the edge from $i$ to $j$ has an edge from $a$ to $b$ if and only if $m$ does.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
-- [Add Edge](add-edge.md)
-- [Has Edge](has-edge.md)
+- [Adjacency matrix](adjacency-matrix.md)
+- [Edge insertion in an adjacency matrix](add-edge.md)
+- [Edge query of an adjacency matrix](has-edge.md)
 
 ## Sources
 

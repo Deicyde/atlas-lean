@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.approxVertexCover_time
 ---
 
-# Approx Vertex Cover time
+# Running time of APPROX-VERTEX-COVER
 
-One unit per listed edge.
+**Running time of APPROX-VERTEX-COVER.** For every list $L$ of ordered pairs of vertices, the
+cost of APPROX-VERTEX-COVER on $L$ is the length of $L$: one unit per listed pair.
 
 ## Depends on
 
-- [Approx Vertex Cover](approx-vertex-cover.md)
+- [APPROX-VERTEX-COVER](approx-vertex-cover.md)
 
 ## Proof depends on
 
-- [Vertex Cover Scan time](vertex-cover-scan-time.md)
+- [APPROX-VERTEX-COVER](vertex-cover-scan-time.md)
 
 ## Sources
 

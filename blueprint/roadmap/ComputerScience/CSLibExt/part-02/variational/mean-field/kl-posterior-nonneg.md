@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.Variational.kl_posterior_nonneg
 
 ## Depends on
 
-- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Probability distributions on a finite latent space](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
 - [Kl](kl.md)
 - [Posterior](posterior.md)
 

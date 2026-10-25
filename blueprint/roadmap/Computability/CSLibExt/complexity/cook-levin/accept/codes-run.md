@@ -33,7 +33,7 @@ $i = \mathrm{ac}$.
 - [Variable layout of the transition clauses](../family/layout.md)
 - [Dense clause from a list of literals](../family/dense-clause.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -44,8 +44,8 @@ $i = \mathrm{ac}$.
 - [Next label after a clause of the accept generator](next-c.md)
 - [Clause run](clause-run.md)
 - [Dense clause](../../dense-sat/clause.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

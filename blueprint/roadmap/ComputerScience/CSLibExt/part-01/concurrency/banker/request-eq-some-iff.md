@@ -13,15 +13,15 @@ and the free resources.**
 
 ## Depends on
 
-- [System](system.md)
-- [Safe](safe.md)
-- [Grant](grant.md)
-- [Need](need.md)
+- [Claims and allocations of processes](system.md)
+- [Safe state](safe.md)
+- [Granting a request](grant.md)
+- [Remaining need](need.md)
 - [Request](request.md)
 
 ## Proof depends on
 
-- [Safety Check](safety-check.md)
+- [Banker's safety algorithm](safety-check.md)
 - [Correctness of the safety algorithm](safety-check-iff.md)
 
 ## Sources

@@ -24,18 +24,18 @@ $S'$, and the output stack of $S'$ is $1^c 0 1^p 0 1^{p+1} 0$ followed by $q$ an
 - [The HAMPATH emitter machine](../ham-path-emit-machine/prog.md)
 - [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Copying a counter in the HAMPATH emitter](../ham-path-emit-machine/cp-run.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Is Bit Block](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit blocks](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Running the bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

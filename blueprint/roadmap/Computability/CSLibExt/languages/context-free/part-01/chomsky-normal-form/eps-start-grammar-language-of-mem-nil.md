@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Language.epsStartGrammar_language_of_mem_nil
 ---
 
-# Eps Start Grammar language of mem nil
+# A fresh start symbol is harmless when the empty word is generated
 
-When the empty word is already generated, the fresh-start
-construction does not change the language.
+**A fresh start symbol is harmless when the empty word is generated.** If the empty word
+belongs to the language of a context-free grammar $g$, then the fresh-start grammar of $g$
+generates exactly the language of $g$.
 
 ## Depends on
 
-- [Eps Start Grammar](eps-start-grammar.md)
+- [Grammar with a fresh nullable start symbol](eps-start-grammar.md)
 
 ## Proof depends on
 
-- [Eps Start Grammar language](eps-start-grammar-language.md)
+- [Language of the grammar with a fresh nullable start symbol](eps-start-grammar-language.md)
 
 ## Sources
 

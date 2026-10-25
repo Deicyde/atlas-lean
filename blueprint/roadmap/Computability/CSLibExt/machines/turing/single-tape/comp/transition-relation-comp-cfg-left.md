@@ -6,15 +6,22 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.transitionRelation_compCfgLeft
 ---
 
-# Transition Relation comp Cfg Left
+# The composite simulates steps of the first machine
 
-A step of the first machine is a step of the composite (upstream's private
-`map_toCompCfg_left_step`, as a relation).
+**The composite simulates steps of the first machine.** Let $M_1$ and $M_2$ be single-tape
+Turing machines over the same alphabet, and let $M$ be their composite, whose states are the
+disjoint union of those of $M_1$ and of $M_2$: $M$ starts in the start state of $M_1$ and runs
+$M_1$, where $M_1$ would halt it enters the start state of $M_2$ instead, and it then runs $M_2$
+and halts where $M_2$ halts. Let $\iota_1$ send a configuration of $M_1$ to the configuration of
+$M$ with the same tape whose state is the copy of the state of $M_1$, or the start state of $M_2$
+if $M_1$ has halted. If $M_1$ moves from a configuration $c$ to a configuration $c'$ in one step,
+then $M$ moves from $\iota_1(c)$ to $\iota_1(c')$ in one step.
 
 ## Depends on
 
-- [Comp Cfg Left](comp-cfg-left.md)
+- [Embedding the first machine's configurations into a composite](comp-cfg-left.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.Comp](../../../../../../../sources/v2/CSLibExt.md)
+- upstream CSLib's private `map_toCompCfg_left_step`, stated as a relation.

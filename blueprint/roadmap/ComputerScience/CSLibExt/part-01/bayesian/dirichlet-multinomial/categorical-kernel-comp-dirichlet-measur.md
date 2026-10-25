@@ -6,9 +6,13 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.categoricalKernel_comp_dirichletMeasure
 ---
 
-# Categorical Kernel comp dirichlet Measure
+# Prior predictive of the Dirichlet–categorical model
 
-The predictive probability of label `i` under `Dir(α)` is its mean `αᵢ / ∑ α`.
+**Prior predictive of the Dirichlet–categorical model.** Let $\alpha \in \mathbb{R}^{n+1}$
+with $\alpha_i > 0$ for every $i$. Drawing a parameter $\theta$ from the Dirichlet
+distribution $\mathrm{Dir}(\alpha)$ and then one label from the categorical likelihood with
+parameter $\theta$ gives the label $i \in \{0, \dots, n\}$ with probability
+$\alpha_i / \sum_j \alpha_j$, which is the mean of $\theta_i$ under $\mathrm{Dir}(\alpha)$.
 
 ## Depends on
 
@@ -17,8 +21,8 @@ The predictive probability of label `i` under `Dir(α)` is its mean `αᵢ / ∑
 
 ## Proof depends on
 
-- [Comp apply singleton](../basic/comp-apply-singleton.md)
-- [Prob Vectors](prob-vectors.md)
+- [The evidence is the integral of the likelihood](../basic/comp-apply-singleton.md)
+- [Probability vectors](prob-vectors.md)
 - [Ae dirichlet Measure](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/ae-dirichlet-measure.md)
 - [Lintegral dirichlet Measure apply](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/lintegral-dirichlet-measure-apply.md)
 

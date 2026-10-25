@@ -31,10 +31,10 @@ halts. The phase-0 labels for a separator and a second block halt.
 - [Stacks emptied by the cleanup](clean-ks.md)
 - [The component's stacks inside a host](emb.md)
 - [Component labels in the reduction host](r.md)
-- [Map S](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Clean S](../../../MathlibExt/turing-machine/cleanup/clean-s.md)
-- [Move B](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Translating a statement along a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Cleanup round](../../../MathlibExt/turing-machine/cleanup/clean-s.md)
+- [Bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Sources
 

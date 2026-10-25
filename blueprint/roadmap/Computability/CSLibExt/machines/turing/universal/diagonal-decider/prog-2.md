@@ -18,11 +18,11 @@ on `O`; otherwise write `[false, true, true, false, false]`.
 
 ## Proof depends on
 
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [For Head](../../../../../MathlibExt/turing-machine/program/for-head.md)
-- [Incr](../../../../../MathlibExt/turing-machine/program/incr.md)
-- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Loop head of a for loop over a counter](../../../../../MathlibExt/turing-machine/program/for-head.md)
+- [Counter increment](../../../../../MathlibExt/turing-machine/program/incr.md)
+- [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 - [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

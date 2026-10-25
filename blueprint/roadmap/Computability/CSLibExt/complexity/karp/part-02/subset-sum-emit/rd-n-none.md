@@ -24,14 +24,14 @@ $N$ and $L$.
 - [Stack alphabets of the subset-sum emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Counter unit of the subset-sum emitter](u.md)
 - [Test for the input bit true (SUBSET-SUM reduction machine)](is-t.md)
 - [Start label of the subset-sum emitter](is-t-bit.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

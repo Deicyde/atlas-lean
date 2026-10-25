@@ -4,12 +4,12 @@ navigation: module
 
 # Substitution
 
-- [Rename congr](rename-congr.md)
-- [Rename id](rename-id.md)
-- [Rename rename](rename-rename.md)
-- [Subst congr](subst-congr.md)
-- [Subst id](subst-id.md)
-- [Subst rename](subst-rename.md)
-- [Rename subst](rename-subst.md)
-- [Subst subst](subst-subst.md)
-- [Instantiate rename succ](instantiate-rename-succ.md)
+- [Renaming respects pointwise equality](rename-congr.md)
+- [Renaming by the identity](rename-id.md)
+- [Composition of renamings](rename-rename.md)
+- [Substitution respects pointwise equality](subst-congr.md)
+- [Substitution by variables is the identity](subst-id.md)
+- [Renaming then substituting](subst-rename.md)
+- [Substituting then renaming](rename-subst.md)
+- [Composition of substitutions](subst-subst.md)
+- [Instantiating a shifted term](instantiate-rename-succ.md)

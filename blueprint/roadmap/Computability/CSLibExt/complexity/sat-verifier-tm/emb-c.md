@@ -19,7 +19,7 @@ by the identity.
 - [Stacks of the SAT verifier host](hk.md)
 - [Stack alphabets of the SAT verifier host](h.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
-- [SEmb](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 

@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.mem_balance
 ---
 
-# Mem balance
+# Membership after AVL rebalancing
 
-Rebalancing preserves structural membership.
+**Membership after AVL rebalancing.** Write $\mathrm{balance}(L, k, R)$ for the AVL rebalancing
+of the node with left subtree $L$, key $k$ and right subtree $R$. For trees $L$ and $R$ and keys
+$k$ and $x$, the key $x$ lies in $\mathrm{balance}(L, k, R)$ if and only if $x$ lies in $L$,
+$x = k$, or $x$ lies in $R$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Tree](tree.md)
-- [Balance](balance.md)
+- [Membership in an AVL tree](mem.md)
+- [Binary trees with cached heights](tree.md)
+- [AVL rebalancing](balance.md)
 
 ## Proof depends on
 
-- [Inorder](inorder.md)
-- [Inorder balance](inorder-balance.md)
-- [Mem inorder](mem-inorder.md)
+- [Inorder traversal of an AVL tree](inorder.md)
+- [AVL rebalancing preserves the inorder traversal](inorder-balance.md)
+- [Membership in the inorder traversal of an AVL tree](mem-inorder.md)
 
 ## Sources
 

@@ -35,7 +35,7 @@ state after clause $C$ is processed from $s$.
 - [A clause's tokens on the token stack](../../../sat-check/cl-rev.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -61,12 +61,12 @@ state after clause $C$ is processed from $s$.
 - [Consistency edges between two occurrences of a variable](../color/cons-edges.md)
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Decr](../../../../../MathlibExt/turing-machine/program/decr.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Decrement](../../../../../MathlibExt/turing-machine/program/decr.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

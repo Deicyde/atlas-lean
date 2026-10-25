@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.empty_eq
 ---
 
-# Empty eq
+# The empty dynamic table has no slots and no items
 
-The initially unallocated table has no slots and no logical items.
+**The empty dynamic table has no slots and no items.** The empty dynamic table has an empty
+slot array, so capacity $0$, and item count $0$.
 
 ## Depends on
 
 - [Table](table.md)
-- [Empty](empty.md)
+- [Empty dynamic table](empty.md)
 
 ## Sources
 

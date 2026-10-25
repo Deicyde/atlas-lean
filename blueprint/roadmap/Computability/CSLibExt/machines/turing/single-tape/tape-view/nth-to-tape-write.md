@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Turing.BiTape.nth_toTape_write
 ---
 
-# Nth to Tape write
+# Cells after a write
 
-The cells after a write: the head cell is the written cell, the others are unchanged.
+**Cells after a write.** For every two-way tape $t$ over $\Gamma$, every cell $a$ (a symbol of
+$\Gamma$ or the blank) and every integer $i$, the cell at position $i$ of the view of the tape
+obtained from $t$ by writing $a$ under the head is $a$ if $i = 0$, and the cell at position $i$
+of the view of $t$ otherwise.
 
 ## Depends on
 
-- [To Tape](to-tape.md)
+- [Cell view of a two-way tape](to-tape.md)
 
 ## Proof depends on
 
-- [To Tape write](to-tape-write.md)
+- [The cell view commutes with writing](to-tape-write.md)
 
 ## Sources
 

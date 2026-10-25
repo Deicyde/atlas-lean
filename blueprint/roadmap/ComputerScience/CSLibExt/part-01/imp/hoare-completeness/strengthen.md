@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.IMP.Derivable.strengthen
 ---
 
-# Strengthen
+# Precondition strengthening for partial correctness
 
-Strengthen the precondition of a derivable triple.
+**Precondition strengthening for partial correctness.** Let $P$, $P'$ and $Q$ be assertions
+and $c$ a command. If $P$ entails $P'$ (every state satisfying $P$ satisfies $P'$) and the
+partial-correctness triple $\{P'\}\,c\,\{Q\}$ is derivable in the partial-correctness proof
+system, then so is $\{P\}\,c\,\{Q\}$.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Entails](../hoare/entails.md)
-- [Cmd](../syntax/cmd.md)
-- [Derivable](derivable.md)
+- [Entailment of assertions](../hoare/entails.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Derivability in Hoare logic for partial correctness](derivable.md)
 
 ## Proof depends on
 
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

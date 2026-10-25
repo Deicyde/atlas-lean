@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.contains_delete_iff
 ---
 
-# Contains delete iff
+# Search after top-down deletion
 
-Search in the result of a deletion agrees with membership in the
-original tree minus the deleted key.
+**Search after top-down deletion.** Let $t \ge 2$ and let $T$ be a B-tree of minimum degree $t$
+over a linearly ordered key type. For all keys $x$ and $y$, searching for $y$ in the tree obtained
+by deleting $x$ from $T$ with minimum degree $t$ succeeds if and only if $y \ne x$ and $y$ is a
+key of $T$.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Is BTree](../../btree-2/is-btree.md)
-- [Mem](../../btree-2/mem.md)
-- [Contains](../../btree-2/contains.md)
-- [Delete](delete.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [B-trees of a given minimum degree](../../btree-2/is-btree.md)
+- [Membership in a B-tree](../../btree-2/mem.md)
+- [B-tree search](../../btree-2/contains.md)
+- [Top-down B-tree deletion](delete.md)
 
 ## Proof depends on
 
-- [Delete](delete-2.md)
-- [Contains eq true iff](../../btree-2/contains-eq-true-iff.md)
-- [Mem delete](mem-delete.md)
+- [Top-down deletion preserves the B-tree invariant](delete-2.md)
+- [Correctness of B-tree search](../../btree-2/contains-eq-true-iff.md)
+- [Membership after deletion from a B-tree](mem-delete.md)
 
 ## Sources
 

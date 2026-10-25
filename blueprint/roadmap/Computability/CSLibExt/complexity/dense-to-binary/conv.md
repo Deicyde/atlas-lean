@@ -35,7 +35,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Closing a clause in the translated output](end-clause.md)
-- [Rep](../../../MathlibExt/turing-machine/program/rep.md)
+- [Repeated block](../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

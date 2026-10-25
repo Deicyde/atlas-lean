@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.TM2Program.decr
 ---
 
-# Decr
+# Decrement
 
-Pop stack `k`; go to `ifPos` if a symbol was popped, to `ifZero` if it was empty.
+**Decrement.** For a stack $k$ and labels $\ell_0$ and $\ell_+$, this machine statement pops
+stack $k$, stores in the state whether a symbol was popped, and goes to $\ell_+$ if a symbol was
+popped and to $\ell_0$ if stack $k$ was empty.
 
 ## Depends on
 
-- [Flag](flag.md)
+- [Flag bit of a machine state](flag.md)
 
 ## Sources
 

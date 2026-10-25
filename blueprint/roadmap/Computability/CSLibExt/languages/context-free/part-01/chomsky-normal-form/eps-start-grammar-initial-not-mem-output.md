@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Language.epsStartGrammar_initial_not_mem_output
 ---
 
-# Eps Start Grammar initial not mem output
+# The fresh start symbol occurs in no output
 
-The fresh initial nonterminal occurs in no production output
-of the fresh-start grammar.
+**The fresh start symbol occurs in no output.** For every context-free grammar $g$, the
+fresh initial nonterminal of the fresh-start grammar of $g$ occurs in no production output of
+the fresh-start grammar.
 
 ## Depends on
 
-- [Eps Start Grammar](eps-start-grammar.md)
+- [Grammar with a fresh nullable start symbol](eps-start-grammar.md)
 
 ## Proof depends on
 
-- [Map Rule](../basic/map-rule.md)
-- [Map Rule injective](../basic/map-rule-injective.md)
-- [Map Symbol](../basic/map-symbol.md)
+- [Renaming the nonterminals of a production](../basic/map-rule.md)
+- [Injective renamings are injective on productions](../basic/map-rule-injective.md)
+- [Renaming the nonterminals of a symbol](../basic/map-symbol.md)
 
 ## Sources
 

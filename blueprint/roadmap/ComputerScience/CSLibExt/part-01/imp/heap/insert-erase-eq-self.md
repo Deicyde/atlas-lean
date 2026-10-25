@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.IMP.Heap.insert_erase_eq_self
 ---
 
-# Insert erase eq self
+# Reinserting an erased value restores the heap
 
-Reinserting the stored value after erasure restores the heap.
+**Reinserting an erased value restores the heap.** If a heap $h$ stores the value $v$ at the
+address $a$, then erasing $a$ from $h$ and then inserting $a$ with value $v$ gives back $h$.
 
 ## Depends on
 

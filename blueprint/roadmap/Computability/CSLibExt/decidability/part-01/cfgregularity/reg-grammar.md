@@ -24,7 +24,7 @@ is the language of $g$.
 ## Depends on
 
 - [Alphabet of the reduction from universality to regularity](letter.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Proof depends on
 

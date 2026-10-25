@@ -7,18 +7,25 @@ lean: Cslib.Algorithms.Lean.AStar.aStar
 
 # A Star
 
-A* from `source` with heuristic `h`: Dijkstra on the reduced weights, whose keys are A*'s
-`f = g + h` shifted by `h source`, with the keys converted back to path weights `g`.
+**A\* search.** Given a directed graph $G$ on the vertices $\{0, \dots, n-1\}$ with natural
+edge weights $w$, a heuristic $h$ with natural values and a source vertex $s$, A* runs Dijkstra's
+algorithm from $s$ on the reduced weights $w(u, v) + h(v) - h(u)$ at Dijkstra's cost, and returns
+Dijkstra's result (its distances $g'$ and predecessor pointers) together with the path weights
+$g(v) = g'(v) + h(s) - h(v)$, where both subtractions are truncated at $0$ and $g(v)$ is infinite
+when $g'(v)$ is.
+
+For a consistent heuristic, Dijkstra's distances on the reduced weights are A*'s values
+$f = g + h$ shifted by $h(s)$.
 
 ## Depends on
 
-- [AStar Result](astar-result.md)
+- [Output of A-star search](astar-result.md)
 - [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
 - [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
 
 ## Proof depends on
 
-- [Reduced Weight](reduced-weight.md)
+- [Reduced weight](reduced-weight.md)
 - [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
 - [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
 

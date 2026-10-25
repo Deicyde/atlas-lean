@@ -6,27 +6,40 @@ proof: formalized
 lean: MetaMathlibExt.TM2Program.forLoop_run
 ---
 
-# For Loop run
+# Exact running time of a for loop over a counter
 
-`for i < n do body`, with `c` holding `n - i` (units still to do) and `cd` holding the
-index `i + 1` while the body of iteration `i` runs. The body must preserve `c` and `cd`, end at
-`head`, and take `cost i` steps; `P` is the caller's invariant, which must not depend on `c`, `cd`.
-Total: `Σ_{i<n} (cost i + 1) + n + 2` steps, and afterwards `c = n`, `cd = []` again.
+**Exact running time of a for loop over a counter.** Let $M$ be a multi-stack machine whose
+states carry a flag bit, with $\mathrm{tag}(\beta)$ the state storing the bit $\beta$; write $(\ell,
+v, S)$ for the configuration at label $\ell$ with state $v$ and stack contents $S$, and $u^m$ for a
+stack holding exactly $m$ copies of the symbol $u$. Let $c \ne c'$ be stacks with a symbol $u$ of
+stack $c$ and a symbol $u'$ of stack $c'$, and let $h, b, r, e$ be labels such that at $h$ the
+machine runs the loop head on $c$ with index stack $c'$ (pop $c$; if a symbol was popped, push $u'$
+onto $c'$ and go to $b$, otherwise go to $r$), and at $r$ it runs the transfer that drains $c'$,
+pushing one $u$ onto $c$ per popped symbol, and then goes to $e$. Let $n \in \mathbb{N}$, let
+$\mathrm{cost} : \mathbb{N} \to \mathbb{N}$, and let $P(i, S)$ be a predicate such that $P(i, S)$
+implies $P(i, S')$ whenever $S$ and $S'$ agree on every stack other than $c$ and $c'$. Assume that
+for every $i < n$ and all stack contents $S$ with $S_c = u^{n-1-i}$, $S_{c'} = u'^{\,i+1}$ and $P(i,
+S)$, there are a state $v'$ and stack contents $S'$ such that $M$ goes from $(b,
+\mathrm{tag}(\mathrm{true}), S)$ to $(h, v', S')$ in exactly $\mathrm{cost}(i)$ steps, with $S'_c =
+S_c$, $S'_{c'} = S_{c'}$ and $P(i + 1, S')$. Then for every state $v$ and all stack contents $S$
+with $S_c = u^n$, $S_{c'}$ empty and $P(0, S)$, there are stack contents $S'$ such that $M$ goes
+from $(h, v, S)$ to $(e, \mathrm{tag}(\mathrm{false}), S')$ in exactly $\sum_{i < n}
+(\mathrm{cost}(i) + 1) + n + 2$ steps, with $S'_c = u^n$, $S'_{c'}$ empty and $P(n, S')$.
 
 ## Depends on
 
-- [Flag](flag.md)
-- [Run](run.md)
-- [Cnt](cnt.md)
-- [For Head](for-head.md)
-- [Sum From](sum-from.md)
+- [Flag bit of a machine state](flag.md)
+- [Exact-length runs of a TM2 machine](run.md)
+- [Unary counter](cnt.md)
+- [Loop head of a for loop over a counter](for-head.md)
+- [Sum of consecutive values](sum-from.md)
 - [Xfer](xfer.md)
 
 ## Proof depends on
 
-- [Single](single.md)
-- [Add U](add-u.md)
-- [Xfer run](xfer-run.md)
+- [A single step executes the statement at the current label](single.md)
+- [Adding units to target stacks](add-u.md)
+- [Running a counter transfer](xfer-run.md)
 
 ## Sources
 

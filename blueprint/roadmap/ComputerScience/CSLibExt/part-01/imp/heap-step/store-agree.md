@@ -6,26 +6,27 @@ proof: formalized
 lean: Cslib.IMP.HStep.store_agree
 ---
 
-# Store agree
+# A heap step only changes assignable variables
 
-A step does not change variables outside the command's modified
-set.
+**A heap step only changes assignable variables.** If a heap configuration $(c, s, h)$ takes
+one heap step to $(c', s', h')$, then $s'(x) = s(x)$ for every variable $x$ outside the set of
+variables that $c$ may assign to.
 
 ## Depends on
 
-- [HStep](hstep.md)
+- [Small-step semantics of heap commands](hstep.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](heap-cmd.md)
-- [Mod Vars](mod-vars.md)
-- [State](../syntax/state.md)
+- [Heap commands](heap-cmd.md)
+- [Modified variables of a heap command](mod-vars.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [HConfig](hconfig.md)
+- [Heap configurations](hconfig.md)
 
 ## Sources
 

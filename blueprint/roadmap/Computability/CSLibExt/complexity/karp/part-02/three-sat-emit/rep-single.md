@@ -56,7 +56,7 @@ end Loops
 
 ## Depends on
 
-- [Rep](../../../../../MathlibExt/turing-machine/program/rep.md)
+- [Repeated block](../../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

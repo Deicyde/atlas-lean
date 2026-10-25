@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.HindleyMilner.Ctx.MoreGeneral.of_lookup_eq
 ---
 
-# Of lookup eq
+# Contexts with the same lookups are related by generality
 
-Contexts with the same lookups are each more general than the other.
+**Contexts with the same lookups are related by generality.** If two typing contexts
+$\Gamma'$ and $\Gamma$ give the same lookup result for every name $x$ (the same visible scheme,
+or none in both), then $\Gamma'$ is more general than $\Gamma$.
+
+Since the hypothesis is symmetric, $\Gamma$ is then also more general than $\Gamma'$.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [More General](more-general-2.md)
-- [Lookup](lookup.md)
-- [Scheme](scheme.md)
+- [Typing context](ctx.md)
+- [More general context](more-general-2.md)
+- [Context lookup](lookup.md)
+- [Type schemes](scheme.md)
 
 ## Proof depends on
 
-- [More General](more-general.md)
-- [Inst](inst.md)
-- [Ty](ty.md)
+- [More general type scheme](more-general.md)
+- [Instantiation of a type scheme](inst.md)
+- [Monotypes](ty.md)
 - [Vars](../../../../part-02/unification/basic/vars.md)
 
 ## Sources

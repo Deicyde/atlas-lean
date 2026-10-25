@@ -6,37 +6,38 @@ proof: formalized
 lean: Cslib.Language.cnfGrammar_language_of_reduced
 ---
 
-# Cnf Grammar language of reduced
+# Binarization preserves the language
 
-Binarization preserves the language of a reduced grammar.
+**Binarization preserves the language.** If a context-free grammar $g$ is reduced, then
+the binarization of $g$ generates exactly the language of $g$.
 
 ## Depends on
 
-- [Is Reduced](../reduced/is-reduced.md)
+- [Reduced grammars](../reduced/is-reduced.md)
 - [Cnf Grammar](cnf-grammar.md)
 
 ## Proof depends on
 
-- [Is Unit Output](../reduced/is-unit-output.md)
-- [Is Valuation](../basic/is-valuation.md)
-- [Yields](../../part-02/yields/yields.md)
-- [Append](../../part-02/yields/append.md)
-- [Append inv](../../part-02/yields/append-inv.md)
-- [Cnf Grammar language le of reduced](cnf-grammar-language-le-of-reduced.md)
-- [Cnf Head](cnf-head.md)
-- [Derives of mem eval Form language From](../basic/derives-of-mem-eval-form-language-from.md)
-- [Eval Form](../basic/eval-form.md)
-- [Eval Form le of derives](../basic/eval-form-le-of-derives.md)
-- [Eval Form map](../basic/eval-form-map.md)
-- [Eval Form map terminal](../basic/eval-form-map-terminal.md)
-- [Grammar Terminals](grammar-terminals.md)
-- [Is Valuation language From](../basic/is-valuation-language-from.md)
-- [Language From](../basic/language-from.md)
-- [Language le of valuation](../basic/language-le-of-valuation.md)
-- [Map Symbol](../basic/map-symbol.md)
-- [To Cnf NT](to-cnf-nt.md)
+- [Unit output](../reduced/is-unit-output.md)
+- [Valuation of a grammar](../basic/is-valuation.md)
+- [Yield of a sentential form](../../part-02/yields/yields.md)
+- [Concatenation of yields](../../part-02/yields/append.md)
+- [Splitting a yield over a concatenation](../../part-02/yields/append-inv.md)
+- [Binarization adds no words](cnf-grammar-language-le-of-reduced.md)
+- [Head of a binarized output](cnf-head.md)
+- [Words of the canonical interpretation are derivable](../basic/derives-of-mem-eval-form-language-from.md)
+- [Interpretation of a sentential form](../basic/eval-form.md)
+- [Derivations shrink interpretations under a valuation](../basic/eval-form-le-of-derives.md)
+- [Interpretation after renaming nonterminals](../basic/eval-form-map.md)
+- [A terminal word denotes its singleton](../basic/eval-form-map-terminal.md)
+- [Terminals of a grammar](grammar-terminals.md)
+- [The languages generated from each nonterminal form a valuation](../basic/is-valuation-language-from.md)
+- [Language generated from a nonterminal](../basic/language-from.md)
+- [Valuations bound the language of a grammar](../basic/language-le-of-valuation.md)
+- [Renaming the nonterminals of a symbol](../basic/map-symbol.md)
+- [Encoding symbols as basic nonterminals of the binarized grammar](to-cnf-nt.md)
 - [Yields iff derives](../../part-02/yields/yields-iff-derives.md)
-- [Yields of rule](../../part-02/yields/yields-of-rule.md)
+- [Yield through one production](../../part-02/yields/yields-of-rule.md)
 
 ## Sources
 

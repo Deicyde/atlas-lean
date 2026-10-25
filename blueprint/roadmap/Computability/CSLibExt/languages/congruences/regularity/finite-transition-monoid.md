@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Language.finite_transitionMonoid
 ---
 
-# Finite transition Monoid
+# Transition monoids of finite automata are finite
 
-The transition monoid of a finite-state DFA is finite.
+**Transition monoids of finite automata are finite.** For every DFA $M$ with a finite set of
+states, the transition monoid of $M$ is finite.
 
 ## Depends on
 
-- [State Transformation](../syntactic/state-transformation.md)
-- [Transition Monoid](../syntactic/transition-monoid.md)
+- [State transformation monoid](../syntactic/state-transformation.md)
+- [Transition monoid of a DFA](../syntactic/transition-monoid.md)
 
 ## Proof depends on
 
-- [Finite state Transformation](finite-state-transformation.md)
+- [Finitely many state transformations](finite-state-transformation.md)
 
 ## Sources
 

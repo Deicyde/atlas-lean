@@ -6,13 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.empty
 ---
 
-# Empty
+# The empty B-tree
 
-The empty B-tree: a leaf with no keys.
+**The empty B-tree.** The empty B-tree is the leaf with no keys.
 
 ## Depends on
 
-- [BTree](btree.md)
+- [Raw B-trees](btree.md)
 
 ## Sources
 

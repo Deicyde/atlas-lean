@@ -6,15 +6,19 @@ proof: formalized
 lean: Cslib.IMP.whileFun_mono
 ---
 
-# While Fun mono
+# Monotonicity of the while-loop unfolding functional
 
-The while-loop functional is monotone in the candidate loop relation.
+**Monotonicity of the while-loop unfolding functional.** Let $b$ be a Boolean expression, $B$
+a binary relation on states, and $\Phi$ the one-step unfolding functional of a while loop with
+guard $b$ and body relation $B$. Then $\Phi$ is monotone for inclusion of relations: for all
+relations $R_1$ and $R_2$ on states with $R_1 \subseteq R_2$, we have
+$\Phi(R_1) \subseteq \Phi(R_2)$.
 
 ## Depends on
 
-- [BExp](../syntax/bexp.md)
-- [State](../syntax/state.md)
-- [While Fun](while-fun.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
+- [IMP program states](../syntax/state.md)
+- [One-step unfolding functional of a while loop](while-fun.md)
 
 ## Proof depends on
 

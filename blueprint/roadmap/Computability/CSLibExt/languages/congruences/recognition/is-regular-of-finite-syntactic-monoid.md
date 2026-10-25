@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Language.isRegular_of_finite_syntacticMonoid
 ---
 
-# Is Regular of finite syntactic Monoid
+# Finite syntactic monoid implies regularity
 
-A language with finite syntactic monoid is regular.
+**Finite syntactic monoid implies regularity.** Every language whose syntactic monoid is
+finite is regular.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ A language with finite syntactic monoid is regular.
 
 ## Proof depends on
 
-- [Syntactic DFA](syntactic-dfa.md)
+- [The syntactic DFA](syntactic-dfa.md)
 - [Syntactic DFA accepts](syntactic-dfa-accepts.md)
 
 ## Sources

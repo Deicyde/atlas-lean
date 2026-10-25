@@ -20,7 +20,7 @@ label $l$, flag $v$ and stacks $\mathrm{st}(F, o)$.
 - [Stacks of a counter machine](sk.md)
 - [Alphabets of a counter machine](s.md)
 - [Stacks holding given counter values](st.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
 
 ## Sources
 

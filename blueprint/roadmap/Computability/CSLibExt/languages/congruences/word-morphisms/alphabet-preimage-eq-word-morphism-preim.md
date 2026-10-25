@@ -6,15 +6,18 @@ proof: formalized
 lean: Cslib.Language.alphabetPreimage_eq_wordMorphismPreimage
 ---
 
-# Alphabet Preimage eq word Morphism Preimage
+# Alphabet preimages are inverse images under word morphisms
 
-Letterwise alphabet preimages agree with inverse images under the induced free-monoid
-morphism.
+**Alphabet preimages are inverse images under word morphisms.** Let
+$f \colon \Sigma \to \Gamma$ be a map between alphabets, $f^* \colon \Sigma^* \to \Gamma^*$ the
+monoid morphism that applies $f$ to each letter of a word, and $L$ a language over $\Gamma$. Then
+the alphabet preimage of $L$ under $f$ equals the inverse image
+$(f^*)^{-1}(L) = \{w \in \Sigma^* \mid f^*(w) \in L\}$ of $L$ under $f^*$.
 
 ## Depends on
 
 - [Alphabet preimage](../morphisms/alphabet-preimage.md)
-- [Word Morphism Preimage](word-morphism-preimage.md)
+- [Inverse image under a word morphism](word-morphism-preimage.md)
 
 ## Sources
 

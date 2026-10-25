@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.minD_mem
 ---
 
-# Min D mem
+# The leftmost key lies in the tree
 
-The leftmost key of a nonempty tree is present in the tree.
+**The leftmost key lies in the tree.** For every nonempty binary tree $T$ with cached heights
+and every default value $d$, the leftmost key of $T$ computed with default $d$ occurs in $T$.
 
 ## Depends on
 
-- [Mem](../../avl-tree-2/mem.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Min D](min-d.md)
+- [Membership in an AVL tree](../../avl-tree-2/mem.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [Leftmost key of a tree](min-d.md)
 
 ## Proof depends on
 
-- [To Binary Tree](../../avl-tree-2/to-binary-tree.md)
+- [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
 - [Mem](../../../part-02/binary-search-tree/mem.md)
 
 ## Sources

@@ -33,15 +33,15 @@ In both cases the final internal state is unspecified.
 - [Fresh variable indices](../three-sat/fresh.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Binary code of a literal](../../../../cook-levin/encode-lit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Fresh-literal subroutine of the 3SAT emitter](fresh-run.md)
 - [Return label of the fresh-literal subroutine](ret.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

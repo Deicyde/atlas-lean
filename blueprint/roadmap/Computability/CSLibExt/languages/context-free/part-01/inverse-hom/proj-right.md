@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Language.projRight
 ---
 
-# Proj Right
+# Right projection of a word
 
-The letters of a word over `T ⊕ T'` that come from `T'`.
+**Right projection of a word.** For a word $u$ over the disjoint union $T \oplus T'$ of two
+alphabets, its right projection is the word over $T'$ obtained from $u$ by deleting every letter
+from $T$ and reading each remaining letter as a letter of $T'$, keeping their order.
 
 ## Depends on
 

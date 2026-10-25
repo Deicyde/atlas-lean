@@ -28,7 +28,7 @@ name bits of $x$ above $n$ units.
 - [The 3-COLOR emitter machine](prog.md)
 - [Stack alphabets of the 3-coloring emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
@@ -36,11 +36,11 @@ name bits of $x$ above $n$ units.
 - [Stack of a counter](k-2.md)
 - [Copying a counter through $W$](dup-run.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Is Bit Block](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit blocks](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Running the bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

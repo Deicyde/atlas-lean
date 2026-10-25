@@ -21,11 +21,11 @@ syntactic monoid of the context quotient $u^{-1} L v^{-1} = \{x \mid uxv \in L\}
 
 - [Recognizers recognize context quotients](context-quotient-2.md)
 - [Accepting set for a context quotient](context-accept.md)
-- [Finite syntactic Monoid of recognizer](../recognition/finite-syntactic-monoid-of-recognizer.md)
-- [Recognizes syntactic Morphism](../recognition/recognizes-syntactic-morphism.md)
-- [Syntactic Accept](../syntactic/syntactic-accept.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
-- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
+- [Finite recognizers give finite syntactic monoids](../recognition/finite-syntactic-monoid-of-recognizer.md)
+- [The syntactic morphism recognizes its language](../recognition/recognizes-syntactic-morphism.md)
+- [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
+- [Syntactic morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

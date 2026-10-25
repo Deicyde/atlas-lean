@@ -35,9 +35,9 @@ empty or has another symbol on top it goes to $\mathsf{done}$. At $\mathsf{done}
 - [Moving a table marker between stacks](mv-mark.md)
 - [Next label of the lookup scan](scan-next.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Cmp B](../../../MathlibExt/turing-machine/bit-ops/cmp-b.md)
-- [Move B](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit-block comparison statement](../../../MathlibExt/turing-machine/bit-ops/cmp-b.md)
+- [Bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Sources
 

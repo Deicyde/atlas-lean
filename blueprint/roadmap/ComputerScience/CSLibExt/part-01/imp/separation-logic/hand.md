@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.IMP.HAssertion.hand
 ---
 
-# Hand
+# Conjunction of heap assertions
 
-Ordinary conjunction of heap assertions on the same heap.
+**Conjunction of heap assertions.** For heap assertions $P$ and $Q$, the assertion
+$P \wedge Q$ holds of a store $s$ and a heap $h$ exactly when $P$ holds of $s$ and $h$ and $Q$
+holds of $s$ and the same heap $h$.
 
 ## Depends on
 
-- [HAssertion](hassertion.md)
+- [Heap assertion](hassertion.md)
 
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

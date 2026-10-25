@@ -21,15 +21,15 @@ the accepting label if $s = \tau$ and the rejecting label otherwise.
 - [The SUBSET-SUM verifier program](prog.md)
 - [Stack contents of the SUBSET-SUM verifier](st.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Distinct4](../../../../../MathlibExt/turing-machine/bit-ops/distinct4.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Comparison](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b-run.md)
+- [Four pairwise distinct stacks](../../../../../MathlibExt/turing-machine/bit-ops/distinct4.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Correctness of the bit-block comparison](../../../../../MathlibExt/turing-machine/bit-ops/cmp-b-run.md)
 
 ## Sources
 

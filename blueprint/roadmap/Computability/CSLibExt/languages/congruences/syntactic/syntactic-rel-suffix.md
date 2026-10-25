@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Language.syntacticRel_suffix
 ---
 
-# Syntactic Rel suffix
+# Syntactic equivalence is stable under right multiplication
 
-Syntactic equivalence is stable under adding a common right context.
+**Syntactic equivalence is stable under right multiplication.** Let $L$ be a language over an
+alphabet $\Sigma$. If two words $x, y \in \Sigma^*$ are syntactically equivalent for $L$, then
+for every word $w \in \Sigma^*$ the words $xw$ and $yw$ are syntactically equivalent for $L$.
 
 ## Depends on
 
-- [Syntactic Rel](syntactic-rel.md)
+- [Syntactic equivalence](syntactic-rel.md)
 
 ## Sources
 

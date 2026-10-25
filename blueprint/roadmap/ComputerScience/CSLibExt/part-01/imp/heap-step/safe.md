@@ -5,22 +5,23 @@ statement: formalized
 lean: Cslib.IMP.Safe
 ---
 
-# Safe
+# Safe heap configurations
 
-A configuration is safe when no reachable configuration is stuck
-at a command other than `skip`.
+**Safe heap configurations.** A heap configuration, consisting of a heap command, a store and
+a heap, is safe when every heap configuration reachable from it in zero or more heap steps
+either has command $\mathtt{skip}$ or can take a further heap step.
 
 ## Depends on
 
-- [HConfig](hconfig.md)
+- [Heap configurations](hconfig.md)
 
 ## Proof depends on
 
-- [HStep](hstep.md)
-- [HSteps](hsteps.md)
+- [Small-step semantics of heap commands](hstep.md)
+- [Multi-step heap execution](hsteps.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](heap-cmd.md)
-- [State](../syntax/state.md)
+- [Heap commands](heap-cmd.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

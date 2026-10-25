@@ -41,7 +41,7 @@ is the bit encoding of the init family of $E$ for $x, Y, m, T, H$ followed by $o
 - [The row-0 init family of an encoding](../situation/part-06/init-family.md)
 - [Clause layout of a machine encoding](../situation/part-01/layout.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 

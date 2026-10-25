@@ -30,7 +30,7 @@ cell family for $T$ and $H$ followed by $o$.
 - [The one-hot cell family](oh-family.md)
 - [The one-hot generator](prog.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -49,16 +49,16 @@ cell family for $T$ and $H$ followed by $o$.
 - [Generator run over one time step](tbody-run.md)
 - [Dense clause](../../dense-sat/clause.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Emit](../../../../MathlibExt/turing-machine/program/emit.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Incr](../../../../MathlibExt/turing-machine/program/incr.md)
-- [Mul run](../../../../MathlibExt/turing-machine/program/mul-run.md)
-- [Push List](../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Pushing a constant list](../../../../MathlibExt/turing-machine/program/emit.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Counter increment](../../../../MathlibExt/turing-machine/program/incr.md)
+- [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
+- [Pushing a list of symbols onto one stack](../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

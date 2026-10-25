@@ -13,21 +13,21 @@ same clocked evaluator.
 
 ## Depends on
 
-- [Code Cells](../clocked/code-cells.md)
-- [Code](../code/code.md)
+- [The code stack](../clocked/code-cells.md)
+- [Codes for single-tape machines](../code/code.md)
 - [The clocked evaluator](../code/eval-steps.md)
 
 ## Proof depends on
 
-- [Cfg](../code/cfg.md)
-- [Act](../code/act.md)
+- [Explicit configurations](../code/cfg.md)
+- [Acting on a configuration](../code/act.md)
 - [Output](../code/output.md)
-- [Cfg After](../code/cfg-after.md)
-- [Init](../code/init.md)
-- [Lookup](../code/lookup.md)
-- [Lookup eq of code Cells eq](lookup-eq-of-code-cells-eq.md)
-- [Step](../code/step.md)
-- [Step Or Stay](../code/step-or-stay.md)
+- [Clocked configuration of a code](../code/cfg-after.md)
+- [Initial configuration of the code simulation](../code/init.md)
+- [Table lookup of a code](../code/lookup.md)
+- [The code stack determines the table lookups](lookup-eq-of-code-cells-eq.md)
+- [One step of a code](../code/step.md)
+- [One step of a code, or stay when halted](../code/step-or-stay.md)
 
 ## Sources
 

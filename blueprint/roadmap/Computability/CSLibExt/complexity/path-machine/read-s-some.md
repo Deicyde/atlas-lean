@@ -27,15 +27,15 @@ other stack is unchanged.
 - [The unary read instruction](read-s.md)
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Add U](../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [Adding units to target stacks](../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Push All](../../../MathlibExt/turing-machine/program/push-all.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Pushing symbols onto several stacks](../../../MathlibExt/turing-machine/program/push-all.md)
 
 ## Sources
 

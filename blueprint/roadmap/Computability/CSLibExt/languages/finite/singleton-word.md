@@ -7,9 +7,10 @@ proof: formalized
 lean: Cslib.Language.IsRegular.singleton_word
 ---
 
-# Singleton word
+# Single-word languages are regular
 
-A language containing a single word is regular.
+**Single-word languages are regular.** For every word $w$ over any alphabet, the language
+whose only word is $w$ is regular.
 
 ## Depends on
 

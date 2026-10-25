@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.increment_time_replicate_true
 ---
 
-# Increment time replicate true
+# Incrementing the all-ones counter costs the full width
 
-All-one input realizes the worst-case cost of one flip per existing bit.
+**Incrementing the all-ones counter costs the full width.** For every $k$, the cost of
+incrementing the $k$-bit counter whose $k$ bits are all $1$ is exactly $k$.
 
 ## Depends on
 
-- [Increment](increment.md)
+- [Binary counter increment](increment.md)
 
 ## Sources
 

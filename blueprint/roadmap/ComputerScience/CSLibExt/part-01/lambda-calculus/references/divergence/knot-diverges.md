@@ -12,24 +12,24 @@ Landin's knot never reaches a value from the empty store.
 
 ## Depends on
 
-- [Knot](knot.md)
-- [Steps](../semantics/steps.md)
+- [Landin's knot](knot.md)
+- [Multi-step evaluation with references](../semantics/steps.md)
 - [Store](../semantics/store.md)
-- [Term](../syntax/term.md)
-- [Value](../syntax/value.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
 
 ## Proof depends on
 
-- [Body](body.md)
-- [Body₀](body-2.md)
-- [C₁](c.md)
-- [Id U](id-u.md)
-- [Loop A](loop-a.md)
-- [Reachable](reachable.md)
+- [The recursive function of Landin's knot, with the cell free](body.md)
+- [The stored recursive function of Landin's knot](body-2.md)
+- [The knot after allocation](c.md)
+- [The identity on Unit](id-u.md)
+- [Cycle term of Landin's knot](loop-a.md)
+- [Configurations on the evaluation path of Landin's knot](reachable.md)
 - [Step](../semantics/step.md)
-- [Deterministic](../semantics/deterministic.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Ty](../syntax/ty.md)
+- [Determinism of evaluation with references](../semantics/deterministic.md)
+- [Substitution of a term for variable zero](../syntax/instantiate.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

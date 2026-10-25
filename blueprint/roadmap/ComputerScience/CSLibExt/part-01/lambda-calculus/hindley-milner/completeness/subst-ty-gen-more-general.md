@@ -6,30 +6,34 @@ proof: formalized
 lean: Cslib.HindleyMilner.substTy_gen_moreGeneral
 ---
 
-# Subst Ty gen more General
+# Substituting into a generalization is more general
 
-Substituting into a generalization is more general than generalizing after substituting.
+**Substituting into a generalization is more general.** For a typing context $\Gamma$, a
+monotype $\tau$ and a type substitution $r$, the scheme obtained by applying $r$ to the free
+type variables of the generalization of $\tau$ in $\Gamma$ is more general than the
+generalization of $r(\tau)$ in $r(\Gamma)$: every instance of the latter is an instance of the
+former, and every free type variable of the former is a free type variable of the latter.
 
 ## Depends on
 
-- [Ctx](../typing/ctx.md)
-- [Subst](../typing/subst.md)
-- [More General](../typing/more-general.md)
-- [Subst Ty](../typing/subst-ty.md)
-- [Ty](../typing/ty.md)
-- [Gen](../typing/gen.md)
+- [Typing context](../typing/ctx.md)
+- [Applying a type substitution to a context](../typing/subst.md)
+- [More general type scheme](../typing/more-general.md)
+- [Applying a type substitution to a scheme](../typing/subst-ty.md)
+- [Monotypes](../typing/ty.md)
+- [Generalization of a monotype](../typing/gen.md)
 - [Subst](../../../../part-02/unification/basic/subst.md)
 - [Subst](../../../../part-02/unification/basic/subst-2.md)
 
 ## Proof depends on
 
-- [Ftv](../typing/ftv.md)
-- [Lookup](../typing/lookup.md)
-- [Visible Vars](../typing/visible-vars.md)
-- [Scheme](../typing/scheme.md)
-- [Eval](../typing/eval.md)
-- [Inst](../typing/inst.md)
-- [To Scheme](../typing/to-scheme.md)
+- [Free type variables of a context](../typing/ftv.md)
+- [Context lookup](../typing/lookup.md)
+- [Free type variables of a name's visible scheme](../typing/visible-vars.md)
+- [Type schemes](../typing/scheme.md)
+- [Evaluation of a type scheme](../typing/eval.md)
+- [Instantiation of a type scheme](../typing/inst.md)
+- [Monotypes as type schemes](../typing/to-scheme.md)
 - [Term](../../../../part-02/unification/basic/term.md)
 - [Exists of mem vars subst](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
 - [Subst congr](../../../../part-02/unification/basic/subst-congr.md)

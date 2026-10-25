@@ -31,7 +31,7 @@ $(\rho_{l+1}, \rho_l)$ for $l = 0, \dots, 3m-1$, in this order.
 - [Bit encoding of an edge list](../color/edge-bits.md)
 - [Row vertices of a diamond](../ham-path/hp-r.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -48,13 +48,13 @@ $(\rho_{l+1}, \rho_l)$ for $l = 0, \dots, 3m-1$, in this order.
 - [Row copy sites of the HAMPATH emitter](row-sites.md)
 - [Bits of concatenated edge lists](../ham-path-check/edge-bits-append.md)
 - [Tops of the diamonds](../ham-path/hp-t.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [For Loop run](../../../../../MathlibExt/turing-machine/program/for-loop-run.md)
-- [Sum From](../../../../../MathlibExt/turing-machine/program/sum-from.md)
-- [Sum From le](../../../../../MathlibExt/turing-machine/program/sum-from-le.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact running time of a for loop over a counter](../../../../../MathlibExt/turing-machine/program/for-loop-run.md)
+- [Sum of consecutive values](../../../../../MathlibExt/turing-machine/program/sum-from.md)
+- [Termwise bound on a sum of consecutive values](../../../../../MathlibExt/turing-machine/program/sum-from-le.md)
 
 ## Sources
 

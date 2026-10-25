@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Term.Value
 ---
 
-# Value
+# Values of the simply typed lambda calculus with references
 
-Values: abstractions, unit, and store locations.
+**Values of the simply typed lambda calculus with references.** A term is a value if and only
+if it is an abstraction $\lambda{:}T.\,t$, the unit value $\mathsf{unit}$, or a store location
+$l$.
 
 ## Depends on
 
-- [Term](term.md)
+- [Terms of the simply typed lambda calculus with references](term.md)
 
 ## Sources
 

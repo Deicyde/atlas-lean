@@ -15,10 +15,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Comp Outputs](comp-outputs.md)
-- [Comp TM](comp-tm.md)
-- [Comp Time](comp-time.md)
-- [Glue](glue.md)
+- [The composite machine computes the composite function in time](comp-outputs.md)
+- [The composite machine](comp-tm.md)
+- [Time bound of the composite machine](comp-time.md)
+- [Symbol translation between composed machines](glue.md)
 
 ## Sources
 

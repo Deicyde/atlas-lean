@@ -18,24 +18,24 @@ reduction to it.
 
 - [Polynomial-time many-one reduction](../../../cook-levin/poly-many-one-red.md)
 - [SAT as a decision problem](../../../cook-levin/sat-dec.md)
-- [Sat Verifier](../../../sat-time-m/sat-verifier.md)
-- [Bitstring Encoding](../../../../MathlibExt/complexity/bitstring-encoding.md)
-- [Bit Decode](../../../../MathlibExt/complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../../../MathlibExt/complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../../../MathlibExt/complexity/bit-encode.md)
-- [Delimit](../../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../../MathlibExt/complexity/undelimit.md)
-- [Undelimit Blocks](../../../../MathlibExt/complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../../../MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Decision Complexity Class](../../../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../../MathlibExt/complexity/decision-problem.md)
-- [Is Poly Time](../../../../MathlibExt/complexity/is-poly-time.md)
-- [NP](../../../../MathlibExt/complexity/np.md)
+- [The SAT verifier](../../../sat-time-m/sat-verifier.md)
+- [Bitstring encodings](../../../../MathlibExt/complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../../../MathlibExt/complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../../../MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../../../MathlibExt/complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../../MathlibExt/complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../../../MathlibExt/complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../../../MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Complexity classes](../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../MathlibExt/complexity/decision-problem.md)
+- [Polynomial-time computable functions](../../../../MathlibExt/complexity/is-poly-time.md)
+- [The complexity class NP](../../../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 
 - [Every NP problem reduces to binary-index CNF-SAT](sat-dec-np-hard.md)
-- [Sat Dec mem NP of is Poly Time](../../../sat-time-m/sat-dec-mem-np-of-is-poly-time.md)
+- [SAT is in NP if its verifier is polynomial-time](../../../sat-time-m/sat-dec-mem-np-of-is-poly-time.md)
 
 ## Sources
 

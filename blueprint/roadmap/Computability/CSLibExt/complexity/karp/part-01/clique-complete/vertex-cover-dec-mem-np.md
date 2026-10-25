@@ -15,9 +15,9 @@ exactly $k$ vertices, is in NP.
 ## Depends on
 
 - [The VERTEX-COVER problem](../clique/vertex-cover-dec.md)
-- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
-- [NP](../../../../../MathlibExt/complexity/np.md)
+- [Complexity classes](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
+- [The complexity class NP](../../../../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 

@@ -20,12 +20,12 @@ Move `E` back onto `D`, symbol by symbol.
 - [The 3-COLOR emitter machine](prog.md)
 - [Stack alphabets of the 3-coloring emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Literal-marker test](is-lit.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

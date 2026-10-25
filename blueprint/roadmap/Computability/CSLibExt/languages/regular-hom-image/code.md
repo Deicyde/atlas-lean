@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Language.HomImage.code
 ---
 
-# Code
+# Edge labels for a letter's image
 
-The labels of the path spelling out `φ a`: one ε-move when `φ a` is empty.
+**Edge labels for a letter's image.** For a map $\varphi$ from letters of $T$ to words over $T'$
+and a letter $a$, the label sequence of $a$ is a single ε-label when $\varphi(a)$ is empty, and
+otherwise the letters of $\varphi(a)$ in order, each as a non-ε label.
 
 ## Depends on
 

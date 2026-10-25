@@ -7,20 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.mem_inorder
 ---
 
-# Mem inorder
+# Membership in the inorder traversal of an AVL tree
 
-Inorder traversal contains exactly the structurally present keys;
-inherited from `BinarySearchTree`.
+**Membership in the inorder traversal of an AVL tree.** A key $x$ occurs in the inorder
+traversal of a tree $T$ if and only if $x$ lies in $T$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Tree](tree.md)
-- [Inorder](inorder.md)
+- [Membership in an AVL tree](mem.md)
+- [Binary trees with cached heights](tree.md)
+- [Inorder traversal of an AVL tree](inorder.md)
 
 ## Proof depends on
 
-- [To Binary Tree](to-binary-tree.md)
+- [Erasing the cached heights of an AVL tree](to-binary-tree.md)
 - [Mem inorder](../../part-02/binary-search-tree/mem-inorder.md)
 
 ## Sources

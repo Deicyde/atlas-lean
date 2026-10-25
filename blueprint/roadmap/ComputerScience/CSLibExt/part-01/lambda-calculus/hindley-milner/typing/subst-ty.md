@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.HindleyMilner.Scheme.substTy
 ---
 
-# Subst Ty
+# Applying a type substitution to a scheme
 
-Apply a type substitution to the free variables of a scheme.
+**Applying a type substitution to a scheme.** For a type substitution $s$ and a type
+scheme $\sigma$, $s\sigma$ is the scheme obtained from $\sigma$ by replacing every free type
+variable $x$ with the monotype $s(x)$, read as a scheme with no bound variables. The bound
+variables of $\sigma$ are left unchanged.
 
 ## Depends on
 
-- [Scheme](scheme.md)
+- [Type schemes](scheme.md)
 - [Subst](../../../../part-02/unification/basic/subst.md)
 
 ## Proof depends on
 
-- [To Scheme](to-scheme.md)
+- [Monotypes as type schemes](to-scheme.md)
 - [Subst](../../../../part-02/unification/basic/subst-2.md)
 
 ## Sources

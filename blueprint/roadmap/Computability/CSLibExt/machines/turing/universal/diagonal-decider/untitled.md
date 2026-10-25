@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Turing.Universal.Diag.Check.Γ
 ---
 
-# Γ
+# Stack alphabet of the layout machine
 
-Every stack holds bits.
+**Stack alphabet of the layout machine.** Every stack of the layout machine holds bits: the
+alphabet of each stack is the type of Booleans.
 
 ## Depends on
 
-- [K](k.md)
+- [Stacks of the checking machine](k.md)
 
 ## Sources
 

@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.Language.ContextFreeGrammar.cfgPDA_finitelySupported
 ---
 
-# Cfg PDA finitely Supported
+# The grammar-simulating pushdown automaton is finitely supported
 
-The simulating PDA is finitely supported: its only reachable stack
-symbols are the initial nonterminal and the finitely many symbols occurring
-in production outputs, and the only input labels it can consume from a
-supported stack symbol are terminals occurring in production outputs.
+**The grammar-simulating pushdown automaton is finitely supported.** For every context-free
+grammar $g$ over an alphabet $T$, the one-state pushdown automaton simulating $g$ is finitely
+supported.
+
+The finite sets witnessing this are the set containing the single state, the set of stack
+symbols consisting of the initial nonterminal of $g$ and all symbols occurring in right-hand
+sides of productions of $g$, and the set of terminals occurring in right-hand sides of
+productions of $g$.
 
 ## Depends on
 
 - [Finitely supported pushdown automata](../../../../automata/pda/basic/finitely-supported.md)
-- [Cfg PDA](cfg-pda.md)
+- [The pushdown automaton simulating a context-free grammar](cfg-pda.md)
 
 ## Proof depends on
 
 - [Pushdown automaton](../../../../automata/pda/basic/pda.md)
-- [Cfg Step](cfg-step.md)
+- [Transitions of the grammar-simulating pushdown automaton](cfg-step.md)
 
 ## Sources
 

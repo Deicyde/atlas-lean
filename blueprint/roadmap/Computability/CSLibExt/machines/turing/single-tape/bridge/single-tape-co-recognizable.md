@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.Decidability.SingleTapeDecidable.singleTapeCoRecognizable
 ---
 
-# Single Tape Co Recognizable
+# Single-tape decidable predicates are co-recognizable
 
-A decidable predicate is co-recognizable.
+**Single-tape decidable predicates are co-recognizable.** Let $\alpha$ be a primcodable type
+(it has an encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is primitive
+recursive). If a predicate $p$ on $\alpha$ is decidable by a single-tape machine, then $p$ is
+co-recognizable by a single-tape machine, that is, its complement $\neg p$ is recognizable by a
+single-tape machine.
 
 ## Depends on
 
-- [Single Tape Co Recognizable](../classes/single-tape-co-recognizable.md)
-- [Single Tape Decidable](../classes/single-tape-decidable.md)
+- [Co-recognizability by single-tape machines](../classes/single-tape-co-recognizable.md)
+- [Predicates decidable by a single-tape Turing machine](../classes/single-tape-decidable.md)
 
 ## Proof depends on
 
-- [Single Tape Recognizable](../classes/single-tape-recognizable.md)
+- [Predicates recognizable by a single-tape Turing machine](../classes/single-tape-recognizable.md)
 - [Post's theorem](single-tape-decidable-iff-single-tape-re.md)
 
 ## Sources

@@ -29,8 +29,8 @@ stack but the output empty, and output $1^m 0 1^n 0 o$ if a clause is open and $
 ## Proof depends on
 
 - [The dense-to-binary converter program](prog.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

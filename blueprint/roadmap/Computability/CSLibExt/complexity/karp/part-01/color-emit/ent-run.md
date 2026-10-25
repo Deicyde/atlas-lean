@@ -36,7 +36,7 @@ with $q$ above its old contents.
 - [Consistency edges between two occurrences of a variable](../color/cons-edges.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -54,9 +54,9 @@ with $q$ above its old contents.
 - [Moving an earlier literal vertex from $D$ to $U$](mv-u-run.md)
 - [Skipping an earlier literal vertex](sk-u-run.md)
 - [The binary code of natural numbers is injective](../../../sat-verifier-spec/encode-nat-inj.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

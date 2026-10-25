@@ -16,14 +16,14 @@ Variable indices are binary-coded in the encoding of formulas.
 ## Depends on
 
 - [SAT as a decision problem](../../cook-levin/sat-dec.md)
-- [Decision Complexity Class](../../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
-- [NP](../../../MathlibExt/complexity/np.md)
+- [Complexity classes](../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
+- [The complexity class NP](../../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 
 - [The SAT verifier is polynomial-time](is-poly-time-sat-verifier.md)
-- [Sat Dec mem NP of is Poly Time](../../sat-time-m/sat-dec-mem-np-of-is-poly-time.md)
+- [SAT is in NP if its verifier is polynomial-time](../../sat-time-m/sat-dec-mem-np-of-is-poly-time.md)
 
 ## Sources
 

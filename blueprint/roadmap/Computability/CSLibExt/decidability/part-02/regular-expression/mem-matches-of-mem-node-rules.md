@@ -17,7 +17,7 @@ the regular expression at node $k$.
 
 ## Depends on
 
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [Encoded regular expressions](encoded-regex.md)
 - [Language of a sentential form](form-lang.md)
 - [Node at an index](node.md)

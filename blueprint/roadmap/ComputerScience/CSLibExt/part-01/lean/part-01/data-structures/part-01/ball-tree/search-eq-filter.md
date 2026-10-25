@@ -7,25 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BallTree.search_eq_filter
 ---
 
-# Search eq filter
+# Ball-tree search is exact
 
-The search of a valid tree is its point list filtered by the distance
-predicate; pruning against the bounding spheres loses no point.
+**Ball-tree search is exact.** For every ball tree $T$ over $\mathbb{Z}^d$ satisfying the
+bounding-sphere invariant, every query point $q \in \mathbb{Z}^d$ and every $r \in \mathbb{N}$, the
+search of $T$ for $q$ and $r$ equals the list of points of $T$, from left to right, filtered to
+the points $p$ whose squared distance from $q$ is at most $r$, in their order. Pruning against
+the bounding spheres loses no point.
 
 ## Depends on
 
-- [Ball Tree](ball-tree.md)
-- [Valid](valid.md)
-- [Dist Sq](dist-sq.md)
-- [Search](search.md)
-- [To List](to-list.md)
+- [Ball tree](ball-tree.md)
+- [Bounding-sphere invariant of a ball tree](valid.md)
+- [Squared Euclidean distance](dist-sq.md)
+- [Ball-tree similarity search](search.md)
+- [Point list of a ball tree](to-list.md)
 
 ## Proof depends on
 
-- [Dist Sq comm](dist-sq-comm.md)
-- [Dist Sq le two mul](dist-sq-le-two-mul.md)
+- [Symmetry of squared distance](dist-sq-comm.md)
+- [Relaxed triangle inequality for squared distance](dist-sq-le-two-mul.md)
 - [Search Aux](search-aux.md)
-- [To List Aux](to-list-aux.md)
+- [Accumulating traversal of a ball tree](to-list-aux.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Language.grammarNTs
 ---
 
-# Grammar NTs
+# Nonterminals mentioned by a grammar
 
-The finitely many nonterminals mentioned by a grammar: its initial
-nonterminal, all production inputs, and all nonterminals in outputs.
+**Nonterminals mentioned by a grammar.** The nonterminals mentioned by a context-free
+grammar $g$ form the finite set consisting of the initial nonterminal of $g$, the left-hand side
+of every production of $g$, and every nonterminal occurring in the right-hand side of a
+production of $g$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Form NTs](form-nts.md)
+- [Nonterminals of a sentential form](form-nts.md)
 
 ## Sources
 

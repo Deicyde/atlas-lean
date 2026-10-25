@@ -15,7 +15,7 @@ The posterior weight of the path `z` for the sequence `xs n`.
 
 ## Proof depends on
 
-- [Posterior](../../latent-variable/expectation-maximization/posterior.md)
+- [Posterior of a latent-variable model](../../latent-variable/expectation-maximization/posterior.md)
 - [Joint](joint.md)
 
 ## Sources

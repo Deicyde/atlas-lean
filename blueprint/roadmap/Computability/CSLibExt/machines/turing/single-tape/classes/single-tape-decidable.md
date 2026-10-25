@@ -5,11 +5,17 @@ statement: formalized
 lean: Cslib.Decidability.SingleTapeDecidable
 ---
 
-# Single Tape Decidable
+# Predicates decidable by a single-tape Turing machine
 
-`p` is **decidable by a single-tape machine**: for some finite tape alphabet `Symbol` with
-an injective copy `ι` of the input bits, some `SingleTapeTM` outputs `[ι b]` on the input word
-`(encodeNat (encode a)).map ι`, every other cell blank, with `b = true` exactly when `p a`.
+**Predicates decidable by a single-tape Turing machine.** Let $\alpha$ be a type with a
+primitive recursive encoding into $\mathbb{N}$. A predicate $p$ on $\alpha$ is decidable by a
+single-tape machine when there are a finite, nonempty tape alphabet $\Sigma$, an injective map
+$\iota$ from the bits $\{0, 1\}$ to $\Sigma$ and a single-tape Turing machine $M$ over $\Sigma$
+such that for every $a \in \alpha$ there is a bit $b$ for which $M$ outputs the one-symbol word
+$\iota(b)$ on the input word obtained by writing the binary encoding of the code of $a$ in
+$\mathbb{N}$ letter by letter through $\iota$, and $b = 1$ exactly when $p(a)$ holds. Here $M$
+outputs a word $w$ on an input when its run from the input halts with exactly $w$ on the tape,
+every other cell blank and the head on the first symbol of $w$.
 
 ## Depends on
 

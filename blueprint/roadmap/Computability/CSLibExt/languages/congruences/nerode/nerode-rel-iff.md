@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Language.nerodeRel_iff
 ---
 
-# Nerode Rel iff
+# Continuation characterization of Nerode equivalence
 
-Nerode equivalence means that every continuation gives the same membership answer.
+**Continuation characterization of Nerode equivalence.** Let $L$ be a language over an
+alphabet $\Sigma$. Two words $x, y \in \Sigma^*$ are Nerode equivalent for $L$ if and only if,
+for every word $z \in \Sigma^*$, $xz \in L$ holds exactly when $yz \in L$.
 
 ## Depends on
 
-- [Nerode Rel](nerode-rel.md)
+- [Nerode equivalence](nerode-rel.md)
 
 ## Sources
 

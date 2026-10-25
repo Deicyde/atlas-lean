@@ -13,7 +13,7 @@ word $x$ to the left quotient $x^{-1}L = \{z : xz \in L\}$.
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 - [Residual languages of reachable states](../minimality/reachable-residuals.md)
 
 ## Proof depends on

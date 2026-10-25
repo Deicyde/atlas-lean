@@ -7,22 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.not_mem_delete_self
 ---
 
-# Not mem delete self
+# The deleted key is gone
 
-The deleted key is absent after deletion from an ordered tree.
+**The deleted key is gone.** If $t$ is an ordered binary search tree over a linearly ordered type
+and $x$ is a key, then $x$ does not occur in the tree obtained by deleting $x$ from $t$.
 
 ## Depends on
 
 - [Mem](../../../part-02/binary-search-tree/mem.md)
 - [Ordered](../../../part-02/binary-search-tree/ordered.md)
-- [Delete](delete.md)
+- [Deletion from a binary search tree](delete.md)
 
 ## Proof depends on
 
 - [All](../../../part-02/binary-search-tree/all.md)
 - [All iff forall mem](../../../part-02/binary-search-tree/all-iff-forall-mem.md)
-- [Join](join.md)
-- [Mem join](mem-join.md)
+- [Join of two binary trees](join.md)
+- [Membership in a join](mem-join.md)
 
 ## Sources
 

@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.greedySetCover_covers
 ---
 
-# Greedy Set Cover covers
+# The greedy set cover is a cover
 
-If every element of `U` lies in some set of `F`, the greedy result covers `U`.
+**The greedy set cover is a cover.** Let $F$ be a list of finite sets and $U$ a finite set
+such that every element of $U$ lies in some set of $F$. Then every element of $U$ lies in some
+set of the list returned by the greedy set cover algorithm on $F$ and $U$.
 
 ## Depends on
 
-- [Greedy Set Cover](greedy-set-cover.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
-- [Best Set](best-set.md)
+- [Greedy choice of a set](best-set.md)
 
 ## Sources
 

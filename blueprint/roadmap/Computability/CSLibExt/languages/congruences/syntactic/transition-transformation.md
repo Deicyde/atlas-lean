@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Language.transitionTransformation
 ---
 
-# Transition Transformation
+# Transition transformation of a word
 
-The transformation induced by reading a word in `M`.
+**Transition transformation of a word.** For a DFA $M$ and a word $x$, the transition
+transformation of $x$ is the transition action of $x$, the map sending each state $q$ to the
+state that $M$ reaches by reading $x$ from $q$, regarded as an element of the monoid of state
+transformations of $M$ (multiplied in reading order: $fg$ applies $f$ first, then $g$).
 
 ## Depends on
 
-- [State Transformation](state-transformation.md)
+- [State transformation monoid](state-transformation.md)
 
 ## Proof depends on
 
-- [Transition Action](transition-action.md)
+- [Transition action of a word](transition-action.md)
 
 ## Sources
 

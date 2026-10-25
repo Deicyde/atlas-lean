@@ -27,8 +27,8 @@ and with every stack other than $N$, $X$, $E$, $M$, $U$, $V$ and $P$ unchanged.
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [One marking pass](../path/mark-pass.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
-- [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Unary counter](../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
@@ -37,11 +37,11 @@ and with every stack other than $N$, $X$, $E$, $M$, $U$, $V$ and $P$ unchanged.
 - [The edge loop of a pass](edges-run.md)
 - [A marking pass preserves the length](../path-correct/length-mark-pass.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Decr](../../../MathlibExt/turing-machine/program/decr.md)
-- [Move B run](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Decrement](../../../MathlibExt/turing-machine/program/decr.md)
+- [Running the bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

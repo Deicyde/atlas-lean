@@ -7,14 +7,14 @@ navigation: module
 
 ## Language
 
-- [Regular Star Height](regular-star-height.md)
-- [Gen Reg Exp](gen-reg-exp.md)
+- [Star height of a regular expression](regular-star-height.md)
+- [Generalized regular expressions](gen-reg-exp.md)
 
 ## Gen Reg Exp
 
-- [Denote](denote.md)
-- [Star Height](star-height.md)
+- [Language of a generalized regular expression](denote.md)
+- [Generalized star height](star-height.md)
 
 ## Language
 
-- [Has Gen Height Le](has-gen-height-le.md)
+- [Bounded generalized star height](has-gen-height-le.md)

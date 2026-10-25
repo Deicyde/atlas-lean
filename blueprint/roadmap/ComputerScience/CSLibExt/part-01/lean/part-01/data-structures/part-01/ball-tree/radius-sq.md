@@ -6,11 +6,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BallTree.radiusSq
 ---
 
-# Radius Sq
+# Squared covering radius
 
-The squared-radius bound for a sphere centered at `c` covering `pts`:
-the maximum squared distance from `c` to a point of `pts`, or `0` if `pts`
-is empty.
+**Squared covering radius.** For a center $c \in \mathbb{Z}^d$ and a list $P$ of points of
+$\mathbb{Z}^d$, the squared covering radius of $P$ about $c$ is the largest squared distance from
+$c$ to a point of $P$, or $0$ if $P$ is empty.
 
 ## Depends on
 
@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dist Sq](dist-sq.md)
+- [Squared Euclidean distance](dist-sq.md)
 
 ## Sources
 

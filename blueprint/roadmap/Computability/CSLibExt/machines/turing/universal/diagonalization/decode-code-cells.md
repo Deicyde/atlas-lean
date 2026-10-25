@@ -15,14 +15,14 @@ Codes with the same code stack have the same clocked semantics
 
 ## Depends on
 
-- [Code](../code/code.md)
+- [Codes for single-tape machines](../code/code.md)
 
 ## Proof depends on
 
-- [Cells Decode](cells-decode.md)
-- [Code Of Entries](code-of-entries.md)
-- [Entries Of Nums](entries-of-nums.md)
-- [Keys Ascend From](keys-ascend-from.md)
+- [Decoding a list of cells](cells-decode.md)
+- [The code of a list of entries](code-of-entries.md)
+- [Reading entries from numbers](entries-of-nums.md)
+- [Ascending keys of a list of entries](keys-ascend-from.md)
 
 ## Sources
 

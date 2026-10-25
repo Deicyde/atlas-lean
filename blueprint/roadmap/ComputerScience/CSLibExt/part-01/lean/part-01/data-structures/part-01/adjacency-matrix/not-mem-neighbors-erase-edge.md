@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.not_mem_neighbors_eraseEdge
 ---
 
-# Not mem neighbors erase Edge
+# Deleting an edge removes the out-neighbor
 
-After deletion, the target vertex is no longer a neighbor of the source.
+**Deleting an edge removes the out-neighbor.** Let $G$ be a directed graph on the vertices
+$0, \dots, n-1$, given by its adjacency matrix, and let $i$ and $j$ be vertices. After the edge
+from $i$ to $j$ is deleted from $G$ (whether or not $G$ had that edge), $j$ is not an
+out-neighbor of $i$.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
-- [Erase Edge](erase-edge.md)
-- [Neighbors](neighbors.md)
+- [Adjacency matrix](adjacency-matrix.md)
+- [Edge deletion in an adjacency matrix](erase-edge.md)
+- [Out-neighbor list](neighbors.md)
 
 ## Proof depends on
 
-- [Has Edge](has-edge.md)
-- [Has Edge erase Edge](has-edge-erase-edge.md)
-- [Mem neighbors](mem-neighbors.md)
+- [Edge query of an adjacency matrix](has-edge.md)
+- [Deleting an edge removes it](has-edge-erase-edge.md)
+- [The out-neighbor list matches the edge query](mem-neighbors.md)
 
 ## Sources
 

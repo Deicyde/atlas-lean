@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.IMP.Valid
 ---
 
-# Valid
+# Validity of a Hoare triple
 
-Semantic validity of a partial-correctness Hoare triple.
+**Validity of a Hoare triple.** For assertions $P$ and $Q$ and a command $c$, the
+partial-correctness Hoare triple $\lbrace P \rbrace\ c\ \lbrace Q \rbrace$ is valid when, for all
+states $s$ and $t$, if $s$ satisfies $P$ and executing $c$ from $s$ terminates in $t$ under the
+big-step semantics, then $t$ satisfies $Q$.
 
 ## Depends on
 
 - [Assertion](assertion.md)
-- [Cmd](../syntax/cmd.md)
+- [Commands of IMP](../syntax/cmd.md)
 
 ## Proof depends on
 
-- [Big Step](../big-step/big-step.md)
-- [State](../syntax/state.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

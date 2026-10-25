@@ -5,10 +5,15 @@ statement: formalized
 lean: Cslib.Turing.SingleTapeTM.compCfgRight
 ---
 
-# Comp Cfg Right
+# Embedding the second machine's configurations into a composite
 
-A configuration of the second machine as one of the composite. (Upstream's private
-`toCompCfg_right`.)
+**Embedding the second machine's configurations into a composite.** Let $M_1$ and $M_2$ be
+single-tape Turing machines over the same alphabet, and let $M$ be their composite, whose states
+are the disjoint union of those of $M_1$ and of $M_2$: $M$ starts in the start state of $M_1$ and
+runs $M_1$, where $M_1$ would halt it enters the start state of $M_2$ instead, and it then runs
+$M_2$ and halts where $M_2$ halts. A configuration of $M_2$ with tape $t$ is sent to the
+configuration of $M$ with the same tape $t$ whose state is the copy of $q$ if $M_2$ is in state
+$q$, and which is halted if $M_2$ has halted.
 
 ## Depends on
 
@@ -17,3 +22,4 @@ This node has no prerequisites.
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.Comp](../../../../../../../sources/v2/CSLibExt.md)
+- public version of upstream CSLib's private `toCompCfg_right`.

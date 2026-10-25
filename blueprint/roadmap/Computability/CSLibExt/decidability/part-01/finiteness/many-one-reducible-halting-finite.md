@@ -21,7 +21,7 @@ partial function of $f(c)$ has finite domain.
 
 - [Diverging once a code halts on zero](../../part-02/totality/until-halts-fun.md)
 - [Domain of the until-halts function](until-halts-fun-dom.md)
-- [Parametrized s-m-n](../../../../MathlibExt/exists-computable-code.md)
+- [Parametrized s-m-n theorem](../../../../MathlibExt/exists-computable-code.md)
 
 ## Sources
 

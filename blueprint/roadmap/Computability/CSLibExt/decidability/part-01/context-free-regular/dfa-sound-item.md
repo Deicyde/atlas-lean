@@ -16,13 +16,13 @@ automaton denoted by $D$, run on $w$ from state $p$, ends in state $q$.
 ## Depends on
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Proof depends on
 
 - [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Yields](../../../languages/context-free/part-02/yields/yields.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Yield of a sentential form](../../../languages/context-free/part-02/yields/yields.md)
 
 ## Sources
 

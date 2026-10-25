@@ -16,7 +16,7 @@ $\varphi$, in order of occurrence in $\varphi$, with each variable kept at its l
 
 ## Proof depends on
 
-- [Vars Of](../../../../sat-time-m/vars-of.md)
+- [Occurrence list of a CNF formula](../../../../sat-time-m/vars-of.md)
 
 ## Sources
 

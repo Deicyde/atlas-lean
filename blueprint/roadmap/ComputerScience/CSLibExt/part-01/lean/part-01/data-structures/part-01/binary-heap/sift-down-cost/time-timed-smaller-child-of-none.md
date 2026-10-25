@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.time_timedSmallerChild_of_none
 ---
 
-# Time timed Smaller Child of none
+# Child selection at a node without children costs nothing
 
-Selecting no child performs no value comparisons or swaps.
+**Child selection at a node without children costs nothing.** Let $a$ be an array over a
+linearly ordered type and $i$ an index. If the smaller-child selection at $i$ in $a$ returns no
+child, then the timed child selection at $i$, with cost counted as the pair (value comparisons,
+array swaps), has cost $(0, 0)$.
 
 ## Depends on
 
-- [Timed Smaller Child](timed-smaller-child.md)
+- [Timed smaller-child selection](timed-smaller-child.md)
 - [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
 
 ## Proof depends on

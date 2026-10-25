@@ -20,7 +20,7 @@ number $n$ some $x \in S$ has $|x| \ge n$, and every $x \in S$ satisfies $|x| \l
 ## Proof depends on
 
 - [Chaitin's incompleteness theorem](exists-bound-of-re-pred-le-k.md)
-- [And](../../../MathlibExt/re/and-2.md)
+- [Recursively enumerable predicates are closed under conjunction](../../../MathlibExt/re/and-2.md)
 
 ## Sources
 

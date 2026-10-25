@@ -17,7 +17,7 @@ unchanged.
 - [Emitter](emitter.md)
 - [Stacks of the tokenize-then-emit machine](k.md)
 - [Alphabets of the tokenize-then-emit machine](untitled.md)
-- [SEmb](../../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 

@@ -40,7 +40,7 @@ with counters $F$ and output the encoded blocks of time step $t$ followed by $o$
 - [Encoded blocks of one time step](blk-t.md)
 - [The cell-shift generator](prog.md)
 - [Step budget for one time step of the shift generator](t-body-b.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -52,15 +52,15 @@ with counters $F$ and output the encoded blocks of time step $t$ followed by $o$
 - [Encoded blocks of one situation](blk-i.md)
 - [Step budget for one block of the shift generator](ik-b.md)
 - [Correctness of the shift generator on the situation chain](is-run.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Add U](../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Copy run](../../../../MathlibExt/turing-machine/program/copy-run.md)
-- [Mul run](../../../../MathlibExt/turing-machine/program/mul-run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [Adding units to target stacks](../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Copying a counter through a scratch stack](../../../../MathlibExt/turing-machine/program/copy-run.md)
+- [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer run](../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

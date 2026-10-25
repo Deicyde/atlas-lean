@@ -5,20 +5,25 @@ statement: formalized
 lean: Cslib.Turing.Universal.Diag.Readout.prog
 ---
 
-# Prog
+# Program of the readout machine
 
-The program: compare the input with `encOut (some [bitSym true]) = [true, true, true, false]`
-and write `false` on a match, `true` otherwise.
+**Program of the readout machine.** The readout machine pops the bits of its input stack
+$X$ one at a time and compares them with $\mathrm{true}, \mathrm{true}, \mathrm{true},
+\mathrm{false}$, which encode, at the output of the clocked universal machine, a halt whose
+output is the single symbol of the bit $\mathrm{true}$. If the input is exactly this list, it
+pushes $\mathrm{false}$ onto its output stack $O$; otherwise (at the first bit that differs,
+when the input ends early, or when a fifth bit follows) it pushes $\mathrm{true}$. Then it
+halts.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Γ](untitled.md)
+- [Stacks of the readout machine](k.md)
+- [Labels of the readout machine](lab.md)
+- [Stack alphabet of the readout machine](untitled.md)
 
 ## Proof depends on
 
-- [Expect](expect.md)
+- [Expecting a bit in the readout machine](expect.md)
 
 ## Sources
 

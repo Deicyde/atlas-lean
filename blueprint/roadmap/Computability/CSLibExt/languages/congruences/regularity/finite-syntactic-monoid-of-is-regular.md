@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Language.finite_syntacticMonoid_of_isRegular
 ---
 
-# Finite syntactic Monoid of is Regular
+# Regular languages have finite syntactic monoids
 
-Regular languages have finite syntactic monoids.
+**Regular languages have finite syntactic monoids.** If $L$ is a regular language, then the
+syntactic monoid of $L$ is finite.
 
 ## Depends on
 
@@ -16,11 +17,11 @@ Regular languages have finite syntactic monoids.
 
 ## Proof depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
-- [Accepts nerode DFA](../nerode/accepts-nerode-dfa.md)
-- [Finite syntactic Monoid of finite dfa](../recognition/finite-syntactic-monoid-of-finite-dfa.md)
-- [Is Regular iff finite nerode Class](../nerode/is-regular-iff-finite-nerode-class.md)
-- [Nerode DFA](../nerode/nerode-dfa.md)
+- [Nerode classes](../nerode/nerode-class.md)
+- [The Nerode automaton recognizes its language](../nerode/accepts-nerode-dfa.md)
+- [Languages of finite automata have finite syntactic monoids](../recognition/finite-syntactic-monoid-of-finite-dfa.md)
+- [Myhill–Nerode theorem, quotient form](../nerode/is-regular-iff-finite-nerode-class.md)
+- [The Nerode automaton](../nerode/nerode-dfa.md)
 
 ## Sources
 

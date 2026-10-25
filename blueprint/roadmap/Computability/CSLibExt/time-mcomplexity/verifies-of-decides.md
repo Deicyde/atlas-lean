@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.TimeMComplexity.verifies_of_decides
 ---
 
-# Verifies of decides
+# A decider is a verifier with witness bound zero
 
-A decider for `L`, ignoring the witness, verifies `L` with witness
-bound `0` (the empty witness). Together with
-`verifierInDeclaredPolyTime_of_decidesInDeclaredPolyTime` this is the `TimeM` form of
-`P ⊆ NP`, for named algorithms.
+**A decider is a verifier with witness bound zero.** Let $L$ be a decision problem and let $f$
+be a timed decider whose return value on every bit string $x$ equals $L(x)$. Then the verifier
+that sends an input $x$ and a witness $w$ to $f(x)$, ignoring $w$, verifies $L$ with the zero
+polynomial as witness bound, so only the empty witness is allowed.
+
+Together with the fact that this verifier has polynomial declared time whenever $f$ does, this is
+the declared-time form of $\mathrm{P} \subseteq \mathrm{NP}$ for named algorithms.
 
 ## Depends on
 
-- [Verifies](verifies.md)
-- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
+- [Verifying a decision problem with a witness bound](verifies.md)
+- [Decision problems](../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

@@ -6,21 +6,21 @@ navigation: module
 
 ## Sum-product: every marginal
 
-- [Drop Last](drop-last.md)
-- [Sum weight mul eliminate cast Succ](sum-weight-mul-eliminate-cast-succ.md)
-- [Belief](belief.md)
-- [Down Message](down-message.md)
+- [Removing the last vertex](drop-last.md)
+- [Summing out the last vertex preserves weighted sums at the other vertices](sum-weight-mul-eliminate-cast-succ.md)
+- [Sum-product belief](belief.md)
+- [Downward message to the last vertex](down-message.md)
 - [Belief propagation is exact on trees](sum-weight-mul-eq-belief.md)
-- [Marginal eq belief](marginal-eq-belief.md)
-- [Belief zero](belief-zero.md)
+- [Beliefs are the unnormalized marginals](marginal-eq-belief.md)
+- [Belief at the root is the root message](belief-zero.md)
 
 ## Max-product: MAP assignments
 
-- [Nonneg Factors](nonneg-factors.md)
-- [Max Message](max-message.md)
-- [Max Eliminate](max-eliminate.md)
-- [Max Weight](max-weight.md)
+- [Nonnegative factors](nonneg-factors.md)
+- [Max-product message](max-message.md)
+- [Maximizing out the last vertex](max-eliminate.md)
+- [Max-product value](max-weight.md)
 - [Max-product decoding](decode.md)
-- [Weight le max Weight](weight-le-max-weight.md)
-- [Weight decode](weight-decode.md)
+- [The max-product value bounds every weight](weight-le-max-weight.md)
+- [Max-product decoding attains the max-product value](weight-decode.md)
 - [Max-product decoding finds a MAP assignment](weight-le-weight-decode.md)

@@ -39,12 +39,12 @@ original contents.
 - [Stages of the one-hot literal routine](ls.md)
 - [Stages of the one-hot precomputation](ps.md)
 - [One-hot generator: the routine for one literal](lit-p.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [For Head](../../../../MathlibExt/turing-machine/program/for-head.md)
-- [Incr](../../../../MathlibExt/turing-machine/program/incr.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)
+- [Counter increment](../../../../MathlibExt/turing-machine/program/incr.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer E](../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Draining a counter while prepending a block](../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The states of a code: the initial state `0` and every state its table enters.
 
 ## Depends on
 
-- [Code](code.md)
+- [Codes for single-tape machines](code.md)
 
 ## Sources
 

@@ -26,15 +26,15 @@ each nonterminal $n$ is read as $L_g(n)$.
 - [Reg Val](reg-val.md)
 - [Shift Sym](shift-sym.md)
 - [Alphabet letters in the extended alphabet](tl.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
-- [Language From](../../../languages/context-free/part-01/basic/language-from.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Interpretation of a sentential form](../../../languages/context-free/part-01/basic/eval-form.md)
+- [Language generated from a nonterminal](../../../languages/context-free/part-01/basic/language-from.md)
 
 ## Proof depends on
 
-- [Eval Symbol](../../../languages/context-free/part-01/basic/eval-symbol.md)
+- [Interpretation of a grammar symbol](../../../languages/context-free/part-01/basic/eval-symbol.md)
 
 ## Sources
 

@@ -13,15 +13,15 @@ and co-recognizable.
 
 ## Depends on
 
-- [Single Tape Co Recognizable](../classes/single-tape-co-recognizable.md)
-- [Single Tape Decidable](../classes/single-tape-decidable.md)
-- [Single Tape Recognizable](../classes/single-tape-recognizable.md)
+- [Co-recognizability by single-tape machines](../classes/single-tape-co-recognizable.md)
+- [Predicates decidable by a single-tape Turing machine](../classes/single-tape-decidable.md)
+- [Predicates recognizable by a single-tape Turing machine](../classes/single-tape-recognizable.md)
 
 ## Proof depends on
 
-- [Single Tape Co Recognizable iff re Pred not](single-tape-co-recognizable-iff-re-pred.md)
-- [Single-tape decidability is Mathlib's `ComputablePred`](single-tape-decidable-iff-computable-pre.md)
-- [Single-tape recognizability is Mathlib's `REPred`](single-tape-recognizable-iff-re-pred.md)
+- [Single-tape co-recognizable predicates are those with an r.e. complement](single-tape-co-recognizable-iff-re-pred.md)
+- [Single-tape decidable predicates are exactly the computable predicates](single-tape-decidable-iff-computable-pre.md)
+- [Single-tape recognizable predicates are exactly the r.e. predicates](single-tape-recognizable-iff-re-pred.md)
 
 ## Sources
 

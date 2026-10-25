@@ -23,13 +23,13 @@ This morphism is surjective, so $M(K)$ is a quotient of a submonoid of $M(L)$.
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
 - [Alphabet preimage](alphabet-preimage.md)
 - [Alphabet preimage morphism](alphabet-preimage-morphism.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
 
 ## Proof depends on
 
-- [Recognizer Image To Syntactic](../recognition/recognizer-image-to-syntactic.md)
+- [Map from a recognizer's image to the syntactic monoid](../recognition/recognizer-image-to-syntactic.md)
 - [The alphabet preimage morphism recognizes the alphabet preimage](recognizes-alphabet-preimage-morphism.md)
-- [Syntactic Accept](../syntactic/syntactic-accept.md)
+- [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)
 
 ## Sources
 

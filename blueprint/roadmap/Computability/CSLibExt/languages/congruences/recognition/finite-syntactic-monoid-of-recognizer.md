@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Language.finite_syntacticMonoid_of_recognizer
 ---
 
-# Finite syntactic Monoid of recognizer
+# Finite recognizers give finite syntactic monoids
 
-If the carrier of a recognizing monoid is finite, then so is the syntactic monoid.
+**Finite recognizers give finite syntactic monoids.** If a monoid morphism from the free monoid
+$\Sigma^*$ to a finite monoid $M$ recognizes a language $L$ over $\Sigma$ through some subset of
+$M$, then the syntactic monoid of $L$ is finite.
 
 ## Depends on
 
-- [Recognizes](recognizes.md)
+- [Recognition of a language by a monoid morphism](recognizes.md)
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
 
 ## Proof depends on
 
-- [Recognizer Image To Syntactic](recognizer-image-to-syntactic.md)
-- [Recognizer Image To Syntactic surjective](recognizer-image-to-syntactic-surjective.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Map from a recognizer's image to the syntactic monoid](recognizer-image-to-syntactic.md)
+- [The image of a recognizer maps onto the syntactic monoid](recognizer-image-to-syntactic-surjective.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
 
 ## Sources
 

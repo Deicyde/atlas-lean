@@ -36,7 +36,7 @@ machine's constants) bounds the step count on every raw input.
 - [Number of situations](../situation/part-01/n.md)
 - [Clause layout of a machine encoding](../situation/part-01/layout.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -52,7 +52,7 @@ machine's constants) bounds the step count on every raw input.
 - [Step count of the Horner rounds](horn-t.md)
 - [Constant of the shift-generator time bound](../shift/sh-c.md)
 - [Window depth of a machine](../situation/part-01/depth.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

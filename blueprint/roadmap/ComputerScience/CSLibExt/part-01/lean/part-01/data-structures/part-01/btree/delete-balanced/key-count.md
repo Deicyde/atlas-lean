@@ -12,7 +12,7 @@ The number of keys stored at the root of a tree.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
+- [Raw B-trees](../../btree-2/btree.md)
 
 ## Sources
 

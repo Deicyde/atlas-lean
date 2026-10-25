@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.rightUnique_transitionRelation
 ---
 
-# Right Unique transition Relation
+# Single-tape Turing machines are deterministic
 
-A single-tape machine is deterministic: a configuration has at most one successor.
+**Single-tape Turing machines are deterministic.** For a single-tape Turing machine $M$, every
+configuration of $M$ has at most one successor under the transition relation of $M$.
 
 ## Depends on
 

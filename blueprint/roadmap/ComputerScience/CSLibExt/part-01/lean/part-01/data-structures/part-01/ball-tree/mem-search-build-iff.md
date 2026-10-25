@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BallTree.mem_search_build_iff
 ---
 
-# Mem search build iff
+# Search of a built ball tree
 
-Membership in the search of a built tree, stated on the input.
+**Search of a built ball tree.** Let $L$ be a list of points of $\mathbb{Z}^d$, let
+$q, p \in \mathbb{Z}^d$ and let $r$ be a natural number. Then $p$ is returned by the similarity
+search with query $q$ and squared radius $r$ on the ball tree built from $L$ if and only if $p$
+occurs in $L$ and the squared distance from $q$ to $p$ is at most $r$.
 
 ## Depends on
 
-- [Build](build.md)
-- [Dist Sq](dist-sq.md)
-- [Search](search.md)
+- [Building a ball tree by halving](build.md)
+- [Squared Euclidean distance](dist-sq.md)
+- [Ball-tree similarity search](search.md)
 
 ## Proof depends on
 
-- [Mem search iff](mem-search-iff.md)
-- [Mem to List build iff](mem-to-list-build-iff.md)
-- [To List](to-list.md)
-- [Valid build](valid-build.md)
+- [Search of a valid ball tree](mem-search-iff.md)
+- [Points of a built ball tree](mem-to-list-build-iff.md)
+- [Point list of a ball tree](to-list.md)
+- [Ball trees built by halving are valid](valid-build.md)
 
 ## Sources
 

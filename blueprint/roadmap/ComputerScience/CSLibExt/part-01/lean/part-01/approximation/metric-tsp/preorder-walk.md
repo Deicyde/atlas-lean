@@ -5,17 +5,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.preorderWalk
 ---
 
-# Preorder Walk
+# Preorder walk
 
-The preorder walk, one unit per vertex visited.
+**Preorder walk.** For a forest $F$, the preorder walk of $F$ is the preorder walk of $F$ with
+the empty list as accumulator: a timed computation that returns the vertices of $F$ in preorder,
+at one time unit per vertex.
 
 ## Depends on
 
-- [Forest](forest.md)
+- [Rooted forest in left-child right-sibling form](forest.md)
 
 ## Proof depends on
 
-- [Preorder Walk Aux](preorder-walk-aux.md)
+- [Preorder walk with an accumulator](preorder-walk-aux.md)
 
 ## Sources
 

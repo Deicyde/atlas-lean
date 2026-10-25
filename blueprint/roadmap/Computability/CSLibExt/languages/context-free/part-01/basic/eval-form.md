@@ -5,11 +5,12 @@ statement: formalized
 lean: Cslib.Language.evalForm
 ---
 
-# Eval Form
+# Interpretation of a sentential form
 
-The language a sentential form denotes under an assignment `V` of
-languages to nonterminals: concatenate the denotations of its symbols in
-order. The empty form denotes `{[]}`.
+**Interpretation of a sentential form.** Under an assignment $V$ of languages to nonterminals, a
+sentential form denotes the concatenation, in order, of the languages its symbols denote: a
+terminal $a$ denotes the language containing only the one-letter word $a$, and a nonterminal $A$
+denotes $V(A)$. The empty sentential form denotes the language containing only the empty word.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eval Symbol](eval-symbol.md)
+- [Interpretation of a grammar symbol](eval-symbol.md)
 
 ## Sources
 

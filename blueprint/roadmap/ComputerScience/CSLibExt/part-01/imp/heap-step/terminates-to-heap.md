@@ -6,28 +6,30 @@ proof: formalized
 lean: Cslib.IMP.terminates_toHeap
 ---
 
-# Terminates to Heap
+# Embedding preserves termination
 
-Termination of a plain command is termination of its embedding at
-any heap, unchanged.
+**Embedding preserves termination.** Let $c$ be a plain IMP command with embedding
+$\overline{c}$ into the heap language, let $s, s'$ be stores and let $h$ be a heap. Then $c$
+terminates from $s$ with final store $s'$ if and only if $(\overline{c}, s, h)$ reaches
+$(\mathtt{skip}, s', h)$ in zero or more heap steps.
 
 ## Depends on
 
-- [Cmd](../syntax/cmd.md)
-- [To Heap](to-heap.md)
-- [HSteps](hsteps.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Embedding of IMP into the heap language](to-heap.md)
+- [Multi-step heap execution](hsteps.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](heap-cmd.md)
-- [State](../syntax/state.md)
-- [Terminates](../small-step/terminates.md)
+- [Heap commands](heap-cmd.md)
+- [IMP program states](../syntax/state.md)
+- [Termination of an IMP command](../small-step/terminates.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [BExp](../syntax/bexp.md)
-- [Of to Heap](of-to-heap.md)
-- [To Heap of steps](to-heap-of-steps.md)
-- [Steps](../small-step/steps.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
+- [Executions of embedded commands are plain executions](of-to-heap.md)
+- [Plain executions lift to the heap language](to-heap-of-steps.md)
+- [IMP multi-step relation](../small-step/steps.md)
 
 ## Sources
 

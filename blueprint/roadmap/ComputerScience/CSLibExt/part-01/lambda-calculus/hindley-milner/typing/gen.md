@@ -5,21 +5,23 @@ statement: formalized
 lean: Cslib.HindleyMilner.gen
 ---
 
-# Gen
+# Generalization of a monotype
 
-Generalize the type variables of `τ` that are not free in `Γ`: `α` becomes the bound
-variable `inr α`.
+**Generalization of a monotype.** Given a typing context $\Gamma$ and a monotype $\tau$, the
+generalization of $\tau$ with respect to $\Gamma$ is the type scheme obtained from $\tau$ by
+turning each type variable $\alpha$ that is not free in $\Gamma$ into the bound variable with
+index $\alpha$, while type variables free in $\Gamma$ stay free.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [Scheme](scheme.md)
-- [Ty](ty.md)
+- [Typing context](ctx.md)
+- [Type schemes](scheme.md)
+- [Monotypes](ty.md)
 
 ## Proof depends on
 
-- [Ftv](ftv.md)
-- [To Scheme](to-scheme.md)
+- [Free type variables of a context](ftv.md)
+- [Monotypes as type schemes](to-scheme.md)
 - [Term](../../../../part-02/unification/basic/term.md)
 - [Subst](../../../../part-02/unification/basic/subst-2.md)
 

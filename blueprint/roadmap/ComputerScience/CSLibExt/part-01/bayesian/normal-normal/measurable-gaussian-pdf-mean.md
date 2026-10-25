@@ -8,8 +8,18 @@ lean: Cslib.MachineLearning.Bayesian.measurable_gaussianPDF_mean
 
 # Completing the square
 
-**Completing the square**: the `N(m₀, v₀)` prior density at `θ` times the `N(θ, v)` likelihood
-of `x` is the `N(m₀, v₀ + v)` marginal density of `x` times the posterior density at `θ`. -/
+**Completing the square.** Let $m_0, \theta, x \in \mathbb{R}$ and $v_0, v > 0$, and write
+$\varphi_{\mu, s}(y) = (2 \pi s)^{-1/2} \exp(-(y - \mu)^2 / (2 s))$ for the density of the Gaussian
+with mean $\mu$ and variance $s$. With $\mu(x) = (v m_0 + v_0 x)/(v_0 + v)$ and
+$s = v_0 v/(v_0 + v)$,
+
+$$
+\varphi_{m_0, v_0}(\theta)\,\varphi_{\theta, v}(x) =
+\varphi_{m_0, v_0 + v}(x)\,\varphi_{\mu(x), s}(\theta):
+$$
+
+the prior density at $\theta$ times the likelihood of $x$ is the marginal density of $x$ times the
+posterior density at $\theta$. -/
 theorem gaussianPDFReal_mul_gaussianPDFReal (m₀ : ℝ) {v₀ v : ℝ≥0} (h₀ : v₀ ≠ 0) (h : v ≠ 0)
     (θ x : ℝ) :
     gaussianPDFReal m₀ v₀ θ * gaussianPDFReal θ v x =

@@ -27,7 +27,7 @@ return label $\mathsf{ret}$ and keeps every other label.
 - [Stack embedding of the lookup into the clause-check driver](emb-l.md)
 - [Lookup labels in the clause-check driver](l.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
-- [Map S](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Translating a statement along a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 
 ## Sources
 

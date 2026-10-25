@@ -8,16 +8,25 @@ lean: Cslib.MachineLearning.Bayesian.bayesPosterior_apply_singleton
 
 # Bayes' rule for countably many hypotheses
 
-**Bayes' rule for countably many hypotheses**: the posterior probability of `θ` is its prior
-times its likelihood, divided by the evidence `∑ θ', μ {θ'} * κ θ' {x}`.
+**Bayes' rule for countably many hypotheses.** Let $\Theta$ be a countable measurable space and
+$\mathcal X$ a measurable space, both with measurable singletons, let $\kappa$ be a kernel from
+$\Theta$ to $\mathcal X$ (the likelihood) and $\mu$ a measure on $\Theta$ (the prior). For every
+observation $x \in \mathcal X$ and every $\theta \in \Theta$, the Bayes posterior $\pi_x$ of $\mu$
+after observing $x$ satisfies
+
+$$\pi_x(\{\theta\}) = \frac{\mu(\{\theta\}) \, \kappa_\theta(\{x\})}
+{\sum_{\theta' \in \Theta} \mu(\{\theta'\}) \, \kappa_{\theta'}(\{x\})},$$
+
+where the quotient is taken in $[0, \infty]$ with $0 / 0 = 0$ and $a / \infty = 0$ for every $a$.
+The denominator is the evidence of $x$.
 
 ## Depends on
 
-- [Bayes Posterior](bayes-posterior.md)
+- [Bayes posterior](bayes-posterior.md)
 
 ## Proof depends on
 
-- [Comp apply singleton eq tsum](comp-apply-singleton-eq-tsum.md)
+- [The evidence as a sum over hypotheses](comp-apply-singleton-eq-tsum.md)
 
 ## Sources
 

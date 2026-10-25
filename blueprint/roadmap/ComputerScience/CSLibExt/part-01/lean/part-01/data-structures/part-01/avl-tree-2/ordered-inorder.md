@@ -7,20 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.ordered_inorder
 ---
 
-# Ordered inorder
+# The inorder traversal of an ordered AVL tree is strictly increasing
 
-The inorder traversal of an ordered tree is strictly increasing;
-inherited from `BinarySearchTree`.
+**The inorder traversal of an ordered AVL tree is strictly increasing.** Let $\alpha$ be a
+linearly ordered type. If a tree $t$ with cached heights over $\alpha$ is ordered, then in
+the inorder traversal of $t$ every key is less than every key that comes after it.
 
 ## Depends on
 
-- [Ordered](ordered.md)
-- [Tree](tree.md)
-- [Inorder](inorder.md)
+- [Ordered AVL trees](ordered.md)
+- [Binary trees with cached heights](tree.md)
+- [Inorder traversal of an AVL tree](inorder.md)
 
 ## Proof depends on
 
-- [To Binary Tree](to-binary-tree.md)
+- [Erasing the cached heights of an AVL tree](to-binary-tree.md)
 - [Ordered inorder](../../part-02/binary-search-tree/ordered-inorder.md)
 
 ## Sources

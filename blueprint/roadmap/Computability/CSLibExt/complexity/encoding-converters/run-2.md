@@ -17,7 +17,7 @@ Exact `n`-step runs of this converter.
 ## Proof depends on
 
 - [Prog](prog-2.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

@@ -25,7 +25,7 @@ The machine in fact takes quadratically many steps; the theorem states only the 
 - [Prog](prog.md)
 - [Start label of the Hamiltonian-path verifier](start.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -53,8 +53,8 @@ The machine in fact takes quadratically many steps; the theorem states only the 
 - [Decoding a PATH instance](../../../path/decode-p.md)
 - [Encoding of a PATH instance](../../../path/encode-p.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

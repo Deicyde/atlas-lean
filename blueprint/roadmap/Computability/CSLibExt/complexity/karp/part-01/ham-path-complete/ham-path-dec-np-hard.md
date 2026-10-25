@@ -14,9 +14,9 @@ lean: Cslib.Complexity.Karp.hamPathDec_npHard
 
 - [The HAMPATH problem](../ham-path/ham-path-dec.md)
 - [Polynomial-time many-one reduction](../../../../cook-levin/poly-many-one-red.md)
-- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
-- [NP](../../../../../MathlibExt/complexity/np.md)
+- [Complexity classes](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
+- [The complexity class NP](../../../../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 
@@ -26,15 +26,15 @@ lean: Cslib.Complexity.Karp.hamPathDec_npHard
 - [The SAT-to-HAMPATH reduction map](../ham-path/reduce-ham.md)
 - [SAT ≤ HAMPATH preserves membership](../ham-path-correct/sat-dec-eq-ham-path-dec-reduce-ham.md)
 - [SAT as a decision problem](../../../../cook-levin/sat-dec.md)
-- [Bitstring Encoding](../../../../../MathlibExt/complexity/bitstring-encoding.md)
-- [Bit Decode](../../../../../MathlibExt/complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../../../../MathlibExt/complexity/bit-encode.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
-- [Undelimit Blocks](../../../../../MathlibExt/complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../../../../MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Is Poly Time](../../../../../MathlibExt/complexity/is-poly-time.md)
+- [Bitstring encodings](../../../../../MathlibExt/complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../../../../MathlibExt/complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../../../../MathlibExt/complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../../../MathlibExt/complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../../../../MathlibExt/complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../../../../MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Polynomial-time computable functions](../../../../../MathlibExt/complexity/is-poly-time.md)
 
 ## Sources
 

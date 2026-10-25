@@ -5,5 +5,5 @@ navigation: module
 
 # Rice Theorem
 
-- [Acceptable Numbering fixed point](acceptable-numbering-fixed-point.md)
-- [Rice theorem](rice-theorem.md)
+- [Rogers's fixed-point theorem for acceptable numberings](acceptable-numbering-fixed-point.md)
+- [Rice's theorem](rice-theorem.md)

@@ -33,8 +33,8 @@ a bit string $x$, then the SAT decision problem rejects $x$.
 - [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [CNFSat](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

@@ -14,18 +14,18 @@ total-correctness system.
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
-- [TDerivable](tderivable.md)
-- [TValid](../hoare-total/tvalid.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Total-correctness Hoare logic](tderivable.md)
+- [Validity of total-correctness Hoare triples](../hoare-total/tvalid.md)
 
 ## Proof depends on
 
-- [Entails](../hoare/entails.md)
-- [Big Step](../big-step/big-step.md)
-- [State](../syntax/state.md)
+- [Entailment of assertions](../hoare/entails.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [IMP program states](../syntax/state.md)
 - [Strengthen](strengthen-2.md)
-- [Tderivable wp](tderivable-wp.md)
-- [Wp](../hoare-total/wp.md)
+- [The weakest-precondition triple is derivable in total-correctness Hoare logic](tderivable-wp.md)
+- [Weakest precondition for total correctness](../hoare-total/wp.md)
 
 ## Sources
 

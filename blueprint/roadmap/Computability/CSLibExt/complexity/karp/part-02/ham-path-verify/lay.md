@@ -22,7 +22,7 @@ and $Q$ are empty.
 
 - [Witness encoding](../../part-01/ham-path-check/enc-w.md)
 - [Bit encoding of an edge list](../../part-01/color/edge-bits.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

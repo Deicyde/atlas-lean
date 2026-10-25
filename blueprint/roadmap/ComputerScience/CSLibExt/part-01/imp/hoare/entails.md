@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.IMP.Assertion.Entails
 ---
 
-# Entails
+# Entailment of assertions
 
-Pointwise implication between assertions.
+**Entailment of assertions.** An assertion $P$ entails an assertion $Q$ when every state
+that satisfies $P$ also satisfies $Q$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ Pointwise implication between assertions.
 
 ## Proof depends on
 
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

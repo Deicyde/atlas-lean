@@ -20,13 +20,13 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Acceptance as a label list](accepts-iff-exists-labels.md)
-- [Coded Cons](../to-recursive/coded-cons.md)
-- [Primrec coded Cons](../to-recursive/primrec-coded-cons.md)
-- [Head eq head I](../to-recursive/head-eq-head-i.md)
-- [To List cons](../to-recursive/to-list-cons.md)
-- [To List tail](../to-recursive/to-list-tail.md)
-- [Exists](../../../../../MathlibExt/re/exists.md)
-- [Primrec₂ of finite left](../../../../../MathlibExt/turing-machine/recursive/of-tm2/primrec-of-finite-left.md)
+- [Pushing a cell onto a coded tape](../to-recursive/coded-cons.md)
+- [Pushing a cell onto a coded tape is primitive recursive](../to-recursive/primrec-coded-cons.md)
+- [The head of a stack tape is the first entry of its list](../to-recursive/head-eq-head-i.md)
+- [Pushing onto a stack tape, on cell lists](../to-recursive/to-list-cons.md)
+- [Tail of a stack tape, on cell lists](../to-recursive/to-list-tail.md)
+- [Existential projection preserves recursive enumerability](../../../../../MathlibExt/re/exists.md)
+- [Joint primitive recursion over a finite first argument](../../../../../MathlibExt/turing-machine/recursive/of-tm2/primrec-of-finite-left.md)
 
 ## Sources
 

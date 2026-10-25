@@ -24,8 +24,8 @@ of two encoded regular expressions, is primitive recursive.
 
 - [Words of a given length](../regular/words-of-length.md)
 - [Boolean membership test for lists of natural numbers](../../part-01/primrec-list/mem-b.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded grammars as pairs](../../../languages/context-free/part-01/encoded/equiv-prod.md)
 - [Items found by the membership procedure](../../part-01/context-free/found.md)
 - [Candidate items for membership](../../part-01/context-free/items.md)
 - [The membership test for context-free grammars](../../part-01/context-free/mem-language-b.md)

@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.IMP.TValid.whileVariant
 ---
 
-# While Variant
+# Variant rule for while loops
 
-The variant rule for total correctness of while loops: if every guarded
-body execution from the invariant terminates, restores the invariant, and
-strictly decreases the variant, then the loop terminates in a state
-satisfying the invariant with the guard false.
+**Variant rule for while loops.** Let $I$ be an assertion (the invariant), $V$ a function
+from states to natural numbers (the variant), $b$ a Boolean guard and $c$ a command. Suppose
+that for every state $s$ satisfying $I$ in which $b$ evaluates to true, there is a terminating
+big-step execution of $c$ from $s$ ending in a state $s'$ that satisfies $I$ with
+$V(s') < V(s)$. Then the total-correctness Hoare triple with precondition $I$, command
+$\mathtt{while}\ b\ \mathtt{do}\ c$ and postcondition "$I$ holds and $b$ evaluates to false"
+is valid.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [BExp](../syntax/bexp.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Big Step](../big-step/big-step.md)
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
-- [TValid](tvalid.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
+- [Validity of total-correctness Hoare triples](tvalid.md)
 
 ## Sources
 

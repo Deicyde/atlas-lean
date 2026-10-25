@@ -31,21 +31,21 @@ $C = M = q$.
 - [The subset-sum emitter machine](prog.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
 - [Output block of an edge number](../subset-sum-digits/edge-enc.md)
 - [Is V](is-v.md)
 - [Start label of the subset-sum emitter](is-v-val.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Copy run](../../../../../MathlibExt/turing-machine/program/copy-run.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Rep](../../../../../MathlibExt/turing-machine/program/rep.md)
-- [Xfer E](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Copying a counter through a scratch stack](../../../../../MathlibExt/turing-machine/program/copy-run.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Repeated block](../../../../../MathlibExt/turing-machine/program/rep.md)
+- [Draining a counter while prepending a block](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

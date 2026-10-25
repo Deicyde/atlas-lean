@@ -28,21 +28,21 @@ output $o$, and the counters of $F$ except that $\mathrm{Xn} = r$ and $\mathrm{C
 - [Labels of the initial-row generator](lb.md)
 - [Empty scratch counters](rest.md)
 - [Prog](prog.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Stages of the multiplication routine](../counter-view/ms.md)
 - [The multiplication routine of a counter machine](../counter-view/mul-s.md)
 - [Loop phases of the initial-row generator](ph.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Copy run](../../../../MathlibExt/turing-machine/program/copy-run.md)
-- [Decr](../../../../MathlibExt/turing-machine/program/decr.md)
-- [Mul run](../../../../MathlibExt/turing-machine/program/mul-run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Copying a counter through a scratch stack](../../../../MathlibExt/turing-machine/program/copy-run.md)
+- [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
+- [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

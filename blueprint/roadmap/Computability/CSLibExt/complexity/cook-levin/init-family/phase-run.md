@@ -45,13 +45,13 @@ $N_b$ and $V$ variables.
 - [Literals of a clause kind](clits.md)
 - [Prog](prog.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [A runtime `for` loop in the counter view](../counter-view/st-loop.md)
 - [One phase-loop iteration of the initial-row generator](body-run.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

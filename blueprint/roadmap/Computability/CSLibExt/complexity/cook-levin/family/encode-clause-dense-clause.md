@@ -24,7 +24,7 @@ followed by the clause terminator $00$.
 
 - [Dense clause](../../dense-sat/clause.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
-- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

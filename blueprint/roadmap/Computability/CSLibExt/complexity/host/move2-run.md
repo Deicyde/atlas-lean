@@ -22,15 +22,15 @@ followed by $S(b)$, and $S'(k) = S(k)$ for every other stack $k$.
 
 ## Depends on
 
-- [Ends Bit Block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Is Bit Block](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Move B](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [End of a bit block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit blocks](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [Bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Proof depends on
 
-- [Move B run](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Running the bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

@@ -25,12 +25,12 @@ order, on top of $y$, and every stack other than $X$ and $Y$ is unchanged.
 - [The KG-map machine](prog.md)
 - [Stack alphabets of the clique reduction machine](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Test for the input bit true](is-t.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

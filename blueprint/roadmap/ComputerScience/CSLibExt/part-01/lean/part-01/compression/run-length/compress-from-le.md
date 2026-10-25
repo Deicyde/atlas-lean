@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RunLength.compressFrom_le
 ---
 
-# Compress From le
+# Compression from a short pending run emits counts at most 255
 
-Every count emitted from a legal pending run fits in the 8-bit field.
+**Compression from a short pending run emits counts at most 255.** For every bit $c$, every
+natural number $r \le 255$ and every finite bit list $w$, every entry of the compression
+$C(c, r, w)$ of $w$ from the pending run $(c, r)$ is at most $255$.
 
 ## Depends on
 
-- [Compress From](compress-from.md)
+- [Run-length compression from a pending run](compress-from.md)
 
 ## Sources
 

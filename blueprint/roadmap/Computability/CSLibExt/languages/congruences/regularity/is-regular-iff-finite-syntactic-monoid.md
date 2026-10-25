@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Language.isRegular_iff_finite_syntacticMonoid
 ---
 
-# Is Regular iff finite syntactic Monoid
+# Regular languages are those with finite syntactic monoid
 
-A language is regular exactly when its syntactic monoid is finite.
+**Regular languages are those with finite syntactic monoid.** A language $L$ is regular if
+and only if the syntactic monoid of $L$ is finite.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ A language is regular exactly when its syntactic monoid is finite.
 
 ## Proof depends on
 
-- [Finite syntactic Monoid of is Regular](finite-syntactic-monoid-of-is-regular.md)
-- [Is Regular of finite syntactic Monoid](../recognition/is-regular-of-finite-syntactic-monoid.md)
+- [Regular languages have finite syntactic monoids](finite-syntactic-monoid-of-is-regular.md)
+- [Finite syntactic monoid implies regularity](../recognition/is-regular-of-finite-syntactic-monoid.md)
 
 ## Sources
 

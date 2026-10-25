@@ -8,14 +8,21 @@ lean: Cslib.MachineLearning.GraphicalModels.ConditionalRandomField.forward_eq
 
 # The forward variables are path weights
 
-**The forward variables are path weights**: `forward t s` is the total weight of the paths
-of length `t + 1` ending in `s`.
+**The forward variables are path weights.** Let $c$ be a chain CRF with a finite set of
+states $S$ and weights in a semiring $R$ carrying a relation $\le$, and let $x$ be an
+observation sequence. For every $t \in \mathbb{N}$ and every state $s \in S$, the forward
+variable $\alpha_t(s)$ equals the total path weight of the label paths
+$z = (z_0, \dots, z_t) \in S^{t+1}$ that end in $z_t = s$:
+
+$$\alpha_t(s) = \sum_{z \in S^{t+1},\ z_t = s} w_t(z),$$
+
+where $w_t(z)$ is the path weight of $z$.
 
 ## Depends on
 
-- [Chain CRF](chain-crf.md)
-- [Forward](forward.md)
-- [Path Weight](path-weight.md)
+- [Linear-chain conditional random field](chain-crf.md)
+- [Forward variables of a chain CRF](forward.md)
+- [Weight of a label path in a chain CRF](path-weight.md)
 
 ## Sources
 

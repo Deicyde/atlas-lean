@@ -60,11 +60,11 @@ variable.
 - [Entry label of a literal](pre.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Is Bit](../../../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Bit test for the top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
 - [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer E](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Draining a counter while prepending a block](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

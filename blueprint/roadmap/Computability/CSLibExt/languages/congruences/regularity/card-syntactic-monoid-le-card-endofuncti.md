@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Language.card_syntacticMonoid_le_card_endofunction
 ---
 
-# Card syntactic Monoid le card endofunction
+# Endofunction bound for the syntactic monoid
 
-A coarser numerical bound uses all endofunctions on the state space.
+**Endofunction bound for the syntactic monoid.** Let $M$ be a DFA with a finite
+set of states $Q$, and suppose the syntactic monoid of the language accepted by $M$ is
+finite. Then that syntactic monoid has at most $|Q|^{|Q|}$ elements.
 
 ## Depends on
 
@@ -16,10 +18,10 @@ A coarser numerical bound uses all endofunctions on the state space.
 
 ## Proof depends on
 
-- [State Transformation](../syntactic/state-transformation.md)
-- [Transition Monoid](../syntactic/transition-monoid.md)
-- [Card syntactic Monoid le card transition Monoid](card-syntactic-monoid-le-card-transition.md)
-- [State Transformation Equiv](../syntactic/state-transformation-equiv.md)
+- [State transformation monoid](../syntactic/state-transformation.md)
+- [Transition monoid of a DFA](../syntactic/transition-monoid.md)
+- [The syntactic monoid is no larger than the transition monoid](card-syntactic-monoid-le-card-transition.md)
+- [State transformations as functions](../syntactic/state-transformation-equiv.md)
 
 ## Sources
 

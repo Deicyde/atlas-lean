@@ -13,7 +13,7 @@ lean: Cslib.MachineLearning.Variational.elbo_eq_log_evidence_sub_kl
 
 ## Depends on
 
-- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Probability distributions on a finite latent space](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
 - [Elbo](elbo.md)
 - [Evidence](evidence.md)
 - [Kl](kl.md)

@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.IMP.HAssertion.Entails
 ---
 
-# Entails
+# Entailment of heap assertions
 
-Pointwise implication between heap assertions.
+**Entailment of heap assertions.** A heap assertion $P$ entails a heap assertion $Q$ when, for
+every store $s$ and every heap $h$, if $P$ holds of $s$ and $h$, then $Q$ holds of $s$ and $h$.
 
 ## Depends on
 
-- [HAssertion](hassertion.md)
+- [Heap assertion](hassertion.md)
 
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

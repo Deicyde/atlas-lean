@@ -34,14 +34,14 @@ $L$, $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$, $T$, $H$ and $N$, followed by 
 - [Initial counters of the transition-clause generator](init-f.md)
 - [Prog](prog.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Reach](../../../../MathlibExt/turing-machine/program/reach.md)
+- [Reachability for a TM2 machine](../../../../MathlibExt/turing-machine/program/reach.md)
 
 ## Proof depends on
 
 - [Time bound of the generator](gen-bound.md)
 - [Correctness of the clause-family generator, with its explicit time bound](gen-run.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

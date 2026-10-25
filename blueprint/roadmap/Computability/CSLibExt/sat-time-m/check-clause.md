@@ -5,11 +5,15 @@ statement: formalized
 lean: Cslib.CookLevin.checkClause
 ---
 
-# Check Clause
+# Clause check against a witness
 
-Check one clause against the witness: empty clause fails; otherwise
-scan literals in order, succeeding at the first satisfied literal. One
-tick per literal examined, plus the lookup cost.
+**Clause check against a witness.** Given a list $N$ of natural numbers, a list $w$ of
+booleans and a CNF clause $C$, the check of $C$ against $N$ and $w$ is the timed computation (a
+returned boolean together with a natural-number cost) that scans the literals $(x, b)$ of $C$ in
+order: for each it charges one tick, then looks up $x$ in $N$ and $w$, paying the cost of the
+lookup, and returns true if the value found equals the polarity $b$; otherwise it moves on to the
+next literal. When the literals are exhausted it returns false at no further cost; in particular
+the empty clause fails.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ tick per literal examined, plus the lookup cost.
 
 ## Proof depends on
 
-- [Lookup Var](lookup-var.md)
+- [Witness lookup](lookup-var.md)
 
 ## Sources
 

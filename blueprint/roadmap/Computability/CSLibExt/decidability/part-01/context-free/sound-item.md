@@ -16,13 +16,13 @@ grammar of $g$, the factor of $w$ from position $i$ to position $j$.
 
 ## Depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Proof depends on
 
 - [Factor of a word](factor.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Yields](../../../languages/context-free/part-02/yields/yields.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Yield of a sentential form](../../../languages/context-free/part-02/yields/yields.md)
 
 ## Sources
 

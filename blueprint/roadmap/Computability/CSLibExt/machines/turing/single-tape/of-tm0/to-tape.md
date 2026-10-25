@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Turing.SingleTapeTM.toTape
 ---
 
-# To Tape
+# Post–Turing reading of a tape over the non-blank symbols
 
-Read a `BiTape` over the non-blank symbols as a `TM0` tape, cell by cell: the cells of
-`BiTape.toTape` through `cellSymbol`.
+**Post–Turing reading of a tape over the non-blank symbols.** Let $\Gamma_0$ be an alphabet
+whose default symbol is the blank. The Post–Turing reading of a two-way tape $t$ whose cells are
+blank or hold non-blank symbols of $\Gamma_0$ is the Post–Turing machine tape over $\Gamma_0$
+obtained cell by cell: take the view of $t$ as a tape of cells, each cell at its position relative
+to the head and blank cells past the ends, and replace each cell by its symbol, a non-blank symbol
+$x$ by $x$ itself and the blank cell by the blank of $\Gamma_0$.
 
 ## Depends on
 
-- [Non Blank](non-blank.md)
+- [Non-blank symbols](non-blank.md)
 
 ## Proof depends on
 
-- [To Tape](../tape-view/to-tape.md)
-- [Cell Symbol](cell-symbol.md)
+- [Cell view of a two-way tape](../tape-view/to-tape.md)
+- [Cell symbol](cell-symbol.md)
 
 ## Sources
 

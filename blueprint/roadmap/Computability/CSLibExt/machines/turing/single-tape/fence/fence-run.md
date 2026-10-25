@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.Turing.SingleTapeTM.fenceRun
 ---
 
-# Fence Run
+# The running transition of the fenced machine
 
-The transition of the fenced machine in the state `run q`: on a symbol or a padding cell it
-makes the transition of `tm` on the cell `FenceSymbol.read` of it; on a wall or a blank cell it
+**The running transition of the fenced machine.** In the running state of a state $q$ of a
+single-tape machine $M$, the fenced machine of $M$ acts on the cell under its head as follows: on a
+symbol $a$ it makes the lifted transition of $M$ in state $q$ on $a$; on a left or right padding
+cell it makes the lifted transition of $M$ in state $q$ on a blank; on a wall or a blank cell it
 leaves the cell unchanged, does not move, and enters the trap.
 
 ## Depends on
 
-- [Fence State](fence-state.md)
-- [Fence Symbol](fence-symbol.md)
+- [States of the fenced machine](fence-state.md)
+- [Fenced alphabet](fence-symbol.md)
 
 ## Proof depends on
 
-- [Fence Lift](fence-lift.md)
+- [A transition lifted to the fenced machine](fence-lift.md)
 
 ## Sources
 

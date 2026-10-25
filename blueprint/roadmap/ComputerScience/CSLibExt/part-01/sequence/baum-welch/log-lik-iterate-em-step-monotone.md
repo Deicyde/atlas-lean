@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.Sequence.BaumWelch.logLik_iterate_emStep_monotone
 
 ## Depends on
 
-- [Log Lik](../../latent-variable/expectation-maximization/log-lik.md)
+- [Log-likelihood of a latent-variable model](../../latent-variable/expectation-maximization/log-lik.md)
 - [Rich](rich.md)
 - [Valid HMM](valid-hmm.md)
 - [Em Step](em-step.md)

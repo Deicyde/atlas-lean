@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Language.canonicalResidualHom_unique
 ---
 
-# Canonical Residual Hom unique
+# Uniqueness of the canonical residual map
 
-Accessibility makes the canonical residual map the unique DFA morphism to the residual DFA.
+**Uniqueness of the canonical residual map.** For an accessible DFA $M$ accepting the
+language $L$, every DFA morphism from $M$ to the residual-language DFA of $L$ equals the
+canonical residual map.
 
 ## Depends on
 
 - [Accessible](../minimality/accessible.md)
-- [DFAHom](dfahom.md)
-- [Canonical Residual Hom](canonical-residual-hom.md)
+- [Morphisms of DFAs](dfahom.md)
+- [The canonical residual map](canonical-residual-hom.md)
 
 ## Proof depends on
 
-- [Map eval](map-eval.md)
+- [DFA morphisms commute with evaluation](map-eval.md)
 - [Reachable State](../minimality/reachable-state.md)
 
 ## Sources

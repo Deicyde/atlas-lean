@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Language.mem_language_iff_yields
 ---
 
-# Mem language iff yields
+# Language membership through yields
 
-Membership in a grammar's language, through yields.
+**Language membership through yields.** Let $g$ be a context-free grammar with initial
+nonterminal $S$. A terminal word $w$ belongs to the language of $g$ if and only if the
+one-symbol sentential form $S$ yields $w$.
 
 ## Depends on
 
-- [Yields](yields.md)
+- [Yield of a sentential form](yields.md)
 
 ## Proof depends on
 

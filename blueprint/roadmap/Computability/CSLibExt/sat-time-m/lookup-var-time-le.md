@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.CookLevin.lookupVar_time_le
 ---
 
-# Lookup Var time le
+# Cost bound for witness lookup
 
-Lookup costs at most one tick per occurring variable.
+**Cost bound for witness lookup.** For every list $N$ of natural numbers, every list $w$ of
+booleans and every natural number $x$, the cost of looking up $x$ in $N$ and $w$ is at most the
+length of $N$.
 
 ## Depends on
 
-- [Lookup Var](lookup-var.md)
+- [Witness lookup](lookup-var.md)
 
 ## Sources
 

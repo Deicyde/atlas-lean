@@ -11,7 +11,7 @@ The output of a configuration: the tape from the head rightwards, without traili
 
 ## Depends on
 
-- [Cfg](cfg.md)
+- [Explicit configurations](cfg.md)
 
 ## Sources
 

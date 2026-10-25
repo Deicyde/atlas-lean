@@ -5,15 +5,17 @@ statement: formalized
 lean: Cslib.Turing.Universal.Clocked.mark
 ---
 
-# Mark
+# Moving a marker onto the scan buffer
 
-Move the marker on top of `C` onto `B`, then go to `next`.
+**Moving a marker onto the scan buffer.** For a label $\ell$, this instruction pops the top
+symbol of the code stack $C$ and discards it (doing nothing if $C$ is empty), pushes a marker (the
+bit false) onto the scan buffer $B$, and goes to $\ell$; the state bit is unchanged.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Γ](untitled.md)
+- [Stacks of the clocked universal machine](k.md)
+- [Labels of the clocked universal machine](lab.md)
+- [Stack alphabet of the clocked universal machine](untitled.md)
 
 ## Sources
 

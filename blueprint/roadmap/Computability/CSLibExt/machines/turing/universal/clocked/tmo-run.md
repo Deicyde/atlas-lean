@@ -8,24 +8,28 @@ lean: Cslib.Turing.Universal.Clocked.tmo_run
 
 # Writing a timeout
 
-**Writing a timeout.** From `tmo`, the machine reaches `done` with `false` on `O`.
+**Writing a timeout.** Let $c$ be a code, $t$ a natural number, $k$ a configuration and $v$ a
+bit. Started at the label $\mathsf{tmo}$ with state bit $v$ and the stacks of the code $c$, the
+clock $t$ and the configuration $k$ with next state and action $0$, the clocked universal program
+reaches the label $\mathsf{done}$ in exactly one step, with the same state bit and the same stacks
+except that the output stack $O$ holds the timeout encoding, the single bit false.
 
 ## Depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Enc Out](enc-out.md)
-- [Prog](prog.md)
-- [Stk](stk.md)
-- [Γ](untitled.md)
-- [Code](../code/code.md)
-- [Cfg](../code/cfg.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Stacks of the clocked universal machine](k.md)
+- [Labels of the clocked universal machine](lab.md)
+- [Output encoding of the clocked universal machine](enc-out.md)
+- [The clocked universal program](prog.md)
+- [The stacks of a simulated configuration](stk.md)
+- [Stack alphabet of the clocked universal machine](untitled.md)
+- [Codes for single-tape machines](../code/code.md)
+- [Explicit configurations](../code/cfg.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Incr](../../../../../MathlibExt/turing-machine/program/incr.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Counter increment](../../../../../MathlibExt/turing-machine/program/incr.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Language.IsRegular.isContextFree
 ---
 
-# Regular
+# Regular languages over a finite alphabet are context-free
 
-Over a finite alphabet, every regular language is context-free.
+**Regular languages over a finite alphabet are context-free.** Over a finite alphabet,
+every regular language is context-free.
 
 Finiteness of the alphabet is necessary: a grammar has finitely many
 productions, hence mentions only finitely many terminal symbols, but a DFA
@@ -20,11 +21,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Valuation](basic/is-valuation.md)
-- [Derives append](basic/derives-append.md)
-- [Eval Form](basic/eval-form.md)
-- [Eval Symbol](basic/eval-symbol.md)
-- [Language le of valuation](basic/language-le-of-valuation.md)
+- [Valuation of a grammar](basic/is-valuation.md)
+- [Concatenating derivations](basic/derives-append.md)
+- [Interpretation of a sentential form](basic/eval-form.md)
+- [Interpretation of a grammar symbol](basic/eval-symbol.md)
+- [Valuations bound the language of a grammar](basic/language-le-of-valuation.md)
 
 ## Sources
 

@@ -8,20 +8,23 @@ lean: Cslib.MachineLearning.GraphicalModels.TreeModel.weight_le_weight_decode
 
 # Max-product decoding finds a MAP assignment
 
-**Max-product decoding finds a MAP assignment** of a model with nonnegative factors.
+**Max-product decoding finds a MAP assignment.** Let $m$ be a pairwise tree model with values
+in a finite nonempty type $\alpha$ whose unary and pairwise factors are all nonnegative. Then every
+assignment of values in $\alpha$ to the vertices has weight at most the weight of the assignment
+produced by max-product decoding.
 
 ## Depends on
 
-- [Tree Model](../variable-elimination/tree-model.md)
-- [Nonneg Factors](nonneg-factors.md)
+- [Pairwise model on a tree](../variable-elimination/tree-model.md)
+- [Nonnegative factors](nonneg-factors.md)
 - [Max-product decoding](decode.md)
-- [Weight](../variable-elimination/weight.md)
+- [Weight of an assignment in a tree model](../variable-elimination/weight.md)
 
 ## Proof depends on
 
-- [Max Weight](max-weight.md)
-- [Weight decode](weight-decode.md)
-- [Weight le max Weight](weight-le-max-weight.md)
+- [Max-product value](max-weight.md)
+- [Max-product decoding attains the max-product value](weight-decode.md)
+- [The max-product value bounds every weight](weight-le-max-weight.md)
 
 ## Sources
 

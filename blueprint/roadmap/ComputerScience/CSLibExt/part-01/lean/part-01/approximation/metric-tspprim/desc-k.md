@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.DescK
 ---
 
-# Desc K
+# Descendant within $k$ levels
 
-`u` lies strictly below `v`, at most `k` levels down.
+**Descendant within $k$ levels.** Let $p$ assign to each vertex of $\{0, \dots, n-1\}$
+either a parent or nothing, and let a step up move a vertex to its parent, leaving a vertex
+without parent in place. For $k \in \mathbb{N}$, a vertex $u$ lies strictly below a vertex $v$,
+at most $k$ levels down, when for some $j < k$ the vertex reached from $u$ after $j$ steps up has
+parent $v$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Up](up.md)
+- [One step up a parent array](up.md)
 
 ## Sources
 

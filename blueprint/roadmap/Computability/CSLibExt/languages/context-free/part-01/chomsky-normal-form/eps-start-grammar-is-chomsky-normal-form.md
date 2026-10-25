@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Language.epsStartGrammar_isChomskyNormalForm
 ---
 
-# Eps Start Grammar is Chomsky Normal Form
+# Adding a fresh start symbol preserves Chomsky normal form
 
-The fresh-start construction preserves Chomsky normal form for
-grammars with no empty outputs. The no-empty-outputs hypothesis is
-essential: an existing empty production would be embedded with the
-old initial nonterminal, not the fresh one, on the left.
+**Adding a fresh start symbol preserves Chomsky normal form.** If a context-free grammar
+$g$ is in Chomsky normal form and no production of $g$ has empty output, then the fresh-start
+grammar of $g$ is in Chomsky normal form.
+
+The no-empty-outputs hypothesis is essential: an existing empty production would be embedded
+with the old initial nonterminal, not the fresh one, on the left.
 
 ## Depends on
 
-- [Is Chomsky Normal Form](is-chomsky-normal-form.md)
-- [Eps Start Grammar](eps-start-grammar.md)
+- [Chomsky normal form](is-chomsky-normal-form.md)
+- [Grammar with a fresh nullable start symbol](eps-start-grammar.md)
 
 ## Proof depends on
 
-- [Eps Start Grammar initial not mem output](eps-start-grammar-initial-not-mem-output.md)
-- [Map Rule](../basic/map-rule.md)
-- [Map Rule injective](../basic/map-rule-injective.md)
-- [Map Symbol](../basic/map-symbol.md)
+- [The fresh start symbol occurs in no output](eps-start-grammar-initial-not-mem-output.md)
+- [Renaming the nonterminals of a production](../basic/map-rule.md)
+- [Injective renamings are injective on productions](../basic/map-rule-injective.md)
+- [Renaming the nonterminals of a symbol](../basic/map-symbol.md)
 
 ## Sources
 

@@ -6,34 +6,39 @@ proof: formalized
 lean: Cslib.IMP.SepValid.of_valid
 ---
 
-# Of valid
+# Hoare validity embeds into separation validity
 
-Ordinary Hoare validity embeds into separation validity at every
-heap: embedded commands are safe, never touch the heap, and terminate
-exactly when the plain command does.
+**Hoare validity embeds into separation validity.** Let $P$ and $Q$ be store assertions and
+$c$ a command of plain IMP. If the partial-correctness Hoare triple with precondition $P$, command
+$c$ and postcondition $Q$ is valid, then the separation-logic triple for the embedding of $c$ into
+heap IMP is valid with the precondition that holds of a store $s$ and any heap exactly when $P(s)$
+holds and the postcondition that holds of a store $s$ and any heap exactly when $Q(s)$ holds.
+
+Embedded commands are always safe, never change the heap, and terminate exactly when the plain
+command does.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
-- [To Heap](../heap-step/to-heap.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Embedding of IMP into the heap language](../heap-step/to-heap.md)
 - [Heap](../heap/heap.md)
-- [Sep Valid](sep-valid.md)
-- [State](../syntax/state.md)
-- [Valid](../hoare/valid.md)
+- [Separation-logic triple validity](sep-valid.md)
+- [IMP program states](../syntax/state.md)
+- [Validity of a Hoare triple](../hoare/valid.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [BExp](../syntax/bexp.md)
-- [HSteps](../heap-step/hsteps.md)
-- [Of to Heap](../heap-step/of-to-heap.md)
-- [Heap Cmd](../heap-step/heap-cmd.md)
-- [Safe](../heap-step/safe.md)
-- [Steps](../small-step/steps.md)
-- [Terminates](../small-step/terminates.md)
-- [Iff terminates](../equivalence/iff-terminates.md)
-- [Safe to Heap](../heap-step/safe-to-heap.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
+- [Multi-step heap execution](../heap-step/hsteps.md)
+- [Executions of embedded commands are plain executions](../heap-step/of-to-heap.md)
+- [Heap commands](../heap-step/heap-cmd.md)
+- [Safe heap configurations](../heap-step/safe.md)
+- [IMP multi-step relation](../small-step/steps.md)
+- [Termination of an IMP command](../small-step/terminates.md)
+- [Hoare validity via small-step termination](../equivalence/iff-terminates.md)
+- [Embedded plain commands are safe](../heap-step/safe-to-heap.md)
 
 ## Sources
 

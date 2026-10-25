@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.Ordered.node_keys_pairwise
 ---
 
-# Node keys pairwise
+# The separator keys of an ordered node are sorted
 
-In an ordered node, the separator keys are strictly increasing.
+**The separator keys of an ordered node are sorted.** If an internal node with separator list
+$K$ is ordered, then $K$ is strictly increasing: every key of $K$ is smaller than every key that
+comes after it in $K$.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Ordered](ordered.md)
+- [Raw B-trees](btree.md)
+- [Ordered B-tree](ordered.md)
 
 ## Proof depends on
 
-- [Flatten](flatten.md)
-- [Flatten Aux](flatten-aux.md)
-- [Flatten Aux eq](flatten-aux-eq.md)
-- [Flatten node cons nil](flatten-node-cons-nil.md)
+- [Inorder flattening of a B-tree](flatten.md)
+- [Accumulating flattening of a B-tree](flatten-aux.md)
+- [The accumulating B-tree flattening is correct](flatten-aux-eq.md)
+- [Flattening a childless node, one key at a time](flatten-node-cons-nil.md)
 
 ## Sources
 

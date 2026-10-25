@@ -16,7 +16,7 @@ $\{x \mid uxv \in L\}$ through the set $\{m \in M \mid \varphi(u)\, m\, \varphi(
 
 ## Depends on
 
-- [Recognizes](../recognition/recognizes.md)
+- [Recognition of a language by a monoid morphism](../recognition/recognizes.md)
 - [Accepting set for a context quotient](context-accept.md)
 - [Context quotient](context-quotient.md)
 

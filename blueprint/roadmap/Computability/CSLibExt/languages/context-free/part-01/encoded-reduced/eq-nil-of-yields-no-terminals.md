@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.eq_nil_of_yields_noTerminals
 ---
 
-# Eq nil of yields no Terminals
+# Terminal-free productions yield only the empty word
 
-In a grammar without terminals in its productions, only the empty word is yielded.
+**Terminal-free productions yield only the empty word.** Let $g$ be an encoded context-free
+grammar and consider the grammar of its productions without terminals. If a sentential form
+$\alpha$ that contains no terminal yields a word $w$ in that grammar, then $w$ is the empty
+word.
 
 ## Depends on
 
-- [Encoded CFG](../encoded/encoded-cfg.md)
-- [No Terminals](no-terminals.md)
-- [To CFG](../encoded/to-cfg.md)
-- [Yields](../../part-02/yields/yields.md)
+- [Encoded context-free grammars](../encoded/encoded-cfg.md)
+- [Productions without terminals of an encoded grammar](no-terminals.md)
+- [Grammar denoted by an encoding](../encoded/to-cfg.md)
+- [Yield of a sentential form](../../part-02/yields/yields.md)
 
 ## Proof depends on
 
-- [Decode Rule](../encoded/decode-rule.md)
-- [Decode Symbol](../encoded/decode-symbol.md)
+- [Decoding a production](../encoded/decode-rule.md)
+- [Decoding a grammar symbol](../encoded/decode-symbol.md)
 
 ## Sources
 

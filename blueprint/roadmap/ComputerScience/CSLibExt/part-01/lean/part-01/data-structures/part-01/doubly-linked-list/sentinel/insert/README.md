@@ -4,12 +4,12 @@ navigation: module
 
 # Insert
 
-- [Sentinel Insert](sentinel-insert.md)
-- [Sentinel Insert time](sentinel-insert-time.md)
-- [Sentinel Insert ret](sentinel-insert-ret.md)
-- [Sentinel Insert get](sentinel-insert-get.md)
-- [Sentinel Insert frame](sentinel-insert-frame.md)
-- [Sentinel Insert allocated](sentinel-insert-allocated.md)
-- [Sentinel Insert payload](sentinel-insert-payload.md)
-- [Sentinel Insert circular](sentinel-insert-circular.md)
-- [Sentinel Insert disjoint circular](sentinel-insert-disjoint-circular.md)
+- [Sentinel list insertion (LIST-INSERT′)](sentinel-insert.md)
+- [Sentinel insertion takes four steps](sentinel-insert-time.md)
+- [The store after sentinel insertion](sentinel-insert-ret.md)
+- [Sentinel insertion, cell by cell](sentinel-insert-get.md)
+- [Sentinel insertion leaves other cells unchanged](sentinel-insert-frame.md)
+- [Sentinel insertion preserves allocation](sentinel-insert-allocated.md)
+- [Sentinel insertion preserves payloads](sentinel-insert-payload.md)
+- [Sentinel insertion preserves the circular list](sentinel-insert-circular.md)
+- [Sentinel insertion preserves a disjoint circular list](sentinel-insert-disjoint-circular.md)

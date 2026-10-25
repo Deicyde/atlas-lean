@@ -13,13 +13,13 @@ type `S` assigns to it.
 
 ## Depends on
 
-- [Term](../syntax/term.md)
-- [Ty](../syntax/ty.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Has Type](has-type.md)
-- [Value](../syntax/value.md)
+- [Typing judgment for the lambda calculus with references](has-type.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
 
 ## Sources
 

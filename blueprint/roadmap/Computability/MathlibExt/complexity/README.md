@@ -7,24 +7,24 @@ navigation: module
 
 ## Meta Mathlib Ext
 
-- [Bitstring Encoding](bitstring-encoding.md)
+- [Bitstring encodings](bitstring-encoding.md)
 
 ## Bitstring Encoding
 
-- [Bit Encode](bit-encode.md)
-- [Bit Decode](bit-decode.md)
-- [Bit Decode bit Encode](bit-decode-bit-encode.md)
-- [Delimit](delimit.md)
-- [Undelimit](undelimit.md)
-- [Undelimit Blocks Aux](undelimit-blocks-aux.md)
-- [Undelimit Blocks](undelimit-blocks.md)
+- [Encoding function of a bitstring encoding](bit-encode.md)
+- [Decoding function of a bitstring encoding](bit-decode.md)
+- [Decoding inverts bitstring encoding](bit-decode-bit-encode.md)
+- [Self-delimiting form of a bitstring](delimit.md)
+- [Parsing one self-delimiting block](undelimit.md)
+- [Bounded parsing of self-delimiting blocks](undelimit-blocks-aux.md)
+- [Parsing a list of booleans into self-delimiting blocks](undelimit-blocks.md)
 
 ## Complexity Theory
 
-- [Decision Problem](decision-problem.md)
-- [Decision Complexity Class](decision-complexity-class.md)
-- [Is Poly Time With Encoding](is-poly-time-with-encoding.md)
-- [Is Poly Time](is-poly-time.md)
-- [P](p.md)
-- [NP](np.md)
-- [Co NP](co-np.md)
+- [Decision problems](decision-problem.md)
+- [Complexity classes](decision-complexity-class.md)
+- [Polynomial-time computability under given encodings](is-poly-time-with-encoding.md)
+- [Polynomial-time computable functions](is-poly-time.md)
+- [The complexity class P](p.md)
+- [The complexity class NP](np.md)
+- [The class coNP](co-np.md)

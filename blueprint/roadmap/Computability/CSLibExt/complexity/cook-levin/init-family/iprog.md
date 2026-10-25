@@ -32,7 +32,7 @@ lean: Cslib.Complexity.CookLevin.InitFamily.iprog
 - [The counter stacks inside the generator's stacks](lift-e.md)
 - [Prog](prog.md)
 - [Read test for one code](rd-s.md)
-- [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Translating a statement along a stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 
 ## Sources
 

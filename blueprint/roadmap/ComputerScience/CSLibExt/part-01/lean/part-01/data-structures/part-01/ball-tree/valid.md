@@ -6,15 +6,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BallTree.Valid
 ---
 
-# Valid
+# Bounding-sphere invariant of a ball tree
 
-The bounding-sphere invariant: at a node with center `c` and squared-radius bound
-`bound`, every point in either subtree lies within squared distance
-`bound` of `c`.
+**Bounding-sphere invariant of a ball tree.** Validity of a ball tree is defined inductively:
+the empty tree and every leaf are valid, and a node with center $c$ and squared-radius bound $b$
+is valid when both of its subtrees are valid and every point in the point list of either subtree
+lies within squared Euclidean distance $b$ of $c$.
 
 ## Depends on
 
-- [Ball Tree](ball-tree.md)
+- [Ball tree](ball-tree.md)
 
 ## Sources
 

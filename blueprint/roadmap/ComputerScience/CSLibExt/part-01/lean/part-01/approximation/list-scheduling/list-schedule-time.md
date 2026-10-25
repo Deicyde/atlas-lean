@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Scheduling.listSchedule_time
 ---
 
-# List Schedule time
+# Running time of list scheduling
 
-List scheduling inspects `m` loads per job.
+**Running time of list scheduling.** For $m \ge 1$ and every list of $n$ jobs, list
+scheduling on $m$ machines has cost exactly $nm$, in the cost model that charges $m$ for each job
+placed (one unit per machine load inspected).
 
 ## Depends on
 
-- [List Schedule](list-schedule.md)
+- [Graham's list scheduling](list-schedule.md)
 
 ## Proof depends on
 
-- [Least Loaded](least-loaded.md)
-- [List Schedule Scan](list-schedule-scan.md)
+- [Least-loaded machine](least-loaded.md)
+- [List scheduling from an intermediate state](list-schedule-scan.md)
 
 ## Sources
 

@@ -13,10 +13,6 @@ lean: MetaMathlibExt.TM2Composition.midPoly
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Push Bound](push-bound.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Composition](../../../../../sources/v2/MathlibExt.md)

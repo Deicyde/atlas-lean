@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.approxTSPTour_time
 ---
 
-# Approx TSPTour time
+# Running time of `APPROX-TSP-TOUR`
 
-One unit per vertex of the tour.
+**Running time of `APPROX-TSP-TOUR`.** For every root $r$ and forest $F$, the running time of
+`APPROX-TSP-TOUR` on $r$ and $F$ equals the length of the list of $r$ followed by the vertices of
+$F$ in preorder: one unit per vertex of the returned tour.
 
 ## Depends on
 
-- [Forest](forest.md)
-- [Preorder](preorder.md)
-- [Approx TSPTour](approx-tsptour.md)
+- [Rooted forest in left-child right-sibling form](forest.md)
+- [Preorder of a forest](preorder.md)
+- [The APPROX-TSP-TOUR algorithm](approx-tsptour.md)
 
 ## Proof depends on
 
-- [Preorder Walk](preorder-walk.md)
-- [Preorder Walk Aux](preorder-walk-aux.md)
+- [Preorder walk](preorder-walk.md)
+- [Preorder walk with an accumulator](preorder-walk-aux.md)
 
 ## Sources
 

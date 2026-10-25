@@ -14,7 +14,7 @@ false bits) is $l$ with all of its trailing false bits removed.
 
 ## Depends on
 
-- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+- [Value of a little-endian bit list](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
 
 ## Proof depends on
 

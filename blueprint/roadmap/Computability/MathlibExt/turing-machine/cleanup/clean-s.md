@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.TM2Program.cleanS
 ---
 
-# Clean S
+# Cleanup round
 
-One cleanup round at label `self`: pop every stack of `ks` once; repeat if something was
-popped, otherwise go to `next`.
+**Cleanup round.** For a list $ks$ of stacks and labels $\mathit{self}$ and $\mathit{next}$,
+the cleanup round is the statement that sets the state to the one storing the flag value false,
+pops the stacks listed in $ks$ in order, once per entry (an empty stack stays empty), while
+recording in the flag whether some pop found a symbol, and then goes to $\mathit{self}$ if one
+did and to $\mathit{next}$ otherwise.
 
 ## Depends on
 
-- [Flag](../program/flag.md)
+- [Flag bit of a machine state](../program/flag.md)
 
 ## Proof depends on
 
-- [Pop All](pop-all.md)
+- [Popping a list of stacks](pop-all.md)
 
 ## Sources
 

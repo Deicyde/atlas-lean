@@ -19,7 +19,7 @@ shift block, identifying each stack's alphabet with itself.
 - [Stacks of a counter machine](../counter-view/sk.md)
 - [Alphabets of a counter machine](../counter-view/s.md)
 - [Counters of the cell-shift generator](../shift/ck.md)
-- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 

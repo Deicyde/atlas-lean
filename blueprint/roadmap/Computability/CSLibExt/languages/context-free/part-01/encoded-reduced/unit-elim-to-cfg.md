@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.unitElim_toCFG
 ---
 
-# `unitElim` computes `unitGrammar`
+# The encoded unit elimination denotes the unit-eliminated grammar
 
-**`unitElim` computes `unitGrammar`.**
+**The encoded unit elimination denotes the unit-eliminated grammar.** For every encoded
+context-free grammar $g$, the grammar denoted by the encoded unit elimination of $g$ is equal to
+the grammar obtained from the grammar denoted by $g$ by eliminating unit productions.
 
 ## Depends on
 
-- [Encoded CFG](../encoded/encoded-cfg.md)
-- [To CFG](../encoded/to-cfg.md)
-- [Unit Elim](unit-elim.md)
-- [Unit Grammar](../reduced/unit-grammar.md)
+- [Encoded context-free grammars](../encoded/encoded-cfg.md)
+- [Grammar denoted by an encoding](../encoded/to-cfg.md)
+- [Unit elimination for encoded grammars](unit-elim.md)
+- [Eliminating unit productions](../reduced/unit-grammar.md)
 
 ## Proof depends on
 
-- [Decode Rule](../encoded/decode-rule.md)
-- [Mem unit Elim rules](mem-unit-elim-rules.md)
-- [Is Unit Output](../reduced/is-unit-output.md)
-- [Unit Steps](../reduced/unit-steps.md)
-- [Grammar NTs](../reduced/grammar-nts.md)
+- [Decoding a production](../encoded/decode-rule.md)
+- [Productions of the encoded unit elimination](mem-unit-elim-rules.md)
+- [Unit output](../reduced/is-unit-output.md)
+- [Reachability by unit productions](../reduced/unit-steps.md)
+- [Nonterminals mentioned by a grammar](../reduced/grammar-nts.md)
 
 ## Sources
 

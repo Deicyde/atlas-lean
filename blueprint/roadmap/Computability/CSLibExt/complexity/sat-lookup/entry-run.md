@@ -33,18 +33,18 @@ $\mathrm{val}_{eE}(q)$ alone on $V$.
 - [Symbols of a table entry](../sat-verifier-spec/ent-toks.md)
 - [Live value of a name in a table](../sat-verifier-spec/live-val.md)
 - [Closing marker of a table entry](../sat-verifier-spec/mark-of.md)
-- [Ends Bit Block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [End of a bit block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Serving a live table entry](cmp-run.md)
 - [Next label of the lookup scan](scan-next.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Is Bit Block](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Move B run](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit blocks](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Running the bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

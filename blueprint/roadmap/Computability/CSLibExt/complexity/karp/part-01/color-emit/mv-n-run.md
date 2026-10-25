@@ -27,13 +27,13 @@ reverse order, on top of $E$.
 - [Stack alphabets of the 3-coloring emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Is Bit Block](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit blocks](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [Running the bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Language.empty_rule_of_yields_nil
 ---
 
-# Empty rule of yields nil
+# Forms yielding the empty word under Chomsky normal form
 
-Under Chomsky normal form, every symbol of a form yielding the empty word is a nonterminal
-with an empty production.
+**Forms yielding the empty word under Chomsky normal form.** If $g$ is in Chomsky normal form,
+then every symbol of a sentential form that yields the empty word is a nonterminal $B$ for which
+$g$ has a production $B \to \varepsilon$.
 
 ## Depends on
 
-- [Is Chomsky Normal Form](../chomsky-normal-form/is-chomsky-normal-form.md)
-- [Yields](../../part-02/yields/yields.md)
+- [Chomsky normal form](../chomsky-normal-form/is-chomsky-normal-form.md)
+- [Yield of a sentential form](../../part-02/yields/yields.md)
 
 ## Proof depends on
 
-- [No empty rule of mem output](no-empty-rule-of-mem-output.md)
+- [Nonterminals in outputs have no empty production](no-empty-rule-of-mem-output.md)
 
 ## Sources
 

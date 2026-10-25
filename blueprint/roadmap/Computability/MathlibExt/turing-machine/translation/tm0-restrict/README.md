@@ -4,7 +4,7 @@ navigation: module
 
 # TM0 Restrict
 
-- [Restrict](restrict.md)
-- [Cfg Val](cfg-val.md)
-- [Respects](respects.md)
-- [The restricted machine evaluates like `M`](eval-restrict.md)
+- [Restriction of a single-tape machine to a supporting set of states](restrict.md)
+- [Forgetting the restriction on a configuration](cfg-val.md)
+- [The original machine simulates the restricted one step for step](respects.md)
+- [The restricted machine evaluates like the original](eval-restrict.md)

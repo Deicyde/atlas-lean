@@ -13,7 +13,7 @@ false otherwise.
 
 ## Depends on
 
-- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
+- [Decision problems](../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 

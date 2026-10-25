@@ -6,18 +6,22 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.insLeaf
 ---
 
-# Ins Leaf
+# Insertion into a B-tree leaf
 
-Insert into a leaf's key list, splitting the leaf around the median key when the
-inserted list exceeds `2 * t - 1` keys.
+**Insertion into a B-tree leaf.** Over a linearly ordered key type, let $t$ be a natural
+number, $x$ a key, $K$ the key list of a leaf, and $K'$ the result of ordered insertion of $x$
+into $K$. If $K'$ has at most $2t - 1$ keys, the insertion result is the single leaf with keys
+$K'$. Otherwise the leaf is split: the result consists of the leaf holding the first $t - 1$ keys
+of $K'$, the next key of $K'$ promoted as the median, and the leaf holding the remaining keys.
+Here subtraction of natural numbers is truncated at $0$.
 
 ## Depends on
 
-- [Ins Result](ins-result.md)
+- [Result of inserting into a B-tree subtree](ins-result.md)
 
 ## Proof depends on
 
-- [BTree](btree.md)
+- [Raw B-trees](btree.md)
 - [Ordered Insert](../../part-03/ordered-insert/ordered-insert.md)
 
 ## Sources

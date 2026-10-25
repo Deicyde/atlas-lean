@@ -15,16 +15,16 @@ has at least one distinct state for each Nerode class.
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 - [Nerode classes to DFA states](to-dfastate.md)
 
 ## Proof depends on
 
 - [Representative of a Nerode class](representative.md)
-- [Nerode Class](../nerode/nerode-class-2.md)
-- [Nerode Rel](../nerode/nerode-rel.md)
+- [Nerode class of a word](../nerode/nerode-class-2.md)
+- [Nerode equivalence](../nerode/nerode-rel.md)
 - [Words reaching the same DFA state are Nerode equivalent](nerode-rel-of-eval-eq.md)
-- [Nerode Setoid](../nerode/nerode-setoid.md)
+- [The Nerode setoid](../nerode/nerode-setoid.md)
 
 ## Sources
 

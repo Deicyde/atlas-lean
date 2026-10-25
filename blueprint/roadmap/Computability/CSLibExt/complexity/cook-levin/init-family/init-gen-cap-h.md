@@ -44,7 +44,7 @@ followed by $o$.
 - [Stack cap](../situation/part-05/cap-h.md)
 - [Window depth of a machine](../situation/part-01/depth.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 

@@ -77,12 +77,12 @@ theorem dfaFound_sound (g : EncodedCFG T) (D : EncodedDFA T) :
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
 - [States of an encoded DFA](../../../automata/da/encoded-dfa/states.md)
 - [The automaton denoted by an encoded DFA](../../../automata/da/encoded-dfa/to-dfa.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [Items found for a grammar and a DFA](dfa-found.md)
 - [Start states of a right-hand side in a DFA](dfa-starts.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Yields](../../../languages/context-free/part-02/yields/yields.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Yield of a sentential form](../../../languages/context-free/part-02/yields/yields.md)
 
 ## Proof depends on
 
@@ -90,7 +90,7 @@ theorem dfaFound_sound (g : EncodedCFG T) (D : EncodedDFA T) :
 - [The listed states are closed under transitions](../../../automata/da/encoded-dfa/step-mem-states.md)
 - [Bounded monotone rounds on lists close off](../primrec-list/iterate-closed.md)
 - [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [Candidate items for a grammar and a DFA](dfa-items.md)
 - [Start states of a right-hand side are states of the DFA](dfa-starts-subset.md)
 - [One round of the item search against a DFA](dfa-step.md)

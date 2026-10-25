@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ArcConsistency.not_isSolution_of_ac3_eq_empty
 ---
 
-# Not is Solution of ac3 eq empty
+# An emptied domain rules out solutions
 
-If AC-3 empties a domain, the problem has no solution.
+**An emptied domain rules out solutions.** Let $P$ be a binary constraint satisfaction
+problem with finitely many variables and $\mathrm{dom}$ finite domains for its variables. If AC-3,
+run from $\mathrm{dom}$ with all arcs of $P$ queued, returns the empty domain for some variable
+$v$, then no assignment $\sigma$ is a solution of $P$ within $\mathrm{dom}$.
 
 ## Depends on
 
-- [Binary CSP](binary-csp.md)
-- [Is Solution](is-solution.md)
-- [Ac3 All](ac3-all.md)
+- [Binary constraint satisfaction problem](binary-csp.md)
+- [Solution of a binary CSP within given domains](is-solution.md)
+- [AC-3 on the whole problem](ac3-all.md)
 
 ## Proof depends on
 
-- [Mem ac3 of is Solution](mem-ac3-of-is-solution.md)
+- [Solutions survive AC-3](mem-ac3-of-is-solution.md)
 
 ## Sources
 

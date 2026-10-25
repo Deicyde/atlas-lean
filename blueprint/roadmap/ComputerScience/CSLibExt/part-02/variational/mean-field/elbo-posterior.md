@@ -18,7 +18,7 @@ The bound is attained at the posterior.
 
 ## Proof depends on
 
-- [Sum div mul log sub](../../../part-01/latent-variable/expectation-maximization/sum-div-mul-log-sub.md)
+- [Equality case of Gibbs' inequality](../../../part-01/latent-variable/expectation-maximization/sum-div-mul-log-sub.md)
 
 ## Sources
 

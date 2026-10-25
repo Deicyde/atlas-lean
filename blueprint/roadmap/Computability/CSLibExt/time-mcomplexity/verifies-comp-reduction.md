@@ -6,26 +6,31 @@ proof: formalized
 lean: Cslib.TimeMComplexity.verifies_comp_reduction
 ---
 
-# Verifies comp reduction
+# Pulling a verifier back along a declared reduction
 
-Composing a reduction with a verifier gives a verifier for the source
-language. The composed verifier first runs the reduction, then the
-original verifier, rejecting witnesses longer than the original bound at
-the reduced input; the witness bound is `p ∘ p_red` and the time bound is
-`p_red + q ∘ (p_red + X)` in terms of `|x| + |w|`. This is the `TimeM`
-declared-time form of closure under reductions, for named algorithms
-(no canonical `NP` membership is claimed).
+**Pulling a verifier back along a declared reduction.** Let $L_1$ and $L_2$ be decision
+problems, let $f$ be a declared polynomial-time many-one reduction from $L_1$ to $L_2$, and let
+$V$ be a verifier with polynomial declared time that verifies $L_2$ with witness bound $p$. Let
+$V'$ be the verifier that on input $x$ and witness $w$ first runs $f$ on $x$, obtaining $y$, then
+runs $V$ on $(y, w)$ and accepts when $V$ accepts and $|w| \le p(|y|)$; its declared time is the
+declared time of $f(x)$ plus that of $V(y, w)$. Then $V'$ has polynomial declared time, and there
+is a polynomial $p'$ with natural coefficients such that $V'$ verifies $L_1$ with witness bound
+$p'$.
+
+The proof takes $p' = p \circ r$ and the time bound $r(n) + q(r(n) + n)$ with $n = |x| + |w|$,
+where $r$ bounds the declared time and output length of $f$ and $q$ bounds the declared time of
+$V$.
 
 ## Depends on
 
-- [Declared Poly Many One Red Via](declared-poly-many-one-red-via.md)
-- [Verifier In Declared Poly Time](verifier-in-declared-poly-time.md)
-- [Verifies](verifies.md)
-- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
+- [Declared-time many-one reduction by a timed function](declared-poly-many-one-red-via.md)
+- [Verifiers with polynomial declared time](verifier-in-declared-poly-time.md)
+- [Verifying a decision problem with a witness bound](verifies.md)
+- [Decision problems](../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 
-- [Computes In Declared Poly Time](computes-in-declared-poly-time.md)
+- [Declared polynomial time for timed functions on bitstrings](computes-in-declared-poly-time.md)
 
 ## Sources
 

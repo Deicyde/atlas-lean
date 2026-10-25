@@ -16,7 +16,7 @@ equal states in a nonminimal DFA.
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 
 ## Proof depends on
 

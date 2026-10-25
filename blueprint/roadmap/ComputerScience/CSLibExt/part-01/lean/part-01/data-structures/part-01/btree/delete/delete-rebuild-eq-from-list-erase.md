@@ -7,16 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.deleteRebuild_eq_fromList_erase
 ---
 
-# Delete Rebuild eq from List erase
+# Rebuilding deletion unfolds to erase and rebuild
 
-Deletion is, by definition, erase-and-rebuild through the proved builder.
+**Rebuilding deletion unfolds to erase and rebuild.** For every minimum degree $t$, key $x$
+and tree $T$, the rebuilding deletion of $x$ from $T$ with minimum degree $t$ equals the tree
+built from the list obtained by removing the first occurrence of $x$ from the flattening of $T$,
+by inserting its keys from right to left into the empty tree with minimum degree $t$.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Delete Rebuild](delete-rebuild.md)
-- [Flatten](../../btree-2/flatten.md)
-- [From List](../../btree-2/from-list.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [B-tree deletion by rebuilding](delete-rebuild.md)
+- [Inorder flattening of a B-tree](../../btree-2/flatten.md)
+- [B-tree built from a list](../../btree-2/from-list.md)
 
 ## Sources
 

@@ -26,17 +26,17 @@ within $|l| + 1$ steps, leaving the output stack $O$ unchanged.
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Add U](../../../MathlibExt/turing-machine/program/add-u.md)
-- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
-- [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
-- [Push All](../../../MathlibExt/turing-machine/program/push-all.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Adding units to target stacks](../../../MathlibExt/turing-machine/program/add-u.md)
+- [Bit on top of a stack](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Unary counter](../../../MathlibExt/turing-machine/program/cnt.md)
+- [Pushing symbols onto several stacks](../../../MathlibExt/turing-machine/program/push-all.md)
 
 ## Sources
 

@@ -30,7 +30,7 @@ $M$, $U$, $V$ and $P$ holds the same list in $S'$ as in $S$.
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [One marking pass](../path/mark-pass.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -44,12 +44,12 @@ $M$, $U$, $V$ and $P$ holds the same list in $S'$ as in $S$.
 - [Reading a unary number](read-s-some.md)
 - [Reading the mark of a vertex](read-w-run.md)
 - [Walking to a vertex and setting its mark](set-w-run.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Add U](../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
-- [Xfer run](../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Adding units to target stacks](../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../MathlibExt/turing-machine/program/cnt.md)
+- [Running a counter transfer](../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

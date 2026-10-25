@@ -16,16 +16,16 @@ nonterminal $k$.
 
 ## Depends on
 
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Encoded regular expressions](encoded-regex.md)
 - [Language of a sentential form](form-lang.md)
 - [The grammar of an encoded regular expression](to-grammar.md)
-- [Yields](../../../languages/context-free/part-02/yields/yields.md)
+- [Yield of a sentential form](../../../languages/context-free/part-02/yields/yields.md)
 
 ## Proof depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
 - [A production of a node only produces words of its language](mem-matches-of-mem-node-rules.md)
 - [Node at an index](node.md)
 - [Productions of a node](node-rules.md)

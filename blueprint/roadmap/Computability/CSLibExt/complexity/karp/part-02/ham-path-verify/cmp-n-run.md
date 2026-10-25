@@ -32,16 +32,16 @@ holds $\bar r$ and $\mathit{sv}$ holds $0\,1^a$ followed by $\sigma(\mathit{sv})
 - [Step of the HAMPATH verifier's unary comparison loop](cb-s.md)
 - [Prog](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 - [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Proof depends on
 
 - [Run of the HAMPATH verifier's unary comparison loop](cb-run.md)
-- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Xfer run](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Adding units to target stacks](../../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Running a counter transfer](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

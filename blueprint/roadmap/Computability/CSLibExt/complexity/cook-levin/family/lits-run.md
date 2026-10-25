@@ -43,7 +43,7 @@ when $j = 0$.
 - [Per-literal time bound of the transition-clause generator](lit-e.md)
 - [Literals of a transition clause](lits.md)
 - [Prog](prog.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -65,9 +65,9 @@ when $j = 0$.
 - [Run of one literal routine (transition-clause generator)](lit-run.md)
 - [Polarity of a transition-clause literal](sgn.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

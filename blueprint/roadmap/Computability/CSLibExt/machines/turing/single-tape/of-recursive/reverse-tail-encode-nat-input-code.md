@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.OfTM2.reverse_tail_encodeNat_inputCode
 ---
 
-# Reverse tail encode Nat input Code
+# Recovering a word from its input code
 
-`inputCode` is undone by reversing the binary code and dropping its first bit.
+**Recovering a word from its input code.** For every list of bits $w$, reversing the binary
+encoding (least significant bit first) of the input code of $w$ and then dropping the first bit of
+the result gives back $w$.
 
 ## Depends on
 
-- [Input Code](input-code.md)
+- [Input code of a bit word](input-code.md)
 
 ## Proof depends on
 
-- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
-- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
+- [Value of a little-endian bit list](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+- [Binary encoding, least significant bit first](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ by multi-stack machines, then so is the predicate $a \mapsto p(a) \wedge q(a)$.
 ## Proof depends on
 
 - [Multi-stack recognizable predicates are exactly the r.e. predicates](../basic/tm2-recognizable-iff-re-pred.md)
-- [And](../../../../MathlibExt/re/and-2.md)
+- [Recursively enumerable predicates are closed under conjunction](../../../../MathlibExt/re/and-2.md)
 
 ## Sources
 

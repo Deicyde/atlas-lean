@@ -6,20 +6,21 @@ statement: formalized
 lean: MetaMathlibExt.ComplexityTheory.coNP
 ---
 
-# Co NP
+# The class coNP
 
-The class coNP: decision problems whose complements are in NP. Inlined
-from FormalConjectures (absent from Mathlib).
+**The class coNP.** coNP is the set of decision problems $L$ whose complement, the decision
+problem that accepts exactly the bitstrings that $L$ rejects, belongs to NP.
 
 ## Depends on
 
-- [Decision Complexity Class](decision-complexity-class.md)
+- [Complexity classes](decision-complexity-class.md)
 
 ## Proof depends on
 
-- [Decision Problem](decision-problem.md)
-- [NP](np.md)
+- [Decision problems](decision-problem.md)
+- [The complexity class NP](np.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.Complexity](../../../../sources/v2/MathlibExt.md)
+- inlined from FormalConjectures (absent from Mathlib).

@@ -27,23 +27,23 @@ counters $F$ except that $\mathit{acc}$ holds $F(\mathit{acc}) \cdot F(b) + a$.
 - [Stages of a Horner round](hw.md)
 - [The statements of one Horner round](horn-s.md)
 - [Step count of one Horner round](horn-step.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [The multiplication routine of a counter machine](../counter-view/mul-s.md)
 - [Counters after a multi-target transfer](xf.md)
 - [Multi-target transfer](xfer-s.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
-- [Add U](../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Emit](../../../../MathlibExt/turing-machine/program/emit.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Mul run](../../../../MathlibExt/turing-machine/program/mul-run.md)
-- [Push List](../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
+- [Adding units to target stacks](../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Pushing a constant list](../../../../MathlibExt/turing-machine/program/emit.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
+- [Pushing a list of symbols onto one stack](../../../../MathlibExt/turing-machine/program/push-list.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer run](../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

@@ -6,16 +6,16 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.IsLBA.computablePred_haltsOn
 ---
 
-# The halting problem of a linear bounded automaton is decidable
+# Halting of a linear bounded automaton is decidable
 
-**The halting problem of a linear bounded automaton is decidable**: a fixed-machine halting
-analogue of Sipser's Theorem 5.9, which decides acceptance uniformly over machine descriptions (that
-version needs a code type for CSLib machines, which CSLib does not have).
+**Halting of a linear bounded automaton is decidable.** Let $M$ be a single-tape machine over
+a finite alphabet $\Sigma$, and fix any primitive recursive coding of $\Sigma$. If $M$ is a linear
+bounded automaton, then the set of input words over $\Sigma$ on which $M$ halts is computable.
 
 ## Depends on
 
-- [Halts On](../classes/halts-on.md)
-- [Is LBA](is-lba.md)
+- [Halting on an input](../classes/halts-on.md)
+- [Linear bounded automaton](is-lba.md)
 
 ## Proof depends on
 
@@ -24,3 +24,4 @@ version needs a code type for CSLib machines, which CSLib does not have).
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.SpaceBounded](../../../../../../../sources/v2/CSLibExt.md)
+- Sipser, *Introduction to the Theory of Computation*, Theorem 5.9, of which this is a fixed-machine halting analogue: Sipser decides acceptance uniformly over machine descriptions, which needs a code type for CSLib machines.

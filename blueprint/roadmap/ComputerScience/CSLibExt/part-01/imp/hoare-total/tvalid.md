@@ -5,21 +5,22 @@ statement: formalized
 lean: Cslib.IMP.TValid
 ---
 
-# TValid
+# Validity of total-correctness Hoare triples
 
-Semantic validity of a total-correctness Hoare triple: every initial
-state satisfying the precondition has a terminating execution ending in the
-postcondition.
+**Validity of total-correctness Hoare triples.** For assertions $P$ and $Q$ on states and a
+command $c$, the total-correctness Hoare triple with precondition $P$, command $c$ and
+postcondition $Q$ is valid when every state $s$ satisfying $P$ has a terminating big-step
+execution of $c$ from $s$ ending in a state $t$ that satisfies $Q$.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
+- [Commands of IMP](../syntax/cmd.md)
 
 ## Proof depends on
 
-- [Big Step](../big-step/big-step.md)
-- [State](../syntax/state.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

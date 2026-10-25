@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.yields_of_yields_noTerminals
 ---
 
-# Yields of yields no Terminals
+# Yields in the terminal-free subgrammar are yields of the grammar
 
-Yields in the grammar of productions without terminals are yields of the grammar.
+**Yields in the terminal-free subgrammar are yields of the grammar.** Let $g$ be an encoded
+context-free grammar, $\alpha$ a sentential form and $w$ a word. If $\alpha$ yields $w$ in the
+grammar denoted by the encoded grammar consisting of the productions of $g$ that contain no
+terminal, then $\alpha$ yields $w$ in the grammar $g$ denotes.
 
 ## Depends on
 
-- [Encoded CFG](../encoded/encoded-cfg.md)
-- [No Terminals](no-terminals.md)
-- [To CFG](../encoded/to-cfg.md)
-- [Yields](../../part-02/yields/yields.md)
+- [Encoded context-free grammars](../encoded/encoded-cfg.md)
+- [Productions without terminals of an encoded grammar](no-terminals.md)
+- [Grammar denoted by an encoding](../encoded/to-cfg.md)
+- [Yield of a sentential form](../../part-02/yields/yields.md)
 
 ## Proof depends on
 
-- [Decode Rule](../encoded/decode-rule.md)
-- [Decode Symbol](../encoded/decode-symbol.md)
+- [Decoding a production](../encoded/decode-rule.md)
+- [Decoding a grammar symbol](../encoded/decode-symbol.md)
 
 ## Sources
 

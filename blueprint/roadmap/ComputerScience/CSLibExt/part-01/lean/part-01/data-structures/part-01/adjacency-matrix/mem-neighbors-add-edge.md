@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.mem_neighbors_addEdge
 ---
 
-# Mem neighbors add Edge
+# Adding an edge makes its target an out-neighbor
 
-After insertion, the target vertex is a neighbor of the source.
+**Adding an edge makes its target an out-neighbor.** Let $m$ be an adjacency matrix on the
+vertex set $\{0, \dots, n-1\}$ and let $i, j$ be vertices. Then $j$ belongs to the out-neighbor
+list of $i$ in the graph obtained from $m$ by adding the edge from $i$ to $j$.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
-- [Add Edge](add-edge.md)
-- [Neighbors](neighbors.md)
+- [Adjacency matrix](adjacency-matrix.md)
+- [Edge insertion in an adjacency matrix](add-edge.md)
+- [Out-neighbor list](neighbors.md)
 
 ## Proof depends on
 
-- [Has Edge](has-edge.md)
-- [Has Edge add Edge](has-edge-add-edge.md)
-- [Mem neighbors](mem-neighbors.md)
+- [Edge query of an adjacency matrix](has-edge.md)
+- [An inserted edge is present](has-edge-add-edge.md)
+- [The out-neighbor list matches the edge query](mem-neighbors.md)
 
 ## Sources
 

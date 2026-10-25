@@ -24,11 +24,11 @@ input $c$ followed by $xs$ to label $\mathrm{hit}(c)$, flag true, stacks $S$ and
 - [Alphabets of a counter machine with an input stack](i.md)
 - [Stacks of a counter machine with an extra input stack](emb.md)
 - [Read test for one code](rd-s.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

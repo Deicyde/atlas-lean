@@ -6,21 +6,25 @@ proof: formalized
 lean: Cslib.TimeMComplexity.decides_comp_reduction
 ---
 
-# Decides comp reduction
+# A declared-time reduction followed by a decider for the target decides the source
 
-Composing a reduction with a decider for the target language decides
-the source language. With `decidesInDeclaredPolyTime_comp_reduction`
-this is the `TimeM` declared-time form of closure under reductions,
-for named algorithms (no canonical `P` membership is claimed).
+**A declared-time reduction followed by a decider for the target decides the source.** Let
+$L_1$ and $L_2$ be decision problems, let $f$ be a declared-time many-one reduction from $L_1$ to
+$L_2$, and let $g$ be a timed function from lists of Booleans to Booleans whose output on every
+list $y$ is $L_2(y)$. Then for every list $x$ of Booleans, the timed function that runs $f$ on $x$
+and then $g$ on its output returns $L_1(x)$.
+
+Together with the preservation of declared polynomial time under such compositions, this is the
+declared-time form of closure under reductions; no membership in the class P is claimed.
 
 ## Depends on
 
-- [Declared Poly Many One Red Via](declared-poly-many-one-red-via.md)
-- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
+- [Declared-time many-one reduction by a timed function](declared-poly-many-one-red-via.md)
+- [Decision problems](../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 
-- [Computes In Declared Poly Time](computes-in-declared-poly-time.md)
+- [Declared polynomial time for timed functions on bitstrings](computes-in-declared-poly-time.md)
 
 ## Sources
 

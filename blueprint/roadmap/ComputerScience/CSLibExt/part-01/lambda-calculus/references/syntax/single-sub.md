@@ -5,14 +5,14 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Term.singleSub
 ---
 
-# Single Sub
+# Single-variable substitution
 
-The substitution replacing variable `0` by `s` and lowering every other
-variable by one.
+**Single-variable substitution.** For a term $s$, the single-variable substitution for $s$
+sends the de Bruijn index $0$ to $s$ and each index $x + 1$ to the variable $x$.
 
 ## Depends on
 
-- [Term](term.md)
+- [Terms of the simply typed lambda calculus with references](term.md)
 
 ## Sources
 

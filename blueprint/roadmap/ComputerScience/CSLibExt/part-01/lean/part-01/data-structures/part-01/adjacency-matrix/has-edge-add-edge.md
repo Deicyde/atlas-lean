@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.hasEdge_addEdge
 ---
 
-# Has Edge add Edge
+# An inserted edge is present
 
-The added edge is present after insertion.
+**An inserted edge is present.** For an adjacency matrix $m$ on $n$ vertices and vertices $i$
+and $j$, the matrix obtained from $m$ by adding the edge from $i$ to $j$ has an edge from $i$ to
+$j$.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
-- [Add Edge](add-edge.md)
-- [Has Edge](has-edge.md)
+- [Adjacency matrix](adjacency-matrix.md)
+- [Edge insertion in an adjacency matrix](add-edge.md)
+- [Edge query of an adjacency matrix](has-edge.md)
 
 ## Sources
 

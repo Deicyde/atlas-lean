@@ -21,7 +21,7 @@ $\mathsf{rej}$, internal bit $v$ and stacks $S$.
 ## Proof depends on
 
 - [The tokenizer program](prog.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

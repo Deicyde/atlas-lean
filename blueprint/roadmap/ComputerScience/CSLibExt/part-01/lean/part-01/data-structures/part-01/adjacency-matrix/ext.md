@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.ext
 ---
 
-# Ext
+# Extensionality of adjacency matrices
 
-Two adjacency matrices with the same edges everywhere are equal.
+**Extensionality of adjacency matrices.** Two adjacency matrices $m$ and $m'$ on the same $n$
+vertices are equal if, for all vertices $i$ and $j$, $m$ has an edge from $i$ to $j$ exactly when
+$m'$ does.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
-- [Has Edge](has-edge.md)
+- [Adjacency matrix](adjacency-matrix.md)
+- [Edge query of an adjacency matrix](has-edge.md)
 
 ## Sources
 

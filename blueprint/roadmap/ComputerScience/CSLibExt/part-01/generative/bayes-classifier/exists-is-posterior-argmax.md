@@ -6,14 +6,19 @@ proof: formalized
 lean: Cslib.MachineLearning.BayesClassifier.exists_isPosteriorArgmax
 ---
 
-# Exists is Posterior Argmax
+# Existence of a posterior argmax classifier
 
-For finitely many classes, a measurable posterior argmax classifier exists. It takes, at
-each observation, the first maximizer in an enumeration of the classes.
+**Existence of a posterior argmax classifier.** Let the set $C$ of classes be finite and
+nonempty with measurable singletons, let $P$ be a finite kernel from $C$ to the observation space
+$\mathcal X$ and $\pi$ a finite measure on $C$. Then there is a posterior argmax classifier
+$f : \mathcal X \to C$ for $P$ and $\pi$.
+
+The classifier constructed takes, at each observation, the first maximizer of the posterior
+probability in an enumeration of the classes.
 
 ## Depends on
 
-- [Is Posterior Argmax](is-posterior-argmax.md)
+- [Posterior argmax classifier](is-posterior-argmax.md)
 
 ## Sources
 

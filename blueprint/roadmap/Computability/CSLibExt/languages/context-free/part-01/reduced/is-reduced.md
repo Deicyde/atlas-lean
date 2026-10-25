@@ -5,11 +5,12 @@ statement: formalized
 lean: Cslib.Language.IsReduced
 ---
 
-# Is Reduced
+# Reduced grammars
 
-A grammar is reduced (in the sense used for pumping and normal
-forms) when no production has empty output and no production has a
-single nonterminal as output. This does not assert that every
+**Reduced grammars.** A context-free grammar is reduced when no production has empty
+right-hand side and no production has a single nonterminal as its right-hand side.
+
+This is the sense used for the pumping lemma and normal forms. It does not assert that every
 nonterminal is reachable or productive.
 
 ## Depends on
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Unit Output](is-unit-output.md)
+- [Unit output](is-unit-output.md)
 
 ## Sources
 

@@ -6,10 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.TM2Composition.iter_sim
 ---
 
-# Iter sim
+# Simulation transports runs
 
-A step-respecting embedding transports runs. Halted configurations are absorbing, so every
-intermediate configuration of a run that ends in `some d` is live.
+**Simulation transports runs.** Let $f : \alpha \to \mathrm{Option}\,\alpha$ and
+$g : \beta \to \mathrm{Option}\,\beta$ be partial step functions (a value $\mathrm{none}$ means
+halting) and $e : \alpha \to \beta$ a map such that $f(c) = c'$ implies $g(e(c)) = e(c')$ for all
+$c, c'$. Then for every $n$ and all $c, d \in \alpha$, if $n$ steps of $f$ starting from $c$ end
+at $d$, then $n$ steps of $g$ starting from $e(c)$ end at $e(d)$.
+
+Halted configurations are absorbing, so every intermediate configuration of such a run is live.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Iter none](../program/iter-none.md)
+- [A halted run stays halted](../program/iter-none.md)
 
 ## Sources
 

@@ -7,21 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.contains_eq_true_iff
 ---
 
-# Contains eq true iff
+# Correctness of AVL search
 
-Search is equivalent to structural membership for an ordered tree;
-inherited from `BinarySearchTree` through `toBinaryTree`.
+**Correctness of AVL search.** Let $\alpha$ be a linearly ordered type and let $t$ be an
+ordered AVL tree over $\alpha$. Then for every $x \in \alpha$, searching for $x$ in $t$ by
+following comparisons from the root returns true if and only if $x$ is a key of $t$.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Ordered](ordered.md)
-- [Tree](tree.md)
-- [Contains](contains.md)
+- [Membership in an AVL tree](mem.md)
+- [Ordered AVL trees](ordered.md)
+- [Binary trees with cached heights](tree.md)
+- [Membership search in an AVL tree](contains.md)
 
 ## Proof depends on
 
-- [To Binary Tree](to-binary-tree.md)
+- [Erasing the cached heights of an AVL tree](to-binary-tree.md)
 - [Contains](../../part-02/binary-search-tree/contains.md)
 - [Contains eq true iff](../../part-02/binary-search-tree/contains-eq-true-iff.md)
 

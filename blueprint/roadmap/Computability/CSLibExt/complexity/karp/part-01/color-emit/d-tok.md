@@ -19,7 +19,7 @@ the vertex $M$ is not recorded.
 ## Proof depends on
 
 - [Name of a variable](name.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

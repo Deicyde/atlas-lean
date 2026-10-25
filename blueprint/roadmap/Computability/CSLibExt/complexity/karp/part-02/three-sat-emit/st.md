@@ -21,7 +21,7 @@ $\mathrm{cl}$, and the two scratch counters are empty.
 
 ## Proof depends on
 
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

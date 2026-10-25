@@ -35,7 +35,7 @@ end Contract
 
 ## Proof depends on
 
-- [Vars Of](../../../../sat-time-m/vars-of.md)
+- [Occurrence list of a CNF formula](../../../../sat-time-m/vars-of.md)
 
 ## Sources
 

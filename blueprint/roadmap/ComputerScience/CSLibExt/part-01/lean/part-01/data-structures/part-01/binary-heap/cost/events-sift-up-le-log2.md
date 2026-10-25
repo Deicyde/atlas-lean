@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.events_siftUp_le_log2
 ---
 
-# Events sift Up le log2
+# Combined comparison and swap bound for sift-up
 
-The sum of counted comparisons and swaps is at most twice the index depth.
+**Combined comparison and swap bound for sift-up.** For every array $a$ over a linearly
+ordered type and every natural number $i$, if sift-up with comparison and swap counts on $a$
+at index $i$ counts $c$ comparisons and $s$ swaps, then
+$c + s \le 2 \lfloor \log_2(i+1) \rfloor$.
 
 ## Depends on
 
-- [Sift Up](sift-up.md)
+- [Sift-up with comparison and swap counts](sift-up.md)
 
 ## Proof depends on
 
-- [Comparisons sift Up le log2](comparisons-sift-up-le-log2.md)
-- [Swaps sift Up le log2](swaps-sift-up-le-log2.md)
+- [Comparison bound for sift-up](comparisons-sift-up-le-log2.md)
+- [Swap bound for sift-up](swaps-sift-up-le-log2.md)
 
 ## Sources
 

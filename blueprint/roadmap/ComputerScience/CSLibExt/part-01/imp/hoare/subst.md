@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.IMP.Assertion.subst
 ---
 
-# Subst
+# Substitution in an assertion
 
-Substitute an arithmetic expression for a variable in an assertion.
+**Substitution in an assertion.** Let $P$ be an assertion, $x$ a variable and $e$ an
+arithmetic expression. The assertion $P[e/x]$ holds in a state $s$ exactly when $P$ holds in
+the state obtained from $s$ by setting the value of $x$ to the value of $e$ in $s$.
 
 ## Depends on
 
-- [AExp](../syntax/aexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
 - [Assertion](assertion.md)
 
 ## Proof depends on
 
-- [Eval](../syntax/eval.md)
-- [State](../syntax/state.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

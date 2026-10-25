@@ -7,15 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.Ordered.flatten_nodup
 ---
 
-# Flatten nodup
+# An ordered B-tree has no duplicate keys
 
-The flattening of an ordered tree has no duplicate keys.
+**An ordered B-tree has no duplicate keys.** For a linearly ordered key type, the flattening
+of an ordered raw B-tree has no duplicate entries.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Ordered](ordered.md)
-- [Flatten](flatten.md)
+- [Raw B-trees](btree.md)
+- [Ordered B-tree](ordered.md)
+- [Inorder flattening of a B-tree](flatten.md)
 
 ## Sources
 

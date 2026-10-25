@@ -11,13 +11,13 @@ Evaluate a Boolean expression in a state.
 
 ## Depends on
 
-- [BExp](bexp.md)
-- [State](state.md)
+- [Boolean expressions of IMP](bexp.md)
+- [IMP program states](state.md)
 
 ## Proof depends on
 
-- [AExp](aexp.md)
-- [Eval](eval.md)
+- [Arithmetic expressions of IMP](aexp.md)
+- [Evaluation of IMP arithmetic expressions](eval.md)
 
 ## Sources
 

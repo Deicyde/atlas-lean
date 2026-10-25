@@ -20,11 +20,11 @@ The verifier host runs the component at `comp l`; its exits lead to the cleanup.
 - [The component's stacks inside a host](emb.md)
 - [Vprog](vprog.md)
 - [Relabelling in the verifier host](v.md)
-- [Embeds](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
+- [Embedding of a machine in a host](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
 
 ## Proof depends on
 
-- [Map S](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Translating a statement along a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 
 ## Sources
 

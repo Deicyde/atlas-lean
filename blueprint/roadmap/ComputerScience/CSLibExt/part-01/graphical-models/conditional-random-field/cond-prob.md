@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.MachineLearning.GraphicalModels.ConditionalRandomField.condProb
 ---
 
-# Cond Prob
+# Conditional probability of a label path in a chain CRF
 
-The conditional probability of a label path given the inputs. Division is the
-only operation needing a semifield, so `condProb` lives in this section while
-`pathWeight` / `partition` / `forward` need only a semiring.
+**Conditional probability of a label path in a chain CRF.** Let $c$ be a chain CRF with a
+finite set of states $S$ and weights in a semifield $R$ carrying a partial order $\le$, and let
+$x$ be an observation sequence. For $t \in \mathbb{N}$, the conditional probability of a label
+path $z \in S^{t+1}$ given $x$ is $w_t(z) / Z_t$, where $w_t(z)$ is the path weight of $z$ and
+$Z_t$ is the partition function, the total path weight of all label paths in $S^{t+1}$; the
+quotient is $0$ when $Z_t = 0$.
 
 ## Depends on
 
-- [Chain CRF](chain-crf.md)
+- [Linear-chain conditional random field](chain-crf.md)
 
 ## Proof depends on
 
-- [Partition](partition.md)
-- [Path Weight](path-weight.md)
+- [Partition function of a chain CRF](partition.md)
+- [Weight of a label path in a chain CRF](path-weight.md)
 
 ## Sources
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Knot.idU
 ---
 
-# Id U
+# The identity on Unit
 
-`λx : Unit. x`.
+**The identity on Unit.** The identity function $\lambda x{:}\mathrm{Unit}.\ x$ on the
+unit type.
 
 ## Depends on
 
-- [Term](../syntax/term.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 
 ## Proof depends on
 
-- [Ty](../syntax/ty.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

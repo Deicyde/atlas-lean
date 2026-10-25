@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.consComputer_outputsWithinTime
 ---
 
-# Cons Computer outputs Within Time
+# Prepending a symbol takes at most two steps
 
-`consComputer c` outputs `c :: l` on `l`, in two steps.
+**Prepending a symbol takes at most two steps.** For every symbol $c$ and every word $l$, the
+machine that prepends $c$, started on $l$, halts with output the word $c$ followed by $l$ within
+at most two steps.
 
 ## Depends on
 
-- [Cons Computer](cons-computer.md)
+- [The machine that prepends a symbol](cons-computer.md)
 
 ## Proof depends on
 
-- [Write move Left mk₁](write-move-left-mk.md)
+- [Prepending a symbol by stepping left](write-move-left-mk.md)
 
 ## Sources
 

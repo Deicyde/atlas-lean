@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.inorder_delete
 ---
 
-# Inorder delete
+# Inorder traversal after deletion
 
-Deleting a key erases it from the inorder traversal of an ordered tree.
+**Inorder traversal after deletion.** If $t$ is an ordered binary search tree over a linearly
+ordered type and $x$ is a key, then the inorder traversal of the tree obtained by deleting $x$
+from $t$ is the inorder traversal of $t$ with the first occurrence of $x$ removed (and is the
+inorder traversal of $t$ itself if $x$ does not occur in it).
 
 ## Depends on
 
 - [Ordered](../../../part-02/binary-search-tree/ordered.md)
-- [Delete](delete.md)
+- [Deletion from a binary search tree](delete.md)
 - [Inorder](../../../part-02/binary-search-tree/inorder.md)
 
 ## Proof depends on
@@ -23,8 +26,8 @@ Deleting a key erases it from the inorder traversal of an ordered tree.
 - [Mem](../../../part-02/binary-search-tree/mem.md)
 - [All iff forall mem](../../../part-02/binary-search-tree/all-iff-forall-mem.md)
 - [Inorder Aux](../../../part-02/binary-search-tree/inorder-aux.md)
-- [Inorder join](inorder-join.md)
-- [Join](join.md)
+- [Inorder traversal of a join](inorder-join.md)
+- [Join of two binary trees](join.md)
 - [Mem inorder](../../../part-02/binary-search-tree/mem-inorder.md)
 
 ## Sources

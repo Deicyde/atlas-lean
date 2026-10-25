@@ -34,7 +34,7 @@ on $R$; after each row the column marks are restored from $Rt$ and the row mark 
 - [The pair walk over lists of marks](../subset-sum-digits/walk-m.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
@@ -43,10 +43,10 @@ on $R$; after each row the column marks are restored from $Rt$ and the row mark 
 - [Start label of the subset-sum emitter](is-v-val.md)
 - [Subset-sum emitter: one row of the pair walk](pr-run.md)
 - [Reading a pair bit or vertex mark](val-of.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Is Bit Block](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit blocks](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Running the bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

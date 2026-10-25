@@ -6,14 +6,14 @@ navigation: module
 
 ## Wire
 
-- [To Fin](to-fin.md)
+- [Certificate position of a wire](to-fin.md)
 
 ## Circuit
 
-- [Verify Boolean Certificate](verify-boolean-certificate.md)
-- [Verify Boolean Certificate iff](verify-boolean-certificate-iff.md)
-- [Verify Boolean Certificate sound](verify-boolean-certificate-sound.md)
-- [Verify Boolean Certificate complete](verify-boolean-certificate-complete.md)
-- [Verify Boolean Certificate satisfiable iff](verify-boolean-certificate-satisfiable-i.md)
-- [Verify Boolean Certificate time](verify-boolean-certificate-time.md)
-- [Verify Boolean Certificate time le of fan In At Most](verify-boolean-certificate-time-le-of-fa.md)
+- [Boolean certificate verifier](verify-boolean-certificate.md)
+- [Characterization of accepted certificates](verify-boolean-certificate-iff.md)
+- [Soundness of the Boolean certificate verifier](verify-boolean-certificate-sound.md)
+- [Completeness of the Boolean certificate verifier](verify-boolean-certificate-complete.md)
+- [Short accepted certificates exist exactly for satisfiable circuits](verify-boolean-certificate-satisfiable-i.md)
+- [Cost of the Boolean certificate verifier](verify-boolean-certificate-time.md)
+- [Linear cost of the Boolean certificate verifier](verify-boolean-certificate-time-le-of-fa.md)

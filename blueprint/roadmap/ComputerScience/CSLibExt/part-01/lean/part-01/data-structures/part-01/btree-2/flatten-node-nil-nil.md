@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.flatten_node_nil_nil
 ---
 
-# Flatten node nil nil
+# Flattening of the empty node
 
-Flattening a node with neither keys nor children is empty.
+**Flattening of the empty node.** The flattening of the internal node with no keys and no
+children is the empty list.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Flatten](flatten.md)
+- [Raw B-trees](btree.md)
+- [Inorder flattening of a B-tree](flatten.md)
 
 ## Proof depends on
 
-- [Flatten Aux](flatten-aux.md)
+- [Accumulating flattening of a B-tree](flatten-aux.md)
 
 ## Sources
 

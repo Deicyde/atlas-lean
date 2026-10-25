@@ -40,7 +40,7 @@ variable (cap : Bool)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Labels of the SAT tokenizer](../sat-tokenizer/lab.md)
 - [Start label of the SAT tokenizer](../sat-tokenizer/start.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
@@ -48,9 +48,9 @@ variable (cap : Bool)
 - [Reading a witness bit in the SAT host](d-w.md)
 - [Reading a formula bit in the SAT host](d-x.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Move B run](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Running the bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

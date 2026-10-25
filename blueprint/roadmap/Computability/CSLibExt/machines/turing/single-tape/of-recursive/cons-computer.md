@@ -5,9 +5,13 @@ statement: formalized
 lean: Cslib.Turing.SingleTapeTM.consComputer
 ---
 
-# Cons Computer
+# The machine that prepends a symbol
 
-The machine that prepends the symbol `c` to its input: it steps left and writes `c`.
+**The machine that prepends a symbol.** For a symbol $c$, this is the single-tape machine
+with two states that, from its start state, writes back the symbol under the head, moves left and
+enters its second state, and from its second state writes $c$ and halts without moving.
+
+On an input word $l$ it outputs $c$ followed by $l$.
 
 ## Depends on
 

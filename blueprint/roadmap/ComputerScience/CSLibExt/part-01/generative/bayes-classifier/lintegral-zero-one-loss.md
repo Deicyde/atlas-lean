@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.MachineLearning.BayesClassifier.lintegral_zeroOneLoss
 ---
 
-# Lintegral zero One Loss
+# Expected 0-1 loss of a fixed prediction
 
-The expected 0-1 loss of predicting `y` under a law `ν` of the class is `ν {y}ᶜ`.
+**Expected 0-1 loss of a fixed prediction.** Let $C$ be a measurable space in which every
+singleton is measurable, let $\nu$ be a measure on $C$, and let $y \in C$. Writing $\ell(c, y)$
+for the 0-1 loss of predicting $y$ when the true class is $c$, we have
+$\int \ell(c, y) \, d\nu(c) = \nu(C \setminus \{y\})$.
 
 ## Depends on
 
-- [Zero One Loss](zero-one-loss.md)
+- [The 0-1 loss](zero-one-loss.md)
 
 ## Sources
 

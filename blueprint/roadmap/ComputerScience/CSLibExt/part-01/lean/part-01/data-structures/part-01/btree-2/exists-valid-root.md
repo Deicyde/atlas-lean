@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.IsBTree.exists_validRoot
 ---
 
-# Exists valid Root
+# B-trees satisfy the root invariant
 
-A B-tree is root-valid at some height.
+**B-trees satisfy the root invariant.** If $T$ is a B-tree of minimum degree $t$, then there
+is a height $h$ such that $T$ satisfies the root structural invariant of minimum degree $t$ at
+height $h$.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Is BTree](is-btree.md)
-- [Valid Root](valid-root.md)
+- [Raw B-trees](btree.md)
+- [B-trees of a given minimum degree](is-btree.md)
+- [Root invariant of a B-tree](valid-root.md)
 
 ## Proof depends on
 
-- [Ordered](ordered.md)
+- [Ordered B-tree](ordered.md)
 
 ## Sources
 

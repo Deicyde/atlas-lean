@@ -35,20 +35,20 @@ $\mathrm{true}, \mathrm{true}$, and for $s$ true adds one to $U$.
 - [Fresh variable indices](../three-sat/fresh.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Binary code of a literal](../../../../cook-levin/encode-lit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Code of a fresh literal](encode-lit-fresh.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Copy run](../../../../../MathlibExt/turing-machine/program/copy-run.md)
-- [Emit](../../../../../MathlibExt/turing-machine/program/emit.md)
-- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Rep](../../../../../MathlibExt/turing-machine/program/rep.md)
-- [Xfer E](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Copying a counter through a scratch stack](../../../../../MathlibExt/turing-machine/program/copy-run.md)
+- [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
+- [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Repeated block](../../../../../MathlibExt/turing-machine/program/rep.md)
+- [Draining a counter while prepending a block](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

@@ -8,23 +8,29 @@ lean: MetaMathlibExt.TM2Embedding.run_embed
 
 # Run embedding
 
-**Run embedding.** A run of the sub-machine ending at a live label is a run of the host of the
-same length, from any host stacks agreeing with the sub-machine's; at the end the host agrees with
-the sub-machine on the image of `e` and is unchanged outside it.
+**Run embedding.** Let $E$ be a stack embedding with stack renaming $e$, let $\varphi$ map the
+labels of a machine $M$ to those of a host machine $M'$, and suppose $M$ embeds in $M'$ along $E$
+and $\varphi$. Suppose $M$ goes in exactly $n$ steps from label $\ell$, state $v$ and stacks $S$ to
+a live label $\ell'$, state $v'$ and stacks $T$, where the start may also be the halted
+configuration with no label (whose image under $\varphi$ again has no label). If host stacks $S'$
+agree with $S$, then there are host stacks $T'$ such that $M'$ goes in exactly $n$ steps from
+label $\varphi(\ell)$, state $v$ and stacks $S'$ to label $\varphi(\ell')$, state $v'$ and stacks
+$T'$. Moreover $T'$ agrees with $T$, and $S'$, $T'$ satisfy the frame condition: host stacks
+outside the image of $e$ are unchanged.
 
 ## Depends on
 
-- [Agree](agree.md)
-- [Embeds](embeds.md)
-- [Frame](frame.md)
-- [SEmb](semb.md)
-- [Run](../program/run.md)
+- [Agreement of host and sub-machine stacks](agree.md)
+- [Embedding of a machine in a host](embeds.md)
+- [Frame condition for a stack embedding](frame.md)
+- [Stack embedding](semb.md)
+- [Exact-length runs of a TM2 machine](../program/run.md)
 
 ## Proof depends on
 
-- [Map S](map-s.md)
-- [Step Aux map S](step-aux-map-s.md)
-- [Iter none](../program/iter-none.md)
+- [Translating a statement along a stack embedding](map-s.md)
+- [Executing a translated statement](step-aux-map-s.md)
+- [A halted run stays halted](../program/iter-none.md)
 
 ## Sources
 

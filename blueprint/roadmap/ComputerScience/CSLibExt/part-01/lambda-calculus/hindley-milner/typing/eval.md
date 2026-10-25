@@ -5,14 +5,18 @@ statement: formalized
 lean: Cslib.HindleyMilner.Scheme.eval
 ---
 
-# Eval
+# Evaluation of a type scheme
 
-Evaluate a scheme: free variable `x` becomes `f x` and bound variable `i` becomes `g i`.
+**Evaluation of a type scheme.** Given maps $f$ and $g$ from natural numbers to monotypes
+over $B$, a type scheme $\sigma$ over $B$ evaluates to the monotype obtained by replacing each
+free type variable $x$ of $\sigma$ by $f(x)$ and each bound variable $i$ by $g(i)$, keeping
+every base type $b$ unchanged. An arrow $\sigma_1 \to \sigma_2$ evaluates to the arrow from the
+evaluation of $\sigma_1$ to the evaluation of $\sigma_2$.
 
 ## Depends on
 
-- [Scheme](scheme.md)
-- [Ty](ty.md)
+- [Type schemes](scheme.md)
+- [Monotypes](ty.md)
 
 ## Proof depends on
 

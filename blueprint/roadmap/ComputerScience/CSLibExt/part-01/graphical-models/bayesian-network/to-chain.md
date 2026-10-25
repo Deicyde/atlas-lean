@@ -5,15 +5,18 @@ statement: formalized
 lean: Cslib.MachineLearning.GraphicalModels.BayesNet.toChain
 ---
 
-# To Chain
+# The chain of a Bayesian network
 
-The network as a chain: the conditional of node `k` given the earlier nodes is its table
-applied to the values of its parents.
+**The chain of a Bayesian network.** A Bayesian network $b$ on nodes $0, \dots, n - 1$ with
+values in a nonempty type $\alpha$ defines a chain of conditional distributions. For $k < n$,
+the conditional distribution of variable $k$ given values $y_0, \dots, y_{k-1}$ of the earlier
+variables is the table of node $k$ applied to the values $y_j$ of its parents $j$. For
+$k \ge n$ it is the point mass at a fixed arbitrary element of $\alpha$.
 
 ## Depends on
 
-- [Bayes Net](bayes-net.md)
-- [Chain](chain.md)
+- [Bayesian network](bayes-net.md)
+- [Chain of conditional distributions](chain.md)
 
 ## Sources
 

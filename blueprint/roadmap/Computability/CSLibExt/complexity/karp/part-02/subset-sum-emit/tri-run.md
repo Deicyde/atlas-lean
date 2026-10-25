@@ -25,15 +25,15 @@ than $\mathsf{N}$ and $\mathsf{M}$ is as in $S$.
 - [Triangular numbers](../subset-sum-digits/tri.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Copy run](../../../../../MathlibExt/turing-machine/program/copy-run.md)
-- [Decr](../../../../../MathlibExt/turing-machine/program/decr.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Copying a counter through a scratch stack](../../../../../MathlibExt/turing-machine/program/copy-run.md)
+- [Decrement](../../../../../MathlibExt/turing-machine/program/decr.md)
 
 ## Sources
 

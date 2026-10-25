@@ -28,14 +28,14 @@ flag $v'$, the counters $F$ with $U$ set to $h$, and the same output $o$.
 - [Labels of the shift generator](lab.md)
 - [Setup and loop stages of a cell-shift block](st.md)
 - [The cell-shift generator](prog.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Decr](../../../../MathlibExt/turing-machine/program/decr.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
 
 ## Sources
 

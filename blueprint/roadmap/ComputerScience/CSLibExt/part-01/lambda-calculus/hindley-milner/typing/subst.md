@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.HindleyMilner.Ctx.subst
 ---
 
-# Subst
+# Applying a type substitution to a context
 
-Apply a type substitution to every scheme of a context.
+**Applying a type substitution to a context.** For a type substitution $s$ and a typing
+context $\Gamma$, $s\Gamma$ is the context obtained by applying $s$ to the scheme of every binding
+of $\Gamma$, keeping the names and their order.
 
 ## Depends on
 
-- [Ctx](ctx.md)
+- [Typing context](ctx.md)
 - [Subst](../../../../part-02/unification/basic/subst.md)
 
 ## Proof depends on
 
-- [Scheme](scheme.md)
-- [Subst Ty](subst-ty.md)
+- [Type schemes](scheme.md)
+- [Applying a type substitution to a scheme](subst-ty.md)
 
 ## Sources
 

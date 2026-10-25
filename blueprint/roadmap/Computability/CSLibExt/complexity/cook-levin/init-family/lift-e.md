@@ -18,7 +18,7 @@ the extended machine's stacks, with the identity map on its alphabet.
 - [Alphabets of a counter machine](../counter-view/s.md)
 - [Stacks of a counter machine with an input stack](ik.md)
 - [Alphabets of a counter machine with an input stack](i.md)
-- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Sources
 

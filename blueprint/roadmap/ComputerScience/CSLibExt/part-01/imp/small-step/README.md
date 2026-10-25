@@ -6,11 +6,11 @@ navigation: module
 
 ## IMP
 
-- [Config](config.md)
-- [Step](step.md)
-- [Steps](steps.md)
-- [Terminates](terminates.md)
+- [IMP configuration](config.md)
+- [IMP small-step relation](step.md)
+- [IMP multi-step relation](steps.md)
+- [Termination of an IMP command](terminates.md)
 
 ## Step
 
-- [Deterministic](deterministic.md)
+- [Determinism of IMP small-step semantics](deterministic.md)

@@ -25,8 +25,8 @@ alphabets is primitive recursive.
 ## Proof depends on
 
 - [Multi-stack recognizable predicates are exactly the r.e. predicates](../basic/tm2-recognizable-iff-re-pred.md)
-- [And](../../../../MathlibExt/re/and-2.md)
-- [Exists](../../../../MathlibExt/re/exists.md)
+- [Recursively enumerable predicates are closed under conjunction](../../../../MathlibExt/re/and-2.md)
+- [Existential projection preserves recursive enumerability](../../../../MathlibExt/re/exists.md)
 
 ## Sources
 

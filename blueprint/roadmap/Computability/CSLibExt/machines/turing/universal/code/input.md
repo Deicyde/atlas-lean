@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Turing.Universal.input
 ---
 
-# Input
+# Input word of a list of bits
 
-The input word of the bits `x`.
+**Input word of a list of bits.** The input word of a list of bits $x$ is the list of natural
+numbers obtained from $x$ by replacing each bit by its symbol: $1$ for false and $2$ for true.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bit Sym](bit-sym.md)
+- [Symbol of an input bit](bit-sym.md)
 
 ## Sources
 

@@ -8,26 +8,30 @@ lean: Cslib.MachineLearning.Bayesian.posterior_linRegLikelihood_gaussianReal
 
 # Bayesian linear regression
 
-**Bayesian linear regression** with one feature, a `N(m₀, s₀)` prior on the weight and known
-noise variance `σ²`. For almost every response vector `y`, the posterior of the weight is Gaussian
-with mean `(σ² m₀ + s₀ ∑ xᵢ yᵢ) / (σ² + s₀ ∑ xᵢ²)` and variance `s₀ σ² / (σ² + s₀ ∑ xᵢ²)`.
+**Bayesian linear regression.** Let $m_0 \in \mathbb{R}$, let $s_0 > 0$ and $\sigma^2 > 0$,
+and let $x \in \mathbb{R}^n$ be fixed inputs. Put the prior $N(m_0, s_0)$ (mean $m_0$, variance
+$s_0$) on a scalar weight $w$, and let the responses be independent given $w$ with
+$y_i \sim N(w x_i, \sigma^2)$. Then for Lebesgue-almost every response vector
+$y \in \mathbb{R}^n$, the posterior of $w$ given $y$ is Gaussian with mean
+$(\sigma^2 m_0 + s_0 \sum_i x_i y_i) / (\sigma^2 + s_0 \sum_i x_i^2)$ and variance
+$s_0 \sigma^2 / (\sigma^2 + s_0 \sum_i x_i^2)$.
 
 ## Depends on
 
 - [The likelihood of Bayesian linear regression](lin-reg-likelihood.md)
-- [Lin Reg Likelihood apply](lin-reg-likelihood-apply.md)
-- [Lin Reg Likelihood zero apply](lin-reg-likelihood-zero-apply.md)
-- [Lin Reg Post Mean](lin-reg-post-mean.md)
-- [Lin Reg Post Var](lin-reg-post-var.md)
+- [The linear regression likelihood is a product of Gaussians](lin-reg-likelihood-apply.md)
+- [The noiseless linear regression likelihood](lin-reg-likelihood-zero-apply.md)
+- [Posterior mean in Bayesian linear regression](lin-reg-post-mean.md)
+- [Posterior variance in Bayesian linear regression](lin-reg-post-var.md)
 
 ## Proof depends on
 
-- [Gaussian PDFReal mul lin Reg Likelihood PDFReal'](gaussian-pdfreal-mul-lin-reg-likelihood-2.md)
-- [Lin Reg Evidence PDFReal](lin-reg-evidence-pdfreal.md)
-- [Lin Reg Likelihood PDF](lin-reg-likelihood-pdf.md)
-- [Lin Reg Likelihood PDFReal](lin-reg-likelihood-pdfreal.md)
-- [The evidence](lin-reg-likelihood-comp-gaussian-real.md)
-- [Measurable lin Reg Post Mean](measurable-lin-reg-post-mean.md)
+- [Prior times likelihood factors as evidence times posterior](gaussian-pdfreal-mul-lin-reg-likelihood-2.md)
+- [The evidence density of Bayesian linear regression](lin-reg-evidence-pdfreal.md)
+- [The extended-real linear regression likelihood density](lin-reg-likelihood-pdf.md)
+- [The linear regression likelihood density](lin-reg-likelihood-pdfreal.md)
+- [The evidence of Bayesian linear regression](lin-reg-likelihood-comp-gaussian-real.md)
+- [The linear regression likelihood is a product of Gaussians](measurable-lin-reg-post-mean.md)
 - [Bayes' rule for densities](../density/posterior-ae-eq-of-mul-eq.md)
 
 ## Sources

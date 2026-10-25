@@ -6,13 +6,17 @@ proof: formalized
 lean: Cslib.Language.RegularSubstitution.isPath_run
 ---
 
-# Is Path run
+# Paths inside one copy of a letter automaton
 
-Inside a copy of `N a`, reading `y` runs `N a`.
+**Paths inside one copy of a letter automaton.** Let $M$ be a DFA over $T$, and for each
+letter $a \in T$ let $N_a$ be a DFA over $T'$. For every state $q$ of $M$, letter $a \in T$,
+state $p$ of $N_a$ and word $y$ over $T'$, the ε-NFA built from $M$ and the $N_a$ has a path
+reading the letters of $y$, with no ε-moves, from the state $p$ of the copy of $N_a$ entered from
+$q$ to the state of the same copy that $N_a$ reaches from $p$ on $y$.
 
 ## Depends on
 
-- [Εnfa](nfa.md)
+- [The ε-NFA for a substitution](nfa.md)
 
 ## Sources
 

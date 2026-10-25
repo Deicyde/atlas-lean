@@ -27,7 +27,7 @@ stack.
 
 - [Encoding of an earlier occurrence on stack $D$](d-tok.md)
 - [Name of a variable](name.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

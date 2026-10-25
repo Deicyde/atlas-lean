@@ -6,28 +6,36 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.weight_le_tourCost
 ---
 
-# Weight le tour Cost
+# A minimum spanning tree costs at most any tour
 
-CLRS Theorem 35.2, second half: a minimum spanning tree costs at most any tour, because a tour
-minus its closing edge is a spanning path.
+**A minimum spanning tree costs at most any tour.** Let $d$ be a cost function on the
+vertices with values in a linearly ordered additive commutative monoid that is symmetric, zero on
+the diagonal, nonnegative and satisfies the triangle inequality. Let $V$ be a list of distinct
+vertices. Let $T$ be a minimum spanning tree of $V$ for $d$: a rooted tree whose vertices are the
+elements of $V$, each once, whose weight (the total cost of its edges) is at most that of every
+such tree. Let $H$ be a tour of $V$, a list that is a permutation of $V$. Then the weight of $T$
+is at most the cost of the closed tour $H$.
+
+A tour minus its closing edge is a spanning path, which is a spanning tree.
 
 ## Depends on
 
-- [Forest](forest.md)
-- [Weight](weight.md)
-- [Is Metric Cost](is-metric-cost.md)
+- [Rooted forest in left-child right-sibling form](forest.md)
+- [Weight of a forest below a vertex](weight.md)
+- [Metric cost function](is-metric-cost.md)
 - [Is Min Spanning](is-min-spanning.md)
-- [Is Tour](is-tour.md)
-- [Tour Cost](tour-cost.md)
+- [Tour of a vertex list](is-tour.md)
+- [Cost of a closed tour](tour-cost.md)
 
 ## Proof depends on
 
-- [Chain](chain.md)
-- [Preorder](preorder.md)
-- [Preorder chain](preorder-chain.md)
-- [Is Spanning](is-spanning.md)
-- [Path From](path-from.md)
+- [Path as a forest](chain.md)
+- [Preorder of a forest](preorder.md)
+- [The preorder tour costs at most twice the tree](preorder-chain.md)
+- [Rooted spanning tree of a vertex list](is-spanning.md)
+- [Cost of a walk](path-from.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.MetricTSP](../../../../../../../../sources/v2/CSLibExt.md)
+- CLRS Theorem 35.2, second half.

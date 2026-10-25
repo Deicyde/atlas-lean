@@ -7,21 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.mem_insert
 ---
 
-# Mem insert
+# Membership after B-tree insertion
 
-Inserting a key adds exactly that key to membership.
+**Membership after B-tree insertion.** Let $t \ge 2$ and let $T$ be a B-tree of minimum
+degree $t$ over a linearly ordered key type. For all keys $x$ and $y$, $y$ belongs to the tree
+obtained by inserting $x$ into $T$ if and only if $y = x$ or $y$ belongs to $T$.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Is BTree](is-btree.md)
-- [Mem](mem.md)
-- [Insert](insert.md)
+- [Raw B-trees](btree.md)
+- [B-trees of a given minimum degree](is-btree.md)
+- [Membership in a B-tree](mem.md)
+- [B-tree insertion](insert.md)
 
 ## Proof depends on
 
-- [Flatten](flatten.md)
-- [Flatten insert](flatten-insert.md)
+- [Inorder flattening of a B-tree](flatten.md)
+- [B-tree insertion as sorted list insertion](flatten-insert.md)
 - [Mem ordered Insert](../../part-03/ordered-insert/mem-ordered-insert.md)
 - [Ordered Insert](../../part-03/ordered-insert/ordered-insert.md)
 

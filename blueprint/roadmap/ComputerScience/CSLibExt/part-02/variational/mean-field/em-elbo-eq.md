@@ -12,7 +12,7 @@ EM's evidence lower bound is the sum of the per-point ELBOs.
 
 ## Depends on
 
-- [Elbo](../../../part-01/latent-variable/expectation-maximization/elbo.md)
+- [Evidence lower bound of latent distributions](../../../part-01/latent-variable/expectation-maximization/elbo.md)
 - [Elbo](elbo.md)
 
 ## Sources

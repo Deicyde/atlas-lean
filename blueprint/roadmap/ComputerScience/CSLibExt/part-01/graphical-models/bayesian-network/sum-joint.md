@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.MachineLearning.GraphicalModels.Chain.sum_joint
 ---
 
-# Sum joint
+# The joint distribution of a chain sums to one
 
-The joint is a probability distribution.
+**The joint distribution of a chain sums to one.** Let $c$ be a chain of conditional
+distributions with values in a finite type $\alpha$, and write $P_n$ for its joint distribution
+of the first $n$ variables. For every $n$, $\sum_{x \in \alpha^n} P_n(x) = 1$.
 
 ## Depends on
 
-- [Chain](chain.md)
-- [Joint](joint.md)
+- [Chain of conditional distributions](chain.md)
+- [Joint distribution of a chain](joint.md)
 
 ## Proof depends on
 
-- [Sum joint snoc](sum-joint-snoc.md)
-- [Sum snoc](sum-snoc.md)
+- [Marginalizing the last variable of a chain](sum-joint-snoc.md)
+- [Splitting a sum over $\alpha^{n+1}$ at the last coordinate](sum-snoc.md)
 
 ## Sources
 

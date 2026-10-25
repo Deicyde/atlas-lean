@@ -39,10 +39,10 @@ $l - 1$, or to the end of the clause when $l = 0$.
 - [Label after a literal routine](after.md)
 - [Constant offset of a literal in a block](csv.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Cmp Step](../../../../MathlibExt/turing-machine/program/cmp-step.md)
-- [Decr](../../../../MathlibExt/turing-machine/program/decr.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [One round of counter comparison](../../../../MathlibExt/turing-machine/program/cmp-step.md)
+- [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

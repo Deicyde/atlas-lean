@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Term.rename_congr
 ---
 
-# Rename congr
+# Renaming respects pointwise equality
 
-Renamings that agree pointwise act identically.
+**Renaming respects pointwise equality.** Let $\rho, \rho' : \mathbb{N} \to \mathbb{N}$ be
+renamings of de Bruijn variables with $\rho(x) = \rho'(x)$ for every $x \in \mathbb{N}$. Then for
+every term $t$ of the simply typed lambda calculus with references, renaming $t$ by $\rho$ gives
+the same term as renaming $t$ by $\rho'$.
 
 ## Depends on
 
-- [Term](../syntax/term.md)
-- [Rename](../syntax/rename.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Renaming the variables of a term](../syntax/rename.md)
 
 ## Proof depends on
 
-- [Lift Ren](../syntax/lift-ren.md)
-- [Ty](../syntax/ty.md)
+- [Lifting a renaming under a binder](../syntax/lift-ren.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

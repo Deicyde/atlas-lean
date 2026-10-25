@@ -6,21 +6,21 @@ navigation: module
 
 ## Has Type
 
-- [Rename](rename.md)
-- [Weaken](weaken.md)
-- [Subst](subst.md)
-- [Instantiate](instantiate.md)
-- [Extend Store](extend-store.md)
+- [Renaming preserves typing](rename.md)
+- [Weakening of typing](weaken.md)
+- [Parallel substitution preserves typing](subst.md)
+- [Substitution lemma](instantiate.md)
+- [Store-typing weakening](extend-store.md)
 
 ## Store Typed
 
 - [Extend Store](extend-store-2.md)
-- [Append](append.md)
-- [Set](set.md)
+- [Allocation preserves store typing](append.md)
+- [Assignment preserves store typing](set.md)
 
 ## References
 
-- [Preservation](preservation.md)
-- [Preservation](preservation-2.md)
-- [Type Safety](type-safety.md)
-- [Type Safety empty](type-safety-empty.md)
+- [Preservation for the lambda calculus with references](preservation.md)
+- [Preservation for multi-step evaluation](preservation-2.md)
+- [Type safety](type-safety.md)
+- [Type safety from the empty store](type-safety-empty.md)

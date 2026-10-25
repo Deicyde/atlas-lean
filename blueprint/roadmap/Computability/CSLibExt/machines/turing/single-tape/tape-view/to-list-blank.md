@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.Turing.StackTape.toListBlank
 ---
 
-# To List Blank
+# Half-tape view of a stack tape
 
-A `StackTape` read as a Mathlib half-tape of cells: the cells past the end of the list are
-blank, and the blank cell `none` is the default symbol.
+**Half-tape view of a stack tape.** A stack tape $s$ over an alphabet $\Gamma$ is a finite list
+of cells, each a symbol of $\Gamma$ or the blank cell, that does not end in a blank cell. Its
+half-tape view is the half-tape of cells (a sequence of cells taken up to trailing blanks, the
+blank cell being the default) whose cells are those of $s$ in order, followed by blank cells.
 
 ## Depends on
 

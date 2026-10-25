@@ -6,34 +6,37 @@ proof: formalized
 lean: Cslib.IMP.safe_toHeap
 ---
 
-# Safe to Heap
+# Embedded plain commands are safe
 
-Embedded plain commands are safe at every heap, since plain IMP
-never gets stuck except at `skip`.
+**Embedded plain commands are safe.** For every plain IMP command $c$ with embedding
+$\overline{c}$ into the heap language, every store $s$ and every heap $h$, the heap
+configuration $(\overline{c}, s, h)$ is safe.
+
+This holds because plain IMP never gets stuck except at $\mathtt{skip}$.
 
 ## Depends on
 
-- [Cmd](../syntax/cmd.md)
-- [To Heap](to-heap.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Embedding of IMP into the heap language](to-heap.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](heap-cmd.md)
-- [Safe](safe.md)
-- [State](../syntax/state.md)
+- [Heap commands](heap-cmd.md)
+- [Safe heap configurations](safe.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Config](../small-step/config.md)
-- [HConfig](hconfig.md)
-- [HStep](hstep.md)
-- [To Heap iff](to-heap-iff.md)
-- [HSteps](hsteps.md)
-- [Of to Heap](of-to-heap.md)
-- [Step](../small-step/step.md)
-- [Steps](../small-step/steps.md)
+- [IMP configuration](../small-step/config.md)
+- [Heap configurations](hconfig.md)
+- [Small-step semantics of heap commands](hstep.md)
+- [Heap steps of embedded commands are plain steps](to-heap-iff.md)
+- [Multi-step heap execution](hsteps.md)
+- [Executions of embedded commands are plain executions](of-to-heap.md)
+- [IMP small-step relation](../small-step/step.md)
+- [IMP multi-step relation](../small-step/steps.md)
 
 ## Sources
 

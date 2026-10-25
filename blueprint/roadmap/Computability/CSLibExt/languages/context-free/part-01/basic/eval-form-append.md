@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Language.evalForm_append
 ---
 
-# Eval Form append
+# Interpretation of a concatenation
 
-Interpreting a concatenation of sentential forms is the product of the
-interpretations.
+**Interpretation of a concatenation.** For every assignment $V$ of languages to nonterminals and
+all sentential forms $u$ and $v$, the language that $uv$ denotes under $V$ is the concatenation of
+the languages that $u$ and $v$ denote under $V$.
 
 ## Depends on
 
-- [Eval Form](eval-form.md)
+- [Interpretation of a sentential form](eval-form.md)
 
 ## Proof depends on
 
-- [Eval Symbol](eval-symbol.md)
+- [Interpretation of a grammar symbol](eval-symbol.md)
 
 ## Sources
 

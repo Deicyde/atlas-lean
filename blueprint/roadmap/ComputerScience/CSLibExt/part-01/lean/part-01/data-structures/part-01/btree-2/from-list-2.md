@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.IsBTree.fromList
 ---
 
-# From List
+# Building from a list yields a B-tree
 
-A tree built by insertions from the empty tree is a B-tree.
+**Building from a list yields a B-tree.** For a linearly ordered key type, every natural
+number $t \ge 2$ and every list $L$ of keys, the tree obtained by inserting the elements of $L$
+from right to left into the empty tree, each insertion with minimum degree $t$, is a B-tree of
+minimum degree $t$.
 
 ## Depends on
 
-- [Is BTree](is-btree.md)
-- [From List](from-list.md)
+- [B-trees of a given minimum degree](is-btree.md)
+- [B-tree built from a list](from-list.md)
 
 ## Proof depends on
 
-- [Empty](empty-2.md)
-- [Insert](insert-2.md)
+- [The empty tree is a B-tree](empty-2.md)
+- [Insertion preserves the B-tree invariant](insert-2.md)
 
 ## Sources
 

@@ -30,7 +30,7 @@ empty.
 - [Phase-0 labels of the generic host](p0.md)
 - [Reduction host program](rprog.md)
 - [Rtime](rtime.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 

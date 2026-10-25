@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.MachineLearning.GraphicalModels.ConditionalRandomField.partition
 ---
 
-# Partition
+# Partition function of a chain CRF
 
-The partition function: the total weight of all label paths.
+**Partition function of a chain CRF.** For a chain conditional random field with a finite set
+of states and weights in a semiring, and an observation stream $x$, the partition function at
+time $t$ is $Z_t = \sum_z w_t(z)$, the total weight of all label paths $z$ of length $t + 1$,
+where $w_t(z)$ is the unnormalized weight of $z$ given $x$.
 
 ## Depends on
 
-- [Chain CRF](chain-crf.md)
+- [Linear-chain conditional random field](chain-crf.md)
 
 ## Proof depends on
 
-- [Path Weight](path-weight.md)
+- [Weight of a label path in a chain CRF](path-weight.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.ntOfIndex
 ---
 
-# Nt Of Index
+# Nonterminal with a given number
 
-The nonterminal with a given number, or the initial one.
+**Nonterminal with a given number.** For a context-free grammar $G$ and a natural number $n$,
+the nonterminal of $G$ with number $n$ is the entry at position $n$, counting from $0$, of the
+list of nonterminals that $G$ mentions (its initial nonterminal first); if the list has no entry
+at position $n$, it is the initial nonterminal of $G$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Used NT](used-nt.md)
+- [Nonterminals mentioned by a grammar](used-nt.md)
 
 ## Sources
 

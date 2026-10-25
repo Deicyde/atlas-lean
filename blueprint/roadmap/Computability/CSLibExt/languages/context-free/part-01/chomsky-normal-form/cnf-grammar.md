@@ -24,9 +24,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cnf Head](cnf-head.md)
-- [Grammar Terminals](grammar-terminals.md)
-- [To Cnf NT](to-cnf-nt.md)
+- [Head of a binarized output](cnf-head.md)
+- [Terminals of a grammar](grammar-terminals.md)
+- [Encoding symbols as basic nonterminals of the binarized grammar](to-cnf-nt.md)
 
 ## Sources
 

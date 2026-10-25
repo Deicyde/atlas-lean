@@ -28,8 +28,8 @@ Hamiltonian path from $T_0$ to $T_k$.
 
 - [The forward path through the diamonds](hf-path.md)
 - [A satisfying choice gives a Hamiltonian path](is-ham-path-hf-path.md)
-- [Mem vars Of](../../../../sat-time-m/mem-vars-of.md)
-- [Vars Of](../../../../sat-time-m/vars-of.md)
+- [Variables of a formula occur in its occurrence list](../../../../sat-time-m/mem-vars-of.md)
+- [Occurrence list of a CNF formula](../../../../sat-time-m/vars-of.md)
 
 ## Sources
 

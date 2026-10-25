@@ -27,18 +27,18 @@ The machine thus pushes the binary digits of $k$ onto $T$ least significant firs
 - [The subset-sum emitter machine](prog.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
 - [One halving step of the binary conversion (SUBSET-SUM reduction machine)](hv0-run.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Xfer run](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
-- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Adding units to target stacks](../../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Running a counter transfer](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Binary encoding, least significant bit first](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

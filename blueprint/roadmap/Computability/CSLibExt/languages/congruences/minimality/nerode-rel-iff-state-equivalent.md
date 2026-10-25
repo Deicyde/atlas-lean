@@ -16,7 +16,7 @@ observationally equivalent, that is, $M$ accepts the same language from both sta
 ## Depends on
 
 - [Equivalent states of a DFA](state-equivalent.md)
-- [Nerode Rel](../nerode/nerode-rel.md)
+- [Nerode equivalence](../nerode/nerode-rel.md)
 
 ## Sources
 

@@ -6,14 +6,18 @@ proof: formalized
 lean: Cslib.Language.cases_of_mem_epsGrammar_rules
 ---
 
-# Cases of mem eps Grammar rules
+# Productions of the $\varepsilon$-eliminated grammar come from productions of $g$
 
-The productions of `epsGrammar`, backward direction.
+**Productions of the $\varepsilon$-eliminated grammar come from productions of $g$.**
+Let $g$ be a context-free grammar. Every production $A \to \alpha'$ of the grammar obtained
+from $g$ by eliminating $\varepsilon$-productions arises from a production $A \to \alpha$ of $g$
+with the same left-hand side $A$, such that $\alpha'$ is obtained from $\alpha$ by deleting some
+occurrences of nullable nonterminals and $\alpha'$ is nonempty.
 
 ## Depends on
 
-- [Eps Grammar](eps-grammar.md)
-- [Nullable Deletions](nullable-deletions.md)
+- [Elimination of $\varepsilon$-productions](eps-grammar.md)
+- [Nullable deletions](nullable-deletions.md)
 
 ## Sources
 

@@ -8,18 +8,20 @@ lean: Cslib.Algorithms.Concurrency.Deadlock.AllocState.deadlock_iff_circularWait
 
 # Deadlock is circular wait
 
-**Deadlock is circular wait** (finitely many processes).
+**Deadlock is circular wait.** In a resource-allocation snapshot with finitely many
+processes, some set of processes is deadlocked if and only if the snapshot has circular wait,
+that is, some process waits for itself through a chain of one or more wait-for edges.
 
 ## Depends on
 
-- [Alloc State](alloc-state.md)
+- [Resource-allocation snapshot](alloc-state.md)
 - [Circular Wait](circular-wait.md)
 - [Deadlocked](deadlocked.md)
 
 ## Proof depends on
 
-- [Circular Wait of deadlocked](circular-wait-of-deadlocked.md)
-- [Exists deadlocked of circular Wait](exists-deadlocked-of-circular-wait.md)
+- [A deadlocked set forces circular wait](circular-wait-of-deadlocked.md)
+- [Circular wait yields a deadlocked set](exists-deadlocked-of-circular-wait.md)
 
 ## Sources
 

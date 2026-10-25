@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Turing.BiTape.nth_toTape_mk₁
 ---
 
-# Nth to Tape mk₁
+# Cells of an input tape
 
-The cells of an input tape: the word from position `0` on, blank elsewhere.
+**Cells of an input tape.** For every word $w = w_0 \cdots w_{m-1}$ over $\Gamma$ and every
+integer $i$, the cell at position $i$ of the view of the input tape of $w$ is $w_i$ if
+$0 \le i < m$, and the blank otherwise.
 
 ## Depends on
 
-- [To Tape](to-tape.md)
+- [Cell view of a two-way tape](to-tape.md)
 
 ## Sources
 

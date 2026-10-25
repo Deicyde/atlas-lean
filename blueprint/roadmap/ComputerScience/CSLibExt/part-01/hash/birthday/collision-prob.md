@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Crypto.Birthday.collisionProb
 ---
 
-# Collision Prob
+# Collision probability
 
-The probability that `q` independent uniform samples from `α` contain a collision.
+**Collision probability.** For a nonempty finite set $\alpha$ and a natural number $q$, the
+collision probability is the probability, as a real number, that the collision experiment with
+$q$ samples from $\alpha$ outputs true, that is, that $q$ independent uniform samples from
+$\alpha$ contain two equal samples at distinct positions.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Collision Game](collision-game.md)
+- [The collision experiment](collision-game.md)
 
 ## Sources
 

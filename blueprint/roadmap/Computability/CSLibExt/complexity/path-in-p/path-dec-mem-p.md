@@ -17,24 +17,24 @@ $n$, the pairs $(u, v) \in E$ with $u < n$ and $v < n$.
 ## Depends on
 
 - [The PATH problem](../path/path-dec.md)
-- [Decision Complexity Class](../../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
-- [P](../../../MathlibExt/complexity/p.md)
+- [Complexity classes](../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
+- [The complexity class P](../../../MathlibExt/complexity/p.md)
 
 ## Proof depends on
 
 - [The marking algorithm is polynomial-time](is-poly-time-path-check.md)
 - [The marking algorithm for PATH](../path/path-check.md)
 - [The marking algorithm decides PATH](../path-correct/path-dec-eq-path-check.md)
-- [Bitstring Encoding](../../../MathlibExt/complexity/bitstring-encoding.md)
-- [Bit Decode](../../../MathlibExt/complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../../MathlibExt/complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../../MathlibExt/complexity/bit-encode.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
-- [Undelimit Blocks](../../../MathlibExt/complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../../MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Is Poly Time](../../../MathlibExt/complexity/is-poly-time.md)
+- [Bitstring encodings](../../../MathlibExt/complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../../MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../../MathlibExt/complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../../MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Polynomial-time computable functions](../../../MathlibExt/complexity/is-poly-time.md)
 
 ## Sources
 

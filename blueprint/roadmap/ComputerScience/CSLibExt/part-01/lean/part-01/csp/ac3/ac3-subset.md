@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.ArcConsistency.ac3_subset
 ---
 
-# Domains only shrink
+# AC-3 only shrinks domains
 
-**Domains only shrink.**
+**AC-3 only shrinks domains.** For a binary CSP $P$ with finitely many variables, domains
+$\mathrm{dom}$, a queue $q$ of pairs of variables and a variable $v$, the domain of $v$ returned
+by AC-3 run from $\mathrm{dom}$ with queue $q$ is a subset of $\mathrm{dom}(v)$.
 
 ## Depends on
 
-- [Binary CSP](binary-csp.md)
-- [Ac3](ac3.md)
+- [Binary constraint satisfaction problem](binary-csp.md)
+- [The AC-3 algorithm](ac3.md)
 
 ## Proof depends on
 
-- [Indeg](indeg.md)
-- [Potential](potential.md)
-- [Potential lt](potential-lt.md)
-- [Requeue](requeue.md)
-- [Revise](revise.md)
+- [In-degree of a variable](indeg.md)
+- [Termination potential of AC-3](potential.md)
+- [A shrinking revision lowers the potential](potential-lt.md)
+- [Arcs requeued after a revision](requeue.md)
+- [Revision of an arc](revise.md)
 
 ## Sources
 

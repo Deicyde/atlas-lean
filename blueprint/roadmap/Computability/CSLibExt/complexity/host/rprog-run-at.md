@@ -29,7 +29,7 @@ every other stack empty.
 - [Phase-0 labels of the generic host](p0.md)
 - [Reduction host program](rprog.md)
 - [Rtime](rtime.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -42,12 +42,11 @@ every other stack empty.
 - [Stack lengths grow by at most the push bound per step](stk-length-le.md)
 - [Stack lengths when only one stack is filled](update-length-le.md)
 - [Component labels in the reduction host](r.md)
-- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
-- [Agree](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
-- [Frame](../../../MathlibExt/turing-machine/stack-embedding/frame.md)
-- [Run Le embed](../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Agreement of host and sub-machine stacks](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
+- [Frame condition for a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/frame.md)
+- [Run embedding for bounded runs](../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

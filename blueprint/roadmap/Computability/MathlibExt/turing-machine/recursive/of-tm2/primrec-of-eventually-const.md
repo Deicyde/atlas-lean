@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.TM2Recursive.primrec_of_eventually_const
 ---
 
-# Primrec of eventually const
+# Eventually constant functions on ℕ are primitive recursive
 
-A function of a natural number that is constant from `N` on is primitive recursive.
+**Eventually constant functions on ℕ are primitive recursive.** Let $\beta$ be a primitive
+recursively encodable type. If $g : \mathbb{N} \to \beta$ and $N \in \mathbb{N}$ satisfy
+$g(c) = g(N)$ for all $c \ge N$, then $g$ is primitive recursive.
 
 ## Depends on
 

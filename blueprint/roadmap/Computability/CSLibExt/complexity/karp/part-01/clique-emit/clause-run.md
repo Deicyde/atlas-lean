@@ -34,7 +34,7 @@ clause count $c + 1$, occurrence count $n + |C|$ and all other stacks empty.
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -42,8 +42,8 @@ clause count $c + 1$, occurrence count $n + |C|$ and all other stacks empty.
 - [Emitter run over a clause's literals](lits-run.md)
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

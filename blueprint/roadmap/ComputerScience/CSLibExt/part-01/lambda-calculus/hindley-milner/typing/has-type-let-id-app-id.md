@@ -8,26 +8,28 @@ lean: Cslib.HindleyMilner.hasType_let_id_app_id
 
 # `let` generalizes
 
-**`let` generalizes**: `let f = λx. x in f f` has type `α → α`.
+**`let` generalizes.** For every typing context $\Gamma$, all variable names $f$ and $x$, and
+every type variable $\alpha$, the expression $\mathtt{let}\ f = \lambda x.\, x\ \mathtt{in}\ f\, f$
+has type $\alpha \to \alpha$ in $\Gamma$.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [Expr](expr.md)
-- [Has Type](has-type.md)
+- [Typing context](ctx.md)
+- [Expressions of the λ-calculus with let](expr.md)
+- [Hindley–Milner typing](has-type.md)
 - [Term](../../../../part-02/unification/basic/term.md)
 
 ## Proof depends on
 
-- [Ftv](ftv.md)
-- [Lookup](lookup.md)
-- [Scheme](scheme.md)
-- [Eval](eval.md)
-- [Inst](inst.md)
-- [Ty](ty.md)
-- [Above](above.md)
-- [Gen](gen.md)
-- [To Scheme](to-scheme.md)
+- [Free type variables of a context](ftv.md)
+- [Context lookup](lookup.md)
+- [Type schemes](scheme.md)
+- [Evaluation of a type scheme](eval.md)
+- [Instantiation of a type scheme](inst.md)
+- [Monotypes](ty.md)
+- [Strict upper bound of a finite set of naturals](above.md)
+- [Generalization of a monotype](gen.md)
+- [Monotypes as type schemes](to-scheme.md)
 - [Subst](../../../../part-02/unification/basic/subst-2.md)
 
 ## Sources

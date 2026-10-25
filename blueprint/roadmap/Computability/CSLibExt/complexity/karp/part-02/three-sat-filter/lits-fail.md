@@ -25,13 +25,13 @@ steps.
 - [Walking label for a literal count](wl.md)
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Walking over a literal advances the literal count](walk-lit.md)
 - [A capped walk fails on a literal past the third](walk-lit-fail.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

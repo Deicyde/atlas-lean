@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.IMP.Heap.exists_notMem
 ---
 
-# Exists not Mem
+# Every heap has a free address
 
-Every heap leaves some address unallocated.
+**Every heap has a free address.** For every heap $h$ there is an address that is not
+allocated in $h$.
 
 ## Depends on
 

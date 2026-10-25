@@ -6,16 +6,21 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.gaussianPDFReal_mul_linRegLikelihoodPDFReal'
 ---
 
-# Gaussian PDFReal mul lin Reg Likelihood PDFReal'
+# Prior times likelihood factors as evidence times posterior
 
-Prior density times likelihood is the evidence density times the posterior density.
+**Prior times likelihood factors as evidence times posterior.** Let $m_0 \in \mathbb{R}$,
+let $s_0, \sigma^2 \ge 0$ be nonzero, let $x, y \in \mathbb{R}^n$ and let $w \in \mathbb{R}$.
+Write $\varphi(t; \mu, \tau)$ for the Gaussian density with mean $\mu$ and variance $\tau$ at $t$,
+$L(y \mid w) = \prod_i \varphi(y_i; w x_i, \sigma^2)$ for the likelihood density, $m$ and $v$ for
+the posterior mean and variance of the weight, and $Z(y)$ for the evidence density. Then
+$\varphi(w; m_0, s_0) \, L(y \mid w) = Z(y) \, \varphi(w; m, v)$.
 
 ## Depends on
 
-- [Lin Reg Evidence PDFReal](lin-reg-evidence-pdfreal.md)
-- [Lin Reg Likelihood PDFReal](lin-reg-likelihood-pdfreal.md)
-- [Lin Reg Post Mean](lin-reg-post-mean.md)
-- [Lin Reg Post Var](lin-reg-post-var.md)
+- [The evidence density of Bayesian linear regression](lin-reg-evidence-pdfreal.md)
+- [The linear regression likelihood density](lin-reg-likelihood-pdfreal.md)
+- [Posterior mean in Bayesian linear regression](lin-reg-post-mean.md)
+- [Posterior variance in Bayesian linear regression](lin-reg-post-var.md)
 
 ## Proof depends on
 

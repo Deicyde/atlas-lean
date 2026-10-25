@@ -7,13 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.time_siftUp_zero
 ---
 
-# Time sift Up zero
+# Sift-up at the root costs nothing
 
-Sift-up at the root performs no comparisons or swaps.
+**Sift-up at the root costs nothing.** For every array $a$ over a linearly ordered type,
+sift-up with comparison and swap counts on $a$ at index $0$ has cost $(0, 0)$: it counts no
+comparisons and no swaps.
 
 ## Depends on
 
-- [Sift Up](sift-up.md)
+- [Sift-up with comparison and swap counts](sift-up.md)
 
 ## Proof depends on
 

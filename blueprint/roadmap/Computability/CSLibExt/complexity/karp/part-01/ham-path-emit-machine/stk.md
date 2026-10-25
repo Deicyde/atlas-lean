@@ -25,7 +25,7 @@ and the scratch stacks $Y$ and $Z$ are empty.
 ## Proof depends on
 
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

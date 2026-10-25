@@ -41,7 +41,7 @@ time loop with flag false, the same counters, and output stack $E \, o$ (concate
 - [Encoded one-hot clauses of one time step](blk-t.md)
 - [The one-hot generator](prog.md)
 - [Step budget for one time step of the one-hot generator](t-body-b.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -51,14 +51,14 @@ time loop with flag false, the same counters, and output stack $E \, o$ (concate
 - [Encoded one-hot clauses of one stack at one time step](blk-k.md)
 - [Step budget for one stack iteration of the one-hot generator](k-body-b.md)
 - [One stack iteration of the one-hot generator](kbody-run.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Add U](../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Mul run](../../../../MathlibExt/turing-machine/program/mul-run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [Adding units to target stacks](../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Multiplying unary counters](../../../../MathlibExt/turing-machine/program/mul-run.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer run](../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

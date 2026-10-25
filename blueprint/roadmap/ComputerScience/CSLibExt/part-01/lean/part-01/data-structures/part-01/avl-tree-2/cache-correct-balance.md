@@ -7,26 +7,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.cacheCorrect_balance
 ---
 
-# Cache Correct balance
+# AVL rebalancing preserves cached heights
 
-Rebalancing preserves correct cached heights.
+**AVL rebalancing preserves cached heights.** If two AVL trees $\ell$ and $r$ have correct
+cached heights, then for every key $k$ the tree produced by the rebalancing function from
+$\ell$, $k$ and $r$ also has correct cached heights.
 
 ## Depends on
 
-- [Cache Correct](cache-correct.md)
-- [Tree](tree.md)
-- [Balance](balance.md)
+- [Correct cached heights](cache-correct.md)
+- [Binary trees with cached heights](tree.md)
+- [AVL rebalancing](balance.md)
 
 ## Proof depends on
 
-- [Balance eq mk Node of le](balance-eq-mk-node-of-le.md)
-- [Balance left double](balance-left-double.md)
-- [Balance left single](balance-left-single.md)
-- [Balance right double](balance-right-double.md)
-- [Balance right single](balance-right-single.md)
-- [Cache Correct mk Node](cache-correct-mk-node.md)
-- [Height](height.md)
-- [Mk Node](mk-node.md)
+- [Rebalancing when the heights of the children differ by at most one](balance-eq-mk-node-of-le.md)
+- [Left-right double rotation in AVL rebalancing](balance-left-double.md)
+- [Single right rotation in AVL rebalancing](balance-left-single.md)
+- [Right-left double rotation in AVL rebalancing](balance-right-double.md)
+- [Single left rotation in AVL rebalancing](balance-right-single.md)
+- [The AVL node constructor preserves cached heights](cache-correct-mk-node.md)
+- [Cached height of an AVL tree](height.md)
+- [AVL node with computed height](mk-node.md)
 
 ## Sources
 

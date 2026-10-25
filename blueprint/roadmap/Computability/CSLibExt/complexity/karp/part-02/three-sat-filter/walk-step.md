@@ -27,14 +27,14 @@ to label $t$, local variable true, token stack $R$ and side stack $s$ on top of 
 - [Label after a token](tgt.md)
 - [Walking label for a literal count](wl.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Statements of the filter](stmt.md)
 - [Next walking label](nxt.md)
 - [One step of the clause-length walk](walk.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

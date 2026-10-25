@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.HindleyMilner.Ctx.ftv_congr
 ---
 
-# Ftv congr
+# Free type variables depend only on visible bindings
 
-Contexts with the same lookups have the same free type variables.
+**Free type variables depend only on visible bindings.** If two typing contexts $\Gamma$ and
+$\Gamma'$ give every name $x$ the same visible scheme (or both bind no scheme to $x$), then
+$\Gamma$ and $\Gamma'$ have the same free type variables.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [Ftv](ftv.md)
-- [Lookup](lookup.md)
-- [Scheme](scheme.md)
+- [Typing context](ctx.md)
+- [Free type variables of a context](ftv.md)
+- [Context lookup](lookup.md)
+- [Type schemes](scheme.md)
 
 ## Proof depends on
 
-- [Visible Vars](visible-vars.md)
+- [Free type variables of a name's visible scheme](visible-vars.md)
 - [Vars](../../../../part-02/unification/basic/vars.md)
 
 ## Sources

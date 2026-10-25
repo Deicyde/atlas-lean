@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rep](../../../../../MathlibExt/turing-machine/program/rep.md)
+- [Repeated block](../../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

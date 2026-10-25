@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Turing.Universal.HaltsWithin.mono
 ---
 
-# Mono
+# Halting within a bound is monotone in the bound
 
-`HaltsWithin` is monotone in the number of steps.
+**Halting within a bound is monotone in the bound.** For a single-tape Turing machine $M$,
+a list $l$ of symbols and numbers $T \le T'$, if $M$ started on $l$ halts within $T$ steps,
+then $M$ started on $l$ halts within $T'$ steps.
 
 ## Depends on
 
-- [Halts Within](halts-within.md)
+- [Bounded halting of a single-tape machine](halts-within.md)
 
 ## Sources
 

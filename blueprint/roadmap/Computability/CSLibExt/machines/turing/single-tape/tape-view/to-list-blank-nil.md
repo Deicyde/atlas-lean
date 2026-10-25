@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Turing.StackTape.toListBlank_nil
 ---
 
-# To List Blank nil
+# Half-tape view of the empty stack tape
 
-The empty `StackTape` reads as the all-blank half-tape.
+**Half-tape view of the empty stack tape.** The half-tape view of the empty stack tape over
+$\Gamma$ is the half-tape all of whose cells are blank.
 
 ## Depends on
 
-- [To List Blank](to-list-blank.md)
+- [Half-tape view of a stack tape](to-list-blank.md)
 
 ## Sources
 

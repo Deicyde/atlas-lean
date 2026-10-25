@@ -5,17 +5,20 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Knot.body
 ---
 
-# Body
+# The recursive function of Landin's knot, with the cell free
 
-`λx : Unit. (!r) x`, with the cell `r` as de Bruijn index `1` (under `λx`).
+**The recursive function of Landin's knot, with the cell free.** The term
+$\lambda x{:}\mathrm{Unit}.\ (!r)\,x$, which applies the contents of the reference $r$ to its
+argument. Here $r$ is a free variable, de Bruijn index $1$ under the binder $\lambda x$; in
+Landin's knot it is bound by the outer $\lambda r$.
 
 ## Depends on
 
-- [Term](../syntax/term.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 
 ## Proof depends on
 
-- [Ty](../syntax/ty.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

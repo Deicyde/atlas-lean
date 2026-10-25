@@ -19,10 +19,10 @@ has a PCP solution.
 
 - [Domino (Post correspondence problem)](../pcp/domino.md)
 - [The Post correspondence problem](../pcp/pcp.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Is Ambiguous](../../../languages/context-free/part-01/ambiguity/is-ambiguous.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded grammars as pairs](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Ambiguous grammar](../../../languages/context-free/part-01/ambiguity/is-ambiguous.md)
 
 ## Proof depends on
 

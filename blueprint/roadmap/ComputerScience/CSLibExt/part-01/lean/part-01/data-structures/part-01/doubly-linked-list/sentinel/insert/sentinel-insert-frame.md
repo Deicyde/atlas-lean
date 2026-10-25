@@ -7,21 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelInsert_frame
 ---
 
-# Sentinel Insert frame
+# Sentinel insertion leaves other cells unchanged
 
-Cells outside the inserted node, predecessor and old successor are unchanged.
+**Sentinel insertion leaves other cells unchanged.** Let $S$ be a store of $n$ cells, each
+empty or holding a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is
+not NIL, and the cell it points to is allocated. Let $S'$ be the store returned by sentinel
+insertion of $x$ after $y$. If a cell $z$ differs from $x$ and from $y$, and the next pointer of
+$y$ in $S$ is not $z$, then $z$ has the same content in $S'$ as in $S$.
 
 ## Depends on
 
-- [Node](../../basic/node.md)
-- [Sentinel Insert](sentinel-insert.md)
+- [Doubly linked list node](../../basic/node.md)
+- [Sentinel list insertion (LIST-INSERT′)](sentinel-insert.md)
 
 ## Proof depends on
 
-- [List Insert](../../insert/list-insert.md)
-- [List Insert frame](../../insert/list-insert-frame.md)
-- [List Insert ret](../../insert/list-insert-ret.md)
-- [Sentinel Insert ret](sentinel-insert-ret.md)
+- [Doubly-linked-list insertion (LIST-INSERT)](../../insert/list-insert.md)
+- [Frame property of doubly-linked-list insertion](../../insert/list-insert-frame.md)
+- [Result of doubly-linked-list insertion](../../insert/list-insert-ret.md)
+- [The store after sentinel insertion](sentinel-insert-ret.md)
 
 ## Sources
 

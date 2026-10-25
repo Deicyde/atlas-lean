@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.MachineLearning.GraphicalModels.TreeModel.weight_le_maxWeight
 ---
 
-# Weight le max Weight
+# The max-product value bounds every weight
 
-Every assignment has weight at most `maxWeight`.
+**The max-product value bounds every weight.** Let $m$ be a pairwise tree model with values in
+a finite nonempty type $\alpha$ whose unary and pairwise factors are all nonnegative, and let $M$
+be its max-product value, obtained by maximizing out the vertices from the last one down. Then
+every assignment of values in $\alpha$ to the vertices has weight at most $M$.
 
 ## Depends on
 
-- [Tree Model](../variable-elimination/tree-model.md)
-- [Nonneg Factors](nonneg-factors.md)
-- [Max Weight](max-weight.md)
-- [Weight](../variable-elimination/weight.md)
+- [Pairwise model on a tree](../variable-elimination/tree-model.md)
+- [Nonnegative factors](nonneg-factors.md)
+- [Max-product value](max-weight.md)
+- [Weight of an assignment in a tree model](../variable-elimination/weight.md)
 
 ## Proof depends on
 
-- [Drop Last](drop-last.md)
-- [Last Parent](../variable-elimination/last-parent.md)
-- [Max Eliminate](max-eliminate.md)
-- [Max Message](max-message.md)
-- [Parent](../variable-elimination/parent.md)
+- [Removing the last vertex](drop-last.md)
+- [Parent of the last vertex](../variable-elimination/last-parent.md)
+- [Maximizing out the last vertex](max-eliminate.md)
+- [Max-product message](max-message.md)
+- [Parent of a vertex](../variable-elimination/parent.md)
 
 ## Sources
 

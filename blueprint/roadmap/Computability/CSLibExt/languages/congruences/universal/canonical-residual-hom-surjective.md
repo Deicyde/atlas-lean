@@ -6,16 +6,17 @@ proof: formalized
 lean: Cslib.Language.canonicalResidualHom_surjective
 ---
 
-# Canonical Residual Hom surjective
+# The canonical residual map is surjective
 
-The canonical quotient map is onto: every residual state is represented by a reachable source
-state.
+**The canonical residual map is surjective.** For an accessible DFA $M$, every state of the
+residual-language DFA of the language accepted by $M$ is the image of some state of $M$ under
+the canonical residual map.
 
 ## Depends on
 
 - [Accessible](../minimality/accessible.md)
-- [DFAHom](dfahom.md)
-- [Canonical Residual Hom](canonical-residual-hom.md)
+- [Morphisms of DFAs](dfahom.md)
+- [The canonical residual map](canonical-residual-hom.md)
 
 ## Sources
 

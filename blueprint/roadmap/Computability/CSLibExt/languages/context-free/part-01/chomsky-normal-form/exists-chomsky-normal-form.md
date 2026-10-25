@@ -6,27 +6,27 @@ proof: formalized
 lean: Cslib.Language.exists_chomskyNormalForm
 ---
 
-# Exists chomsky Normal Form
+# Chomsky normal form theorem
 
-Every grammar has an equivalent grammar in Chomsky normal
-form.
+**Chomsky normal form theorem.** For every context-free grammar $G$ there is a
+context-free grammar in Chomsky normal form that generates the same language as $G$.
 
 ## Depends on
 
-- [Is Chomsky Normal Form](is-chomsky-normal-form.md)
+- [Chomsky normal form](is-chomsky-normal-form.md)
 
 ## Proof depends on
 
-- [Is Reduced](../reduced/is-reduced.md)
-- [Is Unit Output](../reduced/is-unit-output.md)
+- [Reduced grammars](../reduced/is-reduced.md)
+- [Unit output](../reduced/is-unit-output.md)
 - [Cnf Grammar](cnf-grammar.md)
-- [Cnf Grammar is Chomsky Normal Form](cnf-grammar-is-chomsky-normal-form.md)
-- [Cnf Grammar language of reduced](cnf-grammar-language-of-reduced.md)
-- [Cnf Grammar output ne nil](cnf-grammar-output-ne-nil.md)
-- [Eps Start Grammar](eps-start-grammar.md)
-- [Eps Start Grammar is Chomsky Normal Form](eps-start-grammar-is-chomsky-normal-form.md)
-- [Eps Start Grammar language](eps-start-grammar-language.md)
-- [Exists reduced grammar](../reduced/exists-reduced-grammar.md)
+- [Binarization of a reduced grammar is in Chomsky normal form](cnf-grammar-is-chomsky-normal-form.md)
+- [Binarization preserves the language](cnf-grammar-language-of-reduced.md)
+- [Binarization has no empty productions](cnf-grammar-output-ne-nil.md)
+- [Grammar with a fresh nullable start symbol](eps-start-grammar.md)
+- [Adding a fresh start symbol preserves Chomsky normal form](eps-start-grammar-is-chomsky-normal-form.md)
+- [Language of the grammar with a fresh nullable start symbol](eps-start-grammar-language.md)
+- [Existence of reduced grammars](../reduced/exists-reduced-grammar.md)
 
 ## Sources
 

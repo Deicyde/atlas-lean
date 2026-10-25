@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.MachineLearning.LatentVariable.BernoulliMixture.Params.Valid
 ---
 
-# Valid
+# Valid parameters of a Bernoulli mixture
 
-Valid parameters: positive weights summing to one, probabilities strictly between `0`
-and `1`.
+**Valid parameters of a Bernoulli mixture.** Parameters of a mixture of $K$ products of $d$
+Bernoulli distributions, with mixing weights $\pi_k$ and success probabilities $p_{kj}$, are valid
+when $\pi_k > 0$ for every $k < K$, $\sum_{k < K} \pi_k = 1$, and $0 < p_{kj} < 1$ for every
+$k < K$ and $j < d$.
 
 ## Depends on
 
-- [Params](params.md)
+- [Parameters of a Bernoulli mixture](params.md)
 
 ## Sources
 

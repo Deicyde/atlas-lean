@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BallTree.mem_toList_build_iff
 ---
 
-# Mem to List build iff
+# Points of a built ball tree
 
-Membership in the point list of a built tree is membership in the
-input.
+**Points of a built ball tree.** For every list $L$ of points of $\mathbb{Z}^d$ and every
+point $p \in \mathbb{Z}^d$, $p$ is one of the points stored in the ball tree built from $L$ if
+and only if $p$ occurs in $L$.
 
 ## Depends on
 
-- [Build](build.md)
-- [To List](to-list.md)
+- [Building a ball tree by halving](build.md)
+- [Point list of a ball tree](to-list.md)
 
 ## Proof depends on
 
-- [To List build perm](to-list-build-perm.md)
+- [A built ball tree stores a permutation of its input](to-list-build-perm.md)
 
 ## Sources
 

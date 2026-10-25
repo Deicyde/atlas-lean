@@ -7,41 +7,43 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.flatten_delete
 ---
 
-# Flatten delete
+# Deletion from a B-tree erases the key from its flattening
 
-The flattening of a deletion from a B-tree is the erasure of the key
-from the flattening of the original tree.
+**Deletion from a B-tree erases the key from its flattening.** Let $t \ge 2$ and let $T$ be a
+B-tree of minimum degree $t$ over a linearly ordered key type. For every key $x$, the inorder
+flattening of the tree obtained from $T$ by top-down deletion of $x$ with minimum degree $t$ is
+the flattening of $T$ with the first occurrence of $x$ removed (unchanged if $x$ does not occur).
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Is BTree](../../btree-2/is-btree.md)
-- [Delete](delete.md)
-- [Flatten](../../btree-2/flatten.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [B-trees of a given minimum degree](../../btree-2/is-btree.md)
+- [Top-down B-tree deletion](delete.md)
+- [Inorder flattening of a B-tree](../../btree-2/flatten.md)
 
 ## Proof depends on
 
-- [Mem](../../btree-2/mem.md)
-- [Ordered](../../btree-2/ordered.md)
-- [Valid](../../btree-2/valid.md)
-- [Valid Root](../../btree-2/valid-root.md)
-- [Valid](../../btree-2/valid-2.md)
-- [Borrow Left](borrow-left.md)
-- [Borrow Right](borrow-right.md)
-- [Del H](del-h.md)
-- [Del List](del-list.md)
-- [Flatten Aux](../../btree-2/flatten-aux.md)
-- [Flatten Aux eq](../../btree-2/flatten-aux-eq.md)
-- [Flatten node append cons](../../btree-2/flatten-node-append-cons.md)
-- [Flatten node cons nil](../../btree-2/flatten-node-cons-nil.md)
-- [Flatten node nil cons](../../btree-2/flatten-node-nil-cons.md)
-- [Flatten node nil nil](../../btree-2/flatten-node-nil-nil.md)
+- [Membership in a B-tree](../../btree-2/mem.md)
+- [Ordered B-tree](../../btree-2/ordered.md)
+- [Structural invariant of a B-tree](../../btree-2/valid.md)
+- [Root invariant of a B-tree](../../btree-2/valid-root.md)
+- [Root-valid B-trees are valid](../../btree-2/valid-2.md)
+- [Borrowing a key from the left sibling](borrow-left.md)
+- [Borrowing a key from the right sibling](borrow-right.md)
+- [Height-indexed B-tree deletion](del-h.md)
+- [Deletion within a B-tree node](del-list.md)
+- [Accumulating flattening of a B-tree](../../btree-2/flatten-aux.md)
+- [The accumulating B-tree flattening is correct](../../btree-2/flatten-aux-eq.md)
+- [Splitting a node's flattening at a separator](../../btree-2/flatten-node-append-cons.md)
+- [Flattening a childless node, one key at a time](../../btree-2/flatten-node-cons-nil.md)
+- [Flattening a keyless node, one child at a time](../../btree-2/flatten-node-nil-cons.md)
+- [Flattening of the empty node](../../btree-2/flatten-node-nil-nil.md)
 - [Key Count](key-count.md)
-- [Max Key](max-key.md)
-- [Merge](merge.md)
-- [Min Key](min-key.md)
-- [Split Last](split-last.md)
-- [Tree Height](tree-height.md)
+- [Rightmost key of a B-tree](max-key.md)
+- [Merging two B-tree nodes around a separator](merge.md)
+- [Leftmost key of a B-tree](min-key.md)
+- [Splitting off the last element of a list](split-last.md)
+- [Height of a B-tree along first children](tree-height.md)
 
 ## Sources
 

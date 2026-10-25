@@ -6,9 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MinHeap.decreaseKey
 ---
 
-# Decrease Key
+# Decrease-key in a binary min-heap
 
-Decrease one indexed key and restore heap order along its ancestor path.
+**Decrease-key in a binary min-heap.** Given a binary min-heap $h$ over a linearly ordered
+type, with level-order array $a$, an index $i < |a|$ and a value $x \le a_i$, decrease-key returns
+the heap whose array is obtained from $a$ by replacing the entry at position $i$ with $x$ and then
+sifting position $i$ up, repeatedly swapping the entry with its parent while it is strictly
+smaller than the parent.
 
 ## Depends on
 

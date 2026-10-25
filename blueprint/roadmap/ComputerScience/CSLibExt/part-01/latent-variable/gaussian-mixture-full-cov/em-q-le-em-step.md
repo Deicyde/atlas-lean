@@ -13,21 +13,21 @@ EM update `emStep xs hx θ`.
 
 ## Depends on
 
-- [Em Q](../expectation-maximization/em-q.md)
-- [Spans Affinely](spans-affinely.md)
-- [Valid Params](valid-params.md)
-- [Em Step](em-step.md)
-- [Joint](joint.md)
+- [The EM objective](../expectation-maximization/em-q.md)
+- [Data that span the space affinely](spans-affinely.md)
+- [Valid parameters of a full-covariance Gaussian mixture](valid-params.md)
+- [EM step for the full-covariance Gaussian mixture](em-step.md)
+- [Joint density of the full-covariance Gaussian mixture](joint.md)
 
 ## Proof depends on
 
-- [Params](params.md)
-- [Valid](valid.md)
+- [Parameters of a full-covariance Gaussian mixture](params.md)
+- [Validity of full-covariance Gaussian mixture parameters](valid.md)
 - [Comp Term](comp-term.md)
 - [The mean and covariance updates maximize each component term](comp-term-le.md)
 - [Em Q eq](em-q-eq.md)
-- [Mass](mass.md)
-- [The weight update maximizes the weights term](sum-mass-mul-log-le.md)
+- [Effective number of points of a full-covariance mixture component](mass.md)
+- [The weight update maximizes the weights term of the full-covariance mixture](sum-mass-mul-log-le.md)
 
 ## Sources
 

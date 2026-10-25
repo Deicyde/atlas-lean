@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Turing.Universal.Clocked.Bounded
 ---
 
-# Bounded
+# Configurations bounded by $M$
 
-All numbers of a configuration, its state and its cells, are at most `M`.
+**Configurations bounded by $M$.** A configuration $k$ is bounded by a natural number $M$
+when its state, its head cell and every cell left and right of the head are at most $M$.
 
 ## Depends on
 
-- [Cfg](../code/cfg.md)
+- [Explicit configurations](../code/cfg.md)
 
 ## Sources
 

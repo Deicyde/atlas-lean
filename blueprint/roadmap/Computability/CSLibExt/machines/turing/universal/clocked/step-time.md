@@ -12,12 +12,12 @@ two neighbours.
 
 ## Depends on
 
-- [Code](../code/code.md)
-- [Cfg](../code/cfg.md)
+- [Codes for single-tape machines](../code/code.md)
+- [Explicit configurations](../code/cfg.md)
 
 ## Proof depends on
 
-- [Code Cells](code-cells.md)
+- [The code stack](code-cells.md)
 
 ## Sources
 

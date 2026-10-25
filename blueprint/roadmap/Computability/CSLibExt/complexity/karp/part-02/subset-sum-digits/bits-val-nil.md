@@ -13,7 +13,7 @@ bit first, has value $0$.
 
 ## Depends on
 
-- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+- [Value of a little-endian bit list](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
 
 ## Sources
 

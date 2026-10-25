@@ -47,8 +47,8 @@ within $p(|s|)$ steps.
 - [Number of situations](../situation/part-01/n.md)
 - [Clause layout of a machine encoding](../situation/part-01/layout.md)
 - [Window depth of a machine](../situation/part-01/depth.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

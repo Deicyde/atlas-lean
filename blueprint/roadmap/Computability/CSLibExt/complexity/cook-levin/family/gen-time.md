@@ -36,7 +36,7 @@ $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$, $T$, $H$ and $N$, followed by $o$.
 - [Initial counters of the transition-clause generator](init-f.md)
 - [Prog](prog.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -50,7 +50,7 @@ $\mathit{la}$, $\mathit{na}$, $\mathit{wa}$, $T$, $H$ and $N$, followed by $o$.
 - [Correctness of the clause-family generator, with its explicit time bound](gen-run.md)
 - [Per-literal time bound of the transition-clause generator](lit-e.md)
 - [Step bound for the transition-clause generator's precomputation](pre-b.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

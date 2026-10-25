@@ -15,9 +15,9 @@ keeps the degree.
 
 ## Depends on
 
-- [Enc In](../clocked/enc-in.md)
-- [Enc Out](../clocked/enc-out.md)
-- [Code](../code/code.md)
+- [Input encoding of the clocked universal machine](../clocked/enc-in.md)
+- [Output encoding of the clocked universal machine](../clocked/enc-out.md)
+- [Codes for single-tape machines](../code/code.md)
 - [The clocked evaluator](../code/eval-steps.md)
 
 ## Proof depends on
@@ -33,17 +33,17 @@ keeps the degree.
 - [The reduction host's run on one input](../../../../complexity/host/rprog-run-at.md)
 - [Rtime](../../../../complexity/host/rtime.md)
 - [Reduction host machine](../../../../complexity/host/rtm.md)
-- [K](../clocked/k.md)
-- [Lab](../clocked/lab.md)
-- [Prog](../clocked/prog.md)
-- [Univ Comp](univ-comp.md)
-- [Univ Poly](univ-poly.md)
-- [Univ Time](../clocked/univ-time.md)
-- [The step bound is quadratic](univ-time-le.md)
-- [The whole machine](../clocked/univ-run.md)
-- [Γ](../clocked/untitled.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Stacks of the clocked universal machine](../clocked/k.md)
+- [Labels of the clocked universal machine](../clocked/lab.md)
+- [The clocked universal program](../clocked/prog.md)
+- [The clocked universal machine as a host component](univ-comp.md)
+- [Step bound polynomial of the clocked universal machine](univ-poly.md)
+- [Step bound of the clocked universal machine](../clocked/univ-time.md)
+- [The step bound of the clocked universal machine is quadratic](univ-time-le.md)
+- [Correctness and running time of the clocked universal machine](../clocked/univ-run.md)
+- [Stack alphabet of the clocked universal machine](../clocked/untitled.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

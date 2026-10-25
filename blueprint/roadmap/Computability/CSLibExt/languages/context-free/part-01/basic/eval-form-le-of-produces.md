@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Language.evalForm_le_of_produces
 ---
 
-# Eval Form le of produces
+# A production step shrinks interpretations under a valuation
 
-A single production step can only shrink the interpretation of a
-sentential form under a valuation.
+**A production step shrinks interpretations under a valuation.** Let $g$ be a context-free
+grammar and $V$ a valuation of $g$. If a sentential form $u$ rewrites to $v$ by one production of
+$g$, then the language that $v$ denotes under $V$ is contained in the language that $u$ denotes
+under $V$.
 
 ## Depends on
 
-- [Is Valuation](is-valuation.md)
-- [Eval Form](eval-form.md)
+- [Valuation of a grammar](is-valuation.md)
+- [Interpretation of a sentential form](eval-form.md)
 
 ## Proof depends on
 
-- [Eval Form append](eval-form-append.md)
+- [Interpretation of a concatenation](eval-form-append.md)
 
 ## Sources
 

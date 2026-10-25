@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.MachineLearning.LatentVariable.GaussianMixtureFullCov.joint
 ---
 
-# Joint
+# Joint density of the full-covariance Gaussian mixture
 
-The joint density `p_θ(x, k) = π k N(x | μ k, Σ k)`, with Mathlib's multivariate Gaussian
-density (`MetaMathlibExt.multivariateGaussianPDFReal`).
+**Joint density of the full-covariance Gaussian mixture.** For valid parameters $\theta$ with
+weights $\pi_k$, means $\mu_k$ and covariances $\Sigma_k$, the joint density of a point
+$x \in \mathbb{R}^d$ and a component $k$ is
+$p_\theta(x, k) = \pi_k \, \mathcal{N}(x \mid \mu_k, \Sigma_k)$, where
+$\mathcal{N}(x \mid \mu, \Sigma)$ is the multivariate Gaussian density.
 
 ## Depends on
 
-- [Valid Params](valid-params.md)
+- [Valid parameters of a full-covariance Gaussian mixture](valid-params.md)
 
 ## Proof depends on
 
-- [Params](params.md)
-- [Valid](valid.md)
+- [Parameters of a full-covariance Gaussian mixture](params.md)
+- [Validity of full-covariance Gaussian mixture parameters](valid.md)
 - [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources

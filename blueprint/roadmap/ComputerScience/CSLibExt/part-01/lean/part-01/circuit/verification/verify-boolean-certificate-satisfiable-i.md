@@ -7,21 +7,25 @@ proof: formalized
 lean: Cslib.Circuits.Circuit.verifyBooleanCertificate_satisfiable_iff
 ---
 
-# Verify Boolean Certificate satisfiable iff
+# Short accepted certificates exist exactly for satisfiable circuits
 
-A short accepted valuation exists exactly when the circuit is satisfiable.
+**Short accepted certificates exist exactly for satisfiable circuits.** Let $c$ be a circuit
+over the Boolean signature with $n$ inputs, $s$ gates and one output. The Boolean certificate
+verifier accepts some array of at most $n + 2s$ truth values if and only if there are truth
+values $x_0, \dots, x_{n-1}$ on which the output of $c$ under the Boolean interpretation is
+true.
 
 ## Depends on
 
-- [Verify Boolean Certificate](verify-boolean-certificate.md)
+- [Boolean certificate verifier](verify-boolean-certificate.md)
 - [Boolean interpretation](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-interpretation.md)
 - [Boolean signature](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
 
 ## Proof depends on
 
-- [Verify Boolean Certificate complete](verify-boolean-certificate-complete.md)
-- [Verify Boolean Certificate sound](verify-boolean-certificate-sound.md)
-- [To Fin](to-fin.md)
+- [Completeness of the Boolean certificate verifier](verify-boolean-certificate-complete.md)
+- [Soundness of the Boolean certificate verifier](verify-boolean-certificate-sound.md)
+- [Certificate position of a wire](to-fin.md)
 
 ## Sources
 

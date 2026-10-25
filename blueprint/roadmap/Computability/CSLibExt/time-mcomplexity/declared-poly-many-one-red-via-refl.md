@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.TimeMComplexity.declaredPolyManyOneRedVia_refl
 ---
 
-# Declared Poly Many One Red Via refl
+# Declared-time many-one reduction is reflexive
 
-Many-one reduction is reflexive, via the identity function.
+**Declared-time many-one reduction is reflexive.** For every decision problem $L$, the timed
+identity function, which returns its input with declared time $0$, is a declared-time many-one
+reduction from $L$ to $L$.
 
 ## Depends on
 
-- [Declared Poly Many One Red Via](declared-poly-many-one-red-via.md)
-- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
+- [Declared-time many-one reduction by a timed function](declared-poly-many-one-red-via.md)
+- [Decision problems](../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 
-- [Computes In Declared Poly Time](computes-in-declared-poly-time.md)
+- [Declared polynomial time for timed functions on bitstrings](computes-in-declared-poly-time.md)
 
 ## Sources
 

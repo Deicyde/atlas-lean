@@ -22,13 +22,13 @@ contained in the syntactic congruence of the alphabet preimage.
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
 - [Alphabet preimage](alphabet-preimage.md)
 - [Alphabet preimage morphism](alphabet-preimage-morphism.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
 
 ## Proof depends on
 
-- [Recognizer ker le syntactic Con](../recognition/recognizer-ker-le-syntactic-con.md)
+- [Recognizer kernels refine the syntactic congruence](../recognition/recognizer-ker-le-syntactic-con.md)
 - [The alphabet preimage morphism recognizes the alphabet preimage](recognizes-alphabet-preimage-morphism.md)
-- [Syntactic Accept](../syntactic/syntactic-accept.md)
+- [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)
 
 ## Sources
 

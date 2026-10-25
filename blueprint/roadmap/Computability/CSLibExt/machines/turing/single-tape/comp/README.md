@@ -4,12 +4,12 @@ navigation: module
 
 # Comp
 
-- [Comp Cfg Left](comp-cfg-left.md)
-- [Comp Cfg Right](comp-cfg-right.md)
-- [Transition Relation comp Cfg Left](transition-relation-comp-cfg-left.md)
-- [Step comp Cfg Right](step-comp-cfg-right.md)
-- [Transition Relation comp Cfg Right](transition-relation-comp-cfg-right.md)
-- [Exists of refl Trans Gen comp Cfg Right](exists-of-refl-trans-gen-comp-cfg-right.md)
+- [Embedding the first machine's configurations into a composite](comp-cfg-left.md)
+- [Embedding the second machine's configurations into a composite](comp-cfg-right.md)
+- [The composite simulates steps of the first machine](transition-relation-comp-cfg-left.md)
+- [Step function of a composite on configurations of the second machine](step-comp-cfg-right.md)
+- [The composite simulates steps of the second machine](transition-relation-comp-cfg-right.md)
+- [Runs of a composite from configurations of the second machine](exists-of-refl-trans-gen-comp-cfg-right.md)
 - [Outputs compose](comp-computer.md)
 - [Timed outputs compose](comp-computer-2.md)
 - [Halting of a composite](halts-on-comp-computer-iff.md)

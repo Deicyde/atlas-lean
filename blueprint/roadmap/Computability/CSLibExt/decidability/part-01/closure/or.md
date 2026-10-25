@@ -19,7 +19,7 @@ multi-stack Turing machine, then so is the predicate $a \mapsto p(a) \lor q(a)$.
 ## Proof depends on
 
 - [Multi-stack decidable predicates are exactly the computable predicates](../basic/tm2-decidable-iff-computable-pred.md)
-- [Or](../../../../MathlibExt/re/or.md)
+- [Computable predicates are closed under disjunction](../../../../MathlibExt/re/or.md)
 
 ## Sources
 

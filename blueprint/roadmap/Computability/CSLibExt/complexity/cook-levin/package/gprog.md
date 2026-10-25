@@ -28,8 +28,8 @@ sets the state to false and halts.
 - [Drain-stage label](dlab.md)
 - [The drain program](drain-s.md)
 - [The identity stack embedding](id-e.md)
-- [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Translating a statement along a stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
 
 ## Sources
 

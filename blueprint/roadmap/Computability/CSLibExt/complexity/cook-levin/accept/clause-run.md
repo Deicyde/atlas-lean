@@ -28,7 +28,7 @@ One whole clause: from `e00 c` to `nextC c`, all counters restored.
 - [Variable layout of the transition clauses](../family/layout.md)
 - [Dense clause from a list of literals](../family/dense-clause.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -38,18 +38,18 @@ One whole clause: from `e00 c` to `nextC c`, all counters restored.
 - [Encoding a dense clause block by block](../family/encode-clause-dense-clause.md)
 - [Gap encoding of a dense clause](../family/gap-enc.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Copy run](../../../../MathlibExt/turing-machine/program/copy-run.md)
-- [Emit](../../../../MathlibExt/turing-machine/program/emit.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Push List](../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Copying a counter through a scratch stack](../../../../MathlibExt/turing-machine/program/copy-run.md)
+- [Pushing a constant list](../../../../MathlibExt/turing-machine/program/emit.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Pushing a list of symbols onto one stack](../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer E](../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Draining a counter while prepending a block](../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

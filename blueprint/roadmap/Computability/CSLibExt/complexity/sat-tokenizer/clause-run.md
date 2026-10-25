@@ -33,7 +33,7 @@ table stack of the occurrence table of $N$ against $w$.
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -41,9 +41,9 @@ table stack of the occurrence table of $N$ against $w$.
 - [Reading a unary count](un-run.md)
 - [Binary code of a literal](../../cook-levin/encode-lit.md)
 - [Prefix-free code of a natural number](../../cook-levin/encode-nat-prefix.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

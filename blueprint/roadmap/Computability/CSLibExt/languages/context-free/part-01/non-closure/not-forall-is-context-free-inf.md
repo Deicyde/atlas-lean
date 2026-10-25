@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.Language.not_forall_isContextFree_inf
 ---
 
-# Not forall is Context Free inf
+# Intersections of context-free languages need not be context-free
 
-It is not the case that every pair of context-free languages has
-context-free intersection.
+**Intersections of context-free languages need not be context-free.** Over the three-letter
+alphabet $\{0, 1, 2\}$, it is not the case that for all context-free languages $L$ and $M$ the
+intersection $L \cap M$ is context-free.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists is Context Free inf not is Context Free](exists-is-context-free-inf-not-is-contex.md)
+- [Context-free languages are not closed under intersection](exists-is-context-free-inf-not-is-contex.md)
 
 ## Sources
 

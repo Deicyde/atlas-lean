@@ -12,11 +12,11 @@ Loop: pop stack `k` until empty; for each popped symbol push one unit on every t
 
 ## Depends on
 
-- [Flag](flag.md)
+- [Flag bit of a machine state](flag.md)
 
 ## Proof depends on
 
-- [Push All](push-all.md)
+- [Pushing symbols onto several stacks](push-all.md)
 
 ## Sources
 

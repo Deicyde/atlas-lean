@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.Outputs.haltsOn
 ---
 
-# Halts On
+# A machine that produces an output halts
 
-A machine that outputs something halts.
+**A machine that produces an output halts.** If a single-tape Turing machine $M$ outputs a word
+$w'$ on an input word $w$, then $M$ halts on $w$.
 
 ## Depends on
 
-- [Halts On](halts-on.md)
+- [Halting on an input](halts-on.md)
 
 ## Sources
 

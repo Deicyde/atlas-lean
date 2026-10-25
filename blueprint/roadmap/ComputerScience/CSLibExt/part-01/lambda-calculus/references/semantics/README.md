@@ -8,9 +8,9 @@ navigation: module
 
 - [Store](store.md)
 - [Step](step.md)
-- [Steps](steps.md)
+- [Multi-step evaluation with references](steps.md)
 
 ## Step
 
-- [Not of value](not-of-value.md)
-- [Deterministic](deterministic.md)
+- [Values do not step](not-of-value.md)
+- [Determinism of evaluation with references](deterministic.md)

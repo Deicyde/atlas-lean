@@ -28,9 +28,9 @@ and $LC$ holding $m$ and $\ell$ in unary reaches the rejecting label within $|r|
 - [The tokenizer program](prog.md)
 - [One step to rejection](rej-one.md)
 - [Testing whether the top symbol is a given bit](top-is-bit.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

@@ -7,32 +7,35 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.balanced_erase
 ---
 
-# Balanced erase
+# Deletion preserves AVL balance
 
-Deletion preserves the AVL balance invariant.
+**Deletion preserves AVL balance.** Let $t$ be a binary tree with keys from a linearly ordered
+type and a cached height at each node, whose cached heights are correct, and which is balanced: at
+every node the cached heights of the two subtrees differ by at most one. Then for every key $x$,
+the tree obtained from $t$ by deleting $x$, rebalancing along the search path, is again balanced.
 
 ## Depends on
 
-- [Balanced](../../avl-tree-2/balanced.md)
-- [Cache Correct](../../avl-tree-2/cache-correct.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Erase](erase.md)
+- [AVL balance invariant](../../avl-tree-2/balanced.md)
+- [Correct cached heights](../../avl-tree-2/cache-correct.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [AVL tree deletion](erase.md)
 
 ## Proof depends on
 
-- [Balance](../../avl-tree-2/balance.md)
-- [Balanced balance](../../avl-tree-2/balanced-balance.md)
-- [Balanced erase Min](balanced-erase-min.md)
-- [Cache Correct erase](cache-correct-erase.md)
-- [Cache Correct erase Min](cache-correct-erase-min.md)
-- [Delete Min](delete-min.md)
-- [Erase Min](erase-min.md)
-- [Height](../../avl-tree-2/height.md)
-- [Height erase Min le](height-erase-min-le.md)
-- [Height erase le](height-erase-le.md)
-- [Le height erase](le-height-erase.md)
-- [Le height erase Min](le-height-erase-min.md)
-- [Min D](min-d.md)
+- [AVL rebalancing](../../avl-tree-2/balance.md)
+- [AVL rebalancing yields a balanced tree](../../avl-tree-2/balanced-balance.md)
+- [Removing the minimum preserves AVL balance](balanced-erase-min.md)
+- [Deletion keeps cached heights correct](cache-correct-erase.md)
+- [Removing the minimum keeps cached heights correct](cache-correct-erase-min.md)
+- [Minimum deletion in an AVL tree](delete-min.md)
+- [Removing the leftmost key of an AVL tree](erase-min.md)
+- [Cached height of an AVL tree](../../avl-tree-2/height.md)
+- [Removing the leftmost key does not increase the height of an AVL tree](height-erase-min-le.md)
+- [Deletion does not increase the height of an AVL tree](height-erase-le.md)
+- [Deletion lowers the height of an AVL tree by at most one](le-height-erase.md)
+- [Removing the leftmost key lowers the height of an AVL tree by at most one](le-height-erase-min.md)
+- [Leftmost key of a tree](min-d.md)
 
 ## Sources
 

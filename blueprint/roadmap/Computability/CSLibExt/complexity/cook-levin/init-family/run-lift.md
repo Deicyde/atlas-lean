@@ -26,14 +26,14 @@ This is an instance of run embedding.
 - [Alphabets of a counter machine with an input stack](i.md)
 - [Stacks of a counter machine with an extra input stack](emb.md)
 - [The counter stacks inside the generator's stacks](lift-e.md)
-- [Embeds](../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Embedding of a machine in a host](../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Agree](../../../../MathlibExt/turing-machine/stack-embedding/agree.md)
-- [Frame](../../../../MathlibExt/turing-machine/stack-embedding/frame.md)
-- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Agreement of host and sub-machine stacks](../../../../MathlibExt/turing-machine/stack-embedding/agree.md)
+- [Frame condition for a stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/frame.md)
+- [Stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 - [Run embedding](../../../../MathlibExt/turing-machine/stack-embedding/run-embed.md)
 
 ## Sources

@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.all_toBinaryTree
 ---
 
-# All to Binary Tree
+# The all-keys predicate is unchanged by erasing height caches
 
-`All` on an AVL tree is `BinarySearchTree.All` of its cache-erased tree,
-by definition.
+**The all-keys predicate is unchanged by erasing height caches.** For a predicate $p$ on keys
+and a tree $t$ with cached heights, $\mathrm{All}(p, t)$ holds if and only if $p$ holds at every
+key of the plain binary tree obtained from $t$ by erasing its cached heights. This holds by
+definition.
 
 ## Depends on
 
-- [All](all.md)
-- [Tree](tree.md)
-- [To Binary Tree](to-binary-tree.md)
+- [Every key of an AVL tree satisfies a predicate](all.md)
+- [Binary trees with cached heights](tree.md)
+- [Erasing the cached heights of an AVL tree](to-binary-tree.md)
 - [All](../../part-02/binary-search-tree/all.md)
 
 ## Sources

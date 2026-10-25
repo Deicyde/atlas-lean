@@ -4,10 +4,10 @@ navigation: module
 
 # Equivalence
 
-- [Of big Step](of-big-step.md)
-- [Of step](of-step.md)
-- [Of steps](of-steps.md)
-- [Of terminates](of-terminates.md)
-- [Terminates iff big Step](terminates-iff-big-step.md)
-- [Deterministic](deterministic.md)
-- [Iff terminates](iff-terminates.md)
+- [Big-step executions terminate in small steps](of-big-step.md)
+- [Prepending one small step to a big-step execution](of-step.md)
+- [Prepending finitely many small steps to a big-step execution](of-steps.md)
+- [Small-step termination implies big-step evaluation](of-terminates.md)
+- [Equivalence of small-step and big-step semantics](terminates-iff-big-step.md)
+- [Small-step termination is deterministic](deterministic.md)
+- [Hoare validity via small-step termination](iff-terminates.md)

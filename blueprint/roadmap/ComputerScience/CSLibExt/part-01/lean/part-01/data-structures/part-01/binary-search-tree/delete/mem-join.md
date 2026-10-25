@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.mem_join
 ---
 
-# Mem join
+# Membership in a join
 
-A key is in a splice exactly when it is in one of the two parts.
+**Membership in a join.** For binary trees $L$ and $R$, a key $x$ occurs in the join of $L$ and
+$R$ if and only if $x$ occurs in $L$ or $x$ occurs in $R$.
 
 ## Depends on
 
 - [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Join](join.md)
+- [Join of two binary trees](join.md)
 
 ## Sources
 

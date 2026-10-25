@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.cacheCorrect_insert
 ---
 
-# Cache Correct insert
+# AVL insertion preserves cached heights
 
-Insertion preserves correct cached heights.
+**AVL insertion preserves cached heights.** Let $\alpha$ be a linearly ordered type. If an
+AVL tree $t$ over $\alpha$ has correct cached heights, then for every $x \in \alpha$ the tree
+obtained by inserting $x$ into $t$ also has correct cached heights.
 
 ## Depends on
 
-- [Cache Correct](cache-correct.md)
-- [Tree](tree.md)
-- [Insert](insert.md)
+- [Correct cached heights](cache-correct.md)
+- [Binary trees with cached heights](tree.md)
+- [Insertion into an AVL tree](insert.md)
 
 ## Proof depends on
 
-- [Balance](balance.md)
-- [Cache Correct balance](cache-correct-balance.md)
-- [Cache Correct mk Node](cache-correct-mk-node.md)
-- [Height](height.md)
+- [AVL rebalancing](balance.md)
+- [AVL rebalancing preserves cached heights](cache-correct-balance.md)
+- [The AVL node constructor preserves cached heights](cache-correct-mk-node.md)
+- [Cached height of an AVL tree](height.md)
 
 ## Sources
 

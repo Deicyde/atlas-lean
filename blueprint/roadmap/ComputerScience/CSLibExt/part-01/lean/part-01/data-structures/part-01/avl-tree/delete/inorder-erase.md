@@ -7,30 +7,33 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.inorder_erase
 ---
 
-# Inorder erase
+# Inorder traversal after AVL deletion
 
-Deleting a key erases it from the inorder traversal of an ordered tree.
+**Inorder traversal after AVL deletion.** Let $\alpha$ be a linearly ordered type,
+$x \in \alpha$, and $t$ an ordered tree. Then the inorder traversal of the tree obtained by
+deleting $x$ from $t$ is the inorder traversal of $t$ with the first occurrence of $x$ removed;
+if $x$ does not occur, the traversal is unchanged.
 
 ## Depends on
 
-- [Ordered](../../avl-tree-2/ordered.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Erase](erase.md)
-- [Inorder](../../avl-tree-2/inorder.md)
+- [Ordered AVL trees](../../avl-tree-2/ordered.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [AVL tree deletion](erase.md)
+- [Inorder traversal of an AVL tree](../../avl-tree-2/inorder.md)
 
 ## Proof depends on
 
-- [All](../../avl-tree-2/all.md)
-- [Mem](../../avl-tree-2/mem.md)
-- [All iff forall mem](../../avl-tree-2/all-iff-forall-mem.md)
-- [Balance](../../avl-tree-2/balance.md)
-- [Delete Min](delete-min.md)
-- [Erase Min](erase-min.md)
-- [Inorder balance](../../avl-tree-2/inorder-balance.md)
-- [Inorder eq min D cons erase Min](inorder-eq-min-d-cons-erase-min.md)
-- [Mem inorder](../../avl-tree-2/mem-inorder.md)
-- [Min D](min-d.md)
-- [To Binary Tree](../../avl-tree-2/to-binary-tree.md)
+- [Every key of an AVL tree satisfies a predicate](../../avl-tree-2/all.md)
+- [Membership in an AVL tree](../../avl-tree-2/mem.md)
+- [The all-keys predicate in terms of membership (AVL trees)](../../avl-tree-2/all-iff-forall-mem.md)
+- [AVL rebalancing](../../avl-tree-2/balance.md)
+- [Minimum deletion in an AVL tree](delete-min.md)
+- [Removing the leftmost key of an AVL tree](erase-min.md)
+- [AVL rebalancing preserves the inorder traversal](../../avl-tree-2/inorder-balance.md)
+- [The inorder traversal begins with the leftmost key](inorder-eq-min-d-cons-erase-min.md)
+- [Membership in the inorder traversal of an AVL tree](../../avl-tree-2/mem-inorder.md)
+- [Leftmost key of a tree](min-d.md)
+- [Erasing the cached heights of an AVL tree](../../avl-tree-2/to-binary-tree.md)
 - [All](../../../part-02/binary-search-tree/all.md)
 - [Ordered](../../../part-02/binary-search-tree/ordered.md)
 - [Inorder](../../../part-02/binary-search-tree/inorder.md)

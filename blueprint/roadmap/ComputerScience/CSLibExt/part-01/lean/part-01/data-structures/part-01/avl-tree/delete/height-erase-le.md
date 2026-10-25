@@ -7,27 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.height_erase_le
 ---
 
-# Height erase le
+# Deletion does not increase the height of an AVL tree
 
-Deletion never increases the height.
+**Deletion does not increase the height of an AVL tree.** Let $\alpha$ be a linearly ordered
+type, $x \in \alpha$, and $t$ a tree whose cached heights are correct. Then the cached height of
+the tree obtained by deleting $x$ from $t$ is at most the cached height of $t$.
 
 ## Depends on
 
-- [Cache Correct](../../avl-tree-2/cache-correct.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Erase](erase.md)
-- [Height](../../avl-tree-2/height.md)
+- [Correct cached heights](../../avl-tree-2/cache-correct.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [AVL tree deletion](erase.md)
+- [Cached height of an AVL tree](../../avl-tree-2/height.md)
 
 ## Proof depends on
 
-- [Balance](../../avl-tree-2/balance.md)
-- [Cache Correct erase](cache-correct-erase.md)
-- [Cache Correct erase Min](cache-correct-erase-min.md)
-- [Delete Min](delete-min.md)
-- [Erase Min](erase-min.md)
-- [Height balance le](../../avl-tree-2/height-balance-le.md)
-- [Height erase Min le](height-erase-min-le.md)
-- [Min D](min-d.md)
+- [AVL rebalancing](../../avl-tree-2/balance.md)
+- [Deletion keeps cached heights correct](cache-correct-erase.md)
+- [Removing the minimum keeps cached heights correct](cache-correct-erase-min.md)
+- [Minimum deletion in an AVL tree](delete-min.md)
+- [Removing the leftmost key of an AVL tree](erase-min.md)
+- [Upper bound on height after AVL rebalancing](../../avl-tree-2/height-balance-le.md)
+- [Removing the leftmost key does not increase the height of an AVL tree](height-erase-min-le.md)
+- [Leftmost key of a tree](min-d.md)
 
 ## Sources
 

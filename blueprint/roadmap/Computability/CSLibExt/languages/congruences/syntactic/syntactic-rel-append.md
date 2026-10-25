@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Language.syntacticRel_append
 ---
 
-# Syntactic Rel append
+# Syntactic equivalence is compatible with concatenation
 
-Syntactic equivalence is compatible with concatenation.
+**Syntactic equivalence is compatible with concatenation.** Let $L$ be a language over an
+alphabet $\Sigma$ and let $w, x, y, z \in \Sigma^*$ be words. If $w$ and $x$ are syntactically
+equivalent for $L$, and $y$ and $z$ are syntactically equivalent for $L$, then $wy$ and $xz$ are
+syntactically equivalent for $L$.
 
 ## Depends on
 
-- [Syntactic Rel](syntactic-rel.md)
+- [Syntactic equivalence](syntactic-rel.md)
 
 ## Proof depends on
 
-- [Syntactic Rel prefix](syntactic-rel-prefix.md)
-- [Syntactic Rel suffix](syntactic-rel-suffix.md)
+- [Syntactic equivalence is stable under left multiplication](syntactic-rel-prefix.md)
+- [Syntactic equivalence is stable under right multiplication](syntactic-rel-suffix.md)
 
 ## Sources
 

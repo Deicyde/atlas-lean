@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.TM2Recursive.enc
 ---
 
-# Enc
+# Coding a configuration
 
-Code a configuration.
+**Coding a configuration.** For a finite multi-stack machine, the coded configuration of a
+configuration $c$ has the same optional label and internal state as $c$, and the coded stacks of
+the stacks of $c$.
 
 ## Depends on
 
-- [Coded Cfg](coded-cfg.md)
+- [Coded configurations of a multi-stack machine](coded-cfg.md)
 
 ## Proof depends on
 
-- [Enc Stk](enc-stk.md)
+- [Coded stacks](enc-stk.md)
 
 ## Sources
 

@@ -6,9 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.TM2Recursive.post1_loop
 ---
 
-# Post1 loop
+# Pre-phase of the wrapped machine
 
-The pre-phase: from the input configuration to `tr`'s initial configuration on `[n]`. -/
+**Pre-phase of the wrapped machine.** Let $c$ be a code and $b$ a list of bits of length $k$,
+and write $\beta(b)$ for $b$ with each bit $0$ replaced by the symbol bit0 and each bit $1$ by the
+symbol bit1 of $\Gamma'$. Started at the adapter label pre0 with empty local state, $b$ on the
+input stack and all other stacks empty, the wrapped machine is after exactly $2(k + 1) + 1$ steps
+at the label $\mathrm{trNormal}(c, \mathrm{halt})$ at which Mathlib's code-evaluating machine
+$\mathrm{tr}$ starts evaluating $c$, with empty local state, $\beta(b)$ followed by the symbol
+cons on the main stack and all other stacks empty. -/
 theorem pre_phase (bits : List Bool) :
     frun c (bits.length + 1 + (bits.length + 1) + 1)
         (some ⟨some (Sum.inl Phase.pre0), none, mkStk [] [] [] [] bits []⟩) =
@@ -27,19 +33,19 @@ theorem pre_phase (bits : List Bool) :
 
 ## Depends on
 
-- [FCfg](fcfg.md)
-- [FΓ](f.md)
-- [FΛ](f-2.md)
-- [Phase](phase.md)
-- [Bool ToΓ'](bool-to.md)
-- [Frun](frun.md)
-- [Mk Stk](mk-stk.md)
-- [Supp](supp.md)
+- [Configurations of the wrapped machine](fcfg.md)
+- [Stack alphabets of the wrapped machine](f.md)
+- [Labels of the wrapped machine](f-2.md)
+- [Adapter labels](phase.md)
+- [Bits as stack symbols](bool-to.md)
+- [Iterated steps of the wrapped machine](frun.md)
+- [Stack contents of the wrapped machine](mk-stk.md)
+- [Support of a code](supp.md)
 
 ## Proof depends on
 
-- [Fstep](fstep.md)
-- [Fwd Prog](fwd-prog.md)
+- [One step of the wrapped machine](fstep.md)
+- [The program of the wrapped machine](fwd-prog.md)
 
 ## Sources
 

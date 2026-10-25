@@ -39,7 +39,8 @@ universe u
 
 variable {Base : Type u}
 
-/-- A store maps each location `l < μ.length` to the term `μ[l]`. -/
+/-- **Store.** A store $\mu$ is a finite list of terms; each location $l$ less than the length of
+$\mu$ holds the term $\mu[l]$, the entry of $\mu$ at index $l$. -/
 abbrev Store (Base : Type u) := List (Term Base)
 
 /-- One step of call-by-value evaluation, `t | μ → t' | μ'`: TAPL
@@ -78,8 +79,9 @@ inductive Step : Term Base → Store Base → Term Base → Store Base → Prop
   | assignLoc {l : Nat} {v : Term Base} {μ : Store Base}
       (hv : v.Value) (hl : l < μ.length) : Step (.assign (.loc l) v) μ .unit (μ.set l v)
 
-/-- Evaluation in any number of steps: the reflexive-transitive closure of
-`Step` on configurations `(t, μ)`. -/
+/-- **Multi-step evaluation with references.** The relation $t \mid \mu \to^* t' \mid \mu'$ holds
+when the configuration $(t, \mu)$ reaches $(t', \mu')$ in zero or more evaluation steps; that is,
+it is the reflexive-transitive closure of one-step evaluation on pairs of a term and a store. -/
 def Steps (t : Term Base) (μ : Store Base) (t' : Term Base) (μ' : Store Base) : Prop :=
   Relation.ReflTransGen (fun (c c' : Term Base × Store Base) => Step c.1 c.2 c'.1 c'.2)
     (t, μ) (t', μ')
@@ -107,15 +109,19 @@ end Steps
 
 namespace Step
 
-/-- Values are normal forms. -/
+/-- **Values do not step.** If $v$ is a value, then there are no stores $\mu$, $\mu'$ and term $t'$
+such that the configuration $(v, \mu)$ steps to $(t', \mu')$: values are normal forms. -/
 theorem not_of_value {v t' : Term Base} {μ μ' : Store Base} (hv : v.Value) :
     ¬ Step v μ t' μ' := by
   intro h
   cases hv <;> cases h
 
-/-- Evaluation is deterministic: the next term and the next store are both
-unique. This relies on allocation at `μ.length`; with TAPL's arbitrary choice
-of fresh location only the result up to renaming of locations is unique. -/
+/-- **Determinism of evaluation with references.** If a configuration $(t, \mu)$ steps to
+$(t_1, \mu_1)$ and also to $(t_2, \mu_2)$, then $t_1 = t_2$ and $\mu_1 = \mu_2$.
+
+This relies on allocating each fresh location at the end of the store, at the index equal to the
+length of $\mu$; with TAPL's arbitrary choice of fresh location only the result up to renaming of
+locations is unique. -/
 theorem deterministic {t t₁ t₂ : Term Base} {μ μ₁ μ₂ : Store Base}
     (h₁ : Step t μ t₁ μ₁) (h₂ : Step t μ t₂ μ₂) : t₁ = t₂ ∧ μ₁ = μ₂ := by
   induction h₁ generalizing t₂ μ₂ with

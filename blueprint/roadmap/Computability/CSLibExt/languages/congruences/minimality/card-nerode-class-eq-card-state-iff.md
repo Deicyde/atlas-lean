@@ -16,7 +16,7 @@ only if every state in $Q$ is the image of some Nerode class under this map.
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 - [Nerode classes to DFA states](to-dfastate.md)
 
 ## Proof depends on

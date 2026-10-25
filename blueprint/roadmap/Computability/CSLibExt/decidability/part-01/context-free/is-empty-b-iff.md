@@ -13,9 +13,9 @@ emptiness test returns true on $g$ if and only if the language of $g$ is empty.
 
 ## Depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [The emptiness test for context-free grammars](is-empty-b.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 
@@ -23,7 +23,7 @@ emptiness test returns true on $g$ if and only if the language of $g$ is empty.
 - [Soundness of the productive-nonterminal iteration](exists-derives-of-mem-iterate.md)
 - [Generating nonterminals](generating.md)
 - [Completeness of the generating-nonterminal computation](start-mem-generating-of-mem-language.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 
 ## Sources
 

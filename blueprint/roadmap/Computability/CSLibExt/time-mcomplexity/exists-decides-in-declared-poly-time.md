@@ -6,19 +6,19 @@ proof: formalized
 lean: Cslib.TimeMComplexity.exists_decidesInDeclaredPolyTime
 ---
 
-# Exists decides In Declared Poly Time
+# Every decision problem has a timed decider in declared polynomial time
 
-Unrestricted `TimeM` deciders decide every language with declared time
-zero: `fun x => pure (L x)` treats evaluating `L x` as free. This is why
-this file defines no `P`/`NP` sets by quantifying over `TimeM` functions;
-the classes live in `MetaMathlibExt.ComplexityTheory`, and
-`mem_P_of_decides`/`mem_NP_of_verifies` give the exact extra hypothesis
-needed to reach them from named `TimeM` algorithms.
+**Every decision problem has a timed decider in declared polynomial time.** For every decision
+problem $L$ there is a timed function $f$ from lists of Booleans to Booleans that decides in
+declared polynomial time and whose output $f(x)$ equals $L(x)$ for every list $x$ of Booleans.
+
+The witness returns $L(x)$ with declared time $0$, treating the evaluation of $L$ as free. This is
+why no complexity classes are defined by quantifying over timed functions.
 
 ## Depends on
 
-- [Decides In Declared Poly Time](decides-in-declared-poly-time.md)
-- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
+- [Declared polynomial time for timed deciders](decides-in-declared-poly-time.md)
+- [Decision problems](../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

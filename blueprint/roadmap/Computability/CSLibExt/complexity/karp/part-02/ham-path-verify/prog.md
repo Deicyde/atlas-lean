@@ -26,10 +26,10 @@ The verifier: parse and validate, then walk the vertices.
 - [The unary reader of the Hamiltonian path verifier](read-u.md)
 - [The unary mover of the Hamiltonian path verifier](skip-u.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Cmp Step](../../../../../MathlibExt/turing-machine/program/cmp-step.md)
-- [Incr](../../../../../MathlibExt/turing-machine/program/incr.md)
-- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [One round of counter comparison](../../../../../MathlibExt/turing-machine/program/cmp-step.md)
+- [Counter increment](../../../../../MathlibExt/turing-machine/program/incr.md)
+- [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 - [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

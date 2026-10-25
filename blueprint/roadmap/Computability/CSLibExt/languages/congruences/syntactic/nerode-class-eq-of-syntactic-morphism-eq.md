@@ -6,24 +6,26 @@ proof: formalized
 lean: Cslib.Language.nerodeClass_eq_of_syntacticMorphism_eq
 ---
 
-# Nerode Class eq of syntactic Morphism eq
+# Equal syntactic classes give equal Nerode classes
 
-Equality of syntactic classes implies equality of Nerode classes.
+**Equal syntactic classes give equal Nerode classes.** Let $L$ be a language. For all words
+$x$ and $y$, if the syntactic morphism of $L$ sends $x$ and $y$ to the same element of the
+syntactic monoid of $L$, then $x$ and $y$ have the same Nerode class with respect to $L$.
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 - [Syntactic Monoid](syntactic-monoid.md)
-- [Nerode Class](../nerode/nerode-class-2.md)
-- [Syntactic Con](syntactic-con.md)
-- [Syntactic Morphism](syntactic-morphism.md)
+- [Nerode class of a word](../nerode/nerode-class-2.md)
+- [Syntactic congruence](syntactic-con.md)
+- [Syntactic morphism](syntactic-morphism.md)
 
 ## Proof depends on
 
-- [Nerode Rel](../nerode/nerode-rel.md)
-- [Nerode Setoid](../nerode/nerode-setoid.md)
-- [Syntactic Rel](syntactic-rel.md)
-- [Syntactic Rel nerode Rel](syntactic-rel-nerode-rel.md)
+- [Nerode equivalence](../nerode/nerode-rel.md)
+- [The Nerode setoid](../nerode/nerode-setoid.md)
+- [Syntactic equivalence](syntactic-rel.md)
+- [Syntactic equivalence refines Nerode equivalence](syntactic-rel-nerode-rel.md)
 
 ## Sources
 

@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Turing.TM2Time.relatesWithinSteps_tm0_of_relatesInSteps_tm1
 ---
 
-# Each step of the `TM1` emulator is at most three single-tape steps
+# Each step of the $\mathrm{TM1}$ emulator is at most three single-tape steps
 
-**Each step of the `TM1` emulator is at most three single-tape steps**: `m` steps of
-`TM2to1.tr M` take at most `3 m` steps of `MetaMathlibExt.TM2ToTM0.tr M`.
+**Each step of the $\mathrm{TM1}$ emulator is at most three single-tape steps.** Let $M$ be
+a multi-stack machine with a default label and a default internal state. If the
+$\mathrm{TM1}$ emulator of $M$ goes from $c$ to $c'$ in exactly $m$ steps, then the
+single-tape emulation of $M$ goes from the single-tape form of $c$ to the single-tape form of
+$c'$ in at most $3m$ steps.
 
 ## Depends on
 
-- [Tr](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [Single-tape emulation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 
 ## Sources
 

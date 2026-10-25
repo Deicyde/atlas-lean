@@ -32,8 +32,8 @@ serves as the loop index and $t$ as scratch.
 
 ## Proof depends on
 
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [For Head](../../../../MathlibExt/turing-machine/program/for-head.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

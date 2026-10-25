@@ -22,7 +22,7 @@ color-moving block that continues to $\ell$ whatever color it moves.
 - [Moving one color code in the 3-COLOR verifier](mv-p.md)
 - [One step of the walk towards the farther endpoint](walk1-s.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

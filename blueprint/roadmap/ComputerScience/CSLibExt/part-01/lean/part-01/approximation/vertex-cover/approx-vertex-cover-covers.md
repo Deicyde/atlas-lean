@@ -6,18 +6,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.approxVertexCover_covers
 ---
 
-# Approx Vertex Cover covers
+# APPROX-VERTEX-COVER covers every listed pair
 
-Every listed edge has an endpoint in the returned cover.
+**APPROX-VERTEX-COVER covers every listed pair.** For every list $L$ of ordered pairs of
+vertices and every pair $(u, v)$ in $L$, the cover that APPROX-VERTEX-COVER returns on $L$
+contains $u$ or $v$.
 
 ## Depends on
 
-- [Approx Vertex Cover](approx-vertex-cover.md)
+- [APPROX-VERTEX-COVER](approx-vertex-cover.md)
 
 ## Proof depends on
 
-- [Subset vertex Cover Scan](subset-vertex-cover-scan.md)
-- [Vertex Cover Scan](vertex-cover-scan.md)
+- [Running time of APPROX-VERTEX-COVER](subset-vertex-cover-scan.md)
+- [Vertex cover scan](vertex-cover-scan.md)
 
 ## Sources
 

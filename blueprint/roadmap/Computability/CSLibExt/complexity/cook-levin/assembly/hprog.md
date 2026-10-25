@@ -60,7 +60,7 @@ the final host label, where it halts.
 - [Stages of the cell-shift literal routine](../shift/ls.md)
 - [Precomputation stages of the shift generator](../shift/ps.md)
 - [Setup and loop stages of a cell-shift block](../shift/st.md)
-- [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Translating a statement along a stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
 
 ## Sources
 

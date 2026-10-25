@@ -29,9 +29,9 @@ $\varphi$ and $w$ on top of the original contents of $B$.
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
 - [Token sequence of a CNF formula](../sat-verifier-spec/toks.md)
 - [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
-- [Vars Of](../../sat-time-m/vars-of.md)
+- [Occurrence list of a CNF formula](../../sat-time-m/vars-of.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -44,7 +44,7 @@ $\varphi$ and $w$ on top of the original contents of $B$.
 - [Length-prefixed binary code of a CNF formula](../../cook-levin/encode-cnf.md)
 - [Length-prefixed binary code of a clause](../../cook-levin/encode-clause.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

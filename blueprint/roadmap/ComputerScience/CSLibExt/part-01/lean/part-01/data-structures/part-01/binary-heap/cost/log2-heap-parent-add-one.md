@@ -7,9 +7,12 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.log2_heapParent_add_one
 ---
 
-# Log2 heap Parent add one
+# The heap parent is one level up
 
-Moving a nonroot index to its parent lowers its binary-tree depth by one.
+**The heap parent is one level up.** For every natural number $i > 0$, the parent index
+$p = \lfloor (i-1)/2 \rfloor$ satisfies
+$\lfloor \log_2(p+1) \rfloor + 1 = \lfloor \log_2(i+1) \rfloor$; that is, in the level-order
+binary tree the parent of a nonroot index lies one level above it.
 
 ## Depends on
 

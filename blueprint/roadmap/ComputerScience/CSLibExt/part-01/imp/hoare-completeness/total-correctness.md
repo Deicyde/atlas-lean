@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.IMP.TotalCorrectness
 ---
 
-# Total Correctness
+# Total-correctness tag for Hoare triples
 
-Tag for the total-correctness inference system on `Triple`.
+**Total-correctness tag for Hoare triples.** An empty type used only as a label: derivability
+of Hoare triples in the total-correctness Hoare logic is registered as an inference system under
+this tag, while partial-correctness derivability is the default inference system on Hoare
+triples.
 
 ## Depends on
 

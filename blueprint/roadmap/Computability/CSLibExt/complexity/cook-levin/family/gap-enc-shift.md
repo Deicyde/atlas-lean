@@ -18,7 +18,7 @@ gap encoding of $\ell$ from slot $m'$ to $V$.
 
 - [Increasing literal positions](inc.md)
 - [Gap encoding of a dense clause](gap-enc.md)
-- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Proof depends on
 

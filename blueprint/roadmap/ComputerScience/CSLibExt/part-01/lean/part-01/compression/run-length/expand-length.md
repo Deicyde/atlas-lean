@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RunLength.expand_length
 ---
 
-# Expand length
+# Length of a run-length expansion
 
-The expanded output length is the sum of the run lengths.
+**Length of a run-length expansion.** For every list $(n_1, \dots, n_k)$ of natural numbers,
+the run-length expansion of $(n_1, \dots, n_k)$ has length $n_1 + \dots + n_k$.
 
 ## Depends on
 
-- [Expand](expand.md)
+- [Run-length expansion](expand.md)
 
 ## Proof depends on
 
-- [Expand From length](expand-from-length.md)
+- [Length of an expansion from a starting bit](expand-from-length.md)
 
 ## Sources
 

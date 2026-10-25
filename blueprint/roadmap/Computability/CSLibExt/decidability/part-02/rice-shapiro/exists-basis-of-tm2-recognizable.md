@@ -29,8 +29,8 @@ satisfies: for every pair $(x, y)$ in $\theta$, $f(x)$ is defined and equals $y$
 - [Rice–Shapiro, upward closure](rice-shapiro-mono.md)
 - [Multi-stack recognizable predicates are exactly the r.e. predicates](../../part-01/basic/tm2-recognizable-iff-re-pred.md)
 - [Recognizability transfers along mapping reductions](../undecidable/tm2-recognizable-of-many-one-reducible.md)
-- [And](../../../../MathlibExt/re/and-2.md)
-- [Parametrized s-m-n](../../../../MathlibExt/exists-computable-code.md)
+- [Recursively enumerable predicates are closed under conjunction](../../../../MathlibExt/re/and-2.md)
+- [Parametrized s-m-n theorem](../../../../MathlibExt/exists-computable-code.md)
 
 ## Sources
 

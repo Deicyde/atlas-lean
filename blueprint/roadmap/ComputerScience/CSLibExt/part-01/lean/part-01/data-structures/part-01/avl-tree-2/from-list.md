@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.fromList
 ---
 
-# From List
+# Building an AVL tree from a list
 
-Build a tree by inserting the list from right to left.
+**Building an AVL tree from a list.** For a linearly ordered type $\alpha$, the tree built
+from the empty list is the empty tree, and the tree built from a list with head $x$ and tail
+$xs$ is obtained by AVL insertion of $x$ into the tree built from $xs$. Thus the list is
+inserted from right to left, starting from the empty tree.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Binary trees with cached heights](tree.md)
 
 ## Proof depends on
 
-- [Insert](insert.md)
+- [Insertion into an AVL tree](insert.md)
 
 ## Sources
 

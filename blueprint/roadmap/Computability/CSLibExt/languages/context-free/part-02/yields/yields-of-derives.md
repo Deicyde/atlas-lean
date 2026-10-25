@@ -6,23 +6,27 @@ proof: formalized
 lean: Cslib.Language.yields_of_derives
 ---
 
-# Yields of derives
+# Derivable terminal words are yields
 
-Everything a form derives as a terminal word, it yields. The proof is
-the valuation argument: yields languages form a valuation.
+**Derivable terminal words are yields.** Let $g$ be a context-free grammar. If the
+sentential form $u$ derives the terminal word $w$, read as a string of terminal symbols,
+in $g$, then $u$ yields $w$.
+
+The proof is the valuation argument: the languages yielded by the nonterminals form a
+valuation.
 
 ## Depends on
 
-- [Yields](yields.md)
+- [Yield of a sentential form](yields.md)
 
 ## Proof depends on
 
-- [Is Valuation](../../part-01/basic/is-valuation.md)
-- [Eval Form](../../part-01/basic/eval-form.md)
-- [Eval Form le of derives](../../part-01/basic/eval-form-le-of-derives.md)
-- [Eval Form map terminal](../../part-01/basic/eval-form-map-terminal.md)
-- [Eval Symbol](../../part-01/basic/eval-symbol.md)
-- [Yields of rule](yields-of-rule.md)
+- [Valuation of a grammar](../../part-01/basic/is-valuation.md)
+- [Interpretation of a sentential form](../../part-01/basic/eval-form.md)
+- [Derivations shrink interpretations under a valuation](../../part-01/basic/eval-form-le-of-derives.md)
+- [A terminal word denotes its singleton](../../part-01/basic/eval-form-map-terminal.md)
+- [Interpretation of a grammar symbol](../../part-01/basic/eval-symbol.md)
+- [Yield through one production](yields-of-rule.md)
 
 ## Sources
 

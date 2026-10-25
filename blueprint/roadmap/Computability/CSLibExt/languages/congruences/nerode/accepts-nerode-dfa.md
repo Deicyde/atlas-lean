@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Language.accepts_nerodeDFA
 ---
 
-# Accepts nerode DFA
+# The Nerode automaton recognizes its language
 
-The canonical Nerode automaton recognizes exactly `L`.
+**The Nerode automaton recognizes its language.** For every language $L$, the language accepted
+by the Nerode automaton of $L$ is exactly $L$.
 
 ## Depends on
 
-- [Nerode Class](nerode-class.md)
-- [Nerode DFA](nerode-dfa.md)
+- [Nerode classes](nerode-class.md)
+- [The Nerode automaton](nerode-dfa.md)
 
 ## Proof depends on
 
-- [Accepting](accepting.md)
-- [Nerode Class](nerode-class-2.md)
+- [Accepting Nerode classes](accepting.md)
+- [Nerode class of a word](nerode-class-2.md)
 
 ## Sources
 

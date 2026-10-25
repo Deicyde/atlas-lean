@@ -6,23 +6,24 @@ proof: formalized
 lean: Cslib.IMP.Step.deterministic
 ---
 
-# Deterministic
+# Determinism of IMP small-step semantics
 
-The small-step relation is deterministic.
+**Determinism of IMP small-step semantics.** For all IMP configurations $x$, $y$, $z$, if
+$x$ steps to $y$ and $x$ steps to $z$ in one small step, then $y = z$.
 
 ## Depends on
 
-- [Config](config.md)
-- [Step](step.md)
+- [IMP configuration](config.md)
+- [IMP small-step relation](step.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

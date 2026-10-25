@@ -26,7 +26,7 @@ output stack of $E$ then holds the output on $x$, written in the output symbols 
 - [Start label of the tokenize-then-emit machine](start.md)
 - [Alphabets of the tokenize-then-emit machine](untitled.md)
 - [Stacks of the SAT tokenizer](../../../sat-tokenizer/k.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -49,18 +49,18 @@ output stack of $E$ then holds the output on $x$, written in the output symbols 
 - [Decoding a complete length-prefixed CNF formula](../../../../cook-levin/decode-cnf.md)
 - [The CNF decoder inverts the length-prefixed CNF code](../../../../cook-levin/decode-cnf-eq-some-iff.md)
 - [Length-prefixed binary code of a CNF formula](../../../../cook-levin/encode-cnf.md)
-- [Vars Of](../../../../sat-time-m/vars-of.md)
+- [Occurrence list of a CNF formula](../../../../sat-time-m/vars-of.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Agree](../../../../../MathlibExt/turing-machine/stack-embedding/agree.md)
-- [Embeds](../../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
-- [Frame](../../../../../MathlibExt/turing-machine/stack-embedding/frame.md)
-- [SEmb](../../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
-- [Map S](../../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
-- [Run Le embed](../../../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Emit](../../../../../MathlibExt/turing-machine/program/emit.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Agreement of host and sub-machine stacks](../../../../../MathlibExt/turing-machine/stack-embedding/agree.md)
+- [Embedding of a machine in a host](../../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
+- [Frame condition for a stack embedding](../../../../../MathlibExt/turing-machine/stack-embedding/frame.md)
+- [Stack embedding](../../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Translating a statement along a stack embedding](../../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Run embedding for bounded runs](../../../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

@@ -4,8 +4,8 @@ navigation: module
 
 # Search
 
-- [List Search Sentinel](list-search-sentinel.md)
-- [List Search Sentinel ret](list-search-sentinel-ret.md)
-- [List Search Sentinel time](list-search-sentinel-time.md)
-- [List Search Sentinel get](list-search-sentinel-get.md)
-- [List Search Sentinel circular](list-search-sentinel-circular.md)
+- [Search in a circular list with a sentinel](list-search-sentinel.md)
+- [Sentinel search returns the first matching node](list-search-sentinel-ret.md)
+- [Cost of sentinel search](list-search-sentinel-time.md)
+- [Sentinel search changes only the sentinel's key](list-search-sentinel-get.md)
+- [Sentinel search preserves the circular list](list-search-sentinel-circular.md)

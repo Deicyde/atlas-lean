@@ -19,16 +19,16 @@ $f^*(w) \in L$ if and only if $\varphi(w) \in A_L$.
 
 ## Depends on
 
-- [Recognizes](../recognition/recognizes.md)
+- [Recognition of a language by a monoid morphism](../recognition/recognizes.md)
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
 - [Alphabet preimage](alphabet-preimage.md)
 - [Alphabet preimage morphism](alphabet-preimage-morphism.md)
-- [Syntactic Accept](../syntactic/syntactic-accept.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
 
 ## Proof depends on
 
-- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
+- [Syntactic morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

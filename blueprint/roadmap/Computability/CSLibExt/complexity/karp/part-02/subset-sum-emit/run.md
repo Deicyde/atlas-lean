@@ -24,7 +24,7 @@ top first, the image of $x$ under the bit-string reduction from VERTEX-COVER to 
 - [Stack alphabets of the subset-sum emitter](untitled.md)
 - [Reduction from VERTEX-COVER to SUBSET-SUM](../subset-sum/reduce-ss.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -61,19 +61,19 @@ top first, the image of $x$ under the bit-string reduction from VERTEX-COVER to 
 - [Target of the SUBSET-SUM reduction](../subset-sum/ss-target.md)
 - [Vertex numbers of the SUBSET-SUM reduction](../subset-sum/vtx-num.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 - [Cmp run](../../../../../MathlibExt/turing-machine/program/cmp-run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Emit](../../../../../MathlibExt/turing-machine/program/emit.md)
-- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Rep](../../../../../MathlibExt/turing-machine/program/rep.md)
-- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
-- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
+- [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Running the bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Repeated block](../../../../../MathlibExt/turing-machine/program/rep.md)
+- [Value of a little-endian bit list](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+- [Binary encoding, least significant bit first](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

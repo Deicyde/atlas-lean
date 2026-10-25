@@ -25,15 +25,15 @@ steps.
 - [The clique verifier's unary reader](read-u.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [One step of a clique-verifier program to a known label](run-one.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Bit on top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

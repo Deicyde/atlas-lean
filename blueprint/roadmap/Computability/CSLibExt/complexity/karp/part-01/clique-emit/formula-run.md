@@ -36,7 +36,7 @@ $s = |C_1| + \dots + |C_m|$ is the total number of literals of $\varphi$.
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -45,7 +45,7 @@ $s = |C_1| + \dots + |C_m|$ is the total number of literals of $\varphi$.
 - [Clique emitter: the instance prefix](flat-map-reverse-length.md)
 - [Rows pushed for a clause's literals](lrows.md)
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

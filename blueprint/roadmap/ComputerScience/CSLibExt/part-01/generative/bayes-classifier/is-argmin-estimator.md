@@ -6,19 +6,26 @@ proof: formalized
 lean: Cslib.MachineLearning.BayesClassifier.IsPosteriorArgmax.isArgminEstimator
 ---
 
-# Is Argmin Estimator
+# A posterior argmax classifier is an argmin estimator for the 0-1 loss
 
-A posterior argmax classifier minimizes the posterior expected 0-1 loss: it is an argmin
-estimator in the sense of Mathlib's decision theory.
+**A posterior argmax classifier is an argmin estimator for the 0-1 loss.** Let the set $C$ of
+classes be countable and nonempty with measurable singletons, let $P$ be a finite kernel from $C$
+to the observation space $\mathcal X$ and $\pi$ a finite measure on $C$, write $P \circ \pi$ for
+the marginal measure on $\mathcal X$, $P^\dagger_\pi$ for the posterior kernel from $\mathcal X$
+to $C$, and $\ell(c, y)$ for the 0-1 loss ($0$ if $y = c$, $1$ otherwise). If
+$f : \mathcal X \to C$ is a posterior argmax classifier for $P$ and $\pi$, then $f$ is an argmin
+estimator for $\ell$: it is measurable and, for $(P \circ \pi)$-almost every $x$,
+$\int_C \ell(c, f(x))\,P^\dagger_\pi(x)(dc)$ equals
+$\inf_{y \in C} \int_C \ell(c, y)\,P^\dagger_\pi(x)(dc)$.
 
 ## Depends on
 
-- [Is Posterior Argmax](is-posterior-argmax.md)
-- [Zero One Loss](zero-one-loss.md)
+- [Posterior argmax classifier](is-posterior-argmax.md)
+- [The 0-1 loss](zero-one-loss.md)
 
 ## Proof depends on
 
-- [Lintegral zero One Loss](lintegral-zero-one-loss.md)
+- [Expected 0-1 loss of a fixed prediction](lintegral-zero-one-loss.md)
 
 ## Sources
 

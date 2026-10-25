@@ -16,11 +16,11 @@ point of the subtree can then lie within the query ball.
 
 ## Depends on
 
-- [Ball Tree](ball-tree.md)
+- [Ball tree](ball-tree.md)
 
 ## Proof depends on
 
-- [Dist Sq](dist-sq.md)
+- [Squared Euclidean distance](dist-sq.md)
 
 ## Sources
 

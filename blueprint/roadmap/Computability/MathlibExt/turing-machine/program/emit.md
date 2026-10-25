@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.TM2Program.emit
 ---
 
-# Emit
+# Pushing a constant list
 
-Emit the constant list `xs` onto stack `k` in one step, then go to `next`.
+**Pushing a constant list.** For a stack $k$, a list $(x_1, \dots, x_m)$ of symbols of
+stack $k$ and a label $\ell$, this statement pushes $x_1, \dots, x_m$ onto stack $k$ in this order,
+so that $x_m$ ends on top, and then goes to label $\ell$. The machine executes it in a single
+step.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Push List](push-list.md)
+- [Pushing a list of symbols onto one stack](push-list.md)
 
 ## Sources
 

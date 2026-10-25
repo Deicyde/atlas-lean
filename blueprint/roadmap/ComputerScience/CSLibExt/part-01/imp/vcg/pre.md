@@ -5,23 +5,30 @@ statement: formalized
 lean: Cslib.IMP.ACmd.pre
 ---
 
-# Pre
+# Precondition of an annotated command
 
-The precondition computed backwards from a postcondition; a loop's
-precondition is its invariant.
+**Precondition of an annotated command.** For an annotated command $C$ and an assertion $Q$
+(the postcondition), the precondition $\mathrm{pre}(C, Q)$ is the assertion computed backwards
+as follows: $\mathrm{pre}(\mathrm{skip}, Q) = Q$; $\mathrm{pre}(x := a, Q)$ holds in a state $s$
+iff $Q$ holds in the state obtained from $s$ by giving $x$ the value of $a$ in $s$;
+$\mathrm{pre}(C_1;\,C_2, Q) = \mathrm{pre}(C_1, \mathrm{pre}(C_2, Q))$; the precondition of
+$\mathrm{if}\ b\ \mathrm{then}\ C_1\ \mathrm{else}\ C_2$ for $Q$ holds in a state $s$ iff
+$\mathrm{pre}(C_1, Q)$ holds in $s$ when $b$ is true in $s$, and $\mathrm{pre}(C_2, Q)$ holds in
+$s$ when $b$ is false in $s$; and the precondition of a loop
+$\{I\}\ \mathrm{while}\ b\ \mathrm{do}\ C$ is its invariant $I$, whatever $Q$ is.
 
 ## Depends on
 
-- [ACmd](acmd.md)
+- [Annotated commands](acmd.md)
 - [Assertion](../hoare/assertion.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Subst](../hoare/subst.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Substitution in an assertion](../hoare/subst.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

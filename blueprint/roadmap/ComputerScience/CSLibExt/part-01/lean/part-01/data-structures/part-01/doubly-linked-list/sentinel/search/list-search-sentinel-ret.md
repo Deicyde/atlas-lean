@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.listSearchSentinel_ret
 ---
 
-# List Search Sentinel ret
+# Sentinel search returns the first matching node
 
-The returned identity is the first pre-run data-node key match in circle order.
-The sentinel is a stopping device, never a successful returned data identity.
+**Sentinel search returns the first matching node.** If a store circularly represents the list
+$L$ of data nodes with sentinel $s$, then sentinel search for a key $k$ returns the first node of
+$L$ (in list order, which starts at the successor of $s$) whose key in the input store is $k$, and
+returns no node if no node of $L$ has key $k$. In particular, the sentinel is never returned.
 
 ## Depends on
 
-- [Circular Represents](../basic/circular-represents.md)
-- [Node](../../basic/node.md)
-- [List Search Sentinel](list-search-sentinel.md)
+- [Circular doubly linked list with a sentinel](../basic/circular-represents.md)
+- [Doubly linked list node](../../basic/node.md)
+- [Search in a circular list with a sentinel](list-search-sentinel.md)
 
 ## Sources
 

@@ -5,22 +5,26 @@ statement: formalized
 lean: Cslib.IMP.SepValid
 ---
 
-# Sep Valid
+# Separation-logic triple validity
 
-Fault-avoiding validity of a separation-logic triple: from `P`, the
-command never faults, and every terminating execution ends in `Q`.
+**Separation-logic triple validity.** For heap assertions $P$, $Q$ and a heap command $c$,
+the triple $\lbrace P \rbrace\ c\ \lbrace Q \rbrace$ is valid (in the fault-avoiding sense)
+when, for every store $s$ and heap $h$ with $P(s, h)$, the configuration $(c, s, h)$ is safe
+(no configuration reachable from it is stuck at a command other than $\mathtt{skip}$), and
+whenever $(c, s, h)$ reaches $(\mathtt{skip}, s', h')$ in finitely many heap steps,
+$Q(s', h')$ holds.
 
 ## Depends on
 
-- [HAssertion](hassertion.md)
-- [Heap Cmd](../heap-step/heap-cmd.md)
+- [Heap assertion](hassertion.md)
+- [Heap commands](../heap-step/heap-cmd.md)
 
 ## Proof depends on
 
-- [HSteps](../heap-step/hsteps.md)
+- [Multi-step heap execution](../heap-step/hsteps.md)
 - [Heap](../heap/heap.md)
-- [Safe](../heap-step/safe.md)
-- [State](../syntax/state.md)
+- [Safe heap configurations](../heap-step/safe.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

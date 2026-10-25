@@ -7,7 +7,8 @@ lean: Cslib.Languages.LambdaCalculus.References.Store
 
 # Store
 
-A store maps each location `l < μ.length` to the term `μ[l]`.
+**Store.** A store $\mu$ is a finite list of terms; each location $l$ less than the length of
+$\mu$ holds the term $\mu[l]$, the entry of $\mu$ at index $l$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Term](../syntax/term.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 
 ## Sources
 

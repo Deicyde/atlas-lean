@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Turing.StackTape.head_toListBlank
 ---
 
-# Head to List Blank
+# First cell of the half-tape view of a stack tape
 
-The first cell of the half-tape is the first cell of the `StackTape`.
+**First cell of the half-tape view of a stack tape.** For every stack tape $s$ over $\Gamma$
+(a finite list of cells, each a symbol of $\Gamma$ or the blank, that does not end in a blank), the
+first cell of the half-tape view of $s$ (its cells followed by infinitely many blanks) is the
+first cell of $s$, which is the blank if $s$ is empty.
 
 ## Depends on
 
-- [To List Blank](to-list-blank.md)
+- [Half-tape view of a stack tape](to-list-blank.md)
 
 ## Sources
 

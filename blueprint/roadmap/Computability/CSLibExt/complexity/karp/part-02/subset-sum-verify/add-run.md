@@ -30,8 +30,8 @@ $\mathit{acc}$.
 - [The SUBSET-SUM verifier program](prog.md)
 - [Stack contents of the SUBSET-SUM verifier](st.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -41,8 +41,8 @@ $\mathit{acc}$.
 - [Carry phase of the SUBSET-SUM verifier](fin-run.md)
 - [Adding a carry bit](inc-b.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Bit on top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

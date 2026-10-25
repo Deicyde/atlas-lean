@@ -34,15 +34,15 @@ ascending order.
 - [Stacks of a counter machine](sk.md)
 - [Alphabets of a counter machine](s.md)
 - [Stacks holding given counter values](st.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
-- [For Head](../../../../MathlibExt/turing-machine/program/for-head.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Proof depends on
 
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [For Loop le](../../../../MathlibExt/turing-machine/program/for-loop-le.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Time bound for a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-loop-le.md)
 
 ## Sources
 

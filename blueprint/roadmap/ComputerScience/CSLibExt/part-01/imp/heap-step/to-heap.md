@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.IMP.Cmd.toHeap
 ---
 
-# To Heap
+# Embedding of IMP into the heap language
 
-The embedding of a plain IMP command into the heap language.
+**Embedding of IMP into the heap language.** The embedding sends each plain IMP command to
+the heap command of the same shape: $\mathtt{skip}$ goes to $\mathtt{skip}$, an assignment of an
+arithmetic expression to a variable goes to the same assignment, a sequence goes to the
+sequence of the embeddings of its parts, and a conditional or while loop goes to the conditional
+or while loop with the same guard and with each subcommand replaced by its embedding.
 
 ## Depends on
 
-- [Cmd](../syntax/cmd.md)
-- [Heap Cmd](heap-cmd.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Heap commands](heap-cmd.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 
 ## Sources
 

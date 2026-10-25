@@ -95,15 +95,15 @@ theorem isValuation_regVal (g : EncodedCFG T) : IsValuation (regGrammar g).toCFG
 
 - [Alphabet of the reduction from universality to regularity](letter.md)
 - [Grammar of the reduction from universality to regularity](reg-grammar.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
-- [Language From](../../../languages/context-free/part-01/basic/language-from.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Interpretation of a sentential form](../../../languages/context-free/part-01/basic/eval-form.md)
+- [Language generated from a nonterminal](../../../languages/context-free/part-01/basic/language-from.md)
 
 ## Proof depends on
 
-- [Is Valuation language From](../../../languages/context-free/part-01/basic/is-valuation-language-from.md)
+- [The languages generated from each nonterminal form a valuation](../../../languages/context-free/part-01/basic/is-valuation-language-from.md)
 
 ## Sources
 

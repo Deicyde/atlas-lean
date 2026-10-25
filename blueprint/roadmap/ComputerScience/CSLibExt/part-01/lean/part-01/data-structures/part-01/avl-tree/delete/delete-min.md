@@ -6,17 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.deleteMin
 ---
 
-# Delete Min
+# Minimum deletion in an AVL tree
 
-`eraseMin` under the name used for the successor step of deletion.
+**Minimum deletion in an AVL tree.** Minimum deletion maps a binary tree with cached heights to
+the tree obtained by removing its leftmost key and rebalancing on the way back up. It is the
+operation of removing the minimum, under the name used for the successor step of deletion, where a
+deleted node with two children is replaced by the minimum of its right subtree.
 
 ## Depends on
 
-- [Tree](../../avl-tree-2/tree.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
 
 ## Proof depends on
 
-- [Erase Min](erase-min.md)
+- [Removing the leftmost key of an AVL tree](erase-min.md)
 
 ## Sources
 

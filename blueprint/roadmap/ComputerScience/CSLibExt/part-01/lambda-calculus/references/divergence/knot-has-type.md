@@ -6,22 +6,22 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.knot_hasType
 ---
 
-# Knot has Type
+# Landin's knot is well typed
 
-Landin's knot is closed and well typed at `Unit` under the empty store
-typing.
+**Landin's knot is well typed.** Landin's knot is closed and has type $\mathrm{Unit}$
+in the empty typing context under the empty store typing.
 
 ## Depends on
 
-- [Has Type](../typing/has-type.md)
-- [Knot](knot.md)
-- [Ty](../syntax/ty.md)
+- [Typing judgment for the lambda calculus with references](../typing/has-type.md)
+- [Landin's knot](knot.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Body](body.md)
-- [Id U](id-u.md)
-- [Term](../syntax/term.md)
+- [The recursive function of Landin's knot, with the cell free](body.md)
+- [The identity on Unit](id-u.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 
 ## Sources
 

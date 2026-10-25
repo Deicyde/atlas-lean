@@ -26,7 +26,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
-- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

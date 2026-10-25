@@ -31,7 +31,7 @@ family of $L$ for $n_1$, $a$, $k_1$, $e$ at $T$, $H$ followed by $o$.
 - [Stacks holding given counter values](../counter-view/st.md)
 - [Variable layout of the transition clauses](../family/layout.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -43,7 +43,7 @@ family of $L$ for $n_1$, $a$, $k_1$, $e$ at $T$, $H$ followed by $o$.
 - [Number of variables of the transition-clause formula](../family/num-vars.md)
 - [Variables per time step](../family/row-w.md)
 - [Uniform layout](../family/uni.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

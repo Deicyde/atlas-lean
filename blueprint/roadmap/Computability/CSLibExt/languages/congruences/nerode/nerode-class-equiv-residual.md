@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.Language.nerodeClassEquivResidual
 ---
 
-# Nerode Class Equiv Residual
+# Bijection between Nerode classes and left quotients
 
-Nerode classes are precisely the residual languages reachable by left quotients.
+**Bijection between Nerode classes and left quotients.** For every language $L$, the map
+sending the Nerode class $[x]$ of a word $x$ to the left quotient
+$x^{-1}L = \{ y \mid xy \in L \}$ is a bijection from the set of Nerode classes of $L$ onto the
+set $\{ w^{-1}L \mid w \text{ a word} \}$ of left quotients of $L$.
 
 ## Depends on
 
-- [Nerode Class](nerode-class.md)
+- [Nerode classes](nerode-class.md)
 
 ## Proof depends on
 
-- [Class Residual](class-residual.md)
-- [Nerode Class](nerode-class-2.md)
-- [Nerode Rel](nerode-rel.md)
-- [Nerode Setoid](nerode-setoid.md)
+- [Residual map on Nerode classes](class-residual.md)
+- [Nerode class of a word](nerode-class-2.md)
+- [Nerode equivalence](nerode-rel.md)
+- [The Nerode setoid](nerode-setoid.md)
 
 ## Sources
 

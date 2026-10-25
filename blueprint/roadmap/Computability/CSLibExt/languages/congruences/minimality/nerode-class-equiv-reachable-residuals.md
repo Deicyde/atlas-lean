@@ -15,12 +15,12 @@ is the language $M$ accepts from the state it reaches on reading $x$.
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 - [Residual languages of reachable states](reachable-residuals.md)
 
 ## Proof depends on
 
-- [Nerode Class Equiv Residual](../nerode/nerode-class-equiv-residual.md)
+- [Bijection between Nerode classes and left quotients](../nerode/nerode-class-equiv-residual.md)
 
 ## Sources
 

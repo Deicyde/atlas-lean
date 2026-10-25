@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.CookLevin.checkClause_ret
 ---
 
-# Check Clause ret
+# Correctness of the witness clause check
 
-A clause check succeeds iff the clause is satisfied (canonical
-`CNFClause.Satisfies`) by the looked-up witness values.
+**Correctness of the witness clause check.** Let $N$ be a list of natural numbers, $w$ a list
+of booleans and $C$ a CNF clause. The check of $C$ against $N$ and $w$ returns true if and only
+if $C$ is satisfied by the assignment that sends each natural number $x$ to the value returned by
+looking up $x$ in $N$ and $w$.
 
 ## Depends on
 
-- [Check Clause](check-clause.md)
-- [Lookup Var](lookup-var.md)
+- [Clause check against a witness](check-clause.md)
+- [Witness lookup](lookup-var.md)
 - [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Satisfies](../../../Logic/CSLibExt/propositional/cnf/semantics/satisfies-2.md)
 

@@ -5,25 +5,24 @@ statement: formalized
 lean: Cslib.TimeMComplexity.DeclaredPolyManyOneRedVia
 ---
 
-# Declared Poly Many One Red Via
+# Declared-time many-one reduction by a timed function
 
-The named `TimeM` function `f` is a *declared-time* many-one
-reduction from `L₁` to `L₂`: it is `ComputesInDeclaredPolyTime` and
-preserves membership exactly. This is not a polynomial-time many-one
-reduction in the standard or canonical TM2 sense (per review): no
-computability of `(f x).ret` is established, so it must not be cited as
-`Cslib.CookLevin.PolyManyOneRed` or as evidence about the canonical
-complexity classes. It is the declared-time analogue of that notion,
-with the reducing function named rather than quantified over (see the
-module doc for why).
+**Declared-time many-one reduction by a timed function.** Let $L_1$ and $L_2$ be decision
+problems and let $f$ be a timed function that maps each list $x$ of Booleans to a list $f(x)$ of
+Booleans together with a declared time. Then $f$ is a declared-time many-one reduction from $L_1$
+to $L_2$ when $f$ computes in declared polynomial time and $L_1(x) = L_2(f(x))$ for every list $x$
+of Booleans.
+
+Because declared times are trusted annotations, this is not a polynomial-time many-one reduction
+in the Turing-machine sense: nothing is established about the computability of $f$.
 
 ## Depends on
 
-- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
+- [Decision problems](../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 
-- [Computes In Declared Poly Time](computes-in-declared-poly-time.md)
+- [Declared polynomial time for timed functions on bitstrings](computes-in-declared-poly-time.md)
 
 ## Sources
 

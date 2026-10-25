@@ -13,26 +13,26 @@ EM update `emStep xs hx θ`.
 
 ## Depends on
 
-- [Rich](rich.md)
-- [Valid Params](valid-params.md)
-- [Em Step](em-step.md)
-- [Joint](joint.md)
-- [Em Q](../expectation-maximization/em-q.md)
+- [Rich data for a Bernoulli mixture](rich.md)
+- [The parameter space of a Bernoulli mixture](valid-params.md)
+- [One EM step for the Bernoulli mixture](em-step.md)
+- [Joint distribution of the Bernoulli mixture](joint.md)
+- [The EM objective](../expectation-maximization/em-q.md)
 
 ## Proof depends on
 
-- [Params](params.md)
-- [Valid](valid.md)
-- [Bern PMF](bern-pmf.md)
-- [Em Q eq](em-q-eq.md)
-- [Mass](mass.md)
-- [Ones](ones.md)
-- [Resp](resp.md)
+- [Parameters of a Bernoulli mixture](params.md)
+- [Valid parameters of a Bernoulli mixture](valid.md)
+- [Product Bernoulli probability mass function](bern-pmf.md)
+- [Decomposition of the EM objective for the Bernoulli mixture](em-q-eq.md)
+- [Effective number of points of a Bernoulli-mixture component](mass.md)
+- [Responsibility-weighted count of ones](ones.md)
+- [Responsibilities of a Bernoulli mixture](resp.md)
 - [The weighted log-likelihood is bounded by its value at the normalized counts](sum-mul-log-le-sum-mul-log-div.md)
-- [Zeros](zeros.md)
-- [Is Dist posterior](../expectation-maximization/is-dist-posterior.md)
-- [Marginal](../expectation-maximization/marginal.md)
-- [Posterior](../expectation-maximization/posterior.md)
+- [Responsibility-weighted count of zeros](zeros.md)
+- [Posteriors are probability distributions](../expectation-maximization/is-dist-posterior.md)
+- [Marginal of a latent-variable model](../expectation-maximization/marginal.md)
+- [Posterior of a latent-variable model](../expectation-maximization/posterior.md)
 
 ## Sources
 

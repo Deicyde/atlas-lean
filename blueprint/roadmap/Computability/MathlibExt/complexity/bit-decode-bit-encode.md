@@ -7,15 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.BitstringEncoding.bitDecode_bitEncode
 ---
 
-# Bit Decode bit Encode
+# Decoding inverts bitstring encoding
 
-Decoding is a left inverse of encoding.
+**Decoding inverts bitstring encoding.** Let $\alpha$ be a type with a canonical bitstring
+encoding. For every $a \in \alpha$, decoding the bitstring encoding of $a$ succeeds and returns
+$a$.
 
 ## Depends on
 
-- [Bitstring Encoding](bitstring-encoding.md)
-- [Bit Decode](bit-decode.md)
-- [Bit Encode](bit-encode.md)
+- [Bitstring encodings](bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](bit-decode.md)
+- [Encoding function of a bitstring encoding](bit-encode.md)
 
 ## Sources
 

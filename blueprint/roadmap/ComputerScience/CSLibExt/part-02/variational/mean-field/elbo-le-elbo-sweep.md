@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.Variational.elbo_le_elbo_sweep
 
 ## Depends on
 
-- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Probability distributions on a finite latent space](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
 - [Elbo](elbo.md)
 - [Prod Dist](prod-dist.md)
 - [Sweep](sweep.md)

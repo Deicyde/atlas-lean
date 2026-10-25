@@ -11,12 +11,12 @@ lean: Cslib.Algorithms.Lean.MetricTSP.IsMinSpanning
 
 ## Depends on
 
-- [Forest](forest.md)
+- [Rooted forest in left-child right-sibling form](forest.md)
 
 ## Proof depends on
 
-- [Weight](weight.md)
-- [Is Spanning](is-spanning.md)
+- [Weight of a forest below a vertex](weight.md)
+- [Rooted spanning tree of a vertex list](is-spanning.md)
 
 ## Sources
 

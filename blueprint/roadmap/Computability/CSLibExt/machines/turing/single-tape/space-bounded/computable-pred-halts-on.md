@@ -8,24 +8,29 @@ lean: Cslib.Turing.SingleTapeTM.SpaceBoundedBy.computablePred_haltsOn
 
 # Halting of a machine running in computable space is computable
 
-**Halting of a machine running in computable space is computable**: run the coded step
-`cfgBound (s n)` times on an input of length `n` and check for the halting state.
+**Halting of a machine running in computable space is computable.** Let $M$ be a single-tape
+machine with state set $Q$ over a finite alphabet $\Sigma$, fix any primitive recursive coding of
+$\Sigma$, and let $s : \mathbb{N} \to \mathbb{N}$ be computable. If $M$ runs in space $s$, then the
+set of input words over $\Sigma$ on which $M$ halts is computable.
+
+The decision procedure runs $M$ for $(|Q| + 1)(|\Sigma| + 1)(|\Sigma| + 2)^{2 s(n)}$ steps on an
+input of length $n$ and checks whether it has halted.
 
 ## Depends on
 
-- [Halts On](../classes/halts-on.md)
-- [Space Bounded By](space-bounded-by.md)
+- [Halting on an input](../classes/halts-on.md)
+- [Space-bounded single-tape machines](space-bounded-by.md)
 
 ## Proof depends on
 
-- [To Coded Cfg](../to-recursive/to-coded-cfg.md)
-- [Coded Cfg](../to-recursive/coded-cfg.md)
-- [A machine running in space `s` that halts on `l` halts within `cfgBound (s l.length)` steps](exists-halted-relates-within-steps.md)
-- [Cfg Bound](cfg-bound.md)
-- [Coded Step](../to-recursive/coded-step.md)
-- [Coded Step to Coded Cfg](../to-recursive/coded-step-to-coded-cfg.md)
-- [Primrec coded Step](../to-recursive/primrec-coded-step.md)
-- [Primrec to Coded Cfg init Cfg](../to-recursive/primrec-to-coded-cfg-init-cfg.md)
+- [Code of a single-tape configuration](../to-recursive/to-coded-cfg.md)
+- [Coded configurations of a single-tape machine](../to-recursive/coded-cfg.md)
+- [Space-bounded machines halt within the configuration bound](exists-halted-relates-within-steps.md)
+- [Configuration bound](cfg-bound.md)
+- [One step of a single-tape machine on coded configurations](../to-recursive/coded-step.md)
+- [The coded step commutes with coding](../to-recursive/coded-step-to-coded-cfg.md)
+- [The coded step of a single-tape machine is primitive recursive](../to-recursive/primrec-coded-step.md)
+- [The code of the initial configuration is primitive recursive](../to-recursive/primrec-to-coded-cfg-init-cfg.md)
 
 ## Sources
 

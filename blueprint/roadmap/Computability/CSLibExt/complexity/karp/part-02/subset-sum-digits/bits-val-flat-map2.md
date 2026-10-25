@@ -15,7 +15,7 @@ $f(b_0) f(b_1) \cdots f(b_{m-1})$ has value $\sum_{q < m} 4^q \, \mathrm{val}(f(
 
 ## Depends on
 
-- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+- [Value of a little-endian bit list](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
 
 ## Proof depends on
 

@@ -26,7 +26,7 @@ $x \ne t_{i_1} \cdots t_{i_n}$ or $x \ne b_{i_1} \cdots b_{i_n}$.
 - [The universality grammar](univ-grammar.md)
 - [Intended languages of the nonterminals of the universality grammar](univ-val.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 
@@ -45,14 +45,14 @@ $x \ne t_{i_1} \cdots t_{i_n}$ or $x \ne b_{i_1} \cdots b_{i_n}$.
 - [Encoded bit terminal](u-bit.md)
 - [Encoded letter terminal](u-letter.md)
 - [Encoded nonterminal](u-nt.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
-- [Is Valuation language From](../../../languages/context-free/part-01/basic/is-valuation-language-from.md)
-- [Language From](../../../languages/context-free/part-01/basic/language-from.md)
-- [Language le of valuation](../../../languages/context-free/part-01/basic/language-le-of-valuation.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Interpretation of a sentential form](../../../languages/context-free/part-01/basic/eval-form.md)
+- [The languages generated from each nonterminal form a valuation](../../../languages/context-free/part-01/basic/is-valuation-language-from.md)
+- [Language generated from a nonterminal](../../../languages/context-free/part-01/basic/language-from.md)
+- [Valuations bound the language of a grammar](../../../languages/context-free/part-01/basic/language-le-of-valuation.md)
 
 ## Sources
 

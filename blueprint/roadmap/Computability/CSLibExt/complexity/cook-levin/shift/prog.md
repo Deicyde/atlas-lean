@@ -44,10 +44,10 @@ and restore their sources when the scratch counters start empty.
 - [Setup and loop stages of a cell-shift block](st.md)
 - [Loop body of the cell-shift generator](bd-p.md)
 - [Block stages of the cell-shift generator](st-p.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Decr](../../../../MathlibExt/turing-machine/program/decr.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [For Head](../../../../MathlibExt/turing-machine/program/for-head.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Loop head of a for loop over a counter](../../../../MathlibExt/turing-machine/program/for-head.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

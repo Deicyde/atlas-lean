@@ -6,28 +6,33 @@ proof: formalized
 lean: Cslib.IMP.ACmd.vc_sound
 ---
 
-# Vc sound
+# Soundness of verification conditions
 
-Soundness: a true verification condition yields a derivable triple.
+**Soundness of verification conditions.** For an annotated command $C$ and an assertion $Q$,
+write $\mathrm{pre}(C, Q)$ and $\mathrm{vc}(C, Q)$ for the precondition and the verification
+condition of $C$ for the postcondition $Q$, and $\mathrm{strip}(C)$ for the IMP command obtained
+from $C$ by erasing its loop invariants. For every such $C$ and $Q$, if $\mathrm{vc}(C, Q)$
+holds, then the Hoare triple $\{\mathrm{pre}(C, Q)\}\ \mathrm{strip}(C)\ \{Q\}$ is derivable in
+the partial-correctness Hoare logic.
 
 ## Depends on
 
-- [ACmd](acmd.md)
-- [Pre](pre.md)
-- [Strip](strip.md)
-- [Vc](vc.md)
+- [Annotated commands](acmd.md)
+- [Precondition of an annotated command](pre.md)
+- [Erasing annotations](strip.md)
+- [Verification condition of an annotated command](vc.md)
 - [Assertion](../hoare/assertion.md)
-- [Derivable](../hoare-completeness/derivable.md)
+- [Derivability in Hoare logic for partial correctness](../hoare-completeness/derivable.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Entails](../hoare/entails.md)
-- [Subst](../hoare/subst.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Entailment of assertions](../hoare/entails.md)
+- [Substitution in an assertion](../hoare/subst.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

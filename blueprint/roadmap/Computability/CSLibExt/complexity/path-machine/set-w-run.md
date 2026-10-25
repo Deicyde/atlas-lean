@@ -32,10 +32,10 @@ $j \ge |m|$), and $S'$ agrees with $S$ on every stack other than $c$, $M$ and $P
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
-- [Cnt](../../../MathlibExt/turing-machine/program/cnt.md)
-- [Move B](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Unary counter](../../../MathlibExt/turing-machine/program/cnt.md)
+- [Bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Proof depends on
 
@@ -47,8 +47,8 @@ $j \ge |m|$), and $S'$ agrees with $S$ on every stack other than $c$, $M$ and $P
 - [A walk step with an exhausted counter](step-aux-walk-s-nil.md)
 - [Setting an entry by splitting the list](take-append-set-head.md)
 - [Walking along the marks of the PATH marking machine](walk-run.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

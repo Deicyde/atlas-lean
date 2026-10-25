@@ -61,47 +61,15 @@ universe u
 
 variable {α : Type u} [DecidableEq α]
 
-/-- A set of `F` meeting `U` in the most elements (the first such in list order), or `∅` when
-`F` is empty. -/
+/-- **Greedy choice of a set.** Given a list $F$ of finite sets and a finite set $U$, the best set
+of $F$ for $U$ is the first set $S$ in the list $F$ that maximizes $|S \cap U|$, or $\emptyset$
+when $F$ is empty. -/
 def bestSet (F : List (Finset α)) (U : Finset α) : Finset α :=
   (F.argmax fun S => (S ∩ U).card).getD ∅
 
-/-- Greedy set cover of `U` from the family `F`: take a set meeting `U` in the most elements,
-remove it from `U`, repeat; stop when no set meets `U`. -/
-def greedySetCover (F : List (Finset α)) (U : Finset α) : TimeM ℕ (List (Finset α)) := do
-  ✓[F.length + (F.map Finset.card).sum]
-  let S := bestSet F U
-  if _hS : (S ∩ U).card = 0 then pure []
-  else do
-    let C ← greedySetCover F (U \ S)
-    pure (S :: C)
-termination_by U.card
-decreasing_by
-  have h := Finset.card_sdiff_add_card_inter U (bestSet F U)
-  have hS' : ¬ (bestSet F U ∩ U).card = 0 := _hS
-  rw [Finset.inter_comm] at h
-  omega
-
-theorem bestSet_mem {F : List (Finset α)} {U : Finset α} (h : (bestSet F U ∩ U).card ≠ 0) :
-    bestSet F U ∈ F := by
-  unfold bestSet at *
-  cases hm : F.argmax (fun S => (S ∩ U).card) with
-  | none => simp [hm] at h
-  | some S => simpa using List.argmax_mem hm
-
-theorem card_inter_le_bestSet {F : List (Finset α)} {U T : Finset α} (hT : T ∈ F) :
-    (T ∩ U).card ≤ (bestSet F U ∩ U).card := by
-  unfold bestSet
-  cases hm : F.argmax (fun S => (S ∩ U).card) with
-  | none => exact absurd (List.argmax_eq_none.1 hm) (List.ne_nil_of_mem hT)
-  | some S => simpa using List.le_of_mem_argmax hT hm
-
-theorem card_sdiff_lt {U S : Finset α} (hS : (S ∩ U).card ≠ 0) : (U \ S).card < U.card := by
-  have h := Finset.card_sdiff_add_card_inter U S
-  rw [Finset.inter_comm] at h
-  omega
-
-/-! ## The result is a cover from the family -/
+/-- **The greedy set cover draws its sets from the family.** For every list $F$ of finite sets and
+every finite set $U$, every set in the list returned by the greedy set cover algorithm on $F$ and
+$U$ is a member of $F$. -/
 
 theorem greedySetCover_mem (F : List (Finset α)) (U : Finset α) :
     ∀ S ∈ (greedySetCover F U).ret, S ∈ F := by
@@ -115,7 +83,9 @@ theorem greedySetCover_mem (F : List (Finset α)) (U : Finset α) :
       · exact bestSet_mem hS
       · exact ih _ (h ▸ card_sdiff_lt hS) _ rfl T hT
 
-/-- If every element of `U` lies in some set of `F`, the greedy result covers `U`. -/
+/-- **The greedy set cover is a cover.** Let $F$ be a list of finite sets and $U$ a finite set
+such that every element of $U$ lies in some set of $F$. Then every element of $U$ lies in some
+set of the list returned by the greedy set cover algorithm on $F$ and $U$. -/
 theorem greedySetCover_covers (F : List (Finset α)) (U : Finset α)
     (hU : ∀ x ∈ U, ∃ S ∈ F, x ∈ S) : ∀ x ∈ U, ∃ S ∈ (greedySetCover F U).ret, x ∈ S := by
   induction h : U.card using Nat.strong_induction_on generalizing U with
@@ -148,7 +118,12 @@ theorem greedySetCover_length_le (F : List (Finset α)) (U : Finset α) :
       have := ih _ (h ▸ hlt) _ rfl
       omega
 
-/-- At most `|U| + 1` searches, each costing `|F|` plus the total size of the family. -/
+/-- **Running time of greedy set cover.** Let $F$ be a list of finite sets and $U$ a finite set.
+The running time of greedy set cover of $U$ from $F$ is at most
+$(|U| + 1)(|F| + \sum_{S \in F} |S|)$, where $|F|$ is the length of the list and the sum runs
+over the entries of $F$, counted with repetition.
+
+There are at most $|U| + 1$ searches for a best set, each costing $|F| + \sum_{S \in F} |S|$. -/
 theorem greedySetCover_time_le (F : List (Finset α)) (U : Finset α) :
     (greedySetCover F U).time ≤ (U.card + 1) * (F.length + (F.map Finset.card).sum) := by
   induction h : U.card using Nat.strong_induction_on generalizing U with
@@ -168,7 +143,12 @@ theorem greedySetCover_time_le (F : List (Finset α)) (U : Finset α) :
 
 /-! ## The harmonic bound -/
 
-/-- Each of the `d` reciprocals `1/(a - d + 1), …, 1/a` is at least `1/k` when `a ≤ k`. -/
+/-- **Lower bound for a difference of harmonic numbers.** Write
+$H(n) = 1 + \frac12 + \dots + \frac1n$ for the $n$-th harmonic number, so $H(0) = 0$. For natural
+numbers $d \le a \le k$, we have $\frac{d}{k} \le H(a) - H(a - d)$, where $\frac{d}{k}$ is read
+as $0$ when $k = 0$.
+
+Each of the $d$ reciprocals $\frac{1}{a - d + 1}, \dots, \frac{1}{a}$ is at least $\frac1k$. -/
 theorem div_le_harmonic_sub {a d k : ℕ} (hd : d ≤ a) (hak : a ≤ k) :
     (d : ℚ) / k ≤ harmonic a - harmonic (a - d) := by
   induction d with
@@ -189,8 +169,9 @@ theorem div_le_harmonic_sub {a d k : ℕ} (hd : d ≤ a) (hak : a ≤ k) :
 theorem harmonic_le_harmonic {a b : ℕ} (h : a ≤ b) : harmonic a ≤ harmonic b :=
   Finset.sum_le_sum_of_subset_of_nonneg (Finset.range_mono h) (fun _ _ _ => by positivity)
 
-/-- A set covered by the members of `L` has at most as many elements as the sum of its
-intersections with them. -/
+/-- **Covering bound by intersections.** Let $L$ be a list of finite sets and $T$ a finite set
+such that every element of $T$ lies in some member of $L$. Then
+$|T| \le \sum_{S \in L} |S \cap T|$, where the sum runs over the list $L$ with repetitions. -/
 theorem card_le_sum_card_inter (L : List (Finset α)) (T : Finset α)
     (hT : ∀ x ∈ T, ∃ S ∈ L, x ∈ S) : T.card ≤ (L.map fun S => (S ∩ T).card).sum := by
   induction L generalizing T with
@@ -214,8 +195,11 @@ theorem card_le_sum_card_inter (L : List (Finset α)) (T : Finset α)
       rw [Finset.inter_comm T S] at hsplit
       omega
 
-/-- The potential bound: for every cover `C*` of `U` drawn from `F`, the greedy cover has at most
-`∑_{S ∈ C*} H(|S ∩ U|)` sets. -/
+/-- **Potential bound for greedy set cover.** Let $F$ be a list of finite sets, $U$ a finite set,
+and $H(n) = 1 + \frac12 + \dots + \frac1n$ the $n$-th harmonic number. For every list $C^*$ of
+members of $F$ that together cover $U$, the list of sets returned by the greedy set cover
+algorithm on $F$ and $U$ has length at most $\sum_{S \in C^*} H(|S \cap U|)$, where the sum
+runs over the list $C^*$ with repetitions. -/
 theorem greedySetCover_length_le_sum_harmonic (F : List (Finset α)) (U : Finset α)
     (Cstar : List (Finset α)) (hsub : ∀ S ∈ Cstar, S ∈ F)
     (hcov : ∀ x ∈ U, ∃ S ∈ Cstar, x ∈ S) :
@@ -273,8 +257,13 @@ theorem greedySetCover_length_le_sum_harmonic (F : List (Finset α)) (U : Finset
       rw [List.sum_map_add] at hsum
       linarith
 
-/-- CLRS Theorem 35.4: if every set of `F` has at most `d` elements, the greedy cover of `U` has
-at most `H(d)` times as many sets as any cover of `U` drawn from `F`. -/
+/-- **Harmonic bound in the largest set size for greedy set cover.** Let $F$ be a list of finite
+sets each with at most $d$ elements, $U$ a finite set, and $H(n) = 1 + \frac12 + \dots + \frac1n$
+the $n$-th harmonic number. For every list $C^*$ of members of $F$ that together cover $U$, the
+list of sets returned by the greedy set cover algorithm on $F$ and $U$ has length at most
+$|C^*| \cdot H(d)$, where $|C^*|$ is the length of $C^*$.
+
+Source: CLRS, third edition, Theorem 35.4. -/
 theorem greedySetCover_approx (F : List (Finset α)) (U : Finset α) {d : ℕ}
     (hd : ∀ S ∈ F, S.card ≤ d) (Cstar : List (Finset α)) (hsub : ∀ S ∈ Cstar, S ∈ F)
     (hcov : ∀ x ∈ U, ∃ S ∈ Cstar, x ∈ S) :
@@ -285,8 +274,13 @@ theorem greedySetCover_approx (F : List (Finset α)) (U : Finset α) {d : ℕ}
   have := List.sum_le_sum this
   simpa [List.sum_replicate, nsmul_eq_mul] using this
 
-/-- The harmonic form of CLRS Corollary 35.5: the greedy cover has at most `H(|U|)` times as
-many sets as any cover of `U` drawn from `F`. -/
+/-- **Harmonic bound in the universe size for greedy set cover.** Let $F$ be a list of finite
+sets, $U$ a finite set, and $H(n) = 1 + \frac12 + \dots + \frac1n$ the $n$-th harmonic number. For
+every list $C^*$ of members of $F$ that together cover $U$, the list of sets returned by the
+greedy set cover algorithm on $F$ and $U$ has length at most $|C^*| \cdot H(|U|)$, where $|C^*|$
+is the length of $C^*$.
+
+Source: CLRS, third edition, Corollary 35.5, in the stronger harmonic form. -/
 theorem greedySetCover_approx_card (F : List (Finset α)) (U : Finset α)
     (Cstar : List (Finset α)) (hsub : ∀ S ∈ Cstar, S ∈ F)
     (hcov : ∀ x ∈ U, ∃ S ∈ Cstar, x ∈ S) :
@@ -297,8 +291,12 @@ theorem greedySetCover_approx_card (F : List (Finset α)) (U : Finset α)
   have := List.sum_le_sum this
   simpa [List.sum_replicate, nsmul_eq_mul] using this
 
-/-- CLRS Corollary 35.5: greedy set cover is an `(ln |U| + 1)`-approximation, via Mathlib's
-`harmonic_le_one_add_log`. -/
+/-- **Greedy set cover is a logarithmic approximation.** Let $F$ be a list of finite sets and $U$
+a finite set. For every list $C^*$ of members of $F$ that together cover $U$, the list of sets
+returned by the greedy set cover algorithm on $F$ and $U$ has length at most
+$|C^*| \cdot (\ln |U| + 1)$, where $|C^*|$ is the length of $C^*$ and $\ln 0 = 0$.
+
+Source: CLRS, third edition, Corollary 35.5, via Mathlib's `harmonic_le_one_add_log`. -/
 theorem greedySetCover_approx_log (F : List (Finset α)) (U : Finset α)
     (Cstar : List (Finset α)) (hsub : ∀ S ∈ Cstar, S ∈ F)
     (hcov : ∀ x ∈ U, ∃ S ∈ Cstar, x ∈ S) :

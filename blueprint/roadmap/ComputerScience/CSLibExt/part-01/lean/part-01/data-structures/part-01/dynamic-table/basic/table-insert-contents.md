@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert_contents
 ---
 
-# Table Insert contents
+# Insertion appends to the contents
 
-The actual inserted payload is appended to the saved logical contents.
+**Insertion appends to the contents.** If $T$ is a well-formed dynamic table and $x$ is an
+item, then the contents of the table obtained by inserting $x$ into $T$ are the contents of $T$
+followed by $x$.
 
 ## Depends on
 
 - [Table](table.md)
 - [Well Formed](well-formed.md)
-- [Contents](contents.md)
+- [Contents of a dynamic table](contents.md)
 - [Table Insert](table-insert.md)
 
 ## Proof depends on

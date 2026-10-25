@@ -12,12 +12,12 @@ lean: Cslib.Language.IsRegular.shuffle
 
 ## Depends on
 
-- [Shuffle](shuffle.md)
+- [Shuffle of two languages](shuffle.md)
 
 ## Proof depends on
 
-- [Is Shuffle](is-shuffle.md)
-- [Shuffle NFA](shuffle-nfa.md)
+- [Shuffle of two words](is-shuffle.md)
+- [Shuffle automaton of two DFAs](shuffle-nfa.md)
 
 ## Sources
 

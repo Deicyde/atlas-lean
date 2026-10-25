@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Language.transitionAccept
 ---
 
-# Transition Accept
+# Accepting transformations of a DFA
 
-The accepting transformations of a DFA are those sending its start state to an accepting
-state.
+**Accepting transformations of a DFA.** For a DFA $M$ with set of states $Q$, start state
+$q_0$ and accepting states $F$, the accepting transformations of $M$ are the state
+transformations $f$ of $Q$ with $f(q_0) \in F$.
 
 ## Depends on
 
-- [State Transformation](../syntactic/state-transformation.md)
+- [State transformation monoid](../syntactic/state-transformation.md)
 
 ## Sources
 

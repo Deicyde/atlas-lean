@@ -21,9 +21,9 @@ word.
 
 - [Domino (Post correspondence problem)](../pcp/domino.md)
 - [The Post correspondence problem](../pcp/pcp.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded grammars as pairs](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 

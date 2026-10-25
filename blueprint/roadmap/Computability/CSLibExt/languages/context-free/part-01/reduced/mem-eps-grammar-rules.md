@@ -6,14 +6,17 @@ proof: formalized
 lean: Cslib.Language.mem_epsGrammar_rules
 ---
 
-# Mem eps Grammar rules
+# Productions of the ε-free grammar
 
-The productions of `epsGrammar`, forward direction.
+**Productions of the ε-free grammar.** Let $g$ be a context-free grammar with a production
+$A \to u$, and let $\alpha$ be a nonempty form obtained from $u$ by deleting some (possibly no)
+occurrences of nullable nonterminals. Then $A \to \alpha$ is a production of the grammar obtained
+from $g$ by eliminating ε-productions.
 
 ## Depends on
 
-- [Eps Grammar](eps-grammar.md)
-- [Nullable Deletions](nullable-deletions.md)
+- [Elimination of $\varepsilon$-productions](eps-grammar.md)
+- [Nullable deletions](nullable-deletions.md)
 
 ## Sources
 

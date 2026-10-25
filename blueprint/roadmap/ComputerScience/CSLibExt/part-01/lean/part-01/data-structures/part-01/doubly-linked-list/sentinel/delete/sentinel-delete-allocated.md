@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelDelete_allocated
 ---
 
-# Sentinel Delete allocated
+# Sentinel deletion preserves allocation
 
-Both writes preserve the allocation status at every address.
+**Sentinel deletion preserves allocation.** Let $S$ be a node store and $x$ an address whose
+cell holds a node with previous address $p$ and next address $n$, where the cells at $p$ and $n$
+are nonempty. For every address $z$, the cell at $z$ after sentinel deletion of $x$ from $S$ is
+nonempty if and only if the cell of $S$ at $z$ is nonempty.
 
 ## Depends on
 
-- [Node](../../basic/node.md)
-- [Sentinel Delete](sentinel-delete.md)
+- [Doubly linked list node](../../basic/node.md)
+- [Deletion from a circular list with a sentinel](sentinel-delete.md)
 
 ## Proof depends on
 
-- [List Delete](../../delete/list-delete.md)
-- [List Delete allocated](../../delete/list-delete-allocated.md)
-- [List Delete ret](../../delete/list-delete-ret.md)
-- [Sentinel Delete ret](sentinel-delete-ret.md)
+- [Deletion from a doubly linked list](../../delete/list-delete.md)
+- [Deletion from a doubly linked list allocates and frees nothing](../../delete/list-delete-allocated.md)
+- [Result of doubly linked list deletion](../../delete/list-delete-ret.md)
+- [The store returned by sentinel deletion](sentinel-delete-ret.md)
 
 ## Sources
 

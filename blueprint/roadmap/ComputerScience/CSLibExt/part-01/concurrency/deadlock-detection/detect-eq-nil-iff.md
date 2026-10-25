@@ -8,21 +8,23 @@ lean: Cslib.Algorithms.Concurrency.DeadlockDetection.State.detect_eq_nil_iff
 
 # No deadlock is reported exactly when all the processes can finish
 
-**No deadlock is reported exactly when all the processes can finish** in
-some order.
+**No deadlock is reported exactly when all the processes can finish.** Let $w$ be the free
+resource vector and let the list of pending processes contain no duplicates. The detection
+algorithm, started with $w$ free, reports no process if and only if some reordering of the pending
+processes is a reduction sequence from $w$.
 
 ## Depends on
 
-- [State](state.md)
-- [Reduces](reduces.md)
+- [Resource-allocation state](state.md)
+- [Reduction sequences](reduces.md)
 - [The detection algorithm](detect.md)
 
 ## Proof depends on
 
-- [Finished](finished.md)
-- [Finished reduces](finished-reduces.md)
+- [The processes the detection algorithm lets finish](finished.md)
+- [The processes the algorithm lets finish form a reduction sequence](finished-reduces.md)
 - [Correctness of deadlock detection](mem-detect-iff.md)
-- [Reduce Aux](reduce-aux.md)
+- [The detection algorithm with fuel](reduce-aux.md)
 
 ## Sources
 

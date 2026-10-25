@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.binomialKernel_one_comp_betaMeasure
 ---
 
-# Binomial Kernel one comp beta Measure
+# Prior predictive probability of a success
 
-The prior predictive probability of a success is the prior mean `a / (a + b)`.
+**Prior predictive probability of a success.** Let $a, b > 0$ be real. Under a
+$\mathrm{Beta}(a, b)$ prior on the success probability, the probability that a single trial of the
+binomial kernel succeeds is the prior mean $a / (a + b)$.
 
 ## Depends on
 
-- [Binomial Kernel](binomial-kernel.md)
+- [Binomial likelihood kernel](binomial-kernel.md)
 
 ## Proof depends on
 
-- [Beta add one left](beta-add-one-left.md)
+- [Recurrence for the beta function in the first argument](beta-add-one-left.md)
 - [The beta-binomial distribution](binomial-kernel-comp-beta-measure.md)
 
 ## Sources

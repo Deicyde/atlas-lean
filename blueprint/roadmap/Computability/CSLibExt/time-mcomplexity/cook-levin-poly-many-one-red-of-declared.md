@@ -6,33 +6,35 @@ proof: formalized
 lean: Cslib.TimeMComplexity.cookLevinPolyManyOneRed_of_declared
 ---
 
-# Cook Levin Poly Many One Red of declared
+# From declared-time to polynomial-time many-one reductions
 
-Repackaging for the canonical many-one reduction: a declared
-`TimeM` reduction whose computed function is polynomial-time in the
-canonical TM2 sense is a `Cslib.CookLevin.PolyManyOneRed`. As in
-`mem_P_of_decides`, the `IsPolyTime` hypothesis must be proved
-independently for the specific reduction; it does not follow from
-`ComputesInDeclaredPolyTime`.
+**From declared-time to polynomial-time many-one reductions.** Let $L_1$ and $L_2$ be decision
+problems and let $f$ be a declared-time many-one reduction from $L_1$ to $L_2$. If the function
+sending $x$ to the output of $f$ on $x$ is polynomial-time computable by a Turing machine for the
+canonical bitstring encodings, then $L_1$ reduces to $L_2$ by a polynomial-time many-one
+reduction.
+
+The polynomial-time hypothesis must be proved separately for $f$; it does not follow from the
+declared-time bound.
 
 ## Depends on
 
 - [Polynomial-time many-one reduction](../cook-levin/poly-many-one-red.md)
-- [Declared Poly Many One Red Via](declared-poly-many-one-red-via.md)
-- [Bitstring Encoding](../../MathlibExt/complexity/bitstring-encoding.md)
-- [Bit Decode](../../MathlibExt/complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../MathlibExt/complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../MathlibExt/complexity/bit-encode.md)
-- [Delimit](../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../MathlibExt/complexity/undelimit.md)
-- [Undelimit Blocks](../../MathlibExt/complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
-- [Is Poly Time](../../MathlibExt/complexity/is-poly-time.md)
+- [Declared-time many-one reduction by a timed function](declared-poly-many-one-red-via.md)
+- [Bitstring encodings](../../MathlibExt/complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../MathlibExt/complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../MathlibExt/complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../MathlibExt/complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../MathlibExt/complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Decision problems](../../MathlibExt/complexity/decision-problem.md)
+- [Polynomial-time computable functions](../../MathlibExt/complexity/is-poly-time.md)
 
 ## Proof depends on
 
-- [Computes In Declared Poly Time](computes-in-declared-poly-time.md)
+- [Declared polynomial time for timed functions on bitstrings](computes-in-declared-poly-time.md)
 
 ## Sources
 

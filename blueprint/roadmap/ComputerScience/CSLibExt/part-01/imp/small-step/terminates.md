@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.IMP.Terminates
 ---
 
-# Terminates
+# Termination of an IMP command
 
-A command terminates by reaching `skip` in a final state.
+**Termination of an IMP command.** A command $c$ terminates from an initial state $\sigma$
+in a final state $\tau$ when the configuration $(c, \sigma)$ reaches $(\mathtt{skip}, \tau)$ in
+finitely many small steps.
 
 ## Depends on
 
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [Steps](steps.md)
+- [IMP multi-step relation](steps.md)
 
 ## Sources
 

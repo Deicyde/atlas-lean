@@ -37,25 +37,25 @@ $s$ is the slot code of the sign of literal $l$.
 - [Empty scratch counters](rest.md)
 - [Prog](prog.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
-- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Proof depends on
 
 - [Gap emission in the counter view](../counter-view/gap-s.md)
 - [Loop phases of the initial-row generator](ph.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
-- [Add U](../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Copy run](../../../../MathlibExt/turing-machine/program/copy-run.md)
-- [Emit](../../../../MathlibExt/turing-machine/program/emit.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Push List](../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
+- [Adding units to target stacks](../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Copying a counter through a scratch stack](../../../../MathlibExt/turing-machine/program/copy-run.md)
+- [Pushing a constant list](../../../../MathlibExt/turing-machine/program/emit.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Pushing a list of symbols onto one stack](../../../../MathlibExt/turing-machine/program/push-list.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer run](../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Running a counter transfer](../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

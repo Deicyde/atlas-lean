@@ -7,19 +7,23 @@ lean: Cslib.Turing.Universal.Diag.Readout.polyTime
 
 # The readout in polynomial time
 
-**The readout in polynomial time.** A `FinTM2` reads `encOut o` and writes the bit
-`diagAnswer o`.
+**The readout in polynomial time.** A finite multi-stack Turing machine, given the output
+encoding $\mathrm{encOut}(o)$ of a result $o$ of the clocked universal function (a list of
+symbols, or a timeout), outputs the one-bit list $[\mathrm{diagAnswer}(o)]$ within a number
+of steps polynomial in the length of $\mathrm{encOut}(o)$. Here $\mathrm{diagAnswer}(o)$ is
+$\mathrm{true}$ unless $o$ is a halt whose output is the single symbol of the bit
+$\mathrm{true}$.
 
 ## Depends on
 
-- [Enc Out](../clocked/enc-out.md)
-- [Diag Answer](diag-answer.md)
+- [Output encoding of the clocked universal machine](../clocked/enc-out.md)
+- [The diagonal answer](diag-answer.md)
 
 ## Proof depends on
 
 - [Bits Poly Time](bits-poly-time.md)
-- [Bit Sym](../code/bit-sym.md)
-- [Diag Answer eq decide enc Out](diag-answer-eq-decide-enc-out.md)
+- [Symbol of an input bit](../code/bit-sym.md)
+- [The diagonal answer read from the encoded output](diag-answer-eq-decide-enc-out.md)
 
 ## Sources
 

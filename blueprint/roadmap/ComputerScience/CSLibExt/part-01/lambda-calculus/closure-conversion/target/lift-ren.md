@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.Target.Tm.liftRen
 ---
 
-# Lift Ren
+# Lifting a renaming under a binder
 
-Extend a renaming under one binder.
+**Lifting a renaming under a binder.** The lift $r^{\uparrow}$ of a renaming
+$r : \mathbb{N} \to \mathbb{N}$ of de Bruijn indices sends $0$ to $0$ and $i + 1$ to $r(i) + 1$.
 
 ## Depends on
 

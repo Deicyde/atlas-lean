@@ -23,7 +23,7 @@ the rejecting label with internal value true and the stacks $S$ unchanged.
 ## Proof depends on
 
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Bit on top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

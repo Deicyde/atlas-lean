@@ -6,28 +6,30 @@ proof: formalized
 lean: Cslib.IMP.HSteps.toHeap_of_steps
 ---
 
-# To Heap of steps
+# Plain executions lift to the heap language
 
-A plain execution lifts to an execution of the embedded command at
-any heap, unchanged.
+**Plain executions lift to the heap language.** Let $c, c_2$ be plain IMP commands, $s, s_2$
+stores and $h$ a heap, and write $\overline{d}$ for the embedding of a plain command $d$ into the
+heap language. If $(c, s)$ reaches $(c_2, s_2)$ in zero or more plain small steps, then
+$(\overline{c}, s, h)$ reaches $(\overline{c_2}, s_2, h)$ in zero or more heap steps.
 
 ## Depends on
 
-- [Cmd](../syntax/cmd.md)
-- [To Heap](to-heap.md)
-- [HSteps](hsteps.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Embedding of IMP into the heap language](to-heap.md)
+- [Multi-step heap execution](hsteps.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](heap-cmd.md)
-- [State](../syntax/state.md)
-- [Steps](../small-step/steps.md)
+- [Heap commands](heap-cmd.md)
+- [IMP program states](../syntax/state.md)
+- [IMP multi-step relation](../small-step/steps.md)
 
 ## Proof depends on
 
-- [Config](../small-step/config.md)
-- [HConfig](hconfig.md)
-- [HStep](hstep.md)
-- [To Heap iff](to-heap-iff.md)
-- [Step](../small-step/step.md)
+- [IMP configuration](../small-step/config.md)
+- [Heap configurations](hconfig.md)
+- [Small-step semantics of heap commands](hstep.md)
+- [Heap steps of embedded commands are plain steps](to-heap-iff.md)
+- [IMP small-step relation](../small-step/step.md)
 
 ## Sources
 

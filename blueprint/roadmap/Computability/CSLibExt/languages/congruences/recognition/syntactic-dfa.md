@@ -5,11 +5,15 @@ statement: formalized
 lean: Cslib.Language.syntacticDFA
 ---
 
-# Syntactic DFA
+# The syntactic DFA
 
-The DFA whose states are syntactic classes and whose transitions multiply by letter
-classes.  It is the direct automata-theoretic presentation of the canonical syntactic
-recognizer.
+**The syntactic DFA.** Let $L$ be a language over an alphabet $\Sigma$. The syntactic DFA of
+$L$ has the syntactic monoid of $L$ as its set of states, the identity $1$ as start state, and
+the syntactic classes of the words of $L$ as accepting states; from a state $q$, reading a
+letter $a \in \Sigma$ leads to $q \cdot [a]$, where $[a]$ is the syntactic class of the
+one-letter word $a$.
+
+It is the direct automata-theoretic presentation of the canonical syntactic recognizer.
 
 ## Depends on
 
@@ -17,9 +21,9 @@ recognizer.
 
 ## Proof depends on
 
-- [Syntactic Accept](../syntactic/syntactic-accept.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
-- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
+- [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
+- [Syntactic morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

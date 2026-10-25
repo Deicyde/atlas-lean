@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.flattenAux_eq
 ---
 
-# Flatten Aux eq
+# The accumulating B-tree flattening is correct
 
-`flattenAux` prepends the flattening of its tree to the suffix.
+**The accumulating B-tree flattening is correct.** For every raw B-tree $T$ and every list
+$s$, the accumulating flattening of $T$ with suffix $s$ equals the inorder flattening of $T$
+followed by $s$.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Flatten](flatten.md)
-- [Flatten Aux](flatten-aux.md)
+- [Raw B-trees](btree.md)
+- [Inorder flattening of a B-tree](flatten.md)
+- [Accumulating flattening of a B-tree](flatten-aux.md)
 
 ## Sources
 

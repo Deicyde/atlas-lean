@@ -23,7 +23,7 @@ concatenation $L_1 L_2$, the set of words $uv$ with $u \in L_1$ and $v \in L_2$.
 - [Membership in a concatenation of languages](mem-mul-iff-exists-append.md)
 - [Splits of a word](splits.md)
 - [Multi-stack recognizable predicates are exactly the r.e. predicates](../basic/tm2-recognizable-iff-re-pred.md)
-- [Dovetailing](../../../../MathlibExt/re/exists-mem.md)
+- [Bounded existential quantification preserves recursive enumerability](../../../../MathlibExt/re/exists-mem.md)
 
 ## Sources
 

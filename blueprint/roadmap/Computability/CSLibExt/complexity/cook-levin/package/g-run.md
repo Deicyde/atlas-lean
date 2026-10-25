@@ -25,7 +25,7 @@ No assumption on the verifier data is needed.
 - [The reduction machine](g-tm.md)
 - [The formula emitted on a raw input](phi-of.md)
 - [Encoding data for a finite TM2 machine](../situation/part-01/enc.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -89,7 +89,7 @@ No assumption on the verifier data is needed.
 - [Stack heights along a run](../situation/part-05/run-i-height.md)
 - [The idle-extended run follows the real run](../situation/part-08/run-i-of-iterate.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

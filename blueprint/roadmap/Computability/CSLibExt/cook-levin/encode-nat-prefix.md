@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Delimit](../../MathlibExt/complexity/delimit.md)
+- [Self-delimiting form of a bitstring](../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

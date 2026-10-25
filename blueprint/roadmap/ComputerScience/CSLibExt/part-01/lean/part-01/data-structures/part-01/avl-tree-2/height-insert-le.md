@@ -7,22 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.height_insert_le
 ---
 
-# Height insert le
+# Upper bound on height after AVL insertion
 
-Insertion increases the cached height by at most one.
+**Upper bound on height after AVL insertion.** For a linearly ordered type $\alpha$, if a tree
+$t$ has correct cached heights at every node, then for every key $x$ the cached height of the
+tree obtained by inserting $x$ into $t$ is at most the cached height of $t$ plus one.
 
 ## Depends on
 
-- [Cache Correct](cache-correct.md)
-- [Tree](tree.md)
-- [Height](height.md)
-- [Insert](insert.md)
+- [Correct cached heights](cache-correct.md)
+- [Binary trees with cached heights](tree.md)
+- [Cached height of an AVL tree](height.md)
+- [Insertion into an AVL tree](insert.md)
 
 ## Proof depends on
 
-- [Balance](balance.md)
-- [Cache Correct insert](cache-correct-insert.md)
-- [Height balance le](height-balance-le.md)
+- [AVL rebalancing](balance.md)
+- [AVL insertion preserves cached heights](cache-correct-insert.md)
+- [Upper bound on height after AVL rebalancing](height-balance-le.md)
 
 ## Sources
 

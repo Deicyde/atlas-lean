@@ -7,22 +7,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.flatten_deleteRebuild
 ---
 
-# Flatten delete Rebuild
+# Flattening after rebuilding deletion
 
-The flattening of a deletion is the erasure of the key from the flattening
-of the original tree. Orderedness is the side condition; no occupancy
-hypothesis on the input beyond `2 ≤ t` is needed.
+**Flattening after rebuilding deletion.** Let $t \ge 2$, let $T$ be an ordered tree and let
+$x$ be a key. The flattening of the rebuilding deletion of $x$ from $T$ with minimum degree $t$
+is the flattening of $T$ with the first occurrence of $x$ removed (unchanged if $x$ does not
+occur).
+
+No occupancy hypothesis on $T$ is needed.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Ordered](../../btree-2/ordered.md)
-- [Delete Rebuild](delete-rebuild.md)
-- [Flatten](../../btree-2/flatten.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [Ordered B-tree](../../btree-2/ordered.md)
+- [B-tree deletion by rebuilding](delete-rebuild.md)
+- [Inorder flattening of a B-tree](../../btree-2/flatten.md)
 
 ## Proof depends on
 
-- [Flatten from List of pairwise](flatten-from-list-of-pairwise.md)
+- [Building a B-tree from a strictly increasing list](flatten-from-list-of-pairwise.md)
 
 ## Sources
 

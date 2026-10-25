@@ -14,8 +14,8 @@ is infinite.
 
 ## Depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 - [Pumping bound of an encoded grammar](pump-bound.md)
 
 ## Proof depends on

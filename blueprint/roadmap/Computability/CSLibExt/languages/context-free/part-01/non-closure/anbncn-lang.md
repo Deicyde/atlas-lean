@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Language.anbncnLang
 ---
 
-# Anbncn Lang
+# The language $a^n b^n c^n$
 
-The language of words `a^n b^n c^n` over the alphabet `Fin 3`
-(with `0, 1, 2` for `a, b, c`).
+**The language $a^n b^n c^n$.** Over the three-letter alphabet $\{a, b, c\}$ (the letters
+$0, 1, 2$), this is the language of the words $a^n b^n c^n$ for $n \in \mathbb{N}$: $n$ copies of
+$a$, then $n$ copies of $b$, then $n$ copies of $c$.
 
 ## Depends on
 

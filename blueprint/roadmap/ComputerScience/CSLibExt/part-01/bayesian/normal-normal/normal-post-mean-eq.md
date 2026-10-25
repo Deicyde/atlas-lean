@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.normalPostMean_eq
 ---
 
-# Normal Post Mean eq
+# Posterior mean as a gain update
 
-The posterior mean moves from the prior mean toward the observation by the gain
-`v₀ / (v₀ + v)`.
+**Posterior mean as a gain update.** Let $m_0, x \in \mathbb{R}$, $v_0 > 0$ and $v \ge 0$. The
+posterior mean $(v m_0 + v_0 x)/(v_0 + v)$ equals $m_0 + \frac{v_0}{v_0 + v}(x - m_0)$: it moves
+from the prior mean $m_0$ toward the observation $x$ by the gain $v_0/(v_0 + v)$.
 
 ## Depends on
 
-- [Normal Post Mean](normal-post-mean.md)
+- [Posterior mean of the Normal–Normal model](normal-post-mean.md)
 
 ## Sources
 

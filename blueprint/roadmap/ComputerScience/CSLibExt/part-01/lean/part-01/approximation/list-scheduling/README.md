@@ -4,38 +4,30 @@ navigation: module
 
 # List Scheduling
 
-- [Is Schedule Of](is-schedule-of.md)
+- [Schedule of a list of jobs](is-schedule-of.md)
 - [Makespan](makespan.md)
-- [Least Loaded](least-loaded.md)
-- [List Schedule Scan](list-schedule-scan.md)
-- [List Schedule](list-schedule.md)
-- [Lpt](lpt.md)
-
-## Schedules
-
-- [Is Schedule Of nil](is-schedule-of-nil.md)
-- [Le makespan](le-makespan.md)
-- [Sum le](sum-le.md)
+- [Least-loaded machine](least-loaded.md)
+- [List scheduling from an intermediate state](list-schedule-scan.md)
+- [Graham's list scheduling](list-schedule.md)
+- [The empty schedule](is-schedule-of-nil.md)
+- [Every job is at most the makespan](le-makespan.md)
+- [Total work is at most $m$ times the makespan](sum-le.md)
 
 ## The scan invariant
 
-- [Scan Inv](scan-inv.md)
-- [List Schedule Scan bound](list-schedule-scan-bound.md)
-- [Mul least Loaded le](mul-least-loaded-le.md)
+- [List-scheduling state invariant](scan-inv.md)
+- [Invariant bound for list scheduling](list-schedule-scan-bound.md)
+- [A least-loaded machine carries at most the average load](mul-least-loaded-le.md)
 
 ## Graham's bound for list scheduling
 
-- [List Schedule approx](list-schedule-approx.md)
+- [Graham's bound for list scheduling](list-schedule-approx.md)
 
 ## Graham's bound for LPT
 
-- [Two mul le of loads gt](two-mul-le-of-loads-gt.md)
-- [Count P add count P le](count-p-add-count-p-le.md)
-- [Lpt step le](lpt-step-le.md)
-- [Lpt approx](lpt-approx.md)
-
-## Validity and cost
-
-- [List Schedule is Schedule Of](list-schedule-is-schedule-of.md)
-- [List Schedule time](list-schedule-time.md)
-- [Lpt time le](lpt-time-le.md)
+- [Counting jobs when every machine is heavily loaded](two-mul-le-of-loads-gt.md)
+- [At most two long jobs per machine](count-p-add-count-p-le.md)
+- [The LPT placement step](lpt-step-le.md)
+- [List scheduling schedules every job](list-schedule-is-schedule-of.md)
+- [Running time of list scheduling](list-schedule-time.md)
+- [Running time of LPT](lpt-time-le.md)

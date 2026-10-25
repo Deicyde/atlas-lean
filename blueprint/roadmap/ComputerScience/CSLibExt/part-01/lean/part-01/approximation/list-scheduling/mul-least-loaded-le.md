@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Scheduling.mul_leastLoaded_le
 ---
 
-# Mul least Loaded le
+# A least-loaded machine carries at most the average load
 
-The averaging step: a least-loaded machine has at most the average load.
+**A least-loaded machine carries at most the average load.** Let $\sigma$ be a schedule of a
+list $P$ of jobs on $m \ge 1$ machines, with load $\ell_i$ on machine $i$. Then $m$ times the load
+of a least-loaded machine is at most the total processing time $T$ of the jobs in $P$, counted
+with multiplicity: $m \min_i \ell_i \le T$.
 
 ## Depends on
 
-- [Scan Inv](scan-inv.md)
-- [Least Loaded](least-loaded.md)
+- [List-scheduling state invariant](scan-inv.md)
+- [Least-loaded machine](least-loaded.md)
 
 ## Proof depends on
 
-- [Is Schedule Of](is-schedule-of.md)
+- [Schedule of a list of jobs](is-schedule-of.md)
 
 ## Sources
 

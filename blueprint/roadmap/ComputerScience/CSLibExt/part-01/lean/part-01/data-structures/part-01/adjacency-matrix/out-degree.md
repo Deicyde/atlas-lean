@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.outDegree
 ---
 
-# Out Degree
+# Out-degree
 
-The out-degree of a vertex: the number of its out-neighbors.
+**Out-degree.** The out-degree of a vertex $i$ of a directed graph given by an adjacency
+matrix is the number of its out-neighbors, that is, the number of vertices $j$ such that there is
+an edge from $i$ to $j$.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
+- [Adjacency matrix](adjacency-matrix.md)
 
 ## Proof depends on
 
-- [Neighbors](neighbors.md)
+- [Out-neighbor list](neighbors.md)
 
 ## Sources
 

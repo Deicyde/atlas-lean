@@ -15,12 +15,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [FΓ](f.md)
-- [FΛ](f-2.md)
-- [Phase](phase.md)
-- [Fintype K'](fintype-k.md)
-- [Fwd Prog](fwd-prog.md)
-- [Supp](supp.md)
+- [Stack alphabets of the wrapped machine](f.md)
+- [Labels of the wrapped machine](f-2.md)
+- [Adapter labels](phase.md)
+- [The stack set $K'$ is finite](fintype-k.md)
+- [The program of the wrapped machine](fwd-prog.md)
+- [Support of a code](supp.md)
 
 ## Sources
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.HindleyMilner.Scheme.inst
 ---
 
-# Inst
+# Instantiation of a type scheme
 
-Instantiate the bound variable `i` of a scheme by `ts i`.
+**Instantiation of a type scheme.** Given monotypes $(t_i)_{i \in \mathbb{N}}$, the instance of
+a scheme $\sigma$ at $(t_i)$ is the monotype obtained from $\sigma$ by replacing each bound
+variable $i$ by $t_i$, keeping its free type variables and base types unchanged.
 
 ## Depends on
 
-- [Scheme](scheme.md)
-- [Ty](ty.md)
+- [Type schemes](scheme.md)
+- [Monotypes](ty.md)
 
 ## Proof depends on
 
-- [Eval](eval.md)
+- [Evaluation of a type scheme](eval.md)
 - [Term](../../../../part-02/unification/basic/term.md)
 
 ## Sources

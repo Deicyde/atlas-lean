@@ -106,7 +106,8 @@ private theorem dfaGrammar_language (M : DFA T σ) [Fintype σ] [Fintype T] :
     apply (ContextFreeGrammar.mem_language_iff _ _).mpr
     exact derives_dfaGrammar M M.start w hw
 
-/-- Over a finite alphabet, every regular language is context-free.
+/-- **Regular languages over a finite alphabet are context-free.** Over a finite alphabet,
+every regular language is context-free.
 
 Finiteness of the alphabet is necessary: a grammar has finitely many
 productions, hence mentions only finitely many terminal symbols, but a DFA

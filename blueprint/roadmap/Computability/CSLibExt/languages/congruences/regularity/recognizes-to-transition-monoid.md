@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Language.recognizes_toTransitionMonoid
 ---
 
-# Recognizes to Transition Monoid
+# The transition monoid recognizes the accepted language
 
-The transition-monoid image recognizes the same language as the ambient transformation
-monoid.
+**The transition monoid recognizes the accepted language.** Let $M$ be a DFA with start
+state $q_0$ and accepting states $F$. The map sending each word to the element of the transition
+monoid of $M$ that it induces recognizes the language accepted by $M$, with accepting set the
+elements $f$ of the transition monoid such that $f(q_0) \in F$: a word is accepted by $M$ exactly
+when the transformation it induces sends $q_0$ into $F$.
 
 ## Depends on
 
-- [Recognizes](../recognition/recognizes.md)
-- [State Transformation](../syntactic/state-transformation.md)
-- [Transition Monoid](../syntactic/transition-monoid.md)
-- [Transition Accept](transition-accept.md)
-- [Transition Morphism](../syntactic/transition-morphism.md)
+- [Recognition of a language by a monoid morphism](../recognition/recognizes.md)
+- [State transformation monoid](../syntactic/state-transformation.md)
+- [Transition monoid of a DFA](../syntactic/transition-monoid.md)
+- [Accepting transformations of a DFA](transition-accept.md)
+- [Transition morphism of a DFA](../syntactic/transition-morphism.md)
 
 ## Proof depends on
 
-- [Recognizes transition Accept](recognizes-transition-accept.md)
+- [The transition morphism recognizes through accepting transformations](recognizes-transition-accept.md)
 
 ## Sources
 

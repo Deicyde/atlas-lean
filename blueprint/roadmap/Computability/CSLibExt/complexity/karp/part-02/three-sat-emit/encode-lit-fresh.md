@@ -17,13 +17,13 @@ $\mathrm{true}, \mathrm{true}, \mathrm{false}, b$.
 
 - [Fresh variable indices](../three-sat/fresh.md)
 - [Binary code of a literal](../../../../cook-levin/encode-lit.md)
-- [Rep](../../../../../MathlibExt/turing-machine/program/rep.md)
+- [Repeated block](../../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Proof depends on
 
 - [Binary representation of a fresh name](encode-nat-fresh.md)
 - [Prefix-free code of a natural number](../../../../cook-levin/encode-nat-prefix.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.hasEdge
 ---
 
-# Has Edge
+# Edge query of an adjacency matrix
 
-Whether there is a directed edge from `i` to `j`.
+**Edge query of an adjacency matrix.** For an adjacency matrix $m$ on the vertex set
+$\{0, \dots, n-1\}$ and vertices $i, j$, the edge query of $m$ at $(i, j)$ is the Boolean value
+that is true exactly when $m$ has a directed edge from $i$ to $j$.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
+- [Adjacency matrix](adjacency-matrix.md)
 
 ## Sources
 

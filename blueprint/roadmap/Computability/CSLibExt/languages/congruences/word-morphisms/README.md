@@ -4,12 +4,12 @@ navigation: module
 
 # Word Morphisms
 
-- [Word Morphism Preimage](word-morphism-preimage.md)
-- [To List word Morphism of List](to-list-word-morphism-of-list.md)
-- [Word Morphism Preimage eq flatten](word-morphism-preimage-eq-flatten.md)
-- [Word Morphism Recognizer](word-morphism-recognizer.md)
-- [Syntactic Rel word Morphism Preimage of map](syntactic-rel-word-morphism-preimage-of.md)
-- [Word Morphism Preimage To Syntactic](word-morphism-preimage-to-syntactic.md)
-- [Finite syntactic Monoid word Morphism Preimage](finite-syntactic-monoid-word-morphism-pr.md)
-- [Word Morphism Preimage](word-morphism-preimage-2.md)
-- [Alphabet Preimage eq word Morphism Preimage](alphabet-preimage-eq-word-morphism-preim.md)
+- [Inverse image under a word morphism](word-morphism-preimage.md)
+- [Word morphisms act letter by letter](to-list-word-morphism-of-list.md)
+- [Letterwise description of the inverse image under a word morphism](word-morphism-preimage-eq-flatten.md)
+- [Recognizing morphism of an inverse image](word-morphism-recognizer.md)
+- [Syntactic equivalence pulls back along a word morphism](syntactic-rel-word-morphism-preimage-of.md)
+- [Division map for the syntactic monoid of an inverse image](word-morphism-preimage-to-syntactic.md)
+- [Inverse images under word morphisms preserve finiteness of the syntactic monoid](finite-syntactic-monoid-word-morphism-pr.md)
+- [Regular languages are closed under inverse word morphisms](word-morphism-preimage-2.md)
+- [Alphabet preimages are inverse images under word morphisms](alphabet-preimage-eq-word-morphism-preim.md)

@@ -12,14 +12,14 @@ The input tape of a word of non-blank symbols reads as the `TM0` input tape of t
 
 ## Depends on
 
-- [Non Blank](non-blank.md)
-- [To Tape](to-tape.md)
+- [Non-blank symbols](non-blank.md)
+- [Post–Turing reading of a tape over the non-blank symbols](to-tape.md)
 
 ## Proof depends on
 
-- [To Tape](../tape-view/to-tape.md)
-- [To Tape mk₁](../tape-view/to-tape-mk.md)
-- [Cell Symbol](cell-symbol.md)
+- [Cell view of a two-way tape](../tape-view/to-tape.md)
+- [The cell view of an input tape](../tape-view/to-tape-mk.md)
+- [Cell symbol](cell-symbol.md)
 
 ## Sources
 

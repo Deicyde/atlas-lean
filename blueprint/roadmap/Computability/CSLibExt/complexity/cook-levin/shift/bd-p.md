@@ -42,10 +42,10 @@ true, and of the overflow loop otherwise.
 - [Stages of the cell-shift literal routine](ls.md)
 - [Setup and loop stages of a cell-shift block](st.md)
 - [Literal routine of the cell-shift generator](lit-p.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer E](../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Draining a counter while prepending a block](../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

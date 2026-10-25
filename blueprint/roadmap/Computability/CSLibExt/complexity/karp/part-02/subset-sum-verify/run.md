@@ -22,7 +22,7 @@ if the SUBSET-SUM check accepts $(x, w)$, and with label $\mathsf{no}$ otherwise
 - [The SUBSET-SUM verifier](ss-check.md)
 - [Start state of the SUBSET-SUM verifier](start.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -43,9 +43,9 @@ if the SUBSET-SUM check accepts $(x, w)$, and with label $\mathsf{no}$ otherwise
 - [Decoding a prefix-coded natural number](../../../../cook-levin/decode-nat-prefix.md)
 - [Prefix-free code of a natural number](../../../../cook-levin/encode-nat-prefix.md)
 - [Parsing a self-delimiting block](../../../../cook-levin/undelimit-eq-some-iff.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../../../MathlibExt/complexity/undelimit.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

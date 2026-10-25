@@ -24,7 +24,7 @@ concatenations $u_1 \cdots u_k$ with $k \ge 0$ and $u_1, \dots, u_k \in L$.
 - [Extending a list of pieces by a letter](extend-partitions.md)
 - [Partitions of a word into nonempty factors](partitions.md)
 - [Multi-stack decidable predicates are exactly the computable predicates](../basic/tm2-decidable-iff-computable-pred.md)
-- [Computable list any](../../../../MathlibExt/re/computable-list-any.md)
+- [Searching a computable list with a computable test is computable](../../../../MathlibExt/re/computable-list-any.md)
 
 ## Sources
 

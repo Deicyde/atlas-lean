@@ -38,11 +38,11 @@ label $\mathsf{rej}$ within $|r| + 2$ steps.
 - [One step to rejection](rej-one.md)
 - [Decoding a prefix-coded natural number](../../cook-levin/decode-nat-prefix.md)
 - [Parsing a self-delimiting block](../../cook-levin/undelimit-eq-some-iff.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
-- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Bit on top of a stack](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

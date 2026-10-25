@@ -16,8 +16,8 @@ $T$ if and only if the regularity grammar of $g$ generates a regular language.
 
 - [Alphabet of the reduction from universality to regularity](letter.md)
 - [Grammar of the reduction from universality to regularity](reg-grammar.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 

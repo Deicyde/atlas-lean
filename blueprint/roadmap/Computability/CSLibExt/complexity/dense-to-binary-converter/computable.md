@@ -30,9 +30,9 @@ the dense-to-binary translation of $w$ on its output stack and all other stacks 
 - [The dense-to-binary converter program](prog.md)
 - [Stack contents of the converter](stk-2.md)
 - [The dense-to-binary machine](tm.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Rep](../../../MathlibExt/turing-machine/program/rep.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Repeated block](../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

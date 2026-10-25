@@ -6,10 +6,13 @@ proof: formalized
 lean: Cslib.CookLevin.sum_length_le_encodeCNF_length
 ---
 
-# Sum length le encode CNF length
+# The literal count is at most the code length
 
-The total literal count is bounded by the encoding length: each
-encoded clause contributes at least its literal count.
+**The literal count is at most the code length.** For every CNF formula $\varphi$, the sum
+over the clauses of $\varphi$ of their lengths (the total number of literals of $\varphi$) is at
+most the length of the length-prefixed binary code of $\varphi$.
+
+Each encoded clause contributes at least its literal count.
 
 ## Depends on
 
@@ -22,7 +25,7 @@ encoded clause contributes at least its literal count.
 - [Binary code of a literal](../cook-levin/encode-lit.md)
 - [Prefix-free code of a natural number](../cook-levin/encode-nat-prefix.md)
 - [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Delimit](../../MathlibExt/complexity/delimit.md)
+- [Self-delimiting form of a bitstring](../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

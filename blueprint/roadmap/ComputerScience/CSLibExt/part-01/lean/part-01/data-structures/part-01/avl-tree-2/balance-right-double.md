@@ -7,17 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.balance_right_double
 ---
 
-# Balance right double
+# Right-left double rotation in AVL rebalancing
 
-Right-heavy with a left-heavy right child: `balance` performs the
-right-left double rotation.
+**Right-left double rotation in AVL rebalancing.** Write $h(T)$ for the cached height at the
+root of a tree $T$ (zero for the empty tree), $\langle c; A, y, B \rangle$ for the node with
+cached height $c$, left subtree $A$, key $y$ and right subtree $B$, and $N(A, y, B)$ for the node
+$\langle \max(h(A), h(B)) + 1; A, y, B \rangle$. Let $L$, $A$, $B$, $C$ be trees with cached
+heights, let $x$, $y$, $z$ be keys and let $c$, $c'$ be natural numbers. If $h(L) + 1 < c$ and
+$h(C) < c'$, then $\mathrm{balance}(L, x, \langle c; \langle c'; A, z, B \rangle, y, C \rangle) =
+N(N(L, x, A), z, N(B, y, C))$.
 
 ## Depends on
 
-- [Tree](tree.md)
-- [Balance](balance.md)
-- [Height](height.md)
-- [Mk Node](mk-node.md)
+- [Binary trees with cached heights](tree.md)
+- [AVL rebalancing](balance.md)
+- [Cached height of an AVL tree](height.md)
+- [AVL node with computed height](mk-node.md)
 
 ## Sources
 

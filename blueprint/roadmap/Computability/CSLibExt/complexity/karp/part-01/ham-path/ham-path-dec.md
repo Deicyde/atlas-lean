@@ -13,7 +13,7 @@ $0, \dots, n - 1$ with edge list $E$, and this digraph has a Hamiltonian path fr
 
 ## Depends on
 
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 

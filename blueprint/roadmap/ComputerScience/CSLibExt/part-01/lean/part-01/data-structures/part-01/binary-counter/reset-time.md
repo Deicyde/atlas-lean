@@ -13,7 +13,7 @@ The exact reset charge is the number of set input bits.
 
 ## Depends on
 
-- [Reset](reset.md)
+- [Resetting a binary counter](reset.md)
 
 ## Sources
 

@@ -32,7 +32,7 @@ the $i$-th bit of $w$, or with no value when $w$ has fewer than $i$ bits.
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
 - [Binary code of a literal](../../cook-levin/encode-lit.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -42,9 +42,9 @@ the $i$-th bit of $w$, or with no value when $w$ has fewer than $i$ bits.
 - [Symbols of a table entry](../sat-verifier-spec/ent-toks.md)
 - [Tokens of a literal](../sat-verifier-spec/lit-toks.md)
 - [Prefix-free code of a natural number](../../cook-levin/encode-nat-prefix.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

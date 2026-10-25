@@ -49,7 +49,7 @@ clause over $V$ variables whose literals are the in-range shift literals for $(t
 - [The cell-shift generator](prog.md)
 - [Literals of an in-range shift clause](sh-lits.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -68,8 +68,8 @@ clause over $V$ variables whose literals are the in-range shift literals for $(t
 - [Literals of a clause kind at given positions](clits.md)
 - [Constant offset of a literal in a block](csv.md)
 - [Literal positions of an in-range shift clause](sh-pos.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

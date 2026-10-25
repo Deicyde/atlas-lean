@@ -33,7 +33,7 @@ reverse of $D$ followed by $e$, and counts $c$ and $n$.
 - [Bits pushed by a walk of the CLIQUE emitter](walk-bits.md)
 - [Stack alphabets of the CLIQUE emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -42,8 +42,8 @@ reverse of $D$ followed by $e$, and counts $c$ and $n$.
 - [Moving a walked name from $D$ to $E$](mv-n-run.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [The binary code of natural numbers is injective](../../../sat-verifier-spec/encode-nat-inj.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.listInsert_allocated
 ---
 
-# List Insert allocated
+# Doubly-linked-list insertion neither allocates nor frees cells
 
-Allocation is preserved at every cell, including overlapping write targets.
+**Doubly-linked-list insertion neither allocates nor frees cells.** For a store $S$ and
+allocated cells $x$ and $y$ such that the successor of $y$ in $S$, if any, is allocated, every
+cell $z$ of the store returned by inserting $x$ after $y$ is allocated if and only if cell $z$ of
+$S$ is allocated. No distinctness of $x$, $y$ and the successor of $y$ is assumed.
 
 ## Depends on
 
-- [Node](../basic/node.md)
-- [List Insert](list-insert.md)
+- [Doubly linked list node](../basic/node.md)
+- [Doubly-linked-list insertion (LIST-INSERT)](list-insert.md)
 
 ## Proof depends on
 
-- [List Insert get](list-insert-get.md)
+- [Cells after doubly-linked-list insertion](list-insert-get.md)
 
 ## Sources
 

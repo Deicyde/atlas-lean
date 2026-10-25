@@ -22,7 +22,7 @@ label whatever color it moves.
 - [Moving one color code in the 3-COLOR verifier](mv-p.md)
 - [One step of the joint walk of the 3-COLOR verifier](walk-s.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

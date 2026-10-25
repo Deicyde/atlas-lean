@@ -37,8 +37,8 @@ halts.
 - [Stacks of the SAT tokenizer](../../../sat-tokenizer/k.md)
 - [Labels of the SAT tokenizer](../../../sat-tokenizer/lab.md)
 - [The tokenizer program](../../../sat-tokenizer/prog.md)
-- [Map S](../../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
-- [Emit](../../../../../MathlibExt/turing-machine/program/emit.md)
+- [Translating a statement along a stack embedding](../../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
 
 ## Sources
 

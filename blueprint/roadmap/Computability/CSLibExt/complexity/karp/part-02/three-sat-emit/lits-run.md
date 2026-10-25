@@ -39,7 +39,7 @@ concatenation of stacks, top first.
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Length-prefixed binary code of a clause](../../../../cook-levin/encode-clause.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -47,7 +47,7 @@ concatenation of stacks, top first.
 - [One literal of the emitter](lit-run.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

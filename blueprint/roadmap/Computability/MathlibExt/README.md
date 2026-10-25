@@ -7,6 +7,6 @@ navigation: collection
 
 - [Turing Machine](turing-machine/README.md)
 - [Complexity](complexity/README.md)
-- [Parametrized s-m-n](exists-computable-code.md)
+- [Parametrized s-m-n theorem](exists-computable-code.md)
 - [RE](re/README.md)
 - [Rice Theorem](rice-theorem/README.md)

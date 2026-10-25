@@ -6,10 +6,9 @@ statement: formalized
 lean: MetaMathlibExt.ComplexityTheory.DecisionComplexityClass
 ---
 
-# Decision Complexity Class
+# Complexity classes
 
-The type of complexity classes: sets of decision problems. Inlined from
-FormalConjectures (absent from Mathlib).
+**Complexity classes.** A complexity class is a set of decision problems.
 
 ## Depends on
 
@@ -17,8 +16,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Decision Problem](decision-problem.md)
+- [Decision problems](decision-problem.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.Complexity](../../../../sources/v2/MathlibExt.md)
+- inlined from FormalConjectures (absent from Mathlib).

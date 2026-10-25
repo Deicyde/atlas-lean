@@ -7,10 +7,10 @@ navigation: module
 ## Language
 
 - [Left Derivation](left-derivation.md)
-- [Is Ambiguous](is-ambiguous.md)
+- [Ambiguous grammar](is-ambiguous.md)
 
 ## Left Derivation
 
-- [Derives](derives.md)
-- [Mem language](mem-language.md)
-- [Eq of terminal](eq-of-terminal.md)
+- [Leftmost derivations are derivations](derives.md)
+- [Words with a leftmost derivation lie in the language](mem-language.md)
+- [Leftmost derivations from a word of terminals are empty](eq-of-terminal.md)

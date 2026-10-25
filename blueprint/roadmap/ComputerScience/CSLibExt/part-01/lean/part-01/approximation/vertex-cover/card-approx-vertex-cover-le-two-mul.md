@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.card_approxVertexCover_le_two_mul
 ---
 
-# Card approx Vertex Cover le two mul
+# APPROX-VERTEX-COVER is at most twice any vertex cover
 
-If every listed pair is an edge of `G`, the result has at most twice as many vertices as any
-vertex cover of `G`.
+**APPROX-VERTEX-COVER is at most twice any vertex cover.** Let $G$ be a simple graph and $L$ a
+list of ordered pairs of vertices such that $u$ and $v$ are adjacent in $G$ for every $(u, v)$ in
+$L$. Then for every vertex cover $S$ of $G$, finite or infinite, the cover $C$ that
+APPROX-VERTEX-COVER returns on $L$ satisfies $|C| \le 2|S|$, with sizes in
+$\mathbb{N} \cup \{\infty\}$.
 
 ## Depends on
 
-- [Approx Vertex Cover](approx-vertex-cover.md)
+- [APPROX-VERTEX-COVER](approx-vertex-cover.md)
 
 ## Proof depends on
 
-- [Card vertex Cover Scan le](card-vertex-cover-scan-le.md)
-- [Vertex Cover Scan](vertex-cover-scan.md)
+- [Counting invariant of the vertex cover scan](card-vertex-cover-scan-le.md)
+- [Vertex cover scan](vertex-cover-scan.md)
 
 ## Sources
 

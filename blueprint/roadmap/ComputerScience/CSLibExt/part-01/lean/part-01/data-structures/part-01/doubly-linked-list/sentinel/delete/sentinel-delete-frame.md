@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelDelete_frame
 ---
 
-# Sentinel Delete frame
+# Sentinel deletion changes only the two neighbours
 
-Every complete cell outside the two updated neighbors is unchanged.
+**Sentinel deletion changes only the two neighbours.** Let $S$ be a node store and $x$ an
+address whose cell holds a node with previous address $p$ and next address $n$, where the cells
+at $p$ and $n$ are nonempty. For every address $z$ with $z \ne p$ and $z \ne n$, the cell at $z$
+after sentinel deletion of $x$ from $S$ equals the cell of $S$ at $z$.
 
 ## Depends on
 
-- [Node](../../basic/node.md)
-- [Sentinel Delete](sentinel-delete.md)
+- [Doubly linked list node](../../basic/node.md)
+- [Deletion from a circular list with a sentinel](sentinel-delete.md)
 
 ## Proof depends on
 
-- [List Delete](../../delete/list-delete.md)
-- [List Delete frame](../../delete/list-delete-frame.md)
-- [List Delete ret](../../delete/list-delete-ret.md)
-- [Sentinel Delete ret](sentinel-delete-ret.md)
+- [Deletion from a doubly linked list](../../delete/list-delete.md)
+- [Deletion changes only the cells of the neighbors](../../delete/list-delete-frame.md)
+- [Result of doubly linked list deletion](../../delete/list-delete-ret.md)
+- [The store returned by sentinel deletion](sentinel-delete-ret.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.TM2Program.rep
 ---
 
-# Rep
+# Repeated block
 
-`n` copies of the block `ys`, concatenated.
+**Repeated block.** For a list $ys$ and $n \in \mathbb{N}$, $\mathrm{rep}(ys, n)$ is the
+concatenation of $n$ copies of $ys$; it is the empty list when $n = 0$.
 
 ## Depends on
 

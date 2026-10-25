@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.IMP.StoreIrrel
 ---
 
-# Store Irrel
+# Store-irrelevant heap assertions
 
-A heap assertion is store-irrelevant when it does not inspect the
-store. `pointsTo`, `emp`, and predicates built from them are.
+**Store-irrelevant heap assertions.** A heap assertion $P$ is store-irrelevant when for all
+stores $s, s'$ and every heap $h$, $P(s, h)$ implies $P(s', h)$; that is, whether $P$ holds
+does not depend on the store.
+
+The empty-heap and points-to assertions are store-irrelevant, and so is the separating
+conjunction of two store-irrelevant assertions.
 
 ## Depends on
 
-- [HAssertion](../separation-logic/hassertion.md)
+- [Heap assertion](../separation-logic/hassertion.md)
 
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

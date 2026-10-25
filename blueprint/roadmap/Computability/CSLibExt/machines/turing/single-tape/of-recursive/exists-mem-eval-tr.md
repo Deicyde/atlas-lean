@@ -8,17 +8,24 @@ lean: Cslib.Turing.SingleTapeTM.OfTM2.exists_mem_eval_tr
 
 # The emulation's final tape
 
-**The emulation's final tape.** If `tm` halts at `c` on the input stack `L`, the `TM0`
-emulation halts at a configuration whose tape is `Tape.mk' ∅ (addBottom L')`, where `L'` lays out
-the stacks of `c`, each bottom first.
+**The emulation's final tape.** Let $M$ be a multi-stack machine with finitely many stacks,
+labels and internal states and a finite input alphabet, let $L$ be a list of symbols of its input
+stack, and suppose that $M$, started with $L$ on its input stack and every other stack empty,
+halts at the configuration $c$. Then its plain single-tape emulation, started on the tape that
+holds the symbols of $L$ bottom first on the input stack with the first cell flagged as the
+bottom, halts at a configuration $c_0$ for which there is a list $L'$ of columns, each holding an
+optional symbol for every stack and padded with blank columns, such that for every stack $k$ the
+entries of $L'$ for $k$ are the symbols of stack $k$ of $c$ listed bottom first, followed by
+blanks, and the tape of $c_0$ is blank to the left of the head and holds $L'$ from the head
+rightwards, with the bottom-of-stack flag set on its first cell and cleared on all others.
 
 ## Depends on
 
-- [Tr](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [Single-tape emulation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 
 ## Proof depends on
 
-- [Init List eq init](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/init-list-eq-init.md)
+- [The initial configuration of a bundled multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/init-list-eq-init.md)
 
 ## Sources
 

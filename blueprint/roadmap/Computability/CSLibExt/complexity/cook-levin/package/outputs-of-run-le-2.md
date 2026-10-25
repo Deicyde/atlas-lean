@@ -15,7 +15,7 @@ $M$ outputs $l'$ on input $l$ within $B$ steps.
 
 ## Depends on
 
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 

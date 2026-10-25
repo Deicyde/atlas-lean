@@ -21,13 +21,13 @@ one-symbol word $b$ on the output stack and every other stack empty.
 - [Labels of the SAT verifier host](hlab.md)
 - [Stack alphabets of the SAT verifier host](h.md)
 - [Program of the SAT verifier host](hprog.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Cleanup of the SAT host](clean-host.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

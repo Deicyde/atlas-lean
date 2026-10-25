@@ -22,7 +22,7 @@ the syntactic monoid of $L$ is finite.
 ## Proof depends on
 
 - [Renaming letters by a bijection preserves and reflects regularity](is-regular-alphabet-preimage-equiv-iff.md)
-- [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
+- [Regular languages are those with finite syntactic monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources
 

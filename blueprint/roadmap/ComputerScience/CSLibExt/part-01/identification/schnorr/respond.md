@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Crypto.Identification.Schnorr.respond
 ---
 
-# Respond
+# Schnorr prover's response
 
-The prover's answer `s = r x + k`.
+**Schnorr prover's response.** Let $q$ be a natural number. For a secret key $x$, prover
+randomness $k$ and challenge $r$, all in $\mathbb{Z}/q$, the prover's answer is
+$s = rx + k \in \mathbb{Z}/q$.
 
 ## Depends on
 

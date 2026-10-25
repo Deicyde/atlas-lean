@@ -5,10 +5,13 @@ statement: formalized
 lean: Cslib.MachineLearning.GraphicalModels.BayesNet
 ---
 
-# Bayes Net
+# Bayesian network
 
-A Bayesian network on nodes `0, …, n - 1` in topological order: each node has parents among
-the earlier nodes and a conditional probability table given the values of its parents.
+**Bayesian network.** A Bayesian network with values in a type $\alpha$ on the nodes
+$0, \dots, n - 1$, listed in a topological order, assigns to each node $k$ a finite set of
+parents among the earlier nodes $0, \dots, k - 1$, and a conditional probability table: for each
+assignment of values in $\alpha$ to the parents of $k$, a finitely supported probability
+distribution on $\alpha$ for the value of node $k$.
 
 ## Depends on
 

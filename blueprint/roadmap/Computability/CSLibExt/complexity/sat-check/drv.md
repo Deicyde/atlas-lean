@@ -28,7 +28,7 @@ true, pop it and go to start; otherwise go to no. At yes and at no: halt.
 - [Calling the lookup](call-s.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Is Bit](../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
+- [Bit test for the top of a stack](../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
 
 ## Sources
 

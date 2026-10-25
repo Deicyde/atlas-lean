@@ -5,19 +5,23 @@ statement: formalized
 lean: Cslib.Language.nerodeDFA
 ---
 
-# Nerode DFA
+# The Nerode automaton
 
-The canonical deterministic automaton whose states are Nerode classes.
+**The Nerode automaton.** Let $L$ be a language over an alphabet $\Sigma$. The Nerode
+automaton of $L$ is the deterministic automaton over $\Sigma$, not necessarily finite, whose
+states are the Nerode classes of words for $L$, whose start state is the class of the empty
+word, which on reading a symbol $a \in \Sigma$ moves from the class of a word $x$ to the class
+of $xa$, and whose accepting states are the classes of the words in $L$.
 
 ## Depends on
 
-- [Nerode Class](nerode-class.md)
+- [Nerode classes](nerode-class.md)
 
 ## Proof depends on
 
-- [Accepting](accepting.md)
-- [Step](step.md)
-- [Nerode Class](nerode-class-2.md)
+- [Accepting Nerode classes](accepting.md)
+- [Transition on Nerode classes](step.md)
+- [Nerode class of a word](nerode-class-2.md)
 
 ## Sources
 

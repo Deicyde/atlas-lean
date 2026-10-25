@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Language.transitionAction
 ---
 
-# Transition Action
+# Transition action of a word
 
-The action of a word on a DFA state.
+**Transition action of a word.** For a DFA $M$ and a word $x$, the transition action of $x$ is
+the map sending each state $q$ of $M$ to the state that $M$ reaches by reading $x$ starting
+from $q$.
 
 ## Depends on
 

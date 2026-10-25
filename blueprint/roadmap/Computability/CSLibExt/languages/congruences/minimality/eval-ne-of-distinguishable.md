@@ -18,8 +18,8 @@ states that $M$ reaches from its start state on reading $x$ and on reading $y$ a
 
 ## Proof depends on
 
-- [Nerode Rel](../nerode/nerode-rel.md)
-- [Nerode Rel iff](../nerode/nerode-rel-iff.md)
+- [Nerode equivalence](../nerode/nerode-rel.md)
+- [Continuation characterization of Nerode equivalence](../nerode/nerode-rel-iff.md)
 - [Words reaching the same DFA state are Nerode equivalent](nerode-rel-of-eval-eq.md)
 
 ## Sources

@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Turing.SingleTapeTM.FenceSymbol.read
 ---
 
-# Read
+# Simulated cell of a fenced cell
 
-The cell of the simulated machine that a cell of the fenced machine stands for: a symbol is
-itself, every other cell is a blank.
+**Simulated cell of a fenced cell.** The simulated cell of a cell of the fenced machine is
+the cell of the simulated machine that it stands for: a symbol of the simulated machine stands
+for itself, and every other cell (a padding cell, a wall or a blank) stands for a blank.
 
 ## Depends on
 
-- [Fence Symbol](fence-symbol.md)
+- [Fenced alphabet](fence-symbol.md)
 
 ## Sources
 

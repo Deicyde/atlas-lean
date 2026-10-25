@@ -21,7 +21,7 @@ output alphabet and the reduction host's step bound for $p$ as time bound.
 ## Depends on
 
 - [Component machine](comp.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -35,7 +35,7 @@ output alphabet and the reduction host's step bound for $p$ as time bound.
 - [The reduction host's run](rprog-run.md)
 - [Rtime](rtime.md)
 - [Reduction host machine](rtm.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

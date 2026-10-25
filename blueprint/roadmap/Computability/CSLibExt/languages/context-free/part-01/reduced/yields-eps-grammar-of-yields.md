@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.Language.yields_epsGrammar_of_yields
 ---
 
-# Yields eps Grammar of yields
+# Completeness of eliminating empty productions
 
-Completeness of `epsGrammar`: every yield of `g` is a yield of
-`epsGrammar` from a deletion of the form.
+**Completeness of eliminating empty productions.** Let $g$ be a context-free grammar.
+If a sentential form $\alpha$ of $g$ yields a terminal word $w$ in $g$, then some form
+$\alpha'$ obtained from $\alpha$ by deleting some occurrences of nullable nonterminals
+yields $w$ in the grammar obtained from $g$ by eliminating $\varepsilon$-productions, and
+$w$ is empty if $\alpha'$ is empty.
 
 ## Depends on
 
-- [Yields](../../part-02/yields/yields.md)
-- [Eps Grammar](eps-grammar.md)
-- [Nullable Deletions](nullable-deletions.md)
+- [Yield of a sentential form](../../part-02/yields/yields.md)
+- [Elimination of $\varepsilon$-productions](eps-grammar.md)
+- [Nullable deletions](nullable-deletions.md)
 
 ## Proof depends on
 
-- [Nullable](nullable.md)
-- [Language From](../basic/language-from.md)
-- [Mem eps Grammar rules](mem-eps-grammar-rules.md)
+- [Nullable nonterminal](nullable.md)
+- [Language generated from a nonterminal](../basic/language-from.md)
+- [Productions of the ε-free grammar](mem-eps-grammar-rules.md)
 - [Yields iff derives](../../part-02/yields/yields-iff-derives.md)
-- [Yields of rule](../../part-02/yields/yields-of-rule.md)
+- [Yield through one production](../../part-02/yields/yields-of-rule.md)
 
 ## Sources
 

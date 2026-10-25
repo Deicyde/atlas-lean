@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.Language.not_forall_isContextFree_compl
 ---
 
-# Not forall is Context Free compl
+# Complements of context-free languages need not be context-free
 
-It is not the case that the complement of every context-free
-language is context-free.
+**Complements of context-free languages need not be context-free.** It is not the case that
+for every context-free language $L$ over the three-letter alphabet $\{0, 1, 2\}$, the complement
+of $L$ is context-free.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists is Context Free compl not is Context Free](exists-is-context-free-compl-not-is-cont.md)
+- [Context-free languages are not closed under complement](exists-is-context-free-compl-not-is-cont.md)
 
 ## Sources
 

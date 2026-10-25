@@ -6,22 +6,26 @@ proof: formalized
 lean: Cslib.IMP.star_swap_right
 ---
 
-# Star swap right
+# Rearranging a separating conjunction
 
-`(P ⋆ (Q ⋆ R))` entails `((P ⋆ R) ⋆ Q)`.
+**Rearranging a separating conjunction.** For heap assertions $P$, $Q$ and $R$, write
+$A \star B$ for the separating conjunction of heap assertions $A$ and $B$ (the heap splits into
+two disjoint parts satisfying $A$ and $B$, respectively, at the same store). Then
+$P \star (Q \star R)$ entails $(P \star R) \star Q$: every store and heap satisfying the first
+assertion satisfy the second.
 
 ## Depends on
 
-- [HAssertion](../separation-logic/hassertion.md)
-- [Entails](../separation-logic/entails.md)
-- [Star](../separation-logic/star.md)
+- [Heap assertion](../separation-logic/hassertion.md)
+- [Entailment of heap assertions](../separation-logic/entails.md)
+- [Separating conjunction](../separation-logic/star.md)
 
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
 - [Disjoint](../heap/disjoint.md)
-- [Symm](../heap/symm.md)
-- [State](../syntax/state.md)
+- [Symmetry of heap disjointness](../heap/symm.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

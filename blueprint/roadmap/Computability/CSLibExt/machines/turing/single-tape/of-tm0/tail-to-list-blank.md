@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.tail_toListBlank
 ---
 
-# Tail to List Blank
+# Dropping the first cell of a stack tape of non-blank symbols
 
-Dropping the first cell drops the first symbol of the half-tape.
+**Dropping the first cell of a stack tape of non-blank symbols.** For an alphabet $\Gamma_0$
+with blank symbol $b$ and every stack tape $s$ over the non-blank symbols of $\Gamma_0$, dropping
+the first symbol of the half-tape read from $s$ gives the half-tape read from $s$ with its first
+cell removed (the empty stack tape staying empty).
 
 ## Depends on
 
-- [Non Blank](non-blank.md)
-- [To List Blank](to-list-blank.md)
+- [Non-blank symbols](non-blank.md)
+- [Half-tape of a stack tape of non-blank symbols](to-list-blank.md)
 
 ## Proof depends on
 
-- [Cell Symbol](cell-symbol.md)
-- [Tail to List Blank](../tape-view/tail-to-list-blank.md)
-- [To List Blank](../tape-view/to-list-blank.md)
+- [Cell symbol](cell-symbol.md)
+- [Tail of the half-tape view of a stack tape](../tape-view/tail-to-list-blank.md)
+- [Half-tape view of a stack tape](../tape-view/to-list-blank.md)
 
 ## Sources
 

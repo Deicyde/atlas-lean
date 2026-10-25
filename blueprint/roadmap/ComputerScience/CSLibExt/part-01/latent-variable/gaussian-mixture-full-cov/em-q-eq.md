@@ -12,18 +12,18 @@ lean: Cslib.MachineLearning.LatentVariable.GaussianMixtureFullCov.emQ_eq
 
 ## Depends on
 
-- [Em Q](../expectation-maximization/em-q.md)
-- [Params](params.md)
-- [Valid](valid.md)
-- [Valid Params](valid-params.md)
+- [The EM objective](../expectation-maximization/em-q.md)
+- [Parameters of a full-covariance Gaussian mixture](params.md)
+- [Validity of full-covariance Gaussian mixture parameters](valid.md)
+- [Valid parameters of a full-covariance Gaussian mixture](valid-params.md)
 - [Comp Term](comp-term.md)
-- [Joint](joint.md)
-- [Mass](mass.md)
+- [Joint density of the full-covariance Gaussian mixture](joint.md)
+- [Effective number of points of a full-covariance mixture component](mass.md)
 
 ## Proof depends on
 
-- [Posterior](../expectation-maximization/posterior.md)
-- [Resp](resp.md)
+- [Posterior of a latent-variable model](../expectation-maximization/posterior.md)
+- [Responsibilities of the full-covariance Gaussian mixture](resp.md)
 - [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 
 ## Sources

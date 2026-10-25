@@ -6,19 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.grownFlatten
 ---
 
-# Grown Flatten
+# Flattening of a B-tree insertion result
 
-The flattening of an insertion result, placing a promoted median between the two
-trees it separates.
+**Flattening of a B-tree insertion result.** The flattening of an insertion result that is a
+single tree is the flattening of that tree; for a result that splits into a left tree $\ell$, a
+promoted median key $m$ and a right tree $r$, it is the flattening of $\ell$, followed by $m$,
+followed by the flattening of $r$.
 
 ## Depends on
 
-- [Ins Result](ins-result.md)
+- [Result of inserting into a B-tree subtree](ins-result.md)
 
 ## Proof depends on
 
-- [BTree](btree.md)
-- [Flatten](flatten.md)
+- [Raw B-trees](btree.md)
+- [Inorder flattening of a B-tree](flatten.md)
 
 ## Sources
 

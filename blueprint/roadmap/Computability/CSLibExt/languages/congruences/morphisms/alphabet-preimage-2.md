@@ -21,7 +21,7 @@ by applying $f$ to each letter of $w$.
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
 - [Alphabet preimages preserve finiteness of the syntactic monoid](finite-syntactic-monoid-alphabet-preimag.md)
-- [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
+- [Regular languages are those with finite syntactic monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources
 

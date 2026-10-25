@@ -6,17 +6,22 @@ proof: formalized
 lean: Cslib.Language.finite_nerodeClass_iff
 ---
 
-# Finite nerode Class iff
+# Finitely many Nerode classes iff finitely many left quotients
 
-Finiteness of Nerode classes is the quotient formulation of the Myhill--Nerode criterion.
+**Finitely many Nerode classes iff finitely many left quotients.** For every language $L$,
+writing $x^{-1}L = \{ y \mid xy \in L \}$ for the left quotient of $L$ by a word $x$, there are
+finitely many Nerode classes of $L$ if and only if the set $\{ x^{-1}L \mid x \text{ a word} \}$
+of left quotients of $L$ is finite.
+
+This is the quotient formulation of the Myhill--Nerode criterion.
 
 ## Depends on
 
-- [Nerode Class](nerode-class.md)
+- [Nerode classes](nerode-class.md)
 
 ## Proof depends on
 
-- [Nerode Class Equiv Residual](nerode-class-equiv-residual.md)
+- [Bijection between Nerode classes and left quotients](nerode-class-equiv-residual.md)
 
 ## Sources
 

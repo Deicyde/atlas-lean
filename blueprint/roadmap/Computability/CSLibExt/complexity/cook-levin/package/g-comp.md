@@ -52,7 +52,7 @@ $n$, where $g_B$ is the step bound of the composed machine.
 - [Number of situations](../situation/part-01/n.md)
 - [Clause layout of a machine encoding](../situation/part-01/layout.md)
 - [Window depth of a machine](../situation/part-01/depth.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

@@ -5,21 +5,22 @@ statement: formalized
 lean: Cslib.Turing.Universal.Code.DecidesWithin
 ---
 
-# Decides Within
+# Deciding within a time bound
 
-`c.DecidesWithin L t`: on every input `x`, the code `c` halts within `t |x|` steps, and the
-tape from the head rightwards, without trailing blanks, is the symbol `bitSym (L x)` of the
-answer.
+**Deciding within a time bound.** A code $c$ decides a decision problem $L$ within the time
+bound $t : \mathbb{N} \to \mathbb{N}$ when, on every bit list $x$, the machine of $c$ started on the
+input word of $x$ halts within $t(|x|)$ steps, and its tape from the head rightwards, without
+trailing blanks, is the single symbol of the answer $L(x)$: $2$ for true and $1$ for false.
 
 ## Depends on
 
-- [Code](../code/code.md)
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [Codes for single-tape machines](../code/code.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 
 - [The clocked evaluator](../code/eval-steps.md)
-- [Bit Sym](../code/bit-sym.md)
+- [Symbol of an input bit](../code/bit-sym.md)
 
 ## Sources
 

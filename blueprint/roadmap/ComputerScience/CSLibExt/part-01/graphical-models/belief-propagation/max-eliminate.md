@@ -5,19 +5,21 @@ statement: formalized
 lean: Cslib.MachineLearning.GraphicalModels.TreeModel.maxEliminate
 ---
 
-# Max Eliminate
+# Maximizing out the last vertex
 
-Maximize out the last vertex: multiply its max-product message into the unary factor of its
-parent.
+**Maximizing out the last vertex.** For a tree model with vertices $0, \dots, n + 1$ over a
+finite nonempty set of values, the tree model on $0, \dots, n$ with the same parents and edge
+factors whose unary factor at the parent of the last vertex is multiplied by the max-product
+message of the last vertex; the other unary factors are unchanged.
 
 ## Depends on
 
-- [Tree Model](../variable-elimination/tree-model.md)
+- [Pairwise model on a tree](../variable-elimination/tree-model.md)
 
 ## Proof depends on
 
-- [Last Parent](../variable-elimination/last-parent.md)
-- [Max Message](max-message.md)
+- [Parent of the last vertex](../variable-elimination/last-parent.md)
+- [Max-product message](max-message.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.Language.cykCellFrom
 ---
 
-# Cyk Cell From
+# The CYK cell built from given cells
 
-The cell of `w` given the cells `f` of its parts: the left-hand sides of the productions
-whose outputs fit `w`.
+**The CYK cell built from given cells.** Given an assignment $f$ of a cell (a finite set of
+nonterminals of $g$) to every word, the cell of a word $w$ built from $f$ is the set of left-hand
+sides of those productions of $g$ whose outputs fit $w$ with respect to $f$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cyk Fits](cyk-fits.md)
+- [When a production output fits a word](cyk-fits.md)
 
 ## Sources
 

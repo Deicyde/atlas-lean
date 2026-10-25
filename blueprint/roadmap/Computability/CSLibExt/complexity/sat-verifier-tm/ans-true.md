@@ -25,7 +25,7 @@ theorem cook_levin_SAT_np_complete :
 - [Three-literal clause test](../karp/part-02/three-sat/is3.md)
 - [Answer of the SAT host](ans.md)
 - [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
-- [Sat Verifier](../../sat-time-m/sat-verifier.md)
+- [The SAT verifier](../../sat-time-m/sat-verifier.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on

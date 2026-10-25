@@ -18,7 +18,7 @@ top words and in the language of the side grammar of $P$ for the bottom words.
 - [The side grammar of a PCP instance](side-grammar.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
 - [The Post correspondence problem](../pcp/pcp.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 

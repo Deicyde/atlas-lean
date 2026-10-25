@@ -39,11 +39,11 @@ $\mathsf{rej}$ within $2|r| + 3$ steps.
 - [Binary code of a literal](../../cook-levin/encode-lit.md)
 - [Prefix-free code of a natural number](../../cook-levin/encode-nat-prefix.md)
 - [Parsing a self-delimiting block](../../cook-levin/undelimit-eq-some-iff.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

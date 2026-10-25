@@ -12,7 +12,7 @@ The EM log-likelihood is the sum of the HMM log-likelihoods of the sequences.
 
 ## Depends on
 
-- [Log Lik](../../latent-variable/expectation-maximization/log-lik.md)
+- [Log-likelihood of a latent-variable model](../../latent-variable/expectation-maximization/log-lik.md)
 - [Valid](valid.md)
 - [Valid HMM](valid-hmm.md)
 - [Joint](joint.md)

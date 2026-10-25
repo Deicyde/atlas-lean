@@ -22,7 +22,7 @@ $n_i = x$, or false if there is none.
 
 - [Occurrence table of a list of variables](ents-of.md)
 - [Live value of a name in a table](live-val.md)
-- [Lookup Var](../../sat-time-m/lookup-var.md)
+- [Witness lookup](../../sat-time-m/lookup-var.md)
 
 ## Proof depends on
 

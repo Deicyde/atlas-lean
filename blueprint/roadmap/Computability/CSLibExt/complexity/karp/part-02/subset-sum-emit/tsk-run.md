@@ -25,8 +25,8 @@ a list replaces each bit $b$ by $\mathrm{true}, b$ and appends $\mathrm{false}$.
 - [The subset-sum emitter machine](prog.md)
 - [Stack alphabets of the subset-sum emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
@@ -34,7 +34,7 @@ a list replaces each bit $b$ by $\mathrm{true}, b$ and appends $\mathrm{false}$.
 - [Test for the input bit true (SUBSET-SUM reduction machine)](is-t.md)
 - [Start label of the subset-sum emitter](is-t-bit.md)
 - [Run of the target-bit loop of the subset-sum emitter](tem-run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

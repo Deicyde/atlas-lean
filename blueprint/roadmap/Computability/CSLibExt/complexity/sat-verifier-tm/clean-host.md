@@ -20,14 +20,14 @@ the final label with answer $a$, internal state false and every stack empty.
 - [Labels of the SAT verifier host](hlab.md)
 - [Stack alphabets of the SAT verifier host](h.md)
 - [Program of the SAT verifier host](hprog.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Stacks emptied by the cleanup](work-ks.md)
 - [The embedded lookup meets the lookup contract](work-ks-nodup.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Cleanup](../../../MathlibExt/turing-machine/cleanup/clean-run.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Cleanup empties its stacks](../../../MathlibExt/turing-machine/cleanup/clean-run.md)
 
 ## Sources
 

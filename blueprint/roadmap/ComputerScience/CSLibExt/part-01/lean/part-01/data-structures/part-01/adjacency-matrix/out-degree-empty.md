@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.outDegree_empty
 ---
 
-# Out Degree empty
+# Vertices of the empty graph have out-degree zero
 
-Every vertex of the empty graph has out-degree zero.
+**Vertices of the empty graph have out-degree zero.** For every $n$, every vertex of the
+empty directed graph on the vertices $0, \dots, n-1$ has out-degree $0$.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Out Degree](out-degree.md)
+- [Empty adjacency matrix](empty.md)
+- [Out-degree](out-degree.md)
 
 ## Proof depends on
 
-- [Neighbors](neighbors.md)
-- [Neighbors empty](neighbors-empty.md)
+- [Out-neighbor list](neighbors.md)
+- [Out-neighbor lists of the empty graph](neighbors-empty.md)
 
 ## Sources
 

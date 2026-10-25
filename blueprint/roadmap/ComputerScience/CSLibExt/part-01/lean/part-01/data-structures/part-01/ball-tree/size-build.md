@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BallTree.size_build
 ---
 
-# Size build
+# Size of a built ball tree
 
-The size of a built tree is the number of input points.
+**Size of a built ball tree.** For every list $P$ of points of $\mathbb{Z}^d$, the size of
+the ball tree built from $P$ equals the length of $P$, that is, the number of entries of $P$
+counted with repetition.
 
 ## Depends on
 
-- [Build](build.md)
-- [Size](size.md)
+- [Building a ball tree by halving](build.md)
+- [Size of a ball tree](size.md)
 
 ## Proof depends on
 
-- [Length to List](length-to-list.md)
-- [To List](to-list.md)
-- [To List build perm](to-list-build-perm.md)
+- [Number of points of a ball tree](length-to-list.md)
+- [Point list of a ball tree](to-list.md)
+- [A built ball tree stores a permutation of its input](to-list-build-perm.md)
 
 ## Sources
 

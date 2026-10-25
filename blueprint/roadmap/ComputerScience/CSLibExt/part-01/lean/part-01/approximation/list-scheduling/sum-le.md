@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Scheduling.IsScheduleOf.sum_le
 ---
 
-# Sum le
+# Total work is at most $m$ times the makespan
 
-The total work is at most `m` times the makespan.
+**Total work is at most $m$ times the makespan.** If $\sigma$ is a schedule of a list $P$ of
+jobs on $m$ machines, then the total processing time of $P$ is at most $m$ times the makespan of
+$\sigma$.
 
 ## Depends on
 
-- [Is Schedule Of](is-schedule-of.md)
+- [Schedule of a list of jobs](is-schedule-of.md)
 - [Makespan](makespan.md)
 
 ## Sources

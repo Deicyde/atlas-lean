@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Derives append](../../../languages/context-free/part-01/basic/derives-append.md)
+- [Concatenating derivations](../../../languages/context-free/part-01/basic/derives-append.md)
 
 ## Sources
 

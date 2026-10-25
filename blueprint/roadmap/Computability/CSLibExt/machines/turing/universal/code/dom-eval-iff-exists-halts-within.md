@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Turing.Universal.dom_eval_iff_exists_haltsWithin
 ---
 
-# Dom eval iff exists halts Within
+# Halting is halting within some number of steps
 
-A `TM0` machine halts iff it halts within some number of steps.
+**Halting is halting within some number of steps.** For a single-tape Turing machine $M$ and
+an input word $l$, the evaluation of $M$ on $l$ is defined (that is, $M$ halts on $l$) if and only
+if there is $T \in \mathbb{N}$ such that $M$ halts on $l$ within $T$ steps.
 
 ## Depends on
 
-- [Halts Within](halts-within.md)
+- [Bounded halting of a single-tape machine](halts-within.md)
 
 ## Proof depends on
 
-- [Dom eval iff exists iterate](../../../../../MathlibExt/turing-machine/recursive/halts/dom-eval-iff-exists-iterate.md)
+- [A run halts iff it reaches a configuration without successor](../../../../../MathlibExt/turing-machine/recursive/halts/dom-eval-iff-exists-iterate.md)
 
 ## Sources
 

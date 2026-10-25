@@ -33,7 +33,7 @@ a stack, pushing $y_1, \dots, y_n$ onto $t$ one at a time.
 - [Pushing a list onto a verifier work stack](push-all.md)
 - [All stacks of the verifier from work stacks and output](stk.md)
 - [Stack alphabets of the dense CNF-SAT verifier](untitled.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

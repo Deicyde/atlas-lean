@@ -18,7 +18,7 @@ to the empty list, where $M$ is $(n + 1)^2$ times the length of the list of prod
 
 ## Depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Proof depends on
 

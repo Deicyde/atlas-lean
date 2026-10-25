@@ -18,7 +18,7 @@ the alphabet of each with that of its image, which is again $\mathrm{Sym}$, by t
 - [Stack alphabets of the SAT verifier host](h.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Stacks of the SAT tokenizer](../sat-tokenizer/k.md)
-- [SEmb](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 

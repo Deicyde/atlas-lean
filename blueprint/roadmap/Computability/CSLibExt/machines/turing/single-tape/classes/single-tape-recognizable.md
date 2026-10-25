@@ -5,11 +5,15 @@ statement: formalized
 lean: Cslib.Decidability.SingleTapeRecognizable
 ---
 
-# Single Tape Recognizable
+# Predicates recognizable by a single-tape Turing machine
 
-`p` is **recognizable by a single-tape machine**: for some finite tape alphabet `Symbol`
-with an injective copy `ι` of the input bits, some `SingleTapeTM` halts on the input word
-`(encodeNat (encode a)).map ι` exactly when `p a`.
+**Predicates recognizable by a single-tape Turing machine.** Let $\alpha$ be a type with a
+primitive recursive encoding into $\mathbb{N}$. A predicate $p$ on $\alpha$ is recognizable by a
+single-tape machine when there are a finite, nonempty tape alphabet $\Sigma$, an injective map
+$\iota$ from the bits $\{0, 1\}$ to $\Sigma$ and a single-tape Turing machine $M$ over $\Sigma$
+such that for every $a \in \alpha$, the run of $M$ on the input word obtained by writing the
+binary encoding of the code of $a$ in $\mathbb{N}$ letter by letter through $\iota$ reaches the
+halting state if and only if $p(a)$ holds.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Halts On](halts-on.md)
+- [Halting on an input](halts-on.md)
 
 ## Sources
 

@@ -6,30 +6,32 @@ proof: formalized
 lean: Cslib.Language.insGrammar_language
 ---
 
-# `insGrammar` generates the words whose right letters form a word of the original language
+# Language of the marker-insertion grammar
 
-**`insGrammar` generates the words whose right letters form a word of the original
-language.**
+**Language of the marker-insertion grammar.** Let $g$ be a context-free grammar over $T'$
+and let $T$ be a finite alphabet. The marker-insertion grammar of $g$ generates exactly the
+words $u$ over $T \sqcup T'$ whose letters from $T'$, read in order, form a word of the language
+of $g$.
 
 ## Depends on
 
-- [Ins Grammar](ins-grammar.md)
-- [Proj Right](proj-right.md)
+- [Marker-insertion grammar](ins-grammar.md)
+- [Right projection of a word](proj-right.md)
 
 ## Proof depends on
 
-- [Is Valuation](../basic/is-valuation.md)
-- [Eval Form](../basic/eval-form.md)
-- [Eval Form append](../basic/eval-form-append.md)
-- [Eval Symbol](../basic/eval-symbol.md)
-- [Ins Grammar derives flat Map](ins-grammar-derives-flat-map.md)
-- [Ins Grammar derives marked Form](ins-grammar-derives-marked-form.md)
-- [Ins Symbol](ins-symbol.md)
-- [Ins Valuation](ins-valuation.md)
-- [Is Valuation language From](../basic/is-valuation-language-from.md)
-- [Language From](../basic/language-from.md)
-- [Language le of valuation](../basic/language-le-of-valuation.md)
-- [Marked Form](marked-form.md)
+- [Valuation of a grammar](../basic/is-valuation.md)
+- [Interpretation of a sentential form](../basic/eval-form.md)
+- [Interpretation of a concatenation](../basic/eval-form-append.md)
+- [Interpretation of a grammar symbol](../basic/eval-symbol.md)
+- [The marker-insertion grammar simulates the original grammar](ins-grammar-derives-flat-map.md)
+- [Marker loops fill in the left letters](ins-grammar-derives-marked-form.md)
+- [Marker translation of a symbol](ins-symbol.md)
+- [Valuation for the marker-insertion grammar](ins-valuation.md)
+- [The languages generated from each nonterminal form a valuation](../basic/is-valuation-language-from.md)
+- [Language generated from a nonterminal](../basic/language-from.md)
+- [Valuations bound the language of a grammar](../basic/language-le-of-valuation.md)
+- [Marked form of a word](marked-form.md)
 
 ## Sources
 

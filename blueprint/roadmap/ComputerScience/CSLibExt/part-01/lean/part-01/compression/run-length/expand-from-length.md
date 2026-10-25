@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RunLength.expandFrom_length
 ---
 
-# Expand From length
+# Length of an expansion from a starting bit
 
-Expansion emits exactly the summed number of bits, from either starting bit.
+**Length of an expansion from a starting bit.** For every bit $c$ and every list
+$(n_1, \dots, n_k)$ of natural numbers, the expansion $E(c, (n_1, \dots, n_k))$ has length
+$n_1 + \dots + n_k$.
 
 ## Depends on
 
-- [Expand From](expand-from.md)
+- [Run-length expansion from a starting bit](expand-from.md)
 
 ## Sources
 

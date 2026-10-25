@@ -6,11 +6,13 @@ proof: formalized
 lean: Cslib.Language.IsContextFree.inf_isRegular
 ---
 
-# Inf is Regular
+# Intersection of a context-free language with a regular language
 
-The intersection of a context-free language with a regular language is
-context-free. No finite-alphabet assumption is needed: the annotated
-grammar only ever mentions terminals from the original productions.
+**Intersection of a context-free language with a regular language.** If $L$ is a context-free
+language and $R$ a regular language over the same alphabet, then $L \cap R$ is context-free.
+
+No finite-alphabet assumption is needed: the grammar built in the proof only mentions terminals
+that occur in the productions of the original grammar.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Inf dfa accepts](inf-dfa-accepts.md)
+- [Intersection of a context-free language with the language of a DFA](inf-dfa-accepts.md)
 
 ## Sources
 

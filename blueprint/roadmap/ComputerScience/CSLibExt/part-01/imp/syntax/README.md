@@ -6,14 +6,14 @@ navigation: module
 
 ## IMP
 
-- [State](state.md)
-- [AExp](aexp.md)
-- [BExp](bexp.md)
-- [Cmd](cmd.md)
+- [IMP program states](state.md)
+- [Arithmetic expressions of IMP](aexp.md)
+- [Boolean expressions of IMP](bexp.md)
+- [Commands of IMP](cmd.md)
 
 ## AExp
 
-- [Eval](eval.md)
+- [Evaluation of IMP arithmetic expressions](eval.md)
 
 ## BExp
 

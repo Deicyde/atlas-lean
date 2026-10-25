@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Algorithms.Concurrency.Deadlock.AllocState.not_waitsFor_self
 ---
 
-# Not waits For self
+# No process waits for itself directly
 
-No process waits for itself directly.
+**No process waits for itself directly.** In a resource-allocation snapshot, no process $p$
+waits for itself, that is, there is no resource that $p$ both requests and holds.
 
 ## Depends on
 
-- [Alloc State](alloc-state.md)
-- [Waits For](waits-for.md)
+- [Resource-allocation snapshot](alloc-state.md)
+- [Wait-for relation](waits-for.md)
 
 ## Sources
 

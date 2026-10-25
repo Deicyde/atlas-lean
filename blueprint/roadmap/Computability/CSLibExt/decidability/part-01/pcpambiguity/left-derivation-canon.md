@@ -23,7 +23,7 @@ $u\, b_{i_1} \cdots b_{i_n}\, i_n \cdots i_1\, v$ from $u\,B\,v$.
 - [Canon](canon.md)
 - [The side word of an index sequence](../cfgundecidable/side-word.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Left Derivation](../../../languages/context-free/part-01/ambiguity/left-derivation.md)
 
 ## Proof depends on
@@ -35,9 +35,9 @@ $u\, b_{i_1} \cdots b_{i_n}\, i_n \cdots i_1\, v$ from $u\,B\,v$.
 - [Encoded nonterminal symbol](../cfgundecidable/nt-sym.md)
 - [The productions of a side grammar](../cfgundecidable/side-rules.md)
 - [The terminating production of a side grammar](../cfgundecidable/term-rule.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 
 ## Sources
 

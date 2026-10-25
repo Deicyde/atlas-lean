@@ -4,19 +4,17 @@ navigation: module
 
 # Substitution
 
-- [Code](code.md)
-- [Decode](decode.md)
-- [Subst Symbol](subst-symbol.md)
+## Substitution
+
+- [Letter numbering for the substitution grammar](code.md)
+- [Letter decoding for the substitution grammar](decode.md)
+- [Substituting the symbols of a grammar](subst-symbol.md)
 - [Main Rule](main-rule.md)
-- [Sub Rule](sub-rule.md)
-- [Rules](rules.md)
-- [Grammar](grammar.md)
+- [Letter productions of the substitution grammar](sub-rule.md)
+- [Productions of the substitution grammar](rules.md)
+- [The substitution grammar](grammar.md)
+- [Derivations keep the terminals among those of the grammar](mem-grammar-terminals-of-derives.md)
 
-## Soundness
+## Language
 
-- [Val](val.md)
-
-## Completeness
-
-- [Mem grammar Terminals of derives](mem-grammar-terminals-of-derives.md)
 - [Context-free languages are closed under substitution by context-free languages](substitution.md)

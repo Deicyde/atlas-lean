@@ -10,22 +10,22 @@ navigation: module
 
 ## Assertion
 
-- [Entails](entails.md)
-- [Subst](subst.md)
+- [Entailment of assertions](entails.md)
+- [Substitution in an assertion](subst.md)
 
 ## IMP
 
-- [Valid](valid.md)
+- [Validity of a Hoare triple](valid.md)
 
 ## Valid
 
-- [While Loop](while-loop.md)
+- [Invariant rule for while loops](while-loop.md)
 
 ## IMP
 
-- [Wlp](wlp.md)
+- [Weakest liberal precondition](wlp.md)
 
 ## Wlp
 
 - [While Loop](while-loop-2.md)
-- [Invariant le while](invariant-le-while.md)
+- [Loop invariants entail the weakest liberal precondition of the loop](invariant-le-while.md)

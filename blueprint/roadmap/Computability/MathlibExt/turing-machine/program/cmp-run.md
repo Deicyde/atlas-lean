@@ -14,17 +14,17 @@ stacks exactly as before**, in `3 · min m n + 3 + [m ≠ n]` steps.
 
 ## Depends on
 
-- [Flag](flag.md)
-- [Run](run.md)
-- [Cmp Step](cmp-step.md)
-- [Cnt](cnt.md)
+- [Flag bit of a machine state](flag.md)
+- [Exact-length runs of a TM2 machine](run.md)
+- [One round of counter comparison](cmp-step.md)
+- [Unary counter](cnt.md)
 - [Xfer](xfer.md)
 
 ## Proof depends on
 
-- [Add U](add-u.md)
-- [Cmp Loop run](cmp-loop-run.md)
-- [Xfer run](xfer-run.md)
+- [Adding units to target stacks](add-u.md)
+- [The comparison loop](cmp-loop-run.md)
+- [Running a counter transfer](xfer-run.md)
 
 ## Sources
 

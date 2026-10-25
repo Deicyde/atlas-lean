@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.Language.card_syntacticMonoid_le_card_transitionMonoid
 ---
 
-# Card syntactic Monoid le card transition Monoid
+# The syntactic monoid is no larger than the transition monoid
 
-For finite state spaces, the syntactic monoid has no more elements than the transition
-monoid of any recognizing DFA.
+**The syntactic monoid is no larger than the transition monoid.** Let $M$ be a DFA
+accepting the language $L$, and suppose that the transition monoid of $M$ and the syntactic
+monoid of $L$ are both finite. Then the syntactic monoid of $L$ has at most as many elements as
+the transition monoid of $M$.
 
 ## Depends on
 
-- [State Transformation](../syntactic/state-transformation.md)
+- [State transformation monoid](../syntactic/state-transformation.md)
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Transition Monoid](../syntactic/transition-monoid.md)
+- [Transition monoid of a DFA](../syntactic/transition-monoid.md)
 
 ## Proof depends on
 
-- [Recognizer Image To Syntactic surjective](../recognition/recognizer-image-to-syntactic-surjective.md)
-- [Recognizes transition Accept](recognizes-transition-accept.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
-- [Transition Accept](transition-accept.md)
-- [Transition Monoid To Syntactic](transition-monoid-to-syntactic.md)
-- [Transition Morphism](../syntactic/transition-morphism.md)
+- [The image of a recognizer maps onto the syntactic monoid](../recognition/recognizer-image-to-syntactic-surjective.md)
+- [The transition morphism recognizes through accepting transformations](recognizes-transition-accept.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
+- [Accepting transformations of a DFA](transition-accept.md)
+- [The transition monoid maps to the syntactic monoid](transition-monoid-to-syntactic.md)
+- [Transition morphism of a DFA](../syntactic/transition-morphism.md)
 
 ## Sources
 

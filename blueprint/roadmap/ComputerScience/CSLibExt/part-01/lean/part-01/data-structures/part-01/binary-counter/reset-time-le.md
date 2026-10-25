@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.reset_time_le
 ---
 
-# Reset time le
+# Reset costs at most the width
 
-Reset changes at most the fixed number of existing bits.
+**Reset costs at most the width.** For every $k$-bit counter $b$ (a vector of $k$ bits), the
+cost of resetting $b$ is at most $k$.
 
 ## Depends on
 
-- [Reset](reset.md)
+- [Resetting a binary counter](reset.md)
 
 ## Proof depends on
 

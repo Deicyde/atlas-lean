@@ -26,12 +26,12 @@ marker $\mathsf{dead}$ is pushed onto $b$.
 - [The tokenizer program](prog.md)
 - [Tokenizer stack contents](st.md)
 - [Closing marker of a table entry](../sat-verifier-spec/mark-of.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

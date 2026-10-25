@@ -43,7 +43,7 @@ $c$, with flag $v'$, counters $F$ except $P = b_0$ and output $E(b_0, \lambda_0)
 - [Literals of a clause kind](clits.md)
 - [Per-literal step cost of the initial-row generator](lit-e.md)
 - [Prog](prog.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -57,9 +57,9 @@ $c$, with flag $v'$, counters $F$ except $P = b_0$ and output $E(b_0, \lambda_0)
 - [Loop phases of the initial-row generator](ph.md)
 - [Run of one literal routine (initial-row generator)](lit-run.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

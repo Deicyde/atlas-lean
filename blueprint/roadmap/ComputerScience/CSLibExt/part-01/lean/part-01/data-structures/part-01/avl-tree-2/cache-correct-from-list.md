@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.cacheCorrect_fromList
 ---
 
-# Cache Correct from List
+# AVL trees built from a list have correct cached heights
 
-Trees built by insertion have correct caches.
+**AVL trees built from a list have correct cached heights.** For every list $L$ over a
+linearly ordered type, the AVL tree built from $L$ by successive insertion has correct cached
+heights.
 
 ## Depends on
 
-- [Cache Correct](cache-correct.md)
-- [From List](from-list.md)
+- [Correct cached heights](cache-correct.md)
+- [Building an AVL tree from a list](from-list.md)
 
 ## Proof depends on
 
-- [Cache Correct insert](cache-correct-insert.md)
+- [AVL insertion preserves cached heights](cache-correct-insert.md)
 
 ## Sources
 

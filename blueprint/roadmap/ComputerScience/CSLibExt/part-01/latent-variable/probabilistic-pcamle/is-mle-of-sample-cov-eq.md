@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.isMLE_of_sampleCov_eq
 ---
 
-# Exact recovery
+# Probabilistic PCA MLE when the sample covariance has the model form
 
-**Exact recovery**: if the sample covariance has the probabilistic PCA form `W₀ W₀ᵀ + σ₀² I`
-with `σ₀² > 0`, then `(x̄, W₀, σ₀²)` is a maximum-likelihood estimate.
+**Probabilistic PCA MLE when the sample covariance has the model form.** Let
+$x_1, \dots, x_N \in \mathbb{R}^d$ be data with sample mean $\bar{x}$ and sample covariance $S$.
+If $W_0$ is a real $d \times q$ matrix and $\sigma_0^2 > 0$ is a real number with
+$S = W_0 W_0^\top + \sigma_0^2 I$, then $(\bar{x}, W_0, \sigma_0^2)$ is a probabilistic PCA
+maximum-likelihood estimate for the data.
 
 ## Depends on
 
-- [Is MLE](is-mle.md)
-- [Ppca Cov](ppca-cov.md)
-- [Sample Cov](sample-cov.md)
-- [Sample Mean](sample-mean.md)
+- [Probabilistic PCA maximum-likelihood estimate](is-mle.md)
+- [Probabilistic PCA covariance](ppca-cov.md)
+- [Sample covariance](sample-cov.md)
+- [Sample mean](sample-mean.md)
 
 ## Proof depends on
 
-- [Log Lik](log-lik.md)
+- [Probabilistic PCA log-likelihood](log-lik.md)
 - [The probabilistic PCA likelihood is at most the unconstrained Gaussian maximum](log-lik-le-gaussian-mle.md)
 - [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 

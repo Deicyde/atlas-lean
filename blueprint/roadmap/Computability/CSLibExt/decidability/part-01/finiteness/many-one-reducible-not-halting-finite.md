@@ -21,7 +21,7 @@ and only if the partial function of $f(c)$ has finite domain.
 
 - [Halts-within function](halts-within-fun.md)
 - [Domain of the halts-within function](halts-within-fun-dom.md)
-- [Parametrized s-m-n](../../../../MathlibExt/exists-computable-code.md)
+- [Parametrized s-m-n theorem](../../../../MathlibExt/exists-computable-code.md)
 
 ## Sources
 

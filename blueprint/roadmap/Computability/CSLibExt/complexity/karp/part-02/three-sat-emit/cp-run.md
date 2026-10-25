@@ -31,14 +31,14 @@ $\mathrm{true}, \mathrm{false}$ codes the low bit $0$ of a renamed name $2n$.
 - [Stack alphabets of the SAT-to-3SAT emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Is Bit](../../../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Bit test for the top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

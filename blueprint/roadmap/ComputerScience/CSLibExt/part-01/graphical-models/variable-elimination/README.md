@@ -6,17 +6,17 @@ navigation: module
 
 ## Graphical Models
 
-- [Tree Model](tree-model.md)
+- [Pairwise model on a tree](tree-model.md)
 
 ## Tree Model
 
-- [Parent](parent.md)
-- [Weight](weight.md)
-- [Last Parent](last-parent.md)
-- [Message](message.md)
+- [Parent of a vertex](parent.md)
+- [Weight of an assignment in a tree model](weight.md)
+- [Parent of the last vertex](last-parent.md)
+- [Message from the last vertex](message.md)
 - [Eliminate](eliminate.md)
 - [One step of variable elimination](sum-weight-mul-eliminate.md)
 - [Root Message](root-message.md)
 - [Variable elimination is exact](sum-weight-mul-eq.md)
-- [Partition eq](partition-eq.md)
-- [Root Marginal eq](root-marginal-eq.md)
+- [Variable elimination computes the partition function](partition-eq.md)
+- [Variable elimination computes the unnormalized root marginal](root-marginal-eq.md)

@@ -6,20 +6,22 @@ statement: formalized
 lean: MetaMathlibExt.ComplexityTheory.IsPolyTime
 ---
 
-# Is Poly Time
+# Polynomial-time computable functions
 
-A function is polynomial-time computable when it is
-`IsPolyTimeWithEncoding` for the canonical bitstring encodings. Inlined from
-FormalConjectures (absent from Mathlib).
+**Polynomial-time computable functions.** Let $\alpha$ and $\beta$ be types with canonical
+bitstring encodings. A function $f : \alpha \to \beta$ is polynomial-time computable when it is
+polynomial-time computable with respect to the canonical bitstring encodings of $\alpha$ and
+$\beta$.
 
 ## Depends on
 
-- [Bitstring Encoding](bitstring-encoding.md)
+- [Bitstring encodings](bitstring-encoding.md)
 
 ## Proof depends on
 
-- [Is Poly Time With Encoding](is-poly-time-with-encoding.md)
+- [Polynomial-time computability under given encodings](is-poly-time-with-encoding.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.Complexity](../../../../sources/v2/MathlibExt.md)
+- inlined from FormalConjectures (absent from Mathlib).

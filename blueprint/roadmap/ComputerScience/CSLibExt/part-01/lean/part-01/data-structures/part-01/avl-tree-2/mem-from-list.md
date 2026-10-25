@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.mem_fromList
 ---
 
-# Mem from List
+# Membership in an AVL tree built from a list
 
-A key is in a tree built from a list exactly when it is in the list.
+**Membership in an AVL tree built from a list.** Let the keys be linearly ordered. A key lies
+in the tree obtained by inserting the entries of a list one at a time, from last to first, into
+the empty tree exactly when it is in the list.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Tree](tree.md)
-- [From List](from-list.md)
+- [Membership in an AVL tree](mem.md)
+- [Binary trees with cached heights](tree.md)
+- [Building an AVL tree from a list](from-list.md)
 
 ## Proof depends on
 
-- [Insert](insert.md)
-- [Mem insert](mem-insert.md)
+- [Insertion into an AVL tree](insert.md)
+- [Membership after insertion into an AVL tree](mem-insert.md)
 
 ## Sources
 

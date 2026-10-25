@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Language.HomImage.advance
 ---
 
-# Advance
+# Next state while spelling out a letter's image
 
-After spelling out position `i` of `φ a` from `q`: the next position, or `M.step q a` at the
-end.
+**Next state while spelling out a letter's image.** Let $M$ be a DFA over a finite alphabet $T$
+with transition function $\delta$, and let $\varphi$ map each letter of $T$ to a word over $T'$. For
+a state $q$ of $M$, a letter $a$ and a natural number $i$, the state reached after emitting position
+$i$ (counted from $0$) of $\varphi(a)$ from $q$ is the intermediate state $(q, a, i + 1)$ of the
+ε-NFA if $i + 1 < |\varphi(a)|$, and the state $\delta(q, a)$ of $M$ otherwise.
 
 ## Depends on
 
-- [State](state.md)
+- [States of the homomorphic-image ε-NFA](state.md)
 
 ## Proof depends on
 
-- [Bound](bound.md)
+- [Maximal length of the image of a letter](bound.md)
 
 ## Sources
 

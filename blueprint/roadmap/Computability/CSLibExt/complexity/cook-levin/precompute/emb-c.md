@@ -20,7 +20,7 @@ on each counter).
 - [Counters of the counter program](cc.md)
 - [Stacks of the full machine](fk.md)
 - [Alphabets of the full machine](f.md)
-- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 

@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.greedySetCover_length_le
 ---
 
-# Greedy Set Cover length le
+# The greedy set cover is a cover
 
-If every element of `U` lies in some set of `F`, the greedy result covers `U`. -/
+**The greedy set cover is a cover.** Let $F$ be a list of finite sets and $U$ a finite set
+such that every element of $U$ lies in some set of $F$. Then every element of $U$ lies in some
+set of the list returned by the greedy set cover algorithm on $F$ and $U$. -/
 theorem greedySetCover_covers (F : List (Finset α)) (U : Finset α)
     (hU : ∀ x ∈ U, ∃ S ∈ F, x ∈ S) : ∀ x ∈ U, ∃ S ∈ (greedySetCover F U).ret, x ∈ S := by
   induction h : U.card using Nat.strong_induction_on generalizing U with
@@ -31,11 +33,11 @@ theorem greedySetCover_covers (F : List (Finset α)) (U : Finset α)
 
 ## Depends on
 
-- [Greedy Set Cover](greedy-set-cover.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
-- [Best Set](best-set.md)
+- [Greedy choice of a set](best-set.md)
 
 ## Sources
 

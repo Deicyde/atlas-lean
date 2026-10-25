@@ -35,14 +35,14 @@ concatenation of the tokens of the items $l_1, \dots, l_k$ followed by those of 
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [D Tok](d-tok.md)
 - [Emitter run over one literal occurrence](lit-run.md)
 - [Bits pushed by a walk of the CLIQUE emitter](walk-bits.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

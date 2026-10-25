@@ -8,10 +8,13 @@ lean: Cslib.Computability.Turing.SingleTape.SingleTapeNTM.accepts_append
 
 # Acceptance is closed under extension on the right
 
-**Acceptance is closed under extension on the right** (a defect of the pinned definition):
-`TrLabel.read` cannot read a blank cell, so every cell that an accepting run on `xs` reads holds a
-symbol of `xs` or one the run wrote, and the same run accepts `xs ++ ys`. Fixed upstream by
-leanprover/cslib#1039.
+**Acceptance is closed under extension on the right.** If a single-tape nondeterministic
+Turing machine $m$ accepts a word $x$ over its tape alphabet, then $m$ accepts $xy$ for every word
+$y$ over that alphabet.
+
+This is a defect of CSLib's definition of these machines: a transition can only test the cell
+under the head for a symbol, never for a blank, so every cell that an accepting run on $x$ reads
+holds a letter of $x$ or one the run wrote, and the same run accepts $xy$.
 
 ## Depends on
 
@@ -24,3 +27,4 @@ This node has no prerequisites.
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Machines.Turing.SingleTape.Nondeterministic](../../../../../../../sources/v2/CSLibExt.md)
+- defect of the pinned CSLib definition, fixed upstream by leanprover/cslib#1039.

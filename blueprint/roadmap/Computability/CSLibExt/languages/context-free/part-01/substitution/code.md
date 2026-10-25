@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Language.Substitution.code
 ---
 
-# Code
+# Letter numbering for the substitution grammar
 
-A numbering of the letters of `g`: the position in `grammarTerminals g`.
+**Letter numbering for the substitution grammar.** For a context-free grammar $g$ and a
+letter $a$, the number of $a$ is the position (counted from $0$) of the first occurrence of $a$
+in the list of terminals occurring in the productions of $g$, or the length of that list when $a$
+does not occur in it.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Grammar Terminals](../chomsky-normal-form/grammar-terminals.md)
+- [Terminals of a grammar](../chomsky-normal-form/grammar-terminals.md)
 
 ## Sources
 

@@ -13,12 +13,12 @@ lean: Cslib.MachineLearning.Variational.kl_nonneg
 
 ## Depends on
 
-- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Probability distributions on a finite latent space](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
 - [Kl](kl.md)
 
 ## Proof depends on
 
-- [Gibbs' inequality](../../../part-01/latent-variable/expectation-maximization/sum-mul-log-sub-le.md)
+- [Gibbs' inequality (evidence lower bound form)](../../../part-01/latent-variable/expectation-maximization/sum-mul-log-sub-le.md)
 
 ## Sources
 

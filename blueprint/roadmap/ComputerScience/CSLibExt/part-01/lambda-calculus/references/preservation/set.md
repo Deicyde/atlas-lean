@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.StoreTyped.set
 ---
 
-# Set
+# Assignment preserves store typing
 
-Assignment: overwriting a location with a value of the type the store
-typing assigns to it keeps the store well typed (TAPL Lemma 13.5.5).
+**Assignment preserves store typing.** Let the store $\mu$ be well typed under the variable
+context $\Gamma$ and the store typing $S$, and let $l$ be a location to which $S$ assigns the
+type $T$. If $v$ is a value of type $T$ under $\Gamma$ and $S$, then the store obtained from
+$\mu$ by overwriting the entry at $l$ with $v$ is well typed under $\Gamma$ and $S$.
+
+This is TAPL Lemma 13.5.5.
 
 ## Depends on
 
-- [Has Type](../typing/has-type.md)
+- [Typing judgment for the lambda calculus with references](../typing/has-type.md)
 - [Store](../semantics/store.md)
 - [Store Typed](../typing/store-typed.md)
-- [Term](../syntax/term.md)
-- [Value](../syntax/value.md)
-- [Ty](../syntax/ty.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

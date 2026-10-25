@@ -12,7 +12,7 @@ lean: Cslib.MachineLearning.Variational.elbo_le_elbo_cavi₂
 
 ## Depends on
 
-- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Probability distributions on a finite latent space](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
 - [Cavi₂](cavi-2.md)
 - [Elbo](elbo.md)
 - [Prod Dist](prod-dist.md)

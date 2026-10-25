@@ -38,7 +38,7 @@ of length $n$.
 - [Step count of the dense CNF-SAT verifier](total-steps.md)
 - [Stack alphabets of the dense CNF-SAT verifier](untitled.md)
 - [Single-pass evaluation of a dense CNF encoding](../dense-sat/eval-cnf.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

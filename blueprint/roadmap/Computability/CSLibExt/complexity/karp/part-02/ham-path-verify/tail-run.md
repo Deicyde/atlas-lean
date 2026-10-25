@@ -27,19 +27,19 @@ $c + 1$, previous vertex $a$ and remaining vertices $q$.
 - [Stack layout during a vertex step](mid.md)
 - [Prog](prog.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [The repeat scan of the Hamiltonian path verifier](nd-run.md)
 - [Bit encoding of an edge list](../../part-01/color/edge-bits.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Incr](../../../../../MathlibExt/turing-machine/program/incr.md)
-- [Xfer run](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Adding units to target stacks](../../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Counter increment](../../../../../MathlibExt/turing-machine/program/incr.md)
+- [Running a counter transfer](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

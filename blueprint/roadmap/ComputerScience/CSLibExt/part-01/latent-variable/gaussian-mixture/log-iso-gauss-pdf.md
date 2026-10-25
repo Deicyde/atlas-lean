@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.MachineLearning.LatentVariable.GaussianMixture.log_isoGaussPDF
 ---
 
-# Log iso Gauss PDF
+# Log-density of the isotropic Gaussian
 
-The log-density: `log N(x | μ, v I) = -(d / 2) log (2 π v) - ‖x - μ‖² / (2 v)`.
+**Log-density of the isotropic Gaussian.** For $\mu, x \in \mathbb{R}^d$ and a variance
+$v > 0$, the isotropic Gaussian density $\mathcal{N}(x \mid \mu, v I)$ with mean $\mu$ and
+covariance $v I$ satisfies
+$\log \mathcal{N}(x \mid \mu, v I) = -\tfrac{d}{2} \log(2 \pi v) - \|x - \mu\|^2 / (2 v)$.
 
 ## Depends on
 
-- [Iso Gauss PDF](iso-gauss-pdf.md)
+- [Isotropic Gaussian density](iso-gauss-pdf.md)
 
 ## Sources
 

@@ -25,7 +25,7 @@ previous contents, and with every other stack unchanged.
 - [Prog](prog.md)
 - [The unary mover of the Hamiltonian path verifier](skip-u.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 

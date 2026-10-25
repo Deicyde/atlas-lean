@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Turing.Universal.Diag.readUnaryLength_eq_some_iff_cell
 ---
 
-# Read Unary Length eq some iff cell
+# Reading a unary length prefix reads one cell
 
-`readUnaryLength` reads one cell.
+**Reading a unary length prefix reads one cell.** For bit lists $x$ and $r$ and a natural
+number $n$, reading a unary length prefix of $x$ returns $n$ together with the rest $r$ if and
+only if $x$ is the cell of $n$ (that is, $n$ copies of $\mathrm{true}$ followed by
+$\mathrm{false}$) followed by $r$.
 
 ## Depends on
 
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Cell](../clocked/cell.md)
+- [The cell of a number](../clocked/cell.md)
 
 ## Proof depends on
 
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

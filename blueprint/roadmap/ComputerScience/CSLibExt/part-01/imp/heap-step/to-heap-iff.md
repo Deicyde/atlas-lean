@@ -6,29 +6,32 @@ proof: formalized
 lean: Cslib.IMP.HStep.toHeap_iff
 ---
 
-# To Heap iff
+# Heap steps of embedded commands are plain steps
 
-Steps of an embedded plain command are exactly the plain steps,
-with the heap unchanged.
+**Heap steps of embedded commands are plain steps.** Let $c$ be a plain IMP command, $s$ a
+store and $h$ a heap, and write $\overline{d}$ for the embedding of a plain command $d$ into the
+heap language. Then $(\overline{c}, s, h)$ takes a heap step to a heap configuration $K$ if and
+only if there are a plain command $c'$ and a store $s'$ such that $(c, s)$ takes a plain small
+step to $(c', s')$ and $K = (\overline{c'}, s', h)$.
 
 ## Depends on
 
-- [Cmd](../syntax/cmd.md)
-- [To Heap](to-heap.md)
-- [HConfig](hconfig.md)
-- [HStep](hstep.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Embedding of IMP into the heap language](to-heap.md)
+- [Heap configurations](hconfig.md)
+- [Small-step semantics of heap commands](hstep.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](heap-cmd.md)
-- [State](../syntax/state.md)
-- [Step](../small-step/step.md)
+- [Heap commands](heap-cmd.md)
+- [IMP program states](../syntax/state.md)
+- [IMP small-step relation](../small-step/step.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Config](../small-step/config.md)
+- [IMP configuration](../small-step/config.md)
 
 ## Sources
 

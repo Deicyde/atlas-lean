@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.ret_siftDown
 ---
 
-# Ret sift Down
+# Timed sift-down returns the sift-down result
 
-Erasing events recovers canonical sift-down for every array and index.
+**Timed sift-down returns the sift-down result.** For every array $a$ over a linearly
+ordered type and every index $i$, the array returned by timed sift-down from $i$, with its
+cost discarded, equals the array returned by sift-down from $i$.
 
 ## Depends on
 
-- [Sift Down](sift-down.md)
+- [Sift-down with comparison and swap counts](sift-down.md)
 - [Sift Down](../../../part-02/binary-heap/sift-down.md)
 
 ## Proof depends on
 
-- [Ret timed Smaller Child](ret-timed-smaller-child.md)
-- [Timed Smaller Child](timed-smaller-child.md)
+- [Timed child selection returns the smaller child](ret-timed-smaller-child.md)
+- [Timed smaller-child selection](timed-smaller-child.md)
 - [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
 - [Smaller Child gt](../../../part-02/binary-heap/smaller-child-gt.md)
 - [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)

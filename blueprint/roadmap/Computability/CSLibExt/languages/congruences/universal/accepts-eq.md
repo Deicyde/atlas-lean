@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Language.DFAHom.accepts_eq
 ---
 
-# Accepts eq
+# DFA morphisms preserve the accepted language
 
-A DFA morphism preserves the accepted language.
+**DFA morphisms preserve the accepted language.** If $f$ is a morphism from a DFA $M$ to a DFA
+$N$ over the same alphabet, then $M$ and $N$ accept the same language.
 
 ## Depends on
 
-- [DFAHom](dfahom.md)
+- [Morphisms of DFAs](dfahom.md)
 
 ## Proof depends on
 
-- [Map eval](map-eval.md)
+- [DFA morphisms commute with evaluation](map-eval.md)
 
 ## Sources
 

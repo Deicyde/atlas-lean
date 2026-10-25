@@ -5,20 +5,22 @@ statement: formalized
 lean: Cslib.HindleyMilner.Ctx.MoreGeneral
 ---
 
-# More General
+# More general context
 
-`Γ'` is more general than `Γ`: the same names are visible, each with a more general
-scheme. Only lookups matter, so shadowed bindings play no role.
+**More general context.** A context $\Gamma'$ is more general than a context $\Gamma$ when the
+same names are visible in both and, for each such name $x$, the visible scheme of $x$ in $\Gamma'$
+is more general than its visible scheme in $\Gamma$. Only lookups matter, so shadowed bindings
+play no role.
 
 ## Depends on
 
-- [Ctx](ctx.md)
+- [Typing context](ctx.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
-- [Scheme](scheme.md)
-- [More General](more-general.md)
+- [Context lookup](lookup.md)
+- [Type schemes](scheme.md)
+- [More general type scheme](more-general.md)
 
 ## Sources
 

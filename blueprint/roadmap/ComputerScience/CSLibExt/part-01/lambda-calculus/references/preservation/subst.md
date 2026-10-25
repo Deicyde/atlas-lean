@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.HasType.subst
 ---
 
-# Subst
+# Parallel substitution preserves typing
 
-Typing is preserved by substitutions that send each variable to a term of
-its type.
+**Parallel substitution preserves typing.** Let $\Gamma$ and $\Delta$ be variable contexts,
+$S$ a store typing, and $\sigma$ a substitution sending each variable index to a term, such
+that whenever $\Gamma$ assigns type $A$ to variable $x$, the term $\sigma(x)$ has type $A$ under
+$\Delta$ and $S$. If a term $t$ has type $T$ under $\Gamma$ and $S$, then the term obtained from
+$t$ by applying $\sigma$ has type $T$ under $\Delta$ and $S$.
 
 ## Depends on
 
-- [Has Type](../typing/has-type.md)
-- [Term](../syntax/term.md)
-- [Subst](../syntax/subst.md)
-- [Ty](../syntax/ty.md)
+- [Typing judgment for the lambda calculus with references](../typing/has-type.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Parallel substitution in a term](../syntax/subst.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Weaken](weaken.md)
-- [Lift Sub](../syntax/lift-sub.md)
+- [Weakening of typing](weaken.md)
+- [Lifting a substitution under a binder](../syntax/lift-sub.md)
 
 ## Sources
 

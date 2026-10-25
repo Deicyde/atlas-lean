@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Language.syntacticRel_mem_iff
 ---
 
-# Syntactic Rel mem iff
+# Syntactically equivalent words agree on membership
 
-Membership in `L` depends only on the syntactic class of a word.
+**Syntactically equivalent words agree on membership.** Let $L$ be a language over an
+alphabet $\Sigma$. If two words $x, y \in \Sigma^*$ are syntactically equivalent for $L$, then
+$x \in L$ if and only if $y \in L$.
 
 ## Depends on
 
-- [Syntactic Rel](syntactic-rel.md)
+- [Syntactic equivalence](syntactic-rel.md)
 
 ## Sources
 

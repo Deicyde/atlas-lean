@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.IMP.Denote.iff_bigStep
 ---
 
-# Iff big Step
+# Agreement of the denotational and big-step semantics of IMP
 
-The denotational and big-step semantics agree.
+**Agreement of the denotational and big-step semantics of IMP.** For every IMP command $c$
+and all states $s$ and $s'$, the relational denotation of $c$ relates $s$ to $s'$ if and only
+if executing $c$ from $s$ terminates in $s'$ according to the big-step semantics.
 
 ## Depends on
 
-- [Big Step](../big-step/big-step.md)
-- [Cmd](../syntax/cmd.md)
-- [Denote](denote.md)
-- [State](../syntax/state.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Relational denotational semantics of IMP](denote.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [Big Step of denote](big-step-of-denote.md)
-- [Denote of big Step](denote-of-big-step.md)
+- [Denotational executions are big-step executions](big-step-of-denote.md)
+- [Big-step executions are denotational executions](denote-of-big-step.md)
 
 ## Sources
 

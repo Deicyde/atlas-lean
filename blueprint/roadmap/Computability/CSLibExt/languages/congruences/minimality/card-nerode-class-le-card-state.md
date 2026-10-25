@@ -14,7 +14,7 @@ Then the number of Nerode classes of $L$ is at most $|Q|$.
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 
 ## Proof depends on
 

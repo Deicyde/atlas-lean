@@ -42,10 +42,10 @@ $\mathrm{dq}$. At $\mathrm{dq}$ it empties $Q$, then goes to $\mathrm{fin}(c)$.
 - [Offset of a clause's literal](off.md)
 - [Polarity of an accept clause's literal](sg.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Cmp Step](../../../../MathlibExt/turing-machine/program/cmp-step.md)
-- [Decr](../../../../MathlibExt/turing-machine/program/decr.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [One round of counter comparison](../../../../MathlibExt/turing-machine/program/cmp-step.md)
+- [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

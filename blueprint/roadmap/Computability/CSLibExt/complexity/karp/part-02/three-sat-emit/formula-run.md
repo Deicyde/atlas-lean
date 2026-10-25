@@ -35,14 +35,14 @@ and empty scratch counters, where $\mathrm{enc}$ is the binary clause encoding.
 - [Length-prefixed binary code of a clause](../../../../cook-levin/encode-clause.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [The 3SAT emitter processes one clause](clause-run.md)
 - [The chain of clauses replacing one clause](../three-sat/chain.md)
 - [Fresh variables reserved for a clause](../three-sat/used.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

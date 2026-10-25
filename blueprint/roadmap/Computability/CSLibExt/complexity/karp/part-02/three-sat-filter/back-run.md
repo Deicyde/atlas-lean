@@ -23,7 +23,7 @@ $R$, and empty side stack.
 - [The clause-length filter program](prog.md)
 - [Filter stacks from two lists](st.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 

@@ -6,20 +6,20 @@ navigation: module
 
 ## Variable bounds
 
-- [Vars Below](vars-below.md)
+- [Variables below a bound](vars-below.md)
 
 ## Freshness invariants of W
 
-- [Freshness](w-fresh.md)
+- [Freshness invariants of Algorithm W](w-fresh.md)
 
 ## Completeness
 
-- [Subst Ty gen more General](subst-ty-gen-more-general.md)
-- [Gen congr](gen-congr.md)
+- [Substituting into a generalization is more general](subst-ty-gen-more-general.md)
+- [Generalization depends only on the free variables of the context](gen-congr.md)
 - [Completeness of Algorithm W](w-complete.md)
 
 ## Principal types for closed expressions
 
-- [Infer complete](infer-complete.md)
-- [Infer is Some iff](infer-is-some-iff.md)
+- [Completeness of type inference for closed expressions](infer-complete.md)
+- [Type inference succeeds exactly on typable closed expressions](infer-is-some-iff.md)
 - [Principal types](infer-principal.md)

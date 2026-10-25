@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Turing.Universal.Code.evalSteps_eq_some_iff_output
 ---
 
-# Eval Steps eq some iff output
+# Characterization of clocked results
 
-The value of `evalSteps`, when defined, is the output of the clocked configuration.
+**Characterization of clocked results.** For a code $c$, a list of bits $x$, a clock
+$T \in \mathbb{N}$ and a list $l$ of natural numbers, the clocked evaluator returns $l$ on $c$,
+$x$ and $T$ if and only if the configuration of $c$ after $T$ clocked steps on $x$ has no
+successor step and its output is $l$.
 
 ## Depends on
 
-- [Code](code.md)
-- [Cfg](cfg.md)
+- [Codes for single-tape machines](code.md)
+- [Explicit configurations](cfg.md)
 - [Output](output.md)
-- [Cfg After](cfg-after.md)
+- [Clocked configuration of a code](cfg-after.md)
 - [The clocked evaluator](eval-steps.md)
-- [Step](step.md)
+- [One step of a code](step.md)
 
 ## Sources
 

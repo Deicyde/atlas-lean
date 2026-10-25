@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.empty
 ---
 
-# Empty
+# Empty dynamic table
 
-The source's initially unallocated empty table.
+**Empty dynamic table.** The empty dynamic table is the table with no slots (capacity $0$)
+and item count $0$. It models a table before its first allocation.
 
 ## Depends on
 

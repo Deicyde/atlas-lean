@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.IMP.Heap.disjoint_singleton_left
 ---
 
-# Disjoint singleton left
+# Disjointness from a singleton heap
 
-A singleton heap is disjoint from a heap iff its address is unallocated.
+**Disjointness from a singleton heap.** For every address $a$, value $v$ and heap $h$, the
+singleton heap that stores $v$ at $a$ and allocates no other address is disjoint from $h$ if and
+only if $a$ is not allocated in $h$.
 
 ## Depends on
 

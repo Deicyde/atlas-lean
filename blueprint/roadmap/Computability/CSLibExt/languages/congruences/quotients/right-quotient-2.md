@@ -6,15 +6,19 @@ proof: formalized
 lean: Cslib.Language.Recognizes.rightQuotient
 ---
 
-# Right Quotient
+# Recognizers recognize right quotients
 
-A recognizer for `L` recognizes every right quotient of `L` using the same morphism.
+**Recognizers recognize right quotients.** Let $\varphi \colon A^* \to M$ be a monoid
+morphism from the free monoid on an alphabet $A$ to a monoid $M$ that recognizes a language $L$
+over $A$ through $P \subseteq M$, that is, a word $x$ lies in $L$ exactly when $\varphi(x) \in P$.
+Then for every word $u$ over $A$, $\varphi$ recognizes the right quotient $\{x \mid xu \in L\}$
+through the set $\{m \in M \mid m\, \varphi(u) \in P\}$.
 
 ## Depends on
 
-- [Recognizes](../recognition/recognizes.md)
-- [Right Quotient](right-quotient.md)
-- [Right Quotient Accept](right-quotient-accept.md)
+- [Recognition of a language by a monoid morphism](../recognition/recognizes.md)
+- [Right quotient of a language by a word](right-quotient.md)
+- [Accepting set for a right quotient](right-quotient-accept.md)
 
 ## Sources
 

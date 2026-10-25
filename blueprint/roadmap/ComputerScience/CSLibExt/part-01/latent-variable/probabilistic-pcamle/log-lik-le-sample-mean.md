@@ -8,17 +8,20 @@ lean: Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.logLik_le_sampleMean
 
 # The mean MLE is the sample mean
 
-**The mean MLE is the sample mean**, for any loading matrix `W` and `σ² > 0`.
+**The mean MLE is the sample mean.** Let $x_1, \dots, x_N \in \mathbb{R}^d$ be data with
+sample mean $\bar{x}$. For every $\mu \in \mathbb{R}^d$, every real $d \times q$ loading matrix
+$W$ and every real $\sigma^2 > 0$, the probabilistic PCA log-likelihood of the data at
+$(\mu, W, \sigma^2)$ is at most its value at $(\bar{x}, W, \sigma^2)$.
 
 ## Depends on
 
-- [Log Lik](log-lik.md)
-- [Sample Mean](sample-mean.md)
+- [Probabilistic PCA log-likelihood](log-lik.md)
+- [Sample mean](sample-mean.md)
 
 ## Proof depends on
 
-- [Log Lik of N eq zero](log-lik-of-n-eq-zero.md)
-- [Ppca Cov](ppca-cov.md)
+- [The log-likelihood of no data is zero](log-lik-of-n-eq-zero.md)
+- [Probabilistic PCA covariance](ppca-cov.md)
 - [Multivariate Gaussian PDFReal](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-density/multivariate-gaussian-pdfreal.md)
 - [The mean MLE](../../../../../Probability/MathlibExt/part-01/distributions/gaussian-mle/sum-mul-log-multivariate-gaussian-pdfrea-2.md)
 - [Weighted Mean](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-mean.md)

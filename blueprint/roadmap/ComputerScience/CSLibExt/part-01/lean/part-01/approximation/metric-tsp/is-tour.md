@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.IsTour
 ---
 
-# Is Tour
+# Tour of a vertex list
 
-A tour of the list `V` of distinct vertices lists each of them once.
+**Tour of a vertex list.** A list $H$ is a tour of a list $V$ of vertices when the vertices of
+$V$ are distinct and $H$ is a permutation of $V$: $H$ lists each vertex of $V$ exactly once and
+nothing else.
 
 ## Depends on
 

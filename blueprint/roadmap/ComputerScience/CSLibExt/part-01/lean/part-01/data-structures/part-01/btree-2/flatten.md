@@ -6,23 +6,25 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.flatten
 ---
 
-# Flatten
+# Inorder flattening of a B-tree
 
-The inorder flattening of a tree: the keys of a leaf in list order, and
-for an internal node the flattenings of the children interleaved with the
-separator keys. Children or keys beyond the interleaving pattern of a
-well-formed node are appended in order, so every key of the tree occurs in
-the flattening: surplus children contribute their flattenings in order and
-surplus keys contribute themselves in order (see `flatten_node_nil_cons`
-and `flatten_node_cons_nil`). Computed in linear time by `flattenAux`.
+**Inorder flattening of a B-tree.** The flattening of a raw B-tree is the list of its keys
+defined recursively: for a leaf it is the leaf's key list, and for an internal node with keys
+$k_1, k_2, \dots$ and children $c_1, c_2, \dots$ it is the flattening of $c_1$, then $k_1$, then
+the flattening of $c_2$, then $k_2$, and so on, alternating while both lists last; whatever
+remains of the longer list is then appended in order, each surplus child contributing its
+flattening and each surplus key contributing itself. In particular every key of the tree occurs
+in the flattening.
+
+The flattening is computed in linear time by an accumulator-passing auxiliary function.
 
 ## Depends on
 
-- [BTree](btree.md)
+- [Raw B-trees](btree.md)
 
 ## Proof depends on
 
-- [Flatten Aux](flatten-aux.md)
+- [Accumulating flattening of a B-tree](flatten-aux.md)
 
 ## Sources
 

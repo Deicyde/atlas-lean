@@ -8,30 +8,30 @@ lean: Cslib.Turing.Universal.isSome_decodeCodeCells_iff
 
 # Code stacks are recognized
 
-**Code stacks are recognized.** `decodeCodeCells x` is defined iff `x` is the code stack of a
-code.
+**Code stacks are recognized.** For every bit list $x$, the decoding of $x$ as a code
+succeeds iff $x$ is the code stack of some code.
 
 ## Depends on
 
-- [Code Cells](../clocked/code-cells.md)
-- [Code](../code/code.md)
+- [The code stack](../clocked/code-cells.md)
+- [Codes for single-tape machines](../code/code.md)
 - [Decode Code Cells](decode-code-cells.md)
 
 ## Proof depends on
 
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Cell](../clocked/cell.md)
-- [Cells](../clocked/cells.md)
-- [Entries](../clocked/entries.md)
-- [Entry Nums](../clocked/entry-nums.md)
-- [Lookup](../code/lookup.md)
-- [Cells Decode](cells-decode.md)
-- [Code Of Entries](code-of-entries.md)
-- [Entries Of Nums](entries-of-nums.md)
-- [Keys Ascend From](keys-ascend-from.md)
-- [Read Unary Length eq some iff cell](read-unary-length-eq-some-iff-cell.md)
-- [Code Cells of decode Code Cells eq some](code-cells-of-decode-code-cells-eq-some.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [The cell of a number](../clocked/cell.md)
+- [The cells of a list of numbers](../clocked/cells.md)
+- [Entries of a code](../clocked/entries.md)
+- [Numbers of a list of entries](../clocked/entry-nums.md)
+- [Table lookup of a code](../code/lookup.md)
+- [Decoding a list of cells](cells-decode.md)
+- [The code of a list of entries](code-of-entries.md)
+- [Reading entries from numbers](entries-of-nums.md)
+- [Ascending keys of a list of entries](keys-ascend-from.md)
+- [Reading a unary length prefix reads one cell](read-unary-length-eq-some-iff-cell.md)
+- [Decoding inverts the code stack](code-cells-of-decode-code-cells-eq-some.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

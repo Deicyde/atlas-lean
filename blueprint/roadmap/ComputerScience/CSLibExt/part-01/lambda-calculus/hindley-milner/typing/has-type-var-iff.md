@@ -8,7 +8,10 @@ lean: Cslib.HindleyMilner.hasType_var_iff
 
 # Substitution lemma
 
-**Substitution lemma**: `Γ ⊢ e : τ` gives `s Γ ⊢ e : s τ` for every type substitution. -/
+**Substitution lemma.** Let $\Gamma$ be a typing context, $e$ an expression and $\tau$ a
+monotype with $\Gamma \vdash e : \tau$. Then for every type substitution $s$,
+$s\Gamma \vdash e : s\tau$, where $s\Gamma$ applies $s$ to every scheme of $\Gamma$ and $s\tau$
+applies $s$ to $\tau$. -/
 theorem HasType.subst {Γ : Ctx B} {e : Expr} {τ : Ty B} (hτ : HasType Γ e τ) :
     ∀ s : Subst B, HasType (Γ.subst s) e (τ.subst s) := by
   induction hτ with
@@ -40,18 +43,18 @@ theorem HasType.subst {Γ : Ctx B} {e : Expr} {τ : Ty B} (hτ : HasType Γ e τ
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [Lookup](lookup.md)
-- [Expr](expr.md)
-- [Has Type](has-type.md)
-- [Scheme](scheme.md)
-- [Inst](inst.md)
-- [Ty](ty.md)
+- [Typing context](ctx.md)
+- [Context lookup](lookup.md)
+- [Expressions of the λ-calculus with let](expr.md)
+- [Hindley–Milner typing](has-type.md)
+- [Type schemes](scheme.md)
+- [Instantiation of a type scheme](inst.md)
+- [Monotypes](ty.md)
 
 ## Proof depends on
 
-- [Gen](gen.md)
-- [To Scheme](to-scheme.md)
+- [Generalization of a monotype](gen.md)
+- [Monotypes as type schemes](to-scheme.md)
 - [Term](../../../../part-02/unification/basic/term.md)
 
 ## Sources

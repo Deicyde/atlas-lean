@@ -6,47 +6,47 @@ navigation: module
 
 ## Halting within a number of steps
 
-- [Halts Within](halts-within.md)
-- [Mono](mono.md)
-- [Dom eval iff exists halts Within](dom-eval-iff-exists-halts-within.md)
+- [Bounded halting of a single-tape machine](halts-within.md)
+- [Halting within a bound is monotone in the bound](mono.md)
+- [Halting is halting within some number of steps](dom-eval-iff-exists-halts-within.md)
 
 ## Codes
 
-- [Code](code.md)
-- [Decode Stmt](decode-stmt.md)
-- [Bit Sym](bit-sym.md)
-- [Input](input.md)
-- [Equiv Table](equiv-table.md)
-- [Lookup](lookup.md)
-- [Machine](machine.md)
+- [Codes for single-tape machines](code.md)
+- [Decoding an action](decode-stmt.md)
+- [Symbol of an input bit](bit-sym.md)
+- [Input word of a list of bits](input.md)
+- [Codes as tables](equiv-table.md)
+- [Table lookup of a code](lookup.md)
+- [The machine of a code](machine.md)
 - [States](states.md)
 - [Codes denote finite machines](supports-machine.md)
 
 ## Explicit configurations
 
-- [Cfg](cfg.md)
-- [Equiv Prod](equiv-prod.md)
-- [To TM0](to-tm0.md)
-- [Act](act.md)
+- [Explicit configurations](cfg.md)
+- [Configurations as tuples](equiv-prod.md)
+- [TM0 configuration of a simulation configuration](to-tm0.md)
+- [Acting on a configuration](act.md)
 - [Output](output.md)
-- [Init](init.md)
-- [Step](step.md)
-- [Step Or Stay](step-or-stay.md)
-- [Cfg After](cfg-after.md)
+- [Initial configuration of the code simulation](init.md)
+- [One step of a code](step.md)
+- [One step of a code, or stay when halted](step-or-stay.md)
+- [Clocked configuration of a code](cfg-after.md)
 - [The clocked evaluator](eval-steps.md)
 
 ## Agreement with Mathlib's semantics
 
-- [Step to TM0](step-to-tm0.md)
-- [Init to TM0](init-to-tm0.md)
-- [Right₀ to TM0](right-to-tm0.md)
-- [Iterate step to TM0](iterate-step-to-tm0.md)
-- [Halts Within machine iff](halts-within-machine-iff.md)
-- [Is Some eval Steps iff step eq none](is-some-eval-steps-iff-step-eq-none.md)
+- [Explicit steps agree with the decoded machine](step-to-tm0.md)
+- [The explicit initial configuration is the machine's](init-to-tm0.md)
+- [The output of a configuration as a Mathlib half-tape](right-to-tm0.md)
+- [Iterated steps of the decoded machine](iterate-step-to-tm0.md)
+- [Bounded halting of a decoded machine through its simulation](halts-within-machine-iff.md)
+- [Definedness of the clocked evaluator](is-some-eval-steps-iff-step-eq-none.md)
 - [Clocked halting](is-some-eval-steps-iff.md)
-- [Eval Steps eq some iff output](eval-steps-eq-some-iff-output.md)
-- [Monotonicity](eval-steps-mono.md)
-- [Agreement with `TM0.eval`](eval-eq-some-of-eval-steps-eq-some.md)
+- [Characterization of clocked results](eval-steps-eq-some-iff-output.md)
+- [Monotonicity of the clocked evaluator](eval-steps-mono.md)
+- [Clocked results agree with the machine's semantics](eval-eq-some-of-eval-steps-eq-some.md)
 - [Unclocked halting](dom-eval-iff-exists-is-some-eval-steps.md)
 
 ## Every finite machine has a code
@@ -55,4 +55,4 @@ navigation: module
 
 ## Primitive recursiveness
 
-- [Computability](primrec-eval-steps.md)
+- [The clocked evaluator is primitive recursive](primrec-eval-steps.md)

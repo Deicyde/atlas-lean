@@ -30,7 +30,7 @@ that is the live value of $q$ in $es$, and with every other stack unchanged.
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Live value of a name in a table](../sat-verifier-spec/live-val.md)
 - [Table stack of an entry list](../sat-verifier-spec/tbl-stk.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

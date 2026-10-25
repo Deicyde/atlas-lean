@@ -12,24 +12,24 @@ lean: Cslib.Language.EncodedCFG.language_ofCFG
 
 ## Depends on
 
-- [Language](language.md)
-- [Of CFG](of-cfg.md)
+- [Language of an encoded grammar](language.md)
+- [Encoding of a context-free grammar](of-cfg.md)
 
 ## Proof depends on
 
-- [Encoded CFG](encoded-cfg.md)
-- [Decode Rule](decode-rule.md)
-- [Decode Symbol](decode-symbol.md)
-- [Encode Rule](encode-rule.md)
-- [Encode Symbol](encode-symbol.md)
-- [Map Rule nt Of Index nt Index](map-rule-nt-of-index-nt-index.md)
-- [Nt Index](nt-index.md)
-- [Nt Of](nt-of.md)
-- [Nt Of Index](nt-of-index.md)
-- [To CFG](to-cfg.md)
-- [Used NT](used-nt.md)
-- [Language eq of maps](language-eq-of-maps.md)
-- [Map Rule](../basic/map-rule.md)
+- [Encoded context-free grammars](encoded-cfg.md)
+- [Decoding a production](decode-rule.md)
+- [Decoding a grammar symbol](decode-symbol.md)
+- [Encoding a production](encode-rule.md)
+- [Encoding a grammar symbol](encode-symbol.md)
+- [Numbering the nonterminals of a production and back recovers it](map-rule-nt-of-index-nt-index.md)
+- [Numbering of nonterminals](nt-index.md)
+- [Nonterminal of a symbol](nt-of.md)
+- [Nonterminal with a given number](nt-of-index.md)
+- [Grammar denoted by an encoding](to-cfg.md)
+- [Nonterminals mentioned by a grammar](used-nt.md)
+- [Grammars with renamings in both directions generate the same language](language-eq-of-maps.md)
+- [Renaming the nonterminals of a production](../basic/map-rule.md)
 
 ## Sources
 

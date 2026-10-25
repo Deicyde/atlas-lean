@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.Target.Tm.shift
 ---
 
-# Shift
+# Shifting a target term
 
-Shift every free variable up by one.
+**Shifting a target term.** The shift of a target term $e$ is its renaming by the successor map
+$i \mapsto i + 1$: every free variable of $e$ goes up by one, and code bodies are left unchanged.
 
 ## Depends on
 
-- [Tm](tm.md)
+- [Target terms of closure conversion](tm.md)
 
 ## Proof depends on
 
-- [Rename](rename.md)
+- [Renaming target terms](rename.md)
 
 ## Sources
 

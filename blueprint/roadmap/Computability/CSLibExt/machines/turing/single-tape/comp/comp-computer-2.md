@@ -16,10 +16,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Comp Cfg Left](comp-cfg-left.md)
-- [Comp Cfg Right](comp-cfg-right.md)
-- [Transition Relation comp Cfg Left](transition-relation-comp-cfg-left.md)
-- [Transition Relation comp Cfg Right](transition-relation-comp-cfg-right.md)
+- [Embedding the first machine's configurations into a composite](comp-cfg-left.md)
+- [Embedding the second machine's configurations into a composite](comp-cfg-right.md)
+- [The composite simulates steps of the first machine](transition-relation-comp-cfg-left.md)
+- [The composite simulates steps of the second machine](transition-relation-comp-cfg-right.md)
 
 ## Sources
 

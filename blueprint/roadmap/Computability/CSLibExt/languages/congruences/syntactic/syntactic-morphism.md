@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Language.syntacticMorphism
 ---
 
-# Syntactic Morphism
+# Syntactic morphism
 
-The canonical morphism from words to their syntactic classes.
+**Syntactic morphism.** For a language $L$ over an alphabet $\Sigma$, the syntactic morphism
+of $L$ is the monoid homomorphism from the free monoid $\Sigma^*$ of words to the syntactic
+monoid of $L$ that sends each word to its class under the syntactic congruence of $L$.
 
 ## Depends on
 
 - [Syntactic Monoid](syntactic-monoid.md)
-- [Syntactic Con](syntactic-con.md)
+- [Syntactic congruence](syntactic-con.md)
 
 ## Sources
 

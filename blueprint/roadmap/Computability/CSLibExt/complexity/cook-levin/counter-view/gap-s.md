@@ -36,18 +36,18 @@ with $F$ except that $F'(P) = q$, and $y^g o$ is $g$ copies of $y$ followed by $
 - [Stacks of a counter machine](sk.md)
 - [Alphabets of a counter machine](s.md)
 - [Stacks holding given counter values](st.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Cmp Step](../../../../MathlibExt/turing-machine/program/cmp-step.md)
-- [Decr](../../../../MathlibExt/turing-machine/program/decr.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [One round of counter comparison](../../../../MathlibExt/turing-machine/program/cmp-step.md)
+- [Decrement](../../../../MathlibExt/turing-machine/program/decr.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Proof depends on
 
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Emit Diff run](../../../../MathlibExt/turing-machine/program/emit-diff-run.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Gap emission](../../../../MathlibExt/turing-machine/program/emit-diff-run.md)
 
 ## Sources
 

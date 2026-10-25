@@ -6,10 +6,14 @@ proof: formalized
 lean: Cslib.Language.IsContextFree.homImage
 ---
 
-# Hom
+# Context-free languages are closed under homomorphic images
 
-Homomorphic images of context-free languages are context-free: expand
-every terminal `a` in every production to the word `φ a`.
+**Context-free languages are closed under homomorphic images.** Let $T$ and $T'$ be alphabets,
+$L$ a context-free language over $T$, and $\varphi$ a map sending each letter of $T$ to a word
+over $T'$. Then the language of all words $\varphi(a_1) \cdots \varphi(a_n)$ with
+$a_1 \cdots a_n \in L$ is context-free.
+
+A grammar for it replaces every terminal $a$ in every production by the word $\varphi(a)$.
 
 ## Depends on
 
@@ -17,14 +21,14 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Valuation](basic/is-valuation.md)
-- [Eval Form](basic/eval-form.md)
-- [Eval Form append](basic/eval-form-append.md)
-- [Eval Form map terminal](basic/eval-form-map-terminal.md)
-- [Eval Symbol](basic/eval-symbol.md)
-- [Is Valuation language From](basic/is-valuation-language-from.md)
-- [Language From](basic/language-from.md)
-- [Language le of valuation](basic/language-le-of-valuation.md)
+- [Valuation of a grammar](basic/is-valuation.md)
+- [Interpretation of a sentential form](basic/eval-form.md)
+- [Interpretation of a concatenation](basic/eval-form-append.md)
+- [A terminal word denotes its singleton](basic/eval-form-map-terminal.md)
+- [Interpretation of a grammar symbol](basic/eval-symbol.md)
+- [The languages generated from each nonterminal form a valuation](basic/is-valuation-language-from.md)
+- [Language generated from a nonterminal](basic/language-from.md)
+- [Valuations bound the language of a grammar](basic/language-le-of-valuation.md)
 
 ## Sources
 

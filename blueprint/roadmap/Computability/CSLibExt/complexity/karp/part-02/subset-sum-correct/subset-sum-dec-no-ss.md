@@ -19,8 +19,8 @@ target $1$ is a no-instance: the SUBSET-SUM decision problem returns false on it
 ## Proof depends on
 
 - [Bit-string encoding of SUBSET-SUM instances](../subset-sum/encode-ss.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

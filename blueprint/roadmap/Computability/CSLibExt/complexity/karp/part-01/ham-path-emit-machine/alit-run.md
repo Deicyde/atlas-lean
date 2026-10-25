@@ -39,7 +39,7 @@ followed by the old contents of $F$, and $V$ to $\mathrm{vstk}(\mathrm{ins}(x, \
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -48,12 +48,12 @@ followed by the old contents of $F$, and $V$ to $\mathrm{vstk}(\mathrm{ins}(x, \
 - [HAMPATH emitter, phase A: searching the variable stack for a name](aw-run.md)
 - [Variable-stack symbols of the HAMPATH emitter](is-vs.md)
 - [Name of a variable in the HAMPATH emitter](name.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Is Bit Block](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit blocks](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Running the bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

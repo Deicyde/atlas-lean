@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.mem_neighbors_addEdge_iff
 ---
 
-# Mem neighbors add Edge iff
+# Out-neighbors after adding an edge
 
-The neighbor list after insertion, characterized by membership.
+**Out-neighbors after adding an edge.** Let $m$ be an adjacency matrix on the vertex set
+$\{0, \dots, n-1\}$ and let $i, j, b$ be vertices. Then $b$ belongs to the out-neighbor list of
+$i$ in the graph obtained from $m$ by adding the edge from $i$ to $j$ if and only if $b = j$ or
+$b$ belongs to the out-neighbor list of $i$ in $m$.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
-- [Add Edge](add-edge.md)
-- [Neighbors](neighbors.md)
+- [Adjacency matrix](adjacency-matrix.md)
+- [Edge insertion in an adjacency matrix](add-edge.md)
+- [Out-neighbor list](neighbors.md)
 
 ## Proof depends on
 
-- [Has Edge](has-edge.md)
-- [Has Edge add Edge iff](has-edge-add-edge-iff.md)
-- [Mem neighbors](mem-neighbors.md)
+- [Edge query of an adjacency matrix](has-edge.md)
+- [Edges after inserting an edge](has-edge-add-edge-iff.md)
+- [The out-neighbor list matches the edge query](mem-neighbors.md)
 
 ## Sources
 

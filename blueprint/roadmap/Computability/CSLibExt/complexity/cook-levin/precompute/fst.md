@@ -28,7 +28,7 @@ During the read loop, $s$ is the unread rest of the input and $w$ holds the code
 - [Counters of the initial-row generator](../init-family/ck.md)
 - [Scratch counters of the counter program](ps.md)
 - [Counters of the cell-shift generator](../shift/ck.md)
-- [Cnt](../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

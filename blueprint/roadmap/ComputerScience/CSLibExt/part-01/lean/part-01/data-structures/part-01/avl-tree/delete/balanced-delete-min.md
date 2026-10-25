@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.balanced_deleteMin
 ---
 
-# Balanced delete Min
+# Minimum deletion preserves AVL balance
 
-`deleteMin` preserves the AVL balance invariant.
+**Minimum deletion preserves AVL balance.** Let $t$ be a binary tree with a cached height at
+each node whose cached heights are correct, and which is balanced: at every node the cached heights
+of the two subtrees differ by at most one. Then the tree obtained from $t$ by minimum deletion
+(removing its leftmost key, rebalancing on the way back up) is again balanced.
 
 ## Depends on
 
-- [Balanced](../../avl-tree-2/balanced.md)
-- [Cache Correct](../../avl-tree-2/cache-correct.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Delete Min](delete-min.md)
+- [AVL balance invariant](../../avl-tree-2/balanced.md)
+- [Correct cached heights](../../avl-tree-2/cache-correct.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [Minimum deletion in an AVL tree](delete-min.md)
 
 ## Proof depends on
 
-- [Balanced erase Min](balanced-erase-min.md)
+- [Removing the minimum preserves AVL balance](balanced-erase-min.md)
 
 ## Sources
 

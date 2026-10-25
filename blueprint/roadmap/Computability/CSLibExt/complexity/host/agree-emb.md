@@ -19,11 +19,11 @@ for every stack $k$ of $c$, the host's copy of $k$ holds exactly $S(k)$.
 - [Stacks of the generic host](hk.md)
 - [Alphabets of the generic host](h.md)
 - [The component's stacks inside a host](emb.md)
-- [Agree](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
+- [Agreement of host and sub-machine stacks](../../../MathlibExt/turing-machine/stack-embedding/agree.md)
 
 ## Proof depends on
 
-- [SEmb](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Sources
 

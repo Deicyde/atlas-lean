@@ -15,15 +15,15 @@ polynomial-time computable, where pairs of bit strings carry their canonical bit
 ## Depends on
 
 - [Dense CNF-SAT certificate check](../dense-sat/check.md)
-- [Bitstring Encoding](../../../MathlibExt/complexity/bitstring-encoding.md)
-- [Bit Decode](../../../MathlibExt/complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../../MathlibExt/complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../../MathlibExt/complexity/bit-encode.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
-- [Undelimit Blocks](../../../MathlibExt/complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../../MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Is Poly Time](../../../MathlibExt/complexity/is-poly-time.md)
+- [Bitstring encodings](../../../MathlibExt/complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../../MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../../MathlibExt/complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../../MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Polynomial-time computable functions](../../../MathlibExt/complexity/is-poly-time.md)
 
 ## Proof depends on
 
@@ -31,7 +31,7 @@ polynomial-time computable, where pairs of bit strings carry their canonical bit
 - [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
 - [Pair encoding $w \# y$](../dense-satverifier/pair-encode.md)
 - [Polynomial-time verifier for dense CNF-SAT](../dense-satverifier/verifier.md)
-- [Tm2 Computable In Poly Time comp](../../../MathlibExt/turing-machine/composition/tm2-computable-in-poly-time-comp.md)
+- [Polynomial-time TM2-computable functions are closed under composition](../../../MathlibExt/turing-machine/composition/tm2-computable-in-poly-time-comp.md)
 
 ## Sources
 

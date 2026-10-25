@@ -18,9 +18,9 @@ read over the extended alphabet, each letter $t$ of $T$ replaced by the correspo
 - [Alphabet of the reduction from universality to regularity](letter.md)
 - [Grammar of the reduction from universality to regularity](reg-grammar.md)
 - [Alphabet letters in the extended alphabet](tl.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Language From](../../../languages/context-free/part-01/basic/language-from.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Language generated from a nonterminal](../../../languages/context-free/part-01/basic/language-from.md)
 
 ## Proof depends on
 
@@ -28,11 +28,11 @@ read over the extended alphabet, each letter $t$ of $T$ replaced by the correspo
 - [Shifted right-hand sides generate the images of words](mem-eval-form-shift-of.md)
 - [Every production of the regularity grammar is sound for its intended languages](mem-language-from-of-mem-rules.md)
 - [Shift Rule](shift-rule.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Is Valuation](../../../languages/context-free/part-01/basic/is-valuation.md)
-- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
-- [Eval Form le of derives](../../../languages/context-free/part-01/basic/eval-form-le-of-derives.md)
-- [Eval Form map terminal](../../../languages/context-free/part-01/basic/eval-form-map-terminal.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Valuation of a grammar](../../../languages/context-free/part-01/basic/is-valuation.md)
+- [Interpretation of a sentential form](../../../languages/context-free/part-01/basic/eval-form.md)
+- [Derivations shrink interpretations under a valuation](../../../languages/context-free/part-01/basic/eval-form-le-of-derives.md)
+- [A terminal word denotes its singleton](../../../languages/context-free/part-01/basic/eval-form-map-terminal.md)
 
 ## Sources
 

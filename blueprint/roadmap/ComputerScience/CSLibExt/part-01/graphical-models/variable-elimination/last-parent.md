@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.MachineLearning.GraphicalModels.TreeModel.lastParent
 ---
 
-# Last Parent
+# Parent of the last vertex
 
-The parent of the last vertex, as a vertex of the smaller tree.
+**Parent of the last vertex.** In a pairwise tree model on the vertices $0, \dots, n + 1$, this
+is the parent of the last vertex $n + 1$, regarded as one of the vertices $0, \dots, n$ of the tree
+with the last vertex removed.
 
 ## Depends on
 
-- [Tree Model](tree-model.md)
+- [Pairwise model on a tree](tree-model.md)
 
 ## Sources
 

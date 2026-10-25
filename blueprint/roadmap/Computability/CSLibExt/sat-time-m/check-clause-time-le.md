@@ -6,19 +6,24 @@ proof: formalized
 lean: Cslib.CookLevin.checkClause_time_le
 ---
 
-# Check Clause time le
+# Cost bound for the witness clause check
 
-A clause check costs at most one tick plus one lookup per literal.
+**Cost bound for the witness clause check.** Let $N$ be a list of natural numbers, $w$ a list
+of booleans and $C$ a CNF clause, viewed as a list of $\ell$ literals (repetitions counted). The
+cost of checking $C$ against $N$ and $w$ is at most $\ell \cdot (|N| + 1)$, where $|N|$ is the
+length of $N$.
+
+Each literal examined costs one tick plus one lookup, and a lookup costs at most $|N|$.
 
 ## Depends on
 
-- [Check Clause](check-clause.md)
+- [Clause check against a witness](check-clause.md)
 - [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 
-- [Lookup Var](lookup-var.md)
-- [Lookup Var time le](lookup-var-time-le.md)
+- [Witness lookup](lookup-var.md)
+- [Cost bound for witness lookup](lookup-var-time-le.md)
 
 ## Sources
 

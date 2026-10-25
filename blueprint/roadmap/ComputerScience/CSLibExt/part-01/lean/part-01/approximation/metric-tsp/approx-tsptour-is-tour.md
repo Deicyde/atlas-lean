@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.approxTSPTour_isTour
 ---
 
-# Approx TSPTour is Tour
+# The approximate TSP tour is a tour
 
-The result is a tour.
+**The approximate TSP tour is a tour.** Let $V$ be a list of distinct vertices, and let $r$
+and $F$ be such that $r$ followed by the vertices of the forest $F$ in preorder is a permutation
+of $V$ (the tree with root $r$ and subtree forest $F$ spans $V$). Then the list returned by
+`APPROX-TSP-TOUR` on $r$ and $F$ is a tour of $V$: it is a permutation of $V$.
 
 ## Depends on
 
-- [Forest](forest.md)
-- [Is Spanning](is-spanning.md)
-- [Is Tour](is-tour.md)
-- [Approx TSPTour](approx-tsptour.md)
+- [Rooted forest in left-child right-sibling form](forest.md)
+- [Rooted spanning tree of a vertex list](is-spanning.md)
+- [Tour of a vertex list](is-tour.md)
+- [The APPROX-TSP-TOUR algorithm](approx-tsptour.md)
 
 ## Proof depends on
 
-- [Preorder](preorder.md)
-- [Preorder Walk](preorder-walk.md)
-- [Preorder Walk Aux](preorder-walk-aux.md)
-- [Preorder Walk Aux ret](preorder-walk-aux-ret.md)
+- [Preorder of a forest](preorder.md)
+- [Preorder walk](preorder-walk.md)
+- [Preorder walk with an accumulator](preorder-walk-aux.md)
+- [The APPROX-TSP-TOUR algorithm](preorder-walk-aux-ret.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: Cslib.IMP.HAssertion
 ---
 
-# HAssertion
+# Heap assertion
 
-Heap assertions used as separation-logic preconditions and
-postconditions.
+**Heap assertion.** A heap assertion is a predicate on a store and a heap: it assigns a
+proposition to every store $s$ and every heap $h$. Heap assertions serve as the preconditions
+and postconditions of separation logic.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

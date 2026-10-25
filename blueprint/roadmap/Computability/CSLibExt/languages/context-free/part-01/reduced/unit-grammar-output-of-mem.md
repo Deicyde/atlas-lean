@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Language.unitGrammar_output_of_mem
 ---
 
-# Unit Grammar output of mem
+# Eliminating unit productions creates no new outputs
 
-The productions of `unitGrammar` have outputs of productions of the
-original grammar; in particular empty outputs are not created.
+**Eliminating unit productions creates no new outputs.** Let $g$ be a context-free
+grammar. For every production of the grammar obtained from $g$ by eliminating unit
+productions, some production of $g$ has the same output.
+
+In particular, empty outputs are not created.
 
 ## Depends on
 
-- [Unit Grammar](unit-grammar.md)
+- [Eliminating unit productions](unit-grammar.md)
 
 ## Proof depends on
 
-- [Is Unit Output](is-unit-output.md)
-- [Unit Steps](unit-steps.md)
-- [Cases of mem unit Grammar rules](cases-of-mem-unit-grammar-rules.md)
+- [Unit output](is-unit-output.md)
+- [Reachability by unit productions](unit-steps.md)
+- [Productions of the unit-eliminated grammar come from non-unit productions of $g$](cases-of-mem-unit-grammar-rules.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Syntactic Con](syntactic-con.md)
+- [Syntactic congruence](syntactic-con.md)
 
 ## Sources
 

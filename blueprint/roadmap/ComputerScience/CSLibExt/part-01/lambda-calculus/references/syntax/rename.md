@@ -5,18 +5,23 @@ statement: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Term.rename
 ---
 
-# Rename
+# Renaming the variables of a term
 
-Apply a variable renaming to a term. Locations are unchanged.
+**Renaming the variables of a term.** Given a renaming $\rho : \mathbb{N} \to \mathbb{N}$ of
+de Bruijn indices, renaming a term by $\rho$ replaces each variable $x$ by $\rho(x)$; renames
+the body of an abstraction $\lambda{:}T.\,t$ by the lift of $\rho$ (which sends $0$ to $0$ and
+each $x + 1$ to $\rho(x) + 1$), keeping the type annotation $T$; leaves the unit value and store
+locations unchanged; and acts componentwise on applications, allocations, dereferences and
+assignments.
 
 ## Depends on
 
-- [Term](term.md)
+- [Terms of the simply typed lambda calculus with references](term.md)
 
 ## Proof depends on
 
-- [Lift Ren](lift-ren.md)
-- [Ty](ty.md)
+- [Lifting a renaming under a binder](lift-ren.md)
+- [Types of the simply typed lambda calculus with references](ty.md)
 
 ## Sources
 

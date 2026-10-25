@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Turing.Universal.Code.equivTable
 ---
 
-# Equiv Table
+# Codes as tables
 
-Codes are their tables.
+**Codes as tables.** Codes correspond bijectively to transition tables, that is, to lists of
+rows, each a list of entries that are either empty or a pair of natural numbers: a code
+corresponds to its table.
 
 ## Depends on
 
-- [Code](code.md)
+- [Codes for single-tape machines](code.md)
 
 ## Sources
 

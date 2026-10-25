@@ -4,14 +4,14 @@ navigation: module
 
 # Probabilistic PCAMLE
 
-- [Ppca Cov](ppca-cov.md)
+- [Probabilistic PCA covariance](ppca-cov.md)
 - [The density of the probabilistic PCA observation](ppca-map-eq-with-density.md)
-- [Log Lik](log-lik.md)
-- [Sample Mean](sample-mean.md)
-- [Sample Cov](sample-cov.md)
-- [Log Lik of N eq zero](log-lik-of-n-eq-zero.md)
+- [Probabilistic PCA log-likelihood](log-lik.md)
+- [Sample mean](sample-mean.md)
+- [Sample covariance](sample-cov.md)
+- [The log-likelihood of no data is zero](log-lik-of-n-eq-zero.md)
 - [The mean MLE is the sample mean](log-lik-le-sample-mean.md)
 - [The probabilistic PCA likelihood is at most the unconstrained Gaussian maximum](log-lik-le-gaussian-mle.md)
-- [Is MLE](is-mle.md)
-- [Exact recovery](is-mle-of-sample-cov-eq.md)
-- [No latent factors (`W = 0`): the noise-variance MLE is `tr S / d`](log-lik-zero-le.md)
+- [Probabilistic PCA maximum-likelihood estimate](is-mle.md)
+- [Probabilistic PCA MLE when the sample covariance has the model form](is-mle-of-sample-cov-eq.md)
+- [No latent factors: the noise-variance MLE is the average sample variance](log-lik-zero-le.md)

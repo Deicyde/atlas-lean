@@ -6,13 +6,13 @@ navigation: module
 
 ## Generic bookkeeping lemmas
 
-- [Store Irrel](store-irrel.md)
-- [Frame of store Irrel](frame-of-store-irrel.md)
-- [Star and left](star-and-left.md)
-- [Star swap right](star-swap-right.md)
+- [Store-irrelevant heap assertions](store-irrel.md)
+- [Store-irrelevant frames satisfy the frame-rule side condition](frame-of-store-irrel.md)
+- [Pulling a store fact out of a separating conjunction](star-and-left.md)
+- [Rearranging a separating conjunction](star-swap-right.md)
 
 ## Framed one-cell steps
 
-- [Read local](read-local.md)
-- [Assign step](assign-step.md)
-- [Exists](exists.md)
+- [Rearranging a separating conjunction](read-local.md)
+- [Assignment rule with a store-irrelevant heap assertion](assign-step.md)
+- [Existential rule for separation-logic triples](exists.md)

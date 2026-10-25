@@ -25,14 +25,14 @@ by $F$.
 - [The HAMPATH emitter machine](../ham-path-emit-machine/prog.md)
 - [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
-- [Is Bit](../../../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Bit on top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Bit test for the top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
 
 ## Sources
 

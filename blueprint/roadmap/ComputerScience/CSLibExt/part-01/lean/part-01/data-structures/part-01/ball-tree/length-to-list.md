@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BallTree.length_toList
 ---
 
-# Length to List
+# Number of points of a ball tree
 
-The length of the point list is the size of the tree.
+**Number of points of a ball tree.** For every ball tree $t$, the list of points stored in
+$t$, read from left to right, has length equal to the size of $t$.
 
 ## Depends on
 
-- [Ball Tree](ball-tree.md)
-- [Size](size.md)
-- [To List](to-list.md)
+- [Ball tree](ball-tree.md)
+- [Size of a ball tree](size.md)
+- [Point list of a ball tree](to-list.md)
 
 ## Proof depends on
 
-- [To List Aux](to-list-aux.md)
+- [Accumulating traversal of a ball tree](to-list-aux.md)
 
 ## Sources
 

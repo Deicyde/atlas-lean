@@ -6,24 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.typeSafety_empty
 ---
 
-# Type Safety empty
+# Type safety from the empty store
 
-Type safety for programs: a closed term typed under the empty store typing,
-run from the empty store, never gets stuck.
+**Type safety from the empty store.** A closed term typed under the empty store typing, run
+from the empty store, never gets stuck: every term it reaches in zero or more steps, together
+with the store reached alongside it, is a value or can take a further step.
 
 ## Depends on
 
-- [Has Type](../typing/has-type.md)
+- [Typing judgment for the lambda calculus with references](../typing/has-type.md)
 - [Step](../semantics/step.md)
-- [Steps](../semantics/steps.md)
+- [Multi-step evaluation with references](../semantics/steps.md)
 - [Store](../semantics/store.md)
-- [Term](../syntax/term.md)
-- [Value](../syntax/value.md)
-- [Ty](../syntax/ty.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Type Safety](type-safety.md)
+- [Type safety](type-safety.md)
 
 ## Sources
 

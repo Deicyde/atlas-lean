@@ -6,14 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BallTree.toListAux
 ---
 
-# To List Aux
+# Accumulating traversal of a ball tree
 
-Accumulator traversal collecting the points of a tree in front of
-`acc`, from left to right, in linear time.
+**Accumulating traversal of a ball tree.** For a ball tree $T$ and a list $A$ of points, the
+accumulating traversal returns $A$ when $T$ is empty, the point $p$ followed by $A$ when $T$ is a
+leaf holding $p$, and, when $T$ is a node with children $L$ and $R$, the accumulating traversal of
+$L$ whose accumulator is the accumulating traversal of $R$ with accumulator $A$.
+
+The result is the leaf points of $T$, from left to right, followed by $A$.
 
 ## Depends on
 
-- [Ball Tree](ball-tree.md)
+- [Ball tree](ball-tree.md)
 
 ## Sources
 

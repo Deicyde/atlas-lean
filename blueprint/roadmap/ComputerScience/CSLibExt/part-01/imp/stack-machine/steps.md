@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.IMP.StackMachine.Steps
 ---
 
-# Steps
+# Multi-step execution of the stack machine
 
-Finite sequences of machine steps.
+**Multi-step execution of the stack machine.** For a program $P$, the multi-step relation on
+configurations is the reflexive transitive closure of the step relation of the stack machine
+running $P$: it relates $c$ to $c'$ when $c'$ is obtained from $c$ by zero or more steps.
 
 ## Depends on
 
-- [Config](config.md)
-- [Instr](instr.md)
+- [Stack machine configurations](config.md)
+- [Stack machine instructions](instr.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [Step relation of the stack machine](step.md)
 
 ## Sources
 

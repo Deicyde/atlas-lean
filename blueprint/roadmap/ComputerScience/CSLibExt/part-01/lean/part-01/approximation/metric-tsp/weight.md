@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.Forest.weight
 ---
 
-# Weight
+# Weight of a forest below a vertex
 
-The total cost of the tree edges when the forest hangs below the vertex `p`: each top-level
-vertex is joined to `p`, and each vertex to its children.
+**Weight of a forest below a vertex.** For a cost function $d$ and a vertex $p$, the weight
+of a forest hanging below $p$ is the total cost of its tree edges: each top-level vertex $v$ is
+joined to $p$ by an edge of cost $d(p, v)$, and each vertex $u$ is joined to each of its children
+$c$ by an edge of cost $d(u, c)$. The empty forest has weight $0$.
 
 ## Depends on
 
-- [Forest](forest.md)
+- [Rooted forest in left-child right-sibling form](forest.md)
 
 ## Sources
 

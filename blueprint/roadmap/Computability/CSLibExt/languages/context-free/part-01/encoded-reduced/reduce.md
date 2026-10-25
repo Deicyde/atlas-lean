@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.reduce
 ---
 
-# Reduce
+# Reduction of an encoded grammar
 
-Remove empty productions, then unit productions.
+**Reduction of an encoded grammar.** For an encoded context-free grammar $g$, the encoded
+grammar obtained by first removing the empty productions of $g$ (encoded
+$\varepsilon$-elimination) and then removing the unit productions of the result (encoded unit
+elimination).
 
 ## Depends on
 
-- [Encoded CFG](../encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../encoded/encoded-cfg.md)
 
 ## Proof depends on
 
-- [Eps Elim](eps-elim.md)
-- [Unit Elim](unit-elim.md)
+- [Removing empty productions from an encoded grammar](eps-elim.md)
+- [Unit elimination for encoded grammars](unit-elim.md)
 
 ## Sources
 

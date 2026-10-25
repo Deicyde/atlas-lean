@@ -6,27 +6,31 @@ proof: formalized
 lean: Cslib.HindleyMilner.not_hasType_lam_self_app
 ---
 
-# Self-application has no type
+# The abstraction $\lambda f.\, f\, f$ has no type
 
-**Self-application has no type**: in `λf. f f`, `f` is λ-bound and so monomorphic.
+**The abstraction $\lambda f.\, f\, f$ has no type.** For every typing context $\Gamma$,
+every variable name $f$ and every monotype $\tau$, the judgment
+$\Gamma \vdash \lambda f.\, f\, f : \tau$ does not hold.
+
+The λ-bound variable $f$ is monomorphic, so it cannot be applied to itself.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [Expr](expr.md)
-- [Has Type](has-type.md)
-- [Ty](ty.md)
+- [Typing context](ctx.md)
+- [Expressions of the λ-calculus with let](expr.md)
+- [Hindley–Milner typing](has-type.md)
+- [Monotypes](ty.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
-- [Scheme](scheme.md)
-- [Eval](eval.md)
-- [Inst](inst.md)
-- [Gen](gen.md)
+- [Context lookup](lookup.md)
+- [Type schemes](scheme.md)
+- [Evaluation of a type scheme](eval.md)
+- [Instantiation of a type scheme](inst.md)
+- [Generalization of a monotype](gen.md)
 - [Substitution lemma](has-type-var-iff.md)
-- [Ne node self left](ne-node-self-left.md)
-- [To Scheme](to-scheme.md)
+- [No monotype is an arrow out of itself](ne-node-self-left.md)
+- [Monotypes as type schemes](to-scheme.md)
 - [Term](../../../../part-02/unification/basic/term.md)
 - [Subst](../../../../part-02/unification/basic/subst-2.md)
 

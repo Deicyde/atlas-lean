@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.Language.nonterminal_of_mem_chainForm
 ---
 
-# Nonterminal of mem chain Form
+# Chain forms consist of nonterminals
 
-Every symbol of a chain form is a nonterminal.
+**Chain forms consist of nonterminals.** For every list of stack symbols and every list of
+states, every symbol of their chain form is a nonterminal.
 
 ## Depends on
 
-- [Chain Form](chain-form.md)
+- [Chain of triple nonterminals](chain-form.md)
 
 ## Sources
 

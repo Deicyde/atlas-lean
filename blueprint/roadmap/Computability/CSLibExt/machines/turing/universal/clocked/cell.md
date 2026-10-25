@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Turing.Universal.Clocked.cell
 ---
 
-# Cell
+# The cell of a number
 
-A number as a cell of a stack: that many units (`true`), then a marker (`false`).
+**The cell of a number.** The cell of a natural number $n$ is the list of bits consisting of
+$n$ copies of the bit true (units) followed by one bit false (a marker).
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

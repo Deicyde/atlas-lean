@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.TM2Program.Bud
 ---
 
-# Bud
+# Budgeted run
 
-Budgeted run, for goal-directed chaining: `K` steps are already spent, the run from `c` to
-`d` takes `n` more, and `K + n ≤ X`. Chaining lemmas only extend `K`, so every implicit
-argument is fixed by first-order unification.
+**Budgeted run.** For a machine $M$, numbers $K, X \in \mathbb{N}$ and configurations $c$ and
+$d$, the budgeted run from $c$ to $d$ with $K$ steps already spent and budget $X$ holds when there
+is an $n \in \mathbb{N}$ with $K + n \le X$ such that $n$ steps of $M$ lead from $c$ to $d$.
+
+It is used for goal-directed chaining of runs: the chaining lemmas only increase $K$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Run](run.md)
+- [Exact-length runs of a TM2 machine](run.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Language.LeftDerivation.eq_of_terminal
 ---
 
-# Eq of terminal
+# Leftmost derivations from a word of terminals are empty
 
-From a word of terminals, the only leftmost derivation is the empty one.
+**Leftmost derivations from a word of terminals are empty.** Let $g$ be a context-free grammar
+and $u$ a word of terminals. If $u$ has a leftmost derivation in $g$ with list of rules $\rho$ to a
+word of terminals $w$, then $\rho$ is the empty list and $w = u$.
 
 ## Depends on
 

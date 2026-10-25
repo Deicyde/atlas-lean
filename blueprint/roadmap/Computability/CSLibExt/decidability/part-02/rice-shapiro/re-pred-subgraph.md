@@ -19,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists](../../../../MathlibExt/re/exists.md)
-- [Forall mem](../../../../MathlibExt/re/forall-mem.md)
+- [Existential projection preserves recursive enumerability](../../../../MathlibExt/re/exists.md)
+- [Bounded universal quantification preserves recursive enumerability](../../../../MathlibExt/re/forall-mem.md)
 
 ## Sources
 

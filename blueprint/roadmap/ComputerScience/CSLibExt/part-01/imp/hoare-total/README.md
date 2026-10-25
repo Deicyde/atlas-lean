@@ -6,19 +6,19 @@ navigation: module
 
 ## IMP
 
-- [TValid](tvalid.md)
+- [Validity of total-correctness Hoare triples](tvalid.md)
 
 ## TValid
 
-- [While Variant](while-variant.md)
-- [Valid](valid.md)
-- [Terminates](terminates.md)
+- [Variant rule for while loops](while-variant.md)
+- [Total correctness implies partial correctness](valid.md)
+- [Total correctness gives a terminating small-step run](terminates.md)
 
 ## IMP
 
-- [Wp](wp.md)
+- [Weakest precondition for total correctness](wp.md)
 
 ## Wp
 
-- [While iff](while-iff.md)
-- [Le wlp](le-wlp.md)
+- [Weakest-precondition unfolding of a while loop](while-iff.md)
+- [Total-correctness weakest precondition implies the weakest liberal precondition](le-wlp.md)

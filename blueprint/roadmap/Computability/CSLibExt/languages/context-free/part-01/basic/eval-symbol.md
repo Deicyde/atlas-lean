@@ -5,11 +5,11 @@ statement: formalized
 lean: Cslib.Language.evalSymbol
 ---
 
-# Eval Symbol
+# Interpretation of a grammar symbol
 
-The language a single grammar symbol denotes under an assignment `V` of
-languages to nonterminals: a terminal denotes its one-letter word, a
-nonterminal denotes its assigned language.
+**Interpretation of a grammar symbol.** Under an assignment $V$ of languages to nonterminals, a
+terminal $a$ denotes the language containing only the one-letter word $a$, and a nonterminal $A$
+denotes its assigned language $V(A)$.
 
 ## Depends on
 

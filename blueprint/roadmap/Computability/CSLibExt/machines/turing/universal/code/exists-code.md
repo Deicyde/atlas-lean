@@ -8,24 +8,32 @@ lean: Cslib.Turing.Universal.Code.exists_code
 
 # Universality of codes
 
-**Universality of codes**, for machines that read bit inputs. Every `TM0` machine with a
-finite alphabet, a finite set of states supporting it (`TM0.Supports`), and two distinct non-blank
-input symbols `ι false`, `ι true` has a code. (So the alphabet has at least three symbols; a
-machine over a smaller alphabet cannot read a bit input.) The code simulates it step for step after
-an injective relabelling `f` of the symbols, which sends the input symbols `ι b` to `bitSym b`: it
-has the same results up to `f` and halts within the same number of steps.
+**Universality of codes**, for machines that read bit inputs. Let $M$ be a single-tape
+Turing machine with a finite alphabet $\Gamma$ and a finite set of states that contains the
+initial state and is closed under the transitions of $M$, and let $\iota$ be an injective map
+from the bits to $\Gamma$ whose values are not the blank. Then there are a code $c$ and an
+injective map $f$ from $\Gamma$ to the natural numbers, sending the blank to $0$ and each
+$\iota(b)$ to the symbol of the bit $b$, such that for every word $l$ over $\Gamma$, writing
+$f(l)$ for the word obtained by applying $f$ to each letter: the decoded machine of $c$ halts on
+$f(l)$ exactly when $M$ halts on $l$, and its result (the tape from the head rightwards when it
+halts) is then the result of $M$ on $l$ with $f$ applied to each cell; and for every
+$T \in \mathbb{N}$, the decoded machine of $c$ halts within $T$ steps on $f(l)$ if and only if
+$M$ halts within $T$ steps on $l$.
+
+(So the alphabet has at least three symbols; a machine over a smaller alphabet cannot read a bit
+input.)
 
 ## Depends on
 
-- [Code](code.md)
-- [Machine](machine.md)
-- [Halts Within](halts-within.md)
-- [Bit Sym](bit-sym.md)
+- [Codes for single-tape machines](code.md)
+- [The machine of a code](machine.md)
+- [Bounded halting of a single-tape machine](halts-within.md)
+- [Symbol of an input bit](bit-sym.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
-- [Decode Stmt](decode-stmt.md)
+- [Table lookup of a code](lookup.md)
+- [Decoding an action](decode-stmt.md)
 
 ## Sources
 

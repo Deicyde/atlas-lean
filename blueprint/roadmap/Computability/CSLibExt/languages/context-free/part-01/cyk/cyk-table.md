@@ -5,10 +5,14 @@ statement: formalized
 lean: Cslib.Language.cykTable
 ---
 
-# Cyk Table
+# The CYK table
 
-The CYK table of `w` up to length `l`: one entry for each factor of `w` of length `1, …, l`,
-each cell computed from the entries of the shorter factors.
+**The CYK table.** The CYK table of a word $w$ up to length $l$ is a list of pairs of a word
+and a cell, defined by recursion on $l$. Up to length $0$ it is empty. The table up to length
+$l + 1$ is the table $t$ up to length $l$ followed by one entry for each position $i$ (counted
+from $0$) with $i + l + 1 \le |w|$, in increasing order of $i$: the factor $u$ of $w$ of length
+$l + 1$ starting at position $i$, together with the CYK cell of $u$ built from the cells recorded
+in $t$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cyk Cell From](cyk-cell-from.md)
-- [Cyk Lookup](cyk-lookup.md)
+- [The CYK cell built from given cells](cyk-cell-from.md)
+- [Looking up a word in a CYK table](cyk-lookup.md)
 
 ## Sources
 

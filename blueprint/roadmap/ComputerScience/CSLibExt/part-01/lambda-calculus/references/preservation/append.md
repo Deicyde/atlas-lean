@@ -6,23 +6,25 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.StoreTyped.append
 ---
 
-# Append
+# Allocation preserves store typing
 
-Allocation: appending a value of type `T` to a well-typed store gives a
-store that is well typed under the store typing extended by `T`.
+**Allocation preserves store typing.** Let $\Gamma$ be a variable context, $S$ a store
+typing and $\mu$ a store that is well typed under $\Gamma$ and $S$. If $v$ is a value of type
+$T$ under $\Gamma$ and $S$, then the store obtained by appending $v$ at the end of $\mu$ is well
+typed under $\Gamma$ and the store typing obtained by appending $T$ at the end of $S$.
 
 ## Depends on
 
-- [Has Type](../typing/has-type.md)
+- [Typing judgment for the lambda calculus with references](../typing/has-type.md)
 - [Store](../semantics/store.md)
 - [Store Typed](../typing/store-typed.md)
-- [Term](../syntax/term.md)
-- [Value](../syntax/value.md)
-- [Ty](../syntax/ty.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Extend Store](extend-store.md)
+- [Store-typing weakening](extend-store.md)
 - [Extend Store](extend-store-2.md)
 
 ## Sources

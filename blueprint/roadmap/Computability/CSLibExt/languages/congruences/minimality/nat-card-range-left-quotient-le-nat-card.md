@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 - [Nerode classes to DFA states](to-dfastate.md)
 - [Distinct Nerode classes reach distinct states](to-dfastate-injective.md)
 - [Nerode classes bound the number of DFA states](card-nerode-class-le-card-state.md)

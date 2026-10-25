@@ -17,7 +17,7 @@ def isEmptyB (g : EncodedCFG T) : Bool :=
 
 ## Depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [One round of the generating-nonterminal computation](gen-step.md)
 - [Generating nonterminals](generating.md)
 

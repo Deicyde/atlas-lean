@@ -22,8 +22,8 @@ recursively enumerable (recognizable).
 - [The universal description method](../basic/u.md)
 - [Shortest descriptions exist](../basic/exists-length-eq-k.md)
 - [The description relation is recognizable](re-pred-mem-u.md)
-- [And](../../../MathlibExt/re/and-2.md)
-- [Exists](../../../MathlibExt/re/exists.md)
+- [Recursively enumerable predicates are closed under conjunction](../../../MathlibExt/re/and-2.md)
+- [Existential projection preserves recursive enumerability](../../../MathlibExt/re/exists.md)
 
 ## Sources
 

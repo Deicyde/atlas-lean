@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.codedStep_toCodedCfg
 ---
 
-# Coded Step to Coded Cfg
+# The coded step commutes with coding
 
-The coded step agrees with `step` on codes.
+**The coded step commutes with coding.** For every configuration $c$ of a single-tape machine
+$M$, the code of $c$ has no successor under the coded step exactly when $c$ has no successor
+under the step function of $M$, and otherwise the coded step sends the code of $c$ to the code
+of the successor of $c$.
 
 ## Depends on
 
-- [To Coded Cfg](to-coded-cfg.md)
-- [Coded Cfg](coded-cfg.md)
-- [Coded Step](coded-step.md)
+- [Code of a single-tape configuration](to-coded-cfg.md)
+- [Coded configurations of a single-tape machine](coded-cfg.md)
+- [One step of a single-tape machine on coded configurations](coded-step.md)
 
 ## Proof depends on
 
-- [Coded Cons](coded-cons.md)
-- [Head eq head I](head-eq-head-i.md)
-- [To List cons](to-list-cons.md)
-- [To List tail](to-list-tail.md)
+- [Pushing a cell onto a coded tape](coded-cons.md)
+- [The head of a stack tape is the first entry of its list](head-eq-head-i.md)
+- [Pushing onto a stack tape, on cell lists](to-list-cons.md)
+- [Tail of a stack tape, on cell lists](to-list-tail.md)
 
 ## Sources
 

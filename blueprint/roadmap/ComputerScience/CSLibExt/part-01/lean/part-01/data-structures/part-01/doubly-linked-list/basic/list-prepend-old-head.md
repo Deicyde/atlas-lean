@@ -7,18 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.listPrepend_oldHead
 ---
 
-# List Prepend old Head
+# Old head after doubly-linked list prepend
 
-A distinct old head changes only its previous pointer.
+**Old head after doubly-linked list prepend.** Fix a capacity $n$ and let $s$ be a store
+assigning to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an
+identity, and let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an
+identity, $s(\mathrm{head})$ is a node. Suppose moreover that $\mathrm{head}$ is an identity $h$
+with $h \ne x$. Let $s'$ be the store returned by List Prepend on $s$, $\mathrm{head}$ and $x$.
+Then $s'(h)$ is the node $s(h)$ with previous pointer $x$.
 
 ## Depends on
 
-- [Node](node.md)
-- [List Prepend](list-prepend.md)
+- [Doubly linked list node](node.md)
+- [Prepending a node to a doubly linked list](list-prepend.md)
 
 ## Proof depends on
 
-- [List Prepend get](list-prepend-get.md)
+- [Cells after doubly-linked list prepend](list-prepend-get.md)
 
 ## Sources
 

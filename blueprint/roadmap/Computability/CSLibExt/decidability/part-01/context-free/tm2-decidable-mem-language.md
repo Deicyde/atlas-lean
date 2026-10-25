@@ -17,9 +17,9 @@ $A_{\mathrm{CFG}}$ is decidable.
 ## Depends on
 
 - [Decidability by multi-stack machines](../basic/tm2-decidable.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded grammars as pairs](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 

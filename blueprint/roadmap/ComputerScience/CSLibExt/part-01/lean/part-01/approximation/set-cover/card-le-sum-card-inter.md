@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.card_le_sum_card_inter
 ---
 
-# Card le sum card inter
+# Covering bound by intersections
 
-A set covered by the members of `L` has at most as many elements as the sum of its
-intersections with them.
+**Covering bound by intersections.** Let $L$ be a list of finite sets and $T$ a finite set
+such that every element of $T$ lies in some member of $L$. Then
+$|T| \le \sum_{S \in L} |S \cap T|$, where the sum runs over the list $L$ with repetitions.
 
 ## Depends on
 

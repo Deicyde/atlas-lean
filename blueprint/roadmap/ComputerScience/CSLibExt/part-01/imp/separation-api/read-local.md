@@ -6,9 +6,13 @@ proof: formalized
 lean: Cslib.IMP.read_local
 ---
 
-# Read local
+# Rearranging a separating conjunction
 
-`(P ⋆ (Q ⋆ R))` entails `((P ⋆ R) ⋆ Q)`. -/
+**Rearranging a separating conjunction.** For heap assertions $P$, $Q$ and $R$, write
+$A \star B$ for the separating conjunction of heap assertions $A$ and $B$ (the heap splits into
+two disjoint parts satisfying $A$ and $B$, respectively, at the same store). Then
+$P \star (Q \star R)$ entails $(P \star R) \star Q$: every store and heap satisfying the first
+assertion satisfy the second. -/
 theorem star_swap_right {P Q R : HAssertion} :
     (P ⋆ (Q ⋆ R)).Entails ((P ⋆ R) ⋆ Q) :=
   (HAssertion.star_mono (HAssertion.entails_refl P)
@@ -26,24 +30,24 @@ hypothesis `hpq` re-establishes the store facts after the step; computing
 
 ## Depends on
 
-- [AExp](../syntax/aexp.md)
-- [Points To](../separation-logic/points-to.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Points-to assertion](../separation-logic/points-to.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](../heap-step/heap-cmd.md)
-- [Sep Valid](../separation-logic/sep-valid.md)
-- [State](../syntax/state.md)
+- [Heap commands](../heap-step/heap-cmd.md)
+- [Separation-logic triple validity](../separation-logic/sep-valid.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [HAssertion](../separation-logic/hassertion.md)
-- [Entails](../separation-logic/entails.md)
-- [HConfig](../heap-step/hconfig.md)
-- [HStep](../heap-step/hstep.md)
-- [HSteps](../heap-step/hsteps.md)
-- [Safe](../heap-step/safe.md)
+- [Heap assertion](../separation-logic/hassertion.md)
+- [Entailment of heap assertions](../separation-logic/entails.md)
+- [Heap configurations](../heap-step/hconfig.md)
+- [Small-step semantics of heap commands](../heap-step/hstep.md)
+- [Multi-step heap execution](../heap-step/hsteps.md)
+- [Safe heap configurations](../heap-step/safe.md)
 
 ## Sources
 

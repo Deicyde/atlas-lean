@@ -18,11 +18,11 @@ empty language under $V$.
 
 ## Depends on
 
-- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
+- [Interpretation of a sentential form](../../../languages/context-free/part-01/basic/eval-form.md)
 
 ## Proof depends on
 
-- [Eval Symbol](../../../languages/context-free/part-01/basic/eval-symbol.md)
+- [Interpretation of a grammar symbol](../../../languages/context-free/part-01/basic/eval-symbol.md)
 
 ## Sources
 

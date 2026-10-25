@@ -14,12 +14,12 @@ first, of the value of $l$ read least significant bit first is $l$ itself.
 
 ## Depends on
 
-- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+- [Value of a little-endian bit list](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
 
 ## Proof depends on
 
 - [Value of a bit list with a leading bit](bits-val-cons.md)
-- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
+- [Binary encoding, least significant bit first](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

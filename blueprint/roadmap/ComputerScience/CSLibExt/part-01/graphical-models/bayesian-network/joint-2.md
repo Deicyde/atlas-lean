@@ -11,12 +11,12 @@ The joint distribution of the network.
 
 ## Depends on
 
-- [Bayes Net](bayes-net.md)
+- [Bayesian network](bayes-net.md)
 
 ## Proof depends on
 
-- [To Chain](to-chain.md)
-- [Joint](joint.md)
+- [The chain of a Bayesian network](to-chain.md)
+- [Joint distribution of a chain](joint.md)
 
 ## Sources
 

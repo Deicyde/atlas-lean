@@ -16,7 +16,7 @@ $y^{-1}L$ are equal.
 
 ## Depends on
 
-- [Nerode Rel](../../../languages/congruences/nerode/nerode-rel.md)
+- [Nerode equivalence](../../../languages/congruences/nerode/nerode-rel.md)
 
 ## Sources
 

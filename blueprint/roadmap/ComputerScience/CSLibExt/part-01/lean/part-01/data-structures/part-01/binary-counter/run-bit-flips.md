@@ -7,17 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.run_bit_flips
 ---
 
-# Run bit flips
+# Flip counts of the individual bits
 
-Bit `i` changes exactly `n / 2 ^ i` times in an actual zero-start run.
+**Flip counts of the individual bits.** Let $k$, $i$ and $n$ be natural numbers
+with $i < k$, and for each $t$ let $c_t$ be the bit vector returned by running $t$ increments
+from the all-false bit vector of width $k$. Then the number of $t < n$ such that the bit at
+position $i$ of $c_t$ (counting from the low-order bit, starting at $0$) differs from the bit at
+position $i$ of $c_{t+1}$ is $\lfloor n / 2^i \rfloor$.
 
 ## Depends on
 
-- [Run](run.md)
+- [Running the binary counter](run.md)
 
 ## Proof depends on
 
-- [Run value](run-value.md)
+- [Counter value after successive increments](run-value.md)
 
 ## Sources
 

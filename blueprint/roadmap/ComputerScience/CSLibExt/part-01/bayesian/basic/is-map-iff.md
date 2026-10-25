@@ -6,19 +6,28 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.isMAP_iff
 ---
 
-# Is MAP iff
+# MAP hypotheses maximize prior times likelihood
 
-A MAP hypothesis maximizes prior times likelihood: the evidence is a common factor.
+**MAP hypotheses maximize prior times likelihood.** Let $\Theta$ and $\mathcal X$ be countable
+measurable spaces with measurable singletons, $\kappa$ a Markov kernel from $\Theta$ to
+$\mathcal X$, $\mu$ a finite measure on $\Theta$, and $x \in \mathcal X$ an observation with
+$(\kappa \circ \mu)(\{x\}) \neq 0$, where $\kappa \circ \mu$ is the composition of $\mu$ with
+$\kappa$. Then $\theta \in \Theta$ is a MAP hypothesis for $x$ under the prior $\mu$ and the
+likelihood $\kappa$ if and only if
+$\mu(\{\theta'\}) \, \kappa_{\theta'}(\{x\}) \le \mu(\{\theta\}) \, \kappa_\theta(\{x\})$ for every
+$\theta' \in \Theta$.
+
+The evidence $(\kappa \circ \mu)(\{x\})$ is a common factor of all posterior masses.
 
 ## Depends on
 
-- [Is MAP](is-map.md)
+- [Maximum a posteriori hypothesis](is-map.md)
 
 ## Proof depends on
 
-- [Bayes Posterior](bayes-posterior.md)
+- [Bayes posterior](bayes-posterior.md)
 - [Bayes' rule for countably many hypotheses](bayes-posterior-apply-singleton.md)
-- [Comp apply singleton eq tsum](comp-apply-singleton-eq-tsum.md)
+- [The evidence as a sum over hypotheses](comp-apply-singleton-eq-tsum.md)
 
 ## Sources
 

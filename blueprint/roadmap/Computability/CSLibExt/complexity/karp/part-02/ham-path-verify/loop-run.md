@@ -26,7 +26,7 @@ passes and the reject label otherwise.
 - [The walk check of the HAMPATH verifier](../../part-01/ham-path-check/walk-ok.md)
 - [Bit encoding of an edge list](../../part-01/color/edge-bits.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -38,8 +38,8 @@ passes and the reject label otherwise.
 - [One step of the emptiness test](if-e-run.md)
 - [One step of the HAMPATH walk](../../part-01/ham-path-check/step-ok.md)
 - [One vertex step of the Hamiltonian-path verifier](step-run.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

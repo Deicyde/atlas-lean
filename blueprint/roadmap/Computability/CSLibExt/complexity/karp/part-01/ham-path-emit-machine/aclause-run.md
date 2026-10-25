@@ -44,7 +44,7 @@ increasing the clause count by $1$ and the triple clause count by $3$.
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -52,9 +52,9 @@ increasing the clause count by $1$ and the triple clause count by $3$.
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.IsBTree.ordered
 ---
 
-# Ordered
+# B-trees are ordered
 
-A B-tree is ordered.
+**B-trees are ordered.** If a tree is a B-tree of minimum degree $t$, then it is ordered:
+each key of its inorder flattening is less than every key that comes after it.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Is BTree](is-btree.md)
-- [Ordered](ordered.md)
+- [Raw B-trees](btree.md)
+- [B-trees of a given minimum degree](is-btree.md)
+- [Ordered B-tree](ordered.md)
 
 ## Proof depends on
 
-- [Valid Root](valid-root.md)
+- [Root invariant of a B-tree](valid-root.md)
 
 ## Sources
 

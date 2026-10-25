@@ -12,7 +12,7 @@ of $2$ and the lengths of the right-hand sides of the productions of $g$.
 
 ## Depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 
 ## Sources
 

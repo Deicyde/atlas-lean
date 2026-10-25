@@ -47,7 +47,7 @@ and $o$.
 - [Constant offset of a literal in a block](csv.md)
 - [Per-literal step overhead of the cell-shift generator](lit-e.md)
 - [The cell-shift generator](prog.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -60,9 +60,9 @@ and $o$.
 - [Stages of the cell-shift literal routine](ls.md)
 - [One literal routine of the cell-shift generator](lit-run.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

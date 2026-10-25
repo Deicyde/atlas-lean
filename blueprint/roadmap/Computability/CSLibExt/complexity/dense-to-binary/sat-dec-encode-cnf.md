@@ -58,8 +58,8 @@ theorem conv_encodeCNF (φ : CNF) :
 - [Prefix-free code of a natural number](../../cook-levin/encode-nat-prefix.md)
 - [Reading a unary length prefix](../../cook-levin/read-unary-length.md)
 - [CNFClause](../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

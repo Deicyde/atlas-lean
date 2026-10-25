@@ -15,12 +15,12 @@ some $z \in V(A)$.
 
 ## Depends on
 
-- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
+- [Interpretation of a sentential form](../../../languages/context-free/part-01/basic/eval-form.md)
 
 ## Proof depends on
 
-- [Eval Form append](../../../languages/context-free/part-01/basic/eval-form-append.md)
-- [Eval Form map terminal](../../../languages/context-free/part-01/basic/eval-form-map-terminal.md)
+- [Interpretation of a concatenation](../../../languages/context-free/part-01/basic/eval-form-append.md)
+- [A terminal word denotes its singleton](../../../languages/context-free/part-01/basic/eval-form-map-terminal.md)
 
 ## Sources
 

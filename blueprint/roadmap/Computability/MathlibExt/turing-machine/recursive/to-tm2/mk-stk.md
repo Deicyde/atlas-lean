@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.TM2Recursive.mkStk
 ---
 
-# Mk Stk
+# Stack contents of the wrapped machine
 
-Build the six stacks.
+**Stack contents of the wrapped machine.** Given lists $a, b, c, d$ of symbols of $\Gamma'$
+and lists $i, o$ of bits, the stack contents of the wrapped machine with $a$, $b$, $c$ and $d$ on
+the stacks main, rev, aux and stack, $i$ on the input stack and $o$ on the output stack.
 
 ## Depends on
 
-- [FΓ](f.md)
+- [Stack alphabets of the wrapped machine](f.md)
 
 ## Sources
 

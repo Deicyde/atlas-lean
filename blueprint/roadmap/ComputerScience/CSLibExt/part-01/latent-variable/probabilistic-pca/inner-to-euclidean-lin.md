@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.MachineLearning.LatentVariable.ProbabilisticPCA.inner_toEuclideanLin
 ---
 
-# Inner to Euclidean Lin
+# The transpose of a real matrix is its adjoint
 
-`⟪W z, t⟫ = ⟪z, Wᵀ t⟫`, from Mathlib's `Matrix.toEuclideanLin_conjTranspose_eq_adjoint`.
+**The transpose of a real matrix is its adjoint.** For every real $d \times q$ matrix $W$ and
+all $z \in \mathbb{R}^q$ and $t \in \mathbb{R}^d$, the Euclidean inner products satisfy
+$\langle Wz, t\rangle = \langle z, W^\top t\rangle$.
 
 ## Depends on
 

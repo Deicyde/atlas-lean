@@ -15,12 +15,12 @@ on a blank cell, or halt there.
 
 ## Depends on
 
-- [Is LBA](is-lba.md)
+- [Linear bounded automaton](is-lba.md)
 
 ## Proof depends on
 
-- [Step some](../classes/step-some.md)
-- [To List tail](../to-recursive/to-list-tail.md)
+- [One step of a single-tape Turing machine](../classes/step-some.md)
+- [Tail of a stack tape, on cell lists](../to-recursive/to-list-tail.md)
 
 ## Sources
 

@@ -6,20 +6,21 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.Target.Tm.Scoped.shift
 ---
 
-# Shift
+# Shifting preserves scoping
 
-Shifting a term scoped in `m` gives a term scoped in `m + 1`.
+**Shifting preserves scoping.** If a target term $e$ is scoped in $m$, then its shift is scoped
+in $m + 1$.
 
 ## Depends on
 
-- [Tm](tm.md)
-- [Scoped](scoped.md)
-- [Shift](shift.md)
+- [Target terms of closure conversion](tm.md)
+- [Well-scoped target terms](scoped.md)
+- [Shifting a target term](shift.md)
 
 ## Proof depends on
 
-- [Lift Ren](lift-ren.md)
-- [Rename](rename.md)
+- [Lifting a renaming under a binder](lift-ren.md)
+- [Renaming target terms](rename.md)
 
 ## Sources
 

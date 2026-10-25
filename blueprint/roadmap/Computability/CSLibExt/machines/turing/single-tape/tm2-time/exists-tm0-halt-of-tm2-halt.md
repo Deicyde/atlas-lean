@@ -6,16 +6,22 @@ proof: formalized
 lean: Cslib.Turing.TM2Time.exists_tm0_halt_of_tm2_halt
 ---
 
-# Halting runs
+# Single-tape emulation of halting multi-stack runs
 
-**Halting runs.** If a bundled multi-stack machine `tm` halts after `t` steps on the input
-`L`, then its single-tape emulation halts within `C t (|L| + C t + 1)` steps, with
-`C = emulationConstant tm`, in a configuration related to the halting one.
+**Single-tape emulation of halting multi-stack runs.** Let $M$ be a bundled multi-stack
+machine with emulation constant $C$, and $L$ an input for its input stack. If $M$, started on
+$L$, reaches after $t$ steps a configuration $c$ from which it does not step, then the
+single-tape emulation of $M$, started on the encoding of $L$, reaches in some number
+$n \le C t (|L| + C t + 1)$ of steps a configuration from which it does not step. That
+configuration is the single-tape form of a configuration of the $\mathrm{TM1}$ emulator of $M$
+that represents $c$: it has the corresponding label and the same internal state, and its head
+is at the bottom marker of a tape whose $k$-th track lists the $k$-th stack of $c$ from bottom
+to top.
 
 ## Depends on
 
-- [Emulation Constant](emulation-constant.md)
-- [Tr](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
+- [Emulation constant](emulation-constant.md)
+- [Single-tape emulation of a multi-stack machine](../../../../../MathlibExt/turing-machine/translation/tm2-to-tm0/tr.md)
 
 ## Proof depends on
 

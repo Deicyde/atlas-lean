@@ -28,16 +28,16 @@ followed by $s$, $A$ and $C$ are empty, and $V$ holds $w$.
 - [Stack contents of the lookup machine](stk.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Ends Bit Block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [End of a bit block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Stack contents of the lookup machine](bit-bit.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Is Bit Block](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Restoring after `cmpB`](../../../MathlibExt/turing-machine/bit-ops/move-b-restore.md)
-- [Move B run](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit blocks](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [Restoring a stack after a comparison](../../../MathlibExt/turing-machine/bit-ops/move-b-restore.md)
+- [Running the bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

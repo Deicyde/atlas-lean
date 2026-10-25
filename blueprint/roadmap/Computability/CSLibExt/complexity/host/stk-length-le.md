@@ -15,13 +15,12 @@ some label, state $v'$ and stacks $S'$, then every stack of $S'$ has length at m
 
 ## Depends on
 
-- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Pushes](../../../MathlibExt/turing-machine/composition/pushes.md)
-- [Iter none](../../../MathlibExt/turing-machine/program/iter-none.md)
+- [Number of push instructions in a TM2 statement](../../../MathlibExt/turing-machine/composition/pushes.md)
+- [A halted run stays halted](../../../MathlibExt/turing-machine/program/iter-none.md)
 
 ## Sources
 

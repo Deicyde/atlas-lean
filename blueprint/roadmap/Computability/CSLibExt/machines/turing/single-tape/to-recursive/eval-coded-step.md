@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.eval_codedStep
 ---
 
-# Eval coded Step
+# Running the coded step mirrors running the machine
 
-The coded step evaluates like the machine: its evaluation from the code of `c` is the code
-of the evaluation of `step` from `c`.
+**Running the coded step mirrors running the machine.** For every configuration $c$ of a
+single-tape machine $M$, iterating the coded step from the code of $c$ until a coded
+configuration with no successor is reached terminates exactly when iterating the step function
+of $M$ from $c$ until a configuration with no successor is reached does, and then it ends at the
+code of the configuration where the run of $M$ from $c$ ends.
 
 ## Depends on
 
-- [To Coded Cfg](to-coded-cfg.md)
-- [Coded Cfg](coded-cfg.md)
-- [Coded Step](coded-step.md)
+- [Code of a single-tape configuration](to-coded-cfg.md)
+- [Coded configurations of a single-tape machine](coded-cfg.md)
+- [One step of a single-tape machine on coded configurations](coded-step.md)
 
 ## Proof depends on
 
-- [Coded Step to Coded Cfg](coded-step-to-coded-cfg.md)
+- [The coded step commutes with coding](coded-step-to-coded-cfg.md)
 
 ## Sources
 

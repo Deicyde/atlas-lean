@@ -16,7 +16,7 @@ exactly when $y$ does.
 ## Depends on
 
 - [Context quotient](context-quotient.md)
-- [Syntactic Rel](../syntactic/syntactic-rel.md)
+- [Syntactic equivalence](../syntactic/syntactic-rel.md)
 
 ## Sources
 

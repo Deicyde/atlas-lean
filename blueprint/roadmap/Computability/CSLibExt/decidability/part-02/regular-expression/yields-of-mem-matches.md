@@ -15,26 +15,26 @@ sentential form consisting of the single nonterminal $k$ in the context-free gra
 
 ## Depends on
 
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [Encoded regular expressions](encoded-regex.md)
 - [Regular expression at a node](regex-at.md)
 - [The grammar of an encoded regular expression](to-grammar.md)
-- [Yields](../../../languages/context-free/part-02/yields/yields.md)
+- [Yield of a sentential form](../../../languages/context-free/part-02/yields/yields.md)
 
 ## Proof depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [Productions of a concatenation node](comp-rules.md)
 - [Node at an index](node.md)
 - [Productions of a node](node-rules.md)
 - [Productions of a sum node](plus-rules.md)
 - [Productions of a star node](star-rules.md)
 - [Regular-expression node](regex-node.md)
-- [Append](../../../languages/context-free/part-02/yields/append.md)
-- [Append inv](../../../languages/context-free/part-02/yields/append-inv.md)
-- [Yields of rule](../../../languages/context-free/part-02/yields/yields-of-rule.md)
+- [Concatenation of yields](../../../languages/context-free/part-02/yields/append.md)
+- [Splitting a yield over a concatenation](../../../languages/context-free/part-02/yields/append-inv.md)
+- [Yield through one production](../../../languages/context-free/part-02/yields/yields-of-rule.md)
 
 ## Sources
 

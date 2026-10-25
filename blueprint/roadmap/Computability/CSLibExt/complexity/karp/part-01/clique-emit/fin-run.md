@@ -23,17 +23,17 @@ ones, false, $n$ ones, false, then $o$.
 - [Configuration stacks of the CLIQUE emitter](st.md)
 - [Stack alphabets of the CLIQUE emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [The 3SAT emitter processes a whole formula](../../part-02/three-sat-emit/rep-single.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Rep](../../../../../MathlibExt/turing-machine/program/rep.md)
-- [Xfer E](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Repeated block](../../../../../MathlibExt/turing-machine/program/rep.md)
+- [Draining a counter while prepending a block](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

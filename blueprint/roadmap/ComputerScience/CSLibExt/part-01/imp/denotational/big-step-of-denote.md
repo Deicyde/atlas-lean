@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.IMP.Denote.bigStep_of_denote
 ---
 
-# Big Step of denote
+# Denotational executions are big-step executions
 
-Every denotational execution is a big-step execution.
+**Denotational executions are big-step executions.** For every IMP command $c$ and all
+states $s$ and $s'$, if the relational denotation of $c$ relates $s$ to $s'$, then executing $c$
+from $s$ terminates in $s'$ according to the big-step semantics.
 
 ## Depends on
 
-- [Big Step](../big-step/big-step.md)
-- [Cmd](../syntax/cmd.md)
-- [Denote](denote.md)
-- [State](../syntax/state.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Relational denotational semantics of IMP](denote.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [While ind](while-ind.md)
-- [While Fun](while-fun.md)
+- [Park induction for while loops](while-ind.md)
+- [One-step unfolding functional of a while loop](while-fun.md)
 
 ## Sources
 

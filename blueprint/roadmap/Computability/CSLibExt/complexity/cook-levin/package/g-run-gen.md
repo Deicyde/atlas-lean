@@ -33,7 +33,7 @@ the stacks $q$ other than the output stack.
 - [Alphabets of the full machine](../precompute/f.md)
 - [Scratch counters of the counter program](../precompute/ps.md)
 - [Counters of the cell-shift generator](../shift/ck.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -41,15 +41,15 @@ the stacks $q$ other than the output stack.
 - [The drain program](drain-s.md)
 - [The drain](drain-run.md)
 - [The identity stack embedding](id-e.md)
-- [Agree](../../../../MathlibExt/turing-machine/stack-embedding/agree.md)
-- [Embeds](../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
-- [Frame](../../../../MathlibExt/turing-machine/stack-embedding/frame.md)
-- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
-- [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
-- [Run Le embed](../../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../MathlibExt/turing-machine/program/single.md)
+- [Agreement of host and sub-machine stacks](../../../../MathlibExt/turing-machine/stack-embedding/agree.md)
+- [Embedding of a machine in a host](../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
+- [Frame condition for a stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/frame.md)
+- [Stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Translating a statement along a stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Run embedding for bounded runs](../../../../MathlibExt/turing-machine/stack-embedding/run-le-embed.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

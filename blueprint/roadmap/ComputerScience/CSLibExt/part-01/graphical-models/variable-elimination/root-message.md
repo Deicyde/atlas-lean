@@ -12,7 +12,7 @@ from the last one down, then read off the root's unary factor.
 
 ## Depends on
 
-- [Tree Model](tree-model.md)
+- [Pairwise model on a tree](tree-model.md)
 
 ## Proof depends on
 

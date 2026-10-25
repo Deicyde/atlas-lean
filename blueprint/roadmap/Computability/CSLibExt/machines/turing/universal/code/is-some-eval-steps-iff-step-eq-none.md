@@ -6,17 +6,21 @@ proof: formalized
 lean: Cslib.Turing.Universal.Code.isSome_evalSteps_iff_step_eq_none
 ---
 
-# Is Some eval Steps iff step eq none
+# Definedness of the clocked evaluator
 
-`evalSteps` is defined iff the clocked configuration has halted.
+**Definedness of the clocked evaluator.** For a code $c$, a list of bits $x$ and a clock
+$T \in \mathbb{N}$, the clocked evaluator of $c$ on $x$ with clock $T$ returns a value if and
+only if the simulation of $c$ has no step from the configuration after $T$ clocked steps on $x$
+(the configuration after $T$ steps, or the halting configuration if the machine halts
+earlier).
 
 ## Depends on
 
-- [Code](code.md)
-- [Cfg](cfg.md)
-- [Cfg After](cfg-after.md)
+- [Codes for single-tape machines](code.md)
+- [Explicit configurations](cfg.md)
+- [Clocked configuration of a code](cfg-after.md)
 - [The clocked evaluator](eval-steps.md)
-- [Step](step.md)
+- [One step of a code](step.md)
 
 ## Proof depends on
 

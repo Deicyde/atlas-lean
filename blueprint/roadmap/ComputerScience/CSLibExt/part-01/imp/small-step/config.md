@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.IMP.Config
 ---
 
-# Config
+# IMP configuration
 
-A configuration pairs a command with a state.
+**IMP configuration.** A configuration of IMP is a pair $(c, \sigma)$ of a command $c$ and a
+state $\sigma$.
 
 ## Depends on
 
@@ -15,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

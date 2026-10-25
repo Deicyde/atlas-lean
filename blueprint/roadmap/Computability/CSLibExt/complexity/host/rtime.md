@@ -17,7 +17,6 @@ length at most the input plus the pushes so far) and the halt.
 ## Proof depends on
 
 - [Reduction host machine](rtm.md)
-- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
 
 ## Sources
 

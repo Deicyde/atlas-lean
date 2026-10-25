@@ -23,14 +23,14 @@ $n + r$; the counter $N$ is restored through the scratch stack $W$.
 - [The 3-COLOR emitter machine](prog.md)
 - [Stack alphabets of the 3-coloring emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Counters read by copy sites](src.md)
 - [Stack of a counter](k-2.md)
 - [Copying a counter through $W$](dup-run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

@@ -22,8 +22,8 @@ The verifier for mode `m`: parse `k` and `n`, load the witness, walk the rows.
 - [The clique verifier's unary reader](read-u.md)
 - [Walk step of the clique verifier](walk-s.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Sources
 

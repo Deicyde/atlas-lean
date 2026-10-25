@@ -6,18 +6,21 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.Mem
 ---
 
-# Mem
+# Membership in a B-tree
 
-Membership in a tree is membership in its flattening. The structural reading is
-`mem_node`: a key is in a node when it is one of the separators or in one of the children.
+**Membership in a B-tree.** A key $x$ belongs to a tree $T$ when $x$ occurs in the inorder
+flattening of $T$.
+
+Structurally, a key belongs to an internal node exactly when it is one of the node's separator
+keys or belongs to one of its children.
 
 ## Depends on
 
-- [BTree](btree.md)
+- [Raw B-trees](btree.md)
 
 ## Proof depends on
 
-- [Flatten](flatten.md)
+- [Inorder flattening of a B-tree](flatten.md)
 
 ## Sources
 

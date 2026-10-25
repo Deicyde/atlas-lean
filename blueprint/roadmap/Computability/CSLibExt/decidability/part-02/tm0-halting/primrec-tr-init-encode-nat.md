@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Encode Nat eq cons](../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
+- [Binary encoding, least significant bit first](../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

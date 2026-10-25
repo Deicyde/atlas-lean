@@ -5,13 +5,16 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.equivProd
 ---
 
-# Equiv Prod
+# Encoded grammars as pairs
 
-Encoded grammars are pairs of a start nonterminal and a production list.
+**Encoded grammars as pairs.** Sending an encoded grammar over $T$ to the pair of its start
+nonterminal and its list of productions is a bijection from encoded grammars over $T$ onto
+pairs $(s, R)$ of a natural number $s$ and a list $R$ of pairs of a natural number and a list
+of elements of the disjoint union $\mathbb{N} \sqcup T$.
 
 ## Depends on
 
-- [Encoded CFG](encoded-cfg.md)
+- [Encoded context-free grammars](encoded-cfg.md)
 
 ## Sources
 

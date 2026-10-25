@@ -7,8 +7,10 @@ lean: Cslib.Language.cykAccepts
 
 # The CYK recognizer
 
-**The CYK recognizer.** The empty word is accepted when there is a production `S → ε`; a
-nonempty word when the initial nonterminal is in its cell of the CYK table.
+**The CYK recognizer.** Let $g$ be a context-free grammar with initial nonterminal $S$. The
+CYK recognizer accepts the empty word exactly when $g$ has a production $S \to \varepsilon$, and
+accepts a nonempty word $w$ exactly when $S$ lies in the cell recorded for $w$ in the CYK table of
+$w$ up to length $|w|$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cyk Lookup](cyk-lookup.md)
-- [Cyk Table](cyk-table.md)
+- [Looking up a word in a CYK table](cyk-lookup.md)
+- [The CYK table](cyk-table.md)
 
 ## Sources
 

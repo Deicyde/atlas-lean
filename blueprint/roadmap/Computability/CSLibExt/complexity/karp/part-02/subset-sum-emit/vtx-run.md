@@ -36,8 +36,8 @@ $\mathrm{false}$.
 - [Vertex pairs in encoding order](../../part-01/clique/pairs.md)
 - [Vertex numbers of the SUBSET-SUM reduction](../subset-sum/vtx-num.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -45,8 +45,8 @@ $\mathrm{false}$.
 - [Start label of the subset-sum emitter](is-v-val.md)
 - [Subset-sum emitter: one vertex number](round-run.md)
 - [Run of the mark-return loop of the subset-sum emitter](rs-run.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

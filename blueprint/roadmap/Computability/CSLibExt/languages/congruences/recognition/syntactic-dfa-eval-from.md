@@ -6,16 +6,19 @@ proof: formalized
 lean: Cslib.Language.syntacticDFA_evalFrom
 ---
 
-# Syntactic DFA eval From
+# Runs of the syntactic DFA
 
-Evaluation in the syntactic DFA is multiplication by the syntactic class of the input.
+**Runs of the syntactic DFA.** Let $L$ be a language over an alphabet $\Sigma$. For every
+state $q$ of the syntactic DFA of $L$ (an element of the syntactic monoid of $L$) and every word
+$x \in \Sigma^*$, the state reached from $q$ by reading $x$ is $q \cdot [x]$, where $[x]$ is the
+image of $x$ under the syntactic morphism of $L$.
 
 ## Depends on
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
-- [Syntactic DFA](syntactic-dfa.md)
-- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
+- [The syntactic DFA](syntactic-dfa.md)
+- [Syntactic morphism](../syntactic/syntactic-morphism.md)
 
 ## Sources
 

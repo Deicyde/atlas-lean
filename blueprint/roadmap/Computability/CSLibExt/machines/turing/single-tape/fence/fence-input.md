@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Turing.SingleTapeTM.fenceInput
 ---
 
-# Fence Input
+# Fenced input
 
-The input of the fenced machine for the word `w` with `i` padding cells on the left and `j`
-on the right: the left wall, `i` cells `lpad`, the word, `j` cells `pad` and the right wall.
+**Fenced input.** For a word $w$ over an alphabet $\Sigma$ and $i, j \in \mathbb{N}$, the fenced
+input of $w$ with $i$ padding cells on the left and $j$ on the right is the word over the fenced
+alphabet of $\Sigma$ made of a wall, $i$ left padding cells, the letters of $w$ as symbols, $j$
+right padding cells and a wall, in this order.
 
 ## Depends on
 
-- [Fence Symbol](fence-symbol.md)
+- [Fenced alphabet](fence-symbol.md)
 
 ## Sources
 

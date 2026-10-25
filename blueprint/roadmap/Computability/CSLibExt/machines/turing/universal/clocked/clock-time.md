@@ -5,18 +5,21 @@ statement: formalized
 lean: Cslib.Turing.Universal.Clocked.clockTime
 ---
 
-# Clock Time
+# Step bound of the clocked universal machine
 
-The step bound of the clocked machine on the clock `T`.
+**Step bound of the clocked universal machine.** For a code $c$ and a clock $T$, let $|C|$ be
+the length of the code stack of $c$. The step bound of the clocked universal machine on the clock
+$T$ is $T + 1$ times the cost of one round of the loop on configurations whose numbers are at
+most $|C| + 2$, that is, $(T + 1)(14|C| + 19)$.
 
 ## Depends on
 
-- [Code](../code/code.md)
+- [Codes for single-tape machines](../code/code.md)
 
 ## Proof depends on
 
-- [Code Cells](code-cells.md)
-- [Loop Step Time](loop-step-time.md)
+- [The code stack](code-cells.md)
+- [Step bound of the clocked loop](loop-step-time.md)
 
 ## Sources
 

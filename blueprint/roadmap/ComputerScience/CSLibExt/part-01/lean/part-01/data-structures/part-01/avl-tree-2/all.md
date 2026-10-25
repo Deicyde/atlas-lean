@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.All
 ---
 
-# All
+# Every key of an AVL tree satisfies a predicate
 
-`All p tree` states that every key in `tree` satisfies `p`; it is
-`BinarySearchTree.All` of the cache-erased tree.
+**Every key of an AVL tree satisfies a predicate.** For a predicate $p$ on keys and a tree $t$
+with cached heights, $\mathrm{All}(p, t)$ holds when $p$ holds at the key of every node of $t$. It
+is defined as the corresponding predicate on the plain binary tree obtained from $t$ by erasing
+its cached heights.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Binary trees with cached heights](tree.md)
 
 ## Proof depends on
 
-- [To Binary Tree](to-binary-tree.md)
+- [Erasing the cached heights of an AVL tree](to-binary-tree.md)
 - [All](../../part-02/binary-search-tree/all.md)
 
 ## Sources

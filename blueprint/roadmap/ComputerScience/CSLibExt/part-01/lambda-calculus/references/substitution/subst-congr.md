@@ -6,20 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Term.subst_congr
 ---
 
-# Subst congr
+# Substitution respects pointwise equality
 
-Substitutions that agree pointwise act identically.
+**Substitution respects pointwise equality.** Let $\sigma, \sigma'$ be parallel substitutions,
+each sending every de Bruijn index to a term of the simply typed lambda calculus with references,
+with $\sigma(x) = \sigma'(x)$ for every $x \in \mathbb{N}$. Then for every term $t$, applying
+$\sigma$ to $t$ gives the same term as applying $\sigma'$ to $t$.
 
 ## Depends on
 
-- [Term](../syntax/term.md)
-- [Subst](../syntax/subst.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Parallel substitution in a term](../syntax/subst.md)
 
 ## Proof depends on
 
-- [Lift Sub](../syntax/lift-sub.md)
-- [Rename](../syntax/rename.md)
-- [Ty](../syntax/ty.md)
+- [Lifting a substitution under a binder](../syntax/lift-sub.md)
+- [Renaming the variables of a term](../syntax/rename.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

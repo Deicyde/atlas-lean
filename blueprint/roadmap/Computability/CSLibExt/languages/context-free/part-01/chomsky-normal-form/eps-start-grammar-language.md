@@ -6,33 +6,36 @@ proof: formalized
 lean: Cslib.Language.epsStartGrammar_language
 ---
 
-# Eps Start Grammar language
+# Language of the grammar with a fresh nullable start symbol
 
-The fresh-start grammar generates the old language plus the
+**Language of the grammar with a fresh nullable start symbol.** For every context-free
+grammar $G$, the grammar obtained from $G$ by adding a fresh initial nonterminal (with an empty
+production and copies of the productions of the old initial nonterminal) generates exactly
+$L(G) \cup \{\varepsilon\}$, where $L(G)$ is the language of $G$ and $\varepsilon$ is the
 empty word.
 
 ## Depends on
 
-- [Eps Start Grammar](eps-start-grammar.md)
+- [Grammar with a fresh nullable start symbol](eps-start-grammar.md)
 
 ## Proof depends on
 
-- [Is Valuation](../basic/is-valuation.md)
-- [Yields](../../part-02/yields/yields.md)
-- [Derives of mem eval Form language From](../basic/derives-of-mem-eval-form-language-from.md)
-- [Eval Form](../basic/eval-form.md)
-- [Eval Form le of derives](../basic/eval-form-le-of-derives.md)
-- [Eval Form map](../basic/eval-form-map.md)
-- [Eval Form map terminal](../basic/eval-form-map-terminal.md)
-- [Is Valuation language From](../basic/is-valuation-language-from.md)
-- [Language From](../basic/language-from.md)
-- [Language le of valuation](../basic/language-le-of-valuation.md)
-- [Map Rule](../basic/map-rule.md)
-- [Map Rule injective](../basic/map-rule-injective.md)
-- [Map Symbol](../basic/map-symbol.md)
-- [Mem language iff yields](../../part-02/yields/mem-language-iff-yields.md)
+- [Valuation of a grammar](../basic/is-valuation.md)
+- [Yield of a sentential form](../../part-02/yields/yields.md)
+- [Words of the canonical interpretation are derivable](../basic/derives-of-mem-eval-form-language-from.md)
+- [Interpretation of a sentential form](../basic/eval-form.md)
+- [Derivations shrink interpretations under a valuation](../basic/eval-form-le-of-derives.md)
+- [Interpretation after renaming nonterminals](../basic/eval-form-map.md)
+- [A terminal word denotes its singleton](../basic/eval-form-map-terminal.md)
+- [The languages generated from each nonterminal form a valuation](../basic/is-valuation-language-from.md)
+- [Language generated from a nonterminal](../basic/language-from.md)
+- [Valuations bound the language of a grammar](../basic/language-le-of-valuation.md)
+- [Renaming the nonterminals of a production](../basic/map-rule.md)
+- [Injective renamings are injective on productions](../basic/map-rule-injective.md)
+- [Renaming the nonterminals of a symbol](../basic/map-symbol.md)
+- [Language membership through yields](../../part-02/yields/mem-language-iff-yields.md)
 - [Yields iff derives](../../part-02/yields/yields-iff-derives.md)
-- [Yields of rule](../../part-02/yields/yields-of-rule.md)
+- [Yield through one production](../../part-02/yields/yields-of-rule.md)
 
 ## Sources
 

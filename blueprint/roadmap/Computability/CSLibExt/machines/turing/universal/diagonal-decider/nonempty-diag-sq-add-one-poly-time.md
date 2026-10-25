@@ -6,10 +6,12 @@ proof: formalized
 lean: Cslib.Turing.Universal.nonempty_diag_sq_add_one_polyTime
 ---
 
-# The upper bound on raw bits
+# Deciding the diagonal language on raw bits in polynomial time
 
-**The upper bound on raw bits.** A `FinTM2` decides `diag (fun n ↦ n ^ 2 + 1)` in polynomial
-time, reading the input bits and writing the answer bit.
+**Deciding the diagonal language on raw bits in polynomial time.** Let $D$ be the diagonal
+language for the time bound $f(n) = n^2 + 1$. There is a finite multi-stack Turing machine that,
+given a bit list $x$ as its input, halts within a number of steps polynomial in $|x|$ with the
+single bit $D(x)$ as its output.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ time, reading the input bits and writing the answer bit.
 
 ## Proof depends on
 
-- [The reformatting machine for `n ↦ n ^ 2 + 1`](reformat.md)
-- [The upper bound, given the reformatting machine](../diagonalization/nonempty-diag-poly-time.md)
+- [The reformatting machine for $n \mapsto n^2 + 1$](reformat.md)
+- [The diagonal language in polynomial time, given the reformatting machine](../diagonalization/nonempty-diag-poly-time.md)
 
 ## Sources
 

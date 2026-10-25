@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.mem_delete
 ---
 
-# Mem delete
+# Membership after deletion from a B-tree
 
-A key is in the result of a deletion exactly when it was in the
-original tree and is not the deleted key.
+**Membership after deletion from a B-tree.** Let $t \ge 2$ and let $T$ be a B-tree of minimum
+degree $t$ over a linearly ordered key type. For all keys $x$ and $y$, $y$ belongs to the tree
+obtained from $T$ by deleting $x$ (with minimum degree $t$) if and only if $y \ne x$ and $y$
+belongs to $T$.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Is BTree](../../btree-2/is-btree.md)
-- [Mem](../../btree-2/mem.md)
-- [Delete](delete.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [B-trees of a given minimum degree](../../btree-2/is-btree.md)
+- [Membership in a B-tree](../../btree-2/mem.md)
+- [Top-down B-tree deletion](delete.md)
 
 ## Proof depends on
 
-- [Ordered](../../btree-2/ordered-2.md)
-- [Flatten nodup](../../btree-2/flatten-nodup.md)
-- [Flatten](../../btree-2/flatten.md)
-- [Flatten delete](flatten-delete.md)
+- [B-trees are ordered](../../btree-2/ordered-2.md)
+- [An ordered B-tree has no duplicate keys](../../btree-2/flatten-nodup.md)
+- [Inorder flattening of a B-tree](../../btree-2/flatten.md)
+- [Deletion from a B-tree erases the key from its flattening](flatten-delete.md)
 
 ## Sources
 

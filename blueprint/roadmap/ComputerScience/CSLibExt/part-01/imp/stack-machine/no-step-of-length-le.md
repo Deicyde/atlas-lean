@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.IMP.StackMachine.no_step_of_length_le
 ---
 
-# No step of length le
+# No step past the end of the program
 
-No step is possible once the program counter reaches or passes the end
-of the program, since the fetch fails. This justifies calling the program
-counter `codeLength c` the halt address of `compile c 0`.
+**No step past the end of the program.** Let $P$ be a program, that is a list of instructions,
+and let $(pc, \sigma, s)$ be a configuration with $|P| \le pc$. Then the stack machine running $P$
+has no step from $(pc, \sigma, s)$ to any configuration, since there is no instruction at
+position $pc$ to fetch.
+
+Hence the length of the code compiled from a command at base address $0$ is a halt address for
+that code.
 
 ## Depends on
 
-- [Config](config.md)
-- [Instr](instr.md)
-- [Step](step.md)
-- [State](../syntax/state.md)
+- [Stack machine configurations](config.md)
+- [Stack machine instructions](instr.md)
+- [Step relation of the stack machine](step.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

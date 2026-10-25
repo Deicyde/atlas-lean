@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.haltsOn_iff_haltsFrom
 ---
 
-# Halts On iff halts From
+# Halting on an input is halting from the initial configuration
 
-Halting on an input is halting from its initial configuration.
+**Halting on an input is halting from the initial configuration.** A single-tape Turing machine
+$M$ halts on an input word $w$ if and only if $M$ halts from the initial configuration on $w$.
 
 ## Depends on
 
-- [Halts From](halts-from.md)
-- [Halts On](halts-on.md)
+- [Halting from a configuration](halts-from.md)
+- [Halting on an input](halts-on.md)
 
 ## Sources
 

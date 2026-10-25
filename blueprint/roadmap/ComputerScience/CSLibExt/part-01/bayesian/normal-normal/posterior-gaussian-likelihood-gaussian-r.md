@@ -8,17 +8,19 @@ lean: Cslib.MachineLearning.Bayesian.posterior_gaussianLikelihood_gaussianReal
 
 # Normal–Normal conjugacy with known variance
 
-**Normal–Normal conjugacy with known variance.** With a `N(m₀, v₀)` prior and one observation
-`x ~ N(θ, v)`, the posterior is `N((v m₀ + v₀ x) / (v₀ + v), v₀ v / (v₀ + v))` for almost every
-observation `x`.
+**Normal–Normal conjugacy with known variance.** Let $m_0 \in \mathbb{R}$ and $v_0, v > 0$. Take
+the prior $N(m_0, v_0)$ on the mean $\theta$ and the likelihood under which an observation $x$ has
+law $N(\theta, v)$. Then for Lebesgue-almost every $x \in \mathbb{R}$, the posterior distribution of
+$\theta$ given $x$ is the normal law with mean $\frac{v m_0 + v_0 x}{v_0 + v}$ and variance
+$\frac{v_0 v}{v_0 + v}$.
 
 ## Depends on
 
-- [Gaussian Likelihood](gaussian-likelihood.md)
-- [Gaussian Likelihood zero apply](gaussian-likelihood-zero-apply.md)
+- [Gaussian likelihood with known variance](gaussian-likelihood.md)
+- [Noiseless Gaussian likelihood](gaussian-likelihood-zero-apply.md)
 - [Completing the square](measurable-gaussian-pdf-mean.md)
-- [Normal Post Mean](normal-post-mean.md)
-- [Normal Post Var](normal-post-var.md)
+- [Posterior mean of the Normal–Normal model](normal-post-mean.md)
+- [Posterior variance of the normal–normal model](normal-post-var.md)
 
 ## Proof depends on
 

@@ -17,14 +17,14 @@ lists is computable in polynomial time from the canonical encoding to the raw bi
 
 - [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
 - [Pair encoding $w \# y$](../dense-satverifier/pair-encode.md)
-- [Bitstring Encoding](../../../MathlibExt/complexity/bitstring-encoding.md)
-- [Bit Decode](../../../MathlibExt/complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../../MathlibExt/complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../../MathlibExt/complexity/bit-encode.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
-- [Undelimit Blocks](../../../MathlibExt/complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../../MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Bitstring encodings](../../../MathlibExt/complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../../MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../../MathlibExt/complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../../MathlibExt/complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../../MathlibExt/complexity/undelimit-blocks-aux.md)
 
 ## Proof depends on
 

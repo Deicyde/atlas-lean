@@ -6,13 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AStar.aStar_time
 ---
 
-# Cost
+# A Star time
 
-**Cost**: Dijkstra's dense cost, `n * n` selection scans plus every adjacency entry.
+**Cost of A\*.** Let $G$ be a directed graph on the vertices $\{0, \dots, n-1\}$ with natural
+edge weights $w$, let $h$ be any heuristic with natural values and let $s$ be a source vertex. In
+Dijkstra's dense cost model, which counts the vertex entries inspected by minimum selection and
+the adjacency entries inspected by relaxation, A* from $s$ charges exactly $n^2 + m$ events in
+total, where $m$ is the number of entries in the adjacency lists of $G$, counting duplicates and
+self-loops.
 
 ## Depends on
 
-- [AStar Result](astar-result.md)
+- [Output of A-star search](astar-result.md)
 - [A Star](a-star.md)
 - [Directed Adjacency](../../graph/directed-adjacency-2/directed-adjacency.md)
 - [Dijkstra Cost](../../graph/shortest-path/dijkstra/dijkstra-cost.md)
@@ -21,7 +26,7 @@ lean: Cslib.Algorithms.Lean.AStar.aStar_time
 
 ## Proof depends on
 
-- [Reduced Weight](reduced-weight.md)
+- [Reduced weight](reduced-weight.md)
 - [Dijkstra Result](../../graph/shortest-path/dijkstra/dijkstra-result.md)
 - [Dijkstra](../../graph/shortest-path/dijkstra/dijkstra.md)
 - [Dijkstra time](../../graph/shortest-path/dijkstra/dijkstra-time.md)

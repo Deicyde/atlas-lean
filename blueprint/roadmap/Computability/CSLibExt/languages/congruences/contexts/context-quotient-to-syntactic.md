@@ -18,17 +18,17 @@ every word $x$ over $A$.
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
 - [Context quotient](context-quotient.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
-- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
+- [Syntactic morphism](../syntactic/syntactic-morphism.md)
 
 ## Proof depends on
 
-- [Recognizes](../recognition/recognizes.md)
+- [Recognition of a language by a monoid morphism](../recognition/recognizes.md)
 - [Recognizers recognize context quotients](context-quotient-2.md)
 - [Accepting set for a context quotient](context-accept.md)
-- [Recognizer Image To Syntactic](../recognition/recognizer-image-to-syntactic.md)
-- [Recognizes syntactic Morphism](../recognition/recognizes-syntactic-morphism.md)
-- [Syntactic Accept](../syntactic/syntactic-accept.md)
+- [Map from a recognizer's image to the syntactic monoid](../recognition/recognizer-image-to-syntactic.md)
+- [The syntactic morphism recognizes its language](../recognition/recognizes-syntactic-morphism.md)
+- [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)
 
 ## Sources
 

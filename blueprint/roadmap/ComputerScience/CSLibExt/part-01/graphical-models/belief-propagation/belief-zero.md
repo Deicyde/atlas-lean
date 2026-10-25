@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.MachineLearning.GraphicalModels.TreeModel.belief_zero
 ---
 
-# Belief zero
+# Belief at the root is the root message
 
-At the root, the belief is variable elimination's root message.
+**Belief at the root is the root message.** For every tree model over a finite set of values,
+the belief of the root, vertex $0$, is the root message computed by variable elimination: the two
+agree at every value.
 
 ## Depends on
 
-- [Tree Model](../variable-elimination/tree-model.md)
-- [Belief](belief.md)
+- [Pairwise model on a tree](../variable-elimination/tree-model.md)
+- [Sum-product belief](belief.md)
 - [Root Message](../variable-elimination/root-message.md)
 
 ## Proof depends on
 
-- [Down Message](down-message.md)
-- [Drop Last](drop-last.md)
+- [Downward message to the last vertex](down-message.md)
+- [Removing the last vertex](drop-last.md)
 - [Eliminate](../variable-elimination/eliminate.md)
-- [Last Parent](../variable-elimination/last-parent.md)
+- [Parent of the last vertex](../variable-elimination/last-parent.md)
 
 ## Sources
 

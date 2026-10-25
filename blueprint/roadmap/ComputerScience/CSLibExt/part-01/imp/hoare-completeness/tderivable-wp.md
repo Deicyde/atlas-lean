@@ -6,34 +6,37 @@ proof: formalized
 lean: Cslib.IMP.tderivable_wp
 ---
 
-# Tderivable wp
+# The weakest-precondition triple is derivable in total-correctness Hoare logic
 
-The weakest precondition is derivable for every command and
-postcondition.
+**The weakest-precondition triple is derivable in total-correctness Hoare logic.** For every
+IMP command $c$ and every assertion $Q$ (a predicate on states), the triple
+$\{\mathrm{wp}(c, Q)\}\,c\,\{Q\}$ is derivable in the total-correctness Hoare logic. Here
+$\mathrm{wp}(c, Q)$ is the semantic weakest precondition: it holds in a state $s$ exactly when
+there is a terminating execution of $c$ from $s$ ending in a state satisfying $Q$.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
-- [TDerivable](tderivable.md)
-- [Wp](../hoare-total/wp.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Total-correctness Hoare logic](tderivable.md)
+- [Weakest precondition for total correctness](../hoare-total/wp.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [Entails](../hoare/entails.md)
-- [Subst](../hoare/subst.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Entailment of assertions](../hoare/entails.md)
+- [Substitution in an assertion](../hoare/subst.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Big Step](../big-step/big-step.md)
-- [Iterates](iterates.md)
-- [Big Step](big-step.md)
-- [Exists of big Step](exists-of-big-step.md)
-- [Iteration Count eq](iteration-count-eq.md)
-- [State](../syntax/state.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Loop runs with a given number of iterations](iterates.md)
+- [Counted loop runs are big-step executions](big-step.md)
+- [Every terminating loop run has an iteration count](exists-of-big-step.md)
+- [The iteration count of a terminating loop run](iteration-count-eq.md)
+- [IMP program states](../syntax/state.md)
 - [Strengthen](strengthen-2.md)
-- [Iteration Count](iteration-count.md)
+- [Loop iteration count](iteration-count.md)
 
 ## Sources
 

@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.IMP.iterationCount_eq_zero
 ---
 
-# Iteration Count eq zero
+# The iteration count of a nonterminating loop is zero
 
-`iterationCount` is `0` from a state where the loop does not terminate.
+**The iteration count of a nonterminating loop is zero.** Let $b$ be a Boolean expression, $c$ a
+command and $s$ a state. If the loop $\mathtt{while}\ b\ \mathtt{do}\ c$ has no terminating
+big-step execution from $s$ to any state, then the iteration count of the loop from $s$ is
+$0$.
 
 ## Depends on
 
-- [BExp](../syntax/bexp.md)
-- [Big Step](../big-step/big-step.md)
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
-- [Iteration Count](iteration-count.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
+- [Loop iteration count](iteration-count.md)
 
 ## Proof depends on
 
-- [Iterates](iterates.md)
-- [Big Step](big-step.md)
+- [Loop runs with a given number of iterations](iterates.md)
+- [Counted loop runs are big-step executions](big-step.md)
 
 ## Sources
 

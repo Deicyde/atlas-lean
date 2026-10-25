@@ -7,16 +7,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.mem_toBinaryTree
 ---
 
-# Mem to Binary Tree
+# AVL membership is membership in the underlying binary tree
 
-Membership in an AVL tree is `BinarySearchTree` membership in its
-cache-erased tree, by definition.
+**AVL membership is membership in the underlying binary tree.** A key $x$ lies in a tree $T$ if
+and only if $x$ lies in the binary tree obtained from $T$ by erasing the cached heights.
+
+This holds by definition.
 
 ## Depends on
 
-- [Mem](mem.md)
-- [Tree](tree.md)
-- [To Binary Tree](to-binary-tree.md)
+- [Membership in an AVL tree](mem.md)
+- [Binary trees with cached heights](tree.md)
+- [Erasing the cached heights of an AVL tree](to-binary-tree.md)
 - [Mem](../../part-02/binary-search-tree/mem.md)
 
 ## Sources

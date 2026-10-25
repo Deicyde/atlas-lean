@@ -7,19 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelDelete_circular
 ---
 
-# Sentinel Delete circular
+# Sentinel deletion removes a node from its circular list
 
-Deleting a data identity preserves the circle with exactly that identity erased.
+**Sentinel deletion removes a node from its circular list.** Let $S$ be a node store and $x$
+an address whose cell holds a node with previous address $p$ and next address $n$, where the
+cells at $p$ and $n$ are nonempty. If $S$ represents a circular doubly linked list with sentinel
+$s$ and data addresses $\ell$, and $x$ occurs in $\ell$, then the store returned by sentinel
+deletion of $x$ from $S$ represents a circular doubly linked list with sentinel $s$ and the
+list of data addresses obtained from $\ell$ by removing the first occurrence of $x$.
 
 ## Depends on
 
-- [Circular Represents](../basic/circular-represents.md)
-- [Node](../../basic/node.md)
-- [Sentinel Delete](sentinel-delete.md)
+- [Circular doubly linked list with a sentinel](../basic/circular-represents.md)
+- [Doubly linked list node](../../basic/node.md)
+- [Deletion from a circular list with a sentinel](sentinel-delete.md)
 
 ## Proof depends on
 
-- [Sentinel Delete get](sentinel-delete-get.md)
+- [Cells after sentinel deletion](sentinel-delete-get.md)
 
 ## Sources
 

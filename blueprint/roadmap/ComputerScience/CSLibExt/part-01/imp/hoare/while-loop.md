@@ -6,24 +6,29 @@ proof: formalized
 lean: Cslib.IMP.Valid.whileLoop
 ---
 
-# While Loop
+# Invariant rule for while loops
 
-The standard invariant rule for partial correctness of while loops.
+**Invariant rule for while loops.** Let $I$ be an assertion, $b$ a Boolean expression and
+$c$ a command. Write $I \wedge b$ for the assertion that $I$ holds and $b$ evaluates to true,
+and $I \wedge \neg b$ for the assertion that $I$ holds and $b$ evaluates to false. If the
+partial-correctness Hoare triple $\lbrace I \wedge b \rbrace\ c\ \lbrace I \rbrace$ is valid,
+then so is the triple
+$\lbrace I \rbrace\ \mathtt{while}\ b\ \mathtt{do}\ c\ \lbrace I \wedge \neg b \rbrace$.
 
 ## Depends on
 
 - [Assertion](assertion.md)
-- [BExp](../syntax/bexp.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
-- [Valid](valid.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
+- [Validity of a Hoare triple](valid.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [Big Step](../big-step/big-step.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
 
 ## Sources
 

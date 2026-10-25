@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Term.subst_subst
 ---
 
-# Subst subst
+# Composition of substitutions
 
-Composition of substitutions.
+**Composition of substitutions.** For all parallel substitutions $\sigma, \tau$, each sending
+every de Bruijn index to a term of the simply typed lambda calculus with references, and every
+term $t$, applying $\sigma$ to $t$ and then $\tau$ to the result gives the same term as applying to
+$t$ the substitution that sends each index $x$ to the result of applying $\tau$ to $\sigma(x)$.
 
 ## Depends on
 
-- [Term](../syntax/term.md)
-- [Subst](../syntax/subst.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Parallel substitution in a term](../syntax/subst.md)
 
 ## Proof depends on
 
-- [Lift Sub](../syntax/lift-sub.md)
-- [Rename](../syntax/rename.md)
-- [Rename subst](rename-subst.md)
-- [Subst congr](subst-congr.md)
-- [Subst rename](subst-rename.md)
-- [Ty](../syntax/ty.md)
+- [Lifting a substitution under a binder](../syntax/lift-sub.md)
+- [Renaming the variables of a term](../syntax/rename.md)
+- [Substituting then renaming](rename-subst.md)
+- [Substitution respects pointwise equality](subst-congr.md)
+- [Renaming then substituting](subst-rename.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

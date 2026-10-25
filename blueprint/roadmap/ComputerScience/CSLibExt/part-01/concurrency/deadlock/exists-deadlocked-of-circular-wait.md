@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Concurrency.Deadlock.AllocState.exists_deadlocked_of_circularWait
 ---
 
-# Exists deadlocked of circular Wait
+# Circular wait yields a deadlocked set
 
-Circular wait gives a deadlocked set: the processes on a cycle through `p`.
+**Circular wait yields a deadlocked set.** If a resource-allocation snapshot has
+circular wait, that is, some process $p$ waits for itself through a chain of one or more
+wait-for edges, then some set of processes is deadlocked.
+
+One such set consists of the processes on a wait-for cycle through $p$.
 
 ## Depends on
 
-- [Alloc State](alloc-state.md)
+- [Resource-allocation snapshot](alloc-state.md)
 - [Circular Wait](circular-wait.md)
 - [Deadlocked](deadlocked.md)
 
 ## Proof depends on
 
-- [Waits For](waits-for.md)
+- [Wait-for relation](waits-for.md)
 
 ## Sources
 

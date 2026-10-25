@@ -17,7 +17,6 @@ length at most the input plus the pushes so far) and the output step.
 ## Proof depends on
 
 - [The verifier host machine](vtm.md)
-- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.TM2Recursive.CodedCfg
 ---
 
-# Coded Cfg
+# Coded configurations of a multi-stack machine
 
-Coded configurations: label, internal state, and stacks of symbol codes.
+**Coded configurations of a multi-stack machine.** For a finite multi-stack machine with label
+set $\Lambda$, internal state set $\sigma$ and stack index set $K$, a coded configuration is a
+triple consisting of an optional label in $\Lambda$ (no label marks a halted configuration), an
+internal state in $\sigma$, and an assignment of a list of natural numbers to each $k \in K$.
 
 ## Depends on
 

@@ -7,17 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.time_siftDown_of_size_le
 ---
 
-# Time sift Down of size le
+# Sift-down from an invalid index costs nothing
 
-An invalid index incurs no sift-down events.
+**Sift-down from an invalid index costs nothing.** Let $a$ be an array over a linearly
+ordered type, of size $|a|$, and let $i$ be a natural number with $|a| \le i$. Then timed
+sift-down from $i$ has cost pair $(0, 0)$: it counts no comparisons and no swaps.
 
 ## Depends on
 
-- [Sift Down](sift-down.md)
+- [Sift-down with comparison and swap counts](sift-down.md)
 
 ## Proof depends on
 
-- [Time sift Down of heap Left ge](time-sift-down-of-heap-left-ge.md)
+- [Sift-down from a leaf costs nothing](time-sift-down-of-heap-left-ge.md)
 - [Heap Left](../../../part-02/binary-heap/heap-left.md)
 
 ## Sources

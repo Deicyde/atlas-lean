@@ -29,7 +29,7 @@ regular.
 - [The separator letter](sep.md)
 - [Alphabet letters in the extended alphabet](tl.md)
 - [The language $\{0^n 1^n\}$](zero-one.md)
-- [Of finite](../../../languages/finite/of-finite.md)
+- [Finite languages are regular](../../../languages/finite/of-finite.md)
 
 ## Sources
 

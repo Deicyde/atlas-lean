@@ -7,19 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.balanced_fromList
 ---
 
-# Balanced from List
+# AVL trees built from a list are balanced
 
-Trees built by insertion are balanced.
+**AVL trees built from a list are balanced.** For every list $L$ over a linearly ordered
+type, the AVL tree built from $L$ by successive insertion satisfies the AVL balance invariant.
 
 ## Depends on
 
-- [Balanced](balanced.md)
-- [From List](from-list.md)
+- [AVL balance invariant](balanced.md)
+- [Building an AVL tree from a list](from-list.md)
 
 ## Proof depends on
 
-- [Balanced insert](balanced-insert.md)
-- [Cache Correct from List](cache-correct-from-list.md)
+- [AVL insertion preserves balance](balanced-insert.md)
+- [AVL trees built from a list have correct cached heights](cache-correct-from-list.md)
 
 ## Sources
 

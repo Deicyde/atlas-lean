@@ -6,19 +6,27 @@ proof: formalized
 lean: Cslib.MachineLearning.BayesClassifier.avgRisk_zeroOneLoss_deterministic
 ---
 
-# Avg Risk zero One Loss deterministic
+# The 0-1 risk of a deterministic classifier
 
-The 0-1 risk of a deterministic classifier `f` is the prior average of `P c {x | f x ≠ c}`,
-the probability that `f` misclassifies an observation of class `c` when `P c` is a probability
-measure.
+**The 0-1 risk of a deterministic classifier.** Let $C$ be a measurable space of classes with
+measurable singletons, $P$ a kernel from $C$ to the observation space $\mathcal X$, $\pi$ a
+measure on $C$, $f : \mathcal X \to C$ a measurable map, and $\ell(c, y)$ the 0-1 loss ($0$ if
+$y = c$, $1$ otherwise). Then the average 0-1 risk of the deterministic kernel
+$\delta_f : x \mapsto \delta_{f(x)}$,
+$\int_C \int_C \ell(c, y)\,(\delta_f \circ P)(c)(dy)\,\pi(dc)$ with
+$(\delta_f \circ P)(c) = \int_{\mathcal X} \delta_{f(x)}\,P(c)(dx)$, equals
+$\int_C P(c)(\{x \in \mathcal X : f(x) \ne c\})\,\pi(dc)$.
+
+When each $P(c)$ is a probability measure, $P(c)(\{x : f(x) \ne c\})$ is the probability that
+$f$ misclassifies an observation of class $c$.
 
 ## Depends on
 
-- [Zero One Loss](zero-one-loss.md)
+- [The 0-1 loss](zero-one-loss.md)
 
 ## Proof depends on
 
-- [Lintegral zero One Loss right](lintegral-zero-one-loss-right.md)
+- [Integrating the 0-1 loss over the prediction](lintegral-zero-one-loss-right.md)
 
 ## Sources
 

@@ -4,13 +4,13 @@ navigation: module
 
 # Schnorr
 
-- [Accepts](accepts.md)
-- [Respond](respond.md)
-- [Completeness](accepts-honest.md)
-- [Extract](extract.md)
+- [Schnorr verifier's acceptance condition](accepts.md)
+- [Schnorr prover's response](respond.md)
+- [Completeness of the Schnorr identification scheme](accepts-honest.md)
+- [Schnorr knowledge extractor](extract.md)
 - [Special soundness](extract-spec.md)
-- [Honest Transcript](honest-transcript.md)
-- [Sim Transcript](sim-transcript.md)
-- [Transcript](transcript.md)
-- [Simulate](simulate.md)
+- [Honest Schnorr transcript](honest-transcript.md)
+- [Simulated Schnorr transcript](sim-transcript.md)
+- [Distribution of honest Schnorr transcripts](transcript.md)
+- [Schnorr simulator](simulate.md)
 - [Perfect honest-verifier zero knowledge](transcript-eq-simulate.md)

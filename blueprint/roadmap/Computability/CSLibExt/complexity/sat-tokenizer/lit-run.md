@@ -34,7 +34,7 @@ is none).
 - [Symbols of a table entry](../sat-verifier-spec/ent-toks.md)
 - [Tokens of a literal](../sat-verifier-spec/lit-toks.md)
 - [Binary code of a literal](../../cook-levin/encode-lit.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
@@ -43,7 +43,7 @@ is none).
 - [Reading a name block](nm-run.md)
 - [Reading a polarity](pol-run.md)
 - [Closing marker of a table entry](../sat-verifier-spec/mark-of.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.reset_potential
 ---
 
-# Reset potential
+# Potential identity for reset
 
-Reset charge plus final one-bit potential equals the initial potential.
+**Potential identity for reset.** For every $k$-bit counter $b$ (a vector of $k$ bits), the
+cost of resetting $b$ plus the number of $1$ bits in the returned counter equals the number of
+$1$ bits in $b$.
 
 ## Depends on
 
-- [Reset](reset.md)
+- [Resetting a binary counter](reset.md)
 
 ## Proof depends on
 
 - [Reset time](reset-time.md)
-- [Reset to List](reset-to-list.md)
+- [Reset returns the all-false counter](reset-to-list.md)
 
 ## Sources
 

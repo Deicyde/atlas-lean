@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.CookLevin.varsOf_length
 ---
 
-# Vars Of length
+# Length of the occurrence list
 
-The occurrence list has one entry per literal of the formula.
+**Length of the occurrence list.** For every CNF formula $\varphi$, the length of the
+occurrence list of $\varphi$ equals the total number of literals of $\varphi$, that is, the sum
+over the clauses of $\varphi$ of their lengths.
 
 ## Depends on
 
-- [Vars Of](vars-of.md)
+- [Occurrence list of a CNF formula](vars-of.md)
 - [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on

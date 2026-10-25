@@ -6,37 +6,38 @@ proof: formalized
 lean: Cslib.CookLevin.satDec_mem_NP_of_isPolyTime
 ---
 
-# Sat Dec mem NP of is Poly Time
+# SAT is in NP if its verifier is polynomial-time
 
-Canonical NP membership of SAT, conditional on the verifier's
-computed function being polynomial-time in the canonical TM2 sense.
-That evidence must be proved independently for `satVerifier`,
-covering in particular the uncharged `decodeCNF` and `varsOf`
-computations; it does not follow from
-`satVerifier_verifierInDeclaredPolyTime`, which bounds only the
-trusted declared-time annotation.
+**SAT is in NP if its verifier is polynomial-time.** If the function sending a pair $(x, w)$
+of lists of Booleans to the Boolean returned by the SAT verifier on $(x, w)$ is polynomial-time
+computable, by a multi-stack Turing machine under the canonical bitstring encodings, then the
+SAT decision problem belongs to NP.
+
+This hypothesis must be proved separately: it does not follow from the polynomial bound on the
+SAT verifier's declared time, which constrains only a trusted cost annotation and leaves the
+decoding of the input uncharged.
 
 ## Depends on
 
 - [SAT as a decision problem](../cook-levin/sat-dec.md)
-- [Sat Verifier](sat-verifier.md)
-- [Bitstring Encoding](../../MathlibExt/complexity/bitstring-encoding.md)
-- [Bit Decode](../../MathlibExt/complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../MathlibExt/complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../MathlibExt/complexity/bit-encode.md)
-- [Delimit](../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../MathlibExt/complexity/undelimit.md)
-- [Undelimit Blocks](../../MathlibExt/complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Decision Complexity Class](../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../MathlibExt/complexity/decision-problem.md)
-- [Is Poly Time](../../MathlibExt/complexity/is-poly-time.md)
-- [NP](../../MathlibExt/complexity/np.md)
+- [The SAT verifier](sat-verifier.md)
+- [Bitstring encodings](../../MathlibExt/complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../MathlibExt/complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../MathlibExt/complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../MathlibExt/complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../MathlibExt/complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Complexity classes](../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../MathlibExt/complexity/decision-problem.md)
+- [Polynomial-time computable functions](../../MathlibExt/complexity/is-poly-time.md)
+- [The complexity class NP](../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 
 - [Sat Verifier verifies](sat-verifier-verifies.md)
-- [Mem NP of verifies](../time-mcomplexity/mem-np-of-verifies.md)
+- [A timed verifier with polynomial-time output function puts its language in NP](../time-mcomplexity/mem-np-of-verifies.md)
 
 ## Sources
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.Language.NerodeClass.step
 ---
 
-# Step
+# Transition on Nerode classes
 
-Append a symbol to a Nerode class.
+**Transition on Nerode classes.** Let $L$ be a language over an alphabet $\Sigma$ and
+$a \in \Sigma$ a symbol. Appending $a$ sends the Nerode class of a word $x$ to the Nerode class
+of $xa$; this is well defined because Nerode equivalence is preserved by appending a symbol.
 
 ## Depends on
 
-- [Nerode Class](nerode-class.md)
+- [Nerode classes](nerode-class.md)
 
 ## Proof depends on
 
-- [Nerode Rel append singleton](nerode-rel-append-singleton.md)
-- [Nerode Setoid](nerode-setoid.md)
+- [Appending a symbol preserves Nerode equivalence](nerode-rel-append-singleton.md)
+- [The Nerode setoid](nerode-setoid.md)
 
 ## Sources
 

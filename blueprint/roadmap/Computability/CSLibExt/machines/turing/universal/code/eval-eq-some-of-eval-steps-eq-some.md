@@ -6,32 +6,35 @@ proof: formalized
 lean: Cslib.Turing.Universal.Code.eval_eq_some_of_evalSteps_eq_some
 ---
 
-# Agreement with `TM0.eval`
+# Clocked results agree with the machine's semantics
 
-**Agreement with `TM0.eval`.** A result of `evalSteps` is the value of the decoded machine
-on the input.
+**Clocked results agree with the machine's semantics.** Let $c$ be a code, $x$ a list of
+bits, $T$ a natural number and $l$ a list of natural numbers. If the clocked evaluator, running
+$c$ on $x$ for at most $T$ steps, returns $l$, then the decoded machine of $c$, started on the
+input word of $x$, halts, and the tape from its head rightwards in the halting configuration is
+$l$ followed by blanks.
 
 ## Depends on
 
-- [Code](code.md)
+- [Codes for single-tape machines](code.md)
 - [The clocked evaluator](eval-steps.md)
-- [Machine](machine.md)
-- [Input](input.md)
+- [The machine of a code](machine.md)
+- [Input word of a list of bits](input.md)
 
 ## Proof depends on
 
-- [Cfg](cfg.md)
+- [Explicit configurations](cfg.md)
 - [Output](output.md)
-- [To TM0](to-tm0.md)
-- [Cfg After](cfg-after.md)
-- [Eval Steps eq some iff output](eval-steps-eq-some-iff-output.md)
-- [Init](init.md)
-- [Init to TM0](init-to-tm0.md)
-- [Iterate step to TM0](iterate-step-to-tm0.md)
-- [Right₀ to TM0](right-to-tm0.md)
-- [Step](step.md)
-- [Step Or Stay](step-or-stay.md)
-- [Step to TM0](step-to-tm0.md)
+- [TM0 configuration of a simulation configuration](to-tm0.md)
+- [Clocked configuration of a code](cfg-after.md)
+- [Characterization of clocked results](eval-steps-eq-some-iff-output.md)
+- [Initial configuration of the code simulation](init.md)
+- [The explicit initial configuration is the machine's](init-to-tm0.md)
+- [Iterated steps of the decoded machine](iterate-step-to-tm0.md)
+- [The output of a configuration as a Mathlib half-tape](right-to-tm0.md)
+- [One step of a code](step.md)
+- [One step of a code, or stay when halted](step-or-stay.md)
+- [Explicit steps agree with the decoded machine](step-to-tm0.md)
 
 ## Sources
 

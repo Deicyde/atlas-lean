@@ -20,7 +20,7 @@ empty and whose counters $C$ and $N$ hold $c$ and $n$ clause markers.
 - [Configuration stacks of the CLIQUE emitter](st.md)
 - [Stack alphabets of the CLIQUE emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

@@ -35,7 +35,7 @@ $V = (T + 1) W$ variables, $W$ being the number of variables per time step.
 - [Encoded blocks of one situation](blk-i.md)
 - [Step budget for one block of the shift generator](ik-b.md)
 - [The cell-shift generator](prog.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -47,8 +47,8 @@ $V = (T + 1) W$ variables, $W$ being the number of variables per time step.
 - [Correctness of the shift generator on the stack chain of a situation](ks-run.md)
 - [The shift block of a situation and a stack](sh-blk.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

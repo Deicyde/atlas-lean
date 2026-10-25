@@ -16,15 +16,15 @@ the context-free grammar that $g$ denotes.
 
 ## Depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
 - [One round of the generating-nonterminal computation](gen-step.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 
 ## Proof depends on
 
 - [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [Sentential forms of productive nonterminals derive terminal words](exists-derives-of-forall.md)
 - [Acceptable productions](rule-ok.md)
 - [Acceptable symbols](sym-ok.md)

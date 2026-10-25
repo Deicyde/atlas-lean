@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Language.recognizer_ker_le_syntacticCon
 ---
 
-# Recognizer ker le syntactic Con
+# Recognizer kernels refine the syntactic congruence
 
-The kernel of every recognizing morphism refines the syntactic congruence.
+**Recognizer kernels refine the syntactic congruence.** If a monoid morphism $\varphi$ from the
+free monoid $\Sigma^*$ recognizes a language $L$ over $\Sigma$ through a subset $A$ of its
+codomain, then the kernel congruence of $\varphi$ is contained in the syntactic congruence of $L$:
+any words $x, y$ with $\varphi(x) = \varphi(y)$ are syntactically equivalent for $L$.
 
 ## Depends on
 
-- [Recognizes](recognizes.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
+- [Recognition of a language by a monoid morphism](recognizes.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
 
 ## Proof depends on
 
-- [Syntactic Rel of recognizer eq](syntactic-rel-of-recognizer-eq.md)
+- [Words with equal recognizer images are syntactically equivalent](syntactic-rel-of-recognizer-eq.md)
 
 ## Sources
 

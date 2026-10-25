@@ -6,19 +6,23 @@ proof: formalized
 lean: Cslib.Language.cases_of_mem_unitGrammar_rules
 ---
 
-# Cases of mem unit Grammar rules
+# Productions of the unit-eliminated grammar come from non-unit productions of $g$
 
-The productions of `unitGrammar`, backward direction.
+**Productions of the unit-eliminated grammar come from non-unit productions of $g$.**
+Let $g$ be a context-free grammar. For every production $A \to \beta$ of the grammar obtained
+from $g$ by eliminating unit productions, there are a nonterminal $B$ and a production
+$B \to \beta$ of $g$ such that $\beta$ is not a single nonterminal and $B$ is reachable from $A$
+by a possibly empty chain of unit productions of $g$.
 
 ## Depends on
 
-- [Is Unit Output](is-unit-output.md)
-- [Unit Steps](unit-steps.md)
-- [Unit Grammar](unit-grammar.md)
+- [Unit output](is-unit-output.md)
+- [Reachability by unit productions](unit-steps.md)
+- [Eliminating unit productions](unit-grammar.md)
 
 ## Proof depends on
 
-- [Grammar NTs](grammar-nts.md)
+- [Nonterminals mentioned by a grammar](grammar-nts.md)
 
 ## Sources
 

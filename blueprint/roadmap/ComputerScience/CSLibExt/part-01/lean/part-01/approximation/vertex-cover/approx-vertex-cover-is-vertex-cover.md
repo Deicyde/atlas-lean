@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.approxVertexCover_isVertexCover
 ---
 
-# Approx Vertex Cover is Vertex Cover
+# APPROX-VERTEX-COVER returns a vertex cover
 
-If every edge of `G` is listed, in either orientation, the result is a vertex cover of `G`.
+**APPROX-VERTEX-COVER returns a vertex cover.** Let $G$ be a simple graph and $L$ a list of
+ordered pairs of vertices such that for every edge $uv$ of $G$, $(u, v)$ or $(v, u)$ is in $L$.
+Then the cover that APPROX-VERTEX-COVER returns on $L$ is a vertex cover of $G$.
 
 ## Depends on
 
-- [Approx Vertex Cover](approx-vertex-cover.md)
+- [APPROX-VERTEX-COVER](approx-vertex-cover.md)
 
 ## Proof depends on
 
-- [Approx Vertex Cover covers](approx-vertex-cover-covers.md)
+- [APPROX-VERTEX-COVER covers every listed pair](approx-vertex-cover-covers.md)
 
 ## Sources
 

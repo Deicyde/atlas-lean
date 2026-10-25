@@ -13,16 +13,16 @@ an extended store typing.
 
 ## Depends on
 
-- [Has Type](../typing/has-type.md)
+- [Typing judgment for the lambda calculus with references](../typing/has-type.md)
 - [Store](../semantics/store.md)
 - [Store Typed](../typing/store-typed.md)
-- [Term](../syntax/term.md)
-- [Value](../syntax/value.md)
-- [Ty](../syntax/ty.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Extend Store](extend-store.md)
+- [Store-typing weakening](extend-store.md)
 
 ## Sources
 

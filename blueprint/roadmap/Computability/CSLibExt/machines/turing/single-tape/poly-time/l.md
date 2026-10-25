@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Turing.RevTail.L
 ---
 
-# L
+# Labels of the reversal component
 
-Labels of the reversal component: move the input onto the output, drop one symbol, done.
+**Labels of the reversal component.** The three labels of the reversal component: mv (move
+the input onto the output), drop (drop one symbol) and done.
 
 ## Depends on
 

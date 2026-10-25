@@ -19,12 +19,12 @@ multi-stack machine, and deciding it would decide the halting problem.
 ## Depends on
 
 - [Decidability by multi-stack machines](../../part-01/basic/tm2-decidable.md)
-- [TM2 Halts On](../../../../MathlibExt/turing-machine/recursive/halts/tm2-halts-on.md)
+- [Halting of a multi-stack machine on an input](../../../../MathlibExt/turing-machine/recursive/halts/tm2-halts-on.md)
 
 ## Proof depends on
 
 - [The halting problem is undecidable by multi-stack machines](not-tm2-decidable-halting.md)
-- [Every r.e. predicate is the halting set of a multi-stack machine (`FinTM2`)](../../../../MathlibExt/turing-machine/recursive/halts/exists-tm2-halts-on-iff-of-re-pred.md)
+- [Every r.e. predicate is the halting set of a multi-stack machine](../../../../MathlibExt/turing-machine/recursive/halts/exists-tm2-halts-on-iff-of-re-pred.md)
 
 ## Sources
 

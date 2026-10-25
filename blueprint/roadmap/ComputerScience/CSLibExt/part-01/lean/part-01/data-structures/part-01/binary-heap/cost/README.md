@@ -6,14 +6,14 @@ navigation: module
 
 ## Lean
 
-- [Log2 heap Parent add one](log2-heap-parent-add-one.md)
+- [The heap parent is one level up](log2-heap-parent-add-one.md)
 
 ## Time M
 
-- [Sift Up](sift-up.md)
-- [Ret sift Up](ret-sift-up.md)
-- [Comparisons sift Up le log2](comparisons-sift-up-le-log2.md)
-- [Swaps sift Up le log2](swaps-sift-up-le-log2.md)
-- [Events sift Up le log2](events-sift-up-le-log2.md)
-- [Time sift Up zero](time-sift-up-zero.md)
-- [Time sift Up of size le](time-sift-up-of-size-le.md)
+- [Sift-up with comparison and swap counts](sift-up.md)
+- [Counting does not change the result of sift-up](ret-sift-up.md)
+- [Comparison bound for sift-up](comparisons-sift-up-le-log2.md)
+- [Swap bound for sift-up](swaps-sift-up-le-log2.md)
+- [Combined comparison and swap bound for sift-up](events-sift-up-le-log2.md)
+- [Sift-up at the root costs nothing](time-sift-up-zero.md)
+- [Sift-up at an out-of-range index costs nothing](time-sift-up-of-size-le.md)

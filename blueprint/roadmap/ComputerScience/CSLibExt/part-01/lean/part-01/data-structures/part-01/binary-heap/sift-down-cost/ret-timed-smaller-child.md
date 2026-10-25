@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.ret_timedSmallerChild
 ---
 
-# Ret timed Smaller Child
+# Timed child selection returns the smaller child
 
-Erasing the selector's events gives canonical child selection.
+**Timed child selection returns the smaller child.** For every array $a$ over a linearly
+ordered type and every index $i$, the value returned by timed child selection at $i$, with its
+cost discarded, is the smaller child of $i$ in $a$ (an optional index, absent when $i$ has no
+valid child).
 
 ## Depends on
 
-- [Timed Smaller Child](timed-smaller-child.md)
+- [Timed smaller-child selection](timed-smaller-child.md)
 - [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
 
 ## Proof depends on

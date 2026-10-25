@@ -24,9 +24,9 @@ derivable from $A$ in the universality grammar of $P$.
 - [The mismatch productions](mismatch-rules.md)
 - [The universality grammar](univ-grammar.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Language From](../../../languages/context-free/part-01/basic/language-from.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Language generated from a nonterminal](../../../languages/context-free/part-01/basic/language-from.md)
 
 ## Proof depends on
 
@@ -42,10 +42,10 @@ derivable from $A$ in the universality grammar of $P$.
 - [Encoded bit terminal](u-bit.md)
 - [Encoded letter terminal](u-letter.md)
 - [Encoded nonterminal](u-nt.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
-- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
-- [Is Valuation language From](../../../languages/context-free/part-01/basic/is-valuation-language-from.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Interpretation of a sentential form](../../../languages/context-free/part-01/basic/eval-form.md)
+- [The languages generated from each nonterminal form a valuation](../../../languages/context-free/part-01/basic/is-valuation-language-from.md)
 
 ## Sources
 

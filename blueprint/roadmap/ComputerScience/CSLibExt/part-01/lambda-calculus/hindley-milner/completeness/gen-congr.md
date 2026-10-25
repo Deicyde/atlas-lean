@@ -6,21 +6,24 @@ proof: formalized
 lean: Cslib.HindleyMilner.gen_congr
 ---
 
-# Gen congr
+# Generalization depends only on the free variables of the context
 
-`gen` depends on the context only through its free variables.
+**Generalization depends only on the free variables of the context.** If two typing
+contexts $\Gamma$ and $\Gamma'$ have the same free type variables, then for every monotype
+$\tau$ the generalization of $\tau$ in $\Gamma$ equals the generalization of $\tau$ in
+$\Gamma'$.
 
 ## Depends on
 
-- [Ctx](../typing/ctx.md)
-- [Ftv](../typing/ftv.md)
-- [Scheme](../typing/scheme.md)
-- [Ty](../typing/ty.md)
-- [Gen](../typing/gen.md)
+- [Typing context](../typing/ctx.md)
+- [Free type variables of a context](../typing/ftv.md)
+- [Type schemes](../typing/scheme.md)
+- [Monotypes](../typing/ty.md)
+- [Generalization of a monotype](../typing/gen.md)
 
 ## Proof depends on
 
-- [To Scheme](../typing/to-scheme.md)
+- [Monotypes as type schemes](../typing/to-scheme.md)
 - [Term](../../../../part-02/unification/basic/term.md)
 - [Subst](../../../../part-02/unification/basic/subst-2.md)
 

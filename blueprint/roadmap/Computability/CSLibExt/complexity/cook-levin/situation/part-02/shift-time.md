@@ -44,7 +44,7 @@ $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$, $N$, $T$ and $H$, followed by $o$.
 - [Position of a situation's variable](../part-01/sa.md)
 - [Window depth of a machine](../part-01/depth.md)
 - [Dense encoding of a CNF formula](../../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 

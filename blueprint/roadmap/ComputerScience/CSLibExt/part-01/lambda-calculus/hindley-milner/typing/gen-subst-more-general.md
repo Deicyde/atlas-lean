@@ -6,33 +6,39 @@ proof: formalized
 lean: Cslib.HindleyMilner.gen_subst_moreGeneral
 ---
 
-# Gen subst more General
+# Renaming step of the substitution lemma
 
-The renaming step of the substitution lemma: after renaming the generalized variables of
-`τ` above `N`, generalizing in `s Γ` is more general than substituting into `gen Γ τ`.
+**Renaming step of the substitution lemma.** Let $\Gamma$ be a typing context, $\tau$ a
+monotype and $s$ a type substitution. Write $s\Gamma$ for the context obtained by applying $s$ to
+every scheme of $\Gamma$, and let $N$ be one more than the largest free type variable of
+$s\Gamma$, with $N = 1$ if $s\Gamma$ has none. Let $\rho$ be the substitution sending a type
+variable $y$ to $s(y)$ if $y$ is free in $\Gamma$, and to the type variable $y + N$ otherwise.
+Then the generalization of $\rho(\tau)$ with respect to $s\Gamma$ is more general than the scheme
+obtained by applying $s$ to the free type variables of the generalization of $\tau$ with respect
+to $\Gamma$.
 
 ## Depends on
 
-- [Ctx](ctx.md)
-- [Ftv](ftv.md)
-- [Subst](subst.md)
-- [More General](more-general.md)
-- [Subst Ty](subst-ty.md)
-- [Ty](ty.md)
-- [Above](above.md)
-- [Gen](gen.md)
+- [Typing context](ctx.md)
+- [Free type variables of a context](ftv.md)
+- [Applying a type substitution to a context](subst.md)
+- [More general type scheme](more-general.md)
+- [Applying a type substitution to a scheme](subst-ty.md)
+- [Monotypes](ty.md)
+- [Strict upper bound of a finite set of naturals](above.md)
+- [Generalization of a monotype](gen.md)
 - [Subst](../../../../part-02/unification/basic/subst.md)
 - [Term](../../../../part-02/unification/basic/term.md)
 - [Subst](../../../../part-02/unification/basic/subst-2.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
-- [Visible Vars](visible-vars.md)
-- [Scheme](scheme.md)
-- [Eval](eval.md)
-- [Inst](inst.md)
-- [To Scheme](to-scheme.md)
+- [Context lookup](lookup.md)
+- [Free type variables of a name's visible scheme](visible-vars.md)
+- [Type schemes](scheme.md)
+- [Evaluation of a type scheme](eval.md)
+- [Instantiation of a type scheme](inst.md)
+- [Monotypes as type schemes](to-scheme.md)
 - [Exists of mem vars subst](../../../../part-02/unification/basic/exists-of-mem-vars-subst.md)
 - [Subst congr](../../../../part-02/unification/basic/subst-congr.md)
 - [Vars](../../../../part-02/unification/basic/vars.md)

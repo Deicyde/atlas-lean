@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.hasEdge_empty
 ---
 
-# Has Edge empty
+# The empty adjacency matrix has no edges
 
-The empty graph has no edges.
+**The empty adjacency matrix has no edges.** For every natural number $n$ and all vertices $i$
+and $j$ among the $n$ vertices, the empty adjacency matrix on $n$ vertices has no edge from $i$ to
+$j$.
 
 ## Depends on
 
-- [Empty](empty.md)
-- [Has Edge](has-edge.md)
+- [Empty adjacency matrix](empty.md)
+- [Edge query of an adjacency matrix](has-edge.md)
 
 ## Sources
 

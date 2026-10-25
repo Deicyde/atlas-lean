@@ -7,19 +7,28 @@ lean: Cslib.Turing.SingleTapeTM.fence
 
 # The fenced machine
 
-**The fenced machine**: on `fenceInput w i j` it starts on the left wall, moves right off it
-and over the left padding, and then runs `tm` from `tm.q₀` (`fenceRun`), entering the trap when it
-reads a wall or a blank cell. On a blank cell, in every state, it writes a blank and does not
-move. An `abbrev`, so that its states unfold to `FenceState tm.State`.
+**The fenced machine.** For a single-tape machine $M$ over a finite inhabited alphabet $\Sigma$,
+the fenced machine of $M$ is the single-tape machine over the fenced alphabet of $\Sigma$ whose
+states are the states of the fenced machine for the states of $M$, which starts in the first start
+state and acts on the cell under its head as follows. In the first start state, on a wall it moves
+right into the second start state, and on any other cell it leaves the cell unchanged, does not
+move and enters the trap. In the second start state, on a left padding cell it moves right and
+stays in that state, and on any other cell it makes the running transition of the initial state of
+$M$. In the running state of a state $q$ of $M$ it makes the running transition of $q$. In the
+trap it leaves the cell unchanged, does not move and stays in the trap.
+
+So on the fenced input of a word $w$ it moves right off the left wall and over the left padding,
+then runs $M$ from its initial state, and enters the trap when it reads a wall or a blank cell. On
+a blank cell, in every state, it writes a blank and does not move.
 
 ## Depends on
 
-- [Fence Symbol](fence-symbol.md)
+- [Fenced alphabet](fence-symbol.md)
 
 ## Proof depends on
 
-- [Fence State](fence-state.md)
-- [Fence Run](fence-run.md)
+- [States of the fenced machine](fence-state.md)
+- [The running transition of the fenced machine](fence-run.md)
 
 ## Sources
 

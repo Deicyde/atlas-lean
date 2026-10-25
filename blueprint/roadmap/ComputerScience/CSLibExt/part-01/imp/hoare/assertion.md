@@ -7,7 +7,8 @@ lean: Cslib.IMP.Assertion
 
 # Assertion
 
-State assertions used as Hoare preconditions and postconditions.
+**Assertion.** An assertion is a predicate on program states: it assigns a proposition to
+each state. Assertions serve as the preconditions and postconditions of Hoare triples.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

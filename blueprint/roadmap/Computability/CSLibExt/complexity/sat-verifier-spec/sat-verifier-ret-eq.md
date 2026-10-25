@@ -15,16 +15,16 @@ The components compose to `satVerifier`.
 - [Clause check against an occurrence table](check-spec.md)
 - [Occurrence table of a formula and a witness](ents.md)
 - [Decoding a complete length-prefixed CNF formula](../../cook-levin/decode-cnf.md)
-- [Sat Verifier](../../sat-time-m/sat-verifier.md)
+- [The SAT verifier](../../sat-time-m/sat-verifier.md)
 - [CNF](../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
 - [The clause check on the occurrence table is the formula check](check-spec-ents.md)
-- [Check CNF](../../sat-time-m/check-cnf.md)
-- [Sat Verifier none](../../sat-time-m/sat-verifier-none.md)
-- [Sat Verifier some](../../sat-time-m/sat-verifier-some.md)
-- [Vars Of](../../sat-time-m/vars-of.md)
+- [Formula check against a witness](../../sat-time-m/check-cnf.md)
+- [The SAT verifier rejects undecodable inputs](../../sat-time-m/sat-verifier-none.md)
+- [The SAT verifier on a decodable input](../../sat-time-m/sat-verifier-some.md)
+- [Occurrence list of a CNF formula](../../sat-time-m/vars-of.md)
 
 ## Sources
 

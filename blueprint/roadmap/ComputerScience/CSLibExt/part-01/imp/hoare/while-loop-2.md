@@ -14,17 +14,17 @@ one guarded body iteration followed by the loop again.
 ## Depends on
 
 - [Assertion](assertion.md)
-- [BExp](../syntax/bexp.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
-- [Wlp](wlp.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
+- [Weakest liberal precondition](wlp.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [Big Step](../big-step/big-step.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
 
 ## Sources
 

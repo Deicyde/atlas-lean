@@ -7,14 +7,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.listInsert_time
 ---
 
-# List Insert time
+# Cost of doubly-linked-list insertion
 
-Exact source assignment/NIL-test events, including access-valid aliases.
+**Cost of doubly-linked-list insertion.** For a store $S$ and allocated cells $x$ and $y$
+such that the successor of $y$ in $S$, if any, is allocated, the cost of inserting $x$ after
+$y$, counting one unit per pointer assignment and per NIL test, is $5$ if $y$ has a successor
+in $S$ and $4$ if the next pointer of $y$ in $S$ is NIL.
+
+No distinctness of $x$ and $y$ is assumed.
 
 ## Depends on
 
-- [Node](../basic/node.md)
-- [List Insert](list-insert.md)
+- [Doubly linked list node](../basic/node.md)
+- [Doubly-linked-list insertion (LIST-INSERT)](list-insert.md)
 
 ## Sources
 

@@ -8,26 +8,28 @@ lean: Cslib.Turing.Universal.codeTime_eq_empty
 
 # Some step is needed
 
-**Some step is needed.** `CodeTime f` is empty when `f 0 = 0`: with no step on the empty
-input, the tape stays blank and holds no answer bit.
+**Some step is needed.** Let $f : \mathbb{N} \to \mathbb{N}$ with $f(0) = 0$. Then no
+decision problem is decided by a code within $f(|x|)$ steps on every input $x$: the time class
+$\mathrm{CodeTime}(f)$ is empty. With no step on the empty input, the tape stays blank and
+holds no answer bit.
 
 ## Depends on
 
-- [Code Time](code-time.md)
-- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [Time classes on codes](code-time.md)
+- [Complexity classes](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 
-- [Code](../code/code.md)
-- [Cfg](../code/cfg.md)
+- [Codes for single-tape machines](../code/code.md)
+- [Explicit configurations](../code/cfg.md)
 - [Output](../code/output.md)
-- [Decides Within](decides-within.md)
-- [Cfg After](../code/cfg-after.md)
+- [Deciding within a time bound](decides-within.md)
+- [Clocked configuration of a code](../code/cfg-after.md)
 - [The clocked evaluator](../code/eval-steps.md)
-- [Eval Steps eq some iff output](../code/eval-steps-eq-some-iff-output.md)
-- [Step](../code/step.md)
-- [Bit Sym](../code/bit-sym.md)
+- [Characterization of clocked results](../code/eval-steps-eq-some-iff-output.md)
+- [One step of a code](../code/step.md)
+- [Symbol of an input bit](../code/bit-sym.md)
 
 ## Sources
 

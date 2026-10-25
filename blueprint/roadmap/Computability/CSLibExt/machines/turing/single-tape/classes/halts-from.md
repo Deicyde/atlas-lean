@@ -5,12 +5,15 @@ statement: formalized
 lean: Cslib.Turing.SingleTapeTM.HaltsFrom
 ---
 
-# Halts From
+# Halting from a configuration
 
-`tm` **halts from** the configuration `c`: its run from `c` reaches a configuration in the
-halting state. This is CSLib's `Relation.Normalizable tm.TransitionRelation c`, the halting
-configurations being the normal forms (`haltsFrom_iff_normalizable`), as for CSLib's register
-machines (`URM.halts_iff_normalizable`).
+**Halting from a configuration.** A single-tape Turing machine $M$ halts from a configuration
+$c$ when its run from $c$ reaches, in finitely many steps (possibly none), a configuration in the
+halting state.
+
+Equivalently, $c$ is normalizable for the transition relation of $M$, since the configurations in
+the halting state are exactly those without a successor; the same holds for CSLib's register
+machines.
 
 ## Depends on
 

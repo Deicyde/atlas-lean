@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.reset_time_replicate_false
 ---
 
-# Reset time replicate false
+# Resetting the all-false counter costs nothing
 
-Resetting an all-false counter has zero flip charge.
+**Resetting the all-false counter costs nothing.** For every width $k$, resetting the
+all-false bit vector of width $k$ has cost $0$.
 
 ## Depends on
 
-- [Reset](reset.md)
+- [Resetting a binary counter](reset.md)
 
 ## Proof depends on
 

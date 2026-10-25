@@ -15,7 +15,7 @@ are Nerode equivalent for the language of $M$, that is, have the same left quoti
 
 ## Depends on
 
-- [Nerode Rel](../nerode/nerode-rel.md)
+- [Nerode equivalence](../nerode/nerode-rel.md)
 - [States of Brzozowski's automaton](brzozowski-state.md)
 - [Brzozowski's automaton](brzozowski.md)
 

@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Language.unitGrammar_language
 ---
 
-# Unit Grammar language
+# Eliminating unit productions preserves the language
 
-`unitGrammar` generates exactly the original language.
+**Eliminating unit productions preserves the language.** For every context-free
+grammar $g$, the grammar obtained from $g$ by eliminating unit productions generates
+the same language as $g$.
 
 ## Depends on
 
-- [Unit Grammar](unit-grammar.md)
+- [Eliminating unit productions](unit-grammar.md)
 
 ## Proof depends on
 
-- [Yields](../../part-02/yields/yields.md)
-- [Is Valuation unit Grammar](is-valuation-unit-grammar.md)
-- [Language From](../basic/language-from.md)
-- [Language le of valuation](../basic/language-le-of-valuation.md)
-- [Mem language iff yields](../../part-02/yields/mem-language-iff-yields.md)
-- [Yields unit Grammar of yields](yields-unit-grammar-of-yields.md)
+- [Yield of a sentential form](../../part-02/yields/yields.md)
+- [Soundness of unit-production elimination](is-valuation-unit-grammar.md)
+- [Language generated from a nonterminal](../basic/language-from.md)
+- [Valuations bound the language of a grammar](../basic/language-le-of-valuation.md)
+- [Language membership through yields](../../part-02/yields/mem-language-iff-yields.md)
+- [Eliminating unit productions keeps every yield](yields-unit-grammar-of-yields.md)
 
 ## Sources
 

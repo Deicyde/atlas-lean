@@ -97,11 +97,11 @@ theorem liveVal_val (n : List Bool) (b : Bool) (post : List Ent) (q : List Bool)
 - [The lookup program](prog.md)
 - [Stack contents of the lookup machine](stk.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

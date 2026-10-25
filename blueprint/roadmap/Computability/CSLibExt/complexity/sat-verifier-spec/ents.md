@@ -22,7 +22,7 @@ no value otherwise.
 ## Proof depends on
 
 - [Occurrence table of a list of variables](ents-of.md)
-- [Vars Of](../../sat-time-m/vars-of.md)
+- [Occurrence list of a CNF formula](../../sat-time-m/vars-of.md)
 
 ## Sources
 

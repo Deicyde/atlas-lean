@@ -5,12 +5,19 @@ statement: formalized
 lean: Cslib.Language.stepRule
 ---
 
-# Step Rule
+# Production of the triple grammar for a transition
 
-The production for one transition popping `γ` in state `p`, moving to
-state `r` and pushing `εs`, with `ss` the states after `r` bracketing the
-pushed symbols; the last of these states is the target state of the
-triple.
+**Production of the triple grammar for a transition.** Let $p$ and $r$ be states, $\gamma$ a
+stack symbol, $a$ an optional input letter, $\varepsilon_1 \cdots \varepsilon_k$ a list of stack
+symbols and $s_1, \dots, s_m$ a list of states. Write $s_0 = r$ and let $q = s_m$ be the last
+state of the list $s_0, s_1, \dots, s_m$ (so $q = r$ when $m = 0$). The production has
+left-hand side the nonterminal $(p, \gamma, q)$, and its right-hand side is the letter $a$
+(nothing if $a$ is absent) followed by the nonterminals $(s_{i-1}, \varepsilon_i, s_i)$ for
+$i = 1, \dots, \min(k, m)$ in order.
+
+It encodes a transition that in state $p$, reading $a$ (or no letter), pops $\gamma$, moves to
+state $r$ and pushes $\varepsilon_1 \cdots \varepsilon_k$; the triple grammar uses it with
+$m = k$.
 
 ## Depends on
 
@@ -18,8 +25,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chain Form](chain-form.md)
-- [Opt Terms](opt-terms.md)
+- [Chain of triple nonterminals](chain-form.md)
+- [Terminal word of an optional input letter](opt-terms.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Language.LeftDerivation.mem_language
 ---
 
-# Mem language
+# Words with a leftmost derivation lie in the language
 
-A word with a leftmost derivation from the start symbol is in the language.
+**Words with a leftmost derivation lie in the language.** Let $g$ be a context-free grammar.
+If a word of terminals $w$ has a leftmost derivation in $g$ from the start symbol of $g$, then $w$
+belongs to the language of $g$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ A word with a leftmost derivation from the start symbol is in the language.
 
 ## Proof depends on
 
-- [Derives](derives.md)
+- [Leftmost derivations are derivations](derives.md)
 
 ## Sources
 

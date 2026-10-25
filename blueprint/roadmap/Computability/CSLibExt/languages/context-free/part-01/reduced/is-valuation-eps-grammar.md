@@ -6,24 +6,28 @@ proof: formalized
 lean: Cslib.Language.isValuation_epsGrammar
 ---
 
-# Is Valuation eps Grammar
+# Soundness of ε-production elimination
 
-Soundness of `epsGrammar` against the canonical valuation.
+**Soundness of ε-production elimination.** Let $g$ be a context-free grammar and, for each
+nonterminal $A$, let $L_g(A)$ be the language of words $g$ derives from $A$. Then $L_g$ is a
+valuation of the grammar obtained from $g$ by eliminating ε-productions: for every production
+$A \to \alpha$ of that grammar, the language of $\alpha$ under $L_g$ (the concatenation of the
+languages of its symbols, a terminal $a$ denoting $\{a\}$) is contained in $L_g(A)$.
 
 ## Depends on
 
-- [Is Valuation](../basic/is-valuation.md)
-- [Eps Grammar](eps-grammar.md)
-- [Language From](../basic/language-from.md)
+- [Valuation of a grammar](../basic/is-valuation.md)
+- [Elimination of $\varepsilon$-productions](eps-grammar.md)
+- [Language generated from a nonterminal](../basic/language-from.md)
 
 ## Proof depends on
 
-- [Nullable](nullable.md)
-- [Cases of mem eps Grammar rules](cases-of-mem-eps-grammar-rules.md)
-- [Eval Form](../basic/eval-form.md)
-- [Eval Form le of mem nullable Deletions](eval-form-le-of-mem-nullable-deletions.md)
-- [Is Valuation language From](../basic/is-valuation-language-from.md)
-- [Nullable Deletions](nullable-deletions.md)
+- [Nullable nonterminal](nullable.md)
+- [Productions of the $\varepsilon$-eliminated grammar come from productions of $g$](cases-of-mem-eps-grammar-rules.md)
+- [Interpretation of a sentential form](../basic/eval-form.md)
+- [Deleting nullable nonterminals shrinks the denoted language](eval-form-le-of-mem-nullable-deletions.md)
+- [The languages generated from each nonterminal form a valuation](../basic/is-valuation-language-from.md)
+- [Nullable deletions](nullable-deletions.md)
 
 ## Sources
 

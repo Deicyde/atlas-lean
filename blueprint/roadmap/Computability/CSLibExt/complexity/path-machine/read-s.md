@@ -25,8 +25,8 @@ false it jumps to $\ell'$. Run at its own label $\ell$, it reads a unary number 
 
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
-- [Push All](../../../MathlibExt/turing-machine/program/push-all.md)
+- [Bit on top of a stack](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Pushing symbols onto several stacks](../../../MathlibExt/turing-machine/program/push-all.md)
 
 ## Sources
 

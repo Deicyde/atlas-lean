@@ -30,14 +30,14 @@ clause count stays $c$ and the scratch counters stay empty.
 - [Fresh variable indices](../three-sat/fresh.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Binary code of a literal](../../../../cook-levin/encode-lit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
 - [Fresh-literal subroutine of the 3SAT emitter](fresh-run.md)
 - [Entry label of a literal](pre.md)
 - [Return label of the fresh-literal subroutine](ret.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

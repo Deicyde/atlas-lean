@@ -6,18 +6,20 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.inorder
 ---
 
-# Inorder
+# Inorder traversal of an AVL tree
 
-The linear-time inorder traversal of a tree, inherited from
-`BinarySearchTree` through `toBinaryTree`.
+**Inorder traversal of an AVL tree.** The inorder traversal of a tree $t$ lists its keys with
+the left subtree first, then the root key, then the right subtree, recursively. It is the
+binary search tree inorder traversal of $t$ with its cached heights erased, computed in linear
+time.
 
 ## Depends on
 
-- [Tree](tree.md)
+- [Binary trees with cached heights](tree.md)
 
 ## Proof depends on
 
-- [To Binary Tree](to-binary-tree.md)
+- [Erasing the cached heights of an AVL tree](to-binary-tree.md)
 - [Inorder](../../part-02/binary-search-tree/inorder.md)
 
 ## Sources

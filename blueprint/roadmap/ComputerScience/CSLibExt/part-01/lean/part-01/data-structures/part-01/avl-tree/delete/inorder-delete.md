@@ -7,20 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.inorder_delete
 ---
 
-# Inorder delete
+# Inorder traversal after AVL deletion, alternative name
 
-Deleting a key with `delete` erases it from the inorder traversal.
+**Inorder traversal after AVL deletion, alternative name.** Let $\alpha$ be a linearly
+ordered type, $x \in \alpha$, and $t$ an ordered tree. Then the inorder traversal of
+$\mathrm{delete}(x, t)$, the AVL deletion of $x$ from $t$ under its alternative name, is the
+inorder traversal of $t$ with the first occurrence of $x$ removed; if $x$ does not occur, the
+traversal is unchanged.
 
 ## Depends on
 
-- [Ordered](../../avl-tree-2/ordered.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Delete](delete.md)
-- [Inorder](../../avl-tree-2/inorder.md)
+- [Ordered AVL trees](../../avl-tree-2/ordered.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [AVL tree deletion under its alternative name](delete.md)
+- [Inorder traversal of an AVL tree](../../avl-tree-2/inorder.md)
 
 ## Proof depends on
 
-- [Inorder erase](inorder-erase.md)
+- [Inorder traversal after AVL deletion](inorder-erase.md)
 
 ## Sources
 

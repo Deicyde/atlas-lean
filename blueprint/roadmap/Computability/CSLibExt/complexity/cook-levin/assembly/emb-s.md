@@ -20,7 +20,7 @@ identifying each stack's alphabet with itself.
 - [Stacks of a counter machine](../counter-view/sk.md)
 - [Counters of the transition-family generator](../family/ck.md)
 - [Stack alphabets of the generator](../family/g.md)
-- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 

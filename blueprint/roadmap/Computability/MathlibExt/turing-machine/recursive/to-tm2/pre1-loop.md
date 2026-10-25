@@ -6,9 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.TM2Recursive.pre1_loop
 ---
 
-# Pre1 loop
+# Iterated steps of the wrapped machine
 
-Iterated steps of the wrapped machine. -/
+**Iterated steps of the wrapped machine.** Let $c$ be a partial recursive code and let $s$ be
+the map that sends none to none and a configuration $d$ of the wrapped machine for $c$ to the
+result of one step of the wrapped machine on $d$ (which is none if $d$ has halted). For
+$j \in \mathbb{N}$ and $x$ either a configuration of the wrapped machine for $c$ or none, the
+$j$-fold run from $x$ is $s^{j}(x)$, the result of applying $s$ to $x$ $j$ times. -/
 noncomputable abbrev frun (j : ℕ) (x : Option (FCfg c)) : Option (FCfg c) :=
   (flip bind (fstep c))^[j] x
 
@@ -26,19 +30,19 @@ theorem frun_one (d : FCfg c) : frun c 1 (some d) = fstep c d := rfl
 
 ## Depends on
 
-- [FCfg](fcfg.md)
-- [FΓ](f.md)
-- [FΛ](f-2.md)
-- [Phase](phase.md)
-- [Bool ToΓ'](bool-to.md)
-- [Frun](frun.md)
-- [Mk Stk](mk-stk.md)
-- [Supp](supp.md)
+- [Configurations of the wrapped machine](fcfg.md)
+- [Stack alphabets of the wrapped machine](f.md)
+- [Labels of the wrapped machine](f-2.md)
+- [Adapter labels](phase.md)
+- [Bits as stack symbols](bool-to.md)
+- [Iterated steps of the wrapped machine](frun.md)
+- [Stack contents of the wrapped machine](mk-stk.md)
+- [Support of a code](supp.md)
 
 ## Proof depends on
 
-- [Fstep](fstep.md)
-- [Fwd Prog](fwd-prog.md)
+- [One step of the wrapped machine](fstep.md)
+- [The program of the wrapped machine](fwd-prog.md)
 
 ## Sources
 

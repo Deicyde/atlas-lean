@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BallTree.distSq_le_radiusSq
 ---
 
-# Dist Sq le radius Sq
+# Points lie within the squared radius
 
-Every point of `pts` lies in the sphere computed by `radiusSq`.
+**Points lie within the squared radius.** Let $c \in \mathbb{Z}^d$ and let $L$ be a list
+of points of $\mathbb{Z}^d$. For every point $p$ of $L$, the squared distance from $c$ to $p$
+is at most the squared radius of $L$ around $c$, the largest squared distance from $c$ to a
+point of $L$.
 
 ## Depends on
 
-- [Dist Sq](dist-sq.md)
-- [Radius Sq](radius-sq.md)
+- [Squared Euclidean distance](dist-sq.md)
+- [Squared covering radius](radius-sq.md)
 
 ## Sources
 

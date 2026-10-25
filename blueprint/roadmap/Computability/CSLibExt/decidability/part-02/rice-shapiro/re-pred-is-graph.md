@@ -20,7 +20,7 @@ This set is in fact decidable.
 ## Proof depends on
 
 - [Finite function of a list of pairs](fin-fun.md)
-- [Forall mem](../../../../MathlibExt/re/forall-mem.md)
+- [Bounded universal quantification preserves recursive enumerability](../../../../MathlibExt/re/forall-mem.md)
 
 ## Sources
 

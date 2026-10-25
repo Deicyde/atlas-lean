@@ -5,14 +5,16 @@ statement: formalized
 lean: Cslib.Turing.Universal.Code.Cfg.toTM0
 ---
 
-# To TM0
+# TM0 configuration of a simulation configuration
 
-The Mathlib configuration of an explicit configuration: lists are read with blanks beyond
-their ends.
+**TM0 configuration of a simulation configuration.** The TM0 configuration of a configuration
+$k$ of the simulation has the state of $k$, the cell under the head of $k$ as its head cell, and
+as the halves of its tape left and right of the head the cells of $k$ left and right of the head,
+nearest first, followed by infinitely many blanks.
 
 ## Depends on
 
-- [Cfg](cfg.md)
+- [Explicit configurations](cfg.md)
 
 ## Sources
 

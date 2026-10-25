@@ -29,7 +29,7 @@ $j$.
 - [The 3-COLOR emitter machine](prog.md)
 - [Stack alphabets of the 3-coloring emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
@@ -39,11 +39,11 @@ $j$.
 - [Counter values of a quiescent state](k-ne-o.md)
 - [Unit symbol of a counter](unit.md)
 - [Copying a counter through $W$](dup-run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Emit](../../../../../MathlibExt/turing-machine/program/emit.md)
-- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
+- [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
 
 ## Sources
 

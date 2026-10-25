@@ -24,7 +24,7 @@ stacks unchanged.
 - [Prog](prog.md)
 - [Edge-list decoder](../../part-01/color/decode-es.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -37,7 +37,7 @@ stacks unchanged.
 - [Decoding fails on a dangling half-pair](../../part-01/color/decode-es-of-some-none.md)
 - [Decoding one pair, then the rest](../../part-01/color/decode-es-of-some-some.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

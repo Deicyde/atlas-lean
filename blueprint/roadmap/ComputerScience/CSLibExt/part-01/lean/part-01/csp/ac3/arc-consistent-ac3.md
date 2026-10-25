@@ -13,14 +13,14 @@ orientations of an arc and arcs between distinct variables.
 
 ## Depends on
 
-- [Arc Consistent](arc-consistent.md)
-- [Binary CSP](binary-csp.md)
-- [Symmetric](symmetric.md)
-- [Ac3 All](ac3-all.md)
+- [Arc consistency](arc-consistent.md)
+- [Binary constraint satisfaction problem](binary-csp.md)
+- [Symmetric binary CSP](symmetric.md)
+- [AC-3 on the whole problem](ac3-all.md)
 
 ## Proof depends on
 
-- [Arc Consistent ac3 of inv](arc-consistent-ac3-of-inv.md)
+- [Arc consistency invariant of AC-3](arc-consistent-ac3-of-inv.md)
 
 ## Sources
 

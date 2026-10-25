@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Language.finite_syntacticMonoid_wordMorphismPreimage
 ---
 
-# Finite syntactic Monoid word Morphism Preimage
+# Inverse images under word morphisms preserve finiteness of the syntactic monoid
 
-Finiteness of syntactic monoids is closed under arbitrary free-monoid inverse images.
+**Inverse images under word morphisms preserve finiteness of the syntactic monoid.** Let
+$h \colon \Sigma^* \to \Gamma^*$ be a monoid morphism between free monoids and $L$ a language over
+$\Gamma$ whose syntactic monoid is finite. Then the syntactic monoid of the inverse image
+$h^{-1}(L) = \{w \in \Sigma^* \mid h(w) \in L\}$ is finite.
 
 ## Depends on
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Word Morphism Preimage](word-morphism-preimage.md)
+- [Inverse image under a word morphism](word-morphism-preimage.md)
 
 ## Proof depends on
 
-- [Recognizes](../recognition/recognizes.md)
-- [Finite syntactic Monoid of recognizer](../recognition/finite-syntactic-monoid-of-recognizer.md)
-- [Syntactic Accept](../syntactic/syntactic-accept.md)
-- [Syntactic Con](../syntactic/syntactic-con.md)
-- [Syntactic Morphism](../syntactic/syntactic-morphism.md)
-- [Word Morphism Recognizer](word-morphism-recognizer.md)
+- [Recognition of a language by a monoid morphism](../recognition/recognizes.md)
+- [Finite recognizers give finite syntactic monoids](../recognition/finite-syntactic-monoid-of-recognizer.md)
+- [Accepting set of the syntactic monoid](../syntactic/syntactic-accept.md)
+- [Syntactic congruence](../syntactic/syntactic-con.md)
+- [Syntactic morphism](../syntactic/syntactic-morphism.md)
+- [Recognizing morphism of an inverse image](word-morphism-recognizer.md)
 
 ## Sources
 

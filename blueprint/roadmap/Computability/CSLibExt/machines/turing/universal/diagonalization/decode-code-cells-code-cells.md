@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Turing.Universal.decodeCodeCells_codeCells
 ---
 
-# Decode Code Cells code Cells
+# Code stacks decode to codes with the same code stack
 
-Every code stack decodes to a code with that code stack.
+**Code stacks decode to codes with the same code stack.** For every code $c$, decoding the code
+stack of $c$ succeeds and returns a code $c'$ whose code stack equals the code stack of $c$.
 
 ## Depends on
 
-- [Code Cells](../clocked/code-cells.md)
-- [Code](../code/code.md)
+- [The code stack](../clocked/code-cells.md)
+- [Codes for single-tape machines](../code/code.md)
 - [Decode Code Cells](decode-code-cells.md)
 
 ## Proof depends on
 
-- [Code Cells of decode Code Cells eq some](code-cells-of-decode-code-cells-eq-some.md)
+- [Decoding inverts the code stack](code-cells-of-decode-code-cells-eq-some.md)
 - [Code stacks are recognized](is-some-decode-code-cells-iff.md)
 
 ## Sources

@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Turing.Universal.Clocked.dU
 ---
 
-# D U
+# Decoding units
 
-Read a unit as the bit `true`; a marker ends a block.
+**Decoding units.** The unit decoder sends the bit true (a unit) to the bit true, and sends
+the bit false (a marker) to no bit, which ends a block.
 
 ## Depends on
 

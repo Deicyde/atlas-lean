@@ -22,7 +22,7 @@ $b$ ends on top), and go to the label $f(a, b)$. A missing or non-bit symbol is 
 - [Stacks of the 3-COLOR verifier](k.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Bit on top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

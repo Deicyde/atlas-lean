@@ -6,22 +6,24 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.language_epsElim
 ---
 
-# Language eps Elim
+# Removing empty productions drops only the empty word
 
-`epsElim` generates the language minus the empty word.
+**Removing empty productions drops only the empty word.** For every encoded context-free
+grammar $g$, the language of the encoded grammar obtained from $g$ by removing empty productions
+consists of the nonempty words of the language of $g$.
 
 ## Depends on
 
-- [Encoded CFG](../encoded/encoded-cfg.md)
-- [Eps Elim](eps-elim.md)
-- [Language](../encoded/language.md)
+- [Encoded context-free grammars](../encoded/encoded-cfg.md)
+- [Removing empty productions from an encoded grammar](eps-elim.md)
+- [Language of an encoded grammar](../encoded/language.md)
 
 ## Proof depends on
 
-- [`epsElim` computes `epsGrammar`](eps-elim-to-cfg.md)
-- [To CFG](../encoded/to-cfg.md)
-- [Eps Grammar](../reduced/eps-grammar.md)
-- [Eps Grammar language](../reduced/eps-grammar-language.md)
+- [Computable removal of empty productions agrees with the classical one](eps-elim-to-cfg.md)
+- [Grammar denoted by an encoding](../encoded/to-cfg.md)
+- [Elimination of $\varepsilon$-productions](../reduced/eps-grammar.md)
+- [The $\varepsilon$-eliminated grammar generates the nonempty words of $g$](../reduced/eps-grammar-language.md)
 
 ## Sources
 

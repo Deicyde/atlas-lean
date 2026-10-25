@@ -5,14 +5,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.Forest.preorder
 ---
 
-# Preorder
+# Preorder of a forest
 
-The vertices of the forest in preorder (the specification; `preorderWalk` computes it
-without appending).
+**Preorder of a forest.** The list of the vertices of a forest in preorder: empty for the empty
+forest, and for a forest with first root $v$, children forest $C$ and sibling forest $S$, the
+vertex $v$, followed by the preorder of $C$, followed by the preorder of $S$.
+
+The preorder walk computes this list without appending lists.
 
 ## Depends on
 
-- [Forest](forest.md)
+- [Rooted forest in left-child right-sibling form](forest.md)
 
 ## Sources
 

@@ -5,12 +5,16 @@ statement: formalized
 lean: Cslib.Language.epsStartGrammar
 ---
 
-# Eps Start Grammar
+# Grammar with a fresh nullable start symbol
 
-Add a fresh initial nonterminal with an empty production and
-copies of the old initial productions. The new grammar generates
-the old language plus the empty word, and stays in Chomsky normal
-form when the old grammar is and has no empty outputs.
+**Grammar with a fresh nullable start symbol.** Given a context-free grammar $G$ with
+nonterminals $N$ and initial nonterminal $S$, this is the grammar with nonterminals
+$N \cup \{S_0\}$ for a fresh symbol $S_0$, initial nonterminal $S_0$, and the following
+productions: every production of $G$; the empty production $S_0 \to \varepsilon$; and
+$S_0 \to \alpha$ for every production $S \to \alpha$ of $G$.
+
+The new grammar generates the language of $G$ plus the empty word, and stays in Chomsky normal
+form when $G$ is in Chomsky normal form and has no empty outputs.
 
 ## Depends on
 
@@ -18,9 +22,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Map Rule](../basic/map-rule.md)
-- [Map Rule injective](../basic/map-rule-injective.md)
-- [Map Symbol](../basic/map-symbol.md)
+- [Renaming the nonterminals of a production](../basic/map-rule.md)
+- [Injective renamings are injective on productions](../basic/map-rule-injective.md)
+- [Renaming the nonterminals of a symbol](../basic/map-symbol.md)
 
 ## Sources
 

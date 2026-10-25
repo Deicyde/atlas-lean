@@ -20,7 +20,7 @@ block, identifying each stack's alphabet with itself.
 - [Counters of the initial-row generator](../init-family/ck.md)
 - [Stacks of a counter machine with an input stack](../init-family/ik.md)
 - [Alphabets of a counter machine with an input stack](../init-family/i.md)
-- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 

@@ -6,22 +6,22 @@ navigation: module
 
 ## Right letters
 
-- [Proj Right](proj-right.md)
+- [Right projection of a word](proj-right.md)
 
 ## Inserting marker letters
 
-- [Ins Symbol](ins-symbol.md)
-- [Marked Form](marked-form.md)
-- [Ins Grammar](ins-grammar.md)
-- [Ins Grammar derives flat Map](ins-grammar-derives-flat-map.md)
-- [Ins Grammar derives marked Form](ins-grammar-derives-marked-form.md)
-- [Ins Valuation](ins-valuation.md)
-- [`insGrammar` generates the words whose right letters form a word of the original language](ins-grammar-language.md)
-- [Inserting letters](preimage-proj-right.md)
+- [Marker translation of a symbol](ins-symbol.md)
+- [Marked form of a word](marked-form.md)
+- [Marker-insertion grammar](ins-grammar.md)
+- [The marker-insertion grammar simulates the original grammar](ins-grammar-derives-flat-map.md)
+- [Marker loops fill in the left letters](ins-grammar-derives-marked-form.md)
+- [Valuation for the marker-insertion grammar](ins-valuation.md)
+- [Language of the marker-insertion grammar](ins-grammar-language.md)
+- [Context-free languages are closed under inserting letters](preimage-proj-right.md)
 
 ## Inverse homomorphisms
 
-- [Block](block.md)
-- [Erase Right](erase-right.md)
+- [Block of a letter](block.md)
+- [Erasing right letters](erase-right.md)
 - [Context-free languages are closed under inverse homomorphisms](preimage-hom.md)
 - [Context-free languages are closed under inverse free-monoid morphisms](preimage-word-morphism.md)

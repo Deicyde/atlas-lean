@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.TM2Composition.pop2
 ---
 
-# Pop2
+# Pop label of the second copy loop
 
-Label: pop from the scratch stack.
+**Pop label of the second copy loop.** In the composite machine of $M_1$ and $M_2$, this is
+the label $\mathrm{none}$ in the second copy-loop part of the label set; the composite program
+uses it to pop a symbol from the scratch stack.
 
 ## Depends on
 
-- [CΛ](c-2.md)
+- [Labels of the composite machine](c-2.md)
 
 ## Proof depends on
 
-- [X](x.md)
+- [Intermediate alphabet of the composite machine](x.md)
 
 ## Sources
 

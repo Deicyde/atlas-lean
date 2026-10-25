@@ -6,38 +6,38 @@ navigation: module
 
 ## Partial correctness
 
-- [Derivable](derivable.md)
-- [Sound](sound.md)
-- [Strengthen](strengthen.md)
-- [Derivable wlp](derivable-wlp.md)
-- [Complete](complete.md)
-- [Derivable iff valid](derivable-iff-valid.md)
-- [Derivable iff denote](derivable-iff-denote.md)
+- [Derivability in Hoare logic for partial correctness](derivable.md)
+- [Soundness of Hoare logic for partial correctness](sound.md)
+- [Precondition strengthening for partial correctness](strengthen.md)
+- [The weakest liberal precondition gives a derivable triple](derivable-wlp.md)
+- [Relative completeness of total-correctness Hoare logic](complete.md)
+- [Partial-correctness Hoare logic as an inference system](derivable-iff-valid.md)
+- [Partial-correctness Hoare logic matches the denotational semantics](derivable-iff-denote.md)
 
 ## Loop iteration counts
 
-- [Iterates](iterates.md)
-- [Big Step](big-step.md)
-- [Exists of big Step](exists-of-big-step.md)
-- [Count unique](count-unique.md)
-- [Iteration Count](iteration-count.md)
-- [Iteration Count eq](iteration-count-eq.md)
-- [Iteration Count eq zero](iteration-count-eq-zero.md)
+- [Loop runs with a given number of iterations](iterates.md)
+- [Counted loop runs are big-step executions](big-step.md)
+- [Every terminating loop run has an iteration count](exists-of-big-step.md)
+- [Uniqueness of the loop iteration count](count-unique.md)
+- [Loop iteration count](iteration-count.md)
+- [The iteration count of a terminating loop run](iteration-count-eq.md)
+- [The iteration count of a nonterminating loop is zero](iteration-count-eq-zero.md)
 
 ## Total correctness
 
-- [TDerivable](tderivable.md)
+- [Total-correctness Hoare logic](tderivable.md)
 - [Sound](sound-2.md)
 - [Strengthen](strengthen-2.md)
-- [Tderivable wp](tderivable-wp.md)
+- [The weakest-precondition triple is derivable in total-correctness Hoare logic](tderivable-wp.md)
 - [Complete](complete-2.md)
-- [Derivable](derivable-2.md)
-- [Tderivable iff tvalid](tderivable-iff-tvalid.md)
-- [Tderivable iff denote](tderivable-iff-denote.md)
+- [Total-correctness derivations give partial-correctness derivations](derivable-2.md)
+- [Soundness and relative completeness of total-correctness Hoare logic](tderivable-iff-tvalid.md)
+- [Total-correctness Hoare logic is sound and complete for the denotational semantics](tderivable-iff-denote.md)
 
 ## Hoare triples as CSLib inference systems
 
-- [Triple](triple.md)
-- [Total Correctness](total-correctness.md)
+- [Hoare triples](triple.md)
+- [Total-correctness tag for Hoare triples](total-correctness.md)
 - [Derivable iff valid](derivable-iff-valid-2.md)
-- [Derivable In total Correctness iff tvalid](derivable-in-total-correctness-iff-tvali.md)
+- [Total-correctness Hoare logic as an inference system](derivable-in-total-correctness-iff-tvali.md)

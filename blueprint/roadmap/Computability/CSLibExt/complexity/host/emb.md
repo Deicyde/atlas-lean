@@ -17,7 +17,7 @@ alphabets by the identity. Distinct stacks have distinct copies, so the embeddin
 - [Component machine](comp.md)
 - [Stacks of the generic host](hk.md)
 - [Alphabets of the generic host](h.md)
-- [SEmb](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Sources
 

@@ -6,26 +6,29 @@ proof: formalized
 lean: Cslib.IMP.ACmd.pre_entails_vc
 ---
 
-# Pre entails vc
+# Weakening the postcondition of an annotated command
 
-Monotonicity: weakening the postcondition weakens the precondition and
-preserves the verification condition.
+**Weakening the postcondition of an annotated command.** Let $C$ be an annotated command and
+$Q$, $Q'$ assertions such that $Q$ entails $Q'$, and write $\mathrm{pre}(C, Q)$ and
+$\mathrm{vc}(C, Q)$ for the precondition and the verification condition of $C$ for the
+postcondition $Q$. If $\mathrm{vc}(C, Q)$ holds, then $\mathrm{pre}(C, Q)$ entails
+$\mathrm{pre}(C, Q')$ and $\mathrm{vc}(C, Q')$ holds.
 
 ## Depends on
 
-- [ACmd](acmd.md)
-- [Pre](pre.md)
-- [Vc](vc.md)
+- [Annotated commands](acmd.md)
+- [Precondition of an annotated command](pre.md)
+- [Verification condition of an annotated command](vc.md)
 - [Assertion](../hoare/assertion.md)
-- [Entails](../hoare/entails.md)
+- [Entailment of assertions](../hoare/entails.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

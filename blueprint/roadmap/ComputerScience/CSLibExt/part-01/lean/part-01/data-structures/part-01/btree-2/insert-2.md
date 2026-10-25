@@ -7,35 +7,37 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.IsBTree.insert
 ---
 
-# Insert
+# Insertion preserves the B-tree invariant
 
-Insertion preserves the B-tree invariant: the result is again ordered and root-valid
-(at the same height, or one taller when the root split).
+**Insertion preserves the B-tree invariant.** Let $t \ge 2$ and let the keys come from a
+linearly ordered type. If $T$ is a B-tree of minimum degree $t$, then for every key $x$ the tree
+obtained by inserting $x$ into $T$ is again a B-tree of minimum degree $t$: it is ordered and
+root-valid at some height.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Is BTree](is-btree.md)
-- [Insert](insert.md)
+- [Raw B-trees](btree.md)
+- [B-trees of a given minimum degree](is-btree.md)
+- [B-tree insertion](insert.md)
 
 ## Proof depends on
 
-- [Ins Result](ins-result.md)
-- [Ordered](ordered.md)
-- [Valid](valid.md)
-- [Valid Root](valid-root.md)
-- [Flatten](flatten.md)
-- [Flatten Aux](flatten-aux.md)
-- [Flatten Aux eq](flatten-aux-eq.md)
-- [Flatten insert](flatten-insert.md)
-- [Flatten node append cons](flatten-node-append-cons.md)
-- [Flatten node nil cons](flatten-node-nil-cons.md)
-- [Flatten node nil nil](flatten-node-nil-nil.md)
-- [Grown Flatten](grown-flatten.md)
-- [Ins](ins.md)
-- [Ins Leaf](ins-leaf.md)
-- [Mk Node](mk-node.md)
-- [Split Node](split-node.md)
+- [Result of inserting into a B-tree subtree](ins-result.md)
+- [Ordered B-tree](ordered.md)
+- [Structural invariant of a B-tree](valid.md)
+- [Root invariant of a B-tree](valid-root.md)
+- [Inorder flattening of a B-tree](flatten.md)
+- [Accumulating flattening of a B-tree](flatten-aux.md)
+- [The accumulating B-tree flattening is correct](flatten-aux-eq.md)
+- [B-tree insertion as sorted list insertion](flatten-insert.md)
+- [Splitting a node's flattening at a separator](flatten-node-append-cons.md)
+- [Flattening a keyless node, one child at a time](flatten-node-nil-cons.md)
+- [Flattening of the empty node](flatten-node-nil-nil.md)
+- [Flattening of a B-tree insertion result](grown-flatten.md)
+- [Split-returning insertion into a B-tree subtree](ins.md)
+- [Insertion into a B-tree leaf](ins-leaf.md)
+- [Rebuilding an internal node after insertion](mk-node.md)
+- [Splitting a B-tree node](split-node.md)
 - [Mem ordered Insert](../../part-03/ordered-insert/mem-ordered-insert.md)
 - [Ordered Insert](../../part-03/ordered-insert/ordered-insert.md)
 - [Ordered Insert eq of mem](../../part-03/ordered-insert/ordered-insert-eq-of-mem.md)

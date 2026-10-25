@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.ClosureConversion.Target.Tm.Eval.rename
 ---
 
-# Rename
+# Evaluation is stable under renaming
 
-Evaluation is stable under renamings that send each variable to one bound
-to the same value.
+**Evaluation is stable under renaming.** Let $\rho$ and $\rho'$ be environments and
+$r : \mathbb{N} \to \mathbb{N}$ a renaming such that, for every index $i$ and value $w$, if $\rho$
+has entry $w$ at index $i$ then $\rho'$ has entry $w$ at index $r(i)$. If a target term $e$
+evaluates to $v$ in $\rho$, then the renaming of $e$ by $r$ evaluates to $v$ in $\rho'$.
 
 ## Depends on
 
-- [Tm](tm.md)
-- [Eval](eval.md)
-- [Rename](rename.md)
-- [Value](value.md)
+- [Target terms of closure conversion](tm.md)
+- [Big-step semantics of the closure-conversion target](eval.md)
+- [Renaming target terms](rename.md)
+- [Target values of closure conversion](value.md)
 
 ## Proof depends on
 
-- [Lift Ren](lift-ren.md)
+- [Lifting a renaming under a binder](lift-ren.md)
 
 ## Sources
 

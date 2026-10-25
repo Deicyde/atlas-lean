@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.mk₁_injective
 ---
 
-# Mk₁ injective
+# Distinct words give distinct tapes
 
-Distinct words are laid out as distinct tapes.
+**Distinct words give distinct tapes.** The map sending a word $w$ to the tape that holds $w$
+from the head position rightwards, every other cell blank, is injective.
 
 ## Depends on
 

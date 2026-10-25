@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.flatten_length_delete
 ---
 
-# Flatten length delete
+# Deletion shortens the flattening by one exactly when the key is present
 
-Deleting a key decreases the number of stored keys by one when the key
-was present, and leaves it unchanged otherwise.
+**Deletion shortens the flattening by one exactly when the key is present.** Let $t \ge 2$,
+let $T$ be a B-tree of minimum degree $t$ over a linearly ordered key type, and let $x$ be a key.
+If $x$ occurs in the inorder flattening of $T$, the flattening of the tree obtained from $T$ by
+deleting $x$ (with minimum degree $t$) has length one less than the flattening of $T$; otherwise
+the two flattenings have the same length.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Is BTree](../../btree-2/is-btree.md)
-- [Delete](delete.md)
-- [Flatten](../../btree-2/flatten.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [B-trees of a given minimum degree](../../btree-2/is-btree.md)
+- [Top-down B-tree deletion](delete.md)
+- [Inorder flattening of a B-tree](../../btree-2/flatten.md)
 
 ## Proof depends on
 
-- [Flatten delete](flatten-delete.md)
+- [Deletion from a B-tree erases the key from its flattening](flatten-delete.md)
 
 ## Sources
 

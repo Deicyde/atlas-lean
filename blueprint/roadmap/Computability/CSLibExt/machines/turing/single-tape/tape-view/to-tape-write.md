@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Turing.BiTape.toTape_write
 ---
 
-# To Tape write
+# The cell view commutes with writing
 
-The view turns writing a cell into writing it.
+**The cell view commutes with writing.** For every tape $t$ and every cell $a$ (a symbol or
+the blank), the cell view of the tape obtained from $t$ by writing $a$ under the head equals the
+tape obtained from the cell view of $t$ by writing $a$ under its head.
 
 ## Depends on
 
-- [To Tape](to-tape.md)
+- [Cell view of a two-way tape](to-tape.md)
 
 ## Sources
 

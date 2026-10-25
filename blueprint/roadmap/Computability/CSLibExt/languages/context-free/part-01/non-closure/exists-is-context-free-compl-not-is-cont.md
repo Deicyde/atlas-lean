@@ -6,10 +6,12 @@ proof: formalized
 lean: Cslib.Language.exists_isContextFree_compl_not_isContextFree
 ---
 
-# Exists is Context Free compl not is Context Free
+# Context-free languages are not closed under complement
 
-Context-free languages are not closed under complement: closure
-under complement and union would give closure under intersection.
+**Context-free languages are not closed under complement.** There is a context-free language
+$L$ over the three-letter alphabet $\{0, 1, 2\}$ whose complement is not context-free.
+
+Closure under complement and union would give closure under intersection.
 
 ## Depends on
 
@@ -17,15 +19,15 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Add](../closure/add.md)
-- [Kstar](../closure/kstar.md)
-- [Mul](../closure/mul.md)
-- [Singleton word](../basic/singleton-word.md)
-- [Anbncn Lang](anbncn-lang.md)
-- [Anbncn Lang not is Context Free](anbncn-lang-not-is-context-free.md)
-- [Eq Pow Lang](eq-pow-lang.md)
-- [Eq Pow Lang is Context Free](eq-pow-lang-is-context-free.md)
-- [Mem kstar singleton](mem-kstar-singleton.md)
+- [Closure of context-free languages under union](../closure/add.md)
+- [Closure of context-free languages under Kleene star](../closure/kstar.md)
+- [Closure of context-free languages under concatenation](../closure/mul.md)
+- [Singleton languages are context-free](../basic/singleton-word.md)
+- [The language $a^n b^n c^n$](anbncn-lang.md)
+- [The language $a^n b^n c^n$ is not context-free](anbncn-lang-not-is-context-free.md)
+- [The language $a^n b^n$](eq-pow-lang.md)
+- [The language $a^n b^n$ is context-free](eq-pow-lang-is-context-free.md)
+- [The Kleene star of a one-letter word](mem-kstar-singleton.md)
 
 ## Sources
 

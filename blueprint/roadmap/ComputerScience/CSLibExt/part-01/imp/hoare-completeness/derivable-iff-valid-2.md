@@ -14,14 +14,14 @@ is valid.
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
-- [Derivable](derivable.md)
-- [Triple](triple.md)
-- [Valid](../hoare/valid.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Derivability in Hoare logic for partial correctness](derivable.md)
+- [Hoare triples](triple.md)
+- [Validity of a Hoare triple](../hoare/valid.md)
 
 ## Proof depends on
 
-- [Derivable iff valid](derivable-iff-valid.md)
+- [Partial-correctness Hoare logic as an inference system](derivable-iff-valid.md)
 
 ## Sources
 

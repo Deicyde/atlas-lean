@@ -7,25 +7,29 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.le_height_insert
 ---
 
-# Le height insert
+# Insertion does not lower the height
 
-Insertion never decreases the cached height of a balanced tree.
+**Insertion does not lower the height.** Write $h(T)$ for the cached height at the root of a
+tree $T$, with $h$ of the empty tree equal to $0$. Let the keys be linearly ordered, and let $T$ be
+a tree whose cached heights are correct at every node and which satisfies the AVL balance
+invariant at every node. Then for every key $x$, if $T'$ is the tree obtained by inserting $x$
+into $T$, we have $h(T) \le h(T')$.
 
 ## Depends on
 
-- [Balanced](balanced.md)
-- [Cache Correct](cache-correct.md)
-- [Tree](tree.md)
-- [Height](height.md)
-- [Insert](insert.md)
+- [AVL balance invariant](balanced.md)
+- [Correct cached heights](cache-correct.md)
+- [Binary trees with cached heights](tree.md)
+- [Cached height of an AVL tree](height.md)
+- [Insertion into an AVL tree](insert.md)
 
 ## Proof depends on
 
-- [Balance](balance.md)
-- [Balance eq mk Node of le](balance-eq-mk-node-of-le.md)
-- [Cache Correct insert](cache-correct-insert.md)
-- [Le height balance](le-height-balance.md)
-- [Mk Node](mk-node.md)
+- [AVL rebalancing](balance.md)
+- [Rebalancing when the heights of the children differ by at most one](balance-eq-mk-node-of-le.md)
+- [AVL insertion preserves cached heights](cache-correct-insert.md)
+- [Rebalancing does not drop below the taller child](le-height-balance.md)
+- [AVL node with computed height](mk-node.md)
 
 ## Sources
 

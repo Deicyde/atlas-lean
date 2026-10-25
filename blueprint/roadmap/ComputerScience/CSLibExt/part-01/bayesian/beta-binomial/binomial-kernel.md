@@ -5,10 +5,12 @@ statement: formalized
 lean: Cslib.MachineLearning.Bayesian.binomialKernel
 ---
 
-# Binomial Kernel
+# Binomial likelihood kernel
 
-The likelihood of `n` coin flips with success probability `θ`, as a law of the number of
-successes: `Bin(n, θ)`, with `θ` clipped to `[0, 1]`.
+**Binomial likelihood kernel.** For a natural number $n$, the binomial kernel sends a real
+$\theta$ to the binomial distribution $\mathrm{Bin}(n, p)$ on $\mathbb{N}$, the law of the number of
+successes in $n$ independent coin flips with success probability $p$, where $p$ is $\theta$
+clipped to $[0, 1]$.
 
 ## Depends on
 

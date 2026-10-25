@@ -6,19 +6,21 @@ proof: formalized
 lean: Cslib.Language.IsRegular.rightQuotient'
 ---
 
-# Right Quotient'
+# Regular languages are closed under right quotients by fixed words
 
-Regular languages are closed under right quotients by fixed words.
+**Regular languages are closed under right quotients by fixed words.** If $L$ is a regular
+language over an alphabet $A$, then for every word $u$ over $A$, the right quotient
+$L u^{-1} = \{x \mid xu \in L\}$ is regular.
 
 ## Depends on
 
-- [Right Quotient](right-quotient.md)
+- [Right quotient of a language by a word](right-quotient.md)
 
 ## Proof depends on
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Finite syntactic Monoid right Quotient](finite-syntactic-monoid-right-quotient.md)
-- [Is Regular iff finite syntactic Monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
+- [Right quotients preserve finiteness of the syntactic monoid](finite-syntactic-monoid-right-quotient.md)
+- [Regular languages are those with finite syntactic monoid](../regularity/is-regular-iff-finite-syntactic-monoid.md)
 
 ## Sources
 

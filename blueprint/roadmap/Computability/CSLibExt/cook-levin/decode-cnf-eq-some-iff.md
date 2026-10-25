@@ -32,8 +32,8 @@ is the length-prefixed binary code of $\varphi$.
 - [Reading a unary length prefix](read-unary-length.md)
 - [Parsing a self-delimiting block](undelimit-eq-some-iff.md)
 - [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Delimit](../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../MathlibExt/complexity/undelimit.md)
+- [Self-delimiting form of a bitstring](../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

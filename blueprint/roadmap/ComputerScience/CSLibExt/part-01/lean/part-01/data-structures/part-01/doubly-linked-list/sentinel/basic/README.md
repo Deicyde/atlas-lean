@@ -4,5 +4,5 @@ navigation: module
 
 # Basic
 
-- [Circular Represents](circular-represents.md)
-- [Circular Represents nil](circular-represents-nil.md)
+- [Circular doubly linked list with a sentinel](circular-represents.md)
+- [Empty circular list with a sentinel](circular-represents-nil.md)

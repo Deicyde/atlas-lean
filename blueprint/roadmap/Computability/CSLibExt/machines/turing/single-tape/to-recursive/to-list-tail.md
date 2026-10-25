@@ -6,9 +6,11 @@ proof: formalized
 lean: Cslib.Turing.StackTape.toList_tail
 ---
 
-# To List tail
+# Tail of a stack tape, on cell lists
 
-The underlying list of the tail of a `StackTape` is the tail of its underlying list.
+**Tail of a stack tape, on cell lists.** Let $s$ be a stack tape, a one-sided tape stored as
+its list of cells without trailing blanks. Then the cell list of the tail of $s$ is the tail of
+the cell list of $s$, the tail of the empty list being empty.
 
 ## Depends on
 

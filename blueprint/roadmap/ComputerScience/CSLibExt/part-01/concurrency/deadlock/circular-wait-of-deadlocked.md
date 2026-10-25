@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Algorithms.Concurrency.Deadlock.AllocState.circularWait_of_deadlocked
 ---
 
-# Circular Wait of deadlocked
+# A deadlocked set forces circular wait
 
-With finitely many processes, a deadlocked set contains a wait-for cycle:
-following wait-for edges inside the set must revisit a process.
+**A deadlocked set forces circular wait.** In a resource-allocation snapshot with
+finitely many processes, if some set of processes is deadlocked, then the snapshot has circular
+wait: some process waits for itself through a chain of one or more wait-for edges.
+
+The proof follows wait-for edges inside the deadlocked set; by finiteness it must revisit a
+process.
 
 ## Depends on
 
-- [Alloc State](alloc-state.md)
+- [Resource-allocation snapshot](alloc-state.md)
 - [Circular Wait](circular-wait.md)
 - [Deadlocked](deadlocked.md)
 
 ## Proof depends on
 
-- [Waits For](waits-for.md)
+- [Wait-for relation](waits-for.md)
 
 ## Sources
 

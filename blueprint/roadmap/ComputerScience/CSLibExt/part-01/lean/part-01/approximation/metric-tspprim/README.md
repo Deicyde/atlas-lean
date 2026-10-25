@@ -6,37 +6,37 @@ navigation: module
 
 ## Forests from parent arrays
 
-- [Up](up.md)
-- [Children](children.md)
-- [Build Forest](build-forest.md)
-- [Parent Tree](parent-tree.md)
-- [Desc K](desc-k.md)
-- [Weight build Forest](weight-build-forest.md)
+- [One step up a parent array](up.md)
+- [Children in a parent array](children.md)
+- [Forest of a parent array below a vertex](build-forest.md)
+- [Parent tree](parent-tree.md)
+- [Descendant within $k$ levels](desc-k.md)
+- [Weight of the forest built from a parent array](weight-build-forest.md)
 
 ## Chains in a parent tree
 
-- [Desc K root](desc-k-root.md)
-- [Is Spanning build Forest](is-spanning-build-forest.md)
+- [Every non-root vertex lies below the root](desc-k-root.md)
+- [The forest of a parent tree spans all vertices](is-spanning-build-forest.md)
 
 ## Prim on the complete graph
 
-- [Complete Adjacency](complete-adjacency.md)
-- [Sym Weight](sym-weight.md)
-- [Prim Parents](prim-parents.md)
-- [Prim Forest](prim-forest.md)
-- [Prim TSPTour](prim-tsptour.md)
-- [Mem complete Adjacency](mem-complete-adjacency.md)
-- [Prim Tree](prim-tree.md)
-- [Prim Tree is Tree](prim-tree-is-tree.md)
-- [Prim Tree is Minimum Spanning Tree](prim-tree-is-minimum-spanning-tree.md)
-- [Parent Tree prim Parents](parent-tree-prim-parents.md)
-- [Is Spanning prim Forest](is-spanning-prim-forest.md)
-- [Prim TSPTour is Tour](prim-tsptour-is-tour.md)
+- [Complete graph as an ordered adjacency](complete-adjacency.md)
+- [Symmetrized edge weights](sym-weight.md)
+- [Prim's parent array on the complete graph](prim-parents.md)
+- [Forest of Prim's tree](prim-forest.md)
+- [APPROX-TSP-TOUR with Prim's tree](prim-tsptour.md)
+- [Neighbours in the complete adjacency](mem-complete-adjacency.md)
+- [Prim's tree](prim-tree.md)
+- [Prim's tree is a spanning tree](prim-tree-is-tree.md)
+- [Prim's tree is a minimum spanning tree](prim-tree-is-minimum-spanning-tree.md)
+- [Prim's parent array is a parent tree](parent-tree-prim-parents.md)
+- [Prim's forest spans all vertices](is-spanning-prim-forest.md)
+- [The tour from Prim's tree is a tour](prim-tsptour-is-tour.md)
 
 ## Edge sums
 
-- [Sum edge Finset eq](sum-edge-finset-eq.md)
+- [Edge sums over a parent tree](sum-edge-finset-eq.md)
 
 ## The 2-approximation with Prim
 
-- [Prim TSPTour two approx](prim-tsptour-two-approx.md)
+- [APPROX-TSP-TOUR with Prim's tree is a 2-approximation](prim-tsptour-two-approx.md)

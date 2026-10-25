@@ -31,7 +31,7 @@ $\mathrm{conv}(s(c)^R r, \mathrm{true}, n, k, m, o) =
 
 - [Binary codes of literals on variables one less than a power of two](encode-lit-two-pow.md)
 - [Closing a clause in the translated output](end-clause.md)
-- [Rep](../../../MathlibExt/turing-machine/program/rep.md)
+- [Repeated block](../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

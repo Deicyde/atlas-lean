@@ -12,21 +12,21 @@ lean: Cslib.Decidability.SingleTapeDecidable.of_computablePred
 
 ## Depends on
 
-- [Single Tape Decidable](../classes/single-tape-decidable.md)
+- [Predicates decidable by a single-tape Turing machine](../classes/single-tape-decidable.md)
 
 ## Proof depends on
 
-- [Non Blank](../of-tm0/non-blank.md)
-- [Decider TM](decider-tm.md)
+- [Non-blank symbols](../of-tm0/non-blank.md)
+- [The decider of a multi-stack machine](decider-tm.md)
 - [The decider outputs the answer bit](decider-tm-outputs.md)
-- [In Cell](in-cell.md)
-- [Input Code](input-code.md)
-- [Input Decode](input-decode.md)
-- [Reverse tail encode Nat input Code](reverse-tail-encode-nat-input-code.md)
-- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
-- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
+- [Input cell of a bit](in-cell.md)
+- [Input code of a bit word](input-code.md)
+- [Input decoding](input-decode.md)
+- [Recovering a word from its input code](reverse-tail-encode-nat-input-code.md)
+- [Value of a little-endian bit list](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+- [Binary encoding, least significant bit first](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 - [Fwd TM](../../../../../MathlibExt/turing-machine/recursive/to-tm2/fwd-tm.md)
-- [Tm2 Computable Of Code](../../../../../MathlibExt/turing-machine/recursive/to-tm2/tm2-computable-of-code.md)
+- [The wrapped machine computes the function a code evaluates](../../../../../MathlibExt/turing-machine/recursive/to-tm2/tm2-computable-of-code.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.toListBlank_nil
 ---
 
-# To List Blank nil
+# The empty stack tape reads as the blank half-tape
 
-The empty `StackTape` reads as the all-blank half-tape.
+**The empty stack tape reads as the blank half-tape.** For an alphabet $\Gamma_0$ with blank
+symbol $b$, the empty stack tape over the non-blank symbols of $\Gamma_0$ reads as the half-tape
+of the empty list, all of whose symbols are $b$.
 
 ## Depends on
 
-- [Non Blank](non-blank.md)
-- [To List Blank](to-list-blank.md)
+- [Non-blank symbols](non-blank.md)
+- [Half-tape of a stack tape of non-blank symbols](to-list-blank.md)
 
 ## Sources
 

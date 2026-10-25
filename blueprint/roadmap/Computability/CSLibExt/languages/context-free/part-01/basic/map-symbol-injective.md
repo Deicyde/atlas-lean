@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Language.mapSymbol_injective
 ---
 
-# Map Symbol injective
+# Injective renamings are injective on symbols
 
-Renaming with an injective function on nonterminals is injective on
-symbols.
+**Injective renamings are injective on symbols.** If $f$ is an injective map from
+nonterminals $N$ to nonterminals $N'$, then renaming grammar symbols by $f$, which fixes each
+terminal and sends each nonterminal $A$ to $f(A)$, is injective.
 
 ## Depends on
 
-- [Map Symbol](map-symbol.md)
+- [Renaming the nonterminals of a symbol](map-symbol.md)
 
 ## Sources
 

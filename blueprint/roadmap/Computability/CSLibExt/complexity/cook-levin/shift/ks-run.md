@@ -36,15 +36,15 @@ $V = (T + 1) W$ variables, $W$ being the number of variables per time step.
 - [The cell-shift generator](prog.md)
 - [The shift block of a situation and a stack](sh-blk.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Labels of the cell-shift generator](gl.md)
 - [Setup and loop stages of a cell-shift block](st.md)
 - [Correctness of the shift generator on one block](ik-run.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

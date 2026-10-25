@@ -6,24 +6,27 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Step.deterministic
 ---
 
-# Deterministic
+# Determinism of evaluation with references
 
-Evaluation is deterministic: the next term and the next store are both
-unique. This relies on allocation at `μ.length`; with TAPL's arbitrary choice
-of fresh location only the result up to renaming of locations is unique.
+**Determinism of evaluation with references.** If a configuration $(t, \mu)$ steps to
+$(t_1, \mu_1)$ and also to $(t_2, \mu_2)$, then $t_1 = t_2$ and $\mu_1 = \mu_2$.
+
+This relies on allocating each fresh location at the end of the store, at the index equal to the
+length of $\mu$; with TAPL's arbitrary choice of fresh location only the result up to renaming of
+locations is unique.
 
 ## Depends on
 
 - [Step](step.md)
 - [Store](store.md)
-- [Term](../syntax/term.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 
 ## Proof depends on
 
-- [Not of value](not-of-value.md)
-- [Value](../syntax/value.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Ty](../syntax/ty.md)
+- [Values do not step](not-of-value.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
+- [Substitution of a term for variable zero](../syntax/instantiate.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

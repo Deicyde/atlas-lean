@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.flatten_node_cons_nil
 ---
 
-# Flatten node cons nil
+# Flattening a childless node, one key at a time
 
-Flattening a node with no children returns its separator keys in
-order. This covers nodes with more keys than a well-formed node would
-have.
+**Flattening a childless node, one key at a time.** For a key $k$ and a list of keys $K$, the
+flattening of the node with key list $k$ followed by $K$ and no children is $k$ followed by the
+flattening of the node with key list $K$ and no children.
+
+This covers nodes with more keys than a well-formed node would have.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Flatten](flatten.md)
+- [Raw B-trees](btree.md)
+- [Inorder flattening of a B-tree](flatten.md)
 
 ## Proof depends on
 
-- [Flatten Aux](flatten-aux.md)
+- [Accumulating flattening of a B-tree](flatten-aux.md)
 
 ## Sources
 

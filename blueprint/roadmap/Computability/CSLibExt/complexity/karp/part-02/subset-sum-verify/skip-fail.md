@@ -23,17 +23,17 @@ Then the machine reaches its rejecting state within $|r| + 1$ steps.
 - [Rejection within a step bound](rej.md)
 - [Stack contents of the SUBSET-SUM verifier](st.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
+- [Parsing one self-delimiting block](../../../../../MathlibExt/complexity/undelimit.md)
 
 ## Proof depends on
 
 - [The SUBSET-SUM verifier program](prog.md)
 - [Rejecting in one step](rej-one.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
-- [Bit Of](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Bit on top of a stack](../../../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
 
 ## Sources
 

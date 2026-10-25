@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Turing.Universal.Clocked.univPoly
 ---
 
-# Univ Poly
+# Step bound polynomial of the clocked universal machine
 
-The polynomial step bound of the component.
+**Step bound polynomial of the clocked universal machine.** The polynomial
+$18 (X + 1)^2$ with natural-number coefficients, used as the step bound of the clocked
+universal machine as a host component.
 
 ## Depends on
 

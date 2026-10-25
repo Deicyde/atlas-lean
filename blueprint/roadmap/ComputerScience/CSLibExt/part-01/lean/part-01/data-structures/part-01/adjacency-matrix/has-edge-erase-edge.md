@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.hasEdge_eraseEdge
 ---
 
-# Has Edge erase Edge
+# Deleting an edge removes it
 
-The erased edge is absent after deletion.
+**Deleting an edge removes it.** Let $m$ be an adjacency matrix on the vertex set
+$\{0, \dots, n-1\}$ and let $i, j$ be vertices. Then the graph obtained from $m$ by deleting the
+edge from $i$ to $j$ has no edge from $i$ to $j$.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
-- [Erase Edge](erase-edge.md)
-- [Has Edge](has-edge.md)
+- [Adjacency matrix](adjacency-matrix.md)
+- [Edge deletion in an adjacency matrix](erase-edge.md)
+- [Edge query of an adjacency matrix](has-edge.md)
 
 ## Sources
 

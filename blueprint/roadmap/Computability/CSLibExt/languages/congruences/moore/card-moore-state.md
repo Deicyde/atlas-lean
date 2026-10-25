@@ -14,7 +14,7 @@ are Nerode classes of the language accepted by $M$.
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 - [States of Moore's automaton](moore-state.md)
 - [Moore's relation](moore-rel.md)
 - [Moore equivalence on reachable states](moore-setoid.md)

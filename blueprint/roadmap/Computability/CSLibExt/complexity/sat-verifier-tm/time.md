@@ -19,7 +19,6 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [The SAT verifier machine](tm.md)
-- [Push Bound](../../../MathlibExt/turing-machine/composition/push-bound.md)
 
 ## Sources
 

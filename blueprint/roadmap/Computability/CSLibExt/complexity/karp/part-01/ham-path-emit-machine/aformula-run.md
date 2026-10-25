@@ -46,10 +46,10 @@ increasing the clause count by $m$ and the triple clause count by $3m$.
 - [A clause's tokens on the token stack](../../../sat-check/cl-rev.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
-- [Vars Of](../../../../sat-time-m/vars-of.md)
+- [Occurrence list of a CNF formula](../../../../sat-time-m/vars-of.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -57,7 +57,7 @@ increasing the clause count by $m$ and the triple clause count by $3m$.
 - [Name of a variable in the HAMPATH emitter](name.md)
 - [A literal's tokens on the token stack](../../../sat-check/lit-rev.md)
 - [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

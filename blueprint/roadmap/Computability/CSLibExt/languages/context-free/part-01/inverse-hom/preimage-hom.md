@@ -16,13 +16,13 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hom](../hom-image.md)
-- [Inf is Regular](../inter-regular/inf-is-regular.md)
-- [Inserting letters](preimage-proj-right.md)
-- [Of finite](../../../finite/of-finite.md)
-- [Block](block.md)
-- [Erase Right](erase-right.md)
-- [Proj Right](proj-right.md)
+- [Context-free languages are closed under homomorphic images](../hom-image.md)
+- [Intersection of a context-free language with a regular language](../inter-regular/inf-is-regular.md)
+- [Context-free languages are closed under inserting letters](preimage-proj-right.md)
+- [Finite languages are regular](../../../finite/of-finite.md)
+- [Block of a letter](block.md)
+- [Erasing right letters](erase-right.md)
+- [Right projection of a word](proj-right.md)
 
 ## Sources
 

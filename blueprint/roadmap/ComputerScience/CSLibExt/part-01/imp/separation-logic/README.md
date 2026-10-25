@@ -6,25 +6,25 @@ navigation: module
 
 ## IMP
 
-- [HAssertion](hassertion.md)
+- [Heap assertion](hassertion.md)
 
 ## HAssertion
 
-- [Entails](entails.md)
-- [Emp](emp.md)
-- [Pure](pure.md)
-- [Points To](points-to.md)
-- [Star](star.md)
-- [Hexists](hexists.md)
-- [Hand](hand.md)
+- [Entailment of heap assertions](entails.md)
+- [Empty-heap assertion](emp.md)
+- [Pure assertion](pure.md)
+- [Points-to assertion](points-to.md)
+- [Separating conjunction](star.md)
+- [Existential heap assertion](hexists.md)
+- [Conjunction of heap assertions](hand.md)
 
 ## IMP
 
-- [Sep Valid](sep-valid.md)
+- [Separation-logic triple validity](sep-valid.md)
 
 ## Sep Valid
 
-- [While Loop](while-loop.md)
-- [Frame](frame.md)
-- [Of valid](of-valid.md)
-- [Of valid frame](of-valid-frame.md)
+- [Separation-logic while rule](while-loop.md)
+- [Frame rule](frame.md)
+- [Hoare validity embeds into separation validity](of-valid.md)
+- [Framed embedding of Hoare validity](of-valid-frame.md)

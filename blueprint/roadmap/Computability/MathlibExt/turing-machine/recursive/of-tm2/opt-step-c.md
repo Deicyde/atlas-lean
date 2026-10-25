@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.TM2Recursive.optStepC
 ---
 
-# Opt Step C
+# The coded step on optional configurations
 
-The coded step on optional configurations.
+**The coded step on optional configurations.** For a finite multi-stack machine, the coded
+step extended to optional coded configurations: it sends the absent configuration to the absent
+configuration, and a coded configuration $c$ to the coded step of $c$, which is itself absent
+when $c$ has halted.
 
 ## Depends on
 
-- [Coded Cfg](coded-cfg.md)
+- [Coded configurations of a multi-stack machine](coded-cfg.md)
 
 ## Proof depends on
 
-- [Step C](step-c.md)
+- [The coded step](step-c.md)
 
 ## Sources
 

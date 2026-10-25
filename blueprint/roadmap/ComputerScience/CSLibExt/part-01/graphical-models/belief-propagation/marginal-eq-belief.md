@@ -6,15 +6,17 @@ proof: formalized
 lean: Cslib.MachineLearning.GraphicalModels.TreeModel.marginal_eq_belief
 ---
 
-# Marginal eq belief
+# Beliefs are the unnormalized marginals
 
-The belief of a vertex is its unnormalized marginal.
+**Beliefs are the unnormalized marginals.** For every tree model over a finite set of values,
+every vertex $v$ and every value $a$, the belief of $v$ at $a$ is the unnormalized marginal of $v$
+at $a$: the sum of the weights of all assignments $x$ with $x_v = a$.
 
 ## Depends on
 
-- [Tree Model](../variable-elimination/tree-model.md)
-- [Belief](belief.md)
-- [Weight](../variable-elimination/weight.md)
+- [Pairwise model on a tree](../variable-elimination/tree-model.md)
+- [Sum-product belief](belief.md)
+- [Weight of an assignment in a tree model](../variable-elimination/weight.md)
 
 ## Proof depends on
 

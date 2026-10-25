@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Language.HasGenHeightLe
 ---
 
-# Has Gen Height Le
+# Bounded generalized star height
 
-A language has generalized star height at most `n`.
+**Bounded generalized star height.** A language $L$ over an alphabet $\alpha$ has generalized
+star height at most $n$, for a natural number $n$, if some generalized regular expression over
+$\alpha$ whose generalized star height is at most $n$ denotes $L$.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gen Reg Exp](gen-reg-exp.md)
-- [Denote](denote.md)
-- [Star Height](star-height.md)
+- [Generalized regular expressions](gen-reg-exp.md)
+- [Language of a generalized regular expression](denote.md)
+- [Generalized star height](star-height.md)
 
 ## Sources
 

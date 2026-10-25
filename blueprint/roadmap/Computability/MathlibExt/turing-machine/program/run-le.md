@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.TM2Program.RunLe
 ---
 
-# Run Le
+# Runs within a step budget
 
-At most `B` steps of `M` lead from `c` to `d`.
+**Runs within a step budget.** For a TM2 machine $M$, a bound $B \in \mathbb{N}$ and
+configurations $c$ and $d$, $M$ runs from $c$ to $d$ within $B$ steps when there is some
+$n \le B$ such that $M$ runs from $c$ to $d$ in exactly $n$ steps.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Run](run.md)
+- [Exact-length runs of a TM2 machine](run.md)
 
 ## Sources
 

@@ -24,7 +24,7 @@ optimality of the universal description method (Berry's paradox).
 ## Proof depends on
 
 - [Optimality (the invariance theorem)](../basic/exists-k-le-of-partrec.md)
-- [And](../../../MathlibExt/re/and-2.md)
+- [Recursively enumerable predicates are closed under conjunction](../../../MathlibExt/re/and-2.md)
 - [Selection for r.e. relations](../../../MathlibExt/re/exists-partrec-choose.md)
 
 ## Sources

@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.neighbors
 ---
 
-# Neighbors
+# Out-neighbor list
 
-The out-neighbors of `i`, as a list of vertices in increasing order.
+**Out-neighbor list.** For an adjacency matrix $m$ on the vertex set $\{0, \dots, n-1\}$ and a
+vertex $i$, the out-neighbor list of $i$ is the list of all vertices $j$ such that $m$ has a
+directed edge from $i$ to $j$, in increasing order.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
+- [Adjacency matrix](adjacency-matrix.md)
 
 ## Proof depends on
 
-- [Has Edge](has-edge.md)
+- [Edge query of an adjacency matrix](has-edge.md)
 
 ## Sources
 

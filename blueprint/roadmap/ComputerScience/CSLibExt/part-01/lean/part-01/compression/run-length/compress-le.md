@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.RunLength.compress_le
 ---
 
-# Compress le
+# Run lengths fit in 8 bits
 
-Every emitted run length fits in the source's 8-bit field.
+**Run lengths fit in 8 bits.** For every finite bit list $w$, every entry of the run-length
+compression of $w$ is at most $255$.
 
 ## Depends on
 
-- [Compress](compress.md)
+- [Run-length compression](compress.md)
 
 ## Proof depends on
 
-- [Compress From le](compress-from-le.md)
+- [Compression from a short pending run emits counts at most 255](compress-from-le.md)
 
 ## Sources
 

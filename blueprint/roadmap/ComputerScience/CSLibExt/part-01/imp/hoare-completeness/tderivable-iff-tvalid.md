@@ -6,16 +6,18 @@ proof: formalized
 lean: Cslib.IMP.tderivable_iff_tvalid
 ---
 
-# Tderivable iff tvalid
+# Soundness and relative completeness of total-correctness Hoare logic
 
-Total-correctness derivability coincides with total validity.
+**Soundness and relative completeness of total-correctness Hoare logic.** For all assertions
+$P$, $Q$ (predicates on states) and every IMP command $c$, the triple $\{P\}\,c\,\{Q\}$ is
+derivable in the total-correctness Hoare logic if and only if it is totally valid.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
-- [TDerivable](tderivable.md)
-- [TValid](../hoare-total/tvalid.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Total-correctness Hoare logic](tderivable.md)
+- [Validity of total-correctness Hoare triples](../hoare-total/tvalid.md)
 
 ## Proof depends on
 

@@ -14,11 +14,11 @@ $x$ and $y$, then $x$ and $y$ are Nerode equivalent for $L$.
 
 ## Depends on
 
-- [Nerode Rel](../nerode/nerode-rel.md)
+- [Nerode equivalence](../nerode/nerode-rel.md)
 
 ## Proof depends on
 
-- [Nerode Rel iff](../nerode/nerode-rel-iff.md)
+- [Continuation characterization of Nerode equivalence](../nerode/nerode-rel-iff.md)
 
 ## Sources
 

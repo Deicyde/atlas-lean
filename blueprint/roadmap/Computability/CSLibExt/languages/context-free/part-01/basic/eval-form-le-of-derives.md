@@ -6,19 +6,20 @@ proof: formalized
 lean: Cslib.Language.evalForm_le_of_derives
 ---
 
-# Eval Form le of derives
+# Derivations shrink interpretations under a valuation
 
-A derivation can only shrink the interpretation of a sentential form
-under a valuation.
+**Derivations shrink interpretations under a valuation.** Let $g$ be a context-free grammar and
+$V$ a valuation of $g$. If a sentential form $u$ derives $v$ in $g$ (in zero or more steps), then
+the language that $v$ denotes under $V$ is contained in the language that $u$ denotes under $V$.
 
 ## Depends on
 
-- [Is Valuation](is-valuation.md)
-- [Eval Form](eval-form.md)
+- [Valuation of a grammar](is-valuation.md)
+- [Interpretation of a sentential form](eval-form.md)
 
 ## Proof depends on
 
-- [Eval Form le of produces](eval-form-le-of-produces.md)
+- [A production step shrinks interpretations under a valuation](eval-form-le-of-produces.md)
 
 ## Sources
 

@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.ordered_deleteMin
 ---
 
-# Ordered delete Min
+# Successor-step minimum removal preserves search-tree order
 
-`deleteMin` preserves the search-tree ordering invariant.
+**Successor-step minimum removal preserves search-tree order.** Let $T$ be a binary tree with
+cached heights over a linearly ordered type. If $T$ is ordered as a search tree, then so is the
+tree obtained by the minimum-removal step used for the successor in deletion, which removes the
+leftmost key of $T$ and rebalances on the way back up.
 
 ## Depends on
 
-- [Ordered](../../avl-tree-2/ordered.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Delete Min](delete-min.md)
+- [Ordered AVL trees](../../avl-tree-2/ordered.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [Minimum deletion in an AVL tree](delete-min.md)
 
 ## Proof depends on
 
-- [Ordered erase Min](ordered-erase-min.md)
+- [Removing the leftmost key preserves search-tree order](ordered-erase-min.md)
 
 ## Sources
 

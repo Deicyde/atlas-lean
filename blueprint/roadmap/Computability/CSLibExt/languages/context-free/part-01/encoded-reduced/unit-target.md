@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.unitTarget
 ---
 
-# Unit Target
+# Target of a unit right-hand side
 
-The nonterminal of a unit right-hand side.
+**Target of a unit right-hand side.** For an encoded right-hand side $u$, a list whose entries
+are nonterminals $i \in \mathbb{N}$ or terminals, the optional value is $B$ when $u$ consists of
+the single nonterminal $B$, and there is no value otherwise.
 
 ## Depends on
 

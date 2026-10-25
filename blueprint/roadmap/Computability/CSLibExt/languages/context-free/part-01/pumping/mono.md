@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Language.YieldsH.mono
 ---
 
-# Mono
+# Raising the height bound of a yield
 
-Height bounds can be increased.
+**Raising the height bound of a yield.** Let $g$ be a context-free grammar. If a sentential
+form $\alpha$ yields the terminal word $w$ through a derivation forest of height at most $n$,
+and $n \le m$, then $\alpha$ yields $w$ through a derivation forest of height at most $m$.
 
 ## Depends on
 
-- [Yields H](yields-h.md)
+- [Height-bounded derivations](yields-h.md)
 
 ## Sources
 

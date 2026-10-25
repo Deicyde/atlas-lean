@@ -6,18 +6,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Scheduling.isScheduleOf_nil
 ---
 
-# Is Schedule Of nil
+# The empty schedule
 
-LPT: sort the jobs into nonincreasing order with CSLib's `mergeSort`, then list-schedule. -/
-def lpt (m : ℕ) [NeZero m] (ps : List ℕ) : TimeM ℕ (Fin m → List ℕ) := do
-  let sorted ← mergeSort (ps.map OrderDual.toDual)
-  listSchedule m (sorted.map OrderDual.ofDual)
-
-/-! ## Schedules
+**The empty schedule.** For every number $m$ of machines, the assignment of the empty list
+to each of the $m$ machines is a schedule of the empty list of jobs.
 
 ## Depends on
 
-- [Is Schedule Of](is-schedule-of.md)
+- [Schedule of a list of jobs](is-schedule-of.md)
 
 ## Sources
 

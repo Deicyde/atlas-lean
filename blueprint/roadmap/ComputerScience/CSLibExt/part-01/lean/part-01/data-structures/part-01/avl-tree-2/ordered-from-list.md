@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.ordered_fromList
 ---
 
-# Ordered from List
+# AVL trees built from a list are ordered
 
-Building a tree by insertion always produces an ordered tree.
+**AVL trees built from a list are ordered.** Let $\alpha$ be a linearly ordered type. For
+every list $xs$ of elements of $\alpha$, the tree obtained from the empty tree by inserting
+the elements of $xs$ one at a time, from the last element to the first, is ordered.
 
 ## Depends on
 
-- [Ordered](ordered.md)
-- [From List](from-list.md)
+- [Ordered AVL trees](ordered.md)
+- [Building an AVL tree from a list](from-list.md)
 
 ## Proof depends on
 
-- [Ordered insert](ordered-insert.md)
+- [AVL insertion preserves the search-tree order](ordered-insert.md)
 
 ## Sources
 

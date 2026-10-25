@@ -37,7 +37,7 @@ by $o$.
 - [The init family](init-fam.md)
 - [The generator](iprog.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -88,10 +88,10 @@ by $o$.
 - [Dense CNF formula](../../dense-sat/cnf.md)
 - [Dense clause](../../dense-sat/clause.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
-- [Embeds](../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
-- [Map S](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Embedding of a machine in a host](../../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
+- [Translating a statement along a stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

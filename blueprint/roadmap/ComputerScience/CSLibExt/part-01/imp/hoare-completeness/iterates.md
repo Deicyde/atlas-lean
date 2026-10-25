@@ -5,17 +5,21 @@ statement: formalized
 lean: Cslib.IMP.Iterates
 ---
 
-# Iterates
+# Loop runs with a given number of iterations
 
-`Iterates guard body n initial final` holds when the loop
-`while guard do body`, started in `initial`, exits in `final` after exactly `n`
-executions of the body.
+**Loop runs with a given number of iterations.** Let $b$ be a Boolean expression and $c$ a
+command. For a natural number $n$ and states $s$, $s'$, the loop $\mathtt{while}\ b\ \mathtt{do}\ c$
+runs from $s$ to $s'$ in $n$ iterations when, started in $s$, it exits in $s'$ after exactly $n$
+executions of the body $c$. This is the least relation such that the loop runs from $s$ to $s$ in
+$0$ iterations whenever $b$ evaluates to false in $s$, and the loop runs from $s$ to $s'$ in
+$n + 1$ iterations whenever $b$ evaluates to true in $s$, the body $c$ has a terminating big-step
+execution from $s$ to some state $t$, and the loop runs from $t$ to $s'$ in $n$ iterations.
 
 ## Depends on
 
-- [BExp](../syntax/bexp.md)
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

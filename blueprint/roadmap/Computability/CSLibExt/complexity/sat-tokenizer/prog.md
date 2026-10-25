@@ -50,8 +50,8 @@ block, the internal bit is true.
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Testing whether the top symbol is a given bit](top-is-bit.md)
 - [Unary](unary.md)
-- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
-- [Is Bit](../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
+- [Bit on top of a stack](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Bit test for the top of a stack](../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
 
 ## Sources
 

@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.IMP.HAssertion.pure
 ---
 
-# Pure
+# Pure assertion
 
-A pure fact holding on the empty heap.
+**Pure assertion.** For a proposition $p$, the pure assertion of $p$ holds of a store $s$ and
+a heap $h$ exactly when $h$ is the empty heap and $p$ is true.
 
 ## Depends on
 
-- [HAssertion](hassertion.md)
+- [Heap assertion](hassertion.md)
 
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

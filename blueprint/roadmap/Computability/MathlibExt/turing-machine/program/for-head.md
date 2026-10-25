@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.TM2Program.forHead
 ---
 
-# For Head
+# Loop head of a for loop over a counter
 
-Loop head: pop counter `c`. If a unit was popped, push one unit on the index stack `cd` and
-run the body from `body`; if `c` is empty go to `rest` (which restores `c` from `cd`).
+**Loop head of a for loop over a counter.** For stacks $c$ and $c'$, a symbol $u'$ of stack
+$c'$ and labels $b$ and $r$, the loop head is the statement that pops stack $c$, replaces the
+machine state by the state whose flag bit records whether a symbol was popped, and branches on
+that bit: if a symbol was popped, it pushes $u'$ onto the index stack $c'$ and goes to label $b$
+(the loop body); if $c$ was empty, it goes to label $r$.
 
 ## Depends on
 
-- [Flag](flag.md)
+- [Flag bit of a machine state](flag.md)
 
 ## Sources
 

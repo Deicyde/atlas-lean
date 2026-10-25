@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Language.EncodedCFG.language_isContextFree
 ---
 
-# Language is Context Free
+# Encoded grammars generate context-free languages
 
-The language of an encoded grammar is context-free.
+**Encoded grammars generate context-free languages.** The language of an encoded grammar is
+context-free.
 
 ## Depends on
 
-- [Encoded CFG](encoded-cfg.md)
-- [Language](language.md)
+- [Encoded context-free grammars](encoded-cfg.md)
+- [Language of an encoded grammar](language.md)
 
 ## Proof depends on
 
-- [To CFG](to-cfg.md)
+- [Grammar denoted by an encoding](to-cfg.md)
 
 ## Sources
 

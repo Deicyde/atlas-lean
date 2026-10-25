@@ -26,18 +26,18 @@ empty and on $V$ alone the bit symbol of $b$ if $n = q$ and of $x$ otherwise.
 - [Stack contents of the lookup machine](stk.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Ends Bit Block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [End of a bit block](../../../MathlibExt/turing-machine/bit-ops/ends-bit-block.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
 - [Restoring and stashing after a comparison in the lookup machine](tail-run.md)
-- [Distinct4](../../../MathlibExt/turing-machine/bit-ops/distinct4.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Is Bit Block](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Comparison](../../../MathlibExt/turing-machine/bit-ops/cmp-b-run.md)
+- [Four pairwise distinct stacks](../../../MathlibExt/turing-machine/bit-ops/distinct4.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit blocks](../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Correctness of the bit-block comparison](../../../MathlibExt/turing-machine/bit-ops/cmp-b-run.md)
 
 ## Sources
 

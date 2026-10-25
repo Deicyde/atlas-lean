@@ -19,7 +19,7 @@ a multi-stack Turing machine, then so is the predicate $a \mapsto p(a) \lor q(a)
 ## Proof depends on
 
 - [Multi-stack recognizable predicates are exactly the r.e. predicates](../basic/tm2-recognizable-iff-re-pred.md)
-- [Or](../../../../MathlibExt/re/or-2.md)
+- [Recursively enumerable predicates are closed under disjunction](../../../../MathlibExt/re/or-2.md)
 
 ## Sources
 

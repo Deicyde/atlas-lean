@@ -6,11 +6,13 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.InsResult
 ---
 
-# Ins Result
+# Result of inserting into a B-tree subtree
 
-The result of inserting into a subtree: `.inl` holds a single tree of the same height,
-and `.inr (left, median, right)` holds two trees of the same height produced by splitting a
-full node, together with the median key promoted between them.
+**Result of inserting into a B-tree subtree.** An insertion result over a key type $\alpha$
+is either a single tree over $\alpha$, or a triple $(\ell, m, r)$ of two trees $\ell$ and $r$
+over $\alpha$ and a key $m$ of $\alpha$. In insertion, the first form is a subtree that did not
+split, and the second form is an overflowing node split into two trees of the same height, with
+the median key $m$ promoted between them; the type itself does not record heights.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [BTree](btree.md)
+- [Raw B-trees](btree.md)
 
 ## Sources
 

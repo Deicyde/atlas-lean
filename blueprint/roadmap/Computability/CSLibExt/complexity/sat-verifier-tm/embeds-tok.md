@@ -97,7 +97,7 @@ theorem phase0_run (x w : List Bool) (v : Bool) (S : ∀ k, List (HΓ k))
 - [Stacks of the SAT tokenizer](../sat-tokenizer/k.md)
 - [Labels of the SAT tokenizer](../sat-tokenizer/lab.md)
 - [The tokenizer program](../sat-tokenizer/prog.md)
-- [Embeds](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
+- [Embedding of a machine in a host](../../../MathlibExt/turing-machine/stack-embedding/embeds.md)
 
 ## Proof depends on
 
@@ -121,10 +121,10 @@ theorem phase0_run (x w : List Bool) (v : Bool) (S : ∀ k, List (HΓ k))
 - [Filter exits in the SAT verifier host](f.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
 - [Start label of the SAT tokenizer](../sat-tokenizer/start.md)
-- [Map S](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Clean S](../../../MathlibExt/turing-machine/cleanup/clean-s.md)
-- [Move B](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Translating a statement along a stack embedding](../../../MathlibExt/turing-machine/stack-embedding/map-s.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Cleanup round](../../../MathlibExt/turing-machine/cleanup/clean-s.md)
+- [Bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 
 ## Sources
 

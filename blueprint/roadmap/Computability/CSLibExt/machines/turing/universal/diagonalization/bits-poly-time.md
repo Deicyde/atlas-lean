@@ -11,20 +11,20 @@ The readout machine on raw bits, in the reduction host.
 
 ## Depends on
 
-- [Enc Out](../clocked/enc-out.md)
-- [Bit Sym](../code/bit-sym.md)
+- [Output encoding of the clocked universal machine](../clocked/enc-out.md)
+- [Symbol of an input bit](../code/bit-sym.md)
 
 ## Proof depends on
 
 - [Component machine](../../../../complexity/host/comp.md)
 - [Reduction host](../../../../complexity/host/reduction.md)
-- [K](k.md)
-- [Lab](lab.md)
-- [Comp](comp.md)
-- [Prog](prog.md)
+- [Stacks of the readout machine](k.md)
+- [Labels of the readout machine](lab.md)
+- [The readout machine as a host component](comp.md)
+- [Program of the readout machine](prog.md)
 - [The readout run](run.md)
-- [Γ](untitled.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Stack alphabet of the readout machine](untitled.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

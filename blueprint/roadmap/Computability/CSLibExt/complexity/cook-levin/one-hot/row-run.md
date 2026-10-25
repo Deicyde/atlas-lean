@@ -36,7 +36,7 @@ counters, and output stack $e_0 e_1 \cdots e_x \, o$ (concatenation).
 - [Step budget for one one-hot clause](clause-b.md)
 - [The one-hot generator](prog.md)
 - [Dense encoding of a clause](../../dense-sat/encode-clause.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -46,8 +46,8 @@ counters, and output stack $e_0 e_1 \cdots e_x \, o$ (concatenation).
 - [One clause of the one-hot generator](clause-run.md)
 - [Literals of a one-hot clause kind](clits.md)
 - [Dense clause](../../dense-sat/clause.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

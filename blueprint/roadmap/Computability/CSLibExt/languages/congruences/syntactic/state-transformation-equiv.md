@@ -5,13 +5,15 @@ statement: formalized
 lean: Cslib.Language.stateTransformationEquiv
 ---
 
-# State Transformation Equiv
+# State transformations as functions
 
-State transformations are just endofunctions, with a multiplication chosen below.
+**State transformations as functions.** For a type $Q$ of states, the bijection from the
+state transformations of $Q$ to the functions $Q \to Q$ that sends each transformation to its
+underlying function; it forgets the multiplication of state transformations.
 
 ## Depends on
 
-- [State Transformation](state-transformation.md)
+- [State transformation monoid](state-transformation.md)
 
 ## Sources
 

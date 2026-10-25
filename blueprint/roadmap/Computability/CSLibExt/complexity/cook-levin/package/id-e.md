@@ -13,7 +13,7 @@ every alphabet with itself by the identity bijection: a pure relabelling.
 
 ## Depends on
 
-- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Sources
 

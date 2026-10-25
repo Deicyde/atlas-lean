@@ -6,19 +6,19 @@ navigation: module
 
 ## Rev Tail
 
-- [K](k.md)
-- [L](l.md)
-- [Prog](prog.md)
-- [Comp](comp.md)
-- [Run](run.md)
+- [Stacks of the reversal component](k.md)
+- [Labels of the reversal component](l.md)
+- [Program of the reversal component](prog.md)
+- [The reversal component](comp.md)
+- [Running the reversal component](run.md)
 - [Reversing and dropping the first bit is polynomial-time](computable.md)
 
 ## Of TM2
 
-- [Answer TM outputs Within Time](answer-tm-outputs-within-time.md)
+- [The answer machine runs in one step](answer-tm-outputs-within-time.md)
 - [The decider within time](decider-tm-outputs-within-time.md)
 
 ## Complexity
 
 - [Polynomial time on single-tape machines](single-tape-p.md)
-- [Problems in `P` are decided in polynomial time by single-tape machines](p-subset-single-tape-p.md)
+- [Problems in P are decided in polynomial time by single-tape machines](p-subset-single-tape-p.md)

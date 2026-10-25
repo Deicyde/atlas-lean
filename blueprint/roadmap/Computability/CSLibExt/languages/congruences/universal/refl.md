@@ -5,13 +5,14 @@ statement: formalized
 lean: Cslib.Language.DFAHom.refl
 ---
 
-# Refl
+# Identity DFA morphism
 
-The identity morphism.
+**Identity DFA morphism.** For every DFA $M$, the identity map on the states of $M$ is a DFA
+morphism from $M$ to itself.
 
 ## Depends on
 
-- [DFAHom](dfahom.md)
+- [Morphisms of DFAs](dfahom.md)
 
 ## Sources
 

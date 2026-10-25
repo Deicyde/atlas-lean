@@ -15,7 +15,7 @@ entry $b$ followed by $l$ has value $[b] + 2 \cdot \mathrm{val}(l)$.
 
 ## Depends on
 
-- [Bits Val](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
+- [Value of a little-endian bit list](../../../../../MathlibExt/turing-machine/recursive/of-tm2/bits-val.md)
 
 ## Sources
 

@@ -6,30 +6,33 @@ proof: formalized
 lean: Cslib.IMP.ACmd.vc_complete
 ---
 
-# Vc complete
+# Completeness of verification conditions for derivable triples
 
-Completeness: every derivable triple has an annotation whose verification
-condition holds and whose precondition follows from the triple's.
+**Completeness of verification conditions for derivable triples.** Let $c$ be an IMP command
+and $P$, $Q$ assertions such that the Hoare triple $\{P\}\ c\ \{Q\}$ is derivable in the
+partial-correctness Hoare logic. Then there is an annotated command $C$ such that erasing its
+loop invariants gives $c$, that is $\mathrm{strip}(C) = c$, the verification condition
+$\mathrm{vc}(C, Q)$ holds, and $P$ entails the precondition $\mathrm{pre}(C, Q)$.
 
 ## Depends on
 
-- [ACmd](acmd.md)
-- [Pre](pre.md)
-- [Strip](strip.md)
-- [Vc](vc.md)
+- [Annotated commands](acmd.md)
+- [Precondition of an annotated command](pre.md)
+- [Erasing annotations](strip.md)
+- [Verification condition of an annotated command](vc.md)
 - [Assertion](../hoare/assertion.md)
-- [Entails](../hoare/entails.md)
-- [Cmd](../syntax/cmd.md)
-- [Derivable](../hoare-completeness/derivable.md)
+- [Entailment of assertions](../hoare/entails.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Derivability in Hoare logic for partial correctness](../hoare-completeness/derivable.md)
 
 ## Proof depends on
 
-- [Pre entails vc](pre-entails-vc.md)
-- [AExp](../syntax/aexp.md)
-- [Subst](../hoare/subst.md)
-- [BExp](../syntax/bexp.md)
+- [Weakening the postcondition of an annotated command](pre-entails-vc.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Substitution in an assertion](../hoare/subst.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

@@ -6,22 +6,25 @@ proof: formalized
 lean: Cslib.IMP.Iterates.count_unique
 ---
 
-# Count unique
+# Uniqueness of the loop iteration count
 
-The iteration count of a loop run is determined by its initial state.
+**Uniqueness of the loop iteration count.** Let $b$ be a boolean expression, $c$ a command
+and $s$ a state. If the loop $\mathtt{while}\ b\ \mathtt{do}\ c$, started in $s$, exits in
+a state $t$ after exactly $n$ executions of the body and also exits in a state $t'$ after
+exactly $m$ executions of the body, then $n = m$.
 
 ## Depends on
 
-- [BExp](../syntax/bexp.md)
-- [Cmd](../syntax/cmd.md)
-- [Iterates](iterates.md)
-- [State](../syntax/state.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Loop runs with a given number of iterations](iterates.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
 - [Eval](../syntax/eval-2.md)
-- [Big Step](../big-step/big-step.md)
-- [Deterministic](../big-step/deterministic.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Determinism of IMP big-step semantics](../big-step/deterministic.md)
 
 ## Sources
 

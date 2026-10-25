@@ -14,8 +14,8 @@ only if $u$ is the self-delimiting block of $p$ followed by $r$.
 
 ## Depends on
 
-- [Delimit](../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../MathlibExt/complexity/undelimit.md)
+- [Self-delimiting form of a bitstring](../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

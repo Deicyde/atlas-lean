@@ -6,15 +6,15 @@ navigation: module
 
 ## IMP
 
-- [ACmd](acmd.md)
+- [Annotated commands](acmd.md)
 
 ## ACmd
 
-- [Strip](strip.md)
-- [Pre](pre.md)
-- [Vc](vc.md)
-- [Vc sound](vc-sound.md)
-- [Vc valid](vc-valid.md)
-- [Pre entails vc](pre-entails-vc.md)
-- [Vc complete](vc-complete.md)
-- [Vc complete of valid](vc-complete-of-valid.md)
+- [Erasing annotations](strip.md)
+- [Precondition of an annotated command](pre.md)
+- [Verification condition of an annotated command](vc.md)
+- [Soundness of verification conditions](vc-sound.md)
+- [Verification conditions yield valid Hoare triples](vc-valid.md)
+- [Weakening the postcondition of an annotated command](pre-entails-vc.md)
+- [Completeness of verification conditions for derivable triples](vc-complete.md)
+- [Completeness of verification conditions for valid triples](vc-complete-of-valid.md)

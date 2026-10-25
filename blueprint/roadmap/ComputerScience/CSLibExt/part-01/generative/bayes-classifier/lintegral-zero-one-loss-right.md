@@ -6,18 +6,23 @@ proof: formalized
 lean: Cslib.MachineLearning.BayesClassifier.lintegral_zeroOneLoss_right
 ---
 
-# Lintegral zero One Loss right
+# Integrating the 0-1 loss over the prediction
 
-The expected 0-1 loss of a random prediction with law `ν` when the true class is `c` is
-`ν {c}ᶜ`.
+**Integrating the 0-1 loss over the prediction.** Let $C$ be a measurable space with
+measurable singletons, $\nu$ a measure on $C$ and $c \in C$, and let $\ell(c, y)$ be the 0-1
+loss of predicting $y$ when the true class is $c$ ($0$ if $y = c$, $1$ otherwise). Then
+$\int_C \ell(c, y)\,\nu(dy) = \nu(C \setminus \{c\})$.
+
+When $\nu$ is the law of a random prediction, this is its expected 0-1 loss when the true class
+is $c$.
 
 ## Depends on
 
-- [Zero One Loss](zero-one-loss.md)
+- [The 0-1 loss](zero-one-loss.md)
 
 ## Proof depends on
 
-- [Lintegral zero One Loss](lintegral-zero-one-loss.md)
+- [Expected 0-1 loss of a fixed prediction](lintegral-zero-one-loss.md)
 
 ## Sources
 

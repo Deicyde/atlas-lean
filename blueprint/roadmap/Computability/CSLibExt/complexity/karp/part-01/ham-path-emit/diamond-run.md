@@ -38,7 +38,7 @@ variable $y$, and the reversed name of $y$ is prepended to $G$.
 - [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -55,7 +55,7 @@ variable $y$, and the reversed name of $y$ is prepended to $G$.
 - [Row vertices of a diamond](../ham-path/hp-r.md)
 - [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
 - [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

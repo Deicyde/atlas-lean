@@ -6,23 +6,26 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.Term.instantiate_rename_succ
 ---
 
-# Instantiate rename succ
+# Instantiating a shifted term
 
-Instantiating a weakened term gives back the term.
+**Instantiating a shifted term.** For all terms $t$ and $s$ of the simply typed lambda calculus
+with references, shift every free de Bruijn variable of $t$ up by one (rename by
+$x \mapsto x + 1$), then instantiate the result with $s$, replacing variable $0$ by $s$ and
+lowering every other variable $x + 1$ to $x$. The outcome is $t$.
 
 ## Depends on
 
-- [Term](../syntax/term.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Rename](../syntax/rename.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Substitution of a term for variable zero](../syntax/instantiate.md)
+- [Renaming the variables of a term](../syntax/rename.md)
 
 ## Proof depends on
 
-- [Single Sub](../syntax/single-sub.md)
-- [Subst](../syntax/subst.md)
-- [Subst congr](subst-congr.md)
-- [Subst id](subst-id.md)
-- [Subst rename](subst-rename.md)
+- [Single-variable substitution](../syntax/single-sub.md)
+- [Parallel substitution in a term](../syntax/subst.md)
+- [Substitution respects pointwise equality](subst-congr.md)
+- [Substitution by variables is the identity](subst-id.md)
+- [Renaming then substituting](subst-rename.md)
 
 ## Sources
 

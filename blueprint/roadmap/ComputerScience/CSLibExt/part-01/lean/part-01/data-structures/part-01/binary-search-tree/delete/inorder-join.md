@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.inorder_join
 ---
 
-# Inorder join
+# Inorder traversal of a join
 
-The inorder traversal of a splice appends the two traversals.
+**Inorder traversal of a join.** For binary trees $L$ and $R$, the inorder traversal of the join
+of $L$ and $R$ is the inorder traversal of $L$ followed by the inorder traversal of $R$.
 
 ## Depends on
 
 - [Inorder](../../../part-02/binary-search-tree/inorder.md)
-- [Join](join.md)
+- [Join of two binary trees](join.md)
 
 ## Proof depends on
 

@@ -6,26 +6,27 @@ proof: formalized
 lean: Cslib.IMP.Derivable.complete
 ---
 
-# Complete
+# Relative completeness of total-correctness Hoare logic
 
-Relative completeness: every valid partial-correctness triple is
-derivable.
+**Relative completeness of total-correctness Hoare logic.** For all assertions $P$ and $Q$
+and every command $c$, if the total-correctness triple with precondition $P$, command $c$ and
+postcondition $Q$ is valid, then it is derivable in total-correctness Hoare logic.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
-- [Derivable](derivable.md)
-- [Valid](../hoare/valid.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Derivability in Hoare logic for partial correctness](derivable.md)
+- [Validity of a Hoare triple](../hoare/valid.md)
 
 ## Proof depends on
 
-- [Entails](../hoare/entails.md)
-- [Big Step](../big-step/big-step.md)
-- [Strengthen](strengthen.md)
-- [State](../syntax/state.md)
-- [Derivable wlp](derivable-wlp.md)
-- [Wlp](../hoare/wlp.md)
+- [Entailment of assertions](../hoare/entails.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Precondition strengthening for partial correctness](strengthen.md)
+- [IMP program states](../syntax/state.md)
+- [The weakest liberal precondition gives a derivable triple](derivable-wlp.md)
+- [Weakest liberal precondition](../hoare/wlp.md)
 
 ## Sources
 

@@ -32,7 +32,7 @@ $P$ to $n + 1$, and setting $N$, $R$, $J$ and $D$ to $0$.
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
 - [Token sequence of a CNF formula](../../../sat-verifier-spec/toks.md)
 - [CNF](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
@@ -43,13 +43,13 @@ $P$ to $n + 1$, and setting $N$, $R$, $J$ and $D$ to $0$.
 - [Tokens of a clause](../../../sat-verifier-spec/clause-toks.md)
 - [Tokens of a literal](../../../sat-verifier-spec/lit-toks.md)
 - [CNFClause](../../../../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Is Bit Block](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
-- [Xfer run](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit blocks](../../../../../MathlibExt/turing-machine/bit-ops/is-bit-block.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Adding units to target stacks](../../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Running the bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Running a counter transfer](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

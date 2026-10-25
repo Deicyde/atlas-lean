@@ -6,9 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.BitstringEncoding.undelimitBlocks
 ---
 
-# Undelimit Blocks
+# Parsing a list of booleans into self-delimiting blocks
 
-Parse a sequence of self-delimiting blocks off the front of the input.
+**Parsing a list of booleans into self-delimiting blocks.** Given a list of booleans $s$, this
+repeatedly parses one self-delimiting block from the front of $s$ until $s$ is used up, allowing
+at most as many blocks as the length of $s$, and returns the list of payloads in order. It fails
+if some block fails to parse. The bound never binds, since every block uses at least one bit.
+So the parse succeeds exactly when $s$ is a concatenation of self-delimiting blocks.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Undelimit Blocks Aux](undelimit-blocks-aux.md)
+- [Bounded parsing of self-delimiting blocks](undelimit-blocks-aux.md)
 
 ## Sources
 

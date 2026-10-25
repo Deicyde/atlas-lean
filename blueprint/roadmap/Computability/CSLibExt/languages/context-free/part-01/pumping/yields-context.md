@@ -5,14 +5,15 @@ statement: formalized
 lean: Cslib.Language.YieldsContext
 ---
 
-# Yields Context
+# Derivation contexts
 
-A *semantic* derivation context: every word yielded by `B`,
-framed by `l` and `r`, is yielded by `A`. This is the
-language-inclusion form of a one-hole derivation context; it is
-what pumping iteration uses, and it holds vacuously when `B`
-yields nothing. The `YieldsContext.of_rule` lemma produces such
-contexts from actual productions.
+**Derivation contexts.** Let $g$ be a context-free grammar, let $A$ and $B$ be nonterminals of
+$g$, and let $l$ and $r$ be words over the terminal alphabet. Then $(l, r)$ is a derivation
+context from $A$ to $B$ when, for every terminal word $w$ that the nonterminal $B$ yields in $g$,
+the nonterminal $A$ yields the word $l w r$ in $g$.
+
+This is the language-inclusion form of a one-hole derivation context; it is what pumping
+iteration uses, and it holds vacuously when $B$ yields nothing.
 
 ## Depends on
 
@@ -20,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Yields](../../part-02/yields/yields.md)
+- [Yield of a sentential form](../../part-02/yields/yields.md)
 
 ## Sources
 

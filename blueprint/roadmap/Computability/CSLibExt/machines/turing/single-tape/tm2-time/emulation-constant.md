@@ -5,19 +5,17 @@ statement: formalized
 lean: Cslib.Turing.TM2Time.emulationConstant
 ---
 
-# Emulation Constant
+# Emulation constant
 
-The machine constant of the emulation time bound: `3 (2 B + 1) + P`, where `B` is the total
-size of the statements of `tm` (so each statement has size at most `B`) and
-`P = TM2Composition.pushBound tm` bounds the pushes of one step.
+**Emulation constant.** For a bundled multi-stack machine $M$, the emulation constant is
+$C = 3(2B + 1) + P$, where $B = \sum_l |M(l)|$ is the total structural size of the statements
+$M(l)$ over all labels $l$ (so each statement has size at most $B$), and $P$ is the push bound
+of $M$, the total number of push instructions in its statements, which bounds the number of
+pushes in one step.
 
 ## Depends on
 
 This node has no prerequisites.
-
-## Proof depends on
-
-- [Push Bound](../../../../../MathlibExt/turing-machine/composition/push-bound.md)
 
 ## Sources
 

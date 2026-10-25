@@ -6,16 +6,18 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.BTree.ValidRoot
 ---
 
-# Valid Root
+# Root invariant of a B-tree
 
-The structural invariant at the root of a B-tree of minimum degree `t` and height
-`height`: a root leaf holds at most `2 * t - 1` keys (possibly none, for the empty tree),
-and a root internal node holds between `1` and `2 * t - 1` keys, with every child a
-non-root valid tree of the same height.
+**Root invariant of a B-tree.** For a minimum degree $t$ and a height $h$, a tree
+satisfies the root invariant when either $h = 0$ and the tree is a leaf with at most
+$2t - 1$ keys (possibly none, for the empty tree), or $h = h' + 1$ and the tree is an
+internal node with between $1$ and $2t - 1$ keys and exactly one more child than keys,
+every child satisfying the structural invariant for minimum degree $t$, minimum top-node
+key count $t - 1$ and height $h'$. Here $2t - 1$ and $t - 1$ are truncated at $0$.
 
 ## Depends on
 
-- [BTree](btree.md)
+- [Raw B-trees](btree.md)
 
 ## Sources
 

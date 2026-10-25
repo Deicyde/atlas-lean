@@ -6,38 +6,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Scheduling.listSchedule_isScheduleOf
 ---
 
-# List Schedule is Schedule Of
+# List scheduling schedules every job
 
-Graham (1969): LPT has makespan `C` with `3 * m * C ≤ (4 * m - 1) * M` for the makespan `M`
-of every schedule `τ` of the same jobs, i.e. `C ≤ (4/3 - 1/(3m)) M`. -/
-theorem lpt_approx [NeZero m] (ps : List ℕ) (τ : Fin m → List ℕ) (hτ : IsScheduleOf τ ps) :
-    3 * m * makespan (lpt m ps).ret ≤ (4 * m - 1) * makespan τ := by
-  set sorted := ((mergeSort (ps.map OrderDual.toDual)).ret).map OrderDual.ofDual
-  have hperm : sorted.Perm ps := by
-    have := (mergeSort_perm (ps.map OrderDual.toDual)).map OrderDual.ofDual
-    simpa [sorted, List.map_map] using this
-  have hsorted : sorted.Pairwise (· ≥ ·) := by
-    have := mergeSort_sorted (ps.map OrderDual.toDual)
-    exact List.Pairwise.map _ (fun a b h => h) this
-  have hτ' : IsScheduleOf τ sorted := hτ.perm hperm.symm
-  simp only [lpt, ret_bind]
-  apply listScheduleScan_bound scanInv_init sorted (by simp)
-  intro P' p rest' loads' σ' heq hinv
-  exact lpt_step_le (by simpa using heq) hsorted hinv τ hτ'
-
-/-! ## Validity and cost
+**List scheduling schedules every job.** For $m \ge 1$ and every list $J$ of processing
+times, the assignment that list scheduling on $m$ machines produces from $J$ is a schedule of
+$J$.
 
 ## Depends on
 
-- [Is Schedule Of](is-schedule-of.md)
-- [List Schedule](list-schedule.md)
+- [Schedule of a list of jobs](is-schedule-of.md)
+- [Graham's list scheduling](list-schedule.md)
 
 ## Proof depends on
 
-- [Scan Inv](scan-inv.md)
-- [Is Schedule Of nil](is-schedule-of-nil.md)
-- [Least Loaded](least-loaded.md)
-- [List Schedule Scan](list-schedule-scan.md)
+- [List-scheduling state invariant](scan-inv.md)
+- [The empty schedule](is-schedule-of-nil.md)
+- [Least-loaded machine](least-loaded.md)
+- [List scheduling from an intermediate state](list-schedule-scan.md)
 
 ## Sources
 

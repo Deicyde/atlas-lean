@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Language.recognizes_transitionAccept
 ---
 
-# Recognizes transition Accept
+# The transition morphism recognizes through accepting transformations
 
-The standard transition accepting set presents the general transition recognizer.
+**The transition morphism recognizes through accepting transformations.** Let $M$ be a DFA
+with start state $q_0$ and accepting states $F$. The transition morphism of $M$, from words to
+state transformations, recognizes the language accepted by $M$ through the accepting
+transformations of $M$: a word is accepted by $M$ exactly when the transformation it induces
+sends $q_0$ into $F$.
 
 ## Depends on
 
-- [Recognizes](../recognition/recognizes.md)
-- [State Transformation](../syntactic/state-transformation.md)
-- [Transition Accept](transition-accept.md)
-- [Transition Morphism](../syntactic/transition-morphism.md)
+- [Recognition of a language by a monoid morphism](../recognition/recognizes.md)
+- [State transformation monoid](../syntactic/state-transformation.md)
+- [Accepting transformations of a DFA](transition-accept.md)
+- [Transition morphism of a DFA](../syntactic/transition-morphism.md)
 
 ## Proof depends on
 
-- [Recognizes transition Morphism](../recognition/recognizes-transition-morphism.md)
+- [The transition morphism of a DFA recognizes its language](../recognition/recognizes-transition-morphism.md)
 
 ## Sources
 

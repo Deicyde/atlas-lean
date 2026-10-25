@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.TM2Composition.push2
 ---
 
-# Push2
+# Push labels of the second copy loop
 
-Label: push `x` on `M₂`'s input stack.
+**Push labels of the second copy loop.** In the composite machine of $M_1$ and $M_2$, for a
+symbol $x$ of $M_2$'s input alphabet, this is the label $\mathrm{some}\ x$ in the second
+copy-loop part of the label set; the composite program uses it to push $x$ on $M_2$'s input
+stack.
 
 ## Depends on
 
-- [CΛ](c-2.md)
-- [X](x.md)
+- [Labels of the composite machine](c-2.md)
+- [Intermediate alphabet of the composite machine](x.md)
 
 ## Sources
 

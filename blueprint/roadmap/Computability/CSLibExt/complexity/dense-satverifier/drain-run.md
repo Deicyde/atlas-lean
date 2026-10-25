@@ -26,7 +26,7 @@ and the output stack still empty.
 - [The dense CNF-SAT verifier program](prog.md)
 - [All stacks of the verifier from work stacks and output](stk.md)
 - [Stack alphabets of the dense CNF-SAT verifier](untitled.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 

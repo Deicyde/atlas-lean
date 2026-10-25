@@ -7,19 +7,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.ordered_delete
 ---
 
-# Ordered delete
+# Deleting a key from an ordered AVL tree keeps it ordered
 
-Deletion, under the name `delete`, preserves the ordering invariant.
+**Deleting a key from an ordered AVL tree keeps it ordered.** Let $T$ be a binary tree with
+cached heights over a linearly ordered type. If $T$ is ordered as a search tree, then for every
+key $x$ the tree obtained by deleting $x$ from $T$ with rebalancing is again ordered as a search
+tree.
 
 ## Depends on
 
-- [Ordered](../../avl-tree-2/ordered.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Delete](delete.md)
+- [Ordered AVL trees](../../avl-tree-2/ordered.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [AVL tree deletion under its alternative name](delete.md)
 
 ## Proof depends on
 
-- [Ordered erase](ordered-erase.md)
+- [AVL deletion preserves search-tree order](ordered-erase.md)
 
 ## Sources
 

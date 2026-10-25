@@ -8,19 +8,20 @@ lean: Cslib.Algorithms.Concurrency.DeadlockDetection.State.detect_stuck
 
 # Every reported process is stuck
 
-**Every reported process is stuck**: it requests more than is free even
-after all the processes that the algorithm lets finish have released their
-allocations.
+**Every reported process is stuck.** Let $w$ be the free resource vector. For every process $q$
+that the detection algorithm reports, the request of $q$ is not at most $w$ plus the sum of the
+allocations of the processes that the algorithm lets finish: for at least one resource type, $q$
+requests more than is free even after all those processes have released their allocations.
 
 ## Depends on
 
-- [State](state.md)
+- [Resource-allocation state](state.md)
 - [The detection algorithm](detect.md)
-- [Finished](finished.md)
+- [The processes the detection algorithm lets finish](finished.md)
 
 ## Proof depends on
 
-- [Reduce Aux](reduce-aux.md)
+- [The detection algorithm with fuel](reduce-aux.md)
 
 ## Sources
 

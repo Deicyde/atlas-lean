@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.CookLevin.mem_varsOf
 ---
 
-# Mem vars Of
+# Variables of a formula occur in its occurrence list
 
-Every variable of a literal in the formula occurs in `varsOf`.
+**Variables of a formula occur in its occurrence list.** Let $\varphi$ be a CNF formula, $C$ a
+clause of $\varphi$ and $(x, b)$ a literal of $C$. Then $x$ belongs to the list of variables
+occurring in $\varphi$.
 
 ## Depends on
 
-- [Vars Of](vars-of.md)
+- [Occurrence list of a CNF formula](vars-of.md)
 - [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 - [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 

@@ -6,18 +6,22 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.posterior_predictive_betaMeasure
 ---
 
-# Posterior predictive
+# Posterior predictive of the beta-binomial model
 
-**Posterior predictive** (Laplace's rule of succession for `a = b = 1`): after `k` successes
-in `n` trials, the next trial succeeds with probability `(a + k) / (a + b + n)`.
+**Posterior predictive of the beta-binomial model.** Let $a, b > 0$ be real and $k \le n$
+natural numbers. Under a $\mathrm{Beta}(a, b)$ prior on the success probability, after observing
+$k$ successes in $n$ trials of the binomial kernel, the posterior predictive probability that one
+further trial succeeds is $(a + k) / (a + b + n)$.
+
+For $a = b = 1$ this is Laplace's rule of succession, $(k + 1) / (n + 2)$.
 
 ## Depends on
 
-- [Binomial Kernel](binomial-kernel.md)
+- [Binomial likelihood kernel](binomial-kernel.md)
 
 ## Proof depends on
 
-- [Binomial Kernel one comp beta Measure](binomial-kernel-one-comp-beta-measure.md)
+- [Prior predictive probability of a success](binomial-kernel-one-comp-beta-measure.md)
 - [Beta–binomial conjugacy](posterior-binomial-kernel-beta-measure.md)
 
 ## Sources

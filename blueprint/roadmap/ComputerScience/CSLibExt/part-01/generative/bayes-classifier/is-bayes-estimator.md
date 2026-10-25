@@ -13,12 +13,12 @@ for the 0-1 loss.
 
 ## Depends on
 
-- [Is Posterior Argmax](is-posterior-argmax.md)
-- [Zero One Loss](zero-one-loss.md)
+- [Posterior argmax classifier](is-posterior-argmax.md)
+- [The 0-1 loss](zero-one-loss.md)
 
 ## Proof depends on
 
-- [Is Argmin Estimator](is-argmin-estimator.md)
+- [A posterior argmax classifier is an argmin estimator for the 0-1 loss](is-argmin-estimator.md)
 
 ## Sources
 

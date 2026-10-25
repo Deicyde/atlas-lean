@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.ordered_deleteRebuild
 ---
 
-# Ordered delete Rebuild
+# Rebuild deletion yields an ordered tree
 
-Deletion preserves orderedness of the result, in the form recorded by
-`IsBTree.deleteRebuild`.
+**Rebuild deletion yields an ordered tree.** Let $t \ge 2$ and let keys come from a linearly
+ordered type. For every key $x$ and every tree $T$, not necessarily ordered, the tree obtained
+from $T$ by rebuild deletion of $x$ (removing the first occurrence of $x$, if any, from the
+inorder flattening of $T$ and rebuilding a B-tree of minimum degree $t$ from the remaining keys)
+is ordered: its inorder flattening is strictly increasing.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Ordered](../../btree-2/ordered.md)
-- [Delete Rebuild](delete-rebuild.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [Ordered B-tree](../../btree-2/ordered.md)
+- [B-tree deletion by rebuilding](delete-rebuild.md)
 
 ## Proof depends on
 
-- [Delete Rebuild](delete-rebuild-2.md)
-- [Ordered](../../btree-2/ordered-2.md)
+- [Rebuilding deletion yields a B-tree](delete-rebuild-2.md)
+- [B-trees are ordered](../../btree-2/ordered-2.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ in the dense clause encoding has a satisfying assignment.
 
 ## Depends on
 
-- [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
+- [Decision problems](../../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 

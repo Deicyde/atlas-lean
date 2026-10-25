@@ -24,7 +24,7 @@ The machine in fact runs in linearly many steps; only the cubic bound is stated 
 - [The 3-COLOR verifier machine](prog.md)
 - [Start label of the 3-coloring verifier](start.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -41,10 +41,10 @@ The machine in fact runs in linearly many steps; only the cubic bound is stated 
 - [The unary reader on a terminated number](read-u-some.md)
 - [Reading a symbol as a name bit](../../../sat-verifier-spec/bit.md)
 - [Reading a unary length prefix](../../../../cook-levin/read-unary-length.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
-- [Move B run](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Running the bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b-run.md)
 
 ## Sources
 

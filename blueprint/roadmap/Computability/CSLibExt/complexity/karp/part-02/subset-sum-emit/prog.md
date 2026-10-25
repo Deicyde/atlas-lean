@@ -88,14 +88,14 @@ instance with no numbers and target $1$ to $O$ and go to $\mathrm{done}$. $\math
 - [Reading a pair bit or vertex mark](val-of.md)
 - [Fixed no-instance of SUBSET-SUM](../subset-sum/no-ss.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Cmp Step](../../../../../MathlibExt/turing-machine/program/cmp-step.md)
-- [Decr](../../../../../MathlibExt/turing-machine/program/decr.md)
-- [Emit](../../../../../MathlibExt/turing-machine/program/emit.md)
-- [Emit R](../../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Move B](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [One round of counter comparison](../../../../../MathlibExt/turing-machine/program/cmp-step.md)
+- [Decrement](../../../../../MathlibExt/turing-machine/program/decr.md)
+- [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
+- [Prepending a constant list](../../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Bit-moving loop](../../../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 - [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer E](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Draining a counter while prepending a block](../../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

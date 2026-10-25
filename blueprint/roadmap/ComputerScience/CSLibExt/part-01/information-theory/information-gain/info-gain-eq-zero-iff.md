@@ -6,13 +6,17 @@ proof: formalized
 lean: Cslib.MachineLearning.InformationTheory.infoGain_eq_zero_iff
 ---
 
-# Info Gain eq zero iff
+# Zero information gain means independence
 
-The gain is zero exactly when the attribute and the label are independent.
+**Zero information gain means independence.** Let $\alpha$ and $\beta$ be finite sets carrying
+σ-algebras in which singletons are measurable, and let $p$ be a joint probability law on
+$\alpha \times \beta$. The information gain of $p$ is zero if and only if $p$, as a measure, equals
+the product of its marginal law on $\alpha$ and its marginal law on $\beta$; that is, exactly when
+the attribute (first coordinate) and the label (second coordinate) are independent.
 
 ## Depends on
 
-- [Info Gain](info-gain.md)
+- [Information gain of a split](info-gain.md)
 
 ## Proof depends on
 

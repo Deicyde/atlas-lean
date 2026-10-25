@@ -28,7 +28,7 @@ of $j_1, \dots, j_n$ at $s$, concatenated in this order, are appended to its edg
 - [The HAMPATH emitter machine](prog.md)
 - [Stack alphabets of the HAMPATH emitter](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 

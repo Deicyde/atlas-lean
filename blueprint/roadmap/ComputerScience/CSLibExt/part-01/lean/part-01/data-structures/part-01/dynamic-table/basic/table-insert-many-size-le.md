@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_size_le
 ---
 
-# Table Insert Many size le
+# Capacity after inserting into the empty table
 
-Starting unallocated, logical slot capacity never exceeds twice the item count.
+**Capacity after inserting into the empty table.** Starting from the empty dynamic table
+and inserting the items of an array of length $k$ one at a time, the resulting table has
+capacity (number of slots) at most $2k$.
 
 ## Depends on
 
 - [Table](table.md)
-- [Empty](empty.md)
+- [Empty dynamic table](empty.md)
 - [Table Insert Many](table-insert-many.md)
 
 ## Proof depends on

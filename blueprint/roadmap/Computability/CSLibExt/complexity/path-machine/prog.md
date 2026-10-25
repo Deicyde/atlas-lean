@@ -44,10 +44,10 @@ walks along $T$, pushes the top mark of $M$ (false if there is none) on $O$ and 
 - [Stack alphabets of the PATH marking machine](untitled.md)
 - [Stack alphabet of the SAT verifier](../sat-verifier-spec/sym.md)
 - [Reading a symbol as a name bit](../sat-verifier-spec/bit.md)
-- [Flag](../../../MathlibExt/turing-machine/program/flag.md)
-- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
-- [Decr](../../../MathlibExt/turing-machine/program/decr.md)
-- [Move B](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
+- [Flag bit of a machine state](../../../MathlibExt/turing-machine/program/flag.md)
+- [Bit on top of a stack](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Decrement](../../../MathlibExt/turing-machine/program/decr.md)
+- [Bit-moving loop](../../../MathlibExt/turing-machine/bit-ops/move-b.md)
 - [Xfer](../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Sources

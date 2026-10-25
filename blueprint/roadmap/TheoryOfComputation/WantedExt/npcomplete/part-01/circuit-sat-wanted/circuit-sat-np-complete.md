@@ -15,9 +15,9 @@ S. A. Cook, "The complexity of theorem-proving procedures" (1971).
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Circuit Sat Dec](circuit-sat-dec.md)
-- [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
-- [NP](../../../../../Computability/MathlibExt/complexity/np.md)
+- [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
+- [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
 
 ## Sources
 

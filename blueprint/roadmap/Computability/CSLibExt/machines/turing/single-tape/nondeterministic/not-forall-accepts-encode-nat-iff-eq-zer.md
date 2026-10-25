@@ -6,11 +6,17 @@ proof: formalized
 lean: Cslib.Computability.Turing.SingleTape.SingleTapeNTM.not_forall_accepts_encodeNat_iff_eq_zero
 ---
 
-# No NTM accepts exactly the binary code of `0`
+# No NTM accepts exactly the binary code of $0$
 
-**No NTM accepts exactly the binary code of `0`**, on any copy `ι` of the input bits: the
-code `encodeNat 0` is the empty word, and a machine that accepts it accepts the code of `1`
-(`accepts_of_accepts_nil`).
+**No NTM accepts exactly the binary code of $0$.** Let $m$ be a single-tape nondeterministic
+Turing machine with tape alphabet $\Sigma$, and let $\iota$ be any map from the bits to $\Sigma$.
+For a natural number $n$, write $w_n$ for the word over $\Sigma$ obtained by applying $\iota$
+letter by letter to the little-endian binary code of $n$, in which $0$ is coded by the empty word.
+Then it is not the case that, for every natural number $n$, $m$ accepts $w_n$ if and only if
+$n = 0$.
+
+The word $w_0$ is empty, and a machine that accepts the empty word accepts every word, in
+particular $w_1$.
 
 ## Depends on
 
@@ -18,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Accepts of accepts nil](accepts-of-accepts-nil.md)
+- [An NTM that accepts the empty word accepts every word](accepts-of-accepts-nil.md)
 
 ## Sources
 

@@ -6,25 +6,27 @@ proof: formalized
 lean: Cslib.IMP.derivable_iff_denote
 ---
 
-# Derivable iff denote
+# Partial-correctness Hoare logic matches the denotational semantics
 
-Partial-correctness derivability coincides with validity with respect to
-the relational denotational semantics.
+**Partial-correctness Hoare logic matches the denotational semantics.** For all assertions
+$P$ and $Q$ and every command $c$, the partial-correctness triple with precondition $P$, command
+$c$ and postcondition $Q$ is derivable if and only if, for all states $s$ and $t$ such that $P$
+holds at $s$ and the pair $(s, t)$ lies in the relational denotation of $c$, $Q$ holds at $t$.
 
 ## Depends on
 
 - [Assertion](../hoare/assertion.md)
-- [Cmd](../syntax/cmd.md)
-- [Denote](../denotational/denote.md)
-- [Derivable](derivable.md)
-- [State](../syntax/state.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [Relational denotational semantics of IMP](../denotational/denote.md)
+- [Derivability in Hoare logic for partial correctness](derivable.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [Big Step](../big-step/big-step.md)
-- [Iff big Step](../denotational/iff-big-step.md)
-- [Valid](../hoare/valid.md)
-- [Derivable iff valid](derivable-iff-valid.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Agreement of the denotational and big-step semantics of IMP](../denotational/iff-big-step.md)
+- [Validity of a Hoare triple](../hoare/valid.md)
+- [Partial-correctness Hoare logic as an inference system](derivable-iff-valid.md)
 
 ## Sources
 

@@ -19,8 +19,8 @@ under the assignment is contained in the language assigned to $A$.
 - [The universality grammar](univ-grammar.md)
 - [Intended languages of the nonterminals of the universality grammar](univ-val.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
-- [Is Valuation](../../../languages/context-free/part-01/basic/is-valuation.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Valuation of a grammar](../../../languages/context-free/part-01/basic/is-valuation.md)
 
 ## Proof depends on
 
@@ -39,10 +39,10 @@ under the assignment is contained in the language assigned to $A$.
 - [Encoded bit terminal](u-bit.md)
 - [Encoded letter terminal](u-letter.md)
 - [Encoded nonterminal](u-nt.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
-- [Eval Form](../../../languages/context-free/part-01/basic/eval-form.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Interpretation of a sentential form](../../../languages/context-free/part-01/basic/eval-form.md)
 
 ## Sources
 

@@ -6,19 +6,22 @@ proof: formalized
 lean: Cslib.CookLevin.satVerifier_verifierInDeclaredPolyTime
 ---
 
-# Sat Verifier verifier In Declared Poly Time
+# The SAT verifier has polynomial declared time
 
-The SAT verifier's declared time is polynomially bounded, with bound
-`X ^ 2 + X` in the combined input and witness length.
+**The SAT verifier has polynomial declared time.** There is a polynomial $q$ with natural
+number coefficients such that for all lists of Booleans $x$ (the input) and $w$ (the witness),
+the declared time cost of the SAT verifier on $(x, w)$ is at most $q(|x| + |w|)$.
+
+One can take $q = X^2 + X$. This bounds only the trusted cost annotation.
 
 ## Depends on
 
-- [Sat Verifier](sat-verifier.md)
-- [Verifier In Declared Poly Time](../time-mcomplexity/verifier-in-declared-poly-time.md)
+- [The SAT verifier](sat-verifier.md)
+- [Verifiers with polynomial declared time](../time-mcomplexity/verifier-in-declared-poly-time.md)
 
 ## Proof depends on
 
-- [Sat Verifier time le](sat-verifier-time-le.md)
+- [Declared time bound of the SAT verifier](sat-verifier-time-le.md)
 
 ## Sources
 

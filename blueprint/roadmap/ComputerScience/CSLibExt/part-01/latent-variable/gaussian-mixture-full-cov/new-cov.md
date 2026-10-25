@@ -5,19 +5,27 @@ statement: formalized
 lean: Cslib.MachineLearning.LatentVariable.GaussianMixtureFullCov.newCov
 ---
 
-# New Cov
+# Covariance update of the full-covariance Gaussian mixture
 
-The covariance update: the responsibility-weighted sample covariance
-`(∑ n, r n k (xₙ - μ k') (xₙ - μ k')ᵀ) / N k` about the weighted mean.
+**Covariance update of the full-covariance Gaussian mixture.** Given data $(x_n)_{n\lt N}$
+in $\mathbb{R}^d$, valid parameters $\theta$ and a component $k$, let $r_{nk}$ be the
+responsibility of component $k$ for $x_n$, let $N_k = \sum_n r_{nk}$, and let $\mu_k'$ be the
+responsibility-weighted mean $N_k^{-1} \sum_n r_{nk} x_n$. The covariance update is the real
+$d \times d$ matrix
+
+$$\Sigma_k' = \frac{1}{N_k} \sum_n r_{nk} (x_n - \mu_k')(x_n - \mu_k')^{\top}.$$
+
+When there are no data ($N = 0$), $N_k = 0$ and the convention $N_k^{-1} = 0$ makes
+$\Sigma_k' = 0$.
 
 ## Depends on
 
-- [Valid Params](valid-params.md)
+- [Valid parameters of a full-covariance Gaussian mixture](valid-params.md)
 
 ## Proof depends on
 
-- [New Mean](new-mean.md)
-- [Resp](resp.md)
+- [Mean update of the full-covariance Gaussian mixture](new-mean.md)
+- [Responsibilities of the full-covariance Gaussian mixture](resp.md)
 - [Weighted Scatter](../../../../../LinearAlgebra/MathlibExt/matrix/part-02/weighted-scatter/weighted-scatter.md)
 
 ## Sources

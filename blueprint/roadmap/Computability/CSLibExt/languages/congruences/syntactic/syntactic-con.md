@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Language.syntacticCon
 ---
 
-# Syntactic Con
+# Syntactic congruence
 
-The syntactic relation as a monoid congruence on words.
+**Syntactic congruence.** For a language $L$ over an alphabet $\Sigma$, the syntactic
+congruence of $L$ is the monoid congruence on the free monoid $\Sigma^*$ that relates words $x$
+and $y$ when, for all words $u$ and $v$, $uxv \in L$ if and only if $uyv \in L$.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Syntactic Rel](syntactic-rel.md)
-- [Syntactic Rel append](syntactic-rel-append.md)
+- [Syntactic equivalence](syntactic-rel.md)
+- [Syntactic equivalence is compatible with concatenation](syntactic-rel-append.md)
 
 ## Sources
 

@@ -5,13 +5,17 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.AStar.AStarResult.pathTo?
 ---
 
-# Path To?
+# Path recovered from an A-star result
 
-Follow predecessors from `v` back to the source.
+**Path recovered from an A-star result.** Given an A* result $r$ on $n$ vertices and a vertex
+$v$, follow the predecessor pointers of the underlying Dijkstra search backward from $v$, at most
+$n$ times, until the source is reached, and return the visited vertices in order from the source
+to $v$. There is no result if a vertex without a predecessor is met before the source, or if the
+source is not reached within $n$ steps.
 
 ## Depends on
 
-- [AStar Result](astar-result.md)
+- [Output of A-star search](astar-result.md)
 
 ## Proof depends on
 

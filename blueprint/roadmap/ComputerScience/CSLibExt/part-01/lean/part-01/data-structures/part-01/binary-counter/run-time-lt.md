@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinaryCounter.run_time_lt
 ---
 
-# Run time lt
+# Aggregate cost bound for the binary counter
 
-A positive-length zero-start run costs strictly fewer than twice its length.
+**Aggregate cost bound for the binary counter.** For every width $k$ and every $n > 0$,
+performing $n$ successive increments on the $k$-bit counter that starts with all bits zero
+costs strictly fewer than $2n$ bit changes in total.
 
 ## Depends on
 
-- [Run](run.md)
+- [Running the binary counter](run.md)
 
 ## Proof depends on
 
-- [Increment](increment.md)
-- [Run time succ](run-time-succ.md)
-- [Run value](run-value.md)
+- [Binary counter increment](increment.md)
+- [Cost recurrence for the binary counter run](run-time-succ.md)
+- [Counter value after successive increments](run-value.md)
 
 ## Sources
 

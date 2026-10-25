@@ -6,10 +6,11 @@ proof: formalized
 lean: Cslib.Language.IsContextFree.of_length_le
 ---
 
-# Of length le
+# Languages of bounded word length are context-free
 
-Over a finite alphabet, a language whose words all have length at most
-`n` is context-free.
+**Languages of bounded word length are context-free.** Over a finite alphabet, if $n$ is a
+natural number and every word of a language $L$ has length at most $n$, then $L$ is
+context-free.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Of finite](of-finite.md)
+- [Finite languages are context-free](of-finite.md)
 
 ## Sources
 

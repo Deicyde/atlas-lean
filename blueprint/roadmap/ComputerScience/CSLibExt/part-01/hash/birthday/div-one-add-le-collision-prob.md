@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.Crypto.Birthday.div_one_add_le_collisionProb
 ---
 
-# Div one add le collision Prob
+# Birthday lower bound, rational form
 
-With `x = q (q - 1) / (2 N)`, the collision probability is at least `x / (1 + x)`.
+**Birthday lower bound, rational form.** Let $\alpha$ be a nonempty finite set with $N$
+elements, $q$ a natural number, and $x = q (q - 1) / (2 N)$. The probability that $q$ independent
+uniform samples from $\alpha$ contain a collision is at least $x / (1 + x)$.
 
 ## Depends on
 
-- [Collision Prob](collision-prob.md)
+- [Collision probability](collision-prob.md)
 
 ## Proof depends on
 

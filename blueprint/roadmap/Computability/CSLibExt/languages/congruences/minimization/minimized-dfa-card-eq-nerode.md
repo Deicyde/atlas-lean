@@ -15,7 +15,7 @@ same number of elements.
 
 ## Depends on
 
-- [Nerode Class](../nerode/nerode-class.md)
+- [Nerode classes](../nerode/nerode-class.md)
 - [Residual languages of reachable states](../minimality/reachable-residuals.md)
 
 ## Proof depends on

@@ -6,9 +6,10 @@ proof: formalized
 lean: Cslib.IMP.Heap.disjoint_empty_left
 ---
 
-# Disjoint empty left
+# The empty heap is disjoint from every heap
 
-The empty heap is disjoint from every heap on the left.
+**The empty heap is disjoint from every heap.** For every heap $h$, the empty heap is
+disjoint from $h$ (with the empty heap as the first heap).
 
 ## Depends on
 

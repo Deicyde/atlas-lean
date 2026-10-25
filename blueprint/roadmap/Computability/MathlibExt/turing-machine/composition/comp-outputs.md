@@ -5,41 +5,48 @@ statement: formalized
 lean: MetaMathlibExt.TM2Composition.compOutputs
 ---
 
-# Comp Outputs
+# The composite machine computes the composite function in time
 
-The composite machine computes `g ∘ f` within `compTime`.
+**The composite machine computes the composite function in time.** Let $M_1$ compute
+$f : \alpha \to \beta$ in polynomial time from the encoding $e_\alpha$ to $e_\beta$, and let $M_2$
+compute $g : \beta \to \gamma$ in polynomial time from $e_\beta$ to $e_\gamma$. For every
+$a \in \alpha$, let $n$ be the length of $e_\alpha(a)$ and $T$ the composite time bound. Started on
+$e_\alpha(a)$, written in the input alphabet of $M_1$, the composite machine of $M_1$ and $M_2$
+(with the glue map from output symbols of $M_1$ to input symbols of $M_2$) reaches within
+$T(n)$ steps the halted configuration whose output stack holds $e_\gamma(g(f(a)))$, written in the
+output alphabet of $M_2$, whose other stacks are empty and whose internal state is the initial
+one.
 
 ## Depends on
 
-- [Comp TM](comp-tm.md)
-- [Comp Time](comp-time.md)
-- [Glue](glue.md)
+- [The composite machine](comp-tm.md)
+- [Time bound of the composite machine](comp-time.md)
+- [Symbol translation between composed machines](glue.md)
 
 ## Proof depends on
 
-- [CK](ck.md)
-- [CΓ](c.md)
-- [CΛ](c-2.md)
-- [Cσ](c-3.md)
-- [X](x.md)
-- [Copy₁](copy.md)
-- [Copy₂](copy-2.md)
-- [Emb₁](emb.md)
-- [Emb₂](emb-2.md)
-- [Eval mono](eval-mono.md)
-- [Init List stk length le](init-list-stk-length-le.md)
-- [Iter sim](iter-sim.md)
-- [Lab₁](lab.md)
-- [Lift₁](lift.md)
-- [Lift₂](lift-2.md)
+- [Stack indices of the composite machine](ck.md)
+- [Stack alphabets of the composite machine](c.md)
+- [Labels of the composite machine](c-2.md)
+- [States of the composite machine](c-3.md)
+- [Intermediate alphabet of the composite machine](x.md)
+- [First copy loop of the composite machine](copy.md)
+- [Second copy loop of the composite machine](copy-2.md)
+- [Embedding of $M_1$'s configurations into the composite machine](emb.md)
+- [Embedding of $M_2$'s configurations into the composite machine](emb-2.md)
+- [Evaluation of a natural-number polynomial is monotone](eval-mono.md)
+- [Evaluation of a natural-number polynomial is monotone](init-list-stk-length-le.md)
+- [Simulation transports runs](iter-sim.md)
+- [Composite label of an $M_1$ label](lab.md)
+- [Lifting a statement of the first machine](lift.md)
+- [Lifting a statement of the second machine](lift-2.md)
 - [Mid Poly](mid-poly.md)
-- [Mk Stk](mk-stk.md)
-- [Pop1](pop1.md)
-- [Pop2](pop2.md)
-- [Prog](prog.md)
-- [Push Bound](push-bound.md)
-- [Pushes](pushes.md)
-- [Iter none](../program/iter-none.md)
+- [Assembling the stacks of the composite machine](mk-stk.md)
+- [Pop label of the first copy loop](pop1.md)
+- [Pop label of the second copy loop](pop2.md)
+- [The program of the composite machine](prog.md)
+- [Number of push instructions in a TM2 statement](pushes.md)
+- [A halted run stays halted](../program/iter-none.md)
 
 ## Sources
 

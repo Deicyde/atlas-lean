@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.MachineLearning.Bayesian.probVectors
 ---
 
-# Prob Vectors
+# Probability vectors
 
-The probability vectors in `Fin (n + 1) → ℝ`: the parameter space of the categorical model.
+**Probability vectors.** For $n \in \mathbb{N}$, the probability vectors are the
+$\theta \in \mathbb{R}^{n+1}$ with $\theta_i \ge 0$ for every $i$ and $\sum_i \theta_i = 1$; they
+form the parameter space of the categorical model.
 
 ## Depends on
 

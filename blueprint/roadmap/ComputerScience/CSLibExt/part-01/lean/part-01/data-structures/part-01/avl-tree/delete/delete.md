@@ -6,17 +6,19 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.delete
 ---
 
-# Delete
+# AVL tree deletion under its alternative name
 
-`erase` under its alternative name.
+**AVL tree deletion under its alternative name.** For a linearly ordered type $\alpha$, a
+key $x \in \alpha$ and a tree $t$ with cached heights, $\mathrm{delete}(x, t)$ is defined to be
+$\mathrm{erase}(x, t)$, the AVL deletion of $x$ from $t$.
 
 ## Depends on
 
-- [Tree](../../avl-tree-2/tree.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
 
 ## Proof depends on
 
-- [Erase](erase.md)
+- [AVL tree deletion](erase.md)
 
 ## Sources
 

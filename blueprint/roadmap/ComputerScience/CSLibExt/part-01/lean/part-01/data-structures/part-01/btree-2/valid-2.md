@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.ValidRoot.valid
 ---
 
-# Valid
+# Root-valid B-trees are valid
 
-A root-valid tree is valid for a suitable top-level minimum key count.
+**Root-valid B-trees are valid.** If a tree satisfies the root invariant for minimum
+degree $t$ at height $h$, then for some natural number $m$ it satisfies the structural
+invariant for minimum degree $t$, minimum top-node key count $m$ and height $h$.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Valid](valid.md)
-- [Valid Root](valid-root.md)
+- [Raw B-trees](btree.md)
+- [Structural invariant of a B-tree](valid.md)
+- [Root invariant of a B-tree](valid-root.md)
 
 ## Sources
 

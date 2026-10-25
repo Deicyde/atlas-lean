@@ -12,7 +12,7 @@ code of a satisfiable CNF formula in which every clause has at most three litera
 
 ## Depends on
 
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 

@@ -8,11 +8,13 @@ lean: Cslib.MachineLearning.InformationTheory.infoGain_nonneg
 
 # No split has negative information gain
 
-**No split has negative information gain.**
+**No split has negative information gain.** For every joint probability law $p$ on
+$\alpha \times \beta$ with $\alpha$ and $\beta$ finite, the information gain of $p$ is at least
+$0$.
 
 ## Depends on
 
-- [Info Gain](info-gain.md)
+- [Information gain of a split](info-gain.md)
 
 ## Proof depends on
 

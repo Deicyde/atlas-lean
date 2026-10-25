@@ -22,7 +22,7 @@ canonical.
 
 - [Carry bit of a full adder](carry.md)
 - [Adding a carry bit](inc-b.md)
-- [Encode Nat eq cons](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
+- [Binary encoding, least significant bit first](../../../../../MathlibExt/turing-machine/recursive/of-tm2/encode-nat-eq-cons.md)
 
 ## Sources
 

@@ -6,20 +6,24 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.HasType.rename
 ---
 
-# Rename
+# Renaming preserves typing
 
-Typing is preserved by renamings that respect the variable contexts.
+**Renaming preserves typing.** Let $\Gamma$ and $\Delta$ be variable contexts, $S$ a store
+typing, and $\rho : \mathbb{N} \to \mathbb{N}$ a renaming of variable indices such that whenever
+$\Gamma$ assigns type $A$ to variable $x$, $\Delta$ assigns type $A$ to variable $\rho(x)$. If a
+term $t$ has type $T$ under $\Gamma$ and $S$, then the term obtained from $t$ by renaming its
+variables by $\rho$ has type $T$ under $\Delta$ and $S$.
 
 ## Depends on
 
-- [Has Type](../typing/has-type.md)
-- [Term](../syntax/term.md)
-- [Rename](../syntax/rename.md)
-- [Ty](../syntax/ty.md)
+- [Typing judgment for the lambda calculus with references](../typing/has-type.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Renaming the variables of a term](../syntax/rename.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Proof depends on
 
-- [Lift Ren](../syntax/lift-ren.md)
+- [Lifting a renaming under a binder](../syntax/lift-ren.md)
 
 ## Sources
 

@@ -6,10 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.TM2Recursive.relevant_initList
 ---
 
-# Relevant init List
+# The coded run simulates the machine's run
 
-The coded run follows the machine's run, and every configuration on it has relevant
-symbols. -/
+**The coded run simulates the machine's run.** Let $o$ be either no configuration or a
+configuration of a finite multi-stack machine all of whose stack symbols are relevant. Let
+running one step send a running configuration to its successor, and a halted configuration or no
+configuration to no configuration. Then for every $j$, applying the coded step on optional
+configurations $j$ times to the coding of $o$ gives the coding of the result of running $j$
+steps from $o$, and if running $j$ steps from $o$ gives a configuration, all of its stack symbols
+are relevant. -/
 theorem optStepC_iterate (j : ℕ) {o : Option tm.Cfg} (ho : ∀ c ∈ o, Relevant tm c.stk) :
     (optStepC tm)^[j] (o.map (enc tm)) = ((flip bind tm.step)^[j] o).map (enc tm) ∧
       ∀ c ∈ (flip bind tm.step)^[j] o, Relevant tm c.stk := by
@@ -30,12 +35,12 @@ theorem optStepC_iterate (j : ℕ) {o : Option tm.Cfg} (ho : ∀ c ∈ o, Releva
 
 ## Depends on
 
-- [Relevant](relevant-2.md)
+- [Stacks with only relevant symbols](relevant-2.md)
 
 ## Proof depends on
 
-- [Pushes](pushes.md)
-- [Relevant](relevant.md)
+- [Symbols a statement may push](pushes.md)
+- [Relevant symbols of a stack](relevant.md)
 
 ## Sources
 

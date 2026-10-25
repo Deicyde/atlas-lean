@@ -30,8 +30,8 @@ $\beta_m$ negates every bit for flip and leaves the bits unchanged for vc.
 - [Stack alphabets of the clique reduction machine](untitled.md)
 - [Encoding of a graph instance](../../part-01/clique/encode-kg.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 

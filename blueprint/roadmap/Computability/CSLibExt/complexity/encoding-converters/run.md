@@ -22,7 +22,7 @@ step (no configuration before the last one is halted) and gives $d$.
 ## Proof depends on
 
 - [Program of the converter to the canonical pair encoding](prog.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

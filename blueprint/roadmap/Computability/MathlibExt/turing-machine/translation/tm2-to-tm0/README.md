@@ -4,9 +4,9 @@ navigation: module
 
 # TM2 To TM0
 
-- [Tr](tr.md)
+- [Single-tape emulation of a multi-stack machine](tr.md)
 - [The emulation halts iff the multi-stack machine halts](tr-eval-dom.md)
 - [The emulation visits finitely many states](tr-supports.md)
-- [Supports Stmt univ](supports-stmt-univ.md)
-- [Supports univ](supports-univ.md)
-- [Init List eq init](init-list-eq-init.md)
+- [Every statement is supported by all labels](supports-stmt-univ.md)
+- [A multi-stack machine is supported by all its labels](supports-univ.md)
+- [The initial configuration of a bundled multi-stack machine](init-list-eq-init.md)

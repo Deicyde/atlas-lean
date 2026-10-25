@@ -6,23 +6,27 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.withDensity_categoricalSeqKernel
 ---
 
-# With Density categorical Seq Kernel
+# Evidence-weighted Dirichlet prior
 
-The evidence-weighted prior: `Dir(α)` weighted by the likelihood of `s` is
-`B(α + counts s) / B(α) · Dir(α + counts s)`.
+**Evidence-weighted Dirichlet prior.** Let $\alpha \in \mathbb{R}^{n+1}$ with $\alpha_i > 0$
+for every $i$, and let $s$ be a sequence of $N$ labels in $\{0, \dots, n\}$ with label counts
+$n_i(s)$. The Dirichlet distribution $\mathrm{Dir}(\alpha)$ weighted by the density
+$\theta \mapsto P_\theta(s)$, the probability of $s$ under the multinomial sampling model with
+parameter $\theta$, equals $B(\alpha + n(s)) / B(\alpha)$ times $\mathrm{Dir}(\alpha + n(s))$,
+where $B$ is the multivariate Beta function and $\alpha + n(s)$ has entries $\alpha_i + n_i(s)$.
 
 ## Depends on
 
 - [The multinomial sampling model](categorical-seq-kernel.md)
-- [Counts](counts.md)
+- [Label counts](counts.md)
 - [Dirichlet Measure](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/dirichlet-measure.md)
 - [Multi Beta](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/multi-beta.md)
 
 ## Proof depends on
 
-- [Prob Vectors](prob-vectors.md)
-- [Seq Likelihood](seq-likelihood.md)
-- [Seq Likelihood eq prod pow](seq-likelihood-eq-prod-pow.md)
+- [Probability vectors](prob-vectors.md)
+- [Likelihood of a label sequence](seq-likelihood.md)
+- [The sequence likelihood depends only on the label counts](seq-likelihood-eq-prod-pow.md)
 - [Ae dirichlet Measure](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/ae-dirichlet-measure.md)
 - [Dirichlet–multinomial conjugacy](../../../../../Probability/MathlibExt/part-01/distributions/dirichlet/with-density-prod-pow-dirichlet-measure.md)
 

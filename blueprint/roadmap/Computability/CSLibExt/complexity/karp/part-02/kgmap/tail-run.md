@@ -28,17 +28,17 @@ copies of $\mathrm{true}$, then the contents of $O$ in $S$.
 - [The KG-map machine](prog.md)
 - [Stack alphabets of the clique reduction machine](untitled.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Proof depends on
 
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Emit](../../../../../MathlibExt/turing-machine/program/emit.md)
-- [Push List](../../../../../MathlibExt/turing-machine/program/push-list.md)
-- [Xfer run](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Adding units to target stacks](../../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Pushing a constant list](../../../../../MathlibExt/turing-machine/program/emit.md)
+- [Pushing a list of symbols onto one stack](../../../../../MathlibExt/turing-machine/program/push-list.md)
+- [Running a counter transfer](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

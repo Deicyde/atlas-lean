@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Language.DFAHom.map_eval
 ---
 
-# Map eval
+# DFA morphisms commute with evaluation
 
-A DFA morphism commutes with evaluation from the start state.
+**DFA morphisms commute with evaluation.** If $f$ is a morphism from a DFA $M$ to a DFA $N$,
+then for every word $x$, the state that $N$ reaches on input $x$ from its start state is the
+image under $f$ of the state that $M$ reaches on input $x$ from its start state.
 
 ## Depends on
 
-- [DFAHom](dfahom.md)
+- [Morphisms of DFAs](dfahom.md)
 
 ## Proof depends on
 
-- [Map eval From](map-eval-from.md)
+- [DFA morphisms commute with evaluation from a state](map-eval-from.md)
 
 ## Sources
 

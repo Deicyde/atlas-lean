@@ -14,9 +14,9 @@ Intractability* (1979), 3-PARTITION (strongly NP-complete).
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Three Partition Dec](three-partition-dec.md)
-- [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
-- [NP](../../../../../Computability/MathlibExt/complexity/np.md)
+- [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
+- [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
 
 ## Sources
 

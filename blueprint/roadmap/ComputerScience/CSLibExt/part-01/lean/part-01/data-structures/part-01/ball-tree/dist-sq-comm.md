@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BallTree.distSq_comm
 ---
 
-# Dist Sq comm
+# Symmetry of squared distance
 
-Squared distance is symmetric.
+**Symmetry of squared distance.** For all points $p, q \in \mathbb{Z}^d$, the squared
+distance from $p$ to $q$ equals the squared distance from $q$ to $p$.
 
 ## Depends on
 
-- [Dist Sq](dist-sq.md)
+- [Squared Euclidean distance](dist-sq.md)
 
 ## Sources
 

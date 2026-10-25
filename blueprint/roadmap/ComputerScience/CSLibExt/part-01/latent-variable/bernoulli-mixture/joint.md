@@ -5,19 +5,26 @@ statement: formalized
 lean: Cslib.MachineLearning.LatentVariable.BernoulliMixture.joint
 ---
 
-# Joint
+# Joint distribution of the Bernoulli mixture
 
-The joint `p_θ(x, k) = π k ∏ j, p k j ^ x j (1 - p k j) ^ (1 - x j)`.
+**Joint distribution of the Bernoulli mixture.** For valid parameters $\theta$ of a mixture of
+$K$ products of $d$ Bernoulli distributions, with mixing weights $\pi_k$ and success probabilities
+$p_{kj}$, the joint probability of a binary vector $x \in \{0, 1\}^d$ and a component $k$ is
+
+$$p_\theta(x, k) = \pi_k \prod_{j=1}^{d} p_{kj}^{x_j} (1 - p_{kj})^{1 - x_j},$$
+
+that is, $\pi_k$ times the product Bernoulli probability of $x$ with parameters
+$p_{k1}, \dots, p_{kd}$.
 
 ## Depends on
 
-- [Valid Params](valid-params.md)
+- [The parameter space of a Bernoulli mixture](valid-params.md)
 
 ## Proof depends on
 
-- [Params](params.md)
-- [Valid](valid.md)
-- [Bern PMF](bern-pmf.md)
+- [Parameters of a Bernoulli mixture](params.md)
+- [Valid parameters of a Bernoulli mixture](valid.md)
+- [Product Bernoulli probability mass function](bern-pmf.md)
 
 ## Sources
 

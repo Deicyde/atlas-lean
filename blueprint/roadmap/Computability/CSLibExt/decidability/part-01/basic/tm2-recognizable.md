@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [TM2 Halts On](../../../../MathlibExt/turing-machine/recursive/halts/tm2-halts-on.md)
+- [Halting of a multi-stack machine on an input](../../../../MathlibExt/turing-machine/recursive/halts/tm2-halts-on.md)
 
 ## Sources
 

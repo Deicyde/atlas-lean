@@ -6,23 +6,28 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.MetricTSP.pathFrom_preorder_le
 ---
 
-# Path From preorder le
+# The closed preorder walk below a vertex costs at most twice the forest
 
-The closed walk from `p` through the preorder of a forest hanging below `p` costs at most twice
-the forest's edges.
+**The closed preorder walk below a vertex costs at most twice the forest.** Let $d$ be a cost
+function on the vertices with values in a linearly ordered additive commutative monoid, which is
+symmetric, zero on the diagonal, nonnegative, and satisfies the triangle inequality. For a forest
+$F$ and a vertex $p$, let $w$ be the weight of $F$ hanging below $p$: the total cost of the edges
+joining $p$ to the top-level vertices of $F$ and each vertex of $F$ to its children. Then the cost
+of the walk that starts at $p$, visits the vertices of $F$ in preorder and returns to $p$ is at
+most $w + w$.
 
 ## Depends on
 
-- [Forest](forest.md)
-- [Preorder](preorder.md)
-- [Weight](weight.md)
-- [Is Metric Cost](is-metric-cost.md)
-- [Path From](path-from.md)
+- [Rooted forest in left-child right-sibling form](forest.md)
+- [Preorder of a forest](preorder.md)
+- [Weight of a forest below a vertex](weight.md)
+- [Metric cost function](is-metric-cost.md)
+- [Cost of a walk](path-from.md)
 
 ## Proof depends on
 
-- [Path From append append le](path-from-append-append-le.md)
-- [Path From append singleton le](path-from-append-singleton-le.md)
+- [Shortcutting a closed walk through its base point](path-from-append-append-le.md)
+- [Rerouting the end of a walk](path-from-append-singleton-le.md)
 
 ## Sources
 

@@ -6,18 +6,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.pricingVertexCover_isVertexCover
 ---
 
-# Pricing Vertex Cover is Vertex Cover
+# The pricing method returns a vertex cover
 
-For a graph each of whose edges is listed in at least one orientation, the result is a vertex
-cover.
+**The pricing method returns a vertex cover.** Let $G$ be a simple graph on a finite
+vertex set, let $w$ be rational vertex weights with $w(v) \ge 0$ for every vertex $v$, and
+let $L$ be a list of ordered pairs of vertices such that for every edge $uv$ of $G$, the
+pair $(u, v)$ or the pair $(v, u)$ is in $L$. Then the set returned by the pricing method on
+$w$ and $L$ is a vertex cover of $G$.
 
 ## Depends on
 
-- [Pricing Vertex Cover](pricing-vertex-cover.md)
+- [Pricing method for weighted vertex cover](pricing-vertex-cover.md)
 
 ## Proof depends on
 
-- [Pricing Vertex Cover covers](pricing-vertex-cover-covers.md)
+- [The pricing method covers every listed edge](pricing-vertex-cover-covers.md)
 
 ## Sources
 

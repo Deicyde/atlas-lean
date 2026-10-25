@@ -5,17 +5,18 @@ statement: formalized
 lean: Cslib.Language.nerodeClass
 ---
 
-# Nerode Class
+# Nerode class of a word
 
-The Nerode class represented by a word.
+**Nerode class of a word.** For a language $L$ and a word $x$, the Nerode class $[x]$ of $x$
+is the equivalence class of $x$ under Nerode equivalence for $L$.
 
 ## Depends on
 
-- [Nerode Class](nerode-class.md)
+- [Nerode classes](nerode-class.md)
 
 ## Proof depends on
 
-- [Nerode Setoid](nerode-setoid.md)
+- [The Nerode setoid](nerode-setoid.md)
 
 ## Sources
 

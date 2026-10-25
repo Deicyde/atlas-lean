@@ -8,16 +8,20 @@ lean: Cslib.Turing.SingleTapeTM.haltsFrom_iff_of_reflTransGen
 
 # Halting from a configuration is invariant along a run
 
-**Halting from a configuration is invariant along a run**: backwards for any relation, and
-forwards because the machine is deterministic.
+**Halting from a configuration is invariant along a run.** Let $M$ be a single-tape Turing
+machine and let $a$ and $b$ be configurations of $M$ such that the run of $M$ from $a$ reaches $b$
+in finitely many steps (possibly none). Then $M$ halts from $a$ if and only if $M$ halts from $b$.
+
+The backward direction holds for any relation; the forward direction uses that $M$ is
+deterministic.
 
 ## Depends on
 
-- [Halts From](halts-from.md)
+- [Halting from a configuration](halts-from.md)
 
 ## Proof depends on
 
-- [Right Unique transition Relation](right-unique-transition-relation.md)
+- [Single-tape Turing machines are deterministic](right-unique-transition-relation.md)
 
 ## Sources
 

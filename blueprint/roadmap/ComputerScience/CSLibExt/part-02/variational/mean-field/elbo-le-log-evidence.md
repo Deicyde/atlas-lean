@@ -12,13 +12,13 @@ lean: Cslib.MachineLearning.Variational.elbo_le_log_evidence
 
 ## Depends on
 
-- [Is Dist](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
+- [Probability distributions on a finite latent space](../../../part-01/latent-variable/expectation-maximization/is-dist.md)
 - [Elbo](elbo.md)
 - [Evidence](evidence.md)
 
 ## Proof depends on
 
-- [Gibbs' inequality](../../../part-01/latent-variable/expectation-maximization/sum-mul-log-sub-le.md)
+- [Gibbs' inequality (evidence lower bound form)](../../../part-01/latent-variable/expectation-maximization/sum-mul-log-sub-le.md)
 
 ## Sources
 

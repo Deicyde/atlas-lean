@@ -7,21 +7,24 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_contents
 ---
 
-# Table Insert Many contents
+# Inserting an array appends it to the contents
 
-The sole insertion fold appends all payloads in their original array order.
+**Inserting an array appends it to the contents.** If $T$ is a well-formed dynamic table
+and $x_1, \dots, x_k$ is an array of items, then inserting $x_1, \dots, x_k$ into $T$ one at a
+time, in this order, gives a table whose contents are the contents of $T$ followed by
+$x_1, \dots, x_k$.
 
 ## Depends on
 
 - [Table](table.md)
 - [Well Formed](well-formed.md)
-- [Contents](contents.md)
+- [Contents of a dynamic table](contents.md)
 - [Table Insert Many](table-insert-many.md)
 
 ## Proof depends on
 
 - [Table Insert](table-insert.md)
-- [Table Insert contents](table-insert-contents.md)
+- [Insertion appends to the contents](table-insert-contents.md)
 - [Table Insert well Formed](table-insert-well-formed.md)
 
 ## Sources

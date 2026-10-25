@@ -5,18 +5,22 @@ statement: formalized
 lean: Cslib.Turing.Universal.Code.machine
 ---
 
-# Machine
+# The machine of a code
 
-The `TM0` machine of a code.
+**The machine of a code.** The machine of a code $c$ is the single-tape Turing machine with
+states and symbols in $\mathbb{N}$ that, in state $q$ reading symbol $a$, halts if the table
+lookup of $c$ at state $q$ and symbol $a$ has no entry, and otherwise, if the entry is
+$(q', s)$, enters state $q'$ and does the action coded by $s$: $0$ moves left, $1$ moves right
+and $a' + 2$ writes $a'$.
 
 ## Depends on
 
-- [Code](code.md)
+- [Codes for single-tape machines](code.md)
 
 ## Proof depends on
 
-- [Lookup](lookup.md)
-- [Decode Stmt](decode-stmt.md)
+- [Table lookup of a code](lookup.md)
+- [Decoding an action](decode-stmt.md)
 
 ## Sources
 

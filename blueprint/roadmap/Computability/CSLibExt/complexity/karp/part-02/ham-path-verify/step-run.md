@@ -29,7 +29,7 @@ previous vertex $a$ and remaining vertices $q$.
 - [One step of the HAMPATH walk](../../part-01/ham-path-check/step-ok.md)
 - [Bit encoding of an edge list](../../part-01/color/edge-bits.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -44,8 +44,8 @@ previous vertex $a$ and remaining vertices $q$.
 - [Stack layout during a vertex step](mid.md)
 - [The unary reader of the Hamiltonian path verifier reads a terminated number](read-u-run.md)
 - [The rest of a vertex step in the Hamiltonian-path verifier](tail-run.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

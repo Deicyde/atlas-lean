@@ -6,21 +6,25 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.approxVertexCover_two_approximation
 ---
 
-# Approx Vertex Cover two approximation
+# APPROX-VERTEX-COVER is a 2-approximation
 
-CLRS Theorem 35.1: if `edges` lists exactly the edges of `G`, each in at least one orientation,
-then `approxVertexCover edges` is a vertex cover of `G` of size at most twice the vertex cover
-number.
+**APPROX-VERTEX-COVER is a 2-approximation.** Let $G$ be a simple graph and $L$ a list of
+ordered pairs of vertices that lists exactly the edges of $G$, each in at least one orientation:
+$u$ and $v$ are adjacent in $G$ for every $(u, v)$ in $L$, and for every edge $uv$ of $G$,
+$(u, v)$ or $(v, u)$ is in $L$. Then the cover $C$ that APPROX-VERTEX-COVER returns on $L$ is a
+vertex cover of $G$ and $|C| \le 2\tau(G)$, where $\tau(G) \in \mathbb{N} \cup \{\infty\}$ is the
+vertex cover number of $G$, the minimum size of a vertex cover of $G$.
 
 ## Depends on
 
-- [Approx Vertex Cover](approx-vertex-cover.md)
+- [APPROX-VERTEX-COVER](approx-vertex-cover.md)
 
 ## Proof depends on
 
-- [Approx Vertex Cover is Vertex Cover](approx-vertex-cover-is-vertex-cover.md)
-- [Card approx Vertex Cover le two mul](card-approx-vertex-cover-le-two-mul.md)
+- [APPROX-VERTEX-COVER returns a vertex cover](approx-vertex-cover-is-vertex-cover.md)
+- [APPROX-VERTEX-COVER is at most twice any vertex cover](card-approx-vertex-cover-le-two-mul.md)
 
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.VertexCover](../../../../../../../../sources/v2/CSLibExt.md)
+- CLRS, third edition, Theorem 35.1.

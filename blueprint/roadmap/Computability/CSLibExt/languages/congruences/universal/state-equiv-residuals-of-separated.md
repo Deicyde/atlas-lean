@@ -5,21 +5,24 @@ statement: formalized
 lean: Cslib.Language.stateEquivResidualsOfSeparated
 ---
 
-# State Equiv Residuals Of Separated
+# States of an accessible, state-separated DFA correspond to residuals
 
-An accessible, state-separated automaton has exactly the canonical residual state space.
+**States of an accessible, state-separated DFA correspond to residuals.** Let $M$ be a DFA
+that is accessible and state-separated, and let $L$ be the language it accepts. The map sending
+each state $q$ of $M$ to the language of words accepted by $M$ starting from $q$ is a bijection
+from the states of $M$ onto the set of left quotients $\{z : xz \in L\}$ of $L$ by words $x$.
 
 ## Depends on
 
 - [Accessible](../minimality/accessible.md)
-- [State Separated](state-separated.md)
+- [State-separated DFA](state-separated.md)
 
 ## Proof depends on
 
-- [DFAHom](dfahom.md)
-- [Canonical Residual Hom](canonical-residual-hom.md)
-- [Canonical Residual Hom injective iff](canonical-residual-hom-injective-iff.md)
-- [Canonical Residual Hom surjective](canonical-residual-hom-surjective.md)
+- [Morphisms of DFAs](dfahom.md)
+- [The canonical residual map](canonical-residual-hom.md)
+- [Injectivity of the canonical residual map](canonical-residual-hom-injective-iff.md)
+- [The canonical residual map is surjective](canonical-residual-hom-surjective.md)
 
 ## Sources
 

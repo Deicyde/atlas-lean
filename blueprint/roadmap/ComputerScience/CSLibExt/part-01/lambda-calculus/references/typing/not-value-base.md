@@ -6,16 +6,17 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.HasType.not_value_base
 ---
 
-# Not value base
+# No value has a base type
 
-Base types have no values.
+**No value has a base type.** For every context $\Gamma$, store typing $S$ and base type
+$b$, there is no value $v$ with $\Gamma \mid S \vdash v : b$.
 
 ## Depends on
 
-- [Has Type](has-type.md)
-- [Term](../syntax/term.md)
-- [Value](../syntax/value.md)
-- [Ty](../syntax/ty.md)
+- [Typing judgment for the lambda calculus with references](has-type.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

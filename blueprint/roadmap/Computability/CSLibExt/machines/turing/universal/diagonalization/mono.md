@@ -6,20 +6,22 @@ proof: formalized
 lean: Cslib.Turing.Universal.Code.DecidesWithin.mono
 ---
 
-# Mono
+# Deciding within a larger time bound
 
-A code that decides `L` within `t` decides it within every larger bound.
+**Deciding within a larger time bound.** If a code $c$ decides a decision problem $L$
+within a time bound $t : \mathbb{N} \to \mathbb{N}$, and $t' : \mathbb{N} \to \mathbb{N}$
+satisfies $t(n) \le t'(n)$ for every $n$, then $c$ decides $L$ within $t'$.
 
 ## Depends on
 
-- [Code](../code/code.md)
-- [Decides Within](decides-within.md)
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [Codes for single-tape machines](../code/code.md)
+- [Deciding within a time bound](decides-within.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Proof depends on
 
-- [Monotonicity](../code/eval-steps-mono.md)
-- [Bit Sym](../code/bit-sym.md)
+- [Monotonicity of the clocked evaluator](../code/eval-steps-mono.md)
+- [Symbol of an input bit](../code/bit-sym.md)
 
 ## Sources
 

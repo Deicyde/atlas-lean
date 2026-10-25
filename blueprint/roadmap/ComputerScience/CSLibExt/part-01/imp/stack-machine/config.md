@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.IMP.StackMachine.Config
 ---
 
-# Config
+# Stack machine configurations
 
-Machine configuration: program counter, stack (head is top), state.
+**Stack machine configurations.** A configuration of the stack machine is a triple
+$(pc, \sigma, s)$ of a program counter $pc \in \mathbb{N}$, a stack $\sigma$, which is a finite list
+of natural numbers whose head is the top of the stack, and a state $s$ assigning a natural number
+to each variable.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

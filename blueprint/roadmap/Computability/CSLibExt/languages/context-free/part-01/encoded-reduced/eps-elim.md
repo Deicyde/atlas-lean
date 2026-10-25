@@ -5,19 +5,22 @@ statement: formalized
 lean: Cslib.Language.EncodedCFG.epsElim
 ---
 
-# Eps Elim
+# Removing empty productions from an encoded grammar
 
-Remove empty productions: from each production, all productions obtained by deleting
-nullable nonterminals, except empty ones.
+**Removing empty productions from an encoded grammar.** For an encoded context-free grammar
+$g$, the encoded grammar with the same start nonterminal whose productions are, for each
+production $A \to u$ of $g$, the productions $A \to v$ for every nonempty word $v$ obtained from
+$u$ by deleting some occurrences of nonterminals in the computed list of nullable nonterminals of
+$g$.
 
 ## Depends on
 
-- [Encoded CFG](../encoded/encoded-cfg.md)
+- [Encoded context-free grammars](../encoded/encoded-cfg.md)
 
 ## Proof depends on
 
-- [Deletions](deletions.md)
-- [Nullable](nullable.md)
+- [Deleting nonterminals from an encoded right-hand side](deletions.md)
+- [Computed nullable nonterminals of an encoded grammar](nullable.md)
 
 ## Sources
 

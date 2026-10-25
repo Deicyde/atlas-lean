@@ -5,20 +5,23 @@ statement: formalized
 lean: Cslib.MachineLearning.GraphicalModels.TreeModel.downMessage
 ---
 
-# Down Message
+# Downward message to the last vertex
 
-The message from the parent of the last vertex to the last vertex: the edge factor summed
-against the parent's belief in the model without the last vertex.
+**Downward message to the last vertex.** For a tree model with vertices $0, \dots, n + 1$ over
+a finite set of values, the message from the parent $p$ of the last vertex to the last vertex at
+a value $b$ is the sum over all values $a$ of $\psi(b, a)\, \beta(a)$, where $\psi$ is the factor
+of the edge between the last vertex and $p$ (last vertex first) and $\beta(a)$ is the belief of
+$p$ at $a$ in the model without the last vertex.
 
 ## Depends on
 
-- [Tree Model](../variable-elimination/tree-model.md)
+- [Pairwise model on a tree](../variable-elimination/tree-model.md)
 
 ## Proof depends on
 
-- [Drop Last](drop-last.md)
+- [Removing the last vertex](drop-last.md)
 - [Eliminate](../variable-elimination/eliminate.md)
-- [Last Parent](../variable-elimination/last-parent.md)
+- [Parent of the last vertex](../variable-elimination/last-parent.md)
 
 ## Sources
 

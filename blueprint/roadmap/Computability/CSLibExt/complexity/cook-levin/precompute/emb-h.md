@@ -17,7 +17,7 @@ to the same host stack of the full machine and identifies their alphabets by the
 - [Alphabets of the Cook–Levin host machine](../assembly/h.md)
 - [Stacks of the full machine](fk.md)
 - [Alphabets of the full machine](f.md)
-- [SEmb](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
+- [Stack embedding](../../../../MathlibExt/turing-machine/stack-embedding/semb.md)
 
 ## Proof depends on
 

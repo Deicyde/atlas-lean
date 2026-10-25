@@ -22,7 +22,7 @@ literal counter $l$ reaches the label $\mathsf{rej}$ within $|r| + 1$ steps.
 - [Labels of the SAT tokenizer](lab.md)
 - [Rejection within a step bound](rej.md)
 - [Tokenizer stack contents](st.md)
-- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
+- [Parsing one self-delimiting block](../../../MathlibExt/complexity/undelimit.md)
 
 ## Proof depends on
 
@@ -30,11 +30,11 @@ literal counter $l$ reaches the label $\mathsf{rej}$ within $|r| + 1$ steps.
 - [The tokenizer program](prog.md)
 - [One step to rejection](rej-one.md)
 - [Testing whether the top symbol is a given bit](top-is-bit.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../MathlibExt/turing-machine/program/single.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
-- [Bit Of](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
-- [Is Bit](../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../MathlibExt/turing-machine/program/single.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Bit on top of a stack](../../../MathlibExt/turing-machine/bit-ops/bit-of.md)
+- [Bit test for the top of a stack](../../../MathlibExt/turing-machine/bit-ops/is-bit.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ variable true, empty token stack and side stack $U$.
 - [Filter stacks from two lists](st.md)
 - [Walking label for a literal count](wl.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Proof depends on
 
@@ -30,7 +30,7 @@ variable true, empty token stack and side stack $U$.
 - [Conditional move between stacks](mv-if.md)
 - [Next walking label](nxt.md)
 - [One step of the clause-length walk](walk.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
 
 ## Sources
 

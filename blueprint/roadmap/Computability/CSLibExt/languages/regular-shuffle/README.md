@@ -6,14 +6,14 @@ navigation: module
 
 ## Language
 
-- [Is Shuffle](is-shuffle.md)
-- [Shuffle](shuffle.md)
-- [Cyclic Shift](cyclic-shift.md)
+- [Shuffle of two words](is-shuffle.md)
+- [Shuffle of two languages](shuffle.md)
+- [Cyclic shift of a language](cyclic-shift.md)
 
 ## Regular Shuffle
 
-- [Shuffle NFA](shuffle-nfa.md)
-- [From To](from-to.md)
+- [Shuffle automaton of two DFAs](shuffle-nfa.md)
+- [Words leading a DFA from a state into a set of states](from-to.md)
 
 ## Language
 

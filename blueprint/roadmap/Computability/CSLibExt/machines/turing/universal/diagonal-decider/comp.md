@@ -5,9 +5,12 @@ statement: formalized
 lean: Cslib.Turing.Universal.Diag.Check.comp
 ---
 
-# Comp
+# The checking machine as a host component
 
-The checking machine as a host component.
+**The checking machine as a host component.** The component machine with the twelve stacks
+$X, Y, W, V, Q, A, P_Q, P_A, T_1, T_2, J, O$ of the checking machine, each holding bits, with
+the labels and the program of the checking machine, and with its stacks listed in the order
+$X, Y, W, V, Q, A, P_Q, P_A, T_1, T_2, J, O$.
 
 ## Depends on
 
@@ -15,10 +18,10 @@ The checking machine as a host component.
 
 ## Proof depends on
 
-- [K](k.md)
-- [Lab](lab.md)
-- [Prog](prog.md)
-- [Γ](untitled.md)
+- [Stacks of the checking machine](k.md)
+- [Labels of the checking machine](lab.md)
+- [Program of the checking machine](prog.md)
+- [Stack alphabet of the layout machine](untitled.md)
 
 ## Sources
 

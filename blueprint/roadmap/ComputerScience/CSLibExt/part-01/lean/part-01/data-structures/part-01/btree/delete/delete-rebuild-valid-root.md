@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.deleteRebuild_validRoot
 ---
 
-# Delete Rebuild valid Root
+# Rebuilding deletion yields a root-valid tree
 
-The result of a deletion is root-valid at some height: some uniform height
-at which every non-root node holds between `t - 1` and `2 * t - 1` keys. The
-height is that of the rebuilt tree; no relation to the height of the input
-is claimed (see the module documentation).
+**Rebuilding deletion yields a root-valid tree.** Let $t \ge 2$. For every key $x$ and every
+tree $T$, there is a height $h$ such that the rebuilding deletion of $x$ from $T$ with minimum
+degree $t$ is root-valid of minimum degree $t$ and height $h$: all leaves sit at depth $h$, every
+node holds at most $2t - 1$ keys, every non-root node holds at least $t - 1$ keys, an internal
+root holds at least one key, and an internal node with $k$ keys has $k + 1$ children.
+
+No relation between $h$ and the height of $T$ is claimed.
 
 ## Depends on
 
-- [BTree](../../btree-2/btree.md)
-- [Valid Root](../../btree-2/valid-root.md)
-- [Delete Rebuild](delete-rebuild.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [Root invariant of a B-tree](../../btree-2/valid-root.md)
+- [B-tree deletion by rebuilding](delete-rebuild.md)
 
 ## Proof depends on
 
-- [Delete Rebuild](delete-rebuild-2.md)
-- [Exists valid Root](../../btree-2/exists-valid-root.md)
+- [Rebuilding deletion yields a B-tree](delete-rebuild-2.md)
+- [B-trees satisfy the root invariant](../../btree-2/exists-valid-root.md)
 
 ## Sources
 

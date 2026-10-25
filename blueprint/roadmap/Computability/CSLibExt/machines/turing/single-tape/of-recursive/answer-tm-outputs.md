@@ -6,16 +6,20 @@ proof: formalized
 lean: Cslib.Turing.SingleTapeTM.OfTM2.answerTM_outputs
 ---
 
-# Answer TM outputs
+# The answer machine outputs the answer of a one-cell input
 
-`answerTM` turns a one-cell tape into the answer bit of that cell.
+**The answer machine outputs the answer of a one-cell input.** Let $M$ be a finite multi-stack
+machine whose stack alphabets are all finite, with its input and output stack alphabets
+identified with the bits. For every non-blank cell $x$ of the single-tape emulation of $M$, the
+answer machine of $M$, started on the one-cell input $x$, halts with the one-cell output holding
+the input-bit cell for the answer read from $x$.
 
 ## Depends on
 
-- [Non Blank](../of-tm0/non-blank.md)
-- [Answer TM](answer-tm.md)
-- [Cell Answer](cell-answer.md)
-- [In Cell](in-cell.md)
+- [Non-blank symbols](../of-tm0/non-blank.md)
+- [The answer machine](answer-tm.md)
+- [The answer bit of a cell](cell-answer.md)
+- [Input cell of a bit](in-cell.md)
 
 ## Sources
 

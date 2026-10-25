@@ -18,9 +18,9 @@ A recognizer for the complement searches for a word in exactly one of the two la
 ## Depends on
 
 - [Co-recognizability by multi-stack machines](../basic/tm2-co-recognizable.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Equiv Prod](../../../languages/context-free/part-01/encoded/equiv-prod.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Encoded grammars as pairs](../../../languages/context-free/part-01/encoded/equiv-prod.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on
 
@@ -29,9 +29,9 @@ A recognizer for the complement searches for a word in exactly one of the two la
 - [Multi-stack co-recognizable predicates are exactly the co-r.e. predicates](../basic/tm2-co-recognizable-iff-re-pred-not.md)
 - [Multi-stack decidable predicates are exactly the computable predicates](../basic/tm2-decidable-iff-computable-pred.md)
 - [Membership for context-free grammars is decidable](../context-free/tm2-decidable-mem-language.md)
-- [And](../../../../MathlibExt/re/and.md)
-- [Or](../../../../MathlibExt/re/or.md)
-- [Exists](../../../../MathlibExt/re/exists.md)
+- [Computable predicates are closed under conjunction](../../../../MathlibExt/re/and.md)
+- [Computable predicates are closed under disjunction](../../../../MathlibExt/re/or.md)
+- [Existential projection preserves recursive enumerability](../../../../MathlibExt/re/exists.md)
 
 ## Sources
 

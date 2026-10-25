@@ -5,20 +5,21 @@ statement: formalized
 lean: Cslib.Turing.Universal.CodeTime
 ---
 
-# Code Time
+# Time classes on codes
 
-`CodeTime t`: the decision problems that some code decides within `t |x|` steps on every
-input `x`.
+**Time classes on codes.** For $t : \mathbb{N} \to \mathbb{N}$, $\mathrm{CodeTime}(t)$ is
+the class of decision problems $L$ such that some code decides $L$ within $t(|x|)$ steps on
+every input $x$.
 
 ## Depends on
 
-- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Complexity classes](../../../../../MathlibExt/complexity/decision-complexity-class.md)
 
 ## Proof depends on
 
-- [Code](../code/code.md)
-- [Decides Within](decides-within.md)
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
+- [Codes for single-tape machines](../code/code.md)
+- [Deciding within a time bound](decides-within.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
 
 ## Sources
 

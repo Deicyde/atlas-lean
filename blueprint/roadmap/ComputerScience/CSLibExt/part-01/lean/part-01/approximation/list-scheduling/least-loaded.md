@@ -5,9 +5,11 @@ statement: formalized
 lean: Cslib.Algorithms.Lean.Scheduling.leastLoaded
 ---
 
-# Least Loaded
+# Least-loaded machine
 
-A least-loaded machine (the first one in index order).
+**Least-loaded machine.** Let $m \ge 1$ and let $L$ assign a load $L(i) \in \mathbb{N}$ to
+each machine $i \in \{0, \dots, m - 1\}$. The least-loaded machine for $L$ is the smallest index
+$i$ at which $L(i)$ is minimal.
 
 ## Depends on
 

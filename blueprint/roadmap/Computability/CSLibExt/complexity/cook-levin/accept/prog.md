@@ -46,11 +46,11 @@ counter empty.
 - [Literal routine of the accept generator](lit-p.md)
 - [Stages of the multiplication routine](../counter-view/ms.md)
 - [The multiplication routine of a counter machine](../counter-view/mul-s.md)
-- [Flag](../../../../MathlibExt/turing-machine/program/flag.md)
-- [Emit R](../../../../MathlibExt/turing-machine/program/emit-r.md)
-- [Incr](../../../../MathlibExt/turing-machine/program/incr.md)
+- [Flag bit of a machine state](../../../../MathlibExt/turing-machine/program/flag.md)
+- [Prepending a constant list](../../../../MathlibExt/turing-machine/program/emit-r.md)
+- [Counter increment](../../../../MathlibExt/turing-machine/program/incr.md)
 - [Xfer](../../../../MathlibExt/turing-machine/program/xfer.md)
-- [Xfer E](../../../../MathlibExt/turing-machine/program/xfer-e.md)
+- [Draining a counter while prepending a block](../../../../MathlibExt/turing-machine/program/xfer-e.md)
 
 ## Sources
 

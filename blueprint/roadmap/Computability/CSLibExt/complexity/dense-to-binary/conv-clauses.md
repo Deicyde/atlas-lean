@@ -32,7 +32,7 @@ $\mathrm{conv}(E(c_1)^R \cdots E(c_p)^R, \mathrm{true}, |c_0'|, k, m, e(c_0)\, D
 
 - [The translation on a whole clause](conv-clause.md)
 - [Closing a clause in the translated output](end-clause.md)
-- [Rep](../../../MathlibExt/turing-machine/program/rep.md)
+- [Repeated block](../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

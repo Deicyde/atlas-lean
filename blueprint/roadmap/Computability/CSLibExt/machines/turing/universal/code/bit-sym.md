@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.Turing.Universal.bitSym
 ---
 
-# Bit Sym
+# Symbol of an input bit
 
-The symbol of an input bit: `false` is `1` and `true` is `2`; `0` is the blank.
+**Symbol of an input bit.** The tape symbol of a bit $b$ is $1$ if $b$ is false and $2$ if $b$
+is true; the symbol $0$ is the blank.
 
 ## Depends on
 

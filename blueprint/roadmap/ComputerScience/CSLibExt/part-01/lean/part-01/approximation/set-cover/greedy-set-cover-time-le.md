@@ -6,17 +6,22 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.TimeM.greedySetCover_time_le
 ---
 
-# Greedy Set Cover time le
+# Running time of greedy set cover
 
-At most `|U| + 1` searches, each costing `|F|` plus the total size of the family.
+**Running time of greedy set cover.** Let $F$ be a list of finite sets and $U$ a finite set.
+The running time of greedy set cover of $U$ from $F$ is at most
+$(|U| + 1)(|F| + \sum_{S \in F} |S|)$, where $|F|$ is the length of the list and the sum runs
+over the entries of $F$, counted with repetition.
+
+There are at most $|U| + 1$ searches for a best set, each costing $|F| + \sum_{S \in F} |S|$.
 
 ## Depends on
 
-- [Greedy Set Cover](greedy-set-cover.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
-- [Best Set](best-set.md)
+- [Greedy choice of a set](best-set.md)
 
 ## Sources
 

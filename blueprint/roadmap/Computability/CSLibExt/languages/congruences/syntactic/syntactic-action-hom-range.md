@@ -6,27 +6,30 @@ proof: formalized
 lean: Cslib.Language.syntacticActionHom_range
 ---
 
-# Syntactic Action Hom range
+# Image of the syntactic action
 
-The syntactic action has exactly the transition monoid as its range.
+**Image of the syntactic action.** Let $M$ be an accessible, state-separated DFA and let $L$
+be the language $M$ accepts. The image of the action of the syntactic monoid of $L$ on the states
+of $M$, the monoid homomorphism sending the syntactic class of each word $x$ to the state
+transformation induced by reading $x$, is exactly the transition monoid of $M$.
 
 ## Depends on
 
 - [Accessible](../minimality/accessible.md)
-- [State Separated](../universal/state-separated.md)
-- [State Transformation](state-transformation.md)
+- [State-separated DFA](../universal/state-separated.md)
+- [State transformation monoid](state-transformation.md)
 - [Syntactic Monoid](syntactic-monoid.md)
-- [Transition Monoid](transition-monoid.md)
-- [Syntactic Action Hom](syntactic-action-hom.md)
-- [Syntactic Con](syntactic-con.md)
+- [Transition monoid of a DFA](transition-monoid.md)
+- [Action of the syntactic monoid on states](syntactic-action-hom.md)
+- [Syntactic congruence](syntactic-con.md)
 
 ## Proof depends on
 
-- [Syntactic Morphism](syntactic-morphism.md)
-- [Syntactic Rel](syntactic-rel.md)
-- [Syntactic Rel iff transition Action eq](syntactic-rel-iff-transition-action-eq.md)
-- [Transition Action](transition-action.md)
-- [Transition Morphism](transition-morphism.md)
+- [Syntactic morphism](syntactic-morphism.md)
+- [Syntactic equivalence](syntactic-rel.md)
+- [Syntactic equivalence via transition actions](syntactic-rel-iff-transition-action-eq.md)
+- [Transition action of a word](transition-action.md)
+- [Transition morphism of a DFA](transition-morphism.md)
 
 ## Sources
 

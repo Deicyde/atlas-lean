@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.flatten_length_insert
 ---
 
-# Flatten length insert
+# Size of a B-tree after insertion
 
-Inserting a present key leaves the flattening length unchanged, and inserting an
-absent key increases it by one.
+**Size of a B-tree after insertion.** Let $\alpha$ be linearly ordered, let $t \ge 2$, let
+$T$ be a B-tree of minimum degree $t$ with keys in $\alpha$, and let $x \in \alpha$. Let $T'$ be
+the tree obtained by inserting $x$ into $T$ with minimum degree $t$. If $x$ occurs in the
+inorder flattening of $T$, then the flattening of $T'$ has the same length as that of $T$;
+otherwise it is one longer.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Is BTree](is-btree.md)
-- [Flatten](flatten.md)
-- [Insert](insert.md)
+- [Raw B-trees](btree.md)
+- [B-trees of a given minimum degree](is-btree.md)
+- [Inorder flattening of a B-tree](flatten.md)
+- [B-tree insertion](insert.md)
 
 ## Proof depends on
 
-- [Ordered](ordered.md)
-- [Valid Root](valid-root.md)
-- [Flatten insert](flatten-insert.md)
+- [Ordered B-tree](ordered.md)
+- [Root invariant of a B-tree](valid-root.md)
+- [B-tree insertion as sorted list insertion](flatten-insert.md)
 - [Ordered Insert](../../part-03/ordered-insert/ordered-insert.md)
 - [Ordered Insert eq of mem](../../part-03/ordered-insert/ordered-insert-eq-of-mem.md)
 

@@ -6,10 +6,10 @@ proof: formalized
 lean: Cslib.Language.IsContextFree.singleton_word
 ---
 
-# Singleton word
+# Singleton languages are context-free
 
-A language containing a single word is context-free: one production
-spells the word out.
+**Singleton languages are context-free.** For every word $w$ over an alphabet $T$, the
+language $\{w\}$ consisting of $w$ alone is context-free: one production spells the word out.
 
 ## Depends on
 
@@ -17,10 +17,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Valuation](is-valuation.md)
-- [Eval Form](eval-form.md)
-- [Eval Form map terminal](eval-form-map-terminal.md)
-- [Language le of valuation](language-le-of-valuation.md)
+- [Valuation of a grammar](is-valuation.md)
+- [Interpretation of a sentential form](eval-form.md)
+- [A terminal word denotes its singleton](eval-form-map-terminal.md)
+- [Valuations bound the language of a grammar](language-le-of-valuation.md)
 
 ## Sources
 

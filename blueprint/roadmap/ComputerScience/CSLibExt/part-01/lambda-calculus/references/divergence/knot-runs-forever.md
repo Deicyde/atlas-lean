@@ -6,31 +6,32 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.knot_runs_forever
 ---
 
-# Knot runs forever
+# Landin's knot never gets stuck
 
-Nor does it get stuck: every configuration reachable from the knot takes a
-further step, so its evaluation runs forever.
+**Landin's knot never gets stuck.** If Landin's knot with the empty store evaluates in zero or
+more call-by-value steps to a term $t$ with store $\mu$, then $t$ with store $\mu$ takes a further
+step to some term $t'$ with some store $\mu'$. So the evaluation of the knot runs forever.
 
 ## Depends on
 
-- [Knot](knot.md)
+- [Landin's knot](knot.md)
 - [Step](../semantics/step.md)
-- [Steps](../semantics/steps.md)
+- [Multi-step evaluation with references](../semantics/steps.md)
 - [Store](../semantics/store.md)
-- [Term](../syntax/term.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
 
 ## Proof depends on
 
-- [Body](body.md)
-- [Body₀](body-2.md)
-- [C₁](c.md)
-- [Id U](id-u.md)
-- [Loop A](loop-a.md)
-- [Reachable](reachable.md)
-- [Deterministic](../semantics/deterministic.md)
-- [Value](../syntax/value.md)
-- [Instantiate](../syntax/instantiate.md)
-- [Ty](../syntax/ty.md)
+- [The recursive function of Landin's knot, with the cell free](body.md)
+- [The stored recursive function of Landin's knot](body-2.md)
+- [The knot after allocation](c.md)
+- [The identity on Unit](id-u.md)
+- [Cycle term of Landin's knot](loop-a.md)
+- [Configurations on the evaluation path of Landin's knot](reachable.md)
+- [Determinism of evaluation with references](../semantics/deterministic.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
+- [Substitution of a term for variable zero](../syntax/instantiate.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

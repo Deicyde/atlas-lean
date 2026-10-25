@@ -6,30 +6,30 @@ proof: formalized
 lean: Cslib.Turing.Universal.Code.primrec_evalSteps
 ---
 
-# Computability
+# The clocked evaluator is primitive recursive
 
-**Computability.** The clocked evaluator is primitive recursive in the code, the input and
-the clock.
+**The clocked evaluator is primitive recursive.** The clocked evaluator is primitive
+recursive in the code, the input and the clock.
 
 ## Depends on
 
-- [Code](code.md)
-- [Equiv Table](equiv-table.md)
+- [Codes for single-tape machines](code.md)
+- [Codes as tables](equiv-table.md)
 - [The clocked evaluator](eval-steps.md)
 
 ## Proof depends on
 
-- [Cfg](cfg.md)
-- [Act](act.md)
-- [Equiv Prod](equiv-prod.md)
+- [Explicit configurations](cfg.md)
+- [Acting on a configuration](act.md)
+- [Configurations as tuples](equiv-prod.md)
 - [Output](output.md)
-- [Cfg After](cfg-after.md)
-- [Init](init.md)
-- [Lookup](lookup.md)
-- [Step](step.md)
-- [Step Or Stay](step-or-stay.md)
-- [Bit Sym](bit-sym.md)
-- [Input](input.md)
+- [Clocked configuration of a code](cfg-after.md)
+- [Initial configuration of the code simulation](init.md)
+- [Table lookup of a code](lookup.md)
+- [One step of a code](step.md)
+- [One step of a code, or stay when halted](step-or-stay.md)
+- [Symbol of an input bit](bit-sym.md)
+- [Input word of a list of bits](input.md)
 
 ## Sources
 

@@ -6,25 +6,30 @@ proof: formalized
 lean: Cslib.IMP.wlp.invariant_le_while
 ---
 
-# Invariant le while
+# Loop invariants entail the weakest liberal precondition of the loop
 
-An invariant is a post-fixed point of the semantic while transformer.
+**Loop invariants entail the weakest liberal precondition of the loop.** Let $I$ and $Q$
+be assertions, $b$ a Boolean expression and $c$ a command. Suppose that every state satisfying
+$I$ in which $b$ evaluates to true satisfies the weakest liberal precondition of $c$ with
+respect to $I$, and that every state satisfying $I$ in which $b$ evaluates to false satisfies
+$Q$. Then $I$ entails the weakest liberal precondition of the loop
+$\mathtt{while}\ b\ \mathtt{do}\ c$ with respect to $Q$.
 
 ## Depends on
 
 - [Assertion](assertion.md)
-- [Entails](entails.md)
-- [BExp](../syntax/bexp.md)
+- [Entailment of assertions](entails.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
-- [Wlp](wlp.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
+- [Weakest liberal precondition](wlp.md)
 
 ## Proof depends on
 
-- [Big Step](../big-step/big-step.md)
-- [Valid](valid.md)
-- [While Loop](while-loop.md)
+- [Big-step semantics of IMP](../big-step/big-step.md)
+- [Validity of a Hoare triple](valid.md)
+- [Invariant rule for while loops](while-loop.md)
 
 ## Sources
 

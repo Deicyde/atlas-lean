@@ -6,17 +6,19 @@ proof: formalized
 lean: Cslib.Language.derives_of_yields
 ---
 
-# Derives of yields
+# Yields are derivable
 
-Everything a form yields, it derives in Mathlib's sense.
+**Yields are derivable.** Let $g$ be a context-free grammar. If the sentential form $u$
+yields the terminal word $w$, then $u$ derives $w$, read as a string of terminal symbols,
+in $g$: that is, $u \Rightarrow^* w$ in zero or more rewriting steps.
 
 ## Depends on
 
-- [Yields](yields.md)
+- [Yield of a sentential form](yields.md)
 
 ## Proof depends on
 
-- [Derives append](../../part-01/basic/derives-append.md)
+- [Concatenating derivations](../../part-01/basic/derives-append.md)
 
 ## Sources
 

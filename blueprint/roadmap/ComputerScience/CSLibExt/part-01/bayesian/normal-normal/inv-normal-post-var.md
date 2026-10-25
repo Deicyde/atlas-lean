@@ -6,13 +6,14 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.inv_normalPostVar
 ---
 
-# Inv normal Post Var
+# Precisions add
 
-Precisions add: `1 / normalPostVar = 1 / v₀ + 1 / v`.
+**Precisions add.** For variances $v_0, v > 0$, the posterior variance $s = v_0 v/(v_0 + v)$
+satisfies $s^{-1} = v_0^{-1} + v^{-1}$.
 
 ## Depends on
 
-- [Normal Post Var](normal-post-var.md)
+- [Posterior variance of the normal–normal model](normal-post-var.md)
 
 ## Sources
 

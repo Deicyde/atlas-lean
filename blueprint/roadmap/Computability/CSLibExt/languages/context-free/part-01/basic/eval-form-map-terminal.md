@@ -6,14 +6,15 @@ proof: formalized
 lean: Cslib.Language.evalForm_map_terminal
 ---
 
-# Eval Form map terminal
+# A terminal word denotes its singleton
 
-A terminal word, read as a sentential form, denotes its singleton
-language under every assignment.
+**A terminal word denotes its singleton.** Under every assignment of languages to
+nonterminals, a terminal word $w$, read as a sentential form, denotes the singleton language
+$\{w\}$.
 
 ## Depends on
 
-- [Eval Form](eval-form.md)
+- [Interpretation of a sentential form](eval-form.md)
 
 ## Sources
 

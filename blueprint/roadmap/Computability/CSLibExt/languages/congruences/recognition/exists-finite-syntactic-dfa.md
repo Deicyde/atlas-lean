@@ -6,15 +6,19 @@ proof: formalized
 lean: Cslib.Language.exists_finite_syntacticDFA
 ---
 
-# Exists finite syntactic DFA
+# The syntactic DFA of a language with finite syntactic monoid
 
-Finiteness of the syntactic monoid is sufficient for a finite canonical recognizer, rather
-than merely for the existence of some finite DFA.
+**The syntactic DFA of a language with finite syntactic monoid.** If the syntactic monoid of a
+language $L$ is finite, then the syntactic DFA of $L$ has finitely many states and accepts exactly
+$L$.
+
+This gives a specific finite recognizer, the syntactic DFA, rather than merely the existence of
+some finite DFA.
 
 ## Depends on
 
 - [Syntactic Monoid](../syntactic/syntactic-monoid.md)
-- [Syntactic DFA](syntactic-dfa.md)
+- [The syntactic DFA](syntactic-dfa.md)
 
 ## Proof depends on
 

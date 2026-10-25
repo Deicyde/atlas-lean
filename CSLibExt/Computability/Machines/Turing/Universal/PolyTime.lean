@@ -53,7 +53,12 @@ namespace Cslib.Turing.Universal.Clocked
 open _root_.Turing Function MetaMathlibExt MetaMathlibExt.TM2Program MetaMathlibExt.TM2Embedding
   Cslib.Complexity.Host
 
-/-- The clocked universal machine as a host component. -/
+/-- **The clocked universal machine as a host component.** The component machine whose stacks
+are the fifteen stacks of the clocked universal machine, each holding bits, whose labels and
+program are those of the clocked universal machine, and whose list of stacks is, in order: the
+state $Q$, the next state $N$, the action $A$, the head cell $H$, the cells left ($L$) and right
+($R$) of the head, the code $C$, the scan buffer $B$, the scratch counters $T$, $U$, $V$, the
+clock $\mathit{Ck}$, the encoded input $X$, the parse buffer $P$ and the output $O$. -/
 abbrev univComp : Comp where
   K := K
   Γ := Γ
@@ -80,7 +85,10 @@ private theorem sum_map_add_three (l : List ℕ) :
   | nil => simp
   | cons a l ih => simp only [List.map_cons, List.sum_cons, List.length_cons, ih]; ring
 
-/-- **The step bound is quadratic** in the length of the input bits. -/
+/-- **The step bound of the clocked universal machine is quadratic.** For every code $c$, list
+of bits $x$ and clock $T \in \mathbb{N}$, the step bound of the whole clocked universal machine
+on $(c, x, T)$ is at most $18 (n + 1)^2$, where $n$ is the length of the input encoding of
+$(c, x, T)$. -/
 theorem univTime_le (c : Code) (x : List Bool) (T : ℕ) :
     univTime c x T ≤ 18 * ((encIn c x T).length + 1) ^ 2 := by
   set n := (encIn c x T).length
@@ -110,7 +118,9 @@ theorem univTime_le (c : Code) (x : List Bool) (T : ℕ) :
   simp only [univTime, parseTime, hclock, sum_map_add_three, length_cells]
   nlinarith
 
-/-- The polynomial step bound of the component. -/
+/-- **Step bound polynomial of the clocked universal machine.** The polynomial
+$18 (X + 1)^2$ with natural-number coefficients, used as the step bound of the clocked
+universal machine as a host component. -/
 noncomputable def univPoly : Polynomial ℕ := Polynomial.C 18 * (Polynomial.X + 1) ^ 2
 
 /-- **The clocked universal function is polynomial-time computable.** A `FinTM2` reads

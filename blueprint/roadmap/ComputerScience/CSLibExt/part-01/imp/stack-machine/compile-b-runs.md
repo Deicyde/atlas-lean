@@ -6,32 +6,36 @@ proof: formalized
 lean: Cslib.IMP.StackMachine.compileB_runs
 ---
 
-# Compile B runs
+# Compiled Boolean code pushes the truth value of the expression
 
-Compiled Boolean code, run inside any surrounding program, pushes `1` if
-the expression evaluates to `true` and `0` otherwise, leaving the rest of
-the stack and the state unchanged.
+**Compiled Boolean code pushes the truth value of the expression.** Let $b$ be a Boolean
+expression with compiled code $C(b)$ and instruction count $\ell(b)$, let $P$ and $Q$ be lists of
+instructions, $\sigma$ a stack and $s$ a state, and write $|P|$ for the length of $P$. The stack
+machine running the program $P \, C(b) \, Q$ (the concatenation of $P$, $C(b)$ and $Q$) goes in
+finitely many steps from program counter $|P|$, stack $\sigma$ and state $s$ to program counter
+$|P| + \ell(b)$, the stack obtained from $\sigma$ by pushing $1$ if $b$ evaluates to true in $s$
+and $0$ otherwise, and the same state $s$.
 
 ## Depends on
 
-- [BExp](../syntax/bexp.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
-- [Instr](instr.md)
-- [Steps](steps.md)
-- [Blen](blen.md)
-- [Compile B](compile-b.md)
-- [State](../syntax/state.md)
+- [Stack machine instructions](instr.md)
+- [Multi-step execution of the stack machine](steps.md)
+- [Instruction count of a Boolean expression](blen.md)
+- [Compilation of Boolean expressions](compile-b.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [Config](config.md)
-- [Step](step.md)
-- [Alen](alen.md)
-- [Compile A](compile-a.md)
-- [Compile A runs](compile-a-runs.md)
-- [Fetch segment](fetch-segment.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Stack machine configurations](config.md)
+- [Step relation of the stack machine](step.md)
+- [Instruction count of an arithmetic expression](alen.md)
+- [Compilation of arithmetic expressions](compile-a.md)
+- [Compiled arithmetic code pushes the value of the expression](compile-a-runs.md)
+- [Fetching from an embedded code segment](fetch-segment.md)
 
 ## Sources
 

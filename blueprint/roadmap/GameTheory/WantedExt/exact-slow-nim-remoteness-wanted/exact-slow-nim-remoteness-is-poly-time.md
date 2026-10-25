@@ -14,15 +14,15 @@ self-delimiting list encoding.
 
 ## Depends on
 
-- [Bitstring Encoding](../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
-- [Bit Decode](../../../Computability/MathlibExt/complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../../Computability/MathlibExt/complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../../Computability/MathlibExt/complexity/bit-encode.md)
-- [Delimit](../../../Computability/MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../Computability/MathlibExt/complexity/undelimit.md)
-- [Undelimit Blocks](../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Is Poly Time](../../../Computability/MathlibExt/complexity/is-poly-time.md)
+- [Bitstring encodings](../../../Computability/MathlibExt/complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../../Computability/MathlibExt/complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../../Computability/MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../../Computability/MathlibExt/complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../../Computability/MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../Computability/MathlibExt/complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../../Computability/MathlibExt/complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../../Computability/MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Polynomial-time computable functions](../../../Computability/MathlibExt/complexity/is-poly-time.md)
 - [Exact Slow Nim Binary Nat Encoding](exact-slow-nim-binary-nat-encoding.md)
 - [Exact Slow Nim Remoteness Of List](exact-slow-nim-remoteness-of-list.md)
 

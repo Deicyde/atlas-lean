@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.TM2Recursive.trNat_eq_map
 ---
 
-# Tr Nat eq map
+# The evaluator encodes numbers in binary
 
-`tr`'s binary encoding of a natural number is `encodeNat` in the symbols of `Γ'`.
+**The evaluator encodes numbers in binary.** For every natural number $n$, the list of stack
+symbols by which Mathlib's code evaluator encodes $n$ is obtained from the binary encoding of $n$
+(least significant bit first) by writing each bit as $\mathrm{bit1}$ if it is true and as
+$\mathrm{bit0}$ if it is false.
 
 ## Depends on
 
-- [Bool ToΓ'](bool-to.md)
+- [Bits as stack symbols](bool-to.md)
 
 ## Sources
 

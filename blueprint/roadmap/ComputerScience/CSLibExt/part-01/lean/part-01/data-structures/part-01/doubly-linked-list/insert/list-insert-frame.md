@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.listInsert_frame
 ---
 
-# List Insert frame
+# Frame property of doubly-linked-list insertion
 
-Cells outside the three source write targets are unchanged.
+**Frame property of doubly-linked-list insertion.** For a store $S$ and allocated cells $x$
+and $y$ such that the successor of $y$ in $S$, if any, is allocated, let $z$ be a cell with
+$z \ne x$, $z \ne y$, and $z$ not the successor of $y$ in $S$. Then cell $z$ of the store
+returned by inserting $x$ after $y$ equals cell $z$ of $S$.
 
 ## Depends on
 
-- [Node](../basic/node.md)
-- [List Insert](list-insert.md)
+- [Doubly linked list node](../basic/node.md)
+- [Doubly-linked-list insertion (LIST-INSERT)](list-insert.md)
 
 ## Proof depends on
 
-- [List Insert get](list-insert-get.md)
+- [Cells after doubly-linked-list insertion](list-insert-get.md)
 
 ## Sources
 

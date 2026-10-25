@@ -16,9 +16,9 @@ Applied Mathematics 10 (1985), 139-153.
 
 - [Polynomial-time many-one reduction](../../../../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
 - [Partition Into P3s Dec](partition-into-p3s-dec.md)
-- [Decision Complexity Class](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
-- [NP](../../../../../Computability/MathlibExt/complexity/np.md)
+- [Complexity classes](../../../../../Computability/MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../../Computability/MathlibExt/complexity/decision-problem.md)
+- [The complexity class NP](../../../../../Computability/MathlibExt/complexity/np.md)
 
 ## Sources
 

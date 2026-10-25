@@ -37,7 +37,7 @@ the accept family of $E$ for $\mathit{acc}$ at $T$, $H$ followed by $o$.
 - [Accepting code](../situation/part-07/acode.md)
 - [Clause layout of a machine encoding](../situation/part-01/layout.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 

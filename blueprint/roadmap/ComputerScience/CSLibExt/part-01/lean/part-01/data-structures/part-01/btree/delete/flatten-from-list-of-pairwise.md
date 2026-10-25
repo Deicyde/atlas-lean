@@ -7,23 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.flatten_fromList_of_pairwise
 ---
 
-# Flatten from List of pairwise
+# Building a B-tree from a strictly increasing list
 
-Building a tree from a strictly increasing list returns exactly that list
-as the flattening. This is the specification of `fromList` on sorted input
-that the specification of `deleteRebuild` is reduced to.
+**Building a B-tree from a strictly increasing list.** Let $t \ge 2$. For every strictly
+increasing list $L$ of keys, the tree built from $L$ by inserting its keys from right to left
+into the empty tree with minimum degree $t$ has flattening exactly $L$.
 
 ## Depends on
 
-- [Flatten](../../btree-2/flatten.md)
-- [From List](../../btree-2/from-list.md)
+- [Inorder flattening of a B-tree](../../btree-2/flatten.md)
+- [B-tree built from a list](../../btree-2/from-list.md)
 
 ## Proof depends on
 
-- [BTree](../../btree-2/btree.md)
-- [From List](../../btree-2/from-list-2.md)
-- [Flatten Aux](../../btree-2/flatten-aux.md)
-- [Flatten insert](../../btree-2/flatten-insert.md)
+- [Raw B-trees](../../btree-2/btree.md)
+- [Building from a list yields a B-tree](../../btree-2/from-list-2.md)
+- [Accumulating flattening of a B-tree](../../btree-2/flatten-aux.md)
+- [B-tree insertion as sorted list insertion](../../btree-2/flatten-insert.md)
 - [Ordered Insert](../../../part-03/ordered-insert/ordered-insert.md)
 
 ## Sources

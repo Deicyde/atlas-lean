@@ -6,13 +6,15 @@ proof: formalized
 lean: Cslib.MachineLearning.Bayesian.inv_linRegPostVar
 ---
 
-# Inv lin Reg Post Var
+# Precisions add in Bayesian linear regression
 
-Precisions add: `1 / linRegPostVar = 1 / s₀ + ∑ xᵢ² / σ²`.
+**Precisions add in Bayesian linear regression.** Let $s_0, \sigma^2 \ge 0$ be nonzero and
+$x \in \mathbb{R}^n$. Then the posterior variance $v$ of the weight for prior variance $s_0$, noise
+variance $\sigma^2$ and inputs $x$ satisfies $1 / v = 1 / s_0 + (\sum_i x_i^2) / \sigma^2$.
 
 ## Depends on
 
-- [Lin Reg Post Var](lin-reg-post-var.md)
+- [Posterior variance in Bayesian linear regression](lin-reg-post-var.md)
 
 ## Sources
 

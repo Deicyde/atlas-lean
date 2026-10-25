@@ -22,7 +22,7 @@ of tokens of $C$ is at most the length of the binary code of $C$.
 
 - [Tokens of a literal](lit-toks.md)
 - [Binary code of a literal](../../cook-levin/encode-lit.md)
-- [Delimit](../../../MathlibExt/complexity/delimit.md)
+- [Self-delimiting form of a bitstring](../../../MathlibExt/complexity/delimit.md)
 
 ## Sources
 

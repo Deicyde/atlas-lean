@@ -22,7 +22,7 @@ denote have the same language.
 ## Proof depends on
 
 - [Words of a given length](../regular/words-of-length.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 - [The membership test for context-free grammars](../../part-01/context-free/mem-language-b.md)
 - [Correctness of the membership test](../../part-01/context-free/mem-language-b-iff.md)
 - [Search bound for equivalence](eq-bound.md)

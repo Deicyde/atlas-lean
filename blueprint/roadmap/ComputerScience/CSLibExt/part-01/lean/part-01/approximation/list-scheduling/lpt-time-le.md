@@ -6,18 +6,19 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.Scheduling.lpt_time_le
 ---
 
-# Lpt time le
+# Running time of LPT
 
-LPT costs at most `n * ⌈log₂ n⌉` sorting comparisons plus `n * m` load inspections.
+**Running time of LPT.** On $m \ge 1$ machines and a list of $n$ jobs, LPT costs at most
+$n \lceil \log_2 n \rceil + nm$, counting merge-sort comparisons and machine load inspections.
 
 ## Depends on
 
-- [Lpt](lpt.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
-- [List Schedule](list-schedule.md)
-- [List Schedule time](list-schedule-time.md)
+- [Graham's list scheduling](list-schedule.md)
+- [Running time of list scheduling](list-schedule-time.md)
 
 ## Sources
 

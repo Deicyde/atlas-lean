@@ -26,8 +26,8 @@ numbers $a$ and target $t$.
 - [Decoding a prefix-coded natural number](../../../../cook-levin/decode-nat-prefix.md)
 - [Prefix-free code of a natural number](../../../../cook-levin/encode-nat-prefix.md)
 - [Parsing a self-delimiting block](../../../../cook-levin/undelimit-eq-some-iff.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

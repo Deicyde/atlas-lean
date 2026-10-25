@@ -17,8 +17,8 @@ $D$.
 
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
 - [Language of an encoded DFA](../../../automata/da/encoded-dfa/language.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 - [The inclusion test for a grammar and a DFA](subset-b.md)
 
 ## Proof depends on

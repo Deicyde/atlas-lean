@@ -15,18 +15,18 @@ number $i$, including $i = 0$.
 
 ## Depends on
 
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Language](../../../languages/context-free/part-01/encoded/language.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 - [Pumping bound of an encoded grammar](pump-bound.md)
 
 ## Proof depends on
 
 - [Duplicate removal for lists of natural numbers](../primrec-list/dedup-b.md)
 - [Boolean membership test for lists of natural numbers](../primrec-list/mem-b.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 - [Right-hand side length bound](len-bound.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 - [The pumping lemma for a grammar, with an explicit bound](../../../languages/context-free/part-01/ogden/pumping-of-bound.md)
 
 ## Sources

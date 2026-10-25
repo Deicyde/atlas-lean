@@ -6,17 +6,18 @@ proof: formalized
 lean: Cslib.Language.isRegular_iff_finite_nerodeClass
 ---
 
-# Is Regular iff finite nerode Class
+# Myhill–Nerode theorem, quotient form
 
-Quotient formulation of the Myhill--Nerode theorem.
+**Myhill–Nerode theorem, quotient form.** A language $L$ is regular, that is, accepted by some
+deterministic finite automaton, if and only if $L$ has finitely many Nerode classes.
 
 ## Depends on
 
-- [Nerode Class](nerode-class.md)
+- [Nerode classes](nerode-class.md)
 
 ## Proof depends on
 
-- [Finite nerode Class iff](finite-nerode-class-iff.md)
+- [Finitely many Nerode classes iff finitely many left quotients](finite-nerode-class-iff.md)
 
 ## Sources
 

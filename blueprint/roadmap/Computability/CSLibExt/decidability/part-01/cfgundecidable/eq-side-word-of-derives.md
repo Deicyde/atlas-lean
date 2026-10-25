@@ -25,7 +25,7 @@ $S \to w_i\, i$.
 - [The side grammar of a PCP instance](side-grammar.md)
 - [The side word of an index sequence](side-word.md)
 - [Domino (Post correspondence problem)](../pcp/domino.md)
-- [To CFG](../../../languages/context-free/part-01/encoded/to-cfg.md)
+- [Grammar denoted by an encoding](../../../languages/context-free/part-01/encoded/to-cfg.md)
 
 ## Proof depends on
 
@@ -36,9 +36,9 @@ $S \to w_i\, i$.
 - [The letter part of an index sequence](flat.md)
 - [The encoded letter terminal](letter-sym.md)
 - [The terminating production of a side grammar](term-rule.md)
-- [Encoded CFG](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
-- [Decode Rule](../../../languages/context-free/part-01/encoded/decode-rule.md)
-- [Decode Symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
+- [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [Decoding a production](../../../languages/context-free/part-01/encoded/decode-rule.md)
+- [Decoding a grammar symbol](../../../languages/context-free/part-01/encoded/decode-symbol.md)
 
 ## Sources
 

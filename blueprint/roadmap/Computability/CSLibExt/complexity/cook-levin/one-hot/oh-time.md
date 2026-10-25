@@ -30,7 +30,7 @@ encoding of the one-hot cell family for $T$ and $H$ followed by $o$.
 - [The one-hot cell family](oh-family.md)
 - [The one-hot generator](prog.md)
 - [Dense encoding of a CNF formula](../../dense-sat/encode-cnf.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -46,7 +46,7 @@ encoding of the one-hot cell family for $T$ and $H$ followed by $o$.
 - [Correctness of the one-hot generator, with its explicit time bound](oh-run.md)
 - [Step budget of the one-hot precomputation](pre-b.md)
 - [Step budget for one time step of the one-hot generator](t-body-b.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

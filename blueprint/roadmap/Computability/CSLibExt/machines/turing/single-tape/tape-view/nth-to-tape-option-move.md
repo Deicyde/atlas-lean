@@ -6,14 +6,18 @@ proof: formalized
 lean: Cslib.Turing.BiTape.nth_toTape_optionMove
 ---
 
-# Nth to Tape option Move
+# Cells after an optional move
 
-The cells after an optional move are those before, shifted by `optionMoveOffset`.
+**Cells after an optional move.** For an optional direction $d$, let $\delta(d)$ be $0$ if $d$
+is no move, $-1$ if $d$ is a move to the left and $1$ if $d$ is a move to the right. For every
+two-way tape $t$ over $\Gamma$ and every integer $i$, the cell at position $i$ of the view of the
+tape obtained from $t$ by the optional move $d$ is the cell at position $i + \delta(d)$ of the view
+of $t$.
 
 ## Depends on
 
 - [Option Move Offset](option-move-offset.md)
-- [To Tape](to-tape.md)
+- [Cell view of a two-way tape](to-tape.md)
 
 ## Proof depends on
 

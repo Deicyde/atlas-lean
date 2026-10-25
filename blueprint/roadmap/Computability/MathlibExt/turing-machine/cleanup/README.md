@@ -4,6 +4,6 @@ navigation: module
 
 # Cleanup
 
-- [Pop All](pop-all.md)
-- [Clean S](clean-s.md)
-- [Cleanup](clean-run.md)
+- [Popping a list of stacks](pop-all.md)
+- [Cleanup round](clean-s.md)
+- [Cleanup empties its stacks](clean-run.md)

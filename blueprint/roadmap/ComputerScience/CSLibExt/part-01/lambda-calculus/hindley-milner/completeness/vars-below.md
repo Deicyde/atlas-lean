@@ -5,9 +5,10 @@ statement: formalized
 lean: Cslib.HindleyMilner.VarsBelow
 ---
 
-# Vars Below
+# Variables below a bound
 
-Every variable of the term is below `n`.
+**Variables below a bound.** A term $t$ has all its variables below $n$ when every variable
+$z$ occurring in $t$ satisfies $z < n$.
 
 ## Depends on
 

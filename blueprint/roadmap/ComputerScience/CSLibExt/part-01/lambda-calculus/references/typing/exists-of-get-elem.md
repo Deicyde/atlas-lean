@@ -6,17 +6,21 @@ proof: formalized
 lean: Cslib.Languages.LambdaCalculus.References.StoreTyped.exists_of_getElem?
 ---
 
-# Exists of get Elem?
+# Well-typed stores hold a typed value at every location
 
-Every location the store typing knows holds a value of the right type.
+**Well-typed stores hold a typed value at every location.** Let $\Gamma$ be a typing
+context, $S$ a store typing, and $\mu$ a store (a list of terms, whose entry at index $l$ is
+the contents of location $l$) that is well typed, $\Gamma \mid S \vdash \mu$. If $S$ assigns
+type $T$ to location $l$, then $\mu$ has an entry $v$ at location $l$, $v$ is a value, and
+$\Gamma \mid S \vdash v : T$.
 
 ## Depends on
 
-- [Has Type](has-type.md)
+- [Typing judgment for the lambda calculus with references](has-type.md)
 - [Store Typed](store-typed.md)
-- [Term](../syntax/term.md)
-- [Value](../syntax/value.md)
-- [Ty](../syntax/ty.md)
+- [Terms of the simply typed lambda calculus with references](../syntax/term.md)
+- [Values of the simply typed lambda calculus with references](../syntax/value.md)
+- [Types of the simply typed lambda calculus with references](../syntax/ty.md)
 
 ## Sources
 

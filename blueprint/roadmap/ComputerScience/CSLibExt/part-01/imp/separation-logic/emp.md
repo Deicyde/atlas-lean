@@ -5,18 +5,19 @@ statement: formalized
 lean: Cslib.IMP.HAssertion.emp
 ---
 
-# Emp
+# Empty-heap assertion
 
-The empty-heap assertion.
+**Empty-heap assertion.** The heap assertion $\mathrm{emp}$ holds of a store $s$ and a heap
+$h$ exactly when $h$ is the empty heap, whatever the store $s$ is.
 
 ## Depends on
 
-- [HAssertion](hassertion.md)
+- [Heap assertion](hassertion.md)
 
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

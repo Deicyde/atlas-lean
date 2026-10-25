@@ -7,15 +7,17 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AdjacencyMatrix.mem_neighbors
 ---
 
-# Mem neighbors
+# The out-neighbor list matches the edge query
 
-Membership in the neighbor list is the edge query.
+**The out-neighbor list matches the edge query.** Let $m$ be an adjacency matrix on the vertex
+set $\{0, \dots, n-1\}$ and let $i, j$ be vertices. Then $j$ belongs to the out-neighbor list of
+$i$ if and only if $m$ has a directed edge from $i$ to $j$.
 
 ## Depends on
 
-- [Adjacency Matrix](adjacency-matrix.md)
-- [Has Edge](has-edge.md)
-- [Neighbors](neighbors.md)
+- [Adjacency matrix](adjacency-matrix.md)
+- [Edge query of an adjacency matrix](has-edge.md)
+- [Out-neighbor list](neighbors.md)
 
 ## Sources
 

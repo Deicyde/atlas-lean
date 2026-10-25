@@ -8,21 +8,22 @@ lean: Cslib.Turing.Universal.Code.dom_eval_iff_exists_isSome_evalSteps
 
 # Unclocked halting
 
-**Unclocked halting.** The decoded machine halts on the input of `x` iff some clock
-suffices.
+**Unclocked halting.** For a code $c$ and a list of bits $x$, the machine decoded from $c$ halts
+on the input word of $x$ if and only if there is a clock $T \in \mathbb{N}$ for which the clocked
+evaluator of $c$ on $x$ with clock $T$ returns a result.
 
 ## Depends on
 
-- [Code](code.md)
+- [Codes for single-tape machines](code.md)
 - [The clocked evaluator](eval-steps.md)
-- [Machine](machine.md)
-- [Input](input.md)
+- [The machine of a code](machine.md)
+- [Input word of a list of bits](input.md)
 
 ## Proof depends on
 
 - [Clocked halting](is-some-eval-steps-iff.md)
-- [Halts Within](halts-within.md)
-- [Dom eval iff exists halts Within](dom-eval-iff-exists-halts-within.md)
+- [Bounded halting of a single-tape machine](halts-within.md)
+- [Halting is halting within some number of steps](dom-eval-iff-exists-halts-within.md)
 
 ## Sources
 

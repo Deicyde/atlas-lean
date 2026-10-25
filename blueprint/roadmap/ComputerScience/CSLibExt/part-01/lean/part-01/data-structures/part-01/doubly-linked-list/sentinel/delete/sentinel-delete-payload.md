@@ -7,21 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelDelete_payload
 ---
 
-# Sentinel Delete payload
+# Sentinel deletion preserves payloads
 
-Every payload, including keys and satellite data, is preserved.
+**Sentinel deletion preserves payloads.** Let $S$ be a node store and $x$ an address whose
+cell holds a node with previous address $p$ and next address $n$, where the cells at $p$ and $n$
+are nonempty. For every address $z$, the cell at $z$ after sentinel deletion of $x$ from $S$
+and the cell of $S$ at $z$ are either both empty or both hold nodes with the same payload.
+
+The payload includes any key and satellite data.
 
 ## Depends on
 
-- [Node](../../basic/node.md)
-- [Sentinel Delete](sentinel-delete.md)
+- [Doubly linked list node](../../basic/node.md)
+- [Deletion from a circular list with a sentinel](sentinel-delete.md)
 
 ## Proof depends on
 
-- [List Delete](../../delete/list-delete.md)
-- [List Delete payload](../../delete/list-delete-payload.md)
-- [List Delete ret](../../delete/list-delete-ret.md)
-- [Sentinel Delete ret](sentinel-delete-ret.md)
+- [Deletion from a doubly linked list](../../delete/list-delete.md)
+- [Deletion preserves payloads](../../delete/list-delete-payload.md)
+- [Result of doubly linked list deletion](../../delete/list-delete-ret.md)
+- [The store returned by sentinel deletion](sentinel-delete-ret.md)
 
 ## Sources
 

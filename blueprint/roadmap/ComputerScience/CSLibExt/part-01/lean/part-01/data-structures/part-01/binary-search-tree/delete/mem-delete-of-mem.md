@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BinarySearchTree.mem_delete_of_mem
 ---
 
-# Mem delete of mem
+# Deletion keeps the other keys
 
-Deletion keeps every key other than the deleted one, ordered or not.
+**Deletion keeps the other keys.** Let $t$ be a binary tree over a linearly ordered type, not
+necessarily ordered, and let $x$ and $y$ be keys with $y \ne x$. If $y$ occurs in $t$, then $y$
+occurs in the tree obtained by deleting $x$ from $t$.
 
 ## Depends on
 
 - [Mem](../../../part-02/binary-search-tree/mem.md)
-- [Delete](delete.md)
+- [Deletion from a binary search tree](delete.md)
 
 ## Proof depends on
 
-- [Join](join.md)
-- [Mem join](mem-join.md)
+- [Join of two binary trees](join.md)
+- [Membership in a join](mem-join.md)
 
 ## Sources
 

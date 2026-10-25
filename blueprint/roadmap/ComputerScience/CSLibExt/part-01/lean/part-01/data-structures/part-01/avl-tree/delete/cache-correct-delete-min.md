@@ -7,19 +7,23 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.AvlTree.cacheCorrect_deleteMin
 ---
 
-# Cache Correct delete Min
+# Minimum deletion keeps cached heights correct
 
-`deleteMin` preserves correct cached heights.
+**Minimum deletion keeps cached heights correct.** Let $t$ be a binary tree with a cached height
+at each node whose cached heights are correct: each node stores one more than the larger of the
+cached heights of its two subtrees, the empty tree having height $0$. Then the cached heights of
+the tree obtained from $t$ by minimum deletion (removing its leftmost key, rebalancing on the way
+back up) are again correct.
 
 ## Depends on
 
-- [Cache Correct](../../avl-tree-2/cache-correct.md)
-- [Tree](../../avl-tree-2/tree.md)
-- [Delete Min](delete-min.md)
+- [Correct cached heights](../../avl-tree-2/cache-correct.md)
+- [Binary trees with cached heights](../../avl-tree-2/tree.md)
+- [Minimum deletion in an AVL tree](delete-min.md)
 
 ## Proof depends on
 
-- [Cache Correct erase Min](cache-correct-erase-min.md)
+- [Removing the minimum keeps cached heights correct](cache-correct-erase-min.md)
 
 ## Sources
 

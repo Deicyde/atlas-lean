@@ -6,14 +6,16 @@ proof: formalized
 lean: Cslib.Language.List.length_le_of_yieldsH
 ---
 
-# Length le of yields H
+# Length bound for height-bounded yields
 
-The length of a yield is bounded in terms of the height and the
-longest production output.
+**Length bound for height-bounded yields.** Let $g$ be a context-free grammar and $R$ a
+natural number such that every production of $g$ has an output of length at most $R$. If a
+sentential form $\alpha$ yields the terminal word $w$ through a derivation forest of height at
+most $n$, then $|w| \le |\alpha| \cdot \max(2, R)^n$.
 
 ## Depends on
 
-- [Yields H](yields-h.md)
+- [Height-bounded derivations](yields-h.md)
 
 ## Sources
 

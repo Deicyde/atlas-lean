@@ -24,7 +24,7 @@ it outputs the one-element bit list $[f(x, w)]$.
 - [Work alphabet of the dense-SAT verifier](../dense-satverifier/g.md)
 - [Pair encoding $w \# y$](../dense-satverifier/pair-encode.md)
 - [Component machine](comp.md)
-- [Run Le](../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -38,7 +38,7 @@ it outputs the one-element bit list $[f(x, w)]$.
 - [The verifier host's run](vprog-run.md)
 - [Vtime](vtime.md)
 - [The verifier host machine](vtm.md)
-- [Run](../../../MathlibExt/turing-machine/program/run.md)
+- [Exact-length runs of a TM2 machine](../../../MathlibExt/turing-machine/program/run.md)
 
 ## Sources
 

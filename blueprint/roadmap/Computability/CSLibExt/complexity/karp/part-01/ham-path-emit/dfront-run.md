@@ -30,7 +30,7 @@ bits of the frame arcs of diamond $i$.
 - [Row vertices of a diamond](../ham-path/hp-r.md)
 - [Tops of the diamonds](../ham-path/hp-t.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -46,9 +46,9 @@ bits of the frame arcs of diamond $i$.
 - [Copying a counter in the HAMPATH emitter](../ham-path-emit-machine/cp-run.md)
 - [Frame copy sites of the HAMPATH emitter](frame-sites.md)
 - [The next diamond top follows the row](../ham-path-emit-spec/hp-t-succ-eq-hp-r.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Single](../../../../../MathlibExt/turing-machine/program/single.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [A single step executes the statement at the current label](../../../../../MathlibExt/turing-machine/program/single.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 
 ## Sources
 

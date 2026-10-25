@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Circuits.Circuit.verifyBooleanCertificate_time_le_of_fanInAtMost
 ---
 
-# Verify Boolean Certificate time le of fan In At Most
+# Linear cost of the Boolean certificate verifier
 
-A fixed fan-in bound gives a linear selected-event bound, including rejects.
+**Linear cost of the Boolean certificate verifier.** Let $K$ be a natural number and let $c$ be
+a circuit over the Boolean signature with $n$ inputs, $s$ gates and one output in which every gate
+has at most $K$ arguments. Then for every array $b$ of truth values, the cost counted by the
+Boolean certificate verifier on $b$ is at most $2 + (K + 1)s$.
 
 ## Depends on
 
-- [Verify Boolean Certificate](verify-boolean-certificate.md)
+- [Boolean certificate verifier](verify-boolean-certificate.md)
 - [Boolean signature](../../../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
 
 ## Proof depends on
 
-- [Verify Boolean Certificate time](verify-boolean-certificate-time.md)
+- [Cost of the Boolean certificate verifier](verify-boolean-certificate-time.md)
 
 ## Sources
 

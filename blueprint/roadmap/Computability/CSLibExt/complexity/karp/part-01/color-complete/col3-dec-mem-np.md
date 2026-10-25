@@ -13,9 +13,9 @@ lean: Cslib.Complexity.Karp.col3Dec_mem_NP
 ## Depends on
 
 - [3-COLOR](../color/col3-dec.md)
-- [Decision Complexity Class](../../../../../MathlibExt/complexity/decision-complexity-class.md)
-- [Decision Problem](../../../../../MathlibExt/complexity/decision-problem.md)
-- [NP](../../../../../MathlibExt/complexity/np.md)
+- [Complexity classes](../../../../../MathlibExt/complexity/decision-complexity-class.md)
+- [Decision problems](../../../../../MathlibExt/complexity/decision-problem.md)
+- [The complexity class NP](../../../../../MathlibExt/complexity/np.md)
 
 ## Proof depends on
 
@@ -30,17 +30,17 @@ lean: Cslib.Complexity.Karp.col3Dec_mem_NP
 - [Start label of the 3-coloring verifier](../color-verify/start.md)
 - [The 3-COLOR verifier as a host component](col-verify-comp.md)
 - [Stack alphabet of the SAT verifier](../../../sat-verifier-spec/sym.md)
-- [Bitstring Encoding](../../../../../MathlibExt/complexity/bitstring-encoding.md)
-- [Bit Decode](../../../../../MathlibExt/complexity/bit-decode.md)
-- [Bit Decode bit Encode](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)
-- [Bit Encode](../../../../../MathlibExt/complexity/bit-encode.md)
-- [Delimit](../../../../../MathlibExt/complexity/delimit.md)
-- [Undelimit](../../../../../MathlibExt/complexity/undelimit.md)
-- [Undelimit Blocks](../../../../../MathlibExt/complexity/undelimit-blocks.md)
-- [Undelimit Blocks Aux](../../../../../MathlibExt/complexity/undelimit-blocks-aux.md)
-- [Is Poly Time](../../../../../MathlibExt/complexity/is-poly-time.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Run Le](../../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Bitstring encodings](../../../../../MathlibExt/complexity/bitstring-encoding.md)
+- [Decoding function of a bitstring encoding](../../../../../MathlibExt/complexity/bit-decode.md)
+- [Decoding inverts bitstring encoding](../../../../../MathlibExt/complexity/bit-decode-bit-encode.md)
+- [Encoding function of a bitstring encoding](../../../../../MathlibExt/complexity/bit-encode.md)
+- [Self-delimiting form of a bitstring](../../../../../MathlibExt/complexity/delimit.md)
+- [Parsing one self-delimiting block](../../../../../MathlibExt/complexity/undelimit.md)
+- [Parsing a list of booleans into self-delimiting blocks](../../../../../MathlibExt/complexity/undelimit-blocks.md)
+- [Bounded parsing of self-delimiting blocks](../../../../../MathlibExt/complexity/undelimit-blocks-aux.md)
+- [Polynomial-time computable functions](../../../../../MathlibExt/complexity/is-poly-time.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Runs within a step budget](../../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Sources
 

@@ -21,16 +21,16 @@ false and the stacks $S$ with stack $k$ emptied.
 - [Labels of the HAMPATH emitter](../ham-path-emit-machine/lab.md)
 - [The HAMPATH emitter machine](../ham-path-emit-machine/prog.md)
 - [Stack alphabets of the HAMPATH emitter](../ham-path-emit-machine/untitled.md)
-- [Flag](../../../../../MathlibExt/turing-machine/program/flag.md)
-- [Run](../../../../../MathlibExt/turing-machine/program/run.md)
-- [Cnt](../../../../../MathlibExt/turing-machine/program/cnt.md)
+- [Flag bit of a machine state](../../../../../MathlibExt/turing-machine/program/flag.md)
+- [Exact-length runs of a TM2 machine](../../../../../MathlibExt/turing-machine/program/run.md)
+- [Unary counter](../../../../../MathlibExt/turing-machine/program/cnt.md)
 - [Xfer](../../../../../MathlibExt/turing-machine/program/xfer.md)
 
 ## Proof depends on
 
 - [The row loop of a diamond in the HAMPATH emitter](add-u-nil.md)
-- [Add U](../../../../../MathlibExt/turing-machine/program/add-u.md)
-- [Xfer run](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
+- [Adding units to target stacks](../../../../../MathlibExt/turing-machine/program/add-u.md)
+- [Running a counter transfer](../../../../../MathlibExt/turing-machine/program/xfer-run.md)
 
 ## Sources
 

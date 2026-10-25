@@ -6,13 +6,16 @@ proof: formalized
 lean: Cslib.Turing.StackTape.tail_toListBlank
 ---
 
-# Tail to List Blank
+# Tail of the half-tape view of a stack tape
 
-Dropping the first cell of a `StackTape` drops the first cell of the half-tape.
+**Tail of the half-tape view of a stack tape.** For every stack tape $s$ over $\Gamma$ (a list
+of cells, each a symbol of $\Gamma$ or the blank cell, not ending in a blank cell), the tail of
+the half-tape view of $s$ is the half-tape view of the tail of $s$: dropping the first cell of
+$s$ drops the first cell of its half-tape.
 
 ## Depends on
 
-- [To List Blank](to-list-blank.md)
+- [Half-tape view of a stack tape](to-list-blank.md)
 
 ## Sources
 

@@ -6,21 +6,23 @@ proof: formalized
 lean: Cslib.IMP.BigStep.deterministic
 ---
 
-# Deterministic
+# Determinism of IMP big-step semantics
 
-The deterministic IMP big-step semantics has at most one final state.
+**Determinism of IMP big-step semantics.** For every command $c$ and every state $s$, if $c$
+run from $s$ terminates in a state $t_1$ and also in a state $t_2$ under the big-step semantics,
+then $t_1 = t_2$.
 
 ## Depends on
 
-- [Big Step](big-step.md)
-- [Cmd](../syntax/cmd.md)
-- [State](../syntax/state.md)
+- [Big-step semantics of IMP](big-step.md)
+- [Commands of IMP](../syntax/cmd.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [AExp](../syntax/aexp.md)
-- [Eval](../syntax/eval.md)
-- [BExp](../syntax/bexp.md)
+- [Arithmetic expressions of IMP](../syntax/aexp.md)
+- [Evaluation of IMP arithmetic expressions](../syntax/eval.md)
+- [Boolean expressions of IMP](../syntax/bexp.md)
 - [Eval](../syntax/eval-2.md)
 
 ## Sources

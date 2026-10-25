@@ -28,7 +28,7 @@ All literals of clause `c`, from the one before `l` down to the first.
 - [Literals of a one-hot clause kind](clits.md)
 - [Per-literal step cost of the one-hot generator](lit-e.md)
 - [The one-hot generator](prog.md)
-- [Run Le](../../../../MathlibExt/turing-machine/program/run-le.md)
+- [Runs within a step budget](../../../../MathlibExt/turing-machine/program/run-le.md)
 
 ## Proof depends on
 
@@ -41,9 +41,9 @@ All literals of clause `c`, from the one before `l` down to the first.
 - [Stages of the one-hot literal routine](ls.md)
 - [Lit run](lit-run.md)
 - [Two-bit code of a slot](../../dense-sat/encode-slot.md)
-- [Bud](../../../../MathlibExt/turing-machine/program/bud.md)
-- [Run](../../../../MathlibExt/turing-machine/program/run.md)
-- [Rep](../../../../MathlibExt/turing-machine/program/rep.md)
+- [Budgeted run](../../../../MathlibExt/turing-machine/program/bud.md)
+- [Exact-length runs of a TM2 machine](../../../../MathlibExt/turing-machine/program/run.md)
+- [Repeated block](../../../../MathlibExt/turing-machine/program/rep.md)
 
 ## Sources
 

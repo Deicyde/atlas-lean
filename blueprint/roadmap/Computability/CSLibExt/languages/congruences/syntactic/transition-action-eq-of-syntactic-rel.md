@@ -6,17 +6,20 @@ proof: formalized
 lean: Cslib.Language.transitionAction_eq_of_syntacticRel
 ---
 
-# Transition Action eq of syntactic Rel
+# Syntactically equivalent words act identically
 
-On an accessible DFA, syntactic equivalence of words forces them to act identically whenever
-the DFA is state-separated.
+**Syntactically equivalent words act identically.** Let $M$ be a DFA that is accessible
+(every state is reachable from the start state) and state-separated (two states with the same
+continuation language are equal). If two words $x$ and $y$ are syntactically equivalent for the
+language accepted by $M$, then $x$ and $y$ have the same transition action on $M$: for every
+state $q$, reading $x$ from $q$ and reading $y$ from $q$ lead to the same state.
 
 ## Depends on
 
 - [Accessible](../minimality/accessible.md)
-- [State Separated](../universal/state-separated.md)
-- [Syntactic Rel](syntactic-rel.md)
-- [Transition Action](transition-action.md)
+- [State-separated DFA](../universal/state-separated.md)
+- [Syntactic equivalence](syntactic-rel.md)
+- [Transition action of a word](transition-action.md)
 
 ## Proof depends on
 

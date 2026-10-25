@@ -6,33 +6,35 @@ proof: formalized
 lean: Cslib.IMP.SepValid.frame
 ---
 
-# Frame
+# Frame rule
 
-The frame rule: a valid triple stays valid when a disjoint frame
-heap satisfying `R` is added, provided `R` does not mention variables
-the command may modify. Framed safety and termination both go through
-projection of framed executions to the small heap.
+**Frame rule.** Let $P$, $Q$ and $R$ be heap assertions and $c$ a heap command. Suppose the
+separation-logic triple with precondition $P$, command $c$ and postcondition $Q$ is valid, and
+suppose that whenever $R$ holds of a store $s$ and a heap $h$, it also holds of $s'$ and $h$ for
+every store $s'$ that agrees with $s$ on every variable outside the set of variables that $c$ may
+assign to. Then the triple with precondition $P \star R$, command $c$ and postcondition
+$Q \star R$ is valid, where $\star$ denotes separating conjunction.
 
 ## Depends on
 
-- [HAssertion](hassertion.md)
-- [Star](star.md)
+- [Heap assertion](hassertion.md)
+- [Separating conjunction](star.md)
 - [Heap](../heap/heap.md)
-- [Heap Cmd](../heap-step/heap-cmd.md)
-- [Mod Vars](../heap-step/mod-vars.md)
-- [Sep Valid](sep-valid.md)
-- [State](../syntax/state.md)
+- [Heap commands](../heap-step/heap-cmd.md)
+- [Modified variables of a heap command](../heap-step/mod-vars.md)
+- [Separation-logic triple validity](sep-valid.md)
+- [IMP program states](../syntax/state.md)
 
 ## Proof depends on
 
-- [HConfig](../heap-step/hconfig.md)
-- [HStep](../heap-step/hstep.md)
-- [Exists step frame](../heap-step/exists-step-frame.md)
-- [HSteps](../heap-step/hsteps.md)
-- [Decompose of safe](../heap-step/decompose-of-safe.md)
+- [Heap configurations](../heap-step/hconfig.md)
+- [Small-step semantics of heap commands](../heap-step/hstep.md)
+- [Adding a frame heap preserves the ability to step](../heap-step/exists-step-frame.md)
+- [Multi-step heap execution](../heap-step/hsteps.md)
+- [Frame decomposition of heap executions](../heap-step/decompose-of-safe.md)
 - [Store agree](../heap-step/store-agree-2.md)
 - [Disjoint](../heap/disjoint.md)
-- [Safe](../heap-step/safe.md)
+- [Safe heap configurations](../heap-step/safe.md)
 
 ## Sources
 

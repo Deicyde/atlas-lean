@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Algorithms.Lean.BTree.mem_fromList
 ---
 
-# Mem from List
+# Membership in a B-tree built from a list
 
-A key is in a tree built from a list exactly when it is in the list.
+**Membership in a B-tree built from a list.** Let $t \ge 2$ and let $xs$ be a list over a
+linearly ordered key type. A key $x$ belongs to the tree of minimum degree $t$ built from $xs$
+(by inserting the elements of $xs$ into the empty tree, from right to left) if and only if $x$
+is an element of $xs$.
 
 ## Depends on
 
-- [BTree](btree.md)
-- [Mem](mem.md)
-- [From List](from-list.md)
+- [Raw B-trees](btree.md)
+- [Membership in a B-tree](mem.md)
+- [B-tree built from a list](from-list.md)
 
 ## Proof depends on
 
-- [From List](from-list-2.md)
-- [Flatten](flatten.md)
-- [Flatten Aux](flatten-aux.md)
-- [Insert](insert.md)
-- [Mem insert](mem-insert.md)
+- [Building from a list yields a B-tree](from-list-2.md)
+- [Inorder flattening of a B-tree](flatten.md)
+- [Accumulating flattening of a B-tree](flatten-aux.md)
+- [B-tree insertion](insert.md)
+- [Membership after B-tree insertion](mem-insert.md)
 
 ## Sources
 

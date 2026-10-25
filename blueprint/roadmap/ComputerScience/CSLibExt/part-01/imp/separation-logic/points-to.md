@@ -5,18 +5,20 @@ statement: formalized
 lean: Cslib.IMP.HAssertion.pointsTo
 ---
 
-# Points To
+# Points-to assertion
 
-The singleton heap mapping `a` to `v`.
+**Points-to assertion.** For natural numbers $a$ and $v$, the assertion $a \mapsto v$ holds of
+a store $s$ and a heap $h$ exactly when $h$ is the singleton heap that maps the address $a$ to the
+value $v$ and allocates no other address.
 
 ## Depends on
 
-- [HAssertion](hassertion.md)
+- [Heap assertion](hassertion.md)
 
 ## Proof depends on
 
 - [Heap](../heap/heap.md)
-- [State](../syntax/state.md)
+- [IMP program states](../syntax/state.md)
 
 ## Sources
 

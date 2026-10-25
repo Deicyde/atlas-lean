@@ -6,10 +6,12 @@ proof: formalized
 lean: Cslib.Language.IsContextFree.exists_pda_accepts
 ---
 
-# Exists pda accepts
+# Context-free languages are accepted by pushdown automata
 
-Every context-free language is accepted by empty stack by a one-state
-pushdown automaton whose stack alphabet is the grammar's symbols.
+**Context-free languages are accepted by pushdown automata.** For every context-free language
+$L$ over an alphabet $T$ there are a context-free grammar $g$ over $T$ and a pushdown automaton
+with input alphabet $T$, a single state, and the terminals and nonterminals of $g$ as stack
+alphabet, whose language accepted by empty stack is $L$.
 
 ## Depends on
 
@@ -18,8 +20,8 @@ pushdown automaton whose stack alphabet is the grammar's symbols.
 
 ## Proof depends on
 
-- [Cfg PDA accepts](cfg-pda-accepts.md)
-- [Cfg PDA](cfg-pda.md)
+- [The grammar-simulating pushdown automaton accepts the grammar's language](cfg-pda-accepts.md)
+- [The pushdown automaton simulating a context-free grammar](cfg-pda.md)
 
 ## Sources
 
