@@ -45,8 +45,11 @@ public theorem test_abs_not_nonarchimedean :
 /-- The binomial-expansion bound at `n = 0` is `v (x + y) ^ 0 ≤ 1`. -/
 public theorem test_add_pow_zero (v : AbsoluteValue K ℝ)
     (hv : ∀ n : ℕ, v (n : K) ≤ 1) (x y : K) :
-    v (x + y) ^ 0 ≤ (↑(0 : ℕ) + 1) * (max (v x) (v y)) ^ 0 :=
-  v.add_pow_le_mul_max_pow_of_natCast_le_one hv x y 0
+    v (x + y) ^ 0 ≤ (↑(0 : ℕ) + 1) * (max (v x) (v y)) ^ 0 := by
+  calc
+    v (x + y) ^ 0 = v ((1 : ℕ) : K) := by simp
+    _ ≤ 1 := hv 1
+    _ = (↑(0 : ℕ) + 1) * (max (v x) (v y)) ^ 0 := by simp
 
 /-- On `ZMod 5`, every absolute value is nonarchimedean via the
 `n = 0` and positive-`n` forms agreeing: the forward direction of the iff
