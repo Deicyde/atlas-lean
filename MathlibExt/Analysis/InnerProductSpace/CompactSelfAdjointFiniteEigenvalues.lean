@@ -34,14 +34,15 @@ be pairwise orthogonal, so their images under `T` would stay `ε`-separated and
 could not have a convergent subsequence, contradicting compactness.
 
 The v1 formalization of the maximum principle is left unproved and is not
-ported here; the statement below is proved from scratch. It is also genuinely
-new against the existing library: Mathlib has only finiteness of each
-individual nonzero eigenspace (`ContinuousLinearMap.finite_dimensional_eigenspace`),
-and MathlibExt has the finiteness statement only as a `private` lemma for
-compact *normal* operators over `ℂ`
-(`CompactSpectral.aux_finite_eigenvalues`), with a public `ℂ`-only consequence
-via `compactNormal_hilbertBasis`. The theorem below is public and covers
-self-adjoint operators over any `RCLike` field.
+ported here; the statement below is proved from scratch. Mathlib's
+`Module.End.finite_hasEigenvalue` proves finiteness of all eigenvalues
+for finite-dimensional vector spaces, under `Module.Finite`. The theorem
+below applies on a complete inner-product space of arbitrary dimension:
+compactness, self-adjointness and a positive norm threshold give a finite
+set of distinct eigenvalues. A related private MathlibExt lemma,
+`CompactSpectral.aux_finite_eigenvalues`, handles compact normal operators
+over `ℂ`; `compactNormal_hilbertBasis` provides a related public spectral
+decomposition over `ℂ`.
 
 Source: `v1/Atlas/IntroductionToFunctionalAnalysis/code/SpectralTheory.lean`,
 `SpectralTheory.compact_selfAdjoint_maximum_principle`
