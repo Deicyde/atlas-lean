@@ -14,6 +14,7 @@ public import MathlibExt.Analysis.AbsoluteValue.FiniteField
 import Mathlib.Algebra.Order.AbsoluteValue.Basic
 import Mathlib.Analysis.Normed.Field.Basic
 import Mathlib.FieldTheory.Finite.Basic
+import Mathlib.NumberTheory.Ostrowski
 
 @[expose] public section
 
@@ -54,5 +55,13 @@ public theorem test_zmod5_natCast_le_one (v : AbsoluteValue (ZMod 5) ℝ)
     (n : ℕ) : v (n : ZMod 5) ≤ 1 :=
   (v.isNonarchimedean_iff_natCast_le_one.mp
     (AbsoluteValue.isNonarchimedean_of_charP (K := ZMod 5) (p := 5) v)) n
+
+/-- The positive-`n` converse applies to the nontrivial `5`-adic absolute value
+on `ℚ`, a characteristic-zero field. -/
+private theorem test_padic5_nonarchimedean :
+    IsNonarchimedean (Rat.AbsoluteValue.padic 5) := by
+  apply (AbsoluteValue.isNonarchimedean_iff_natCast_le_one_of_pos _).mpr
+  intro n _
+  simpa using Rat.AbsoluteValue.padic_le_one 5 (n : ℤ)
 
 end
