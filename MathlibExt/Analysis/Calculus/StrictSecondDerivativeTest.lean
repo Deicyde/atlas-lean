@@ -10,7 +10,7 @@ module
 
 public import Mathlib.Analysis.Calculus.DerivativeTest
 public import Mathlib.Analysis.Calculus.Deriv.MeanValue
-public import Mathlib.Topology.Order.LocalExtr
+public import MathlibExt.Topology.Order.LocalExtr
 
 /-!
 # Strict second-derivative test
@@ -21,11 +21,10 @@ Mathlib's second-derivative test
 non-strict `IsLocalMin` / `IsLocalMax`: the function value at the critical
 point is `≤` nearby values. This file adds the strict version: under the
 same hypotheses, the critical point is a *strict* local extremum, i.e. the
-inequality is strict at every distinct nearby point. Mathlib has no
-`IsStrictLocalMin` / `IsStrictLocalMax` predicate, so those are introduced
-here, together with the bridge lemmas back to Mathlib's non-strict notions
-and the negation lemmas used to derive the maximum version from the
-minimum version.
+inequality is strict at every distinct nearby point.
+`MathlibExt.Topology.Order.LocalExtr` supplies the generic strict predicates,
+the bridge lemmas back to Mathlib's non-strict notions, and the negation
+lemmas used to derive the maximum version from the minimum version.
 
 The proof goes through the sign of the first derivative: if
 `deriv (deriv f) x₀ > 0` and `deriv f x₀ = 0`, then
@@ -37,16 +36,13 @@ interval starting at `x₀` (`strictAntiOn_of_deriv_neg`,
 
 ## Main results
 
-* `IsStrictLocalMin` / `IsStrictLocalMax`: strict local extrema.
-* `IsStrictLocalMin.isLocalMin` / `IsStrictLocalMax.isLocalMax`: a strict
-  local extremum is a local extremum in Mathlib's sense.
 * `isStrictLocalMin_of_deriv_deriv_pos`: the strict second-derivative
   test, minimum version.
 * `isStrictLocalMax_of_deriv_deriv_neg`: the strict second-derivative
   test, maximum version.
 
 Source: `v1/Atlas/RealAnalysis/targets.yaml`, **Theorem (Second Derivative
-Test)**, "Derivatives section", and
+Test)**, "Taylor's Theorem section", and
 `v1/Atlas/RealAnalysis/code/Derivatives/Taylor.lean`
 (`second_derivative_test_min`). The v1 statement assumes `ContDiffAt ℝ 2`
 and concludes `IsStrictLocalMin` with `iteratedDeriv 2 f x₀ > 0`. Here the
@@ -62,53 +58,6 @@ version (absent from v1) is added.
 @[expose] public section
 
 open Filter Topology
-
-/-- `IsStrictLocalMin f a` states that `f` has a strict local minimum at
-`a`: `f a < f x` for all `x` sufficiently close to, but distinct from,
-`a`. This is Mathlib's `IsLocalMin` with the inequality strengthened to
-strict and the point `a` itself excluded. -/
-def IsStrictLocalMin {α : Type*} {β : Type*} [TopologicalSpace α] [LT β]
-    (f : α → β) (a : α) : Prop :=
-  ∀ᶠ x in 𝓝[≠] a, f a < f x
-
-/-- `IsStrictLocalMax f a` states that `f` has a strict local maximum at
-`a`: `f x < f a` for all `x` sufficiently close to, but distinct from,
-`a`. -/
-def IsStrictLocalMax {α : Type*} {β : Type*} [TopologicalSpace α] [LT β]
-    (f : α → β) (a : α) : Prop :=
-  ∀ᶠ x in 𝓝[≠] a, f x < f a
-
-/-- A strict local minimum is a local minimum in Mathlib's (non-strict)
-sense. -/
-theorem IsStrictLocalMin.isLocalMin {α : Type*} {β : Type*}
-    [TopologicalSpace α] [Preorder β] {f : α → β} {a : α}
-    (h : IsStrictLocalMin f a) : IsLocalMin f a := by
-  show ∀ᶠ x in 𝓝 a, f a ≤ f x
-  rw [← nhdsNE_sup_pure a, eventually_sup]
-  exact ⟨h.mono fun x hx => hx.le, eventually_pure.mpr le_rfl⟩
-
-/-- A strict local maximum is a local maximum in Mathlib's (non-strict)
-sense. -/
-theorem IsStrictLocalMax.isLocalMax {α : Type*} {β : Type*}
-    [TopologicalSpace α] [Preorder β] {f : α → β} {a : α}
-    (h : IsStrictLocalMax f a) : IsLocalMax f a := by
-  show ∀ᶠ x in 𝓝 a, f x ≤ f a
-  rw [← nhdsNE_sup_pure a, eventually_sup]
-  exact ⟨h.mono fun x hx => hx.le, eventually_pure.mpr le_rfl⟩
-
-/-- Negation turns a strict local minimum into a strict local maximum. -/
-theorem IsStrictLocalMin.neg {α : Type*} {β : Type*} [TopologicalSpace α]
-    [AddGroup β] [LT β] [AddLeftStrictMono β] [AddRightStrictMono β]
-    {f : α → β} {a : α} (h : IsStrictLocalMin f a) :
-    IsStrictLocalMax (fun x => -f x) a :=
-  h.mono fun _ hx => neg_lt_neg_iff.mpr hx
-
-/-- Negation turns a strict local maximum into a strict local minimum. -/
-theorem IsStrictLocalMax.neg {α : Type*} {β : Type*} [TopologicalSpace α]
-    [AddGroup β] [LT β] [AddLeftStrictMono β] [AddRightStrictMono β]
-    {f : α → β} {a : α} (h : IsStrictLocalMax f a) :
-    IsStrictLocalMin (fun x => -f x) a :=
-  h.mono fun _ hx => neg_lt_neg_iff.mpr hx
 
 /-- **Strict second-derivative test, minimum version.** If the second
 derivative of `f` at `x₀` is positive, the first derivative vanishes
