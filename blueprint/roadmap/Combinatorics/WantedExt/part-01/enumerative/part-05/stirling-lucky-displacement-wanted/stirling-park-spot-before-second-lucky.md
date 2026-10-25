@@ -15,7 +15,7 @@ cars `2, …, x - 1` park, in order, in spots `w(1) + 1, …, w(1) + x - 2`: car
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 - [Stirling Park Spot](stirling-park-spot.md)
 
 ## Sources

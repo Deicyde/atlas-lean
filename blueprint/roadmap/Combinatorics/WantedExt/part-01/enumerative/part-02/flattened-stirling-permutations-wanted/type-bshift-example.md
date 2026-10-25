@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.typeBShift_example
 ---
 
-# Type BShift example
+# An example of the shift map
 
-`h` on a small set: `h({-2, 0, 1}) = {1, 2, 3}`.
+**An example of the shift map.** For the map $h(S) = \{|i| + 1 : i \in S\}$ on finite sets
+of integers, $h(\{-2, 0, 1\}) = \{1, 2, 3\}$.
 
 ## Depends on
 
-- [Type BShift](type-bshift.md)
+- [The shift map](type-bshift.md)
 
 ## Sources
 

@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.positionalColoredCompositionCount_succ
 ---
 
-# Positional Colored Composition Count succ
+# A recurrence for positional colored compositions
 
-For `ℓ ≥ 1` and `m ∤ k`, `c_{m,k+1}(ℓ + 1) = c_{m,k+1}(ℓ) + c_{m,k}(ℓ)`. Corrected reading:
-the printed hypotheses `k ≥ 1`, `ℓ ≥ 2`, `1 ≤ m ≤ ℓ - 1` admit `m ∣ k`, where the identity fails
-(`m = 1`, `k = 1`, `ℓ = 2`: `c_{1,2}(3) = 8` but `c_{1,2}(2) + c_{1,1}(2) = 6`); the paper's
-argument (remove a first part `1` or decrease the first part) needs the first part uncolored,
-i.e. `m ∤ k`, which is the hypothesis here (the identity holds for every `ℓ ≥ 1`). The
-paper's `1 ≤ m` is kept.
+**A recurrence for positional colored compositions.** For natural numbers $m$, $k$ and $\ell$
+with $m \ge 1$, $m \nmid k$ and $\ell \ge 1$,
+$c_{m,k+1}(\ell + 1) = c_{m,k+1}(\ell) + c_{m,k}(\ell)$.
+
+The paper prints the hypotheses $k \ge 1$, $\ell \ge 2$ and $1 \le m \le \ell - 1$, which allow
+$m \mid k$; there the identity fails: for $m = 1$, $k = 1$ and $\ell = 2$ one has
+$c_{1,2}(3) = 8$ but $c_{1,2}(2) + c_{1,1}(2) = 6$. The paper's argument (remove a first part
+$1$ or decrease the first part) needs the first part to be uncolored, which is the condition
+$m \nmid k$.
 
 ## Depends on
 
-- [Positional Colored Composition Count](positional-colored-composition-count.md)
+- [Positional colored compositions](positional-colored-composition-count.md)
 
 ## Sources
 

@@ -5,18 +5,32 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.q_boundary_values
 ---
 
-# Lemma 9
+# Boundary values of lucky-car counts (Lemma 9)
 
-**Lemma 9**: the boundary values
-`q_n(n,j) = \binom{n-1}{j-1} j^{j-2} (n-j+1)^{n-j-1}`,
-`q_n(1,j) = ∑_{k=j}^n \binom{n-1}{k-1} k^{k-2} (n-k+1)^{n-k-1}`,
-`q_n(i,n) = n^{n-2}`, and
-`q_n(i,1) = (n+1)^{n-i-1} n^{i-2} (2n+1-i)`, in zero-based
-indices and in `ℚ` for the possibly negative exponents.
+**Boundary values of lucky-car counts (Lemma 9).** Let $n \ge 1$, number the cars and spots
+$0, \dots, n-1$, and let $q_n(i, j)$ be the number of parking functions of length $n$ in which
+car $i$ prefers spot $j$ and is lucky. Then for all $i, j \in \{0, \dots, n-1\}$, with powers
+taken in $\mathbb{Q}$ (the integer exponents may be negative),
+
+$$q_n(n-1, j) = \binom{n-1}{j} (j+1)^{j-1} (n-j)^{n-j-2},$$
+
+
+
+$$q_n(0, j) = \sum_{k=j+1}^{n} \binom{n-1}{k-1} k^{k-2} (n-k+1)^{n-k-1},$$
+
+
+
+$$q_n(i, n-1) = n^{n-2},$$
+
+
+
+$$q_n(i, 0) = (n+1)^{n-i-2}\, n^{i-1}\, (2n-i).$$
+
+In the one-based indexing of the source, car $i$ and spot $j$ here are car $i+1$ and spot $j+1$.
 
 ## Depends on
 
-- [Q](q.md)
+- [Lucky-car counts](q.md)
 
 ## Sources
 

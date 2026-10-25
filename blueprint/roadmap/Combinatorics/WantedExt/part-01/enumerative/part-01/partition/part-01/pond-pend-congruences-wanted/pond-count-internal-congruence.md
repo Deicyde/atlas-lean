@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pondCount_internal_congruence
 ---
 
-# Pond Count internal congruence
+# Internal congruence modulo 3 for POND partitions
 
-For all `n ≥ 0`, `pond(27n+17) ≡ pond(3n+2) (mod 3)`.
+**Internal congruence modulo 3 for POND partitions.** Let $\mathrm{pond}(m)$ be the number
+of POND partitions of $m$. For every natural number $n$,
+$\mathrm{pond}(27n + 17) \equiv \mathrm{pond}(3n + 2) \pmod{3}$.
 
 ## Depends on
 
-- [Pond Count](pond-count.md)
+- [Number of POND partitions](pond-count.md)
 
 ## Sources
 

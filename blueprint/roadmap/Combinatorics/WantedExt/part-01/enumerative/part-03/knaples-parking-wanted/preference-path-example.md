@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.preferencePath_example
 ---
 
-# Preference Path example
+# The lattice path of $(1, 3, 3, 5, 6, 6)$
 
-Characteristic example: the path of `(1, 3, 3, 5, 6, 6)` is `UDDUUDDUDUUD`.
+**The lattice path of $(1, 3, 3, 5, 6, 6)$.** The lattice path of the parking preference
+$(1, 3, 3, 5, 6, 6)$ is $\mathrm{UDDUUDDUDUUD}$, where $\mathrm{U}$ is an Up step and
+$\mathrm{D}$ a Down step.
 
 ## Depends on
 
-- [Preference Path](preference-path.md)
+- [Lattice path of a parking preference](preference-path.md)
 
 ## Sources
 

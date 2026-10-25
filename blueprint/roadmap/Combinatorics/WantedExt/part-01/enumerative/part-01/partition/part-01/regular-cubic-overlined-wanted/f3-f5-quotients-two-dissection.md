@@ -5,16 +5,40 @@ statement: formalized
 lean: MetaMathlibExt.f3_f5_quotients_two_dissection
 ---
 
-# F3 f5 quotients two dissection
+# Four 2-dissections of quotients of Euler products
 
-The 2-dissections
-(9) `f_3 / f_1 = f_4 f_6 f_16 f_24² / (f_2² f_8 f_12 f_48) + q f_6 f_8² f_48 / (f_2² f_16 f_24)`,
-(10) `f_1³ / f_3 = f_4³ / f_12 - 3q f_2² f_12³ / (f_4 f_6²)`,
-(13) `f_5 / f_1 = f_8 f_20² / (f_2² f_40) + q f_4³ f_10 f_40 / (f_2³ f_8 f_20)` and
-(14) `f_1 / f_5 = f_2 f_8 f_20³ / (f_4 f_10³ f_40) - q f_4² f_40 / (f_8 f_10²)`, each stated
-with denominators cleared (multiplied by `f_1 f_2² f_8 f_12 f_16 f_24 f_48`,
-`f_3 f_4 f_6² f_12`, `f_1 f_2³ f_8 f_20 f_40` and `f_5 f_4 f_8 f_10³ f_40` respectively).
-The lemma's other identities are stated elsewhere (see the module docstring).
+**Four 2-dissections of quotients of Euler products.** Write
+$f_k = \prod_{m \ge 1} (1 - q^{km})$ for the Euler products in the ring of integer power series
+in $q$. Then
+
+$$
+f_3 f_2^2 f_8 f_{12} f_{16} f_{24} f_{48} =
+f_1 \left(f_4 f_6 f_{16}^2 f_{24}^3 + q f_6 f_8^3 f_{12} f_{48}^2\right),
+$$
+
+
+
+$$
+f_1^3 f_4 f_6^2 f_{12} = f_3 \left(f_4^4 f_6^2 - 3 q f_2^2 f_{12}^4\right),
+$$
+
+
+
+$$
+f_5 f_2^3 f_8 f_{20} f_{40} = f_1 \left(f_2 f_8^2 f_{20}^3 + q f_4^3 f_{10} f_{40}^2\right),
+$$
+
+
+
+$$
+f_1 f_4 f_8 f_{10}^3 f_{40} = f_5 \left(f_2 f_8^2 f_{20}^3 - q f_4^3 f_{10} f_{40}^2\right).
+$$
+
+These are the 2-dissections of $f_3 / f_1$, $f_1^3 / f_3$, $f_5 / f_1$ and $f_1 / f_5$ with the
+denominators cleared; for example, the first is
+$f_3 / f_1 = \frac{f_4 f_6 f_{16} f_{24}^2}{f_2^2 f_8 f_{12} f_{48}} +
+q \frac{f_6 f_8^2 f_{48}}{f_2^2 f_{16} f_{24}}$ multiplied by
+$f_1 f_2^2 f_8 f_{12} f_{16} f_{24} f_{48}$.
 
 ## Depends on
 

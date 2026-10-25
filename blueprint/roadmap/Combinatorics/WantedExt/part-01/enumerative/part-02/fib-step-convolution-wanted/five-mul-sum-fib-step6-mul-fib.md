@@ -5,16 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.five_mul_sum_fibStep6_mul_fib
 ---
 
-# Theorem 41
+# Convolution of the Fibonacci $6$-step numbers with the Fibonacci numbers
 
-**Theorem 41**: with `s = F⁽⁶⁾`, for `n ≥ 3`,
-`5 ∑_{j=0}^n s_j F_{n-j} =
-s_{n+3} + s_{n+1} - s_n + 3s_{n-1} + s_{n-3} - F_{n+3} -
-F_{n+1}` (printed with a factor `1/5`).
+**Convolution of the Fibonacci $6$-step numbers with the Fibonacci numbers.** Write
+$s_n = F^{(6)}_n$ for the Fibonacci $6$-step numbers and $F_n = F^{(2)}_n$ for the Fibonacci
+numbers. For every natural number $n \ge 3$,
+
+$$5 \sum_{j=0}^{n} s_j F_{n-j} =
+s_{n+3} + s_{n+1} - s_n + 3 s_{n-1} + s_{n-3} - F_{n+3} - F_{n+1}.$$
+
+The source prints this identity divided by $5$.
 
 ## Depends on
 
-- [Fib Step](fib-step.md)
+- [Fibonacci $m$-step numbers](fib-step.md)
 
 ## Sources
 

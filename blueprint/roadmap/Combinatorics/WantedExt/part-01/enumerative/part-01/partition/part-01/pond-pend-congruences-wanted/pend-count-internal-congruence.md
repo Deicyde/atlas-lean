@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pendCount_internal_congruence
 ---
 
-# Pend Count internal congruence
+# Internal congruence modulo 3 for PEND partitions
 
-For all `n ≥ 0`, `pend(27n+10) ≡ pend(3n+1) (mod 3)`.
+**Internal congruence modulo 3 for PEND partitions.** Let $\mathrm{pend}(m)$ be the number
+of PEND partitions of $m$. For every natural number $n$,
+$\mathrm{pend}(27n + 10) \equiv \mathrm{pend}(3n + 1) \pmod{3}$.
 
 ## Depends on
 
-- [Pend Count](pend-count.md)
+- [The PEND partition function](pend-count.md)
 
 ## Sources
 

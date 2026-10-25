@@ -6,18 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.rectCellAction_sr_two
 ---
 
-# Rect Cell Action sr two
+# Rectangle-group cell action of the reflection r²f
 
-`sr 2` acts on cells as `r²f`, `cellR2F`.
+**Rectangle-group cell action of the reflection r²f.** Let $n, m \in \mathbb{N}$, and let
+$sr_i$ ($i \in \mathbb{Z}/4\mathbb{Z}$) denote the reflections of the dihedral group of order $8$.
+Under the rectangle-group action on the cells $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z}$
+of the $n \times m$ grid, $sr_2$ (the paper's $r^2 f$) acts as the reflection
+$(x, y) \mapsto (x, -1 - y)$.
 
 ## Depends on
 
-- [Cell R2 F](cell-r2-f.md)
-- [Rect Cell Action](rect-cell-action.md)
+- [Cell map of the reflection r²f](cell-r2-f.md)
+- [Action of the rectangle group on grid cells](rect-cell-action.md)
 
 ## Proof depends on
 
-- [Cell F](cell-f.md)
+- [Cell map of the reflection f](cell-f.md)
 
 ## Sources
 

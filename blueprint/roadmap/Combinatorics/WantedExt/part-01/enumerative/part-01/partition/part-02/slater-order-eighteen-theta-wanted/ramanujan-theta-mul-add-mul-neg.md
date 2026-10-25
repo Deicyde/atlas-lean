@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTheta_mul_add_mul_neg
 ---
 
-# Ramanujan Theta mul add mul neg
+# Ramanujan's theta function: sum of products when $ab = cd$
 
-First identity of Lemma 2 (Berndt, Entry 29(i)): if `ab = cd` and `‖ab‖ < 1`, then
-`f(a, b) f(c, d) + f(-a, -b) f(-c, -d) = 2 f(ac, bd) f(ad, bc)`. The convergence hypothesis
-`‖ab‖ < 1` is the domain of Ramanujan's `f`.
+**Ramanujan's theta function: sum of products when $ab = cd$.** Let
+$f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta function. For
+complex numbers $a, b, c, d$ with $ab = cd$ and $|ab| < 1$,
+$f(a,b) f(c,d) + f(-a,-b) f(-c,-d) = 2 f(ac,bd) f(ad,bc)$.
+
+This is Entry 29(i) of Berndt's *Ramanujan's Notebooks*; the hypothesis $|ab| < 1$ makes all
+the theta series converge.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.kPermFixedPointCount
 ---
 
-# K Perm Fixed Point Count
+# Permutations counted by cycles and fixed points
 
-The number `a(n, k, j)` of permutations of `Fin n` with exactly `k` cycles (fixed points
-counted as one-cycles) and exactly `j` fixed points.
+**Permutations counted by cycles and fixed points.** For natural numbers $n$, $k$ and $j$,
+$a(n, k, j)$ is the number of permutations of $\{0, 1, \dots, n - 1\}$ with exactly $k$ cycles
+(fixed points counted as cycles of length one) and exactly $j$ fixed points.
 
 ## Depends on
 

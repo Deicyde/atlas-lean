@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.signedInvAvoidCount_zero
 ---
 
-# Signed Inv Avoid Count zero
+# Signed inversion sequences of length zero
 
-The empty sequence is the only signed inversion sequence of length `0`, and it avoids every
-pattern: `|Ī_0(B)| = 1`.
+**Signed inversion sequences of length zero.** The empty sequence is the only signed inversion
+sequence of length $0$, and it contains no pattern, so for every finite set $B$ of length-2 signed
+patterns the number $|\bar I_0(B)|$ of signed inversion sequences of length $0$ avoiding every
+pattern of $B$ is $1$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
 
 ## Proof depends on
 
-- [Signed Inv Seq Contains](signed-inv-seq-contains.md)
+- [Containment of a length-2 signed pattern](signed-inv-seq-contains.md)
 
 ## Sources
 

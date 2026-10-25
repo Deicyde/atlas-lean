@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOdd_pentagonal_sum_eq_oddDistincts
 ---
 
-# Overpartition Odd pentagonal sum eq odd Distincts
+# Overpartitions into odd parts and partitions into distinct odd parts
 
-For `n ≥ 0`, `∑_{k ∈ ℤ} (-1)^k po(n - k(3k+1)/2) = ∑_{k ∈ ℤ} (-1)^k pdo(n - k(3k+1))`, with
-`pdo(m) = #(Nat.Partition.oddDistincts m)` the number of partitions into distinct odd parts;
-only `|k| ≤ n` can contribute.
+**Overpartitions into odd parts and partitions into distinct odd parts.** Let
+$\mathrm{po}(m)$ be the number of overpartitions of $m$ into odd parts and $\mathrm{pdo}(m)$
+the number of partitions of $m$ into distinct odd parts. For every natural number $n$, the
+sum $\sum_k (-1)^k \, \mathrm{po}(n - k(3k+1)/2)$ over the integers $k$ with
+$k(3k+1)/2 \le n$ equals the sum $\sum_k (-1)^k \, \mathrm{pdo}(n - k(3k+1))$ over the
+integers $k$ with $k(3k+1) \le n$.
 
 ## Depends on
 
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 
 ## Sources
 

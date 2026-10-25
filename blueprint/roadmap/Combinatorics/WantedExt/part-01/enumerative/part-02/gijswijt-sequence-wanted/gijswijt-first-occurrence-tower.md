@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtFirstOccurrence_tower
 ---
 
-# Gijswijt First Occurrence tower
+# Van de Pol's tower formula for first occurrences
 
-For all `n ≥ 4`, the first occurrence of `n` in Gijswijt's sequence is at position
-`2^{2^{3^{4^{⋰^{(n-2)^α}}}}}` for some real `α ∈ (n-2, n-1)`: the tower has bases
-`2, 2, 3, …, n-2`, written as `2 ^ (foldr (b ↦ x ↦ b^x) α [2, …, n-2])`.
+**Van de Pol's tower formula for first occurrences.** For every $n \ge 4$ there is a real
+number $\alpha$ with $n - 2 < \alpha < n - 1$ such that the first occurrence of $n$ in Gijswijt's
+sequence is at position $2^{2^{3^{\cdot^{\cdot^{(n-2)^{\alpha}}}}}}$, a power tower whose bases
+are $2, 2, 3, \ldots, n-2$ from the bottom up and whose top exponent is $\alpha$; for $n = 4$ it
+is $2^{2^{\alpha}}$.
 
 ## Depends on
 
-- [Gijswijt First Occurrence](gijswijt-first-occurrence.md)
+- [First occurrence of a value in a Gijswijt sequence](gijswijt-first-occurrence.md)
 
 ## Sources
 

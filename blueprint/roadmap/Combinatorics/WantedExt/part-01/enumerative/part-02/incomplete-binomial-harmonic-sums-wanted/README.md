@@ -4,10 +4,10 @@ navigation: module
 
 # Incomplete Binomial Harmonic Sums
 
-- [Inv Pow Two Sum](inv-pow-two-sum.md)
-- [Central Binom Weighted Sum](central-binom-weighted-sum.md)
-- [Sum range choose mul eq sum range choose add](sum-range-choose-mul-eq-sum-range-choose.md)
-- [Sum range choose two mul sub one mul eq](sum-range-choose-two-mul-sub-one-mul-eq.md)
-- [Sum range choose two mul mul eq](sum-range-choose-two-mul-mul-eq.md)
-- [Sum range choose two mul sub one mul harmonic](sum-range-choose-two-mul-sub-one-mul-har.md)
-- [Sum range choose two mul mul harmonic](sum-range-choose-two-mul-mul-harmonic.md)
+- [Kollár's auxiliary sum $C_n$](inv-pow-two-sum.md)
+- [Kollár's auxiliary sum $D_n$](central-binom-weighted-sum.md)
+- [Kollár's recursion for incomplete binomial sums](sum-range-choose-mul-eq-sum-range-choose.md)
+- [Kollár's recursion for incomplete binomial sums with top index $2n-1$](sum-range-choose-two-mul-sub-one-mul-eq.md)
+- [Kollár's recursion for incomplete binomial sums with top index $2n$](sum-range-choose-two-mul-mul-eq.md)
+- [Half-range binomial sum of harmonic numbers with top index $2n-1$](sum-range-choose-two-mul-sub-one-mul-har.md)
+- [Half-range binomial sum of harmonic numbers with top index $2n$](sum-range-choose-two-mul-mul-harmonic.md)

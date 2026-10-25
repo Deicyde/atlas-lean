@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.pascalDiagonalMatrix
 ---
 
-# Pascal Diagonal Matrix
+# Pascal diagonal matrices
 
-The paper's `𝖫_{d^{(m)}}(n)`: the `n × n` real matrix carrying the `m`-th diagonal
-`d^{(m)}_b = C(m + b, b)` of Pascal's triangle on its `m`-th subdiagonal (0-based entry
-`(b + m, b)`), zero elsewhere.
+**Pascal diagonal matrices.** For $m, n \ge 0$, $\mathsf{L}_{d^{(m)}}(n)$ is the $n \times n$
+real matrix that carries the $m$-th diagonal $d^{(m)}_b = \binom{m+b}{b}$ ($b \ge 0$) of Pascal's
+triangle on its $m$-th subdiagonal: with rows and columns indexed from $0$, its $(b + m, b)$ entry
+is $\binom{m+b}{b}$ for every $b$ with $b + m < n$, and all its other entries are $0$.
 
 ## Depends on
 

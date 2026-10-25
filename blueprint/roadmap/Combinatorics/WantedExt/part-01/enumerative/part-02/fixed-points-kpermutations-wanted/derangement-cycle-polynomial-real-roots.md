@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.derangementCyclePolynomial_real_roots
 ---
 
-# Derangement Cycle Polynomial real roots
+# Real-rootedness of the derangement cycle polynomial
 
-Theorem 3: for `n ≥ 2` the polynomial `D_n(x) = ∑_{k=1}^{n} d(n + k, k) x^(k-1)` has only real
-zeros, where `d(m, k) = a(m, k, 0)` counts derangements of `[m]` with `k` cycles. The terms with
-`k > n` vanish, so the upper summation limit `n` loses nothing.
+**Real-rootedness of the derangement cycle polynomial.** Write $a(m, k, j)$ for the number of
+permutations of an $m$-element set with exactly $k$ cycles (fixed points counted as cycles of
+length one) and exactly $j$ fixed points, so that $d(m, k) = a(m, k, 0)$ is the number of
+derangements of an $m$-element set with $k$ cycles. For every $n \ge 2$, the real polynomial
+$D_n(x) = \sum_{k=1}^{n} d(n + k, k) x^{k-1}$ has only real zeros.
+
+The terms with $k > n$ vanish, so the upper summation limit $n$ loses nothing.
 
 ## Depends on
 
-- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
+- [Permutations counted by cycles and fixed points](k-perm-fixed-point-count.md)
 
 ## Sources
 

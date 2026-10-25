@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.perimeterDistinctCount
 ---
 
-# Perimeter Distinct Count
+# Fixed perimeter partitions into $d$-distinct parts
 
-`h_d^(a)(n)`: the number of partitions with perimeter `n` into `d`-distinct parts `≥ a`.
+**Fixed perimeter partitions into $d$-distinct parts.** For natural numbers $d$, $a$ and $n$,
+$h_d^{(a)}(n)$ is the number of partitions of perimeter $n$ into $d$-distinct parts that are all
+at least $a$. Here the perimeter of a partition is its largest part plus its number of parts
+minus $1$, and a partition has $d$-distinct parts when no part repeats and any two parts differ
+by at least $d$.
 
 ## Depends on
 
@@ -15,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is DDistinct Parts](is-ddistinct-parts.md)
-- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
+- [Partitions into d-distinct parts](is-ddistinct-parts.md)
+- [Partitions with fixed perimeter](fixed-perimeter-partitions.md)
 
 ## Sources
 

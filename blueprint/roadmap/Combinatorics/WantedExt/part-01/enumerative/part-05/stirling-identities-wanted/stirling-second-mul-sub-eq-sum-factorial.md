@@ -5,10 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingSecond_mul_sub_eq_sum_factorial_negChoose
 ---
 
-# Stirling Second mul sub eq sum factorial neg Choose
+# Lee's identity for Stirling numbers of the second kind from higher columns
 
-Lee's Theorem 8, after clearing the denominator `n - k` and expanding
-the generalized binomial coefficient at a negative upper index.
+**Lee's identity for Stirling numbers of the second kind from higher columns.** Write
+$S(n, k)$ for the Stirling number of the second kind, the number of partitions of an $n$-element
+set into $k$ nonempty blocks. For natural numbers $k$ and $n$ with $k \ge 1$ and $n \ge k + 1$,
+the following identity of integers holds:
+
+$$(n - k)\, S(n, k) = \sum_{j=2}^{n-k+1} (j-2)!\, (-1)^j \binom{k+j-1}{j}\, S(n, k+j-1).$$
+
+This is Lee's Theorem 8 with the denominator $n - k$ cleared and the generalized binomial
+coefficient written as $\binom{-k}{j} = (-1)^j \binom{k+j-1}{j}$.
 
 ## Depends on
 

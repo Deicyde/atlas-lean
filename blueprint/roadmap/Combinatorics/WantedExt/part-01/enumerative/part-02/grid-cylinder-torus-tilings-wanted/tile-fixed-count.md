@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.tileFixedCount
 ---
 
-# Tile Fixed Count
+# Tile designs fixed by a power of a permutation
 
-The formal counterpart of `t_{g^k}`: the cardinality of the subtype of tile designs fixed
-by `σ^k`.  In particular, exponent zero represents `t_id`, while exponents one and two represent
-`t_g` and `t_{g²}`.  The explicit fixed-point subtype avoids assuming a global action on `T`.
+**Tile designs fixed by a power of a permutation.** For a finite set $T$ of tile designs, a
+permutation $\sigma$ of $T$ and a natural number $k$, this is the number of designs $d \in T$ with
+$\sigma^k(d) = d$.
 
-Formalization deviation: none beyond the representation choices stated above.
+When $\sigma$ is the action of a symmetry $g$ on tile designs, this is the paper's $t_{g^k}$; for
+$k = 0$ it is $t_{\mathrm{id}} = |T|$.
 
 ## Depends on
 

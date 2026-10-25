@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.cyclicSortingMachine_123_iterate_sorts
 ---
 
-# Cyclic Sorting Machine 123 iterate sorts
+# $n - 2$ passes of $SC_{(123)}$ sort every permutation, and $n - 3$ do not
 
-For every permutation `π` of `[n]`, `n ≥ 3`, `SC_[123]^{n-2}(π) = id_n`, and the bound is
-tight: `SC_[123]^{n-3}(ξ_n) ≠ id_n`.
+**$n - 2$ passes of $SC_{[123]}$ sort every permutation, and $n - 3$ do not.** Let $n \ge 3$
+and let $SC_{[123]}^k$ be the $k$-fold iterate of the cyclic avoidance machine $SC_{[123]}$.
+For every permutation $\pi$ of $[n] = \{1, \dots, n\}$, $SC_{[123]}^{n-2}(\pi) = 12 \cdots n$, and
+the bound is tight: $SC_{[123]}^{n-3}(\xi_n) \ne 12 \cdots n$, where $\xi_n$ lists the elements of
+$[n]$ of parity different from $n$ in increasing order, followed by those of the parity of $n$
+in increasing order.
 
 ## Depends on
 
-- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
-- [Xi Permutation](xi-permutation.md)
+- [Cyclic avoidance machine](cyclic-sorting-machine.md)
+- [The permutation $\xi_n$](xi-permutation.md)
 
 ## Sources
 

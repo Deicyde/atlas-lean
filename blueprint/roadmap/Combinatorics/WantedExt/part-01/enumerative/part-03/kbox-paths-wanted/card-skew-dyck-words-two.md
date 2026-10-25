@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.card_skewDyckWords_two
 ---
 
-# Card skew Dyck Words two
+# Three skew Dyck paths of semilength $2$
 
-There are three skew Dyck paths of semilength `2`: `UUDD`, `UDUD`, `UUDL`.
+**Three skew Dyck paths of semilength $2$.** The number of skew Dyck paths of semilength
+$2$ is $3$.
+
+They are $UUDD$, $UDUD$ and $UUDL$.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
-- [Skew Dyck Words](skew-dyck-words.md)
+- [Skew Dyck steps](skew-dyck-step.md)
+- [Skew Dyck paths of semilength $m$](skew-dyck-words.md)
 
 ## Sources
 

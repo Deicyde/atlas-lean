@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.compositionOddMinusEven_parts_ge
 ---
 
-# Composition Odd Minus Even parts ge
+# Signed count of compositions with parts at least $k$
 
-Theorem 8: for `k, n ≥ 1`, the signed count `b_{k,n}` of compositions of
-`n + k - 1` with parts at least `k` is
-`∑_{0 ≤ j ≤ (n-1)/k} (-1)^j binom(n - 1 - j(k-1), j)`.
+**Signed count of compositions with parts at least $k$.** Let $k, n \ge 1$. Among the
+compositions of $n + k - 1$ whose parts are all at least $k$, the number with an odd number of
+parts minus the number with an even number of parts equals
+$\sum_{j=0}^{\lfloor (n-1)/k \rfloor} (-1)^j \binom{n-1-j(k-1)}{j}$.
 
 ## Depends on
 
-- [Composition Odd Minus Even](composition-odd-minus-even.md)
+- [Signed count of compositions](composition-odd-minus-even.md)
 
 ## Sources
 

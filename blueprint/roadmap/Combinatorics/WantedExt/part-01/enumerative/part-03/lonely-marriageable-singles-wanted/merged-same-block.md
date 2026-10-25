@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.mergedSameBlock
 ---
 
-# Merged Same Block
+# Same block after merging two blocks
 
-`x` and `y` lie in one block of the partition obtained from `P` by merging the blocks of
-`i` and `j`: either they already share a block, or each lies in the block of `i` or of `j`
-(for singleton blocks `{i}`, `{j}` this joins them into `{i, j}`).
+**Same block after merging two blocks.** Let $P$ be a set partition of $\{0, \dots, n-1\}$ and
+let $i, j, x, y \in \{0, \dots, n-1\}$. Then $x$ and $y$ lie in the same block after merging the
+blocks of $i$ and $j$ if either $x$ and $y$ lie in the same block of $P$, or each of $x$ and $y$
+lies in the block of $i$ or in the block of $j$. For singleton blocks $\{i\}$ and $\{j\}$ this
+joins them into the block $\{i, j\}$.
 
 ## Depends on
 

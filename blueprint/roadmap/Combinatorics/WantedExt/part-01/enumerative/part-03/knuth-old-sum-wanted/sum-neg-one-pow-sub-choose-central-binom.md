@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_sub_choose_centralBinom
 ---
 
-# Sum neg one pow sub choose central Binom
+# Alternating sum of $\binom{n}{k} \binom{2k}{k}$
 
-`∑ (-1)^{n-k} binom(n,k) binom(2k,k) = ∑_{k ≤ n/2} binom(n,k) binom(n-k,k)` (both are
-the central trinomial coefficient).
+**Alternating sum of $\binom{n}{k} \binom{2k}{k}$.** For every natural number $n$,
+
+$$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \binom{2k}{k}
+= \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{k} \binom{n-k}{k}$$
+
+as integers.
+
+Both sides are the central trinomial coefficient.
 
 ## Depends on
 

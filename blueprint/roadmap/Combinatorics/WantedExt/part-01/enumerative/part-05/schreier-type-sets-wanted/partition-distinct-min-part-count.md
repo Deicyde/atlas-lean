@@ -5,11 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionDistinctMinPartCount
 ---
 
-# Partition Distinct Min Part Count
+# Partitions into distinct parts at least $\ell$
 
-`|E^d_{n,ℓ}|`: partitions of `n` into distinct parts at
-least `ℓ`, via `Nat.Partition.restricted` and
-`Nat.Partition.distincts`.
+**Partitions into distinct parts at least $\ell$.** For natural numbers $n$ and $\ell$, let
+$E^d_{n,\ell}$ be the set of partitions of $n$ into pairwise distinct parts, each at least
+$\ell$. This is its number of elements $|E^d_{n,\ell}|$.
 
 ## Depends on
 

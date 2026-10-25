@@ -6,19 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.generalizedCubicPartitionCount_generatingFunction
 ---
 
-# Generalized Cubic Partition Count generating Function
+# Generating function identity for generalized cubic partition numbers
 
-The defining identity `f_1 f_2^{c-1} ∑ a_c(n) qⁿ = 1`.
+**Generating function identity for generalized cubic partition numbers.** Let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$ be the Euler products and $a_c(n)$ the generalized cubic
+partition numbers. For every natural number $c$,
+$f_1 f_2^{c-1} \sum_{n \ge 0} a_c(n) q^n = 1$ as integer power series in $q$, where for
+$c = 0$ the exponent $c - 1$ is truncated to $0$.
 
 ## Depends on
 
-- [Generalized Cubic Partition Count](generalized-cubic-partition-count.md)
+- [Generalized cubic partition numbers](generalized-cubic-partition-count.md)
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Proof depends on
 
 - [Constant term of the Euler products](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
-- [Generalized Cubic Partition Series](generalized-cubic-partition-series.md)
+- [Generating function of generalized cubic partitions](generalized-cubic-partition-series.md)
 
 ## Sources
 

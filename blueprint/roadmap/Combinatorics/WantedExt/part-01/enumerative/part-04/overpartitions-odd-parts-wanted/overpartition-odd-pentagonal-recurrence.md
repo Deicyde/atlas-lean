@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOdd_pentagonal_recurrence
 ---
 
-# Overpartition Odd pentagonal recurrence
+# Pentagonal recurrence for overpartitions into odd parts
 
-Pentagonal recurrence for overpartitions into odd parts: for `n ≥ 0`,
-`∑_{k ∈ ℤ} (-1)^k po(n - k(3k+1)/2)` equals `(-1)^{⌈m/2⌉}` if `n = m(3m+1)/2` for some
-`m ∈ ℤ` and `0` otherwise. Only `|k|, |m| ≤ n` can contribute; `⌈m/2⌉ = ⌊(m+1)/2⌋`.
+**Pentagonal recurrence for overpartitions into odd parts.** Let $\mathrm{po}(j)$ be the
+number of overpartitions of $j$ into odd parts. For every natural number $n$, the sum
+$\sum_k (-1)^k \, \mathrm{po}(n - k(3k+1)/2)$ over the integers $k$ with $k(3k+1)/2 \le n$
+equals $(-1)^{\lceil m/2 \rceil}$ if $n = m(3m+1)/2$ for some integer $m$, and $0$ otherwise.
+
+Such an $m$ is unique, since the numbers $m(3m+1)/2$ with $m$ an integer are distinct.
 
 ## Depends on
 
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.garvanM_one
 ---
 
-# Garvan M one
+# Initial entries of the first row of Garvan's matrix
 
-`m_{1,1} = 7` and `m_{1,2} = 49` (Table 1).
+**Initial entries of the first row of Garvan's matrix.** The first two entries of the first
+row of Garvan's matrix $(m_{i,j})$ are $m_{1,1} = 7$ and $m_{1,2} = 7^2 = 49$.
 
 ## Depends on
 
-- [Garvan M](garvan-m.md)
+- [Garvan's matrix](garvan-m.md)
 
 ## Sources
 

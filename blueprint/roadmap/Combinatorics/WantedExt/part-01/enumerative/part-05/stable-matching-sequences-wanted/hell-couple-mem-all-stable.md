@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.hellCouple_mem_all_stable
 ---
 
-# Hell Couple mem all stable
+# A hell-couple belongs to every stable matching
 
-If some stable matching contains a hell-couple, every stable matching
-contains that couple.
+**A hell-couple belongs to every stable matching.** Let $P$ be a preference profile for $n$
+men and $n$ women and let $\mu$ and $\nu$ be stable matchings for $P$. If man $i$ and his wife
+$\mu(i)$ form a hell-couple in $\mu$ (each ranks the other last), then $\nu(i) = \mu(i)$.
 
 ## Depends on
 
-- [Is Hell Couple](is-hell-couple.md)
-- [Is Stable Matching](is-stable-matching.md)
-- [Preference Profile](preference-profile.md)
+- [Hell-couple](is-hell-couple.md)
+- [Stable matching](is-stable-matching.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
 
 ## Sources
 

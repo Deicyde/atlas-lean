@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsCount_two_pow_mul_four_mul_add_three
 ---
 
-# Odd Designated Summands Count two pow mul four mul add three
+# $\mathrm{PD}_2(2^\alpha (4n + 3))$ is divisible by 4
 
-For all `α, n ≥ 0`, `PD_2(2^α (4n + 3)) ≡ 0 (mod 4)`.
+**$\mathrm{PD}_2(2^\alpha (4n + 3))$ is divisible by 4.** Write $\mathrm{PD}_2(m)$ for the
+number of partitions of $m$ with designated summands in which every part is odd. For all natural
+numbers $\alpha$ and $n$, $\mathrm{PD}_2(2^\alpha (4n + 3)) \equiv 0 \pmod 4$.
 
 ## Depends on
 
-- [Odd Designated Summands Count](odd-designated-summands-count.md)
+- [The odd designated-summand partition function](odd-designated-summands-count.md)
 
 ## Sources
 

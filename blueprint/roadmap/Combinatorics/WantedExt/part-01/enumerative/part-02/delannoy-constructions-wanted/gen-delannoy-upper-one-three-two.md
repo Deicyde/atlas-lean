@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.DelannoyConstructions.genDelannoyUpper_one_three_two
 ---
 
-# Gen Delannoy Upper one three two
+# An upper generalized Delannoy number equal to $44$
 
-Table value `D^1(3, 2) = 44`.
+**An upper generalized Delannoy number equal to $44$.**
+For natural numbers $k$, $m$ and $n$, write
+$D^k(m, n) = \sum_{j=0}^{n} \binom{m + n + k - j}{n + k} \binom{n}{j}$ for the upper
+generalized Delannoy numbers. Then $D^1(3, 2) = 44$.
 
 ## Depends on
 
-- [Gen Delannoy Upper](gen-delannoy-upper.md)
+- [Generalized Delannoy number with upper index](gen-delannoy-upper.md)
 
 ## Sources
 

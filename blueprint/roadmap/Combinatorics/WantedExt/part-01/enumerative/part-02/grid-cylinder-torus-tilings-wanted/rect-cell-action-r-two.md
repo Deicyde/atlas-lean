@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.rectCellAction_r_two
 ---
 
-# Rect Cell Action r two
+# Rectangle-group cell action of the half-turn
 
-`r 2` acts on cells as the half-turn `cellR2`.
+**Rectangle-group cell action of the half-turn.** Let $n, m \in \mathbb{N}$, and let $r_i$
+($i \in \mathbb{Z}/4\mathbb{Z}$) denote the rotations of the dihedral group of order $8$. Under the
+rectangle-group action on the cells $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z}$ of the
+$n \times m$ grid, $r_2$ acts as the half-turn $(x, y) \mapsto (-1 - x, -1 - y)$.
 
 ## Depends on
 
-- [Cell R2](cell-r2.md)
-- [Rect Cell Action](rect-cell-action.md)
+- [Cell map of the half-turn r²](cell-r2.md)
+- [Action of the rectangle group on grid cells](rect-cell-action.md)
 
 ## Sources
 

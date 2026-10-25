@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsGoodSeq
 ---
 
-# Is Good Seq
+# Good sequences
 
-A sequence `s` is good if every entry `s_i` is the minimum or the maximum of
-`s_i, s_{i+1}, …`.
+**Good sequences.** A finite sequence $s = s_1 s_2 \cdots s_\ell$ of natural numbers is good if
+every entry $s_i$ is the minimum or the maximum of $s_i, s_{i+1}, \ldots, s_\ell$.
 
 ## Depends on
 

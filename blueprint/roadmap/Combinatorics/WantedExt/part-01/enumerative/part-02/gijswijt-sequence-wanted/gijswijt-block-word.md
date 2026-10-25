@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtBlockWord
 ---
 
-# Gijswijt Block Word
+# Block words
 
-`B_{u-1}^{a_{u-1}} ⋯ B_2^{a_2} B_1^{a_1}` for exponents `a_1, …, a_{u-1}` (only `a i` with
-`1 ≤ i < u` are used).
+**Block words.** For natural numbers $m$ and $u$ and exponents $a_1, a_2, \ldots$, the block
+word of order $m$ is the concatenation $B_{u-1}^{a_{u-1}} \cdots B_2^{a_2} B_1^{a_1}$, where
+$B_i = B_i^{(m)}$ is the $i$th block of the $m$th order Gijswijt sequence and $B_i^{a_i}$ is
+$a_i$ copies of $B_i$ in a row. Only $a_1, \ldots, a_{u-1}$ are used, and the word is empty when
+$u \le 1$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gijswijt Block](gijswijt-block.md)
+- [Gijswijt blocks](gijswijt-block.md)
 
 ## Sources
 

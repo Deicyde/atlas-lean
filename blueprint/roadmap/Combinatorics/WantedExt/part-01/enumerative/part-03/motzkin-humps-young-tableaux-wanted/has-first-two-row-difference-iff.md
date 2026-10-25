@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.hasFirstTwoRowDifference_iff
 ---
 
-# Has First Two Row Difference iff
+# Characterization of the first-two-row difference
 
-The characteristic row-cardinality equation for first-two-row difference `k`.
+**Characterization of the first-two-row difference.** Let $T$ assign to each entry $i < n$ a
+cell $(r_i, c_i)$ with zero-based row $r_i < n$ and column $c_i < n$, and let $\lambda_1$ and
+$\lambda_2$ be the numbers of entries $i$ with $r_i = 0$ and with $r_i = 1$ respectively. For a
+natural number $k$, $T$ has first-two-row difference $k$ if and only if
+$\lambda_1 = \lambda_2 + k$.
 
 ## Depends on
 
-- [Has First Two Row Difference](has-first-two-row-difference.md)
-- [Tableau Row Length](tableau-row-length.md)
+- [First-two-row difference of a tableau](has-first-two-row-difference.md)
+- [Row length of a tableau](tableau-row-length.md)
 
 ## Sources
 

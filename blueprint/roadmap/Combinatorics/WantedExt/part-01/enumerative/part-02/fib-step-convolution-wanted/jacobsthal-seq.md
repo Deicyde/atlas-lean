@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.jacobsthalSeq
 ---
 
-# Jacobsthal Seq
+# Jacobsthal numbers
 
-The Jacobsthal numbers `J₀ = 0`, `J₁ = 1`,
-`J_{n+2} = J_{n+1} + 2Jₙ`.
+**Jacobsthal numbers.** The Jacobsthal numbers are the integers $J_n$ defined by $J_0 = 0$,
+$J_1 = 1$ and $J_{n+2} = J_{n+1} + 2 J_n$ for all $n \ge 0$.
 
 ## Depends on
 

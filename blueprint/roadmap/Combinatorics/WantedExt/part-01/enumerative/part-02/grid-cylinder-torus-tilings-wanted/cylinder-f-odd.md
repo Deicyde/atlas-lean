@@ -5,19 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.cylinder_f_odd
 ---
 
-# Cylinder f odd
+# Cylinder fixed-tiling count for the reflection $f$ when $n$ is odd
 
-If `n` is odd, the cylinder reflection-`f` shift-sum is
-`n t_id^((nm-m)/2)t_f^m`.  The fixed-point count is `tileFixedCount σ 1`, and `σ²=1` records
-the reflection order on every tile set.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Cylinder fixed-tiling count for the reflection $f$ when $n$ is odd.** Let $T$ be a finite set
+of tile designs, let $n, m \ge 1$ with $n$ odd, and let $\sigma$ be a permutation of $T$ with
+$\sigma^2 = 1$. Let $f$ be the cell map $(x, y) \mapsto (-1 - x, y)$ of
+$\mathbb{Z}/n \times \mathbb{Z}/m$, and let $t$ be the number of designs fixed by $\sigma$. Then
+the cylinder shift sum of $f$ and $\sigma$ equals $n \cdot |T|^{(nm - m)/2} \cdot t^m$.
 
 ## Depends on
 
-- [Cell F](cell-f.md)
-- [Cylinder Shift Sum](cylinder-shift-sum.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the reflection f](cell-f.md)
+- [Cylinder shift sum](cylinder-shift-sum.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

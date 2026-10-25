@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsMultAtLeast_pentagonal_eq_posRank
 ---
 
-# Sum Distinct Parts Mult At Least pentagonal eq pos Rank
+# Pentagonal sum of $s_m$ and positive rank
 
-For `m ≥ 1`, `∑_{j ≥ 1} (-1)^{j+1} s_m(n - j(3j+1)/2) = ∑_{j ≥ 0} j R(n - mj)`, with `R(k)`
-the number of partitions of `k` with positive rank. The paper says `m ≥ 0`; for `m = 0` the
-right side diverges.
+**Pentagonal sum of $s_m$ and positive rank.** Let $m \ge 1$ and $n$ be natural numbers.
+Write $s_m(k)$ for the sum of the different parts that appear at least $m$ times in partitions
+of $k$, and $R(k)$ for the number of partitions of $k$ with positive Dyson rank. Then
+
+$$
+\sum_{j \ge 1,\ j(3j+1)/2 \le n} (-1)^{j+1} s_m\bigl(n - j(3j+1)/2\bigr)
+= \sum_{j \ge 0,\ mj \le n} j\, R(n - mj).
+$$
+
+The paper says $m \ge 0$; for $m = 0$ the right side diverges.
 
 ## Depends on
 
-- [Dyson Rank](dyson-rank.md)
-- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
+- [Dyson's rank of a partition](dyson-rank.md)
+- [Sum of different parts appearing at least $m$ times](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

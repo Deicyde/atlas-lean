@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount_three_formula
 ---
 
-# Max Rook Partition Count three formula
+# Quasi-polynomial formula for partitions with max-rook number 3
 
-Exact formula for `R_3(n)`, `n = 3m + a > 9`, `0 ≤ a ≤ 2`:
-`6m² - 15m + 7`, `6m² - 11m + 2`, `6m² - 7m - 1` for `a = 0, 1, 2`.
+**Quasi-polynomial formula for partitions with max-rook number 3.** Let $R_3(n)$ be the number
+of partitions of $n$ with max-rook number $3$. For every natural number $m$ and every
+$a \in \{0, 1, 2\}$ with $3m + a > 9$, $R_3(3m + a)$ equals $6m^2 - 15m + 7$, $6m^2 - 11m + 2$
+or $6m^2 - 7m - 1$ according as $a = 0$, $a = 1$ or $a = 2$.
 
 ## Depends on
 
-- [Max Rook Partition Count](max-rook-partition-count.md)
+- [Partitions with a given max-rook number](max-rook-partition-count.md)
 
 ## Sources
 

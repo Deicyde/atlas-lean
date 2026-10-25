@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.galeShapleyRounds_of_same_taste
 ---
 
-# Gale Shapley Rounds of same taste
+# Gale–Shapley rounds when all men have the same preferences
 
-If all men rank the women in the same order, the men-proposing
-Gale–Shapley algorithm ends in exactly `n` rounds.
+**Gale–Shapley rounds when all men have the same preferences.** Let $P$ be a preference
+profile for $n$ men and $n$ women in which all men rank the women in the same order. Then the
+men-proposing Gale–Shapley algorithm on $P$ ends in exactly $n$ rounds.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
-- [Gale Shapley Rounds](gale-shapley-rounds.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Number of Gale–Shapley rounds](gale-shapley-rounds.md)
 
 ## Sources
 

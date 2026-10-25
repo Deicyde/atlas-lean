@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.qInc_eq
 ---
 
-# Lemma 18
+# Increasing lucky-car counts (Lemma 18)
 
-**Lemma 18**: `q_n^i(i,j) = C_{i-1} C_{n-i+1}` if
-`i = j` and `0` else (`C` Catalan; zero-based:
-`catalan i * catalan (n - i)` on the diagonal).
+**Increasing lucky-car counts (Lemma 18).** Number the cars and spots $0, \dots, n-1$, let
+$q^{\mathrm{inc}}_n(i, j)$ be the number of weakly increasing parking functions of length $n$ in
+which car $i$ prefers spot $j$ and is lucky, and let $C_m$ be the $m$-th Catalan number. For all
+$i, j \in \{0, \dots, n-1\}$, $q^{\mathrm{inc}}_n(i, j) = C_i \, C_{n-i}$ if $i = j$, and
+$q^{\mathrm{inc}}_n(i, j) = 0$ otherwise.
+
+In the one-based indexing of the source the diagonal value reads $C_{i-1} C_{n-i+1}$.
 
 ## Depends on
 
-- [Q Inc](q-inc.md)
+- [Increasing lucky-car counts](q-inc.md)
 
 ## Sources
 

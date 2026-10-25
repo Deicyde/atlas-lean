@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.hypersequence_one_zero
 ---
 
-# Hypersequence one zero
+# First hypersequence at index zero
 
-`a^{(1)}_0 = a_0`.
+**First hypersequence at index zero.** Let $(a_n)$ be a sequence in an additive commutative
+monoid and let $a^{(1)}_n$ denote its hypersequence of generation $1$. Then $a^{(1)}_0 = a_0$.
 
 ## Depends on
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.regularTripartitionCount_two_mod_twelve
 ---
 
-# Regular Tripartition Count two mod twelve
+# Mod 12 congruences for 2-regular tripartitions
 
-For all `α, n ≥ 0`, with `A_α = ∑_{i=0}^{2α+1} 3^{2i}` and `B_α = ∑_{i=0}^{2α} 3^{2i}`:
-`T_2(3^{4α+4} n + A_α + 3^{4α+3}) ≡ T_2(3^{4α+4} n + A_α + 2·3^{4α+3}) ≡ 0 (mod 12)` and
-`T_2(3^{4α+2} n + B_α + 3^{4α+1}) ≡ T_2(3^{4α+2} n + B_α + 2·3^{4α+1}) ≡ 0 (mod 12)`.
+**Mod 12 congruences for 2-regular tripartitions.** Let $T_2(n)$ be the number of 2-regular
+tripartitions of $n$. For all natural numbers $\alpha$ and $n$, put
+$A_\alpha = \sum_{i=0}^{2\alpha+1} 3^{2i}$ and $B_\alpha = \sum_{i=0}^{2\alpha} 3^{2i}$. Then $12$
+divides each of $T_2(3^{4\alpha+4} n + A_\alpha + 3^{4\alpha+3})$,
+$T_2(3^{4\alpha+4} n + A_\alpha + 2 \cdot 3^{4\alpha+3})$,
+$T_2(3^{4\alpha+2} n + B_\alpha + 3^{4\alpha+1})$ and
+$T_2(3^{4\alpha+2} n + B_\alpha + 2 \cdot 3^{4\alpha+1})$.
 
 ## Depends on
 
-- [Regular Tripartition Count](regular-tripartition-count.md)
+- [Regular tripartition counts](regular-tripartition-count.md)
 
 ## Sources
 

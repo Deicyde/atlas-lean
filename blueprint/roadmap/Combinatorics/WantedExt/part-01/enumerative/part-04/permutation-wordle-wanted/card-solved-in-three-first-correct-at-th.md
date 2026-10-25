@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_solvedIn_three_firstCorrectAt_three
 ---
 
-# Theorem 11
+# A unique three-guess solve with no early correct position
 
-**Theorem 11.** If `S[n]` is an `n`-cycle and `n ≥ 4`, exactly one permutation is guessed
-in exactly three guesses with `ρ_S(π) = 3`.
+**A unique three-guess solve with no early correct position.** Let $n \ge 4$ and let $S$ be
+a permutation Wordle strategy (a permutation $S[m]$ of $\{0, \dots, m-1\}$ for each $m$) whose
+component $S[n]$ is an $n$-cycle. Exactly one permutation $\pi$ of $\{0, \dots, n-1\}$ is
+guessed by $S$ in exactly three guesses with the third guess being the first guess that has a
+correct position.
 
 ## Depends on
 
-- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
-- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [First guess with a correct position in permutation Wordle](perm-wordle-first-correct-at.md)
+- [Permutation Wordle games solved in a given number of guesses](perm-wordle-solved-in.md)
 
 ## Sources
 

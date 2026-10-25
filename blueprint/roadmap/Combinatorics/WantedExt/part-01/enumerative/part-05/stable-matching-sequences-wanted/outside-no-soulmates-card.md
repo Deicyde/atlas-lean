@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.outside_no_soulmates_card
 ---
 
-# Outside no soulmates card
+# Outsiders without soulmate pairs
 
-The paper's `S(k, n)`: fix a group of `k` men and `k` women and ignore their
-preferences; the remaining `n - k` men (here the men `k, …, n - 1`) and
-`n - k` women (the women `k, …, n - 1`), each ranking all `n` people of the
-other gender, have no soulmate pair among themselves in exactly
-`∑_{i=0}^{n-k} (-1)^i C(n-k, i)² ((n-1)!)^{2i} i! (n!)^{2n-2k-2i}` ways.
+**Outsiders without soulmate pairs.** Let $n$ and $k$ be natural numbers, where $n - k$ is
+read as $0$ when $k > n$. Consider the $n - k$ men $k, \dots, n - 1$ and the $n - k$ women
+$k, \dots, n - 1$ among $n$ men and $n$ women numbered from $0$, where each of these men ranks all
+$n$ women and each of these women ranks all $n$ men. The number of ways to choose these rankings
+so that no man and woman among them each rank the other first is
+
+$$\sum_{i=0}^{n-k} (-1)^i \binom{n-k}{i}^2 ((n-1)!)^{2i}\, i!\, (n!)^{2(n-k-i)}.$$
+
+This number is the paper's $S(k, n)$: the preferences of the remaining $k$ men and $k$ women are
+ignored.
 
 ## Depends on
 

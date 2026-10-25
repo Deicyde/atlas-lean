@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.seven_pow_dvd_garvanYEven
 ---
 
-# Lemma 5
+# 7-adic bounds for the vectors $y^{(2k)}_\beta$
 
-**Lemma 5.** For `j, k ≥ 1` and `β ≥ 0`, `π(y^{(2k)}_{2β+1,j}) ≥ k + β + ⌊(7j-7)/4⌋` and
-`π(y^{(2k)}_{2β+2,j}) ≥ k + β + 1 + ⌊(7j-7)/4⌋` (`π` the `7`-adic valuation, stated as
-divisibility).
+**7-adic bounds for the vectors $y^{(2k)}_\beta$.** Let $y^{(2k)}_\beta$ be the coefficient
+vectors for even powers of $7$, built from Garvan's vectors and matrix. For all $k, j \ge 1$ and
+$\beta \ge 0$, $7^{k + \beta + \lfloor (7j-7)/4 \rfloor}$ divides $y^{(2k)}_{2\beta+1,j}$ and
+$7^{k + \beta + 1 + \lfloor (7j-7)/4 \rfloor}$ divides $y^{(2k)}_{2\beta+2,j}$.
 
 ## Depends on
 
-- [Garvan YEven](garvan-yeven.md)
+- [Coefficient vectors for even powers of 7](garvan-yeven.md)
 
 ## Sources
 

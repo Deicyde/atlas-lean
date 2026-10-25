@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_choose_gammaBinom_complement
 ---
 
-# Sum neg one pow choose gamma Binom complement
+# Alternating convolution of generalized central binomial coefficients
 
-`∑_{k=0}^n (-1)^k binom(n,k) binom(2k+v, (2k+v)/2) binom(2n-2k+v, (2n-2k+v)/2)
-binom(n+v, (2k+v)/2)^{-1}` is `2^n binom(n, n/2) binom(v, v/2) binom((n+v)/2, v/2)^{-1}`
-for even `n` and `0` for odd `n`, for real `v > -1`.
+**Alternating convolution of generalized central binomial coefficients.** For every
+natural number $n$ and every real $v > -1$, the sum
+
+$$
+\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{2k+v}{(2k+v)/2} \binom{2n-2k+v}{(2n-2k+v)/2}
+\binom{n+v}{(2k+v)/2}^{-1}
+$$
+
+equals $2^n \binom{n}{n/2} \binom{v}{v/2} \binom{(n+v)/2}{v/2}^{-1}$ when $n$ is even and $0$
+when $n$ is odd. Here $\binom{n}{k}$ and $\binom{n}{n/2}$ are ordinary binomial coefficients and
+otherwise $\binom{a}{b} = \Gamma(a+1)/(\Gamma(b+1)\Gamma(a-b+1))$ is the generalized binomial
+coefficient of complex numbers $a, b$.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

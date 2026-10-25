@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.schreierParentD_rec
 ---
 
-# Schreier Parent D rec
+# Recurrence for the parent sequence
 
-`d_{u,n} = d_{u,n-u} + d_{u,n-2u+1}` for `u ≥ 1` and `n ≥ 2u`.
+**Recurrence for the parent sequence.** For all natural numbers $u \ge 1$ and $n \ge 2u$, the
+parent sequence $d_{u,n}$ satisfies $d_{u,n} = d_{u,n-u} + d_{u,n-2u+1}$.
 
 ## Depends on
 
-- [Schreier Parent D](schreier-parent-d.md)
+- [The parent sequence $d_{u,n}$](schreier-parent-d.md)
 
 ## Sources
 

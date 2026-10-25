@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.card_absolute_maximalSetsOfLanes
 ---
 
-# Card absolute maximal Sets Of Lanes
+# Absolute maximal sets of lanes are counted by lonely singles partitions
 
-The number of absolute MSL of a standard road intersection of size `n` is `L_n`.
+**Absolute maximal sets of lanes are counted by lonely singles partitions.** For every
+$n \ge 0$, the number of absolute maximal sets of lanes of the standard road intersection of
+size $n$ equals $L_n$, the number of noncrossing partitions of $\{0, \dots, n-1\}$ that are not
+marriageable singles partitions.
 
 ## Depends on
 
-- [Is Absolute Maximal Set Of Lanes](is-absolute-maximal-set-of-lanes.md)
-- [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
-- [Lanes Meet](lanes-meet.md)
-- [Lonely Singles Count](lonely-singles-count.md)
+- [Absolute maximal set of lanes](is-absolute-maximal-set-of-lanes.md)
+- [Maximal set of lanes](is-maximal-set-of-lanes.md)
+- [Lanes with a common point](lanes-meet.md)
+- [Number of lonely singles partitions](lonely-singles-count.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ factor of the recurrence as `R^k_{j-1}(a, b)`; it is `R^k_{j-1}(0, b)`, the case
 
 ## Depends on
 
-- [Mitrinovic R](mitrinovic-r.md)
+- [Mitrinović's numbers](mitrinovic-r.md)
 
 ## Sources
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.IsAscentSeq
 ---
 
-# Is Ascent Seq
+# Ascent sequences
 
-Ascent sequences: `w₁ = 0` and `wᵢ ≤ asc(w₁ ⋯ w_{i-1}) + 1`.
+**Ascent sequences.** A finite sequence $w_1 w_2 \cdots w_n$ of natural numbers is an
+ascent sequence when $w_1 = 0$ (if $n \ge 1$) and
+$w_i \le \operatorname{asc}(w_1 \cdots w_{i-1}) + 1$ for every $1 \le i \le n$, where
+$\operatorname{asc}(v)$ counts the positions $j$ with $v_j < v_{j+1}$. In particular the empty
+sequence is an ascent sequence.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Word Ascents](word-ascents.md)
+- [Number of ascents of a word](word-ascents.md)
 
 ## Sources
 

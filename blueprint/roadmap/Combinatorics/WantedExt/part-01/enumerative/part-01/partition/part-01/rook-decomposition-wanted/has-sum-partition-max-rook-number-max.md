@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.hasSum_partitionMaxRookNumberMax
 ---
 
-# Has Sum partition Max Rook Number Max
+# Generating function of the largest max-rook number
 
-Generating function of `F(n)`: for `|q| < 1`,
-`∑_{n ≥ 0} F(n) qⁿ = ((q²;q²)_∞ (-q;q)_∞ - q) / (1 - q)`.
+**Generating function of the largest max-rook number.** Let $F(n)$ be the largest max-rook
+number of a partition of $n$ for $n \ge 1$, and $F(0) = 1$. For every complex number $q$ with
+$|q| < 1$, the series $\sum_{n \ge 0} F(n) q^n$ is summable with sum
+
+$$\frac{(q^2;q^2)_\infty \, (-q;q)_\infty - q}{1 - q},$$
+
+where $(a;q)_\infty = \prod_{k \ge 0} (1 - a q^k)$ is the infinite q-Pochhammer symbol.
 
 ## Depends on
 
 - [Infinite q-Pochhammer symbol](../../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
-- [Partition Max Rook Number Max](partition-max-rook-number-max.md)
+- [Largest max-rook number among partitions of $n$](partition-max-rook-number-max.md)
 
 ## Sources
 

@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.king_permutation_hasPattern_classical
 ---
 
-# King permutation has Pattern classical
+# King permutations of length at least $2$ contain $12$, $21$, $132$, $213$, $231$ and $312$
 
-Classical part of Theorem 1: for `n ≥ 2` no king permutation of length `n` avoids any of
-the classical patterns `12`, `21`, `132`, `213`, `231`, `312`; that is, every permutation of
-length `n ≥ 2` whose adjacent entries never differ by exactly `1` contains each of them.
-Patterns are zero-based value functions for `HasPattern`, so `132` is `![0, 2, 1]`. The
-nine partially ordered patterns in the theorem's pattern set are not stated (their diagrams
-are lost in the extracted record).
+**King permutations of length at least $2$ contain $12$, $21$, $132$, $213$, $231$ and $312$.**
+For every $n \ge 2$, every permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$ in which adjacent
+entries never differ by exactly $1$, that is, $|\sigma(i + 1) - \sigma(i)| \ne 1$ whenever
+$i + 1 < n$, contains each of the classical patterns $12$, $21$, $132$, $213$, $231$ and $312$.
+
+Theorem 1 also lists nine partially ordered patterns that no such permutation avoids; they are
+not part of this statement.
 
 ## Depends on
 
-- [Has Pattern](../../part-04/odd-fibonacci-wanted/has-pattern.md)
+- [Classical pattern containment in a permutation](../../part-04/odd-fibonacci-wanted/has-pattern.md)
 
 ## Sources
 

@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.seven_pow_dvd_garvanYOdd
 ---
 
-# Lemma 6
+# 7-adic bounds for the vectors $y^{(2k-1)}_\beta$
 
-**Lemma 6.** For `j, k ≥ 1` and `β ≥ 0`, `π(y^{(2k-1)}_{β+1,j}) ≥ k + ⌊(7j-7)/4⌋` (`π` the
-`7`-adic valuation, stated as divisibility).
+**7-adic bounds for the vectors $y^{(2k-1)}_\beta$.** Let $y^{(2k-1)}_\beta$ be the
+coefficient vectors for odd powers of $7$, built from Garvan's vectors and matrix. For all
+$k, j \ge 1$ and $\beta \ge 0$, $7^{k + \lfloor (7j-7)/4 \rfloor}$ divides $y^{(2k-1)}_{\beta+1,j}$.
 
 ## Depends on
 
-- [Garvan YOdd](garvan-yodd.md)
+- [Coefficient vectors for odd powers of 7](garvan-yodd.md)
 
 ## Sources
 

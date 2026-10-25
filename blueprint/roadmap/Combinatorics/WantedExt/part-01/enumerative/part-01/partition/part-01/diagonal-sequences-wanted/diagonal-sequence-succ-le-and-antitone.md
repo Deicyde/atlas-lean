@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.diagonalSequence_succ_le_and_antitone
 ---
 
-# Diagonal Sequence succ le and antitone
+# Increments of the diagonal sequence
 
-Lemma 1: `d_{k+1} - d_k ≤ 1`, with equality iff `d_j = j` for all `1 ≤ j ≤ k + 1`; and if
-`d_k ≥ d_{k+1}` then `d_{k+1} ≥ d_{k+2}`. Stated for every `k`, including `k = 0` (`d_0 = 0`).
+**Increments of the diagonal sequence.** Let $\alpha$ be a partition of $n$ with diagonal
+sequence $(d_k)_{k \ge 0}$, where $d_0 = 0$, and let $k \ge 0$. Then $d_{k+1} \le d_k + 1$, with
+equality if and only if $d_j = j$ for every $j$ with $1 \le j \le k + 1$. Moreover, if
+$d_{k+1} \le d_k$, then $d_{k+2} \le d_{k+1}$.
 
 ## Depends on
 
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

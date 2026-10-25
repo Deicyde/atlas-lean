@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.zuritaM
 ---
 
-# Zurita M
+# Zurita's polynomial $M_{n-1}$
 
-`M_{n-1}(x) = ∑_{k=0}^{n-1} m_k x^k` as a real function.
+**Zurita's polynomial $M_{n-1}$.** For a natural number $n$, let $m_0, m_1, \dots$ be Zurita's
+coefficients, given by $m_0 = 2/(2n - 1)$ and $m_k = \frac{2(k - n)}{2k - 2n + 1}\, m_{k-1}$ for
+$k \ge 1$. Then $M_{n-1}$ is the real polynomial function
+$M_{n-1}(x) = \sum_{k=0}^{n-1} m_k x^k$ (so $M_{-1} = 0$).
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zurita MCoeff](zurita-mcoeff.md)
+- [Zurita's coefficients $m_k$](zurita-mcoeff.md)
 
 ## Sources
 

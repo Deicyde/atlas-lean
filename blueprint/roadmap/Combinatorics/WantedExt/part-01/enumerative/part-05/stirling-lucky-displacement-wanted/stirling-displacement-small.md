@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.stirlingDisplacement_small
 ---
 
-# Stirling Displacement small
+# Displacement compositions of 1122 and 11244233
 
-Characteristic values: `dis(1122) = (0, 1, 1, 2)` and `dis(11244233) =
-(0, 1, 1, 0, 1, 4, 4, 5)` (the paper's Example 5.5).
+**Displacement compositions of 1122 and 11244233.** The displacement composition of a word
+$w = w_1 \cdots w_{2n}$ is $\mathrm{dis}(w) = (d(1), \dots, d(2n))$, where $d(i)$ is the
+displacement of car $i$. For the Stirling permutations $1122$ of order $2$ and $11244233$ of
+order $4$, $\mathrm{dis}(1122) = (0, 1, 1, 2)$ and
+$\mathrm{dis}(11244233) = (0, 1, 1, 0, 1, 4, 4, 5)$ (the paper's Example 5.5).
 
 ## Depends on
 
-- [Stirling Displacement](stirling-displacement.md)
+- [Displacement of a car](stirling-displacement.md)
 
 ## Sources
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.minusculePolynomialA_isRealRooted
 ---
 
-# Minuscule Polynomial A is Real Rooted
+# Real-rootedness of the minuscule polynomials
 
-Real-rootedness: every complex root of `N_n(x)` is real. Stated for every `n : ℕ`; the paper
-says positive `n`, and `N_0 = 0` has no roots.
+**Real-rootedness of the minuscule polynomials.** For every natural number $n$, the type-A
+minuscule polynomial $N_n$, viewed as a complex polynomial, is real-rooted: every element of its
+multiset of roots is real.
+
+The paper states this for positive $n$; for $n \le 1$ the polynomial $N_n$ is $0$, whose multiset
+of roots is taken to be empty.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 - [Real-rooted polynomials](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
 
 ## Sources

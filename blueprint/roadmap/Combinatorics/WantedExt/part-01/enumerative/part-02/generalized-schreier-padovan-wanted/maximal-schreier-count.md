@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.maximalSchreierCount
 ---
 
-# Maximal Schreier Count
+# Number of maximal $(p, q)$-Schreier sets
 
-`|M^{p/q}_n|`, the number of maximal `(p, q)`-Schreier sets with maximum `n`: subsets
-`F ⊆ {1, …, n}` with `n ∈ F` and `q min F = p |F|`.
+**Number of maximal $(p, q)$-Schreier sets.** For natural numbers $p$, $q$ and $n$,
+$|M^{p/q}_n|$ is the number of maximal $(p, q)$-Schreier sets with maximum $n$, that is, of sets
+$F \subseteq \{1, \dots, n\}$ with $n \in F$ and $q \min F = p |F|$.
 
 ## Depends on
 

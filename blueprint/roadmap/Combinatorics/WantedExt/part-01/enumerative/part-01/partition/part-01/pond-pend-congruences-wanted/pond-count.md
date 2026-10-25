@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.pondCount
 ---
 
-# Pond Count
+# Number of POND partitions
 
-`pond(n)`: the number of POND partitions of `n` (OEIS A265256).
+**Number of POND partitions.** For a natural number $n$, $\mathrm{pond}(n)$ is the number of
+partitions of $n$ that are POND, that is, in which every odd part that occurs has multiplicity
+at least $2$ (OEIS A265256).
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Pond Parts](is-pond-parts.md)
+- [The POND condition](is-pond-parts.md)
 
 ## Sources
 

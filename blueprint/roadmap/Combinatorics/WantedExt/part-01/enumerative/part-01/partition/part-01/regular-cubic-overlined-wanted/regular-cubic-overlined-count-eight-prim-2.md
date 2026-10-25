@@ -5,19 +5,36 @@ statement: formalized
 lean: MetaMathlibExt.regularCubicOverlinedCount_eight_prime_mod_sixteen
 ---
 
-# Regular Cubic Overlined Count eight prime mod sixteen
+# Congruences modulo 16 for 8-regular cubic partitions with odd parts overlined
 
-For a prime `p ≥ 5` with `(-6/p) = -1`, `s = (±p - 1)/6` as in Theorem 9, all
-`δ, n ≥ 0` and `1 ≤ t ≤ p - 1`:
-(105) `∑ a_8(4p^{2δ} n + (25p^{2δ} - 7)/6) qⁿ ≡ 8(-1)^{δs} f_1 ψ(q⁸) (mod 16)`, with
-`ψ(q⁸) = f_16² / f_8`, stated after multiplying both sides by `f_8`;
-(106) `a_8(4p^{2δ+2} n + 4p^{2δ+1} t + (25p^{2δ+2} - 7)/6) ≡ 0 (mod 16)`.
-The divisions are exact.
+**Congruences modulo 16 for 8-regular cubic partitions with odd parts overlined.** Write
+$f_k = \prod_{m \ge 1} (1 - q^{km})$ for the Euler products in the ring of integer power series
+in $q$, and $a_8(n)$ for the $n$th coefficient of $f_2 f_8^2 f_{32} / (f_1^2 f_4 f_{16})$, the
+number of $8$-regular cubic partitions of $n$ with odd parts overlined. Let $p \ge 5$ be a prime
+with Legendre symbol $\left(\frac{-6}{p}\right) = -1$, let $s = (p - 1)/6$ if $p \equiv 1 \pmod 6$
+and $s = (-p - 1)/6$ otherwise, and let $\delta \ge 0$. Then, comparing coefficients of power
+series in $q$,
+
+$$
+f_8 \sum_{n \ge 0} a_8\left(4p^{2\delta} n + \frac{25p^{2\delta} - 7}{6}\right) q^n \equiv
+8 (-1)^{\delta s} f_1 f_{16}^2 \pmod{16},
+$$
+
+and for all $n \ge 0$ and $1 \le t \le p - 1$,
+
+$$
+a_8\left(4p^{2\delta+2} n + 4p^{2\delta+1} t + \frac{25p^{2\delta+2} - 7}{6}\right) \equiv 0
+\pmod{16}.
+$$
+
+The divisions by $6$ are exact. With $\psi(q^8) = f_{16}^2 / f_8$, the first congruence is
+the paper's $\sum_n a_8(\ldots) q^n \equiv 8 (-1)^{\delta s} f_1 \psi(q^8) \pmod{16}$
+multiplied by $f_8$.
 
 ## Depends on
 
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
-- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
+- [ℓ-regular cubic partitions with odd parts overlined](regular-cubic-overlined-count.md)
 
 ## Sources
 

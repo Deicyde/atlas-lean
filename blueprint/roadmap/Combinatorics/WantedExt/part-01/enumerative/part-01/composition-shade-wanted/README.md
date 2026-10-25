@@ -4,10 +4,10 @@ navigation: module
 
 # Composition Shade
 
-- [Composition Shade](composition-shade.md)
-- [Total Composition Shade](total-composition-shade.md)
-- [Composition Shade four](composition-shade-four.md)
-- [Composition Shade one three](composition-shade-one-three.md)
-- [Composition Shade le total Composition Shade](composition-shade-le-total-composition-s.md)
-- [Total Composition Shade zero](total-composition-shade-zero.md)
-- [Total Composition Shade generating Function](total-composition-shade-generating-funct.md)
+- [Shade of a composition](composition-shade.md)
+- [Total shade of compositions](total-composition-shade.md)
+- [Shade of the composition 4](composition-shade-four.md)
+- [Shade of the composition 1 + 3](composition-shade-one-three.md)
+- [The total shade bounds the shade of each composition](composition-shade-le-total-composition-s.md)
+- [Total shade of the compositions of zero](total-composition-shade-zero.md)
+- [Generating function for the total shade of compositions](total-composition-shade-generating-funct.md)

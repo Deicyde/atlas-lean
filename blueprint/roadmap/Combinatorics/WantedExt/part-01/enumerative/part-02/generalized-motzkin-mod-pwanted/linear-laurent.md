@@ -5,12 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.linearLaurent
 ---
 
-# Linear Laurent
+# Laurent polynomials of degree at most one
 
-The general degree-at-most-one Laurent polynomial `α x⁻¹ + β + γ x`; the degree-one hypotheses
-in Lemma 1 are imposed on the coefficients at the theorem statement. Source: Nadav Kohen, *Density
-and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Lemma
-1.
+**Laurent polynomials of degree at most one.** For integers $\alpha, \beta, \gamma$, this is the
+Laurent polynomial $\alpha x^{-1} + \beta + \gamma x$ with integer coefficients.
 
 ## Depends on
 
@@ -19,3 +17,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Lemma 1. The degree-one hypotheses of Lemma 1 are imposed on the coefficients in the statements that use this polynomial.

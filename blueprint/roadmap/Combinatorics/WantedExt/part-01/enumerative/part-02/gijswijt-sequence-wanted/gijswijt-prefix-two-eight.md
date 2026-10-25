@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.gijswijtPrefix_two_eight
 ---
 
-# Gijswijt Prefix two eight
+# Initial terms of the second-order Gijswijt sequence
 
-`A^{(2)}` starts `2, 2, 2, 3, 2, 2, 2, 3`.
+**Initial terms of the second-order Gijswijt sequence.** The first eight terms of the
+second-order sequence $A^{(2)}$ are $2, 2, 2, 3, 2, 2, 2, 3$.
 
 ## Depends on
 
-- [Gijswijt Prefix](gijswijt-prefix.md)
+- [Prefixes of the $m$th order Gijswijt sequence](gijswijt-prefix.md)
 
 ## Sources
 

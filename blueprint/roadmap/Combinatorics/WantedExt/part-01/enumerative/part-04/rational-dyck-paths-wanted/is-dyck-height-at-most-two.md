@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsDyckHeightAtMostTwo
 ---
 
-# Is Dyck Height At Most Two
+# Dyck words of height at most $2$
 
-A Dyck word has height at most `2` when no prefix has more than two more `U`s
-than `D`s.
+**Dyck words of height at most $2$.** A Dyck word has height at most $2$ when no prefix of it
+has more than two more up steps $U$ than down steps $D$.
 
 ## Depends on
 

@@ -5,11 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.kingFlatPOPBelowGF
 ---
 
-# King Flat POPBelow GF
+# Generating function of king permutations avoiding $P_{j+1}$
 
-The generating function `A_P(x, p, q, u, v) = ∑_{n ≥ 0} ∑_{σ ∈ K_n(P)}
-x^n p^{asc σ} q^{des σ} u^{lmax σ} v^{rmax σ}` for `P = P_{j+1}` (king permutations avoiding
-`ContainsFlatPOPBelow · j`), with `p, q, u, v` the variables `X 0, X 1, X 2, X 3`.
+**Generating function of king permutations avoiding $P_{j+1}$.** For $j \in \{0, 1, 2, 3\}$
+let $P_{j+1}$ be the flat partially ordered pattern of length $4$ whose element number $j + 1$
+lies below each of the other three: a permutation $\sigma$ contains $P_{j+1}$ if there are
+positions $i_0 < i_1 < i_2 < i_3$ with $\sigma(i_j) < \sigma(i_m)$ for every $m \ne j$. A king
+permutation is one in which adjacent entries never differ by exactly $1$; let $K_n(P_{j+1})$ be
+the set of king permutations of length $n$ that do not contain $P_{j+1}$. The generating function
+$A_{P_{j+1}}$ is the formal power series in $x$ with coefficients in $\mathbb{Z}[p, q, u, v]$
+
+$$
+A_{P_{j+1}}(x; p, q, u, v) = \sum_{n \ge 0} \sum_{\sigma \in K_n(P_{j+1})}
+x^n p^{\operatorname{asc}(\sigma)} q^{\operatorname{des}(\sigma)}
+u^{\operatorname{lmax}(\sigma)} v^{\operatorname{rmax}(\sigma)},
+$$
+
+where $\operatorname{asc}$, $\operatorname{des}$, $\operatorname{lmax}$ and $\operatorname{rmax}$
+count ascents, descents, left-to-right maxima and right-to-left maxima.
 
 ## Depends on
 
@@ -17,10 +30,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Contains Flat POPBelow](contains-flat-popbelow.md)
-- [Is King Perm](is-king-perm.md)
-- [Perm Ascent Count](perm-ascent-count.md)
-- [Perm Descent Count](perm-descent-count.md)
+- [Containing a flat pattern with one bottom label](contains-flat-popbelow.md)
+- [King permutations](is-king-perm.md)
+- [Number of ascents of a permutation](perm-ascent-count.md)
+- [Number of descents](perm-descent-count.md)
 - [Number of left-to-right maxima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-max-count.md)
 - [Number of right-to-left maxima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-max-count.md)
 

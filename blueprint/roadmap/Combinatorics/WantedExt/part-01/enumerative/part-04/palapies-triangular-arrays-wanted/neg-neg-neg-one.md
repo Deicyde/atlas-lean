@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.TriangularRecurrence.negNeg_neg_one
 ---
 
-# Neg Neg neg one
+# Negative-negative numbers at $(-1, -1)$ and $(-1, 0)$
 
-Definition 2 at the corner: `a^{NN}_{-1,-1} = 1/γ'`, and `a^{NN}_{-1,0} = 0`.
+**Negative-negative numbers at $(-1, -1)$ and $(-1, 0)$.** For all parameters
+$(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$, the negative-negative numbers $a^{NN}$ satisfy
+$a^{NN}_{-1,-1} = 1/\gamma'$ (read as $0$ when $\gamma' = 0$) and $a^{NN}_{-1,0} = 0$.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
-- [Neg Neg](neg-neg.md)
+- [Triangular recurrence](triangular-recurrence.md)
+- [Negative-negative numbers](neg-neg.md)
 
 ## Proof depends on
 
-- [Neg Neg Aux](neg-neg-aux.md)
-- [Weight](weight.md)
-- [Weight'](weight-2.md)
+- [Negative-negative numbers on and below the diagonal (auxiliary)](neg-neg-aux.md)
+- [First weight of a triangular recurrence](weight.md)
+- [Second weight of a triangular recurrence](weight-2.md)
 
 ## Sources
 

@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.nColor_totalParts_eq_sum_sigma
 ---
 
-# N Color total Parts eq sum sigma
+# Total number of parts of $n$-color partitions via the divisor sum
 
-Corollary 1: for `m ≥ 1`, `T_o(m) + T_e(m) = ∑_{k=1}^{m} σ(k) C(m-k)`, where `T_o(m)`
-(resp. `T_e(m)`) is the total number of parts over the `n`-color partitions of `m` with an odd
-(resp. even) number of parts, `C(m)` the number of `n`-color partitions of `m`, and `σ` the
-divisor sum.
+**Total number of parts of $n$-color partitions via the divisor sum.** For $r \ge 0$ let
+$C(r)$ be the number of $n$-color partitions of $r$, and let $T_o(r)$ (resp. $T_e(r)$) be the
+total number of parts, counted with multiplicity, over the $n$-color partitions of $r$ having an
+odd (resp. even) number of parts. Then for every $m \ge 1$,
+
+$$T_o(m) + T_e(m) = \sum_{k=1}^{m} \sigma(k)\, C(m-k),$$
+
+where $\sigma(k)$ is the sum of the divisors of $k$.
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Sources
 

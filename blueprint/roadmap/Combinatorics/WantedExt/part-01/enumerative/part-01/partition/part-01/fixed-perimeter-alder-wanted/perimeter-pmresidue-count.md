@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.perimeterPMResidueCount
 ---
 
-# Perimeter PMResidue Count
+# Fixed perimeter partitions into parts $\equiv \pm a \pmod{d+3}$
 
-`ℓ_d^(a)(n)`: the number of partitions with perimeter `n` into parts `≡ ±a (mod d + 3)`.
+**Fixed perimeter partitions into parts $\equiv \pm a \pmod{d+3}$.** For natural numbers
+$d$, $a$ and $n$, $\ell_d^{(a)}(n)$ is the number of partitions of perimeter $n$ into parts
+congruent to $a$ or $-a$ modulo $d + 3$, where the perimeter of a partition is its largest part
+plus its number of parts minus $1$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
+- [Partitions with fixed perimeter](fixed-perimeter-partitions.md)
 
 ## Sources
 

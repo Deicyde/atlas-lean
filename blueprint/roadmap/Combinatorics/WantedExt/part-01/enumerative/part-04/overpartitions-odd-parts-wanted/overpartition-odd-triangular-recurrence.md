@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOdd_triangular_recurrence
 ---
 
-# Overpartition Odd triangular recurrence
+# Triangular recurrence for overpartitions into odd parts
 
-Triangular recurrence for overpartitions into odd parts: for `n ≥ 0`,
-`∑_{k ≥ 0} (-1)^{⌈k/2⌉} po(n - k(k+1)/2)` equals `1` if `n = m(m+1)/2` for some `m ≥ 0`
-and `0` otherwise.
+**Triangular recurrence for overpartitions into odd parts.** Write $\mathrm{po}(m)$ for the
+number of overpartitions of $m$ into odd parts. For every natural number $n$, the sum
+$\sum_{k \ge 0,\ k(k+1)/2 \le n} (-1)^{\lceil k/2 \rceil} \, \mathrm{po}(n - k(k+1)/2)$ equals
+$1$ if $n = m(m+1)/2$ for some natural number $m$, and equals $0$ otherwise.
 
 ## Depends on
 
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 
 ## Sources
 

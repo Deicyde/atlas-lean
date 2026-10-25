@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.unique_statEnc_valley_plateau_eq_one
 ---
 
-# Unique stat Enc valley plateau eq one
+# Valley plateaus of a uniquely encoded parking function equal $1$
 
-If `α` is the unique parking function with its statistic encoding and
-`α_{i-1} > α_i = ⋯ = α_j < α_{j+1}` for some `i ≤ j`, then `α_i = ⋯ = α_j = 1`.
+**Valley plateaus of a uniquely encoded parking function equal $1$.** For a map
+$g : \{0, \dots, n-1\} \to \{0, \dots, n-1\}$, its statistic encoding is the word of length
+$n - 1$ whose $k$-th letter, for $1 \le k \le n - 1$, is $<$, $=$ or $>$ according as
+$g(k-1) < g(k)$, $g(k-1) = g(k)$ or $g(k-1) > g(k)$. Let $f$ be a parking function of length $n$
+such that every parking function of length $n$ with the same statistic encoding as $f$ equals
+$f$, and write $\alpha_k = f(k-1) + 1$ for $1 \le k \le n$. If $2 \le i \le j \le n - 1$,
+$\alpha_{i-1} > \alpha_i$, $\alpha_k = \alpha_i$ for every $k$ with $i \le k \le j$, and
+$\alpha_j < \alpha_{j+1}$, then $\alpha_k = 1$ for every $k$ with $i \le k \le j$.
 
 ## Depends on
 

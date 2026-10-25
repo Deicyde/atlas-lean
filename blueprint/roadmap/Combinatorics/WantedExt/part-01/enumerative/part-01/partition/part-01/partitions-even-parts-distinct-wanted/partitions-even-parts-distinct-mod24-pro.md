@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.partitionsEvenPartsDistinct_mod24_progressions
 ---
 
-# Partitions Even Parts Distinct mod24 progressions
+# Congruences modulo 24 for partitions with distinct even parts
 
-For every natural `n`, `ped(225n+43)`, `ped(225n+88)`, `ped(225n+133)`, and
-`ped(225n+223)` are each congruent to zero modulo `24`; the four clauses below encode
-the four progressions in that order, with `ped` represented by
-`distinctEvenPartsCount` and no deviation from the paper.
+**Congruences modulo 24 for partitions with distinct even parts.** Write $\mathrm{ped}(m)$ for the
+number of partitions of $m$ in which the even parts are distinct (odd parts may repeat). For every
+natural number $n$, each of $\mathrm{ped}(225n+43)$, $\mathrm{ped}(225n+88)$,
+$\mathrm{ped}(225n+133)$ and $\mathrm{ped}(225n+223)$ is congruent to $0$ modulo $24$.
 
 ## Depends on
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.perimeterPMResidueCount_shift_inequalities
 ---
 
-# Perimeter PMResidue Count shift inequalities
+# Monotonicity of fixed perimeter counts with parts $\equiv \pm a \pmod{d+3}$
 
-Proposition 1.6, `ℓ` part: for positive `d, n, a` with `a < (d + 3)/2`,
-`ℓ_d^(a)(n) ≤ ℓ_d^(a)(n + 1)` and `ℓ_{d+1}^(a)(n) ≤ ℓ_d^(a)(n)`.
+**Monotonicity of fixed perimeter counts with parts $\equiv \pm a \pmod{d+3}$.** For natural
+numbers $d$, $a$ and $n$, let $\ell_d^{(a)}(n)$ be the number of partitions of perimeter $n$
+(largest part plus number of parts minus $1$) into parts congruent to $a$ or $-a$ modulo $d + 3$.
+If $d$, $n$ and $a$ are positive with $a < (d + 3)/2$, then
+$\ell_d^{(a)}(n) \le \ell_d^{(a)}(n + 1)$ and $\ell_{d+1}^{(a)}(n) \le \ell_d^{(a)}(n)$.
 
 ## Depends on
 
-- [Perimeter PMResidue Count](perimeter-pmresidue-count.md)
+- [Fixed perimeter partitions into parts $\equiv \pm a \pmod{d+3}$](perimeter-pmresidue-count.md)
 
 ## Sources
 

@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.naplesCount_two_one
 ---
 
-# Naples Count two one
+# Naples counts for $n = 2$ and $k = 1$
 
-Characteristic values: `I_{2,1} = 3`, `U_{2,1} = 2`, and there are `3` descending
-`1`-Naples parking functions of length `2`, of which `1` is strictly `1`-Naples.
+**Naples counts for $n = 2$ and $k = 1$.** Among the preferences of length $2$ with entries
+in $\{1, 2\}$, exactly $3$ are weakly increasing $1$-Naples parking functions ($I_{2,1} = 3$),
+and exactly $2$ of these start with $1$ ($U_{2,1} = 2$); exactly $3$ are weakly decreasing
+$1$-Naples parking functions, and exactly $1$ is weakly decreasing, $1$-Naples and not
+$0$-Naples.
 
 ## Depends on
 
-- [Ascending Naples Count](ascending-naples-count.md)
-- [Ascending Naples One Count](ascending-naples-one-count.md)
-- [Descending Naples Count](descending-naples-count.md)
-- [Descending Strict Naples Count](descending-strict-naples-count.md)
+- [Number of ascending $k$-Naples parking functions](ascending-naples-count.md)
+- [Number of ascending $k$-Naples parking functions starting with $1$](ascending-naples-one-count.md)
+- [Number of descending $k$-Naples parking functions](descending-naples-count.md)
+- [Number of descending strictly $k$-Naples parking functions](descending-strict-naples-count.md)
 
 ## Sources
 

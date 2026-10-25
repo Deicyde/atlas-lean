@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.nonempty_flattenedStirling_equiv_typeBSetPartition
 ---
 
-# Nonempty flattened Stirling equiv type BSet Partition
+# Flattened Stirling permutations and type $B$ set partitions
 
-For `n ≥ 1`, the flattened Stirling permutations of order `n + 1` are in
-bijection with the type `B` set partitions of `[-n, n]`.
+**Flattened Stirling permutations and type $B$ set partitions.** For every natural number
+$n \ge 1$, the set of flattened Stirling permutations of order $n + 1$ is in bijection with the
+set of type $B$ set partitions of $[-n, n] = \{-n, \dots, n\}$.
 
 ## Depends on
 
-- [Is Flattened Word](is-flattened-word.md)
+- [Flattened words](is-flattened-word.md)
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Is Type BSet Partition](is-type-bset-partition.md)
+- [Type $B$ set partitions](is-type-bset-partition.md)
 
 ## Sources
 

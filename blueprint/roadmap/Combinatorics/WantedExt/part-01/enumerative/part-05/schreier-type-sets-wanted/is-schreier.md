@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsSchreier
 ---
 
-# Is Schreier
+# Schreier sets
 
-A finite set of positive integers is *Schreier* if it is empty
-or `min A ≥ |A|`; encoded as `|A| ≤ a` for every `a ∈ A`.
+**Schreier sets.** A finite set $A$ of natural numbers is *Schreier* if $|A| \le a$ for
+every $a \in A$; equivalently, $A$ is empty or $\min A \ge |A|$.
 
 ## Depends on
 

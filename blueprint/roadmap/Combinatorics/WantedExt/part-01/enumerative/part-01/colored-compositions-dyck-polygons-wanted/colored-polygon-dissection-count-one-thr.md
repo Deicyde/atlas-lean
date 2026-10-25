@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coloredPolygonDissectionCount_one_three_two
 ---
 
-# Colored Polygon Dissection Count one three two
+# Dissections of a pentagon into two polygons
 
-With one color for every polygon, `p_{3,2} = 5`: the five single diagonals of
-a pentagon.
+**Dissections of a pentagon into two polygons.** With one color for every polygon, that is
+$\gamma(j) = 1$ for all $j$, the colored polygon dissection count satisfies $p_{3,2}(\gamma) = 5$:
+a convex pentagon has five diagonals, and each one cuts it into two polygons.
 
 ## Depends on
 
-- [Colored Polygon Dissection Count](colored-polygon-dissection-count.md)
+- [Colored polygon dissection count](colored-polygon-dissection-count.md)
 
 ## Sources
 

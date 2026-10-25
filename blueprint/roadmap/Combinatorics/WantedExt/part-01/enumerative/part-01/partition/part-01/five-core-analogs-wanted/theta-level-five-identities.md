@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.theta_level_five_identities
 ---
 
-# Theta level five identities
+# Theta-function identities of level 5
 
-Lemma 9: six theta-function identities, with `f(q) = f_1(-q)`, `χ(-q) = (q; q^2)_∞`,
-`χ(q) = χ(-(-q))`, stated with denominators cleared:
-`φ^5(q^5)/φ(q) + 4q f^5(q^5)/f(q) = φ(q) φ^3(q^5)`; `φ^2(q) - φ^2(q^5) = 4q χ(q) f_5 f_20`;
-`ψ^5(-q^5)/ψ(-q) - ψ^5(q^5)/ψ(q) = 4q^3 ψ^5(q^10)/ψ(q^2) + 2q f_20^5/f_4`;
-`ψ^2(q) - q ψ^2(q^5) = f(-q^5) φ(-q^5)/χ(-q) = f(q, q^4) f(q^2, q^3)`;
-`f_5^5/f_1 - 4q^3 f_20^5/f_4 = f^5(q^5)/f(q) + 2q f_10^5/f_2`;
-`f_2^2/f_1^4 = f_10^2/f_5^4 + 4q f_2 f_10^5/(f_1^3 f_5^5)`.
+**Theta-function identities of level 5.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$,
+$f(q) = \prod_{m \ge 1} (1 - (-q)^m)$ (so that $f(-q) = f_1$),
+$\chi(-q) = \prod_{m \ge 0} (1 - q^{2m+1})$ and $\chi(q) = \prod_{m \ge 0} (1 + q^{2m+1})$. Let
+$f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's general theta
+function, $\varphi(q) = f(q, q)$ and $\psi(q) = f(q, q^3)$. Then, as integer power series in
+$q$ (every denominator below has constant term $1$):
+$\varphi^5(q^5)/\varphi(q) + 4q f^5(q^5)/f(q) = \varphi(q) \varphi^3(q^5)$;
+$\varphi^2(q) - \varphi^2(q^5) = 4q \chi(q) f_5 f_{20}$;
+$\psi^5(-q^5)/\psi(-q) - \psi^5(q^5)/\psi(q) = 4q^3 \psi^5(q^{10})/\psi(q^2) + 2q f_{20}^5/f_4$;
+$\psi^2(q) - q \psi^2(q^5) = f_5 \varphi(-q^5)/\chi(-q) = f(q, q^4) f(q^2, q^3)$;
+$f_5^5/f_1 - 4q^3 f_{20}^5/f_4 = f^5(q^5)/f(q) + 2q f_{10}^5/f_2$; and
+$f_2^2/f_1^4 = f_{10}^2/f_5^4 + 4q f_2 f_{10}^5/(f_1^3 f_5^5)$.
 
 ## Depends on
 
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
-- [Ramanujan Theta Pow](ramanujan-theta-pow.md)
+- [Ramanujan's general theta function at powers of q](ramanujan-theta-pow.md)
 
 ## Sources
 

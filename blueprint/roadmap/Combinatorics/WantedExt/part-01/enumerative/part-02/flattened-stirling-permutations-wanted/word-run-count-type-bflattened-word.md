@@ -5,21 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.wordRunCount_typeBFlattenedWord
 ---
 
-# Word Run Count type BFlattened Word
+# Number of runs of the word of a type $B$ set partition
 
-Runs of `φ(π)`: for a type `B` set partition `π = π₀ | π₁ | ⋯ | π_m` of `[-n, n]`
-with `π_i = N_i P_i`, the word `φ(π)` has
-`1 + |{i ≥ 1 : |N_i| ≥ 1}| + |{i ≥ 0 : |P_i| ≥ 2}|` runs.  The paper states this for
-`w ∈ flat(Q_{n+1})` and its partition `φ⁻¹(w)`; by Theorem 3 this is the same as the
-statement for `w = φ(π)` over all `π`.  Blocks are indexed by Adler labels (label `0`
-for the zero-block, whose nonnegative part is `P₀`).
+**Number of runs of the word of a type $B$ set partition.** Let $\pi$ be a type $B$ set
+partition of $[-n, n]$ and let $\varphi(\pi)$ be the word of length $2(n + 1)$ that the map
+$\varphi$ of Proposition 1 assigns to it. Write $P_0$ for the set of nonnegative elements of the
+block of $\pi$ containing $0$. Let $\beta_1, \dots, \beta_m$ be the blocks kept by Adler's
+labelling, exactly one from each pair $\{\beta, -\beta\}$ of distinct blocks, namely the block
+containing the smallest magnitude of the pair as a positive element; write $N_i$ and $P_i$ for
+the sets of negative and positive elements of $\beta_i$. Then the number of runs of
+$\varphi(\pi)$ is
+
+$$1 + |\{i \ge 1 : |N_i| \ge 1\}| + |\{i \ge 0 : |P_i| \ge 2\}|.$$
+
+The paper states this for a flattened Stirling permutation $w$ of order $n + 1$ and the
+partition $\varphi^{-1}(w)$; since $\varphi$ is a bijection from the type $B$ set partitions of
+$[-n, n]$ onto these permutations (Theorem 3), this is the same as the statement for
+$w = \varphi(\pi)$ over all $\pi$.
 
 ## Depends on
 
-- [Is Type BSet Partition](is-type-bset-partition.md)
-- [Adler Block Labels](adler-block-labels.md)
-- [Type BFlattened Word](type-bflattened-word.md)
-- [Word Run Count](word-run-count.md)
+- [Type $B$ set partitions](is-type-bset-partition.md)
+- [Adler block labels](adler-block-labels.md)
+- [The word of a set partition of $(-n, n)$](type-bflattened-word.md)
+- [Number of runs of a word](word-run-count.md)
 
 ## Sources
 

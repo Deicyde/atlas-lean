@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.one_metered_lucky_iff_lace_start
 ---
 
-# One metered lucky iff lace start
+# Lucky cars of 1-metered parking are the lace starts
 
-For `0 < m ≤ n` and `t = 1`, car `i` is lucky (parks in its preference) if and only if `a_i`
-is the first entry of a lace of `lace(α)`; equivalently car `i` is displaced (by one, or fails at
-spot `n`) exactly when `a_i` is not the first entry of its lace. Stated as equality of the
-lucky-indicator list with the lace-start pattern.
+**Lucky cars of 1-metered parking are the lace starts.** Let $0 < m \le n$ and let
+$\alpha = (a_1, \dots, a_m)$, with each $a_i \in \{1, \dots, n\}$, be any sequence of preferred
+spots of $m$ cars on $n$ spots. Under the $1$-metered parking scheme, car $i$ is lucky (it parks
+in its preferred spot $a_i$) if and only if position $i$ is the first position of one of the
+laces of the lace decomposition $\mathrm{lace}(\alpha)$.
 
 ## Depends on
 
 - [Lace Decomposition](lace-decomposition.md)
-- [Metered Outcome](metered-outcome.md)
+- [Outcome of the metered parking scheme](metered-outcome.md)
 
 ## Sources
 

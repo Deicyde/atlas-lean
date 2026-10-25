@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.alternatingBinomialPowerSum_one_one_one_one
 ---
 
-# Alternating Binomial Power Sum one one one one
+# A value of the alternating binomial power sum
 
-`p_{1,1}(1, 1) = 1 - 2 = -1`.
+**A value of the alternating binomial power sum.** The alternating binomial power sum
+$p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (kx + y)^\ell$ satisfies
+$p_{1,1}(1, 1) = 1 - 2 = -1$.
 
 ## Depends on
 
-- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
+- [Alternating binomial power sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

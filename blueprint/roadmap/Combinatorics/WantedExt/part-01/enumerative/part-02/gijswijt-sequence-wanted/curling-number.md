@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.curlingNumber
 ---
 
-# Curling Number
+# Curling number
 
-The curling number `𝒞(S)`: the largest `k` such that `S = X Y^k` for strings `X`, `Y` with
-`Y` nonempty, with `𝒞(ε) = 1`. Here `Y` is the suffix of `S` of length `l`.
+**Curling number.** The curling number $\mathcal{C}(S)$ of a finite string $S$ of natural
+numbers is the largest integer $k$ such that $S = X Y^k$ for some strings $X$ and $Y$ with $Y$
+nonempty; for the empty string $\varepsilon$ it is $\mathcal{C}(\varepsilon) = 1$.
 
 ## Depends on
 

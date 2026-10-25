@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.regularTripartitionCount
 ---
 
-# Regular Tripartition Count
+# Regular tripartition counts
 
-The number `T_ℓ(n)` of `ℓ`-regular tripartitions of `n`: triples `(λ₁, λ₂, λ₃)` of
-partitions with `|λ₁| + |λ₂| + |λ₃| = n` in which no part of any `λᵢ` is divisible by `ℓ`.
+**Regular tripartition counts.** For natural numbers $\ell$ and $n$, $T_\ell(n)$ is the number
+of triples $(\lambda_1, \lambda_2, \lambda_3)$ of integer partitions with
+$|\lambda_1| + |\lambda_2| + |\lambda_3| = n$ in which no part of any $\lambda_i$ is divisible by
+$\ell$; these triples are the $\ell$-regular tripartitions of $n$.
 
 ## Depends on
 

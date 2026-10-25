@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.perimeterDistinctArmLegCount_eq_perimeterResidueArmLegCount
 ---
 
-# Perimeter Distinct Arm Leg Count eq perimeter Residue Arm Leg Count
+# Refined equality of distinct-part and residue counts
 
-Theorem 1.4, refinement: for `1 ≤ a ≤ d + 1`,
-`h_d^(a)(α, λ) = f_d^(a)(a + (d + 1)(λ - 1), α - a - d(λ - 1) + 1)`. The second argument is
-written `α + 1 - a - d(λ - 1)` in truncated subtraction, so it is `0` (and both sides vanish)
-when the paper's value is not positive.
+**Refined equality of distinct-part and residue counts.** Let $d$, $a$, $m$ and $k$ be natural
+numbers with $d \ge 1$, $1 \le a \le d + 1$, $m \ge 1$ and $k \ge 1$. Write $h_d^{(a)}(m, k)$ for
+the number of partitions into $d$-distinct parts, all at least $a$, with largest part $m$ and $k$
+parts, and $f_d^{(a)}(m, k)$ for the number of partitions into parts congruent to $a$ modulo
+$d + 1$ with largest part $m$ and $k$ parts. Then
+$h_d^{(a)}(m, k) = f_d^{(a)}(a + (d + 1)(k - 1), j)$, where $j = \max(m + 1 - a - d(k - 1), 0)$.
+
+In the source the second argument is $m + 1 - a - d(k - 1)$; it is replaced by $0$ when it is not
+positive, and then both sides vanish.
 
 ## Depends on
 
-- [Perimeter Distinct Arm Leg Count](perimeter-distinct-arm-leg-count.md)
-- [Perimeter Residue Arm Leg Count](perimeter-residue-arm-leg-count.md)
+- [Partitions into d-distinct parts by largest part and length](perimeter-distinct-arm-leg-count.md)
+- [Partitions into parts in one residue class, by largest part and length](perimeter-residue-arm-leg-count.md)
 
 ## Sources
 

@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.kingFlatPOPBelowGF_zero_eq
 ---
 
-# King Flat POPBelow GF zero eq
+# Rational generating function for king permutations avoiding $P_1$
 
-Theorem 3: for `P₁` (label `1` below labels `2, 3, 4`), `A_{P₁} = A / B`, stated as
-`B · A_{P₁} = A` (`B` has constant term `-1`, so this determines `A_{P₁}`), where
-`A = -1 - uvx + pqvx² + (pq²v + pquv²)x³ + (p²q²v² + pq³v² + pq²uv² - p²qu²v² - pq²u²v²)x⁴
-+ (p²q³v² - p²q²u²v² + 2p²q³v³ + pq⁴v³ - 2p²q²u²v³ - pq³u²v³)x⁵
-+ (2p²q⁴v³ - 2p²q³u²v³ + p²q⁴v⁴ - p²q³u²v⁴)x⁶ + (p²q⁵v⁴ - p²q⁴u²v⁴)x⁷` and
-`B = -1 + pqvx² + pq²vx³ + (p²q²v² + pq³v²)x⁴ + (p²q³v² + 2p²q³v³ + pq⁴v³)x⁵
-+ (2p²q⁴v³ + p²q⁴v⁴)x⁶ + p²q⁵v⁴x⁷`.
+**Rational generating function for king permutations avoiding $P_1$.** Let $P_1$ be the flat
+partially ordered pattern of length $4$ whose first element lies below each of the other three,
+and let $A_{P_1}(x; p, q, u, v)$ be the generating function of king permutations avoiding $P_1$,
+in which $x$ marks length and $p$, $q$, $u$, $v$ mark ascents, descents, left-to-right maxima and
+right-to-left maxima. Then $B \cdot A_{P_1} = A$ in $\mathbb{Z}[p, q, u, v][[x]]$, where
+$A = \sum_{k=0}^{7} a_k x^k$ and $B = \sum_{k=0}^{7} b_k x^k$ with $a_0 = b_0 = -1$, $a_1 = -uv$,
+$b_1 = 0$, $a_2 = b_2 = pqv$, $a_3 = pq^2v + pquv^2$, $b_3 = pq^2v$,
+$a_4 = p^2q^2v^2 + pq^3v^2 + pq^2uv^2 - p^2qu^2v^2 - pq^2u^2v^2$, $b_4 = p^2q^2v^2 + pq^3v^2$,
+$a_5 = p^2q^3v^2 - p^2q^2u^2v^2 + 2p^2q^3v^3 + pq^4v^3 - 2p^2q^2u^2v^3 - pq^3u^2v^3$,
+$b_5 = p^2q^3v^2 + 2p^2q^3v^3 + pq^4v^3$,
+$a_6 = 2p^2q^4v^3 - 2p^2q^3u^2v^3 + p^2q^4v^4 - p^2q^3u^2v^4$, $b_6 = 2p^2q^4v^3 + p^2q^4v^4$,
+$a_7 = p^2q^5v^4 - p^2q^4u^2v^4$ and $b_7 = p^2q^5v^4$. Since $B$ has constant term $-1$, this
+determines $A_{P_1} = A / B$.
 
 ## Depends on
 
-- [King Flat POPBelow GF](king-flat-popbelow-gf.md)
+- [Generating function of king permutations avoiding $P_{j+1}$](king-flat-popbelow-gf.md)
 
 ## Sources
 

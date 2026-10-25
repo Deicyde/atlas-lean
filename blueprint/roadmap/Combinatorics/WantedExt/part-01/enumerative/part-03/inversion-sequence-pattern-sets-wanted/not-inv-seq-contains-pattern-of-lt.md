@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_invSeqContainsPattern_of_lt
 ---
 
-# Not inv Seq Contains Pattern of lt
+# Short sequences contain no length-3 pattern
 
-A sequence of length less than three contains no length-3 pattern.
+**Short sequences contain no length-3 pattern.** If $n < 3$, then no sequence
+$e_0 e_1 \cdots e_{n-1}$ of natural numbers contains a length-3 pattern $p$.
 
 ## Depends on
 
-- [Inv Seq Contains Pattern](inv-seq-contains-pattern.md)
+- [Containment of a length-3 pattern](inv-seq-contains-pattern.md)
 
 ## Sources
 

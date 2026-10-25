@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.noncrossingBlockSingletonCount_formulas
 ---
 
-# Noncrossing Block Singleton Count formulas
+# Counting noncrossing partitions with no or one singleton block
 
-For `(n, m) ≠ (0, 0)`, `NC_{n,m,0} = binom(n, m) binom(n-m-1, m-1) / (n-m+1)`, and for
-`(n, m) ≠ (1, 1)`, `NC_{n,m,1} = binom(n, m-1) binom(n-m-1, m-2)`; binomials with a negative
-argument are `0` (`zeroExtendedChoose`), and the quotient is in `ℚ` (where `1/0 = 0`; the
-denominator vanishes only for `m = n + 1`, where `binom(n, m) = 0`).
+**Counting noncrossing partitions with no or one singleton block.** Write $NC_{n,m,k}$ for the
+number of noncrossing partitions of $\{0, \dots, n-1\}$ with $m$ blocks of which $k$ are
+singletons, and extend the binomial coefficient $\binom{a}{b}$ to all integers $a$, $b$ by setting
+it to $0$ when $a < 0$ or $b < 0$. For all natural numbers $n$ and $m$: if $(n, m) \ne (0, 0)$,
+then the following holds in $\mathbb{Q}$, where $1/0$ is taken to be $0$ (the denominator
+vanishes only for $m = n + 1$, where $\binom{n}{m} = 0$):
+
+$$NC_{n,m,0} = \frac{1}{n-m+1} \binom{n}{m} \binom{n-m-1}{m-1};$$
+
+and if $(n, m) \ne (1, 1)$, then
+
+$$NC_{n,m,1} = \binom{n}{m-1} \binom{n-m-1}{m-2}.$$
 
 ## Depends on
 
-- [Noncrossing Block Singleton Count](noncrossing-block-singleton-count.md)
-- [Zero Extended Choose](zero-extended-choose.md)
+- [Noncrossing partitions by number of blocks and of singleton blocks](noncrossing-block-singleton-count.md)
+- [Zero-extended binomial coefficient](zero-extended-choose.md)
 
 ## Sources
 

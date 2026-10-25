@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sigmaMexOverpartition_eq_sum_shifted_count
 ---
 
-# Sigma Mex Overpartition eq sum shifted count
+# The r-mex sum of overpartitions as a sum of overpartition counts
 
-For `n ≥ 0` and `r ≥ 1`, summing `p̄(n-rT_k)` over exactly the indices
-`k` satisfying `rT_k ≤ n` gives `σ_r mex̄(n)`.  The finite filtered sum
-implements the infinite sum with negative arguments omitted; `k ≤ n`
-suffices because `r ≥ 1`.  (`n ≥ 0` is automatic for `n : ℕ`.)
+**The r-mex sum of overpartitions as a sum of overpartition counts.** Let $n$ and $r$ be
+natural numbers with $r \ge 1$, let $\overline{p}(m)$ be the number of overpartitions of $m$, let
+$T_k = k(k+1)/2$ be the $k$-th triangular number, and let $\sigma_r\overline{\mathrm{mex}}(n)$ be
+the sum over all overpartitions $\pi$ of $n$ of $\overline{\mathrm{mex}}_r(\pi)$, the least
+positive integer occurring fewer than $r$ times among the non-overlined parts of $\pi$. Then
+
+$$\sigma_r\overline{\mathrm{mex}}(n) = \sum_{k \ge 0,\; rT_k \le n} \overline{p}(n - rT_k).$$
 
 ## Depends on
 
 - [Overpartition Count](overpartition-count.md)
-- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
+- [Sums of minimal excludants over overpartitions](sigma-mex-overpartition.md)
 
 ## Sources
 

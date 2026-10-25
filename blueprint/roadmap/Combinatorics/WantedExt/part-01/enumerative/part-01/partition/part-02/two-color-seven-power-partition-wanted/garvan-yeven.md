@@ -5,13 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.garvanYEven
 ---
 
-# Garvan YEven
+# Coefficient vectors for even powers of 7
 
-The coefficient vectors `y^{(2k)}_β` of Theorem 3 (`β ≥ 1`): `y^{(2k)}_{1,j} = x_{2k-1,j}`
-and `y^{(2k)}_{β+1,j} = ∑_{i ≥ 1} y^{(2k)}_{β,i} m_{4i,i+j}` for odd `β`,
-`∑_{i ≥ 1} y^{(2k)}_{β,i} m_{4i+2,i+j}` for even `β`. The sum over `i` is cut at
-`7^{2k+β-2}`, above the support of `y^{(2k)}_β` (each step maps support `s` into `7s + 4`).
-Index `β = 0` gives `0`.
+**Coefficient vectors for even powers of 7.** Let $(m_{i,j})$ be Garvan's matrix and
+$x_k$ Garvan's coefficient vectors, and fix $k \ge 1$. The coefficient vectors
+$y^{(2k)}_\beta = (y^{(2k)}_{\beta,1}, y^{(2k)}_{\beta,2}, \dots)$ of Theorem 3, $\beta \ge 1$,
+are defined by $y^{(2k)}_{1,j} = x_{2k-1,j}$ and, for $\beta \ge 1$,
+
+$$y^{(2k)}_{\beta+1,j} = \sum_{i=1}^{7^{2k+\beta-2}} y^{(2k)}_{\beta,i}\, m_{4i,i+j}$$
+
+if $\beta$ is odd and
+
+$$y^{(2k)}_{\beta+1,j} = \sum_{i=1}^{7^{2k+\beta-2}} y^{(2k)}_{\beta,i}\, m_{4i+2,i+j}$$
+
+if $\beta$ is even. The definition also assigns conventional values for $k = 0$ and
+$\beta = 0$.
+
+The source sums over all $i \ge 1$; the cut at $7^{2k+\beta-2}$ lies above the support of
+$y^{(2k)}_\beta$, since each step maps the largest index $s$ of a nonzero entry to at most
+$7s + 4$.
 
 ## Depends on
 
@@ -19,8 +31,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Garvan M](garvan-m.md)
-- [Garvan X](garvan-x.md)
+- [Garvan's matrix](garvan-m.md)
+- [Garvan's coefficient vectors](garvan-x.md)
 
 ## Sources
 

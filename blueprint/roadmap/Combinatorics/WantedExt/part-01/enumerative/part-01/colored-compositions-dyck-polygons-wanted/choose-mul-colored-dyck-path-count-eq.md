@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.choose_mul_coloredDyckPathCount_eq
 ---
 
-# Choose mul colored Dyck Path Count eq
+# Colored Dyck paths and colored polygon partitions
 
-Dyck paths and polygon partitions:
-`binom(n+k, k) d_{n,k}(γ) = binom(n+1, k) p_{n,k}(γ)` for `1 ≤ k ≤ n` and every
-coloring sequence.
+**Colored Dyck paths and colored polygon partitions.** Let
+$\gamma = (\gamma_1, \gamma_2, \dots)$ be a sequence of natural numbers. Let $d_{n,k}(\gamma)$ be
+the number of Dyck paths of semilength $n$ with $k$ peaks in which each block $UD^j$, formed by a
+peak and the maximal run of $D$ steps starting at its $D$, carries one of $\gamma_j$ colors, and
+let $p_{n,k}(\gamma)$ be the number of partitions of a rooted convex $(n+2)$-gon by $k - 1$
+noncrossing diagonals into $k$ polygons in which each $(j+2)$-gon carries one of $\gamma_j$
+colors. For all natural numbers $n$ and $k$ with $1 \le k \le n$,
+
+$$\binom{n+k}{k} d_{n,k}(\gamma) = \binom{n+1}{k} p_{n,k}(\gamma).$$
 
 ## Depends on
 
-- [Colored Dyck Path Count](colored-dyck-path-count.md)
-- [Colored Polygon Dissection Count](colored-polygon-dissection-count.md)
+- [Number of colored Dyck paths](colored-dyck-path-count.md)
+- [Colored polygon dissection count](colored-polygon-dissection-count.md)
 
 ## Sources
 

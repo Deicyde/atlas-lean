@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsSeries
 ---
 
-# Odd Designated Summands Series
+# Generating function of odd designated-summand partitions
 
-The generating function `∑ PD_2(n) q^n = f_4 f_6^2 / (f_1 f_3 f_12)` of partitions with
-designated summands into odd parts, as an integer power series.
+**Generating function of odd designated-summand partitions.** For $k \ge 1$ let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$ be the Euler product. This is the integer power series
+$f_4 f_6^2 / (f_1 f_3 f_{12})$ in $q$, where the denominator $f_1 f_3 f_{12}$ is invertible
+because its constant coefficient is $1$. It is the generating function
+$\sum_{n \ge 0} \mathrm{PD}_2(n) q^n$ of the numbers $\mathrm{PD}_2(n)$ of partitions of $n$ with
+designated summands into odd parts.
 
 ## Depends on
 

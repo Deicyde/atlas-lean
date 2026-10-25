@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.frobeniusPartitionRepCount_four_two_mul_add_one_mod_two
 ---
 
-# Frobenius Partition Rep Count four two mul add one mod two
+# $\varphi_4(2N+1)$ is even when $5 \nmid N$
 
-If `N` is a positive integer not divisible by `5`, then `φ₄(2N + 1) ≡ 0 (mod 2)`.
+**$\varphi_4(2N+1)$ is even when $5 \nmid N$.** Let $\varphi_4(n)$ be the number of generalized
+Frobenius partitions of $n$ in which each integer appears at most $4$ times in each row. For every
+positive integer $N$ not divisible by $5$, $\varphi_4(2N + 1) \equiv 0 \pmod 2$.
 
 ## Depends on
 
-- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
+- [Frobenius partitions with at most $k$ repetitions](frobenius-partition-rep-count.md)
 
 ## Sources
 

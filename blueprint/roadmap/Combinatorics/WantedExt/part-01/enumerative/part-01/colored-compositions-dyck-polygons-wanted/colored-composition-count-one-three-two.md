@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coloredCompositionCount_one_three_two
 ---
 
-# Colored Composition Count one three two
+# Compositions of 3 into two parts
 
-With one color for every part, `c_{3,2} = 2` (the compositions `(1,2)` and
-`(2,1)`).
+**Compositions of 3 into two parts.** With one color for every part ($\gamma_j = 1$ for all
+$j$), the number of colored compositions of $3$ with $2$ parts is $c_{3,2}(\gamma) = 2$: the
+compositions $(1,2)$ and $(2,1)$.
 
 ## Depends on
 
-- [Colored Composition Count](colored-composition-count.md)
+- [Number of colored compositions](colored-composition-count.md)
 
 ## Sources
 

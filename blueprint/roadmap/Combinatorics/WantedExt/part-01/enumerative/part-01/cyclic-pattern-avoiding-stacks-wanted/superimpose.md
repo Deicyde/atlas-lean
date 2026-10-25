@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.superimpose
 ---
 
-# Superimpose
+# Superimpose operation
 
-The superimpose operation `si(σ₁, σ₂)`: the stack built by `superimposePush`, read from top to
-bottom.
+**Superimpose operation.** For finite sequences $\sigma_1$ and $\sigma_2$ of natural numbers,
+let $p = \mathrm{push}(\mathrm{rev}\,\sigma_1, \mathrm{rev}\,\sigma_2)$ be the push order of the
+superimpose operation on the reversed sequences. Then $\mathrm{si}(\sigma_1, \sigma_2)$ is the
+reversal of $p$: the stack obtained by pushing the entries of $p$ in order onto an empty stack,
+read from top to bottom.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Superimpose Push](superimpose-push.md)
+- [Push order of the superimpose operation](superimpose-push.md)
 
 ## Sources
 

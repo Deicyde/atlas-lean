@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pendCount_twentySeven_mul_add_nineteen
 ---
 
-# Pend Count twenty Seven mul add nineteen
+# Congruence modulo 3 for PEND partitions of 27n + 19
 
-For all `n ≥ 0`, `pend(27n+19) ≡ 0 (mod 3)`.
+**Congruence modulo 3 for PEND partitions of 27n + 19.** Let $\mathrm{pend}(m)$ be the
+number of PEND partitions of $m$. For every natural number $n$,
+$\mathrm{pend}(27n + 19) \equiv 0 \pmod{3}$.
 
 ## Depends on
 
-- [Pend Count](pend-count.md)
+- [The PEND partition function](pend-count.md)
 
 ## Sources
 

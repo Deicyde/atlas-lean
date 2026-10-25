@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.fibonacciAlternatingSum_tempered
 ---
 
-# Fibonacci Alternating Sum tempered
+# The alternating Fibonacci sums are eventually tempered
 
-`{W_n}_{n ≥ 11}` is tempered (notion of `motzkinAlternatingSum_logBalanced_tempered`:
-conditions at every `n ≥ 12`).
+**The alternating Fibonacci sums are eventually tempered.** Let $F_k$ denote the $k$-th
+Fibonacci number, with $F_0 = 0$ and $F_1 = 1$, and let $W_n = \sum_{k=0}^{n} (-1)^{n-k} F_k$.
+For every natural number $n \ge 12$,
+
+$$n W_n^2 \le (n+1) W_{n-1} W_{n+1} \quad\text{and}\quad n W_{n-1} W_{n+1} \le (n+1) W_n^2.$$
+
+These are the conditions $\frac{n}{n+1} x_{n-1} \le x_n \le \frac{n+1}{n} x_{n-1}$ on the
+quotients $x_n = W_{n+1}/W_n$, cleared of denominators (all terms are positive here), so the
+sequence $(W_n)_{n \ge 11}$ is tempered, with the conditions imposed at every index $n \ge 12$.
 
 ## Depends on
 
-- [Fibonacci Alternating Sum](fibonacci-alternating-sum.md)
+- [Alternating sums of Fibonacci numbers](fibonacci-alternating-sum.md)
 
 ## Sources
 

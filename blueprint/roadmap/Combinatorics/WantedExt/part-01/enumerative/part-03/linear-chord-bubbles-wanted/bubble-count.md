@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.bubbleCount
 ---
 
-# Bubble Count
+# Bubble counts
 
-`B_{n,p}`: the total number of bubbles of size `p` counted across all linear chord diagrams
-on `2n` vertices.
+**Bubble counts.** For natural numbers $n$ and $p$, $B_{n,p}$ is the total number of bubbles of
+size $p$ in all linear chord diagrams on $2n$ vertices: the sum, over all linear chord diagrams
+$\sigma$ on the vertices $0, \dots, 2n-1$, of the number of vertices $a$ such that the vertices
+$a, a+1, \dots, a+p-1$ form a bubble of size $p$ in $\sigma$. In particular $B_{n,0} = 0$.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Bubble](is-bubble.md)
-- [Is Linear Chord Diagram](is-linear-chord-diagram.md)
-- [Is Short Chord Vertex](is-short-chord-vertex.md)
+- [Bubbles](is-bubble.md)
+- [Linear chord diagrams](is-linear-chord-diagram.md)
+- [Endpoints of short chords](is-short-chord-vertex.md)
 
 ## Sources
 

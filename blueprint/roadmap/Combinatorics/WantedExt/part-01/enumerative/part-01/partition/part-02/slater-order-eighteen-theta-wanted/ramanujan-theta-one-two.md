@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTheta_one_two
 ---
 
-# Ramanujan Theta one two
+# Ramanujan's theta function at $(q, q^2)$
 
-`f(q, q²) = φ(-q³) / χ(-q)` for `‖q‖ < 1`, stated with `χ(-q) = (q; q²)_∞` cleared.
+**Ramanujan's theta function at $(q, q^2)$.** Let
+$f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta function and
+$(a;q)_\infty = \prod_{n \ge 0} (1 - a q^n)$. For every complex number $q$ with $|q| < 1$,
+$f(q,q^2) \, (q;q^2)_\infty = f(-q^3,-q^3)$, that is, $f(q,q^2) = \varphi(-q^3)/\chi(-q)$ with
+the denominator cleared, where $\varphi(q) = f(q,q)$ and $\chi(-q) = (q;q^2)_\infty$.
 
 ## Depends on
 

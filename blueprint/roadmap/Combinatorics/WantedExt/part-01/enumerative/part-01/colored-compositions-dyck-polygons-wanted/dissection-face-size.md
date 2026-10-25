@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.dissectionFaceSize
 ---
 
-# Dissection Face Size
+# Size of the polygon under a chord
 
-The number of vertices of the polygon of a noncrossing dissection `D` that
-lies directly under the chord `e = (a, b)` (a diagonal of `D` or the root side
-`(0, n+1)`), on the side of the vertices `a, …, b`: the endpoints `a`, `b`, and
-the vertices strictly between them that are not strictly under another chord
-`f ≠ e` of `D` with `a ≤ f.1 < f.2 ≤ b`. Every polygon of the dissection is
-directly under exactly one such chord.
+**Size of the polygon under a chord.** Let $D$ be a finite set of pairs of natural numbers
+and let $e = (a, b)$ be a pair of natural numbers. The face size of $e$ in $D$ is $2$ plus the
+number of natural numbers $v$ with $a < v < b$ for which there is no pair $(c, d) \in D$ other
+than $e$ with $a \le c < v < d \le b$. When $D$ is a noncrossing set of diagonals of the convex
+$(n+2)$-gon with vertices $0, \dots, n+1$ in cyclic order and $e$ is a diagonal in $D$ or the root
+side $(0, n+1)$, this is the number of vertices of the polygon of the dissection that lies
+directly under $e$, on the side of the vertices $a, \dots, b$: the endpoints $a$ and $b$ and the
+vertices between them that no other chord of $D$ under $e$ cuts off. Every polygon of the
+dissection lies directly under exactly one such chord.
 
 ## Depends on
 

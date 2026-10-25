@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.meteredLuckyCount
 ---
 
-# Metered Lucky Count
+# Lucky cars in the metered scheme
 
-The number of lucky cars (cars parking in their preferred spot) of `f` under the `t`-metered
-scheme.
+**Lucky cars in the metered scheme.** For natural numbers $t$, $m$, $n$ and a preference
+function $f : \{0, \dots, m - 1\} \to \{0, \dots, n - 1\}$ (car $i$ prefers spot $f(i)$), the
+lucky count of $f$ under the $t$-metered parking scheme on $n$ spots is the number of cars $i$
+that park in their preferred spot $f(i)$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Metered Outcome](metered-outcome.md)
+- [Outcome of the metered parking scheme](metered-outcome.md)
 
 ## Sources
 

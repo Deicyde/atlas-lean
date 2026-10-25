@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.DelannoyConstructions.choose_add_choose_succ_modEq_two
 ---
 
-# Choose add choose succ mod Eq two
+# Parity of a sum of adjacent binomial coefficients
 
-For `k ≥ 1`, `C(n, k) + C(n + 1, k) ≡ C(n, k - 1) (mod 2)`.
+**Parity of a sum of adjacent binomial coefficients.** For all natural numbers $n$ and $k$
+with $k \ge 1$, $\binom{n}{k} + \binom{n+1}{k} \equiv \binom{n}{k-1} \pmod 2$.
 
 ## Depends on
 

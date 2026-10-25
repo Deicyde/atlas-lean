@@ -5,9 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.schreierAvoidingMultiplesCount
 ---
 
-# Schreier Avoiding Multiples Count
+# Schreier sets avoiding multiples
 
-`|D_{u,n}|`: the number of Schreier sets `F ⊆ G_{u,n}` with `⌊(un - 1)/(u - 1)⌋ ∈ F`.
+**Schreier sets avoiding multiples.** For natural numbers $u$ and $n$, let $G_{u,n}$ be the
+set of the first $n$ positive integers not divisible by $u$ (taken to be empty when $u = 0$), and
+call a finite set $F$ of natural numbers Schreier when every element of $F$ is at least $|F|$.
+Then $|D_{u,n}|$ is the number of Schreier sets $F \subseteq G_{u,n}$ with
+$\lfloor (un - 1)/(u - 1) \rfloor \in F$.
+
+For $u \le 1$ or $n = 0$ the set $G_{u,n}$ is empty and the count is $0$; otherwise $un - 1$ and
+$u - 1$ are positive, so the natural-number subtraction and floor division agree with the real
+expression.
 
 ## Depends on
 
@@ -15,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Schreier](../schreier-type-sets-wanted/is-schreier.md)
-- [First Non Multiples](first-non-multiples.md)
+- [Schreier sets](../schreier-type-sets-wanted/is-schreier.md)
+- [First non-multiples of an integer](first-non-multiples.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.boolRuns
 ---
 
-# Bool Runs
+# Maximal runs of a Boolean word
 
-The maximal runs of a Boolean word, as (letter, length) pairs from left to
-right.
+**Maximal runs of a Boolean word.** The run decomposition of a Boolean word is the list,
+from left to right, of its maximal runs of equal consecutive letters, each recorded as the pair
+(letter, length of the run).
 
 ## Depends on
 

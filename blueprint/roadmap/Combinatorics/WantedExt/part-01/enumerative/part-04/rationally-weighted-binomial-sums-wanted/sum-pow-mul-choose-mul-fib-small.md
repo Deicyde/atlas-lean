@@ -5,13 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_mul_choose_mul_fib_small
 ---
 
-# Sum pow mul choose mul fib small
+# Weighted binomial Fibonacci sums for the powers one to four
 
-The cases `r = 1, 2, 3, 4` of Theorem 2.5 for `F_k`:
-`∑ k binom(N,k) F_k = N F_{2N-1}`, `∑ k² binom(N,k) F_k = N F_{2N-1} + N(N-1) F_{2N-2}`,
-`∑ k³ binom(N,k) F_k = N F_{2N-1} + 3N(N-1) F_{2N-2} + N(N-1)(N-2) F_{2N-3}`, and
-`∑ k⁴ binom(N,k) F_k = N F_{2N-1} + 7N(N-1) F_{2N-2} + 6N(N-1)(N-2) F_{2N-3}
-+ N(N-1)(N-2)(N-3) F_{2N-4}`, sums over `1 ≤ k ≤ N`.
+**Weighted binomial Fibonacci sums for the powers one to four.** Let $F_n$ denote the Fibonacci
+numbers. For every natural number $N$,
+
+$$\sum_{k=1}^{N} k \binom{N}{k} F_k = N F_{2N-1},$$
+
+
+
+$$\sum_{k=1}^{N} k^2 \binom{N}{k} F_k = N F_{2N-1} + N(N-1) F_{2N-2},$$
+
+
+
+$$\sum_{k=1}^{N} k^3 \binom{N}{k} F_k = N F_{2N-1} + 3N(N-1) F_{2N-2} + N(N-1)(N-2) F_{2N-3},$$
+
+
+
+$$\sum_{k=1}^{N} k^4 \binom{N}{k} F_k = N F_{2N-1} + 7N(N-1) F_{2N-2} +
+6N(N-1)(N-2) F_{2N-3} + N(N-1)(N-2)(N-3) F_{2N-4}.$$
+
+Every term with a negative Fibonacci index has coefficient zero.
 
 ## Depends on
 

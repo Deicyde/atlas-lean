@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.diagonalClassOf
 ---
 
-# Diagonal Class Of
+# Partitions with a prescribed diagonal sequence
 
-The partitions of `n` whose diagonal sequence is a given sequence `d`.
+**Partitions with a prescribed diagonal sequence.** For a natural number $n$ and a sequence
+$d = (d_k)_{k \ge 0}$ of natural numbers, $[d]$ is the finite set of partitions $\beta$ of $n$
+whose diagonal sequence $\delta(\beta)$ equals $d$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

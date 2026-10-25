@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zurita TCoeff](zurita-tcoeff.md)
+- [Coefficients of Zurita's polynomial $T_{n-2}$](zurita-tcoeff.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.arcsinAntiderivS
 ---
 
-# Arcsin Antideriv S
+# Zurita's S-polynomials
 
-The paper's polynomial `S_l(x) = ∑_{i=0}^l s_i x^i`.
+**Zurita's S-polynomials.** For a natural number $l$, $S_l$ is the polynomial with rational
+coefficients $S_l(x) = \sum_{i=0}^{l} s_i x^i$, where $s_l = 8/(1 - 2l)$ and
+$s_i = \frac{8(i + 1)}{2i - 1} s_{i+1}$ for $0 \le i < l$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Arcsin Antideriv SCoeff](arcsin-antideriv-scoeff.md)
+- [Coefficients of Zurita's polynomial $S_l$](arcsin-antideriv-scoeff.md)
 
 ## Sources
 

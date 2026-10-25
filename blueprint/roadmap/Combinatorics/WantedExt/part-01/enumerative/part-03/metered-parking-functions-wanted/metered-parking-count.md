@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.meteredParkingCount
 ---
 
-# Metered Parking Count
+# Number of metered parking functions
 
-The source's `mpf_{m,n}(t)`: the number of `t`-metered `(m, n)`-parking functions.
+**Number of metered parking functions.** For natural numbers $t$, $m$ and $n$,
+$\mathrm{mpf}_{m,n}(t)$ is the number of $t$-metered $(m, n)$-parking functions, that is, of maps
+$f$ from the $m$ cars $\{0, \dots, m-1\}$ to the $n$ spots $\{0, \dots, n-1\}$ under which every
+car parks in the $t$-metered parking scheme.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Metered Parking Function](is-metered-parking-function.md)
-- [Metered Outcome](metered-outcome.md)
+- [Metered parking function](is-metered-parking-function.md)
+- [Outcome of the metered parking scheme](metered-outcome.md)
 
 ## Sources
 

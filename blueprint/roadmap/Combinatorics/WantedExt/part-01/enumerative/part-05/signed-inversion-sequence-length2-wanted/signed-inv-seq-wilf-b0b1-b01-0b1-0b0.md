@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_b0b1_b01_0b1_0b0
 ---
 
-# Theorem 3, class C21
+# Mansour–Safadi Theorem 3, class C21
 
-**Theorem 3, class C21.** `{0̄1̄, 0̄1, 01̄, 00̄}` ∼ `{0̄0̄, 0̄1, 01̄, 00̄}`. The printed
-generating function `1/(1 - x)² + ∑_{j ≥ 0} j! xʲ` is false (its constant term is `2`, while
-`|Ī_0(B)| = 1`) and is omitted.
+**Mansour–Safadi Theorem 3, class C21.** Write $\bar{I}_n(B)$ for the set of signed inversion
+sequences of length $n$ that avoid every length-2 signed pattern in $B$, where a pattern is
+one of $00$, $01$, $10$ with a bar over each barred letter. Then for every $n \ge 0$,
+$|\bar{I}_n(\{\bar{0}\bar{1}, \bar{0}1, 0\bar{1}, 0\bar{0}\})| =
+|\bar{I}_n(\{\bar{0}\bar{0}, \bar{0}1, 0\bar{1}, 0\bar{0}\})|$.
+
+The generating function printed in the paper, $1/(1 - x)^2 + \sum_{j \ge 0} j!\, x^j$, is false
+(its constant term is $2$, while $|\bar{I}_0(B)| = 1$) and is omitted.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
 
 ## Sources
 

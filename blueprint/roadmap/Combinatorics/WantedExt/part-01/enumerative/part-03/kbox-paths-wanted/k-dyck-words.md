@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.kDyckWords
 ---
 
-# K Dyck Words
+# $k$-Dyck paths of size $n$
 
-The `k`-Dyck paths of size `n` (`n` steps `D^{(k)}`, hence length `(k+1)n`).
+**$k$-Dyck paths of size $n$.** Write $U = (1,1)$ and $D^{(k)} = (k,-k)$. The $k$-Dyck paths
+of size $n$ are the words of length $(k+1)n$ over $\{U, D^{(k)}\}$ with exactly $n$ steps
+$D^{(k)}$ that have $k$ times as many $U$s as $D^{(k)}$s and in which every prefix has at least
+$k$ times as many $U$s as $D^{(k)}$s.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is KDyck Word](is-kdyck-word.md)
+- [$k$-Dyck words](is-kdyck-word.md)
 
 ## Sources
 

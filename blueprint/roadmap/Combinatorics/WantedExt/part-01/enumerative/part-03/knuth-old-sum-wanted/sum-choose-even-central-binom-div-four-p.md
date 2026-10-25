@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_even_centralBinom_div_four_pow
 ---
 
-# Sum choose even central Binom div four pow
+# Even-index binomial sum equal to a scaled central binomial coefficient
 
-`∑_{k ≤ n/2} binom(n,2k) 2^{-2k} binom(2k,k) = 2^{-n} binom(2n,n)`.
+**Even-index binomial sum equal to a scaled central binomial coefficient.** For every
+natural number $n$,
+
+$$\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{1}{2^{2k}} \binom{2k}{k} =
+\frac{1}{2^n} \binom{2n}{n}.$$
 
 ## Depends on
 

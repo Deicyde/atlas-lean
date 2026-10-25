@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.image_floor_eq_nonMultiples
 ---
 
-# Image floor eq non Multiples
+# The non-multiples of an integer as values of a floor function
 
-Lemma 2: for `u ≥ 2`, `{⌊(un - 1)/(u - 1)⌋ : n ≥ 1}` is the set of positive integers not
-divisible by `u`.
+**The non-multiples of an integer as values of a floor function.** For every integer $u \ge 2$,
+the set $\{\lfloor (un - 1)/(u - 1) \rfloor : n \ge 1\}$, with $n$ ranging over the positive
+integers, is the set of positive integers not divisible by $u$.
 
 ## Depends on
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.sum_rascalZ_alternating_odd
 ---
 
-# Theorem 13
+# Alternating row sums of the Rascal triangle, odd rows
 
-**Theorem 13** (alternating row sum, odd case):
-`∑_{k=0}^{2m+1} (-1)^k R_{2m+1,k} = 0`.
+**Alternating row sums of the Rascal triangle, odd rows.**
+For every natural number $m$, the Rascal numbers
+$R_{n,k} = k(n-k) + 1$ ($0 \le k \le n$) satisfy
+$\sum_{k=0}^{2m+1} (-1)^k R_{2m+1,k} = 0$.
 
 ## Depends on
 
-- [Rascal Z](rascal-z.md)
+- [Rascal numbers on the integers](rascal-z.md)
 
 ## Sources
 

@@ -5,18 +5,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_trib_mul_tetra_eq
 ---
 
-# Corollary 13
+# Convolution of the Fibonacci 3-step and 4-step numbers as a sum weighted by powers of 2
 
-**Corollary 13**, fourth identity (corrected):
-`∑_{j=0}^{n+2} T_j Q_{n+2-j} =
-∑_{j=0}^n 2^j (T_{n+1-j} - Q_{n-j})`; the printed
-`Q_{n-j}` on the left is a typo (the identity is Theorem
-12 at `m = 4` with `n` replaced by `n + 2`; as printed it
-fails at `n = 0`, giving `0` for `1`).
+**Convolution of the Fibonacci 3-step and 4-step numbers as a sum weighted by powers of 2.**
+Let $T_j$ and $Q_j$ be the Fibonacci $3$-step and $4$-step numbers, where the Fibonacci $k$-step
+numbers start $0, 1$ and each later term is the sum of the $k$ terms before it (terms of negative
+index being $0$). For every natural number $n$,
+
+$$\sum_{j=0}^{n+2} T_j \, Q_{n+2-j} = \sum_{j=0}^{n} 2^j \bigl(T_{n+1-j} - Q_{n-j}\bigr).$$
+
+This is the case $m = 4$ of the paper's Theorem 12 with $n$ replaced by $n + 2$. The paper prints
+$Q_{n-j}$ in place of $Q_{n+2-j}$ on the left; as printed, the identity fails at $n = 0$, where
+the left side is $0$ and the right side is $1$.
 
 ## Depends on
 
-- [Fib Step](fib-step.md)
+- [Fibonacci $m$-step numbers](fib-step.md)
 
 ## Sources
 

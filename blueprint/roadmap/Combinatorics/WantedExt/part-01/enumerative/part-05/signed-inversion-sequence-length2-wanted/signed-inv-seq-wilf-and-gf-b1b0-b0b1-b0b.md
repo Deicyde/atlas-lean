@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b0b0_00
 ---
 
-# Theorem 3, class C30
+# Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar0\bar0, 00\}$
 
-**Theorem 3, class C30.** `{1̄0̄, 0̄1̄, 0̄0̄, 00}` ∼ `{1̄0̄, 0̄1̄, 0̄1, 01}` ∼ `{1̄0, 0̄1̄, 0̄1,
-01}` ∼ `{1̄0, 0̄0̄, 01̄, 00}` ∼ `{0̄0̄, 0̄1, 00, 10̄}`, and `F(x) = (1 - 2x + 2x²) / ((1 - x)²(1
-- 2x))`, stated after multiplying by the unit denominator.
+**Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar0\bar0, 00\}$.** For a set
+$B$ of length-2 signed patterns (a bar marks a barred letter), let $|\bar I_n(B)|$ be the number of
+signed inversion sequences of length $n$ avoiding every pattern of $B$, and let
+$F_B(x) = \sum_{n \ge 0} |\bar I_n(B)| x^n \in \mathbb{Q}[[x]]$. Let
+$B_1 = \{\bar1\bar0, \bar0\bar1, \bar0\bar0, 00\}$, $B_2 = \{\bar1\bar0, \bar0\bar1, \bar01, 01\}$,
+$B_3 = \{\bar10, \bar0\bar1, \bar01, 01\}$, $B_4 = \{\bar10, \bar0\bar0, 0\bar1, 00\}$ and
+$B_5 = \{\bar0\bar0, \bar01, 00, 1\bar0\}$. Then
+$|\bar I_n(B_1)| = |\bar I_n(B_2)| = |\bar I_n(B_3)| = |\bar I_n(B_4)| = |\bar I_n(B_5)|$ for every
+$n \ge 0$, and $(1 - x)^2(1 - 2x) F_{B_1}(x) = 1 - 2x + 2x^2$, that is,
+$F_{B_1}(x) = (1 - 2x + 2x^2)/((1 - x)^2(1 - 2x))$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
-- [Signed Inv Avoid GF](signed-inv-avoid-gf.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
+- [Generating function of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-gf.md)
 
 ## Sources
 

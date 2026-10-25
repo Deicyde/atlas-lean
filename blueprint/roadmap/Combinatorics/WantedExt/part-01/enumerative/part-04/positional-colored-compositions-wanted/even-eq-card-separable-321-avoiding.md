@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.even_eq_card_separable_321_avoiding
 ---
 
-# Even eq card separable 321 avoiding
+# Even colored compositions and 321-avoiding separable permutations
 
-For `k ≥ 0`, `e(k)` equals the number of permutations of `{1, …, k}` avoiding the patterns
-`321`, `2413` and `3142` (the `321`-avoiding separable permutations). Stated for all `k ≥ 0`
-(both sides are `1` at `k = 0`).
+**Even colored compositions and 321-avoiding separable permutations.** For every $k \ge 0$,
+the number $e(k) = c_{2,0}(k)$ of even colored compositions of $k$, in which only the parts at
+even positions are colored, equals the number of permutations of $\{1, \dots, k\}$ that avoid
+the patterns $321$, $2413$ and $3142$, that is, the number of $321$-avoiding separable
+permutations of $\{1, \dots, k\}$.
+
+At $k = 0$ both sides equal $1$.
 
 ## Depends on
 
-- [Positional Colored Composition Count](positional-colored-composition-count.md)
+- [Positional colored compositions](positional-colored-composition-count.md)
 
 ## Sources
 

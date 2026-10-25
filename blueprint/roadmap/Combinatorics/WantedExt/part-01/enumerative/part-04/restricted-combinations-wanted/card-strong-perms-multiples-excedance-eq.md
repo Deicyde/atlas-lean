@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.card_strongPerms_multiples_excedance_eq_coeff
 ---
 
-# Card strong Perms multiples excedance eq coeff
+# Excedances of strongly restricted permutations with displacements $-m$, $0$, $jm$
 
-Corollary 14, excedance part: for `j ≥ 1`, `i, k ≥ 0` and `0 ≤ r < m`, the number of
-permutations counted by `P^{\{-m,0,jm\}}_{im+r}` with `k` excedances is
-`[x^k] (f^{(j+1)}_i(x))^{m-r} (f^{(j+1)}_{i+1}(x))^r`.
+**Excedances of strongly restricted permutations with displacements $-m$, $0$, $jm$.** Let
+$m, j, i, r, k$ be natural numbers with $j \ge 1$ and $r < m$, and let $f_n(x)$ be the
+$(1, j+1)$-bonacci polynomials with natural-number coefficients: $f_0(x) = 1$, and
+$f_{n+1}(x) = f_n(x) + x f_{n-j}(x)$ if $n \ge j$, $f_{n+1}(x) = f_n(x)$ if $n < j$. Then the
+number of permutations $\pi$ of $\{0, 1, \dots, im + r - 1\}$ with $\pi(a) - a \in \{-m, 0, jm\}$
+for every $a$ and with exactly $k$ excedances (points $a$ with $\pi(a) > a$) equals the
+coefficient of $x^k$ in $f_i(x)^{m-r} f_{i+1}(x)^r$.
 
 ## Depends on
 
 - [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [One TBonacci Polynomial](one-tbonacci-polynomial.md)
+- [The $(1,t)$-bonacci polynomials](one-tbonacci-polynomial.md)
 
 ## Sources
 

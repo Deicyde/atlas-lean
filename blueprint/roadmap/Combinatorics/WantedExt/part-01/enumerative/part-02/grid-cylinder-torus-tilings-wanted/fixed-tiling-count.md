@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.fixedTilingCount
 ---
 
-# Fixed Tiling Count
+# Number of fixed tilings
 
-The number of tilings `F : α → T` fixed by a cell map `φ` and tile permutation `σ`.
-The subtype equation is exactly the paper's condition `F (c·s) = F c·g`, with `φ` encoding
-the cell part and `σ` encoding the design part.  This definition makes no ambient group-action
-assumption because a single symmetry is sufficient for every fixed-point formula below.
+**Number of fixed tilings.** Let $\alpha$ (the cells) and $T$ (the tile designs) be finite sets,
+let $\varphi : \alpha \to \alpha$ be a map and let $\sigma$ be a permutation of $T$. The number of
+tilings fixed by $(\varphi, \sigma)$ is the number of maps $F : \alpha \to T$ such that
+$F(\varphi(c)) = \sigma(F(c))$ for every $c \in \alpha$.
 
-Formalization deviation: none beyond the representation choices stated above.
+This is the paper's fixed-point condition $F(c \cdot s) = F(c) \cdot g$, with $\varphi$ encoding
+the action on cells and $\sigma$ the action on designs. No ambient group action is assumed, since
+each fixed-point formula involves a single symmetry.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.bubbleCount_two_one
 ---
 
-# Bubble Count two one
+# Bubbles of size one on four vertices
 
-`B_{2,1} = 2`.
+**Bubbles of size one on four vertices.** $B_{2,1} = 2$: the linear chord diagrams on $4$
+vertices have $2$ bubbles of size $1$ in total.
 
 ## Depends on
 
-- [Bubble Count](bubble-count.md)
+- [Bubble counts](bubble-count.md)
 
 ## Sources
 

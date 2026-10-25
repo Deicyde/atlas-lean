@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.permWordleCoeff_three_lt_cyclicShift
 ---
 
-# Theorem 7
+# Cyclic shift maximizes three-guess solves among inductive strategies
 
-**Theorem 7.** For `n ≥ 4`, cyclic shift guesses strictly more permutations in exactly three
-guesses than any other inductive strategy.
+**Cyclic shift maximizes three-guess solves among inductive strategies.** Let $n \ge 4$ and let
+$S$ be an inductive strategy of length $n$ whose component $S[n]$ is not the rotation
+$i \mapsto i + 1 \pmod n$. Then strictly fewer permutations of $\{0, \dots, n-1\}$ are guessed in
+exactly three guesses with $S$ than with the cyclic shift strategy.
 
 ## Depends on
 
-- [Is Inductive Perm Wordle Strategy](is-inductive-perm-wordle-strategy.md)
-- [Cyclic Shift Strategy](cyclic-shift-strategy.md)
-- [Perm Wordle Coeff](perm-wordle-coeff.md)
+- [Inductive strategy](is-inductive-perm-wordle-strategy.md)
+- [Cyclic shift strategy](cyclic-shift-strategy.md)
+- [Coefficients of the guess-count generating function](perm-wordle-coeff.md)
 
 ## Sources
 

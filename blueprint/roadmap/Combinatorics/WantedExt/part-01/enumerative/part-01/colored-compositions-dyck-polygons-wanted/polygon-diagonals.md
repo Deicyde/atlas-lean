@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.polygonDiagonals
 ---
 
-# Polygon Diagonals
+# Diagonals of a convex polygon
 
-The diagonals of the convex `(n+2)`-gon with vertices `0, …, n+1` in cyclic
-order: pairs `(a, b)` with `a + 2 ≤ b ≤ n + 1`, other than the side `(0, n+1)`.
+**Diagonals of a convex polygon.** For $n \in \mathbb{N}$, label the vertices of the convex
+$(n+2)$-gon $0, 1, \dots, n+1$ in cyclic order. Its diagonals are the pairs $(a, b)$ of natural
+numbers with $a + 2 \le b \le n + 1$ and $(a, b) \ne (0, n+1)$; the excluded pair is the side
+joining the vertices $0$ and $n+1$.
 
 ## Depends on
 

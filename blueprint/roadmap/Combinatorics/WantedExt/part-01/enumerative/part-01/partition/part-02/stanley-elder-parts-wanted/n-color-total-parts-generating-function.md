@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.nColor_totalParts_generatingFunction
 ---
 
-# N Color total Parts generating Function
+# Generating functions for the total number of parts of $n$-color partitions
 
-Theorem 3: with `T_o(m)` (resp. `T_e(m)`) the total number of parts over the `n`-color
-partitions of `m` with an odd (resp. even) number of parts,
-`∑_{m ≥ 1} m q^m / (1 ∓ q^m) = ∏_{m ≥ 1} (1 ∓ q^m)^m ∑_{m ≥ 1} (T_o(m) ± T_e(m)) q^m`; both
-sign choices, as a conjunction (upper signs first).
+**Generating functions for the total number of parts of $n$-color partitions.** For
+$m \ge 0$ let $T_o(m)$ (resp. $T_e(m)$) be the total number of parts, counted with
+multiplicity, over the $n$-color partitions of $m$ having an odd (resp. even) number of parts.
+Then, as formal power series in $q$ with rational coefficients,
+
+$$\sum_{m \ge 1} \frac{m q^m}{1 - q^m} =
+\prod_{m \ge 1} (1 - q^m)^m \sum_{m \ge 0} \bigl(T_o(m) + T_e(m)\bigr) q^m$$
+
+and
+
+$$\sum_{m \ge 1} \frac{m q^m}{1 + q^m} =
+\prod_{m \ge 1} (1 + q^m)^m \sum_{m \ge 0} \bigl(T_o(m) - T_e(m)\bigr) q^m.$$
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Sources
 

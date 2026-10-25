@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.coloredPartitions_differentParts_eq_restrictedColors
 ---
 
-# Colored Partitions different Parts eq restricted Colors
+# Colored partitions with different parts
 
-For `n ≥ 0`, the number of colored partitions of `n` with different parts (no colored part
-`m_j`, `1 ≤ j ≤ m`, repeated) equals the number of colored partitions of `n` in which no even
-part has an even color, and also the number in which no even part has an odd color.
+**Colored partitions with different parts.** A colored part is a pair $(m, j)$ of integers
+with $1 \le j \le m$, read as the part $m$ in color $j$, and a colored partition of $n$ is a
+finite multiset of colored parts whose sizes $m$ sum to $n$. For every $n \ge 0$, the number of
+colored partitions of $n$ in which no colored part is repeated equals the number of colored
+partitions of $n$ in which no even part has an even color, and it also equals the number of
+colored partitions of $n$ in which no even part has an odd color.
 
 ## Depends on
 

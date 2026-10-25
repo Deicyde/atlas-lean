@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.knuth_poly_gammaBinom_mul_pow
 ---
 
-# Knuth poly gamma Binom mul pow
+# Generalized central binomial polynomial identity, Bernstein form
 
-Equation (50): for real `v > -1` and complex `x`,
-`∑ binom(n,k) 2^{-k} binom(2k+v, (2k+v)/2) binom(k+v, v/2)^{-1} (1-x)^k x^{n-k}
-= ∑_{k ≤ n/2} binom(n,2k) 2^{-2k} binom(2k,k) binom((2k+v)/2, k)^{-1} (1-x)^{2k}`.
+**Generalized central binomial polynomial identity, Bernstein form.** Let $\binom{a}{b}$
+denote the generalized binomial coefficient $\Gamma(a+1)/(\Gamma(b+1)\Gamma(a-b+1))$. For every
+natural number $n$, every real $v > -1$ and every complex $x$,
+
+$$\sum_{k=0}^{n} \binom{n}{k} 2^{-k} \binom{2k+v}{(2k+v)/2} \binom{k+v}{v/2}^{-1} (1-x)^k
+x^{n-k} = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} 2^{-2k} \binom{2k}{k}
+\binom{(2k+v)/2}{k}^{-1} (1-x)^{2k}.$$
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

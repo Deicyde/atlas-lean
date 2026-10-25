@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.regularCubicOverlinedSeries
 ---
 
-# Regular Cubic Overlined Series
+# Generating function of ℓ-regular cubic partitions with odd parts overlined
 
-The generating function `∑ a_ℓ(n) qⁿ = f_2 f_ℓ² f_{4ℓ} / (f_1² f_4 f_{2ℓ})` of
-`ℓ`-regular cubic partitions with odd parts overlined, as an integer power series
-(meaningful for `ℓ ≥ 1`; the paper uses `ℓ > 2`).
+**Generating function of ℓ-regular cubic partitions with odd parts overlined.** For a natural
+number $\ell$, this is the integer power series
+
+$$\frac{f_2 f_\ell^2 f_{4\ell}}{f_1^2 f_4 f_{2\ell}}, \qquad f_k = \prod_{m \ge 1} (1 - q^{km}).$$
+
+It is meaningful for $\ell \ge 1$, where the denominator has constant term $1$ and so is
+invertible. For $\ell > 2$, the range the paper considers, its coefficient of $q^n$ is the number
+of $\ell$-regular cubic partitions of $n$ with odd parts overlined.
 
 ## Depends on
 

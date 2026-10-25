@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.alphaStirlingEntry_succ_succ
 ---
 
-# Alpha Stirling Entry succ succ
+# Recurrence for the α-Stirling entries
 
-The recurrence of `S_α`: `Ŝ_{i+1,j+1} = Ŝ_{i,j} + α_{j+2} Ŝ_{i,j+1}` (0-based entries).
+**Recurrence for the α-Stirling entries.** Let $R$ be a commutative ring, let $\alpha$ be a
+sequence in $R$, and let $s_{i,j}$ ($i, j \ge 0$) be the α-Stirling entries of $\alpha$. Then for
+all $i, j \ge 0$, $s_{i+1,j+1} = s_{i,j} + \alpha_{j+2} s_{i,j+1}$.
 
 ## Depends on
 
-- [Alpha Stirling Entry](alpha-stirling-entry.md)
+- [Entries of the α-Stirling matrix](alpha-stirling-entry.md)
 
 ## Sources
 

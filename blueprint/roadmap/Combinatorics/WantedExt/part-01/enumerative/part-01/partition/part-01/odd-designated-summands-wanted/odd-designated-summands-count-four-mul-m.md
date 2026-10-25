@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsCount_four_mul_mod_four
 ---
 
-# Odd Designated Summands Count four mul mod four
+# The internal congruence $PD_2(4n) \equiv PD_2(n) \pmod 4$
 
-The internal congruence `PD_2(4n) ≡ PD_2(n) (mod 4)` for all `n ≥ 0`.
+**The internal congruence $PD_2(4n) \equiv PD_2(n) \pmod 4$.** Let $PD_2(n)$ be the number of
+partitions of $n$ with designated summands in which every part is odd. For every $n \ge 0$,
+$PD_2(4n) \equiv PD_2(n) \pmod 4$.
 
 ## Depends on
 
-- [Odd Designated Summands Count](odd-designated-summands-count.md)
+- [The odd designated-summand partition function](odd-designated-summands-count.md)
 
 ## Sources
 

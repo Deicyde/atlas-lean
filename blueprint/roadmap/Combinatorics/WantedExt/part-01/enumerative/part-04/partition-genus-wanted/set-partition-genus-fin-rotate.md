@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.setPartitionGenus_finRotate
 ---
 
-# Set Partition Genus fin Rotate
+# The one-block partition has genus zero
 
-One-part partitions have genus `0`.
+**The one-block partition has genus zero.** For every natural number $n$, the genus of the
+cyclic permutation $i \mapsto i + 1 \pmod n$ of $\{0, \dots, n-1\}$ is $0$.
+
+For $n \ge 1$ its only cycle is all of $\{0, \dots, n-1\}$, so this says that the partition with a
+single block has genus $0$.
 
 ## Depends on
 
-- [Set Partition Genus](set-partition-genus.md)
+- [Genus of a set partition](set-partition-genus.md)
 
 ## Sources
 

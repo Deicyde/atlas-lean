@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.dyckSubwordCount_UDU_UDUDUD
 ---
 
-# Dyck Subword Count UDU UDUDUD
+# Occurrences of UDU in UDUDUD
 
-`UDUDUD` contains the subword `UDU` twice.
+**Occurrences of UDU in UDUDUD.** The contiguous subword $UDU$ occurs exactly $2$ times in
+$UDUDUD$; the two occurrences overlap.
 
 ## Depends on
 

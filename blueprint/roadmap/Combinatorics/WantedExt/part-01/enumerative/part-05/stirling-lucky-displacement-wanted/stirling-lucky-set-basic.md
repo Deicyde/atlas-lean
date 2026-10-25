@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.stirlingLuckySet_basic
 ---
 
-# Stirling Lucky Set basic
+# Basic properties of lucky cars
 
-For `w ∈ Q_n` (`n ≥ 1`): (a) car `1` is lucky; (b) the first car `i` with
-`w(i) = 1` is lucky; (c) `1 ≤ lucky(w) ≤ n`. (`n ≥ 1` is added: `Q_0` has only
-the empty word, with no cars.)
+**Basic properties of lucky cars.** Let $n \ge 1$ and let $w$ be a Stirling permutation of
+order $n$, read as a parking function of length $2n$. Then (a) car $1$ is lucky; (b) the first
+car $i$ with $w_i = 1$ is lucky; (c) the number of lucky cars of $w$ is at least $1$ and at
+most $n$.
+
+The hypothesis $n \ge 1$ is added: the only Stirling permutation of order $0$ is the empty
+word, which has no cars.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.fineNumber_eq_half_neg_one_pow_add_sum
 ---
 
-# Fine Number eq half neg one pow add sum
+# Fine numbers as an alternating binomial sum
 
-Corollary 3: for `n ≥ 2`,
-`f_n = (1/2)(-1)^n + (1/2) ∑_{k=0}^{n} (-1)^{n-k} (1 - n/(k+1)) C(n+k, k)`.
+**Fine numbers as an alternating binomial sum.** For every natural number $n \ge 2$, the Fine
+number $F(n)$ satisfies
+
+$$F(n) = \frac{1}{2} (-1)^n +
+\frac{1}{2} \sum_{k=0}^{n} (-1)^{n-k} \left(1 - \frac{n}{k+1}\right) \binom{n+k}{k}.$$
 
 ## Depends on
 

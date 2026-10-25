@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.reductionSeq_cyclicSortingMachine_123_reductionSeq
 ---
 
-# Reduction Seq cyclic Sorting Machine 123 reduction Seq
+# Reducing before the $123$ cyclic sorting machine does not change the reduced output
 
-For every permutation `π` of `[n]`, `red(SC_[123](red(π))) = red(SC_[123](π))`. The lemma's
-second sentence (blocks `a, a+1, …, a+k` of `π` enter and leave the stack together) is a remark on
-the stack dynamics and is not stated.
+**Reducing before the $123$ cyclic sorting machine does not change the reduced output.** For
+every permutation $\pi$ of $[n] = \{1, \ldots, n\}$, applying the cyclic sorting machine
+$\mathrm{SC}_{[123]}$ to the reduction $\operatorname{red}(\pi)$ and reducing the result gives the
+reduction of $\mathrm{SC}_{[123]}(\pi)$:
+$\operatorname{red}(\mathrm{SC}_{[123]}(\operatorname{red}(\pi))) =
+\operatorname{red}(\mathrm{SC}_{[123]}(\pi))$.
+
+Only this identity is stated; the lemma's further assertion that blocks $a, a+1, \ldots, a+k$ of
+$\pi$ enter and leave the stack together is not part of the statement.
 
 ## Depends on
 
-- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
-- [Reduction Seq](reduction-seq.md)
+- [Cyclic avoidance machine](cyclic-sorting-machine.md)
+- [Reduction of a sequence](reduction-seq.md)
 
 ## Sources
 

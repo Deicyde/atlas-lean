@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_mul_pow_div_ascFactorial
 ---
 
-# Sum choose mul pow div asc Factorial
+# Binomial sums with rising-factorial denominators
 
-For `s ≥ 1`, `∑_{k=0}^N binom(N, k) x^{k+s} / (k+1)^{(s)} =
-((1 + x)^{N+s} - 1)/(N+1)^{(s)} - ∑_{j=1}^{s-1} x^j / (j! (N+1)^{(s-j)})` (the paper writes
-`binom(n, k)` for `binom(N, k)`).
+**Binomial sums with rising-factorial denominators.** Write $m^{(i)} = m(m+1)\cdots(m+i-1)$
+for the rising factorial. For all natural numbers $N$ and $s \ge 1$ and every real number $x$,
+
+$$\sum_{k=0}^{N} \binom{N}{k} \frac{x^{k+s}}{(k+1)^{(s)}} =
+\frac{(1+x)^{N+s} - 1}{(N+1)^{(s)}} - \sum_{j=1}^{s-1} \frac{x^j}{j!\,(N+1)^{(s-j)}}.$$
+
+The source writes $\binom{n}{k}$ for $\binom{N}{k}$.
 
 ## Depends on
 

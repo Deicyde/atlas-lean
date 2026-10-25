@@ -12,7 +12,7 @@ navigation: transparent
 - [KTuple Regular Partitions](ktuple-regular-partitions-wanted/README.md)
 - [King Permutations](king-permutations-wanted/README.md)
 - [Knuth Old Sum](knuth-old-sum-wanted/README.md)
-- [LGrid Domino Tilings Wanted](domino-tilings-l-grid-via-fibonacci.md)
+- [Tauraso's Cassini-type identity](domino-tilings-l-grid-via-fibonacci.md)
 - [Linear Chord Bubbles](linear-chord-bubbles-wanted/README.md)
 - [Linear Recurrence Log Behavior](linear-recurrence-log-behavior-wanted/README.md)
 - [Lonely Marriageable Singles](lonely-marriageable-singles-wanted/README.md)

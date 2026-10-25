@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.firstNonMultiples_three_four
 ---
 
-# First Non Multiples three four
+# The first four positive integers not divisible by 3
 
-`G_{3,4} = {1, 2, 4, 5}`.
+**The first four positive integers not divisible by 3.** The set $G_{3,4}$ of the first four
+positive integers not divisible by $3$ is $\{1, 2, 4, 5\}$.
 
 ## Depends on
 
-- [First Non Multiples](first-non-multiples.md)
+- [First non-multiples of an integer](first-non-multiples.md)
 
 ## Sources
 

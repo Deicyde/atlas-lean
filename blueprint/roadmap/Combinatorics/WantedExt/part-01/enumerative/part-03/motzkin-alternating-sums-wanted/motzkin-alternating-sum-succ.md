@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.motzkinAlternatingSum_succ
 ---
 
-# Motzkin Alternating Sum succ
+# Recurrence for alternating Motzkin sums
 
-`T_{n+1} = M_{n+1} - T_n`.
+**Recurrence for alternating Motzkin sums.** Let $M_k$ denote the $k$-th Motzkin number and
+let $T_n = \sum_{k=0}^{n} (-1)^{n-k} M_k$. For every natural number $n$, $T_{n+1} = M_{n+1} - T_n$.
 
 ## Depends on
 
-- [Motzkin Alternating Sum](motzkin-alternating-sum.md)
+- [Alternating sums of Motzkin numbers](motzkin-alternating-sum.md)
 - [Motzkin numbers as a Catalan-weighted binomial sum](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
 
 ## Sources

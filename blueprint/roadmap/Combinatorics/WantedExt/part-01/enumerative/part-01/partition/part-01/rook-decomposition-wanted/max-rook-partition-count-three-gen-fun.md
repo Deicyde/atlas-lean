@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount_three_genFun
 ---
 
-# Max Rook Partition Count three gen Fun
+# Generating function of $R_3(n)$
 
-Generating function of `R_3(n)`, denominator cleared:
-`(1-q)³(1+q+q²) ∑ R_3(n) qⁿ = q⁶(1+2q+q²+2q³-q⁴-q⁶-q⁷+q⁸)`.
+**Generating function of $R_3(n)$.** Let $R_3(n)$ be the number of partitions of $n$ with
+max-rook number $3$. In the ring $\mathbb{Z}[[q]]$ of formal power series with integer
+coefficients,
+
+$$(1-q)^3(1+q+q^2) \sum_{n \ge 0} R_3(n)\, q^n = q^6(1+2q+q^2+2q^3-q^4-q^6-q^7+q^8).$$
+
+This is the rational generating function of $R_3(n)$ with its denominator cleared.
 
 ## Depends on
 
-- [Max Rook Partition Count](max-rook-partition-count.md)
+- [Partitions with a given max-rook number](max-rook-partition-count.md)
 
 ## Sources
 

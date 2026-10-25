@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.iterate_forwardDiff_sum_rascalGen
 ---
 
-# Corollary 22
+# Forward differences of generalized Rascal row sums
 
-**Corollary 22** (Theorem 7.3 of Gregory et al.): the
-`(2j+1)`-st forward difference in `n` of the row sum
-`∑_{k=0}^n R^{(j)}_{n,k}` is `1`.
+**Forward differences of generalized Rascal row sums.** Fix a natural number $j$. For natural
+numbers $n$ and $k$ let $R^{(j)}_{n,k}$ be the number of binary words of length $n$ with exactly
+$k$ ones and at most $j$ ascents, and let $S(n) = \sum_{k=0}^{n} R^{(j)}_{n,k}$. Then
+$(\Delta^{2j+1} S)(n) = 1$ for every natural number $n$, where $\Delta$ is the forward
+difference $(\Delta a)(n) = a(n+1) - a(n)$.
 
 ## Depends on
 
-- [Rascal Gen Z](rascal-gen-z.md)
+- [Generalized Rascal numbers at integer indices](rascal-gen-z.md)
 
 ## Sources
 

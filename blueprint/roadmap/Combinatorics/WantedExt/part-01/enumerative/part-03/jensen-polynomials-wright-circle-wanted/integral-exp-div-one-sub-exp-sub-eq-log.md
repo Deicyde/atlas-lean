@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.integral_exp_div_one_sub_exp_sub_eq_log_Gamma
 ---
 
-# Integral exp div one sub exp sub eq log Gamma
+# An integral formula for $\log \Gamma(1/N)$
 
-For every real `N > 0`,
-`∫₀^∞ (e^{-x} / (x (1 - e^{-Nx})) - 1 / (N x²) - (1/2 - 1/N) e^{-x} / x) dx
-  = log Γ(1/N) + (1/2 - 1/N) log(1/N) - (1/2) log(2π)`.
+**An integral formula for $\log \Gamma(1/N)$.** For every real number $N > 0$,
+
+$$
+\int_0^\infty \left( \frac{e^{-x}}{x \left(1 - e^{-N x}\right)} - \frac{1}{N x^2} -
+\left( \frac{1}{2} - \frac{1}{N} \right) \frac{e^{-x}}{x} \right) dx =
+\log \Gamma\left( \frac{1}{N} \right) + \left( \frac{1}{2} - \frac{1}{N} \right) \log \frac{1}{N} -
+\frac{1}{2} \log (2\pi).
+$$
 
 ## Depends on
 

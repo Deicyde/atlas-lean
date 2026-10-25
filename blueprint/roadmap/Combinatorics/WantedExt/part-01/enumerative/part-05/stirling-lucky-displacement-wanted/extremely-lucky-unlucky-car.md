@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.extremely_lucky_unlucky_car
 ---
 
-# Extremely lucky unlucky car
+# Unlucky cars of an extremely lucky Stirling permutation
 
-Let `w ∈ Q_n` be extremely lucky. For `i ∈ [n]`, the `i`-th unlucky car `j`
-(the unlucky car with exactly `i - 1` unlucky cars before it) (a) prefers spot
-`n - i + 1` and (b) has displacement `2i - 1`.
+**Unlucky cars of an extremely lucky Stirling permutation.** Let $w = w_1 \cdots w_{2n}$ be a
+Stirling permutation of order $n$ that is extremely lucky, that is, its set $\mathrm{Lucky}(w)$
+of lucky cars has exactly $n$ elements, and let $1 \le i \le n$. If car $j$ is unlucky and
+exactly $i - 1$ of the cars $1, \dots, j - 1$ are unlucky, then car $j$ prefers spot
+$w_j = n - i + 1$ and has displacement $d(j) = 2i - 1$.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Displacement](stirling-displacement.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [Displacement of a car](stirling-displacement.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 
 ## Sources
 

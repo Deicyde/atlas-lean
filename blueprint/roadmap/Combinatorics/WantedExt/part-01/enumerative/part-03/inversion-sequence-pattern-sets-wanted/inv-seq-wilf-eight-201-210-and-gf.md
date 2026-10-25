@@ -5,18 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.invSeq_wilf_eight_201_210_and_gf
 ---
 
-# Theorem 17
+# Eight-pattern sets differing in 201 and 210: equivalence and generating function
 
-**Theorem 17.** With `B_τ = {000, 010, 100, 101, 102, 110, 120, τ}`, `B_201 ∼ B_210`, and
-`F_{B_201}(x) = (1 - x² - 4x³ - 7x⁴ - 5x⁵ - 2x⁶ - (1 + x + 2x² + 2x³ + x⁴) √(1 - 2x - 3x²)) /
-(2x³ (1 + x)(x² + 2x + 2))`, stated after clearing the denominator.
-`s` is the power series square root of `1 - 2x - 3x²` with constant term `1`; the record's
-radical `√(1 - 2x - 3x²)` multiplies the polynomial printed just before it.
+**Eight-pattern sets differing in 201 and 210: equivalence and generating function.** Write a
+length-3 pattern as the word of its values, so $101$ is the pattern $(1, 0, 1)$. For a set $B$ of
+patterns let $|I_n(B)|$ be the number of inversion sequences of length $n$ that avoid every
+pattern in $B$, and let $F_B(x) = \sum_{n \ge 1} |I_n(B)| x^n \in \mathbb{Q}[[x]]$. Let
+$B_\tau = \{000, 010, 100, 101, 102, 110, 120, \tau\}$. Then $|I_n(B_{201})| = |I_n(B_{210})|$
+for every $n \ge 0$, and for every power series $s \in \mathbb{Q}[[x]]$ with constant term $1$
+and $s^2 = 1 - 2x - 3x^2$,
+
+$$
+2x^3 (1 + x)(x^2 + 2x + 2) F_{B_{201}}(x) =
+1 - x^2 - 4x^3 - 7x^4 - 5x^5 - 2x^6 - (1 + x + 2x^2 + 2x^3 + x^4) s.
+$$
+
+This is the paper's closed form for $F_{B_{201}}$ with the denominator cleared, where $s$ plays
+the role of $\sqrt{1 - 2x - 3x^2}$.
 
 ## Depends on
 
-- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
-- [Inv Seq Avoid GF](inv-seq-avoid-gf.md)
+- [Number of inversion sequences avoiding a set of patterns](inv-seq-avoid-count.md)
+- [Generating function of inversion sequences avoiding a set of patterns](inv-seq-avoid-gf.md)
 
 ## Sources
 

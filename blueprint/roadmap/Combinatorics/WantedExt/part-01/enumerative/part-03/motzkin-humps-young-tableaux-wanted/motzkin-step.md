@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.motzkinStep
 ---
 
-# Motzkin Step
+# Height change of a Motzkin step
 
-The vertical displacement of the encoded step `0 = D`, `1 = F`, or `2 = U`.
+**Height change of a Motzkin step.** The three Motzkin steps are encoded as $0 = D$ (down),
+$1 = F$ (flat) and $2 = U$ (up). The height change of the step encoded by $s \in \{0, 1, 2\}$
+is the integer $s - 1$; thus $D$ changes the height by $-1$, $F$ by $0$ and $U$ by $+1$.
 
 ## Depends on
 

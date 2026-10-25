@@ -5,20 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.manPrefs
 ---
 
-# Man Prefs
+# Men's preferences induced by rankings
 
-The strict order on women induced by man `i`'s ranking: `a` before `b` when
-`manRank P i a < manRank P i b`.
+**Men's preferences induced by rankings.** For a preference profile of $n$ men and $n$
+women, each man $i$ gets the strict total order on the women in which $i$ prefers woman $a$ to
+woman $b$ exactly when he ranks $a$ at an earlier position than $b$.
 
 ## Depends on
 
 - [Men's preferences](../../../../../MathlibExt/part-01/matching/gale-shapley/mprefs.md)
-- [Preference Profile](preference-profile.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
 
 ## Proof depends on
 
 - [Strict Total Order](../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
-- [Man Rank](man-rank.md)
+- [Rank of a woman for a man](man-rank.md)
 
 ## Sources
 

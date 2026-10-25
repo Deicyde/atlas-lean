@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isDDistinctParts_examples
 ---
 
-# Is DDistinct Parts examples
+# Examples of 2-distinct partitions
 
-`5 + 3` is `2`-distinct and `4 + 3` is not.
+**Examples of 2-distinct partitions.** The partition $5 + 3$ has $2$-distinct parts, and the
+partition $4 + 3$ does not.
 
 ## Depends on
 
-- [Is DDistinct Parts](is-ddistinct-parts.md)
+- [Partitions into d-distinct parts](is-ddistinct-parts.md)
 
 ## Sources
 

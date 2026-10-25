@@ -5,17 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.cylinder_identity
 ---
 
-# Cylinder identity
+# Cylinder fixed-tiling count for the identity
 
-Summing over all cylinder shifts paired with the identity gives
-`Σ_{d∣n} φ(d)|T|^(nm/d)`.  `Nat.divisors n` represents positive divisors, and `σ^1=1` records
-that the design action is the identity.  This quantifies over every permitted identity action.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Cylinder fixed-tiling count for the identity.** Let $T$ be a finite set of tile designs,
+let $n, m \ge 1$, and let $\sigma$ be a permutation of $T$ with $\sigma^1 = 1$, that is, the
+identity. Then the cylinder shift sum of the identity map of $\mathbb{Z}/n \times \mathbb{Z}/m$
+and $\sigma$ equals $\sum_{d \mid n} \varphi(d)\, |T|^{nm/d}$, where $d$ runs over the positive
+divisors of $n$ and $\varphi$ is Euler's totient function.
 
 ## Depends on
 
-- [Cylinder Shift Sum](cylinder-shift-sum.md)
+- [Cylinder shift sum](cylinder-shift-sum.md)
 
 ## Sources
 

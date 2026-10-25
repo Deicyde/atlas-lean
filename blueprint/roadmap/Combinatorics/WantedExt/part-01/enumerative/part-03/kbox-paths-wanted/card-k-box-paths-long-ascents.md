@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.card_kBoxPaths_longAscents
 ---
 
-# Card k Box Paths long Ascents
+# Number of $k$-box paths with $j$ long ascents
 
-The number of `k`-box paths of size `n` with exactly `j ≥ 1` long ascents is
-`1/j · binom((k+1)n-2, j-1) · binom(n-1, j-1)`; denominator cleared. (For
-`j > n` both sides vanish.)
+**Number of $k$-box paths with $j$ long ascents.** Let $k \ge 1$, $n \ge 1$ and $j \ge 1$,
+and let $a_{k,n,j}$ be the number of $k$-box paths of size $n$ with exactly $j$ long ascents.
+Then
+
+$$
+j \, a_{k,n,j} = \binom{(k+1)n - 2}{j - 1} \binom{n - 1}{j - 1}.
+$$
+
+For $j > n$ both sides vanish.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
-- [K Box Paths](k-box-paths.md)
-- [Skew Long Ascents](skew-long-ascents.md)
+- [Skew Dyck steps](skew-dyck-step.md)
+- [$k$-box paths](k-box-paths.md)
+- [Long ascents of a skew Dyck word](skew-long-ascents.md)
 
 ## Sources
 

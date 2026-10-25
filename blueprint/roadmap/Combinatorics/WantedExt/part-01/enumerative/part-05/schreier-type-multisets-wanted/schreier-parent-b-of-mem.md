@@ -12,7 +12,7 @@ lean: MetaMathlibExt.schreierParentB_of_mem
 
 ## Depends on
 
-- [Schreier Parent B](schreier-parent-b.md)
+- [Parent sequence b for Schreier-type multisets](schreier-parent-b.md)
 
 ## Sources
 

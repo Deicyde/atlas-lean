@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.litNodesIncreasing_indiscrete
 ---
 
-# Lit Nodes Increasing indiscrete
+# Lit nodes of a one-part partition
 
-The one-part partition `(n)`, `n ≥ 1`, has `n` lit nodes.
+**Lit nodes of a one-part partition.** For every natural number $n \ge 1$, the one-part
+partition $(n)$ of $n$ has exactly $n$ lit nodes.
 
 ## Depends on
 
-- [Lit Nodes Increasing](lit-nodes-increasing.md)
+- [Lit nodes of a partition](lit-nodes-increasing.md)
 
 ## Sources
 

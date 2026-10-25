@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.permWordleGuess_succ
 ---
 
-# Perm Wordle Guess succ
+# Recurrence for the guesses of permutation Wordle
 
-The recurrence of the guess sequence.
+**Recurrence for the guesses of permutation Wordle.** Let $S$ be a strategy, that is, a
+permutation $S_m$ of $\{0, \dots, m-1\}$ for every $m$, let $\pi$ be a permutation of
+$\{0, \dots, n-1\}$, and let $\gamma_1, \gamma_2, \dots$ be the guesses of permutation Wordle with
+strategy $S$ and secret $\pi$. For every $r \ge 1$, the guess $\gamma_{r+1}$ is the guess that one
+round of the game with strategy $S$ and secret $\pi$ produces from $\gamma_r$.
 
 ## Depends on
 
-- [Perm Wordle Guess](perm-wordle-guess.md)
-- [Perm Wordle Next Guess](perm-wordle-next-guess.md)
+- [Guesses of permutation Wordle](perm-wordle-guess.md)
+- [One round of permutation Wordle](perm-wordle-next-guess.md)
 
 ## Sources
 

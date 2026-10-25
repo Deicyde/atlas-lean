@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.dysonRank_small_values
 ---
 
-# Dyson Rank small values
+# Rank of the partitions of $0$ and $1$
 
-Characteristic values of the rank: the empty partition and the partition `1` of `1` both
-have rank `0`, so `N(0) = N(1) = 1`, `R(1) = 0` and the Garden of Eden count `G(0) = 0`.
+**Rank of the partitions of $0$ and $1$.** The empty partition of $0$ and the partition $(1)$
+of $1$ both have Dyson rank $0$.
+
+Consequently the number of partitions of $k$ with nonnegative rank is $1$ for $k = 0$ and
+$k = 1$, no partition of $1$ has positive rank, and no partition of $0$ has rank at most $-2$.
 
 ## Depends on
 
-- [Dyson Rank](dyson-rank.md)
+- [Dyson's rank of a partition](dyson-rank.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.ascendingNaplesCount
 ---
 
-# Ascending Naples Count
+# Number of ascending $k$-Naples parking functions
 
-`I_{n,k}`: the number of ascending (weakly increasing) `k`-Naples parking functions of
-length `n`.
+**Number of ascending $k$-Naples parking functions.** For natural numbers $n$ and $k$,
+$I_{n,k}$ is the number of $k$-Naples parking functions $(a_1, \dots, a_n)$ of length $n$ that
+are weakly increasing, that is, $a_1 \le a_2 \le \dots \le a_n$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Naples Parking Function](is-naples-parking-function.md)
-- [Naples Park](naples-park.md)
+- [$k$-Naples parking function](is-naples-parking-function.md)
+- [Naples parking](naples-park.md)
 
 ## Sources
 

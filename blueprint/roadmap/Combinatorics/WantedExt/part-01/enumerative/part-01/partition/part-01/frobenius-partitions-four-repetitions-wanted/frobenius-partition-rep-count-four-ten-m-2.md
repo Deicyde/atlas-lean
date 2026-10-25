@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.frobeniusPartitionRepCount_four_ten_mul_add_one_mod_five
 ---
 
-# Frobenius Partition Rep Count four ten mul add one mod five
+# $\varphi_4(10n+1)$ modulo $5$
 
-`φ₄(10n + 1) ≡ k + 1 (mod 5)` if `n = k(3k + 1)` for an integer `k`, and
-`φ₄(10n + 1) ≡ 0 (mod 5)` otherwise.
+**$\varphi_4(10n+1)$ modulo $5$.** Let $\varphi_4(n)$ be the number of generalized Frobenius
+partitions of $n$ in which each integer appears at most $4$ times in each row, and let $n$ be a
+natural number. If $n = k(3k + 1)$ for an integer $k$, then
+$\varphi_4(10n + 1) \equiv k + 1 \pmod 5$; if there is no such integer $k$, then
+$\varphi_4(10n + 1) \equiv 0 \pmod 5$.
 
 ## Depends on
 
-- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
+- [Frobenius partitions with at most $k$ repetitions](frobenius-partition-rep-count.md)
 
 ## Sources
 

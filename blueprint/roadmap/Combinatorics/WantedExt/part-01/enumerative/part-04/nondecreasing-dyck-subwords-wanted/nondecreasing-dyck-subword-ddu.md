@@ -5,17 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.nondecreasingDyck_subword_DDU
 ---
 
-# Nondecreasing Dyck subword DDU
+# The subword $DDU$ in non-decreasing Dyck paths
 
-Subword `DDU` in non-decreasing Dyck paths: `F_DDU(x, y)`, `D_DDU(x)`, and the closed form of
-`d_DDU(n)` for `n ≥ 3`.
+**The subword $DDU$ in non-decreasing Dyck paths.** Let $F_{DDU}(x, y)$ and $D_{DDU}(x)$ be
+the bivariate and univariate generating functions of the subword $DDU$ in non-decreasing Dyck
+paths, let $d_{DDU}(n)$ be the total number of occurrences of $DDU$ over all non-decreasing Dyck
+paths of semilength $n$, and let $F_n$ and $L_n$ denote the Fibonacci and Lucas numbers. Then
+
+$$(1 - 3x + x^2(2 - y)) F_{DDU}(x, y) = (1 - x) x$$
+
+in $\mathbb{Z}[y][[x]]$,
+
+$$(1 - 3x + x^2)^2 D_{DDU}(x) = (1 - x) x^3$$
+
+in $\mathbb{Z}[[x]]$, and for every $n \ge 3$,
+
+$$10 d_{DDU}(n) = (10n - 13) F_{2n} + (-4n + 5) L_{2n}.$$
 
 ## Depends on
 
 - [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
-- [Nondecreasing Dyck Subword Bivariate GF](nondecreasing-dyck-subword-bivariate-gf.md)
-- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
-- [Nondecreasing Dyck Subword Total GF](nondecreasing-dyck-subword-total-gf.md)
+- [Bivariate generating function of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-bivariate-gf.md)
+- [Total occurrences of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-total.md)
+- [Generating function of the total subword count in non-decreasing Dyck paths](nondecreasing-dyck-subword-total-gf.md)
 
 ## Sources
 

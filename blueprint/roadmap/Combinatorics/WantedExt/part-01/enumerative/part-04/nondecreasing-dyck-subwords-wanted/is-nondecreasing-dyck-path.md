@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsNondecreasingDyckPath
 ---
 
-# Is Nondecreasing Dyck Path
+# Non-decreasing Dyck paths
 
-A Dyck path is non-decreasing when its valley heights are non-decreasing
-from left to right.
+**Non-decreasing Dyck paths.** A Dyck path is non-decreasing when its valley heights (the
+heights reached after the $D$ of each factor $DU$), read from left to right, form a
+non-decreasing sequence.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dyck Valley Heights](dyck-valley-heights.md)
+- [Valley heights](dyck-valley-heights.md)
 
 ## Sources
 

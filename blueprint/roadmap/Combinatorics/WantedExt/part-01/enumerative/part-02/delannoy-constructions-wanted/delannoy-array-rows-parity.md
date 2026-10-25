@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.DelannoyConstructions.delannoyArray_rows_parity
 ---
 
-# Delannoy Array rows parity
+# Parity of adjacent rows of a Delannoy array
 
-In a Delannoy array `R` (`R(m+1, n+1) = R(m, n+1) + R(m+1, n) + R(m, n)`), rows `m` and `m + 1`
-agree mod 2 everywhere if they agree at column `0`, and disagree everywhere otherwise.
+**Parity of adjacent rows of a Delannoy array.** Let $R(m, n)$, for $m, n \in \mathbb{N}$, be
+integers with $R(m+1, n+1) = R(m, n+1) + R(m+1, n) + R(m, n)$ for all $m, n$, and let
+$m \in \mathbb{N}$. If $R(m, 0) \equiv R(m+1, 0) \pmod 2$, then $R(m, i) \equiv R(m+1, i) \pmod 2$
+for all $i$; if $R(m, 0) \not\equiv R(m+1, 0) \pmod 2$, then
+$R(m, i) \not\equiv R(m+1, i) \pmod 2$ for all $i$.
 
 ## Depends on
 

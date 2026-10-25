@@ -6,17 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.permWordleFirstCorrectAt_one_iff
 ---
 
-# Perm Wordle First Correct At one iff
+# Permutations with a correct entry in the first guess
 
-`ρ_S(π) = 1` exactly when `π` has a fixed point.
+**Permutations with a correct entry in the first guess.** For $n \in \mathbb{N}$, a strategy
+$S$ and a permutation $\pi$ of $\{0, \dots, n-1\}$, write $\rho_S(\pi) = r$ when the $r$-th guess
+is the first guess with a correct position for the secret $\pi$. Then $\rho_S(\pi) = 1$, that is,
+the first guess (the identity) already has a correct position, exactly when $\pi$ has a fixed
+point.
 
 ## Depends on
 
-- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
+- [First guess with a correct position in permutation Wordle](perm-wordle-first-correct-at.md)
 
 ## Proof depends on
 
-- [Perm Wordle Guess](perm-wordle-guess.md)
+- [Guesses of permutation Wordle](perm-wordle-guess.md)
 
 ## Sources
 

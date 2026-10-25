@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.meteredParkingCount_one_binet
 ---
 
-# Metered Parking Count one binet
+# Binet formula for 1-metered parking functions
 
-For `m ≤ n + 1` and `n > 2`, the Binet form
-`mpf_{m,n}(1) = (n(n+√(n²-4)) - 2)/(n(n+√(n²-4)) - 4) · ((n+√(n²-4))/2)^m
-  + (n(n-√(n²-4)) - 2)/(n(n-√(n²-4)) - 4) · ((n-√(n²-4))/2)^m`.
+**Binet formula for 1-metered parking functions.** Let $m, n$ be natural numbers with
+$m \le n + 1$ and $n > 2$. Then the number $\mathrm{mpf}_{m,n}(1)$ of $1$-metered
+$(m, n)$-parking functions satisfies, as real numbers,
+
+$$\mathrm{mpf}_{m,n}(1) = \frac{n(n + \sqrt{n^2-4}) - 2}{n(n + \sqrt{n^2-4}) - 4}
+\left(\frac{n + \sqrt{n^2-4}}{2}\right)^m +
+\frac{n(n - \sqrt{n^2-4}) - 2}{n(n - \sqrt{n^2-4}) - 4}
+\left(\frac{n - \sqrt{n^2-4}}{2}\right)^m.$$
 
 ## Depends on
 
-- [Metered Parking Count](metered-parking-count.md)
+- [Number of metered parking functions](metered-parking-count.md)
 
 ## Sources
 

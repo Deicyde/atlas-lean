@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.frobeniusPartitionRepCount_four_four_mul_add_three_mod_two
 ---
 
-# Frobenius Partition Rep Count four four mul add three mod two
+# $\varphi_4(4n+3)$ is even
 
-`φ₄(4n + 3) ≡ 0 (mod 2)` for all `n ≥ 0`.
+**$\varphi_4(4n+3)$ is even.** Let $\varphi_4(n)$ be the number of generalized Frobenius
+partitions of $n$ in which each integer appears at most $4$ times in each row. For every natural
+number $n$, $\varphi_4(4n + 3) \equiv 0 \pmod 2$.
 
 ## Depends on
 
-- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
+- [Frobenius partitions with at most $k$ repetitions](frobenius-partition-rep-count.md)
 
 ## Sources
 

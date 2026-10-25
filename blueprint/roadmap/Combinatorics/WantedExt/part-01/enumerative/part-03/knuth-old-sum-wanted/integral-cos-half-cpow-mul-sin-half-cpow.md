@@ -5,14 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.integral_cos_half_cpow_mul_sin_half_cpow
 ---
 
-# Integral cos half cpow mul sin half cpow
+# Integral of $\cos^u(x/2)\sin^v(x/2)$ over $(0, \pi)$
 
-`I(u, v) = ∫₀^π cos^u(x/2) sin^v(x/2) dx = 2^{-u-v} π binom(u, u/2) binom(v, v/2)
-binom((u+v)/2, u/2)^{-1}` for `ℜu, ℜv > -1` (equation (10)).
+**Integral of $\cos^u(x/2)\sin^v(x/2)$ over $[0, \pi]$.** For all complex numbers $u$ and $v$
+with $\operatorname{Re} u > -1$ and $\operatorname{Re} v > -1$,
+
+$$
+\int_0^\pi \cos(x/2)^u \sin(x/2)^v \, dx =
+2^{-u-v} \pi \binom{u}{u/2} \binom{v}{v/2} \binom{(u+v)/2}{u/2}^{-1},
+$$
+
+where the powers are principal complex powers of the nonnegative reals $\cos(x/2)$ and
+$\sin(x/2)$, and $\binom{a}{b} = \Gamma(a+1)/(\Gamma(b+1)\,\Gamma(a-b+1))$ is the generalized
+binomial coefficient of complex arguments.
+
+This is equation (10) of the source.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

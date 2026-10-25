@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOdd_triangular_sum_eq_distincts
 ---
 
-# Overpartition Odd triangular sum eq distincts
+# Overpartitions into odd parts and partitions into distinct parts
 
-For `n ≥ 0`, `∑_{k ≥ 0} (-1)^{⌈k/2⌉} po(n - k(k+1)/2) = ∑_{k ∈ ℤ} (-1)^k pd(n - k(3k+1))`,
-with `pd(m) = #(Nat.Partition.distincts m)`. Corrected reading: the record (and the arXiv
-Theorem 3.9) sums the left side over all `k ∈ ℤ`, which fails at `n = 0` (left side `2`, from
-`k = 0` and `k = -1`; right side `1`); the proof uses the one-sided series (2.6) over `k ≥ 0`.
+**Overpartitions into odd parts and partitions into distinct parts.** Write $\mathrm{po}(m)$
+for the number of overpartitions of $m$ into odd parts and $\mathrm{pd}(m)$ for the number of
+partitions of $m$ into distinct parts. For every natural number $n$,
+$\sum_{k \ge 0,\ k(k+1)/2 \le n} (-1)^{\lceil k/2 \rceil} \, \mathrm{po}(n - k(k+1)/2) =
+\sum_{k \in \mathbb{Z},\ k(3k+1) \le n} (-1)^k \, \mathrm{pd}(n - k(3k+1))$.
+
+The sum on the left runs over $k \ge 0$ only. Taken over all integers $k$ it would double, since
+$k$ and $-1 - k$ give the same term, and the identity would fail at $n = 0$.
 
 ## Depends on
 
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 
 ## Sources
 

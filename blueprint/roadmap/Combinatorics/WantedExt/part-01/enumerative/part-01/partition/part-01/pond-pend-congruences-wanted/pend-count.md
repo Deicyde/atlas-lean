@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.pendCount
 ---
 
-# Pend Count
+# The PEND partition function
 
-`pend(n)`: the number of PEND partitions of `n` (OEIS A265254).
+**The PEND partition function.** For a natural number $n$, $\mathrm{pend}(n)$ is the number
+of PEND partitions of $n$: partitions of $n$ in which every even part that occurs appears at
+least twice (OEIS A265254).
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Pend Parts](is-pend-parts.md)
+- [The PEND condition](is-pend-parts.md)
 
 ## Sources
 

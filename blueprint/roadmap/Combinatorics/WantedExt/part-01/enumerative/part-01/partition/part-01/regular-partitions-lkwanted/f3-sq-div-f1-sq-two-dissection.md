@@ -5,10 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.f3_sq_div_f1_sq_two_dissection
 ---
 
-# F3 sq div f1 sq two dissection
+# The 2-dissection of $f_3^2/f_1^2$
 
-`f_3^2 / f_1^2 = f_4^4 f_6 f_12^2 / (f_2^5 f_8 f_24) + 2q f_4 f_6^2 f_8 f_24 / (f_2^4 f_12)`,
-stated with denominators cleared (both sides multiplied by `f_1^2 f_2^5 f_8 f_12 f_24`).
+**The 2-dissection of $f_3^2/f_1^2$.** Write $f_k = (q^k; q^k)_\infty$ for the Euler products.
+In the ring of integer power series in $q$,
+
+$$
+f_3^2 f_2^5 f_8 f_{12} f_{24} = f_1^2 f_4^4 f_6 f_{12}^3 + 2q f_1^2 f_2 f_4 f_6^2 f_8^2 f_{24}^2.
+$$
+
+Since each $f_k$ with $k \ge 1$ has constant term $1$ and is therefore invertible, this is the
+identity $f_3^2 / f_1^2 = f_4^4 f_6 f_{12}^2 / (f_2^5 f_8 f_{24}) +
+2q f_4 f_6^2 f_8 f_{24} / (f_2^4 f_{12})$ with both sides multiplied by
+$f_1^2 f_2^5 f_8 f_{12} f_{24}$.
 
 ## Depends on
 

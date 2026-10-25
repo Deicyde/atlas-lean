@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.maximalSchreierCount_eq_two_mul_sub
 ---
 
-# Theorem 9
+# Maximal $(1, q)$-Schreier sets counted by $(1, q)$-Schreier sets
 
-**Theorem 9.** For positive integers `q, n`, `|M^{1/q}_n| = 2|S^{1/q}_n| - |S^{1/q}_{n+1}|`.
+**Maximal $(1, q)$-Schreier sets counted by $(1, q)$-Schreier sets.** Fix a positive integer
+$q$. For each $m$, let $|S^{1/q}_m|$ be the number of sets $F \subseteq \{1, \dots, m\}$ with
+$m \in F$ and $q \min F \ge |F|$, and let $|M^{1/q}_m|$ be the number of those with
+$q \min F = |F|$. Then $|M^{1/q}_n| = 2|S^{1/q}_n| - |S^{1/q}_{n+1}|$ for every positive integer
+$n$.
 
 ## Depends on
 
-- [Maximal Schreier Count](maximal-schreier-count.md)
-- [Schreier Count](schreier-count.md)
+- [Number of maximal $(p, q)$-Schreier sets](maximal-schreier-count.md)
+- [Number of (p, q)-Schreier sets with given maximum](schreier-count.md)
 
 ## Sources
 

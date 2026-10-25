@@ -5,16 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.regularCubicOverlinedCount_nine_prime_mod_four
 ---
 
-# Regular Cubic Overlined Count nine prime mod four
+# Congruences modulo 4 for 9-regular cubic partitions with odd parts overlined
 
-For a prime `p ≥ 5` with `(-2/p) = -1`, all `δ, n ≥ 0` and `1 ≤ t ≤ p - 1`:
-`a_9(8p^{2δ} n + (19p^{2δ} - 4)/3) ≡ [qⁿ] 2 f_1 f_18 (mod 4)` and
-`a_9(8p^{2δ+2} n + 8p^{2δ+1} t + (19p^{2δ+2} - 4)/3) ≡ 0 (mod 4)`. The divisions are exact.
+**Congruences modulo 4 for 9-regular cubic partitions with odd parts overlined.** Let
+$a_9(n)$ be the number of $9$-regular cubic partitions of $n$ with odd parts overlined, and let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$. Let $p \ge 5$ be a prime with Legendre symbol
+$\left(\frac{-2}{p}\right) = -1$, and let $\delta \ge 0$. Then for every $n \ge 0$,
+
+$$a_9\left(8p^{2\delta} n + \frac{19p^{2\delta} - 4}{3}\right) \equiv 2c_n \pmod 4,$$
+
+where $c_n$ is the coefficient of $q^n$ in $f_1 f_{18}$, and for all $n \ge 0$ and all $t$ with
+$1 \le t \le p - 1$,
+
+$$a_9\left(8p^{2\delta+2} n + 8p^{2\delta+1} t + \frac{19p^{2\delta+2} - 4}{3}\right)
+\equiv 0 \pmod 4.$$
+
+The divisions by $3$ are exact.
 
 ## Depends on
 
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
-- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
+- [ℓ-regular cubic partitions with odd parts overlined](regular-cubic-overlined-count.md)
 
 ## Sources
 

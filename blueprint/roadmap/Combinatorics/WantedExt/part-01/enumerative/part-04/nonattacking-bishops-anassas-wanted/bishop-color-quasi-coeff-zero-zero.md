@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.bishopColorQuasiCoeff_zero_zero
 ---
 
-# Bishop Color Quasi Coeff zero zero
+# Constituent coefficient for no bishops
 
-`[m^0] R(m, 0) = 1`.
+**Constituent coefficient for no bishops.** For every complex number $z$, the constituent
+coefficient $c_{0,0}(z)$ of the bishop quasi-polynomials (the case $k = d = 0$) equals $1$.
 
 ## Depends on
 
-- [Bishop Color Quasi Coeff](bishop-color-quasi-coeff.md)
+- [Constituent coefficients for bishops on one color](bishop-color-quasi-coeff.md)
 
 ## Proof depends on
 
-- [Santos Beta](santos-beta.md)
-- [Santos Beta zero](santos-beta-zero.md)
+- [Santos's coefficients](santos-beta.md)
+- [Santos's coefficient with all indices zero](santos-beta-zero.md)
 - [2-associated Stirling numbers of the second kind](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
 
 ## Sources

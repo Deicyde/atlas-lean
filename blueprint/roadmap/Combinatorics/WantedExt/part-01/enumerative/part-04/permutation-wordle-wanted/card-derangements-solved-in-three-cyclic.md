@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_derangements_solvedIn_three_cyclicShift
 ---
 
-# Lemma 9
+# Derangements solved in three guesses by cyclic shift
 
-**Lemma 9.** For `n ≥ 3`, exactly `2ⁿ - (2n + 1)` derangements of length `n` are guessed by
-cyclic shift in exactly three guesses.
+**Derangements solved in three guesses by cyclic shift.** For $n \ge 3$, exactly
+$2^n - (2n + 1)$ derangements $\pi$ of $\{0, \dots, n-1\}$ are guessed by the cyclic shift
+strategy in exactly three guesses.
 
 ## Depends on
 
-- [Perm Wordle Solved In](perm-wordle-solved-in.md)
-- [Cyclic Shift Strategy](cyclic-shift-strategy.md)
+- [Permutation Wordle games solved in a given number of guesses](perm-wordle-solved-in.md)
+- [Cyclic shift strategy](cyclic-shift-strategy.md)
 
 ## Sources
 

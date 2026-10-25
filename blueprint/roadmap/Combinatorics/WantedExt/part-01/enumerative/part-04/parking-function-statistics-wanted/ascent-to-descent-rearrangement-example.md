@@ -6,10 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.ascentToDescentRearrangement_example
 ---
 
-# Ascent To Descent Rearrangement example
+# Example of the ascent-to-descent rearrangement
 
-The paper's Example of Definition `nu`: `ν(1 4 1 3 4 3 1 2 1) = 4 1 4 3 1 1 2 1 3`, with the
-sub-steps `ν(1 4) = 4 1` (Case 2) and `ν(3 1 2 1) = 1 2 1 3` (Case 1).
+**Example of the ascent-to-descent rearrangement.** The ascent-to-descent rearrangement $\nu$
+satisfies $\nu(1\,4\,1\,3\,4\,3\,1\,2\,1) = 4\,1\,4\,3\,1\,1\,2\,1\,3$, $\nu(1\,4) = 4\,1$ and
+$\nu(3\,1\,2\,1) = 1\,2\,1\,3$.
+
+The last two are the sub-steps of the first: $\nu(1\,4)$ falls under Case 2 of the definition
+and $\nu(3\,1\,2\,1)$ under Case 1.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.regularPartitionCount
 ---
 
-# Regular Partition Count
+# Number of $(\ell, k)$-regular partitions
 
-`b_{ℓ,k}(n)`, the number of `(ℓ, k)`-regular partitions of `n`: partitions of `n` none of
-whose parts is divisible by `ℓ` or by `k`.
+**Number of $(\ell, k)$-regular partitions.** For natural numbers $\ell$, $k$ and $n$,
+$b_{\ell,k}(n)$ is the number of $(\ell, k)$-regular partitions of $n$, that is, partitions of
+$n$ none of whose parts is divisible by $\ell$ or by $k$.
 
 ## Depends on
 

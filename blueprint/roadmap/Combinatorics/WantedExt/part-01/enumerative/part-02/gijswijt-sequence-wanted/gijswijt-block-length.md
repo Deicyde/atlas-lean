@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtBlockLength
 ---
 
-# Gijswijt Block Length
+# Block lengths of the higher-order Gijswijt sequences
 
-The block lengths `β^{(m)}(t)`: `β(1) = 1`, and `β(t+1)` is the least `k > (m+1) β(t)` with
-`A^{(m)}(k+1) = m`, so that `B_{t+1} = (B_t)^{m+1} S_t` with `S_t` the run before the next `m`.
+**Block lengths of the higher-order Gijswijt sequences.** For a natural number $m$, write
+$A^{(m)}(k)$ for the $k$th term of the $m$th order sequence. The block lengths $\beta^{(m)}(t)$
+are defined by $\beta^{(m)}(0) = 0$, $\beta^{(m)}(1) = 1$ and, for $t \ge 1$, $\beta^{(m)}(t+1)$
+is the least $k > (m+1)\,\beta^{(m)}(t)$ with $A^{(m)}(k+1) = m$, or $0$ if there is no such $k$.
+
+This matches the paper's recursion $B_{t+1} = (B_t)^{m+1} S_t$ for the blocks $B_t$: the glue
+string $S_t$ is the run of terms after position $(m+1)\,\beta^{(m)}(t)$ up to the next $m$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gijswijt Term](gijswijt-term.md)
+- [Terms of the $m$th order Gijswijt sequence](gijswijt-term.md)
 
 ## Sources
 

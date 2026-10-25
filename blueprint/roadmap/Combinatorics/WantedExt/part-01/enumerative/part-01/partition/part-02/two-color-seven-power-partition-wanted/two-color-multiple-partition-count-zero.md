@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.twoColorMultiplePartitionCount_zero
 ---
 
-# Two Color Multiple Partition Count zero
+# The two-color partition count at zero
 
-`p_{1,ℓ}(0) = 1`.
+**The two-color partition count at zero.** For every natural number $\ell$, including
+$\ell = 0$, the two-color partition count $p_{1,\ell}$ satisfies $p_{1,\ell}(0) = 1$.
 
 ## Depends on
 
-- [Two Color Multiple Partition Count](two-color-multiple-partition-count.md)
+- [Two-color partitions with one color restricted to multiples](two-color-multiple-partition-count.md)
 
 ## Sources
 

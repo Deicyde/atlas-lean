@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtBlock_runs
 ---
 
-# Gijswijt Block runs
+# Runs of the smallest term in a block
 
-For `m ≥ 1` and `t ≥ 2`, the elements `m` of `B_t^{(m)}` occur in maximal runs of exactly
-`m + 1` consecutive `m`'s, each followed by an element `m + 1`.
+**Runs of the smallest term in a block.** Let $m \ge 1$ and $t \ge 2$, and consider the block
+$B_t^{(m)}$ of the $m$th order Gijswijt sequence. Every maximal run of consecutive terms equal to
+$m$ in $B_t^{(m)}$ has length exactly $m + 1$, and the term right after the run exists and equals
+$m + 1$.
 
 ## Depends on
 
-- [Gijswijt Block](gijswijt-block.md)
+- [Gijswijt blocks](gijswijt-block.md)
 
 ## Sources
 

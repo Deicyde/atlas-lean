@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.marriageableSinglesCount
 ---
 
-# Marriageable Singles Count
+# Number of marriageable singles partitions
 
-`M_n`, the number of marriageable singles partitions of `[n]`.
+**Number of marriageable singles partitions.** For $n \ge 0$, $M_n$ is the number of
+noncrossing partitions of $\{0, \dots, n-1\}$ that are marriageable singles partitions.
 
 ## Depends on
 
@@ -15,9 +16,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Marriageable Singles](is-marriageable-singles.md)
-- [Merged Has Crossing](merged-has-crossing.md)
-- [Merged Same Block](merged-same-block.md)
+- [Marriageable singles partition](is-marriageable-singles.md)
+- [Crossing after merging two blocks](merged-has-crossing.md)
+- [Same block after merging two blocks](merged-same-block.md)
 - [Noncrossing partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
 - [Crossing in a set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
 - [Noncrossing set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)

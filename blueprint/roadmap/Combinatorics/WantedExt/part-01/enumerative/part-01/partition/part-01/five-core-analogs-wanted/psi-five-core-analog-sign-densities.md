@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.psiFiveCoreAnalog_sign_densities
 ---
 
-# Psi Five Core Analog sign densities
+# Sign densities of the ψ-analog of the 5-core partition function
 
-Corollary 6: among the positive integers, `b̄_5(n)` is `0` with lower density at least
-`30%`, positive with lower density at least `52%` and negative with lower density at least
-`10%` (`Set.lowerDensity` of the corresponding sets of positive integers).
+**Sign densities of the ψ-analog of the 5-core partition function.** Let
+$\bar b_5(n)$ be the coefficient of $q^n$ in $\psi^5(-q^5)/\psi(-q)$, where
+$\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$, and let the lower density of a set $S$ of natural numbers
+be $\liminf_{N \to \infty} |S \cap \{0, \dots, N - 1\}|/N$. The set of positive integers $n$ with
+$\bar b_5(n) = 0$ has lower density at least $3/10$, the set of positive $n$ with
+$\bar b_5(n) > 0$ has lower density at least $52/100$, and the set of positive $n$ with
+$\bar b_5(n) < 0$ has lower density at least $1/10$.
 
 ## Depends on
 
-- [Psi Five Core Analog](psi-five-core-analog.md)
+- [The ψ-analog of the 5-core partition function](psi-five-core-analog.md)
 - [Lower Density](../../../../../../../../Data/MathlibExt/set/density/lower-density.md)
 
 ## Sources

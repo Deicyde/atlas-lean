@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_mul_choose_mul_secondOrder
 ---
 
-# Sum pow mul choose mul second Order
+# Power-weighted binomial sums of a second-order linear recurrence
 
-For any real sequence `W` with `W_{n+2} = a W_{n+1} + b W_n`,
-`∑_{k=0}^N k^r binom(N, k) a^k b^{N-k} W_k = ∑_{i=0}^r {r, i} (N)_i a^i W_{2N-i}`.
+**Power-weighted binomial sums of a second-order linear recurrence.** Let $a$ and $b$ be real
+numbers and let $(W_n)_{n \ge 0}$ be a real sequence with $W_{n+2} = a W_{n+1} + b W_n$ for all
+$n \ge 0$. Write $S(r, i)$ for the Stirling numbers of the second kind and
+$(N)_i = N(N-1) \cdots (N-i+1)$ for the falling factorial, with $(N)_0 = 1$. Then for all natural
+numbers $N$ and $r$, with the convention $0^0 = 1$,
+
+$$\sum_{k=0}^{N} k^r \binom{N}{k} a^k b^{N-k} W_k = \sum_{i=0}^{r} S(r, i) (N)_i a^i W_{2N-i},$$
+
+where the terms with $i > N$ vanish because $(N)_i = 0$.
 
 ## Depends on
 

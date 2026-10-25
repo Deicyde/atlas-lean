@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_b00_01
 ---
 
-# Theorem 3, class C32
+# Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar00, 01\}$
 
-**Theorem 3, class C32.** `{1̄0̄, 0̄1̄, 0̄0, 01}` ∼ `{1̄0, 0̄1̄, 0̄0, 01}`, and `F(x) = (1 - 4x
-+ 5x² - 3x³) / ((1 - x)(1 - 2x)(1 - 3x + x²))`, stated after multiplying by the unit
-denominator.
+**Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar00, 01\}$.** For a set $B$
+of length-2 signed patterns (a bar marks a barred letter), let $|\bar I_n(B)|$ be the number of
+signed inversion sequences of length $n$ avoiding every pattern of $B$, and let
+$F_B(x) = \sum_{n \ge 0} |\bar I_n(B)| x^n \in \mathbb{Q}[[x]]$. Let
+$B = \{\bar1\bar0, \bar0\bar1, \bar00, 01\}$ and $C = \{\bar10, \bar0\bar1, \bar00, 01\}$. Then
+$|\bar I_n(B)| = |\bar I_n(C)|$ for every $n \ge 0$, and
+$(1 - x)(1 - 2x)(1 - 3x + x^2) F_B(x) = 1 - 4x + 5x^2 - 3x^3$, that is,
+$F_B(x) = (1 - 4x + 5x^2 - 3x^3)/((1 - x)(1 - 2x)(1 - 3x + x^2))$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
-- [Signed Inv Avoid GF](signed-inv-avoid-gf.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
+- [Generating function of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-gf.md)
 
 ## Sources
 

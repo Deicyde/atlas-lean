@@ -5,24 +5,37 @@ statement: formalized
 lean: MetaMathlibExt.columnHook_size_genFun
 ---
 
-# Column Hook size gen Fun
+# Generating function for column-$m$ hooks of size $k$
 
-The generating function for the number of `m`th-column hooks of size `k` in all partitions
-of `n` is
-`q^{km}/(q^k; q)_∞ · Σ_{l=1}^{k} q^{-(l-1)(m-1)} (q^m; q)_{l-1}/((q; q)_{l-1} (q; q)_{k-l})
- = q^{m+k-1}/(q^k; q)_∞ · Σ_{l=1}^{k} q^{(m-1)(k-l)} (q^m; q)_{l-1}/((q; q)_{l-1} (q; q)_{k-l})`.
+**Generating function for column-$m$ hooks of size $k$.** Let $n$, $m \ge 1$ and $k \ge 1$
+be natural numbers. For a partition $\lambda$, write $\lambda_r$ for its $r$-th largest part
+($0$ if it has fewer than $r$ parts), $\lambda'_m$ for the number of its parts that are at least
+$m$, and $h_{r,m}(\lambda) = \lambda_r + \lambda'_m - r - m + 1$ for the hook length of the square
+$(r, m)$. Let $H$ be the number of pairs $(\lambda, r)$ of a partition $\lambda$ of $n$ and a row
+$1 \le r \le n$ with $m \le \lambda_r$ and $h_{r,m}(\lambda) = k$. In $\mathbb{Q}[[q]]$ write
+$(a;q)_j = \prod_{i=0}^{j-1} (1 - a q^i)$ for $j \in \mathbb{N}$ and
+$(a;q)_\infty = \prod_{i \ge 0} (1 - a q^i)$, so that $(q;q)_j = \prod_{i=1}^{j} (1 - q^i)$ and
+$(q^m;q)_j = \prod_{i=0}^{j-1} (1 - q^{m+i})$, and let $P = \prod_{i=0}^{n} (1 - q^{k+i})^{-1}$.
+Then $H$ is the coefficient of $q^n$ in
 
-Stated coefficientwise in `ℚ⟦X⟧`: the coefficient of `qⁿ` counts the squares `(s, m)` of
-Young diagrams of partitions of `n` with hook length `k`. For that coefficient `(q^k; q)_∞` is
-replaced by its first `n + 1` factors, which changes no coefficient below `q^{n+1}`; the
-exponent `km - (l-1)(m-1)` is nonnegative. `(q; q)_j` is `qPochFin X j` and
-`[a, b]_q` is `gaussBinom X a b`.
+$$
+P \sum_{l=1}^{k} \frac{q^{km - (l-1)(m-1)} (q^m;q)_{l-1}}{(q;q)_{l-1} (q;q)_{k-l}},
+$$
+
+and $H$ is also the coefficient of $q^n$ in
+
+$$
+q^{m+k-1} P \sum_{l=1}^{k} \frac{q^{(m-1)(k-l)} (q^m;q)_{l-1}}{(q;q)_{l-1} (q;q)_{k-l}}.
+$$
+
+$P$ is $1/(q^k;q)_\infty$ truncated after $n + 1$ factors, which changes no coefficient below
+$q^{n+1}$; the exponent $km - (l-1)(m-1)$ is at least $k + m - 1$.
 
 ## Depends on
 
 - [Finite $Q$-Pochhammer symbol](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
-- [Partition Hook Length](partition-hook-length.md)
-- [Partition Row Len](partition-row-len.md)
+- [Hook length of a square of a partition](partition-hook-length.md)
+- [Row lengths of a partition](partition-row-len.md)
 
 ## Sources
 

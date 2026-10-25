@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.card_diagonalClassOf_min_two
 ---
 
-# Card diagonal Class Of min two
+# Capping the multiplicities of a diagonal sequence at two
 
-Corollary 6, part 5: replacing every `s_i` by `σ_i = min {s_i, 2}` does not change the
-class size: `|[d]| = |[d']|` for `d = (1, …, q, q^{(s_q)}, …, 1^{(s_1)})` and
-`d' = (1, …, q, q^{(σ_q)}, …, 1^{(σ_1)})`, `q ≥ 1`.
+**Capping the multiplicities of a diagonal sequence at two.** For $m \ge 0$ and a sequence
+$s = (s_1, s_2, \dots)$ of natural numbers, let $d(m, s)$ be the sequence
+$(1, 2, \dots, m, m^{(s_m)}, (m-1)^{(s_{m-1})}, \dots, 1^{(s_1)})$ followed by zeros, where
+$v^{(r)}$ means $r$ copies of $v$, and let $n(m, s) = m(m+1)/2 + \sum_{j=1}^{m} j s_j$. Let
+$q \ge 1$ and $\sigma_j = \min(s_j, 2)$ for all $j$. Then the number of partitions of $n(q, s)$
+with diagonal sequence $d(q, s)$ equals the number of partitions of $n(q, \sigma)$ with diagonal
+sequence $d(q, \sigma)$.
 
 ## Depends on
 
-- [Diagonal Class Of](diagonal-class-of.md)
-- [Diagonal Normal Form](diagonal-normal-form.md)
-- [Diagonal Of List](diagonal-of-list.md)
+- [Partitions with a prescribed diagonal sequence](diagonal-class-of.md)
+- [Normal form of a diagonal sequence](diagonal-normal-form.md)
+- [Sequence of a finite list](diagonal-of-list.md)
 
 ## Sources
 

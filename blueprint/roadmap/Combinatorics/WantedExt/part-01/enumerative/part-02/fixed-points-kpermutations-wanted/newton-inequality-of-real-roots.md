@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.newton_inequality_of_real_roots
 ---
 
-# Newton inequality of real roots
+# Newton's inequalities
 
-Newton's inequalities (Theorem 1): if `p = ∑_{j=0}^{n} a_j x^j`, `n ≥ 2`, of degree `n` has
-only real zeros, then `a_j² ≥ ((j + 1) / j) ((n - j + 1) / (n - j)) a_{j-1} a_{j+1}` for
-`1 ≤ j ≤ n - 1`.
+**Newton's inequalities.** Let $p(x) = \sum_{j=0}^{n} a_j x^j$ be a real polynomial of degree
+$n \ge 2$ that splits over $\mathbb{R}$, that is, all $n$ of its zeros, counted with
+multiplicity, are real. Then for every $j$ with $1 \le j \le n - 1$,
+
+$$a_j^2 \ge \frac{j + 1}{j} \cdot \frac{n - j + 1}{n - j} \, a_{j-1} a_{j+1}.$$
 
 ## Depends on
 

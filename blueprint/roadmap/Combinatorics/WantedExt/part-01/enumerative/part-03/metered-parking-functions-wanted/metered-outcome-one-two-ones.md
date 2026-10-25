@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.meteredOutcome_one_two_ones
 ---
 
-# Metered Outcome one two ones
+# A 1-metered example in which every car parks
 
-The source's example with `t = 1`, `n = 2` and preferences `(1,1,1)`: cars park in spots
-`1, 2, 1`.
+**A 1-metered example in which every car parks.** In the $1$-metered parking scheme on two
+spots $\{0, 1\}$, if three cars arrive all preferring spot $0$, then they park in spots $0$, $1$
+and $0$, in that order.
+
+In the source's one-based numbering: preferences $(1, 1, 1)$ give spots $1, 2, 1$.
 
 ## Depends on
 
-- [Metered Outcome](metered-outcome.md)
+- [Outcome of the metered parking scheme](metered-outcome.md)
 
 ## Sources
 

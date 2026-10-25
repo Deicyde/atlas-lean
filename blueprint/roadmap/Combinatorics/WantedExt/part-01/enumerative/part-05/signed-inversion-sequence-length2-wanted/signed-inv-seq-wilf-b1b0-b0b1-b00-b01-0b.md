@@ -5,18 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b1_b00_b01_0b0
 ---
 
-# Theorem 12
+# Mansour–Safadi Theorem 12: four Wilf-equivalences of five-pattern sets
 
-**Theorem 12.** `{1̄0̄, 0̄1̄, 0̄0, 0̄1, 00̄}` ∼ `{1̄0̄, 0̄1̄, 0̄0̄, 0̄1, 00̄}`; `{1̄0̄, 1̄0,
-0̄1̄, 0̄0, 00̄}` ∼ `{1̄0̄, 1̄0, 0̄1̄, 0̄0̄, 00̄}`; `{1̄0̄, 0̄1̄, 0̄0̄, 0̄0, 10̄}` ∼ `{1̄0̄,
-0̄1̄, 0̄0, 00̄, 10̄}`; `{1̄0̄, 1̄0, 0̄1̄, 0̄0, 00}` ∼ `{1̄0̄, 1̄0, 0̄1̄, 00̄, 00}`. The printed
-third set of the first chain, `{1̄0̄, 0̄1̄, 0̄1, 00̄, 10̄}`, is omitted: it has `|Ī_2| = 5`
-against `4` for the first two sets.
+**Mansour–Safadi Theorem 12: four Wilf-equivalences of five-pattern sets.** Length-2 signed
+patterns are written as in the paper, a bar marking a barred letter, and $B \sim C$ means that
+for every $n \ge 0$ the number $|\bar I_n(B)|$ of signed inversion sequences of length $n$
+avoiding every pattern of $B$ equals $|\bar I_n(C)|$. Then
+$\{\bar1\bar0, \bar0\bar1, \bar00, \bar01, 0\bar0\} \sim
+\{\bar1\bar0, \bar0\bar1, \bar0\bar0, \bar01, 0\bar0\}$,
+$\{\bar1\bar0, \bar10, \bar0\bar1, \bar00, 0\bar0\} \sim
+\{\bar1\bar0, \bar10, \bar0\bar1, \bar0\bar0, 0\bar0\}$,
+$\{\bar1\bar0, \bar0\bar1, \bar0\bar0, \bar00, 1\bar0\} \sim
+\{\bar1\bar0, \bar0\bar1, \bar00, 0\bar0, 1\bar0\}$ and
+$\{\bar1\bar0, \bar10, \bar0\bar1, \bar00, 00\} \sim
+\{\bar1\bar0, \bar10, \bar0\bar1, 0\bar0, 00\}$.
+
+The paper prints a third set in the first equivalence,
+$\{\bar1\bar0, \bar0\bar1, \bar01, 0\bar0, 1\bar0\}$; it is left out here because it has
+$|\bar I_2| = 5$, against $4$ for the first two sets.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
 
 ## Sources
 

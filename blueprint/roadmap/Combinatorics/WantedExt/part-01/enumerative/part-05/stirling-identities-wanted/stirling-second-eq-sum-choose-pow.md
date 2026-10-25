@@ -5,10 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingSecond_eq_sum_choose_pow
 ---
 
-# Stirling Second eq sum choose pow
+# Lee's alternating expansion of Stirling numbers of the second kind
 
-Lee's Theorem 2: an alternating expansion of a Stirling number of the
-second kind in terms of values with the same second index.
+**Lee's alternating expansion of Stirling numbers of the second kind.** Write $S(n, k)$ for
+the Stirling number of the second kind, the number of partitions of an $n$-element set into $k$
+nonempty blocks. For natural numbers $m \le n$, the following identity of integers holds:
+
+$$S(n, m) = \sum_{k=m}^{n} (-1)^{k-m} \binom{n}{k}\, m^{n-k}\, S(k, m).$$
 
 ## Depends on
 

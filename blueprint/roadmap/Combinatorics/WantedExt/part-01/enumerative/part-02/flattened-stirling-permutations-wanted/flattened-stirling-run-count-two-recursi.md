@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.flattenedStirlingRunCount_two_recursion
 ---
 
-# Flattened Stirling Run Count two recursion
+# Recursion for flattened Stirling permutations with two runs
 
-For `n ≥ 1`, `|flat_2(Q_{n+1})| = 2|flat_2(Q_n)| + 2n - 1`, with
-`|flat_2(Q_1)| = 0`.
+**Recursion for flattened Stirling permutations with two runs.** Write
+$|\mathrm{flat}_2(Q_n)|$ for the number of flattened Stirling permutations of order $n$ with
+exactly two runs. Then $|\mathrm{flat}_2(Q_1)| = 0$, and for every natural number $n \ge 1$,
+$|\mathrm{flat}_2(Q_{n+1})| = 2\,|\mathrm{flat}_2(Q_n)| + 2n - 1$.
 
 ## Depends on
 
-- [Flattened Stirling Run Count](flattened-stirling-run-count.md)
+- [Counting flattened Stirling permutations by runs](flattened-stirling-run-count.md)
 
 ## Sources
 

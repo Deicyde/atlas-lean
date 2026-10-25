@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.tripleTwo_mod_twentyFour
 ---
 
-# Triple Two mod twenty Four
+# Congruences modulo 24 for triples of 2-regular partitions
 
-Theorem 1: if `t > 0` and `gcd(t,6)=1`, then for every natural `n` and
-`N = 33` or `N = 57`, `T₂(9n + (Nt²-1)/8)` is congruent to zero modulo 24.
-Here `T₂` is `tripleRegularPartitionCount 2`; natural division is used because the
-hypotheses make `Nt²-1` divisible by 8, and no redundant divisibility hypothesis is
-added.  Naturals encode `n ≥ 0`.
+**Congruences modulo 24 for triples of 2-regular partitions.** Let $T_2(n)$ be the number of
+triples of 2-regular partitions (partitions with no even part) whose sizes add up to $n$. If
+$t$ is a positive integer with $\gcd(t, 6) = 1$ and $N \in \{33, 57\}$, then for every natural
+number $n$,
+
+$$T_2\left(9n + \frac{N t^2 - 1}{8}\right) \equiv 0 \pmod{24}.$$
+
+Here $N t^2 - 1$ is divisible by $8$, so the fraction is an integer.
 
 ## Depends on
 
-- [Triple Regular Partition Count](triple-regular-partition-count.md)
+- [Triples of $\ell$-regular partitions](triple-regular-partition-count.md)
 
 ## Sources
 

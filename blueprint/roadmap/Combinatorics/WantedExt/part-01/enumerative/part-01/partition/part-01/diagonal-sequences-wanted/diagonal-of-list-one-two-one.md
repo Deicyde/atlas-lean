@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.diagonalOfList_one_two_one
 ---
 
-# Diagonal Of List one two one
+# The list sequence of $(1, 2, 1)$
 
-`diagonalOfList [1, 2, 1]` is `0, 1, 2, 1, 0, …`.
+**The list sequence of $(1, 2, 1)$.** The sequence given by the list $(1, 2, 1)$ takes the
+values $0, 1, 2, 1, 0, 0$ at the indices $0, 1, 2, 3, 4, 5$.
 
 ## Depends on
 
-- [Diagonal Of List](diagonal-of-list.md)
+- [Sequence of a finite list](diagonal-of-list.md)
 
 ## Sources
 

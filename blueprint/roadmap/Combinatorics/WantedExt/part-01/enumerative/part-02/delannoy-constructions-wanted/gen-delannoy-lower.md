@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.DelannoyConstructions.genDelannoyLower
 ---
 
-# Gen Delannoy Lower
+# Lower generalized Delannoy number
 
-The generalized Delannoy number `D_k(m, n) = ∑_{j=0}^n C(m + n - k - j, n - k) C(n, j)`,
-meaningful for `m, n ≥ k` (the statements below assume this).
+**Lower generalized Delannoy number.** For natural numbers $k$, $m$ and $n$, the generalized
+Delannoy number $D_k(m, n)$ is
+
+$$D_k(m, n) = \sum_{j=0}^{n} \binom{m + n - k - j}{n - k} \binom{n}{j},$$
+
+where each subtraction is truncated at $0$. The definition is intended for $m, n \ge k$, where
+no truncation occurs.
 
 ## Depends on
 

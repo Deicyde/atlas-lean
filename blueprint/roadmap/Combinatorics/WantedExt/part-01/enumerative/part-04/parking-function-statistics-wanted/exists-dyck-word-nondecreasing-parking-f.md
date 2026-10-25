@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_dyckWord_nondecreasing_parkingFunction_bijOn
 ---
 
-# Exists dyck Word nondecreasing parking Function bij On
+# Dyck words and nondecreasing parking functions
 
-For every `n` the map `g` sending a Dyck word `w` of semilength `n` to the sequence whose
-`i`th entry is one plus the number of `D`s before the `i`th `U` of `w` is a bijection onto the
-nondecreasing parking functions of length `n`. In the zero-based convention of this file,
-`g w i` is the number of `D`s before the `(i + 1)`st `U`: if the 0-based position `k` of `w`
-holds `U` and `i` letters `U` precede it, then `g w i` is the number of `D`s preceding it.
+**Dyck words and nondecreasing parking functions.** For every $n$ there is a map $g$ from Dyck
+words to maps $\{0, \dots, n-1\} \to \{0, \dots, n-1\}$ such that, for every Dyck word $w$ of
+semilength $n$ and every $i < n$, $g(w)(i)$ is the number of down steps $D$ of $w$ before its
+$(i+1)$st up step $U$, and $g$ restricts to a bijection from the Dyck words of semilength $n$
+onto the nondecreasing parking functions of length $n$.
+
+With one-based entries, the $i$th entry of the parking function is one plus the number of $D$s
+before the $i$th $U$.
 
 ## Depends on
 

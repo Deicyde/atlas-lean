@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_trib_mul_sub_eq
 ---
 
-# Corollary 11
+# Convolution of the Fibonacci 3-step numbers with differences of 4- and 5-step numbers
 
-**Corollary 11**, third identity:
-`∑_{j=0}^n T_j (Q_{n-j} - P_{n-j}) =
-∑_{j=0}^{n-1} (T_j - Q_j) P_{n-1-j}`.
+**Convolution of the Fibonacci 3-step numbers with differences of 4- and 5-step numbers.**
+Let $T_j$, $Q_j$ and $P_j$ be the Fibonacci $3$-, $4$- and $5$-step numbers, where the Fibonacci
+$k$-step numbers start $0, 1$ and each later term is the sum of the $k$ terms before it (terms of
+negative index being $0$). For every natural number $n \ge 1$,
+
+$$\sum_{j=0}^{n} T_j \bigl(Q_{n-j} - P_{n-j}\bigr) =
+\sum_{j=0}^{n-1} \bigl(T_j - Q_j\bigr) P_{n-1-j}.$$
 
 ## Depends on
 
-- [Fib Step](fib-step.md)
+- [Fibonacci $m$-step numbers](fib-step.md)
 
 ## Sources
 

@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.cylinderShiftSum
 ---
 
-# Cylinder Shift Sum
+# Cylinder shift sum
 
-The sum over cylinder shifts `a ∈ ZMod n` of fixed tilings for `(a,g)`.  The shifted cell
-`(x+a,y)` is fed to `cellG`, so this follows the paper's “shift first, then apply `g`” right-action
-convention.  `σ` is the action of `g` on tile designs.
+**Cylinder shift sum.** Let $T$ be a finite set of tile designs, let $n, m \ge 1$, let $g$ be
+a map from the cells $\mathbb{Z}/n \times \mathbb{Z}/m$ to themselves, and let $\sigma$ be a
+permutation of $T$. The cylinder shift sum of $g$ and $\sigma$ is the sum, over all shifts
+$a \in \mathbb{Z}/n$, of the number of tilings $F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$
+with $F(g(x + a, y)) = \sigma(F(x, y))$ for every cell $(x, y)$.
 
-Formalization deviation: none beyond the representation choices stated above.
+The shift is applied before $g$, following the paper's right-action convention, and $\sigma$
+is the action of $g$ on tile designs.
 
 ## Depends on
 
@@ -19,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Tiling Count](fixed-tiling-count.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
 
 ## Sources
 

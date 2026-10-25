@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.exists_unique_diagonalNormalForm
 ---
 
-# Exists unique diagonal Normal Form
+# Existence and uniqueness of the diagonal normal form
 
-Corollary 1: for every partition `α` of `n ≥ 1` there are unique `q > 0` and
-`s_1, …, s_q ≥ 0` with `δ(α) = (1, …, q, q^{(s_q)}, …, 1^{(s_1)})`, and then
-`q(q+1)/2 + ∑ k s_k = n`. Uniqueness of `s` is on the indices `1, …, q`.
+**Existence and uniqueness of the diagonal normal form.** Write $v^{(m)}$ for $m$ copies of
+$v$. For every partition $\alpha$ of $n \ge 1$ there are an integer $q > 0$ and natural numbers
+$s_1, \dots, s_q$ such that the diagonal sequence of $\alpha$, indexed from $0$, is
+$(0, 1, 2, \dots, q, q^{(s_q)}, (q-1)^{(s_{q-1})}, \dots, 1^{(s_1)}, 0, 0, \dots)$ and
+$q(q+1)/2 + \sum_{k=1}^{q} k s_k = n$. Moreover $q$ and $s_1, \dots, s_q$ are unique: if
+$q' > 0$ and $s'_1, \dots, s'_{q'}$ give the same diagonal sequence, then $q' = q$ and
+$s'_k = s_k$ for $1 \le k \le q$.
 
 ## Depends on
 
-- [Diagonal Normal Form](diagonal-normal-form.md)
-- [Diagonal Of List](diagonal-of-list.md)
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Normal form of a diagonal sequence](diagonal-normal-form.md)
+- [Sequence of a finite list](diagonal-of-list.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.perfectPartitionOfFactorization_two_three
 ---
 
-# Perfect Partition Of Factorization two three
+# MacMahon's partition of the factorization 2 · 3
 
-The factorization `2 · 3` of `6` corresponds to the perfect partition `(1, 2^2)` of `5`.
+**MacMahon's partition of the factorization 2 · 3.** MacMahon's bijection sends the ordered
+factorization $6 = 2 \cdot 3$ to the partition $(1, 2^2) = (1, 2, 2)$ of $5$.
 
 ## Depends on
 
-- [Perfect Partition Of Factorization](perfect-partition-of-factorization.md)
+- [MacMahon's partition of an ordered factorization](perfect-partition-of-factorization.md)
 
 ## Sources
 

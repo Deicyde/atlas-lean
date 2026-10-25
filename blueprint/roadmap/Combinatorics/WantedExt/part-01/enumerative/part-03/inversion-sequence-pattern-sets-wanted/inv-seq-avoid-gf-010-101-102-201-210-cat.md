@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.invSeqAvoidGF_010_101_102_201_210_catalan
 ---
 
-# Theorem 3
+# A Catalan generating function for two sets of five patterns
 
-**Theorem 3.** For `B = {010, 101, 102, 201, 210}` and `C = {011, 101, 110, 201, 210}`,
-`F_B(x) = F_C(x) = x / ((1 - x)(2 - (1 - √(1 - 4x))/(2x)))`. Here `(1 - √(1 - 4x))/(2x)` is the
-Catalan generating function `∑ Cₙ xⁿ` (Mathlib's `catalan`), and the identity is stated after
-clearing the unit denominator `(1 - x)(2 - ∑ Cₙ xⁿ)` in `ℚ⟦X⟧`.
+**A Catalan generating function for two sets of five patterns.** Let
+$B = \{010, 101, 102, 201, 210\}$ and $B' = \{011, 101, 110, 201, 210\}$, where a pattern is
+written as a digit string ($101$ is the triple $(1, 0, 1)$). For a set $A$ of patterns let
+$F_A(x) = \sum_{n \ge 1} |I_n(A)| x^n \in \mathbb{Q}[[x]]$ be the generating function of the
+inversion sequences avoiding every pattern in $A$, and let $C(x) = \sum_{n \ge 0} C_n x^n$ be the
+generating function of the Catalan numbers $C_n = \binom{2n}{n}/(n + 1)$. Then $F_B = F_{B'}$
+and
+
+$$(1 - x)(2 - C(x)) F_B(x) = x.$$
+
+Since $C(x) = (1 - \sqrt{1 - 4x})/(2x)$ and $(1 - x)(2 - C(x))$ is a unit in $\mathbb{Q}[[x]]$,
+this says $F_B(x) = F_{B'}(x) = x / ((1 - x)(2 - (1 - \sqrt{1 - 4x})/(2x)))$.
 
 ## Depends on
 
-- [Inv Seq Avoid GF](inv-seq-avoid-gf.md)
+- [Generating function of inversion sequences avoiding a set of patterns](inv-seq-avoid-gf.md)
 
 ## Sources
 

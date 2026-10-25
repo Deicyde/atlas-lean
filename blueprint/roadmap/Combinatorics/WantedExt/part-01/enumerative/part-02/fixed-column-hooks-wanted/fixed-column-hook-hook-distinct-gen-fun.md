@@ -5,22 +5,34 @@ statement: formalized
 lean: MetaMathlibExt.fixedColumnHook_hook_distinct_genFun
 ---
 
-# Fixed Column Hook hook distinct gen Fun
+# Generating function for fixed column hooks of size $k$ in distinct partitions
 
-The generating function for the number of distinct partitions of `n` with an `h`-fixed hook
-in the `m`th column arising from a hook of size `k` is
-`Σ_{l=⌈(k+1)/2⌉}^{k} q^{k+l(k-h-1)+(m-1)(2k-h-l)+C(k-h, 2)+C(k-l, 2)} (-q; q)_{m-1}/(q; q)_{k-h-1}
- [l-1, k-l]_q`.
+**Generating function for fixed column hooks of size $k$ in distinct partitions.** Let $n$,
+$m \ge 1$ and $k \ge 1$ be natural numbers and let $h < k$ be an integer.
+For a partition $\lambda$, write $\lambda_r$ for its $r$-th largest part ($0$ if it has fewer
+than $r$ parts), $\lambda'_m$ for the number of its parts that are at least $m$, and
+$h_{r,m}(\lambda) = \lambda_r + \lambda'_m - r - m + 1$ for the hook length of the square $(r, m)$.
+The partition $\lambda$ has an $h$-fixed hook in column $m$ at row $r$ when $r \ge 1$,
+$m \le \lambda_r$ and $h_{r,m}(\lambda) = r + h$.
+The number of partitions $\lambda$ of $n$ into distinct parts that have an $h$-fixed hook in
+column $m$ at some row $r \le n$ with $h_{r,m}(\lambda) = k$ equals the coefficient of $q^n$ in
 
-`h ∈ ℤ` with `h < k`; `⌈(k+1)/2⌉ = (k + 2)/2` in `ℕ`; `(-q; q)_j` is `∏_{i<j} (1 + q^{i+1})`.
+$$
+\sum_{l=\lceil (k+1)/2 \rceil}^{k}
+q^{k + l(k-h-1) + (m-1)(2k-h-l) + \binom{k-h}{2} + \binom{k-l}{2}}
+\frac{(-q;q)_{m-1}}{(q;q)_{k-h-1}} \binom{l-1}{k-l}_q,
+$$
+
+where $(q;q)_j = \prod_{i=1}^{j} (1 - q^i)$, $(-q;q)_j = \prod_{i=1}^{j} (1 + q^i)$ and
+$\binom{a}{b}_q$ is the Gaussian binomial coefficient.
 
 ## Depends on
 
 - [Gaussian binomial coefficient](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
 - [Finite $Q$-Pochhammer symbol](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
-- [Is Fixed Column Hook](is-fixed-column-hook.md)
-- [Partition Hook Length](partition-hook-length.md)
-- [Partition Row Len](partition-row-len.md)
+- [Fixed hooks in a column of a partition](is-fixed-column-hook.md)
+- [Hook length of a square of a partition](partition-hook-length.md)
+- [Row lengths of a partition](partition-row-len.md)
 
 ## Sources
 

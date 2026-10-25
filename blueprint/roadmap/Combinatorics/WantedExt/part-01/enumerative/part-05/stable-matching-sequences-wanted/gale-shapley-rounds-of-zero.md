@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.StableMatchingSequences.galeShapleyRounds_of_zero
 ---
 
-# Gale Shapley Rounds of zero
+# Gale–Shapley rounds with no participants
 
-With no people the algorithm takes zero rounds.
+**Gale–Shapley rounds with no participants.** For the preference profile with no men and no
+women, the men-proposing Gale–Shapley algorithm takes zero rounds.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
-- [Gale Shapley Rounds](gale-shapley-rounds.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Number of Gale–Shapley rounds](gale-shapley-rounds.md)
 
 ## Proof depends on
 
-- [GSEngaged](gsengaged.md)
-- [Gs Proposals](gs-proposals.md)
+- [Provisional engagement in the Gale–Shapley algorithm](gsengaged.md)
+- [Proposal counts in the Gale–Shapley algorithm](gs-proposals.md)
 
 ## Sources
 

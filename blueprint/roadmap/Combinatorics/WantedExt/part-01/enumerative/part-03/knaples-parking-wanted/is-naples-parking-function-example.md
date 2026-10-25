@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isNaplesParkingFunction_example
 ---
 
-# Is Naples Parking Function example
+# A $2$-Naples parking function that is not $1$-Naples
 
-Characteristic example: `(6, 6, 6, 5, 5, 2, 1)` is a `2`-Naples but not a `1`-Naples
+**A $2$-Naples parking function that is not $1$-Naples.** The preference
+$(6, 6, 6, 5, 5, 2, 1)$ of length $7$ is a $2$-Naples parking function but not a $1$-Naples
 parking function.
 
 ## Depends on
 
-- [Is Naples Parking Function](is-naples-parking-function.md)
+- [$k$-Naples parking function](is-naples-parking-function.md)
 
 ## Proof depends on
 
-- [Naples Park](naples-park.md)
+- [Naples parking](naples-park.md)
 
 ## Sources
 

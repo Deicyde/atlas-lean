@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.restrictedOverlapTilingCount_singleton_one_four_two
 ---
 
-# Restricted Overlap Tiling Count singleton one four two
+# Two dominoes on a 4-board
 
-With `Q = {1}` the comb is a domino, and a `4`-board has one tiling with two dominoes.
+**Two dominoes on a 4-board.** For $Q = \{1\}$ the $Q$-comb is a domino, and the number
+$B^{\{1\}}_{4,2}$ of restricted-overlap tilings of a $4$-board with squares and two $Q$-combs is
+$1$.
 
 ## Depends on
 
-- [Restricted Overlap Tiling Count](restricted-overlap-tiling-count.md)
+- [Number of restricted-overlap tilings](restricted-overlap-tiling-count.md)
 
 ## Sources
 

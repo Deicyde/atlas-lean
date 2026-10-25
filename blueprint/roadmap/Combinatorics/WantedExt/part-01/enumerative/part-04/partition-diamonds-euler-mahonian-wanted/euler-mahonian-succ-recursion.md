@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.eulerMahonian_succ_recursion
 ---
 
-# Euler Mahonian succ recursion
+# Recursion for the Euler–Mahonian polynomials
 
-The Dockery-Jameson-Sellers-Wilson polynomials `F_d`, defined by `F_1 = 1` and
-`F_d(q₀, w) = ((1 - q₀w^d) F_{d-1}(q₀, w) - w(1 - q₀) F_{d-1}(q₀w, w))/(1 - w)`, are the
-Euler-Mahonian polynomials. Since `1 - w` is a nonzerodivisor in `ℤ[q₀, w]` and `E_1 = 1`
-(`eulerMahonian_one`), this is stated as: `E_d` satisfies the recursion (1) multiplied by
-`1 - w`, for every `d ≥ 1`, as an identity in every commutative ring.
+**Recursion for the Euler–Mahonian polynomials.** For every commutative ring $R$, every
+natural number $d \ge 1$ and all $x, y \in R$, the Euler–Mahonian polynomials $E_d$ and
+$E_{d+1}$ satisfy
+
+$$(1 - y) E_{d+1}(x, y) = (1 - x y^{d+1}) E_d(x, y) - y (1 - x) E_d(xy, y).$$
+
+Together with $E_1 = 1$, this says that the Euler–Mahonian polynomials are the
+Dockery–Jameson–Sellers–Wilson polynomials $F_d$, defined by $F_1 = 1$ and
+$F_d(q_0, w) = \bigl((1 - q_0 w^d) F_{d-1}(q_0, w) - w (1 - q_0) F_{d-1}(q_0 w, w)\bigr)/(1 - w)$
+for $d \ge 2$: since $1 - w$ is a nonzerodivisor in $\mathbb{Z}[q_0, w]$, the recursion is
+stated multiplied by $1 - w$.
 
 ## Depends on
 
-- [Euler Mahonian](euler-mahonian.md)
+- [Euler–Mahonian polynomial](euler-mahonian.md)
 
 ## Sources
 

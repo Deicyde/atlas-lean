@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.fibStepGF_triple_consecutive
 ---
 
-# Theorem 24
+# A product identity for three consecutive Fibonacci step generating functions
 
-**Theorem 24**, particular case (`p = q = 1`):
-`X^{2m+1} F^{(m)} F^{(m+1)} F^{(m+2)} =
-X^m F^{(m)} F^{(m+2)} - F^{(m+1)} + F^{(m)}`.
+**A product identity for three consecutive Fibonacci step generating functions.** Let
+$m \ge 1$ be a natural number. For each $k$, let $F^{(k)} = \sum_{n \ge 0} F^{(k)}_n X^n$ in
+$\mathbb{Q}[[X]]$ be the ordinary generating function of the Fibonacci $k$-step numbers
+$F^{(k)}_n$. Then
+
+$$X^{2m+1} F^{(m)} F^{(m+1)} F^{(m+2)} = X^m F^{(m)} F^{(m+2)} - F^{(m+1)} + F^{(m)}.$$
 
 ## Depends on
 
-- [Fib Step GF](fib-step-gf.md)
+- [Generating function of the Fibonacci $m$-step numbers](fib-step-gf.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.overpartitionOddPartsCount_zero
 ---
 
-# Overpartition Odd Parts Count zero
+# Overpartitions of zero into odd parts
 
-Characteristic value `po(0) = 1` (the empty overpartition).
+**Overpartitions of zero into odd parts.** The number $\mathrm{po}(0)$ of overpartitions
+of $0$ into odd parts equals $1$: the empty overpartition is the only one.
 
 ## Depends on
 
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 
 ## Proof depends on
 

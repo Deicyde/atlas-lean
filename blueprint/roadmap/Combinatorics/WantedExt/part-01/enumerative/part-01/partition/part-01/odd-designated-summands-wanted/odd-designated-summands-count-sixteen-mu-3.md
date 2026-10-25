@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsCount_sixteen_mul_mod_eight
 ---
 
-# Odd Designated Summands Count sixteen mul mod eight
+# Internal congruence $\mathrm{PD}_2(16n) \equiv \mathrm{PD}_2(4n) \pmod 8$
 
-The internal congruence `PD_2(16n) ≡ PD_2(4n) (mod 8)` for all `n ≥ 0`.
+**Internal congruence $\mathrm{PD}_2(16n) \equiv \mathrm{PD}_2(4n) \pmod 8$.** Write
+$\mathrm{PD}_2(m)$ for the number of partitions of $m$ with designated summands in which every part
+is odd. For every natural number $n$, $\mathrm{PD}_2(16n) \equiv \mathrm{PD}_2(4n) \pmod 8$.
 
 ## Depends on
 
-- [Odd Designated Summands Count](odd-designated-summands-count.md)
+- [The odd designated-summand partition function](odd-designated-summands-count.md)
 
 ## Sources
 

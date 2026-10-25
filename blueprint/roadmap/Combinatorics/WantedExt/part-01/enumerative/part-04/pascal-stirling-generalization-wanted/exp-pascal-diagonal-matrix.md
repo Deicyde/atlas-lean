@@ -5,19 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.exp_pascalDiagonalMatrix
 ---
 
-# Exp pascal Diagonal Matrix
+# Exponential of a Pascal diagonal matrix
 
-Theorem 3: for `k ≥ 1`,
-`exp(𝖫_{d^{(k)}}(n)) = T_{α^{(k)}, β}(n) ⊙ ∑_{i ≥ 0} 𝖫_{d^{(ki)}}(n)`, where `T_{α^{(k)}, β}(n)`
-is the lower triangular Toeplitz matrix with first column `α^{(k)}` and first row
-`β = (1, 0, 0, …)` (0-based entry `(a, b)` equal to `α^{(k)}_{a-b+1}` for `b ≤ a`) and `⊙` is the
-Hadamard product. The infinite sum is written over `i < n`; the omitted terms are zero matrices
-since `k i ≥ n` there.
+**Exponential of a Pascal diagonal matrix.** Let $k \ge 1$ and $n \ge 0$. For $m \ge 0$ let
+$\mathsf{L}_{d^{(m)}}(n)$ be the $n \times n$ real matrix whose $(b + m, b)$ entry is
+$\binom{m+b}{b}$ for each $b$ with $b + m < n$ and whose other entries are $0$ (indices from
+$0$). Let $\alpha^{(k)} = (\alpha^{(k)}_i)_{i \ge 1}$ be given by $\alpha^{(k)}_1 = 1$,
+$\alpha^{(k)}_i = 0$ for $2 \le i \le k$ and
+$\alpha^{(k)}_i = \binom{i-2}{k-1} \alpha^{(k)}_{i-k}$ for $i > k$, and let
+$T_{\alpha^{(k)}, \beta}(n)$ be the $n \times n$ lower triangular Toeplitz matrix with first
+column $\alpha^{(k)}$ and first row $\beta = (1, 0, 0, \ldots)$, that is, with $(a, b)$ entry
+$\alpha^{(k)}_{a-b+1}$ for $b \le a$ and $0$ for $b > a$. Then $\exp(\mathsf{L}_{d^{(k)}}(n))$
+equals the Hadamard (entrywise) product
+$T_{\alpha^{(k)}, \beta}(n) \odot \sum_{i=0}^{n-1} \mathsf{L}_{d^{(ki)}}(n)$.
+
+The paper sums over all $i \ge 0$; the terms with $i \ge n$ are zero matrices, since then
+$ki \ge n$.
 
 ## Depends on
 
-- [Pascal Diagonal Matrix](pascal-diagonal-matrix.md)
-- [Pascal Exp First Column](pascal-exp-first-column.md)
+- [Pascal diagonal matrices](pascal-diagonal-matrix.md)
+- [First-column sequence for exponentials of Pascal diagonal matrices](pascal-exp-first-column.md)
 
 ## Sources
 

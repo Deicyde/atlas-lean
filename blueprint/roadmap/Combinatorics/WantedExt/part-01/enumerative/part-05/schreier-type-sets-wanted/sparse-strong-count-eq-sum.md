@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.sparseStrongCount_eq_sum
 ---
 
-# Theorem 6, sparse case
+# Sparse strong Schreier sets as a sum of partition counts
 
-**Theorem 6, sparse case**:
-`|A_{n,ℓ}| = Σ_{i=0}^{n-1} |E_{i,ℓ+1}|` for `n ≥ 1` and `ℓ ≥ 0`.
+**Sparse strong Schreier sets as a sum of partition counts.** For every integer $n \ge 1$
+and every natural number $\ell$, the number of sparse $\ell$-strong Schreier sets
+$A \subseteq \{1, \dots, n\}$ with $n \in A$ equals $\sum_{i=0}^{n-1} |E_{i,\ell+1}|$, where
+$|E_{i,\ell+1}|$ is the number of partitions of $i$ into parts that are all at least $\ell + 1$.
 
 ## Depends on
 
-- [Partition Min Part Count](partition-min-part-count.md)
-- [Sparse Strong Count](sparse-strong-count.md)
+- [Partitions with all parts at least a given size](partition-min-part-count.md)
+- [Number of sparse strong Schreier sets with maximum $n$](sparse-strong-count.md)
 
 ## Sources
 

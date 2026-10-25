@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsMultAtLeast_pentagonal_eq_nonnegRank
 ---
 
-# Sum Distinct Parts Mult At Least pentagonal eq nonneg Rank
+# Pentagonal sum of $s_m$ and nonnegative rank
 
-For `m ≥ 1`, `∑_{j ≥ 0} (-1)^j s_m(n - j(3j+1)/2) = ∑_{j ≥ 0} j N(n - mj)`, with `N(k)` the
-number of partitions of `k` with nonnegative rank. The paper says `m ≥ 0`; for `m = 0` the
-right side diverges.
+**Pentagonal sum of $s_m$ and nonnegative rank.** Let $m \ge 1$ and $n$ be natural numbers.
+Write $s_m(k)$ for the sum of the different parts that appear at least $m$ times in partitions
+of $k$, and $N(k)$ for the number of partitions of $k$ with nonnegative Dyson rank. Then
+
+$$
+\sum_{j \ge 0,\ j(3j+1)/2 \le n} (-1)^j s_m\bigl(n - j(3j+1)/2\bigr)
+= \sum_{j \ge 0,\ mj \le n} j\, N(n - mj).
+$$
+
+The paper says $m \ge 0$; for $m = 0$ the right side diverges.
 
 ## Depends on
 
-- [Dyson Rank](dyson-rank.md)
-- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
+- [Dyson's rank of a partition](dyson-rank.md)
+- [Sum of different parts appearing at least $m$ times](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

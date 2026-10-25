@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.partitionCrank
 ---
 
-# Partition Crank
+# Crank of a partition
 
-The crank of a partition (Andrews and Garvan): the largest part if `1` is not a part,
-and otherwise the number of parts larger than the number `ω(μ)` of ones, minus `ω(μ)`.
+**Crank of a partition.** Let $\mu$ be a partition of $n$ and let $\omega(\mu)$ be the number
+of parts of $\mu$ equal to $1$. The crank of $\mu$ (Andrews and Garvan) is the integer defined as
+follows: if $\omega(\mu) = 0$, it is the largest part of $\mu$, where the largest part of the
+empty partition is taken to be $0$; if $\omega(\mu) > 0$, it is the number of parts of $\mu$
+larger than $\omega(\mu)$, counted with multiplicity, minus $\omega(\mu)$.
 
 ## Depends on
 

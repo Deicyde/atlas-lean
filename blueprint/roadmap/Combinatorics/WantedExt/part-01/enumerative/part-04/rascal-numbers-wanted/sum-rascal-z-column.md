@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.sum_rascalZ_column
 ---
 
-# Theorem 9
+# Column sums of the Rascal triangle
 
-**Theorem 9** (column sum):
-`∑_{i=0}^r R_{k+i,k} = k \binom{r+1}{2} + r + 1`.
+**Column sums of the Rascal triangle.** For all natural numbers
+$k$ and $r$, the Rascal numbers $R_{n,k} = k(n-k) + 1$
+($0 \le k \le n$) satisfy
+$\sum_{i=0}^{r} R_{k+i,k} = k \binom{r+1}{2} + r + 1$.
 
 ## Depends on
 
-- [Rascal Z](rascal-z.md)
+- [Rascal numbers on the integers](rascal-z.md)
 
 ## Sources
 

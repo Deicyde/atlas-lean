@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.squareCellAction_r_one
 ---
 
-# Square Cell Action r one
+# The rotation $r$ acts on the square grid as the quarter-turn
 
-`r 1` acts on square-grid cells as the quarter-turn `cellR`.
+**The rotation $r$ acts on the square grid as the quarter-turn.** For every natural
+number $n$, the square cell action of the dihedral group of order $8$ on
+$\mathbb{Z}/n \times \mathbb{Z}/n$ sends the rotation $r$ to the quarter-turn
+$(x, y) \mapsto (-1-y, x)$.
 
 ## Depends on
 
-- [Cell R](cell-r.md)
-- [Square Cell Action](square-cell-action.md)
+- [Cell map of the quarter-turn r](cell-r.md)
+- [The dihedral action on the cells of the square grid](square-cell-action.md)
 
 ## Sources
 

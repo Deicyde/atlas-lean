@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.coloredSchreierMultisetCount_formula_and_recurrence
 ---
 
-# Colored Schreier Multiset Count formula and recurrence
+# Closed form and recurrence for colored Schreier multiset counts
 
-Theorem 2: for positive `s, p`, `|B^{(s)}_{p,n}| = ∑_{k=1}^{⌊(ns+1)/(ps+1)⌋}
-binom((n - kp)s, k - 1)` for `1 ≤ n ≤ sp + 1`, and
-`|B^{(s)}_{p,n}| = ∑_{i=0}^s binom(s, i) |B^{(s)}_{p,n-1-ip}|` for `n ≥ sp + 2`.
+**Closed form and recurrence for colored Schreier multiset counts.** Let $s \ge 1$ and
+$p \ge 1$, and write $|B^{(s)}_{p,n}|$ for the number of colored Schreier-type multisets. For
+$1 \le n \le sp + 1$,
+
+$$|B^{(s)}_{p,n}| = \sum_{k=1}^{\lfloor (ns+1)/(ps+1) \rfloor} \binom{(n - kp)s}{k - 1},$$
+
+and for $n \ge sp + 2$,
+
+$$|B^{(s)}_{p,n}| = \sum_{i=0}^{s} \binom{s}{i} \, |B^{(s)}_{p,n-1-ip}|.$$
 
 ## Depends on
 
-- [Colored Schreier Multiset Count](colored-schreier-multiset-count.md)
+- [Counting colored Schreier-type multisets](colored-schreier-multiset-count.md)
 
 ## Sources
 

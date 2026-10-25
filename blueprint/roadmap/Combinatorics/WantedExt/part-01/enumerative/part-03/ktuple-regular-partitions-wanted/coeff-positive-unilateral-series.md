@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.coeff_positiveUnilateralSeries
 ---
 
-# Coeff positive Unilateral Series
+# Coefficients of the positive unilateral series
 
-The characteristic coefficient equation for `positiveUnilateralSeries`: degree `n`
-is the matching-index sum over the finite positive interval through `n`.
+**Coefficients of the positive unilateral series.** For all functions
+$e : \mathbb{N} \to \mathbb{N}$ and $w : \mathbb{N} \to \mathbb{Z}$ and every natural number
+$n$, the coefficient of $q^n$ in the positive unilateral series of $e$ and $w$ equals the sum
+of $w(m)$ over the natural numbers $m$ with $1 \le m \le n$ and $e(m) = n$.
 
 ## Depends on
 
-- [Positive Unilateral Series](positive-unilateral-series.md)
+- [Truncated one-sided series](positive-unilateral-series.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.partitionMajorizes_three_one_two_two
 ---
 
-# Partition Majorizes three one two two
+# Majorization of $(2, 2)$ by $(3, 1)$
 
-`(3, 1)` majorizes `(2, 2)`.
+**Majorization of $(2, 2)$ by $(3, 1)$.** The partition $(3, 1)$ majorizes the partition
+$(2, 2)$: $3 \ge 2$ and $3 + 1 \ge 2 + 2$.
 
 ## Depends on
 
-- [Partition Majorizes](partition-majorizes.md)
+- [Majorization of part lists](partition-majorizes.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.rectangularGrid_f_even
 ---
 
-# Rectangular Grid f even
+# Rectangular-grid tilings fixed by the reflection $f$, $n$ even
 
-When `n` is even, reflection `f` has no fixed columns and its rectangular-grid fixed count is
-`|T|^(nm/2)`.  The order-two hypothesis on `σ` represents `f` in any `R`-set.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Rectangular-grid tilings fixed by the reflection $f$, $n$ even.** Let $n$ and $m$ be
+positive integers with $n$ even, let $T$ be a finite set of tiles and let $\sigma$ be a
+permutation of $T$ with $\sigma^2 = 1$. Let $f$ be the reflection of
+$\mathbb{Z}/n \times \mathbb{Z}/m$ given by $f(x, y) = (-1 - x, y)$. Then the number of tilings
+$F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with $F(f(c)) = \sigma(F(c))$ for every cell $c$
+equals $|T|^{nm/2}$.
 
 ## Depends on
 
-- [Cell F](cell-f.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
+- [Cell map of the reflection f](cell-f.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
 
 ## Sources
 

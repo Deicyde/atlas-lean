@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount_four_genFun
 ---
 
-# Max Rook Partition Count four gen Fun
+# Generating function of partitions with max-rook number 4
 
-Generating function of `R_4(n)`, denominator cleared:
-`(1-q)(1-q²)(1-q³)(1-q⁴) ∑ R_4(n) qⁿ = q¹⁰(1+4q+6q²+7q³+6q⁴+2q⁵-5q⁷-5q⁸-5q⁹+q¹¹+3q¹²+2q¹³-q¹⁶)`.
+**Generating function of partitions with max-rook number 4.** Let $R_4(n)$ be the number of
+partitions of $n$ with max-rook number $4$. In the ring of formal power series in $q$ with integer
+coefficients,
+
+$$(1-q)(1-q^2)(1-q^3)(1-q^4) \sum_{n \ge 0} R_4(n) q^n = q^{10} P(q),$$
+
+where
+
+$$P(q) = 1 + 4q + 6q^2 + 7q^3 + 6q^4 + 2q^5 - 5q^7 - 5q^8 - 5q^9 + q^{11} + 3q^{12} + 2q^{13} -
+q^{16}.$$
 
 ## Depends on
 
-- [Max Rook Partition Count](max-rook-partition-count.md)
+- [Partitions with a given max-rook number](max-rook-partition-count.md)
 
 ## Sources
 

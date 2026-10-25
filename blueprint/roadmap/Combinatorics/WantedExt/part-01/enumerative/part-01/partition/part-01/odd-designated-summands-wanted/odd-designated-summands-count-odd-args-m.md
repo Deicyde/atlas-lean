@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsCount_odd_args_mod_four
 ---
 
-# Odd Designated Summands Count odd args mod four
+# Congruences modulo 4 for $\mathrm{PD}_2$ at $4n + 3$, $6n + 3$ and $6n + 5$
 
-For all `n ≥ 0`, `PD_2(4n+3) ≡ PD_2(6n+3) ≡ PD_2(6n+5) ≡ 0 (mod 4)`.
+**Congruences modulo 4 for $\mathrm{PD}_2$ at $4n + 3$, $6n + 3$ and $6n + 5$.** Write
+$\mathrm{PD}_2(m)$ for the number of partitions of $m$ with designated summands in which every part
+is odd. For every natural number $n$, $\mathrm{PD}_2(4n + 3)$, $\mathrm{PD}_2(6n + 3)$ and
+$\mathrm{PD}_2(6n + 5)$ are all congruent to $0$ modulo $4$.
 
 ## Depends on
 
-- [Odd Designated Summands Count](odd-designated-summands-count.md)
+- [The odd designated-summand partition function](odd-designated-summands-count.md)
 
 ## Sources
 

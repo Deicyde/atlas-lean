@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.partitionColLen
 ---
 
-# Partition Col Len
+# Column lengths of a partition
 
-The column length `λ'_j` of a partition: the number of parts `≥ j` (columns are
-1-indexed).
+**Column lengths of a partition.** For a partition $\lambda$ of $n$ and a natural number $j$,
+the column length $\lambda'_j$ is the number of parts of $\lambda$, counted with multiplicity, that
+are at least $j$. For $j \ge 1$ this is the length of the $j$-th column of the Young diagram of
+$\lambda$, with columns numbered from $1$.
 
 ## Depends on
 

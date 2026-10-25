@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.fixedTilingCount_cellF_two_one_swap
 ---
 
-# Fixed Tiling Count cell F two one swap
+# Fixed tilings of the $2 \times 1$ grid under reflection and a design swap
 
-On the `2 × 1` grid, reflecting the two cells while swapping the two tile designs fixes
-exactly two tilings.  The proof by `decide` checks the interaction of a nontrivial cell map and a
-nontrivial design permutation in `fixedTilingCount`.
+**Fixed tilings of the $2 \times 1$ grid under reflection and a design swap.** On the grid
+$\mathbb{Z}/2 \times \mathbb{Z}/1$ with two tile designs, exactly two tilings $F$ satisfy
+$F(f(c)) = \sigma(F(c))$ for every cell $c$, where $f : (x, y) \mapsto (-1 - x, y)$ is the
+reflection exchanging the two cells and $\sigma$ swaps the two designs.
 
-Formalization deviation: none beyond the representation choices stated above.
+This is a check of the encoding, verified by computation.
 
 ## Depends on
 
-- [Cell F](cell-f.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
+- [Cell map of the reflection f](cell-f.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
 
 ## Sources
 

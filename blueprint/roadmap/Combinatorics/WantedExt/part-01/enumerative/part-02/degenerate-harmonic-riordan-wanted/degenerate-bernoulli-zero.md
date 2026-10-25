@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.degenerateBernoulli_zero
 ---
 
-# Degenerate Bernoulli zero
+# The zeroth degenerate Bernoulli number
 
-`β_{0,λ} = 1`.
+**The zeroth degenerate Bernoulli number.** For every real number $\lambda$, the degenerate
+Bernoulli number $\beta_{0,\lambda}$ equals $1$.
 
 ## Depends on
 
-- [Degenerate Bernoulli](degenerate-bernoulli.md)
+- [Degenerate Bernoulli numbers](degenerate-bernoulli.md)
 
 ## Proof depends on
 

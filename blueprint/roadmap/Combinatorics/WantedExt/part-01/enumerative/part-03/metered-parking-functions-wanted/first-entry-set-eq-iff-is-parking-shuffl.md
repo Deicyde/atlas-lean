@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.firstEntrySet_eq_iff_isParkingShuffle
 ---
 
-# First Entry Set eq iff is Parking Shuffle
+# Parking-function shuffles and the first entry
 
-Parking-function shuffles and the first entry: for `m ≤ n` and `1 ≤ k ≤ n`, the set
-`A^n_{(π_2, …, π_m)} = {j : (j, π_2, …, π_m) ∈ PF_{m,n}}` equals `[k]` if and only if
-`(π_2, …, π_m) ∈ Sh_m(k - 1, n - k)`. Zero-based: `A = {j : j < k}`; `m = m' + 1`.
+**Parking-function shuffles and the first entry.** Let $1 \le m \le n$ and $1 \le k \le n$,
+and let $w = (w_1, \dots, w_{m-1})$ be a word with entries in $\{0, \dots, n-1\}$. Then the set
+of spots $j \in \{0, \dots, n-1\}$ for which $(j, w_1, \dots, w_{m-1})$ is a partial parking
+function with $m$ cars and $n$ spots equals $\{0, \dots, k-1\}$ if and only if $w$ lies in the
+set $\mathrm{Sh}_m(k - 1, n - k)$ of $(m, n)$-parking-function shuffles with parameter $k$.
 
 ## Depends on
 
-- [Is Parking Shuffle](is-parking-shuffle.md)
+- [Parking-function shuffles](is-parking-shuffle.md)
 - [Partial parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
 
 ## Sources

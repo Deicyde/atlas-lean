@@ -6,24 +6,29 @@ proof: formalized
 lean: MetaMathlibExt.zurita_table_values
 ---
 
-# Zurita table values
+# Values from Zurita's Tables 1-4
 
-Rows of the paper's Tables 1-4: `S_2 = -2/3 - (8/3)x + (16/3)x^2`, `c_2 = 5/3`,
-`c_4 = 93/35`, `T_1 = -1/10 - (3/5)x` (`n = 3`), `M_2 = 2/5 + (8/15)x + (16/15)x^2`,
-`d_3 = 8/15`, and `N_1 = -(8x + 3)/30` (`n = 3`).
+**Values from Zurita's Tables 1-4.** For $n = 2$ the coefficients $s_0, s_1, s_2$ of $S_2$ are
+$-2/3$, $-8/3$ and $16/3$, and the constants $c_2$ and $c_4$ equal $5/3$ and $93/35$. For $n = 3$
+the coefficients $t_0, t_1$ of $T_1$ are $-1/10$ and $-3/5$, the coefficients $m_0, m_1, m_2$ of
+$M_2$ are $2/5$, $8/15$ and $16/15$, the constant $d_3$ equals $8/15$, and the coefficients of
+$x^0$ and $x^1$ in $N_1$ are $-3/30$ and $-8/30$.
+
+In polynomial form: $S_2(x) = -2/3 - (8/3)x + (16/3)x^2$, $T_1(x) = -1/10 - (3/5)x$,
+$M_2(x) = 2/5 + (8/15)x + (16/15)x^2$ and $N_1(x) = -(8x + 3)/30$.
 
 ## Depends on
 
-- [Zurita C](zurita-c.md)
-- [Zurita D](zurita-d.md)
-- [Zurita MCoeff](zurita-mcoeff.md)
-- [Zurita NCoeff](zurita-ncoeff.md)
-- [Zurita SCoeff](zurita-scoeff.md)
-- [Zurita TCoeff](zurita-tcoeff.md)
+- [Zurita's constant $c_n$](zurita-c.md)
+- [Zurita's constant $d_n$](zurita-d.md)
+- [Zurita's coefficients $m_k$](zurita-mcoeff.md)
+- [Coefficients of Zurita's polynomial $N_{n-2}$](zurita-ncoeff.md)
+- [Coefficients of Zurita's polynomial $S_n$](zurita-scoeff.md)
+- [Coefficients of Zurita's polynomial $T_{n-2}$](zurita-tcoeff.md)
 
 ## Proof depends on
 
-- [Zurita TCoeff Rev](zurita-tcoeff-rev.md)
+- [Reversed coefficients of Zurita's polynomial $T_{n-2}$](zurita-tcoeff-rev.md)
 
 ## Sources
 

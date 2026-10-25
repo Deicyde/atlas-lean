@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.cyclicShiftLeftStrategy_of_ne
 ---
 
-# Cyclic Shift Left Strategy of ne
+# Non-top components of the left-shift strategy
 
-The lower components of `CSL` are right cyclic shifts.
+**Non-top components of the left-shift strategy.** For all $n$ and $m$ with $m \ne n$, the
+component on $m$ positions of the left-shift strategy $\mathrm{CSL}_n$ is the cyclic shift
+$j \mapsto j + 1 \bmod m$ of $\{0, \dots, m-1\}$.
 
 ## Depends on
 
-- [Cyclic Shift Left Strategy](cyclic-shift-left-strategy.md)
+- [Cyclic shift left strategy](cyclic-shift-left-strategy.md)
 
 ## Sources
 

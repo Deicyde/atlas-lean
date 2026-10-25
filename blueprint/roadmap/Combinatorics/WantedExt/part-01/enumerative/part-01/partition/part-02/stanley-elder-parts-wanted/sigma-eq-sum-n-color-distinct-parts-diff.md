@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sigma_eq_sum_nColor_distinctPartsDiff
 ---
 
-# Sigma eq sum n Color distinct Parts Diff
+# Divisor sum via distinct $n$-color partitions
 
-Corollary 8: for `m ≥ 1`, `σ(m) = ∑_{k=1}^{m} (C_o(D, k) - C_e(D, k)) C(m-k)`, with
-`C_o(D, ·)`, `C_e(D, ·)` as in Corollary 7.
+**Divisor sum via distinct $n$-color partitions.** For $r \ge 0$ let $C(r)$ be the number
+of $n$-color partitions of $r$, and let $C_o(D, r)$ (resp. $C_e(D, r)$) be the total number of
+parts over the $n$-color partitions of $r$ into an odd (resp. even) number of distinct colored
+parts. Then for every $m \ge 1$,
+
+$$\sigma(m) = \sum_{k=1}^{m} \bigl(C_o(D, k) - C_e(D, k)\bigr)\, C(m-k),$$
+
+where $\sigma(m)$ is the sum of the divisors of $m$.
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Sources
 

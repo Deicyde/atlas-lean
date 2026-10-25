@@ -5,16 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_two_mul_sub_one_inv_gammaBinom
 ---
 
-# Sum choose two mul sub one inv gamma Binom
+# Odd-index binomial sum with inverse generalized binomial coefficients
 
-Equation (17), the `n = 1` case of (14):
-`∑_{k=1}^{⌈n/2⌉} binom(n,2k-1) 2^{n-2k} binom(2k,k) binom((2k+v)/2, k)^{-1}` equals
-`½ binom(2n+v+2, (2n+v+2)/2) binom(n+v+1, v/2)^{-1}
-- binom(2n+v, (2n+v)/2) binom(n+v, v/2)^{-1}` for real `v > -1`.
+**Odd-index binomial sum with inverse generalized binomial coefficients.**
+Write $\binom{u}{w} = \Gamma(u+1)/(\Gamma(w+1)\Gamma(u-w+1))$ for the generalized binomial
+coefficient of complex $u$, $w$, which for natural $u$, $w$ is the ordinary binomial coefficient.
+For every natural number $n$ and every real $v > -1$,
+
+$$
+\sum_{k=1}^{\lceil n/2 \rceil} \binom{n}{2k-1} \frac{2^n}{2^{2k}} \binom{2k}{k}
+\binom{(2k+v)/2}{k}^{-1}
+= \frac{1}{2} \binom{2n+v+2}{(2n+v+2)/2} \binom{n+v+1}{v/2}^{-1} -
+\binom{2n+v}{(2n+v)/2} \binom{n+v}{v/2}^{-1}.
+$$
+
+This is equation (17) of the source, the case $n = 1$ of its two-parameter identity (14), whose
+parameter $m$ is called $n$ here.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

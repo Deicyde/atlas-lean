@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isMeteredParkingFunction_one_two_iff_lace
 ---
 
-# Is Metered Parking Function one two iff lace
+# One-metered parking functions with two spots
 
-For `m ≥ 1`, `f : [m] → [2]` is a `1`-metered `(m, 2)`-parking function if and only if every
-lace of `lace(f)` containing a `2` (zero-based `1`) is a singleton.
+**One-metered parking functions with two spots.** Let $m \ge 1$ and
+$f : \{0, \dots, m-1\} \to \{0, 1\}$. Then $f$ is a $1$-metered parking function with $m$ cars and
+$2$ spots if and only if every lace of the lace decomposition of $(f(0), \dots, f(m-1))$ that
+contains the value $1$ has length $1$.
 
 ## Depends on
 
-- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Metered parking function](is-metered-parking-function.md)
 - [Lace Decomposition](lace-decomposition.md)
 
 ## Sources

@@ -6,15 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.sabarNumber_recurrence_small
 ---
 
-# Sabar Number recurrence small
+# A recurrence for Sabar's triangle in small cases
 
-The recurrence `s(n + 2, i + 1) = s(n, i + 1) + C(n + 1, i)` (the paper's third basic
-identity `s(n, i) = s(n-2, i) + C(n-1, i-1)`), checked for `i < n < 8`; it fails for
-`i ≥ n`, e.g. `s(2, 1) = 2` but `s(0, 1) + C(1, 0) = 1`.
+**A recurrence for Sabar's triangle in small cases.** For all natural numbers $n$ and $i$ with
+$i < n < 8$, the entries of Sabar's triangle $s$ satisfy
+$s(n + 2, i + 1) = s(n, i + 1) + \binom{n+1}{i}$.
+
+This is the source's third basic identity $s(n, i) = s(n-2, i) + \binom{n-1}{i-1}$, stated here
+only in these cases. It fails for $i = n$ and $i = n + 1$ (for $i \ge n + 2$ both sides are $0$):
+for example $s(2, 1) = 2$ but $s(0, 1) + \binom{1}{0} = 1$.
 
 ## Depends on
 
-- [Sabar Number](sabar-number.md)
+- [Sabar's triangle](sabar-number.md)
 
 ## Sources
 

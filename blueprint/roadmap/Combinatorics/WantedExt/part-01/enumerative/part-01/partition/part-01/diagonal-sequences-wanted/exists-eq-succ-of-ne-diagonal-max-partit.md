@@ -5,19 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.exists_eq_succ_of_ne_diagonalMaxPartition
 ---
 
-# Exists eq succ of ne diagonal Max Partition
+# Repeated parts and large gaps in a diagonal class
 
-Corollary 4: let `α = (α_1, …, α_t)` have normal form `(q, s)`. If `α ≠ ᾱ` then
-`α_i = α_{i+1}` for some `1 ≤ i < t`; if `α ≠ α̲` then `α_i - α_{i+1} > 1` for some
-`1 ≤ i ≤ t` (with `α_{t+1} = 0`). Parts are listed in decreasing order, zero-based.
+**Repeated parts and large gaps in a diagonal class.** Let $q \ge 0$ and
+$s_1, \dots, s_q \ge 0$ be natural numbers, write $v^{(m)}$ for $m$ copies of $v$, and let
+$\bar\alpha$ and $\underline\alpha$ be the partitions with parts
+$\bar\alpha_i = q - i + 1 + s_i + s_{i+1} + \dots + s_q$ for $1 \le i \le q$ and
+$\underline\alpha = (q^{(s_q + 1)}, (q-1)^{(s_{q-1} + 1)}, \dots, 1^{(s_1 + 1)})$. Let $\alpha$
+be a partition of $n$ with parts $\alpha_1 \ge \dots \ge \alpha_t$, set $\alpha_{t+1} = 0$, and
+suppose that the diagonal sequence of $\alpha$, indexed from $0$, is
+$(0, 1, 2, \dots, q, q^{(s_q)}, \dots, 1^{(s_1)}, 0, 0, \dots)$. If $\alpha \ne \bar\alpha$, then
+$\alpha_i = \alpha_{i+1}$ for some $i$ with $1 \le i < t$. If $\alpha \ne \underline\alpha$, then
+$\alpha_i - \alpha_{i+1} \ge 2$ for some $i$ with $1 \le i \le t$.
 
 ## Depends on
 
-- [Diagonal Max Partition](diagonal-max-partition.md)
-- [Diagonal Min Partition](diagonal-min-partition.md)
-- [Diagonal Normal Form](diagonal-normal-form.md)
-- [Diagonal Of List](diagonal-of-list.md)
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Maximal partition of a diagonal normal form](diagonal-max-partition.md)
+- [Minimal partition of a diagonal normal form](diagonal-min-partition.md)
+- [Normal form of a diagonal sequence](diagonal-normal-form.md)
+- [Sequence of a finite list](diagonal-of-list.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

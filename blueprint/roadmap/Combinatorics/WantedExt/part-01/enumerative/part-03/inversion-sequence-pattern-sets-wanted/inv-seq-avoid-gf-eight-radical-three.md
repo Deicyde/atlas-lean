@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.invSeqAvoidGF_eight_radical_three
 ---
 
-# Theorem 18
+# A common generating function for three sets of eight patterns
 
-**Theorem 18.** For `B₁ = {000, 010, 100, 101, 102, 120, 201, 210}`,
-`B₂ = {000, 010, 100, 102, 110, 120, 201, 210}` and `B₃ = {000, 010, 101, 102, 110, 120, 201, 210}`,
-`F_{B_j}(x) = (1 - 2x - x² + x³ - (1 - x) √(1 - 2x - 3x²)) / x²`, stated after clearing `x²`;
-`s` is the power series square root of `1 - 2x - 3x²` with constant term `1` (the record's
-radical `√(1 - 2x - 3x²)` multiplies the polynomial printed just before it).
+**A common generating function for three sets of eight patterns.** Let
+$B_1 = \{000, 010, 100, 101, 102, 120, 201, 210\}$,
+$B_2 = \{000, 010, 100, 102, 110, 120, 201, 210\}$ and
+$B_3 = \{000, 010, 101, 102, 110, 120, 201, 210\}$, where a pattern is written as a digit string
+($101$ is the triple $(1, 0, 1)$). For a set $B$ of patterns let
+$F_B(x) = \sum_{n \ge 1} |I_n(B)| x^n \in \mathbb{Q}[[x]]$ be the generating function of the
+inversion sequences avoiding every pattern in $B$. For each $j \in \{1, 2, 3\}$ and every power
+series $s \in \mathbb{Q}[[x]]$ with constant term $1$ and $s^2 = 1 - 2x - 3x^2$,
+
+$$x^2 F_{B_j}(x) = 1 - 2x - x^2 + x^3 - (1 - x) s.$$
+
+This is the closed form $F_{B_j}(x) = (1 - 2x - x^2 + x^3 - (1 - x)\sqrt{1 - 2x - 3x^2}) / x^2$
+with the denominator cleared, $s$ standing for $\sqrt{1 - 2x - 3x^2}$.
 
 ## Depends on
 
-- [Inv Seq Avoid GF](inv-seq-avoid-gf.md)
+- [Generating function of inversion sequences avoiding a set of patterns](inv-seq-avoid-gf.md)
 
 ## Sources
 

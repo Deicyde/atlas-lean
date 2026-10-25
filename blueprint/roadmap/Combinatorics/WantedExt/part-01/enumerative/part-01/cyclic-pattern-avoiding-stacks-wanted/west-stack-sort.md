@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.westStackSort
 ---
 
-# West Stack Sort
+# West's stack-sorting map
 
-West's deterministic stack-sorting map `s`: the stack, read from top to bottom, avoids `21`.
+**West's stack-sorting map.** For a finite sequence $\pi$ of natural numbers, $s(\pi)$ is
+computed with a stack that starts empty. The entries of $\pi$ are read from left to right; before
+the next entry $x$ is pushed, the fewest entries are popped from the top of the stack so that the
+stack with $x$ on top, read from top to bottom, avoids the pattern $21$, and the popped entries
+are appended to the output in the order in which they are popped. After the last entry has been
+pushed, the stack is emptied from top to bottom onto the output.
 
 ## Depends on
 
@@ -15,9 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Contains Pattern Seq](contains-pattern-seq.md)
-- [Same Relative Order](same-relative-order.md)
-- [Restricted Stack Sort Aux](restricted-stack-sort-aux.md)
+- [Pattern containment](contains-pattern-seq.md)
+- [Sequences with the same relative order](same-relative-order.md)
+- [Restricted stack-sorting from a given stack](restricted-stack-sort-aux.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ascent To Descent Rearrangement Aux](ascent-to-descent-rearrangement-aux.md)
+- [Fuel-bounded ascent-to-descent rearrangement](ascent-to-descent-rearrangement-aux.md)
 
 ## Sources
 

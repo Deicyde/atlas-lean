@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.noncrossingBlockSingletonCount
 ---
 
-# Noncrossing Block Singleton Count
+# Noncrossing partitions by number of blocks and of singleton blocks
 
-`NC_{n,m,k}`, the number of noncrossing partitions of `[n]` with `m` blocks of which `k` are
-singletons.
+**Noncrossing partitions by number of blocks and of singleton blocks.** For natural numbers
+$n$, $m$ and $k$, $NC_{n,m,k}$ is the number of noncrossing partitions of $\{0, \dots, n-1\}$
+that have exactly $m$ blocks, exactly $k$ of which are singletons.
 
 ## Depends on
 

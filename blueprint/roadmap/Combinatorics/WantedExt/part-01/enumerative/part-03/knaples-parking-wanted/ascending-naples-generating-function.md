@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.ascendingNaples_generatingFunction
 ---
 
-# Ascending Naples generating Function
+# Generating functions for ascending $k$-Naples parking functions
 
-Theorem 6: with `I_k(x) = ∑ I_{n,k} xⁿ` and `U_k(x) = ∑ U_{n,k} xⁿ`, for `k ≥ 1`,
-`I_k = I_{k-1} + C_k x^k I_{k-1} U_k` and `U_k = U_{k-1} + C_k x^k U_{k-1} U_k`.
+**Generating functions for ascending $k$-Naples parking functions.** Let $I_{n,k}$ be the
+number of weakly increasing $k$-Naples parking functions of length $n$, let $U_{n,k}$ be the
+number of those whose first entry is $1$, and let $C_k$ be the $k$-th Catalan number. Write
+$I_k(x) = \sum_{n \ge 0} I_{n,k} x^n$ and $U_k(x) = \sum_{n \ge 0} U_{n,k} x^n$, formal power
+series with natural number coefficients. For every natural number $k \ge 1$,
+
+$$I_k(x) = I_{k-1}(x) + C_k x^k I_{k-1}(x) U_k(x)$$
+
+and
+
+$$U_k(x) = U_{k-1}(x) + C_k x^k U_{k-1}(x) U_k(x).$$
 
 ## Depends on
 
-- [Ascending Naples Count](ascending-naples-count.md)
-- [Ascending Naples One Count](ascending-naples-one-count.md)
+- [Number of ascending $k$-Naples parking functions](ascending-naples-count.md)
+- [Number of ascending $k$-Naples parking functions starting with $1$](ascending-naples-one-count.md)
 
 ## Sources
 

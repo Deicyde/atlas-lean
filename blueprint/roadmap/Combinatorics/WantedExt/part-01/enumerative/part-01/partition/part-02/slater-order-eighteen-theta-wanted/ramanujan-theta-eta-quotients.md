@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTheta_eta_quotients
 ---
 
-# Ramanujan Theta eta quotients
+# Eta-quotients of Ramanujan's theta functions
 
-Lemma 1, the classical eta-quotients of Ramanujan's functions: with
-`f_k = (q^k; q^k)_∞`, for `‖q‖ < 1`,
-`φ(q) = f₂⁵ / (f₁² f₄²)`, `ψ(q) = f₂² / f₁`, `φ(-q) = f₁² / f₂`, `ψ(-q) = f₁ f₄ / f₂`,
-`f(q) = f₂³ / (f₁ f₄)`, `χ(q) = f₂² / (f₁ f₄)`, and `χ(-q) = f₁ / f₂`, each stated with the
-denominator cleared. Here `f(q) = f(q, -q²)` and `χ(-q) = (q; q²)_∞`, the `q ↦ -q` images of
-`f(-q)` and `χ(q)`.
+**Eta-quotients of Ramanujan's theta functions.** Let $q$ be a complex number with
+$|q| < 1$. Write $(a;q)_\infty = \prod_{n \ge 0} (1 - a q^n)$ and $f_k = (q^k;q^k)_\infty$, and
+let $f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta function.
+Then $f(q,q) f_1^2 f_4^2 = f_2^5$, $f(q,q^3) f_1 = f_2^2$, $f(-q,-q) f_2 = f_1^2$,
+$f(-q,-q^3) f_2 = f_1 f_4$, $f(q,-q^2) f_1 f_4 = f_2^3$, $(-q;q^2)_\infty f_1 f_4 = f_2^2$ and
+$(q;q^2)_\infty f_2 = f_1$.
+
+These are the classical eta-quotients $\varphi(q) = f_2^5/(f_1^2 f_4^2)$, $\psi(q) = f_2^2/f_1$,
+$\varphi(-q) = f_1^2/f_2$, $\psi(-q) = f_1 f_4/f_2$, $f(q) = f_2^3/(f_1 f_4)$,
+$\chi(q) = f_2^2/(f_1 f_4)$ and $\chi(-q) = f_1/f_2$ with the denominators cleared, where
+$\varphi(q) = f(q,q)$, $\psi(q) = f(q,q^3)$, $f(q) = f(q,-q^2)$ and $\chi(q) = (-q;q^2)_\infty$.
 
 ## Depends on
 

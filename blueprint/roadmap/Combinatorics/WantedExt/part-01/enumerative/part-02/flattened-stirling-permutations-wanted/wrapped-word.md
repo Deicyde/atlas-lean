@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.wrappedWord
 ---
 
-# Wrapped Word
+# Wrapped word of a finite set
 
-The word `g(S) = s₁ s₂ s₂ ⋯ s_k s_k s₁` for `S = {s₁ < ⋯ < s_k}` (empty for
-`S = ∅`).
+**Wrapped word of a finite set.** For a finite set $S = \{s_1 < s_2 < \dots < s_k\}$ of natural
+numbers, the wrapped word $g(S)$ is $s_1 s_2 s_2 \cdots s_k s_k s_1$: the smallest element, then
+each larger element written twice in increasing order, then the smallest element again. For
+$S = \emptyset$, $g(S)$ is the empty word.
 
 ## Depends on
 

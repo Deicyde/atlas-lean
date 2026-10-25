@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.bishopsBlack_eq_quasi
 ---
 
-# Bishops Black eq quasi
+# Quasi-polynomial formula for bishops on the black squares
 
-Equation (14): `R_K(m, k) = ∑_{d=0}^{2k} c_d m^d` with the constituent coefficients of
-equation (14), `z = π(m)`.
+**Quasi-polynomial formula for bishops on the black squares.** Let $R_K(m, k)$ be the
+number of nonattacking placements of $k$ bishops on the black squares $(i, j)$, with $i + j$
+odd, of the board $\{1, \dots, m\}^2$, and let $c_{k,d}(z)$ be the constituent coefficients of
+the bishop quasi-polynomials. For all natural numbers $m$ and $k$,
+
+$$R_K(m, k) = \sum_{d=0}^{2k} c_{k,d}(\pi(m)) \, m^d$$
+
+in $\mathbb{C}$, where $\pi(m) \in \{0, 1\}$ is the remainder of $m$ modulo $2$.
 
 ## Depends on
 
-- [Bishop Color Quasi Coeff](bishop-color-quasi-coeff.md)
-- [Bishops Black](bishops-black.md)
+- [Constituent coefficients for bishops on one color](bishop-color-quasi-coeff.md)
+- [Nonattacking bishops on the black squares](bishops-black.md)
 
 ## Sources
 

@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.logConvex_of_linearRecurrence_of_initial_logConvex
 ---
 
-# Log Convex of linear Recurrence of initial log Convex
+# Log-convexity propagates along a linear recurrence
 
-Log-convexity propagates along a positive linear recurrence with one
-positive and `k - 1` subtracted nonnegative coefficients: under the
-recurrence of `logConcave_of_linearRecurrence_of_initial_logConcave`, if the
-initial block `z 0, …, z k` is log-convex
-(`z i ^ 2 ≤ z (i-1) z (i+1)` for `1 ≤ i < k`), then the whole sequence is
-log-convex. The paper assumes the block `z 0, …, z (k+1)` is log-convex; its
-`i = k` inequality is dropped because the recurrence propagates it. The
-paper's hypothesis `c₁ > 0` is omitted: it follows from positivity and the
-recurrence at `n = k`.
+**Log-convexity propagates along a linear recurrence.** Let $k \ge 2$ be an integer, let
+$c_1, \dots, c_k$ be real numbers with $c_j \ge 0$ for $2 \le j \le k$, and let
+$(z_n)_{n \ge 0}$ be a sequence of positive real numbers with
+
+$$z_n = c_1 z_{n-1} - \sum_{j=2}^{k} c_j z_{n-j} \quad (n \ge k).$$
+
+If $z_i^2 \le z_{i-1} z_{i+1}$ for $1 \le i < k$, then $z_n^2 \le z_{n-1} z_{n+1}$ for every
+$n \ge 1$; that is, the whole sequence is log-convex.
+
+The paper assumes that the block $z_0, \dots, z_{k+1}$ is log-convex, which adds the
+inequality for $i = k$, and that $c_1 > 0$. Both follow from the other hypotheses: the
+recurrence propagates the inequality for $i = k$, and the recurrence at $n = k$ forces
+$c_1 > 0$.
 
 ## Depends on
 

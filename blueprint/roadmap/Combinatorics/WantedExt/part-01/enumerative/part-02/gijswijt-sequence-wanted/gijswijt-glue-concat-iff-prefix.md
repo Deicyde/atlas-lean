@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtGlueConcat_iff_prefix
 ---
 
-# Gijswijt Glue Concat iff prefix
+# Concatenated glue strings are the next-order prefixes with small curling number
 
-For `m ≥ 1`, the strings `T_t^{(m)}` (`t ≥ 1`) are exactly the prefixes of `A^{(m+1)}` with
-curling number at most `m`.
+**Concatenated glue strings are the next-order prefixes with small curling number.** Let
+$m \ge 1$. A finite string $P$ of natural numbers is a prefix of the $(m+1)$th order Gijswijt
+sequence $A^{(m+1)}$ with curling number $\mathcal{C}(P) \le m$ if and only if $P = T^{(m)}_t$ for
+some $t \ge 1$, where $T^{(m)}_t$ is the concatenated glue string.
 
 ## Depends on
 
-- [Curling Number](curling-number.md)
-- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
-- [Gijswijt Prefix](gijswijt-prefix.md)
+- [Curling number](curling-number.md)
+- [Concatenated glue strings of a Gijswijt sequence](gijswijt-glue-concat.md)
+- [Prefixes of the $m$th order Gijswijt sequence](gijswijt-prefix.md)
 
 ## Sources
 

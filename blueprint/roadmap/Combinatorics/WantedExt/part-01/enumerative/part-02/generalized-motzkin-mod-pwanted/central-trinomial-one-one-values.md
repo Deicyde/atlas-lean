@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.centralTrinomial_one_one_values
 ---
 
-# Central Trinomial one one values
+# First five central trinomial coefficients
 
-The first five generalized central trinomial coefficients at `a = b = 1` are `1, 1, 3, 7, 19`.
+**First five central trinomial coefficients.** The central trinomial coefficients $T_n$, the
+constant terms of $(x^{-1} + 1 + x)^n$, are $1, 1, 3, 7, 19$ for $n = 0, 1, 2, 3, 4$.
 
 ## Depends on
 
-- [Central Trinomial](central-trinomial.md)
+- [Generalized central trinomial coefficients](central-trinomial.md)
 
 ## Proof depends on
 
-- [Trinomial Laurent](trinomial-laurent.md)
-- [Trinomial Laurent one one powers](trinomial-laurent-one-one-powers.md)
+- [The symmetric trinomial Laurent polynomial](trinomial-laurent.md)
+- [The first five powers of $x^{-1} + 1 + x$](trinomial-laurent-one-one-powers.md)
 
 ## Sources
 

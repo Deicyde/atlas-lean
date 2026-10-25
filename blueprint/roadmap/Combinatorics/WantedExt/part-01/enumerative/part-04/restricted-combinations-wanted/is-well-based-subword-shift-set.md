@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.isWellBased_subwordShiftSet
 ---
 
-# Is Well Based subword Shift Set
+# Subword shift sets are well based
 
-Theorem 22, well-based part: for every length-`l` binary subword `ω`, the set `Q` built
-from `ω` as in Theorem 21 is well based. The theorem's additional claim that no
-integer linear combination of the elements `p_i` of `{1, …, q} \ Q` lies in `Q` is omitted:
-it is false (`ω = 010100101`, `l = 9`: `Q = {1, 2, 3, 4, 6, 8}`, `q = 8 = l - 1`,
-`p_1 = 5`, `p_2 = 7`, and `p_2 - p_1 = 2 ∈ Q`). The side condition `q = l - 1` of Theorem 21
-is not needed here.
+**Subword shift sets are well based.** Let $l$ be a natural number and $\omega$ a binary word
+of length $l$, read as a natural number $\omega < 2^l$. Then the set $Q$ of those
+$j \in \{1, \dots, l-1\}$ for which the leftmost $l - j$ bits of $\omega$ differ from its
+rightmost $l - j$ bits, that is $\lfloor \omega / 2^j \rfloor \ne \omega \bmod 2^{l-j}$, is well
+based.
+
+This is the well-based part of Theorem 22 of the paper. Its further claim, that no integer
+linear combination of the elements $p_i$ of $\{1, \dots, q\} \setminus Q$ lies in $Q$ (with $q$
+the largest element of $Q$), is omitted: for $\omega = 010100101$ and $l = 9$ one gets
+$Q = \{1, 2, 3, 4, 6, 8\}$, $q = 8$, $p_1 = 5$, $p_2 = 7$, and $p_2 - p_1 = 2 \in Q$. The side
+condition $q = l - 1$ of Theorem 21 is not needed.
 
 ## Depends on
 
-- [Is Well Based](is-well-based.md)
-- [Subword Shift Set](subword-shift-set.md)
+- [Well-based sets](is-well-based.md)
+- [Shift set of a binary subword](subword-shift-set.md)
 
 ## Sources
 

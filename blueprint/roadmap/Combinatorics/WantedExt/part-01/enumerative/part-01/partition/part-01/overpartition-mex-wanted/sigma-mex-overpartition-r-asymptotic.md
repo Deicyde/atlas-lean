@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sigmaMexOverpartition_r_asymptotic
 ---
 
-# Sigma Mex Overpartition r asymptotic
+# Asymptotic formula for the overpartition r-mex sums
 
-For every positive `r`, `σ_r mex̄(n)` is asymptotic to
-`exp(π√n) / (8 √r n^(3/4))` as `n → ∞`.  This uses the published
-`√r` denominator (also supported by the requester's numerical check), not
-the `r` denominator printed in arXiv v1; the limit is formalized with
-`Asymptotics.IsEquivalent atTop`.
+**Asymptotic formula for the overpartition r-mex sums.** Let $r$ be a positive integer and let
+$\sigma_r\overline{\mathrm{mex}}(n)$ be the sum over all overpartitions $\pi$ of $n$ of
+$\overline{\mathrm{mex}}_r(\pi)$, the least positive integer occurring fewer than $r$ times among
+the non-overlined parts of $\pi$. Then
+$\sigma_r\overline{\mathrm{mex}}(n) \sim e^{\pi\sqrt{n}} / (8 \sqrt{r}\, n^{3/4})$ as
+$n \to \infty$, that is, the ratio of the two sides tends to $1$.
+
+The denominator $8\sqrt{r}$ follows the published version of the paper; arXiv v1 prints $8r$.
 
 ## Depends on
 
-- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
+- [Sums of minimal excludants over overpartitions](sigma-mex-overpartition.md)
 
 ## Sources
 

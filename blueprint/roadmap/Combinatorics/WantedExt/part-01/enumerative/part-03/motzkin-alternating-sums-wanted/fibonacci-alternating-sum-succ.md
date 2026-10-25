@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.fibonacciAlternatingSum_succ
 ---
 
-# Fibonacci Alternating Sum succ
+# Recurrence for alternating Fibonacci sums
 
-`W_{n+1} = F_{n+1} - W_n`.
+**Recurrence for alternating Fibonacci sums.** Let $F_k$ denote the $k$-th Fibonacci
+number, with $F_0 = 0$ and $F_1 = 1$, and let $W_n = \sum_{k=0}^{n} (-1)^{n-k} F_k$. For every
+natural number $n$, $W_{n+1} = F_{n+1} - W_n$.
 
 ## Depends on
 
-- [Fibonacci Alternating Sum](fibonacci-alternating-sum.md)
+- [Alternating sums of Fibonacci numbers](fibonacci-alternating-sum.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.maximalSchreierPadovan
 ---
 
-# Maximal Schreier Padovan
+# Padovan-like sequence of maximal Schreier sets
 
-The Padovan-like sequence `a^{(m)}_{p,q,n}` for maximal Schreier sets: for `p ≥ q`, the
-initial values `a_n`, `n < p + q`, are `1` at `n = p - q` and `0` otherwise; for `p < q`, they
-are `1` at `n = 2p` and `0` otherwise; and `a_n = a_{n-q} + a_{n-p-q}` for `n ≥ p + q`.
+**Padovan-like sequence of maximal Schreier sets.** For natural numbers $p$ and $q$, the
+sequence $a^{(m)}_{p,q,n}$, $n \ge 0$, is defined as follows. If $q \ge 1$ and $n \ge p + q$, then
+$a^{(m)}_{p,q,n} = a^{(m)}_{p,q,n-q} + a^{(m)}_{p,q,n-p-q}$. Otherwise, if $q \le p$, then
+$a^{(m)}_{p,q,n}$ is $1$ for $n = p - q$ and $0$ for every other $n$, and if $p < q$, then
+$a^{(m)}_{p,q,n}$ is $1$ for $n = 2p$ and $0$ for every other $n$.
 
 ## Depends on
 

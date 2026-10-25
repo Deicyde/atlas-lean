@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.maximal_intersecting_of_isUpperSet_of_mem_iff_compl_notMem
 ---
 
-# Lemma 4
+# A criterion for maximal intersecting families (Lemma 4)
 
-**Lemma 4.** If a family `𝒰 ⊆ 𝒫(X)` is an upset (L1) and for every `A ⊆ X` exactly one of
-`A` and `Aᶜ` lies in `𝒰` (L2), then `𝒰` is a maximal linked system.
+**A criterion for maximal intersecting families (Lemma 4).** Let $n$ be a natural number and
+let $\mathcal U$ be a family of subsets of $X = \{0, \dots, n-1\}$ such that $\mathcal U$ is an
+upper set (if $A \in \mathcal U$ and $A \subseteq B \subseteq X$ then $B \in \mathcal U$) and,
+for every $A \subseteq X$, $A \in \mathcal U$ if and only if $X \setminus A \notin \mathcal U$.
+Then $\mathcal U$ is a maximal intersecting family: any two members of $\mathcal U$, not
+necessarily distinct, have nonempty intersection, and no family of subsets of $X$ strictly
+containing $\mathcal U$ has this property.
 
-The paper's hypothesis `n ≥ 1` is dropped: for `n = 0`, `∅ᶜ = ∅` and (L2) cannot hold.
+The paper's hypothesis $n \ge 1$ is not needed: for $n = 0$ the complement of $\emptyset$ is
+$\emptyset$, so no family satisfies the second condition.
 
 ## Depends on
 

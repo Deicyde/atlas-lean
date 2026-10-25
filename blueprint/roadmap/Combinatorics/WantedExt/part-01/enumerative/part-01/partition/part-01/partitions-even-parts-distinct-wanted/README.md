@@ -4,5 +4,5 @@ navigation: module
 
 # Partitions Even Parts Distinct
 
-- [Partitions Even Parts Distinct mod24 progressions](partitions-even-parts-distinct-mod24-pro.md)
-- [Partitions Even Parts Distinct mod24 five power](partitions-even-parts-distinct-mod24-fiv.md)
+- [Congruences modulo 24 for partitions with distinct even parts](partitions-even-parts-distinct-mod24-pro.md)
+- [Power-of-five congruence modulo 24 for partitions with distinct even parts](partitions-even-parts-distinct-mod24-fiv.md)

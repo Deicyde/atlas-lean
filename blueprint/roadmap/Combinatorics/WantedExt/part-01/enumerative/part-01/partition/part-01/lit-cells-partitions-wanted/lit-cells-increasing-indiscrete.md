@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.litCellsIncreasing_indiscrete
 ---
 
-# Lit Cells Increasing indiscrete
+# Lit cells of a one-part increasing bargraph
 
-The one-part partition `(n)`, `n ≥ 1`, has `n` lit cells as a weakly increasing bargraph.
+**Lit cells of a one-part increasing bargraph.** For every natural number $n \ge 1$, the
+partition $(n)$ of $n$ with a single part has $n$ lit cells as a weakly increasing bargraph.
 
 ## Depends on
 
-- [Lit Cells Increasing](lit-cells-increasing.md)
+- [Lit cells of a weakly increasing bargraph](lit-cells-increasing.md)
 
 ## Sources
 

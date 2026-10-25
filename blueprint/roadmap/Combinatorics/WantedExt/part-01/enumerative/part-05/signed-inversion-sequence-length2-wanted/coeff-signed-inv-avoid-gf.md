@@ -6,15 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.coeff_signedInvAvoidGF
 ---
 
-# Coeff signed Inv Avoid GF
+# Coefficients of the avoidance generating function
 
-The coefficients of `F_B` are the counts: `[xⁿ] F_B = |Ī_n(B)|`.
+**Coefficients of the avoidance generating function.** For a finite set $B$ of length-2
+signed patterns and $m \ge 0$, let $|\bar I_m(B)|$ be the number of signed inversion sequences of
+length $m$ avoiding every pattern of $B$, and let $F_B(x) = \sum_{m \ge 0} |\bar I_m(B)| x^m$ be
+their generating function, a formal power series with rational coefficients. Then for every
+$n \ge 0$ the coefficient of $x^n$ in $F_B(x)$ is $|\bar I_n(B)|$, viewed as a rational number.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
-- [Signed Inv Avoid GF](signed-inv-avoid-gf.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
+- [Generating function of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-gf.md)
 
 ## Sources
 

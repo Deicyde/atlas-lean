@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.gammaBinom_natCast
 ---
 
-# Gamma Binom nat Cast
+# The generalized binomial coefficient at natural arguments
 
-At natural arguments `gammaBinom` is the ordinary binomial coefficient, including the
-value `0` for `k > n`.
+**The generalized binomial coefficient at natural arguments.** For all natural numbers $n$
+and $k$, the generalized binomial coefficient of complex arguments at $(n, k)$, namely
+$\Gamma(n+1)/(\Gamma(k+1)\,\Gamma(n-k+1))$, equals the ordinary binomial coefficient
+$\binom{n}{k}$; in particular it is $0$ when $k > n$.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

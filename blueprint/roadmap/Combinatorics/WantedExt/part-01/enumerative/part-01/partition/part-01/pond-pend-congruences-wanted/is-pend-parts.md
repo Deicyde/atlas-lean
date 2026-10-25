@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsPendParts
 ---
 
-# Is Pend Parts
+# The PEND condition
 
-The PEND condition on a multiset of parts: every even part that occurs has
-multiplicity at least `2`, i.e. the even parts are not distinct.
+**The PEND condition.** A multiset $s$ of natural numbers (the parts of a partition)
+satisfies the PEND condition when no even number occurs in $s$ exactly once; equivalently,
+every even part that occurs in $s$ has multiplicity at least $2$, so the even parts are not
+distinct.
 
 ## Depends on
 

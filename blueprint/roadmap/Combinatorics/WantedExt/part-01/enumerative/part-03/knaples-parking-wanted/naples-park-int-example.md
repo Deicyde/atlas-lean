@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.naplesParkInt_example
 ---
 
-# Naples Park Int example
+# A $2$-Naples parking example on $\mathbb{Z}$
 
-Characteristic example (Figure 1): under the `2`-Naples rule on `ℤ` the cars of
-`(4, 2, 2, 2)` park in spots `4, 2, 1, 0`.
+**A $2$-Naples parking example on $\mathbb{Z}$.** Under the $2$-Naples rule on $\mathbb{Z}$,
+the cars with preferences $(4, 2, 2, 2)$, arriving in order with no spot occupied, park in the
+spots $4, 2, 1, 0$ respectively.
 
 ## Depends on
 
-- [Naples Park Int](naples-park-int.md)
+- [Naples parking on $\mathbb{Z}$](naples-park-int.md)
 
 ## Sources
 

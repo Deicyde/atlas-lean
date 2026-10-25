@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.compositionOddMinusEven
 ---
 
-# Composition Odd Minus Even
+# Signed count of compositions
 
-The signed count `c_o - c_e` of compositions of `N` satisfying `P`: the
-number of odd compositions minus the number of even ones, i.e. the sum of
-`(-1) ^ (length + 1)`.
+**Signed count of compositions.** For a natural number $N$ and a property $P$ of compositions
+of $N$, the signed count of the compositions of $N$ satisfying $P$ is the number of them with an
+odd number of parts minus the number with an even number of parts. Equivalently, it is the sum
+of $(-1)^{\ell(c) + 1}$ over all compositions $c$ of $N$ satisfying $P$, where $\ell(c)$ is the
+number of parts of $c$.
 
 ## Depends on
 

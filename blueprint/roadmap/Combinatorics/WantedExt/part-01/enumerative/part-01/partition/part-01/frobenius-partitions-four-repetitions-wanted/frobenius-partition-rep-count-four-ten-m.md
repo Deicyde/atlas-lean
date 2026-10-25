@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.frobeniusPartitionRepCount_four_ten_mul_add_six_mod_five
 ---
 
-# Frobenius Partition Rep Count four ten mul add six mod five
+# $\varphi_4(10n+6)$ is divisible by $5$
 
-`φ₄(10n + 6) ≡ 0 (mod 5)` for all `n ≥ 0`.
+**$\varphi_4(10n+6)$ is divisible by $5$.** Let $\varphi_4(n)$ be the number of generalized
+Frobenius partitions of $n$ in which each integer appears at most $4$ times in each row. For every
+natural number $n$, $\varphi_4(10n + 6) \equiv 0 \pmod 5$.
 
 ## Depends on
 
-- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
+- [Frobenius partitions with at most $k$ repetitions](frobenius-partition-rep-count.md)
 
 ## Sources
 

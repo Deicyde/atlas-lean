@@ -5,17 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsModEq_triangular_eq_nonnegCrank
 ---
 
-# Sum Distinct Parts Mod Eq triangular eq nonneg Crank
+# Different parts in a residue class and partitions of nonnegative crank
 
-For `0 ≤ r < m`, `∑_{j ≥ 0} (-1)^j a_{r,m}(n - j(j+1)/2) = ∑_{j ≥ 0} (mj + r) C(n - mj - r)`,
-with `C(k)` the number of partitions of `k` with nonnegative crank. Part (ii) of the paper's
-theorem (with `D(k)`, positive crank) is omitted: it is false for this crank because
-`D(1) = 0` while `p(1) - C(1) = 1` (`m = 2`, `r = 1`, `n = 2`: left side `1`, right side `0`).
+**Different parts in a residue class and partitions of nonnegative crank.** Let $m$, $r$ and
+$n$ be natural numbers with $r < m$, and for $k \ge 0$ let $a_{r,m}(k)$ be the sum, over all
+partitions of $k$, of the different parts congruent to $r$ modulo $m$, each counted once per
+partition whatever its multiplicity. Let $C(k)$ be the number of partitions of $k$ whose crank is
+nonnegative. Then
+
+$$\sum_{j \ge 0,\ j(j+1)/2 \le n} (-1)^j a_{r,m}(n - j(j+1)/2)
+= \sum_{j \ge 0,\ mj + r \le n} (mj + r)\, C(n - mj - r).$$
+
+The companion identity of the source with the number $D(k)$ of partitions of $k$ with positive
+crank is not stated: it fails for this crank, since $D(1) = 0$ while $p(1) - C(1) = 1$, where
+$p(k)$ is the number of partitions of $k$ (for $m = 2$, $r = 1$, $n = 2$ its left side is $1$ and
+its right side is $0$).
 
 ## Depends on
 
-- [Partition Crank](partition-crank.md)
-- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
+- [Crank of a partition](partition-crank.md)
+- [Sum of different parts congruent to $r$ modulo $m$](sum-distinct-parts-mod-eq.md)
 
 ## Sources
 

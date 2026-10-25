@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.tableauRowLength
 ---
 
-# Tableau Row Length
+# Row length of a tableau
 
-The length of zero-based row `r` is the number of entries placed in that row.
+**Row length of a tableau.** For a natural number $n$, let $T$ assign to each entry
+$i \in \{0, \dots, n-1\}$ a cell $T(i)$, given by a zero-based row index and a zero-based column
+index, both in $\{0, \dots, n-1\}$. For a natural number $r$, the length of row $r$ is the number
+of entries $i$ whose cell $T(i)$ lies in row $r$.
 
 ## Depends on
 

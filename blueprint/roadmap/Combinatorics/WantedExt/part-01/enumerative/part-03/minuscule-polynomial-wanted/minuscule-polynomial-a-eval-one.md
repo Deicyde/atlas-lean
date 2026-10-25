@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.minusculePolynomialA_eval_one
 ---
 
-# Minuscule Polynomial A eval one
+# Bourn–Erickson formula for the minuscule polynomials at one
 
-`N_n(1) = (n - 1) 2^{2n-3}` for positive `n` (Bourn–Erickson conjecture).
+**Bourn–Erickson formula for the minuscule polynomials at one.** For every integer $n \ge 1$,
+the type-A minuscule polynomial $N_n$ satisfies $N_n(1) = (n - 1)\, 2^{2n-3}$.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

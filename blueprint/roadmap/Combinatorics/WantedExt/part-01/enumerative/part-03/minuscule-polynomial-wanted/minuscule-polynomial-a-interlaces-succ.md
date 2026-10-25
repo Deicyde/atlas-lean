@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.minusculePolynomialA_interlaces_succ
 ---
 
-# Minuscule Polynomial A interlaces succ
+# Interlacing of consecutive minuscule polynomials
 
-Interlacing `N_n ⪯ N_{n+1}`: for `n ≥ 2`, `N_{n+1}` (degree `n`) and `N_n` (degree `n - 1`)
-factor over `ℝ` with real roots `r_0 ≤ ⋯ ≤ r_{n-1}` and `s_0 ≤ ⋯ ≤ s_{n-2}` such that
-`r_j ≤ s_j ≤ r_{j+1}`, which is relation (1.2) of the paper written in increasing order.
+**Interlacing of consecutive minuscule polynomials.** Let $n \ge 2$. There are nonzero real
+numbers $c, d$ and real numbers $r_0 \le \dots \le r_{n-1}$ and $s_0 \le \dots \le s_{n-2}$ such
+that the type-A minuscule polynomials factor over $\mathbb{R}$ as
+$N_{n+1}(x) = c \prod_{i=0}^{n-1} (x - r_i)$ and $N_n(x) = d \prod_{j=0}^{n-2} (x - s_j)$, and
+$r_j \le s_j \le r_{j+1}$ for every $j$ with $0 \le j \le n - 2$.
+
+This is the interlacing $N_n \preceq N_{n+1}$, relation (1.2) of the paper written in increasing
+order.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

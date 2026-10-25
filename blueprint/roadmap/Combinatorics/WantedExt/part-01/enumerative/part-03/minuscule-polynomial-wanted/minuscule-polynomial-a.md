@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.minusculePolynomialA
 ---
 
-# Minuscule Polynomial A
+# Type-A minuscule polynomial
 
-The type-A minuscule polynomial
-`N_n(x) = (1 / (4n + 2)) ∑_{k=1}^{n-1} k (n - k) binom(2n + 2, 2k + 1) x^k`.
-For `n = 0` the sum is empty, so `N_0 = 0`.
+**Type-A minuscule polynomial.** For a natural number $n$, the type-A minuscule polynomial
+$N_n(x)$ is the polynomial with rational coefficients
+
+$$N_n(x) = \frac{1}{4n + 2} \sum_{k=1}^{n-1} k (n - k) \binom{2n + 2}{2k + 1} x^k.$$
+
+For $n = 0$ the sum is empty, so $N_0 = 0$.
 
 ## Depends on
 

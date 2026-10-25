@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_sub_choose_four_pow_div_succ
 ---
 
-# Sum neg one pow sub choose four pow div succ
+# Alternating sum of $\binom{n}{k} 2^{2k}/(k+1)$
 
-`∑ (-1)^{n-k} binom(n,k) 2^{2k}/(k+1) = ∑_{k ≤ n/2} binom(n,2k) 2^{2k}/(2k+1)`.
+**Alternating sum of $\binom{n}{k} 2^{2k}/(k+1)$.** For every natural number $n$, the
+following identity holds in $\mathbb{Q}$:
+
+$$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \frac{2^{2k}}{k+1}
+= \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{2^{2k}}{2k+1}.$$
 
 ## Depends on
 

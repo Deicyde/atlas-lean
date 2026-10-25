@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isWellBased_Icc
 ---
 
-# Is Well Based Icc
+# The set $\{1, \dots, q\}$ is well based
 
-`{1, …, q}` is well based.
+**The set $\{1, \dots, q\}$ is well based.** For every natural number $q$, the set
+$\{1, 2, \dots, q\}$ is well based.
 
 ## Depends on
 
-- [Is Well Based](is-well-based.md)
+- [Well-based sets](is-well-based.md)
 
 ## Sources
 

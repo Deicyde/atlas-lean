@@ -6,22 +6,24 @@ proof: formalized
 lean: MetaMathlibExt.TriangularRecurrence.negNeg_rec
 ---
 
-# Neg Neg rec
+# Recurrence for the negative-negative numbers
 
-Definition 2 recurrence, for `k < n ≤ -2`:
-`a^{NN}_{n,k} = (a^{NN}_{n+1,k+1} - (α(n+1) + β(k+1) + γ) a^{NN}_{n,k+1})
-/ (α'(n+1) + β'(k+1) + γ')`.
+**Recurrence for the negative-negative numbers.** For all parameters
+$(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ and all integers $k < n \le -2$, the
+negative-negative numbers $a^{NN}$ satisfy
+$a^{NN}_{n,k} = (a^{NN}_{n+1,k+1} - (\alpha(n+1) + \beta(k+1) + \gamma)\, a^{NN}_{n,k+1}) /
+(\alpha'(n+1) + \beta'(k+1) + \gamma')$, where division by $0$ gives $0$.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
-- [Neg Neg](neg-neg.md)
-- [Weight](weight.md)
-- [Weight'](weight-2.md)
+- [Triangular recurrence](triangular-recurrence.md)
+- [Negative-negative numbers](neg-neg.md)
+- [First weight of a triangular recurrence](weight.md)
+- [Second weight of a triangular recurrence](weight-2.md)
 
 ## Proof depends on
 
-- [Neg Neg Aux](neg-neg-aux.md)
+- [Negative-negative numbers on and below the diagonal (auxiliary)](neg-neg-aux.md)
 
 ## Sources
 

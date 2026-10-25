@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsShortChordVertex
 ---
 
-# Is Short Chord Vertex
+# Endpoints of short chords
 
-Vertex `i` is an endpoint of a short chord, i.e. of a chord joining adjacent vertices.
+**Endpoints of short chords.** Let $\sigma$ be a map from $\{0, \dots, 2n-1\}$ to itself (for a
+linear chord diagram, vertex $i$ is joined by a chord to $\sigma(i)$). A vertex $i$ is an
+endpoint of a short chord of $\sigma$ when $\sigma(i) = i - 1$ or $\sigma(i) = i + 1$, that is,
+when $i$ is joined to an adjacent vertex.
 
 ## Depends on
 

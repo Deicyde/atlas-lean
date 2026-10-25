@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.arcsinAntiderivQ
 ---
 
-# Arcsin Antideriv Q
+# Zurita's Q-polynomials
 
-The paper's polynomial `Q_l(x) = ∑_{i=0}^l q_i x^i` for `l ≥ 1`, and `Q_0 = 8`.
+**Zurita's Q-polynomials.** For a natural number $l \ge 1$, $Q_l$ is the polynomial with
+rational coefficients $Q_l(x) = \sum_{i=0}^{l} q_i x^i$, where $q_l = -4/l$,
+$q_i = \frac{4i + 6}{i} q_{i+1}$ for $1 \le i < l$, and $q_0 = -12 q_1$. For $l = 0$ it is the
+constant polynomial $Q_0 = 8$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Arcsin Antideriv QCoeff](arcsin-antideriv-qcoeff.md)
+- [Coefficients of Zurita's Q-polynomials](arcsin-antideriv-qcoeff.md)
 
 ## Sources
 

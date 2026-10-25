@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.permWordleGuess_one_of_forall_ne
 ---
 
-# Perm Wordle Guess one of forall ne
+# The second guess against a derangement
 
-For a derangement secret, the second guess is `S[n]⁻¹`.
+**The second guess against a derangement.** Let $S$ be a strategy for permutation Wordle,
+that is, a permutation $S_m$ of $\{0, \dots, m-1\}$ for every $m$, and let $\pi$ be a permutation
+of $\{0, \dots, n-1\}$ with no fixed point. Then the second guess $\gamma_2$ of permutation Wordle
+with strategy $S$ and secret $\pi$ is the inverse permutation $S_n^{-1}$.
 
 ## Depends on
 
-- [Perm Wordle Guess](perm-wordle-guess.md)
+- [Guesses of permutation Wordle](perm-wordle-guess.md)
 
 ## Proof depends on
 
-- [Permute Along](permute-along.md)
-- [Permute Along univ](permute-along-univ.md)
+- [Permuting the entries of a map along a set of positions](permute-along.md)
+- [Permuting along all positions](permute-along-univ.md)
 
 ## Sources
 

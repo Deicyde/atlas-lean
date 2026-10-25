@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Pattern](../../part-04/odd-fibonacci-wanted/has-pattern.md)
+- [Classical pattern containment in a permutation](../../part-04/odd-fibonacci-wanted/has-pattern.md)
 - [Number of double ascents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-ascents.md)
 - [Number of double descents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-descents.md)
 

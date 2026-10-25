@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.mk_fiveCoreCount_mul
 ---
 
-# Mk five Core Count mul
+# Generating function of the 5-core counts
 
-Generating function of `c_5`: `(∑ c_5(n) q^n) f_1 = f_5^5`.
+**Generating function of the 5-core counts.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ and
+let $c_5(n)$ be the coefficient of $q^n$ in $f_5^5 / f_1$. Then, as integer power series,
+$\left(\sum_{n \ge 0} c_5(n) q^n\right) f_1 = f_5^5$, where $f_1$ is written as the pentagonal
+series $\sum_{j \in \mathbb{Z}} (-1)^j q^{j(3j-1)/2}$.
 
 ## Depends on
 
-- [Five Core Count](five-core-count.md)
+- [The 5-core counts](five-core-count.md)
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

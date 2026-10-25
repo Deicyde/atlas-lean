@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.zuritaMCoeff
 ---
 
-# Zurita MCoeff
+# Zurita's coefficients $m_k$
 
-The coefficients `m_k` of `M_{n-1}(x) = ∑_{k=0}^{n-1} m_k x^k`: `m_0 = 2/(2n - 1)` and
-`m_k = 2(k - n)/(2k - 2n + 1) · m_{k-1}` for `1 ≤ k ≤ n - 1`.
+**Zurita's coefficients $m_k$.** For a natural number $n$, the rational numbers
+$m_0, m_1, \dots$ are defined by $m_0 = 2/(2n - 1)$ and
+$m_k = \frac{2(k - n)}{2k - 2n + 1}\, m_{k-1}$ for $k \ge 1$. Zurita's polynomial $M_{n-1}$ is
+$M_{n-1}(x) = \sum_{k=0}^{n-1} m_k x^k$.
 
 ## Depends on
 

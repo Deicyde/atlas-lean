@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsIncreasingCyclePerm
 ---
 
-# Is Increasing Cycle Perm
+# Increasing-cycle permutation
 
-`τ` is the permutation attached to a set partition of `Fin n`: its cycles are the blocks,
-each traversed in increasing order and closed by returning from the largest element to the
-least one. Equivalently, whenever `τ x ≤ x`, the value `τ x` is the least element of the
-cycle of `x`. Set partitions of `Fin n` correspond bijectively to such permutations, and the
-paper counts partitions through this encoding.
+**Increasing-cycle permutation.** A permutation $\tau$ of $\{0, \dots, n-1\}$ is an
+increasing-cycle permutation when, for all $x$ and $y$ in $\{0, \dots, n-1\}$ such that
+$\tau(x) \le x$ and $y$ lies in the same cycle of $\tau$ as $x$, we have $\tau(x) \le y$. That
+is, whenever $\tau(x) \le x$, the value $\tau(x)$ is the least element of the cycle of $x$;
+equivalently, each cycle of $\tau$ runs through its elements in increasing order and returns from
+the largest to the least.
+
+Set partitions of $\{0, \dots, n-1\}$ correspond bijectively to increasing-cycle permutations,
+the blocks being the cycles (fixed points give singleton blocks), and partitions are counted
+through this encoding.
 
 ## Depends on
 

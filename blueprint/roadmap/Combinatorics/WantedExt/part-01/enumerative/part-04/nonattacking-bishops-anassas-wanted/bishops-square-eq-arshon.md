@@ -5,16 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.bishopsSquare_eq_arshon
 ---
 
-# Bishops Square eq arshon
+# Arshon's formula for nonattacking bishops (Kotěšovec's form)
 
-Arshon's formula as refined by Kotěšovec:
-`B_S(m, k) = ∑_{j=0}^{m} ∑_{i=0}^{⌊(m+1)/2⌋} binom(⌊(m+1)/2⌋, i) {i + ⌊m/2⌋, m - j}
-∑_{l=0}^{⌊m/2⌋} binom(⌊m/2⌋, l) {l + ⌊(m+1)/2⌋, m - k + j}`.
+**Arshon's formula for nonattacking bishops (Kotěšovec's form).** For all natural numbers $m$
+and $k$, the number $B_S(m, k)$ of placements of $k$ nonattacking bishops on the $m \times m$
+board satisfies
+
+$$
+B_S(m, k) = \sum_{j=0}^{m} \sum_{i=0}^{\lfloor (m+1)/2 \rfloor}
+\binom{\lfloor (m+1)/2 \rfloor}{i} S\bigl(i + \lfloor m/2 \rfloor, m - j\bigr)
+\sum_{l=0}^{\lfloor m/2 \rfloor} \binom{\lfloor m/2 \rfloor}{l}
+S\bigl(l + \lfloor (m+1)/2 \rfloor, m - k + j\bigr),
+$$
+
+where, for integers $a \ge 0$ and $b$, $S(a, b)$ is the Stirling number of the second kind when
+$b \ge 0$ and $0$ when $b < 0$ (Knuth's extended Stirling numbers of the second kind).
 
 ## Depends on
 
-- [Bishops Square](bishops-square.md)
-- [Ext Stirling Second](ext-stirling-second.md)
+- [Nonattacking bishops on a square board](bishops-square.md)
+- [Extended Stirling numbers of the second kind](ext-stirling-second.md)
 
 ## Sources
 

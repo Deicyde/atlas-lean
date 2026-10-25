@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.card_fixedPerimeterPartitions_three
 ---
 
-# Card fixed Perimeter Partitions three
+# The partitions of perimeter three
 
-There are four partitions with perimeter `3`: `3`, `2 + 1`, `2 + 2`, `1 + 1 + 1`.
+**The partitions of perimeter three.** There are exactly four partitions with perimeter $3$,
+that is, four finite multisets of positive integers whose largest element plus number of elements
+(counted with multiplicity) equals $4$.
+
+They are $3$, $2 + 1$, $2 + 2$ and $1 + 1 + 1$.
 
 ## Depends on
 
-- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
+- [Partitions with fixed perimeter](fixed-perimeter-partitions.md)
 
 ## Sources
 

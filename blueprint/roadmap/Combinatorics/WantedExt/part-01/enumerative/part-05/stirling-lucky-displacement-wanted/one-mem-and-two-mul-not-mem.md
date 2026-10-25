@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsAdmissibleLuckySet.one_mem_and_two_mul_not_mem
 ---
 
-# One mem and two mul not mem
+# Necessary conditions for admissible lucky sets
 
-If `S` is `n`-admissible (`n ≥ 1`), then `1 ∈ S` and `2n ∉ S`.
+**Necessary conditions for admissible lucky sets.** Let $n \ge 1$. If $S$ is an
+$n$-admissible lucky set, then $1 \in S$ and $2n \notin S$.
 
 ## Depends on
 
-- [Is Admissible Lucky Set](is-admissible-lucky-set.md)
+- [Admissible lucky sets](is-admissible-lucky-set.md)
 
 ## Sources
 

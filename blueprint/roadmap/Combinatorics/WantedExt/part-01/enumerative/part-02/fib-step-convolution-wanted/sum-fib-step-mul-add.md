@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_fibStep_mul_add
 ---
 
-# Corollary 4
+# Convolution of the $m$-step Fibonacci numbers with consecutive sums of the $(m+2)$-step ones
 
-**Corollary 4**: for `n ≥ m`,
-`∑_{j=0}^{n-m-1} F⁽ᵐ⁾ⱼ (F⁽ᵐ⁺²⁾_{n-m-j} +
-F⁽ᵐ⁺²⁾_{n-m-j-1}) = F⁽ᵐ⁺²⁾ₙ - F⁽ᵐ⁾ₙ`.
+**Convolution of the $m$-step Fibonacci numbers with consecutive sums of the
+$(m+2)$-step ones.** Write $F^{(m)}_n$ for the Fibonacci $m$-step numbers ($F^{(m)}_0 = 0$,
+$F^{(m)}_1 = 1$, and each later term is the sum of the $m$ terms before it, terms at negative
+indices being $0$). For all natural numbers $m \ge 1$ and $n \ge m$,
+
+$$\sum_{j=0}^{n-m-1} F^{(m)}_j \bigl(F^{(m+2)}_{n-m-j} + F^{(m+2)}_{n-m-j-1}\bigr) =
+F^{(m+2)}_n - F^{(m)}_n.$$
 
 ## Depends on
 
-- [Fib Step](fib-step.md)
+- [Fibonacci $m$-step numbers](fib-step.md)
 
 ## Sources
 

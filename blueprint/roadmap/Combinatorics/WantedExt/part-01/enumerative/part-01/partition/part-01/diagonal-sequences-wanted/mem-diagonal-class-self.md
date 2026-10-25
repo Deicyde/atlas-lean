@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.mem_diagonalClass_self
 ---
 
-# Mem diagonal Class self
+# Every partition lies in its diagonal class
 
-Every partition lies in its own class.
+**Every partition lies in its diagonal class.** For every partition $p$ of $n$, $p$ belongs
+to the diagonal class of $p$, the set of partitions of $n$ whose diagonal sequence equals that
+of $p$.
 
 ## Depends on
 
-- [Diagonal Class](diagonal-class.md)
+- [Diagonal class of a partition](diagonal-class.md)
 
 ## Proof depends on
 
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

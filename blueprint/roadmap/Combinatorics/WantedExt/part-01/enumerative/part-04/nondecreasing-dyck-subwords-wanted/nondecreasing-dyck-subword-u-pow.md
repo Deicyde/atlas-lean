@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.nondecreasingDyck_subword_U_pow
 ---
 
-# Nondecreasing Dyck subword U pow
+# Recurrence for the subword $U^m$ in non-decreasing Dyck paths
 
-Subword `U^m` (`m ≥ 1`) in non-decreasing Dyck paths: for `n > m`,
-`d_{U^m}(n) = 3 d_{U^m}(n-1) - d_{U^m}(n-2) + F_{2(n-m)} + F_{2(n-2)}
-- ∑_{k=1}^{m-2} k F_{2(n-k-2)}`; `d_{U^m}(n) = 0` for `n < m`; and
-`d_{U^m}(m) = 1`. The source writes `n ≤ m` for the vanishing case, which
-contradicts `d_{U^n}(n) = 1` at `n = m`; the vanishing case is stated for
-`n < m`.
+**Recurrence for the subword $U^m$ in non-decreasing Dyck paths.** Let $m \ge 1$. Let
+$d_w(n)$ be the total number of occurrences of the subword $w$ over all non-decreasing Dyck paths
+of semilength $n$, and let $F_k$ be the Fibonacci numbers ($F_0 = 0$, $F_1 = 1$). Then for every
+$n > m$,
+
+$$d_{U^m}(n) = 3\,d_{U^m}(n-1) - d_{U^m}(n-2) + F_{2(n-m)} + F_{2(n-2)} -
+\sum_{k=1}^{m-2} k\,F_{2(n-k-2)}$$
+
+(the sum is empty when $m \le 2$); moreover $d_{U^m}(n) = 0$ for every $n < m$, and
+$d_{U^m}(m) = 1$.
+
+The source writes $n \le m$ for the vanishing case, which contradicts $d_{U^m}(m) = 1$; the
+vanishing case is stated for $n < m$.
 
 ## Depends on
 
-- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
+- [Total occurrences of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-total.md)
 
 ## Sources
 

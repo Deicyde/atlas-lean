@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.restrictedCombinationTotal_singleton_one_four
 ---
 
-# Restricted Combination Total singleton one four
+# Subsets of $\{1, 2, 3, 4\}$ with no two consecutive elements
 
-Characteristic value `S^{1}_4 = F_6 = 8`.
+**Subsets of $\{1, 2, 3, 4\}$ with no two consecutive elements.** There are exactly $8$
+subsets of $\{1, 2, 3, 4\}$ in which no two elements differ by $1$.
+
+This is the case $n = 4$ of the identity $S^{\{1\}}_n = F_{n+2}$, where $S^{\{1\}}_n$ is the
+number of subsets of $\{1, \dots, n\}$ in which no two elements differ by $1$ and $F_m$ is the
+$m$-th Fibonacci number ($F_1 = F_2 = 1$): $F_6 = 8$.
 
 ## Depends on
 
-- [Restricted Combination Total](restricted-combination-total.md)
+- [Number of subsets avoiding a set of differences](restricted-combination-total.md)
 
 ## Sources
 

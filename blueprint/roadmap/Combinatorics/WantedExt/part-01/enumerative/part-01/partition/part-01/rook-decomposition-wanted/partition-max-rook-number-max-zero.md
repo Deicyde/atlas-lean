@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.partitionMaxRookNumberMax_zero
 ---
 
-# Partition Max Rook Number Max zero
+# The convention $F(0) = 1$
 
-The convention `F(0) = 1`.
+**The convention $F(0) = 1$.** The function $F$, whose value $F(n)$ for $n \ge 1$ is the
+largest max-rook number of a partition of $n$, takes the value $F(0) = 1$ at $n = 0$.
 
 ## Depends on
 
-- [Partition Max Rook Number Max](partition-max-rook-number-max.md)
+- [Largest max-rook number among partitions of $n$](partition-max-rook-number-max.md)
 
 ## Sources
 

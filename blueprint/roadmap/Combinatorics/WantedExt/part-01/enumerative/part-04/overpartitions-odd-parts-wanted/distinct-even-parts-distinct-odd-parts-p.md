@@ -6,16 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.distinctEvenParts_distinctOddParts_partsNotTwoModFour_bipartition_zero
 ---
 
-# Distinct Even Parts distinct Odd Parts parts Not Two Mod Four bipartition zero
+# Values at zero of the restricted partition counts
 
-Characteristic values `ped(0) = pod(0) = P_2(0) = q(0) = 1` (the empty partition).
+**Values at zero of the restricted partition counts.** The number $\operatorname{ped}(0)$ of
+partitions of $0$ in which no even part is repeated, the number $\operatorname{pod}(0)$ of
+partitions of $0$ in which no odd part is repeated, the number $P_2(0)$ of partitions of $0$ with
+no part congruent to $2$ modulo $4$, and the number $q(0)$ of ordered pairs of partitions into
+distinct parts with sizes adding up to $0$ are all equal to $1$, as only the empty partition (or
+the pair of empty partitions) is counted.
 
 ## Depends on
 
 - [Distinct Even Parts Count](distinct-even-parts-count.md)
 - [Distinct Odd Parts Count](distinct-odd-parts-count.md)
-- [Distinct Parts Bipartition Count](distinct-parts-bipartition-count.md)
-- [Parts Not Two Mod Four Count](parts-not-two-mod-four-count.md)
+- [Bipartitions into distinct parts](distinct-parts-bipartition-count.md)
+- [Partitions with no part congruent to 2 modulo 4](parts-not-two-mod-four-count.md)
 
 ## Sources
 

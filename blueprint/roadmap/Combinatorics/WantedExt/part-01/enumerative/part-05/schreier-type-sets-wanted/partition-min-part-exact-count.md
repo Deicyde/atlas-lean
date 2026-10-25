@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartExactCount
 ---
 
-# Partition Min Part Exact Count
+# Partitions with a given number of parts, all at least a given size
 
-`|E_{n,ℓ,k}|`: partitions in `E_{n,ℓ}` with exactly `k`
-parts.
+**Partitions with a given number of parts, all at least a given size.** For natural numbers
+$n$, $\ell$ and $k$, $|E_{n,\ell,k}|$ is the number of partitions of $n$ into exactly $k$ parts,
+all of which are at least $\ell$.
 
 ## Depends on
 

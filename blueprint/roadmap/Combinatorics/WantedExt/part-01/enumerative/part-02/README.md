@@ -6,7 +6,7 @@ navigation: transparent
 
 - [Degenerate Harmonic Riordan](degenerate-harmonic-riordan-wanted/README.md)
 - [Delannoy Constructions](delannoy-constructions-wanted/README.md)
-- [Derangement Sum Rule Wanted](sum-mul-num-derangements-eq-floor.md)
+- [A sum rule for derangements](sum-mul-num-derangements-eq-floor.md)
 - [Double Perfect Partitions](double-perfect-partitions-wanted/README.md)
 - [Even Odd Compositions](even-odd-compositions-wanted/README.md)
 - [Fib Step Convolution](fib-step-convolution-wanted/README.md)

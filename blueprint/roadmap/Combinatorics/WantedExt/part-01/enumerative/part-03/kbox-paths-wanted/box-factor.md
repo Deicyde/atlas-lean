@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.boxFactor
 ---
 
-# Box Factor
+# The $k$-box factor
 
-The factor `U D^k L`.
+**The $k$-box factor.** For $k \ge 0$, the $k$-box factor is the word $U D^k L$ in the skew
+Dyck steps: one step $U$, then $k$ steps $D$, then one step $L$.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
+- [Skew Dyck steps](skew-dyck-step.md)
 
 ## Sources
 

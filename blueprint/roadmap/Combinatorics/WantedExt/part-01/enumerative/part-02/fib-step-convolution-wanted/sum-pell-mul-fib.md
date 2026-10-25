@@ -5,14 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_pell_mul_fib
 ---
 
-# Corollary 22
+# Convolution of the Pell numbers with the Fibonacci numbers
 
-**Corollary 22**:
-`∑_{j=0}^n 𝒫_j F_{n-j} = 𝒫ₙ - Fₙ`.
+**Convolution of the Pell numbers with the Fibonacci numbers.** Let $\mathcal{P}_j$ be the
+Pell numbers ($\mathcal{P}_0 = 0$, $\mathcal{P}_1 = 1$,
+$\mathcal{P}_{j+2} = 2\mathcal{P}_{j+1} + \mathcal{P}_j$) and $F_j$ the Fibonacci numbers
+($F_0 = 0$, $F_1 = 1$, $F_{j+2} = F_{j+1} + F_j$), that is, the Fibonacci $2$-step numbers. For
+every natural number $n$,
+
+$$\sum_{j=0}^{n} \mathcal{P}_j \, F_{n-j} = \mathcal{P}_n - F_n.$$
 
 ## Depends on
 
-- [Fib Step](fib-step.md)
+- [Fibonacci $m$-step numbers](fib-step.md)
 - [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-09/pell-number.md)
 
 ## Sources

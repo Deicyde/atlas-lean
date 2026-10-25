@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.multifoldDiamondCount_two_one_two
 ---
 
-# Multifold Diamond Count two one two
+# Two-fold diamonds with fold sum 1 and link sum 2
 
-Small value: two `2`-fold diamonds of length `1` with fold sum `1` and link sum `2`.
+**Two-fold diamonds with fold sum 1 and link sum 2.** There are exactly two multifold
+partition diamonds of shape $(2)$ with fold sum $1$ and link sum $2$. Equivalently, there are
+exactly two quadruples $(b_0, b_1, b_2, b_3)$ of nonnegative integers with $b_0 \le b_f \le b_3$
+for $f = 1, 2$, $b_1 + b_2 = 1$ and $b_0 + b_3 = 2$.
 
 ## Depends on
 
-- [Multifold Diamond Count](multifold-diamond-count.md)
+- [Number of multifold partition diamonds](multifold-diamond-count.md)
 
 ## Sources
 

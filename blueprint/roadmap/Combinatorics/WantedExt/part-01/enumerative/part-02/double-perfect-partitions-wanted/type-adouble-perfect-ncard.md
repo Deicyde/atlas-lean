@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.typeADoublePerfect_ncard
 ---
 
-# Type ADouble Perfect ncard
+# Number of Type-A double-perfect partitions
 
-The number `d_r(N)` of Type-A double-perfect partitions of `N` of order `r`,
-`1 ≤ r ≤ ⌊(N-2)/2⌋`: with `M = 2(r+1)`, `d_r(N)` is
-`f(N-r) - f((N-r)/M) - (f(r+1) - 1) f((N-r)/(r+1))` if `N ≡ r (mod M)`,
-`f(N-r) - (f(r+1) - 1) f((N-r)/(r+1))` if `N ≡ -1 (mod M)`, and `f(N-r)` otherwise. The record's
-range `⌊(n-2)/2⌋` is read with `n = N`. The special cases (19), (20) for `r = 2, 3` are omitted.
+**Number of Type-A double-perfect partitions.** Let $f(n)$ be the number of ordered
+factorizations of $n$ into factors greater than $1$. Let $r \ge 1$ and $N \ge 2(r+1)$, that is,
+$1 \le r \le \lfloor (N-2)/2 \rfloor$, and put $M = 2(r+1)$. The number $d_r(N)$ of Type-A
+double-perfect partitions of $N$ of order $r$ is
+$f(N-r) - f((N-r)/M) - (f(r+1) - 1) f((N-r)/(r+1))$ if $N \equiv r \pmod M$,
+$f(N-r) - (f(r+1) - 1) f((N-r)/(r+1))$ if $N \equiv -1 \pmod M$, and $f(N-r)$ otherwise.
 
 ## Depends on
 
-- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
-- [Ordered Factorization Count](ordered-factorization-count.md)
+- [Type-A double-perfect partition](is-type-adouble-perfect.md)
+- [Number of ordered factorizations](ordered-factorization-count.md)
 
 ## Sources
 

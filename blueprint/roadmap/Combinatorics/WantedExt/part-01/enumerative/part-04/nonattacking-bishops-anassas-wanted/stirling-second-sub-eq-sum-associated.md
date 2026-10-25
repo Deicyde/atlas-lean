@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.stirlingSecond_sub_eq_sum_associated
 ---
 
-# Stirling Second sub eq sum associated
+# Ward's identity for Stirling numbers of the second kind
 
-Ward's identity (7): `{m, m - k} = ∑_{p=0}^{k} {{k + p, p}} binom(m, k + p)` for
-`0 ≤ k ≤ m`.
+**Ward's identity for Stirling numbers of the second kind.** For natural numbers $k \le m$,
+
+$$S(m, m - k) = \sum_{p=0}^{k} S_2(k + p, p) \binom{m}{k + p},$$
+
+where $S$ denotes the Stirling numbers of the second kind and $S_2$ the 2-associated Stirling
+numbers of the second kind.
 
 ## Depends on
 

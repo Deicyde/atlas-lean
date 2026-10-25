@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.PartitionMajorizes
 ---
 
-# Partition Majorizes
+# Majorization of part lists
 
-The paper's majorization: `α ≻ β` iff `∑_{i ≤ k} α_i ≥ ∑_{i ≤ k} β_i` for all
-`1 ≤ k ≤ min {s, t}`, for part lists in decreasing order.
+**Majorization of part lists.** For finite lists $a = (a_1, \dots, a_s)$ and
+$b = (b_1, \dots, b_t)$ of natural numbers, $a$ majorizes $b$, written $a \succ b$, when
+$b_1 + \dots + b_k \le a_1 + \dots + a_k$ for every natural number $k \le \min\{s, t\}$.
+
+No ordering of the lists is required; the source applies majorization to the parts of partitions
+listed in decreasing order.
 
 ## Depends on
 

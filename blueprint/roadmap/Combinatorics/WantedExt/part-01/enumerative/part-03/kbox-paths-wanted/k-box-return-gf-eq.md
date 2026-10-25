@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.kBoxReturnGF_eq
 ---
 
-# K Box Return GF eq
+# Functional equation for the returns generating function
 
-The returns generating function: `F̀_k = t x G_{k+1}^k / (1 - t x G_{k+1}^{k+1})`,
-with the denominator cleared and `G_{k+1}` mapped into `ℤ[t]⟦x⟧`.
+**Functional equation for the returns generating function.** Let $k \ge 1$, let
+$F_k(t, x) \in \mathbb{Z}[t][[x]]$ be the generating function of $k$-box paths of size at least
+$1$ by number of returns (exponent of $t$) and size (exponent of $x$), and let $G_{k+1}(x)$ be
+the generating function of augmented $(k+1)$-Dyck paths by size, viewed in $\mathbb{Z}[t][[x]]$.
+Then
+
+$$\bigl(1 - t x G_{k+1}^{k+1}\bigr) F_k = t x G_{k+1}^k.$$
 
 ## Depends on
 
-- [Augmented KDyck GF](augmented-kdyck-gf.md)
-- [K Box Return GF](k-box-return-gf.md)
+- [Generating function of augmented $k$-Dyck paths](augmented-kdyck-gf.md)
+- [Generating function of $k$-box paths by returns](k-box-return-gf.md)
 
 ## Sources
 

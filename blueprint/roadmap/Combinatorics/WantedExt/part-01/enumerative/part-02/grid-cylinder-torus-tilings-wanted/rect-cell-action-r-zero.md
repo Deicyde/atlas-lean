@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.rectCellAction_r_zero
 ---
 
-# Rect Cell Action r zero
+# Rectangle-group cell action of the identity
 
-`r 0` acts on cells as the identity.
+**Rectangle-group cell action of the identity.** Let $n, m \in \mathbb{N}$, and let $r_i$
+($i \in \mathbb{Z}/4\mathbb{Z}$) denote the rotations of the dihedral group of order $8$. Under the
+rectangle-group action on the cells $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z}$ of the
+$n \times m$ grid, the identity element $r_0$ acts as the identity map.
 
 ## Depends on
 
-- [Rect Cell Action](rect-cell-action.md)
+- [Action of the rectangle group on grid cells](rect-cell-action.md)
 
 ## Sources
 

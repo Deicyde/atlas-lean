@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isWellBased_one_three_four
 ---
 
-# Not is Well Based one three four
+# The set $\{1, 3, 4\}$ is not well based
 
-`{1, 3, 4}` is not well based (`4 = 2 + 2`).
+**The set $\{1, 3, 4\}$ is not well based.** The set $\{1, 3, 4\}$ is not well based: in
+$4 = 2 + 2$ neither part lies in the set.
 
 ## Depends on
 
-- [Is Well Based](is-well-based.md)
+- [Well-based sets](is-well-based.md)
 
 ## Sources
 

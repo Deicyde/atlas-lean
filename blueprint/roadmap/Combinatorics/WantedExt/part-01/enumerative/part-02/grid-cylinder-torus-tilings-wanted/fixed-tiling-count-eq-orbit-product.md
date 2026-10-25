@@ -5,21 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.fixedTilingCount_eq_orbit_product
 ---
 
-# Fixed Tiling Count eq orbit product
+# Fixed tilings as a product over orbits
 
-For a finite cell permutation `φ`, the number of fixed tilings is the product over its
-cyclic orbits `θ` of the number of designs fixed by `σ ^ |θ|`.  `permOrbits` explicitly includes
-fixed one-cycles, addressing the omission of one-cycles from `Equiv.Perm.cycleType`.  Quantifying
-over an arbitrary `σ` generalizes the paper's `R`-set formulation to every action of the single
-element `g`; no order hypothesis is needed for this general orbit formula.
+**Fixed tilings as a product over orbits.** Let $\alpha$ be a finite set of cells, $T$ a
+finite set of tile designs, $\varphi$ a permutation of $\alpha$ and $\sigma$ a permutation of
+$T$. The number of tilings $F : \alpha \to T$ with $F(\varphi(c)) = \sigma(F(c))$ for every
+cell $c$ equals $\prod_{\theta} t(|\theta|)$, where $\theta$ runs over the orbits of $\varphi$
+on $\alpha$, fixed cells included as orbits of size one, and $t(k)$ is the number of designs
+fixed by $\sigma^k$.
 
-Formalization deviation: none beyond the representation choices stated above.
+No order hypothesis on $\sigma$ is needed.
 
 ## Depends on
 
-- [Fixed Tiling Count](fixed-tiling-count.md)
-- [Perm Orbits](perm-orbits.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
+- [Orbits of a permutation](perm-orbits.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.zuritaD
 ---
 
-# Zurita D
+# Zurita's constant $d_n$
 
-The constant `d_n = m_{n-1}/2` (the paper's convention `d_1 = 1` agrees with this formula).
+**Zurita's constant $d_n$.** For a natural number $n$, let $m_0, m_1, \dots$ be Zurita's
+coefficients, given by $m_0 = 2/(2n - 1)$ and $m_k = \frac{2(k - n)}{2k - 2n + 1}\, m_{k-1}$ for
+$k \ge 1$, so that $M_{n-1}(x) = \sum_{k=0}^{n-1} m_k x^k$ for $n \ge 1$. Then $d_n$ is the
+rational number $m_{n-1}/2$ for $n \ge 1$, and $d_0 = m_0/2 = -1$. For $n = 1$ this gives
+$d_1 = 1$, the paper's convention.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zurita MCoeff](zurita-mcoeff.md)
+- [Zurita's coefficients $m_k$](zurita-mcoeff.md)
 
 ## Sources
 

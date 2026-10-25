@@ -5,17 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.degenerateHyperharmonic_alternating_and_binomial_sums
 ---
 
-# Degenerate Hyperharmonic alternating and binomial sums
+# Alternating and binomial sums of degenerate hyperharmonic numbers
 
-Theorem 1: for `n ≥ 0`,
-`∑_{k=0}^n (-1)ᵏ H^{k+1}_{n-k+1,λ}(α) = (-1)ⁿ D_{n,λ} / (α^{n+1} n!)`, and for `r ≥ 0`,
-`∑_{k=0}^n binom(k + r, r) H_{n-k+1,λ}(α) = H^{r+2}_{n+1,λ}(α)`.
+**Alternating and binomial sums of degenerate hyperharmonic numbers.** Let $\lambda > 0$ and
+$\alpha > 0$ be real numbers and let $n$ be a natural number. Write $H_{m,\lambda}(\alpha)$ for the
+generalized degenerate harmonic numbers, $H^s_{m,\lambda}(\alpha)$ for the generalized degenerate
+hyperharmonic numbers of order $s$, and $D_{n,\lambda}$ for the degenerate Daehee numbers. Then
+
+$$
+\sum_{k=0}^{n} (-1)^k H^{k+1}_{n-k+1,\lambda}(\alpha) =
+\frac{(-1)^n D_{n,\lambda}}{\alpha^{n+1}\, n!},
+$$
+
+and for every natural number $r$,
+
+$$
+\sum_{k=0}^{n} \binom{k+r}{r} H_{n-k+1,\lambda}(\alpha) = H^{r+2}_{n+1,\lambda}(\alpha).
+$$
 
 ## Depends on
 
-- [Degenerate Daehee](degenerate-daehee.md)
-- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
-- [Generalized Degenerate Hyperharmonic](generalized-degenerate-hyperharmonic.md)
+- [Degenerate Daehee numbers](degenerate-daehee.md)
+- [Generalized degenerate harmonic numbers](generalized-degenerate-harmonic.md)
+- [Generalized degenerate hyperharmonic numbers](generalized-degenerate-hyperharmonic.md)
 
 ## Sources
 

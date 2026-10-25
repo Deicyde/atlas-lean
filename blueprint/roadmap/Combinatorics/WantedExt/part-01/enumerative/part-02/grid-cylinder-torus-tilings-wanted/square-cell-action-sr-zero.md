@@ -12,8 +12,8 @@ lean: MetaMathlibExt.squareCellAction_sr_zero
 
 ## Depends on
 
-- [Cell F](cell-f.md)
-- [Square Cell Action](square-cell-action.md)
+- [Cell map of the reflection f](cell-f.md)
+- [The dihedral action on the cells of the square grid](square-cell-action.md)
 
 ## Sources
 

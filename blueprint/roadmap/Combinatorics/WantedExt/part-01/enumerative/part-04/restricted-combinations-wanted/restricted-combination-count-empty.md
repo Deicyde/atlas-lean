@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.restrictedCombinationCount_empty
 ---
 
-# Restricted Combination Count empty
+# Restricted combinations with no forbidden differences
 
-With no disallowed differences, `S^{}_{n,k} = (n choose k)`.
+**Restricted combinations with no forbidden differences.** For all natural numbers $n$ and
+$k$, the number $S^{\emptyset}_{n,k}$ of $k$-subsets of $\{1, \dots, n\}$ in which no two
+elements differ by an element of the empty set is the binomial coefficient $\binom{n}{k}$.
 
 ## Depends on
 
-- [Restricted Combination Count](restricted-combination-count.md)
+- [Number of restricted combinations](restricted-combination-count.md)
 
 ## Proof depends on
 
-- [Restricted Combinations](restricted-combinations.md)
+- [Restricted combinations](restricted-combinations.md)
 
 ## Sources
 

@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sabarNumber
 ---
 
-# Sabar Number
+# Sabar's triangle
 
-Sabar's triangle: `s(n, i) = ∑_{j=i+1}^{n} (-1)^{n-j} C(j, i)`, the number of the paper's
-grid paths (OEIS A341091 for `0 ≤ i ≤ n - 1`; it is `0` for `i ≥ n`).
+**Sabar's triangle.** For natural numbers $n$ and $i$, the entry $s(n, i)$ of Sabar's triangle
+is the integer
+
+$$s(n, i) = \sum_{j=i+1}^{n} (-1)^{n-j} \binom{j}{i}.$$
+
+In particular $s(n, i) = 0$ for $i \ge n$, the empty sum.
+
+In the source, $s(n, i)$ counts certain grid paths; for $0 \le i \le n - 1$ these numbers form
+OEIS A341091.
 
 ## Depends on
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.sigmaOdd
 ---
 
-# Sigma Odd
+# Sum of odd divisors
 
-The sum of the odd divisors of `k` (`σ_odd`).
+**Sum of odd divisors.** For a natural number $k$, $\sigma_{\mathrm{odd}}(k)$ is the sum of
+the odd positive divisors of $k$. By convention $\sigma_{\mathrm{odd}}(0) = 0$.
 
 ## Depends on
 

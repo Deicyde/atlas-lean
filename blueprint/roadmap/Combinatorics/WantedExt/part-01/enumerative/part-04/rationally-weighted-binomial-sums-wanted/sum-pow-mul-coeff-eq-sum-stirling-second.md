@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_mul_coeff_eq_sum_stirlingSecond_derivative
 ---
 
-# Sum pow mul coeff eq sum stirling Second derivative
+# Scherk's identity
 
-Scherk's identity: for `f(x) = ∑_{k=0}^N a_k x^k` with real coefficients,
-`∑_{k=0}^N k^r a_k x^k = ∑_{i=0}^r {r, i} x^i f^{(i)}(x)`.
+**Scherk's identity.** Write $S(r, i)$ for the Stirling numbers of the second kind. Let $N$ and
+$r$ be natural numbers, let $a_0, \dots, a_N$ be real numbers, and let $f$ be the polynomial
+$f(y) = \sum_{k=0}^{N} a_k y^k$, with $i$-th derivative $f^{(i)}$. Then for every real number $x$,
+with the convention $0^0 = 1$,
+
+$$\sum_{k=0}^{N} k^r a_k x^k = \sum_{i=0}^{r} S(r, i) \, x^i f^{(i)}(x).$$
 
 ## Depends on
 

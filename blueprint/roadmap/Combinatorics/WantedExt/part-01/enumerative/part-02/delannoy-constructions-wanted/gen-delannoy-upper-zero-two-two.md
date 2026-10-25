@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.DelannoyConstructions.genDelannoyUpper_zero_two_two
 ---
 
-# Gen Delannoy Upper zero two two
+# An upper generalized Delannoy number equal to $13$
 
-Table value `D^0(2, 2) = 13`.
+**An upper generalized Delannoy number equal to $13$.**
+For natural numbers $k$, $m$ and $n$, write
+$D^k(m, n) = \sum_{j=0}^{n} \binom{m + n + k - j}{n + k} \binom{n}{j}$ for the upper
+generalized Delannoy numbers. Then $D^0(2, 2) = 13$.
 
 ## Depends on
 
-- [Gen Delannoy Upper](gen-delannoy-upper.md)
+- [Generalized Delannoy number with upper index](gen-delannoy-upper.md)
 
 ## Sources
 

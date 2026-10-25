@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.mobiusGridPerfectMatchingCount
 ---
 
-# Mobius Grid Perfect Matching Count
+# Number of perfect matchings of the Möbius grid
 
-Number of perfect matchings of the `2 * M`-by-`N` Mobius grid.
+**Number of perfect matchings of the Möbius grid.** For natural numbers $M$ and $N$, this is
+the number of perfect matchings of the $2M \times N$ Möbius grid, counted as sets of labeled
+edges.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Mobius Grid Perfect Matching](is-mobius-grid-perfect-matching.md)
-- [Mobius Grid Edge](mobius-grid-edge.md)
+- [Perfect matchings of the Möbius grid](is-mobius-grid-perfect-matching.md)
+- [Edges of the Möbius grid](mobius-grid-edge.md)
 
 ## Sources
 

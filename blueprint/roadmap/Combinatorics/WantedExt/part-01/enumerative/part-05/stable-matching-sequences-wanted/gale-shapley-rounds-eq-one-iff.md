@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.galeShapleyRounds_eq_one_iff
 ---
 
-# Gale Shapley Rounds eq one iff
+# When the Gale–Shapley algorithm ends in one round
 
-For `n ≥ 1`, the men-proposing Gale–Shapley algorithm ends in one round if
-and only if every woman is the first choice of exactly one man.
+**When the Gale–Shapley algorithm ends in one round.** Let $n \ge 1$ and let $P$ be a
+preference profile for $n$ men and $n$ women. The men-proposing Gale–Shapley algorithm on $P$ ends
+in exactly one round if and only if every woman is the first choice of exactly one man.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
-- [Gale Shapley Rounds](gale-shapley-rounds.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Number of Gale–Shapley rounds](gale-shapley-rounds.md)
 
 ## Sources
 

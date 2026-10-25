@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.bishopsSquare
 ---
 
-# Bishops Square
+# Nonattacking bishops on a square board
 
-`B_S(m, k)`: nonattacking placements of `k` bishops on `S_m`.
+**Nonattacking bishops on a square board.** For natural numbers $m$ and $k$, $B_S(m, k)$ is the
+number of ways to place $k$ nonattacking bishops on the $m \times m$ board $S_m = [1, m]^2$, that
+is, the number of $k$-element subsets of $S_m$ no two of whose squares lie on a common line of
+slope $1$ or $-1$.
 
 ## Depends on
 
@@ -15,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bishop Moves](bishop-moves.md)
-- [Nonattacking Placements](nonattacking-placements.md)
-- [Square Board](square-board.md)
+- [Basic moves of the bishop](bishop-moves.md)
+- [Nonattacking placements](nonattacking-placements.md)
+- [The square board](square-board.md)
 
 ## Sources
 

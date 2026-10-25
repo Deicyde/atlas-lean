@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.parkingFunction_descentSet_card_eq_ascentSet
 ---
 
-# Parking Function descent Set card eq ascent Set
+# Descent sets and ascent sets of parking functions are equidistributed
 
-There is a bijection between parking functions with descent set `I` and parking
-functions with ascent set `I`, stated as equality of the two finite cardinalities.
+**Descent sets and ascent sets of parking functions are equidistributed.** Write a parking
+function $f$ of length $n$ as the sequence $(a_1, \dots, a_n)$ with $a_j = f(j-1) + 1$. Its
+descent set is the set of $j \in \{1, \dots, n-1\}$ with $a_j > a_{j+1}$, and its ascent set the
+set of such $j$ with $a_j < a_{j+1}$. For every $n$ and every $I \subseteq \{1, \dots, n-1\}$, the
+number of parking functions of length $n$ with descent set $I$ equals the number of parking
+functions of length $n$ with ascent set $I$.
 
 ## Depends on
 

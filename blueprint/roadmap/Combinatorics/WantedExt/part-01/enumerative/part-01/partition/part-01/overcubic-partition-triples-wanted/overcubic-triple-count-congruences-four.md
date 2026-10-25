@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.overcubicTripleCount_congruences_four_mul_args
 ---
 
-# Overcubic Triple Count congruences four mul args
+# Congruences for overcubic partition triples at multiples of 4
 
-For all `n, α ≥ 0`: `bt(32n+28) ≡ bt(32n+20) ≡ 0 (mod 16)`, `bt(64n+56) ≡ 0 (mod 8)`,
-`bt(576n+408) ≡ 0 (mod 8)`, `bt(5184n+216) ≡ bt(5184n+3672) ≡ 0 (mod 8)`, and
-`bt(64·81^{α+2} n + 216·81^{α+1}) ≡ 0 (mod 8)`.
+**Congruences for overcubic partition triples at multiples of 4.** Let $\mathrm{bt}(n)$ be the
+number of overcubic partition triples of $n$. For all natural numbers $n$ and $\alpha$, both
+$\mathrm{bt}(32n+28)$ and $\mathrm{bt}(32n+20)$ are divisible by $16$, and each of
+$\mathrm{bt}(64n+56)$, $\mathrm{bt}(576n+408)$, $\mathrm{bt}(5184n+216)$, $\mathrm{bt}(5184n+3672)$
+and $\mathrm{bt}(64 \cdot 81^{\alpha+2} n + 216 \cdot 81^{\alpha+1})$ is divisible by $8$.
 
 ## Depends on
 
-- [Overcubic Triple Count](overcubic-triple-count.md)
+- [Number of overcubic partition triples](overcubic-triple-count.md)
 
 ## Sources
 

@@ -5,15 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.factorial_sq_mul_choose_eq_prod
 ---
 
-# Corollary 15
+# Binomial coefficients from products of Rascal numbers
 
-**Corollary 15**:
-`(1/(m!)²) ∏_{k=1}^m (R_{n,k} - 1) = \binom{n-1}{m}` for
-`1 ≤ m ≤ n`, written cross-multiplied to stay in `ℤ`.
+**Binomial coefficients from products of Rascal numbers.** For natural numbers $n$ and $m$
+with $1 \le m \le n$,
+
+$$(m!)^2 \binom{n-1}{m} = \prod_{k=1}^{m} (R_{n,k} - 1),$$
+
+where $R_{n,k} = k(n-k) + 1$ is the Rascal number for $0 \le k \le n$.
+
+Equivalently, $\frac{1}{(m!)^2} \prod_{k=1}^{m} (R_{n,k} - 1) = \binom{n-1}{m}$.
 
 ## Depends on
 
-- [Rascal Z](rascal-z.md)
+- [Rascal numbers on the integers](rascal-z.md)
 
 ## Sources
 

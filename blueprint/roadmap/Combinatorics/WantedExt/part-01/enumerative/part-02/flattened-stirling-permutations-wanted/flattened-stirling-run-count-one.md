@@ -5,14 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.flattenedStirlingRunCount_one
 ---
 
-# Flattened Stirling Run Count one
+# Exactly one flattened Stirling permutation has one run
 
-For `n ≥ 1`, exactly one flattened Stirling permutation of order `n` has one
-run.
+**Exactly one flattened Stirling permutation has one run.** For every natural number
+$n \ge 1$, exactly one flattened Stirling permutation of order $n$ has exactly one run.
 
 ## Depends on
 
-- [Flattened Stirling Run Count](flattened-stirling-run-count.md)
+- [Counting flattened Stirling permutations by runs](flattened-stirling-run-count.md)
 
 ## Sources
 

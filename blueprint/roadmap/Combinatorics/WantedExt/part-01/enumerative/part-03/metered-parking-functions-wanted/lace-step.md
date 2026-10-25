@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.laceStep
 ---
 
-# Lace Step
+# One step of the lace decomposition
 
-One step of the lace decomposition: append `a` to the last lace if that keeps it a lace
-(`(p)` extends by `p`, `(p, p, p+1, …, e)` extends by `e + 1`), otherwise start a new lace `(a)`.
+**One step of the lace decomposition.** Given a list of blocks (each a list of natural
+numbers) and a natural number $a$: if the last block is $(p)$ with $a = p$, or the last block has
+at least two entries and ends with $e$ where $a = e + 1$, then $a$ is appended to the last block;
+otherwise, including when there is no block, a new block $(a)$ is added at the end.
+
+Applied to a list of laces, where a lace is $(p)$ or $(p, p, p+1, \dots, p+\ell-2)$ for some
+natural number $p$ and some length $\ell \ge 2$, this extends the last lace exactly when the
+result is again a lace.
 
 ## Depends on
 

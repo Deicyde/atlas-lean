@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.motzkinAlternatingSum
 ---
 
-# Motzkin Alternating Sum
+# Alternating sums of Motzkin numbers
 
-The alternating sums of Motzkin numbers `T_n = ∑_{k=0}^n (-1)^{n-k} M_k` (OEIS A187306:
-`1, 0, 2, 2, 7, 14, 37, …`), with `M_k = MetaMathlibExt.motzkinNumber k`.
+**Alternating sums of Motzkin numbers.** Let $M_k$ denote the $k$-th Motzkin number. For a
+natural number $n$, the $n$-th alternating Motzkin sum is the integer
+
+$$T_n = \sum_{k=0}^{n} (-1)^{n-k} M_k.$$
+
+It is OEIS A187306, which begins $1, 0, 2, 2, 7, 14, 37, \dots$
 
 ## Depends on
 

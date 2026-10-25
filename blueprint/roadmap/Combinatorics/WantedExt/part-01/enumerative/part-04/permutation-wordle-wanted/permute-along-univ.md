@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.permuteAlong_univ
 ---
 
-# Permute Along univ
+# Permuting along all positions
 
-On all of `Fin n` (enumerated in its natural order), `permuteAlong` is precomposition with
-`σ⁻¹`.
+**Permuting along all positions.** Let $\sigma$ be a permutation of $\{0, \dots, n-1\}$ and
+let $g$ be a map from $\{0, \dots, n-1\}$ to itself. Applying $\sigma$ to the entries of $g$
+along the set of all positions $\{0, \dots, n-1\}$, listed in increasing order, gives the map
+$g \circ \sigma^{-1}$.
 
 ## Depends on
 
-- [Permute Along](permute-along.md)
+- [Permuting the entries of a map along a set of positions](permute-along.md)
 
 ## Sources
 

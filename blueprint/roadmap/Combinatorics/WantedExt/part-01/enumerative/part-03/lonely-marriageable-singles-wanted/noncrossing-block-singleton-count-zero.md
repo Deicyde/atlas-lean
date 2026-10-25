@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.noncrossingBlockSingletonCount_zero
 ---
 
-# Noncrossing Block Singleton Count zero
+# Base value of the noncrossing block and singleton count
 
-`NC_{0,0,0} = 1`: the empty partition of `[0]` has no blocks.
+**Base value of the noncrossing block and singleton count.** Exactly one noncrossing partition
+of the empty set has $0$ blocks, $0$ of which are singletons, namely the empty partition; that
+is, $NC_{0,0,0} = 1$, where $NC_{n,m,k}$ is the number of noncrossing partitions of
+$\{0, \dots, n-1\}$ with $m$ blocks of which $k$ are singletons.
 
 ## Depends on
 
-- [Noncrossing Block Singleton Count](noncrossing-block-singleton-count.md)
+- [Noncrossing partitions by number of blocks and of singleton blocks](noncrossing-block-singleton-count.md)
 
 ## Proof depends on
 

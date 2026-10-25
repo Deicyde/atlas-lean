@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.psiFiveCoreAnalog_congruences
 ---
 
-# Psi Five Core Analog congruences
+# Congruences for the ψ-analog of the 5-core partition function
 
-Corollary 8: for `k ≥ 2`, `4 b̄_5(5^k(n+3) - 3) ≡ 5 b̄_5(n) - b̄_5(5n+12) (mod 5^k)`,
-and `b̄_5(5^k(20n+18) - 3) ≡ b̄_5(5^k(20n+22) - 3) ≡ 0 (mod (5^k - 1)/4)`.
+**Congruences for the ψ-analog of the 5-core partition function.** Let
+$\bar b_5(n)$ be the coefficient of $q^n$ in $\psi^5(-q^5)/\psi(-q)$, where
+$\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$. For every integer $k \ge 2$ and every natural number
+$n$, $4 \bar b_5(5^k(n+3) - 3) \equiv 5 \bar b_5(n) - \bar b_5(5n+12) \pmod{5^k}$, and both
+$\bar b_5(5^k(20n+18) - 3)$ and $\bar b_5(5^k(20n+22) - 3)$ are divisible by $(5^k - 1)/4$.
 
 ## Depends on
 
-- [Psi Five Core Analog](psi-five-core-analog.md)
+- [The ψ-analog of the 5-core partition function](psi-five-core-analog.md)
 
 ## Sources
 

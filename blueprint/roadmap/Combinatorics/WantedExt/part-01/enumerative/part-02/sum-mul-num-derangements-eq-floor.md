@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_mul_numDerangements_eq_floor
 ---
 
-# Derangement Sum Rule Wanted
+# A sum rule for derangements
 
-For every integer `p ≥ 0`, `∑_{n=0}^{p} n D(n) = ⌊(p + 1)!/e⌋`, where `D(n)` is the number
-of derangements of `n` objects.
+**A sum rule for derangements.** For every natural number $p$,
+$\sum_{n=0}^{p} n\, D(n) = \lfloor (p + 1)!/e \rfloor$, where $D(n)$ is the number of
+derangements of $n$ objects.
 
 ## Depends on
 

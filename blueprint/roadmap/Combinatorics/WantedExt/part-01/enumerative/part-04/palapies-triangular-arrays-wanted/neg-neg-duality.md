@@ -7,15 +7,17 @@ lean: MetaMathlibExt.TriangularRecurrence.negNeg_duality
 
 # Knuth-type duality
 
-**Knuth-type duality**: if `a` and `b` have recurrence schemes
-`(α, β, γ; 0, 0, 1)` and `(β, α, -γ; 0, 0, 1)`, their negative-negative
-continuations satisfy `a^{NN}_{-n,-k} = b^{NN}_{k-1,n-1}` for all `n, k ∈ ℤ`
-(generalizing `[-n, -k] = {k, n}` for Stirling numbers).
+**Knuth-type duality.** For integers $\alpha, \beta, \gamma$, let $a$ and $b$ be the arrays with
+parameters $(\alpha, \beta, \gamma; 0, 0, 1)$ and $(\beta, \alpha, -\gamma; 0, 0, 1)$. Then their
+negative-negative numbers satisfy $a^{NN}_{-n,-k} = b^{NN}_{k-1,n-1}$ for all $n, k \in \mathbb{Z}$.
+
+This generalizes the identity $[-n, -k] = \{k, n\}$ between the Stirling numbers $[n, k]$ of the
+first kind and $\{n, k\}$ of the second kind.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
-- [Neg Neg](neg-neg.md)
+- [Triangular recurrence](triangular-recurrence.md)
+- [Negative-negative numbers](neg-neg.md)
 
 ## Sources
 

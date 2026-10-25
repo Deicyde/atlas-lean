@@ -6,21 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.StableMatchingSequences.soulmatePairCount_le
 ---
 
-# Soulmate Pair Count le
+# A profile has at most $n$ soulmate pairs
 
-A profile has at most `n` soulmate pairs: a man's soulmate is his first
-choice.
+**A profile has at most $n$ soulmate pairs.** Every preference profile for $n$ men and $n$
+women has at most $n$ soulmate pairs, since a man's soulmate is his first choice.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
-- [Soulmate Pair Count](soulmate-pair-count.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Number of soulmate pairs](soulmate-pair-count.md)
 
 ## Proof depends on
 
-- [Is Soulmate Pair](is-soulmate-pair.md)
-- [Man Rank](man-rank.md)
-- [Woman Rank](woman-rank.md)
+- [Soulmate pair](is-soulmate-pair.md)
+- [Rank of a woman for a man](man-rank.md)
+- [A woman's rank of a man](woman-rank.md)
 
 ## Sources
 

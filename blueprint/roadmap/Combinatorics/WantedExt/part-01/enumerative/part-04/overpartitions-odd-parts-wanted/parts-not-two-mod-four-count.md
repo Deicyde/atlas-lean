@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.partsNotTwoModFourCount
 ---
 
-# Parts Not Two Mod Four Count
+# Partitions with no part congruent to 2 modulo 4
 
-`P_2(n)`: the number of partitions of `n` with no part congruent to `2` modulo `4`;
-generating function `(q^2; q^4)_∞ / (q; q)_∞`.
+**Partitions with no part congruent to 2 modulo 4.** For a natural number $n$, $P_2(n)$ is
+the number of partitions of $n$ none of whose parts is congruent to $2$ modulo $4$.
+
+Its generating function is $\sum_{n \ge 0} P_2(n) q^n = (q^2; q^4)_\infty / (q; q)_\infty$.
 
 ## Depends on
 

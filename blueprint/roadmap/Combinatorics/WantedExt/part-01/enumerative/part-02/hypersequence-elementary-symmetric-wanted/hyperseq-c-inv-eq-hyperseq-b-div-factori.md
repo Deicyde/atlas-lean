@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.hyperseqC_inv_eq_hyperseqB_div_factorial
 ---
 
-# Hyperseq C inv eq hyperseq B div factorial
+# The inverse of Parisse's matrix $C(n)$
 
-Theorem 2: `C(n)⁻¹ = D⁻¹ B(n)`, i.e. the lower triangular matrix with entries
-`b_{j,k}(n) / j!` is a two-sided inverse of `C(n) = (c_{ℓ,m}(n))`, where
-`c_{ℓ,m}(n) = ∑_{k=0}^{m} (-1)^k C(m, k) (k + n + 1)^ℓ = p_{ℓ,m}(1, n + 1)`. Both matrices are
-lower triangular, so the products are finite sums over `k ≤ j`.
+**The inverse of Parisse's matrix $C(n)$.** Let $n \in \mathbb{N}$. Let $e_{j,i}(n)$ be the
+elementary symmetric polynomial of degree $i$ in $n + 1, \dots, n + j$, let
+$b_{j,k}(n) = (-1)^k e_{j,j-k}(n)$ for $k \le j$ and $b_{j,k}(n) = 0$ for $k > j$, let
+$p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (k x + y)^\ell$ for complex $x, y$, and let
+$c_{\ell,m}(n) = p_{\ell,m}(1, n + 1) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (k + n + 1)^\ell$.
+Then for all $j, m \in \mathbb{N}$, with $\delta_{j,m}$ the Kronecker delta,
+$\sum_{k=0}^{j} \frac{b_{j,k}(n)}{j!} \, c_{k,m}(n) = \delta_{j,m}$ and
+$\sum_{k=0}^{j} c_{j,k}(n) \, \frac{b_{k,m}(n)}{k!} = \delta_{j,m}$.
+
+In matrix form, with $B(n) = (b_{j,k}(n))$, $C(n) = (c_{\ell,m}(n))$ and $D$ the diagonal matrix
+of the factorials $j!$, this says $C(n)^{-1} = D^{-1} B(n)$; both matrices are lower triangular,
+so each entry of the two products is the finite sum above.
 
 ## Depends on
 
-- [Alternating Binomial Power Sum](../hypersequence-weighted-sums-wanted/alternating-binomial-power-sum.md)
-- [Hyperseq B](hyperseq-b.md)
+- [Alternating binomial power sum](../hypersequence-weighted-sums-wanted/alternating-binomial-power-sum.md)
+- [Parisse's matrix $B(n)$](hyperseq-b.md)
 
 ## Sources
 

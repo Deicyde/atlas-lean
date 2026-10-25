@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.tsum_baseAdic_parametric_multisection
 ---
 
-# Tsum base Adic parametric multisection
+# Parametric base-B multisection of a series
 
-Parametric base-`B` multisection, sum form: for every base `B ≥ 2` and `q : ℂ`,
-`∑_{j ≥ 0, n ≥ 1} (q^j ∑_{k=1}^{B-1} c_{(Bn-k) B^j} - q^j (q - 1) c_{(Bn) B^j})
-= ∑_{m ≥ 1} c_m`, whenever the two regrouped families are summable.
+**Parametric base-B multisection of a series.** Let $B \ge 2$ be a natural number, let $q$
+be a complex number and let $(c_m)_{m \ge 1}$ be a sequence of complex numbers. Suppose that the
+family $q^j c_{(Bn-k) B^j}$ indexed by the triples $(j, n, k)$ with $j \ge 0$, $n \ge 1$ and
+$1 \le k \le B - 1$ is summable, and that the family $q^j (q - 1) c_{Bn \cdot B^j}$ indexed by
+the pairs $(j, n)$ with $j \ge 0$ and $n \ge 1$ is summable. Then
+
+$$\sum_{j \ge 0,\, n \ge 1} \Bigl( q^j \sum_{k=1}^{B-1} c_{(Bn-k) B^j} -
+q^j (q - 1) c_{Bn \cdot B^j} \Bigr) = \sum_{m \ge 1} c_m.$$
 
 ## Depends on
 

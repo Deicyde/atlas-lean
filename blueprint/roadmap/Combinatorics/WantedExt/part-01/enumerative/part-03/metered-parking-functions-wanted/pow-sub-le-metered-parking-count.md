@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pow_sub_le_meteredParkingCount
 ---
 
-# Pow sub le metered Parking Count
+# Lower bound for the number of metered parking functions
 
-`mpf_{m,n}(t) ≥ (n - t)^m` for all `m, n, t`, with truncated subtraction `n - t` in `ℕ`.
+**Lower bound for the number of metered parking functions.** For all natural numbers $t$,
+$m$ and $n$, $\mathrm{mpf}_{m,n}(t) \ge (n - t)^m$, where $n - t$ is truncated subtraction
+(equal to $0$ when $t \ge n$).
 
 ## Depends on
 
-- [Metered Parking Count](metered-parking-count.md)
+- [Number of metered parking functions](metered-parking-count.md)
 
 ## Sources
 

@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.nColor_oddParts_eq_sum_sigmaOdd
 ---
 
-# N Color odd Parts eq sum sigma Odd
+# Number of odd parts in n-color partitions as a divisor sum
 
-Corollary 4: for `m ≥ 1`, `A_o(m) = ∑_{k=1}^{m} σ_odd(k) C(m-k)`, where `A_o(m)` is the
-total number of odd parts over the `n`-color partitions of `m`.
+**Number of odd parts in n-color partitions as a divisor sum.** For $i \ge 0$ let $A_o(i)$ be
+the total number of odd parts (parts of odd size, counted with multiplicity) over the $n$-color
+partitions of $i$, and let $C(i)$ be the number of $n$-color partitions of $i$. Then for every
+$m \ge 1$,
+
+$$
+A_o(m) = \sum_{k=1}^{m} \sigma_{\mathrm{odd}}(k)\, C(m-k),
+$$
+
+where $\sigma_{\mathrm{odd}}(k)$ is the sum of the odd divisors of $k$.
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
-- [Sigma Odd](sigma-odd.md)
+- [n-color partitions](n-color-partitions.md)
+- [Sum of odd divisors](sigma-odd.md)
 
 ## Sources
 

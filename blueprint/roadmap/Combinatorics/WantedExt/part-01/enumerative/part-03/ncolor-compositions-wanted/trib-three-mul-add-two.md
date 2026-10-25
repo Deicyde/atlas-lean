@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.trib_three_mul_add_two
 ---
 
-# Theorem 8
+# Tribonacci partial-sum identity for $t(3k+2)$
 
-**Theorem 8**, case `n = 3k+2`:
-`t(3k+2) = ∑_{i=0}^k (t(3k-3i+1) + t(3k-3i))`.
+**Tribonacci partial-sum identity for $t(3k+2)$.** Let $t$ be the tribonacci numbers with
+$t(0) = 1$, $t(1) = 0$, $t(2) = 1$ and $t(n) = t(n-1) + t(n-2) + t(n-3)$ for $n \ge 3$,
+extended by $t(n) = 0$ for $n < 0$. For every natural number $k$,
+
+$$t(3k+2) = \sum_{i=0}^{k} \bigl(t(3k-3i+1) + t(3k-3i)\bigr).$$
 
 ## Depends on
 
-- [Trib](trib.md)
+- [Hopkins–Wang tribonacci numbers on the integers](trib.md)
 
 ## Sources
 

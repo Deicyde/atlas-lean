@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.stirlingLuckySet_card_eq_iff
 ---
 
-# Stirling Lucky Set card eq iff
+# Characterization of extremely lucky Stirling permutations
 
-`w ∈ Q_n` is extremely lucky (`lucky(w) = n`) if and only if the second
-appearances of the values occur in decreasing order (the subword of second
-appearances is `n ⋯ 2 1`).
+**Characterization of extremely lucky Stirling permutations.** Let $w$ be a Stirling
+permutation of order $n$, read as a parking function of length $2n$. Then $w$ has exactly $n$
+lucky cars if and only if the second occurrences of the letters of $w$ appear in decreasing
+order: for all positions $a < b$ such that $w_a$ also occurs before position $a$ and $w_b$ also
+occurs before position $b$, we have $w_b < w_a$.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 
 ## Sources
 

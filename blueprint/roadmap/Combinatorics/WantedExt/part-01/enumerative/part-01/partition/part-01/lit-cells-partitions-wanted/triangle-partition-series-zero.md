@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.trianglePartitionSeries_zero
 ---
 
-# Triangle Partition Series zero
+# Triangle partition series at zero
 
-`T_q(0) = 1`.
+**Triangle partition series at zero.** The triangle partition series $T_q(r)$ at $r = 0$
+equals $1$, that is, $T_q(0) = 1$ in $\mathbb{Z}[[q]]$.
 
 ## Depends on
 
-- [Triangle Partition Series](triangle-partition-series.md)
+- [Triangle partition series](triangle-partition-series.md)
 
 ## Proof depends on
 
-- [Triangular QBinomial](triangular-qbinomial.md)
-- [Triangular QBinomial zero right](triangular-qbinomial-zero-right.md)
+- [Triangular $q$-binomial coefficient](triangular-qbinomial.md)
+- [Triangular $q$-binomial coefficients with no parts](triangular-qbinomial-zero-right.md)
 
 ## Sources
 

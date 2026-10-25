@@ -5,23 +5,32 @@ statement: formalized
 lean: MetaMathlibExt.diagonalClass_classification_card_le_three
 ---
 
-# Diagonal Class classification card le three
+# Diagonal classes of size at most three
 
-Corollary 7, parts 1–3: the classes of size `1`, `2`, `3`, for a partition `α` of `n ≥ 1`
-with `d = δ(α)`, as multisets of parts.
-(1) `|[d]| = 1`: `n = C(q+1, 2)`, `d = (1, …, q)`, `[d] = {(q, …, 1)}`.
-(2) `|[d]| = 2`: `q ≥ 1`, `k ≥ 2`, `n = C(q+1, 2) + k`, `d = (1, …, q, 1^{(k)})`,
-`[d] = {(q+k, q-1, …, 1), (q, …, 1, 1^{(k)})}`; or `n = 2`, `d = (1, 1)`, `[d] = {(2), (1,1)}`.
-(3) `|[d]| = 3`: `q, k ≥ 2`, `n = C(q+1, 2) + 2k`, `d = (1, …, q, 2^{(k)})`,
-`[d] = {(q+k, q-1+k, q-2, …, 1), (q, …, 3, 2^{(k+1)}, 1), (q+k, q-1, …, 2, 1^{(k+1)})}`; or
-`d = (1, 2, 1)`; or `d = (1, 2, 2)` (with the listed classes).
-Part 4 (`|[d]| = 4`) is false as printed and is not stated (see the audit table).
+**Diagonal classes of size at most three.** Let $\alpha$ be a partition of $n \ge 1$, let
+$d = \delta(\alpha)$ be its diagonal sequence, written without its trailing zeros, and let
+$[\alpha]$ be the set of partitions of $n$ with diagonal sequence $d$, each written by its parts
+in decreasing order. Here $v^{(r)}$ means $r$ copies of $v$, and a run $a, a - 1, \dots, b$ with
+$a < b$ is empty.
+(1) If $|[\alpha]| = 1$, then there is $q \ge 1$ with $n = \binom{q+1}{2}$,
+$d = (1, 2, \dots, q)$ and $[\alpha] = \{(q, q - 1, \dots, 1)\}$.
+(2) If $|[\alpha]| = 2$, then either there are $q \ge 1$ and $k \ge 2$ with
+$n = \binom{q+1}{2} + k$, $d = (1, 2, \dots, q, 1^{(k)})$ and
+$[\alpha] = \{(q + k, q - 1, \dots, 1), (q, q - 1, \dots, 1, 1^{(k)})\}$, or $n = 2$,
+$d = (1, 1)$ and $[\alpha] = \{(2), (1, 1)\}$.
+(3) If $|[\alpha]| = 3$, then either there are $q \ge 2$ and $k \ge 2$ with
+$n = \binom{q+1}{2} + 2k$, $d = (1, 2, \dots, q, 2^{(k)})$ and $[\alpha] = \{(q + k, q - 1 + k,
+q - 2, \dots, 1), (q, q - 1, \dots, 3, 2^{(k+1)}, 1), (q + k, q - 1, \dots, 2, 1^{(k+1)})\}$, or
+$d = (1, 2, 1)$ and $[\alpha] = \{(3, 1), (2, 2), (2, 1, 1)\}$, or $d = (1, 2, 2)$ and
+$[\alpha] = \{(3, 2), (3, 1, 1), (2, 2, 1)\}$.
+
+Part (4) of the corollary, on classes of size $4$, is false as printed and is not included.
 
 ## Depends on
 
-- [Diagonal Class](diagonal-class.md)
-- [Diagonal Of List](diagonal-of-list.md)
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Diagonal class of a partition](diagonal-class.md)
+- [Sequence of a finite list](diagonal-of-list.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

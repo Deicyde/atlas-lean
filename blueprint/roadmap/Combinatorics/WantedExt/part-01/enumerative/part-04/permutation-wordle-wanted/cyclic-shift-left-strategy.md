@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.cyclicShiftLeftStrategy
 ---
 
-# Cyclic Shift Left Strategy
+# Cyclic shift left strategy
 
-The inductive strategy `CSL` of length `n`: left shift `[n, 1, 2, …, n-1]` on `n`
-incorrect positions and right cyclic shift on fewer.
+**Cyclic shift left strategy.** For $n \in \mathbb{N}$, the strategy $\mathrm{CSL}_n$ assigns
+to each $m$ a permutation of $m$ positions: for $m = n$ the left cyclic shift
+$[m, 1, 2, \dots, m-1]$ in one-line notation, that is, $i \mapsto i - 1 \pmod m$, and for every
+$m \ne n$ the right cyclic shift $[2, 3, \dots, m, 1]$, that is, $i \mapsto i + 1 \pmod m$.
 
 ## Depends on
 

@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.rectangularGrid_r2_even
 ---
 
-# Rectangular Grid r2 even
+# Rectangular-grid tilings fixed by the half-turn, $nm$ even
 
-For an even number `nm` of rectangular-grid cells, the half-turn `r²` has only two-cycles,
-so its fixed-tiling count is `|T|^(nm/2)`.  `σ²=1` is the required order-two hypothesis and the
-statement applies to every corresponding `R`-set action.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Rectangular-grid tilings fixed by the half-turn, $nm$ even.** Let $n$ and $m$ be positive
+integers with $nm$ even, let $T$ be a finite set of tiles and let $\sigma$ be a permutation of $T$
+with $\sigma^2 = 1$. Let $r^2$ be the half-turn of $\mathbb{Z}/n \times \mathbb{Z}/m$ given by
+$r^2(x, y) = (-1 - x, -1 - y)$. Then the number of tilings
+$F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with $F(r^2(c)) = \sigma(F(c))$ for every cell $c$
+equals $|T|^{nm/2}$.
 
 ## Depends on
 
-- [Cell R2](cell-r2.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
+- [Cell map of the half-turn r²](cell-r2.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
 
 ## Sources
 

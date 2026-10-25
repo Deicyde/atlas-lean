@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.stirlingLuckySet_small
 ---
 
-# Stirling Lucky Set small
+# Lucky sets of 1122 and 1221
 
-Characteristic values: `Lucky(1122) = {1}` and `Lucky(1221) = {1, 2}`.
+**Lucky sets of 1122 and 1221.** Read as parking functions of length $4$, the Stirling
+permutation $1122$ has car $1$ as its only lucky car, and $1221$ has exactly cars $1$ and $2$
+lucky: $\mathrm{Lucky}(1122) = \{1\}$ and $\mathrm{Lucky}(1221) = \{1, 2\}$.
 
 ## Depends on
 
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 
 ## Sources
 

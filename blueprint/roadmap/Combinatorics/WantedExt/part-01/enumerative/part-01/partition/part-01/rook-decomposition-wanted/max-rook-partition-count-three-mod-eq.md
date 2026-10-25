@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount_three_modEq
 ---
 
-# Max Rook Partition Count three mod Eq
+# Periodicity of $R_3(n)$ modulo $p$
 
-For `n > 9` and `p ≥ 2`, `R_3(n + 3p) ≡ R_3(n) (mod p)`.
+**Periodicity of $R_3(n)$ modulo $p$.** Let $R_3(n)$ be the number of partitions of $n$
+with max-rook number $3$. For all natural numbers $p \ge 2$ and $n > 9$,
+$R_3(n + 3p) \equiv R_3(n) \pmod{p}$.
 
 ## Depends on
 
-- [Max Rook Partition Count](max-rook-partition-count.md)
+- [Partitions with a given max-rook number](max-rook-partition-count.md)
 
 ## Sources
 

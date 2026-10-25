@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsHuangSmallPartPlacement
 ---
 
-# Is Huang Small Part Placement
+# Huang's placement condition for small parts
 
-The restriction on the parts less than `k` in the compositions of
-Theorem 15: every part `a < k` sits at a position `i > 0` whose preceding part
-is at least `k`, and it is followed by a part which is either the last part
-or greater than `k` (so `a` is not itself the last part).
+**Huang's placement condition for small parts.** Let $k$ be a natural number. A finite
+sequence $(a_0, \dots, a_{\ell - 1})$ of natural numbers satisfies the placement condition for $k$
+when every entry $a_i < k$ has a preceding entry and a following entry, the preceding entry
+satisfies $a_{i-1} \ge k$, and the following entry $a_{i+1}$ is either the last entry (that is,
+$i + 2 = \ell$) or satisfies $a_{i+1} > k$.
 
 ## Depends on
 

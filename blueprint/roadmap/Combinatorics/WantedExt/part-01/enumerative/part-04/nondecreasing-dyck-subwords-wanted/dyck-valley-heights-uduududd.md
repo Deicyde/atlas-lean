@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.dyckValleyHeights_UDUUDUDD
 ---
 
-# Dyck Valley Heights UDUUDUDD
+# Valley heights of UDUUDUDD
 
-The path `UDUUDUDD` has valley heights `0, 1`.
+**Valley heights of UDUUDUDD.** The Dyck path $UDUUDUDD$ has exactly two valleys, of heights
+$0$ and $1$ from left to right.
 
 ## Depends on
 
-- [Dyck Valley Heights](dyck-valley-heights.md)
+- [Valley heights](dyck-valley-heights.md)
 
 ## Sources
 

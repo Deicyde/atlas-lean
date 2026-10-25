@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.invSeq_wilf_102_120_101_110_parts_B_C
 ---
 
-# Theorem 10
+# I-Wilf-equivalence of 101 and 110 alongside 102, 120, 210
 
-**Theorem 10**, parts `B` and `C`: with `B_τ = {100, τ, 102, 120, 210}` and
-`C_τ = {τ, 102, 120, 201, 210}`, `B_101 ∼ B_110` and `C_101 ∼ C_110`. Partial: the first part
-`A_101 ∼ A_110` with `A_τ = {100, τ, 102, 120, 201}` is false as printed
-(`|I_6(A_101)| = 206 ≠ 205 = |I_6(A_110)|`) and is omitted.
+**I-Wilf-equivalence of 101 and 110 alongside 102, 120, 210.** Write a length-3 pattern as the
+word of its values, so $101$ is the pattern $(1, 0, 1)$, and for a set $S$ of patterns let
+$|I_n(S)|$ be the number of inversion sequences of length $n$ that avoid every pattern in $S$.
+Let $B_\tau = \{100, \tau, 102, 120, 210\}$ and $C_\tau = \{\tau, 102, 120, 201, 210\}$. Then for
+every $n \ge 0$, $|I_n(B_{101})| = |I_n(B_{110})|$ and $|I_n(C_{101})| = |I_n(C_{110})|$.
+
+The paper's Theorem 10 also claims $|I_n(A_{101})| = |I_n(A_{110})|$ for all $n$, where
+$A_\tau = \{100, \tau, 102, 120, 201\}$; that claim is false, since for $n = 6$ the two counts
+are $206$ and $205$.
 
 ## Depends on
 
-- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
+- [Number of inversion sequences avoiding a set of patterns](inv-seq-avoid-count.md)
 
 ## Sources
 

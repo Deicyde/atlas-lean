@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.squareTorus_r_even
 ---
 
-# Square Torus r even
+# Square-torus fixed points of the rotation $r$, even $n$
 
-For even `n`, the `r` square-torus formula is multiplied through by two.  The second term
-contains `t_r²t_{r²}`, encoded by `(tileFixedCount σ 1)² * tileFixedCount σ 2`; `σ⁴=1` records
-the quarter-turn order.
+**Square-torus fixed points of the rotation $r$, even $n$.** Let $n$ be an even positive
+integer, let $T$ be a finite set of tile designs, and let $\sigma$ be a permutation of $T$ with
+$\sigma^4 = 1$. For $k \ge 1$ let $t_k$ be the number of designs in $T$ fixed by $\sigma^k$. Let
+$r$ be the cell map $(x, y) \mapsto (-1-y, x)$ of $(\mathbb{Z}/n\mathbb{Z})^2$, and let $S$ be the
+sum, over all shifts $v \in (\mathbb{Z}/n\mathbb{Z})^2$, of the number of tilings
+$F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(r(c + v)) = \sigma(F(c))$ for every cell $c$. Then
 
-Formalization deviation: none beyond the representation choices stated above.
+$$2S = n^2 \left( |T|^{n^2/4} + |T|^{(n^2-4)/4} \, t_1^2 \, t_2 \right).$$
 
 ## Depends on
 
-- [Cell R](cell-r.md)
-- [Tile Fixed Count](tile-fixed-count.md)
-- [Torus Shift Sum](torus-shift-sum.md)
+- [Cell map of the quarter-turn r](cell-r.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
+- [Torus shift sum](torus-shift-sum.md)
 
 ## Sources
 

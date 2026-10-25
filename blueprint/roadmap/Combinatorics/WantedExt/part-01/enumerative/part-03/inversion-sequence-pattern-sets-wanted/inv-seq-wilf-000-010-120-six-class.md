@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.invSeq_wilf_000_010_120_six_class
 ---
 
-# Theorem 13
+# Five I-Wilf-equivalent sets of six patterns containing $000$, $010$ and $120$
 
-**Theorem 13.** With `A_τ = {000, 010, 100, 101, 120, τ}`, `B_τ = {000, 010, 100, 110, 120, τ}`
-and `C = {000, 010, 101, 110, 120, 201}`, `A_201 ∼ A_210 ∼ B_201 ∼ B_210 ∼ C` (I-Wilf-equivalence).
+**Five I-Wilf-equivalent sets of six patterns containing $000$, $010$ and $120$.** Write
+length-3 patterns as digit strings ($101$ is the pattern $(1, 0, 1)$) and let $|I_n(B)|$ be the
+number of inversion sequences of length $n$ that avoid every pattern in the set $B$. For a pattern
+$\tau$ let $A_\tau = \{000, 010, 100, 101, 120, \tau\}$ and $B_\tau = \{000, 010, 100, 110, 120,
+\tau\}$, and let $C = \{000, 010, 101, 110, 120, 201\}$. Then for every $n \ge 0$,
+$|I_n(A_{201})| = |I_n(A_{210})| = |I_n(B_{201})| = |I_n(B_{210})| = |I_n(C)|$.
 
 ## Depends on
 
-- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
+- [Number of inversion sequences avoiding a set of patterns](inv-seq-avoid-count.md)
 
 ## Sources
 

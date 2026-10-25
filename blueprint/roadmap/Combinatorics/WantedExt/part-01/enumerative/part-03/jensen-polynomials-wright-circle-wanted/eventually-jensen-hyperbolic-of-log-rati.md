@@ -5,15 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.eventually_jensen_hyperbolic_of_log_ratio_expansion
 ---
 
-# Eventually jensen hyperbolic of log ratio expansion
+# Hyperbolicity of Jensen polynomials from a log-ratio expansion
 
-Let `α`, `A`, `δ` be sequences of positive reals with `δ(n) → 0` (all three positive as
-printed in the quoted theorem), and let `d ≥ 1`. Suppose
-that for `0 ≤ k ≤ d`,
-`log (α(n + k) / α(n)) = A(n) k - δ(n)² k² + ∑_{j=3}^{d} g_j(n) kʲ + o(δ(n)^d)` with
-`g_j(n) = o(δ(n)ʲ)`. Then the Jensen polynomial `J_α^{d,n}` is hyperbolic for all but finitely
-many `n`. The convergence of the renormalized Jensen polynomials to Hermite polynomials is
-omitted.
+**Hyperbolicity of Jensen polynomials from a log-ratio expansion.** Let $\alpha$, $A$ and
+$\delta$ be sequences of positive real numbers indexed by $n \in \mathbb{N}$ with
+$\delta(n) \to 0$, let $d \ge 1$ be an integer, and for $3 \le j \le d$ let $g_j$ be a real
+sequence with $g_j(n) = o(\delta(n)^j)$ as $n \to \infty$. Suppose that for every natural number
+$k \le d$,
+
+$$
+\log \frac{\alpha(n + k)}{\alpha(n)} = A(n) k - \delta(n)^2 k^2 + \sum_{j=3}^{d} g_j(n) k^j +
+o(\delta(n)^d)
+$$
+
+as $n \to \infty$. Then for all sufficiently large $n$ the Jensen polynomial
+$J_\alpha^{d,n}(X) = \sum_{j=0}^{d} \binom{d}{j} \alpha(n + j) X^j$ is hyperbolic: the number of
+its real roots, counted with multiplicity, equals its degree.
+
+The source also proves that suitably renormalized Jensen polynomials converge to the Hermite
+polynomials; that conclusion is not part of this statement.
 
 ## Depends on
 

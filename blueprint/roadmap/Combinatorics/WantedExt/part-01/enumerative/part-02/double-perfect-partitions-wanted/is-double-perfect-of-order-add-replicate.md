@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isDoublePerfectOfOrder_add_replicate
 ---
 
-# Is Double Perfect Of Order add replicate
+# Inserting copies of a part into a double-perfect partition
 
-Inserting `m` copies of `n - r` into a double-perfect partition of `n` of order `r` gives a
-double-perfect partition of `n + m(n - r)` of order `r`. Added hypothesis `n ≥ 2(r+1)` (the
-range of display (12)): for `r = 1`, `n = 2`, `λ = (1^2)` and `m = 2`, `(1^4)` is not
-double-perfect.
+**Inserting copies of a part into a double-perfect partition.** Let $r \ge 1$,
+$n \ge 2(r+1)$, and let $\lambda$ be a double-perfect partition of $n$ of order $r$. For every
+$m \ge 0$, adding $m$ parts equal to $n - r$ to $\lambda$ gives a double-perfect partition of
+$n + m(n - r)$ of order $r$.
+
+The hypothesis $n \ge 2(r+1)$ is needed: for $r = 1$, $(1^2)$ is a double-perfect partition of $2$
+of order $1$, but adding $m = 2$ parts equal to $1$ gives $(1^4)$, which is not double-perfect of
+order $1$.
 
 ## Depends on
 
-- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
+- [Double-perfect partitions of higher order](is-double-perfect-of-order.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.regularTripartitionCount_zero
 ---
 
-# Regular Tripartition Count zero
+# The regular tripartition count at zero
 
-`T_ℓ(0) = 1`: the only tripartition of `0` is the triple of empty partitions.
+**The regular tripartition count at zero.** For every natural number $\ell$, $T_\ell(0) = 1$,
+where $T_\ell(n)$ is the number of $\ell$-regular tripartitions of $n$: the only tripartition of
+$0$ is the triple of empty partitions.
 
 ## Depends on
 
-- [Regular Tripartition Count](regular-tripartition-count.md)
+- [Regular tripartition counts](regular-tripartition-count.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.diagonalNormalForm_four_example
 ---
 
-# Diagonal Normal Form four example
+# Diagonal normal form for $q = 4$ and $s = (1, 1, 0, 2)$
 
-With `q = 4`, `s_4 = 2`, `s_3 = 0`, `s_2 = 1`, `s_1 = 1` the normal form is
-`(1,2,3,4,4,4,2,1)`.
+**Diagonal normal form for $q = 4$ and $s = (1, 1, 0, 2)$.** For $q = 4$ and $s_1 = 1$,
+$s_2 = 1$, $s_3 = 0$, $s_4 = 2$, the diagonal normal form
+$(1, 2, 3, 4, 4^{(s_4)}, 3^{(s_3)}, 2^{(s_2)}, 1^{(s_1)})$, where $v^{(m)}$ denotes $m$ copies
+of $v$, is $(1, 2, 3, 4, 4, 4, 2, 1)$.
 
 ## Depends on
 
-- [Diagonal Normal Form](diagonal-normal-form.md)
+- [Normal form of a diagonal sequence](diagonal-normal-form.md)
 
 ## Sources
 

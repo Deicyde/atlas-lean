@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.gijswijtBlockLength_one
 ---
 
-# Gijswijt Block Length one
+# The first block has length one
 
-`β^{(m)}(1) = 1`.
+**The first block has length one.** For every natural number $m$, the first block length
+$\beta^{(m)}(1)$ of the $m$th order Gijswijt sequence equals $1$.
 
 ## Depends on
 
-- [Gijswijt Block Length](gijswijt-block-length.md)
+- [Block lengths of the higher-order Gijswijt sequences](gijswijt-block-length.md)
 
 ## Sources
 

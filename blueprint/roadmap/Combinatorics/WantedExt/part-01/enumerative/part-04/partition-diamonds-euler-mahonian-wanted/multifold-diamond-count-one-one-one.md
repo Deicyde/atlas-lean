@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.multifoldDiamondCount_one_one_one
 ---
 
-# Multifold Diamond Count one one one
+# Single-fold diamonds with fold sum 1 and link sum 1
 
-Small value: one single-fold diamond `a₁ ≤ a₂ ≤ a₃` with fold sum `1` and link sum `1`.
+**Single-fold diamonds with fold sum 1 and link sum 1.** There is exactly one multifold
+partition diamond of shape $(1)$ with fold sum $1$ and link sum $1$. Equivalently, there is exactly
+one triple of nonnegative integers $b_0 \le b_1 \le b_2$ with $b_1 = 1$ and $b_0 + b_2 = 1$.
 
 ## Depends on
 
-- [Multifold Diamond Count](multifold-diamond-count.md)
+- [Number of multifold partition diamonds](multifold-diamond-count.md)
 
 ## Sources
 

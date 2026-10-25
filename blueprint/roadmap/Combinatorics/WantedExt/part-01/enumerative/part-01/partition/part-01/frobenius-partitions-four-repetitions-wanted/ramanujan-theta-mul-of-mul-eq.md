@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTheta_mul_of_mul_eq
 ---
 
-# Ramanujan Theta mul of mul eq
+# Ramanujan's theta product identity for $ab = cd$
 
-Ramanujan's theta-function identity: if `ab = cd` (with `|ab| < 1`, where `f(a, b)` is
-defined, and `a ≠ 0` so that `c/a`, `d/a` make sense), then
-`f(a,b) f(c,d) = f(ad,bc) f(ac,bd) + a f(c/a, a²bd) f(d/a, a²bc)`, with `f` Ramanujan's general
-theta function `ramanujanThetaRaw` (all six theta arguments have product of modulus `< 1`).
+**Ramanujan's theta product identity for $ab = cd$.** Let
+$f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's general theta
+function. If $a, b, c, d$ are complex numbers with $a \ne 0$, $|ab| < 1$ and $ab = cd$, then
+
+$$f(a,b)\,f(c,d) = f(ad,bc)\,f(ac,bd) + a\,f(c/a, a^2bd)\,f(d/a, a^2bc).$$
+
+In each of the six theta functions the two arguments have product of modulus $|ab|$ or
+$|ab|^2$, which is less than $1$, so every series converges.
 
 ## Depends on
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.alternatingBinomialPowerSum_eq_sum_stirlingSecond
 ---
 
-# Alternating Binomial Power Sum eq sum stirling Second
+# Boyadzhiev's and Katsuura's formulas for alternating binomial power sums
 
-Proposition 1: (i) (Boyadzhiev)
-`p_{ℓ,m}(x, y) = ∑_{j=m}^{ℓ} C(ℓ, j) (-1)^m m! S(j, m) x^j y^{ℓ-j}`; (ii) (Katsuura)
-`p_{ℓ,m}(x, y) = 0` for `ℓ < m` and `p_{m,m}(x, y) = (-1)^m x^m m!`.
+**Boyadzhiev's and Katsuura's formulas for alternating binomial power sums.** Let
+$p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (kx + y)^\ell$ and let $S(j, m)$ denote the
+Stirling numbers of the second kind. For all complex numbers $x, y$ and natural numbers
+$\ell, m$:
+(i) (Boyadzhiev) $p_{\ell,m}(x, y) = \sum_{j=m}^{\ell} \binom{\ell}{j} (-1)^m m!\, S(j, m)\,
+x^j y^{\ell-j}$, where the sum is empty (hence $0$) when $\ell < m$;
+(ii) (Katsuura) if $\ell < m$ then $p_{\ell,m}(x, y) = 0$, and $p_{m,m}(x, y) = (-1)^m x^m m!$.
 
 ## Depends on
 
-- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
+- [Alternating binomial power sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

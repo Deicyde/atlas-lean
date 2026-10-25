@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.coloredDyckPathCount_eq_partialBell
 ---
 
-# Colored Dyck Path Count eq partial Bell
+# Mansour–Sun formula for colored Dyck paths
 
-Mansour and Sun's formula, as recalled by the source:
-`d_{n,k}(γ) = 1/(n-k+1)! · B_{n,k}(1! γ_1, 2! γ_2, …)` for `n ≥ 1`. The exponent
-`n - k + 1` is written `n + 1 - k` in `ℕ`; it truncates only for `k > n + 1`, where
-(as for every `k > n`) both sides vanish because `B_{n,k} = 0`.
+**Mansour–Sun formula for colored Dyck paths.** Let $\gamma = (\gamma_1, \gamma_2, \dots)$ be
+a sequence of natural numbers and let $d_{n,k}(\gamma)$ be the number of Dyck paths of semilength
+$n$ with $k$ peaks in which each block $UD^j$, formed by a peak and the maximal run of $D$ steps
+starting at its $D$, carries one of $\gamma_j$ colors. For every natural number $n \ge 1$ and
+every natural number $k$, as rational numbers,
+
+$$d_{n,k}(\gamma) = \frac{1}{(n+1-k)!} B_{n,k}(1! \, \gamma_1, 2! \, \gamma_2, \dots),$$
+
+where $B_{n,k}$ is the partial Bell polynomial and $n + 1 - k$ is truncated subtraction, which is
+$0$ when $k > n + 1$.
+
+For $k \le n + 1$ the factor is $1/(n-k+1)!$; for every $k > n$ both sides vanish because
+$B_{n,k} = 0$.
 
 ## Depends on
 
-- [Colored Dyck Path Count](colored-dyck-path-count.md)
+- [Number of colored Dyck paths](colored-dyck-path-count.md)
 - [Partial Bell polynomial](../../../../../MathlibExt/part-01/enumerative/part-06/partial-bell-polynomial.md)
 
 ## Sources

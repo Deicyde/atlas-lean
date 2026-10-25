@@ -5,17 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_tailed_kBoxPaths
 ---
 
-# Card tailed k Box Paths
+# Counting tailed $k$-box paths
 
-Tailed `k`-box paths (those ending with `U^{k+1} D^k L`) of size `n` number
-`1/(n-1) · binom((k+2)(n-1), n-2) = 1/((k+2)(n-1)+1) · binom((k+2)(n-1)+1, n-1)`,
-stated with denominators cleared (the first form for `n ≥ 2`). The identification
-with `(k+2)`-ary trees with `n - 1` nodes is not stated.
+**Counting tailed $k$-box paths.** Let $k \ge 1$ and $n \ge 1$, and let $T$ be the number of
+$k$-box paths of size $n$ that end with $U^{k+1} D^k L$. Then
+$((k+2)(n-1)+1) \cdot T = \binom{(k+2)(n-1)+1}{n-1}$, and if $n \ge 2$ then also
+$(n-1) \cdot T = \binom{(k+2)(n-1)}{n-2}$.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
-- [K Box Paths](k-box-paths.md)
+- [Skew Dyck steps](skew-dyck-step.md)
+- [$k$-box paths](k-box-paths.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.distinctEvenParts_triangular_recurrence
 ---
 
-# Distinct Even Parts triangular recurrence
+# Merca's triangular recurrence for partitions with distinct even parts
 
-Merca's triangular recurrence for `ped`: for `n ≥ 0`,
-`∑_{j ≥ 0} (-1)^{⌈j/2⌉} ped(n - j(j+1)/2)` equals `1` if `n = k(k+1)` for some `k ≥ 0` and `0`
-otherwise; `⌈j/2⌉ = ⌊(j+1)/2⌋`.
+**Merca's triangular recurrence for partitions with distinct even parts.** Let
+$\operatorname{ped}(m)$ be the number of partitions of $m$ in which no even part is repeated. For
+every $n \ge 0$, the sum $\sum_{j \ge 0} (-1)^{\lceil j/2 \rceil} \operatorname{ped}(n - j(j+1)/2)$
+over the $j$ with $j(j+1)/2 \le n$ equals $1$ if $n = k(k+1)$ for some integer $k \ge 0$, and $0$
+otherwise.
 
 ## Depends on
 

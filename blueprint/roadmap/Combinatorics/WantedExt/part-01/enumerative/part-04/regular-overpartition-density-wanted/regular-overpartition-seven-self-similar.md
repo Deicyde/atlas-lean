@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.regularOverpartition_seven_self_similarity
 ---
 
-# Regular Overpartition seven self similarity
+# Self-similarity modulo 7 of 7-regular overpartition counts
 
-For all natural `n,k`, `A₇(7^(2k)(4n+3))` is congruent modulo seven to
-`A₇(4n+3)`. Naturals directly encode the paper's nonnegativity hypotheses.
+**Self-similarity modulo 7 of 7-regular overpartition counts.** Write $A_7(m)$ for the number
+of overpartitions of $m$ none of whose parts is divisible by $7$. For all natural numbers $n$
+and $k$, $A_7(7^{2k}(4n+3)) \equiv A_7(4n+3) \pmod 7$.
 
 ## Depends on
 
-- [Regular Overpartition Count](regular-overpartition-count.md)
+- [Number of $\ell$-regular overpartitions](regular-overpartition-count.md)
 
 ## Sources
 

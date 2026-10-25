@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOdd_eq_sum_partsNotTwoModFour_triangular
 ---
 
-# Overpartition Odd eq sum parts Not Two Mod Four triangular
+# Overpartitions into odd parts from partitions with no part congruent to 2 modulo 4
 
-`po(n) = ∑_{k ≥ 0} P_2(n - k(k+1)/2)`. The paper states it for positive `n`; it also holds
-at `n = 0` (both sides `1`), so it is stated for all `n`.
+**Overpartitions into odd parts from partitions with no part congruent to 2 modulo 4.**
+Let $\mathrm{po}(m)$ be the number of overpartitions of $m$ into odd parts and $P_2(m)$ the
+number of partitions of $m$ with no part congruent to $2$ modulo $4$. For every natural
+number $n$, $\mathrm{po}(n) = \sum_k P_2(n - k(k+1)/2)$, the sum running over the natural
+numbers $k$ with $k(k+1)/2 \le n$.
+
+The case $n = 0$ is included: there both sides equal $1$.
 
 ## Depends on
 
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
-- [Parts Not Two Mod Four Count](parts-not-two-mod-four-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
+- [Partitions with no part congruent to 2 modulo 4](parts-not-two-mod-four-count.md)
 
 ## Sources
 

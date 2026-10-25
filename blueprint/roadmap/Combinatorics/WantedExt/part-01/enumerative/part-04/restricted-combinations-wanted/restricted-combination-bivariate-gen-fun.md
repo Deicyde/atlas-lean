@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.restrictedCombination_bivariate_genFun_of_isWellBased
 ---
 
-# Restricted Combination bivariate gen Fun of is Well Based
+# Bivariate generating function for well-based forbidden differences
 
-Corollary 24: if the elements of `Q` (positive integers) form a well-based sequence, then
-`g(x, y) = ∑ S^Q_{n,k} x^n y^k = c / ((1 - x) c - x y)` with `c = 1 + ∑_{q_i ∈ Q} x^{q_i} y`,
-stated with the denominator cleared in `(ℤ[y])⟦x⟧` (`y` is `C Polynomial.X`). The empty
-set, well based under the paper's equivalent definition, is included (`g = 1/(1-x-xy)`).
+**Bivariate generating function for well-based forbidden differences.** Let $Q$ be a finite
+set of positive integers that is well based, and write $S^Q_{n,k}$ for the number of $k$-subsets
+of $\{1, \dots, n\}$ in which no two elements differ by an element of $Q$. In the ring
+$\mathbb{Z}[y][[x]]$ of formal power series in $x$ with coefficients in $\mathbb{Z}[y]$, let
+$g(x, y) = \sum_{n \ge 0} \sum_{k=0}^{n} S^Q_{n,k} \, y^k x^n$ and
+$c = 1 + \sum_{q \in Q} x^q y$. Then $g(x, y) \, \bigl((1 - x) \, c - x y\bigr) = c$; since
+$(1 - x) c - x y$ has constant term $1$, this says $g = c / ((1 - x) c - x y)$.
+
+The empty set counts as well based, so the case $Q = \emptyset$, where $g = 1/(1 - x - xy)$,
+is included.
 
 ## Depends on
 
-- [Is Well Based](is-well-based.md)
-- [Restricted Combination Count](restricted-combination-count.md)
+- [Well-based sets](is-well-based.md)
+- [Number of restricted combinations](restricted-combination-count.md)
 
 ## Sources
 

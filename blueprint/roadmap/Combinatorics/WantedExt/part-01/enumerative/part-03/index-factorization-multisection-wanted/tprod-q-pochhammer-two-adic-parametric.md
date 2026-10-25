@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.tprod_qPochhammer_twoAdic_parametric
 ---
 
-# Tprod q Pochhammer two Adic parametric
+# Parametric 2-adic dissection of the Euler function for real q
 
-Parametric `2`-adic dissection of the Euler function, for real `0 < q < 1` and
-real `p`: `∏_{j ≥ 0} ((q^{2^j}; q^{2^{j+1}})_∞ / (q^{2^{j+1}}; q^{2^{j+1}})_∞^{p-1})^{p^j}
-= (q; q)_∞`.
+**Parametric 2-adic dissection of the Euler function for real q.** Let $q$ and $p$ be real
+numbers with $0 < q < 1$, and write $(a; r)_\infty = \prod_{k \ge 0} (1 - a r^k)$ for real $a$
+and $r$ (an unconditional infinite product). Then, with real exponents $p - 1$ and $p^j$,
+
+$$\prod_{j \ge 0} \left( \frac{(q^{2^j}; q^{2^{j+1}})_\infty}
+{(q^{2^{j+1}}; q^{2^{j+1}})_\infty^{\,p-1}} \right)^{p^j} = (q; q)_\infty.$$
 
 ## Depends on
 

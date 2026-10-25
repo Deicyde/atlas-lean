@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.naplesPark
 ---
 
-# Naples Park
+# Naples parking
 
-Park the cars with preferences `as` in order under the `k`-Naples rule on the spots
-`1, …, n`, starting from the occupied spots `occ`; returns the final occupied spots (most
-recent first), or `none` if some car cannot park.
+**Naples parking.** Starting from a list of occupied spots, cars with preferences
+$a_1, \dots, a_m \in \mathbb{N}$ arrive in order, and each takes the spot given by the $k$-Naples
+rule on the spots $1, \dots, n$ for the spots occupied when it arrives. If every car parks, the
+result is the final list of occupied spots: the spots of the cars, most recent first, followed by
+the initially occupied spots. If some car cannot park, there is no result.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Naples Spot](naples-spot.md)
+- [The $k$-Naples rule](naples-spot.md)
 
 ## Sources
 

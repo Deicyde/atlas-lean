@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.dyckValleyHeights
 ---
 
-# Dyck Valley Heights
+# Valley heights
 
-The heights of the valley vertices of a step list, read from left to right:
-for each factor `DU`, the height reached after its `D`.
+**Valley heights.** For a finite sequence $l$ of up steps $U$ and down steps $D$, the valley
+heights of $l$ form the list with one entry for each factor $DU$ of $l$, from left to right:
+the number of $U$ steps minus the number of $D$ steps in $l$ up to and including the $D$ of
+that factor, taken to be $0$ when negative.
 
 ## Depends on
 

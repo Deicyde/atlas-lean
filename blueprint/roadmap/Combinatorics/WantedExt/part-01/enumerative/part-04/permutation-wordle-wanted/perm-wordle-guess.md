@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.permWordleGuess
 ---
 
-# Perm Wordle Guess
+# Guesses of permutation Wordle
 
-The guess sequence of permutation Wordle: `permWordleGuess S π r` is the paper's
-`γ_{r+1}`; the first guess `γ₁` is the identity.
+**Guesses of permutation Wordle.** Let $S$ be a strategy, that is, a permutation $S_m$ of
+$\{0, \dots, m-1\}$ for every $m$, and let $\pi$ be a permutation of $\{0, \dots, n-1\}$. The
+guesses $\gamma_1, \gamma_2, \dots$ of permutation Wordle with strategy $S$ and secret $\pi$ are
+the maps from $\{0, \dots, n-1\}$ to itself defined recursively: $\gamma_1$ is the identity, and
+$\gamma_{r+1}$ is the guess that one round of the game with strategy $S$ and secret $\pi$
+produces from $\gamma_r$. The sequence is indexed from $0$: its term at index $r$ is
+$\gamma_{r+1}$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Perm Wordle Next Guess](perm-wordle-next-guess.md)
+- [One round of permutation Wordle](perm-wordle-next-guess.md)
 
 ## Sources
 

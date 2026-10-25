@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.regularPartitionCount_of_lt
 ---
 
-# Regular Partition Count of lt
+# For small $n$ every partition is $(\ell, k)$-regular
 
-If `n < ℓ` and `n < k`, every partition of `n` is `(ℓ, k)`-regular, so `b_{ℓ,k}(n) = p(n)`.
+**For small $n$ every partition is $(\ell, k)$-regular.** Let $\ell$, $k$ and $n$ be natural
+numbers with $n < \ell$ and $n < k$, and write $b_{\ell,k}(n)$ for the number of
+$(\ell, k)$-regular partitions of $n$ (partitions none of whose parts is divisible by $\ell$ or by
+$k$) and $p(n)$ for the number of all partitions of $n$. Then every partition of $n$ is
+$(\ell, k)$-regular, so $b_{\ell,k}(n) = p(n)$.
 
 ## Depends on
 
-- [Regular Partition Count](regular-partition-count.md)
+- [Number of $(\ell, k)$-regular partitions](regular-partition-count.md)
 
 ## Sources
 

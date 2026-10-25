@@ -6,14 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.boolRuns_example
 ---
 
-# Bool Runs example
+# Maximal runs of the word $1001100$
 
-The source's example `U (UD) (DU)^2 (UD)^2 (DU)^2 D` has runs
-`p₁ = 1, v₁ = 2, p₂ = 2, v₂ = 2`.
+**Maximal runs of the word $1001100$.** Writing $1$ for true and $0$ for false, the maximal
+runs of the Boolean word $1001100$, listed from left to right as pairs (letter, length), are
+$(1, 1), (0, 2), (1, 2), (0, 2)$.
+
+This word is the block word of the source's example path $U\,(UD)\,(DU)^2\,(UD)^2\,(DU)^2\,D$.
+In the source's factorization $U\,(UD)^{p_1}\,(DU)^{v_1}\,(UD)^{p_2}\,(DU)^{v_2}\,D$ of that path
+into maximal blocks of $1$-peaks $UD$ and $0$-valleys $DU$, the block lengths are $p_1 = 1$,
+$v_1 = 2$, $p_2 = 2$, $v_2 = 2$.
 
 ## Depends on
 
-- [Bool Runs](bool-runs.md)
+- [Maximal runs of a Boolean word](bool-runs.md)
 
 ## Sources
 

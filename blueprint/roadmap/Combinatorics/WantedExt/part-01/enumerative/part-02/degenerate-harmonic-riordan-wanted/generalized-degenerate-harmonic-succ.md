@@ -6,13 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.generalizedDegenerateHarmonic_succ
 ---
 
-# Generalized Degenerate Harmonic succ
+# Recurrence for generalized degenerate harmonic numbers
 
-`H_{n+1,λ}(α) = H_{n,λ}(α) + (-1)ⁿ binom(λ, n + 1) / (λ α^{n+1})`.
+**Recurrence for generalized degenerate harmonic numbers.** For all real numbers $\lambda$ and
+$\alpha$ and every natural number $n$, the generalized degenerate harmonic numbers satisfy
+
+$$
+H_{n+1,\lambda}(\alpha) = H_{n,\lambda}(\alpha) +
+\frac{(-1)^n \binom{\lambda}{n+1}}{\lambda\, \alpha^{n+1}},
+$$
+
+where $\binom{\lambda}{n+1} = \lambda(\lambda - 1)\cdots(\lambda - n)/(n+1)!$.
 
 ## Depends on
 
-- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
+- [Generalized degenerate harmonic numbers](generalized-degenerate-harmonic.md)
 
 ## Sources
 

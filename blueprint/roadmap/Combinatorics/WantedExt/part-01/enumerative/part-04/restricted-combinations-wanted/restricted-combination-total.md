@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.restrictedCombinationTotal
 ---
 
-# Restricted Combination Total
+# Number of subsets avoiding a set of differences
 
-The paper's `S^Q_n`: the number of subsets of `{1, …, n}` with no two elements differing by
-an element of `Q` (a `k`-subset has `k ≤ n`).
+**Number of subsets avoiding a set of differences.** For a finite set $Q$ of natural numbers
+and $n \ge 0$, $S^Q_n$ is the number of subsets of $\{1, \dots, n\}$ in which no two distinct
+elements differ by an element of $Q$. That is, $S^Q_n = \sum_{k=0}^{n} S^Q_{n,k}$, where
+$S^Q_{n,k}$ is the number of such subsets with $k$ elements.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Restricted Combination Count](restricted-combination-count.md)
+- [Number of restricted combinations](restricted-combination-count.md)
 
 ## Sources
 

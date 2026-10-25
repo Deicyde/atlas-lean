@@ -5,14 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sum_mul_kPermFixedPointCount
 ---
 
-# Sum mul k Perm Fixed Point Count
+# Total number of fixed points of permutations with a given number of cycles
 
-Proposition 4 (mean): the mean `μ_{n,k} = n c(n - 1, k - 1) / c(n, k)` of the number of fixed
-points of a uniform `k`-permutation of `[n]`, stated with the denominator `c(n, k)` cleared.
+**Total number of fixed points of permutations with a given number of cycles.** For natural
+numbers $n$, $k$ and $j$, let $a(n, k, j)$ be the number of permutations of an $n$-element set
+with exactly $k$ cycles (fixed points counted as cycles of length one) and exactly $j$ fixed
+points, and let $c(n, k)$ be the unsigned Stirling number of the first kind. Then for every
+natural number $n$ and every $k \ge 1$,
+
+$$\sum_{j=0}^{k} j \, a(n, k, j) = n \, c(n - 1, k - 1),$$
+
+where the right-hand side is read as $0$ when $n = 0$.
+
+Dividing by $c(n, k)$, the number of permutations of an $n$-element set with $k$ cycles, gives the
+mean $\mu_{n,k} = n \, c(n - 1, k - 1) / c(n, k)$ of the number of fixed points of a uniformly
+random such permutation when $n \ge k$.
 
 ## Depends on
 
-- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
+- [Permutations counted by cycles and fixed points](k-perm-fixed-point-count.md)
 
 ## Sources
 

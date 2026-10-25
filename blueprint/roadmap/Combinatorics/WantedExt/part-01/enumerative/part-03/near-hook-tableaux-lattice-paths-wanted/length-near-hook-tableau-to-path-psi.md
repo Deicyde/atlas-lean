@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.length_nearHookTableauToPathPsi
 ---
 
-# Length near Hook Tableau To Path Psi
+# The path $\psi(T)$ has $2n + 2$ steps
 
-`ψ(T)` has `2n + 2` steps.
+**The path $\psi(T)$ has $2n + 2$ steps.** For every $n \in \mathbb{N}$ and every
+semistandard Young tableau $T$ of shape $\theta^{(n)}$, the word $\psi(T)$ has length $2n + 2$.
 
 ## Depends on
 
 - [Near Hook Tableau To Path Psi](near-hook-tableau-to-path-psi.md)
-- [Near Hook Theta](near-hook-theta.md)
+- [The near-hook diagram $\theta^{(n)}$](near-hook-theta.md)
 
 ## Sources
 

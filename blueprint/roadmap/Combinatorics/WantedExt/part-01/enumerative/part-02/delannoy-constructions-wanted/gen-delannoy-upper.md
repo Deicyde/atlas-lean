@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.DelannoyConstructions.genDelannoyUpper
 ---
 
-# Gen Delannoy Upper
+# Generalized Delannoy number with upper index
 
-The generalized Delannoy number `D^k(m, n) = ∑_{j=0}^n C(m + n + k - j, n + k) C(n, j)`.
+**Generalized Delannoy number with upper index.** For natural numbers $k$, $m$ and $n$, the
+generalized Delannoy number $D^k(m, n)$ is the natural number
+
+$$D^k(m, n) = \sum_{j=0}^{n} \binom{m + n + k - j}{n + k} \binom{n}{j}.$$
 
 ## Depends on
 

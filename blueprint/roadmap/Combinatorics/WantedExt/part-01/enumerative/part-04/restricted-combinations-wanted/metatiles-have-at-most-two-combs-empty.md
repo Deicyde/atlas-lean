@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.metatilesHaveAtMostTwoCombs_empty
 ---
 
-# Metatiles Have At Most Two Combs empty
+# For $Q = \emptyset$, metatiles have at most two combs
 
-With `Q = ∅` the comb is a single cell, so no tile straddles a boundary and every metatile
-is a single tile.
+**For $Q = \emptyset$, metatiles have at most two combs.** For $Q = \emptyset$, every metatile
+of every restricted-overlap tiling with squares and $Q$-combs contains at most two combs.
+
+Here the $Q$-comb is a single cell, so no tile straddles a cell boundary and every metatile is a
+single tile.
 
 ## Depends on
 
-- [Metatiles Have At Most Two Combs](metatiles-have-at-most-two-combs.md)
+- [Metatiles with at most two combs](metatiles-have-at-most-two-combs.md)
 
 ## Proof depends on
 
-- [Restricted Overlap Tilings](restricted-overlap-tilings.md)
+- [Restricted-overlap tilings](restricted-overlap-tilings.md)
 
 ## Sources
 

@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.gammaBinom
 ---
 
-# Gamma Binom
+# Generalized binomial coefficient of complex arguments
 
-The generalized binomial coefficient `binom(u, v) = Γ(u+1)/(Γ(v+1)Γ(u-v+1))` of
-complex arguments. Mathlib's `Complex.Gamma` vanishes at the non-positive integers and
-`x / 0 = 0`, so the value is `0` when `v` or `u - v` is a negative integer; for natural
-arguments it is `Nat.choose` (`gammaBinom_natCast`).
+**Generalized binomial coefficient of complex arguments.** For complex numbers $u$ and $v$, the
+generalized binomial coefficient is
+
+$$
+\binom{u}{v} = \frac{\Gamma(u+1)}{\Gamma(v+1)\,\Gamma(u-v+1)},
+$$
+
+where $\Gamma$ is taken to be $0$ at the non-positive integers (its poles) and division by $0$
+gives $0$. In particular $\binom{u}{v} = 0$ whenever $v$ or $u - v$ is a negative integer, and at
+natural arguments $\binom{u}{v}$ is the ordinary binomial coefficient.
 
 ## Depends on
 

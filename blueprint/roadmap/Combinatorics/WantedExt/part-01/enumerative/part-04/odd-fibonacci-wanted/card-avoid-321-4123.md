@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.OddFibonacciWanted.card_avoid_321_4123
 ---
 
-# Proposition 1
+# $(321, 4123)$-avoiding permutations are counted by odd-indexed Fibonacci numbers
 
-**Proposition 1**: `|Sₙ(321, 4123)| = F_{2n-1}`.
+**$(321, 4123)$-avoiding permutations are counted by odd-indexed Fibonacci numbers.** For
+every $n \ge 1$, the number of permutations of $\{0, 1, \dots, n-1\}$ that avoid both patterns
+$321$ and $4123$, that is, contain neither of them, is the Fibonacci number $F_{2n-1}$, where
+$F_0 = 0$ and $F_1 = 1$.
 
 ## Depends on
 
-- [Has Pattern](has-pattern.md)
-- [Pat321](pat321.md)
-- [Pat4123](pat4123.md)
+- [Classical pattern containment in a permutation](has-pattern.md)
+- [The pattern $321$](pat321.md)
+- [The permutation pattern $4123$](pat4123.md)
 
 ## Sources
 

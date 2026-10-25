@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.ascendingNaplesCount_recurrence
 ---
 
-# Ascending Naples Count recurrence
+# Recurrence for ascending $k$-Naples parking functions
 
-Theorem 3: for `n - 1 ≥ k ≥ 1`,
-`I_{n,k} = I_{n,k-1} + C_k ∑_{i=0}^{n-k} I_{i,k-1} U_{n-k-i,k}` and
-`U_{n,k} = U_{n,k-1} + C_k ∑_{i=0}^{n-k} U_{i,k-1} U_{n-k-i,k}`.
+**Recurrence for ascending $k$-Naples parking functions.** Let $I_{n,k}$ be the number of
+weakly increasing $k$-Naples parking functions of length $n$, let $U_{n,k}$ be the number of
+those whose first entry is $1$, and let $C_k$ be the $k$-th Catalan number. For all natural
+numbers $n$ and $k$ with $1 \le k \le n - 1$,
+
+$$I_{n,k} = I_{n,k-1} + C_k \sum_{i=0}^{n-k} I_{i,k-1} \, U_{n-k-i,k}$$
+
+and
+
+$$U_{n,k} = U_{n,k-1} + C_k \sum_{i=0}^{n-k} U_{i,k-1} \, U_{n-k-i,k}.$$
 
 ## Depends on
 
-- [Ascending Naples Count](ascending-naples-count.md)
-- [Ascending Naples One Count](ascending-naples-one-count.md)
+- [Number of ascending $k$-Naples parking functions](ascending-naples-count.md)
+- [Number of ascending $k$-Naples parking functions starting with $1$](ascending-naples-one-count.md)
 
 ## Sources
 

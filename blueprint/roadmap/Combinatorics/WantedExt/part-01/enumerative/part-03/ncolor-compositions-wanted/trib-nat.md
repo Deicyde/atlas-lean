@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.tribNat
 ---
 
-# Trib Nat
+# Tribonacci numbers with initial values $1, 0, 1$
 
-The paper's tribonacci numbers on `ℕ`: `t(0) = 1`,
-`t(1) = 0`, `t(2) = 1`, `t(n) = t(n-1) + t(n-2) + t(n-3)`.
+**Tribonacci numbers with initial values $1, 0, 1$.** The sequence
+$t : \mathbb{N} \to \mathbb{Z}$ with $t(0) = 1$, $t(1) = 0$, $t(2) = 1$ and
+$t(n) = t(n-1) + t(n-2) + t(n-3)$ for $n \ge 3$.
 
 ## Depends on
 

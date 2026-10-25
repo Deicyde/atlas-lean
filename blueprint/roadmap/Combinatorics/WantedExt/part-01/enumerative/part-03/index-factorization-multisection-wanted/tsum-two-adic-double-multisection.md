@@ -5,12 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.tsum_twoAdic_double_multisection
 ---
 
-# Tsum two Adic double multisection
+# Double 2-adic multisection of a double series
 
-Double-indexed `2`-adic multisection, sum form:
-`∑_{p, q ≥ 1} b_{p,q} = ∑_{j, k ≥ 0} ∑_{m, n ≥ 1} 2^{j+k} (b_{(2n-1)2^j, (2m-1)2^k}
-+ b_{(2n)2^j, (2m)2^k} - b_{(2n)2^j, (2m-1)2^k} - b_{(2n-1)2^j, (2m)2^k})`,
-whenever the four weighted families are summable.
+**Double 2-adic multisection of a double series.** Let $(b_{p,q})_{p, q \ge 1}$ be a double
+sequence of complex numbers such that each of the four families
+$2^{j+k} b_{(2n-1) 2^j, (2m-1) 2^k}$, $2^{j+k} b_{(2n) 2^j, (2m) 2^k}$,
+$2^{j+k} b_{(2n) 2^j, (2m-1) 2^k}$ and $2^{j+k} b_{(2n-1) 2^j, (2m) 2^k}$, indexed by the
+quadruples $(j, k, n, m)$ with $j, k \ge 0$ and $n, m \ge 1$, is summable. Then
+
+$$\sum_{p, q \ge 1} b_{p,q} = \sum_{j, k \ge 0,\ n, m \ge 1} 2^{j+k} \bigl(
+b_{(2n-1) 2^j, (2m-1) 2^k} + b_{(2n) 2^j, (2m) 2^k} -
+b_{(2n) 2^j, (2m-1) 2^k} - b_{(2n-1) 2^j, (2m) 2^k} \bigr),$$
+
+where both sides are unconditional sums, over the pairs $(p, q)$ and the quadruples
+$(j, k, n, m)$ respectively.
 
 ## Depends on
 

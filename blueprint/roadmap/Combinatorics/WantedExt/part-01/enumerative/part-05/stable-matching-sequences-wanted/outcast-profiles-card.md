@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.outcast_profiles_card
 ---
 
-# Outcast profiles card
+# Profiles with a pair of outcasts
 
-The number of profiles with at least one pair of outcasts (a man and a
-woman ranked last by every other person of the opposite gender) is
-`n⁴ ((n-1)!)^{2n}` for `n ≠ 2` and `14` for `n = 2`.
+**Profiles with a pair of outcasts.** In a preference profile for $n$ men and $n$ women, a man
+$i$ and a woman $j$ form a pair of outcasts when every man other than $i$ ranks $j$ last and every
+woman other than $j$ ranks $i$ last. The number of preference profiles with at least one pair of
+outcasts is $14$ if $n = 2$ and $n^4 ((n-1)!)^{2n}$ if $n \ne 2$ (this is $0$ for $n = 0$).
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
-- [Man Rank](man-rank.md)
-- [Woman Rank](woman-rank.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Rank of a woman for a man](man-rank.md)
+- [A woman's rank of a man](woman-rank.md)
 
 ## Sources
 

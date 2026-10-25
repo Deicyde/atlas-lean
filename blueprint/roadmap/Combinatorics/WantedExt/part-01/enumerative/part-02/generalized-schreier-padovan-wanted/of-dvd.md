@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.SatisfiesPoly.of_dvd
 ---
 
-# Lemma 5
+# A sequence satisfying a polynomial satisfies its multiples
 
-**Lemma 5.** If a sequence satisfies `P` and `P ∣ Q`, then it satisfies `Q`.
+**A sequence satisfying a polynomial satisfies its multiples.** Let $P$ and $Q$ be real
+polynomials with $P \mid Q$. If a real sequence $(a_n)_{n \ge 0}$ satisfies $P$, then it
+satisfies $Q$.
 
 ## Depends on
 
-- [Satisfies Poly](satisfies-poly.md)
+- [Sequences satisfying a polynomial](satisfies-poly.md)
 
 ## Sources
 

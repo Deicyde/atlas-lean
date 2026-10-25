@@ -5,19 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.tsum_four_pow_div_sub_mul_centralBinom
 ---
 
-# Tsum four pow div sub mul central Binom
+# Zurita's series $\sum_{k > n} 4^k x^k / ((k - n)\binom{2k}{k})$
 
-For `n ≥ 1` and `0 < x < 1`,
-`∑_{k > n} 4^k x^k/((k - n) binom(2k, k)) = x T_{n-2}(x) + √(x/(1 - x)) arcsin(√x) S_n(x)
-+ ∑_{k=0}^{n-1} (1 - 4^k/binom(2k, k)) x^k/(k - n)
-- ((1/2) ∑_{k=1}^n 4^k s_{n-k}/(k binom(2k, k))) x^n`.
-The printed range `|x| < 4` is corrected to `|x| < 1` (Theorem 1's `|x| < 4^{m-1}` at `m = 1`):
-since `binom(2k, k) ≤ 4^k` the series diverges for `x ≥ 1`.
+**Zurita's series $\sum_{k > n} 4^k x^k / ((k - n)\binom{2k}{k})$.** Let $n \ge 1$, let
+$S_n(x) = \sum_{k=0}^n s_k x^k$ and $T_{n-2}$ be Zurita's polynomials (with $T_{-1} = 0$), and
+let $x$ be real with $0 < x < 1$. Then
+
+$$
+\sum_{k > n} \frac{4^k x^k}{(k - n)\binom{2k}{k}} = x\, T_{n-2}(x) +
+\sqrt{\frac{x}{1 - x}}\, \arcsin(\sqrt{x})\, S_n(x) +
+\sum_{k=0}^{n-1} \Bigl(1 - \frac{4^k}{\binom{2k}{k}}\Bigr) \frac{x^k}{k - n} -
+\Bigl(\frac12 \sum_{k=1}^{n} \frac{4^k s_{n-k}}{k \binom{2k}{k}}\Bigr) x^n.
+$$
+
+The source prints the range $|x| < 4$. The statement here is restricted to $0 < x < 1$, inside
+the range $|x| < 1$ that the source's Theorem 1 gives in this case; since
+$\binom{2k}{k} \le 4^k$, the series diverges for $x \ge 1$.
 
 ## Depends on
 
-- [Zurita S](zurita-s.md)
-- [Zurita SCoeff](zurita-scoeff.md)
+- [Zurita's polynomial $S_n$](zurita-s.md)
+- [Coefficients of Zurita's polynomial $S_n$](zurita-scoeff.md)
 - [Zurita T](zurita-t.md)
 
 ## Sources

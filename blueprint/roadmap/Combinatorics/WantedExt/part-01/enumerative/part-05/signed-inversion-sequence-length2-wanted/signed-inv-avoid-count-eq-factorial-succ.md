@@ -5,17 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.signedInvAvoidCount_eq_factorial_succ
 ---
 
-# Lemma 8
+# Eight signed-pattern triples with (n + 1)! avoiders (Lemma 8)
 
-**Lemma 8.** For each of the eight sets `B` in parts (i)–(vii) (`{1̄0̄, 0̄1̄, 0̄0̄}`, `{1̄0̄,
-0̄1̄, 0̄0}`, `{1̄0̄, 0̄1̄, 01̄}`, `{1̄0, 0̄1̄, 01̄}`, `{1̄0, 0̄0, 0̄1}`, `{1̄0̄, 0̄1̄, 00̄}`,
-`{1̄0, 0̄0, 01̄}`, `{1̄0, 00̄, 01̄}`), `|Ī_n(B)| = (n + 1)!` for all `n ≥ 0`. The unbarred `I_n`
-printed in parts (iii) and (iv) is read as `Ī_n`.
+**Eight signed-pattern triples with (n + 1)! avoiders (Lemma 8).** Write a length-2 signed
+pattern as $\tau_1\tau_2$, where $00$, $01$ and $10$ record whether $|\tau_1|$ is equal to, smaller
+than or larger than $|\tau_2|$ and a bar marks a barred letter, and write $|\bar I_n(B)|$ for the
+number of signed inversion sequences of length $n$ avoiding every pattern of a set $B$ of such
+patterns. For every $n \ge 0$ and each of the eight sets
+$B = \lbrace \bar 1\bar 0, \bar 0\bar 1, \bar 0\bar 0 \rbrace$,
+$\lbrace \bar 1\bar 0, \bar 0\bar 1, \bar 0 0 \rbrace$,
+$\lbrace \bar 1\bar 0, \bar 0\bar 1, 0\bar 1 \rbrace$,
+$\lbrace \bar 1 0, \bar 0\bar 1, 0\bar 1 \rbrace$,
+$\lbrace \bar 1 0, \bar 0 0, \bar 0 1 \rbrace$,
+$\lbrace \bar 1\bar 0, \bar 0\bar 1, 0\bar 0 \rbrace$,
+$\lbrace \bar 1 0, \bar 0 0, 0\bar 1 \rbrace$ and
+$\lbrace \bar 1 0, 0\bar 0, 0\bar 1 \rbrace$, we have $|\bar I_n(B)| = (n+1)!$.
+
+The source prints an unbarred $I_n$ in parts (iii) and (iv); it is read as $\bar I_n$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.skewFactorCount
 ---
 
-# Skew Factor Count
+# Occurrences of a factor in a skew Dyck word
 
-The number of occurrences of the factor `f` in `w` (contiguous, overlaps
-counted).
+**Occurrences of a factor in a skew Dyck word.** For words $f$ and $w$ over the skew Dyck
+steps $U$, $D$, $L$, the factor count of $f$ in $w$ is the number of suffixes of $w$, including
+$w$ itself and the empty suffix, that begin with $f$. Equivalently, it is the number of positions
+of $w$ at which an occurrence of $f$ as a contiguous block starts, overlapping occurrences all
+being counted; in particular the empty word has factor count $|w| + 1$ in $w$.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
+- [Skew Dyck steps](skew-dyck-step.md)
 
 ## Sources
 

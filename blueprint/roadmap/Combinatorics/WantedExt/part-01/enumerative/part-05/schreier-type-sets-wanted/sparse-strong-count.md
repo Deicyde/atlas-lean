@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.sparseStrongCount
 ---
 
-# Sparse Strong Count
+# Number of sparse strong Schreier sets with maximum $n$
 
-`|A_{n,ℓ}|`: sparse `ℓ`-strong Schreier sets
-`A ⊆ {1, …, n}` with `n ∈ A`.
+**Number of sparse strong Schreier sets with maximum $n$.** For natural numbers $n$ and
+$\ell$, $|A_{n,\ell}|$ is the number of sets $A \subseteq \{1, \dots, n\}$ with $n \in A$ that
+are sparse and $\ell$-strong Schreier.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Sparse](is-sparse.md)
-- [Is Strong Schreier](is-strong-schreier.md)
+- [Sparse sets](is-sparse.md)
+- [Strong Schreier sets](is-strong-schreier.md)
 
 ## Sources
 

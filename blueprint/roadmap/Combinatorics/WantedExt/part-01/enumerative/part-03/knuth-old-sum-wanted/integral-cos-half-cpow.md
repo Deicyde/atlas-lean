@@ -5,14 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.integral_cos_half_cpow
 ---
 
-# Integral cos half cpow
+# Integral of a complex power of $\cos(x/2)$ over $(0, \pi)$
 
-`∫₀^π cos^u(x/2) dx = 2^{-u} π binom(u, u/2)` for `ℜu > -1` (equation (8), first
-equality).
+**Integral of a complex power of $\cos(x/2)$ over $[0, \pi]$.** For every complex number $u$
+with $\operatorname{Re} u > -1$,
+
+$$
+\int_0^\pi \cos(x/2)^u \, dx = 2^{-u} \pi \binom{u}{u/2},
+$$
+
+where $\cos(x/2)^u$ is the principal complex power of the nonnegative real $\cos(x/2)$ and
+$\binom{a}{b} = \Gamma(a+1)/(\Gamma(b+1)\,\Gamma(a-b+1))$ is the generalized binomial coefficient
+of complex arguments.
+
+This is the first equality of equation (8) of the source.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

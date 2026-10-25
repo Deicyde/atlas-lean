@@ -12,9 +12,9 @@ forbidden) is `L_n`.
 
 ## Depends on
 
-- [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
-- [Lanes Meet](lanes-meet.md)
-- [Lonely Singles Count](lonely-singles-count.md)
+- [Maximal set of lanes](is-maximal-set-of-lanes.md)
+- [Lanes with a common point](lanes-meet.md)
+- [Number of lonely singles partitions](lonely-singles-count.md)
 
 ## Sources
 

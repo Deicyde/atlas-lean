@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.TriangularRecurrence.negNegAux
 ---
 
-# Neg Neg Aux
+# Negative-negative numbers on and below the diagonal (auxiliary)
 
-Auxiliary for `negNeg`: the value at row `n = -(p + 1)` and column `n - q`.
+**Negative-negative numbers on and below the diagonal (auxiliary).** For integer parameters
+$(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ and $p, q \ge 0$, put $n = -(p + 1)$ and
+$k = n - q$. The rational numbers $b_{p,q}$ are defined by recursion on $p$ and then on $q$ through
+$b_{p,q} = (c - (\alpha(n+1) + \beta(k+1) + \gamma)\, e) / (\alpha'(n+1) + \beta'(k+1) + \gamma')$,
+where $c = b_{p-1,q}$ if $p \ge 1$, $c = 1$ if $p = q = 0$, and $c = 0$ if $p = 0 < q$; and
+$e = b_{p,q-1}$ if $q \ge 1$, $e = 0$ if $q = 0$. Division by $0$ gives $0$.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
+- [Triangular recurrence](triangular-recurrence.md)
 
 ## Proof depends on
 
-- [Weight](weight.md)
-- [Weight'](weight-2.md)
+- [First weight of a triangular recurrence](weight.md)
+- [Second weight of a triangular recurrence](weight-2.md)
 
 ## Sources
 

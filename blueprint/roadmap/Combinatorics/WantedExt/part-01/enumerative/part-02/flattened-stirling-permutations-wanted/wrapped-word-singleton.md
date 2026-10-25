@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.wrappedWord_singleton
 ---
 
-# Wrapped Word singleton
+# Wrapped word of a singleton
 
-`g({s}) = s s`.
+**Wrapped word of a singleton.** For every natural number $s$, the wrapped word of the
+singleton $\{s\}$ is $g(\{s\}) = s\,s$, the word of length two both of whose letters are $s$.
 
 ## Depends on
 
-- [Wrapped Word](wrapped-word.md)
+- [Wrapped word of a finite set](wrapped-word.md)
 
 ## Sources
 

@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.pondCount_generatingFunction
 ---
 
-# Pond Count generating Function
+# Generating function for POND partitions
 
-`∑ pond(n) q^n = f_4 f_6^2 / (f_2^2 f_3 f_12)`, stated with the denominator cleared.
+**Generating function for POND partitions.** Let $\mathrm{pond}(n)$ be the number of POND
+partitions of $n$, and let $f_k = \prod_{m \ge 1} (1 - q^{km})$. Then, as integer power series
+in $q$, $f_2^2 f_3 f_{12} \sum_{n \ge 0} \mathrm{pond}(n) q^n = f_4 f_6^2$. This is the identity
+$\sum_{n \ge 0} \mathrm{pond}(n) q^n = f_4 f_6^2 / (f_2^2 f_3 f_{12})$ with the denominator
+cleared.
 
 ## Depends on
 
-- [Pond Count](pond-count.md)
+- [Number of POND partitions](pond-count.md)
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

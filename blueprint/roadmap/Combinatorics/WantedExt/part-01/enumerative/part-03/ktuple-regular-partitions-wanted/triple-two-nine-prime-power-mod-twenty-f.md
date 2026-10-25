@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.tripleTwo_nine_primePower_mod_twentyFour
 ---
 
-# Triple Two nine prime Power mod twenty Four
+# Prime-power congruences modulo 24 for triples of 2-regular partitions
 
-Corollary 2: for prime `p ≡ 3,5,7 (mod 8)` with `p ≠ 3`, and naturals `n, α`
-with `p ∤ n`, the value `T₂(9p^(2α+1)n + (9p^(2α+2)-1)/8)` is zero modulo 24.
-Natural types encode nonnegativity, and the quotient is exact under the odd-residue
-hypothesis; no extra divisibility premise is added.
+**Prime-power congruences modulo 24 for triples of 2-regular partitions.** Let $T_2(n)$ be
+the number of triples of 2-regular partitions (partitions with no even part) whose sizes add up
+to $n$. Let $p \ne 3$ be a prime with $p \equiv 3$, $5$ or $7 \pmod 8$. Then for all natural
+numbers $n$ and $\alpha$ with $p \nmid n$,
+
+$$T_2\left(9 p^{2\alpha+1} n + \frac{9 p^{2\alpha+2} - 1}{8}\right) \equiv 0 \pmod{24}.$$
+
+Since $p$ is odd, the fraction is an integer.
 
 ## Depends on
 
-- [Triple Regular Partition Count](triple-regular-partition-count.md)
+- [Triples of $\ell$-regular partitions](triple-regular-partition-count.md)
 
 ## Sources
 

@@ -5,25 +5,38 @@ statement: formalized
 lean: MetaMathlibExt.fixedColumnHook_hook_oddDistinct_genFun_even
 ---
 
-# Fixed Column Hook hook odd Distinct gen Fun even
+# Fixed column hooks of size $k$ in odd distinct partitions, even column
 
-For even `m`, the generating function for the number of odd distinct partitions of `n` with
-an `h`-fixed hook in the `m`th column arising from a hook of size `k` is
-`Σ_{l=⌈2k/3⌉, l even}^{k} q^{k-l+(m-1)(2k-h-l)+k+l(k-h-1)+2C(k-h, 2)+2C(k-l, 2)}
- (-q; q²)_{m/2}/(q²; q²)_{k-h-1} [k-l+(3l-2k-2)/2, k-l]_{q²}`.
+**Fixed column hooks of size $k$ in odd distinct partitions, even column.** Let $n$, $m$ and
+$k \ge 1$ be natural numbers with $m \ge 1$ even, and let $h < k$ be an integer.
+For a partition $\lambda$, write $\lambda_r$ for its $r$-th largest part ($0$ if it has fewer
+than $r$ parts), $\lambda'_m$ for the number of its parts that are at least $m$, and
+$h_{r,m}(\lambda) = \lambda_r + \lambda'_m - r - m + 1$ for the hook length of the square $(r, m)$.
+The partition $\lambda$ has an $h$-fixed hook in column $m$ at row $r$ when $r \ge 1$,
+$m \le \lambda_r$ and $h_{r,m}(\lambda) = r + h$.
+The number of partitions $\lambda$ of $n$ into distinct odd parts that have an $h$-fixed hook in
+column $m$ at some row $r \le n$ with $h_{r,m}(\lambda) = k$ equals the coefficient of $q^n$ in
 
-Only the even-`m` case is stated: the odd-`m` case prints the binomial top index
-`k - l + (3l - 2k)/2` over odd `l`, which is not an integer. `h ∈ ℤ` with `h < k`;
-`⌈2k/3⌉ = (2k + 2)/3` in `ℕ`; `(-q; q²)_j` is `∏_{i<j} (1 + q^{2i+1})`; the top index is
-computed in `ℤ` (it is `≥ 0` on the range).
+$$
+\sum_{l} q^{k - l + (m-1)(2k-h-l) + k + l(k-h-1) + 2\binom{k-h}{2} + 2\binom{k-l}{2}}
+\frac{(-q;q^2)_{m/2}}{(q^2;q^2)_{k-h-1}} \binom{k - l + (3l-2k-2)/2}{k-l}_{q^2},
+$$
+
+the sum running over the even $l$ with $\lceil 2k/3 \rceil \le l \le k$, where
+$(q^2;q^2)_j = \prod_{i=1}^{j} (1 - q^{2i})$, $(-q;q^2)_j = \prod_{i=0}^{j-1} (1 + q^{2i+1})$
+and $\binom{a}{b}_{q^2}$ is the Gaussian binomial coefficient in $q^2$.
+
+On the range of summation the top index $k - l + (3l-2k-2)/2 = (l-2)/2$ is a nonnegative
+integer. Only even $m$ is stated: for odd $m$ the source prints the top index
+$k - l + (3l-2k)/2$ over odd $l$, which is not an integer.
 
 ## Depends on
 
 - [Gaussian binomial coefficient](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
 - [Finite $Q$-Pochhammer symbol](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
-- [Is Fixed Column Hook](is-fixed-column-hook.md)
-- [Partition Hook Length](partition-hook-length.md)
-- [Partition Row Len](partition-row-len.md)
+- [Fixed hooks in a column of a partition](is-fixed-column-hook.md)
+- [Hook length of a square of a partition](partition-hook-length.md)
+- [Row lengths of a partition](partition-row-len.md)
 
 ## Sources
 

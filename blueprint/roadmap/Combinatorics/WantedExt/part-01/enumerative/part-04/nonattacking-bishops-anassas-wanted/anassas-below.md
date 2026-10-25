@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.anassasBelow
 ---
 
-# Anassas Below
+# Nonattacking anassas by number below the diagonal
 
-`A_S(m, k, p)`: nonattacking placements of `k` anassas on `S_m` with exactly `p` of them
-strictly below the main diagonal (`j < i`).
+**Nonattacking anassas by number below the diagonal.** For natural numbers $m$, $k$ and
+$p$, $A_S(m, k, p)$ is the number of nonattacking placements of $k$ anassas on the square board
+$S_m = \{1, \dots, m\}^2$ (that is, of $k$-element sets of squares of $S_m$ no two of which lie
+on a common line in the direction $(0, 1)$ or $(1, 1)$) in which exactly $p$ of the squares
+$(i, j)$ satisfy $j < i$, that is, lie strictly below the main diagonal.
 
 ## Depends on
 
@@ -16,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Anassa Moves](anassa-moves.md)
-- [Nonattacking Placements](nonattacking-placements.md)
-- [Square Board](square-board.md)
+- [Basic moves of the anassa](anassa-moves.md)
+- [Nonattacking placements](nonattacking-placements.md)
+- [The square board](square-board.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsAdmissibleLuckySet
 ---
 
-# Is Admissible Lucky Set
+# Admissible lucky sets
 
-`S` is an `n`-admissible lucky set: `S = Lucky(w)` for some `w ∈ Q_n`.
+**Admissible lucky sets.** Let $n$ be a natural number. A finite set $S$ of natural numbers
+is an $n$-admissible lucky set if $S = \mathrm{Lucky}(w)$ for some Stirling permutation $w$ of
+order $n$, where $\mathrm{Lucky}(w)$ is the set of lucky cars of $w$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 
 ## Sources
 

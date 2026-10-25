@@ -5,25 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.gammaQuadraticRatio_eq_tprod_twoAdic
 ---
 
-# Gamma Quadratic Ratio eq tprod two Adic
+# $2$-adic dissection of the Gamma quadratic ratio
 
-`2`-adic dissection of `g(a, b, z)`: if `m² + 2am + b ≠ 0` and `m² + 2am + b - z ≠ 0` for
-every integer `m ≥ 0` and every `m = -2^j` (`j ≥ 0`), then
-`g(a, b, z) = ∏_{j ≥ 0} g(a/2^{j+1} - 1/2, 1/4 - a/2^{j+1} + b/2^{2j+2}, z/2^{2j+2})`.
-Corrected reading: the paper prints the parameters `a/2^j - 1` and `1 - a/2^{j+1} + b/2^{2j+2}`,
-which is false even under the hypotheses below (`a = 3/10`, `b = -2`, `z = 7/10`: numerically
-`g(a, b, z) ≈ 1.6283`, while the printed product is `≈ 6.18 · 10⁴` and the corrected one matches). The corrected parameters are those of the penultimate line of the paper's proof,
-`m² + 2am + b = 2^{2j+2}(n² + n(a/2^j - 1) + (1/4 + b/2^{2j+2} - a/2^{j+1}))` for
-`m = (2n - 1) 2^j`, from which the printed last step drops the factor `1/2` in the linear
-coefficient and `1/4` in the constant. The hypotheses exclude poles of every Gamma factor on both
-sides and zero prefactors `b`, `b - z` (the paper states none): `Γ(a ± √(a² - b))` has a pole
-exactly when `n² + 2an + b = 0` for some `n ≥ 0`, and the `j`th factor on the right exactly
-when `m² + 2am + b = 0` for `m = (2n - 1) 2^j`, `n ≥ 0`, i.e. `m = -2^j` or `m > 0`; other
-integer roots (e.g. `m = -3` for `a = 5/4`, `b = -3/2`) are allowed.
+**$2$-adic dissection of the Gamma quadratic ratio.** Let $a, b, z$ be complex numbers such
+that $m^2 + 2am + b \ne 0$ and $m^2 + 2am + b - z \ne 0$ for every integer $m$ that is nonnegative
+or of the form $m = -2^j$ with $j \ge 0$ an integer. For $j \ge 0$ put $a_j = a / 2^{j+1} - 1/2$
+and $b_j = 1/4 - a / 2^{j+1} + b / 2^{2j+2}$. Then the Gamma quadratic ratio $g$ satisfies
+$g(a, b, z) = \prod_{j \ge 0} g(a_j, b_j, z / 2^{2j+2})$.
+
+The source prints the parameters $a / 2^j - 1$ and $1 - a / 2^{j+1} + b / 2^{2j+2}$, which make
+the identity false: for $a = 3/10$, $b = -2$, $z = 7/10$ the left side is about $1.6283$ and the
+printed product about $6.18 \cdot 10^4$, while the product above matches. The parameters $a_j$,
+$b_j$ come from the penultimate line of the source's proof, which writes
+$m^2 + 2am + b = 2^{2j+2}(n^2 + 2 a_j n + b_j)$ for $m = (2n - 1) 2^j$. The hypotheses, absent
+from the source, exclude the poles of every Gamma factor on both sides and the vanishing of $b$
+and $b - z$.
 
 ## Depends on
 
-- [Gamma Quadratic Ratio](gamma-quadratic-ratio.md)
+- [The Gamma quadratic ratio](gamma-quadratic-ratio.md)
 
 ## Sources
 

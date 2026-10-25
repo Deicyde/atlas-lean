@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.maximalSchreierPadovan_small
 ---
 
-# Maximal Schreier Padovan small
+# First values of the Padovan-like sequences of maximal Schreier sets
 
-Table 4 values: `a^{(m)}_{1,2,n} = 0, 0, 1, 0, 1, 1, 1, 2` and
-`a^{(m)}_{2,1,n} = 0, 1, 0, 0, 1, 1, 1, 2` for `n = 0, …, 7`.
+**First values of the Padovan-like sequences of maximal Schreier sets.** For
+$n = 0, 1, \dots, 7$, the Padovan-like sequence $a^{(m)}_{1,2,n}$ of maximal Schreier sets takes
+the values $0, 0, 1, 0, 1, 1, 1, 2$, and $a^{(m)}_{2,1,n}$ takes the values
+$0, 1, 0, 0, 1, 1, 1, 2$.
 
 ## Depends on
 
-- [Maximal Schreier Padovan](maximal-schreier-padovan.md)
+- [Padovan-like sequence of maximal Schreier sets](maximal-schreier-padovan.md)
 
 ## Sources
 

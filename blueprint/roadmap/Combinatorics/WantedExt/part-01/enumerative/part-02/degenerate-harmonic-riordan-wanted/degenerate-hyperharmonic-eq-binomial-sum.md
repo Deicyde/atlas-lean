@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.degenerateHyperharmonic_eq_binomial_sum
 ---
 
-# Degenerate Hyperharmonic eq binomial sum
+# A binomial sum equal to a degenerate hyperharmonic number
 
-Theorem 6: for `0 ≤ r ≤ n`,
-`∑_{k=r}^n (-1)^{n-k} binom(λ, n - k + 1) / (λ α^{n-k+1}) · binom(k, r) = H^{r+1}_{n-r+1,λ}(α)`.
-The hypothesis `r ≤ n` makes the summation range `r ≤ k ≤ n` nonempty, as in the paper.
+**A binomial sum equal to a degenerate hyperharmonic number.** Let $\lambda > 0$ and
+$\alpha > 0$ be real numbers and let $r \le n$ be natural numbers. Write
+$\binom{\lambda}{j} = \lambda(\lambda - 1)\cdots(\lambda - j + 1)/j!$ and $H^s_{m,\lambda}(\alpha)$
+for the generalized degenerate hyperharmonic numbers of order $s$. Then
+
+$$
+\sum_{k=r}^{n} (-1)^{n-k} \frac{\binom{\lambda}{n-k+1}}{\lambda\, \alpha^{n-k+1}} \binom{k}{r} =
+H^{r+1}_{n-r+1,\lambda}(\alpha).
+$$
+
+The hypothesis $r \le n$ makes the summation range $r \le k \le n$ nonempty, as in the paper.
 
 ## Depends on
 
-- [Generalized Degenerate Hyperharmonic](generalized-degenerate-hyperharmonic.md)
+- [Generalized degenerate hyperharmonic numbers](generalized-degenerate-hyperharmonic.md)
 
 ## Sources
 

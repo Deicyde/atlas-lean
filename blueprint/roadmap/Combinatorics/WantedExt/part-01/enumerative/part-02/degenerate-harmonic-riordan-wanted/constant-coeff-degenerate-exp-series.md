@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.constantCoeff_degenerateExpSeries
 ---
 
-# Constant Coeff degenerate Exp Series
+# Constant term of the degenerate exponential series
 
-The constant term of `e_λ(t)` is `1`.
+**Constant term of the degenerate exponential series.** For every real number $\lambda$, the
+constant term of the degenerate exponential series $e_\lambda(t)$ is $1$.
 
 ## Depends on
 
-- [Degenerate Exp Series](degenerate-exp-series.md)
+- [Degenerate exponential series](degenerate-exp-series.md)
 
 ## Sources
 

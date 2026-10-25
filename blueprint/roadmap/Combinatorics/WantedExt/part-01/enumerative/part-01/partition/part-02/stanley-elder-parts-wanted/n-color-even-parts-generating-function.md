@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.nColor_evenParts_generatingFunction
 ---
 
-# N Color even Parts generating Function
+# Generating function for the even parts of $n$-color partitions
 
-Theorem 4: with `A_e(m)` the total number of even parts over the `n`-color partitions of `m`,
-`∑_{m ≥ 1} 2m q^{2m} / (1 - q^{2m}) = ∏_{m ≥ 1} (1 - q^m)^m ∑_{m ≥ 1} A_e(m) q^m`.
+**Generating function for the even parts of $n$-color partitions.** Let $A_e(m)$ be the total
+number of parts of even size, counted with multiplicity, over the $n$-color partitions of $m$.
+Then, as formal power series in $q$ over $\mathbb{Q}$, with infinite sums and products taken
+coefficientwise,
+
+$$
+\sum_{m \ge 1} \frac{2m \, q^{2m}}{1 - q^{2m}} =
+\Big(\prod_{m \ge 1} (1 - q^m)^m\Big) \sum_{m \ge 0} A_e(m) \, q^m.
+$$
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Sources
 

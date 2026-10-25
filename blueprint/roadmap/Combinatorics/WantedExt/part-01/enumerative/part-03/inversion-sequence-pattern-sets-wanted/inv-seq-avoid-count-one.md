@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.invSeqAvoidCount_one
 ---
 
-# Inv Seq Avoid Count one
+# One inversion sequence of length one
 
-There is exactly one inversion sequence of length one, `0`, and it avoids every length-3
-pattern.
+**One inversion sequence of length one.** For every set $B$ of length-3 patterns, the number
+$|I_1(B)|$ of inversion sequences of length one that avoid every pattern in $B$ equals $1$: the
+only inversion sequence of length one is $0$, and it avoids every length-3 pattern.
 
 ## Depends on
 
-- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
+- [Number of inversion sequences avoiding a set of patterns](inv-seq-avoid-count.md)
 
 ## Proof depends on
 
-- [Inv Seq Contains Pattern](inv-seq-contains-pattern.md)
-- [Not inv Seq Contains Pattern of lt](not-inv-seq-contains-pattern-of-lt.md)
+- [Containment of a length-3 pattern](inv-seq-contains-pattern.md)
+- [Short sequences contain no length-3 pattern](not-inv-seq-contains-pattern-of-lt.md)
 
 ## Sources
 

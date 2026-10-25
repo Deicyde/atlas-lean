@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.ccoProhibited_one_three_mul
 ---
 
-# Theorem 14
+# n-color compositions avoiding colors 1 and 2 versus avoiding color 2
 
-**Theorem 14**: for positive `k`,
-`cco_{\widehat{1,2}}(3k) = cco_{\hat 2}(2k-1)`.
+**n-color compositions avoiding colors 1 and 2 versus avoiding color 2.** For a natural number
+$m$, let $\operatorname{cco}_{\widehat{1,2}}(m)$ be the number of $n$-color compositions of $m$ in
+which no part has color $1$ or $2$, and let $\operatorname{cco}_{\hat 2}(m)$ be the number in which
+no part has color $2$. Then for every natural number $k \ge 1$,
+$\operatorname{cco}_{\widehat{1,2}}(3k) = \operatorname{cco}_{\hat 2}(2k-1)$.
 
 ## Depends on
 
-- [Cco Prohibit2](cco-prohibit2.md)
-- [Cco Prohibited](cco-prohibited.md)
+- [Count of n-color compositions avoiding color 2](cco-prohibit2.md)
+- [Number of n-color compositions with two prohibited consecutive colors](cco-prohibited.md)
 
 ## Sources
 

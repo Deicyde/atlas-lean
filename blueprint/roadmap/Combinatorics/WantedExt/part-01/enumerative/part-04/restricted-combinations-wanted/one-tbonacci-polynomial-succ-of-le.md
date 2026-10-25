@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.oneTBonacciPolynomial_succ_of_le
 ---
 
-# One TBonacci Polynomial succ of le
+# Recurrence for the $(1,t)$-bonacci polynomials
 
-The recurrence `f^{(s+1)}_{n+1}(x) = f^{(s+1)}_n(x) + x f^{(s+1)}_{n-s}(x)` for `s ≤ n`.
+**Recurrence for the $(1,t)$-bonacci polynomials.** For all natural numbers $s$ and $n$ with
+$s \le n$, the $(1,s+1)$-bonacci polynomials $f^{(s+1)}_m(x)$, $m \ge 0$, satisfy
+$f^{(s+1)}_{n+1}(x) = f^{(s+1)}_n(x) + x \, f^{(s+1)}_{n-s}(x)$.
 
 ## Depends on
 
-- [One TBonacci Polynomial](one-tbonacci-polynomial.md)
+- [The $(1,t)$-bonacci polynomials](one-tbonacci-polynomial.md)
 
 ## Sources
 

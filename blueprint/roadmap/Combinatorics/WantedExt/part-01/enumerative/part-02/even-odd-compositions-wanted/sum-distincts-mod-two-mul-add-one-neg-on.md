@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_distincts_mod_two_mul_add_one_neg_one_pow_card
 ---
 
-# Sum distincts mod two mul add one neg one pow card
+# Nyirenda's identity for distinct parts modulo an odd number
 
-Theorem 9 (Nyirenda), second part: for `r ≥ 1`, the number of partitions
-of `n` into an even number of distinct parts, all congruent to `0` or `±r`
-modulo `2r + 1`, minus the number with an odd number of such parts, is
-`(-1)^j` if `n = j((2r+1)j ± 1)/2` for some `j ≥ 0`, and `0` otherwise.
+**Nyirenda's identity for distinct parts modulo an odd number.** Let $r \ge 1$ and $n$ be
+natural numbers, and let $E(n)$ and $O(n)$ be the numbers of partitions of $n$ into distinct
+parts, each congruent to $0$, $r$ or $r + 1$ modulo $2r + 1$, with an even and an odd number of
+parts, respectively. If $2n = j((2r + 1)j + 1)$ or $2n = j((2r + 1)j - 1)$ for some integer
+$j \ge 0$, then $E(n) - O(n) = (-1)^j$; otherwise $E(n) - O(n) = 0$.
 
 ## Depends on
 

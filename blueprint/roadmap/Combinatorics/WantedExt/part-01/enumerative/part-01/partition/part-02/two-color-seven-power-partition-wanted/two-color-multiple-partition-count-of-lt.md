@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.twoColorMultiplePartitionCount_of_lt
 ---
 
-# Two Color Multiple Partition Count of lt
+# Two-color partitions below the modulus
 
-Below `ℓ` the second color is unavailable: `p_{1,ℓ}(n) = p(n)` for `n < ℓ`.
+**Two-color partitions below the modulus.** Let $p_{1,\ell}(n)$ be the number of 2-color
+partitions of $n$ in which the parts of the second color are multiples of $\ell$, and $p(n)$ the
+number of partitions of $n$. For all natural numbers $\ell$ and $n$ with $n < \ell$, the second
+color is unavailable and $p_{1,\ell}(n) = p(n)$.
 
 ## Depends on
 
-- [Two Color Multiple Partition Count](two-color-multiple-partition-count.md)
+- [Two-color partitions with one color restricted to multiples](two-color-multiple-partition-count.md)
 
 ## Sources
 

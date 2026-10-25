@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.qEulerProduct_square_theta_identity
 ---
 
-# Q Euler Product square theta identity
+# Gauss's theta identity for the Euler products
 
-Lemma 5: the quotient is cleared by stating `f₁² = f₂ * Σ_{m∈ℤ}(-1)^m q^{m²}`;
-the same bilateral theta series equals `1 + 2Σ_{m≥1}(-1)^m q^{m²}`.  The conjunction
-retains both equalities, and `natAbs` handles signs at negative indices.  Denominator
-clearing and finite coefficient encodings are the documented deviations.
+**Gauss's theta identity for the Euler products.** Write $f_k = \prod_{i \ge 1} (1 - q^{ki})$
+for the Euler products, as integer power series in $q$, and let
+$\theta = \sum_{m \in \mathbb{Z}} (-1)^m q^{m^2}$. Then $f_1^2 = f_2\, \theta$ and
+$\theta = 1 + 2 \sum_{m \ge 1} (-1)^m q^{m^2}$.
+
+The coefficient of $q^n$ in each sum is computed over the indices $m$ with $|m| \le n + 1$
+(respectively $1 \le m \le n$), which include every solution of $m^2 = n$.
 
 ## Depends on
 
-- [Bounded Bilateral Series](bounded-bilateral-series.md)
-- [Positive Unilateral Series](positive-unilateral-series.md)
+- [Bounded bilateral series](bounded-bilateral-series.md)
+- [Truncated one-sided series](positive-unilateral-series.md)
 - [The Euler products of partition theory](../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

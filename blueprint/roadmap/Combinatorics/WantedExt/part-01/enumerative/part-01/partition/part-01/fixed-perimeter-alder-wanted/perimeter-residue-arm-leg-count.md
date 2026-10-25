@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.perimeterResidueArmLegCount
 ---
 
-# Perimeter Residue Arm Leg Count
+# Partitions into parts in one residue class, by largest part and length
 
-`f_d^(a)(α, λ)`: the number of partitions into parts `≡ a (mod d + 1)` with largest part
-`m = α` and `k = λ` parts.
+**Partitions into parts in one residue class, by largest part and length.** For natural
+numbers $d$, $a$, $m$ and $k$, $f_d^{(a)}(m, k)$ is the number of nonempty multisets of positive
+integers with largest part $m$ and exactly $k$ elements (counted with multiplicity), all of
+which are congruent to $a$ modulo $d + 1$.
+
+Such a partition has perimeter (largest part plus number of parts minus one) equal to
+$m + k - 1$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
+- [Partitions with fixed perimeter](fixed-perimeter-partitions.md)
 
 ## Sources
 

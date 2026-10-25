@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.min_semilength_boxFactor
 ---
 
-# Min semilength box Factor
+# Minimal semilength of skew Dyck paths with $n$ box factors
 
-Among skew Dyck paths with exactly `n ≥ 1` factors `U D^k L` (`k ≥ 1`), the
-smallest semilength is `(k+2)n - 1`: it is attained, and no such path is shorter.
+**Minimal semilength of skew Dyck paths with $n$ box factors.** Let $k \ge 1$ and $n \ge 1$.
+Some skew Dyck path with exactly $n$ occurrences of the factor $U D^k L$ has semilength
+(number of $U$ steps) $(k+2)n - 1$, and every skew Dyck path with exactly $n$ occurrences of
+$U D^k L$ has semilength at least $(k+2)n - 1$.
 
 ## Depends on
 
-- [Is Skew Dyck Word](is-skew-dyck-word.md)
-- [Skew Dyck Step](skew-dyck-step.md)
-- [Box Factor](box-factor.md)
-- [Skew Factor Count](skew-factor-count.md)
+- [Skew Dyck words](is-skew-dyck-word.md)
+- [Skew Dyck steps](skew-dyck-step.md)
+- [The $k$-box factor](box-factor.md)
+- [Occurrences of a factor in a skew Dyck word](skew-factor-count.md)
 
 ## Sources
 

@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.boundedBilateralSeries
 ---
 
-# Bounded Bilateral Series
+# Bounded bilateral series
 
-`boundedBilateralSeries exponent weight` represents a bilateral integer-indexed
-series coefficientwise.  Degree `n` sums indices in `[-n-1,n+1]` whose integer
-exponent equals `n`; this bound contains every solution for the quadratic exponents
-used in Lemmas 1, 3, and 5.  The generic helper is not intended for other exponents.
+**Bounded bilateral series.** Given functions $e, w : \mathbb{Z} \to \mathbb{Z}$, the
+bounded bilateral series of $e$ and $w$ is the power series over $\mathbb{Z}$ whose
+coefficient of $q^n$, for each natural number $n$, is the sum of $w(m)$ over the integers
+$m$ with $-n-1 \le m \le n+1$ and $e(m) = n$.
+
+It agrees with the bilateral series $\sum_{m \in \mathbb{Z}} w(m) q^{e(m)}$ whenever $e$
+takes no negative values and, for every natural number $n$, every integer $m$ with $e(m) = n$
+satisfies $|m| \le n + 1$, as holds for the quadratic exponents used in Lemmas 1, 3 and 5 of
+the source; it is not intended for other exponents.
 
 ## Depends on
 

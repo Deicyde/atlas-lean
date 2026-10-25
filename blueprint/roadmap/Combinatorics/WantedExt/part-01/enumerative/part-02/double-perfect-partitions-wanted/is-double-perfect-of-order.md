@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsDoublePerfectOfOrder
 ---
 
-# Is Double Perfect Of Order
+# Double-perfect partitions of higher order
 
-A double-perfect partition of `N` of order `r` (the set `U_r(N)`): a partition of `N` whose
-parts contain exactly two partitions of every `m` with `r + 1 ≤ m ≤ N - r - 1` and exactly one
-partition of every other positive integer `m ≤ N`. Order `1` gives the double-perfect partitions
-of Definition 3.
+**Double-perfect partitions of higher order.** A double-perfect partition of $N$ of order $r$
+is a finite multiset $\lambda$ of positive integers with sum $N$ such that, for every integer $m$
+with $1 \le m \le N$, the number of distinct sub-multisets of $\lambda$ with sum $m$ is $2$ if
+$r + 1 \le m \le N - r - 1$ and $1$ otherwise. Their set is denoted $U_r(N)$; order $1$ gives the
+double-perfect partitions.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Subpartition Count](subpartition-count.md)
+- [Number of subpartitions with a given sum](subpartition-count.md)
 
 ## Sources
 

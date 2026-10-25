@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.DelannoyConstructions.genDelannoyUpper_add_succ_right
 ---
 
-# Gen Delannoy Upper add succ right
+# Horizontal sum identity for the upper generalized Delannoy numbers
 
-Horizontal sum: `D^k(m, n) + D^k(m, n + 1) = 2 D^(k+1)(m, n)`.
+**Horizontal sum identity for the upper generalized Delannoy numbers.**
+For natural numbers $k$, $m$ and $n$, write
+$D^k(m, n) = \sum_{j=0}^{n} \binom{m + n + k - j}{n + k} \binom{n}{j}$ for the upper
+generalized Delannoy numbers. For all natural numbers $k$, $m$ and $n$,
+$D^k(m, n) + D^k(m, n + 1) = 2 D^{k+1}(m, n)$.
 
 ## Depends on
 
-- [Gen Delannoy Upper](gen-delannoy-upper.md)
+- [Generalized Delannoy number with upper index](gen-delannoy-upper.md)
 
 ## Sources
 

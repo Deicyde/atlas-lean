@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.hyperseq_entries_eq_sum_at_neg_one
 ---
 
-# Hyperseq entries eq sum at neg one
+# Parisse's coefficients at $n$ from their values at $-1$
 
-Proposition 3: for all `n ∈ ℤ` and `j, k, ℓ, m ∈ ℕ`,
-`e_{j,k}(n) = ∑_{i=0}^{k} C(j - k + i, i) (n + 1)^i e_{j,k-i}(-1)` (3.20) (for `k ≤ j`),
-`b_{j,k}(n) = ∑_{i=k}^{j} (-1)^{i-k} C(i, k) (n + 1)^{i-k} b_{j,i}(-1)` (3.21), and
-`c_{ℓ,m}(n) = ∑_{i=m}^{ℓ} C(ℓ, i) (n + 1)^{ℓ-i} c_{i,m}(-1)` (3.22). Here `e_{j,k}(n)` is the
-elementary symmetric polynomial of degree `k` in `n + 1, …, n + j` over `ℤ`. Equation (3.20) is
-stated for `k ≤ j` (for `k > j` the natural-number binomial `C(j - k + i, i)` misreads the
-source's index `j - k + i`).
+**Parisse's coefficients at $n$ from their values at $-1$.** Let $n \in \mathbb{Z}$. For
+$j, k \in \mathbb{N}$ let $e_{j,k}(n)$ be the elementary symmetric polynomial of degree $k$ in
+$n + 1, \dots, n + j$, let $b_{j,k}(n) = (-1)^k e_{j,j-k}(n)$ for $k \le j$ and $b_{j,k}(n) = 0$
+for $k > j$, let
+$p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (k x + y)^\ell$ for complex $x, y$, with
+$0^0 = 1$, and let
+$c_{\ell,m}(n) = p_{\ell,m}(1, n + 1) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (k + n + 1)^\ell$. Then
+$e_{j,k}(n) = \sum_{i=0}^{k} \binom{j - k + i}{i} (n + 1)^i e_{j,k-i}(-1)$ for all $k \le j$,
+$b_{j,k}(n) = \sum_{i=k}^{j} (-1)^{i-k} \binom{i}{k} (n + 1)^{i-k} b_{j,i}(-1)$ for all $j, k$,
+and $c_{\ell,m}(n) = \sum_{i=m}^{\ell} \binom{\ell}{i} (n + 1)^{\ell-i} c_{i,m}(-1)$ for all
+$\ell, m \in \mathbb{N}$.
+
+The first identity is stated only for $k \le j$; for $k > j$ the source's upper index
+$j - k + i$ of the binomial coefficient can be negative.
 
 ## Depends on
 
-- [Alternating Binomial Power Sum](../hypersequence-weighted-sums-wanted/alternating-binomial-power-sum.md)
-- [Hyperseq B](hyperseq-b.md)
+- [Alternating binomial power sum](../hypersequence-weighted-sums-wanted/alternating-binomial-power-sum.md)
+- [Parisse's matrix $B(n)$](hyperseq-b.md)
 
 ## Sources
 

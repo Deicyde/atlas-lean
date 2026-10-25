@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsCount_sixteen_mul_add_fourteen
 ---
 
-# Odd Designated Summands Count sixteen mul add fourteen
+# $\mathrm{PD}_2(16n + 14)$ is divisible by 8
 
-For all `n ≥ 0`, `PD_2(16n + 14) ≡ 0 (mod 8)`.
+**$\mathrm{PD}_2(16n + 14)$ is divisible by 8.** Write $\mathrm{PD}_2(m)$ for the number of
+partitions of $m$ with designated summands in which every part is odd. For every natural number $n$,
+$\mathrm{PD}_2(16n + 14) \equiv 0 \pmod 8$.
 
 ## Depends on
 
-- [Odd Designated Summands Count](odd-designated-summands-count.md)
+- [The odd designated-summand partition function](odd-designated-summands-count.md)
 
 ## Sources
 

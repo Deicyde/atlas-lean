@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.blackSquares
 ---
 
-# Black Squares
+# Black squares of the square board
 
-The black squares (`i + j` odd) of `S_m`.
+**Black squares of the square board.** For a natural number $m$, the black squares of the
+$m \times m$ board $S_m = [1, m]^2$ are the squares $(i, j) \in S_m$ with $i + j$ odd.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Square Board](square-board.md)
+- [The square board](square-board.md)
 
 ## Sources
 

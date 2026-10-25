@@ -5,18 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.cylinder_r2_m_even
 ---
 
-# Cylinder r2 m even
+# Cylinder fixed-tiling count for the half-turn when $m$ is even
 
-If `m` is even, the shift-sum for cylinder half-turns is
-`n|T|^(nm/2)`.  The tile permutation has order dividing two, as required for `r²` in every
-`R`-set.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Cylinder fixed-tiling count for the half-turn when $m$ is even.** Let $T$ be a finite set of
+tile designs, let $n, m \ge 1$ with $m$ even, and let $\sigma$ be a permutation of $T$ with
+$\sigma^2 = 1$. Let $r^2$ be the cell map $(x, y) \mapsto (-1 - x, -1 - y)$ of
+$\mathbb{Z}/n \times \mathbb{Z}/m$. Then the cylinder shift sum of $r^2$ and $\sigma$ equals
+$n \cdot |T|^{nm/2}$.
 
 ## Depends on
 
-- [Cell R2](cell-r2.md)
-- [Cylinder Shift Sum](cylinder-shift-sum.md)
+- [Cell map of the half-turn r²](cell-r2.md)
+- [Cylinder shift sum](cylinder-shift-sum.md)
 
 ## Sources
 

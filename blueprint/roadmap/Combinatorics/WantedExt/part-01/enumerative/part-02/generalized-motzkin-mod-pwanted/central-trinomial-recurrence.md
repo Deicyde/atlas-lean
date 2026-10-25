@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.centralTrinomial_recurrence
 ---
 
-# Central Trinomial recurrence
+# Recurrence for generalized central trinomial coefficients
 
-Proposition 2: the generalized central trinomial recurrence is stated at the paper's index n +
-2, so every subscript is nonnegative and no natural subtraction truncates. Source: Nadav Kohen,
-*Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22,
-Proposition 2.
+**Recurrence for generalized central trinomial coefficients.** Let $a, b$ be integers and let
+$T_n$ be the constant term of $(a x^{-1} + b + a x)^n$. For every natural number $n$,
+
+$$(n + 2) T_{n+2} = b (2n + 3) T_{n+1} - (b^2 - 4a^2)(n + 1) T_n.$$
+
+This is the source's recurrence with its index shifted by two, so that every index is a natural
+number.
 
 ## Depends on
 
-- [Central Trinomial](central-trinomial.md)
+- [Generalized central trinomial coefficients](central-trinomial.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 2.

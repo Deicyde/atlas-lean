@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_peakless_tieless_first_lt_last
 ---
 
-# Card peakless tieless first lt last
+# Peakless-tieless parking functions with first entry below the last
 
-For `n ≥ 0`, the number of peakless-tieless parking functions of length `n + 1` with
-`a_1 < a_{n+1}` is the Fine number `F_{n+1}` (OEIS A000957), `fineNumber (n + 1)`.
+**Peakless-tieless parking functions with first entry below the last.** For every
+$n \in \mathbb{N}$, the number of parking functions $(a_1, \dots, a_{n+1})$ of length $n + 1$
+with no ties (no $i$ with $a_i = a_{i+1}$), no peaks (no $i$ with $a_{i-1} < a_i$ and
+$a_i > a_{i+1}$) and $a_1 < a_{n+1}$ is the Fine number $F(n + 1)$, indexed from $0$ so that
+$F(0) = 1$.
+
+In the indexing of OEIS A000957, $F(n + 1)$ is the term of index $n + 2$.
 
 ## Depends on
 

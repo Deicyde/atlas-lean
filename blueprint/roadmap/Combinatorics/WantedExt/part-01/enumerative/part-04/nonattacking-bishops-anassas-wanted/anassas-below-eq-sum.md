@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.anassasBelow_eq_sum
 ---
 
-# Anassas Below eq sum
+# Sum formula for anassas below the diagonal
 
-Equation (17): for `p ≤ k`,
-`A(m, k, p) = ∑_{j=0}^{p} (m-k+j)_j binom(k-p-1, j) binom(k-j, k-p) {m+1, m-k+j+1}`.
+**Sum formula for anassas below the diagonal.** Let $A(m, k, p)$ be the number of
+nonattacking placements of $k$ anassas on the square board $\{1, \dots, m\}^2$ with exactly $p$
+of them strictly below the main diagonal, and let ${n \brace j}$ be Knuth's extended Stirling
+numbers of the second kind. For natural numbers $m$, $k$, $p$ with $p \le k$,
+
+$$A(m, k, p) = \sum_{j=0}^{p} (m-k+j)_j \binom{k-p-1}{j} \binom{k-j}{k-p}
+{m+1 \brace m-k+j+1}$$
+
+in the integers, where $(x)_j = x(x-1)\cdots(x-j+1)$ is the falling factorial and
+$\binom{k-p-1}{j}$ is the generalized binomial coefficient, so that $\binom{-1}{j} = (-1)^j$.
 
 ## Depends on
 
-- [Anassas Below](anassas-below.md)
-- [Ext Stirling Second](ext-stirling-second.md)
+- [Nonattacking anassas by number below the diagonal](anassas-below.md)
+- [Extended Stirling numbers of the second kind](ext-stirling-second.md)
 
 ## Sources
 

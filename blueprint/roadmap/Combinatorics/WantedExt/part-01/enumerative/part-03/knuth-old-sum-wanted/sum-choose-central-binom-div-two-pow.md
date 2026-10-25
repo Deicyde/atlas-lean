@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_centralBinom_div_two_pow
 ---
 
-# Sum choose central Binom div two pow
+# Even-index expansion of a weighted central binomial sum
 
-`∑ binom(n,k) 2^{-k} binom(2k,k) = ∑_{k ≤ n/2} binom(n,2k) 2^{n-4k} binom(2k,k)`.
+**Even-index expansion of a weighted central binomial sum.** For every natural number $n$,
+
+$$\sum_{k=0}^{n} \binom{n}{k} 2^{-k} \binom{2k}{k} =
+\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} 2^{n-4k} \binom{2k}{k}.$$
 
 ## Depends on
 

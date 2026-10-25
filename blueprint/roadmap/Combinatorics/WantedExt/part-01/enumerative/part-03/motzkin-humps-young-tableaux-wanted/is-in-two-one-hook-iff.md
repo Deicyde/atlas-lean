@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isInTwoOneHook_iff
 ---
 
-# Is In Two One Hook iff
+# Characterization of tableaux in the $(2,1)$-hook
 
-The characteristic forbidden-cell condition for membership in the `(2,1)`-hook.
+**Characterization of tableaux in the $(2,1)$-hook.** Let $T$ assign to each entry $i < n$ a
+cell $(r_i, c_i)$ with zero-based row $r_i < n$ and column $c_i < n$. Then $T$ lies in the
+$(2,1)$-hook if and only if for no entry $i$ do both $r_i \ge 2$ and $c_i \ge 1$ hold.
 
 ## Depends on
 
-- [Is In Two One Hook](is-in-two-one-hook.md)
+- [Tableaux in the $(2,1)$-hook](is-in-two-one-hook.md)
 
 ## Sources
 

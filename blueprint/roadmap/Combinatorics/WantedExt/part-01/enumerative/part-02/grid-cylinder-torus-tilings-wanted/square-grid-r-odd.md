@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.squareGrid_r_odd
 ---
 
-# Square Grid r odd
+# Square-grid tilings fixed by the quarter-turn for odd $n$
 
-For odd `n`, the quarter-turn `r` has one fixed cell and `(n²-1)/4` four-cycles.  The fixed
-cell contributes `tileFixedCount σ 1 = t_r`, and `σ⁴=1` records the rotation order.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-grid tilings fixed by the quarter-turn for odd $n$.** Let $n$ be an odd positive
+integer, let $T$ be a finite set, let $\sigma$ be a permutation of $T$ with $\sigma^4 = 1$, and
+write $t_\sigma$ for the number of elements $t \in T$ with $\sigma(t) = t$. Let $r$ be the
+quarter-turn of the grid $(\mathbb{Z}/n\mathbb{Z})^2$ given by $r(x, y) = (-1 - y, x)$. Then the
+number of maps $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(r(c)) = \sigma(F(c))$ for every
+cell $c$ is $|T|^{(n^2 - 1)/4} \cdot t_\sigma$.
 
 ## Depends on
 
-- [Cell R](cell-r.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the quarter-turn r](cell-r.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

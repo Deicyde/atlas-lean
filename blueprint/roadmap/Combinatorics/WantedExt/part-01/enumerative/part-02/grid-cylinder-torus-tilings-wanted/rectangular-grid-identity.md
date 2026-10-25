@@ -5,18 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.rectangularGrid_identity
 ---
 
-# Rectangular Grid identity
+# Rectangular-grid tilings fixed by the identity
 
-The identity fixes every rectangular-grid tiling, giving `|T|^(nm)`.  The hypothesis
-`σ^1=1` records that `σ` represents the identity element, and thus this quantification covers the
-identity action in every `R`-set.  The Burnside conclusion of Theorem 22 is intentionally not part
-of this single-element fixed-point statement.
+**Rectangular-grid tilings fixed by the identity.** Let $n$ and $m$ be positive integers, let
+$T$ be a finite set of tiles and let $\sigma$ be a permutation of $T$ with $\sigma^1 = 1$, that is,
+the identity. Then the number of tilings $F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with
+$F(c) = \sigma(F(c))$ for every cell $c$ equals $|T|^{nm}$.
 
-Formalization deviation: none beyond the representation choices stated above.
+The Burnside conclusion of Theorem 22 is not part of this single-element fixed-point statement.
 
 ## Depends on
 
-- [Fixed Tiling Count](fixed-tiling-count.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
 
 ## Sources
 

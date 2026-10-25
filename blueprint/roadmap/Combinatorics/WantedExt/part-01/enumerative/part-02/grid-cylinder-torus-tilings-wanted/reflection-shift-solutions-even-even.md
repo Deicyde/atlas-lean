@@ -5,13 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.reflection_shift_solutions_even_even
 ---
 
-# Reflection shift solutions even even
+# No solutions of $x = -1-x-a$ modulo $n$ when $n$ and $a$ are even
 
-If `n` and the canonical representative `a.val` are both even, the equation
-`x = -1-x-a` has no solutions.  As in the preceding case, `Even a.val` is the explicit
-representative convention replacing the paper's informal parity assertion about a residue.
-
-Formalization deviation: none beyond the representation choices stated above.
+**No solutions of $x = -1-x-a$ modulo $n$ when $n$ and $a$ are even.** Let $n$ be a
+positive even integer and $a \in \mathbb{Z}/n$ whose representative in $\{0, \dots, n-1\}$ is
+even. Then no $x \in \mathbb{Z}/n$ satisfies $x = -1-x-a$.
 
 ## Depends on
 

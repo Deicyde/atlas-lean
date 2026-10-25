@@ -4,9 +4,9 @@ navigation: module
 
 # Rectangle Capacity Nondecreasing Words
 
-- [Rectangle Capacity](rectangle-capacity.md)
-- [Rectangle Capacity example](rectangle-capacity-example.md)
-- [Nondecreasing Rectangle Total](nondecreasing-rectangle-total.md)
-- [Nondecreasing Rectangle Total two one two two](nondecreasing-rectangle-total-two-one-tw.md)
-- [Nondecreasing Rectangle Total one by s](nondecreasing-rectangle-total-one-by-s.md)
-- [Nondecreasing Rectangle Total r by s](nondecreasing-rectangle-total-r-by-s.md)
+- [Number of $r \times s$ rectangles in a bargraph](rectangle-capacity.md)
+- [Example: $3 \times 2$ rectangles in the word $345134$](rectangle-capacity-example.md)
+- [Total number of $r \times s$ rectangles in nondecreasing words](nondecreasing-rectangle-total.md)
+- [Example: $1 \times 2$ rectangles in nondecreasing words of length $2$](nondecreasing-rectangle-total-two-one-tw.md)
+- [Generating function for $1 \times s$ rectangles in nondecreasing words](nondecreasing-rectangle-total-one-by-s.md)
+- [Generating function for $r \times s$ rectangles in nondecreasing words](nondecreasing-rectangle-total-r-by-s.md)

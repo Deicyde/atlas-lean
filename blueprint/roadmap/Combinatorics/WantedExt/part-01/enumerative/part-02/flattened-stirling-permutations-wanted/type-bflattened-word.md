@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.typeBFlattenedWord
 ---
 
-# Type BFlattened Word
+# The word of a set partition of $(-n, n)$
 
-The map `φ : Π^B_n → flat(Q_{n+1})` of Proposition 1, with the word read as a
-function `Fin (2 * (n + 1)) → ℕ` (positions past the end of the list read `0`).
+**The word of a set partition of $[-n, n]$.** For a natural number $n$ and a set partition
+$P$ of $[-n, n] = \{-n, \dots, n\}$, let $L(P)$ be the list of $P$: the list of natural numbers
+built from the blocks of $P$ (via the shift map and the doubled and wrapped words). The word
+$\varphi(P) = w_1 w_2 \cdots w_{2(n+1)}$ has $w_i$ equal to the $i$-th entry of $L(P)$ when $L(P)$
+has at least $i$ entries, and $w_i = 0$ otherwise.
+
+Restricted to type $B$ set partitions, this is the map $\varphi$ of Proposition 1.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Type BFlattened Word List](type-bflattened-word-list.md)
+- [The word of a set partition of $(-n, n)$, as a list](type-bflattened-word-list.md)
 
 ## Sources
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.MetatilesHaveAtMostTwoCombs
 ---
 
-# Metatiles Have At Most Two Combs
+# Metatiles with at most two combs
 
-Every metatile of every restricted-overlap tiling with squares and `Q`-combs contains at most
-two combs. A metatile is a gapless grouping of tiles that cannot be split into smaller gapless
-groupings; for a tiling given by its set `P` of comb start cells (see
-`restrictedOverlapTilings`), the boundary before cell `j` separates two metatiles iff no tile
-straddles it, i.e. no comb `s ∈ P` has `s < j ≤ s + q` (`q = Q.sup id`; squares never straddle).
-So the condition says that any three combs `a < b < c` of a tiling are separated by such a
-boundary `j` with `a < j ≤ c`.
+**Metatiles with at most two combs.** Let $Q$ be a finite set of natural numbers and $q$ its
+largest element ($q = 0$ for $Q = \emptyset$). The set $Q$ has metatiles with at most two combs
+if for all natural numbers $N$ and $k$ and every restricted-overlap tiling of an $N$-board with
+squares and $k$ $Q$-combs, with set $P$ of comb start cells, any three combs $a < b < c$ in $P$
+are separated by a boundary: there is a natural number $j$ with $a < j \le c$ such that no comb
+$s \in P$ satisfies $s < j \le s + q$.
+
+A metatile is a gapless grouping of tiles that cannot be split into smaller gapless groupings.
+The boundary before cell $j$ separates two metatiles exactly when no tile straddles it, that is,
+when no comb $s \in P$ has $s < j \le s + q$ (squares never straddle a boundary). So the
+condition says that every metatile of every such tiling contains at most two combs.
 
 ## Depends on
 
@@ -21,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Restricted Overlap Tilings](restricted-overlap-tilings.md)
+- [Restricted-overlap tilings](restricted-overlap-tilings.md)
 
 ## Sources
 

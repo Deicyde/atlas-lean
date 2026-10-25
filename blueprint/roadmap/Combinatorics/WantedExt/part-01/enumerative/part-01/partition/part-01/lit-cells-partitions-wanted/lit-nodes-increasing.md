@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.litNodesIncreasing
 ---
 
-# Lit Nodes Increasing
+# Lit nodes of a partition
 
-The number of lit nodes of a partition drawn as a weakly increasing Ferrers diagram of
-nodes: the largest part plus the number of parts minus one (`0` for the empty partition).
+**Lit nodes of a partition.** The number of lit nodes of a partition $p$, drawn as a weakly
+increasing Ferrers diagram of nodes, is defined as the largest part of $p$ plus the number of
+parts of $p$ minus one; for the empty partition it is $0$.
 
 ## Depends on
 

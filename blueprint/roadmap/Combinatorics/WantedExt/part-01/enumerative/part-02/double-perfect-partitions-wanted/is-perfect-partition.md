@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsPerfectPartition
 ---
 
-# Is Perfect Partition
+# Perfect partition
 
-A perfect partition of `n`: a partition of `n` whose parts contain exactly one partition of
-every positive integer `m ≤ n`.
+**Perfect partition.** Let $n$ be a natural number. A multiset $\lambda$ of natural numbers
+is a perfect partition of $n$ when its elements are positive, they sum to $n$, and for every
+integer $m$ with $1 \le m \le n$ exactly one partition of $m$ is contained in $\lambda$, that is,
+exactly one sub-multiset of $\lambda$ has sum $m$ (equal sub-multisets are counted once).
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Subpartition Count](subpartition-count.md)
+- [Number of subpartitions with a given sum](subpartition-count.md)
 
 ## Sources
 

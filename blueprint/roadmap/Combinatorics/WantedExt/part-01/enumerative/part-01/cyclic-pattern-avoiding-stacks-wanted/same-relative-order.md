@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.SameRelativeOrder
 ---
 
-# Same Relative Order
+# Sequences with the same relative order
 
-Two sequences have the same relative order (`st(s) = st(p)`): same length, and
-`s_i < s_j ↔ p_i < p_j` for all positions.
+**Sequences with the same relative order.** Two finite sequences $s = s_1 \cdots s_\ell$ and
+$p = p_1 \cdots p_m$ of natural numbers have the same relative order if $\ell = m$ and, for all
+$1 \le i, j \le m$, $s_i < s_j$ holds if and only if $p_i < p_j$.
 
 ## Depends on
 

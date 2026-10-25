@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.TriangularRecurrence.weight'
 ---
 
-# Weight'
+# Second weight of a triangular recurrence
 
-The second weight `α'(n + 1) + β'k + γ'`, the divisor in Definition 2 at
-`(n, k - 1)`.
+**Second weight of a triangular recurrence.** For a triangular recurrence with parameters
+$(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ and integers $n, k$, the second weight is the
+rational number $\alpha'(n + 1) + \beta' k + \gamma'$.
+
+It is the divisor in the recurrence defining the negative-negative number $a^{NN}_{n,k-1}$.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
+- [Triangular recurrence](triangular-recurrence.md)
 
 ## Sources
 

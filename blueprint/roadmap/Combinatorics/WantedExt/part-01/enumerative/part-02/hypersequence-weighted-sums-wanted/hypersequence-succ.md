@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.hypersequence_succ
 ---
 
-# Hypersequence succ
+# Each hypersequence generation sums the previous one
 
-`a^{(r+1)}_n = ∑_{k=0}^{n} a^{(r)}_k`.
+**Each hypersequence generation sums the previous one.** Let $(a_n)$ be a sequence in an
+additive commutative monoid and let $a^{(r)}_n$ denote its hypersequence of generation $r$. For
+all natural numbers $r$ and $n$, $a^{(r+1)}_n = \sum_{k=0}^{n} a^{(r)}_k$.
 
 ## Depends on
 

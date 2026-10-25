@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.alternatingBinomialPowerSum_special_values
 ---
 
-# Alternating Binomial Power Sum special values
+# Special values of alternating binomial power sums
 
-Proposition 2 (i)–(iv): (i) `p_{ℓ,m}(x, x) = (-1)^m m! S(ℓ + 1, m + 1) x^ℓ`, in particular
-`c_{ℓ,m}(0) = (-1)^m m! S(ℓ + 1, m + 1)`; (ii) `p_{ℓ,m}(0, y) = 0^m y^ℓ`; (iii)
-`p_{ℓ,m}(x, 0) = (-1)^m m! S(ℓ, m) x^ℓ`, in particular
-`∑_{k=0}^{m} (-1)^k C(m, k) k^{m+1} = (-1)^m m! C(m + 1, 2)`; (iv)
-`p_{ℓ,m}(-1, m) = m! S(ℓ, m)`.
+**Special values of alternating binomial power sums.** Let
+$p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (kx + y)^\ell$, with $0^0 = 1$, and let
+$S(j, m)$ denote the Stirling numbers of the second kind. For all complex numbers $x, y$ and
+natural numbers $\ell, m$:
+(i) $p_{\ell,m}(x, x) = (-1)^m m!\, S(\ell + 1, m + 1)\, x^\ell$, and in particular
+$p_{\ell,m}(1, 1) = (-1)^m m!\, S(\ell + 1, m + 1)$;
+(ii) $p_{\ell,m}(0, y) = 0^m y^\ell$;
+(iii) $p_{\ell,m}(x, 0) = (-1)^m m!\, S(\ell, m)\, x^\ell$, and in particular
+$p_{m+1,m}(1, 0) = (-1)^m m! \binom{m+1}{2}$;
+(iv) $p_{\ell,m}(-1, m) = m!\, S(\ell, m)$.
 
 ## Depends on
 
-- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
+- [Alternating binomial power sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

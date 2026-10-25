@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.regularPartitionCount_four_nine_internal_mod_four
 ---
 
-# Regular Partition Count four nine internal mod four
+# An internal congruence modulo $4$ for $b_{4,9}$
 
-For all `n ≥ 0`, `b_{4,9}(16n + 1) ≡ b_{4,9}(4n + 1) (mod 4)`.
+**An internal congruence modulo $4$ for $b_{4,9}$.** Let $b_{4,9}(n)$ be the number of
+partitions of $n$ with no part divisible by $4$ or by $9$. For every natural number $n$,
+$b_{4,9}(16n + 1) \equiv b_{4,9}(4n + 1) \pmod 4$.
 
 ## Depends on
 
-- [Regular Partition Count](regular-partition-count.md)
+- [Number of $(\ell, k)$-regular partitions](regular-partition-count.md)
 
 ## Sources
 

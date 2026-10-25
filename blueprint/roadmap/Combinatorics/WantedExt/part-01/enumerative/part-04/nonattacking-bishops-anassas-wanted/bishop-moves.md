@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.bishopMoves
 ---
 
-# Bishop Moves
+# Basic moves of the bishop
 
-The bishop's basic moves `(1, 1), (-1, 1)`.
+**Basic moves of the bishop.** The basic moves of the bishop are the two vectors $(1, 1)$
+and $(-1, 1)$ in $\mathbb{Z}^2$.
 
 ## Depends on
 

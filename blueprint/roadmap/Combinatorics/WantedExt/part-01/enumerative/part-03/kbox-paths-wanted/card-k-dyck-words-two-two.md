@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.card_kDyckWords_two_two
 ---
 
-# Card k Dyck Words two two
+# Three $2$-Dyck paths of size $2$
 
-There are three `2`-Dyck paths of size `2`.
+**Three $2$-Dyck paths of size $2$.** The number of $2$-Dyck paths of size $2$ is $3$.
 
 ## Depends on
 
-- [K Dyck Words](k-dyck-words.md)
+- [$k$-Dyck paths of size $n$](k-dyck-words.md)
 
 ## Sources
 

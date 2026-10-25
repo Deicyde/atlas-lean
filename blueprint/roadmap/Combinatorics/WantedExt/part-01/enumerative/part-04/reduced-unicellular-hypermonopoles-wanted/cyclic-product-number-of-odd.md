@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.cyclicProductNumber_of_odd
 ---
 
-# Cyclic Product Number of odd
+# Vanishing of the cyclic product numbers for odd $n - k$
 
-`H(n, k) = 0` when `n - k` is odd.
+**Vanishing of the cyclic product numbers for odd $n - k$.** For natural numbers $n$ and $k$
+such that $n + k$ is odd (equivalently, $n - k$ is odd), the cyclic product number $H(n, k)$ is
+$0$.
 
 ## Depends on
 
-- [Cyclic Product Number](cyclic-product-number.md)
+- [Cyclic product numbers](cyclic-product-number.md)
 
 ## Sources
 

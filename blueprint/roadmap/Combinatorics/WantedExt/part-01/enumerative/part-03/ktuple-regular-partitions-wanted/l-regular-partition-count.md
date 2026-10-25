@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.lRegularPartitionCount
 ---
 
-# L Regular Partition Count
+# Number of $\ell$-regular partitions
 
-The number of `ℓ`-regular partitions of `n`: partitions none of whose parts is
-divisible by `ℓ`.
+**Number of $\ell$-regular partitions.** For natural numbers $\ell$ and $n$, the number of
+$\ell$-regular partitions of $n$ is the number of partitions of $n$ none of whose parts is
+divisible by $\ell$.
 
 ## Depends on
 

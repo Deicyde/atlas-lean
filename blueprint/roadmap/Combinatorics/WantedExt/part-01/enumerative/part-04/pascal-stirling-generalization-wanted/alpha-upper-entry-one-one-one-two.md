@@ -6,14 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.alphaUpperEntry_one_one_one_two
 ---
 
-# Alpha Upper Entry one one one two
+# Small α-upper entries
 
-Small values of `𝖴_α`: `𝖴_{2,2} = α_2` and `𝖴_{2,3} = α_2 + α_3` (1-based), as in the
-paper's display of `𝖴_α(4)`.
+**Small α-upper entries.** Let $R$ be a commutative ring, let $\alpha$ be a sequence in $R$,
+and let $u_{i,j}$ ($i, j \ge 0$) be the α-upper entries of $\alpha$. Then $u_{1,1} = \alpha_2$ and
+$u_{1,2} = \alpha_2 + \alpha_3$.
+
+Writing $\mathsf{U}_{i,j}$ for the entries of the paper's matrix $\mathsf{U}_\alpha(n)$ in its
+$1$-based indexing, these are $\mathsf{U}_{2,2} = \alpha_2$ and
+$\mathsf{U}_{2,3} = \alpha_2 + \alpha_3$, as in the paper's display of $\mathsf{U}_\alpha(4)$.
 
 ## Depends on
 
-- [Alpha Upper Entry](alpha-upper-entry.md)
+- [Entries of the α-upper matrix](alpha-upper-entry.md)
 
 ## Sources
 

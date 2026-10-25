@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.hyperFibonacci_recurrence
 ---
 
-# Hyper Fibonacci recurrence
+# Recurrence for the hyperfibonacci numbers
 
-Theorem 4 (Cristea–Martinjak–Urbiha, as quoted): `F^{(r)}_0 = 0`, `F^{(r)}_1 = 1`, and for
-`r ≥ 1`, `F^{(r)}_{n+2} = F^{(r)}_{n+1} + F^{(r)}_n + C(n + r, r - 1)` (written for `r + 1`).
+**Recurrence for the hyperfibonacci numbers.** Let $F^{(r)}_n$ denote the hyperfibonacci
+numbers. For all natural numbers $r$ and $n$, $F^{(r)}_0 = 0$, $F^{(r)}_1 = 1$, and
+$F^{(r+1)}_{n+2} = F^{(r+1)}_{n+1} + F^{(r+1)}_n + \binom{n+r+1}{r}$.
+
+Equivalently, for $r \ge 1$, $F^{(r)}_{n+2} = F^{(r)}_{n+1} + F^{(r)}_n + \binom{n+r}{r-1}$, the
+form in which Parisse quotes this result of Cristea, Martinjak and Urbiha.
 
 ## Depends on
 

@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.compositionOddMinusEven_parts_lt_eq_sum
 ---
 
-# Composition Odd Minus Even parts lt eq sum
+# Signed count of compositions with exactly $m$ parts less than $k$
 
-Theorem 17: for `k, n ≥ 1`, the signed count of compositions of `n + k - 1`
-with exactly `m` parts less than `k` is
-`∑_{i + j + (k-1)(ℓ + i - m - 1) = n} (-1)^{i+ℓ+1} binom(i+j-1, j) binom(i, m) binom(m, ℓ)`
-over `i, j, ℓ ≥ 0`, the constraint read in `ℤ`. The ranges below contain every
-solution (`ℓ ≤ m` and `i, j ≤ n + (k-1)(m+1)` whenever the summand is nonzero).
+**Signed count of compositions with exactly $m$ parts less than $k$.** Let $k, n \ge 1$ and
+$m \ge 0$. Among the compositions of $n + k - 1$ with exactly $m$ parts less than $k$, the number
+with an odd number of parts minus the number with an even number of parts is the sum of
+$(-1)^{i+\ell+1} \binom{i+j-1}{j} \binom{i}{m} \binom{m}{\ell}$ over all $i, j, \ell \ge 0$ with
+$i + j + (k-1)(\ell + i - m - 1) = n$, where $\binom{-1}{0} = 1$.
+
+Only finitely many terms are nonzero: a nonzero term has $\ell \le m$ and
+$i, j \le n + (k-1)(m+1)$.
 
 ## Depends on
 
-- [Composition Odd Minus Even](composition-odd-minus-even.md)
+- [Signed count of compositions](composition-odd-minus-even.md)
 
 ## Sources
 

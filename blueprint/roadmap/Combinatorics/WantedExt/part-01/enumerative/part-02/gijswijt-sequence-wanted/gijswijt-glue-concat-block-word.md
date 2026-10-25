@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtGlueConcat_blockWord
 ---
 
-# Gijswijt Glue Concat block Word
+# Concatenated glue strings inside a block of the next order
 
-Let `m ≥ 1` and `u ≥ 2`. (a) Each proper prefix `T_t^{(m)}` of `B_u^{(m+1)}` equals
-`B_{u-1}^{a_{u-1}} ⋯ B_1^{a_1}` for some `a_1, …, a_{u-1} ∈ {0, …, m}`. (b) For all
-`a_1, …, a_{u-1} ∈ {0, …, m}` with `a_1 ≠ 0`, `B_{u-1}^{a_{u-1}} ⋯ B_1^{a_1} = T_t^{(m)}` for some
-proper prefix `T_t^{(m)}` of `B_u^{(m+1)}`.
+**Concatenated glue strings inside a block of the next order.** Let $m \ge 1$ and $u \ge 2$,
+and for exponents $a_1, \ldots, a_{u-1}$ let
+$W(a) = (B^{(m+1)}_{u-1})^{a_{u-1}} \cdots (B^{(m+1)}_1)^{a_1}$ be the word in the blocks of the
+$(m+1)$th order Gijswijt sequence. (a) If $t \ge 1$ and the concatenated glue string $T^{(m)}_t$
+is a proper prefix of $B^{(m+1)}_u$, then $T^{(m)}_t = W(a)$ for some
+$a_1, \ldots, a_{u-1} \in \{0, \ldots, m\}$. (b) For all $a_1, \ldots, a_{u-1} \in \{0, \ldots, m\}$
+with $a_1 \ne 0$, there is $t \ge 1$ such that $T^{(m)}_t$ is a proper prefix of $B^{(m+1)}_u$ and
+$W(a) = T^{(m)}_t$.
 
 ## Depends on
 
-- [Gijswijt Block](gijswijt-block.md)
-- [Gijswijt Block Word](gijswijt-block-word.md)
-- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
+- [Gijswijt blocks](gijswijt-block.md)
+- [Block words](gijswijt-block-word.md)
+- [Concatenated glue strings of a Gijswijt sequence](gijswijt-glue-concat.md)
 
 ## Sources
 

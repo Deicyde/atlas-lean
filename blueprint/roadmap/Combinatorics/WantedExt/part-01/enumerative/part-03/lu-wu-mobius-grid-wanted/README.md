@@ -4,9 +4,9 @@ navigation: module
 
 # Lu Wu Mobius Grid
 
-- [Mobius Grid Vertex](mobius-grid-vertex.md)
-- [Mobius Grid Edge](mobius-grid-edge.md)
-- [Mobius Grid Incident](mobius-grid-incident.md)
-- [Is Mobius Grid Perfect Matching](is-mobius-grid-perfect-matching.md)
-- [Mobius Grid Perfect Matching Count](mobius-grid-perfect-matching-count.md)
-- [Lu wu mobius grid perfect matching count](lu-wu-mobius-grid-perfect-matching-count.md)
+- [Vertices of the Möbius grid](mobius-grid-vertex.md)
+- [Edges of the Möbius grid](mobius-grid-edge.md)
+- [Incidence in the Möbius grid](mobius-grid-incident.md)
+- [Perfect matchings of the Möbius grid](is-mobius-grid-perfect-matching.md)
+- [Number of perfect matchings of the Möbius grid](mobius-grid-perfect-matching-count.md)
+- [Lu–Wu formula for perfect matchings of the Möbius grid](lu-wu-mobius-grid-perfect-matching-count.md)

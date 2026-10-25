@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.partitionMaxRookNumberMax
 ---
 
-# Partition Max Rook Number Max
+# Largest max-rook number among partitions of $n$
 
-The paper's `F(n)`: the largest max-rook number of a partition of `n`,
-with the paper's convention `F(0) = 1`.
+**Largest max-rook number among partitions of $n$.** For a natural number $n \ge 1$, $F(n)$
+is the largest max-rook number $R(\pi)$ over all partitions $\pi$ of $n$, where $R(\pi)$ is the
+largest number of non-attacking rooks on the Ferrers board of $\pi$. By convention $F(0) = 1$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partition Max Rook Number](partition-max-rook-number.md)
+- [Max-rook number of a partition](partition-max-rook-number.md)
 
 ## Sources
 

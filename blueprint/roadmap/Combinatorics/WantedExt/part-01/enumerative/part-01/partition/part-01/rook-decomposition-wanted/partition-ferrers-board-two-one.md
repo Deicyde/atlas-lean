@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.partitionFerrersBoard_two_one
 ---
 
-# Partition Ferrers Board two one
+# Ferrers board of the partition $(2, 1)$
 
-The Ferrers board of `(2, 1)` is the three cells `(0,0), (0,1), (1,0)`.
+**Ferrers board of the partition $(2, 1)$.** With rows and columns numbered from $0$, the
+Ferrers board of the partition $(2, 1)$ of $3$ consists of exactly the three cells $(0, 0)$,
+$(0, 1)$ and $(1, 0)$.
 
 ## Depends on
 
-- [Partition Ferrers Board](partition-ferrers-board.md)
+- [Ferrers board of a partition](partition-ferrers-board.md)
 
 ## Sources
 

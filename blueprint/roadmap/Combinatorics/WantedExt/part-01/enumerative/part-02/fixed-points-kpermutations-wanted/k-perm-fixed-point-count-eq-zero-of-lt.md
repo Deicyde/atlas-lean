@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.kPermFixedPointCount_eq_zero_of_lt
 ---
 
-# K Perm Fixed Point Count eq zero of lt
+# A permutation has at most as many fixed points as cycles
 
-A permutation with `k` cycles has at most `k` fixed points, so `a(n, k, j) = 0` for `k < j`.
+**A permutation has at most as many fixed points as cycles.** Write $a(n, k, j)$ for the number
+of permutations of an $n$-element set with exactly $k$ cycles (fixed points counted as cycles of
+length one) and exactly $j$ fixed points. If $k < j$, then $a(n, k, j) = 0$.
 
 ## Depends on
 
-- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
+- [Permutations counted by cycles and fixed points](k-perm-fixed-point-count.md)
 
 ## Proof depends on
 

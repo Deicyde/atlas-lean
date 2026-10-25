@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsMaximalSetOfLanes
 ---
 
-# Is Maximal Set Of Lanes
+# Maximal set of lanes
 
-`S` is a maximal set of lanes (MSL) among the lanes `allowed`: its lanes pairwise have no
-common point, and every other allowed lane meets one of them. The standard road intersection
-allows every lane; the restricted one forbids the U-turns `E_iX_i`.
+**Maximal set of lanes.** In the standard road intersection of size $n$, the lane $E_iX_j$
+joins the entry $E_i$ to the exit $X_j$, for $i, j \in \{0, \dots, n-1\}$. Given a set $A$ of
+allowed lanes, a set $S$ of lanes is a maximal set of lanes (MSL) among $A$ if $S \subseteq A$,
+no two distinct lanes of $S$ have a common point, and every lane of $A$ not in $S$ has a common
+point with some lane of $S$. The standard road intersection allows every lane; the restricted one
+forbids the U-turns $E_iX_i$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lanes Meet](lanes-meet.md)
+- [Lanes with a common point](lanes-meet.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.odd_eq_sum_runLength_prod
 ---
 
-# Odd eq sum run Length prod
+# Odd colored compositions and runs in binary strings
 
-For `k ≥ 1`, `o(k)` equals the sum over the binary strings of length `k` that start with
-`1` (`true`) of the product of the lengths of their runs of `1`s.
+**Odd colored compositions and runs in binary strings.** For every $k \ge 1$, the number
+$o(k) = c_{2,1}(k)$ of odd colored compositions of $k$, in which only the parts at odd positions
+are colored, equals the sum, over the binary strings of length $k$ whose first letter is $1$, of
+the product of the lengths of the maximal runs of $1$s in the string.
 
 ## Depends on
 
-- [Positional Colored Composition Count](positional-colored-composition-count.md)
+- [Positional colored compositions](positional-colored-composition-count.md)
 
 ## Sources
 

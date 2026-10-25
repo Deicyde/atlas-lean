@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.rectangleCapacity_example
 ---
 
-# Rectangle Capacity example
+# Example: $3 \times 2$ rectangles in the word $345134$
 
-Characteristic value: the word `345134` contains four `3 × 2` rectangles.
+**Example: $3 \times 2$ rectangles in the word $345134$.** The bargraph of the word $345134$
+contains exactly four rectangles of height $3$ and width $2$.
 
 ## Depends on
 
-- [Rectangle Capacity](rectangle-capacity.md)
+- [Number of $r \times s$ rectangles in a bargraph](rectangle-capacity.md)
 
 ## Sources
 

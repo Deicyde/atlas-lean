@@ -5,24 +5,44 @@ statement: formalized
 lean: MetaMathlibExt.fixedColumnHook_part_genFun
 ---
 
-# Fixed Column Hook part gen Fun
+# Generating function for fixed column hooks from a part of size $k$
 
-The generating function for the number of partitions of `n` with an `h`-fixed hook in the
-`m`th column arising from a part of size `k ≥ m` is
-`Σ_{s ≥ k-h-m+1} q^{s(k+m)+m(h-k+m-1)}/((q; q)_{s-1} (q; q)_{m-1}) [s+h-1, k-m]_q
- = Σ_{s ≥ 0} q^{s(k+m)+k(k-h-m+1)}/((q; q)_{s+k-h-m} (q; q)_{m-1}) [s+k-m, k-m]_q`.
+**Generating function for fixed column hooks from a part of size $k$.** Let $n$, $m \ge 1$
+and $k \ge m$ be natural numbers and let $h$ be an integer with $h + m \le k$.
+For a partition $\lambda$, write $\lambda_r$ for its $r$-th largest part ($0$ if it has fewer
+than $r$ parts), $\lambda'_m$ for the number of its parts that are at least $m$, and
+$h_{r,m}(\lambda) = \lambda_r + \lambda'_m - r - m + 1$ for the hook length of the square $(r, m)$.
+The partition $\lambda$ has an $h$-fixed hook in column $m$ at row $r$ when $r \ge 1$,
+$m \le \lambda_r$ and $h_{r,m}(\lambda) = r + h$.
+The number of partitions $\lambda$ of $n$ that have an $h$-fixed hook in column $m$ at some row
+$r \le n$ with $\lambda_r = k$ equals the coefficient of $q^n$ in
 
-The two sums agree term by term under `s ↦ s + k - h - m`; the second is stated,
-coefficientwise (the `s`-th term has no monomial below `q^s`). `h ∈ ℤ` with `h ≤ k - m`, so the
-lower limit `k - h - m + 1` of the first sum is a positive row index.
+$$
+\sum_{s=0}^{n} \frac{q^{s(k+m) + k(k-h-m+1)}}{(q;q)_{s+k-h-m} (q;q)_{m-1}}
+\binom{s+k-m}{k-m}_q,
+$$
+
+where $(q;q)_j = \prod_{i=1}^{j} (1 - q^i)$ and $\binom{a}{b}_q$ is the Gaussian binomial
+coefficient.
+
+The $s$-th term has no monomial below $q^s$, so this is also the coefficient of $q^n$ in the
+sum over all $s \ge 0$. The $s$-th term of that sum is the term with index $s + k - h - m + 1$
+of the source's first form
+
+$$
+\sum_{s \ge k-h-m+1} \frac{q^{s(k+m) + m(h-k+m-1)}}{(q;q)_{s-1} (q;q)_{m-1}}
+\binom{s+h-1}{k-m}_q,
+$$
+
+whose lower limit $k - h - m + 1$ is a positive row index.
 
 ## Depends on
 
 - [Gaussian binomial coefficient](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
 - [Finite $Q$-Pochhammer symbol](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
-- [Is Fixed Column Hook](is-fixed-column-hook.md)
-- [Partition Hook Length](partition-hook-length.md)
-- [Partition Row Len](partition-row-len.md)
+- [Fixed hooks in a column of a partition](is-fixed-column-hook.md)
+- [Hook length of a square of a partition](partition-hook-length.md)
+- [Row lengths of a partition](partition-row-len.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.curlingNumber_nil
 ---
 
-# Curling Number nil
+# Curling number of the empty string
 
-`𝒞(ε) = 1`.
+**Curling number of the empty string.** The empty string $\varepsilon$ has curling number
+$\mathcal{C}(\varepsilon) = 1$.
 
 ## Depends on
 
-- [Curling Number](curling-number.md)
+- [Curling number](curling-number.md)
 
 ## Sources
 

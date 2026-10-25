@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.minusculePolynomialA_coeffMatrix_hasNonnegativeMinors
 ---
 
-# Minuscule Polynomial A coeff Matrix has Nonnegative Minors
+# Total positivity of the coefficient matrix of the minuscule polynomials
 
-The coefficient matrix `[N_{n,k}]_{n,k ≥ 1}` (zero above the diagonal) is totally positive:
-all its minors are non-negative. Row `i` and column `j` hold `N_{i+1, j+1}`.
+**Total positivity of the coefficient matrix of the minuscule polynomials.** Let $N_{n,k}$
+be the coefficient of $x^k$ in the type-A minuscule polynomial $N_n(x)$. The infinite real matrix
+$[N_{n,k}]_{n,k \ge 1}$, whose entry in row $i$ and column $j$ ($i, j \ge 0$) is
+$N_{i+1,j+1}$, has nonnegative minors: every square submatrix obtained by choosing finitely many
+rows and finitely many columns, each in increasing order, has nonnegative determinant.
+
+The matrix vanishes on and above its diagonal, since $N_n$ has degree at most $n - 1$.
 
 ## Depends on
 
 - [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

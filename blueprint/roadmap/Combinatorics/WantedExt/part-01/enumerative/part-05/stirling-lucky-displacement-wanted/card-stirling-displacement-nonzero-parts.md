@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_stirling_displacement_nonzero_parts
 ---
 
-# Card stirling displacement nonzero parts
+# Stirling permutations with $n$ nonzero displacements
 
-The number of Stirling permutations of order `n` whose displacement
-composition has exactly `n` nonzero parts is the Catalan number `C_n`.
+**Stirling permutations with $n$ nonzero displacements.** For every natural number $n$, the
+number of Stirling permutations $w$ of order $n$ in which exactly $n$ cars have nonzero
+displacement (equivalently, whose displacement composition $\mathrm{dis}(w)$ has exactly $n$
+nonzero parts) is the Catalan number $C_n$.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Displacement](stirling-displacement.md)
+- [Displacement of a car](stirling-displacement.md)
 
 ## Sources
 

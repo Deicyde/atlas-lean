@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.cyclicProductNumber_zero_right
 ---
 
-# Cyclic Product Number zero right
+# Cyclic product numbers with second argument zero
 
-`H(n, 0) = 0`, since `c(n + 1, 0) = 0`.
+**Cyclic product numbers with second argument zero.** For every natural number $n$, the
+cyclic product number $H(n, 0)$ is $0$, since the unsigned Stirling number of the first kind
+$c(n + 1, 0)$ is $0$.
 
 ## Depends on
 
-- [Cyclic Product Number](cyclic-product-number.md)
+- [Cyclic product numbers](cyclic-product-number.md)
 
 ## Sources
 

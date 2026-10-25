@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.generalizedMotzkin_centralTrinomial_relation
 ---
 
-# Generalized Motzkin central Trinomial relation
+# Generalized Motzkin numbers from three central trinomial coefficients
 
-Proposition 1: for integers a, b and natural n, the generalized Motzkin number is related to
-three consecutive generalized central trinomial coefficients by the displayed identity. The a = b =
-1 specialization is omitted because it follows by substitution. Source: Nadav Kohen, *Density and
-Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition
-1.
+**Generalized Motzkin numbers from three central trinomial coefficients.** For integers $a$, $b$
+let $T_r$ and $M_r$ be the constant terms of $(a x^{-1} + b + a x)^r$ and of
+$(a x^{-1} + b + a x)^r (1 - x^2)$, the generalized central trinomial coefficients and generalized
+Motzkin numbers. Then for every natural number $n$,
+
+$$
+2a^2 M_n = (4a^2 - b^2) T_n + 2b T_{n+1} - T_{n+2}.
+$$
 
 ## Depends on
 
-- [Central Trinomial](central-trinomial.md)
-- [Generalized Motzkin](generalized-motzkin.md)
+- [Generalized central trinomial coefficients](central-trinomial.md)
+- [Generalized Motzkin numbers](generalized-motzkin.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 1.

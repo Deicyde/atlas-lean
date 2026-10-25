@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_exp_mul_digamma_div_eq_mul_log_one_sub
 ---
 
-# Sum exp mul digamma div eq mul log one sub
+# A twisted sum of digamma values
 
-For integers `1 ≤ k < p`, with `ζₚ = e^{2πi/p}`,
-`∑_{α=1}^{p} ζₚ^{kα} ψ(α/p) = p Log(1 - ζₚ^k)`, where `ψ` is the digamma function and `Log` the
-principal logarithm.
+**A twisted sum of digamma values.** Let $p$ and $k$ be natural numbers with $1 \le k < p$,
+and let $\psi = \Gamma'/\Gamma$ be the digamma function. Then
+
+$$
+\sum_{\alpha=1}^{p} e^{2\pi i k \alpha / p} \, \psi\left( \frac{\alpha}{p} \right) =
+p \operatorname{Log}\left( 1 - e^{2\pi i k / p} \right),
+$$
+
+where $\operatorname{Log}$ is the principal branch of the complex logarithm.
 
 ## Depends on
 

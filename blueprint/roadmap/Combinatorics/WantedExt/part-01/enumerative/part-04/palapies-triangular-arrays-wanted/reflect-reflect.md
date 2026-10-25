@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.TriangularRecurrence.reflect_reflect
 ---
 
-# Reflect reflect
+# Reflection of triangular recurrences is an involution
 
-Reflection is an involution.
+**Reflection of triangular recurrences is an involution.** Reflecting a triangular
+recurrence with parameters $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ twice gives back the
+recurrence with parameters $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
-- [Reflect](reflect.md)
+- [Triangular recurrence](triangular-recurrence.md)
+- [Reflected triangular recurrence](reflect.md)
 
 ## Sources
 

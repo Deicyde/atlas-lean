@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.meteredParkingCount_two
 ---
 
-# Metered Parking Count two
+# Metered parking functions with two cars
 
-For every `t ≥ 1`, `mpf_{2,n}(t) = n^2 - 1`.
+**Metered parking functions with two cars.** For every natural number $t \ge 1$ and every
+natural number $n$, the number of $t$-metered $(2, n)$-parking functions is
+$\mathrm{mpf}_{2,n}(t) = \max(n^2 - 1, 0)$, that is, $n^2 - 1$ for $n \ge 1$ and $0$ for $n = 0$.
 
 ## Depends on
 
-- [Metered Parking Count](metered-parking-count.md)
+- [Number of metered parking functions](metered-parking-count.md)
 
 ## Sources
 

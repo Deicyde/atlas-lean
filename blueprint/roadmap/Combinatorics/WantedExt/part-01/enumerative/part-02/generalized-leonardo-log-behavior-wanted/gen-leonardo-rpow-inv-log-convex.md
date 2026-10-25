@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.genLeonardo_rpow_inv_logConvex
 ---
 
-# Gen Leonardo rpow inv log Convex
+# Log-convexity of the n-th roots of generalized Leonardo numbers
 
-For every `k ≥ 1`, the sequence `(L_{k,n}^{1/n})_{n ≥ 9}` of `n`-th roots of the generalized
-Leonardo numbers is log-convex: `(L_{k,n}^{1/n})² ≤ L_{k,n-1}^{1/(n-1)} L_{k,n+1}^{1/(n+1)}` for
-every `n ≥ 10`.
+**Log-convexity of the n-th roots of generalized Leonardo numbers.** Let $k \ge 1$ be an
+integer and let $L_{k,n}$ be the generalized Leonardo numbers. Then the sequence
+$(L_{k,n}^{1/n})_{n \ge 9}$ is log-convex:
+$(L_{k,n}^{1/n})^2 \le L_{k,n-1}^{1/(n-1)} L_{k,n+1}^{1/(n+1)}$ for every integer $n \ge 10$.
 
 ## Depends on
 

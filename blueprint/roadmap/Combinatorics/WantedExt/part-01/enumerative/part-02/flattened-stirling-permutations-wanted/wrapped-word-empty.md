@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.wrappedWord_empty
 ---
 
-# Wrapped Word empty
+# Wrapped word of the empty set
 
-`g(∅)` is the empty word.
+**Wrapped word of the empty set.** The wrapped word $g(\emptyset)$ of the empty set is the
+empty word.
 
 ## Depends on
 
-- [Wrapped Word](wrapped-word.md)
+- [Wrapped word of a finite set](wrapped-word.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.endsWithUp_iff
 ---
 
-# Ends With Up iff
+# Characterization of paths ending with an up step
 
-The characteristic existential condition for ending with an up step.
+**Characterization of paths ending with an up step.** Write a path of length $n$ as a
+sequence of steps $p_0, \dots, p_{n-1}$, each $D$ (down), $F$ (flat) or $U$ (up), encoded as
+$0$, $1$, $2$. The path ends with an up step if and only if there is a position $i < n$ with
+$i + 1 = n$ and $p_i = U$.
 
 ## Depends on
 
-- [Ends With Up](ends-with-up.md)
+- [Paths ending with an up step](ends-with-up.md)
 
 ## Sources
 

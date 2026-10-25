@@ -4,13 +4,13 @@ navigation: module
 
 # Partition Genus
 
-- [Is Increasing Cycle Perm](is-increasing-cycle-perm.md)
-- [Set Partition Genus](set-partition-genus.md)
-- [Partition Genus Count](partition-genus-count.md)
-- [Is Increasing Cycle Perm one](is-increasing-cycle-perm-one.md)
-- [Set Partition Genus one](set-partition-genus-one.md)
-- [Is Increasing Cycle Perm fin Rotate](is-increasing-cycle-perm-fin-rotate.md)
-- [Set Partition Genus fin Rotate](set-partition-genus-fin-rotate.md)
-- [Pairing genus generating Function](pairing-genus-generating-function.md)
-- [Two Block one Face and genus](two-block-one-face-and-genus.md)
-- [Partition Genus Count two Blocks](partition-genus-count-two-blocks.md)
+- [Increasing-cycle permutation](is-increasing-cycle-perm.md)
+- [Genus of a set partition](set-partition-genus.md)
+- [Number of set partitions of given type and genus](partition-genus-count.md)
+- [The identity is an increasing-cycle permutation](is-increasing-cycle-perm-one.md)
+- [The partition into singletons has genus zero](set-partition-genus-one.md)
+- [The cyclic rotation is an increasing-cycle permutation](is-increasing-cycle-perm-fin-rotate.md)
+- [The one-block partition has genus zero](set-partition-genus-fin-rotate.md)
+- [Genus generating function of pairings](pairing-genus-generating-function.md)
+- [Genus of two-block partitions](two-block-one-face-and-genus.md)
+- [Genus count of two-block partitions](partition-genus-count-two-blocks.md)

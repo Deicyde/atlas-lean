@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.DelannoyConstructions.delannoy_eq_sum_choose_mul_choose_two_pow
 ---
 
-# Delannoy eq sum choose mul choose two pow
+# Delannoy numbers as a sum of powers of two
 
-The Delannoy number `D(m, n)` (the Delannoy triangle entry
-`T(m + n, m; 1)`) equals `∑_{j=0}^{min(m, n)} C(m, j) C(n, j) 2^j`.
+**Delannoy numbers as a sum of powers of two.** For all natural numbers $m$ and $n$, the
+Delannoy number $D(m, n)$, that is, the Delannoy triangle entry $T(m + n, m; 1)$, satisfies
+$D(m, n) = \sum_{j=0}^{\min(m, n)} \binom{m}{j} \binom{n}{j} 2^j$.
 
 ## Depends on
 

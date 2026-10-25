@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sytHookCount_add_eq_humpCount_sub
 ---
 
-# Syt Hook Count add eq hump Count sub
+# Hook tableau counts as differences of hump counts
 
-Corollary 10: for `1 ≤ k ≤ ⌊n/2⌋`, the sum of the two adjacent
-`SYT_{2k-1}` counts equals the difference of the corresponding height-`k` hump
-counts. Casts make the subtraction an identity in `ℤ`, avoiding natural truncation.
+**Hook tableau counts as differences of hump counts.** For natural numbers $m$ and $j$, let
+$\mathrm{SYT}_j(2,1;m)$ be the number of standard Young tableaux of order $m$ in the
+$(2,1)$-hook whose first row is longer than its second row by exactly $j$, and let $H_{m,j}$ be
+the number of Motzkin paths of length $m$ with one distinguished hump of height $j$ (a hump is
+an up step followed by flat steps and then a down step; its height is the height reached by the
+up step). For natural numbers $n$ and $k$ with $1 \le k \le \lfloor n/2 \rfloor$,
+
+$$
+\mathrm{SYT}_{2k-1}(2,1;n+1) + \mathrm{SYT}_{2k-1}(2,1;n) = H_{n+1,k} - H_{n,k},
+$$
+
+where the subtraction is taken in the integers.
 
 ## Depends on
 
-- [Motzkin Hump Count](motzkin-hump-count.md)
-- [Syt Hook Count](syt-hook-count.md)
+- [Number of humps of a given height in Motzkin paths](motzkin-hump-count.md)
+- [Standard Young tableaux in the $(2,1)$-hook with given row difference](syt-hook-count.md)
 
 ## Sources
 

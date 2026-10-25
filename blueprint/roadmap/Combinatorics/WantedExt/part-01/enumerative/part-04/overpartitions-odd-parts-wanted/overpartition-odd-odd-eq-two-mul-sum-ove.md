@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOdd_odd_eq_two_mul_sum_overpartition
 ---
 
-# Overpartition Odd odd eq two mul sum overpartition
+# Overpartitions of odd numbers into odd parts
 
-For `n ≥ 0`, `po(2n+1) = 2 ∑_{k ≥ 0} p̄(n - 2k(k+1))`, with `p̄` the overpartition function
-(overline displayed in the arXiv version, Theorem 3.4; with `p` the identity fails at `n = 1`).
+**Overpartitions of odd numbers into odd parts.** Let $\mathrm{po}(m)$ be the number of
+overpartitions of $m$ into odd parts and $\overline{p}(m)$ the number of overpartitions of $m$.
+For every natural number $n$,
+$\mathrm{po}(2n+1) = 2 \sum_k \overline{p}(n - 2k(k+1))$, the sum running over the natural
+numbers $k$ with $2k(k+1) \le n$.
+
+With the partition function $p$ in place of $\overline{p}$ the identity fails at $n = 1$.
 
 ## Depends on
 
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 - [Overpartition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources

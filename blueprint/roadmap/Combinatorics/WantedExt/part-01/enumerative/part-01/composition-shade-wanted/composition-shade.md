@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.compositionShade
 ---
 
-# Composition Shade
+# Shade of a composition
 
-The number of shaded cells of the bargraph of a composition given by its list of parts
-(columns `0, 1, …`, parts read with `List.getD _ _ 0`, so columns past the last part are
-empty): cells `(c, h)` with `h ≥ 1`, `h > x_c` and `x_j ≥ h + (c - j)` for some `j < c`.  All
-such cells satisfy `c < length + sum` and `h ≤ sum`.
+**Shade of a composition.** Let $x = (x_0, x_1, \ldots, x_{k-1})$ be a finite list of
+natural numbers (the parts of a composition), drawn as a bargraph whose column $c$ has height
+$x_c$, with $x_c = 0$ for $c \ge k$. A cell $(c, h)$ with column $c \ge 0$ and height $h \ge 1$
+is shaded when $h > x_c$ and $x_j \ge h + (c - j)$ for some column $j < c$. The shade of $x$
+is the number of shaded cells.
+
+Every shaded cell satisfies $c < k + s$ and $h \le s$, where $s = x_0 + \cdots + x_{k-1}$,
+so the number of shaded cells is finite.
 
 ## Depends on
 

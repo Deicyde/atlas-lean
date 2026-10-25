@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.diagonalOfList
 ---
 
-# Diagonal Of List
+# Sequence of a finite list
 
-The sequence `d_1, d_2, …, d_ℓ, 0, 0, …` given by a finite list `[d_1, …, d_ℓ]`, with value
-`0` at index `0` (the indexing of `diagonalSequence`).
+**Sequence of a finite list.** A finite list $(d_1, \dots, d_\ell)$ of natural numbers
+determines the sequence of natural numbers whose value at index $k$ is $d_k$ for
+$1 \le k \le \ell$, and $0$ for $k = 0$ and for $k > \ell$. This is the indexing of diagonal
+sequences, which take the value $0$ at index $0$.
 
 ## Depends on
 

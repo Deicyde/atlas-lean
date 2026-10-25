@@ -5,20 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.isMeteredParkingFunction_pred_iff
 ---
 
-# Is Metered Parking Function pred iff
+# Metered parking functions with meter $n - 1$ and more cars than spots
 
-Characterization of `(n - 1)`-metered `(n + k, n)`-parking functions for `k > 0`: `α` is one
-iff its first `n` entries form a classical parking function (MathlibExt's threshold form of
-`a'_i ≤ i` for the non-decreasing rearrangement) and, with `(π_1, …, π_n)` the
-`(n - 1)`-metered outcome of `(a_1, …, a_n)`, `a_{n+i} ≤ π_{i mod n}` for all `i ∈ [k]`. The index
-`i mod n` is read with representatives `1, …, n` (zero-based `i % n`), as the proof describes the
-periodic outcome `(π_1, …, π_n, π_1, …)`; the printed `π_{n mod n} = π_0` is undefined.
+**Metered parking functions with meter $n - 1$ and more cars than spots.** Let $k > 0$ and
+$f : \{0, \dots, n+k-1\} \to \{0, \dots, n-1\}$, and let $\pi_0, \dots, \pi_{n-1}$ be the
+$(n-1)$-metered outcome of the first $n$ preferences $(f(0), \dots, f(n-1))$ on $n$ spots, where
+$\pi_c$ is the spot in which car $c$ parks, if it parks. Then $f$ is an $(n-1)$-metered parking
+function if and only if $(f(0), \dots, f(n-1))$ is a parking function and, for every
+$i \in \{0, \dots, k-1\}$, car $i \bmod n$ parks in this outcome and $f(n + i) \le \pi_{i \bmod n}$.
+
+The outcome is read periodically: the later preferences $f(n), f(n+1), \dots$ are compared with
+$\pi_0, \dots, \pi_{n-1}, \pi_0, \dots$ in turn.
 
 ## Depends on
 
-- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Metered parking function](is-metered-parking-function.md)
 - [Parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
-- [Metered Outcome](metered-outcome.md)
+- [Outcome of the metered parking scheme](metered-outcome.md)
 
 ## Sources
 

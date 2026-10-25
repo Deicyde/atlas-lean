@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.even_succ_eq_sum_runLength_prod
 ---
 
-# Even succ eq sum run Length prod
+# Even colored compositions and runs in binary strings
 
-For `k ≥ 0`, `e(k + 1)` equals the sum over all binary strings of length `k` of the product
-of the lengths of their runs of `1`s (`true`s); the all-`0` string contributes the empty
-product `1`.
+**Even colored compositions and runs in binary strings.** For every $k \ge 0$, the number
+$e(k + 1) = c_{2,0}(k + 1)$ of even colored compositions of $k + 1$, in which only the parts at
+even positions are colored, equals the sum, over all binary strings of length $k$, of the
+product of the lengths of the maximal runs of $1$s in the string; a string without a $1$
+contributes the empty product $1$.
 
 ## Depends on
 
-- [Positional Colored Composition Count](positional-colored-composition-count.md)
+- [Positional colored compositions](positional-colored-composition-count.md)
 
 ## Sources
 

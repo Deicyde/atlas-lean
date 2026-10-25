@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.choose_mul_choose_eq_sum_santosBeta
 ---
 
-# Choose mul choose eq sum santos Beta
+# Santos's expansion of a product of binomial coefficients
 
-Equation (8): for natural `p`, `q` and complex `x`, `z`,
-`binom(2x + z - q, p) binom(x, q) = ∑_{i=0}^{p+q} β_i(p, q, z) binom(2x + z, i)`.
+**Santos's expansion of a product of binomial coefficients.** For natural numbers $p$, $q$
+and complex numbers $x$, $z$,
+
+$$\binom{2x + z - q}{p} \binom{x}{q} = \sum_{i=0}^{p+q} \beta_i(p, q, z) \binom{2x + z}{i},$$
+
+where $\beta_i(p, q, z)$ are Santos's coefficients and, for complex $w$ and natural $n$,
+$\binom{w}{n} = w(w-1)\cdots(w-n+1)/n!$.
 
 ## Depends on
 
-- [Santos Beta](santos-beta.md)
+- [Santos's coefficients](santos-beta.md)
 
 ## Sources
 

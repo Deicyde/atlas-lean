@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_even_div_two_mul_add_one
 ---
 
-# Sum choose even div two mul add one
+# Even-index binomial sum with odd reciprocal weights
 
-`∑_{k ≤ n/2} binom(n,2k)/(2k+1) = 2^n/(n+1)`.
+**Even-index binomial sum with odd reciprocal weights.** For every natural number $n$,
+
+$$\sum_{k=0}^{\lfloor n/2 \rfloor} \frac{1}{2k+1} \binom{n}{2k} = \frac{2^n}{n+1}.$$
 
 ## Depends on
 

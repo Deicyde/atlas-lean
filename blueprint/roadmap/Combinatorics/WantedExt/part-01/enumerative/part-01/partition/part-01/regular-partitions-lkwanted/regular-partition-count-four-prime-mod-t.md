@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.regularPartitionCount_four_prime_mod_two
 ---
 
-# Regular Partition Count four prime mod two
+# Parity of $(4, p)$-regular partitions in nonresidue progressions
 
-For a prime `p ≥ 5` and `r` with `8r + 1` a quadratic nonresidue modulo `p`,
-`b_{4,p}(pn + r) ≡ 0 (mod 2)` for all `n ≥ 0`. Here `r ∈ ℕ`; every residue class mod `p`
-has such a representative.
+**Parity of $(4, p)$-regular partitions in nonresidue progressions.** Let $p \ge 5$ be a
+prime and let $r$ be a natural number such that $8r + 1$ is not a square modulo $p$ (a quadratic
+nonresidue). Write $b_{4,p}(m)$ for the number of $(4, p)$-regular partitions of $m$, that is,
+partitions of $m$ none of whose parts is divisible by $4$ or by $p$. Then
+$b_{4,p}(pn + r) \equiv 0 \pmod 2$ for every natural number $n$.
+
+Restricting $r$ to natural numbers loses nothing: every residue class modulo $p$ has a
+natural-number representative.
 
 ## Depends on
 
-- [Regular Partition Count](regular-partition-count.md)
+- [Number of $(\ell, k)$-regular partitions](regular-partition-count.md)
 
 ## Sources
 

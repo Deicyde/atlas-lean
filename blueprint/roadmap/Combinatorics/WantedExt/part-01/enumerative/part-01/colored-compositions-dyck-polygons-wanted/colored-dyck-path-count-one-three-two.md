@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coloredDyckPathCount_one_three_two
 ---
 
-# Colored Dyck Path Count one three two
+# Dyck paths of semilength 3 with two peaks
 
-With one color for every block, `d_{3,2} = 3` (a Narayana number).
+**Dyck paths of semilength 3 with two peaks.** With one color for every block ($\gamma_j = 1$
+for all $j$), the number of colored Dyck paths of semilength $3$ with $2$ peaks is
+$d_{3,2}(\gamma) = 3$, a Narayana number.
 
 ## Depends on
 
-- [Colored Dyck Path Count](colored-dyck-path-count.md)
+- [Number of colored Dyck paths](colored-dyck-path-count.md)
 
 ## Sources
 

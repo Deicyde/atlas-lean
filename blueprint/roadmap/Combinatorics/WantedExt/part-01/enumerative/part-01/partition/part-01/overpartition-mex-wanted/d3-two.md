@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.D3_two
 ---
 
-# D3 two
+# Three-colored distinct-part partitions of $2$
 
-The coefficient of `q^2` in `(-q;q)_∞^3` is `6`, represented by the six
-triples of colored distinct-part sets in the finite-set encoding `D3 2`.
+**Three-colored distinct-part partitions of $2$.** The number $D_3(2)$ of partitions of $2$ into
+parts of three colors, with the parts of each color distinct, equals $6$: the single part $2$ in
+one of three colors, or two parts $1$ in two different colors.
 
 ## Depends on
 
-- [D3](d3.md)
+- [Three-colored distinct-part partitions](d3.md)
 
 ## Sources
 

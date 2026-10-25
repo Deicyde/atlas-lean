@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.pendCount_infinite_family
 ---
 
-# Pend Count infinite family
+# Infinite family of congruences modulo 3 for PEND partitions
 
-For all `α ≥ 1` and `n ≥ 0`, `pend(3^{2α+1} n + (17 · 3^{2α} - 1) / 8) ≡ 0 (mod 3)`;
-the division is exact since `3^{2α} ≡ 1 (mod 8)`.
+**Infinite family of congruences modulo 3 for PEND partitions.** Let $\mathrm{pend}(m)$ be
+the number of PEND partitions of $m$. For all natural numbers $\alpha \ge 1$ and $n$,
+$\mathrm{pend}\left(3^{2\alpha+1} n + (17 \cdot 3^{2\alpha} - 1)/8\right) \equiv 0 \pmod{3}$.
+
+The division by $8$ is exact, since $3^{2\alpha} \equiv 1 \pmod{8}$.
 
 ## Depends on
 
-- [Pend Count](pend-count.md)
+- [The PEND partition function](pend-count.md)
 
 ## Sources
 

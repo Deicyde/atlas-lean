@@ -5,17 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.nondecreasingDyck_subword_UUD
 ---
 
-# Nondecreasing Dyck subword UUD
+# Generating functions and closed form for the subword $UUD$ in non-decreasing Dyck paths
 
-Subword `UUD` in non-decreasing Dyck paths: `F_UUD(x, y)`, `D_UUD(x)`, and the closed form of
-`d_UUD(n)` for `n ≥ 3`.
+**Generating functions and closed form for the subword $UUD$ in non-decreasing Dyck paths.**
+For $n \ge 0$ let $\mathcal{D}_n$ be the set of non-decreasing Dyck paths of semilength $n$, let
+$\#_{UUD}(P)$ be the number of occurrences of the subword $UUD$ in a path $P$, and let
+$d_{UUD}(n) = \sum_{P \in \mathcal{D}_n} \#_{UUD}(P)$. Let
+$F_{UUD}(x, y) = \sum_{n \ge 1} \sum_{P \in \mathcal{D}_n} y^{\#_{UUD}(P)} x^n$, a power series
+in $x$ with coefficients in $\mathbb{Z}[y]$, and $D_{UUD}(x) = \sum_{n \ge 0} d_{UUD}(n) x^n$ in
+$\mathbb{Z}[[x]]$. Then
+
+$$(1 - 3x + x^2 (3 - 2y) - x^3 (1 - y)) F_{UUD}(x, y) = (1 - x) x (1 - x(1 - y))$$
+
+and $(1 - 3x + x^2)^2 D_{UUD}(x) = (1 - x)^2 x^2$, and for every $n \ge 3$,
+
+$$10\, d_{UUD}(n) = (11 - 5n) F_{2n} + (3n - 5) L_{2n},$$
+
+where $F_k$ and $L_k$ are the Fibonacci and Lucas numbers ($F_0 = 0$, $F_1 = 1$, $L_0 = 2$,
+$L_1 = 1$).
 
 ## Depends on
 
 - [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
-- [Nondecreasing Dyck Subword Bivariate GF](nondecreasing-dyck-subword-bivariate-gf.md)
-- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
-- [Nondecreasing Dyck Subword Total GF](nondecreasing-dyck-subword-total-gf.md)
+- [Bivariate generating function of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-bivariate-gf.md)
+- [Total occurrences of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-total.md)
+- [Generating function of the total subword count in non-decreasing Dyck paths](nondecreasing-dyck-subword-total-gf.md)
 
 ## Sources
 

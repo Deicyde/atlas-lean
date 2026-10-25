@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.compositionMinPartCount
 ---
 
-# Composition Min Part Count
+# Compositions with parts at least $v$
 
-`c(u, v)`: compositions of `u` into parts at least `v`.
+**Compositions with parts at least $v$.** For natural numbers $u$ and $v$, $c(u, v)$ is the
+number of compositions of $u$ (ordered sequences of positive integers summing to $u$) all of
+whose parts are at least $v$.
 
 ## Depends on
 

@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_peakless_tieless_parkingFunction_last
 ---
 
-# Card peakless tieless parking Function last
+# Peakless-tieless parking functions by last entry
 
-For `1 ≤ i ≤ n`, the number of peakless-tieless parking functions of length `n` with
-last entry `a_n = i` is the Catalan-triangle entry `C_{n,i} = C(n+i-2, i-1) (n-i+1) / n`
-(OEIS A009766 `T(n-1, i-1)`, with the 1-based indexing of the paper's proof).
+**Peakless-tieless parking functions by last entry.** Write a parking function $f$ of length
+$n$ as the sequence $(a_1, \dots, a_n)$ with $a_j = f(j-1) + 1 \in \{1, \dots, n\}$. It is
+peakless-tieless if there is no $j$ with $a_{j-1} < a_j > a_{j+1}$ (a peak) and no $j$ with
+$a_j = a_{j+1}$ (a tie). For natural numbers $i$ and $n$ with $1 \le i \le n$, the number of
+peakless-tieless parking functions of length $n$ with last entry $a_n = i$ is
+
+$$\binom{n+i-2}{i-1} \cdot \frac{n-i+1}{n}.$$
+
+This is the Catalan-triangle entry $T(n-1, i-1)$ of OEIS A009766.
 
 ## Depends on
 

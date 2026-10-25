@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_odd_div_two_mul_add_one
 ---
 
-# Sum choose odd div two mul add one
+# Odd-index binomial sum with odd reciprocal weights
 
-Equation (18): `∑_{k=1}^{⌈n/2⌉} binom(n,2k-1)/(2k+1) = 2^{n+1}/(n+2) - 2^n/(n+1)`.
+**Odd-index binomial sum with odd reciprocal weights.** For every natural number $n$,
+
+$$\sum_{k=1}^{\lceil n/2 \rceil} \frac{1}{2k+1} \binom{n}{2k-1} =
+\frac{2^{n+1}}{n+2} - \frac{2^n}{n+1}.$$
 
 ## Depends on
 

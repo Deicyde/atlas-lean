@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.whiteSquares
 ---
 
-# White Squares
+# White squares of the square board
 
-The white squares (`i + j` even) of `S_m`.
+**White squares of the square board.** For a natural number $m$, the white squares of the
+square board $S_m = [1, m]^2$ are the integer squares $(i, j) \in S_m$ for which $i + j$ is
+even.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Square Board](square-board.md)
+- [The square board](square-board.md)
 
 ## Sources
 

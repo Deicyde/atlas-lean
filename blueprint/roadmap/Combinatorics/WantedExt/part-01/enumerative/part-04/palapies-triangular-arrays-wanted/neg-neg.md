@@ -5,21 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.TriangularRecurrence.negNeg
 ---
 
-# Neg Neg
+# Negative-negative numbers
 
-The negative-negative numbers `a^{NN}_{n,k}` (`n, k ∈ ℤ`) of Definition 2:
-`a_{0,k} = δ_{k=0}` for all `k`, `a_{n,k}` for `n > 0`, `k ≥ 0`, `0` for `n > 0 > k`
-and for `n < 0`, `k > n`, and for `k ≤ n < 0`
-`a_{n,k} = (a_{n+1,k+1} - (α(n+1) + β(k+1) + γ) a_{n,k+1}) / (α'(n+1) + β'(k+1) + γ')`.
+**Negative-negative numbers.** For parameters
+$(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ with triangular array $a_{n,k}$ ($n, k \ge 0$),
+the negative-negative numbers $a^{NN}_{n,k} \in \mathbb{Q}$, $n, k \in \mathbb{Z}$, are defined
+as follows (Definition 2): $a^{NN}_{0,k} = \delta_{k,0}$ for all $k$; $a^{NN}_{n,k} = a_{n,k}$ for
+$n > 0$ and $k \ge 0$; $a^{NN}_{n,k} = 0$ for $n > 0 > k$ and for $n < 0$, $k > n$; and, for
+$k \le n < 0$,
+$a^{NN}_{n,k} = (a^{NN}_{n+1,k+1} - (\alpha(n+1) + \beta(k+1) + \gamma)\, a^{NN}_{n,k+1}) /
+(\alpha'(n+1) + \beta'(k+1) + \gamma')$, where division by $0$ gives $0$.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
+- [Triangular recurrence](triangular-recurrence.md)
 
 ## Proof depends on
 
-- [Array](array.md)
-- [Neg Neg Aux](neg-neg-aux.md)
+- [Triangular array of a linear recurrence](array.md)
+- [Negative-negative numbers on and below the diagonal (auxiliary)](neg-neg-aux.md)
 
 ## Sources
 

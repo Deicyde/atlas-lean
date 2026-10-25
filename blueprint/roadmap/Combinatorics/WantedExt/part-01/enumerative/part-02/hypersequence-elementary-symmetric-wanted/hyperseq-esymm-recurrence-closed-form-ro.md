@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.hyperseq_esymm_recurrence_closed_form_row_sums
 ---
 
-# Hyperseq esymm recurrence closed form row sums
+# Recurrence, closed form and row sums of $e_{j,k}(n)$
 
-The coefficients `e_{j,k}(n)` satisfy `e_{0,k}(n) = δ_{0,k}` and the recurrence
-`e_{j,k}(n) = e_{j-1,k}(n) + (n + j) e_{j-1,k-1}(n)` (3.1), have the closed form
-`e_{j,k}(n) = ∑_{ℓ=0}^{k} binom(j-k+ℓ, ℓ) [j, j-k+ℓ] (n + 1)^ℓ` for `k ≤ j` (3.2), row sums
-`∑_k e_{j,k}(n) = (n + 2)^(j̄)` (3.3) and alternating row sums
-`∑_k (-1)^k e_{j,k}(n) = (-1)^j n^(j̄)` (3.4).
-
-The recurrence is stated for `j, k ≥ 1` (shifted indices), and the closed form for `k ≤ j`
-(for `k > j` both `e_{j,k}(n)` and the paper's empty-range conventions give `0`).
+**Recurrence, closed form and row sums of $e_{j,k}(n)$.** Let $n \in \mathbb{N}$ and let
+$e_{j,k}(n)$ be the elementary symmetric polynomial of degree $k$ in $n + 1, \dots, n + j$.
+Write $[j, \ell]$ for the unsigned Stirling numbers of the first kind and
+$x^{\overline{j}} = x (x + 1) \cdots (x + j - 1)$ for the rising factorial. Then
+$e_{0,k}(n) = \delta_{0,k}$ for all $k$;
+$e_{j+1,k+1}(n) = e_{j,k+1}(n) + (n + j + 1) \, e_{j,k}(n)$ for all $j, k \in \mathbb{N}$;
+$e_{j,k}(n) = \sum_{\ell=0}^{k} \binom{j-k+\ell}{\ell} [j, j-k+\ell] \, (n + 1)^\ell$ for all
+$k \le j$; and for all $j$, $\sum_{k=0}^{j} e_{j,k}(n) = (n + 2)^{\overline{j}}$ and
+$\sum_{k=0}^{j} (-1)^k e_{j,k}(n) = (-1)^j n^{\overline{j}}$.
 
 ## Depends on
 

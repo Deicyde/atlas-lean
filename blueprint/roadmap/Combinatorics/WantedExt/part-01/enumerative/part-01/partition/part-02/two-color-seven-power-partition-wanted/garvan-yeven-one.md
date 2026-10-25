@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.garvanYEven_one
 ---
 
-# Garvan YEven one
+# Initial coefficient vector for even powers of 7
 
-`y^{(2k)}_1 = x_{2k-1}`.
+**Initial coefficient vector for even powers of 7.** For all natural numbers $k$ and $j$,
+the first coefficient vector of Theorem 3 agrees with Garvan's coefficient vector $x_{2k-1}$:
+$y^{(2k)}_{1,j} = x_{2k-1,j}$. For $k = 0$ the index $2k - 1$ is read as $0$.
 
 ## Depends on
 
-- [Garvan X](garvan-x.md)
-- [Garvan YEven](garvan-yeven.md)
+- [Garvan's coefficient vectors](garvan-x.md)
+- [Coefficient vectors for even powers of 7](garvan-yeven.md)
 
 ## Sources
 

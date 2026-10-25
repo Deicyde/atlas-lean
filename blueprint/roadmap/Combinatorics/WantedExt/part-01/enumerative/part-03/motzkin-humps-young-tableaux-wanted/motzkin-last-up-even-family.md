@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.MotzkinLastUpEvenFamily
 ---
 
-# Motzkin Last Up Even Family
+# Motzkin prefixes of even height whose last non-flat step is up
 
-The finite disjoint union `⋃_{1 ≤ k ≤ ⌊n/2⌋} 𝓜^{*U}_{n,2k}`, retaining the
-index `k`; its paths end at height `2k` and have last non-flat step `U`.
+**Motzkin prefixes of even height whose last non-flat step is up.** Use the steps
+$U = (1,1)$, $F = (1,0)$ and $D = (1,-1)$, and call a word in these steps a Motzkin prefix if
+none of its initial segments ends below height $0$. For a natural number $n$, this is the set
+of pairs $(k, p)$ where $k$ is a natural number with $1 \le k \le \lfloor n/2 \rfloor$ and $p$
+is a Motzkin prefix of length $n$ ending at height $2k$ that contains a $U$ after which every
+step is $F$.
+
+This is the paper's disjoint union
+$\bigcup_{1 \le k \le \lfloor n/2 \rfloor} \mathcal{M}^{*U}_{n,2k}$, keeping the index $k$ with
+each path.
 
 ## Depends on
 
@@ -16,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Motzkin Prefix](is-motzkin-prefix.md)
-- [Last Nonflat Step Up](last-nonflat-step-up.md)
+- [Motzkin prefix](is-motzkin-prefix.md)
+- [Paths whose last non-flat step is up](last-nonflat-step-up.md)
 
 ## Sources
 

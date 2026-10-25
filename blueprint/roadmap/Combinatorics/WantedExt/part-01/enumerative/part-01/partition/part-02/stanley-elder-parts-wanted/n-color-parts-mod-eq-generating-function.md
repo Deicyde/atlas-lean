@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.nColor_partsModEq_generatingFunction
 ---
 
-# N Color parts Mod Eq generating Function
+# Generating function for parts in a residue class over n-color partitions
 
-Theorem 7: for `0 < k < r`, with `C(k mod r, m)` the total number of parts of size `≡ k (mod r)`
-over the `n`-color partitions of `m`,
-`∑_{m ≥ 0} (rm+k) q^{rm+k} / (1 - q^{rm+k}) = ∏_{m ≥ 1} (1 - q^m)^m ∑_{m ≥ 1} C(k mod r, m) q^m`.
+**Generating function for parts in a residue class over n-color partitions.** Let $r$ and
+$k$ be natural numbers with $0 < k < r$, and for $i \ge 0$ let $C(k \bmod r, i)$ be the total
+number of parts of size congruent to $k$ modulo $r$, counted with multiplicity, over the
+$n$-color partitions of $i$. Then in the ring $\mathbb{Q}[[q]]$ of formal power series, with
+infinite sums and products taken coefficientwise,
+
+$$
+\sum_{m \ge 0} \frac{(rm+k)\,q^{rm+k}}{1 - q^{rm+k}} =
+\prod_{m \ge 1} (1 - q^m)^m \sum_{i \ge 0} C(k \bmod r, i)\, q^i.
+$$
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Sources
 

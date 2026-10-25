@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Pattern](../../part-04/odd-fibonacci-wanted/has-pattern.md)
+- [Classical pattern containment in a permutation](../../part-04/odd-fibonacci-wanted/has-pattern.md)
 
 ## Sources
 

@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.mk_psiFiveCoreAnalog_mul
 ---
 
-# Mk psi Five Core Analog mul
+# Generating function of the $\psi$-analog of the 5-core counts
 
-Generating function of `b̄_5`: `(∑ b̄_5(n) q^n) ψ(-q) = ψ^5(-q^5)`.
+**Generating function of the $\psi$-analog of the 5-core counts.** Let
+$\psi(q) = \sum_{n \in \mathbb{Z}} q^{n(2n-1)}$ and let $\bar b_5(n)$ be the coefficient of $q^n$
+in $\psi(-q^5)^5 / \psi(-q)$. Then, as integer power series,
+$\left(\sum_{n \ge 0} \bar b_5(n) q^n\right) \psi(-q) = \psi(-q^5)^5$.
 
 ## Depends on
 
-- [Psi Five Core Analog](psi-five-core-analog.md)
-- [Ramanujan Theta Pow](ramanujan-theta-pow.md)
+- [The ψ-analog of the 5-core partition function](psi-five-core-analog.md)
+- [Ramanujan's general theta function at powers of q](ramanujan-theta-pow.md)
 
 ## Proof depends on
 
-- [Constant Coeff ramanujan Theta Pow](constant-coeff-ramanujan-theta-pow.md)
+- [Constant term of Ramanujan's theta function](constant-coeff-ramanujan-theta-pow.md)
 
 ## Sources
 

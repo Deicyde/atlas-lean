@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.litCellsDecreasing_le_generatingFunction
 ---
 
-# Lit Cells Decreasing le generating Function
+# Lit cells of weakly decreasing partitions with few parts
 
-For `s ≤ k`, the generating function `lit[k, s]` of weakly decreasing partitions with at
-most `s + 1` parts and at most `k` lit cells is
-`∑_{i=0}^{s} t[s, i] q^{i(k-s)} [k + 1 - i, k - s]_q`.
+**Lit cells of weakly decreasing partitions with few parts.** Let $k$ and $s$ be natural
+numbers with $s \le k$. Write $\binom{M}{m}_q$ for the Gaussian binomial coefficient, and $t[s, i]$
+for the triangular $q$-binomial coefficient: the generating function of partitions with exactly
+$i$ parts $x_1 \ge \cdots \ge x_i$ such that $x_j + j - 1 \le s$ for $1 \le j \le i$. Let
+$\mathrm{lit}[k, s] \in \mathbb{Z}[[q]]$ be the power series whose coefficient of $q^n$ is the
+number of partitions of $n$ with at most $s + 1$ parts and at most $k$ lit cells as weakly
+decreasing bargraphs. Then
+
+$$\mathrm{lit}[k, s] = \sum_{i=0}^{s} t[s, i] \, q^{i(k-s)} \binom{k + 1 - i}{k - s}_q.$$
 
 ## Depends on
 
 - [Gaussian binomial coefficient](../../../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
-- [Lit Cells Decreasing](lit-cells-decreasing.md)
-- [Triangular QBinomial](triangular-qbinomial.md)
+- [Lit cells of a weakly decreasing bargraph](lit-cells-decreasing.md)
+- [Triangular $q$-binomial coefficient](triangular-qbinomial.md)
 
 ## Sources
 

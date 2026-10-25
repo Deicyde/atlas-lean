@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.orderedFactorizationCountAux_eq
 ---
 
-# Ordered Factorization Count Aux eq
+# The truncated ordered-factorization recursion stabilizes
 
-The fuel-bounded recursion is independent of the fuel once the fuel is at least the argument.
+**The truncated ordered-factorization recursion stabilizes.** Let $f_k(n)$ be the truncated
+recursion with $f_0(n) = 0$, $f_{k+1}(1) = 1$, and $f_{k+1}(n)$ the sum of $f_k(d)$ over the
+proper divisors $d$ of $n$ when $n \ne 1$. For all natural numbers $n$ and $k$ with $n \le k$,
+$f_k(n) = f(n)$, where $f(n)$ is the number of ordered factorizations of $n$ into factors
+greater than $1$.
 
 ## Depends on
 
-- [Ordered Factorization Count](ordered-factorization-count.md)
-- [Ordered Factorization Count Aux](ordered-factorization-count-aux.md)
+- [Number of ordered factorizations](ordered-factorization-count.md)
+- [Truncated recursion for ordered factorizations](ordered-factorization-count-aux.md)
 
 ## Sources
 

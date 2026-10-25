@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsStandardYoungTableau
 ---
 
-# Is Standard Young Tableau
+# Standard Young tableau
 
-A finite-cell encoding of an SYT of order `n`: entries occupy distinct cells, and
-every cell weakly northwest of entry `i` is occupied by an entry `j ≤ i`. This makes
-each initial segment a Young diagram and encodes strict increase along rows and columns.
+**Standard Young tableau.** A standard Young tableau of order $n$ is encoded by a map $T$ that
+assigns to each entry $i \in \{0, \dots, n-1\}$ a cell $T(i) = (r_i, c_i)$ with row and column
+indices in $\{0, \dots, n-1\}$. The map $T$ is a standard Young tableau when it is injective
+and, for every entry $i$ and every cell $(r, c)$ with $r \le r_i$ and $c \le c_i$, there is an
+entry $j \le i$ with $T(j) = (r, c)$.
+
+It follows that for every $m \le n$ the cells of the entries $0, \dots, m-1$ form a Young
+diagram, and that entries increase strictly along rows and down columns.
 
 ## Depends on
 

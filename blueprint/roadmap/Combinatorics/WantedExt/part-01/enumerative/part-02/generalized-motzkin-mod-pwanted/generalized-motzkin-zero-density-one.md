@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.generalizedMotzkin_zero_density_one
 ---
 
-# Generalized Motzkin zero density one
+# Generalized Motzkin numbers vanish modulo a prime with density one
 
-Theorem 3, vanishing-central-term case: if one T_r with r < p is zero modulo p, then the indices
-at which M_n is zero have asymptotic density one. Source: Nadav Kohen, *Density and Symmetry in the
-Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Theorem 3.
+**Generalized Motzkin numbers vanish modulo a prime with density one.** Let $a, b$ be integers
+and let $p$ be a prime. If $p$ divides the generalized central trinomial coefficient
+$T^{(a,b)}_r$ for some $r < p$, then the set of $n \in \mathbb{N}$ such that $p$ divides the
+generalized Motzkin number $M^{(a,b)}_n$ has natural density $1$.
 
 ## Depends on
 
-- [Central Trinomial](central-trinomial.md)
-- [Generalized Motzkin](generalized-motzkin.md)
+- [Generalized central trinomial coefficients](central-trinomial.md)
+- [Generalized Motzkin numbers](generalized-motzkin.md)
 - [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Theorem 3.

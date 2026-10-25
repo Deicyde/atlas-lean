@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.garvanYOdd
 ---
 
-# Garvan YOdd
+# Coefficient vectors for odd powers of 7
 
-The coefficient vectors `y^{(2k-1)}_β` of Theorem 2 (`β ≥ 1`): `y^{(2k-1)}_{1,j} = x_{2k-1,j}`
-and `y^{(2k-1)}_{β+1,j} = ∑_{i ≥ 1} y^{(2k-1)}_{β,i} m_{4i+1,i+j}`. The sum over `i` is cut at
-`7^{2k+β-2}`, above the support of `y^{(2k-1)}_β` (each step maps support `s` into `7s + 2`).
-Index `β = 0` gives `0`.
+**Coefficient vectors for odd powers of 7.** For $k \ge 1$ and $\beta \ge 1$ the vectors
+$y^{(2k-1)}_\beta = (y^{(2k-1)}_{\beta,1}, y^{(2k-1)}_{\beta,2}, \dots)$ are built from Garvan's
+vector $x_{2k-1}$ and Garvan's matrix $m_{i,j}$: $y^{(2k-1)}_{1,j} = x_{2k-1,j}$ and
+
+$$y^{(2k-1)}_{\beta+1,j} = \sum_{i=1}^{7^{2k+\beta-2}} y^{(2k-1)}_{\beta,i}\, m_{4i+1,i+j}.$$
+
+The index $\beta = 0$ gives $0$, and for $k = 0$ every entry is $0$.
+
+The sum over $i$ stops at $7^{2k+\beta-2}$, above the support of $y^{(2k-1)}_\beta$ (each step
+maps support $s$ into $7s + 2$).
 
 ## Depends on
 
@@ -18,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Garvan M](garvan-m.md)
-- [Garvan X](garvan-x.md)
+- [Garvan's matrix](garvan-m.md)
+- [Garvan's coefficient vectors](garvan-x.md)
 
 ## Sources
 

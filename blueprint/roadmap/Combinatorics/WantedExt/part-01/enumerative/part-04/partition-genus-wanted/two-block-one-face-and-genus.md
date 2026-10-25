@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.twoBlock_oneFace_and_genus
 ---
 
-# Two Block one Face and genus
+# Genus of two-block partitions
 
-For a set partition of `Fin n` into two blocks, the permutation `σ ∘ τ⁻¹` has exactly one
-cycle of length at least `2` (`f' = 1`), and for either block `B` (the cycle of `τ` through
-`x₀`), with `s` the number of fixed points of `σ ∘ τ⁻¹` lying in `B`, the genus satisfies
-`g = |B| - s - 1`. Taking `x₀` in each block gives both displayed formulas
-`g = p - s₁ - 1 = (n - p) - s₂ - 1`.
+**Genus of two-block partitions.** Let $\sigma$ be the cyclic permutation
+$i \mapsto i + 1 \pmod n$ of $\{0, \dots, n-1\}$, and let $\tau$ be an increasing-cycle permutation
+of $\{0, \dots, n-1\}$ with exactly two cycles, fixed points counted as cycles (so $\tau$ encodes a
+set partition into two blocks). Then $\sigma \circ \tau^{-1}$ has exactly one cycle of length at
+least $2$. Moreover, for every $x_0$ in $\{0, \dots, n-1\}$, if $B$ is the cycle of $\tau$
+containing $x_0$ and $s$ is the number of elements of $B$ fixed by $\sigma \circ \tau^{-1}$, then
+the genus $g$ of $\tau$ satisfies $g + 1 + s = |B|$.
+
+Taking $x_0$ in each of the two blocks, of sizes $p$ and $n - p$, and writing $s_1$ and $s_2$ for
+the corresponding values of $s$, gives $g = p - s_1 - 1 = (n - p) - s_2 - 1$.
 
 ## Depends on
 
-- [Is Increasing Cycle Perm](is-increasing-cycle-perm.md)
-- [Set Partition Genus](set-partition-genus.md)
+- [Increasing-cycle permutation](is-increasing-cycle-perm.md)
+- [Genus of a set partition](set-partition-genus.md)
 
 ## Sources
 

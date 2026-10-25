@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsFlattenedWord
 ---
 
-# Is Flattened Word
+# Flattened words
 
-A word is flattened when the leading letters of its runs, read left to
-right, are weakly increasing.
+**Flattened words.** A word $w = w_1 w_2 \cdots w_m$ of natural numbers is flattened when
+the leading letters of its runs, read left to right, are weakly increasing. Here a run is a
+maximal contiguous weakly increasing subword, so position $i$ starts a run when $i = 1$ or
+$w_{i-1} > w_i$; the condition is that $w_i \le w_j$ whenever $i < j$ and both positions
+start runs.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Word Run Start](word-run-start.md)
+- [Start of a run](word-run-start.md)
 
 ## Sources
 

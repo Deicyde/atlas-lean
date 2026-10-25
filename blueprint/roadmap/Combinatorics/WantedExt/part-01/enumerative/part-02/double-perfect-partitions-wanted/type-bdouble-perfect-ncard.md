@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.typeBDoublePerfect_ncard
 ---
 
-# Type BDouble Perfect ncard
+# Number of Type-B double-perfect partitions
 
-The number `e_r(N)` of Type-B double-perfect partitions of `N` of order `r` (members of
-`U_r(N)` not of Type A), `1 ≤ r ≤ ⌊(N-4)/3⌋`: with `M = 2(r+1)` and
-`c = f(M) - 1 - f(r+1)`, `e_r(N)` is `c (f((N-r)/(r+1)) - f((N-r)/M))` if `N ≡ r (mod M)`,
-`c f((N-r)/(r+1))` if `N ≡ -1 (mod M)`, and `0` otherwise. The record's range `⌊(n-4)/3⌋` is
-read with `n = N`.
+**Number of Type-B double-perfect partitions.** Let $f(n)$ be the number of ordered
+factorizations of $n$ into factors greater than $1$. Let $r \ge 1$ and $N \ge 3r + 4$, that is,
+$1 \le r \le \lfloor (N-4)/3 \rfloor$, and put $M = 2(r+1)$ and $c = f(M) - 1 - f(r+1)$. The
+number $e_r(N)$ of Type-B double-perfect partitions of $N$ of order $r$, that is, of
+double-perfect partitions of $N$ of order $r$ that are not of Type A, is
+$c\,(f((N-r)/(r+1)) - f((N-r)/M))$ if $N \equiv r \pmod M$, $c\, f((N-r)/(r+1))$ if
+$N \equiv -1 \pmod M$, and $0$ otherwise.
 
 ## Depends on
 
-- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
-- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
-- [Ordered Factorization Count](ordered-factorization-count.md)
+- [Double-perfect partitions of higher order](is-double-perfect-of-order.md)
+- [Type-A double-perfect partition](is-type-adouble-perfect.md)
+- [Number of ordered factorizations](ordered-factorization-count.md)
 
 ## Sources
 

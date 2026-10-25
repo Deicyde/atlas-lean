@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.nColor_distinctPartsCountOf_generatingFunction
 ---
 
-# N Color distinct Parts Count Of generating Function
+# Generating function for parts of a given size in distinct $n$-color partitions
 
-Theorem 11: for every `j`, with `Q(D, j, m)` the total number of parts of size `j` (any color)
-over the `n`-color partitions of `m` into distinct colored parts and `C(D, m)` the number of such
-partitions, `∑_{m ≥ 1} Q(D, j, m) q^m = j q^j / (1 + q^j) ∑_{m ≥ 0} C(D, m) q^m`. The paper
-assumes `j ≥ 1`; for `j = 0` both sides vanish.
+**Generating function for parts of a given size in distinct $n$-color partitions.** Call an
+$n$-color partition distinct when no colored part occurs more than once. For a natural number
+$j$, let $Q(D, j, m)$ be the total number of parts of size $j$ (of any color) over the distinct
+$n$-color partitions of $m$, and let $C(D, m)$ be the number of distinct $n$-color partitions of
+$m$. Then, as formal power series in $q$ over $\mathbb{Q}$,
+
+$$\sum_{m \ge 0} Q(D, j, m) \, q^m = \frac{j q^j}{1 + q^j} \sum_{m \ge 0} C(D, m) \, q^m.$$
+
+The paper assumes $j \ge 1$; for $j = 0$ both sides vanish.
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Sources
 

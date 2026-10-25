@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_card_diagonalClass_eq
 ---
 
-# Exists card diagonal Class eq
+# Every positive integer is the size of a diagonal class
 
-Corollary 6, part 3: every positive integer `m` is the size `|[d]|` of the class of some
-partition.
+**Every positive integer is the size of a diagonal class.** For every positive integer $m$
+there are a natural number $n$ and a partition $\alpha$ of $n$ whose class, the set of partitions
+of $n$ with the same diagonal sequence as $\alpha$, has exactly $m$ elements.
 
 ## Depends on
 
-- [Diagonal Class](diagonal-class.md)
+- [Diagonal class of a partition](diagonal-class.md)
 
 ## Sources
 

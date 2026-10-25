@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.kingFlatPOPAboveGF_three_eq_rename
 ---
 
-# King Flat POPAbove GF three eq rename
+# The king generating function avoiding $Q_4$
 
-For `Q₄` (label `4` above labels `1, 2, 3`), `Ā_{Q₄}(x, p, q, s, t) = A_{P₁}(x, p, q, t, s)`.
-The substitution of variables is
-`MvPolynomial.rename` along `Equiv.swap (2 : Fin 4) 3` applied coefficientwise.
+**The king generating function avoiding $Q_4$.** Let $A_{P_1}(x, p, q, u, v)$ be the
+generating function of king permutations avoiding the flat pattern $P_1$ (label $1$ below labels
+$2, 3, 4$), where $x, p, q, u, v$ mark length, ascents, descents, left-to-right maxima and
+right-to-left maxima, and let $\bar A_{Q_4}(x, p, q, s, t)$ be the generating function of king
+permutations avoiding the flat pattern $Q_4$ (label $4$ above labels $1, 2, 3$), where
+$x, p, q, s, t$ mark length, ascents, descents, left-to-right minima and right-to-left minima.
+Then $\bar A_{Q_4}(x, p, q, s, t) = A_{P_1}(x, p, q, t, s)$: the coefficient of each power of $x$
+in $\bar A_{Q_4}$ is obtained from the corresponding coefficient of $A_{P_1}$ by exchanging the
+last two variables.
 
 ## Depends on
 
-- [King Flat POPAbove GF](king-flat-popabove-gf.md)
-- [King Flat POPBelow GF](king-flat-popbelow-gf.md)
+- [Generating function of king permutations avoiding $Q_{j+1}$](king-flat-popabove-gf.md)
+- [Generating function of king permutations avoiding $P_{j+1}$](king-flat-popbelow-gf.md)
 
 ## Sources
 

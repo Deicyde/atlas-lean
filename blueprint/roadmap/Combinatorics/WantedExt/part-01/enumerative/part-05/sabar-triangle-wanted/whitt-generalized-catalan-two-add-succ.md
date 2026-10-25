@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.whittGeneralizedCatalan_two_add_succ
 ---
 
-# Whitt Generalized Catalan two add succ
+# Consecutive Whitt generalized Catalan numbers at $\alpha = 2$
 
-Theorem 6: for `n ≥ 1`, `C(2, n) + C(2, n+1) = 2^{n+1} C(n)`.
+**Consecutive Whitt generalized Catalan numbers at $\alpha = 2$.** For every natural number
+$n \ge 1$, Whitt's generalized Catalan numbers at $\alpha = 2$ satisfy
+
+$$C(2, n) + C(2, n+1) = 2^{n+1} c_n,$$
+
+where $c_n = \frac{1}{n+1}\binom{2n}{n}$ is the $n$-th Catalan number.
 
 ## Depends on
 

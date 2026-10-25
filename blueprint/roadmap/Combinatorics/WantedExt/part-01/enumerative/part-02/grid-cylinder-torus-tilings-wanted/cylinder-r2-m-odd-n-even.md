@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.cylinder_r2_m_odd_n_even
 ---
 
-# Cylinder r2 m odd n even
+# Cylinder fixed-tiling count for the half-turn when $m$ is odd and $n$ is even
 
-If `m` is odd and `n` even, the cylinder half-turn formula is written after multiplying
-through by two: `2 fxpt = n(t_id^(nm/2)+t_id^((nm-2)/2)t_{r²}²)`.  This avoids fractions in `ℕ`;
-`σ²=1` supplies the order-two tile action.
+**Cylinder fixed-tiling count for the half-turn when $m$ is odd and $n$ is even.** Let $T$ be
+a finite set of tile designs, let $n, m \ge 1$ with $m$ odd and $n$ even, and let $\sigma$ be a
+permutation of $T$ with $\sigma^2 = 1$. Let $r^2$ be the cell map
+$(x, y) \mapsto (-1 - x, -1 - y)$ of $\mathbb{Z}/n \times \mathbb{Z}/m$, and let $t$ be the
+number of designs fixed by $\sigma$. Then twice the cylinder shift sum of $r^2$ and $\sigma$
+equals $n \left(|T|^{nm/2} + |T|^{(nm - 2)/2}\, t^2\right)$.
 
-Formalization deviation: none beyond the representation choices stated above.
+The identity is stated after multiplying by $2$, so that it involves no fractions.
 
 ## Depends on
 
-- [Cell R2](cell-r2.md)
-- [Cylinder Shift Sum](cylinder-shift-sum.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the half-turn r²](cell-r2.md)
+- [Cylinder shift sum](cylinder-shift-sum.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

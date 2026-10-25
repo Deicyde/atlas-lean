@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_b1b0_b10_b0b0_b00_00
 ---
 
-# Signed Inv Seq wilf b1b0 b10 b0b0 b00 00
+# Mansour–Safadi Class 141 Wilf-equivalence
 
-The equivalence `{1̄0̄, 1̄0, 0̄0̄, 0̄0, 00}` ∼ `{1̄0̄, 1̄0, 0̄1̄, 01̄, 00}` (Class 141 of Table
-6), which the paper states remains to be shown to settle `sw_5 = 239`. Open in the source.
+**Mansour–Safadi Class 141 Wilf-equivalence.** Length-2 signed patterns are written as in
+the paper, a bar marking a barred letter, and $B \sim C$ means that for every $n \ge 0$ the
+number $|\bar I_n(B)|$ of signed inversion sequences of length $n$ avoiding every pattern of $B$
+equals $|\bar I_n(C)|$. Then
+$\{\bar1\bar0, \bar10, \bar0\bar0, \bar00, 00\} \sim
+\{\bar1\bar0, \bar10, \bar0\bar1, 0\bar1, 00\}$.
+
+The paper leaves this equivalence (Class 141 of its Table 6) open; it is what remains to be shown
+for the number of Wilf classes of five-pattern sets to be exactly $239$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
 
 ## Sources
 

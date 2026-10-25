@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nondecreasingDyckSubwordTotal
 ---
 
-# Nondecreasing Dyck Subword Total
+# Total occurrences of a subword in non-decreasing Dyck paths
 
-`d_w(n)`: the total number of occurrences of the subword `w` over all
-non-decreasing Dyck paths of semilength `n`.
+**Total occurrences of a subword in non-decreasing Dyck paths.** For a word $w$ in the steps
+$U$ and $D$ and for $n \ge 0$, $d_w(n)$ is the total number of occurrences of $w$ as a contiguous
+subword (overlapping occurrences counted separately), summed over all non-decreasing Dyck paths
+of semilength $n$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Dyck Subword Count](dyck-subword-count.md)
-- [Nondecreasing Dyck Words](nondecreasing-dyck-words.md)
+- [Non-decreasing Dyck paths of semilength $n$](nondecreasing-dyck-words.md)
 
 ## Sources
 

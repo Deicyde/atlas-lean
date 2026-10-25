@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.schreierCount_one_two_small
 ---
 
-# Schreier Count one two small
+# Small values of the (1, 2)-Schreier counts
 
-Table 1 and 2 values: `|S^{1/2}_n| = 1, 2, 3, 5` and `|M^{1/2}_n| = 0, 1, 1, 1` for
-`n = 1, …, 4`.
+**Small values of the (1, 2)-Schreier counts.** For $n = 1, 2, 3, 4$, the number $|S^{1/2}_n|$
+of $(1, 2)$-Schreier sets with maximum $n$ takes the values $1, 2, 3, 5$, and the number
+$|M^{1/2}_n|$ of maximal $(1, 2)$-Schreier sets with maximum $n$ takes the values $0, 1, 1, 1$.
 
 ## Depends on
 
-- [Maximal Schreier Count](maximal-schreier-count.md)
-- [Schreier Count](schreier-count.md)
+- [Number of maximal $(p, q)$-Schreier sets](maximal-schreier-count.md)
+- [Number of (p, q)-Schreier sets with given maximum](schreier-count.md)
 
 ## Sources
 

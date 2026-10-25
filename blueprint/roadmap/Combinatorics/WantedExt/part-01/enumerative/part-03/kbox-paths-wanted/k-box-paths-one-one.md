@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kBoxPaths_one_one
 ---
 
-# K Box Paths one one
+# The $1$-box path of size $1$
 
-The only box path (`k = 1`) of size `1` is `UUDL`.
+**The $1$-box path of size $1$.** The only $1$-box path of size $1$ is $UUDL$.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
-- [K Box Paths](k-box-paths.md)
+- [Skew Dyck steps](skew-dyck-step.md)
+- [$k$-box paths](k-box-paths.md)
 
 ## Sources
 

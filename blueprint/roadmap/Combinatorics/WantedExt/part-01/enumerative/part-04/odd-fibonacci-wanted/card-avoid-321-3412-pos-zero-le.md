@@ -5,18 +5,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.OddFibonacciWanted.card_avoid_321_3412_pos_zero_le
 ---
 
-# Proposition 8
+# Smallest entry in the first two positions of $(321, 3412)$-avoiding permutations
 
-**Proposition 8**, first clause: for `n > 1`, the
-numbers of `(321, 3412)`-avoiding permutations of `[n]`
-with `σ(1) = 1` and with `σ(2) = 1` (1-based) both equal
-`F_{2n-3}`.
+**Smallest entry in the first two positions of $(321, 3412)$-avoiding permutations.** Let
+$n \ge 2$. Among the permutations $\sigma$ of $\{0, 1, \dots, n-1\}$ that avoid both patterns
+$321$ and $3412$, that is, contain neither of them, the number with $\sigma(0) = 0$ and the
+number with $\sigma(1) = 0$ are both equal to the Fibonacci number $F_{2n-3}$, where $F_0 = 0$
+and $F_1 = 1$.
+
+In the source's indexing from $1$, these are the permutations with $\sigma(1) = 1$ and with
+$\sigma(2) = 1$.
 
 ## Depends on
 
-- [Has Pattern](has-pattern.md)
-- [Pat321](pat321.md)
-- [Pat3412](pat3412.md)
+- [Classical pattern containment in a permutation](has-pattern.md)
+- [The pattern $321$](pat321.md)
+- [The permutation pattern $3412$](pat3412.md)
 
 ## Sources
 

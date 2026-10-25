@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.StableMatchingSequences.isStableMatching_iff
 ---
 
-# Is Stable Matching iff
+# Stability in terms of ranks
 
-Stability in terms of ranks: no man `i` and woman `j` rank each other above
-their spouses `μ i` and `μ.symm j`.
+**Stability in terms of ranks.** For a preference profile of $n$ men and $n$ women, a
+matching $\mu$, in which man $i$ marries woman $\mu(i)$, is stable if and only if there are no
+man $i$ and woman $j$ such that $i$ ranks $j$ strictly above his wife $\mu(i)$ and $j$ ranks $i$
+strictly above her husband $\mu^{-1}(j)$.
 
 ## Depends on
 
-- [Is Stable Matching](is-stable-matching.md)
-- [Preference Profile](preference-profile.md)
-- [Man Rank](man-rank.md)
-- [Woman Rank](woman-rank.md)
+- [Stable matching](is-stable-matching.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Rank of a woman for a man](man-rank.md)
+- [A woman's rank of a man](woman-rank.md)
 
 ## Sources
 

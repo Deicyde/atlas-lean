@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.card_perm_three_des_one_maj_one
 ---
 
-# Card perm three des one maj one
+# Permutations of $S_3$ with descent set $\{1\}$
 
-In `S_3` exactly two permutations have one descent at position `1` (`maj = 1`).
+**Permutations of $S_3$ with descent set $\{1\}$.** Exactly two permutations $\tau \in S_3$
+have exactly one descent and major index $1$, that is, $\operatorname{des}(\tau) = 1$ and
+$\operatorname{maj}(\tau) = 1$; equivalently, their descent set is $\{1\}$.
 
 ## Depends on
 
-- [Perm Des](perm-des.md)
-- [Perm Maj](perm-maj.md)
+- [Number of descents](perm-des.md)
+- [Major index of a permutation](perm-maj.md)
 
 ## Sources
 

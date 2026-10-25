@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.overpartitionCount_zero
 ---
 
-# Overpartition Count zero
+# The number of overpartitions of zero
 
-There is exactly one overpartition of `0`.
+**The number of overpartitions of zero.** The number $\overline{p}(0)$ of overpartitions of
+$0$ equals $1$: the empty overpartition is the only one.
 
 ## Depends on
 

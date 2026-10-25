@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b1_0b1_00
 ---
 
-# Theorem 3, class C60
+# Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, 0\bar1, 00\}$
 
-**Theorem 3, class C60.** `{1̄0̄, 0̄1̄, 01̄, 00}` ∼ `{1̄0, 0̄1̄, 01̄, 00}`, and `F(x) = ∑_{j ≥
-0} xʲ / ∏_{i=1}^{j+1} (1 - ix)`; each coefficient `[xⁿ]` is compared with the partial sum
-through index `n`, which carries all of `[xⁿ]`.
+**Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, 0\bar1, 00\}$.** For a set $B$
+of length-2 signed patterns (a bar marks a barred letter), let $|\bar I_n(B)|$ be the number of
+signed inversion sequences of length $n$ avoiding every pattern of $B$, and let
+$F_B(x) = \sum_{n \ge 0} |\bar I_n(B)| x^n \in \mathbb{Q}[[x]]$. Let
+$B = \{\bar1\bar0, \bar0\bar1, 0\bar1, 00\}$ and $C = \{\bar10, \bar0\bar1, 0\bar1, 00\}$. Then
+$|\bar I_n(B)| = |\bar I_n(C)|$ for every $n \ge 0$, and for every $n \ge 0$ the coefficient of
+$x^n$ in $F_B(x)$ equals the coefficient of $x^n$ in
+$\sum_{j=0}^{n} x^j \prod_{i=1}^{j+1} (1 - ix)^{-1}$.
+
+The terms with $j > n$ are divisible by $x^{n+1}$, so this says
+$F_B(x) = \sum_{j \ge 0} x^j / \prod_{i=1}^{j+1} (1 - ix)$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
-- [Signed Inv Avoid GF](signed-inv-avoid-gf.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
+- [Generating function of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-gf.md)
 
 ## Sources
 

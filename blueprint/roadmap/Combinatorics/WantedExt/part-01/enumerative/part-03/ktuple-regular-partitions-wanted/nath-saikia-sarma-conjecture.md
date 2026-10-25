@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.nathSaikiaSarma_conjecture
 ---
 
-# Nath Saikia Sarma conjecture
+# The Nath–Saikia–Sarma conjecture
 
-Corollary 1, stated as the conclusion of the Nath–Saikia–Sarma conjecture: for prime
-`p ≥ 5` with Legendre symbol `(-2/p) = -1`, positive `t` coprime to 6 and divisible
-by `p`, every natural `n` and `1 ≤ j ≤ p-1` gives the displayed `T₂` value congruent
-to zero modulo 6.  Primality is a `Fact` because `legendreSym` requires that instance;
-this is a typechecking representation, not an extra hypothesis.  Both displayed
-fractions use natural division and are exact under the hypotheses.
+**The Nath–Saikia–Sarma conjecture.** Let $T_2(n)$ be the number of triples of 2-regular
+partitions (partitions with no even part) whose sizes add up to $n$. Let $p \ge 5$ be a prime
+with Legendre symbol $\left(\frac{-2}{p}\right) = -1$, and let $t$ be a positive integer with
+$\gcd(t, 6) = 1$ and $p \mid t$. Then for every natural number $n$ and every $j$ with
+$1 \le j \le p - 1$,
+
+$$T_2\left(9t^2 n + \frac{9t^2 j}{p} + \frac{57t^2 - 1}{8}\right) \equiv 0 \pmod{6}.$$
+
+Both fractions are integers under these hypotheses.
 
 ## Depends on
 
-- [Triple Regular Partition Count](triple-regular-partition-count.md)
+- [Triples of $\ell$-regular partitions](triple-regular-partition-count.md)
 
 ## Sources
 

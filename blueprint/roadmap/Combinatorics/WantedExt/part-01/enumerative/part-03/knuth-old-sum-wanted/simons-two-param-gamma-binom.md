@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.simons_two_param_gammaBinom
 ---
 
-# Simons two param gamma Binom
+# Two-parameter Simons-type symmetry
 
-From Simons' identity and equation (35): for real `u, v > -1`,
-`∑ (-1)^{n-k} binom(n,k) 2^{-2k} binom(n+k,k) binom(v, v/2) binom(2k+u, (2k+u)/2)
-binom((2k+u+v)/2, v/2)^{-1}` equals the same sum with `u` and `v` exchanged and
-`(-1)^{n-k}` replaced by `(-1)^k`.
+**Two-parameter Simons-type symmetry.** Let $\binom{a}{b}$ denote the generalized binomial
+coefficient $\Gamma(a+1)/(\Gamma(b+1)\Gamma(a-b+1))$. For every natural number $n$ and all real
+$u > -1$ and $v > -1$,
+
+$$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} 2^{-2k} \binom{n+k}{k} \binom{v}{v/2}
+\binom{2k+u}{(2k+u)/2} \binom{(2k+u+v)/2}{v/2}^{-1} = \sum_{k=0}^{n} (-1)^k \binom{n}{k}
+2^{-2k} \binom{n+k}{k} \binom{u}{u/2} \binom{2k+v}{(2k+v)/2} \binom{(2k+u+v)/2}{u/2}^{-1}.$$
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

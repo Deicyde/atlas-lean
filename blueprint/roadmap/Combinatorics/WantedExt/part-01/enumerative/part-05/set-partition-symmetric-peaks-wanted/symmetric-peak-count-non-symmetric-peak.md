@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.symmetricPeakCount_nonSymmetricPeakCount_example
 ---
 
-# Symmetric Peak Count non Symmetric Peak Count example
+# Peaks of the word $1322141251$
 
-The paper's example word `1322141251` has one symmetric peak (`141`) and two non-symmetric
-peaks (`132`, `251`).
+**Peaks of the word $1322141251$.** The word $1322141251$ (the list
+$1, 3, 2, 2, 1, 4, 1, 2, 5, 1$) has exactly one symmetric peak, the factor $141$, and exactly two
+non-symmetric peaks, the factors $132$ and $251$.
 
 ## Depends on
 
-- [Non Symmetric Peak Count](non-symmetric-peak-count.md)
+- [Non-symmetric peaks of a word](non-symmetric-peak-count.md)
 - [Symmetric Peak Count](../symmetric-peaks-compositions-wanted/symmetric-peak-count.md)
 
 ## Sources

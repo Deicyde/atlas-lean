@@ -5,17 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.squareGrid_identity
 ---
 
-# Square Grid identity
+# Square-grid tilings fixed by the identity
 
-The square-grid identity formula is `|T|^(n²)`.  `σ^1=1` encodes the identity action on
-designs for every `D₈`-set; the Burnside conclusion in the paper is omitted because no ambient
-dihedral action is introduced here.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-grid tilings fixed by the identity.** Let $n$ be a positive integer, let $T$ be a
+finite set and let $\sigma$ be a permutation of $T$ with $\sigma^1 = 1$. Then the number of maps
+$F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(c) = \sigma(F(c))$ for every cell $c$ is
+$|T|^{n^2}$.
 
 ## Depends on
 
-- [Fixed Tiling Count](fixed-tiling-count.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
 
 ## Sources
 

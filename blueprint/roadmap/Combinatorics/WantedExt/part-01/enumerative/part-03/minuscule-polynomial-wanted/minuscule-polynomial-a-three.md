@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.minusculePolynomialA_three
 ---
 
-# Minuscule Polynomial A three
+# The minuscule polynomial $N_3$
 
-`N_3(x) = 8x + 8x^2`.
+**The minuscule polynomial $N_3$.** The type-A minuscule polynomial $N_3(x)$ equals
+$8x + 8x^2$.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

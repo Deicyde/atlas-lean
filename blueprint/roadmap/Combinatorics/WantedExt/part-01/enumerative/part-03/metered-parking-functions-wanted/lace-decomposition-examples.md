@@ -6,10 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.laceDecomposition_examples
 ---
 
-# Lace Decomposition examples
+# Examples of lace decompositions
 
-The source's examples `lace(3,3,3,3,4,6) = ((3,3),(3,3,4),(6))` and
-`lace(4,1,2,2,3,4,5,5,1,2) = ((4),(1),(2,2,3,4,5),(5),(1),(2))`.
+**Examples of lace decompositions.** The lace decomposition of $(3, 3, 3, 3, 4, 6)$ is
+$((3, 3), (3, 3, 4), (6))$, and the lace decomposition of $(4, 1, 2, 2, 3, 4, 5, 5, 1, 2)$ is
+$((4), (1), (2, 2, 3, 4, 5), (5), (1), (2))$.
 
 ## Depends on
 

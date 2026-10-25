@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.permDes
 ---
 
-# Perm Des
+# Number of descents
 
-The number of descents `des(τ) = |Des(τ)|`.
+**Number of descents.** For a permutation $\tau$ of $\{0, 1, \dots, d - 1\}$, the number of
+descents $\mathrm{des}(\tau) = |\mathrm{Des}(\tau)|$ is the number of elements of the descent
+set $\mathrm{Des}(\tau)$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Perm Descent Set](perm-descent-set.md)
+- [Descent set of a permutation](perm-descent-set.md)
 
 ## Sources
 

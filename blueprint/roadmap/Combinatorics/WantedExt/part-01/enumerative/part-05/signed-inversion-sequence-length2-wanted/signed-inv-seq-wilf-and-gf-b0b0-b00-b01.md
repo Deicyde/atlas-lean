@@ -5,17 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_and_gf_b0b0_b00_b01_01
 ---
 
-# Theorem 3, class C2
+# Mansour–Safadi Theorem 3, class C2 (signed patterns 0̄0̄, 0̄0, 0̄1, 01)
 
-**Theorem 3, class C2.** `{0̄0̄, 0̄0, 0̄1, 01}` ∼ `{0̄0̄, 0̄1, 00̄, 01}`, and `F(x) = 1 + 2 ∑_{k
-≥ 1} xᵏ / ∏_{i=1}^{k} (1 - ix)`; each coefficient `[xⁿ]` is compared with the partial sum
-through index `n`, which carries all of `[xⁿ]`.
+**Mansour–Safadi Theorem 3, class C2 (signed patterns 0̄0̄, 0̄0, 0̄1, 01).** A signed inversion
+sequence of length $n$ is a word $e_1 \cdots e_n$ with $e_k \in \{0, \bar 0, 1, \bar 1, \dots,
+k - 1, \overline{k - 1}\}$. It avoids a length-2 signed pattern $\tau_1\tau_2$ (one of $00$, $01$,
+$10$, each letter possibly barred) when no $i < j$ have $|e_i|$, $|e_j|$ in the same order as
+$|\tau_1|$, $|\tau_2|$ with $e_i$, $e_j$ barred exactly when $\tau_1$, $\tau_2$ are. Write
+$\bar I_n(B)$ for the set of signed inversion sequences of length $n$ that avoid every pattern in
+$B$, and $F_B(x) = \sum_{n \ge 0} |\bar I_n(B)|\,x^n$ in $\mathbb{Q}[[x]]$. Let
+$B_1 = \{\bar 0\bar 0, \bar 0 0, \bar 0 1, 01\}$ and
+$B_2 = \{\bar 0\bar 0, \bar 0 1, 0\bar 0, 01\}$.
+For every $n \ge 0$, $|\bar I_n(B_1)| = |\bar I_n(B_2)|$, and the coefficient of $x^n$ in
+$F_{B_1}(x)$ equals the coefficient of $x^n$ in
+$1 + 2\sum_{k=1}^{n} x^k \prod_{i=1}^{k} (1 - ix)^{-1}$.
+
+Since the terms with $k > n$ contribute nothing to $x^n$, this says
+$F_{B_1}(x) = 1 + 2\sum_{k \ge 1} x^k / \prod_{i=1}^{k} (1 - ix)$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
-- [Signed Inv Avoid GF](signed-inv-avoid-gf.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
+- [Generating function of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-gf.md)
 
 ## Sources
 

@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.hasDerivAt_zurita_antiderivative_two
 ---
 
-# Has Deriv At zurita antiderivative two
+# Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/\sqrt{1-x}$
 
-For `n ≥ 1`, an antiderivative of `x^{-n-1/2} arcsin(√x)/√(1 - x)` is
-`d_n log x - arcsin(√x) √(x(1 - x)) M_{n-1}(x)/x^n + N_{n-2}(x)/x^{n-1}`, stated as a derivative
-identity on `0 < x < 1`.
+**Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/\sqrt{1-x}$.** Let $n \ge 1$, let
+$d_n$ be Zurita's constant and let $M_{n-1}$ and $N_{n-2}$ be Zurita's polynomials (with
+$N_{-1} = 0$). For every real $x$ with $0 < x < 1$, the function
+
+$$
+G(y) = d_n \log y - \frac{\arcsin(\sqrt{y}) \sqrt{y(1 - y)}\, M_{n-1}(y)}{y^n} +
+\frac{N_{n-2}(y)}{y^{n-1}}
+$$
+
+has derivative $x^{-n-1/2} \arcsin(\sqrt{x}) / \sqrt{1 - x}$ at $x$.
 
 ## Depends on
 
-- [Zurita D](zurita-d.md)
-- [Zurita M](zurita-m.md)
-- [Zurita N](zurita-n.md)
+- [Zurita's constant $d_n$](zurita-d.md)
+- [Zurita's polynomial $M_{n-1}$](zurita-m.md)
+- [Zurita's polynomial $N_{n-2}$](zurita-n.md)
 
 ## Sources
 

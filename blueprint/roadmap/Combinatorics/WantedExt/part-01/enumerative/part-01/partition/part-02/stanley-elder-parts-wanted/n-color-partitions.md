@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nColorPartitions
 ---
 
-# N Color Partitions
+# n-color partitions
 
-The `n`-color partitions of `m`: multisets of colored parts `(k, j)`, `1 ≤ j ≤ k`, whose
-sizes sum to `m` (see `mem_nColorPartitions`).
+**n-color partitions.** For a natural number $m$, the $n$-color partitions of $m$ form the
+finite set of multisets of colored parts $k_j$, that is pairs $(k, j)$ of natural numbers with
+$1 \le j \le k$ (a part of size $k$ comes in $k$ colors), whose sizes $k$, counted with
+multiplicity, sum to $m$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Multisets With Size Sum](multisets-with-size-sum.md)
-- [N Color Parts Up To](n-color-parts-up-to.md)
+- [Multisets of parts with a given size sum](multisets-with-size-sum.md)
+- [The list of colored parts of size at most $m$](n-color-parts-up-to.md)
 
 ## Sources
 

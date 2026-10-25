@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.succ_mul_coloredPolygonDissectionCount_eq
 ---
 
-# Succ mul colored Polygon Dissection Count eq
+# Polygon partitions and colored compositions
 
-Polygon partitions and compositions:
-`(n+1) p_{n,k}(γ) = binom(n+k, k) c_{n,k}(γ)` for `1 ≤ k ≤ n` and every coloring
-sequence.
+**Polygon partitions and colored compositions.** For every coloring sequence
+$\gamma : \mathbb{N} \to \mathbb{N}$ and all natural numbers $n$ and $k$ with $1 \le k \le n$, the
+colored polygon dissection count $p_{n,k}(\gamma)$ and the colored composition count
+$c_{n,k}(\gamma)$ satisfy
+
+$$(n+1)\, p_{n,k}(\gamma) = \binom{n+k}{k}\, c_{n,k}(\gamma).$$
 
 ## Depends on
 
-- [Colored Composition Count](colored-composition-count.md)
-- [Colored Polygon Dissection Count](colored-polygon-dissection-count.md)
+- [Number of colored compositions](colored-composition-count.md)
+- [Colored polygon dissection count](colored-polygon-dissection-count.md)
 
 ## Sources
 

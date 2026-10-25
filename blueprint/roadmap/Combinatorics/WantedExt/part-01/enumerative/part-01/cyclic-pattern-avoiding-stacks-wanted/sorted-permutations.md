@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sortedPermutations
 ---
 
-# Sorted Permutations
+# Permutations sorted by a map
 
-`Sort_n(f)`: the permutations of `[n]` that `f` maps to the identity `id_n`.
+**Permutations sorted by a map.** For a map $f$ from finite sequences of natural numbers to
+finite sequences of natural numbers and for $n \in \mathbb{N}$, $\mathrm{Sort}_n(f)$ is the finite
+set of permutations $\pi$ of $[n] = \{1, \dots, n\}$, written as sequences, such that $f(\pi)$ is
+the identity permutation $\mathrm{id}_n = 12 \cdots n$.
 
 ## Depends on
 

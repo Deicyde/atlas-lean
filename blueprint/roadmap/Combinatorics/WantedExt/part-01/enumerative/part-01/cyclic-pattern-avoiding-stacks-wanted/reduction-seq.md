@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.reductionSeq
 ---
 
-# Reduction Seq
+# Reduction of a sequence
 
-The reduction `red(s)`: replace every maximal block of adjacent consecutive integers
-`a, a + 1, …, a + k` by its minimum `a`, then standardize.
+**Reduction of a sequence.** The reduction $\operatorname{red}(s)$ of a finite sequence $s$ of
+natural numbers is obtained in two steps. First, every maximal block of adjacent entries of the
+form $a, a + 1, \ldots, a + k$ is replaced by its first entry $a$. Then the resulting sequence is
+standardized: each of its entries $x$ is replaced by the number of its entries that are at most
+$x$, which for distinct entries is the rank of $x$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Consecutive Run Heads](consecutive-run-heads.md)
-- [Standardize Seq](standardize-seq.md)
+- [Heads of runs of consecutive integers](consecutive-run-heads.md)
+- [Standardization](standardize-seq.md)
 
 ## Sources
 

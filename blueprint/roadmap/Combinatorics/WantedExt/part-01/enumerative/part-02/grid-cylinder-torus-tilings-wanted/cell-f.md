@@ -5,13 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.cellF
 ---
 
-# Cell F
+# Cell map of the reflection f
 
-The cell map for the paper's right action of the reflection `f` on an `n × m` grid:
-`(x,y) ↦ (n-1-x,y)`.  In `ZMod n`, `n-1-x` is represented by `-1-x`; the second coordinate is
-unchanged.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Cell map of the reflection f.** For natural numbers $n$ and $m$, the reflection $f$ acts on
+the cells $(x, y) \in \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z}$ of the $n \times m$
+grid by $(x, y) \mapsto (-1 - x, y)$, that is, $(x, y) \mapsto (n - 1 - x, y)$ with the first
+coordinate taken modulo $n$.
 
 ## Depends on
 

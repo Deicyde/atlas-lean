@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_centralBinom_succ_one_sub_pow
 ---
 
-# Sum choose central Binom succ one sub pow
+# A polynomial identity for weighted central binomial coefficients
 
-Equation (46): `∑ (-1)^{n-k} binom(n,k)/(k+2) 2^{-k} binom(2(k+1), k+1) (1-x)^{n-k}
-= ∑_{k ≤ n/2} binom(n,2k)/(k+1) 2^{-2k} binom(2k,k) x^{n-2k}`.
+**A polynomial identity for weighted central binomial coefficients.** For every natural
+number $n$ and every complex number $x$,
+
+$$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \frac{1}{(k+2) 2^k} \binom{2k+2}{k+1} (1-x)^{n-k} =
+\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{1}{(k+1) 2^{2k}} \binom{2k}{k} x^{n-2k}.$$
 
 ## Depends on
 

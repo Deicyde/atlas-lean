@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.kTupleRegularPartitionCount_succ
 ---
 
-# K Tuple Regular Partition Count succ
+# Recurrence for tuples of $\ell$-regular partitions
 
-The convolution recurrence `T_{ℓ,k+1}(n) = ∑_{i=0}^{n} r_ℓ(i) · T_{ℓ,k}(n-i)`, with `r_ℓ` the `ℓ`-regular partition count.
+**Recurrence for tuples of $\ell$-regular partitions.** For all natural numbers $\ell$, $k$
+and $n$, writing $r_\ell(i)$ for the number of $\ell$-regular partitions of $i$ and
+$T_{\ell,k}(n)$ for the number of $k$-tuples of $\ell$-regular partitions with total $n$,
+
+$$T_{\ell,k+1}(n) = \sum_{i=0}^{n} r_\ell(i) \, T_{\ell,k}(n-i).$$
 
 ## Depends on
 
-- [K Tuple Regular Partition Count](k-tuple-regular-partition-count.md)
-- [L Regular Partition Count](l-regular-partition-count.md)
+- [Number of $k$-tuples of $\ell$-regular partitions](k-tuple-regular-partition-count.md)
+- [Number of $\ell$-regular partitions](l-regular-partition-count.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.compositionOddMinusEven_parts_ge_modEq_sub
 ---
 
-# Composition Odd Minus Even parts ge mod Eq sub
+# Signed count of residue-class compositions with parts at least $r - s$
 
-Corollary 12: if `r > s ≥ 0` and `k = r - s`, then `b^{r,s}_{k,n} = 1` for
-`n = s + 1` and `0` for every other `n ≥ 1`.
+**Signed count of residue-class compositions with parts at least $r - s$.** Let $r > s \ge 0$,
+let $k = r - s$ and let $n \ge 1$. Among the compositions of $n + k - 1$ whose parts are all at
+least $k$ and congruent to $k + s$ modulo $r$, the number with an odd number of parts minus the
+number with an even number of parts is $1$ if $n = s + 1$ and $0$ otherwise.
 
 ## Depends on
 
-- [Composition Odd Minus Even](composition-odd-minus-even.md)
+- [Signed count of compositions](composition-odd-minus-even.md)
 
 ## Sources
 

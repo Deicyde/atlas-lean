@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.coloredCompositionCount_eq_partialBell
 ---
 
-# Colored Composition Count eq partial Bell
+# Hoggatt–Lind formula for colored compositions
 
-Hoggatt and Lind's formula, as recalled by the source:
-`c_{n,k}(γ) = k!/n! · B_{n,k}(1! γ_1, 2! γ_2, …)` for `n ≥ 1`.
+**Hoggatt–Lind formula for colored compositions.** Let $\gamma = (\gamma_1, \gamma_2, \dots)$
+be a sequence of natural numbers and let $c_{n,k}(\gamma)$ be the number of compositions of $n$
+with $k$ parts in which each part $j$ carries one of $\gamma_j$ colors. For every natural number
+$n \ge 1$ and every natural number $k$, as rational numbers,
+
+$$c_{n,k}(\gamma) = \frac{k!}{n!} B_{n,k}(1! \, \gamma_1, 2! \, \gamma_2, \dots),$$
+
+where $B_{n,k}$ is the partial Bell polynomial.
 
 ## Depends on
 
-- [Colored Composition Count](colored-composition-count.md)
+- [Number of colored compositions](colored-composition-count.md)
 - [Partial Bell polynomial](../../../../../MathlibExt/part-01/enumerative/part-06/partial-bell-polynomial.md)
 
 ## Sources

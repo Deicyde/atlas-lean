@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_b1b0_b00_b01_0b0_1b0
 ---
 
-# Theorem 15
+# Mansour–Safadi Theorem 15
 
-**Theorem 15.** `{1̄0̄, 0̄0, 0̄1, 00̄, 10̄}` ∼ `{1̄0̄, 0̄0̄, 0̄1, 00̄, 10̄}`.
+**Mansour–Safadi Theorem 15.** Write $\bar{I}_n(B)$ for the set of signed inversion
+sequences of length $n$ that avoid every length-2 signed pattern in $B$, where a pattern is
+one of $00$, $01$, $10$ with a bar over each barred letter. Then for every $n \ge 0$,
+$|\bar{I}_n(\{\bar{1}\bar{0}, \bar{0}0, \bar{0}1, 0\bar{0}, 1\bar{0}\})| =
+|\bar{I}_n(\{\bar{1}\bar{0}, \bar{0}\bar{0}, \bar{0}1, 0\bar{0}, 1\bar{0}\})|$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
 
 ## Sources
 

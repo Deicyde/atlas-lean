@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_div_succ
 ---
 
-# Sum choose div succ
+# Epsteen's identity
 
-Epsteen's identity (3.4): `∑_{k=0}^n binom(n, k)/(k + 1) = (2^{n+1} - 1)/(n + 1)`.
+**Epsteen's identity.** For every natural number $n$,
+
+$$\sum_{k=0}^{n} \frac{1}{k+1} \binom{n}{k} = \frac{2^{n+1} - 1}{n+1}.$$
 
 ## Depends on
 

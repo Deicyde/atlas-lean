@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.descendingStrictNaplesCount_eq_card_dyckPath
 ---
 
-# Descending Strict Naples Count eq card dyck Path
+# Descending strictly $k$-Naples parking functions and Dyck paths with an early return
 
-Proposition 4: for `n ≥ 1`, descending strictly `k`-Naples parking functions of length
-`n` are equinumerous with Dyck paths of length `n + k` whose first `k` steps are Up, last
-`k + 1` steps are Down, and which return to `y = 0` before the last step.
+**Descending strictly $k$-Naples parking functions and Dyck paths with an early return.**
+For $n \ge 1$ and $k \ge 1$, the number of descending strictly $k$-Naples parking functions of
+length $n$ (descending preferences that are $k$-Naples but not $(k - 1)$-Naples) equals the
+number of Dyck paths of semilength $n + k$, that is, with $2(n + k)$ Up and Down steps, whose
+first $k$ steps are Up, whose last $k + 1$ steps are Down, and whose height after $j$ steps is
+$0$ for some $j$ with $0 < j < 2(n + k)$.
 
 ## Depends on
 
-- [Descending Strict Naples Count](descending-strict-naples-count.md)
-- [Dyck Step Height](dyck-step-height.md)
+- [Number of descending strictly $k$-Naples parking functions](descending-strict-naples-count.md)
+- [Height of a sequence of Dyck steps](dyck-step-height.md)
 
 ## Sources
 

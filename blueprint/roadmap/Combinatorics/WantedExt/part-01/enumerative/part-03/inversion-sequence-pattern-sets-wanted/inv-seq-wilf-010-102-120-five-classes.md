@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.invSeq_wilf_010_102_120_five_classes
 ---
 
-# Theorem 9
+# I-Wilf equivalences among five-pattern sets containing $010$, $102$ and $120$
 
-**Theorem 9.** (1) With `A_τ = {010, τ, 102, 120, 201}`, `A_100 ∼ A_110`. (2) With `A_τ = {010,
-τ, 102, 120, 210}` and `B = {010, 101, 102, 120, 201}`, `A_100 ∼ A_101 ∼ A_110 ∼ B`
-(I-Wilf-equivalence).
+**I-Wilf equivalences among five-pattern sets containing $010$, $102$ and $120$.** Write
+length-3 patterns as digit strings ($101$ is the pattern $(1, 0, 1)$) and let $|I_n(B)|$ be the
+number of inversion sequences of length $n$ that avoid every pattern in the set $B$. For a pattern
+$\tau$ let $A_\tau = \{010, \tau, 102, 120, 201\}$ and $A'_\tau = \{010, \tau, 102, 120, 210\}$,
+and let $B = \{010, 101, 102, 120, 201\}$. Then for every $n \ge 0$,
+$|I_n(A_{100})| = |I_n(A_{110})|$ and
+$|I_n(A'_{100})| = |I_n(A'_{101})| = |I_n(A'_{110})| = |I_n(B)|$.
 
 ## Depends on
 
-- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
+- [Number of inversion sequences avoiding a set of patterns](inv-seq-avoid-count.md)
 
 ## Sources
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.descendingNaplesCount_eq_card_dyckPath
 ---
 
-# Descending Naples Count eq card dyck Path
+# Descending $k$-Naples parking functions and Dyck paths
 
-Proposition 3: for `n ≥ 1`, descending `k`-Naples parking functions of length `n` are
-equinumerous with Dyck paths of length `n + k` whose first `k` steps are Up and last `k + 1`
-steps are Down.
+**Descending $k$-Naples parking functions and Dyck paths.** For all natural numbers $n \ge 1$
+and $k \ge 1$, the number of weakly decreasing $k$-Naples parking functions of length $n$ equals
+the number of Dyck paths of semilength $n + k$ (that is, with $2(n + k)$ steps) whose first $k$
+steps are Up and whose last $k + 1$ steps are Down.
 
 ## Depends on
 
-- [Descending Naples Count](descending-naples-count.md)
+- [Number of descending $k$-Naples parking functions](descending-naples-count.md)
 
 ## Sources
 

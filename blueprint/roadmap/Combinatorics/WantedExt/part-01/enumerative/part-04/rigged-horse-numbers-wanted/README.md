@@ -4,8 +4,8 @@ navigation: module
 
 # Rigged Horse Numbers
 
-- [Desc Pochhammer eq sum signed Stirling First](desc-pochhammer-eq-sum-signed-stirling-f.md)
-- [Pow add carmichael mod Eq of lt](pow-add-carmichael-mod-eq-of-lt.md)
-- [Fubini Number add carmichael mod Eq](fubini-number-add-carmichael-mod-eq.md)
-- [Fubini Number eventually Periodic iff carmichael dvd](fubini-number-eventually-periodic-iff-ca.md)
-- [R Fubini add carmichael mod Eq](r-fubini-add-carmichael-mod-eq.md)
+- [Falling factorial in terms of signed Stirling numbers](desc-pochhammer-eq-sum-signed-stirling-f.md)
+- [A Carmichael congruence for all residues modulo $K$](pow-add-carmichael-mod-eq-of-lt.md)
+- [Eventual periodicity of the Fubini numbers modulo $K$](fubini-number-add-carmichael-mod-eq.md)
+- [Eventual periods of the Fubini numbers modulo an odd number](fubini-number-eventually-periodic-iff-ca.md)
+- [Eventual periodicity of the $r$-Fubini numbers modulo $K$](r-fubini-add-carmichael-mod-eq.md)

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.degenerateStirlingFirst
 ---
 
-# Degenerate Stirling First
+# Degenerate Stirling numbers of the first kind
 
-Degenerate Stirling numbers of the first kind:
-`(log_λ(1 + t))ᵏ / k! = ∑_{n ≥ k} S_{1,λ}(n, k) tⁿ / n!` (paper, Equation (8)), with
-`log_λ(1 + t) = ∑_{n ≥ 1} binom(λ, n) tⁿ / λ` (paper, Equation (2)).
+**Degenerate Stirling numbers of the first kind.** For a real number $\lambda$, let
+$\log_\lambda(1 + t)$ be the formal power series $\sum_{m \ge 1} \binom{\lambda}{m} t^m / \lambda$,
+where $\binom{\lambda}{m} = \lambda(\lambda - 1)\cdots(\lambda - m + 1)/m!$. For natural numbers
+$n$ and $k$, the degenerate Stirling number of the first kind $S_{1,\lambda}(n, k)$ is $n!/k!$
+times the coefficient of $t^n$ in $(\log_\lambda(1 + t))^k$. Equivalently,
+$(\log_\lambda(1 + t))^k / k! = \sum_{n \ge k} S_{1,\lambda}(n, k) t^n / n!$, and
+$S_{1,\lambda}(n, k) = 0$ for $n < k$.
 
 ## Depends on
 

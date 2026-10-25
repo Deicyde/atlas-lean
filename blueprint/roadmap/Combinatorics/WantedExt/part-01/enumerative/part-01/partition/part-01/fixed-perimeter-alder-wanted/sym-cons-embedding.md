@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.symConsEmbedding
 ---
 
-# Sym Cons Embedding
+# Prepending a part to a multiset
 
-Prepending a largest part `m` to a multiset of `k` parts, as an embedding
-`Sym ℕ k ↪ Multiset ℕ`; it builds `fixedPerimeterPartitions` without deduplication.
+**Prepending a part to a multiset.** For natural numbers $m$ and $k$, the map that sends a
+multiset $t$ of $k$ natural numbers to the multiset obtained from $t$ by adding one copy of $m$
+is injective, so it embeds the multisets of size $k$ into all multisets of natural numbers.
+
+With $m$ the largest part, it builds the partitions of a given perimeter from their largest part
+and their remaining parts.
 
 ## Depends on
 

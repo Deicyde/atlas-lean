@@ -5,20 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.generalizedMotzkin_zero_density_formula
 ---
 
-# Generalized Motzkin zero density formula
+# Zero density formula for generalized Motzkin numbers modulo a prime
 
-Theorem 3, nonvanishing-central-term case: for p > 2, the zero density of M_n is the displayed
-D₀; its three cardinals correspond respectively to small last digits and the two boundary
-congruences. The hypothesis `a ≢ 0 (mod p)` is implicit in the paper, which cancels `2a²`. Source:
-Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026),
-Article A22, Theorem 3.
+**Zero density formula for generalized Motzkin numbers modulo a prime.** Let $a, b$ be
+integers and let $p > 2$ be a prime with $a \not\equiv 0 \pmod p$. Write $T_r = T^{(a,b)}_r$ for
+the generalized central trinomial coefficients and $M_n = M^{(a,b)}_n$ for the generalized Motzkin
+numbers, and suppose that $T_r \not\equiv 0 \pmod p$ for every $r < p$. Let $A$ be the number of
+$r < p - 2$ with $M_r \equiv 0 \pmod p$, let $B$ be the number of $m < p - 1$ with
+$b T_m \equiv T_{p-1} T_{m+1} \pmod p$, and let $C$ be the number of $m < p - 1$ with
+$b T_m \equiv T_{m+1} \pmod p$. Then the set of $n \in \mathbb{N}$ with $M_n \equiv 0 \pmod p$ has
+natural density
+
+$$D_0 = \frac{A}{p} + \frac{2B}{(p-1)(p+1)} + \frac{2C}{(p-1)p(p+1)}.$$
 
 ## Depends on
 
-- [Central Trinomial](central-trinomial.md)
-- [Generalized Motzkin](generalized-motzkin.md)
+- [Generalized central trinomial coefficients](central-trinomial.md)
+- [Generalized Motzkin numbers](generalized-motzkin.md)
 - [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Theorem 3. The hypothesis $a \not\equiv 0 \pmod p$ is implicit in the paper, which cancels $2a^2$.

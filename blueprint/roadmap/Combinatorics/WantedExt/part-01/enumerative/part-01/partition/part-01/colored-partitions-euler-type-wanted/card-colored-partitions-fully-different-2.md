@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.card_coloredPartitions_fullyDifferent_le
 ---
 
-# Card colored Partitions fully Different le
+# Colored partitions into fully different parts with bounded size
 
-For `n ≥ 0`, the number of nonempty colored partitions into fully different parts (pairwise
-different sizes and pairwise different colors) with parts of size at most `n` is
-`B_{n+1} - 1`, with `B` the Bell numbers (`Nat.bell`).
+**Colored partitions into fully different parts with bounded size.** A colored part is a pair
+$(m, j)$ of integers with $1 \le j \le m$, read as the part $m$ in color $j$. For every $n \ge 0$,
+the number of nonempty finite sets of colored parts $(m, j)$ with $m \le n$ in which no two
+colored parts have the same size $m$ and no two have the same color $j$ is $B_{n+1} - 1$, where
+$B_k$ denotes the $k$-th Bell number.
 
 ## Depends on
 

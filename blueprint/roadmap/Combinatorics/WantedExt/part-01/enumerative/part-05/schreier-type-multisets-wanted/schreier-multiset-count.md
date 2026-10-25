@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.schreierMultisetCount
 ---
 
-# Schreier Multiset Count
+# Number of Schreier-type multisets
 
-`|A^{(s)}_{p,n}|`: the number of sub-multisets `F` of `{1^s, …, (n - 1)^s, n}` with `n ∈ F`
-and `min F ≥ p|F|`.
+**Number of Schreier-type multisets.** For natural numbers $s$, $p$ and $n$, $|A^{(s)}_{p,n}|$
+is the number of distinct sub-multisets $F$ of $\{1^s, \dots, (n - 1)^s, n\}$ (each of
+$1, \dots, n - 1$ with multiplicity $s$, and $n$ once) such that $n \in F$ and every element of $F$
+is at least $p|F|$, where $|F|$ counts multiplicity.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Schreier Multiset Pool](schreier-multiset-pool.md)
+- [Ground multiset for Schreier-type multisets](schreier-multiset-pool.md)
 
 ## Sources
 

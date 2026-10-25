@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Park Spots](../../part-03/lucky-cars-wanted/park-spots.md)
+- [Greedy parking outcome](../../part-03/lucky-cars-wanted/park-spots.md)
 - [Stirling Pref](stirling-pref.md)
 
 ## Sources

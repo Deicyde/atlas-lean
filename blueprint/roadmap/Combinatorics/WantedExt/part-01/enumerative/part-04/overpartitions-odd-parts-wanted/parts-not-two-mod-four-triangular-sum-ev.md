@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.partsNotTwoModFour_triangular_sum_even
 ---
 
-# Parts Not Two Mod Four triangular sum even
+# Parity of a triangular sum of partitions with no part congruent to 2 modulo 4
 
-For `n > 0`, `∑_{k ≥ 0} P_2(n - k(k+1)/2) ≡ 0 (mod 2)`.
+**Parity of a triangular sum of partitions with no part congruent to 2 modulo 4.** Write
+$P_2(m)$ for the number of partitions of $m$ with no part congruent to $2$ modulo $4$. For every
+positive integer $n$, the sum $\sum_{k \ge 0,\ k(k+1)/2 \le n} P_2(n - k(k+1)/2)$ is even.
 
 ## Depends on
 
-- [Parts Not Two Mod Four Count](parts-not-two-mod-four-count.md)
+- [Partitions with no part congruent to 2 modulo 4](parts-not-two-mod-four-count.md)
 
 ## Sources
 

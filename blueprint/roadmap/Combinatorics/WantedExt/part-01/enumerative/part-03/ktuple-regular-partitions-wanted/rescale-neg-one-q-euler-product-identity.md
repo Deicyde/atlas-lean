@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.rescale_neg_one_qEulerProduct_identity
 ---
 
-# Rescale neg one q Euler Product identity
+# A signed Euler product identity
 
-Lemma 4: `(-q;-q)_∞ = f₂³/(f₁f₄)` is cleared of division and stated as
-`(-q;-q)_∞ * f₁ * f₄ = f₂³`, with `(-q;-q)_∞ = ∏_{i≥1}(1-(-q)^i)` written as `f₁`
-rescaled by `q ↦ -q`.  Clearing denominators is the sole deviation.
+**A signed Euler product identity.** Write $f_k = \prod_{i \ge 1} (1 - q^{ki})$ for the Euler
+products, as integer power series in $q$, and let $(-q;-q)_\infty = \prod_{i \ge 1} (1 - (-q)^i)$
+be $f_1$ with $q$ replaced by $-q$. Then
+
+$$(-q;-q)_\infty \, f_1 f_4 = f_2^3.$$
+
+This is the identity $(-q;-q)_\infty = f_2^3 / (f_1 f_4)$ with the denominator cleared.
 
 ## Depends on
 

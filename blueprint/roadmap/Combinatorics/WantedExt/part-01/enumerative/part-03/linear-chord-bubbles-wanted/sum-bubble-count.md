@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sum_bubbleCount
 ---
 
-# Sum bubble Count
+# Total number of bubbles in linear chord diagrams
 
-Total number of bubbles: for `n ≥ 2`,
-`∑_{p=1}^{2n} B_{n,p} = (2n-2)! (4n-5) / (2^{n-1} (n-1)!)`.
-The hypothesis `n ≥ 2` is added: for `n = 1` the left side is `0` and the right side is `-1`.
+**Total number of bubbles in linear chord diagrams.** For every natural number $n \ge 2$,
+let $B_{n,p}$ be the total number of bubbles of size $p$ over all linear chord diagrams on $2n$
+vertices. Then
+
+$$\sum_{p=1}^{2n} B_{n,p} = \frac{(2n-2)!\,(4n-5)}{2^{n-1}\,(n-1)!}.$$
+
+The hypothesis $n \ge 2$ is needed: for $n = 1$ the left side is $0$ and the right side is $-1$.
 
 ## Depends on
 
-- [Bubble Count](bubble-count.md)
+- [Bubble counts](bubble-count.md)
 
 ## Sources
 

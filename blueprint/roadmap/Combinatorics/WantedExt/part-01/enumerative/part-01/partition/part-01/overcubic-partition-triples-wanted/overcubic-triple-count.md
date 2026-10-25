@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.overcubicTripleCount
 ---
 
-# Overcubic Triple Count
+# Number of overcubic partition triples
 
-`bt(n)`, the number of overcubic partition triples of `n`, defined as the `n`th
-coefficient of `f_4^3 / (f_1^6 f_2^3)` (integer-valued).
+**Number of overcubic partition triples.** For a natural number $n$, $\mathrm{bt}(n)$, the
+number of overcubic partition triples of $n$, is defined as the integer coefficient of $q^n$ in
+the power series $f_4^3 / (f_1^6 f_2^3)$, where $f_k = \prod_{j \ge 1} (1 - q^{kj})$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Overcubic Triple Series](overcubic-triple-series.md)
+- [The overcubic partition triple series](overcubic-triple-series.md)
 
 ## Sources
 

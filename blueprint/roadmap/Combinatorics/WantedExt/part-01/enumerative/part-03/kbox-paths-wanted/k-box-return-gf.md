@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.kBoxReturnGF
 ---
 
-# K Box Return GF
+# Generating function of $k$-box paths by returns
 
-`F̀_k(t, x) = ∑_{n ≥ 1} ∑_{μ ∈ B_n^{(k)}} t^{returns(μ)} x^n` in `ℤ[t]⟦x⟧`.
+**Generating function of $k$-box paths by returns.** For $k \in \mathbb{N}$, $F_k(t, x)$ is
+the power series in $\mathbb{Z}[t][[x]]$ with constant term $0$ whose coefficient of $x^n$ for
+$n \ge 1$ is the sum of $t^{\operatorname{ret}(\mu)}$ over the set $B_n^{(k)}$ of $k$-box paths
+$\mu$ of size $n$, where $\operatorname{ret}(\mu)$ is the number of returns of $\mu$; that is,
+$F_k(t, x) = \sum_{n \ge 1} \sum_{\mu \in B_n^{(k)}} t^{\operatorname{ret}(\mu)} x^n$.
 
 ## Depends on
 
@@ -15,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
-- [K Box Paths](k-box-paths.md)
-- [Skew Returns](skew-returns.md)
+- [Skew Dyck steps](skew-dyck-step.md)
+- [$k$-box paths](k-box-paths.md)
+- [Returns of a skew Dyck word](skew-returns.md)
 
 ## Sources
 

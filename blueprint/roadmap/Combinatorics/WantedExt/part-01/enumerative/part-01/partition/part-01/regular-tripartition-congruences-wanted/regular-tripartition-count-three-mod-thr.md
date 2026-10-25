@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.regularTripartitionCount_three_mod_three_nine
 ---
 
-# Regular Tripartition Count three mod three nine
+# Congruences modulo 3 and 9 for 3-regular tripartitions
 
-`T_3(3n + 1) ≡ 0 (mod 3)` and `T_3(3n + 2) ≡ 0 (mod 9)` for all `n ≥ 0`.
+**Congruences modulo 3 and 9 for 3-regular tripartitions.** Let $T_3(m)$ be the number of
+$3$-regular tripartitions of $m$. For every natural number $n$, $3 \mid T_3(3n + 1)$ and
+$9 \mid T_3(3n + 2)$.
 
 ## Depends on
 
-- [Regular Tripartition Count](regular-tripartition-count.md)
+- [Regular tripartition counts](regular-tripartition-count.md)
 
 ## Sources
 

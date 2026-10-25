@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_odd_two_pow_mul_catalan
 ---
 
-# Sum choose odd two pow mul catalan
+# Odd-index binomial sum of Catalan numbers
 
-Equation (19): `∑_{k=1}^{⌈n/2⌉} binom(n,2k-1) 2^{n-2k} C_k = ½ C_{n+2} - C_{n+1}`.
+**Odd-index binomial sum of Catalan numbers.** Write $C_m = \binom{2m}{m}/(m+1)$ for the
+$m$-th Catalan number. For every natural number $n$,
+
+$$\sum_{k=1}^{\lceil n/2 \rceil} \binom{n}{2k-1} \frac{2^n}{2^{2k}} C_k =
+\frac{1}{2} C_{n+2} - C_{n+1}.$$
 
 ## Depends on
 

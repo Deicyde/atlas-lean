@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.cyclicShiftLeftStrategy_self
 ---
 
-# Cyclic Shift Left Strategy self
+# Top component of the left-shift strategy
 
-The top component of `CSL` is the left shift.
+**Top component of the left-shift strategy.** For every $n$, the component on $n$ positions
+of the left-shift strategy $\mathrm{CSL}_n$ is the left cyclic shift $j \mapsto j - 1 \bmod n$
+of $\{0, \dots, n-1\}$, the inverse of the cyclic shift $j \mapsto j + 1 \bmod n$.
 
 ## Depends on
 
-- [Cyclic Shift Left Strategy](cyclic-shift-left-strategy.md)
+- [Cyclic shift left strategy](cyclic-shift-left-strategy.md)
 
 ## Sources
 

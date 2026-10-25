@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.schreierPadovan_small
 ---
 
-# Schreier Padovan small
+# Small values of the Padovan-like sequences
 
-Table 3 values: `a_{1,2,n} = 1, 1, 2, 2, 3, 4, 5, 7` and `a_{2,1,n} = 0, 1, 1, 1, 2, 3, 4, 6`
-for `n = 0, …, 7`.
+**Small values of the Padovan-like sequences.** For $n = 0, 1, \dots, 7$, the Padovan-like
+sequence $a_{1,2,n}$ takes the values $1, 1, 2, 2, 3, 4, 5, 7$, and $a_{2,1,n}$ takes the values
+$0, 1, 1, 1, 2, 3, 4, 6$.
 
 ## Depends on
 
-- [Schreier Padovan](schreier-padovan.md)
+- [Padovan-like sequence for Schreier sets](schreier-padovan.md)
 
 ## Sources
 

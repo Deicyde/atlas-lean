@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_selfDualMonotone_fixed_of_odd
 ---
 
-# Lemma 17
+# For odd $n$, every permutation fixes a self-dual monotone function
 
-**Lemma 17.** For odd `n` and every `π ∈ S_n`, `Φ(π, Λ_n) ≠ ∅`.
+**For odd $n$, every permutation fixes a self-dual monotone function.** Let $n$ be odd and
+let $\pi$ be a permutation of the $n$ coordinates. Then there is a self-dual monotone Boolean
+function $f$ on $n$ variables with $f(x \circ \pi) = f(x)$ for every input $x$.
 
 ## Depends on
 

@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.kTupleRegularPartitionCount_at_zero
 ---
 
-# K Tuple Regular Partition Count at zero
+# One tuple of $\ell$-regular partitions of total zero
 
-Every `T_{ℓ,k}(0)` is `1`: the only tuple of total `0` is the tuple of empty partitions.
+**One tuple of $\ell$-regular partitions of total zero.** For all natural numbers $\ell$
+and $k$, writing $T_{\ell,k}(n)$ for the number of $k$-tuples of $\ell$-regular partitions
+with total $n$, we have $T_{\ell,k}(0) = 1$: the only such tuple of total $0$ is the tuple of
+empty partitions.
 
 ## Depends on
 
-- [K Tuple Regular Partition Count](k-tuple-regular-partition-count.md)
+- [Number of $k$-tuples of $\ell$-regular partitions](k-tuple-regular-partition-count.md)
 
 ## Proof depends on
 
-- [L Regular Partition Count](l-regular-partition-count.md)
-- [L Regular Partition Count zero](l-regular-partition-count-zero.md)
+- [Number of $\ell$-regular partitions](l-regular-partition-count.md)
+- [Zero has one $\ell$-regular partition](l-regular-partition-count-zero.md)
 
 ## Sources
 

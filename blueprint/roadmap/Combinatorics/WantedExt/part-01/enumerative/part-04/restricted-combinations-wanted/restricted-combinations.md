@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.restrictedCombinations
 ---
 
-# Restricted Combinations
+# Restricted combinations
 
-The restricted combinations of the paper: the `k`-subsets of `{1, …, n}` such that no two
-elements differ by an element of `Q`. Differences are taken between distinct elements, so an
-element `0 ∈ Q` has no effect, as in the paper.
+**Restricted combinations.** For a finite set $Q$ of natural numbers and $n, k \ge 0$, the
+restricted combinations are the $k$-element subsets $s$ of $\{1, \dots, n\}$ such that
+$b - a \notin Q$ for all $a, b \in s$ with $a < b$. Since only distinct elements are compared,
+whether $0 \in Q$ makes no difference.
 
 ## Depends on
 

@@ -5,12 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.kTupleRegularPartitionCount
 ---
 
-# K Tuple Regular Partition Count
+# Number of $k$-tuples of $\ell$-regular partitions
 
-`T_{ℓ,k}(n)`, the number of `k`-tuples `(λ₁, …, λ_k)` of `ℓ`-regular partitions of
-`n₁, …, n_k` with `n₁ + ⋯ + n_k = n`, defined by peeling off the first component: the
-empty tuple counts once at `n = 0`, and a `(k+1)`-tuple of total `n` is an `ℓ`-regular
-partition of `i` followed by a `k`-tuple of total `n - i`, over `0 ≤ i ≤ n`.
+**Number of $k$-tuples of $\ell$-regular partitions.** For natural numbers $\ell$, $k$ and
+$n$, the number $T_{\ell,k}(n)$ is defined by recursion on $k$: $T_{\ell,0}(n)$ is $1$ if
+$n = 0$ and $0$ otherwise, and
+
+$$T_{\ell,k+1}(n) = \sum_{i=0}^{n} r_\ell(i) \, T_{\ell,k}(n-i),$$
+
+where $r_\ell(i)$ is the number of $\ell$-regular partitions of $i$.
+
+Peeling off the first component in this way, $T_{\ell,k}(n)$ counts the $k$-tuples
+$(\lambda_1, \dots, \lambda_k)$ of $\ell$-regular partitions of $n_1, \dots, n_k$ with
+$n_1 + \dots + n_k = n$.
 
 ## Depends on
 
@@ -18,7 +25,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [L Regular Partition Count](l-regular-partition-count.md)
+- [Number of $\ell$-regular partitions](l-regular-partition-count.md)
 
 ## Sources
 

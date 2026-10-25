@@ -5,16 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.nonempty_equiv_colorCompProhibited_one_composition_mod_four
 ---
 
-# Theorem 12
+# n-color compositions without colors 1, 2 and compositions with parts 1, 2 mod 4
 
-**Theorem 12**: there is a bijection between `n`-color
-compositions of `n+2` with colors `1, 2` prohibited and
-compositions of `n` with parts `≡ 1, 2 (mod 4)` (for
-`n ≥ 1`; at `n = 0` the counts are `0` and `1`).
+**n-color compositions without colors 1, 2 and compositions with parts 1, 2 mod 4.** For
+every natural number $n \ge 1$, there is a bijection between $\mathrm{CCo}_{\widehat{1,2}}(n+2)$,
+the $n$-color compositions of $n+2$ in which no part has color $1$ or $2$, and the compositions of
+$n$ all of whose parts are congruent to $1$ or $2$ modulo $4$.
+
+The hypothesis $n \ge 1$ is needed: at $n = 0$ the two sets have $0$ and $1$ elements.
 
 ## Depends on
 
-- [Color Comp Prohibited](color-comp-prohibited.md)
+- [n-color compositions with two prohibited consecutive colors](color-comp-prohibited.md)
 
 ## Sources
 

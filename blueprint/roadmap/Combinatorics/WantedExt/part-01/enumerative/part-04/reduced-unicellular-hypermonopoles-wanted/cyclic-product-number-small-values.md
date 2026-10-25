@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.cyclicProductNumber_small_values
 ---
 
-# Cyclic Product Number small values
+# Small cyclic product numbers
 
-Small values from the table of `H(n, k)` values: `H(3, 1) = 1`, `H(4, 2) = 5`, `H(5, 1) = 8`,
-`H(7, 1) = 180`.
+**Small cyclic product numbers.** The cyclic product numbers satisfy $H(3, 1) = 1$,
+$H(4, 2) = 5$, $H(5, 1) = 8$ and $H(7, 1) = 180$.
 
 ## Depends on
 
-- [Cyclic Product Number](cyclic-product-number.md)
+- [Cyclic product numbers](cyclic-product-number.md)
 
 ## Sources
 

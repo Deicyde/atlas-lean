@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.mitrinovicR_eq_sum_mitrinovicR_zero
 ---
 
-# Mitrinovic R eq sum mitrinovic R zero
+# Binomial expansion of Mitrinović's numbers in the first parameter
 
-Proposition 4: `R^k_j(a, b) = ∑_{ℓ=0}^{j-k} (-1)^ℓ C(k + ℓ, ℓ) a^ℓ R^{k+ℓ}_j(0, b)` for all
-`j, k ∈ ℕ` (for `k > j` both sides are `0`). The source's hypothesis `b ≠ 0` is dropped: the
-identity also holds at `b = 0`.
+**Binomial expansion of Mitrinović's numbers in the first parameter.** For all complex
+numbers $a, b$ and all $j, k \in \mathbb{N}$, Mitrinović's numbers satisfy
+
+$$R^k_j(a, b) = \sum_{\ell=0}^{j-k} (-1)^\ell \binom{k+\ell}{\ell} a^\ell R^{k+\ell}_j(0, b),$$
+
+where the upper limit $j - k$ is read as $0$ when $k > j$ (both sides are then $0$).
+
+The source's hypothesis $b \ne 0$ is not needed: the identity also holds at $b = 0$.
 
 ## Depends on
 
-- [Mitrinovic R](mitrinovic-r.md)
+- [Mitrinović's numbers](mitrinovic-r.md)
 
 ## Sources
 

@@ -5,12 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.cellR
 ---
 
-# Cell R
+# Cell map of the quarter-turn r
 
-The cell map for the paper's right action of the quarter-turn `r` on an `n × n` grid:
-`(x,y) ↦ (n-1-y,x)`.  The common modulus of both coordinates records that this is square-only.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Cell map of the quarter-turn r.** For a natural number $n$, the quarter-turn $r$ acts on the
+cells $(x, y) \in \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ of the $n \times n$ grid by
+$(x, y) \mapsto (-1 - y, x)$, that is, $(x, y) \mapsto (n - 1 - y, x)$ modulo $n$.
 
 ## Depends on
 

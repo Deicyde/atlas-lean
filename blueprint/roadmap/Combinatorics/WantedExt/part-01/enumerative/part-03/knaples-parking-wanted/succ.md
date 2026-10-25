@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsNaplesParkingFunction.succ
 ---
 
-# Succ
+# Every $k$-Naples parking function is $(k + 1)$-Naples
 
-Proposition 1: a `k`-Naples parking function is also a `(k + 1)`-Naples parking function.
+**Every $k$-Naples parking function is $(k + 1)$-Naples.** For all natural numbers $k$
+and $n$, every $k$-Naples parking function $\alpha$ of length $n$ is also a $(k + 1)$-Naples
+parking function.
 
 ## Depends on
 
-- [Is Naples Parking Function](is-naples-parking-function.md)
+- [$k$-Naples parking function](is-naples-parking-function.md)
 
 ## Sources
 

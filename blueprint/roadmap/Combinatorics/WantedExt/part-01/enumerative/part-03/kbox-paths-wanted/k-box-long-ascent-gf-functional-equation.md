@@ -5,17 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.kBoxLongAscentGF_functional_equations
 ---
 
-# K Box Long Ascent GF functional equations
+# Long-ascent functional equations for $k$-box paths
 
-The long-ascent functional equations: `F́_k = x Ǵ_{k+1}^k (Ǵ_{k+1} - 1 + t)` for
-`k ≥ 1` and `Ǵ_k = 1 + x Ǵ_k^k (Ǵ_k - 1 + t)` for `k ≥ 2`. The source's displayed
-sum for `Ǵ_k` starts at `j = 1`, omitting the empty path; `Ǵ_k` here includes it
-(constant term `1`), as both equations require.
+**Long-ascent functional equations for $k$-box paths.** Let $\acute F_k(t, x)$ be the
+long-ascent generating function of $k$-box paths and $\acute G_k(t, x)$ that of augmented
+$k$-Dyck paths, including the empty path, both in $\mathbb{Z}[t][[x]]$. Then for every $k \ge 1$
+
+$$
+\acute F_k = x \, \acute G_{k+1}^{k} \, (\acute G_{k+1} - 1 + t),
+$$
+
+and for every $k \ge 2$
+
+$$
+\acute G_k = 1 + x \, \acute G_k^{k} \, (\acute G_k - 1 + t).
+$$
+
+The source's displayed sum for $\acute G_k$ omits the empty path; here $\acute G_k$ includes it
+(constant term $1$), as both equations require.
 
 ## Depends on
 
-- [Augmented KDyck Long Ascent GF](augmented-kdyck-long-ascent-gf.md)
-- [K Box Long Ascent GF](k-box-long-ascent-gf.md)
+- [Long-ascent generating function of augmented $k$-Dyck paths](augmented-kdyck-long-ascent-gf.md)
+- [Long-ascent generating function of $k$-box paths](k-box-long-ascent-gf.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.hypersequence_succ_succ
 ---
 
-# Hypersequence succ succ
+# Recurrence between consecutive hypersequence generations
 
-Theorem 2: `a^{(r+1)}_{n+1} = a^{(r+1)}_n + a^{(r)}_{n+1}`.
+**Recurrence between consecutive hypersequence generations.** Let $(a_n)$ be a sequence of
+complex numbers and let $a^{(r)}_n$ denote its hypersequence of generation $r$. For all natural
+numbers $r$ and $n$, $a^{(r+1)}_{n+1} = a^{(r+1)}_n + a^{(r)}_{n+1}$.
 
 ## Depends on
 

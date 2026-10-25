@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.womanRank
 ---
 
-# Woman Rank
+# A woman's rank of a man
 
-The zero-based position at which woman `j` ranks man `i` (the paper's
-ranking minus one).
+**A woman's rank of a man.** For a preference profile for $n$ men and $n$ women, the rank
+that woman $j$ gives man $i$ is the zero-based position at which she ranks him, that is, the
+paper's ranking minus one.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
 
 ## Sources
 

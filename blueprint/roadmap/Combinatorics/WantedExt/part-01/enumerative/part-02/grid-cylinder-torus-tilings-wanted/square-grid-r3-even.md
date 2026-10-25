@@ -5,18 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.squareGrid_r3_even
 ---
 
-# Square Grid r3 even
+# Square-grid tilings fixed by the rotation $r^3$, even $n$
 
-The `r³` formula for even `n` is the same four-cycle count as for `r`.  It is stated
-separately with its own order-four tile permutation, so it directly covers the action of `r³` in
-every `D₈`-set.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-grid tilings fixed by the rotation $r^3$, even $n$.** Let $n$ be an even positive
+integer, let $T$ be a finite set of tile designs, and let $\sigma$ be a permutation of $T$ with
+$\sigma^4 = 1$. Let $r^3$ be the cell map $(x, y) \mapsto (y, -1-x)$ of the $n \times n$ grid
+$(\mathbb{Z}/n\mathbb{Z})^2$. Then the number of tilings $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$
+with $F(r^3(c)) = \sigma(F(c))$ for every cell $c$ equals $|T|^{n^2/4}$.
 
 ## Depends on
 
-- [Cell R3](cell-r3.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
+- [Cell map of the three-quarter turn r³](cell-r3.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
 
 ## Sources
 

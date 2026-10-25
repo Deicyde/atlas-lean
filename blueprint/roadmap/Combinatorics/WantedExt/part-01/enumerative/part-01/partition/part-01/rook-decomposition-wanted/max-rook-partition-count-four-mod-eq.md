@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount_four_modEq
 ---
 
-# Max Rook Partition Count four mod Eq
+# A congruence for partitions with max-rook number 4
 
-For `n > 16` and `p ≥ 2`, `R_4(n + 12p) ≡ R_4(n) (mod p)`.
+**A congruence for partitions with max-rook number 4.** Let $R_4(n)$ be the number of
+partitions of $n$ with max-rook number $4$. For all natural numbers $p \ge 2$ and $n > 16$,
+$R_4(n + 12p) \equiv R_4(n) \pmod p$.
 
 ## Depends on
 
-- [Max Rook Partition Count](max-rook-partition-count.md)
+- [Partitions with a given max-rook number](max-rook-partition-count.md)
 
 ## Sources
 

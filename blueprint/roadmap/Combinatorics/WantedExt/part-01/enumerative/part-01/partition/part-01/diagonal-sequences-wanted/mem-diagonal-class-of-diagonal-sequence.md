@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_diagonalClassOf_diagonalSequence
 ---
 
-# Mem diagonal Class Of diagonal Sequence
+# A partition lies in the class of its diagonal sequence
 
-A partition `β` lies in the class of its own diagonal sequence.
+**A partition lies in the class of its diagonal sequence.** Every partition $\beta$ of $n$
+belongs to the set of partitions of $n$ whose diagonal sequence equals that of $\beta$.
 
 ## Depends on
 
-- [Diagonal Class Of](diagonal-class-of.md)
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Partitions with a prescribed diagonal sequence](diagonal-class-of.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

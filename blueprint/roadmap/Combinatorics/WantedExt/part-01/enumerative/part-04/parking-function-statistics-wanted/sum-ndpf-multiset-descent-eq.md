@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_ndpf_multisetDescent_eq
 ---
 
-# Sum ndpf multiset Descent eq
+# Counting parking functions with a given descent set by their content
 
-`∑_{β ∈ PF↑_n} d_{M(β)}(I) = d(I;n)`, where `d_{M(β)}(I)` counts words with letters the
-multiset of entries of `β` and descent set `I`.
+**Counting parking functions with a given descent set by their content.** The descent set
+of a word $w = (w_1, \dots, w_n)$ is $\{i : 1 \le i \le n - 1,\ w_i > w_{i+1}\}$. Let
+$n \in \mathbb{N}$ and $I \subseteq \{1, \dots, n - 1\}$. Then the number of parking functions of
+length $n$ with descent set $I$ equals the sum, over the nondecreasing parking functions $\beta$
+of length $n$, of the number of words of length $n$ with descent set $I$ whose multiset of
+letters is the multiset of entries of $\beta$.
 
 ## Depends on
 

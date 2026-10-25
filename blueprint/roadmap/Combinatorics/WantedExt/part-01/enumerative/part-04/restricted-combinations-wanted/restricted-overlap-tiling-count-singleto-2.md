@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.restrictedOverlapTilingCount_singleton_two_four_two
 ---
 
-# Restricted Overlap Tiling Count singleton two four two
+# Two interlocking $\{2\}$-combs on a 4-board
 
-With `Q = {2}` the comb is a `(1,1,1)`-comb; two of them interlock on a `4`-board
-(starts `0` and `1`), the only tiling with two combs.
+**Two interlocking $\{2\}$-combs on a 4-board.** For $Q = \{2\}$, there is exactly one
+restricted-overlap tiling of a $4$-board with squares and two $Q$-combs.
+
+Here the $Q$-comb has length $3$, with teeth in cells $0$ and $2$ and a gap in cell $1$; in
+the unique tiling the two combs start in cells $0$ and $1$ and interlock.
 
 ## Depends on
 
-- [Restricted Overlap Tiling Count](restricted-overlap-tiling-count.md)
+- [Number of restricted-overlap tilings](restricted-overlap-tiling-count.md)
 
 ## Sources
 

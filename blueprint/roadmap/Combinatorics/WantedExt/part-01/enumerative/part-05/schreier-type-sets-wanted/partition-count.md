@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionCount
 ---
 
-# Partition Count
+# The partition number $p(u)$
 
-`p(u)`, the partition number of `u` (with `p(0) = 1`).
+**The partition number $p(u)$.** For a natural number $u$, $p(u)$ is the number of partitions
+of $u$, that is, of multisets of positive integers summing to $u$; in particular $p(0) = 1$.
 
 ## Depends on
 

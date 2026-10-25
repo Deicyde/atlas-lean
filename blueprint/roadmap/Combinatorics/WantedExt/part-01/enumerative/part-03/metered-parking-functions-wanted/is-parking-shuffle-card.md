@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isParkingShuffle_card
 ---
 
-# Is Parking Shuffle card
+# Number of parking-function shuffles
 
-The number of parking-function shuffles: for `m ≤ n` and `1 ≤ k ≤ n`,
-`|Sh_m(k - 1, n - k)|` is `binom(m-1, n-k) (n-m+1) k^{m-n+k-2} (n-k+1)^{n-k-1}` if
-`k > n - m + 1`, `m^{m-2}` if `k = n - m + 1`, and `0` if `k < n - m + 1`. Stated in `ℕ` with
-`m = m' + 1`; the only negative exponents are `1^{-1}` (at `k = n`, and `m = 1`), equal to the
-truncated `1^0`.
+**Number of parking-function shuffles.** Let $1 \le m \le n$ and $1 \le k \le n$, and write
+$\mathrm{Sh}_m(k - 1, n - k)$ for the set of $(m, n)$-parking-function shuffles with parameter
+$k$, words of length $m - 1$ with entries in $\{0, \dots, n-1\}$. Then
+$|\mathrm{Sh}_m(k - 1, n - k)|$ equals $\binom{m-1}{n-k}(n-m+1)\,k^{m-n+k-2}(n-k+1)^{n-k-1}$
+if $k > n - m + 1$, equals $m^{m-2}$ if $k = n - m + 1$, and equals $0$ if $k < n - m + 1$.
+The exponent $-1$ occurs only on the base $1$ (at $k = n$, and at $m = 1$), and $1^{-1} = 1$.
 
 ## Depends on
 
-- [Is Parking Shuffle](is-parking-shuffle.md)
+- [Parking-function shuffles](is-parking-shuffle.md)
 
 ## Sources
 

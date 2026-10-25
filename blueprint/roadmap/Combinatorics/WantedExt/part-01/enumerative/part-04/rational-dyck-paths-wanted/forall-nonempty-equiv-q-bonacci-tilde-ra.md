@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.forall_nonempty_equiv_qBonacci_tildeRational_iff
 ---
 
-# Forall nonempty equiv q Bonacci tilde Rational iff
+# $Q$-bonacci and rational-run paths correspond exactly when $s \equiv 1 \pmod r$
 
-For coprime `r, s ≥ 1` and `t = ⌊(s - 1)/r⌋` (so `t r + 1 ≤ s ≤ (t + 1) r`, the
-source's choice of `t`), the sets `R̃_{n+t+1}^{r/s}` and `Q_n^{r/s}` are in
-bijection for every `n` if and only if `s = t r + 1`.
+**$Q$-bonacci and rational-run paths correspond exactly when $s \equiv 1 \pmod r$.** Let
+$r, s \ge 1$ be coprime natural numbers and let $t = \lfloor (s - 1)/r \rfloor$, so that
+$t r + 1 \le s \le (t + 1) r$. For $m \in \mathbb{N}$ write $Q_m^{r/s}$ for the set of $Q$-bonacci
+paths of semilength $m$ and $\tilde R_m^{r/s}$ for the set of Dyck paths of semilength $m$ and
+height at most $2$ whose block word's maximal runs satisfy the rational run condition for
+$q = r/s$. Then $\tilde R_{n+t+1}^{r/s}$ and $Q_n^{r/s}$ are in bijection for every $n \ge 0$ if
+and only if $s = t r + 1$.
 
 ## Depends on
 
-- [Q Bonacci Dyck Paths](q-bonacci-dyck-paths.md)
-- [Tilde Rational Dyck Paths](tilde-rational-dyck-paths.md)
+- [The $Q$-bonacci paths $Q_n^{r/s}$](q-bonacci-dyck-paths.md)
+- [The path sets $\tilde R_n^{r/s}$](tilde-rational-dyck-paths.md)
 
 ## Sources
 

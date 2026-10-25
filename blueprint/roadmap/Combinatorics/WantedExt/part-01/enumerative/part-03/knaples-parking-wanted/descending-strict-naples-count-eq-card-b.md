@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.descendingStrictNaplesCount_eq_card_binaryTree
 ---
 
-# Descending Strict Naples Count eq card binary Tree
+# Descending strictly $k$-Naples parking functions and binary trees
 
-Proposition 5: for `k ≥ 1`, descending strictly `k`-Naples parking functions of length `n`
-are equinumerous with binary trees on `n + k` nodes whose root has at least `k - 1` left
-children in a row (left spine of `≥ k` nodes) and has a right child that has at least `k` left
-children in a row (left spine of `≥ k + 1` nodes).
+**Descending strictly $k$-Naples parking functions and binary trees.** For every $n$ and
+every $k \ge 1$, the number of descending strictly $k$-Naples parking functions of length $n$
+(descending preferences that are $k$-Naples but not $(k - 1)$-Naples) equals the number of
+binary trees $t$ with $n + k$ nodes such that the left spine of $t$ (the root, its left child,
+that child's left child, and so on) has at least $k$ nodes and the left spine of the right
+subtree of $t$ has at least $k + 1$ nodes.
 
 ## Depends on
 
-- [Descending Strict Naples Count](descending-strict-naples-count.md)
+- [Number of descending strictly $k$-Naples parking functions](descending-strict-naples-count.md)
 - [Left Spine Length](left-spine-length.md)
 
 ## Sources

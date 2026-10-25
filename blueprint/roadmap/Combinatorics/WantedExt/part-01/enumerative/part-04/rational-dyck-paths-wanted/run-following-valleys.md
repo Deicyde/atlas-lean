@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.runFollowingValleys
 ---
 
-# Run Following Valleys
+# Valleys following a run
 
-The number of `0`-valleys immediately after run `i`: the length of run
-`i + 1` if it is a `false` run, and `0` otherwise.
+**Valleys following a run.** Let $R = ((b_0, m_0), \dots, (b_{k-1}, m_{k-1}))$ be a list of
+pairs of a Boolean letter and a natural number, read as the maximal runs of a block word in which
+the letter $\mathrm{false}$ stands for a $0$-valley $DU$. For $i \in \mathbb{N}$, the number of
+$0$-valleys immediately after run $i$ is $m_{i+1}$ if $i + 1 < k$ and $b_{i+1} = \mathrm{false}$,
+and $0$ otherwise.
 
 ## Depends on
 

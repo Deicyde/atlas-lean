@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_valleyless_tieless_parkingFunction
 ---
 
-# Card valleyless tieless parking Function
+# Valleyless-tieless parking functions are counted by the Fine numbers
 
-For `n ≥ 1`, the number of valleyless-tieless parking functions of length `n` is the
-Fine number `fineNumber (n + 1)` (OEIS A000957 at `n + 1`: `1, 2, 6, 18, 57, …`). The
-printed index `F_{n+2}` is off by one in the A000957 indexing the paper cites.
+**Valleyless-tieless parking functions are counted by the Fine numbers.** Write a parking
+function $f$ of length $n$ as the sequence $(a_1, \dots, a_n)$ with $a_j = f(j-1) + 1$. It is
+valleyless-tieless if there is no $j$ with $a_{j-1} > a_j < a_{j+1}$ (a valley) and no $j$ with
+$a_j = a_{j+1}$ (a tie). For every $n \ge 1$, the number of valleyless-tieless parking functions
+of length $n$ is the Fine number $F(n+1)$, where the Fine numbers are indexed from $0$ with
+$F(0) = 1$; for $n = 1, \dots, 5$ these counts are $1, 2, 6, 18, 57$.
+
+In the offset-0 indexing of OEIS A000957 ($0, 1, 0, 1, 2, 6, 18, \dots$), $F(n+1)$ is the term
+of index $n + 2$.
 
 ## Depends on
 

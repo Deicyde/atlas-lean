@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.compositionShade_le_totalCompositionShade
 ---
 
-# Composition Shade le total Composition Shade
+# The total shade bounds the shade of each composition
 
-Each composition of `n` contributes its own shade: the total shade of the compositions of
-`n` is at least the shade of any one of them; for example `c(4) ≥ 6`.
+**The total shade bounds the shade of each composition.** For every natural number $n$
+and every composition $x$ of $n$, the shade of $x$ is at most the total shade $c(n)$ of the
+compositions of $n$.
+
+For example, since the composition $4$ has shade $6$, this gives $c(4) \ge 6$.
 
 ## Depends on
 
-- [Composition Shade](composition-shade.md)
-- [Total Composition Shade](total-composition-shade.md)
+- [Shade of a composition](composition-shade.md)
+- [Total shade of compositions](total-composition-shade.md)
 
 ## Sources
 

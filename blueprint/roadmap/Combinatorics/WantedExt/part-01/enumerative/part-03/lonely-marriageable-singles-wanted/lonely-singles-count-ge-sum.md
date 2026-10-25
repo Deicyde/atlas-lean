@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.lonelySinglesCount_ge_sum
 ---
 
-# Lonely Singles Count ge sum
+# Lower bound for the number of lonely singles partitions
 
-For `n ≥ 2`, `L_n` is at least the number of noncrossing partitions with at most one
-singleton block, written with the formulas of Proposition 24:
-`L_n ≥ ∑_{m=1}^{⌊n/2⌋} binom(n, m) binom(n-m-1, m-1)/(n-m+1)
-  + ∑_{m=2}^{⌊(n+1)/2⌋} binom(n, m-1) binom(n-m-1, m-2)`.
+**Lower bound for the number of lonely singles partitions.** For every $n \ge 2$, the number
+$L_n$ of lonely singles partitions of $\{0, \dots, n-1\}$ satisfies
+
+$$
+L_n \ge \sum_{m=1}^{\lfloor n/2 \rfloor} \frac{1}{n-m+1} \binom{n}{m} \binom{n-m-1}{m-1} +
+\sum_{m=2}^{\lfloor (n+1)/2 \rfloor} \binom{n}{m-1} \binom{n-m-1}{m-2},
+$$
+
+where a binomial coefficient $\binom{a}{b}$ with $a < 0$ or $b < 0$ is taken to be $0$.
 
 ## Depends on
 
-- [Lonely Singles Count](lonely-singles-count.md)
-- [Zero Extended Choose](zero-extended-choose.md)
+- [Number of lonely singles partitions](lonely-singles-count.md)
+- [Zero-extended binomial coefficient](zero-extended-choose.md)
 
 ## Sources
 

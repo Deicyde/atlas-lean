@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.peaklessTielessOfNondecreasing_example
 ---
 
-# Peakless Tieless Of Nondecreasing example
+# Example of the tie-and-value map
 
-Example 4.3 of arXiv:2312.16786v1: `φ(1, 1, 2, 3, 4, 4) = (6, 2, 1, 2, 3, 4)` (zero-based
-values).
+**Example of the tie-and-value map.** For $n = 6$, the tie-and-value map $\varphi$ sends
+$(0, 0, 1, 2, 3, 3)$ to $(5, 1, 0, 1, 2, 3)$; in the paper's one-based values this reads
+$\varphi(1, 1, 2, 3, 4, 4) = (6, 2, 1, 2, 3, 4)$.
 
 ## Depends on
 
-- [Peakless Tieless Of Nondecreasing](peakless-tieless-of-nondecreasing.md)
+- [Tie-and-value map](peakless-tieless-of-nondecreasing.md)
 
 ## Sources
 

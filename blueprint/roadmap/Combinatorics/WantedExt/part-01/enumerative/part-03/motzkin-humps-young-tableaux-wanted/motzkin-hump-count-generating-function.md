@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.motzkinHumpCount_generatingFunction
 ---
 
-# Motzkin Hump Count generating Function
+# Generating function for humps of a fixed height
 
-Corollary 5, in its generating-function (rather than equivalent Riordan-array)
-form: for `k ≥ 1`, clearing the factor `1-X` gives the displayed identity in
-`PowerSeries ℤ`.
+**Generating function for humps of a fixed height.** Let $H_{n,k}$ be the number of pairs
+$(P, h)$ where $P$ is a Motzkin path of length $n$ and $h$ is a hump of height $k$ in $P$ (an up
+step and a later down step with only flat steps between them, the up step ending at height
+$k$), and let $M(x) = \sum_{n \ge 0} m_n x^n$, where $m_n$ is the $n$-th Motzkin number. For
+every integer $k \ge 1$, in the ring $\mathbb{Z}[[x]]$ of formal power series,
+
+$$(1 - x) \sum_{n \ge 2k} H_{n,k} \, x^n = x^{2k} M(x)^{2k}.$$
+
+The source also states this result in Riordan-array form.
 
 ## Depends on
 
-- [Motzkin Hump Count](motzkin-hump-count.md)
-- [Motzkin Series](motzkin-series.md)
+- [Number of humps of a given height in Motzkin paths](motzkin-hump-count.md)
+- [Motzkin generating function](motzkin-series.md)
 
 ## Sources
 

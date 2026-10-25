@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.booleanCubeConcat
 ---
 
-# Boolean Cube Concat
+# Concatenation of Boolean functions
 
-The concatenation `W₀ · W₁ ⋯` of Boolean functions on `n` variables, as a function on
-`n + k` variables: the last `k` variables give the binary index `∑ⱼ yⱼ 2^j` into the word `W`,
-and the selected function is applied to the first `n` variables (out-of-range indices read
-`false`).
+**Concatenation of Boolean functions.** Let $n$ and $k$ be natural numbers and let
+$W = (W_0, W_1, \dots, W_{m-1})$ be a finite list of Boolean functions on $n$ variables. The
+concatenation $W_0 \cdot W_1 \cdots W_{m-1}$ on $n + k$ variables is the Boolean function that
+sends $(x_0, \dots, x_{n-1}, y_0, \dots, y_{k-1})$ to $W_i(x_0, \dots, x_{n-1})$, where
+$i = \sum_{j < k} y_j 2^j$ is the number whose binary digits are the last $k$ variables (true
+counted as $1$ and false as $0$), and to false when $i \ge m$.
 
 ## Depends on
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.schreierPadovan_rec
 ---
 
-# Schreier Padovan rec
+# Recurrence for the Padovan-like sequence
 
-The recurrence `a_{p,q,n} = a_{p,q,n-q} + a_{p,q,n-p-q}` for `n ≥ p + q`, `q ≥ 1`.
+**Recurrence for the Padovan-like sequence.** For natural numbers $p$, $q$ and $n$ with
+$q \ge 1$ and $n \ge p + q$, the Padovan-like sequence satisfies
+$a_{p,q,n} = a_{p,q,n-q} + a_{p,q,n-p-q}$.
 
 ## Depends on
 
-- [Schreier Padovan](schreier-padovan.md)
+- [Padovan-like sequence for Schreier sets](schreier-padovan.md)
 
 ## Sources
 

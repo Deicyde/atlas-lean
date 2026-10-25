@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.perimeterPMResidueArmLegCount_ne_zero_iff_and_eq_choose
 ---
 
-# Perimeter PMResidue Arm Leg Count ne zero iff and eq choose
+# Nonvanishing and binomial count for parts $\equiv \pm a \pmod{d+3}$
 
-Lemma 4.3: for positive `d, a, α, λ` with `a < (d + 3)/2`, `ℓ_d^(a)(α, λ) ≠ 0` iff `α ≥ a`
-and `α ≡ ±a (mod d + 3)`; then `ℓ_d^(a)(α, λ) = C(2(α - a)/(d + 3) + λ - 1, λ - 1)` if
-`α ≡ a`, and `C(2(α + a)/(d + 3) + λ - 2, λ - 1)` if `α ≡ -a`.
+**Nonvanishing and binomial count for parts $\equiv \pm a \pmod{d+3}$.** Let $d$, $a$,
+$\alpha$ and $\lambda$ be positive integers with $a < (d + 3)/2$, and let
+$\ell_d^{(a)}(\alpha, \lambda)$ be the number of partitions into parts congruent to $a$ or $-a$
+modulo $d + 3$ with largest part $\alpha$ and exactly $\lambda$ parts. Then
+$\ell_d^{(a)}(\alpha, \lambda) \ne 0$ if and only if $\alpha \ge a$ and
+$\alpha \equiv \pm a \pmod{d + 3}$. Moreover, if $\alpha \ge a$ and $\alpha \equiv a \pmod{d + 3}$,
+then $\ell_d^{(a)}(\alpha, \lambda) = \binom{2(\alpha - a)/(d + 3) + \lambda - 1}{\lambda - 1}$,
+and if $\alpha \ge a$ and $\alpha \equiv -a \pmod{d + 3}$, then
+$\ell_d^{(a)}(\alpha, \lambda) = \binom{2(\alpha + a)/(d + 3) + \lambda - 2}{\lambda - 1}$.
 
 ## Depends on
 
-- [Perimeter PMResidue Arm Leg Count](perimeter-pmresidue-arm-leg-count.md)
+- [Partitions into parts $\equiv \pm a \pmod{d+3}$ by largest part and number of parts](perimeter-pmresidue-arm-leg-count.md)
 
 ## Sources
 

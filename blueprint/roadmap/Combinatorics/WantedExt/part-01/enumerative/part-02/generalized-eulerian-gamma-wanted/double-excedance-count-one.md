@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.doubleExcedanceCount_one
 ---
 
-# Double Excedance Count one
+# The identity has no double excedances
 
-The identity has no double excedances.
+**The identity has no double excedances.** For every $n$, the identity permutation of
+$\{0, 1, \dots, n-1\}$ has no double excedances.
 
 ## Depends on
 
-- [Double Excedance Count](double-excedance-count.md)
+- [Number of double excedances](double-excedance-count.md)
 
 ## Sources
 

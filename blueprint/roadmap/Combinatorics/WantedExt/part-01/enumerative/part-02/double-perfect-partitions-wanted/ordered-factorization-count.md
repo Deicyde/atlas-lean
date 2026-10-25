@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.orderedFactorizationCount
 ---
 
-# Ordered Factorization Count
+# Number of ordered factorizations
 
-`f(n)`, the number of ordered factorizations of `n` into factors greater than `1`, with
-`f(0) = 0` and `f(1) = 1` (OEIS A074206).
+**Number of ordered factorizations.** For $n \ge 2$, $f(n)$ is the number of ordered
+factorizations $n = a_1 a_2 \cdots a_k$ of $n$ into factors $a_i > 1$ (OEIS A074206); moreover
+$f(0) = 0$ and $f(1) = 1$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ordered Factorization Count Aux](ordered-factorization-count-aux.md)
+- [Truncated recursion for ordered factorizations](ordered-factorization-count-aux.md)
 
 ## Sources
 

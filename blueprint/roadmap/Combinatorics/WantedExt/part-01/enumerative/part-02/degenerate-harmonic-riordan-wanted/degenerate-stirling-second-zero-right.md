@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.degenerateStirlingSecond_zero_right
 ---
 
-# Degenerate Stirling Second zero right
+# Degenerate Stirling numbers of the second kind in column zero
 
-`S_{2,λ}(n, 0) = [n = 0]`.
+**Degenerate Stirling numbers of the second kind in column zero.** For every real number
+$\lambda$ and every natural number $n$, the degenerate Stirling number of the second kind
+$S_{2,\lambda}(n, 0)$ equals $1$ if $n = 0$ and $0$ otherwise.
 
 ## Depends on
 
-- [Degenerate Stirling Second](degenerate-stirling-second.md)
+- [Degenerate Stirling numbers of the second kind](degenerate-stirling-second.md)
 
 ## Proof depends on
 
-- [Degenerate Exp Series](degenerate-exp-series.md)
+- [Degenerate exponential series](degenerate-exp-series.md)
 
 ## Sources
 

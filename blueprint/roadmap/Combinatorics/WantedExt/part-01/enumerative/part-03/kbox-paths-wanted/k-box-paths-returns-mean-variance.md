@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.kBoxPaths_returns_mean_variance
 ---
 
-# K Box Paths returns mean variance
+# Mean and variance of the number of returns of $k$-box paths
 
-Among `k`-box paths of size `n`, the mean number of returns is
-`(k+2)((k+2)n-1) / ((k+1)((k+1)n+1))` and the variance is
-`(k+2)((k+2)n-1)((2k+1)(k+1)n-2)(n-1) / ((k+1)²((k+1)n+1)²((k+1)n+2))`.
+**Mean and variance of the number of returns of $k$-box paths.** Let $k \ge 1$ and $n \ge 1$,
+and let $R(\mu)$ be the number of returns (steps ending on the $x$-axis) of a path $\mu$. The
+average of $R$ over the $k$-box paths of size $n$ is
+
+$$\frac{(k+2)((k+2)n-1)}{(k+1)((k+1)n+1)},$$
+
+and the average of $R^2$ over these paths minus the square of the average of $R$ is
+
+$$\frac{(k+2)((k+2)n-1)((2k+1)(k+1)n-2)(n-1)}{(k+1)^2((k+1)n+1)^2((k+1)n+2)}.$$
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
-- [K Box Paths](k-box-paths.md)
-- [Skew Returns](skew-returns.md)
+- [Skew Dyck steps](skew-dyck-step.md)
+- [$k$-box paths](k-box-paths.md)
+- [Returns of a skew Dyck word](skew-returns.md)
 
 ## Sources
 

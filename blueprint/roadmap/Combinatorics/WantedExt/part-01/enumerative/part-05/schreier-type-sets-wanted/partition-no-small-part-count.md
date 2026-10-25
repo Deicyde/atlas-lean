@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionNoSmallPartCount
 ---
 
-# Partition No Small Part Count
+# Partitions avoiding parts from 2 up to a bound
 
-`|G_{n,ℓ}|`: partitions of `n` with no parts in
-`{2, …, ℓ}`, via `Nat.Partition.restricted`.
+**Partitions avoiding parts from 2 up to a bound.** For natural numbers $n$ and $\ell$,
+$|G_{n,\ell}|$ is the number of partitions of $n$ none of whose parts lies in
+$\{2, \dots, \ell\}$.
 
 ## Depends on
 

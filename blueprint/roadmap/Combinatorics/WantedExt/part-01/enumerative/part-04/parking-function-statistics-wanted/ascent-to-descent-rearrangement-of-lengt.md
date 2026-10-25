@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.ascentToDescentRearrangement_of_length_le_one
 ---
 
-# Ascent To Descent Rearrangement of length le one
+# Words of length at most one are fixed by the ascent-to-descent rearrangement
 
-`ν` fixes words of length at most one.
+**Words of length at most one are fixed by the ascent-to-descent rearrangement.** Every word
+$x$ over $\mathbb{N}$ of length at most $1$ satisfies $\nu(x) = x$, where $\nu$ is the
+ascent-to-descent rearrangement.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ lean: MetaMathlibExt.ascentToDescentRearrangement_of_length_le_one
 
 ## Proof depends on
 
-- [Ascent To Descent Rearrangement Aux](ascent-to-descent-rearrangement-aux.md)
+- [Fuel-bounded ascent-to-descent rearrangement](ascent-to-descent-rearrangement-aux.md)
 
 ## Sources
 

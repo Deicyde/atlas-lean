@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.choose_mul_coloredCompositionCount_eq
 ---
 
-# Choose mul colored Composition Count eq
+# Colored compositions and colored Dyck paths
 
-Compositions and Dyck paths: `binom(n, k-1) c_{n,k}(γ) = k d_{n,k}(γ)` for
-`1 ≤ k ≤ n` and every coloring sequence.
+**Colored compositions and colored Dyck paths.** Let $\gamma = (\gamma_1, \gamma_2, \dots)$
+be a sequence of natural numbers. Let $c_{n,k}(\gamma)$ be the number of compositions of $n$ with
+$k$ parts in which each part $j$ carries one of $\gamma_j$ colors, and let $d_{n,k}(\gamma)$ be the
+number of Dyck paths of semilength $n$ with $k$ peaks in which each block $UD^j$, formed by a peak
+and the maximal run of $D$ steps starting at its $D$, carries one of $\gamma_j$ colors. For all
+natural numbers $n$ and $k$ with $1 \le k \le n$,
+
+$$\binom{n}{k-1} c_{n,k}(\gamma) = k \, d_{n,k}(\gamma).$$
 
 ## Depends on
 
-- [Colored Composition Count](colored-composition-count.md)
-- [Colored Dyck Path Count](colored-dyck-path-count.md)
+- [Number of colored compositions](colored-composition-count.md)
+- [Number of colored Dyck paths](colored-dyck-path-count.md)
 
 ## Sources
 

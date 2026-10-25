@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.litCellsDecreasing_indiscrete
 ---
 
-# Lit Cells Decreasing indiscrete
+# Lit cells of a one-part decreasing bargraph
 
-The one-part partition `(n)`, `n ≥ 1`, has `n` lit cells as a weakly decreasing bargraph.
+**Lit cells of a one-part decreasing bargraph.** For every natural number $n \ge 1$, the
+partition $(n)$ of $n$ with a single part has $n$ lit cells as a weakly decreasing bargraph.
 
 ## Depends on
 
-- [Lit Cells Decreasing](lit-cells-decreasing.md)
+- [Lit cells of a weakly decreasing bargraph](lit-cells-decreasing.md)
 
 ## Proof depends on
 
-- [Decreasing Parts](decreasing-parts.md)
+- [Parts of a partition in decreasing order](decreasing-parts.md)
 
 ## Sources
 

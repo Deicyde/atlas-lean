@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.dyckStepHeight
 ---
 
-# Dyck Step Height
+# Height of a sequence of Dyck steps
 
-The height after the first `j` steps of a Dyck word given by its list of steps (`U` up,
-`D` down), for Mathlib's `DyckWord` API.
+**Height of a sequence of Dyck steps.** For a finite sequence $l$ of Up steps $U$ and Down
+steps $D$ and a natural number $j$, the height of $l$ after $j$ steps is the integer obtained as
+the number of $U$ minus the number of $D$ among the first $j$ steps of $l$ (among all of $l$
+when $j$ exceeds its length).
 
 ## Depends on
 

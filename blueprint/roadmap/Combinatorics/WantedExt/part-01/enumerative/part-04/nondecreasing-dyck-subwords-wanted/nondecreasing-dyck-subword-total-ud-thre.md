@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.nondecreasingDyckSubwordTotal_UD_three
 ---
 
-# Nondecreasing Dyck Subword Total UD three
+# Peaks in the non-decreasing Dyck paths of semilength three
 
-The `10` peaks over the five paths of semilength `3`: `d_UD(3) = 10`.
+**Peaks in the non-decreasing Dyck paths of semilength three.** Let $d_w(n)$ be the total
+number of occurrences of the subword $w$ over all non-decreasing Dyck paths of semilength $n$.
+Then $d_{UD}(3) = 10$; that is, the non-decreasing Dyck paths of semilength $3$ have $10$ peaks
+$UD$ in total.
+
+All five Dyck paths of semilength $3$ are non-decreasing.
 
 ## Depends on
 
-- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
+- [Total occurrences of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-total.md)
 
 ## Sources
 

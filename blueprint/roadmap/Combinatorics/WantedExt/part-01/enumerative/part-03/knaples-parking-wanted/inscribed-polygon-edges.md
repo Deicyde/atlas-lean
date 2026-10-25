@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.inscribedPolygonEdges
 ---
 
-# Inscribed Polygon Edges
+# Edges of an inscribed polygon
 
-The polygon edges of the vertex set `R` of a convex polygon inscribed in the convex `s`-gon
-with vertices `0, …, s - 1`: the pairs `a < b` of `R` with no vertex of `R` strictly between
-them, and the pair `(min R, max R)`.
+**Edges of an inscribed polygon.** Let $R$ be a set of vertices of the convex $s$-gon with
+vertices $0, 1, \dots, s - 1$. The edges of the polygon with vertex set $R$ are the pairs
+$(a, b)$ of elements of $R$ with $a < b$ such that either no element of $R$ lies strictly
+between $a$ and $b$, or $a$ is the least and $b$ the greatest element of $R$.
 
 ## Depends on
 

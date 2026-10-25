@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtFirstOccurrence_eq_blockLength
 ---
 
-# Gijswijt First Occurrence eq block Length
+# First occurrences end blocks
 
-For `n ≥ m ≥ 1`, the first occurrence of `n` in `A^{(m)}` is the last element of a prefix
-block `B_t^{(m)}` for some `t ≥ 1`.
+**First occurrences end blocks.** Let $1 \le m \le n$, and write $\beta^{(m)}(t)$ for the
+length of the block $B_t^{(m)}$ of the $m$th order Gijswijt sequence $A^{(m)}$. Then there is a
+$t \ge 1$ such that $A^{(m)}(\beta^{(m)}(t)) = n$ and $\beta^{(m)}(t)$ is the position of the
+first occurrence of $n$ in $A^{(m)}$; that is, the first $n$ in $A^{(m)}$ is the last term of the
+block $B_t^{(m)}$.
 
 ## Depends on
 
-- [Gijswijt Block Length](gijswijt-block-length.md)
-- [Gijswijt First Occurrence](gijswijt-first-occurrence.md)
-- [Gijswijt Term](gijswijt-term.md)
+- [Block lengths of the higher-order Gijswijt sequences](gijswijt-block-length.md)
+- [First occurrence of a value in a Gijswijt sequence](gijswijt-first-occurrence.md)
+- [Terms of the $m$th order Gijswijt sequence](gijswijt-term.md)
 
 ## Sources
 

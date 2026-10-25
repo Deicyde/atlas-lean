@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sytHookCount_generatingFunction
 ---
 
-# Syt Hook Count generating Function
+# Generating function for hook tableau counts
 
-Corollary 9 gives the generating function for `SYT_k(2,1;n)` for every natural
-`k`; it is stated division-free in `PowerSeries ℤ` and keeps the paper's `n ≥ k`
-coefficient range explicitly.
+**Generating function for hook tableau counts.** For a natural number $k$, let
+$\mathrm{SYT}_k(2,1;n)$ be the number of standard Young tableaux of order $n$ in the
+$(2,1)$-hook whose first row is longer than its second row by exactly $k$, and let
+$M(x) = \sum_{n \ge 0} m_n x^n$ be the generating function of the Motzkin numbers $m_n$. Then,
+in the ring of formal power series with integer coefficients,
+
+$$
+(1 + x) \sum_{n \ge k} \mathrm{SYT}_k(2,1;n)\, x^n = x^k \bigl(1 + x\, M(x)^{k+1}\bigr).
+$$
+
+The factor $1 + x$ is cleared, so the identity involves no division.
 
 ## Depends on
 
-- [Motzkin Series](motzkin-series.md)
-- [Syt Hook Count](syt-hook-count.md)
+- [Motzkin generating function](motzkin-series.md)
+- [Standard Young tableaux in the $(2,1)$-hook with given row difference](syt-hook-count.md)
 
 ## Sources
 

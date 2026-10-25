@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount_three_mod_two
 ---
 
-# Max Rook Partition Count three mod two
+# Parity of $R_3(n)$
 
-Parity of `R_3(n)` for `n > 9`: even for odd `n`, odd for even `n`.
+**Parity of $R_3(n)$.** Let $R_3(n)$ be the number of partitions of $n$ with max-rook number
+$3$. For every natural number $n > 9$, $R_3(n)$ is even if $n$ is odd and odd if $n$ is even.
 
 ## Depends on
 
-- [Max Rook Partition Count](max-rook-partition-count.md)
+- [Partitions with a given max-rook number](max-rook-partition-count.md)
 
 ## Sources
 

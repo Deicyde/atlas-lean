@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.sum_kPermFixedPointCount
 ---
 
-# Sum k Perm Fixed Point Count
+# Stirling numbers from fixed-point counts
 
-Proposition 3 (iv): `∑_{j=0}^{k} a(n, k, j) = c(n, k)`, the unsigned Stirling number of the
-first kind.
+**Stirling numbers from fixed-point counts.** For natural numbers $n$, $k$ and $j$, let
+$a(n, k, j)$ be the number of permutations of an $n$-element set with exactly $k$ cycles (fixed
+points counted as cycles of length one) and exactly $j$ fixed points. Then for all natural
+numbers $n$ and $k$,
 
-The paper assumes `n ≥ k ≥ 1`; the identity is stated for all `n` and `k`.
+$$\sum_{j=0}^{k} a(n, k, j) = c(n, k),$$
+
+where $c(n, k)$ is the unsigned Stirling number of the first kind.
+
+The paper assumes $n \ge k \ge 1$; the identity is stated for all $n$ and $k$.
 
 ## Depends on
 
-- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
+- [Permutations counted by cycles and fixed points](k-perm-fixed-point-count.md)
 
 ## Sources
 

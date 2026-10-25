@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.squareGrid_r3f
 ---
 
-# Square Grid r3f
+# Square-grid tilings fixed by the diagonal reflection $r^3f$
 
-The other diagonal reflection `r³f` also fixes `n` cells and pairs all others.  Its tile
-permutation satisfies `σ²=1`, and `(tileFixedCount σ 1)^n` is the paper's `t_{r³f}^n`.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-grid tilings fixed by the diagonal reflection $r^3f$.** Let $n$ be a positive
+integer, let $T$ be a finite set of tile designs, and let $\sigma$ be a permutation of $T$ with
+$\sigma^2 = 1$. Let $r^3f$ be the cell map $(x, y) \mapsto (-1-y, -1-x)$ of the $n \times n$ grid
+$(\mathbb{Z}/n\mathbb{Z})^2$. Then the number of tilings $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$
+with $F(r^3f(c)) = \sigma(F(c))$ for every cell $c$ equals $|T|^{(n^2-n)/2} \, t^n$, where $t$ is
+the number of designs in $T$ fixed by $\sigma$.
 
 ## Depends on
 
-- [Cell R3 F](cell-r3-f.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the antidiagonal reflection r³f](cell-r3-f.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

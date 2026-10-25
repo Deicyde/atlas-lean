@@ -13,7 +13,7 @@ The four relationship identities for `D_k` (`k ≥ 1`, `m, n ≥ k`):
 
 ## Depends on
 
-- [Gen Delannoy Lower](gen-delannoy-lower.md)
+- [Lower generalized Delannoy number](gen-delannoy-lower.md)
 
 ## Sources
 

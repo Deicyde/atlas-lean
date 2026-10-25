@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_mul_eq_hypersequence_one_mul_add_sum
 ---
 
-# Sum mul eq hypersequence one mul add sum
+# Abel summation by parts
 
-Theorem 7 (Abel's summation by parts):
-`∑_{k=0}^{n} a_k b_k = a^{(1)}_n b_{n+1} + ∑_{k=0}^{n} a^{(1)}_k (b_k - b_{k+1})`.
+**Abel summation by parts.** Let $a$ and $b$ be sequences of complex numbers and let
+$a^{(1)}_k = \sum_{i=0}^{k} a_i$ be the first hypersequence (the partial sums) of $a$. Then for
+every natural number $n$,
+
+$$\sum_{k=0}^{n} a_k b_k = a^{(1)}_n b_{n+1} + \sum_{k=0}^{n} a^{(1)}_k (b_k - b_{k+1}).$$
 
 ## Depends on
 

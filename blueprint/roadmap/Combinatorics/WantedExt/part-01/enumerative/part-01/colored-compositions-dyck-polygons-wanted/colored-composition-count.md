@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.coloredCompositionCount
 ---
 
-# Colored Composition Count
+# Number of colored compositions
 
-`c_{n,k}(γ)`: the number of `γ`-color compositions of `n` with exactly `k`
-parts, where a part equal to `j` can take on `γ j` colors.
+**Number of colored compositions.** Let $\gamma = (\gamma_1, \gamma_2, \dots)$ be a sequence
+of natural numbers and let $n, k$ be natural numbers. The number $c_{n,k}(\gamma)$ of
+$\gamma$-colored compositions of $n$ with $k$ parts counts the compositions of $n$ with exactly $k$
+parts in which each part equal to $j$ carries one of $\gamma_j$ colors: it is the sum, over all
+compositions $(a_1, \dots, a_k)$ of $n$ into $k$ positive parts, of
+$\gamma_{a_1} \cdots \gamma_{a_k}$.
 
 ## Depends on
 

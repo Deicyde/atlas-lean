@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.permWordleCoeff
 ---
 
-# Perm Wordle Coeff
+# Coefficients of the guess-count generating function
 
-The coefficient `[x^r] f_S(x)` of the paper's generating function of a strategy `S` of
-length `n`: the number of secret permutations of `Fin n` guessed in exactly `r` guesses.
+**Coefficients of the guess-count generating function.** For a strategy $S$ and natural
+numbers $n$ and $r$, the coefficient $[x^r] f_S(x)$ of the generating function of $S$ at length
+$n$ is the number of secret permutations of $\{0, \dots, n-1\}$ that $S$ guesses in exactly $r$
+guesses.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [Permutation Wordle games solved in a given number of guesses](perm-wordle-solved-in.md)
 
 ## Sources
 

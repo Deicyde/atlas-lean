@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.squareGrid_r2f_even
 ---
 
-# Square Grid r2f even
+# Square-grid tilings fixed by the reflection $r^2 f$ for even $n$
 
-For even `n`, the `r²f` square-grid reflection has count `|T|^(n²/2)`.  The hypothesis
-`σ²=1` is its order condition on tile designs.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-grid tilings fixed by the reflection $r^2 f$ for even $n$.** Let $n$ be an even
+positive integer, let $T$ be a finite set and let $\sigma$ be a permutation of $T$ with
+$\sigma^2 = 1$. Let $r^2 f$ be the reflection of the grid $(\mathbb{Z}/n\mathbb{Z})^2$ given by
+$(r^2 f)(x, y) = (x, -1 - y)$. Then the number of maps $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$
+with $F((r^2 f)(c)) = \sigma(F(c))$ for every cell $c$ is $|T|^{n^2/2}$.
 
 ## Depends on
 
-- [Cell R2 F](cell-r2-f.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
+- [Cell map of the reflection r²f](cell-r2-f.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
 
 ## Sources
 

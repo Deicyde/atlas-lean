@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.hypersequence_eq_sum_choose
 ---
 
-# Hypersequence eq sum choose
+# Hypersequences as binomial sums
 
-Theorem 1: for `r ≥ 1`,
-`a^{(r)}_n = ∑_{k=0}^{n} C(n + r - 1 - k, r - 1) a_k = ∑_{k=0}^{n} C(r + k - 1, k) a_{n-k}`.
+**Hypersequences as binomial sums.** Let $(a_n)$ be a sequence of complex numbers and let
+$a^{(r)}_n$ denote its hypersequence of generation $r$. For every $r \ge 1$ and every natural
+number $n$,
+
+$$a^{(r)}_n = \sum_{k=0}^{n} \binom{n+r-1-k}{r-1} a_k = \sum_{k=0}^{n} \binom{r+k-1}{k} a_{n-k}.$$
 
 ## Depends on
 

@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.bishopsWhite_eq_quasi
 ---
 
-# Bishops White eq quasi
+# Quasi-polynomial formula for bishops on white squares
 
-Equation (13): `R_W(m, k) = ∑_{d=0}^{2k} c_d m^d` with the constituent coefficients
-`c_d = [m^d] R_W(m, k)` of equation (13), `z = -π(m)`.
+**Quasi-polynomial formula for bishops on white squares.** Write $R_W(m, k)$ for the number of
+placements of $k$ nonattacking bishops on the white squares (those $(i, j)$ with $i + j$ even) of
+the $m \times m$ board $[1, m]^2$, $\pi(m) \in \lbrace 0, 1 \rbrace$ for the remainder of $m$
+modulo $2$, and $c_{k,d}(z) \in \mathbb{C}$ for the constituent coefficient of the bishop colour
+quasi-polynomials (defined for natural $k, d$ and complex $z$). For all natural numbers $m$ and
+$k$, as complex numbers,
+
+$$
+R_W(m, k) = \sum_{d=0}^{2k} c_{k,d}\bigl(-\pi(m)\bigr)\, m^d.
+$$
 
 ## Depends on
 
-- [Bishop Color Quasi Coeff](bishop-color-quasi-coeff.md)
-- [Bishops White](bishops-white.md)
+- [Constituent coefficients for bishops on one color](bishop-color-quasi-coeff.md)
+- [Nonattacking bishops on the white squares](bishops-white.md)
 
 ## Sources
 

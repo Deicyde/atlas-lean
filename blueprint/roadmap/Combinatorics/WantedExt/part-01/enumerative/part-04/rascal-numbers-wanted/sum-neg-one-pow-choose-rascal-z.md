@@ -5,16 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.sum_negOnePow_choose_rascalZ
 ---
 
-# Theorem 12
+# Vanishing higher finite differences of Rascal numbers
 
-**Theorem 12**:
-`∑_{j=0}^r (-1)^{r-j} \binom{r}{j} R_{n+j,k} = 0` for
-`0 ≤ k ≤ n` and `r ≥ 2` (the `r`-th finite difference of a
-linear function of `n`).
+**Vanishing higher finite differences of Rascal numbers.** For natural numbers $n$, $k$ and
+$r$ with $k \le n$ and $r \ge 2$, the Rascal numbers satisfy
+$\sum_{j=0}^{r} (-1)^{r-j} \binom{r}{j} R_{n+j,k} = 0$.
+
+For $k \le n$ the value $R_{n+j,k}$ is a linear function of $j$, and the sum is its $r$-th
+finite difference.
 
 ## Depends on
 
-- [Rascal Z](rascal-z.md)
+- [Rascal numbers on the integers](rascal-z.md)
 
 ## Sources
 

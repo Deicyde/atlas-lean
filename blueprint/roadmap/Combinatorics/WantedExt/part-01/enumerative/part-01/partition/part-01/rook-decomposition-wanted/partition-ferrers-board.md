@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.partitionFerrersBoard
 ---
 
-# Partition Ferrers Board
+# Ferrers board of a partition
 
-The Ferrers board of a partition `p` of `n`: cell `(i, j)` (row `i`,
-column `j`, both zero-based) is present iff the `(i+1)`-st largest part
-exceeds `j`, i.e. iff more than `i` parts exceed `j`.
+**Ferrers board of a partition.** Let $p$ be a partition of $n$, and number rows and columns
+from $0$. The Ferrers board of $p$ is the finite set of cells
+$(i, j) \in \mathbb{N} \times \mathbb{N}$ such that the $(i+1)$-st largest part of $p$ exceeds $j$,
+that is, such that more than $i$ parts of $p$, counted with multiplicity, exceed $j$.
 
 ## Depends on
 

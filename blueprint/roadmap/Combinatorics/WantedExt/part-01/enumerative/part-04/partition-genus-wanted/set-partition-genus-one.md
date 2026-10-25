@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.setPartitionGenus_one
 ---
 
-# Set Partition Genus one
+# The partition into singletons has genus zero
 
-The partition of `Fin n` into singletons has genus `0`.
+**The partition into singletons has genus zero.** For every natural number $n$, the genus of
+the identity permutation of $\{0, \dots, n-1\}$ is $0$; the identity encodes the partition of
+$\{0, \dots, n-1\}$ into singletons.
 
 ## Depends on
 
-- [Set Partition Genus](set-partition-genus.md)
+- [Genus of a set partition](set-partition-genus.md)
 
 ## Sources
 

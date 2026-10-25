@@ -30,7 +30,9 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- The Young diagram of the near-hook partition `θ^(n) = (n + 2, 2, 1^n)` of `2n + 4`.
+/-- **The near-hook diagram $\theta^{(n)}$.** For $n \in \mathbb{N}$, $\theta^{(n)}$ is the Young
+diagram of the near-hook partition $(n + 2, 2, 1^n)$ of $2n + 4$: its rows have lengths $n + 2$
+and $2$, followed by $n$ rows of length $1$.
 
 Source: L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*,
 Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 2. -/
@@ -44,7 +46,8 @@ def nearHookTheta (n : ℕ) : YoungDiagram :=
     · rintro a ⟨-, rfl⟩; omega
     · simp
 
-/-- The row lengths of `θ^(n)` are `n + 2, 2, 1, …, 1` (`n` ones).
+/-- **Row lengths of $\theta^{(n)}$.** For every $n \in \mathbb{N}$, the row lengths of the Young
+diagram $\theta^{(n)}$, from the top row down, are $n + 2$, $2$, and then $1$ repeated $n$ times.
 
 Source: L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*,
 Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 2. -/
@@ -54,8 +57,13 @@ theorem nearHookTheta_rowLens (n : ℕ) :
   simp only [List.cons_append, List.mem_cons, List.nil_append, List.mem_replicate]
   rintro x (rfl | rfl | ⟨-, rfl⟩) <;> omega
 
-/-- The set `𝒫_n` of Guy, Krattenthaler and Sagan: words of `2n + 2` steps from
-`{N, S, E, W}` whose partial sums stay in the closed first quadrant and whose total is `(n, n)`.
+/-- **First-quadrant paths $\mathcal{P}_n$.** For $n \in \mathbb{N}$, $\mathcal{P}_n$ is the set of
+words $(s_1, \dots, s_{2n+2})$ of $2n + 2$ steps, each one of $N = (0, 1)$, $S = (0, -1)$,
+$E = (1, 0)$ and $W = (-1, 0)$ in $\mathbb{Z}^2$, such that every partial sum $s_1 + \dots + s_k$
+with $0 \le k \le 2n + 2$ has both coordinates nonnegative and the total $s_1 + \dots + s_{2n+2}$
+equals $(n, n)$.
+
+These are the walks of Guy, Krattenthaler and Sagan.
 
 Source: L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*,
 Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 1. -/
@@ -63,7 +71,9 @@ def firstQuadrantPaths (n : ℕ) : Set (List (ℤ × ℤ)) :=
   {w | w.length = 2 * n + 2 ∧ (∀ s ∈ w, s = (0, 1) ∨ s = (0, -1) ∨ s = (1, 0) ∨ s = (-1, 0)) ∧
     (∀ k, 0 ≤ (w.take k).sum.1 ∧ 0 ≤ (w.take k).sum.2) ∧ w.sum = ((n : ℤ), (n : ℤ))}
 
-/-- `NS ∈ 𝒫_0`.
+/-- **The path $NS$ lies in $\mathcal{P}_0$.** The two-step word consisting of a north step
+$(0, 1)$ followed by a south step $(0, -1)$ belongs to the set $\mathcal{P}_0$ of first-quadrant
+paths.
 
 Source: L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*,
 Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 1. -/
@@ -85,7 +95,8 @@ def nearHookTableauToPathPsi (n : ℕ) (T : SemistandardYoungTableau (nearHookTh
     else if ∃ i < n + 2, T i 0 = k + 3 then (0, 1)
     else if ∃ j < n + 2, T 0 j = 2 then (0, -1) else (-1, 0)
 
-/-- `ψ(T)` has `2n + 2` steps.
+/-- **The path $\psi(T)$ has $2n + 2$ steps.** For every $n \in \mathbb{N}$ and every
+semistandard Young tableau $T$ of shape $\theta^{(n)}$, the word $\psi(T)$ has length $2n + 2$.
 
 Source: L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*,
 Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 3, equation (eq:psi). -/
@@ -108,7 +119,8 @@ def nearHookTableauToPathXi (n : ℕ) (T : SemistandardYoungTableau (nearHookThe
     else if k + 3 = T 1 1 then (if ∃ j < n + 2, T 0 j = k + 2 then (0, -1) else (-1, 0))
     else if ∃ j < n + 2, T 0 j = k + 3 then (1, 0) else (0, 1)
 
-/-- `ξ(T)` has `2n + 2` steps.
+/-- **The path $\xi(T)$ has $2n + 2$ steps.** For every $n \in \mathbb{N}$ and every
+semistandard Young tableau $T$ of shape $\theta^{(n)}$, the word $\xi(T)$ has length $2n + 2$.
 
 Source: L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*,
 Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 4.1, equation (eq:xi). -/

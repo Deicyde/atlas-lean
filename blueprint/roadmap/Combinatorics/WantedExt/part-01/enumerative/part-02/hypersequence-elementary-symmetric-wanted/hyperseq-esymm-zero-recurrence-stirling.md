@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hyperseq_esymm_zero_recurrence_stirling
 ---
 
-# Hyperseq esymm zero recurrence stirling
+# Elementary symmetric functions of the first integers via Stirling numbers
 
-At `n = 0`: `e_{0,k}(0) = δ_{0,k}`, `e_{j,k}(0) = e_{j-1,k}(0) + j e_{j-1,k-1}(0)` (3.6),
-and for `k ≤ j`, `e_{j,k}(0) = ∑_{ℓ=0}^{k} binom(j-k+ℓ, ℓ) [j, j-k+ℓ] = [j + 1, j + 1 - k]`
-(3.7).
+**Elementary symmetric functions of the first integers via Stirling numbers.** For
+$j, k \in \mathbb{N}$ let $e_{j,k}$ be the elementary symmetric polynomial of degree $k$ evaluated
+at $1, 2, \dots, j$ (the source's $e_{j,k}(0)$), and let $c(j, i)$ be the unsigned Stirling number
+of the first kind. Then $e_{0,k} = 1$ if $k = 0$ and $e_{0,k} = 0$ otherwise; for all $j, k$,
+$e_{j+1,k+1} = e_{j,k+1} + (j + 1)\, e_{j,k}$; and for all $k \le j$,
 
-At `n = 0` the variables are `1, …, j`, so `e_{j,k}(0)` is `((Finset.Icc 1 j).val).esymm k`.
-The recurrence is stated for `j, k ≥ 1` (shifted indices) and the closed form for `k ≤ j`.
+$$e_{j,k} = \sum_{\ell=0}^{k} \binom{j-k+\ell}{\ell}\, c(j, j-k+\ell) = c(j + 1, j + 1 - k).$$
 
 ## Depends on
 

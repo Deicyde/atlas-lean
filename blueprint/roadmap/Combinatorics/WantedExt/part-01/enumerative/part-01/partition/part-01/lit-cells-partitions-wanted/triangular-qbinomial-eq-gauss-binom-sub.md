@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.triangularQBinomial_eq_gaussBinom_sub
 ---
 
-# Triangular QBinomial eq gauss Binom sub
+# Triangular $q$-binomial coefficients via Gaussian binomials
 
-For `1 ≤ r` and `s ≤ r`,
-`t[r, s] = q^s [r + s - 1, s]_q - q^{s+1} ∑_{i=2}^{s} t[i - 1, i - 1] q^{i(r-i)} [r - 2i + 1 + s, s - i]_q`.
-The range `s ≤ r` is where every exponent and binomial index is a natural number (for `s > r`,
-`t[r, s] = 0` by the initial conditions (10)); `r ≥ 1` makes `r + s - 1` a natural number.
+**Triangular $q$-binomial coefficients via Gaussian binomials.** For natural numbers $r$ and
+$s$ with $1 \le r$ and $s \le r$, the triangular $q$-binomial coefficient $t[r, s]$ satisfies
+
+$$
+t[r, s] = q^s \binom{r + s - 1}{s}_q - q^{s+1} \sum_{i=2}^{s} t[i - 1, i - 1] \,
+q^{i(r - i)} \binom{r + 1 + s - 2i}{s - i}_q
+$$
+
+in $\mathbb{Z}[[q]]$, where $\binom{M}{k}_q$ denotes the Gaussian binomial coefficient.
+
+In the range $s \le r$ every exponent and binomial index above is a natural number; for $s > r$
+one has $t[r, s] = 0$.
 
 ## Depends on
 
 - [Gaussian binomial coefficient](../../../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
-- [Triangular QBinomial](triangular-qbinomial.md)
+- [Triangular $q$-binomial coefficient](triangular-qbinomial.md)
 
 ## Sources
 

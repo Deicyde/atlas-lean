@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.pondCount_zero
 ---
 
-# Pond Count zero
+# The number of POND partitions of zero
 
-The empty partition is the only partition of `0`, and it is POND: `pond(0) = 1`.
+**The number of POND partitions of zero.** The number $\mathrm{pond}(0)$ of POND
+partitions of $0$ equals $1$: the only partition of $0$ is the empty partition, and it is POND.
 
 ## Depends on
 
-- [Pond Count](pond-count.md)
+- [Number of POND partitions](pond-count.md)
 
 ## Sources
 

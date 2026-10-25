@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.apkCard
 ---
 
-# Apk Card
+# Number of ascent sequences avoiding 001 and 210
 
-The count `|\mathcal{A}_{\{001,210\}}(n, k)|`.
+**Number of ascent sequences avoiding 001 and 210.** For natural numbers $n$ and $k$, this
+counts the ascent sequences of length $n$ with exactly $k$ ascents that avoid the patterns
+$001$ and $210$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ascent Seq Avoid](ascent-seq-avoid.md)
+- [Ascent sequences avoiding 001 and 210](ascent-seq-avoid.md)
 
 ## Sources
 

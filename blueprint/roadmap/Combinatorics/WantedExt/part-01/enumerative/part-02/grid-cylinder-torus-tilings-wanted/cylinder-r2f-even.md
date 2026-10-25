@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.cylinder_r2f_even
 ---
 
-# Cylinder r2f even
+# Cylinder fixed-tiling count for the reflection $r^2 f$ when $m$ is even
 
-If `m` is even, the `r²f` cylinder shift-sum is the divisor sum
-`Σ_{d∣n} φ(d)t_id^(nm/lcm(d,2))`.  `σ²=1` is retained even though this parity case contains no
-nontrivial fixed-design factor, so every permutation carries its proper order hypothesis.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Cylinder fixed-tiling count for the reflection $r^2 f$ when $m$ is even.** Let $T$ be a
+finite set of tile designs, let $n, m \ge 1$ with $m$ even, and let $\sigma$ be a permutation of
+$T$ with $\sigma^2 = 1$. Let $r^2 f$ be the cell map $(x, y) \mapsto (x, -1 - y)$ of
+$\mathbb{Z}/n \times \mathbb{Z}/m$. Then the cylinder shift sum of $r^2 f$ and $\sigma$ equals
+$\sum_{d \mid n} \varphi(d)\, |T|^{nm / \operatorname{lcm}(d, 2)}$, where $d$ runs over the
+positive divisors of $n$ and $\varphi$ is Euler's totient function.
 
 ## Depends on
 
-- [Cell R2 F](cell-r2-f.md)
-- [Cylinder Shift Sum](cylinder-shift-sum.md)
+- [Cell map of the reflection r²f](cell-r2-f.md)
+- [Cylinder shift sum](cylinder-shift-sum.md)
 
 ## Sources
 

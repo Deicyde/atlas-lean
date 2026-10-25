@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsModEq_square_eq_evenOdd
 ---
 
-# Sum Distinct Parts Mod Eq square eq even Odd
+# Different parts in a residue class and even-minus-odd partition counts
 
-For `0 ≤ r < m`, `a_{r,m}(n) + 2 ∑_{k ≥ 1} (-1)^k a_{r,m}(n - k²)
-= ∑_{j ≥ 0} (mj + r) p_{e-o}(n - mj - r)`, where `p_{e-o}(k) = ∑_{μ ⊢ k} (-1)^{ℓ(μ)}` is the
-number of partitions of `k` with an even number of parts minus the number with an odd number.
+**Different parts in a residue class and even-minus-odd partition counts.** Let $m$, $r$ and
+$n$ be natural numbers with $r < m$, and for $k \ge 0$ let $a_{r,m}(k)$ be the sum, over all
+partitions of $k$, of the different parts congruent to $r$ modulo $m$, each counted once per
+partition whatever its multiplicity. Let $p_{e-o}(k) = \sum_{\mu} (-1)^{\ell(\mu)}$, the sum over
+the partitions $\mu$ of $k$ with $\ell(\mu)$ the number of parts of $\mu$; it is the number of
+partitions of $k$ with an even number of parts minus the number with an odd number of parts. Then
+
+$$a_{r,m}(n) + 2 \sum_{k \ge 1,\ k^2 \le n} (-1)^k a_{r,m}(n - k^2)
+= \sum_{j \ge 0,\ mj + r \le n} (mj + r)\, p_{e-o}(n - mj - r).$$
 
 ## Depends on
 
-- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
+- [Sum of different parts congruent to $r$ modulo $m$](sum-distinct-parts-mod-eq.md)
 
 ## Sources
 

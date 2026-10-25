@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_catalan_succ_choose_one_sub_pow_symm
 ---
 
-# Sum catalan succ choose one sub pow symm
+# Reflection symmetry of the Catalan polynomial sum
 
-Equation (49): `∑ (-1)^{n-k} 2^{-2k} binom(n,k) C_{k+1} (1-x)^{n-k}
-= ∑ (-1)^k 2^{-2k} binom(n,k) C_{k+1} x^{n-k}`.
+**Reflection symmetry of the Catalan polynomial sum.** Let $C_m = \binom{2m}{m}/(m+1)$
+denote the $m$-th Catalan number. For every natural number $n$ and every complex $x$,
+
+$$\sum_{k=0}^{n} (-1)^{n-k} 2^{-2k} \binom{n}{k} C_{k+1} (1-x)^{n-k} =
+\sum_{k=0}^{n} (-1)^k 2^{-2k} \binom{n}{k} C_{k+1} x^{n-k}.$$
 
 ## Depends on
 

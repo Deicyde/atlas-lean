@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsInTwoOneHook
 ---
 
-# Is In Two One Hook
+# Tableaux in the $(2,1)$-hook
 
-A tableau shape lies in the `(2,1)`-hook exactly when it has no occupied cell
-whose zero-based row is at least two and whose zero-based column is at least one.
+**Tableaux in the $(2,1)$-hook.** Let $T$ assign to each entry $i < n$ a cell $(r_i, c_i)$
+with zero-based row $r_i < n$ and column $c_i < n$. Then $T$ lies in the $(2,1)$-hook when no
+entry occupies a cell whose row is at least $2$ and whose column is at least $1$, that is, when
+no $i$ has both $r_i \ge 2$ and $c_i \ge 1$.
 
 ## Depends on
 

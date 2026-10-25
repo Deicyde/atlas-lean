@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_even_div_eq_sum_choose_odd_div
 ---
 
-# Sum choose even div eq sum choose odd div
+# Even-index against odd-index reciprocal binomial sums
 
-`∑_{k ≤ n/2} binom(n,2k)/(2k+1) = 2^{n-1}/(2^n-1) ∑_{k=1}^{⌈n/2⌉} binom(n,2k-1)/k`
-for `n ≠ 0`.
+**Even-index against odd-index reciprocal binomial sums.** For every natural number
+$n \ge 1$,
+
+$$\sum_{k=0}^{\lfloor n/2 \rfloor} \frac{1}{2k+1} \binom{n}{2k} =
+\frac{2^{n-1}}{2^n - 1} \sum_{k=1}^{\lceil n/2 \rceil} \frac{1}{k} \binom{n}{2k-1}.$$
 
 ## Depends on
 

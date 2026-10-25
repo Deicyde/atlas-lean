@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.regularTripartitionCount_three_six_mul_add_four
 ---
 
-# Regular Tripartition Count three six mul add four
+# A congruence modulo 6 for 3-regular tripartitions
 
-`T_3(6n + 4) ≡ 0 (mod 6)` for all `n ≥ 0`.
+**A congruence modulo 6 for 3-regular tripartitions.** Let $T_3(m)$ be the number of
+$3$-regular tripartitions of $m$. For every natural number $n$, $6 \mid T_3(6n + 4)$.
 
 ## Depends on
 
-- [Regular Tripartition Count](regular-tripartition-count.md)
+- [Regular tripartition counts](regular-tripartition-count.md)
 
 ## Sources
 

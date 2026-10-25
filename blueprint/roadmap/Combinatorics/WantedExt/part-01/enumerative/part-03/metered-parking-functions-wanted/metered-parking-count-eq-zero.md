@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.meteredParkingCount_eq_zero
 ---
 
-# Metered Parking Count eq zero
+# Vanishing of metered parking counts
 
-If `m > n` and `t ≥ n`, there are no `t`-metered `(m, n)`-parking functions.
+**Vanishing of metered parking counts.** Let $m, n, t$ be natural numbers with $m > n$ and
+$t \ge n$. Then there are no $t$-metered $(m, n)$-parking functions, that is,
+$\mathrm{mpf}_{m,n}(t) = 0$.
 
 ## Depends on
 
-- [Metered Parking Count](metered-parking-count.md)
+- [Number of metered parking functions](metered-parking-count.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.restrictedCombinationCount
 ---
 
-# Restricted Combination Count
+# Number of restricted combinations
 
-The paper's `S^Q_{n,k}`: the number of `k`-subsets of `{1, …, n}` with no two elements
-differing by an element of `Q`.
+**Number of restricted combinations.** For a finite set $Q$ of natural numbers and natural
+numbers $n$ and $k$, $S^Q_{n,k}$ is the number of $k$-subsets of $\{1, \dots, n\}$ in which no
+two distinct elements differ by an element of $Q$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Restricted Combinations](restricted-combinations.md)
+- [Restricted combinations](restricted-combinations.md)
 
 ## Sources
 

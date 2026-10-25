@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.curlingNumber_example_one
 ---
 
-# Curling Number example one
+# Curling number of $112112223$
 
-`𝒞(112112223) = 1` (example in Section 1).
+**Curling number of $112112223$.** The string $112112223$ has curling number
+$\mathcal{C}(112112223) = 1$.
 
 ## Depends on
 
-- [Curling Number](curling-number.md)
+- [Curling number](curling-number.md)
 
 ## Sources
 

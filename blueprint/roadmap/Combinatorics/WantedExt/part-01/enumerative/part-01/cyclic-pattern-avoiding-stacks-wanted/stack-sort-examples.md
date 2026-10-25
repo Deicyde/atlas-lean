@@ -6,17 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.stackSort_examples
 ---
 
-# Stack Sort examples
+# Stack-sorting examples
 
-The paper's examples: `s(3124) = 1234`, `s_[123](3124) = 2143`, `s^[123](3124) = 4213`,
-`SC_[123](3124) = 1234`, `SC_[123](1324) = 3124`, and `SC_[123](231) = 123`.
+**Stack-sorting examples.** Let $s$ be West's stack-sorting map, $s_{[123]}$ the
+cyclic-pattern-avoiding stack-sorting map for $123$, $s^{[123]}$ the
+consecutive-cyclic-pattern-avoiding stack-sorting map for $123$, and
+$SC_{[123]} = s \circ s_{[123]}$ the cyclic sorting machine for $123$. Then $s(3124) = 1234$,
+$s_{[123]}(3124) = 2143$, $s^{[123]}(3124) = 4213$, $SC_{[123]}(3124) = 1234$,
+$SC_{[123]}(1324) = 3124$ and $SC_{[123]}(231) = 123$.
 
 ## Depends on
 
-- [Consecutive Cyclic Stack Sort](consecutive-cyclic-stack-sort.md)
-- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
-- [Cyclic Stack Sort](cyclic-stack-sort.md)
-- [West Stack Sort](west-stack-sort.md)
+- [Consecutive-cyclic-pattern-avoiding stack-sorting map](consecutive-cyclic-stack-sort.md)
+- [Cyclic avoidance machine](cyclic-sorting-machine.md)
+- [Cyclic-pattern-avoiding stack-sorting map](cyclic-stack-sort.md)
+- [West's stack-sorting map](west-stack-sort.md)
 
 ## Sources
 

@@ -11,12 +11,12 @@ lean: MetaMathlibExt.augmentedKDyckPaths
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
+- [Skew Dyck steps](skew-dyck-step.md)
 
 ## Proof depends on
 
-- [Augment KDyck Word](augment-kdyck-word.md)
-- [K Dyck Words](k-dyck-words.md)
+- [Augmentation of a $k$-Dyck word](augment-kdyck-word.md)
+- [$k$-Dyck paths of size $n$](k-dyck-words.md)
 
 ## Sources
 

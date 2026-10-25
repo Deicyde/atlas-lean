@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.doubledWord
 ---
 
-# Doubled Word
+# Doubled word
 
-The word `f(S) = s₁ s₁ s₂ s₂ ⋯ s_k s_k` for `S = {s₁ < ⋯ < s_k}` (empty for
-`S = ∅`).
+**Doubled word.** For a finite set $S = \{s_1 < s_2 < \dots < s_k\}$ of natural numbers, the
+doubled word of $S$ is $f(S) = s_1 s_1 s_2 s_2 \cdots s_k s_k$, which lists the elements of $S$
+in increasing order with each one written twice; $f(\emptyset)$ is the empty word.
 
 ## Depends on
 

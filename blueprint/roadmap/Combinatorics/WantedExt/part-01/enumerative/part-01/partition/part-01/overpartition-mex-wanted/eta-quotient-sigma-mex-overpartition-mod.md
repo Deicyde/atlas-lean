@@ -5,19 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.etaQuotient_sigmaMexOverpartition_modEq
 ---
 
-# Eta Quotient sigma Mex Overpartition mod Eq
+# Eta-quotient congruence for sums of overpartition minimal excludants
 
-For positive `r` and `k`, the eta-quotient congruence is encoded without
-modular-form infrastructure.  The raw factors `f_d(q) = (q^d;q^d)_∞` use
-`qPochhammerInfRaw`; an integer sequence `c` supplies the power-series
-coefficients; the prefactor is `q^(3r)`; and `Int.ModEq (2^k)` states that
-only exponents `24n+3r` carry `σ_r mex̄(n)`.  The denominator exponent is
-an integer power, so at `k=1` its value `-1` is represented by `zpow`.
+**Eta-quotient congruence for sums of overpartition minimal excludants.** Let $r \ge 1$ and
+$k \ge 1$ be integers, and for $n \ge 0$ let $\sigma_r \overline{\mathrm{mex}}(n)$ be the sum, over
+all overpartitions of $n$, of the least positive integer occurring fewer than $r$ times among the
+non-overlined parts. Then there are integers $c_0, c_1, c_2, \dots$ such that for every complex $q$
+with $|q| < 1$, writing $f_d = (q^d; q^d)_\infty = \prod_{m \ge 1} (1 - q^{dm})$,
+
+$$q^{3r} \frac{f_{48} f_{24r}^{2^k - 1}}{f_{24}^2 f_{48r}^{2^{k-1} - 2}} = \sum_{j \ge 0} c_j q^j,$$
+
+and for every $j \ge 0$ we have $c_j \equiv \sigma_r \overline{\mathrm{mex}}(n) \pmod{2^k}$ when
+$j = 24n + 3r$ with $n \ge 0$, and $c_j \equiv 0 \pmod{2^k}$ otherwise.
+
+The exponent $2^{k-1} - 2$ is an integer; at $k = 1$ it equals $-1$, so $f_{48r}$ then appears
+in the numerator.
 
 ## Depends on
 
 - [Raw infinite q-Pochhammer product](../../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
-- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
+- [Sums of minimal excludants over overpartitions](sigma-mex-overpartition.md)
 
 ## Sources
 

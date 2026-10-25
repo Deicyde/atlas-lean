@@ -6,21 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.partition4431_isFixedColumnHook
 ---
 
-# Partition4431 is Fixed Column Hook
+# Fixed hooks in the partition $(4, 4, 3, 1)$
 
-In `(4, 4, 3, 1)`, the first-column hook `h_{3,1} = 4 = 3 + 1` is a `1`-fixed hook, the
-first-column hook `h_{4,1} = 1` is not `0`-fixed, and the third-column square `(4, 3)` lies
-outside the diagram.
+**Fixed hooks in the partition $(4, 4, 3, 1)$.** Let $\lambda = (4, 4, 3, 1)$, a partition of
+$12$. Then $\lambda$ has a $1$-fixed hook in column $1$ at row $3$ (its hook length is
+$h_{3,1} = 4 = 3 + 1$), $\lambda$ has no $0$-fixed hook in column $1$ at row $4$ (its hook length
+is $h_{4,1} = 1 \ne 4 + 0$), and $\lambda$ has no $(-3)$-fixed hook in column $3$ at row $4$ (the
+square $(4, 3)$ lies outside the Young diagram, since $\lambda_4 = 1 < 3$).
 
 ## Depends on
 
-- [Is Fixed Column Hook](is-fixed-column-hook.md)
-- [Partition4431](partition4431.md)
+- [Fixed hooks in a column of a partition](is-fixed-column-hook.md)
+- [The partition $(4, 4, 3, 1)$ of $12$](partition4431.md)
 
 ## Proof depends on
 
-- [Partition Hook Length](partition-hook-length.md)
-- [Partition Row Len](partition-row-len.md)
+- [Hook length of a square of a partition](partition-hook-length.md)
+- [Row lengths of a partition](partition-row-len.md)
 
 ## Sources
 

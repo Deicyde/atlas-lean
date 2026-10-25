@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_strongPerms_multiples_eq_fibonacciP
 ---
 
-# Card strong Perms multiples eq fibonacci P
+# Counting strongly restricted permutations with displacements $-m$, $0$, $jm$
 
-Corollary 14, counting part: for `j ≥ 1`, `i ≥ 0` and `0 ≤ r < m` (which gives the
-paper's `m ≥ 1`), `P^{\{-m,0,jm\}}_{im+r} = (f^{(j+1)}_i)^{m-r} (f^{(j+1)}_{i+1})^r`.
-The `(1,t)`-bonacci numbers `f^{(t)}_n` (`f^{(t)}_n = f^{(t)}_{n-1} + f^{(t)}_{n-t} + δ_{n,0}`) are the existing
-Fibonacci `p`-numbers shifted: `f^{(j+1)}_n = fibonacciP j (n + 1)`.
+**Counting strongly restricted permutations with displacements $-m$, $0$, $jm$.** Let
+$m, j, i, r$ be natural numbers with $j \ge 1$ and $r < m$, and let $F_j$ be the Fibonacci
+$j$-numbers: $F_j(0) = 0$, $F_j(n) = 1$ for $1 \le n \le j$, and
+$F_j(n) = F_j(n-1) + F_j(n-j-1)$ for $n > j$. Then the number of permutations $\pi$ of
+$\{0, 1, \dots, im + r - 1\}$ such that $\pi(x) - x \in \{-m, 0, jm\}$ for every $x$ equals
+$F_j(i+1)^{m-r} \, F_j(i+2)^r$.
+
+In the paper's notation this is
+$P^{\{-m,0,jm\}}_{im+r} = (f^{(j+1)}_i)^{m-r} (f^{(j+1)}_{i+1})^r$, where the
+$(1,t)$-bonacci numbers $f^{(t)}_n$ satisfy $f^{(j+1)}_n = F_j(n+1)$.
 
 ## Depends on
 

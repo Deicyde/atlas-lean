@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.schreierMultisetPool
 ---
 
-# Schreier Multiset Pool
+# Ground multiset for Schreier-type multisets
 
-The multiset `{1^s, …, (n - 1)^s, n}`: each of `1, …, n - 1` with multiplicity `s`, and `n`
-once.
+**Ground multiset for Schreier-type multisets.** For natural numbers $s$ and $n$, this is the
+multiset $\{1^s, \dots, (n - 1)^s, n\}$, in which each of $1, \dots, n - 1$ has multiplicity $s$
+and $n$ appears once.
 
 ## Depends on
 

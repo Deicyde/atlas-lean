@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.phiFiveCoreAnalog
 ---
 
-# Phi Five Core Analog
+# The φ-analog of the 5-core partition function
 
-`ā_5(n)`, the coefficients of `φ^5(-q^5) / φ(-q)`.
+**The φ-analog of the 5-core partition function.** Let
+$\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ be Ramanujan's theta function. For a natural
+number $n$, $\bar a_5(n)$ is the coefficient of $q^n$ in the integer power series
+$\varphi^5(-q^5)/\varphi(-q)$ (the denominator has constant term $1$, so the quotient is a power
+series).
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ramanujan Theta Pow](ramanujan-theta-pow.md)
+- [Ramanujan's general theta function at powers of q](ramanujan-theta-pow.md)
 
 ## Sources
 

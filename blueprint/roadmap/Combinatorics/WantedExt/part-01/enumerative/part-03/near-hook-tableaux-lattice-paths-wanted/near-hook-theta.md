@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.nearHookTheta
 ---
 
-# Near Hook Theta
+# The near-hook diagram $\theta^{(n)}$
 
-The Young diagram of the near-hook partition `θ^(n) = (n + 2, 2, 1^n)` of `2n + 4`.
+**The near-hook diagram $\theta^{(n)}$.** For $n \in \mathbb{N}$, $\theta^{(n)}$ is the Young
+diagram of the near-hook partition $(n + 2, 2, 1^n)$ of $2n + 4$: its rows have lengths $n + 2$
+and $2$, followed by $n$ rows of length $1$.
 
 ## Depends on
 

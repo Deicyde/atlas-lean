@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsBubble
 ---
 
-# Is Bubble
+# Bubbles
 
-The vertices `a, a + 1, …, a + p - 1` (`p ≥ 1`) form a bubble of size `p`: none of them is an
-endpoint of a short chord, and the run is bounded on each side by a short-chord endpoint or by
-an end of the diagram (a maximal run of vertices devoid of short chords).
+**Bubbles.** Let $\sigma$ be a map from $\{0, \dots, 2n-1\}$ to itself (for a linear chord
+diagram, vertex $i$ is joined by a chord to $\sigma(i)$). For natural numbers $a$ and $p$, the
+vertices $a, a+1, \dots, a+p-1$ form a bubble of size $p$ in $\sigma$ when $p \ge 1$,
+$a + p \le 2n$, none of these vertices is an endpoint of a short chord of $\sigma$, the vertex
+$a - 1$ is an endpoint of a short chord unless $a = 0$, and the vertex $a + p$ is an endpoint
+of a short chord unless $a + p = 2n$.
+
+So a bubble is a maximal run of consecutive vertices containing no endpoint of a short chord.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Short Chord Vertex](is-short-chord-vertex.md)
+- [Endpoints of short chords](is-short-chord-vertex.md)
 
 ## Sources
 

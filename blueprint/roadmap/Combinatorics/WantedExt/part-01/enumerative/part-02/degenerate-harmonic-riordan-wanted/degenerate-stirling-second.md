@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.degenerateStirlingSecond
 ---
 
-# Degenerate Stirling Second
+# Degenerate Stirling numbers of the second kind
 
-Degenerate Stirling numbers of the second kind:
-`(e_λ(t) - 1)ᵏ / k! = ∑_{n ≥ k} S_{2,λ}(n, k) tⁿ / n!` (paper, Equation (8)).
+**Degenerate Stirling numbers of the second kind.** For a real number $\lambda$, let
+$e_\lambda(t) = \sum_{n \ge 0} (1)_{n,\lambda} t^n / n!$ be the degenerate exponential series,
+where $(1)_{0,\lambda} = 1$ and $(1)_{n,\lambda} = 1 (1 - \lambda) \cdots (1 - (n - 1)\lambda)$.
+For natural numbers $n$ and $k$, the degenerate Stirling number of the second kind
+$S_{2,\lambda}(n, k)$ is $n!/k!$ times the coefficient of $t^n$ in $(e_\lambda(t) - 1)^k$.
+Equivalently, $(e_\lambda(t) - 1)^k / k! = \sum_{n \ge k} S_{2,\lambda}(n, k) t^n / n!$, and
+$S_{2,\lambda}(n, k) = 0$ for $n < k$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Degenerate Exp Series](degenerate-exp-series.md)
+- [Degenerate exponential series](degenerate-exp-series.md)
 
 ## Sources
 

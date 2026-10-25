@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.xiPermutation_six_seven
 ---
 
-# Xi Permutation six seven
+# The parity-split permutations for six and seven
 
-`ξ_6 = 135246` and `ξ_7 = 2461357`.
+**The parity-split permutations for six and seven.** For $n \in \mathbb{N}$, let $\xi_n$ list
+the elements of $[n] = \{1, \dots, n\}$ whose parity differs from that of $n$ in increasing order,
+followed by the elements with the parity of $n$ in increasing order. Then $\xi_6 = 135246$ and
+$\xi_7 = 2461357$.
 
 ## Depends on
 
-- [Xi Permutation](xi-permutation.md)
+- [The permutation $\xi_n$](xi-permutation.md)
 
 ## Sources
 

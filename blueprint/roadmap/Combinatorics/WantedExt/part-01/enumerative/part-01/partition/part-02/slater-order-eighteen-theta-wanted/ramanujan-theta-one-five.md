@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTheta_one_five
 ---
 
-# Ramanujan Theta one five
+# Ramanujan's theta function at $(q, q^5)$
 
-`f(q, q⁵) = χ(q) ψ(-q³)` for `‖q‖ < 1`.
+**Ramanujan's theta function at $(q, q^5)$.** Let
+$f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta function and
+$(a;q)_\infty = \prod_{n \ge 0} (1 - a q^n)$. For every complex number $q$ with $|q| < 1$,
+$f(q,q^5) = (-q;q^2)_\infty \, f(-q^3,-q^9)$, that is, $f(q,q^5) = \chi(q) \psi(-q^3)$ with
+$\chi(q) = (-q;q^2)_\infty$ and $\psi(q) = f(q,q^3)$.
 
 ## Depends on
 

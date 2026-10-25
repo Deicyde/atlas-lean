@@ -16,8 +16,8 @@ binomials with a negative argument being `0`.
 
 ## Depends on
 
-- [Marriageable Singles Count](marriageable-singles-count.md)
-- [Zero Extended Choose](zero-extended-choose.md)
+- [Number of marriageable singles partitions](marriageable-singles-count.md)
+- [Zero-extended binomial coefficient](zero-extended-choose.md)
 
 ## Sources
 

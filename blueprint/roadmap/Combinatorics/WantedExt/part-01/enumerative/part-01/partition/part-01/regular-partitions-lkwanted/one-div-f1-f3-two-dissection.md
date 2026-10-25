@@ -5,11 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.one_div_f1_f3_two_dissection
 ---
 
-# One div f1 f3 two dissection
+# The 2-dissection of $1/(f_1 f_3)$
 
-`1 / (f_1 f_3) = f_8^2 f_12^5 / (f_2^2 f_4 f_6^4 f_24^2) + q f_4^5 f_24^2 / (f_2^4 f_6^2 f_8^2
-f_12)`, stated with denominators cleared (both sides multiplied by
-`f_1 f_3 f_2^4 f_4 f_6^4 f_8^2 f_12 f_24^2`).
+**The 2-dissection of $1/(f_1 f_3)$.** Write $f_k = (q^k; q^k)_\infty$ for the Euler
+products. In the ring of integer power series in $q$,
+
+$$
+f_2^4 f_4 f_6^4 f_8^2 f_{12} f_{24}^2 =
+f_1 f_3 f_2^2 f_8^4 f_{12}^6 + q f_1 f_3 f_4^6 f_6^2 f_{24}^4.
+$$
+
+Since each $f_k$ with $k \ge 1$ has constant term $1$ and is therefore invertible, this is the
+identity $1 / (f_1 f_3) = f_8^2 f_{12}^5 / (f_2^2 f_4 f_6^4 f_{24}^2) +
+q f_4^5 f_{24}^2 / (f_2^4 f_6^2 f_8^2 f_{12})$ with both sides multiplied by
+$f_1 f_3 f_2^4 f_4 f_6^4 f_8^2 f_{12} f_{24}^2$.
 
 ## Depends on
 

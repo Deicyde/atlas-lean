@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.zuritaN
 ---
 
-# Zurita N
+# Zurita's polynomial $N_{n-2}$
 
-`N_{n-2}(x)` as a real function (`0` for `n = 1`).
+**Zurita's polynomial $N_{n-2}$.** For a natural number $n$, let $m_0, m_1, \dots$ be Zurita's
+coefficients, given by $m_0 = 2/(2n - 1)$ and $m_k = \frac{2(k - n)}{2k - 2n + 1}\, m_{k-1}$ for
+$k \ge 1$. Then $N_{n-2}$ is the real polynomial function
+$N_{n-2}(x) = \frac12 \sum_{k=0}^{n-2} \frac{m_k x^k}{k - n + 1}$, which is $0$ for $n \le 1$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zurita NCoeff](zurita-ncoeff.md)
+- [Coefficients of Zurita's polynomial $N_{n-2}$](zurita-ncoeff.md)
 
 ## Sources
 

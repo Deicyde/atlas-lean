@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.ccoProhibitedZ_recurrence
 ---
 
-# Proposition 11
+# Recurrence for n-color compositions avoiding two consecutive colors
 
-**Proposition 11**: for `b ≥ 1` and `n ≥ 3`,
-`cco_{\widehat{b,b+1}}(n) = 3 cco_{\widehat{b,b+1}}(n-1) -
-cco_{\widehat{b,b+1}}(n-2) - cco_{\widehat{b,b+1}}(n-b) +
-cco_{\widehat{b,b+1}}(n-b-2)` (the printed statement has no
-range; the identity fails at `n ≤ 2`).
+**Recurrence for n-color compositions avoiding two consecutive colors.** Fix a natural number
+$b \ge 1$. For an integer $m$, let $c(m)$ be the number of $n$-color compositions of $m$ in
+which no part has color $b$ or $b+1$ when $m \ge 0$, and $c(m) = 0$ when $m < 0$. Then for
+every integer $n \ge 3$,
+
+$$c(n) = 3\,c(n-1) - c(n-2) - c(n-b) + c(n-b-2).$$
+
+The source states the recurrence without a range, but it fails at $n = 0$, $1$ and $2$.
 
 ## Depends on
 
-- [Cco Prohibited Z](cco-prohibited-z.md)
+- [Integer extension of the count of n-color compositions avoiding two consecutive colors](cco-prohibited-z.md)
 
 ## Sources
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.generalizedCubicPartitionCount
 ---
 
-# Generalized Cubic Partition Count
+# Generalized cubic partition numbers
 
-`a_c(n)`, the number of generalized cubic partitions of `n` with even parts in `c`
-colors, defined as the `n`th coefficient of `1/(f_1 f_2^{c-1})`.
+**Generalized cubic partition numbers.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ be the
+Euler products. For natural numbers $c$ and $n$, $a_c(n)$ is the integer coefficient of $q^n$
+in the generating function of generalized cubic partitions, the power series
+$1/(f_1 f_2^{c-1})$. For $c \ge 1$ it is the number of partitions of $n$ whose even parts may
+each come in $c$ colors; $c = 1$ gives the partition numbers and $c = 2$ Chan's cubic
+partition numbers. For $c = 0$ the exponent $c - 1$ is truncated to $0$, so $a_0(n)$ is also
+the number of partitions of $n$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Generalized Cubic Partition Series](generalized-cubic-partition-series.md)
+- [Generating function of generalized cubic partitions](generalized-cubic-partition-series.md)
 
 ## Sources
 

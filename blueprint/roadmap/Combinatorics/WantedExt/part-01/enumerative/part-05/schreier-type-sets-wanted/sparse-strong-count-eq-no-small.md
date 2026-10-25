@@ -5,16 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.sparseStrongCount_eq_noSmall
 ---
 
-# Theorem 7, sparse case
+# Sparse strong Schreier sets and partitions avoiding small parts
 
-**Theorem 7, sparse case**: `|A_{n,ℓ}| = |G_{n-1,ℓ}|` for
-positive `n` and `ℓ` (the paper's `ℕ` is the positive integers;
-the identity fails at `ℓ = 0`).
+**Sparse strong Schreier sets and partitions avoiding small parts.** For all integers
+$n \ge 1$ and $\ell \ge 1$, the number of sparse $\ell$-strong Schreier sets
+$A \subseteq \{1, \dots, n\}$ with $n \in A$ equals the number of partitions of $n - 1$ with no
+part in $\{2, \dots, \ell\}$.
+
+The identity fails at $\ell = 0$; the paper's $\mathbb{N}$ is the positive integers.
 
 ## Depends on
 
-- [Partition No Small Part Count](partition-no-small-part-count.md)
-- [Sparse Strong Count](sparse-strong-count.md)
+- [Partitions avoiding parts from 2 up to a bound](partition-no-small-part-count.md)
+- [Number of sparse strong Schreier sets with maximum $n$](sparse-strong-count.md)
 
 ## Sources
 

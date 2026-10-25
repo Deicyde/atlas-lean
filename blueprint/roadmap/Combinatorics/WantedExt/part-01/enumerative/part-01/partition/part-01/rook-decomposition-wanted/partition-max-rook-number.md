@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.partitionMaxRookNumber
 ---
 
-# Partition Max Rook Number
+# Max-rook number of a partition
 
-The max-rook number `R(π)` of a partition: the largest number of
-non-attacking rooks on its Ferrers board.
+**Max-rook number of a partition.** The max-rook number $R(\pi)$ of a partition $\pi$ of $n$
+is the largest number of non-attacking rooks on the Ferrers board of $\pi$: the largest number
+of cells of the board, no two in the same row and no two in the same column.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Board Max Rook Number](board-max-rook-number.md)
-- [Partition Ferrers Board](partition-ferrers-board.md)
+- [Max-rook number of a board](board-max-rook-number.md)
+- [Ferrers board of a partition](partition-ferrers-board.md)
 
 ## Sources
 

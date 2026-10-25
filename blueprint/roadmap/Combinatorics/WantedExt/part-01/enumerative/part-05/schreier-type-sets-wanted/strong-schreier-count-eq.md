@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreierCount_eq
 ---
 
-# Theorem 9, total case
+# Strong Schreier sets with a given maximum are counted by compositions
 
-**Theorem 9, total case**: `|B_{n,ℓ}| = c(n + ℓ, ℓ + 1)` for
-`n ≥ 1`.
+**Strong Schreier sets with a given maximum are counted by compositions.** For all natural
+numbers $n \ge 1$ and $\ell \ge 0$, the number $|B_{n,\ell}|$ of $\ell$-strong Schreier sets
+$B \subseteq \{1, \dots, n\}$ with $n \in B$ equals $c(n + \ell, \ell + 1)$, the number of
+compositions of $n + \ell$ into parts that are all at least $\ell + 1$. Here a set $B$ is
+$\ell$-strong Schreier when every element of $B$ is at least $\ell|B| - \ell + 1$.
 
 ## Depends on
 
-- [Composition Min Part Count](composition-min-part-count.md)
-- [Strong Schreier Count](strong-schreier-count.md)
+- [Compositions with parts at least $v$](composition-min-part-count.md)
+- [Number of strong Schreier sets with a given maximum](strong-schreier-count.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.curlingNumber_example_three
 ---
 
-# Curling Number example three
+# Curling number of $222322232223$
 
-`𝒞(222322232223) = 3` (example in Section 1).
+**Curling number of $222322232223$.** The string $222322232223$ has curling number
+$\mathcal{C}(222322232223) = 3$.
 
 ## Depends on
 
-- [Curling Number](curling-number.md)
+- [Curling number](curling-number.md)
 
 ## Sources
 

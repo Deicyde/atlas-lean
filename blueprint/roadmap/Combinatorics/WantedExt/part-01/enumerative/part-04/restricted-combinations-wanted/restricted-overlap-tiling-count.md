@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.restrictedOverlapTilingCount
 ---
 
-# Restricted Overlap Tiling Count
+# Number of restricted-overlap tilings
 
-The paper's `B^Q_{n,k}`: the number of restricted-overlap tilings of an `n`-board with
-squares and `k` `Q`-combs.
+**Number of restricted-overlap tilings.** For a finite set $Q$ of natural numbers and natural
+numbers $n$ and $k$, $B^Q_{n,k}$ is the number of restricted-overlap tilings of an $n$-board with
+squares and $k$ $Q$-combs.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Restricted Overlap Tilings](restricted-overlap-tilings.md)
+- [Restricted-overlap tilings](restricted-overlap-tilings.md)
 
 ## Sources
 

@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isMeteredParkingFunction_iff_of_le
 ---
 
-# Is Metered Parking Function iff of le
+# Metered parking functions with a long meter are classical
 
-If `t ≥ m - 1` and `n ≥ m`, the `t`-metered `(m, n)`-parking functions are exactly the
-classical `(m, n)`-parking functions.
+**Metered parking functions with a long meter are classical.** Let $m \le n$ and
+$t \ge m - 1$. A map $f : \{0, \dots, m-1\} \to \{0, \dots, n-1\}$ is a $t$-metered parking
+function if and only if it is a partial parking function with $m$ cars and $n$ spots.
 
 ## Depends on
 
-- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Metered parking function](is-metered-parking-function.md)
 - [Partial parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
 
 ## Sources

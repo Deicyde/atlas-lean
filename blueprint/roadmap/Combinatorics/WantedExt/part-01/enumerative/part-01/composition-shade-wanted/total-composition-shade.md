@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.totalCompositionShade
 ---
 
-# Total Composition Shade
+# Total shade of compositions
 
-The total shade `c(n)` over all compositions of `n`.
+**Total shade of compositions.** For a natural number $n$, the total shade $c(n)$ is the
+sum of the shades of all compositions of $n$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Composition Shade](composition-shade.md)
+- [Shade of a composition](composition-shade.md)
 
 ## Sources
 

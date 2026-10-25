@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount_three_recurrence
 ---
 
-# Max Rook Partition Count three recurrence
+# Linear recurrence for $R_3(n)$
 
-For `n > 14`,
-`R_3(n) = 2R_3(n-1) - R_3(n-2) + R_3(n-3) - 2R_3(n-4) + R_3(n-5)`.
+**Linear recurrence for $R_3(n)$.** Let $R_3(n)$ be the number of partitions of $n$ with
+max-rook number $3$. For every natural number $n > 14$,
+$R_3(n) = 2R_3(n-1) - R_3(n-2) + R_3(n-3) - 2R_3(n-4) + R_3(n-5)$.
 
 ## Depends on
 
-- [Max Rook Partition Count](max-rook-partition-count.md)
+- [Partitions with a given max-rook number](max-rook-partition-count.md)
 
 ## Sources
 

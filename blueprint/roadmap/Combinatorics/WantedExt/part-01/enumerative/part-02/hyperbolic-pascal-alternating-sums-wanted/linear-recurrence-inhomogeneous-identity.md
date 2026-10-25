@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.linearRecurrence_inhomogeneous_identity
 ---
 
-# Theorem 1
+# Convolution identity for an inhomogeneous linear recurrence
 
-**Theorem 1** (quoted from Belbachir–Rami–Szalay 2022). Let `f` satisfy
-`f_n = A_1 f_{n-1} + ⋯ + A_k f_{n-k}` and `G` satisfy
-`G_n = A_1 G_{n-1} + ⋯ + A_k G_{n-k} + w_{n-k}` for `n ≥ k`. Then for `n ≥ k`,
-`∑_{j<k} f_j G_{n+k-j} = ∑_{j<k} ∑_{i<k-j} f_{n-j} A_{j+1+i} G_{k-1-i}
-  + ∑_{j<k-1} ∑_{i=1}^{k-1-j} f_j A_i G_{n+k-j-i} + ∑_{j=0}^{n} f_{n-j} w_j`.
-The paper's `A_k ≠ 0` and `k ≥ 1` are not needed.
+**Convolution identity for an inhomogeneous linear recurrence.** Let $k \in \mathbb{N}$ and let
+$A, f, G, w \colon \mathbb{N} \to \mathbb{C}$ be sequences such that, for every $m \ge k$,
+$f_m = \sum_{i=1}^{k} A_i f_{m-i}$ and $G_m = \sum_{i=1}^{k} A_i G_{m-i} + w_{m-k}$. Then for
+every $n \ge k$,
+
+$$\sum_{j=0}^{k-1} f_j G_{n+k-j} =
+\sum_{j=0}^{k-1} \sum_{i=0}^{k-1-j} f_{n-j} A_{j+1+i} G_{k-1-i} +
+\sum_{j=0}^{k-2} \sum_{i=1}^{k-1-j} f_j A_i G_{n+k-j-i} + \sum_{j=0}^{n} f_{n-j} w_j.$$
+
+The identity is quoted from Belbachir–Rami–Szalay 2022; its hypotheses $A_k \neq 0$ and
+$k \ge 1$ are not needed.
 
 ## Depends on
 

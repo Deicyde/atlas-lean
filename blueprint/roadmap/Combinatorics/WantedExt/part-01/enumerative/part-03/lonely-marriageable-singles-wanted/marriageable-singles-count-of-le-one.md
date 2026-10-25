@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.marriageableSinglesCount_of_le_one
 ---
 
-# Marriageable Singles Count of le one
+# Small values of the marriageable singles count
 
-`M_0 = M_1 = 0`: a marriageable singles partition needs two distinct points.
+**Small values of the marriageable singles count.** For every $n \le 1$, the number of
+marriageable singles partitions of $\{0, \dots, n-1\}$ is $M_n = 0$: a marriageable singles
+partition needs two distinct points.
 
 ## Depends on
 
-- [Marriageable Singles Count](marriageable-singles-count.md)
+- [Number of marriageable singles partitions](marriageable-singles-count.md)
 
 ## Proof depends on
 
-- [Is Marriageable Singles](is-marriageable-singles.md)
-- [Merged Has Crossing](merged-has-crossing.md)
-- [Merged Same Block](merged-same-block.md)
+- [Marriageable singles partition](is-marriageable-singles.md)
+- [Crossing after merging two blocks](merged-has-crossing.md)
+- [Same block after merging two blocks](merged-same-block.md)
 - [Noncrossing partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
 - [Crossing in a set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
 - [Noncrossing set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)

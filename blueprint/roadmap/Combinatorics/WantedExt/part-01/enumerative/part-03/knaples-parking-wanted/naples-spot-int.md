@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.naplesSpotInt
 ---
 
-# Naples Spot Int
+# The $k$-Naples rule on $\mathbb{Z}$
 
-The spot taken under the `k`-Naples rule *on `ℤ`* (the lot extended past spot `1` and past
-spot `n`) by a car preferring `a` when the spots in `occ` are occupied: `a` if free; otherwise
-the first free spot among `a - 1, …, a - k` (checked in decreasing order, with no lower bound);
-otherwise the first free spot after `a`, which lies among `a + 1, …, a + |occ| + 1`.
+**The $k$-Naples rule on $\mathbb{Z}$.** When the spots in a finite list $O$ of integers are
+occupied, a car preferring $a \in \mathbb{Z}$ parks in $a$ if $a$ is free; otherwise in the first
+free spot among $a - 1, \dots, a - k$, checked in decreasing order with no lower bound; otherwise
+in the first free spot among $a + 1, \dots, a + |O| + 1$, checked in increasing order (one of
+them is free, so this is the first free spot after $a$).
 
 ## Depends on
 

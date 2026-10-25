@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.tsum_div_mul_centralBinom_mul_eq_multisection
 ---
 
-# Tsum div mul central Binom mul eq multisection
+# Multisection formula for $\sum_k x^k / (k \binom{2mk}{mk})$
 
-For `m ≥ 1` and `|x| < 4^m`,
-`L_m(x) = ∑_{k ≥ 1} x^k / (k binom(2mk, mk)) = ∑_{j=0}^{m-1} L(w^j x^{1/m})` with
-`L(y) = ∑_{n ≥ 1} y^n / (n binom(2n, n))` and `w = e^{2πi/m}`.
+**Multisection formula for $\sum_k x^k / (k \binom{2mk}{mk})$.** Let $m \ge 1$ be a natural
+number and $x$ a complex number with $|x| < 4^m$. Write
+$L(y) = \sum_{n \ge 1} y^n / (n \binom{2n}{n})$, $w = e^{2\pi i/m}$, and let $x^{1/m}$ be the
+principal $m$-th root of $x$. Then
+
+$$
+\sum_{k \ge 1} \frac{x^k}{k \binom{2mk}{mk}} = \sum_{j=0}^{m-1} L(w^j x^{1/m}).
+$$
 
 ## Depends on
 

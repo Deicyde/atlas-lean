@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.regularOverpartition_three_mul_two_power_density
 ---
 
-# Regular Overpartition three mul two power density
+# Almost all $3 \cdot 2^\alpha$-regular overpartition counts are divisible by $2^j$
 
-For positive `α` and `j` with `α + 1 ≤ j` (so `j` is positive), the natural density of
-`n ≤ X` for which `2ʲ ∣ A_{3·2^α}(n)` tends to one. The formal count
-includes zero and uses the paper's denominator `X`.
+**Almost all $3 \cdot 2^\alpha$-regular overpartition counts are divisible by $2^j$.** Write
+$A_\ell(m)$ for the number of overpartitions of $m$ none of whose parts is divisible by $\ell$.
+Let $\alpha \ge 1$ and $j \ge \alpha + 1$ be natural numbers. Then the number of natural numbers
+$n$ with $0 \le n \le X$ and $2^j \mid A_{3 \cdot 2^\alpha}(n)$, divided by $X$, tends to $1$ as
+the natural number $X$ tends to infinity.
 
 ## Depends on
 
-- [Regular Overpartition Count](regular-overpartition-count.md)
+- [Number of $\ell$-regular overpartitions](regular-overpartition-count.md)
 
 ## Sources
 

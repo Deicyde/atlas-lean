@@ -5,16 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.sum_gammaBinom_of_poly_identity
 ---
 
-# Sum gamma Binom of poly identity
+# Central binomial transform of a polynomial identity with exponents $k$
 
-Equation (41), first identity: for a polynomial identity
-`∑_{k=s}^n f(k) (1+t)^k = ∑_{k=m}^r g(k) t^k` (equation (40)) and real `v > -1`,
-`∑ f(k) 2^{-k} binom(2k+v, (2k+v)/2) binom(k+v, v/2)^{-1}
-= ∑_{k=⌊(m+1)/2⌋}^{⌊r/2⌋} g(2k) 2^{-2k} binom(2k,k) binom((2k+v)/2, v/2)^{-1}`.
+**Central binomial transform of a polynomial identity with exponents $k$.** Let
+$s, n, m, r$ be natural numbers and $f, g : \mathbb{N} \to \mathbb{C}$ such that
+$\sum_{k=s}^{n} f(k) (1+t)^{k} = \sum_{k=m}^{r} g(k) t^{k}$ for every complex $t$. Then for
+every real $v > -1$,
+
+$$
+\sum_{k=s}^{n} \frac{f(k)}{2^{k}} \binom{2k+v}{(2k+v)/2} \binom{k+v}{v/2}^{-1}
+= \sum_{k=\lfloor (m+1)/2 \rfloor}^{\lfloor r/2 \rfloor} \frac{g(2k)}{2^{2k}} \binom{2k}{k}
+\binom{(2k+v)/2}{v/2}^{-1},
+$$
+
+where $\binom{2k}{k}$ is the central binomial coefficient and otherwise
+$\binom{a}{b} = \Gamma(a+1)/(\Gamma(b+1)\Gamma(a-b+1))$ is the generalized binomial
+coefficient of complex numbers $a, b$.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

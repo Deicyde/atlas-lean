@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.generalizedEulerianP_gamma_nonneg
 ---
 
-# Theorem 4
+# The gamma coefficients of the generalized Eulerian polynomials have nonnegative integer coefficients
 
-**Theorem 4.** The gamma coefficients `γ_{n,k}(q, t)` of
-`P_n(q, t; x, y) = ∑_{k ≤ n/2} γ_{n,k}(q, t) x^k y^k (x + y)^(n - 2k)` (Equation (6)) are
-polynomials in `q, t` with nonnegative integer coefficients: there are natural numbers
-`c k i j` with `γ_{n,k}(q, t) = ∑_{i, j ≤ n} c k i j q^i t^j` making Equation (6) hold for all
-rational `q, t, x, y` with `x ≠ y` (such `γ_{n,k}` are unique).
+**The gamma coefficients of the generalized Eulerian polynomials have nonnegative integer
+coefficients.** Fix $n \ge 0$ and let $P_n(q, t; x, y)$ be the generalized Eulerian polynomial.
+There are natural numbers $c_{k,i,j}$, for $k, i, j \ge 0$, such that, writing
+$\gamma_{n,k}(q, t) = \sum_{i=0}^{n} \sum_{j=0}^{n} c_{k,i,j} q^i t^j$, for all rational numbers
+$q, t, x, y$ with $x \ne y$,
+
+$$
+P_n(q, t; x, y) = \sum_{k=0}^{\lfloor n/2 \rfloor} \gamma_{n,k}(q, t) x^k y^k (x + y)^{n - 2k}.
+$$
+
+That is, the gamma coefficients $\gamma_{n,k}$ are polynomials in $q$ and $t$ with nonnegative
+integer coefficients.
 
 ## Depends on
 
-- [Generalized Eulerian P](generalized-eulerian-p.md)
+- [Generalized Eulerian polynomials](generalized-eulerian-p.md)
 
 ## Sources
 

@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_bubbleCount_density
 ---
 
-# Tendsto bubble Count density
+# Limiting density of bubble sizes in linear chord diagrams
 
-Asymptotic density of bubble sizes, excluding the diagrams that are themselves bubbles: for
-`x ∈ (0, 2]` and sizes `p_n ≤ 2n - 2` with `p_n / (n - 1) → x`,
-`(n-1) B_{n,p_n} / ∑_{p=1}^{2n-2} B_{n,p} → e(6-x) e^{-x/2} / (2(4e-2))`.
-The paper writes `B_{n,x(n-1)}` with `x = p/(n-1)`; the index is not an integer for general `x`,
-so the limit is read along any integer sizes `p_n` with `p_n/(n-1) → x`, the scaling the paper's
-proof uses (`2n - p - O(1) ≈ (2-x) n`).
+**Limiting density of bubble sizes in linear chord diagrams.** Let $B_{n,p}$ be the total
+number of bubbles of size $p$ over all linear chord diagrams on $2n$ vertices. Let $x$ be a real
+number with $0 < x \le 2$, and let $(p_n)_{n \ge 0}$ be natural numbers with $p_0 = 0$,
+$p_n \le 2n - 2$ for every $n \ge 1$, and $p_n / (n - 1) \to x$ as $n \to \infty$. Then
+
+$$\frac{(n-1)\,B_{n,p_n}}{\sum_{p=1}^{2n-2} B_{n,p}} \to \frac{e\,(6-x)}{2\,(4e-2)}\,e^{-x/2}$$
+
+as $n \to \infty$. The sum in the denominator leaves out the bubble sizes $2n - 1$ and $2n$; a
+bubble of size $2n$ is a whole diagram without short chords.
+
+The paper writes $B_{n,x(n-1)}$; since $x(n-1)$ need not be an integer, the limit is read along
+integer sizes $p_n$ with $p_n/(n-1) \to x$, the scaling the paper's proof uses.
 
 ## Depends on
 
-- [Bubble Count](bubble-count.md)
+- [Bubble counts](bubble-count.md)
 
 ## Sources
 

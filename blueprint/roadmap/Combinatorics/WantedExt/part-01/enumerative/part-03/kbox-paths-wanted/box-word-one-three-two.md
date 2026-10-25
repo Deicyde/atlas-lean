@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.boxWord_one_three_two
 ---
 
-# Box Word one three two
+# The box word for $k = 1$ and $a = (3, 2)$
 
-`boxWord 1 [3, 2] = UUUDLDUUDL`.
+**The box word for $k = 1$ and $a = (3, 2)$.** For $k = 1$ and $a = (3, 2)$, the box word
+$U^{a_1} D^k L D \, U^{a_2} D^k L$ equals $UUUDLDUUDL$.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
-- [Box Word](box-word.md)
+- [Skew Dyck steps](skew-dyck-step.md)
+- [Box words](box-word.md)
 
 ## Sources
 

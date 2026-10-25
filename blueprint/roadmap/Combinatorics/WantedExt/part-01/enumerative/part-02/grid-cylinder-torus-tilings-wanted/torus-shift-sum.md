@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.torusShiftSum
 ---
 
-# Torus Shift Sum
+# Torus shift sum
 
-The sum over torus shifts `(a,b) ∈ ZMod n × ZMod m` of fixed tilings for `((a,b),g)`.
-Both coordinates are shifted before `cellG` is applied, while shifts act trivially on tile
-designs and `σ` records only the action of `g`.
+**Torus shift sum.** Let $n, m \ge 1$, let $T$ be a finite set of tile designs, let $g$ be a
+map from $\mathbb{Z}/n \times \mathbb{Z}/m$ (the cells of the $n \times m$ torus) to itself and
+let $\sigma$ be a permutation of $T$. For a shift $(a, b) \in \mathbb{Z}/n \times \mathbb{Z}/m$,
+count the tilings $F \colon \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with
+$F(g(x + a, y + b)) = \sigma(F(x, y))$ for every cell $(x, y)$. The torus shift sum is the sum of
+these counts over all $nm$ shifts $(a, b)$.
 
-Formalization deviation: none beyond the representation choices stated above.
+Shifting the cell first and applying $g$ afterwards follows the right-action convention of the
+source; shifts act trivially on tile designs.
 
 ## Depends on
 
@@ -19,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Tiling Count](fixed-tiling-count.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
 
 ## Sources
 

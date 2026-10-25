@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.schreierAvoidingMultiplesCount_small
 ---
 
-# Schreier Avoiding Multiples Count small
+# Small values of the count of Schreier sets avoiding multiples
 
-`|D_{2,6}| = 12` and `|D_{3,6}| = 9` (Table 3 of the paper).
+**Small values of the count of Schreier sets avoiding multiples.** The numbers of Schreier-type
+sets avoiding multiples satisfy $|D_{2,6}| = 12$ and $|D_{3,6}| = 9$ (Table 3 of the paper).
 
 ## Depends on
 
-- [Schreier Avoiding Multiples Count](schreier-avoiding-multiples-count.md)
+- [Schreier sets avoiding multiples](schreier-avoiding-multiples-count.md)
 
 ## Sources
 

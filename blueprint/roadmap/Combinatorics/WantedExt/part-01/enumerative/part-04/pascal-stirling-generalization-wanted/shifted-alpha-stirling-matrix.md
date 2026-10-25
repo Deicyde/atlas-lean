@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.shiftedAlphaStirlingMatrix
 ---
 
-# Shifted Alpha Stirling Matrix
+# Shifted α-Stirling matrix
 
-The `n × n` shifted matrix `𝖲_α(n)`.
+**Shifted α-Stirling matrix.** Let $R$ be a commutative ring, let
+$\alpha = (\alpha_j)_{j \ge 1}$ be a sequence in $R$, and let $n$ be a natural number. The shifted
+$\alpha$-Stirling matrix $\mathsf{S}_\alpha(n)$ is the $n \times n$ matrix over $R$ whose entry in
+row $i$ and column $j$ (counted from $0$) is the shifted $\alpha$-Stirling entry
+$\mathsf{S}_{i,j}$, given by $\mathsf{S}_{i,0} = \mathsf{S}_{0,j} = \alpha_1$ and
+$\mathsf{S}_{i+1,j+1} = \mathsf{S}_{i+1,j} + \alpha_{j+2} \mathsf{S}_{i,j+1}$.
 
 ## Depends on
 
@@ -15,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Shifted Alpha Stirling Entry](shifted-alpha-stirling-entry.md)
+- [Entries of the shifted α-Stirling matrix](shifted-alpha-stirling-entry.md)
 
 ## Sources
 

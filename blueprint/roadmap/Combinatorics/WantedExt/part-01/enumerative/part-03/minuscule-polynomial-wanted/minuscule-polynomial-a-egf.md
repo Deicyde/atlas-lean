@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.minusculePolynomialA_egf
 ---
 
-# Minuscule Polynomial A egf
+# Exponential generating function of the minuscule polynomials
 
-Exponential generating function: for real `x ≠ 0` and real `z`,
-`∑ N_n(x^2) z^n / n! = (2x(1+x)^2 z - 1 - x^2)/(16x) e^{(1+x)^2 z}
-+ (2x(1-x)^2 z + 1 + x^2)/(16x) e^{(1-x)^2 z}`. The sum starts at `n = 0`, where `N_0 = 0`.
+**Exponential generating function of the minuscule polynomials.** For all real numbers $x$
+and $z$ with $x \ne 0$, the series $\sum_{n \ge 0} N_n(x^2)\, z^n / n!$ built from the type-A
+minuscule polynomials $N_n$ has sum
+$\frac{2x(1+x)^2 z - 1 - x^2}{16x} e^{(1+x)^2 z} +
+\frac{2x(1-x)^2 z + 1 + x^2}{16x} e^{(1-x)^2 z}$.
+
+The sum starts at $n = 0$, where $N_0 = 0$.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

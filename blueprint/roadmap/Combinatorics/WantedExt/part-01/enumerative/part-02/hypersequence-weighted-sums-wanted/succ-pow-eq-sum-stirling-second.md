@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.succ_pow_eq_sum_stirlingSecond
 ---
 
-# Succ pow eq sum stirling Second
+# Powers of $k + 1$ via Stirling numbers of the second kind
 
-Lemma 2: `(k + 1)^ℓ = ∑_{j=0}^{k} C(k, j) j! S(ℓ + 1, j + 1)`.
+**Powers of $k + 1$ via Stirling numbers of the second kind.** For all natural numbers $k$
+and $\ell$,
+
+$$(k + 1)^\ell = \sum_{j=0}^{k} \binom{k}{j}\, j!\, S(\ell + 1, j + 1),$$
+
+where $S(i, j)$ denotes the Stirling numbers of the second kind.
 
 ## Depends on
 

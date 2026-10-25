@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.meteredOutcome
 ---
 
-# Metered Outcome
+# Outcome of the metered parking scheme
 
-The outcome of the `t`-metered parking scheme on `n` spots (zero-based) for the preference
-list `prefs`: cars arrive in order; car `i` takes the least spot `s` with `prefs[i] ≤ s < n` not
-occupied by one of the previous `t` cars (cars `i - t, …, i - 1` that parked), giving `some s`, or
-fails, giving `none`. After car `j` parks, car `j - t` leaves, so only the last `t` entries of the
-outcome so far are occupied.
+**Outcome of the metered parking scheme.** Let $t, n \in \mathbb{N}$, number the $n$ spots
+$0, \dots, n-1$, and let $a_0, a_1, \dots, a_{m-1}$ be a list of preferences in $\mathbb{N}$.
+Cars arrive in order, and car $i$ parks in the least spot $s$ with $a_i \le s < n$ that is not
+taken by one of the previous $t$ cars (cars $\max(0, i - t), \dots, i - 1$) that parked; if
+there is no such spot, car $i$ fails. The outcome is the list whose $i$-th entry is the spot of
+car $i$, or a failure marker if car $i$ fails. Thus after car $j$ arrives, car $j - t$ leaves,
+and only the cars among the last $t$ entries of the outcome so far occupy spots.
 
 ## Depends on
 

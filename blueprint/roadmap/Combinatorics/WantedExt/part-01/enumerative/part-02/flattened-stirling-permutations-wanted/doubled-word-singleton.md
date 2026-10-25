@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.doubledWord_singleton
 ---
 
-# Doubled Word singleton
+# The doubled word of a singleton
 
-`f({s}) = s s`.
+**The doubled word of a singleton.** For every natural number $s$, the doubled word of the
+singleton $\{s\}$ is $f(\{s\}) = s\,s$, the word of length two whose letters are both $s$.
 
 ## Depends on
 
-- [Doubled Word](doubled-word.md)
+- [Doubled word](doubled-word.md)
 
 ## Sources
 

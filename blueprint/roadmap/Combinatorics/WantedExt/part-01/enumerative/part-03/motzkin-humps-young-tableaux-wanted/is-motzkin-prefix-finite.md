@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsMotzkinPrefixFinite
 ---
 
-# Is Motzkin Prefix Finite
+# Bounded Motzkin prefix condition
 
-A bounded formulation of the prefix condition, quantifying over the `n + 1`
-possible prefix lengths. It is used only to make finite cardinalities executable.
+**Bounded Motzkin prefix condition.** Let $p = p_0 p_1 \cdots p_{n-1}$ be a word of length $n$
+in the steps $D$, $F$, $U$ (encoded as $0$, $1$, $2$), whose vertical displacements are $-1$, $0$
+and $+1$, and let $h \in \mathbb{Z}$. The word $p$ satisfies the bounded Motzkin prefix condition
+for $h$ when, for every $m \in \{0, 1, \dots, n\}$, the sum of the displacements of
+$p_0, \dots, p_{m-1}$ is nonnegative, and the sum of the displacements of all $n$ steps is $h$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Motzkin Step](motzkin-step.md)
+- [Height change of a Motzkin step](motzkin-step.md)
 
 ## Sources
 

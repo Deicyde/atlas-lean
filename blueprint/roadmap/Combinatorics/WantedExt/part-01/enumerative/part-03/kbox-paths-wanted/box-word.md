@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.boxWord
 ---
 
-# Box Word
+# Box words
 
-The word `U^{a₁} D^k L D ⋯ U^{a_{n-1}} D^k L D U^{a_n} D^k L` for
-`a = [a₁, …, a_n]`.
+**Box words.** Let $k \ge 0$ and let $a = (a_1, \dots, a_n)$ be a list of natural numbers
+with $n \ge 1$. The box word of $k$ and $a$ is the word in the skew Dyck steps
+
+$$
+U^{a_1} D^k L D \; U^{a_2} D^k L D \; \cdots \; U^{a_{n-1}} D^k L D \; U^{a_n} D^k L,
+$$
+
+that is, the blocks $U^{a_i} D^k L D$ for $i < n$ followed by $U^{a_n} D^k L$. For the empty
+list it is $D^k L$.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
+- [Skew Dyck steps](skew-dyck-step.md)
 
 ## Sources
 

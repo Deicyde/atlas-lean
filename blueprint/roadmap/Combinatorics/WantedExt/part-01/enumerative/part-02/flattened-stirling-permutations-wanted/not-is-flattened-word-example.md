@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.not_isFlattenedWord_example
 ---
 
-# Not is Flattened Word example
+# A word that is not flattened
 
-The paper's example `123321445566778899 ∈ Q_9` is not flattened: its run
-leaders are `1, 2, 1`.
+**A word that is not flattened.** The word $123321445566778899$ is not flattened.
+
+This word is a Stirling permutation of order $9$; its runs $1233$, $2$, $1445566778899$ have
+leading letters $1, 2, 1$, which do not weakly increase.
 
 ## Depends on
 
-- [Is Flattened Word](is-flattened-word.md)
+- [Flattened words](is-flattened-word.md)
 
 ## Proof depends on
 
-- [Word Run Start](word-run-start.md)
+- [Start of a run](word-run-start.md)
 
 ## Sources
 

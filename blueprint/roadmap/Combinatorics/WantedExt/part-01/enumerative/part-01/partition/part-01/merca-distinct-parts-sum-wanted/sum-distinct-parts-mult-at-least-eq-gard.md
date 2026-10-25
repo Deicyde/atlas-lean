@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsMultAtLeast_eq_gardenOfEden
 ---
 
-# Sum Distinct Parts Mult At Least eq garden Of Eden
+# Garden of Eden identity for $s_m$
 
-For `m ≥ 1`, `∑_{j ≥ 1} (-1)^{j+1} s_m(n - 3j(j+1)/2) = ∑_{j ≥ 0} j G(n - mj)`, with `G(k)`
-the number of Garden of Eden partitions of `k` (rank at most `-2`, so `G(0) = 0`). The paper
-says `m ≥ 0`; for `m = 0` the right side diverges.
+**Garden of Eden identity for $s_m$.** Let $m \ge 1$ and $n$ be natural numbers. Write
+$s_m(k)$ for the sum of the different parts that appear at least $m$ times in partitions of
+$k$, and $G(k)$ for the number of Garden of Eden partitions of $k$, those whose Dyson rank is
+at most $-2$ (so $G(0) = 0$). Then
+
+$$
+\sum_{j \ge 1,\ 3j(j+1)/2 \le n} (-1)^{j+1} s_m\bigl(n - 3j(j+1)/2\bigr)
+= \sum_{j \ge 0,\ mj \le n} j\, G(n - mj).
+$$
+
+The paper says $m \ge 0$; for $m = 0$ the right side diverges.
 
 ## Depends on
 
-- [Dyson Rank](dyson-rank.md)
-- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
+- [Dyson's rank of a partition](dyson-rank.md)
+- [Sum of different parts appearing at least $m$ times](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

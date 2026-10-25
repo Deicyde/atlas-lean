@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.minusculePolynomialA_two
 ---
 
-# Minuscule Polynomial A two
+# The minuscule polynomial $N_2$
 
-`N_2(x) = 2x`.
+**The minuscule polynomial $N_2$.** The type-A minuscule polynomial $N_2(x)$ equals $2x$.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

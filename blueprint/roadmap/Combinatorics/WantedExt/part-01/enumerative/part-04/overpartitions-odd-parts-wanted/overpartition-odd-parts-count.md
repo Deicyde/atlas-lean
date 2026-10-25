@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOddPartsCount
 ---
 
-# Overpartition Odd Parts Count
+# Overpartitions into odd parts
 
-The number `po(n)` of overpartitions of `n` into odd parts: overpartitions
-(`Nat.Overpartition n`) all of whose parts are odd.
+**Overpartitions into odd parts.** For a natural number $n$, $\mathrm{po}(n)$ is the
+number of overpartitions of $n$ all of whose parts are odd.
 
 ## Depends on
 

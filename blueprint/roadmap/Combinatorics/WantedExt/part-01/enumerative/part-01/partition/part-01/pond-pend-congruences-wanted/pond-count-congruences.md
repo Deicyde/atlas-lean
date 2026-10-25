@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pondCount_congruences
 ---
 
-# Pond Count congruences
+# Congruences modulo 2, 3 and 4 for POND partitions
 
-For all `n ≥ 0`: `pond(3n+2) ≡ 0 (mod 2)`, `pond(27n+26) ≡ 0 (mod 3)`, and
-`pond(3n+1) ≡ 0 (mod 4)`.
+**Congruences modulo 2, 3 and 4 for POND partitions.** Let $\mathrm{pond}(m)$ be the number
+of POND partitions of $m$. For every natural number $n$, $\mathrm{pond}(3n + 2) \equiv 0 \pmod{2}$,
+$\mathrm{pond}(27n + 26) \equiv 0 \pmod{3}$ and $\mathrm{pond}(3n + 1) \equiv 0 \pmod{4}$.
 
 ## Depends on
 
-- [Pond Count](pond-count.md)
+- [Number of POND partitions](pond-count.md)
 
 ## Sources
 

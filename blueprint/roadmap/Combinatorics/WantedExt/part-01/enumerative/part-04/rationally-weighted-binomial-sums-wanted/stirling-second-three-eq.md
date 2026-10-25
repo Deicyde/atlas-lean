@@ -6,10 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.stirlingSecond_three_eq
 ---
 
-# Stirling Second three eq
+# Stirling numbers of the second kind with three blocks
 
-`{r, 3} = (3^{r-1} + 1)/2 - 2^{r-1}`, stated for `r ≥ 1` (the paper says `r ≥ 3`; both
-sides vanish at `r = 1, 2`). Proved from `stirlingSecond_mul_factorial_eq_sum` at `k = 3`.
+**Stirling numbers of the second kind with three blocks.** For every integer $r \ge 1$, the
+Stirling number of the second kind $S(r, 3)$ satisfies
+$S(r, 3) = \frac{3^{r-1} + 1}{2} - 2^{r-1}$.
+
+The source states this for $r \ge 3$; both sides vanish at $r = 1$ and $r = 2$.
 
 ## Depends on
 

@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.gamma_ratio_eq_tprod_twoAdic
 ---
 
-# Gamma ratio eq tprod two Adic
+# $2$-adic dissection of a ratio of Gamma functions
 
-`2`-adic dissection of `f(a, z) = Γ(a+1)² / (Γ(a+1-iz) Γ(a+1+iz))`: for `a` not a
-negative integer and every `z : ℂ`,
-`f(a, z) = ∏_{j ≥ 0} f(a / 2^{j+1} - 1/2, z / 2^{j+1})`, written out with
-`a / 2^{j+1} - 1/2 + 1 = a / 2^{j+1} + 1/2` as in the paper's explicit form.
+**$2$-adic dissection of a ratio of Gamma functions.** For complex numbers $a$ and $z$ write
+$f(a, z) = \Gamma(a + 1)^2 / \bigl(\Gamma(a + 1 - iz)\, \Gamma(a + 1 + iz)\bigr)$. If $a$ is not a
+negative integer, then for every complex number $z$,
+$f(a, z) = \prod_{j \ge 0} f(a / 2^{j+1} - 1/2,\ z / 2^{j+1})$.
 
 ## Depends on
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.f1_sq_two_dissection
 ---
 
-# F1 sq two dissection
+# The 2-dissection of $f_1^2$
 
-`f_1^2 = f_2 f_8^5 / (f_4^2 f_16^2) - 2 q f_2 f_16^2 / f_8`, stated with denominators
-cleared (both sides multiplied by `f_4^2 f_8 f_16^2`).
+**The 2-dissection of $f_1^2$.** For $k \ge 1$ let $f_k = \prod_{m \ge 1} (1 - q^{km})$, an
+integer power series in $q$. Then
+
+$$f_1^2 f_4^2 f_8 f_{16}^2 = f_2 f_8^6 - 2 q f_2 f_4^2 f_{16}^4.$$
+
+Dividing by $f_4^2 f_8 f_{16}^2$ gives
+$f_1^2 = \frac{f_2 f_8^5}{f_4^2 f_{16}^2} - 2q \frac{f_2 f_{16}^2}{f_8}$.
 
 ## Depends on
 

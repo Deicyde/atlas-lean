@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.card_nonabsolute_maximalSetsOfLanes
 ---
 
-# Card nonabsolute maximal Sets Of Lanes
+# Nonabsolute maximal sets of lanes are counted by marriageable singles partitions
 
-The number of nonabsolute MSL of a standard road intersection of size `n` is `M_n`.
+**Nonabsolute maximal sets of lanes are counted by marriageable singles partitions.** For
+every $n \ge 0$, the number of maximal sets of lanes of the standard road intersection of size $n$
+that are not absolute equals $M_n$, the number of noncrossing partitions of $\{0, \dots, n-1\}$
+that are marriageable singles partitions.
 
 ## Depends on
 
-- [Is Absolute Maximal Set Of Lanes](is-absolute-maximal-set-of-lanes.md)
-- [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
-- [Lanes Meet](lanes-meet.md)
-- [Marriageable Singles Count](marriageable-singles-count.md)
+- [Absolute maximal set of lanes](is-absolute-maximal-set-of-lanes.md)
+- [Maximal set of lanes](is-maximal-set-of-lanes.md)
+- [Lanes with a common point](lanes-meet.md)
+- [Number of marriageable singles partitions](marriageable-singles-count.md)
 
 ## Sources
 

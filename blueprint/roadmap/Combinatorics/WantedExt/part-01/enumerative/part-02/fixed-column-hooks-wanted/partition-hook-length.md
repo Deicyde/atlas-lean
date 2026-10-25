@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.partitionHookLength
 ---
 
-# Partition Hook Length
+# Hook length of a square of a partition
 
-The hook length `h_{s,m}(λ) = λ_s + λ'_m - s - m + 1` of the square in row `s` and
-column `m` (1-indexed), as an integer.
+**Hook length of a square of a partition.** For a partition $\lambda$ of $n$ and natural numbers
+$s$ and $m$, the hook length of the square in row $s$ and column $m$ is the integer
+$h_{s,m}(\lambda) = \lambda_s + \lambda'_m - s - m + 1$, where $\lambda_s$ is the $s$-th row length
+and $\lambda'_m$ the $m$-th column length of $\lambda$ (rows and columns are numbered from $1$).
+The integer is given by this formula for all $s$ and $m$, also when $(s, m)$ is not a square of
+the Young diagram.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partition Col Len](partition-col-len.md)
-- [Partition Row Len](partition-row-len.md)
+- [Column lengths of a partition](partition-col-len.md)
+- [Row lengths of a partition](partition-row-len.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.integral_cos_pow_zero_pi
 ---
 
-# Integral cos pow zero pi
+# Integral of $\cos^m x$ over $(0, \pi)$
 
-`∫₀^π cos^m x dx` is `2^{-m} π binom(m, m/2)` for even `m` and `0` for odd `m`
-(equation (9)).
+**Integral of $\cos^m x$ over $[0, \pi]$.** For every natural number $m$,
+$\int_0^\pi \cos^m x \, dx$ equals $\pi \binom{m}{m/2} / 2^m$ if $m$ is even and $0$ if $m$ is
+odd.
+
+This is equation (9) of the source.
 
 ## Depends on
 

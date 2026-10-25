@@ -5,22 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.motzkinHumpFamily_equiv_lastUpEvenFamily
 ---
 
-# Motzkin Hump Family equiv last Up Even Family
+# Humps correspond to last-up prefixes of twice the height
 
-Lemma 3 supplies a bijection from height-indexed humps to even-height prefixes
-whose last non-flat step is up. Equality of retained indices formalizes the paper's
-membership equivalence at each `k`; moreover, a marked hump is a peak exactly when
-its image actually ends with an up step.
+**Humps correspond to last-up prefixes of twice the height.** Use the steps $U = (1,1)$,
+$F = (1,0)$ and $D = (1,-1)$. A Motzkin prefix of length $n$ ending at height $h$ is a word of
+$n$ steps that never goes below height $0$ and ends at height $h$; a Motzkin path is a Motzkin
+prefix ending at height $0$. A hump of height $k$ in a path is a pair of an up step and a later
+down step with only flat steps between them, where the up step ends at height $k$; the hump is
+a peak when the down step immediately follows the up step. For every natural number $n$ there
+is a bijection from the set of triples $(k, P, h)$ with $1 \le k \le \lfloor n/2 \rfloor$, $P$
+a Motzkin path of length $n$ and $h$ a hump of height $k$ in $P$, to the set of pairs $(k, p)$
+with $1 \le k \le \lfloor n/2 \rfloor$ and $p$ a Motzkin prefix of length $n$ ending at height
+$2k$ that contains a $U$ after which every step is $F$. This bijection keeps the index $k$, and
+the hump $h$ is a peak exactly when the image path $p$ ends with an up step.
 
 ## Depends on
 
-- [Ends With Up](ends-with-up.md)
-- [Is Motzkin Hump](is-motzkin-hump.md)
-- [Is Motzkin Peak](is-motzkin-peak.md)
-- [Is Motzkin Prefix](is-motzkin-prefix.md)
-- [Last Nonflat Step Up](last-nonflat-step-up.md)
-- [Motzkin Hump Family](motzkin-hump-family.md)
-- [Motzkin Last Up Even Family](motzkin-last-up-even-family.md)
+- [Paths ending with an up step](ends-with-up.md)
+- [Motzkin hump](is-motzkin-hump.md)
+- [Motzkin peak](is-motzkin-peak.md)
+- [Motzkin prefix](is-motzkin-prefix.md)
+- [Paths whose last non-flat step is up](last-nonflat-step-up.md)
+- [Motzkin paths with a marked hump, over all heights](motzkin-hump-family.md)
+- [Motzkin prefixes of even height whose last non-flat step is up](motzkin-last-up-even-family.md)
 
 ## Sources
 

@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.rascalZ_symm
 ---
 
-# Theorem 2
+# Symmetry of Rascal numbers
 
-**Theorem 2** (symmetry): `R_{n,k} = R_{n,n-k}` for
-`0 ≤ k ≤ n`.
+**Symmetry of Rascal numbers.** For integers $n$ and $k$ with $0 \le k \le n$, the Rascal
+numbers satisfy $R_{n,k} = R_{n,n-k}$.
 
 ## Depends on
 
-- [Rascal Z](rascal-z.md)
+- [Rascal numbers on the integers](rascal-z.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.nearHookTheta_rowLens
 ---
 
-# Near Hook Theta row Lens
+# Row lengths of $\theta^{(n)}$
 
-The row lengths of `θ^(n)` are `n + 2, 2, 1, …, 1` (`n` ones).
+**Row lengths of $\theta^{(n)}$.** For every $n \in \mathbb{N}$, the row lengths of the Young
+diagram $\theta^{(n)}$, from the top row down, are $n + 2$, $2$, and then $1$ repeated $n$ times.
 
 ## Depends on
 
-- [Near Hook Theta](near-hook-theta.md)
+- [The near-hook diagram $\theta^{(n)}$](near-hook-theta.md)
 
 ## Sources
 

@@ -5,10 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.refinedSchreierCardMinCount
 ---
 
-# Refined Schreier Card Min Count
+# Refined Schreier sets with a given size and minimum
 
-`|F_{n,ℓ,k,q}|`: sets in `F_{n,ℓ,k}` whose smallest element
-is `q`.
+**Refined Schreier sets with a given size and minimum.** For natural numbers $n$ and
+$\ell$, let $F_{n,\ell}$ be the family of finite sets $A$ of natural numbers such that $A$ has
+largest element $n + 1$ and at least three elements, $A$ is sparse (the differences of
+consecutive elements, in increasing order, are non-decreasing) and $\ell$-strong Schreier
+($\ell|A| + 1 \le a + \ell$ for every $a \in A$), and the second and third largest elements
+$b > a$ of $A$ satisfy $n + 1 + a = 2b$. For natural numbers $k$ and $q$, $|F_{n,\ell,k,q}|$
+is the number of sets in $F_{n,\ell}$ with exactly $k$ elements whose smallest element is
+$q$.
 
 ## Depends on
 
@@ -16,9 +22,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Refined Schreier](is-refined-schreier.md)
-- [Is Sparse](is-sparse.md)
-- [Is Strong Schreier](is-strong-schreier.md)
+- [The refined Schreier family $F_{n,\ell}$](is-refined-schreier.md)
+- [Sparse sets](is-sparse.md)
+- [Strong Schreier sets](is-strong-schreier.md)
 
 ## Sources
 

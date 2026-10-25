@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_extremely_lucky_stirling
 ---
 
-# Card extremely lucky stirling
+# Extremely lucky Stirling permutations are counted by the Catalan numbers
 
-For every positive integer `n`, the number of extremely lucky Stirling
-permutations of order `n` is the Catalan number `C_n`.
+**Extremely lucky Stirling permutations are counted by the Catalan numbers.** For every
+positive integer $n$, the number of Stirling permutations $w$ of order $n$ that are extremely
+lucky, that is, whose set $\mathrm{Lucky}(w)$ of lucky cars has exactly $n$ elements, is the
+Catalan number $C_n$.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 
 ## Sources
 

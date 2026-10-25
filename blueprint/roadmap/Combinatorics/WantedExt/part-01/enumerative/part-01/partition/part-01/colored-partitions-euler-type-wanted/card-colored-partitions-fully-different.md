@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_coloredPartitions_fullyDifferent
 ---
 
-# Card colored Partitions fully Different
+# Formula for colored partitions into fully different parts
 
-`pf_c(n) = ∑_{p₁ > ⋯ > p_k, p₁ + ⋯ + p_k = n} p_k (p_{k-1} - 1) ⋯ (p₁ - (k - 1))`, where
-`pf_c(n)` counts colored partitions of `n` with fully different parts (pairwise different sizes
-and pairwise different colors). The right side lists the parts of each partition into distinct
-parts increasingly as `q₀ < q₁ < ⋯` and multiplies `q_i - i`. Stated for all `n ≥ 0` (at `n = 0`
-both sides are `1`); the paper says `n ≥ 1`.
+**Formula for colored partitions into fully different parts.** A colored part is a pair
+$(m, j)$ of integers with $1 \le j \le m$, read as the part $m$ in color $j$. For $n \ge 0$, let
+$\mathrm{pf}_c(n)$ be the number of finite sets of colored parts whose sizes $m$ sum to $n$ and
+in which no two colored parts have the same size and no two have the same color. Then
+$\mathrm{pf}_c(n)$ is the sum, over all partitions of $n$ into distinct parts
+$p_1 > p_2 > \cdots > p_k$, of the product $p_k (p_{k-1} - 1) \cdots (p_1 - (k - 1))$.
+
+The identity is stated for all $n \ge 0$; at $n = 0$ both sides equal $1$, while the paper states
+it for $n \ge 1$.
 
 ## Depends on
 

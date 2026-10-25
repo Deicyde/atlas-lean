@@ -5,16 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.IncompleteBinomialHarmonicSumsWanted.sum_range_choose_two_mul_sub_one_mul_harmonic
 ---
 
-# Sum range choose two mul sub one mul harmonic
+# Half-range binomial sum of harmonic numbers with top index $2n-1$
 
-The odd half-range case of Kollár's Theorem 3:
-`∑ i ∈ [0,n-1], (2n - 1).choose i * Hᵢ` in terms of harmonic
-numbers and the auxiliary sums `C` and `D`.
+**Half-range binomial sum of harmonic numbers with top index $2n-1$.** Let $H_i$ denote
+the $i$-th harmonic number (with $H_0 = 0$), and let Kollár's auxiliary sums be
+$C_n = \sum_{k=1}^{n} \frac{1}{k \, 2^k}$ and
+$D_n = \sum_{k=1}^{n} \frac{\binom{2k}{k}}{2k \cdot 2^{2k}}$.
+For every positive integer $n$,
+
+$$\sum_{i=0}^{n-1} \binom{2n-1}{i} H_i =
+2^{2n-2} \left( H_{2n-1} - 2 C_{2n-1} + D_{n-1} \right).$$
 
 ## Depends on
 
-- [Central Binom Weighted Sum](central-binom-weighted-sum.md)
-- [Inv Pow Two Sum](inv-pow-two-sum.md)
+- [Kollár's auxiliary sum $D_n$](central-binom-weighted-sum.md)
+- [Kollár's auxiliary sum $C_n$](inv-pow-two-sum.md)
 
 ## Sources
 

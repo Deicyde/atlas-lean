@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.degenerateDaehee_zero
 ---
 
-# Degenerate Daehee zero
+# The zeroth degenerate Daehee number
 
-`D_{0,λ} = 1` for `λ ≠ 0`.
+**The zeroth degenerate Daehee number.** For every real number $\lambda \ne 0$, the degenerate
+Daehee number $D_{0,\lambda}$ equals $1$.
 
 ## Depends on
 
-- [Degenerate Daehee](degenerate-daehee.md)
+- [Degenerate Daehee numbers](degenerate-daehee.md)
 
 ## Sources
 

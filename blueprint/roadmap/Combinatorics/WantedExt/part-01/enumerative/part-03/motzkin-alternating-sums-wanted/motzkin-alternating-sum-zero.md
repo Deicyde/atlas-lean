@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.motzkinAlternatingSum_zero
 ---
 
-# Motzkin Alternating Sum zero
+# The alternating Motzkin sum at 0
 
-`T_0 = 1`.
+**The alternating Motzkin sum at 0.** Let $M_k$ denote the $k$-th Motzkin number and let
+$T_n = \sum_{k=0}^{n} (-1)^{n-k} M_k$. Then $T_0 = 1$.
 
 ## Depends on
 
-- [Motzkin Alternating Sum](motzkin-alternating-sum.md)
+- [Alternating sums of Motzkin numbers](motzkin-alternating-sum.md)
 
 ## Proof depends on
 

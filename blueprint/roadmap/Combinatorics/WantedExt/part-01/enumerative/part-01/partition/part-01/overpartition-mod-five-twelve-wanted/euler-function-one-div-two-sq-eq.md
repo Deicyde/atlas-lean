@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.eulerFunction_one_div_two_sq_eq
 ---
 
-# Euler Function one div two sq eq
+# Three-dissection of $(q;q)_\infty / (q^2;q^2)_\infty^2$
 
-Lemma 1, identity (11): For `‖q‖ < 1`, with `E(q^k) = (q^k; q^k)_∞`
-(`QPochhammer.qPochhammerInf (q ^ k) (q ^ k)`, written `E k`; `E 0 = 1` is unused),
-`E(q) / E(q²)² = E(q³)² E(q⁹)³ / E(q⁶)⁶ - q E(q³)³ E(q¹⁸)³ / E(q⁶)⁷
-  + q² E(q³)⁴ E(q¹⁸)⁶ / (E(q⁶)⁸ E(q⁹)³)`.
+**Three-dissection of $(q;q)_\infty / (q^2;q^2)_\infty^2$.** Let $q$ be a complex number
+with $|q| < 1$, and for each integer $k \ge 1$ write $E_k = (q^k; q^k)_\infty$, the infinite
+q-Pochhammer symbol $\prod_{n=0}^{\infty} (1 - q^{k(n+1)})$. Then
+
+$$
+\frac{E_1}{E_2^2} = \frac{E_3^2 E_9^3}{E_6^6} - q \, \frac{E_3^3 E_{18}^3}{E_6^7} +
+  q^2 \, \frac{E_3^4 E_{18}^6}{E_6^8 E_9^3}.
+$$
 
 ## Depends on
 

@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.unique_statEnc_sorted_form
 ---
 
-# Unique stat Enc sorted form
+# The sorted rearrangement of a uniquely encoded parking function
 
-If `α` is the unique parking function with statistic encoding `w`, then the statistic
-encoding of the nondecreasing rearrangement `β` of `α` has the form `A*T*`.
+**The sorted rearrangement of a uniquely encoded parking function.** The statistic encoding
+of $f : \{0, \dots, n-1\} \to \{0, \dots, n-1\}$ is the word over $\{A, D, T\}$ whose letter at
+each position $0 \le i \le n - 2$ is $A$, $D$ or $T$ according as $f(i) < f(i+1)$,
+$f(i) > f(i+1)$ or $f(i) = f(i+1)$. Let $f$ be a parking function of length $n$ such that every
+parking function of length $n$ with the same statistic encoding equals $f$, and let
+$\beta : \{0, \dots, n-1\} \to \{0, \dots, n-1\}$ be nondecreasing and take each value as often
+as $f$ does. Then the statistic encoding of $\beta$ consists of $A$'s followed by $T$'s (either
+block may be empty).
 
 ## Depends on
 

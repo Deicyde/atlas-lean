@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.knuth_old_sum
 ---
 
-# Knuth old sum
+# Knuth's old sum (the Reed–Dawson identity)
 
-Knuth's old sum (the Reed Dawson identity):
-`∑_{k=0}^n (-1)^k binom(n,k) 2^{-k} binom(2k,k)` is `2^{-n} binom(n, n/2)` for even `n`
-and `0` for odd `n`.
+**Knuth's old sum (the Reed–Dawson identity).** For every natural number $n$, the sum
+$\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{2k}{k} 2^{-k}$ equals $2^{-n} \binom{n}{n/2}$ if $n$
+is even and $0$ if $n$ is odd.
 
 ## Depends on
 

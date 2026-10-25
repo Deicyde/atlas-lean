@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.garvanM_eight_three
 ---
 
-# Garvan M eight three
+# The first recurrence value of Garvan's matrix
 
-The first value given by the recurrence: `m_{8,3} = 2464`.
+**The first recurrence value of Garvan's matrix.** The entry of Garvan's matrix
+$(m_{i,j})$ in row $8$ and column $3$, the first entry computed by the recurrence rather than
+read from the tables, is $m_{8,3} = 2464$.
 
 ## Depends on
 
-- [Garvan M](garvan-m.md)
+- [Garvan's matrix](garvan-m.md)
 
 ## Sources
 

@@ -5,14 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.parkingFunction_descent_genFun
 ---
 
-# Parking Function descent gen Fun
+# Descent generating function of parking functions
 
-The descent generating function of parking functions: for each `n ≥ 1`,
-`∑_{α ∈ PF_n} y^{des α} = ∑_{j=0}^{n-1} d(n,j) y^j = ∑_{β ∈ PF↑_n} A_{M(β)}(y)`, where
-`A_{M(β)}(y) = ∑_π y^{des π}` over the multipermutations `π` of the entries of `β`. The
-printed middle sum starts at `j = 1`; it is read from `j = 0` (at `n = 1` the printed
-middle sum is `0` while the other two sides are `1`). At `n = 0` the left side is `1` (the empty
-function) and the middle sum is empty, so `n ≥ 1` is assumed, as in the paper.
+**Descent generating function of parking functions.** Write a sequence of length $n$ as
+$(a_1, \dots, a_n)$; its descents are the $j \in \{1, \dots, n-1\}$ with $a_j > a_{j+1}$, and
+$\operatorname{des}$ is their number. A parking function $f$ of length $n$ is read as the sequence
+$a_j = f(j-1) + 1$. Let $PF_n$ be the set of parking functions of length $n$, $PF^{\uparrow}_n$
+the set of nondecreasing ones, and $d(n, j)$ the number of $\alpha \in PF_n$ with
+$\operatorname{des}(\alpha) = j$. For every $n \ge 1$, in the polynomial ring $\mathbb{N}[y]$,
+
+$$\sum_{\alpha \in PF_n} y^{\operatorname{des}(\alpha)} = \sum_{j=0}^{n-1} d(n, j)\, y^j =
+\sum_{\beta \in PF^{\uparrow}_n} \sum_{\pi} y^{\operatorname{des}(\pi)},$$
+
+where, for each $\beta$, $\pi$ runs over the rearrangements of $\beta$: the sequences of length
+$n$ with the same multiset of entries as $\beta$.
+
+The paper prints the middle sum from $j = 1$; it is read from $j = 0$ (at $n = 1$ the printed
+middle sum is $0$ while the other two sides are $1$). At $n = 0$ the left side is $1$ and the
+middle sum is empty, so $n \ge 1$ is assumed, as in the paper.
 
 ## Depends on
 

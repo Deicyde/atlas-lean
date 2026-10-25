@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.hasDerivAt_zurita_antiderivative_one
 ---
 
-# Has Deriv At zurita antiderivative one
+# Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/(1-x)^{3/2}$
 
-For `n ≥ 1`, an antiderivative of `x^{-n-1/2} arcsin(√x)/(1 - x)^{3/2}` is
-`log(x - 1) + c_n log x + T_{n-2}(x)/x^{n-1} + arcsin(√x) S_n(x)/(x^{n-1/2} √(1 - x))`, stated as
-a derivative identity on `0 < x < 1` (`Real.log` of the negative number `x - 1` is
-`log |x - 1|`).
+**Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/(1-x)^{3/2}$.** Let $n \ge 1$, let
+$c_n$ be Zurita's constant and let $S_n$ and $T_{n-2}$ be Zurita's polynomials (with
+$T_{-1} = 0$). For every real $x$ with $0 < x < 1$, the function
+
+$$
+F(y) = \log|y - 1| + c_n \log y + \frac{T_{n-2}(y)}{y^{n-1}} +
+\frac{\arcsin(\sqrt{y})\, S_n(y)}{y^{n-1/2} \sqrt{1 - y}}
+$$
+
+has derivative $x^{-n-1/2} \arcsin(\sqrt{x}) / (1 - x)^{3/2}$ at $x$.
 
 ## Depends on
 
-- [Zurita C](zurita-c.md)
-- [Zurita S](zurita-s.md)
+- [Zurita's constant $c_n$](zurita-c.md)
+- [Zurita's polynomial $S_n$](zurita-s.md)
 - [Zurita T](zurita-t.md)
 
 ## Sources

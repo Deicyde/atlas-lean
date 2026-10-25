@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.garvanYOdd_one
 ---
 
-# Garvan YOdd one
+# Initial coefficient vector for odd powers of 7
 
-`y^{(2k-1)}_1 = x_{2k-1}`.
+**Initial coefficient vector for odd powers of 7.** For all natural numbers $k$ and $j$,
+the first coefficient vector of Theorem 2 agrees with Garvan's coefficient vector $x_{2k-1}$:
+$y^{(2k-1)}_{1,j} = x_{2k-1,j}$. For $k = 0$ the index $2k - 1$ is read as $0$.
 
 ## Depends on
 
-- [Garvan X](garvan-x.md)
-- [Garvan YOdd](garvan-yodd.md)
+- [Garvan's coefficient vectors](garvan-x.md)
+- [Coefficient vectors for odd powers of 7](garvan-yodd.md)
 
 ## Sources
 

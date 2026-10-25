@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.vnArrangementCount
 ---
 
-# Vn Arrangement Count
+# Number of $k$-vn-arrangements
 
-The number of `k`-vn-arrangements of a finite multiset `M` of integers: orderings
-`(v_1, …, v_b)` of `M` with `v_{i+1} - v_i ≤ k` for all `i`. For `k = 1` these are the
-vn-arrangements.
+**Number of $k$-vn-arrangements.** Let $k$ be a natural number and $M$ a finite multiset of
+integers. A $k$-vn-arrangement of $M$ is a finite sequence $(v_1, \dots, v_b)$ of integers whose
+multiset of entries is $M$ and with $v_{i+1} - v_i \le k$ for all $1 \le i < b$. This is the
+number of distinct such sequences; sequences are compared entry by entry, so exchanging two
+equal entries gives the same arrangement. For $k = 1$ these are the vn-arrangements.
 
 ## Depends on
 

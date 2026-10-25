@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isPerfectPartition_seven
 ---
 
-# Is Perfect Partition seven
+# A perfect partition of seven
 
-`(1^3, 4)` is a perfect partition of `7`.
+**A perfect partition of seven.** The partition $(1^3, 4)$ of $7$, with three parts equal
+to $1$ and one part equal to $4$, is a perfect partition of $7$.
 
 ## Depends on
 
-- [Is Perfect Partition](is-perfect-partition.md)
+- [Perfect partition](is-perfect-partition.md)
 
 ## Proof depends on
 
-- [Subpartition Count](subpartition-count.md)
+- [Number of subpartitions with a given sum](subpartition-count.md)
 
 ## Sources
 

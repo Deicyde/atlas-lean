@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsStrongSchreier
 ---
 
-# Is Strong Schreier
+# Strong Schreier sets
 
-A finite set of positive integers is *`ℓ`-strong Schreier* if
-it is empty or `min A ≥ ℓ|A| - ℓ + 1`; encoded elementwise.
+**Strong Schreier sets.** For a natural number $\ell$, a finite set $A$ of natural numbers is
+*$\ell$-strong Schreier* if $\ell |A| + 1 \le a + \ell$ for every $a \in A$; equivalently, $A$ is
+empty or $\min A \ge \ell |A| - \ell + 1$.
 
 ## Depends on
 

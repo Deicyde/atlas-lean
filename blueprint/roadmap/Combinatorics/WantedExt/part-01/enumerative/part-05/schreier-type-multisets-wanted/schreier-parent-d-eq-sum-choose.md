@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.schreierParentD_eq_sum_choose
 ---
 
-# Schreier Parent D eq sum choose
+# Binomial sum formula for the parent sequence
 
-Proposition 2: for `u ≥ 2` and `n ≥ 1`,
-`d_{u,n} = ∑_{i=0}^{⌊(n-1)/u⌋} binom(⌊(n + (u - 1)i - u)/(2u - 1)⌋, i)`. The natural-number
-subtraction truncates only at `i = 0`, `n < u`, where both the paper's `binom(-1, 0)` and
-`binom(0, 0)` equal `1`.
+**Binomial sum formula for the parent sequence.** For all natural numbers $u \ge 2$ and
+$n \ge 1$, the parent sequence $d_{u,n}$ satisfies
+
+$$
+d_{u,n} = \sum_{i=0}^{\lfloor (n-1)/u \rfloor} \binom{\lfloor (n + (u-1)i - u)/(2u-1) \rfloor}{i}.
+$$
+
+The numerator $n + (u-1)i - u$ is negative only when $i = 0$ and $n < u$. There it is read as
+$0$ (truncated subtraction), so the term is $\binom{0}{0} = 1$, which agrees with the paper's
+$\binom{-1}{0} = 1$.
 
 ## Depends on
 
-- [Schreier Parent D](schreier-parent-d.md)
+- [The parent sequence $d_{u,n}$](schreier-parent-d.md)
 
 ## Sources
 

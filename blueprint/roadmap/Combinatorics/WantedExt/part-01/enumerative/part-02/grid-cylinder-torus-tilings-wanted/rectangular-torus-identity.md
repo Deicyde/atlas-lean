@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.rectangularTorus_identity
 ---
 
-# Rectangular Torus identity
+# Torus fixed-tiling sum for the identity
 
-The identity rectangular-torus shift-sum is the double divisor sum over column and row
-shift orders.  `tileFixedCount σ 0 = t_id` is written as `|T|`, and `σ^1=1` records the identity
-action on designs.
+**Torus fixed-tiling sum for the identity.** Let $n$ and $m$ be positive integers, let $T$ be
+a finite set of tiles and let $\sigma$ be a permutation of $T$ with $\sigma^1 = 1$, that is, the
+identity. For $(a, b) \in \mathbb{Z}/n \times \mathbb{Z}/m$ let $N(a, b)$ be the number of tilings
+$F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with $F(x + a, y + b) = \sigma(F(x, y))$ for every
+cell $(x, y)$. Then, with $\varphi$ Euler's totient function,
 
-Formalization deviation: none beyond the representation choices stated above.
+$$\sum_{a \in \mathbb{Z}/n} \sum_{b \in \mathbb{Z}/m} N(a, b) =
+\sum_{c \mid m} \sum_{d \mid n} \varphi(c) \, \varphi(d) \, |T|^{mn / \operatorname{lcm}(c, d)}.$$
 
 ## Depends on
 
-- [Torus Shift Sum](torus-shift-sum.md)
+- [Torus shift sum](torus-shift-sum.md)
 
 ## Sources
 

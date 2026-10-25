@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.pascalExpFirstColumn_one
 ---
 
-# Pascal Exp First Column one
+# First term of the Pascal first-column sequence
 
-`α^{(k)}_1 = 1`.
+**First term of the Pascal first-column sequence.** For every $k \ge 0$, the first-column
+sequence $\alpha^{(k)}$ satisfies $\alpha^{(k)}_1 = 1$.
 
 ## Depends on
 
-- [Pascal Exp First Column](pascal-exp-first-column.md)
+- [First-column sequence for exponentials of Pascal diagonal matrices](pascal-exp-first-column.md)
 
 ## Sources
 

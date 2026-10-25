@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.alternatingBinomialPowerSum
 ---
 
-# Alternating Binomial Power Sum
+# Alternating binomial power sum
 
-`p_{ℓ,m}(x, y) = ∑_{k=0}^{m} (-1)^k C(m, k) (k x + y)^ℓ`.
+**Alternating binomial power sum.** For natural numbers $\ell, m$ and complex numbers $x, y$,
+
+$$p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (kx + y)^\ell,$$
+
+with the convention $0^0 = 1$.
 
 ## Depends on
 

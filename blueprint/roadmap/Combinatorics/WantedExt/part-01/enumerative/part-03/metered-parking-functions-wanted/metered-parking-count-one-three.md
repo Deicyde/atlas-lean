@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.meteredParkingCount_one_three
 ---
 
-# Metered Parking Count one three
+# 1-metered parking functions with three cars
 
-For `n ≥ 2`, `mpf_{3,n}(1) = n^3 - 2n`.
+**1-metered parking functions with three cars.** For every natural number $n \ge 2$, the
+number of $1$-metered $(3, n)$-parking functions is $\mathrm{mpf}_{3,n}(1) = n^3 - 2n$.
 
 ## Depends on
 
-- [Metered Parking Count](metered-parking-count.md)
+- [Number of metered parking functions](metered-parking-count.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.wordAscents
 ---
 
-# Word Ascents
+# Number of ascents of a word
 
-The number of ascents of a word: positions `i` with
-`w[i] < w[i+1]`.
+**Number of ascents of a word.** For a finite word
+$w = w_1 w_2 \cdots w_n$ of natural numbers, the number of ascents
+of $w$ is the number of indices $i$ with $1 \le i < n$ and
+$w_i < w_{i+1}$.
 
 ## Depends on
 

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sigmaMexOverpartition_power_density
 ---
 
-# Sigma Mex Overpartition power density
+# Density of overpartition r-mex sums divisible by powers of two
 
-When `r = 2^m 3^e` with `m,e ≥ 0` and `k ≥ 1`, the natural density of
-`n` for which `σ_r mex̄(n) ≡ 0 (mod 2^k)` is one.  Naturality makes the
-nonnegativity of `m,e` implicit; `Finset.range (X+1)` encodes `0 ≤ n ≤ X`,
-and `Tendsto ... atTop (nhds 1)` encodes the density limit.
+**Density of overpartition r-mex sums divisible by powers of two.** Let $m$, $e$ and $k$ be
+natural numbers with $k \ge 1$, let $r = 2^m 3^e$, and let
+$\sigma_r\overline{\mathrm{mex}}(n)$ be the sum over all overpartitions $\pi$ of $n$ of
+$\overline{\mathrm{mex}}_r(\pi)$, the least positive integer occurring fewer than $r$ times among
+the non-overlined parts of $\pi$. Then the natural numbers $n$ with
+$2^k \mid \sigma_r\overline{\mathrm{mex}}(n)$ have natural density $1$: the number of such $n$
+with $n \le X$, divided by $X$, tends to $1$ as $X \to \infty$.
 
 ## Depends on
 
-- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
+- [Sums of minimal excludants over overpartitions](sigma-mex-overpartition.md)
 
 ## Sources
 

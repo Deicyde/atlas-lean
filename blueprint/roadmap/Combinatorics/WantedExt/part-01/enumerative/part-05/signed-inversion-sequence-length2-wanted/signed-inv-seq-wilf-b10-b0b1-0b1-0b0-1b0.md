@@ -5,16 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_b10_b0b1_0b1_0b0_1b0
 ---
 
-# Theorem 14
+# Mansour–Safadi Theorem 14
 
-**Theorem 14.** `{1̄0, 0̄1̄, 01̄, 00̄, 10̄}` ∼ `{1̄0̄, 0̄1̄, 01̄, 00̄, 10̄}` ∼ `{1̄0̄, 1̄0,
-0̄0̄, 0̄0, 00̄}` ∼ `{1̄0̄, 0̄0̄, 01̄, 00̄, 10̄}` ∼ `{1̄0̄, 0̄1̄, 0̄0̄, 01̄, 10̄}` ∼ `{1̄0, 0̄1̄,
-0̄0̄, 01̄, 10̄}` ∼ `{1̄0̄, 1̄0, 0̄0̄, 0̄0, 0̄1}`.
+**Mansour–Safadi Theorem 14.** Write $\bar{I}_n(B)$ for the set of signed inversion
+sequences of length $n$ that avoid every length-2 signed pattern in $B$, where a pattern is
+one of $00$, $01$, $10$ with a bar over each barred letter. Let
+$B_1 = \{\bar{1}0, \bar{0}\bar{1}, 0\bar{1}, 0\bar{0}, 1\bar{0}\}$,
+$B_2 = \{\bar{1}\bar{0}, \bar{0}\bar{1}, 0\bar{1}, 0\bar{0}, 1\bar{0}\}$,
+$B_3 = \{\bar{1}\bar{0}, \bar{1}0, \bar{0}\bar{0}, \bar{0}0, 0\bar{0}\}$,
+$B_4 = \{\bar{1}\bar{0}, \bar{0}\bar{0}, 0\bar{1}, 0\bar{0}, 1\bar{0}\}$,
+$B_5 = \{\bar{1}\bar{0}, \bar{0}\bar{1}, \bar{0}\bar{0}, 0\bar{1}, 1\bar{0}\}$,
+$B_6 = \{\bar{1}0, \bar{0}\bar{1}, \bar{0}\bar{0}, 0\bar{1}, 1\bar{0}\}$, and
+$B_7 = \{\bar{1}\bar{0}, \bar{1}0, \bar{0}\bar{0}, \bar{0}0, \bar{0}1\}$.
+Then for every $n \ge 0$,
+$|\bar{I}_n(B_1)| = |\bar{I}_n(B_2)| = |\bar{I}_n(B_3)| = |\bar{I}_n(B_4)| = |\bar{I}_n(B_5)| =
+|\bar{I}_n(B_6)| = |\bar{I}_n(B_7)|$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
 
 ## Sources
 

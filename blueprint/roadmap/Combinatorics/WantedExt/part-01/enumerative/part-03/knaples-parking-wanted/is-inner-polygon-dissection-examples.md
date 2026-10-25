@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.isInnerPolygonDissection_examples
 ---
 
-# Is Inner Polygon Dissection examples
+# Examples of $r$-in-$s$ dissections
 
-Characteristic examples: the square with no diagonals is a `4`-in-`4` dissection, and the
-pentagon with the diagonal `(0, 2)` is a `4`-in-`5` dissection with quadrilateral `0, 2, 3, 4`,
-but not with quadrilateral `0, 1, 2, 3`.
+**Examples of $r$-in-$s$ dissections.** For the convex polygons with vertices
+$0, 1, \dots, s - 1$: the square ($s = 4$) with no diagonals is a $4$-in-$4$ dissection whose
+quadrilateral has all four vertices; the pentagon ($s = 5$) with the single diagonal $(0, 2)$
+is a $4$-in-$5$ dissection with quadrilateral on the vertices $0, 2, 3, 4$, but not with
+quadrilateral on the vertices $0, 1, 2, 3$.
 
 ## Depends on
 
-- [Is Inner Polygon Dissection](is-inner-polygon-dissection.md)
+- [$r$-in-$s$ dissection](is-inner-polygon-dissection.md)
 
 ## Proof depends on
 
-- [Inscribed Polygon Edges](inscribed-polygon-edges.md)
+- [Edges of an inscribed polygon](inscribed-polygon-edges.md)
 
 ## Sources
 

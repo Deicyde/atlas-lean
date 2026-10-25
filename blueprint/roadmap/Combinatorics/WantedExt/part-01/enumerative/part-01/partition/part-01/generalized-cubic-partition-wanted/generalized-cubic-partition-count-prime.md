@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.generalizedCubicPartitionCount_prime_five_seven_mod_eight
 ---
 
-# Generalized Cubic Partition Count prime five seven mod eight
+# Generalized cubic partition congruences for primes $p \equiv 5, 7 \pmod 8$
 
-For a prime `p ≡ 5, 7 (mod 8)` and `0 ≤ l ≤ p - 1` with `p ∣ 8l + 3`,
-`a_{p-4}(pn + l) ≡ 0 (mod p)` for all `n ≥ 0`. The bound `l ≤ p - 1` is dropped: a larger
-`l` reduces to `l mod p`, which satisfies the same divisibility.
+**Generalized cubic partition congruences for primes $p \equiv 5, 7 \pmod 8$.** Let $a_c(n)$
+be the generalized cubic partition numbers, let $p$ be a prime with $p \equiv 5$ or
+$p \equiv 7 \pmod 8$, and let $l$ be a natural number with $p \mid 8l + 3$. Then
+$a_{p-4}(pn + l) \equiv 0 \pmod p$ for every natural number $n$.
+
+The source assumes $0 \le l \le p - 1$; the statement for a larger $l$ follows from the one for
+$l \bmod p$, which satisfies the same divisibility.
 
 ## Depends on
 
-- [Generalized Cubic Partition Count](generalized-cubic-partition-count.md)
+- [Generalized cubic partition numbers](generalized-cubic-partition-count.md)
 
 ## Sources
 

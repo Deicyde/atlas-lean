@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_choose_two_pow_centralBinom
 ---
 
-# Sum neg one pow choose two pow central Binom
+# Alternating sum of $\binom{n}{k} 2^{n-2k} \binom{2k}{k}$
 
-`∑ (-1)^k binom(n,k) 2^{n-2k} binom(2k,k) = ∑_{k ≤ n/2} binom(n,2k) 2^{-2k} binom(2k,k)`.
+**Alternating sum of $\binom{n}{k} 2^{n-2k} \binom{2k}{k}$.** For every natural number $n$,
+the following identity holds in $\mathbb{Q}$:
+
+$$\sum_{k=0}^{n} (-1)^k \binom{n}{k} \frac{2^n}{2^{2k}} \binom{2k}{k}
+= \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{1}{2^{2k}} \binom{2k}{k}.$$
 
 ## Depends on
 

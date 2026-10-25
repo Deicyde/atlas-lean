@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.lonely_marriageable_strictMono
 ---
 
-# Lonely marriageable strict Mono
+# Strict growth of the lonely and marriageable singles counts
 
-`L_n < L_{n+1}` for `n ≥ 2` and `M_n < M_{n+1}` for `n ≥ 3`.
+**Strict growth of the lonely and marriageable singles counts.** $L_n < L_{n+1}$ for every
+$n \ge 2$, and $M_n < M_{n+1}$ for every $n \ge 3$, where $M_n$ is the number of noncrossing
+partitions of $\{0, \dots, n-1\}$ that are marriageable singles partitions and $L_n$ is the
+number of those that are not.
 
 ## Depends on
 
-- [Lonely Singles Count](lonely-singles-count.md)
-- [Marriageable Singles Count](marriageable-singles-count.md)
+- [Number of lonely singles partitions](lonely-singles-count.md)
+- [Number of marriageable singles partitions](marriageable-singles-count.md)
 
 ## Sources
 

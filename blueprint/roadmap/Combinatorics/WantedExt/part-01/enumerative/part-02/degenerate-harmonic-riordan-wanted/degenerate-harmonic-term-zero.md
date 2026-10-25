@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.degenerateHarmonicTerm_zero
 ---
 
-# Degenerate Harmonic Term zero
+# Degenerate harmonic term of index zero
 
-`degenerateHarmonicTerm λ α 0 = 0`.
+**Degenerate harmonic term of index zero.** For all real $\lambda$ and $\alpha$, the
+degenerate harmonic term of index $0$, $H^0_{0,\lambda}(\alpha)$, is $0$.
 
 ## Depends on
 
-- [Degenerate Harmonic Term](degenerate-harmonic-term.md)
+- [Degenerate harmonic terms](degenerate-harmonic-term.md)
 
 ## Sources
 

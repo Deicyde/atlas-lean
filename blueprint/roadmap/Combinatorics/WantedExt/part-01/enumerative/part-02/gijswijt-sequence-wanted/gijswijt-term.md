@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtTerm
 ---
 
-# Gijswijt Term
+# Terms of the $m$th order Gijswijt sequence
 
-`A^{(m)}(k)`, the `k`th term (`k ≥ 1`) of the `m`th order sequence.
+**Terms of the $m$th order Gijswijt sequence.** For $k \ge 1$, $A^{(m)}(k)$ is the $k$th
+term of the $m$th order sequence $A^{(m)}$, that is, the last entry of the list of its first $k$
+terms. For $k = 0$ the value is $0$ by convention.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gijswijt Prefix](gijswijt-prefix.md)
+- [Prefixes of the $m$th order Gijswijt sequence](gijswijt-prefix.md)
 
 ## Sources
 

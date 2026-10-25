@@ -15,7 +15,7 @@ is "in the leg". List index `k` is `i - 1`.
 
 ## Depends on
 
-- [Near Hook Theta](near-hook-theta.md)
+- [The near-hook diagram $\theta^{(n)}$](near-hook-theta.md)
 
 ## Sources
 

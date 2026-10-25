@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.santosBeta_zero
 ---
 
-# Santos Beta zero
+# Santos's coefficient with all indices zero
 
-`β_0(0, 0, z) = 1`.
+**Santos's coefficient with all indices zero.** For every complex number $z$, Santos's
+coefficient satisfies $\beta_0(0, 0, z) = 1$.
 
 ## Depends on
 
-- [Santos Beta](santos-beta.md)
+- [Santos's coefficients](santos-beta.md)
 
 ## Sources
 

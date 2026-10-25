@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.DelannoyConstructions.genDelannoyLower_one_two_two
 ---
 
-# Gen Delannoy Lower one two two
+# A value of the lower generalized Delannoy number
 
-`D_1(2, 2) = 8 = 2 D^1(1, 1)`.
+**A value of the lower generalized Delannoy number.** The lower generalized Delannoy number
+$D_1(2, 2)$ equals $8$.
 
 ## Depends on
 
-- [Gen Delannoy Lower](gen-delannoy-lower.md)
+- [Lower generalized Delannoy number](gen-delannoy-lower.md)
 
 ## Sources
 

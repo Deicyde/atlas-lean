@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_coloredPartitions_differentColors
 ---
 
-# Card colored Partitions different Colors
+# Colored partitions with distinct colors
 
-For `n ≥ 0`, the number of nonempty colored partitions whose parts have size at most `n`
-and pairwise different colors is `(n + 1)! - 1`. With distinct colors no colored part repeats,
-so such a partition is a nonempty finset of colored parts `(m, j)`, `1 ≤ j ≤ m ≤ n`, on which
-the color is injective; the paper's count excludes the empty partition.
+**Colored partitions with distinct colors.** A colored part is a pair $(m, j)$ of integers
+with $1 \le j \le m$, read as the part $m$ in color $j$. For every $n \ge 0$, the number of
+nonempty finite sets of colored parts $(m, j)$ with $m \le n$ in which no two colored parts have
+the same color $j$ is $(n + 1)! - 1$.
+
+A colored partition whose parts have pairwise different colors has no repeated colored part, so
+it is the same as a finite set of colored parts; the empty partition is not counted.
 
 ## Depends on
 

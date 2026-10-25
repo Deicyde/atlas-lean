@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseCount
 ---
 
-# Schreier Sparse Count
+# Number of Schreier sparse sets with maximum $n$
 
-`|F_n|`: Schreier sparse sets `F ⊆ {1, …, n}` with `n ∈ F`.
+**Number of Schreier sparse sets with maximum $n$.** For a natural number $n$, $|F_n|$ is the
+number of sets $F \subseteq \{1, \dots, n\}$ with $n \in F$ that are Schreier and sparse.
 
 ## Depends on
 
@@ -15,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Schreier](is-schreier.md)
-- [Is Sparse](is-sparse.md)
+- [Schreier sets](is-schreier.md)
+- [Sparse sets](is-sparse.md)
 
 ## Sources
 

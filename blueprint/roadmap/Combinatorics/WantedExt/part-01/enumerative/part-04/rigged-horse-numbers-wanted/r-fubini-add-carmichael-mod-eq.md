@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.rFubini_add_carmichael_modEq
 ---
 
-# R Fubini add carmichael mod Eq
+# Eventual periodicity of the $r$-Fubini numbers modulo $K$
 
-For fixed `r ≥ 1`, the `r`-Fubini numbers `F_r(n)` (weak orderings of `n` elements in
-which the `r` distinguished elements are pairwise untied) are eventually periodic modulo `K`
-with period dividing `λ(K)`, from the index `r - 1 + R` on, where `R` is the largest exponent
-in the prime factorization of `K`.
+**Eventual periodicity of the $r$-Fubini numbers modulo $K$.** For a natural number $r \ge 1$
+and a natural number $m$, let $F_r(m)$ be the number of pairs $(k, f)$ of a natural number
+$k \le m$ and a surjection $f : \{0, \dots, m - 1\} \to \{0, \dots, k - 1\}$ that is injective on
+the elements less than $r$; equivalently, $F_r(m)$ counts the weak orderings of $m$ elements in
+which the elements less than $r$ are pairwise untied. Let $K$ be a natural number, let
+$\lambda(K)$ be the value of the Carmichael function at $K$, and let $R$ be the largest exponent
+in the prime factorization of $K$ ($R = 0$ for $K \le 1$). Then
+$F_r(n + \lambda(K)) \equiv F_r(n) \pmod K$ for every natural number $n \ge r - 1 + R$.
 
 ## Depends on
 

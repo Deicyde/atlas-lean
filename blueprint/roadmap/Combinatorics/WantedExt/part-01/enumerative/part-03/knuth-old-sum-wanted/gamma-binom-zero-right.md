@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.gammaBinom_zero_right
 ---
 
-# Gamma Binom zero right
+# The generalized binomial coefficient with lower argument zero
 
-`binom(u, 0) = 1` for `ℜu > -1`.
+**The generalized binomial coefficient with lower argument zero.** For every complex number $u$
+with $\operatorname{Re} u > -1$, the generalized binomial coefficient of complex arguments
+$\binom{u}{0} = \Gamma(u+1)/(\Gamma(1)\,\Gamma(u+1))$ equals $1$.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

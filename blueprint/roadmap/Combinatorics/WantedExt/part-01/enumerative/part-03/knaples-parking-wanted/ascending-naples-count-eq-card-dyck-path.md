@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.ascendingNaplesCount_eq_card_dyckPath
 ---
 
-# Ascending Naples Count eq card dyck Path
+# Ascending $k$-Naples parking functions and Dyck paths
 
-Corollary 3: for `n ≥ 1`, ascending `k`-Naples parking functions of length `n` are
-equinumerous with Dyck paths of length `n + k` whose first `k` steps are Up, last `k + 1` steps
-are Down, and in which, before the last `k + 1` steps, every Down step that puts the path below
-`y = k` is followed within `2k` steps by a point of height `> k`.
+**Ascending $k$-Naples parking functions and Dyck paths.** For all natural numbers $n \ge 1$
+and $k$, the number of weakly increasing $k$-Naples parking functions of length $n$ equals the
+number of Dyck paths of semilength $n + k$ (that is, with $2(n + k)$ steps) whose first $k$ steps
+are Up, whose last $k + 1$ steps are Down, and which satisfy the following condition. Writing
+$h_j$ for the height after the first $j$ steps, whenever the $m$-th step is a Down step that is
+not among the last $k + 1$ steps and $h_m < k$, there is a $j$ with $m < j \le m + 2k$ and
+$j \le 2(n + k)$ such that $h_j > k$.
 
 ## Depends on
 
-- [Ascending Naples Count](ascending-naples-count.md)
-- [Dyck Step Height](dyck-step-height.md)
+- [Number of ascending $k$-Naples parking functions](ascending-naples-count.md)
+- [Height of a sequence of Dyck steps](dyck-step-height.md)
 
 ## Sources
 

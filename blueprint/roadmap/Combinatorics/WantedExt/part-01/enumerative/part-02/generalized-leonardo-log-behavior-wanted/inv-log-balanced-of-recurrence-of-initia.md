@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.inv_logBalanced_of_recurrence_of_initial
 ---
 
-# Inv log Balanced of recurrence of initial
+# Log-balancedness of reciprocals along a three-term recurrence
 
-Log-balancedness of reciprocals along `z (n+1) = c₁ z n - c₂ z (n-2)`: let `z` be a positive
-real sequence with `z (n+1) = c₁ z n - c₂ z (n-2)` for `n ≥ 2`, where `c₂ ≥ 0`, and let
-`x n = z (n+1) / z n`. If the block `1/z n₀, …, 1/z (n₀+3)` is log-balanced and
-`c₁ x n x (n+1) - 3 c₂ ≥ 0` for `n ≥ n₀`, then `(1/z n)_{n ≥ n₀}` is log-balanced. Log-balanced
-is the standard notion (Došlić): `w` is log-convex (`w n ^ 2 ≤ w (n-1) w (n+1)`) and `w n / n!`
-is log-concave, both at every interior index `n` (here `n ≥ n₀ + 1`; for the block, `n = n₀ + 1,
-n₀ + 2`). The paper's hypothesis `c₁ > 0` is omitted: it follows from positivity, the recurrence
-and `c₂ ≥ 0`.
+**Log-balancedness of reciprocals along a three-term recurrence.** Let $c_1$ and $c_2$ be
+real numbers with $c_2 \ge 0$, and let $(z_n)_{n \ge 0}$ be a sequence of positive real numbers
+with $z_{n+1} = c_1 z_n - c_2 z_{n-2}$ for every $n \ge 2$. Write $w_n = 1/z_n$ and
+$x_n = z_{n+1}/z_n$, and let $n_0 \ge 0$ be an integer. Suppose that for $n = n_0 + 1$ and
+$n = n_0 + 2$
+
+$$w_n^2 \le w_{n-1} w_{n+1} \quad \text{and} \quad
+\frac{w_{n-1}}{(n-1)!} \cdot \frac{w_{n+1}}{(n+1)!} \le \left(\frac{w_n}{n!}\right)^2,$$
+
+and that $c_1 x_n x_{n+1} \ge 3 c_2$ for every $n \ge n_0$. Then both inequalities hold for
+every $n \ge n_0 + 1$; that is, the sequence $(1/z_n)_{n \ge n_0}$ is log-balanced (Došlić).
+
+The paper also assumes $c_1 > 0$; this follows from positivity, the recurrence and $c_2 \ge 0$.
 
 ## Depends on
 

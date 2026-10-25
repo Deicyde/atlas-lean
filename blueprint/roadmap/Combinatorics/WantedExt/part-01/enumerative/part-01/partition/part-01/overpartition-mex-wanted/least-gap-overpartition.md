@@ -5,13 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.leastGapOverpartition
 ---
 
-# Least Gap Overpartition
+# Minimal excludant of an overpartition with a multiplicity bound
 
-`leastGapOverpartition r O` is the least positive size occurring fewer than
-`r` times among the non-overlined parts of `O`, formalizing `mex̄_r(O)`.
-For positive `r`, existence uses `n + 1`, which cannot occur in a partition
-of `n`.  The paper only uses positive `r`; the otherwise undefined case
-`r = 0` is totalized to `0`.
+**Minimal excludant of an overpartition with a multiplicity bound.** For natural numbers $r \ge 1$
+and $n$ and an overpartition $O$ of $n$, $\overline{\mathrm{mex}}_r(O)$ is the least positive
+integer $k$ that occurs fewer than $r$ times among the non-overlined parts of $O$. Such a $k$
+exists, since $n + 1$ is not a part of $O$. For $r = 0$, which the paper does not use, the value
+is $0$ by convention.
 
 ## Depends on
 
@@ -19,7 +19,7 @@ of `n`.  The paper only uses positive `r`; the otherwise undefined case
 
 ## Proof depends on
 
-- [Non Overlined Count](non-overlined-count.md)
+- [Number of non-overlined copies of a part size](non-overlined-count.md)
 
 ## Sources
 

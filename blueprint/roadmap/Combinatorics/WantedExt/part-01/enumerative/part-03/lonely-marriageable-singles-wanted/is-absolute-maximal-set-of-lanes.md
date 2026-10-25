@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsAbsoluteMaximalSetOfLanes
 ---
 
-# Is Absolute Maximal Set Of Lanes
+# Absolute maximal set of lanes
 
-An MSL of the standard road intersection is absolute when it has no two U-turns `E_iX_i`,
-`E_jX_j` (`i ≠ j`) whose replacement by `E_iX_j` and `E_jX_i` gives another MSL.
+**Absolute maximal set of lanes.** In the standard road intersection of size $n$, the lane
+$E_iX_j$ joins the entry $E_i$ to the exit $X_j$, for $i, j \in \{0, \dots, n-1\}$. A set $S$ of
+lanes is absolute if it is a maximal set of lanes among all lanes and there are no $i \ne j$ such
+that $S$ contains both U-turns $E_iX_i$ and $E_jX_j$ and replacing these two lanes in $S$ by
+$E_iX_j$ and $E_jX_i$ gives again a maximal set of lanes among all lanes.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
+- [Maximal set of lanes](is-maximal-set-of-lanes.md)
 
 ## Sources
 

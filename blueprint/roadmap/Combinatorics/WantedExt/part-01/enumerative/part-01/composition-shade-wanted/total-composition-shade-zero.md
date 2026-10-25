@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.totalCompositionShade_zero
 ---
 
-# Total Composition Shade zero
+# Total shade of the compositions of zero
 
-The composition of `0` has no shade.
+**Total shade of the compositions of zero.** The total shade $c(0)$ of the compositions
+of $0$ is zero: $c(0) = 0$.
+
+The only composition of $0$ is the empty one, whose bargraph has no shaded cells.
 
 ## Depends on
 
-- [Total Composition Shade](total-composition-shade.md)
+- [Total shade of compositions](total-composition-shade.md)
 
 ## Proof depends on
 
-- [Composition Shade](composition-shade.md)
+- [Shade of a composition](composition-shade.md)
 
 ## Sources
 

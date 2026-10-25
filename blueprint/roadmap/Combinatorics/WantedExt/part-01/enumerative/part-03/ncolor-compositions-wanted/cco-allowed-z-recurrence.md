@@ -5,16 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.ccoAllowedZ_recurrence
 ---
 
-# Proposition 1
+# Recurrence for n-color compositions with two consecutive colors
 
-**Proposition 1**, recurrence: for `b ≥ 1` and `n ≥ 2`,
-`cco_{b,b+1}(n) = cco_{b,b+1}(n-1) + cco_{b,b+1}(n-b) +
-cco_{b,b+1}(n-b-1)` (the printed statement says positive `n`;
-at `n = 1` the identity fails, e.g. `cco_{1,2}(1) = 1 ≠ 2`).
+**Recurrence for n-color compositions with two consecutive colors.** Fix a natural number
+$b \ge 1$. For an integer $m$, let $c(m)$ be the number of $n$-color compositions of $m$ in
+which every part has color $b$ or $b+1$ when $m \ge 0$, and $c(m) = 0$ when $m < 0$. Then for
+every integer $n \ge 2$,
+
+$$c(n) = c(n-1) + c(n-b) + c(n-b-1).$$
+
+The source states the recurrence for positive $n$, but it fails at $n = 1$: for $b = 1$ the
+left side is $1$ and the right side is $2$.
 
 ## Depends on
 
-- [Cco Allowed Z](cco-allowed-z.md)
+- [Integer extension of the count of n-color compositions with two consecutive colors](cco-allowed-z.md)
 
 ## Sources
 

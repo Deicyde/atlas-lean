@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.le_card_selfDualMonotone_add_two
 ---
 
-# Corollary 11
+# Dedekind numbers bound self-dual counts from below (Corollary 11)
 
-**Corollary 11.** For `n ≥ 0`, `λ_{n+2} ≥ d_n`.
+**Dedekind numbers bound self-dual counts from below (Corollary 11).** For a natural number
+$n$, let $d_n$ be the number of monotone Boolean functions $\{0,1\}^n \to \{0,1\}$ (for the
+coordinatewise order with $0 < 1$) and let $\lambda_{n+2}$ be the number of self-dual monotone
+Boolean functions $\{0,1\}^{n+2} \to \{0,1\}$, that is, monotone functions $f$ with
+$f(\bar x) = \lnot f(x)$ for every $x$, where $\bar x$ is the coordinatewise complement of $x$.
+Then $d_n \le \lambda_{n+2}$.
 
 ## Depends on
 

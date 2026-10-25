@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_add_three_mul_marriageable_le
 ---
 
-# Card add three mul marriageable le
+# Recursive lower bound for marriageable singles partitions
 
-`C_n + 3M_n ≤ M_{n+2}` for every `n ≥ 0`, with `C_n` the number of noncrossing partitions of
-`[n]`.
+**Recursive lower bound for marriageable singles partitions.** For every $n \ge 0$,
+$C_n + 3M_n \le M_{n+2}$, where $C_n$ is the number of noncrossing partitions of
+$\{0, \dots, n-1\}$ and $M_n$ is the number of those that are marriageable singles partitions.
 
 ## Depends on
 
-- [Marriageable Singles Count](marriageable-singles-count.md)
+- [Number of marriageable singles partitions](marriageable-singles-count.md)
 - [Noncrossing partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
 - [Crossing in a set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
 - [Noncrossing set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)

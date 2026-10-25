@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseCount_eq
 ---
 
-# Corollary 3
+# Counting Schreier sparse sets by partition numbers
 
-**Corollary 3**: `|F_n| = p(n-1)` for `n ≥ 1`.
+**Counting Schreier sparse sets by partition numbers.** For every integer $n \ge 1$, the
+number of Schreier sparse sets $F \subseteq \{1, \dots, n\}$ with $n \in F$ equals $p(n - 1)$,
+the number of partitions of $n - 1$.
 
 ## Depends on
 
-- [Partition Count](partition-count.md)
-- [Schreier Sparse Count](schreier-sparse-count.md)
+- [The partition number $p(u)$](partition-count.md)
+- [Number of Schreier sparse sets with maximum $n$](schreier-sparse-count.md)
 
 ## Sources
 

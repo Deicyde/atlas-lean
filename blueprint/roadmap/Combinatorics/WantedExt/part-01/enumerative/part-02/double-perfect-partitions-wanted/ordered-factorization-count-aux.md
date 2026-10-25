@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.orderedFactorizationCountAux
 ---
 
-# Ordered Factorization Count Aux
+# Truncated recursion for ordered factorizations
 
-Fuel-bounded form of `orderedFactorizationCount`: with fuel `k + 1` the value at `1` is `1`
-and the value at `n ≠ 1` is the sum of the values at the proper divisors of `n`.
+**Truncated recursion for ordered factorizations.** For natural numbers $k$ and $n$, define
+$f_k(n)$ by recursion on $k$: $f_0(n) = 0$, $f_{k+1}(1) = 1$, and for $n \ne 1$, $f_{k+1}(n)$ is
+the sum of $f_k(d)$ over the proper divisors $d$ of $n$, that is, the divisors $d$ of $n$ with
+$1 \le d < n$ (there are none when $n = 0$).
 
 ## Depends on
 

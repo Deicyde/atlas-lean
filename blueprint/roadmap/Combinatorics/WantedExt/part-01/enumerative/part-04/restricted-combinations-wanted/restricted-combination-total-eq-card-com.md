@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.restrictedCombinationTotal_eq_card_compositions_iff_metatiles
 ---
 
-# Restricted Combination Total eq card compositions iff metatiles
+# Restricted combinations counted by compositions
 
-Lemma 15: let `q > 0` be the largest element of `Q`. Then `S^Q_n` is, for all `n`, the
-number of compositions of `n + q` into parts drawn from a finite set of distinct parts iff every
-metatile of a restricted-overlap tiling with squares and `Q`-combs contains at most two combs;
-in that case the parts are `1`, `q + 1` and `q + 1 + p` for each empty cell `p ∈ {1, …, q} \ Q`
-of the `Q`-comb. Parts are positive (Mathlib `Composition`), so the finite part set is a
-`Finset ℕ`.
+**Restricted combinations counted by compositions.** Let $Q$ be a finite set of natural
+numbers whose largest element $q$ is positive, and let $S^Q_n$ be the number of subsets of
+$\{1, \dots, n\}$ in which no two elements differ by an element of $Q$. Then the following are
+equivalent: (i) there is a finite set $A$ of natural numbers such that, for every $n \ge 0$,
+$S^Q_n$ is the number of compositions of $n + q$ with all parts in $A$; (ii) every metatile of
+every restricted-overlap tiling with squares and $Q$-combs contains at most two combs.
+Moreover, if (ii) holds, then for every $n \ge 0$, $S^Q_n$ is the number of compositions of
+$n + q$ in which every part is $1$, $q + 1$, or $q + 1 + p$ for some
+$p \in \{1, \dots, q\} \setminus Q$.
 
 ## Depends on
 
-- [Metatiles Have At Most Two Combs](metatiles-have-at-most-two-combs.md)
-- [Restricted Combination Total](restricted-combination-total.md)
+- [Metatiles with at most two combs](metatiles-have-at-most-two-combs.md)
+- [Number of subsets avoiding a set of differences](restricted-combination-total.md)
 
 ## Sources
 

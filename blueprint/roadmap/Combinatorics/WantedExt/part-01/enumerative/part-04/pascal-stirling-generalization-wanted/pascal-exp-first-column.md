@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.pascalExpFirstColumn
 ---
 
-# Pascal Exp First Column
+# First-column sequence for exponentials of Pascal diagonal matrices
 
-The paper's sequence `α^{(k)} = (α^{(k)}_i)_{i ≥ 1}` (1-based, value `0` at index `0`):
-`α^{(k)}_1 = 1`, `α^{(k)}_i = 0` for `2 ≤ i ≤ k`, and
-`α^{(k)}_i = C(i-2, k-1) α^{(k)}_{i-k}` for `i > k`.
+**First-column sequence for exponentials of Pascal diagonal matrices.** For $k \ge 0$, the
+sequence of natural numbers $\alpha^{(k)} = (\alpha^{(k)}_i)_{i \ge 0}$ is defined by
+$\alpha^{(k)}_0 = 0$, $\alpha^{(k)}_1 = 1$ and, for $i \ge 2$,
+$\alpha^{(k)}_i = \binom{i-2}{k-1} \alpha^{(k)}_{i-k}$ if $1 \le k < i$ and $\alpha^{(k)}_i = 0$
+otherwise. Thus $\alpha^{(k)}_i = 0$ for $2 \le i \le k$, and $\alpha^{(0)}_i = 0$ for all
+$i \ne 1$.
 
 ## Depends on
 

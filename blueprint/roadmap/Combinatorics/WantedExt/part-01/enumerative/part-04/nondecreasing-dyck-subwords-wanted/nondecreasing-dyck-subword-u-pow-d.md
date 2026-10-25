@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.nondecreasingDyck_subword_U_pow_D
 ---
 
-# Nondecreasing Dyck subword U pow D
+# Recurrence for the subword $U^mD$ in non-decreasing Dyck paths
 
-Subword `U^m D` (`m ≥ 1`) in non-decreasing Dyck paths: for `n ≥ m + 2`,
-`d_{U^mD}(n) = 3 d_{U^mD}(n-1) - d_{U^mD}(n-2) + F_{2(n-m)-3} + m F_{2(n-m-1)}`;
-`d_{U^mD}(n) = 0` for `n < m`; `d_{U^mD}(m) = 1`; and `d_{U^mD}(m+1) = m + 2`.
-The source states the recurrence for `n ≥ m`, where `n = m` and `n = m + 1` give
-negative Fibonacci indices; those two values are the separately stated initial
-values, and the recurrence is stated for `n ≥ m + 2`.
+**Recurrence for the subword $U^mD$ in non-decreasing Dyck paths.** Let $m \ge 1$. Let
+$d_w(n)$ be the total number of occurrences of the subword $w$ over all non-decreasing Dyck paths
+of semilength $n$, and let $F_k$ be the Fibonacci numbers ($F_0 = 0$, $F_1 = 1$). Then for every
+$n \ge m + 2$,
+
+$$d_{U^mD}(n) = 3\,d_{U^mD}(n-1) - d_{U^mD}(n-2) + F_{2(n-m)-3} + m\,F_{2(n-m-1)};$$
+
+moreover $d_{U^mD}(n) = 0$ for every $n < m$, $d_{U^mD}(m) = 1$, and $d_{U^mD}(m+1) = m + 2$.
+
+The source states the recurrence for $n \ge m$, where $n = m$ and $n = m + 1$ give negative
+Fibonacci indices; those two values are the separately stated initial values, and the recurrence
+is stated for $n \ge m + 2$.
 
 ## Depends on
 
-- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
+- [Total occurrences of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-total.md)
 
 ## Sources
 

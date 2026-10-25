@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.regularTripartitionCount_two_odd_prime_even
 ---
 
-# Regular Tripartition Count two odd prime even
+# Even 2-regular tripartition counts for odd primes
 
-For an odd prime `p`, `α, n ≥ 0` and `1 ≤ i ≤ p - 1`,
-`T_2(9 p^{2α+1} (p n + i) + (9 p^{2α+2} - 1)/8) ≡ 0 (mod 2)` (the division is exact).
+**Even 2-regular tripartition counts for odd primes.** Let $T_2(n)$ be the number of 2-regular
+tripartitions of $n$. For every odd prime $p$, all natural numbers $\alpha$ and $n$, and every $i$
+with $1 \le i \le p - 1$, the number
+$T_2\bigl(9 p^{2\alpha+1} (p n + i) + (9 p^{2\alpha+2} - 1)/8\bigr)$ is even (the division is
+exact).
 
 ## Depends on
 
-- [Regular Tripartition Count](regular-tripartition-count.md)
+- [Regular tripartition counts](regular-tripartition-count.md)
 
 ## Sources
 

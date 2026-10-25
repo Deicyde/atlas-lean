@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.qPochhammer_prime_dissection
 ---
 
-# Q Pochhammer prime dissection
+# Cui–Gu $p$-dissection of $f_1$
 
-Cui and Gu's `p`-dissection of `f_1 = (q; q)_∞` for a prime `p ≥ 5`: with
-`s = (±p - 1)/6`, i.e. `s = (p - 1)/6` if `p ≡ 1 (mod 6)` and `s = (-p - 1)/6` if
-`p ≡ -1 (mod 6)`,
-`f_1 = ∑_{k = (1-p)/2, k ≠ s}^{(p-1)/2} (-1)^k q^{k(3k+1)/2}
-f(-q^{(3p²+(6k+1)p)/2}, -q^{(3p²-(6k+1)p)/2}) + (-1)^s q^{(p²-1)/24} f_{p²}`,
-for complex `q` with `‖q‖ < 1`. Ramanujan's `f(a, b)` is `ramanujanThetaRaw a b`, and
-`f_k = (q^k; q^k)_∞` is `qPochhammerInfRaw (q ^ k) (q ^ k)`. The exponents `k(3k+1)/2` and
-`(3p² ± (6k+1)p)/2` are nonnegative integers, passed to `ℕ` powers with `Int.toNat`. All
-divisions are exact.
+**Cui–Gu $p$-dissection of $f_1$.** Let $p \ge 5$ be a prime, let $s = (p - 1)/6$ if
+$p \equiv 1 \pmod 6$ and $s = (-p - 1)/6$ otherwise, and let $q$ be a complex number with
+$|q| < 1$. Write $f_k = (q^k; q^k)_\infty = \prod_{m \ge 1} (1 - q^{km})$, let
+$f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta function, and
+let $K$ be the set of integers $k$ with $(1 - p)/2 \le k \le (p - 1)/2$ and $k \ne s$. Then
+
+$$
+f_1 = \sum_{k \in K} (-1)^k q^{k(3k+1)/2}
+f\bigl(-q^{(3p^2 + (6k+1)p)/2}, -q^{(3p^2 - (6k+1)p)/2}\bigr) +
+(-1)^s q^{(p^2-1)/24} f_{p^2}.
+$$
+
+All the divisions are exact and all the exponents of $q$ are nonnegative integers.
 
 ## Depends on
 

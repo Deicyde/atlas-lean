@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.motzkin_zero_density
 ---
 
-# Motzkin zero density
+# Zero density of Motzkin numbers modulo a prime
 
-Corollary 4: ordinary Motzkin zeros have density one when some T_r with r < p vanishes.
-Otherwise, for p > 2, their density is the displayed D₀ and D₀ ≥ 2/(p(p-1)). The paper's
-conjecture-conditional middle clause is omitted; Theorem 3 above already states it with unit
-generation as an explicit hypothesis. Source: Nadav Kohen, *Density and Symmetry in the Generalized
-Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Corollary 4.
+**Zero density of Motzkin numbers modulo a prime.** Let $p$ be a prime, and write
+$M_n = M^{(1,1)}_n$ for the Motzkin numbers and $T_r = T^{(1,1)}_r$ for the central trinomial
+coefficients. If $T_r \equiv 0 \pmod p$ for some $r < p$, then the set of $n \in \mathbb{N}$ with
+$M_n \equiv 0 \pmod p$ has natural density $1$. If instead $T_r \not\equiv 0 \pmod p$ for every
+$r < p$ and $p > 2$, let $A$ be the number of $r < p - 2$ with $M_r \equiv 0 \pmod p$, let $B$ be
+the number of $m < p - 1$ with $T_m \equiv T_{p-1} T_{m+1} \pmod p$, and let $C$ be the number of
+$m < p - 1$ with $T_m \equiv T_{m+1} \pmod p$; then this set has natural density
+
+$$D_0 = \frac{A}{p} + \frac{2B}{(p-1)(p+1)} + \frac{2C}{(p-1)p(p+1)},$$
+
+and $D_0 \ge \frac{2}{p(p-1)}$.
 
 ## Depends on
 
-- [Central Trinomial](central-trinomial.md)
-- [Generalized Motzkin](generalized-motzkin.md)
+- [Generalized central trinomial coefficients](central-trinomial.md)
+- [Generalized Motzkin numbers](generalized-motzkin.md)
 - [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Corollary 4. The paper's conjecture-conditional middle clause is omitted.

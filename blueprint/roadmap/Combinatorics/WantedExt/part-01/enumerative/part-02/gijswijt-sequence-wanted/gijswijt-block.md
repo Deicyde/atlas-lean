@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtBlock
 ---
 
-# Gijswijt Block
+# Gijswijt blocks
 
-The block `B_t^{(m)}`, the prefix of `A^{(m)}` of length `β^{(m)}(t)`.
+**Gijswijt blocks.** For natural numbers $m$ and $t$, the block $B_t^{(m)}$ is the prefix of
+length $\beta^{(m)}(t)$ of the $m$th order Gijswijt sequence $A^{(m)}$, where $\beta^{(m)}(t)$ is
+the $t$th block length.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gijswijt Block Length](gijswijt-block-length.md)
-- [Gijswijt Prefix](gijswijt-prefix.md)
+- [Block lengths of the higher-order Gijswijt sequences](gijswijt-block-length.md)
+- [Prefixes of the $m$th order Gijswijt sequence](gijswijt-prefix.md)
 
 ## Sources
 

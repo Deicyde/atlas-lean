@@ -5,15 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_two_mul_inv_gammaBinom
 ---
 
-# Sum choose two mul inv gamma Binom
+# Even-index binomial sum with inverse generalized binomial coefficients
 
-Equation (16), the `n = 0` case of (14):
-`∑_{k ≤ n/2} binom(n,2k) 2^{-2k} binom(2k,k) binom((2k+v)/2, k)^{-1}
-= 2^{-n} binom(2n+v, (2n+v)/2) binom(n+v, v/2)^{-1}` for real `v > -1`.
+**Even-index binomial sum with inverse generalized binomial coefficients.**
+Write $\binom{u}{w} = \Gamma(u+1)/(\Gamma(w+1)\Gamma(u-w+1))$ for the generalized binomial
+coefficient of complex $u$, $w$, which for natural $u$, $w$ is the ordinary binomial coefficient.
+For every natural number $n$ and every real $v > -1$,
+
+$$
+\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{1}{2^{2k}} \binom{2k}{k}
+\binom{(2k+v)/2}{k}^{-1}
+= \frac{1}{2^n} \binom{2n+v}{(2n+v)/2} \binom{n+v}{v/2}^{-1}.
+$$
+
+This is equation (16) of the source, the case $n = 0$ of its two-parameter identity (14), whose
+parameter $m$ is called $n$ here.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

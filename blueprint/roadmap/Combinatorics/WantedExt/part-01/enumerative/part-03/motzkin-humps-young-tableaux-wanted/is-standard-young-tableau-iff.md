@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.isStandardYoungTableau_iff
 ---
 
-# Is Standard Young Tableau iff
+# Unfolding the standard Young tableau condition
 
-The defining clauses of the finite SYT encoding are injectivity and downward
-closure witnessed within each initial segment.
+**Unfolding the standard Young tableau condition.** Let $T$ assign to each entry
+$i \in \{0, \dots, n-1\}$ a cell $T(i) = (r_i, c_i)$ with row and column indices in
+$\{0, \dots, n-1\}$. Then $T$ is a standard Young tableau of order $n$ if and only if $T$ is
+injective and, for every entry $i$ and every cell $(r, c)$ with $r \le r_i$ and $c \le c_i$,
+there is an entry $j \le i$ with $T(j) = (r, c)$.
 
 ## Depends on
 
-- [Is Standard Young Tableau](is-standard-young-tableau.md)
+- [Standard Young tableau](is-standard-young-tableau.md)
 
 ## Sources
 

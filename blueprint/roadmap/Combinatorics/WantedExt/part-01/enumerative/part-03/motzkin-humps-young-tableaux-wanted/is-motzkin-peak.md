@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsMotzkinPeak
 ---
 
-# Is Motzkin Peak
+# Motzkin peak
 
-A hump is a peak exactly when its down step immediately follows its up step.
+**Motzkin peak.** Let $p$ be a word of length $n$ in the steps $D$, $F$, $U$, let
+$k \in \mathbb{N}$, and let $i, j \in \{0, \dots, n-1\}$. The pair $(i, j)$ is a peak of height
+$k$ in $p$ when it is a hump of height $k$ in $p$ and $j = i + 1$, that is, when the down step
+$p_j$ immediately follows the up step $p_i$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Motzkin Hump](is-motzkin-hump.md)
+- [Motzkin hump](is-motzkin-hump.md)
 
 ## Sources
 

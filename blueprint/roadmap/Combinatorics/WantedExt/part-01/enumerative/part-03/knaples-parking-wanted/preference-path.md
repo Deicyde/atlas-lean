@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.preferencePath
 ---
 
-# Preference Path
+# Lattice path of a parking preference
 
-The lattice path of a parking preference `α ∈ [n]^n`: for each spot `s = 1, …, n` in turn,
-one Up step for every car preferring `s`, then one Down step. For an ascending preference
-this is the path whose `i`-th Up step follows `a_i - 1` Down steps.
+**Lattice path of a parking preference.** Let $\alpha = (a_1, \dots, a_n)$ be a sequence of
+natural numbers. Its lattice path is the sequence of $2n$ steps, each an Up step $(1, 1)$ or a
+Down step $(1, -1)$, obtained by taking, for each spot $s = 1, \dots, n$ in turn, one Up step
+for every index $i$ with $a_i = s$ followed by one Down step, and then appending Down steps
+until there are $2n$ steps. When every $a_i$ lies in $\{1, \dots, n\}$ this gives exactly $2n$
+steps and nothing is appended; if moreover $\alpha$ is weakly increasing, the $i$-th Up step is
+preceded by exactly $a_i - 1$ Down steps.
 
 ## Depends on
 

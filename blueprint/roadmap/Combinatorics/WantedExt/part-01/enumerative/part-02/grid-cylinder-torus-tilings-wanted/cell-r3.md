@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.cellR3
 ---
 
-# Cell R3
+# Cell map of the three-quarter turn r³
 
-The cell map for the paper's right action of `r³` on an `n × n` grid:
-`(x,y) ↦ (y,n-1-x)`, using `-1-x` for modular subtraction.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Cell map of the three-quarter turn r³.** For a natural number $n$, the three-quarter turn
+$r^3$ acts on the cells $(x, y) \in \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ of the
+$n \times n$ grid by $(x, y) \mapsto (y, -1 - x)$, that is, $(x, y) \mapsto (y, n - 1 - x)$
+modulo $n$.
 
 ## Depends on
 

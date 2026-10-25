@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.positionalColoredCompositionCount_zero
 ---
 
-# Positional Colored Composition Count zero
+# Colored compositions of zero
 
-Characteristic value `c_{m,k}(0) = 1` (the empty composition).
+**Colored compositions of zero.** For all natural numbers $m$ and $k$, $c_{m,k}(0) = 1$: the
+only composition of $0$ is the empty one.
 
 ## Depends on
 
-- [Positional Colored Composition Count](positional-colored-composition-count.md)
+- [Positional colored compositions](positional-colored-composition-count.md)
 
 ## Sources
 

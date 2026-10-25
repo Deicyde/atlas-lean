@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.fineNumber_eq_sabarNumber_sub
 ---
 
-# Fine Number eq sabar Number sub
+# Fine numbers from Sabar's triangle
 
-Theorem 4: for `n ≥ 2`, `f_n = s(2n, n+1) - s(2n, n-1)`.
+**Fine numbers from Sabar's triangle.** For every natural number $n \ge 2$, the Fine number
+$F(n)$ is the difference of two entries of row $2n$ of Sabar's triangle $s$:
+$F(n) = s(2n, n+1) - s(2n, n-1)$.
 
 ## Depends on
 
 - [Fine numbers](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
-- [Sabar Number](sabar-number.md)
+- [Sabar's triangle](sabar-number.md)
 
 ## Sources
 

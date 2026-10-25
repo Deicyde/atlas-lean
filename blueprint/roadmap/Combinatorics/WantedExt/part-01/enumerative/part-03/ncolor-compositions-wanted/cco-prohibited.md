@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.ccoProhibited
 ---
 
-# Cco Prohibited
+# Number of n-color compositions with two prohibited consecutive colors
 
-The paper's count `cco_{\widehat{b,b+1}}(n)`.
+**Number of n-color compositions with two prohibited consecutive colors.** For natural numbers
+$b$ and $n$, $\mathrm{cco}_{\widehat{b,b+1}}(n)$ is the number of elements of
+$\mathrm{CCo}_{\widehat{b,b+1}}(n)$, that is, the number of $n$-color compositions of $n$ in which
+no part has color $b$ or $b+1$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Color Comp Prohibited](color-comp-prohibited.md)
+- [n-color compositions with two prohibited consecutive colors](color-comp-prohibited.md)
 
 ## Sources
 

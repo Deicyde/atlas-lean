@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isDoublePerfect_one_iff
 ---
 
-# Is Double Perfect one iff
+# Double-perfect partitions from perfect partitions
 
-Every double-perfect partition of `N > 3` arises from a perfect partition `β` of `N - 2`,
-either by inserting `1^2` when `1` has multiplicity `1` in `β` (the set `E(1^2)`), or by inserting
-`2` when `2` is not a part of `β` (the set `W(2)`), and every such insertion is double-perfect:
-`D(N) = E(1^2) ∪ W(2)`.
+**Double-perfect partitions from perfect partitions.** Let $N > 3$. A multiset $\lambda$ of
+natural numbers is a double-perfect partition of $N$ of order $1$ if and only if there is a
+perfect partition $\beta$ of $N - 2$ such that either $1$ occurs exactly once in $\beta$ and
+$\lambda$ is $\beta$ with two more parts equal to $1$, or $2$ is not a part of $\beta$ and
+$\lambda$ is $\beta$ with one more part equal to $2$.
 
 ## Depends on
 
-- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
-- [Is Perfect Partition](is-perfect-partition.md)
+- [Double-perfect partitions of higher order](is-double-perfect-of-order.md)
+- [Perfect partition](is-perfect-partition.md)
 
 ## Sources
 

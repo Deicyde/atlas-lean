@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Ascent Seq](../../part-04/rascal-numbers-wanted/is-ascent-seq.md)
+- [Ascent sequences](../../part-04/rascal-numbers-wanted/is-ascent-seq.md)
 - [Pattern containment](contains-pattern.md)
 
 ## Sources

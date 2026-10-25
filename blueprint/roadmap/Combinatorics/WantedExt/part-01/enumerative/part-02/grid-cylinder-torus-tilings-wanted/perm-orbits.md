@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.permOrbits
 ---
 
-# Perm Orbits
+# Orbits of a permutation
 
-The duplicate-free finite set of all cyclic orbits of `φ`, obtained by mapping every cell to
-its orbit and using `Finset.image` to identify repetitions.  Singleton fixed-point orbits remain
-present, which is required by Theorem 20.
+**Orbits of a permutation.** Let $\alpha$ be a finite set and $\varphi$ a permutation of
+$\alpha$. For $c \in \alpha$ let $O(c) = \{\varphi^k(c) : k \in \mathbb{N}\}$ be the orbit of $c$
+under $\varphi$. The set of orbits of $\varphi$ is the set $\{O(c) : c \in \alpha\}$ of subsets of
+$\alpha$, in which each orbit occurs once.
 
-Formalization deviation: none beyond the representation choices stated above.
+Fixed points of $\varphi$ contribute singleton orbits, which the paper's Theorem 20 needs.
 
 ## Depends on
 
@@ -19,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Perm Orbit](perm-orbit.md)
+- [Orbit of a cell under a permutation](perm-orbit.md)
 
 ## Sources
 

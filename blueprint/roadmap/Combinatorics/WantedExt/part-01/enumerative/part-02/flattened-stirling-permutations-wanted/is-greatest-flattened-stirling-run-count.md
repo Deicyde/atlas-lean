@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isGreatest_flattenedStirling_runCount
 ---
 
-# Is Greatest flattened Stirling run Count
+# Maximum number of runs of a flattened Stirling permutation
 
-The maximum number of runs of a flattened Stirling permutation of order
-`n ≥ 1` is `⌈2n/3⌉`.
+**Maximum number of runs of a flattened Stirling permutation.** For every natural number
+$n \ge 1$, some flattened Stirling permutation of order $n$ has exactly
+$\lceil 2n/3 \rceil$ runs, and no flattened Stirling permutation of order $n$ has more.
 
 ## Depends on
 
-- [Is Flattened Word](is-flattened-word.md)
+- [Flattened words](is-flattened-word.md)
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Word Run Count](word-run-count.md)
+- [Number of runs of a word](word-run-count.md)
 
 ## Sources
 

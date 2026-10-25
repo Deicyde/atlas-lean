@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.isDoublePerfectOfOrder_add_largest
 ---
 
-# Is Double Perfect Of Order add largest
+# Adding a copy of the largest part to a double-perfect partition
 
-If `λ ∈ U_r(n)` has largest part `ℓ ≠ r + 1`, then `λ ∪ (ℓ) ∈ U_r(n + ℓ)`; and the condition
-is needed: `(1^2, 3^4, 6) ∈ D_5(20)` but `(1^2, 3^4, 6^2) ∉ U_5(26)`. Added hypothesis
-`n ≥ 2(r+1)` (the range of display (12)): for `r = 1`, `n = 3`, `λ = (1^3)`, `(1^4)` is not
-double-perfect. The remark on when exceptions with `ℓ = r + 1` occur and the `E_3` examples are
-omitted.
+**Adding a copy of the largest part to a double-perfect partition.** Let $r \ge 1$,
+$n \ge 2(r+1)$, and let $\lambda$ be a double-perfect partition of $n$ of order $r$ whose largest
+part $\ell$ is not $r + 1$. Then $\lambda$ with one more part $\ell$ is a double-perfect partition
+of $n + \ell$ of order $r$. The condition $\ell \ne r + 1$ cannot be dropped: $(1^2, 3^4, 6)$ is
+a Type-A double-perfect partition of $20$ of order $5$, but $(1^2, 3^4, 6^2)$ is not a
+double-perfect partition of $26$ of order $5$.
+
+The hypothesis $n \ge 2(r+1)$ is needed: for $r = 1$, $(1^3)$ is a double-perfect partition of
+$3$ of order $1$, but $(1^4)$ is not a double-perfect partition of $4$ of order $1$.
 
 ## Depends on
 
-- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
-- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
+- [Double-perfect partitions of higher order](is-double-perfect-of-order.md)
+- [Type-A double-perfect partition](is-type-adouble-perfect.md)
 
 ## Sources
 

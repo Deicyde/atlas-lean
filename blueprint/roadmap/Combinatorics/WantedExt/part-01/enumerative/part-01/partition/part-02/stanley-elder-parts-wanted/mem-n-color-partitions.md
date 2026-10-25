@@ -6,21 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.mem_nColorPartitions
 ---
 
-# Mem n Color Partitions
+# Characterization of $n$-color partitions
 
-Membership in `nColorPartitions m`: every colored part `(k, j)` has `1 ≤ j ≤ k`, and the
-sizes `k` sum to `m`.
+**Characterization of $n$-color partitions.** For every natural number $m$, a multiset $s$ of
+pairs of natural numbers is an $n$-color partition of $m$ if and only if every element $(k, j)$ of
+$s$ satisfies $1 \le j \le k$ and the sizes $k$ of the elements of $s$, counted with
+multiplicity, sum to $m$.
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Proof depends on
 
-- [Mem multisets With Size Sum](mem-multisets-with-size-sum.md)
-- [Mem n Color Parts Up To](mem-n-color-parts-up-to.md)
-- [Multisets With Size Sum](multisets-with-size-sum.md)
-- [N Color Parts Up To](n-color-parts-up-to.md)
+- [Membership in the multisets with a given size sum](mem-multisets-with-size-sum.md)
+- [Membership in the colored parts of bounded size](mem-n-color-parts-up-to.md)
+- [Multisets of parts with a given size sum](multisets-with-size-sum.md)
+- [The list of colored parts of size at most $m$](n-color-parts-up-to.md)
 
 ## Sources
 

@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.regularOverpartition_mod_four_prime_family
 ---
 
-# Regular Overpartition mod four prime family
+# $\ell$-regular overpartitions vanish modulo $4$ along families of primes
 
-Let `ℓ ≡ 3 (mod 4)`; for `k + 1` (not necessarily distinct) primes, all
-greater than two and congruent to three modulo four, and natural `j` not
-congruent to zero modulo the last prime, the displayed unshifted argument of
-`A_ℓ` is zero modulo four. The product over `Fin k` is
-`p₁²⋯p_k²`, and `ps (Fin.last k)` is `p_{k+1}`. The paper takes `j`
-to be an integer; this formalization uses `j : ℕ`, as required by the
-reading, and deliberately does not use the false shifted interpretation.
+**$\ell$-regular overpartitions vanish modulo $4$ along families of primes.** For a natural
+number $\ell$, let $A_\ell(m)$ be the number of overpartitions of $m$ with no part divisible by
+$\ell$. Let $\ell \equiv 3 \pmod 4$, let $k$, $n$ and $j$ be natural numbers, and let
+$p_1, \dots, p_{k+1}$ be primes, not necessarily distinct, each greater than $2$ and congruent
+to $3$ modulo $4$. If $j \not\equiv 0 \pmod{p_{k+1}}$, then
+
+$$A_\ell\big(p_1^2 \cdots p_k^2 \, p_{k+1} \, (p_{k+1}(4n + 1) + 4j)\big) \equiv 0 \pmod 4.$$
+
+The paper takes $j$ to be an integer; here $j$ is a natural number.
 
 ## Depends on
 
-- [Regular Overpartition Count](regular-overpartition-count.md)
+- [Number of $\ell$-regular overpartitions](regular-overpartition-count.md)
 
 ## Sources
 

@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.permWordleSolvedIn_one_iff
 ---
 
-# Perm Wordle Solved In one iff
+# Games won with the first guess
 
-Only the identity is guessed in one guess.
+**Games won with the first guess.** Let $S$ be a strategy, that is, a permutation $S_m$ of
+$\{0, \dots, m-1\}$ for every $m$, and let $\pi$ be a permutation of $\{0, \dots, n-1\}$. Then
+permutation Wordle with strategy $S$ and secret $\pi$ ends after exactly one guess if and only if
+$\pi$ is the identity.
 
 ## Depends on
 
-- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [Permutation Wordle games solved in a given number of guesses](perm-wordle-solved-in.md)
 
 ## Proof depends on
 
-- [Perm Wordle Guess](perm-wordle-guess.md)
+- [Guesses of permutation Wordle](perm-wordle-guess.md)
 
 ## Sources
 

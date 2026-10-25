@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sigmaMexOverpartition_generating_function
 ---
 
-# Sigma Mex Overpartition generating function
+# Generating function of the overpartition r-mex sums
 
-For positive `r` and complex `q` with `‖q‖ < 1`, the generating series
-of `σ_r mex̄(n)` equals
-`(-q;q)_∞ (q^(2r);q^(2r))_∞ / ((q;q)_∞ (q^r;q^(2r))_∞)`.
-Each infinite product is represented by `qPochhammerInfRaw`, and the left
-side by a complex `tsum`; these are the requested analytic encodings.
+**Generating function of the overpartition r-mex sums.** Let $r$ be a positive integer and $q$
+a complex number with $|q| < 1$. Write $(a;q)_\infty = \prod_{j \ge 0} (1 - a q^j)$, and let
+$\sigma_r\overline{\mathrm{mex}}(n)$ be the sum over all overpartitions $\pi$ of $n$ of
+$\overline{\mathrm{mex}}_r(\pi)$, the least positive integer occurring fewer than $r$ times among
+the non-overlined parts of $\pi$. Then
+
+$$
+\sum_{n \ge 0} \sigma_r\overline{\mathrm{mex}}(n)\, q^n =
+\frac{(-q;q)_\infty\,(q^{2r};q^{2r})_\infty}{(q;q)_\infty\,(q^r;q^{2r})_\infty}.
+$$
 
 ## Depends on
 
 - [Raw infinite q-Pochhammer product](../../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
-- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
+- [Sums of minimal excludants over overpartitions](sigma-mex-overpartition.md)
 
 ## Sources
 

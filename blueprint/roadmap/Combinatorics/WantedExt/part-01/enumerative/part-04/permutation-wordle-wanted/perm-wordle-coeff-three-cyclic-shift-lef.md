@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.permWordleCoeff_three_cyclicShiftLeft_lt
 ---
 
-# Theorem 14
+# Cyclic shift left minimizes three-guess solves among inductive strategies
 
-**Theorem 14.** For `n ≥ 4`, `CSL` guesses strictly fewer permutations in exactly three
-guesses than any other inductive strategy.
+**Cyclic shift left minimizes three-guess solves among inductive strategies.** Let $n \ge 4$
+and let $S$ be an inductive strategy of length $n$ whose component $S[n]$ is not the left cyclic
+shift $i \mapsto i - 1 \pmod n$. Then strictly fewer permutations of $\{0, \dots, n-1\}$ are
+guessed in exactly three guesses with the cyclic shift left strategy $\mathrm{CSL}_n$ than with
+$S$.
 
 ## Depends on
 
-- [Is Inductive Perm Wordle Strategy](is-inductive-perm-wordle-strategy.md)
-- [Cyclic Shift Left Strategy](cyclic-shift-left-strategy.md)
-- [Perm Wordle Coeff](perm-wordle-coeff.md)
+- [Inductive strategy](is-inductive-perm-wordle-strategy.md)
+- [Cyclic shift left strategy](cyclic-shift-left-strategy.md)
+- [Coefficients of the guess-count generating function](perm-wordle-coeff.md)
 
 ## Sources
 

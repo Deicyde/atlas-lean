@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.litNodesIncreasing_generatingFunction
 ---
 
-# Lit Nodes Increasing generating Function
+# Generating function for lit nodes of weakly increasing diagrams
 
-The total number of lit nodes over all weakly increasing partitions of `n` has generating
-function `1 + P(q) (∑_{i ≥ 1} 2q^i/(1 - q^i) - 1)`.
+**Generating function for lit nodes of weakly increasing diagrams.** Let
+$P(q) = \sum_{n \ge 0} p(n) q^n$ be the partition generating function, and let
+$N(q) \in \mathbb{Z}[[q]]$ be the power series whose coefficient of $q^n$ is the total number of
+lit nodes over all partitions of $n$ drawn as weakly increasing Ferrers diagrams of nodes. Then
+
+$$N(q) = 1 + P(q) \Bigl(\sum_{i \ge 1} \frac{2q^i}{1 - q^i} - 1\Bigr),$$
+
+where the sum converges coefficientwise.
 
 ## Depends on
 
-- [Lit Nodes Increasing](lit-nodes-increasing.md)
+- [Lit nodes of a partition](lit-nodes-increasing.md)
 
 ## Sources
 

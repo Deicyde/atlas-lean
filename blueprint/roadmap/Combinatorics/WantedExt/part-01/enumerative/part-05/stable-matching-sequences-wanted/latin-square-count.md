@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.latinSquareCount
 ---
 
-# Latin Square Count
+# Number of Latin squares
 
-The number `L_n` of Latin squares of order `n`: families of `n` rows, each
-a permutation of `Fin n`, whose columns are also injective.
+**Number of Latin squares.** For $n \in \mathbb{N}$, $L_n$ is the number of Latin squares of
+order $n$: families $(M_0, \dots, M_{n-1})$ of permutations of $\{0, \dots, n-1\}$ (the rows)
+such that for every position $r$ the entries $M_0(r), \dots, M_{n-1}(r)$ (column $r$) are
+pairwise distinct.
 
 ## Depends on
 

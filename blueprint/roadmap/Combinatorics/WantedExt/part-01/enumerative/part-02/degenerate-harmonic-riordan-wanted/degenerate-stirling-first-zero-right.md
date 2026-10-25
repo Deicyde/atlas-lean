@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.degenerateStirlingFirst_zero_right
 ---
 
-# Degenerate Stirling First zero right
+# Degenerate Stirling numbers of the first kind in column zero
 
-`S_{1,λ}(n, 0) = [n = 0]`.
+**Degenerate Stirling numbers of the first kind in column zero.** For every real number
+$\lambda$ and every natural number $n$, the degenerate Stirling number of the first kind
+$S_{1,\lambda}(n, 0)$ equals $1$ if $n = 0$ and $0$ otherwise.
 
 ## Depends on
 
-- [Degenerate Stirling First](degenerate-stirling-first.md)
+- [Degenerate Stirling numbers of the first kind](degenerate-stirling-first.md)
 
 ## Sources
 

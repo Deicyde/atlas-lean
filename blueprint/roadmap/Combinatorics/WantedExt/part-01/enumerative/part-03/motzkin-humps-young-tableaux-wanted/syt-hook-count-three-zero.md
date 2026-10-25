@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.sytHookCount_three_zero
 ---
 
-# Syt Hook Count three zero
+# Hook tableaux of order 3 with row difference 0
 
-The table value `SYT_0(2,1;3) = 1` for the faithful finite-cell encoding.
+**Hook tableaux of order 3 with row difference 0.** The number $\mathrm{SYT}_0(2,1;3)$ of
+standard Young tableaux of order $3$ in the $(2,1)$-hook whose first two rows have the same
+length equals $1$.
 
 ## Depends on
 
-- [Syt Hook Count](syt-hook-count.md)
+- [Standard Young tableaux in the $(2,1)$-hook with given row difference](syt-hook-count.md)
 
 ## Proof depends on
 
-- [Has First Two Row Difference](has-first-two-row-difference.md)
-- [Is In Two One Hook](is-in-two-one-hook.md)
-- [Is Standard Young Tableau](is-standard-young-tableau.md)
-- [Tableau Row Length](tableau-row-length.md)
+- [First-two-row difference of a tableau](has-first-two-row-difference.md)
+- [Tableaux in the $(2,1)$-hook](is-in-two-one-hook.md)
+- [Standard Young tableau](is-standard-young-tableau.md)
+- [Row length of a tableau](tableau-row-length.md)
 
 ## Sources
 

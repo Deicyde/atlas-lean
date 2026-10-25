@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.invSeq_wilfClassCount
 ---
 
-# Theorem 1
+# Number of I-Wilf classes of sets of length-3 patterns
 
-**Theorem 1.** Let `w_d` be the number of I-Wilf-equivalence classes of sets of `d` of the
-thirteen length-3 patterns `000, 001, 010, 011, 012, 021, 100, 101, 102, 110, 120, 201, 210`,
-i.e. the number of distinct counting sequences `n ↦ |I_n(B)|` over the `d`-element sets `B`. Then
-`w₅ = 219`, `w₆ = 167`, `w₇ = 105`, `w₈ = 61`, `w₉ = 35`, `w₁₀ = 21`, `w₁₁ = 10`, `w₁₂ = 4`, and
-`w₁₃ = 1`.
+**Number of I-Wilf classes of sets of length-3 patterns.** Let $P$ be the set of the thirteen
+length-3 patterns $000, 001, 010, 011, 012, 021, 100, 101, 102, 110, 120, 201, 210$, each written
+as the word of its values. For $B \subseteq P$ let $|I_n(B)|$ be the number of inversion sequences
+of length $n$ that avoid every pattern in $B$, and let $w_d$ be the number of distinct sequences
+$(|I_n(B)|)_{n \ge 0}$ as $B$ ranges over the $d$-element subsets of $P$ (the number of
+I-Wilf-equivalence classes of such sets). Then $w_5 = 219$, $w_6 = 167$, $w_7 = 105$, $w_8 = 61$,
+$w_9 = 35$, $w_{10} = 21$, $w_{11} = 10$, $w_{12} = 4$ and $w_{13} = 1$.
 
 ## Depends on
 
-- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
+- [Number of inversion sequences avoiding a set of patterns](inv-seq-avoid-count.md)
 
 ## Sources
 

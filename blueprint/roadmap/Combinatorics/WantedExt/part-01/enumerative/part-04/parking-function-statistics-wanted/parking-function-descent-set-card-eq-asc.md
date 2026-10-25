@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.parkingFunction_descentSet_card_eq_ascentSet_reflect
 ---
 
-# Parking Function descent Set card eq ascent Set reflect
+# Descent sets versus reflected ascent sets of parking functions
 
-`d(I;n) = a(J;n)` for `I ⊆ [n-1]` and `J = {n - i : i ∈ I}`, where `d` and `a` count
-parking functions with descent set, respectively ascent set, exactly the given set.
+**Descent sets versus reflected ascent sets of parking functions.** Write a parking function
+$f$ of length $n$ as the sequence $(a_1, \dots, a_n)$ with $a_j = f(j-1) + 1$. Its descent set is
+the set of $j \in \{1, \dots, n-1\}$ with $a_j > a_{j+1}$, and its ascent set the set of such $j$
+with $a_j < a_{j+1}$. For every $n$ and every $I \subseteq \{1, \dots, n-1\}$, let
+$J = \{n - i : i \in I\}$. Then the number of parking functions of length $n$ with descent set
+$I$ equals the number of parking functions of length $n$ with ascent set $J$.
 
 ## Depends on
 

@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.generalizedEulerianP_eq_sum_perm
 ---
 
-# Theorem 2
+# Permutation expansion of the generalized Eulerian polynomials
 
-**Theorem 2.** `P_n(q, t; x, y) = ∑_{w ∈ S_n} q^(cyc w) t^(fix w) x^(exc w) y^(exc w⁻¹)
-(x + y)^(fix w)`, for rational `q, t, x, y` with `x ≠ y`.
+**Permutation expansion of the generalized Eulerian polynomials.** Let $P_n(q, t; x, y)$ be
+the generalized Eulerian polynomial and let $S_n$ be the set of permutations of
+$\{0, 1, \dots, n-1\}$. For $w \in S_n$ write $\mathrm{cyc}(w)$ for the number of cycles of $w$
+(fixed points counted as cycles), $\mathrm{fix}(w)$ for the number of fixed points of $w$, and
+$\mathrm{exc}(w)$ for the number of excedances of $w$, the points $i$ with $w(i) > i$. Then for
+all rational numbers $q, t, x, y$ with $x \ne y$ and every $n \ge 0$,
+
+$$
+P_n(q, t; x, y) = \sum_{w \in S_n} q^{\mathrm{cyc}(w)} t^{\mathrm{fix}(w)} x^{\mathrm{exc}(w)}
+y^{\mathrm{exc}(w^{-1})} (x + y)^{\mathrm{fix}(w)}.
+$$
 
 ## Depends on
 
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
 - [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Generalized Eulerian P](generalized-eulerian-p.md)
+- [Generalized Eulerian polynomials](generalized-eulerian-p.md)
 
 ## Sources
 

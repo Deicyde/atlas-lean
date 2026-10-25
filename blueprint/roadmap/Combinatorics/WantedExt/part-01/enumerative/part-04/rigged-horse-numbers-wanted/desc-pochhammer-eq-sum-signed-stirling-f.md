@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.descPochhammer_eq_sum_signedStirlingFirst
 ---
 
-# Desc Pochhammer eq sum signed Stirling First
+# Falling factorial in terms of signed Stirling numbers
 
-The falling factorial `x (x - 1) ⋯ (x - n + 1)` expands in powers of `x` with the signed
-Stirling numbers of the first kind as coefficients, stated as an identity of integer
-polynomials.
+**Falling factorial in terms of signed Stirling numbers.** For every natural number $n$, the
+identity of polynomials with integer coefficients
+
+$$x (x - 1) \cdots (x - n + 1) = \sum_{k=0}^{n} s(n, k)\, x^k$$
+
+holds, where $s(n, k)$ is the signed Stirling number of the first kind.
 
 ## Depends on
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sortedPermutations_consecutiveCyclicStackSort_123
 ---
 
-# Sorted Permutations consecutive Cyclic Stack Sort 123
+# No permutation of length at least four is sorted by the consecutive cyclic $123$-stack
 
-For `n ≥ 4`, `|Sort_n(s^[123])| = 0`.
+**No permutation of length at least four is sorted by the consecutive cyclic $123$-stack.**
+Let $s^{[123]}$ be the consecutive-cyclic-pattern-avoiding stack-sorting map for $123$. For every
+$n \ge 4$, no permutation of $[n] = \{1, \dots, n\}$ is mapped by $s^{[123]}$ to the identity
+$12 \cdots n$; that is, the set $\mathrm{Sort}_n(s^{[123]})$ of permutations of $[n]$ that
+$s^{[123]}$ maps to the identity has $0$ elements.
 
 ## Depends on
 
-- [Consecutive Cyclic Stack Sort](consecutive-cyclic-stack-sort.md)
-- [Sorted Permutations](sorted-permutations.md)
+- [Consecutive-cyclic-pattern-avoiding stack-sorting map](consecutive-cyclic-stack-sort.md)
+- [Permutations sorted by a map](sorted-permutations.md)
 
 ## Sources
 

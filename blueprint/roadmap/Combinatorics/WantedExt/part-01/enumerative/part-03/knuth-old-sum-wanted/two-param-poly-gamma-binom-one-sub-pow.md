@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.two_param_poly_gammaBinom_one_sub_pow
 ---
 
-# Two param poly gamma Binom one sub pow
+# A two-parameter polynomial identity for generalized central binomial coefficients
 
-Equation (47): for `ℜu, ℜv > -1` and complex `x`,
-`binom(v, v/2) ∑ (-1)^{n-k} binom(n,k) 2^{-2k} binom(2k+u, (2k+u)/2)
-binom((2k+u+v)/2, v/2)^{-1} (1-x)^{n-k}` equals the same expression with `u` and `v`
-exchanged, `(-1)^{n-k}` replaced by `(-1)^k` and `(1-x)^{n-k}` by `x^{n-k}`.
+**A two-parameter polynomial identity for generalized central binomial coefficients.**
+Write $\binom{a}{b} = \Gamma(a+1)/(\Gamma(b+1)\,\Gamma(a-b+1))$ for the generalized binomial
+coefficient of complex numbers $a, b$. For every natural number $n$ and all complex numbers
+$u, v, x$ with $\operatorname{Re} u > -1$ and $\operatorname{Re} v > -1$,
+
+$$
+\binom{v}{v/2} \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} 2^{-2k} \binom{2k+u}{(2k+u)/2}
+\binom{(2k+u+v)/2}{v/2}^{-1} (1-x)^{n-k}
+= \binom{u}{u/2} \sum_{k=0}^{n} (-1)^{k} \binom{n}{k} 2^{-2k} \binom{2k+v}{(2k+v)/2}
+\binom{(2k+u+v)/2}{u/2}^{-1} x^{n-k}.
+$$
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

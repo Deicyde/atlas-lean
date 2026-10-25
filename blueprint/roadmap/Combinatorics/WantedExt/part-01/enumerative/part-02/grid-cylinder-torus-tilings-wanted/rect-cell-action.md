@@ -5,13 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.rectCellAction
 ---
 
-# Rect Cell Action
+# Action of the rectangle group on grid cells
 
-The cell maps of the paper's rectangle symmetry group `D₄ = ⟨r², f⟩` on the `n × m` grid,
-indexed by Mathlib's `DihedralGroup 4` with `f = sr 0` and `r² = r 2` (so `r²f = sr 2`):
-`r 0 ↦ id`, `r 2 ↦ cellR2`, `sr 0 ↦ cellF`, `sr 2 ↦ cellR2F`. On this subgroup `g ↦ cell map`
-is a homomorphism into maps under composition. The other four elements (not in the rectangle
-group) get the values `cellR2` (`r 1`, `r 3`) and `cellR2F` (`sr 1`, `sr 3`), which are never used.
+**Action of the rectangle group on grid cells.** Let $n, m \in \mathbb{N}$ and view the cells
+of the $n \times m$ grid as $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z}$. Write the
+elements of the dihedral group of order $8$ as rotations $r_i$ and reflections $sr_i$ for
+$i \in \mathbb{Z}/4\mathbb{Z}$. Each element acts on cells as follows: $r_0$ by the identity,
+$r_i$ with $i \ne 0$ by the half-turn $(x, y) \mapsto (-1 - x, -1 - y)$, $sr_0$ by the
+reflection $(x, y) \mapsto (-1 - x, y)$, and $sr_i$ with $i \ne 0$ by the reflection
+$(x, y) \mapsto (x, -1 - y)$.
+
+The paper's rectangle group $D_4 = \langle r^2, f \rangle$ is the subgroup
+$\{r_0, r_2, sr_0, sr_2\}$, with $f = sr_0$, $r^2 = r_2$ and $r^2 f = sr_2$. On this subgroup the
+assignment of cell maps is a homomorphism into maps under composition; the values at $r_1$, $r_3$,
+$sr_1$ and $sr_3$ are never used.
 
 ## Depends on
 
@@ -19,9 +26,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cell F](cell-f.md)
-- [Cell R2](cell-r2.md)
-- [Cell R2 F](cell-r2-f.md)
+- [Cell map of the reflection f](cell-f.md)
+- [Cell map of the half-turn r²](cell-r2.md)
+- [Cell map of the reflection r²f](cell-r2-f.md)
 
 ## Sources
 

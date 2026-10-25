@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.alphaUpperEntry_succ_succ
 ---
 
-# Alpha Upper Entry succ succ
+# Recurrence for the α-upper entries
 
-The recurrence (u-1-2) of `𝖴_α` (0-based entries).
+**Recurrence for the α-upper entries.** Let $R$ be a commutative ring, let $\alpha$ be a
+sequence in $R$, and let $u_{i,j}$ ($i, j \ge 0$) be the α-upper entries of $\alpha$. Then for all
+$i, j \ge 0$,
+$u_{i+1,j+1} = u_{i+1,j} + \alpha_{i+1} u_{i,j} + (\alpha_{j+2} - \alpha_{i+1}) u_{i,j+1}$.
 
 ## Depends on
 
-- [Alpha Upper Entry](alpha-upper-entry.md)
+- [Entries of the α-upper matrix](alpha-upper-entry.md)
 
 ## Sources
 

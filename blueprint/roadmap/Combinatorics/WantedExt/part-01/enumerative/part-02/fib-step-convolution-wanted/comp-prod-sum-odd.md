@@ -5,18 +5,23 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_odd
 ---
 
-# Theorem 35
+# Convolution of an odd number of consecutive Fibonacci step sequences
 
-**Theorem 35**, odd case: for `ℓ ≥ 1`,
-`∑_{K(2ℓ+1, n-ℓ(m+ℓ-1))} ∏_{j=0}^{2ℓ} F^{(m+j)}_{k_{j+1}}
-= ∑_{K(ℓ+1, n)} F^{(m+2ℓ)}_{k_{ℓ+1}}
-∏_{j=0}^{ℓ-1} (F^{(m+2j+1)}_{k_{j+1}} -
-F^{(m+2j)}_{k_{j+1}})`.
+**Convolution of an odd number of consecutive Fibonacci step sequences.** Write $F^{(s)}_k$
+for the Fibonacci $s$-step numbers, and write $\sum_{K(r,N)}$ for a sum over all
+$(k_1, \dots, k_r) \in \mathbb{N}^r$ with $k_1 + \dots + k_r = N$. For all natural numbers
+$\ell \ge 1$, $m \ge 1$ and $n \ge \ell(m + \ell - 1)$,
+
+$$
+\sum_{K(2\ell+1, n - \ell(m + \ell - 1))} \prod_{j=0}^{2\ell} F^{(m+j)}_{k_{j+1}} =
+\sum_{K(\ell+1, n)} F^{(m+2\ell)}_{k_{\ell+1}} \prod_{j=0}^{\ell-1}
+\left(F^{(m+2j+1)}_{k_{j+1}} - F^{(m+2j)}_{k_{j+1}}\right).
+$$
 
 ## Depends on
 
-- [Comp Prod Sum](comp-prod-sum.md)
-- [Fib Step](fib-step.md)
+- [Sums over compositions](comp-prod-sum.md)
+- [Fibonacci $m$-step numbers](fib-step.md)
 
 ## Sources
 

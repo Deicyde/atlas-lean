@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.kingFlatPOPBelowGF_three_eq_rename
 ---
 
-# King Flat POPBelow GF three eq rename
+# The generating functions for $P_4$ and $P_1$ differ by a change of variables
 
-For `P₄` (label `4` below labels `1, 2, 3`), `A_{P₄}(x, p, q, u, v) = A_{P₁}(x, q, p, v, u)`.
-The substitution of variables is
-`MvPolynomial.rename` along `Equiv.swap (0 : Fin 4) 1 * Equiv.swap 2 3` applied coefficientwise.
+**The generating functions for $P_4$ and $P_1$ differ by a change of variables.** For $k = 1$
+and $k = 4$ let $P_k$ be the flat partially ordered pattern of length $4$ whose $k$-th element lies
+below each of the other three, and let $A_{P_k}(x; p, q, u, v)$ be the generating function of king
+permutations avoiding $P_k$, in which $x$ marks length and $p$, $q$, $u$, $v$ mark ascents,
+descents, left-to-right maxima and right-to-left maxima. Then
+$A_{P_4}(x; p, q, u, v) = A_{P_1}(x; q, p, v, u)$: the series $A_{P_4}$ is obtained from
+$A_{P_1}$ by exchanging $p$ with $q$ and $u$ with $v$ in every coefficient.
 
 ## Depends on
 
-- [King Flat POPBelow GF](king-flat-popbelow-gf.md)
+- [Generating function of king permutations avoiding $P_{j+1}$](king-flat-popbelow-gf.md)
 
 ## Sources
 

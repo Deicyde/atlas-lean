@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.signedWilfClassCount_zero
 ---
 
-# Signed Wilf Class Count zero
+# The empty pattern set forms one signed Wilf class
 
-`sw_0 = 1`: the empty set is the only set of no patterns.
+**The empty pattern set forms one signed Wilf class.** The number $\mathrm{sw}_0$ of
+Wilf-equivalence classes among the sets of $0$ length-2 signed patterns is $1$: the empty set is
+the only set of no patterns.
 
 ## Depends on
 
-- [Signed Wilf Class Count](signed-wilf-class-count.md)
+- [Number of signed Wilf classes](signed-wilf-class-count.md)
 
 ## Proof depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
 
 ## Sources
 

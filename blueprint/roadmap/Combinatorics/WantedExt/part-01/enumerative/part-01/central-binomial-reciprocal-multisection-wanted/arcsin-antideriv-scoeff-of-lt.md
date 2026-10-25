@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.arcsinAntiderivSCoeff_of_lt
 ---
 
-# Arcsin Antideriv SCoeff of lt
+# Recursion for the coefficients of an S-polynomial
 
-`s_k = (8(k + 1)/(2k - 1)) s_{k+1}` for `k < l`.
+**Recursion for the coefficients of an S-polynomial.** Write $s_k = s_{l,k}$ for the
+coefficient of $x^k$ in Zurita's polynomial $S_l$. For all natural numbers $k$ and $l$ with
+$k < l$,
+
+$$s_k = \frac{8(k + 1)}{2k - 1}\, s_{k+1}.$$
 
 ## Depends on
 
-- [Arcsin Antideriv SCoeff](arcsin-antideriv-scoeff.md)
+- [Coefficients of Zurita's polynomial $S_l$](arcsin-antideriv-scoeff.md)
 
 ## Sources
 

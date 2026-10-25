@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.schreierParentD_of_lt
 ---
 
-# Schreier Parent D of lt
+# Initial values of the parent sequence
 
-`d_{u,n} = 1` for `n < 2u`.
+**Initial values of the parent sequence.** For all natural numbers $u$ and $n$ with $n < 2u$,
+the parent sequence $d_{u,n}$ satisfies $d_{u,n} = 1$.
 
 ## Depends on
 
-- [Schreier Parent D](schreier-parent-d.md)
+- [The parent sequence $d_{u,n}$](schreier-parent-d.md)
 
 ## Sources
 

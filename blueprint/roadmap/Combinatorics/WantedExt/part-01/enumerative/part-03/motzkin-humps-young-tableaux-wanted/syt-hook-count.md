@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sytHookCount
 ---
 
-# Syt Hook Count
+# Standard Young tableaux in the $(2,1)$-hook with given row difference
 
-`sytHookCount n k` is `SYT_k(2,1;n)`: the cardinality of standard Young tableaux
-of order `n` in the `(2,1)`-hook whose first two row lengths differ by `k`.
+**Standard Young tableaux in the $(2,1)$-hook with given row difference.** For natural numbers
+$n$ and $k$, $\mathrm{SYT}_k(2,1;n)$ is the number of standard Young tableaux of order $n$ whose
+shape $\lambda$ lies in the $(2,1)$-hook, that is $\lambda_3 \le 1$, and whose first two row
+lengths satisfy $\lambda_1 = \lambda_2 + k$ (a missing row has length $0$).
 
 ## Depends on
 
@@ -16,10 +18,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has First Two Row Difference](has-first-two-row-difference.md)
-- [Is In Two One Hook](is-in-two-one-hook.md)
-- [Is Standard Young Tableau](is-standard-young-tableau.md)
-- [Tableau Row Length](tableau-row-length.md)
+- [First-two-row difference of a tableau](has-first-two-row-difference.md)
+- [Tableaux in the $(2,1)$-hook](is-in-two-one-hook.md)
+- [Standard Young tableau](is-standard-young-tableau.md)
+- [Row length of a tableau](tableau-row-length.md)
 
 ## Sources
 

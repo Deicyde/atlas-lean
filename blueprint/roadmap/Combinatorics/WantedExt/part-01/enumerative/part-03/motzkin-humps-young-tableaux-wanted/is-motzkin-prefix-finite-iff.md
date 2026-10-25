@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.isMotzkinPrefixFinite_iff
 ---
 
-# Is Motzkin Prefix Finite iff
+# Bounded form of the Motzkin prefix condition
 
-The bounded prefix condition is equivalent to the paper's condition over all
-natural `m` subject to `m ≤ n`; this is the characteristic lemma for the executable
-formulation.
+**Bounded form of the Motzkin prefix condition.** Let $p$ be a word of length $n$ in the steps
+$D$, $F$, $U$ and let $h \in \mathbb{Z}$. Then $p$ satisfies the bounded Motzkin prefix condition
+for $h$, in which the prefix length $m$ ranges over $\{0, 1, \dots, n\}$, if and only if $p$ is
+a Motzkin prefix ending at height $h$, in which $m$ ranges over all natural numbers with
+$m \le n$.
 
 ## Depends on
 
-- [Is Motzkin Prefix](is-motzkin-prefix.md)
-- [Is Motzkin Prefix Finite](is-motzkin-prefix-finite.md)
+- [Motzkin prefix](is-motzkin-prefix.md)
+- [Bounded Motzkin prefix condition](is-motzkin-prefix-finite.md)
 
 ## Proof depends on
 
-- [Motzkin Step](motzkin-step.md)
+- [Height change of a Motzkin step](motzkin-step.md)
 
 ## Sources
 

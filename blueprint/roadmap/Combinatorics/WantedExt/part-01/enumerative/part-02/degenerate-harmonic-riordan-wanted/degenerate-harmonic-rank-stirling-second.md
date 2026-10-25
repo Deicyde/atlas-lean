@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.degenerateHarmonicRank_stirlingSecond_sum
 ---
 
-# Degenerate Harmonic Rank stirling Second sum
+# Degenerate harmonic numbers of rank and degenerate Stirling numbers of the second kind
 
-Theorem 9: for `1 ≤ m ≤ n`,
-`∑_{k=m}^n (-1)ᵏ S_{2,λ}(k, m) H_λ(n, k - 1, α) / k! = (-1)ᵐ / (m! αᵐ)`.
+**Degenerate harmonic numbers of rank and degenerate Stirling numbers of the second kind.**
+Let $\lambda > 0$ and $\alpha > 0$ be real and let $m$ and $n$ be natural numbers with
+$1 \le m \le n$. Write $S_{2,\lambda}(k, m)$ for the degenerate Stirling numbers of the second kind
+and $H_\lambda(n, r, \alpha)$ for the generalized degenerate harmonic numbers of rank $r$. Then
+
+$$\sum_{k=m}^{n} \frac{(-1)^k S_{2,\lambda}(k, m) H_\lambda(n, k-1, \alpha)}{k!} =
+\frac{(-1)^m}{m! \, \alpha^m}.$$
 
 ## Depends on
 
-- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
-- [Degenerate Stirling Second](degenerate-stirling-second.md)
+- [Generalized degenerate harmonic numbers of a given rank](degenerate-harmonic-rank.md)
+- [Degenerate Stirling numbers of the second kind](degenerate-stirling-second.md)
 
 ## Sources
 

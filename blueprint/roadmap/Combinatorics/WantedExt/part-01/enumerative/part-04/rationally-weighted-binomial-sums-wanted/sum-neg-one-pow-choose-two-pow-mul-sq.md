@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_choose_two_pow_mul_sq
 ---
 
-# Sum neg one pow choose two pow mul sq
+# Greenstreet's identity
 
-Greenstreet's identity: `∑_{k=1}^N (-1)^k binom(N, k) 2^{N-k} k² = N² - 2N`.
+**Greenstreet's identity.** For every natural number $N$,
+
+$$\sum_{k=1}^{N} (-1)^k \binom{N}{k} 2^{N-k} k^2 = N^2 - 2N.$$
 
 ## Depends on
 

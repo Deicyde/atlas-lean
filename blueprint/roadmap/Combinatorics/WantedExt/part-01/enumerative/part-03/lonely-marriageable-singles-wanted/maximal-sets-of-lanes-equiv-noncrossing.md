@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.maximalSetsOfLanes_equiv_noncrossingPartition
 ---
 
-# Maximal Sets Of Lanes equiv noncrossing Partition
+# Maximal sets of lanes and noncrossing partitions
 
-The MSL of a standard road intersection of size `n` are in bijection with the noncrossing
-partitions of `[n]`, and there are `C_n` (the Catalan number) of them.
+**Maximal sets of lanes and noncrossing partitions.** For every $n \ge 0$, the maximal sets of
+lanes of the standard road intersection of size $n$, in which every lane is allowed, are in
+bijection with the noncrossing partitions of $\{0, \dots, n-1\}$, and their number is the Catalan
+number $C_n$.
 
 ## Depends on
 
-- [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
-- [Lanes Meet](lanes-meet.md)
+- [Maximal set of lanes](is-maximal-set-of-lanes.md)
+- [Lanes with a common point](lanes-meet.md)
 - [Noncrossing partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
 
 ## Sources

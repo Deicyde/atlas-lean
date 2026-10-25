@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.zuritaS
 ---
 
-# Zurita S
+# Zurita's polynomial $S_n$
 
-`S_n(x) = ∑_{k=0}^n s_k x^k` as a real function.
+**Zurita's polynomial $S_n$.** For a natural number $n$ and a real number $x$,
+$S_n(x) = \sum_{k=0}^{n} s_k x^k$, where $s_0 = 1/(1/2 - n)$ and
+$s_k = \frac{k - 1 - n}{k - n + 1/2}\, s_{k-1}$ for $k \ge 1$ are the coefficients of $S_n$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zurita SCoeff](zurita-scoeff.md)
+- [Coefficients of Zurita's polynomial $S_n$](zurita-scoeff.md)
 
 ## Sources
 

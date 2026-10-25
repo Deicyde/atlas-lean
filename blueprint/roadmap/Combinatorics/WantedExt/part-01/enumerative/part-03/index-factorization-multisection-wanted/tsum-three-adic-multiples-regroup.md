@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.tsum_threeAdic_multiples_regroup
 ---
 
-# Tsum three Adic multiples regroup
+# Regrouping the multiples of 3 by their 3-adic factorization
 
-The multiples of `3` regrouped by their `3`-adic factorization, sum form:
-`∑_{j ≥ 1, n ≥ 1} (b_{(3n-1) 3^j} + b_{(3n-2) 3^j}) = ∑_{m ≥ 1} b_{3m}`, for `b`
-summable along the multiples of `3`.
+**Regrouping the multiples of 3 by their 3-adic factorization.** Let $(b_m)_{m \ge 1}$ be a
+sequence of complex numbers such that the family $(b_{3m})_{m \ge 1}$ is summable. Then
+
+$$\sum_{j \ge 1,\, n \ge 1} \bigl( b_{(3n-1) 3^j} + b_{(3n-2) 3^j} \bigr) =
+\sum_{m \ge 1} b_{3m},$$
+
+where the sum on the left is an unconditional sum over the pairs $(j, n)$.
 
 ## Depends on
 

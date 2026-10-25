@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.a005717_zero_density
 ---
 
-# A005717 zero density
+# Zero density of A005717 modulo a prime
 
-Proposition 6: the zero set of A005717 has density one if a central trinomial coefficient below
-p vanishes. Otherwise, for p > 2, it has the displayed density D₀ and D₀ ≥ 1/(p-1). Source: Nadav
-Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026),
-Article A22, Proposition 6.
+**Zero density of A005717 modulo a prime.** Let $p$ be a prime, let $T_m$ be the central
+trinomial coefficient, the constant term of $(x^{-1} + 1 + x)^m$, and let $a_n$ be the constant
+term of $x (x^{-1} + 1 + x)^n$ (OEIS A005717). If $T_r \equiv 0 \pmod p$ for some $r < p$, then
+the set of $n \in \mathbb{N}$ with $a_n \equiv 0 \pmod p$ has natural density $1$. If instead
+$T_r \not\equiv 0 \pmod p$ for every $r < p$ and $p > 2$, let $N_1$ be the number of $m < p - 1$
+with $T_m \equiv T_{p-1} T_{m+1} \pmod p$ and let $N_2$ be the number of $m < p - 1$ with
+$T_m \equiv T_{m+1} \pmod p$. Then that set has natural density
+$D_0 = (N_1 + p N_2) / ((p - 1)(p + 1))$, and $D_0 \ge 1/(p - 1)$.
 
 ## Depends on
 
-- [A005717](a005717.md)
-- [Central Trinomial](central-trinomial.md)
+- [OEIS A005717](a005717.md)
+- [Generalized central trinomial coefficients](central-trinomial.md)
 - [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 6.

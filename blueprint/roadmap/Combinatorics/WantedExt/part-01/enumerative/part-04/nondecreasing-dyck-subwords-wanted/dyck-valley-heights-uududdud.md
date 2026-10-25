@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.dyckValleyHeights_UUDUDDUD
 ---
 
-# Dyck Valley Heights UUDUDDUD
+# Valley heights of UUDUDDUD
 
-The path `UUDUDDUD` has valley heights `1, 0`, so it is not non-decreasing.
+**Valley heights of UUDUDDUD.** The Dyck path $UUDUDDUD$ has exactly two valleys, of heights
+$1$ and $0$ from left to right.
+
+In particular this path is not non-decreasing.
 
 ## Depends on
 
-- [Dyck Valley Heights](dyck-valley-heights.md)
+- [Valley heights](dyck-valley-heights.md)
 
 ## Sources
 

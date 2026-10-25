@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sum_inv_gammaBinom_one_sub_pow
 ---
 
-# Sum inv gamma Binom one sub pow
+# Polynomial identity for reciprocal generalized binomial coefficients
 
-Equation (42): for `ℜu, ℜv > -1` and complex `x`,
-`∑ (-1)^{n-k} binom(n,k) binom(k+u+v+1, u+1)^{-1} (1-x)^{n-k}
-= (u+1)/(v+1) ∑ (-1)^k binom(n,k) binom(k+u+v+1, v+1)^{-1} x^{n-k}`.
+**Polynomial identity for reciprocal generalized binomial coefficients.** For every natural
+number $n$ and all complex numbers $u, v, x$ with $\operatorname{Re} u > -1$ and
+$\operatorname{Re} v > -1$,
+
+$$
+\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \binom{k+u+v+1}{u+1}^{-1} (1-x)^{n-k}
+= \frac{u+1}{v+1} \sum_{k=0}^{n} (-1)^{k} \binom{n}{k} \binom{k+u+v+1}{v+1}^{-1} x^{n-k},
+$$
+
+where $\binom{n}{k}$ is the ordinary binomial coefficient and otherwise
+$\binom{a}{b} = \Gamma(a+1)/(\Gamma(b+1)\Gamma(a-b+1))$ is the generalized binomial
+coefficient of complex numbers $a, b$.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

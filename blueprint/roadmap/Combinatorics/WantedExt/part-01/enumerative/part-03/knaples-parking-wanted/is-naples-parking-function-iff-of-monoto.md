@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isNaplesParkingFunction_iff_of_monotone
 ---
 
-# Is Naples Parking Function iff of monotone
+# Lattice-path criterion for ascending $k$-Naples parking functions
 
-Theorem 2: an ascending preference `α ∈ [n]^n` is a `k`-Naples parking function if and
-only if, along its lattice path (a `k`-Dyck path when it is `k`-Naples), every step that puts
-the path below `y = 0` is followed within `2k` steps by a point above `y = 0`.
+**Lattice-path criterion for ascending $k$-Naples parking functions.** Let
+$\alpha = (a_1, \dots, a_n)$ be a weakly increasing preference with $1 \le a_i \le n$ for every
+$i$, and let $h_j$ be the height after the first $j$ steps of the lattice path of $\alpha$, which
+has $2n$ steps. Then $\alpha$ is a $k$-Naples parking function if and only if for every $j$
+with $1 \le j \le 2n$ and $h_j < 0$ there is a $j'$ with $j < j' \le j + 2k$, $j' \le 2n$ and
+$h_{j'} > 0$.
 
 ## Depends on
 
-- [Is Naples Parking Function](is-naples-parking-function.md)
-- [Lattice Height](lattice-height.md)
-- [Preference Path](preference-path.md)
+- [$k$-Naples parking function](is-naples-parking-function.md)
+- [Height of a lattice path](lattice-height.md)
+- [Lattice path of a parking preference](preference-path.md)
 
 ## Sources
 

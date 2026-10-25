@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.invSeqAvoidGF_nine_patterns
 ---
 
-# Theorem 22
+# Inversion sequences avoiding nine patterns
 
-**Theorem 22.** For the nine patterns `B = {000, 010, 100, 101, 102, 110, 120, 201, 210}`,
-`F_B(x) = (2 - 3x - 3x² + (x - 2) √(1 - 2x - 3x²)) / (2x² (1 + x))`, stated after clearing the
-denominator.
-`s` is the power series square root of `1 - 2x - 3x²` with constant term `1`; the record's
-radical `√(1 - 2x - 3x²)` multiplies the polynomial printed just before it.
+**Inversion sequences avoiding nine patterns.** Let
+$B = \{000, 010, 100, 101, 102, 110, 120, 201, 210\}$, where a pattern is written as a digit
+string ($101$ is the triple $(1, 0, 1)$), and let
+$F_B(x) = \sum_{n \ge 1} |I_n(B)| x^n \in \mathbb{Q}[[x]]$ be the generating function of the
+inversion sequences avoiding every pattern in $B$. For every power series $s \in \mathbb{Q}[[x]]$
+with constant term $1$ and $s^2 = 1 - 2x - 3x^2$,
+
+$$2x^2(1 + x) F_B(x) = 2 - 3x - 3x^2 + (x - 2) s.$$
+
+This is the closed form
+$F_B(x) = (2 - 3x - 3x^2 + (x - 2)\sqrt{1 - 2x - 3x^2}) / (2x^2(1 + x))$ with the denominator
+cleared, $s$ standing for $\sqrt{1 - 2x - 3x^2}$.
 
 ## Depends on
 
-- [Inv Seq Avoid GF](inv-seq-avoid-gf.md)
+- [Generating function of inversion sequences avoiding a set of patterns](inv-seq-avoid-gf.md)
 
 ## Sources
 

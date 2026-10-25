@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.minusculePolynomialA_coeff_logConcave
 ---
 
-# Minuscule Polynomial A coeff log Concave
+# Log-concavity of the coefficients of the minuscule polynomials
 
-The coefficients of `N_n(x)` are log-concave: `N_{n,k-1} N_{n,k+1} ≤ N_{n,k}^2`. Stated for
-all `n, k : ℕ`; the cases outside `n ≥ 1`, `1 ≤ k ≤ n - 1` hold because the extra coefficients
-vanish.
+**Log-concavity of the coefficients of the minuscule polynomials.** Let $N_{n,k}$ be the
+coefficient of $x^k$ in the type-A minuscule polynomial $N_n(x)$. For all natural numbers $n$
+and $k$, $N_{n,k-1} N_{n,k+1} \le N_{n,k}^2$, where for $k = 0$ the index $k - 1$ is read as $0$.
+
+The cases outside $n \ge 1$, $1 \le k \le n - 1$ hold because the coefficients involved vanish.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

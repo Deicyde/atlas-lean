@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.powerSeriesFactorialMatrix_mul
 ---
 
-# Power Series Factorial Matrix mul
+# Multiplicativity of the factorial matrix of a power series
 
-Lemma 5: `M(f) M(g) = M(fg)` for formal power series over a field of characteristic zero,
-stated for every leading `n × n` section (equivalent for these lower triangular matrices).
+**Multiplicativity of the factorial matrix of a power series.** Let $K$ be a field of
+characteristic zero, let $f$ and $g$ be formal power series over $K$ in the variable $t$, and let
+$n$ be a natural number. For a power series $h$ over $K$, write $M_n(h)$ for the $n \times n$
+factorial matrix of $h$, whose entry in row $a$ and column $b$ (counted from $0$) is
+$\frac{a!}{b!}$ times the coefficient of $t^{a-b}$ in $h$ when $b \le a$, and $0$ otherwise. Then
+$M_n(f) M_n(g) = M_n(fg)$.
+
+Since these matrices are lower triangular and $M_n(h)$ is the leading $n \times n$ section of the
+infinite matrix $M(h)$, this is equivalent to $M(f) M(g) = M(fg)$.
 
 ## Depends on
 
-- [Power Series Factorial Matrix](power-series-factorial-matrix.md)
+- [Factorial matrix of a power series](power-series-factorial-matrix.md)
 
 ## Sources
 

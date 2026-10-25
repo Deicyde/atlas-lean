@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.squareGrid_r2_odd
 ---
 
-# Square Grid r2 odd
+# Square-grid tilings fixed by the half-turn for odd $n$
 
-For odd `n`, the square-grid half-turn has one fixed cell.  The factor
-`tileFixedCount σ 1` is `t_{r²}`, and `σ²=1` is the element-order hypothesis.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-grid tilings fixed by the half-turn for odd $n$.** Let $n$ be an odd positive
+integer, let $T$ be a finite set, let $\sigma$ be a permutation of $T$ with $\sigma^2 = 1$, and
+write $t_\sigma$ for the number of elements $t \in T$ with $\sigma(t) = t$. Let $r^2$ be the
+half-turn of the grid $(\mathbb{Z}/n\mathbb{Z})^2$ given by $r^2(x, y) = (-1 - x, -1 - y)$.
+Then the number of maps $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(r^2(c)) = \sigma(F(c))$
+for every cell $c$ is $|T|^{(n^2 - 1)/2} \cdot t_\sigma$.
 
 ## Depends on
 
-- [Cell R2](cell-r2.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the half-turn r²](cell-r2.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.degenerateHarmonicRank_zero_left
 ---
 
-# Degenerate Harmonic Rank zero left
+# Degenerate harmonic numbers of rank vanish at index zero
 
-`H_λ(0, r, α) = 0`.
+**Degenerate harmonic numbers of rank vanish at index zero.** For all real $\lambda$ and
+$\alpha$ and every natural number $r$, the generalized degenerate harmonic number of rank $r$
+satisfies $H_\lambda(0, r, \alpha) = 0$.
 
 ## Depends on
 
-- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
+- [Generalized degenerate harmonic numbers of a given rank](degenerate-harmonic-rank.md)
 
 ## Proof depends on
 
-- [Degenerate Harmonic Term](degenerate-harmonic-term.md)
-- [Degenerate Harmonic Term zero](degenerate-harmonic-term-zero.md)
+- [Degenerate harmonic terms](degenerate-harmonic-term.md)
+- [Degenerate harmonic term of index zero](degenerate-harmonic-term-zero.md)
 
 ## Sources
 

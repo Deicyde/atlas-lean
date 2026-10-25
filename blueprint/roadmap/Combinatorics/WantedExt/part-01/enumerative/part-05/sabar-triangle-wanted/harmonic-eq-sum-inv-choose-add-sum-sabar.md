@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.harmonic_eq_sum_inv_choose_add_sum_sabarNumber
 ---
 
-# Harmonic eq sum inv choose add sum sabar Number
+# Harmonic numbers from Sabar's triangle
 
-Theorem 2: for `n ≥ 2`,
-`H_n = C_n + ∑_{i=0}^{n-2} (-1)^{n-i} s(n-1, i) / (n - i)`, where
-`C_n = (1/n) ∑_{i=0}^{n-1} C(n-1, i)⁻¹`.
+**Harmonic numbers from Sabar's triangle.** For every natural number $n \ge 2$, the harmonic
+number $H_n = \sum_{k=1}^{n} \frac{1}{k}$ and the entries $s(n-1, i)$ of Sabar's triangle satisfy
+
+$$H_n = \frac{1}{n} \sum_{i=0}^{n-1} \binom{n-1}{i}^{-1} +
+\sum_{i=0}^{n-2} \frac{(-1)^{n-i} \, s(n-1, i)}{n-i}.$$
 
 ## Depends on
 
-- [Sabar Number](sabar-number.md)
+- [Sabar's triangle](sabar-number.md)
 
 ## Sources
 

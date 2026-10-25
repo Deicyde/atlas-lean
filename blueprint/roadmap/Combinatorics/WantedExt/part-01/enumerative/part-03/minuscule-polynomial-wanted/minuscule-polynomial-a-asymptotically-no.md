@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.minusculePolynomialA_asymptotically_normal
 ---
 
-# Minuscule Polynomial A asymptotically normal
+# Asymptotic normality of the coefficients of the minuscule polynomials
 
-The coefficients of `N_n(x)` are asymptotically normal with mean `n/2` and variance
-`(n^2 - n - 2)/(8(n - 1))`: for every real `x`,
-`∑_{k ≤ n/2 + x σ_n} N_{n,k} / N_n(1)` tends to the standard normal distribution function.
+**Asymptotic normality of the coefficients of the minuscule polynomials.** Let $N_{n,k}$ be
+the coefficient of $x^k$ in the type-A minuscule polynomial $N_n(x)$, and let
+$\sigma_n = \sqrt{(n^2 - n - 2)/(8(n - 1))}$. Then for every real $x$, the sum of the
+coefficients $N_{n,k}$ over $0 \le k < n$ with $k \le n/2 + x \sigma_n$, divided by $N_n(1)$,
+tends to $\Phi(x)$ as $n \to \infty$, where $\Phi$ is the distribution function of the standard
+normal distribution.
+
+The centring $n/2$ and the scale $\sigma_n^2$ are the mean and the variance of the coefficient
+distribution $k \mapsto N_{n,k}/N_n(1)$.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

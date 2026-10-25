@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreierCardCount_eq
 ---
 
-# Theorem 9, exact-cardinality case
+# Strong Schreier sets of given size and compositions
 
-**Theorem 9, exact-cardinality case**:
-`|B_{n,ℓ,m}| = c(n + ℓ, ℓ + 1, m)` for `n ≥ 1`.
+**Strong Schreier sets of given size and compositions.** For all integers $n \ge 1$ and
+$m \ge 1$ and every natural number $\ell$, the number of $\ell$-strong Schreier sets
+$B \subseteq \{1, \dots, n\}$ with $n \in B$ and exactly $m$ elements equals the number of
+compositions of $n + \ell$ into exactly $m$ parts, each at least $\ell + 1$.
 
 ## Depends on
 
-- [Composition Min Part Exact Count](composition-min-part-exact-count.md)
-- [Strong Schreier Card Count](strong-schreier-card-count.md)
+- [Compositions with exactly $s$ parts, each at least $v$](composition-min-part-exact-count.md)
+- [Number of strong Schreier sets of given size with maximum $n$](strong-schreier-card-count.md)
 
 ## Sources
 

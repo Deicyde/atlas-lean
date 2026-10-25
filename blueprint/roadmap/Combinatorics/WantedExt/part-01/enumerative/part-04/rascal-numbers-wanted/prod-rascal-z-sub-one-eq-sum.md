@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.prod_rascalZ_sub_one_eq_sum
 ---
 
-# Theorem 14
+# Subset-sum expansion of the product of the shifted Rascal numbers
 
-**Theorem 14**, product as subset sum:
-`∏_{k=1}^m (R_{n,k} - 1) = ∑_{S ⊆ [m]} (-1)^{m-|S|}
-∏_{i ∈ S} R_{n,i}` for `1 ≤ m ≤ n`, with `[m] = {1, …, m}`.
+**Subset-sum expansion of the product of the shifted Rascal numbers.** For natural numbers
+$m$ and $n$ with $1 \le m \le n$, writing $[m] = \{1, \dots, m\}$,
+
+$$\prod_{k=1}^{m} (R_{n,k} - 1) = \sum_{S \subseteq [m]} (-1)^{m-|S|} \prod_{i \in S} R_{n,i},$$
+
+where $R_{n,k}$ denotes the Rascal numbers.
 
 ## Depends on
 
-- [Rascal Z](rascal-z.md)
+- [Rascal numbers on the integers](rascal-z.md)
 
 ## Sources
 

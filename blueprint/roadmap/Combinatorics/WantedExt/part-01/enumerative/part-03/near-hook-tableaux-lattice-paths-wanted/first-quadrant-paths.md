@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.firstQuadrantPaths
 ---
 
-# First Quadrant Paths
+# First-quadrant paths $\mathcal{P}_n$
 
-The set `𝒫_n` of Guy, Krattenthaler and Sagan: words of `2n + 2` steps from
-`{N, S, E, W}` whose partial sums stay in the closed first quadrant and whose total is `(n, n)`.
+**First-quadrant paths $\mathcal{P}_n$.** For $n \in \mathbb{N}$, $\mathcal{P}_n$ is the set of
+words $(s_1, \dots, s_{2n+2})$ of $2n + 2$ steps, each one of $N = (0, 1)$, $S = (0, -1)$,
+$E = (1, 0)$ and $W = (-1, 0)$ in $\mathbb{Z}^2$, such that every partial sum $s_1 + \dots + s_k$
+with $0 \le k \le 2n + 2$ has both coordinates nonnegative and the total $s_1 + \dots + s_{2n+2}$
+equals $(n, n)$.
+
+These are the walks of Guy, Krattenthaler and Sagan.
 
 ## Depends on
 

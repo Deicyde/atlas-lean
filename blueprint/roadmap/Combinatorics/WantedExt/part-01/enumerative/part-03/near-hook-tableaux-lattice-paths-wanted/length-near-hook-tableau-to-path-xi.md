@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.length_nearHookTableauToPathXi
 ---
 
-# Length near Hook Tableau To Path Xi
+# The path $\xi(T)$ has $2n + 2$ steps
 
-`ξ(T)` has `2n + 2` steps.
+**The path $\xi(T)$ has $2n + 2$ steps.** For every $n \in \mathbb{N}$ and every
+semistandard Young tableau $T$ of shape $\theta^{(n)}$, the word $\xi(T)$ has length $2n + 2$.
 
 ## Depends on
 
 - [Near Hook Tableau To Path Xi](near-hook-tableau-to-path-xi.md)
-- [Near Hook Theta](near-hook-theta.md)
+- [The near-hook diagram $\theta^{(n)}$](near-hook-theta.md)
 
 ## Sources
 

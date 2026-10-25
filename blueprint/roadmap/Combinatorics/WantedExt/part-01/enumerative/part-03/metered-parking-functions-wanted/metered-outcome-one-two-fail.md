@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.meteredOutcome_one_two_fail
 ---
 
-# Metered Outcome one two fail
+# A 1-metered example in which the third car fails
 
-The source's example with `t = 1`, `n = 2` and preferences `(1,1,2)`: car `3` fails.
+**A 1-metered example in which the third car fails.** In the $1$-metered parking scheme on
+two spots $\{0, 1\}$, if three cars arrive with preferences $0$, $0$, $1$, then the first two
+cars park in spots $0$ and $1$ and the third car fails to park.
+
+In the source's one-based numbering: with preferences $(1, 1, 2)$, car $3$ fails.
 
 ## Depends on
 
-- [Metered Outcome](metered-outcome.md)
+- [Outcome of the metered parking scheme](metered-outcome.md)
 
 ## Sources
 

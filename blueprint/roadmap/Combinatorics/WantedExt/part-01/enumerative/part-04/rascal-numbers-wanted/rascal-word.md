@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.RascalWord
 ---
 
-# Rascal Word
+# Binary words with few ascents
 
-The paper's `B_k^{(j)}(n)`: binary words of length `n`
-with exactly `k` ones and at most `j` ascents.
+**Binary words with few ascents.** For natural numbers $j$, $k$ and $n$, $B^{(j)}_k(n)$ is
+the set of words $w$ of length $n$ over the alphabet $\{0, 1\}$ with exactly $k$ ones and at most
+$j$ ascents, an ascent being a position $i$ with $w_i < w_{i+1}$, that is, a $0$ immediately
+followed by a $1$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Word Ascents](word-ascents.md)
+- [Number of ascents of a word](word-ascents.md)
 
 ## Sources
 

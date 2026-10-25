@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.triangularQBinomial_recursion
 ---
 
-# Triangular QBinomial recursion
+# Recursion for triangular $q$-binomial coefficients
 
-The recursion `t[r, s] = q^s ∑_{i=0}^{s} t[r - 1, i]` for `1 ≤ r` and `s ≤ r`, with the
-initial conditions `t[1, 1] = q`, `t[2, 1] = q(1 + q)`, `t[r, 0] = 1` and `t[r, s] = 0` for
-`s > r`. The recursion is stated for `s ≤ r` only: for `s > r` the left side is `0` while the
-right side is `q^s T_q(r - 1) ≠ 0` (e.g. `t[1, 2] = 0` but `q² (t[0, 0] + t[0, 1] + t[0, 2]) = q²`);
-the initial conditions cover `s > r`.
+**Recursion for triangular $q$-binomial coefficients.** The triangular $q$-binomial
+coefficients $t[r, s] \in \mathbb{Z}[[q]]$ satisfy the recursion
+$t[r, s] = q^s \sum_{i=0}^{s} t[r - 1, i]$ for all natural numbers $r \ge 1$ and $s \le r$,
+together with the initial conditions $t[1, 1] = q$, $t[2, 1] = q(1 + q)$, $t[r, 0] = 1$ for
+every $r$, and $t[r, s] = 0$ whenever $r < s$.
+
+The recursion is stated for $s \le r$ only: for $s > r$ the left side is $0$, while the right
+side is $q^s \sum_{i=0}^{r-1} t[r - 1, i] \ne 0$; for example $t[1, 2] = 0$ but
+$q^2 (t[0, 0] + t[0, 1] + t[0, 2]) = q^2$.
 
 ## Depends on
 
-- [Triangular QBinomial](triangular-qbinomial.md)
+- [Triangular $q$-binomial coefficient](triangular-qbinomial.md)
 
 ## Sources
 

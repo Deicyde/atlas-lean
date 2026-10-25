@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.frobeniusPartitionRepCount_four_four_mul_add_one_mod_two
 ---
 
-# Frobenius Partition Rep Count four four mul add one mod two
+# Parity of $\varphi_4(4n+1)$
 
-`φ₄(4n + 1)` is odd exactly when `n = 5k(3k ± 1)/2` for some integer `k`; the two signs
-are covered by `2n = 5k(3k + 1)` with `k ∈ ℤ` (replace `k` by `-k`).
+**Parity of $\varphi_4(4n+1)$.** Let $\varphi_4(n)$ be the number of generalized Frobenius
+partitions of $n$ in which each integer appears at most $4$ times in each row. For every natural
+number $n$, $\varphi_4(4n + 1)$ is odd if and only if $2n = 5k(3k + 1)$ for some integer $k$,
+that is, $n = 5k(3k \pm 1)/2$ for some integer $k$.
 
 ## Depends on
 
-- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
+- [Frobenius partitions with at most $k$ repetitions](frobenius-partition-rep-count.md)
 
 ## Sources
 

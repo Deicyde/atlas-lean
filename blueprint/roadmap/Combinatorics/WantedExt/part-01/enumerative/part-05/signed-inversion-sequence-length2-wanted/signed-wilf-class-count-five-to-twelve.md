@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.signedWilfClassCount_five_to_twelve
 ---
 
-# Theorem 11
+# Signed Wilf classes of sets of five to twelve patterns
 
-**Theorem 11.** `239 ≤ sw_5 ≤ 240`, `sw_6 = 190`, `sw_7 = 107`, `sw_8 = 49`, `sw_9 = 22`, `sw_10
-= 8`, `sw_11 = 3` and `sw_12 = 1`.
+**Signed Wilf classes of sets of five to twelve patterns.** Let $\mathrm{sw}_k$ be the number
+of Wilf-equivalence classes among the sets of $k$ length-2 signed patterns. Then
+$239 \le \mathrm{sw}_5 \le 240$, $\mathrm{sw}_6 = 190$, $\mathrm{sw}_7 = 107$, $\mathrm{sw}_8 = 49$,
+$\mathrm{sw}_9 = 22$, $\mathrm{sw}_{10} = 8$, $\mathrm{sw}_{11} = 3$ and $\mathrm{sw}_{12} = 1$.
 
 ## Depends on
 
-- [Signed Wilf Class Count](signed-wilf-class-count.md)
+- [Number of signed Wilf classes](signed-wilf-class-count.md)
 
 ## Sources
 

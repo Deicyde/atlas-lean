@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.ascendingNaplesOneCount
 ---
 
-# Ascending Naples One Count
+# Number of ascending $k$-Naples parking functions starting with $1$
 
-`U_{n,k}`: the number of ascending `k`-Naples parking functions of length `n` that start
-with `1` (so `U_{0,k} = 0`).
+**Number of ascending $k$-Naples parking functions starting with $1$.** For natural numbers
+$n$ and $k$, $U_{n,k}$ is the number of weakly increasing $k$-Naples parking functions
+$(a_1, \dots, a_n)$ of length $n$ with $a_1 = 1$; in particular $U_{0,k} = 0$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Naples Parking Function](is-naples-parking-function.md)
-- [Naples Park](naples-park.md)
+- [$k$-Naples parking function](is-naples-parking-function.md)
+- [Naples parking](naples-park.md)
 
 ## Sources
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.bender_asymptotic_normality
 ---
 
-# Bender asymptotic normality
+# Bender's central limit theorem for polynomials with non-positive real zeros
 
-Bender's criterion. Let `A_n(x) = ∏_{i<n} (x + r_{n,i})` with all `r_{n,i} ≥ 0` (a monic
-degree-`n` polynomial whose zeros `-r_{n,i}` are real and non-positive), with coefficients
-`a(n,k)`. Then the normalized coefficient distribution has mean `μ_n = ∑ 1/(1 + r_{n,i})` and
-variance `σ_n^2 = ∑ r_{n,i}/(1 + r_{n,i})^2`, and if `σ_n → ∞` it is asymptotically normal:
-for every real `x`, `∑_{k ≤ μ_n + x σ_n} a(n,k) / ∑_k a(n,k)` tends to the standard normal
-distribution function at `x`.
+**Bender's central limit theorem for polynomials with non-positive real zeros.** For each
+natural number $n$ let $r_{n,0}, \dots, r_{n,n-1}$ be non-negative real numbers, and let $a(n,k)$
+be the coefficient of $x^k$ in the real polynomial $A_n(x) = \prod_{i\lt n} (x + r_{n,i})$. Put
+$\mu_n = \sum_{i\lt n} 1/(1 + r_{n,i})$ and $\sigma_n^2 = \sum_{i\lt n} r_{n,i}/(1 + r_{n,i})^2$, and let
+$\sigma_n \ge 0$ be the square root of $\sigma_n^2$. Then for every $n$,
+$\sum_{k=0}^{n} k\, a(n,k) / \sum_{k=0}^{n} a(n,k) = \mu_n$ and
+$\sum_{k=0}^{n} (k - \mu_n)^2 a(n,k) / \sum_{k=0}^{n} a(n,k) = \sigma_n^2$. Moreover, if
+$\sigma_n^2 \to \infty$ as $n \to \infty$, then for every real $x$,
+$\sum_{0 \le k \le n,\ k \le \mu_n + x \sigma_n} a(n,k) / \sum_{k=0}^{n} a(n,k)$ tends to $\Phi(x)$
+as $n \to \infty$, where $\Phi$ is the distribution function of the standard normal distribution.
 
 ## Depends on
 

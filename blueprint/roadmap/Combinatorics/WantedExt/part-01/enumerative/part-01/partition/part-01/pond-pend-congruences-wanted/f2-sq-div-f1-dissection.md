@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.f2_sq_div_f1_dissection
 ---
 
-# F2 sq div f1 dissection
+# 3-dissection of $f_2^2 / f_1$
 
-`f_2^2 / f_1 = f_6 f_9^2 / (f_3 f_18) + q f_18^2 / f_9`, stated with denominators cleared
-(both sides multiplied by the product of all denominators).
+**3-dissection of $f_2^2 / f_1$.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ denote the
+Euler products in $\mathbb{Z}[[q]]$. Then
+$f_2^2 f_3 f_9 f_{18} = f_1 f_6 f_9^3 + q f_1 f_3 f_{18}^3$.
+
+Since each $f_k$ with $k \ge 1$ has constant term $1$, dividing both sides by
+$f_1 f_3 f_9 f_{18}$ shows that this is equivalent to
+$f_2^2 / f_1 = f_6 f_9^2 / (f_3 f_{18}) + q f_{18}^2 / f_9$.
 
 ## Depends on
 

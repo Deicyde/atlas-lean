@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.regularPartitionCount_four_nine_thirtyTwo_mul_add_twentyFive
 ---
 
-# Regular Partition Count four nine thirty Two mul add twenty Five
+# $b_{4,9}(32n + 25)$ is divisible by $4$
 
-For all `n ≥ 0`, `b_{4,9}(32n + 25) ≡ 0 (mod 4)`.
+**$b_{4,9}(32n + 25)$ is divisible by $4$.** Let $b_{4,9}(n)$ be the number of partitions of
+$n$ with no part divisible by $4$ or by $9$. For every natural number $n$,
+$b_{4,9}(32n + 25) \equiv 0 \pmod 4$.
 
 ## Depends on
 
-- [Regular Partition Count](regular-partition-count.md)
+- [Number of $(\ell, k)$-regular partitions](regular-partition-count.md)
 
 ## Sources
 

@@ -5,20 +5,33 @@ statement: formalized
 lean: MetaMathlibExt.generalizedEulerianP_gamma_eq
 ---
 
-# Theorem 7
+# The gamma coefficients of the generalized Eulerian polynomials count permutations
 
-**Theorem 7.** The gamma coefficients are
-`γ_{n,k}(q, t) = ∑_{w ∈ S_n, exc w = k, dexc w = 0} q^(cyc w) t^(fix w)`: Equation (6) holds
-with these coefficients (for rational `q, t, x, y`, `x ≠ y`), and each is
-`∑_{i, j ≤ n} γ_{n,k,i,j} q^i t^j` with `γ_{n,k,i,j}` the number of `w ∈ S_n` with `exc w = k`,
-`dexc w = 0`, `cyc w = i`, `fix w = j`.
+**The gamma coefficients of the generalized Eulerian polynomials count permutations.** Fix
+$n \ge 0$ and let $P_n(q, t; x, y)$ be the generalized Eulerian polynomial. For a permutation $w$
+of $\{0, 1, \dots, n-1\}$ write $\mathrm{cyc}(w)$ for its number of cycles (fixed points counted
+as cycles), $\mathrm{fix}(w)$ for its number of fixed points, $\mathrm{exc}(w)$ for its number of
+excedances (points $i$ with $w(i) > i$) and $\mathrm{dexc}(w)$ for its number of double
+excedances. For $k \ge 0$ and rational $q, t$ let $\gamma_{n,k}(q, t)$ be the sum of
+$q^{\mathrm{cyc}(w)} t^{\mathrm{fix}(w)}$ over the permutations $w$ of $\{0, 1, \dots, n-1\}$
+with $\mathrm{exc}(w) = k$ and $\mathrm{dexc}(w) = 0$. Then for all rational $q, t, x, y$ with
+$x \ne y$,
+
+$$
+P_n(q, t; x, y) = \sum_{k=0}^{\lfloor n/2 \rfloor} \gamma_{n,k}(q, t) x^k y^k (x + y)^{n - 2k},
+$$
+
+and for every $k \ge 0$ and all rational $q, t$,
+$\gamma_{n,k}(q, t) = \sum_{i=0}^{n} \sum_{j=0}^{n} \gamma_{n,k,i,j} q^i t^j$, where
+$\gamma_{n,k,i,j}$ is the number of permutations $w$ of $\{0, 1, \dots, n-1\}$ with
+$\mathrm{exc}(w) = k$, $\mathrm{dexc}(w) = 0$, $\mathrm{cyc}(w) = i$ and $\mathrm{fix}(w) = j$.
 
 ## Depends on
 
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Double Excedance Count](double-excedance-count.md)
+- [Number of double excedances](double-excedance-count.md)
 - [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Generalized Eulerian P](generalized-eulerian-p.md)
+- [Generalized Eulerian polynomials](generalized-eulerian-p.md)
 
 ## Sources
 

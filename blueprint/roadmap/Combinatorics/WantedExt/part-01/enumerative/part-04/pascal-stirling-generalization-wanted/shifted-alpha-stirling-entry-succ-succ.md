@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.shiftedAlphaStirlingEntry_succ_succ
 ---
 
-# Shifted Alpha Stirling Entry succ succ
+# Recurrence for the shifted α-Stirling entries
 
-The recurrence of `𝖲_α`: `𝖲_{i+1,j+1} = 𝖲_{i+1,j} + α_{j+2} 𝖲_{i,j+1}` (0-based entries).
+**Recurrence for the shifted α-Stirling entries.** Let $R$ be a commutative ring, let
+$\alpha = (\alpha_j)_{j \ge 1}$ be a sequence in $R$, and write $\mathsf{S}_{i,j}$ for the entries
+of the shifted $\alpha$-Stirling matrix of $\alpha$, indexed from $0$. For all natural numbers $i$
+and $j$,
+
+$$\mathsf{S}_{i+1,j+1} = \mathsf{S}_{i+1,j} + \alpha_{j+2} \mathsf{S}_{i,j+1}.$$
 
 ## Depends on
 
-- [Shifted Alpha Stirling Entry](shifted-alpha-stirling-entry.md)
+- [Entries of the shifted α-Stirling matrix](shifted-alpha-stirling-entry.md)
 
 ## Sources
 

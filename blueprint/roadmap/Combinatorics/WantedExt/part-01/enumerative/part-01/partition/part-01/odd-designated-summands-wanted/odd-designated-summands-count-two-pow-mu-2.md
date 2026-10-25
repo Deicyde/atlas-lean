@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsCount_two_pow_mul_eight_mul_add_seven
 ---
 
-# Odd Designated Summands Count two pow mul eight mul add seven
+# $\mathrm{PD}_2(2^\alpha (8n + 7))$ is divisible by 8
 
-For all `α, n ≥ 0`, `PD_2(2^α (8n + 7)) ≡ 0 (mod 8)`.
+**$\mathrm{PD}_2(2^\alpha (8n + 7))$ is divisible by 8.** Write $\mathrm{PD}_2(m)$ for the
+number of partitions of $m$ with designated summands in which every part is odd. For all natural
+numbers $\alpha$ and $n$, $\mathrm{PD}_2(2^\alpha (8n + 7)) \equiv 0 \pmod 8$.
 
 ## Depends on
 
-- [Odd Designated Summands Count](odd-designated-summands-count.md)
+- [The odd designated-summand partition function](odd-designated-summands-count.md)
 
 ## Sources
 

@@ -5,13 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.tsum_baseAdic_weighted_multisection
 ---
 
-# Tsum base Adic weighted multisection
+# Weighted base-B multisection of a series
 
-Weighted base-`B` multisection, sum form: for `B ≥ 2` and weights `φ, χ : ℕ → ℂ`,
-`∑_{j ≥ 0, n ≥ 1} (∑_{k=1}^{B-1} φ(j) c_{(Bn-k) B^j} + χ(j) c_{(Bn) B^j})
-= ∑_{m ≥ 1} (φ(ν_B(m)) + ∑_{k < ν_B(m)} χ(k)) c_m`, where `ν_B(m)` is the largest
-`k` with `B^k ∣ m` (`padicValNat B m`), whenever the two regrouped families are
-summable.
+**Weighted base-B multisection of a series.** Let $B \ge 2$ be a natural number, let
+$\varphi, \chi : \mathbb{N} \to \mathbb{C}$ be weights and let $(c_m)_{m \ge 1}$ be a sequence
+of complex numbers, and for $m \ge 1$ let $\nu_B(m)$ be the largest $k$ with $B^k \mid m$.
+Suppose that the family $\varphi(j) c_{(Bn-k) B^j}$ indexed by the triples $(j, n, k)$ with
+$j \ge 0$, $n \ge 1$ and $1 \le k \le B - 1$ is summable, and that the family
+$\chi(j) c_{Bn \cdot B^j}$ indexed by the pairs $(j, n)$ with $j \ge 0$ and $n \ge 1$ is
+summable. Then
+
+$$\sum_{j \ge 0,\, n \ge 1} \Bigl( \sum_{k=1}^{B-1} \varphi(j) c_{(Bn-k) B^j} +
+\chi(j) c_{Bn \cdot B^j} \Bigr) = \sum_{m \ge 1} \Bigl( \varphi(\nu_B(m)) +
+\sum_{k < \nu_B(m)} \chi(k) \Bigr) c_m.$$
 
 ## Depends on
 

@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.restrictedCombinationCount_multiples_eq_card_strongPerms
 ---
 
-# Restricted Combination Count multiples eq card strong Perms
+# Forbidden differences m, 2m, …, jm and strongly restricted permutations
 
-Theorem 13: for `j, m ≥ 1` the `k`-subsets of `{1, …, n}` with disallowed differences
-`{m, 2m, …, jm}` are equinumerous with the permutations `π` of `ℕ_{n+jm}` with
-`π(i) - i ∈ {-m, 0, jm}` for all `i` that have `k` excedances.
+**Forbidden differences m, 2m, …, jm and strongly restricted permutations.** For natural
+numbers $m \ge 1$, $j \ge 1$, $n$ and $k$, the number of $k$-subsets of $\{1, \dots, n\}$ in
+which no two elements differ by an element of $\{m, 2m, \dots, jm\}$ equals the number of
+permutations $\pi$ of $\{0, 1, \dots, n + jm - 1\}$ such that $\pi(i) - i \in \{-m, 0, jm\}$ for
+every $i$ and $\pi$ has exactly $k$ excedances (points $i$ with $\pi(i) > i$).
 
 ## Depends on
 
 - [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Restricted Combination Count](restricted-combination-count.md)
+- [Number of restricted combinations](restricted-combination-count.md)
 
 ## Sources
 

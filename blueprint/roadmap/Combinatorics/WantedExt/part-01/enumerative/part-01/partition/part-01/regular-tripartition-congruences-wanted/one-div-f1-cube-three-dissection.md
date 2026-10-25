@@ -5,15 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.one_div_f1_cube_three_dissection
 ---
 
-# One div f1 cube three dissection
+# The 3-dissection of $1/f_1^3$
 
-The 3-dissection of `1 / f_1³`:
-`1 / f_1³ = (f_9³ / f_3¹²) (f_1⁶ + 9q f_1³ f_9³ + 27q² f_9⁶)` and
-`1 / f_1³ = f_6² f_9¹⁵ / (f_3¹⁴ f_18⁶) + 3q f_6 f_9¹² / (f_3¹³ f_18³) + 9q² f_9⁹ / f_3¹²
-+ 8q³ f_9⁶ f_18³ / (f_3¹¹ f_6) + 12q⁴ f_9³ f_18⁶ / (f_3¹⁰ f_6²)
-+ 16q⁶ f_18¹² / (f_3⁸ f_6⁴ f_9³)`, both stated with denominators cleared (multiplied by
-`f_1³ f_3¹²`, resp. `f_1³ f_3¹⁴ f_6⁴ f_9³ f_18⁶`). The lemma's first identity (5) is
-`f1_cube_three_dissection`.
+**The 3-dissection of $1/f_1^3$.** For $k \ge 1$ let $f_k = \prod_{m \ge 1} (1 - q^{km})$ be
+the Euler product, an integer power series in $q$. Then
+
+$$
+f_3^{12} = f_1^3 f_9^3 \bigl(f_1^6 + 9q f_1^3 f_9^3 + 27q^2 f_9^6\bigr)
+$$
+
+and
+
+$$
+f_3^{14} f_6^4 f_9^3 f_{18}^6 = f_1^3 \bigl(f_6^6 f_9^{18} + 3q f_3 f_6^5 f_9^{15} f_{18}^3 +
+9q^2 f_3^2 f_6^4 f_9^{12} f_{18}^6 + 8q^3 f_3^3 f_6^3 f_9^9 f_{18}^9 +
+12q^4 f_3^4 f_6^2 f_9^6 f_{18}^{12} + 16q^6 f_3^6 f_{18}^{18}\bigr).
+$$
+
+Since each $f_k$ has constant term $1$ and so is invertible, these are the identities
+$1/f_1^3 = (f_9^3/f_3^{12})(f_1^6 + 9q f_1^3 f_9^3 + 27q^2 f_9^6)$ and
+$1/f_1^3 = f_6^2 f_9^{15}/(f_3^{14} f_{18}^6) + 3q f_6 f_9^{12}/(f_3^{13} f_{18}^3) +
+9q^2 f_9^9/f_3^{12} + 8q^3 f_9^6 f_{18}^3/(f_3^{11} f_6) +
+12q^4 f_9^3 f_{18}^6/(f_3^{10} f_6^2) + 16q^6 f_{18}^{12}/(f_3^8 f_6^4 f_9^3)$, multiplied by
+$f_1^3 f_3^{12}$ and by $f_1^3 f_3^{14} f_6^4 f_9^3 f_{18}^6$ respectively.
 
 ## Depends on
 

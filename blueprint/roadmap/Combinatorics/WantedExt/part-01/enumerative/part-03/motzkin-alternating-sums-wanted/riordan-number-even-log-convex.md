@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.riordanNumber_even_logConvex
 ---
 
-# Riordan Number even log Convex
+# Log-convexity of the even-indexed Riordan numbers
 
-The even-indexed Riordan numbers `r₀, r₂, r₄, …` form a log-convex sequence:
-`r_{2n}² ≤ r_{2n-2} · r_{2n+2}` for every `n ≥ 1`, written here with `n + 1` in place
-of `n`. The Riordan numbers are `MetaMathlibExt.riordanNumber` (`1, 0, 1, 1, 3, 6, 15, …`).
+**Log-convexity of the even-indexed Riordan numbers.** Let $r_n$ denote the $n$-th Riordan
+number. The even-indexed Riordan numbers $r_0, r_2, r_4, \dots$ form a log-convex sequence: for
+every natural number $n$,
+
+$$r_{2n+2}^2 \le r_{2n} \, r_{2n+4}.$$
+
+The Riordan numbers begin $1, 0, 1, 1, 3, 6, 15, \dots$.
 
 ## Depends on
 

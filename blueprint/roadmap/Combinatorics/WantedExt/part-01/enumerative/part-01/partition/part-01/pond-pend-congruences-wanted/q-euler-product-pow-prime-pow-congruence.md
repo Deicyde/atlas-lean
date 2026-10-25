@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.qEulerProduct_pow_prime_pow_congruence
 ---
 
-# Q Euler Product pow prime pow congruence
+# Prime-power congruence for powers of Euler products
 
-For all primes `p` and all `j, k, m ≥ 1`, `f_m^{p^j k} ≡ f_{pm}^{p^{j-1} k} (mod p^j)`,
-coefficientwise.
+**Prime-power congruence for powers of Euler products.** Let $p$ be a prime, let
+$j, k, m \ge 1$ be natural numbers, and let $f_m = \prod_{i \ge 1} (1 - q^{mi})$. Then for every
+natural number $n$, the coefficient of $q^n$ in $f_m^{p^j k}$ is congruent modulo $p^j$ to the
+coefficient of $q^n$ in $f_{pm}^{p^{j-1} k}$.
 
 ## Depends on
 

@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.rectangularGrid_r2_odd
 ---
 
-# Rectangular Grid r2 odd
+# Rectangular-grid tilings fixed by the half-turn, $nm$ odd
 
-For odd `nm`, the half-turn `r²` has one fixed cell and `(nm-1)/2` two-cycles.  The factor
-`tileFixedCount σ 1` is `t_{r²}` and `σ²=1` records the element's order; this covers every action
-of `r²` on the tile set.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Rectangular-grid tilings fixed by the half-turn, $nm$ odd.** Let $n$ and $m$ be positive
+integers with $nm$ odd, let $T$ be a finite set of tiles, let $\sigma$ be a permutation of $T$ with
+$\sigma^2 = 1$, and let $t$ be the number of tiles $d \in T$ with $\sigma(d) = d$. Let $r^2$ be
+the half-turn of $\mathbb{Z}/n \times \mathbb{Z}/m$ given by $r^2(x, y) = (-1 - x, -1 - y)$. Then
+the number of tilings $F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with
+$F(r^2(c)) = \sigma(F(c))$ for every cell $c$ equals $|T|^{(nm-1)/2} \, t$.
 
 ## Depends on
 
-- [Cell R2](cell-r2.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the half-turn r²](cell-r2.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

@@ -5,9 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.TriangularRecurrence
 ---
 
-# Triangular Recurrence
+# Triangular recurrence
 
-The integer parameters `(α, β, γ; α', β', γ')` of the linear recurrence (1).
+**Triangular recurrence.** A triangular recurrence is a tuple
+$(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ of six integers, the parameters of the linear
+recurrence
+
+$$
+a_{n,k} = (\alpha n + \beta k + \gamma)\, a_{n-1,k} +
+  (\alpha' n + \beta' k + \gamma')\, a_{n-1,k-1}.
+$$
 
 ## Depends on
 

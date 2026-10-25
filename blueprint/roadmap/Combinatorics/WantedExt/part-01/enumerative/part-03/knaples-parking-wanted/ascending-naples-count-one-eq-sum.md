@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.ascendingNaplesCount_one_eq_sum
 ---
 
-# Ascending Naples Count one eq sum
+# Counting ascending $1$-Naples parking functions
 
-Theorem 5: `I_{n,1} = ∑_{i=0}^n C_i F_{n-i}`, the convolution of the Catalan and Fine
-numbers (OEIS A000958).
+**Counting ascending $1$-Naples parking functions.** For every natural number $n$, let
+$I_{n,1}$ be the number of weakly increasing $1$-Naples parking functions of length $n$. Then
+
+$$I_{n,1} = \sum_{i=0}^{n} C_i \, F(n - i),$$
+
+where $C_i$ is the $i$-th Catalan number and $F$ is the sequence of Fine numbers, indexed so that
+$F(0) = 1$ and $F(1) = 0$. This is the convolution of the Catalan and Fine numbers (OEIS A000958).
 
 ## Depends on
 
-- [Ascending Naples Count](ascending-naples-count.md)
+- [Number of ascending $k$-Naples parking functions](ascending-naples-count.md)
 - [Fine numbers](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
 
 ## Sources

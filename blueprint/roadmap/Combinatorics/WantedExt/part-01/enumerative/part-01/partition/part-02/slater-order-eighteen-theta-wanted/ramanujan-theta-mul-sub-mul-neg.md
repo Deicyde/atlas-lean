@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTheta_mul_sub_mul_neg
 ---
 
-# Ramanujan Theta mul sub mul neg
+# Ramanujan's theta function: difference of products when $ab = cd$
 
-Second identity of Lemma 2 (Berndt, Entry 29(ii)): if `ab = cd`, `‖ab‖ < 1` and
-`c, d ≠ 0`, then
-`f(a, b) f(c, d) - f(-a, -b) f(-c, -d) = 2a f(b/c, (c/b)abcd) f(b/d, (d/b)abcd)`, written with
-`(c/b)abcd = ac²d` and `(d/b)abcd = acd²`. The hypotheses `c ≠ 0`, `d ≠ 0` make the quotients
-`b/c`, `b/d` meaningful.
+**Ramanujan's theta function: difference of products when $ab = cd$.** Let
+$f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta function. For
+complex numbers $a, b, c, d$ with $ab = cd$, $|ab| < 1$, $c \ne 0$ and $d \ne 0$,
+$f(a,b) f(c,d) - f(-a,-b) f(-c,-d) = 2a \, f(b/c, ac^2 d) \, f(b/d, acd^2)$.
+
+This is Entry 29(ii) of Berndt's *Ramanujan's Notebooks*, where the second arguments are written
+$(c/b)abcd = ac^2 d$ and $(d/b)abcd = acd^2$.
 
 ## Depends on
 

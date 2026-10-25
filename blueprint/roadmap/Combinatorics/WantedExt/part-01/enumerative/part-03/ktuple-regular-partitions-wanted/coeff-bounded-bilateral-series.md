@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.coeff_boundedBilateralSeries
 ---
 
-# Coeff bounded Bilateral Series
+# Coefficients of the bounded bilateral series
 
-The characteristic coefficient equation for `boundedBilateralSeries`: coefficient
-`n` is exactly the stated finite filtered sum over its symmetric integer interval.
-The interval-bound adequacy is specific to the quadratic uses documented above.
+**Coefficients of the bounded bilateral series.** For all functions
+$e, w : \mathbb{Z} \to \mathbb{Z}$ and every natural number $n$, the coefficient of $q^n$ in
+the bounded bilateral series of $e$ and $w$ equals the sum of $w(m)$ over the integers $m$
+with $-n-1 \le m \le n+1$ and $e(m) = n$.
 
 ## Depends on
 
-- [Bounded Bilateral Series](bounded-bilateral-series.md)
+- [Bounded bilateral series](bounded-bilateral-series.md)
 
 ## Sources
 

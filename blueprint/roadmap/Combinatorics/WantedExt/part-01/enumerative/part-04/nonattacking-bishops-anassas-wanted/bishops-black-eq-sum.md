@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.bishopsBlack_eq_sum
 ---
 
-# Bishops Black eq sum
+# Sum formula for bishops on the black squares
 
-Equation (4): `R_K(m, k) = ∑_{j=0}^{k} binom(⌊m/2⌋, j) {m - j, m - k}` for all
-`m, k ≥ 0` (extended Stirling numbers).
+**Sum formula for bishops on the black squares.** Let $R_K(m, k)$ be the number of
+nonattacking placements of $k$ bishops on the black squares $(i, j)$, with $i + j$ odd, of the
+board $\{1, \dots, m\}^2$, and let ${n \brace j}$ be Knuth's extended Stirling numbers of the
+second kind. For all natural numbers $m$ and $k$,
+
+$$R_K(m, k) = \sum_{j=0}^{k} \binom{\lfloor m/2 \rfloor}{j} {m-j \brace m-k}.$$
 
 ## Depends on
 
-- [Bishops Black](bishops-black.md)
-- [Ext Stirling Second](ext-stirling-second.md)
+- [Nonattacking bishops on the black squares](bishops-black.md)
+- [Extended Stirling numbers of the second kind](ext-stirling-second.md)
 
 ## Sources
 

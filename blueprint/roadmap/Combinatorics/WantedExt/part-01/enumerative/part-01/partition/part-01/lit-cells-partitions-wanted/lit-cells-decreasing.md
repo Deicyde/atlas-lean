@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.litCellsDecreasing
 ---
 
-# Lit Cells Decreasing
+# Lit cells of a weakly decreasing bargraph
 
-The number of lit cells of a partition drawn as a weakly decreasing bargraph
-`x_1 ≥ x_2 ≥ ⋯`: `max_i (x_i + i - 1)`, the largest part of its image under Prodinger's
-bijection `x_i ↦ x_i + i - 1` (`0` for the empty partition).
+**Lit cells of a weakly decreasing bargraph.** Let $p$ be a partition of $n$ with $\ell$
+parts $x_1 \ge x_2 \ge \cdots \ge x_\ell$. The number of lit cells of $p$, drawn as a weakly
+decreasing bargraph, is defined as $\max_{1 \le i \le \ell} (x_i + i - 1)$, and as $0$ when $p$
+has no parts. It is the largest part of the image of $p$ under Prodinger's bijection
+$x_i \mapsto x_i + i - 1$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Decreasing Parts](decreasing-parts.md)
+- [Parts of a partition in decreasing order](decreasing-parts.md)
 
 ## Sources
 

@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.card_unicellular_hypermonopoles_finRotate
 ---
 
-# Card unicellular hypermonopoles fin Rotate
+# Unicellular hypermonopoles with a cyclic vertex permutation
 
-Corollary 8: the number of unicellular hypermonopoles `(σ, α)` with
-`σ = (1, …, n)` and `z(α) = k` is `H(n, k)`.
+**Unicellular hypermonopoles with a cyclic vertex permutation.** Let $n$ and $k$ be natural
+numbers, let $\sigma$ be the cyclic permutation $i \mapsto i + 1$ (modulo $n$) of
+$\{0, 1, \dots, n - 1\}$, and write $z(\pi)$ for the number of cycles of a permutation $\pi$,
+fixed points included. Then the number of permutations $\alpha$ of $\{0, 1, \dots, n - 1\}$ with
+$z(\alpha^{-1} \circ \sigma) = 1$ and $z(\alpha) = k$ is the cyclic product number $H(n, k)$.
+
+In the terms of the source, these $\alpha$ are the unicellular hypermonopoles $(\sigma, \alpha)$
+with $\sigma = (1, \dots, n)$ and $z(\alpha) = k$.
 
 ## Depends on
 
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Cyclic Product Number](cyclic-product-number.md)
+- [Cyclic product numbers](cyclic-product-number.md)
 
 ## Sources
 

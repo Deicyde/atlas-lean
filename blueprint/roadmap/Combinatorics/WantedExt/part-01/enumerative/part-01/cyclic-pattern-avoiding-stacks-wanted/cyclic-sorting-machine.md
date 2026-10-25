@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.cyclicSortingMachine
 ---
 
-# Cyclic Sorting Machine
+# Cyclic avoidance machine
 
-The cyclic avoidance machine `SC_[σ] = s ∘ s_[σ]`.
+**Cyclic avoidance machine.** For a sequence $\sigma$, the cyclic avoidance machine
+$SC_{[\sigma]} = s \circ s_{[\sigma]}$ sends a sequence $\pi$ of natural numbers to
+$s(s_{[\sigma]}(\pi))$: it first applies the cyclic-pattern-avoiding stack-sorting map
+$s_{[\sigma]}$, whose stack, read from top to bottom, avoids every rotation of $\sigma$ as a
+pattern, and then West's stack-sorting map $s$, whose stack, read from top to bottom, avoids the
+pattern $21$.
 
 ## Depends on
 
@@ -15,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cyclic Stack Sort](cyclic-stack-sort.md)
-- [West Stack Sort](west-stack-sort.md)
+- [Cyclic-pattern-avoiding stack-sorting map](cyclic-stack-sort.md)
+- [West's stack-sorting map](west-stack-sort.md)
 
 ## Sources
 

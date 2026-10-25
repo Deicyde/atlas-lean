@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.adlerBlockLabels
 ---
 
-# Adler Block Labels
+# Adler block labels
 
-Adler's canonical labels of the nonzero blocks of a type `B` set partition of
-`[-n, n]` (Notation 2.3): the positive `p ≤ n` that are the least positive element of
-their block `P.part p` and smaller than the magnitude of every negative element of that
-block.  From each block pair this keeps exactly the block containing the least
-magnitude as a positive element (step 1), labelled by its least positive element;
-sorting the labels orders the kept blocks `β₁, …, β_m` (step 3).
+**Adler block labels.** Let $n$ be a natural number and $P$ a set partition of the integer
+interval $\{-n, \dots, n\}$; for $x$ in this interval write $P(x)$ for the block of $P$
+containing $x$. The Adler block labels of $P$ are the integers $p$ with $1 \le p \le n$ such
+that $p \le q$ for every positive $q \in P(p)$ and $p < -q$ for every negative $q \in P(p)$;
+that is, $p$ is the least positive element of its block and is smaller than the absolute value
+of every negative element of that block.
+
+For a type $B$ set partition the block containing $0$ is never labelled, and from each pair of
+blocks $\beta \ne -\beta$ exactly the block containing the element of least absolute value as a
+positive element is labelled, by its least positive element; sorting the labels orders these
+kept blocks as $\beta_1, \dots, \beta_m$.
 
 ## Depends on
 

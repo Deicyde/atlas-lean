@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.overcubicTripleCount_congruences_odd_args
 ---
 
-# Overcubic Triple Count congruences odd args
+# Congruences for overcubic partition triples at odd arguments
 
-For all `n, α ≥ 0`: `bt(8n+7) ≡ 0 (mod 32)`, `bt(8n+5) ≡ 0 (mod 8)`,
-`bt(72n+33) ≡ 0 (mod 8)`, `bt(72n+57) ≡ 0 (mod 8)`, and
-`bt(8·9^{α+2} n + 33·9^{α+1}) ≡ 0 (mod 8)`.
+**Congruences for overcubic partition triples at odd arguments.** Let $\mathrm{bt}(n)$ be the
+number of overcubic partition triples of $n$. For all natural numbers $n$ and $\alpha$,
+$\mathrm{bt}(8n+7)$ is divisible by $32$, and each of $\mathrm{bt}(8n+5)$, $\mathrm{bt}(72n+33)$,
+$\mathrm{bt}(72n+57)$ and $\mathrm{bt}(8 \cdot 9^{\alpha+2} n + 33 \cdot 9^{\alpha+1})$ is divisible
+by $8$.
 
 ## Depends on
 
-- [Overcubic Triple Count](overcubic-triple-count.md)
+- [Number of overcubic partition triples](overcubic-triple-count.md)
 
 ## Sources
 

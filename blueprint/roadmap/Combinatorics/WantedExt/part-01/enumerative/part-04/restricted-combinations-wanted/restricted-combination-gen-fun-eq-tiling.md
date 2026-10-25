@@ -5,16 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.restrictedCombination_genFun_eq_tiling_genFun
 ---
 
-# Restricted Combination gen Fun eq tiling gen Fun
+# Generating functions of restricted combinations and restricted-overlap tilings
 
-Corollary 7: with `G(x, y) = ∑ B^Q_{n,k} x^n y^k` and `g^Q(x, y) = ∑ S^Q_{n,k} x^n y^k`,
-`g^Q = (G - (1 - x^q)/(1 - x)) / x^q`, stated as `x^q g^Q = G - ∑_{n<q} x^n` in `(ℤ[y])⟦x⟧`
-(`y` is `Polynomial.X`); the record's `g^Q(x) = g^Q(x, 1)` is notation.
+**Generating functions of restricted combinations and restricted-overlap tilings.** Let $Q$
+be a finite set of natural numbers and let $q$ be its largest element ($q = 0$ if $Q$ is empty).
+Write $S^Q_{n,k}$ for the number of $k$-subsets of $\{1, \dots, n\}$ in which no two elements
+differ by an element of $Q$, and $B^Q_{n,k}$ for the number of restricted-overlap tilings of an
+$n$-board with squares and $k$ $Q$-combs. In the ring $\mathbb{Z}[y][[x]]$ of power series in
+$x$ with coefficients in $\mathbb{Z}[y]$, let
+$g^Q(x, y) = \sum_{n \ge 0} \sum_{k=0}^{n} S^Q_{n,k} x^n y^k$ and
+$G(x, y) = \sum_{n \ge 0} \sum_{k=0}^{n} B^Q_{n,k} x^n y^k$. Then
+
+$$x^q g^Q(x, y) = G(x, y) - \sum_{n=0}^{q-1} x^n.$$
+
+This is the paper's formula $g^Q = \bigl(G - (1 - x^q)/(1 - x)\bigr)/x^q$ with the denominators
+cleared.
 
 ## Depends on
 
-- [Restricted Combination Count](restricted-combination-count.md)
-- [Restricted Overlap Tiling Count](restricted-overlap-tiling-count.md)
+- [Number of restricted combinations](restricted-combination-count.md)
+- [Number of restricted-overlap tilings](restricted-overlap-tiling-count.md)
 
 ## Sources
 

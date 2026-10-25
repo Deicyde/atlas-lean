@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtFirstOccurrence
 ---
 
-# Gijswijt First Occurrence
+# First occurrence of a value in a Gijswijt sequence
 
-The position of the first occurrence of `n` in `A^{(m)}` (`0` if `n` does not occur).
+**First occurrence of a value in a Gijswijt sequence.** For natural numbers $m$ and $n$, the
+first occurrence of $n$ in the $m$th order Gijswijt sequence $A^{(m)}$ is the least position
+$k \ge 1$ with $A^{(m)}(k) = n$, and it is $0$ if $n$ does not occur in $A^{(m)}$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gijswijt Term](gijswijt-term.md)
+- [Terms of the $m$th order Gijswijt sequence](gijswijt-term.md)
 
 ## Sources
 

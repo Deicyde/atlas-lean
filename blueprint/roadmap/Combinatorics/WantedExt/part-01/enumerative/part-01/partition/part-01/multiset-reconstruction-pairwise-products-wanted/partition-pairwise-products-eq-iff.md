@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.Partition.MultisetReconstructionPairwiseProductsWanted.partition_pairwiseProducts_eq_iff
 ---
 
-# Partition pairwise Products eq iff
+# Li's theorem: partitions are determined by their pairwise products
 
-Li's Theorem 1: for partitions of the same positive integer,
-equality of the pairwise-product multisets is equivalent to equality
-of the partitions.
+**Li's theorem: partitions are determined by their pairwise products.** Let $n$ be a positive
+integer and let $\lambda$ and $\mu$ be partitions of $n$. The pairwise products of the parts of
+$\lambda$ and the pairwise products of the parts of $\mu$ form the same multiset if and only if
+$\lambda = \mu$.
 
 ## Depends on
 
-- [Pairwise Products](pairwise-products.md)
+- [Pairwise products of a multiset](pairwise-products.md)
 
 ## Sources
 

@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.standardizeSeq_reductionSeq_examples
 ---
 
-# Standardize Seq reduction Seq examples
+# Standardization and reduction examples
 
-The paper's examples `st(315) = 213` and `red(16783425) = 15324`.
+**Standardization and reduction examples.** The standardization of $315$ is
+$\mathrm{st}(315) = 213$, and the reduction of $16783425$ is $\mathrm{red}(16783425) = 15324$.
+Here $\mathrm{st}$ replaces each entry by its rank, and $\mathrm{red}$ replaces each maximal block
+of adjacent consecutive integers $a, a + 1, \dots, a + k$ by its minimum $a$ and then
+standardizes.
 
 ## Depends on
 
-- [Reduction Seq](reduction-seq.md)
-- [Standardize Seq](standardize-seq.md)
+- [Reduction of a sequence](reduction-seq.md)
+- [Standardization](standardize-seq.md)
 
 ## Sources
 

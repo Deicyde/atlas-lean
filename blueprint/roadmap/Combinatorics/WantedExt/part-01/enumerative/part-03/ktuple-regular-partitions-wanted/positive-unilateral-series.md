@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.positiveUnilateralSeries
 ---
 
-# Positive Unilateral Series
+# Truncated one-sided series
 
-`positiveUnilateralSeries exponent weight` represents a sum indexed by `m ≥ 1`.
-Coefficient `n` checks the finite interval `1,...,n`; this suffices for the square
-exponents in Lemma 5 and Corollary 3.
+**Truncated one-sided series.** For functions $e : \mathbb{N} \to \mathbb{N}$ and
+$w : \mathbb{N} \to \mathbb{Z}$, this is the integer power series whose coefficient of $q^n$ is
+the sum of $w(m)$ over the integers $m$ with $1 \le m \le n$ and $e(m) = n$.
+
+When $e(m) \ge m$ for every $m \ge 1$, as for the square exponents in Lemma 5 and
+Corollary 3, this series is $\sum_{m \ge 1} w(m) q^{e(m)}$.
 
 ## Depends on
 

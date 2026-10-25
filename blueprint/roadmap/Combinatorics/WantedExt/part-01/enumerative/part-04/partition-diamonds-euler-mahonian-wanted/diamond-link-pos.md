@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.diamondLinkPos
 ---
 
-# Diamond Link Pos
+# Position of the $k$th link of a multifold partition diamond
 
-Position (counted from `0`) of the `k`th link of the multifold partition diamond whose
-diamonds have `d₁, …, d_M` folds (`ds = [d₁, …, d_M]`): `∑_{m < k} (d_{m+1} + 1)`.
+**Position of the $k$th link of a multifold partition diamond.** For natural numbers
+$d_1, \dots, d_M$ (the numbers of folds of the $M$ diamonds) and a natural number $k$, the
+position of the $k$th link, counting positions from $0$, is
+$L_k = \sum_{m=1}^{\min(k, M)} (d_m + 1)$. In particular $L_0 = 0$, and
+$L_k = d_1 + \dots + d_M + M$ for every $k \ge M$.
 
 ## Depends on
 

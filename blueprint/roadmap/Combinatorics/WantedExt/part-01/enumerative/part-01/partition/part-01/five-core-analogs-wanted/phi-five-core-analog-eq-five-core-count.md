@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.phiFiveCoreAnalog_eq_fiveCoreCount
 ---
 
-# Phi Five Core Analog eq five Core Count
+# The $\varphi$-analog of the 5-core counts in terms of the 5-core counts
 
-Theorem 2 identities: for every `n ≥ 0`, `ā_5(5n+2) = 4 c_5(5n+1)`,
-`ā_5(5n+3) = 4 c_5(5n+2)`, `ā_5(10n+1) = 2 c_5(10n)`, `ā_5(10n+9) = 2 c_5(10n+8)`,
-`ā_5(20n+6) = 10 c_5(10n+2)` and `ā_5(20n+14) = 10 c_5(10n+6)`.
+**The $\varphi$-analog of the 5-core counts in terms of the 5-core counts.** Let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$, let $c_5(n)$ be the coefficient of $q^n$ in $f_5^5 / f_1$,
+let $\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ and let $\bar a_5(n)$ be the coefficient of
+$q^n$ in $\varphi(-q^5)^5 / \varphi(-q)$. For every natural number $n$,
+$\bar a_5(5n+2) = 4\, c_5(5n+1)$, $\bar a_5(5n+3) = 4\, c_5(5n+2)$,
+$\bar a_5(10n+1) = 2\, c_5(10n)$, $\bar a_5(10n+9) = 2\, c_5(10n+8)$,
+$\bar a_5(20n+6) = 10\, c_5(10n+2)$ and $\bar a_5(20n+14) = 10\, c_5(10n+6)$.
 
 ## Depends on
 
-- [Five Core Count](five-core-count.md)
-- [Phi Five Core Analog](phi-five-core-analog.md)
+- [The 5-core counts](five-core-count.md)
+- [The φ-analog of the 5-core partition function](phi-five-core-analog.md)
 
 ## Sources
 

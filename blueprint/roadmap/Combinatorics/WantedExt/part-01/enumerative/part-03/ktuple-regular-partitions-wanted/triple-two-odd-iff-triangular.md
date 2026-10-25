@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tripleTwo_odd_iff_triangular
 ---
 
-# Triple Two odd iff triangular
+# Parity of triples of 2-regular partitions
 
-Lemma 8: `T₂(n)` is odd exactly when `n` is triangular, i.e. there is a natural
-`m` with `n = m(m+1)/2`.  Oddness is written as remainder one modulo two.  The paper
-says “for some `m`” without specifying a type; taking `m : ℕ` is equivalent because
-the triangular values from integer indices duplicate those from naturals.
+**Parity of triples of 2-regular partitions.** For a natural number $n$, let $T_2(n)$ be the
+number of triples of $2$-regular partitions (partitions with no even part) whose sizes add up to
+$n$. Then $T_2(n)$ is odd if and only if $n$ is a triangular number, that is, $n = m(m+1)/2$
+for some natural number $m$.
+
+Allowing integer $m$ gives no new values, since $m$ and $-m-1$ give the same triangular number.
 
 ## Depends on
 
-- [Triple Regular Partition Count](triple-regular-partition-count.md)
+- [Triples of $\ell$-regular partitions](triple-regular-partition-count.md)
 
 ## Sources
 

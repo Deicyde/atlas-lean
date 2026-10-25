@@ -5,17 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.schreierMultisetCount_formula_and_recurrence
 ---
 
-# Schreier Multiset Count formula and recurrence
+# Formula and recurrence for Schreier-type multisets
 
-Theorem 1: for positive `s, p`, `|A^{(s)}_{p,n}| = ∑_{k=1}^{⌊(sn+1)/(sp+1)⌋}
-binom(n - pk + k - 2, k - 1)` for `1 ≤ n ≤ sp + 1`, and
-`|A^{(s)}_{p,n}| = ∑_{i=0}^s |A^{(s)}_{p,n-1-ip}|` for `n ≥ sp + 2`. In the sum `n ≥ pk`, and the
-natural-number top `n - pk + k - 2` truncates to `0` only at `k = 1`, `n = p`, where the paper's
-`binom(-1, 0) = 1` agrees.
+**Formula and recurrence for Schreier-type multisets.** Let $s, p \ge 1$, and for $n \ge 1$
+let $|A^{(s)}_{p,n}|$ be the number of distinct sub-multisets $F$ of
+$\{1^s, \dots, (n - 1)^s, n\}$ with $n \in F$ and $\min F \ge p|F|$, where $|F|$ counts
+multiplicity. For $1 \le n \le sp + 1$,
+
+$$|A^{(s)}_{p,n}| = \sum_{k=1}^{\lfloor (sn+1)/(sp+1) \rfloor} \binom{n - pk + k - 2}{k - 1},$$
+
+and for $n \ge sp + 2$,
+
+$$|A^{(s)}_{p,n}| = \sum_{i=0}^{s} |A^{(s)}_{p,n-1-ip}|.$$
+
+In the first sum $pk \le n$, so the top $n - pk + k - 2$ is negative only for $k = 1$ and $n = p$,
+where the coefficient is $\binom{-1}{0} = 1$; the natural-number subtraction gives
+$\binom{0}{0} = 1$ there as well.
 
 ## Depends on
 
-- [Schreier Multiset Count](schreier-multiset-count.md)
+- [Number of Schreier-type multisets](schreier-multiset-count.md)
 
 ## Sources
 

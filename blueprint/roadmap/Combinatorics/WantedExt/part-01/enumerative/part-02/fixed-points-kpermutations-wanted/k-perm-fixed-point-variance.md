@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.kPermFixedPoint_variance
 ---
 
-# K Perm Fixed Point variance
+# Variance of the number of fixed points of a permutation with a given number of cycles
 
-Proposition 4 (variance): with `μ_{n,k} = n c(n - 1, k - 1) / c(n, k)`, the variance of the
-number of fixed points of a uniform `k`-permutation of `[n]` is
-`σ²_{n,k} = μ_{n,k} (1 + μ_{n-1,k-1} - μ_{n,k})`, for `n ≥ k ≥ 2` (so that `μ_{n-1,k-1}` is
-defined).
+**Variance of the number of fixed points of a permutation with a given number of cycles.**
+Write $a(n, k, j)$ for the number of permutations of an $n$-element set with exactly $k$ cycles
+(fixed points counted as cycles of length one) and exactly $j$ fixed points, $c(n, k)$ for the
+unsigned Stirling number of the first kind (the number of permutations of an $n$-element set
+with $k$ cycles), and $\mu_{n,k} = n \, c(n - 1, k - 1) / c(n, k)$. If $2 \le k \le n$, then
+$\frac{1}{c(n, k)} \sum_{j=0}^{k} j^2 \, a(n, k, j) - \mu_{n,k}^2 =
+\mu_{n,k} (1 + \mu_{n-1,k-1} - \mu_{n,k})$.
+
+Here $\mu_{n,k}$ is the mean number of fixed points of a uniformly random permutation of an
+$n$-element set with $k$ cycles, so the left side is the variance of that number.
 
 ## Depends on
 
-- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
+- [Permutations counted by cycles and fixed points](k-perm-fixed-point-count.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsKDyckPath
 ---
 
-# Is KDyck Path
+# $k$-Dyck path
 
-A `k`-Dyck path of length `n`: a path of `2n` Up/Down steps ending at height `0` that
-never goes below the line `y = -k` and ends with a Down step.
+**$k$-Dyck path.** Let $n$ and $k$ be natural numbers. A lattice path of $2n$ steps, each
+an Up step $(1, 1)$ or a Down step $(1, -1)$, is a $k$-Dyck path of semilength $n$ if its height
+after all $2n$ steps is $0$, its height after its first $j$ steps is at least $-k$ for every
+$j \le 2n$, and, when $n \ge 1$, its last step is a Down step.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lattice Height](lattice-height.md)
+- [Height of a lattice path](lattice-height.md)
 
 ## Sources
 

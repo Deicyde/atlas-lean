@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.alphaUpperEntry_eq_hsymm
 ---
 
-# Alpha Upper Entry eq hsymm
+# α-upper entries are complete homogeneous symmetric polynomials
 
-Lemma 1, entry formula: for `j ≥ i ≥ 1` (1-based), `𝖴_{i,j} = h_{i-1}(α_i, …, α_j)`, the
-complete homogeneous symmetric polynomial `MvPolynomial.hsymm`; in 0-based indices `i ≤ j`,
-`𝖴_{i,j} = h_i(α_{i+1}, …, α_{j+1})`. In particular `𝖴_{i,i} = α_{i+1}^i`.
+**α-upper entries are complete homogeneous symmetric polynomials.** Let $R$ be a commutative
+ring, let $\alpha$ be a sequence in $R$, and let $u_{i,j}$ ($i, j \ge 0$) be the α-upper entries
+of $\alpha$. For all $i \le j$, $u_{i,j} = h_i(\alpha_{i+1}, \alpha_{i+2}, \dots, \alpha_{j+1})$,
+where $h_i$ is the complete homogeneous symmetric polynomial of degree $i$ in $j - i + 1$
+variables.
+
+Writing $\mathsf{U}_{i,j}$ for the entries of the paper's matrix $\mathsf{U}_\alpha(n)$ in its
+$1$-based indexing, this reads $\mathsf{U}_{i,j} = h_{i-1}(\alpha_i, \dots, \alpha_j)$ for
+$j \ge i \ge 1$.
 
 ## Depends on
 
-- [Alpha Upper Entry](alpha-upper-entry.md)
+- [Entries of the α-upper matrix](alpha-upper-entry.md)
 
 ## Sources
 

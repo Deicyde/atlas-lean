@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.TriangularRecurrence.weight
 ---
 
-# Weight
+# First weight of a triangular recurrence
 
-The first weight `α(n + 1) + βk + γ`, the divisor in Definition 1.
+**First weight of a triangular recurrence.** For a triangular recurrence with parameters
+$(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ and integers $n, k$, the first weight is the
+rational number $\alpha(n + 1) + \beta k + \gamma$.
+
+It is the divisor in the recurrence defining the negative-positive number $a^{NP}_{n,k}$.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
+- [Triangular recurrence](triangular-recurrence.md)
 
 ## Sources
 

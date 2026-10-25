@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.card_nonattackingPlacements_zero
 ---
 
-# Card nonattacking Placements zero
+# Exactly one nonattacking placement of no pieces
 
-There is exactly one placement of no pieces.
+**Exactly one nonattacking placement of no pieces.** For every board $B$, a finite set of
+squares of $\mathbb{Z}^2$, and every list $M$ of basic moves in $\mathbb{Z}^2$, there is
+exactly one nonattacking placement of $0$ pieces with basic moves $M$ on $B$.
 
 ## Depends on
 
-- [Nonattacking Placements](nonattacking-placements.md)
+- [Nonattacking placements](nonattacking-placements.md)
 
 ## Sources
 

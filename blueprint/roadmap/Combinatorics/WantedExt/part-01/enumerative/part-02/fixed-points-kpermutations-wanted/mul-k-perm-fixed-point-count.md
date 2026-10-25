@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.mul_kPermFixedPointCount
 ---
 
-# Mul k Perm Fixed Point Count
+# Recurrence for permutations counted by cycles and fixed points
 
-Proposition 3 (iii): `j a(n, k, j) = n a(n - 1, k - 1, j - 1)` for `1 ≤ j ≤ k`.
+**Recurrence for permutations counted by cycles and fixed points.** Write $a(n, k, j)$ for the
+number of permutations of an $n$-element set with exactly $k$ cycles (fixed points counted as
+cycles of length one) and exactly $j$ fixed points. For all natural numbers $n$, $k$ and $j$
+with $1 \le j \le k$, $j \, a(n, k, j) = n \, a(n - 1, k - 1, j - 1)$, where $n - 1$ is read as
+$0$ when $n = 0$.
 
-The paper assumes `n ≥ k ≥ 1`; the identity is stated for all `n`.
+The paper assumes $n \ge k \ge 1$; the identity holds for all $n$.
 
 ## Depends on
 
-- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
+- [Permutations counted by cycles and fixed points](k-perm-fixed-point-count.md)
 
 ## Sources
 

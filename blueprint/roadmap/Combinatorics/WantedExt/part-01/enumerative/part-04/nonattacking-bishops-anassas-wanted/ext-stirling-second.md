@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.extStirlingSecond
 ---
 
-# Ext Stirling Second
+# Extended Stirling numbers of the second kind
 
-Knuth's extension of the Stirling numbers of the second kind to integer arguments:
-`{n, k}` for `n, k ≥ 0`, the unsigned Stirling number of the first kind `[-k, -n]` for
-`n, k < 0`, and `0` otherwise.
+**Extended Stirling numbers of the second kind.** Knuth's extended Stirling number of the
+second kind at integers $n$ and $k$ is the natural number equal to the Stirling number of the
+second kind $S(n, k)$ if $n \ge 0$ and $k \ge 0$, equal to the unsigned Stirling number of the
+first kind $c(-k, -n)$ if $n < 0$ and $k < 0$, and equal to $0$ otherwise. Here $c(j, i)$ is the
+number of permutations of $j$ elements with exactly $i$ cycles.
 
 ## Depends on
 

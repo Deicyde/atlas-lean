@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.seven_pow_dvd_garvanM
 ---
 
-# Lemma 3
+# Garvan's 7-adic bounds for the matrix $m_{i,j}$
 
-**Lemma 3** (Garvan). For `i, j ≥ 1`, `7^{⌊(7j - 2i - 1)/4⌋} ∣ m_{i,j}`, and in particular
-`7^{⌊(7j-i-1)/4⌋} ∣ m_{4i,i+j}`, `7^{⌊(7j-i-3)/4⌋} ∣ m_{4i+1,i+j}`,
-`7^{⌊(7j-i-5)/4⌋} ∣ m_{4i+2,i+j}`. The paper's `π(n) ≥ e` (`π(0) = ∞`) is stated as
-`7^e ∣ n`; `[·]` is read as the floor (the ceiling reading fails: `m_{2,1} = 10` has
-`π = 0 < ⌈2/4⌉ = 1`). A negative floor is replaced by
-`0` (natural subtraction), which gives the same statement.
+**Garvan's 7-adic bounds for the matrix $m_{i,j}$.** Let $m_{i,j}$ be Garvan's matrix. For
+all $i, j \ge 1$, $7^{\lfloor (7j - 2i - 1)/4 \rfloor}$ divides $m_{i,j}$, and in particular
+$7^{\lfloor (7j - i - 1)/4 \rfloor}$ divides $m_{4i,i+j}$, $7^{\lfloor (7j - i - 3)/4 \rfloor}$
+divides $m_{4i+1,i+j}$ and $7^{\lfloor (7j - i - 5)/4 \rfloor}$ divides $m_{4i+2,i+j}$. A negative
+exponent is replaced by $0$, which gives the same statement.
+
+The paper states the bounds as $\pi(n) \ge e$ for the $7$-adic valuation $\pi$ (with
+$\pi(0) = \infty$), which is the divisibility $7^e \mid n$. Its bracket is read as the floor: the
+ceiling reading fails, since $m_{2,1} = 10$ is not divisible by $7^{\lceil 2/4 \rceil} = 7$.
 
 ## Depends on
 
-- [Garvan M](garvan-m.md)
+- [Garvan's matrix](garvan-m.md)
 
 ## Sources
 

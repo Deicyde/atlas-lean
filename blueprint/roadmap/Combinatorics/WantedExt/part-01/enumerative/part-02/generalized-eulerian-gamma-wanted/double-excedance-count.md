@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.doubleExcedanceCount
 ---
 
-# Double Excedance Count
+# Number of double excedances
 
-The number `dexc(w)` of double excedances, the `i` with `w⁻¹(i) < i < w(i)`.
+**Number of double excedances.** For a permutation $w$ of $\{0, 1, \dots, n-1\}$, a double
+excedance of $w$ is a point $i$ with $w^{-1}(i) < i < w(i)$, and $\mathrm{dexc}(w)$ is the
+number of double excedances of $w$.
 
 ## Depends on
 

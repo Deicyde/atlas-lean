@@ -5,17 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.sabarNumber_central_eq_fineNumber
 ---
 
-# Sabar Number central eq fine Number
+# Central entries of Sabar's triangle and Fine numbers
 
-Theorem 5: for `n ≥ 1`, the central coefficients
-`s(2n, n) = (1/6) C(2n+2, n+1) + (2/3) f_n + (-1)^{n+1} = (1/3)(2n+1) C(n) + (2/3) f_n + (-1)^{n+1}
-= (2/3) C(2n, n) - (1/3) f_{n-1} + (-1)^{n+1}`, and consequently
-`s(2n-1, n) = (2/3) C(2n-1, n) + (1/3) f_{n-1} + (-1)^n`; all four as a conjunction.
+**Central entries of Sabar's triangle and Fine numbers.** Let $F(m)$ denote the Fine numbers
+and $C_m$ the Catalan numbers. For every natural number $n \ge 1$, the entries of Sabar's
+triangle $s$ satisfy
+
+$$s(2n, n) = \frac{1}{6} \binom{2n+2}{n+1} + \frac{2}{3} F(n) + (-1)^{n+1},$$
+
+
+
+$$s(2n, n) = \frac{1}{3} (2n+1) C_n + \frac{2}{3} F(n) + (-1)^{n+1},$$
+
+
+
+$$s(2n, n) = \frac{2}{3} \binom{2n}{n} - \frac{1}{3} F(n-1) + (-1)^{n+1},$$
+
+and
+
+$$s(2n-1, n) = \frac{2}{3} \binom{2n-1}{n} + \frac{1}{3} F(n-1) + (-1)^n.$$
 
 ## Depends on
 
 - [Fine numbers](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
-- [Sabar Number](sabar-number.md)
+- [Sabar's triangle](sabar-number.md)
 
 ## Sources
 

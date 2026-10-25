@@ -4,7 +4,7 @@ navigation: module
 
 # Ramanujan Mex Partition Congruences
 
-- [Partition Mex](partition-mex.md)
-- [Mex Partition Number](mex-partition-number.md)
-- [Ramanujan Delta](ramanujan-delta.md)
-- [Ramanujan mex partition congruences](ramanujan-mex-partition-congruences.md)
+- [Mex of a partition in a residue class](partition-mex.md)
+- [Mex-related partition function of Andrews and Newman](mex-partition-number.md)
+- [Least inverse of 24 modulo a power](ramanujan-delta.md)
+- [Ramanujan congruences for mex-related partition functions](ramanujan-mex-partition-congruences.md)

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.arcsinAntiderivQCoeff_self
 ---
 
-# Arcsin Antideriv QCoeff self
+# Leading coefficient of a Q-polynomial
 
-`q_l = -4/l` for `l ≥ 1`.
+**Leading coefficient of a Q-polynomial.** For every natural number $l \ge 1$, the coefficient
+$q_l = q_{l,l}$ of $x^l$ in Zurita's polynomial $Q_l$ equals $-4/l$.
 
 ## Depends on
 
-- [Arcsin Antideriv QCoeff](arcsin-antideriv-qcoeff.md)
+- [Coefficients of Zurita's Q-polynomials](arcsin-antideriv-qcoeff.md)
 
 ## Sources
 

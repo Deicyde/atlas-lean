@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.mem_multisetsWithSizeSum
 ---
 
-# Mem multisets With Size Sum
+# Membership in the multisets with a given size sum
 
-Membership in `multisetsWithSizeSum L n` when every listed part has positive size: the
-multisets whose elements all lie in `L` and whose sizes sum to `n`.
+**Membership in the multisets with a given size sum.** Let $L$ be a list of pairs of natural
+numbers in which every pair $(k, j)$ has size $k \ge 1$, and let $n$ be a natural number. A
+multiset $s$ of pairs belongs to the set of multisets drawn from $L$ with size sum $n$ if and only
+if every element of $s$ lies in $L$ and the sizes of the elements of $s$, counted with
+multiplicity, sum to $n$.
 
 ## Depends on
 
-- [Multisets With Size Sum](multisets-with-size-sum.md)
+- [Multisets of parts with a given size sum](multisets-with-size-sum.md)
 
 ## Sources
 

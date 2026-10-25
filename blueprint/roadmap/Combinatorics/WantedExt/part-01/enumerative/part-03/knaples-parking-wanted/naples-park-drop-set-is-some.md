@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.naplesPark_drop_set_isSome
 ---
 
-# Naples Park drop set is Some
+# Remaining cars still park after moving a car to an earlier spot
 
-Lemma 2.3 (published as Lemma 2): let `α` be a `k`-Naples parking function whose cars park
-in the spots `d_1, …, d_n`. Take the first `i` cars as already parked, in the spots `d_j`
-except for one car `l ≤ i`, which sits in a free spot `q` with `1 ≤ q < d_l`. Then the
-remaining cars `a_{i+1}, …, a_n` all park under the `k`-Naples rule (the `i`-filled preference
-is a `k`-Naples parking function). Indices are `0`-based; `naplesPark` returns the spots most
-recent first.
+**Remaining cars still park after moving a car to an earlier spot.** Let $(a_1, \dots, a_n)$
+be a parking preference with $1 \le a_j \le n$ for every $j$, with which all $n$ cars, arriving in
+order into an empty lot, park under the $k$-Naples rule on the spots $1, \dots, n$, car $j$ in
+spot $d_j$. Let $1 \le l \le i \le n$, and let $q$ be a spot with $1 \le q < d_l$ and $q \ne d_j$
+for every $j \le i$ with $j \ne l$. If exactly the spots $d_1, \dots, d_i$, with $d_l$ replaced
+by $q$, are occupied, then the remaining cars $a_{i+1}, \dots, a_n$, arriving in order, all park
+under the $k$-Naples rule.
 
 ## Depends on
 
-- [Naples Park](naples-park.md)
+- [Naples parking](naples-park.md)
 
 ## Sources
 

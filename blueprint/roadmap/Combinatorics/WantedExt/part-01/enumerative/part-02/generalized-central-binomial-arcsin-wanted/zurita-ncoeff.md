@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.zuritaNCoeff
 ---
 
-# Zurita NCoeff
+# Coefficients of Zurita's polynomial $N_{n-2}$
 
-The coefficient `m_k / (2(k - n + 1))` of `N_{n-2}(x) = (1/2) ∑_{k=0}^{n-2} m_k x^k/(k - n + 1)`.
+**Coefficients of Zurita's polynomial $N_{n-2}$.** For natural numbers $n$ and $k$, let $m_k$
+be Zurita's coefficient, given by $m_0 = 2/(2n - 1)$ and
+$m_k = \frac{2(k - n)}{2k - 2n + 1}\, m_{k-1}$ for $k \ge 1$. This is the rational number
+$m_k / (2(k - n + 1))$, taken to be $0$ when $k = n - 1$. For $k \le n - 2$ it is the
+coefficient of $x^k$ in $N_{n-2}(x) = \frac12 \sum_{i=0}^{n-2} \frac{m_i x^i}{i - n + 1}$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zurita MCoeff](zurita-mcoeff.md)
+- [Zurita's coefficients $m_k$](zurita-mcoeff.md)
 
 ## Sources
 

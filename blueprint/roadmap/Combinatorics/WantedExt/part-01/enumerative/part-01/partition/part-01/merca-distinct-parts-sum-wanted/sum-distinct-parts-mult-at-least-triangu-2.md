@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsMultAtLeast_triangular_eq_nonnegCrank
 ---
 
-# Sum Distinct Parts Mult At Least triangular eq nonneg Crank
+# Signed triangular sum of $s_m$ and nonnegative crank
 
-For `m ≥ 1`, `∑_{j ≥ 0} (-1)^j s_m(n - j(j+1)/2) = ∑_{j ≥ 0} j C(n - mj)`, with `C(k)` the
-number of partitions of `k` with nonnegative crank. The paper says `m ≥ 0`; for `m = 0` the
-right side diverges. Part (ii) (with `D(k)`, positive crank) is omitted: it is false for this
-crank (`m = 1`, `n = 2`: left side `s_1(1) = 1`, right side `D(1) + 2 D(0) = 0`).
+**Signed triangular sum of $s_m$ and nonnegative crank.** Let $m \ge 1$ and $n$ be natural
+numbers. Write $s_m(k)$ for the sum of the different parts that appear at least $m$ times in
+partitions of $k$, and $C(k)$ for the number of partitions of $k$ with nonnegative crank. Then
+
+$$
+\sum_{j \ge 0,\ j(j+1)/2 \le n} (-1)^j s_m\bigl(n - j(j+1)/2\bigr)
+= \sum_{j \ge 0,\ mj \le n} j\, C(n - mj).
+$$
+
+The paper says $m \ge 0$; for $m = 0$ the right side diverges. Part (ii) (with $D(k)$, positive
+crank) is omitted: it is false for this crank ($m = 1$, $n = 2$: left side $s_1(1) = 1$, right
+side $D(1) + 2 D(0) = 0$).
 
 ## Depends on
 
-- [Partition Crank](partition-crank.md)
-- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
+- [Crank of a partition](partition-crank.md)
+- [Sum of different parts appearing at least $m$ times](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

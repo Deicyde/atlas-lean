@@ -5,21 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.kBoxPaths
 ---
 
-# K Box Paths
+# $k$-box paths
 
-`B_n^{(k)}`: the `k`-box paths of size `n`, i.e. skew Dyck paths of semilength
-`(k+2)n - 1` with exactly `n` factors `U D^k L`. (For `n = 0` the truncated
-semilength is `0` and the set is `{ε}`; the statements below take `n ≥ 1`.)
+**$k$-box paths.** For natural numbers $k$ and $n$, the set $B_n^{(k)}$ of $k$-box paths of
+size $n$ consists of the skew Dyck paths of semilength $(k+2)n - 1$ that contain exactly $n$
+occurrences of the factor $U D^k L$. The subtraction is truncated at $0$, so $B_0^{(k)}$
+consists of the empty path alone.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
+- [Skew Dyck steps](skew-dyck-step.md)
 
 ## Proof depends on
 
-- [Box Factor](box-factor.md)
-- [Skew Dyck Words](skew-dyck-words.md)
-- [Skew Factor Count](skew-factor-count.md)
+- [The $k$-box factor](box-factor.md)
+- [Skew Dyck paths of semilength $m$](skew-dyck-words.md)
+- [Occurrences of a factor in a skew Dyck word](skew-factor-count.md)
 
 ## Sources
 

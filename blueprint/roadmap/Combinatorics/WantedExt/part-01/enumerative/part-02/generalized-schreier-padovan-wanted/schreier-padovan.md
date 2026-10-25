@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.schreierPadovan
 ---
 
-# Schreier Padovan
+# Padovan-like sequence for Schreier sets
 
-The Padovan-like sequence `a_{p,q,n}`: for `p ≥ q`, `a_n = 0` for `n < p - q` and `a_n = 1`
-for `p - q ≤ n < p + q`; for `p < q`, `a_n = 1` for `n < 2p` and `a_n = 2` for
-`2p ≤ n < p + q`; and `a_n = a_{n-q} + a_{n-p-q}` for `n ≥ p + q` (when `q ≥ 1`).
+**Padovan-like sequence for Schreier sets.** For natural numbers $p$ and $q$, the sequence
+$a_{p,q,n}$, $n \ge 0$, is defined as follows. If $q \ge 1$ and $n \ge p + q$, then
+$a_{p,q,n} = a_{p,q,n-q} + a_{p,q,n-p-q}$. Otherwise, if $p \ge q$, then $a_{p,q,n} = 0$ for
+$n < p - q$ and $a_{p,q,n} = 1$ for $n \ge p - q$; and if $p < q$, then $a_{p,q,n} = 1$ for
+$n < 2p$ and $a_{p,q,n} = 2$ for $n \ge 2p$.
 
 ## Depends on
 

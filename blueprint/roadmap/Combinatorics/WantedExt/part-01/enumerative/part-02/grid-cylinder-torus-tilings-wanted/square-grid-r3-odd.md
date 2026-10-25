@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.squareGrid_r3_odd
 ---
 
-# Square Grid r3 odd
+# Square-grid tilings fixed by the rotation $r^3$, odd $n$
 
-For odd `n`, `r³` has one fixed cell and `(n²-1)/4` four-cycles.  Its fixed-cell factor is
-`tileFixedCount σ 1`, with `σ⁴=1` as the appropriate order hypothesis.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-grid tilings fixed by the rotation $r^3$, odd $n$.** Let $n$ be an odd positive
+integer, let $T$ be a finite set of tile designs, and let $\sigma$ be a permutation of $T$ with
+$\sigma^4 = 1$. Let $r^3$ be the cell map $(x, y) \mapsto (y, -1-x)$ of the $n \times n$ grid
+$(\mathbb{Z}/n\mathbb{Z})^2$. Then the number of tilings $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$
+with $F(r^3(c)) = \sigma(F(c))$ for every cell $c$ equals $|T|^{(n^2-1)/4} \, t$, where $t$ is the
+number of designs in $T$ fixed by $\sigma$.
 
 ## Depends on
 
-- [Cell R3](cell-r3.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the three-quarter turn r³](cell-r3.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

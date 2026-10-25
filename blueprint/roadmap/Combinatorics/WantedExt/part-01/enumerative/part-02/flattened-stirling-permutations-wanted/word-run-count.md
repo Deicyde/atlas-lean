@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.wordRunCount
 ---
 
-# Word Run Count
+# Number of runs of a word
 
-The number of runs of a word.
+**Number of runs of a word.** A run of a word $w = w_0 w_1 \cdots w_{m-1}$ of natural numbers is
+a maximal contiguous weakly increasing subword. The number of runs of $w$ is the number of
+positions $i < m$ that start a run, that is, with $i = 0$ or $w_{i-1} > w_i$; the empty word has
+no runs.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Word Run Start](word-run-start.md)
+- [Start of a run](word-run-start.md)
 
 ## Sources
 

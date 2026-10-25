@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.IncompleteBinomialHarmonicSumsWanted.centralBinomWeightedSum
 ---
 
-# Central Binom Weighted Sum
+# Kollár's auxiliary sum $D_n$
 
-Kollár's auxiliary sum
-`Dₙ = ∑ k ∈ [1,n], (2k).choose k / ((2 * k) * 2 ^ (2 * k))`.
+**Kollár's auxiliary sum $D_n$.** For a natural number $n$, $D_n$ is the rational number
+$D_n = \sum_{k=1}^{n} \frac{\binom{2k}{k}}{2k \cdot 2^{2k}}$.
 
 ## Depends on
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.tsum_baseAdic_multiples_regroup
 ---
 
-# Tsum base Adic multiples regroup
+# Regrouping the multiples of B by their B-adic factorization
 
-The multiples of `B` regrouped by their `B`-adic factorization, sum form: for
-`B ≥ 2`, `∑_{j ≥ 1, n ≥ 1} ∑_{k=1}^{B-1} c_{(Bn-k) B^j} = ∑_{m ≥ 1} c_{Bm}`, for `c`
-summable along the multiples of `B`.
+**Regrouping the multiples of B by their B-adic factorization.** Let $B \ge 2$ be a natural
+number and let $(c_m)_{m \ge 1}$ be a sequence of complex numbers such that the family
+$(c_{Bm})_{m \ge 1}$ is summable. Then
+
+$$\sum_{j \ge 1,\, n \ge 1} \sum_{k=1}^{B-1} c_{(Bn-k) B^j} = \sum_{m \ge 1} c_{Bm},$$
+
+where the outer sum on the left is an unconditional sum over the pairs $(j, n)$.
 
 ## Depends on
 

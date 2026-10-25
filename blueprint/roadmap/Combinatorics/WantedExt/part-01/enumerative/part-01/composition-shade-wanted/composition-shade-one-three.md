@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.compositionShade_one_three
 ---
 
-# Composition Shade one three
+# Shade of the composition 1 + 3
 
-The composition `1 + 3` has `3` shaded cells, all to the right of the bargraph.
+**Shade of the composition 1 + 3.** The composition $1 + 3$ has shade $3$: its bargraph
+has $3$ shaded cells.
+
+All three shaded cells lie to the right of the bargraph.
 
 ## Depends on
 
-- [Composition Shade](composition-shade.md)
+- [Shade of a composition](composition-shade.md)
 
 ## Sources
 

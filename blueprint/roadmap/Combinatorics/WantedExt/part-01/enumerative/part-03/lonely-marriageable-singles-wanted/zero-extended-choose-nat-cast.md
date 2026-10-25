@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.zeroExtendedChoose_natCast
 ---
 
-# Zero Extended Choose nat Cast
+# The zero-extended binomial coefficient on natural numbers
 
-On natural arguments `zeroExtendedChoose` is `Nat.choose`.
+**The zero-extended binomial coefficient on natural numbers.** Extend the binomial coefficient
+$\binom{a}{b}$ to all integers $a$, $b$ by setting it to $0$ when $a < 0$ or $b < 0$. For all
+natural numbers $a$ and $b$, this extended binomial coefficient at $a$ and $b$ viewed as integers
+equals the usual binomial coefficient $\binom{a}{b}$.
 
 ## Depends on
 
-- [Zero Extended Choose](zero-extended-choose.md)
+- [Zero-extended binomial coefficient](zero-extended-choose.md)
 
 ## Sources
 

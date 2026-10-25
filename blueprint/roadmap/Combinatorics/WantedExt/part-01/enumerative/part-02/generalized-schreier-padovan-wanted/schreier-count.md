@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.schreierCount
 ---
 
-# Schreier Count
+# Number of (p, q)-Schreier sets with given maximum
 
-`|S^{p/q}_n|`, the number of `(p, q)`-Schreier sets with maximum `n`: subsets
-`F ⊆ {1, …, n}` with `n ∈ F` and `p |F| ≤ q x` for all `x ∈ F` (that is, `q min F ≥ p |F|`).
+**Number of (p, q)-Schreier sets with given maximum.** For natural numbers $p$, $q$ and $n$,
+$|S^{p/q}_n|$ is the number of $(p, q)$-Schreier sets with maximum $n$, that is, of subsets
+$F \subseteq \{1, \dots, n\}$ with $n \in F$ and $p|F| \le qx$ for every $x \in F$ (equivalently,
+$p|F| \le q \min F$).
 
 ## Depends on
 

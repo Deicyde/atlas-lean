@@ -6,17 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.cellF_involutive
 ---
 
-# Cell F involutive
+# The reflection f of grid cells is an involution
 
-Applying the cell reflection `f` twice returns every cell to itself.  This is the
-characteristic involution fact for the new definition `cellF`; the equality is coordinatewise in
-the two modular rings and does not require a positivity assumption on either modulus.
-
-Formalization deviation: none beyond the representation choices stated above.
+**The reflection f of grid cells is an involution.** For all natural numbers $n$ and $m$ and
+every cell $c = (x, y) \in \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z}$, applying the cell
+map $(x, y) \mapsto (-1 - x, y)$ of the reflection $f$ twice returns $c$.
 
 ## Depends on
 
-- [Cell F](cell-f.md)
+- [Cell map of the reflection f](cell-f.md)
 
 ## Sources
 

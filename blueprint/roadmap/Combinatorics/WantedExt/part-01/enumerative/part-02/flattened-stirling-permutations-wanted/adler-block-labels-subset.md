@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.adlerBlockLabels_subset
 ---
 
-# Adler Block Labels subset
+# Adler labels lie in $\{1, \dots, n\}$
 
-The labels of Adler's kept blocks are positive and at most `n`.
+**Adler labels lie in $\{1, \dots, n\}$.** For every natural number $n$ and every set
+partition $P$ of $\{-n, \dots, n\}$, every Adler block label $p$ of $P$ is an integer with
+$1 \le p \le n$.
 
 ## Depends on
 
-- [Adler Block Labels](adler-block-labels.md)
+- [Adler block labels](adler-block-labels.md)
 
 ## Sources
 

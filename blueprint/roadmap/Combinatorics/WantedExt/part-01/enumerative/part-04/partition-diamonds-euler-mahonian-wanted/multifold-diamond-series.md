@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.multifoldDiamondSeries
 ---
 
-# Multifold Diamond Series
+# The bivariate series of multifold partition diamonds
 
-The bivariate generating function `σ_{d₁,…,d_M}(a, b) = ∑ a^{fold sum} b^{link sum}` in
-`ℤ⟦a, b⟧` (`a = X 0`, `b = X 1`); `σ_{d,M}` is the case `ds = [d, …, d]` (`M` copies).
+**The bivariate series of multifold partition diamonds.** For natural numbers
+$d_1, \dots, d_M$, $\sigma_{d_1, \dots, d_M}(a, b)$ is the formal power series in
+$\mathbb{Z}[[a, b]]$ whose coefficient of $a^i b^j$ is the number of multifold partition diamonds
+of shape $(d_1, \dots, d_M)$ with fold sum $i$ and link sum $j$. That is,
+$\sigma_{d_1, \dots, d_M}(a, b) = \sum a^{\text{fold sum}} b^{\text{link sum}}$, summed over all
+such diamonds. We write $\sigma_{d,M}$ for the case $d_1 = \dots = d_M = d$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Multifold Diamond Count](multifold-diamond-count.md)
+- [Number of multifold partition diamonds](multifold-diamond-count.md)
 
 ## Sources
 

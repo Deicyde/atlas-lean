@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.signedWilfClassCount_three
 ---
 
-# Theorem 2
+# Signed Wilf classes of sets of three patterns
 
-**Theorem 2.** `sw_3 = 93`.
+**Signed Wilf classes of sets of three patterns.** The number $\mathrm{sw}_3$ of
+Wilf-equivalence classes among the sets of $3$ length-2 signed patterns is $93$.
 
 ## Depends on
 
-- [Signed Wilf Class Count](signed-wilf-class-count.md)
+- [Number of signed Wilf classes](signed-wilf-class-count.md)
 
 ## Sources
 

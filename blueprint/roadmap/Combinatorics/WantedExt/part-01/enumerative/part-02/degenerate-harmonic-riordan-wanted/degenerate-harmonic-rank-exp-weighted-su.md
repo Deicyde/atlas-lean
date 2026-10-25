@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.degenerateHarmonicRank_exp_weighted_sum
 ---
 
-# Degenerate Harmonic Rank exp weighted sum
+# Alternating degenerate exponential sum of degenerate harmonic numbers of rank
 
-Theorem 3: for `n ≥ 0`,
-`∑_{k=0}^n (-1)ᵏ (1)_{k,λ} / k! · H_λ(n + 1, k, α) = H_{n+1,λ}(α) - H_{n,λ}(α) / α`.
+**Alternating degenerate exponential sum of degenerate harmonic numbers of rank.** Let
+$\lambda > 0$ and $\alpha > 0$ be real and let $n$ be a natural number. Write
+$(1)_{k,\lambda} = 1 \cdot (1 - \lambda) \cdots (1 - (k-1)\lambda)$ for the generalized falling
+factorial (so $(1)_{0,\lambda} = 1$), $H_\lambda(m, r, \alpha)$ for the generalized degenerate
+harmonic numbers of rank $r$, and $H_{m,\lambda}(\alpha)$ for the generalized degenerate harmonic
+numbers. Then
+
+$$\sum_{k=0}^{n} (-1)^k \frac{(1)_{k,\lambda}}{k!} H_\lambda(n+1, k, \alpha) =
+H_{n+1,\lambda}(\alpha) - \frac{H_{n,\lambda}(\alpha)}{\alpha}.$$
 
 ## Depends on
 
-- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
-- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
+- [Generalized degenerate harmonic numbers of a given rank](degenerate-harmonic-rank.md)
+- [Generalized degenerate harmonic numbers](generalized-degenerate-harmonic.md)
 - [Generalized falling factorial](../../../../../MathlibExt/part-01/enumerative/part-04/hsu-shiue-generalized-stirling-number/generalized-falling-factorial.md)
 
 ## Sources

@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ContainsFlatPOPBelow
 ---
 
-# Contains Flat POPBelow
+# Containing a flat pattern with one bottom label
 
-`σ` contains the flat partially ordered pattern of size `4` whose label `j + 1` lies below the
-other three labels (which are mutually incomparable): there are positions `i₀ < i₁ < i₂ < i₃`
-with `σ(i_j) < σ(i_m)` for every `m ≠ j`. For `j = 0, 1, 2, 3` these are the paper's POPs
-`P₁, P₂, P₃, P₄` (Table 1).
+**Containing a flat pattern with one bottom label.** Let $\sigma$ be a permutation of
+$\{0, 1, \dots, n - 1\}$ and let $j \in \{0, 1, 2, 3\}$. Then $\sigma$ contains the flat partially
+ordered pattern $P_{j+1}$ of size $4$, in which label $j + 1$ lies below the other three labels
+(which are mutually incomparable), if there are positions $i_0 < i_1 < i_2 < i_3$ such that
+$\sigma(i_j) < \sigma(i_m)$ for every $m \in \{0, 1, 2, 3\}$ with $m \neq j$.
 
 ## Depends on
 

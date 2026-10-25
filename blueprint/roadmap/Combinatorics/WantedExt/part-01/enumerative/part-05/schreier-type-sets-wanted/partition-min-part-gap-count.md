@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartGapCount
 ---
 
-# Partition Min Part Gap Count
+# Partitions with a given gap between the two largest parts
 
-`|E_{n,ℓ,k,q}|`: partitions in `E_{n,ℓ,k}` where the
-difference between the largest and second largest parts is `q`,
-encoded by removing the two largest parts `b + q ≥ b` from the
-parts multiset.
+**Partitions with a given gap between the two largest parts.** For natural numbers $n$,
+$\ell$, $k$ and $q$, $|E_{n,\ell,k,q}|$ is the number of partitions of $n$ into exactly $k$ parts,
+all at least $\ell$, whose largest part exceeds the second largest part (counted with
+multiplicity) by exactly $q$; such a partition has at least two parts, so the count is $0$ for
+$k < 2$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.cyclicShiftStrategy_apply
 ---
 
-# Cyclic Shift Strategy apply
+# Components of the cyclic shift strategy
 
-Every component of `CS` is `finRotate`.
+**Components of the cyclic shift strategy.** For every $m$, the component of the cyclic shift
+strategy on $m$ positions is the rotation $i \mapsto i + 1 \pmod m$ of $\{0, 1, \dots, m-1\}$.
 
 ## Depends on
 
-- [Cyclic Shift Strategy](cyclic-shift-strategy.md)
+- [Cyclic shift strategy](cyclic-shift-strategy.md)
 
 ## Sources
 

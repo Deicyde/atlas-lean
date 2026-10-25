@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.polyaFrequency_iff_hasSum_edrei_product
 ---
 
-# Polya Frequency iff has Sum edrei product
+# Aissen–Schoenberg–Whitney–Edrei theorem
 
-Aissen–Schoenberg–Whitney–Edrei: a non-negative sequence `(a_n)` with `a_0 ≠ 0` is a Pólya
-frequency sequence (its Toeplitz matrix `[a_{n-k}]_{n,k ≥ 0}`, zero above the diagonal, is
-totally positive) if and only if its ordinary generating function has the form
-`a_0 e^{γx} ∏ (1 + α_i x) / ∏ (1 - β_i x)` with `α_i, β_i, γ ≥ 0` and `∑ (α_i + β_i) < ∞`.
-The generating-function identity is read near `0`: the power series converges to that product
-on some interval `|x| < ε`.
+**Aissen–Schoenberg–Whitney–Edrei theorem.** Let $a_0, a_1, \dots$ be non-negative real
+numbers with $a_0 \ne 0$. All minors of the infinite lower-triangular Toeplitz matrix
+$(a_{n-k})_{n,k \ge 0}$, with zeros above the diagonal, are non-negative (that is, the sequence is
+a Pólya frequency sequence) if and only if there are a real $\gamma \ge 0$, non-negative reals
+$\alpha_0, \alpha_1, \dots$ and $\beta_0, \beta_1, \dots$ with
+$\sum_i (\alpha_i + \beta_i) < \infty$, and a real $\varepsilon > 0$ such that for every real $x$
+with $|x| < \varepsilon$ the series $\sum_{n \ge 0} a_n x^n$ converges to
+$a_0 e^{\gamma x} \prod_{i \ge 0} (1 + \alpha_i x) / \prod_{i \ge 0} (1 - \beta_i x)$.
 
 ## Depends on
 

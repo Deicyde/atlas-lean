@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.compositionShade_four
 ---
 
-# Composition Shade four
+# Shade of the composition 4
 
-The one-part composition `4` has `6` shaded cells.
+**Shade of the composition 4.** The one-part composition $4$ has shade $6$: its
+bargraph has $6$ shaded cells.
 
 ## Depends on
 
-- [Composition Shade](composition-shade.md)
+- [Shade of a composition](composition-shade.md)
 
 ## Sources
 

@@ -5,24 +5,42 @@ statement: formalized
 lean: MetaMathlibExt.tsum_four_pow_div_sub_sq_mul_centralBinom
 ---
 
-# Tsum four pow div sub sq mul central Binom
+# Zurita's series $\sum_{k > n} 4^k x^k / ((k - n)^2\binom{2k}{k})$
 
-For `n ≥ 1` and `0 < x < 1`,
-`∑_{k > n} 4^k x^k/((k - n)^2 binom(2k, k)) = (2^{2n+1} x^n/binom(2n, n)) arcsin(√x)^2
-- arcsin(√x) √(x(1 - x)) ∑_{k=0}^{n-1} s^{(n)}_k M_{n-k-1}(x) x^k + ∑_{k=1}^{n-1} r_k x^k + q x^n`
-with `r_k = t^{(n-2)}_{k-1}/(k - n) + (1/2) ∑_{l<k} s^{(n)}_l m^{(n-l-1)}_{k-l-1}/(k - n)
-+ 4^k (4^{-k} - 1/binom(2k, k))/(k - n)^2` and
-`q = -2^{2n+1}/binom(2n, n) + ∑_{l=0}^{n-2} s^{(n)}_l (4^{n-l}/((n - l) binom(2(n-l), n-l))
-- (1/2) ∑_{p=1}^{n-l-1} 4^p m^{(n-l-1)}_{n-l-1-p}/(p(2p + 1) binom(2p, p)))`. Here
-`M_{n-k-1}` and its coefficients `m^{(n-l-1)}` are those of Definition 3 with parameter `n - k`,
-resp. `n - l`.
+**Zurita's series $\sum_{k > n} 4^k x^k / ((k - n)^2\binom{2k}{k})$.** For $j \ge 1$ write
+Zurita's polynomials as $S_j(x) = \sum_{k=0}^{j} s^{(j)}_k x^k$,
+$T_{j-2}(x) = \sum_{k=0}^{j-2} t^{(j)}_k x^k$ and $M_{j-1}(x) = \sum_{k=0}^{j-1} m^{(j)}_k x^k$.
+Let $n \ge 1$, let $x$ be real with $0 < x < 1$, and put
+
+$$
+r_k = \frac{t^{(n)}_{k-1}}{k - n} +
+\frac{1}{2(k - n)} \sum_{l=0}^{k-1} s^{(n)}_l\, m^{(n-l)}_{k-l-1} +
+\frac{4^k}{(k - n)^2} \Bigl(4^{-k} - \frac{1}{\binom{2k}{k}}\Bigr)
+$$
+
+for $1 \le k \le n - 1$ and
+
+$$
+q = -\frac{2^{2n+1}}{\binom{2n}{n}} + \sum_{l=0}^{n-2} s^{(n)}_l \Bigl(
+\frac{4^{n-l}}{(n - l)\binom{2(n-l)}{n-l}} -
+\frac12 \sum_{p=1}^{n-l-1} \frac{4^p\, m^{(n-l)}_{n-l-1-p}}{p(2p + 1)\binom{2p}{p}}\Bigr).
+$$
+
+Then
+
+$$
+\sum_{k > n} \frac{4^k x^k}{(k - n)^2 \binom{2k}{k}} =
+\frac{2^{2n+1} x^n}{\binom{2n}{n}} \arcsin(\sqrt{x})^2 -
+\arcsin(\sqrt{x}) \sqrt{x(1 - x)} \sum_{k=0}^{n-1} s^{(n)}_k M_{n-k-1}(x)\, x^k +
+\sum_{k=1}^{n-1} r_k x^k + q x^n.
+$$
 
 ## Depends on
 
-- [Zurita M](zurita-m.md)
-- [Zurita MCoeff](zurita-mcoeff.md)
-- [Zurita SCoeff](zurita-scoeff.md)
-- [Zurita TCoeff](zurita-tcoeff.md)
+- [Zurita's polynomial $M_{n-1}$](zurita-m.md)
+- [Zurita's coefficients $m_k$](zurita-mcoeff.md)
+- [Coefficients of Zurita's polynomial $S_n$](zurita-scoeff.md)
+- [Coefficients of Zurita's polynomial $T_{n-2}$](zurita-tcoeff.md)
 
 ## Sources
 

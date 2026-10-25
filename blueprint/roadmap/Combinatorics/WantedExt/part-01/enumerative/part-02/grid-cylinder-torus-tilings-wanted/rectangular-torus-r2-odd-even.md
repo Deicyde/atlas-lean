@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.rectangularTorus_r2_odd_even
 ---
 
-# Rectangular Torus r2 odd even
+# Half-turn fixed points on the rectangular torus, $n$ odd and $m$ even
 
-If `n` is odd and `m` even, the second “otherwise” half-turn case is separately stated and
-multiplied by two.  Its two summands and the hypothesis `σ²=1` are the same as in the transposed
-case, making all natural-number exponents manifestly safe.
+**Half-turn fixed points on the rectangular torus, $n$ odd and $m$ even.** Let $T$ be a
+finite set of tile designs, $\sigma$ a permutation of $T$ with $\sigma^2 = 1$, $n$ a positive
+odd integer and $m$ a positive even integer. For a shift
+$(a, b) \in \mathbb{Z}/n \times \mathbb{Z}/m$, count the maps
+$F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with $F(-1-x-a, -1-y-b) = \sigma(F(x, y))$ for all
+cells $(x, y)$, and let $\mathrm{fxpt}$ be the sum of these counts over all $nm$ shifts (the
+torus fixed-point count of the half-turn $r^2$). Write $t_{\mathrm{id}} = |T|$ and let
+$t_{r^2}$ be the number of designs $d \in T$ with $\sigma(d) = d$. Then
 
-Formalization deviation: none beyond the representation choices stated above.
+$$2\,\mathrm{fxpt} = nm\left(t_{\mathrm{id}}^{nm/2} + t_{\mathrm{id}}^{nm/2-1}\,t_{r^2}^2\right).$$
 
 ## Depends on
 
-- [Cell R2](cell-r2.md)
-- [Tile Fixed Count](tile-fixed-count.md)
-- [Torus Shift Sum](torus-shift-sum.md)
+- [Cell map of the half-turn r²](cell-r2.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
+- [Torus shift sum](torus-shift-sum.md)
 
 ## Sources
 

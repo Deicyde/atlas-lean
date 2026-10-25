@@ -5,19 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.compositionOddMinusEven_huang_eq_sum_monomial
 ---
 
-# Composition Odd Minus Even huang eq sum monomial
+# Signed count of Huang's compositions, monomial form
 
-Theorem 16, first formula: for `k ≥ 2` and `n ≥ 1`,
-`b^{(m)}_{k,n} = ∑_{λ ⊆ (k-2)^m, i + (k+1)m + jk + |λ| = n} (-1)^j binom(i,m) binom(i+j-1,j) m_λ(1^m)`.
-Deviation in form: `∑_λ m_λ(1^m) [|λ| = t]` is the number of functions
-`g : Fin m → {0, …, k-2}` with `∑ g = t` (the multinomial `m_λ(1^m)` counts the
-distinct arrangements of `λ` padded by zeros to length `m`), so the sum over
-`λ` is written as a sum over such `g`.
+**Signed count of Huang's compositions, monomial form.** Let $k \ge 2$, $m \ge 0$ and
+$n \ge 1$. Among the compositions of $n + k - 1$ with exactly $m$ parts less than $k$ in which
+every part less than $k$ is preceded by a part at least $k$ and followed by a part that is either
+the last part or greater than $k$, let $b^{(m)}_{k,n}$ be the number with an odd number of parts
+minus the number with an even number of parts. Then $b^{(m)}_{k,n}$ is the sum of
+$(-1)^j \binom{i}{m} \binom{i+j-1}{j}$ over all $i, j \ge 0$ and all functions
+$g \colon \{1, \dots, m\} \to \{0, 1, \dots, k-2\}$ with
+$i + (k+1)m + jk + g(1) + \dots + g(m) = n$, where $\binom{-1}{0} = 1$.
+
+Grouping the functions $g$ by the partition $\lambda$ formed by their nonzero values gives the
+paper's form of the sum: over partitions $\lambda$ with at most $m$ parts, each at most $k-2$
+(written $\lambda \subseteq (k-2)^m$), of size $|\lambda| = n - i - (k+1)m - jk$, each weighted
+by $m_\lambda(1^m)$, the monomial symmetric function $m_\lambda$ in $m$ variables evaluated at
+$x_1 = \dots = x_m = 1$, which is the number of functions $g$ in the group.
 
 ## Depends on
 
-- [Is Huang Small Part Placement](is-huang-small-part-placement.md)
-- [Composition Odd Minus Even](composition-odd-minus-even.md)
+- [Huang's placement condition for small parts](is-huang-small-part-placement.md)
+- [Signed count of compositions](composition-odd-minus-even.md)
 
 ## Sources
 

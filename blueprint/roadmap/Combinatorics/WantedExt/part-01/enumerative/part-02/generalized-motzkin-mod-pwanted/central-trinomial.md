@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.centralTrinomial
 ---
 
-# Central Trinomial
+# Generalized central trinomial coefficients
 
-The generalized central trinomial coefficient `T⁽ᵃᐟᵇ⁾ₙ`, defined as the constant term of
-`(a x⁻¹ + b + a x)ⁿ`. Source: Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers
-Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.
+**Generalized central trinomial coefficients.** For integers $a, b$ and a natural number $n$,
+the generalized central trinomial coefficient $T_n^{(a/b)}$ is the constant term of the Laurent
+polynomial $(a x^{-1} + b + a x)^n$.
 
 ## Depends on
 
@@ -17,8 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Trinomial Laurent](trinomial-laurent.md)
+- [The symmetric trinomial Laurent polynomial](trinomial-laurent.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Definitions.

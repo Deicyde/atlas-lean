@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.regularCubicOverlinedCount_three_mod_eighteen_twelve
 ---
 
-# Regular Cubic Overlined Count three mod eighteen twelve
+# Congruences modulo 18 and 12 for 3-regular cubic partitions with odd parts overlined
 
-For all `n ≥ 0`: `a_3(8n + 5) ≡ 0 (mod 18)`, `a_3(16n + 11) ≡ 0 (mod 12)` and
-`a_3(16n + 15) ≡ 0 (mod 12)`.
+**Congruences modulo 18 and 12 for 3-regular cubic partitions with odd parts overlined.**
+Let $a_3(n)$ be the number of $3$-regular cubic partitions of $n$ with odd parts overlined.
+For every $n \ge 0$, $a_3(8n + 5)$ is divisible by $18$, and $a_3(16n + 11)$ and
+$a_3(16n + 15)$ are divisible by $12$.
 
 ## Depends on
 
-- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
+- [ℓ-regular cubic partitions with odd parts overlined](regular-cubic-overlined-count.md)
 
 ## Sources
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.bishopsBlack
 ---
 
-# Bishops Black
+# Nonattacking bishops on the black squares
 
-`R_K(m, k)`: nonattacking placements of `k` rooks on the black board `K_m`, i.e. of `k`
-bishops on the black squares of `S_m`.
+**Nonattacking bishops on the black squares.** For natural numbers $m$ and $k$, $R_K(m, k)$ is
+the number of $k$-element sets of black squares of the $m \times m$ board $S_m = [1, m]^2$ (the
+squares $(i, j)$ with $i + j$ odd) no two of which lie on a common line of slope $1$ or $-1$, that
+is, the number of ways to place $k$ nonattacking bishops on the black squares of $S_m$.
+
+In the source, $R_K(m, k)$ counts placements of $k$ nonattacking rooks on the black board $K_m$,
+whose rows and columns are the diagonals of the black squares of $S_m$.
 
 ## Depends on
 
@@ -16,9 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bishop Moves](bishop-moves.md)
-- [Black Squares](black-squares.md)
-- [Nonattacking Placements](nonattacking-placements.md)
+- [Basic moves of the bishop](bishop-moves.md)
+- [Black squares of the square board](black-squares.md)
+- [Nonattacking placements](nonattacking-placements.md)
 
 ## Sources
 

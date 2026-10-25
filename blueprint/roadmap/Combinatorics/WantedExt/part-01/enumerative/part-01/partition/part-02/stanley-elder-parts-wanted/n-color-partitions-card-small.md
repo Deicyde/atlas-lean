@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.nColorPartitions_card_small
 ---
 
-# N Color Partitions card small
+# Small values of the number of n-color partitions
 
-Characteristic values: `C(0) = C(1) = 1`, `C(2) = 3` (`2_1`, `2_2`, `1_1 + 1_1`),
-`C(3) = 6`, and the `n`-color partitions of `2` listed explicitly.
+**Small values of the number of n-color partitions.** Let $C(m)$ be the number of $n$-color
+partitions of $m$, and write $k_j$ for the colored part of size $k$ and color $j$. Then
+$C(0) = C(1) = 1$, $C(2) = 3$ and $C(3) = 6$, and the $n$-color partitions of $2$ are exactly
+$2_1$, $2_2$ and $1_1 + 1_1$.
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Sources
 

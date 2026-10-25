@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.diagonalClass
 ---
 
-# Diagonal Class
+# Diagonal class of a partition
 
-The equivalence class `[d] = δ⁻¹(δ(p)) ⊆ P(n)` of a partition `p`.
+**Diagonal class of a partition.** For a partition $p$ of $n$, its diagonal class
+$\delta^{-1}(\delta(p))$ is the finite set of all partitions $\beta$ of $n$ whose diagonal
+sequence $\delta(\beta)$ equals the diagonal sequence $\delta(p)$ of $p$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

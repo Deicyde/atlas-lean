@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.DelannoyConstructions.delannoyArray_horizontalSum_rows_modEq
 ---
 
-# Delannoy Array horizontal Sum rows mod Eq
+# Rows of iterated horizontal sums of a Delannoy array agree mod 2
 
-For a Delannoy array `R` and `i ≥ 1`, all rows of `R^i` (the `i`-fold horizontal sum
-`S ↦ S(m, n) + S(m, n + 1)`) agree mod 2.
+**Rows of iterated horizontal sums of a Delannoy array agree mod 2.** Let $R(m, n)$, for
+$m, n \in \mathbb{N}$, be integers with $R(m+1, n+1) = R(m, n+1) + R(m+1, n) + R(m, n)$ for all
+$m, n$. For an array $S$ let $(HS)(m, n) = S(m, n) + S(m, n+1)$, and write $R^i = H^i R$ for the
+$i$-fold horizontal sum. Then for every $i \ge 1$ and all $m, m', n \in \mathbb{N}$,
+$R^i(m, n) \equiv R^i(m', n) \pmod 2$.
 
 ## Depends on
 

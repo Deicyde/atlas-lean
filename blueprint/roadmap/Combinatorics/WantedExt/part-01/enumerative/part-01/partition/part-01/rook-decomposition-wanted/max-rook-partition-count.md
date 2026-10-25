@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount
 ---
 
-# Max Rook Partition Count
+# Partitions with a given max-rook number
 
-The paper's `R_k(n)`: the number of partitions of `n` with max-rook
-number `k`.
+**Partitions with a given max-rook number.** For natural numbers $k$ and $n$, $R_k(n)$ is
+the number of partitions of $n$ whose max-rook number, the largest number of non-attacking rooks
+on the Ferrers board, equals $k$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partition Max Rook Number](partition-max-rook-number.md)
+- [Max-rook number of a partition](partition-max-rook-number.md)
 
 ## Sources
 

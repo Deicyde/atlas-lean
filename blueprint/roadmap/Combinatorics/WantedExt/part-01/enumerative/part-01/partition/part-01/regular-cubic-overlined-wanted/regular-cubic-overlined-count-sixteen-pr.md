@@ -5,17 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.regularCubicOverlinedCount_sixteen_prime_mod_sixteen
 ---
 
-# Regular Cubic Overlined Count sixteen prime mod sixteen
+# Congruences modulo 16 for 16-regular cubic partitions with odd parts overlined
 
-For a prime `p ≥ 5` with `(-2/p) = -1`, all `δ, n ≥ 0` and `1 ≤ t ≤ p - 1`:
-`a_16(4p^{2δ} n + (11p^{2δ} - 5)/2) ≡ [qⁿ] 8 f_1 f_32 (mod 16)` and
-`a_16(4p^{2δ+2} n + 4p^{2δ+1} t + (11p^{2δ+2} - 5)/2) ≡ 0 (mod 16)`. The divisions are
-exact.
+**Congruences modulo 16 for 16-regular cubic partitions with odd parts overlined.** Let
+$a_{16}(n)$ be the number of $16$-regular cubic partitions of $n$ with odd parts overlined, and
+let $f_k = \prod_{m \ge 1} (1 - q^{km})$. Let $p \ge 5$ be a prime with Legendre symbol
+$\left(\frac{-2}{p}\right) = -1$, and let $\delta \ge 0$. Then for every $n \ge 0$,
+
+$$a_{16}\left(4p^{2\delta} n + \frac{11p^{2\delta} - 5}{2}\right) \equiv 8c_n \pmod{16},$$
+
+where $c_n$ is the coefficient of $q^n$ in $f_1 f_{32}$, and for all $n \ge 0$ and all $t$ with
+$1 \le t \le p - 1$,
+
+$$a_{16}\left(4p^{2\delta+2} n + 4p^{2\delta+1} t + \frac{11p^{2\delta+2} - 5}{2}\right)
+\equiv 0 \pmod{16}.$$
+
+The divisions by $2$ are exact.
 
 ## Depends on
 
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
-- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
+- [ℓ-regular cubic partitions with odd parts overlined](regular-cubic-overlined-count.md)
 
 ## Sources
 

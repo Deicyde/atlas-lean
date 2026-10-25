@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.shiftedAlphaStirlingEntry_zero_left
 ---
 
-# Shifted Alpha Stirling Entry zero left
+# First row of the shifted α-Stirling matrix
 
-The first row of `𝖲_α` is constant `α_1`.
+**First row of the shifted α-Stirling matrix.** Let $R$ be a commutative ring, let
+$\alpha = (\alpha_j)_{j \ge 1}$ be a sequence in $R$, and write $\mathsf{S}_{i,j}$ for the entries
+of the shifted $\alpha$-Stirling matrix of $\alpha$, indexed from $0$. For every natural number
+$j$, $\mathsf{S}_{0,j} = \alpha_1$; that is, the first row is constant, equal to $\alpha_1$.
 
 ## Depends on
 
-- [Shifted Alpha Stirling Entry](shifted-alpha-stirling-entry.md)
+- [Entries of the shifted α-Stirling matrix](shifted-alpha-stirling-entry.md)
 
 ## Sources
 

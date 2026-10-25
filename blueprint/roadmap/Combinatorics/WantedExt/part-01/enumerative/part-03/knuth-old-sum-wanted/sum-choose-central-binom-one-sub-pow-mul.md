@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_centralBinom_one_sub_pow_mul_pow
 ---
 
-# Sum choose central Binom one sub pow mul pow
+# Central binomial polynomial identity, Bernstein form
 
-Equation (52): `∑ binom(n,k) 2^{-k} binom(2k,k) (1-x)^k x^{n-k}
-= ∑_{k ≤ n/2} binom(n,2k) 2^{-2k} binom(2k,k) (1-x)^{2k}`.
+**Central binomial polynomial identity, Bernstein form.** For every natural number $n$ and
+every complex $x$,
+
+$$\sum_{k=0}^{n} \binom{n}{k} 2^{-k} \binom{2k}{k} (1-x)^k x^{n-k} =
+\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} 2^{-2k} \binom{2k}{k} (1-x)^{2k}.$$
 
 ## Depends on
 

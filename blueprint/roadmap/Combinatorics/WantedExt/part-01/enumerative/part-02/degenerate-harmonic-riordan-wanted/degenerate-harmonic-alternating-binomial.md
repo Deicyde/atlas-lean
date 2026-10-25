@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.degenerateHarmonic_alternating_binomial_sum
 ---
 
-# Degenerate Harmonic alternating binomial sum
+# Alternating binomial sum of degenerate harmonic numbers
 
-Theorem 2: for `n ≥ 1`,
-`∑_{k=0}^n (-1)^{k+1} binom(n, k) H_{k,λ} = binom(n + λ - 1, n) / λ`, where
-`H_{k,λ} = H_{k,λ}(1)` are the degenerate harmonic numbers.
+**Alternating binomial sum of degenerate harmonic numbers.** Let $\lambda > 0$ be real and let
+$H_{k,\lambda} = H_{k,\lambda}(1)$ be the degenerate harmonic numbers, that is, the generalized
+degenerate harmonic numbers at $\alpha = 1$. Then for every integer $n \ge 1$,
+$\sum_{k=0}^{n} (-1)^{k+1} \binom{n}{k} H_{k,\lambda} = \binom{n + \lambda - 1}{n} / \lambda$,
+where $\binom{n + \lambda - 1}{n}$ is the generalized binomial coefficient.
 
 ## Depends on
 
-- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
+- [Generalized degenerate harmonic numbers](generalized-degenerate-harmonic.md)
 
 ## Sources
 

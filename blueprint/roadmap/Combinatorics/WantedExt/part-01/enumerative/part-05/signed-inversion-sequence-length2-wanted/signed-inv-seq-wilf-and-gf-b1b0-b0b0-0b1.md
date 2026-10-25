@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_and_gf_b1b0_b0b0_0b1_01
 ---
 
-# Theorem 3, class C25
+# Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar0, 0\bar1, 01\}$
 
-**Theorem 3, class C25.** `{1̄0̄, 0̄0̄, 01̄, 01}` ∼ `{1̄0, 0̄1̄, 0̄1, 00}`, and `F(x) = (1 - x +
-x²) / ((1 - x)(1 - 2x))`, stated after multiplying by the unit denominator.
+**Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar0, 0\bar1, 01\}$.** For a set $B$
+of length-2 signed patterns (a bar marks a barred letter), let $|\bar I_n(B)|$ be the number of
+signed inversion sequences of length $n$ avoiding every pattern of $B$, and let
+$F_B(x) = \sum_{n \ge 0} |\bar I_n(B)| x^n \in \mathbb{Q}[[x]]$. Let
+$B = \{\bar1\bar0, \bar0\bar0, 0\bar1, 01\}$ and $C = \{\bar10, \bar0\bar1, \bar01, 00\}$. Then
+$|\bar I_n(B)| = |\bar I_n(C)|$ for every $n \ge 0$, and $(1 - x)(1 - 2x) F_B(x) = 1 - x + x^2$,
+that is, $F_B(x) = (1 - x + x^2)/((1 - x)(1 - 2x))$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
-- [Signed Inv Avoid GF](signed-inv-avoid-gf.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
+- [Generating function of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-gf.md)
 
 ## Sources
 

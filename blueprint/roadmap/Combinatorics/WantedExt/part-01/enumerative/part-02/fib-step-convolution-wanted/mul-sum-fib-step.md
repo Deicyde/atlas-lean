@@ -5,19 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.mul_sum_fibStep
 ---
 
-# Theorem 8
+# Partial sums of the Fibonacci $m$-step numbers
 
-**Theorem 8** (partial sums, corrected): for `m ≥ 2`,
-`(m-1) ∑_{k=0}^n F⁽ᵐ⁾ₖ = F⁽ᵐ⁾_{n+m} -
-∑_{k=1}^{m-2} (m-1-k) F⁽ᵐ⁾_{n+k} - 1`; the printed
-coefficients `k` are a transcription error (the proof's
-own display gives `m-1-k`; as printed the formula fails
-already at `m = 4`, `n = 1`, giving `2/3` for `1`),
-written multiplied through by `m - 1`.
+**Partial sums of the Fibonacci $m$-step numbers.** For natural numbers $m \ge 2$ and $n$,
+the Fibonacci $m$-step numbers $F^{(m)}_k$ satisfy
+
+$$(m-1) \sum_{k=0}^{n} F^{(m)}_k =
+F^{(m)}_{n+m} - \sum_{k=1}^{m-2} (m-1-k) F^{(m)}_{n+k} - 1.$$
+
+The source prints this identity divided by $m - 1$ and with coefficients $k$ in place of
+$m-1-k$; its proof gives $m-1-k$, and the printed form already fails at $m = 4$, $n = 1$, where
+it gives $2/3$ instead of $1$.
 
 ## Depends on
 
-- [Fib Step](fib-step.md)
+- [Fibonacci $m$-step numbers](fib-step.md)
 
 ## Sources
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.DelannoyConstructions.delannoyArray_binomial_seeds_two_pow_dvd
 ---
 
-# Delannoy Array binomial seeds two pow dvd
+# Powers of two dividing iterated horizontal sums of a Delannoy array
 
-If a Delannoy array has horizontal seeds `R(0, n) = C(k + n, k)`, then for `i ≥ 1` every entry
-of `R^(k+i)` is divisible by `2^i`, and some entry is not divisible by `2^(i+1)`.
+**Powers of two dividing iterated horizontal sums of a Delannoy array.** Let $R(m, n)$, for
+$m, n \in \mathbb{N}$, be integers with $R(m+1, n+1) = R(m, n+1) + R(m+1, n) + R(m, n)$ for all
+$m, n$. For an array $S$ let $(HS)(m, n) = S(m, n) + S(m, n+1)$, and write $R^i = H^i R$ for the
+$i$-fold horizontal sum. Let $k, i \in \mathbb{N}$ with $i \ge 1$, and suppose
+$R(0, n) = \binom{k+n}{k}$ for all $n$. Then every entry of $R^{k+i}$ is divisible by $2^i$, and
+some entry of $R^{k+i}$ is not divisible by $2^{i+1}$.
 
 ## Depends on
 

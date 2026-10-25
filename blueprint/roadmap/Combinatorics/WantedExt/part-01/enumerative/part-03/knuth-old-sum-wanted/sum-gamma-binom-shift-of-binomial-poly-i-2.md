@@ -5,15 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.sum_gammaBinom_shift_of_binomial_poly_identity'
 ---
 
-# Sum gamma Binom shift of binomial poly identity'
+# Shifted central binomial transform of a polynomial identity, dual form
 
-Equation (32): the companion of (31) with the roles of the two sides exchanged,
-`∑ (-1)^{q(k)} g(k) 2^{2q(k)} binom(2(u-q(k))+v, (2(u-q(k))+v)/2) binom(u-q(k)+v, v/2)^{-1}
-= binom(v, v/2)^{-1} ∑ (-1)^{p(k)} f(k) B(u, v, p(k))`.
+**Shifted central binomial transform of a polynomial identity, dual form.** Let
+$s, n, m, r$ be natural numbers, $f, g : \mathbb{N} \to \mathbb{C}$ and
+$p, q : \mathbb{N} \to \mathbb{N}$ such that
+$\sum_{k=s}^{n} f(k) (1+t)^{p(k)} = \sum_{k=m}^{r} g(k) t^{q(k)}$ for every complex $t$, and
+let $u, v$ be complex numbers with $\operatorname{Re} v > -1$,
+$\operatorname{Re}(2(u-p(j))+v) > -1$ for $s \le j \le n$ and
+$\operatorname{Re}(2(u-q(j))+v) > -1$ for $m \le j \le r$. Then
+
+$$
+\sum_{k=m}^{r} (-1)^{q(k)} g(k)\, 2^{2q(k)} \binom{2(u-q(k))+v}{(2(u-q(k))+v)/2}
+\binom{u-q(k)+v}{v/2}^{-1}
+= \binom{v}{v/2}^{-1} \sum_{k=s}^{n} (-1)^{p(k)} f(k) \binom{2(u-p(k))+v}{(2(u-p(k))+v)/2}
+\binom{2p(k)+v}{(2p(k)+v)/2} \binom{u+v}{(2p(k)+v)/2}^{-1},
+$$
+
+where $\binom{a}{b} = \Gamma(a+1)/(\Gamma(b+1)\Gamma(a-b+1))$ is the generalized binomial
+coefficient of complex numbers $a, b$.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

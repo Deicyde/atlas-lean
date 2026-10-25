@@ -5,24 +5,43 @@ statement: formalized
 lean: MetaMathlibExt.fixedColumnHook_hook_odd_genFun
 ---
 
-# Fixed Column Hook hook odd gen Fun
+# Generating function for fixed column hooks of size $k$ in odd partitions
 
-The generating function for the number of odd partitions of `n` with an `h`-fixed hook in
-the `m`th column arising from a hook of size `k` is
-`Σ_{l ≤ k, l odd} q^{k+l(k-h-1)+(m-1)(2k-h-l)}/((q²; q²)_{k-h-1} (q; q²)_{(m-1)/2})
- [k-l+(l-1)/2, k-l]_{q²}` for `m` odd and
-`Σ_{l ≤ k, l even} q^{k+l(k-h-1)+(m-1)(2k-h-l)+(k-l)}/((q²; q²)_{k-h-1} (q; q²)_{m/2})
- [k-l+(l-2)/2, k-l]_{q²}` for `m` even (sums over `1 ≤ l ≤ k`).
+**Generating function for fixed column hooks of size $k$ in odd partitions.** Let $n$,
+$m \ge 1$ and $k \ge 1$ be natural numbers and let $h < k$ be an integer.
+For a partition $\lambda$, write $\lambda_r$ for its $r$-th largest part ($0$ if it has fewer
+than $r$ parts), $\lambda'_m$ for the number of its parts that are at least $m$, and
+$h_{r,m}(\lambda) = \lambda_r + \lambda'_m - r - m + 1$ for the hook length of the square $(r, m)$.
+The partition $\lambda$ has an $h$-fixed hook in column $m$ at row $r$ when $r \ge 1$,
+$m \le \lambda_r$ and $h_{r,m}(\lambda) = r + h$.
+In $\mathbb{Q}[[q]]$ write $(q^2;q^2)_j = \prod_{i=1}^{j} (1 - q^{2i})$ and
+$(q;q^2)_j = \prod_{i=0}^{j-1} (1 - q^{2i+1})$, and let $\binom{a}{b}_{q^2}$ be the Gaussian
+binomial coefficient in $q^2$. Let $N$ be the number of partitions $\lambda$ of $n$ into odd
+parts that have an $h$-fixed hook in column $m$ at some row $r \le n$ with
+$h_{r,m}(\lambda) = k$. If $m$ is odd, $N$ is the coefficient of $q^n$ in
 
-`h ∈ ℤ` with `h < k`; `(q; q²)_j` is `∏_{i<j} (1 - q^{2i+1})`.
+$$
+\sum_{l} \frac{q^{k + l(k-h-1) + (m-1)(2k-h-l)}}{(q^2;q^2)_{k-h-1} (q;q^2)_{(m-1)/2}}
+\binom{k-l+(l-1)/2}{k-l}_{q^2},
+$$
+
+the sum running over the odd $l$ with $1 \le l \le k$. If $m$ is even, $N$ is the coefficient
+of $q^n$ in
+
+$$
+\sum_{l} \frac{q^{k + l(k-h-1) + (m-1)(2k-h-l) + (k-l)}}{(q^2;q^2)_{k-h-1} (q;q^2)_{m/2}}
+\binom{k-l+(l-2)/2}{k-l}_{q^2},
+$$
+
+the sum running over the even $l$ with $1 \le l \le k$.
 
 ## Depends on
 
 - [Gaussian binomial coefficient](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
 - [Finite $Q$-Pochhammer symbol](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
-- [Is Fixed Column Hook](is-fixed-column-hook.md)
-- [Partition Hook Length](partition-hook-length.md)
-- [Partition Row Len](partition-row-len.md)
+- [Fixed hooks in a column of a partition](is-fixed-column-hook.md)
+- [Hook length of a square of a partition](partition-hook-length.md)
+- [Row lengths of a partition](partition-row-len.md)
 
 ## Sources
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.rascalZ_mul_eq
 ---
 
-# Theorem 5
+# Generalized diamond recurrence for Rascal numbers
 
-**Theorem 5** (generalization of the diamond recurrence):
-`R_{n,k} = (R_{n-u,k} R_{n-ℓ,k-ℓ} + uℓ) / R_{n-u-ℓ,k-ℓ}`,
-written cross-multiplied to stay in `ℤ`.
+**Generalized diamond recurrence for Rascal numbers.** For integers $n$, $k$, $\ell$, $u$
+with $\ell \ge 0$, $u \ge 0$ and $\ell \le k \le n - u$, the Rascal numbers satisfy
+$R_{n,k} R_{n-u-\ell,k-\ell} = R_{n-u,k} R_{n-\ell,k-\ell} + u\ell$.
+
+Since $R_{n-u-\ell,k-\ell} \ge 1$ under these hypotheses, this is the paper's formula
+$R_{n,k} = (R_{n-u,k} R_{n-\ell,k-\ell} + u\ell) / R_{n-u-\ell,k-\ell}$ cleared of denominators.
 
 ## Depends on
 
-- [Rascal Z](rascal-z.md)
+- [Rascal numbers on the integers](rascal-z.md)
 
 ## Sources
 

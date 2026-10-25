@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.nonOverlinedCount
 ---
 
-# Non Overlined Count
+# Number of non-overlined copies of a part size
 
-`nonOverlinedCount O a` is the multiplicity of `a` among the non-overlined
-parts of `O`: it subtracts one exactly when the size `a` is selected in
-`O.overlines`.  This maps the paper's “first occurrence may be overlined”
-convention to the repository representation, where overlining is stored once
-per distinct size.
+**Number of non-overlined copies of a part size.** For an overpartition $O$ of $n$ and a natural
+number $a$, the number of non-overlined parts of size $a$ in $O$ is the multiplicity of $a$ in the
+underlying partition of $O$, minus $1$ if $a$ is overlined in $O$ and minus $0$ otherwise.
+
+This matches the convention that only the first occurrence of a part size may be overlined: an
+overpartition records each overlined size once.
 
 ## Depends on
 

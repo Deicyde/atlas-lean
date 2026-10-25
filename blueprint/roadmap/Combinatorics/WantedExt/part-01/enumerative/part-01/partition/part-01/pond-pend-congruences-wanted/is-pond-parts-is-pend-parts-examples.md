@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isPondParts_isPendParts_examples
 ---
 
-# Is Pond Parts is Pend Parts examples
+# Examples of POND and PEND parts
 
-The parts `1 + 1` and `2` are POND, while `1` and `2 + 1` (a single odd part `1`) are
-not; the parts `1` and `2 + 2` are PEND, while `2` and `2 + 4` are not.
+**Examples of POND and PEND parts.** The multisets of parts $\{1, 1\}$ and $\{2\}$ satisfy
+the POND condition, while $\{1\}$ and $\{2, 1\}$ do not; the multisets $\{1\}$ and $\{2, 2\}$
+satisfy the PEND condition, while $\{2\}$ and $\{2, 4\}$ do not.
 
 ## Depends on
 
-- [Is Pend Parts](is-pend-parts.md)
-- [Is Pond Parts](is-pond-parts.md)
+- [The PEND condition](is-pend-parts.md)
+- [The POND condition](is-pond-parts.md)
 
 ## Sources
 

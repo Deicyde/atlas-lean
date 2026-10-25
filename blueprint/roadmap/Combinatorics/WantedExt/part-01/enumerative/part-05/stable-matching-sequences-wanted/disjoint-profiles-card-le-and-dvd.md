@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.disjoint_profiles_card_le_and_dvd
 ---
 
-# Disjoint profiles card le and dvd
+# Counting disjoint preference profiles
 
-The number of disjoint profiles (profiles in which every pair of mutual
-positions `(r, s)` is realized by exactly one man-woman pair) is at most
-`(n²)!` and divisible by `(n!)²`.
+**Counting disjoint preference profiles.** Call a preference profile for $n$ men and $n$ women
+disjoint if for every pair of positions $(r, s)$ there is exactly one man–woman pair in which the
+man ranks the woman at position $r$ and the woman ranks the man at position $s$. For every natural
+number $n$, the number of disjoint profiles is at most $(n^2)!$ and is divisible by $(n!)^2$.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
 
 ## Sources
 

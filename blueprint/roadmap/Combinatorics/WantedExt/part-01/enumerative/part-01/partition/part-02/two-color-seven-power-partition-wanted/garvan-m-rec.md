@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.garvanM_rec
 ---
 
-# Garvan M rec
+# Recurrence for Garvan's matrix
 
-The recurrence for `m_{i,j}`, `i ≥ 8`, `j ≥ 3`.
+**Recurrence for Garvan's matrix.** For all natural numbers $i \ge 8$ and $j \ge 3$, the
+entries of Garvan's matrix $(m_{i,j})$ satisfy
+
+$$m_{i,j} = 7m_{i-3,j-1} + 35m_{i-2,j-1} + 49m_{i-1,j-1} + m_{i-7,j-2} + 7m_{i-6,j-2} +
+21m_{i-5,j-2} + 49m_{i-4,j-2} + 147m_{i-3,j-2} + 343m_{i-2,j-2} + 343m_{i-1,j-2}.$$
 
 ## Depends on
 
-- [Garvan M](garvan-m.md)
+- [Garvan's matrix](garvan-m.md)
 
 ## Sources
 

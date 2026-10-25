@@ -6,21 +6,24 @@ proof: formalized
 lean: MetaMathlibExt.motzkinHumpCount_four_one
 ---
 
-# Motzkin Hump Count four one
+# Humps of height one in Motzkin paths of length four
 
-The hump table value `H_{4,1} = 8` for the supplied distinguished-hump encoding.
+**Humps of height one in Motzkin paths of length four.** Let $H_{n,k}$ be the number of
+pairs $(P, h)$ where $P$ is a Motzkin path of length $n$ and $h$ is a hump of height $k$ in $P$,
+that is, an up step and a later down step with only flat steps between them, where the up step
+ends at height $k$. Then $H_{4,1} = 8$.
 
 ## Depends on
 
-- [Motzkin Hump Count](motzkin-hump-count.md)
+- [Number of humps of a given height in Motzkin paths](motzkin-hump-count.md)
 
 ## Proof depends on
 
-- [Is Motzkin Hump](is-motzkin-hump.md)
-- [Is Motzkin Prefix](is-motzkin-prefix.md)
-- [Is Motzkin Prefix Finite](is-motzkin-prefix-finite.md)
-- [Is Motzkin Prefix Finite iff](is-motzkin-prefix-finite-iff.md)
-- [Motzkin Step](motzkin-step.md)
+- [Motzkin hump](is-motzkin-hump.md)
+- [Motzkin prefix](is-motzkin-prefix.md)
+- [Bounded Motzkin prefix condition](is-motzkin-prefix-finite.md)
+- [Bounded form of the Motzkin prefix condition](is-motzkin-prefix-finite-iff.md)
+- [Height change of a Motzkin step](motzkin-step.md)
 
 ## Sources
 

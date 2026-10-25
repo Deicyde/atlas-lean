@@ -5,19 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.riordan_zero_density
 ---
 
-# Riordan zero density
+# Zero density of Riordan numbers modulo a prime
 
-Proposition 7: the Riordan zero set has density one if a central trinomial coefficient below p
-vanishes. Otherwise, for p > 2, its density uses the two congruences with coefficient 3 and is at
-least 1/(p-1). Source: Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo
-p*, INTEGERS 26 (2026), Article A22, Proposition 7.
+**Zero density of Riordan numbers modulo a prime.** Let $p$ be a prime, and write $r_n$ for the
+Riordan numbers and $T_m = T^{(1,1)}_m$ for the central trinomial coefficients. If
+$T_m \equiv 0 \pmod p$ for some $m < p$, then the set of $n \in \mathbb{N}$ with
+$r_n \equiv 0 \pmod p$ has natural density $1$. If instead $T_m \not\equiv 0 \pmod p$ for every
+$m < p$ and $p > 2$, let $B$ be the number of $m < p - 1$ with
+$3 T_m \equiv T_{p-1} T_{m+1} \pmod p$ and let $C$ be the number of $m < p - 1$ with
+$3 T_m \equiv T_{m+1} \pmod p$; then this set has natural density
+
+$$D_0 = \frac{B + pC}{(p-1)(p+1)},$$
+
+and $D_0 \ge \frac{1}{p-1}$.
 
 ## Depends on
 
-- [Central Trinomial](central-trinomial.md)
+- [Generalized central trinomial coefficients](central-trinomial.md)
 - [Riordan numbers](../../../../../MathlibExt/part-01/enumerative/part-07/riordan-number/riordan-number.md)
 - [Has Density](../../../../../../Data/MathlibExt/set/density/has-density.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 7.

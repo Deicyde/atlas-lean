@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.curlingNumber_blockWord_of_max
 ---
 
-# Curling Number block Word of max
+# Curling number of block words with a maximal exponent
 
-For `m, u ≥ 1` and `a_1, …, a_{u-1} ∈ {0, …, m+1}` with some `a_i = m + 1`, the prefix
-`P = B_{u-1}^{a_{u-1}} ⋯ B_1^{a_1}` of `B_u^{(m+1)}` has `𝒞(P) = m + 1`.
+**Curling number of block words with a maximal exponent.** Let $m \ge 1$ and $u \ge 1$, and
+let $a_1, \dots, a_{u-1} \in \{0, \dots, m+1\}$ with $a_i = m + 1$ for some $1 \le i \le u - 1$.
+Writing $B_t = B_t^{(m+1)}$ for the blocks of the $(m+1)$th order Gijswijt sequence $A^{(m+1)}$,
+the string $P = B_{u-1}^{a_{u-1}} \cdots B_2^{a_2} B_1^{a_1}$ has curling number
+$\mathcal{C}(P) = m + 1$.
 
 ## Depends on
 
-- [Curling Number](curling-number.md)
-- [Gijswijt Block Word](gijswijt-block-word.md)
+- [Curling number](curling-number.md)
+- [Block words](gijswijt-block-word.md)
 
 ## Sources
 

@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.inv_genLeonardo_logBalanced
 ---
 
-# Inv gen Leonardo log Balanced
+# Log-balancedness of the reciprocals of generalized Leonardo numbers
 
-For every `k ≥ 1`, the reciprocals `(1/L_{k,n})_{n ≥ 3}` of the generalized Leonardo numbers
-`L_{k,n} = MetaMathlibExt.genLeonardo k n` are log-balanced (standard notion, Došlić): for every
-`n ≥ 4`, `(1/L_{k,n})² ≤ (1/L_{k,n-1}) (1/L_{k,n+1})` and
-`(1/(L_{k,n-1} (n-1)!)) (1/(L_{k,n+1} (n+1)!)) ≤ (1/(L_{k,n} n!))²`.
+**Log-balancedness of the reciprocals of generalized Leonardo numbers.** Let $k \ge 1$ be an
+integer and let $L_{k,n}$ be the generalized Leonardo numbers. Then the sequence
+$(1/L_{k,n})_{n \ge 3}$ is log-balanced (Došlić): for every integer $n \ge 4$,
+
+$$\left(\frac{1}{L_{k,n}}\right)^2 \le \frac{1}{L_{k,n-1}} \cdot \frac{1}{L_{k,n+1}}$$
+
+and
+
+$$\frac{1}{L_{k,n-1} \, (n-1)!} \cdot \frac{1}{L_{k,n+1} \, (n+1)!} \le
+\left(\frac{1}{L_{k,n} \, n!}\right)^2.$$
 
 ## Depends on
 

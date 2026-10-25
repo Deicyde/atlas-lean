@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.gijswijtGlueConcat_one
 ---
 
-# Gijswijt Glue Concat one
+# The first concatenated glue string is empty
 
-`T_1^{(m)} = ε`.
+**The first concatenated glue string is empty.** For every natural number $m$, the
+concatenated glue string $T^{(m)}_1$ is the empty string.
 
 ## Depends on
 
-- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
+- [Concatenated glue strings of a Gijswijt sequence](gijswijt-glue-concat.md)
 
 ## Proof depends on
 
-- [Gijswijt Glue](gijswijt-glue.md)
+- [Glue strings of a Gijswijt sequence](gijswijt-glue.md)
 
 ## Sources
 

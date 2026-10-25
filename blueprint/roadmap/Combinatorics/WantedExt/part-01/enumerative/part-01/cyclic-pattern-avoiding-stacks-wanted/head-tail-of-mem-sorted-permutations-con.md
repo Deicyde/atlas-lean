@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.head_tail_of_mem_sortedPermutations_consecutiveCyclicStackSort_321
 ---
 
-# Head tail of mem sorted Permutations consecutive Cyclic Stack Sort 321
+# First entry and tail of permutations sorted by the consecutive $321$-cyclic stack
 
-For `n ≥ 2`, every `π ∈ Sort_n(s^[321])` has `π_1 = n` and `π_2 ⋯ π_n` good.
+**First entry and tail of permutations sorted by the consecutive $321$-cyclic stack.** Let
+$n \ge 2$ and let $\mathrm{Sort}_n(s^{[321]})$ be the set of permutations of
+$[n] = \{1, \ldots, n\}$ that the consecutive-cyclic-pattern-avoiding stack-sorting map
+$s^{[321]}$ sends to the identity $12 \cdots n$. Every $\pi = \pi_1 \pi_2 \cdots \pi_n$ in
+$\mathrm{Sort}_n(s^{[321]})$ has $\pi_1 = n$, and $\pi_2 \cdots \pi_n$ is good: each of its entries
+is the minimum or the maximum of itself and all entries after it.
 
 ## Depends on
 
-- [Is Good Seq](is-good-seq.md)
-- [Consecutive Cyclic Stack Sort](consecutive-cyclic-stack-sort.md)
-- [Sorted Permutations](sorted-permutations.md)
+- [Good sequences](is-good-seq.md)
+- [Consecutive-cyclic-pattern-avoiding stack-sorting map](consecutive-cyclic-stack-sort.md)
+- [Permutations sorted by a map](sorted-permutations.md)
 
 ## Sources
 

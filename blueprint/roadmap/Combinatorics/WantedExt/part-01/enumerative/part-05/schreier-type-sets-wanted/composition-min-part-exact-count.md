@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.compositionMinPartExactCount
 ---
 
-# Composition Min Part Exact Count
+# Compositions with exactly $s$ parts, each at least $v$
 
-`c(u, v, s)`: compositions of `u` into exactly `s` parts,
-each at least `v`.
+**Compositions with exactly $s$ parts, each at least $v$.** For natural numbers $u$, $v$
+and $s$, $c(u, v, s)$ is the number of compositions of $u$ (ordered sequences of positive
+integers summing to $u$) into exactly $s$ parts, each at least $v$.
 
 ## Depends on
 

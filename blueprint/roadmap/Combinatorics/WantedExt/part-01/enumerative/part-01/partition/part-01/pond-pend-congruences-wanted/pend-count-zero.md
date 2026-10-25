@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.pendCount_zero
 ---
 
-# Pend Count zero
+# PEND partitions of zero
 
-`pend(0) = 1`.
+**PEND partitions of zero.** The number of PEND partitions of $0$ is $1$, that is,
+$\mathrm{pend}(0) = 1$.
 
 ## Depends on
 
-- [Pend Count](pend-count.md)
+- [The PEND partition function](pend-count.md)
 
 ## Sources
 

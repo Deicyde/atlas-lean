@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.multiplier_sequence_iff_hasSum_exp_mul_tprod
 ---
 
-# Multiplier sequence iff has Sum exp mul tprod
+# Pólya–Schur transcendental characterization of multiplier sequences
 
-Pólya–Schur, transcendental characterization: a non-negative sequence `(λ_n)` with
-`λ_0 ≠ 0` is a multiplier sequence (it maps every real-rooted real polynomial `∑ a_k x^k` to a
-real-rooted `∑ a_k λ_k x^k`) if and only if its exponential generating function is the real
-entire function `λ_0 e^{γx} ∏ (1 + α_i x)` with `γ ≥ 0`, `α_i ≥ 0` and `∑ α_i < ∞`; "entire"
-is encoded as convergence of `∑ λ_n x^n / n!` to that product at every real `x`.
+**Pólya–Schur transcendental characterization of multiplier sequences.** Let
+$t_0, t_1, \dots$ be non-negative real numbers with $t_0 \ne 0$. Say a real polynomial splits
+over $\mathbb{R}$ if it is a constant times a product of linear factors $x - r$ with $r$ real
+(the zero polynomial splits). Then the following are equivalent: for every real polynomial
+$\sum_k a_k x^k$ that splits over $\mathbb{R}$, the polynomial $\sum_k a_k t_k x^k$ splits over
+$\mathbb{R}$; and there are a real $\gamma \ge 0$ and non-negative reals
+$\alpha_0, \alpha_1, \dots$ with $\sum_i \alpha_i < \infty$ such that for every real $x$ the series
+$\sum_{n \ge 0} t_n x^n / n!$ converges to $t_0 e^{\gamma x} \prod_{i \ge 0} (1 + \alpha_i x)$.
+
+Convergence at every real $x$ encodes that the exponential generating function is entire.
 
 ## Depends on
 

@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.squareTorus_r3_even
 ---
 
-# Square Torus r3 even
+# Fixed tilings of the even square torus under a three-quarter turn
 
-The even-`n` `r³` formula is separately stated and multiplied by two.  Its fixed counts for
-the first and second powers are `tileFixedCount σ 1` and `tileFixedCount σ 2`, and the tile
-permutation satisfies the appropriate fourth-power identity.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Fixed tilings of the even square torus under a three-quarter turn.** Let $n$ be an even
+positive integer, $T$ a finite set of tile designs and $\sigma$ a permutation of $T$ with
+$\sigma^4 = 1$, and for $k = 1, 2$ write $t_k$ for the number of designs $d \in T$ with
+$\sigma^k(d) = d$. Let $S$ be the torus shift sum of the three-quarter-turn cell map
+$r^3(x, y) = (y, -1-x)$ on $(\mathbb{Z}/n\mathbb{Z})^2$, that is, the sum over all shifts
+$(a, b) \in (\mathbb{Z}/n\mathbb{Z})^2$ of the number of tilings
+$F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(r^3(c + (a, b))) = \sigma(F(c))$ for every cell
+$c$. Then $2S = n^2 \left(|T|^{n^2/4} + |T|^{(n^2-4)/4} \, t_1^2 \, t_2\right)$.
 
 ## Depends on
 
-- [Cell R3](cell-r3.md)
-- [Tile Fixed Count](tile-fixed-count.md)
-- [Torus Shift Sum](torus-shift-sum.md)
+- [Cell map of the three-quarter turn r³](cell-r3.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
+- [Torus shift sum](torus-shift-sum.md)
 
 ## Sources
 

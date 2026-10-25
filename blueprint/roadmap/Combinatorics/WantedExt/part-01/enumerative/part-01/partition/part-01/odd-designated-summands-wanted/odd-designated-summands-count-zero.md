@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsCount_zero
 ---
 
-# Odd Designated Summands Count zero
+# Odd designated-summand partitions of zero
 
-`PD_2(0) = 1`.
+**Odd designated-summand partitions of zero.** The odd designated-summand partition function
+satisfies $\mathrm{PD}_2(0) = 1$.
 
 ## Depends on
 
-- [Odd Designated Summands Count](odd-designated-summands-count.md)
+- [The odd designated-summand partition function](odd-designated-summands-count.md)
 
 ## Proof depends on
 
 - [Constant term of the Euler products](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
-- [Odd Designated Summands Count generating Function](odd-designated-summands-count-generating.md)
+- [Generating function for partitions with designated summands into odd parts](odd-designated-summands-count-generating.md)
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

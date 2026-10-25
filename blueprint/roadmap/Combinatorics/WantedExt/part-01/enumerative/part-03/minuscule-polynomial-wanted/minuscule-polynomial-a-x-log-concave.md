@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.minusculePolynomialA_x_logConcave
 ---
 
-# Minuscule Polynomial A x log Concave
+# $x$-log-concavity of the minuscule polynomials
 
-`x`-log-concavity: every coefficient of `N_n(x)^2 - N_{n+1}(x) N_{n-1}(x)` is
-non-negative. Stated for every `n : ℕ`; for `n ≤ 1` the polynomial is `0` since
-`N_0 = N_1 = 0`.
+**$x$-log-concavity of the minuscule polynomials.** Let $N_n$ denote the type-A minuscule
+polynomial. For all natural numbers $n$ and $k$, the coefficient of $x^k$ in
+$N_n(x)^2 - N_{n+1}(x) N_{n-1}(x)$ is non-negative, where $N_{n-1}$ is read as $N_0$ when $n = 0$.
+
+For $n \le 1$ the polynomial is $0$ since $N_0 = N_1 = 0$.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

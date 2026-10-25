@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.permMaj
 ---
 
-# Perm Maj
+# Major index of a permutation
 
-The major index `maj(τ) = ∑_{j ∈ Des(τ)} j`.
+**Major index of a permutation.** For a permutation $\tau$ of $\{0, 1, \dots, d - 1\}$, the
+major index is $\mathrm{maj}(\tau) = \sum_{p \in \mathrm{Des}(\tau)} p$, the sum of the
+positions, numbered from $1$, in the descent set $\mathrm{Des}(\tau)$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Perm Descent Set](perm-descent-set.md)
+- [Descent set of a permutation](perm-descent-set.md)
 
 ## Sources
 

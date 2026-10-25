@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOdd_eq_sum_distinctOddParts_triangular
 ---
 
-# Overpartition Odd eq sum distinct Odd Parts triangular
+# Overpartitions into odd parts from partitions with distinct odd parts
 
-For `n ≥ 0`, `po(n) = ∑_{k ≥ 0} pod(n - k(k+1)/2)`.
+**Overpartitions into odd parts from partitions with distinct odd parts.** Let
+$\mathrm{po}(m)$ be the number of overpartitions of $m$ into odd parts and $\mathrm{pod}(m)$
+the number of partitions of $m$ whose odd parts are distinct. For every natural number $n$,
+$\mathrm{po}(n) = \sum_k \mathrm{pod}(n - k(k+1)/2)$, the sum running over the natural
+numbers $k$ with $k(k+1)/2 \le n$.
 
 ## Depends on
 
 - [Distinct Odd Parts Count](distinct-odd-parts-count.md)
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 
 ## Sources
 

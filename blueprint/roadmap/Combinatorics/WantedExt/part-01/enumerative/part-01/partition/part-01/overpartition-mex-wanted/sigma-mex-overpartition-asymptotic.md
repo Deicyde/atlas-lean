@@ -14,7 +14,7 @@ there is no mathematical deviation.
 
 ## Depends on
 
-- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
+- [Sums of minimal excludants over overpartitions](sigma-mex-overpartition.md)
 
 ## Sources
 

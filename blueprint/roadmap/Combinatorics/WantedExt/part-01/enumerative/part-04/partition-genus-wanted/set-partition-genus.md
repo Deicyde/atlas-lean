@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.setPartitionGenus
 ---
 
-# Set Partition Genus
+# Genus of a set partition
 
-The genus of the set partition of `Fin n` encoded by `τ`: with `σ = finRotate n` the cyclic
-permutation `i ↦ i + 1`, it is the `g` with `-2g = |α| - 1 - n + #cy(σ ∘ τ⁻¹)`, where `|α|` is
-the number of blocks (cycles of `τ`, fixed points included) and `#cy` counts cycles including
-fixed points (`Equiv.Perm.partition`). The quantity `n + 1 - |α| - #cy(σ ∘ τ⁻¹)` is a
-nonnegative even number for `n ≥ 1`; the empty partition (`n = 0`) gets genus `0`.
+**Genus of a set partition.** Let $\sigma$ be the cyclic permutation $i \mapsto i + 1 \pmod n$
+of $\{0, \dots, n-1\}$. For a permutation $\tau$ of $\{0, \dots, n-1\}$, thought of as encoding the
+set partition whose blocks are its cycles, let $|\alpha|$ be the number of cycles of $\tau$ and $c$
+the number of cycles of $\sigma \circ \tau^{-1}$, fixed points counted as cycles in both. The genus
+of $\tau$ is the integer part of $\frac{1}{2} \max(0,\ n + 1 - |\alpha| - c)$.
+
+For $n \ge 1$ the number $n + 1 - |\alpha| - c$ is nonnegative and even, so the genus is the
+number $g$ with $-2g = |\alpha| - 1 - n + c$; for $n = 0$ the genus is $0$.
 
 ## Depends on
 

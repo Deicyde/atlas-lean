@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.gijswijtBlockWord_one
 ---
 
-# Gijswijt Block Word one
+# The empty block word
 
-The empty exponent word: `gijswijtBlockWord m 1 a = ε`.
+**The empty block word.** For every natural number $m$ and every sequence of exponents
+$a_1, a_2, \ldots$, the block word $B_{u-1}^{a_{u-1}} \cdots B_1^{a_1}$ of order $m$ with $u = 1$,
+where $B_i$ is the $i$th block of the $m$th order Gijswijt sequence, is a product of no blocks
+and hence the empty string.
 
 ## Depends on
 
-- [Gijswijt Block Word](gijswijt-block-word.md)
+- [Block words](gijswijt-block-word.md)
 
 ## Proof depends on
 
-- [Gijswijt Block](gijswijt-block.md)
+- [Gijswijt blocks](gijswijt-block.md)
 
 ## Sources
 

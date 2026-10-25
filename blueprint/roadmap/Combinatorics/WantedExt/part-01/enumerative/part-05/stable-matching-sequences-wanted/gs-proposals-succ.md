@@ -6,16 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.StableMatchingSequences.gsProposals_succ
 ---
 
-# Gs Proposals succ
+# One round of the Gale–Shapley algorithm
 
-One Gale–Shapley round: engaged men keep their count, the others propose
-once more.
+**One round of the Gale–Shapley algorithm.** Let $P$ be a preference profile for $n$ men and
+$n$ women and let $t$ be a natural number. After $t + 1$ rounds of the men-proposing
+Gale–Shapley algorithm on $P$, a man who is provisionally engaged after $t$ rounds has made as
+many proposals as after $t$ rounds, and every other man has made one proposal more than after
+$t$ rounds.
 
 ## Depends on
 
-- [GSEngaged](gsengaged.md)
-- [Preference Profile](preference-profile.md)
-- [Gs Proposals](gs-proposals.md)
+- [Provisional engagement in the Gale–Shapley algorithm](gsengaged.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Proposal counts in the Gale–Shapley algorithm](gs-proposals.md)
 
 ## Sources
 

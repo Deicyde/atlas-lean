@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isIncreasingCyclePerm_finRotate
 ---
 
-# Is Increasing Cycle Perm fin Rotate
+# The cyclic rotation is an increasing-cycle permutation
 
-The one-block partition of `Fin n` is encoded by `finRotate n`.
+**The cyclic rotation is an increasing-cycle permutation.** For every natural number $n$,
+the cyclic permutation $i \mapsto i + 1 \pmod n$ of $\{0, \dots, n-1\}$ is an increasing-cycle
+permutation.
+
+For $n \ge 1$ its only cycle is all of $\{0, \dots, n-1\}$, so it encodes the set partition with a
+single block.
 
 ## Depends on
 
-- [Is Increasing Cycle Perm](is-increasing-cycle-perm.md)
+- [Increasing-cycle permutation](is-increasing-cycle-perm.md)
 
 ## Sources
 

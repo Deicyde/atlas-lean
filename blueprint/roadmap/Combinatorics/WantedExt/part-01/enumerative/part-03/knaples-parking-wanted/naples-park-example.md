@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.naplesPark_example
 ---
 
-# Naples Park example
+# A $2$-Naples parking example
 
-Characteristic example: with `k = 2` the cars of `(6, 6, 6, 5, 5, 2, 1)` park in spots
-`6, 5, 4, 3, 7, 2, 1`.
+**A $2$-Naples parking example.** Under the $2$-Naples rule on the spots $1, \dots, 7$, the
+cars with preferences $(6, 6, 6, 5, 5, 2, 1)$, arriving in order into an empty lot, all park, in
+the spots $6, 5, 4, 3, 7, 2, 1$ respectively.
 
 ## Depends on
 
-- [Naples Park](naples-park.md)
+- [Naples parking](naples-park.md)
 
 ## Sources
 

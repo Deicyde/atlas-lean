@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isAdmissibleLuckySet_one_pred_two_mul_sub_two_iff
 ---
 
-# Is Admissible Lucky Set one pred two mul sub two iff
+# When $\{1, n - 1, 2n - 2\}$ is an admissible lucky set
 
-The set `{1, n - 1, 2n - 2}` is `n`-admissible if and only if `n` is even,
-for `n ≥ 4`. As printed the claim covers all `n`, but it fails at `n = 3`:
-`w = 133221 ∈ Q_3` has `Lucky(w) = {1, 2, 4} = {1, n - 1, 2n - 2}` (spots
-`1, 3, 4, 2, 5, 6`). The paper's proof assumes `n > 3`.
+**When $\{1, n - 1, 2n - 2\}$ is an admissible lucky set.** For every integer $n \ge 4$, the
+set $\{1, n - 1, 2n - 2\}$ is an $n$-admissible lucky set if and only if $n$ is even.
+
+As printed the claim covers all $n$, but it fails at $n = 3$: $w = 133221$ is a Stirling
+permutation of order $3$ with $\mathrm{Lucky}(w) = \{1, 2, 4\} = \{1, n - 1, 2n - 2\}$ (its cars
+park in spots $1, 3, 4, 2, 5, 6$). The paper's proof assumes $n > 3$.
 
 ## Depends on
 
-- [Is Admissible Lucky Set](is-admissible-lucky-set.md)
+- [Admissible lucky sets](is-admissible-lucky-set.md)
 
 ## Sources
 

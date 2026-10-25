@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.restrictedOverlapTilings
 ---
 
-# Restricted Overlap Tilings
+# Restricted-overlap tilings
 
-The restricted-overlap tilings of an `n`-board (cells `0, …, n - 1`) with squares and `k`
-`Q`-combs. The `Q`-comb has length `q + 1` with `q = Q.sup id`; its cell `0` and each cell
-`j ∈ Q` are teeth and the other cells are gaps. A comb's non-leftmost cells may overlap
-non-leftmost cells of other combs and no other overlap is allowed, so squares fill exactly the
-cells covered by no comb and a tiling is determined by its set `P` of comb start cells: each
-comb fits on the board and no comb's cell `0` is covered by a tooth `s' + j` (`0 ≠ j ∈ Q`) of
-another comb.
+**Restricted-overlap tilings.** Let $Q$ be a finite set of natural numbers and let $q$ be its
+largest element ($q = 0$ if $Q$ is empty). The $Q$-comb is a piece of length $q + 1$ whose cell
+$0$ and cells $j \in Q$ are teeth and whose other cells are gaps. A restricted-overlap tiling of an
+$n$-board (cells $0, \dots, n - 1$) with squares and $k$ $Q$-combs is recorded by the set $P$ of
+the start cells of its combs, with squares filling the cells that no tooth covers. The
+restricted-overlap tilings are the $k$-element sets $P$ of natural numbers $s$ with $s + q < n$
+(each comb fits on the board) such that $s \ne s' + j$ for all $s, s' \in P$ and all nonzero
+$j \in Q$ (no comb's leftmost cell is covered by a non-leftmost tooth of another comb).
 
 ## Depends on
 

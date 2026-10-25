@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.f3_div_f1_cube_two_dissection
 ---
 
-# F3 div f1 cube two dissection
+# The 2-dissection of $f_3/f_1^3$
 
-`f_3 / f_1^3 = f_4^6 f_6^3 / (f_2^9 f_12^2) + 3q f_4^2 f_6 f_12^2 / f_2^7`, stated with
-denominators cleared (both sides multiplied by `f_1^3 f_2^9 f_12^2`).
+**The 2-dissection of $f_3/f_1^3$.** Write $f_k = (q^k; q^k)_\infty$ for the Euler products. In
+the ring of integer power series in $q$,
+
+$$
+f_3 f_2^9 f_{12}^2 = f_1^3 f_4^6 f_6^3 + 3q f_1^3 f_2^2 f_4^2 f_6 f_{12}^4.
+$$
+
+Since each $f_k$ with $k \ge 1$ has constant term $1$ and is therefore invertible, this is the
+identity $f_3 / f_1^3 = f_4^6 f_6^3 / (f_2^9 f_{12}^2) + 3q f_4^2 f_6 f_{12}^2 / f_2^7$ with both
+sides multiplied by $f_1^3 f_2^9 f_{12}^2$.
 
 ## Depends on
 

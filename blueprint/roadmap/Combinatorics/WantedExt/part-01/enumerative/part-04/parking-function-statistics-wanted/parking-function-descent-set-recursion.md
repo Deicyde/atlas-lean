@@ -5,11 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.parkingFunction_descentSet_recursion
 ---
 
-# Parking Function descent Set recursion
+# Recursion for parking functions with a given descent set
 
-Recursion for `d(I;n)`: for nonempty `I ⊆ [n-1]` with `m = max I` and `I⁻ = I \ {m}`,
-`d(I;n) = ∑_{β ∈ PF↑_n} ∑_{X ∈ M(β,m)} d_X(I⁻;m) - d(I⁻;n)`, with `M(β,m)` the (distinct)
-sub-multisets of size `m` of the entries of `β`.
+**Recursion for parking functions with a given descent set.** The descent set of a word
+$w = (w_1, \dots, w_\ell)$ is $\{i : 1 \le i \le \ell - 1,\ w_i > w_{i+1}\}$, and $d(J; n)$ denotes
+the number of parking functions of length $n$ with descent set $J$. Let $n \in \mathbb{N}$, let
+$I \subseteq \{1, \dots, n - 1\}$ be nonempty with largest element $m$, and let
+$I^- = I \setminus \{m\}$. Then
+
+$$d(I; n) = \sum_{\beta} \sum_{X} d_X(I^-) - d(I^-; n),$$
+
+where $\beta$ runs over the nondecreasing parking functions of length $n$, $X$ runs over the
+distinct sub-multisets of size $m$ of the multiset of entries of $\beta$, and $d_X(I^-)$ is the
+number of words of length $m$ whose multiset of letters is $X$ and whose descent set is $I^-$.
 
 ## Depends on
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ramanujanTheta_order_nine_product
 ---
 
-# Ramanujan Theta order nine product
+# Product of the nonic theta functions
 
-`f(-q, -q⁸) f(-q², -q⁷) f(-q⁴, -q⁵) = f(-q) f³(-q⁹) / f(-q³)` for `‖q‖ < 1`, stated with
-`f(-q³)` cleared.
+**Product of the nonic theta functions.** Let
+$f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta function and
+write $f(-x) = f(-x,-x^2)$. For every complex number $q$ with $|q| < 1$,
+$f(-q,-q^8) f(-q^2,-q^7) f(-q^4,-q^5) f(-q^3) = f(-q) f(-q^9)^3$, that is,
+$f(-q,-q^8) f(-q^2,-q^7) f(-q^4,-q^5) = f(-q) f^3(-q^9)/f(-q^3)$ with the denominator cleared.
 
 ## Depends on
 

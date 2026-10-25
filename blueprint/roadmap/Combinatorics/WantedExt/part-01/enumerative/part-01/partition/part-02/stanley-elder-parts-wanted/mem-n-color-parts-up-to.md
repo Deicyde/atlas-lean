@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_nColorPartsUpTo
 ---
 
-# Mem n Color Parts Up To
+# Membership in the colored parts of bounded size
 
-Membership in `nColorPartsUpTo m`: `(k, j)` is listed exactly when `1 ≤ j ≤ k ≤ m`.
+**Membership in the colored parts of bounded size.** For all natural numbers $m$, $k$ and
+$j$, the pair $(k, j)$ appears in the list of colored parts of size at most $m$ if and only if
+$1 \le j \le k \le m$.
 
 ## Depends on
 
-- [N Color Parts Up To](n-color-parts-up-to.md)
+- [The list of colored parts of size at most $m$](n-color-parts-up-to.md)
 
 ## Sources
 

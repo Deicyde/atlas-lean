@@ -5,18 +5,39 @@ statement: formalized
 lean: MetaMathlibExt.regularTripartitionCount_three_three_dissection
 ---
 
-# Regular Tripartition Count three three dissection
+# The 3-dissection of the generating function of 3-regular tripartitions
 
-The 3-dissection of the generating function of `T_3`:
-`∑ T_3(3n) qⁿ = f_2² f_3¹⁵ / (f_1¹¹ f_6⁶) + 8q f_3⁶ f_6³ / (f_1⁸ f_2)
-+ 16q² f_6¹² / (f_1⁵ f_2⁴ f_3³)`,
-`∑ T_3(3n + 1) qⁿ = 3 f_2 f_3¹² / (f_1¹⁰ f_6³) + 12q f_3³ f_6⁶ / (f_1⁷ f_2²)` and
-`∑ T_3(3n + 2) qⁿ = 9 f_3⁹ / f_1⁹`, each stated with its denominators cleared.
+**The 3-dissection of the generating function of 3-regular tripartitions.** Let $T_3(n)$ be
+the number of $3$-regular tripartitions of $n$, and for $k \ge 1$ let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$ be the Euler product. Then, as integer power series in $q$,
+
+$$
+f_1^{11} f_2^4 f_3^3 f_6^6 \sum_{n \ge 0} T_3(3n) q^n =
+f_2^6 f_3^{18} + 8q f_1^3 f_2^3 f_3^9 f_6^9 + 16q^2 f_1^6 f_6^{18},
+$$
+
+
+
+$$
+f_1^{10} f_2^2 f_6^3 \sum_{n \ge 0} T_3(3n + 1) q^n = 3 f_2^3 f_3^{12} + 12q f_1^3 f_3^3 f_6^9
+$$
+
+and
+
+$$
+f_1^9 \sum_{n \ge 0} T_3(3n + 2) q^n = 9 f_3^9.
+$$
+
+Since each $f_k$ has constant term $1$ and so is invertible, these are the identities
+$\sum T_3(3n) q^n = f_2^2 f_3^{15}/(f_1^{11} f_6^6) + 8q f_3^6 f_6^3/(f_1^8 f_2) +
+16q^2 f_6^{12}/(f_1^5 f_2^4 f_3^3)$,
+$\sum T_3(3n + 1) q^n = 3 f_2 f_3^{12}/(f_1^{10} f_6^3) + 12q f_3^3 f_6^6/(f_1^7 f_2^2)$ and
+$\sum T_3(3n + 2) q^n = 9 f_3^9/f_1^9$ with the denominators cleared.
 
 ## Depends on
 
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
-- [Regular Tripartition Count](regular-tripartition-count.md)
+- [Regular tripartition counts](regular-tripartition-count.md)
 
 ## Sources
 

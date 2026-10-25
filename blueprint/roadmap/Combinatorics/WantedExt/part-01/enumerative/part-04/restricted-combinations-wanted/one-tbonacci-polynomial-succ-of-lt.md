@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.oneTBonacciPolynomial_succ_of_lt
 ---
 
-# One TBonacci Polynomial succ of lt
+# The $(1,t)$-bonacci polynomials below the recurrence range
 
-Below the recurrence range, `f^{(s+1)}_{n+1}(x) = f^{(s+1)}_n(x)` for `n < s`.
+**The $(1,t)$-bonacci polynomials below the recurrence range.** For all natural numbers $s$
+and $n$ with $n < s$, the $(1,s+1)$-bonacci polynomials $f^{(s+1)}_m(x)$, $m \ge 0$, satisfy
+$f^{(s+1)}_{n+1}(x) = f^{(s+1)}_n(x)$.
 
 ## Depends on
 
-- [One TBonacci Polynomial](one-tbonacci-polynomial.md)
+- [The $(1,t)$-bonacci polynomials](one-tbonacci-polynomial.md)
 
 ## Sources
 

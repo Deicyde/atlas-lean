@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.compositionOddMinusEven_parts_gt_one
 ---
 
-# Composition Odd Minus Even parts gt one
+# Signed count of compositions with parts greater than one
 
-Theorem 5: `b_n = c_{n,o} - c_{n,e}`, the signed count of compositions of
-`n + 1` with parts greater than one, is `(-1)^j` if `n ∈ {3j+1, 3j+2}` and `0`
-otherwise.
+**Signed count of compositions with parts greater than one.** For every $n \ge 0$, among the
+compositions of $n + 1$ whose parts are all greater than $1$, the number with an odd number of
+parts minus the number with an even number of parts is $(-1)^j$ if $n = 3j + 1$ or $n = 3j + 2$
+for some $j \ge 0$, and $0$ otherwise.
 
 ## Depends on
 
-- [Composition Odd Minus Even](composition-odd-minus-even.md)
+- [Signed count of compositions](composition-odd-minus-even.md)
 
 ## Sources
 

@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.schreierAvoidingMultiplesCount_eq_schreierParentD
 ---
 
-# Schreier Avoiding Multiples Count eq schreier Parent D
+# Schreier sets avoiding multiples are counted by a subsequence of the parent sequence
 
-Proposition 3: for `u ≥ 2`, `(|D_{u,n}|)` is a periodic subsequence of `(d_{u,n})`:
-`|D_{u,n}| = d_{u,un-(u-1)}` for all `n ≥ 1`.
+**Schreier sets avoiding multiples are counted by a subsequence of the parent sequence.**
+For every integer $u \ge 2$ and every integer $n \ge 1$, the number $|D_{u,n}|$ of Schreier-type
+sets avoiding multiples of $u$ equals the term $d_{u,un-(u-1)}$ of the parent sequence $d_{u,m}$.
 
 ## Depends on
 
-- [Schreier Avoiding Multiples Count](schreier-avoiding-multiples-count.md)
-- [Schreier Parent D](schreier-parent-d.md)
+- [Schreier sets avoiding multiples](schreier-avoiding-multiples-count.md)
+- [The parent sequence $d_{u,n}$](schreier-parent-d.md)
 
 ## Sources
 

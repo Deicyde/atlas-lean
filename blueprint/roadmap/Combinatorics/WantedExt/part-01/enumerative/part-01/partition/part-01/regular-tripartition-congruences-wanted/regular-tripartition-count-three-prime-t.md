@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.regularTripartitionCount_three_prime_three_mod_four
 ---
 
-# Regular Tripartition Count three prime three mod four
+# A congruence modulo 3 for 3-regular tripartitions at primes $p \equiv 3 \pmod 4$
 
-For a prime `p ≡ 3 (mod 4)`, `α, n ≥ 0` and `1 ≤ i ≤ p - 1`,
-`T_3(3 p^{2α+1} (p n + i) + (p^{2α+2} - 1)/4) ≡ 0 (mod 3)` (the division is exact).
+**A congruence modulo 3 for 3-regular tripartitions at primes $p \equiv 3 \pmod 4$.** Let
+$T_3(m)$ be the number of $3$-regular tripartitions of $m$, and let $p$ be a prime with
+$p \equiv 3 \pmod 4$. For all natural numbers $\alpha$ and $n$ and every integer $i$ with
+$1 \le i \le p - 1$,
+
+$$
+T_3\Bigl(3 p^{2\alpha+1} (p n + i) + \frac{p^{2\alpha+2} - 1}{4}\Bigr) \equiv 0 \pmod 3,
+$$
+
+where the division by $4$ is exact.
 
 ## Depends on
 
-- [Regular Tripartition Count](regular-tripartition-count.md)
+- [Regular tripartition counts](regular-tripartition-count.md)
 
 ## Sources
 

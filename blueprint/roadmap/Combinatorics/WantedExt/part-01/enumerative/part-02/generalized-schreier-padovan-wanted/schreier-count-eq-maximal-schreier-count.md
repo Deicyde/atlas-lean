@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.schreierCount_eq_maximalSchreierCount_add
 ---
 
-# Theorem 8
+# Counting $(p, 1)$-Schreier sets by maximal $(p, 1)$-Schreier sets
 
-**Theorem 8.** For `p ≥ 1`, `|S^{p/1}_n| = |M^{p/1}_{n+p+1}|`. The paper states it for
-`n ≥ 1`; it also holds at `n = 0` (both sides are `0`).
+**Counting $(p, 1)$-Schreier sets by maximal $(p, 1)$-Schreier sets.** Fix a positive integer
+$p$. For each $m$, let $|S^{p/1}_m|$ be the number of sets $F \subseteq \{1, \dots, m\}$ with
+$m \in F$ and $\min F \ge p |F|$, and let $|M^{p/1}_m|$ be the number of those with
+$\min F = p |F|$. Then $|S^{p/1}_n| = |M^{p/1}_{n+p+1}|$ for every natural number $n$.
+
+The paper states this for $n \ge 1$; at $n = 0$ both sides are $0$.
 
 ## Depends on
 
-- [Maximal Schreier Count](maximal-schreier-count.md)
-- [Schreier Count](schreier-count.md)
+- [Number of maximal $(p, q)$-Schreier sets](maximal-schreier-count.md)
+- [Number of (p, q)-Schreier sets with given maximum](schreier-count.md)
 
 ## Sources
 

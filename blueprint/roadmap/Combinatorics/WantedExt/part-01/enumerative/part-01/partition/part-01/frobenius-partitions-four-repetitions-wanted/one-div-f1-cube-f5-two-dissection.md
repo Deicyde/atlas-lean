@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.one_div_f1_cube_f5_two_dissection
 ---
 
-# One div f1 cube f5 two dissection
+# A 2-dissection of the reciprocal Euler product of levels 1 and 5
 
-`1/(f₁³ f₅) = f₄⁴/(f₂⁷ f₁₀) - 2q f₄⁶ f₂₀²/(f₂⁹ f₁₀³) + 5q f₄³ f₂₀/f₂⁸
-+ 2q² f₄⁹ f₄₀²/(f₂¹⁰ f₈² f₁₀² f₂₀)`, stated with denominators cleared (both sides multiplied by
-`f₁³ f₅ f₂¹⁰ f₈² f₁₀³ f₂₀`).
+**A 2-dissection of the reciprocal Euler product of levels 1 and 5.** Let
+$f_k = \prod_{m \ge 1} (1 - q^{km})$ in the ring of integer power series in $q$. Then
+
+$$f_2^{10} f_8^2 f_{10}^3 f_{20} = f_1^3 f_2^3 f_4^4 f_5 f_8^2 f_{10}^2 f_{20} -
+2q f_1^3 f_2 f_4^6 f_5 f_8^2 f_{20}^3 + 5q f_1^3 f_2^2 f_4^3 f_5 f_8^2 f_{10}^3 f_{20}^2 +
+2q^2 f_1^3 f_4^9 f_5 f_{10} f_{40}^2.$$
+
+Dividing both sides by $f_1^3 f_5 f_2^{10} f_8^2 f_{10}^3 f_{20}$ gives the form in the source,
+$1/(f_1^3 f_5) = f_4^4/(f_2^7 f_{10}) - 2q f_4^6 f_{20}^2/(f_2^9 f_{10}^3) +
+5q f_4^3 f_{20}/f_2^8 + 2q^2 f_4^9 f_{40}^2/(f_2^{10} f_8^2 f_{10}^2 f_{20})$.
 
 ## Depends on
 

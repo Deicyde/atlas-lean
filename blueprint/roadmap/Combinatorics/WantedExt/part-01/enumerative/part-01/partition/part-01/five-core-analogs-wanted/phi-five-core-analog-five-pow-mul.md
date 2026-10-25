@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.phiFiveCoreAnalog_five_pow_mul
 ---
 
-# Phi Five Core Analog five pow mul
+# Recurrence for the $\varphi$-analog of the 5-core counts along powers of 5
 
-Theorem 2 recurrence: for `k ≥ 2` and `n ≥ 0`,
-`ā_5(5^k n) = ((5^k - 1)/4) ā_5(5n) - ((5^k - 5)/4) ā_5(n)` (both divisions are exact).
+**Recurrence for the $\varphi$-analog of the 5-core counts along powers of 5.** Let
+$\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ and let $\bar a_5(n)$ be the coefficient of $q^n$
+in $\varphi(-q^5)^5 / \varphi(-q)$. For every natural number $k \ge 2$ and every natural number
+$n$, $\bar a_5(5^k n) = \frac{5^k - 1}{4}\, \bar a_5(5n) - \frac{5^k - 5}{4}\, \bar a_5(n)$.
+Both quotients are integers.
 
 ## Depends on
 
-- [Phi Five Core Analog](phi-five-core-analog.md)
+- [The φ-analog of the 5-core partition function](phi-five-core-analog.md)
 
 ## Sources
 

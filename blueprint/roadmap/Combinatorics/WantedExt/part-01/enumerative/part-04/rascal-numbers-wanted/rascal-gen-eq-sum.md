@@ -14,7 +14,7 @@ lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.rascalGen_eq_sum
 
 ## Depends on
 
-- [Rascal Gen](rascal-gen.md)
+- [Generalized Rascal numbers](rascal-gen.md)
 
 ## Sources
 

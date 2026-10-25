@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.lRegularPartitionCount_zero
 ---
 
-# L Regular Partition Count zero
+# Zero has one $\ell$-regular partition
 
-Zero has exactly one `ℓ`-regular partition, the empty one.
+**Zero has one $\ell$-regular partition.** For every natural number $\ell$, the number of
+$\ell$-regular partitions of $0$ is $1$; the only one is the empty partition.
 
 ## Depends on
 
-- [L Regular Partition Count](l-regular-partition-count.md)
+- [Number of $\ell$-regular partitions](l-regular-partition-count.md)
 
 ## Sources
 

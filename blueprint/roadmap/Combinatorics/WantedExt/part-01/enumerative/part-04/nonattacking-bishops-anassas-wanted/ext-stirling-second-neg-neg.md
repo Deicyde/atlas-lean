@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.extStirlingSecond_neg_neg
 ---
 
-# Ext Stirling Second neg neg
+# Extended Stirling numbers at negative arguments
 
-`{-a, -b} = [b, a]` for positive `a`, `b`.
+**Extended Stirling numbers at negative arguments.** For all positive integers $a$ and $b$,
+the extended Stirling number of the second kind at $(-a, -b)$ equals the unsigned Stirling number
+of the first kind $c(b, a)$, the number of permutations of $b$ elements with exactly $a$ cycles.
 
 ## Depends on
 
-- [Ext Stirling Second](ext-stirling-second.md)
+- [Extended Stirling numbers of the second kind](ext-stirling-second.md)
 
 ## Sources
 

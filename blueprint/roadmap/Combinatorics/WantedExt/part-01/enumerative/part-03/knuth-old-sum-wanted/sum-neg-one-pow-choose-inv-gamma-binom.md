@@ -5,14 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_choose_inv_gammaBinom
 ---
 
-# Sum neg one pow choose inv gamma Binom
+# Alternating sum of reciprocal generalized binomial coefficients
 
-`∑_{k=0}^n (-1)^k binom(n,k) binom(k+u+v+1, u+1)^{-1}
-= (u+1)/(v+1) binom(n+u+v+1, v+1)^{-1}` for `ℜu, ℜv > -1`.
+**Alternating sum of reciprocal generalized binomial coefficients.** For every natural
+number $n$ and all complex numbers $u, v$ with $\operatorname{Re} u > -1$ and
+$\operatorname{Re} v > -1$,
+
+$$
+\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{k+u+v+1}{u+1}^{-1}
+= \frac{u+1}{v+1} \binom{n+u+v+1}{v+1}^{-1},
+$$
+
+where $\binom{n}{k}$ is the ordinary binomial coefficient and otherwise
+$\binom{a}{b} = \Gamma(a+1)/(\Gamma(b+1)\Gamma(a-b+1))$ is the generalized binomial
+coefficient of complex numbers $a, b$.
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

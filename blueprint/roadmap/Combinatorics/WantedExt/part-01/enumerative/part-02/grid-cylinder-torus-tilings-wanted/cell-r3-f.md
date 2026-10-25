@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.cellR3F
 ---
 
-# Cell R3 F
+# Cell map of the antidiagonal reflection r³f
 
-The cell map for the paper's right action of the other diagonal reflection `r³f` on an
-`n × n` grid: `(x,y) ↦ (n-1-y,n-1-x)`.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Cell map of the antidiagonal reflection r³f.** For a natural number $n$, the antidiagonal
+reflection $r^3 f$ acts on the cells
+$(x, y) \in \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ of the $n \times n$ grid by
+$(x, y) \mapsto (-1 - y, -1 - x)$, that is, $(x, y) \mapsto (n - 1 - y, n - 1 - x)$ modulo $n$.
 
 ## Depends on
 

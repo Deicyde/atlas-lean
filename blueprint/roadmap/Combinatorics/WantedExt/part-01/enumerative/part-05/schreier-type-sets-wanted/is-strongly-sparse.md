@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsStronglySparse
 ---
 
-# Is Strongly Sparse
+# Strongly sparse sets
 
-A finite set is *strongly sparse* if the differences between
-consecutive elements in increasing order are strictly
-increasing.
+**Strongly sparse sets.** A finite set of natural numbers is *strongly sparse* if the
+differences between consecutive elements in increasing order are strictly increasing.
 
 ## Depends on
 

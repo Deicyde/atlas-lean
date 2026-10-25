@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.logConcave_of_linearRecurrence_of_initial_logConcave
 ---
 
-# Log Concave of linear Recurrence of initial log Concave
+# Log-concavity propagates along a linear recurrence
 
-Log-concavity propagates along a positive linear recurrence with one
-positive and `k - 1` subtracted nonnegative coefficients: if a positive real
-sequence satisfies `z n = c₁ z (n-1) - c₂ z (n-2) - ⋯ - c_k z (n-k)` for
-`n ≥ k` (with `k ≥ 2` and `c_j ≥ 0` for `2 ≤ j ≤ k`) and its initial block
-`z 0, …, z k` is log-concave (`z (i-1) z (i+1) ≤ z i ^ 2` for
-`1 ≤ i < k`), then the whole sequence is log-concave. The paper assumes the
-block `z 0, …, z (k+1)` is log-concave; its `i = k` inequality is dropped
-because the recurrence at `n = k + 1` propagates it from the `i < k` ones. The
-paper's hypothesis `c₁ > 0` is omitted: it follows from positivity and the
-recurrence at `n = k`.
+**Log-concavity propagates along a linear recurrence.** Let $k \ge 2$ be an integer, let
+$c_1, \dots, c_k$ be real numbers with $c_j \ge 0$ for $2 \le j \le k$, and let
+$(z_n)_{n \ge 0}$ be a sequence of positive real numbers with
+
+$$z_n = c_1 z_{n-1} - \sum_{j=2}^{k} c_j z_{n-j} \quad (n \ge k).$$
+
+If $z_{i-1} z_{i+1} \le z_i^2$ for $1 \le i < k$, then $z_{n-1} z_{n+1} \le z_n^2$ for every
+$n \ge 1$; that is, the whole sequence is log-concave.
+
+The paper assumes that the block $z_0, \dots, z_{k+1}$ is log-concave, which adds the
+inequality for $i = k$, and that $c_1 > 0$. Both follow from the other hypotheses: the
+recurrence at $n = k + 1$ propagates the inequality for $i = k$ from those for $i < k$, and
+the recurrence at $n = k$ forces $c_1 > 0$.
 
 ## Depends on
 

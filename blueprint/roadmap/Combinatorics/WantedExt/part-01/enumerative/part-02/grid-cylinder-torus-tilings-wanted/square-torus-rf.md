@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.squareTorus_rf
 ---
 
-# Square Torus rf
+# Fixed tilings of the square torus under the diagonal reflection
 
-The `rf` square-torus shift-sum is split into sums over odd and even divisors rather than a
-piecewise summand.  Odd `d` contributes the `t_rf^(n/d)` factor, while even `d` contributes only
-`t_id`; `σ²=1` is the reflection-order hypothesis.  This is algebraically the paper's Theorem 40.
+**Fixed tilings of the square torus under the diagonal reflection.** Let $n$ be a positive
+integer, $T$ a finite set of tile designs and $\sigma$ a permutation of $T$ with $\sigma^2 = 1$;
+write $t_1$ for the number of designs $d \in T$ with $\sigma(d) = d$, and let $\varphi$ be Euler's
+totient function. Let $S$ be the torus shift sum of the cell map $g(x, y) = (y, x)$ of $rf$ on
+$(\mathbb{Z}/n\mathbb{Z})^2$, that is, the sum over all shifts
+$(a, b) \in (\mathbb{Z}/n\mathbb{Z})^2$ of the number of tilings
+$F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(g(c + (a, b))) = \sigma(F(c))$ for every cell $c$.
+Then $S = n \left(\sum_{d \mid n,\ d \text{ odd}} \varphi(d) \, |T|^{(n^2-n)/(2d)} \, t_1^{n/d} +
+\sum_{d \mid n,\ d \text{ even}} \varphi(d) \, |T|^{n^2/(2d)}\right)$.
 
-Formalization deviation: none beyond the representation choices stated above.
+The paper writes this as a single divisor sum with a summand depending on the parity of $d$.
 
 ## Depends on
 
-- [Cell RF](cell-rf.md)
-- [Tile Fixed Count](tile-fixed-count.md)
-- [Torus Shift Sum](torus-shift-sum.md)
+- [Cell map of the diagonal reflection rf](cell-rf.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
+- [Torus shift sum](torus-shift-sum.md)
 
 ## Sources
 

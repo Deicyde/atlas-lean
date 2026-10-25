@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsCount
 ---
 
-# Odd Designated Summands Count
+# The odd designated-summand partition function
 
-`PD_2(n)`, the number of partitions of `n` with designated summands in which all parts are
-odd, defined as the `n`th coefficient of `f_4 f_6^2 / (f_1 f_3 f_12)` (integer-valued).
+**The odd designated-summand partition function.** For a natural number $n$, the integer
+$\mathrm{PD}_2(n)$ is defined as the coefficient of $q^n$ in the integer power series
+$f_4 f_6^2 / (f_1 f_3 f_{12})$, where $f_k = \prod_{m \ge 1} (1 - q^{km})$ is the Euler product
+(the denominator has constant coefficient $1$, so it is invertible). It counts the partitions of
+$n$ with designated summands in which all parts are odd.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Odd Designated Summands Series](odd-designated-summands-series.md)
+- [Generating function of odd designated-summand partitions](odd-designated-summands-series.md)
 
 ## Sources
 

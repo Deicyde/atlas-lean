@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.rectangularGrid_f_odd
 ---
 
-# Rectangular Grid f odd
+# Rectangular-grid tilings fixed by the reflection $f$, $n$ odd
 
-When `n` is odd, reflection `f` has `m` fixed cells and `m(n-1)/2` two-cycles.  Their design
-factor is `t_f^m`, encoded as `(tileFixedCount σ 1)^m`, and `σ²=1` is the appropriate order
-hypothesis for every `R`-set action.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Rectangular-grid tilings fixed by the reflection $f$, $n$ odd.** Let $n$ and $m$ be positive
+integers with $n$ odd, let $T$ be a finite set of tiles, let $\sigma$ be a permutation of $T$ with
+$\sigma^2 = 1$, and let $t$ be the number of tiles $d \in T$ with $\sigma(d) = d$. Let $f$ be the
+reflection of $\mathbb{Z}/n \times \mathbb{Z}/m$ given by $f(x, y) = (-1 - x, y)$. Then the number
+of tilings $F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with $F(f(c)) = \sigma(F(c))$ for every
+cell $c$ equals $|T|^{m(n-1)/2} \, t^m$.
 
 ## Depends on
 
-- [Cell F](cell-f.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the reflection f](cell-f.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

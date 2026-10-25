@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.StableMatchingSequences.latinSquareCount_zero
 ---
 
-# Latin Square Count zero
+# Latin squares of order zero
 
-There is one Latin square of order zero.
+**Latin squares of order zero.** There is exactly one Latin square of order $0$, that is,
+$L_0 = 1$.
 
 ## Depends on
 
-- [Latin Square Count](latin-square-count.md)
+- [Number of Latin squares](latin-square-count.md)
 
 ## Sources
 

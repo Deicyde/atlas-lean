@@ -5,21 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.IsStableMatching
 ---
 
-# Is Stable Matching
+# Stable matching
 
-The matching `μ` (man `i` marries woman `μ i`) is stable: no man and woman
-prefer each other to their spouses. This is the repository's Gale–Shapley
-`IsStable` for the rank-induced preferences `manPrefs P` and `womanPrefs P`.
+**Stable matching.** For a preference profile of $n$ men and $n$ women, a matching $\mu$, in
+which man $i$ marries woman $\mu(i)$, is stable when no man and woman both strictly prefer each
+other to their own spouses. Equivalently, $\mu$ is a stable perfect matching for the strict
+preferences induced by the men's and the women's rankings.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
 
 ## Proof depends on
 
 - [Stable perfect matching](../../../../../MathlibExt/part-01/matching/gale-shapley/is-stable.md)
-- [Man Prefs](man-prefs.md)
-- [Woman Prefs](woman-prefs.md)
+- [Men's preferences induced by rankings](man-prefs.md)
+- [Women's preference orders of a profile](woman-prefs.md)
 
 ## Sources
 

@@ -5,17 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.rascalGen_eq_card_subset
 ---
 
-# Theorem 24
+# Generalized Rascal numbers count subsets with few small elements
 
-**Theorem 24**: `R^{(j)}_{n,k}` equals the number of
-`k`-element subsets of `{1, …, n}` whose intersection with
-`{1, …, n-k}` contains at most `j` elements (the Gregory et
-al. interpretation of `\binom{n}{k}_j`), here zero-based as
-subsets of `Fin n` with at most `j` elements `< n - k`.
+**Generalized Rascal numbers count subsets with few small elements.** For all natural numbers
+$j$, $n$ and $k$, the generalized Rascal number $R^{(j)}_{n,k}$ equals the number of $k$-element
+subsets of $\{0, 1, \dots, n-1\}$ that have at most $j$ elements smaller than $n - k$.
+
+Shifting by one, these are the $k$-element subsets of $\{1, \dots, n\}$ meeting
+$\{1, \dots, n-k\}$ in at most $j$ elements, which is Gregory et al.'s interpretation of
+$\binom{n}{k}_j$.
 
 ## Depends on
 
-- [Rascal Gen](rascal-gen.md)
+- [Generalized Rascal numbers](rascal-gen.md)
 
 ## Sources
 

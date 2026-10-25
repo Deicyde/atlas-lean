@@ -6,15 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.card_qBonacciDyckPaths_three_two_four
 ---
 
-# Card q Bonacci Dyck Paths three two four
+# Path counts for $q = 3/2$
 
-Small values for `q = 3/2` (here `t = 0` and `s ≠ t r + 1`):
-`|Q_4^{3/2}| = 7` but `|R̃_5^{3/2}| = 6`.
+**Path counts for $q = 3/2$.** Let $r = 3$ and $s = 2$. The set $Q_4^{3/2}$ of $Q$-bonacci
+paths of semilength $4$, that is, the Dyck paths of semilength $4$ and height at most $2$ whose
+block word's maximal runs satisfy the $Q$-bonacci run condition, has $7$ elements, while the set
+$\tilde R_5^{3/2}$ of Dyck paths of semilength $5$ and height at most $2$ whose block word's
+maximal runs satisfy the rational run condition has $6$ elements.
+
+Here $t = \lfloor (s - 1)/r \rfloor = 0$ and $s \ne t r + 1$.
 
 ## Depends on
 
-- [Q Bonacci Dyck Paths](q-bonacci-dyck-paths.md)
-- [Tilde Rational Dyck Paths](tilde-rational-dyck-paths.md)
+- [The $Q$-bonacci paths $Q_n^{r/s}$](q-bonacci-dyck-paths.md)
+- [The path sets $\tilde R_n^{r/s}$](tilde-rational-dyck-paths.md)
 
 ## Sources
 

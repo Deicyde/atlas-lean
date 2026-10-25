@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_marriageable_lonely_atTop
 ---
 
-# Tendsto marriageable lonely at Top
+# The marriageable and lonely singles counts tend to infinity
 
-`M_n → ∞` and `L_n → ∞`.
+**The marriageable and lonely singles counts tend to infinity.** Let $M_n$ and $L_n$ be the
+numbers of noncrossing partitions of $\{0, \dots, n-1\}$ that are marriageable singles partitions
+and lonely singles partitions, respectively. Then $M_n \to \infty$ and $L_n \to \infty$ as
+$n \to \infty$.
 
 ## Depends on
 
-- [Lonely Singles Count](lonely-singles-count.md)
-- [Marriageable Singles Count](marriageable-singles-count.md)
+- [Number of lonely singles partitions](lonely-singles-count.md)
+- [Number of marriageable singles partitions](marriageable-singles-count.md)
 
 ## Sources
 

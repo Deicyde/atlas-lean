@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_solvedIn_three_firstCorrectAt_two_cyclicShift
 ---
 
-# Theorem 12
+# Three-guess solves of cyclic shift first correct at guess two
 
-**Theorem 12.** For cyclic shift and `n ≥ 4`, the number of permutations guessed in exactly
-three guesses with `ρ_CS(π) = 2` is `2ⁿ - 2n - 2`.
+**Three-guess solves of cyclic shift first correct at guess two.** For $n \ge 4$, the number
+of permutations $\pi$ of $\{0, \dots, n-1\}$ that the cyclic shift strategy guesses in exactly
+three guesses, with the second guess being the first guess that has a correct position, is
+$2^n - 2n - 2$.
 
 ## Depends on
 
-- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
-- [Perm Wordle Solved In](perm-wordle-solved-in.md)
-- [Cyclic Shift Strategy](cyclic-shift-strategy.md)
+- [First guess with a correct position in permutation Wordle](perm-wordle-first-correct-at.md)
+- [Permutation Wordle games solved in a given number of guesses](perm-wordle-solved-in.md)
+- [Cyclic shift strategy](cyclic-shift-strategy.md)
 
 ## Sources
 

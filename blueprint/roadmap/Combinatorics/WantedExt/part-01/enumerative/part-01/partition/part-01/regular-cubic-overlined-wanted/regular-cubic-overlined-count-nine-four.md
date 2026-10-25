@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.regularCubicOverlinedCount_nine_four_mul_add_three
 ---
 
-# Regular Cubic Overlined Count nine four mul add three
+# Congruence modulo 8 for 9-regular cubic partitions with odd parts overlined
 
-For all `n ≥ 0`, `a_9(4n + 3) ≡ 0 (mod 8)`.
+**Congruence modulo 8 for 9-regular cubic partitions with odd parts overlined.** For every
+$n \ge 0$, the number $a_9(4n + 3)$ of $9$-regular cubic partitions of $4n + 3$ with odd parts
+overlined is divisible by $8$.
 
 ## Depends on
 
-- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
+- [ℓ-regular cubic partitions with odd parts overlined](regular-cubic-overlined-count.md)
 
 ## Sources
 

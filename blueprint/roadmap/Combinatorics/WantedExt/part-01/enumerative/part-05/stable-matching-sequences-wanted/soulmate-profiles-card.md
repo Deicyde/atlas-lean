@@ -5,16 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.soulmate_profiles_card
 ---
 
-# Soulmate profiles card
+# Number of profiles with exactly $k$ soulmate pairs
 
-The number `F(k, n)` of preference profiles with exactly `k` soulmate pairs
-is `C(n, k)² k! ((n-1)!)^{2k} S(k, n)`, with `S(k, n)` the inclusion-exclusion
-sum of Lemma 4.
+**Number of profiles with exactly $k$ soulmate pairs.** For natural numbers $n$ and $k$, the
+number $F(k, n)$ of preference profiles for $n$ men and $n$ women with exactly $k$ soulmate pairs
+is
+
+$$
+\binom{n}{k}^2 k!\, ((n-1)!)^{2k}
+\sum_{i=0}^{n-k} (-1)^i \binom{n-k}{i}^2 ((n-1)!)^{2i}\, i!\, (n!)^{2(n-k-i)}.
+$$
+
+When $k > n$ both sides are $0$.
+
+The sum is the paper's $S(k, n)$ of Lemma 4, which counts the preferences of the people outside
+the $k$ soulmate couples that create no further soulmate pair.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
-- [Soulmate Pair Count](soulmate-pair-count.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Number of soulmate pairs](soulmate-pair-count.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.parkingFunction_descentSet_card_reflect
 ---
 
-# Parking Function descent Set card reflect
+# Reflection symmetry of descent sets of parking functions
 
-Parking functions with descent set `I` and with descent set `J = {n - i : i ∈ I}` are
-equinumerous, `d(I;n) = d(J;n)`.
+**Reflection symmetry of descent sets of parking functions.** Write a parking function $f$ of
+length $n$ as the sequence $(a_1, \dots, a_n)$ with $a_j = f(j-1) + 1$. Its descent set is the set
+of $j \in \{1, \dots, n-1\}$ with $a_j > a_{j+1}$. For every $n$ and every
+$I \subseteq \{1, \dots, n-1\}$, let $J = \{n - i : i \in I\}$. Then the number of parking
+functions of length $n$ with descent set $I$ equals the number with descent set $J$.
 
 ## Depends on
 

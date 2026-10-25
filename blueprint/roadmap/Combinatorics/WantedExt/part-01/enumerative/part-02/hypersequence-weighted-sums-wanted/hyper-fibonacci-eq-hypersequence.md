@@ -6,9 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.hyperFibonacci_eq_hypersequence
 ---
 
-# Hyper Fibonacci eq hypersequence
+# Hyperfibonacci numbers are the hypersequences of the Fibonacci numbers
 
-The existing hyperfibonacci numbers are the hypersequence of the Fibonacci numbers.
+**Hyperfibonacci numbers are the hypersequences of the Fibonacci numbers.** Let $F_k$ denote
+the $k$th Fibonacci number. For all natural numbers $r$ and $n$, the hyperfibonacci number
+$F^{(r)}_n$ equals the $r$th hypersequence of the Fibonacci sequence at $n$, that is,
+$F^{(r)}_n = a^{(r)}_n$ for $a_k = F_k$, where $a^{(0)}_n = a_n$ and
+$a^{(r+1)}_n = \sum_{k=0}^{n} a^{(r)}_k$.
 
 ## Depends on
 

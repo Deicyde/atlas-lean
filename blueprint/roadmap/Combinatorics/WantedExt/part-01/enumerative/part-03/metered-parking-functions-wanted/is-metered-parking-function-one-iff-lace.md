@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isMeteredParkingFunction_one_iff_lace
 ---
 
-# Is Metered Parking Function one iff lace
+# One-metered parking functions and laces
 
-For `0 < m ≤ n`, `f` is a `1`-metered `(m, n)`-parking function if and only if every instance
-of `n` (zero-based `n - 1`) in `f` is the first entry of a lace of `lace(f)`.
+**One-metered parking functions and laces.** Let $0 < m \le n$ and
+$f : \{0, \dots, m-1\} \to \{0, \dots, n-1\}$. Then $f$ is a $1$-metered parking function if and
+only if, in the lace decomposition of $(f(0), \dots, f(m-1))$, the last spot $n - 1$ occurs in
+no lace other than as its first entry.
 
 ## Depends on
 
-- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Metered parking function](is-metered-parking-function.md)
 - [Lace Decomposition](lace-decomposition.md)
 
 ## Sources

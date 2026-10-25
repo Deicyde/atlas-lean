@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsModEq_eq_gardenOfEden
 ---
 
-# Sum Distinct Parts Mod Eq eq garden Of Eden
+# Different parts in a residue class and Garden of Eden partitions
 
-For `0 ≤ r < m`, `∑_{j ≥ 1} (-1)^{j+1} a_{r,m}(n - 3j(j+1)/2)
-= ∑_{j ≥ 0} (mj + r) G(n - mj - r)`, with `G(k)` the number of Garden of Eden partitions of
-`k`, i.e. partitions of rank at most `-2` (so `G(0) = 0`). The record prints the left sum from
-`j = 0`; that reading is false (`m = 1`, `r = 0`, `n = 1`: left side `-a_{0,1}(1) = -1`, right
-side `0`); the paper's proof reduces the identity to `G(n) = ∑_{j ≥ 1} (-1)^{j+1}
-p(n - 3j(j+1)/2)` and part (ii) sums from `j = 1`, which is the reading stated here.
+**Different parts in a residue class and Garden of Eden partitions.** Let $m$, $r$ and $n$ be
+natural numbers with $r < m$, and for $k \ge 0$ let $a_{r,m}(k)$ be the sum, over all partitions
+of $k$, of the different parts congruent to $r$ modulo $m$, each counted once per partition
+whatever its multiplicity. Let $G(k)$ be the number of Garden of Eden partitions of $k$, that is,
+partitions of $k$ whose Dyson rank (largest part minus number of parts) is at most $-2$. Then
+
+$$\sum_{j \ge 1,\ 3j(j+1)/2 \le n} (-1)^{j+1} a_{r,m}(n - 3j(j+1)/2)
+= \sum_{j \ge 0,\ mj + r \le n} (mj + r)\, G(n - mj - r).$$
+
+The sum on the left starts at $j = 1$. Starting it at $j = 0$ makes the identity false: for
+$m = 1$, $r = 0$ and $n = 1$ the left side becomes $-a_{0,1}(1) = -1$ while the right side is $0$.
 
 ## Depends on
 
-- [Dyson Rank](dyson-rank.md)
-- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
+- [Dyson's rank of a partition](dyson-rank.md)
+- [Sum of different parts congruent to $r$ modulo $m$](sum-distinct-parts-mod-eq.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.card_selfDualMonotone_succ_le
 ---
 
-# Corollary 7
+# Upper bound for self-dual monotone functions on $n + 1$ variables
 
-**Corollary 7.** For `n ≥ 0`, `λ_{n+1} ≤ d_n`.
+**Upper bound for self-dual monotone functions on $n + 1$ variables.** For every $n \ge 0$,
+the number of self-dual monotone Boolean functions on $n + 1$ variables is at most the number
+of monotone Boolean functions on $n$ variables.
 
 ## Depends on
 

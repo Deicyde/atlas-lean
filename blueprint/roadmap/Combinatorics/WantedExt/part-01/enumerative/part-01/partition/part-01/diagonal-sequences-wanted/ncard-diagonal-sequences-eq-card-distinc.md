@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ncard_diagonalSequences_eq_card_distincts
 ---
 
-# Ncard diagonal Sequences eq card distincts
+# Counting diagonal sequences
 
-Corollary 2: the number of diagonal sequences of partitions of `n`, `|Δ(n)|`, equals the
-number of partitions of `n` into distinct parts, which equals the number of partitions of `n`
-into odd parts. Stated for every `n`, including `n = 0`.
+**Counting diagonal sequences.** For every natural number $n$, including $n = 0$, the number
+of distinct diagonal sequences of partitions of $n$ equals the number of partitions of $n$ into
+distinct parts, and the number of partitions of $n$ into distinct parts equals the number of
+partitions of $n$ into odd parts.
 
 ## Depends on
 
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

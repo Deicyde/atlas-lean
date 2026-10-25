@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount_three_isEquivalent
 ---
 
-# Max Rook Partition Count three is Equivalent
+# Asymptotic growth of $R_3(n)$
 
-`R_3(n) ∼ (2/3) n²` as `n → ∞`.
+**Asymptotic growth of $R_3(n)$.** Let $R_3(n)$ be the number of partitions of $n$ with
+max-rook number $3$. Then $R_3(n) \sim \frac{2}{3} n^2$ as $n \to \infty$.
 
 ## Depends on
 
-- [Max Rook Partition Count](max-rook-partition-count.md)
+- [Partitions with a given max-rook number](max-rook-partition-count.md)
 
 ## Sources
 

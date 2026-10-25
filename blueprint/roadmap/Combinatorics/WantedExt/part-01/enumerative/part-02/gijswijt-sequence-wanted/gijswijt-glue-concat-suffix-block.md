@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtGlueConcat_suffix_block
 ---
 
-# Gijswijt Glue Concat suffix block
+# Concatenated glue strings occur in a block only at its end
 
-For `m ≥ 1` and `t ≥ 2`, `m T_t^{(m)}` is a suffix of `B_t^{(m)}`, and this is the only
-occurrence of `T_t^{(m)}` as a substring of `B_t^{(m)}`.
+**Concatenated glue strings occur in a block only at its end.** Let $m \ge 1$ and $t \ge 2$.
+The element $m$ followed by the concatenated glue string $T^{(m)}_t$ is a suffix of the block
+$B^{(m)}_t$, and whenever $B^{(m)}_t = X\,T^{(m)}_t\,Y$ for strings $X$ and $Y$, the string $Y$ is
+empty; that is, $T^{(m)}_t$ occurs in $B^{(m)}_t$ only as a suffix.
 
 ## Depends on
 
-- [Gijswijt Block](gijswijt-block.md)
-- [Gijswijt Glue Concat](gijswijt-glue-concat.md)
+- [Gijswijt blocks](gijswijt-block.md)
+- [Concatenated glue strings of a Gijswijt sequence](gijswijt-glue-concat.md)
 
 ## Sources
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.smallest_cycle_mean_asymp
 ---
 
-# Smallest cycle mean asymp
+# Mean length of the smallest cycle of a random permutation
 
-Theorem 1, first part: `E(X_n) = e^{-γ} log n (1 + O(h(n)/log n))` for some
-`h(n) = o(log n)`, stated in the equivalent form `E(X_n) / (e^{-γ} log n) → 1`.
+**Mean length of the smallest cycle of a random permutation.** For $n \ge 1$ let $X_n$ be the
+length of the smallest cycle of a uniformly random permutation of $\{1, \dots, n\}$. Then
+$\mathbb{E}(X_n) / (e^{-\gamma} \log n) \to 1$ as $n \to \infty$, where $\gamma$ is the
+Euler–Mascheroni constant.
+
+The paper states this as $\mathbb{E}(X_n) = e^{-\gamma} \log n \, (1 + O(h(n)/\log n))$ for some
+$h(n) = o(\log n)$, which is equivalent.
 
 ## Depends on
 

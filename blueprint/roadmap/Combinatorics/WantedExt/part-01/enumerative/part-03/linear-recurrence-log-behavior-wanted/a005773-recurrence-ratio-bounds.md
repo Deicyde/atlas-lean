@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.a005773Recurrence_ratio_bounds
 ---
 
-# A005773 Recurrence ratio bounds
+# Ratio bounds for the A005773 recurrence
 
-With `x n = A (n + 1) / A n` and `φ n = 3 (2n + 1) / (2 (n + 1))`, for every `n ≥ 0`:
-`x n ≤ φ n` (2) and `x (n + 1) / x n ≥ 2 (3n² + 6n + 2) / ((n + 2)(2n + 1) φ n)` (3).
+**Ratio bounds for the A005773 recurrence.**
+Let $(A_n)_{n \ge 0}$ be a sequence of real numbers with $A_0 = A_1 = 1$ and
+$(n+1) A_{n+1} = 2(n+1) A_n + 3(n-1) A_{n-1}$ for every $n \ge 1$. Write
+$x_n = A_{n+1}/A_n$ and $\varphi_n = 3(2n+1)/(2(n+1))$. Then for every $n \ge 0$ we have
+$x_n \le \varphi_n$ and
+
+$$\frac{x_{n+1}}{x_n} \ge \frac{2(3n^2+6n+2)}{(n+2)(2n+1)\,\varphi_n}.$$
 
 ## Depends on
 

@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.descendingNaplesCount_eq_choose
 ---
 
-# Descending Naples Count eq choose
+# Counting descending $k$-Naples parking functions
 
-Theorem 7: for `n, k ≥ 1`, there are `C(2n - 1, n) - C(2n - 1, n + k + 1)` descending
-`k`-Naples parking functions of length `n`, and `((k + 1)/n) C(2n, n + k + 1)` descending
-strictly `k`-Naples parking functions of length `n`.
+**Counting descending $k$-Naples parking functions.** For all natural numbers $n \ge 1$ and
+$k \ge 1$, the number of weakly decreasing $k$-Naples parking functions of length $n$ is
+$\binom{2n-1}{n} - \binom{2n-1}{n+k+1}$, and the number of weakly decreasing strictly
+$k$-Naples parking functions of length $n$ (those that are $k$-Naples but not $(k-1)$-Naples)
+is $\frac{k+1}{n} \binom{2n}{n+k+1}$.
 
 ## Depends on
 
-- [Descending Naples Count](descending-naples-count.md)
-- [Descending Strict Naples Count](descending-strict-naples-count.md)
+- [Number of descending $k$-Naples parking functions](descending-naples-count.md)
+- [Number of descending strictly $k$-Naples parking functions](descending-strict-naples-count.md)
 
 ## Sources
 

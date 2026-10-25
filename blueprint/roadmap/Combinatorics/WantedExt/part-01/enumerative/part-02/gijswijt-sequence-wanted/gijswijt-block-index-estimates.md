@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtBlockIndex_estimates
 ---
 
-# Gijswijt Block Index estimates
+# Recursive estimate for the block index
 
-For `m ≥ 1` and `n ≥ m + 3`,
-`m (m+1)^{t(m+1,n) - 2} ≤ t(m, n) ≤ (m+1)^{t(m+1,n) - 1} + 1`, and the second inequality is
-strict when `n = m + 3`.
+**Recursive estimate for the block index.** Let $m \ge 1$ and $n \ge m + 3$, and for $k \ge 1$
+let $t(k, n)$ be the index $t$ such that the first occurrence of $n$ in the $k$th order Gijswijt
+sequence $A^{(k)}$ is the last element of the block $B_t^{(k)}$ of $A^{(k)}$. Then
+$m (m+1)^{t(m+1,n) - 2} \le t(m, n) \le (m+1)^{t(m+1,n) - 1} + 1$, and the second inequality is
+strict when $n = m + 3$.
 
 ## Depends on
 
-- [Gijswijt Block Index](gijswijt-block-index.md)
+- [Block index of the first occurrence](gijswijt-block-index.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.generalizedCubicPartitionCount_zero
 ---
 
-# Generalized Cubic Partition Count zero
+# Generalized cubic partitions of zero
 
-`a_c(0) = 1`.
+**Generalized cubic partitions of zero.** For every natural number $c$, the generalized
+cubic partition number $a_c(0)$ equals $1$.
 
 ## Depends on
 
-- [Generalized Cubic Partition Count](generalized-cubic-partition-count.md)
+- [Generalized cubic partition numbers](generalized-cubic-partition-count.md)
 
 ## Proof depends on
 
 - [Constant term of the Euler products](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
-- [Generalized Cubic Partition Count generating Function](generalized-cubic-partition-count-genera.md)
+- [Generating function identity for generalized cubic partition numbers](generalized-cubic-partition-count-genera.md)
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

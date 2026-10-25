@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.curlingNumber_le_of_suffix
 ---
 
-# Curling Number le of suffix
+# The curling number is monotone under suffixes
 
-If `T` is a suffix of `S`, then `𝒞(S) ≥ 𝒞(T)`.
+**The curling number is monotone under suffixes.** For strings $S$ and $T$ of natural numbers,
+if $T$ is a suffix of $S$, then $\mathcal{C}(T) \le \mathcal{C}(S)$.
 
 ## Depends on
 
-- [Curling Number](curling-number.md)
+- [Curling number](curling-number.md)
 
 ## Sources
 

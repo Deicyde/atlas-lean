@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.partitionsEvenPartsDistinct_mod24_five_power
 ---
 
-# Partitions Even Parts Distinct mod24 five power
+# Power-of-five congruence modulo 24 for partitions with distinct even parts
 
-For naturals `k` and `n` with `k ≥ 1`, `ped(9n+7)` is congruent modulo `24` to
-`ped(9·5^(2k)n + (57·5^(2k) - 1)/8)`. The formal statement uses natural-number
-division; it is exact because `57·5^(2k) - 1` is divisible by `8`.
+**Power-of-five congruence modulo 24 for partitions with distinct even parts.** Write
+$\mathrm{ped}(m)$ for the number of partitions of $m$ in which the even parts are distinct (odd
+parts may repeat). For all natural numbers $k \ge 1$ and $n$,
+
+$$
+\mathrm{ped}(9n+7) \equiv \mathrm{ped}\left(9 \cdot 5^{2k} n + \frac{57 \cdot 5^{2k} - 1}{8}\right)
+  \pmod{24}.
+$$
+
+The quotient is exact, since $57 \cdot 5^{2k} - 1$ is divisible by $8$.
 
 ## Depends on
 

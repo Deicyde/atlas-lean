@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.ascList_eq_desList_ascentToDescentRearrangement
 ---
 
-# Asc List eq des List ascent To Descent Rearrangement
+# Ascents of a word are the descents of its rearrangement
 
-For every word `x` over `ℕ` (so for every `x ∈ 𝔖_n(y)`, `y ∈ ℕ^n`),
-`Asc(x) = Des(ν(x))`.
+**Ascents of a word are the descents of its rearrangement.** For a word
+$x = x_1 \cdots x_m$ over $\mathbb{N}$, let the ascent set $\mathrm{Asc}(x)$ be the set of
+$i \in \{1, \dots, m - 1\}$ with $x_i < x_{i+1}$, and the descent set $\mathrm{Des}(x)$ the set
+of $i \in \{1, \dots, m - 1\}$ with $x_i > x_{i+1}$. Then every word $x$ over $\mathbb{N}$
+satisfies $\mathrm{Asc}(x) = \mathrm{Des}(\nu(x))$, where $\nu$ is the ascent-to-descent
+rearrangement.
 
 ## Depends on
 

@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.centralBinomReciprocalH
 ---
 
-# Central Binom Reciprocal H
+# Closed form of the reciprocal central binomial series
 
-The closed form `H(x) = 4√x arcsin(√x/2) / (4 - x)^{3/2} + 4/(4 - x)` of
-`∑_{n ≥ 0} x^n / binom(2n, n)`, on the real interval `0 ≤ x < 4`.
+**Closed form of the reciprocal central binomial series.** For every real number $x$, let
+
+$$
+H(x) = \frac{4\sqrt{x}\,\arcsin(\sqrt{x}/2)}{(4 - x)\sqrt{4 - x}} + \frac{4}{4 - x}.
+$$
+
+The formula is meant for $0 \le x < 4$, where by the paper
+$H(x) = \sum_{n \ge 0} x^n / \binom{2n}{n}$.
 
 ## Depends on
 

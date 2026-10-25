@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.conjugateParts_three_one
 ---
 
-# Conjugate Parts three one
+# The conjugate of $(3, 1)$ is $(2, 1, 1)$
 
-The conjugate of `(3, 1)` is `(2, 1, 1)`.
+**The conjugate of $(3, 1)$ is $(2, 1, 1)$.** The conjugate of the partition with parts
+$\{3, 1\}$ is the partition with parts $\{2, 1, 1\}$.
 
 ## Depends on
 
-- [Conjugate Parts](conjugate-parts.md)
+- [Conjugate of a multiset of parts](conjugate-parts.md)
 
 ## Sources
 

@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hyperseqB
 ---
 
-# Hyperseq B
+# Parisse's matrix $B(n)$
 
-Parisse's `b_{j,k}(n) := (-1)^k e_{j,j-k}(n)` (Equation (2.5)), zero for `k > j`, where
-`e_{j,i}(n)` is the elementary symmetric polynomial of degree `i` in `n + 1, …, n + j`. The
-argument `n` is an integer because the source also uses `n ∈ ℤ` (Proposition 3, after
-Remark 1). See `hyperseqB_one` and `hyperseqB_row_three`.
+**Parisse's matrix $B(n)$.** For an integer $n$ and $j, k \in \mathbb{N}$, let $e_{j,i}(n)$ be
+the elementary symmetric polynomial of degree $i$ in $n + 1, \dots, n + j$. The entry
+$b_{j,k}(n)$ of $B(n)$ is $(-1)^k e_{j,j-k}(n)$ for $k \le j$ and $0$ for $k > j$; it is an
+integer.
+
+The source also uses this for $n \in \mathbb{Z}$ (Proposition 3, after Remark 1), which is why
+$n$ ranges over the integers.
 
 ## Depends on
 

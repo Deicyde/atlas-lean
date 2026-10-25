@@ -12,15 +12,15 @@ The empty permutation contributes the constant term `1` of `A_P`.
 
 ## Depends on
 
-- [King Flat POPBelow GF](king-flat-popbelow-gf.md)
+- [Generating function of king permutations avoiding $P_{j+1}$](king-flat-popbelow-gf.md)
 
 ## Proof depends on
 
-- [Contains Flat POPBelow](contains-flat-popbelow.md)
-- [Is King Perm](is-king-perm.md)
+- [Containing a flat pattern with one bottom label](contains-flat-popbelow.md)
+- [King permutations](is-king-perm.md)
 - [Four le of contains Flat POPBelow](four-le-of-contains-flat-popbelow.md)
-- [Perm Ascent Count](perm-ascent-count.md)
-- [Perm Descent Count](perm-descent-count.md)
+- [Number of ascents of a permutation](perm-ascent-count.md)
+- [Number of descents](perm-descent-count.md)
 - [Number of left-to-right maxima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-max-count.md)
 - [Number of right-to-left maxima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-max-count.md)
 

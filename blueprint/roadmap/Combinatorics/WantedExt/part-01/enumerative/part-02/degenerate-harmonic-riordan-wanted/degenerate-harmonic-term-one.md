@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.degenerateHarmonicTerm_one
 ---
 
-# Degenerate Harmonic Term one
+# Degenerate harmonic term of index one
 
-`degenerateHarmonicTerm λ α 1 = 1 / α` for `λ ≠ 0`.
+**Degenerate harmonic term of index one.** For every real $\lambda \ne 0$ and every real
+$\alpha$, the degenerate harmonic term of index $1$,
+$H^0_{1,\lambda}(\alpha) = \binom{\lambda}{1} / (\lambda \alpha)$, equals $1/\alpha$.
+
+At $\alpha = 0$ both sides are $0$, under the convention that a quotient by $0$ is $0$.
 
 ## Depends on
 
-- [Degenerate Harmonic Term](degenerate-harmonic-term.md)
+- [Degenerate harmonic terms](degenerate-harmonic-term.md)
 
 ## Sources
 

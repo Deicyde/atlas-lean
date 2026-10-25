@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.degenerateHarmonicRank_succ_partial_sum
 ---
 
-# Degenerate Harmonic Rank succ partial sum
+# Partial sums of degenerate harmonic numbers of rank as a convolution
 
-Theorem 4: for `n, r ≥ 0`,
-`∑_{k=0}^n H_λ(k, r + 1, α) = ∑_{k=0}^n H_{n-k,λ}(α) H_λ(k, r, α)`.
+**Partial sums of degenerate harmonic numbers of rank as a convolution.** Let $\lambda > 0$
+and $\alpha > 0$ be real and let $n$ and $r$ be natural numbers. Write $H_\lambda(k, r, \alpha)$
+for the generalized degenerate harmonic numbers of rank $r$ and $H_{m,\lambda}(\alpha)$ for the
+generalized degenerate harmonic numbers. Then
+
+$$\sum_{k=0}^{n} H_\lambda(k, r+1, \alpha) =
+\sum_{k=0}^{n} H_{n-k,\lambda}(\alpha) \, H_\lambda(k, r, \alpha).$$
 
 ## Depends on
 
-- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
-- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
+- [Generalized degenerate harmonic numbers of a given rank](degenerate-harmonic-rank.md)
+- [Generalized degenerate harmonic numbers](generalized-degenerate-harmonic.md)
 
 ## Sources
 

@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.card_prefixOnes_suffixZeros
 ---
 
-# Lemma 3
+# Binary words with a prefix of ones and a suffix of zeros
 
-**Lemma 3**: for `ℓ ≤ k` and `k + u ≤ n`,
-`R_{n-u-ℓ,k-ℓ}` counts the words in `B_k(n)` that start with
-at least `ℓ` ones and end with at least `u` zeros.
+**Binary words with a prefix of ones and a suffix of zeros.** Let $n, k, \ell, u$ be natural
+numbers with $\ell \le k$ and $k + u \le n$, and let $B_k(n)$ be the set of binary words $w$ of
+length $n$ with exactly $k$ ones and at most one ascent (a position $i$ with $w_i < w_{i+1}$).
+The number of words in $B_k(n)$ whose first $\ell$ letters are all $1$ and whose last $u$
+letters are all $0$ equals the Rascal number $R_{n-u-\ell, k-\ell}$, where
+$R_{a,b} = b(a-b) + 1$ for $0 \le b \le a$.
 
 ## Depends on
 
-- [Rascal Word](rascal-word.md)
-- [Rascal Z](rascal-z.md)
-- [Word Ascents](word-ascents.md)
+- [Binary words with few ascents](rascal-word.md)
+- [Rascal numbers on the integers](rascal-z.md)
+- [Number of ascents of a word](word-ascents.md)
 
 ## Sources
 

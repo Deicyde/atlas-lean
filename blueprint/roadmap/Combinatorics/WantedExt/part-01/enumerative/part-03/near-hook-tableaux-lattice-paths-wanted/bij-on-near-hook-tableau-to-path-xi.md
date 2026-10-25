@@ -11,9 +11,9 @@ lean: MetaMathlibExt.bijOn_nearHookTableauToPathXi
 
 ## Depends on
 
-- [First Quadrant Paths](first-quadrant-paths.md)
+- [First-quadrant paths $\mathcal{P}_n$](first-quadrant-paths.md)
 - [Near Hook Tableau To Path Xi](near-hook-tableau-to-path-xi.md)
-- [Near Hook Theta](near-hook-theta.md)
+- [The near-hook diagram $\theta^{(n)}$](near-hook-theta.md)
 
 ## Sources
 

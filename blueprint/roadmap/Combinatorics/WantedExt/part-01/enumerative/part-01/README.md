@@ -22,5 +22,5 @@ navigation: transparent
 - [Central Binomial Reciprocal Multisection](central-binomial-reciprocal-multisection-wanted/README.md)
 - [Colored Compositions Dyck Polygons](colored-compositions-dyck-polygons-wanted/README.md)
 - [Composition Shade](composition-shade-wanted/README.md)
-- [Compositions Odd Parts Wanted](pow-div-one-sub-pow-eq-sum.md)
+- [Roots-of-unity partial fraction identity](pow-div-one-sub-pow-eq-sum.md)
 - [Cyclic Pattern Avoiding Stacks](cyclic-pattern-avoiding-stacks-wanted/README.md)

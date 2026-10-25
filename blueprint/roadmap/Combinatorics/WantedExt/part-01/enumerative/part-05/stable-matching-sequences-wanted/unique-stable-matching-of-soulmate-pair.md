@@ -5,20 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.unique_stable_matching_of_soulmatePairCount_eq_pred
 ---
 
-# Unique stable matching of soulmate Pair Count eq pred
+# Profiles with $n - 1$ soulmate pairs
 
-A profile with `n - 1` soulmate pairs has exactly one stable matching, and
-the men-proposing Gale–Shapley algorithm ends in `j` rounds, where `j` is the
-(one-based) ranking the man outside the soulmate pairs gives his wife.
+**Profiles with $n - 1$ soulmate pairs.** Let $P$ be a preference profile for $n$ men and $n$
+women with exactly $n - 1$ soulmate pairs (read as $0$ when $n = 0$). Then $P$ has exactly one
+stable matching. Moreover, for every stable matching $\mu$ of $P$ and every man $i$ who has no
+soulmate, the men-proposing Gale–Shapley algorithm on $P$ ends after $r + 1$ rounds, where $r$ is
+the zero-based position at which man $i$ ranks his wife $\mu(i)$.
 
 ## Depends on
 
-- [Is Soulmate Pair](is-soulmate-pair.md)
-- [Is Stable Matching](is-stable-matching.md)
-- [Preference Profile](preference-profile.md)
-- [Gale Shapley Rounds](gale-shapley-rounds.md)
-- [Man Rank](man-rank.md)
-- [Soulmate Pair Count](soulmate-pair-count.md)
+- [Soulmate pair](is-soulmate-pair.md)
+- [Stable matching](is-stable-matching.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Number of Gale–Shapley rounds](gale-shapley-rounds.md)
+- [Rank of a woman for a man](man-rank.md)
+- [Number of soulmate pairs](soulmate-pair-count.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.TriangularRecurrence.array_binomial_four_two
 ---
 
-# Array binomial four two
+# The binomial array at $(4, 2)$
 
-For the binomial parameters `(0, 0, 1; 0, 0, 1)` (Table 1), `a_{4,2} = 6`.
+**The binomial array at $(4, 2)$.** For the parameters
+$(\alpha, \beta, \gamma; \alpha', \beta', \gamma') = (0, 0, 1; 0, 0, 1)$ of the binomial
+coefficients (Table 1), the triangular array $a$ satisfies $a_{4,2} = 6$.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
-- [Array](array.md)
+- [Triangular recurrence](triangular-recurrence.md)
+- [Triangular array of a linear recurrence](array.md)
 
 ## Sources
 

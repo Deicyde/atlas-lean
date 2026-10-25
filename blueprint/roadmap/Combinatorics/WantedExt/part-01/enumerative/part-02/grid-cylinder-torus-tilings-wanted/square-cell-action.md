@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.squareCellAction
 ---
 
-# Square Cell Action
+# The dihedral action on the cells of the square grid
 
-The cell maps of the paper's square symmetry group `D₈ = ⟨r, f⟩` on the `n × n` grid, indexed
-by Mathlib's `DihedralGroup 4`: `r i ↦ rⁱ` and `sr i ↦ f ∘ rⁱ` with `r = cellR` and `f = cellF`.
-Since `f r f = r⁻¹` on cells, `g ↦ squareCellAction n g` is a homomorphism into maps under
-composition for Mathlib's multiplication.
+**The dihedral action on the cells of the square grid.** For a natural number $n$, let $r$ and
+$f$ be the maps of $(\mathbb{Z}/n\mathbb{Z})^2$ given by $r(x, y) = (-1 - y, x)$ (the quarter-turn)
+and $f(x, y) = (-1 - x, y)$ (the reflection). The dihedral group of order $8$ has the rotations
+$r_i$ and the reflections $sr_i$ for $i \in \mathbb{Z}/4\mathbb{Z}$. The action sends $r_i$ to the
+$i$-fold iterate $r^i$ and $sr_i$ to $f \circ r^i$, where $i$ is read as an integer in
+$\{0, 1, 2, 3\}$.
+
+Since $f \circ r \circ f = r^{-1}$ on cells, this assignment turns the multiplication of the
+dihedral group into composition of maps.
 
 ## Depends on
 
@@ -18,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cell F](cell-f.md)
-- [Cell R](cell-r.md)
+- [Cell map of the reflection f](cell-f.md)
+- [Cell map of the quarter-turn r](cell-r.md)
 
 ## Sources
 

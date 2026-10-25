@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.compositionOddMinusEven_zero_true
 ---
 
-# Composition Odd Minus Even zero true
+# Signed count of the compositions of zero
 
-The empty composition of `0` is even, so the signed count of all
-compositions of `0` is `-1`.
+**Signed count of the compositions of zero.** The only composition of $0$ is the empty one,
+which has no parts and so is even. Hence the signed count of all compositions of $0$, the number
+of odd compositions minus the number of even ones, is $-1$.
 
 ## Depends on
 
-- [Composition Odd Minus Even](composition-odd-minus-even.md)
+- [Signed count of compositions](composition-odd-minus-even.md)
 
 ## Sources
 

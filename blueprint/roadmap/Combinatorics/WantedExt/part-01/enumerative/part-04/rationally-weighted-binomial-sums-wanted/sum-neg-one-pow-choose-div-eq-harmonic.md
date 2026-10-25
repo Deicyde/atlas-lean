@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_choose_div_eq_harmonic
 ---
 
-# Sum neg one pow choose div eq harmonic
+# Finkel's identity
 
-Finkel's identity (3.5): `∑_{k=1}^n (-1)^{k-1} binom(n, k)/k = H_n`.
+**Finkel's identity.** For every natural number $n$, with $H_n = \sum_{j=1}^{n} 1/j$ the
+$n$-th harmonic number,
+
+$$\sum_{k=1}^{n} (-1)^{k-1} \frac{1}{k} \binom{n}{k} = H_n.$$
 
 ## Depends on
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.squareGrid_f_odd
 ---
 
-# Square Grid f odd
+# Square-grid tilings fixed by the reflection $f$ for odd $n$
 
-For odd `n`, `f` has `n` fixed cells and `(n²-n)/2` two-cycles.  Its fixed-design factor is
-`(tileFixedCount σ 1)^n`, and `σ²=1` covers every order-two tile action.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-grid tilings fixed by the reflection $f$ for odd $n$.** Let $n$ be an odd positive
+integer, let $T$ be a finite set, let $\sigma$ be a permutation of $T$ with $\sigma^2 = 1$, and
+write $t_\sigma$ for the number of elements $t \in T$ with $\sigma(t) = t$. Let $f$ be the
+reflection of the grid $(\mathbb{Z}/n\mathbb{Z})^2$ given by $f(x, y) = (-1 - x, y)$. Then the
+number of maps $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(f(c)) = \sigma(F(c))$ for every
+cell $c$ is $|T|^{(n^2 - n)/2} \cdot t_\sigma^{\,n}$.
 
 ## Depends on
 
-- [Cell F](cell-f.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the reflection f](cell-f.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

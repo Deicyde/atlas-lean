@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.cyclicSortingMachine_321_identity_orbit_period
 ---
 
-# Cyclic Sorting Machine 321 identity orbit period
+# Eventual periodicity of the identity under $SC_{(321)}$
 
-For `n ≥ 4` and `m ≥ ⌈(n - 1 - ⌈(2n-1)/3⌉)/2⌉`,
-`SC_[321]^m(id_n) = SC_[321]^{m + ⌈(2n-1)/3⌉}(id_n)`. With natural division,
-`⌈(2n-1)/3⌉ = (2n+1)/3` and `⌈(n - 1 - c)/2⌉ = (n - c)/2`.
+**Eventual periodicity of the identity under $SC_{[321]}$.** Let $n \ge 4$, let
+$c = \lceil (2n-1)/3 \rceil$, and let $SC_{[321]}^k$ be the $k$-fold iterate of the cyclic
+avoidance machine $SC_{[321]}$. For every natural number $m \ge \lceil (n-1-c)/2 \rceil$,
+$SC_{[321]}^m(12 \cdots n) = SC_{[321]}^{m+c}(12 \cdots n)$.
+
+Equivalently, $c = \lfloor (2n+1)/3 \rfloor$ and
+$\lceil (n-1-c)/2 \rceil = \lfloor (n-c)/2 \rfloor$.
 
 ## Depends on
 
-- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
+- [Cyclic avoidance machine](cyclic-sorting-machine.md)
 
 ## Sources
 

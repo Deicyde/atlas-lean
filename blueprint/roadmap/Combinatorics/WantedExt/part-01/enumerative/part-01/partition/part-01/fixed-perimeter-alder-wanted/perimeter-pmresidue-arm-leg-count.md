@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.perimeterPMResidueArmLegCount
 ---
 
-# Perimeter PMResidue Arm Leg Count
+# Partitions into parts $\equiv \pm a \pmod{d+3}$ by largest part and number of parts
 
-`ℓ_d^(a)(α, λ)`: the number of partitions into parts `≡ ±a (mod d + 3)` with largest part
-`m = α` and `k = λ` parts.
+**Partitions into parts $\equiv \pm a \pmod{d+3}$ by largest part and number of parts.** For
+natural numbers $d$, $a$, $\alpha$ and $\lambda$, $\ell_d^{(a)}(\alpha, \lambda)$ is the number of
+nonempty partitions into parts congruent to $a$ or $-a$ modulo $d + 3$ with largest part $\alpha$
+and exactly $\lambda$ parts (so $\ell_d^{(a)}(0, 0) = 0$: the empty partition is not counted).
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
+- [Partitions with fixed perimeter](fixed-perimeter-partitions.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.schreierMultisetCount_small
 ---
 
-# Schreier Multiset Count small
+# Small values of the Schreier multiset count
 
-`|A^{(2)}_{1,4}| = 4` and `|A^{(2)}_{2,5}| = 2` (Table 1 of the paper).
+**Small values of the Schreier multiset count.** Let $|A^{(s)}_{p,n}|$ be the number of
+distinct sub-multisets $F$ of $\{1^s, \dots, (n - 1)^s, n\}$ with $n \in F$ and every element of
+$F$ at least $p|F|$, where $|F|$ counts multiplicity. Then $|A^{(2)}_{1,4}| = 4$ and
+$|A^{(2)}_{2,5}| = 2$.
 
 ## Depends on
 
-- [Schreier Multiset Count](schreier-multiset-count.md)
+- [Number of Schreier-type multisets](schreier-multiset-count.md)
 
 ## Sources
 

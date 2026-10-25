@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_two_pow_div_succ_one_sub_pow_mul_pow
 ---
 
-# Sum choose two pow div succ one sub pow mul pow
+# Polynomial identity in $x$ and $1 - x$ with weights $2^k/(k+1)$
 
-Equation (53): `∑ binom(n,k) 2^k/(k+1) (1-x)^k x^{n-k}
-= ∑_{k ≤ n/2} binom(n,2k)/(2k+1) (1-x)^{2k}`.
+**Polynomial identity in $x$ and $1 - x$ with weights $2^k/(k+1)$.** For every natural
+number $n$ and every complex number $x$,
+
+$$
+\sum_{k=0}^{n} \binom{n}{k} \frac{2^k}{k+1} (1-x)^k x^{n-k}
+= \sum_{k=0}^{\lfloor n/2 \rfloor} \frac{1}{2k+1} \binom{n}{2k} (1-x)^{2k}.
+$$
+
+This is equation (53) of the source.
 
 ## Depends on
 

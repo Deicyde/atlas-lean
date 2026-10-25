@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.partitionMajorizes_iff_conjugate
 ---
 
-# Partition Majorizes iff conjugate
+# Conjugation reverses majorization
 
-Conjugation reverses majorization (quoted from Marshall–Olkin–Arnold, Theorem 7.B.5): for
-`α, β ∈ P(n)`, `α ≻ β` if and only if `β* ≻ α*`, in the paper's majorization order on
-decreasing part lists.
+**Conjugation reverses majorization.** For partitions $\alpha$ and $\beta$ of $n$, with parts
+listed in decreasing order, $\alpha$ majorizes $\beta$ if and only if the conjugate partition
+$\beta^*$ majorizes the conjugate partition $\alpha^*$, again with parts listed in decreasing
+order.
+
+This is Theorem 7.B.5 of Marshall, Olkin and Arnold, as quoted in the source.
 
 ## Depends on
 
-- [Partition Majorizes](partition-majorizes.md)
-- [Conjugate Parts](conjugate-parts.md)
+- [Majorization of part lists](partition-majorizes.md)
+- [Conjugate of a multiset of parts](conjugate-parts.md)
 
 ## Sources
 

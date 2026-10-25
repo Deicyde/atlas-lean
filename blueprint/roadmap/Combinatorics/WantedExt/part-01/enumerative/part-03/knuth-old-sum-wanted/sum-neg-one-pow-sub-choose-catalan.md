@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_sub_choose_catalan
 ---
 
-# Sum neg one pow sub choose catalan
+# Alternating sum of $\binom{n}{k} \frac{2(2k+1)}{k+2} C_k$
 
-`∑ (-1)^{n-k} binom(n,k) 2(2k+1)/(k+2) C_k = ∑_{k ≤ n/2} binom(n,2k) C_k`.
+**Alternating sum of $\binom{n}{k} \frac{2(2k+1)}{k+2} C_k$.** Let
+$C_k = \frac{1}{k+1}\binom{2k}{k}$ denote the $k$-th Catalan number. For every natural number
+$n$, the following identity holds in $\mathbb{Q}$:
+
+$$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \frac{2(2k+1)}{k+2}\, C_k
+= \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} C_k.$$
 
 ## Depends on
 

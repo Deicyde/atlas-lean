@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsCount_sixtyFour_mul_add_fiftySix
 ---
 
-# Odd Designated Summands Count sixty Four mul add fifty Six
+# $\mathrm{PD}_2(64n + 56)$ is divisible by 8
 
-For all `n ≥ 0`, `PD_2(64n + 56) ≡ 0 (mod 8)`.
+**$\mathrm{PD}_2(64n + 56)$ is divisible by 8.** Write $\mathrm{PD}_2(m)$ for the number of
+partitions of $m$ with designated summands in which every part is odd. For every natural number $n$,
+$\mathrm{PD}_2(64n + 56) \equiv 0 \pmod 8$.
 
 ## Depends on
 
-- [Odd Designated Summands Count](odd-designated-summands-count.md)
+- [The odd designated-summand partition function](odd-designated-summands-count.md)
 
 ## Sources
 

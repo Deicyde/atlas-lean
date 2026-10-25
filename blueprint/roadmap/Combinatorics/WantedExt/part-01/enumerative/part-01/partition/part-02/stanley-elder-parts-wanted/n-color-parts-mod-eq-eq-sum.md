@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.nColor_partsModEq_eq_sum
 ---
 
-# N Color parts Mod Eq eq sum
+# Parts in a residue class over n-color partitions as a divisor sum
 
-Corollary 6: for `m ≥ 1`, `r ≥ 1` and `0 < k < r`,
-`C(k mod r, m) = ∑_{j=1}^{m} (∑_{rd+k ∣ j} (rd+k)) C(m-j)`, where `C(k mod r, m)` is the
-total number of parts of size `≡ k (mod r)` over the `n`-color partitions of `m`; the inner sum
-runs over the divisors of `j` that are `≡ k (mod r)`.
+**Parts in a residue class over n-color partitions as a divisor sum.** Let $r$ and $k$ be
+natural numbers with $0 < k < r$. For $i \ge 0$ let $C(k \bmod r, i)$ be the total number of
+parts of size congruent to $k$ modulo $r$, counted with multiplicity, over the $n$-color
+partitions of $i$, and let $C(i)$ be the number of $n$-color partitions of $i$. Then for every
+$m \ge 1$,
+
+$$
+C(k \bmod r, m) = \sum_{j=1}^{m} \Bigl(\sum_{d \mid j,\ d \equiv k \pmod{r}} d\Bigr) C(m-j).
+$$
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Sources
 

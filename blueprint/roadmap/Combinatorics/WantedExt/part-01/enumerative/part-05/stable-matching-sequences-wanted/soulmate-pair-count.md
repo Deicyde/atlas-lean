@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.soulmatePairCount
 ---
 
-# Soulmate Pair Count
+# Number of soulmate pairs
 
-The number of soulmate pairs of a profile (the paper's `k` in `F(k, n)`).
+**Number of soulmate pairs.** The number of soulmate pairs of a preference profile $P$ for
+$n$ men and $n$ women is the number of pairs $(i, j)$ of a man $i$ and a woman $j$ that are
+soulmates in $P$, that is, each ranks the other first.
+
+This is the paper's $k$ in $F(k, n)$, the number of profiles with exactly $k$ soulmate pairs.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
 
 ## Proof depends on
 
-- [Is Soulmate Pair](is-soulmate-pair.md)
+- [Soulmate pair](is-soulmate-pair.md)
 
 ## Sources
 

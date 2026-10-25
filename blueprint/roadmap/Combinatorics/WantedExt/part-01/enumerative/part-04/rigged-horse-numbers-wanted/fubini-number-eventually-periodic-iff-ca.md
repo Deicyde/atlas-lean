@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.fubiniNumber_eventuallyPeriodic_iff_carmichael_dvd
 ---
 
-# Fubini Number eventually Periodic iff carmichael dvd
+# Eventual periods of the Fubini numbers modulo an odd number
 
-For odd `K`, the eventual period of the Fubini numbers modulo `K` is exactly `λ(K)`:
-a shift `p` is an eventual period of `F(n) mod K` if and only if `λ(K)` divides `p`.
+**Eventual periods of the Fubini numbers modulo an odd number.** Let $K$ be an odd natural
+number and let $\lambda(K)$ be the value of the Carmichael function at $K$. Then a natural number
+$p$ is divisible by $\lambda(K)$ if and only if there is a natural number $N$ such that the Fubini
+numbers $F(n)$ satisfy $F(n + p) \equiv F(n) \pmod K$ for all $n \ge N$. In particular, the
+eventual period of the Fubini numbers modulo $K$ is exactly $\lambda(K)$.
 
 ## Depends on
 

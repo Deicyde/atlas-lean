@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsDDistinctParts
 ---
 
-# Is DDistinct Parts
+# Partitions into d-distinct parts
 
-A multiset of parts is `d`-distinct when any two parts differ by at least `d`: no part
-repeats, and `x < y` forces `x + d ≤ y`.
+**Partitions into d-distinct parts.** Let $d$ be a natural number. A finite multiset $s$ of
+natural numbers has $d$-distinct parts when no element occurs in $s$ more than once and any two
+elements $x < y$ of $s$ satisfy $x + d \le y$.
 
 ## Depends on
 

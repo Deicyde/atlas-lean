@@ -5,18 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.huffing_xi_inv_pow_eq_sum_garvanM
 ---
 
-# Lemma 1
+# Garvan's huffing identities for powers of $\xi$
 
-**Lemma 1** (Garvan). With `f_k = ∏_{n ≥ 1} (1 - q^{kn})`, `ξ = f_1 / (q^2 f_{49})`,
-`T = f_7^4 / (q^7 f_{49}^4)` and `H` the huffing operator `∑ p_n q^n ↦ ∑ p_{7n} q^{7n}`:
-`H(ξ^{-i}) = ∑_{j ≥ 1} m_{i,j} T^{-j}` and `H(ξ^{-4i}) = ∑_{j ≥ 1} m_{4i,i+j} T^{-i-j}`, for
-`i ≥ 1`. Identity in `ℚ⟦X⟧` (`q = X`, `∏'` in the coefficientwise topology), with
-`ξ^{-i} = q^{2i} f_{49}^i / f_1^i` and `T^{-j} = q^{7j} f_{49}^{4j} / f_7^{4j}`; the sums are
-cut at `j ≤ 2i`, resp. `j ≤ 7i`, beyond which `m` vanishes.
+**Garvan's huffing identities for powers of $\xi$.** Let
+$f_k = \prod_{n \ge 1} (1 - q^{kn})$ in $\mathbb{Q}[[q]]$, let $H$ be the huffing operator
+$H\bigl(\sum_n p_n q^n\bigr) = \sum_n p_{7n} q^{7n}$, and let $m_{i,j}$ be Garvan's matrix. Write
+$\xi^{-a} = q^{2a} f_{49}^a / f_1^a$ and $T^{-b} = q^{7b} f_{49}^{4b} / f_7^{4b}$ for the
+negative powers of $\xi = f_1 / (q^2 f_{49})$ and $T = f_7^4 / (q^7 f_{49}^4)$, which are formal
+power series. For every $i \ge 1$,
+
+$$H(\xi^{-i}) = \sum_{j=1}^{2i} m_{i,j}\, T^{-j}$$
+
+and
+
+$$H(\xi^{-4i}) = \sum_{j=1}^{7i} m_{4i,i+j}\, T^{-i-j}.$$
+
+These are identities of formal power series over $\mathbb{Q}$. The sums stop at $j = 2i$,
+resp. $j = 7i$, beyond which the coefficients $m$ vanish.
 
 ## Depends on
 
-- [Garvan M](garvan-m.md)
+- [Garvan's matrix](garvan-m.md)
 
 ## Sources
 

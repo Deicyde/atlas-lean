@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_even_two_pow_sub_div
 ---
 
-# Sum choose even two pow sub div
+# Even-index and odd-index binomial sums weighted by powers of $2$
 
-`∑_{k ≤ n/2} binom(n,2k) (2^{n-2k+1} - 2^{2k+1})/(2k+1)
-= ∑_{k=1}^{⌈n/2⌉} binom(n,2k-1) 2^{2k-1}/k`.
+**Even-index and odd-index binomial sums weighted by powers of $2$.** For every natural
+number $n$,
+
+$$\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{2^{n-2k+1} - 2^{2k+1}}{2k+1} =
+\sum_{k=1}^{\lceil n/2 \rceil} \binom{n}{2k-1} \frac{2^{2k-1}}{k}.$$
 
 ## Depends on
 

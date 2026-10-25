@@ -6,21 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.degenerateHarmonicRank_zero_right
 ---
 
-# Degenerate Harmonic Rank zero right
+# Degenerate harmonic numbers of rank zero
 
-`H_λ(n, 0, α) = H_{n,λ}(α)`.
+**Degenerate harmonic numbers of rank zero.** For all real $\lambda$ and $\alpha$ and every
+natural number $n$, the generalized degenerate harmonic number of rank $0$ equals the generalized
+degenerate harmonic number: $H_\lambda(n, 0, \alpha) = H_{n,\lambda}(\alpha)$.
 
 ## Depends on
 
-- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
-- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
+- [Generalized degenerate harmonic numbers of a given rank](degenerate-harmonic-rank.md)
+- [Generalized degenerate harmonic numbers](generalized-degenerate-harmonic.md)
 
 ## Proof depends on
 
-- [Degenerate Harmonic Rank zero left](degenerate-harmonic-rank-zero-left.md)
-- [Degenerate Harmonic Term](degenerate-harmonic-term.md)
-- [Generalized Degenerate Harmonic succ](generalized-degenerate-harmonic-succ.md)
-- [Generalized Degenerate Harmonic zero](generalized-degenerate-harmonic-zero.md)
+- [Degenerate harmonic numbers of rank vanish at index zero](degenerate-harmonic-rank-zero-left.md)
+- [Degenerate harmonic terms](degenerate-harmonic-term.md)
+- [Recurrence for generalized degenerate harmonic numbers](generalized-degenerate-harmonic-succ.md)
+- [The zeroth generalized degenerate harmonic number](generalized-degenerate-harmonic-zero.md)
 
 ## Sources
 

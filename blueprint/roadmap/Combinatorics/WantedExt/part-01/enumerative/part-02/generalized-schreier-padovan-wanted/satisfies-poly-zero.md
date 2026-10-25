@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.satisfiesPoly_zero
 ---
 
-# Satisfies Poly zero
+# Every sequence satisfies the zero polynomial
 
-Every sequence satisfies the zero polynomial.
+**Every sequence satisfies the zero polynomial.** Every real sequence $(a_n)_{n \ge 0}$
+satisfies the zero polynomial.
 
 ## Depends on
 
-- [Satisfies Poly](satisfies-poly.md)
+- [Sequences satisfying a polynomial](satisfies-poly.md)
 
 ## Sources
 

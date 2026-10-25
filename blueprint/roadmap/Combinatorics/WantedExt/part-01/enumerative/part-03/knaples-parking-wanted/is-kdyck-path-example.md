@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.isKDyckPath_example
 ---
 
-# Is KDyck Path example
+# A $1$-Dyck path that is not a $0$-Dyck path
 
-Characteristic value: `DUUD` is a `1`-Dyck path but not a `0`-Dyck path, and the height
-of `UUD` after its three steps is `1`.
+**A $1$-Dyck path that is not a $0$-Dyck path.** Write $U$ for an Up step $(1, 1)$ and $D$
+for a Down step $(1, -1)$. The path $DUUD$ is a $1$-Dyck path of semilength $2$ but not a
+$0$-Dyck path, and the path $UUD$ has height $1$ after its three steps.
 
 ## Depends on
 
-- [Is KDyck Path](is-kdyck-path.md)
-- [Dyck Step Height](dyck-step-height.md)
+- [$k$-Dyck path](is-kdyck-path.md)
+- [Height of a sequence of Dyck steps](dyck-step-height.md)
 
 ## Proof depends on
 
-- [Lattice Height](lattice-height.md)
+- [Height of a lattice path](lattice-height.md)
 
 ## Sources
 

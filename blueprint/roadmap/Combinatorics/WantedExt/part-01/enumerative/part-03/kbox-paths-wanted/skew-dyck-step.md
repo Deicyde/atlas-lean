@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.SkewDyckStep
 ---
 
-# Skew Dyck Step
+# Skew Dyck steps
 
-The steps `U = (1,1)`, `D = (1,-1)`, `L = (-1,-1)` of a skew Dyck path.
+**Skew Dyck steps.** A skew Dyck path is built from three kinds of step: the up step
+$U = (1,1)$, the down step $D = (1,-1)$ and the left step $L = (-1,-1)$.
 
 ## Depends on
 

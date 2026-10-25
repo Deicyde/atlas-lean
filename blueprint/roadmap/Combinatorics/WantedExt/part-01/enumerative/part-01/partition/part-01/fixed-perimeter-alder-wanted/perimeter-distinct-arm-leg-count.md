@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.perimeterDistinctArmLegCount
 ---
 
-# Perimeter Distinct Arm Leg Count
+# Partitions into d-distinct parts by largest part and length
 
-`h_d^(a)(α, λ)`: the number of partitions into `d`-distinct parts `≥ a` with largest part
-`m = α` and `k = λ` parts (perimeter `m + k - 1`).
+**Partitions into d-distinct parts by largest part and length.** For natural numbers $d$, $a$,
+$m$ and $k$, $h_d^{(a)}(m, k)$ is the number of nonempty finite multisets of positive integers with
+largest element $m$, exactly $k$ elements counted with multiplicity, all elements at least $a$,
+and $d$-distinct parts. Such a partition has perimeter $m + k - 1$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is DDistinct Parts](is-ddistinct-parts.md)
-- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
+- [Partitions into d-distinct parts](is-ddistinct-parts.md)
+- [Partitions with fixed perimeter](fixed-perimeter-partitions.md)
 
 ## Sources
 

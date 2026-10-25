@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.TriangularRecurrence.negPos_neg_one_zero
 ---
 
-# Neg Pos neg one zero
+# The negative-positive number at $(-1, 0)$
 
-Definition 1 at the corner: `a^{NP}_{-1,0} = 1/γ`.
+**The negative-positive number at $(-1, 0)$.** For every triangular recurrence with
+parameters $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$, its negative-positive number at
+row $-1$ and column $0$ is $a^{NP}_{-1,0} = 1/\gamma$, computed in $\mathbb{Q}$ with $1/0 = 0$.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
-- [Neg Pos](neg-pos.md)
+- [Triangular recurrence](triangular-recurrence.md)
+- [Negative-positive numbers](neg-pos.md)
 
 ## Proof depends on
 
-- [Neg Pos Aux](neg-pos-aux.md)
-- [Weight](weight.md)
-- [Weight'](weight-2.md)
+- [Negative-positive numbers at negative rows (auxiliary)](neg-pos-aux.md)
+- [First weight of a triangular recurrence](weight.md)
+- [Second weight of a triangular recurrence](weight-2.md)
 
 ## Sources
 

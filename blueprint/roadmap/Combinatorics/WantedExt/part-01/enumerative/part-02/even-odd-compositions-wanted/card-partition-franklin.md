@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_partition_franklin
 ---
 
-# Card partition franklin
+# Franklin's partition identity
 
-Theorem 14 (Franklin): for `k ≥ 1` and `m ≥ 0`, the number of partitions
-of `n` in which exactly `m` distinct part sizes occur `k` or more times equals
-the number of partitions of `n` with exactly `m` distinct part sizes divisible
-by `k`.
+**Franklin's partition identity.** Let $k \ge 1$ and let $m$ and $n$ be natural numbers. The
+number of partitions of $n$ in which exactly $m$ distinct part sizes occur at least $k$ times
+equals the number of partitions of $n$ in which exactly $m$ distinct part sizes are divisible by
+$k$.
 
 ## Depends on
 

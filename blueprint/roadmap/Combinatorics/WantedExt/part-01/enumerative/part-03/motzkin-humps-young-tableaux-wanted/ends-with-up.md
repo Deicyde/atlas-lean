@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.EndsWithUp
 ---
 
-# Ends With Up
+# Paths ending with an up step
 
-An encoded path ends with an up step when its final position exists and contains `U`.
+**Paths ending with an up step.** Write a path of length $n$ as a sequence of steps
+$p_0, \dots, p_{n-1}$, each $D$ (down), $F$ (flat) or $U$ (up), encoded as $0$, $1$, $2$. The
+path ends with an up step when it has a last position, that is, some $i < n$ with $i + 1 = n$,
+and $p_i = U$.
 
 ## Depends on
 

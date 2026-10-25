@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.partition4431
 ---
 
-# Partition4431
+# The partition $(4, 4, 3, 1)$ of $12$
 
-The partition `(4, 4, 3, 1)` of `12` from Figure 1.
+**The partition $(4, 4, 3, 1)$ of $12$.** The partition of $12$ whose parts are $4$, $4$, $3$
+and $1$; it is the example partition drawn in Figure 1 of the source.
 
 ## Depends on
 

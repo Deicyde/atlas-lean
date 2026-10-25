@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.regularPartitionCount_four_nine_zero
 ---
 
-# Regular Partition Count four nine zero
+# The $(4, 9)$-regular partition count at zero
 
-`b_{4,9}(0) = 1`: the empty partition is `(4, 9)`-regular.
+**The $(4, 9)$-regular partition count at zero.** The number $b_{4,9}(0)$ of
+$(4, 9)$-regular partitions of $0$, that is, partitions of $0$ none of whose parts is divisible by
+$4$ or by $9$, equals $1$: the only such partition is the empty partition.
 
 ## Depends on
 
-- [Regular Partition Count](regular-partition-count.md)
+- [Number of $(\ell, k)$-regular partitions](regular-partition-count.md)
 
 ## Sources
 

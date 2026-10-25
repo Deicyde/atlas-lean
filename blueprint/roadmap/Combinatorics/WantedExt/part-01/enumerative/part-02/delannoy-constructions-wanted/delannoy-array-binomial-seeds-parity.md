@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.DelannoyConstructions.delannoyArray_binomial_seeds_parity
 ---
 
-# Delannoy Array binomial seeds parity
+# Parity of iterated horizontal sums of a Delannoy array with binomial seeds
 
-If a Delannoy array has horizontal seeds `R(0, n) = C(k + n, k)`, every entry of `R^(k+1)` is
-even, and for `j ≤ k` the array `R^j` has an odd entry. The vertical seeds `R(m, 0)` are arbitrary.
+**Parity of iterated horizontal sums of a Delannoy array with binomial seeds.** Let $R(m, n)$,
+for $m, n \in \mathbb{N}$, be integers with $R(m+1, n+1) = R(m, n+1) + R(m+1, n) + R(m, n)$ for
+all $m, n$. For an array $S$ let $(HS)(m, n) = S(m, n) + S(m, n+1)$, and write $R^i = H^i R$ for
+the $i$-fold horizontal sum, so $R^0 = R$. Let $k \in \mathbb{N}$ and suppose
+$R(0, n) = \binom{k+n}{k}$ for all $n$; the values $R(m, 0)$ for $m \ge 1$ are arbitrary. Then
+every entry of $R^{k+1}$ is even, and for every $j \le k$ some entry of $R^j$ is odd.
 
 ## Depends on
 

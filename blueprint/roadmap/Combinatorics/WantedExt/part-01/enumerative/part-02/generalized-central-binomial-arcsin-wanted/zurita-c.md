@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.zuritaC
 ---
 
-# Zurita C
+# Zurita's constant $c_n$
 
-The constant `c_n = s_n/2 - 1` (the paper's convention `c_1 = 1` agrees with this formula).
+**Zurita's constant $c_n$.** For a natural number $n$, let $s_n$ be the coefficient of $x^n$
+in Zurita's polynomial $S_n(x) = \sum_{k=0}^n s_k x^k$. Then $c_n$ is the rational number
+$s_n/2 - 1$. For $n = 1$ this gives $c_1 = 1$, the paper's convention.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zurita SCoeff](zurita-scoeff.md)
+- [Coefficients of Zurita's polynomial $S_n$](zurita-scoeff.md)
 
 ## Sources
 

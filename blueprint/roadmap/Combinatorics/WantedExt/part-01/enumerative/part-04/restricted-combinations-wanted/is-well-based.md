@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsWellBased
 ---
 
-# Is Well Based
+# Well-based sets
 
-A finite set `Q` of positive integers is well based (Kitaev; Valyuzhenich) if every
-element `x ∈ Q` has, for each splitting `x = a + (x - a)` with `0 < a < x`, a part in `Q`.
-For nonempty `Q` this forces `1 ∈ Q`; the empty set also counts as well based, as in the
-paper's equivalent formulation.
+**Well-based sets.** A finite set $Q$ of natural numbers is well based (Kitaev;
+Valyuzhenich) if for every $x \in Q$ and every natural number $a$ with $0 < a < x$, at least one
+of $a$ and $x - a$ lies in $Q$.
+
+The empty set is well based, as in the paper's equivalent formulation. For a nonempty set $Q$
+of positive integers the condition forces $1 \in Q$.
 
 ## Depends on
 

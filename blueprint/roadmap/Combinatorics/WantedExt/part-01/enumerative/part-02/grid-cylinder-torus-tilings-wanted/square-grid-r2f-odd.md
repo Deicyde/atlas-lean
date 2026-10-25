@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.squareGrid_r2f_odd
 ---
 
-# Square Grid r2f odd
+# Square-grid tilings fixed by the reflection $r^2f$, odd $n$
 
-For odd `n`, `r²f` has `n` fixed cells and `(n²-n)/2` two-cycles.  The `t_{r²f}` factor is
-`tileFixedCount σ 1`, and the permutation is assumed to square to the identity.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-grid tilings fixed by the reflection $r^2f$, odd $n$.** Let $n$ be an odd positive
+integer, let $T$ be a finite set of tile designs, and let $\sigma$ be a permutation of $T$ with
+$\sigma^2 = 1$. Let $r^2f$ be the cell map $(x, y) \mapsto (x, -1-y)$ of the $n \times n$ grid
+$(\mathbb{Z}/n\mathbb{Z})^2$. Then the number of tilings $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$
+with $F(r^2f(c)) = \sigma(F(c))$ for every cell $c$ equals $|T|^{(n^2-n)/2} \, t^n$, where $t$ is
+the number of designs in $T$ fixed by $\sigma$.
 
 ## Depends on
 
-- [Cell R2 F](cell-r2-f.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the reflection r²f](cell-r2-f.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

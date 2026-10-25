@@ -5,15 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.card_ballotPath
 ---
 
-# Lemma 21
+# Number of ballot paths
 
-**Lemma 21**: for `ℓ ≥ k`, the number of lattice paths
-from `(0,0)` to `(k, ℓ)` staying on or above `y = x` is
-`((ℓ-k+1)/(ℓ+1)) \binom{k+ℓ}{k}`.
+**Number of ballot paths.** For natural numbers $k \le \ell$, the number of lattice paths
+from $(0,0)$ to $(k, \ell)$ with unit up and right steps that stay on or above the line $y = x$
+is $\frac{\ell - k + 1}{\ell + 1} \binom{k + \ell}{k}$.
 
 ## Depends on
 
-- [Ballot Path](ballot-path.md)
+- [Ballot paths](ballot-path.md)
 
 ## Sources
 

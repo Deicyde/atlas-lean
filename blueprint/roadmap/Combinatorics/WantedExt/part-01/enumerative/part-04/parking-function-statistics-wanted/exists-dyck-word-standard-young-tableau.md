@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_dyckWord_standardYoungTableau_bijOn
 ---
 
-# Exists dyck Word standard Young Tableau bij On
+# Gudmundsson's bijection between Dyck words and standard Young tableaux
 
-Gudmundsson's bijection: for every `n` there is a bijection `f` from the Dyck words of
-semilength `n` onto the standard Young tableaux of shape `(n, n)` such that position `i` of `w`
-(1-based) carries `U` (respectively `D`) exactly when `i` is an entry of the first (respectively
-second) row of `f(w)`. Standard tableaux are the semistandard tableaux of shape `(n, n)` whose
-entries on the `2n` cells are distinct and lie in `[1, 2n]`.
+**Gudmundsson's bijection between Dyck words and standard Young tableaux.** For every $n$
+there is a map $f$ from Dyck words to semistandard Young tableaux of the two-row shape $(n, n)$
+with the following two properties. First, for every Dyck word $w$ of semilength $n$ and every
+$i \ge 1$, if the $i$th letter of $w$ is an up step $U$ then $i$ is an entry of the first row of
+$f(w)$, and if it is a down step $D$ then $i$ is an entry of the second row. Second, $f$
+restricts to a bijection from the Dyck words of semilength $n$ onto the standard tableaux of
+shape $(n, n)$, that is, those whose $2n$ entries are distinct and lie in $\{1, \dots, 2n\}$.
+
+Since $f(w)$ is standard, $i$ lies in the first row of $f(w)$ exactly when the $i$th letter of $w$
+is $U$.
 
 ## Depends on
 

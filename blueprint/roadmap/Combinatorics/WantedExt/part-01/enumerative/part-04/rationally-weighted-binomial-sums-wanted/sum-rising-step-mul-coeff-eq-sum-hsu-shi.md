@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.sum_risingStep_mul_coeff_eq_sum_hsuShiue_derivative
 ---
 
-# Sum rising Step mul coeff eq sum hsu Shiue derivative
+# Scherk's identity with $s$-rising factorials
 
-For real `s`, `x > 0` and `f(x) = ∑_{k=0}^N a_k x^k`,
-`∑_{k=0}^N (k)^{(s,r)} a_k x^{k+rs} = ∑_{i=0}^r {r, i}_s x^{rs+i} f^{(i)}(x)`, where
-`(k)^{(s,r)} = k (k + s) ⋯ (k + (r - 1) s)` and the paper's `s`-Stirling numbers of the second
-kind `{r, i}_s` (recurrence `{r+1, k}_s = (rs + k) {r, k}_s + {r, k-1}_s`, `{0, 0}_s = 1`,
-`{r, 0}_s = 0` for `r ≥ 1`) are the Hsu–Shiue numbers `S(r, i; -s, 1, 0)`. The real powers
-`x^{k+rs}` are `Real.rpow`, so `x > 0` is added.
+**Scherk's identity with $s$-rising factorials.** Let $s$ be a real number and let $S(n, k)$
+be the generalized Stirling numbers of Hsu and Shiue with parameters $(-s, 1, 0)$: a real array
+with $S(0, 0) = 1$, $S(n, 0) = 0$ for $n \ge 1$, $S(n, k) = 0$ for $n < k$, and
+$S(n+1, k+1) = S(n, k) + (k + 1 + ns) \, S(n, k+1)$ for all $n, k \ge 0$. Let $N$ and $r$ be
+natural numbers, let $a_0, \dots, a_N$ be real numbers, and let $f(y) = \sum_{k=0}^{N} a_k y^k$,
+with $i$-th derivative $f^{(i)}$. Then for every real number $x > 0$,
+
+$$\sum_{k=0}^{N} k (k + s) \cdots (k + (r-1)s) \, a_k x^{k + rs} =
+\sum_{i=0}^{r} S(r, i) \, x^{rs + i} f^{(i)}(x),$$
+
+where the product $k (k + s) \cdots (k + (r-1)s)$ has the $r$ factors $k + js$, $0 \le j < r$,
+and is $1$ when $r = 0$.
+
+The powers of $x$ have real exponents, which is why $x > 0$ is assumed.
 
 ## Depends on
 

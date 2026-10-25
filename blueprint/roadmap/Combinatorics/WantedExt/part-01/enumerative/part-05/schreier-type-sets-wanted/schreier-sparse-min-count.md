@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseMinCount
 ---
 
-# Schreier Sparse Min Count
+# Number of Schreier sparse sets with given minimum and maximum
 
-`|F_{n,m}|`: Schreier sparse sets `F ⊆ {1, …, n}` with
-`n ∈ F` and `min F = m` (Section 2 of the paper).
+**Number of Schreier sparse sets with given minimum and maximum.** For natural numbers $n$
+and $m$, $|F_{n,m}|$ is the number of sets $F \subseteq \{1, \dots, n\}$ that are Schreier and
+sparse, contain $n$, and have minimum $m$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Schreier](is-schreier.md)
-- [Is Sparse](is-sparse.md)
+- [Schreier sets](is-schreier.md)
+- [Sparse sets](is-sparse.md)
 
 ## Sources
 

@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.euler_partition_theorem_restrictedCompositions
 ---
 
-# Euler partition theorem restricted Compositions
+# Euler partition theorem for restricted compositions
 
-For `ℓ ≥ 0` and `n ≥ 0`, the number of partitions of `n` into distinct colored parts, each
-part of size `k` colored by an `ℓ`-restricted composition of `k` (at most `ℓ` summands), equals
-the number of such partitions (repetition allowed) in which no even part is colored by an
-`ℓ`-restricted composition with all summands even. Distinct means distinct pairs (size, color).
+**Euler partition theorem for restricted compositions.** A composition (a finite sequence of
+positive integers) is $\ell$-restricted if it has at most $\ell$ summands. Let $\ell \ge 0$ and
+$n \ge 0$. The number of partitions of $n$ into colored parts in which each part $k$ is colored
+by an $\ell$-restricted composition of $k$, and no colored part (a pair of part and color)
+appears twice, equals the number of such partitions of $n$, with repetition allowed, in which no
+even part is colored by a composition whose summands are all even.
 
 ## Depends on
 

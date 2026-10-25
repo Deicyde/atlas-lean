@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsMotzkinHump
 ---
 
-# Is Motzkin Hump
+# Motzkin hump
 
-A pair of positions is a hump of height `k` when it consists of an up step and
-a later down step, has only flat steps between them, and the up step reaches height `k`.
+**Motzkin hump.** Let $p = p_0 p_1 \cdots p_{n-1}$ be a word of length $n$ in the steps $D$,
+$F$, $U$ (encoded as $0$, $1$, $2$), whose vertical displacements are $-1$, $0$ and $+1$. For
+$k \in \mathbb{N}$ and positions $i, j \in \{0, \dots, n-1\}$, the pair $(i, j)$ is a hump of
+height $k$ in $p$ when $i < j$, $p_i = U$, $p_j = D$, every $p_r$ with $i < r < j$ is $F$, and the
+height after step $i$, that is, the sum of the displacements of $p_0, \dots, p_i$, equals $k$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Motzkin Step](motzkin-step.md)
+- [Height change of a Motzkin step](motzkin-step.md)
 
 ## Sources
 

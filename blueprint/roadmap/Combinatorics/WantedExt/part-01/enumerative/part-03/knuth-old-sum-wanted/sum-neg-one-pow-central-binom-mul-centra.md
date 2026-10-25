@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_centralBinom_mul_centralBinom
 ---
 
-# Sum neg one pow central Binom mul central Binom
+# Alternating convolution of central binomial coefficients
 
-Equation (24): `∑_{k=0}^n (-1)^k binom(2k,k) binom(2(n-k), n-k)` is
-`2^n binom(n, n/2)` for even `n` and `0` for odd `n`.
+**Alternating convolution of central binomial coefficients.** For every natural number
+$n$, the integer $\sum_{k=0}^{n} (-1)^k \binom{2k}{k} \binom{2(n-k)}{n-k}$ equals
+$2^n \binom{n}{n/2}$ when $n$ is even and $0$ when $n$ is odd.
 
 ## Depends on
 

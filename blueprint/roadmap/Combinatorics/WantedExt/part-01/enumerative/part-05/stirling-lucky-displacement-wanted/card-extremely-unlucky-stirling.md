@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.card_extremely_unlucky_stirling
 ---
 
-# Card extremely unlucky stirling
+# Counting extremely unlucky Stirling permutations
 
-For `n ≥ 1` there are `(n - 1)!` extremely unlucky Stirling permutations of
-order `n`.
+**Counting extremely unlucky Stirling permutations.** For every integer $n \ge 1$, the number
+of Stirling permutations $w$ of order $n$ that are extremely unlucky, that is, whose only lucky
+car is car $1$ ($\mathrm{Lucky}(w) = \{1\}$), is $(n - 1)!$.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 
 ## Sources
 

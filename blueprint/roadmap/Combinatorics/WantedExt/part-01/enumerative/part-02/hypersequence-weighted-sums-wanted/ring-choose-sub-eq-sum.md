@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ringChoose_sub_eq_sum
 ---
 
-# Ring Choose sub eq sum
+# Alternating binomial expansion of a shifted binomial coefficient
 
-Lemma 1: `C(n + m - k - 1, m) = ∑_{j=0}^{k} (-1)^j C(k, j) C(n + m - j - 1, m - j)`, with
-generalized binomial coefficients (upper argument in `ℤ` via `Ring.choose`; `C(x, i) = 0` for
-`i < 0`).
+**Alternating binomial expansion of a shifted binomial coefficient.** For all natural numbers
+$m$, $n$ and $k$,
+
+$$\binom{n+m-k-1}{m} = \sum_{j=0}^{k} (-1)^j \binom{k}{j} \binom{n+m-j-1}{m-j},$$
+
+where, for an integer $x$ and a natural number $i$, $\binom{x}{i} = x(x-1)\cdots(x-i+1)/i!$ is
+the generalized binomial coefficient, and the term $\binom{n+m-j-1}{m-j}$ is taken to be $0$
+when $j > m$.
 
 ## Depends on
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.nondecreasingRectangleTotal_two_one_two_two
 ---
 
-# Nondecreasing Rectangle Total two one two two
+# Example: $1 \times 2$ rectangles in nondecreasing words of length $2$
 
-Characteristic values: over `[2]` the nondecreasing words of length `2` are `11, 12, 22`,
-containing `1 + 1 + 2 = 4` rectangles of size `1 × 2`.
+**Example: $1 \times 2$ rectangles in nondecreasing words of length $2$.** The nondecreasing
+words of length $2$ over $[2] = \{1, 2\}$ are $11$, $12$ and $22$, which contain $1$, $1$ and $2$
+rectangles of size $1 \times 2$ respectively, so the total number of $1 \times 2$ rectangles over
+all nondecreasing words of length $2$ over $[2]$ is $4$.
 
 ## Depends on
 
-- [Nondecreasing Rectangle Total](nondecreasing-rectangle-total.md)
+- [Total number of $r \times s$ rectangles in nondecreasing words](nondecreasing-rectangle-total.md)
 
 ## Sources
 

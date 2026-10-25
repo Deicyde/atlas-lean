@@ -5,17 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.hasDerivAt_arcsinAntiderivT_pow_mul_centralBinomReciprocalH
 ---
 
-# Has Deriv At arcsin Antideriv T pow mul central Binom Reciprocal H
+# Antiderivative of $x^{l - 1/2} H(x)$
 
-Lemma 6: for `l ≥ 0`, the paper's `T_{l-1}` (Definition 4: the polynomial with
-`T_{l-1}(x) = (x^{-1/2}/2) ∫ (8x^l - S_l(x)) / (√x (4 - x)) dx`, equivalently
-`(4 - x)(2x T_{l-1}' + T_{l-1}) = 8x^l - S_l`; `T_{-1} = 0`) exists, and on `0 < x < 4`
-`d/dx [T_{l-1}(x) √x + arcsin(√x/2) S_l(x) / √(4 - x)] = x^{l-1/2} H(x)`.
+**Antiderivative of $x^{l - 1/2} H(x)$.** Let $l \ge 0$, let $S_l$ be Zurita's polynomial, and
+let $H$ be the closed form of the reciprocal central binomial series. Then there is a polynomial
+$T$ with rational coefficients such that $(4 - x)(2x T'(x) + T(x)) = 8x^l - S_l(x)$ as
+polynomials. Moreover, for every such $T$ and every real number $x$ with $0 < x < 4$, the real
+function
+
+$$
+G(y) = T(y)\sqrt{y} + \frac{\arcsin(\sqrt{y}/2)}{\sqrt{4 - y}}\, S_l(y)
+$$
+
+has derivative $\frac{x^l}{\sqrt{x}} H(x)$ at $x$.
+
+Such a $T$ is unique: it is the paper's polynomial $T_{l-1}$ (Definition 4, with $T_{-1} = 0$).
 
 ## Depends on
 
-- [Arcsin Antideriv S](arcsin-antideriv-s.md)
-- [Central Binom Reciprocal H](central-binom-reciprocal-h.md)
+- [Zurita's S-polynomials](arcsin-antideriv-s.md)
+- [Closed form of the reciprocal central binomial series](central-binom-reciprocal-h.md)
 
 ## Sources
 

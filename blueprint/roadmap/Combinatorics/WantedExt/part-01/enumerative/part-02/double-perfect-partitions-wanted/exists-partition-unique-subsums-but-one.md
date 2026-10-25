@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_partition_unique_subsums_but_one_iff
 ---
 
-# Exists partition unique subsums but one iff
+# Partitions with unique subsums except one
 
-Let `H(n, v)` be the set of partitions of `n` that contain exactly `v` partitions of some
-`m` with `v ≤ m ≤ n - v`, and exactly one partition of every other positive integer less than
-`n`; here a partition of `m` contained in `λ` is a sub-multiset of the parts of `λ` with sum
-`m`, counted once per distinct sub-multiset. For `v ≥ 1`, some `H(n, v)` is nonempty if and
-only if `v = 1` or `v = 2` (`v = 1` gives the perfect partitions). The hypothesis `v ≥ 1` is
-added: for `v = 0` the partition `(2)` of `2` lies in `H(2, 0)`, since `1` has no partition
-inside it.
+**Partitions with unique subsums except one.** The partitions of $m$ contained in a
+partition $\lambda$ are the distinct sub-multisets of the parts of $\lambda$ with sum $m$. Let
+$v \ge 1$. There are a natural number $n$ and a partition $\lambda$ of $n$ that contains exactly
+$v$ partitions of some $m$ with $v \le m \le n - v$ and exactly one partition of every positive
+integer $m' < n$ other than $m$ if and only if $v = 1$ or $v = 2$.
+
+The hypothesis $v \ge 1$ is needed: for $v = 0$ the partition $(2)$ of $2$ qualifies with
+$m = 1$, since it contains no partition of $1$.
 
 ## Depends on
 

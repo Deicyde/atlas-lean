@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.partition4431_hookLength
 ---
 
-# Partition4431 hook Length
+# Hook lengths of the partition $(4, 4, 3, 1)$
 
-Hook lengths of `(4, 4, 3, 1)` as labeled in Figure 1: first row `7, 5, 4, 2`, first column
-`7, 6, 4, 1`, and the diagonal `7, 4, 1`.
+**Hook lengths of the partition $(4, 4, 3, 1)$.** For the partition $\lambda = (4, 4, 3, 1)$ of
+$12$, write $h_{s,m}$ for the hook length of the square in row $s$ and column $m$. Along the first
+row $h_{1,1} = 7$, $h_{1,2} = 5$, $h_{1,3} = 4$ and $h_{1,4} = 2$; down the first column
+$h_{2,1} = 6$, $h_{3,1} = 4$ and $h_{4,1} = 1$; and on the diagonal $h_{2,2} = 4$ and
+$h_{3,3} = 1$.
 
 ## Depends on
 
-- [Partition4431](partition4431.md)
-- [Partition Hook Length](partition-hook-length.md)
+- [The partition $(4, 4, 3, 1)$ of $12$](partition4431.md)
+- [Hook length of a square of a partition](partition-hook-length.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.restrictedCombinationTotal_Icc_erase_eq_card_compositions
 ---
 
-# Restricted Combination Total Icc erase eq card compositions
+# Combinations avoiding an interval of differences with one value removed
 
-Theorem 19: if `Q = {1, …, q} \ {p}` with `p < q < 2p`, then `S^Q_n` is the number of
-compositions of `n + q` into parts `1` and `q + 1 + jp`, `j = 0, 1, 2, …`.
+**Combinations avoiding an interval of differences with one value removed.** Let $p$, $q$
+and $n$ be natural numbers with $p < q < 2p$, let $Q = \{1, \dots, q\} \setminus \{p\}$, and let
+$S^Q_n$ be the number of subsets of $\{1, \dots, n\}$ in which no two elements differ by an
+element of $Q$. Then $S^Q_n$ is the number of compositions of $n + q$ in which every part is
+either $1$ or of the form $q + 1 + jp$ for some integer $j \ge 0$.
 
 ## Depends on
 
-- [Restricted Combination Total](restricted-combination-total.md)
+- [Number of subsets avoiding a set of differences](restricted-combination-total.md)
 
 ## Sources
 

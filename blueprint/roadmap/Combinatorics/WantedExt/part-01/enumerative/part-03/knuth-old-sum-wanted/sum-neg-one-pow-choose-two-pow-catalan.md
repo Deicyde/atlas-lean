@@ -5,9 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_choose_two_pow_catalan
 ---
 
-# Sum neg one pow choose two pow catalan
+# Alternating binomial sum of Catalan numbers
 
-`∑ (-1)^k binom(n,k) (2k+1)/(k+2) 2^{n-2k+1} C_k = ∑_{k ≤ n/2} binom(n,2k) 2^{-2k} C_k`.
+**Alternating binomial sum of Catalan numbers.** For every natural number $n$, in the
+rational numbers
+
+$$
+\sum_{k=0}^{n} (-1)^k \binom{n}{k} \frac{2k+1}{k+2} \cdot \frac{2^{n+1}}{2^{2k}} C_k
+= \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{C_k}{2^{2k}},
+$$
+
+where $C_k = \binom{2k}{k}/(k+1)$ is the $k$-th Catalan number.
 
 ## Depends on
 

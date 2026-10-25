@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.cylinder_r2f_odd
 ---
 
-# Cylinder r2f odd
+# Cylinder fixed-tiling count for the reflection $r^2 f$ when $m$ is odd
 
-If `m` is odd, the `r²f` cylinder shift-sum is the corresponding divisor sum with
-`t_{(r²f)^d}` represented by `tileFixedCount σ d`.  The exponent `n/d` is valid on divisors of
-`n`, and `σ²=1` is the reflection-order hypothesis.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Cylinder fixed-tiling count for the reflection $r^2 f$ when $m$ is odd.** Let $T$ be a
+finite set of tile designs, let $n, m \ge 1$ with $m$ odd, and let $\sigma$ be a permutation of
+$T$ with $\sigma^2 = 1$. Let $r^2 f$ be the cell map $(x, y) \mapsto (x, -1 - y)$ of
+$\mathbb{Z}/n \times \mathbb{Z}/m$, and for $k \ge 0$ let $t_k$ be the number of designs fixed
+by $\sigma^k$. Then the cylinder shift sum of $r^2 f$ and $\sigma$ equals
+$\sum_{d \mid n} \varphi(d)\, |T|^{(nm - n) / \operatorname{lcm}(d, 2)}\, t_d^{\,n/d}$, where
+$d$ runs over the positive divisors of $n$ and $\varphi$ is Euler's totient function.
 
 ## Depends on
 
-- [Cell R2 F](cell-r2-f.md)
-- [Cylinder Shift Sum](cylinder-shift-sum.md)
-- [Tile Fixed Count](tile-fixed-count.md)
+- [Cell map of the reflection r²f](cell-r2-f.md)
+- [Cylinder shift sum](cylinder-shift-sum.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
 
 ## Sources
 

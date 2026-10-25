@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sum_poly_mul_fib_pow_eq_sum_stirlingSecond_derivative
 ---
 
-# Sum poly mul fib pow eq sum stirling Second derivative
+# Polynomially weighted Fibonacci sums via derivatives
 
-For `h(x) = ∑_{r=0}^t A_r x^r ∈ ℂ[x]` and `F(x) = ∑_{i=0}^N F_i x^i`,
-`∑_{k=0}^N h(k) F_k x^k = ∑_{r=0}^t A_r ∑_{i=0}^r {r, i} x^i F^{(i)}(x)` for `x ∈ ℂ`.
+**Polynomially weighted Fibonacci sums via derivatives.** Let $F_n$ denote the Fibonacci
+numbers and $S(r, i)$ the Stirling numbers of the second kind. Let $t$ and $N$ be natural numbers,
+let $A_0, \dots, A_t$ be complex numbers, let $h(y) = \sum_{r=0}^{t} A_r y^r$, and let $P$ be the
+polynomial $P(y) = \sum_{j=0}^{N} F_j y^j$, with $i$-th derivative $P^{(i)}$. Then for every
+$x \in \mathbb{C}$,
+
+$$\sum_{k=0}^{N} h(k) F_k x^k = \sum_{r=0}^{t} A_r \sum_{i=0}^{r} S(r, i) \, x^i P^{(i)}(x).$$
 
 ## Depends on
 

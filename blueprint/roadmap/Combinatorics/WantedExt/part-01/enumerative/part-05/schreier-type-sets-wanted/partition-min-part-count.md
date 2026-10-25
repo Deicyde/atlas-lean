@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPartCount
 ---
 
-# Partition Min Part Count
+# Partitions with all parts at least a given size
 
-`|E_{n,ℓ}|`: partitions of `n` into parts at least `ℓ`,
-via Mathlib's `Nat.Partition.restricted`.
+**Partitions with all parts at least a given size.** For natural numbers $n$ and $\ell$,
+$|E_{n,\ell}|$ is the number of partitions of $n$ all of whose parts are at least $\ell$.
 
 ## Depends on
 

@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.sum_rascalZ_row
 ---
 
-# Theorem 8
+# Row sums of the Rascal triangle
 
-**Theorem 8** (row sum):
-`∑_{k=0}^n R_{n,k} = \binom{n+1}{3} + n + 1`.
+**Row sums of the Rascal triangle.** For every natural number
+$n$, the Rascal numbers $R_{n,k} = k(n-k) + 1$ ($0 \le k \le n$)
+satisfy $\sum_{k=0}^{n} R_{n,k} = \binom{n+1}{3} + n + 1$.
 
 ## Depends on
 
-- [Rascal Z](rascal-z.md)
+- [Rascal numbers on the integers](rascal-z.md)
 
 ## Sources
 

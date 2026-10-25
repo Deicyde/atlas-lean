@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.rectCellAction_sr_zero
 ---
 
-# Rect Cell Action sr zero
+# Rectangle-group cell action of the reflection f
 
-`sr 0` acts on cells as the reflection `f`, `cellF`.
+**Rectangle-group cell action of the reflection f.** Let $n, m \in \mathbb{N}$, and let $sr_i$
+($i \in \mathbb{Z}/4\mathbb{Z}$) denote the reflections of the dihedral group of order $8$. Under
+the rectangle-group action on the cells $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z}$ of
+the $n \times m$ grid, $sr_0$ (the paper's $f$) acts as the reflection $(x, y) \mapsto (-1 - x, y)$.
 
 ## Depends on
 
-- [Cell F](cell-f.md)
-- [Rect Cell Action](rect-cell-action.md)
+- [Cell map of the reflection f](cell-f.md)
+- [Action of the rectangle group on grid cells](rect-cell-action.md)
 
 ## Sources
 

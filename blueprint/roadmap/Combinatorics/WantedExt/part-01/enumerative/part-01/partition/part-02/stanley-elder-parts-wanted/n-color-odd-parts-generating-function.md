@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.nColor_oddParts_generatingFunction
 ---
 
-# N Color odd Parts generating Function
+# Generating function for the number of odd parts in n-color partitions
 
-Theorem 5: with `A_o(m)` the total number of odd parts over the `n`-color partitions of `m`,
-`∑_{m ≥ 1} (2m-1) q^{2m-1} / (1 - q^{2m-1}) = ∏_{m ≥ 1} (1 - q^m)^m ∑_{m ≥ 1} A_o(m) q^m`.
+**Generating function for the number of odd parts in n-color partitions.** For $i \ge 0$ let
+$A_o(i)$ be the total number of odd parts (parts of odd size, counted with multiplicity) over the
+$n$-color partitions of $i$. Then in the ring $\mathbb{Q}[[q]]$ of formal power series, with
+infinite sums and products taken coefficientwise,
+
+$$
+\sum_{m \ge 0} \frac{(2m+1)\,q^{2m+1}}{1 - q^{2m+1}} =
+\prod_{m \ge 1} (1 - q^m)^m \sum_{i \ge 0} A_o(i)\, q^i.
+$$
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Sources
 

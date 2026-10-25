@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_sum_neg_one_pow_trib
 ---
 
-# Corollary 18
+# Alternating sum of the tribonacci numbers
 
-**Corollary 18**, first identity:
-`2 ∑_{j=0}^n (-1)^j T_j = (-1)^n (T_{n+1} - T_{n-1}) - 1`
-(printed with a factor `1/2`).
+**Alternating sum of the tribonacci numbers.** Write $T_n$ for the tribonacci numbers (the
+Fibonacci $3$-step numbers $F^{(3)}_n$). For every integer $n \ge 0$,
+$2 \sum_{j=0}^{n} (-1)^j T_j = (-1)^n (T_{n+1} - T_{n-1}) - 1$, where $T_{n-1}$ is read as
+$T_0 = 0$ when $n = 0$.
+
+The source prints this identity with a factor $1/2$; it is stated here multiplied by $2$.
 
 ## Depends on
 
-- [Fib Step](fib-step.md)
+- [Fibonacci $m$-step numbers](fib-step.md)
 
 ## Sources
 

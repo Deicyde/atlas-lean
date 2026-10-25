@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.regularTripartitionCount_two_three_dissection
 ---
 
-# Regular Tripartition Count two three dissection
+# The 3-dissection of the 2-regular tripartition generating function
 
-The 3-dissection of the generating function of `T_2`:
-`∑ T_2(3n) qⁿ = f_2 / f_1 + 12q f_2² f_6⁵ / (f_1⁶ f_3)`,
-`∑ T_2(3n + 1) qⁿ = 3 f_2⁴ f_3⁵ / (f_1⁸ f_6)` and
-`∑ T_2(3n + 2) qⁿ = 6 f_2³ f_3² f_6² / f_1⁷`, each stated with its denominator cleared.
+**The 3-dissection of the 2-regular tripartition generating function.** Let $T_2(n)$ be the
+number of 2-regular tripartitions of $n$ and $f_k = \prod_{m \ge 1} (1 - q^{km})$. In the ring
+$\mathbb{Z}[[q]]$ of integer power series,
+$f_1^6 f_3 \sum_{n \ge 0} T_2(3n) q^n = f_1^5 f_2 f_3 + 12 q f_2^2 f_6^5$,
+$f_1^8 f_6 \sum_{n \ge 0} T_2(3n + 1) q^n = 3 f_2^4 f_3^5$ and
+$f_1^7 \sum_{n \ge 0} T_2(3n + 2) q^n = 6 f_2^3 f_3^2 f_6^2$.
+
+Since each $f_k$ with $k \ge 1$ is invertible in $\mathbb{Z}[[q]]$, these say
+$\sum_{n \ge 0} T_2(3n) q^n = f_2 / f_1 + 12 q f_2^2 f_6^5 / (f_1^6 f_3)$,
+$\sum_{n \ge 0} T_2(3n + 1) q^n = 3 f_2^4 f_3^5 / (f_1^8 f_6)$ and
+$\sum_{n \ge 0} T_2(3n + 2) q^n = 6 f_2^3 f_3^2 f_6^2 / f_1^7$.
 
 ## Depends on
 
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
-- [Regular Tripartition Count](regular-tripartition-count.md)
+- [Regular tripartition counts](regular-tripartition-count.md)
 
 ## Sources
 

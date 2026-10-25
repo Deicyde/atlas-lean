@@ -5,18 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.hasDerivAt_arcsinAntiderivP_pow_mul_centralBinomReciprocalH
 ---
 
-# Has Deriv At arcsin Antideriv P pow mul central Binom Reciprocal H
+# Antiderivative of $x^l H(x)$
 
-Lemma 5: for `l ≥ 1`, the paper's `P_l` (the polynomial with `P_l(0) = 0` and
-`P_l' = (8x^l - Q_l(x)) / (2(4 - x))`, Definition 2) exists, and on `0 < x < 4`
-`d/dx [P_l(x) + C_l arcsin(√x/2)^2 + arcsin(√x/2) √x Q_l(x) / √(4 - x)] = x^l H(x)`, i.e.
-`∫ x^l H(x) dx = P_l(x) + C_l arcsin(√x/2)^2 + arcsin(√x/2) √x Q_l(x) / √(4 - x)`.
+**Antiderivative of $x^l H(x)$.** Let $l \ge 1$, let $Q_l$ and $C_l$ be Zurita's polynomial and
+constant, and let $H$ be the closed form of the reciprocal central binomial series. Then there
+is a polynomial $P$ with rational coefficients such that $P(0) = 0$ and
+$2(4 - x) P'(x) = 8x^l - Q_l(x)$ as polynomials. Moreover, for every such $P$ and every real
+number $x$ with $0 < x < 4$, the real function
+
+$$
+F(y) = P(y) + C_l \arcsin(\sqrt{y}/2)^2 +
+\frac{\arcsin(\sqrt{y}/2)\,\sqrt{y}}{\sqrt{4 - y}}\, Q_l(y)
+$$
+
+has derivative $x^l H(x)$ at $x$.
+
+Such a $P$ is unique: it is the paper's polynomial $P_l$ (Definition 2), and $F$ is an
+antiderivative of $x^l H(x)$ on $0 < x < 4$.
 
 ## Depends on
 
-- [Arcsin Antideriv C](arcsin-antideriv-c.md)
-- [Arcsin Antideriv Q](arcsin-antideriv-q.md)
-- [Central Binom Reciprocal H](central-binom-reciprocal-h.md)
+- [Zurita's arcsine antiderivative constants](arcsin-antideriv-c.md)
+- [Zurita's Q-polynomials](arcsin-antideriv-q.md)
+- [Closed form of the reciprocal central binomial series](central-binom-reciprocal-h.md)
 
 ## Sources
 

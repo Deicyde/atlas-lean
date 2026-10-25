@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.compositionOddMinusEven_parts_ge_modEq_two_mul_sub
 ---
 
-# Composition Odd Minus Even parts ge mod Eq two mul sub
+# Signed count of residue-class compositions with parts at least $2r - s$
 
-Corollary 13: if `r > s ≥ 0` and `k = 2r - s`, then `b^{r,s}_{k,n} = (-1)^j`
-if `n ∈ {3rj + s + 1, 3rj + r + s + 1}` for some `j ≥ 0`, and `0` otherwise.
-The record writes `d^{r,s}_{k,n}`; the paper's proof computes `b^{r,s}_{k,n}`
-of Theorem 10, which is the quantity stated here.
+**Signed count of residue-class compositions with parts at least $2r - s$.** Let $r > s \ge 0$,
+let $k = 2r - s$ and let $n \ge 1$. Among the compositions of $n + k - 1$ whose parts are all at
+least $k$ and congruent to $k + s$ modulo $r$, let $b^{r,s}_{k,n}$ be the number with an odd
+number of parts minus the number with an even number of parts. Then $b^{r,s}_{k,n} = (-1)^j$ if
+$n = 3rj + s + 1$ or $n = 3rj + r + s + 1$ for some $j \ge 0$, and $b^{r,s}_{k,n} = 0$ otherwise.
+
+The source record writes this quantity as $d^{r,s}_{k,n}$; the paper's proof computes
+$b^{r,s}_{k,n}$, the quantity stated here.
 
 ## Depends on
 
-- [Composition Odd Minus Even](composition-odd-minus-even.md)
+- [Signed count of compositions](composition-odd-minus-even.md)
 
 ## Sources
 

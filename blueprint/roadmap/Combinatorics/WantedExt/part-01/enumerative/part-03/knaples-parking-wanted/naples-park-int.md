@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.naplesParkInt
 ---
 
-# Naples Park Int
+# Naples parking on $\mathbb{Z}$
 
-Park the cars with preferences `as` in order under the `k`-Naples rule on `ℤ`, starting
-from the occupied spots `occ`; returns the final occupied spots (most recent first).
+**Naples parking on $\mathbb{Z}$.** Starting from a list of occupied spots in $\mathbb{Z}$,
+cars with integer preferences $a_1, \dots, a_m$ arrive in order, and each takes the spot given by
+the $k$-Naples rule on $\mathbb{Z}$ for the spots occupied when it arrives. The result is the
+final list of occupied spots: the spots of the cars, most recent first, followed by the initially
+occupied spots.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Naples Spot Int](naples-spot-int.md)
+- [The $k$-Naples rule on $\mathbb{Z}$](naples-spot-int.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.subwordShiftSet_1010
 ---
 
-# Subword Shift Set 1010
+# Shift set of the subword 1010
 
-The subword `1010` gives `Q = {1, 3}`.
+**Shift set of the subword 1010.** The shift set of the binary subword $1010$ of length $4$
+(the number $10$) is $\{1, 3\}$.
 
 ## Depends on
 
-- [Subword Shift Set](subword-shift-set.md)
+- [Shift set of a binary subword](subword-shift-set.md)
 
 ## Sources
 

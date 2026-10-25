@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.coloredPolygonDissectionCount_hexagon_two
 ---
 
-# Colored Polygon Dissection Count hexagon two
+# Colored dissections of a hexagon by one diagonal
 
-A hexagon cut by one diagonal into two quadrilaterals or into a triangle and a
-pentagon: with `γ 1 = 2`, `γ 2 = 3`, `γ 3 = 5` and `γ j = 0` otherwise,
-`p_{4,2}(γ) = 3 · 3² + 6 · 2 · 5 = 87`.
+**Colored dissections of a hexagon by one diagonal.** Let $\gamma_1 = 2$, $\gamma_2 = 3$,
+$\gamma_3 = 5$ and $\gamma_j = 0$ for every other $j$. The number of partitions of a rooted convex
+hexagon by one diagonal into $2$ polygons in which each $(j+2)$-gon carries one of $\gamma_j$
+colors is $p_{4,2}(\gamma) = 87$: three diagonals cut the hexagon into two quadrilaterals and six
+cut it into a triangle and a pentagon, giving $3 \cdot 3^2 + 6 \cdot 2 \cdot 5 = 87$.
 
 ## Depends on
 
-- [Colored Polygon Dissection Count](colored-polygon-dissection-count.md)
+- [Colored polygon dissection count](colored-polygon-dissection-count.md)
 
 ## Sources
 

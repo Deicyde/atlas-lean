@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.nondecreasingDyckLastPeakCount_four_one
 ---
 
-# Nondecreasing Dyck Last Peak Count four one
+# Non-decreasing Dyck paths of semilength four with last peak at height one
 
-Four of the paths in `D_4` have last peak of height `1`: `l_{4,1} = 4`.
+**Non-decreasing Dyck paths of semilength four with last peak at height one.** Exactly four
+non-decreasing Dyck paths of semilength $4$ have their last peak at height $1$; that is,
+$l_{4,1} = 4$, where $l_{n,k}$ is the number of non-decreasing Dyck paths of semilength $n$
+whose last peak has height $k$.
 
 ## Depends on
 
-- [Nondecreasing Dyck Last Peak Count](nondecreasing-dyck-last-peak-count.md)
+- [Non-decreasing Dyck paths by height of the last peak](nondecreasing-dyck-last-peak-count.md)
 
 ## Sources
 

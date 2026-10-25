@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.one_metered_last_spot_n_card
 ---
 
-# One metered last spot n card
+# 1-metered parking functions whose last car parks in the last spot
 
-For `1 ≤ m ≤ n`, `mpf_{m-1,n}(1)` counts the `1`-metered `(m, n)`-parking functions whose last
-car parks in spot `n` (zero-based `n - 1`). The source leaves `1 ≤ m` implicit (a last car).
+**1-metered parking functions whose last car parks in the last spot.** Let $1 \le m \le n$
+and number the spots $1, \dots, n$. The number of $1$-metered $(m, n)$-parking functions whose
+last car parks in spot $n$ equals $\mathrm{mpf}_{m-1,n}(1)$, the number of $1$-metered
+$(m - 1, n)$-parking functions.
+
+The source leaves $1 \le m$ implicit (there is a last car).
 
 ## Depends on
 
-- [Is Metered Parking Function](is-metered-parking-function.md)
-- [Metered Outcome](metered-outcome.md)
-- [Metered Parking Count](metered-parking-count.md)
+- [Metered parking function](is-metered-parking-function.md)
+- [Outcome of the metered parking scheme](metered-outcome.md)
+- [Number of metered parking functions](metered-parking-count.md)
 
 ## Sources
 

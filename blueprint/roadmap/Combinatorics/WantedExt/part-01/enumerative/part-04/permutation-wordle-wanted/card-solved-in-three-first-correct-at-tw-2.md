@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.card_solvedIn_three_firstCorrectAt_two_lt
 ---
 
-# Theorem 13
+# Upper bound on three-guess solves first correct at guess two
 
-**Theorem 13.** For an inductive strategy `S ≠ CS` of length `n ≥ 4`, fewer than
-`2ⁿ - 2n - 2` permutations are guessed in exactly three guesses with `ρ_S(π) = 2`.
+**Upper bound on three-guess solves first correct at guess two.** Let $n \ge 4$ and let $S$
+be an inductive strategy of length $n$ whose component $S[n]$ is not the cyclic shift
+$j \mapsto j + 1 \bmod n$ of $\{0, \dots, n-1\}$. Then fewer than $2^n - 2n - 2$ permutations
+$\pi$ of $\{0, \dots, n-1\}$ are guessed by $S$ in exactly three guesses with the second guess
+being the first guess that has a correct position.
 
 ## Depends on
 
-- [Is Inductive Perm Wordle Strategy](is-inductive-perm-wordle-strategy.md)
-- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
-- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [Inductive strategy](is-inductive-perm-wordle-strategy.md)
+- [First guess with a correct position in permutation Wordle](perm-wordle-first-correct-at.md)
+- [Permutation Wordle games solved in a given number of guesses](perm-wordle-solved-in.md)
 
 ## Sources
 

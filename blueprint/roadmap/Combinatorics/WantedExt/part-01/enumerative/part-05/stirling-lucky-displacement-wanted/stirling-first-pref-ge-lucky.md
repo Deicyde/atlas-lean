@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.stirling_first_pref_ge_lucky
 ---
 
-# Stirling first pref ge lucky
+# The first preference bounds the lucky cars
 
-Let `w ∈ Q_n` with `lucky(w) ≥ 3` and `x` the second-smallest element of
-`Lucky(w)`. If `x ≥ n`, then `w(1) ≥ lucky(w)`, and every lucky car parks in one
-of the first `w(1)` spots.
+**The first preference bounds the lucky cars.** Let $w$ be a Stirling permutation of
+order $n$, read as a parking function of length $2n$, with at least $3$ lucky cars, and let $x$
+be the second-smallest lucky car of $w$. If $x \ge n$, then the number of lucky cars of $w$ is
+at most $w_1$, and every lucky car parks in one of the spots $1, \dots, w_1$.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 - [Stirling Park Spot](stirling-park-spot.md)
 
 ## Sources

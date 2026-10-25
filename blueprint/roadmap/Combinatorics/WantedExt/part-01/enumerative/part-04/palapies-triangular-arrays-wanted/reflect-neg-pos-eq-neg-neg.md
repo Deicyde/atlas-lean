@@ -7,21 +7,29 @@ lean: MetaMathlibExt.TriangularRecurrence.reflect_negPos_eq_negNeg
 
 # NP/NN duality
 
-**NP/NN duality**: for `ã_{n,k} = a_{n,n-k}`, with parameters
-`(α' + β', -β', γ'; α + β, -β, γ)`, one has `ã^{NP}_{n,k} = a^{NN}_{n,n-k}` and
-`ã^{NN}_{n,n-k} = a^{NP}_{n,k}` for all `n, k ∈ ℤ`; moreover the left-hand sides
-exist exactly when the right-hand sides do: the divisor condition of Definition 1
-for `ã` is that of Definition 2 for `a`, and conversely. With junk value `0` for
-a zero divisor the two identities need no existence hypothesis.
+**NP/NN duality.** Let $a$ be the array of a triangular recurrence with parameters
+$(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$, with weights
+$w(n, k) = \alpha(n + 1) + \beta k + \gamma$ and $w'(n, k) = \alpha'(n + 1) + \beta' k + \gamma'$,
+and let $\tilde a$ be the array of the reflected recurrence, with parameters
+$(\alpha' + \beta', -\beta', \gamma'; \alpha + \beta, -\beta, \gamma)$ and weights $\tilde w$,
+$\tilde w'$. Then for all integers $n, k$ the negative-positive and negative-negative numbers
+satisfy $\tilde a^{NP}_{n,k} = a^{NN}_{n,n-k}$ and $\tilde a^{NN}_{n,n-k} = a^{NP}_{n,k}$.
+Moreover, $\tilde w(n, k) \ne 0$ for all integers $n < 0 \le k$ if and only if
+$w'(n, k + 1) \ne 0$ for all integers $k \le n < 0$; and $\tilde w'(n, k + 1) \ne 0$ for all
+integers $k \le n < 0$ if and only if $w(n, k) \ne 0$ for all integers $n < 0 \le k$.
+
+Thus the divisor condition of Definition 1 for $\tilde a$ is equivalent to that of Definition 2
+for $a$, and conversely, so the left-hand sides exist exactly when the right-hand sides do.
+With junk value $0$ for a zero divisor, the two identities need no existence hypothesis.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
-- [Neg Neg](neg-neg.md)
-- [Neg Pos](neg-pos.md)
-- [Reflect](reflect.md)
-- [Weight](weight.md)
-- [Weight'](weight-2.md)
+- [Triangular recurrence](triangular-recurrence.md)
+- [Negative-negative numbers](neg-neg.md)
+- [Negative-positive numbers](neg-pos.md)
+- [Reflected triangular recurrence](reflect.md)
+- [First weight of a triangular recurrence](weight.md)
+- [Second weight of a triangular recurrence](weight-2.md)
 
 ## Sources
 

@@ -5,21 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.multifoldPartitionDiamond_genFun
 ---
 
-# Multifold Partition Diamond gen Fun
+# Product formula for multifold partition diamonds
 
-Multifold partition diamonds: for positive integers `d₁, …, d_M` (`ds = [d₁, …, d_M]`,
-`M ≥ 1`) and `ω_k = ∑_{j=k+1}^M d_j`,
-`σ_{d₁,…,d_M}(a, b) = ∏_{k=1}^M E_{d_k}(a^{ω_k} b^{M-k+1}, a) /
-((1 - a^{ω₀} b^{M+1}) ∏_{k=1}^M ∏_{j=0}^{d_k} (1 - a^{ω_k + d_k - j} b^{M-k+1}))`, stated with
-the denominator multiplied out in `ℤ⟦a, b⟧`. The `k`th diamond (with `d_k` folds) is the `k`th
-from the smallest part, as in the paper's poset `{1} ⊕ Q_{d₁} ⊕ ⋯ ⊕ Q_{d_M}`; with the parts
-read in the opposite order the formula holds for the reversed sequence only (for `ds = [1, 2]`
-the coefficient of `ab` would be `1`, not `2`).
+**Product formula for multifold partition diamonds.** Let $d_1, \dots, d_M$ be positive
+integers with $M \ge 1$, and let $\omega_k = \sum_{m=k+1}^{M} d_m$ for $0 \le k \le M$. Let
+$\sigma_{d_1, \dots, d_M}(a, b)$ be the generating function of multifold partition diamonds of
+shape $(d_1, \dots, d_M)$, where $a$ marks the fold sum and $b$ marks the link sum, and let
+$E_d(x, y) = \sum_{\tau} x^{\mathrm{des}(\tau)} y^{\mathrm{maj}(\tau)}$ be the Euler–Mahonian
+polynomial, summed over the permutations $\tau$ of $\{1, \dots, d\}$. Then the following
+identity holds in $\mathbb{Z}[[a, b]]$:
+
+$$\left(1 - a^{\omega_0} b^{M+1}\right) \prod_{k=1}^{M} \prod_{j=0}^{d_k}
+\left(1 - a^{\omega_k + d_k - j} b^{M-k+1}\right) \cdot \sigma_{d_1, \dots, d_M}(a, b) =
+\prod_{k=1}^{M} E_{d_k}\left(a^{\omega_k} b^{M-k+1}, a\right).$$
+
+The $k$th diamond (with $d_k$ folds) is the $k$th from the smallest part, as in the paper's poset
+$\{1\} \oplus Q_{d_1} \oplus \dots \oplus Q_{d_M}$. If the parts are read in the opposite order,
+the formula holds only for the reversed sequence: for $(d_1, d_2) = (1, 2)$ the coefficient of
+$ab$ would be $1$, not $2$.
 
 ## Depends on
 
-- [Euler Mahonian](euler-mahonian.md)
-- [Multifold Diamond Series](multifold-diamond-series.md)
+- [Euler–Mahonian polynomial](euler-mahonian.md)
+- [The bivariate series of multifold partition diamonds](multifold-diamond-series.md)
 
 ## Sources
 

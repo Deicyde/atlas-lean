@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.kBoxPaths_decomposition
 ---
 
-# K Box Paths decomposition
+# Decomposition of $k$-box paths
 
-Decomposition: the `k`-box paths (of all sizes `n ≥ 1`) are exactly the words
-`μ₁ U μ₂ U ⋯ μ_{k+1} U D^k L` with `μ₁, …, μ_{k+1}` augmented `(k+1)`-Dyck paths.
+**Decomposition of $k$-box paths.** Let $k \ge 1$. A word $w$ in the steps $U$, $D$, $L$ is a
+$k$-box path of some size $n \ge 1$ if and only if $w = \mu_1 U \mu_2 U \cdots \mu_{k+1} U D^k L$
+for some augmented $(k+1)$-Dyck paths $\mu_1, \ldots, \mu_{k+1}$, each of some size.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
+- [Skew Dyck steps](skew-dyck-step.md)
 - [Augmented KDyck Paths](augmented-kdyck-paths.md)
-- [K Box Paths](k-box-paths.md)
+- [$k$-box paths](k-box-paths.md)
 
 ## Sources
 

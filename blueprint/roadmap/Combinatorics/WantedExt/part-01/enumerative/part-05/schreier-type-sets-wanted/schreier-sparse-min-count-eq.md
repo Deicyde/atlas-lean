@@ -5,14 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparseMinCount_eq
 ---
 
-# Proposition 2
+# Schreier sparse sets with given minimum and maximum
 
-**Proposition 2**: `|F_{n,m+1}| = p(n-1, m)` for `m ≤ n - 1`.
+**Schreier sparse sets with given minimum and maximum.** For natural numbers $m$ and $n$
+with $m + 1 \le n$, the number of Schreier sparse sets $F \subseteq \{1, \dots, n\}$ with
+$n \in F$ and $\min F = m + 1$ equals $p(n - 1, m)$, the number of partitions of $n - 1$ into
+exactly $m$ parts.
 
 ## Depends on
 
-- [Partition Exact Count](partition-exact-count.md)
-- [Schreier Sparse Min Count](schreier-sparse-min-count.md)
+- [Partitions into exactly $k$ parts](partition-exact-count.md)
+- [Number of Schreier sparse sets with given minimum and maximum](schreier-sparse-min-count.md)
 
 ## Sources
 

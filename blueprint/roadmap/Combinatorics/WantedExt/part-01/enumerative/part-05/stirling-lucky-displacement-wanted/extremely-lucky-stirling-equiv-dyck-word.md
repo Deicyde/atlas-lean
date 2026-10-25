@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.extremely_lucky_stirling_equiv_dyckWord
 ---
 
-# Extremely lucky stirling equiv dyck Word
+# Extremely lucky Stirling permutations and Dyck words
 
-Extremely lucky Stirling permutations of order `n` are in bijection with
-valid parenthesizations of `n` pairs of parentheses (Dyck words of semilength
-`n`).
+**Extremely lucky Stirling permutations and Dyck words.** For every natural number $n$, there
+is a bijection between the Stirling permutations $w$ of order $n$ that are extremely lucky, that
+is, whose set $\mathrm{Lucky}(w)$ of lucky cars has exactly $n$ elements, and the Dyck words of
+semilength $n$ (valid parenthesizations of $n$ pairs of parentheses).
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 
 ## Sources
 

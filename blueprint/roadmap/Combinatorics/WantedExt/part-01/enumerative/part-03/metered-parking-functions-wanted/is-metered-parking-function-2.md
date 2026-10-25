@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsPartialParkingFunction.isMeteredParkingFunction
 ---
 
-# Is Metered Parking Function
+# Classical parking functions are metered parking functions
 
-For `m ≤ n`, every classical `(m, n)`-parking function is a `t`-metered parking function for
-every `t ≥ 0`.
+**Classical parking functions are metered parking functions.** Let $m \le n$. Every partial
+parking function $f$ with $m$ cars and $n$ spots is a $t$-metered parking function for every
+$t \in \mathbb{N}$.
 
 ## Depends on
 
-- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Metered parking function](is-metered-parking-function.md)
 - [Partial parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
 
 ## Sources

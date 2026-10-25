@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.kTupleRegularPartition_primePower_congruent
 ---
 
-# K Tuple Regular Partition prime Power congruent
+# Prime-power congruences for $k$-tuples of $\ell$-regular partitions
 
-Theorem 3: for prime `p`, positive naturals `m,ℓ,s`, `s ≤ α`, and
-`1 ≤ r ≤ p^s-1`, every natural `n` satisfies
-`T_{ℓ,p^αm}(p^s n+r) ≡ 0 (mod p^(α-s+1))`.  Naturals encode all paper integers and
-nonnegative `n`; `s ≤ α` prevents subtraction truncation and, with `0 < s`, gives the
-paper's `α ≥ 1`.  No other hypothesis is added.
+**Prime-power congruences for $k$-tuples of $\ell$-regular partitions.** Write $T_{\ell,k}(n)$
+for the number of $k$-tuples of $\ell$-regular partitions with total $n$. Let $p$ be a prime,
+let $m$, $\ell$ and $s$ be positive integers, let $\alpha \ge s$ and $r$ be natural numbers
+with $1 \le r \le p^s - 1$. Then for every natural number $n$,
+
+$$T_{\ell,p^\alpha m}(p^s n + r) \equiv 0 \pmod{p^{\alpha - s + 1}}.$$
+
+Since $s$ is positive, the hypothesis $\alpha \ge s$ also gives $\alpha \ge 1$.
 
 ## Depends on
 
-- [K Tuple Regular Partition Count](k-tuple-regular-partition-count.md)
+- [Number of $k$-tuples of $\ell$-regular partitions](k-tuple-regular-partition-count.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.length_wrappedWord
 ---
 
-# Length wrapped Word
+# Length of the wrapped word
 
-`g(S)` has length `2|S|`.
+**Length of the wrapped word.** For every finite set $S$ of natural numbers with elements
+$s_1 < \dots < s_k$, the wrapped word $g(S) = s_1 s_2 s_2 \cdots s_k s_k s_1$ (the empty word when
+$S = \emptyset$) has length $2|S|$.
 
 ## Depends on
 
-- [Wrapped Word](wrapped-word.md)
+- [Wrapped word of a finite set](wrapped-word.md)
 
 ## Sources
 

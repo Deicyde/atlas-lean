@@ -5,17 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_composition_huang_franklin
 ---
 
-# Card composition huang franklin
+# Huang's Franklin-type identity for compositions
 
-Theorem 15 (Huang): for `k ≥ 1`, `m ≥ 0` and `n ≥ 1`, the number of
-compositions of `n` with exactly `m` parts not congruent to `1` modulo `k`,
-each greater than `k`, equals the number of compositions of `n + k - 1` with
-exactly `m` parts less than `k`, each preceded by a part at least `k` and
-followed by either the last part or a part greater than `k`.
+**Huang's Franklin-type identity for compositions.** Let $k \ge 1$, $m \ge 0$ and $n \ge 1$.
+The number of compositions of $n$ with exactly $m$ parts not congruent to $1$ modulo $k$, all of
+which are greater than $k$, equals the number of compositions of $n + k - 1$ with exactly $m$
+parts less than $k$ in which every part less than $k$ is preceded by a part at least $k$ and is
+followed by a part that is either the last part or greater than $k$.
 
 ## Depends on
 
-- [Is Huang Small Part Placement](is-huang-small-part-placement.md)
+- [Huang's placement condition for small parts](is-huang-small-part-placement.md)
 
 ## Sources
 

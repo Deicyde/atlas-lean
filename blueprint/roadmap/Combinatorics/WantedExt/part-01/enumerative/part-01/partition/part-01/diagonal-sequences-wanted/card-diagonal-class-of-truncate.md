@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.card_diagonalClassOf_truncate
 ---
 
-# Card diagonal Class Of truncate
+# Truncating the staircase of a diagonal sequence
 
-Corollary 6, part 4: if `d = (1, …, q, k^{(s_k)}, …, 1^{(s_1)})` (normal form with
-`s_j = 0` for `k < j ≤ q`) with `1 ≤ k < q` and `s_k ≥ 2`, and
-`d' = (1, …, k, k^{(s_k)}, …, 1^{(s_1)})`, then `|[d]| = |[d']|`; the classes live in `P(n)` and
-`P(n')` with `n = q(q+1)/2 + ∑_{j ≤ q} j s_j`, `n' = k(k+1)/2 + ∑_{j ≤ k} j s_j`.
+**Truncating the staircase of a diagonal sequence.** For $m \ge 0$ and a sequence
+$s = (s_1, s_2, \dots)$ of natural numbers, let $d(m, s)$ be the sequence
+$(1, 2, \dots, m, m^{(s_m)}, (m-1)^{(s_{m-1})}, \dots, 1^{(s_1)})$ followed by zeros, where
+$v^{(r)}$ means $r$ copies of $v$, and let $n(m, s) = m(m+1)/2 + \sum_{j=1}^{m} j s_j$. Let
+$1 \le k < q$ with $s_k \ge 2$ and $s_j = 0$ for all $k < j \le q$. Then the number of partitions
+of $n(q, s)$ with diagonal sequence $d(q, s)$ equals the number of partitions of $n(k, s)$ with
+diagonal sequence $d(k, s)$.
 
 ## Depends on
 
-- [Diagonal Class Of](diagonal-class-of.md)
-- [Diagonal Normal Form](diagonal-normal-form.md)
-- [Diagonal Of List](diagonal-of-list.md)
+- [Partitions with a prescribed diagonal sequence](diagonal-class-of.md)
+- [Normal form of a diagonal sequence](diagonal-normal-form.md)
+- [Sequence of a finite list](diagonal-of-list.md)
 
 ## Sources
 

@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.coeff_invSeqAvoidGF
 ---
 
-# Coeff inv Seq Avoid GF
+# Coefficients of the generating function of pattern-avoiding inversion sequences
 
-The coefficients of `F_B`: `[x⁰] F_B = 0` and `[x^{n+1}] F_B = |I_{n+1}(B)|`.
+**Coefficients of the generating function of pattern-avoiding inversion sequences.** For
+every set $B$ of length-3 patterns and every $n \ge 0$, the generating function
+$F_B(x) = \sum_{m \ge 1} |I_m(B)| x^m \in \mathbb{Q}[[x]]$ has constant coefficient $0$, and its
+coefficient of $x^{n+1}$ is $|I_{n+1}(B)|$, the number of inversion sequences of length $n + 1$
+that avoid every pattern in $B$.
 
 ## Depends on
 
-- [Inv Seq Avoid Count](inv-seq-avoid-count.md)
-- [Inv Seq Avoid GF](inv-seq-avoid-gf.md)
+- [Number of inversion sequences avoiding a set of patterns](inv-seq-avoid-count.md)
+- [Generating function of inversion sequences avoiding a set of patterns](inv-seq-avoid-gf.md)
 
 ## Sources
 

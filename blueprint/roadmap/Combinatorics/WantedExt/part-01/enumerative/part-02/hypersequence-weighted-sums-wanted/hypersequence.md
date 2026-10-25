@@ -7,8 +7,10 @@ lean: MetaMathlibExt.hypersequence
 
 # Hypersequence
 
-The hypersequence of the `r`th generation: `a^{(0)}_n = a_n` and
-`a^{(r)}_n = ∑_{k=0}^{n} a^{(r-1)}_k`.
+**Hypersequence.** Let $(a_n)_{n \ge 0}$ be a sequence in an additive commutative monoid.
+Its hypersequence of generation $r$, written $a^{(r)}_n$, is defined by recursion on $r$:
+$a^{(0)}_n = a_n$ and $a^{(r+1)}_n = \sum_{k=0}^{n} a^{(r)}_k$ for all natural numbers $r$ and
+$n$. Thus each generation is the sequence of partial sums of the previous one.
 
 ## Depends on
 

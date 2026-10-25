@@ -5,15 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.nonempty_equiv_colorCompAllowed_two_composition_mod_three
 ---
 
-# Theorem 4
+# n-color compositions with colors 2, 3 and compositions with parts not divisible by 3
 
-**Theorem 4**: there is a bijection between `n`-color
-compositions of `n+1` with only colors `2, 3` and compositions
-of `n` with all parts `≡ 1, 2 (mod 3)`.
+**n-color compositions with colors 2, 3 and compositions with parts not divisible by 3.** For
+every natural number $n \ge 1$, there is a bijection between $\mathrm{CCo}_{2,3}(n+1)$, the
+$n$-color compositions of $n+1$ using only the colors $2$ and $3$, and the compositions of $n$ all
+of whose parts are congruent to $1$ or $2$ modulo $3$.
 
 ## Depends on
 
-- [Color Comp Allowed](color-comp-allowed.md)
+- [n-color compositions with two allowed consecutive colors](color-comp-allowed.md)
 
 ## Sources
 

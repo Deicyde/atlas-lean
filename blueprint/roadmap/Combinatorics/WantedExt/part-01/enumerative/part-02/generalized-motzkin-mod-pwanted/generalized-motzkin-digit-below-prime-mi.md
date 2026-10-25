@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.generalizedMotzkin_digit_below_prime_minus_two
 ---
 
-# Generalized Motzkin digit below prime minus two
+# Generalized Motzkin numbers modulo $p$ with last digit below $p - 2$
 
-Proposition 5(i): if the last base-p digit n₀ is below p-2, then 2a²M_n factors modulo p as
-2a²T_qM_(n₀). The arithmetic equality encodes the base-p word n = q n₀. Source: Nadav Kohen,
-*Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22,
-Proposition 5(i).
+**Generalized Motzkin numbers modulo $p$ with last digit below $p - 2$.** For integers $a$, $b$
+let $T_r$ and $M_r$ be the constant terms of $(a x^{-1} + b + a x)^r$ and of
+$(a x^{-1} + b + a x)^r (1 - x^2)$, the generalized central trinomial coefficients and generalized
+Motzkin numbers. Let $p > 2$ be a prime with $b^2 - 4a^2 \not\equiv 0 \pmod p$, and let
+$q$, $n_0$ be natural numbers with $n_0 < p - 2$. If $n = qp + n_0$, then
+
+$$
+2a^2 M_n \equiv 2a^2 \, T_q \, M_{n_0} \pmod p.
+$$
 
 ## Depends on
 
-- [Central Trinomial](central-trinomial.md)
-- [Generalized Motzkin](generalized-motzkin.md)
+- [Generalized central trinomial coefficients](central-trinomial.md)
+- [Generalized Motzkin numbers](generalized-motzkin.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.GeneralizedMotzkinModPWanted](../../../../../../../sources/v2/WantedExt.md)
+- Nadav Kohen, *Density and Symmetry in the Generalized Motzkin Numbers Modulo p*, INTEGERS 26 (2026), Article A22, Proposition 5(i).

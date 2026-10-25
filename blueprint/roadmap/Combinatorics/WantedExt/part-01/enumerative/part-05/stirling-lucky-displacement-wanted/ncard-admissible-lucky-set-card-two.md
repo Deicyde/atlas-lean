@@ -5,14 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.ncard_admissibleLuckySet_card_two
 ---
 
-# Ncard admissible Lucky Set card two
+# Counting admissible lucky sets with two elements
 
-For `n ≥ 1` there are `n - 1 + ⌈(n - 1)/2⌉` `n`-admissible lucky sets of
-size two.
+**Counting admissible lucky sets with two elements.** For every integer $n \ge 1$, the number
+of $n$-admissible lucky sets with exactly two elements is $n - 1 + \lceil (n - 1)/2 \rceil$.
 
 ## Depends on
 
-- [Is Admissible Lucky Set](is-admissible-lucky-set.md)
+- [Admissible lucky sets](is-admissible-lucky-set.md)
 
 ## Sources
 

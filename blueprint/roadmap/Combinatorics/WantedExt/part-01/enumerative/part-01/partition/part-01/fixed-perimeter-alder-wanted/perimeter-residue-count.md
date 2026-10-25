@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.perimeterResidueCount
 ---
 
-# Perimeter Residue Count
+# Fixed perimeter partitions into parts in one residue class
 
-`f_d^(a)(n)`: the number of partitions with perimeter `n` into parts `≡ a (mod d + 1)`.
+**Fixed perimeter partitions into parts in one residue class.** For natural numbers $d$, $a$
+and $n$, $f_d^{(a)}(n)$ is the number of partitions with perimeter $n$ all of whose parts are
+congruent to $a$ modulo $d + 1$. Here a partition is a nonempty multiset of positive integers,
+and its perimeter is its largest part plus its number of parts minus one.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Perimeter Partitions](fixed-perimeter-partitions.md)
+- [Partitions with fixed perimeter](fixed-perimeter-partitions.md)
 
 ## Sources
 

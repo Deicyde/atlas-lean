@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.SignedInvSeqContains
 ---
 
-# Signed Inv Seq Contains
+# Containment of a length-2 signed pattern
 
-The signed inversion sequence `e` (values `(e i).1`, bars `(e i).2`) contains the length-2
-signed pattern `p`: some positions `i < j` have `|e_i| |e_j|` order-isomorphic to `p` and the
-bars of `e_i`, `e_j` equal those of `p`.
+**Containment of a length-2 signed pattern.** Let $e = e_1 \cdots e_n$ be a sequence whose
+entries are natural numbers $|e_i|$, each barred or not, and let $\tau_1\tau_2$ be a length-2
+signed pattern. Then $e$ contains $\tau_1\tau_2$ if there are positions $i < j$ such that $|e_i|$
+is equal to, smaller than or larger than $|e_j|$ exactly as $|\tau_1|$ is equal to, smaller than
+or larger than $|\tau_2|$, and $e_i$ and $e_j$ are barred exactly when $\tau_1$ and $\tau_2$ are.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
+- [Length-2 signed pattern](signed-pattern2.md)
 
 ## Sources
 

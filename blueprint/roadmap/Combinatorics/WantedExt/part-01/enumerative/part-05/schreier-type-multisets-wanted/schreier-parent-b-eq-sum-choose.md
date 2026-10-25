@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.schreierParentB_eq_sum_choose
 ---
 
-# Schreier Parent B eq sum choose
+# Binomial-sum formula for the parent sequence b
 
-Proposition 1: for positive `s, p, n`,
-`b^{(s)}_{p,n} = ∑_{i=0}^{⌊(n - s(p-1) - 1)/(sp + 1)⌋} binom(n - s(p - 1) - 1 - spi, i)`. The range
-`0 ≤ i ≤ ⌊(n - s(p-1) - 1)/(sp + 1)⌋` (empty when `n ≤ s(p - 1)`) is encoded as
-`(sp + 1)i + s(p - 1) + 1 ≤ n`, on which the natural-number subtraction does not truncate.
+**Binomial-sum formula for the parent sequence b.** Let $b^{(s)}_{p,n}$ be the parent
+sequence: $0$ for $n \le (p - 1)s$, $1$ for $(p - 1)s < n \le ps + 1$, and
+$b^{(s)}_{p,n} = b^{(s)}_{p,n-1} + b^{(s)}_{p,n-1-ps}$ for $n \ge ps + 2$. For positive integers
+$s$, $p$ and $n$,
+
+$$b^{(s)}_{p,n} = \sum_{i=0}^{\lfloor (n - s(p-1) - 1)/(sp+1) \rfloor}
+\binom{n - s(p-1) - 1 - spi}{i},$$
+
+where the sum is empty when $n \le s(p - 1)$.
 
 ## Depends on
 
-- [Schreier Parent B](schreier-parent-b.md)
+- [Parent sequence b for Schreier-type multisets](schreier-parent-b.md)
 
 ## Sources
 

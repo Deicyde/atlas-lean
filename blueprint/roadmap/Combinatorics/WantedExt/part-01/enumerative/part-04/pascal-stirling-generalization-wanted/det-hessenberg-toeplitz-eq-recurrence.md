@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.det_hessenbergToeplitz_eq_recurrence
 ---
 
-# Det hessenberg Toeplitz eq recurrence
+# Banded Hessenberg–Toeplitz determinants and linear recurrences
 
-Theorem 7: let `k ≥ 1`, let `β_1 = ⋯ = β_{k-1} = 0`, `β_k = 1` and
-`β_m = ∑_{j=1}^k c_j β_{m-j}` for `m > k`. Then the determinant `D_{n,k}` of the `n × n` upper
-Hessenberg-Toeplitz matrix `H_n(-1; c_1, …, c_k)` (entry `c_{j-i+1}` for `0 ≤ j - i ≤ k - 1`,
-`-1` for `j - i = -1`, `0` otherwise) equals `β_{n+k}`. Sequences are 1-based (`c 0`, `β 0`
-unused); stated over any commutative ring, without the paper's `c_k ≠ 0`, and also for `n = 0`.
+**Banded Hessenberg–Toeplitz determinants and linear recurrences.** Let $R$ be a commutative
+ring, let $k \ge 1$, and let $(c_j)_{j \ge 1}$ and $(\beta_m)_{m \ge 1}$ be sequences in $R$ such
+that $\beta_1 = \cdots = \beta_{k-1} = 0$, $\beta_k = 1$ and
+$\beta_m = \sum_{j=1}^{k} c_j \beta_{m-j}$ for every $m > k$. For $n \ge 0$ let $H_n$ be the
+$n \times n$ upper Hessenberg Toeplitz matrix whose $(i, j)$ entry is $c_{j-i+1}$ if
+$0 \le j - i \le k - 1$, is $-1$ if $i = j + 1$, and is $0$ otherwise. Then
+$\det H_n = \beta_{n+k}$.
+
+Unlike the paper, this is stated over any commutative ring, without the assumption $c_k \ne 0$,
+and also for $n = 0$.
 
 ## Depends on
 

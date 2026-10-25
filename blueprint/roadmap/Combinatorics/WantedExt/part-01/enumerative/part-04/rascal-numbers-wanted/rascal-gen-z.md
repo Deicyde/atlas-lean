@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.rascalGenZ
 ---
 
-# Rascal Gen Z
+# Generalized Rascal numbers at integer indices
 
-`R_{n,k}^{(j)}` on `ℤ`, extended by `0` outside
-`0 ≤ k ≤ n` as in the paper.
+**Generalized Rascal numbers at integer indices.** For a natural number $j$ and integers $n$
+and $k$, $R^{(j)}_{n,k}$ is the generalized Rascal number of $n$ and $k$ (the number of binary
+words of length $n$ with exactly $k$ ones and at most $j$ ascents) when $0 \le k \le n$, and $0$
+otherwise.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rascal Gen](rascal-gen.md)
+- [Generalized Rascal numbers](rascal-gen.md)
 
 ## Sources
 

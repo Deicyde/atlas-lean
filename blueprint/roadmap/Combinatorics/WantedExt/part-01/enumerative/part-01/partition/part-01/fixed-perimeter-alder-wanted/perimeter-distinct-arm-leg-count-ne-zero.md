@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.perimeterDistinctArmLegCount_ne_zero_iff_and_eq_choose
 ---
 
-# Perimeter Distinct Arm Leg Count ne zero iff and eq choose
+# Counting d-distinct partitions by largest part and length
 
-Lemma 3.1: for positive `d, a, α, λ` with `a ≤ d + 1`, `h_d^(a)(α, λ) ≠ 0` iff
-`α ≥ a + d(λ - 1)`, and then `h_d^(a)(α, λ) = C(α - a - (d - 1)(λ - 1), λ - 1)`.
+**Counting d-distinct partitions by largest part and length.** Let $d$, $a$, $m$ and $k$ be
+positive integers with $a \le d + 1$, and write $h_d^{(a)}(m, k)$ for the number of partitions into
+$d$-distinct parts, all at least $a$, with largest part $m$ and $k$ parts. Then
+$h_d^{(a)}(m, k) \ne 0$ if and only if $m \ge a + d(k - 1)$, and in that case
+$h_d^{(a)}(m, k) = \binom{m - a - (d - 1)(k - 1)}{k - 1}$.
 
 ## Depends on
 
-- [Perimeter Distinct Arm Leg Count](perimeter-distinct-arm-leg-count.md)
+- [Partitions into d-distinct parts by largest part and length](perimeter-distinct-arm-leg-count.md)
 
 ## Sources
 

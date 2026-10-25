@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsModEq_pentagonal_eq_nonnegRank
 ---
 
-# Sum Distinct Parts Mod Eq pentagonal eq nonneg Rank
+# Different parts in a residue class and partitions of nonnegative rank
 
-For `0 ≤ r < m`, `∑_{j ≥ 0} (-1)^j a_{r,m}(n - j(3j+1)/2) = ∑_{j ≥ 0} (mj + r) N(n - mj - r)`,
-with `N(k)` the number of partitions of `k` with nonnegative rank.
+**Different parts in a residue class and partitions of nonnegative rank.** Let $m$, $r$ and
+$n$ be natural numbers with $r < m$, and for $k \ge 0$ let $a_{r,m}(k)$ be the sum, over all
+partitions of $k$, of the different parts congruent to $r$ modulo $m$, each counted once per
+partition whatever its multiplicity. Let $N(k)$ be the number of partitions of $k$ whose Dyson
+rank (largest part minus number of parts) is nonnegative. Then
+
+$$\sum_{j \ge 0,\ j(3j+1)/2 \le n} (-1)^j a_{r,m}(n - j(3j+1)/2)
+= \sum_{j \ge 0,\ mj + r \le n} (mj + r)\, N(n - mj - r).$$
 
 ## Depends on
 
-- [Dyson Rank](dyson-rank.md)
-- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
+- [Dyson's rank of a partition](dyson-rank.md)
+- [Sum of different parts congruent to $r$ modulo $m$](sum-distinct-parts-mod-eq.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.prime_dvd_motzkin_prime_minus_two_iff
 ---
 
-# Prime dvd motzkin prime minus two iff
+# Primes dividing the Motzkin number $M_{p-2}$
 
-Proposition 3: a prime divides the Motzkin number M_(p-2) exactly when its natural residue
-modulo 3 is 1. At p = 2 both sides are false because M_0 = 1, so no extra lower bound is added.
+**Primes dividing the Motzkin number $M_{p-2}$.** A prime $p$ divides the Motzkin number
+$M_{p-2} = M^{(1,1)}_{p-2}$ if and only if $p \equiv 1 \pmod 3$.
+
+For $p = 2$ both sides are false, since $M_0 = 1$.
 
 ## Depends on
 
-- [Generalized Motzkin](generalized-motzkin.md)
+- [Generalized Motzkin numbers](generalized-motzkin.md)
 
 ## Sources
 

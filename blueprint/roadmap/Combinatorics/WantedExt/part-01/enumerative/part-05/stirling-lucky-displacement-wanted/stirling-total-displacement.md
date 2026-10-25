@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Stirling Displacement](stirling-displacement.md)
+- [Displacement of a car](stirling-displacement.md)
 
 ## Sources
 

@@ -5,20 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.halvedPerfect_isDoublePerfect_not_typeA
 ---
 
-# Halved Perfect is Double Perfect not type A
+# Halved perfect partitions are double-perfect but not of Type A
 
-Halved perfect partitions: let `2(N - r) = a₁ ⋯ a_j a_{j+1} ⋯ a_k` with factors `≥ 2`,
-`a₁ ⋯ a_j = 2(r+1)`, `1 < j < k`, `a_j > 2` and `a_{j+1} > 2`. Then
-`(1^{a₁-1}, a₁^{a₂-1}, …, (a₁⋯a_{j-1})^{a_j-1}, (a₁⋯a_j/2)^{a_{j+1}-1}, …, (a₁⋯a_{k-1}/2)^{a_k-1})`
-is double-perfect of order `r` and is not of Type A (it lies in `E_r(N)`). With
-`b = [a₁, …, a_j]` and `c = [a_{j+1}, …, a_k]` the partition is
-`perfectPartitionOfFactorization b` plus `(r+1)` times `perfectPartitionOfFactorization c`.
+**Halved perfect partitions are double-perfect but not of Type A.** For integers
+$a_1, \dots, a_k \ge 2$ write $P(a_1, \dots, a_k)$ for the perfect partition
+$(1^{a_1-1}, a_1^{a_2-1}, (a_1a_2)^{a_3-1}, \dots, (a_1 \cdots a_{k-1})^{a_k-1})$. Let $N$ and
+$r \ge 1$ be natural numbers, let $a_1, \dots, a_k \ge 2$ and $1 < j < k$ with
+$a_1 \cdots a_j = 2(r+1)$, $a_1 \cdots a_k = 2(N - r)$, $a_j > 2$ and $a_{j+1} > 2$. Let
+$\lambda$ consist of the parts of $P(a_1, \dots, a_j)$ together with $r + 1$ times each part of
+$P(a_{j+1}, \dots, a_k)$, that is,
+$\lambda = (1^{a_1-1}, a_1^{a_2-1}, \dots, (a_1 \cdots a_{j-1})^{a_j-1},
+(a_1 \cdots a_j/2)^{a_{j+1}-1}, \dots, (a_1 \cdots a_{k-1}/2)^{a_k-1})$. Then $\lambda$ is a
+double-perfect partition of $N$ of order $r$ and is not a Type-A double-perfect partition of $N$
+of order $r$.
 
 ## Depends on
 
-- [Is Double Perfect Of Order](is-double-perfect-of-order.md)
-- [Is Type ADouble Perfect](is-type-adouble-perfect.md)
-- [Perfect Partition Of Factorization](perfect-partition-of-factorization.md)
+- [Double-perfect partitions of higher order](is-double-perfect-of-order.md)
+- [Type-A double-perfect partition](is-type-adouble-perfect.md)
+- [MacMahon's partition of an ordered factorization](perfect-partition-of-factorization.md)
 
 ## Sources
 

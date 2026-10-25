@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.stirlingLuckySet_eq_singleton_iff
 ---
 
-# Stirling Lucky Set eq singleton iff
+# Characterization of extremely unlucky Stirling permutations
 
-For `n ≥ 1`, `w ∈ Q_n` is extremely unlucky (`Lucky(w) = {1}`) if and only if
-for every `x ∈ [2, n]`, `w(i) < x` for all `i ≤ x`. (`n ≥ 1` is added: the empty
-word of `Q_0` has no lucky cars, while the right-hand side holds vacuously.)
+**Characterization of extremely unlucky Stirling permutations.** Let $n \ge 1$ and let $w$
+be a Stirling permutation of order $n$, read as a parking function of length $2n$. Then car $1$
+is the only lucky car of $w$ if and only if for every $x \in \{2, \dots, n\}$ and every
+position $i \le x$, we have $w_i < x$.
+
+The hypothesis $n \ge 1$ is added: the empty word, the only Stirling permutation of order $0$,
+has no lucky cars, while the right-hand side holds vacuously.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 
 ## Sources
 

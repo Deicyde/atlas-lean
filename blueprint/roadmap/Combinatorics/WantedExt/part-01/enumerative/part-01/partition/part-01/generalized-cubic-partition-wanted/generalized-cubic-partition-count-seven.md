@@ -7,12 +7,13 @@ lean: MetaMathlibExt.generalizedCubicPartitionCount_seven_eleven
 
 # Amdeberhan–Sellers–Singh congruences
 
-**Amdeberhan–Sellers–Singh congruences**: for all `n ≥ 0`,
-`a_3(7n + 4) ≡ 0 (mod 7)` and `a_5(11n + 10) ≡ 0 (mod 11)`.
+**Amdeberhan–Sellers–Singh congruences.** For every natural number $n$, the generalized
+cubic partition numbers satisfy $a_3(7n + 4) \equiv 0 \pmod{7}$ and
+$a_5(11n + 10) \equiv 0 \pmod{11}$.
 
 ## Depends on
 
-- [Generalized Cubic Partition Count](generalized-cubic-partition-count.md)
+- [Generalized cubic partition numbers](generalized-cubic-partition-count.md)
 
 ## Sources
 

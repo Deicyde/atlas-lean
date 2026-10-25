@@ -6,20 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.eulerMahonian_one
 ---
 
-# Euler Mahonian one
+# The first Euler–Mahonian polynomial is $1$
 
-`E_1(x, y) = 1`.
+**The first Euler–Mahonian polynomial is $1$.** For every commutative ring $R$ and all
+$x, y \in R$, the Euler–Mahonian polynomial $E_1$ satisfies $E_1(x, y) = 1$.
 
 ## Depends on
 
-- [Euler Mahonian](euler-mahonian.md)
+- [Euler–Mahonian polynomial](euler-mahonian.md)
 
 ## Proof depends on
 
-- [Perm Des](perm-des.md)
-- [Perm Descent Set](perm-descent-set.md)
-- [Perm Maj](perm-maj.md)
-- [Perm Value At](perm-value-at.md)
+- [Number of descents](perm-des.md)
+- [Descent set of a permutation](perm-descent-set.md)
+- [Major index of a permutation](perm-maj.md)
+- [Value of a permutation at a natural position](perm-value-at.md)
 
 ## Sources
 

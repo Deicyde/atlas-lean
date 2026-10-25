@@ -5,17 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.nondecreasingRectangleTotal_one_by_s
 ---
 
-# Nondecreasing Rectangle Total one by s
+# Generating function for $1 \times s$ rectangles in nondecreasing words
 
-The total number `f_k(n)` of `1 × s` rectangles over `W^↗_{n,k}` has generating function
-`x^s ∑_{i=0}^{k-1} (-1)^i C(i+s-2, i) C(k+s, s+i+1) x^i / (1 - x)^{k+1}`; hence for `n ≥ s`,
-`f_k(n) = ∑_{i=0}^{min(k-1, n-s)} (-1)^i C(i+s-2, i) C(k+s, s+i+1) C(n-s-i+k, k)`. The generating
-function is stated after multiplying by `(1 - X)^{k+1}`; `C(i+s-2, i)` uses truncated subtraction,
-which agrees with the paper's value at `s = 1` (`C(-1, 0) = 1`, `C(i-1, i) = 0`).
+**Generating function for $1 \times s$ rectangles in nondecreasing words.** Let $k \ge 1$ and
+$s \ge 1$, and let $f_k(n)$ be the total number of $1 \times s$ rectangles over all nondecreasing
+words of length $n$ over $[k] = \{1, \dots, k\}$. Then, as formal power series over $\mathbb{Z}$,
+
+$$
+\Big(\sum_{n \ge 0} f_k(n)\, x^n\Big) (1 - x)^{k+1} =
+x^s \sum_{i=0}^{k-1} (-1)^i \binom{i+s-2}{i} \binom{k+s}{s+i+1} x^i,
+$$
+
+and for every $n \ge s$,
+
+$$
+f_k(n) = \sum_{i=0}^{\min(k-1,\, n-s)} (-1)^i \binom{i+s-2}{i} \binom{k+s}{s+i+1}
+\binom{n-s-i+k}{k}.
+$$
+
+For $s = 1$ the factor $\binom{i+s-2}{i} = \binom{i-1}{i}$ is $1$ at $i = 0$ and $0$ for $i \ge 1$.
 
 ## Depends on
 
-- [Nondecreasing Rectangle Total](nondecreasing-rectangle-total.md)
+- [Total number of $r \times s$ rectangles in nondecreasing words](nondecreasing-rectangle-total.md)
 
 ## Sources
 

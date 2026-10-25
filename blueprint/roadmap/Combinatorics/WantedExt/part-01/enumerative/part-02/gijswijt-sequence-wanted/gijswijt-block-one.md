@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.gijswijtBlock_one
 ---
 
-# Gijswijt Block one
+# The first block
 
-`B_1^{(m)} = m`.
+**The first block.** For every $m \ge 1$, the first block $B_1^{(m)}$ of the $m$th order
+Gijswijt sequence is the one-term string $m$.
 
 ## Depends on
 
-- [Gijswijt Block](gijswijt-block.md)
+- [Gijswijt blocks](gijswijt-block.md)
 
 ## Proof depends on
 
-- [Curling Number](curling-number.md)
-- [Curling Number nil](curling-number-nil.md)
-- [Gijswijt Prefix](gijswijt-prefix.md)
+- [Curling number](curling-number.md)
+- [Curling number of the empty string](curling-number-nil.md)
+- [Prefixes of the $m$th order Gijswijt sequence](gijswijt-prefix.md)
 
 ## Sources
 

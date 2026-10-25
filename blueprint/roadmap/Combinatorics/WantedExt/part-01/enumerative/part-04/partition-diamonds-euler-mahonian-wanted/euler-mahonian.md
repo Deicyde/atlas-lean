@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.eulerMahonian
 ---
 
-# Euler Mahonian
+# Euler–Mahonian polynomial
 
-The Euler-Mahonian polynomial `E_d(x, y) = ∑_{τ ∈ S_d} x^{des(τ)} y^{maj(τ)}`, evaluated
-at elements `x, y` of a commutative ring.
+**Euler–Mahonian polynomial.** For a natural number $d$ and elements $x, y$ of a commutative
+ring, the Euler–Mahonian polynomial evaluated at $(x, y)$ is
+$E_d(x, y) = \sum_{\tau \in S_d} x^{\operatorname{des}(\tau)} y^{\operatorname{maj}(\tau)}$,
+where $\operatorname{des}(\tau)$ is the number of descents and $\operatorname{maj}(\tau)$ the
+major index of the permutation $\tau$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Perm Des](perm-des.md)
-- [Perm Maj](perm-maj.md)
+- [Number of descents](perm-des.md)
+- [Major index of a permutation](perm-maj.md)
 
 ## Sources
 

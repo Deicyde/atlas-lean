@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nondecreasingDyckWords
 ---
 
-# Nondecreasing Dyck Words
+# Non-decreasing Dyck paths of semilength $n$
 
-The set `D_n` of non-decreasing Dyck paths of semilength `n`.
+**Non-decreasing Dyck paths of semilength $n$.** For a natural number $n$, $D_n$ is the finite
+set of Dyck paths of semilength $n$ that are non-decreasing: the heights of their valleys (the
+height reached after the $D$ of each factor $DU$), read from left to right, form a non-decreasing
+sequence.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Nondecreasing Dyck Path](is-nondecreasing-dyck-path.md)
-- [Dyck Valley Heights](dyck-valley-heights.md)
+- [Non-decreasing Dyck paths](is-nondecreasing-dyck-path.md)
+- [Valley heights](dyck-valley-heights.md)
 
 ## Sources
 

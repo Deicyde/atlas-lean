@@ -5,13 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.reflection_shift_solutions_odd
 ---
 
-# Reflection shift solutions odd
+# Solution of $x = -1-x-a$ modulo odd $n$
 
-If `n` is odd, the solutions in `ZMod n` of `x = -1-x-a` form the singleton containing
-`((n+1)/2) • (-1-a)`.  Natural-number division is deliberately performed before casting the
-coefficient into `ZMod n`, matching the integer representative convention of Lemma 25.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Solution of $x = -1-x-a$ modulo odd $n$.** Let $n$ be a positive odd integer and
+$a \in \mathbb{Z}/n$. Then the set of $x \in \mathbb{Z}/n$ with $x = -1-x-a$ is the singleton
+$\{k(-1-a)\}$, where $k$ is the residue mod $n$ of the integer $(n+1)/2$.
 
 ## Depends on
 

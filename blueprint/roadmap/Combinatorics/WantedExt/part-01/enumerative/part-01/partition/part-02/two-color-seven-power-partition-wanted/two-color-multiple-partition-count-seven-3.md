@@ -5,19 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.twoColorMultiplePartitionCount_seven_pow_even_generatingFunction
 ---
 
-# Theorem 3
+# Generating functions for $p_{1,7^{2k}}$ on progressions
 
-**Theorem 3.** For `β ≥ 0` and `k ≥ 1`, with `f_k` as in Theorem 2,
-`∑_n p_{1,7^{2k}}(7^{2k+2β-1} n + (10·7^{2k+2β-1} + 7^{2k} + 1)/24) q^n
-= ∑_{i ≥ 1} y^{(2k)}_{2β+1,i} q^{i-1} f_7^{4i-2} / f_1^{4i}` and
-`∑_n p_{1,7^{2k}}(7^{2k+2β} n + (22·7^{2k+2β} + 7^{2k} + 1)/24) q^n
-= ∑_{j ≥ 1} y^{(2k)}_{2β+2,j} q^{j-1} f_7^{4j} / f_1^{4j+2}`. Identities in `ℚ⟦X⟧`; the sums
-are cut at `7^{2k+2β}`, resp. `7^{2k+2β+1}`, above the supports of the vectors.
+**Generating functions for $p_{1,7^{2k}}$ on progressions.** Let $p_{1,\ell}(n)$ be the
+number of 2-color partitions of $n$ in which the parts of the second color are multiples of
+$\ell$, let $f_k = \prod_{n \ge 1} (1 - q^{kn})$ in $\mathbb{Q}[[q]]$, and let $y^{(2k)}_\beta$ be
+the coefficient vectors for even powers of $7$. For all $k \ge 1$ and $\beta \ge 0$, with
+$N = 7^{2k+2\beta-1}$,
+
+$$\sum_{n \ge 0} p_{1,7^{2k}}\Bigl(N n + \frac{10 N + 7^{2k} + 1}{24}\Bigr) q^n
+= \sum_{i=1}^{7N} y^{(2k)}_{2\beta+1,i}\, q^{i-1} \frac{f_7^{4i-2}}{f_1^{4i}}$$
+
+and
+
+$$\sum_{n \ge 0} p_{1,7^{2k}}\Bigl(7N n + \frac{22 \cdot 7N + 7^{2k} + 1}{24}\Bigr) q^n
+= \sum_{j=1}^{49N} y^{(2k)}_{2\beta+2,j}\, q^{j-1} \frac{f_7^{4j}}{f_1^{4j+2}}$$
+
+as formal power series over $\mathbb{Q}$.
+
+Both numerators are divisible by $24$. The sums stop at $7N$, resp. $49N$, above the supports of
+the vectors.
 
 ## Depends on
 
-- [Garvan YEven](garvan-yeven.md)
-- [Two Color Multiple Partition Count](two-color-multiple-partition-count.md)
+- [Coefficient vectors for even powers of 7](garvan-yeven.md)
+- [Two-color partitions with one color restricted to multiples](two-color-multiple-partition-count.md)
 
 ## Sources
 

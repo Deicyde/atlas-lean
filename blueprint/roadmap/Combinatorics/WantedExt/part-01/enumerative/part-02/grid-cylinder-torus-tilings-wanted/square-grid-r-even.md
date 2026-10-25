@@ -5,18 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.squareGrid_r_even
 ---
 
-# Square Grid r even
+# Square-grid tilings fixed by the quarter-turn for even $n$
 
-For even `n`, the quarter-turn `r` decomposes the square grid into four-cycles, giving
-`|T|^(n²/4)`.  The hypothesis `σ⁴=1` is the required order-four condition for every tile action
-of `r`.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-grid tilings fixed by the quarter-turn for even $n$.** Let $n$ be an even positive
+integer, let $T$ be a finite set and let $\sigma$ be a permutation of $T$ with $\sigma^4 = 1$.
+Let $r$ be the quarter-turn of the grid $(\mathbb{Z}/n\mathbb{Z})^2$ given by
+$r(x, y) = (-1 - y, x)$. Then the number of maps $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with
+$F(r(c)) = \sigma(F(c))$ for every cell $c$ is $|T|^{n^2/4}$.
 
 ## Depends on
 
-- [Cell R](cell-r.md)
-- [Fixed Tiling Count](fixed-tiling-count.md)
+- [Cell map of the quarter-turn r](cell-r.md)
+- [Number of fixed tilings](fixed-tiling-count.md)
 
 ## Sources
 

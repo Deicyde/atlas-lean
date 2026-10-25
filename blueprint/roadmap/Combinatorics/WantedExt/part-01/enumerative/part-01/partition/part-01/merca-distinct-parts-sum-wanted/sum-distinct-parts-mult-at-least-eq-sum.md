@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsMultAtLeast_eq_sum_partition
 ---
 
-# Sum Distinct Parts Mult At Least eq sum partition
+# Merca's identity for $s_m(n)$
 
-Merca's identity (ii): for `m ≥ 1`, `s_m(n) = ∑_{j ≥ 0} j p(n - mj)`. The paper's
-hypothesis `0 ≤ r < m` forces `m ≥ 1`; for `m = 0` the right side diverges.
+**Merca's identity for $s_m(n)$.** Let $m \ge 1$ and $n$ be natural numbers, write $s_m(n)$
+for the sum of the different parts that appear at least $m$ times in partitions of $n$, and
+$p(k)$ for the number of partitions of $k$. Then $s_m(n) = \sum_{j \ge 0,\ mj \le n} j\, p(n - mj)$.
+
+The paper's hypothesis $0 \le r < m$ forces $m \ge 1$; for $m = 0$ the right side diverges.
 
 ## Depends on
 
-- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
+- [Sum of different parts appearing at least $m$ times](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

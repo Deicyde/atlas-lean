@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.anassaMoves
 ---
 
-# Anassa Moves
+# Basic moves of the anassa
 
-The anassa's basic moves `(0, 1), (1, 1)`.
+**Basic moves of the anassa.** The basic moves of the anassa are the two vectors $(0, 1)$
+and $(1, 1)$ in $\mathbb{Z}^2$.
 
 ## Depends on
 

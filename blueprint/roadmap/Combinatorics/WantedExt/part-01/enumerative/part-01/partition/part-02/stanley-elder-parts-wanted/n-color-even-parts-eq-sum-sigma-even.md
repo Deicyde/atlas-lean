@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.nColor_evenParts_eq_sum_sigmaEven
 ---
 
-# N Color even Parts eq sum sigma Even
+# Even divisor sums count the even parts of $n$-color partitions
 
-Corollary 3: for `m ≥ 1`, `A_e(m) = ∑_{k=1}^{m} σ_even(k) C(m-k)`, where `A_e(m)` is the
-total number of even parts over the `n`-color partitions of `m`.
+**Even divisor sums count the even parts of $n$-color partitions.** For $m \ge 1$, let
+$A_e(m)$ be the total number of parts of even size, counted with multiplicity, over the
+$n$-color partitions of $m$, and for $r \ge 0$ let $C(r)$ be the number of $n$-color partitions
+of $r$. Then
+
+$$A_e(m) = \sum_{k=1}^{m} \sigma_{\mathrm{even}}(k) \, C(m - k),$$
+
+where $\sigma_{\mathrm{even}}(k)$ is the sum of the even divisors of $k$.
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
-- [Sigma Even](sigma-even.md)
+- [n-color partitions](n-color-partitions.md)
+- [Sum of the even divisors](sigma-even.md)
 
 ## Sources
 

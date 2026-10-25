@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.gammaQuadraticRatio_zero_right
 ---
 
-# Gamma Quadratic Ratio zero right
+# The Gamma quadratic ratio at $z = 0$
 
-`g(a, b, 0) = 1` when `b ≠ 0` and the Gamma values are nonzero.
+**The Gamma quadratic ratio at $z = 0$.** Let $a$ and $b$ be complex numbers with $b \ne 0$
+and $\Gamma(a - \sqrt{a^2 - b})\, \Gamma(a + \sqrt{a^2 - b}) \ne 0$, where $\sqrt{\cdot}$ denotes
+the principal complex square root. Then the Gamma quadratic ratio $g$ satisfies $g(a, b, 0) = 1$.
 
 ## Depends on
 
-- [Gamma Quadratic Ratio](gamma-quadratic-ratio.md)
+- [The Gamma quadratic ratio](gamma-quadratic-ratio.md)
 
 ## Sources
 

@@ -5,16 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.nonempty_equiv_colorCompProhibited_one_palindromic
 ---
 
-# Theorem 13
+# n-color compositions without colors 1, 2 and palindromic compositions
 
-**Theorem 13**: there is a bijection between `n`-color
-compositions of `n` with colors `1, 2` prohibited and
-palindromic compositions of `2n-5` with no parts `2` and an
-odd number of parts (for `n ≥ 1`).
+**n-color compositions without colors 1, 2 and palindromic compositions.** For every natural
+number $n \ge 1$, there is a bijection between $\mathrm{CCo}_{\widehat{1,2}}(n)$, the $n$-color
+compositions of $n$ in which no part has color $1$ or $2$, and the palindromic compositions of
+$\max(2n-5, 0)$ that have no part equal to $2$ and an odd number of parts.
 
 ## Depends on
 
-- [Color Comp Prohibited](color-comp-prohibited.md)
+- [n-color compositions with two prohibited consecutive colors](color-comp-prohibited.md)
 
 ## Sources
 

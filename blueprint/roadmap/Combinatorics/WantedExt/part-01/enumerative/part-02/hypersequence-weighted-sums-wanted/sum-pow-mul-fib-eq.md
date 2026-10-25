@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_mul_fib_eq
 ---
 
-# Sum pow mul fib eq
+# Power-weighted sums of Fibonacci numbers
 
-Theorem 10: `∑_{k=0}^{n} k^ℓ F_k = ∑_{m=0}^{ℓ} c_{ℓ,m}(n) F_{n+2(m+1)} -
-∑_{m=0}^{ℓ} c_{ℓ,m}(0) F_{2(m+1)}`. The conjecture on the constant term that follows in the
-record is omitted.
+**Power-weighted sums of Fibonacci numbers.** Let $F_k$ denote the Fibonacci numbers and let
+$p_{\ell,m}(x, y) = \sum_{i=0}^{m} (-1)^i \binom{m}{i} (ix + y)^\ell$ be the alternating binomial
+power sum. Then for all natural numbers $\ell$ and $n$, with the convention $0^0 = 1$,
+
+$$\sum_{k=0}^{n} k^\ell F_k = \sum_{m=0}^{\ell} p_{\ell,m}(1, n + 1)\, F_{n+2(m+1)} -
+\sum_{m=0}^{\ell} p_{\ell,m}(1, 1)\, F_{2(m+1)}.$$
+
+The paper's conjecture on the constant term, stated after this theorem, is not included.
 
 ## Depends on
 
-- [Alternating Binomial Power Sum](alternating-binomial-power-sum.md)
+- [Alternating binomial power sum](alternating-binomial-power-sum.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.fiveCoreCount
 ---
 
-# Five Core Count
+# The 5-core counts
 
-`c_5(n)`, the coefficients of `f_5^5 / f_1` (the generating function of 5-core
-partitions).
+**The 5-core counts.** For a natural number $n$, $c_5(n)$ is the coefficient of $q^n$ in the
+integer power series $f_5^5 / f_1$, where $f_k = \prod_{m \ge 1} (1 - q^{km})$ is the Euler
+product. The series $f_5^5 / f_1$ is the generating function of 5-core partitions.
 
 ## Depends on
 

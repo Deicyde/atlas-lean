@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.boardMaxRookNumber
 ---
 
-# Board Max Rook Number
+# Max-rook number of a board
 
-The largest number of non-attacking rooks on a finite board `B ⊆ ℕ × ℕ`:
-the largest subset of `B` that meets every row (first coordinate) and every
-column (second coordinate) at most once.
+**Max-rook number of a board.** For a finite board $B \subseteq \mathbb{N} \times \mathbb{N}$,
+whose cell $(i, j)$ lies in row $i$ and column $j$, the max-rook number of $B$ is the largest
+size of a subset of $B$ that contains at most one cell of each row and at most one cell of each
+column, that is, the largest number of non-attacking rooks that can be placed on $B$.
 
 ## Depends on
 

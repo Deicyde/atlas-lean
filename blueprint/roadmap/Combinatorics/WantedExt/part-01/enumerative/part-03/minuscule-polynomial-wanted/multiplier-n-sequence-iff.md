@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.multiplier_n_sequence_iff
 ---
 
-# Multiplier n sequence iff
+# Craven–Csordas characterization of multiplier $n$-sequences
 
-Craven–Csordas: a finite real sequence `(t_k)_{k=0}^n` is a multiplier `n`-sequence (it maps
-every real-rooted real polynomial of degree at most `n`, `∑ a_k x^k`, to a real-rooted one,
-`∑ a_k t_k x^k`) if and only if `∑_{k=0}^n binom(n,k) t_k x^k` is real-rooted with all zeros of
-the same (weak) sign. Only `t 0, …, t n` matter.
+**Craven–Csordas characterization of multiplier $n$-sequences.** Let $n$ be a natural number
+and $t_0, t_1, \dots$ real numbers. Say a real polynomial splits over $\mathbb{R}$ if it is a
+constant times a product of linear factors $x - r$ with $r$ real (the zero polynomial splits).
+Then the following are equivalent: for every real polynomial $\sum_k a_k x^k$ of degree at most
+$n$ that splits over $\mathbb{R}$, the polynomial $\sum_{k=0}^n a_k t_k x^k$ splits over
+$\mathbb{R}$; and the polynomial $\sum_{k=0}^n \binom{n}{k} t_k x^k$ splits over $\mathbb{R}$ and
+its roots are either all $\ge 0$ or all $\le 0$.
+
+Only $t_0, \dots, t_n$ matter.
 
 ## Depends on
 

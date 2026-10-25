@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ascentToDescentRearrangement_bijOn
 ---
 
-# Ascent To Descent Rearrangement bij On
+# The ascent-to-descent rearrangement matches ascent and descent sets
 
-For `y ∈ ℕ^n` (a list) and a set `I` of positions, `ν` restricts to a bijection from the
-rearrangements of `y` with ascent set `I` onto the rearrangements of `y` with descent set `I`.
+**The ascent-to-descent rearrangement matches ascent and descent sets.** Let $y$ be a finite
+word over $\mathbb{N}$ and $I$ a finite set of natural numbers. For a word $x = x_1 \cdots x_m$,
+let the ascent set $\mathrm{Asc}(x)$ be the set of $i \in \{1, \dots, m - 1\}$ with
+$x_i < x_{i+1}$, and the descent set $\mathrm{Des}(x)$ the set of those $i$ with $x_i > x_{i+1}$.
+Then the ascent-to-descent rearrangement $\nu$ maps the set of rearrangements $x$ of $y$ with
+$\mathrm{Asc}(x) = I$ bijectively onto the set of rearrangements $x$ of $y$ with
+$\mathrm{Des}(x) = I$.
 
 ## Depends on
 

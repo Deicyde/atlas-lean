@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sabarNumber_central_eq_whittGeneralizedCatalan
 ---
 
-# Sabar Number central eq whitt Generalized Catalan
+# Central entries of Sabar's triangle and Whitt's numbers
 
-Theorem 7: for `n ≥ 1`,
-`s(2n, n) = (2/3) C(2n, n) - (1/3) C(2, n) / 2^{n+1} + (-1)^{n+1} + (-1)^n / 2^{n+1}`.
+**Central entries of Sabar's triangle and Whitt's numbers.** Let $C(2, m)$ denote Whitt's
+generalized Catalan numbers at $\alpha = 2$. For every natural number $n \ge 1$, the central
+entry $s(2n, n)$ of Sabar's triangle satisfies
+
+$$s(2n, n) = \frac{2}{3} \binom{2n}{n} - \frac{1}{3} \cdot \frac{C(2, n)}{2^{n+1}} +
+(-1)^{n+1} + \frac{(-1)^n}{2^{n+1}}.$$
 
 ## Depends on
 
-- [Sabar Number](sabar-number.md)
+- [Sabar's triangle](sabar-number.md)
 - [Whitt's generalized Catalan numbers](../../../../../MathlibExt/part-01/enumerative/part-09/whitt-generalized-catalan/whitt-generalized-catalan.md)
 
 ## Sources

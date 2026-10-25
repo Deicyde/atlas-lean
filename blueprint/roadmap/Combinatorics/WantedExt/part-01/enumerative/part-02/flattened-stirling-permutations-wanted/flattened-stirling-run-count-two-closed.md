@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.flattenedStirlingRunCount_two_closed
 ---
 
-# Flattened Stirling Run Count two closed
+# Closed form for flattened Stirling permutations with two runs
 
-For `n ≥ 1`, `|flat_2(Q_{n+1})| = 3(2ⁿ - 1) - 2n`.
+**Closed form for flattened Stirling permutations with two runs.** For every natural number
+$n \ge 1$, the number $|\mathrm{flat}_2(Q_{n+1})|$ of flattened Stirling permutations of order
+$n + 1$ with exactly two runs equals $3(2^n - 1) - 2n$.
 
 ## Depends on
 
-- [Flattened Stirling Run Count](flattened-stirling-run-count.md)
+- [Counting flattened Stirling permutations by runs](flattened-stirling-run-count.md)
 
 ## Sources
 

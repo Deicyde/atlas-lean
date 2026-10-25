@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.IsParkingShuffle
 ---
 
-# Is Parking Shuffle
+# Parking-function shuffles
 
-`(π_2, …, π_m)` (zero-based values `π i`, length `m - 1` written `m'`, so `m = m' + 1`) lies in
-the parking-function shuffle set `Sh_m(k - 1, n - k)`: it is a shuffle of a word
-`α ∈ PF_{m-n+k-1, k-1}` and `β + (k)^{n-k}` with `β ∈ PF_{n-k, n-k}`. Since the entries of `α`
-are `≤ k - 1` and those of `β + (k)^{n-k}` are `≥ k + 1` (one-based), such a shuffle is split by
-value and parking-function membership does not depend on the order of the entries, so this is
-stated as: no entry equals `k`; exactly `m - n + k - 1` entries are `< k` and they form a
-parking function on the spots `1, …, k - 1` (at most `k - 1 - j` of them prefer zero-based spot
-`j` or later); exactly `n - k` entries are `> k` and, shifted down by `k`, they form a classical
-parking function on `n - k` spots (at most `n - j` of them prefer zero-based spot `j`, `k ≤ j < n`,
-or later).
+**Parking-function shuffles.** Let $m'$, $n$, $k$ be natural numbers and let
+$\pi : \{0, \dots, m' - 1\} \to \{0, \dots, n - 1\}$, with one-based letters $w_i = \pi(i) + 1$.
+Then $\pi$ is a parking-function shuffle with parameters $(m', n, k)$ when all of the following
+hold: no letter $w_i$ equals $k$; exactly $\max(m' + k - n, 0)$ letters satisfy $w_i < k$;
+exactly $\max(n - k, 0)$ letters satisfy $w_i > k$; for every $s$ with $1 \le s \le k - 1$, at
+most $k - s$ letters satisfy $s \le w_i \le k - 1$; and for every $s$ with $k + 1 \le s \le n$, at
+most $n + 1 - s$ letters satisfy $w_i \ge s$.
+
+With $m = m' + 1$, the word $(w_0, \dots, w_{m'-1})$ plays the role of the source's
+$(\pi_2, \dots, \pi_m)$, and the conditions express membership in the source's set
+$\mathrm{Sh}_m(k - 1, n - k)$ of shuffles of a parking function of $m - n + k - 1$ cars on
+$k - 1$ spots (the letters below $k$) with a parking function of length $n - k$ shifted up by
+$k$ (the letters above $k$): parking-function membership does not depend on the order of the
+letters, and the last two conditions are the usual counting criterion for every car to park.
 
 ## Depends on
 

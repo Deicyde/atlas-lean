@@ -12,10 +12,10 @@ permutations are guessed in exactly three guesses with `ρ_S(π) = 2` than with 
 
 ## Depends on
 
-- [Is Inductive Perm Wordle Strategy](is-inductive-perm-wordle-strategy.md)
-- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
-- [Perm Wordle Solved In](perm-wordle-solved-in.md)
-- [Cyclic Shift Left Strategy](cyclic-shift-left-strategy.md)
+- [Inductive strategy](is-inductive-perm-wordle-strategy.md)
+- [First guess with a correct position in permutation Wordle](perm-wordle-first-correct-at.md)
+- [Permutation Wordle games solved in a given number of guesses](perm-wordle-solved-in.md)
+- [Cyclic shift left strategy](cyclic-shift-left-strategy.md)
 
 ## Sources
 

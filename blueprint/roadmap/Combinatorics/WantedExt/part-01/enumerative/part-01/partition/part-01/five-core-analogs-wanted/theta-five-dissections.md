@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.theta_five_dissections
 ---
 
-# Theta five dissections
+# 5-dissections of Ramanujan's theta functions φ and ψ
 
-Lemma 10, 5-dissections of `φ` and `ψ`:
-`φ(q) = φ(q^25) + 2q f(q^15, q^35) + 2q^4 f(q^5, q^45)` and
-`ψ(q) = f(q^10, q^15) + q f(q^5, q^20) + q^3 ψ(q^25)`. The 5-dissection of `1/f_1` via the
-Rogers–Ramanujan continued fraction is not included.
+**5-dissections of Ramanujan's theta functions φ and ψ.** Let
+$f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's general theta
+function, $\varphi(q) = f(q, q)$ and $\psi(q) = f(q, q^3)$. As integer power series in $q$,
+$\varphi(q) = \varphi(q^{25}) + 2q f(q^{15}, q^{35}) + 2q^4 f(q^5, q^{45})$ and
+$\psi(q) = f(q^{10}, q^{15}) + q f(q^5, q^{20}) + q^3 \psi(q^{25})$.
+
+Lemma 10 of the source also gives a 5-dissection of $\prod_{m \ge 1} (1 - q^m)^{-1}$ via the
+Rogers–Ramanujan continued fraction; that part is not included.
 
 ## Depends on
 
-- [Ramanujan Theta Pow](ramanujan-theta-pow.md)
+- [Ramanujan's general theta function at powers of q](ramanujan-theta-pow.md)
 
 ## Sources
 

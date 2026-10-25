@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isMotzkinPrefix_iff
 ---
 
-# Is Motzkin Prefix iff
+# Unfolding the Motzkin prefix condition
 
-The defining clauses of `IsMotzkinPrefix`: nonnegative partial sums and endpoint
-height `h`.
+**Unfolding the Motzkin prefix condition.** Let $p = p_0 p_1 \cdots p_{n-1}$ be a word of
+length $n$ in the steps $D$, $F$, $U$, whose vertical displacements are $-1$, $0$ and $+1$, and let
+$h \in \mathbb{Z}$. Then $p$ is a Motzkin prefix ending at height $h$ if and only if, for every
+natural number $m \le n$, the sum of the displacements of $p_0, \dots, p_{m-1}$ is nonnegative,
+and the sum of the displacements of all $n$ steps is $h$.
 
 ## Depends on
 
-- [Is Motzkin Prefix](is-motzkin-prefix.md)
-- [Motzkin Step](motzkin-step.md)
+- [Motzkin prefix](is-motzkin-prefix.md)
+- [Height change of a Motzkin step](motzkin-step.md)
 
 ## Sources
 

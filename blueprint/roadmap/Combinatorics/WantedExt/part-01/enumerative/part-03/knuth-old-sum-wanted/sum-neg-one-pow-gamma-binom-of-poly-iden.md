@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_gammaBinom_of_poly_identity
 ---
 
-# Sum neg one pow gamma Binom of poly identity
+# Alternating companion of a generalized-binomial sum from a polynomial identity in $1+t$
 
-Equation (41), second identity: under the hypotheses of the first,
-`∑ g(k) (-1)^k 2^{-k} binom(2k+v, (2k+v)/2) binom(k+v, v/2)^{-1}
-= ∑_{k=⌊(s+1)/2⌋}^{⌊n/2⌋} f(2k) 2^{-2k} binom(2k,k) binom((2k+v)/2, v/2)^{-1}`.
+**Alternating companion of a generalized-binomial sum from a polynomial identity in $1+t$.**
+Write $\binom{u}{w} = \Gamma(u+1)/(\Gamma(w+1)\,\Gamma(u-w+1))$ for the generalized binomial
+coefficient of complex numbers $u$ and $w$. Let $s, n, m, r$ be natural numbers and let
+$f, g \colon \mathbb{N} \to \mathbb{C}$ satisfy
+
+$$\sum_{k=s}^{n} f(k)\,(1+t)^k = \sum_{k=m}^{r} g(k)\, t^k \quad \text{for all } t \in \mathbb{C}.$$
+
+Then for every real number $v > -1$,
+
+$$\sum_{k=m}^{r} g(k)\, \frac{(-1)^k}{2^k} \binom{2k+v}{(2k+v)/2} \binom{k+v}{v/2}^{-1}
+= \sum_{k=\lfloor (s+1)/2 \rfloor}^{\lfloor n/2 \rfloor} \frac{f(2k)}{2^{2k}} \binom{2k}{k}
+\binom{(2k+v)/2}{v/2}^{-1}.$$
 
 ## Depends on
 
-- [Gamma Binom](gamma-binom.md)
+- [Generalized binomial coefficient of complex arguments](gamma-binom.md)
 
 ## Sources
 

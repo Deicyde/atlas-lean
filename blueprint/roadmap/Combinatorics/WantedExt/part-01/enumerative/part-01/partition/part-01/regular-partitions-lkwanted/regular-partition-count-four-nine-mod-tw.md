@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.regularPartitionCount_four_nine_mod_twelve
 ---
 
-# Regular Partition Count four nine mod twelve
+# Congruences modulo $12$ for $b_{4,9}$ along powers of $2$
 
-For all `n ≥ 0` and `α ≥ 3`, `b_{4,9}(2^α n + 6 · 2^{α-3} + 1) ≡ 0 (mod 12)`.
+**Congruences modulo $12$ for $b_{4,9}$ along powers of $2$.** Let $b_{4,9}(n)$ be the
+number of partitions of $n$ with no part divisible by $4$ or by $9$. For all natural numbers
+$\alpha \ge 3$ and $n$, $b_{4,9}(2^\alpha n + 6 \cdot 2^{\alpha - 3} + 1) \equiv 0 \pmod{12}$.
 
 ## Depends on
 
-- [Regular Partition Count](regular-partition-count.md)
+- [Number of $(\ell, k)$-regular partitions](regular-partition-count.md)
 
 ## Sources
 

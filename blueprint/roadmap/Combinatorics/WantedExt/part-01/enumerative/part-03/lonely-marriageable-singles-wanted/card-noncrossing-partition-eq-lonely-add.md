@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_noncrossingPartition_eq_lonely_add_marriageable
 ---
 
-# Card noncrossing Partition eq lonely add marriageable
+# Noncrossing partitions split into lonely and marriageable singles partitions
 
-The number `C_n` of noncrossing partitions of `[n]` is `L_n + M_n`.
+**Noncrossing partitions split into lonely and marriageable singles partitions.** For every
+$n \ge 0$, the number $C_n$ of noncrossing partitions of $\{0, \dots, n-1\}$ equals $L_n + M_n$,
+where $M_n$ is the number of those that are marriageable singles partitions and $L_n$ is the
+number of those that are not.
 
 ## Depends on
 
-- [Lonely Singles Count](lonely-singles-count.md)
-- [Marriageable Singles Count](marriageable-singles-count.md)
+- [Number of lonely singles partitions](lonely-singles-count.md)
+- [Number of marriageable singles partitions](marriageable-singles-count.md)
 - [Noncrossing partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
 - [Crossing in a set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
 - [Noncrossing set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)

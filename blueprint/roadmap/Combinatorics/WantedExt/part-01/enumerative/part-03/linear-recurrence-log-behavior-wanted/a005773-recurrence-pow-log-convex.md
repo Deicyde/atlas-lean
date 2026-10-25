@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.a005773Recurrence_pow_logConvex
 ---
 
-# A005773 Recurrence pow log Convex
+# Log-convexity of $(n A_n)^n$ for A005773
 
-The sequence `(nⁿ A nⁿ)_{n ≥ 1} = ((n A n)ⁿ)_{n ≥ 1}` is log-convex:
-`z n ^ 2 ≤ z (n - 1) z (n + 1)` for every `n ≥ 2`.
+**Log-convexity of $(n A_n)^n$ for A005773.**
+Let $(A_n)_{n \ge 0}$ be a sequence of real numbers with $A_0 = A_1 = 1$ and
+$(n+1) A_{n+1} = 2(n+1) A_n + 3(n-1) A_{n-1}$ for every $n \ge 1$, and let
+$z_m = (m A_m)^m$. Then $z_n^2 \le z_{n-1} z_{n+1}$ for every $n \ge 2$; that is, the sequence
+$(n^n A_n^n)_{n \ge 1}$ is log-convex.
 
 ## Depends on
 

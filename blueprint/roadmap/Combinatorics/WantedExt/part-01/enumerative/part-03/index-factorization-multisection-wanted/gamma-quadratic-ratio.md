@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.gammaQuadraticRatio
 ---
 
-# Gamma Quadratic Ratio
+# The Gamma quadratic ratio
 
-The function `g(a, b, z) = b/(b - z) · Γ(a - √(a² - b)) Γ(a + √(a² - b)) /
-(Γ(a - √(a² - b + z)) Γ(a + √(a² - b + z)))`, with the principal complex square root (the value
-does not depend on the choice of root).
+**The Gamma quadratic ratio.** For complex numbers $a$, $b$ and $z$, the Gamma quadratic ratio
+is $g(a, b, z) = \dfrac{b}{b - z} \cdot
+\dfrac{\Gamma(a - \sqrt{a^2 - b})\, \Gamma(a + \sqrt{a^2 - b})}
+{\Gamma(a - \sqrt{a^2 - b + z})\, \Gamma(a + \sqrt{a^2 - b + z})}$, where $\sqrt{\cdot}$ is the
+principal complex square root (the value does not depend on the choice of root).
 
 ## Depends on
 

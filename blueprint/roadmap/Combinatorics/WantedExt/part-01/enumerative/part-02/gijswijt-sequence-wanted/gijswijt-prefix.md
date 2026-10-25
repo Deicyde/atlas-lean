@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.gijswijtPrefix
 ---
 
-# Gijswijt Prefix
+# Prefixes of the $m$th order Gijswijt sequence
 
-The first `n` terms of the `m`th order sequence `A^{(m)}`: each new term is
-`max(m, 𝒞(current prefix))` (for `m ≥ 1` this gives `A^{(m)}(1) = m`); `m = 1` is Gijswijt's
+**Prefixes of the $m$th order Gijswijt sequence.** Let $m$ and $n$ be natural numbers. The
+list of the first $n$ terms of the $m$th order sequence $A^{(m)}$ is defined by recursion on $n$:
+for $n = 0$ it is the empty list, and the list for $n + 1$ is the list $P$ for $n$ followed by
+the term $\max(m, \mathcal{C}(P))$, where $\mathcal{C}(P)$ is the curling number of $P$ (the
+largest $k$ with $P = XY^k$ for strings $X$, $Y$ with $Y$ nonempty, and $1$ for the empty string).
+For $m \ge 1$ the first term is therefore $A^{(m)}(1) = m$; the case $m = 1$ is Gijswijt's
 sequence.
 
 ## Depends on
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Curling Number](curling-number.md)
+- [Curling number](curling-number.md)
 
 ## Sources
 

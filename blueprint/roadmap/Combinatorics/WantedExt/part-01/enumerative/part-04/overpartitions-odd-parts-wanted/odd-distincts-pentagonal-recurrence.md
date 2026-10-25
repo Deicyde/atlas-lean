@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.oddDistincts_pentagonal_recurrence
 ---
 
-# Odd Distincts pentagonal recurrence
+# Pentagonal recurrence for partitions into distinct odd parts
 
-Recurrence for partitions into distinct odd parts: for `n ≥ 0`,
-`∑_{k ∈ ℤ} (-1)^k pdo(n - k(3k+1))` equals `(-1)^{⌈m/2⌉}` if `n = m(3m+1)/2` for some `m ∈ ℤ`
-and `0` otherwise; `⌈m/2⌉ = ⌊(m+1)/2⌋`.
+**Pentagonal recurrence for partitions into distinct odd parts.** Let $\operatorname{pdo}(m)$
+be the number of partitions of $m$ into distinct odd parts. For every $n \ge 0$, the sum
+$\sum_k (-1)^k \operatorname{pdo}(n - k(3k+1))$ over the integers $k$ with $k(3k+1) \le n$
+equals $(-1)^{\lceil m/2 \rceil}$ if $n = m(3m+1)/2$ for some integer $m$, and $0$ otherwise.
 
 ## Depends on
 

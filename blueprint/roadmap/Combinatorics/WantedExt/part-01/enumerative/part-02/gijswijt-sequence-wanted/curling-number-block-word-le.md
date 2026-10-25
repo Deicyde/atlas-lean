@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.curlingNumber_blockWord_le
 ---
 
-# Curling Number block Word le
+# Curling number of block words with small exponents
 
-For `m ≥ 1`, `u ≥ 2`, and `a_1, …, a_{u-1} ∈ {0, …, m}` with `a_1 ≠ 0`, the prefix
-`P = B_{u-1}^{a_{u-1}} ⋯ B_1^{a_1}` of `B_u^{(m+1)}` has `𝒞(P) ≤ m`.
+**Curling number of block words with small exponents.** Let $m \ge 1$ and $u \ge 2$, and let
+$a_1, \dots, a_{u-1} \in \{0, \dots, m\}$ with $a_1 \ne 0$. Writing $B_t = B_t^{(m+1)}$ for the
+blocks of the $(m+1)$th order Gijswijt sequence $A^{(m+1)}$, the string
+$P = B_{u-1}^{a_{u-1}} \cdots B_2^{a_2} B_1^{a_1}$ has curling number $\mathcal{C}(P) \le m$.
 
 ## Depends on
 
-- [Curling Number](curling-number.md)
-- [Gijswijt Block Word](gijswijt-block-word.md)
+- [Curling number](curling-number.md)
+- [Block words](gijswijt-block-word.md)
 
 ## Sources
 

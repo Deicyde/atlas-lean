@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.overcubicTripleCount_congruences_eight_mod_sixteen_args
 ---
 
-# Overcubic Triple Count congruences eight mod sixteen args
+# Congruences for overcubic partition triples at arguments congruent to 8 modulo 16
 
-For all `n, α ≥ 0`: `bt(64n+40) ≡ 0 (mod 8)`, `bt(576n+264) ≡ bt(576n+456) ≡ 0 (mod 8)`,
-and `bt(64·9^{α+2} n + 264·9^{α+1}) ≡ 0 (mod 8)`.
+**Congruences for overcubic partition triples at arguments congruent to 8 modulo 16.** Let
+$\mathrm{bt}(n)$ be the number of overcubic partition triples of $n$. For all natural numbers $n$
+and $\alpha$, each of $\mathrm{bt}(64n+40)$, $\mathrm{bt}(576n+264)$, $\mathrm{bt}(576n+456)$ and
+$\mathrm{bt}(64 \cdot 9^{\alpha+2} n + 264 \cdot 9^{\alpha+1})$ is divisible by $8$.
 
 ## Depends on
 
-- [Overcubic Triple Count](overcubic-triple-count.md)
+- [Number of overcubic partition triples](overcubic-triple-count.md)
 
 ## Sources
 

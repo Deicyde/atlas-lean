@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.partitionMaxRookNumber_five_three_two_one
 ---
 
-# Partition Max Rook Number five three two one
+# Max-rook number of the partition $(5, 3, 2, 1)$
 
-The partition `(5, 3, 2, 1)` of `11` has max-rook number `4`.
+**Max-rook number of the partition $(5, 3, 2, 1)$.** The partition $(5, 3, 2, 1)$ of $11$
+has max-rook number $4$.
 
 ## Depends on
 
-- [Partition Max Rook Number](partition-max-rook-number.md)
+- [Max-rook number of a partition](partition-max-rook-number.md)
 
 ## Sources
 

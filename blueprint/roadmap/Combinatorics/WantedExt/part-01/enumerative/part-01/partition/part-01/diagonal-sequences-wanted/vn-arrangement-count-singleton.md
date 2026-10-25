@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.vnArrangementCount_singleton
 ---
 
-# Vn Arrangement Count singleton
+# A singleton multiset has one $k$-vn-arrangement
 
-A one-element multiset has exactly one k-vn-arrangement.
+**A singleton multiset has one $k$-vn-arrangement.** For every natural number $k$ and every
+integer $a$, the one-element multiset $\{a\}$ has exactly one $k$-vn-arrangement.
 
 ## Depends on
 
-- [Vn Arrangement Count](vn-arrangement-count.md)
+- [Number of $k$-vn-arrangements](vn-arrangement-count.md)
 
 ## Sources
 

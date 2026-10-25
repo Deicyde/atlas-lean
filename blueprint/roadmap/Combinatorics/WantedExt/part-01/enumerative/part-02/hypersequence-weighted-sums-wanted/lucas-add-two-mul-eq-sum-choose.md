@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.lucas_add_two_mul_eq_sum_choose
 ---
 
-# Lucas add two mul eq sum choose
+# Lucas numbers as binomial sums
 
-Corollary 2: for `r ≥ 1`,
-`L_{n+2r} = ∑_{k=0}^{n} C(n + r - 1 - k, r - 1) L_k + ∑_{k=0}^{r-1} C(n + k, k) L_{2(r-k)-1}`,
-and the same with `∑_{k=0}^{n} C(r + k - 1, k) L_{n-k}` as first sum.
+**Lucas numbers as binomial sums.** Let $L_n$ denote the Lucas numbers. For every $r \ge 1$
+and every natural number $n$,
+
+$$L_{n+2r} = \sum_{k=0}^{n} \binom{n+r-1-k}{r-1} L_k +
+\sum_{k=0}^{r-1} \binom{n+k}{k} L_{2(r-k)-1}$$
+
+and
+
+$$L_{n+2r} = \sum_{k=0}^{n} \binom{r+k-1}{k} L_{n-k} +
+\sum_{k=0}^{r-1} \binom{n+k}{k} L_{2(r-k)-1}.$$
 
 ## Depends on
 

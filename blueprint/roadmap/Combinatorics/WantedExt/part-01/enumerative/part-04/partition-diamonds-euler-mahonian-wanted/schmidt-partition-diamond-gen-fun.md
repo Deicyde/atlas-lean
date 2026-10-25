@@ -17,7 +17,7 @@ coefficients of `qⁿ`, `n ≤ N`, of `∏_{m=1}^N (1 - q^m)^{d+1} · S(q)` and 
 
 ## Depends on
 
-- [Euler Mahonian](euler-mahonian.md)
+- [Euler–Mahonian polynomial](euler-mahonian.md)
 
 ## Sources
 

@@ -5,9 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.kBoxLongAscentGF
 ---
 
-# K Box Long Ascent GF
+# Long-ascent generating function of $k$-box paths
 
-`F́_k(t, x) = ∑_{n ≥ 1} ∑_{μ ∈ B_n^{(k)}} t^{longAscents(μ)} x^n` in `ℤ[t]⟦x⟧`.
+**Long-ascent generating function of $k$-box paths.** Let $B_n^{(k)}$ be the set of $k$-box
+paths of size $n$, and let $\mathrm{la}(\mu)$ be the number of long ascents of a path $\mu$. The
+long-ascent generating function of $k$-box paths is the power series
+
+$$
+\acute F_k(t, x) = \sum_{n \ge 1} \sum_{\mu \in B_n^{(k)}} t^{\mathrm{la}(\mu)} x^n
+$$
+
+in $\mathbb{Z}[t][[x]]$.
 
 ## Depends on
 
@@ -15,9 +23,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
-- [K Box Paths](k-box-paths.md)
-- [Skew Long Ascents](skew-long-ascents.md)
+- [Skew Dyck steps](skew-dyck-step.md)
+- [$k$-box paths](k-box-paths.md)
+- [Long ascents of a skew Dyck word](skew-long-ascents.md)
 
 ## Sources
 

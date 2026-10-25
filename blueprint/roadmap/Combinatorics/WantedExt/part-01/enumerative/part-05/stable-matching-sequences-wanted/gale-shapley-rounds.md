@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.galeShapleyRounds
 ---
 
-# Gale Shapley Rounds
+# Number of Gale–Shapley rounds
 
-The number of rounds of the men-proposing Gale–Shapley algorithm: the first
-`t` after which every man is provisionally engaged.
+**Number of Gale–Shapley rounds.** For a preference profile $P$ for $n$ men and $n$ women,
+the number of rounds of the men-proposing Gale–Shapley algorithm on $P$ is the least $t$ such
+that every man is provisionally engaged after $t$ rounds (or $0$ if there is no such $t$).
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
 
 ## Proof depends on
 
-- [GSEngaged](gsengaged.md)
-- [Gs Proposals](gs-proposals.md)
+- [Provisional engagement in the Gale–Shapley algorithm](gsengaged.md)
+- [Proposal counts in the Gale–Shapley algorithm](gs-proposals.md)
 
 ## Sources
 

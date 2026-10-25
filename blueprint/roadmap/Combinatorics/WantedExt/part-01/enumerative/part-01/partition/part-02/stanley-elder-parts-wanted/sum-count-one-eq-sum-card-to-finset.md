@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_count_one_eq_sum_card_toFinset
 ---
 
-# Sum count one eq sum card to Finset
+# Stanley's theorem
 
-Stanley's theorem: the total number of `1`s in the partitions of `n` equals the number of
-distinct parts of a partition of `n`, summed over all partitions of `n`.
+**Stanley's theorem.** For every natural number $n$, the total number of parts equal to $1$,
+counted with multiplicity, over all partitions of $n$ equals the sum, over all partitions
+$\lambda$ of $n$, of the number of distinct parts of $\lambda$.
 
 ## Depends on
 

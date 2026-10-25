@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.dyckLastPeakHeight_UDUUDD
 ---
 
-# Dyck Last Peak Height UDUUDD
+# Last peak height of UDUUDD
 
-The last peak of `UDUUDD` has height `2`.
+**Last peak height of UDUUDD.** The last peak of the Dyck path $UDUUDD$ has height $2$.
 
 ## Depends on
 
-- [Dyck Last Peak Height](dyck-last-peak-height.md)
+- [Height of the last peak](dyck-last-peak-height.md)
 
 ## Sources
 

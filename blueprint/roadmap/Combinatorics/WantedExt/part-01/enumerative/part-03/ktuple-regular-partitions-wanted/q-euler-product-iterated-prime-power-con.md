@@ -5,16 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.qEulerProduct_iterated_primePower_congruence
 ---
 
-# Q Euler Product iterated prime Power congruence
+# Iterated prime-power congruence for Euler products
 
-Lemma 7: for prime `p`, positive `l,s,m`, and `s ≤ k`, the displayed powers of
-`f_l` and `f_{lp^s}` are coefficientwise congruent modulo `p^(k-s+1)`.  The paper's
-display uses but its sentence omits `m`; this formalization explicitly quantifies the
-requested positive natural `m`.  `s ≤ k` expresses `k-s ≥ 0` and, with `0 < s`, gives the
-paper's `k ≥ 1`.  It follows by iterating Lemma 6, which is
-`qEulerProduct_pow_prime_pow_congruence`; that statement is itself only a `theorem_wanted` (a
-`ProofWanted` marker with no proof term), so Lemma 7 cannot yet be derived as an ordinary
-theorem and stays a wanted statement.
+**Iterated prime-power congruence for Euler products.** For a natural number $l$ write
+$f_l = \prod_{i \ge 1} (1 - q^{li})$, an integer power series in $q$. Let $p$ be a prime and let
+$k, l, s, m$ be natural numbers with $l \ge 1$, $s \ge 1$, $m \ge 1$ and $s \le k$. Then for
+every natural number $n$, the coefficients of $q^n$ in $f_l^{p^k m}$ and in
+$f_{l p^s}^{p^{k-s} m}$ are congruent modulo $p^{k-s+1}$.
 
 ## Depends on
 

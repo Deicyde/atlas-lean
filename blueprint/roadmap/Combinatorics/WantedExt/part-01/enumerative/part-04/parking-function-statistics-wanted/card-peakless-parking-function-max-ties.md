@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.card_peakless_parkingFunction_max_ties
 ---
 
-# Card peakless parking Function max ties
+# Peakless parking functions with $n - 1$ ties
 
-For `n ≥ 1`, exactly one parking function of length `n` has no peaks and `n - 1` ties.
+**Peakless parking functions with $n - 1$ ties.** For every $n \ge 1$, exactly one parking
+function $(a_1, \dots, a_n)$ of length $n$ has no peaks (no $i$ with $a_{i-1} < a_i$ and
+$a_i > a_{i+1}$) and exactly $n - 1$ ties (indices $i \in \{1, \dots, n - 1\}$ with
+$a_i = a_{i+1}$).
 
 ## Depends on
 

@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsModEq
 ---
 
-# Sum Distinct Parts Mod Eq
+# Sum of different parts congruent to $r$ modulo $m$
 
-`a_{r,m}(n)`: the sum of all different parts congruent to `r` modulo `m` in all
-partitions of `n`; a part `x ≡ r (mod m)` of a partition contributes `x` once regardless of
-its multiplicity. Used with `0 ≤ r < m`, where `x ≡ r (mod m)` is `x % m = r`.
+**Sum of different parts congruent to $r$ modulo $m$.** For natural numbers $m$, $r$, $n$,
+$a_{r,m}(n)$ is the sum, over all partitions $\mu$ of $n$, of the different parts $x$ of $\mu$
+with $x \bmod m = r$; a part contributes $x$ once regardless of its multiplicity. It is used
+with $0 \le r < m$, where $x \bmod m = r$ means $x \equiv r \pmod m$.
 
 ## Depends on
 

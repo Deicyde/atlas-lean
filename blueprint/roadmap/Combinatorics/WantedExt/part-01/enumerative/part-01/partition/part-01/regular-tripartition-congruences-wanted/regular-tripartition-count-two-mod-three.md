@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.regularTripartitionCount_two_mod_three_six
 ---
 
-# Regular Tripartition Count two mod three six
+# Congruences modulo 3 and 6 for 2-regular tripartitions
 
-`T_2(3n + 1) ≡ 0 (mod 3)` and `T_2(3n + 2) ≡ 0 (mod 6)` for all `n ≥ 0`.
+**Congruences modulo 3 and 6 for 2-regular tripartitions.** Let $T_2(m)$ be the number of
+$2$-regular tripartitions of $m$. For every natural number $n$, $3 \mid T_2(3n + 1)$ and
+$6 \mid T_2(3n + 2)$.
 
 ## Depends on
 
-- [Regular Tripartition Count](regular-tripartition-count.md)
+- [Regular tripartition counts](regular-tripartition-count.md)
 
 ## Sources
 

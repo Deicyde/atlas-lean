@@ -5,16 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.ccoAllowed_eq_sum
 ---
 
-# Proposition 1
+# Double-sum formula for n-color compositions with two consecutive colors
 
-**Proposition 1**, direct formula:
-`cco_{b,b+1}(n) = ∑_{m=1}^n ∑_{i=0}^{n-bm}
-\binom{i+m-1}{m-1} \binom{m}{n-bm-i}` (terms with `bm + i > n`
-contribute `0`).
+**Double-sum formula for n-color compositions with two consecutive colors.** Let $b \ge 1$
+and $n \ge 1$ be natural numbers, and let $\operatorname{cco}_{b,b+1}(n)$ be the number of
+$n$-color compositions of $n$ in which every part has color $b$ or $b+1$. Then
+
+$$\operatorname{cco}_{b,b+1}(n) = \sum_{m=1}^{n} \sum_{i=0}^{n-bm}
+\binom{i+m-1}{m-1} \binom{m}{n-bm-i},$$
+
+where the upper limit $n - bm$ is read as $0$ when $bm > n$, and every term with $bm + i > n$
+is $0$.
 
 ## Depends on
 
-- [Cco Allowed](cco-allowed.md)
+- [Count of n-color compositions with two consecutive colors](cco-allowed.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.SatisfiesPoly
 ---
 
-# Satisfies Poly
+# Sequences satisfying a polynomial
 
-A sequence `(a_n)` satisfies the polynomial `P = c_0 + c_1 x + ⋯ + c_r x^r` (with
-`r = natDegree P`) if `c_0 a_n + c_1 a_{n-1} + ⋯ + c_r a_{n-r} = 0` for all `n ≥ r`.
+**Sequences satisfying a polynomial.** Let $P = c_0 + c_1 x + \dots + c_r x^r$ be a real
+polynomial, where $r$ is the degree of $P$ (and $r = 0$ for $P = 0$). A real sequence
+$(a_n)_{n \ge 0}$ satisfies $P$ if $c_0 a_n + c_1 a_{n-1} + \dots + c_r a_{n-r} = 0$ for every
+$n \ge r$.
 
 ## Depends on
 

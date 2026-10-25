@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.zuritaSCoeff
 ---
 
-# Zurita SCoeff
+# Coefficients of Zurita's polynomial $S_n$
 
-The coefficients `s_k` of `S_n(x) = ∑_{k=0}^n s_k x^k`: `s_0 = 1/(1/2 - n)` and
-`s_k = (k - 1 - n)/(k - n + 1/2) · s_{k-1}` for `1 ≤ k ≤ n`.
+**Coefficients of Zurita's polynomial $S_n$.** For a natural number $n$, the rational numbers
+$s_0, s_1, s_2, \dots$ are defined by $s_0 = 1/(1/2 - n)$ and
+$s_k = \frac{k - 1 - n}{k - n + 1/2}\, s_{k-1}$ for every $k \ge 1$. Their first $n + 1$ terms are
+the coefficients of $S_n(x) = \sum_{k=0}^{n} s_k x^k$.
 
 ## Depends on
 

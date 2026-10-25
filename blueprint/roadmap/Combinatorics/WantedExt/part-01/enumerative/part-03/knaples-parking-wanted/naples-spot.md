@@ -5,13 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.naplesSpot
 ---
 
-# Naples Spot
+# The $k$-Naples rule
 
-The spot taken under the `k`-Naples rule on the spots `1, …, n` by a car preferring `a`
-when the spots in `occ` are occupied: `a` if free; otherwise the first free spot among
-`a - 1, …, a - k` (checked in decreasing order, spots `≥ 1`); otherwise the first free spot
-after `a` (up to `n`); `none` if the car cannot park, including when `a` is not one of the
-spots `1, …, n`.
+**The $k$-Naples rule.** On the spots $1, \dots, n$, when the spots in a list $O$ of natural
+numbers are occupied, a car preferring $a$ parks in $a$ if $a$ is free; otherwise in the first
+free spot among those of $a - 1, \dots, a - k$ that are at least $1$, checked in decreasing
+order; otherwise in the first free spot among $a + 1, \dots, n$, checked in increasing order.
+The car cannot park if none of these is free, or if $a$ is not one of the spots $1, \dots, n$.
 
 ## Depends on
 

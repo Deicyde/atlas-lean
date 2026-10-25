@@ -6,15 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.sumDistinctParts_small_values
 ---
 
-# Sum Distinct Parts small values
+# Small values of Merca's distinct-part sums
 
-Characteristic values: `a_{r,m}(0) = s_m(0) = 0` (the empty partition has no parts), and
-for the single partition `1` of `1`: `a_{0,1}(1) = s_1(1) = 1`, `s_2(1) = 0`.
+**Small values of Merca's distinct-part sums.** For natural numbers $m$, $r$ and $n$, let
+$a_{r,m}(n)$ be the sum, over all partitions of $n$, of the different parts $x$ of the partition
+with $x \bmod m = r$, and let $s_m(n)$ be the sum, over all partitions of $n$, of the different
+parts that occur at least $m$ times in the partition; each such part counts once per partition.
+Then $a_{r,m}(0) = 0$ and $s_m(0) = 0$ for all $m$ and $r$, and moreover $a_{0,1}(1) = 1$,
+$s_1(1) = 1$ and $s_2(1) = 0$.
+
+The empty partition of $0$ has no parts, and $1$ has the single partition $1$.
 
 ## Depends on
 
-- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
-- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
+- [Sum of different parts congruent to $r$ modulo $m$](sum-distinct-parts-mod-eq.md)
+- [Sum of different parts appearing at least $m$ times](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

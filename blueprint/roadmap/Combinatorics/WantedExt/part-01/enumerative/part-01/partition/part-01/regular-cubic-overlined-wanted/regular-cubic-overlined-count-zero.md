@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.regularCubicOverlinedCount_zero
 ---
 
-# Regular Cubic Overlined Count zero
+# Constant term of the overlined ℓ-regular cubic partition numbers
 
-`a_ℓ(0) = 1` for `ℓ ≥ 1`.
+**Constant term of the overlined ℓ-regular cubic partition numbers.** For every natural number
+$\ell \ge 1$, the coefficient $a_\ell(0)$ of $q^0$ in the generating function of $\ell$-regular
+cubic partitions with odd parts overlined equals $1$.
 
 ## Depends on
 
-- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
+- [ℓ-regular cubic partitions with odd parts overlined](regular-cubic-overlined-count.md)
 
 ## Proof depends on
 
 - [Constant term of the Euler products](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
-- [Regular Cubic Overlined Count generating Function](regular-cubic-overlined-count-generating.md)
+- [Generating function for $\ell$-regular cubic partitions with odd parts overlined](regular-cubic-overlined-count-generating.md)
 
 ## Sources
 

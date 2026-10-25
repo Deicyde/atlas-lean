@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.squareTorus_r3_odd
 ---
 
-# Square Torus r3 odd
+# Fixed tilings of the odd square torus under a three-quarter turn
 
-The odd-`n` `r³` square-torus formula equals the corresponding `r` formula.  It is stated
-with the actual cell map and its own permutation `σ`, whose fourth power is the identity;
-`tileFixedCount σ 1` is the fixed count of the represented `r³` action.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Fixed tilings of the odd square torus under a three-quarter turn.** Let $n$ be an odd
+positive integer, $T$ a finite set of tile designs and $\sigma$ a permutation of $T$ with
+$\sigma^4 = 1$, and write $t_1$ for the number of designs $d \in T$ with $\sigma(d) = d$. Let $S$
+be the torus shift sum of the three-quarter-turn cell map $r^3(x, y) = (y, -1-x)$ on
+$(\mathbb{Z}/n\mathbb{Z})^2$, that is, the sum over all shifts
+$(a, b) \in (\mathbb{Z}/n\mathbb{Z})^2$ of the number of tilings
+$F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(r^3(c + (a, b))) = \sigma(F(c))$ for every cell
+$c$. Then $S = n^2 \, |T|^{(n^2-1)/4} \, t_1$.
 
 ## Depends on
 
-- [Cell R3](cell-r3.md)
-- [Tile Fixed Count](tile-fixed-count.md)
-- [Torus Shift Sum](torus-shift-sum.md)
+- [Cell map of the three-quarter turn r³](cell-r3.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
+- [Torus shift sum](torus-shift-sum.md)
 
 ## Sources
 

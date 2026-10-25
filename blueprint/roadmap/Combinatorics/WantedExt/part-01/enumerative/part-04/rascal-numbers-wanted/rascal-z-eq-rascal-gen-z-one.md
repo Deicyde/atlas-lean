@@ -5,16 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.rascalZ_eq_rascalGenZ_one
 ---
 
-# Theorem 1
+# Rascal numbers count binary words with at most one ascent
 
-**Theorem 1**: `R_{n,k} = b_k(n)` for all integers
-`n, k`, where `b_k(n) = |B_k(n)|` counts the binary words of
-length `n` with exactly `k` ones and at most one ascent.
+**Rascal numbers count binary words with at most one ascent.** For all integers $n$ and $k$,
+$R_{n,k} = b_k(n)$, where $R_{n,k}$ is the Rascal number and $b_k(n)$ is the number of binary
+words of length $n$ with exactly $k$ ones and at most one ascent (taken to be $0$ unless
+$0 \le k \le n$).
 
 ## Depends on
 
-- [Rascal Gen Z](rascal-gen-z.md)
-- [Rascal Z](rascal-z.md)
+- [Generalized Rascal numbers at integer indices](rascal-gen-z.md)
+- [Rascal numbers on the integers](rascal-z.md)
 
 ## Sources
 

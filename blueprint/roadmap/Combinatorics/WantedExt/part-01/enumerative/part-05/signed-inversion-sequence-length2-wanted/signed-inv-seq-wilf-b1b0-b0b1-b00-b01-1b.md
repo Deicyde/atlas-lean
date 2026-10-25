@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.signedInvSeq_wilf_b1b0_b0b1_b00_b01_1b0
 ---
 
-# Theorem 13
+# Mansour–Safadi Theorem 13: a Wilf-equivalence of five-pattern sets
 
-**Theorem 13.** `{1̄0̄, 0̄1̄, 0̄0, 0̄1, 10̄}` ∼ `{1̄0̄, 0̄1̄, 0̄0̄, 0̄1, 10̄}`.
+**Mansour–Safadi Theorem 13: a Wilf-equivalence of five-pattern sets.** Length-2 signed
+patterns are written as in the paper, a bar marking a barred letter, and $B \sim C$ means that
+for every $n \ge 0$ the number $|\bar I_n(B)|$ of signed inversion sequences of length $n$
+avoiding every pattern of $B$ equals $|\bar I_n(C)|$. Then
+$\{\bar1\bar0, \bar0\bar1, \bar00, \bar01, 1\bar0\} \sim
+\{\bar1\bar0, \bar0\bar1, \bar0\bar0, \bar01, 1\bar0\}$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
-- [Signed Inv Avoid Count](signed-inv-avoid-count.md)
+- [Length-2 signed pattern](signed-pattern2.md)
+- [Number of signed inversion sequences avoiding a set of patterns](signed-inv-avoid-count.md)
 
 ## Sources
 

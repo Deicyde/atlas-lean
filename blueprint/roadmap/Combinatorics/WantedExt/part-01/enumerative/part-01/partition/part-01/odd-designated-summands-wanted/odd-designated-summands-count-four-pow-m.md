@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.oddDesignatedSummandsCount_four_pow_mul_six_mul_add_five
 ---
 
-# Odd Designated Summands Count four pow mul six mul add five
+# $PD_2(4^\alpha (6n+5))$ is divisible by 4
 
-For all `α, n ≥ 0`, `PD_2(4^α (6n + 5)) ≡ 0 (mod 4)`.
+**$PD_2(4^\alpha (6n+5))$ is divisible by 4.** Let $PD_2(n)$ be the number of partitions of $n$
+with designated summands in which every part is odd. For all $\alpha \ge 0$ and $n \ge 0$,
+$PD_2(4^\alpha (6n + 5)) \equiv 0 \pmod 4$.
 
 ## Depends on
 
-- [Odd Designated Summands Count](odd-designated-summands-count.md)
+- [The odd designated-summand partition function](odd-designated-summands-count.md)
 
 ## Sources
 

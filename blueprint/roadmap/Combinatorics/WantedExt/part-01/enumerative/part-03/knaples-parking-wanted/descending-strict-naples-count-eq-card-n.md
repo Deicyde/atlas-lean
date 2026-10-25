@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.descendingStrictNaplesCount_eq_card_noncrossingPartition
 ---
 
-# Descending Strict Naples Count eq card noncrossing Partition
+# Descending strictly $k$-Naples parking functions and noncrossing partitions
 
-Proposition 7: for `k ≥ 1`, descending strictly `k`-Naples parking functions with `n` cars
-are equinumerous with noncrossing partitions of `[n + k + 1]` (here `Fin (n + k + 1)`) whose
-block containing the first element has exactly `2k + 2` elements.
+**Descending strictly $k$-Naples parking functions and noncrossing partitions.** For every
+$n$ and every $k \ge 1$, the number of descending strictly $k$-Naples parking functions of
+length $n$ (descending preferences that are $k$-Naples but not $(k - 1)$-Naples) equals the
+number of noncrossing partitions of $\{0, 1, \dots, n + k\}$ in which the block containing $0$
+has exactly $2k + 2$ elements.
 
 ## Depends on
 
-- [Descending Strict Naples Count](descending-strict-naples-count.md)
+- [Number of descending strictly $k$-Naples parking functions](descending-strict-naples-count.md)
 - [Noncrossing partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
 - [Crossing in a set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
 - [Noncrossing set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)

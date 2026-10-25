@@ -5,19 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.squareTorus_r3f
 ---
 
-# Square Torus r3f
+# Fixed tilings of the square torus under the anti-diagonal reflection
 
-The `r³f` square-torus formula has the same odd/even divisor split as `rf`, with the actual
-`cellR3F` map and `t_{r³f}` represented by `tileFixedCount σ 1`.  The hypothesis `σ²=1` records
-the reflection order on every tile set.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Fixed tilings of the square torus under the anti-diagonal reflection.** Let $n$ be a
+positive integer, $T$ a finite set of tile designs and $\sigma$ a permutation of $T$ with
+$\sigma^2 = 1$; write $t_1$ for the number of designs $d \in T$ with $\sigma(d) = d$, and let
+$\varphi$ be Euler's totient function. Let $S$ be the torus shift sum of the cell map
+$g(x, y) = (-1-y, -1-x)$ of $r^3 f$ on $(\mathbb{Z}/n\mathbb{Z})^2$, that is, the sum over all
+shifts $(a, b) \in (\mathbb{Z}/n\mathbb{Z})^2$ of the number of tilings
+$F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(g(c + (a, b))) = \sigma(F(c))$ for every cell $c$.
+Then $S = n \left(\sum_{d \mid n,\ d \text{ odd}} \varphi(d) \, |T|^{(n^2-n)/(2d)} \, t_1^{n/d} +
+\sum_{d \mid n,\ d \text{ even}} \varphi(d) \, |T|^{n^2/(2d)}\right)$.
 
 ## Depends on
 
-- [Cell R3 F](cell-r3-f.md)
-- [Tile Fixed Count](tile-fixed-count.md)
-- [Torus Shift Sum](torus-shift-sum.md)
+- [Cell map of the antidiagonal reflection r³f](cell-r3-f.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
+- [Torus shift sum](torus-shift-sum.md)
 
 ## Sources
 

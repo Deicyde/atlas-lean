@@ -5,17 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.regularOverpartition_mod_four_progression
 ---
 
-# Regular Overpartition mod four progression
+# $\ell$-regular overpartitions vanish modulo $4$ on progressions modulo $4\ell$
 
-If `ℓ ≡ 3 (mod 4)` and natural `j` is not congruent to
-`(ℓ - 3) / 4` modulo `ℓ`, then `A_ℓ(4ℓn + 4j + 3)` is zero modulo
-four. The unused `k ≥ 0` occurring in the extraction is omitted. Natural
-subtraction and division formalize the displayed quotient; the congruence
-hypothesis ensures the intended positive case.
+**$\ell$-regular overpartitions vanish modulo $4$ on progressions modulo $4\ell$.** For a
+natural number $\ell$, let $A_\ell(m)$ be the number of overpartitions of $m$ with no part
+divisible by $\ell$. Let $\ell \equiv 3 \pmod 4$, and let $n$ and $j$ be natural numbers with
+$j \not\equiv (\ell - 3)/4 \pmod{\ell}$. Then $A_\ell(4\ell n + 4j + 3) \equiv 0 \pmod 4$.
 
 ## Depends on
 
-- [Regular Overpartition Count](regular-overpartition-count.md)
+- [Number of $\ell$-regular overpartitions](regular-overpartition-count.md)
 
 ## Sources
 

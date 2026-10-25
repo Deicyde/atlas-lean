@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.phiFiveCoreAnalog_congruences
 ---
 
-# Phi Five Core Analog congruences
+# Congruences for the $\varphi$-analog of the 5-core counts
 
-Corollary 3: `ā_5(20n+6) ≡ ā_5(20n+14) ≡ 0 (mod 10)` and, for `k ≥ 2`,
-`4 ā_5(5^k n) ≡ 5 ā_5(n) - ā_5(5n) (mod 5^k)`.
+**Congruences for the $\varphi$-analog of the 5-core counts.** Let
+$\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ and let $\bar a_5(n)$ be the coefficient of $q^n$
+in $\varphi(-q^5)^5 / \varphi(-q)$. For every natural number $k \ge 2$ and every natural number
+$n$, $\bar a_5(20n+6) \equiv 0 \pmod{10}$, $\bar a_5(20n+14) \equiv 0 \pmod{10}$ and
+$4\, \bar a_5(5^k n) \equiv 5\, \bar a_5(n) - \bar a_5(5n) \pmod{5^k}$.
 
 ## Depends on
 
-- [Phi Five Core Analog](phi-five-core-analog.md)
+- [The φ-analog of the 5-core partition function](phi-five-core-analog.md)
 
 ## Sources
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.f3_cube_div_f1_sub
 ---
 
-# F3 cube div f1 sub
+# 2-dissection of $f_3^3 / f_1$
 
-`f_3^3 / f_1 - q f_12^3 / f_4 = f_4^3 f_6^2 / (f_2^2 f_12)`, stated with denominators cleared
-(both sides multiplied by the product of all denominators).
+**2-dissection of $f_3^3 / f_1$.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ denote the
+Euler products in $\mathbb{Z}[[q]]$. Then
+$f_2^2 f_3^3 f_4 f_{12} - q f_1 f_2^2 f_{12}^4 = f_1 f_4^4 f_6^2$.
+
+Since each $f_k$ with $k \ge 1$ has constant term $1$, dividing both sides by
+$f_1 f_2^2 f_4 f_{12}$ shows that this is equivalent to
+$f_3^3 / f_1 - q f_{12}^3 / f_4 = f_4^3 f_6^2 / (f_2^2 f_{12})$.
 
 ## Depends on
 

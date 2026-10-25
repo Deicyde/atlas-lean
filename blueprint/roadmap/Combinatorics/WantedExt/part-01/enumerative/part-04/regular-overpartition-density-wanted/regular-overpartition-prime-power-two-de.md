@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.regularOverpartition_prime_power_two_density
 ---
 
-# Regular Overpartition prime power two density
+# $p$-regular overpartitions are almost always divisible by $2^j$
 
-If `p` is an odd prime and `j ≥ 1`, the natural density of natural numbers
-`n ≤ X` for which `2ʲ ∣ A_p(n)` tends to one. The numerator uses
-`Finset.range (X + 1)`, exactly encoding `0 ≤ n ≤ X`, while the denominator
-is the paper's `X`.
+**$p$-regular overpartitions are almost always divisible by $2^j$.** Let $p$ be an odd prime,
+let $j \ge 1$, and let $A_p(n)$ be the number of overpartitions of $n$ with no part divisible by
+$p$. Then
+
+$$\lim_{X \to \infty} \frac{\#\{n : 0 \le n \le X,\ 2^j \mid A_p(n)\}}{X} = 1,$$
+
+where $X$ runs over the natural numbers.
 
 ## Depends on
 
-- [Regular Overpartition Count](regular-overpartition-count.md)
+- [Number of $\ell$-regular overpartitions](regular-overpartition-count.md)
 
 ## Sources
 

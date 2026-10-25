@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.det_alphaUpperMatrix
 ---
 
-# Det alpha Upper Matrix
+# Determinant of the α-upper matrix
 
-Lemma 1, determinant: `det 𝖴_α(n) = ∏_{i=1}^n α_i^{i-1}`.
+**Determinant of the α-upper matrix.** Let $R$ be a commutative ring and let $\alpha$ be a
+sequence in $R$. For every $n \ge 0$, the determinant of the $n \times n$ α-upper matrix
+$\mathsf{U}_\alpha(n)$ is $\det \mathsf{U}_\alpha(n) = \prod_{i=1}^{n} \alpha_i^{i-1}$.
 
 ## Depends on
 
-- [Alpha Upper Matrix](alpha-upper-matrix.md)
+- [The α-upper matrix](alpha-upper-matrix.md)
 
 ## Sources
 

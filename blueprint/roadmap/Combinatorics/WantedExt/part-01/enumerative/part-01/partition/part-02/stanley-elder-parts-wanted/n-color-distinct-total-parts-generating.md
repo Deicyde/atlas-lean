@@ -5,16 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.nColor_distinctTotalParts_generatingFunction
 ---
 
-# N Color distinct Total Parts generating Function
+# Generating functions for the parts of distinct $n$-color partitions
 
-Theorem 8: with `C_o(D, m)` (resp. `C_e(D, m)`) the total number of parts over the `n`-color
-partitions of `m` into an odd (resp. even) number of distinct colored parts,
-`∑_{m ≥ 1} m q^m / (1 ± q^m) = (∏_{m ≥ 1} (1 ± q^m)^m)⁻¹ ∑_{m ≥ 1} (C_o(D, m) ± C_e(D, m)) q^m`;
-both sign choices, as a conjunction (upper signs first).
+**Generating functions for the parts of distinct $n$-color partitions.** Call an $n$-color
+partition distinct when no colored part occurs more than once, and let $C_o(D, m)$ (resp.
+$C_e(D, m)$) be the total number of parts over the distinct $n$-color partitions of $m$ with an
+odd (resp. even) number of parts. Then, as formal power series in $q$ over $\mathbb{Q}$, with
+infinite sums and products taken coefficientwise, both
+
+$$
+\sum_{m \ge 1} \frac{m q^m}{1 + q^m} =
+\Big(\prod_{m \ge 1} (1 + q^m)^m\Big)^{-1} \sum_{m \ge 0} \big(C_o(D, m) + C_e(D, m)\big) q^m
+$$
+
+and
+
+$$
+\sum_{m \ge 1} \frac{m q^m}{1 - q^m} =
+\Big(\prod_{m \ge 1} (1 - q^m)^m\Big)^{-1} \sum_{m \ge 0} \big(C_o(D, m) - C_e(D, m)\big) q^m
+$$
+
+hold.
 
 ## Depends on
 
-- [N Color Partitions](n-color-partitions.md)
+- [n-color partitions](n-color-partitions.md)
 
 ## Sources
 

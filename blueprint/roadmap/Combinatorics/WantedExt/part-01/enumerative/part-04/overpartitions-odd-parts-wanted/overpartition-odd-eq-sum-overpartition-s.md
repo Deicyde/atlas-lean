@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOdd_eq_sum_overpartition_square
 ---
 
-# Overpartition Odd eq sum overpartition square
+# Overpartitions into odd parts from overpartitions and squares
 
-For `n ≥ 0`, `po(n) = ∑_{k ∈ ℤ} (-1)^k p̄(n - 2k²)`, where `p̄(m) = Nat.card
-(Nat.Overpartition m)` is the overpartition function; only `|k| ≤ n` can contribute. The
-extracted record shows `p`; the overline is displayed in the arXiv version (Theorem 3.3, whose
-proof uses the overpartition generating function (1.1)), and with the ordinary partition
-function the identity fails at `n = 1` (`po(1) = 2`, `p(1) = 1`).
+**Overpartitions into odd parts from overpartitions and squares.** Let $\mathrm{po}(m)$
+be the number of overpartitions of $m$ into odd parts and $\overline{p}(m)$ the number of
+overpartitions of $m$. For every natural number $n$,
+$\mathrm{po}(n) = \sum_k (-1)^k \, \overline{p}(n - 2k^2)$, the sum running over the
+integers $k$ with $2k^2 \le n$.
+
+With the partition function $p$ in place of $\overline{p}$ the identity fails at $n = 1$:
+$\mathrm{po}(1) = 2$ but $p(1) = 1$.
 
 ## Depends on
 
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 - [Overpartition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources

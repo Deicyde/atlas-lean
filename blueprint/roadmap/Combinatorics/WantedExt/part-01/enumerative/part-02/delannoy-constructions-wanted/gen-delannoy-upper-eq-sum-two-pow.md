@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.DelannoyConstructions.genDelannoyUpper_eq_sum_two_pow
 ---
 
-# Gen Delannoy Upper eq sum two pow
+# Powers-of-two formula for the upper generalized Delannoy numbers
 
-`D^k(m, n) = ∑_{j=0}^{min(m, n)} C(m + k, j + k) C(n, j) 2^j`.
+**Powers-of-two formula for the upper generalized Delannoy numbers.**
+For natural numbers $k$, $m$ and $n$, write
+$D^k(m, n) = \sum_{j=0}^{n} \binom{m + n + k - j}{n + k} \binom{n}{j}$ for the upper
+generalized Delannoy numbers. For all natural numbers $k$, $m$ and $n$,
+
+$$D^k(m, n) = \sum_{j=0}^{\min(m, n)} \binom{m + k}{j + k} \binom{n}{j} 2^j.$$
 
 ## Depends on
 
-- [Gen Delannoy Upper](gen-delannoy-upper.md)
+- [Generalized Delannoy number with upper index](gen-delannoy-upper.md)
 
 ## Sources
 

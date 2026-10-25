@@ -5,19 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.generalizedEulerianP_neg_one
 ---
 
-# Corollary 8
+# Generalized Eulerian polynomials at $x = -1$, $y = 1$
 
-**Corollary 8.** `P_{2n+1}(q, t; -1) = 0` and
-`(-1)^n P_{2n}(q, t; -1) = ∑_{w ∈ D_{2n}} q^(cyc w) (-1)^(n - exc w)
-= ∑_{w ∈ D_{2n}, exc w = n, dexc w = 0} q^(cyc w)`, where `P_m(q, t; -1) = P_m(q, t; -1, 1)` and
-`D_{2n}` is the set of derangements (`fix w = 0`); `(-1)^(n - exc w)` is an integer power.
+**Generalized Eulerian polynomials at $x = -1$, $y = 1$.** Let $P_m(q, t; x, y)$ be the
+generalized Eulerian polynomial. For a permutation $w$ write $\mathrm{cyc}(w)$ for its number of
+cycles (fixed points counted as cycles), $\mathrm{exc}(w)$ for its number of excedances (points
+$i$ with $w(i) > i$) and $\mathrm{dexc}(w)$ for its number of double excedances, and let $D_{2n}$
+be the set of derangements (permutations without fixed points) of $\{0, 1, \dots, 2n-1\}$. Then
+for all rational numbers $q, t$ and every $n \ge 0$, $P_{2n+1}(q, t; -1, 1) = 0$ and
+
+$$
+(-1)^n P_{2n}(q, t; -1, 1) = \sum_{w \in D_{2n}} q^{\mathrm{cyc}(w)} (-1)^{n - \mathrm{exc}(w)}
+= \sum_{w \in D_{2n},\ \mathrm{exc}(w) = n,\ \mathrm{dexc}(w) = 0} q^{\mathrm{cyc}(w)},
+$$
+
+where the exponent $n - \mathrm{exc}(w)$ is an integer, possibly negative.
 
 ## Depends on
 
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Double Excedance Count](double-excedance-count.md)
+- [Number of double excedances](double-excedance-count.md)
 - [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Generalized Eulerian P](generalized-eulerian-p.md)
+- [Generalized Eulerian polynomials](generalized-eulerian-p.md)
 
 ## Sources
 

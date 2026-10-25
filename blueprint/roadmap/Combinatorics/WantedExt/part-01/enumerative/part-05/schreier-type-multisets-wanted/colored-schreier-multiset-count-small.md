@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.coloredSchreierMultisetCount_small
 ---
 
-# Colored Schreier Multiset Count small
+# Small values of the colored Schreier multiset count
 
-`|B^{(2)}_{1,4}| = 6` and `|B^{(2)}_{2,5}| = 3` (Table 2 of the paper).
+**Small values of the colored Schreier multiset count.** The numbers of colored Schreier-type
+multisets satisfy $|B^{(2)}_{1,4}| = 6$ and $|B^{(2)}_{2,5}| = 3$ (Table 2 of the paper).
 
 ## Depends on
 
-- [Colored Schreier Multiset Count](colored-schreier-multiset-count.md)
+- [Counting colored Schreier-type multisets](colored-schreier-multiset-count.md)
 
 ## Sources
 

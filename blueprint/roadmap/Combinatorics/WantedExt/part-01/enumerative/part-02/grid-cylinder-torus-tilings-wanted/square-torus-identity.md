@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.squareTorus_identity
 ---
 
-# Square Torus identity
+# Square-torus fixed points of the identity
 
-The square-torus identity formula is the specialization of Theorem 34 to `m=n`, expressed as
-the paper's double divisor sum.  `σ^1=1` marks the identity design action in every `D₈`-set.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Square-torus fixed points of the identity.** Let $n$ be a positive integer, let $T$ be a
+finite set of tile designs, and let $\sigma$ be the identity permutation of $T$. Let $S$ be the
+sum, over all shifts $v \in (\mathbb{Z}/n\mathbb{Z})^2$, of the number of tilings
+$F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(c + v) = \sigma(F(c))$ for every cell $c$. Then
+$S = \sum_{d_1 \mid n} \sum_{d_2 \mid n} \varphi(d_1) \, \varphi(d_2) \,
+|T|^{n^2/\operatorname{lcm}(d_1, d_2)}$, where $d_1$ and $d_2$ run over the positive divisors of
+$n$ and $\varphi$ is Euler's totient function.
 
 ## Depends on
 
-- [Torus Shift Sum](torus-shift-sum.md)
+- [Torus shift sum](torus-shift-sum.md)
 
 ## Sources
 

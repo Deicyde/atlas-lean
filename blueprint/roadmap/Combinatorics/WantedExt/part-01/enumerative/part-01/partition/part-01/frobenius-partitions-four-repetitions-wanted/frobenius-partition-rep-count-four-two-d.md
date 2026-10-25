@@ -5,17 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.frobeniusPartitionRepCount_four_two_dissection
 ---
 
-# Theorem 1
+# The 2-dissection of the generating function of $\varphi_4$
 
-**Theorem 1**, the 2-dissection of `Φ₄(q) = ∑ φ₄(n) qⁿ`, with `f_k = (q^k; q^k)_∞`
-(`qEulerProduct k`, written `𝔣 k`) and denominators cleared:
-`∑ φ₄(2n) qⁿ = f₂¹⁰ f₅ / (f₁⁹ f₄² f₁₀) + 2q f₂¹⁵ f₂₀² / (f₁¹² f₄⁴ f₁₀²) - 8q f₄⁶ f₁₀ / (f₁⁷ f₅)`
-(both sides multiplied by `f₁¹² f₄⁴ f₅ f₁₀²`) and
-`∑ φ₄(2n+1) qⁿ = f₂⁷ f₁₀² / (f₁⁶ f₄² f₅²)` (both sides multiplied by `f₁⁶ f₄² f₅²`).
+**The 2-dissection of the generating function of $\varphi_4$.** Let $\varphi_4(n)$ be the
+number of generalized Frobenius partitions of $n$ in which each integer appears at most $4$ times
+in each row, and let $f_k = \prod_{m \ge 1} (1 - q^{km})$ in the ring of integer power series in
+$q$. Then
+
+$$f_1^{12} f_4^4 f_5 f_{10}^2 \sum_{n \ge 0} \varphi_4(2n)\, q^n =
+f_1^3 f_2^{10} f_4^2 f_5^2 f_{10} + 2q f_2^{15} f_5 f_{20}^2 - 8q f_1^5 f_4^{10} f_{10}^3$$
+
+and
+
+$$f_1^6 f_4^2 f_5^2 \sum_{n \ge 0} \varphi_4(2n + 1)\, q^n = f_2^7 f_{10}^2.$$
+
+Dividing by the Euler products on the left gives the quotient forms of the source, for example
+$\sum_{n \ge 0} \varphi_4(2n + 1)\, q^n = f_2^7 f_{10}^2 / (f_1^6 f_4^2 f_5^2)$.
 
 ## Depends on
 
-- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
+- [Frobenius partitions with at most $k$ repetitions](frobenius-partition-rep-count.md)
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources

@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.regularOverpartitionCount
 ---
 
-# Regular Overpartition Count
+# Number of $\ell$-regular overpartitions
 
-`regularOverpartitionCount ℓ n` is `A_ℓ(n)`, the number of overpartitions of
-`n` whose every part is not divisible by `ℓ`. This is the combinatorial
-interpretation of the product in Identity (1); no positivity restriction is
-placed on `ℓ` in the definition.
+**Number of $\ell$-regular overpartitions.** For natural numbers $\ell$ and $n$, $A_\ell(n)$ is
+the number of overpartitions of $n$ in which no part is divisible by $\ell$.
+
+No positivity restriction is placed on $\ell$; for $\ell = 0$ every overpartition of $n$ is
+counted, since parts are positive.
 
 ## Depends on
 

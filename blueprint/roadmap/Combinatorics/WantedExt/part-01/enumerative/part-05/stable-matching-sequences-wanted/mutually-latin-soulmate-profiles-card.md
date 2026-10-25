@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.mutually_latin_soulmate_profiles_card
 ---
 
-# Mutually latin soulmate profiles card
+# Mutually Latin profiles with $k$ soulmate pairs
 
-The number of profiles whose men's and women's preferences both form Latin
-squares and that have exactly `k` soulmate pairs is
-`(L_n² / n!) C(n, k) ∑_{i=0}^{n-k} (-1)^i (n-k)!/i!`.
+**Mutually Latin profiles with $k$ soulmate pairs.** Let $n$ and $k$ be natural numbers and
+let $L_n$ be the number of Latin squares of order $n$. Call the men's preferences of a preference
+profile for $n$ men and $n$ women Latin when, for every position $r$, distinct men rank distinct
+women at position $r$, and likewise for the women's preferences. The number of preference
+profiles whose men's and women's preferences are both Latin and that have exactly $k$ soulmate
+pairs is
+
+$$\frac{L_n^2}{n!} \binom{n}{k} \sum_{i=0}^{n-k} \frac{(-1)^i (n-k)!}{i!}.$$
+
+When $k > n$ the binomial coefficient vanishes and both sides are $0$.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
-- [Latin Square Count](latin-square-count.md)
-- [Soulmate Pair Count](soulmate-pair-count.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Number of Latin squares](latin-square-count.md)
+- [Number of soulmate pairs](soulmate-pair-count.md)
 
 ## Sources
 

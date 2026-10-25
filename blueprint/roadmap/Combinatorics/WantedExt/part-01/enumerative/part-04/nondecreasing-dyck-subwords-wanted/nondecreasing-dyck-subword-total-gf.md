@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.nondecreasingDyckSubwordTotalGF
 ---
 
-# Nondecreasing Dyck Subword Total GF
+# Generating function of the total subword count in non-decreasing Dyck paths
 
-The univariate generating function `D_w(x) = ∑ d_w(n) x^n`.
+**Generating function of the total subword count in non-decreasing Dyck paths.** For a word
+$w$ in the steps $U$ and $D$, let $d_w(n)$ be the total number of occurrences of $w$ as a
+contiguous subword (overlapping occurrences counted separately) over all non-decreasing Dyck
+paths of semilength $n$. The univariate generating function of $w$ is the integer power series
+
+$$D_w(x) = \sum_{n \ge 0} d_w(n) x^n.$$
 
 ## Depends on
 
@@ -15,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
+- [Total occurrences of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-total.md)
 
 ## Sources
 

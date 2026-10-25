@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.kPermFixedPointPolynomial_real_roots
 ---
 
-# K Perm Fixed Point Polynomial real roots
+# Real zeros of the fixed-point polynomial
 
-Theorem 4: for `n ≥ k ≥ 1`, the polynomial `P(x) = ∑_{j=0}^{k} a(n, k, j) x^j` of the
-fixed-point distribution of `k`-permutations of `[n]` has only real zeros.
+**Real zeros of the fixed-point polynomial.** Write $a(n, k, j)$ for the number of permutations
+of an $n$-element set with exactly $k$ cycles (fixed points counted as cycles of length one) and
+exactly $j$ fixed points. If $1 \le k \le n$, then the real polynomial
+$P(x) = \sum_{j=0}^{k} a(n, k, j) x^j$ has only real zeros.
 
 ## Depends on
 
-- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
+- [Permutations counted by cycles and fixed points](k-perm-fixed-point-count.md)
 
 ## Sources
 

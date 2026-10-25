@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.tripleRegularPartitionCount
 ---
 
-# Triple Regular Partition Count
+# Triples of $\ell$-regular partitions
 
-The paper's abbreviation `T_ℓ(n) = T_{ℓ,3}(n)`.
+**Triples of $\ell$-regular partitions.** For natural numbers $\ell$ and $n$,
+$T_\ell(n) = T_{\ell,3}(n)$ is the number of triples $(\lambda_1, \lambda_2, \lambda_3)$ of
+$\ell$-regular partitions (partitions with no part divisible by $\ell$) whose sizes add up to
+$n$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [K Tuple Regular Partition Count](k-tuple-regular-partition-count.md)
+- [Number of $k$-tuples of $\ell$-regular partitions](k-tuple-regular-partition-count.md)
 
 ## Sources
 

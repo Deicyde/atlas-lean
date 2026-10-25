@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.extremely_lucky_eq_of_displacement_eq
 ---
 
-# Extremely lucky eq of displacement eq
+# Extremely lucky Stirling permutations are determined by their displacements
 
-An extremely lucky `w ∈ Q_n` is determined by its displacement composition:
-if `w' ∈ Q_n` has `dis(w') = dis(w)`, then `w' = w`.
+**Extremely lucky Stirling permutations are determined by their displacements.** Let $w$ and
+$w'$ be Stirling permutations of order $n$, and suppose that $w$ is extremely lucky, that is, its
+set $\mathrm{Lucky}(w)$ of lucky cars has exactly $n$ elements. If every car has the same
+displacement in $w'$ as in $w$ (that is, $\mathrm{dis}(w') = \mathrm{dis}(w)$), then $w' = w$.
 
 ## Depends on
 
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Stirling Displacement](stirling-displacement.md)
-- [Stirling Lucky Set](stirling-lucky-set.md)
+- [Displacement of a car](stirling-displacement.md)
+- [The lucky set of a word](stirling-lucky-set.md)
 
 ## Sources
 

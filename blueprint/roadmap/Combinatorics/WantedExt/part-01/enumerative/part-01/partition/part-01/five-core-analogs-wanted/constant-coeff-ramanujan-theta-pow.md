@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.constantCoeff_ramanujanThetaPow
 ---
 
-# Constant Coeff ramanujan Theta Pow
+# Constant term of Ramanujan's theta function
 
-The theta series `f(q^i, q^j)` has constant term `1` (only `n = 0` contributes).
+**Constant term of Ramanujan's theta function.** For all positive integers $i$ and $j$, the
+integer power series $f(q^i, q^j) = \sum_{n \in \mathbb{Z}} q^{i n(n+1)/2 + j n(n-1)/2}$ has
+constant term $1$: only $n = 0$ contributes to $q^0$.
 
 ## Depends on
 
-- [Ramanujan Theta Pow](ramanujan-theta-pow.md)
+- [Ramanujan's general theta function at powers of q](ramanujan-theta-pow.md)
 
 ## Sources
 

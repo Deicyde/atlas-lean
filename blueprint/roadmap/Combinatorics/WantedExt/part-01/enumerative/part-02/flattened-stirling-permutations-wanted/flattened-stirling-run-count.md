@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.flattenedStirlingRunCount
 ---
 
-# Flattened Stirling Run Count
+# Counting flattened Stirling permutations by runs
 
-`|flat_k(Q_n)|`: the number of flattened Stirling permutations of order `n`
-with exactly `k` runs.
+**Counting flattened Stirling permutations by runs.** For natural numbers $n$ and $k$,
+$|\mathrm{flat}_k(Q_n)|$ is the number of flattened Stirling permutations of order $n$ with
+exactly $k$ runs, where a run is a maximal contiguous weakly increasing subword.
 
 ## Depends on
 
@@ -16,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Flattened Word](is-flattened-word.md)
+- [Flattened words](is-flattened-word.md)
 - [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
-- [Word Run Count](word-run-count.md)
+- [Number of runs of a word](word-run-count.md)
 
 ## Sources
 

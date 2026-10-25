@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.nondecreasingDyck_subword_UUU
 ---
 
-# Nondecreasing Dyck subword UUU
+# Subword $UUU$ in non-decreasing Dyck paths
 
-Subword `UUU` in non-decreasing Dyck paths: `F_UUU(x, y)`, `D_UUU(x)`, and the closed form of
-`d_UUU(n)` for `n ≥ 1`.
+**Subword $UUU$ in non-decreasing Dyck paths.** Let $F_{UUU}(x, y) \in \mathbb{Z}[y][[x]]$ be
+the bivariate generating function with constant term $0$ in which, for $n \ge 1$, the coefficient
+of $x^n$ is the sum of $y^{k(P)}$ over the non-decreasing Dyck paths $P$ of semilength $n$, where
+$k(P)$ is the number of occurrences of the subword $UUU$ in $P$ (overlapping occurrences counted
+separately). Let $d_{UUU}(n)$ be the total number of occurrences of $UUU$ over all non-decreasing
+Dyck paths of semilength $n$, let $D_{UUU}(x) = \sum_{n \ge 0} d_{UUU}(n) x^n \in \mathbb{Z}[[x]]$,
+and let $F_n$ and $L_n$ denote the Fibonacci and Lucas numbers. Then
+$(1 - x(2 + y) + x^2 y) F_{UUU}(x, y) = (1 - xy) x$, $(1 - 3x + x^2)^2 D_{UUU}(x) = x^3$, and
+for every $n \ge 1$, $10\, d_{UUU}(n) = -(5n + 4) F_{2n} + 3n L_{2n}$.
 
 ## Depends on
 
 - [Lucas Number](../../../../../../NumberTheory/MathlibExt/part-08/lucas-sequence/lucas-number.md)
-- [Nondecreasing Dyck Subword Bivariate GF](nondecreasing-dyck-subword-bivariate-gf.md)
-- [Nondecreasing Dyck Subword Total](nondecreasing-dyck-subword-total.md)
-- [Nondecreasing Dyck Subword Total GF](nondecreasing-dyck-subword-total-gf.md)
+- [Bivariate generating function of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-bivariate-gf.md)
+- [Total occurrences of a subword in non-decreasing Dyck paths](nondecreasing-dyck-subword-total.md)
+- [Generating function of the total subword count in non-decreasing Dyck paths](nondecreasing-dyck-subword-total-gf.md)
 
 ## Sources
 

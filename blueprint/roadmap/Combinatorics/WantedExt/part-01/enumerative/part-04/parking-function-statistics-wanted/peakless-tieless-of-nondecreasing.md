@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.peaklessTielessOfNondecreasing
 ---
 
-# Peakless Tieless Of Nondecreasing
+# Tie-and-value map
 
-The paper's map `φ : PF↑_n → PTPF_n`: for `α = (a_1, …, a_n)`, list the tie set
-`Tie(α) = {j + 1 : a_j = a_{j+1}}` in decreasing order, followed by the value set `Val(α)` in
-increasing order. Zero-based: the tie `j + 1` (1-based position of the second entry of a tie)
-is the value `i : Fin n` for the zero-based position `i` with `f (i - 1) = f i`, and the values
-are those of `f` (both lists are read off `List.finRange n`, which is already ordered); the
-concatenated list has length `n` for nondecreasing `f` (the default `k` of `getD` is never used
-there).
+**Tie-and-value map.** Let $n \in \mathbb{N}$ and $f : \{0, \dots, n-1\} \to \{0, \dots, n-1\}$.
+The ties of $f$ are the positions $i \in \{1, \dots, n-1\}$ with $f(i-1) = f(i)$, and its values
+are the elements of the image of $f$. Form the list of the ties in decreasing order followed by
+the values in increasing order. Then $\varphi_n(f) : \{0, \dots, n-1\} \to \{0, \dots, n-1\}$ is the
+map whose value at $k$ is the entry of this list at position $k$ (counting from $0$), or $k$
+itself if the list has at most $k$ entries.
+
+For nondecreasing $f$ the list has exactly $n$ entries. In the paper's one-based notation,
+$\varphi$ sends $\alpha = (a_1, \dots, a_n)$ to its tie set $\{j + 1 : a_j = a_{j+1}\}$ in
+decreasing order followed by its value set in increasing order.
 
 ## Depends on
 

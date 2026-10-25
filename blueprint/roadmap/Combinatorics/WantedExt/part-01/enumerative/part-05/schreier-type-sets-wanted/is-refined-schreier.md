@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.IsRefinedSchreier
 ---
 
-# Is Refined Schreier
+# The refined Schreier family $F_{n,\ell}$
 
-Membership in the refined family `F_{n,ℓ}` of Section 4:
-`A = {a_1, …, a_p, n+1}` with `p ≥ 2`, `A` sparse and
-`ℓ`-strong Schreier, and `n + 1 + a_{p-1} = 2·a_p` for the two
-largest elements `a_{p-1} < a_p` below `n + 1`.
+**The refined Schreier family $F_{n,\ell}$.** For natural numbers $n$ and $\ell$, a finite
+set $A$ of natural numbers belongs to $F_{n,\ell}$ if $n + 1$ is the largest element of $A$,
+$A$ has at least three elements, $A$ is sparse and $\ell$-strong Schreier, and the two largest
+elements $a < b$ of $A$ below $n + 1$ satisfy $n + 1 + a = 2b$.
 
 ## Depends on
 
@@ -18,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Sparse](is-sparse.md)
-- [Is Strong Schreier](is-strong-schreier.md)
+- [Sparse sets](is-sparse.md)
+- [Strong Schreier sets](is-strong-schreier.md)
 
 ## Sources
 

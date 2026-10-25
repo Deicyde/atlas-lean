@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.metered_window_count_ge
 ---
 
-# Metered window count ge
+# Window condition for metered parking functions
 
-A necessary condition: if `f` is a `t`-metered `(m, n)`-parking function then for every spot
-`i ∈ [n]` and every `j ∈ [m - t]`, `|{j ≤ k ≤ j + t : a_k ≤ i}| ≥ t + 1 - n + i`, stated with
-`n` moved to the left (`t + 1 + i ≤ |…| + n`) and one-based `i`, `j`, `k`.
+**Window condition for metered parking functions.** Number the cars $1, \dots, m$ and the
+spots $1, \dots, n$, and let $a_k$ be the preferred spot of car $k$. If $(a_1, \dots, a_m)$ is a
+$t$-metered $(m, n)$-parking function, then for every $i$ with $1 \le i \le n$ and every $j$ with
+$1 \le j \le m - t$ (truncated subtraction, so there is no such $j$ when $m \le t$),
+
+$$t + 1 + i \le \#\{k : j \le k \le j + t,\ a_k \le i\} + n,$$
+
+that is, at least $t + 1 - n + i$ of the cars $j, \dots, j + t$ prefer one of the spots
+$1, \dots, i$.
 
 ## Depends on
 
-- [Is Metered Parking Function](is-metered-parking-function.md)
+- [Metered parking function](is-metered-parking-function.md)
 
 ## Sources
 

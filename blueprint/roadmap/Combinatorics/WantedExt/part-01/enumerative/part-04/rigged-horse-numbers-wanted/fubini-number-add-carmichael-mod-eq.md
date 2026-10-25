@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fubiniNumber_add_carmichael_modEq
 ---
 
-# Fubini Number add carmichael mod Eq
+# Eventual periodicity of the Fubini numbers modulo $K$
 
-The Fubini numbers are eventually periodic modulo `K` with period dividing `λ(K)`, from
-the index `R` on, where `R` is the largest exponent in the prime factorization of `K`:
-`F(n + λ(K)) ≡ F(n) (mod K)` for `n ≥ R`.
+**Eventual periodicity of the Fubini numbers modulo $K$.** Let $K$ be a natural number, let
+$\lambda(K)$ be the value of the Carmichael function at $K$, and let $R$ be the largest exponent
+in the prime factorization of $K$ ($R = 0$ for $K \le 1$). Then the Fubini numbers $F(n)$
+satisfy $F(n + \lambda(K)) \equiv F(n) \pmod K$ for every natural number $n \ge R$.
 
 ## Depends on
 

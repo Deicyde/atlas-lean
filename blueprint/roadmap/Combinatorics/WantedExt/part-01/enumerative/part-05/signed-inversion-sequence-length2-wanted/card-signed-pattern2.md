@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.card_signedPattern2
 ---
 
-# Card signed Pattern2
+# Number of length-2 signed patterns
 
-There are twelve length-2 signed patterns.
+**Number of length-2 signed patterns.** There are exactly twelve length-2 signed patterns.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
+- [Length-2 signed pattern](signed-pattern2.md)
 
 ## Sources
 

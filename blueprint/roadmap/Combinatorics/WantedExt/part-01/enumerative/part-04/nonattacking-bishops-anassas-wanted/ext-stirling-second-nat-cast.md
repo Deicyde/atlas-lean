@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.extStirlingSecond_natCast
 ---
 
-# Ext Stirling Second nat Cast
+# Extended Stirling numbers at natural arguments
 
-At natural arguments `extStirlingSecond` is `Nat.stirlingSecond`.
+**Extended Stirling numbers at natural arguments.** For all natural numbers $n$ and $k$, the
+extended Stirling number of the second kind at $(n, k)$ equals the Stirling number of the second
+kind $S(n, k)$.
 
 ## Depends on
 
-- [Ext Stirling Second](ext-stirling-second.md)
+- [Extended Stirling numbers of the second kind](ext-stirling-second.md)
 
 ## Sources
 

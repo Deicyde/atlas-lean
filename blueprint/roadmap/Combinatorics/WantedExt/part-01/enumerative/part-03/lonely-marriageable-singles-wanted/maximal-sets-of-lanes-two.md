@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.maximalSetsOfLanes_two
 ---
 
-# Maximal Sets Of Lanes two
+# Maximal sets of lanes for an intersection of size two
 
-The standard road intersection of size `2` has the two MSL `{E₁X₁, E₂X₂}` and
-`{E₁X₂, E₂X₁}`.
+**Maximal sets of lanes for an intersection of size two.** Write $E_iX_j$ for the lane from the
+$i$-th entry to the $j$-th exit. In the standard road intersection of size $2$, in which every lane
+is allowed, the maximal sets of lanes are exactly $\{E_1X_1, E_2X_2\}$ and $\{E_1X_2, E_2X_1\}$.
 
 ## Depends on
 
-- [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
-- [Lanes Meet](lanes-meet.md)
+- [Maximal set of lanes](is-maximal-set-of-lanes.md)
+- [Lanes with a common point](lanes-meet.md)
 
 ## Sources
 

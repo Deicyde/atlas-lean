@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.cyclicSortingMachine_123_iterate_eq_id_iff_reductionSeq
 ---
 
-# Cyclic Sorting Machine 123 iterate eq id iff reduction Seq
+# Reduction and iterates of $SC_{(123)}$
 
-For every permutation `π` of `[n]` and every `k`, `SC_[123]^k(π) = id_n` if and only if
-`SC_[123]^k(red(π)) = id_{|red(π)|}`.
+**Reduction and iterates of $SC_{[123]}$.** Let $\pi$ be a permutation of
+$[n] = \{1, \dots, n\}$, written as a sequence, let $\mathrm{red}(\pi)$ be its reduction, of
+length $\ell$, and let $SC_{[123]}^k$ be the $k$-fold iterate of the cyclic avoidance machine
+$SC_{[123]}$. For every $k \ge 0$, $SC_{[123]}^k(\pi) = 12 \cdots n$ if and only if
+$SC_{[123]}^k(\mathrm{red}(\pi)) = 12 \cdots \ell$.
 
 ## Depends on
 
-- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
-- [Reduction Seq](reduction-seq.md)
+- [Cyclic avoidance machine](cyclic-sorting-machine.md)
+- [Reduction of a sequence](reduction-seq.md)
 
 ## Sources
 

@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.invSeqAvoidGF_011_102_120
 ---
 
-# Theorem 6
+# Inversion sequences avoiding $\{011, 102, 120\}$
 
-**Theorem 6.** For `B = {011, 102, 120}`, `F_B(x) = x(1 - x)² / (1 - 2x)²`, stated after
-clearing the unit denominator `(1 - 2x)²` in `ℚ⟦X⟧`.
+**Inversion sequences avoiding $\{011, 102, 120\}$.** Let $B = \{011, 102, 120\}$, where a
+pattern is written as a digit string ($101$ is the triple $(1, 0, 1)$), and let
+$F_B(x) = \sum_{n \ge 1} |I_n(B)| x^n \in \mathbb{Q}[[x]]$ be the generating function of the
+inversion sequences avoiding every pattern in $B$. Then
+
+$$(1 - 2x)^2 F_B(x) = x(1 - x)^2.$$
+
+Since $(1 - 2x)^2$ is a unit in $\mathbb{Q}[[x]]$, this says $F_B(x) = x(1 - x)^2/(1 - 2x)^2$.
 
 ## Depends on
 
-- [Inv Seq Avoid GF](inv-seq-avoid-gf.md)
+- [Generating function of inversion sequences avoiding a set of patterns](inv-seq-avoid-gf.md)
 
 ## Sources
 

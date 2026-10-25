@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.ghptRow
 ---
 
-# Ghpt Row
+# Rows of the generalized hyperbolic Pascal triangle
 
-Row `n ≥ 1` of the generalized hyperbolic Pascal triangle linked to `{4, q}` with leg
-sequences `α` (left) and `β` (right), as (type, value) pairs from left to right: row `1` is
-`α₁, β₁`, and row `n + 1` is `α_{n+1}`, the interior step applied to row `n`, then `β_{n+1}`.
-Row `0` (the indeterminate root `Ω`) is represented by the empty list.
+**Rows of the generalized hyperbolic Pascal triangle.** Fix $q \in \mathbb{N}$, a type $R$ with
+an addition, and leg sequences $\alpha, \beta \colon \mathbb{N} \to R$ (left and right). Row $n$ of
+the generalized hyperbolic Pascal triangle linked to the mosaic $\{4, q\}$ is the list of its
+vertices from left to right, each recorded as a pair (type code, value) as in the interior step,
+with code $0$ for the wingers. Row $1$ is $(0, \alpha_1), (0, \beta_1)$, and for $n \ge 1$ row
+$n + 1$ is $(0, \alpha_{n+1})$, followed by the interior step applied to row $n$, followed by
+$(0, \beta_{n+1})$. Row $0$ (the indeterminate root $\Omega$) is represented by the empty list.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ghpt Interior](ghpt-interior.md)
+- [Interior step of the generalized hyperbolic Pascal triangle](ghpt-interior.md)
 
 ## Sources
 

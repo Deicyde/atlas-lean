@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_pow_eq_sum_stirlingSecond
 ---
 
-# Sum pow eq sum stirling Second
+# Sums of $m$th powers via Stirling numbers of the second kind
 
-Corollary 5: `∑_{k=1}^{n} k^m = ∑_{k=0}^{m} (-1)^{m-k} k! C(n + k, k + 1) S(m, k)`.
-The paper takes `n ≥ 1`; `n = 0` also holds (both sides vanish) and is included.
+**Sums of $m$th powers via Stirling numbers of the second kind.** For all natural numbers
+$n$ and $m$,
+
+$$\sum_{k=1}^{n} k^m = \sum_{k=0}^{m} (-1)^{m-k}\, k!\, \binom{n + k}{k + 1}\, S(m, k),$$
+
+where $S(m, k)$ denotes the Stirling numbers of the second kind.
+
+The paper takes $n \ge 1$; for $n = 0$ both sides vanish, so that case is included.
 
 ## Depends on
 

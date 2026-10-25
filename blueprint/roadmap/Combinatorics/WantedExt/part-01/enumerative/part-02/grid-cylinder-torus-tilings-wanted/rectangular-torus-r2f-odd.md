@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.rectangularTorus_r2f_odd
 ---
 
-# Rectangular Torus r2f odd
+# Fixed points of $r^2 f$ on the rectangular torus, $m$ odd
 
-For odd `m`, the `r²f` rectangular-torus shift-sum contains one fixed-row family.  The term
-`tileFixedCount σ d` is exactly `t_{(r²f)^d}`, and `σ²=1` is the order-two hypothesis.
+**Fixed points of $r^2 f$ on the rectangular torus, $m$ odd.** Let $T$ be a finite set of
+tile designs, $\sigma$ a permutation of $T$ with $\sigma^2 = 1$, $n$ a positive integer and $m$ a
+positive odd integer. For a shift $(a, b) \in \mathbb{Z}/n \times \mathbb{Z}/m$, count the maps
+$F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with $F(x+a, -1-y-b) = \sigma(F(x, y))$ for all
+cells $(x, y)$, and let $\mathrm{fxpt}$ be the sum of these counts over all $nm$ shifts (the
+torus fixed-point count of the reflection $r^2 f$). Write $t_{\mathrm{id}} = |T|$, let
+$t_{(r^2f)^d}$ be the number of designs $e \in T$ with $\sigma^d(e) = e$, and let $\varphi$ be
+Euler's totient function. Then, with $d$ running over the positive divisors of $n$,
 
-Formalization deviation: none beyond the representation choices stated above.
+$$\mathrm{fxpt} = m \sum_{d \mid n} \varphi(d)\,
+t_{\mathrm{id}}^{n(m-1)/\operatorname{lcm}(d,2)}\,t_{(r^2f)^d}^{n/d}.$$
 
 ## Depends on
 
-- [Cell R2 F](cell-r2-f.md)
-- [Tile Fixed Count](tile-fixed-count.md)
-- [Torus Shift Sum](torus-shift-sum.md)
+- [Cell map of the reflection r²f](cell-r2-f.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
+- [Torus shift sum](torus-shift-sum.md)
 
 ## Sources
 

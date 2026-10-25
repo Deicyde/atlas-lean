@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.perimeterDistinctCount_shift_inequalities
 ---
 
-# Perimeter Distinct Count shift inequalities
+# Monotonicity of fixed perimeter counts with $d$-distinct parts
 
-Proposition 1.6, `h` part: for positive `d, n, a`, `h_d^(a+1)(n) ≤ h_d^(a)(n)`,
-`h_{d+1}^(a)(n) ≤ h_d^(a)(n)` and `h_d^(a)(n) ≤ h_d^(a)(n + 1)`.
+**Monotonicity of fixed perimeter counts with $d$-distinct parts.** For natural numbers
+$d$, $a$ and $n$, let $h_d^{(a)}(n)$ be the number of partitions of perimeter $n$ (largest part
+plus number of parts minus $1$) into $d$-distinct parts, all at least $a$, where parts are
+$d$-distinct when no part repeats and any two parts differ by at least $d$. If $d$, $n$ and $a$
+are positive, then $h_d^{(a+1)}(n) \le h_d^{(a)}(n)$, $h_{d+1}^{(a)}(n) \le h_d^{(a)}(n)$ and
+$h_d^{(a)}(n) \le h_d^{(a)}(n + 1)$.
 
 ## Depends on
 
-- [Perimeter Distinct Count](perimeter-distinct-count.md)
+- [Fixed perimeter partitions into $d$-distinct parts](perimeter-distinct-count.md)
 
 ## Sources
 

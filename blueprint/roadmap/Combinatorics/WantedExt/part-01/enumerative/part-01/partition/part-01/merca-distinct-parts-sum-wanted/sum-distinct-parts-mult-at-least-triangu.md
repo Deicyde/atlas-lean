@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsMultAtLeast_triangular_eq_distinct_half
 ---
 
-# Sum Distinct Parts Mult At Least triangular eq distinct half
+# Signed triangular sum of $s_m$ and distinct partitions
 
-For `m ≥ 1`, `∑_{k ≥ 0} (-1)^{k(k+1)/2} s_m(n - k(k+1)/2) = ∑_{j ≥ 0} j q((n - mj)/2)`,
-with `q(x)` the number of partitions of `x` into distinct parts and `q(x) = 0` when `x` is not
-an integer. The paper says `m ≥ 0`; for `m = 0` the right side diverges.
+**Signed triangular sum of $s_m$ and distinct partitions.** Let $m \ge 1$ and $n$ be natural
+numbers. Write $s_m(k)$ for the sum of the different parts that appear at least $m$ times in
+partitions of $k$, $q(k)$ for the number of partitions of $k$ into distinct parts, and
+$\tilde q(\ell)$ for $q(\ell/2)$ when $\ell$ is even and for $0$ when $\ell$ is odd. Then
+
+$$
+\sum_{k \ge 0,\ k(k+1)/2 \le n} (-1)^{k(k+1)/2} s_m\bigl(n - k(k+1)/2\bigr)
+= \sum_{j \ge 0,\ mj \le n} j\, \tilde q(n - mj).
+$$
+
+The paper says $m \ge 0$; for $m = 0$ the right side diverges.
 
 ## Depends on
 
-- [Sum Distinct Parts Mult At Least](sum-distinct-parts-mult-at-least.md)
+- [Sum of different parts appearing at least $m$ times](sum-distinct-parts-mult-at-least.md)
 
 ## Sources
 

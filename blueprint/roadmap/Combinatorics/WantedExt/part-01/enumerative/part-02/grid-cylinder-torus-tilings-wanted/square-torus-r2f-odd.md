@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.squareTorus_r2f_odd
 ---
 
-# Square Torus r2f odd
+# Fixed tilings of the odd square torus under the reflection $r^2 f$
 
-For odd `n`, the square-torus `r²f` formula is the divisor sum with fixed-design term
-`tileFixedCount σ d = t_{(r²f)^d}`.  The hypothesis `σ²=1` records the reflection order.
-
-Formalization deviation: none beyond the representation choices stated above.
+**Fixed tilings of the odd square torus under the reflection $r^2 f$.** Let $n$ be an odd
+positive integer, $T$ a finite set of tile designs and $\sigma$ a permutation of $T$ with
+$\sigma^2 = 1$; for $k \in \mathbb{N}$ write $t_k$ for the number of designs $d \in T$ with
+$\sigma^k(d) = d$, and let $\varphi$ be Euler's totient function. Let $S$ be the torus shift sum
+of the cell map $g(x, y) = (x, -1-y)$ of $r^2 f$ on $(\mathbb{Z}/n\mathbb{Z})^2$, that is, the
+sum over all shifts $(a, b) \in (\mathbb{Z}/n\mathbb{Z})^2$ of the number of tilings
+$F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(g(c + (a, b))) = \sigma(F(c))$ for every cell $c$.
+Then $S = n \sum_{d \mid n} \varphi(d) \, |T|^{(n^2-n)/\operatorname{lcm}(2, d)} \, t_d^{n/d}$.
 
 ## Depends on
 
-- [Cell R2 F](cell-r2-f.md)
-- [Tile Fixed Count](tile-fixed-count.md)
-- [Torus Shift Sum](torus-shift-sum.md)
+- [Cell map of the reflection r²f](cell-r2-f.md)
+- [Tile designs fixed by a power of a permutation](tile-fixed-count.md)
+- [Torus shift sum](torus-shift-sum.md)
 
 ## Sources
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.minusculePolynomialA_gamma_positive
 ---
 
-# Minuscule Polynomial A gamma positive
+# Gamma-positivity of the minuscule polynomials
 
-Gamma-positivity: `N_n(x) = ∑_{k=0}^{⌊n/2⌋} γ_{n,k} x^k (1 + x)^{n-2k}` with non-negative
-integers `γ_{n,k}`. Stated for every `n : ℕ` (`N_0 = 0`).
+**Gamma-positivity of the minuscule polynomials.** For every natural number $n$ there are
+non-negative integers $\gamma_{n,0}, \dots, \gamma_{n,\lfloor n/2 \rfloor}$ such that the type-A
+minuscule polynomial $N_n$ satisfies
+$N_n(x) = \sum_{k=0}^{\lfloor n/2 \rfloor} \gamma_{n,k}\, x^k (1 + x)^{n-2k}$.
+
+For $n = 0$ this holds with every $\gamma_{0,k} = 0$, since $N_0 = 0$.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

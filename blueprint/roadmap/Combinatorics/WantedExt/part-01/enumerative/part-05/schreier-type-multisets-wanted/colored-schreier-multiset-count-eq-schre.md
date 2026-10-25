@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.coloredSchreierMultisetCount_eq_schreierParentB
 ---
 
-# Colored Schreier Multiset Count eq schreier Parent B
+# Colored Schreier multiset counts are a subsequence of the parent sequence
 
-Lemma 1: `(|B^{(s)}_{p,n}|)` is a periodic subsequence of `(b^{(s)}_{p,n})`:
-`|B^{(s)}_{p,n}| = b^{(s)}_{p,ns-s+1}` for positive `s, p, n`.
+**Colored Schreier multiset counts are a subsequence of the parent sequence.** For all
+positive integers $s$, $p$ and $n$, the number $|B^{(s)}_{p,n}|$ of colored Schreier-type
+multisets equals the term $b^{(s)}_{p,ns-s+1}$ of the parent sequence $b^{(s)}_{p,m}$.
 
 ## Depends on
 
-- [Colored Schreier Multiset Count](colored-schreier-multiset-count.md)
-- [Schreier Parent B](schreier-parent-b.md)
+- [Counting colored Schreier-type multisets](colored-schreier-multiset-count.md)
+- [Parent sequence b for Schreier-type multisets](schreier-parent-b.md)
 
 ## Sources
 

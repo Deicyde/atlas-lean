@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOdd_square_recurrence
 ---
 
-# Overpartition Odd square recurrence
+# Square recurrence for overpartitions into odd parts
 
-Square recurrence for overpartitions into odd parts: for `n ≥ 0`,
-`po(n) + 2 ∑_{k ≥ 1} (-1)^k po(n - 2k²)` equals `2` if `n = m²` with `m ≥ 1`, `1` if
-`n = 0`, and `0` otherwise.
+**Square recurrence for overpartitions into odd parts.** Write $\mathrm{po}(m)$ for the
+number of overpartitions of $m$ into odd parts. For every natural number $n$, the sum
+$\mathrm{po}(n) + 2 \sum_{k \ge 1,\ 2k^2 \le n} (-1)^k \, \mathrm{po}(n - 2k^2)$ equals $1$ if
+$n = 0$, equals $2$ if $n = m^2$ for some integer $m \ge 1$, and equals $0$ otherwise.
 
 ## Depends on
 
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 
 ## Sources
 

@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.cyclicExcedanceEGF_eq
 ---
 
-# Proposition 1
+# Exponential generating function of excedances over cyclic permutations
 
-**Proposition 1.** For `x ≠ 1`, with `C_n(x) = ∑_{w an n-cycle} x^(exc w)`,
-`∑_{n ≥ 1} C_n(x) z^n / n! = z + ln((x - 1) / (x e^z - e^(xz)))`; the logarithm of a series
-with constant term `1` is Mathlib's `PowerSeries.logOf`.
+**Exponential generating function of excedances over cyclic permutations.** Let $x \ne 1$ be
+a rational number. For $n \ge 1$ let $C_n(x) = \sum_{m=0}^{n} C_{n,m} x^m$, where the circular
+Eulerian number $C_{n,m}$ is the number of permutations $w$ of $\{0, 1, \dots, n-1\}$ whose points
+all lie in a single cycle and which have exactly $m$ excedances, that is, points $i$ with
+$w(i) > i$. Then, as formal power series in $z$ over $\mathbb{Q}$,
+
+$$\sum_{n \ge 1} C_n(x) \frac{z^n}{n!} = z + \log \frac{x - 1}{x e^z - e^{xz}},$$
+
+where the quotient has constant term $1$ and $\log$ is the formal logarithm of a power series
+with constant term $1$.
 
 ## Depends on
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sigmaMexOverpartition_parity
 ---
 
-# Sigma Mex Overpartition parity
+# Parity of the overpartition mex sum
 
-For positive `n`, `σmex̄(n)` is odd exactly when `n = T_j` for some
-`j : ℕ`, and is even otherwise.  The two implications encode the
-triangular and non-triangular cases without requiring a classical decision
-procedure for the unbounded existential; `j * (j + 1) / 2` (the triangular number `T_j`) encodes
-`j(j+1)/2`.
+**Parity of the overpartition mex sum.** For an overpartition $\pi$, let
+$\overline{\mathrm{mex}}(\pi)$ be the least positive integer that does not occur among the
+non-overlined parts of $\pi$, and let $\sigma\overline{\mathrm{mex}}(n)$ be the sum of
+$\overline{\mathrm{mex}}(\pi)$ over all overpartitions $\pi$ of $n$. For every positive integer
+$n$, $\sigma\overline{\mathrm{mex}}(n)$ is odd if $n = j(j+1)/2$ is a triangular number for some
+natural number $j$, and even otherwise.
 
 ## Depends on
 
-- [Sigma Mex Overpartition](sigma-mex-overpartition.md)
+- [Sums of minimal excludants over overpartitions](sigma-mex-overpartition.md)
 
 ## Sources
 

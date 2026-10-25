@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.TriangularRecurrence.negPosAux
 ---
 
-# Neg Pos Aux
+# Negative-positive numbers at negative rows (auxiliary)
 
-Auxiliary for `negPos`: the value at row `-(p + 1)` and column `k ≥ 0`.
+**Negative-positive numbers at negative rows (auxiliary).** For integer parameters
+$(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ and $p, k \ge 0$, put $n = -(p + 1)$. The
+rational numbers $c_{p,k}$ are defined by recursion on $p$ and then on $k$ through
+$c_{p,k} = (r - (\alpha'(n+1) + \beta' k + \gamma')\, s) / (\alpha(n+1) + \beta k + \gamma)$,
+where $r = c_{p-1,k}$ if $p \ge 1$, $r = 1$ if $p = k = 0$, and $r = 0$ if $p = 0 < k$; and
+$s = c_{p,k-1}$ if $k \ge 1$, $s = 0$ if $k = 0$. Division by $0$ gives $0$.
 
 ## Depends on
 
-- [Triangular Recurrence](triangular-recurrence.md)
+- [Triangular recurrence](triangular-recurrence.md)
 
 ## Proof depends on
 
-- [Weight](weight.md)
-- [Weight'](weight-2.md)
+- [First weight of a triangular recurrence](weight.md)
+- [Second weight of a triangular recurrence](weight-2.md)
 
 ## Sources
 

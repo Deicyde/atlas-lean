@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.frobeniusPartitionRepCount_four_zero_one
 ---
 
-# Frobenius Partition Rep Count four zero one
+# Initial values of $\varphi_4$
 
-`φ₄(0) = 1` (the empty array) and `φ₄(1) = 1` (the single column `0 / 0`).
+**Initial values of $\varphi_4$.** Let $\varphi_4(n)$ be the number of generalized Frobenius
+partitions of $n$ in which each integer appears at most $4$ times in each row. Then
+$\varphi_4(0) = 1$ (the empty array) and $\varphi_4(1) = 1$ (the single column with both entries
+$0$).
 
 ## Depends on
 
-- [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
+- [Frobenius partitions with at most $k$ repetitions](frobenius-partition-rep-count.md)
 
 ## Sources
 

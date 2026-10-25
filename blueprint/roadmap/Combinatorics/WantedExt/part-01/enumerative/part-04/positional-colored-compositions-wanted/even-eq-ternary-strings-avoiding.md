@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.even_eq_ternaryStrings_avoiding
 ---
 
-# Even eq ternary Strings avoiding
+# Even colored compositions and ternary strings
 
-For `k ≥ 0`, the number `e(k)` of EVEN colored compositions of `k` equals the number of
-ternary strings of length `k` avoiding the factors `01` and `12` that do not begin with `2` and
-do not end with `0`. Stated for all `k ≥ 0` (both sides are `1` at `k = 0`).
+**Even colored compositions and ternary strings.** For every $k \ge 0$, the number
+$e(k) = c_{2,0}(k)$ of even colored compositions of $k$, in which only the parts at even
+positions are colored, equals the number of strings of length $k$ over the alphabet
+$\{0, 1, 2\}$ that contain neither $01$ nor $12$ as two consecutive letters, do not begin with
+$2$ and do not end with $0$.
+
+At $k = 0$ both sides equal $1$, the empty string being counted.
 
 ## Depends on
 
-- [Positional Colored Composition Count](positional-colored-composition-count.md)
+- [Positional colored compositions](positional-colored-composition-count.md)
 
 ## Sources
 

@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.mul_descendingStrictNaplesCount_eq_card_dissection
 ---
 
-# Mul descending Strict Naples Count eq card dissection
+# Descending strictly $k$-Naples parking functions and polygon dissections
 
-Proposition 6: for `k ≥ 1`, descending strictly `k`-Naples parking functions of length `n`
-are in bijection with `(2k + 2)`-in-`(n + k + 1)` dissections up to rotation with a
-distinguished edge on the `(2k + 2)`-gon. Rotations act freely on dissections with a
-distinguished face edge, so this is stated as: `(n + k + 1)` times the count equals the number
-of labelled such dissections with a distinguished face edge.
+**Descending strictly $k$-Naples parking functions and polygon dissections.** Let $n$ and
+$k \ge 1$ be natural numbers and let $s = n + k + 1$. Then $s$ times the number of weakly
+decreasing preferences of length $n$ that are $k$-Naples but not $(k - 1)$-Naples parking
+functions equals the number of triples $(D, R, e)$ such that the set of diagonals $D$ and the
+vertex set $R$ form a $(2k + 2)$-in-$s$ dissection of the convex $s$-gon with vertices
+$0, \dots, s - 1$, and $e$ is an edge of the inscribed polygon with vertex set $R$.
+
+Rotations of the $s$-gon act freely on these triples, so this says that descending strictly
+$k$-Naples parking functions of length $n$ are in bijection with $(2k + 2)$-in-$s$ dissections
+up to rotation with a distinguished edge on the $(2k + 2)$-gon.
 
 ## Depends on
 
-- [Is Inner Polygon Dissection](is-inner-polygon-dissection.md)
-- [Descending Strict Naples Count](descending-strict-naples-count.md)
-- [Inscribed Polygon Edges](inscribed-polygon-edges.md)
+- [$r$-in-$s$ dissection](is-inner-polygon-dissection.md)
+- [Number of descending strictly $k$-Naples parking functions](descending-strict-naples-count.md)
+- [Edges of an inscribed polygon](inscribed-polygon-edges.md)
 
 ## Sources
 

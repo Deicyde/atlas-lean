@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sum_cyclicProductNumber_mul_X_pow
 ---
 
-# Sum cyclic Product Number mul X pow
+# Generating polynomial of the cyclic product numbers
 
-Lemma 6 (Grusea–Labarre): `∑_{k=0}^{n} H(n, k) x^k` equals
-`((x)^{(n+1)} - (x)_{n+1}) / ((n + 1) n)`, with the rising factorial
-`x (x + 1) ⋯ (x + n)` and the falling factorial `x (x - 1) ⋯ (x - n)`.
-For `n = 0` both sides are `0`.
+**Generating polynomial of the cyclic product numbers.** For every natural number $n$, let
+$H(n, k)$ be the cyclic product numbers, viewed as rational numbers. Then in the polynomial
+ring $\mathbb{Q}[x]$
+
+$$\sum_{k=0}^{n} H(n, k) x^k = c_n (x (x + 1) \cdots (x + n) - x (x - 1) \cdots (x - n)),$$
+
+where $c_n = \frac{1}{(n + 1) n}$ for $n \ge 1$ and $c_0 = 0$; for $n = 0$ both sides are $0$.
 
 ## Depends on
 
-- [Cyclic Product Number](cyclic-product-number.md)
+- [Cyclic product numbers](cyclic-product-number.md)
 
 ## Sources
 

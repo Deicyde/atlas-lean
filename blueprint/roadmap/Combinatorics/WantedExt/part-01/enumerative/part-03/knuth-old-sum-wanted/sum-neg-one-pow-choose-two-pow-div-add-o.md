@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_choose_two_pow_div_add_one
 ---
 
-# Sum neg one pow choose two pow div add one
+# Alternating binomial sum of $2^{k+m}/(k+m+1)$
 
-`∑_{k=0}^n (-1)^k binom(n,k) 2^{k+m}/(k+m+1)` is
-`∑_{k ≤ m/2} binom(m,2k)/(2k+n+1)` for even `n` and
-`-∑_{k=1}^{⌈m/2⌉} binom(m,2k-1)/(2k+n)` for odd `n`.
+**Alternating binomial sum of $2^{k+m}/(k+m+1)$.** For all natural numbers $m$ and $n$, the
+rational number $S = \sum_{k=0}^{n} (-1)^k \binom{n}{k} \frac{2^{k+m}}{k+m+1}$ satisfies
+
+$$S = \sum_{k=0}^{\lfloor m/2 \rfloor} \frac{\binom{m}{2k}}{2k+n+1}$$
+
+when $n$ is even, and
+
+$$S = -\sum_{k=1}^{\lfloor (m+1)/2 \rfloor} \frac{\binom{m}{2k-1}}{2k+n}$$
+
+when $n$ is odd.
 
 ## Depends on
 

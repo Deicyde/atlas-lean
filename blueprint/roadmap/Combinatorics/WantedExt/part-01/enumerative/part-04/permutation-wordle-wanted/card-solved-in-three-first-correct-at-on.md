@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.card_solvedIn_three_firstCorrectAt_one
 ---
 
-# Theorem 10
+# Three-guess solves of permutations with a fixed point
 
-**Theorem 10.** If `S[m] = CS[m]` for all `m < n` and `n ≥ 4`, the number of permutations
-guessed in exactly three guesses with `ρ_S(π) = 1` is
-`1 - 2^{n+1} + 3ⁿ + n²/2 + 5n/2 - n 2ⁿ`.
+**Three-guess solves of permutations with a fixed point.** Let $n \ge 4$ and let $S$ be a
+permutation Wordle strategy (a permutation $S[m]$ of $\{0, \dots, m-1\}$ for each $m$) with
+$S[m]$ equal to the cyclic shift $j \mapsto j + 1 \bmod m$ for every $m < n$. The number of
+permutations $\pi$ of $\{0, \dots, n-1\}$ that $S$ guesses in exactly three guesses and whose
+first guess (the identity) has a correct position, that is, $\pi$ has a fixed point, is
+$1 - 2^{n+1} + 3^n + n^2/2 + 5n/2 - n \cdot 2^n$.
 
 ## Depends on
 
-- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
-- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [First guess with a correct position in permutation Wordle](perm-wordle-first-correct-at.md)
+- [Permutation Wordle games solved in a given number of guesses](perm-wordle-solved-in.md)
 
 ## Sources
 

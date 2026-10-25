@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.fiveCoreCount_identities
 ---
 
-# Five Core Count identities
+# Two identities for the 5-core counts
 
-Lemma 11: `c_5(4n+1) = c_5(2n)` and `c_5(5n+4) = 5 c_5(n)`.
+**Two identities for the 5-core counts.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ and let
+$c_5(n)$ be the coefficient of $q^n$ in $f_5^5 / f_1$. For every natural number $n$,
+$c_5(4n+1) = c_5(2n)$ and $c_5(5n+4) = 5\, c_5(n)$.
 
 ## Depends on
 
-- [Five Core Count](five-core-count.md)
+- [The 5-core counts](five-core-count.md)
 
 ## Sources
 

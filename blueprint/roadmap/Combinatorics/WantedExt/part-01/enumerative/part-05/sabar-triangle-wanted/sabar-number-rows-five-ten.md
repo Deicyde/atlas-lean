@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.sabarNumber_rows_five_ten
 ---
 
-# Sabar Number rows five ten
+# Rows 5 and 10 of Sabar's triangle
 
-Characteristic values: rows `n = 5` (`1, 2, 7, 6, 5`) and `n = 10` (`0, 6, 24, 71, 129, 167,
-147, 92, 36, 10`) of Table 1.
+**Rows 5 and 10 of Sabar's triangle.** The entries $s(5, i)$ of Sabar's triangle for
+$i = 0, 1, \dots, 4$ are $1, 2, 7, 6, 5$, and the entries $s(10, i)$ for $i = 0, 1, \dots, 9$
+are $0, 6, 24, 71, 129, 167, 147, 92, 36, 10$.
+
+These are rows $n = 5$ and $n = 10$ of the source's Table 1.
 
 ## Depends on
 
-- [Sabar Number](sabar-number.md)
+- [Sabar's triangle](sabar-number.md)
 
 ## Sources
 

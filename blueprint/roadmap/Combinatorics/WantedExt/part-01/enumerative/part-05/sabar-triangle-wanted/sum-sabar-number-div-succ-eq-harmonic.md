@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_sabarNumber_div_succ_eq_harmonic
 ---
 
-# Sum sabar Number div succ eq harmonic
+# The harmonic numbers as an alternating sum of Sabar numbers
 
-Theorem 3: for `n ≥ 2`, `∑_{i=0}^{2n-2} (-1)^i s(2n-1, i) / (i + 1) = H_n`.
+**The harmonic numbers as an alternating sum of Sabar numbers.** For every natural number
+$n \ge 2$, writing $s(m, i)$ for Sabar's triangle and $H_n = \sum_{j=1}^{n} 1/j$ for the $n$-th
+harmonic number, in the rational numbers
+
+$$\sum_{i=0}^{2n-2} \frac{(-1)^i \, s(2n-1, i)}{i+1} = H_n.$$
 
 ## Depends on
 
-- [Sabar Number](sabar-number.md)
+- [Sabar's triangle](sabar-number.md)
 
 ## Sources
 

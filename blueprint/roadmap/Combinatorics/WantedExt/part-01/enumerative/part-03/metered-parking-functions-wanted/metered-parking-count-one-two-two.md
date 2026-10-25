@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.meteredParkingCount_one_two_two
 ---
 
-# Metered Parking Count one two two
+# 1-metered parking functions with two cars and two spots
 
-`mpf_{2,2}(1) = 3`, an entry of the source's Table 1.
+**1-metered parking functions with two cars and two spots.** The number of $1$-metered
+$(2, 2)$-parking functions is $\mathrm{mpf}_{2,2}(1) = 3$.
+
+This is an entry of the source's Table 1.
 
 ## Depends on
 
-- [Metered Parking Count](metered-parking-count.md)
+- [Number of metered parking functions](metered-parking-count.md)
 
 ## Sources
 

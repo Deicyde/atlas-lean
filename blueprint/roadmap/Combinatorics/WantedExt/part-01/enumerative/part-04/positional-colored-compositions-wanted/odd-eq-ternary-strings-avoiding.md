@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.odd_eq_ternaryStrings_avoiding
 ---
 
-# Odd eq ternary Strings avoiding
+# Odd colored compositions and ternary strings
 
-For `k ≥ 1`, the number `o(k)` of ODD colored compositions of `k` equals the number of
-ternary strings of length `k - 1` avoiding the factors `01` and `12`.
+**Odd colored compositions and ternary strings.** For every $k \ge 1$, the number
+$o(k) = c_{2,1}(k)$ of odd colored compositions of $k$, in which only the parts at odd positions
+are colored, equals the number of strings of length $k - 1$ over the alphabet $\{0, 1, 2\}$ that
+contain neither $01$ nor $12$ as two consecutive letters.
 
 ## Depends on
 
-- [Positional Colored Composition Count](positional-colored-composition-count.md)
+- [Positional colored compositions](positional-colored-composition-count.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.D3_one
 ---
 
-# D3 one
+# Three-colored distinct-part partitions of $1$
 
-A partition of `1` into three-colored distinct parts chooses one of three
-colors, so the finite-set encoding `D3 1` equals `3`.
+**Three-colored distinct-part partitions of $1$.** The number $D_3(1)$ of partitions of $1$ into
+parts of three colors, with the parts of each color distinct, equals $3$: the single part $1$
+takes one of the three colors.
 
 ## Depends on
 
-- [D3](d3.md)
+- [Three-colored distinct-part partitions](d3.md)
 
 ## Sources
 

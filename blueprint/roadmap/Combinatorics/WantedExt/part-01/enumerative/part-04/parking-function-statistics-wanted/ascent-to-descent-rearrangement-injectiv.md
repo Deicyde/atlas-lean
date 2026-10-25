@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ascentToDescentRearrangement_injective
 ---
 
-# Ascent To Descent Rearrangement injective
+# The ascent-to-descent rearrangement is injective
 
-The map `ν` is injective (on all words over `ℕ`; since `ν` rearranges letters, this is
-injectivity on each orbit `𝔖_n(y)`).
+**The ascent-to-descent rearrangement is injective.** The ascent-to-descent rearrangement
+$\nu$ is injective on finite words over $\mathbb{N}$: if $\nu(x) = \nu(x')$, then $x = x'$.
+
+Since $\nu$ rearranges letters, this is the same as injectivity of $\nu$ on the rearrangements of
+each fixed word.
 
 ## Depends on
 

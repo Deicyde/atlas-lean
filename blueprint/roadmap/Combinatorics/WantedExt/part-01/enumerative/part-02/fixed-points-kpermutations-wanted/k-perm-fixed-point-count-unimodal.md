@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.kPermFixedPointCount_unimodal
 ---
 
-# K Perm Fixed Point Count unimodal
+# Unimodality of fixed-point counts for permutations with a given number of cycles
 
-Corollary 2 (unimodality part): for `k ≤ n` the sequence `(a(n, k, j))_{j=0}^{k}` is unimodal
-with a peak or a plateau of two elements: it weakly increases up to its first maximizer `m`,
-weakly decreases afterwards, and only `m` and `m + 1` attain the maximum. The paper's "SLC"
-conclusion is not stated (the abbreviation is not defined in the extracted statement).
+**Unimodality of fixed-point counts for permutations with a given number of cycles.** Write
+$a(n, k, j)$ for the number of permutations of an $n$-element set with exactly $k$ cycles (fixed
+points counted as cycles of length one) and exactly $j$ fixed points. If $k \le n$, then there is
+an $m \le k$ such that $j \mapsto a(n, k, j)$ is weakly increasing on $\{0, \dots, m\}$ and weakly
+decreasing on $\{m, \dots, k\}$, and every $i \le k$ with $a(n, k, i) = a(n, k, m)$ is $m$ or
+$m + 1$.
+
+The paper's "SLC" conclusion is not stated (the abbreviation is not defined in the extracted
+statement).
 
 ## Depends on
 
-- [K Perm Fixed Point Count](k-perm-fixed-point-count.md)
+- [Permutations counted by cycles and fixed points](k-perm-fixed-point-count.md)
 
 ## Sources
 

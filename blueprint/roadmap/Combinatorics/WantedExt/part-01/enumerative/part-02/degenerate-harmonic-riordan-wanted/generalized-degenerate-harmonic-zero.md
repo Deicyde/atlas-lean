@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.generalizedDegenerateHarmonic_zero
 ---
 
-# Generalized Degenerate Harmonic zero
+# The zeroth generalized degenerate harmonic number
 
-`H_{0,λ}(α) = 0`.
+**The zeroth generalized degenerate harmonic number.** For all real numbers $\lambda$ and
+$\alpha$, the generalized degenerate harmonic number $H_{0,\lambda}(\alpha)$ is $0$.
 
 ## Depends on
 
-- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
+- [Generalized degenerate harmonic numbers](generalized-degenerate-harmonic.md)
 
 ## Sources
 

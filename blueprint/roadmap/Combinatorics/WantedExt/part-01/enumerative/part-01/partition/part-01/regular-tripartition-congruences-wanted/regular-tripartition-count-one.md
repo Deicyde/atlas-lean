@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.regularTripartitionCount_one
 ---
 
-# Regular Tripartition Count one
+# The number of $\ell$-regular tripartitions of $1$
 
-`T_ℓ(1) = 3` for `ℓ ≠ 1`: the single part `1` sits in one of the three components.
+**The number of $\ell$-regular tripartitions of $1$.** For every natural number $\ell \ne 1$,
+the number $T_\ell(1)$ of $\ell$-regular tripartitions of $1$ is $3$: the single part $1$ lies in
+one of the three components.
 
 ## Depends on
 
-- [Regular Tripartition Count](regular-tripartition-count.md)
+- [Regular tripartition counts](regular-tripartition-count.md)
 
 ## Sources
 

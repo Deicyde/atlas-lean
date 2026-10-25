@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.card_diagonalClass_eq_prod_choose
 ---
 
-# Card diagonal Class eq prod choose
+# Number of partitions with a given diagonal sequence
 
-Theorem 1 (main theorem): with `q`, `L`, `b_i` as in Proposition 8, the number of partitions
-with diagonal sequence `d = δ(α)` is `|[d]| = ∏_{i=q}^{L-1} C(b_i + b_{i+1} + 1, b_i + 1)`.
+**Number of partitions with a given diagonal sequence.** Let $\alpha$ be a partition of $n$
+with diagonal sequence $\delta(\alpha) = (d_j)_{j \ge 1}$, set $d_0 = 0$, and let $q, L \ge 0$ be
+integers with $d_j = j$ for all $1 \le j \le q$, $d_{q+1} \ne q + 1$, $d_L \ne 0$ and
+$d_{L+1} = 0$. Put $b_i = \max(d_i - d_{i+1}, 0)$. Then the number of partitions of $n$ whose
+diagonal sequence equals $\delta(\alpha)$ is
+
+$$\prod_{i=q}^{L-1} \binom{b_i + b_{i+1} + 1}{b_i + 1}.$$
 
 ## Depends on
 
-- [Diagonal Class](diagonal-class.md)
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Diagonal class of a partition](diagonal-class.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

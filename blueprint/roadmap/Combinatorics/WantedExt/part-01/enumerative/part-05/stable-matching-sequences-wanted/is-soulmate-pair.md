@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.StableMatchingSequences.IsSoulmatePair
 ---
 
-# Is Soulmate Pair
+# Soulmate pair
 
-Man `i` and woman `j` are soulmates: each ranks the other first.
+**Soulmate pair.** For a preference profile of $n$ men and $n$ women, man $i$ and woman $j$
+are soulmates when each ranks the other first: $j$ is the first choice of $i$ and $i$ is the
+first choice of $j$.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
 
 ## Proof depends on
 
-- [Man Rank](man-rank.md)
-- [Woman Rank](woman-rank.md)
+- [Rank of a woman for a man](man-rank.md)
+- [A woman's rank of a man](woman-rank.md)
 
 ## Sources
 

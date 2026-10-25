@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.ghptInterior
 ---
 
-# Ghpt Interior
+# Interior step of the generalized hyperbolic Pascal triangle
 
-One step of the generalized hyperbolic Pascal triangle, without the two winger elements:
-for a row `v₀, v₁, …, v_m` of (type, value) pairs, consecutive entries `v_{i-1}, v_i` produce a
-type-`A` vertex (code `1`) with value `v_{i-1} + v_i`, and each interior entry `v_i`
-(`0 < i < m`) then produces its type-`B` descendants (code `2`) with its value: `q - 4` of them
-for a type-`A` vertex and `q - 3` for a type-`B` vertex. Wingers have code `0`.
+**Interior step of the generalized hyperbolic Pascal triangle.** Fix $q \in \mathbb{N}$ and a
+type $R$ with an addition. A vertex is recorded as a pair $(c, x)$ of a type code $c \in \mathbb{N}$
+(code $0$ for the wingers at the ends of a row, $1$ for type $A$ and $2$ for type $B$) and a
+value $x \in R$. Given a list $v_0, v_1, \dots, v_m$ of such pairs with $m \ge 1$ and
+$v_i = (c_i, x_i)$, the interior step lists, from left to right and for $i = 1, \dots, m$, the
+type-$A$ vertex $(1, x_{i-1} + x_i)$, followed, when $i < m$, by $d_i$ copies of the type-$B$
+vertex $(2, x_i)$, where $d_i = q - 4$ if $c_i = 1$ and $d_i = q - 3$ otherwise (both differences
+truncated at $0$). A list with fewer than two entries gives the empty list.
 
 ## Depends on
 

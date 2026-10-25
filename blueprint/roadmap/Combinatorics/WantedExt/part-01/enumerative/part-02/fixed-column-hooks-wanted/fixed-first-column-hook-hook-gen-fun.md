@@ -5,21 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.fixedFirstColumnHook_hook_genFun
 ---
 
-# Fixed First Column Hook hook gen Fun
+# Partitions with a fixed first-column hook of given size
 
-The generating function for the number of partitions of `n` with an `h`-fixed hook in the
-first column arising from a hook of size `k` is
-`Σ_{l=1}^{k} q^{k+l(k-h-1)}/(q; q)_{k-h-1} [k-1, l-1]_q`.
+**Partitions with a fixed first-column hook of given size.** Let $n$ and $k$ be natural numbers
+with $k \ge 1$ and let $h < k$ be an integer. The number of partitions $\lambda$ of $n$ that have an
+$h$-fixed hook in column $1$ at some row $s$ whose hook length is $h_{s,1}(\lambda) = k$ is the
+coefficient of $q^n$ in
 
-`h ∈ ℤ` with `h < k` (a fixed hook of size `k` sits in row `k - h ≥ 1`).
+$$\sum_{l=1}^{k} \frac{q^{k+l(k-h-1)}}{(q;q)_{k-h-1}} \binom{k-1}{l-1}_q,$$
+
+where $(q;q)_j = \prod_{i\lt j} (1 - q^{i+1})$ is the finite $q$-Pochhammer symbol and
+$\binom{a}{b}_q$ is the Gaussian binomial coefficient.
+
+Such a hook sits in row $s = k - h \ge 1$.
 
 ## Depends on
 
 - [Gaussian binomial coefficient](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
 - [Finite $Q$-Pochhammer symbol](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
-- [Is Fixed Column Hook](is-fixed-column-hook.md)
-- [Partition Hook Length](partition-hook-length.md)
-- [Partition Row Len](partition-row-len.md)
+- [Fixed hooks in a column of a partition](is-fixed-column-hook.md)
+- [Hook length of a square of a partition](partition-hook-length.md)
+- [Row lengths of a partition](partition-row-len.md)
 
 ## Sources
 

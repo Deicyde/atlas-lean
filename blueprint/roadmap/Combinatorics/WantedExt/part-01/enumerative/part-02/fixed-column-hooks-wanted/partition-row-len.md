@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.partitionRowLen
 ---
 
-# Partition Row Len
+# Row lengths of a partition
 
-The row length `λ_s` of a partition: its `s`-th largest part (rows are 1-indexed, and the
-value is `0` past the last row), computed as the number of columns `j ∈ [1, n]` of length at
-least `s`.
+**Row lengths of a partition.** For a partition $\lambda$ of $n$ and a natural number $s$, the
+row length $\lambda_s$ is the number of $j \in \{1, \dots, n\}$ whose column length $\lambda'_j$ is
+at least $s$. For $s \ge 1$ this is the $s$-th largest part of $\lambda$ (rows are numbered from
+$1$), and it is $0$ when $\lambda$ has fewer than $s$ parts.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partition Col Len](partition-col-len.md)
+- [Column lengths of a partition](partition-col-len.md)
 
 ## Sources
 

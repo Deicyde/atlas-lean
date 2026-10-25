@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.kingFlatPOPAboveGF_zero_eq_rename
 ---
 
-# King Flat POPAbove GF zero eq rename
+# The generating functions for $Q_1$ and $P_1$ differ by a change of variables
 
-For `Q₁` (label `1` above labels `2, 3, 4`), `Ā_{Q₁}(x, p, q, s, t) = A_{P₁}(x, q, p, s, t)`.
-The substitution of variables is
-`MvPolynomial.rename` along `Equiv.swap (0 : Fin 4) 1` applied coefficientwise.
+**The generating functions for $Q_1$ and $P_1$ differ by a change of variables.** Let $P_1$
+(respectively $Q_1$) be the flat partially ordered pattern of length $4$ whose first element lies
+below (respectively above) each of the other three. Let $A_{P_1}(x; p, q, u, v)$ be the
+generating function of king permutations avoiding $P_1$, in which $x$ marks length and $p$, $q$,
+$u$, $v$ mark ascents, descents, left-to-right maxima and right-to-left maxima, and let
+$\bar A_{Q_1}(x; p, q, s, t)$ be the generating function of king permutations avoiding $Q_1$, in
+which $s$ and $t$ mark left-to-right minima and right-to-left minima instead. Then
+$\bar A_{Q_1}(x; p, q, s, t) = A_{P_1}(x; q, p, s, t)$: the series $\bar A_{Q_1}$ is obtained
+from $A_{P_1}$ by exchanging $p$ with $q$ in every coefficient and writing $s$, $t$ for $u$, $v$.
 
 ## Depends on
 
-- [King Flat POPAbove GF](king-flat-popabove-gf.md)
-- [King Flat POPBelow GF](king-flat-popbelow-gf.md)
+- [Generating function of king permutations avoiding $Q_{j+1}$](king-flat-popabove-gf.md)
+- [Generating function of king permutations avoiding $P_{j+1}$](king-flat-popbelow-gf.md)
 
 ## Sources
 

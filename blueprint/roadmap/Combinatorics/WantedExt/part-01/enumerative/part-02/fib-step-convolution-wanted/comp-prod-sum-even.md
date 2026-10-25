@@ -5,17 +5,22 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.compProdSum_even
 ---
 
-# Theorem 35
+# Convolution of an even number of consecutive Fibonacci step sequences
 
-**Theorem 35**, even case: for `ℓ ≥ 1`,
-`∑_{K(2ℓ, n-ℓ(m+ℓ-1))} ∏_{j=0}^{2ℓ-1} F^{(m+j)}_{k_{j+1}}
-= ∑_{K(ℓ, n)} ∏_{j=0}^{ℓ-1}
-(F^{(m+2j+1)}_{k_{j+1}} - F^{(m+2j)}_{k_{j+1}})`.
+**Convolution of an even number of consecutive Fibonacci step sequences.** Write $F^{(s)}_k$
+for the Fibonacci $s$-step numbers, and write $\sum_{K(r,N)}$ for a sum over all
+$(k_1, \dots, k_r) \in \mathbb{N}^r$ with $k_1 + \dots + k_r = N$. For all natural numbers
+$\ell \ge 1$, $m \ge 1$ and $n \ge \ell(m + \ell - 1)$,
+
+$$
+\sum_{K(2\ell, n - \ell(m + \ell - 1))} \prod_{j=0}^{2\ell-1} F^{(m+j)}_{k_{j+1}} =
+\sum_{K(\ell, n)} \prod_{j=0}^{\ell-1} \left(F^{(m+2j+1)}_{k_{j+1}} - F^{(m+2j)}_{k_{j+1}}\right).
+$$
 
 ## Depends on
 
-- [Comp Prod Sum](comp-prod-sum.md)
-- [Fib Step](fib-step.md)
+- [Sums over compositions](comp-prod-sum.md)
+- [Fibonacci $m$-step numbers](fib-step.md)
 
 ## Sources
 

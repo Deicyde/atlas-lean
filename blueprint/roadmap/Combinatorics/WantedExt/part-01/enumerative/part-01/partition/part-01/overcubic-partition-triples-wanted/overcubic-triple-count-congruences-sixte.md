@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.overcubicTripleCount_congruences_sixteen_mul_args
 ---
 
-# Overcubic Triple Count congruences sixteen mul args
+# Congruences for overcubic partition triples at multiples of 16
 
-For all `n, α ≥ 0`: `bt(64n+48) ≡ 0`, `bt(128n+80) ≡ 0`, `bt(128n+96) ≡ 0`,
-`bt(256n+160) ≡ 0`, `bt(256n+32) ≡ bt(128n+16)`, and `bt(256·2^α n + 192) ≡ 0`, all modulo `4`.
+**Congruences for overcubic partition triples at multiples of 16.** Let $\mathrm{bt}(n)$ be the
+number of overcubic partition triples of $n$. For all natural numbers $n$ and $\alpha$, each of
+$\mathrm{bt}(64n+48)$, $\mathrm{bt}(128n+80)$, $\mathrm{bt}(128n+96)$, $\mathrm{bt}(256n+160)$ and
+$\mathrm{bt}(256 \cdot 2^{\alpha} n + 192)$ is divisible by $4$, and
+$\mathrm{bt}(256n+32) \equiv \mathrm{bt}(128n+16) \pmod 4$.
 
 ## Depends on
 
-- [Overcubic Triple Count](overcubic-triple-count.md)
+- [Number of overcubic partition triples](overcubic-triple-count.md)
 
 ## Sources
 

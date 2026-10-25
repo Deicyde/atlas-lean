@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.permWordleCoeff_zero
 ---
 
-# Perm Wordle Coeff zero
+# No permutation is guessed in zero guesses
 
-The constant coefficient of `f_S` vanishes.
+**No permutation is guessed in zero guesses.** For every strategy $S$ and every $n$, write
+$f_S$ for the generating function whose coefficient $[x^r] f_S$ is the number of permutations of
+$\{0, \dots, n-1\}$ that $S$ guesses in exactly $r$ guesses. Then the constant coefficient
+$[x^0] f_S$ vanishes.
 
 ## Depends on
 
-- [Perm Wordle Coeff](perm-wordle-coeff.md)
+- [Coefficients of the guess-count generating function](perm-wordle-coeff.md)
 
 ## Proof depends on
 
-- [Perm Wordle Solved In](perm-wordle-solved-in.md)
-- [Perm Wordle Guess](perm-wordle-guess.md)
+- [Permutation Wordle games solved in a given number of guesses](perm-wordle-solved-in.md)
+- [Guesses of permutation Wordle](perm-wordle-guess.md)
 
 ## Sources
 

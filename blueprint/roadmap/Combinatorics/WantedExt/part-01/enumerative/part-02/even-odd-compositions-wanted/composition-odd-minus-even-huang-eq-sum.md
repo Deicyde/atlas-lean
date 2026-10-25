@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.compositionOddMinusEven_huang_eq_sum
 ---
 
-# Composition Odd Minus Even huang eq sum
+# Signed count of Huang's compositions, binomial form
 
-Theorem 16, second formula: for `k, n ≥ 1`, the signed count `b^{(m)}_{k,n}`
-of the compositions of `n + k - 1` in Theorem 15 (exactly `m` parts less than
-`k`, placed as in `IsHuangSmallPartPlacement`) is
-`∑_{i + (k+1)m + jk + ℓ(k-1) + h = n} (-1)^{ℓ+j} binom(i,m) binom(i+j-1,j) binom(m,ℓ) binom(m+h-1,h)`.
-The `ℕ`-truncated `binom(i+j-1, j)` and `binom(m+h-1, h)` agree with the
-paper's values (`binom(-1, 0) = 1`).
+**Signed count of Huang's compositions, binomial form.** Let $k, n \ge 1$ and $m \ge 0$.
+Among the compositions of $n + k - 1$ with exactly $m$ parts less than $k$ in which every part
+less than $k$ is preceded by a part at least $k$ and followed by a part that is either the last
+part or greater than $k$, let $b^{(m)}_{k,n}$ be the number with an odd number of parts minus the
+number with an even number of parts. Then $b^{(m)}_{k,n}$ is the sum of
+$(-1)^{\ell+j} \binom{i}{m} \binom{i+j-1}{j} \binom{m}{\ell} \binom{m+h-1}{h}$ over all
+$i, j, \ell, h \ge 0$ with $i + (k+1)m + jk + \ell(k-1) + h = n$, where $\binom{-1}{0} = 1$.
 
 ## Depends on
 
-- [Is Huang Small Part Placement](is-huang-small-part-placement.md)
-- [Composition Odd Minus Even](composition-odd-minus-even.md)
+- [Huang's placement condition for small parts](is-huang-small-part-placement.md)
+- [Signed count of compositions](composition-odd-minus-even.md)
 
 ## Sources
 

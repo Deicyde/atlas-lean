@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.permWordleCoeff_one_and_two
 ---
 
-# Theorem 5
+# One- and two-guess counts for deranged strategies
 
-**Theorem 5.** For every deranged strategy `S` of length `n` (each component `S m`,
-`2 ≤ m ≤ n`, fixed-point-free), `[x¹] f_S = 1` and `[x²] f_S = A(n, 1) = 2ⁿ - n - 1`.
+**One- and two-guess counts for deranged strategies.** Let $n \in \mathbb{N}$ and let $S$ be
+a strategy whose component $S[m]$ has no fixed point for every $2 \le m \le n$, and write
+$[x^r] f_S$ for the number of permutations of $\{0, \dots, n-1\}$ that $S$ guesses in exactly $r$
+guesses. Then $[x^1] f_S = 1$ and $[x^2] f_S = 2^n - n - 1$, the Eulerian number $A(n, 1)$.
 
 ## Depends on
 
-- [Perm Wordle Coeff](perm-wordle-coeff.md)
+- [Coefficients of the guess-count generating function](perm-wordle-coeff.md)
 
 ## Sources
 

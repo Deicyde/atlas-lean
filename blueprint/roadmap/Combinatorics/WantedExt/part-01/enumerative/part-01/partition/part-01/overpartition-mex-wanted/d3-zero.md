@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.D3_zero
 ---
 
-# D3 zero
+# Three-colored distinct-part partitions of $0$
 
-The empty triple of colored distinct-part sets is the unique object counted by
-`D_3(0)`, so the finite-set encoding `D3 0` equals `1`.
+**Three-colored distinct-part partitions of $0$.** The number $D_3(0)$ of partitions of $0$ into
+parts of three colors, with the parts of each color distinct, equals $1$: the empty partition is
+the only one.
 
 ## Depends on
 
-- [D3](d3.md)
+- [Three-colored distinct-part partitions](d3.md)
 
 ## Sources
 

@@ -6,10 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.leftSpineLength_examples
 ---
 
-# Left Spine Length examples
+# Left spine lengths of small binary trees
 
-Characteristic values: the empty tree has left spine length `0`, and a node with a left
-child and a right child has left spine length `2`.
+**Left spine lengths of small binary trees.** The empty binary tree has left spine length
+$0$, and the binary tree with three nodes, a root whose left child and right child have no
+children, has left spine length $2$.
 
 ## Depends on
 

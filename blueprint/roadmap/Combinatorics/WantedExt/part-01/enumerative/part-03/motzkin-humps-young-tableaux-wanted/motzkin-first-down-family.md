@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.MotzkinFirstDownFamily
 ---
 
-# Motzkin First Down Family
+# Motzkin prefixes whose first non-up step is down
 
-The finite disjoint union `⋃_{0 ≤ k ≤ n-2} 𝓜^{D*}_{n,k}`. The paper's lower
-bound is automatic for `k : ℕ`, while `k ≤ n-2` is stated without truncation as
-`k + 2 ≤ n`; each path ends at height `k` and has first non-up step `D`.
+**Motzkin prefixes whose first non-up step is down.** Use the steps $U = (1,1)$,
+$F = (1,0)$ and $D = (1,-1)$, and call a word in these steps a Motzkin prefix if none of its
+initial segments ends below height $0$. For a natural number $n$, this is the set of pairs
+$(k, p)$ where $k$ is a natural number with $k \le n - 2$ and $p$ is a Motzkin prefix of length
+$n$ ending at height $k$ whose first step other than $U$ exists and is $D$.
+
+This is the paper's disjoint union $\bigcup_{0 \le k \le n-2} \mathcal{M}^{D*}_{n,k}$, keeping
+the index $k$ with each path.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [First Nonup Step Down](first-nonup-step-down.md)
-- [Is Motzkin Prefix](is-motzkin-prefix.md)
+- [Paths whose first non-up step is down](first-nonup-step-down.md)
+- [Motzkin prefix](is-motzkin-prefix.md)
 
 ## Sources
 

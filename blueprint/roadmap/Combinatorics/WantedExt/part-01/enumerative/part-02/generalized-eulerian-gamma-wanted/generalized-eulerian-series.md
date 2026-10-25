@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.generalizedEulerianSeries
 ---
 
-# Generalized Eulerian Series
+# Generating function of the generalized Eulerian polynomials
 
-The generating function `𝒫(q, t; x, y; z) = ((x - y) / (x e^(yz) - y e^(xz)))^q e^((x+y)qtz)`
-of Equation (2), the `q`-th power taken by Mathlib's binomial series (the base has constant
-term `1` when `x ≠ y`).
+**Generating function of the generalized Eulerian polynomials.** For rational numbers
+$q$, $t$, $x$, $y$ with $x \ne y$, this is the formal power series in $z$ over $\mathbb{Q}$
+
+$$\mathcal{P}(q, t; x, y; z) = \left(\frac{x - y}{x e^{yz} - y e^{xz}}\right)^q e^{(x+y)qtz}.$$
+
+Here the base has constant term $1$, and its $q$-th power is the binomial series
+$(1 + u)^q = \sum_{n \ge 0} \binom{q}{n} u^n$ with $u$ the base minus $1$. For $x = y$ the
+denominator is zero and the formula above does not apply.
 
 ## Depends on
 

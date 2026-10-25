@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.signedInvAvoidCount
 ---
 
-# Signed Inv Avoid Count
+# Number of signed inversion sequences avoiding a set of patterns
 
-`|Ī_n(B)|`: the number of signed inversion sequences of length `n` avoiding every pattern
-of `B`.
+**Number of signed inversion sequences avoiding a set of patterns.** A signed inversion
+sequence of length $n$ is a word $e_1 \cdots e_n$ in which each entry $e_i$ is a natural number
+$|e_i| \le i - 1$, either barred or not; that is, $e_i \in \lbrace 0, \bar 0, 1, \bar 1, \dots,
+i - 1, \overline{i - 1} \rbrace$. For a finite set $B$ of length-2 signed patterns and $n \ge 0$,
+$|\bar I_n(B)|$ is the number of signed inversion sequences of length $n$ that contain no pattern
+of $B$.
 
 ## Depends on
 
-- [Signed Pattern2](signed-pattern2.md)
+- [Length-2 signed pattern](signed-pattern2.md)
 
 ## Proof depends on
 
-- [Signed Inv Seq Contains](signed-inv-seq-contains.md)
+- [Containment of a length-2 signed pattern](signed-inv-seq-contains.md)
 
 ## Sources
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.LastNonflatStepUp
 ---
 
-# Last Nonflat Step Up
+# Paths whose last non-flat step is up
 
-A Motzkin prefix belongs to `𝓜^{*U}_{n,h}` when its last non-flat step is up;
-the existential formula is exactly the encoding specified in the paper task.
+**Paths whose last non-flat step is up.** A word $p = p_0 p_1 \cdots p_{n-1}$ of length $n$
+in the steps $U$ (up), $F$ (flat) and $D$ (down) has last non-flat step up when some position
+$i$ has $p_i = U$ and every later step $p_j$ with $j > i$ is $F$. In particular, such a word
+contains an up step.
+
+Among the Motzkin prefixes of length $n$ ending at height $h$ (words that never go below height
+$0$ and end at height $h$), these words form the paper's set $\mathcal{M}^{*U}_{n,h}$.
 
 ## Depends on
 

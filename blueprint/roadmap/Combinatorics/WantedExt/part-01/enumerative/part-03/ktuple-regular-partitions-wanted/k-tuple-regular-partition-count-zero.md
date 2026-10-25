@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.kTupleRegularPartitionCount_zero
 ---
 
-# K Tuple Regular Partition Count zero
+# The empty tuple of $\ell$-regular partitions
 
-The empty tuple: `T_{ℓ,0}(n)` is `1` at `n = 0` and `0` otherwise.
+**The empty tuple of $\ell$-regular partitions.** For all natural numbers $\ell$ and $n$,
+writing $T_{\ell,k}(n)$ for the number of $k$-tuples of $\ell$-regular partitions with total
+$n$, we have $T_{\ell,0}(n) = 1$ if $n = 0$ and $T_{\ell,0}(n) = 0$ otherwise.
 
 ## Depends on
 
-- [K Tuple Regular Partition Count](k-tuple-regular-partition-count.md)
+- [Number of $k$-tuples of $\ell$-regular partitions](k-tuple-regular-partition-count.md)
 
 ## Sources
 

@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.card_diagonalClass_filter_card_parts_eq_q
 ---
 
-# Card diagonal Class filter card parts eq q
+# Partitions in a diagonal class with as many parts as the initial staircase
 
-Proposition 8: write `δ(α) = (1, 2, …, q, d_{q+1}, …, d_L)` (`q` maximal with `d_j = j` for
-`j ≤ q`, `d_L` the last nonzero entry) and `b_i = d_i - d_{i+1}` (so `b_L = d_L`). The number of
-partitions in `[d]` with exactly `q` parts is `∏_{i=q}^{L-1} C(b_i + b_{i+1}, b_i)`.
+**Partitions in a diagonal class with as many parts as the initial staircase.** Let $\alpha$
+be a partition of $n$ with diagonal sequence $\delta(\alpha) = (d_j)_{j \ge 1}$, set $d_0 = 0$,
+and let $q, L \ge 0$ be integers with $d_j = j$ for all $1 \le j \le q$, $d_{q+1} \ne q + 1$,
+$d_L \ne 0$ and $d_{L+1} = 0$. Put $b_i = \max(d_i - d_{i+1}, 0)$. Then the number of partitions
+of $n$ with exactly $q$ parts whose diagonal sequence equals $\delta(\alpha)$ is
+
+$$\prod_{i=q}^{L-1} \binom{b_i + b_{i+1}}{b_i}.$$
 
 ## Depends on
 
-- [Diagonal Class](diagonal-class.md)
-- [Diagonal Sequence](diagonal-sequence.md)
+- [Diagonal class of a partition](diagonal-class.md)
+- [Diagonal sequence of a partition](diagonal-sequence.md)
 
 ## Sources
 

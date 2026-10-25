@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.restrictedCombinationTotal_one_four_genFun
 ---
 
-# Restricted Combination Total one four gen Fun
+# Generating function for subsets avoiding differences 1 and 4
 
-Proposition 9: `∑ S^{1,4}_n x^n = (1+x+x^2+x^3+2x^4+x^6)/(1-x-x^3+x^4-2x^5+x^6-x^7)`,
-stated with the denominator cleared in `ℤ⟦X⟧`.
+**Generating function for subsets avoiding differences 1 and 4.** Let $S^{\{1,4\}}_n$ be the
+number of subsets of $\{1, \dots, n\}$ in which no two elements differ by $1$ or by $4$. Then,
+in the ring $\mathbb{Z}[[x]]$ of formal power series,
+
+$$\Bigl(\sum_{n \ge 0} S^{\{1,4\}}_n x^n\Bigr)(1 - x - x^3 + x^4 - 2x^5 + x^6 - x^7) =
+1 + x + x^2 + x^3 + 2x^4 + x^6.$$
+
+This is the paper's formula for $\sum_{n \ge 0} S^{\{1,4\}}_n x^n$ as a quotient of the two
+polynomials, with the denominator cleared.
 
 ## Depends on
 
-- [Restricted Combination Total](restricted-combination-total.md)
+- [Number of subsets avoiding a set of differences](restricted-combination-total.md)
 
 ## Sources
 

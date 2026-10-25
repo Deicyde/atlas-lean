@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.arcsinAntiderivC_one_two
 ---
 
-# Arcsin Antideriv C one two
+# The first two arcsine antiderivative constants
 
-`C_1 = -24` and `C_2 = -120`, as in the paper's Table 1.
+**The first two arcsine antiderivative constants.** Zurita's constants satisfy $C_1 = -24$
+and $C_2 = -120$, as in Table 1 of the paper.
 
 ## Depends on
 
-- [Arcsin Antideriv C](arcsin-antideriv-c.md)
+- [Zurita's arcsine antiderivative constants](arcsin-antideriv-c.md)
 
 ## Proof depends on
 
-- [Arcsin Antideriv QCoeff](arcsin-antideriv-qcoeff.md)
+- [Coefficients of Zurita's Q-polynomials](arcsin-antideriv-qcoeff.md)
 
 ## Sources
 

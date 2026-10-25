@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount_five_mod_two
 ---
 
-# Max Rook Partition Count five mod two
+# Parity of the number of partitions with max-rook number 5
 
-Parity of `R_5(n)` for `n > 25`: even iff `n ≡ 5, 7 (mod 8)`.
+**Parity of the number of partitions with max-rook number 5.** Let $R_5(n)$ be the number of
+partitions of $n$ with max-rook number $5$. For every natural number $n > 25$, $R_5(n)$ is even if
+$n \equiv 5 \pmod 8$ or $n \equiv 7 \pmod 8$, and odd otherwise.
 
 ## Depends on
 
-- [Max Rook Partition Count](max-rook-partition-count.md)
+- [Partitions with a given max-rook number](max-rook-partition-count.md)
 
 ## Sources
 

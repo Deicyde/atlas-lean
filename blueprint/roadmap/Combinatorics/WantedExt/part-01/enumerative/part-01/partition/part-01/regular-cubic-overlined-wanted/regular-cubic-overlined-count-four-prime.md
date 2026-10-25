@@ -5,16 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.regularCubicOverlinedCount_four_prime_mod_four
 ---
 
-# Regular Cubic Overlined Count four prime mod four
+# Congruences modulo 4 for 4-regular cubic partitions with odd parts overlined
 
-For a prime `p ≥ 5` with `(-2/p) = -1`, all `δ, n ≥ 0` and `1 ≤ t ≤ p - 1`:
-`a_4(4p^{2δ} n + (3p^{2δ} - 1)/2) ≡ [qⁿ] 2 f_1 f_8 (mod 4)` and
-`a_4(4p^{2δ+2} n + 4p^{2δ+1} t + (3p^{2δ+2} - 1)/2) ≡ 0 (mod 4)`. The divisions are exact.
+**Congruences modulo 4 for 4-regular cubic partitions with odd parts overlined.** Write
+$f_k = \prod_{m \ge 1} (1 - q^{km})$ for the Euler products in the ring of integer power series
+in $q$, and $a_4(n)$ for the $n$th coefficient of $f_2 f_4^2 f_{16} / (f_1^2 f_4 f_8)$, the
+number of $4$-regular cubic partitions of $n$ with odd parts overlined. Let $p \ge 5$ be a prime
+with Legendre symbol $\left(\frac{-2}{p}\right) = -1$ and let $\delta \ge 0$. Then for every
+$n \ge 0$, $a_4(4p^{2\delta} n + (3p^{2\delta} - 1)/2)$ is congruent modulo $4$ to twice the
+coefficient of $q^n$ in $f_1 f_8$, and for all $n \ge 0$ and $1 \le t \le p - 1$,
+
+$$
+a_4\left(4p^{2\delta+2} n + 4p^{2\delta+1} t + \frac{3p^{2\delta+2} - 1}{2}\right) \equiv 0
+\pmod{4}.
+$$
+
+The divisions by $2$ are exact.
 
 ## Depends on
 
 - [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
-- [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
+- [ℓ-regular cubic partitions with odd parts overlined](regular-cubic-overlined-count.md)
 
 ## Sources
 

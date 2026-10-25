@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.zeroExtendedChoose
 ---
 
-# Zero Extended Choose
+# Zero-extended binomial coefficient
 
-The binomial coefficient `binom(a, b)` for integers `a`, `b`, taken to be `0` unless
-`0 ≤ a` and `0 ≤ b`. This is the convention under which the paper's formulas "give `0`" in the
-degenerate cases (for example `binom(-1, 0) = 0` in `NC_{1,1,0}`).
+**Zero-extended binomial coefficient.** For integers $a$ and $b$, the zero-extended binomial
+coefficient $\binom{a}{b}$ is the usual binomial coefficient of $a$ and $b$ when $a \ge 0$ and
+$b \ge 0$, and $0$ otherwise.
+
+This is the convention under which the paper's formulas "give $0$" in the degenerate cases (for
+example $\binom{-1}{0} = 0$ in the count of noncrossing partitions of a one-element set with
+one block and no singleton block).
 
 ## Depends on
 

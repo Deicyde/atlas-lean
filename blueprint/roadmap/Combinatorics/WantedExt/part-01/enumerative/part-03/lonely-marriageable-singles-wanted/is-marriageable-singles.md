@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsMarriageableSingles
 ---
 
-# Is Marriageable Singles
+# Marriageable singles partition
 
-A partition `P` of `[n]` is a marriageable singles partition if it has two distinct singleton
-blocks `{i}`, `{j}` such that the partition obtained by joining them into `{i, j}` is
-noncrossing.
+**Marriageable singles partition.** A set partition $P$ of $\{0, \dots, n-1\}$ is a
+marriageable singles partition if it has two distinct singleton blocks $\{i\}$ and $\{j\}$ such
+that the partition obtained from $P$ by joining them into the block $\{i, j\}$ has no crossing.
 
 ## Depends on
 
@@ -17,7 +17,7 @@ noncrossing.
 
 ## Proof depends on
 
-- [Merged Has Crossing](merged-has-crossing.md)
+- [Crossing after merging two blocks](merged-has-crossing.md)
 
 ## Sources
 

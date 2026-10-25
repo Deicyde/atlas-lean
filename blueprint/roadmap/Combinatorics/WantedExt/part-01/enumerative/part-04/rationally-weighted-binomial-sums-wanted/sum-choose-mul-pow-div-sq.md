@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_mul_pow_div_sq
 ---
 
-# Sum choose mul pow div sq
+# Binomial sums weighted by $x^k/k^2$
 
-Identity (3.6): `∑_{k=1}^n binom(n, k) x^k / k² =
-∑_{k=1}^n (1/k) ∑_{j=1}^k (1 + x)^j / j - ∑_{k=1}^n (1/k) ∑_{j=1}^k 1/j` for real `x`.
+**Binomial sums weighted by $x^k/k^2$.** For every natural number $n$ and every real number
+$x$,
+
+$$\sum_{k=1}^{n} \binom{n}{k} \frac{x^k}{k^2} =
+\sum_{k=1}^{n} \frac{1}{k} \sum_{j=1}^{k} \frac{(1+x)^j}{j} -
+\sum_{k=1}^{n} \frac{1}{k} \sum_{j=1}^{k} \frac{1}{j}.$$
 
 ## Depends on
 

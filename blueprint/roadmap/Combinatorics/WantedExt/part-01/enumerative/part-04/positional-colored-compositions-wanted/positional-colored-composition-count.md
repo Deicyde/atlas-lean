@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.positionalColoredCompositionCount
 ---
 
-# Positional Colored Composition Count
+# Positional colored compositions
 
-`c_{m,k}(ℓ)`: the number of `(m, k)`-`n`-colored compositions of `ℓ`, i.e. the sum over
-compositions of `ℓ` of the product of the parts at positions `≡ k (mod m)` (each such part `p`
-has `p` colors; the position of the `i`-th block, `0`-indexed, is `i + 1`). The paper takes
-`m ≥ 1`; the definition is total, and at `m = 0` (where `x % 0 = x`) it colors only the part at
-position exactly `k`. The statements below that vary `m` assume `1 ≤ m`.
+**Positional colored compositions.** For natural numbers $m$, $k$ and $\ell$, $c_{m,k}(\ell)$
+is the number of $(m, k)$-colored compositions of $\ell$: compositions of $\ell$ in which every
+part whose position, counted from $1$, is congruent to $k$ modulo $m$ gets one of $p$ colors,
+where $p$ is the part, and the other parts are uncolored. Equivalently, $c_{m,k}(\ell)$ is the
+sum, over all compositions $(p_1, \dots, p_r)$ of $\ell$, of the product of the parts $p_i$ with
+$i \equiv k \pmod m$.
+
+The paper takes $m \ge 1$. For $m = 0$, congruence modulo $0$ is equality, so only the part at
+position exactly $k$ is colored.
 
 ## Depends on
 

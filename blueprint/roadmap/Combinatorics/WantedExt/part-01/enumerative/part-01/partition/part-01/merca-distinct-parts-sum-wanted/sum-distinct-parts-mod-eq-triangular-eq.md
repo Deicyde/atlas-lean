@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.sumDistinctPartsModEq_triangular_eq_distinct_half
 ---
 
-# Sum Distinct Parts Mod Eq triangular eq distinct half
+# Signed triangular sum of $a_{r,m}$ and distinct partitions
 
-For `0 ≤ r < m`, `∑_{k ≥ 0} (-1)^{k(k+1)/2} a_{r,m}(n - k(k+1)/2)
-= ∑_{j ≥ 0} (mj + r) q((n - mj - r)/2)`, with `q(x)` the number of partitions of `x` into
-distinct parts and `q(x) = 0` when `x` is not an integer.
+**Signed triangular sum of $a_{r,m}$ and distinct partitions.** Let $m, r, n$ be natural
+numbers with $r < m$. Write $a_{r,m}(k)$ for the sum of the different parts congruent to $r$
+modulo $m$ in all partitions of $k$, $q(k)$ for the number of partitions of $k$ into distinct
+parts, and $\tilde q(\ell)$ for $q(\ell/2)$ when $\ell$ is even and for $0$ when $\ell$ is odd.
+Then
+
+$$
+\sum_{k \ge 0,\ k(k+1)/2 \le n} (-1)^{k(k+1)/2} a_{r,m}\bigl(n - k(k+1)/2\bigr)
+= \sum_{j \ge 0,\ mj + r \le n} (mj + r)\, \tilde q(n - mj - r).
+$$
 
 ## Depends on
 
-- [Sum Distinct Parts Mod Eq](sum-distinct-parts-mod-eq.md)
+- [Sum of different parts congruent to $r$ modulo $m$](sum-distinct-parts-mod-eq.md)
 
 ## Sources
 

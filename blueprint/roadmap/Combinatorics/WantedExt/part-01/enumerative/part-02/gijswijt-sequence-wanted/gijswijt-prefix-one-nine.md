@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.gijswijtPrefix_one_nine
 ---
 
-# Gijswijt Prefix one nine
+# First terms of Gijswijt's sequence
 
-Gijswijt's sequence starts `1, 1, 2, 1, 1, 2, 2, 2, 3`.
+**First terms of Gijswijt's sequence.** The first nine terms of Gijswijt's sequence $A^{(1)}$
+are $1, 1, 2, 1, 1, 2, 2, 2, 3$.
 
 ## Depends on
 
-- [Gijswijt Prefix](gijswijt-prefix.md)
+- [Prefixes of the $m$th order Gijswijt sequence](gijswijt-prefix.md)
 
 ## Sources
 

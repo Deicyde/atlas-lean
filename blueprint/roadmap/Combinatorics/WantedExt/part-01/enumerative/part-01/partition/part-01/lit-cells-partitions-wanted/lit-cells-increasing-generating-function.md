@@ -5,14 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.litCellsIncreasing_generatingFunction
 ---
 
-# Lit Cells Increasing generating Function
+# Generating function for lit cells of weakly increasing bargraphs
 
-The total number of lit cells over all weakly increasing partitions of `n` has generating
-function `2P(q) ∑_{i ≥ 1} q^i/(1 - q^i) - P(q) q/(1 - q) = P(q) ∑_{i ≥ 1} q^i(1 + q^i)/(1 - q^i)`.
+**Generating function for lit cells of weakly increasing bargraphs.** Let
+$P(q) = \sum_{n \ge 0} p(n) q^n$ be the partition generating function, and let
+$L(q) \in \mathbb{Z}[[q]]$ be the power series whose coefficient of $q^n$ is the total number of
+lit cells over all partitions of $n$ drawn as weakly increasing bargraphs. Then
+
+$$L(q) = 2P(q) \sum_{i \ge 1} \frac{q^i}{1 - q^i} - P(q) \frac{q}{1 - q}$$
+
+and
+
+$$L(q) = P(q) \sum_{i \ge 1} \frac{q^i (1 + q^i)}{1 - q^i},$$
+
+where the sums converge coefficientwise.
 
 ## Depends on
 
-- [Lit Cells Increasing](lit-cells-increasing.md)
+- [Lit cells of a weakly increasing bargraph](lit-cells-increasing.md)
 
 ## Sources
 

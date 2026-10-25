@@ -5,19 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.regularOverpartition_three_mul_two_power_many_primes
 ---
 
-# Regular Overpartition three mul two power many primes
+# Congruences modulo powers of two for $3 \cdot 2^\alpha$-regular overpartitions
 
-For every positive `α`, there is a nonnegative `c` such that, for every
-`d ≥ 1`, every injectively indexed family of `c + d` primes coprime to
-`6`, and every `n` coprime to all those primes, `A_{3·2^α}` at the
-product of the primes times `n / 24` is zero modulo `2ᵈ`. The hypothesis
-`24 ∣ n` is added because the paper obtains a coefficient in a series in
-`q²⁴`; when `24 ∤ n`, that coefficient is zero rather than the displayed
-natural-number argument being justified.
+**Congruences modulo powers of two for $3 \cdot 2^\alpha$-regular overpartitions.** Write
+$A_\ell(m)$ for the number of overpartitions of $m$ none of whose parts is divisible by $\ell$.
+For every natural number $\alpha \ge 1$ there is a natural number $c$ with the following
+property. Let $d \ge 1$ be a natural number, let $p_1, \dots, p_{c+d}$ be distinct primes, each
+coprime to $6$, and let $n$ be a natural number that is divisible by $24$ and coprime to every
+$p_i$. Then $A_{3 \cdot 2^\alpha}(p_1 p_2 \cdots p_{c+d} \, n / 24) \equiv 0 \pmod{2^d}$.
+
+The hypothesis that $24$ divides $n$ makes the argument an integer; the paper reads this value
+off a series in $q^{24}$.
 
 ## Depends on
 
-- [Regular Overpartition Count](regular-overpartition-count.md)
+- [Number of $\ell$-regular overpartitions](regular-overpartition-count.md)
 
 ## Sources
 

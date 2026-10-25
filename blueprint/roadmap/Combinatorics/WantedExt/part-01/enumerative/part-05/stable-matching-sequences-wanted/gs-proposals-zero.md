@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.StableMatchingSequences.gsProposals_zero
 ---
 
-# Gs Proposals zero
+# No proposals before the first round
 
-Before the first round no man has proposed.
+**No proposals before the first round.** For every preference profile, after zero rounds of
+the men-proposing Gale–Shapley algorithm every man has made zero proposals.
 
 ## Depends on
 
-- [Preference Profile](preference-profile.md)
-- [Gs Proposals](gs-proposals.md)
+- [Preference profile for $n$ men and $n$ women](preference-profile.md)
+- [Proposal counts in the Gale–Shapley algorithm](gs-proposals.md)
 
 ## Sources
 

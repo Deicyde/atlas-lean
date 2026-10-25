@@ -5,19 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.second_polygonal_eq_card_kBoxPaths_two_longAscents
 ---
 
-# Second polygonal eq card k Box Paths two long Ascents
+# Second polygonal numbers count box paths with two long ascents
 
-For `K ≥ 4` and `n ≥ 1`, the `n`th second `K`-gonal number
-`n((K-2)n + (K-4))/2` (the `K`-gonal formula `n((K-2)n - (K-4))/2` at `-n`) equals
-the number of `(K-3)`-box paths of size `n + 1` with exactly two long ascents;
-the factor `2` is cleared. The source states `K ≥ 3`; `K = 3` needs its `0`-box
-convention (Remark 6), which is not formalized.
+**Second polygonal numbers count box paths with two long ascents.** Let $K \ge 4$ and
+$n \ge 1$. Then $n\bigl((K-2)n + (K-4)\bigr)$ is twice the number of $(K-3)$-box paths of size
+$n + 1$ with exactly two long ascents (maximal runs of at least two $U$ steps). Equivalently,
+the $n$th second $K$-gonal number $n\bigl((K-2)n + (K-4)\bigr)/2$, the $K$-gonal formula
+$m\bigl((K-2)m - (K-4)\bigr)/2$ at $m = -n$, equals this number of paths.
+
+The source states this for $K \ge 3$, where the case $K = 3$ uses its convention for $0$-box
+paths.
 
 ## Depends on
 
-- [Skew Dyck Step](skew-dyck-step.md)
-- [K Box Paths](k-box-paths.md)
-- [Skew Long Ascents](skew-long-ascents.md)
+- [Skew Dyck steps](skew-dyck-step.md)
+- [$k$-box paths](k-box-paths.md)
+- [Long ascents of a skew Dyck word](skew-long-ascents.md)
 
 ## Sources
 

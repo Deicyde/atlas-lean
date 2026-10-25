@@ -5,15 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.prod_rascalZ_sub_one_eq_factorial_mul
 ---
 
-# Theorem 14
+# Closed form for the product of the shifted Rascal numbers
 
-**Theorem 14**, closed form:
-`∏_{k=1}^m (R_{n,k} - 1) = m! (n-1)↓_m` for `1 ≤ m ≤ n`,
-where `↓` is the descending factorial.
+**Closed form for the product of the shifted Rascal numbers.** For natural numbers $m$ and
+$n$ with $1 \le m \le n$,
+
+$$\prod_{k=1}^{m} (R_{n,k} - 1) = m! \, (n-1)^{\underline{m}},$$
+
+where $R_{n,k}$ denotes the Rascal numbers and $x^{\underline{m}} = x(x-1)\cdots(x-m+1)$ is the
+falling factorial.
 
 ## Depends on
 
-- [Rascal Z](rascal-z.md)
+- [Rascal numbers on the integers](rascal-z.md)
 
 ## Sources
 

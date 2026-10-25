@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.triangularQBinomial_zero_right
 ---
 
-# Triangular QBinomial zero right
+# Triangular $q$-binomial coefficients with no parts
 
-`t[r, 0] = 1`: only the empty partition has no parts.
+**Triangular $q$-binomial coefficients with no parts.** For every natural number $r$, the
+triangular $q$-binomial coefficient satisfies $t[r, 0] = 1$: only the empty partition has no
+parts.
 
 ## Depends on
 
-- [Triangular QBinomial](triangular-qbinomial.md)
+- [Triangular $q$-binomial coefficient](triangular-qbinomial.md)
 
 ## Proof depends on
 
-- [Decreasing Parts](decreasing-parts.md)
+- [Parts of a partition in decreasing order](decreasing-parts.md)
 
 ## Sources
 

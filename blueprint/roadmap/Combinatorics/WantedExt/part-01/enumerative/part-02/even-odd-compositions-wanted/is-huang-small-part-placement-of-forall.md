@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isHuangSmallPartPlacement_of_forall_le
 ---
 
-# Is Huang Small Part Placement of forall le
+# Sequences without small parts satisfy Huang's placement condition
 
-A list with no part less than `k` satisfies the placement condition
-vacuously.
+**Sequences without small parts satisfy Huang's placement condition.** If every entry of a
+finite sequence of natural numbers is at least $k$, then the sequence satisfies Huang's placement
+condition for $k$, vacuously.
 
 ## Depends on
 
-- [Is Huang Small Part Placement](is-huang-small-part-placement.md)
+- [Huang's placement condition for small parts](is-huang-small-part-placement.md)
 
 ## Sources
 

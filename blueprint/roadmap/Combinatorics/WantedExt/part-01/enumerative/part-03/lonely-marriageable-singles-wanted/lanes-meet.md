@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.lanesMeet
 ---
 
-# Lanes Meet
+# Lanes with a common point
 
-Two lanes `E_iX_j = (i, j)` and `E_{i'}X_{j'} = (i', j')` of a standard road intersection
-have a common point: they share an entry or an exit, or their chords cross, i.e. exactly one
-endpoint of the second chord lies strictly between the endpoints `2i`, `2j + 1` of the first
-(all four endpoints being distinct when no entry or exit is shared).
+**Lanes with a common point.** The standard road intersection of size $n$ has entries
+$E_0, \dots, E_{n-1}$ and exits $X_0, \dots, X_{n-1}$ on a circle, with $E_i$ at position $2i$
+and $X_j$ at position $2j + 1$; the lane $E_iX_j$ is the chord from $E_i$ to $X_j$. Two lanes
+$E_iX_j$ and $E_{i'}X_{j'}$ have a common point if $i = i'$, or $j = j'$, or exactly one of the
+positions $2i'$ and $2j' + 1$ lies strictly between $2i$ and $2j + 1$ (that is, the chords cross).
 
 ## Depends on
 

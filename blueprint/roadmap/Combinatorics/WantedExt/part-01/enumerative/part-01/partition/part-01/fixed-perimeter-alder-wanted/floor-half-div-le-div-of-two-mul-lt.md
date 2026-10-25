@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.floor_half_div_le_div_of_two_mul_lt
 ---
 
-# Floor half div le div of two mul lt
+# A floor inequality for perimeter counts
 
-Lemma 4.2: for positive `d, a, n` with `a < (d + 3)/2` and `n ≥ a`,
-`⌊⌊(n - a)/(d + 1)⌋ / 2⌋ ≤ ⌊(n - a)/(d + 3)⌋` and
-`⌊(⌊(n - a)/(d + 1)⌋ + 1) / 2⌋ ≤ ⌊(n + a)/(d + 3)⌋`, in natural-number division (the lower
-bounds `0 ≤ …` are automatic).
+**A floor inequality for perimeter counts.** Let $d$, $a$ and $n$ be natural numbers with
+$d \ge 1$, $a \ge 1$, $2a < d + 3$ and $a \le n$. Then
+$\lfloor \lfloor (n - a)/(d + 1) \rfloor / 2 \rfloor \le \lfloor (n - a)/(d + 3) \rfloor$
+and
+$\lfloor (\lfloor (n - a)/(d + 1) \rfloor + 1) / 2 \rfloor \le \lfloor (n + a)/(d + 3) \rfloor$.
+
+The lower bounds by $0$ in the source hold automatically and are not stated.
 
 ## Depends on
 

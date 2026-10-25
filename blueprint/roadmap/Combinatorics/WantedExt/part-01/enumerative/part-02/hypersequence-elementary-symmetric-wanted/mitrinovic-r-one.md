@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.mitrinovicR_one
 ---
 
-# Mitrinovic R one
+# Mitrinović's numbers with lower index one
 
-`R^0_1(a, b) = -a` and `R^1_1(a, b) = 1`.
+**Mitrinović's numbers with lower index one.** For all complex numbers $a, b$, Mitrinović's
+numbers satisfy $R^0_1(a, b) = -a$ and $R^1_1(a, b) = 1$.
 
 ## Depends on
 
-- [Mitrinovic R](mitrinovic-r.md)
+- [Mitrinović's numbers](mitrinovic-r.md)
 
 ## Sources
 

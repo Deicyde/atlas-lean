@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.degenerateEuler_zero
 ---
 
-# Degenerate Euler zero
+# The zeroth degenerate Euler number
 
-`ε_{0,λ} = 1`.
+**The zeroth degenerate Euler number.** For every real number $\lambda$, the degenerate Euler
+number $\varepsilon_{0,\lambda}$ equals $1$.
 
 ## Depends on
 
-- [Degenerate Euler](degenerate-euler.md)
+- [Degenerate Euler numbers](degenerate-euler.md)
 
 ## Proof depends on
 
-- [Constant Coeff degenerate Exp Series](constant-coeff-degenerate-exp-series.md)
-- [Degenerate Exp Series](degenerate-exp-series.md)
+- [Constant term of the degenerate exponential series](constant-coeff-degenerate-exp-series.md)
+- [Degenerate exponential series](degenerate-exp-series.md)
 
 ## Sources
 

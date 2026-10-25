@@ -6,19 +6,20 @@ statement: formalized
 lean: MetaMathlibExt.IsMobiusGridPerfectMatching
 ---
 
-# Is Mobius Grid Perfect Matching
+# Perfect matchings of the Möbius grid
 
-A perfect matching is a finset of labeled edges incident to every vertex
-exactly once.
+**Perfect matchings of the Möbius grid.** For natural numbers $M$ and $N$, a finite set $S$
+of labeled edges of the $2M \times N$ Möbius grid is a perfect matching when every vertex of the
+grid is incident to exactly one edge of $S$.
 
 ## Depends on
 
-- [Mobius Grid Edge](mobius-grid-edge.md)
+- [Edges of the Möbius grid](mobius-grid-edge.md)
 
 ## Proof depends on
 
-- [Mobius Grid Incident](mobius-grid-incident.md)
-- [Mobius Grid Vertex](mobius-grid-vertex.md)
+- [Incidence in the Möbius grid](mobius-grid-incident.md)
+- [Vertices of the Möbius grid](mobius-grid-vertex.md)
 
 ## Sources
 

@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.genLeonardo_partialSum_logConcave
 ---
 
-# Gen Leonardo partial Sum log Concave
+# Log-concavity of partial sums of generalized Leonardo numbers
 
-For every `k ≥ 1`, the partial sums `R_n = ∑_{i=0}^n L_{k,i}` of the generalized Leonardo
-numbers satisfy `R_{n-1} R_{n+1} ≤ R_n²` for every `n ≥ 2`. The paper states this for every
-`n ≥ 1`, but its own identity `R_n² - R_{n-1} R_{n+1} = (k+1)² (F_n + (-1)^n) + k(k+1)(n F_n -
-2 F_{n+1}) + k²` gives `-k < 0` at `n = 1` (`R_0 = 1`, `R_1 = 2`, `R_2 = k + 4`), so the index
-`n = 1` is excluded.
+**Log-concavity of partial sums of generalized Leonardo numbers.** Let $k \ge 1$ be an
+integer, let $L_{k,n}$ be the generalized Leonardo numbers, and let
+$R_n = \sum_{i=0}^{n} L_{k,i}$. Then $R_{n-1} R_{n+1} \le R_n^2$ for every integer $n \ge 2$.
+
+The inequality fails at $n = 1$: there $R_0 = 1$, $R_1 = 2$ and $R_2 = k + 4$, so
+$R_1^2 - R_0 R_2 = -k < 0$. The paper states it for every $n \ge 1$, although its identity
+$R_n^2 - R_{n-1} R_{n+1} = (k+1)^2 (F_n + (-1)^n) + k(k+1)(n F_n - 2 F_{n+1}) + k^2$, with
+$F_n$ the Fibonacci numbers, gives the same value $-k$ at $n = 1$.
 
 ## Depends on
 

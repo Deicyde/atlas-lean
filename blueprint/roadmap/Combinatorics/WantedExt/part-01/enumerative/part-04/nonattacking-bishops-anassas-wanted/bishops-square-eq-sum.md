@@ -5,15 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.bishopsSquare_eq_sum
 ---
 
-# Bishops Square eq sum
+# Extended Stirling formula for bishops on a square board
 
-Equation (5): `B_S(m, k) = ∑_{j=0}^{k} ∑_{i=0}^{j} binom(⌊m/2⌋, i) {m - i, m - j}
-∑_{l=0}^{k-j} binom(⌈m/2⌉, l) {m - l, m - k + j}` for all `m, k ≥ 0`.
+**Extended Stirling formula for bishops on a square board.** For all natural numbers $m$ and
+$k$, the number $B_S(m, k)$ of placements of $k$ nonattacking bishops on the $m \times m$ board
+satisfies
+
+$$
+B_S(m, k) = \sum_{j=0}^{k} \sum_{i=0}^{j} \binom{\lfloor m/2 \rfloor}{i} S(m - i, m - j)
+\sum_{l=0}^{k-j} \binom{\lceil m/2 \rceil}{l} S(m - l, m - k + j),
+$$
+
+where $S(a, b)$ is Knuth's extended Stirling number of the second kind for integers $a, b$: the
+Stirling number of the second kind when $a, b \ge 0$, the unsigned Stirling number of the first
+kind with arguments $-b, -a$ when $a, b < 0$, and $0$ otherwise.
 
 ## Depends on
 
-- [Bishops Square](bishops-square.md)
-- [Ext Stirling Second](ext-stirling-second.md)
+- [Nonattacking bishops on a square board](bishops-square.md)
+- [Extended Stirling numbers of the second kind](ext-stirling-second.md)
 
 ## Sources
 

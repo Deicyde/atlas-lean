@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.orderedFactorizationCount_small
 ---
 
-# Ordered Factorization Count small
+# Small values of the ordered factorization count
 
-`f(0) = 0`, `f(1) = 1`, `f(6) = 3` and `f(12) = 8`.
+**Small values of the ordered factorization count.** The number $f(n)$ of ordered
+factorizations of $n$ into factors greater than $1$ takes the values $f(0) = 0$, $f(1) = 1$,
+$f(6) = 3$ and $f(12) = 8$.
 
 ## Depends on
 
-- [Ordered Factorization Count](ordered-factorization-count.md)
+- [Number of ordered factorizations](ordered-factorization-count.md)
 
 ## Sources
 

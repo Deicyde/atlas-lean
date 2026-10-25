@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lace Step](lace-step.md)
+- [One step of the lace decomposition](lace-step.md)
 
 ## Sources
 

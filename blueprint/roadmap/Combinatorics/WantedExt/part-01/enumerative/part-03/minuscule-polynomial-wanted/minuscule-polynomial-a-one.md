@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.minusculePolynomialA_one
 ---
 
-# Minuscule Polynomial A one
+# The minuscule polynomial $N_1$ vanishes
 
-`N_1 = 0`.
+**The minuscule polynomial $N_1$ vanishes.** The type-A minuscule polynomial $N_1(x)$ is the
+zero polynomial.
 
 ## Depends on
 
-- [Minuscule Polynomial A](minuscule-polynomial-a.md)
+- [Type-A minuscule polynomial](minuscule-polynomial-a.md)
 
 ## Sources
 

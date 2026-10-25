@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.mergedHasCrossing
 ---
 
-# Merged Has Crossing
+# Crossing after merging two blocks
 
-The partition obtained from `P` by joining the blocks of `i` and `j` has a crossing: there are
-`a < b < c < d` with `a, c` in one of its blocks and `b, d` in another.
+**Crossing after merging two blocks.** Let $P$ be a set partition of $\{0, \dots, n-1\}$ and
+let $i, j \in \{0, \dots, n-1\}$. The partition obtained from $P$ by merging the blocks of $i$ and
+$j$ has a crossing if there are $a < b < c < d$ in $\{0, \dots, n-1\}$ such that $a$ and $c$ lie
+in one of its blocks and $b$ and $d$ lie in a different one of its blocks.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ The partition obtained from `P` by joining the blocks of `i` and `j` has a cross
 
 ## Proof depends on
 
-- [Merged Same Block](merged-same-block.md)
+- [Same block after merging two blocks](merged-same-block.md)
 
 ## Sources
 

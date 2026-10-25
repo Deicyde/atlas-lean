@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isTypeBSetPartition_indiscrete
 ---
 
-# Is Type BSet Partition indiscrete
+# The one-block partition is of type B
 
-The one-block partition of `[-n, n]` is a type `B` set partition (its only
-block is the zero-block).
+**The one-block partition is of type B.** For every natural number $n$, the partition of
+the integer interval $[-n, n] = \{-n, \dots, n\}$ into a single block is a type $B$ set
+partition: its only block is closed under negation, so it is the unique block equal to its own
+negative (the zero-block).
 
 ## Depends on
 
-- [Is Type BSet Partition](is-type-bset-partition.md)
+- [Type $B$ set partitions](is-type-bset-partition.md)
 
 ## Sources
 

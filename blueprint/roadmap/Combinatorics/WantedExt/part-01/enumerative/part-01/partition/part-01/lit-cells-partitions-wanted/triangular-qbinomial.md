@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.triangularQBinomial
 ---
 
-# Triangular QBinomial
+# Triangular $q$-binomial coefficient
 
-The triangular `q`-binomial coefficient `t[r, s]`: the generating function of partitions
-with exactly `s` parts `x_1 ≥ ⋯ ≥ x_s` contained in the staircase with column heights
-`r, r - 1, …, r - s + 1`, i.e. `x_i + (i - 1) ≤ r` for `1 ≤ i ≤ s`.
+**Triangular $q$-binomial coefficient.** For natural numbers $r$ and $s$, the triangular
+$q$-binomial coefficient $t[r, s] \in \mathbb{Z}[[q]]$ is the power series whose coefficient of
+$q^n$ is the number of partitions of $n$ with exactly $s$ parts $x_1 \ge \dots \ge x_s$ that fit
+in the staircase with column heights $r, r - 1, \dots, r - s + 1$, that is, with
+$x_i + (i - 1) \le r$ for $1 \le i \le s$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Decreasing Parts](decreasing-parts.md)
+- [Parts of a partition in decreasing order](decreasing-parts.md)
 
 ## Sources
 

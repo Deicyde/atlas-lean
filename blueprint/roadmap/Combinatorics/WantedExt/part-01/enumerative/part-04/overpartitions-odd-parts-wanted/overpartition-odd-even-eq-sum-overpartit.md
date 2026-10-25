@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.overpartitionOdd_even_eq_sum_overpartition
 ---
 
-# Overpartition Odd even eq sum overpartition
+# Overpartitions of even numbers into odd parts
 
-For `n ≥ 0`, `po(2n) = p̄(n) + 2 ∑_{k ≥ 1} p̄(n - 2k²)`, with `p̄` the overpartition
-function. Corrected reading: the record prints the sum from `k = 0` and `p` without overline;
-the arXiv proof (Theorem 3.5) multiplies the overpartition generating function by
-`∑_{k ∈ ℤ} q^{2k²} = 1 + 2 ∑_{k ≥ 1} q^{2k²}`. As printed it fails at `n = 0`
-(`po(0) = 1` but `p̄(0) + 2 p̄(0) = 3`).
+**Overpartitions of even numbers into odd parts.** Let $\mathrm{po}(m)$ be the number of
+overpartitions of $m$ into odd parts and $\overline{p}(m)$ the number of overpartitions of $m$.
+For every natural number $n$,
+$\mathrm{po}(2n) = \overline{p}(n) + 2 \sum_k \overline{p}(n - 2k^2)$, the sum running over
+the integers $k \ge 1$ with $2k^2 \le n$.
+
+The sum cannot start at $k = 0$: at $n = 0$ that would give
+$\overline{p}(0) + 2 \, \overline{p}(0) = 3$, whereas $\mathrm{po}(0) = 1$.
 
 ## Depends on
 
-- [Overpartition Odd Parts Count](overpartition-odd-parts-count.md)
+- [Overpartitions into odd parts](overpartition-odd-parts-count.md)
 - [Overpartition](../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
 
 ## Sources

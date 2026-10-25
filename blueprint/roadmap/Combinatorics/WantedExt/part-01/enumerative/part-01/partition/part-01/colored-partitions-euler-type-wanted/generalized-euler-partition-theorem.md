@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.generalized_euler_partition_theorem
 ---
 
-# Generalized euler partition theorem
+# Generalized Euler partition theorem
 
-Generalized Euler partition theorem. Let `S` be an even-admissible set of compositions
-(lists of positive integers; doubling every summand stays in `S`, and halving every summand of
-an all-even member stays in `S`). For `n ≥ 0`, the number of partitions of `n` into distinct
-colored parts, each part of size `k` colored by a member of `S` of size `k` (resp. of size at
-most `k`), equals the number of such partitions (repetition allowed) in which no even part is
-colored by a composition with all summands even. Distinct means distinct pairs (size, color).
+**Generalized Euler partition theorem.** Let $S$ be a set of compositions (finite sequences
+of positive integers) such that doubling every summand of a member of $S$ gives a member of $S$,
+and halving every summand of a member of $S$ whose summands are all even gives a member of $S$.
+Let $n \ge 0$. The number of partitions of $n$ into colored parts in which each part $k$ is
+colored by a composition in $S$ with sum $k$, and no colored part (a pair of part and color)
+appears twice, equals the number of such partitions of $n$, with repetition allowed, in which no
+even part is colored by a composition whose summands are all even. The same holds when each part
+$k$ is colored by a composition in $S$ with sum at most $k$.
 
 ## Depends on
 

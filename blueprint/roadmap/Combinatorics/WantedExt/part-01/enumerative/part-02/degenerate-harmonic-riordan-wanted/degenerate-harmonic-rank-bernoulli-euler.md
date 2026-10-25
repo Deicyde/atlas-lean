@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.degenerateHarmonicRank_bernoulli_euler_sums
 ---
 
-# Degenerate Harmonic Rank bernoulli euler sums
+# Degenerate Bernoulli and Euler sums of higher-rank degenerate harmonic numbers
 
-Theorem 8: for `n ≥ 1`,
-`∑_{k=1}^n (-1)ᵏ β_{k,λ} H_λ(n, k - 1, α) / k! = α H_{n+1,λ}(α) - 1`, and for `α ≠ 1/2`,
-`∑_{k=1}^n (-1)^{k+1} ε_{k,λ} / k! · H_λ(n, k - 1, α) = ((2α)^{-n} - 1) / (2α - 1)`.
+**Degenerate Bernoulli and Euler sums of higher-rank degenerate harmonic numbers.** Let
+$\lambda > 0$ and $\alpha > 0$ be real and let $n \ge 1$ be an integer. Write $\beta_{k,\lambda}$
+and $\varepsilon_{k,\lambda}$ for the degenerate Bernoulli and Euler numbers,
+$H_{m,\lambda}(\alpha)$ for the generalized degenerate harmonic numbers, and
+$H_\lambda(m, r, \alpha)$ for the generalized degenerate harmonic numbers of rank $r$. Then
+$\sum_{k=1}^{n} (-1)^k \beta_{k,\lambda} H_\lambda(n, k - 1, \alpha) / k! =
+\alpha H_{n+1,\lambda}(\alpha) - 1$, and if moreover $\alpha \ne 1/2$, then
+$\sum_{k=1}^{n} (-1)^{k+1} \varepsilon_{k,\lambda} H_\lambda(n, k - 1, \alpha) / k! =
+((2\alpha)^{-n} - 1) / (2\alpha - 1)$.
 
 ## Depends on
 
-- [Degenerate Bernoulli](degenerate-bernoulli.md)
-- [Degenerate Euler](degenerate-euler.md)
-- [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
-- [Generalized Degenerate Harmonic](generalized-degenerate-harmonic.md)
+- [Degenerate Bernoulli numbers](degenerate-bernoulli.md)
+- [Degenerate Euler numbers](degenerate-euler.md)
+- [Generalized degenerate harmonic numbers of a given rank](degenerate-harmonic-rank.md)
+- [Generalized degenerate harmonic numbers](generalized-degenerate-harmonic.md)
 
 ## Sources
 

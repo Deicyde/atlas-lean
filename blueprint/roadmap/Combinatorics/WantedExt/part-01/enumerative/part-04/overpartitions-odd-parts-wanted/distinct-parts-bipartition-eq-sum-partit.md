@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.distinctPartsBipartition_eq_sum_partition_triangular
 ---
 
-# Distinct Parts Bipartition eq sum partition triangular
+# Bipartitions into distinct parts from the partition function
 
-`q(n) = ∑_{k ≥ 0} p(n - k(k+1)/2)`, with `q(n)` the number of bipartitions of `n` into
-distinct parts. The paper states it for positive `n`; it also holds at `n = 0` (both sides
-`1`), so it is stated for all `n`.
+**Bipartitions into distinct parts from the partition function.** Let $q(n)$ be the number of
+ordered pairs of partitions into distinct parts whose sizes add up to $n$, and let $p(m)$ be the
+number of partitions of $m$. For every $n \ge 0$, $q(n) = \sum_{k \ge 0} p(n - k(k+1)/2)$, where
+the sum runs over the $k$ with $k(k+1)/2 \le n$.
+
+The source states this for $n > 0$; it also holds at $n = 0$, where both sides equal $1$.
 
 ## Depends on
 
-- [Distinct Parts Bipartition Count](distinct-parts-bipartition-count.md)
+- [Bipartitions into distinct parts](distinct-parts-bipartition-count.md)
 
 ## Sources
 

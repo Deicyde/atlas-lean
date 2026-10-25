@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.eta_mul_LSeries_iff_lambert
 ---
 
-# Eta mul LSeries iff lambert
+# Borwein's eta–Lambert correspondence
 
-The Borwein eta-Lambert correspondence: for sequences `(a_n)`, `(b_n)` with polynomial
-growth `|a_n|, |b_n| ≤ C n^K` (`n ≥ 1`),
-`η(s) ∑_{n ≥ 1} a_n / n^s = ∑_{n ≥ 1} b_n / n^s` for all real `s > max (K + 2) 1` if and only if
-`∑_{n ≥ 1} a_n xⁿ / (1 + xⁿ) = ∑_{n ≥ 1} b_n xⁿ` for all `0 < x < 1`, where
-`η(s) = ∑_{n ≥ 1} (-1)^{n-1} / n^s` is the Dirichlet eta function (Mathlib's `LSeries` of
-`(-1)^{n+1}`). The paper quotes this from Borwein and Borwein with no growth hypotheses or
-domains; polynomial growth and the half-line `s > max (K + 2) 1` (absolute convergence of all
-three series; `s > 1` is needed for `η` itself when `K < -1`) and interval
-`0 < x < 1` are added so that both sides are defined. The values `a 0`, `b 0` are unused.
+**Borwein's eta–Lambert correspondence.** Let $(a_n)$ and $(b_n)$ be sequences of complex
+numbers and let $C$ and $K$ be real numbers with $|a_n| \le C n^K$ and $|b_n| \le C n^K$ for every
+$n \ge 1$. Let $\eta(s) = \sum_{n \ge 1} (-1)^{n-1} n^{-s}$ be the Dirichlet eta function. Then
+$\eta(s) \sum_{n \ge 1} a_n n^{-s} = \sum_{n \ge 1} b_n n^{-s}$ for every real number
+$s > \max(K + 2, 1)$ if and only if $\sum_{n \ge 1} a_n x^n / (1 + x^n) = \sum_{n \ge 1} b_n x^n$
+for every real number $x$ with $0 < x < 1$.
+
+The source quotes the correspondence from Borwein and Borwein without growth hypotheses or
+ranges for $s$ and $x$; the growth bound and the ranges above make all the series involved converge
+absolutely.
 
 ## Depends on
 

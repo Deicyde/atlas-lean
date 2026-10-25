@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.permValueAt
 ---
 
-# Perm Value At
+# Value of a permutation at a natural position
 
-The value `τ(j)` of a permutation `τ` of `Fin d` at a natural position `j` (`0` when
-`j ≥ d`), used to read off descents.
+**Value of a permutation at a natural position.** For a permutation $\tau$ of
+$\{0, 1, \dots, d - 1\}$ and a natural number $j$, this is the natural number $\tau(j)$ when
+$j < d$, and $0$ when $j \ge d$. It is used to read off descents.
 
 ## Depends on
 

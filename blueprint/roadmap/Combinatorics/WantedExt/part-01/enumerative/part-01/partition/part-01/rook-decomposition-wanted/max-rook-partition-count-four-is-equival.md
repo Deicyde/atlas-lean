@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.maxRookPartitionCount_four_isEquivalent
 ---
 
-# Max Rook Partition Count four is Equivalent
+# Asymptotics of partitions with max-rook number 4
 
-`R_4(n) ∼ n³ / 9` as `n → ∞`.
+**Asymptotics of partitions with max-rook number 4.** Let $R_4(n)$ be the number of partitions
+of $n$ with max-rook number $4$. Then $R_4(n) \sim n^3/9$ as $n \to \infty$.
 
 ## Depends on
 
-- [Max Rook Partition Count](max-rook-partition-count.md)
+- [Partitions with a given max-rook number](max-rook-partition-count.md)
 
 ## Sources
 
