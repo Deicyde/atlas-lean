@@ -23,7 +23,8 @@ Mathlib's ratio test (`summable_of_ratio_test_tendsto_lt_one` and
 
 ## Main results
 
-* `summable_of_root_test_tendsto_lt_one`: convergence when the root limit is `< 1`.
+* `summable_norm_of_root_test_tendsto_lt_one`: absolute convergence when the root limit is `< 1`.
+* `summable_of_root_test_tendsto_lt_one`: convergence in a complete normed group.
 * `not_summable_of_root_test_tendsto_gt_one`: divergence when the root limit is `> 1`.
 
 Source: `v1/Atlas/RealAnalysis/targets.yaml`, Theorem (Root Test),
@@ -32,8 +33,9 @@ Source: `v1/Atlas/RealAnalysis/targets.yaml`, Theorem (Root Test),
 formalization `Series.root_test` in
 `v1/Atlas/RealAnalysis/code/Series/ConvergenceTests.lean` states this only for
 `ℝ`-valued series, as a single conjunction. Here it is generalized to
-normed groups, following Mathlib's ratio test, and split into the two
-separate theorems above.
+normed groups, following Mathlib's ratio test, and split into absolute
+convergence and divergence. Ordinary convergence is a corollary in a complete
+normed group.
 -/
 
 @[expose] public section
@@ -42,12 +44,12 @@ open scoped Topology
 
 variable {α : Type*} {f : ℕ → α}
 
-/-- **Cauchy's root test, convergence case.** If `‖f n‖ ^ (1 / n)` tends to a
-limit `l < 1`, then `∑ n, f n` converges. -/
-theorem summable_of_root_test_tendsto_lt_one [NormedAddCommGroup α] [CompleteSpace α]
+/-- **Cauchy's root test, absolute convergence case.** If `‖f n‖ ^ (1 / n)` tends
+to a limit `l < 1`, then `∑ n, ‖f n‖` converges. -/
+theorem summable_norm_of_root_test_tendsto_lt_one [NormedAddCommGroup α]
     {l : ℝ} (hl : l < 1)
     (h : Filter.Tendsto (fun n => ‖f n‖ ^ ((1 : ℝ) / n)) Filter.atTop (𝓝 l)) :
-    Summable f := by
+    Summable (fun n => ‖f n‖) := by
   obtain ⟨r, hLr, hr1⟩ := exists_between hl
   have hr0 : 0 ≤ r := by
     have hL0 : 0 ≤ l := by
@@ -63,6 +65,7 @@ theorem summable_of_root_test_tendsto_lt_one [NormedAddCommGroup α] [CompleteSp
     Filter.eventually_atTop.mpr ⟨1, fun n hn => hn⟩
   apply (hev.and hev1).mono
   intro n ⟨hn_lt, hn_pos⟩
+  rw [norm_norm]
   have hn_ne : (n : ℕ) ≠ 0 := by omega
   have h_eq : (1 : ℝ) / (↑n : ℝ) = (↑n : ℝ)⁻¹ := one_div _
   rw [h_eq] at hn_lt
@@ -70,6 +73,14 @@ theorem summable_of_root_test_tendsto_lt_one [NormedAddCommGroup α] [CompleteSp
     apply pow_le_pow_left₀ (Real.rpow_nonneg (norm_nonneg _) _)
     exact le_of_lt hn_lt
   rwa [Real.rpow_inv_natCast_pow (norm_nonneg _) hn_ne] at h1
+
+/-- **Cauchy's root test, convergence case.** If `‖f n‖ ^ (1 / n)` tends to a
+limit `l < 1`, then `∑ n, f n` converges. -/
+theorem summable_of_root_test_tendsto_lt_one [NormedAddCommGroup α] [CompleteSpace α]
+    {l : ℝ} (hl : l < 1)
+    (h : Filter.Tendsto (fun n => ‖f n‖ ^ ((1 : ℝ) / n)) Filter.atTop (𝓝 l)) :
+    Summable f :=
+  (summable_norm_of_root_test_tendsto_lt_one hl h).of_norm
 
 /-- **Cauchy's root test, divergence case.** If `‖f n‖ ^ (1 / n)` tends to a
 limit `l > 1`, then `∑ n, f n` diverges. -/
