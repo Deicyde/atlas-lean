@@ -16,7 +16,6 @@ public import Mathlib.LinearAlgebra.Dimension.Finrank
 public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
 public import Mathlib.LinearAlgebra.UnitaryGroup
 public import Mathlib.LinearAlgebra.Matrix.ToLin
-import MathlibExt.Geometry.Euclidean.IsometryLinear
 import Mathlib.Tactic.Abel
 import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.Linarith
@@ -37,10 +36,13 @@ reflections. Translations have identity linear part. Rotations have
 nonidentity linear part and fix a point. Reflections fix a line pointwise;
 glide reflections have no fixed point.
 
-Source: `v1/Atlas/AlgebraNotes/code/Isometries.lean` (targets
-`Isometries.plane_isometry_classification` and
-`Isometries.isometry_map_zero_isLinearMap` in
+Source: `v1/Atlas/AlgebraNotes/code/Isometries.lean` (target
+`Isometries.plane_isometry_classification` in
 `v1/Atlas/AlgebraNotes/targets.yaml` / `report.json`).
+
+For isometries of Euclidean space fixing `0`, use
+`isometry_isLinearMap_of_map_zero` from
+`MathlibExt/Geometry/Euclidean/IsometryLinear.lean`.
 -/
 
 @[expose] public section
@@ -275,14 +277,5 @@ theorem plane_isometry_classification (f : Plane ≃ᵃⁱ[ℝ] Plane) :
       have hdir : L.direction = Submodule.span ℝ {e₁} :=
         AffineSubspace.direction_mk' ((1/2 : ℝ) • b) (Submodule.span ℝ {e₁})
       exact ⟨hdet_neg1, L, hfinrank_L, bplus, hdir ▸ hbplus_mem, hbplus_zero, hf_on_L⟩
-
-/-- Legacy AlgebraNotes interface: a Euclidean-space isometry fixing `0` is linear.
-The proof forwards to `isometry_isLinearMap_of_map_zero` from
-`MathlibExt/Geometry/Euclidean/IsometryLinear.lean`. -/
-theorem isometry_map_zero_isLinearMap {n : ℕ}
-    (f : EuclideanSpace ℝ (Fin n) → EuclideanSpace ℝ (Fin n))
-    (hf : Isometry f) (hf0 : f 0 = 0) :
-    IsLinearMap ℝ f := by
-  exact _root_.isometry_isLinearMap_of_map_zero f hf hf0
 
 end Isometries

@@ -21,8 +21,7 @@ The identity and every translation-by-a-vector isometry are translations.
 Rotation by `180°` (the negation isometry) is a rotation, reflection across
 the `x`-axis is a reflection, and reflection across the `x`-axis followed by
 translation along the `x`-axis is a glide reflection. The classification
-theorem puts each of these in its stated case, and an isometry fixing `0` is
-a linear map.
+theorem puts each of these in its stated case.
 -/
 
 @[expose] public section
@@ -186,12 +185,5 @@ example : IsTranslation glideX ∨ IsRotation glideX ∨ IsReflection glideX ∨
 example (f : Plane ≃ᵃⁱ[ℝ] Plane) :
     IsTranslation f ∨ IsRotation f ∨ IsReflection f ∨ IsGlideReflection f :=
   plane_isometry_classification f
-
-example (x y : Plane) :
-    (id : Plane → Plane) (x + y) = (id : Plane → Plane) x + (id : Plane → Plane) y :=
-  (isometry_map_zero_isLinearMap id isometry_id rfl).map_add x y
-
-example : IsLinearMap ℝ (id : EuclideanSpace ℝ (Fin 3) → EuclideanSpace ℝ (Fin 3)) :=
-  isometry_map_zero_isLinearMap _ isometry_id rfl
 
 end MathlibExtTest.Geometry.Euclidean.PlaneIsometryClassification
