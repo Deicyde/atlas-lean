@@ -5,6 +5,10 @@ navigation: module
 # Weighted Set Cover
 
 - [Set with the least cost per new element](best-ratio-set.md)
+- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
+
+## The result is a cover from the family
+
 - [The weighted greedy set cover uses sets of the family](weighted-greedy-set-cover-mem.md)
 - [The weighted greedy set cover is a cover](weighted-greedy-set-cover-covers.md)
 

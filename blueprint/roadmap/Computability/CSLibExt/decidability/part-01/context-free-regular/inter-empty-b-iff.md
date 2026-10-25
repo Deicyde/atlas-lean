@@ -17,6 +17,7 @@ intersection of the language of $g$ and the language of $D$ is empty.
 - [Encoded DFA](../../../automata/da/encoded-dfa/encoded-dfa.md)
 - [Language of an encoded DFA](../../../automata/da/encoded-dfa/language.md)
 - [Encoded context-free grammars](../../../languages/context-free/part-01/encoded/encoded-cfg.md)
+- [The emptiness test](inter-empty-b.md)
 - [Language of an encoded grammar](../../../languages/context-free/part-01/encoded/language.md)
 
 ## Proof depends on

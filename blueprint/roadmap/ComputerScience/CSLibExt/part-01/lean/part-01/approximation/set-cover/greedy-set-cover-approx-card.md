@@ -16,7 +16,7 @@ is the length of $C^*$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Set Cover](greedy-set-cover.md)
 
 ## Proof depends on
 

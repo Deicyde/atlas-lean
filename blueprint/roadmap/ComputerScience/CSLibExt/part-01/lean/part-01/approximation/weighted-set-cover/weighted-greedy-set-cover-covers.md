@@ -15,7 +15,7 @@ $F$ with costs $w$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
 
 ## Proof depends on
 

@@ -14,7 +14,7 @@ greedy set cover of $U$ from $F$ with costs $w$ belongs to $F$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
 
 ## Proof depends on
 

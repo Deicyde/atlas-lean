@@ -17,7 +17,7 @@ There are at most $|U| + 1$ searches for a best set, each costing $|F| + \sum_{S
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Set Cover](greedy-set-cover.md)
 
 ## Proof depends on
 

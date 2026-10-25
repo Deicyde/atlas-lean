@@ -39,6 +39,7 @@ machine.
 - [Start states of a right-hand side in a DFA](dfa-starts.md)
 - [One round of the item search against a DFA](dfa-step.md)
 - [Whether a symbol fits at a DFA state](dfa-sym-fits.md)
+- [The emptiness test](inter-empty-b.md)
 - [The inclusion test for a grammar and a DFA](subset-b.md)
 - [Correctness of the inclusion test](subset-b-iff.md)
 

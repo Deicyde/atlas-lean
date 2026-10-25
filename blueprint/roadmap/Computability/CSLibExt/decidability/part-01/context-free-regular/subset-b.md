@@ -19,6 +19,7 @@ $g$ and $D$ is the Boolean value of the emptiness test on $g$ and the complement
 ## Proof depends on
 
 - [Complement of an encoded DFA](../../../automata/da/encoded-dfa/compl.md)
+- [The emptiness test](inter-empty-b.md)
 
 ## Sources
 

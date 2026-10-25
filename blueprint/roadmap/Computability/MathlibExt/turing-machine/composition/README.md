@@ -41,6 +41,10 @@ navigation: module
 ## Output length is bounded by input length plus pushes
 
 - [Number of push instructions in a TM2 statement](pushes.md)
+- [Push Bound](push-bound.md)
+
+## Monotonicity of `Polynomial ℕ` evaluation
+
 - [Evaluation of a natural-number polynomial is monotone](eval-mono.md)
 
 ## Initial and halting configurations

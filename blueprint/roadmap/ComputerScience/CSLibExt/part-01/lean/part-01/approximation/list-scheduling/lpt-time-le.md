@@ -13,7 +13,7 @@ $n \lceil \log_2 n \rceil + nm$, counting merge-sort comparisons and machine loa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lpt](lpt.md)
 
 ## Proof depends on
 

@@ -18,6 +18,7 @@ $d$-th harmonic number.
 ## Depends on
 
 - [Total cost of a list of sets](total-cost.md)
+- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
 
 ## Proof depends on
 

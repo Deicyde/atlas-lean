@@ -14,7 +14,7 @@ set of the list returned by the greedy set cover algorithm on $F$ and $U$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Set Cover](greedy-set-cover.md)
 
 ## Proof depends on
 

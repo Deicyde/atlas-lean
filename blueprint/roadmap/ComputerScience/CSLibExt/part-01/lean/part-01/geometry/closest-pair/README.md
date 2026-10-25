@@ -23,6 +23,14 @@ navigation: module
 
 ## The strip
 
+- [Strip Scan lower](strip-scan-lower.md)
+
+## Divide and conquer
+
+- [Closest Rec is Answer](closest-rec-is-answer.md)
+
+## Correctness
+
 - [The closest-pair algorithm returns the answer](closest-pair-is-answer.md)
 - [Correctness of divide-and-conquer closest pair](closest-pair-spec.md)
 - [The closest-pair algorithm returns no value exactly on fewer than two points](closest-pair-eq-none-iff.md)

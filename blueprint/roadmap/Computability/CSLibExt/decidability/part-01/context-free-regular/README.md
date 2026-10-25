@@ -11,6 +11,10 @@ navigation: module
 - [One round of the item search against a DFA](dfa-step.md)
 - [Candidate items for a grammar and a DFA](dfa-items.md)
 - [Items found for a grammar and a DFA](dfa-found.md)
+- [The emptiness test](inter-empty-b.md)
+
+## Stabilization
+
 - [Start states of a right-hand side are states of the DFA](dfa-starts-subset.md)
 
 ## Soundness

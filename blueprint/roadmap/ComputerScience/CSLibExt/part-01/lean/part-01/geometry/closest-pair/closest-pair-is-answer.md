@@ -23,6 +23,7 @@ positions, the algorithm returns a value $\delta$ with $\delta \le d(p, q)$.
 ## Proof depends on
 
 - [Closest Rec](closest-rec.md)
+- [Closest Rec is Answer](closest-rec-is-answer.md)
 - [Dist2](dist2.md)
 
 ## Sources

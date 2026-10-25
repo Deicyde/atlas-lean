@@ -10,7 +10,6 @@ lean: MetaMathlibExt.TM2Composition.initList_stk_length_le
 
 **Evaluation of a natural-number polynomial is monotone.** For every polynomial $p$ with
 coefficients in $\mathbb{N}$ and all natural numbers $a \le b$, we have $p(a) \le p(b)$. -/
-
 theorem eval_mono (p : Polynomial ℕ) {a b : ℕ} (h : a ≤ b) : p.eval a ≤ p.eval b := by
   induction p using Polynomial.induction_on' with
   | add p q hp hq => simp only [Polynomial.eval_add]; omega

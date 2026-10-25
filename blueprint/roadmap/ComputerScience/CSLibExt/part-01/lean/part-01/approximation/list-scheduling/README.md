@@ -9,6 +9,10 @@ navigation: module
 - [Least-loaded machine](least-loaded.md)
 - [List scheduling from an intermediate state](list-schedule-scan.md)
 - [Graham's list scheduling](list-schedule.md)
+- [Lpt](lpt.md)
+
+## Schedules
+
 - [The empty schedule](is-schedule-of-nil.md)
 - [Every job is at most the makespan](le-makespan.md)
 - [Total work is at most $m$ times the makespan](sum-le.md)
@@ -28,6 +32,10 @@ navigation: module
 - [Counting jobs when every machine is heavily loaded](two-mul-le-of-loads-gt.md)
 - [At most two long jobs per machine](count-p-add-count-p-le.md)
 - [The LPT placement step](lpt-step-le.md)
+- [Lpt approx](lpt-approx.md)
+
+## Validity and cost
+
 - [List scheduling schedules every job](list-schedule-is-schedule-of.md)
 - [Running time of list scheduling](list-schedule-time.md)
 - [Running time of LPT](lpt-time-le.md)

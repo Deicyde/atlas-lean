@@ -11,6 +11,9 @@ navigation: module
 ## The invariant
 
 - [Patience sorting invariant](patience-inv.md)
+
+## Correctness
+
 - [The patience scan preserves the invariant](scan.md)
 - [Correctness of patience sorting](patience-length-spec.md)
 - [Patience sorting agrees with the quadratic dynamic program](patience-length-eq-length-longest-increa.md)

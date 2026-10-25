@@ -89,10 +89,17 @@ $D$. -/
 def dfaFound (g : EncodedCFG T) (D : EncodedDFA T) : List ℕ :=
   (dfaStep g D)^[(dfaItems g D).length] []
 
+/-- **The emptiness test** for the intersection: no accepting state `f` has the item
+`(start, D.start, f)`. -/
+def interEmptyB (g : EncodedCFG T) (D : EncodedDFA T) : Bool :=
+  !(D.accept.any fun f => Decidability.memB D.states f &&
+    Decidability.memB (dfaFound g D) (Nat.pair g.start (Nat.pair D.start f)))
+
+/-! ## Stabilization -/
+
 /-- **Start states of a right-hand side are states of the DFA.** Let $D$ be an encoded DFA, $R$ a
 list of natural numbers and $q$ one of the states of $D$. Then for every right-hand side $\beta$,
 every start state of $\beta$ for $q$ given $R$ is one of the states of $D$. -/
-
 theorem dfaStarts_subset {D : EncodedDFA T} {R : List ℕ} {q : ℕ} (hq : q ∈ D.states)
     (rhs : List (ℕ ⊕ T)) : ∀ p ∈ dfaStarts D R q rhs, p ∈ D.states := by
   cases rhs with

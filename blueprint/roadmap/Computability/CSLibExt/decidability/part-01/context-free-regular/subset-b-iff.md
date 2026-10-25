@@ -25,6 +25,7 @@ $D$.
 
 - [Complement of an encoded DFA](../../../automata/da/encoded-dfa/compl.md)
 - [The complement DFA accepts the complement language](../../../automata/da/encoded-dfa/mem-language-compl.md)
+- [The emptiness test](inter-empty-b.md)
 - [Correctness of the intersection-emptiness test](inter-empty-b-iff.md)
 
 ## Sources
