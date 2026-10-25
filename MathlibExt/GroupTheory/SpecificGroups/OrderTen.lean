@@ -10,6 +10,8 @@ module
 
 public import MathlibExt.GroupTheory.SpecificGroups.Dihedral.IndexTwo
 public import Mathlib.Algebra.Group.TypeTags.Finite
+import Mathlib.Algebra.Group.Equiv.TypeTags
+import Mathlib.Data.ZMod.Basic
 import Mathlib.GroupTheory.IndexNormal
 import Mathlib.GroupTheory.Perm.Cycle.Type
 import Mathlib.GroupTheory.SpecificGroups.Cyclic
@@ -22,13 +24,18 @@ import Mathlib.Tactic.Ring
 
 Adapted from `v1/Atlas/AlgebraNotes/code/SylowTheorems.lean`, lines 108-325 at
 commit `8de8f74fa5760eb8b768a9804494ca2ab631cf87`.
-The public statement preserves the archived code's domains and hypotheses.
-This provenance is code-to-code, not verification of the unavailable textbook PDF.
+The `C₁₀` corollaries preserve the archived Lean classification's domains and
+hypotheses. The recorded target in `v1/Atlas/AlgebraNotes/targets.yaml`, lines
+297-301, instead writes the cyclic alternative as `C₅ × C₂`.
+`groups_of_order_10_classification_prod` has that literal product target.
+This provenance compares archived code and its recorded target with this file;
+the unavailable textbook PDF has not been verified.
 
-The classification corollaries use this canonical noncyclic theorem: a group
-of order ten is either `C₁₀` or `D₅`, and the alternatives are exclusive.
-The cyclic case is equivalent to the source description `C₅ × C₂` by the
-Chinese remainder theorem.
+All classification corollaries reuse the canonical noncyclic theorem.
+The product corollary constructs `C₁₀ ≃* C₅ × C₂` with Mathlib's Chinese
+remainder equivalence and the multiplicative type-tag product equivalence.
+The `C₁₀` and `D₅` alternatives are exclusive, as recorded by
+`groups_of_order_10_classification_xor`.
 -/
 set_option autoImplicit false
 
@@ -210,6 +217,23 @@ theorem groups_of_order_10_classification_xor
   rcases groups_of_order_10_classification G hG with ⟨⟨e⟩⟩ | ⟨⟨f⟩⟩
   · exact Or.inl ⟨⟨e⟩, fun h => hnotboth ⟨⟨e⟩, h⟩⟩
   · exact Or.inr ⟨fun h => hnotboth ⟨h, ⟨f⟩⟩, ⟨f⟩⟩
+
+/-- **Classification in the recorded product form.** Every group of order ten
+is isomorphic to `C₅ × C₂` or `D₅`, as stated in
+`v1/Atlas/AlgebraNotes/targets.yaml`, lines 297-301. The cyclic branch is
+transported from `C₁₀` by Mathlib's Chinese remainder equivalence. -/
+theorem groups_of_order_10_classification_prod
+    (G : Type*) [Group G] [Fintype G] (hG : Fintype.card G = 10) :
+    Nonempty (G ≃* (Multiplicative (ZMod 5) × Multiplicative (ZMod 2))) ∨
+      Nonempty (G ≃* DihedralGroup 5) := by
+  let eProd : Multiplicative (ZMod 10) ≃*
+      (Multiplicative (ZMod 5) × Multiplicative (ZMod 2)) :=
+    (ZMod.chineseRemainder (by decide : Nat.Coprime 5 2)).toAddEquiv.toMultiplicative.trans
+      (MulEquiv.prodMultiplicative (ZMod 5) (ZMod 2))
+  rcases groups_of_order_10_classification G hG with hC | hD
+  · rcases hC with ⟨e⟩
+    exact Or.inl ⟨e.trans eProd⟩
+  · exact Or.inr hD
 
 end
 

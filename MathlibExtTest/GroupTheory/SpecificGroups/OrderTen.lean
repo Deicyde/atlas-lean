@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 module
 
 import MathlibExt.GroupTheory.SpecificGroups.OrderTen
+import Mathlib.GroupTheory.SpecificGroups.Cyclic
 import Mathlib.Tactic.NormNum
 
 /-! Consumers of the shared dihedral constructor and the order-ten classification. -/
@@ -73,7 +74,7 @@ example : Nonempty (DihedralGroup 5 ≃* DihedralGroup 5) :=
     (by simpa using (DihedralGroup.card (n := 5)))
     (DihedralGroup.not_isCyclic (by decide : (5 : ℕ) ≠ 1))
 
--- A separate caller checks the public module boundary and exact source-shaped binders.
+-- A separate caller checks the public boundary and the archived noncyclic theorem's binders.
 example (G : Type*) [Group G] [Fintype G] (hG : Fintype.card G = 10) (hnc : ¬IsCyclic G) :
     Nonempty (G ≃* DihedralGroup 5) :=
   nonempty_mulEquiv_dihedralGroup_of_card_eq_ten_of_not_isCyclic G hG hnc
@@ -155,7 +156,7 @@ end MathlibExtTest.GroupTheory.GroupsOfOrderTen
 
 namespace MetaMathlibExt
 
-/-- The ordinary classification has the exact source-shaped signature. -/
+/-- The ordinary `C₁₀` classification has the archived Lean statement's signature. -/
 example (G : Type*) [Group G] [Fintype G] (hG : Fintype.card G = 10) :
     Nonempty (G ≃* Multiplicative (ZMod 10)) ∨ Nonempty (G ≃* DihedralGroup 5) :=
   groups_of_order_10_classification G hG
@@ -170,3 +171,57 @@ example (G : Type*) [Group G] [Fintype G] (hG : Fintype.card G = 10) :
 #print axioms groups_of_order_10_classification_xor
 
 end MetaMathlibExt
+
+namespace ProductClassificationPublicClient
+
+private abbrev CyclicProduct := Multiplicative (ZMod 5) × Multiplicative (ZMod 2)
+
+private theorem card_cyclicProduct : Fintype.card CyclicProduct = 10 := by
+  norm_num [CyclicProduct, Fintype.card_prod, Fintype.card_multiplicative, ZMod.card]
+
+private theorem cyclicProduct_isCyclic : IsCyclic CyclicProduct := by
+  apply Group.isCyclic_prod_iff.mpr
+  refine ⟨inferInstance, inferInstance, ?_⟩
+  simpa only [Nat.card_eq_fintype_card, Fintype.card_multiplicative, ZMod.card]
+    using (by decide : Nat.Coprime 5 2)
+
+private theorem cyclicProduct_not_dihedral : ¬Nonempty (CyclicProduct ≃* DihedralGroup 5) := by
+  rintro ⟨e⟩
+  exact DihedralGroup.not_isCyclic (by decide : (5 : ℕ) ≠ 1)
+    (e.symm.isCyclic.mpr cyclicProduct_isCyclic)
+
+/-- The public corollary has the literal cyclic-product target recorded in AlgebraNotes. -/
+example (G : Type*) [Group G] [Fintype G] (hG : Fintype.card G = 10) :
+    Nonempty (G ≃* (Multiplicative (ZMod 5) × Multiplicative (ZMod 2))) ∨
+      Nonempty (G ≃* DihedralGroup 5) :=
+  MetaMathlibExt.groups_of_order_10_classification_prod G hG
+
+/-- The actual product group occupies the product branch and excludes the dihedral branch. -/
+example : Nonempty (CyclicProduct ≃* CyclicProduct) ∧
+    ¬Nonempty (CyclicProduct ≃* DihedralGroup 5) := by
+  have h : Nonempty (CyclicProduct ≃* CyclicProduct) ∨
+      Nonempty (CyclicProduct ≃* DihedralGroup 5) :=
+    MetaMathlibExt.groups_of_order_10_classification_prod CyclicProduct card_cyclicProduct
+  exact ⟨h.resolve_right cyclicProduct_not_dihedral, cyclicProduct_not_dihedral⟩
+
+/-- The actual dihedral group occupies the dihedral branch and excludes the product branch. -/
+example : ¬Nonempty (DihedralGroup 5 ≃* CyclicProduct) ∧
+    Nonempty (DihedralGroup 5 ≃* DihedralGroup 5) := by
+  have hnot : ¬Nonempty (DihedralGroup 5 ≃* CyclicProduct) := by
+    rintro ⟨e⟩
+    exact DihedralGroup.not_isCyclic (by decide : (5 : ℕ) ≠ 1)
+      (e.isCyclic.mpr cyclicProduct_isCyclic)
+  have h : Nonempty (DihedralGroup 5 ≃* CyclicProduct) ∨
+      Nonempty (DihedralGroup 5 ≃* DihedralGroup 5) :=
+    MetaMathlibExt.groups_of_order_10_classification_prod (DihedralGroup 5)
+      (by simpa using (DihedralGroup.card (n := 5)))
+  exact ⟨hnot, h.resolve_left hnot⟩
+
+/-- The two recorded models cannot both describe one group. -/
+example (G : Type*) [Group G] :
+    ¬(Nonempty (G ≃* CyclicProduct) ∧ Nonempty (G ≃* DihedralGroup 5)) := by
+  rintro ⟨⟨e⟩, ⟨f⟩⟩
+  exact DihedralGroup.not_isCyclic (by decide : (5 : ℕ) ≠ 1)
+    ((f.symm.trans e).isCyclic.mpr cyclicProduct_isCyclic)
+
+end ProductClassificationPublicClient
