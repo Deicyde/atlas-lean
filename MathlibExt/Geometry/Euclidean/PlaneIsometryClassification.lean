@@ -10,14 +10,13 @@ module
 
 public import Mathlib.Analysis.InnerProductSpace.PiL2
 public import Mathlib.Analysis.InnerProductSpace.Basic
-public import Mathlib.Analysis.Convex.StrictConvexBetween
-public import Mathlib.Analysis.InnerProductSpace.Convex
 public import Mathlib.Geometry.Euclidean.Basic
 public import Mathlib.LinearAlgebra.Basis.Basic
 public import Mathlib.LinearAlgebra.Dimension.Finrank
 public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
 public import Mathlib.LinearAlgebra.UnitaryGroup
 public import Mathlib.LinearAlgebra.Matrix.ToLin
+import MathlibExt.Geometry.Euclidean.IsometryLinear
 import Mathlib.Tactic.Abel
 import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.Linarith
@@ -277,28 +276,13 @@ theorem plane_isometry_classification (f : Plane ≃ᵃⁱ[ℝ] Plane) :
         AffineSubspace.direction_mk' ((1/2 : ℝ) • b) (Submodule.span ℝ {e₁})
       exact ⟨hdet_neg1, L, hfinrank_L, bplus, hdir ▸ hbplus_mem, hbplus_zero, hf_on_L⟩
 
-/-- An isometry of Euclidean space that fixes `0` is a linear map. This is the
-key step in the classification: it says the linear part of a plane isometry
-together with `f 0` determines `f`. -/
+/-- Legacy AlgebraNotes interface: a Euclidean-space isometry fixing `0` is linear.
+The proof forwards to `isometry_isLinearMap_of_map_zero` from
+`MathlibExt/Geometry/Euclidean/IsometryLinear.lean`. -/
 theorem isometry_map_zero_isLinearMap {n : ℕ}
     (f : EuclideanSpace ℝ (Fin n) → EuclideanSpace ℝ (Fin n))
     (hf : Isometry f) (hf0 : f 0 = 0) :
     IsLinearMap ℝ f := by
-  let φ := hf.affineIsometryOfStrictConvexSpace
-  have hlin : ∀ x, f x = φ.toAffineMap.linear x := by
-    intro x
-    have key := congr_fun φ.toAffineMap.decomp x
-    simp only [Pi.add_apply] at key
-    change f x = φ.toAffineMap.linear x
-    have h2 : (φ.toAffineMap : EuclideanSpace ℝ (Fin n) → _) 0 = f 0 := by
-      simp [φ]
-    rw [h2, hf0, add_zero] at key
-    exact key
-  exact { map_add := by
-            intro x y
-            rw [hlin x, hlin y, hlin (x + y), map_add]
-          map_smul := by
-            intro c x
-            rw [hlin x, hlin (c • x), map_smul] }
+  exact _root_.isometry_isLinearMap_of_map_zero f hf hf0
 
 end Isometries
