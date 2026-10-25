@@ -6,7 +6,8 @@
 RESULTS_JSON is run_audit.py's results.json; a fix is applied only if it is in
 a batch's "accepted" list, which needs two verifiers that did not write it.
 Docstring fixes replace the docstring lines recorded in the packet, after
-checking that the file still holds that exact docstring. Every audited article
+checking that those lines are one /-- ... -/ comment and that the file still
+holds them unchanged. Every audited article
 gets a ledger line with the hash of the packet it was judged on.
 """
 
@@ -82,7 +83,8 @@ def bare(line: str) -> str:
     return line.removeprefix("/--").removesuffix("-/").strip()
 
 
-def docstring_problem(text: str, original: str = "") -> str | None:
+def comment_problem(text: str) -> str | None:
+    """Why `text` is not exactly one /-- ... -/ comment, or None."""
     if not text.startswith("/--") or not text.rstrip().endswith("-/"):
         return "not a /-- ... -/ docstring"
     body = text.rstrip()[3:-2]
@@ -90,6 +92,13 @@ def docstring_problem(text: str, original: str = "") -> str | None:
         return "contains -/ before the end"
     if "/-" in body:
         return "contains /-, which opens a nested comment"
+    return None
+
+
+def docstring_problem(text: str, original: str = "") -> str | None:
+    problem = comment_problem(text)
+    if problem:
+        return problem
     # A Source paragraph is kept byte for byte, so a long line it already had may stay.
     kept = {bare(line) for line in original.splitlines()}
     if any(len(line) > MAX_COLUMNS and bare(line) not in kept for line in text.splitlines()):
@@ -119,8 +128,13 @@ def main() -> int:
             if fix and fix["kind"] == "docstring":
                 docstring = rewrap(fix.get("docstring") or "")
                 problem = docstring_problem(docstring, packet.get("docstring") or "")
-                if problem or "docstring_lines" not in packet:
-                    skipped.append((node["article"], problem or "packet has no docstring span"))
+                if "docstring_lines" not in packet:
+                    problem = problem or "packet has no docstring span"
+                elif comment_problem(packet["docstring"].strip()):
+                    # Replacing a span of several comments would delete the code between them.
+                    problem = problem or "the packet's docstring span is not one docstring"
+                if problem:
+                    skipped.append((node["article"], problem))
                 else:
                     by_file[packet["lean_file"]].append((packet, docstring))
                     applied = "docstring"

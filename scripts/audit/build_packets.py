@@ -29,16 +29,21 @@ SIGNATURE_LINES = 40
 
 
 def docstring_span(lines: list[str], number: int) -> tuple[int, int] | None:
-    """0-based inclusive line span of the docstring attached to line `number`."""
+    """0-based inclusive line span of the docstring attached to line `number`.
+
+    The comment that ends just above the declaration counts only if it opens
+    with /--: a declaration without a docstring often follows a /-! section
+    heading, and the span must not run up from there to an earlier docstring.
+    """
     end = number - 1
     while end >= 0 and (not lines[end].strip() or lines[end].lstrip().startswith("@[")):
         end -= 1
     if end < 0 or not lines[end].rstrip().endswith("-/"):
         return None
     start = end
-    while start >= 0 and "/--" not in lines[start]:
+    while start >= 0 and "/-" not in lines[start]:
         start -= 1
-    return (start, end) if start >= 0 else None
+    return (start, end) if start >= 0 and lines[start].lstrip().startswith("/--") else None
 
 
 def signature(lines: list[str], number: int) -> str:
