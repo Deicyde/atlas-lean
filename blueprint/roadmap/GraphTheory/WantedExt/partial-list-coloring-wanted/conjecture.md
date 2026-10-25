@@ -19,7 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lambda Min](lambda-min.md)
-- [Is Choice Number](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-03/list-coloring/is-choice-number.md)
+- [Choice number](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-03/list-coloring/is-choice-number.md)
 
 ## Sources
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: TuranSystem.realizedCounts_nonempty
 ---
 
-# Realized Counts nonempty
+# Some size of a Turán system is realized
 
-The set of realized sizes is nonempty under the parameter bounds.
+**Some size of a Turán system is realized.** For natural numbers $n$, $s$, $r$ with
+$0 < r < s \le n$, the set of realized sizes for $n$, $s$, $r$ is nonempty: some natural number
+$k$ is the number of members of a Turán system with parameters $n$, $s$, $r$.
 
 ## Depends on
 
-- [Realized Counts](realized-counts.md)
+- [Realized sizes of Turán systems](realized-counts.md)
 
 ## Proof depends on
 
-- [Is Turan System](is-turan-system.md)
-- [Complete Graph](complete-graph.md)
-- [Complete Graph is Turan](complete-graph-is-turan.md)
+- [Turán system](is-turan-system.md)
+- [The complete $r$-graph](complete-graph.md)
+- [The complete $r$-graph is a Turán system](complete-graph-is-turan.md)
 
 ## Sources
 

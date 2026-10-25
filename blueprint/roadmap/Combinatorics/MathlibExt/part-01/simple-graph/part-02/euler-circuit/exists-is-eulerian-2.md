@@ -7,11 +7,14 @@ proof: formalized
 lean: SimpleGraph.ConnectedSupport.exists_isEulerian
 ---
 
-# Exists is Eulerian
+# Euler circuits when the non-isolated vertices are connected
 
-A finite simple graph whose non-isolated vertices induce a connected graph and whose
-degrees are all even has a closed Eulerian trail. Isolated vertices are irrelevant to an Euler
-tour.
+**Euler circuits when the non-isolated vertices are connected.** Let $G$ be a finite simple
+graph in which every vertex has even degree, and suppose that the subgraph of $G$ induced on its
+non-isolated vertices is connected (in particular nonempty, so $G$ has at least one edge). Then
+$G$ has a closed Eulerian trail, that is, a closed walk that uses every edge of $G$ exactly once.
+
+Isolated vertices are irrelevant to an Euler tour.
 
 ## Depends on
 
@@ -19,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists is Eulerian](exists-is-eulerian.md)
+- [Euler circuits in connected even graphs](exists-is-eulerian.md)
 
 ## Sources
 

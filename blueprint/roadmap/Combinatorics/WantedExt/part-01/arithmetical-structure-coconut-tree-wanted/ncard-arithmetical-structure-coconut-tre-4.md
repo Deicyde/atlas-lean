@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_star
 ---
 
-# Ncard arithmetical Structure coconut Tree star
+# Number of arithmetical structures on stars
 
-Corollary 3: for `s ≥ 2`, the star `S_s = CT(1, s)` has
-`|Arith(CT(1, s))| = 1 + ∑_{j=0}^{s-2} binom(s, j) |SArith(S_{s-j})|`.
+**Number of arithmetical structures on stars.** For $s \ge 2$, the number of arithmetical
+structures on the star $CT(1, s)$, a centre joined to $s$ leaves, is
+
+$$1 + \sum_{j=0}^{s-2} \binom{s}{j} N(s - j),$$
+
+where $N(t)$ is the number of smooth arithmetical structures on the star $CT(1, t)$.
 
 ## Depends on
 
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
-- [Is Smooth Coconut](is-smooth-coconut.md)
-- [Coconut Tree](coconut-tree.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

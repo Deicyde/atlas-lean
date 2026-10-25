@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.chuFamilyKLT_card_add
 ---
 
-# Chu Family KLT card add
+# Lower bound for the sumset of the Chu family set
 
-Theorem 7: `|A + A| ≥ 11 + 6klt + 10lt + 8t`; with Theorem 6, `A` is MSTD.
+**Lower bound for the sumset of the Chu family set.** Let $k$, $l$, $t$ be positive integers
+and let $A \subseteq \mathbb{Z}$ be the Chu family set with parameters $k$, $l$, $t$. Then
+$|A + A| \ge 11 + 6klt + 10lt + 8t$.
+
+Together with $|A - A| = 11 + 6klt + 8lt + 8t$ (Theorem 6), this shows that $A$ is sum-dominated
+(MSTD): $|A + A| > |A - A|$.
 
 ## Depends on
 
-- [Chu Family KLT](chu-family-klt.md)
+- [Kumar–Mohan–Pandey sets](chu-family-klt.md)
 
 ## Sources
 

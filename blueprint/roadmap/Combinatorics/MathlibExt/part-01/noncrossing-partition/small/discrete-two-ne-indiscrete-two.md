@@ -6,9 +6,11 @@ proof: formalized
 lean: NoncrossingPartition.discrete_two_ne_indiscrete_two
 ---
 
-# Discrete two ne indiscrete two
+# The discrete and indiscrete partitions of a two-element set differ
 
-Discrete and indiscrete partitions of `Fin 2` are distinct.
+**The discrete and indiscrete partitions of a two-element set differ.** The discrete
+noncrossing partition of $\{0, 1\}$ is not equal to the indiscrete noncrossing partition of
+$\{0, 1\}$.
 
 ## Depends on
 

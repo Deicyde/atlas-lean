@@ -7,14 +7,17 @@ proof: formalized
 lean: SimpleGraph.graphRamsey_eq_sInf
 ---
 
-# Graph Ramsey eq s Inf
+# Classical Ramsey numbers as an infimum
 
-The defining characterization of `graphRamsey`.
+**Classical Ramsey numbers as an infimum.** For all natural numbers $s$ and $t$, the Ramsey
+number $R(s, t)$ equals the infimum in $\mathbb{N}$ (where the empty set has infimum $0$) of the
+set of $N$ such that every simple graph on $N$ vertices contains the complete graph $K_s$ as a
+subgraph or has a complement containing $K_t$ as a subgraph.
 
 ## Depends on
 
-- [Classical Ramsey](classical-ramsey.md)
-- [Graph Ramsey](graph-ramsey.md)
+- [The Ramsey property for cliques](classical-ramsey.md)
+- [Classical Ramsey numbers](graph-ramsey.md)
 
 ## Sources
 

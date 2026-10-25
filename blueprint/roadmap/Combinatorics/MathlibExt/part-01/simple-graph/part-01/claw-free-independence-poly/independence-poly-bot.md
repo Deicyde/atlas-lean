@@ -7,9 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.independencePoly_bot
 ---
 
-# Independence Poly bot
+# Independence polynomial of the edgeless graph
 
-The independence polynomial of the empty graph is `(1 + X) ^ card V`.
+**Independence polynomial of the edgeless graph.** Let $V$ be a finite set. For a simple
+graph $G$ on $V$, let $I(G) = \sum_{k=0}^{|V|} i_k X^k \in \mathbb{Z}[X]$ be its independence
+polynomial, where $i_k$ is the number of independent sets of $G$ with $k$ vertices. If $G$ is the
+graph on $V$ with no edges, then $I(G) = (1 + X)^{|V|}$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Independence Poly coeff](independence-poly-coeff.md)
+- [Coefficients of the independence polynomial](independence-poly-coeff.md)
 
 ## Sources
 

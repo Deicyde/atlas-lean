@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.patternEx_singleton
 ---
 
-# Pattern Ex singleton
+# The extremal function of a single point vanishes
 
-A single point is contained in every nonempty set of cells, so `ex(n, M_{p}) = 0`.
+**The extremal function of a single point vanishes.** For every natural number $n$ and every
+point $p \in \mathbb{R}^2$, the 0-1 matrix extremal function of the one-point pattern $\{p\}$ on
+the $n \times n$ grid is zero: $\mathrm{ex}(n, M_{\{p\}}) = 0$. Indeed, a single point is contained
+in every nonempty set of cells.
 
 ## Depends on
 
-- [Pattern Ex](pattern-ex.md)
+- [0-1 matrix extremal function of a point pattern](pattern-ex.md)
 
 ## Proof depends on
 
-- [Cells Contain Pattern](cells-contain-pattern.md)
+- [Containment of a point pattern in a set of grid cells](cells-contain-pattern.md)
 
 ## Sources
 

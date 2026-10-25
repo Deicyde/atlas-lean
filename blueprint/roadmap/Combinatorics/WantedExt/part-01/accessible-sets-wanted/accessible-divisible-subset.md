@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.accessible_divisible_subset
 ---
 
-# Accessible divisible subset
+# Multiples of $d$ in an accessible set
 
-If `A` is `(r*d)`-accessible, then its subset of members congruent to zero
-modulo `d` is `r`-accessible.
+**Multiples of $d$ in an accessible set.** Let $d \ge 1$ and $r$ be natural numbers and let $A$
+be a set of natural numbers. If $A$ is $rd$-accessible, then the set $\{a \in A : d \mid a\}$ of
+members of $A$ divisible by $d$ is $r$-accessible.
 
 ## Depends on
 
-- [Is RAccessible](is-raccessible.md)
+- [$r$-accessibility for colorings of the positive integers](is-raccessible.md)
 
 ## Sources
 

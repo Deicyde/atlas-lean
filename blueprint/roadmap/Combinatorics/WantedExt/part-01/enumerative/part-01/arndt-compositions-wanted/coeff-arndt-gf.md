@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.coeff_arndtGF
 ---
 
-# Coeff arndt GF
+# Coefficients of the generating function of Arndt compositions
 
-The `xⁿ` coefficient of `arndtGF S` is `∑_k a_S(n, k) yᵏ`.
+**Coefficients of the generating function of Arndt compositions.** For a set $S$ of natural
+numbers and every $n \ge 0$, the coefficient of $x^n$ in the generating function $A_S(x, y)$ of
+Arndt compositions with parts in $S$ is the polynomial $\sum_{k=0}^{n} a_S(n, k)\, y^k$ in
+$\mathbb{Z}[y]$, where $a_S(n, k)$ is the number of Arndt compositions of $n$ with $k$ parts, all
+in $S$.
 
 ## Depends on
 
-- [Arndt Composition Count](arndt-composition-count.md)
-- [Arndt GF](arndt-gf.md)
+- [Number of Arndt compositions with parts in a set](arndt-composition-count.md)
+- [Generating function of Arndt compositions with parts in a set](arndt-gf.md)
 
 ## Sources
 

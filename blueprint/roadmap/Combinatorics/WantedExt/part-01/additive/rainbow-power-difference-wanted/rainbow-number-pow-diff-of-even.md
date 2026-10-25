@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.rainbowNumber_powDiff_of_even
 ---
 
-# Rainbow Number pow Diff of even
+# Rainbow number of the power-difference equation modulo a prime, even exponent
 
-Rainbow number for even `k`: the least `r` such that every exact `r`-coloring of `ℤ/pℤ`
-contains a rainbow solution of `x - y = z ^ k` is `3` if every prime factor of `p - 1` divides
-`k`, and `4` otherwise. The infimum ranges over `r ≥ 3` (a rainbow solution needs three colors; `r = 0`
-would hold vacuously, as there is no map `ZMod p → Fin 0`).
+**Rainbow number of the power-difference equation modulo a prime, even exponent.** Let $p$ be
+a prime and $k$ an even natural number. A coloring of $\mathbb{Z}/p\mathbb{Z}$ with $r$ colors is
+exact if it uses every color, and a solution of $x - y = z^k$ in $\mathbb{Z}/p\mathbb{Z}$ is
+rainbow if $x$, $y$ and $z$ receive pairwise distinct colors. Then the least $r \ge 3$ such that
+every exact coloring of $\mathbb{Z}/p\mathbb{Z}$ with $r$ colors has a rainbow solution of
+$x - y = z^k$ is $3$ if every prime factor of $p - 1$ divides $k$, and $4$ otherwise.
+
+The bound $r \ge 3$ is part of the definition: a rainbow solution needs three colors, and for
+$r = 0$ the condition would hold vacuously, as $\mathbb{Z}/p\mathbb{Z}$ has no coloring with no
+colors.
 
 ## Depends on
 

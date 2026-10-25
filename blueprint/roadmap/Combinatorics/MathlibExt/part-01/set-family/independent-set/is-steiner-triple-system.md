@@ -6,11 +6,12 @@ statement: formalized
 lean: SetFamily.IsSteinerTripleSystem
 ---
 
-# Is Steiner Triple System
+# Steiner triple system
 
-An `n`-vertex triple system modelled as a finset of unordered triples:
-every edge has cardinality three, and every pair of distinct vertices lies
-in exactly one edge of `H`.
+**Steiner triple system.** A finite hypergraph $H$ on a vertex type $V$, that is a finite
+family of finite subsets of $V$, is a Steiner triple system when it is $3$-uniform (every
+edge of $H$ has exactly $3$ elements) and any two distinct vertices $u \ne v$ of $V$ lie
+together in exactly one edge of $H$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+- [Uniform hypergraphs](../uniform-hypergraph/is-uniform.md)
 
 ## Sources
 

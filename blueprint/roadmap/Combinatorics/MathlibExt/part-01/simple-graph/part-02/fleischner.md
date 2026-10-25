@@ -7,23 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.fleischner
 ---
 
-# Fleischner
+# Fleischner's theorem
 
-Fleischner's theorem (https://en.wikipedia.org/wiki/Fleischner%27s_theorem):
-    the square of a 2-vertex-connected finite simple graph with at least three
-    vertices is Hamiltonian. Here `H` is the square of `G`: distinct vertices are
-    adjacent in `H` iff they are adjacent in `G` or share a common neighbor.
+**Fleischner's theorem.** Let $G$ be a finite simple graph that is 2-vertex-connected, that is,
+$G$ has at least three vertices and stays connected after deleting at most one vertex. Let $H$ be
+the square of $G$: the graph on the same vertices in which two distinct vertices are adjacent if
+and only if they are adjacent in $G$ or have a common neighbour in $G$. Then $H$ is Hamiltonian:
+it has a cycle that passes through every vertex exactly once.
 
 ## Depends on
 
-- [Is Vertex Connected](../part-04/vertex-connectivity/is-vertex-connected.md)
+- [$k$-vertex-connected graph](../part-04/vertex-connectivity/is-vertex-connected.md)
 
 ## Proof depends on
 
-- [Has Strong Square Cycle](../part-04/strong-square-cycle/has-strong-square-cycle.md)
-- [Card gt](../part-04/vertex-connectivity/card-gt.md)
-- [Fleischner Strong](has-strong-square-cycle.md)
-- [Eq square iff](../part-04/square/eq-square-iff.md)
+- [Strong square cycle at a vertex](../part-04/strong-square-cycle/has-strong-square-cycle.md)
+- [Vertex count of a $k$-vertex-connected graph](../part-04/vertex-connectivity/card-gt.md)
+- [Strengthened Fleischner theorem](has-strong-square-cycle.md)
+- [Characterization of the graph square](../part-04/square/eq-square-iff.md)
 - [Square](../part-04/square/square.md)
 
 ## Sources

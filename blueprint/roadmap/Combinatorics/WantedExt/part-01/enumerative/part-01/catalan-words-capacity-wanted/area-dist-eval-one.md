@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.areaDist_eval_one
 ---
 
-# Area Dist eval one
+# Area distribution at $q = 1$
 
-An area distribution evaluated at `q = 1` counts its words.
+**Area distribution at $q = 1$.** For every finite set $S$ of words of length $n$ with
+letters in the natural numbers, the area distribution of $S$ evaluated at $q = 1$ equals the
+number of words in $S$.
 
 ## Depends on
 
-- [Area Dist](area-dist.md)
+- [Area distribution](area-dist.md)
 
 ## Proof depends on
 

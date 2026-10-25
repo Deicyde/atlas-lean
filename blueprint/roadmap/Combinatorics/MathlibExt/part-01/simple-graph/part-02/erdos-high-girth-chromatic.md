@@ -7,11 +7,13 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.ErdosGirthChromaticWanted.erdos_high_girth_chromatic
 ---
 
-# Erdos Girth Chromatic
+# Erdős's theorem on graphs of high girth and high chromatic number
 
-Erdős 1959: for any `k ≥ 1` and `g ≥ 3` there exists a finite simple graph with girth at least `g`
-and chromatic number at least `k`; in particular finite graphs exist with arbitrarily high girth and
-chromatic number.
+**Erdős's theorem on graphs of high girth and high chromatic number.** For all natural numbers
+$k$ and $g$ with $g \ge 3$, there is a finite simple graph $G$ that has a cycle, whose girth
+(the length of a shortest cycle) is at least $g$, and whose chromatic number is at least $k$.
+
+In particular, there are finite graphs of arbitrarily high girth and chromatic number.
 
 ## Depends on
 

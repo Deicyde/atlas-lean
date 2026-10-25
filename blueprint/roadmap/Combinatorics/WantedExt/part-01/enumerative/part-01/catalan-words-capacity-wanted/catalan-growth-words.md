@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.catalanGrowthWords
 ---
 
-# Catalan Growth Words
+# Words with unit-bounded rises ending in their maximum
 
-The set `𝒞_{m,j}` of words of length `m` over `[1, j]` ending in `j` (so with largest letter
-`j`) with `w_{i+1} ≤ w_i + 1`.
+**Words with unit-bounded rises ending in their maximum.** For natural numbers $m$ and $j$,
+$\mathcal{C}_{m,j}$ is the set of words $w = w_1 \cdots w_m$ of length $m$ with letters in
+$\{1, \dots, j\}$ such that $w_{k+1} \le w_k + 1$ for $1 \le k < m$ and whose last letter $w_m$
+is $j$. It is empty when $m = 0$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Words Ending In](words-ending-in.md)
+- [Words ending in a given letter](words-ending-in.md)
 
 ## Sources
 

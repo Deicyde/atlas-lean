@@ -6,9 +6,10 @@ proof: formalized
 lean: NoncrossingPartition.card_three
 ---
 
-# Card three
+# Noncrossing partitions of a three-element set
 
-`NoncrossingPartition 3` has five elements.
+**Noncrossing partitions of a three-element set.** There are exactly five noncrossing
+partitions of $\{0, 1, 2\}$.
 
 ## Depends on
 
@@ -20,7 +21,7 @@ lean: NoncrossingPartition.card_three
 ## Proof depends on
 
 - [The indiscrete noncrossing partition](../operations/indiscrete.md)
-- [Proper Three Equiv](proper-three-equiv.md)
+- [Enumerating the proper noncrossing partitions of three points](proper-three-equiv.md)
 
 ## Sources
 

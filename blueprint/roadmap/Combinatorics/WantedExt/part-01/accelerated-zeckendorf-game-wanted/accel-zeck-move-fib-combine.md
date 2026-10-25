@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.accelZeckMove_fib_combine
 ---
 
-# Accel Zeck Move fib combine
+# Moving a Fibonacci number of pairs in the Accelerated Zeckendorf Game
 
-Let `p ≥ 2` and `i ≥ 1`. In a state with `F_{i-1}` copies of index `p - 1`, `F_i` copies
-of index `p` and none of index `p + 1`, the move `F_{i-1} · C_p` is legal and leaves no copies
-of index `p - 1`, `F_{i-2}` copies of index `p` and `F_{i-1}` copies of index `p + 1`. Paper
-`F_j` is `Nat.fib (j + 1)`, including `F_0 = 1` and `F_{-1} = 0`.
+**Moving a Fibonacci number of pairs in the Accelerated Zeckendorf Game.** Index the
+Fibonacci numbers as $F_1 = 1$, $F_2 = 2$, $F_{j+1} = F_j + F_{j-1}$, extended by $F_0 = 1$ and
+$F_{-1} = 0$. Let $p \ge 2$ and $i \ge 1$, and let $s$ be a state with $F_{i-1}$ copies of
+$F_{p-1}$, $F_i$ copies of $F_p$ and no copy of $F_{p+1}$. Let $t$ be the state obtained from $s$
+by replacing $F_{i-1}$ copies of each of $F_{p-1}$ and $F_p$ by $F_{i-1}$ copies of $F_{p+1}$.
+Then passing from $s$ to $t$ is a move, and $t$ has no copy of $F_{p-1}$, $F_{i-2}$ copies of
+$F_p$ and $F_{i-1}$ copies of $F_{p+1}$.
 
 ## Depends on
 
-- [Accel Zeck Move](accel-zeck-move.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
 
 ## Sources
 

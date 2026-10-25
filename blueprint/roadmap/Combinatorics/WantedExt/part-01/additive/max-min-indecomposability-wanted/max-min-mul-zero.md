@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.maxMinMul_zero
 ---
 
-# Max Min Mul zero
+# Constant coefficient of a max-min product
 
-The constant coefficient of a max-min product: `(g ⊗ h)₀ = min(g₀, h₀)`.
+**Constant coefficient of a max-min product.** For all sequences
+$g, h \colon \mathbb{N} \to \mathbb{N}$, the max-min product satisfies
+$(g \otimes h)_0 = \min(g_0, h_0)$.
 
 ## Depends on
 
-- [Max Min Mul](max-min-mul.md)
+- [Max-min product](max-min-mul.md)
 
 ## Sources
 

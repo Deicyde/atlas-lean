@@ -4,13 +4,13 @@ navigation: module
 
 # Degeneracy Coloring
 
-- [Exists small vertex](exists-small-vertex.md)
-- [Is Degenerate bot](is-degenerate-bot.md)
-- [Mono](mono.md)
-- [Of forall degree le](of-forall-degree-le.md)
-- [Is Degeneracy Ordering](is-degeneracy-ordering.md)
-- [Exists inj On ordering](exists-inj-on-ordering.md)
-- [Exists degeneracy Ordering](exists-degeneracy-ordering.md)
-- [Exists coloring Fun](exists-coloring-fun.md)
-- [Colorable](colorable.md)
-- [Chromatic Number le](chromatic-number-le.md)
+- [A degenerate vertex set has a vertex of small degree](exists-small-vertex.md)
+- [The edgeless graph is degenerate](is-degenerate-bot.md)
+- [Degeneracy is monotone in the bound](mono.md)
+- [Bounded maximum degree implies degeneracy](of-forall-degree-le.md)
+- [Degeneracy ordering](is-degeneracy-ordering.md)
+- [Degeneracy orderings of a vertex set](exists-inj-on-ordering.md)
+- [Degenerate graphs have degeneracy orderings](exists-degeneracy-ordering.md)
+- [Coloring a $k$-degenerate vertex set with $k + 1$ colors](exists-coloring-fun.md)
+- [$k$-degenerate graphs are $(k + 1)$-colorable](colorable.md)
+- [Chromatic number of a degenerate graph](chromatic-number-le.md)

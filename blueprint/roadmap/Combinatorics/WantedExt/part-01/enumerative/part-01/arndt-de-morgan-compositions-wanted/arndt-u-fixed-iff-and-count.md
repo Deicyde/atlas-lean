@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.arndtU_fixed_iff_and_count
 ---
 
-# Arndt U fixed iff and count
+# Compositions fixed by $U$ and their Padovan count
 
-The compositions fixed by `U` are those whose odd-indexed parts (1-based) are `1` and whose
-even-indexed parts are even (0-based: even positions hold `1`, odd positions hold even parts).
-Their number `c_U(n)` satisfies `c_U(n) = c_U(n - 2) + c_U(n - 3)` for `n ≥ 4` with
-`c_U(1) = 1`, `c_U(2) = 0`, `c_U(3) = 1`, and `c_U(n)` is the Padovan number
-`shiftedPadovanSequence (n - 1)` (OEIS A000931, shifted) for `n ≥ 1`.
+**Compositions fixed by $U$ and their Padovan count.** A composition $(c_1, \dots, c_m)$ of
+$n$ is fixed by the map $U$ if and only if $c_i = 1$ for every odd $i$ and $c_i$ is even for
+every even $i$. Let $c_U(n)$ be the number of compositions of $n$ fixed by $U$. Then
+$c_U(n) = c_U(n - 2) + c_U(n - 3)$ for every $n \ge 4$, $c_U(1) = 1$, $c_U(2) = 0$,
+$c_U(3) = 1$, and $c_U(n) = P_{n-1}$ for every $n \ge 1$, where $P$ is the shifted Padovan
+sequence, given by $P_0 = 1$, $P_1 = 0$, $P_2 = 1$ and $P_{j+3} = P_{j+1} + P_j$.
 
 ## Depends on
 
-- [Arndt U](arndt-u.md)
+- [The map $U$ on lists](arndt-u.md)
 - [Shifted Padovan Sequence](../../../../../../NumberTheory/MathlibExt/part-09/padovan-sequence/shifted-padovan-sequence.md)
 
 ## Sources

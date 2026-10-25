@@ -5,9 +5,12 @@ statement: formalized
 lean: NoncrossingPartition.twoBlockEquiv
 ---
 
-# Two Block Equiv
+# Enumerating the two-block noncrossing partitions of three points
 
-Bundled equivalence for the two-block stratum at arity three.
+**Enumerating the two-block noncrossing partitions of three points.** The map sending
+$a \in \{0, 1, 2\}$ to the partition of $\{0, 1, 2\}$ with blocks $\{a\}$ and
+$\{0, 1, 2\} \setminus \{a\}$ is a bijection from $\{0, 1, 2\}$ onto the set of noncrossing
+partitions of $\{0, 1, 2\}$ with exactly two blocks.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ Bundled equivalence for the two-block stratum at arity three.
 
 ## Proof depends on
 
-- [Two Block Partition](two-block-partition.md)
+- [Two-block partition of three points](two-block-partition.md)
 
 ## Sources
 

@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi2
 ---
 
-# Bpz C7 Pi2
+# Buys–Polak–Zuiddam two-block profile for the 7-cycle
 
-BPZ's two-block seven-cycle profile.
+**Buys–Polak–Zuiddam two-block profile for the 7-cycle.** This is $p_1 \star p_1$, where $p_1$
+is the one-block 7-cycle profile, whose code, pairs, auxiliary and neutral coordinates are $367$,
+$8$, $367$ and $322$, and $\star$ is the Buys–Polak–Zuiddam (BPZ) profile product.
 
 ## Depends on
 
-- [BPZProfile](bpzprofile.md)
+- [BPZ profiles](bpzprofile.md)
 
 ## Proof depends on
 
-- [Star](star.md)
-- [Bpz C7 Pi1](bpz-c7-pi1.md)
+- [Product of BPZ profiles](star.md)
+- [Buys–Polak–Zuiddam one-block profile for the 7-cycle](bpz-c7-pi1.md)
 
 ## Sources
 

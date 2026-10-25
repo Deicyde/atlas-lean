@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.kKernel
 ---
 
-# K Kernel
+# The $k$-kernel of a sequence
 
-One-dimensional `k`-kernel of a sequence.
+**The $k$-kernel of a sequence.** For a natural number $k$ and a sequence $a$ indexed by
+$\mathbb{N}$, the $k$-kernel of $a$ is the set of all sequences $n \mapsto a(k^e n + r)$ with
+$e, r \in \mathbb{N}$ and $r < k^e$.
 
 ## Depends on
 

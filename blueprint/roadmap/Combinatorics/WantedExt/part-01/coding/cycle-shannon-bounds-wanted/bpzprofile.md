@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.BPZProfile
 ---
 
-# BPZProfile
+# BPZ profiles
 
-The four integer coordinates propagated by the BPZ valid-tuple product.
+**BPZ profiles.** A BPZ profile is an arbitrary quadruple of integers, called its code,
+pairs, auxiliary and neutral coordinates: the four integer coordinates propagated by the
+valid-tuple product of Buys, Polak and Zuiddam. No validity condition is imposed on the
+quadruple.
 
 ## Depends on
 

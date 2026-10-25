@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isJSet_univ
 ---
 
-# Is JSet univ
+# The whole semigroup is a J-set
 
-The whole semigroup is a `J`-set.
+**The whole semigroup is a J-set.** In every nonempty commutative semigroup $S$, the set $S$
+itself is a $J$-set.
 
 ## Depends on
 
-- [Is JSet](is-jset.md)
+- [J-sets in commutative semigroups](is-jset.md)
 
 ## Sources
 

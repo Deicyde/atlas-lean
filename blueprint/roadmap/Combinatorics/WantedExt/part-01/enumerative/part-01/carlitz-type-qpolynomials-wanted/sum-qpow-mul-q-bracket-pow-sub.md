@@ -5,17 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.sum_qpow_mul_qBracket_pow_sub
 ---
 
-# Sum qpow mul q Bracket pow sub
+# Sums of $q^{rk} (k)^{n-d}$ via Carlitz-type sequences
 
-Generalized `q`-power sums: for `1 ≤ r`, `d ≤ r` and `n ≥ d`,
-`∑_{k<N} q^{rk} [k]^{n-d} = (q^{(r-d)N} T_n(N) - T_n(0)) / (n)_d`, where `T` is the Carlitz-type
-sequence with associated sequence `(q - 1)^{d-1} (k)_d / [k + r - d]` (`(k)_d` falling factorial;
-the terms `k < d` vanish).
+**Sums of $q^{rk} [k]^{n-d}$ via Carlitz-type sequences.** Let $q > 0$ with $q \ne 1$, let
+$[x] = (q^x - 1)/(q - 1)$, and let $r$, $d$ and $n$ be natural numbers with $r \ge 1$, $d \le r$
+and $d \le n$. Write $(k)_d = k(k-1)\cdots(k-d+1)$ for the falling factorial (with $(k)_0 = 1$).
+Let $T_m(x)$ ($m \in \mathbb{N}$, $x \in \mathbb{R}$) be the Carlitz-type sequence with associated
+sequence $a_k = (q - 1)^{d-1} (k)_d / [k + r - d]$, that is,
+
+$$T_m(x) = (q - 1)^{-m} \sum_{k=0}^{m} (-1)^{m-k} \binom{m}{k} a_k q^{kx}$$
+
+for all $m$ and all real $x$. Then for every natural number $N$,
+
+$$\sum_{k=0}^{N-1} q^{rk} [k]^{n-d} = \frac{q^{(r-d)N} T_n(N) - T_n(0)}{(n)_d},$$
+
+where $0^0 = 1$.
 
 ## Depends on
 
-- [Is Carlitz Type With](is-carlitz-type-with.md)
-- [Q Bracket](q-bracket.md)
+- [Carlitz-type sequences](is-carlitz-type-with.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

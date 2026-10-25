@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.modularSchurNumber_six
 ---
 
-# Modular Schur Number six
+# Modular Schur numbers modulo 6
 
-Values of `S_6(k, l)` for positive `k, l`: `0` if `l ≡ 1 (mod 6)`; otherwise
-`1` if `k = 1, l ≠ 3` or `k ≥ 2, l ≡ 4`; `2` if `k = 1, l = 3` or `k ≥ 2, l ≡ 3, 5`;
-`3` if `k = 2, l ≡ 0, 2, l ≥ 6`; `4` if `k = 2, l = 2`; `5` if `k ≥ 3, l ≡ 0, 2 (mod 6)`.
+**Modular Schur numbers modulo 6.** Let $k$ and $l$ be positive integers and let $S_6(k, l)$
+be the generalized Schur number modulo $6$. If $l \equiv 1 \pmod 6$, then $S_6(k, l) = 0$.
+Otherwise $S_6(k, l) = 1$ if $k = 1$ and $l \ne 3$, or $k \ge 2$ and $l \equiv 4 \pmod 6$;
+$S_6(k, l) = 2$ if $k = 1$ and $l = 3$, or $k \ge 2$ and $l \equiv 3$ or $5 \pmod 6$;
+$S_6(k, l) = 3$ if $k = 2$, $l \equiv 0$ or $2 \pmod 6$, and $l \ge 6$; $S_6(k, l) = 4$ if
+$k = l = 2$; and $S_6(k, l) = 5$ if $k \ge 3$ and $l \equiv 0$ or $2 \pmod 6$.
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

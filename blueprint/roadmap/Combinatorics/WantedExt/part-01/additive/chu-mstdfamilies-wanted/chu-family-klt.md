@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.chuFamilyKLT
 ---
 
-# Chu Family KLT
+# Kumar–Mohan–Pandey sets
 
-The family of Section 3: `A = (0 | 1, 1, 2, M^k, …, M^k, …, 1, 1, 2, M^k, …, M^k, 1, 1, 2, 1)`,
-where each run `M^k, …, M^k` has `l` copies and the block `1, 1, 2, M^k, …, M^k` is repeated `t`
-times. (Each block spans `4(kl + l + 1)`, matching the bounds `t(kl + l + 1)` printed in
-Lemmas 1-7.)
+**Kumar–Mohan–Pandey sets.** For natural numbers $k$, $l$, $t$, let $M^n$ be the block
+$1, 4, \dots, 4, 3$ with $n$ fours, and let $D$ be the sequence made of $t$ copies of the block
+$1, 1, 2, M^k, \dots, M^k$ (with $l$ copies of $M^k$) followed by $1, 1, 2, 1$. The set
+$A_{k,l,t}$ is $(0 \mid D)$, the set of partial sums of $D$ starting from $0$.
+
+Each block $1, 1, 2, M^k, \dots, M^k$ has sum $4(kl + l + 1)$, matching the bounds
+$t(kl + l + 1)$ in Lemmas 1-7 of the paper.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chu Block](chu-block.md)
-- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
+- [Chu difference block](chu-block.md)
+- [Sets given by consecutive differences](set-of-consecutive-differences.md)
 
 ## Sources
 

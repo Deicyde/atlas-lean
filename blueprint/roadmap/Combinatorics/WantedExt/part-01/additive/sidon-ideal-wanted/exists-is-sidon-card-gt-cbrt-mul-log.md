@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_isSidon_card_gt_cbrt_mul_log
 ---
 
-# Exists is Sidon card gt cbrt mul log
+# Ajtai–Komlós–Szemerédi lower bound for an infinite Sidon set
 
-Theorem 3, item 2 (Ajtai–Komlós–Szemerédi, as quoted): some Sidon set `A`
-satisfies `|[1, n] ∩ A| > c (n log n)^{1/3}` for all `n ≥ 1`, for some `c > 0`.
+**Ajtai–Komlós–Szemerédi lower bound for an infinite Sidon set.** There exist a Sidon set
+$A \subseteq \mathbb{N}$ and a real constant $c > 0$ such that
+$|A \cap \{1, \dots, n\}| > c\, (n \log n)^{1/3}$ for every natural number $n \ge 1$, where $\log$
+is the natural logarithm.
 
 ## Depends on
 

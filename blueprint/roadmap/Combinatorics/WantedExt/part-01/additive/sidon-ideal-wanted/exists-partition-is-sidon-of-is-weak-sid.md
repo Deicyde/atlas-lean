@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.exists_partition_isSidon_of_isWeakSidonSet
 ---
 
-# Exists partition is Sidon of is Weak Sidon Set
+# Weak Sidon sets split into two Sidon sets
 
-Theorem 1: every weak Sidon set can be partitioned into two Sidon sets.
+**Weak Sidon sets split into two Sidon sets.** Every weak Sidon set $A \subseteq \mathbb{N}$ is
+the union of two disjoint Sidon sets $B$ and $C$.
 
 ## Depends on
 
-- [Is Weak Sidon Set](is-weak-sidon-set.md)
+- [Weak Sidon set](is-weak-sidon-set.md)
 - [Sidon](../../../../MathlibExt/part-01/additive/is-sidon.md)
 
 ## Sources

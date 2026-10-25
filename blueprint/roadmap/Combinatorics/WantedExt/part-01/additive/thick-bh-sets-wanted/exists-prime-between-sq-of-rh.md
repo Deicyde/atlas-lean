@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_between_sq_of_RH
 ---
 
-# Dudek–Grenié–Molteni
+# Dudek–Grenié–Molteni theorem
 
-**Dudek–Grenié–Molteni** (as quoted in the paper): assuming the Riemann Hypothesis, for
-every integer `n ≥ 2` there is a prime strictly between `n^2` and
-`(n + (1 + 1/log n)^2 log n)^2`.
+**Dudek–Grenié–Molteni theorem.** Assume the Riemann Hypothesis. Then for every natural
+number $n \ge 2$ there is a prime $p$ with
+$n^2 < p < \bigl(n + (1 + 1/\log n)^2 \log n\bigr)^2$, where $\log$ is the natural logarithm.
 
 ## Depends on
 

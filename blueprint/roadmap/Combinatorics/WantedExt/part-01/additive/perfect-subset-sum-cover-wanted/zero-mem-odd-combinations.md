@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.PerfectSubsetSumCover.zero_mem_oddCombinations
 ---
 
-# Zero mem odd Combinations
+# Zero is an odd combination
 
-`0 ∈ 𝒯(A)` (all coefficients `0`).
+**Zero is an odd combination.** For every finite subset $A$ of an abelian group $G$, $0$ lies
+in the set $\mathcal{T}(A)$ of odd combinations of $A$ (take every coefficient equal to $0$).
 
 ## Depends on
 
-- [Odd Combinations](odd-combinations.md)
+- [Odd combinations](odd-combinations.md)
 
 ## Sources
 

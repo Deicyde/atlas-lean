@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.IsListColorable.colorable
 ---
 
-# Colorable
+# List-colorable graphs are colorable
 
-A list-colorable graph is colorable with the same number of colors.
+**List-colorable graphs are colorable.** If a simple graph $G$ is $q$-list-colorable, then $G$
+is $q$-colorable, that is, it has a proper coloring with $q$ colors.
 
 ## Depends on
 
-- [Is List Colorable](is-list-colorable.md)
+- [List colorability](is-list-colorable.md)
 
 ## Sources
 

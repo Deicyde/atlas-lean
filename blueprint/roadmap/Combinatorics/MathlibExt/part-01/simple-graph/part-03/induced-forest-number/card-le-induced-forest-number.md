@@ -7,13 +7,15 @@ proof: formalized
 lean: SimpleGraph.card_le_inducedForestNumber
 ---
 
-# Card le induced Forest Number
+# Induced forests are no larger than the induced forest number
 
-Any acyclic induced vertex set is bounded by the induced forest number.
+**Induced forests are no larger than the induced forest number.** Let $G$ be a simple graph
+on a finite vertex set $V$. For every set $S \subseteq V$ such that the subgraph of $G$ induced
+on $S$ is acyclic, $|S|$ is at most the induced forest number of $G$.
 
 ## Depends on
 
-- [Induced Forest Number](induced-forest-number.md)
+- [Induced forest number](induced-forest-number.md)
 
 ## Sources
 

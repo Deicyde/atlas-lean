@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.clspan
 ---
 
-# Clspan
+# CL-span
 
-The CL-span of a polynomial: the convex hull (in `ℂ` as a real vector space) of its roots
-lying on the canonical line; an interval of `CL` when nonempty.
+**CL-span.** The CL-span of a complex polynomial $f$ is the convex hull, in $\mathbb{C}$
+viewed as a real vector space, of the set of roots of $f$ lying on the canonical line, the line
+of complex numbers with real part $-1/2$. Here the zero polynomial is regarded as having no
+roots, so its CL-span is empty.
+
+When nonempty, the CL-span is an interval of the canonical line.
 
 ## Depends on
 

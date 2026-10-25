@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsTopologicalRecurrence
 ---
 
-# Is Topological Recurrence
+# Sets of topological recurrence
 
-Topological recurrence is the special case `ℓ = 1`.
+**Sets of topological recurrence.** A set $D$ of natural numbers is a set of topological
+recurrence when it is a set of $\ell$-topological recurrence for $\ell = 1$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is LTopological Recurrence](is-ltopological-recurrence.md)
+- [Sets of $\ell$-topological recurrence](is-ltopological-recurrence.md)
 
 ## Sources
 

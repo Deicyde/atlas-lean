@@ -13,7 +13,7 @@ numbers (OEIS A000958).
 ## Depends on
 
 - [Ascending Naples Count](ascending-naples-count.md)
-- [Fine Number](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
+- [Fine numbers](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
 
 ## Sources
 

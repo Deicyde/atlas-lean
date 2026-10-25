@@ -6,12 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.GaussianPartition
 ---
 
-# Gaussian Partition
+# Gaussian partition
 
-A Gaussian partition type, represented by its nonincreasing list of
-subspace dimensions. This small carrier is kept local to the substantive
-restricted-Gaussian-partition development rather than published as a
-standalone entry.
+**Gaussian partition.** A Gaussian partition is represented by its list of subspace
+dimensions, which is a nonincreasing list of natural numbers.
 
 ## Depends on
 

@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.catalanGrowthAreaDist_succ
 ---
 
-# Catalan Growth Area Dist succ
+# Recurrence for the area distribution by first letter
 
-Mansour and Shattuck's Lemma 1: for `m ≥ 2`, `j ≥ 1` and `ℓ ∈ [j]`,
-`c(m, j, ℓ) = q^ℓ ∑_{i=1}^{ℓ+1} c(m-1, j, i)`, with `c(1, j, ℓ) = q^ℓ δ_{j,ℓ}`.
+**Recurrence for the area distribution by first letter.** For natural numbers $m$, $j$ and
+$\ell$, let $c(m, j, \ell; q) \in \mathbb{Z}[q]$ be the area distribution of the words of length
+$m$ with letters in $\{1, \dots, j\}$, each letter at most one more than the letter before it,
+that begin with $\ell$ and end with $j$. For all natural numbers $m \ge 2$ and $j$, $\ell$ with
+$1 \le \ell \le j$,
+
+$$c(m, j, \ell; q) = q^{\ell} \sum_{i=1}^{\ell+1} c(m-1, j, i; q),$$
+
+and $c(1, j, \ell; q)$ equals $q^{\ell}$ if $j = \ell$ and $0$ otherwise.
 
 ## Depends on
 
-- [Catalan Growth Area Dist](catalan-growth-area-dist.md)
+- [Area distribution of words with unit-bounded rises, by first letter](catalan-growth-area-dist.md)
 
 ## Sources
 

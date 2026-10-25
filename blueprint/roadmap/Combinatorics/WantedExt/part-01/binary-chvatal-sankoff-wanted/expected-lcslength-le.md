@@ -7,21 +7,23 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.expectedLCSLength_le
 ---
 
-# Expected LCSLength le
+# Expected LCS length is at most the string length
 
-Expected LCS length is at most the common input length.
+**Expected LCS length is at most the string length.** For every $n$, the expected length of a
+longest common subsequence of two independent uniformly random binary strings of length $n$ is at
+most $n$.
 
 ## Depends on
 
-- [Expected LCSLength](expected-lcslength.md)
+- [Expected length of a longest common subsequence](expected-lcslength.md)
 
 ## Proof depends on
 
-- [Binary String](binary-string.md)
-- [Binary String Pair](binary-string-pair.md)
-- [Lcs Length](lcs-length.md)
-- [Lcs Length le](lcs-length-le.md)
-- [Uniform Binary String Pairs](uniform-binary-string-pairs.md)
+- [Binary strings](binary-string.md)
+- [Pairs of binary strings](binary-string-pair.md)
+- [Length of a longest common subsequence](lcs-length.md)
+- [The LCS length is at most the string length](lcs-length-le.md)
+- [The finite set of pairs of binary strings](uniform-binary-string-pairs.md)
 
 ## Sources
 

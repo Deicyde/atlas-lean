@@ -6,13 +6,14 @@ statement: formalized
 lean: SimpleGraph.Cycle.length
 ---
 
-# Length
+# Length of a cycle
 
-The length of a cycle.
+**Length of a cycle.** The length of a cycle in a simple graph is the number of edges of its
+closed walk.
 
 ## Depends on
 
-- [Cycle](cycle.md)
+- [Cycles in a graph](cycle.md)
 
 ## Sources
 

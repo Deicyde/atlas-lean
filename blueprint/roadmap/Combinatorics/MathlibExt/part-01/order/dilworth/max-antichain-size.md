@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Order.DilworthWanted.maxAntichainSize
 ---
 
-# Max Antichain Size
+# Maximum antichain size
 
-The largest cardinality of an antichain in the finite partial order `α`.
+**Maximum antichain size.** For a finite partially ordered set $\alpha$, the maximum antichain
+size of $\alpha$ (its width) is the largest number of elements of an antichain in $\alpha$.
 
 ## Depends on
 

@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isMVanishingFamily_one_sumAddMulProd_one_six
 ---
 
-# Is MVanishing Family one sum Add Mul Prod one six
+# The sum-plus-product family is $1$-vanishing over $\mathbb{Z}/6\mathbb{Z}$
 
-Lemma 3: over `ℤ/6`, `F_1` is `1`-vanishing.
+**The sum-plus-product family is $1$-vanishing over $\mathbb{Z}/6\mathbb{Z}$.** Let $F_1$ be
+the family over $\mathbb{Z}/6\mathbb{Z}$ sending a block $(b_1, \dots, b_l)$ to
+$\sum_i b_i + \prod_i b_i$. Then $F_1$ is $1$-vanishing: every sequence over
+$\mathbb{Z}/6\mathbb{Z}$ contains a block of consecutive terms, of some length $l > 1$, on which
+$F_1$ vanishes.
 
 ## Depends on
 
-- [Is MVanishing Family](is-mvanishing-family.md)
-- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
+- [$m$-vanishing family](is-mvanishing-family.md)
+- [The sum-plus-product family $F_c$](sum-add-mul-prod-family.md)
 
 ## Sources
 

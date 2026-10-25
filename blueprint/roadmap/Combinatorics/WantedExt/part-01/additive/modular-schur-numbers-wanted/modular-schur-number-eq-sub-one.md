@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.modularSchurNumber_eq_sub_one
 ---
 
-# Modular Schur Number eq sub one
+# Modular Schur numbers attaining $m - 1$
 
-For `l, m ≥ 2` with `l ≢ 1 (mod d)` for every divisor `d ≠ 1` of `m`, and `k ≥ m - 1`:
-`S_m(k, l) = m - 1`.
+**Modular Schur numbers attaining $m - 1$.** Let $l \ge 2$ and $m \ge 2$ be natural numbers
+such that $l \not\equiv 1 \pmod{d}$ for every divisor $d \ne 1$ of $m$, and let $k \ge m - 1$.
+Then the generalized Schur number $S_m(k, l)$, the largest $n$ such that $\{1, \dots, n\}$
+admits a partition into $k$ classes that are $l$-sum-free modulo $m$, equals $m - 1$.
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Order.DilworthWanted.minChainCoverSize
 ---
 
-# Min Chain Cover Size
+# Minimum chain cover size
 
-The smallest number of chains covering the finite partial order `α`.
+**Minimum chain cover size.** For a finite partially ordered set $\alpha$, the minimum chain
+cover size of $\alpha$ is the smallest number of chains in a chain cover of $\alpha$, that is, in
+a finite set of chains of $\alpha$ whose union is $\alpha$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Chain Cover Fin](is-chain-cover-fin.md)
+- [Chain cover](is-chain-cover-fin.md)
 
 ## Sources
 

@@ -4,9 +4,9 @@ navigation: module
 
 # Symmetric Functions Young Tableaux
 
-- [Omega Alg Hom](omega-alg-hom.md)
+- [The omega homomorphism on symmetric polynomials](omega-alg-hom.md)
 - [Exponential Specialization](exponential-specialization.md)
-- [Symmetric Scalar Product](symmetric-scalar-product.md)
-- [Skew Shape](skew-shape.md)
-- [Skew Semistandard Young Tableau](skew-semistandard-young-tableau.md)
-- [Skew Standard Young Tableau](skew-standard-young-tableau.md)
+- [Scalar product of symmetric polynomials](symmetric-scalar-product.md)
+- [Skew shape](skew-shape.md)
+- [Semistandard Young tableau of skew shape](skew-semistandard-young-tableau.md)
+- [Standard Young tableau of skew shape](skew-standard-young-tableau.md)

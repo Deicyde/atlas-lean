@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.freiman_three_k_sub_four
 ---
 
-# Freiman three k sub four
+# Freiman's $3k - 4$ theorem
 
-Freiman's `3k - 4` theorem: let `A ⊆ ℤ` with `|A| = k ≥ 3`, `min A = 0` and `gcd(A) = 1`. If
-`|2A| = 2k - 1 + b ≤ 3k - 4`, then `A` lies in an arithmetic progression of length at most
-`k + b`. (`|2A| ≥ 2k - 1` always, so `b` ranges over `ℕ`.)
+**Freiman's $3k - 4$ theorem.** Let $A$ be a finite set of integers with $|A| = k \ge 3$,
+$\min A = 0$ and $\gcd(A) = 1$, and let $b$ be a natural number. If
+$|2A| = 2k - 1 + b \le 3k - 4$, where $2A = \{a + a' : a, a' \in A\}$, then $A$ is contained in
+an arithmetic progression of length at most $k + b$.
+
+Since $|2A| \ge 2k - 1$ always, taking $b$ to be a natural number loses nothing.
 
 ## Depends on
 

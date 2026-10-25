@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.scheduleCost_two_lower_bound
 ---
 
-# Schedule Cost two lower bound
+# Lower bound for capacity-two schedules
 
-For `n ≥ 3`, every capacity-`2` schedule `σ` in which person `1` takes part
-in `a` forward moves, `m` returns carry two people and `s` forward moves carry
-one person costs at least `T(n) + ⌈n/2⌉ - a + 4m + 3s`.
+**Lower bound for capacity-two schedules.** Let $n \ge 3$ and let $T(n)$ be the optimal
+crossing time of the $n$ people $1, \dots, n$ (person $i$ crossing in time $i$) on a bridge of
+capacity $2$. Let $\sigma$ be a bridge schedule of capacity $2$ for these people in which person
+$1$ takes part in exactly $a$ forward moves, exactly $m$ returns carry two people and exactly $s$
+forward moves carry one person. Then the total cost of $\sigma$ is at least
+$T(n) + \lceil n/2 \rceil - a + 4m + 3s$.
 
 ## Depends on
 
-- [Is Bridge Schedule](is-bridge-schedule.md)
-- [Bridge Time](bridge-time.md)
-- [Forward Crossings](forward-crossings.md)
-- [Return Crossings](return-crossings.md)
+- [Bridge schedules](is-bridge-schedule.md)
+- [Optimal crossing time of the bridge and torch problem](bridge-time.md)
+- [Forward crossings](forward-crossings.md)
+- [Return crossings](return-crossings.md)
 - [Schedule Cost](schedule-cost.md)
 
 ## Sources

@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.add_mul_not_mem_nat_of_irrational_of_rat
 ---
 
-# Lemma 18 (i)
+# No nonnegative integer points for an irrational start and a rational difference
 
-**Lemma 18 (i).** If `x` is irrational and `d` is rational, then `x + i d` and `2x + j d` are
-not natural numbers for any `i, j ≥ 0`. The paper assumes `d ∈ ℚ ∖ ℕ`; the claim holds for every
-rational `d`, so that restriction is not stated.
+**No nonnegative integer points for an irrational start and a rational difference.** Let
+$x$ be an irrational real number and $d$ a rational number. Then for all natural numbers $i$ and
+$j$, neither $x + id$ nor $2x + jd$ is a nonnegative integer.
+
+The paper assumes $d \in \mathbb{Q} \setminus \mathbb{N}$; the claim holds for every rational $d$,
+so that restriction is not stated.
 
 ## Depends on
 

@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.zmod_two_pi_good_threshold_isBigO
 ---
 
-# Zmod two pi good threshold is Big O
+# Threshold for good sequences in $\mathbb{Z}_2^d$
 
-Zero sums with small cross number in `ℤ₂ᵈ`: with `n = 2^d`, every threshold function `t` for
-the event that a uniformly random sequence in `ℤ₂ᵈ` is good satisfies, for every `ε > 0`,
-`t ∈ O(n / (lg lg n)^{1-ε})`.
+**Threshold for good sequences in $\mathbb{Z}_2^d$.** Write $\lg = \log_2$. Let $t$ be a
+threshold function, in $d$, for the probability that a uniformly random sequence of $s$ elements
+of $\mathbb{Z}_2^d$ is good, and write $n = 2^d$. Then for every $\varepsilon > 0$,
+$t(d) = O\left(n / (\lg \lg n)^{1-\varepsilon}\right)$ as $d \to \infty$.
 
 ## Depends on
 
-- [Is Threshold Function](is-threshold-function.md)
-- [Good Sequence Prob](good-sequence-prob.md)
+- [Threshold functions](is-threshold-function.md)
+- [Probability that a random sequence is good](good-sequence-prob.md)
 
 ## Sources
 

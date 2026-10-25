@@ -5,21 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.no_squareWeightedSubseq_pair_and_prime_of_reduction
 ---
 
-# No square Weighted Subseq pair and prime of reduction
+# Three-term sequences without square-weighted zero-sum subsequences
 
-Lemma 11: let `p` be a prime and `r` a nonzero even number, let `(z₁, z₂)` be units
-modulo `p²` whose reduction modulo `p` has no `S(p)`-weighted zero sum, and let
-`S = (x₁, x₂, y₁)` reduce modulo `p²` to `(z₁, z₂, p)`. Then `S` has no `S(p^r)`-weighted
-zero-sum subsequence. The paper says `S` lies in `U(p^r)`, which no `y₁` reducing to the
-nonunit `p` can satisfy; its proof writes `y₁ = p w₁` with `w₁` a unit, and Theorem 12 applies
-the lemma to `(u_p, v_p, p)`, so `S` is taken in `ℤ_{p^r}` (then `x₁, x₂` are units because
-`z₁, z₂` are). The paper's `Q_p` is `S(p)` for prime `p`.
+**Three-term sequences without square-weighted zero-sum subsequences.** Let $p$ be a prime and
+$r$ a nonzero even natural number, and write $S(m)$ for the set of nonzero squares in
+$\mathbb{Z}/m\mathbb{Z}$. Let $z_1, z_2$ be units of $\mathbb{Z}/p^2\mathbb{Z}$ whose reduction
+$(z_1 \bmod p, z_2 \bmod p)$ is not an $S(p)$-weighted zero-sum sequence. Let $T = (x_1, x_2, y_1)$
+be a sequence in $\mathbb{Z}/p^r\mathbb{Z}$ whose reduction modulo $p^2$ is $(z_1, z_2, p)$. Then
+$T$ has no $S(p^r)$-weighted zero-sum subsequence.
+
+The paper states the lemma for sequences of units modulo $p^r$, which no $y_1$ reducing to the
+nonunit $p$ can be; following the paper's proof and its application in Theorem 12, the sequence is
+taken in $\mathbb{Z}/p^r\mathbb{Z}$. Then $x_1, x_2$ are automatically units, since $z_1, z_2$ are.
 
 ## Depends on
 
-- [Has Weighted Zero Sum](has-weighted-zero-sum.md)
-- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
-- [Square Set](square-set.md)
+- [Weighted zero-sum sequences](has-weighted-zero-sum.md)
+- [Weighted zero-sum subsequences](has-weighted-zero-sum-subseq.md)
+- [Nonzero squares modulo $n$](square-set.md)
 
 ## Sources
 

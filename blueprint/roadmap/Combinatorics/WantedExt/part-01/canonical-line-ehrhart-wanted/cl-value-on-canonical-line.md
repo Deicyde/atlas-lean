@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.cl_value_on_canonicalLine
 ---
 
-# Cl value on canonical Line
+# Values of CL-polynomials on the canonical line
 
-A degree-`d` CL-polynomial takes every canonical-line argument into `ℝ · i^d`.
-Membership in that one-dimensional real subspace is represented by the witness `r : ℝ`.
+**Values of CL-polynomials on the canonical line.** If $f$ is a CL-polynomial of degree $d$,
+then for every $z$ on the canonical line there is a real number $r$ with $f(z) = r\, i^d$; that
+is, $f$ maps the canonical line into $\mathbb{R}\, i^d$.
 
 ## Depends on
 
-- [Is CL](is-cl.md)
+- [CL-polynomials](is-cl.md)
 - [Canonical Line](canonical-line.md)
 
 ## Sources

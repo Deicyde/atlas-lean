@@ -12,7 +12,7 @@ Smallest case: `k = l = t = 1` gives `(0 | 1, 1, 2, 1, 4, 3, 1, 1, 2, 1)`.
 
 ## Depends on
 
-- [Chu Family KLT](chu-family-klt.md)
+- [Kumar–Mohan–Pandey sets](chu-family-klt.md)
 
 ## Sources
 

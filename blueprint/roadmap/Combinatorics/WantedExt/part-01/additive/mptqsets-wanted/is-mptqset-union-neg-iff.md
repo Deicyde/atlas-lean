@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isMPTQSet_union_neg_iff
 ---
 
-# Is MPTQSet union neg iff
+# Adjoining negatives preserves the MPTQ property
 
-Proposition 1: a finite set `A` of positive reals is an MPTQ set if and only if
-`A ∪ (-A)` is.
+**Adjoining negatives preserves the MPTQ property.** Let $A$ be a finite set of positive real
+numbers and $-A = \{-a : a \in A\}$. Then $A \cup (-A)$ is an MPTQ set if and only if $A$ is an
+MPTQ set.
 
 ## Depends on
 
-- [Is MPTQSet](is-mptqset.md)
+- [MPTQ set](is-mptqset.md)
 
 ## Sources
 

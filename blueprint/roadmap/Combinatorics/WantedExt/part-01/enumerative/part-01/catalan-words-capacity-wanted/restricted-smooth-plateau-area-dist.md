@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.restrictedSmoothPlateauAreaDist
 ---
 
-# Restricted Smooth Plateau Area Dist
+# Area polynomial of restricted smooth words between two top letters
 
-`t*(m, j; q)`, the area distribution on the set `𝒯*_{m,j}` of members of `𝒯_{m,j}` with no
-two adjacent `1`s.
+**Area polynomial of restricted smooth words between two top letters.** For natural numbers
+$m$ and $j$, let $\mathcal{T}^*_{m,j}$ be the set of words $w = w_1 \cdots w_m$ over
+$\{1, \dots, j\}$ with $w_1 = w_m = j$, $w_{k+1} \le w_k + 1$ and $w_k \le w_{k+1} + 1$ for
+$1 \le k < m$, and no two adjacent letters both equal to $1$ (so $\mathcal{T}^*_{0,j}$ is empty).
+Then $t^*(m, j; q)$ is the polynomial $\sum_{w \in \mathcal{T}^*_{m,j}} q^{w_1 + \cdots + w_m}$ in
+$\mathbb{Z}[q]$.
 
 ## Depends on
 
@@ -16,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Area Dist](area-dist.md)
-- [Words Ending In](words-ending-in.md)
+- [Area distribution](area-dist.md)
+- [Words ending in a given letter](words-ending-in.md)
 
 ## Sources
 

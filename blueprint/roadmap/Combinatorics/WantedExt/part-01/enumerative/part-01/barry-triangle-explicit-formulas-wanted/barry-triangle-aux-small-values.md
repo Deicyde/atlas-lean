@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.barryTriangleAux_small_values
 ---
 
-# Barry Triangle Aux small values
+# Small values of Barry's triangle
 
-Values from the paper's Table 1: `s(0, 2, 2) = 1`, `s(0, 4, 3) = 4`, `s(0, 6, 4) = 67`.
+**Small values of Barry's triangle.** Barry's triangle recurrence $s$ takes the values
+$s(0, 2, 2) = 1$, $s(0, 4, 3) = 4$ and $s(0, 6, 4) = 67$.
 
 ## Depends on
 
-- [Barry Triangle Aux](barry-triangle-aux.md)
+- [Barry's triangle recurrence](barry-triangle-aux.md)
 
 ## Sources
 

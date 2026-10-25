@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsAddPiecewiseSyndetic.arithmeticProgressions_int
 ---
 
-# Theorem 1
+# Furstenberg–Glasner theorem on progressions in piecewise syndetic sets
 
-**Theorem 1** (Furstenberg–Glasner). If `S ⊆ ℤ` is piecewise syndetic, then for
-every `k` the set of `(a, d) ∈ ℤ × ℤ` with `a, a + d, …, a + k d ∈ S` is piecewise
-syndetic in `ℤ × ℤ`.
+**Furstenberg–Glasner theorem on progressions in piecewise syndetic sets.** If
+$S \subseteq \mathbb{Z}$ is piecewise syndetic, then for every natural number $k$ the set of pairs
+$(a, d) \in \mathbb{Z} \times \mathbb{Z}$ such that $a + i d \in S$ for all $i = 0, 1, \dots, k$
+is piecewise syndetic in $\mathbb{Z} \times \mathbb{Z}$.
 
-The paper takes `k ≥ 1`; `k = 0` is included.
+The paper takes $k \ge 1$; the case $k = 0$ is included.
 
 ## Depends on
 
-- [Is Add Piecewise Syndetic](is-add-piecewise-syndetic.md)
+- [Piecewise syndetic set in a commutative semigroup](is-add-piecewise-syndetic.md)
 
 ## Sources
 

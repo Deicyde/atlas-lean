@@ -5,5 +5,5 @@ navigation: module
 
 # Aronson Transform
 
-- [Aronson Transform exists Unique general](aronson-transform-exists-unique-general.md)
-- [Aronson Transform exists Unique](aronson-transform-exists-unique.md)
+- [Existence and uniqueness of the Aronson transform, general form](aronson-transform-exists-unique-general.md)
+- [Existence and uniqueness of the Aronson transform](aronson-transform-exists-unique.md)

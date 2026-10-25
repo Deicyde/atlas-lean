@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.catalanWords_capacity_leadingCoeff
 ---
 
-# Catalan Words capacity leading Coeff
+# Number of Catalan words of maximum capacity
 
-Mansour and Shattuck's Corollary 4, leading coefficient: for `n ≥ 4`, the number `cₙ` of
-Catalan words of length `n` with maximum capacity is `2` if `3 ∣ n` and `1` otherwise.
+**Number of Catalan words of maximum capacity.** For every $n \ge 4$, let $\mathcal{A}_n$ be
+the set of Catalan words of length $n$. The leading coefficient of the capacity distribution
+$\sum_{w \in \mathcal{A}_n} q^{\operatorname{cap}(w)}$ is $2$ if $3$ divides $n$ and $1$
+otherwise; equivalently, exactly two Catalan words of length $n$ have the largest capacity when
+$3 \mid n$, and exactly one does otherwise.
 
 ## Depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Catalan Words](catalan-words.md)
+- [Capacity distribution](capacity-dist.md)
+- [Catalan words](catalan-words.md)
 
 ## Sources
 

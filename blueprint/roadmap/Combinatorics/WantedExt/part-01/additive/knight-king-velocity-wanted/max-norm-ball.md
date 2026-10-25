@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.maxNormBall
 ---
 
-# Max Norm Ball
+# Max-norm ball
 
-`maxNormBall h` is `B_h`: the Cartesian product of the two integer intervals from
-`-h` through `h`, equivalently the lattice points whose max norm is at most
-`h`.
+**Max-norm ball.** For a natural number $h$, the max-norm ball $B_h \subset \mathbb{Z}^2$ is the
+product of two copies of the integer interval $\{-h, \dots, h\}$, that is, the set of lattice
+points $(x, y)$ with $\max(|x|, |y|) \le h$.
 
 ## Depends on
 

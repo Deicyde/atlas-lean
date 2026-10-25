@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.opx_permutation_pattern_le
 ---
 
-# Opx permutation pattern le
+# Linear bound for permutation-like point patterns
 
-Corollary 3.4: there is an absolute `C` such that for every `c > 0` there is `K` with
-`opx(n, P) ≤ K · 2^{Ck} · n` for all natural `n` and every `k`-point `P ⊆ ℝ²` with pairwise
-distinct `x`-coordinates and pairwise distinct `y`-coordinates whose consecutive columns and
-consecutive rows are at most `c` apart (the paper's `2^{O(k)} n`, constant depending on `c`).
+**Linear bound for permutation-like point patterns.** There is a real constant $C$ such that
+for every real $c > 0$ there is a real constant $K$ with the following property. Let
+$P \subseteq \mathbb{R}^2$ be a finite set of $k$ points whose $x$-coordinates are pairwise
+distinct and whose $y$-coordinates are pairwise distinct, such that any two consecutive
+$x$-coordinates of points of $P$ differ by at most $c$, and so do any two consecutive
+$y$-coordinates. Then $\operatorname{opx}(n, P) \le K \cdot 2^{Ck} \cdot n$ for every natural
+number $n$.
+
+The paper states the bound as $2^{O(k)} n$, with the implied constant depending on $c$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

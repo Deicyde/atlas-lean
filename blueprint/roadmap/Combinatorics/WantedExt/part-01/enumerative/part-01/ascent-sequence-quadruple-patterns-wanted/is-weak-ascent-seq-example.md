@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isWeakAscentSeq_example
 ---
 
-# Is Weak Ascent Seq example
+# The weak ascent sequence $00203413$
 
-The paper's example `00203413` has five weak ascents and is a weak ascent sequence.
+**The weak ascent sequence $00203413$.** The word $00203413$ has five weak ascents and is a
+weak ascent sequence.
 
 ## Depends on
 
-- [Is Weak Ascent Seq](is-weak-ascent-seq.md)
-- [Word Weak Ascents](word-weak-ascents.md)
+- [Weak ascent sequence](is-weak-ascent-seq.md)
+- [Number of weak ascents of a word](word-weak-ascents.md)
 
 ## Sources
 

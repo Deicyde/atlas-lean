@@ -7,17 +7,20 @@ proof: formalized
 lean: SimpleGraph.cocolorable_of_fintype
 ---
 
-# Cocolorable of fintype
+# Finite graphs are cocolorable
 
-Every finite graph is cocolorable, via its tautological finite coloring.
+**Finite graphs are cocolorable.** Every graph $G$ on a finite vertex set $V$ is cocolorable
+with $|V|$ colors.
+
+Giving every vertex its own color is a proper coloring.
 
 ## Depends on
 
-- [Cocolorable](cocolorable.md)
+- [Cocolorable graphs](cocolorable.md)
 
 ## Proof depends on
 
-- [Cocolorable](cocolorable-2.md)
+- [Colorable graphs are cocolorable](cocolorable-2.md)
 
 ## Sources
 

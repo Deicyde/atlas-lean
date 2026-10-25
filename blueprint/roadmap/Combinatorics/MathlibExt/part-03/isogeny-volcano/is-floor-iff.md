@@ -7,14 +7,16 @@ proof: formalized
 lean: IsogenyVolcano.isFloor_iff
 ---
 
-# Is Floor iff
+# Floor vertices are those whose level equals the depth
 
-Floor means level value equals depth.
+**Floor vertices are those whose level equals the depth.** A vertex $v$ of an
+$\ell$-isogeny volcano $C$ lies on the floor of $C$ if and only if the level of $v$, as a natural
+number, equals the depth of $C$.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
-- [Is Floor](is-floor.md)
+- [Isogeny volcano](isogeny-volcano.md)
+- [Floor of a volcano](is-floor.md)
 
 ## Sources
 

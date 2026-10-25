@@ -7,13 +7,13 @@ proof: formalized
 lean: SimpleGraph.isOddIndependent_empty
 ---
 
-# Is Odd Independent empty
+# The empty set is odd independent
 
-The empty set is odd independent in any simple graph.
+**The empty set is odd independent.** The empty set is odd independent in any simple graph.
 
 ## Depends on
 
-- [Is Odd Independent](is-odd-independent.md)
+- [Odd independent set](is-odd-independent.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.arndtCompositionCount_six_four
 ---
 
-# Arndt Composition Count six four
+# Arndt compositions of 6 with four parts
 
-The only Arndt composition of `6` with four parts is `(2,1,2,1)`.
+**Arndt compositions of 6 with four parts.** There is exactly one Arndt composition of $6$
+with four parts.
+
+It is $(2, 1, 2, 1)$.
 
 ## Depends on
 
-- [Arndt Composition Count](arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](arndt-composition-count.md)
 
 ## Sources
 

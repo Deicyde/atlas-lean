@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.carlitzEtaPoly_zero
 ---
 
-# Carlitz Eta Poly zero
+# The zeroth Carlitz $q$-polynomial
 
-`η_0(x) = 1`.
+**The zeroth Carlitz $q$-polynomial.** For all real $q$ and $x$, Carlitz's $q$-polynomial
+$\eta_0(x)$ equals $1$.
 
 ## Depends on
 
-- [Carlitz Eta Poly](carlitz-eta-poly.md)
+- [Carlitz $q$-polynomials $\eta_n$](carlitz-eta-poly.md)
 
 ## Proof depends on
 
-- [Q Bracket](q-bracket.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.quadrupleUSet
 ---
 
-# Quadruple USet
+# The sets $U_{n,j}$
 
-`U_{n,j}`: the sequences `w ∈ W_n = WA_n(011, 100, 201, 210)` whose last descent top is at
-position `n - 1`, with a big entry, first `n - 2` entries not all `0`, `w_{n-1} ≠ n - 2` and
-`w_{n-1} - w_n = j` (one-indexed entries; `w_k` is `w.getD (k - 1) 0`).
+**The sets $U_{n,j}$.** Let $W_n = WA_n(011, 100, 201, 210)$ be the set of weak ascent
+sequences of length $n$ that avoid each of the patterns $011$, $100$, $201$ and $210$. For
+natural numbers $n$ and $j$, $U_{n,j}$ is the set of sequences $w = w_1 w_2 \cdots w_n$ in
+$W_n$ such that the last descent top of $w$ is at position $n - 1$, $w$ has a big entry, the
+first $n - 2$ entries of $w$ are not all $0$, $w_{n-1} \ne n - 2$, and $w_{n-1} = w_n + j$.
 
 ## Depends on
 
@@ -17,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Big Entry](is-big-entry.md)
-- [Last Descent Top](last-descent-top.md)
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [Big entry](is-big-entry.md)
+- [Position of the last descent top](last-descent-top.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Sources
 

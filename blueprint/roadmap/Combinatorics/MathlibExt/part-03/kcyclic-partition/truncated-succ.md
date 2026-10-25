@@ -6,13 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.TruncatedSucc
 ---
 
-# Truncated Succ
+# Truncated-cycle successor
 
-Truncated-cycle successor for a permutation `σ` at label `i`.
-
-It characterizes the exact evaluation `σ^(i)(i) = j` as the first positive
-forward iterate `(σ ^ m) i` whose label is `≤ i`: there exists `m > 0` with
-`(σ ^ m) i = j`, `j ≤ i`, and every earlier positive iterate has label `> i`.
+**Truncated-cycle successor.** Let $\sigma$ be a permutation of a finite linearly ordered
+set $V$ and let $i, j \in V$. Then $j$ is the truncated-cycle successor $\sigma^{(i)}(i)$ of $i$
+when $j$ is the first of the iterates $\sigma(i), \sigma^2(i), \dots$ that is at most $i$: there
+is an $m > 0$ with $\sigma^m(i) = j$ and $j \le i$, and $\sigma^{m'}(i) > i$ for every $m'$ with
+$0 < m' < m$.
 
 ## Depends on
 

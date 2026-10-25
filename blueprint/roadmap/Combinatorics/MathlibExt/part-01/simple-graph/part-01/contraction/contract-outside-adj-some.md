@@ -7,19 +7,21 @@ proof: formalized
 lean: SimpleGraph.contractOutside_adj_some
 ---
 
-# Contract Outside adj some
+# Contraction preserves adjacency among retained vertices
 
-Adjacency between surviving vertices is unchanged by contraction.
+**Contraction preserves adjacency among retained vertices.** Let $G$ be a graph on $V$, let
+$D \subseteq V$, and contract $V \setminus D$ to a single vertex. Two vertices $a, b \in D$ are
+adjacent in the contracted graph if and only if they are adjacent in $G$.
 
 ## Depends on
 
-- [Contract Outside](contract-outside.md)
+- [Contracting the complement of a vertex set](contract-outside.md)
 
 ## Proof depends on
 
-- [Collapse Outside](collapse-outside.md)
-- [Collapse Outside eq some iff](collapse-outside-eq-some-iff.md)
-- [Collapse Outside of mem](collapse-outside-of-mem.md)
+- [Collapsing the complement of a set](collapse-outside.md)
+- [Preimages of retained vertices under the collapse map](collapse-outside-eq-some-iff.md)
+- [The collapse map fixes the retained set](collapse-outside-of-mem.md)
 
 ## Sources
 

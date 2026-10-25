@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.inverseAckermann_two
 ---
 
-# Inverse Ackermann two
+# The inverse Ackermann function at 2
 
-`α(2) = 1` (`A(0, 0) = 1 < 2 ≤ 3 = A(1, 1)`).
+**The inverse Ackermann function at 2.** The inverse Ackermann function $\alpha$ satisfies
+$\alpha(2) = 1$, since $A(0, 0) = 1 < 2 \le 3 = A(1, 1)$, where $A$ is the two-argument
+Ackermann function.
 
 ## Depends on
 
-- [Inverse Ackermann](inverse-ackermann.md)
+- [Inverse Ackermann function](inverse-ackermann.md)
 
 ## Sources
 

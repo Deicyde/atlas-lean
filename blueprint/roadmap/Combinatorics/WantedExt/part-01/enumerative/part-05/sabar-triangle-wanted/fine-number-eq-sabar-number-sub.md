@@ -11,7 +11,7 @@ Theorem 4: for `n ≥ 2`, `f_n = s(2n, n+1) - s(2n, n-1)`.
 
 ## Depends on
 
-- [Fine Number](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
+- [Fine numbers](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
 - [Sabar Number](sabar-number.md)
 
 ## Sources

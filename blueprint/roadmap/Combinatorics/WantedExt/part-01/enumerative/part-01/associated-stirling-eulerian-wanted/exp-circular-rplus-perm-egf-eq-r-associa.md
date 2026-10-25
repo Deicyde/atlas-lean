@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.exp_circularRPlusPermEGF_eq_rAssociatedPermEGF
 ---
 
-# Exp circular RPlus Perm EGF eq r Associated Perm EGF
+# Logarithm of the generating function of permutations with long cycles
 
-Corollary 33: for every `r ≥ 0`, `C^{r+}(x,u) = ln A^r(x,u)`, stated as
-`exp C^{r+}(x,u) = A^r(x,u)`, with `C^{r+}(x,u) = ∑_{n ≥ r+1} C_n(x) u^n/n!` (Theorem 9)
-and `A^r` the generating function of permutations with all cycle lengths greater
-than `r`. The record states no bound on `r`; at `r = 0` this is Theorem 6.
+**Logarithm of the generating function of permutations with long cycles.** Let $R$ be a
+commutative $\mathbb{Q}$-algebra, $x \in R$ and $r \ge 0$ an integer, and work with formal power
+series in $u$ over $R$. For a permutation $\sigma$ write $e(\sigma)$ for its number of excedances
+(points $i$ with $\sigma(i) > i$). Let
+$C^{r+}(x,u) = \sum_{n \ge r+1} \sum_{\sigma} x^{e(\sigma)} u^n/n!$, the inner sum over the
+permutations of $n$ points that consist of a single cycle, and let
+$A^{r}(x,u) = \sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} u^n/n!$, the inner sum over the
+permutations of $n$ points all of whose cycles, fixed points included, have length greater than
+$r$. Then $\exp C^{r+}(x,u) = A^{r}(x,u)$, that is, $C^{r+}(x,u) = \ln A^{r}(x,u)$.
+
+At $r = 0$ every permutation has all cycle lengths greater than $0$, so $A^{0}(x,u)$ runs over
+all permutations, $C^{0+}(x,u)$ over all circular permutations, and this is Theorem 6.
 
 ## Depends on
 
-- [Is RAssociated Cycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rassociated-cycle-perm.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Permutations with all cycles longer than $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rassociated-cycle-perm.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

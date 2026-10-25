@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.count_zmod_two_pow_prod_small_special
 ---
 
-# Count zmod two pow prod small special
+# Perfect covers of a cyclic 2-group times a cyclic group of order 2, 4 or 8
 
-Rank-two special cases: `C(ℤ_{2^n} ⊕ ℤ₂) = 2^{n-1} 2^{n(n-1)/2} (n + 2)` for all `n`,
-`C(ℤ_{2^n} ⊕ ℤ₄) = 2^{2n-2} 2^{n(n-1)/2} (n^2 + 11n + 4)` for `n ≥ 1`, and
-`C(ℤ_{2^n} ⊕ ℤ₈) = 2^{3n-3} 2^{n(n-1)/2} (4n^3 + 108n^2 + 512n - 384)/3` for `n ≥ 2`.
+**Perfect covers of a cyclic 2-group times a cyclic group of order 2, 4 or 8.** Write
+$C(K)$ for the number of perfect covers of a group $K$. For every $n \ge 0$,
+$C(\mathbb{Z}_{2^n} \oplus \mathbb{Z}_2) = 2^{n-1} \, 2^{n(n-1)/2} \, (n + 2)$, where $2^{n-1}$
+is an integer power of $2$ (equal to $1/2$ at $n = 0$). For every $n \ge 1$,
+$C(\mathbb{Z}_{2^n} \oplus \mathbb{Z}_4) = 2^{2n-2} \, 2^{n(n-1)/2} \, (n^2 + 11n + 4)$.
+For every $n \ge 2$,
+$C(\mathbb{Z}_{2^n} \oplus \mathbb{Z}_8) =
+2^{3n-3} \, 2^{n(n-1)/2} \, (4n^3 + 108n^2 + 512n - 384)/3$.
 
 ## Depends on
 
-- [Count](count.md)
+- [Number of perfect covers](count.md)
 
 ## Sources
 

@@ -5,13 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_rainbow_powDiff_of_coprime_pairs
 ---
 
-# Exists rainbow pow Diff of coprime pairs
+# Coprime pairs in both non-dominant colors force a rainbow solution of $x - y = z^k$
 
-Let `k ≥ 2` and let `c` be a 3-coloring of the positive integers with a dominant color `R`
-satisfying the density condition of Lemma 4 (`limsup (min(R(n), B(n), G(n)) - n / n₀) = ∞`,
-`n₀ ≥ 2`). If each of the two other color classes `B`, `G` contains a pair of coprime integers,
-then `c` has a rainbow solution of `x - y = z ^ k` in positive integers. The paper's standing
-assumption `k ≥ 2` is kept.
+**Coprime pairs in both non-dominant colors force a rainbow solution of $x - y = z^k$.**
+Let $k \ge 2$ and $n_0 \ge 2$ be integers, and let $c$ be a coloring of the positive integers
+by three distinct colors $R$, $B$, $G$. For a color $e$ write $N_e(n)$ for the number of
+$x \in \{1, \dots, n\}$ with $c(x) = e$. Assume that for every real $M$ there are arbitrarily
+large $n$ with $N_e(n) - n / n_0 > M$ for all three colors $e$, that is,
+$\limsup_{n \to \infty} \bigl(\min_e N_e(n) - n / n_0\bigr) = \infty$. Assume also that $R$ is
+dominant: for all positive integers $i$ and all $\ell \ge 0$, if $c$ takes exactly two colors on
+$\{i, i + 1, \dots, i + \ell - 1\}$, then one of them is $R$. If there are coprime positive
+integers $i_1, i_2$ with $c(i_1) = c(i_2) = B$ and coprime positive integers $j_1, j_2$ with
+$c(j_1) = c(j_2) = G$, then there are positive integers $x, y, z$ with $x = y + z^k$ such that
+$c(x)$, $c(y)$, $c(z)$ are pairwise distinct.
 
 ## Depends on
 

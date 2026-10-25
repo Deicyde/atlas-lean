@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsSumFreeMod
 ---
 
-# Is Sum Free Mod
+# Sum-free sets modulo $m$
 
-A set `A` of integers is `l`-sum-free modulo `m` if no `x_1, …, x_l, y ∈ A`
-(repetitions allowed) satisfy `x_1 + ⋯ + x_l ≡ y (mod m)`.
+**Sum-free sets modulo $m$.** For natural numbers $m$ and $l$, a set $A$ of integers is
+$l$-sum-free modulo $m$ if there are no $x_1, \dots, x_l, y \in A$ (repetitions allowed) with
+$x_1 + \dots + x_l \equiv y \pmod{m}$.
 
 ## Depends on
 

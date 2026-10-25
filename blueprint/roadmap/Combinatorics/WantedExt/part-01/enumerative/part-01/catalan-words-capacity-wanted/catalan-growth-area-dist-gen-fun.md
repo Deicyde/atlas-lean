@@ -13,8 +13,8 @@ Mansour and Shattuck's Lemma 3, formula (5): for `1 ≤ i ≤ j`,
 
 ## Depends on
 
-- [Catalan Growth Area Dist](catalan-growth-area-dist.md)
-- [Catalan Growth Den](catalan-growth-den.md)
+- [Area distribution of words with unit-bounded rises, by first letter](catalan-growth-area-dist.md)
+- [Denominator polynomials for the area of words with unit-bounded rises](catalan-growth-den.md)
 
 ## Sources
 

@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.IsArithmeticalStructure.coconutSmoothLeaf
 ---
 
-# Coconut Smooth Leaf
+# Smoothing a leaf preserves arithmetical structures
 
-Proposition 3.6, leaf case: if `(d, r)` is an arithmetical structure on `CT(p, s + 1)` and
-`d_{ℓ} = 1` at a leaf, smoothing there gives an arithmetical structure on `CT(p, s)`. The
-single-edge tree `CT(1, 1)` is excluded (`2 ≤ p + s`): there `d = r = (1, 1)` and smoothing the
-leaf leaves one vertex with `d' = 0`, which is not an arithmetical structure.
+**Smoothing a leaf preserves arithmetical structures.** Let $p$ and $s$ be natural numbers
+with $p + s \ge 2$, let $(d, r)$ be an arithmetical structure on the coconut tree
+$CT(p, s + 1)$, and let $\ell$ be a leaf with $d(\ell) = 1$. Then the labelings $(d', r')$
+obtained by smoothing $(d, r)$ at $\ell$ form an arithmetical structure on $CT(p, s)$.
+
+The hypothesis $p + s \ge 2$ excludes the single-edge tree $CT(1, 1)$: there $d = r = (1, 1)$,
+and smoothing the leaf gives $d' = 0$ at the remaining vertex, which is not an arithmetical
+structure.
 
 ## Depends on
 
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
 - [Coconut Smooth Leaf](coconut-smooth-leaf.md)
-- [Coconut Tree](coconut-tree.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

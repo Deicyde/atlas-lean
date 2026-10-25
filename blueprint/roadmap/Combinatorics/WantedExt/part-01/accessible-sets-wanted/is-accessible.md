@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsAccessible
 ---
 
-# Is Accessible
+# Accessible sets
 
-A set is accessible when it is `r`-accessible for every positive number
-`r` of colors.
+**Accessible sets.** A set $D$ of natural numbers is accessible if it is $r$-accessible for
+every natural number $r \ge 1$.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is RAccessible](is-raccessible.md)
+- [$r$-accessibility for colorings of the positive integers](is-raccessible.md)
 
 ## Sources
 

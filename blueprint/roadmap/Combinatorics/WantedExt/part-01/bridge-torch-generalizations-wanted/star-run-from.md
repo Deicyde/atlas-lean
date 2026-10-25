@@ -5,21 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.starRunFrom
 ---
 
-# Star Run From
+# Legal runs in the star model
 
-`σ` is a legal sequence of parallel steps from the configuration (`pos`, `tor`) that ends
-with every person at a leaf.
+**Legal runs in the star model.** A configuration of the star model assigns to each person $p$
+a vertex $\mathrm{pos}(p)$ of the star graph $\mathcal{S}(k)$ and to each vertex $v$ a number
+$\mathrm{tor}(v)$ of torches. A finite sequence $\sigma = (S_1, \dots, S_\ell)$ of steps, each a
+finite list of movements, is a legal run from the configuration $(\mathrm{pos}, \mathrm{tor})$
+when each step $S_i$ is legal from the configuration reached after $S_1, \dots, S_{i-1}$ (a step
+updates the positions of the persons and the torch counts) and every person is at a leaf in the
+configuration reached after all of $\sigma$. In particular, the empty sequence is a legal run
+exactly when every person already stands at a leaf.
 
 ## Depends on
 
-- [Star Move](star-move.md)
+- [Movement in the star model](star-move.md)
 
 ## Proof depends on
 
-- [Is Star Step](is-star-step.md)
-- [Src](src.md)
-- [Star Step Pos](star-step-pos.md)
-- [Star Step Torch](star-step-torch.md)
+- [Legal parallel steps in the star model](is-star-step.md)
+- [Start vertex of a star movement](src.md)
+- [Positions after a step in the star model](star-step-pos.md)
+- [Torch counts after a step in the star model](star-step-torch.md)
 
 ## Sources
 

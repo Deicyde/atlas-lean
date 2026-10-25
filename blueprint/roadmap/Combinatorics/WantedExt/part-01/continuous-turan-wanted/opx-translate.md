@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.opx_translate
 ---
 
-# Opx translate
+# Translation invariance of the continuous Turán number
 
-Lemma 2.2: `opx(n, P)` is invariant under translating `P`. Stated for all real `n`.
+**Translation invariance of the continuous Turán number.** Let $n$ be a real number,
+$P \subseteq \mathbb{R}^2$ a set and $v \in \mathbb{R}^2$ a vector, and let
+$P + v = \{p + v : p \in P\}$ be the translate of $P$ by $v$. Then
+$\operatorname{opx}(n, P + v) = \operatorname{opx}(n, P)$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

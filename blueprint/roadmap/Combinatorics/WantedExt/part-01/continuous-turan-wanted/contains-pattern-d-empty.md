@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.containsPatternD_empty
 ---
 
-# Contains Pattern D empty
+# Every set in $\mathbb{R}^d$ contains the empty pattern
 
-Every set contains the empty pattern.
+**Every set in $\mathbb{R}^d$ contains the empty pattern.** For every natural number $d$ and
+every set $S \subseteq \mathbb{R}^d$, $S$ contains the empty set $\emptyset \subseteq \mathbb{R}^d$
+in the sense of containment of point sets in $\mathbb{R}^d$.
 
 ## Depends on
 
-- [Contains Pattern D](contains-pattern-d.md)
+- [Containment of point sets in $\mathbb{R}^d$](contains-pattern-d.md)
 
 ## Sources
 

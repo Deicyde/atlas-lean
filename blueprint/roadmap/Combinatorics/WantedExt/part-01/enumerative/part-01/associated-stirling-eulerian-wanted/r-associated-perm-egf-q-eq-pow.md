@@ -5,16 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.rAssociatedPermEGF_q_eq_pow
 ---
 
-# R Associated Perm EGF q eq pow
+# The $q$-analogue for cycles longer than $r$ is a $q$-th power
 
-Theorem 35: for every `r ≥ 0`, `A^r(q,x,u) = (A^r(x,u))^q` (`q` marking cycles),
-with the power read as `exp(q ln A^r(x,u))`: for every `L` with `L(0) = 0` and
-`exp L = A^r(x,u)`, `A^r(q,x,u) = exp(q L)`.
+**The $q$-analogue for cycles longer than $r$ is a $q$-th power.** Let $R$ be a commutative
+$\mathbb{Q}$-algebra, $x, q \in R$ and $r$ a natural number. For a permutation $\sigma$ of
+$\{0, \dots, n-1\}$ let $\operatorname{exc}(\sigma)$ be the number of points $i$ with
+$\sigma(i) > i$ and $\operatorname{cyc}(\sigma)$ its number of cycles (fixed points counted as
+cycles of length one). Let
+
+$$A^r(q,x,u) = \sum_{n \ge 0} \frac{u^n}{n!}
+\sum_{\sigma} x^{\operatorname{exc}(\sigma)} q^{\operatorname{cyc}(\sigma)},$$
+
+the inner sum over the permutations $\sigma$ of $\{0, \dots, n-1\}$ all of whose cycles have
+length greater than $r$, and let $A^r(x,u) = A^r(1,x,u)$. If $L$ is a formal power series in
+$u$ over $R$ with $L(0) = 0$ and $\exp L = A^r(x,u)$, then $A^r(q,x,u) = \exp(qL)$.
+
+This is the paper's $A^r(q,x,u) = (A^r(x,u))^q$, with the power read through the logarithm $L$.
 
 ## Depends on
 
-- [Is RAssociated Cycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rassociated-cycle-perm.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Permutations with all cycles longer than $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rassociated-cycle-perm.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

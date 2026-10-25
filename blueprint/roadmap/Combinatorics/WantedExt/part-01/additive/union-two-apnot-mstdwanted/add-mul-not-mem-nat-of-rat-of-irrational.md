@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.add_mul_not_mem_nat_of_rat_of_irrational
 ---
 
-# Lemma 18 (ii), corrected
+# Nonnegative integer points for a rational start and an irrational difference
 
-**Lemma 18 (ii), corrected.** If `x ∈ ℚ ∖ ℕ` and `d` is irrational, then `x + i d` is not a
-natural number for any `i ≥ 0`, and `2x + j d` is not a natural number for any `j ≥ 1`. As printed
-the lemma also claims `2x + 0 · d ∉ ℕ`, which fails at `x = 1/2` (`2x = 1`); the paper's proof
-("then `d ∈ ℚ`") covers only `j ≥ 1`, and the condition `q₁ ≥ 3` that excludes this case is
-attached only to (iii).
+**Nonnegative integer points for a rational start and an irrational difference.** Let $x$ be
+a rational number that is not a nonnegative integer, and let $d$ be an irrational real number.
+Then $x + id$ is not a nonnegative integer for any natural number $i$, and $2x + jd$ is not a
+nonnegative integer for any natural number $j \ge 1$.
+
+As printed, the paper's Lemma 18 (ii) also claims $2x + 0 \cdot d \notin \mathbb{N}$, which fails
+at $x = 1/2$ (where $2x = 1$); the paper's proof ("then $d \in \mathbb{Q}$") covers only $j \ge 1$,
+and the condition that the denominator of $x$ be at least $3$ is attached only to part (iii).
 
 ## Depends on
 

@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.fenceTilingSum_one
 ---
 
-# Fence Tiling Sum one
+# Weighted fence tilings of the one-cell board
 
-`S_1 = a²` (two half-squares in cell `1`).
+**Weighted fence tilings of the one-cell board.** For elements $a$ and $b$ of a commutative
+semiring $R$, the weighted number $S_1$ of tilings of a $1$-board by half-squares and
+$(1/2, 1/2)$-fences, a half-square weighing $a$ in an odd cell and $b$ in an even cell, equals
+$a^2$: the only tiling has two half-squares in cell $1$.
 
 ## Depends on
 
-- [Fence Tiling Sum](fence-tiling-sum.md)
+- [Weighted count of fence tilings](fence-tiling-sum.md)
 
 ## Proof depends on
 
-- [Fence Tiling Weight](fence-tiling-weight.md)
-- [Fence Tilings](fence-tilings.md)
+- [Weight of a fence tiling](fence-tiling-weight.md)
+- [Fence tilings of a board](fence-tilings.md)
 
 ## Sources
 

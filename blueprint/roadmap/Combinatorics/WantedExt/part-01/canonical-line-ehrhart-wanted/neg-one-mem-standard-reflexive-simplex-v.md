@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.neg_one_mem_standardReflexiveSimplexVertices
 ---
 
-# Neg one mem standard Reflexive Simplex Vertices
+# The all-minus-one vector is a vertex of the standard reflexive simplex
 
-`-∑ eₖ = (-1, …, -1)` is a vertex of `Δᵈ_sr`.
+**The all-minus-one vector is a vertex of the standard reflexive simplex.** For every natural
+number $d$, let $e_1, \dots, e_d$ be the standard basis vectors of $\mathbb{Z}^d$. Then the
+point $-(e_1 + \dots + e_d) = (-1, \dots, -1)$ belongs to the vertex set
+$\{e_1, \dots, e_d, -(e_1 + \dots + e_d)\}$ of the standard reflexive simplex $\Delta^d_{sr}$.
 
 ## Depends on
 
-- [Standard Reflexive Simplex Vertices](standard-reflexive-simplex-vertices.md)
+- [Vertices of the standard reflexive simplex](standard-reflexive-simplex-vertices.md)
 
 ## Sources
 

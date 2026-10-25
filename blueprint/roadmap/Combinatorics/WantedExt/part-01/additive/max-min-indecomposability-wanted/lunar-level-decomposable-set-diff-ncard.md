@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.lunarLevelDecomposableSet_diff_ncard_le
 ---
 
-# Lunar Level Decomposable Set diff ncard le
+# Bound on level-decomposable lunar numbers that are not Hoeffding extremal
 
-Lemma 26: for `b ≥ 2` and `d > 0`, `|𝒟_b^n \ ℋ_b^n(d)| ≤ n^{2d+4} 2^{d/2-n/3} b^{n+1}`.
+**Bound on level-decomposable lunar numbers that are not Hoeffding extremal.** Let $b \ge 2$
+and $n$ be natural numbers and $d > 0$ a real number. The number of elements of
+$\mathcal{D}_b^n \setminus \mathcal{H}_b^n(d)$ is at most $n^{2d+4} 2^{d/2-n/3} b^{n+1}$, where
+$\mathcal{D}_b^n$ is the set of level-decomposable lunar numbers of base $b$ and degree at most
+$n$ and $\mathcal{H}_b^n(d)$ is the set of $d$-Hoeffding extremal ones.
 
 ## Depends on
 
-- [Lunar Hoeffding Extremal Set](lunar-hoeffding-extremal-set.md)
-- [Lunar Level Decomposable Set](lunar-level-decomposable-set.md)
+- [Hoeffding extremal lunar numbers](lunar-hoeffding-extremal-set.md)
+- [Level-decomposable lunar numbers](lunar-level-decomposable-set.md)
 
 ## Sources
 

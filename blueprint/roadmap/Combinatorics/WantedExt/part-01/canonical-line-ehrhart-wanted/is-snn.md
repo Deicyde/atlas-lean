@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsSNN
 ---
 
-# Is SNN
+# SNN polynomials
 
-An SNN polynomial is nonzero and every `h*` coefficient through its degree is real and
-nonnegative.  Coefficients beyond the degree, which the generating-series identity makes zero,
-are deliberately omitted so the definition does not depend on proving that identity here.
+**SNN polynomials.** For a complex polynomial $f$ of degree $d$ and a natural number $i$, let
+$h^*_i(f)$ be the coefficient of $t^i$ in $(1 - t)^{d+1} \sum_{k \ge 0} f(k)\, t^k$. Then $f$ is
+SNN when $f \ne 0$ and its $h^*$-coefficients $h^*_0(f), \dots, h^*_d(f)$ are real and
+nonnegative.
+
+Coefficients beyond the degree, which vanish by the generating-series identity, are not part of
+the condition.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [H Star Coeff](h-star-coeff.md)
+- [The h-star coefficients of a polynomial](h-star-coeff.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.kArndtTotalCount_neg_odd
 ---
 
-# K Arndt Total Count neg odd
+# Generalized Arndt compositions with negative odd shift
 
-For `k = -2j - 1` a negative odd number (`j ≥ 0`), `a(n, k) = c^{-k}_e(n)`; `n = 0` is
-included.
+**Generalized Arndt compositions with negative odd shift.** For all natural numbers $j$ and
+$n$, the number $a(n, -2j - 1)$ of compositions $(c_1, \dots, c_m)$ of $n$ with
+$c_{2i-1} > c_{2i} - 2j - 1$ whenever $2i \le m$ equals the number $c^{2j+1}_e(n)$ of
+compositions of $n$ in which every part is even or at most $2j + 1$. This includes $n = 0$.
 
 ## Depends on
 
-- [Even Or Small Odd Composition Count](even-or-small-odd-composition-count.md)
-- [K Arndt Total Count](k-arndt-total-count.md)
+- [Compositions into even or small odd parts](even-or-small-odd-composition-count.md)
+- [Generalized Arndt compositions](k-arndt-total-count.md)
 
 ## Sources
 

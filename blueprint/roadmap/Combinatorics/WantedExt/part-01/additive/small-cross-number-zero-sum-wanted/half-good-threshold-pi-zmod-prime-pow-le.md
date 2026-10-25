@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.halfGoodThreshold_pi_zmod_prime_pow_le
 ---
 
-# Half Good Threshold pi zmod prime pow le
+# Threshold version of Geroldinger's theorem
 
-Threshold version of Geroldinger's theorem: for primes `p₁, …, p_d` (not necessarily
-distinct) and `Γ_k = ∏ᵢ ℤ/pᵢᵏℤ`,
-`P_{1/2}(Γ_k) ≤ k^d exp[((d+1)! ∏ᵢ lg pᵢ / 2 · lg k)^{1/(d+1)} - (d/(d+1)) lg lg k + O(1)]`,
-with `lg = log₂`; the `O(1)` is a constant `C` and the bound holds for all large `k`.
+**Threshold version of Geroldinger's theorem.** Let $d \ge 0$, let $p_1, \dots, p_d$ be
+primes, not necessarily distinct, and for each $k$ let
+$\Gamma_k = \prod_{i=1}^d \mathbb{Z}/p_i^k\mathbb{Z}$, and let $P_{1/2}(\Gamma_k)$ be its
+half-good threshold. Write $\lg = \log_2$. Then there is a real constant $C$ such that for all
+sufficiently large $k$,
 
-Upper bound only, as in the journal record (the source's final comments say the bound need not
-be an equality). `d = 0` is admitted (trivial group).
+$$
+P_{1/2}(\Gamma_k) \le k^d \exp\left(\left(\frac{(d+1)! \prod_{i=1}^d \lg p_i}{2}
+\lg k\right)^{1/(d+1)} - \frac{d}{d+1} \lg \lg k + C\right).
+$$
+
+This is an upper bound only, as in the journal record (the source's final comments say the bound
+need not be an equality). The case $d = 0$, where $\Gamma_k$ is trivial, is included.
 
 ## Depends on
 
-- [Half Good Threshold](half-good-threshold.md)
+- [Half-good threshold](half-good-threshold.md)
 
 ## Sources
 

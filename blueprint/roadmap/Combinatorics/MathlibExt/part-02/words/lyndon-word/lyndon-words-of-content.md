@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.LyndonWordsOfContent
 ---
 
-# Lyndon Words Of Content
+# Lyndon words of given content
 
-Lyndon words with prescribed content.
+**Lyndon words of given content.** For a natural number $r$ and natural numbers
+$n_0, \dots, n_{r-1}$, the set of Lyndon words over the alphabet $\{0, \dots, r-1\}$, ordered as
+the natural numbers, in which each letter $i$ occurs exactly $n_i$ times.
 
 ## Depends on
 
@@ -16,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Lyndon Word](is-lyndon-word.md)
-- [Words Of Content](words-of-content.md)
-- [Witt Word Content](witt-word-content.md)
+- [Lyndon word](is-lyndon-word.md)
+- [Words with prescribed content](words-of-content.md)
+- [Content of a word](witt-word-content.md)
 
 ## Sources
 

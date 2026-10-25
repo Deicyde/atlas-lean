@@ -4,6 +4,6 @@ navigation: module
 
 # Riha
 
-- [Is Bound Vertex](is-bound-vertex.md)
-- [Is Bound Vertex iff](is-bound-vertex-iff.md)
-- [Exists cycle bound vertex](exists-cycle-bound-vertex.md)
+- [Bound vertices of a closed walk](is-bound-vertex.md)
+- [Characterization of bound vertices](is-bound-vertex-iff.md)
+- [Říha's cycle lemma](exists-cycle-bound-vertex.md)

@@ -14,7 +14,7 @@ Let `s = (s_1, …, s_{m+n})`, `s_i = (x_i, y_i)`, be a perfect cover of
 
 ## Depends on
 
-- [Is Perfect MCover](is-perfect-mcover.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
 
 ## Sources
 

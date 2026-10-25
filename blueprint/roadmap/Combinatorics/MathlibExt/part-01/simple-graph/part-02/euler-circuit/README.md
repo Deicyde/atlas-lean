@@ -5,7 +5,7 @@ navigation: module
 
 # Euler Circuit
 
-- [Count P edges eq degree](count-p-edges-eq-degree.md)
-- [Exists is Eulerian](exists-is-eulerian.md)
-- [Induce support](induce-support.md)
-- [Exists is Eulerian](exists-is-eulerian-2.md)
+- [Edges at a vertex of an Eulerian trail](count-p-edges-eq-degree.md)
+- [Euler circuits in connected even graphs](exists-is-eulerian.md)
+- [Reachability among non-isolated vertices](induce-support.md)
+- [Euler circuits when the non-isolated vertices are connected](exists-is-eulerian-2.md)

@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.catalanMaxEndCapacityDist_recurrence
 ---
 
-# Catalan Max End Capacity Dist recurrence
+# Recurrence for the capacity of Catalan words ending in their largest letter
 
-Mansour and Shattuck's Lemma 2, recurrence (3): for `1 < i < n`,
-`b(n,i) = b(n-1,i) + b(n-1,i-1) + ∑_{m=1}^{n-i-1} q^{mi} b(n-m-1,i) c(m,i-1;1/q)`, in
-`ℤ[q, q⁻¹]`.
+**Recurrence for the capacity of Catalan words ending in their largest letter.** For natural
+numbers $n$ and $i$, let $b(n, i; q)$ be the capacity distribution of the Catalan words of length
+$n$ that end in $i$ and have all letters at most $i$. For natural numbers $m$ and $k$, let
+$c(m, k; q) \in \mathbb{Z}[q]$ be the area distribution of the words of length $m$ with letters
+in $\{1, \dots, k\}$, each letter at most one more than the letter before it, and last letter
+$k$, and let $c(m, k; 1/q)$ be its image under $q \mapsto q^{-1}$. For all natural numbers $n$
+and $i$ with $1 < i < n$, in $\mathbb{Z}[q, q^{-1}]$,
+
+$$b(n, i; q) = b(n-1, i; q) + b(n-1, i-1; q) +
+\sum_{m=1}^{n-i-1} q^{mi}\, b(n-m-1, i; q)\, c(m, i-1; 1/q).$$
 
 ## Depends on
 
-- [Area Dist](area-dist.md)
-- [Catalan Growth Words](catalan-growth-words.md)
-- [Catalan Max End Capacity Dist](catalan-max-end-capacity-dist.md)
+- [Area distribution](area-dist.md)
+- [Words with unit-bounded rises ending in their maximum](catalan-growth-words.md)
+- [Capacity distribution of Catalan words ending in their largest letter](catalan-max-end-capacity-dist.md)
 
 ## Sources
 

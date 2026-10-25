@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.cl_parameter_bounded_by_pBasis_root
 ---
 
-# Cl parameter bounded by p Basis root
+# Parameter bound for SNN CL-polynomials
 
-If a degree-`d` CL-polynomial is SNN, each factor parameter `c` is bounded by
-`1/4+β²` for a root `-1/2+βi` of `pᵈ₀`.  This directly quantifies the witnessing extremal
-root instead of defining a potentially problematic maximum; it is the task's requested
-equivalent reading of `c ≤ mᵈ₀`.
+**Parameter bound for SNN CL-polynomials.** Let $f$ be a complex polynomial of degree $d$
+that is a CL-polynomial with real scale $a$ and list of real parameters $c_1, \dots, c_m$, and
+suppose that $f$ is SNN. Then for each parameter $c_k$ there is a real number $\beta$ such that
+$-\tfrac12 + \beta i$ is a root of the symmetric basis polynomial $p^d_0$ and
+$c_k \le \tfrac14 + \beta^2$.
 
 ## Depends on
 
-- [Is CLWith Parameters](is-clwith-parameters.md)
-- [Is SNN](is-snn.md)
-- [P Basis](p-basis.md)
+- [CL-polynomials with given parameters](is-clwith-parameters.md)
+- [SNN polynomials](is-snn.md)
+- [Symmetric basis polynomials](p-basis.md)
 
 ## Sources
 

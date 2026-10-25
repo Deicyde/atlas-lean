@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsArithmeticalStructure.coconutSubdivide
 ---
 
-# Coconut Subdivide
+# Subdivision preserves arithmetical structures on coconut trees
 
-Proposition 3.11: subdividing an arithmetical structure on `CT(p, s)` at any position
-`i + 1 ∈ {1, …, p}` gives an arithmetical structure on `CT(p + 1, s)`.
+**Subdivision preserves arithmetical structures on coconut trees.** If $(d, r)$ is an
+arithmetical structure on the coconut tree $CT(p, s)$, whose path vertices are $v_1, \dots, v_p$,
+then for every $1 \le k \le p$, subdividing $(d, r)$ at position $k$ (inserting a new path vertex
+just before $v_k$) gives an arithmetical structure on $CT(p + 1, s)$.
 
 ## Depends on
 
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
-- [Coconut Subdivide](coconut-subdivide.md)
-- [Coconut Tree](coconut-tree.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
+- [Subdivision at a path vertex of a coconut tree](coconut-subdivide.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

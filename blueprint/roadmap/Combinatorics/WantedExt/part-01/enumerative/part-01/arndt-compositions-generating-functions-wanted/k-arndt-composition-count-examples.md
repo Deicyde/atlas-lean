@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.kArndtCompositionCount_examples
 ---
 
-# K Arndt Composition Count examples
+# Sample values of the $k$-Arndt composition counts
 
-Coefficients of the expansions of `A_3(x, y)` and `A_{-3}(x, y)`: `a_3(7, 2) = a_3(7, 3) = 1`
-and `a_{-3}(4, 2) = 3`.
+**Sample values of the $k$-Arndt composition counts.** Writing $a_k(n, m)$ for the number of
+$k$-Arndt compositions of $n$ with $m$ parts, $a_3(7, 2) = 1$, $a_3(7, 3) = 1$ and
+$a_{-3}(4, 2) = 3$.
 
 ## Depends on
 
-- [K Arndt Composition Count](k-arndt-composition-count.md)
+- [Number of $k$-Arndt compositions](k-arndt-composition-count.md)
 
 ## Sources
 

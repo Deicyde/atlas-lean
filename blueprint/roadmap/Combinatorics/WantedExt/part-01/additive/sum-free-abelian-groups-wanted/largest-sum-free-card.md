@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.largestSumFreeCard
 ---
 
-# Largest Sum Free Card
+# Size of a largest sum-free subset
 
-The size of a largest sum-free subset of `S` (for `S = univ` this is `μ(G)`).
+**Size of a largest sum-free subset.** Let $G$ be a set with an addition and $S \subseteq G$.
+Write $\mu(S)$ for the supremum in $\mathbb{N}$ of the sizes of the finite sum-free subsets of
+$S$ (sets $T$ with $x + y \notin T$ for all $x, y \in T$), taken to be $0$ if these sizes are
+unbounded. For finite $S$ this is the largest size of a sum-free subset of $S$, and $\mu(G)$ is
+the value for $S = G$.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Sum Free Set](is-sum-free-set.md)
+- [Sum-free set](is-sum-free-set.md)
 
 ## Sources
 

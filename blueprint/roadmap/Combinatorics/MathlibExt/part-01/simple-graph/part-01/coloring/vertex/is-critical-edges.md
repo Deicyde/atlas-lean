@@ -6,9 +6,11 @@ statement: formalized
 lean: SimpleGraph.IsCriticalEdges
 ---
 
-# Is Critical Edges
+# Critical edge sets
 
-A set of edges is critical if deleting them reduces the chromatic number.
+**Critical edge sets.** Let $G$ be a graph and $S$ a set of unordered pairs of its
+vertices. Then $S$ is critical for $G$ if deleting the edges of $G$ that lie in $S$ strictly
+lowers the chromatic number, as an element of $\mathbb{N} \cup \{\infty\}$.
 
 ## Depends on
 

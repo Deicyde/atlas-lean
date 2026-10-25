@@ -7,14 +7,15 @@ proof: formalized
 lean: SimpleGraph.bookNumber_le
 ---
 
-# Book Number le
+# Bounding the book number
 
-A uniform bound on every adjacent pair's common-neighbor count bounds the
-book number.
+**Bounding the book number.** Let $G$ be a finite simple graph and $b$ a natural number. If
+every pair of adjacent vertices $u$, $v$ of $G$ has at most $b$ common neighbors, then the book
+number of $G$ is at most $b$.
 
 ## Depends on
 
-- [Book Number](book-number.md)
+- [Book number](book-number.md)
 
 ## Sources
 

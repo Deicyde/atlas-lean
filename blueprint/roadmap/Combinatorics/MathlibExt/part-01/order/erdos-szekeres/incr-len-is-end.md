@@ -7,20 +7,23 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.incrLen_isEnd
 ---
 
-# Incr Len is End
+# The longest increasing subsequence ending at a position is attained
 
-Witness for `incrLen`: a subsequence of that length ends at `p`.
+**The longest increasing subsequence ending at a position is attained.** For every
+$f : \{0, \dots, N-1\} \to \mathbb{R}$ and every position $p$, $f$ has an increasing subsequence
+ending at $p$ whose length equals the length of the longest increasing subsequence of $f$ ending
+at $p$.
 
 ## Depends on
 
-- [Is Incr End](is-incr-end.md)
-- [Incr Len](incr-len.md)
+- [Increasing subsequence ending at a position](is-incr-end.md)
+- [Length of the longest increasing subsequence ending at a position](incr-len.md)
 
 ## Proof depends on
 
-- [Is Incr Subseq](is-incr-subseq.md)
-- [Singleton incr](singleton-incr.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Increasing subsequence](is-incr-subseq.md)
+- [One-term subsequences are increasing](singleton-incr.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

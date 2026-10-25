@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.halfGoodThreshold
 ---
 
-# Half Good Threshold
+# Half-good threshold
 
-`P_{1/2}(Γ)`, the least `t` for which a uniformly random length-`t` sequence in `Γ` is good
-with probability at least `1/2`.
+**Half-good threshold.** For a finite abelian group $\Gamma$, $P_{1/2}(\Gamma)$ is the least
+$t \ge 0$ such that a uniformly random sequence of $t$ elements of $\Gamma$ is good (has a
+nonempty zero-sum subsequence with cross number at most one) with probability at least $1/2$,
+that is, such that at least half of the $|\Gamma|^t$ sequences of length $t$ are good. If no
+such $t$ exists, $P_{1/2}(\Gamma)$ is defined to be $0$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Good Sequence Prob](good-sequence-prob.md)
+- [Probability that a random sequence is good](good-sequence-prob.md)
 
 ## Sources
 

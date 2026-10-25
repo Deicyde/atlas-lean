@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.count_zmod_two_pow_prod_recurrence
 ---
 
-# Count zmod two pow prod recurrence
+# Perfect covers of a product of two cyclic 2-groups
 
-Rank two: `a_{m,n} = C(ℤ_{2^m} ⊕ ℤ_{2^n})` satisfies, for `m ≥ n ≥ 1`,
-`a_{m,n} = 2^{m+n-1} (a_{m-1,n} + 2 a_{m,n-1}) - 3 · 2^{2m+2n-4} a_{m-1,n-1}`, and for each
-`n` there is a rational polynomial `p` of degree `n` with
-`a_{m,n} = 2^{(m-1)n} 2^{m(m-1)/2} p(m)` for all `m ≥ n`.
+**Perfect covers of a product of two cyclic 2-groups.** Write $C(K)$ for the number of
+perfect covers of a group $K$, and $a_{m,n} = C(\mathbb{Z}_{2^m} \oplus \mathbb{Z}_{2^n})$.
+For all $m \ge n \ge 1$,
+$a_{m,n} = 2^{m+n-1} (a_{m-1,n} + 2 a_{m,n-1}) -
+3 \cdot 2^{2m+2n-4} \, a_{m-1,n-1}$.
+Moreover, for every $n \ge 0$ there is a polynomial $p$ of degree $n$ with rational coefficients
+such that $a_{m,n} = 2^{(m-1)n} \, 2^{m(m-1)/2} \, p(m)$ for all $m \ge n$.
 
 ## Depends on
 
-- [Count](count.md)
+- [Number of perfect covers](count.md)
 
 ## Sources
 

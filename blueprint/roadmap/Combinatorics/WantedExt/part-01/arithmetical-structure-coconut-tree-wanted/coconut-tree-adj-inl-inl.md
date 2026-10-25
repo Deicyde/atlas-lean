@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coconutTree_adj_inl_inl
 ---
 
-# Coconut Tree adj inl inl
+# Adjacent path vertices of a coconut tree
 
-Path vertices of `CT(p, s)` are adjacent exactly when consecutive.
+**Adjacent path vertices of a coconut tree.** Let the coconut tree $CT(p, s)$ have path
+vertices $v_1, \dots, v_p$. Two path vertices $v_a$ and $v_b$ are adjacent if and only if
+$|a - b| = 1$.
 
 ## Depends on
 
-- [Coconut Tree](coconut-tree.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

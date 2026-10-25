@@ -6,12 +6,13 @@ statement: formalized
 lean: SimpleGraph.inducedResidue
 ---
 
-# Induced Residue
+# Induced vertex residue
 
-Induced vertex residue in `Fin (Fintype.card V)`. When the card is zero
-there is no modulo to evaluate: map through `Fintype.equivFin V` and eliminate
-the resulting `Fin 0`. Thus the empty graph gets the canonical empty vertex
-bijection.
+**Induced vertex residue.** Let $G$ be a simple graph on a finite vertex set $V$, let $q$ be
+a natural number and let $\ell$ be a bijection from the edge set of $G$ to $\{0, \dots, q-1\}$.
+The induced residue of a vertex $v$ is the incident-edge sum at $v$ (with edge labels
+$\ell(e) + 1$) reduced modulo $|V|$, viewed as an element of $\{0, \dots, |V| - 1\}$. When
+$|V| = 0$ there are no vertices, so there is nothing to define.
 
 ## Depends on
 
@@ -19,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Incident Sum](incident-sum.md)
+- [Incident-edge sum](incident-sum.md)
 
 ## Sources
 

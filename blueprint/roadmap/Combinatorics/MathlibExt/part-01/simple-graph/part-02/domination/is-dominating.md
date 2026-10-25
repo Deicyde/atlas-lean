@@ -5,9 +5,10 @@ statement: formalized
 lean: SimpleGraph.IsDominating
 ---
 
-# Is Dominating
+# Dominating set
 
-`S` dominates `G`: every vertex is in `S` or adjacent to a vertex of `S`.
+**Dominating set.** A set $S$ of vertices of a simple graph $G$ dominates $G$ when every vertex
+of $G$ lies in $S$ or is adjacent to some vertex of $S$.
 
 ## Depends on
 

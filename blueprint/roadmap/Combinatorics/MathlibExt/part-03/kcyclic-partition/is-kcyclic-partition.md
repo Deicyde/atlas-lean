@@ -6,14 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.IsKCyclicPartition
 ---
 
-# Is KCyclic Partition
+# $k$-cyclic partition
 
-`k`-cyclic partition of a labeled graph.
-
-`σ` is a permutation of `V` whose total number of cycles, counting fixed points
-via `σ.cycleType.card + (Fintype.card V - σ.support.card)`, equals `k`, and for
-every vertex `i`, the exact truncated-cycle successor `σ^(i)(i) = j` implies
-there is no directed edge from `i` to `j`.
+**$k$-cyclic partition.** Let $V$ be a finite linearly ordered set, $\sigma$ a
+permutation of $V$, $E$ a relation on $V$ (the directed edges of a labeled graph) and $k$ a
+natural number. Then $\sigma$ is a $k$-cyclic partition for $E$ when $\sigma$ has exactly $k$
+cycles, fixed points counted as cycles of length one, and for all $i, j \in V$, if $j$ is the
+truncated-cycle successor of $i$ under $\sigma$ (the first of $\sigma(i), \sigma^2(i), \dots$
+that is at most $i$), then $E(i, j)$ does not hold.
 
 ## Depends on
 
@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Truncated Succ](truncated-succ.md)
+- [Truncated-cycle successor](truncated-succ.md)
 
 ## Sources
 

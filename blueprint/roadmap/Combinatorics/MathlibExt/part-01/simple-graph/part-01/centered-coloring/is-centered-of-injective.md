@@ -7,17 +7,18 @@ proof: formalized
 lean: SimpleGraph.isCentered_of_injective
 ---
 
-# Is Centered of injective
+# Injective colorings are centered
 
-An injective coloring is centered: any vertex of a connected set works.
+**Injective colorings are centered.** Every injective proper vertex coloring of a simple graph
+is centered: any vertex of a set whose induced subgraph is connected is a center of that set.
 
 ## Depends on
 
-- [Is Centered](is-centered.md)
+- [Centered coloring](is-centered.md)
 
 ## Proof depends on
 
-- [Is Phi Center](is-phi-center.md)
+- [Center of a vertex set under a coloring](is-phi-center.md)
 
 ## Sources
 

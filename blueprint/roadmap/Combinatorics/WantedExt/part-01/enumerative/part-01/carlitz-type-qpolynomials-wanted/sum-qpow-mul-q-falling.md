@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sum_qpow_mul_qFalling
 ---
 
-# Sum qpow mul q Falling
+# Sums of $q^{ir}$ times $q$-falling factorials
 
-`∑_{i<N} q^{ir} [i]_k = (∑_{ℓ<r} q^{(r-ℓ-1)N + (ℓ+1)k} [r-1]_ℓ / [k+r]_{ℓ+1}) [N]_{k+1}` for
-`r ≥ 1`, where `[x]_m = [x][x-1]⋯[x-m+1]`.
+**Sums of $q^{ir}$ times $q$-falling factorials.** Let $q > 0$ with $q \ne 1$, let
+$[x] = (q^x - 1)/(q - 1)$, and write $[x]_m = [x][x-1]\cdots[x-m+1]$ for the $q$-falling factorial
+(with $[x]_0 = 1$). Then for all natural numbers $r \ge 1$, $k$ and $N$,
+
+$$\sum_{i=0}^{N-1} q^{ir} [i]_k = \left(\sum_{\ell=0}^{r-1}
+\frac{q^{(r-\ell-1)N + (\ell+1)k} \, [r-1]_\ell}{[k+r]_{\ell+1}}\right) [N]_{k+1}.$$
 
 ## Depends on
 
-- [Q Bracket](q-bracket.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

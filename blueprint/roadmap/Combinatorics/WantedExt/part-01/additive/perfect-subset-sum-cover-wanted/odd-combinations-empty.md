@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.PerfectSubsetSumCover.oddCombinations_empty
 ---
 
-# Odd Combinations empty
+# Odd combinations of the empty set
 
-`𝒯(∅) = {0}`.
+**Odd combinations of the empty set.** Let $G$ be an abelian group and, for a finite
+$A \subseteq G$, let $\mathcal{T}(A)$ be the set of combinations $\sum_{x \in A} c_x x$ in which
+every integer coefficient $c_x$ is $0$ or odd. Then $\mathcal{T}(\emptyset) = \{0\}$.
 
 ## Depends on
 
-- [Odd Combinations](odd-combinations.md)
+- [Odd combinations](odd-combinations.md)
 
 ## Sources
 

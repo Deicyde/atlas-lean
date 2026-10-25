@@ -7,17 +7,19 @@ proof: formalized
 lean: TuranSystem.pos_of_isTuran
 ---
 
-# Pos of is Turan
+# Turán systems have positive uniformity
 
-Positivity projection from a Turan system.
+**Turán systems have positive uniformity.** Let $n$, $s$, $r$ be natural numbers and let $H$
+be a Turán system with parameters $n$, $s$, $r$, whose definition includes $0 < r < s \le n$.
+Then $0 < r$.
 
 ## Depends on
 
-- [Is Turan System](is-turan-system.md)
+- [Turán system](is-turan-system.md)
 
 ## Proof depends on
 
-- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+- [Uniform hypergraphs](../uniform-hypergraph/is-uniform.md)
 
 ## Sources
 

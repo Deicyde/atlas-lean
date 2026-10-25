@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.chuFamilyKLT_mem_sub
 ---
 
-# Chu Family KLT mem sub
+# Differences in the Kumar–Mohan–Pandey sets (Lemma 1)
 
-Lemma 1: with `T = t(kl + l + 1)`, the positive differences of `A` include `4i` and
-`1 + 4i` for `1 ≤ i ≤ 1 + T`, and `3 + 4i` for `0 ≤ i ≤ T`.
+**Differences in the Kumar–Mohan–Pandey sets (Lemma 1).** Let $k$, $l$, $t$ be positive
+integers, let $A = A_{k,l,t}$ be the Kumar–Mohan–Pandey set, and put $T = t(kl + l + 1)$. Then
+the difference set $A - A$ contains $4i$ and $1 + 4i$ for every integer $i$ with
+$1 \le i \le 1 + T$, and contains $3 + 4i$ for every integer $i$ with $0 \le i \le T$.
 
 ## Depends on
 
-- [Chu Family KLT](chu-family-klt.md)
+- [Kumar–Mohan–Pandey sets](chu-family-klt.md)
 
 ## Sources
 

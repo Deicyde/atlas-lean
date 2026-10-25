@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.extendMap
 ---
 
-# Extend Map
+# Appending an entry to a map of indices
 
-Append `p` to a length-`k` map, yielding a length-`k+1` map.
+**Appending an entry to a map of indices.** Given
+$\varphi : \{0, \dots, k-1\} \to \{0, \dots, N-1\}$ and $p \in \{0, \dots, N-1\}$, the appended map
+on $\{0, \dots, k\}$ sends each $i < k$ to $\varphi(i)$ and sends $k$ to $p$.
 
 ## Depends on
 

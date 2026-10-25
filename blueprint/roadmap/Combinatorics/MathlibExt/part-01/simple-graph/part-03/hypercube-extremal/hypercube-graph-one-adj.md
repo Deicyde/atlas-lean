@@ -7,17 +7,18 @@ proof: formalized
 lean: SimpleGraph.hypercubeGraph_one_adj
 ---
 
-# Hypercube Graph one adj
+# An edge of the one-dimensional hypercube
 
-The canonical adjacent pair in `Q_1`: constant `true` and constant `false`.
+**An edge of the one-dimensional hypercube.** In the $1$-dimensional hypercube $Q_1$, the
+constant vertex $\mathrm{true}$ and the constant vertex $\mathrm{false}$ are adjacent.
 
 ## Depends on
 
-- [Hypercube Graph](hypercube-graph.md)
+- [Hypercube graph](hypercube-graph.md)
 
 ## Proof depends on
 
-- [Hypercube Graph adj](hypercube-graph-adj.md)
+- [Adjacency in the hypercube](hypercube-graph-adj.md)
 
 ## Sources
 

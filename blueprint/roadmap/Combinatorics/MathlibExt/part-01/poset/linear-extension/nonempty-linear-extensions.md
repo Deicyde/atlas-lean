@@ -7,20 +7,20 @@ proof: formalized
 lean: FinPoset.nonempty_linearExtensions
 ---
 
-# Nonempty linear Extensions
+# Existence of linear extensions
 
-Every finite poset has a linear extension.
+**Existence of linear extensions.** Every finite poset has a linear extension.
 
 ## Depends on
 
-- [Linear Extensions](linear-extensions.md)
+- [Linear extensions of a finite poset](linear-extensions.md)
 
 ## Proof depends on
 
-- [Bijective some Linear Extension](bijective-some-linear-extension.md)
-- [Mem linear Extensions](mem-linear-extensions.md)
-- [Monotone some Linear Extension](monotone-some-linear-extension.md)
-- [Some Linear Extension](some-linear-extension.md)
+- [The chosen linear extension is bijective](bijective-some-linear-extension.md)
+- [Membership in the linear extensions](mem-linear-extensions.md)
+- [The chosen linear extension is monotone](monotone-some-linear-extension.md)
+- [A chosen linear extension](some-linear-extension.md)
 
 ## Sources
 

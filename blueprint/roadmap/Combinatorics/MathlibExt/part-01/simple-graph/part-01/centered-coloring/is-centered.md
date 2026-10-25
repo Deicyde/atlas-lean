@@ -6,14 +6,15 @@ statement: formalized
 lean: SimpleGraph.IsCentered
 ---
 
-# Is Centered
+# Centered coloring
 
-A coloring is centered if every connected induced subgraph has a center.
-Quantifying over vertex sets whose induce is connected suffices: adding all
-induced edges on the same vertices keeps a connected subgraph connected, and
-whether a color occurs exactly once depends only on the vertex set together
-with the coloring. Linear coloring and centered chromatic number are not
-defined here.
+**Centered coloring.** A proper vertex coloring $\varphi$ of a simple graph $G$ is centered
+if, for every set $s$ of vertices of $G$ whose induced subgraph is connected, some vertex is a
+$\varphi$-center of $s$.
+
+Quantifying over vertex sets whose induced subgraph is connected suffices: adding all induced
+edges on the same vertices keeps a connected subgraph connected, and whether a color occurs
+exactly once depends only on the vertex set together with the coloring.
 
 ## Depends on
 
@@ -21,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Phi Center](is-phi-center.md)
+- [Center of a vertex set under a coloring](is-phi-center.md)
 
 ## Sources
 

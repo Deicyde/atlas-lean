@@ -7,22 +7,25 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.incrMono
 ---
 
-# Incr Mono
+# Longest increasing subsequence lengths increase strictly along increasing pairs
 
-`incrLen` grows along index- and value-increases.
+**Longest increasing subsequence lengths increase strictly along increasing pairs.** Let
+$f : \{0, \dots, N-1\} \to \mathbb{R}$ and let $q < p$ be positions with $f(q) < f(p)$. Then the
+length of the longest increasing subsequence of $f$ ending at $q$ is strictly less than the
+length of the longest increasing subsequence of $f$ ending at $p$.
 
 ## Depends on
 
-- [Incr Len](incr-len.md)
+- [Length of the longest increasing subsequence ending at a position](incr-len.md)
 
 ## Proof depends on
 
-- [Is Incr End](is-incr-end.md)
-- [Is Incr Subseq](is-incr-subseq.md)
-- [Incr Extend](incr-extend.md)
-- [Incr Len is End](incr-len-is-end.md)
-- [Le incr Len](le-incr-len.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Increasing subsequence ending at a position](is-incr-end.md)
+- [Increasing subsequence](is-incr-subseq.md)
+- [Extending an increasing subsequence](incr-extend.md)
+- [The longest increasing subsequence ending at a position is attained](incr-len-is-end.md)
+- [Bound by the longest increasing subsequence ending at a position](le-incr-len.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

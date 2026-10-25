@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.functionalEquation_iff_hStar_palindromic
 ---
 
-# Functional Equation iff h Star palindromic
+# Functional equation versus palindromic h-star coefficients
 
-The functional equation `f(X-1) = (-1)^d f(-X)` is equivalent to palindromicity of
-the finite `h*` coefficient vector.  Here `d` is `f.natDegree`; `f ≠ 0` is explicit because
-the degree of the zero polynomial is not mathematically defined.
+**Functional equation versus palindromic h-star coefficients.** Let $f$ be a nonzero complex
+polynomial of degree $d$ with $h^*$-coefficients $h^*_0(f), \dots, h^*_d(f)$. Then
+$f(X-1) = (-1)^d f(-X)$ as polynomials if and only if $h^*_i(f) = h^*_{d-i}(f)$ for every
+$i \le d$.
 
 ## Depends on
 
-- [H Star Coeff](h-star-coeff.md)
+- [The h-star coefficients of a polynomial](h-star-coeff.md)
 
 ## Sources
 

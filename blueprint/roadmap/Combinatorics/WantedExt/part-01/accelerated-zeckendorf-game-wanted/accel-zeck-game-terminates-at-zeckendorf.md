@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.accelZeckGame_terminates_at_zeckendorf
 ---
 
-# Accel Zeck Game terminates at zeckendorf
+# The Accelerated Zeckendorf Game terminates at the Zeckendorf decomposition
 
-Every Accelerated Zeckendorf Game terminates, at the Zeckendorf decomposition of `n`, and
-any complete game on `n` has at most `((√5 + 3)/2) n - IZ(n) - ((1 + √5)/2) Z(n)` moves, where
-`Z(n)` is the number of terms and `IZ(n)` the sum of the (paper) indices of the terms of the
-Zeckendorf decomposition of `n`. Termination is stated as the absence of an infinite play
-from `n` copies of `F_1`.
+**The Accelerated Zeckendorf Game terminates at the Zeckendorf decomposition.** Index the
+Fibonacci numbers as $F_1 = 1$, $F_2 = 2$, $F_{i+1} = F_i + F_{i-1}$. Let $n$ be a natural
+number, let $Z(n)$ be the number of terms of the Zeckendorf decomposition of $n$, and let $IZ(n)$
+be the sum of the indices $k$ of its terms $F_k$. Then there is no infinite sequence of moves
+starting from $n$ copies of $F_1$. Moreover, every complete Accelerated Zeckendorf Game on $n$
+(a sequence of moves from $n$ copies of $F_1$ to a state from which no move is possible) ends at
+the state with one copy of each term of the Zeckendorf decomposition of $n$, and its number $L$
+of moves satisfies
+
+$$L \le \frac{3 + \sqrt 5}{2} n - IZ(n) - \frac{1 + \sqrt 5}{2} Z(n).$$
 
 ## Depends on
 
-- [Accel Zeck Move](accel-zeck-move.md)
-- [Is Accel Zeck Game](is-accel-zeck-game.md)
-- [Zeckendorf State](zeckendorf-state.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
+- [Complete Accelerated Zeckendorf Games](is-accel-zeck-game.md)
+- [Zeckendorf decomposition as a game state](zeckendorf-state.md)
 
 ## Sources
 

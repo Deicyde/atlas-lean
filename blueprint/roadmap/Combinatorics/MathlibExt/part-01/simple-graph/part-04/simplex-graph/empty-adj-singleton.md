@@ -7,16 +7,18 @@ proof: formalized
 lean: SimpleGraph.empty_adj_singleton
 ---
 
-# Empty adj singleton
+# The empty clique is adjacent to every singleton
 
-The empty clique is adjacent to every singleton clique.
+**The empty clique is adjacent to every singleton.** Let $G$ be a simple graph. For every
+vertex $v$ of $G$, the empty simplex vertex of $G$ and the singleton simplex vertex of $v$ are
+adjacent in the simplex graph of $G$.
 
 ## Depends on
 
-- [Simplex Vertex](simplex-vertex.md)
-- [Empty Vertex](empty-vertex.md)
-- [Simplex Graph](simplex-graph.md)
-- [Singleton Vertex](singleton-vertex.md)
+- [Simplex vertices](simplex-vertex.md)
+- [Empty simplex vertex](empty-vertex.md)
+- [Simplex graph](simplex-graph.md)
+- [Singleton simplex vertex](singleton-vertex.md)
 
 ## Sources
 

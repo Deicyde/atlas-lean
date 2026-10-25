@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.digitMap_lunar_hom
 ---
 
-# Digit Map lunar hom
+# Monotone digit maps are lunar homomorphisms
 
-Theorem 15 (Applegate, LeBrun and Sloane, prime promotion): a digit map `d` (a nondecreasing
-map on digits) commutes with lunar addition (pointwise maximum) and lunar multiplication
-(max-min convolution): `d(f) ⊕ d(g) = d(f ⊕ g)` and `d(f) ⊗ d(g) = d(f ⊗ g)`. Stated for every
-monotone `d : ℕ → ℕ` and all coefficient sequences; a base-`b` digit map extends to such a `d`.
+**Monotone digit maps are lunar homomorphisms.** Let $d : \mathbb{N} \to \mathbb{N}$ be
+nondecreasing, and for a coefficient sequence $f : \mathbb{N} \to \mathbb{N}$ write $d(f)$ for the
+sequence $k \mapsto d(f_k)$. Write $f \oplus g$ for the pointwise maximum and $f \otimes g$ for the
+max-min product of coefficient sequences $f$ and $g$. Then for all $f$ and $g$,
+$d(f) \oplus d(g) = d(f \oplus g)$ and $d(f) \otimes d(g) = d(f \otimes g)$.
+
+This is Theorem 15 (Applegate, LeBrun and Sloane, prime promotion), stated for every nondecreasing
+map on $\mathbb{N}$; a base-$b$ digit map, a nondecreasing map on the digits, extends to such a map.
 
 ## Depends on
 
-- [Max Min Mul](max-min-mul.md)
+- [Max-min product](max-min-mul.md)
 
 ## Sources
 

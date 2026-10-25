@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.luekerLowerBound
 ---
 
-# Lueker Lower Bound
+# Statement of Lueker's lower bound
 
-Lueker's computer-assisted exact lower endpoint `0.788071`.
+**Statement of Lueker's lower bound.** The proposition that the binary
+Chvátal–Sankoff constant $C_{31a}$ is at least $0.788071$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [C31a](c31a.md)
+- [Catalogue notation for the binary Chvátal–Sankoff constant](c31a.md)
 
 ## Sources
 

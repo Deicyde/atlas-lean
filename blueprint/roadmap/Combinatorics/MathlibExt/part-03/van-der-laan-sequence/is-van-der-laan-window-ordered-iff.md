@@ -7,18 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.isVanDerLaanWindow_ordered_iff
 ---
 
-# Is Van Der Laan Window ordered iff
+# Van der Laan windows in increasing order
 
-Ordered-window reduction (concept `jis_term_73e55616c68e02e09fa349b5`;
-local reduction used by source lines 120-124 for increasing sequences).
-
-An already ordered window `a ≤ b ≤ c ≤ d` is a Van der Laan window if and
-only if the largest term is the sum of the two smallest, `d = a + b`.
+**Van der Laan windows in increasing order.** Let $a \le b \le c \le d$ be natural numbers.
+Then $a, b, c, d$ form a Van der Laan window if and only if $d = a + b$.
 
 ## Depends on
 
-- [Is Van Der Laan Window](is-van-der-laan-window.md)
+- [Van der Laan windows](is-van-der-laan-window.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.VanDerLaanSequence](../../../../../sources/v2/MathlibExt.md)
+- concept `jis_term_73e55616c68e02e09fa349b5`; local reduction used by source lines 120-124 for increasing sequences.

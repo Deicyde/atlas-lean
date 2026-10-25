@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.maxMin_indecomposable_density
 ---
 
-# Max Min indecomposable density
+# Almost all max-min polynomials are indecomposable
 
-Theorem 11: for every integer `b ≥ 2`, the proportion of degree-`n` polynomials over
-`ℬ_b = {0, …, b - 1}` which are indecomposable tends to `1` as `n → ∞`.
+**Almost all max-min polynomials are indecomposable.** Fix an integer $b \ge 2$. For each
+$n$, among the polynomials of degree $n$ with coefficients in $\mathcal{B}_b = \{0, \dots, b - 1\}$,
+that is, coefficient strings $(a_0, \dots, a_n)$ with $a_n \ne 0$, the proportion of those that
+are indecomposable over the max-min semiring tends to $1$ as $n \to \infty$.
 
 ## Depends on
 
-- [Is Max Min Indecomposable](is-max-min-indecomposable.md)
-- [Digit Seq](digit-seq.md)
+- [Max-min indecomposable sequences](is-max-min-indecomposable.md)
+- [Coefficient sequence of a digit string](digit-seq.md)
 
 ## Sources
 

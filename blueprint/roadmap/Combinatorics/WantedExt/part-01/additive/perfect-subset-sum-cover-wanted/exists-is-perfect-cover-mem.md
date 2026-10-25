@@ -5,14 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.exists_isPerfectCover_mem
 ---
 
-# Exists is Perfect Cover mem
+# Existence of perfect covers
 
-Every abelian group of order `2^n` has a perfect cover, and every nonzero `x` lies in
-some perfect cover.
+**Existence of perfect covers.** Every finite abelian group $G$ of order $2^n$ has a perfect
+cover, and every nonzero $x \in G$ lies in some perfect cover of $G$.
 
 ## Depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
+- [Perfect cover](is-perfect-cover.md)
 
 ## Sources
 

@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.HasWeightedZeroSumSubseq.mono
 ---
 
-# Mono
+# Weighted zero-sum subsequences are monotone in the weight set
 
-Weighted zero-sum subsequences are monotone in the weight set: the same
-index set and weights witness the conclusion after replacing `A` by a superset
-`B`. This is a characteristic lemma for the new predicate.
+**Weighted zero-sum subsequences are monotone in the weight set.** Let
+$A \subseteq B \subseteq \mathbb{Z}/n\mathbb{Z}$ and let $S$ be a finite sequence in
+$\mathbb{Z}/n\mathbb{Z}$. If $S$ has an $A$-weighted zero-sum subsequence, then $S$ has a
+$B$-weighted zero-sum subsequence.
 
 ## Depends on
 
-- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
+- [Weighted zero-sum subsequences](has-weighted-zero-sum-subseq.md)
 
 ## Sources
 

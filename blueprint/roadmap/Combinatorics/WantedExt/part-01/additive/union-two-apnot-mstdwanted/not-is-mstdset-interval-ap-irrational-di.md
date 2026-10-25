@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_intervalAP_irrational_diff
 ---
 
-# Lemma 4
+# Interval plus irrational-step progression with natural start is not MSTD
 
-**Lemma 4.** For `n ≥ 3`, `m ≥ 2`, a positive irrational `d` and natural `x ≥ n + 1`, `I_n ∪
-J(x, m, d)` is not an MSTD set.
+**Interval plus irrational-step progression with natural start is not MSTD.** Let
+$I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$, as finite
+sets of reals. For natural numbers $n \ge 3$, $m \ge 2$ and $x \ge n + 1$, and a positive
+irrational real number $d$, the set $I_n \cup J(x, m, d)$ is not an MSTD set.
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
-- [Real APSet](real-apset.md)
-- [Real Interval Set](real-interval-set.md)
+- [MSTD set](is-mstdset.md)
+- [Finite arithmetic progression](real-apset.md)
+- [Initial integer interval](real-interval-set.md)
 
 ## Sources
 

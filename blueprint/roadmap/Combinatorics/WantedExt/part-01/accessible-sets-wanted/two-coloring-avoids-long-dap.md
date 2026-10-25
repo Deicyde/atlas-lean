@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.two_coloring_avoids_long_DAP
 ---
 
-# Two coloring avoids long DAP
+# Two-colorings avoiding long $D$-progressions
 
-A uniform positive nearest-integer distance produces a 2-coloring with no
-monochromatic `D`-AP of length `ceil((2ε)⁻¹)+1`.  This is the cautious reading
-of the malformed copied display, whose stray `r` belongs to `\rceil`.
+**Two-colorings avoiding long $D$-progressions.** Let $D$ be a set of positive integers,
+let $\alpha$ be a real number and let $\varepsilon > 0$ be such that
+$\lVert \alpha d \rVert \ge \varepsilon$ for every $d \in D$, where $\lVert t \rVert$ denotes the
+distance from $t$ to the nearest integer. Then there is a $2$-coloring of the positive integers
+with no monochromatic $D$-arithmetic progression of length $\lceil 1/(2\varepsilon) \rceil + 1$.
 
 ## Depends on
 
-- [Is DAP](is-dap.md)
-- [Is Monochromatic](is-monochromatic.md)
+- [Arithmetic progressions with gap in $D$](is-dap.md)
+- [Monochromatic sequences of positive integers](is-monochromatic.md)
 
 ## Sources
 

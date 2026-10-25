@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Diagonal Graph Ramsey](../../../MathlibExt/part-01/simple-graph/part-03/ramsey/diagonal-graph-ramsey.md)
+- [Diagonal Ramsey number of a graph](../../../MathlibExt/part-01/simple-graph/part-03/ramsey/diagonal-graph-ramsey.md)
 
 ## Sources
 

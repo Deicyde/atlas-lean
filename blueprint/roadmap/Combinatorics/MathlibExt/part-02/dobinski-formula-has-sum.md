@@ -7,13 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.dobinski_formula_hasSum
 ---
 
-# Dobinski Bell
+# Dobinski's formula
 
-Dobinski's formula for Bell numbers: for every `n : Nat`, including `n = 0`,
-the real series with summand `(k : Real)^n / (k.factorial : Real)` indexed by
-`k : Nat` from `k = 0` satisfies `HasSum` with value `Real.exp 1 * (Nat.bell n : Real)`,
-so dividing by `Real.exp 1` gives the usual `1 / e` form. At `n = 0` and
-`k = 0`, Lean's `0 ^ 0 = 1` is used, matching the exponential series.
+**Dobinski's formula.** Let $B_n$ denote the $n$-th Bell number, the number of partitions of
+an $n$-element set. For every natural number $n$, the real series $\sum_{k=0}^{\infty} k^n / k!$
+is summable with sum $e \cdot B_n$, so $B_n = \frac{1}{e} \sum_{k=0}^{\infty} \frac{k^n}{k!}$.
+At $n = 0$ the term $k = 0$ is $0^0 / 0! = 1$, matching the exponential series.
 
 Concept ID: `jis_dep_b5aac440aefd6e0d2de97890`.
 Grounded record ID: `jis_grounded_f1b5718dcb195df798f06188`.

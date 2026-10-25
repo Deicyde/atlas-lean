@@ -5,13 +5,14 @@ statement: formalized
 lean: IsogenyVolcano.isFloor
 ---
 
-# Is Floor
+# Floor of a volcano
 
-Floor vertices.
+**Floor of a volcano.** A vertex $v$ of an $\ell$-isogeny volcano $C$ of depth $d$ lies on
+the floor of $C$ when its level is $d$, the last of the levels $0, 1, \dots, d$.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
+- [Isogeny volcano](isogeny-volcano.md)
 
 ## Sources
 

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.weakAscent_wilf_classes_quadruples
 ---
 
-# Weak Ascent wilf classes quadruples
+# WA-Wilf classes of pattern quadruples
 
-Theorem 2: the number of WA-Wilf-equivalence classes among quadruples of length-3
-patterns is `228` or `229`, counted as the number of distinct counting sequences
-`n ↦ |WA_n(P)|` over the 4-element subsets `P` of the thirteen length-3 patterns.
+**WA-Wilf classes of pattern quadruples.** Write $\mathrm{WA}_n(P)$ for the set of weak ascent
+sequences of length $n$ avoiding every pattern in $P$, and call two sets of patterns $P$ and $Q$
+WA-Wilf equivalent when $|\mathrm{WA}_n(P)| = |\mathrm{WA}_n(Q)|$ for every $n \ge 0$. As $P$
+ranges over the $4$-element subsets of the thirteen patterns of length three, the counting
+sequences $n \mapsto |\mathrm{WA}_n(P)|$ take exactly $228$ or exactly $229$ distinct values;
+that is, there are $228$ or $229$ WA-Wilf equivalence classes of such quadruples.
 
 ## Depends on
 
-- [Length Three Patterns](length-three-patterns.md)
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [The thirteen patterns of length three](length-three-patterns.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Sources
 

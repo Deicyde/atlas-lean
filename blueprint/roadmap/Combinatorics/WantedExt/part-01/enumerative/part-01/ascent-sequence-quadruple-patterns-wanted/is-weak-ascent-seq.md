@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsWeakAscentSeq
 ---
 
-# Is Weak Ascent Seq
+# Weak ascent sequence
 
-Weak ascent sequences: `a₁ = 0` and `aᵢ ≤ 1 + wasc(a₁ ⋯ a_{i-1})` for `i ≥ 2`
-(the analogue of `IsAscentSeq` with weak ascents).
+**Weak ascent sequence.** A word $a_1 a_2 \cdots a_n$ over $\mathbb{N}$ is a weak ascent
+sequence if either $n = 0$, or $a_1 = 0$ and $a_i \le 1 + \operatorname{wasc}(a_1 \cdots a_{i-1})$
+for every $2 \le i \le n$, where $\operatorname{wasc}(u)$ is the number of weak ascents of $u$,
+that is, of positions $j$ with $u_j \le u_{j+1}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Word Weak Ascents](word-weak-ascents.md)
+- [Number of weak ascents of a word](word-weak-ascents.md)
 
 ## Sources
 

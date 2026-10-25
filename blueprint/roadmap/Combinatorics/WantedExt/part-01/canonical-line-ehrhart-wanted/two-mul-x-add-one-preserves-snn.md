@@ -5,14 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.two_mul_X_add_one_preserves_snn
 ---
 
-# Two mul X add one preserves snn
+# Multiplying by $2X+1$ preserves SNN
 
-Multiplication by `2X+1` preserves the SNN property.  The paper's degree `d` is
-`f.natDegree`, so no redundant degree parameter is introduced.
+**Multiplying by $2X+1$ preserves SNN.** For every complex polynomial $f$, if $f$ is an SNN
+polynomial, then so is $(2X + 1) f$.
 
 ## Depends on
 
-- [Is SNN](is-snn.md)
+- [SNN polynomials](is-snn.md)
 
 ## Sources
 

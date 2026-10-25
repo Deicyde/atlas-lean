@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.boolean_close_factor_pairs_card_le
 ---
 
-# Boolean close factor pairs card le
+# Counting Boolean factor pairs with a small sumset
 
-Lemma 19: for every real `d > 0`, the number of pairs of Boolean polynomials `(f, g)`, here
-their supports `(A, B)`, with nonzero constant term of `f` (`0 ∈ A`), `deg f = k > 0`,
-`deg g = n - k`, and `|f ⊗ g| ≤ |f| + |g| + d` (`|A + B| ≤ |A| + |B| + d`) is at most
-`n^{2d+2} 2^k`.
+**Counting Boolean factor pairs with a small sumset.** Let $n$ and $k$ be natural numbers with
+$0 < k \le n$, and let $d > 0$ be a real number. Then the number of pairs $(A, B)$ of finite sets
+of natural numbers such that $0 \in A$, the largest element of $A$ is $k$, the largest element of
+$B$ is $n - k$, and $|A + B| \le |A| + |B| + d$, where $A + B = \{a + b : a \in A, b \in B\}$ is
+the sumset, is at most $n^{2d+2} 2^k$.
+
+This is Lemma 19 for Boolean polynomials $f$ and $g$ recorded by their supports $A$ and $B$: the
+conditions say that $f$ has nonzero constant term, $\deg f = k$ and $\deg g = n - k$, and the
+support of their max-min product $f \otimes g$ is $A + B$.
 
 ## Depends on
 

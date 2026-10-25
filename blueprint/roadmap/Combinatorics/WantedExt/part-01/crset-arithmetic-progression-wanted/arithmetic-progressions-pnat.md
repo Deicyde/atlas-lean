@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.IsJSet.arithmeticProgressions_pnat
 ---
 
-# Theorem 2
+# Debnath–Goswami theorem on progressions in J-sets
 
-**Theorem 2** (Debnath–Goswami). If `S ⊆ ℕ` is a `J`-set, then for every `k` the
-set of `(a, d) ∈ ℕ × ℕ` with `a, a + d, …, a + k d ∈ S` is a `J`-set in `ℕ × ℕ`.
+**Debnath–Goswami theorem on progressions in J-sets.** Let $\mathbb{N}^+$ denote the
+positive integers under addition. If $S \subseteq \mathbb{N}^+$ is a $J$-set, then for every
+natural number $k$ the set of pairs $(a, d) \in \mathbb{N}^+ \times \mathbb{N}^+$ such that
+$a + i d \in S$ for all $i = 0, 1, \dots, k$ is a $J$-set in $\mathbb{N}^+ \times \mathbb{N}^+$.
 
-The paper's `ℕ` is the positive integers, modelled by `ℕ+`; the paper takes
-`k ≥ 1`, and `k = 0` is included.
+The paper writes $\mathbb{N}$ for the positive integers and takes $k \ge 1$; the case $k = 0$ is
+included.
 
 ## Depends on
 
-- [Is JSet](is-jset.md)
+- [J-sets in commutative semigroups](is-jset.md)
 
 ## Sources
 

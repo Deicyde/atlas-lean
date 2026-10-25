@@ -7,23 +7,30 @@ proof: formalized
 lean: MetaMathlibExt.SelfGeneratingSet.fixedPoint_eq_generated
 ---
 
-# Fixed Point eq generated
+# Under strict growth, a fixed-point set is the generated set
 
-Under strict growth, a fixed point is the generated closure. The proof uses strong induction:
-if a non-seed element is `f x`, then strict growth gives `x < f x`.
+**Under strict growth, a fixed-point set is the generated set.** Let $F$ be a finite set of
+functions $\mathbb{N} \to \mathbb{N}$ with $x < f(x)$ for every $f \in F$ and every
+$x \in \mathbb{N}$, let $s \in \mathbb{N}$, and let $C \subseteq \mathbb{N}$ be a fixed-point set
+for $F$ and $s$: $y \in C$ exactly when $y = s$ or $y = f(x)$ for some $f \in F$ and $x \in C$.
+Then $C$ equals the set generated from $s$ by $F$, the numbers obtained from $s$ by applying
+finitely many functions of $F$.
+
+The proof is by strong induction: if an element of $C$ is $f(x)$ with $f \in F$ and $x \in C$,
+then strict growth gives $x < f(x)$.
 
 ## Depends on
 
-- [Fixed Point](fixed-point.md)
-- [Generated Set](generated-set.md)
-- [Strict Growth](strict-growth.md)
+- [Fixed-point sets for a seed and generators](fixed-point.md)
+- [Set generated from a seed](generated-set.md)
+- [Strict growth of a set of generators](strict-growth.md)
 
 ## Proof depends on
 
-- [Gen](gen.md)
-- [SG](sg.md)
-- [Fixed Point is SG](fixed-point-is-sg.md)
-- [Generated le of sg](generated-le-of-sg.md)
+- [Reachability from a seed by generators](gen.md)
+- [Self-generating sets](sg.md)
+- [Fixed-point sets are self-generating](fixed-point-is-sg.md)
+- [The generated set lies in every self-generating set](generated-le-of-sg.md)
 
 ## Sources
 

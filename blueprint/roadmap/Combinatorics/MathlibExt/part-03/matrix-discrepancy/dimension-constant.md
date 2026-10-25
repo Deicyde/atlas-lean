@@ -5,9 +5,11 @@ statement: formalized
 lean: MatrixDiscrepancy.dimensionConstant
 ---
 
-# Dimension Constant
+# Komlós constant in a fixed dimension
 
-The supremum over all admitted real square matrices, with a value also at zero.
+**Komlós constant in a fixed dimension.** For a natural number $n$, this is the supremum of
+the discrepancy of $A$ over all real $n \times n$ matrices $A$ whose columns all have Euclidean
+norm at most $1$, taken in $[0, \infty]$. The definition also applies to $n = 0$.
 
 ## Depends on
 
@@ -15,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Column Admissible](column-admissible.md)
-- [Discrepancy](discrepancy.md)
+- [Matrices with columns in the unit ball](column-admissible.md)
+- [Discrepancy of a real matrix](discrepancy.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ PF: the lower Toeplitz matrix has non-negative minors), `r, s, t â‰¥ 0` with `sÂ
 ## Depends on
 
 - [Lower Toeplitz](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/lower-toeplitz/lower-toeplitz.md)
-- [Is Riordan Array AZ](is-riordan-array-az.md)
+- [Riordan array with given A- and Z-sequences](is-riordan-array-az.md)
 - [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
 
 ## Sources

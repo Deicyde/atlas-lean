@@ -6,9 +6,11 @@ statement: formalized
 lean: FinPoset.maximalElements
 ---
 
-# Maximal Elements
+# Maximal elements of a finite set
 
-Maximal elements of a finset in the ambient order.
+**Maximal elements of a finite set.** For a finite subset $A$ of a partially ordered
+set $P$, the maximal elements of $A$ form the subset of those $x \in A$ such that every
+$y \in A$ with $x \le y$ equals $x$.
 
 ## Depends on
 

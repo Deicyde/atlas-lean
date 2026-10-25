@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.convergentVec_recurrence
 ---
 
-# Convergent Vec recurrence
+# Recurrence for convergent vectors
 
-The recurrence `v_{i+2} = v_i + q_{i+2} v_{i+1}` for `i ≥ 0`, whenever `q_{i+2}` exists.
+**Recurrence for convergent vectors.** Let $x$ be a rational number with regular continued
+fraction $[q_0; q_1, q_2, \dots]$ and convergent vectors $v_{-2}, v_{-1}, v_0, \dots$, and let
+$i \ge 0$. If the expansion of $x$ has a term $b$ in position $i + 2$ (it does not terminate
+before $q_{i+2}$), then $q_{i+2} = b$ and $v_{i+2} = v_i + b \, v_{i+1}$.
 
 ## Depends on
 
-- [Convergent Vec](convergent-vec.md)
-- [Partial Quotient](partial-quotient.md)
+- [Convergent vectors of a continued fraction](convergent-vec.md)
+- [Partial quotients of a rational number](partial-quotient.md)
 
 ## Sources
 

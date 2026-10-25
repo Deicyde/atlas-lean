@@ -7,18 +7,21 @@ proof: formalized
 lean: SimpleGraph.exists_attains_hypercubeTuranNumber
 ---
 
-# Exists attains hypercube Turan Number
+# Attainment of the hypercube Turán number
 
-When at least one `H`-free subgraph exists, the maximum is attained.
+**Attainment of the hypercube Turán number.** Let $n$ be a natural number, $H$ a simple
+graph, $Q_n$ the $n$-dimensional hypercube, and $\mathrm{ex}(Q_n, H)$ the hypercube Turán number.
+If $Q_n$ has at least one subgraph (not necessarily spanning) that contains no copy of $H$, then
+some subgraph $S$ of $Q_n$ contains no copy of $H$ and has exactly $\mathrm{ex}(Q_n, H)$ edges.
 
 ## Depends on
 
-- [Hypercube Graph](hypercube-graph.md)
-- [Hypercube Turan Number](hypercube-turan-number.md)
+- [Hypercube graph](hypercube-graph.md)
+- [Hypercube Turán number](hypercube-turan-number.md)
 
 ## Proof depends on
 
-- [Hypercube Graph subgraph edge Set ncard le](hypercube-graph-subgraph-edge-set-ncard.md)
+- [Subgraphs of the hypercube have at most as many edges](hypercube-graph-subgraph-edge-set-ncard.md)
 
 ## Sources
 

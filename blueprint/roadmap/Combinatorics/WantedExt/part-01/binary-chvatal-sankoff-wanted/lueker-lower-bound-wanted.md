@@ -6,15 +6,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.luekerLowerBound_wanted
 ---
 
-# Lueker Lower Bound wanted
+# Lueker's lower bound for the binary Chvátal–Sankoff constant
 
-Source: Lueker (2009), catalogue computer-assisted lower bound `0.788071`.
-Known literature result; its proof and certificate are not supplied here.
+**Lueker's lower bound for the binary Chvátal–Sankoff constant.** For each $n$, let $E_n$ be
+the expected length of a longest common subsequence of two independent uniformly random binary
+strings of length $n$, and let $C$, the binary Chvátal–Sankoff constant, be the limit inferior of
+$E_n / n$ as $n \to \infty$. Then $0.788071 \le C$.
 
 ## Depends on
 
-- [Lueker Lower Bound](lueker-lower-bound.md)
+- [Statement of Lueker's lower bound](lueker-lower-bound.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BinaryChvatalSankoffWanted](../../../../../sources/v2/WantedExt.md)
+- Lueker (2009), catalogue computer-assisted lower bound `0.788071`. Known literature result; its proof and certificate are not supplied here.

@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.centralBinomPowSum_oddHarmonic_recursion
 ---
 
-# Central Binom Pow Sum odd Harmonic recursion
+# Recurrence for central binomial sums with odd harmonic numbers
 
-Theorem 1: `S_0^O(n) = 2^{-2n} C(2n,n) ((2n+1) O_n - 2n)`, and for `r ≥ 1`
-`(2r+1) S_r^O(n) = n^r 2^{-2n} C(2n,n) ((2n+1) O_n + 1) - S_r(n)
-+ 2 ∑_{j=1}^{r-1} C(r, j+1) (-1)^{j+1} S_{r-j}^O(n)`.
+**Recurrence for central binomial sums with odd harmonic numbers.** For a natural number $n$,
+let $O_m = \sum_{i=1}^{m} 1/(2i-1)$ be the odd harmonic numbers, $c_n = \binom{2n}{n}/4^n$, and
+for natural $r$ let $S_r(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r$ and
+$S_r^O(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r O_k$, with $0^0 = 1$. Then
+
+$$S_0^O(n) = c_n \big((2n+1) O_n - 2n\big),$$
+
+and for every $r \ge 1$
+
+$$(2r+1) S_r^O(n) = n^r c_n \big((2n+1) O_n + 1\big) - S_r(n) +
+2 \sum_{j=1}^{r-1} \binom{r}{j+1} (-1)^{j+1} S_{r-j}^O(n).$$
 
 ## Depends on
 
-- [Central Binom Pow Sum](central-binom-pow-sum.md)
+- [Weighted central binomial sum](central-binom-pow-sum.md)
 - [Odd Harmonic](../../../../../../NumberTheory/MathlibExt/part-01/harmonic/odd-harmonic/odd-harmonic.md)
 
 ## Sources

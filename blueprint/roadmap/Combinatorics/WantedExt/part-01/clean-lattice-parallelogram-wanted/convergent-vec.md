@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.convergentVec
 ---
 
-# Convergent Vec
+# Convergent vectors of a continued fraction
 
-Stark's convergent vectors of the regular continued fraction `[q_0, q_1, …]` of `x`:
-`v_{-2} = (1, 0)`, `v_{-1} = (0, 1)` and, for `i ≥ 0`, `v_i = (B_i, A_i)` where `A_i / B_i` is the
-`i`-th convergent (Mathlib's `GenContFract.nums` and `GenContFract.dens` of `GenContFract.of x`),
-so that `v_i = v_{i-2} + q_i v_{i-1}`.
+**Convergent vectors of a continued fraction.** Let $x$ be a rational number with regular
+continued fraction $[q_0; q_1, q_2, \dots]$, and let $A_j$ and $B_j$ be the numerators and
+denominators of its convergents, given by $A_{-2} = 0$, $A_{-1} = 1$, $B_{-2} = 1$, $B_{-1} = 0$
+and $A_j = q_j A_{j-1} + A_{j-2}$, $B_j = q_j B_{j-1} + B_{j-2}$ for $j \ge 0$. Stark's
+convergent vectors of $x$ are $v_j = (B_j, A_j)$ for $j \ge -2$, so $v_{-2} = (1, 0)$,
+$v_{-1} = (0, 1)$ and $v_j = v_{j-2} + q_j v_{j-1}$ for every $j \ge 0$ for which $q_j$ exists.
+
+If the expansion terminates with $q_m$, then $v_j = v_m$ for all $j > m$; for $j < -2$ the
+value is set to $v_0$.
 
 ## Depends on
 

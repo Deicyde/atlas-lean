@@ -12,7 +12,7 @@ lean: MetaMathlibExt.inverseAckermann_eight
 
 ## Depends on
 
-- [Inverse Ackermann](inverse-ackermann.md)
+- [Inverse Ackermann function](inverse-ackermann.md)
 
 ## Sources
 

@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.CubeFaceMove
 ---
 
-# Cube Face Move
+# Face move on the cube
 
-A move of the cube game `C_F`: `q` is obtained from `p` by removing at least one token from
-one face, leaving the other five faces unchanged (Nim on six heaps).
+**Face move on the cube.** Label the faces of a cube $f_a, f_b, f_c, f_A, f_B, f_C$, where
+$f_A$, $f_B$, $f_C$ are opposite $f_a$, $f_b$, $f_c$, and record a position as the tuple
+$p = (a, b, c, A, B, C)$ of numbers of tokens on these faces. In the game $C_F$ there is a move
+from a position $p$ to a position $q$ when, for some face, $q$ agrees with $p$ on the other five
+faces, $q \le p$ on every face, and $q \ne p$; that is, at least one token is removed from one
+face. So $C_F$ is Nim with six heaps.
 
 ## Depends on
 

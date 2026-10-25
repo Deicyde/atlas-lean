@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_small_gap_of_limsup_count
 ---
 
-# Exists small gap of limsup count
+# Zhan's small-gap lemma
 
-Zhan's small-gap lemma: if `S ⊆ ℕ` has counting function `S(n) = #(S ∩ [1, n])` with
-`limsup (S(n) - n / n₀) = ∞` for an integer `n₀ ≥ 2`, then some `1 ≤ d ≤ n₀ - 1` has `j` and
-`j + d` both in `S` for arbitrarily large `j`. The record's display is garbled; it is read from
-arXiv:2305.15133.
+**Zhan's small-gap lemma.** Let $S$ be a set of natural numbers, let $n_0 \ge 2$ be an
+integer, and write $S(n)$ for the number of elements of $S \cap \{1, \dots, n\}$. If
+$\limsup_{n \to \infty} (S(n) - n / n_0) = \infty$, that is, for every real $M$ there are
+arbitrarily large $n$ with $S(n) - n / n_0 > M$, then there is an integer $d$ with
+$1 \le d \le n_0 - 1$ such that $j$ and $j + d$ both lie in $S$ for arbitrarily large $j$.
 
 ## Depends on
 

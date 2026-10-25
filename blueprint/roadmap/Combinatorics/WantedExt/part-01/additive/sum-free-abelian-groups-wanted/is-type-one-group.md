@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsTypeOneGroup
 ---
 
-# Is Type One Group
+# Groups of type I(p)
 
-`G` is of type `I(p)`: `p` is the smallest prime `p ≡ 2 (mod 3)` dividing `|G|`.
+**Groups of type I(p).** Let $G$ be a finite set and $p$ a natural number. $G$ is of type
+$\mathrm{I}(p)$ if $p$ is the smallest prime with $p \equiv 2 \pmod 3$ dividing $|G|$: that is,
+$p$ is prime, $p \equiv 2 \pmod 3$, $p$ divides $|G|$, and $p \le q$ for every prime $q$ with
+$q \equiv 2 \pmod 3$ that divides $|G|$.
+
+Only the order of $G$ is used; in the paper $G$ is a finite abelian group.
 
 ## Depends on
 

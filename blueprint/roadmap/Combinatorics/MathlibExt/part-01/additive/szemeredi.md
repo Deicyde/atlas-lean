@@ -23,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Density hales jewett](../../part-02/density-hales-jewett/density-hales-jewett.md)
+- [Density Hales–Jewett theorem](../../part-02/density-hales-jewett/density-hales-jewett.md)
 
 ## Sources
 

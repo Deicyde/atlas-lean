@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsKRegularSequence
 ---
 
-# Is KRegular Sequence
+# $k$-regular sequence
 
-A `k`-regular integer sequence in the sense of Allouche and Shallit: the base satisfies
-`k ≥ 2` and the `ℤ`-module spanned by its `k`-kernel `kKernel k f` is finitely generated.
+**$k$-regular sequence.** Let $k$ be a natural number. An integer sequence
+$f : \mathbb{N} \to \mathbb{Z}$ is $k$-regular, in the sense of Allouche and Shallit, if
+$k \ge 2$ and the $\mathbb{Z}$-submodule of the module of all integer sequences spanned by the
+$k$-kernel of $f$ is finitely generated.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [K Kernel](../automatic/k-kernel.md)
+- [The $k$-kernel of a sequence](../automatic/k-kernel.md)
 
 ## Sources
 

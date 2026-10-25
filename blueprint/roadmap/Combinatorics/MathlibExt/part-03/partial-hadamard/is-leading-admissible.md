@@ -6,14 +6,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PartialHadamard.IsLeadingAdmissible
 ---
 
-# Is Leading Admissible
+# Admissible exponents for the partial Hadamard leading term
 
-Exponent `α` is admissible for the leading term when, along every
-sequence of row counts `n ≥ 2` and quarter-widths `t` with
-`t / n ^ α → ∞`, the count is asymptotic to the leading term. The
-catalogue's `C_{23c}` allows unspecified corrected formulas below the
-cubic scale; this predicate is its precise leading-term specialization,
-whose exact threshold the source records as `3`.
+**Admissible exponents for the partial Hadamard leading term.** For natural numbers $n$ and
+$m$, let $N_{n,m}$ be the number of $n \times m$ partial Hadamard matrices, and for natural
+numbers $n$ and $t$ let $A_{n,4t} = 2^{4nt + (n-1)^2} (8\pi t)^{-n(n-1)/4}$ be the de
+Launey–Levin leading term. A real number $\alpha$ is admissible for the leading term when, for
+all sequences $(n_k)$ and $(t_k)$ of natural numbers with $n_k \ge 2$ for every $k$ and
+$t_k / n_k^{\alpha} \to \infty$ as $k \to \infty$, the ratio $N_{n_k, 4t_k} / A_{n_k, 4t_k}$
+tends to $1$.
+
+The catalogue constant $C_{23c}$ also allows corrected asymptotic formulas below the cubic scale;
+this predicate is its precise leading-term specialization, whose exact threshold the source
+records as $3$.
 
 ## Depends on
 
@@ -21,8 +26,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Leading Term](leading-term.md)
-- [Partial Hadamard Count](partial-hadamard-count.md)
+- [De Launey–Levin leading term](leading-term.md)
+- [Number of partial Hadamard matrices](partial-hadamard-count.md)
 
 ## Sources
 

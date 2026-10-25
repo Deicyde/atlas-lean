@@ -12,7 +12,7 @@ Stated along natural `n`.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

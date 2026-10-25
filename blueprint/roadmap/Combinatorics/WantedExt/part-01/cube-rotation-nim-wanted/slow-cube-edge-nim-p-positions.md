@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.slowCubeEdgeNim_pPositions
 ---
 
-# Slow Cube Edge Nim p Positions
+# P-positions of slow edge Nim on a cube
 
-In the slow version of `C_E` (each face at the selected edge loses at most one token) the
-P-positions are exactly those where `a + A`, `b + B`, `c + C` are all even or all odd: no move
-joins two such positions, and every other position has a move to one.
+**P-positions of slow edge Nim on a cube.** Write a position of the cube game as
+$p = (a, b, c, A, B, C)$, the numbers of tokens on the six faces of a cube, where the faces
+carrying $A$, $B$, $C$ are opposite those carrying $a$, $b$, $c$. A slow edge move is an edge
+move (removing at least one token in total from two faces in different opposite pairs) in which
+each face loses at most one token. Let $P$ be the set of positions for which $a + A$, $b + B$
+and $c + C$ are all even or all odd. Then no slow edge move leads from a position in $P$ to a
+position in $P$, and from every position not in $P$ some slow edge move leads to a position in
+$P$.
+
+Since every play terminates, these two properties make $P$ the set of P-positions of the slow
+game under normal play.
 
 ## Depends on
 
-- [Cube Edge Move](cube-edge-move.md)
+- [Edge move on the cube](cube-edge-move.md)
 
 ## Sources
 

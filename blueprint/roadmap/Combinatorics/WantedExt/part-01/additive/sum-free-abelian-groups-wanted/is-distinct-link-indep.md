@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsDistinctLinkIndep
 ---
 
-# Is Distinct Link Indep
+# Independent sets of the distinct link graph
 
-`I` is an independent set of the distinct link graph `L*_S[B]`: `I ⊆ B`, no vertex of
-`I` carries a loop, and no two vertices of `I` are adjacent.
+**Independent sets of the distinct link graph.** Let $G$ be a set with an addition and let
+$S, B, I \subseteq G$. The set $I$ is an independent set of the distinct link graph $L^*_S[B]$
+(the graph on vertex set $B$ given by the edges and loops of the distinct link graph of $S$) if
+$I \subseteq B$, no element of $I$ carries a loop, and no two elements of $I$ are adjacent.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Distinct Link Adj](distinct-link-adj.md)
-- [Distinct Link Loop](distinct-link-loop.md)
+- [Edges of the distinct link graph](distinct-link-adj.md)
+- [Loops of the distinct link graph](distinct-link-loop.md)
 
 ## Sources
 

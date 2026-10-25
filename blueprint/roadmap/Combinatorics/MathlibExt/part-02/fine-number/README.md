@@ -5,5 +5,5 @@ navigation: module
 
 # Fine Number
 
-- [Fine Number](fine-number.md)
-- [Fine Number eq sum](fine-number-eq-sum.md)
+- [Fine numbers](fine-number.md)
+- [Explicit formula for the Fine numbers](fine-number-eq-sum.md)

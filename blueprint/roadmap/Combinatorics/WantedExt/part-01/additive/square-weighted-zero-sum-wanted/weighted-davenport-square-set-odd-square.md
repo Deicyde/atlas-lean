@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport_squareSet_oddSquare_lowerBound
 ---
 
-# Weighted Davenport square Set odd Square lower Bound
+# The square-weighted Davenport constant of an odd square is at least five
 
-Theorem 26: for an odd square `n ≥ 2`, `D_{S(n)} ≥ 5` (in `ℕ∞`). The lower
-bound on `n` is the paper's ambient convention.
+**The square-weighted Davenport constant of an odd square is at least five.** Let $n \ge 2$
+be an odd perfect square, let $S(n)$ be the set of nonzero squares in $\mathbb{Z}_n$, and let $A$
+be the set of integers $a$ with $0 \le a < n$ whose residue modulo $n$ lies in $S(n)$. Then the
+$A$-weighted Davenport constant $D_{S(n)}$ of $\mathbb{Z}_n$ is at least $5$.
 
 ## Depends on
 
-- [Square Set](square-set.md)
+- [Nonzero squares modulo $n$](square-set.md)
 - [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
-- [Zmod Weight Reps](zmod-weight-reps.md)
+- [Representatives of a set of residues](zmod-weight-reps.md)
 
 ## Sources
 

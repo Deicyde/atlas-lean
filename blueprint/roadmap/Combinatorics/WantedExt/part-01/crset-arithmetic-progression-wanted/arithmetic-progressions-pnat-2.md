@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.IsEssentialCRSet.arithmeticProgressions_pnat
 ---
 
-# Theorem 9
+# Arithmetic progressions in essential CR-sets of the positive integers
 
-**Theorem 9.** If `A` is an essential CR-set in `ℕ` and `l ∈ ℕ`, then the set of
-`(a, b)` with `a, a + b, …, a + l b ∈ A` is an essential CR-set in `ℕ × ℕ`.
+**Arithmetic progressions in essential CR-sets of the positive integers.** Let $\mathbb{N}^+$
+denote the positive integers under addition. If $A \subseteq \mathbb{N}^+$ is an essential CR-set
+and $l$ is a natural number, then the set of pairs $(a, b) \in \mathbb{N}^+ \times \mathbb{N}^+$
+such that $a + i b \in A$ for all $i = 0, 1, \dots, l$ is an essential CR-set in
+$\mathbb{N}^+ \times \mathbb{N}^+$.
 
-The paper's `ℕ` is the positive integers, modelled by `ℕ+`; the paper takes
-`l ≥ 1`, and `l = 0` is included.
+The paper writes $\mathbb{N}$ for the positive integers and takes $l \ge 1$; the case $l = 0$ is
+included.
 
 ## Depends on
 
-- [Is Essential CRSet](is-essential-crset.md)
+- [Essential CR-set](is-essential-crset.md)
 
 ## Sources
 

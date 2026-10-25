@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_alternating_inv_centralBinom_oddHarmonic_eq_stirling
 ---
 
-# Sum alternating inv central Binom odd Harmonic eq stirling
+# Alternating reciprocal central binomial sum with $O_{n+1} - O_{k+1}$
 
-Proposition 6: for natural `n`, `r`,
-`∑_{k=0}^n (-1)^k/(2k+1) C(n,k) 2^{2k} C(2k,k)^{-1} k^r (O_{n+1} - O_{k+1})
-= 1/(2n+1) C(2n,n)^{-1} ∑_{k=0}^r (-1)^k k! {r \brace k} 2^{2k} C(2(n-k),n-k) O_{n-k}`
-(right sum over `k ≤ min(r,n)`).
+**Alternating reciprocal central binomial sum with $O_{n+1} - O_{k+1}$.** Let
+$O_m = \sum_{j=1}^{m} \frac{1}{2j-1}$ be the odd harmonic numbers (so $O_0 = 0$) and let
+${r \brace k}$ denote the Stirling numbers of the second kind. For all natural numbers $n$ and $r$
+(with $0^0 = 1$),
+
+$$\sum_{k=0}^{n} \frac{(-1)^k}{2k+1} \binom{n}{k} \frac{4^k}{\binom{2k}{k}} k^r
+(O_{n+1} - O_{k+1}) =
+\frac{1}{(2n+1)\binom{2n}{n}} \sum_{k=0}^{\min(r,n)} (-1)^k k! {r \brace k} 4^k
+\binom{2(n-k)}{n-k} O_{n-k}.$$
 
 ## Depends on
 

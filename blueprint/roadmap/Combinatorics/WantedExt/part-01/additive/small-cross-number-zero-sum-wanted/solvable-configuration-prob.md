@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pebbling Solvable](pebbling-solvable.md)
+- [Solvable pebbling configurations](pebbling-solvable.md)
 
 ## Sources
 

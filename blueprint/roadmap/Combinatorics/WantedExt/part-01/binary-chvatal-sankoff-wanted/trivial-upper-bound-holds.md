@@ -7,18 +7,19 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.trivialUpperBound_holds
 ---
 
-# Trivial Upper Bound holds
+# The binary Chvátal–Sankoff constant is at most one
 
-The trivial upper endpoint follows from the proved finite-level bounds.
+**The binary Chvátal–Sankoff constant is at most one.** The binary Chvátal–Sankoff constant
+$C_{31a}$ satisfies $C_{31a} \le 1$.
 
 ## Depends on
 
-- [Trivial Upper Bound](trivial-upper-bound.md)
+- [Trivial upper bound for the binary Chvátal–Sankoff constant](trivial-upper-bound.md)
 
 ## Proof depends on
 
-- [C31a](c31a.md)
-- [Binary Chvatal Sankoff Constant mem Icc](binary-chvatal-sankoff-constant-mem-icc.md)
+- [Catalogue notation for the binary Chvátal–Sankoff constant](c31a.md)
+- [Trivial bounds for the binary Chvátal–Sankoff constant](binary-chvatal-sankoff-constant-mem-icc.md)
 
 ## Sources
 

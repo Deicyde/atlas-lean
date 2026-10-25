@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.not_isMaxMinMonomial_zero
 ---
 
-# Not is Max Min Monomial zero
+# The zero sequence is not a monomial
 
-The zero sequence is not a monomial.
+**The zero sequence is not a monomial.** The zero coefficient sequence
+$\mathbb{N} \to \mathbb{N}$ is not a max-min monomial: a monomial has exactly one nonzero
+entry, and the zero sequence has none.
 
 ## Depends on
 
-- [Is Max Min Monomial](is-max-min-monomial.md)
+- [Monomials over the max-min semiring](is-max-min-monomial.md)
 
 ## Sources
 

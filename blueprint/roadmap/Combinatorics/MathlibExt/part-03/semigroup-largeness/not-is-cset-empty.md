@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.not_isCSet_empty
 ---
 
-# Not is CSet empty
+# The empty set is not a C-set in a semigroup
 
-The empty set is not a `C`-set.
+**The empty set is not a C-set in a semigroup.** In every semigroup $S$, the empty subset of
+$S$ is not a $C$-set.
 
 ## Depends on
 
-- [Is CSet](is-cset.md)
+- [C-sets in a semigroup](is-cset.md)
 
 ## Proof depends on
 
-- [Is Mul JSet](is-mul-jset.md)
+- [J-sets in a semigroup](is-mul-jset.md)
 
 ## Sources
 

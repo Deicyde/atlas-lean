@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.fib_succ_sq_eq_sum_choose_mul_choose
 ---
 
-# Fib succ sq eq sum choose mul choose
+# Squared Fibonacci numbers as a double binomial sum
 
-Corollary 3.3: for `n ≥ 0`,
-`F²_{n+1} = ∑_{i=0}^{⌊2n/3⌋} ∑_{j=0}^{i} C(i, j) C(2n-3i, j) 2^j`.
+**Squared Fibonacci numbers as a double binomial sum.** Let $F_k$ denote the Fibonacci
+numbers ($F_0 = 0$, $F_1 = 1$). For every natural number $n$,
+
+$$
+F_{n+1}^2 = \sum_{i=0}^{\lfloor 2n/3 \rfloor} \sum_{j=0}^{i} \binom{i}{j} \binom{2n-3i}{j} 2^j.
+$$
 
 ## Depends on
 

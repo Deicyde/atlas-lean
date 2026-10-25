@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.euclideanChainLength_add_mul
 ---
 
-# Euclidean Chain Length add mul
+# Euclidean chain function under adding multiples
 
-Proposition 6 (quoted from Archer et al.): for `x ≥ 1` and `y, k ≥ 0`,
-`F(x + k y, y) = F(x, y)` and `F(x, k x + y) = F(x, y) + k`.
+**Euclidean chain function under adding multiples.** For natural numbers $x \ge 1$, $y$ and
+$k$, the Euclidean chain function $F$ satisfies $F(x + k y, y) = F(x, y)$ and
+$F(x, k x + y) = F(x, y) + k$.
+
+The source quotes this result from Archer et al.
 
 ## Depends on
 
-- [Euclidean Chain Length](euclidean-chain-length.md)
+- [Euclidean chain function](euclidean-chain-length.md)
 
 ## Sources
 

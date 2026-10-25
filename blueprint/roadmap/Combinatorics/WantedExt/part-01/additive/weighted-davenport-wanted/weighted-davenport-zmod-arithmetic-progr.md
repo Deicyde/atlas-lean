@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport_zmod_arithmeticProgression
 ---
 
-# Weighted Davenport zmod arithmetic Progression
+# Xia's theorem on arithmetic progressions of weights
 
-Xia's theorem: if `A ⊆ Z_n \ {0}` is an arithmetic progression of length `⌈n/2⌉` with
-common difference `1`, then `D_A(Z_n) = 2`. The progression is the image of
-`i ↦ (a + i) % n` for `i < ⌈n/2⌉`, and `0` is assumed not to be among its terms.
+**Xia's theorem on arithmetic progressions of weights.** Let $n \ge 2$ and $a$ be natural
+numbers, and let $A = \{(a + i) \bmod n : 0 \le i < \lceil n/2 \rceil\}$ be the set of remainders
+modulo $n$ of the $\lceil n/2 \rceil$ consecutive integers
+$a, a + 1, \dots, a + \lceil n/2 \rceil - 1$. If $0 \notin A$, then the $A$-weighted Davenport
+constant of $\mathbb{Z}/n\mathbb{Z}$ is $D_A(\mathbb{Z}/n\mathbb{Z}) = 2$.
 
 ## Depends on
 

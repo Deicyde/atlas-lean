@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_card_colorClass_eq_one_of_rainbowFree_powDiff
 ---
 
-# Exists card color Class eq one of rainbow Free pow Diff
+# Rainbow-free 3-colorings modulo a prime have a singleton color class
 
-An exact rainbow-free 3-coloring of `ℤ/pℤ` for `x - y = z ^ k` has a color class of size
-one.
+**Rainbow-free 3-colorings modulo a prime have a singleton color class.** Let $p$ be a prime
+and $k$ a natural number, and let $c$ be a coloring of $\mathbb{Z}/p\mathbb{Z}$ with three colors
+that uses every color and is rainbow-free for $x - y = z^k$: no $x, y, z \in \mathbb{Z}/p\mathbb{Z}$
+with $x - y = z^k$ have $c(x), c(y), c(z)$ pairwise distinct. Then some color is taken by exactly
+one element of $\mathbb{Z}/p\mathbb{Z}$.
 
 ## Depends on
 

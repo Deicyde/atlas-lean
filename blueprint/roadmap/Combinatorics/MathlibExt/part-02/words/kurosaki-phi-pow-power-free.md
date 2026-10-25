@@ -7,15 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.kurosaki_phi_pow_power_free
 ---
 
-# Kurosaki Power Free
+# Kurosaki's words are $(7/4)^+$-power-free
 
-For alphabet {1,2,3}, with σ swapping 1 and 2, ρ swapping 2 and 3,
-and φ(a) = σ(a) a ρ(a), every iterate φ^n(2) with n ≥ 1 has every
-factor of exponent at most 7/4.
-
-Letters 1, 2, 3 are encoded as `Fin 3` values 0, 1, 2; the
-`(7/4)+`-power-free conclusion is rendered as `4 * length ≤ 7 * p`
-for every factor with period `p`.
+**Kurosaki's words are $(7/4)^+$-power-free.** On the alphabet $\{1, 2, 3\}$, let $\sigma$ be the
+permutation that swaps $1$ and $2$ and fixes $3$, let $\rho$ be the permutation that swaps $2$ and
+$3$ and fixes $1$, and for a finite word $w$ let $\varphi(w) = \sigma(w)\,w\,\rho(w)$, where
+$\sigma(w)$ and $\rho(w)$ apply the permutation to each letter of $w$. Call $p \ge 1$ a period of
+a finite word $u = u_0 u_1 \cdots$ when $u_i = u_{i+p}$ for every $i$ with $i + p < |u|$. For every
+$n \ge 1$, every factor $u$ of the word $\varphi^n(2)$ and every period $p$ of $u$ satisfy
+$4|u| \le 7p$; that is, every factor of $\varphi^n(2)$ has exponent at most $7/4$.
 
 ## Depends on
 

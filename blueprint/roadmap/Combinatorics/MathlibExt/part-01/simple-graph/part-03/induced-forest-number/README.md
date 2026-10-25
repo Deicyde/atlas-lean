@@ -4,7 +4,7 @@ navigation: module
 
 # Induced Forest Number
 
-- [Induced Forest Number](induced-forest-number.md)
-- [Card le induced Forest Number](card-le-induced-forest-number.md)
-- [Induced Forest Number le card](induced-forest-number-le-card.md)
-- [Exists is Acyclic card eq induced Forest Number](exists-is-acyclic-card-eq-induced-forest.md)
+- [Induced forest number](induced-forest-number.md)
+- [Induced forests are no larger than the induced forest number](card-le-induced-forest-number.md)
+- [The induced forest number is at most the number of vertices](induced-forest-number-le-card.md)
+- [The induced forest number is attained](exists-is-acyclic-card-eq-induced-forest.md)

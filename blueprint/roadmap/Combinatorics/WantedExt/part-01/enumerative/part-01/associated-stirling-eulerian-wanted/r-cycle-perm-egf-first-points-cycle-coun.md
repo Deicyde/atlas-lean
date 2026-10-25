@@ -5,21 +5,32 @@ statement: formalized
 lean: MetaMathlibExt.rCyclePermEGF_firstPoints_cycleCount_iterate_derivative
 ---
 
-# R Cycle Perm EGF first Points cycle Count iterate derivative
+# Derivative formula for $r$-cycle permutations with $k$ cycles and separated first points
 
-Theorem 28: for `r ≥ 2` and `k ≥ s`, over permutations with all cycle lengths equal to
-`r`, exactly `k` cycles, and the first `s` points in distinct cycles,
-`∂^s [A^{(r)}_k(x,u)]_s/∂u^s = x^s (A_{r-1}(x) u^{r-1}/(r-1)!)^s
-(ln A^{(r)}(x,u))^{k-s}/(k-s)!`, the logarithm read as any `L` with `L(0) = 0` and
-`exp L = A^{(r)}(x,u)`; `k ≥ s` makes `(k-s)!` defined.
+**Derivative formula for $r$-cycle permutations with $k$ cycles and separated first points.**
+Let $R$ be a commutative $\mathbb{Q}$-algebra, $x \in R$, and let $r, s, k$ be natural numbers
+with $r \ge 2$ and $s \le k$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$
+for its number of excedances (indices $i$ with $\sigma(i) > i$) and $c(\sigma)$ for its number of
+cycles, fixed points included, and let $A_j(x) = \sum_{\sigma \in S_j} x^{e(\sigma)}$. Call
+$\sigma$ an $r$-cycle permutation when every cycle of $\sigma$, fixed points included, has exactly
+$r$ elements, and say that its first $s$ points are separated when the points $i < \min(s, n)$
+lie in pairwise distinct cycles. Let
+$A^{(r)}(x,u) = \sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} u^n/n! \in R[[u]]$, the inner sum over
+the $r$-cycle permutations $\sigma$ of $\{0, \dots, n-1\}$, and let $F(u)$ be the same series
+with the inner sum restricted to those $\sigma$ with $c(\sigma) = k$ whose first $s$ points are
+separated. If $L \in R[[u]]$ has zero constant term and $\exp(L) = A^{(r)}(x,u)$, where $\exp$ of
+a series with zero constant term is its substitution into the exponential series, then the
+$s$-th derivative of $F$ with respect to $u$ is
+
+$$F^{(s)}(u) = x^s \left(\frac{A_{r-1}(x)\, u^{r-1}}{(r-1)!}\right)^s \frac{L^{k-s}}{(k-s)!}.$$
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
+- [Permutations with all cycles of length $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

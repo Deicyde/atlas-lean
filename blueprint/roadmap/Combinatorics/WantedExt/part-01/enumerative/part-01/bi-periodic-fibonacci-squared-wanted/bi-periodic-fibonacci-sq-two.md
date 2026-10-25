@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.biPeriodicFibonacciSq_two
 ---
 
-# Bi Periodic Fibonacci Sq two
+# Second bi-periodic Fibonacci number squared
 
-`q²_2 = a²`.
+**Second bi-periodic Fibonacci number squared.** For elements $a$ and $b$ of a field $K$, the
+bi-periodic Fibonacci number squared $q^2_2$ equals $a^2$.
 
 ## Depends on
 
-- [Bi Periodic Fibonacci Sq](bi-periodic-fibonacci-sq.md)
+- [Bi-periodic Fibonacci numbers squared](bi-periodic-fibonacci-sq.md)
 
 ## Sources
 

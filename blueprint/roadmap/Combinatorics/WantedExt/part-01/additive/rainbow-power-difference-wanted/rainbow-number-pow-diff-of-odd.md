@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.rainbowNumber_powDiff_of_odd
 ---
 
-# Rainbow Number pow Diff of odd
+# Rainbow number of the power-difference equation modulo a prime, odd exponent
 
-Rainbow number for odd `k ≥ 3` and odd primes `p`: it is `3` if `p - 1 = 2 m` with every
-prime factor of `m` dividing `k`, and `4` otherwise.
+**Rainbow number of the power-difference equation modulo a prime, odd exponent.** Let $p$ be
+an odd prime and $k \ge 3$ an odd natural number. A coloring of $\mathbb{Z}/p\mathbb{Z}$ with $r$
+colors is exact if it uses every color, and a solution of $x - y = z^k$ in $\mathbb{Z}/p\mathbb{Z}$
+is rainbow if $x$, $y$ and $z$ receive pairwise distinct colors. Then the least $r \ge 3$ such
+that every exact coloring of $\mathbb{Z}/p\mathbb{Z}$ with $r$ colors has a rainbow solution of
+$x - y = z^k$ is $3$ if $p - 1 = 2m$ for a natural number $m$ all of whose prime factors divide
+$k$, and $4$ otherwise.
 
 ## Depends on
 

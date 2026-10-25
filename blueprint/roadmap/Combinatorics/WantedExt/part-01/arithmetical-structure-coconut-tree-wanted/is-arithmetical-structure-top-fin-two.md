@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isArithmeticalStructure_top_fin_two
 ---
 
-# Is Arithmetical Structure top fin two
+# The all-ones structure on a single edge
 
-On a single edge, `d = r = (1, 1)` is an arithmetical structure.
+**The all-ones structure on a single edge.** On the graph with two vertices joined by an edge,
+the labelings $d = (1, 1)$ and $r = (1, 1)$ form an arithmetical structure.
 
 ## Depends on
 
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
 
 ## Sources
 

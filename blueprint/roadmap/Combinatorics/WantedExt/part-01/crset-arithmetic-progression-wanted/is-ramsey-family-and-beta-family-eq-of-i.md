@@ -16,8 +16,8 @@ family.
 
 ## Depends on
 
-- [Is Ramsey Family](is-ramsey-family.md)
-- [Beta Family](beta-family.md)
+- [Families with the Ramsey property](is-ramsey-family.md)
+- [The set β(F) of ultrafilters inside a family](beta-family.md)
 
 ## Sources
 

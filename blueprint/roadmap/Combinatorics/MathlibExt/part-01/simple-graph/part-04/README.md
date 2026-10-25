@@ -3,7 +3,7 @@ article_id: af_35a6147d6a1a21263c8ca0de
 navigation: transparent
 ---
 
-# Riha to Vizing
+# Riha to Vizing's theorem
 
 - [Riha](riha/README.md)
 - [Rook Graph](rook-graph/README.md)
@@ -17,4 +17,4 @@ navigation: transparent
 - [Transfer Matrix Of GRH](transfer-matrix-of-grh/README.md)
 - [Vertex Connectivity](vertex-connectivity/README.md)
 - [Vertex Transitive](is-vertex-transitive.md)
-- [Vizing](vizing.md)
+- [Vizing's theorem](vizing.md)

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.downUpEvenGF
 ---
 
-# Down Up Even GF
+# Generating function of down/up compositions with an even number of parts
 
-`F(x, y, z) = ∑_{k ≥ 0} a_k(x, z) y^{2k}`, the generating function of down/up compositions
-with an even number of parts by weight (`x`), number of parts (`y`) and last part (`z`).
+**Generating function of down/up compositions with an even number of parts.** $F(x, y, z)$ is
+the formal power series in $\mathbb{Q}[[x, y, z]]$ whose coefficient of $x^n y^k z^j$ is the
+number of down/up compositions of $n$ with $k$ parts and last part $j$ when $k$ is even, and $0$
+when $k$ is odd. The empty composition, with last part $0$, contributes the constant term $1$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Down Up Composition Count](down-up-composition-count.md)
+- [Down/up compositions](down-up-composition-count.md)
 
 ## Sources
 

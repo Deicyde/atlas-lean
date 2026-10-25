@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.yangChen_card_generalizedHFoldSumset_eq_iff_isAP
 ---
 
-# Yang Chen card generalized HFold Sumset eq iff is AP
+# Yang–Chen inverse theorem for at least five terms
 
-Yang–Chen inverse theorem for `k ≥ 5`: if `2 ≤ h ≤ ∑ rⱼ - 2`, then
-`|h^{(r̄)}A| = L(r̄, h)` if and only if `A` is a `k`-term arithmetic progression
-(`A` listed increasingly, as in Theorem 2).
+**Yang–Chen inverse theorem for at least five terms.** Let $k \ge 5$ and $h \ge 2$ be integers,
+let $\bar r = (r_0, \dots, r_{k-1})$ be positive integers with $h \le r_0 + \dots + r_{k-1} - 2$,
+and let $L(\bar r, h)$ be the Yang–Chen bound. For all integers $a_0 < a_1 < \dots < a_{k-1}$,
+with $A = \{a_0, \dots, a_{k-1}\}$, the generalized $h$-fold sumset $h^{(\bar r)}A$ has exactly
+$L(\bar r, h)$ elements if and only if $A$ is an arithmetic progression of length $k$.
 
 ## Depends on
 
-- [Generalized HFold Sumset](generalized-hfold-sumset.md)
-- [Yang Chen Bound](yang-chen-bound.md)
+- [Generalized $h$-fold sumset](generalized-hfold-sumset.md)
+- [The Yang–Chen bound](yang-chen-bound.md)
 - [Sets that are arithmetic progressions](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources

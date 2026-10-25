@@ -6,10 +6,11 @@ statement: formalized
 lean: SimpleGraph.IsBalanced
 ---
 
-# Balanced
+# Balanced graph
 
-A graph is `D`-balanced if its maximum degree is at most `D` times its
-minimum degree.
+**Balanced graph.** Let $G$ be a finite simple graph and $D$ a real number. The graph $G$ is
+$D$-balanced if its maximum degree $\Delta(G)$ is at most $D$ times its minimum degree
+$\delta(G)$, that is, $\Delta(G) \le D \cdot \delta(G)$.
 
 ## Depends on
 

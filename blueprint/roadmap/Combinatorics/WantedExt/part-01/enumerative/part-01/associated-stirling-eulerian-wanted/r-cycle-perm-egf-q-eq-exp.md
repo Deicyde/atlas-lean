@@ -5,17 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.rCyclePermEGF_q_eq_exp
 ---
 
-# R Cycle Perm EGF q eq exp
+# Cycle-weighted exponential formula for $r$-cycle permutations
 
-Theorem 23: for `r ≥ 2`, the `q`-analogue (`q` marking cycles) of the exponential
-generating function of the numbers `A^{(r)}_{n,m,k}` (all cycle lengths equal to `r`,
-`m` excedances, `k` cycles) is `A^{(r)}(q,x,u) = exp(q x A_{r-1}(x) u^r/r!)`.
+**Cycle-weighted exponential formula for $r$-cycle permutations.** Let $R$ be a commutative
+$\mathbb{Q}$-algebra, $x, q \in R$, and let $r \ge 2$ be a natural number. For a permutation
+$\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$ for its number of excedances (indices $i$ with
+$\sigma(i) > i$) and $c(\sigma)$ for its number of cycles, fixed points included, and let
+$A_{r-1}(x) = \sum_{\sigma \in S_{r-1}} x^{e(\sigma)}$. Call $\sigma$ an $r$-cycle permutation
+when every cycle of $\sigma$, fixed points included, has exactly $r$ elements, and let
+$A^{(r)}(q,x,u) = \sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} q^{c(\sigma)} u^n/n! \in R[[u]]$,
+the inner sum over the $r$-cycle permutations $\sigma$ of $\{0, \dots, n-1\}$. Then
+
+$$A^{(r)}(q,x,u) = \exp\left(\frac{q\, x\, A_{r-1}(x)\, u^r}{r!}\right),$$
+
+where $\exp$ of a series with zero constant term is its substitution into the exponential series.
 
 ## Depends on
 
-- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Permutations with all cycles of length $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

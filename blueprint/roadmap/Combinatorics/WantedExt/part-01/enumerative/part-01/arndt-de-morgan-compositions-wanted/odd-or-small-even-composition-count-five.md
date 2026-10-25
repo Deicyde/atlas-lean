@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.oddOrSmallEvenCompositionCount_five
 ---
 
-# Odd Or Small Even Composition Count five
+# Compositions of five into odd or small even parts
 
-`c^0_o(5) = 5` and `c^2_o(5) = 14` (Table 3 of the paper lists these compositions).
+**Compositions of five into odd or small even parts.** Let $c^{2k}_o(n)$ be the number of
+compositions of $n$ in which every part is odd or at most $2k$. Then $c^0_o(5) = 5$ and
+$c^2_o(5) = 14$.
 
 ## Depends on
 
-- [Odd Or Small Even Composition Count](odd-or-small-even-composition-count.md)
+- [Compositions into odd or small even parts](odd-or-small-even-composition-count.md)
 
 ## Sources
 

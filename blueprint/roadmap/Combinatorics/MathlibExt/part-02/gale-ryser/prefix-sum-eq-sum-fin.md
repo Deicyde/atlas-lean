@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Combinatorics.GaleRyserWanted.prefixSum_eq_sum_fin
 ---
 
-# Prefix Sum eq sum fin
+# Prefix sums within the sequence length
 
-Rewrite `prefixSum` as a sum over `Fin k` when `k ≤ m`.
+**Prefix sums within the sequence length.** For a sequence $r = (r_0, \dots, r_{m-1})$ of
+natural numbers and a natural number $k \le m$, the prefix sum of $r$ of length $k$ equals
+$\sum_{i=0}^{k-1} r_i$.
 
 ## Depends on
 
-- [Prefix Sum](prefix-sum.md)
+- [Prefix sum](prefix-sum.md)
 
 ## Sources
 

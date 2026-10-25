@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.trivialLowerBound
 ---
 
-# Trivial Lower Bound
+# Statement of the trivial lower bound
 
-The trivial exact lower endpoint `0 ≤ C₃₁ₐ`.
+**Statement of the trivial lower bound.** The proposition that the binary Chvátal–Sankoff
+constant $C_{31a}$ satisfies $0 \le C_{31a}$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [C31a](c31a.md)
+- [Catalogue notation for the binary Chvátal–Sankoff constant](c31a.md)
 
 ## Sources
 

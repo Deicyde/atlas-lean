@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.not_isSumFreeMod_of_dvd_mem
 ---
 
-# Not is Sum Free Mod of dvd mem
+# Sets containing a multiple of the modulus are not sum-free
 
-A set containing a multiple of `m` is not `l`-sum-free modulo `m` for `l ≥ 1`, since
-`a + ⋯ + a ≡ a (mod m)` when `m ∣ a`.
+**Sets containing a multiple of the modulus are not sum-free.** Let $m$ and $l$ be natural
+numbers and let $A$ be a set of integers. If $A$ contains an integer $a$ divisible by $m$, then
+$A$ is not $l$-sum-free modulo $m$: the sum of $l$ copies of $a$ is congruent to $a$ modulo $m$.
 
 ## Depends on
 
-- [Is Sum Free Mod](is-sum-free-mod.md)
+- [Sum-free sets modulo $m$](is-sum-free-mod.md)
 
 ## Sources
 

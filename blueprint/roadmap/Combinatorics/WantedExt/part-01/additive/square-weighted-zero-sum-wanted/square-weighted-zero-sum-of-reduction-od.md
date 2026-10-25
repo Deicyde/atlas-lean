@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.squareWeightedZeroSum_of_reduction_oddPower
 ---
 
-# Square Weighted Zero Sum of reduction odd Power
+# Square-weighted zero sums lift from $p$ to odd powers $p^r$
 
-Lemma 9: for `2 ≤ p` and odd `r`, an `S(p)`-weighted zero sum after
-reduction implies an `S(p^r)`-weighted zero sum, as printed (`S(p)` weights,
-`p` an integer at least two); the otherwise unspecified length `k` is bound.
-This is at least as strong as a `U(p)²` reading because `U(p)² ⊆ S(p)`, and
-the two agree for prime `p`.
+**Square-weighted zero sums lift from $p$ to odd powers $p^r$.** Let $p \ge 2$ be a natural
+number and $r$ an odd natural number. Write $S(m)$ for the set of nonzero squares in
+$\mathbb{Z}_m$. Let $x_1, \dots, x_k$ be a sequence in $\mathbb{Z}_{p^r}$ whose reduction
+$\bar x_1, \dots, \bar x_k$ modulo $p$ has an $S(p)$-weighted zero sum, that is, there are
+$b_1, \dots, b_k \in S(p)$ with $\sum_i b_i \bar x_i = 0$. Then there are
+$a_1, \dots, a_k \in S(p^r)$ with $\sum_i a_i x_i = 0$.
+
+This is at least as strong as the reading with weights in $U(p)^2$, the squares of units of
+$\mathbb{Z}_p$, because $U(p)^2 \subseteq S(p)$; the two agree for prime $p$.
 
 ## Depends on
 
-- [Has Weighted Zero Sum](has-weighted-zero-sum.md)
-- [Square Set](square-set.md)
+- [Weighted zero-sum sequences](has-weighted-zero-sum.md)
+- [Nonzero squares modulo $n$](square-set.md)
 
 ## Sources
 

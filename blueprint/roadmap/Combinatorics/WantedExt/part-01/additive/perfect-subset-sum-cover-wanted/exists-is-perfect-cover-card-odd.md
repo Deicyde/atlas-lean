@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_isPerfectCover_card_odd
 ---
 
-# Exists is Perfect Cover card odd
+# Perfect covers with a prescribed number of odd last coordinates
 
-For `G = H ⊕ ℤ_{2^n}` with `|H| = 2^m` and `n ≥ 1`, and any `k` with `1 ≤ k ≤ m + 1`, some
-perfect cover of `G` has exactly `k` elements whose `ℤ_{2^n}`-coordinate `y` is odd.
+**Perfect covers with a prescribed number of odd last coordinates.** Let $H$ be a finite
+abelian group of order $2^m$, let $n \ge 1$, and let $G = H \oplus \mathbb{Z}_{2^n}$. For every
+$k$ with $1 \le k \le m + 1$, some perfect cover $S$ of $G$ has exactly $k$ elements $(h, y)$
+whose coordinate $y \in \mathbb{Z}_{2^n}$ is odd.
 
 ## Depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
+- [Perfect cover](is-perfect-cover.md)
 
 ## Sources
 

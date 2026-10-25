@@ -7,14 +7,15 @@ proof: formalized
 lean: TuranSystem.completeGraph_uniform
 ---
 
-# Complete Graph uniform
+# The complete $r$-graph is $r$-uniform
 
-The complete `r`-graph is `r`-uniform.
+**The complete $r$-graph is $r$-uniform.** For all natural numbers $n$ and $r$, every member
+of the complete $r$-graph on $\{0, 1, \dots, n-1\}$ has exactly $r$ elements.
 
 ## Depends on
 
-- [Is Uniform](../uniform-hypergraph/is-uniform.md)
-- [Complete Graph](complete-graph.md)
+- [Uniform hypergraphs](../uniform-hypergraph/is-uniform.md)
+- [The complete $r$-graph](complete-graph.md)
 
 ## Sources
 

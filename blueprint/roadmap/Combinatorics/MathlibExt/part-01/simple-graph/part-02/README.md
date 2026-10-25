@@ -3,7 +3,7 @@ article_id: af_bd5c8c5b85a1b6bf901df2d3
 navigation: transparent
 ---
 
-# Degeneracy Coloring to Hamiltonian Cycle
+# Degeneracy Coloring to A cyclic listing of the vertices gives a Hamiltonian cycle
 
 - [Degeneracy Coloring](degeneracy-coloring/README.md)
 - [Deza](deza/README.md)
@@ -13,15 +13,15 @@ navigation: transparent
 - [Edge Coloring](edge-coloring/README.md)
 - [Edge Graceful](edge-graceful/README.md)
 - [Edge Indexed Multigraph](edge-indexed-multigraph/README.md)
-- [Edge Transposition Graph](edge-transposition-graph.md)
-- [Erdos Gallai](erdos-gallai.md)
-- [Erdos Girth Chromatic](erdos-high-girth-chromatic.md)
+- [Edge-transposition graph](edge-transposition-graph.md)
+- [Erdős–Gallai theorem](erdos-gallai.md)
+- [Erdős's theorem on graphs of high girth and high chromatic number](erdos-high-girth-chromatic.md)
 - [Euler Circuit](euler-circuit/README.md)
 - [Expander](expander/README.md)
-- [Fleischner](fleischner.md)
-- [Fleischner Strong](has-strong-square-cycle.md)
-- [Frucht](frucht.md)
+- [Fleischner's theorem](fleischner.md)
+- [Strengthened Fleischner theorem](has-strong-square-cycle.md)
+- [Frucht's theorem](frucht.md)
 - [Generalized Extremal](generalized-extremal/README.md)
-- [Generalized Johnson](johnson-graph.md)
+- [Generalized Johnson graph](johnson-graph.md)
 - [Hajnal Szemeredi](hajnal-szemeredi/README.md)
-- [Hamiltonian Cycle](of-cyclic-list.md)
+- [A cyclic listing of the vertices gives a Hamiltonian cycle](of-cyclic-list.md)

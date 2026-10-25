@@ -6,17 +6,18 @@ proof: formalized
 lean: SimpleGraph.IsVertexConnected.connected
 ---
 
-# Connected
+# A $k$-vertex-connected graph with $k \ge 1$ is connected
 
-A positively vertex-connected graph is connected.
+**A $k$-vertex-connected graph with $k \ge 1$ is connected.** Let $k \ge 1$ be a natural
+number. Every $k$-vertex-connected simple graph on a finite vertex set is connected.
 
 ## Depends on
 
-- [Is Vertex Connected](is-vertex-connected.md)
+- [$k$-vertex-connected graph](is-vertex-connected.md)
 
 ## Proof depends on
 
-- [Connected induce compl](connected-induce-compl.md)
+- [Deleting fewer than $k$ vertices from a $k$-vertex-connected graph](connected-induce-compl.md)
 
 ## Sources
 

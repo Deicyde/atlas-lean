@@ -7,17 +7,18 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.PerfectGraphWanted.lovasz_weak_perfect_graph
 ---
 
-# Lovasz weak perfect graph
+# Lovász's weak perfect graph theorem
 
-Weak perfect graph theorem: `G` perfect iff `Gᶜ` perfect.
+**Lovász's weak perfect graph theorem.** A finite simple graph $G$ is perfect if and only if
+its complement $\overline{G}$ is perfect.
 
 ## Depends on
 
-- [Is Perfect](is-perfect.md)
+- [Perfect graph](is-perfect.md)
 
 ## Proof depends on
 
-- [Lovasz weak perfect graph general](lovasz-weak-perfect-graph-general.md)
+- [Weak perfect graph theorem](lovasz-weak-perfect-graph-general.md)
 
 ## Sources
 

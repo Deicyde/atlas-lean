@@ -5,13 +5,13 @@ navigation: module
 
 # Linear Extension
 
-- [Linear Extensions](linear-extensions.md)
-- [Mem linear Extensions](mem-linear-extensions.md)
-- [Lin Ext Order Iso](lin-ext-order-iso.md)
-- [Some Linear Extension](some-linear-extension.md)
-- [Bijective some Linear Extension](bijective-some-linear-extension.md)
-- [Monotone some Linear Extension](monotone-some-linear-extension.md)
-- [Nonempty linear Extensions](nonempty-linear-extensions.md)
-- [Card linear Extensions pos](card-linear-extensions-pos.md)
-- [Maximal Elements](maximal-elements.md)
-- [Mem maximal Elements](mem-maximal-elements.md)
+- [Linear extensions of a finite poset](linear-extensions.md)
+- [Membership in the linear extensions](mem-linear-extensions.md)
+- [Ranking a Szpilrajn linear extension](lin-ext-order-iso.md)
+- [A chosen linear extension](some-linear-extension.md)
+- [The chosen linear extension is bijective](bijective-some-linear-extension.md)
+- [The chosen linear extension is monotone](monotone-some-linear-extension.md)
+- [Existence of linear extensions](nonempty-linear-extensions.md)
+- [The number of linear extensions is positive](card-linear-extensions-pos.md)
+- [Maximal elements of a finite set](maximal-elements.md)
+- [Membership in the maximal elements](mem-maximal-elements.md)

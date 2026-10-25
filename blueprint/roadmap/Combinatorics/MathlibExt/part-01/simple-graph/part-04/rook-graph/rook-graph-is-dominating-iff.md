@@ -6,15 +6,16 @@ proof: formalized
 lean: SimpleGraph.rookGraph_isDominating_iff
 ---
 
-# Rook Graph is Dominating iff
+# Dominating sets of the rook graph
 
-A finset of cells dominates the rook graph exactly when every
-cell shares its row or its column with a cell of the finset.
+**Dominating sets of the rook graph.** For natural numbers $n$ and $m$, a finite set $S$ of
+cells of the $n \times m$ board dominates the rook graph on that board if and only if for every
+cell $(i, j)$, some cell of $S$ lies in row $i$ or some cell of $S$ lies in column $j$.
 
 ## Depends on
 
-- [Is Dominating](../../part-02/domination/is-dominating.md)
-- [Rook Graph](rook-graph.md)
+- [Dominating set](../../part-02/domination/is-dominating.md)
+- [Rook graph](rook-graph.md)
 
 ## Sources
 

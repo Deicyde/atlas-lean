@@ -6,13 +6,14 @@ proof: formalized
 lean: SimpleGraph.isDegenerate_bot
 ---
 
-# Is Degenerate bot
+# The edgeless graph is degenerate
 
-The edgeless graph is `k`-degenerate for every `k`.
+**The edgeless graph is degenerate.** For every natural number $k$, the edgeless
+graph on a finite vertex set is $k$-degenerate.
 
 ## Depends on
 
-- [Is Degenerate](../../part-01/degeneracy/is-degenerate.md)
+- [Degenerate graph](../../part-01/degeneracy/is-degenerate.md)
 
 ## Sources
 

@@ -7,14 +7,16 @@ proof: formalized
 lean: SimpleGraph.Colorable.cocolorable
 ---
 
-# Cocolorable
+# Colorable graphs are cocolorable
 
-Every proper coloring is a cocoloring: color classes inducing `⊥` also satisfy the
-`⊥ ∨ ⊤` disjunction.
+**Colorable graphs are cocolorable.** For every natural number $n$, if a graph $G$ has a
+proper coloring with $n$ colors, then $G$ is cocolorable with $n$ colors.
+
+Each color class of a proper coloring induces an independent set.
 
 ## Depends on
 
-- [Cocolorable](cocolorable.md)
+- [Cocolorable graphs](cocolorable.md)
 
 ## Sources
 

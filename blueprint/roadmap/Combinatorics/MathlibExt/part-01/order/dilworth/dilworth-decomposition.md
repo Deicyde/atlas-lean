@@ -7,20 +7,21 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.DilworthWanted.dilworth_decomposition
 ---
 
-# Dilworth decomposition
+# Dilworth's theorem
 
-Dilworth's theorem: in a finite poset the maximum size of an antichain equals the minimum number of
-chains in a partition/cover.
+**Dilworth's theorem.** Let $\alpha$ be a finite partially ordered set. The maximum antichain
+size of $\alpha$ equals its minimum chain cover size: the largest number of elements of an
+antichain in $\alpha$ equals the smallest number of chains whose union is $\alpha$.
 
 ## Depends on
 
-- [Max Antichain Size](max-antichain-size.md)
-- [Min Chain Cover Size](min-chain-cover-size.md)
+- [Maximum antichain size](max-antichain-size.md)
+- [Minimum chain cover size](min-chain-cover-size.md)
 
 ## Proof depends on
 
-- [Is Chain Cover Fin](is-chain-cover-fin.md)
-- [Min Chain Cover Size le card](min-chain-cover-size-le-card.md)
+- [Chain cover](is-chain-cover-fin.md)
+- [Chain covers bound the minimum chain cover size](min-chain-cover-size-le-card.md)
 
 ## Sources
 

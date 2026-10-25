@@ -6,17 +6,18 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.uniformBinaryStringPairs
 ---
 
-# Uniform Binary String Pairs
+# The finite set of pairs of binary strings
 
-All ordered pairs of length-`n` binary strings.
+**The finite set of pairs of binary strings.** For a natural number $n$, this is the finite
+set of all ordered pairs $(x, y)$ of binary strings $x$ and $y$ of length $n$.
 
 ## Depends on
 
-- [Binary String Pair](binary-string-pair.md)
+- [Pairs of binary strings](binary-string-pair.md)
 
 ## Proof depends on
 
-- [Binary String](binary-string.md)
+- [Binary strings](binary-string.md)
 
 ## Sources
 

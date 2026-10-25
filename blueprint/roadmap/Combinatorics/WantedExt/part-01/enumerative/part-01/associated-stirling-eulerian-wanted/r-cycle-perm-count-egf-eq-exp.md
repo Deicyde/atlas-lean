@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.rCyclePermCountEGF_eq_exp
 ---
 
-# R Cycle Perm Count EGF eq exp
+# Exponential generating function for permutations with all cycles of length $r$
 
-Corollary 26: for `r ≥ 2`, `∑_{n ≥ 0} |S_n^r| u^n/n! = exp(u^r/r)`, with `S_n^r`
-the permutations of `n` objects with all cycle lengths equal to `r`.
+**Exponential generating function for permutations with all cycles of length $r$.** Let
+$r \ge 2$ and, for each $n$, let $S_n^r$ be the set of permutations of $\{0, \dots, n-1\}$ all
+of whose cycles (fixed points counted as cycles of length one) have length exactly $r$. Then, as
+formal power series over $\mathbb{Q}$,
+
+$$\sum_{n \ge 0} |S_n^r| \frac{u^n}{n!} = \exp\left(\frac{u^r}{r}\right).$$
 
 ## Depends on
 
-- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
+- [Permutations with all cycles of length $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
 
 ## Sources
 

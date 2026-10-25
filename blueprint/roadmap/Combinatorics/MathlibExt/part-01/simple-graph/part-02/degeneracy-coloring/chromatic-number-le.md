@@ -6,17 +6,19 @@ proof: formalized
 lean: SimpleGraph.IsDegenerate.chromaticNumber_le
 ---
 
-# Chromatic Number le
+# Chromatic number of a degenerate graph
 
-The chromatic number of a `k`-degenerate finite graph is at most `k + 1`.
+**Chromatic number of a degenerate graph.** Let $k$ be a natural number. If $G$ is a
+$k$-degenerate simple graph on a finite vertex set, then the chromatic number of $G$ is at
+most $k + 1$.
 
 ## Depends on
 
-- [Is Degenerate](../../part-01/degeneracy/is-degenerate.md)
+- [Degenerate graph](../../part-01/degeneracy/is-degenerate.md)
 
 ## Proof depends on
 
-- [Colorable](colorable.md)
+- [$k$-degenerate graphs are $(k + 1)$-colorable](colorable.md)
 
 ## Sources
 

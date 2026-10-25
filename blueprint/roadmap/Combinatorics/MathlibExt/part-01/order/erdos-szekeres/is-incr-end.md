@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.IsIncrEnd
 ---
 
-# Is Incr End
+# Increasing subsequence ending at a position
 
-There is an increasing subsequence of length `k` ending exactly at `p`.
+**Increasing subsequence ending at a position.** For $f : \{0, \dots, N-1\} \to \mathbb{R}$,
+a position $p$ and $k \in \mathbb{N}$, this is the statement that $k \ge 1$ and $f$ has an
+increasing subsequence $\varphi$ of length $k$ (indices and values strictly increasing) ending at
+$p$, that is, with $\varphi(k-1) = p$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Incr Subseq](is-incr-subseq.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Increasing subsequence](is-incr-subseq.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

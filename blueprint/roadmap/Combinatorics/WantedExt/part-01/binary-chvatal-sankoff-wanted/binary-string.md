@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.BinaryString
 ---
 
-# Binary String
+# Binary strings
 
-A binary string with exactly `n` ordered coordinates.
+**Binary strings.** For a natural number $n$, a binary string of length $n$ is a function
+from $\{0, 1, \dots, n - 1\}$ to $\{\mathrm{false}, \mathrm{true}\}$, that is, a sequence of $n$
+bits listed in order.
 
 ## Depends on
 

@@ -6,13 +6,15 @@ statement: formalized
 lean: SimpleGraph.singletonVertex
 ---
 
-# Singleton Vertex
+# Singleton simplex vertex
 
-The singleton clique as a simplex vertex.
+**Singleton simplex vertex.** Let $G$ be a simple graph. For a vertex $v$ of $G$, the
+singleton simplex vertex of $v$ is the one-element set containing $v$, which is a clique of
+$G$.
 
 ## Depends on
 
-- [Simplex Vertex](simplex-vertex.md)
+- [Simplex vertices](simplex-vertex.md)
 
 ## Sources
 

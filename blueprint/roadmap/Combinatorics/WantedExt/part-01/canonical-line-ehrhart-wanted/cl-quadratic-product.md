@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.clQuadraticProduct
 ---
 
-# Cl Quadratic Product
+# Product of quadratic canonical-line factors
 
-The monic product of the quadratic canonical-line factors with parameters `cs`.  Real
-parameters are mapped to complex constants, and the empty list gives the unit polynomial.
+**Product of quadratic canonical-line factors.** For a finite list $c_1, \dots, c_m$ of real
+numbers, this is the monic complex polynomial $\prod_{k=1}^{m} (X^2 + X + c_k)$; the empty list
+gives the constant polynomial $1$.
 
 ## Depends on
 

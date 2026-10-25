@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.biPeriodicFibonacciSq_one
 ---
 
-# Bi Periodic Fibonacci Sq one
+# First bi-periodic Fibonacci number squared
 
-`q²_1 = 1`.
+**First bi-periodic Fibonacci number squared.** For elements $a$ and $b$ of a field $K$, the
+bi-periodic Fibonacci number squared $q^2_1$ equals $1$.
 
 ## Depends on
 
-- [Bi Periodic Fibonacci Sq](bi-periodic-fibonacci-sq.md)
+- [Bi-periodic Fibonacci numbers squared](bi-periodic-fibonacci-sq.md)
 
 ## Sources
 

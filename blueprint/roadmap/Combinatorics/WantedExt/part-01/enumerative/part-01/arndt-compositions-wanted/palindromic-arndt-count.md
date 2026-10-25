@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.palindromicArndtCount
 ---
 
-# Palindromic Arndt Count
+# Palindromic Arndt compositions
 
-The number of nonempty palindromic Arndt compositions of `n` with `k` parts and middle
-summand `m`: `k`-tuples `c` of positive integers with `∑ c = n`, `0 < k`, the Arndt condition
-`c (2i + 1) < c (2i)`, `c i = c (k - 1 - i)`, and `c ⌊k/2⌋ = m` (0-based).
+**Palindromic Arndt compositions.** An Arndt composition of $n$ with $k$ parts is a sequence
+$(\sigma_1, \dots, \sigma_k)$ of positive integers with sum $n$ such that
+$\sigma_{2i-1} > \sigma_{2i}$ whenever $2i \le k$; it is palindromic when
+$\sigma_i = \sigma_{k+1-i}$ for all $i$. For $n, k, m \ge 0$, $p(n, k, m)$ is the number of
+palindromic Arndt compositions of $n$ with $k \ge 1$ parts whose middle summand
+$\sigma_{\lfloor k/2 \rfloor + 1}$ equals $m$; in particular $p(n, 0, m) = 0$.
 
 ## Depends on
 

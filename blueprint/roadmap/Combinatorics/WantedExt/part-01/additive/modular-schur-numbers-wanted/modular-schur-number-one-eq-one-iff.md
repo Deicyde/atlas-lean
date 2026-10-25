@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.modularSchurNumber_one_eq_one_iff
 ---
 
-# Modular Schur Number one eq one iff
+# When the one-class modular Schur number equals one
 
-For `l, m ≥ 2` with `l ≢ 1 (mod m)`: `S_m(1, l) = 1` iff `l = 2` or `l ≥ (m + 1)/2`.
+**When the one-class modular Schur number equals one.** Let $l$ and $m$ be natural numbers with
+$l \ge 2$, $m \ge 2$ and $l \not\equiv 1 \pmod m$. Then the generalized Schur number $S_m(1, l)$
+modulo $m$ equals $1$ if and only if $l = 2$ or $2l \ge m + 1$.
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

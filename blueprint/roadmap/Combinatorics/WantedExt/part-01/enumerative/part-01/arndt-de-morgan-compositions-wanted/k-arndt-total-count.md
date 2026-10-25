@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.kArndtTotalCount
 ---
 
-# K Arndt Total Count
+# Generalized Arndt compositions
 
-The number `a(n, k)` of generalized Arndt compositions of `n`: compositions with
-`c_{2i-1} > c_{2i} + k` for every pair of consecutive positions `2i - 1, 2i`, summed over the
-number of parts. The empty composition gives `a(0, k) = 1`.
+**Generalized Arndt compositions.** For an integer $k$ and a natural number $n$, $a(n, k)$ is
+the number of compositions $(c_1, \dots, c_m)$ of $n$, with any number $m \ge 0$ of parts, such
+that $c_{2i-1} > c_{2i} + k$ for every $i$ with $2i \le m$; a final unpaired part is
+unconstrained. The empty composition gives $a(0, k) = 1$, and $k = 0$ gives Arndt compositions.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [K Arndt Composition Count](../arndt-compositions-generating-functions-wanted/k-arndt-composition-count.md)
+- [Number of $k$-Arndt compositions](../arndt-compositions-generating-functions-wanted/k-arndt-composition-count.md)
 
 ## Sources
 

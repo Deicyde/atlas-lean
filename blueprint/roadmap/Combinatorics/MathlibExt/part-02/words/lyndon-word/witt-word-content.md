@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.wittWordContent
 ---
 
-# Witt Word Content
+# Content of a word
 
-The content of a word: the multiplicity of each letter.
+**Content of a word.** Let $r$ be a natural number. The content of a word $w$ over the alphabet
+$\{0, \dots, r-1\}$ is the function that assigns to each letter $i$ the number of occurrences of $i$
+in $w$.
 
 ## Depends on
 

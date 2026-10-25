@@ -6,12 +6,12 @@ statement: formalized
 lean: SimpleGraph.CDSColorable
 ---
 
-# CDSColorable
+# CDS-colorable graphs
 
-A finite graph is CDS-colorable if it has a proper coloring
-by natural numbers such that for all `k > 0`, the number of
-vertices with color `< k` equals the maximum size of
-the union of `k` independent sets.
+**CDS-colorable graphs.** A graph $G$ on a finite vertex set is CDS-colorable if it has a
+proper coloring $C$ with colors in $\mathbb{N}$ such that for every $k \in \mathbb{N}$, the number
+of vertices whose color under $C$ is less than $k$ equals the maximum size of a union of $k$
+independent sets of $G$.
 
 ## Depends on
 
@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Indep Num K](indep-num-k.md)
+- [Largest union of independent sets](indep-num-k.md)
 
 ## Sources
 

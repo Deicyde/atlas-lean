@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.antiRecurrence_antiPell_small
 ---
 
-# Anti Recurrence anti Pell small
+# First anti-Pell numbers
 
-The anti-Pell numbers (`a = (1, 2)`, OEIS A304502) start `5, 11, 20, 26`; their
-complement starts `1, 2, 3, 4, 6, 7, 8, 9` (so `B¹ = 1, 3, 6, 8, …`, `B² = 2, 4, 7, 9, …`).
+**First anti-Pell numbers.** The anti-recurrence numbers $A_1, A_2, A_3, A_4$ of the linear
+form $(1, 2)$, the anti-Pell numbers (OEIS A304502), are $5, 11, 20, 26$, and its first eight
+non-anti-recurrence numbers $B_1, \dots, B_8$ are $1, 2, 3, 4, 6, 7, 8, 9$ (so
+$B^1_n = B_{2n-1}$ starts $1, 3, 6, 8$ and $B^2_n = B_{2n}$ starts $2, 4, 7, 9$).
 
 ## Depends on
 
-- [Anti Recurrence](anti-recurrence.md)
-- [Anti Recurrence Complement](anti-recurrence-complement.md)
+- [Anti-recurrence numbers](anti-recurrence.md)
+- [Non-anti-recurrence numbers](anti-recurrence-complement.md)
 
 ## Sources
 

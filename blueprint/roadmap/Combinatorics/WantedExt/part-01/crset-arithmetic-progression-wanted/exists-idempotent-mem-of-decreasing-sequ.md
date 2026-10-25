@@ -5,20 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.exists_idempotent_mem_of_decreasing_sequence
 ---
 
-# Theorem 6, (d) ⇒ (a)
+# Decreasing shift-closed sequences give essential sets
 
-**Theorem 6, (d) ⇒ (a).** Let `F` be a family with the Ramsey property in a
-semigroup `S` with `β(F)` a subsemigroup. If a decreasing sequence `C n ⊆ A` of
-members of `F` has, for each `n` and `x ∈ C n`, some `m` with `C m ⊆ x⁻¹ C n`, then
-`A` is an essential `F`-set (a member of an idempotent of `β(F)`).
+**Decreasing shift-closed sequences give essential sets.** Let $S$ be a semigroup and let $F$
+be a family of subsets of $S$ with the Ramsey property, and write $\beta(F)$ for the set of
+ultrafilters on $S$ all of whose members lie in $F$. For $x \in S$ and $E \subseteq S$ write
+$x^{-1}E = \{y \in S : xy \in E\}$, and multiply ultrafilters on $S$ by the rule that
+$E \in p \cdot q$ if and only if $\{x \in S : x^{-1}E \in q\} \in p$. Suppose that
+$p \cdot q \in \beta(F)$ whenever $p, q \in \beta(F)$. Let $A \subseteq S$, and let
+$C_0 \supseteq C_1 \supseteq C_2 \supseteq \cdots$ be members of $F$ contained in $A$ such that
+for every $n$ and every $x \in C_n$ there is an $m$ with $C_m \subseteq x^{-1}C_n$. Then some
+$p \in \beta(F)$ satisfies $p \cdot p = p$ and $A \in p$; that is, $A$ is an essential $F$-set.
 
-Statements (b) (trees of functions) and (c) (downward directed families) of the
-paper are omitted. The sequence is indexed from `0` rather than `1`.
+This is the implication (d) ⇒ (a) of the paper's Theorem 6; statements (b) (trees of functions)
+and (c) (downward directed families) are omitted. The sequence is indexed from $0$ rather
+than $1$.
 
 ## Depends on
 
-- [Is Ramsey Family](is-ramsey-family.md)
-- [Beta Family](beta-family.md)
+- [Families with the Ramsey property](is-ramsey-family.md)
+- [The set β(F) of ultrafilters inside a family](beta-family.md)
 
 ## Sources
 

@@ -6,9 +6,9 @@ statement: formalized
 lean: SimpleGraph.IsBridgeless
 ---
 
-# Is Bridgeless
+# Bridgeless graph
 
-A simple graph is bridgeless when no edge is a bridge.
+**Bridgeless graph.** A simple graph is bridgeless when no edge is a bridge.
 
 ## Depends on
 

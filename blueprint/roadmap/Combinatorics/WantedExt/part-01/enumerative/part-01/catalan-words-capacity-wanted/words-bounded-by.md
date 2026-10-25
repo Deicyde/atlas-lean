@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.wordsBoundedBy
 ---
 
-# Words Bounded By
+# Words with all letters at most a bound
 
-The members of a set of words all of whose letters are at most `k`; applied to words ending in
-`k` this gives those whose largest letter is `k` (the sets `ℬ_{n,i}` and `𝒮_{n,i}`).
+**Words with all letters at most a bound.** Given a finite set $S$ of words of length $n$
+with letters in $\mathbb{N}$ and a natural number $k$, this is the set of words in $S$ all of
+whose letters are at most $k$. Applied to the words of $S$ whose last letter is $k$, it gives
+those whose largest letter is $k$.
 
 ## Depends on
 

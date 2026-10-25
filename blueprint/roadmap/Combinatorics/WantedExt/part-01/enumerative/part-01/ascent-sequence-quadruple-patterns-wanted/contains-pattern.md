@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.ContainsPattern
 ---
 
-# Contains Pattern
+# Pattern containment
 
-Pattern containment: the word `w` contains the pattern `p` if some subsequence
-of `w` of the same length as `p` is order-isomorphic to `p`.
+**Pattern containment.** A word $w$ over $\mathbb{N}$ contains a pattern $p$ (another word over
+$\mathbb{N}$) if $w$ has a subsequence $s$, not necessarily contiguous, of the same length as $p$
+that is order-isomorphic to $p$: for all positions $i$ and $j$, $s_i < s_j$ if and only if
+$p_i < p_j$.
 
 ## Depends on
 

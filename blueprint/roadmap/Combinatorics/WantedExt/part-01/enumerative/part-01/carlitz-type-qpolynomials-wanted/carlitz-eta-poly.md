@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.carlitzEtaPoly
 ---
 
-# Carlitz Eta Poly
+# Carlitz $q$-polynomials $\eta_n$
 
-Carlitz's `q`-polynomials `η_n(x)`: the Carlitz-type sequence with associated sequence
-`k/[k]`, taken to be `1` at `k = 0`; `η_n = η_n(0)`.
+**Carlitz $q$-polynomials $\eta_n$.** For real $q$, write $[y] = (q^y - 1)/(q - 1)$ and let
+$a_0 = 1$ and $a_k = k/[k]$ for $k \ge 1$. For natural $n$ and real $x$, Carlitz's $q$-polynomial
+is $\eta_n(x) = (q - 1)^{-n} \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} a_k q^{kx}$; that is,
+$(\eta_n)$ is the Carlitz-type sequence with associated sequence $(a_k)$. Its values at $0$ are
+written $\eta_n = \eta_n(0)$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q Bracket](q-bracket.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

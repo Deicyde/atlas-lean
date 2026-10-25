@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.CoconutAncestor
 ---
 
-# Coconut Ancestor
+# Ancestors of labelings of coconut trees
 
-`CoconutAncestor p s x q t y`: the labels `y` on `CT(q, t)` are obtained from the labels `x` on
-`CT(p, s)` by a (possibly empty) sequence of smoothing operations, each at a vertex with
-`d = 1` (at a non-central path vertex, or at a leaf); `y` is an ancestor of `x` and `x` a
-descendant of `y`.
+**Ancestors of labelings of coconut trees.** Let $x$ be a pair of vertex labelings $(d, r)$
+of the coconut tree $CT(p, s)$ and $y$ a pair of vertex labelings of $CT(q, t)$. Then $y$ is an
+ancestor of $x$, and $x$ a descendant of $y$, when $y$ is obtained from $x$ by a finite,
+possibly empty, sequence of smoothings, each performed at a vertex where the current
+$d$-label equals $1$: either at a path vertex other than the central vertex, or at a leaf.
 
 ## Depends on
 

@@ -7,19 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.intBinom_of_lt
 ---
 
-# Int Binom of lt
+# Integer binomial coefficients vanish when the lower index exceeds the upper
 
-Integer binomial coefficients vanish when the upper argument is below the lower one.
+**Integer binomial coefficients vanish when the lower index exceeds the upper.** For
+integers $n < k$, the integer binomial coefficient $\binom{n}{k}$ is $0$.
 
 ## Depends on
 
-- [Int Binom](int-binom.md)
+- [Integer binomial coefficient](int-binom.md)
 
 ## Proof depends on
 
-- [Ext Fact](ext-fact.md)
-- [Inv Fact](inv-fact.md)
-- [Inv Fact of neg](inv-fact-of-neg.md)
+- [Extended factorial](ext-fact.md)
+- [Inverse factorial on the integers](inv-fact.md)
+- [The inverse factorial vanishes at negative integers](inv-fact-of-neg.md)
 
 ## Sources
 

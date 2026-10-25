@@ -5,20 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_mul_two_pow_add_two_pow_eq_fib
 ---
 
-# Sum choose mul two pow add two pow eq fib
+# Fibonacci closed form of a binomial sum with powers of two
 
-Proposition 3, first sum: the closed form of the sum in Proposition 2(i),
-`∑_{k=1}^{⌊n/3⌋-1} (C(n-k-4, 2k) 2^{n-3k-4} + C(n-k-4, 2k-1) 2^{n-3k-3}) = F_{2n-7} - 2^{n-4}`
-for `n ≥ 4`, stated without subtraction as `sum + 2^{n-4} = F_{2n-7}` with the standard
-Fibonacci numbers `Nat.fib`. The sum is reconstructed from the extracted display of
-Proposition 2(i) (record `integers-2025-A80-prop-2`), whose tokens read, line by line, the upper
-limit `⌊n/3⌋ - 1`, the summation sign, the binomial tops `n - k - 4` each followed by the
-exponents `n - 3k - 4` and `n - 3k - 3`, then the bases `2 + 2`, the binomial bottoms `2k` and
-`2k - 1`, and the lower limit `k = 1`; every token is used once. The primary paper is not
-available to agents; exact computation confirms the identity for `4 ≤ n ≤ 500`. Truncated
-subtraction in the exponent `n - 3k - 4` only matters at `n = 3k + 3`, where the
-binomial factor is `0`. The second sum of Proposition 2 (over the paper's `f(n, a)`, which
-the record does not define) is not stated.
+**Fibonacci closed form of a binomial sum with powers of two.** Let $F_m$ denote the
+Fibonacci numbers, with $F_0 = 0$ and $F_1 = 1$. For every natural number $n \ge 4$,
+
+$$\sum_{k=1}^{\lfloor n/3 \rfloor - 1} \left( \binom{n-k-4}{2k} 2^{n-3k-4} +
+\binom{n-k-4}{2k-1} 2^{n-3k-3} \right) + 2^{n-4} = F_{2n-7}.$$
+
+The sum is empty for $n < 6$. When $3$ divides $n$, the last index $k = n/3 - 1$ gives the
+exponent $n - 3k - 4 = -1$, but there $\binom{n-k-4}{2k} = 0$, and the product
+$\binom{n-k-4}{2k} 2^{n-3k-4}$ is read as $0$; the other product in that summand is $1$.
+
+The source states this as the sum being $F_{2n-7} - 2^{n-4}$. The summand is reconstructed from
+an extracted display of the source's Proposition 2(i), as the full text was not available; exact
+computation confirms the identity for $4 \le n \le 500$.
 
 ## Depends on
 

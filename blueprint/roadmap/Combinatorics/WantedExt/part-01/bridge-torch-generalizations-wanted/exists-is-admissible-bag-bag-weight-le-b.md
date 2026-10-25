@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.exists_isAdmissibleBag_bagWeight_le_bridgeTime_three
 ---
 
-# Exists is Admissible Bag bag Weight le bridge Time three
+# Some admissible bag weighs at most the capacity-3 optimal time
 
-`T₃(n) ≥ B₃(n)`: some admissible bag has weight at most `T₃(n)`.
+**Some admissible bag weighs at most the capacity-3 optimal time.** For every natural number
+$n$, some admissible bag $F$ for $n$ people has weight $w(F)$ at most the capacity-3 optimal
+crossing time $T_3(n)$.
 
 ## Depends on
 
-- [Is Admissible Bag](is-admissible-bag.md)
-- [Bag Weight](bag-weight.md)
-- [Bridge Time](bridge-time.md)
+- [Admissible bags](is-admissible-bag.md)
+- [Weight of a bag](bag-weight.md)
+- [Optimal crossing time of the bridge and torch problem](bridge-time.md)
 
 ## Sources
 

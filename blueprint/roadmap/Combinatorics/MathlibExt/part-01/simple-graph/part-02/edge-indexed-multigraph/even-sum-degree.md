@@ -7,19 +7,20 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.even_sum_degree
 ---
 
-# Even sum degree
+# Handshake lemma for edge-indexed multigraphs
 
-The degree sum of a finite edge-indexed multigraph is even.
+**Handshake lemma for edge-indexed multigraphs.** In an edge-indexed multigraph with finitely
+many vertices and finitely many edges, the sum of the degrees of all vertices is even.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Degree](degree.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Degree in an edge-indexed multigraph](degree.md)
 
 ## Proof depends on
 
-- [Inc](inc.md)
-- [Inc iff](inc-iff.md)
+- [Incidence](inc.md)
+- [Incidence is membership in the endpoint pair](inc-iff.md)
 
 ## Sources
 

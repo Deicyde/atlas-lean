@@ -7,19 +7,20 @@ proof: formalized
 lean: MathlibExt.Combinatorics.PartialHadamard.partialHadamardCount_zero_width
 ---
 
-# Partial Hadamard Count zero width
+# Width-zero partial Hadamard count
 
-At width zero the empty row conditions are vacuous, leaving exactly
-the empty matrix.
+**Width-zero partial Hadamard count.** For every natural number $n$, the number $N_{n,0}$ of
+$n \times 0$ partial Hadamard matrices is $1$: the orthogonality conditions are empty sums, so the
+empty matrix is the only one.
 
 ## Depends on
 
-- [Partial Hadamard Count](partial-hadamard-count.md)
+- [Number of partial Hadamard matrices](partial-hadamard-count.md)
 
 ## Proof depends on
 
-- [Is Partial Hadamard](is-partial-hadamard.md)
-- [Sign Val](sign-val.md)
+- [Partial Hadamard matrices](is-partial-hadamard.md)
+- [Sign of a bit](sign-val.md)
 
 ## Sources
 

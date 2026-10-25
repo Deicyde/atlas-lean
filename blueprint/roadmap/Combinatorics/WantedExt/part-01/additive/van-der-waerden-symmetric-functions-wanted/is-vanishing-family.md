@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsVanishingFamily
 ---
 
-# Is Vanishing Family
+# Vanishing family
 
-A family is vanishing if it is `m`-vanishing for every positive `m`.
+**Vanishing family.** Let $n$ be a natural number. A family $F$ of functions on blocks over
+$\mathbb{Z}/n\mathbb{Z}$ with values in a type with a zero is vanishing if it is $m$-vanishing for
+every positive integer $m$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is MVanishing Family](is-mvanishing-family.md)
+- [$m$-vanishing family](is-mvanishing-family.md)
 
 ## Sources
 

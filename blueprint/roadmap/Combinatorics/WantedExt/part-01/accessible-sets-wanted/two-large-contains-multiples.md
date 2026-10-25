@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.two_large_contains_multiples
 ---
 
-# Two large contains multiples
+# 2-large sets contain multiples of every positive integer
 
-Every 2-large positive set contains a multiple of each positive integer.
+**2-large sets contain multiples of every positive integer.** Every $2$-large set $D$ of
+positive integers contains a multiple of each positive integer $m$.
 
 ## Depends on
 
-- [Is RLarge](is-rlarge.md)
+- [$r$-large sets](is-rlarge.md)
 
 ## Sources
 

@@ -7,13 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.wittWordContent_append
 ---
 
-# Witt Word Content append
+# Content is additive under concatenation
 
-Word content is additive under concatenation.
+**Content is additive under concatenation.** For a natural number $r$, words $u$ and $v$ over
+the alphabet $\{0, \dots, r-1\}$, and every letter $i$, the number of occurrences of $i$ in the
+concatenation $uv$ is the number of occurrences of $i$ in $u$ plus the number of occurrences
+of $i$ in $v$.
 
 ## Depends on
 
-- [Witt Word Content](witt-word-content.md)
+- [Content of a word](witt-word-content.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isAddThick_univ
 ---
 
-# Is Add Thick univ
+# The whole commutative semigroup is thick
 
-The whole semigroup is thick.
+**The whole commutative semigroup is thick.** If $S$ is a nonempty commutative semigroup,
+then $S$ itself is a thick subset of $S$.
 
 ## Depends on
 
-- [Is Add Thick](is-add-thick.md)
+- [Thick set in a commutative semigroup](is-add-thick.md)
 
 ## Sources
 

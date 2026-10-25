@@ -5,34 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.symmetricScalarProduct
 ---
 
-# Symmetric Scalar Product
+# Scalar product of symmetric polynomials
 
-Let n∈ℤ_{≥ 0}, write [n]={1,…,n}, so
-that [0]=∅, and let R be a commutative ring. A
-polynomial f in R[x₁,…,xₙ] is symmetric if, for every
-bijection π:[n]→[n], substituting x_{π(i)} for
-xᵢ for every i∈[n] leaves f unchanged. Let
+**Scalar product of symmetric polynomials.** Let $n \ge 0$, let $R$ be a commutative ring, and
+call a polynomial in $R[x_1, \dots, x_n]$ symmetric if it is unchanged by every permutation of the
+variables. Let $a_\delta = \prod_{1 \le i < j \le n} (x_i - x_j)$, so that $a_\delta = 1$ when
+$n \le 1$. For a sequence $\lambda = (\lambda_1, \dots, \lambda_n)$ of
+integers with $\lambda_1 \ge \lambda_2 \ge \dots \ge \lambda_n \ge 0$, write $c_\lambda(P)$ for the
+coefficient in a polynomial $P$ of the monomial
+$x^{\lambda+\delta} = \prod_{i=1}^{n} x_i^{\lambda_i + n - i}$; when $n = 0$ the only such sequence
+is the empty one and $x^{\lambda+\delta} = 1$. The scalar product of symmetric polynomials $f$ and
+$g$ in $R[x_1, \dots, x_n]$ is
 
-a_δ=∏_{1≤ i<j≤ n}(xᵢ-xⱼ),
+$$\langle f, g \rangle_n = \sum_{\lambda} c_\lambda(a_\delta f) \, c_\lambda(a_\delta g),$$
 
-so that a_δ=1 when n≤ 1. For a polynomial P and a
-sequence λ=[λ₁,…,λₙ] of integers with
-λᵢ≥ 0 for every i∈[n] and
-λᵢ≥λᵢ₊₁ for 1≤ i≤ n-1, write
-[x^{λ+δ}]P for the coefficient in P of the
-monomial
-
-x^{λ+δ}=∏ᵢ₌₁ⁿxᵢ^{λᵢ+n-i}.
-
-When n=0, the only such sequence is the empty one, and
-x^{λ+δ}=1. For symmetric polynomials f and g in
-R[x₁,…,xₙ], the scalar product of f and g is
-
-⟨ f,g⟩ₙ=∑_λ
-  \[x^{λ+δ}](a_δ f)
-  \[x^{λ+δ}](a_δ g),
-
-the sum taken over all sequences λ as above.
+the sum taken over all sequences $\lambda$ as above; only finitely many terms are nonzero.
 
 ## Depends on
 

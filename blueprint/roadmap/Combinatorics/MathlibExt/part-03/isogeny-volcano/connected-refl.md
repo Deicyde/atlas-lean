@@ -7,18 +7,19 @@ proof: formalized
 lean: Multigraph.connected_refl
 ---
 
-# Connected refl
+# Every vertex is connected to itself
 
-Every vertex connects to itself.
+**Every vertex is connected to itself.** In a multigraph $G$, every vertex $v$ is connected to
+$v$.
 
 ## Depends on
 
 - [Multigraph](multigraph.md)
-- [Connected](connected.md)
+- [Connectivity of vertices in a multigraph](connected.md)
 
 ## Proof depends on
 
-- [Adj](adj.md)
+- [Adjacency in a multigraph](adj.md)
 
 ## Sources
 

@@ -5,8 +5,8 @@ navigation: module
 
 # Edge Graceful
 
-- [Incident Sum](incident-sum.md)
-- [Induced Residue](induced-residue.md)
-- [Induced Residue val](induced-residue-val.md)
-- [Is Edge Graceful](is-edge-graceful.md)
-- [Is Edge Graceful iff](is-edge-graceful-iff.md)
+- [Incident-edge sum](incident-sum.md)
+- [Induced vertex residue](induced-residue.md)
+- [Value of the induced residue](induced-residue-val.md)
+- [Edge-graceful graph](is-edge-graceful.md)
+- [Edge-graceful graphs via a vertex bijection](is-edge-graceful-iff.md)

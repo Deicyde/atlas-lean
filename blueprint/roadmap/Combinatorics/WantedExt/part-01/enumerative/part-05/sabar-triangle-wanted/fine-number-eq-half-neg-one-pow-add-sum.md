@@ -12,7 +12,7 @@ Corollary 3: for `n ≥ 2`,
 
 ## Depends on
 
-- [Fine Number](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
+- [Fine numbers](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
 
 ## Sources
 

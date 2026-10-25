@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_one_leaf_ne_one
 ---
 
-# Ncard arithmetical Structure coconut Tree one leaf ne one
+# Arithmetical structures on a one-leaf coconut tree with a non-smoothable leaf
 
-Proposition 5: for `p ≥ 1`, the number of arithmetical structures on
-`CT(p, 1) = P_{p+1}` whose leaf cannot be smoothed (`d_{ℓ_1} ≠ 1`) is
-`C_p - C_{p-1}`.
+**Arithmetical structures on a one-leaf coconut tree with a non-smoothable leaf.** For every
+integer $p \ge 1$, the number of arithmetical structures $(d, r)$ on the coconut tree
+$\mathrm{CT}(p, 1)$, which is the path on $p + 1$ vertices, whose leaf $\ell_1$ has
+$d_{\ell_1} \ne 1$ (so that the leaf cannot be smoothed) is $C_p - C_{p-1}$, where $C_n$
+denotes the $n$-th Catalan number.
 
 ## Depends on
 
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
-- [Coconut Tree](coconut-tree.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

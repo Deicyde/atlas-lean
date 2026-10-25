@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.catalanWords_capacity_subleading_coeff
 ---
 
-# Catalan Words capacity subleading coeff
+# Subleading coefficient of the capacity distribution of Catalan words
 
-Mansour and Shattuck's Corollary 4, subleading coefficient: with
-`α = deg a(n; q)`, the coefficient `dₙ` of `q^{α-1}` is `2m`, `m + 1`, `m + 2` for
-`n = 3m, 3m + 1, 3m + 2 ≥ 7`, and `d₄ = 13`, `d₅ = 7`, `d₆ = 8`.
+**Subleading coefficient of the capacity distribution of Catalan words.** For every $n \ge 4$,
+let $\mathcal{A}_n$ be the set of Catalan words of length $n$, let $\alpha$ be the degree of its
+capacity distribution $\sum_{w \in \mathcal{A}_n} q^{\operatorname{cap}(w)}$, and let $d_n$ be the
+coefficient of $q^{\alpha - 1}$ in it. Then $d_4 = 13$, $d_5 = 7$, $d_6 = 8$, and for $n \ge 7$,
+$d_n = 2m$ if $n = 3m$, $d_n = m + 1$ if $n = 3m + 1$ and $d_n = m + 2$ if $n = 3m + 2$.
 
 ## Depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Catalan Words](catalan-words.md)
+- [Capacity distribution](capacity-dist.md)
+- [Catalan words](catalan-words.md)
 
 ## Sources
 

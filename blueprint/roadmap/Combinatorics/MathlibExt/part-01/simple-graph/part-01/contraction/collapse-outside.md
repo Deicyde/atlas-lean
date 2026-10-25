@@ -6,9 +6,11 @@ statement: formalized
 lean: SimpleGraph.collapseOutside
 ---
 
-# Collapse Outside
+# Collapsing the complement of a set
 
-Send vertices in `D` to their subtype copy and every other vertex to `none`.
+**Collapsing the complement of a set.** For a set $D \subseteq V$, the collapse map sends $V$
+to $D$ together with one new vertex, the contraction vertex: each $v \in D$ is sent to itself,
+and each $v \notin D$ is sent to the contraction vertex.
 
 ## Depends on
 

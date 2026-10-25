@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.firstPointsInDistinctCycles_zero
 ---
 
-# First Points In Distinct Cycles zero
+# The first-points condition for $s = 0$
 
-For `s = 0` the condition is vacuous.
+**The first-points condition for $s = 0$.** For every $n \ge 0$ and every permutation
+$\sigma$ of $\{0, \dots, n-1\}$, the first $0$ points of $\sigma$ lie in pairwise distinct
+cycles: there are no such points, so the condition is vacuous.
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
 
 ## Sources
 

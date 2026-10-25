@@ -6,14 +6,16 @@ proof: formalized
 lean: SimpleGraph.IsVertexConnected.connected_induce_compl
 ---
 
-# Connected induce compl
+# Deleting fewer than $k$ vertices from a $k$-vertex-connected graph
 
-Deleting fewer than `k` vertices from a `k`-vertex-connected graph leaves a connected
-induced graph.
+**Deleting fewer than $k$ vertices from a $k$-vertex-connected graph.** Let $k$ be a natural
+number and let $G$ be a $k$-vertex-connected simple graph on a finite vertex set $V$. Then for
+every set $S$ of fewer than $k$ vertices, the subgraph of $G$ induced on $V \setminus S$ is
+connected.
 
 ## Depends on
 
-- [Is Vertex Connected](is-vertex-connected.md)
+- [$k$-vertex-connected graph](is-vertex-connected.md)
 
 ## Sources
 

@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.convergentVec_triangle_latticePoints
 ---
 
-# Convergent Vec triangle lattice Points
+# Lattice points of the triangle with vertices $0$, $v_{i-2}$, $v_i$
 
-For `1 ≤ a < n` and `0 ≤ i ≤ m`, in the triangle `T_i` with vertices `0`, `v_{i-2}`, `v_i`:
-the segment `[v_{i-2}, v_i]` contains exactly `q_i + 1` lattice points, `T_i` has no interior
-lattice points, and every non-vertex lattice point of `T_i` lies on `[v_{i-2}, v_i]`.
+**Lattice points of the triangle with vertices $0$, $v_{i-2}$, $v_i$.** Let $1 \le a < n$ be
+integers, let $n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of $n / a$, where
+$m$ is the least index at which it terminates, and let $v_j$ be its convergent vectors. For every
+integer $i$ with $0 \le i \le m$, let $T_i$ be the closed triangle with vertices $0$, $v_{i-2}$
+and $v_i$. Then the segment $[v_{i-2}, v_i]$ contains exactly $q_i + 1$ lattice points, the
+interior of $T_i$ contains no lattice point, and every lattice point of $T_i$ other than its
+vertices lies on the segment $[v_{i-2}, v_i]$.
 
 ## Depends on
 
-- [Convergent Vec](convergent-vec.md)
+- [Convergent vectors of a continued fraction](convergent-vec.md)
 - [Lattice Points](lattice-points.md)
-- [Partial Quotient](partial-quotient.md)
+- [Partial quotients of a rational number](partial-quotient.md)
 
 ## Sources
 

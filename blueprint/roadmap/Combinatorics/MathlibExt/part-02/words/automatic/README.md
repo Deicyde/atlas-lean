@@ -4,16 +4,16 @@ navigation: module
 
 # Automatic
 
-- [K Kernel](k-kernel.md)
-- [Is KAutomatic](is-kautomatic.md)
+- [The $k$-kernel of a sequence](k-kernel.md)
+- [$k$-automatic sequence (finite-kernel definition)](is-kautomatic.md)
 
 ## Chr Kernel
 
-- [Chr qkernel subset](chr-qkernel-subset.md)
-- [Chr pkernel finite](chr-pkernel-finite.md)
-- [Chr kernel lam mem](chr-kernel-lam-mem.md)
-- [Chr self mem kernel](chr-self-mem-kernel.md)
+- [The $p^r$-kernel lies in the $p$-kernel](chr-qkernel-subset.md)
+- [Finiteness of the $p$-kernel from the $p^r$-kernel](chr-pkernel-finite.md)
+- [The $q$-kernel is closed under decimation](chr-kernel-lam-mem.md)
+- [A sequence lies in its own kernel](chr-self-mem-kernel.md)
 
 ## Chr Auto
 
-- [Is KAutomatic iff is KAutomatic Sequence](is-kautomatic-iff-is-kautomatic-sequence.md)
+- [Eilenberg's theorem: finite kernel iff automatic](is-kautomatic-iff-is-kautomatic-sequence.md)

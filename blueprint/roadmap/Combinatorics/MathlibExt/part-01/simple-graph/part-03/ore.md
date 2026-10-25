@@ -7,10 +7,11 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.OreWanted.ore
 ---
 
-# Ore
+# Ore's theorem
 
-Ore's theorem (1960): a finite simple graph with ≥3 vertices is Hamiltonian if for every pair of
-distinct nonadjacent vertices the degree sum is at least the number of vertices.
+**Ore's theorem.** Let $G$ be a simple graph on a finite vertex set $V$ with $|V| \ge 3$. If
+$\deg u + \deg v \ge |V|$ for every pair of distinct nonadjacent vertices $u$ and $v$, then $G$
+is Hamiltonian.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hamiltonian Cycle](../part-02/of-cyclic-list.md)
+- [A cyclic listing of the vertices gives a Hamiltonian cycle](../part-02/of-cyclic-list.md)
 
 ## Sources
 

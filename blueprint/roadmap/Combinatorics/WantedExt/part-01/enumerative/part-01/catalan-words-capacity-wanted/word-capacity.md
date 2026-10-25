@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.wordCapacity
 ---
 
-# Word Capacity
+# Capacity of a word
 
-The capacity of a word `w = w₁ ⋯ wₙ` of positive integers viewed as a bargraph: the sum over
-columns `i` of `min (max_{j<i} w_j) (max_{j>i} w_j) - w_i` (truncated at `0`), the number of water
-cells above column `i`. Empty maxima are `0`, so the first and last columns hold no water.
+**Capacity of a word.** The capacity of a word $w = w_1 \cdots w_n$ of natural numbers,
+viewed as a bargraph, is
+
+$$\mathrm{cap}(w) = \sum_{i=1}^{n}
+\max\Bigl(0, \min\bigl(\max_{j < i} w_j, \max_{j > i} w_j\bigr) - w_i\Bigr),$$
+
+the number of cells of water held above the columns, where an empty maximum is $0$. In particular
+the first and last columns hold no water.
 
 ## Depends on
 

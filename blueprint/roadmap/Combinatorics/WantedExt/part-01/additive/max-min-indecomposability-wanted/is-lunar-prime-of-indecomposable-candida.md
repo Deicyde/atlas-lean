@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.isLunarPrime_of_indecomposable_candidate
 ---
 
-# Is Lunar Prime of indecomposable candidate
+# Indecomposable prime candidates are lunar primes
 
-Lemma 30 (Applegate, LeBrun and Sloane): an indecomposable prime candidate of `ℬ_b[x]` is
-prime.
+**Indecomposable prime candidates are lunar primes.** Let $n$ and $b \ge 2$ be natural
+numbers, let $a = (a_0, \dots, a_{n-1})$ be a digit string with digits in $\{0, \dots, b - 1\}$,
+and let $f$ be its coefficient sequence. If $f$ is a prime candidate in base $b$ and $f$ is
+max-min indecomposable, then $f$ is a lunar prime of base $b$.
+
+This is Lemma 30 (Applegate, LeBrun and Sloane).
 
 ## Depends on
 
-- [Is Lunar Prime](is-lunar-prime.md)
-- [Is Lunar Prime Candidate](is-lunar-prime-candidate.md)
-- [Is Max Min Indecomposable](is-max-min-indecomposable.md)
-- [Digit Seq](digit-seq.md)
+- [Lunar primes](is-lunar-prime.md)
+- [Lunar prime candidates](is-lunar-prime-candidate.md)
+- [Max-min indecomposable sequences](is-max-min-indecomposable.md)
+- [Coefficient sequence of a digit string](digit-seq.md)
 
 ## Sources
 

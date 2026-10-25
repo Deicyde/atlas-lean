@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_accelZeckMove_zero
 ---
 
-# Not accel Zeck Move zero
+# No move from the empty state
 
-The empty state admits no move.
+**No move from the empty state.** No move takes the empty state (no copies of any $F_i$) to
+any state.
 
 ## Depends on
 
-- [Accel Zeck Move](accel-zeck-move.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
 
 ## Sources
 

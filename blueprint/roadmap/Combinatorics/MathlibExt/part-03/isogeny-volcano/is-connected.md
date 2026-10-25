@@ -5,9 +5,11 @@ statement: formalized
 lean: Multigraph.IsConnected
 ---
 
-# Is Connected
+# Connected multigraph
 
-A multigraph is connected when all pairs connect.
+**Connected multigraph.** A multigraph $G$ is connected when every two vertices $v$ and $w$
+of $G$ are joined by a walk, that is, $w$ is reachable from $v$ by a finite (possibly empty)
+sequence of steps along edges of positive multiplicity.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ A multigraph is connected when all pairs connect.
 
 ## Proof depends on
 
-- [Connected](connected.md)
+- [Connectivity of vertices in a multigraph](connected.md)
 
 ## Sources
 

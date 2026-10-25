@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsSmoothCoconut.eq_one_of_dvd_leaves
 ---
 
-# Eq one of dvd leaves
+# The leaf labels of a smooth arithmetical structure on a coconut tree are coprime
 
-Lemma 3: in a smooth arithmetical structure on `CT(p, s)` the leaf labels
-`r_{ℓ_1}, …, r_{ℓ_s}` have no common factor other than `1`.
+**The leaf labels of a smooth arithmetical structure on a coconut tree are coprime.** Let
+$(d, r)$ be a smooth arithmetical structure on the coconut tree $\mathrm{CT}(p, s)$ with leaves
+$v_{\ell_1}, \dots, v_{\ell_s}$. If a natural number $g$ divides $r(v_{\ell_j})$ for every
+$j = 1, \dots, s$, then $g = 1$.
 
 ## Depends on
 
-- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
 
 ## Sources
 

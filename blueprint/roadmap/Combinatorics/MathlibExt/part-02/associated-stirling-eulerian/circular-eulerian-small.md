@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.circularEulerian_small
 ---
 
-# Circular Eulerian small
+# Small circular Eulerian numbers
 
-Characteristic values `C_{0,0} = 0`, `C_{1,0} = 1` and `C_{3,1} = C_{3,2} = 1`:
-of the two 3-cycles, `1 ↦ 3 ↦ 2 ↦ 1` has one excedance and `1 ↦ 2 ↦ 3 ↦ 1` has two.
+**Small circular Eulerian numbers.** Writing $C_{n,m}$ for the circular Eulerian number, we have
+$C_{0,0} = 0$, $C_{1,0} = 1$, $C_{3,1} = 1$ and $C_{3,2} = 1$.
+
+Of the two cyclic permutations of $\{1, 2, 3\}$, $1 \mapsto 3 \mapsto 2 \mapsto 1$ has one
+excedance and $1 \mapsto 2 \mapsto 3 \mapsto 1$ has two.
 
 ## Depends on
 
-- [Circular Eulerian](circular-eulerian.md)
+- [Circular Eulerian numbers](circular-eulerian.md)
 
 ## Sources
 

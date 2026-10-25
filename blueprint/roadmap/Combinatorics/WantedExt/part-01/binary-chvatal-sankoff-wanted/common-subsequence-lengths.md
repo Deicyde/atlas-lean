@@ -6,17 +6,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.commonSubsequenceLengths
 ---
 
-# Common Subsequence Lengths
+# Lengths of common subsequences
 
-The lengths admitted by common subsequences of `x` and `y`.
+**Lengths of common subsequences.** For binary strings $x$ and $y$ of length $n$, the set of
+natural numbers $k$ such that some binary list of length $k$ is a common subsequence of $x$
+and $y$.
 
 ## Depends on
 
-- [Binary String](binary-string.md)
+- [Binary strings](binary-string.md)
 
 ## Proof depends on
 
-- [Is Common Subsequence](is-common-subsequence.md)
+- [Common subsequence](is-common-subsequence.md)
 
 ## Sources
 

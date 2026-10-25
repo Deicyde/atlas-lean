@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.StarMove.src
 ---
 
-# Src
+# Start vertex of a star movement
 
-The vertex a movement starts from.
+**Start vertex of a star movement.** Let $\mathcal{S}(k)$ be the star graph with center $o$
+and $k$ leaves. A movement in the star model on $\mathcal{S}(k)$ along the edge $\{o, u\}$ between
+the center $o$ and a leaf $u$ starts at $o$ if it goes outward (from the center to the leaf) and
+at $u$ otherwise.
 
 ## Depends on
 
-- [Star Move](star-move.md)
+- [Movement in the star model](star-move.md)
 
 ## Sources
 

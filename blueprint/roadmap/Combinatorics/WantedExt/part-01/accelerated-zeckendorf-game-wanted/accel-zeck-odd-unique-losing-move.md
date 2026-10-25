@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.accelZeck_odd_unique_losing_move
 ---
 
-# Accel Zeck odd unique losing move
+# Unique losing move from $k$ copies of $F_2$ for odd $k$
 
-Let `k` be odd and `n ≥ 2k`, and assume every state `(0, …, 0, i, 0, n - 3i)` with `i < k`
-(and `3i ≤ n`) is losing. Then `n ≥ 3k`, and `(0, …, 0, k, 0, n - 3k)` is a losing state
-reachable in one move from `(0, …, 0, k, n - 2k)` (`k` copies of `F_2`, `n - 2k` of `F_1`),
-and the only losing state so reachable.
+**Unique losing move from $k$ copies of $F_2$ for odd $k$.** Let $k$ be odd and $n \ge 2k$,
+and suppose that for every $i < k$ with $3i \le n$ the state with $i$ copies of $F_3$,
+$n - 3i$ copies of $F_1$ and nothing else is losing. Then $n \ge 3k$; the state $T$ with $k$
+copies of $F_3$, $n - 3k$ copies of $F_1$ and nothing else is losing and is reached in one
+move from the state $S$ with $k$ copies of $F_2$, $n - 2k$ copies of $F_1$ and nothing else;
+and every losing state reached in one move from $S$ equals $T$.
 
 ## Depends on
 
-- [Accel Zeck Losing](accel-zeck-losing.md)
-- [Accel Zeck Move](accel-zeck-move.md)
+- [Losing states of the Accelerated Zeckendorf Game](accel-zeck-losing.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
 
 ## Sources
 

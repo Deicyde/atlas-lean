@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_evenFibonacciSet_iff
 ---
 
-# Mem even Fibonacci Set iff
+# Membership in the even Fibonacci set
 
-Characterization of membership in the even-Fibonacci set.
+**Membership in the even Fibonacci set.** Write $F_m$ for the $m$-th Fibonacci number, with
+$F_0 = 0$ and $F_1 = 1$. A natural number $d$ belongs to the even Fibonacci set if and only if
+$d = F_{3n+3}$ for some natural number $n$.
 
 ## Depends on
 
-- [Even Fibonacci Set](even-fibonacci-set.md)
+- [Even Fibonacci set](even-fibonacci-set.md)
 
 ## Sources
 

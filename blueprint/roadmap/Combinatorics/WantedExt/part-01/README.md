@@ -3,7 +3,7 @@ article_id: af_c0875f481b94ad3fdcd8bef4
 navigation: transparent
 ---
 
-# Additive to Dehn Sommerville Wanted
+# Additive to Dehn–Sommerville equations
 
 - [Additive](additive/README.md)
 - [Coding](coding/README.md)
@@ -24,4 +24,4 @@ navigation: transparent
 - [Conjecture Of Marton](conjecture-of-marton-wanted/README.md)
 - [Continuous Turan](continuous-turan-wanted/README.md)
 - [Cube Rotation Nim](cube-rotation-nim-wanted/README.md)
-- [Dehn Sommerville Wanted](dehn-sommerville.md)
+- [Dehn–Sommerville equations](dehn-sommerville.md)

@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.trivialUpperBound
 ---
 
-# Trivial Upper Bound
+# Trivial upper bound for the binary Chvátal–Sankoff constant
 
-The trivial exact upper endpoint `C₃₁ₐ ≤ 1`.
+**Trivial upper bound for the binary Chvátal–Sankoff constant.** Let $C_{31a}$ be the
+binary Chvátal–Sankoff constant: the limit inferior as $n \to \infty$ of $E_n / n$, where $E_n$
+is the expected length of a longest common subsequence of two independent uniformly random
+binary strings of length $n$. This is the proposition $C_{31a} \le 1$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [C31a](c31a.md)
+- [Catalogue notation for the binary Chvátal–Sankoff constant](c31a.md)
 
 ## Sources
 

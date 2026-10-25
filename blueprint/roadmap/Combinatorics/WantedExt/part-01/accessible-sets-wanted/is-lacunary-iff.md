@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isLacunary_iff
 ---
 
-# Is Lacunary iff
+# Characterization of lacunary sequences
 
-Characterization of a positive lacunary sequence and its ratio witness.
+**Characterization of lacunary sequences.** A sequence $(m_n)_{n \ge 0}$ of natural numbers
+is lacunary if and only if $m_n > 0$ for every $n$ and there is a real number $q > 1$ such that
+$m_{n+1} \ge q \, m_n$ for every $n \ge 0$.
 
 ## Depends on
 
-- [Is Lacunary](is-lacunary.md)
+- [Lacunary sequence](is-lacunary.md)
 
 ## Sources
 

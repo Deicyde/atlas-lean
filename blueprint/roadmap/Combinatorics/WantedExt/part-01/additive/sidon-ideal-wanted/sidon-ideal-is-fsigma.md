@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sidonIdeal_isFSigma
 ---
 
-# Sidon Ideal is FSigma
+# The Sidon ideal is $F_\sigma$
 
-Corollary 2: the Sidon ideal is an `F_σ` subset of the Cantor space: under
-the identification of `A ⊆ ℕ` with its indicator in `ℕ → Bool` (product
-topology), the Sidon ideal is a countable union of closed sets.
+**The Sidon ideal is $F_\sigma$.** Give the Cantor space $\{0, 1\}^{\mathbb{N}}$ the product
+topology and identify each set $A \subseteq \mathbb{N}$ with its indicator function. Then the set
+of indicator functions of the members of the Sidon ideal is a countable union of closed subsets
+of $\{0, 1\}^{\mathbb{N}}$.
 
 ## Depends on
 
-- [Sidon Ideal](sidon-ideal.md)
+- [Sidon ideal](sidon-ideal.md)
 
 ## Sources
 

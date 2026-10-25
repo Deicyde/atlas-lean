@@ -7,13 +7,15 @@ proof: formalized
 lean: SimpleGraph.isSaturated_iff_forall_gt
 ---
 
-# Is Saturated iff forall gt
+# Saturation via strict supergraphs
 
-Maximality unfolded with strict extensions.
+**Saturation via strict supergraphs.** Let $H$ be a simple graph. A simple graph $G$ is
+$H$-saturated if and only if $G$ is $H$-free and every simple graph $G'$ on the same vertex set
+with $G \subsetneq G'$ contains a copy of $H$.
 
 ## Depends on
 
-- [Is Saturated](is-saturated.md)
+- [$H$-saturated graphs](is-saturated.md)
 
 ## Sources
 

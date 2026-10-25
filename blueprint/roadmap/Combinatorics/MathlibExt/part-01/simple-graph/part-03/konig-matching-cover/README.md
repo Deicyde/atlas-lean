@@ -4,5 +4,5 @@ navigation: module
 
 # Konig Matching Cover
 
-- [Konig matching cover general](konig-matching-cover-general.md)
-- [Konig matching cover](konig-matching-cover.md)
+- [Kőnig's theorem on a finite vertex type](konig-matching-cover-general.md)
+- [Kőnig's theorem for finite bipartite graphs](konig-matching-cover.md)

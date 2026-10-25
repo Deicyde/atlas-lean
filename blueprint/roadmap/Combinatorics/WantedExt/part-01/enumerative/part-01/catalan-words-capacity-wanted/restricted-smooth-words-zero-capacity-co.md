@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.restrictedSmoothWords_zero_capacity_count
 ---
 
-# Restricted Smooth Words zero capacity count
+# Zero-capacity restricted smooth words
 
-Mansour and Shattuck's Theorem 10, remaining values: `r*(n, 1; 0)` is `1` for `n = 1, 3`,
-`0` for `n = 2` and `2^{n-4}` for `n ≥ 4`; `r*(n, 2; 0)` is `1` for `n = 2` and `2^{n-3}` for
-`n ≥ 3`; and `r*(n; 0) = (n + 2) 2^{n-4}` for `n ≥ 4`, with `r*(1; 0) = r*(2; 0) = 1` and
-`r*(3; 0) = 3`.
+**Zero-capacity restricted smooth words.** For $n \ge 1$ and a letter $i$, let $r^{\ast}(n, i)$
+be the number of restricted smooth words of length $n$ ending in $i$ that have capacity $0$, and
+let $r^{\ast}(n)$ be the number of restricted smooth words of length $n$ with capacity $0$; these
+are the values at $q = 0$ of the corresponding capacity distributions. Then $r^{\ast}(n, 1) = 1$
+for $n \in \{1, 3\}$, $r^{\ast}(2, 1) = 0$ and $r^{\ast}(n, 1) = 2^{n-4}$ for $n \ge 4$;
+$r^{\ast}(2, 2) = 1$ and $r^{\ast}(n, 2) = 2^{n-3}$ for $n \ge 3$; and $r^{\ast}(n) = 1$ for
+$n \le 2$, $r^{\ast}(3) = 3$ and $r^{\ast}(n) = (n + 2)\, 2^{n-4}$ for $n \ge 4$.
 
 ## Depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Restricted Smooth Capacity Dist](restricted-smooth-capacity-dist.md)
-- [Restricted Smooth Words](restricted-smooth-words.md)
+- [Capacity distribution](capacity-dist.md)
+- [Capacity distribution of restricted smooth words with a given last letter](restricted-smooth-capacity-dist.md)
+- [Restricted smooth words](restricted-smooth-words.md)
 
 ## Sources
 

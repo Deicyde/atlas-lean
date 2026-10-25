@@ -7,18 +7,18 @@ lean: MetaMathlibExt.knight_distance_asymptotics
 
 # Knight distance asymptotics
 
-For natural `1 ≤ a < b` that are coprime with odd sum and integers
-`0 ≤ y ≤ x`, one absolute real constant `M` bounds both regional errors: when
-`b*y ≤ a*x`, the distance differs from `x/b` by at most `M b`, and when
-`a*x < b*y`, it differs from `(x+y)/(a+b)` by at most `M b`.  Integer
-cross-multiplication encodes the paper's slope split, while the main terms and
-absolute errors use real coercions and division; this makes each written
-`O(b)` a two-sided uniform bound.
+**Knight distance asymptotics.** There is an absolute constant $M \in \mathbb{R}$ with the
+following property. Let $a$ and $b$ be natural numbers with $1 \le a < b$, $\gcd(a, b) = 1$ and
+$a + b$ odd, let $N_{a,b} = \{(\pm a, \pm b), (\pm b, \pm a)\}$ be the $(a,b)$-knight's move set,
+and for $p \in \mathbb{Z}^2$ let $d_{a,b}(p)$ be the piece distance of $p$ for $N_{a,b}$. Then
+for all integers $x$ and $y$ with $0 \le y \le x$: if $by \le ax$, then
+$|d_{a,b}(x, y) - x/b| \le Mb$; and if $ax < by$, then
+$|d_{a,b}(x, y) - (x + y)/(a + b)| \le Mb$.
 
 ## Depends on
 
-- [Knight Moves](knight-moves.md)
-- [Piece Distance](piece-distance.md)
+- [Knight moves](knight-moves.md)
+- [Piece distance on the integer lattice](piece-distance.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport_zmod_Icc
 ---
 
-# Weighted Davenport zmod Icc
+# Weighted Davenport constant of $\mathbb{Z}/n\mathbb{Z}$ for the weights $\{1, \dots, r\}$
 
-Adhikari, David, Urroz and Xia, Li: for `1 < r < n` and `A = {1, …, r}`,
-`D_A(Z_n) = ⌈n/r⌉`.
+**Weighted Davenport constant of $\mathbb{Z}/n\mathbb{Z}$ for the weights $\{1, \dots, r\}$.**
+Let $n$ and $r$ be natural numbers with $1 < r < n$ and let $A = \{1, \dots, r\}$. Then the
+$A$-weighted Davenport constant of $\mathbb{Z}/n\mathbb{Z}$ is
+$D_A(\mathbb{Z}/n\mathbb{Z}) = \lceil n/r \rceil$.
 
 ## Depends on
 

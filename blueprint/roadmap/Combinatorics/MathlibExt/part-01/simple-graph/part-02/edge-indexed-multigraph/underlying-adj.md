@@ -7,15 +7,16 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.underlying_adj
 ---
 
-# Underlying adj
+# Adjacency in the underlying graph
 
-Adjacency in the underlying simple graph means that some indexed edge has the given
-endpoints.
+**Adjacency in the underlying graph.** Let $M$ be an edge-indexed multigraph. Two vertices $u$
+and $v$ are adjacent in the underlying simple graph of $M$ if and only if some edge $e$ of $M$ has
+endpoint pair $\{u, v\}$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Underlying](underlying.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Underlying simple graph of an edge-indexed multigraph](underlying.md)
 
 ## Sources
 

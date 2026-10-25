@@ -7,14 +7,16 @@ proof: formalized
 lean: TuranSystem.uniform_of_isTuran
 ---
 
-# Uniform of is Turan
+# Turán systems are uniform
 
-Uniformity projection from a Turan system.
+**Turán systems are uniform.** Let $n$, $s$, $r$ be natural numbers. If $H$ is a Turán system
+with parameters $n$, $s$, $r$, then $H$ is $r$-uniform: every member of $H$ has exactly $r$
+elements.
 
 ## Depends on
 
-- [Is Uniform](../uniform-hypergraph/is-uniform.md)
-- [Is Turan System](is-turan-system.md)
+- [Uniform hypergraphs](../uniform-hypergraph/is-uniform.md)
+- [Turán system](is-turan-system.md)
 
 ## Sources
 

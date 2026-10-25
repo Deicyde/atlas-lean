@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.lev_nsmul_card_ge
 ---
 
-# Lev nsmul card ge
+# Lev's lower bound for iterated sumsets
 
-Lev: let `A ⊆ ℤ` with `|A| = k ≥ 3`, `min A = 0` and `gcd(A) = 1`. Then for `h ≥ 2`,
-`|hA| ≥ |(h - 1)A| + min{max A, h(k - 2) + 1}`.
+**Lev's lower bound for iterated sumsets.** Let $A$ be a finite set of integers with
+$k = |A| \ge 3$ elements, smallest element $\min A = 0$ and $\gcd(A) = 1$. For $n \ge 1$ let
+$nA = \{a_1 + \dots + a_n : a_1, \dots, a_n \in A\}$ be the $n$-fold sumset of $A$. Then for
+every integer $h \ge 2$,
+
+$$|hA| \ge |(h - 1)A| + \min\{\max A,\ h(k - 2) + 1\}.$$
 
 ## Depends on
 

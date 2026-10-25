@@ -14,7 +14,7 @@ lean: MetaMathlibExt.letterPosition_prepend_equilibrious
 ## Depends on
 
 - [Both Letters Infinite](both-letters-infinite.md)
-- [Is Equilibrious Word](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
+- [Equilibrious binary words](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
 - [Letter Position](letter-position.md)
 - [Relative Position](relative-position.md)
 

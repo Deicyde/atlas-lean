@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.ehrhart_root_classical_bounds
 ---
 
-# Ehrhart root classical bounds
+# Classical bounds on Ehrhart roots
 
-Ehrhart roots of a full-dimensional lattice polytope satisfy both classical bounds:
-every complex root has norm at most `1 + (d+1)!`, and every real root has real part in
-`[-d, ⌊d/2⌋)`.  Realness is `α.im = 0`; the upper endpoint is intentionally strict.
-`EhrhartCounts` replaces use of an unavailable formal Ehrhart theorem.
+**Classical bounds on Ehrhart roots.** Let $P \subseteq \mathbb{R}^d$ be a full-dimensional
+lattice polytope, the convex hull of a finite set of points of $\mathbb{Z}^d$, and let $E$ be a
+complex polynomial with $E(k) = |kP \cap \mathbb{Z}^d|$ for every natural number $k$. Then every
+complex root $\alpha$ of $E$ satisfies $|\alpha| \le 1 + (d+1)!$, and every real root $\alpha$
+of $E$ satisfies $-d \le \alpha < \lfloor d/2 \rfloor$.
 
 ## Depends on
 
-- [Ehrhart Counts](ehrhart-counts.md)
-- [Is Full Dimensional](is-full-dimensional.md)
-- [Lattice Polytope](lattice-polytope.md)
+- [Polynomial counting the lattice points of dilates](ehrhart-counts.md)
+- [Full-dimensional sets](is-full-dimensional.md)
+- [Lattice polytopes](lattice-polytope.md)
 
 ## Sources
 

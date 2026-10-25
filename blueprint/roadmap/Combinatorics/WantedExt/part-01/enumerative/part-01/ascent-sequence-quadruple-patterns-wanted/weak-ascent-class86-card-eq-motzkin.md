@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.weakAscent_class86_card_eq_motzkin
 ---
 
-# Weak Ascent class86 card eq motzkin
+# Motzkin counts for weak ascent sequences in Class 86
 
-Theorem 4 (Class 86): for `P = {000, 021, 101, 120}`, `Q = {000, 021, 101, 102}` and
-`R = {000, 021, 110, 120}`, `|WA_n(P)| = |WA_n(Q)| = |WA_n(R)| = M_n + M_{n-2}` for `n ≥ 3`,
-with `M_n` the Motzkin numbers.
+**Motzkin counts for weak ascent sequences in Class 86.** Let $M_n$ denote the Motzkin
+numbers. For every natural number $n \ge 3$, the number of weak ascent sequences of length $n$
+avoiding every pattern in $\{000, 021, 101, 120\}$, the number avoiding every pattern in
+$\{000, 021, 101, 102\}$ and the number avoiding every pattern in $\{000, 021, 110, 120\}$ are
+each equal to $M_n + M_{n-2}$.
 
 ## Depends on
 
 - [Motzkin numbers as a Catalan-weighted binomial sum](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Sources
 

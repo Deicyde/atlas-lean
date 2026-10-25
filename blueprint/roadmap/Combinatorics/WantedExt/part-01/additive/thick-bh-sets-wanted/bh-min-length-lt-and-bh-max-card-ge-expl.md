@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.bhMinLength_lt_and_bhMaxCard_ge_explicit
 ---
 
-# Theorem 7
+# Unconditional bounds for $R_h^{-1}(k)$, $k \ge 4$, and $R_h(n)$, $n \ge h + 3$
 
-**Theorem 7.** For `h ≥ 2`, all `k ≥ 4` and all `n ≥ h + 3`,
-`R_h⁻¹(k) < k^h + 3^(155h) k^(h - 1/155)` and `R_h(n) ≥ n^(1/h) - 2^44 n^(154/(155h))`.
+**Unconditional bounds for $R_h^{-1}(k)$, $k \ge 4$, and $R_h(n)$, $n \ge h + 3$.** Let
+$h \ge 2$. Write $R_h(n)$ for the largest size of a $B_h$-set contained in $\{1, \dots, n\}$ and
+$R_h^{-1}(k)$ for the least $n$ such that $\{1, \dots, n\}$ contains a $B_h$-set with $k$
+elements. Then every natural number $k \ge 4$ satisfies
+$R_h^{-1}(k) < k^h + 3^{155h} k^{h - 1/155}$, and every natural number $n \ge h + 3$ satisfies
+$R_h(n) \ge n^{1/h} - 2^{44} n^{154/(155h)}$.
 
 ## Depends on
 
-- [Bh Max Card](bh-max-card.md)
-- [Bh Min Length](bh-min-length.md)
+- [Maximum size of a $B_h$-set in $\{1, \dots, n\}$](bh-max-card.md)
+- [Shortest interval containing a $B_h$-set of given size](bh-min-length.md)
 
 ## Sources
 

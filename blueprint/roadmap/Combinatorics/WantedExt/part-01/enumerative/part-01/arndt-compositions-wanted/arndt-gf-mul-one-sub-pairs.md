@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.arndtGF_mul_one_sub_pairs
 ---
 
-# Arndt GF mul one sub pairs
+# Pair decomposition of the Arndt generating function
 
-For a set `S` of positive integers,
-`A_S(x, y) = (1 + y ∑_{i ∈ S} xⁱ) ∑_{m ≥ 0} (∑_{i, j ∈ S, j < i} x^{i+j})^m y^{2m}`, stated
-multiplicatively: `A_S · (1 - y² Q_S) = 1 + y P_S` with `P_S = ∑_{i ∈ S} xⁱ` and
-`Q_S = ∑_{i, j ∈ S, j < i} x^{i+j}`.
+**Pair decomposition of the Arndt generating function.** Let $S$ be a set of positive
+integers and let $A_S(x, y)$ be the generating function of Arndt compositions with parts in $S$:
+the formal power series in $x$ over $\mathbb{Z}[y]$ whose coefficient of $x^n y^k$ is the number
+of Arndt compositions of $n$ with $k$ parts, all in $S$. Put $P_S(x) = \sum_{i \in S} x^i$ and
+$Q_S(x) = \sum_{i, j \in S,\ j < i} x^{i+j}$. Then
+
+$$A_S(x, y) \, (1 - y^2 Q_S(x)) = 1 + y P_S(x).$$
+
+Equivalently, $A_S(x, y) = (1 + y P_S(x)) \sum_{m \ge 0} Q_S(x)^m y^{2m}$.
 
 ## Depends on
 
-- [Arndt GF](arndt-gf.md)
+- [Generating function of Arndt compositions with parts in a set](arndt-gf.md)
 
 ## Sources
 

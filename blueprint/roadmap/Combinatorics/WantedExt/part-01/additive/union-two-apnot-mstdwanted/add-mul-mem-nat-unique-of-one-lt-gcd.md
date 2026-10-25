@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.add_mul_mem_nat_unique_of_one_lt_gcd
 ---
 
-# Lemma 20
+# Uniqueness of integer points when the denominators share a factor
 
-**Lemma 20.** For reduced `x = s₁ + p₁/q₁` and `d = s₂ + p₂/q₂` with `gcd(q₁, q₂) > 1`, at most
-one `i ∈ [1, q₂ - 1]` has `x + id ∈ ℕ`, at most one `j ∈ [1, q₂ - 1]` has `2x + jd ∈ ℕ`, and such
-`i` and `j` differ.
+**Uniqueness of integer points when the denominators share a factor.** Let
+$s_1, s_2, p_1, p_2, q_1, q_2$ be natural numbers with $p_1, p_2 > 0$, $\gcd(p_1, q_1) = 1$,
+$\gcd(p_2, q_2) = 1$ and $\gcd(q_1, q_2) > 1$, and let $x = s_1 + p_1/q_1$ and
+$d = s_2 + p_2/q_2$. For indices $i, i', j, j' \in \{1, \dots, q_2 - 1\}$: if $x + id$ and
+$x + i'd$ are both nonnegative integers then $i = i'$; if $2x + jd$ and $2x + j'd$ are both
+nonnegative integers then $j = j'$; and if $x + id$ and $2x + jd$ are both nonnegative integers
+then $i \ne j$.
 
 ## Depends on
 

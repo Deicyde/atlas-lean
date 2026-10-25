@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_intervalAP_overlap_of_coprime_den
 ---
 
-# Lemma 19
+# An interval and an overlapping progression with incompatible start and step are not MSTD
 
-**Lemma 19.** For `n ≥ 3`, `m ≥ 2` and `0 < x < n - 1`, if (i) `x` is irrational and `d ∈ ℚ ∖
-ℕ`, or (ii) `x ∈ ℚ ∖ ℕ` and `d` is irrational, or (iii) `x = s₁ + p₁/q₁`, `d = s₂ + p₂/q₂` (reduced,
-with `gcd(q₁, q₂) = 1`, `q₁ ≥ 3`, and `d ∉ ℕ`), then `I_n ∪ J(x, m, d)` is not an MSTD set.
+**An interval and an overlapping progression with incompatible start and step are not MSTD.**
+Let $n \ge 3$ and $m \ge 2$ be natural numbers, and let $x$ and $d$ be real numbers with
+$0 < x < n - 1$. Write $I_n = \{0, 1, \dots, n - 1\}$ and
+$J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$. Suppose that one of the following holds:
+(i) $x$ is irrational, and $d$ is rational but not a positive integer; (ii) $x$ is rational but
+not a natural number, and $d$ is irrational; (iii) there are natural numbers
+$s_1, s_2, p_1, p_2, q_1, q_2$ with $p_1 > 0$, $p_2 > 0$,
+$\gcd(p_1, q_1) = \gcd(p_2, q_2) = \gcd(q_1, q_2) = 1$ and $q_1 \ge 3$ such that
+$x = s_1 + p_1/q_1$ and $d = s_2 + p_2/q_2$, and $d$ is not a natural number. Then
+$I_n \cup J(x, m, d)$ is not an MSTD set. Here the natural numbers include $0$.
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
-- [Real APSet](real-apset.md)
-- [Real Interval Set](real-interval-set.md)
+- [MSTD set](is-mstdset.md)
+- [Finite arithmetic progression](real-apset.md)
+- [Initial integer interval](real-interval-set.md)
 
 ## Sources
 

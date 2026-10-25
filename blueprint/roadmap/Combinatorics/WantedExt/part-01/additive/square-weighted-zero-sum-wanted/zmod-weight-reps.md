@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.zmodWeightReps
 ---
 
-# Zmod Weight Reps
+# Representatives of a set of residues
 
-`zmodWeightReps A` is the set of representatives `a ∈ [0, n)` whose residue lies in
-`A ⊆ ℤ_n`. Natural weights act on `ZMod n` by `a • x = (a : ZMod n) * x`, so the
-MathlibExt constant `weightedDavenport (zmodWeightReps A) (ZMod n)` is the paper's `D_A`
-for `n ≥ 1`: every residue has exactly one representative in `[0, n)`.
+**Representatives of a set of residues.** Let $n$ be a natural number and $A$ a subset of
+$\mathbb{Z}_n$. The representatives of $A$ form the finite set of natural numbers $a$ with
+$0 \le a < n$ whose residue modulo $n$ lies in $A$.
+
+A natural number $a$ acts on $\mathbb{Z}_n$ by $x \mapsto a x$. For $n \ge 1$ every residue has
+exactly one representative below $n$, so the weighted Davenport constant of $\mathbb{Z}_n$ with
+the representatives of $A$ as weights is the paper's $D_A$.
 
 ## Depends on
 

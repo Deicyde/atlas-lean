@@ -5,19 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.knight_distance_uniform_on_box
 ---
 
-# Knight distance uniform on box
+# Uniform bound for knight distance on a box
 
-Uniformly over natural parameters `1 ≤ a < b` that are coprime and have odd
-sum, every integer point `p` with `max |p.1| |p.2| ≤ a+b` has knight distance
-at most `M b` for one absolute real constant `M`.  The integer absolute values
-and the bound's natural parameters are connected by the displayed cast; no
-primitivity hypothesis is added beyond the paper's coprimality and parity
-conditions.
+**Uniform bound for knight distance on a box.** There is an absolute constant $M \in \mathbb{R}$
+such that for all natural numbers $a$ and $b$ with $1 \le a < b$, $\gcd(a, b) = 1$ and $a + b$
+odd, every lattice point $(x, y) \in \mathbb{Z}^2$ with $\max(|x|, |y|) \le a + b$ has piece
+distance at most $Mb$ for the $(a,b)$-knight's move set
+$N_{a,b} = \{(\pm a, \pm b), (\pm b, \pm a)\}$.
 
 ## Depends on
 
-- [Knight Moves](knight-moves.md)
-- [Piece Distance](piece-distance.md)
+- [Knight moves](knight-moves.md)
+- [Piece distance on the integer lattice](piece-distance.md)
 
 ## Sources
 

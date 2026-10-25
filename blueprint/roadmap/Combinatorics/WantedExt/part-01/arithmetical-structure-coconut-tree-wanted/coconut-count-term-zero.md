@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.coconutCountTerm_zero
 ---
 
-# Coconut Count Term zero
+# The coconut count term with second argument zero
 
-`A(x, 0) = C_{x-1}`.
+**The coconut count term with second argument zero.** For every natural number $x$, the
+term $A(x, 0)$ of the coconut tree count equals the Catalan number $C_{x-1}$, read as $C_0$
+when $x = 0$.
 
 ## Depends on
 
-- [Coconut Count Term](coconut-count-term.md)
+- [Terms of the coconut tree count](coconut-count-term.md)
 
 ## Proof depends on
 
-- [Is Smooth Coconut](is-smooth-coconut.md)
-- [Ballot Number](ballot-number.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
+- [Ballot numbers](ballot-number.md)
 
 ## Sources
 

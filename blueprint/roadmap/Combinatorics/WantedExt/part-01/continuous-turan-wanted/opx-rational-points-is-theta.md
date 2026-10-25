@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.opx_rational_points_isTheta
 ---
 
-# Opx rational points is Theta
+# Rational points of open patterns have quadratic continuous Turán number
 
-Theorem 4.6: for nonempty open `P ⊆ ℝ²`, the set `Q_P` of points of `P` with rational
-coordinates has `opx(n, Q_P) = Θ(n²)` as `n → ∞`. Nonemptiness is added (`Q_∅ = ∅`).
+**Rational points of open patterns have quadratic continuous Turán number.** Let
+$P \subseteq \mathbb{R}^2$ be a nonempty open set and let $Q_P$ be the set of points of $P$ both
+of whose coordinates are rational. Then $\operatorname{opx}(n, Q_P) = \Theta(n^2)$ as the real
+number $n$ tends to infinity.
+
+The paper does not assume that $P$ is nonempty. The assumption is needed, since
+$Q_\emptyset = \emptyset$ and $\operatorname{opx}(n, \emptyset) = 0$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

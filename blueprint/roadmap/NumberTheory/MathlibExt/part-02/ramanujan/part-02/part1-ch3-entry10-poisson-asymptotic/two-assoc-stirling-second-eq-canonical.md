@@ -14,7 +14,7 @@ The Entry 10 definition agrees with the canonical 2-associated Stirling numbers.
 ## Depends on
 
 - [Two Assoc Stirling Second](two-assoc-stirling-second.md)
-- [Two Assoc Stirling Second](../../../../../../Combinatorics/MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
+- [2-associated Stirling numbers of the second kind](../../../../../../Combinatorics/MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
 
 ## Sources
 

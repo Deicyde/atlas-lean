@@ -5,6 +5,6 @@ navigation: module
 
 # Fractal Sequence
 
-- [Fractal Sequence](fractal-sequence.md)
-- [Pos injective](pos-injective.md)
+- [Regular fractal sequence](fractal-sequence.md)
+- [Occurrence positions are distinct](pos-injective.md)
 - [Infinite occurrences](infinite-occurrences.md)

@@ -6,15 +6,18 @@ proof: formalized
 lean: NoncrossingPartition.twoBlockPartition_ne_indiscrete_three
 ---
 
-# Two Block Partition ne indiscrete three
+# The two-block partitions of three points are not indiscrete
 
-Two-block and indiscrete partitions of `Fin 3` are distinct.
+**The two-block partitions of three points are not indiscrete.** For every
+$a \in \{0, 1, 2\}$, the noncrossing partition of $\{0, 1, 2\}$ with blocks $\{a\}$ and
+$\{0, 1, 2\} \setminus \{a\}$ is different from the indiscrete noncrossing partition of
+$\{0, 1, 2\}$.
 
 ## Depends on
 
 - [Noncrossing partition](../basic/noncrossing-partition.md)
 - [The indiscrete noncrossing partition](../operations/indiscrete.md)
-- [Two Block Partition](two-block-partition.md)
+- [Two-block partition of three points](two-block-partition.md)
 
 ## Proof depends on
 

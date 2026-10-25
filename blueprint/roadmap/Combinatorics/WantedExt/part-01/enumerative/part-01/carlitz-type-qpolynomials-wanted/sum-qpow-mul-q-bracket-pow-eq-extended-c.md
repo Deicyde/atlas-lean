@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.sum_qpow_mul_qBracket_pow_eq_extendedCarlitzBeta
 ---
 
-# Sum qpow mul q Bracket pow eq extended Carlitz Beta
+# Weighted $q$-power sums via the extended Carlitz $q$-Bernoulli polynomials
 
-`n ∑_{k<N} q^{(r+1)k} [k]^{n-1} + (q - 1) r ∑_{k<N} q^{rk} [k]^n = q^{rN} β_n^{(r)}(N) -
-β_n^{(r)}`.
+**Weighted $q$-power sums via the extended Carlitz $q$-Bernoulli polynomials.** Let $q > 0$
+with $q \ne 1$, let $[x] = (q^x - 1)/(q - 1)$, and let $\beta_n^{(r)}(x)$ be the extended Carlitz
+$q$-Bernoulli polynomials, with $\beta_n^{(r)} = \beta_n^{(r)}(0)$. Then for all natural numbers
+$r$, $n$ and $N$,
+
+$$n \sum_{k=0}^{N-1} q^{(r+1)k} [k]^{n-1} + (q - 1) r \sum_{k=0}^{N-1} q^{rk} [k]^n =
+q^{rN} \beta_n^{(r)}(N) - \beta_n^{(r)},$$
+
+where $0^0 = 1$, and the first term is $0$ when $n = 0$.
 
 ## Depends on
 
-- [Extended Carlitz Beta Poly](extended-carlitz-beta-poly.md)
-- [Q Bracket](q-bracket.md)
+- [Extended Carlitz $q$-Bernoulli polynomials](extended-carlitz-beta-poly.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isMaxMinMonomial_lunarUnit
 ---
 
-# Is Max Min Monomial lunar Unit
+# The lunar unit is a monomial
 
-For `b ≥ 2` the lunar unit is a monomial.
+**The lunar unit is a monomial.** For every natural number $b \ge 2$, the lunar unit of base
+$b$, the sequence with constant term $b - 1$ and all other terms $0$, is a max-min monomial: it
+has exactly one nonzero term.
 
 ## Depends on
 
-- [Is Max Min Monomial](is-max-min-monomial.md)
+- [Monomials over the max-min semiring](is-max-min-monomial.md)
 - [Lunar Unit](lunar-unit.md)
 
 ## Sources

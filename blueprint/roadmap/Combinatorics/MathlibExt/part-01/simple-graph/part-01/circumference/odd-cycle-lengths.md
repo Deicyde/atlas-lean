@@ -6,9 +6,11 @@ statement: formalized
 lean: SimpleGraph.oddCycleLengths
 ---
 
-# Odd Cycle Lengths
+# Odd cycle lengths
 
-`G.oddCycleLengths` is the set of lengths of odd cycles in `G`.
+**Odd cycle lengths.** For a simple graph $G$, the set of odd cycle lengths of $G$ is the set
+of those cycle lengths of $G$ that are odd, that is, the odd natural numbers $m$ such that $G$
+contains a cycle of length $m$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cycle Lengths](cycle-lengths.md)
+- [Cycle lengths](cycle-lengths.md)
 
 ## Sources
 

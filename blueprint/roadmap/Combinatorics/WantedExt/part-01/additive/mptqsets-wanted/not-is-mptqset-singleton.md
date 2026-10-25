@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isMPTQSet_singleton
 ---
 
-# Not is MPTQSet singleton
+# A singleton is not an MPTQ set
 
-A singleton is not an MPTQ set.
+**A singleton is not an MPTQ set.** For every real number $a$, the one-element set $\{a\}$
+is not an MPTQ set.
 
 ## Depends on
 
-- [Is MPTQSet](is-mptqset.md)
+- [MPTQ set](is-mptqset.md)
 
 ## Sources
 

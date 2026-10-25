@@ -7,14 +7,18 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_connected_mu_zero_complete
 ---
 
-# Srg connected mu zero complete
+# Connected strongly regular graphs with μ = 0 are complete
 
-A connected strongly regular graph with `μ = 0` is complete.
+**Connected strongly regular graphs with μ = 0 are complete.** Let $G$ be a finite strongly
+regular graph with parameters $(n, k, \ell, \mu)$ where $\mu = 0$: $G$ has $n$ vertices, every
+vertex has degree $k$, any two adjacent vertices have exactly $\ell$ common neighbors, and any
+two distinct nonadjacent vertices have no common neighbor. If $G$ is connected, then $G$ is
+complete, that is, any two distinct vertices of $G$ are adjacent.
 
-Proof: The `μ = 0` common-neighbor count makes every nontrivial two-edge walk a
+Proof: The $\mu = 0$ common-neighbor count makes every nontrivial two-edge walk a
 triangle, so walk induction makes each component a clique. Connectedness then
 gives completeness. Brouwer and Haemers, Section 9.1.4, state the component
-fact: `μ = 0` makes the graph a disjoint union of complete graphs.
+fact: $\mu = 0$ makes the graph a disjoint union of complete graphs.
 
 ## Depends on
 

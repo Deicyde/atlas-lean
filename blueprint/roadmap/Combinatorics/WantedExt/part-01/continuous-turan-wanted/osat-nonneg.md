@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.osat_nonneg
 ---
 
-# Osat nonneg
+# The saturation function is nonnegative
 
-`osat(n, P) ≥ 0`.
+**The saturation function is nonnegative.** For every real number $n$ and every set
+$P \subseteq \mathbb{R}^2$, $\operatorname{osat}(n, P) \ge 0$.
 
 ## Depends on
 
-- [Osat](osat.md)
+- [Saturation function for continuous patterns](osat.md)
 
 ## Proof depends on
 
-- [Is Opx Saturating](is-opx-saturating.md)
+- [Saturating sets for a point pattern](is-opx-saturating.md)
 
 ## Sources
 

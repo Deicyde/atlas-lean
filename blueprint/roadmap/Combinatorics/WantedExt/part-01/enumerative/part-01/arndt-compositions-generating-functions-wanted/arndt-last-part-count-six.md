@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.arndtLastPartCount_six
 ---
 
-# Arndt Last Part Count six
+# Arndt compositions of 6 by last part
 
-Row `n = 6` of Table 2: `b(6, 1) = 4`, `b(6, 2) = 2`, `b(6, 3) = 1`, `b(6, 6) = 1`.
+**Arndt compositions of 6 by last part.** Let $b(n, j)$ be the number of Arndt compositions
+of $n$ with last part $j$. Then $b(6, 1) = 4$, $b(6, 2) = 2$, $b(6, 3) = 1$ and $b(6, 6) = 1$.
 
 ## Depends on
 
-- [Arndt Last Part Count](arndt-last-part-count.md)
+- [Arndt compositions by last part](arndt-last-part-count.md)
 
 ## Sources
 

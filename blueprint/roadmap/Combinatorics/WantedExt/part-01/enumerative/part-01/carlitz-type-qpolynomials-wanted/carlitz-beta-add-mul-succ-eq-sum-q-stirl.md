@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.carlitzBeta_add_mul_succ_eq_sum_qStirling
 ---
 
-# Carlitz Beta add mul succ eq sum q Stirling
+# Carlitz $q$-Bernoulli numbers via $q$-Stirling numbers
 
-`β_n + q β_{n+1} = ∑_{k=0}^{n} (-1)^k [k]!/[k+2] S_q(n,k)` for Carlitz's `q`-Bernoulli numbers
-`β_n = β_n(0)`, with Carlitz's `q`-Stirling numbers `S_q(n,k)` given by their defining identity
-`[x]^n = ∑_{k=0}^{n} q^{k(k-1)/2} S_q(n,k) [x]_k`.
+**Carlitz $q$-Bernoulli numbers via $q$-Stirling numbers.** Let $q > 0$ with $q \ne 1$, write
+$[x] = (q^x - 1)/(q - 1)$, $[x]_k = [x][x - 1] \cdots [x - k + 1]$ and $[k]! = [1][2] \cdots [k]$
+(empty products are $1$), and let $\beta_n = \beta_n(0)$ be Carlitz's $q$-Bernoulli numbers. If
+real numbers $S_q(m,k)$ satisfy $[x]^m = \sum_{k=0}^{m} q^{k(k-1)/2} S_q(m,k) [x]_k$ for every
+natural number $m$ and every real $x$ (this is the defining identity of Carlitz's $q$-Stirling
+numbers of the second kind), then for every natural number $n$,
+$\beta_n + q \beta_{n+1} = \sum_{k=0}^{n} (-1)^k \frac{[k]!}{[k+2]} S_q(n,k)$.
 
 ## Depends on
 
-- [Carlitz Beta Poly](carlitz-beta-poly.md)
-- [Q Bracket](q-bracket.md)
+- [Carlitz $q$-Bernoulli polynomials](carlitz-beta-poly.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

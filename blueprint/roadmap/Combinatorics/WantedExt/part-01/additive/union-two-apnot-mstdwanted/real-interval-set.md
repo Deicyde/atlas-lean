@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.realIntervalSet
 ---
 
-# Real Interval Set
+# Initial integer interval
 
-The interval `I_n = {0, 1, …, n - 1}` as a finite set of reals.
+**Initial integer interval.** For a natural number $n$, $I_n = \{0, 1, \ldots, n - 1\}$ is
+the set of the first $n$ natural numbers, viewed as a finite set of real numbers; $I_0$ is empty.
 
 ## Depends on
 

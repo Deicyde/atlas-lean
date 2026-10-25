@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_addOrderOf_eq_two_of_isPerfectCover
 ---
 
-# Exists add Order Of eq two of is Perfect Cover
+# Elements of order $2$ in perfect covers of $\mathbb{Z}_{2^m} \oplus \mathbb{Z}_{2^n}$
 
-Every perfect cover of `ℤ_{2^m} ⊕ ℤ_{2^n}` contains an element of order `2`, provided
-the group is nontrivial.
+**Elements of order $2$ in perfect covers of $\mathbb{Z}_{2^m} \oplus \mathbb{Z}_{2^n}$.**
+Let $m, n$ be natural numbers with $m + n > 0$. Every perfect cover of
+$\mathbb{Z}_{2^m} \oplus \mathbb{Z}_{2^n}$ contains an element of order $2$.
 
 ## Depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
+- [Perfect cover](is-perfect-cover.md)
 
 ## Sources
 

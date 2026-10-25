@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.binomialPolynomial
 ---
 
-# Binomial Polynomial
+# Binomial polynomial
 
-The binomial polynomial `C(X+n,d)` over `ℝ`, defined as a normalized finite product of
-linear factors.  This fixes the orientation independently of Mathlib's Pochhammer conventions.
+**Binomial polynomial.** For an integer $n$ and a natural number $d$, the binomial polynomial
+$\binom{X+n}{d}$ is the real polynomial $\frac{1}{d!} \prod_{i=0}^{d-1} (X + n - i)$.
 
 ## Depends on
 

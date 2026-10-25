@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi2
 ---
 
-# Bpz C13 Pi2
+# Two-block BPZ profile of the thirteen-cycle
 
-BPZ's two-block thirteen-cycle profile.
+**Two-block BPZ profile of the thirteen-cycle.** The two-block BPZ profile of the
+thirteen-cycle is $\pi_1 \star \pi_1$, where $\pi_1$ is the one-block BPZ profile of the
+thirteen-cycle and $\star$ is the BPZ profile product.
 
 ## Depends on
 
-- [BPZProfile](bpzprofile.md)
+- [BPZ profiles](bpzprofile.md)
 
 ## Proof depends on
 
-- [Star](star.md)
-- [Bpz C13 Pi1](bpz-c13-pi1.md)
+- [Product of BPZ profiles](star.md)
+- [One-block BPZ profile of the thirteen-cycle](bpz-c13-pi1.md)
 
 ## Sources
 

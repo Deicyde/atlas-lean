@@ -7,18 +7,21 @@ proof: formalized
 lean: SimpleGraph.exists_free_copyCount_eq_generalizedExtremalNumber
 ---
 
-# Exists free copy Count eq generalized Extremal Number
+# The generalized Turán number is attained
 
-Attainment: when at least one `H`-free host graph on `Fin n` exists, some
-`H`-free host attains the generalized Turán number.
+**The generalized Turán number is attained.** Let $n$ be a natural number and let $T$ and $H$
+be simple graphs, where $T$ has finitely many vertices. If some simple graph on the vertex set
+$\{0, 1, \dots, n-1\}$ contains no copy of $H$ (a subgraph isomorphic to $H$), then some such graph
+$G$ has exactly $\mathrm{ex}(n, T, H)$ copies of $T$, where $\mathrm{ex}(n, T, H)$ is the
+generalized Turán number.
 
 ## Depends on
 
-- [Generalized Extremal Number](generalized-extremal-number.md)
+- [Generalized Turán number](generalized-extremal-number.md)
 
 ## Proof depends on
 
-- [Generalized Extremal Number eq sup](generalized-extremal-number-eq-sup.md)
+- [The generalized Turán number as a supremum](generalized-extremal-number-eq-sup.md)
 
 ## Sources
 

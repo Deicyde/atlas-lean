@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.AccelZeckWinning
 ---
 
-# Accel Zeck Winning
+# Winning states of the Accelerated Zeckendorf Game
 
-Winning states (the player to move has a winning strategy): some move reaches a losing
-state.
+**Winning states of the Accelerated Zeckendorf Game.** A state $s$ is winning (the player
+to move has a winning strategy) if some move takes $s$ to a losing state. Winning and losing
+states are defined by simultaneous induction: a state is losing if every move from it reaches
+a winning state.
 
 ## Depends on
 

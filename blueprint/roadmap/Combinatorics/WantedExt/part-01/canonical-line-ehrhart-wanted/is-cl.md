@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsCL
 ---
 
-# Is CL
+# CL-polynomials
 
-A polynomial is a CL-polynomial when it has some real nonzero scale and parameter list
-satisfying `IsCLWithParameters`.
+**CL-polynomials.** A complex polynomial $f$ of degree $d$ is a CL-polynomial when there are
+a real number $a \ne 0$ and real numbers $c_1, \dots, c_m \ge 1/4$ with $m = \lfloor d/2 \rfloor$
+such that $f = a \prod_{i=1}^{m} (X^2 + X + c_i)$ if $d$ is even and
+$f = a (2X + 1) \prod_{i=1}^{m} (X^2 + X + c_i)$ if $d$ is odd.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is CLWith Parameters](is-clwith-parameters.md)
+- [CL-polynomials with given parameters](is-clwith-parameters.md)
 
 ## Sources
 

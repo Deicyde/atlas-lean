@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.goodSequenceProb_zero
 ---
 
-# Good Sequence Prob zero
+# Good-sequence probability at length zero
 
-The empty sequence is not good, so `goodSequenceProb Γ 0 = 0`.
+**Good-sequence probability at length zero.** For every finite abelian group $\Gamma$, the
+probability that a uniformly random sequence of length $0$ in $\Gamma$ is good equals $0$: the
+empty sequence has no nonempty zero-sum subsequence, so it is not good.
 
 ## Depends on
 
-- [Good Sequence Prob](good-sequence-prob.md)
+- [Probability that a random sequence is good](good-sequence-prob.md)
 
 ## Proof depends on
 
-- [Is Good Sequence](is-good-sequence.md)
+- [Good sequences](is-good-sequence.md)
 
 ## Sources
 

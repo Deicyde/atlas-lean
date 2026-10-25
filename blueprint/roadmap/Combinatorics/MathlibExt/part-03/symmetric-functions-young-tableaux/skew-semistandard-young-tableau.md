@@ -5,43 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.SkewSemistandardYoungTableau
 ---
 
-# Skew Semistandard Young Tableau
+# Semistandard Young tableau of skew shape
 
-Let λ/μ be a skew shape. For k∈ℤ_{≥ 1},
-write λₖ for the k-th part of λ if λ
-has at least k parts, and λₖ=0 otherwise, and define
-μₖ in the same way. The cells of λ/μ are the pairs
-(i,j)∈ℤ_{≥ 1}×ℤ_{≥ 1} with
-
-μᵢ<j≤λᵢ,
-
-that is, the cells of D(λ) that are not cells of
-D(μ).
-
-A semistandard Young tableau of shape λ/μ is a
-function T that assigns to each pair
-(i,j)∈ℤ_{≥ 1}×ℤ_{≥ 1} an integer
-T_{i,j}∈ℤ_{≥ 0}, subject to four conditions.
-First, T_{i,j}≥ 1 for every cell (i,j) of λ/μ.
-Second, the rows weakly increase from left to right, meaning
-that
-
-T_{i,j}≤ T_{i,j'}
-
-whenever (i,j) and (i,j') are cells of λ/μ with
-j<j'. Third, the columns strictly increase from top to bottom,
-meaning that
-
-T_{i,j}<T_{i',j}
-
-whenever (i,j) and (i',j) are cells of λ/μ with
-i<i'. Fourth, T_{i,j}=0 for every pair
-(i,j)∈ℤ_{≥ 1}×ℤ_{≥ 1} that is
-not a cell of λ/μ.
+**Semistandard Young tableau of skew shape.** Let $\lambda/\mu$ be a skew shape, and write
+$\lambda_k$ and $\mu_k$ for the $k$-th parts of $\lambda$ and $\mu$, with $\lambda_k = 0$
+($\mu_k = 0$) when $\lambda$ ($\mu$) has fewer than $k$ parts. The cells of $\lambda/\mu$ are the
+pairs $(i, j) \in \mathbb{Z}_{\ge 1} \times \mathbb{Z}_{\ge 1}$ with $\mu_i < j \le \lambda_i$,
+that is, the cells of $D(\lambda)$ that are not cells of $D(\mu)$. A semistandard Young tableau
+of shape $\lambda/\mu$ is a function $T$ assigning a nonnegative integer $T_{i,j}$ to every pair
+$(i, j) \in \mathbb{Z}_{\ge 1} \times \mathbb{Z}_{\ge 1}$ such that $T_{i,j} \ge 1$ for every cell
+$(i, j)$ of $\lambda/\mu$; $T_{i,j} \le T_{i,j'}$ whenever $(i, j)$ and $(i, j')$ are cells of
+$\lambda/\mu$ with $j < j'$ (rows weakly increase); $T_{i,j} < T_{i',j}$ whenever $(i, j)$ and
+$(i', j)$ are cells of $\lambda/\mu$ with $i < i'$ (columns strictly increase); and $T_{i,j} = 0$
+for every pair $(i, j)$ that is not a cell of $\lambda/\mu$.
 
 ## Depends on
 
-- [Skew Shape](skew-shape.md)
+- [Skew shape](skew-shape.md)
 
 ## Sources
 

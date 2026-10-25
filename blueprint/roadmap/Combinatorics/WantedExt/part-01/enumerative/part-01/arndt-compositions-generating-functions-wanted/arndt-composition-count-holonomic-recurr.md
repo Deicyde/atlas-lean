@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.arndtCompositionCount_holonomic_recurrence
 ---
 
-# Arndt Composition Count holonomic recurrence
+# Holonomic recurrence for Arndt compositions
 
-Holonomic recurrence: for all `n, m ≥ 0`,
-`(m - n - 2 + ⌊m/2⌋) a(n+2, m) + (m - ⌊m/2⌋) a(n+1, m) + n a(n, m) = 0`.
+**Holonomic recurrence for Arndt compositions.** Let $a(n, m)$ be the number of Arndt
+compositions of $n$ with $m$ parts. For all $n, m \ge 0$,
+
+$$(m - n - 2 + \lfloor m/2 \rfloor)\, a(n+2, m) + (m - \lfloor m/2 \rfloor)\, a(n+1, m) +
+n\, a(n, m) = 0.$$
 
 ## Depends on
 
-- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

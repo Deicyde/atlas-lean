@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.card_perfectCover_one_odd
 ---
 
-# Card perfect Cover one odd
+# Perfect covers with exactly one odd element
 
-For `G = H ⊕ ℤ_{2^n}` with `|H| = 2^m` and `n ≥ 1`, exactly `2^m 2^{n-1} C(H ⊕ ℤ_{2^{n-1}})`
-perfect covers of `G` have exactly one element whose `ℤ_{2^n}`-coordinate `y` is odd.
+**Perfect covers with exactly one odd element.** Let $H$ be an abelian group of order $2^m$,
+let $n \ge 1$ and let $G = H \oplus \mathbb{Z}_{2^n}$. Call an element of $G$ odd when its
+$\mathbb{Z}_{2^n}$-coordinate, taken as a representative in $\{0, 1, \dots, 2^n - 1\}$, is odd.
+Then the number of perfect covers of $G$ with exactly one odd element is
+$2^m \cdot 2^{n-1} \cdot C(H \oplus \mathbb{Z}_{2^{n-1}})$, where $C(K)$ denotes the number of
+perfect covers of a group $K$.
 
 ## Depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
-- [Count](count.md)
+- [Perfect cover](is-perfect-cover.md)
+- [Number of perfect covers](count.md)
 
 ## Sources
 

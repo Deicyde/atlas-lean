@@ -5,20 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.rMinusAssociatedPermEGF_firstPoints_iterate_derivative
 ---
 
-# R Minus Associated Perm EGF first Points iterate derivative
+# Derivative formula for permutations with cycle lengths at most $r$ and separated first points
 
-Theorem 17: for `r ≥ 1`, over permutations with all cycle lengths at most `r` whose
-first `s` points lie in distinct cycles,
-`∂^s [A^{r-}(x,u)]_s/∂u^s = (1 + x ∑_{i=1}^{r-1} A_i(x) u^i/i!)^s A^{r-}(x,u)`.
-The paper states `r ≥ 2`; `r = 1` also holds (both sides are `exp u`). At `r = 0` it
-fails (`s = 1`: the left side is `0`, the right side `1`).
+**Derivative formula for permutations with cycle lengths at most $r$ and separated first
+points.** Let $R$ be a commutative $\mathbb{Q}$-algebra, $x \in R$, and let $r, s$ be natural
+numbers with $r \ge 1$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$ for
+its number of excedances (indices $i$ with $\sigma(i) > i$), and let
+$A_j(x) = \sum_{\sigma \in S_j} x^{e(\sigma)}$. Say that the first $s$ points of $\sigma$ are
+separated when the points $i < \min(s, n)$ lie in pairwise distinct cycles. Let
+$A^{r-}(x,u) = \sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} u^n/n! \in R[[u]]$, the inner sum over
+the permutations $\sigma$ of $\{0, \dots, n-1\}$ all of whose cycles, fixed points included, have
+at most $r$ elements, and let $F(u)$ be the same series with the inner sum restricted to those
+$\sigma$ whose first $s$ points are separated. Then the $s$-th derivative of $F$ with respect to
+$u$ is
+
+$$F^{(s)}(u) = \left(1 + x \sum_{i=1}^{r-1} \frac{A_i(x)\, u^i}{i!}\right)^s A^{r-}(x,u).$$
+
+The paper states $r \ge 2$; the case $r = 1$ also holds (both sides are $\exp(u)$), while for
+$r = 0$ and $s = 1$ the identity fails (the left side is $0$, the right side $1$).
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Is RMinus Associated Cycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rminus-associated-cycle-perm.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
+- [Permutations with all cycles of length at most $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rminus-associated-cycle-perm.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

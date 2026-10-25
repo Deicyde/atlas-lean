@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.euclideanChainLength_of_dvd
 ---
 
-# Euclidean Chain Length of dvd
+# Euclidean chain function when the first argument divides the second
 
-Corollary 4: for `x, y ≥ 1` with `x ∣ y`, `F(x, y) = 1 + y / x`.
+**Euclidean chain function when the first argument divides the second.** For natural numbers
+$x, y \ge 1$ with $x \mid y$, the Euclidean chain function $F$ satisfies $F(x, y) = 1 + y / x$.
 
 ## Depends on
 
-- [Euclidean Chain Length](euclidean-chain-length.md)
+- [Euclidean chain function](euclidean-chain-length.md)
 
 ## Sources
 

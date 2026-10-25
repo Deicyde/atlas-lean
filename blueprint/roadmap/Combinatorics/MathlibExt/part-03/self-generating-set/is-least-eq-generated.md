@@ -7,19 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.SelfGeneratingSet.isLeast_eq_generated
 ---
 
-# Is Least eq generated
+# The least self-generating set is the generated set
 
-Every least self-generating set is the generated closure.
+**The least self-generating set is the generated set.** Let $F$ be a finite set of
+functions $\mathbb{N} \to \mathbb{N}$ and let $s \in \mathbb{N}$. Call a set
+$G \subseteq \mathbb{N}$ self-generating if $s \in G$ and $f(x) \in G$ for every $f \in F$ and
+every $x \in G$. If $C$ is self-generating and is contained in every self-generating set, then
+$C$ equals the set generated from $s$ by $F$.
 
 ## Depends on
 
-- [Generated Set](generated-set.md)
-- [SG](sg.md)
+- [Set generated from a seed](generated-set.md)
+- [Self-generating sets](sg.md)
 
 ## Proof depends on
 
-- [Generated is SG](generated-is-sg.md)
-- [Generated le of sg](generated-le-of-sg.md)
+- [The generated set is self-generating](generated-is-sg.md)
+- [The generated set lies in every self-generating set](generated-le-of-sg.md)
 
 ## Sources
 

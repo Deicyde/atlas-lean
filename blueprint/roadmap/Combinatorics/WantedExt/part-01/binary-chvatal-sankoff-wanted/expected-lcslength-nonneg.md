@@ -7,20 +7,21 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.expectedLCSLength_nonneg
 ---
 
-# Expected LCSLength nonneg
+# Expected LCS length is nonnegative
 
-Expected LCS length is nonnegative.
+**Expected LCS length is nonnegative.** For every $n$, the expected length of a longest common
+subsequence of two independent uniformly random binary strings of length $n$ is at least $0$.
 
 ## Depends on
 
-- [Expected LCSLength](expected-lcslength.md)
+- [Expected length of a longest common subsequence](expected-lcslength.md)
 
 ## Proof depends on
 
-- [Binary String](binary-string.md)
-- [Binary String Pair](binary-string-pair.md)
-- [Lcs Length](lcs-length.md)
-- [Uniform Binary String Pairs](uniform-binary-string-pairs.md)
+- [Binary strings](binary-string.md)
+- [Pairs of binary strings](binary-string-pair.md)
+- [Length of a longest common subsequence](lcs-length.md)
+- [The finite set of pairs of binary strings](uniform-binary-string-pairs.md)
 
 ## Sources
 

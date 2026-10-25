@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.qBracket_zero
 ---
 
-# Q Bracket zero
+# The $q$-analogue of $0$ is $0$
 
-`[0] = 0`.
+**The $q$-analogue of $0$ is $0$.** For every real number $q$, $[0]_q = 0$, where
+$[x]_q = (q^x - 1)/(q - 1)$ is the $q$-analogue of a real number $x$, taken to be $0$ when
+$q = 1$.
 
 ## Depends on
 
-- [Q Bracket](q-bracket.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

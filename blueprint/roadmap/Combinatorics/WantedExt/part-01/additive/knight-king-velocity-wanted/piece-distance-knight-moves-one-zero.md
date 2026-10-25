@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.pieceDistance_knightMoves_one_zero
 ---
 
-# Piece Distance knight Moves one zero
+# The knight needs three moves to reach $(1,0)$
 
-The usual knight reaches `(1,0)` in exactly three moves: formally, its
-distance for `knightMoves 1 2` is `3`.
+**The knight needs three moves to reach $(1,0)$.** Let $N \subseteq \mathbb{Z}^2$ be the move set
+of the usual knight, consisting of the eight vectors $(\pm 1, \pm 2)$ and $(\pm 2, \pm 1)$. The
+piece distance of the point $(1,0)$ for $N$ is $3$.
 
 ## Depends on
 
-- [Knight Moves](knight-moves.md)
-- [Piece Distance](piece-distance.md)
+- [Knight moves](knight-moves.md)
+- [Piece distance on the integer lattice](piece-distance.md)
 
 ## Proof depends on
 
-- [Piece Distance eq of mem of forall](piece-distance-eq-of-mem-of-forall.md)
+- [Piece distance from a minimal fold](piece-distance-eq-of-mem-of-forall.md)
 
 ## Sources
 

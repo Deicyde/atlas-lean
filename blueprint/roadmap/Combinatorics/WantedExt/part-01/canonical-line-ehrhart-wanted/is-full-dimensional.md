@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsFullDimensional
 ---
 
-# Is Full Dimensional
+# Full-dimensional sets
 
-A subset of `ℝ^d` is full-dimensional when it is nonempty and the direction of its affine
-span is `⊤`. This is the formal counterpart of dimension `d`; nonemptiness excludes the empty
-subset of `ℝ^0`, whose affine-span direction `⊥` equals `⊤`.
+**Full-dimensional sets.** A subset $P$ of $\mathbb{R}^d$ is full-dimensional when it is
+nonempty and the direction of its affine span is all of $\mathbb{R}^d$ (equivalently, the affine
+span of $P$ is $\mathbb{R}^d$).
+
+Nonemptiness matters only for $d = 0$: the empty subset of $\mathbb{R}^0$ has an affine span
+whose direction $\{0\}$ is all of $\mathbb{R}^0$.
 
 ## Depends on
 

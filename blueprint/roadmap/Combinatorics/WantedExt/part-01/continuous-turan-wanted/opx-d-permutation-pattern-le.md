@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.opxD_permutation_pattern_le
 ---
 
-# Opx D permutation pattern le
+# Upper bound for higher-dimensional permutation-type patterns
 
-Corollary 5.12: for each `d` there is `C` such that for every `c > 0` there is `K` with
-`opx(n, P, d) ≤ K · 2^{Ck} · n^{d-1}` for all natural `n` and every `k`-point `P ⊆ ℝ^d` in which no
-two points share a coordinate and consecutive values of each coordinate are at most `c` apart.
+**Upper bound for higher-dimensional permutation-type patterns.** For every $d$ there is a
+real number $C$ such that for every real $c > 0$ there is a real number $K$ with the following
+property. Let $P \subseteq \mathbb{R}^d$ be a finite set of $k$ points such that, for each
+coordinate $i$, distinct points of $P$ have distinct $i$-th coordinates and consecutive values of
+the $i$-th coordinate on $P$ differ by at most $c$. Then
+$\mathrm{opx}(n, P, d) \le K \cdot 2^{Ck} \cdot n^{d-1}$ for every natural number $n$, where
+$n^{d-1}$ means $1$ when $d = 0$.
 
 ## Depends on
 

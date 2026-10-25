@@ -19,7 +19,7 @@ case and still holds).
 
 ## Depends on
 
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 - [Restricted Combination Count](restricted-combination-count.md)
 
 ## Sources

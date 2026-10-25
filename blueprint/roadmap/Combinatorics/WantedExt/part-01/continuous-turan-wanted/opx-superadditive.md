@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.opx_superadditive
 ---
 
-# Opx superadditive
+# Superadditivity of the continuous Turán number
 
-Lemma 2.5: `opx(n, P)` is super-additive: `opx(m, P) + opx(n, P) ≤ opx(m + n, P)` for `m, n >
-0`.
+**Superadditivity of the continuous Turán number.** For every set $P \subseteq \mathbb{R}^2$
+and all real numbers $m, n > 0$,
+$\operatorname{opx}(m, P) + \operatorname{opx}(n, P) \le \operatorname{opx}(m + n, P)$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

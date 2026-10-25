@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.not_isMPTQSet_insert_of_le
 ---
 
-# Not is MPTQSet insert of le
+# Adjoining an element that adds no more products than quotients
 
-Lemma 1: if `A` is not an MPTQ set and adjoining `x` adds at most `n` products and at
-least `m` quotients, with `n ≤ m`, then `A ∪ {x}` is not an MPTQ set.
+**Adjoining an element that adds no more products than quotients.** Let $A$ be a finite set
+of real numbers that is not an MPTQ set, let $x$ be a real number, let $n \le m$ be natural
+numbers, and write $A' = A \cup \{x\}$. If $|A' \cdot A'| \le |A \cdot A| + n$ and
+$|A/A| + m \le |A'/A'|$, where $X \cdot X$ and $X/X$ denote the product set and quotient set of
+$X$, then $A'$ is not an MPTQ set.
 
 ## Depends on
 
-- [Is MPTQSet](is-mptqset.md)
+- [MPTQ set](is-mptqset.md)
 
 ## Sources
 

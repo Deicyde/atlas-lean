@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.riordanArray_hasNonnegativeMinors_of_coeffMatrix
 ---
 
-# Riordan Array has Nonnegative Minors of coeff Matrix
+# Total positivity of a Riordan array from its coefficient matrix
 
-Proposition 1 (quoted from Chen, Liang and Wang): a Riordan array `R` with `A`- and
-`Z`-sequences `a`, `z` is totally positive if its coefficient matrix `J(Z(x), A(x))` is.
+**Total positivity of a Riordan array from its coefficient matrix.** Let $(a_n)$ and $(z_n)$
+be real sequences with generating functions $A(x)$ and $Z(x)$, and let $R$ be the Riordan array
+with $A$-sequence $(a_n)$ and $Z$-sequence $(z_n)$. If the coefficient matrix $J(Z(x), A(x))$ is
+totally positive, that is, every minor of it is nonnegative, then every minor of $R$ is
+nonnegative.
 
 ## Depends on
 
-- [Is Riordan Array AZ](is-riordan-array-az.md)
+- [Riordan array with given A- and Z-sequences](is-riordan-array-az.md)
 - [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
-- [Riordan Coeff Matrix](riordan-coeff-matrix.md)
+- [Coefficient matrix of a Riordan array](riordan-coeff-matrix.md)
 
 ## Sources
 

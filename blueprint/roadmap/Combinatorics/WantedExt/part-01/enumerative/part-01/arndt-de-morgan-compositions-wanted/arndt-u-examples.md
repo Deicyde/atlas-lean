@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.arndtU_examples
 ---
 
-# Arndt U examples
+# Values of the map $U$
 
-Entries of Table 3: `U(2,3) = (1,1,1,2)`, `U(1,4) = (1,4)`, `U(3,2) = (5)`,
-`U(1,1,1,2) = (2,1,2)`, `U(1,3,1) = (4,1)`.
+**Values of the map $U$.** The map $U$ sends $(2, 3)$ to $(1, 1, 1, 2)$, $(1, 4)$ to
+$(1, 4)$, $(3, 2)$ to $(5)$, $(1, 1, 1, 2)$ to $(2, 1, 2)$ and $(1, 3, 1)$ to $(4, 1)$.
 
 ## Depends on
 
-- [Arndt U](arndt-u.md)
+- [The map $U$ on lists](arndt-u.md)
 
 ## Sources
 

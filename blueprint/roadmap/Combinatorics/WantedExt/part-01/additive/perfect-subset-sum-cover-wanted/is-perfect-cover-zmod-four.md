@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.PerfectSubsetSumCover.isPerfectCover_zmod_four
 ---
 
-# Is Perfect Cover zmod four
+# Perfect covers of ℤ₄: an example and a non-example
 
-`{1, 2}` is a perfect cover of `ℤ₄` and `{1, 3}` is not (`1 + 3 = 0`).
+**Perfect covers of ℤ₄: an example and a non-example.** In the cyclic group
+$\mathbb{Z}_4 = \mathbb{Z}/4\mathbb{Z}$, the set $\{1, 2\}$ is a perfect cover and the set
+$\{1, 3\}$ is not, since $1 + 3 = 0$.
 
 ## Depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
+- [Perfect cover](is-perfect-cover.md)
 
 ## Proof depends on
 
-- [Is Perfect MCover](is-perfect-mcover.md)
-- [Cover Count](cover-count.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
+- [Cover count](cover-count.md)
 
 ## Sources
 

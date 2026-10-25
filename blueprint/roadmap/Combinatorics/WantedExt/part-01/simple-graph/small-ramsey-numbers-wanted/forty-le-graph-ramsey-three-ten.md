@@ -11,7 +11,7 @@ lean: MathlibExt.Combinatorics.SimpleGraph.SmallRamseyNumbersWanted.forty_le_gra
 
 ## Depends on
 
-- [Graph Ramsey](../../../../MathlibExt/part-01/simple-graph/part-03/ramsey/graph-ramsey.md)
+- [Classical Ramsey numbers](../../../../MathlibExt/part-01/simple-graph/part-03/ramsey/graph-ramsey.md)
 
 ## Sources
 

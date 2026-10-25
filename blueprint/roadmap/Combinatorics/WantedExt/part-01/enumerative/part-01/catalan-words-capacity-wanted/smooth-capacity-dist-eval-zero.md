@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.smoothCapacityDist_eval_zero
 ---
 
-# Smooth Capacity Dist eval zero
+# Zero-capacity smooth words with a given last letter
 
-Mansour and Shattuck's Theorem 6, formula (34): for `2 ≤ i ≤ n`, the number of
-zero-capacity smooth words of length `n` ending in `i` is `∑_{j=i-2}^{n-2} C(n-2, j)`.
+**Zero-capacity smooth words with a given last letter.** For $2 \le i \le n$, the number of
+smooth words of length $n$ ending in $i$ with capacity $0$, that is, the value at $q = 0$ of their
+capacity distribution $r(n, i; q)$, equals $\sum_{j=i-2}^{n-2} \binom{n-2}{j}$.
 
 ## Depends on
 
-- [Smooth Capacity Dist](smooth-capacity-dist.md)
+- [Capacity distribution of smooth words by last letter](smooth-capacity-dist.md)
 
 ## Sources
 

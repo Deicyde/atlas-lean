@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.convergentVec_initial
 ---
 
-# Convergent Vec initial
+# Initial convergent vectors
 
-Initial convergent vectors: `v_{-2} = (1, 0)`, `v_{-1} = (0, 1)`, `v_0 = (1, ⌊x⌋)`, and
-`q_0 = ⌊x⌋`.
+**Initial convergent vectors.** For every rational number $x$, the convergent vectors of the
+regular continued fraction of $x$ begin with $v_{-2} = (1, 0)$, $v_{-1} = (0, 1)$ and
+$v_0 = (1, \lfloor x \rfloor)$, and its zeroth partial quotient is $q_0 = \lfloor x \rfloor$.
 
 ## Depends on
 
-- [Convergent Vec](convergent-vec.md)
-- [Partial Quotient](partial-quotient.md)
+- [Convergent vectors of a continued fraction](convergent-vec.md)
+- [Partial quotients of a rational number](partial-quotient.md)
 
 ## Sources
 

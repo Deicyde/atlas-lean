@@ -7,13 +7,15 @@ proof: formalized
 lean: SimpleGraph.IsOddIndependent.empty_or_odd
 ---
 
-# Empty or odd
+# Outside vertices see an empty or odd part of an odd independent set
 
-Empty-or-odd alternative for each outside intersection.
+**Outside vertices see an empty or odd part of an odd independent set.** Let $S$ be an odd
+independent set of a simple graph $G$ and let $v$ be a vertex with $v \notin S$. Then the set of
+neighbours of $v$ that lie in $S$ is either empty or has an odd number of elements.
 
 ## Depends on
 
-- [Is Odd Independent](is-odd-independent.md)
+- [Odd independent set](is-odd-independent.md)
 
 ## Sources
 

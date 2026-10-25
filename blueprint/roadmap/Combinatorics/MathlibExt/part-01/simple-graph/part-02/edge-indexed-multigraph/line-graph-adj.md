@@ -7,15 +7,17 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.lineGraph_adj
 ---
 
-# Line Graph adj
+# Adjacency in the line graph of a multigraph
 
-Adjacency in the multigraph line graph: distinct edges sharing a vertex.
+**Adjacency in the line graph of a multigraph.** Two edge identities $e_1$ and $e_2$ are
+adjacent in the line graph of an edge-indexed multigraph exactly when $e_1 \ne e_2$ and some
+vertex is incident with both of them.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Inc](inc.md)
-- [Line Graph](line-graph.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Incidence](inc.md)
+- [Line graph of an edge-indexed multigraph](line-graph.md)
 
 ## Sources
 

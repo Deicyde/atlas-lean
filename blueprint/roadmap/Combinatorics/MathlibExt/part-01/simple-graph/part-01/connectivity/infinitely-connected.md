@@ -6,11 +6,13 @@ statement: formalized
 lean: SimpleGraph.InfinitelyConnected
 ---
 
-# Infinitely Connected
+# Infinitely connected graphs
 
-We say a graph is infinitely connected if any two vertices are connected by infinitely many
-pairwise disjoint paths. Note that graphs with at most one vertex are not classed as
-infinitely connected.
+**Infinitely connected graphs.** A simple graph $G$ is infinitely connected if it has at
+least two vertices and, for any two distinct vertices $u$ and $v$, there is an infinite set of
+paths from $u$ to $v$ in $G$ that are pairwise internally disjoint.
+
+In particular, a graph with at most one vertex is not infinitely connected.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Internally Disjoint](internally-disjoint.md)
+- [Internally disjoint walks](internally-disjoint.md)
 
 ## Sources
 

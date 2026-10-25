@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.extFact
 ---
 
-# Ext Fact
+# Extended factorial
 
-Extended factorial: ordinary factorial for `n >= 0`, zero for `n < 0`.
+**Extended factorial.** For an integer $n$, the extended factorial of $n$ is the rational
+number $n!$ when $n \ge 0$ and $0$ when $n < 0$.
 
 ## Depends on
 

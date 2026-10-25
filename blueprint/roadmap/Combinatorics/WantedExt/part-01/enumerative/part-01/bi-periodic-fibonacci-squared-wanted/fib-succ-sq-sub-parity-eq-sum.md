@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.fib_succ_sq_sub_parity_eq_sum
 ---
 
-# Fib succ sq sub parity eq sum
+# Squared Fibonacci numbers as weighted sums of squares
 
-Corollary 3.10: for `n ≥ 1`,
-`F²_{n+1} - ξ(n+1) = ∑_{k=1}^{n} (n-k+1) F²_k = ∑_{k=1}^{n} k F²_{n-k+1}`.
+**Squared Fibonacci numbers as weighted sums of squares.** Let $F_k$ denote the Fibonacci
+numbers ($F_0 = 0$, $F_1 = 1$) and let $\xi(m) = m \bmod 2$. For every natural number $n \ge 1$,
+
+$$
+F_{n+1}^2 - \xi(n+1) = \sum_{k=1}^{n} (n-k+1) F_k^2 = \sum_{k=1}^{n} k F_{n-k+1}^2.
+$$
 
 ## Depends on
 

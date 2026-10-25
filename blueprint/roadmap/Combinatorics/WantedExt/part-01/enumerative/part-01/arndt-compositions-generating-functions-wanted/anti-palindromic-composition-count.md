@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.antiPalindromicCompositionCount
 ---
 
-# Anti Palindromic Composition Count
+# Anti-palindromic compositions
 
-The number of anti-palindromic compositions of `n` with `m` parts: `m`-tuples `c` of positive
-integers with `∑ c = n` and `c i ≠ c j` whenever `i + j + 1 = m` and `i ≠ j` (0-based form of
-`σ_i ≠ σ_{ℓ+1-i}` for `i ≠ (ℓ+1)/2`).
+**Anti-palindromic compositions.** For natural numbers $n$ and $m$, the number of
+anti-palindromic compositions of $n$ with $m$ parts: sequences $(c_1, \dots, c_m)$ of positive
+integers with $c_1 + \dots + c_m = n$ and $c_i \ne c_{m+1-i}$ for every $i$ with
+$2i \ne m + 1$. That is, each part differs from the part in the mirror position, except the
+middle part when $m$ is odd.
 
 ## Depends on
 

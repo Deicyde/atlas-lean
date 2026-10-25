@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.truncIncr
 ---
 
-# Trunc Incr
+# Increasing subsequences of every smaller length
 
-An increasing subsequence truncates to any shorter length.
+**Increasing subsequences of every smaller length.** Let $f$ be a real sequence indexed by
+$\{0, \dots, N-1\}$. If $f$ has a strictly increasing subsequence of length $k$, then for every
+$r \le k$ it has a strictly increasing subsequence of length $r$.
 
 ## Depends on
 
-- [Is Incr Subseq](is-incr-subseq.md)
+- [Increasing subsequence](is-incr-subseq.md)
 
 ## Sources
 

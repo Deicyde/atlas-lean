@@ -7,19 +7,21 @@ proof: formalized
 lean: SimpleGraph.DichromaticColorable.of_edgeless
 ---
 
-# Of edgeless
+# Edgeless graphs are dichromatically $1$-colourable
 
-Edgeless graphs are dichromatically `1`-colourable: no orientation has
-any directed edge, so no directed cycle exists.
+**Edgeless graphs are dichromatically $1$-colourable.** If a simple graph $G$ has no edges,
+then $G$ is dichromatically $1$-colourable.
+
+No orientation of $G$ has an arc, so there is no closed directed walk of positive length.
 
 ## Depends on
 
-- [Dichromatic Colorable](dichromatic-colorable.md)
+- [Dichromatically $k$-colourable graphs](dichromatic-colorable.md)
 
 ## Proof depends on
 
-- [Is Directed Cycle](is-directed-cycle.md)
-- [Is Orientation](is-orientation.md)
+- [Closed directed walks](is-directed-cycle.md)
+- [Orientations of a graph](is-orientation.md)
 
 ## Sources
 

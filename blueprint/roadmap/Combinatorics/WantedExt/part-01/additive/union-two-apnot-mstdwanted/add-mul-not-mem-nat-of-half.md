@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.add_mul_not_mem_nat_of_half
 ---
 
-# Lemma 22
+# No integer points for a half-integer start and an odd denominator
 
-**Lemma 22.** For `x = s₁ + 1/2` and `d = s₂ + p₂/q₂` with `q₂` odd, `x + id ∉ ℕ` for every `i ≥
-0`.
+**No integer points for a half-integer start and an odd denominator.** Let $s_1, s_2, p_2, q_2$
+be natural numbers with $q_2$ odd, and let $x = s_1 + 1/2$ and $d = s_2 + p_2/q_2$. Then
+$x + id$ is not a nonnegative integer for any natural number $i$.
 
 ## Depends on
 

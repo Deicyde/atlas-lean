@@ -5,5 +5,5 @@ navigation: module
 
 # Nash Williams
 
-- [Is Arboricity Coloring](is-arboricity-coloring.md)
-- [Nash williams arboricity](nash-williams-arboricity.md)
+- [Arboricity colorings](is-arboricity-coloring.md)
+- [Nash–Williams arboricity theorem](nash-williams-arboricity.md)

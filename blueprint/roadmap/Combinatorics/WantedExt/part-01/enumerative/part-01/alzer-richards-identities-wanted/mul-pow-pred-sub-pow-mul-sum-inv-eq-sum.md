@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.mul_pow_pred_sub_pow_mul_sum_inv_eq_sum_choose
 ---
 
-# Mul pow pred sub pow mul sum inv eq sum choose
+# A reciprocal-sum identity for generalized binomial coefficients
 
-For `p ≥ 1` and complex `z ∉ {0, 1, ..., p - 1}`:
-`p z^{p-1} - z^p ∑_{k=0}^{p-1} 1/(z-k) = ∑_{k=0}^{p-1} (-1)^{p-k} k^p/(z-k) C(z, k) C(z-k-1, p-k-1)`.
+**A reciprocal-sum identity for generalized binomial coefficients.** For a complex number $w$
+and a natural number $j$ write $\binom{w}{j} = w(w-1)\cdots(w-j+1)/j!$. Let $p \ge 1$ be a
+natural number and let $z$ be a complex number with $z \ne k$ for every natural number $k < p$.
+Then
+
+$$
+p z^{p-1} - z^p \sum_{k=0}^{p-1} \frac{1}{z-k} =
+\sum_{k=0}^{p-1} \frac{(-1)^{p-k} k^p}{z-k} \binom{z}{k} \binom{z-k-1}{p-k-1}.
+$$
 
 ## Depends on
 

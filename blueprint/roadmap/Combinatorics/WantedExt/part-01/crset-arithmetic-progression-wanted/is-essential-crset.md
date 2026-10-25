@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsEssentialCRSet
 ---
 
-# Is Essential CRSet
+# Essential CR-set
 
-`A` is an essential CR-set: `A ∈ p` for an idempotent ultrafilter `p` all of
-whose members are CR-sets, i.e. an idempotent of `β(CR)`.
+**Essential CR-set.** Let $(S, +)$ be a commutative semigroup, and add ultrafilters on $S$ by
+the rule that $E \in p + q$ if and only if $\{x \in S : \{y \in S : x + y \in E\} \in q\} \in p$.
+A subset $A$ of $S$ is an essential CR-set when there is an ultrafilter $p$ on $S$ with
+$p + p = p$, all of whose members are CR-sets, such that $A \in p$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is CRSet](is-crset.md)
+- [CR-set](is-crset.md)
 
 ## Sources
 

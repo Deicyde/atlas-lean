@@ -7,18 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.SelfGeneratingSet.generated_isSG
 ---
 
-# Generated is SG
+# The generated set is self-generating
 
-The generated closure satisfies the self-generating condition.
+**The generated set is self-generating.** Let $F$ be a finite set of functions
+$\mathbb{N} \to \mathbb{N}$ and $s \in \mathbb{N}$. The set generated from $s$ by $F$ contains $s$
+and is closed under every $f \in F$: if $x$ is in it and $f \in F$, then $f(x)$ is in it.
 
 ## Depends on
 
-- [Generated Set](generated-set.md)
-- [SG](sg.md)
+- [Set generated from a seed](generated-set.md)
+- [Self-generating sets](sg.md)
 
 ## Proof depends on
 
-- [Gen](gen.md)
+- [Reachability from a seed by generators](gen.md)
 
 ## Sources
 

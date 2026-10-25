@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.invFact_of_neg
 ---
 
-# Inv Fact of neg
+# The inverse factorial vanishes at negative integers
 
-The inverse factorial vanishes at negative integers.
+**The inverse factorial vanishes at negative integers.** For every integer $n < 0$, the
+inverse factorial of $n$ is $0$.
 
 ## Depends on
 
-- [Inv Fact](inv-fact.md)
+- [Inverse factorial on the integers](inv-fact.md)
 
 ## Sources
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_add_mul_eq_zero_mul_pow_eq_one
 ---
 
-# Exists add mul eq zero mul pow eq one
+# Nonzero solutions of a two-equation system modulo primes greater than 3 congruent to 3 mod 4
 
-Lemma 6: for a prime `n > 3` with `n ≡ 3 (mod 4)` there are nonzero `x, y ∈ ℤ/n` and
-`r ∈ {2, 3}` with `x + r y = 0` and `x y^r = 1`. The record's garbled `xy r = 1` is read
-as `x y^r = 1`, as in the proof (`x y^2 = x^3 / 4 = 1` in its first case).
+**Nonzero solutions of a two-equation system modulo primes greater than 3 congruent to 3
+mod 4.** Let $n > 3$ be a prime with $n \equiv 3 \pmod 4$. Then there are nonzero
+$x, y \in \mathbb{Z}/n\mathbb{Z}$ and an integer $r \in \{2, 3\}$ such that $x + ry = 0$ and
+$xy^r = 1$ in $\mathbb{Z}/n\mathbb{Z}$.
+
+The source prints the second equation as $xy r = 1$; it is read as $xy^r = 1$, as in the proof,
+whose first case computes $xy^2 = x^3/4 = 1$.
 
 ## Depends on
 

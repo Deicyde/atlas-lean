@@ -6,16 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.isRAccessible_iff
 ---
 
-# Is RAccessible iff
+# Characterization of $r$-accessible sets
 
-Characterization of `r`-accessibility, with positivity and the universal
-positive-length quantifier made explicit.
+**Characterization of $r$-accessible sets.** Let $r$ be a natural number and $D$ a set of
+natural numbers. Then $D$ is $r$-accessible if and only if every element of $D$ is positive,
+$r \ge 1$, and for every coloring $c$ of the positive integers with the colors $0, 1, \dots, r - 1$
+and every natural number $k \ge 1$ there are positive integers $x_0, \dots, x_{k-1}$ that are
+monochromatic for $c$ and form a $D$-diffsequence: $x_{i+1} - x_i \in D$, the difference taken in
+the integers, for every $i$ with $i + 1 < k$.
 
 ## Depends on
 
-- [Is DDiff Sequence](is-ddiff-sequence.md)
-- [Is Monochromatic](is-monochromatic.md)
-- [Is RAccessible](is-raccessible.md)
+- [$D$-diffsequences](is-ddiff-sequence.md)
+- [Monochromatic sequences of positive integers](is-monochromatic.md)
+- [$r$-accessibility for colorings of the positive integers](is-raccessible.md)
 
 ## Sources
 

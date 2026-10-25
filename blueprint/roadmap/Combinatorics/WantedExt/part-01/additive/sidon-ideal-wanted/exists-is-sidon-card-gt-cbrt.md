@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_isSidon_card_gt_cbrt
 ---
 
-# Exists is Sidon card gt cbrt
+# Mian–Chowla lower bound for an infinite Sidon set
 
-Theorem 3, item 1 (Mian–Chowla, as quoted): some Sidon set `A` satisfies
-`|[1, n] ∩ A| > c n^{1/3}` for all `n ≥ 1`, for some `c > 0`.
+**Mian–Chowla lower bound for an infinite Sidon set.** There exist a Sidon set
+$A \subseteq \mathbb{N}$ and a real constant $c > 0$ such that
+$|A \cap \{1, \dots, n\}| > c\, n^{1/3}$ for every natural number $n \ge 1$.
 
 ## Depends on
 

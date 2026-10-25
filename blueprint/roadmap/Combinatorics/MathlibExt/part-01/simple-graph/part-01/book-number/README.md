@@ -5,6 +5,6 @@ navigation: module
 
 # Book Number
 
-- [Book Number](book-number.md)
-- [Le book Number](le-book-number.md)
-- [Book Number le](book-number-le.md)
+- [Book number](book-number.md)
+- [Common neighbors of an edge are bounded by the book number](le-book-number.md)
+- [Bounding the book number](book-number-le.md)

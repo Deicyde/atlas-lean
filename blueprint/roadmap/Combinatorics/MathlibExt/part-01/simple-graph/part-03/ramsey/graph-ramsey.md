@@ -6,13 +6,13 @@ statement: formalized
 lean: SimpleGraph.graphRamsey
 ---
 
-# Graph Ramsey
+# Classical Ramsey numbers
 
-The classical two-color graph Ramsey number `R(s, t)`, defined as the least
-cardinality at which `classicalRamsey s t` holds.
+**Classical Ramsey numbers.** For natural numbers $s$ and $t$, the Ramsey number $R(s, t)$ is
+the least $N$ such that every simple graph on $N$ vertices contains the complete graph $K_s$ as a
+subgraph or has a complement containing $K_t$ as a subgraph, and $0$ if there is no such $N$.
 
-The defining set is nonempty by the finite Ramsey theorem. This definition is
-total independently of that fact because `sInf` on `ℕ` is total.
+Such an $N$ always exists by the finite Ramsey theorem.
 
 ## Depends on
 
@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Classical Ramsey](classical-ramsey.md)
+- [The Ramsey property for cliques](classical-ramsey.md)
 
 ## Sources
 

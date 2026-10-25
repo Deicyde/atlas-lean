@@ -7,22 +7,24 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.lcsLength_eq_findGreatest
 ---
 
-# Lcs Length eq find Greatest
+# The LCS length as a bounded maximum
 
-Mathematical `Nat.findGreatest` characterization used to export proof
-tasks without depending on the CSLib implementation module.
+**The LCS length as a bounded maximum.** For binary strings $x$ and $y$ of length $n$, the
+length $\mathrm{LCS}(x, y)$ of a longest common subsequence equals the largest $k \le n$ such that
+$x$ and $y$ have a common subsequence of length $k$ (such $k$ exist, since the empty sequence is a
+common subsequence).
 
 ## Depends on
 
-- [Binary String](binary-string.md)
-- [Common Subsequence Lengths](common-subsequence-lengths.md)
-- [Lcs Length](lcs-length.md)
+- [Binary strings](binary-string.md)
+- [Lengths of common subsequences](common-subsequence-lengths.md)
+- [Length of a longest common subsequence](lcs-length.md)
 
 ## Proof depends on
 
-- [Is Common Subsequence](is-common-subsequence.md)
-- [Lcs Length is Greatest](lcs-length-is-greatest.md)
-- [Lcs Length le](lcs-length-le.md)
+- [Common subsequence](is-common-subsequence.md)
+- [The LCS length is the maximum common-subsequence length](lcs-length-is-greatest.md)
+- [The LCS length is at most the string length](lcs-length-le.md)
 
 ## Sources
 

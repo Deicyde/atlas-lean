@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsGapLacunarySet
 ---
 
-# Is Gap Lacunary Set
+# Gap-lacunary set
 
-An infinite set `A ⊆ ℕ` is *lacunary* if `A(n + 1) - A(n) → ∞` (gap lacunarity;
-distinct from the multiplicative-growth `MetaMathlibExt.IsLacunarySet` of
-`WantedExt.Combinatorics.AccessibleSetsWanted`).
+**Gap-lacunary set.** A set $A \subseteq \mathbb{N}$ is *gap-lacunary* (called *lacunary* in
+the source) if it is infinite and, writing $A(n)$ for its $n$-th element in increasing order
+(counting from $n = 0$), the gaps $A(n+1) - A(n)$ tend to infinity as $n \to \infty$.
+
+This differs from Hadamard lacunarity, where consecutive elements grow by a factor at least
+$q > 1$.
 
 ## Depends on
 

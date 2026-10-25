@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.zykovZeroIndicator
 ---
 
-# Zykov Zero Indicator
+# Zero indicator of a natural number
 
-The Boolean zero indicator used in the source's transfer matrix.
+**Zero indicator of a natural number.** For a natural number $z$, the zero indicator of $z$ is
+the Boolean value that is true if $z = 0$ and false otherwise.
 
 ## Depends on
 

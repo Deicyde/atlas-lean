@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.zModAffinelyEquivalent_refl
 ---
 
-# Z Mod Affinely Equivalent refl
+# Affine equivalence is reflexive
 
-Every set is affinely equivalent to itself (take `d = 1`, `s = 0`).
+**Affine equivalence is reflexive.** For every natural number $M$, every subset $A$ of
+$\mathbb{Z}/M\mathbb{Z}$ is affinely equivalent to itself (take $d = 1$ and $s = 0$).
 
 ## Depends on
 
-- [ZMod Affinely Equivalent](zmod-affinely-equivalent.md)
+- [Affine equivalence of sets of residues](zmod-affinely-equivalent.md)
 
 ## Sources
 

@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.catalanCapacityDist_eval_zero
 ---
 
-# Catalan Capacity Dist eval zero
+# Zero-capacity Catalan words with a given last letter
 
-Mansour and Shattuck's Theorem 3, formula (24): for `2 ≤ i ≤ n`, the number of
-zero-capacity Catalan words of length `n` ending in `i` is
-`a(n, i; 0) = ∑_{m=0}^{n-i} C(n-m-2, i-2) F_{2m-1}`, with `F_{-1} = 1`.
+**Zero-capacity Catalan words with a given last letter.** For $2 \le i \le n$, let
+$a(n, i; q)$ be the capacity distribution of the Catalan words of length $n$ ending in $i$, so that
+$a(n, i; 0)$ is the number of those words with capacity $0$. Then
+
+$$
+a(n, i; 0) = \sum_{m=0}^{n-i} \binom{n-m-2}{i-2} F_{2m-1},
+$$
+
+where $F_k$ is the $k$-th Fibonacci number ($F_1 = F_2 = 1$) and $F_{-1} = 1$.
 
 ## Depends on
 
-- [Catalan Capacity Dist](catalan-capacity-dist.md)
+- [Capacity distribution of Catalan words with a given last letter](catalan-capacity-dist.md)
 
 ## Sources
 

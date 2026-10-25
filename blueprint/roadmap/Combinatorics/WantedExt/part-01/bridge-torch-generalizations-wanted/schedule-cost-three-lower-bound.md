@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.scheduleCost_three_lower_bound
 ---
 
-# Schedule Cost three lower bound
+# Lower bound for capacity-three schedules
 
-For `n ≥ 7`, every capacity-`3` schedule costs at least
-`V(n) = n²/6 + 2n - 11/2`.
+**Lower bound for capacity-three schedules.** Let $n \ge 7$. Every bridge schedule of
+capacity $3$ for the $n$ people $1, \dots, n$ (person $i$ crossing in time $i$) has total cost at
+least $V(n) = n^2/6 + 2n - 11/2$.
 
 ## Depends on
 
-- [Is Bridge Schedule](is-bridge-schedule.md)
+- [Bridge schedules](is-bridge-schedule.md)
 - [Schedule Cost](schedule-cost.md)
 
 ## Sources

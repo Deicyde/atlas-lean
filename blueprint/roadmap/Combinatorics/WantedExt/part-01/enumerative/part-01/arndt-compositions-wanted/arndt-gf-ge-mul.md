@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.arndtGF_ge_mul
 ---
 
-# Arndt GF ge mul
+# Generating function of Arndt compositions with bounded smallest part
 
-The generating function `B(x, y; ℓ)` of Arndt compositions with smallest part at least `ℓ`
-is `(1 - x²)(1 - x + x^ℓ y) / (1 - x - x² + x³ - x^{2ℓ+1}y²)` for `ℓ ≥ 1`, stated
-multiplicatively.
+**Generating function of Arndt compositions with bounded smallest part.** For a natural
+number $\ell \ge 1$, let $B(x, y; \ell)$ be the formal power series in $x$ over $\mathbb{Z}[y]$
+whose coefficient of $x^n y^k$ is the number of Arndt compositions of $n$ with $k$ parts, all at
+least $\ell$. Then
+
+$$B(x, y; \ell) \left(1 - x - x^2 + x^3 - x^{2\ell+1} y^2\right) = (1 - x^2)(1 - x + x^\ell y).$$
 
 ## Depends on
 
-- [Arndt GF](arndt-gf.md)
+- [Generating function of Arndt compositions with parts in a set](arndt-gf.md)
 
 ## Sources
 

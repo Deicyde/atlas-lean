@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.euclideanChainLength_of_ne_zero
 ---
 
-# Euclidean Chain Length of ne zero
+# Recursion for the Euclidean chain function
 
-`F(x, y) = 1 + F(y, (-x) mod y)` for `y ≠ 0`.
+**Recursion for the Euclidean chain function.** For natural numbers $x$ and $y$ with $y \ne 0$,
+the Euclidean chain function $F$ satisfies $F(x, y) = 1 + F(y, (-x) \bmod y)$, where
+$(-x) \bmod y$ is the least nonnegative residue of $-x$ modulo $y$.
 
 ## Depends on
 
-- [Euclidean Chain Length](euclidean-chain-length.md)
+- [Euclidean chain function](euclidean-chain-length.md)
 
 ## Sources
 

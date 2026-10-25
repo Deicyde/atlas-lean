@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.arndtCompositionCount_eq_alternating_sum_and_recurrence
 ---
 
-# Arndt Composition Count eq alternating sum and recurrence
+# Alternating sum and recurrence for Arndt compositions
 
-Closed sum and recurrence for `a(n, m)`: for all `n, m ≥ 0`,
-`a(n, m) = ∑_{ℓ=0}^{n-m-⌊m/2⌋} C(m+ℓ-1, ℓ) C(n-m-ℓ-1, n-m-⌊m/2⌋-ℓ) (-1)^{n-m-⌊m/2⌋-ℓ}` (the sum
-is empty, so `a(n, m) = 0`, when `n < m + ⌊m/2⌋`), and for `n ≥ 3`, `m ≥ 2`,
-`a(n, m) = a(n-1, m) + a(n-2, m) - a(n-3, m) + a(n-3, m-2)`. Binomial coefficients with upper
-index `-1` are the generalized ones (`Ring.choose` over `ℤ`, so `C(-1, 0) = 1`).
+**Alternating sum and recurrence for Arndt compositions.** Let $a(n, m)$ be the number of
+Arndt compositions of $n$ with $m$ parts, and write $K = n - m - \lfloor m/2 \rfloor$. For all
+$n, m \ge 0$: if $m + \lfloor m/2 \rfloor \le n$, then
+
+$$a(n, m) = \sum_{\ell=0}^{K} \binom{m+\ell-1}{\ell} \binom{n-m-\ell-1}{K-\ell} (-1)^{K-\ell},$$
+
+and otherwise $a(n, m) = 0$. Moreover, for all $n \ge 3$ and $m \ge 2$,
+$a(n, m) = a(n-1, m) + a(n-2, m) - a(n-3, m) + a(n-3, m-2)$. The binomial coefficients are the
+generalized ones, $\binom{r}{k} = r(r-1)\cdots(r-k+1)/k!$ for an integer $r$, so the upper
+index $-1$ is allowed and $\binom{-1}{k} = (-1)^k$.
 
 ## Depends on
 
-- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

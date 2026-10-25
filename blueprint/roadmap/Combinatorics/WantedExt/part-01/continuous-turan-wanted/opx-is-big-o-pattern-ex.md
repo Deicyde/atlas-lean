@@ -12,8 +12,8 @@ natural `n`.
 
 ## Depends on
 
-- [Opx](opx.md)
-- [Pattern Ex](pattern-ex.md)
+- [Continuous Turán number in the plane](opx.md)
+- [0-1 matrix extremal function of a point pattern](pattern-ex.md)
 
 ## Sources
 

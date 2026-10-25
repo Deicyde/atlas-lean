@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.finite_union_lacunary_not_two_large
 ---
 
-# Finite union lacunary not two large
+# Finite unions of lacunary sets are not 2-large
 
-A finite union of lacunary positive sets is not 2-large.
+**Finite unions of lacunary sets are not 2-large.** For every $n \ge 1$ and all lacunary sets
+$D_1, \dots, D_n$, the union $D_1 \cup \dots \cup D_n$ is not 2-large.
 
 ## Depends on
 
-- [Is Lacunary Set](is-lacunary-set.md)
-- [Is RLarge](is-rlarge.md)
+- [Lacunary set](is-lacunary-set.md)
+- [$r$-large sets](is-rlarge.md)
 
 ## Sources
 

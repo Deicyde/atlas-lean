@@ -14,10 +14,10 @@ paper's `r`-regularity of `AP_F`).
 
 ## Depends on
 
-- [Is DAP](../../accessible-sets-wanted/is-dap.md)
-- [Is Monochromatic](../../accessible-sets-wanted/is-monochromatic.md)
-- [Is RLarge](../../accessible-sets-wanted/is-rlarge.md)
-- [Positive Fibonacci Set](../../accessible-sets-wanted/positive-fibonacci-set.md)
+- [Arithmetic progressions with gap in $D$](../../accessible-sets-wanted/is-dap.md)
+- [Monochromatic sequences of positive integers](../../accessible-sets-wanted/is-monochromatic.md)
+- [$r$-large sets](../../accessible-sets-wanted/is-rlarge.md)
+- [Positive Fibonacci set](../../accessible-sets-wanted/positive-fibonacci-set.md)
 
 ## Sources
 

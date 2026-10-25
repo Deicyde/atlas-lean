@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport_pi_zmod_prime_pow_const
 ---
 
-# Weighted Davenport pi zmod prime pow const
+# Weighted Davenport constant of $(\mathbb{Z}/p^e\mathbb{Z})^r$
 
-For a prime `p`, `1 ≤ a ≤ e` and `r ≥ 1`, every `A ⊆ {1, …, ⌈p^e/(p^a - 1)⌉ - 1}` with
-`p^{e-a} ∈ A` has `D_A((Z_{p^e})^r) = 1 + r(p^a - 1)`.
+**Weighted Davenport constant of $(\mathbb{Z}/p^e\mathbb{Z})^r$.** Let $p$ be a prime and let
+$a, e, r$ be natural numbers with $1 \le a \le e$ and $r \ge 1$. Let $A$ be a finite set of
+natural numbers with $p^{e-a} \in A \subseteq \{1, \dots, \lceil p^e/(p^a - 1) \rceil - 1\}$.
+Then the $A$-weighted Davenport constant of $(\mathbb{Z}/p^e\mathbb{Z})^r$ is
+$D_A((\mathbb{Z}/p^e\mathbb{Z})^r) = 1 + r(p^a - 1)$.
 
 ## Depends on
 

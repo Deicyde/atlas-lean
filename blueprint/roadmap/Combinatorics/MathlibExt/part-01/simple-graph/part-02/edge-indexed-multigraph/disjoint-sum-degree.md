@@ -7,19 +7,21 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.disjointSum_degree
 ---
 
-# Disjoint Sum degree
+# Degrees add under disjoint sums
 
-Degrees add under disjoint union of indexed edge sets.
+**Degrees add under disjoint sums.** Let $M$ and $N$ be edge-indexed multigraphs on the same
+vertex type, each with finitely many edges. Then for every vertex $v$, the degree of $v$ in the
+disjoint sum of $M$ and $N$ equals the degree of $v$ in $M$ plus the degree of $v$ in $N$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Degree](degree.md)
-- [Disjoint Sum](disjoint-sum.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Degree in an edge-indexed multigraph](degree.md)
+- [Disjoint sum of edge-indexed multigraphs](disjoint-sum.md)
 
 ## Proof depends on
 
-- [Inc](inc.md)
+- [Incidence](inc.md)
 
 ## Sources
 

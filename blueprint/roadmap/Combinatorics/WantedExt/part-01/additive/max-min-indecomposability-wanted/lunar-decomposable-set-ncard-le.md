@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.lunarDecomposableSet_ncard_le
 ---
 
-# Lunar Decomposable Set ncard le
+# Upper bound on the number of decomposable lunar numbers
 
-Proposition 21: for fixed `b ≥ 2` there is `C > 0` such that for all `n ≥ 2` and
-`d, v > 0`,
-`|Σ_b^n| ≤ C b^{n+1} (n² e^{-d²/(4(n+2))} + n^{2d+4} 2^{d/2-(n+1)/3}
-  + v n^{2d+2} 2^v b^{d/2-n/b} + n² 2^{-v})`.
+**Upper bound on the number of decomposable lunar numbers.** Fix an integer $b \ge 2$. There
+is a constant $C > 0$ such that for every integer $n \ge 2$ and all reals $d > 0$ and $v > 0$, the
+set $\Sigma_b^n$ of decomposable lunar numbers of base $b$ and degree at most $n$ satisfies
+
+$$|\Sigma_b^n| \le C b^{n+1} \Big(n^2 e^{-d^2/(4(n+2))} + n^{2d+4} 2^{d/2-(n+1)/3} +
+v n^{2d+2} 2^v b^{d/2-n/b} + n^2 2^{-v}\Big).$$
 
 ## Depends on
 
-- [Lunar Decomposable Set](lunar-decomposable-set.md)
+- [Decomposable lunar numbers](lunar-decomposable-set.md)
 
 ## Sources
 

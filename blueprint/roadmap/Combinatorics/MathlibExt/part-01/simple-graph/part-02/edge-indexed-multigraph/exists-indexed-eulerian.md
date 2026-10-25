@@ -7,28 +7,31 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.exists_indexedEulerian
 ---
 
-# Exists indexed Eulerian
+# Euler circuits in edge-indexed multigraphs
 
-A connected finite edge-indexed multigraph of even degrees has an edge-distinguishing
-Euler circuit.
+**Euler circuits in edge-indexed multigraphs.** Let $M$ be an edge-indexed multigraph with
+finitely many vertices and finitely many edges. If the underlying simple graph of $M$ is
+connected and every vertex of $M$ has even degree, then there are a vertex $u$ and a closed
+indexed walk from $u$ to $u$ that is Eulerian, that is, it traverses every edge of $M$ exactly
+once.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Indexed Walk](indexed-walk.md)
-- [Is Eulerian](is-eulerian.md)
-- [Degree](degree.md)
-- [Underlying](underlying.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Indexed walk](indexed-walk.md)
+- [Eulerian indexed walk](is-eulerian.md)
+- [Degree in an edge-indexed multigraph](degree.md)
+- [Underlying simple graph of an edge-indexed multigraph](underlying.md)
 
 ## Proof depends on
 
-- [Exists is Eulerian](../euler-circuit/exists-is-eulerian.md)
-- [Inc](inc.md)
+- [Euler circuits in connected even graphs](../euler-circuit/exists-is-eulerian.md)
+- [Incidence](inc.md)
 - [Is Trail](is-trail.md)
-- [Edges](edges.md)
-- [Inc iff](inc-iff.md)
-- [Underlying adj](underlying-adj.md)
-- [Count P edges eq degree](../euler-circuit/count-p-edges-eq-degree.md)
+- [Edge list of an indexed walk](edges.md)
+- [Incidence is membership in the endpoint pair](inc-iff.md)
+- [Adjacency in the underlying graph](underlying-adj.md)
+- [Edges at a vertex of an Eulerian trail](../euler-circuit/count-p-edges-eq-degree.md)
 
 ## Sources
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.canonicalLineRootSet
 ---
 
-# Canonical Line Root Set
+# The set $\Omega_d$ of attainable canonical-line roots
 
-`canonicalLineRootSet d` is the set of canonical-line roots attained by degree-`d` CL-polynomials
-satisfying `(♢)`.  Root membership is stated with `Polynomial.IsRoot` and is therefore not
-set-theoretically vacuous.
+**The set $\Omega_d$ of attainable canonical-line roots.** For a natural number $d$,
+$\Omega_d$ is the set of complex numbers $z$ on the canonical line such that $z$ is a root of
+some CL-polynomial of degree $d$ satisfying $(\diamondsuit)$.
 
 ## Depends on
 
@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Diamond](has-diamond.md)
-- [Is CL](is-cl.md)
+- [Property (♢)](has-diamond.md)
+- [CL-polynomials](is-cl.md)
 - [Canonical Line](canonical-line.md)
 
 ## Sources

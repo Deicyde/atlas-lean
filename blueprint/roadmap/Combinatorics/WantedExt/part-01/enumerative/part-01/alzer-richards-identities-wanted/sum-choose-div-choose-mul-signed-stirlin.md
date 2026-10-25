@@ -5,10 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_div_choose_mul_signedStirlingFirst
 ---
 
-# Sum choose div choose mul signed Stirling First
+# Alternating sums of signed Stirling numbers of the first kind
 
-For `j, n ≥ 0`: `∑_{k=0}^{n+1} (-1)^k C(n+1, k) / C(k+j+r, r) · s(k+j+r, k+j)` is `0` for
-`0 ≤ r ≤ n` and `(n+1)! / 2^{n+1}` for `r = n + 1`.
+**Alternating sums of signed Stirling numbers of the first kind.** Write $s(n, k)$ for the
+signed Stirling numbers of the first kind. For all natural numbers $j$ and $n$ and every natural
+number $r \le n$,
+
+$$
+\sum_{k=0}^{n+1} (-1)^k \frac{\binom{n+1}{k}}{\binom{k+j+r}{r}} s(k+j+r, k+j) = 0,
+$$
+
+and
+
+$$
+\sum_{k=0}^{n+1} (-1)^k \frac{\binom{n+1}{k}}{\binom{k+j+n+1}{n+1}} s(k+j+n+1, k+j) =
+\frac{(n+1)!}{2^{n+1}}.
+$$
 
 ## Depends on
 

@@ -7,9 +7,11 @@ proof: formalized
 lean: SimpleGraph.IsHamiltonian.square_mono
 ---
 
-# Square mono
+# Adding edges preserves a Hamiltonian square
 
-A Hamiltonian square remains Hamiltonian after edges are added to the original graph.
+**Adding edges preserves a Hamiltonian square.** Let $G$ and $H$ be simple graphs on the same
+finite vertex set such that every edge of $G$ is an edge of $H$. If the square of $G$ is
+Hamiltonian, then the square of $H$ is Hamiltonian.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ A Hamiltonian square remains Hamiltonian after edges are added to the original g
 
 ## Proof depends on
 
-- [Square mono](square-mono.md)
+- [Monotonicity of the graph square](square-mono.md)
 
 ## Sources
 

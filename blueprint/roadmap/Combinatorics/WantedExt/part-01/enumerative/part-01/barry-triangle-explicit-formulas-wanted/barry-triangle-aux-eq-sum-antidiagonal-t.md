@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.barryTriangleAux_eq_sum_antidiagonalTuple
 ---
 
-# Barry Triangle Aux eq sum antidiagonal Tuple
+# Matrix-free formula for Barry's triangle
 
-Main result, matrix-free form (equation (11)): for `2 ≤ a ≤ n`,
-`s(0, n, a) = ∑_{p₁ + ⋯ + p_{a-1} = n - a} ∏_{i=1}^{a-1} (i (a - i))^{pᵢ}`, the sum over
-tuples of nonnegative integers. Index `i : Fin (a - 1)` stands for the paper's `i + 1`.
+**Matrix-free formula for Barry's triangle.** Let $s$ be Barry's triangle recurrence and let
+$2 \le a \le n$. Then
+
+$$s(0, n, a) = \sum_{p_1 + \dots + p_{a-1} = n - a} \prod_{i=1}^{a-1} \bigl(i(a - i)\bigr)^{p_i},$$
+
+where the sum runs over all tuples $(p_1, \dots, p_{a-1})$ of natural numbers with sum $n - a$.
 
 ## Depends on
 
-- [Barry Triangle Aux](barry-triangle-aux.md)
+- [Barry's triangle recurrence](barry-triangle-aux.md)
 
 ## Sources
 

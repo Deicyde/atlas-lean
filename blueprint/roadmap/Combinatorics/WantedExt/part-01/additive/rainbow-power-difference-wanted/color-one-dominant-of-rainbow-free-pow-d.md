@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.color_one_dominant_of_rainbowFree_powDiff
 ---
 
-# Color one dominant of rainbow Free pow Diff
+# The color of one dominates bichromatic strings
 
-In an exact rainbow-free coloring `c` of the positive integers with `r` colors for
-`x - y = z ^ k`, the color `c 1` is dominant: every bichromatic string `i, i + 1, …, i + ℓ - 1`
-(`i ≥ 1`) contains it.
+**The color of one dominates bichromatic strings.** Let $r$ and $k$ be natural numbers and let
+$c$ be a coloring of the positive integers with $r$ colors that uses every color on some positive
+integer and is rainbow-free for $x - y = z^k$: no positive integers $x, y, z$ with $x = y + z^k$
+have $c(x), c(y), c(z)$ pairwise distinct. Then for every positive integer $i$ and every natural
+number $\ell$, if $c$ takes exactly two colors on $i, i + 1, \dots, i + \ell - 1$, one of these
+integers has the color $c(1)$.
 
 ## Depends on
 

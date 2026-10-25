@@ -7,13 +7,15 @@ proof: formalized
 lean: SimpleGraph.exists_adj_of_mem_externalNeighborSet
 ---
 
-# Exists adj of mem external Neighbor Set
+# External neighbours have a neighbour in the set
 
-An external neighbour comes with an adjacent source vertex in `A`.
+**External neighbours have a neighbour in the set.** Let $G$ be a simple graph on a vertex
+set $V$ and let $A \subseteq V$. If $v$ is an external neighbour of $A$ in $G$, then $v$ is
+adjacent in $G$ to some vertex $a \in A$.
 
 ## Depends on
 
-- [External Neighbor Set](external-neighbor-set.md)
+- [External neighbourhood](external-neighbor-set.md)
 
 ## Sources
 

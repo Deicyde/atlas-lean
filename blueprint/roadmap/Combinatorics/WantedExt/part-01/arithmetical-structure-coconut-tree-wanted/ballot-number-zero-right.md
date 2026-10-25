@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.ballotNumber_zero_right
 ---
 
-# Ballot Number zero right
+# Ballot numbers with second index zero
 
-`B(n, 0) = 1`.
+**Ballot numbers with second index zero.** For every natural number $n$, the ballot number
+$B(n, 0)$ equals $1$.
 
 ## Depends on
 
-- [Ballot Number](ballot-number.md)
+- [Ballot numbers](ballot-number.md)
 
 ## Sources
 

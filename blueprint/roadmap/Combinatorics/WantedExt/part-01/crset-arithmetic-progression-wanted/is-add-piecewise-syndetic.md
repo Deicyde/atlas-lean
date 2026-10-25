@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsAddPiecewiseSyndetic
 ---
 
-# Is Add Piecewise Syndetic
+# Piecewise syndetic set in a commutative semigroup
 
-A set `A` is piecewise syndetic when for some finite `F` the union
-`⋃ t ∈ F, -t + A` is thick, where `-t + A = {s | t + s ∈ A}`.
+**Piecewise syndetic set in a commutative semigroup.** A subset $A$ of a commutative semigroup
+$(S, +)$ is piecewise syndetic when there is a finite set $F \subseteq S$ such that the union
+$\bigcup_{t \in F} (-t + A)$ is thick, where $-t + A = \{s \in S : t + s \in A\}$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Add Thick](is-add-thick.md)
+- [Thick set in a commutative semigroup](is-add-thick.md)
 
 ## Sources
 

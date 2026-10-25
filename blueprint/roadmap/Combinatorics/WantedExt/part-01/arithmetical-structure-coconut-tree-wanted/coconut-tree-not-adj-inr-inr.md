@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.coconutTree_not_adj_inr_inr
 ---
 
-# Coconut Tree not adj inr inr
+# Leaves of a coconut tree are pairwise nonadjacent
 
-Leaves of `CT(p, s)` are pairwise nonadjacent.
+**Leaves of a coconut tree are pairwise nonadjacent.** No leaf of the coconut tree $CT(p, s)$
+is adjacent to a leaf.
 
 ## Depends on
 
-- [Coconut Tree](coconut-tree.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

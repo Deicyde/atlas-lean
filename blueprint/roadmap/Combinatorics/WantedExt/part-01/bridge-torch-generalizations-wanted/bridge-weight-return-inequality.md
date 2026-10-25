@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_return_inequality
 ---
 
-# Bridge Weight return inequality
+# Return inequality for the capacity-3 weights
 
-Return inequality: for every non-empty set `R` of positive integers with
-`|R| ≤ 3`, `(9/2)(|R| - 1) + max R + ∑_{i ∈ R} (yᵢ - i) ≥ 0`.
+**Return inequality for the capacity-3 weights.** Let $y_i$ be the weights of the capacity-3
+lower bound. For every nonempty set $R$ of positive integers with $|R| \le 3$,
+
+$$\frac{9}{2}(|R| - 1) + \max R + \sum_{i \in R} (y_i - i) \ge 0.$$
 
 ## Depends on
 
-- [Bridge Weight](bridge-weight.md)
+- [Weights of the capacity-3 lower bound](bridge-weight.md)
 
 ## Sources
 

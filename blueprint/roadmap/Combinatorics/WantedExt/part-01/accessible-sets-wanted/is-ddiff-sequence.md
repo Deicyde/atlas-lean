@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsDDiffSequence
 ---
 
-# Is DDiff Sequence
+# $D$-diffsequences
 
-An integer-valued finite sequence is a `D`-diffsequence when every ordered
-successive difference equals the coercion of some member of `D`.  This keeps
-the paper's integer ambient space while `D` consists of natural gaps.
+**$D$-diffsequences.** Let $D$ be a set of natural numbers and $k$ a natural number. A
+finite sequence $x_0, \dots, x_{k-1}$ of integers is a $D$-diffsequence when for every $i$ with
+$i + 1 < k$ there is $d \in D$ with $x_{i+1} - x_i = d$.
 
 ## Depends on
 

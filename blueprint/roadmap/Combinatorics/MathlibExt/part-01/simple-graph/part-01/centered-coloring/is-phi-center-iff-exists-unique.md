@@ -7,13 +7,16 @@ proof: formalized
 lean: SimpleGraph.isPhiCenter_iff_existsUnique
 ---
 
-# Is Phi Center iff exists Unique
+# Centers via unique existence
 
-Characterization of centers via unique existence.
+**Centers via unique existence.** Let $\varphi$ be a proper vertex coloring of a simple graph
+$G$, let $s$ be a set of vertices of $G$ and let $v$ be a vertex of $G$. Then $v$ is a
+$\varphi$-center of $s$ if and only if $v \in s$ and there is exactly one vertex $u \in s$ with
+$\varphi(u) = \varphi(v)$.
 
 ## Depends on
 
-- [Is Phi Center](is-phi-center.md)
+- [Center of a vertex set under a coloring](is-phi-center.md)
 
 ## Sources
 

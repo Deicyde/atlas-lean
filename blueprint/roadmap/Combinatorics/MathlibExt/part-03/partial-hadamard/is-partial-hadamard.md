@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.PartialHadamard.IsPartialHadamard
 ---
 
-# Is Partial Hadamard
+# Partial Hadamard matrices
 
-An `n × t` sign matrix has pairwise orthogonal rows. Sign matrices
-are encoded by `Fin 2` entries to keep the type finite.
+**Partial Hadamard matrices.** Read a bit $b \in \{0, 1\}$ as the sign $\sigma(b)$, where
+$\sigma(0) = -1$ and $\sigma(1) = 1$. An $n \times t$ matrix $M$ with entries in $\{0, 1\}$ is a
+partial Hadamard matrix when its rows are pairwise orthogonal as sign vectors: for all distinct
+rows $i \ne i'$, $\sum_{j < t} \sigma(M_{ij}) \sigma(M_{i'j}) = 0$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sign Val](sign-val.md)
+- [Sign of a bit](sign-val.md)
 
 ## Sources
 

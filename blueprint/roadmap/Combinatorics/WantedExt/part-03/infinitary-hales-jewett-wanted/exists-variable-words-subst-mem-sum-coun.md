@@ -16,7 +16,7 @@ sets.
 
 ## Depends on
 
-- [Is Mul JSet](../../../MathlibExt/part-03/semigroup-largeness/is-mul-jset.md)
+- [J-sets in a semigroup](../../../MathlibExt/part-03/semigroup-largeness/is-mul-jset.md)
 
 ## Sources
 

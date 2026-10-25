@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.truncDecr
 ---
 
-# Trunc Decr
+# Decreasing subsequences of every smaller length
 
-A decreasing subsequence truncates to any shorter length.
+**Decreasing subsequences of every smaller length.** Let $f$ be a real sequence indexed by
+$\{0, \dots, N-1\}$. If $f$ has a strictly decreasing subsequence of length $k$, then for every
+$s \le k$ it has a strictly decreasing subsequence of length $s$.
 
 ## Depends on
 
-- [Is Decr Subseq](is-decr-subseq.md)
+- [Decreasing subsequence](is-decr-subseq.md)
 
 ## Sources
 

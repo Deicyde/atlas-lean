@@ -12,7 +12,7 @@ If `(a, s_2, …)` is a perfect `2^k`-cover and `b` is an odd multiple of `a`, t
 
 ## Depends on
 
-- [Is Perfect MCover](is-perfect-mcover.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
 
 ## Sources
 

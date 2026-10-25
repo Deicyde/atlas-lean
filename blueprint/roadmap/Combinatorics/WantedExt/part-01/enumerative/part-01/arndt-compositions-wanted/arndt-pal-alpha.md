@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.arndtPalAlpha
 ---
 
-# Arndt Pal Alpha
+# The auxiliary series $\alpha$ for down/up compositions
 
-The series `α(x, y, w) = ∑_{n ≥ 0} (-1)ⁿ x^{n²+n} y^{2n} wⁿ / (xw; x)_{2n}` in
-`ℚ[[x, y, z]]`, for a series `w` (the paper's third argument; `w = z` and `w = x` occur).
+**The auxiliary series $\alpha$ for down/up compositions.** In $\mathbb{Q}[[x, y, z]]$ write
+$(a; x)_m = \prod_{j=0}^{m-1} (1 - a x^j)$. For a power series $w$ in $\mathbb{Q}[[x, y, z]]$, the
+series $\alpha(x, y, w)$ is the coefficientwise convergent sum
+$\alpha(x, y, w) = \sum_{n \ge 0} \frac{(-1)^n x^{n^2+n} y^{2n} w^n}{(xw; x)_{2n}}$.
+
+The paper uses it with $w = z$ and with $w = x$.
 
 ## Depends on
 

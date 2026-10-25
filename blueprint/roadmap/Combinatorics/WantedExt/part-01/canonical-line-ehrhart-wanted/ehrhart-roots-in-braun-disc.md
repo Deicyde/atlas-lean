@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.ehrhart_roots_in_braun_disc
 ---
 
-# Ehrhart roots in braun disc
+# Braun's disc for Ehrhart roots
 
-Every root of a degree-`d` Ehrhart polynomial lies in the closed disc centered at
-`-1/2` with radius `d(d-1/2)`.  The polytope and its point counts use the explicit finite
-encoding, and full dimension records its dimension (`E` then has degree `d` by Ehrhart's theorem).
+**Braun's disc for Ehrhart roots.** Let $P \subseteq \mathbb{R}^d$ be a full-dimensional
+lattice polytope, the convex hull of a finite set of points of $\mathbb{Z}^d$, and let $E$ be a
+complex polynomial with $E(k) = |kP \cap \mathbb{Z}^d|$ for every natural number $k$. Then every
+root $\alpha$ of $E$ lies in the closed disc centered at $-1/2$ with radius $d(d - 1/2)$, that
+is, $|\alpha + 1/2| \le d(d - 1/2)$.
+
+By Ehrhart's theorem, $E$ has degree $d$.
 
 ## Depends on
 
-- [Ehrhart Counts](ehrhart-counts.md)
-- [Is Full Dimensional](is-full-dimensional.md)
-- [Lattice Polytope](lattice-polytope.md)
+- [Polynomial counting the lattice points of dilates](ehrhart-counts.md)
+- [Full-dimensional sets](is-full-dimensional.md)
+- [Lattice polytopes](lattice-polytope.md)
 
 ## Sources
 

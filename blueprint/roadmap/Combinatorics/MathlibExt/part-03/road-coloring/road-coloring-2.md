@@ -7,13 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.roadColoring
 ---
 
-# Road Coloring
+# Road coloring theorem
 
-Road coloring theorem (statement `road-coloring-s1`, canonical name "Road coloring theorem"):
-A finite strongly connected aperiodic directed graph with constant out-degree
-admits a synchronizing edge-coloring (a coloring making some word reset the automaton).
-Digraphs are modeled via relations, colorings as labelings, and synchronizing words
-as reset sequences. Source: https://en.wikipedia.org/wiki/Road_coloring_theorem
+**Road coloring theorem.** Let $V$ be a finite nonempty set and let $\to$ be a relation
+on $V$, viewed as a directed graph on $V$ without parallel edges (loops allowed). Suppose that the
+graph is strongly connected (for all $u, v \in V$ there is a directed walk, possibly of length $0$,
+from $u$ to $v$), aperiodic (for every integer $d > 1$ there is a closed directed walk of positive
+length not divisible by $d$), and of constant positive out-degree (there is $k > 0$ such that
+every vertex has exactly $k$ out-neighbours). Then there exist a natural number $\ell$ and a map
+$\delta : V \times \{0, \dots, \ell - 1\} \to V$ such that for every $v \in V$ the map
+$c \mapsto \delta(v, c)$ is a bijection from $\{0, \dots, \ell - 1\}$ onto the out-neighbours of
+$v$, together with a word $c_1 \cdots c_m$ over $\{0, \dots, \ell - 1\}$ and a vertex $r$ such
+that following the labels $c_1, \dots, c_m$ in order from any vertex $v$ ends at $r$.
 
 ## Depends on
 
@@ -21,8 +26,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Road Coloring'](road-coloring.md)
+- [Road coloring theorem for a finite vertex type](road-coloring.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.RoadColoring](../../../../../sources/v2/MathlibExt.md)
+- https://en.wikipedia.org/wiki/Road_coloring_theorem

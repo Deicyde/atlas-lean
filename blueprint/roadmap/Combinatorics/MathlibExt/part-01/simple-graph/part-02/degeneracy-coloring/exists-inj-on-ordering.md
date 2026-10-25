@@ -6,20 +6,23 @@ proof: formalized
 lean: SimpleGraph.IsDegenerateOn.exists_injOn_ordering
 ---
 
-# Exists inj On ordering
+# Degeneracy orderings of a vertex set
 
-Degeneracy ordering on a finite vertex set: an injective labelling whose
-later-neighborhoods inside the set are small. Proved by peeling off a
-small-degree vertex and labelling it `0`.
+**Degeneracy orderings of a vertex set.** Let $G$ be a simple graph on a finite
+vertex set $V$ and let $s \subseteq V$. If $G$ is $k$-degenerate on $s$, then there is
+a map $e : V \to \mathbb{N}$, injective on $s$, such that every $v \in s$ has at most
+$k$ neighbors $w \in s$ with $e(v) < e(w)$.
+
+The proof removes a vertex of small degree in $s$ and labels it $0$.
 
 ## Depends on
 
-- [Is Degenerate On](../../part-01/degeneracy/is-degenerate-on.md)
+- [Degeneracy on a vertex set](../../part-01/degeneracy/is-degenerate-on.md)
 
 ## Proof depends on
 
-- [Exists small vertex](exists-small-vertex.md)
-- [Of subset](../../part-01/degeneracy/of-subset.md)
+- [A degenerate vertex set has a vertex of small degree](exists-small-vertex.md)
+- [Degeneracy on a vertex set passes to subsets](../../part-01/degeneracy/of-subset.md)
 
 ## Sources
 

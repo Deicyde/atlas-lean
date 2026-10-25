@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.weightedConsecutiveConstant_squareSet_odd_twoPower_le_two
 ---
 
-# Weighted Consecutive Constant square Set odd two Power le two
+# Consecutive square-weighted constant of an odd power of two is at most two
 
-Theorem 23: odd exponent `r` gives
-`C_{S(2^r)} ≤ 2`; oddness already implies that `r` is positive.
+**Consecutive square-weighted constant of an odd power of two is at most two.** For every
+odd natural number $r$, the consecutive $S(2^r)$-weighted zero-sum constant satisfies
+$C_{S(2^r)} \le 2$, where $S(2^r)$ is the set of nonzero squares of $\mathbb{Z}/2^r\mathbb{Z}$.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Weighted consecutive zero-sum constant](weighted-consecutive-constant.md)
 
 ## Sources
 

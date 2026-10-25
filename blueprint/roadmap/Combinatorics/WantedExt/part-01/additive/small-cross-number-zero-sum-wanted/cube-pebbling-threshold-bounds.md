@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.cube_pebbling_threshold_bounds
 ---
 
-# Cube pebbling threshold bounds
+# Pebbling threshold bounds for the cubes (Czygrinow–Wagner, Alon)
 
-Pebbling threshold of the cubes (Czygrinow–Wagner, Alon): with `n = 2^d` and cost `2`, every
-pebbling threshold function `t` of the sequence of `d`-cubes satisfies, for every `ε > 0`,
-`t ∈ Ω(n^{1-ε}) ∩ O(n / (lg lg n)^{1-ε})`.
+**Pebbling threshold bounds for the cubes (Czygrinow–Wagner, Alon).** For $d \ge 0$ let
+$Q_d$ be the $d$-cube, the grid graph on $\{0, 1\}^d$, with cost $2$ on every edge, and let
+$t : \mathbb{N} \to \mathbb{R}$ be a threshold function, as $d \to \infty$, for the probability
+that a uniformly random configuration of $s$ pebbles on $Q_d$ is solvable. Write $n = 2^d$ and
+$\lg = \log_2$. Then for every real $\varepsilon > 0$, as $d \to \infty$,
+$n^{1-\varepsilon} = O(t(d))$ and $t(d) = O\big(n / (\lg \lg n)^{1-\varepsilon}\big)$, that is,
+$t \in \Omega(n^{1-\varepsilon}) \cap O\big(n / (\lg \lg n)^{1-\varepsilon}\big)$.
 
 ## Depends on
 
-- [Is Threshold Function](is-threshold-function.md)
-- [Grid Cost](grid-cost.md)
-- [Grid Graph](grid-graph.md)
+- [Threshold functions](is-threshold-function.md)
+- [Grid edge costs](grid-cost.md)
+- [Grid graph](grid-graph.md)
 - [Solvable Configuration Prob](solvable-configuration-prob.md)
 
 ## Sources

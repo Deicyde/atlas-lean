@@ -6,11 +6,15 @@ statement: formalized
 lean: SimpleGraph.SameChromaticSymmetricFunction
 ---
 
-# Same Chromatic Symmetric Function
+# Graphs with the same chromatic symmetric function
 
-Equality of chromatic symmetric functions, represented transparently
-through the coefficient characterization: agreement of all coloring-profile
-counts for every finite palette and multiplicity profile.
+**Graphs with the same chromatic symmetric function.** Let $G$ and $H$ be simple graphs on
+finite vertex sets. We say that $G$ and $H$ have the same chromatic symmetric function when, for
+every natural number $k$ and every $m : \{0, \dots, k-1\} \to \mathbb{N}$, the chromatic profile
+count of $G$ at $k$ and $m$ equals that of $H$: both graphs have equally many proper colorings
+with colors $\{0, \dots, k-1\}$ in which each color $i$ is used on exactly $m(i)$ vertices.
+
+This is equality of chromatic symmetric functions, expressed through their coefficients.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chromatic Profile Count](chromatic-profile-count.md)
+- [Chromatic profile count](chromatic-profile-count.md)
 
 ## Sources
 

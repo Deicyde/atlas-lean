@@ -7,13 +7,15 @@ proof: formalized
 lean: SimpleGraph.IsDegenerateOn.of_subset
 ---
 
-# Of subset
+# Degeneracy on a vertex set passes to subsets
 
-Restricting the vertex set preserves degeneracy.
+**Degeneracy on a vertex set passes to subsets.** Let $G$ be a simple graph on a finite
+vertex type $V$, let $T \subseteq U \subseteq V$ and let $k$ be a natural number. If $G$ is
+$k$-degenerate on $U$, then $G$ is $k$-degenerate on $T$.
 
 ## Depends on
 
-- [Is Degenerate On](is-degenerate-on.md)
+- [Degeneracy on a vertex set](is-degenerate-on.md)
 
 ## Sources
 

@@ -7,18 +7,22 @@ proof: formalized
 lean: SimpleGraph.isSaturated_iff_missing_edge
 ---
 
-# Is Saturated iff missing edge
+# Saturation via missing edges
 
-Equivalence with the source's missing-edge formulation: `G` is `H`-saturated
-iff it is `H`-free and every one-edge extension contains a copy of `H`.
+**Saturation via missing edges.** Let $H$ be a simple graph. A simple graph $G$ is
+$H$-saturated if and only if $G$ is $H$-free and, for all distinct vertices $s$ and $t$ of $G$
+that are not adjacent in $G$, the graph $G + st$ obtained from $G$ by adding the edge $st$
+contains a copy of $H$.
+
+This is the usual missing-edge definition of $H$-saturation.
 
 ## Depends on
 
-- [Is Saturated](is-saturated.md)
+- [$H$-saturated graphs](is-saturated.md)
 
 ## Proof depends on
 
-- [Is Saturated iff forall gt](is-saturated-iff-forall-gt.md)
+- [Saturation via strict supergraphs](is-saturated-iff-forall-gt.md)
 
 ## Sources
 

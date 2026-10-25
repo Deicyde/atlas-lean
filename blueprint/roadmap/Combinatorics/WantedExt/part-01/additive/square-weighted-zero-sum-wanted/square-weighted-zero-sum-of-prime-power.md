@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.squareWeightedZeroSum_of_primePower_reduction
 ---
 
-# Square Weighted Zero Sum of prime Power reduction
+# Square-weighted zero sums lift from a prime-power component
 
-Lemma 7: `p` is prime, divides `n`, and has factorization exponent `r`;
-if the full image sequence modulo `p^r` has an `S(p^r)`-weighted zero sum,
-then the original full sequence has an `S(n)`-weighted zero sum. The sequence
-length `k` is an explicit binder required by the `Fin k` encoding, and
-`2 ≤ n` records the paper's ambient convention.
+**Square-weighted zero sums lift from a prime-power component.** Let $n \ge 2$, let $p$ be a
+prime dividing $n$, and let $r$ be the exponent of $p$ in $n$. Write $S(m)$ for the set of
+nonzero squares in $\mathbb{Z}_m$. Let $x_1, \dots, x_k$ be a sequence in $\mathbb{Z}_n$ whose
+reduction $\bar x_1, \dots, \bar x_k$ modulo $p^r$ has an $S(p^r)$-weighted zero sum, that is,
+there are $b_1, \dots, b_k \in S(p^r)$ with $\sum_i b_i \bar x_i = 0$. Then there are
+$a_1, \dots, a_k \in S(n)$ with $\sum_i a_i x_i = 0$.
 
 ## Depends on
 
-- [Has Weighted Zero Sum](has-weighted-zero-sum.md)
-- [Square Set](square-set.md)
+- [Weighted zero-sum sequences](has-weighted-zero-sum.md)
+- [Nonzero squares modulo $n$](square-set.md)
 
 ## Sources
 

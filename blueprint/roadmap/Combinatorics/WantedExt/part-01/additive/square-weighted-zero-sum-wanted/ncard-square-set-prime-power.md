@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.ncard_squareSet_primePower
 ---
 
-# Ncard square Set prime Power
+# Number of nonzero squares modulo a prime power
 
-Theorem 6: the first implication is the even-`r` cardinality sum and the
-second is the odd-`r` sum. The displayed ellipses are encoded by ranges of
-length `r/2` and `(r+1)/2`. Prime and positive hypotheses are made explicit
-from the surrounding text.
+**Number of nonzero squares modulo a prime power.** Let $p$ be a prime and $r \ge 1$, and write
+$S(m)$ for the set of nonzero squares and $U(m)^2$ for the set of squares of units in
+$\mathbb{Z}/m\mathbb{Z}$. If $r$ is even, then
+$|S(p^r)| = \sum_{k=0}^{r/2-1} |U(p^{r-2k})^2|$, and if $r$ is odd, then
+$|S(p^r)| = \sum_{k=0}^{(r-1)/2} |U(p^{r-2k})^2|$.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Unit Square Set](unit-square-set.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Squares of units modulo n](unit-square-set.md)
 
 ## Sources
 

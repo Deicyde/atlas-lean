@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsLunarPrime
 ---
 
-# Is Lunar Prime
+# Lunar primes
 
-A prime lunar number of base `b` (Applegate, LeBrun and Sloane): every factorization
-`f = g ⊗ h` with `g, h ∈ ℬ_b[x]` (coefficients below `b`) has `g` or `h` equal to the unit
-`b - 1`.
+**Lunar primes.** Let $b$ be a natural number. The lunar unit of base $b$ is the constant
+polynomial $b - 1$, the sequence with constant term $b - 1$ and all other terms $0$. A coefficient
+sequence $f : \mathbb{N} \to \mathbb{N}$ is a lunar prime of base $b$ (Applegate, LeBrun and
+Sloane) when for all sequences $g, h : \mathbb{N} \to \mathbb{N}$ with all terms less than $b$ and
+$g \otimes h = f$, where $\otimes$ is the max-min product, $g$ or $h$ is the lunar unit.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lunar Unit](lunar-unit.md)
-- [Max Min Mul](max-min-mul.md)
+- [Max-min product](max-min-mul.md)
 
 ## Sources
 

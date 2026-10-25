@@ -5,24 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.flagHVector
 ---
 
-# Flag HVector
+# Flag $h$-vector
 
-Let P be a finite partially ordered set. For s,t∈ P, the
-element t covers s if s<t and there is no u∈ P with
-s<u<t, and t is minimal if there is no u∈ P with u<t.
-Let ρ: P→ℤ_{≥ 0} be a function with
-ρ(s)<ρ(t) whenever s<t, with ρ(t)=ρ(s)+1
-whenever t covers s, and with ρ(t)=0 whenever t is
-minimal, and let α_P be the flag f-vector of P with
-respect to ρ. The flag h-vector of P is the integer-valued
-function β_P on finite sets S⊆ℤ_{≥ 0}
-given by
+**Flag $h$-vector.** Let $P$ be a finite partially ordered set with a grade function
+$\rho \colon P \to \mathbb{Z}_{\ge 0}$, that is, $\rho(s) < \rho(t)$ whenever $s < t$,
+$\rho(t) = \rho(s) + 1$ whenever $t$ covers $s$, and $\rho(t) = 0$ whenever $t$ is minimal. Let
+$\alpha_P$ be the flag $f$-vector of $P$ with respect to $\rho$: for a finite set
+$T \subseteq \mathbb{Z}_{\ge 0}$, $\alpha_P(T)$ is the number of maximal chains in the subposet
+$\{t \in P : \rho(t) \in T\}$. The flag $h$-vector of $P$ is the integer-valued function $\beta_P$
+on finite sets $S \subseteq \mathbb{Z}_{\ge 0}$ given by
 
-β_P(S)=∑_{T⊆ S}(-1)^{|S∖ T|}α_P(T),
+$$\beta_P(S) = \sum_{T \subseteq S} (-1)^{|S \setminus T|} \alpha_P(T),$$
 
-where the sum runs over all subsets T of S and
-|S∖ T| is the number of elements of S∖ T. In
-particular, β_P(∅)=α_P(∅)=1.
+where the sum runs over all subsets $T$ of $S$ and $|S \setminus T|$ is the number of elements of
+$S \setminus T$. In particular, $\beta_P(\emptyset) = \alpha_P(\emptyset) = 1$.
 
 ## Depends on
 
@@ -30,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Flag FVector](flag-fvector.md)
+- [Flag $f$-vector](flag-fvector.md)
 
 ## Sources
 

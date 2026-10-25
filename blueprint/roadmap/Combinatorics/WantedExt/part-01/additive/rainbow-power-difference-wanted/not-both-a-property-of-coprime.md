@@ -5,14 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.not_both_aProperty_of_coprime
 ---
 
-# Not both a Property of coprime
+# Coprime numbers of a non-dominant color cannot both have the $A$-property
 
-Let `c` be a rainbow-free 3-coloring of the positive integers for `x - y = z ^ k` with
-dominant color `R` (every bichromatic string contains `R`), and let `B ≠ G` be the two other
-colors. If coprime positive `j₁, j₂` both have color `G`, then at most one of them has the
-`A`-property: an infinite `B`-monochromatic arithmetic progression `i, i + jᵏ, i + 2jᵏ, …` of
-positive integers. The density condition of Lemma 4 (`n₀ ≥ 2`) is added: the paper's proof
-ends by contradicting Lemma 4, which needs it.
+**Coprime numbers of a non-dominant color cannot both have the $A$-property.** Let $k$ be a
+natural number, let $n_0 \ge 2$ be an integer, and let $c$ be a coloring of the positive
+integers by three distinct colors $R$, $B$, $G$ with no rainbow solution of $x - y = z^k$: there
+are no positive integers $x, y, z$ with $x = y + z^k$ and $c(x)$, $c(y)$, $c(z)$ pairwise
+distinct. For a color $e$ write $N_e(n)$ for the number of $x \in \{1, \dots, n\}$ with
+$c(x) = e$, and assume that for every real $M$ there are arbitrarily large $n$ with
+$N_e(n) - n / n_0 > M$ for all three colors $e$. Assume that $R$ is dominant: for all positive
+integers $i$ and all $\ell \ge 0$, if $c$ takes exactly two colors on
+$\{i, i + 1, \dots, i + \ell - 1\}$, then one of them is $R$. Say that a positive integer $j$
+has the $A$-property if there is a positive integer $i$ with $c(i + t j^k) = B$ for all
+$t \ge 0$. If $j_1$ and $j_2$ are coprime positive integers with $c(j_1) = c(j_2) = G$, then
+$j_1$ and $j_2$ do not both have the $A$-property.
+
+The density hypothesis comes from Lemma 4 of the source; it is added because the source's proof
+of this lemma ends by contradicting Lemma 4.
 
 ## Depends on
 

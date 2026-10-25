@@ -6,21 +6,27 @@ proof: formalized
 lean: MetaMathlibExt.mem_lunarDecomposableSet_example
 ---
 
-# Mem lunar Decomposable Set example
+# A decomposable lunar number in base 2
 
-In base `2`, `1 ⊕ x ⊕ x² = (1 ⊕ x) ⊗ (1 ⊕ x)` lies in `Σ_2^2` and in `𝒟_2^2`.
+**A decomposable lunar number in base 2.** In base $2$, the lunar number with digit string
+$(1, 1, 1)$, that is $1 \oplus x \oplus x^2$ with $\oplus$ the lunar sum (digitwise maximum), lies
+both in the set $\Sigma_2^2$ of decomposable lunar numbers of degree at most $2$ and in the set
+$\mathcal{D}_2^2$ of level-decomposable lunar numbers of degree at most $2$.
+
+A factorization witnessing both is $1 \oplus x \oplus x^2 = (1 \oplus x) \otimes (1 \oplus x)$,
+where $\otimes$ is the max-min product and $1 \oplus x$ has digit string $(1, 1, 0)$.
 
 ## Depends on
 
-- [Lunar Decomposable Set](lunar-decomposable-set.md)
-- [Lunar Level Decomposable Set](lunar-level-decomposable-set.md)
+- [Decomposable lunar numbers](lunar-decomposable-set.md)
+- [Level-decomposable lunar numbers](lunar-level-decomposable-set.md)
 
 ## Proof depends on
 
-- [Digit Seq](digit-seq.md)
-- [Digit Seq of le](digit-seq-of-le.md)
-- [Lunar Level Count](lunar-level-count.md)
-- [Max Min Mul](max-min-mul.md)
+- [Coefficient sequence of a digit string](digit-seq.md)
+- [A digit string has no coefficients beyond its length](digit-seq-of-le.md)
+- [Level counts of a lunar number](lunar-level-count.md)
+- [Max-min product](max-min-mul.md)
 
 ## Sources
 

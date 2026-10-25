@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.not_isStarStep_return_without_torch
 ---
 
-# Not is Star Step return without torch
+# Example: no return from a leaf without a torch
 
-A step that sends a person from a leaf with no torch is not legal: one person at the center
-with the only torch cannot return from the leaf.
+**Example: no return from a leaf without a torch.** In the star model on the star graph
+with a center and a single leaf, with one person, suppose the person stands at the leaf, the only
+torch is at the center and no torch is at the leaf. Then the parallel step consisting of the
+single movement that carries the person from the leaf back to the center is not legal.
 
 ## Depends on
 
-- [Is Star Step](is-star-step.md)
-- [Star Move](star-move.md)
+- [Legal parallel steps in the star model](is-star-step.md)
+- [Movement in the star model](star-move.md)
 
 ## Proof depends on
 
-- [Src](src.md)
+- [Start vertex of a star movement](src.md)
 
 ## Sources
 

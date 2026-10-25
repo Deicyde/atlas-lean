@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.atLeastDistinctSumset_card_ge_int
 ---
 
-# At Least Distinct Sumset card ge int
+# Lower bound and inverse theorem for sums with at least $r$ distinct terms in $\mathbb{Z}$
 
-For a nonempty `A ⊆ ℤ` with `|A| = k`, `1 ≤ r ≤ k` and `h ≥ max{r, 2}`,
-`|h^{(≥ r)}A| ≥ h(k - 1) - r(r - 1) + 1`; if equality holds and either `k ≥ 2` and `h ≥ r + 2`,
-or `k ≥ 5`, `2 ≤ r ≤ k - 2` and `h ∈ {r, r + 1}`, then `A` is an arithmetic progression.
+**Lower bound and inverse theorem for sums with at least $r$ distinct terms in $\mathbb{Z}$.**
+Let $A$ be a nonempty finite set of integers with $|A| = k$, and let $r, h$ be natural numbers
+with $1 \le r \le k$, $r \le h$ and $h \ge 2$. Write $h^{(\ge r)}A$ for the set of sums of $h$
+elements of $A$, repetitions allowed, in which at least $r$ distinct elements occur. Then
+$|h^{(\ge r)}A| \ge h(k - 1) - r(r - 1) + 1$. If equality holds and either $k \ge 2$ and
+$h \ge r + 2$, or $k \ge 5$, $2 \le r \le k - 2$ and $h \in \{r, r + 1\}$, then $A$ is an
+arithmetic progression of length $k$.
 
 ## Depends on
 
-- [At Least Distinct Sumset](at-least-distinct-sumset.md)
+- [Sums with at least $r$ distinct terms](at-least-distinct-sumset.md)
 - [Sets that are arithmetic progressions](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources

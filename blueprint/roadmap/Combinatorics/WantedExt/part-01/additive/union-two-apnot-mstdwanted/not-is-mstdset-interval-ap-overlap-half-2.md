@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_intervalAP_overlap_half_odd_den
 ---
 
-# Lemma 23
+# Interval plus progression with half-integer start and odd-denominator step is not MSTD
 
-**Lemma 23.** For `n ≥ 3`, `m ≥ 2`, `x = s₁ + 1/2` with `x < n - 1`, `d > n - 1`, and `d = s₂ +
-p₂/q₂` with `q₂` odd, `I_n ∪ J(x, m, d)` is not an MSTD set.
+**Interval plus progression with half-integer start and odd-denominator step is not MSTD.**
+Let $I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$, as finite
+sets of reals. Let $n \ge 3$, $m \ge 2$, $s_1$, $s_2$ and $p_2$ be natural numbers and $q_2$ an
+odd natural number, and let $x = s_1 + 1/2$ and $d = s_2 + p_2/q_2$. If $x < n - 1 < d$, then
+$I_n \cup J(x, m, d)$ is not an MSTD set.
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
-- [Real APSet](real-apset.md)
-- [Real Interval Set](real-interval-set.md)
+- [MSTD set](is-mstdset.md)
+- [Finite arithmetic progression](real-apset.md)
+- [Initial integer interval](real-interval-set.md)
 
 ## Sources
 

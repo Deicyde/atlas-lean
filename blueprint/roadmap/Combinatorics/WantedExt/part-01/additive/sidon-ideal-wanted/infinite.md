@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.IsGapLacunarySet.infinite
 ---
 
-# Infinite
+# Gap-lacunary sets are infinite
 
-A lacunary set is infinite.
+**Gap-lacunary sets are infinite.** Every gap-lacunary set $A \subseteq \mathbb{N}$ is infinite.
 
 ## Depends on
 
-- [Is Gap Lacunary Set](is-gap-lacunary-set.md)
+- [Gap-lacunary set](is-gap-lacunary-set.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.isAdmissibleBag_three_and_bagWeight
 ---
 
-# Is Admissible Bag three and bag Weight
+# A one-trip admissible bag for three people
 
-The one-trip bag `{{1, 2, 3}}` is admissible for three people and has weight `3 = T₃(3)`.
+**A one-trip admissible bag for three people.** The multiset whose only member is the set
+$\{1, 2, 3\}$ is an admissible bag for $3$ people, and its weight for $3$ people is $3$.
 
 ## Depends on
 
-- [Is Admissible Bag](is-admissible-bag.md)
-- [Bag Weight](bag-weight.md)
+- [Admissible bags](is-admissible-bag.md)
+- [Weight of a bag](bag-weight.md)
 
 ## Sources
 

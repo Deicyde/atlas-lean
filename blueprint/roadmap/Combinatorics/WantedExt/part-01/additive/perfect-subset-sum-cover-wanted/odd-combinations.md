@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.PerfectSubsetSumCover.oddCombinations
 ---
 
-# Odd Combinations
+# Odd combinations
 
-`oddCombinations A` is the paper's `𝒯(A)`: the set of combinations `∑_{x ∈ A} c_x x` in
-which every integer coefficient `c_x` is `0` or odd.
+**Odd combinations.** For a finite subset $A$ of an abelian group $G$, $\mathcal{T}(A)$ is the
+set of all sums $\sum_{x \in A} c_x x$ with integer coefficients $c_x$ such that every $c_x$ is
+either $0$ or odd.
 
 ## Depends on
 

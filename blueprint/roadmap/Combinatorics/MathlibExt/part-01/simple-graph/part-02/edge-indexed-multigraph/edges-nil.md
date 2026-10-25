@@ -7,15 +7,16 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.edges_nil
 ---
 
-# Edges nil
+# The empty indexed walk has no edges
 
-The empty indexed walk has no edges.
+**The empty indexed walk has no edges.** For every vertex $v$ of an edge-indexed multigraph,
+the edge list of the empty indexed walk at $v$ is the empty list.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Indexed Walk](indexed-walk.md)
-- [Edges](edges.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Indexed walk](indexed-walk.md)
+- [Edge list of an indexed walk](edges.md)
 
 ## Sources
 

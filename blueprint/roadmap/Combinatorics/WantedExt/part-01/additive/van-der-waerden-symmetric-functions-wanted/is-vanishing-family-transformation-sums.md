@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.isVanishingFamily_transformation_sums
 ---
 
-# Is Vanishing Family transformation sums
+# Vanishing of families of sums of transformed entries
 
-Theorem 6: for positive integers `n`, `d` and maps `g_1, …, g_d : ℤ/n → ℤ/n`, the family
-`F(g_1, …, g_d) = {(b_1, …, b_l) ↦ (∑ g_1(b_i), …, ∑ g_d(b_i))}` is vanishing (a block
-counts when all `d` coordinates vanish). The hypothesis `d > 0` is dropped: for `d = 0`
-the statement is trivial.
+**Vanishing of families of sums of transformed entries.** Let $n$ be a positive integer, $d$ a
+natural number and $g_1, \dots, g_d : \mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ maps.
+Then the family over $\mathbb{Z}/n\mathbb{Z}$ sending a block $(b_1, \dots, b_l)$ to the vector
+$\left(\sum_i g_1(b_i), \dots, \sum_i g_d(b_i)\right) \in (\mathbb{Z}/n\mathbb{Z})^d$ is
+vanishing, where a block counts as vanishing when all $d$ coordinates of this vector are zero.
+
+The source assumes $d > 0$; for $d = 0$ the statement is trivial.
 
 ## Depends on
 
-- [Is Vanishing Family](is-vanishing-family.md)
+- [Vanishing family](is-vanishing-family.md)
 
 ## Sources
 

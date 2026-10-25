@@ -5,9 +5,9 @@ navigation: module
 
 # Odd Independent
 
-- [Is Odd Independent](is-odd-independent.md)
-- [Is Indep Set](is-indep-set.md)
-- [Finite inter](finite-inter.md)
-- [Empty or odd](empty-or-odd.md)
-- [Is Odd Independent empty](is-odd-independent-empty.md)
-- [Is Odd Independent singleton](is-odd-independent-singleton.md)
+- [Odd independent set](is-odd-independent.md)
+- [Odd independent sets are independent](is-indep-set.md)
+- [Outside vertices have finitely many neighbours in an odd independent set](finite-inter.md)
+- [Outside vertices see an empty or odd part of an odd independent set](empty-or-odd.md)
+- [The empty set is odd independent](is-odd-independent-empty.md)
+- [Singletons are odd independent](is-odd-independent-singleton.md)

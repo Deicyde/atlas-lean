@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.generalizedHFoldSumset_zero_one_two
 ---
 
-# Generalized HFold Sumset zero one two
+# A generalized $2$-fold sumset of $\{0, 1, 2\}$
 
-`2^{(1,1,1)}{0, 1, 2} = {1, 2, 3}`, of size `L((1, 1, 1), 2) = 3`.
+**A generalized $2$-fold sumset of $\{0, 1, 2\}$.** For $A = (0, 1, 2)$ in the integers and
+$\bar r = (1, 1, 1)$, the generalized $2$-fold sumset $2^{(\bar r)}A$, the set of sums
+$s_0 \cdot 0 + s_1 \cdot 1 + s_2 \cdot 2$ with $s_0, s_1, s_2 \in \{0, 1\}$ and
+$s_0 + s_1 + s_2 = 2$, equals $\{1, 2, 3\}$.
 
 ## Depends on
 
-- [Generalized HFold Sumset](generalized-hfold-sumset.md)
+- [Generalized $h$-fold sumset](generalized-hfold-sumset.md)
 
 ## Sources
 

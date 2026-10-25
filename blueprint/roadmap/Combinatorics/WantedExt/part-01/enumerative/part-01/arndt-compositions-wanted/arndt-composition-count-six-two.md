@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.arndtCompositionCount_six_two
 ---
 
-# Arndt Composition Count six two
+# Arndt compositions of 6 with two parts
 
-The Arndt compositions of `6` with two parts are `(5,1)` and `(4,2)`.
+**Arndt compositions of 6 with two parts.** There are exactly $2$ Arndt compositions of $6$
+with two parts.
+
+They are $(5, 1)$ and $(4, 2)$.
 
 ## Depends on
 
-- [Arndt Composition Count](arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](arndt-composition-count.md)
 
 ## Sources
 

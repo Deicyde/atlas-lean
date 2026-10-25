@@ -15,7 +15,7 @@ omitted; `n = 0` is admitted (then the claim is `D ≠ ∅`).
 
 ## Depends on
 
-- [Is Mul Piecewise Syndetic](../../../MathlibExt/part-03/semigroup-largeness/is-mul-piecewise-syndetic.md)
+- [Piecewise syndetic subsets of a semigroup](../../../MathlibExt/part-03/semigroup-largeness/is-mul-piecewise-syndetic.md)
 
 ## Sources
 

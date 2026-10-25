@@ -23,8 +23,8 @@ lean: MetaMathlibExt.lonelySinglesCount_zero_one
 - [Crossing in a set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
 - [Noncrossing set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)
 - [Set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
-- [Card one](../../../../../MathlibExt/part-01/noncrossing-partition/small/card-one.md)
-- [Card zero](../../../../../MathlibExt/part-01/noncrossing-partition/small/card-zero.md)
+- [Noncrossing partitions of a one-element set](../../../../../MathlibExt/part-01/noncrossing-partition/small/card-one.md)
+- [Noncrossing partitions of the empty set](../../../../../MathlibExt/part-01/noncrossing-partition/small/card-zero.md)
 
 ## Sources
 

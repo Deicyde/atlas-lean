@@ -7,19 +7,22 @@ proof: formalized
 lean: MathlibExt.Combinatorics.GaleRyserWanted.gale_ryser
 ---
 
-# Gale ryser
+# Gale–Ryser theorem
 
-For antitone row and column sum sequences `r` and `c`, a zero-one matrix
-with those margins exists exactly when their total sums agree and the
-Gale-Ryser prefix inequalities hold.
+**Gale–Ryser theorem.** Let $r = (r_0, \dots, r_{m-1})$ and $c = (c_0, \dots, c_{n-1})$ be
+nonincreasing sequences of natural numbers. There is an $m \times n$ matrix with entries in
+$\{0, 1\}$ whose $i$-th row sums to $r_i$ for every $i$ and whose $j$-th column sums to $c_j$ for
+every $j$ if and only if $\sum_{i < m} r_i = \sum_{j < n} c_j$ and, for every $k \le m$,
+
+$$\sum_{i < k} r_i \le \sum_{j < n} \min(k, c_j).$$
 
 ## Depends on
 
-- [Prefix Sum](prefix-sum.md)
+- [Prefix sum](prefix-sum.md)
 
 ## Proof depends on
 
-- [Prefix Sum eq sum fin](prefix-sum-eq-sum-fin.md)
+- [Prefix sums within the sequence length](prefix-sum-eq-sum-fin.md)
 
 ## Sources
 

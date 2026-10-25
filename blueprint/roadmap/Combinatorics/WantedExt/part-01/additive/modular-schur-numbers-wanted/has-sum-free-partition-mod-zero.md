@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.hasSumFreePartitionMod_zero
 ---
 
-# Has Sum Free Partition Mod zero
+# The empty range has a sum-free partition
 
-The empty range `{1, …, 0}` always admits a partition into `k ≥ 1` sum-free classes.
+**The empty range has a sum-free partition.** For all natural numbers $m$, $l$ and
+$k \ge 1$, the empty range $\{1, \dots, 0\}$ admits a partition into $k$ classes that are
+$l$-sum-free modulo $m$.
 
 ## Depends on
 
-- [Has Sum Free Partition Mod](has-sum-free-partition-mod.md)
+- [Sum-free partitions modulo $m$](has-sum-free-partition-mod.md)
 
 ## Proof depends on
 
-- [Is Sum Free Mod](is-sum-free-mod.md)
+- [Sum-free sets modulo $m$](is-sum-free-mod.md)
 
 ## Sources
 

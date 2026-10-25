@@ -16,8 +16,8 @@ two cases the paper leaves open: (i) `gcd(q₁, q₂) > 1` and `0 < d₂ < (m₁
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
-- [Real APSet](real-apset.md)
+- [MSTD set](is-mstdset.md)
+- [Finite arithmetic progression](real-apset.md)
 
 ## Sources
 

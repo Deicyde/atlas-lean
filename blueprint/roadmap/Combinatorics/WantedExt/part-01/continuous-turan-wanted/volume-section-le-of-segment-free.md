@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.volume_section_le_of_segment_free
 ---
 
-# Volume section le of segment free
+# Sections of open sets avoiding a horizontal segment
 
-Lemma 2.8: if `P = [a, a + c] × {b}` is a closed horizontal segment of length `c ≥ 0` and
-`S ⊆ [0, n]²` is open and `P`-free, then every horizontal section `S_y` has `μ₁(S_y) ≤ c`.
+**Sections of open sets avoiding a horizontal segment.** Let $a, b, c, n$ be real numbers with
+$c \ge 0$, and let $S \subseteq [0, n]^2$ be an open set that does not contain the closed
+horizontal segment $[a, a + c] \times \{b\}$ in the sense of containment of planar point sets.
+Then for every $y \in [0, n]$ the horizontal section $\{x \in \mathbb{R} : (x, y) \in S\}$ has
+one-dimensional Lebesgue measure at most $c$.
 
 ## Depends on
 
-- [Point Set Contains Pattern](point-set-contains-pattern.md)
+- [Containment of planar point sets](point-set-contains-pattern.md)
 
 ## Sources
 

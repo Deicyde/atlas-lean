@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.opx_union_segment_le
 ---
 
-# Opx union segment le
+# Extending a pattern by a horizontal segment at its right edge
 
-Lemma 2.9: if `P` has a rightmost column `x = x₀` through `(x₀, y₀) ∈ P`, and `P'` adds the
-horizontal segment `[x₀, x₀ + c] × {y₀}`, `c ≥ 0`, then `opx(n, P') ≤ opx(n, P) + cn` (`n > 0`).
+**Extending a pattern by a horizontal segment at its right edge.** Let
+$P \subseteq \mathbb{R}^2$ and $(x_0, y_0) \in P$ with $x \le x_0$ for every $(x, y) \in P$, and let
+$c \ge 0$ and $n > 0$ be real numbers. Then
+
+$$\operatorname{opx}(n, P \cup ([x_0, x_0 + c] \times \{y_0\})) \le \operatorname{opx}(n, P) + cn.$$
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

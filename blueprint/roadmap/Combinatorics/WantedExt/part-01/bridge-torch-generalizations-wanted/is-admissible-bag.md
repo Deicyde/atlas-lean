@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.IsAdmissibleBag
 ---
 
-# Is Admissible Bag
+# Admissible bags
 
-An admissible bag for `n` people (capacity `3`): a finite multiset `F` of nonempty subsets
-of `{1, …, n}` such that (i) `|T| ≤ 3` for every `T ∈ F`, (ii) every `i ∈ {1, …, n}` lies in
-some `T ∈ F`, and (iii) `∑_{T ∈ F} (|T| - 1) = n - 1`.
+**Admissible bags.** Let $n$ be a natural number. A finite multiset $F$ of finite sets of
+natural numbers is an admissible bag for $n$ people (bridge capacity $3$) when (i) every $T \in F$
+is a nonempty subset of $\{1, \dots, n\}$ with $|T| \le 3$, (ii) every $i \in \{1, \dots, n\}$
+lies in some $T \in F$, and (iii) $\sum_{T \in F} (|T| - 1) = n - 1$, where the sum counts each
+member of $F$ with its multiplicity and $n - 1$ is read as $0$ when $n = 0$.
 
 ## Depends on
 

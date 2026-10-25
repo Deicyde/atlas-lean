@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.arndtGF
 ---
 
-# Arndt GF
+# Generating function of Arndt compositions with parts in a set
 
-The bivariate generating function `A_S(x, y) = ∑_{n, k} a_S(n, k) xⁿ yᵏ` of Arndt
-compositions with parts in `S`, by weight (`x`) and number of parts (`y`), in `ℤ[y][[x]]`.
+**Generating function of Arndt compositions with parts in a set.** An Arndt composition is a
+finite sequence $(\sigma_1, \dots, \sigma_k)$ of positive integers such that
+$\sigma_{2i-1} > \sigma_{2i}$ for every $i$ with $2i \le k$. For a set $S$ of natural numbers, let
+$a_S(n, k)$ be the number of Arndt compositions of $n$ with $k$ parts, all in $S$. The bivariate
+generating function of these compositions, by weight ($x$) and number of parts ($y$), is the power
+series $A_S(x, y) = \sum_{n \ge 0} \left(\sum_{k=0}^{n} a_S(n, k)\, y^k\right) x^n$ in
+$\mathbb{Z}[y][[x]]$.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Arndt Composition Count](arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](arndt-composition-count.md)
 
 ## Sources
 

@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.downUpCompositionCount
 ---
 
-# Down Up Composition Count
+# Down/up compositions
 
-The number of down/up (descending wiggly) compositions `σ₁ > σ₂ < σ₃ > σ₄ < ⋯` of `n` with
-`k` parts and last part `j` (`j = 0` for the empty composition): `k`-tuples `c` of positive
-integers with `∑ c = n`, `c (i + 1) < c i` for even `i` and `c i < c (i + 1)` for odd `i`
-(0-based), and last entry `j`.
+**Down/up compositions.** A down/up (descending wiggly) composition of $n$ with $k$ parts is a
+sequence $(\sigma_1, \dots, \sigma_k)$ of positive integers with sum $n$ such that
+$\sigma_1 > \sigma_2 < \sigma_3 > \sigma_4 < \cdots$, that is, $\sigma_i > \sigma_{i+1}$ for odd
+$i$ and $\sigma_i < \sigma_{i+1}$ for even $i$. For $n, k, j \ge 0$, $w(n, k, j)$ is the number of
+down/up compositions of $n$ with $k$ parts whose last part $\sigma_k$ equals $j$, where the empty
+composition ($k = 0$) is taken to have last part $0$.
 
 ## Depends on
 

@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.IsKRegularSequence.two_le
 ---
 
-# Two le
+# The base of a $k$-regular sequence is at least 2
 
-A `k`-regular sequence has base `k ≥ 2`.
+**The base of a $k$-regular sequence is at least 2.** Let $k$ be a natural number. If an integer
+sequence $f$ is $k$-regular, then $k \ge 2$.
 
 ## Depends on
 
-- [Is KRegular Sequence](is-kregular-sequence.md)
+- [$k$-regular sequence](is-kregular-sequence.md)
 
 ## Proof depends on
 
-- [K Kernel](../automatic/k-kernel.md)
+- [The $k$-kernel of a sequence](../automatic/k-kernel.md)
 
 ## Sources
 

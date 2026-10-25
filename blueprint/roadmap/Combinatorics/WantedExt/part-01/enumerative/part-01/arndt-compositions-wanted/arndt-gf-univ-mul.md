@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.arndtGF_univ_mul
 ---
 
-# Arndt GF univ mul
+# Generating function of all Arndt compositions
 
-The generating function of all Arndt compositions by weight and number of parts is
-`A(x, y) = (1 + xy/(1 - x)) ∑_{m ≥ 0} y^{2m} x^{3m} / (x; x)₂^m` with
-`(x; x)₂ = (1 - x)(1 - x²)`, stated multiplicatively:
-`A(x, y) · ((1 - x)(1 - x²) - y² x³) = (1 - x + xy)(1 - x²)`.
+**Generating function of all Arndt compositions.** Let $A(x, y)$ be the formal power series
+in $x$ over $\mathbb{Z}[y]$ whose coefficient of $x^n y^k$ is the number of Arndt compositions of
+$n$ with $k$ parts. Then
+
+$$A(x, y) \left((1 - x)(1 - x^2) - y^2 x^3\right) = (1 - x + xy)(1 - x^2).$$
+
+Equivalently, $A(x, y) = (1 + xy/(1 - x)) \sum_{m \ge 0} y^{2m} x^{3m} / (x; x)_2^m$ with
+$(x; x)_2 = (1 - x)(1 - x^2)$.
 
 ## Depends on
 
-- [Arndt GF](arndt-gf.md)
+- [Generating function of Arndt compositions with parts in a set](arndt-gf.md)
 
 ## Sources
 

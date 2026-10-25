@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_coprime_same_colors_of_coprime_dist
 ---
 
-# Exists coprime same colors of coprime dist
+# Coprime representatives at a coprime distance
 
-For a coloring of the positive integers that is periodic mod `n`, two positive integers
-`i₁, i₂` with `gcd(|i₁ - i₂|, n) = 1` can be replaced by coprime positive integers `j₁, j₂` of
-the same colors and the same distance.
+**Coprime representatives at a coprime distance.** Let $n$ be a natural number and let $c$ be a
+coloring of $\mathbb{Z}/n\mathbb{Z}$ with three colors, used to color every positive integer by its
+residue modulo $n$. If $i_1, i_2$ are positive integers with $\gcd(|i_1 - i_2|, n) = 1$, then there
+are coprime positive integers $j_1, j_2$ with $|j_1 - j_2| = |i_1 - i_2|$ such that $j_1$ has the
+color of $i_1$ and $j_2$ has the color of $i_2$.
 
 ## Depends on
 

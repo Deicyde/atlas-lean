@@ -5,5 +5,5 @@ navigation: module
 
 # Howard Potential Polynomial
 
-- [Howard potential Polynomial r Two eq partial Bell](howard-potential-polynomial-r-two-eq-par.md)
-- [Howard potential Polynomial eq partial Bell](howard-potential-polynomial-eq-partial-b.md)
+- [Howard's formula for the series $\sum_{k \ge 0} 2x^k/(k+2)!$](howard-potential-polynomial-r-two-eq-par.md)
+- [Howard's formula for potential polynomials](howard-potential-polynomial-eq-partial-b.md)

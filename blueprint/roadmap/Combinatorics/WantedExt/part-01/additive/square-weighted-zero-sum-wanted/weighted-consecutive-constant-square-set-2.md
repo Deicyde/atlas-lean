@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.weightedConsecutiveConstant_squareSet_twoPower_le_four
 ---
 
-# Weighted Consecutive Constant square Set two Power le four
+# Consecutive square-weighted constant of an even power of two is at most four
 
-Theorem 15: for a nonzero even exponent `r`, the consecutive
-`S(2^r)`-weighted zero-sum constant is at most four.
+**Consecutive square-weighted constant of an even power of two is at most four.** For every
+even natural number $r \ne 0$, the consecutive $S(2^r)$-weighted zero-sum constant satisfies
+$C_{S(2^r)} \le 4$, where $S(2^r)$ is the set of nonzero squares of $\mathbb{Z}/2^r\mathbb{Z}$.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Weighted consecutive zero-sum constant](weighted-consecutive-constant.md)
 
 ## Sources
 

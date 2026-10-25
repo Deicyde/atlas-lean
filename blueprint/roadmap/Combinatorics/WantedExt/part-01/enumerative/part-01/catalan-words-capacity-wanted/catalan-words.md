@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.catalanWords
 ---
 
-# Catalan Words
+# Catalan words
 
-The set `𝒜ₙ` of Catalan words of length `n`: positive letters, first letter `1`, and
-`w_{i+1} ≤ w_i + 1`. Letters of such words are at most `n`, so the ambient box `[1, n]ⁿ` loses
-nothing (see `mem_catalanWords_iff`).
+**Catalan words.** For a natural number $n$, the set $\mathcal{A}_n$ of Catalan words of length
+$n$ consists of the words $w = w_1 w_2 \cdots w_n$ of positive integers with $w_1 = 1$ and
+$w_{i+1} \le w_i + 1$ for $1 \le i < n$; for $n = 0$ it contains only the empty word.
+
+Every letter of a Catalan word of length $n$ is at most $n$, so $\mathcal{A}_n$ is finite.
 
 ## Depends on
 

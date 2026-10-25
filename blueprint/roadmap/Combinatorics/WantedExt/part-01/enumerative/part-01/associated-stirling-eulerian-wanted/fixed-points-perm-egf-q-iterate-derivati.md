@@ -5,16 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.fixedPointsPermEGF_q_iterate_derivative
 ---
 
-# Fixed Points Perm EGF q iterate derivative
+# Cycle-counting excedance generating function of s-fixed-points permutations
 
-Theorem 59: the `q`-analogue over `s`-fixed-points-permutations satisfies
-`∂^s [F(q,x,u)]_s/∂u^s = q^s (A(x,u) exp(u(x-1)))^s (A(x,u))^q exp(-qu)`, the power read as
-`exp(q L)` for any `L` with `L(0) = 0` and `exp L = A(x,u)`.
+**Cycle-counting excedance generating function of s-fixed-points permutations.** Let $R$ be a
+commutative $\mathbb{Q}$-algebra, $x, q \in R$ and $s$ a natural number. Call a permutation
+$\sigma$ of $\{0, \dots, n-1\}$ an $s$-fixed-points permutation if every fixed point of $\sigma$
+is less than $s$ and any two points less than $s$ in the same cycle of $\sigma$ are equal. Write
+$e(\sigma)$ for the number of $i$ with $\sigma(i) > i$ and $c(\sigma)$ for the number of cycles
+of $\sigma$, fixed points included. Let $A(x,u) = \sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)}
+u^n/n!$ over all permutations $\sigma$ of $\{0, \dots, n-1\}$, and let
+$F(q,x,u) = \sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} q^{c(\sigma)} u^n/n!$ over the
+$s$-fixed-points permutations $\sigma$ of $\{0, \dots, n-1\}$. Then for every formal power series
+$L$ in $u$ over $R$ with zero constant term and $\exp(L) = A(x,u)$,
+
+$$\frac{d^s}{du^s} F(q,x,u) = q^s \left(A(x,u) \exp((x-1)u)\right)^s \exp(qL) \exp(-qu).$$
+
+Here $\exp(qL)$ is the paper's $(A(x,u))^q$.
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

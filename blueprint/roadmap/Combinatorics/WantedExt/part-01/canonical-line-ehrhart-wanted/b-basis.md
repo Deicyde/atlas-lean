@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.bBasis
 ---
 
-# B Basis
+# The basis polynomials $b^d_j$
 
-`bBasis d j` is `∏_{i=0}^{d-1} (X + d - j - i)`.  Integer constants are used before
-mapping to `ℂ`, avoiding any convention about rising versus falling Pochhammer symbols.
+**The basis polynomials $b^d_j$.** For natural numbers $d$ and $j$, $b^d_j$ is the complex
+polynomial $b^d_j = \prod_{i=0}^{d-1} (X + d - j - i)$.
+
+Integer constants are used before mapping to $\mathbb{C}$, avoiding any convention about rising
+versus falling Pochhammer symbols.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.zeckendorfState_zero
 ---
 
-# Zeckendorf State zero
+# The Zeckendorf state of zero is empty
 
-The Zeckendorf decomposition of `0` is the empty state.
+**The Zeckendorf state of zero is empty.** The Zeckendorf state of $0$ is the empty game
+state, with no copies of any Fibonacci number.
 
 ## Depends on
 
-- [Zeckendorf State](zeckendorf-state.md)
+- [Zeckendorf decomposition as a game state](zeckendorf-state.md)
 
 ## Sources
 

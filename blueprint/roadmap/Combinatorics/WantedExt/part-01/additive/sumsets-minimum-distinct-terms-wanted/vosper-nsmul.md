@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.vosper_nsmul
 ---
 
-# Vosper nsmul
+# Vosper's theorem for iterated sumsets
 
-Vosper's theorem for `h`-fold sumsets: if `A ⊆ ℤ_p`, `|A| = k ≥ 2`, `h ≥ 2` and
-`|hA| = hk - h + 1 ≤ p - 2`, then `A` is an arithmetic progression.
+**Vosper's theorem for iterated sumsets.** Let $p$ be a prime, let $A$ be a subset of the
+cyclic group $\mathbb{Z}/p\mathbb{Z}$ with $k = |A| \ge 2$ elements, let $h \ge 2$ be an integer,
+and let $hA = \{a_1 + \dots + a_h : a_1, \dots, a_h \in A\}$ be the $h$-fold sumset of $A$. If
+$|hA| = hk - h + 1$ and $hk - h + 1 \le p - 2$, then $A$ is an arithmetic progression of
+length $k$ in $\mathbb{Z}/p\mathbb{Z}$.
 
 ## Depends on
 

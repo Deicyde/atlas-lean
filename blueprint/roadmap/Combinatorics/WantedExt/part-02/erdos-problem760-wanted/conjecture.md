@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cochromatic Number](../../../MathlibExt/part-01/simple-graph/part-01/coloring/vertex/cochromatic-number.md)
+- [Cochromatic number](../../../MathlibExt/part-01/simple-graph/part-01/coloring/vertex/cochromatic-number.md)
 
 ## Sources
 

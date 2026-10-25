@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.yangChenBound_one_one_one_two
 ---
 
-# Yang Chen Bound one one one two
+# Yang–Chen bound at $(1, 1, 1)$ and $h = 2$
 
-`L((1, 1, 1), 2) = 3`: here `μ = 2`, `η = 0`, `δ = θ = 0`.
+**Yang–Chen bound at $(1, 1, 1)$ and $h = 2$.** The Yang–Chen bound $L(\bar r, h)$ for
+$\bar r = (1, 1, 1)$ and $h = 2$ equals $3$.
+
+Here $\mu = 2$, $\eta = 0$ and $\delta = \theta = 0$.
 
 ## Depends on
 
-- [Yang Chen Bound](yang-chen-bound.md)
+- [The Yang–Chen bound](yang-chen-bound.md)
 
 ## Sources
 

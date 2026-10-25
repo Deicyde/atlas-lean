@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.no_squareWeightedSubseq_three_units_twoPower
 ---
 
-# No square Weighted Subseq three units two Power
+# Square-weighted zero-sum free unit triples modulo even powers of two
 
-Lemma 10: nonzero even `r`, unit terms `x₁,x₂,x₃`, and componentwise
-reduction to `(1,1,1)` imply that the three-term sequence has no
-`S(2^r)`-weighted zero-sum subsequence.
+**Square-weighted zero-sum free unit triples modulo even powers of two.** Let $r$ be a nonzero
+even natural number, and let $x_1, x_2, x_3$ be units of $\mathbb{Z}_{2^r}$ that are each
+congruent to $1$ modulo $4$. Write $S(2^r)$ for the set of nonzero squares in $\mathbb{Z}_{2^r}$.
+Then $(x_1, x_2, x_3)$ has no $S(2^r)$-weighted zero-sum subsequence: there are no non-empty set
+$J$ of indices and weights $a_j \in S(2^r)$ for $j \in J$ with $\sum_{j \in J} a_j x_j = 0$.
 
 ## Depends on
 
-- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
-- [Square Set](square-set.md)
+- [Weighted zero-sum subsequences](has-weighted-zero-sum-subseq.md)
+- [Nonzero squares modulo $n$](square-set.md)
 
 ## Sources
 

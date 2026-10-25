@@ -5,16 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.noFreeBifenceTilingSum_rec
 ---
 
-# No Free Bifence Tiling Sum rec
+# Recurrence for weighted tilings with no free bifence
 
-Lemma 3.13: for nonzero `a`, `b` and `n ≥ 2`, the weighted number `R_n` of tilings with no
-free bifence satisfies `R_n = (b/a)(ab+1) R_{n-1} + ab R_{n-2}` for even `n` and
-`R_n = (a/b)(ab+1) R_{n-1} + ab R_{n-2}` for odd `n`. The initial values `R_0 = 1`, `R_1 = a²`
-are `noFreeBifenceTilingSum_zero`, `noFreeBifenceTilingSum_one`.
+**Recurrence for weighted tilings with no free bifence.** Let $a$ and $b$ be nonzero elements
+of a field, and let $R_n$ be the weighted number of tilings of an $n$-board by half-squares and
+$(1/2, 1/2)$-fences with no free bifence, where a half-square has weight $a$ in an odd cell and
+$b$ in an even cell (cells numbered $1, \dots, n$). For every $n \ge 2$,
+
+$$R_n = \frac{b}{a}(ab + 1) R_{n-1} + ab\, R_{n-2}$$
+
+if $n$ is even, and
+
+$$R_n = \frac{a}{b}(ab + 1) R_{n-1} + ab\, R_{n-2}$$
+
+if $n$ is odd.
+
+The initial values are $R_0 = 1$ and $R_1 = a^2$.
 
 ## Depends on
 
-- [No Free Bifence Tiling Sum](no-free-bifence-tiling-sum.md)
+- [Weighted tilings with no free bifence](no-free-bifence-tiling-sum.md)
 
 ## Sources
 

@@ -5,13 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC19Pi1
 ---
 
-# Bpz C19 Pi1
+# Buys–Polak–Zuiddam one-block profile for the 19-cycle
 
-BPZ's one-block four-dimensional nineteen-cycle profile.
+**Buys–Polak–Zuiddam one-block profile for the 19-cycle.** This is the Buys–Polak–Zuiddam
+(BPZ) profile whose code, pairs, auxiliary and neutral coordinates are $7666$, $2$, $7666$
+and $7661$.
+
+Only these four integers are recorded, not BPZ's four-dimensional construction behind them.
 
 ## Depends on
 
-- [BPZProfile](bpzprofile.md)
+- [BPZ profiles](bpzprofile.md)
 
 ## Sources
 

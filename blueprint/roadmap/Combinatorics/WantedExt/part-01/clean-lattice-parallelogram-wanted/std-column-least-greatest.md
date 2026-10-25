@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.stdColumn_least_greatest
 ---
 
-# Std Column least greatest
+# Lowest and highest interior lattice points of $P_{a,n}$ on each vertical line
 
-Lowest and highest interior lattice points of `P_{a,n}` on the line `x = k`: if `a = 1`,
-they are `(1, 1)` and `(1, n - 1)`; if `a > 1`, they are `(k, ⌈(k-1)n/a⌉)` and `(k, ⌊kn/a⌋)` for
-`2 ≤ k ≤ a - 1`, `(1, 1)` and `(1, ⌊n/a⌋)` for `k = 1`, and `(a, ⌈(a-1)n/a⌉)` and `(a, n - 1)`
-for `k = a`.
+**Lowest and highest interior lattice points of $P_{a,n}$ on each vertical line.** Let $a$
+and $n$ be natural numbers with $1 \le a < n$ and $\gcd(a, n) = 1$, let $P_{a,n}$ be the
+parallelogram with vertices $(0, 0)$, $(1, 0)$, $(a, n)$, $(a + 1, n)$, and for an integer $k$
+let $S_k$ be the set of integers $y$ such that $(k, y)$ lies in the interior of $P_{a,n}$. If
+$a = 1$, the least element of $S_1$ is $1$ and the greatest is $n - 1$. If $a > 1$, then: for
+every integer $k$ with $2 \le k \le a - 1$, the least element of $S_k$ is
+$\lceil (k - 1) n / a \rceil$ and the greatest is $\lfloor k n / a \rfloor$; the least element of
+$S_1$ is $1$ and the greatest is $\lfloor n / a \rfloor$; and the least element of $S_a$ is
+$\lceil (a - 1) n / a \rceil$ and the greatest is $n - 1$.
 
 ## Depends on
 
-- [Std Column](std-column.md)
+- [Interior lattice points of $P_{a,n}$ on a vertical line](std-column.md)
 
 ## Sources
 

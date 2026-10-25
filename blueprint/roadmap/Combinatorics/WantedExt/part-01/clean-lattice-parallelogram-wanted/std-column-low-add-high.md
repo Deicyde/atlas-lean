@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.stdColumn_low_add_high
 ---
 
-# Std Column low add high
+# Lowest and highest interior lattice points of $P_{a,n}$ on paired vertical lines
 
-For `k, l ≥ 1` with `k + l = a + 1`, `L(S_k) + H(S_l) = (a + 1, n)`, i.e. `H(S_l)` and
-`L(S_k)` are exchanged by `S`; hence `H(S_l)` lies on the boundary of the interior hull
-`P_{a,n}^{(1)} = conv(interior(P_{a,n}) ∩ ℤ²)` iff `L(S_k)` does.
+**Lowest and highest interior lattice points of $P_{a,n}$ on paired vertical lines.** Let $a$
+and $n$ be natural numbers with $1 \le a < n$ and $\gcd(a, n) = 1$, let $P_{a,n}$ be the
+parallelogram with vertices $(0, 0)$, $(1, 0)$, $(a, n)$, $(a + 1, n)$, and for an integer $k$
+let $S_k$ be the set of integers $y$ such that $(k, y)$ lies in the interior of $P_{a,n}$. Let
+$k, l \ge 1$ be natural numbers with $k + l = a + 1$, and suppose that $y_L$ is the least element
+of $S_k$ and $y_H$ is the greatest element of $S_l$. Then $y_L + y_H = n$, and $(l, y_H)$ lies on
+the boundary of the convex hull of the points of $\mathbb{Z}^2$ in the interior of $P_{a,n}$ if
+and only if $(k, y_L)$ does.
 
 ## Depends on
 
 - [Lattice Points](lattice-points.md)
-- [Std Clean Parallelogram](std-clean-parallelogram.md)
-- [Std Column](std-column.md)
+- [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
+- [Interior lattice points of $P_{a,n}$ on a vertical line](std-column.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ proof: formalized
 lean: NoncrossingPartition.three_card_one_two_three
 ---
 
-# Three card one two three
+# Noncrossing partitions of three points have one, two or three blocks
 
-Every noncrossing partition of `Fin 3` has one, two, or three blocks.
+**Noncrossing partitions of three points have one, two or three blocks.** Every noncrossing
+partition of $\{0, 1, 2\}$ has one, two, or three blocks.
 
 ## Depends on
 

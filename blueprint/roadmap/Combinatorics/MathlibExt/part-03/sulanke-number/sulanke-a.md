@@ -6,11 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.sulankeA
 ---
 
-# Sulanke A
+# Sulanke array A
 
-Sulanke `A` array from the JIS clause: `A 0 = 0` and
-`A (k+1) i = B k i + 2 * B k (i - 1)` with the value below zero
-read as `0`.
+**Sulanke array A.** The Sulanke array $A$ assigns a natural number $A(k, i)$ to every pair of
+natural numbers $k$ and $i$. It is defined from the Sulanke array $B$ by $A(0, i) = 0$ for every
+$i$, $A(k+1, 0) = B(k, 0)$ for every $k$, and $A(k+1, i+1) = B(k, i+1) + 2B(k, i)$ for all $k$
+and $i$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sulanke B](sulanke-b.md)
+- [Sulanke array B](sulanke-b.md)
 
 ## Sources
 

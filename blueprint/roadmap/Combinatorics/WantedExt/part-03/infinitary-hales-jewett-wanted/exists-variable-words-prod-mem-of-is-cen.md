@@ -15,7 +15,7 @@ words over `A` such that `w_{m_0}(a⃗_0) w_{m_1}(a⃗_1) ⋯ w_{m_l}(a⃗_l) �
 
 ## Depends on
 
-- [Is Central Set](../../../MathlibExt/part-03/semigroup-largeness/is-central-set.md)
+- [Central sets in a semigroup](../../../MathlibExt/part-03/semigroup-largeness/is-central-set.md)
 
 ## Sources
 

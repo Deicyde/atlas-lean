@@ -6,12 +6,17 @@ statement: formalized
 lean: MetaMathlibExt.zykovTransferMatrix
 ---
 
-# Zykov Transfer Matrix
+# Transfer matrix of a generalized Zykov sum
 
-The transfer matrix of the relational graph sum `G +_R H`, represented as
-its Boolean-valued entry function on pairs of independent sets. This is the
-loopless specialization: both inputs are irreflexive Mathlib `SimpleGraph`s,
-whereas the cited source also allows loops.
+**Transfer matrix of a generalized Zykov sum.** Let $G$ and $H$ be simple graphs on finite
+vertex types $V$ and $W$, and let $R$ be a relation between $V$ and $W$. The transfer matrix of
+$G$ and $H$ along $R$ is indexed by pairs $(A, B)$ where $A$ is a finite independent set of $G$
+and $B$ is a finite independent set of $H$. Its entry at $(A, B)$ is the Boolean value that is
+true exactly when the pairing along $R$ of the characteristic vectors of $A$ and $B$ is zero,
+that is, when there are no $v \in A$ and $w \in B$ with $R(v, w)$.
+
+Only the loopless case is covered: $G$ and $H$ are simple graphs, whereas the source construction
+of Bautista-Ramos and Guillén-Galván also allows loops.
 
 ## Depends on
 
@@ -19,9 +24,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Independent Set Characteristic](independent-set-characteristic.md)
-- [Relation Pairing](relation-pairing.md)
-- [Zykov Zero Indicator](zykov-zero-indicator.md)
+- [Characteristic vector of an independent set](independent-set-characteristic.md)
+- [Pairing of Boolean vectors along a relation](relation-pairing.md)
+- [Zero indicator of a natural number](zykov-zero-indicator.md)
 
 ## Sources
 

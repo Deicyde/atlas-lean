@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.arndtLastPartCount_isEquivalent
 ---
 
-# Arndt Last Part Count is Equivalent
+# Asymptotics of Arndt compositions with a fixed last part
 
-For a fixed positive integer `m`,
-`b(n, m) ∼ (φ^{n-m-2}/√5)(1 + 1/φ^{m-1})` as `n → ∞`, with `φ` the golden ratio.
+**Asymptotics of Arndt compositions with a fixed last part.** Let $b(n, m)$ be the number of
+Arndt compositions of $n$ with last part $m$, and let $\varphi$ be the golden ratio. For every
+fixed integer $m \ge 1$,
+$b(n, m) \sim \frac{\varphi^{n-m-2}}{\sqrt{5}} \left(1 + \frac{1}{\varphi^{m-1}}\right)$ as
+$n \to \infty$.
 
 ## Depends on
 
-- [Arndt Last Part Count](arndt-last-part-count.md)
+- [Arndt compositions by last part](arndt-last-part-count.md)
 
 ## Sources
 

@@ -7,18 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.SelfGeneratingSet.generated_fixedPoint
 ---
 
-# Generated fixed Point
+# The generated set is a fixed-point set
 
-The generated closure is a fixed point. This direction does not require strict growth.
+**The generated set is a fixed-point set.** Let $F$ be a finite set of functions
+$\mathbb{N} \to \mathbb{N}$ and $s \in \mathbb{N}$, and let $\Gamma$ be the set generated from $s$
+by $F$. Then for every $y \in \mathbb{N}$, $y \in \Gamma$ if and only if $y = s$ or $y = f(x)$
+for some $f \in F$ and $x \in \Gamma$.
+
+This direction does not require the generators to be strictly increasing.
 
 ## Depends on
 
-- [Fixed Point](fixed-point.md)
-- [Generated Set](generated-set.md)
+- [Fixed-point sets for a seed and generators](fixed-point.md)
+- [Set generated from a seed](generated-set.md)
 
 ## Proof depends on
 
-- [Gen](gen.md)
+- [Reachability from a seed by generators](gen.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: SimpleGraph.externalNeighborSet_disjoint
 ---
 
-# External Neighbor Set disjoint
+# The external neighbourhood is disjoint from the set
 
-The external neighbourhood of `A` is disjoint from `A`.
+**The external neighbourhood is disjoint from the set.** For every simple graph $G$ on a
+vertex set $V$ and every set $A \subseteq V$, the external neighbourhood of $A$ in $G$ is
+disjoint from $A$.
 
 ## Depends on
 
-- [External Neighbor Set](external-neighbor-set.md)
+- [External neighbourhood](external-neighbor-set.md)
 
 ## Sources
 

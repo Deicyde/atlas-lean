@@ -7,9 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.fibonacci_infinite_word_factorization
 ---
 
-# Fibonacci infinite word factorization
+# The infinite Fibonacci word as $0$ followed by the finite Fibonacci words
 
-The Fibonacci infinite word is obtained by concatenating `0` with the finite Fibonacci words.
+**The infinite Fibonacci word as $0$ followed by the finite Fibonacci words.** Let $f$ be an
+infinite word over $\{0, 1\}$ and let $f_1, f_2, f_3, \ldots$ be finite words over $\{0, 1\}$ with
+$f_1 = 1$, $f_2 = 0$ and $f_{n+3} = f_{n+2} f_{n+1}$ for every natural number $n$, such that for
+every natural number $n$ the word $f_{n+2}$ consists of the first $|f_{n+2}|$ letters of $f$.
+Then for every natural number $N$ the word $w_N = 0\,f_1 f_2 \cdots f_N$ (so $w_0 = 0$) consists of
+the first $|w_N|$ letters of $f$, and for every natural number $k$ the first $k$ letters of $f$
+form a prefix of $w_N$ for some $N$. In this sense $f = 0 \cdot f_1 \cdot f_2 \cdot f_3 \cdots$.
 
 ## Depends on
 
@@ -18,8 +24,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Finite Fibonacci words](../../../part-01/infinite-word/fibonacci-word/fib-word.md)
-- [Fib Word add two](fib-word-add-two.md)
-- [Fib Word factorization](fib-word-factorization.md)
+- [Recurrence for the finite Fibonacci words](fib-word-add-two.md)
+- [Concatenating the finite Fibonacci words](fib-word-factorization.md)
 - [Lower bound on the length of the finite Fibonacci words](../../../part-01/infinite-word/fibonacci-word/fib-word-length.md)
 
 ## Sources

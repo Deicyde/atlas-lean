@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.rainbowFree_powDiff_lift_of_zmod
 ---
 
-# Rainbow Free pow Diff lift of zmod
+# Rainbow-free colorings of $\mathbb{Z}/n\mathbb{Z}$ lift to the positive integers
 
-A rainbow-free 3-coloring of `ℤ/nℤ` for `x - y = z ^ k` lifts to a rainbow-free coloring
-`i ↦ c (i mod n)` of the positive integers.
+**Rainbow-free colorings of $\mathbb{Z}/n\mathbb{Z}$ lift to the positive integers.** Let $n$
+and $k$ be natural numbers and let $c$ be a coloring of $\mathbb{Z}/n\mathbb{Z}$ with three colors
+that is rainbow-free for $x - y = z^k$: there are no $x, y, z \in \mathbb{Z}/n\mathbb{Z}$ with
+$x - y = z^k$ whose colors $c(x)$, $c(y)$, $c(z)$ are pairwise distinct. Then the coloring
+$i \mapsto c(i \bmod n)$ of the positive integers is rainbow-free for $x - y = z^k$: for all
+positive integers $x, y, z$ with $x = y + z^k$, the colors $c(x \bmod n)$, $c(y \bmod n)$ and
+$c(z \bmod n)$ are not pairwise distinct. (For $n = 0$, $\mathbb{Z}/0\mathbb{Z}$ is $\mathbb{Z}$
+and $i \bmod 0 = i$.)
 
 ## Depends on
 

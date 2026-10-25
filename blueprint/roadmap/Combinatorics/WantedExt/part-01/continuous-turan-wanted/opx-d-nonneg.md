@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.opxD_nonneg
 ---
 
-# Opx D nonneg
+# Higher-dimensional continuous Turán numbers are nonnegative
 
-`opx(n, P, d) ≥ 0`.
+**Higher-dimensional continuous Turán numbers are nonnegative.** For every dimension $d$,
+real number $n$ and set $P \subseteq \mathbb{R}^d$, $\mathrm{opx}(n, P, d) \ge 0$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ lean: MetaMathlibExt.opxD_nonneg
 
 ## Proof depends on
 
-- [Contains Pattern D](contains-pattern-d.md)
+- [Containment of point sets in $\mathbb{R}^d$](contains-pattern-d.md)
 
 ## Sources
 

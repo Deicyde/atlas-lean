@@ -6,10 +6,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.expectedLCSLength
 ---
 
-# Expected LCSLength
+# Expected length of a longest common subsequence
 
-The exact uniform expectation of LCS length over the finite product sample
-space. Each ordered pair has weight `1 / |BinaryStringPair n|`.
+**Expected length of a longest common subsequence.** For $n \in \mathbb{N}$, the expected LCS
+length $E_n$ is the average of $\mathrm{LCS}(x, y)$, the length of a longest common subsequence of
+$x$ and $y$, over all ordered pairs $(x, y)$ of binary strings of length $n$: it is the sum of
+$\mathrm{LCS}(x, y)$ over these pairs divided by their number $4^n$. Equivalently, $E_n$ is the
+expectation of $\mathrm{LCS}(x, y)$ for two independent uniformly random binary strings $x$, $y$
+of length $n$.
 
 ## Depends on
 
@@ -17,10 +21,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Binary String](binary-string.md)
-- [Binary String Pair](binary-string-pair.md)
-- [Lcs Length](lcs-length.md)
-- [Uniform Binary String Pairs](uniform-binary-string-pairs.md)
+- [Binary strings](binary-string.md)
+- [Pairs of binary strings](binary-string-pair.md)
+- [Length of a longest common subsequence](lcs-length.md)
+- [The finite set of pairs of binary strings](uniform-binary-string-pairs.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_forall_gcd_dvd_eq_add_mul
 ---
 
-# Exists forall gcd dvd eq add mul
+# Large multiples of the gcd are nonnegative combinations
 
-If `gcd(i, j) = g` for positive integers `i, j`, then every sufficiently large multiple of
-`g` is `u i + v j` with `u, v ≥ 0`.
+**Large multiples of the gcd are nonnegative combinations.** Let $i$ and $j$ be positive
+integers. There is an $n_0$ such that every integer $m > n_0$ divisible by $\gcd(i, j)$ can be
+written as $m = ui + vj$ with nonnegative integers $u$ and $v$.
 
 ## Depends on
 

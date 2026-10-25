@@ -5,7 +5,7 @@ navigation: collection
 
 # WantedExt
 
-## [Additive to Dehn Sommerville Wanted](part-01/README.md)
+## [Additive to Dehn–Sommerville equations](part-01/README.md)
 
 - [Additive](part-01/additive/README.md)
 - [Coding](part-01/coding/README.md)
@@ -26,7 +26,7 @@ navigation: collection
 - [Conjecture Of Marton](part-01/conjecture-of-marton-wanted/README.md)
 - [Continuous Turan](part-01/continuous-turan-wanted/README.md)
 - [Cube Rotation Nim](part-01/cube-rotation-nim-wanted/README.md)
-- [Dehn Sommerville Wanted](part-01/dehn-sommerville.md)
+- [Dehn–Sommerville equations](part-01/dehn-sommerville.md)
 
 ## [Proposition 4 to Fast Van Der Waerden Game](part-02/README.md)
 

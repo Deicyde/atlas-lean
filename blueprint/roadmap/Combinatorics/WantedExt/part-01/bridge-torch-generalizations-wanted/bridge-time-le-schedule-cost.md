@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_le_scheduleCost
 ---
 
-# Bridge Time le schedule Cost
+# Every schedule bounds the optimal time
 
-Any schedule bounds the optimal crossing time from above.
+**Every schedule bounds the optimal time.** For all natural numbers $c$ and $n$ and every
+complete schedule $\sigma$ for the people $1, \dots, n$ on a bridge of capacity $c$ with one
+torch, the optimal crossing time of these $n$ people on this bridge is at most the total time
+of $\sigma$.
 
 ## Depends on
 
-- [Is Bridge Schedule](is-bridge-schedule.md)
-- [Bridge Time](bridge-time.md)
+- [Bridge schedules](is-bridge-schedule.md)
+- [Optimal crossing time of the bridge and torch problem](bridge-time.md)
 - [Schedule Cost](schedule-cost.md)
 
 ## Sources

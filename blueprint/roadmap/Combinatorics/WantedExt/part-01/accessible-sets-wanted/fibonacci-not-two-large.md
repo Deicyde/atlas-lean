@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.fibonacci_not_two_large
 ---
 
-# Fibonacci not two large
+# The positive Fibonacci set is not 2-large
 
-Consequently, the positive Fibonacci set is not 2-large.
+**The positive Fibonacci set is not 2-large.** Let $F_n$ denote the $n$-th Fibonacci number,
+with $F_0 = 0$ and $F_1 = 1$. The positive Fibonacci set
+$\{F_n : n \ge 2\} = \{1, 2, 3, 5, 8, \dots\}$ is not $2$-large.
 
 ## Depends on
 
-- [Is RLarge](is-rlarge.md)
-- [Positive Fibonacci Set](positive-fibonacci-set.md)
+- [$r$-large sets](is-rlarge.md)
+- [Positive Fibonacci set](positive-fibonacci-set.md)
 
 ## Sources
 

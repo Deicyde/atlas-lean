@@ -5,16 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.two_accessible_of_internal_diffsequences
 ---
 
-# Two accessible of internal diffsequences
+# Sets containing their own long diffsequences are 2-accessible
 
-If `D` contains `D`-diffsequences of every positive length, then it is
-2-accessible.  Membership of every term formalizes that the sequence lies in
-`D` itself.
+**Sets containing their own long diffsequences are 2-accessible.** Let $D$ be a set of
+positive integers. If for every $k \ge 1$ there are positive integers $x_1, \dots, x_k$, all in
+$D$, that form a $D$-diffsequence, then $D$ is $2$-accessible.
 
 ## Depends on
 
-- [Is DDiff Sequence](is-ddiff-sequence.md)
-- [Is RAccessible](is-raccessible.md)
+- [$D$-diffsequences](is-ddiff-sequence.md)
+- [$r$-accessibility for colorings of the positive integers](is-raccessible.md)
 
 ## Sources
 

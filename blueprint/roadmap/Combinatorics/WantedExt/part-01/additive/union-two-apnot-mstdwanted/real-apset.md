@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.realAPSet
 ---
 
-# Real APSet
+# Finite arithmetic progression
 
-The arithmetic progression `J(x, m, d) = {x + i d : i ∈ [0, m]}`.
+**Finite arithmetic progression.** For a real number $x$, a natural number $m$ and a real
+number $d$, $J(x, m, d)$ is the finite set of real numbers
+$\{x + i d : i = 0, 1, \ldots, m\}$, that is, $x, x + d, \ldots, x + m d$.
 
 ## Depends on
 

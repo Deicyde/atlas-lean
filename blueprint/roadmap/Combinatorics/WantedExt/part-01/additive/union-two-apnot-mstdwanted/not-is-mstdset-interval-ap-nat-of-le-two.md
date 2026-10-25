@@ -12,9 +12,9 @@ J(x, m, d)` is not an MSTD set.
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
-- [Real APSet](real-apset.md)
-- [Real Interval Set](real-interval-set.md)
+- [MSTD set](is-mstdset.md)
+- [Finite arithmetic progression](real-apset.md)
+- [Initial integer interval](real-interval-set.md)
 
 ## Sources
 

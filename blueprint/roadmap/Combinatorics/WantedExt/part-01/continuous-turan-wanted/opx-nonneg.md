@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.opx_nonneg
 ---
 
-# Opx nonneg
+# Nonnegativity of the continuous Turán number
 
-`opx(n, P) ≥ 0`.
+**Nonnegativity of the continuous Turán number.** For every real number $n$ and every set
+$P \subseteq \mathbb{R}^2$, $\operatorname{opx}(n, P) \ge 0$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Proof depends on
 
-- [Point Set Contains Pattern](point-set-contains-pattern.md)
+- [Containment of planar point sets](point-set-contains-pattern.md)
 
 ## Sources
 

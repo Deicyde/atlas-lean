@@ -7,13 +7,15 @@ proof: formalized
 lean: SimpleGraph.IsOddIndependent.finite_inter
 ---
 
-# Finite inter
+# Outside vertices have finitely many neighbours in an odd independent set
 
-Finiteness of each outside-neighbourhood intersection.
+**Outside vertices have finitely many neighbours in an odd independent set.** Let $S$ be an
+odd independent set of a simple graph $G$ and let $v$ be a vertex with $v \notin S$. Then only
+finitely many neighbours of $v$ lie in $S$.
 
 ## Depends on
 
-- [Is Odd Independent](is-odd-independent.md)
+- [Odd independent set](is-odd-independent.md)
 
 ## Sources
 

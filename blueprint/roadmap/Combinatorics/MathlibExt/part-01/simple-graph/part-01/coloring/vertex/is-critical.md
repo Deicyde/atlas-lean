@@ -6,10 +6,11 @@ statement: formalized
 lean: SimpleGraph.IsCritical
 ---
 
-# Is Critical
+# Vertex-critical graphs
 
-A graph `G` is `k`-critical (or vertex-critical) if its chromatic number is `k`,
-and deleting any single vertex reduces the chromatic number.
+**Vertex-critical graphs.** Let $k$ be a natural number. A graph $G$ is $k$-critical (or
+vertex-critical) if its chromatic number equals $k$ and every vertex $v$ of $G$ is critical,
+that is, deleting $v$ from $G$ strictly lowers the chromatic number.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Critical Vertex](is-critical-vertex.md)
+- [Critical vertices of a subgraph](is-critical-vertex.md)
 
 ## Sources
 

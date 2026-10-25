@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.chr_pkernel_finite
 ---
 
-# Chr pkernel finite
+# Finiteness of the $p$-kernel from the $p^r$-kernel
 
-If the `(p ^ r)`-kernel is finite then so is the `p`-kernel.
+**Finiteness of the $p$-kernel from the $p^r$-kernel.** Let $p$ and $r$ be positive natural
+numbers and let $a$ be a sequence indexed by $\mathbb{N}$. If the $p^r$-kernel of $a$ is finite,
+then the $p$-kernel of $a$ is finite.
 
 ## Depends on
 
-- [K Kernel](k-kernel.md)
+- [The $k$-kernel of a sequence](k-kernel.md)
 
 ## Sources
 

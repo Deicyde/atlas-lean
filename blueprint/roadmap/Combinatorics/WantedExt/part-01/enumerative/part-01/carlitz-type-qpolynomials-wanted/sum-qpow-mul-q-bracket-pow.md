@@ -5,15 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.sum_qpow_mul_qBracket_pow
 ---
 
-# Sum qpow mul q Bracket pow
+# Sums of $q^{rk} (k)^n$ via Carlitz-type sequences
 
-`q`-power sums: for `r ≥ 1`, `∑_{k<N} q^{rk} [k]^n = q^{rN} S_n(N) - S_n(0)`, where `S` is the
-Carlitz-type sequence with associated sequence `1/((q - 1)[k + r])`.
+**Sums of $q^{rk} [k]^n$ via Carlitz-type sequences.** Let $q > 0$ with $q \ne 1$, let
+$[x] = (q^x - 1)/(q - 1)$, and let $r \ge 1$ be a natural number. Let $S_m(x)$
+($m \in \mathbb{N}$, $x \in \mathbb{R}$) be the Carlitz-type sequence with associated sequence
+$a_k = 1/((q - 1)[k + r])$, that is,
+
+$$S_m(x) = (q - 1)^{-m} \sum_{k=0}^{m} (-1)^{m-k} \binom{m}{k} a_k q^{kx}$$
+
+for all $m$ and all real $x$. Then for all natural numbers $n$ and $N$,
+
+$$\sum_{k=0}^{N-1} q^{rk} [k]^n = q^{rN} S_n(N) - S_n(0),$$
+
+where $0^0 = 1$.
 
 ## Depends on
 
-- [Is Carlitz Type With](is-carlitz-type-with.md)
-- [Q Bracket](q-bracket.md)
+- [Carlitz-type sequences](is-carlitz-type-with.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

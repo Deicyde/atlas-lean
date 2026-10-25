@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.IsArithmeticalStructure.isSmoothCoconut_iff
 ---
 
-# Is Smooth Coconut iff
+# Characterization of smooth coconut structures
 
-Lemma 2: an arithmetical structure on `CT(p, s)` (`p ≥ 1`) is smooth if
-and only if `r_{ℓ_j} < r_p` for all `j` and `r_1 < r_2 < ⋯ < r_p`.
+**Characterization of smooth coconut structures.** Let $p \ge 1$ and let $(d, r)$ be an
+arithmetical structure on the coconut tree $CT(p, s)$ with path vertices $v_1, \dots, v_p$ and
+leaves $\ell_1, \dots, \ell_s$ adjacent to $v_p$. Then $(d, r)$ is smooth if and only if
+$r(\ell_j) < r(v_p)$ for every $j$ and $r(v_1) < r(v_2) < \dots < r(v_p)$.
 
 ## Depends on
 
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
-- [Is Smooth Coconut](is-smooth-coconut.md)
-- [Coconut Tree](coconut-tree.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_weightedZeroSumFree_zmod_prod
 ---
 
-# Exists weighted Zero Sum Free zmod prod
+# Long weighted zero-sum free sequences in groups of rank two
 
-For `m, n ≥ 2` with `m ∣ n`, `k ≥ 1` and `α = ⌈n/(m-1)⌉ - 1`, there is a sequence over
-`Z_n ⊕ Z_{kn}` of length `m + ⌈kn/α⌉ - 2` with no non-empty `{1, …, α}`-weighted zero-sum
-subsequence (the existence form; it gives `D_{1..α}(Z_n ⊕ Z_{kn}) ≥ m + ⌈kn/α⌉ - 1`).
+**Long weighted zero-sum free sequences in groups of rank two.** Let $m, n \ge 2$ be natural
+numbers with $m \mid n$, let $k \ge 1$ and put $\alpha = \lceil n/(m-1) \rceil - 1$. Then there is
+a sequence $s$ over $\mathbb{Z}/n\mathbb{Z} \oplus \mathbb{Z}/kn\mathbb{Z}$ of length
+$m + \lceil kn/\alpha \rceil - 2$ that is $\{1, \dots, \alpha\}$-weighted zero-sum free: for every
+non-empty set $I$ of positions and all weights $a_i \in \{1, \dots, \alpha\}$, the weighted sum
+$\sum_{i \in I} a_i s_i$ is non-zero.
+
+In particular the $\{1, \dots, \alpha\}$-weighted Davenport constant of
+$\mathbb{Z}/n\mathbb{Z} \oplus \mathbb{Z}/kn\mathbb{Z}$ is at least
+$m + \lceil kn/\alpha \rceil - 1$.
 
 ## Depends on
 

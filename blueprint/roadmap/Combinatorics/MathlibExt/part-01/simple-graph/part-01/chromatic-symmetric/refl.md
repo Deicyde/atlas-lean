@@ -7,17 +7,18 @@ proof: formalized
 lean: SimpleGraph.SameChromaticSymmetricFunction.refl
 ---
 
-# Refl
+# Reflexivity of having the same chromatic symmetric function
 
-Every graph has the same chromatic symmetric function as itself.
+**Reflexivity of having the same chromatic symmetric function.** Every simple graph on a
+finite vertex set has the same chromatic symmetric function as itself.
 
 ## Depends on
 
-- [Same Chromatic Symmetric Function](same-chromatic-symmetric-function.md)
+- [Graphs with the same chromatic symmetric function](same-chromatic-symmetric-function.md)
 
 ## Proof depends on
 
-- [Chromatic Profile Count](chromatic-profile-count.md)
+- [Chromatic profile count](chromatic-profile-count.md)
 
 ## Sources
 

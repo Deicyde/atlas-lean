@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.nathanson_mstd_construction
 ---
 
-# Nathanson mstd construction
+# Nathanson's sum-dominated set
 
-Theorem 2 (quoted from Nathanson): let `m ≥ 4`, `1 ≤ d ≤ m - 1`, `d ≠ m / 2`, and
-`k ≥ 3` if `d < m / 2`, `k ≥ 4` if `d > m / 2`. With `B = [0, m - 1] ∖ {d}`,
-`L = {m - d, 2m - d, …, km - d}`, `a* = (k + 1)m - 2d`, `A* = B ∪ L ∪ (a* - B)` and
-`A = A* ∪ {m}`, the set `A` is MSTD, `2m ∈ (A + A) ∖ (A* + A*)`, and
-`A* - {m} ⊆ A* - A*`. (`d ≠ m / 2` is written `2d ≠ m`.)
+**Nathanson's sum-dominated set.** For a set $S$ of integers write
+$S + S = \{s + s' : s, s' \in S\}$ and $S - S = \{s - s' : s, s' \in S\}$. Let $m$, $d$, $k$ be
+integers with $m \ge 4$, $1 \le d \le m - 1$ and $2d \ne m$, and suppose $k \ge 3$ if $2d < m$
+and $k \ge 4$ if $2d > m$. Let $B = \{0, 1, \dots, m - 1\} \setminus \{d\}$,
+$L = \{jm - d : 1 \le j \le k\}$, $A^* = B \cup L \cup \{(k + 1)m - 2d - b : b \in B\}$ and
+$A = A^* \cup \{m\}$. Then $|A - A| < |A + A|$, $2m \in A + A$, $2m \notin A^* + A^*$, and
+$\{a - m : a \in A^*\} \subseteq A^* - A^*$.
 
 ## Depends on
 

@@ -6,9 +6,10 @@ proof: formalized
 lean: NoncrossingPartition.eq_indiscrete_one
 ---
 
-# Eq indiscrete one
+# Noncrossing partitions of one point are indiscrete
 
-Every noncrossing partition of `Fin 1` equals the indiscrete one.
+**Noncrossing partitions of one point are indiscrete.** Every noncrossing partition of the
+one-point set $\{0\}$ equals the indiscrete noncrossing partition of $\{0\}$.
 
 ## Depends on
 

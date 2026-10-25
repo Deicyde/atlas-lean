@@ -6,9 +6,14 @@ statement: formalized
 lean: SimpleGraph.contractOutside
 ---
 
-# Contract Outside
+# Contracting the complement of a vertex set
 
-Contract the complement of `D` to one vertex.
+**Contracting the complement of a vertex set.** Let $G$ be a simple graph on a vertex set $V$
+and let $D \subseteq V$. Contracting the complement of $D$ to a single vertex gives the simple
+graph whose vertices are the elements of $D$ together with one new vertex $\ast$, in which two
+vertices $a, b \in D$ are adjacent exactly when they are adjacent in $G$, and a vertex $a \in D$
+is adjacent to $\ast$ exactly when $a$ has a neighbour in $G$ outside $D$. The new vertex $\ast$
+is present even when $D = V$, and is then isolated.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Collapse Outside](collapse-outside.md)
+- [Collapsing the complement of a set](collapse-outside.md)
 
 ## Sources
 

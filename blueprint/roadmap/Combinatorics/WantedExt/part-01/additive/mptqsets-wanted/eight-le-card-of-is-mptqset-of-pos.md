@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.eight_le_card_of_isMPTQSet_of_pos
 ---
 
-# Eight le card of is MPTQSet of pos
+# Chu's bound for MPTQ sets of positive reals
 
-Theorem 2 (quoting Chu), part 1: an MPTQ set of positive reals has at least 8 elements.
+**Chu's bound for MPTQ sets of positive reals.** Every MPTQ set whose elements are all
+positive real numbers has at least $8$ elements.
 
 ## Depends on
 
-- [Is MPTQSet](is-mptqset.md)
+- [MPTQ set](is-mptqset.md)
 
 ## Sources
 

@@ -6,20 +6,22 @@ proof: formalized
 lean: SimpleGraph.IsDegenerate.colorable
 ---
 
-# Colorable
+# $k$-degenerate graphs are $(k + 1)$-colorable
 
-Every `k`-degenerate finite graph is `(k + 1)`-colorable (Diestel, §5.1–5.2).
+**$k$-degenerate graphs are $(k + 1)$-colorable.** Let $k$ be a natural number. Every
+$k$-degenerate simple graph on a finite vertex set is $(k + 1)$-colorable.
 
 ## Depends on
 
-- [Is Degenerate](../../part-01/degeneracy/is-degenerate.md)
+- [Degenerate graph](../../part-01/degeneracy/is-degenerate.md)
 
 ## Proof depends on
 
-- [Is Degenerate On](../../part-01/degeneracy/is-degenerate-on-2.md)
-- [Is Degenerate On](../../part-01/degeneracy/is-degenerate-on.md)
-- [Exists coloring Fun](exists-coloring-fun.md)
+- [A degenerate graph is degenerate on every vertex set](../../part-01/degeneracy/is-degenerate-on-2.md)
+- [Degeneracy on a vertex set](../../part-01/degeneracy/is-degenerate-on.md)
+- [Coloring a $k$-degenerate vertex set with $k + 1$ colors](exists-coloring-fun.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.DegeneracyColoring](../../../../../../../sources/v2/MathlibExt.md)
+- Diestel, §5.1–5.2.

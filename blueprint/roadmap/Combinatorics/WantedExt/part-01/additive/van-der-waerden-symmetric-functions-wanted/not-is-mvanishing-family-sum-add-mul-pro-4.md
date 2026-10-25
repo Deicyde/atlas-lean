@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_one_prime_three_mod_four
 ---
 
-# Not is MVanishing Family sum Add Mul Prod one prime three mod four
+# $F_1$ modulo a prime $n > 3$ with $n \equiv 3 \pmod 4$ is not $m$-vanishing for $m > 0$
 
-Lemma 7: for a prime `n > 3` with `n ≡ 3 (mod 4)`, `F_1` over `ℤ/n` is not
-`m`-vanishing for any `m > 0`.
+**$F_1$ modulo a prime $n > 3$ with $n \equiv 3 \pmod 4$ is not $m$-vanishing for $m > 0$.**
+Let $n > 3$ be a prime with $n \equiv 3 \pmod 4$. Then for every $m > 0$ the sum-plus-product
+family $F_1$ over $\mathbb{Z}/n$, $F_1(b_1, \dots, b_l) = b_1 + \dots + b_l + b_1 \cdots b_l$, is
+not $m$-vanishing.
 
 ## Depends on
 
-- [Is MVanishing Family](is-mvanishing-family.md)
-- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
+- [$m$-vanishing family](is-mvanishing-family.md)
+- [The sum-plus-product family $F_c$](sum-add-mul-prod-family.md)
 
 ## Sources
 

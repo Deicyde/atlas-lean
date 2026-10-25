@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.boundedSubsetSums_one_one_neg_one_one_two
 ---
 
-# Bounded Subset Sums one one neg one one two
+# Bounded subset sums of $\{-1, 1, 2\}$
 
-`Σ^1_1({-1, 1, 2}) = {-1, 0, 1, 2, 3}`.
+**Bounded subset sums of $\{-1, 1, 2\}$.** The set $\Sigma^{1}_{1}(\{-1, 1, 2\})$ of sums of
+subsets of the integer set $\{-1, 1, 2\}$ with at least $1$ and at most $2$ elements is
+$\{-1, 0, 1, 2, 3\}$.
 
 ## Depends on
 
-- [Bounded Subset Sums](bounded-subset-sums.md)
+- [Subset sums with a bounded number of terms](bounded-subset-sums.md)
 
 ## Sources
 

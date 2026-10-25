@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.lunarIndecomposableLevel_diff_ncard_le
 ---
 
-# Lunar Indecomposable Level diff ncard le
+# Bound on decomposable lunar numbers neither level decomposable nor extremal
 
-Lemma 28: for fixed `b ≥ 2` there is `C > 0` such that for all `n` and `d, v > 0`,
-`|ℐ_b^n \ ℋ_b^n(d)| ≤ C (v n^{2d+2} 2^v b^{(b-1)n/b + d/2} + n² 2^{-v} b^{n+1})`, where
-`ℐ_b^n = Σ_b^n \ 𝒟_b^n`.
+**Bound on decomposable lunar numbers neither level decomposable nor extremal.** Fix an integer
+$b \ge 2$. For a natural number $n$ let $\mathcal{I}_b^n = \Sigma_b^n \setminus \mathcal{D}_b^n$,
+where $\Sigma_b^n$ is the set of decomposable lunar numbers of base $b$ and degree at most $n$ and
+$\mathcal{D}_b^n$ the set of level-decomposable ones, and for a real $d$ let $\mathcal{H}_b^n(d)$
+be the set of $d$-Hoeffding extremal ones. There is a constant $C > 0$ such that for every natural
+number $n$ and all reals $d > 0$ and $v > 0$,
+
+$$|\mathcal{I}_b^n \setminus \mathcal{H}_b^n(d)| \le
+C \Big(v n^{2d+2} 2^v b^{(b-1)n/b + d/2} + n^2 2^{-v} b^{n+1}\Big).$$
 
 ## Depends on
 
-- [Lunar Decomposable Set](lunar-decomposable-set.md)
-- [Lunar Hoeffding Extremal Set](lunar-hoeffding-extremal-set.md)
-- [Lunar Level Decomposable Set](lunar-level-decomposable-set.md)
+- [Decomposable lunar numbers](lunar-decomposable-set.md)
+- [Hoeffding extremal lunar numbers](lunar-hoeffding-extremal-set.md)
+- [Level-decomposable lunar numbers](lunar-level-decomposable-set.md)
 
 ## Sources
 

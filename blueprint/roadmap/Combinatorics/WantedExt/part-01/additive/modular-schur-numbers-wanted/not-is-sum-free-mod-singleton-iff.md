@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.not_isSumFreeMod_singleton_iff
 ---
 
-# Not is Sum Free Mod singleton iff
+# When a singleton set is sum-free
 
-For positive `a, l, m` with `a ≢ 0 (mod m)` and `d = gcd(a, m)`: if `d = 1`, `{a}` is not
-`l`-sum-free modulo `m` iff `l ≡ 1 (mod m)`; if `d > 1`, iff `l ≡ 1 (mod m/d)`.
+**When a singleton set is sum-free.** Let $a$, $l$ and $m$ be natural numbers with
+$l \ge 1$, $m \ge 1$ and $m \nmid a$, and let $d = \gcd(a, m)$. If $d = 1$, then $\{a\}$ is not
+$l$-sum-free modulo $m$ if and only if $l \equiv 1 \pmod{m}$. If $d > 1$, then $\{a\}$ is not
+$l$-sum-free modulo $m$ if and only if $l \equiv 1 \pmod{m/d}$.
 
 ## Depends on
 
-- [Is Sum Free Mod](is-sum-free-mod.md)
+- [Sum-free sets modulo $m$](is-sum-free-mod.md)
 
 ## Sources
 

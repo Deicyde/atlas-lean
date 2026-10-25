@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.no_squareWeightedSubseq_pair_of_reduction
 ---
 
-# No square Weighted Subseq pair of reduction
+# Square-weighted zero-sum free unit pairs lift to odd prime powers
 
-Lemma 18: for odd prime `p` and positive `r`, if the two unit terms have
-no `S(p)`-weighted zero-sum subsequence after reduction, then the original
-pair has no `S(p^r)`-weighted zero-sum subsequence. The paper writes the
-equivalent `Q_p` in the hypothesis.
+**Square-weighted zero-sum free unit pairs lift to odd prime powers.** Let $p$ be an odd
+prime, let $r \ge 1$, and let $x_1, x_2$ be units of $\mathbb{Z}_{p^r}$. Write $S(m)$ for the set
+of nonzero squares in $\mathbb{Z}_m$, and say that a sequence $(y_i)$ in $\mathbb{Z}_m$ has an
+$A$-weighted zero-sum subsequence when there are a non-empty set $J$ of indices and weights
+$a_j \in A$ for $j \in J$ with $\sum_{j \in J} a_j y_j = 0$. If the reduction
+$(\bar x_1, \bar x_2)$ of $(x_1, x_2)$ modulo $p$ has no $S(p)$-weighted zero-sum subsequence,
+then $(x_1, x_2)$ has no $S(p^r)$-weighted zero-sum subsequence.
+
+The paper states the hypothesis with $Q_p$, the set of nonzero quadratic residues modulo $p$,
+which equals $S(p)$.
 
 ## Depends on
 
-- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
-- [Square Set](square-set.md)
+- [Weighted zero-sum subsequences](has-weighted-zero-sum-subseq.md)
+- [Nonzero squares modulo $n$](square-set.md)
 
 ## Sources
 

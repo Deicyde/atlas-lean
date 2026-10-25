@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Triangles Containing](../../../MathlibExt/part-01/simple-graph/part-01/clique/triangles-containing.md)
+- [Triangles containing an edge](../../../MathlibExt/part-01/simple-graph/part-01/clique/triangles-containing.md)
 
 ## Sources
 

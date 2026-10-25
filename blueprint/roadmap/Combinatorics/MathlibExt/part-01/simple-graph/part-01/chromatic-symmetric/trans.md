@@ -7,17 +7,20 @@ proof: formalized
 lean: SimpleGraph.SameChromaticSymmetricFunction.trans
 ---
 
-# Trans
+# Transitivity of having the same chromatic symmetric function
 
-Transitivity of chromatic-symmetric-function equality.
+**Transitivity of having the same chromatic symmetric function.** Let $G$, $H$ and $K$ be
+simple graphs on finite vertex sets. If $G$ has the same chromatic symmetric function as $H$, and
+$H$ has the same chromatic symmetric function as $K$, then $G$ has the same chromatic symmetric
+function as $K$.
 
 ## Depends on
 
-- [Same Chromatic Symmetric Function](same-chromatic-symmetric-function.md)
+- [Graphs with the same chromatic symmetric function](same-chromatic-symmetric-function.md)
 
 ## Proof depends on
 
-- [Chromatic Profile Count](chromatic-profile-count.md)
+- [Chromatic profile count](chromatic-profile-count.md)
 
 ## Sources
 

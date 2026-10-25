@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.coloredArndt_total_mul
 ---
 
-# Colored Arndt total mul
+# Generating function for the total number of colored Arndt compositions
 
-`∑ c(n) xⁿ = (1 - x)²(1 + x)³(1 - x + x²) / (1 - x - 3x² + x³ + 2x⁴ - 4x⁵ - x⁶ + x⁷)`, with
-`c(n) = ∑_k c(n, k)`, stated multiplicatively.
+**Generating function for the total number of colored Arndt compositions.** For $n \ge 0$ let
+$c(n, k)$ be the number of colored Arndt compositions of $n$ with $k$ parts, and let
+$c(n) = \sum_{k=0}^{n} c(n, k)$ be the total number of colored Arndt compositions of $n$ (so
+$c(0) = 1$, counting the empty composition). Then, in the ring $\mathbb{Z}[[x]]$ of formal power
+series,
+
+$$\Big(\sum_{n \ge 0} c(n) x^n\Big) (1 - x - 3x^2 + x^3 + 2x^4 - 4x^5 - x^6 + x^7) =
+(1 - x)^2 (1 + x)^3 (1 - x + x^2).$$
 
 ## Depends on
 
-- [Colored Arndt Count](colored-arndt-count.md)
+- [Colored Arndt compositions](colored-arndt-count.md)
 
 ## Sources
 

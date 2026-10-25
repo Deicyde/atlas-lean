@@ -5,5 +5,5 @@ navigation: module
 
 # Sulanke Number
 
-- [Sulanke B](sulanke-b.md)
-- [Sulanke A](sulanke-a.md)
+- [Sulanke array B](sulanke-b.md)
+- [Sulanke array A](sulanke-a.md)

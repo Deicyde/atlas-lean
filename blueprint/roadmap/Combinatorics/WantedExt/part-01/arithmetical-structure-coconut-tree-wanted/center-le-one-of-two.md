@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsSmoothCoconut.center_le_one_of_two
 ---
 
-# Center le one of two
+# Smooth structures on coconut trees with two leaves
 
-Corollary 7: no smooth arithmetical structure on `CT(p, 2)` (`p ≥ 1`) has
-`d_p > 1`.
+**Smooth structures on coconut trees with two leaves.** Let $p \ge 1$ and let $(d, r)$ be a
+smooth arithmetical structure on the coconut tree $CT(p, 2)$, whose path is
+$v_1, \dots, v_p$ and whose two leaves are attached to the central vertex $v_p$. Then
+$d(v_p) \le 1$.
 
 ## Depends on
 
-- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
 
 ## Sources
 

@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.normalizedExpectedLCS
 ---
 
-# Normalized Expected LCS
+# Normalized expected LCS length
 
-The normalized expectation, with the irrelevant initial index made
-explicit instead of relying on totalized `0 / 0`.
+**Normalized expected LCS length.** For $n \ge 1$, the normalized expected LCS length at $n$
+is $E_n / n$, where $E_n$ is the expected length of a longest common subsequence of two
+independent uniformly random binary strings of length $n$. At $n = 0$ it is defined to be $0$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Expected LCSLength](expected-lcslength.md)
+- [Expected length of a longest common subsequence](expected-lcslength.md)
 
 ## Sources
 

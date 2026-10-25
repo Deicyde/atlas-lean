@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 - [Is Petersen Coloring](is-petersen-coloring.md)
 - [PVertex](pvertex.md)
-- [Is Bridgeless](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-01/bridgeless/is-bridgeless.md)
+- [Bridgeless graph](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-01/bridgeless/is-bridgeless.md)
 
 ## Sources
 

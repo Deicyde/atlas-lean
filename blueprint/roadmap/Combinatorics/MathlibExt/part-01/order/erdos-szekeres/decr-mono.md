@@ -7,22 +7,25 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.decrMono
 ---
 
-# Decr Mono
+# Longest decreasing subsequence lengths grow along a descent
 
-`decrLen` grows along index-increases and value-decreases.
+**Longest decreasing subsequence lengths grow along a descent.** Let $f$ be a real sequence
+indexed by $\{0, \dots, N-1\}$, and let $q < p$ be indices with $f(p) < f(q)$. Then the length of
+the longest strictly decreasing subsequence of $f$ ending at $q$ is strictly less than the length
+of the longest strictly decreasing subsequence of $f$ ending at $p$.
 
 ## Depends on
 
-- [Decr Len](decr-len.md)
+- [Length of the longest decreasing subsequence ending at a point](decr-len.md)
 
 ## Proof depends on
 
-- [Is Decr End](is-decr-end.md)
-- [Is Decr Subseq](is-decr-subseq.md)
-- [Decr Extend](decr-extend.md)
-- [Decr Len is End](decr-len-is-end.md)
-- [Le decr Len](le-decr-len.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Decreasing subsequence ending at a position](is-decr-end.md)
+- [Decreasing subsequence](is-decr-subseq.md)
+- [Extending a decreasing subsequence](decr-extend.md)
+- [The longest decreasing subsequence ending at a point is attained](decr-len-is-end.md)
+- [Bound by the longest decreasing subsequence ending at a position](le-decr-len.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

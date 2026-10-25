@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.rMinusAssociatedPermEGF_eq_exp
 ---
 
-# R Minus Associated Perm EGF eq exp
+# Exponential generating function of permutations with cycle lengths at most $r$
 
-Theorem 11: for `r ≥ 2`, the exponential generating function of the
-`r^-`-associated Stirling Eulerian numbers (permutations with all cycle lengths at most
-`r`, by excedances) is
-`A^{r-}(x,u) = exp(u + x ∑_{j=1}^{r-1} A_j(x) u^{j+1}/(j+1)!)`.
+**Exponential generating function of permutations with cycle lengths at most $r$.** Let $R$
+be a commutative $\mathbb{Q}$-algebra, $x \in R$, and let $r \ge 2$ be a natural number. For a
+permutation $\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$ for its number of excedances
+(indices $i$ with $\sigma(i) > i$), and let $A_j(x) = \sum_{\sigma \in S_j} x^{e(\sigma)}$. Let
+$A^{r-}(x,u) = \sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} u^n/n! \in R[[u]]$, the inner sum over
+the permutations $\sigma$ of $\{0, \dots, n-1\}$ all of whose cycles, fixed points included, have
+at most $r$ elements. Then
+
+$$A^{r-}(x,u) = \exp\left(u + x \sum_{j=1}^{r-1} \frac{A_j(x)\, u^{j+1}}{(j+1)!}\right),$$
+
+where $\exp$ of a series with zero constant term is its substitution into the exponential series.
 
 ## Depends on
 
-- [Is RMinus Associated Cycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rminus-associated-cycle-perm.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Permutations with all cycles of length at most $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rminus-associated-cycle-perm.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

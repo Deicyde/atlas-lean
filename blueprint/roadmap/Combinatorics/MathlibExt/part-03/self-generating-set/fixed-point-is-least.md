@@ -7,22 +7,26 @@ proof: formalized
 lean: MetaMathlibExt.SelfGeneratingSet.fixedPoint_isLeast
 ---
 
-# Fixed Point is Least
+# Under strict growth, a fixed-point set is the least self-generating set
 
-Under strict growth, a fixed point is the least self-generating set.
+**Under strict growth, a fixed-point set is the least self-generating set.** Let $F$ be a
+finite set of functions $\mathbb{N} \to \mathbb{N}$ with $x < f(x)$ for every $f \in F$ and every
+$x \in \mathbb{N}$, and let $s \in \mathbb{N}$. If $C$ is a fixed-point set for $F$ and $s$, then
+$C$ contains $s$ and is closed under every $f \in F$, and $C \subseteq G$ for every set
+$G \subseteq \mathbb{N}$ that contains $s$ and is closed under every $f \in F$.
 
 ## Depends on
 
-- [Fixed Point](fixed-point.md)
-- [SG](sg.md)
-- [Strict Growth](strict-growth.md)
+- [Fixed-point sets for a seed and generators](fixed-point.md)
+- [Self-generating sets](sg.md)
+- [Strict growth of a set of generators](strict-growth.md)
 
 ## Proof depends on
 
-- [Generated Set](generated-set.md)
-- [Fixed Point eq generated](fixed-point-eq-generated.md)
-- [Fixed Point is SG](fixed-point-is-sg.md)
-- [Generated le of sg](generated-le-of-sg.md)
+- [Set generated from a seed](generated-set.md)
+- [Under strict growth, a fixed-point set is the generated set](fixed-point-eq-generated.md)
+- [Fixed-point sets are self-generating](fixed-point-is-sg.md)
+- [The generated set lies in every self-generating set](generated-le-of-sg.md)
 
 ## Sources
 

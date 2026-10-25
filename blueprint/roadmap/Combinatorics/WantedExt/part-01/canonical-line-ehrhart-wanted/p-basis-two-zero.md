@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.pBasis_two_zero
 ---
 
-# P Basis two zero
+# The basis polynomial $p^2_0$
 
-The second symmetric basis polynomial is `p²₀ = 2(X² + X + 1)`.
+**The basis polynomial $p^2_0$.** The symmetric basis polynomial $p^2_0$ equals the complex
+polynomial $2(X^2 + X + 1)$.
 
 ## Depends on
 
-- [P Basis](p-basis.md)
+- [Symmetric basis polynomials](p-basis.md)
 
 ## Proof depends on
 
-- [B Basis](b-basis.md)
+- [The basis polynomials $b^d_j$](b-basis.md)
 
 ## Sources
 

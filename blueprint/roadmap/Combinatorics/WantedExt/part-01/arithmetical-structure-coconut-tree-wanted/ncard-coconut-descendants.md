@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.ncard_coconutDescendants
 ---
 
-# Ncard coconut Descendants
+# Number of descendants of a smooth coconut structure
 
-Proposition 4.5: for `s ≥ 2`, `1 ≤ i ≤ p` and a smooth arithmetical structure `(d, r)` on
-`CT(i, s)`, exactly `B(p - 1, p - i)` arithmetical structures on `CT(p, s)` are descendants of
-`(d, r)`.
+**Number of descendants of a smooth coconut structure.** Let $s \ge 2$ and $1 \le i \le p$,
+and let $(d, r)$ be a smooth arithmetical structure on the coconut tree $\mathrm{CT}(i, s)$. Then
+exactly $B(p - 1, p - i)$ arithmetical structures on $\mathrm{CT}(p, s)$ are descendants of
+$(d, r)$, where $B(n, k)$ is the ballot number.
 
 ## Depends on
 
-- [Coconut Ancestor](coconut-ancestor.md)
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
-- [Is Smooth Coconut](is-smooth-coconut.md)
-- [Ballot Number](ballot-number.md)
-- [Coconut Tree](coconut-tree.md)
+- [Ancestors of labelings of coconut trees](coconut-ancestor.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
+- [Ballot numbers](ballot-number.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

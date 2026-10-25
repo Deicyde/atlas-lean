@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.restrictedSmoothMaxEndCapacityDist
 ---
 
-# Restricted Smooth Max End Capacity Dist
+# Capacity distribution of restricted smooth words ending in their largest letter
 
-`s*(n, i; q)`, the capacity distribution on restricted smooth words of length `n` ending in
-`i` whose largest letter is `i`.
+**Capacity distribution of restricted smooth words ending in their largest letter.** For
+natural numbers $n$ and $i$, $s^*(n, i; q)$ is the polynomial $\sum_w q^{\mathrm{cap}(w)}$ in
+$\mathbb{Z}[q]$, where $w$ ranges over the restricted smooth words of length $n$ (smooth words
+with no two adjacent letters equal to $1$) whose last letter is $i$ and all of whose letters are
+at most $i$, and $\mathrm{cap}(w)$ is the capacity of $w$.
 
 ## Depends on
 
@@ -16,10 +19,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Restricted Smooth Words](restricted-smooth-words.md)
-- [Words Bounded By](words-bounded-by.md)
-- [Words Ending In](words-ending-in.md)
+- [Capacity distribution](capacity-dist.md)
+- [Restricted smooth words](restricted-smooth-words.md)
+- [Words with all letters at most a bound](words-bounded-by.md)
+- [Words ending in a given letter](words-ending-in.md)
 
 ## Sources
 

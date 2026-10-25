@@ -7,14 +7,19 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.MengerEdgeWanted.menger_edge_max_min
 ---
 
-# Menger edge max min
+# Menger's theorem for edge cuts and edge-disjoint paths
 
-The maximum number of edge-disjoint s-t paths equals the minimum size of an s-t cut.
+**Menger's theorem for edge cuts and edge-disjoint paths.** Let $G$ be a simple graph on a finite
+vertex set and let $s$ and $t$ be distinct vertices of $G$. Then there is a natural number $k$ such
+that there exist $k$ edge-disjoint paths from $s$ to $t$ and an $s$-$t$ edge cut with exactly $k$
+edges, every family of edge-disjoint paths from $s$ to $t$ has at most $k$ members, and every
+$s$-$t$ edge cut has at least $k$ edges. In words, the maximum number of edge-disjoint paths from
+$s$ to $t$ equals the minimum size of an $s$-$t$ edge cut.
 
 ## Depends on
 
-- [Is Edge Disjoint STPaths](is-edge-disjoint-stpaths.md)
-- [Is STEdge Cut](is-stedge-cut.md)
+- [Edge-disjoint paths](is-edge-disjoint-stpaths.md)
+- [Edge cuts separating two vertices](is-stedge-cut.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.smoothCapacityDist
 ---
 
-# Smooth Capacity Dist
+# Capacity distribution of smooth words by last letter
 
-`r(n, i; q)`, the capacity distribution on smooth words of length `n` ending in `i`.
+**Capacity distribution of smooth words by last letter.** For $n, i \ge 0$, $r(n, i; q)$ is the
+polynomial $\sum_w q^{\operatorname{cap}(w)} \in \mathbb{Z}[q]$, where $w$ runs over the smooth
+words of length $n$ whose last letter is $i$ and $\operatorname{cap}(w)$ is the capacity of $w$.
 
 ## Depends on
 
@@ -15,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Smooth Words](smooth-words.md)
-- [Words Ending In](words-ending-in.md)
+- [Capacity distribution](capacity-dist.md)
+- [Smooth words](smooth-words.md)
+- [Words ending in a given letter](words-ending-in.md)
 
 ## Sources
 

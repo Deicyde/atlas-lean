@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.empty_mem_vanDerWaerdenIdeal
 ---
 
-# Empty mem van Der Waerden Ideal
+# The empty set lies in the van der Waerden ideal
 
-The empty set lies in the van der Waerden ideal.
+**The empty set lies in the van der Waerden ideal.** The empty subset of $\mathbb{N}$ belongs to
+the van der Waerden ideal.
 
 ## Depends on
 
-- [Van Der Waerden Ideal](van-der-waerden-ideal.md)
+- [Van der Waerden ideal](van-der-waerden-ideal.md)
 
 ## Sources
 

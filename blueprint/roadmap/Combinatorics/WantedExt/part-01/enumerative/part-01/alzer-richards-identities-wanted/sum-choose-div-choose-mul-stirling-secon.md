@@ -5,11 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_div_choose_mul_stirlingSecond_eq_bernoulli
 ---
 
-# Sum choose div choose mul stirling Second eq bernoulli
+# Alternating Stirling sums with $\binom{n+1}{k+1}$ give Bernoulli numbers
 
-For `n ≥ 0`: `∑_{k=0}^{n} (-1)^k C(n+1, k+1) / C(r+k, k) · S(r+k, k)` is `B_r` for
-`0 ≤ r ≤ n` and `B_{n+1} - (-1/2)^{n+1} (n+1)!` for `r = n + 1` (the case `r = n` is
-Muthumalai's formula (1)).
+**Alternating Stirling sums with $\binom{n+1}{k+1}$ give Bernoulli numbers.** Write $S(n, k)$
+for the Stirling numbers of the second kind and $B_n$ for the Bernoulli numbers, with
+$B_1 = -1/2$. Let $n$ be a natural number. Then for every natural number $r \le n$,
+
+$$
+\sum_{k=0}^{n} (-1)^k \frac{\binom{n+1}{k+1}}{\binom{r+k}{k}} S(r+k, k) = B_r,
+$$
+
+and
+
+$$
+\sum_{k=0}^{n} (-1)^k \frac{\binom{n+1}{k+1}}{\binom{n+1+k}{k}} S(n+1+k, k) =
+B_{n+1} - (-1/2)^{n+1} (n+1)!.
+$$
+
+The case $r = n$ is Muthumalai's formula.
 
 ## Depends on
 

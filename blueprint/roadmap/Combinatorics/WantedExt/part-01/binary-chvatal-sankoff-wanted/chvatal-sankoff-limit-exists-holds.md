@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.chvatalSankoffLimitExists_holds
 ---
 
-# Chvatal Sankoff Limit Exists holds
+# Chvátal–Sankoff theorem: the binary LCS limit exists
 
-The source-reported ordinary limit exists unconditionally.
+**Chvátal–Sankoff theorem: the binary LCS limit exists.** Let $L_n$ be the length of a longest
+common subsequence of two independent uniformly random binary strings of length $n$. Then the
+sequence $\mathbb{E}[L_n]/n$ converges to a real number as $n \to \infty$.
 
 ## Depends on
 
-- [Chvatal Sankoff Limit Exists](chvatal-sankoff-limit-exists.md)
+- [Statement of the Chvátal–Sankoff limit theorem](chvatal-sankoff-limit-exists.md)
 
 ## Proof depends on
 
-- [Chvatal Sankoff Limit Exists of superadditive](chvatal-sankoff-limit-exists-of-superadd.md)
-- [Expected LCSLength superadditive](expected-lcslength-superadditive.md)
+- [Superadditivity implies the binary LCS limit exists](chvatal-sankoff-limit-exists-of-superadd.md)
+- [Superadditivity of the expected LCS length](expected-lcslength-superadditive.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Unique Subgraph Count](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-04/subgraph-isomorphism/unique-subgraph-count.md)
+- [Number of unique subgraphs](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-04/subgraph-isomorphism/unique-subgraph-count.md)
 
 ## Sources
 

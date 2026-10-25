@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.ascentAvoiders
 ---
 
-# Ascent Avoiders
+# Ascent sequences avoiding a set of patterns
 
-The ascent sequences of length `n` avoiding every pattern in `P`, the paper's
-`A_n(P)`.
+**Ascent sequences avoiding a set of patterns.** For a finite set $P$ of patterns (words over
+$\mathbb{N}$) and $n \in \mathbb{N}$, $A_n(P)$ is the set of ascent sequences of length $n$ that
+contain no pattern of $P$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Is Ascent Seq](../../part-04/rascal-numbers-wanted/is-ascent-seq.md)
-- [Contains Pattern](contains-pattern.md)
+- [Pattern containment](contains-pattern.md)
 
 ## Sources
 

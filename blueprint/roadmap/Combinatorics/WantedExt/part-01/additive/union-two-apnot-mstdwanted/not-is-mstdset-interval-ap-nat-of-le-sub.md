@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_intervalAP_nat_of_le_sub_one
 ---
 
-# Lemma 14
+# Interval plus integer progression starting inside the interval is not MSTD
 
-**Lemma 14.** For integers `n ≥ 3`, `m ≥ 2`, `d ≥ 2` and natural `x ≤ n - 1`, `I_n ∪ J(x, m, d)`
-is not an MSTD set.
+**Interval plus integer progression starting inside the interval is not MSTD.** Let
+$I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$, as finite
+sets of reals. For natural numbers $n \ge 3$, $m \ge 2$, $d \ge 2$ and $x \le n - 1$, the set
+$I_n \cup J(x, m, d)$ is not an MSTD set.
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
-- [Real APSet](real-apset.md)
-- [Real Interval Set](real-interval-set.md)
+- [MSTD set](is-mstdset.md)
+- [Finite arithmetic progression](real-apset.md)
+- [Initial integer interval](real-interval-set.md)
 
 ## Sources
 

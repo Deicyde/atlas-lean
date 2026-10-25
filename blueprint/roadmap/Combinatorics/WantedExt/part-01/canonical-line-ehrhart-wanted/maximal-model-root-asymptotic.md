@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.maximal_model_root_asymptotic
 ---
 
-# Maximal model root asymptotic
+# Asymptotics of the largest root of the model polynomial
 
-For every choice `β d` of a maximal-norm root of
-`M_d = C(X+d,d)+C(X,d)` in positive degree, the difference
-`|β_d+1/2| - d²/π` is `O(1)` at infinity.  Positivity is restricted to the root-selection
-hypothesis because `M_0` is constant; this does not change an `atTop` asymptotic statement.
+**Asymptotics of the largest root of the model polynomial.** For $d \ge 0$ let
+$M_d = \binom{X+d}{d} + \binom{X}{d}$ be the model polynomial. Let $(\beta_d)_{d \ge 0}$ be a
+sequence of complex numbers such that for every $d \ge 1$, $\beta_d$ is a root of $M_d$ and
+$|\gamma| \le |\beta_d|$ for every root $\gamma$ of $M_d$. Then
+$|\beta_d + \tfrac12| - d^2/\pi = O(1)$ as $d \to \infty$.
+
+No condition is placed on $\beta_0$ because $M_0$ is constant; this does not affect the
+asymptotic statement.
 
 ## Depends on
 
-- [Model Polynomial](model-polynomial.md)
+- [Model polynomial](model-polynomial.md)
 
 ## Sources
 

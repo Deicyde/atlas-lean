@@ -7,13 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.abelianCubeFree
 ---
 
-# Ternary Abelian Cube Free Lower Bound
+# Exponential lower bound for ternary abelian-cube-free words
 
-Exponential lower bound for ternary abelian-cube-free words.
-
-The count of abelian-cube-free words of length `n` over `{0,1,2}` is
-`Ω(2^(n/24))`, encoded as `2^(n/24) = O(count)`. An abelian cube is three
-consecutive nonempty blocks with equal letter counts.
+**Exponential lower bound for ternary abelian-cube-free words.** An abelian cube is a word
+$xyz$ with $x$, $y$, $z$ nonempty such that each letter occurs equally often in $x$, $y$ and $z$.
+Let $a_n$ be the number of words of length $n$ over $\{0, 1, 2\}$ that contain no abelian cube
+as a factor. Then $2^{n/24} = O(a_n)$ as $n \to \infty$: there is a constant $C$ such that
+$2^{n/24} \le C a_n$ for all sufficiently large $n$.
 
 ## Depends on
 

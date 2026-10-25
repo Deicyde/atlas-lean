@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_intervalAP_rat_diff_of_le
 ---
 
-# Lemma 6
+# An interval and a later progression with natural start and small step are not MSTD
 
-**Lemma 6.** For `n ≥ 3`, `d = s + p/q` with `0 < p < q` coprime and `qd ≤ n - 1`, natural `x ≥
-n + 1` and `m ≥ q`, `I_n ∪ J(x, m, d)` is not an MSTD set.
+**An interval and a later progression with natural start and small step are not MSTD.** Let
+$n \ge 3$, $m$ and $x$ be natural numbers with $x \ge n + 1$, and let $d = s + p/q$, where
+$s, p, q$ are natural numbers with $0 < p < q$ and $\gcd(p, q) = 1$. Suppose that $m \ge q$ and
+$qd \le n - 1$. Write $I_n = \{0, 1, \dots, n - 1\}$ and
+$J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$. Then $I_n \cup J(x, m, d)$ is not an MSTD set.
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
-- [Real APSet](real-apset.md)
-- [Real Interval Set](real-interval-set.md)
+- [MSTD set](is-mstdset.md)
+- [Finite arithmetic progression](real-apset.md)
+- [Initial integer interval](real-interval-set.md)
 
 ## Sources
 

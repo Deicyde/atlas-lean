@@ -7,10 +7,13 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.ErdosGallaiWanted.erdos_gallai
 ---
 
-# Erdos Gallai
+# Erdős–Gallai theorem
 
-A finite nonnegative integer sequence is graphical exactly when its sum is
-even and all Erdős-Gallai subset inequalities hold.
+**Erdős–Gallai theorem.** Let $V$ be a finite set and $d \colon V \to \mathbb{N}$. There is a
+simple graph on $V$ in which every vertex $v$ has degree $d(v)$ if and only if the sum
+$\sum_{v \in V} d(v)$ is even and, for every subset $S \subseteq V$,
+
+$$\sum_{v \in S} d(v) \le |S|(|S| - 1) + \sum_{v \in V \setminus S} \min(d(v), |S|).$$
 
 ## Depends on
 

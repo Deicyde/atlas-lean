@@ -7,13 +7,17 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.EdgeColoringWanted.konig_line_coloring
 ---
 
-# Konig line coloring
+# König's line coloring theorem
 
-Every finite bipartite graph has edge chromatic number equal to its maximum degree.
+**König's line coloring theorem.** Every finite bipartite simple graph $G$ has a proper edge
+coloring with $\Delta(G)$ colors, where $\Delta(G)$ is the maximum degree of $G$.
+
+Since every proper edge coloring of $G$ needs at least $\Delta(G)$ colors, the edge chromatic
+number of $G$ equals $\Delta(G)$.
 
 ## Depends on
 
-- [Is Proper Edge Coloring](is-proper-edge-coloring.md)
+- [Proper edge coloring](is-proper-edge-coloring.md)
 
 ## Proof depends on
 

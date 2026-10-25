@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.wordWeakAscents
 ---
 
-# Word Weak Ascents
+# Number of weak ascents of a word
 
-The number of weak ascents of a word: positions `j` with `a_j ≤ a_{j+1}`.
+**Number of weak ascents of a word.** For a word $a_1 a_2 \cdots a_m$ of natural numbers,
+$\mathrm{wasc}(a_1 \cdots a_m)$ is the number of weak ascents, that is, of positions $j$ with
+$1 \le j < m$ and $a_j \le a_{j+1}$; in particular the empty word and every word of length one
+have no weak ascents.
 
 ## Depends on
 

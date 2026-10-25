@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.rMinusAssociatedStirlingEulerian_succ
 ---
 
-# R Minus Associated Stirling Eulerian succ
+# Recurrence for permutations with cycle lengths at most r, by excedances
 
-Theorem 10: for `r ≥ 2` and `0 ≤ m ≤ n`,
-`A^{r-}_{n+1,m} = ∑_{j=1}^{r-1} C(n,j) ∑_{i ≥ 0} C_{j+1,i} A^{r-}_{n-j,m-i} +
-A^{r-}_{n,m}`, where `A^{r-}` counts permutations with all cycle lengths at most
-`r` by excedances. The inner sum runs over `i ≤ m` (terms with `m - i < 0`
-vanish); terms with `j > n` vanish through `C(n,j) = 0`.
+**Recurrence for permutations with cycle lengths at most r, by excedances.** Let $r \ge 2$.
+An excedance of a permutation $\sigma$ is an $i$ with $\sigma(i) > i$. Let $A^{r-}_{n,m}$ be the
+number of permutations of $\{1, \dots, n\}$ all of whose cycles have length at most $r$ and which
+have exactly $m$ excedances, and let $C_{\ell,i}$ be the number of circular permutations of
+$\ell$ objects (permutations with a single cycle through all points) with exactly $i$
+excedances. Then for all natural numbers $m \le n$,
+
+$$A^{r-}_{n+1,m} = \sum_{j=1}^{r-1} \binom{n}{j} \sum_{i=0}^{m} C_{j+1,i}\, A^{r-}_{n-j,m-i} +
+A^{r-}_{n,m}.$$
+
+A term with $j > n$ vanishes because $\binom{n}{j} = 0$; there $n - j$ is read as $0$.
 
 ## Depends on
 
-- [Circular Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
-- [R Minus Associated Stirling Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/r-minus-associated-stirling-eulerian.md)
+- [Circular Eulerian numbers](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
+- [$r$-minus-associated Stirling Eulerian numbers](../../../../../MathlibExt/part-02/associated-stirling-eulerian/r-minus-associated-stirling-eulerian.md)
 
 ## Sources
 

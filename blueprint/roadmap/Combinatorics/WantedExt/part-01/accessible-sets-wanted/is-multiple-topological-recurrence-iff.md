@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isMultipleTopologicalRecurrence_iff
 ---
 
-# Is Multiple Topological Recurrence iff
+# Characterization of multiple topological recurrence
 
-Characterization of multiple topological recurrence.
+**Characterization of multiple topological recurrence.** A set $D$ of natural numbers is a set
+of multiple topological recurrence if and only if $D$ is a set of $\ell$-topological recurrence for
+every natural number $\ell \ge 1$.
 
 ## Depends on
 
-- [Is LTopological Recurrence](is-ltopological-recurrence.md)
-- [Is Multiple Topological Recurrence](is-multiple-topological-recurrence.md)
+- [Sets of $\ell$-topological recurrence](is-ltopological-recurrence.md)
+- [Sets of multiple topological recurrence](is-multiple-topological-recurrence.md)
 
 ## Sources
 

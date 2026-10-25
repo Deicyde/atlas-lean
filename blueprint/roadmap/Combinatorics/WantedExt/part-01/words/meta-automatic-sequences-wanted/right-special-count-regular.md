@@ -14,8 +14,8 @@ omitted.
 
 ## Depends on
 
-- [Is KAutomatic Sequence](../../../../MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
-- [Is KRegular Sequence](../../../../MathlibExt/part-02/words/regular-sequence/is-kregular-sequence.md)
+- [Automatic sequences via finite automata](../../../../MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
+- [$k$-regular sequence](../../../../MathlibExt/part-02/words/regular-sequence/is-kregular-sequence.md)
 - [Right Special Factors](right-special-factors.md)
 
 ## Sources

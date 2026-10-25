@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.restrictedSmoothWords
 ---
 
-# Restricted Smooth Words
+# Restricted smooth words
 
-The set `ℛ*ₙ` of smooth words of length `n` with no two adjacent `1`s.
+**Restricted smooth words.** For $n \ge 0$, the set $\mathcal{R}^{\ast}_n$ of restricted smooth
+words of length $n$ consists of the smooth words of length $n$ in which no two adjacent letters
+are both equal to $1$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Smooth Words](smooth-words.md)
+- [Smooth words](smooth-words.md)
 
 ## Sources
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.collapseOutside_of_mem
 ---
 
-# Collapse Outside of mem
+# The collapse map fixes the retained set
 
-A vertex in `D` survives contraction as its subtype copy.
+**The collapse map fixes the retained set.** For a set $D \subseteq V$, the collapse map from
+$V$ to $D$ together with the contraction vertex sends each $v \in D$ to $v$ itself.
 
 ## Depends on
 
-- [Collapse Outside](collapse-outside.md)
+- [Collapsing the complement of a set](collapse-outside.md)
 
 ## Sources
 

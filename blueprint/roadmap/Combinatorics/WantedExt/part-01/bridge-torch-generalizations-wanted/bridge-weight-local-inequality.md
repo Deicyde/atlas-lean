@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_local_inequality
 ---
 
-# Bridge Weight local inequality
+# Local inequality for the capacity-3 weights
 
-Local inequality: for every non-empty set `T` of positive integers with
-`|T| ≤ 3`, `∑_{i ∈ T} yᵢ + (9/2)(|T| - 1) ≤ max T + ∑_{i ∈ T} i`.
+**Local inequality for the capacity-3 weights.** Let $y_i$ be the weights of the capacity-3
+lower bound. For every nonempty set $T$ of positive integers with $|T| \le 3$,
+
+$$\sum_{i \in T} y_i + \frac{9}{2}(|T| - 1) \le \max T + \sum_{i \in T} i.$$
 
 ## Depends on
 
-- [Bridge Weight](bridge-weight.md)
+- [Weights of the capacity-3 lower bound](bridge-weight.md)
 
 ## Sources
 

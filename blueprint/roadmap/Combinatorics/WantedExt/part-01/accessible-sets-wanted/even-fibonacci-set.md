@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.evenFibonacciSet
 ---
 
-# Even Fibonacci Set
+# Even Fibonacci set
 
-The even-Fibonacci set is `{fib (3*n+3) | n ≥ 0}`, whose first terms are
-`2, 8, 34, …`.
+**Even Fibonacci set.** Let $F_m$ denote the $m$-th Fibonacci number, with $F_0 = 0$ and
+$F_1 = 1$. The even Fibonacci set is $\{F_{3n+3} : n \ge 0\}$; its first terms are
+$2, 8, 34, \dots$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ statement: formalized
 lean: SimpleGraph.emptyVertex
 ---
 
-# Empty Vertex
+# Empty simplex vertex
 
-The empty clique as a simplex vertex.
+**Empty simplex vertex.** Let $G$ be a simple graph. The empty simplex vertex of $G$ is
+the empty set of vertices, which is a clique of $G$.
 
 ## Depends on
 
-- [Simplex Vertex](simplex-vertex.md)
+- [Simplex vertices](simplex-vertex.md)
 
 ## Sources
 

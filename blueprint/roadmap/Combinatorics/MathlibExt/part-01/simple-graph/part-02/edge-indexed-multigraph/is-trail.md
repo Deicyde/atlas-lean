@@ -12,12 +12,12 @@ An indexed walk is a trail when it uses no edge identity twice.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Indexed Walk](indexed-walk.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Indexed walk](indexed-walk.md)
 
 ## Proof depends on
 
-- [Edges](edges.md)
+- [Edge list of an indexed walk](edges.md)
 
 ## Sources
 

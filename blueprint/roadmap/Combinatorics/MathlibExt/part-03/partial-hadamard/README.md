@@ -5,10 +5,10 @@ navigation: module
 
 # Partial Hadamard
 
-- [Sign Val](sign-val.md)
-- [Is Partial Hadamard](is-partial-hadamard.md)
-- [Partial Hadamard Count](partial-hadamard-count.md)
-- [Partial Hadamard Count zero width](partial-hadamard-count-zero-width.md)
-- [Leading Term](leading-term.md)
-- [Is Leading Admissible](is-leading-admissible.md)
-- [Leading Term Exponent](leading-term-exponent.md)
+- [Sign of a bit](sign-val.md)
+- [Partial Hadamard matrices](is-partial-hadamard.md)
+- [Number of partial Hadamard matrices](partial-hadamard-count.md)
+- [Width-zero partial Hadamard count](partial-hadamard-count-zero-width.md)
+- [De Launey–Levin leading term](leading-term.md)
+- [Admissible exponents for the partial Hadamard leading term](is-leading-admissible.md)
+- [Leading-term counting exponent for partial Hadamard matrices](leading-term-exponent.md)

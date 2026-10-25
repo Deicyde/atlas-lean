@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isMPTQSet_union_prime_mul_iff
 ---
 
-# Is MPTQSet union prime mul iff
+# Adjoining multiples by a coprime prime preserves the MPTQ property
 
-Theorem 4: for a finite set `A` of integers and a prime `p` coprime to every element of
-`A`, `A` is an MPTQ set if and only if `A ∪ pA` is.
+**Adjoining multiples by a coprime prime preserves the MPTQ property.** Let $A$ be a finite
+set of integers and $p$ a prime number such that every element of $A$ is coprime to $p$, and let
+$pA = \{pa : a \in A\}$. Regarding sets of integers as sets of real numbers, $A \cup pA$ is an
+MPTQ set if and only if $A$ is an MPTQ set.
 
 ## Depends on
 
-- [Is MPTQSet](is-mptqset.md)
+- [MPTQ set](is-mptqset.md)
 
 ## Sources
 

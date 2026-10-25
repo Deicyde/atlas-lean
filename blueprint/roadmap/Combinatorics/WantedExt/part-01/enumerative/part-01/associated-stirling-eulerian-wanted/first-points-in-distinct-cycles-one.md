@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.firstPointsInDistinctCycles_one
 ---
 
-# First Points In Distinct Cycles one
+# The identity permutation separates its first points
 
-The identity permutation puts every point in its own cycle.
+**The identity permutation separates its first points.** For all integers $s, n \ge 0$, the
+first $s$ points of the identity permutation of $\{0, \dots, n-1\}$ lie in pairwise distinct
+cycles: every point forms a cycle of its own.
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
 
 ## Sources
 

@@ -5,18 +5,39 @@ statement: formalized
 lean: MetaMathlibExt.reducible_pattern_sets
 ---
 
-# Reducible pattern sets
+# Reducible pattern sets (Theorem 3)
 
-Theorem 3 (reducible pattern sets, from the paper's reference [5]): for each listed pair
-`C ⊊ B`, `C ∼r B`, i.e. `A_n(B) = A_n(C)` and `WA_n(B) = WA_n(C)` for all `n`. The paper's
-Step 3 defines `∼r` in both the ascent and the weak-ascent case and uses Theorem 3 for both
-tables; both readings are stated. The items "for any `τ = …`" are expanded into one pair per
-`τ`, giving 36 pairs.
+**Reducible pattern sets (Theorem 3).** For a set $P$ of patterns, let $A_n(P)$ and
+$WA_n(P)$ be the sets of ascent sequences and of weak ascent sequences of length $n$ that
+avoid every pattern in $P$. For each set $C$ of patterns and each pattern $\tau$ listed below,
+with $B = C \cup \{\tau\}$, we have $A_n(B) = A_n(C)$ and $WA_n(B) = WA_n(C)$ for every
+natural number $n$:
+
+- $C = \{001\}$ and $\tau \in \{101, 102, 201\}$;
+- $C = \{011\}$ and $\tau \in \{101, 110\}$;
+- $C = \{012\}$ and $\tau \in \{102, 120\}$;
+- $C = \{021\}$ and $\tau \in \{201, 210\}$;
+- $C = \{000, 001\}$ and $\tau = 100$;
+- $C = \{000, 011\}$ and $\tau \in \{100, 201, 210\}$;
+- $C = \{000, 012\}$ and $\tau \in \{201, 210\}$;
+- $C = \{000, 021\}$ and $\tau = 100$;
+- $C = \{001, 010\}$ and $\tau \in \{021, 100, 110, 120, 210\}$;
+- $C = \{001, 011\}$ and $\tau = 021$;
+- $C = \{001, 012\}$ and $\tau = 021$;
+- $C = \{001, 110\}$ and $\tau = 210$;
+- $C = \{001, 120\}$ and $\tau = 210$;
+- $C = \{010, 011\}$ and $\tau = 100$;
+- $C = \{010, 012\}$ and $\tau \in \{101, 201\}$;
+- $C = \{010, 021\}$ and $\tau \in \{100, 101, 102, 110, 120\}$;
+- $C = \{001, 011, 012\}$, $\{001, 011, 100\}$ or $\{001, 012, 100\}$, and $\tau = 210$.
+
+These are $36$ pairs $C \subsetneq B$. The paper writes $C \sim_r B$ and takes the result from
+its reference [5].
 
 ## Depends on
 
-- [Ascent Avoiders](ascent-avoiders.md)
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [Ascent sequences avoiding a set of patterns](ascent-avoiders.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Sources
 

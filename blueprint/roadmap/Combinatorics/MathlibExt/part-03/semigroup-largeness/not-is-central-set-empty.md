@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isCentralSet_empty
 ---
 
-# Not is Central Set empty
+# The empty set is not central in a semigroup
 
-The empty set is not central.
+**The empty set is not central in a semigroup.** In every semigroup $S$, the empty subset of
+$S$ is not central.
 
 ## Depends on
 
-- [Is Central Set](is-central-set.md)
+- [Central sets in a semigroup](is-central-set.md)
 
 ## Sources
 

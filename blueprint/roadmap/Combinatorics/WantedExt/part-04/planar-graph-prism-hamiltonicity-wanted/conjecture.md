@@ -15,8 +15,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Planar](../../../MathlibExt/part-01/simple-graph/part-03/planarity/is-planar.md)
-- [Is Vertex Connected](../../../MathlibExt/part-01/simple-graph/part-04/vertex-connectivity/is-vertex-connected.md)
+- [Straight-line planar graph](../../../MathlibExt/part-01/simple-graph/part-03/planarity/is-planar.md)
+- [$k$-vertex-connected graph](../../../MathlibExt/part-01/simple-graph/part-04/vertex-connectivity/is-vertex-connected.md)
 
 ## Sources
 

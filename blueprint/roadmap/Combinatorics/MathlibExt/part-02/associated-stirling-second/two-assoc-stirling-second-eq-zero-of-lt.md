@@ -7,18 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.twoAssocStirlingSecond_eq_zero_of_lt_two_mul
 ---
 
-# Two Assoc Stirling Second eq zero of lt two mul
+# Vanishing of 2-associated Stirling numbers of the second kind
 
-A 2-associated Stirling number vanishes when there are too few elements to put at
-least two in each block.
+**Vanishing of 2-associated Stirling numbers of the second kind.** For natural numbers
+$n$ and $k$ with $n < 2k$, the 2-associated Stirling number of the second kind $S_2(n, k)$
+equals $0$.
 
 ## Depends on
 
-- [Two Assoc Stirling Second](two-assoc-stirling-second.md)
+- [2-associated Stirling numbers of the second kind](two-assoc-stirling-second.md)
 
 ## Proof depends on
 
-- [Two Assoc Stirling Second recurrence](two-assoc-stirling-second-recurrence.md)
+- [Recurrence for 2-associated Stirling numbers of the second kind](two-assoc-stirling-second-recurrence.md)
 
 ## Sources
 

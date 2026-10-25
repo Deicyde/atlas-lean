@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.exp_eulerianEGF_primitive
 ---
 
-# Exp eulerian EGF primitive
+# Primitive of the Eulerian generating function
 
-Corollary 13: the primitive `P(x,u)` in `u` of the Eulerian exponential generating
-function `A(x,u)` (the one vanishing at `u = 0`) satisfies
-`P(x,u) = (ln A(x,u) + u(x-1))/x`. Stated with the division by `x` cleared and the
-logarithm exponentiated: `exp(x P(x,u) - (x-1)u) = A(x,u)`.
+**Primitive of the Eulerian generating function.** Let $R$ be a commutative
+$\mathbb{Q}$-algebra and $x \in R$, and work with formal power series in $u$ over $R$. For a
+permutation $\sigma$ write $e(\sigma)$ for its number of excedances (points $i$ with
+$\sigma(i) > i$), let $S_n$ be the set of permutations of $\{0, \dots, n-1\}$, and let
+$A(x,u) = \sum_{n \ge 0} \sum_{\sigma \in S_n} x^{e(\sigma)} u^n/n!$. If $P(u)$ is a formal power
+series in $u$ over $R$ with zero constant term whose derivative is $A(x,u)$, then
+$\exp\bigl(x P(u) - (x-1)u\bigr) = A(x,u)$.
+
+This is the paper's $P(x,u) = (\ln A(x,u) + u(x-1))/x$ with the division by $x$ cleared and the
+logarithm exponentiated.
 
 ## Depends on
 
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

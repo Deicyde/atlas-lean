@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isMVanishingFamily_zero
 ---
 
-# Is MVanishing Family zero
+# Every family is $0$-vanishing
 
-Every family is `0`-vanishing.
+**Every family is $0$-vanishing.** For every natural number $n$ and every family $F$ of
+functions $f^{(l)} : (\mathbb{Z}/n\mathbb{Z})^l \to M$, $l \ge 0$, into a type $M$ with a zero
+element, $F$ is $0$-vanishing.
 
 ## Depends on
 
-- [Is MVanishing Family](is-mvanishing-family.md)
+- [$m$-vanishing family](is-mvanishing-family.md)
 
 ## Sources
 

@@ -7,18 +7,21 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.binaryChvatalSankoffConstant_mem_Icc
 ---
 
-# Binary Chvatal Sankoff Constant mem Icc
+# Trivial bounds for the binary Chvátal–Sankoff constant
 
-The bounded liminf lies in the source's trivial interval `[0,1]`.
+**Trivial bounds for the binary Chvátal–Sankoff constant.** Let $L_n$ be the length of a
+longest common subsequence of two independent uniformly random binary strings of length $n$, and
+let $C_{31a} = \liminf_{n \to \infty} \mathbb{E}[L_n]/n$ be the binary Chvátal–Sankoff constant.
+Then $0 \le C_{31a} \le 1$.
 
 ## Depends on
 
-- [C31a](c31a.md)
+- [Catalogue notation for the binary Chvátal–Sankoff constant](c31a.md)
 
 ## Proof depends on
 
-- [Normalized Expected LCS](normalized-expected-lcs.md)
-- [Normalized Expected LCS mem Icc](normalized-expected-lcs-mem-icc.md)
+- [Normalized expected LCS length](normalized-expected-lcs.md)
+- [Normalized expected LCS lengths lie in $(0,1)$](normalized-expected-lcs-mem-icc.md)
 
 ## Sources
 

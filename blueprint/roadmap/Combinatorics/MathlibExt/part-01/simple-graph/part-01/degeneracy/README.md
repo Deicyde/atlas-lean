@@ -5,8 +5,8 @@ navigation: module
 
 # Degeneracy
 
-- [Is Degenerate On](is-degenerate-on.md)
-- [Is Degenerate](is-degenerate.md)
-- [Mono](mono.md)
-- [Of subset](of-subset.md)
-- [Is Degenerate On](is-degenerate-on-2.md)
+- [Degeneracy on a vertex set](is-degenerate-on.md)
+- [Degenerate graph](is-degenerate.md)
+- [Degeneracy on a vertex set is monotone in the degree bound](mono.md)
+- [Degeneracy on a vertex set passes to subsets](of-subset.md)
+- [A degenerate graph is degenerate on every vertex set](is-degenerate-on-2.md)

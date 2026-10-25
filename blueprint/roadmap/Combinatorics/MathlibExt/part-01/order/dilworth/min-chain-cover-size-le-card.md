@@ -7,14 +7,17 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.DilworthWanted.minChainCoverSize_le_card
 ---
 
-# Min Chain Cover Size le card
+# Chain covers bound the minimum chain cover size
 
-A chain cover bounds `minChainCoverSize` from above.
+**Chain covers bound the minimum chain cover size.** Let $\alpha$ be a finite partially
+ordered set. If $C$ is a chain cover of $\alpha$, that is, a finite set of chains of $\alpha$ whose
+union is $\alpha$, then the minimum chain cover size of $\alpha$ is at most the number of chains
+in $C$.
 
 ## Depends on
 
-- [Is Chain Cover Fin](is-chain-cover-fin.md)
-- [Min Chain Cover Size](min-chain-cover-size.md)
+- [Chain cover](is-chain-cover-fin.md)
+- [Minimum chain cover size](min-chain-cover-size.md)
 
 ## Sources
 

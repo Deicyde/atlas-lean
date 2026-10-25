@@ -7,20 +7,22 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.normalizedExpectedLCS_mem_Icc
 ---
 
-# Normalized Expected LCS mem Icc
+# Normalized expected LCS lengths lie in $(0,1)$
 
-Every normalized expectation lies in the source's trivial interval
-`[0,1]`.
+**Normalized expected LCS lengths lie in $[0,1]$.** For every natural number $n$, the
+normalized expected LCS length at $n$ (the expected length of a longest common subsequence of
+two independent uniformly random binary strings of length $n$, divided by $n$, and $0$ for
+$n = 0$) lies in the closed interval $[0,1]$.
 
 ## Depends on
 
-- [Normalized Expected LCS](normalized-expected-lcs.md)
+- [Normalized expected LCS length](normalized-expected-lcs.md)
 
 ## Proof depends on
 
-- [Expected LCSLength](expected-lcslength.md)
-- [Expected LCSLength le](expected-lcslength-le.md)
-- [Expected LCSLength nonneg](expected-lcslength-nonneg.md)
+- [Expected length of a longest common subsequence](expected-lcslength.md)
+- [Expected LCS length is at most the string length](expected-lcslength-le.md)
+- [Expected LCS length is nonnegative](expected-lcslength-nonneg.md)
 
 ## Sources
 

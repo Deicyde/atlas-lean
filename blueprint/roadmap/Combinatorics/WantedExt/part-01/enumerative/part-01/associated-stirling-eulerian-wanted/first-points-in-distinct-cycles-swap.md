@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.firstPointsInDistinctCycles_swap
 ---
 
-# First Points In Distinct Cycles swap
+# First points of the transposition $(0\,1)$
 
-Characteristic values: the transposition `(0 1)` of `Fin 3` keeps the first point
-alone in its cycle but puts the first two points in one cycle.
+**First points of the transposition $(0\,1)$.** Let $\tau = (0\,1)$ be the transposition of
+$\{0, 1, 2\}$. The points $0, \dots, s-1$ lie in pairwise distinct cycles of $\tau$ for $s = 1$
+(trivially, as there is only one such point) but not for $s = 2$, since $0$ and $1$ lie in the
+same cycle of $\tau$.
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
 
 ## Sources
 

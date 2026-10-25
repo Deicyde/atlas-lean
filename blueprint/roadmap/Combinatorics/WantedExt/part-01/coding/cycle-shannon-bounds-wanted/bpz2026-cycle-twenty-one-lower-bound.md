@@ -5,16 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleTwentyOneLowerBound
 ---
 
-# Bpz2026 Cycle Twenty One Lower Bound
+# Buys–Polak–Zuiddam lower bound for the capacity of the 21-cycle
 
-Source: BPZ, arXiv:2607.29681, exact twenty-one-cycle root rate.
+**Buys–Polak–Zuiddam lower bound for the capacity of the 21-cycle.** Let $c$ be the code
+coordinate of BPZ's final twenty-one-cycle profile after ten squarings, and let
+$M = \max(c, 0)$. Then $M^{1/4096}$ is at most the Shannon capacity of the $21$-cycle, as an
+inequality in $[0, \infty]$.
 
 ## Depends on
 
 - [Shannon capacity of the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
-- [BPZProfile](bpzprofile.md)
-- [Bpz C21 Pi1024](bpz-c21-pi1024.md)
+- [BPZ profiles](bpzprofile.md)
+- [Buys–Polak–Zuiddam 1024-block profile for the 21-cycle](bpz-c21-pi1024.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Coding.CycleShannonBoundsWanted](../../../../../../sources/v2/WantedExt.md)
+- BPZ, arXiv:2607.29681, exact twenty-one-cycle root rate.

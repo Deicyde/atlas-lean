@@ -7,17 +7,19 @@ proof: formalized
 lean: SimpleGraph.SameChromaticSymmetricFunction.symm
 ---
 
-# Symm
+# Symmetry of having the same chromatic symmetric function
 
-Symmetry of chromatic-symmetric-function equality.
+**Symmetry of having the same chromatic symmetric function.** Let $G$ and $H$ be simple
+graphs on finite vertex sets. If $G$ has the same chromatic symmetric function as $H$, then $H$
+has the same chromatic symmetric function as $G$.
 
 ## Depends on
 
-- [Same Chromatic Symmetric Function](same-chromatic-symmetric-function.md)
+- [Graphs with the same chromatic symmetric function](same-chromatic-symmetric-function.md)
 
 ## Proof depends on
 
-- [Chromatic Profile Count](chromatic-profile-count.md)
+- [Chromatic profile count](chromatic-profile-count.md)
 
 ## Sources
 

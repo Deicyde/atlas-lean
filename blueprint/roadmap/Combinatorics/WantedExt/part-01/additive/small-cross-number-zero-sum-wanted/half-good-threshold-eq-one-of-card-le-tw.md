@@ -6,19 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.halfGoodThreshold_eq_one_of_card_le_two
 ---
 
-# Half Good Threshold eq one of card le two
+# Half-good threshold of a group of order at most two
 
-For a finite group of order at most two, `P_{1/2}(Γ) = 1`: the sequence `(0)` is good.
+**Half-good threshold of a group of order at most two.** If $\Gamma$ is a finite abelian
+group with at most two elements, then its half-good threshold $P_{1/2}(\Gamma)$ equals $1$.
+
+The empty sequence is not good, while the one-term sequence $(0)$ is good, so a uniformly random
+sequence of length one is good with probability at least $1/|\Gamma| \ge 1/2$.
 
 ## Depends on
 
-- [Half Good Threshold](half-good-threshold.md)
+- [Half-good threshold](half-good-threshold.md)
 
 ## Proof depends on
 
-- [Is Good Sequence](is-good-sequence.md)
-- [Good Sequence Prob](good-sequence-prob.md)
-- [Good Sequence Prob zero](good-sequence-prob-zero.md)
+- [Good sequences](is-good-sequence.md)
+- [Probability that a random sequence is good](good-sequence-prob.md)
+- [Good-sequence probability at length zero](good-sequence-prob-zero.md)
 
 ## Sources
 

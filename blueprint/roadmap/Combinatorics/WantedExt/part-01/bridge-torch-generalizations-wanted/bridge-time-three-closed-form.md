@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_closed_form
 ---
 
-# Bridge Time three closed form
+# Closed form for capacity three
 
-The optimal crossing time for capacity `3`: for `n ≥ 7`,
-`T₃(n) = n²/6 + 2n - 181/36 + (-1)ⁿ/4 - (2/9) cos(2nπ/3)`.
+**Closed form for capacity three.** Let $T_3(n)$ be the optimal crossing time of $n$ people
+with crossing times $1, \dots, n$ on a bridge of capacity $3$ with one torch. For every
+$n \ge 7$,
+
+$$T_3(n) = \frac{n^2}{6} + 2n - \frac{181}{36} + \frac{(-1)^n}{4} - \frac{2}{9}\cos(2n\pi/3).$$
 
 ## Depends on
 
-- [Bridge Time](bridge-time.md)
+- [Optimal crossing time of the bridge and torch problem](bridge-time.md)
 
 ## Sources
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.carlitzEtaPoly_one_zero
 ---
 
-# Carlitz Eta Poly one zero
+# Carlitz's initial value $\eta_1 = 0$
 
-`η_1 = η_1(0) = 0` for `q ≠ 1` (Carlitz's initial value).
+**Carlitz's initial value $\eta_1 = 0$.** For real $q \ne 1$, the value $\eta_1 = \eta_1(0)$ of
+Carlitz's $q$-polynomial $\eta_1$ at $0$ equals $0$.
 
 ## Depends on
 
-- [Carlitz Eta Poly](carlitz-eta-poly.md)
+- [Carlitz $q$-polynomials $\eta_n$](carlitz-eta-poly.md)
 
 ## Proof depends on
 
-- [Q Bracket](q-bracket.md)
-- [Q Bracket one](q-bracket-one.md)
+- [The $q$-analogue of a real number](q-bracket.md)
+- [The $q$-number of $1$](q-bracket-one.md)
 
 ## Sources
 

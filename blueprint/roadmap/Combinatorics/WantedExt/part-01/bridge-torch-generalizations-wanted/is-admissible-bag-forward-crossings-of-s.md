@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.isAdmissibleBag_forwardCrossings_of_single_returns
 ---
 
-# Is Admissible Bag forward Crossings of single returns
+# Schedules with single-person returns give admissible bags
 
-A schedule for capacity `3` whose returns each carry exactly one person has an admissible
-bag of forward trips `F(σ)`, and its total cost is `w(F(σ))`.
+**Schedules with single-person returns give admissible bags.** Let $n$ be a natural number
+and let $\sigma$ be a schedule for the people $1, \dots, n$ on a bridge of capacity $3$ in which
+every return carries exactly one person. Let $F(\sigma)$ be the multiset of the forward crossings
+of $\sigma$. Then $F(\sigma)$ is an admissible bag for $n$ people, and the total time of $\sigma$
+equals the weight $w(F(\sigma))$ of this bag for $n$ people.
 
 ## Depends on
 
-- [Is Admissible Bag](is-admissible-bag.md)
-- [Is Bridge Schedule](is-bridge-schedule.md)
-- [Bag Weight](bag-weight.md)
-- [Forward Crossings](forward-crossings.md)
-- [Return Crossings](return-crossings.md)
+- [Admissible bags](is-admissible-bag.md)
+- [Bridge schedules](is-bridge-schedule.md)
+- [Weight of a bag](bag-weight.md)
+- [Forward crossings](forward-crossings.md)
+- [Return crossings](return-crossings.md)
 - [Schedule Cost](schedule-cost.md)
 
 ## Sources

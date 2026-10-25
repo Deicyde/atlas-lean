@@ -14,7 +14,7 @@ letter `a = true` is sent to `0` and `b = false` to `1`.)
 ## Depends on
 
 - [Both Letters Infinite](both-letters-infinite.md)
-- [Is Equilibrious Word](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
+- [Equilibrious binary words](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
 - [Deletion](deletion.md)
 
 ## Sources

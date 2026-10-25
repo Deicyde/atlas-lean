@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.card_lengthThreePatterns
 ---
 
-# Card length Three Patterns
+# Number of patterns of length three
 
-There are thirteen patterns of length three.
+**Number of patterns of length three.** The set of patterns of length three,
+$\{000, 001, 010, 011, 012, 021, 100, 101, 102, 110, 120, 201, 210\}$, has exactly $13$ elements.
 
 ## Depends on
 
-- [Length Three Patterns](length-three-patterns.md)
+- [The thirteen patterns of length three](length-three-patterns.md)
 
 ## Sources
 

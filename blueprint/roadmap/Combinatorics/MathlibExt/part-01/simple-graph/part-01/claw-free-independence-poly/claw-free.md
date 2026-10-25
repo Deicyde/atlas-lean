@@ -6,12 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.clawFree
 ---
 
-# Claw Free
+# Claw-free finite graph
 
-Claw-free graph: no induced `K₁,₃`, i.e. no center `c` with three
-pairwise nonadjacent, mutually distinct neighbors. `independencePoly G`
-counts independent vertex sets by size; the wanted theorem says its real
-image splits, i.e. it has only real zeros.
+**Claw-free finite graph.** A simple graph $G$ on a finite vertex set $V$ is claw-free if it
+has no induced claw $K_{1,3}$: there are no vertices $c, \ell_1, \ell_2, \ell_3 \in V$ such that
+$\ell_1, \ell_2, \ell_3$ are pairwise distinct, each is adjacent to $c$ and different from $c$,
+and no two of them are adjacent.
 
 ## Depends on
 

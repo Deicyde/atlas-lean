@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.isCarlitzType_iff_sum_choose
 ---
 
-# Is Carlitz Type iff sum choose
+# Characterization of Carlitz-type sequences
 
-Characterization of Carlitz-type sequences (a `q`-analogue of Appell sequences): a sequence of
-functions `T_n` is Carlitz-type iff `T_n(x) = ∑_{k=0}^{n} C(n,k) t_k q^{kx} [x]^{n-k}` for all
-`n`, where `t_k = T_k(0)`.
+**Characterization of Carlitz-type sequences.** Let $q > 0$ with $q \ne 1$ be real and write
+$[x] = (q^x - 1)/(q - 1)$. A sequence of functions $T_n : \mathbb{R} \to \mathbb{R}$ is
+Carlitz-type with some associated real sequence $(a_k)$ if and only if for every natural $n$ and
+every real $x$, $T_n(x) = \sum_{k=0}^{n} \binom{n}{k} T_k(0) q^{kx} [x]^{n-k}$.
+
+This is a $q$-analogue of the characterization of Appell sequences.
 
 ## Depends on
 
-- [Is Carlitz Type With](is-carlitz-type-with.md)
-- [Q Bracket](q-bracket.md)
+- [Carlitz-type sequences](is-carlitz-type-with.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

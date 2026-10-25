@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.convergentVec_parallelogram_latticePoints
 ---
 
-# Convergent Vec parallelogram lattice Points
+# Lattice points of the parallelogram of two consecutive convergent vectors
 
-For `1 ≤ a < n` and `-2 ≤ i < m`, the parallelogram spanned by `v_i` and `v_{i+1}` contains
-no lattice points other than its vertices, and `ℤ v_i + ℤ v_{i+1} = ℤ²`. (The determinant
-identity `det(v_i, v_{i+1}) = (-1)^i` itself is Mathlib's `SimpContFract.determinant` for
-`i ≥ 0`.)
+**Lattice points of the parallelogram of two consecutive convergent vectors.** Let
+$1 \le a < n$ be integers, let $n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction
+of $n / a$, where $m$ is the least index at which it terminates, and let $v_i$ be its convergent
+vectors. For every integer $i$ with $-2 \le i < m$, the lattice points of the parallelogram
+spanned by $v_i$ and $v_{i+1}$ are exactly $0$, $v_i$, $v_{i+1}$ and $v_i + v_{i+1}$, and every
+point of $\mathbb{Z}^2$ equals $s v_i + t v_{i+1}$ for some integers $s$ and $t$.
 
 ## Depends on
 
-- [Convergent Vec](convergent-vec.md)
-- [Lattice Parallelogram](lattice-parallelogram.md)
+- [Convergent vectors of a continued fraction](convergent-vec.md)
+- [Parallelogram spanned by two vectors](lattice-parallelogram.md)
 - [Lattice Points](lattice-points.md)
 
 ## Sources

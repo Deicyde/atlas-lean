@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_perfectCover_superset_subgroup
 ---
 
-# Card perfect Cover superset subgroup
+# Perfect covers containing a perfect cover of a subgroup
 
-If `H` is a subgroup of order `2^m` of an abelian group `G` of order `2^n`, exactly
-`2^{m(n-m)} C(G/H) C(H)` perfect covers of `G` contain a perfect cover of `H`.
+**Perfect covers containing a perfect cover of a subgroup.** Let $G$ be an abelian group of
+order $2^n$ and $H$ a subgroup of order $2^m$. Then the number of perfect covers of $G$ that
+contain a perfect cover of $H$ is $2^{m(n-m)} \cdot C(G/H) \cdot C(H)$, where $C(K)$ denotes the
+number of perfect covers of a group $K$.
 
 ## Depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
-- [Count](count.md)
+- [Perfect cover](is-perfect-cover.md)
+- [Number of perfect covers](count.md)
 
 ## Sources
 

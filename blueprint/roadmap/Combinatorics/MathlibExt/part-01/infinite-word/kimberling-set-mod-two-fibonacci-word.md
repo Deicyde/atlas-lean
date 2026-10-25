@@ -30,7 +30,7 @@ This node has no prerequisites.
 - [Fibonacci morphism](fibonacci-word/fib-morph.md)
 - [The Fibonacci morphism respects concatenation](fibonacci-word/fib-morph-append.md)
 - [Finite Fibonacci words](fibonacci-word/fib-word.md)
-- [Fib Word add two](../../part-02/words/fibonacci-factorization/fib-word-add-two.md)
+- [Recurrence for the finite Fibonacci words](../../part-02/words/fibonacci-factorization/fib-word-add-two.md)
 - [Consecutive finite Fibonacci words are nested](fibonacci-word/fib-word-nested-succ.md)
 - [Earlier finite Fibonacci words are prefixes of later ones](fibonacci-word/fib-word-prefix.md)
 

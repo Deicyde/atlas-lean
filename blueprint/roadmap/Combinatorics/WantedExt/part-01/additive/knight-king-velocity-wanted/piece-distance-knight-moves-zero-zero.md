@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.pieceDistance_knightMoves_zero_zero
 ---
 
-# Piece Distance knight Moves zero zero
+# The knight's distance to the origin is zero
 
-The usual knight has distance zero at the origin, exactly matching the
-distinguished zero clause in `pieceDistance`.
+**The knight's distance to the origin is zero.** Let $N \subseteq \mathbb{Z}^2$ be the move set of
+the usual knight, consisting of the eight vectors $(\pm 1, \pm 2)$ and $(\pm 2, \pm 1)$. The
+piece distance of the origin $(0,0)$ for $N$ is $0$.
+
+This holds by the definition of piece distance, which sets the distance at the origin to $0$.
 
 ## Depends on
 
-- [Knight Moves](knight-moves.md)
-- [Piece Distance](piece-distance.md)
+- [Knight moves](knight-moves.md)
+- [Piece distance on the integer lattice](piece-distance.md)
 
 ## Sources
 

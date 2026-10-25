@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.barryTriangleAux_succ_succ
 ---
 
-# Barry Triangle Aux succ succ
+# Defining recurrence of Barry's triangle
 
-The defining recurrence `s(β, n + 1, k + 1) = s(β + 1, n, k) + β (k + 1) s(β, n, k + 1)`.
+**Defining recurrence of Barry's triangle.** For all natural numbers $\beta, n, k$, Barry's
+triangle recurrence $s$ satisfies
+$s(\beta, n + 1, k + 1) = s(\beta + 1, n, k) + \beta (k + 1)\, s(\beta, n, k + 1)$.
 
 ## Depends on
 
-- [Barry Triangle Aux](barry-triangle-aux.md)
+- [Barry's triangle recurrence](barry-triangle-aux.md)
 
 ## Sources
 

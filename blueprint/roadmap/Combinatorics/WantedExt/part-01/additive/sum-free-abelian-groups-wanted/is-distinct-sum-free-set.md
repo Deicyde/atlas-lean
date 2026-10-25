@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsDistinctSumFreeSet
 ---
 
-# Is Distinct Sum Free Set
+# Distinct sum-free sets
 
-`S` is distinct sum-free: it contains no Schur triple `x + y = z` with `x, y, z`
-pairwise distinct.
+**Distinct sum-free sets.** Let $G$ be a set with an addition. A subset $S \subseteq G$ is
+distinct sum-free if there are no pairwise distinct $x, y, z \in S$ with $x + y = z$, that is, if
+$S$ contains no distinct Schur triple.
 
 ## Depends on
 

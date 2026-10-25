@@ -7,18 +7,22 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.extend_idx
 ---
 
-# Extend idx
+# Appending a later index keeps indices increasing
 
-The appended map is index-strict.
+**Appending a later index keeps indices increasing.** Let $k \ge 1$ and let
+$\varphi : \{0, \dots, k-1\} \to \{0, \dots, N-1\}$ be strictly increasing with last value
+$\varphi(k-1) = q$. If $p$ is an index with $q < p$, then the map on $\{0, \dots, k\}$ obtained by
+appending $p$ to $\varphi$, which sends each $i < k$ to $\varphi(i)$ and sends $k$ to $p$, is
+strictly increasing.
 
 ## Depends on
 
-- [Extend Map](extend-map.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Appending an entry to a map of indices](extend-map.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Proof depends on
 
-- [Idx le last](idx-le-last.md)
+- [Entries of a strictly increasing index map lie at or below its last entry](idx-le-last.md)
 
 ## Sources
 

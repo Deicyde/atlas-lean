@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.card_restrictedSmoothWords
 ---
 
-# Card restricted Smooth Words
+# Restricted smooth words are counted by grand Motzkin numbers
 
-Mansour and Shattuck's Theorem 11: `|ℛ*ₙ|` is the grand Motzkin number `G_{n-1}` for
-`n ≥ 1`; `G_k` (OEIS A002426) is the central trinomial coefficient
-`MetaMathlibExt.trinomialCoefficient k k`.
+**Restricted smooth words are counted by grand Motzkin numbers.** For every $n \ge 1$, the
+number of restricted smooth words of length $n$ is the grand Motzkin number $G_{n-1}$, that is,
+the central trinomial coefficient: the coefficient of $X^{n-1}$ in $(1 + X + X^2)^{n-1}$.
 
 ## Depends on
 
-- [Restricted Smooth Words](restricted-smooth-words.md)
+- [Restricted smooth words](restricted-smooth-words.md)
 - [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Sources

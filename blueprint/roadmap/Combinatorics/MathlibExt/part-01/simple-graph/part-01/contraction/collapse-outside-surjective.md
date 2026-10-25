@@ -7,18 +7,20 @@ proof: formalized
 lean: SimpleGraph.collapseOutside_surjective
 ---
 
-# Collapse Outside surjective
+# The collapse map is surjective
 
-The collapse map is onto when there is a vertex outside the retained set.
+**The collapse map is surjective.** For a set $D \subseteq V$ whose complement $V \setminus D$
+is nonempty, the collapse map from $V$ to $D$ together with the contraction vertex is
+surjective.
 
 ## Depends on
 
-- [Collapse Outside](collapse-outside.md)
+- [Collapsing the complement of a set](collapse-outside.md)
 
 ## Proof depends on
 
-- [Collapse Outside of mem](collapse-outside-of-mem.md)
-- [Collapse Outside of not Mem](collapse-outside-of-not-mem.md)
+- [The collapse map fixes the retained set](collapse-outside-of-mem.md)
+- [The collapse map sends the complement to the contraction vertex](collapse-outside-of-not-mem.md)
 
 ## Sources
 

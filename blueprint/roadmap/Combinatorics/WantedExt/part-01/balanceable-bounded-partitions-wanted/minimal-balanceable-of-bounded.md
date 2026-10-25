@@ -6,15 +6,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BalanceableBoundedPartitionsWanted.Combinatorics.minimal_balanceable_of_bounded
 ---
 
-# Minimal balanceable of bounded
+# Smallest size forcing bounded partitions to be balanceable
 
-For any `k`, the smallest `n` such that any `k`-bounded partition of `n` is
-also balanceable is given by `2 * lcm(1, ..., k)`.
+**Smallest size forcing bounded partitions to be balanceable.** For every integer $k \ge 1$, the
+smallest positive integer $n$ such that every $k$-bounded partition of $n$ is balanceable is
+$2 \operatorname{lcm}(1, 2, \ldots, k)$.
 
 ## Depends on
 
-- [Balanceable](balanceable.md)
-- [Bounded](bounded.md)
+- [Balanceable partition](balanceable.md)
+- [$k$-bounded partition](bounded.md)
 
 ## Sources
 

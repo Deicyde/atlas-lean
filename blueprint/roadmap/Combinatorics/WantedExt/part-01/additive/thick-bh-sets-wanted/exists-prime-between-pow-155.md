@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.exists_prime_between_pow_155
 ---
 
-# Cully-Hugill's theorem
+# Cully-Hugill's theorem for 155th powers
 
-**Cully-Hugill's theorem** (as quoted in the paper): for every integer `n ≥ 1` there is
-a prime strictly between `n^155` and `(n + 1)^155`.
+**Cully-Hugill's theorem for 155th powers.** For every natural number $n \ge 1$ there is a
+prime $p$ with $n^{155} < p < (n + 1)^{155}$.
 
 ## Depends on
 

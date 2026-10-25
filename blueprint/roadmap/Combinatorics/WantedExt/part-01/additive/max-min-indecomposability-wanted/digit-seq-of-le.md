@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.digitSeq_of_le
 ---
 
-# Digit Seq of le
+# A digit string has no coefficients beyond its length
 
-Digits beyond the length of the string vanish.
+**A digit string has no coefficients beyond its length.** Let $n$ and $b$ be natural numbers
+and let $a = (a_0, \dots, a_{n-1})$ be a digit string with digits in $\{0, \dots, b - 1\}$. Then
+for every $k \ge n$, the $k$-th term of the coefficient sequence of $a$ is $0$.
 
 ## Depends on
 
-- [Digit Seq](digit-seq.md)
+- [Coefficient sequence of a digit string](digit-seq.md)
 
 ## Sources
 

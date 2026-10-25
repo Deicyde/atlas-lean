@@ -7,14 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.schur_ramsey
 ---
 
-# Schur Ramsey
+# Schur's theorem
 
-Schur's theorem (Ramsey form): for every `r ≥ 1` there is a bound `S` such that any
-`r`-coloring of `Finset.Icc 1 S` contains a monochromatic solution to `x + y = z` with
-positive integers `x y z` (not necessarily distinct). The witness is only a forcing bound,
-obtained from `MathlibExt.Combinatorics.Ramsey.ramsey_two_uniform` by coloring each pair with
-the color of its difference; it is not the Schur number `S(r)`, the largest `S` that admits a
-coloring with no such solution.
+**Schur's theorem.** For every integer $r \ge 1$ there is a natural number $S$ such that for
+every coloring of the natural numbers with $r$ colors there are $x, y, z \in \{1, \dots, S\}$,
+not necessarily distinct, with the same color and $x + y = z$.
+
+The bound comes from Ramsey's theorem for pairs, by coloring each pair with the color of its
+difference; it is not the Schur number $S(r)$, the largest $S$ for which some $r$-coloring of
+$\{1, \dots, S\}$ has no such solution.
 
 ## Depends on
 
@@ -22,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ramsey](ramsey-two-uniform.md)
+- [Finite Ramsey theorem for pairs](ramsey-two-uniform.md)
 
 ## Sources
 

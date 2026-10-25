@@ -5,19 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi9
 ---
 
-# Bpz C13 Pi9
+# Nine-block BPZ profile of the thirteen-cycle
 
-BPZ's nine-block thirteen-cycle profile.
+**Nine-block BPZ profile of the thirteen-cycle.** The nine-block BPZ profile of the
+thirteen-cycle is $\pi_4 \star \pi_5$, where $\pi_4$ and $\pi_5$ are the four-block and five-block
+BPZ profiles of the thirteen-cycle and $\star$ is the BPZ profile product.
 
 ## Depends on
 
-- [BPZProfile](bpzprofile.md)
+- [BPZ profiles](bpzprofile.md)
 
 ## Proof depends on
 
-- [Star](star.md)
-- [Bpz C13 Pi4](bpz-c13-pi4.md)
-- [Bpz C13 Pi5](bpz-c13-pi5.md)
+- [Product of BPZ profiles](star.md)
+- [Four-block BPZ profile of the thirteen-cycle](bpz-c13-pi4.md)
+- [Five-block BPZ profile of the thirteen-cycle](bpz-c13-pi5.md)
 
 ## Sources
 

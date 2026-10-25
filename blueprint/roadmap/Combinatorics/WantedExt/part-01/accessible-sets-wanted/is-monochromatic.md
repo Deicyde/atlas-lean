@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsMonochromatic
 ---
 
-# Is Monochromatic
+# Monochromatic sequences of positive integers
 
-A finite sequence of positive integers is monochromatic when all of its
-entries receive the same color.  The colors are `Fin r`, representing `[r]`.
+**Monochromatic sequences of positive integers.** Let $r$ and $k$ be natural numbers and let
+$c$ color the positive integers with the colors $0, 1, \dots, r - 1$. A sequence
+$x_0, \dots, x_{k-1}$ of positive integers is monochromatic for $c$ when $c(x_i) = c(x_j)$ for
+all $i, j < k$.
 
 ## Depends on
 

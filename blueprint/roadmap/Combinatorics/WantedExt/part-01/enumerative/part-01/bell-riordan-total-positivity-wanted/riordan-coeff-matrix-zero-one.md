@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.riordanCoeffMatrix_zero_one
 ---
 
-# Riordan Coeff Matrix zero one
+# First two columns of the coefficient matrix of a Riordan array
 
-Entries of `J(Z(x), A(x))`: `J_{n,0} = z_n` and `J_{n,1} = a_n`.
+**First two columns of the coefficient matrix of a Riordan array.** For real sequences
+$(z_n)$ and $(a_n)$ with generating functions $Z(x)$ and $A(x)$, and for every $n \ge 0$, the
+coefficient matrix $J(Z(x), A(x))$ has entry $z_n$ in row $n$, column $0$, and entry $a_n$ in
+row $n$, column $1$.
 
 ## Depends on
 
-- [Riordan Coeff Matrix](riordan-coeff-matrix.md)
+- [Coefficient matrix of a Riordan array](riordan-coeff-matrix.md)
 
 ## Sources
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.lcsLength_le
 ---
 
-# Lcs Length le
+# The LCS length is at most the string length
 
-No common subsequence is longer than either input string.
+**The LCS length is at most the string length.** For binary strings $x$ and $y$ of length $n$,
+the length $\mathrm{LCS}(x, y)$ of a longest common subsequence satisfies
+$\mathrm{LCS}(x, y) \le n$.
 
 ## Depends on
 
-- [Binary String](binary-string.md)
-- [Lcs Length](lcs-length.md)
+- [Binary strings](binary-string.md)
+- [Length of a longest common subsequence](lcs-length.md)
 
 ## Proof depends on
 
-- [Is Common Subsequence](is-common-subsequence.md)
-- [Exists longest Common Subsequence](exists-longest-common-subsequence.md)
+- [Common subsequence](is-common-subsequence.md)
+- [Existence of a longest common subsequence](exists-longest-common-subsequence.md)
 
 ## Sources
 

@@ -5,12 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.lunarDecomposableSet
 ---
 
-# Lunar Decomposable Set
+# Decomposable lunar numbers
 
-The decomposable lunar numbers `Σ_b^n` of degree at most `n`: `h = f ⊗ g` with `f, g` not
-monomials (a monomial is `t xᵐ` with `t ∈ {0, …, b - 1}`, so a non-monomial has at least two
-nonzero coefficients). Factors range over `ℒ_b^n`, which contains every factor of a nonzero
-`h` of degree at most `n`.
+**Decomposable lunar numbers.** For natural numbers $b$ and $n$, let $\mathcal{L}_b^n$ be the
+set of lunar numbers of base $b$ and degree at most $n$, that is, polynomials
+$c_0 \oplus c_1 x \oplus \dots \oplus c_n x^n$ with digits $c_k \in \{0, \dots, b - 1\}$. The set
+$\Sigma_b^n$ of decomposable lunar numbers consists of the $h \in \mathcal{L}_b^n$ that factor as
+$h = f \otimes g$ under the max-min product, with $f, g \in \mathcal{L}_b^n$ each having at least
+two nonzero digits.
+
+A monomial is $t x^m$ with $t \in \{0, \dots, b - 1\}$, so the factors are exactly the
+non-monomials. Every factor of a nonzero lunar number of degree at most $n$ lies in
+$\mathcal{L}_b^n$.
 
 ## Depends on
 
@@ -18,9 +24,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Digit Seq](digit-seq.md)
-- [Lunar Level Count](lunar-level-count.md)
-- [Max Min Mul](max-min-mul.md)
+- [Coefficient sequence of a digit string](digit-seq.md)
+- [Level counts of a lunar number](lunar-level-count.md)
+- [Max-min product](max-min-mul.md)
 
 ## Sources
 

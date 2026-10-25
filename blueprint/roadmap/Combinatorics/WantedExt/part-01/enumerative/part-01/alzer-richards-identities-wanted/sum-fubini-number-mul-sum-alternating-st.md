@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_fubiniNumber_mul_sum_alternatingStirling
 ---
 
-# Sum fubini Number mul sum alternating Stirling
+# Alzer–Richards identity for Fubini numbers
 
-For `n ≥ 1`, with `A(r, k) = ∑_{j=0}^{k} (-1)^j C(k, j) j! S(r, j)`:
-`∑_{k=0}^{n-1} C(n, k) a(k) ∑_{ν=0}^{n+1} C(n+1, ν) A(n-k, ν) + (2^{n+1} - 1) a(n)
-= ∑_{k=0}^{n} C(n+1, k+1) A(n, k)`.
+**Alzer–Richards identity for Fubini numbers.** Let $n \ge 1$ be an integer, let $a(k)$ be
+the $k$-th Fubini (ordered Bell) number and $S(r, j)$ the Stirling numbers of the second kind,
+and for integers $r, k \ge 0$ let
+$A(r, k) = \sum_{j=0}^{k} (-1)^j \binom{k}{j} j! \, S(r, j)$. Then
+
+$$
+\sum_{k=0}^{n-1} \binom{n}{k} a(k) \sum_{\nu=0}^{n+1} \binom{n+1}{\nu} A(n-k, \nu) +
+(2^{n+1} - 1) a(n) = \sum_{k=0}^{n} \binom{n+1}{k+1} A(n, k).
+$$
 
 ## Depends on
 

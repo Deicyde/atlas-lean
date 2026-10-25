@@ -6,14 +6,15 @@ proof: formalized
 lean: SimpleGraph.IsDegenerateOn.exists_small_vertex
 ---
 
-# Exists small vertex
+# A degenerate vertex set has a vertex of small degree
 
-Every nonempty finite vertex set in a degenerate region contains a vertex of
-small degree inside that set.
+**A degenerate vertex set has a vertex of small degree.** Let $G$ be a simple graph
+on a finite vertex set $V$ and let $s \subseteq V$ be nonempty. If $G$ is
+$k$-degenerate on $s$, then some vertex $v \in s$ has at most $k$ neighbors in $s$.
 
 ## Depends on
 
-- [Is Degenerate On](../../part-01/degeneracy/is-degenerate-on.md)
+- [Degeneracy on a vertex set](../../part-01/degeneracy/is-degenerate-on.md)
 
 ## Sources
 

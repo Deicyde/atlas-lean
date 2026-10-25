@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.ncard_addSubgroup_card_eq_ncard_index_eq
 ---
 
-# Ncard add Subgroup card eq ncard index eq
+# Counting subgroups by order and by index
 
-In a finite abelian group the number of subgroups of order `k` equals the number of
-subgroups of index `k`.
+**Counting subgroups by order and by index.** In a finite abelian group $G$, for every
+natural number $k$ the number of subgroups of order $k$ equals the number of subgroups of
+index $k$.
 
 ## Depends on
 

@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isAddPiecewiseSyndetic_univ
 ---
 
-# Is Add Piecewise Syndetic univ
+# The whole commutative semigroup is piecewise syndetic
 
-The whole semigroup is piecewise syndetic.
+**The whole commutative semigroup is piecewise syndetic.** If $S$ is a nonempty commutative
+semigroup, then $S$ itself is a piecewise syndetic subset of $S$.
 
 ## Depends on
 
-- [Is Add Piecewise Syndetic](is-add-piecewise-syndetic.md)
+- [Piecewise syndetic set in a commutative semigroup](is-add-piecewise-syndetic.md)
 
 ## Proof depends on
 
-- [Is Add Thick](is-add-thick.md)
+- [Thick set in a commutative semigroup](is-add-thick.md)
 
 ## Sources
 

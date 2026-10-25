@@ -7,17 +7,18 @@ proof: formalized
 lean: TuranSystem.le_of_isTuran
 ---
 
-# Le of is Turan
+# A Turán system has $s \le n$
 
-Size-bound projection from a Turan system.
+**A Turán system has $s \le n$.** Let $n$, $s$, $r$ be natural numbers and let $H$ be a
+Turán $(n, s, r)$-system. Then $s \le n$.
 
 ## Depends on
 
-- [Is Turan System](is-turan-system.md)
+- [Turán system](is-turan-system.md)
 
 ## Proof depends on
 
-- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+- [Uniform hypergraphs](../uniform-hypergraph/is-uniform.md)
 
 ## Sources
 

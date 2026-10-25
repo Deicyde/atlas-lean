@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.le_ack_inverseAckermann
 ---
 
-# Le ack inverse Ackermann
+# Defining inequality of the inverse Ackermann function
 
-`n ≤ A(α(n), α(n))`.
+**Defining inequality of the inverse Ackermann function.** For every natural number $n$,
+$n \le A(\alpha(n), \alpha(n))$, where $\alpha$ is the inverse Ackermann function and $A$ is the
+two-argument Ackermann function.
 
 ## Depends on
 
-- [Inverse Ackermann](inverse-ackermann.md)
+- [Inverse Ackermann function](inverse-ackermann.md)
 
 ## Sources
 

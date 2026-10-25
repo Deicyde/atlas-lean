@@ -20,7 +20,7 @@ lean: MetaMathlibExt.noncrossingBlockSingletonCount_zero
 - [Crossing in a set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
 - [Noncrossing set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)
 - [Set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
-- [Card zero](../../../../../MathlibExt/part-01/noncrossing-partition/small/card-zero.md)
+- [Noncrossing partitions of the empty set](../../../../../MathlibExt/part-01/noncrossing-partition/small/card-zero.md)
 
 ## Sources
 

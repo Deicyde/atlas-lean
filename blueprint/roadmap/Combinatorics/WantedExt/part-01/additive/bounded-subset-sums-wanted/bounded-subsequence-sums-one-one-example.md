@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.boundedSubsequenceSums_one_one_example
 ---
 
-# Bounded Subsequence Sums one one example
+# An example of bounded subsequence sums
 
-`Σ^1_1({-2, 7, 7}) = {-2, 5, 7, 14}`.
+**An example of bounded subsequence sums.** For the sequence of integers
+$\mathcal{A} = (-2, 7, 7)$, in which $-2$ occurs once and $7$ twice,
+$\Sigma^1_1(\mathcal{A}) = \{-2, 5, 7, 14\}$: the sums of the subsequences with at least one and
+at most two terms are $-2$, $7$, $-2 + 7 = 5$ and $7 + 7 = 14$.
 
 ## Depends on
 
-- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
-- [Repetition Sequence](repetition-sequence.md)
+- [Subsequence sums with a bounded number of terms](bounded-subsequence-sums.md)
+- [Sequence with prescribed multiplicities](repetition-sequence.md)
 
 ## Sources
 

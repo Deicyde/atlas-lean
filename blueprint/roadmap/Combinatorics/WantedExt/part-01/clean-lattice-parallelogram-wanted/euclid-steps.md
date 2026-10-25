@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.euclidSteps
 ---
 
-# Euclid Steps
+# Number of steps of Euclid's algorithm
 
-The number of division steps of Euclid's algorithm on `(u, v)`: `0` when `v = 0`, otherwise
-one more than on `(v, u mod v)`.
+**Number of steps of Euclid's algorithm.** For natural numbers $u$ and $v$, the number of
+division steps of Euclid's algorithm on $(u, v)$ is $0$ if $v = 0$, and otherwise one more than
+the number of division steps on $(v, u \bmod v)$.
 
 ## Depends on
 

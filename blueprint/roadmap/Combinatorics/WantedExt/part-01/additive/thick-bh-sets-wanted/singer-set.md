@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.singerSet
 ---
 
-# Singer Set
+# Generalized Singer set
 
-The generalized Singer set `Singer_h(q, b)`: for a finite field `F` with `q` elements,
-an extension `K` of degree `h + 1`, a generator `θ` of `K^×` and an exponent `b`, the
-residues `a ∈ ℤ/Mℤ`, `M = (q^(h+1) - 1)/(q - 1)`, with `θ^a = uθ^b + v` for some
-`u, v ∈ F`.
+**Generalized Singer set.** Let $F$ be a finite field with $q$ elements, let $K$ be a field
+extension of $F$, let $\theta \in K$, let $h$ and $b$ be natural numbers, and put
+$M = (q^{h+1} - 1)/(q - 1)$. The generalized Singer set $\mathrm{Singer}_h(q, b)$ is the set of
+residues $a \in \mathbb{Z}/M\mathbb{Z}$ such that $\theta^a = u\theta^b + v$ for some
+$u, v \in F$, where $\theta^a$ means $\theta$ raised to the least nonnegative representative
+of $a$.
+
+The construction is intended for $[K : F] = h + 1$ and $\theta$ a generator of $K^\times$; the
+definition itself does not assume either.
 
 ## Depends on
 

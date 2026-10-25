@@ -4,13 +4,13 @@ navigation: module
 
 # Semigroup Largeness
 
-- [Is Mul Piecewise Syndetic](is-mul-piecewise-syndetic.md)
-- [Is Mul JSet](is-mul-jset.md)
-- [Is Central Set](is-central-set.md)
-- [Is CSet](is-cset.md)
-- [Is Mul Piecewise Syndetic univ](is-mul-piecewise-syndetic-univ.md)
-- [Not is Mul Piecewise Syndetic empty](not-is-mul-piecewise-syndetic-empty.md)
-- [Is Mul JSet univ](is-mul-jset-univ.md)
-- [Not is Mul JSet empty](not-is-mul-jset-empty.md)
-- [Not is Central Set empty](not-is-central-set-empty.md)
-- [Not is CSet empty](not-is-cset-empty.md)
+- [Piecewise syndetic subsets of a semigroup](is-mul-piecewise-syndetic.md)
+- [J-sets in a semigroup](is-mul-jset.md)
+- [Central sets in a semigroup](is-central-set.md)
+- [C-sets in a semigroup](is-cset.md)
+- [A nonempty semigroup is piecewise syndetic in itself](is-mul-piecewise-syndetic-univ.md)
+- [The empty set is not piecewise syndetic in a semigroup](not-is-mul-piecewise-syndetic-empty.md)
+- [A nonempty semigroup is a J-set in itself](is-mul-jset-univ.md)
+- [The empty set is not a J-set in a nonempty semigroup](not-is-mul-jset-empty.md)
+- [The empty set is not central in a semigroup](not-is-central-set-empty.md)
+- [The empty set is not a C-set in a semigroup](not-is-cset-empty.md)

@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_powMap_components_eq_two_iff_of_even
 ---
 
-# Card pow Map components eq two iff of even
+# Power digraphs modulo a prime with two components
 
-For even `k > 0`, the digraph `G^k_p` has exactly two components iff every prime factor of
-`p - 1` divides `k` (the source's `p - 1 = 2^{β₀} q₁^{β₁} ⋯ q_ℓ^{β_ℓ}`, `β_i ≥ 0`, where
-`k = 2^{α₀} q₁^{α₁} ⋯ q_ℓ^{α_ℓ}`).
+**Power digraphs modulo a prime with two components.** Let $p$ be a prime and $k > 0$ an even
+natural number, and let $G^k_p$ be the directed graph on $\mathbb{Z}/p\mathbb{Z}$ with an edge
+$a \to a^k$ from every vertex $a$. Its (weak) components are the classes of the equivalence
+relation "$a^{k^m} = b^{k^n}$ for some natural numbers $m, n$". Then $G^k_p$ has exactly two
+components if and only if every prime factor of $p - 1$ divides $k$.
+
+In the source, writing the prime factorization of $k$ as
+$k = 2^{\alpha_0} q_1^{\alpha_1} \cdots q_\ell^{\alpha_\ell}$ with distinct odd primes
+$q_1, \dots, q_\ell$, the condition reads
+$p - 1 = 2^{\beta_0} q_1^{\beta_1} \cdots q_\ell^{\beta_\ell}$ with all $\beta_i \ge 0$.
 
 ## Depends on
 

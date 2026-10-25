@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.MatrixTreeWanted.IsSpanningTree
 ---
 
-# Is Spanning Tree
+# Spanning tree
 
-Spanning-tree predicate requiring both spanning and tree.
+**Spanning tree.** A subgraph $T$ of a simple graph $G$ is a spanning tree of $G$ if it contains
+every vertex of $G$ and, regarded as a graph on its own vertex set, it is a tree (connected and
+acyclic).
 
 ## Depends on
 

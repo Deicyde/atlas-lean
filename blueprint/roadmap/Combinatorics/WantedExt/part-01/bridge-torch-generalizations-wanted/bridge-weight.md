@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight
 ---
 
-# Bridge Weight
+# Weights of the capacity-3 lower bound
 
-The weights `yᵢ` of the capacity-3 lower bound: `y₁ = y₂ = y₃ = 0`,
-`y₄ = 2`, `y₅ = 4`, `y₆ = 5`, and `yᵢ = (4i - 8)/3` for `i ≥ 7` (the value at
-`i = 0` is unused and set to `0`).
+**Weights of the capacity-3 lower bound.** The rational weights $y_i$ are
+$y_1 = y_2 = y_3 = 0$, $y_4 = 2$, $y_5 = 4$, $y_6 = 5$, and $y_i = (4i - 8)/3$ for $i \ge 7$.
+The value $y_0$ is unused and set to $0$.
 
 ## Depends on
 

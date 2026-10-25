@@ -14,7 +14,7 @@ Theorem 5: for `n ≥ 1`, the central coefficients
 
 ## Depends on
 
-- [Fine Number](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
+- [Fine numbers](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
 - [Sabar Number](sabar-number.md)
 
 ## Sources

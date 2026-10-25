@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.opxD_add_lt
 ---
 
-# Opx D add lt
+# Increment bound for the d-dimensional continuous Turán number
 
-Lemma 5.3: for `n > 0` and `0 < ε < n`,
-`opx(n, P, d) ≤ opx(n + ε, P, d) < opx(n, P, d) + d (2n)^{d-1} ε`. The hypothesis `2 ≤ d` is
-added: for `d = 1` the strict inequality fails (`P = {0, L}` with `L > n + ε` is avoided by every
-open subset of `[0, n + ε]`, so `opx(n + ε, P, 1) = n + ε = opx(n, P, 1) + ε`).
+**Increment bound for the d-dimensional continuous Turán number.** Let $d \ge 2$ be a
+natural number, let $P \subseteq \mathbb{R}^d$, and let $n, \varepsilon$ be real numbers with
+$n > 0$ and $0 < \varepsilon < n$. Then the $d$-dimensional continuous Turán number
+$\mathrm{opx}$ satisfies $\mathrm{opx}(n, P, d) \le \mathrm{opx}(n + \varepsilon, P, d)$ and
+$\mathrm{opx}(n + \varepsilon, P, d) < \mathrm{opx}(n, P, d) + d (2n)^{d-1} \varepsilon$.
+
+The hypothesis $d \ge 2$ is needed: for $d = 1$ and $P = \{0, L\}$ with $L > n + \varepsilon$,
+every open subset of $[0, n + \varepsilon]$ avoids $P$, so
+$\mathrm{opx}(n + \varepsilon, P, 1) = n + \varepsilon = \mathrm{opx}(n, P, 1) + \varepsilon$.
 
 ## Depends on
 

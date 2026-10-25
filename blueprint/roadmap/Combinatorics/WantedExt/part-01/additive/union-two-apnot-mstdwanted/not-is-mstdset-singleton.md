@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isMSTDSet_singleton
 ---
 
-# Not is MSTDSet singleton
+# A single point is not an MSTD set
 
-A singleton is not an MSTD set.
+**A single point is not an MSTD set.** For every real number $a$, the set $\{a\}$ is not an
+MSTD set.
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
+- [MSTD set](is-mstdset.md)
 
 ## Sources
 

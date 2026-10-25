@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cycle Lengths](../../../MathlibExt/part-01/simple-graph/part-01/circumference/cycle-lengths.md)
+- [Cycle lengths](../../../MathlibExt/part-01/simple-graph/part-01/circumference/cycle-lengths.md)
 
 ## Sources
 

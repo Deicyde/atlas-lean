@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.squareSet_primePower_decomposition
 ---
 
-# Square Set prime Power decomposition
+# Decomposition of the nonzero squares modulo a prime power
 
-Lemma 4: for prime `p` and positive `r`, with `l = (r - 1) / 2`, the first
-clause is `S(p^r) = ⋃ k, p^(2k)U(p^r)^2`; the second says those pieces are
-pairwise disjoint. `Fin (l+1)` is the integer interval `[0,l]`.
+**Decomposition of the nonzero squares modulo a prime power.** Let $p$ be a prime, let
+$r \ge 1$, and let $l = \lfloor (r - 1)/2 \rfloor$. Write $S(p^r)$ for the set of nonzero squares
+in $\mathbb{Z}_{p^r}$, $U(p^r)^2$ for the set of squares of units in $\mathbb{Z}_{p^r}$, and
+$p^{2k} U(p^r)^2 = \{p^{2k} x : x \in U(p^r)^2\}$. Then
+
+$$S(p^r) = \bigcup_{k=0}^{l} p^{2k} U(p^r)^2,$$
+
+and the sets $p^{2k} U(p^r)^2$ for $k = 0, \dots, l$ are pairwise disjoint.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Unit Square Set](unit-square-set.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Squares of units modulo n](unit-square-set.md)
 
 ## Sources
 

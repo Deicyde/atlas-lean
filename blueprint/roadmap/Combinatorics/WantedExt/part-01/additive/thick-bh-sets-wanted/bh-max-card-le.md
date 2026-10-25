@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.bhMaxCard_le
 ---
 
-# Bh Max Card le
+# $R_h(n)$ is at most $n$
 
-`R_h(n) ≤ n`.
+**$R_h(n)$ is at most $n$.** For all natural numbers $h$ and $n$, let $R_h(n)$ be the largest
+size of a $B_h$-set contained in $\{1, \dots, n\}$, or $0$ if there is no such set (for example
+when $h = 0$ or $n = 0$). Then $R_h(n) \le n$.
 
 ## Depends on
 
-- [Bh Max Card](bh-max-card.md)
+- [Maximum size of a $B_h$-set in $\{1, \dots, n\}$](bh-max-card.md)
 
 ## Proof depends on
 

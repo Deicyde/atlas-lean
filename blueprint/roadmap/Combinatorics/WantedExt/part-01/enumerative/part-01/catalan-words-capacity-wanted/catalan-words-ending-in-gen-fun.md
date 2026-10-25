@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.catalanWordsEndingIn_genFun
 ---
 
-# Catalan Words Ending In gen Fun
+# Generating function of Catalan words by last letter
 
-Mansour and Shattuck's Corollary 3: with `C(x) = ∑ Cₙ xⁿ` the Catalan generating function,
-`A_i(x; 1) = ∑_{n ≥ i} |𝒜_{n,i}| xⁿ = xⁱ C(x)ⁱ` for `i ≥ 1`, using `a(n, i; 1) = |𝒜_{n,i}|`.
+**Generating function of Catalan words by last letter.** Let $C(x) = \sum_{n \ge 0} C_n x^n$
+be the generating function of the Catalan numbers $C_n$. For every $i \ge 1$, let $a_{n,i}$ be the
+number of Catalan words of length $n$ whose last letter is $i$. Then, as formal power series with
+integer coefficients, $\sum_{n \ge 0} a_{n,i} x^n = x^i C(x)^i$.
 
 ## Depends on
 
-- [Catalan Words](catalan-words.md)
-- [Words Ending In](words-ending-in.md)
+- [Catalan words](catalan-words.md)
+- [Words ending in a given letter](words-ending-in.md)
 
 ## Sources
 

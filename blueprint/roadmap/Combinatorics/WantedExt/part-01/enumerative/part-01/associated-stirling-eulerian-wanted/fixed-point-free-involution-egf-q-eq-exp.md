@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.fixedPointFreeInvolutionEGF_q_eq_exp
 ---
 
-# Fixed Point Free Involution EGF q eq exp
+# Excedance generating function of fixed-point-free involutions
 
-Corollary 41: over fixed-point-free involutions (all cycle lengths equal to `2`),
-the `q`-analogue excedance generating function is `A^{(2)}(q,x,u) = exp(q x u^2/2)`.
+**Excedance generating function of fixed-point-free involutions.** Let $R$ be a commutative
+$\mathbb{Q}$-algebra and $x, q \in R$. For a permutation $\sigma$ write $e(\sigma)$ for the number
+of $i$ with $\sigma(i) > i$ and $c(\sigma)$ for its number of cycles, fixed points included.
+Summing over the permutations $\sigma$ of $\{0, \dots, n-1\}$ all of whose cycles have length
+exactly $2$, the following identity of formal power series in $u$ over $R$ holds:
+
+$$\sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} q^{c(\sigma)} \frac{u^n}{n!} = \exp(q x u^2/2).$$
 
 ## Depends on
 
-- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Permutations with all cycles of length $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

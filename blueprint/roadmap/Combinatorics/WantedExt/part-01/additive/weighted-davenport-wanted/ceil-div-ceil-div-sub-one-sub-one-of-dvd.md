@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.ceilDiv_ceilDiv_sub_one_sub_one_of_dvd
 ---
 
-# Ceil Div ceil Div sub one sub one of dvd
+# A nested ceiling identity for divisors
 
-For `m, n ≥ 2` with `m ∣ n`: `⌈n / (⌈n/(m-1)⌉ - 1)⌉ = m`.
+**A nested ceiling identity for divisors.** For all natural numbers $m, n \ge 2$ with
+$m \mid n$, we have $\lceil n / (\lceil n/(m-1) \rceil - 1) \rceil = m$.
 
 ## Depends on
 

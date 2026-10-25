@@ -7,19 +7,19 @@ navigation: module
 
 ## Line
 
-- [Reindex](reindex.md)
-- [Reindex apply](reindex-apply.md)
+- [Reindexing a combinatorial line](reindex.md)
+- [Points of a reindexed line](reindex-apply.md)
 
 ## Subspace
 
-- [Comp](comp.md)
-- [Comp apply](comp-apply.md)
-- [Comp Line](comp-line.md)
-- [Comp Line apply](comp-line-apply.md)
-- [Reindex comp Line](reindex-comp-line.md)
-- [Comp comp Line](comp-comp-line.md)
+- [Composition of combinatorial subspaces](comp.md)
+- [Evaluating a composite subspace](comp-apply.md)
+- [Image of a combinatorial line in a combinatorial subspace](comp-line.md)
+- [Points of the image of a line](comp-line-apply.md)
+- [Reindexing commutes with images of lines](reindex-comp-line.md)
+- [Images of lines under composite subspaces](comp-comp-line.md)
 
 ## Density Hales Jewett Wanted
 
 - [Exists lines mono in high dimension fin](exists-lines-mono-in-high-dimension-fin.md)
-- [Density hales jewett](density-hales-jewett.md)
+- [Density Hales–Jewett theorem](density-hales-jewett.md)

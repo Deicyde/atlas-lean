@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.bivariateCountGF
 ---
 
-# Bivariate Count GF
+# Bivariate generating function of a two-index count
 
-The bivariate generating function `∑_{n, m} a(n, m) xⁿ yᵐ` of a two-index count `a` with
-`a(n, m) = 0` for `m > n`, by weight (`x`) and second index (`y`), in `ℤ[y][[x]]`.
+**Bivariate generating function of a two-index count.** For a function $a$ assigning a natural
+number $a(n, m)$ to every pair of natural numbers $n, m$, its bivariate generating function is the
+power series $\sum_{n \ge 0} \bigl(\sum_{m = 0}^{n} a(n, m)\, y^m\bigr) x^n$ in
+$\mathbb{Z}[y][[x]]$, where $x$ marks the first index (the weight) and $y$ the second. Only the
+terms with $m \le n$ enter; for counts with $a(n, m) = 0$ whenever $m > n$ it equals
+$\sum_{n, m} a(n, m)\, x^n y^m$.
 
 ## Depends on
 

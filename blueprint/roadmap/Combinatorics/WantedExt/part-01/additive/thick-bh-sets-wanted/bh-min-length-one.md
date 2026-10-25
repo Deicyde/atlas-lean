@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.bhMinLength_one
 ---
 
-# Bh Min Length one
+# The shortest interval holding a one-element $B_h$-set
 
-`R_h⁻¹(1) = 1` for `h ≥ 1`.
+**The shortest interval holding a one-element $B_h$-set.** For every natural number
+$h \ge 1$, the smallest natural number $n$ such that $\{1, \dots, n\}$ contains a $B_h$-set with
+exactly one element is $1$; that is, $R_h^{-1}(1) = 1$.
 
 ## Depends on
 
-- [Bh Min Length](bh-min-length.md)
+- [Shortest interval containing a $B_h$-set of given size](bh-min-length.md)
 
 ## Proof depends on
 

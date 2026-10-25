@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.clspan_zero
 ---
 
-# Clspan zero
+# CL-span of the zero polynomial
 
-The zero polynomial has empty CL-span (its root multiset is empty).
+**CL-span of the zero polynomial.** The zero polynomial has empty CL-span (its root multiset
+is empty).
 
 ## Depends on
 
-- [Clspan](clspan.md)
+- [CL-span](clspan.md)
 
 ## Proof depends on
 

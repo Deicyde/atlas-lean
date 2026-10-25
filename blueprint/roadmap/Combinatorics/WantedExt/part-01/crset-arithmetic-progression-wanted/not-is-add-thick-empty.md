@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isAddThick_empty
 ---
 
-# Not is Add Thick empty
+# The empty set is not thick
 
-The empty set is not thick in a nonempty semigroup.
+**The empty set is not thick.** In a nonempty commutative semigroup, the empty set is not
+thick.
 
 ## Depends on
 
-- [Is Add Thick](is-add-thick.md)
+- [Thick set in a commutative semigroup](is-add-thick.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.modularSchurNumber_prime_pow_eq
 ---
 
-# Modular Schur Number prime pow eq
+# Modular Schur numbers modulo a prime power for many classes
 
-For a prime `p`, positive `i, l` with `l ≢ 1 (mod p)`, and `k ≥ p^i - 1`:
-`S_{p^i}(k, l) = p^i - 1`.
+**Modular Schur numbers modulo a prime power for many classes.** Let $p$ be a prime, let $i$
+and $l$ be positive integers with $l \not\equiv 1 \pmod p$, and let $k$ be a natural number with
+$k \ge p^i - 1$. Then the generalized Schur number modulo $p^i$ satisfies
+$S_{p^i}(k, l) = p^i - 1$.
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

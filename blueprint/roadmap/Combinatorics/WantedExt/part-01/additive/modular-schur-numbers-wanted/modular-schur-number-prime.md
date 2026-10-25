@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.modularSchurNumber_prime
 ---
 
-# Modular Schur Number prime
+# Modular Schur numbers modulo a prime
 
-For a prime `p` and `l ≥ p - 1` positive with `l ≢ 1 (mod p)`: `S_p(k, l) = k` for
-`1 ≤ k ≤ p - 1` and `S_p(k, l) = p - 1` for `k ≥ p - 1`.
+**Modular Schur numbers modulo a prime.** Let $p$ be a prime and let $l$ be a positive integer
+with $l \ge p - 1$ and $l \not\equiv 1 \pmod p$. Then the generalized Schur number modulo $p$
+satisfies $S_p(k, l) = k$ for every natural number $k$ with $1 \le k \le p - 1$, and
+$S_p(k, l) = p - 1$ for every natural number $k \ge p - 1$.
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

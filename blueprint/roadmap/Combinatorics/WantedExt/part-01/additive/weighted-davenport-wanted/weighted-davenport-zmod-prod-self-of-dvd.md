@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport_zmod_prod_self_of_dvd
 ---
 
-# Weighted Davenport zmod prod self of dvd
+# Weight sets with weighted Davenport constant $2m - 1$ on $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$
 
-For `n ≥ 2` and a divisor `m ≥ 2` of `n`, every `A ⊆ {1, …, ⌈n/(m-1)⌉ - 1}` with
-`n/m ∈ A` has `D_A(Z_n ⊕ Z_n) = 2m - 1`.
+**Weight sets with weighted Davenport constant $2m - 1$ on
+$\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$.** Let $n \ge 2$ be a natural number and
+$m \ge 2$ a divisor of $n$. Every finite set $A$ of natural numbers with
+$n/m \in A \subseteq \{1, \dots, \lceil n/(m-1) \rceil - 1\}$ has $A$-weighted Davenport constant
+$D_A(\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}) = 2m - 1$.
 
 ## Depends on
 

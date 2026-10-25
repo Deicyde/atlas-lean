@@ -5,13 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.not_isMPTQSet_of_card_eq_five
 ---
 
-# Not is MPTQSet of card eq five
+# No MPTQ set has five elements
 
-Theorem 3: no set of five reals is an MPTQ set.
+**No MPTQ set has five elements.** No set of five real numbers is an MPTQ set.
 
 ## Depends on
 
-- [Is MPTQSet](is-mptqset.md)
+- [MPTQ set](is-mptqset.md)
 
 ## Sources
 

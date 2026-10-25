@@ -5,9 +5,10 @@ statement: formalized
 lean: SimpleGraph.IsIndepDominating
 ---
 
-# Is Indep Dominating
+# Independent dominating set
 
-`S` is an independent dominating set: independent and dominating.
+**Independent dominating set.** A set $S$ of vertices of a simple graph $G$ is an independent
+dominating set of $G$ when no two vertices of $S$ are adjacent and $S$ dominates $G$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Dominating](is-dominating.md)
+- [Dominating set](is-dominating.md)
 
 ## Sources
 

@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.sum_iteratedDeriv_zpow_one_add
 ---
 
-# Sum iterated Deriv zpow one add
+# Alzer–Richards derivative identity for powers of $1 + f$
 
-For `j, n, r ≥ 0` and an `r`-times continuously differentiable `f` without zeros:
-`∑_{k=0}^{n} C(n+1, k+1) (f^{k+1-j})^{(r)} = ∑_{k=0}^{r} C(r, k) (1 / f^j)^{(k)}
-((1 + f)^{n+1} - 1)^{(r-k)}`.
+**Alzer–Richards derivative identity for powers of $1 + f$.** Let $r, j, n \ge 0$ be
+integers and let $f \colon \mathbb{R} \to \mathbb{R}$ be $r$ times continuously differentiable
+with $f(y) \ne 0$ for every real $y$. Writing $g^{(i)}$ for the $i$-th derivative of a function
+$g$ and taking integer powers of $f$ pointwise, for every real $x$
+
+$$
+\sum_{k=0}^{n} \binom{n+1}{k+1} \bigl(f^{k+1-j}\bigr)^{(r)}(x) =
+\sum_{k=0}^{r} \binom{r}{k} \bigl(1/f^j\bigr)^{(k)}(x) \,
+\bigl((1+f)^{n+1} - 1\bigr)^{(r-k)}(x).
+$$
 
 ## Depends on
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.PerfectGraphWanted.IsPerfect
 ---
 
-# Is Perfect
+# Perfect graph
 
-Finite graph where every induced subgraph has `chromaticNumber = cliqueNum`.
+**Perfect graph.** A finite simple graph $G$ is perfect if, for every set $S$ of its
+vertices, the induced subgraph $G[S]$ has chromatic number equal to its clique number, the
+largest size of a clique in $G[S]$.
 
 ## Depends on
 

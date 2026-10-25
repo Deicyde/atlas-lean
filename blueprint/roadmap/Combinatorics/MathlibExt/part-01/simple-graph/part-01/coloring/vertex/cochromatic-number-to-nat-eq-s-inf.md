@@ -7,20 +7,22 @@ proof: formalized
 lean: SimpleGraph.cochromaticNumber_toNat_eq_sInf
 ---
 
-# Cochromatic Number to Nat eq s Inf
+# Cochromatic number of a finite graph
 
-For a finite vertex type, `toNat` of the `ℕ∞` cochromatic number is the natural-valued
-minimum of admissible color counts.
+**Cochromatic number of a finite graph.** For every graph $G$ on a finite vertex set, the
+cochromatic number of $G$, converted from $\mathbb{N} \cup \{\infty\}$ to $\mathbb{N}$ by sending
+$\infty$ to $0$, equals the least natural number $m$ such that $G$ is cocolorable with $m$
+colors.
 
 ## Depends on
 
-- [Cocolorable](cocolorable.md)
-- [Cochromatic Number](cochromatic-number.md)
+- [Cocolorable graphs](cocolorable.md)
+- [Cochromatic number](cochromatic-number.md)
 
 ## Proof depends on
 
-- [Cochromatic Number eq s Inf](cochromatic-number-eq-s-inf.md)
-- [Cocolorable of fintype](cocolorable-of-fintype.md)
+- [Cochromatic number as a minimum](cochromatic-number-eq-s-inf.md)
+- [Finite graphs are cocolorable](cocolorable-of-fintype.md)
 
 ## Sources
 

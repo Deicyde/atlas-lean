@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.AlternatingSignMatrixWanted.Combinatorics.AlternatingSignMatrix.ASMatrix
 ---
 
-# ASMatrix
+# Alternating sign matrices of size $n$
 
-The type of `n × n` alternating sign matrices.
+**Alternating sign matrices of size $n$.** For a natural number $n$, this is the collection of
+all $n \times n$ integer matrices that are alternating sign matrices.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Alternating Sign Matrix](is-alternating-sign-matrix.md)
+- [Alternating sign matrices](is-alternating-sign-matrix.md)
 
 ## Sources
 

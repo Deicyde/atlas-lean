@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.volume_staircase_simplex_ge
 ---
 
-# Volume staircase simplex ge
+# Lower bound on the volume of a staircase region
 
-Lemma 4.8: for `c ≥ 0` and `n ≥ ct`, the set `X ⊆ ℝ^t` of `y` with `0 < y_{t-1}`,
-`y_{i+1} + c < y_i` and `y_i < n - i c` (indices from `0`) has `μ_t(X) ≥ (n/t - c)^t`.
+**Lower bound on the volume of a staircase region.** Let $t$ be a natural number and let
+$c, n$ be real numbers with $c \ge 0$ and $ct \le n$. Let $X \subseteq \mathbb{R}^t$ be the set of
+points $y = (y_0, \dots, y_{t-1})$ such that $y_i < n - ic$ for every $i$, $y_{i+1} + c < y_i$ for
+every $i < t - 1$, and $y_{t-1} > 0$ if $t \ge 1$. Then the $t$-dimensional Lebesgue measure of
+$X$ is at least $(n/t - c)^t$, where $n/t$ is read as $0$ when $t = 0$.
 
 ## Depends on
 

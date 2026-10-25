@@ -4,12 +4,12 @@ navigation: module
 
 # Domination
 
-- [Is Dominating](is-dominating.md)
-- [Is Indep Dominating](is-indep-dominating.md)
-- [Domination Number](domination-number.md)
-- [Indep Domination Number](indep-domination-number.md)
-- [Exists is Indep Dominating](exists-is-indep-dominating.md)
-- [Exists indep Domination Number eq card](exists-indep-domination-number-eq-card.md)
-- [Indep Domination Number le card](indep-domination-number-le-card.md)
-- [Exists domination Number eq card](exists-domination-number-eq-card.md)
-- [Domination Number le card](domination-number-le-card.md)
+- [Dominating set](is-dominating.md)
+- [Independent dominating set](is-indep-dominating.md)
+- [Domination number](domination-number.md)
+- [Independent domination number](indep-domination-number.md)
+- [Existence of independent dominating sets](exists-is-indep-dominating.md)
+- [A minimum independent dominating set exists](exists-indep-domination-number-eq-card.md)
+- [Independent dominating sets are at least as large as the independent domination number](indep-domination-number-le-card.md)
+- [A minimum dominating set exists](exists-domination-number-eq-card.md)
+- [Dominating sets are at least as large as the domination number](domination-number-le-card.md)

@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ladder Adj](ladder-adj.md)
+- [Adjacency in the ladder graph](ladder-adj.md)
 - [Cyclic Label](cyclic-label.md)
 
 ## Sources

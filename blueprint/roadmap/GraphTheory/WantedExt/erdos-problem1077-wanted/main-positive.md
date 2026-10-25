@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Balanced](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-01/is-balanced.md)
+- [Balanced graph](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-01/is-balanced.md)
 
 ## Sources
 

@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.weakAscent_wilf_class93
 ---
 
-# Weak Ascent wilf class93
+# Weak ascent Wilf equivalence and generating function, class 93
 
-Theorem 7 (Class 93): `{011, 102, 120, 201}` and `{011, 102, 120, 210}` are
-WA-Wilf equivalent, and `∑_{n ≥ 1} |WA_n({011, 102, 120, 201})| xⁿ =
-x(2x² - 2x + 1) / ((1 - 2x)(1 - x)²)`, stated with the denominator cleared in `ℤ⟦X⟧`
-(the `n = 0` term is excluded, as the generating function has no constant term).
+**Weak ascent Wilf equivalence and generating function, class 93.** Write $\mathrm{WA}_n(P)$
+for the set of weak ascent sequences of length $n$ avoiding every pattern in $P$, with patterns
+written as words (for example $011$). The pattern sets $P = \{011, 102, 120, 201\}$ and
+$\{011, 102, 120, 210\}$ are WA-Wilf equivalent, that is,
+$|\mathrm{WA}_n(P)| = |\mathrm{WA}_n(\{011, 102, 120, 210\})|$ for every $n \ge 0$. Moreover, the
+formal power series $F(x) = \sum_{n \ge 1} |\mathrm{WA}_n(P)| \, x^n$ in $\mathbb{Z}[[x]]$
+(without the $n = 0$ term) satisfies $F(x) \, (1 - 2x)(1 - x)^2 = x(2x^2 - 2x + 1)$, that is,
+$F(x) = \frac{x(2x^2 - 2x + 1)}{(1 - 2x)(1 - x)^2}$.
 
 ## Depends on
 
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Sources
 

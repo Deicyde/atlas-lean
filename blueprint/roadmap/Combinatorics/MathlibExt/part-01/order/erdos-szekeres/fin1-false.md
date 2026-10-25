@@ -7,9 +7,9 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.fin1_false
 ---
 
-# Fin1 false
+# No strict pair in a one-element set
 
-No strict pair exists in `Fin 1`.
+**No strict pair in a one-element set.** There are no $i, j \in \{0\}$ with $i < j$.
 
 ## Depends on
 

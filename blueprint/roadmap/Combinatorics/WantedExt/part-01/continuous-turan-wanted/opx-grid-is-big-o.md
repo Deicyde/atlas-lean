@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.opx_grid_isBigO
 ---
 
-# Opx grid is Big O
+# Upper bound for the continuous Turán number of a grid
 
-Corollary 3.5: a full grid `P = X × Y` with `t = |X|` columns and `s = |Y|` rows (`st` points)
-has `opx(n, P) = O(n^{2 - 1/t})`. Stated along natural `n`; for `t = 0` (`P = ∅`) the bound reads
-`O(n²)` (Lean's `1 / 0 = 0`).
+**Upper bound for the continuous Turán number of a grid.** Let $X$ and $Y$ be finite sets of
+real numbers, let $P = X \times Y$ be the grid they span and let $t = |X|$ be its number of
+columns. Then $\operatorname{opx}(n, P) = O(n^{2 - 1/t})$ as the natural number $n$ tends to
+infinity, where for $t = 0$ (so that $P$ is empty) the exponent $2 - 1/t$ is read as $2$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

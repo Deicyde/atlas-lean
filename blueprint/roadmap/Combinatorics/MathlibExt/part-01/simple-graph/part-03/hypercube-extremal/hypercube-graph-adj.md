@@ -7,13 +7,16 @@ proof: formalized
 lean: SimpleGraph.hypercubeGraph_adj
 ---
 
-# Hypercube Graph adj
+# Adjacency in the hypercube
 
-Adjacency in `Q_n` holds exactly when the endpoints differ in a unique coordinate.
+**Adjacency in the hypercube.** For every natural number $n$ and all vertices $x, y$ of the
+$n$-dimensional hypercube $Q_n$ (functions from $\{0, \dots, n-1\}$ to the Booleans), $x$ and
+$y$ are adjacent in $Q_n$ if and only if there is exactly one coordinate $i$ with
+$x_i \ne y_i$.
 
 ## Depends on
 
-- [Hypercube Graph](hypercube-graph.md)
+- [Hypercube graph](hypercube-graph.md)
 
 ## Sources
 

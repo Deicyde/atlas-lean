@@ -7,16 +7,20 @@ proof: formalized
 lean: IsogenyVolcano.edge_direction
 ---
 
-# Edge direction
+# Every edge of an isogeny volcano is horizontal, descending or ascending
 
-Every positive edge has a direction.
+**Every edge of an isogeny volcano is horizontal, descending or ascending.**
+Let $C$ be an $\ell$-isogeny volcano, with levels numbered from $0$ at the surface, and let $v, w$
+be vertices of $C$ whose edge multiplicity is positive. Then $(v, w)$ is a horizontal edge (both
+$v$ and $w$ have level $0$), a descending edge (the level of $w$ is the level of $v$ plus one) or
+an ascending edge (the level of $v$ is the level of $w$ plus one).
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
-- [Is Ascending Edge](is-ascending-edge.md)
-- [Is Descending Edge](is-descending-edge.md)
-- [Is Horizontal Edge](is-horizontal-edge.md)
+- [Isogeny volcano](isogeny-volcano.md)
+- [Ascending edge](is-ascending-edge.md)
+- [Descending edge](is-descending-edge.md)
+- [Horizontal edge](is-horizontal-edge.md)
 - [Multigraph](multigraph.md)
 
 ## Sources

@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.invFact_natCast
 ---
 
-# Inv Fact nat Cast
+# The inverse factorial at natural numbers
 
-The inverse factorial is the reciprocal of `Nat.factorial` on natural inputs.
+**The inverse factorial at natural numbers.** For every natural number $n$, the inverse
+factorial of $n$, viewed as an integer, equals $(n!)^{-1}$ in $\mathbb{Q}$.
 
 ## Depends on
 
-- [Inv Fact](inv-fact.md)
+- [Inverse factorial on the integers](inv-fact.md)
 
 ## Sources
 

@@ -21,7 +21,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Is Partial List Coloring](is-partial-list-coloring.md)
-- [Is Choice Number](../../../MathlibExt/part-01/simple-graph/part-03/list-coloring/is-choice-number.md)
+- [Choice number](../../../MathlibExt/part-01/simple-graph/part-03/list-coloring/is-choice-number.md)
 
 ## Sources
 

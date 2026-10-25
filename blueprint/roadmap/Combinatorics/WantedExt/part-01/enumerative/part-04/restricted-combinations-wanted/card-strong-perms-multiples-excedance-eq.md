@@ -13,7 +13,7 @@ permutations counted by `P^{\{-m,0,jm\}}_{im+r}` with `k` excedances is
 
 ## Depends on
 
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 - [One TBonacci Polynomial](one-tbonacci-polynomial.md)
 
 ## Sources

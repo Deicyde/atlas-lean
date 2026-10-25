@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.smoothWords_capacity_natDegree
 ---
 
-# Smooth Words capacity nat Degree
+# Maximum capacity of smooth words
 
-Mansour and Shattuck's Theorem 5: the maximum capacity over smooth words of length
-`4m + p` is `deg r(4m + p; q) = m(2m + p - 1)` for `m ≥ 1`, `0 ≤ p ≤ 3`.
+**Maximum capacity of smooth words.** A smooth word is a word of positive integers with first
+letter $1$ whose consecutive letters differ by at most $1$. Let
+$r(n; q) = \sum_w q^{\mathrm{cap}(w)}$, summed over the smooth words $w$ of length $n$, where
+$\mathrm{cap}(w)$ is the capacity of $w$. For all $m \ge 1$ and $0 \le p \le 3$, the degree of
+$r(4m + p; q)$ in $q$ is $m(2m + p - 1)$. Since $r(n; q)$ is a nonzero polynomial with
+nonnegative coefficients, this degree is the maximum capacity of a smooth word of length
+$4m + p$ (Mansour and Shattuck's Theorem 5).
 
 ## Depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Smooth Words](smooth-words.md)
+- [Capacity distribution](capacity-dist.md)
+- [Smooth words](smooth-words.md)
 
 ## Sources
 

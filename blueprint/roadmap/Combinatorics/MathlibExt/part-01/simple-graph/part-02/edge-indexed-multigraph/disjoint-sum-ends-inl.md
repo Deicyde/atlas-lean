@@ -7,14 +7,16 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.disjointSum_ends_inl
 ---
 
-# Disjoint Sum ends inl
+# Endpoints of edges from the first summand
 
-A left edge keeps its endpoints in a disjoint sum.
+**Endpoints of edges from the first summand.** Let $M$ and $N$ be edge-indexed multigraphs on
+the same vertex type. Every edge $e$ of $M$, viewed as an edge of the disjoint sum of $M$ and
+$N$, has the same endpoints as in $M$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Disjoint Sum](disjoint-sum.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Disjoint sum of edge-indexed multigraphs](disjoint-sum.md)
 
 ## Sources
 

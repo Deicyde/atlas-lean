@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_isPerfectMCover_zmod_iff
 ---
 
-# Exists is Perfect MCover zmod iff
+# Which families are perfect $m$-covers of $\mathbb{Z}_{2^n}$
 
-A colored multiset `s` in `ℤ_{2^n}` is a perfect `m`-cover for some `m` if and only if
-it contains elements of each order `2, 2^2, …, 2^n`.
+**Which families are perfect $m$-covers of $\mathbb{Z}_{2^n}$.** Let $s = (s_i)_{i \in \iota}$
+be a family in $\mathbb{Z}_{2^n}$ indexed by a finite type $\iota$ (a colored multiset). Then $s$
+is a perfect $m$-cover of $\mathbb{Z}_{2^n}$ for some $m$ if and only if for every $j$ with
+$1 \le j \le n$ some $s_i$ has additive order $2^j$.
 
 ## Depends on
 
-- [Is Perfect MCover](is-perfect-mcover.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
 
 ## Sources
 

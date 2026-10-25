@@ -6,11 +6,14 @@ statement: formalized
 lean: SimpleGraph.antiRamseyNum
 ---
 
-# Anti Ramsey Num
+# Anti-Ramsey number
 
-The anti-Ramsey number $\mathrm{AR}(n, H)$: the maximum number of colors in an edge coloring of
-$K_n$ (that is, a labeling of the edges of $K_n$ using every color) that contains no rainbow copy
-of $H$, i.e. no injective homomorphism (copy) of $H$ whose edges all receive different colors.
+**Anti-Ramsey number.** For a graph $H$ on a finite vertex type and a natural number $n$, the
+anti-Ramsey number $\mathrm{AR}(n, H)$ is the largest $k$ for which there is a coloring of the edges
+of the complete graph $K_n$ on $\{0, \dots, n-1\}$ with colors $\{0, \dots, k-1\}$, every color
+used, that contains no rainbow copy of $H$. Here a copy of $H$ is an injective homomorphism from
+$H$ to $K_n$, and it is rainbow when distinct edges of $H$ are sent to edges of distinct colors.
+If no such $k$ exists, $\mathrm{AR}(n, H) = 0$.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Rainbow](is-rainbow.md)
+- [Rainbow homomorphisms](is-rainbow.md)
 
 ## Sources
 

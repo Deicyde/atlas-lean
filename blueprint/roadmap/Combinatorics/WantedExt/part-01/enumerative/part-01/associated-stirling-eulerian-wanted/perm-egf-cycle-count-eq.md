@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.permEGF_cycleCount_eq
 ---
 
-# Perm EGF cycle Count eq
+# Excedance generating function of permutations with $k$ cycles
 
-Corollary 43: for every `k ≥ 0`, the excedance generating function over permutations
-with exactly `k` cycles is `A_k(x,u) = (ln A(x,u))^k/k!`, the logarithm read as any `L`
-with `L(0) = 0` and `exp L = A(x,u)`.
+**Excedance generating function of permutations with $k$ cycles.** Let $R$ be a commutative
+$\mathbb{Q}$-algebra and $x \in R$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ let
+$e(\sigma)$ be the number of $i$ with $\sigma(i) > i$ and $c(\sigma)$ the number of cycles of
+$\sigma$, fixed points included. Let
+$A(x,u) = \sum_{n \ge 0} \frac{u^n}{n!} \sum_{\sigma} x^{e(\sigma)} \in R[[u]]$, the inner sum
+over all permutations $\sigma$ of $\{0, \dots, n-1\}$, and for $k \ge 0$ let $A_k(x,u)$ be the
+same series with the inner sum restricted to the $\sigma$ with $c(\sigma) = k$. If
+$L \in R[[u]]$ has zero constant term and $\exp(L) = A(x,u)$, where
+$\exp(F) = \sum_{m \ge 0} F^m/m!$, then $A_k(x,u) = L^k/k!$.
 
 ## Depends on
 
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

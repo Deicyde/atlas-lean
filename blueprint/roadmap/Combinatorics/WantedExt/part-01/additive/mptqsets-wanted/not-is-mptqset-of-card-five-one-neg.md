@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.not_isMPTQSet_of_card_five_one_neg
 ---
 
-# Not is MPTQSet of card five one neg
+# Five-element sets with one negative element are not MPTQ sets
 
-Lemma 4: a set of five nonzero reals with exactly one negative element is not an MPTQ set.
+**Five-element sets with one negative element are not MPTQ sets.** If $A$ is a set of five
+real numbers exactly one of which is negative, then $A$ is not an MPTQ set.
+
+The source assumes the elements are nonzero; this is not needed, since a set containing $0$ is
+never an MPTQ set.
 
 ## Depends on
 
-- [Is MPTQSet](is-mptqset.md)
+- [MPTQ set](is-mptqset.md)
 
 ## Sources
 

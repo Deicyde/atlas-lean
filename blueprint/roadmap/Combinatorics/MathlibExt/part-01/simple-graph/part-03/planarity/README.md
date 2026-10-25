@@ -6,4 +6,4 @@ navigation: module
 # Planarity
 
 - [Segment](segment.md)
-- [Is Planar](is-planar.md)
+- [Straight-line planar graph](is-planar.md)

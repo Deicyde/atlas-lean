@@ -6,10 +6,16 @@ statement: formalized
 lean: SimpleGraph.DichromaticColorable
 ---
 
-# Dichromatic Colorable
+# Dichromatically $k$-colourable graphs
 
-`G` is dichromatically `k`-colourable if every orientation admits a
-`k`-colouring with no monochromatic directed cycle.
+**Dichromatically $k$-colourable graphs.** Let $G$ be a simple graph on a vertex set $V$ and
+let $k$ be a natural number. Then $G$ is dichromatically $k$-colourable if for every orientation
+$D$ of $G$ there is a map $c \colon V \to \{0, \dots, k - 1\}$, not required to be a proper
+colouring, such that no closed directed walk of positive length in $D$ has all of its vertices of
+the same colour under $c$.
+
+Since every closed directed walk of positive length contains a directed cycle, this is the same as
+asking for a colouring with no monochromatic directed cycle.
 
 ## Depends on
 
@@ -17,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Directed Cycle](is-directed-cycle.md)
-- [Is Orientation](is-orientation.md)
+- [Closed directed walks](is-directed-cycle.md)
+- [Orientations of a graph](is-orientation.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isLarge_iff
 ---
 
-# Is Large iff
+# Characterization of large sets
 
-Characterization of largeness as `r`-largeness for every `r ≥ 1`.
+**Characterization of large sets.** A set $D$ of natural numbers is large if and only if it
+is $r$-large for every natural number $r \ge 1$.
 
 ## Depends on
 
-- [Is Large](is-large.md)
-- [Is RLarge](is-rlarge.md)
+- [Large set](is-large.md)
+- [$r$-large sets](is-rlarge.md)
 
 ## Sources
 

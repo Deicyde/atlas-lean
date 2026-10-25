@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.not_isLunarPrime_zero
 ---
 
-# Not is Lunar Prime zero
+# Zero is not a lunar prime
 
-For `b ≥ 2` the zero sequence is not a lunar prime: `0 = 0 ⊗ 0`.
+**Zero is not a lunar prime.** For every integer $b \ge 2$, the zero sequence is not a lunar
+prime of base $b$: $0 = 0 \otimes 0$, where $\otimes$ is the max-min product, and $0$ is not the
+lunar unit, the constant polynomial $b - 1$ with coefficient sequence $(b - 1, 0, 0, \dots)$.
 
 ## Depends on
 
-- [Is Lunar Prime](is-lunar-prime.md)
+- [Lunar primes](is-lunar-prime.md)
 
 ## Proof depends on
 
 - [Lunar Unit](lunar-unit.md)
-- [Max Min Mul](max-min-mul.md)
+- [Max-min product](max-min-mul.md)
 
 ## Sources
 

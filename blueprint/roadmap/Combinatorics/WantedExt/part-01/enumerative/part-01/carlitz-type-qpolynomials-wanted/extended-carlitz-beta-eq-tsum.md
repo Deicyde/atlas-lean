@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.extendedCarlitzBeta_eq_tsum
 ---
 
-# Extended Carlitz Beta eq tsum
+# Series for the extended Carlitz $q$-Bernoulli numbers
 
-Series for `β_n^{(r)}` when `0 < q < 1`: `β_n^{(0)} = -n ∑ q^k [k]^{n-1} + (1 - q)^{-n}` and,
-for `r ≥ 1`, `β_n^{(r)} = -n ∑ q^{(r+1)k} [k]^{n-1} + r (1 - q) ∑ q^{rk} [k]^n` (`n ≥ 1`).
+**Series for the extended Carlitz $q$-Bernoulli numbers.** Let $0 < q < 1$, write
+$[x] = (q^x - 1)/(q - 1)$, and let $\beta_n^{(r)} = \beta_n^{(r)}(0)$ be the extended Carlitz
+$q$-Bernoulli numbers. For every natural number $n \ge 1$,
+$\beta_n^{(0)} = -n \sum_{k=0}^{\infty} q^k [k]^{n-1} + (1 - q)^{-n}$, and for every natural number
+$r \ge 1$,
+
+$$
+\beta_n^{(r)} = -n \sum_{k=0}^{\infty} q^{(r+1)k} [k]^{n-1} +
+r (1 - q) \sum_{k=0}^{\infty} q^{rk} [k]^n.
+$$
 
 ## Depends on
 
-- [Extended Carlitz Beta Poly](extended-carlitz-beta-poly.md)
-- [Q Bracket](q-bracket.md)
+- [Extended Carlitz $q$-Bernoulli polynomials](extended-carlitz-beta-poly.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

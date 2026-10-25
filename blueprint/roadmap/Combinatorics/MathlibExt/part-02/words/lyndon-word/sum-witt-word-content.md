@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.sum_wittWordContent
 ---
 
-# Sum witt Word Content
+# The content of a word sums to its length
 
-The sum of the content of a word is its length.
+**The content of a word sums to its length.** For a natural number $r$ and a word $w$ over
+the alphabet $\{0, \dots, r-1\}$, summing over all letters $i$ the number of occurrences of $i$
+in $w$ gives the length of $w$.
 
 ## Depends on
 
-- [Witt Word Content](witt-word-content.md)
+- [Content of a word](witt-word-content.md)
 
 ## Sources
 

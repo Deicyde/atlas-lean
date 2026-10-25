@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.opxD_empty
 ---
 
-# Opx D empty
+# The higher-dimensional continuous Turán number of the empty pattern
 
-The empty pattern is contained in every set, so `opx(n, ∅, d) = 0`.
+**The higher-dimensional continuous Turán number of the empty pattern.** For every dimension
+$d$ and every real number $n$, $\mathrm{opx}(n, \emptyset, d) = 0$: every set contains the empty
+pattern, so no set is free of it.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ The empty pattern is contained in every set, so `opx(n, ∅, d) = 0`.
 
 ## Proof depends on
 
-- [Contains Pattern D](contains-pattern-d.md)
-- [Contains Pattern D empty](contains-pattern-d-empty.md)
+- [Containment of point sets in $\mathbb{R}^d$](contains-pattern-d.md)
+- [Every set in $\mathbb{R}^d$ contains the empty pattern](contains-pattern-d-empty.md)
 
 ## Sources
 

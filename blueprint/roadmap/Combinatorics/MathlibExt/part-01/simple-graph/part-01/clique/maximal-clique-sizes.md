@@ -6,10 +6,13 @@ statement: formalized
 lean: SimpleGraph.maximalCliqueSizes
 ---
 
-# Maximal Clique Sizes
+# Sizes of maximal cliques
 
-The set of sizes of the inclusion-maximal finite cliques of `G` among finite
-cliques. An infinite maximal clique is not represented.
+**Sizes of maximal cliques.** For a simple graph $G$, this is the set of natural numbers $k$
+such that some finite clique of $G$ with exactly $k$ vertices is maximal under inclusion among
+the finite cliques of $G$, that is, no finite clique of $G$ strictly contains it.
+
+An infinite maximal clique of $G$ contributes no size to this set.
 
 ## Depends on
 

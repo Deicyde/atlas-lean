@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.catalanCapacityDist_boundary
 ---
 
-# Catalan Capacity Dist boundary
+# Boundary values of the capacity distributions on Catalan words
 
-Mansour and Shattuck's Lemma 2, boundary values: `a(n, 1) = a(n - 1)` for `n ≥ 2`, and
-`a(n, n) = b(n, 1) = b(n, n) = 1` for `n ≥ 1`.
+**Boundary values of the capacity distributions on Catalan words.** Write $a(n, i)$ for the
+capacity distribution of the Catalan words of length $n$ ending in $i$, $b(n, i)$ for that of
+those Catalan words of length $n$ ending in $i$ whose largest letter is $i$, and $a(n)$ for the
+capacity distribution of all Catalan words of length $n$. For every $n \ge 1$,
+$a(n, n) = b(n, 1) = b(n, n) = 1$, and if $n \ge 2$ then $a(n, 1) = a(n - 1)$.
 
 ## Depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Catalan Capacity Dist](catalan-capacity-dist.md)
-- [Catalan Max End Capacity Dist](catalan-max-end-capacity-dist.md)
-- [Catalan Words](catalan-words.md)
+- [Capacity distribution](capacity-dist.md)
+- [Capacity distribution of Catalan words with a given last letter](catalan-capacity-dist.md)
+- [Capacity distribution of Catalan words ending in their largest letter](catalan-max-end-capacity-dist.md)
+- [Catalan words](catalan-words.md)
 
 ## Sources
 

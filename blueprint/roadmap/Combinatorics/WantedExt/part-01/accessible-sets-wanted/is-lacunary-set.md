@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsLacunarySet
 ---
 
-# Is Lacunary Set
+# Lacunary set
 
-A set is lacunary when it is exactly the range of a lacunary sequence.
+**Lacunary set.** A set $D$ of natural numbers is lacunary when $D = \{m_n : n \ge 0\}$ for
+some lacunary sequence $(m_n)_{n \ge 0}$ of natural numbers.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Lacunary](is-lacunary.md)
+- [Lacunary sequence](is-lacunary.md)
 
 ## Sources
 

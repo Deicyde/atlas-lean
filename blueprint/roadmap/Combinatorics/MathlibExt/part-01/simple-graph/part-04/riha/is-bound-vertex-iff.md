@@ -7,13 +7,15 @@ proof: formalized
 lean: SimpleGraph.Walk.isBoundVertex_iff
 ---
 
-# Is Bound Vertex iff
+# Characterization of bound vertices
 
-A vertex is bound to a closed walk exactly when it and all its neighbors lie on the walk.
+**Characterization of bound vertices.** Let $c$ be a closed walk in a simple graph $G$. A
+vertex $y$ is bound to $c$ if and only if $y$ lies on $c$ and every neighbor of $y$ in $G$ lies
+on $c$.
 
 ## Depends on
 
-- [Is Bound Vertex](is-bound-vertex.md)
+- [Bound vertices of a closed walk](is-bound-vertex.md)
 
 ## Sources
 

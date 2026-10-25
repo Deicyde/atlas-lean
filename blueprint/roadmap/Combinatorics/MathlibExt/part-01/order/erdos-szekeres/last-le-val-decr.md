@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.last_le_val_decr
 ---
 
-# Last le val decr
+# The last value is the smallest along a strictly decreasing selection
 
-The end value sits weakly below later entries along a decreasing
-subsequence.
+**The last value is the smallest along a strictly decreasing selection.** Let $f$ be a real
+sequence indexed by $\{0, \dots, N-1\}$, let $k \ge 1$, and let $\varphi$ map
+$\{0, \dots, k-1\}$ to $\{0, \dots, N-1\}$ so that $f(\varphi(j)) < f(\varphi(i))$ whenever
+$i < j < k$. If $\varphi(k-1) = q$, then $f(q) \le f(\varphi(i))$ for every $i < k$.
 
 ## Depends on
 
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

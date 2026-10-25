@@ -6,9 +6,10 @@ statement: formalized
 lean: SimpleGraph.cycleLengths
 ---
 
-# Cycle Lengths
+# Cycle lengths
 
-`G.cycleLengths` is the set of lengths of the cycles in `G`.
+**Cycle lengths.** For a simple graph $G$, the set of cycle lengths of $G$ is the set of
+natural numbers $m$ such that $G$ contains a cycle of length $m$.
 
 ## Depends on
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.accelZeckLosing_of_terminal
 ---
 
-# Accel Zeck Losing of terminal
+# Terminal states are losing in the Accelerated Zeckendorf Game
 
-A state with no move is losing (rule (1)).
+**Terminal states are losing in the Accelerated Zeckendorf Game.** Every state of the
+Accelerated Zeckendorf Game from which no move is possible is a losing state.
 
 ## Depends on
 
-- [Accel Zeck Losing](accel-zeck-losing.md)
-- [Accel Zeck Move](accel-zeck-move.md)
+- [Losing states of the Accelerated Zeckendorf Game](accel-zeck-losing.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
 
 ## Proof depends on
 
-- [Accel Zeck Winning](accel-zeck-winning.md)
+- [Winning states of the Accelerated Zeckendorf Game](accel-zeck-winning.md)
 
 ## Sources
 

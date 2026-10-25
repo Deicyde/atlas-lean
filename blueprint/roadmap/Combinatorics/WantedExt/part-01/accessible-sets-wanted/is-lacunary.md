@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsLacunary
 ---
 
-# Is Lacunary
+# Lacunary sequence
 
-A sequence is lacunary when all terms are positive and some real ratio
-`λ > 1` satisfies `m (n+1) ≥ λ*m n` for every zero-based index `n`.
+**Lacunary sequence.** A sequence $(m_n)_{n \ge 0}$ of natural numbers is lacunary when
+$m_n > 0$ for every $n$ and there is a real number $\lambda > 1$ such that
+$m_{n+1} \ge \lambda m_n$ for every $n \ge 0$.
 
 ## Depends on
 

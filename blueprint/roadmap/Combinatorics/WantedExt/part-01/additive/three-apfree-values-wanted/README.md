@@ -4,8 +4,8 @@ navigation: module
 
 # Three APFree Values
 
-- [Cap Set dim three](cap-set-dim-three.md)
-- [Cap Set dim four](cap-set-dim-four.md)
-- [Cap Set dim five](cap-set-dim-five.md)
-- [Cap Set dim six](cap-set-dim-six.md)
-- [Roth Number Nat five to fourteen](roth-number-nat-five-to-fourteen.md)
+- [Largest cap set in dimension three](cap-set-dim-three.md)
+- [Largest cap set in dimension four](cap-set-dim-four.md)
+- [Largest cap set in dimension five](cap-set-dim-five.md)
+- [Largest cap set in dimension six](cap-set-dim-six.md)
+- [Roth numbers from five to fourteen](roth-number-nat-five-to-fourteen.md)

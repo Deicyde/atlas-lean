@@ -5,8 +5,8 @@ navigation: module
 
 # Van Der Laan Sequence
 
-- [Is Van Der Laan Window](is-van-der-laan-window.md)
-- [Is Van Der Laan](is-van-der-laan.md)
-- [Is Van Der Laan Window ordered iff](is-van-der-laan-window-ordered-iff.md)
-- [Is Van Der Laan Window const iff](is-van-der-laan-window-const-iff.md)
-- [Is Van Der Laan const iff](is-van-der-laan-const-iff.md)
+- [Van der Laan windows](is-van-der-laan-window.md)
+- [Van der Laan sequences](is-van-der-laan.md)
+- [Van der Laan windows in increasing order](is-van-der-laan-window-ordered-iff.md)
+- [Constant Van der Laan windows](is-van-der-laan-window-const-iff.md)
+- [Constant Van der Laan sequences](is-van-der-laan-const-iff.md)

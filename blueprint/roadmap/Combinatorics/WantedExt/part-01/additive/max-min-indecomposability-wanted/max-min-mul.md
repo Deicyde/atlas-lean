@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.maxMinMul
 ---
 
-# Max Min Mul
+# Max-min product
 
-The max-min convolution `(g ⊗ h)ₖ = max_{i + j = k} min(gᵢ, hⱼ)`, the product of the
-max-min semiring `(ℕ, max, min)` on coefficient sequences.
+**Max-min product.** The max-min product of sequences $g, h \colon \mathbb{N} \to \mathbb{N}$
+is the sequence $g \otimes h$ with $(g \otimes h)_k = \max_{i + j = k} \min(g_i, h_j)$ for every
+$k \in \mathbb{N}$, the maximum running over pairs of natural numbers $(i, j)$. This is the product
+of the max-min semiring $(\mathbb{N}, \max, \min)$ on coefficient sequences.
 
 ## Depends on
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.centralBinomPowSum_zero
 ---
 
-# Central Binom Pow Sum zero
+# The weighted central binomial sum at zero
 
-The `n = 0` value: `centralBinomPowSum a r 0 = 0^r a_0`.
+**The weighted central binomial sum at zero.** For every sequence $a$ of rational numbers and
+every natural number $r$, the weighted central binomial sum
+$S_r^a(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r a_k$ satisfies $S_r^a(0) = 0^r a_0$, with
+the convention $0^0 = 1$.
 
 ## Depends on
 
-- [Central Binom Pow Sum](central-binom-pow-sum.md)
+- [Weighted central binomial sum](central-binom-pow-sum.md)
 
 ## Sources
 

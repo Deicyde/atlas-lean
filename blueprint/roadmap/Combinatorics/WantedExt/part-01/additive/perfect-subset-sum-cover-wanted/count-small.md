@@ -6,21 +6,24 @@ proof: formalized
 lean: MetaMathlibExt.PerfectSubsetSumCover.count_small
 ---
 
-# Count small
+# Small values of the perfect cover count
 
-Small values: `C(ℤ₂) = 1`, `C(ℤ₄) = 2` (the covers `{1, 2}` and `{2, 3}`), and
-`C(ℤ₂ ⊕ ℤ₂) = 3`.
+**Small values of the perfect cover count.** Writing $C(K)$ for the number of perfect covers
+of a group $K$, we have $C(\mathbb{Z}_2) = 1$, $C(\mathbb{Z}_4) = 2$ and
+$C(\mathbb{Z}_2 \oplus \mathbb{Z}_2) = 3$.
+
+The two perfect covers of $\mathbb{Z}_4$ are $\{1, 2\}$ and $\{2, 3\}$.
 
 ## Depends on
 
-- [Count](count.md)
+- [Number of perfect covers](count.md)
 
 ## Proof depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
-- [Is Perfect MCover](is-perfect-mcover.md)
-- [Count eq card filter](count-eq-card-filter.md)
-- [Cover Count](cover-count.md)
+- [Perfect cover](is-perfect-cover.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
+- [Perfect cover count as a finset cardinality](count-eq-card-filter.md)
+- [Cover count](cover-count.md)
 
 ## Sources
 

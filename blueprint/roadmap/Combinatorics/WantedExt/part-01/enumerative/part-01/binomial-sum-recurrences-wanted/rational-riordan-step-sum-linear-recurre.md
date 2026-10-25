@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.rationalRiordan_stepSum_linearRecurrence
 ---
 
-# Rational Riordan step Sum linear Recurrence
+# Step sums of a rational Riordan array satisfy a common recurrence
 
-Step-`k` sums of a rational Riordan array are C-finite, uniformly in the residue. Let
-`g = g₁/g₂` and `h = x^ν h₁/h₂` with `g₁, g₂, h₁, h₂ ∈ ℤ[x]`, `g₂(0) = h₁(0) = h₂(0) = 1`,
-`ν ≥ 1`, and `d(n, m) = [x^n] g h^m` (computed in `ℚ[[x]]`). For every `k ≥ 1` there are an
-order `r` and integers `α_1, …, α_r`, independent of `p`, such that for every `p < k`,
-`a_p(n) = ∑_j d(n, kj + p)` satisfies `a_p(n) = ∑_{i=1}^r α_i a_p(n - i)` for all `n ≥ r`.
+**Step sums of a rational Riordan array satisfy a common recurrence.** Let
+$g_1, g_2, h_1, h_2 \in \mathbb{Z}[x]$ with $g_2(0) = h_1(0) = h_2(0) = 1$, let $\nu \ge 1$ and
+$k \ge 1$ be natural numbers, and in $\mathbb{Q}[[x]]$ let $g = g_1/g_2$ and
+$h = x^\nu h_1/h_2$. For $p, n \in \mathbb{N}$ let
+$a_p(n) = \sum_{j=0}^{n} [x^n]\, g h^{kj+p}$. Then there are $r \in \mathbb{N}$ and integers
+$\alpha_1, \ldots, \alpha_r$ such that $a_p(n) = \sum_{i=1}^{r} \alpha_i a_p(n - i)$ for every
+$p < k$ and every $n \ge r$.
+
+Since $h$ has no constant term, $[x^n]\, g h^m = 0$ for $m > n$, so $a_p(n)$ is the full sum
+over all $j \ge 0$.
 
 ## Depends on
 

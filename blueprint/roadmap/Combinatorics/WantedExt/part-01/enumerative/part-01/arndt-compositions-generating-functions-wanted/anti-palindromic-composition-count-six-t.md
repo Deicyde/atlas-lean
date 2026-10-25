@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.antiPalindromicCompositionCount_six_three
 ---
 
-# Anti Palindromic Composition Count six three
+# Anti-palindromic compositions of 6 with three parts
 
-There are eight anti-palindromic compositions of `6` with three parts.
+**Anti-palindromic compositions of 6 with three parts.** There are exactly eight
+anti-palindromic compositions of $6$ with three parts.
 
 ## Depends on
 
-- [Anti Palindromic Composition Count](anti-palindromic-composition-count.md)
+- [Anti-palindromic compositions](anti-palindromic-composition-count.md)
 
 ## Sources
 

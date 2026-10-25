@@ -7,15 +7,16 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.filter_inc_card
 ---
 
-# Filter inc card
+# Degree counts incident edges
 
-The multigraph degree counts incident edge identities.
+**Degree counts incident edges.** In an edge-indexed multigraph with finitely many edges, the
+degree of every vertex $v$ equals the number of edges incident with $v$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Inc](inc.md)
-- [Degree](degree.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Incidence](inc.md)
+- [Degree in an edge-indexed multigraph](degree.md)
 
 ## Sources
 

@@ -7,11 +7,12 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Ramsey.ramsey_two_uniform
 ---
 
-# Ramsey
+# Finite Ramsey theorem for pairs
 
-Finite Ramsey theorem for pairs: for `r ≥ 1` colors and every `k` there is
-an `N` such that every coloring of 2-subsets of `Fin N` has a monochromatic
-size-`k` set.
+**Finite Ramsey theorem for pairs.** For every number of colors $r \ge 1$ and every natural
+number $k$ there is a natural number $N$ such that for every coloring of the subsets of
+$\{0, 1, \dots, N - 1\}$ with $r$ colors there are a $k$-element subset $S$ and a color $c$ such
+that every $2$-element subset of $S$ has color $c$.
 
 ## Depends on
 

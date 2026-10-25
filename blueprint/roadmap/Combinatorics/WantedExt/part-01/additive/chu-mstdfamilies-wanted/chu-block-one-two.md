@@ -12,7 +12,7 @@ lean: MetaMathlibExt.chuBlock_one_two
 
 ## Depends on
 
-- [Chu Block](chu-block.md)
+- [Chu difference block](chu-block.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isMulPiecewiseSyndetic_empty
 ---
 
-# Not is Mul Piecewise Syndetic empty
+# The empty set is not piecewise syndetic in a semigroup
 
-The empty set is not piecewise syndetic.
+**The empty set is not piecewise syndetic in a semigroup.** In every semigroup $S$, the empty
+subset of $S$ is not piecewise syndetic.
 
 ## Depends on
 
-- [Is Mul Piecewise Syndetic](is-mul-piecewise-syndetic.md)
+- [Piecewise syndetic subsets of a semigroup](is-mul-piecewise-syndetic.md)
 
 ## Sources
 

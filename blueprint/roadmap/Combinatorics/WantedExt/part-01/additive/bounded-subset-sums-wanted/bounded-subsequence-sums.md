@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.boundedSubsequenceSums
 ---
 
-# Bounded Subsequence Sums
+# Subsequence sums with a bounded number of terms
 
-The set `Σ^β_α(𝒜) = {σ(ℬ) : ℬ ⊆ 𝒜, α ≤ |ℬ| ≤ |𝒜| - β}` of subsequence sums of the
-sequence `𝒜` (a multiset) with at least `α` and at most `|𝒜| - β` terms.
+**Subsequence sums with a bounded number of terms.** For natural numbers $\alpha, \beta$ and a
+finite sequence $\mathcal{A}$ (a multiset) in an additive commutative monoid $G$,
+$\Sigma^\beta_\alpha(\mathcal{A})$ is the finite set of the sums $\sigma(\mathcal{B})$ of the
+terms of the subsequences $\mathcal{B}$ of $\mathcal{A}$ (sub-multisets) with
+$\alpha \le |\mathcal{B}|$ and $|\mathcal{B}| + \beta \le |\mathcal{A}|$, that is, with at least
+$\alpha$ and at most $|\mathcal{A}| - \beta$ terms; it is empty when $\beta > |\mathcal{A}|$.
 
 ## Depends on
 

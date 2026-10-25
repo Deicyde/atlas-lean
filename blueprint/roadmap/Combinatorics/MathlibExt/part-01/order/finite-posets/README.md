@@ -5,8 +5,8 @@ navigation: module
 
 # Finite Posets
 
-- [Is Antichain Cover Fin](is-antichain-cover-fin.md)
-- [Max Chain Size](max-chain-size.md)
-- [Min Antichain Cover Size](min-antichain-cover-size.md)
-- [Mirsky dual general](mirsky-dual-general.md)
-- [Mirsky dual](mirsky-dual.md)
+- [Finite antichain covers](is-antichain-cover-fin.md)
+- [Maximum chain size](max-chain-size.md)
+- [Minimum antichain cover size](min-antichain-cover-size.md)
+- [Dual of Dilworth's theorem](mirsky-dual-general.md)
+- [Mirsky's theorem](mirsky-dual.md)

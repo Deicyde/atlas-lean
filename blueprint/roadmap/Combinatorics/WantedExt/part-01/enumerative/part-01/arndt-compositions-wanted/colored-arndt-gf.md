@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.coloredArndtGF
 ---
 
-# Colored Arndt GF
+# Generating function of colored Arndt compositions
 
-The bivariate generating function `C(x, y) = ∑ c(n, k) xⁿ yᵏ` of colored Arndt compositions
-in `ℤ[y][[x]]`.
+**Generating function of colored Arndt compositions.** The bivariate generating function of
+colored Arndt compositions, by weight ($x$) and number of parts ($y$), is the power series
+$C(x, y) = \sum_{n \ge 0} \left(\sum_{k=0}^{n} c(n, k)\, y^k\right) x^n$ in $\mathbb{Z}[y][[x]]$,
+where $c(n, k)$ is the number of colored Arndt compositions of $n$ with $k$ parts.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Colored Arndt Count](colored-arndt-count.md)
+- [Colored Arndt compositions](colored-arndt-count.md)
 
 ## Sources
 

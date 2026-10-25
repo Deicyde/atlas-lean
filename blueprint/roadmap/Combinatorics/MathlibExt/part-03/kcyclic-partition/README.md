@@ -5,5 +5,5 @@ navigation: module
 
 # KCyclic Partition
 
-- [Truncated Succ](truncated-succ.md)
-- [Is KCyclic Partition](is-kcyclic-partition.md)
+- [Truncated-cycle successor](truncated-succ.md)
+- [$k$-cyclic partition](is-kcyclic-partition.md)

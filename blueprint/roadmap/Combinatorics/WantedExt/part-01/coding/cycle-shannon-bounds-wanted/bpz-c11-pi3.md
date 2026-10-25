@@ -5,19 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi3
 ---
 
-# Bpz C11 Pi3
+# Three-block BPZ profile for the 11-cycle
 
-BPZ's three-block eleven-cycle profile.
+**Three-block BPZ profile for the 11-cycle.** The three-block eleven-cycle profile of Buys,
+Polak and Zuiddam is the profile product $\pi_1 \star \pi_2$, where $\pi_1$ and $\pi_2$ are
+their one-block and two-block eleven-cycle profiles.
 
 ## Depends on
 
-- [BPZProfile](bpzprofile.md)
+- [BPZ profiles](bpzprofile.md)
 
 ## Proof depends on
 
-- [Star](star.md)
-- [Bpz C11 Pi1](bpz-c11-pi1.md)
-- [Bpz C11 Pi2](bpz-c11-pi2.md)
+- [Product of BPZ profiles](star.md)
+- [One-block BPZ profile for the 11-cycle](bpz-c11-pi1.md)
+- [Two-block BPZ profile for the 11-cycle](bpz-c11-pi2.md)
 
 ## Sources
 

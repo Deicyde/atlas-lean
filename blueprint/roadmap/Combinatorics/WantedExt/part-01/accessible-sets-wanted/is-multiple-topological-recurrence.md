@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsMultipleTopologicalRecurrence
 ---
 
-# Is Multiple Topological Recurrence
+# Sets of multiple topological recurrence
 
-Multiple topological recurrence means `ℓ`-topological recurrence for every
-positive `ℓ`, matching the paper's `ℓ ≥ 1` convention.
+**Sets of multiple topological recurrence.** A set $D$ of natural numbers is a set of multiple
+topological recurrence when it is a set of $\ell$-topological recurrence for every natural number
+$\ell \ge 1$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is LTopological Recurrence](is-ltopological-recurrence.md)
+- [Sets of $\ell$-topological recurrence](is-ltopological-recurrence.md)
 
 ## Sources
 

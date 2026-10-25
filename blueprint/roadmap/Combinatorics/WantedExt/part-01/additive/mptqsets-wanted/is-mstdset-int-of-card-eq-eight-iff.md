@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isMSTDSet_int_of_card_eq_eight_iff
 ---
 
-# Is MSTDSet int of card eq eight iff
+# Hegarty's classification of MSTD sets of size eight
 
-Theorem 1 (quoting Hegarty), size 8: a set of eight integers is an MSTD set exactly when
-it is an affine image `a S + b` (`a ≠ 0`) of `S = {0, 2, 3, 4, 7, 11, 12, 14}`.
+**Hegarty's classification of MSTD sets of size eight.** Let $A$ be a set of eight integers,
+regarded as a set of real numbers, and let $S = \{0, 2, 3, 4, 7, 11, 12, 14\}$. Then $A$ is an
+MSTD set if and only if $A = \{as + b : s \in S\}$ for some integers $a \neq 0$ and $b$.
 
 ## Depends on
 
-- [Is MSTDSet](../union-two-apnot-mstdwanted/is-mstdset.md)
+- [MSTD set](../union-two-apnot-mstdwanted/is-mstdset.md)
 
 ## Sources
 

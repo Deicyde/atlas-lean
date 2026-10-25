@@ -7,15 +7,33 @@ proof: formalized
 lean: MetaMathlibExt.catalan_transform_pair
 ---
 
-# Catalan Transform Pair
+# Barry's Catalan transform and its inverse
 
-Catalan transform pair and its inverse: the double-sum formula for the
-Catalan transform `b` of a sequence `a` implies two single-sum forms for `b`
-(for `0 < n`) and two inversion formulas recovering `a` from `b`.
+**Barry's Catalan transform and its inverse.** Let $a, b \colon \mathbb{N} \to \mathbb{Q}$ be
+sequences such that, for every $n \ge 0$,
 
-The sums range over `Finset.range (n + 1)` for both binders; terms with
-`j > k` vanish since `Nat.choose k j = 0` there. The `⌊n/2⌋` bound is
-`Finset.range (n / 2 + 1)`
+$$b_n = \sum_{j=0}^{n} \sum_{k=0}^{n} \frac{2k+1}{n+k+1} (-1)^{k-j}
+\binom{2n}{n-k} \binom{k}{j} a_j.$$
+
+Then for every $n \ge 1$ both
+
+$$b_n = \sum_{k=0}^{n} \frac{k}{2n-k} \binom{2n-k}{n-k} a_k$$
+
+and
+
+$$b_n = \sum_{k=0}^{n} \frac{k}{n} \binom{2n-k-1}{n-k} a_k$$
+
+hold, and for every $n \ge 0$ both
+
+$$a_n = \sum_{k=0}^{\lfloor n/2 \rfloor} (-1)^k \binom{n-k}{k} b_{n-k}$$
+
+and
+
+$$a_n = \sum_{k=0}^{n} (-1)^{n-k} \binom{k}{n-k} b_k$$
+
+hold.
+
+In the hypothesis, the terms with $j > k$ vanish because $\binom{k}{j} = 0$ there.
 
 ## Depends on
 

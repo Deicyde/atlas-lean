@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.powMap_component_unique_cycle
 ---
 
-# Pow Map component unique cycle
+# Each component of the power digraph has exactly one cycle
 
-Every component of the digraph `G^k_p` of `a ↦ a ^ k` on `ℤ/pℤ` contains exactly one
-cycle: every vertex reaches a cycle vertex, and two cycle vertices in the same component lie
-on one orbit.
+**Each component of the power digraph has exactly one cycle.** Let $p$ be a prime and $k$ a
+natural number, and let $G^k_p$ be the digraph on $\mathbb{Z}/p\mathbb{Z}$ with edges
+$a \to a^k$, so that $m$ steps lead from $a$ to $a^{k^m}$. Call $a$ a cycle vertex if
+$a^{k^r} = a$ for some $r > 0$, and say that $a$ and $b$ lie in the same component if
+$a^{k^m} = b^{k^n}$ for some $m, n \ge 0$. Then every $a$ has a cycle vertex $a^{k^m}$ among its
+iterates, and if two cycle vertices $a$ and $b$ lie in the same component, then $b = a^{k^m}$
+for some $m \ge 0$. Thus every component of $G^k_p$ contains exactly one cycle.
 
 ## Depends on
 

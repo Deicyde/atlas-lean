@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.largestSumFreeCard_univ_eq
 ---
 
-# Diananda-Yap and Green-Ruzsa
+# Diananda–Yap and Green–Ruzsa theorem
 
-**Diananda-Yap and Green-Ruzsa.** The largest sum-free subset of a finite abelian group
-`G` of order `n` has size `μ(G) = n (1/3 + 1/(3p))` if `G` is of type `I(p)`, `n/3` if `G` is of
-type `II` (no prime `≡ 2 (mod 3)` divides `n`, but `3 ∣ n`), and `n (1/3 - 1/(3m))` with `m` the
-exponent of `G` if `G` is of type `III` (otherwise). Values compared in `ℚ`. Quoted in the
-paper from Diananda-Yap and Green-Ruzsa.
+**Diananda–Yap and Green–Ruzsa theorem.** Let $G$ be a finite abelian group of order $n$, and
+let $\mu(G)$ be the largest size of a sum-free subset of $G$. If $G$ is of type $\mathrm{I}(p)$
+for a natural number $p$, then $\mu(G) = n\left(\frac{1}{3} + \frac{1}{3p}\right)$. If no prime
+$q \equiv 2 \pmod 3$ divides $n$ and $3 \mid n$ (type $\mathrm{II}$), then $\mu(G) = n/3$. If no
+prime $q \equiv 2 \pmod 3$ divides $n$ and $3 \nmid n$ (type $\mathrm{III}$), then
+$\mu(G) = n\left(\frac{1}{3} - \frac{1}{3m}\right)$, where $m$ is the exponent of $G$.
+
+The paper quotes this result from Diananda–Yap and Green–Ruzsa.
 
 ## Depends on
 
-- [Is Type One Group](is-type-one-group.md)
-- [Largest Sum Free Card](largest-sum-free-card.md)
+- [Groups of type I(p)](is-type-one-group.md)
+- [Size of a largest sum-free subset](largest-sum-free-card.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.interval_erase_add_sub
 ---
 
-# Interval erase add sub
+# Sums and differences of an interval with one point removed
 
-Lemma 1 (quoted from Nathanson): for `m ≥ 4` and `2 ≤ r ≤ m - 3`, the set
-`B = [0, m - 1] ∖ {r}` has `B + B = [0, 2m - 2]` and `B - B = [-(m - 1), m - 1]`.
+**Sums and differences of an interval with one point removed.** Let $m$ and $r$ be integers
+with $m \ge 4$ and $2 \le r \le m - 3$, and let $B = \{0, 1, \dots, m - 1\} \setminus \{r\}$. Then
+the sumset $B + B = \{b + b' : b, b' \in B\}$ is $\{0, 1, \dots, 2m - 2\}$ and the difference set
+$B - B = \{b - b' : b, b' \in B\}$ is the set of integers from $-(m - 1)$ to $m - 1$.
 
 ## Depends on
 

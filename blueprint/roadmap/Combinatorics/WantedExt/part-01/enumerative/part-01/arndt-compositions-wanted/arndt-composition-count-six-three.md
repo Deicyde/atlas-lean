@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.arndtCompositionCount_six_three
 ---
 
-# Arndt Composition Count six three
+# Arndt compositions of 6 with three parts
 
-The Arndt compositions of `6` with three parts are `(4,1,1)`, `(3,2,1)`, `(3,1,2)`,
-`(2,1,3)`.
+**Arndt compositions of 6 with three parts.** There are exactly $4$ Arndt compositions of $6$
+with three parts.
+
+They are $(4, 1, 1)$, $(3, 2, 1)$, $(3, 1, 2)$ and $(2, 1, 3)$.
 
 ## Depends on
 
-- [Arndt Composition Count](arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](arndt-composition-count.md)
 
 ## Sources
 

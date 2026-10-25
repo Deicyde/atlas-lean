@@ -5,12 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.opxD_dilate_le
 ---
 
-# Opx D dilate le
+# Dilation bound for the d-dimensional continuous Turán number
 
-Lemma 5.10: let `P ⊆ ℝ^d` be finite with all gaps between consecutive distinct values of each
-coordinate in `[c₁, c₂]`, `c₁ > 0`, and `P' = qP`, `q > 1`. Then
-`opx(n, P', d) ≤ (⌈qc₂/c₁⌉ + 1)^d opx(⌈⌈n/c₁⌉ / (⌈qc₂/c₁⌉ + 1)⌉ c₁, P, d)` for `n > 0`. Read from
-the primary text (the extracted record's display is garbled).
+**Dilation bound for the d-dimensional continuous Turán number.** Let $d$ be a natural
+number, let $P \subseteq \mathbb{R}^d$ be finite and let $c_1, c_2, q, n$ be real numbers with
+$c_1 > 0$, $q > 1$ and $n > 0$. Suppose that for every coordinate $i$ and all $p, p' \in P$ with
+$p_i < p'_i$ such that no $r \in P$ has $p_i < r_i < p'_i$, we have
+$c_1 \le p'_i - p_i \le c_2$. Let $qP = \{q p : p \in P\}$ and
+$m = \lceil q c_2 / c_1 \rceil + 1$. Then the $d$-dimensional continuous Turán number
+$\mathrm{opx}$ satisfies
+
+$$
+\mathrm{opx}(n, qP, d) \le
+m^d \, \mathrm{opx}(\lceil \lceil n / c_1 \rceil / m \rceil \, c_1, P, d).
+$$
 
 ## Depends on
 

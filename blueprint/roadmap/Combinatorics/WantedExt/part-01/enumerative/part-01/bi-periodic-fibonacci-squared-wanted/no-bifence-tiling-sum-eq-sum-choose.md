@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.noBifenceTilingSum_eq_sum_choose
 ---
 
-# No Bifence Tiling Sum eq sum choose
+# Closed formula for bifence-free fence tilings
 
-Lemma 3.15: for nonzero `a`, `b`, the weighted number `C_n` of tilings with no bifence is
-`(a/b)^{ξ(n)} ∑_{i=0}^{⌊2n/3⌋} C(2n-2i, i) (ab)^{n-i}`.
+**Closed formula for bifence-free fence tilings.** Let $a$, $b$ be nonzero elements of a field
+and let $\xi(n) = n \bmod 2$. For every natural number $n$, the weighted number $C_n$ of tilings of
+the $n$-board by half-squares and $(1/2, 1/2)$-fences with no bifence, with half-square weights
+$a$ and $b$, is
+
+$$
+C_n = \left(\frac{a}{b}\right)^{\xi(n)}
+\sum_{i=0}^{\lfloor 2n/3 \rfloor} \binom{2n-2i}{i} (ab)^{n-i}.
+$$
 
 ## Depends on
 
-- [No Bifence Tiling Sum](no-bifence-tiling-sum.md)
+- [Weighted count of bifence-free fence tilings](no-bifence-tiling-sum.md)
 
 ## Sources
 

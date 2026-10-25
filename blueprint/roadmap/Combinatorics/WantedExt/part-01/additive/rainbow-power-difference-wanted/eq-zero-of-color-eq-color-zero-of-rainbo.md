@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.eq_zero_of_color_eq_color_zero_of_rainbowFree_powDiff
 ---
 
-# Eq zero of color eq color zero of rainbow Free pow Diff
+# Zero has a color class of its own
 
-In an exact rainbow-free 3-coloring of `ℤ/pℤ` for `x - y = z ^ k`, `0` is the only element
-of its color class.
+**Zero has a color class of its own.** Let $p$ be a prime and $k$ a natural number, and let $c$
+be a coloring of $\mathbb{Z}/p\mathbb{Z}$ with three colors that uses every color and is
+rainbow-free for $x - y = z^k$: no $x, y, z \in \mathbb{Z}/p\mathbb{Z}$ with $x - y = z^k$ have
+$c(x), c(y), c(z)$ pairwise distinct. If $a \in \mathbb{Z}/p\mathbb{Z}$ satisfies $c(a) = c(0)$,
+then $a = 0$.
 
 ## Depends on
 

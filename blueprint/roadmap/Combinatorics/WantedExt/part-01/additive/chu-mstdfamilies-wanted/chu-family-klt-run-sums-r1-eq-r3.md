@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.chuFamilyKLT_run_sums_R1_eq_R3
 ---
 
-# Chu Family KLT run sums R1 eq R3
+# Two families of runs with the same sums (Proposition 1)
 
-Proposition 1: in the set of Lemma 2, the runs
-`(R₁) = 1, 1, (2, M^k, …, M^k, 1, 1) × j` and `(R₃) = 2, (M^k, …, M^k, 1, 1, 2) × j`
-(`j ∈ [1, t]`, each `M^k, …, M^k` with `l` copies, read from the paper's display) give the same
-elements of `(A - A)⁺`, that is, the same set of run sums. The paper's `k, l, t ≥ 1` are not
-needed.
+**Two families of runs with the same sums (Proposition 1).** Let $k$, $l$, $t$ be natural
+numbers, let $M^k$ be the block $1, 4, \dots, 4, 3$ with $k$ fours, and let $B$ be the
+concatenation of $l$ copies of $M^k$. For $j \ge 1$ let $R_1(j)$ be the sequence $1, 1$ followed
+by $j$ copies of $2, B, 1, 1$, and let $R_3(j)$ be the sequence $2$ followed by $j$ copies of
+$B, 1, 1, 2$. Then the sums of the entries of $R_1(j)$ for $1 \le j \le t$ form the same set as
+the sums of the entries of $R_3(j)$ for $1 \le j \le t$.
+
+In the paper, $R_1$ and $R_3$ are runs of consecutive differences of the set of Lemma 2, so
+they give the same positive differences of that set. The paper's hypothesis $k, l, t \ge 1$ is
+not needed.
 
 ## Depends on
 
-- [Chu Block](chu-block.md)
+- [Chu difference block](chu-block.md)
 
 ## Sources
 

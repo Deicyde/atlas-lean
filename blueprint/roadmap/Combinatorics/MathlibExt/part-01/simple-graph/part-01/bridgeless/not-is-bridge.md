@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.IsBridgeless.not_isBridge
 ---
 
-# Not is Bridge
+# Edges of a bridgeless graph are not bridges
 
-Every edge of a bridgeless graph is not a bridge.
+**Edges of a bridgeless graph are not bridges.** Every edge of a bridgeless graph is not a
+bridge.
 
 ## Depends on
 
-- [Is Bridgeless](is-bridgeless.md)
+- [Bridgeless graph](is-bridgeless.md)
 
 ## Sources
 

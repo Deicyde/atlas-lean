@@ -6,17 +6,18 @@ proof: formalized
 lean: SimpleGraph.exists_isIndepDominating
 ---
 
-# Exists is Indep Dominating
+# Existence of independent dominating sets
 
-Every finite graph has an independent dominating set.
+**Existence of independent dominating sets.** Every finite graph has an independent dominating
+set.
 
 ## Depends on
 
-- [Is Indep Dominating](is-indep-dominating.md)
+- [Independent dominating set](is-indep-dominating.md)
 
 ## Proof depends on
 
-- [Is Dominating](is-dominating.md)
+- [Dominating set](is-dominating.md)
 
 ## Sources
 

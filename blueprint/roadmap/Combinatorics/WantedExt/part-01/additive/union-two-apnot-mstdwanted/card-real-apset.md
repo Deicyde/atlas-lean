@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.card_realAPSet
 ---
 
-# Card real APSet
+# Size of the progression $J(x, m, d)$
 
-`J(x, m, d)` has `m + 1` elements when `d ≠ 0`.
+**Size of the progression $J(x, m, d)$.** For a real number $x$, a natural number $m$ and a
+real number $d \ne 0$, the progression $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$ has exactly
+$m + 1$ elements.
 
 ## Depends on
 
-- [Real APSet](real-apset.md)
+- [Finite arithmetic progression](real-apset.md)
 
 ## Sources
 

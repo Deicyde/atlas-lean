@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.permEGF_q_eq_pow
 ---
 
-# Perm EGF q eq pow
+# Brenti's excedance and cycle generating function
 
-Corollary 44 (Brenti): the `q`-analogue (`q` marking cycles) of the excedance
-generating function over all permutations is `A(q,x,u) = (A(x,u))^q`, the power read as
-`exp(q ln A(x,u))`: for every `L` with `L(0) = 0` and `exp L = A(x,u)`,
-`A(q,x,u) = exp(q L)`.
+**Brenti's excedance and cycle generating function.** Let $R$ be a commutative
+$\mathbb{Q}$-algebra and $x, q \in R$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ let
+$e(\sigma)$ be the number of $i$ with $\sigma(i) > i$ and $c(\sigma)$ the number of cycles of
+$\sigma$, fixed points included. Let
+$A(q,x,u) = \sum_{n \ge 0} \frac{u^n}{n!} \sum_{\sigma} x^{e(\sigma)} q^{c(\sigma)} \in R[[u]]$,
+the inner sum over all permutations $\sigma$ of $\{0, \dots, n-1\}$, and $A(x,u) = A(1,x,u)$. If
+$L \in R[[u]]$ has zero constant term and $\exp(L) = A(x,u)$, where
+$\exp(F) = \sum_{m \ge 0} F^m/m!$, then $A(q,x,u) = \exp(qL)$.
 
 ## Depends on
 
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

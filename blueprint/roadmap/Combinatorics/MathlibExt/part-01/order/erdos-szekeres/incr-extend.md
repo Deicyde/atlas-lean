@@ -7,22 +7,26 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.incrExtend
 ---
 
-# Incr Extend
+# Extending an increasing subsequence
 
-Extend an increasing subsequence ending at `q` by appending `p` after it.
+**Extending an increasing subsequence.** Let $f : \{0, \dots, N-1\} \to \mathbb{R}$, let
+$k \ge 1$, and let $\varphi$ be an increasing subsequence of $f$ of length $k$ (indices and values
+strictly increasing) with last index $\varphi(k-1) = q$. If $p \in \{0, \dots, N-1\}$ satisfies
+$q < p$ and $f(q) < f(p)$, then $f$ has an increasing subsequence of length $k + 1$ ending at
+$p$.
 
 ## Depends on
 
-- [Is Incr End](is-incr-end.md)
-- [Is Incr Subseq](is-incr-subseq.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Increasing subsequence ending at a position](is-incr-end.md)
+- [Increasing subsequence](is-incr-subseq.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Proof depends on
 
-- [Extend Map](extend-map.md)
-- [Extend last](extend-last.md)
-- [Idx le last](idx-le-last.md)
-- [Val le last incr](val-le-last-incr.md)
+- [Appending an entry to a map of indices](extend-map.md)
+- [The last entry of an appended map](extend-last.md)
+- [Entries of a strictly increasing index map lie at or below its last entry](idx-le-last.md)
+- [The last value is the largest along a strictly increasing selection](val-le-last-incr.md)
 
 ## Sources
 

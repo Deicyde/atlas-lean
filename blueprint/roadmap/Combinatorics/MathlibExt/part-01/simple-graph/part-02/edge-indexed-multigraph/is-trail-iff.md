@@ -7,16 +7,17 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.isTrail_iff
 ---
 
-# Is Trail iff
+# Characterization of indexed trails
 
-An indexed walk is a trail exactly when its edge list has no duplicates.
+**Characterization of indexed trails.** An indexed walk is a trail exactly when its edge
+list has no duplicates.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Indexed Walk](indexed-walk.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Indexed walk](indexed-walk.md)
 - [Is Trail](is-trail.md)
-- [Edges](edges.md)
+- [Edge list of an indexed walk](edges.md)
 
 ## Sources
 

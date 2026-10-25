@@ -5,10 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.pow_sub_descPochhammer_eq_sum_choose
 ---
 
-# Pow sub desc Pochhammer eq sum choose
+# Sabar's identity for complex arguments
 
-For `p ≥ 1` and complex `z`: `z^p - z^{\underline{p}} = ∑_{k=0}^{p-1} (-1)^{p-k-1} k^p C(z, k)
-C(z-k-1, p-k-1)` (Sabar's formula for `z = n ≥ p`, extended to complex `z`).
+**Sabar's identity for complex arguments.** For a complex number $w$ and a natural number $j$
+write $\binom{w}{j} = w(w-1)\cdots(w-j+1)/j!$. For every natural number $p \ge 1$ and every
+complex number $z$,
+
+$$
+z^p - z(z-1)\cdots(z-p+1) =
+\sum_{k=0}^{p-1} (-1)^{p-k-1} k^p \binom{z}{k} \binom{z-k-1}{p-k-1}.
+$$
+
+Sabar proved this formula for natural numbers $z = n \ge p$; here it is extended to complex $z$.
 
 ## Depends on
 

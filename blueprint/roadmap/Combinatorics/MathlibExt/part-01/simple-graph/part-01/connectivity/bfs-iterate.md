@@ -6,9 +6,12 @@ statement: formalized
 lean: SimpleGraph.bfsIterate
 ---
 
-# Bfs Iterate
+# Breadth-first search with a round limit
 
-Iterate `G.bfsStep` at most `n` times, stopping as soon as no new vertex shows up.
+**Breadth-first search with a round limit.** For a simple graph $G$ on a finite vertex set,
+a natural number $n$ and a set $s$ of vertices, this applies rounds of breadth-first search to
+$s$ (each round adds all neighbours of the current vertices), stopping after $n$ rounds or as
+soon as a round adds no new vertex, whichever comes first, and returns the resulting set.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bfs Step](bfs-step.md)
+- [One round of breadth-first search](bfs-step.md)
 
 ## Sources
 

@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.firstPoints_excedance_cycle_sum_neg_succ
 ---
 
-# First Points excedance cycle sum neg succ
+# Signed excedance sum with weight $-(s+1)$ over permutations with separated first points
 
-Corollary 49: for `n ≥ 1`, summing over permutations of `n + s` objects whose first `s`
-points lie in distinct cycles,
-`∑ x^{e(σ)} (-s-1)^{c(σ)} = (-1)^s (s+1)^s (x s^n - (s+1)^n) (x-1)^{n-1}`. Restricted to
-`n ≥ 1`, where `(x-1)^{n-1}` is a polynomial.
+**Signed excedance sum with weight $-(s+1)$ over permutations with separated first points.**
+Let $R$ be a commutative ring, $x \in R$ and $n \ge 1$, $s \ge 0$ integers. For a permutation
+$\sigma$ write $e(\sigma)$ for its number of excedances (points $i$ with $\sigma(i) > i$) and
+$c(\sigma)$ for its number of cycles, fixed points included. Summing over the permutations
+$\sigma$ of $\{0, \dots, n+s-1\}$ in which the points $0, \dots, s-1$ lie in pairwise distinct
+cycles,
+$\sum_{\sigma} x^{e(\sigma)} (-(s+1))^{c(\sigma)} = (-1)^s (s+1)^s (x s^n - (s+1)^n) (x-1)^{n-1}$.
+
+The hypothesis $n \ge 1$ makes $(x-1)^{n-1}$ a polynomial.
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 
 ## Sources
 

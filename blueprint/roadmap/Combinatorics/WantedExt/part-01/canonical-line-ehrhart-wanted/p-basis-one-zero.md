@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.pBasis_one_zero
 ---
 
-# P Basis one zero
+# The basis polynomial $p^1_0$
 
-The first symmetric basis polynomial is `p¹₀ = 2X + 1`.
+**The basis polynomial $p^1_0$.** The symmetric basis polynomial $p^1_0$ equals the complex
+polynomial $2X + 1$.
 
 ## Depends on
 
-- [P Basis](p-basis.md)
+- [Symmetric basis polynomials](p-basis.md)
 
 ## Proof depends on
 
-- [B Basis](b-basis.md)
+- [The basis polynomials $b^d_j$](b-basis.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isMulJSet_empty
 ---
 
-# Not is Mul JSet empty
+# The empty set is not a J-set in a nonempty semigroup
 
-In a nonempty semigroup the empty set is not a `J`-set.
+**The empty set is not a J-set in a nonempty semigroup.** If $S$ is a nonempty semigroup, then
+the empty subset of $S$ is not a $J$-set.
 
 ## Depends on
 
-- [Is Mul JSet](is-mul-jset.md)
+- [J-sets in a semigroup](is-mul-jset.md)
 
 ## Sources
 

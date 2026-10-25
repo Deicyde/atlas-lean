@@ -7,14 +7,17 @@ proof: formalized
 lean: SimpleGraph.IsCExpander.small_expansion
 ---
 
-# Small expansion
+# Small sets expand in a $C$-expander
 
-Small-set expansion clause of a `C`-expander.
+**Small sets expand in a $C$-expander.** Let $C$ be a real number and let $G$ be a
+$C$-expander on a finite vertex set $V$. Then every set $A \subseteq V$ with $|A| < |V|/(2C)$ has
+at least $C|A|$ external neighbours, that is, at least $C|A|$ vertices outside $A$ are adjacent to
+some vertex of $A$.
 
 ## Depends on
 
-- [Is CExpander](is-cexpander.md)
-- [External Neighbor Set](external-neighbor-set.md)
+- [C-expander](is-cexpander.md)
+- [External neighbourhood](external-neighbor-set.md)
 
 ## Sources
 

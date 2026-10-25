@@ -7,14 +7,17 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.NashWilliamsWanted.nash_williams_arboricity
 ---
 
-# Nash williams arboricity
+# Nash–Williams arboricity theorem
 
-Nash–Williams arboricity: a finite graph's edges can be partitioned into `k` forests iff every
-nonempty `U` spans at most `k * (|U| - 1)` edges.
+**Nash–Williams arboricity theorem.** Let $G$ be a simple graph on a finite vertex set $V$ and let
+$k$ be a natural number. Then $G$ has an arboricity coloring with $k$ labels, that is, its edges
+can be labeled with $k$ labels so that the edges of each label form a forest, if and only if for
+every nonempty set $U \subseteq V$, the number of edges of $G$ with both endpoints in $U$ is at
+most $k(|U| - 1)$.
 
 ## Depends on
 
-- [Is Arboricity Coloring](is-arboricity-coloring.md)
+- [Arboricity colorings](is-arboricity-coloring.md)
 
 ## Sources
 

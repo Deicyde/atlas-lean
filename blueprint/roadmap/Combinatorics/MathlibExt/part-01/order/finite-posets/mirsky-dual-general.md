@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.FinitePosets.mirsky_dual_general
 ---
 
-# Mirsky dual general
+# Dual of Dilworth's theorem
 
-In a finite poset max chain size equals min antichain-cover size.
+**Dual of Dilworth's theorem.** For every finite partially ordered set $\alpha$, the maximum
+chain size of $\alpha$ equals its minimum antichain cover size: the largest cardinality of a chain
+in $\alpha$ equals the smallest number of antichains whose union is $\alpha$.
 
 ## Depends on
 
-- [Max Chain Size](max-chain-size.md)
-- [Min Antichain Cover Size](min-antichain-cover-size.md)
+- [Maximum chain size](max-chain-size.md)
+- [Minimum antichain cover size](min-antichain-cover-size.md)
 
 ## Proof depends on
 
-- [Is Antichain Cover Fin](is-antichain-cover-fin.md)
+- [Finite antichain covers](is-antichain-cover-fin.md)
 
 ## Sources
 

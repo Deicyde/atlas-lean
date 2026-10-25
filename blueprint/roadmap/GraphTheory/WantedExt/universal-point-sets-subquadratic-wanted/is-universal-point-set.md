@@ -17,7 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Is Straight Line Planar Embedding](is-straight-line-planar-embedding.md)
-- [Is Planar](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-03/planarity/is-planar.md)
+- [Straight-line planar graph](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-03/planarity/is-planar.md)
 
 ## Sources
 

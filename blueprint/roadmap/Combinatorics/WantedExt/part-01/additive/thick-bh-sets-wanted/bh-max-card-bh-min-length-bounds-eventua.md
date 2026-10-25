@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.bhMaxCard_bhMinLength_bounds_eventually
 ---
 
-# Theorem 5(c)
+# Eventual bounds for $R_h(n)$ and $R_h^{-1}(k)$
 
-**Theorem 5(c).** For `h ≥ 2`, for all sufficiently large `n`,
-`R_h(n) ≥ n^(1/h) - n^(21/(40h))`, and for all sufficiently large `k`,
-`R_h⁻¹(k) ≤ k^h + 2^h k^(h - 19/40)`.
+**Eventual bounds for $R_h(n)$ and $R_h^{-1}(k)$.** Let $h \ge 2$. Write $R_h(n)$ for the
+largest size of a $B_h$-set contained in $\{1, \dots, n\}$ and $R_h^{-1}(k)$ for the least $n$
+such that $\{1, \dots, n\}$ contains a $B_h$-set with $k$ elements. Then
+$R_h(n) \ge n^{1/h} - n^{21/(40h)}$ for all sufficiently large natural numbers $n$, and
+$R_h^{-1}(k) \le k^h + 2^h k^{h - 19/40}$ for all sufficiently large natural numbers $k$.
 
 ## Depends on
 
-- [Bh Max Card](bh-max-card.md)
-- [Bh Min Length](bh-min-length.md)
+- [Maximum size of a $B_h$-set in $\{1, \dots, n\}$](bh-max-card.md)
+- [Shortest interval containing a $B_h$-set of given size](bh-min-length.md)
 
 ## Sources
 

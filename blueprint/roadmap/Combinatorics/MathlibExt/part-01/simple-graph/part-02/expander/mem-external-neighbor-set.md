@@ -7,13 +7,15 @@ proof: formalized
 lean: SimpleGraph.mem_externalNeighborSet
 ---
 
-# Mem external Neighbor Set
+# Membership in the external neighbourhood
 
-Membership characterization for the external neighbourhood set.
+**Membership in the external neighbourhood.** Let $G$ be a simple graph on a vertex set
+$V$, let $A \subseteq V$ and let $v \in V$. Then $v$ lies in the external neighbourhood of $A$
+in $G$ if and only if $v \notin A$ and $v$ is adjacent in $G$ to some vertex $a \in A$.
 
 ## Depends on
 
-- [External Neighbor Set](external-neighbor-set.md)
+- [External neighbourhood](external-neighbor-set.md)
 
 ## Sources
 

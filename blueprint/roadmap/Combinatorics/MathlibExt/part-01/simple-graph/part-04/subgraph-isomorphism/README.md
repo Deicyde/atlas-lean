@@ -4,5 +4,5 @@ navigation: module
 
 # Subgraph Isomorphism
 
-- [Is Unique Subgraph](is-unique-subgraph.md)
-- [Unique Subgraph Count](unique-subgraph-count.md)
+- [Unique subgraph](is-unique-subgraph.md)
+- [Number of unique subgraphs](unique-subgraph-count.md)

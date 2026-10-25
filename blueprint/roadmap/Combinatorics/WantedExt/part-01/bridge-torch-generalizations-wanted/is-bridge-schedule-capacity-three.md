@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.isBridgeSchedule_capacity_three
 ---
 
-# Is Bridge Schedule capacity three
+# One crossing of three people under capacities two and three
 
-Crossing with `3 > c` people is invalid: `{1,2,3} → R` is not a schedule for
-capacity `2`, but it is one for capacity `3`.
+**One crossing of three people under capacities two and three.** For the people $1, 2, 3$,
+the single forward crossing $\{1, 2, 3\}$ is not a schedule on a bridge of capacity $2$, but it
+is a schedule on a bridge of capacity $3$.
 
 ## Depends on
 
-- [Is Bridge Schedule](is-bridge-schedule.md)
+- [Bridge schedules](is-bridge-schedule.md)
 
 ## Proof depends on
 

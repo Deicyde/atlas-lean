@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.osat
 ---
 
-# Osat
+# Saturation function for continuous patterns
 
-The saturation function `osat(n, P)`: the infimum of `μ₂(S)` over open sets `S` saturating for
-`P` in `[0, n]²` (`sInf ∅ = 0`; the paper leaves `osat(n, P)` undefined when no saturating set
-exists).
+**Saturation function for continuous patterns.** For a real number $n$ and a set
+$P \subseteq \mathbb{R}^2$, call an open set $S \subseteq [0, n]^2$ saturating for $P$ if $S$
+does not contain $P$ but every open set $S' \subseteq [0, n]^2$ properly containing $S$ contains
+$P$ (containment in the sense of point-set pattern containment). The saturation function
+$\operatorname{osat}(n, P)$ is the infimum of the Lebesgue measures $\mu_2(S)$ over all sets $S$
+saturating for $P$, and is $0$ when no saturating set exists.
+
+The paper leaves $\operatorname{osat}(n, P)$ undefined when no saturating set exists.
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Opx Saturating](is-opx-saturating.md)
+- [Saturating sets for a point pattern](is-opx-saturating.md)
 
 ## Sources
 

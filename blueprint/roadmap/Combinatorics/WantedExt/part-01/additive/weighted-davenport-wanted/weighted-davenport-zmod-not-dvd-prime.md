@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport_zmod_not_dvd_prime
 ---
 
-# Weighted Davenport zmod not dvd prime
+# Weighted Davenport constant of $\mathbb{Z}/n\mathbb{Z}$ for the weights prime to $p$
 
-Xia's theorem: for a prime `p` and `k = v_p(n)`, the weight set
-`A = {a ∈ [1, n-1] : a ≢ 0 (mod p)}` has `D_A(Z_n) = k + 1`. The hypothesis `p ∣ n` is
-added: the residue condition is a condition on `Z_n` only when `p ∣ n`, and without it
-the claim fails (`n = 10`, `p = 3`: `k = 0` but `D_A(Z_10) = 2`).
+**Weighted Davenport constant of $\mathbb{Z}/n\mathbb{Z}$ for the weights prime to $p$.** Let
+$n$ be a positive integer, $p$ a prime dividing $n$ and $k = v_p(n)$ the exponent of $p$ in $n$.
+For the weight set $A = \{a \in \{1, \dots, n - 1\} : p \nmid a\}$, the $A$-weighted Davenport
+constant of $\mathbb{Z}/n\mathbb{Z}$ is $D_A(\mathbb{Z}/n\mathbb{Z}) = k + 1$.
+
+This is Xia's theorem. Without the hypothesis $p \mid n$ the formula fails: for $n = 10$ and
+$p = 3$ one has $v_3(10) = 0$ but $D_A(\mathbb{Z}/10\mathbb{Z}) = 2$.
 
 ## Depends on
 

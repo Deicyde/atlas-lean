@@ -6,14 +6,16 @@ proof: formalized
 lean: SimpleGraph.dominationNumber_le_card
 ---
 
-# Domination Number le card
+# Dominating sets are at least as large as the domination number
 
-Every dominating set has size at least the domination number.
+**Dominating sets are at least as large as the domination number.** Let $G$ be a simple graph
+on a finite vertex set. If $S$ is a dominating set of $G$, then the domination number of $G$ is at
+most the number of elements of $S$.
 
 ## Depends on
 
-- [Is Dominating](is-dominating.md)
-- [Domination Number](domination-number.md)
+- [Dominating set](is-dominating.md)
+- [Domination number](domination-number.md)
 
 ## Sources
 

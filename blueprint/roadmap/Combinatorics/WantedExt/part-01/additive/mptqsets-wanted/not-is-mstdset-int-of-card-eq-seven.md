@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_int_of_card_eq_seven
 ---
 
-# Not is MSTDSet int of card eq seven
+# Hegarty: no seven-element MSTD set of integers
 
-Theorem 1 (quoting Hegarty), size 7: no set of seven integers is an MSTD set.
+**Hegarty: no seven-element MSTD set of integers.** No set of seven integers, viewed as a set
+of real numbers, is an MSTD set.
 
 ## Depends on
 
-- [Is MSTDSet](../union-two-apnot-mstdwanted/is-mstdset.md)
+- [MSTD set](../union-two-apnot-mstdwanted/is-mstdset.md)
 
 ## Sources
 

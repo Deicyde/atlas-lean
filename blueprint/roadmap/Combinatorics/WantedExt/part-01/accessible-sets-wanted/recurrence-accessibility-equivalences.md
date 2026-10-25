@@ -5,22 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.recurrence_accessibility_equivalences
 ---
 
-# Recurrence accessibility equivalences
+# Topological recurrence, accessibility and chromatic intersectivity
 
-For a positive set `D`, topological recurrence, arbitrarily long integer
-`D`-diffsequences returning every nonempty open set in every minimal system,
-accessibility, and chromatic intersectivity are pairwise equivalent.  The
-second clause uses integer sequence entries and integer homeomorphism powers;
-the fourth retains the ordered difference `a-b`.
+**Topological recurrence, accessibility and chromatic intersectivity.** Let $D$ be a set
+of positive integers. Say that $D$ has *diffsequence recurrence* if for every compact metric
+space $X$, every minimal homeomorphism $T$ of $X$, every nonempty open set $U \subseteq X$ and
+every $k \ge 1$ there are integers $s_1, \dots, s_k$ forming a $D$-diffsequence such that
+$U \cap T^{-s_1}U \cap \dots \cap T^{-s_k}U$ is nonempty, where $T^{-s}U$ is the preimage of $U$
+under the integer power $T^s$. Then the following are equivalent: $D$ is a set of topological
+recurrence; $D$ has diffsequence recurrence; $D$ is accessible; $D$ is chromatically
+intersective.
 
 ## Depends on
 
-- [Is Accessible](is-accessible.md)
-- [Is Chromatically Intersective](is-chromatically-intersective.md)
-- [Is DDiff Sequence](is-ddiff-sequence.md)
-- [Is Minimal System](is-minimal-system.md)
-- [Is Topological Recurrence](is-topological-recurrence.md)
-- [Iterate Preimage](iterate-preimage.md)
+- [Accessible sets](is-accessible.md)
+- [Chromatically intersective sets](is-chromatically-intersective.md)
+- [$D$-diffsequences](is-ddiff-sequence.md)
+- [Minimal system](is-minimal-system.md)
+- [Sets of topological recurrence](is-topological-recurrence.md)
+- [Iterated preimage](iterate-preimage.md)
 
 ## Sources
 

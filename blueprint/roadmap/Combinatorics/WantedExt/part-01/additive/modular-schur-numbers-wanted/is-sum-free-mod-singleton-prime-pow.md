@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isSumFreeMod_singleton_prime_pow
 ---
 
-# Is Sum Free Mod singleton prime pow
+# Singletons are sum-free modulo a prime power
 
-For a prime `p`, positive `i, l` with `l ≢ 1 (mod p)`, and `a ≢ 0 (mod p^i)`: the
-singleton `{a}` is `l`-sum-free modulo `p^i`.
+**Singletons are sum-free modulo a prime power.** Let $p$ be a prime, let $i$ and $l$ be
+positive integers with $l \not\equiv 1 \pmod{p}$, and let $a$ be a natural number not divisible
+by $p^i$. Then the singleton $\{a\}$ is $l$-sum-free modulo $p^i$.
 
 ## Depends on
 
-- [Is Sum Free Mod](is-sum-free-mod.md)
+- [Sum-free sets modulo $m$](is-sum-free-mod.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.latticeParallelogram
 ---
 
-# Lattice Parallelogram
+# Parallelogram spanned by two vectors
 
-The parallelogram `{s u + t v : 0 ≤ s, t ≤ 1}` spanned by `u` and `v`.
+**Parallelogram spanned by two vectors.** For $u, v \in \mathbb{R}^2$, the parallelogram
+spanned by $u$ and $v$ is the set $\{s u + t v : 0 \le s \le 1,\ 0 \le t \le 1\}$.
 
 ## Depends on
 

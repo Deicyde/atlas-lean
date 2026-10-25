@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.coloredArndtCount
 ---
 
-# Colored Arndt Count
+# Colored Arndt compositions
 
-The number `c(n, k)` of colored (`n`-color) Arndt compositions of `n` with `k` parts: Arndt
-compositions of `n` with `k` parts in which a part of size `m` takes one of `m` colors, so each
-Arndt composition `c` contributes `∏ c i`.
+**Colored Arndt compositions.** An Arndt composition of $n$ with $k$ parts is a sequence
+$(\sigma_1, \dots, \sigma_k)$ of positive integers with sum $n$ such that
+$\sigma_{2i-1} > \sigma_{2i}$ for every $i$ with $2i \le k$. In a colored Arndt composition, each
+part of size $m$ carries one of $m$ colors. The number $c(n, k)$ of colored Arndt compositions of
+$n$ with $k$ parts is therefore the sum of $\sigma_1 \sigma_2 \cdots \sigma_k$ over all Arndt
+compositions $(\sigma_1, \dots, \sigma_k)$ of $n$ with $k$ parts.
 
 ## Depends on
 

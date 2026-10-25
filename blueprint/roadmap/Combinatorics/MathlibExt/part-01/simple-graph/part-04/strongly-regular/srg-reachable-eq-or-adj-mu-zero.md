@@ -7,16 +7,21 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_reachable_eq_or_adj_mu_zero
 ---
 
-# Srg reachable eq or adj mu zero
+# Components of a strongly regular graph with μ = 0 are cliques
 
-In a strongly regular graph with `μ = 0`, reachable vertices are equal or
-adjacent: each connected component is a clique. (Without `μ = 0` this is
-false: opposite vertices of a 5-cycle are reachable but neither equal nor
-adjacent.)
+**Components of a strongly regular graph with μ = 0 are cliques.** Let $G$ be a finite strongly
+regular graph with parameters $(n, k, \ell, \mu)$ where $\mu = 0$: $G$ has $n$ vertices, every
+vertex has degree $k$, any two adjacent vertices have exactly $\ell$ common neighbors, and any
+two distinct nonadjacent vertices have no common neighbor. If $v$ and $w$ are vertices of $G$
+joined by a walk, then $v = w$ or $v$ and $w$ are adjacent. Thus each connected component of
+$G$ is a clique.
+
+Without $\mu = 0$ this is false: two nonadjacent vertices of the 5-cycle, a strongly regular
+graph with parameters $(5, 2, 0, 1)$, are joined by a walk but are neither equal nor adjacent.
 
 Proof: Induct on a witnessing walk and close each two-edge segment using the
 zero common-neighbor count. Brouwer and Haemers, Section 9.1.4, state the
-result: `μ = 0` makes the graph a disjoint union of complete graphs.
+result: $\mu = 0$ makes the graph a disjoint union of complete graphs.
 
 ## Depends on
 

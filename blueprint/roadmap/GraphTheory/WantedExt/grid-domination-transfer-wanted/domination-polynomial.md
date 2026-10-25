@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Dominating](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-02/domination/is-dominating.md)
+- [Dominating set](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-02/domination/is-dominating.md)
 
 ## Sources
 

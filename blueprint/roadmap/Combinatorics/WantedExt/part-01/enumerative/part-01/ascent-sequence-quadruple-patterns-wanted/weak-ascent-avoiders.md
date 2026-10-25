@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.weakAscentAvoiders
 ---
 
-# Weak Ascent Avoiders
+# Weak ascent sequences avoiding a set of patterns
 
-The weak ascent sequences of length `n` avoiding every pattern in `P`, the paper's
-`WA_n(P)`.
+**Weak ascent sequences avoiding a set of patterns.** For a finite set $P$ of patterns
+(words over $\mathbb{N}$) and a natural number $n$, $\mathrm{WA}_n(P)$ is the set of weak ascent
+sequences of length $n$ that contain none of the patterns in $P$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Contains Pattern](contains-pattern.md)
-- [Is Weak Ascent Seq](is-weak-ascent-seq.md)
+- [Pattern containment](contains-pattern.md)
+- [Weak ascent sequence](is-weak-ascent-seq.md)
 
 ## Sources
 

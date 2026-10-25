@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.sum_arndtCompositionCount_le_four
 ---
 
-# Sum arndt Composition Count le four
+# Arndt compositions with parts at most 4 and Narayana's cows sequence
 
-The number of Arndt compositions of `n` with parts in `{1, 2, 3, 4}`, including the empty
-composition for `n = 0`, is the Narayana cows number `N(n)` (`N(0) = N(1) = N(2) = 1`,
-`N(n) = N(n - 1) + N(n - 3)`, OEIS A000930), which is `narayanaCowsSequence (n + 1)`.
+**Arndt compositions with parts at most 4 and Narayana's cows sequence.** For every
+$n \ge 0$, the number of Arndt compositions of $n$ (compositions $(\sigma_1, \dots, \sigma_k)$
+with $\sigma_{2i-1} > \sigma_{2i}$ whenever $2i \le k$) with all parts in $\{1, 2, 3, 4\}$,
+counting the empty composition when $n = 0$, equals $N_{n+1}$, where $(N_m)$ is Narayana's cows
+sequence: $N_0 = 0$, $N_1 = N_2 = 1$ and $N_m = N_{m-1} + N_{m-3}$ for $m \ge 3$.
 
 ## Depends on
 
-- [Arndt Composition Count](arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](arndt-composition-count.md)
 - [Narayana's cows sequence](../../../../../MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
 
 ## Sources

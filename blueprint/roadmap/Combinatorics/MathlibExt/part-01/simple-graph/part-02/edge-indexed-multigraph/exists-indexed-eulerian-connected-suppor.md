@@ -7,29 +7,34 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.exists_indexedEulerian_connectedSupport
 ---
 
-# Exists indexed Eulerian connected Support
+# Euler circuits when the non-isolated vertices are connected
 
-A finite edge-indexed multigraph with connected non-isolated support and even degrees has
-an edge-distinguishing Euler circuit.
+**Euler circuits when the non-isolated vertices are connected.** Let $M$ be an edge-indexed
+multigraph with finitely many vertices and finitely many edges. Suppose that the subgraph of the
+underlying simple graph of $M$ induced on its non-isolated vertices is connected, and that every
+vertex of $M$ has even degree. Then there are a vertex $u$ and a closed indexed walk from $u$ to
+$u$ that is Eulerian, that is, it traverses every edge of $M$ exactly once.
+
+A connected graph has at least one vertex, so the hypothesis requires $M$ to have an edge.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Indexed Walk](indexed-walk.md)
-- [Is Eulerian](is-eulerian.md)
-- [Degree](degree.md)
-- [Underlying](underlying.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Indexed walk](indexed-walk.md)
+- [Eulerian indexed walk](is-eulerian.md)
+- [Degree in an edge-indexed multigraph](degree.md)
+- [Underlying simple graph of an edge-indexed multigraph](underlying.md)
 
 ## Proof depends on
 
-- [Exists is Eulerian](../euler-circuit/exists-is-eulerian-2.md)
-- [Inc](inc.md)
+- [Euler circuits when the non-isolated vertices are connected](../euler-circuit/exists-is-eulerian-2.md)
+- [Incidence](inc.md)
 - [Is Trail](is-trail.md)
-- [Edges](edges.md)
-- [Inc iff](inc-iff.md)
-- [Underlying adj](underlying-adj.md)
-- [Induce support](../euler-circuit/induce-support.md)
-- [Count P edges eq degree](../euler-circuit/count-p-edges-eq-degree.md)
+- [Edge list of an indexed walk](edges.md)
+- [Incidence is membership in the endpoint pair](inc-iff.md)
+- [Adjacency in the underlying graph](underlying-adj.md)
+- [Reachability among non-isolated vertices](../euler-circuit/induce-support.md)
+- [Edges at a vertex of an Eulerian trail](../euler-circuit/count-p-edges-eq-degree.md)
 
 ## Sources
 

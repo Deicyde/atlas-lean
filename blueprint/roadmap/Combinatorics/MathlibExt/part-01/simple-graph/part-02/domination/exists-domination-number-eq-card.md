@@ -6,14 +6,15 @@ proof: formalized
 lean: SimpleGraph.exists_dominationNumber_eq_card
 ---
 
-# Exists domination Number eq card
+# A minimum dominating set exists
 
-A dominating set attaining the domination number exists.
+**A minimum dominating set exists.** Every simple graph $G$ on a finite vertex set has a
+dominating set whose number of elements equals the domination number of $G$.
 
 ## Depends on
 
-- [Is Dominating](is-dominating.md)
-- [Domination Number](domination-number.md)
+- [Dominating set](is-dominating.md)
+- [Domination number](domination-number.md)
 
 ## Sources
 

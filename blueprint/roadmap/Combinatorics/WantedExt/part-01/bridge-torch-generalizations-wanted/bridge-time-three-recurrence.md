@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_recurrence
 ---
 
-# Bridge Time three recurrence
+# Six-step recurrence for capacity three
 
-For `n ≥ 13`, `T₃(n) = T₃(n - 6) + 2n + 6`.
+**Six-step recurrence for capacity three.** Let $T_3(n)$ be the optimal crossing time of
+$n$ people with crossing times $1, \dots, n$ on a bridge of capacity $3$ with one torch. For
+every $n \ge 13$, $T_3(n) = T_3(n - 6) + 2n + 6$.
 
 ## Depends on
 
-- [Bridge Time](bridge-time.md)
+- [Optimal crossing time of the bridge and torch problem](bridge-time.md)
 
 ## Sources
 

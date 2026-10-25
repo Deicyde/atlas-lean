@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.reducedAntiPalindromicCompositionCount
 ---
 
-# Reduced Anti Palindromic Composition Count
+# Reduced anti-palindromic compositions
 
-The number of reduced anti-palindromic compositions of `n` with `m` parts, that is, of
-flip-equivalence classes of anti-palindromic compositions (switching any of the pairs `σ_i`,
-`σ_{ℓ+1-i}`). Each class has exactly one representative with `σ_i > σ_{ℓ+1-i}` for every
-`i < (ℓ+1)/2`, the representative the paper fixes; this counts those representatives, as
-`m`-tuples `c` of positive integers with `∑ c = n` and `c j < c i` whenever `i + j + 1 = m` and
-`i < j`.
+**Reduced anti-palindromic compositions.** For natural numbers $n$ and $m$, this is the number
+of compositions $(\sigma_1, \ldots, \sigma_m)$ of $n$ into $m$ positive parts such that
+$\sigma_i > \sigma_{m+1-i}$ for every $i$ with $2i < m + 1$.
+
+A composition $(\sigma_1, \ldots, \sigma_m)$ is anti-palindromic when
+$\sigma_i \ne \sigma_{m+1-i}$ for every $i$ with $2i \ne m + 1$. Two anti-palindromic compositions
+are equivalent when one arises from the other by swapping the entries $\sigma_i$ and
+$\sigma_{m+1-i}$ of some of the pairs; each class contains exactly one composition of the form
+above, so this is also the number of classes, the reduced anti-palindromic compositions of $n$
+with $m$ parts.
 
 ## Depends on
 

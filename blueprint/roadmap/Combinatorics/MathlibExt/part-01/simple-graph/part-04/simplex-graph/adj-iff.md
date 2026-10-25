@@ -7,14 +7,16 @@ proof: formalized
 lean: SimpleGraph.adj_iff
 ---
 
-# Adj iff
+# Adjacency in the simplex graph
 
-Adjacency unfolds to symmetric-difference cardinality one.
+**Adjacency in the simplex graph.** Let $G$ be a simple graph. Two simplex vertices $s$ and
+$t$ of $G$ are adjacent in the simplex graph of $G$ if and only if their symmetric difference
+$s \triangle t$ has exactly one element.
 
 ## Depends on
 
-- [Simplex Vertex](simplex-vertex.md)
-- [Simplex Graph](simplex-graph.md)
+- [Simplex vertices](simplex-vertex.md)
+- [Simplex graph](simplex-graph.md)
 
 ## Sources
 

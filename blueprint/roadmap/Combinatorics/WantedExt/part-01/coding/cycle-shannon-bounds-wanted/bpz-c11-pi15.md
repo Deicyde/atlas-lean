@@ -5,19 +5,21 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi15
 ---
 
-# Bpz C11 Pi15
+# Fifteen-block BPZ profile for the 11-cycle
 
-BPZ's fifteen-block eleven-cycle profile.
+**Fifteen-block BPZ profile for the 11-cycle.** The fifteen-block eleven-cycle profile of
+Buys, Polak and Zuiddam is the profile product $\pi_7 \star \pi_8$, where $\pi_7$ and $\pi_8$
+are their seven-block and eight-block eleven-cycle profiles.
 
 ## Depends on
 
-- [BPZProfile](bpzprofile.md)
+- [BPZ profiles](bpzprofile.md)
 
 ## Proof depends on
 
-- [Star](star.md)
-- [Bpz C11 Pi7](bpz-c11-pi7.md)
-- [Bpz C11 Pi8](bpz-c11-pi8.md)
+- [Product of BPZ profiles](star.md)
+- [Seven-block BPZ profile for the 11-cycle](bpz-c11-pi7.md)
+- [Eight-block BPZ profile of the eleven-cycle](bpz-c11-pi8.md)
 
 ## Sources
 

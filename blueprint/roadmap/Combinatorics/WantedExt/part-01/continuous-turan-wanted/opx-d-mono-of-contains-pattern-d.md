@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.opxD_mono_of_containsPatternD
 ---
 
-# Opx D mono of contains Pattern D
+# Higher-dimensional continuous Turán numbers are monotone under containment
 
-Lemma 5.1: if `Q` contains `P` in `ℝ^d`, then `opx(n, P, d) ≤ opx(n, Q, d)`. Stated for all
-real `n`.
+**Higher-dimensional continuous Turán numbers are monotone under containment.** Let
+$P, Q \subseteq \mathbb{R}^d$. If $Q$ contains $P$, then
+$\mathrm{opx}(n, P, d) \le \mathrm{opx}(n, Q, d)$ for every real number $n$.
 
 ## Depends on
 
-- [Contains Pattern D](contains-pattern-d.md)
+- [Containment of point sets in $\mathbb{R}^d$](contains-pattern-d.md)
 - [Opx D](opx-d.md)
 
 ## Sources

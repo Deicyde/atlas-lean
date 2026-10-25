@@ -4,7 +4,7 @@ navigation: module
 
 # Transfer Matrix Of GRH
 
-- [Zykov Zero Indicator](zykov-zero-indicator.md)
-- [Independent Set Characteristic](independent-set-characteristic.md)
-- [Relation Pairing](relation-pairing.md)
-- [Zykov Transfer Matrix](zykov-transfer-matrix.md)
+- [Zero indicator of a natural number](zykov-zero-indicator.md)
+- [Characteristic vector of an independent set](independent-set-characteristic.md)
+- [Pairing of Boolean vectors along a relation](relation-pairing.md)
+- [Transfer matrix of a generalized Zykov sum](zykov-transfer-matrix.md)

@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsArithmeticalStructure
 ---
 
-# Is Arithmetical Structure
+# Arithmetical structure
 
-An arithmetical structure on a graph `G`: positive labelings `d` and `r`
-with `(diag(d) - A) r = 0`, i.e. `d_v r_v = ∑_{w ∼ v} r_w` for every vertex,
-and the entries of `r` have no common factor other than `1`.
+**Arithmetical structure.** An arithmetical structure on a graph $G$ with vertex set $V$ is a
+pair of labelings $d, r : V \to \mathbb{N}$ such that $d(v) > 0$ and $r(v) > 0$ for every vertex
+$v$, $d(v)\, r(v) = \sum_{w \sim v} r(w)$ for every vertex $v$, where the sum runs over the
+neighbours $w$ of $v$, and the only natural number dividing every $r(v)$ is $1$. For a finite graph
+with adjacency matrix $A$ the middle condition reads $(\operatorname{diag}(d) - A)\, r = 0$.
+
+The neighbour sum is taken to be $0$ when $v$ has infinitely many neighbours, so no arithmetical
+structure exists on a graph with a vertex of infinite degree.
 
 ## Depends on
 

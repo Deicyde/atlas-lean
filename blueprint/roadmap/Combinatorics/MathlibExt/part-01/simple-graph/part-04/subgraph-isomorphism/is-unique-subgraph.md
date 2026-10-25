@@ -6,11 +6,12 @@ statement: formalized
 lean: SimpleGraph.IsUniqueSubgraph
 ---
 
-# Is Unique Subgraph
+# Unique subgraph
 
-`G` is a **unique subgraph** of `H` if there is exactly one subgraph of `H` isomorphic to
-`G`. Subgraphs of `H` are taken in the spanning sense: elements `G' ≤ H` of the lattice
-`SimpleGraph V`, i.e. subsets of the edges of `H` (not necessarily induced).
+**Unique subgraph.** Let $G$ and $H$ be graphs on the same vertex set $V$. Then $G$ is a
+unique subgraph of $H$ if exactly one subgraph of $H$ is isomorphic to $G$. Here a subgraph of
+$H$ means a spanning subgraph: a graph on $V$ all of whose edges are edges of $H$ (not
+necessarily induced).
 
 ## Depends on
 

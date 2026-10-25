@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.exists_optimal_schedule_three_fastest_returns
 ---
 
-# Exists optimal schedule three fastest returns
+# Optimal capacity-3 schedules with fastest single returns
 
-For capacity `3` and `n ≥ 1` there is an optimal schedule in which every
-return is made by a single person who is the fastest person then on the right
-bank.
+**Optimal capacity-3 schedules with fastest single returns.** Let $n \ge 1$ and consider the
+people $1, \dots, n$, person $i$ having crossing time $i$, on a bridge of capacity $3$ with one
+torch. Then some schedule has total time equal to the optimal crossing time $T_3(n)$ and the
+following property: every return (a crossing at an odd position, counting from $0$) carries a
+single person $p$, and $p \le q$ for every person $q$ on the right bank just before that return.
 
 ## Depends on
 
-- [Is Bridge Schedule](is-bridge-schedule.md)
-- [Bridge Time](bridge-time.md)
+- [Bridge schedules](is-bridge-schedule.md)
+- [Optimal crossing time of the bridge and torch problem](bridge-time.md)
 - [Right Bank](right-bank.md)
 - [Schedule Cost](schedule-cost.md)
 

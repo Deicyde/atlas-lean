@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.not_two_large_of_triple_growth
 ---
 
-# Not two large of triple growth
+# Sets growing by a factor of three are not 2-large
 
-An increasing positive enumeration with every successive ratio at least
-three does not form a 2-large set; the displayed condition is zero-based.
+**Sets growing by a factor of three are not 2-large.** Let $d_0 < d_1 < d_2 < \cdots$ be a
+strictly increasing sequence of natural numbers with $d_0 > 0$ and $d_{n+1} \ge 3 d_n$ for every
+$n \in \mathbb{N}$, and let $D = \{d_n : n \in \mathbb{N}\}$. Then $D$ is not $2$-large.
 
 ## Depends on
 
-- [Is RLarge](is-rlarge.md)
+- [$r$-large sets](is-rlarge.md)
 
 ## Sources
 

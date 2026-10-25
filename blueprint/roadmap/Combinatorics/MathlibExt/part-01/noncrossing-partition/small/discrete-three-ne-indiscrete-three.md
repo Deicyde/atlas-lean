@@ -6,9 +6,11 @@ proof: formalized
 lean: NoncrossingPartition.discrete_three_ne_indiscrete_three
 ---
 
-# Discrete three ne indiscrete three
+# The discrete and indiscrete partitions of a three-element set differ
 
-Discrete and indiscrete partitions of `Fin 3` are distinct.
+**The discrete and indiscrete partitions of a three-element set differ.** The discrete
+noncrossing partition of $\{0, 1, 2\}$ is not equal to the indiscrete noncrossing partition of
+$\{0, 1, 2\}$.
 
 ## Depends on
 

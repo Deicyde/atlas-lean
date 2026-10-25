@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.topological_recurrence_union_partition
 ---
 
-# Topological recurrence union partition
+# One part of a union inherits $k$-topological recurrence
 
-If a union is a set of `k`-topological recurrence, then one of its two
-summands is also a set of `k`-topological recurrence.
+**One part of a union inherits $k$-topological recurrence.** Let $k$ be a natural number
+and let $D_1, D_2 \subseteq \mathbb{N}$. If $D_1 \cup D_2$ is a set of $k$-topological recurrence,
+then $D_1$ or $D_2$ is a set of $k$-topological recurrence.
 
 ## Depends on
 
-- [Is LTopological Recurrence](is-ltopological-recurrence.md)
+- [Sets of $\ell$-topological recurrence](is-ltopological-recurrence.md)
 
 ## Sources
 

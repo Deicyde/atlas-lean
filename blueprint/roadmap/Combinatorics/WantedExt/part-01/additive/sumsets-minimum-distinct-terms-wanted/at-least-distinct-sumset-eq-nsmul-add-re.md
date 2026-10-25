@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.atLeastDistinctSumset_eq_nsmul_add_restrictedSumset
 ---
 
-# At Least Distinct Sumset eq nsmul add restricted Sumset
+# Decomposition of sums with at least $r$ distinct terms
 
-For a nonempty finite `A` in an abelian group with `1 ≤ r ≤ |A|` and `h ≥ r`,
-`h^{(≥ r)}A = (h - r)A + r^A` (with `0A = {0}`).
+**Decomposition of sums with at least $r$ distinct terms.** Let $G$ be an abelian group, $A$
+a nonempty finite subset of $G$, and $r, h$ natural numbers with $1 \le r \le |A|$ and $r \le h$.
+Write $h^{(\ge r)}A$ for the set of sums of $h$ elements of $A$, repetitions allowed, in which at
+least $r$ distinct elements occur, $(h - r)A$ for the set of sums of $h - r$ elements of $A$,
+repetitions allowed (so $0A = \{0\}$), and $r^{\wedge}A$ for the restricted sumset of sums of
+$r$ distinct elements of $A$. Then $h^{(\ge r)}A = (h - r)A + r^{\wedge}A$.
 
 ## Depends on
 
-- [At Least Distinct Sumset](at-least-distinct-sumset.md)
+- [Sums with at least $r$ distinct terms](at-least-distinct-sumset.md)
 - [Restricted sumset](../../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
 
 ## Sources

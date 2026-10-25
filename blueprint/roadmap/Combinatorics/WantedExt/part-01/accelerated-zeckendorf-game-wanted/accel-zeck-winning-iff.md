@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.accelZeckWinning_iff
 ---
 
-# Accel Zeck Winning iff
+# Characterization of winning states
 
-A state is winning iff some move from it reaches a losing state (rules (3) and (4)).
+**Characterization of winning states.** A state $s$ is winning if and only if some move
+takes $s$ to a losing state.
 
 ## Depends on
 
-- [Accel Zeck Losing](accel-zeck-losing.md)
-- [Accel Zeck Move](accel-zeck-move.md)
-- [Accel Zeck Winning](accel-zeck-winning.md)
+- [Losing states of the Accelerated Zeckendorf Game](accel-zeck-losing.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
+- [Winning states of the Accelerated Zeckendorf Game](accel-zeck-winning.md)
 
 ## Sources
 

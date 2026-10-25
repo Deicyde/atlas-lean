@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.card_maxNormBall
 ---
 
-# Card max Norm Ball
+# Number of points in the max-norm ball
 
-The maxNormBall `B_h` has `(2h+1)^2` lattice points: each formal integer interval in
-the Cartesian product `maxNormBall h` has `2h+1` elements.
+**Number of points in the max-norm ball.** For every natural number $h$, the max-norm ball
+$B_h = \{(x, y) \in \mathbb{Z}^2 : \max(|x|, |y|) \le h\}$ has exactly $(2h+1)^2$ points.
 
 ## Depends on
 
-- [Max Norm Ball](max-norm-ball.md)
+- [Max-norm ball](max-norm-ball.md)
 
 ## Sources
 

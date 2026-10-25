@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.binomial_inversion_iff
 ---
 
-# Binomial inversion iff
+# Binomial inversion
 
-Binomial inversion: `u_n = ∑ C(n,k) v_k` for all `n` iff `v_n = ∑ (-1)^{n-k} C(n,k) u_k` for
-all `n`.
+**Binomial inversion.** For real sequences $(u_n)$ and $(v_n)$, the identities
+$u_n = \sum_{k=0}^{n} \binom{n}{k} v_k$ hold for all natural numbers $n$ if and only if the
+identities $v_n = \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} u_k$ hold for all natural numbers $n$.
 
 ## Depends on
 

@@ -5,22 +5,31 @@ statement: formalized
 lean: MetaMathlibExt.boundedSubsequenceSums_inverse_mixedSign
 ---
 
-# Bounded Subsequence Sums inverse mixed Sign
+# Inverse theorem for bounded subsequence sums of mixed-sign sequences without zero
 
-Inverse theorem for Theorem 15 (`1 ≤ n ≤ p`, `k = n + p`, `h ≥ 3`, `1 ≤ α ≤ h - 2`,
-`β ≤ h - 2`, `α + β ≤ h - 1`), writing `E` for `|Σ^β_α(𝒜)| = L(r̄, h - β)`: (a) for `k = 3`,
-`α + β = h - 1` and `t₂ = 1` (the multiplicity of the least positive term), `E` iff
-`A = {a₂ - a₃, a₂, a₃}`; (b) in all other cases, `E` iff
-`A = a_{n+1} · {-n, …, -1, 1, …, p}`. CORRECTED READING: (b) also excludes `k = 2` with
-`α + β = h - 1`, where the proof's `r₁ = h - α - β ≥ 2` fails and Theorem 4(i) gives `E` for
-every `A`: `A = {-2, 7}`, `t̄ = (1, 2)`, `α = β = 1` has `|Σ^1_1(𝒜)| = |{-2, 5, 7, 14}| = 4 = L`.
-Dilations are by some `e > 0` (necessarily `a_{n+1}`).
+**Inverse theorem for bounded subsequence sums of mixed-sign sequences without zero.** Let
+$1 \le n \le p$, let $c_1 < \dots < c_n < 0 < d_1 < \dots < d_p$ be integers and
+$A = \{c_1, \dots, c_n, d_1, \dots, d_p\}$, let $s_1, \dots, s_n, t_1, \dots, t_p$ be positive
+integers, let $\mathcal{A}$ be the sequence in which each $c_i$ occurs $s_i$ times and each $d_j$
+occurs $t_j$ times, and let $h = s_1 + \dots + s_n + t_1 + \dots + t_p$, with $h \ge 3$. Let
+$\alpha, \beta$ be natural numbers with $1 \le \alpha \le h - 2$, $\beta \le h - 2$ and
+$\alpha + \beta \le h - 1$, put $\bar r = (s_1, \dots, s_n, h - \alpha - \beta, t_1, \dots, t_p)$,
+and write $E$ for the equality $|\Sigma^\beta_\alpha(\mathcal{A})| = L(\bar r, h - \beta)$, where
+$L$ is the Yang–Chen bound. Then:
+(a) if $n + p = 3$, $\alpha + \beta = h - 1$ and $t_1 = 1$, then $E$ holds if and only if
+$A = \{x - y, x, y\}$ for some integers $0 < x < y$;
+(b) in every other case, except $n + p = 2$ with $\alpha + \beta = h - 1$, $E$ holds if and only
+if $A = \{e x : x \in \{-n, \dots, -1, 1, \dots, p\}\}$ for some integer $e > 0$.
+
+The source states (b) also for $n + p = 2$ and $\alpha + \beta = h - 1$, but there $E$ holds for
+every $A$: for $A = \{-2, 7\}$ with $s_1 = 1$, $t_1 = 2$ and $\alpha = \beta = 1$ one has
+$|\Sigma^1_1(\mathcal{A})| = |\{-2, 5, 7, 14\}| = 4 = L((1, 1, 2), 2)$.
 
 ## Depends on
 
-- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
-- [Repetition Sequence](repetition-sequence.md)
-- [Yang Chen Bound](yang-chen-bound.md)
+- [Subsequence sums with a bounded number of terms](bounded-subsequence-sums.md)
+- [Sequence with prescribed multiplicities](repetition-sequence.md)
+- [The Yang–Chen bound](yang-chen-bound.md)
 
 ## Sources
 

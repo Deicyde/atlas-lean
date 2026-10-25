@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.biPeriodicFibonacciSq_zero
 ---
 
-# Bi Periodic Fibonacci Sq zero
+# Zeroth bi-periodic Fibonacci number squared
 
-`q²_0 = 0`.
+**Zeroth bi-periodic Fibonacci number squared.** For elements $a$ and $b$ of a field $K$, the
+bi-periodic Fibonacci number squared $q^2_0$ equals $0$.
 
 ## Depends on
 
-- [Bi Periodic Fibonacci Sq](bi-periodic-fibonacci-sq.md)
+- [Bi-periodic Fibonacci numbers squared](bi-periodic-fibonacci-sq.md)
 
 ## Sources
 

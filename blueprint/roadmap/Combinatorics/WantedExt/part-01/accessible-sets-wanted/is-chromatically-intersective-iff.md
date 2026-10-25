@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.isChromaticallyIntersective_iff
 ---
 
-# Is Chromatically Intersective iff
+# Characterization of chromatically intersective sets
 
-Characterization of chromatic intersectivity, preserving the ordered
-difference rather than replacing it by an absolute difference.
+**Characterization of chromatically intersective sets.** A set $D$ of natural numbers is
+chromatically intersective if and only if every element of $D$ is positive and, for every
+natural number $r \ge 1$ and every coloring of the positive integers with $r$ colors, there are
+positive integers $a$ and $b$ of the same color whose difference $a - b$, computed in the
+integers, lies in $D$.
 
 ## Depends on
 
-- [Is Chromatically Intersective](is-chromatically-intersective.md)
+- [Chromatically intersective sets](is-chromatically-intersective.md)
 
 ## Sources
 

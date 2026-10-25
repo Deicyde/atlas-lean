@@ -6,16 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.cubeVertexEdgeFaceMove_examples
 ---
 
-# Cube Vertex Edge Face Move examples
+# Examples of vertex, edge and face moves
 
-Vertex, edge and face moves from one token on each of `f_a, f_b, f_c` to the empty cube or
-to `(0, 1, 1, 0, 0, 0)`, and the empty cube has no move in any of the three games.
+**Examples of vertex, edge and face moves.** Write positions as tuples $(a, b, c, A, B, C)$ of
+numbers of tokens on the faces $f_a, f_b, f_c, f_A, f_B, f_C$ of a cube. There is a vertex move
+(game $C_V$) from $(1, 1, 1, 0, 0, 0)$ to the empty position $(0, 0, 0, 0, 0, 0)$, an edge move
+(game $C_E$) from $(1, 1, 0, 0, 0, 0)$ to the empty position, and a face move (game $C_F$) from
+$(1, 1, 1, 0, 0, 0)$ to $(0, 1, 1, 0, 0, 0)$. No vertex move, edge move or face move starts at
+the empty position.
 
 ## Depends on
 
-- [Cube Edge Move](cube-edge-move.md)
-- [Cube Face Move](cube-face-move.md)
-- [Cube Vertex Move](cube-vertex-move.md)
+- [Edge move on the cube](cube-edge-move.md)
+- [Face move on the cube](cube-face-move.md)
+- [Vertex move on the cube](cube-vertex-move.md)
 
 ## Sources
 

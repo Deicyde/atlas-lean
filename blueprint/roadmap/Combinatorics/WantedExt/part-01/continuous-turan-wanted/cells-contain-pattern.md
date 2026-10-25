@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.CellsContainPattern
 ---
 
-# Cells Contain Pattern
+# Containment of a point pattern in a set of grid cells
 
-Containment of a point pattern in a set of grid cells, i.e. 0-1 matrix containment of `M_P`:
-the cells `A ⊆ ℕ × ℕ` (column, row) contain `P ⊆ ℝ²` when there are strictly increasing maps from
-the `x`-coordinates of `P` to column indices and from the `y`-coordinates of `P` to row indices that
-send every `(x, y) ∈ P` to a cell of `A`. For finite `P` this is containment of the 0-1 matrix
-`M_P` (rows of `P` listed bottom to top; flipping the rows of both matrices preserves containment).
+**Containment of a point pattern in a set of grid cells.** A set of cells
+$A \subseteq \mathbb{N} \times \mathbb{N}$, each cell written (column, row), contains a set
+$P \subseteq \mathbb{R}^2$ when there are maps $f_X, f_Y : \mathbb{R} \to \mathbb{N}$ such that
+$f_X$ is strictly increasing on the set of $x$-coordinates of points of $P$, $f_Y$ is strictly
+increasing on the set of $y$-coordinates of points of $P$, and $(f_X(x), f_Y(y)) \in A$ for every
+$(x, y) \in P$.
+
+For finite $P$ this is containment of the 0-1 matrix $M_P$ of $P$ (rows of $P$ listed bottom to
+top; flipping the rows of both matrices preserves containment).
 
 ## Depends on
 

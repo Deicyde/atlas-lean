@@ -5,17 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exists_pair_units_avoiding_prime_squareWeights
 ---
 
-# Exists pair units avoiding prime square Weights
+# Two units without square-weighted zero sums modulo any prime divisor
 
-Proposition 17: for odd `n ≥ 2`, there are two units `u,v` such that for
-each prime divisor `p`, their two-term image has no `S(p)`-weighted zero-sum
-subsequence. The bullet's `S(p)` replaces the paper's equivalent `Q_p` for odd
-prime `p`; `n ≥ 2` records the ambient convention.
+**Two units without square-weighted zero sums modulo any prime divisor.** Let $n \ge 2$ be
+odd, and write $S(m)$ for the set of nonzero squares in $\mathbb{Z}/m\mathbb{Z}$. Then there are
+units $u, v$ of $\mathbb{Z}/n\mathbb{Z}$ such that for every prime $p$ dividing $n$, the sequence
+$(u \bmod p, v \bmod p)$ in $\mathbb{Z}/p\mathbb{Z}$ has no $S(p)$-weighted zero-sum subsequence.
 
 ## Depends on
 
-- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
-- [Square Set](square-set.md)
+- [Weighted zero-sum subsequences](has-weighted-zero-sum-subseq.md)
+- [Nonzero squares modulo $n$](square-set.md)
 
 ## Sources
 

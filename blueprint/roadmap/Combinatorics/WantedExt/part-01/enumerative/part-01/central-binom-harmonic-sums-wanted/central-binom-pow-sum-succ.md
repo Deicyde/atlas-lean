@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.centralBinomPowSum_succ
 ---
 
-# Central Binom Pow Sum succ
+# Adding one term to the weighted central binomial sum
 
-The partial-sum step: adding the term `k = n + 1`.
+**Adding one term to the weighted central binomial sum.** For every sequence $a$ of rational
+numbers and all natural numbers $r$ and $n$, the weighted central binomial sum
+$S_r^a(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r a_k$ (with $0^0 = 1$) satisfies
+
+$$S_r^a(n+1) = S_r^a(n) + \binom{2n+2}{n+1} 4^{-(n+1)} (n+1)^r a_{n+1}.$$
 
 ## Depends on
 
-- [Central Binom Pow Sum](central-binom-pow-sum.md)
+- [Weighted central binomial sum](central-binom-pow-sum.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Graph Pair Ramsey](../../../MathlibExt/part-01/simple-graph/part-03/ramsey/graph-pair-ramsey.md)
+- [Ramsey number of a pair of graphs](../../../MathlibExt/part-01/simple-graph/part-03/ramsey/graph-pair-ramsey.md)
 
 ## Sources
 

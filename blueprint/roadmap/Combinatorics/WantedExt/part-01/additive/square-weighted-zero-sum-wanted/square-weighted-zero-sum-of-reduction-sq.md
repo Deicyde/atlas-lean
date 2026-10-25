@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.squareWeightedZeroSum_of_reduction_square
 ---
 
-# Square Weighted Zero Sum of reduction square
+# Lifting weighted zero sums from p² to an even power of p
 
-Lemma 13: for nonzero even `r` and `2 ≤ p`, a full
-`U(p²)²`-weighted zero sum after reduction modulo `p²` lifts to a full
-`S(p^r)`-weighted zero sum. The sequence length is explicit. The requested
-bullet strengthens the paper text's `0 < p` to `2 ≤ p`; that deviation is
-followed literally.
+**Lifting weighted zero sums from p² to an even power of p.** Let $p \ge 2$, $r \ne 0$
+and $k$ be natural numbers with $r$ even, and let $t_1, \dots, t_k$ be elements of
+$\mathbb{Z}/p^r\mathbb{Z}$, with reductions $\bar t_1, \dots, \bar t_k$ modulo $p^2$. Write
+$U(p^2)^2$ for the set of squares of units of $\mathbb{Z}/p^2\mathbb{Z}$ and $S(p^r)$ for the
+set of nonzero squares of $\mathbb{Z}/p^r\mathbb{Z}$. If there are
+$a_1, \dots, a_k \in U(p^2)^2$ with $a_1 \bar t_1 + \dots + a_k \bar t_k = 0$ in
+$\mathbb{Z}/p^2\mathbb{Z}$, then there are $b_1, \dots, b_k \in S(p^r)$ with
+$b_1 t_1 + \dots + b_k t_k = 0$ in $\mathbb{Z}/p^r\mathbb{Z}$.
+
+The paper states the lemma for $p > 0$; the stronger hypothesis $p \ge 2$ is deliberate.
 
 ## Depends on
 
-- [Has Weighted Zero Sum](has-weighted-zero-sum.md)
-- [Square Set](square-set.md)
-- [Unit Square Set](unit-square-set.md)
+- [Weighted zero-sum sequences](has-weighted-zero-sum.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Squares of units modulo n](unit-square-set.md)
 
 ## Sources
 

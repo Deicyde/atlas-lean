@@ -15,7 +15,7 @@ Theorem 4.2: the closed segment from `(0, 0)` to `(a, b)`, `a, b > 0`, has
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

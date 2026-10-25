@@ -14,14 +14,14 @@ sufficiently high-dimensional finite cube is constant on all lines of an `m`-dim
 
 ## Depends on
 
-- [Comp Line](comp-line.md)
+- [Image of a combinatorial line in a combinatorial subspace](comp-line.md)
 
 ## Proof depends on
 
-- [Reindex](reindex.md)
-- [Comp](comp.md)
-- [Comp comp Line](comp-comp-line.md)
-- [Reindex comp Line](reindex-comp-line.md)
+- [Reindexing a combinatorial line](reindex.md)
+- [Composition of combinatorial subspaces](comp.md)
+- [Images of lines under composite subspaces](comp-comp-line.md)
+- [Reindexing commutes with images of lines](reindex-comp-line.md)
 
 ## Sources
 

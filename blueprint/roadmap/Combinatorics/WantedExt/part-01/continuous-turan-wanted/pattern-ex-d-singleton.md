@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.patternExD_singleton
 ---
 
-# Pattern Ex D singleton
+# The $d$-dimensional extremal function of a single point vanishes
 
-A single point is contained in every nonempty set of cells, so `ex(n, M_{p}, d) = 0`.
+**The $d$-dimensional extremal function of a single point vanishes.** For all natural numbers
+$d$ and $n$ and every point $p \in \mathbb{R}^d$, $\operatorname{ex}(n, M_{\{p\}}, d) = 0$, since a
+single point is contained in every nonempty set of cells.
 
 ## Depends on
 
-- [Pattern Ex D](pattern-ex-d.md)
+- [Extremal function of a $d$-dimensional pattern](pattern-ex-d.md)
 
 ## Proof depends on
 
-- [Cells Contain Pattern D](cells-contain-pattern-d.md)
+- [Containment of a point pattern in d-dimensional grid cells](cells-contain-pattern-d.md)
 
 ## Sources
 

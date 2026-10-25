@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.antiRecurrence_one_ge
 ---
 
-# Lemma 4
+# Lower bound for the first anti-recurrence number
 
-**Lemma 4**, with the strictness condition corrected. For a positive form of trace `τ` and
-dimension `k`, `τ + t_{k-1} ≤ A_1` (`t_{k-1} = (k - 1)k/2`), and the inequality is strict if and
-only if `a_j > 1` for some `j ≥ 2` (here `j` is `0`-indexed, so `1 ≤ j`). The printed condition
-("`k > 2` and not anti-bonacci") is false: `a = (2, 1, 1)` gives `A_1 = 2 + 2 + 3 = 7 = τ + t_2`.
-The correction follows the paper's proof, `A_1 = τ + ∑_j (j - 1) a_j`. The paper's `k > 1` is
-not needed.
+**Lower bound for the first anti-recurrence number.** Let $a = (a_1, \dots, a_k)$ be a linear
+form with positive integer coefficients, of trace $\tau = a_1 + \dots + a_k$, and let $A_1$ be its
+first anti-recurrence number. Then $\tau + (k - 1)k/2 \le A_1$, and the inequality is strict if
+and only if $a_j > 1$ for some $j$ with $2 \le j \le k$.
+
+This corrects the printed strictness condition ("$k > 2$ and not anti-bonacci"), which fails for
+$a = (2, 1, 1)$: there $A_1 = 2 + 2 + 3 = 7 = \tau + 3$. The correction follows the paper's
+proof, $A_1 = \tau + \sum_j (j - 1) a_j$. The paper's hypothesis $k > 1$ is not needed.
 
 ## Depends on
 
-- [Anti Recurrence](anti-recurrence.md)
+- [Anti-recurrence numbers](anti-recurrence.md)
 
 ## Sources
 

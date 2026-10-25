@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.coconutTree
 ---
 
-# Coconut Tree
+# Coconut tree
 
-The coconut tree `CT(p, s)`: a path `v_1 - v_2 - ⋯ - v_p` together with `s`
-leaves `v_{ℓ_1}, …, v_{ℓ_s}`, each adjacent to `v_p`.
+**Coconut tree.** For natural numbers $p$ and $s$, the coconut tree $\mathrm{CT}(p, s)$ is the
+graph whose vertices are the path vertices $v_1, \dots, v_p$ and the leaves
+$v_{\ell_1}, \dots, v_{\ell_s}$, in which $v_i$ and $v_{i+1}$ are adjacent for $1 \le i < p$, every
+leaf is adjacent to $v_p$, and there are no other edges. For $p = 0$ it consists of $s$ isolated
+vertices.
 
 ## Depends on
 

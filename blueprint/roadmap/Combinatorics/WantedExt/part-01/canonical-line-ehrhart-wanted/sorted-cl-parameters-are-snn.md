@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.sorted_cl_parameters_are_snn
 ---
 
-# Sorted cl parameters are snn
+# Small sorted CL parameters give an SNN polynomial
 
-A sorted degree-`d` CL factorization is SNN when parameter number `k` is at most
-`2k+2` for odd `d` and at most `2k+1` for even `d`, in addition to the `1/4` lower bound
-already carried by `IsCLWithParameters`, and the scale `a` is positive (for `a < 0` the claim
-fails: `d = 1`, `a = -1`, `cs = []`, `f = -(2X + 1)` has `h*_0 = -1`).  Zero-based list
-indexing matches `c₀,c₁,…`.
+**Small sorted CL parameters give an SNN polynomial.** Let $f$ be a complex polynomial of
+degree $d$, let $a > 0$ be real, and let $c_0 \le c_1 \le \dots \le c_{m-1}$ be real numbers, each
+at least $1/4$, with $m = \lfloor d/2 \rfloor$, such that $f = a \prod_{k=0}^{m-1} (X^2 + X + c_k)$
+if $d$ is even and $f = a (2X + 1) \prod_{k=0}^{m-1} (X^2 + X + c_k)$ if $d$ is odd. Suppose that
+$c_k \le 2k + 2$ for every $k$ when $d$ is odd, and $c_k \le 2k + 1$ for every $k$ when $d$ is
+even. Then $f$ is an SNN polynomial.
+
+The hypothesis $a > 0$ is needed: for $d = 1$, $a = -1$ and no parameters, $f = -(2X + 1)$ is not
+SNN, since its zeroth $h^*$-coefficient is $f(0) = -1 < 0$.
 
 ## Depends on
 
-- [Is CLWith Parameters](is-clwith-parameters.md)
-- [Is SNN](is-snn.md)
+- [CL-polynomials with given parameters](is-clwith-parameters.md)
+- [SNN polynomials](is-snn.md)
 
 ## Sources
 

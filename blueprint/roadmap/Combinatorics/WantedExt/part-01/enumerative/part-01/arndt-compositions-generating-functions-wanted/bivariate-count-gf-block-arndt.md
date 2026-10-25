@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.bivariateCountGF_blockArndt
 ---
 
-# Bivariate Count GF block Arndt
+# Generating function of block Arndt compositions
 
-For `k ≥ 1` the generating function of `k`-block Arndt compositions by weight and number of
-parts is `A^{(k)}(x, y) = (∑_{j=0}^{k-1} J_j(x, y))/(1 - J_k(x, y))` with
-`J_j(x, y) = x^{C(j+1, 2)} yʲ ∏_{ℓ=1}^{j} 1/(1 - x^ℓ)`; stated after multiplying through by
-`∏_{ℓ=1}^{k} (1 - x^ℓ)`:
-`A^{(k)} · (∏_{ℓ=1}^{k} (1 - x^ℓ) - x^{C(k+1, 2)} yᵏ) = ∑_{j<k} x^{C(j+1, 2)} yʲ ∏_{ℓ=j+1}^{k} (1 - x^ℓ)`.
+**Generating function of block Arndt compositions.** Let $k \ge 1$, let $a^{(k)}(n, m)$ be
+the number of $k$-block Arndt compositions of $n$ with $m$ parts, and let
+$A^{(k)}(x, y) = \sum_{n \ge 0} \sum_{m=0}^{n} a^{(k)}(n, m)\, x^n y^m \in \mathbb{Z}[y][[x]]$.
+Then
+$A^{(k)}(x, y) \bigl(\prod_{\ell=1}^{k} (1 - x^\ell) - x^{\binom{k+1}{2}} y^k\bigr) =
+\sum_{j=0}^{k-1} x^{\binom{j+1}{2}} y^j \prod_{\ell=j+1}^{k} (1 - x^\ell)$.
+Equivalently, with $J_j(x, y) = x^{\binom{j+1}{2}} y^j \prod_{\ell=1}^{j} (1 - x^\ell)^{-1}$,
+$A^{(k)}(x, y) = \bigl(\sum_{j=0}^{k-1} J_j(x, y)\bigr) / (1 - J_k(x, y))$.
 
 ## Depends on
 
-- [Bivariate Count GF](bivariate-count-gf.md)
-- [Block Arndt Composition Count](block-arndt-composition-count.md)
+- [Bivariate generating function of a two-index count](bivariate-count-gf.md)
+- [Number of $k$-block Arndt compositions](block-arndt-composition-count.md)
 
 ## Sources
 

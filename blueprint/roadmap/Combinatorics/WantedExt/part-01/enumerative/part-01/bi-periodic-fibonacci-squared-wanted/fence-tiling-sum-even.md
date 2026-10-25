@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.fenceTilingSum_even
 ---
 
-# Fence Tiling Sum even
+# Recurrence for weighted fence tilings of even boards
 
-Lemma 2.1, even case: for even `n ≥ 2`,
-`S_n = b² S_{n-1} + (2ab+1) S_{n-2} + 2ab ∑_{j=2}^{n/2} S_{n-2j} + 2b² ∑_{j=1}^{n/2-1} S_{n-2j-1}`.
-The cases `n = 0, 1` (with `δ_{n,0}` and `S_{<0} = 0`) are `fenceTilingSum_zero`,
-`fenceTilingSum_one`.
+**Recurrence for weighted fence tilings of even boards.** Let $a$ and $b$ be elements of a
+commutative semiring $R$, and let $S_m$ be the weighted number of tilings of an $m$-board, with
+cells numbered $1, \dots, m$, by half-squares and $(1/2, 1/2)$-fences, a half-square weighing $a$
+in an odd cell and $b$ in an even cell. Then for every even $n \ge 2$,
+
+$$
+S_n = b^2 S_{n-1} + (2ab+1) S_{n-2} +
+2ab \sum_{j=2}^{n/2} S_{n-2j} + 2b^2 \sum_{j=1}^{n/2-1} S_{n-2j-1}.
+$$
 
 ## Depends on
 
-- [Fence Tiling Sum](fence-tiling-sum.md)
+- [Weighted count of fence tilings](fence-tiling-sum.md)
 
 ## Sources
 

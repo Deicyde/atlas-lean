@@ -6,14 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.palindromicArndtCount_five
 ---
 
-# Palindromic Arndt Count five
+# Palindromic Arndt compositions of 5
 
-The palindromic Arndt compositions of `5` are `(5)` and `(2,1,2)` (the `x⁵` coefficient
-`y + y³` of `PA(x, y, 1)`).
+**Palindromic Arndt compositions of 5.** There is exactly one palindromic Arndt composition of
+$5$ with one part and middle summand $5$, exactly one with three parts and middle summand $1$,
+and none with three parts and middle summand $2$.
+
+The compositions counted are $(5)$ and $(2, 1, 2)$; the paper reads them off the coefficient of
+$x^5$ in the series expansion of the generating function of palindromic Arndt compositions.
 
 ## Depends on
 
-- [Palindromic Arndt Count](palindromic-arndt-count.md)
+- [Palindromic Arndt compositions](palindromic-arndt-count.md)
 
 ## Sources
 

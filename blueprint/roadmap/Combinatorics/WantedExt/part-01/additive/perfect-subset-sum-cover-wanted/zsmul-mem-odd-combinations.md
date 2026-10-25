@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.zsmul_mem_oddCombinations
 ---
 
-# Zsmul mem odd Combinations
+# Odd combinations are closed under odd multiples
 
-For any finite `A ⊆ G`, `𝒯(A)` is a union of `∼`-classes together with `0`: it is closed
-under taking odd multiples.
+**Odd combinations are closed under odd multiples.** Let $A$ be a finite subset of an abelian
+group $G$. If $g$ lies in the set $\mathcal{T}(A)$ of odd combinations of $A$, then
+$(2j+1)g \in \mathcal{T}(A)$ for every integer $j$.
 
 ## Depends on
 
-- [Odd Combinations](odd-combinations.md)
+- [Odd combinations](odd-combinations.md)
 
 ## Sources
 

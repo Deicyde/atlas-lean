@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.FractalSequence.pos_injective
 ---
 
-# Pos injective
+# Occurrence positions are distinct
 
-Each row of a fractal sequence's position array is injective.
+**Occurrence positions are distinct.** In a regular fractal sequence with position array
+$p$, for every $i \ge 0$ the map $j \mapsto p_i(j)$, sending $j$ to the position of the $j$-th
+occurrence of $i + 1$ (counting from $j = 0$), is injective.
 
 ## Depends on
 
-- [Fractal Sequence](fractal-sequence.md)
+- [Regular fractal sequence](fractal-sequence.md)
 
 ## Sources
 

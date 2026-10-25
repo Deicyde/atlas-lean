@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsLarge
 ---
 
-# Is Large
+# Large set
 
-A set is large when it is `r`-large for every positive number `r` of
-colors; the explicit guard records the paper's positive-natural convention.
+**Large set.** A set $D$ of natural numbers is large when it is $r$-large for every natural
+number $r \ge 1$.
 
 ## Depends on
 
@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is RLarge](is-rlarge.md)
+- [$r$-large sets](is-rlarge.md)
 
 ## Sources
 

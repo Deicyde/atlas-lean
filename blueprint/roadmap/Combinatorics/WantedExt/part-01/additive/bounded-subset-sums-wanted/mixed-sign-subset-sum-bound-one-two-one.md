@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.mixedSignSubsetSumBound_one_two_one_one
 ---
 
-# Mixed Sign Subset Sum Bound one two one one
+# A value of the mixed-sign subset-sum bound
 
-`L(1, 1, A) = 5` for `n = 1`, `p = 2` (second case), attained by `A = {-1, 1, 2}`.
+**A value of the mixed-sign subset-sum bound.** For $n = 1$, $p = 2$ and $\alpha = \beta = 1$,
+the mixed-sign subset-sum bound is $L_{1,2}(1, 1) = 5$; this value comes from its second case.
+
+It is attained by $A = \{-1, 1, 2\}$: the sums of subsets of $A$ with one or two elements form
+$\{-1, 0, 1, 2, 3\}$.
 
 ## Depends on
 
-- [Mixed Sign Subset Sum Bound](mixed-sign-subset-sum-bound.md)
+- [Mixed-sign subset-sum bound](mixed-sign-subset-sum-bound.md)
 
 ## Sources
 

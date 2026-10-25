@@ -13,7 +13,7 @@ sequence `(w_i)` of `n`-variable words over `A` with
 
 ## Depends on
 
-- [Is CSet](../../../MathlibExt/part-03/semigroup-largeness/is-cset.md)
+- [C-sets in a semigroup](../../../MathlibExt/part-03/semigroup-largeness/is-cset.md)
 
 ## Sources
 

@@ -4,10 +4,10 @@ navigation: module
 
 # Cobham Uniform Morphism
 
-- [Base Word Value LSD](base-word-value-lsd.md)
-- [Is KAutomatic Sequence](is-kautomatic-sequence.md)
-- [Is Coding Of Prolongable KUniform Fixed Point](is-coding-of-prolongable-kuniform-fixed.md)
-- [Cobham automatic iff uniform morphic](cobham-automatic-iff-uniform-morphic.md)
-- [Is Coding Of Prolongable KUniform Fixed Point iff](is-coding-of-prolongable-kuniform-fixed-2.md)
-- [Exists is Morphic](exists-is-morphic.md)
-- [Exists is Morphic](exists-is-morphic-2.md)
+- [Value of a base-$k$ digit word, least significant digit first](base-word-value-lsd.md)
+- [Automatic sequences via finite automata](is-kautomatic-sequence.md)
+- [Codings of prolongable uniform fixed points](is-coding-of-prolongable-kuniform-fixed.md)
+- [Cobham's characterization of automatic sequences](cobham-automatic-iff-uniform-morphic.md)
+- [Uniform fixed-point codings via iterates of a uniform map](is-coding-of-prolongable-kuniform-fixed-2.md)
+- [Uniform fixed-point codings are morphic](exists-is-morphic.md)
+- [Automatic sequences are morphic](exists-is-morphic-2.md)

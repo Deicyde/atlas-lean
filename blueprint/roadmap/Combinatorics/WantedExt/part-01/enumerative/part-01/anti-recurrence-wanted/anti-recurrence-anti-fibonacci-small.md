@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.antiRecurrence_antiFibonacci_small
 ---
 
-# Anti Recurrence anti Fibonacci small
+# First anti-Fibonacci anti-recurrence numbers
 
-The anti-Fibonacci numbers (`a = (1, 1)`, OEIS A075326) start `3, 9, 13, 18`, and agree
-with `antiFibonacciC`.
+**First anti-Fibonacci anti-recurrence numbers.** The anti-recurrence numbers
+$A_1, A_2, A_3, A_4$ of the linear form $(1, 1)$ are $3, 9, 13, 18$, and the first four
+anti-Fibonacci numbers $C_1, C_2, C_3, C_4$ of the Walnut anti-Fibonacci construction
+(OEIS A075326) are also $3, 9, 13, 18$; so the two sequences agree for $1 \le n \le 4$.
 
 ## Depends on
 
 - [Anti Fibonacci C](../../part-06/walnut-oeis-problems-wanted/anti-fibonacci-c.md)
-- [Anti Recurrence](anti-recurrence.md)
+- [Anti-recurrence numbers](anti-recurrence.md)
 
 ## Sources
 

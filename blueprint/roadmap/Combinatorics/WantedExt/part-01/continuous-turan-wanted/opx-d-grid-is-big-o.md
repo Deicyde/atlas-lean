@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.opxD_grid_isBigO
 ---
 
-# Opx D grid is Big O
+# Upper bound for higher-dimensional grid patterns
 
-Corollary 5.13: a full grid `P = X_1 × ⋯ × X_d` (so `M_P = J_{k_1, …, k_d}`, `k_i = |X_i|`) has
-`opx(n, P, d) = O(n^{d - α})`, `α = max_i k_i / ∏_i k_i`. Stated along natural `n`; if some
-`k_i = 0` then `P = ∅` and the bound reads `O(n^d)` (Lean's `x / 0 = 0`).
+**Upper bound for higher-dimensional grid patterns.** Let $X_1, \dots, X_d$ be finite sets of
+real numbers, $k_i = |X_i|$, and $P = X_1 \times \dots \times X_d \subseteq \mathbb{R}^d$. Put
+$\alpha = \max_i k_i / \prod_i k_i$ if $d \ge 1$ and every $k_i$ is positive, and $\alpha = 0$
+otherwise. Then $\mathrm{opx}(n, P, d) = O(n^{d - \alpha})$ as the natural number $n \to \infty$.
+
+When some $k_i = 0$ the grid $P$ is empty and the bound reads $O(n^d)$.
 
 ## Depends on
 

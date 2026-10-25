@@ -6,10 +6,11 @@ statement: formalized
 lean: SimpleGraph.Cocolorable
 ---
 
-# Cocolorable
+# Cocolorable graphs
 
-`G.Cocolorable n` means that the vertices of `G` can be colored with `n` colors so that each
-color class induces either an independent set or a complete graph.
+**Cocolorable graphs.** A graph $G$ is cocolorable with $n$ colors if there is a map from its
+vertices to the colors $\{0, \dots, n-1\}$ such that each color class induces either an
+independent set or a complete graph in $G$.
 
 ## Depends on
 

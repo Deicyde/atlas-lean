@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.hypercubeGraph_subgraph_edgeSet_ncard_le
 ---
 
-# Hypercube Graph subgraph edge Set ncard le
+# Subgraphs of the hypercube have at most as many edges
 
-Every subgraph of `Q_n` has at most as many edges as `Q_n`.
+**Subgraphs of the hypercube have at most as many edges.** For every natural number $n$,
+every subgraph of the $n$-dimensional hypercube $Q_n$ has at most as many edges as $Q_n$.
 
 ## Depends on
 
-- [Hypercube Graph](hypercube-graph.md)
+- [Hypercube graph](hypercube-graph.md)
 
 ## Sources
 

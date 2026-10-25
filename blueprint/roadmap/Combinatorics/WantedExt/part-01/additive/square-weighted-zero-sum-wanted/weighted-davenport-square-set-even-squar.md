@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport_squareSet_evenSquare_lowerBound
 ---
 
-# Weighted Davenport square Set even Square lower Bound
+# Square-weighted Davenport constant of even squares is at least four
 
-Theorem 12: if `n ≥ 2` is even and a natural-number square, then
-`4 ≤ D_{S(n)}` (in `ℕ∞`); `n ≥ 2` is the paper's ambient convention.
+**Square-weighted Davenport constant of even squares is at least four.** Let $n \ge 2$ be an
+even perfect square. Write $S(n)$ for the set of nonzero squares in
+$\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$ and $D_{S(n)} \in \mathbb{N} \cup \{\infty\}$ for the
+weighted Davenport constant of $\mathbb{Z}_n$ with weight set $S(n)$, a weight acting by
+multiplication. Then $D_{S(n)} \ge 4$.
 
 ## Depends on
 
-- [Square Set](square-set.md)
+- [Nonzero squares modulo $n$](square-set.md)
 - [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
-- [Zmod Weight Reps](zmod-weight-reps.md)
+- [Representatives of a set of residues](zmod-weight-reps.md)
 
 ## Sources
 

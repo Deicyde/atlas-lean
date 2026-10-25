@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.IsKAutomatic
 ---
 
-# Is KAutomatic
+# $k$-automatic sequence (finite-kernel definition)
 
-`k`-automaticity of a sequence via the Eilenberg finite-kernel characterization.
+**$k$-automatic sequence (finite-kernel definition).** For a natural number $k$, a sequence
+$a$ indexed by $\mathbb{N}$ is $k$-automatic when $k \ge 2$ and the $k$-kernel of $a$ is finite.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [K Kernel](k-kernel.md)
+- [The $k$-kernel of a sequence](k-kernel.md)
 
 ## Sources
 

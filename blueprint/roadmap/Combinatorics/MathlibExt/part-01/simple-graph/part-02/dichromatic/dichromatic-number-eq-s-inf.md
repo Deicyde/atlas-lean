@@ -7,14 +7,16 @@ proof: formalized
 lean: SimpleGraph.DichromaticColorable.dichromaticNumber_eq_sInf
 ---
 
-# Dichromatic Number eq s Inf
+# The dichromatic number as a least natural number
 
-Finite dichromatic-colorability description of the dichromatic number.
+**The dichromatic number as a least natural number.** Let $G$ be a simple graph. If $G$ is
+dichromatically $n$-colourable for some natural number $n$, then the dichromatic number of $G$
+equals the least natural number $k$ such that $G$ is dichromatically $k$-colourable.
 
 ## Depends on
 
-- [Dichromatic Colorable](dichromatic-colorable.md)
-- [Dichromatic Number](dichromatic-number.md)
+- [Dichromatically $k$-colourable graphs](dichromatic-colorable.md)
+- [Dichromatic number](dichromatic-number.md)
 
 ## Sources
 

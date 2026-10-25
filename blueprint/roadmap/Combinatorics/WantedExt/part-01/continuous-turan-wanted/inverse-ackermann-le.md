@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.inverseAckermann_le
 ---
 
-# Inverse Ackermann le
+# Upper bound for the inverse Ackermann function
 
-`α(n) ≤ k` whenever `n ≤ A(k, k)`.
+**Upper bound for the inverse Ackermann function.** For all natural numbers $n$ and $k$, if
+$n \le A(k, k)$, where $A$ is the two-argument Ackermann function, then $\alpha(n) \le k$, where
+$\alpha$ is the inverse Ackermann function.
 
 ## Depends on
 
-- [Inverse Ackermann](inverse-ackermann.md)
+- [Inverse Ackermann function](inverse-ackermann.md)
 
 ## Sources
 

@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsMulJSet
 ---
 
-# Is Mul JSet
+# J-sets in a semigroup
 
-A set `D` in a semigroup `S` is a `J`-set: for every nonempty finite set `F` of sequences
-`ℕ → S` there are `m ≥ 1`, `a_1, …, a_{m+1} ∈ S` and indices `t_1 < ⋯ < t_m` with
-`(∏_{j=1}^m a_j f(t_j)) a_{m+1} ∈ D` for every `f ∈ F`. Here `m` is written `m + 1` and the
-indices start at `0`.
+**J-sets in a semigroup.** A set $D$ in a semigroup $S$ is a $J$-set when for every nonempty
+finite set $F$ of sequences $f : \mathbb{N} \to S$, where $\mathbb{N} = \{0, 1, 2, \dots\}$,
+there are an integer $m \ge 1$, elements $a_1, \dots, a_{m+1} \in S$ and indices
+$t_1 < \dots < t_m$ in $\mathbb{N}$ such that
+$a_1 f(t_1) a_2 f(t_2) \cdots a_m f(t_m) a_{m+1} \in D$ for every $f \in F$.
 
 ## Depends on
 

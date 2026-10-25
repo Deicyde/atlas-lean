@@ -6,17 +6,18 @@ proof: formalized
 lean: SimpleGraph.IsDegenerate.mono
 ---
 
-# Mono
+# Degeneracy is monotone in the bound
 
-Increasing the degree bound preserves degeneracy.
+**Degeneracy is monotone in the bound.** Let $G$ be a simple graph on a finite
+vertex set. If $G$ is $k$-degenerate and $k \le l$, then $G$ is $l$-degenerate.
 
 ## Depends on
 
-- [Is Degenerate](../../part-01/degeneracy/is-degenerate.md)
+- [Degenerate graph](../../part-01/degeneracy/is-degenerate.md)
 
 ## Proof depends on
 
-- [Mono](../../part-01/degeneracy/mono.md)
+- [Degeneracy on a vertex set is monotone in the degree bound](../../part-01/degeneracy/mono.md)
 
 ## Sources
 

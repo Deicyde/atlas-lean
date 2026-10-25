@@ -5,8 +5,8 @@ navigation: module
 
 # Cycle Cover
 
-- [Cycle](cycle.md)
-- [Edges](edges.md)
-- [Length](length.md)
-- [Is Cycle Cover](is-cycle-cover.md)
-- [Total Length](total-length.md)
+- [Cycles in a graph](cycle.md)
+- [Edges of a cycle](edges.md)
+- [Length of a cycle](length.md)
+- [Cycle covers](is-cycle-cover.md)
+- [Total length of a multiset of cycles](total-length.md)

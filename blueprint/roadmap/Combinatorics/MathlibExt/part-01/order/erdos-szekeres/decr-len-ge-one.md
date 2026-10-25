@@ -7,20 +7,22 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.decrLen_ge_one
 ---
 
-# Decr Len ge one
+# The longest decreasing subsequence ending at a point has length at least one
 
-Lengths are positive.
+**The longest decreasing subsequence ending at a point has length at least one.** For every
+real sequence $f$ indexed by $\{0, \dots, N-1\}$ and every index $p$, the length of the longest
+strictly decreasing subsequence of $f$ ending at $p$ is at least $1$.
 
 ## Depends on
 
-- [Decr Len](decr-len.md)
+- [Length of the longest decreasing subsequence ending at a point](decr-len.md)
 
 ## Proof depends on
 
-- [Is Decr Subseq](is-decr-subseq.md)
-- [Le decr Len](le-decr-len.md)
-- [Singleton decr](singleton-decr.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Decreasing subsequence](is-decr-subseq.md)
+- [Bound by the longest decreasing subsequence ending at a position](le-decr-len.md)
+- [One-term subsequences are decreasing](singleton-decr.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

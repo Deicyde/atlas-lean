@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.mul_ne_of_mul_eq_of_distinct
 ---
 
-# Mul ne of mul eq of distinct
+# One equal pairing of products excludes the other two
 
-Lemma 2: if `a, b, c, d` are distinct positive reals with `ab = cd`, then neither
-`ad = bc` nor `ac = bd`.
+**One equal pairing of products excludes the other two.** Let $a$, $b$, $c$, $d$ be pairwise
+distinct positive real numbers with $ab = cd$. Then $ad \neq bc$ and $ac \neq bd$.
 
 ## Depends on
 

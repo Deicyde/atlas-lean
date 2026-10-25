@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.fib_two_mul_eq_sum_sum_choose_mul_fib_odd
 ---
 
-# Fib two mul eq sum sum choose mul fib odd
+# A double-sum identity for even-indexed Fibonacci numbers
 
-Mansour and Shattuck's Lemma 5, identity (22): for `n ≥ 1`,
-`F_{2n} = ∑_{j=1}^{n} ∑_{m=0}^{n-j} C(n-m-1, j-1) F_{2m-1}`, with `F_{-1} = 1` as in
-`sum_choose_mul_fib_odd_eq_choose_add_sum`.
+**A double-sum identity for even-indexed Fibonacci numbers.** Let $F_k$ be the Fibonacci
+numbers, with $F_0 = 0$, $F_1 = 1$ and $F_{k+2} = F_{k+1} + F_k$, and set $F_{-1} = 1$. For every
+natural number $n \ge 1$,
+
+$$F_{2n} = \sum_{j=1}^{n} \sum_{m=0}^{n-j} \binom{n-m-1}{j-1} F_{2m-1}.$$
 
 ## Depends on
 

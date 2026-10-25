@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.IsBridgeless.mk
 ---
 
-# Mk
+# Bridgeless from non-bridge edges
 
-Constructor for `IsBridgeless` from pointwise non-bridge data.
+**Bridgeless from non-bridge edges.** If no edge of a simple graph $G$ is a bridge, then $G$ is
+bridgeless.
 
 ## Depends on
 
-- [Is Bridgeless](is-bridgeless.md)
+- [Bridgeless graph](is-bridgeless.md)
 
 ## Sources
 

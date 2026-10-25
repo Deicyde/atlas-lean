@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsRamseyFamily
 ---
 
-# Is Ramsey Family
+# Families with the Ramsey property
 
-`F` is a family with the Ramsey property: a nonempty, upward hereditary
-collection of nonempty subsets of `S` such that whenever `A ∪ B ∈ F`, one of `A`,
-`B` lies in `F`.
+**Families with the Ramsey property.** Let $S$ be a set. A collection $F$ of subsets of $S$ is
+a family with the Ramsey property when $F$ is nonempty, $\emptyset \notin F$, $F$ is closed under
+supersets (if $A \in F$ and $A \subseteq B$, then $B \in F$), and whenever $A \cup B \in F$, then
+$A \in F$ or $B \in F$.
 
 ## Depends on
 

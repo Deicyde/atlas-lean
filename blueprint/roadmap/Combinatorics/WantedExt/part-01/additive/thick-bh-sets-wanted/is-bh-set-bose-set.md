@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.isBhSet_boseSet
 ---
 
-# Theorem 3, Bose part
+# Bose's construction of $B_h$-sets
 
-**Theorem 3, Bose part.** If `h ≥ 2`, `K` is a degree-`h` extension of the finite field
-`F` with `q` elements, `θ` generates `K^×`, and `θ^b` has degree `h` over `F`, then
-`Bose_h(q, b)` is a `B_h`-set in `ℤ/(q^h - 1)ℤ` with exactly `q` elements.
+**Bose's construction of $B_h$-sets.** Let $h \ge 2$, let $F$ be a finite field with $q$
+elements, let $K$ be a field extension of $F$ of degree $h$, let $\theta$ be a generator of the
+multiplicative group $K^\times$, and let $b$ be a natural number such that $\theta^b$ has degree
+$h$ over $F$. Then the generalized Bose set $\mathrm{Bose}_h(q, b)$, a subset of
+$\mathbb{Z}/(q^h - 1)\mathbb{Z}$, is a $B_h$-set with exactly $q$ elements.
 
 ## Depends on
 
 - [$B_h$-set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
-- [Bose Set](bose-set.md)
+- [Generalized Bose set](bose-set.md)
 
 ## Sources
 

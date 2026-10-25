@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.ncard_index_two_addSubgroup_rank
 ---
 
-# Ncard index two add Subgroup rank
+# Ranks of the index-two subgroups of a finite abelian 2-group
 
-For `G = ℤ_{2^{α₁}} ⊕ … ⊕ ℤ_{2^{α_{r₁}}} ⊕ ℤ₂^{r₂}` with every `αᵢ ≥ 2` and
-`r = r₁ + r₂ ≥ 1`, exactly `2^{r₁} - 1` index-2 subgroups have rank `r` and exactly
-`2^r - 2^{r₁}` have rank `r - 1` (rank = minimal number of generators, `AddGroup.rank`).
+**Ranks of the index-two subgroups of a finite abelian 2-group.** Let $r_1, r_2$ be natural
+numbers with $r = r_1 + r_2 \ge 1$, let $\alpha_1, \dots, \alpha_{r_1} \ge 2$, and let
+$G = \mathbb{Z}_{2^{\alpha_1}} \oplus \dots \oplus \mathbb{Z}_{2^{\alpha_{r_1}}} \oplus
+\mathbb{Z}_2^{r_2}$. Then exactly $2^{r_1} - 1$ subgroups of $G$ of index $2$ have rank $r$,
+and exactly $2^r - 2^{r_1}$ subgroups of $G$ of index $2$ have rank $r - 1$, where the rank
+of a group is the minimal number of its generators.
 
 ## Depends on
 

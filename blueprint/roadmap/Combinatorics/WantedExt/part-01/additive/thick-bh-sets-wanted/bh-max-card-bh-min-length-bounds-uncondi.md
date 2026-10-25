@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.bhMaxCard_bhMinLength_bounds_unconditional
 ---
 
-# Theorem 5(a)
+# Unconditional bounds for $R_h(n)$ and $R_h^{-1}(k)$
 
-**Theorem 5(a).** For `h ≥ 2` and all `n, k ∈ ℕ`,
-`R_h(n) ≥ n^(1/h) - 2^44 n^(154/(155h))` and `R_h⁻¹(k) ≤ k^h + 3^(155h) k^(h - 1/155)`.
+**Unconditional bounds for $R_h(n)$ and $R_h^{-1}(k)$.** Let $h \ge 2$. Write $R_h(n)$ for the
+largest size of a $B_h$-set contained in $\{1, \dots, n\}$, with $R_h(0) = 0$, and $R_h^{-1}(k)$
+for the least $n$ such that $\{1, \dots, n\}$ contains a $B_h$-set with $k$ elements, with
+$R_h^{-1}(0) = 0$ (a $B_h$-set is nonempty). Then every natural number $n$ satisfies
+$R_h(n) \ge n^{1/h} - 2^{44} n^{154/(155h)}$, and every natural number $k$ satisfies
+$R_h^{-1}(k) \le k^h + 3^{155h} k^{h - 1/155}$.
 
 ## Depends on
 
-- [Bh Max Card](bh-max-card.md)
-- [Bh Min Length](bh-min-length.md)
+- [Maximum size of a $B_h$-set in $\{1, \dots, n\}$](bh-max-card.md)
+- [Shortest interval containing a $B_h$-set of given size](bh-min-length.md)
 
 ## Sources
 

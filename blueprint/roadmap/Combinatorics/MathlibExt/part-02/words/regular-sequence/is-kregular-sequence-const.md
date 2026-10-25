@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isKRegularSequence_const
 ---
 
-# Is KRegular Sequence const
+# Constant sequences are $k$-regular
 
-Constant sequences are `k`-regular for every base `k ≥ 2`.
+**Constant sequences are $k$-regular.** For every natural number $k \ge 2$ and every integer
+$c$, the constant sequence $n \mapsto c$ is $k$-regular.
 
 ## Depends on
 
-- [Is KRegular Sequence](is-kregular-sequence.md)
+- [$k$-regular sequence](is-kregular-sequence.md)
 
 ## Proof depends on
 
-- [K Kernel](../automatic/k-kernel.md)
+- [The $k$-kernel of a sequence](../automatic/k-kernel.md)
 
 ## Sources
 

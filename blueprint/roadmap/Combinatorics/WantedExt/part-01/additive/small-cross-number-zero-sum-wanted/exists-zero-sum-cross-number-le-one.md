@@ -5,15 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.exists_zero_sum_cross_number_le_one
 ---
 
-# Exists zero sum cross number le one
+# Zero-sum subsequences of cross number at most one (Geroldinger; Elledge–Hurlbert)
 
-Theorem 3 (Geroldinger; Elledge–Hurlbert), as quoted by Bushaw and
-Hurlbert: in a finite abelian group `Γ`, every sequence of `|Γ|` elements is
-*good*, i.e. it contains a zero-sum subsequence with cross number
-`∑ 1 / |gᵢ|` at most one, where `|gᵢ|` is the order of `gᵢ`. The sequence is
-indexed by `Fin |Γ|`, a subsequence is a nonempty index set (the empty
-subsequence would make the claim vacuous), and the cross number is computed
-in `ℚ`.
+**Zero-sum subsequences of cross number at most one (Geroldinger; Elledge–Hurlbert).** Let
+$\Gamma$ be a finite abelian group of order $|\Gamma|$. Every sequence $g_1, \dots, g_{|\Gamma|}$
+of $|\Gamma|$ elements of $\Gamma$ has a nonempty zero-sum subsequence with cross number at most
+one: there is a nonempty set $S \subseteq \{1, \dots, |\Gamma|\}$ of indices with
+$\sum_{i \in S} g_i = 0$ and $\sum_{i \in S} 1/\operatorname{ord}(g_i) \le 1$, where
+$\operatorname{ord}(g_i)$ is the order of $g_i$.
 
 ## Depends on
 

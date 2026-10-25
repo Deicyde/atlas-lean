@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_small
 ---
 
-# Bridge Weight small
+# First seven weights of the capacity-3 lower bound
 
-The weights `y₁, …, y₇` are `0, 0, 0, 2, 4, 5, 20/3`.
+**First seven weights of the capacity-3 lower bound.** The weights $y_1, \dots, y_7$ of the
+capacity-3 lower bound are $0, 0, 0, 2, 4, 5, 20/3$.
 
 ## Depends on
 
-- [Bridge Weight](bridge-weight.md)
+- [Weights of the capacity-3 lower bound](bridge-weight.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MatrixDiscrepancy.signValue
 ---
 
-# Sign Value
+# Signs indexed by two elements
 
-Both real signs, enumerated by a finite two-element type.
+**Signs indexed by two elements.** For $s \in \{0, 1\}$, the associated real sign is $-1$
+if $s = 0$ and $1$ if $s = 1$.
 
 ## Depends on
 

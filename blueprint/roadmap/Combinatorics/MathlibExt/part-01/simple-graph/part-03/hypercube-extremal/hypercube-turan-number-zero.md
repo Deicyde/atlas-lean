@@ -7,19 +7,20 @@ proof: formalized
 lean: SimpleGraph.hypercubeTuranNumber_zero
 ---
 
-# Hypercube Turan Number zero
+# The hypercube Turán number in dimension zero
 
-Boundary value: the extremal number over `Q_0` is zero.
+**The hypercube Turán number in dimension zero.** For every simple graph $H$, writing $Q_0$
+for the $0$-dimensional hypercube, the hypercube Turán number $\mathrm{ex}(Q_0, H)$ is $0$.
 
 ## Depends on
 
-- [Hypercube Turan Number](hypercube-turan-number.md)
+- [Hypercube Turán number](hypercube-turan-number.md)
 
 ## Proof depends on
 
-- [Hypercube Graph](hypercube-graph.md)
-- [Hypercube Graph zero edge Set](hypercube-graph-zero-edge-set.md)
-- [Hypercube Turan Number le edge Set ncard](hypercube-turan-number-le-edge-set-ncard.md)
+- [Hypercube graph](hypercube-graph.md)
+- [The zero-dimensional hypercube has no edges](hypercube-graph-zero-edge-set.md)
+- [Upper bound for the hypercube Turán number](hypercube-turan-number-le-edge-set-ncard.md)
 
 ## Sources
 

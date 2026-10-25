@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.circularEulerian
 ---
 
-# Circular Eulerian
+# Circular Eulerian numbers
 
-The circular Eulerian number `C_{n,m}`: the number of circular permutations of
-`n ≥ 1` objects (a single cycle through all points, so the identity of one point is
-circular) with exactly `m` excedances. A permutation of `Fin n` is circular when
-`n ≥ 1` and all points lie in one cycle (`Equiv.Perm.SameCycle`); for `n ≥ 2` this is
-Mathlib's `n`-cycle `σ.IsCycle ∧ σ.support = Finset.univ`
-(`sameCycle_all_iff_isCycle_support_eq_univ`). The empty permutation of `Fin 0` has no
-cycle, so `C_{0,m} = 0`.
+**Circular Eulerian numbers.** For natural numbers $n$ and $m$, the circular Eulerian number
+$C_{n,m}$ is the number of permutations $\sigma$ of $\{0, 1, \dots, n-1\}$ such that $n \ge 1$,
+all points lie in a single cycle of $\sigma$ (for any two points $i$ and $j$ there is an integer
+$k$ with $\sigma^k(i) = j$), and $\sigma$ has exactly $m$ excedances, that is, exactly $m$ points
+$i$ with $\sigma(i) > i$. In particular $C_{0,m} = 0$ for every $m$, and the identity permutation
+of a single point counts as circular.
+
+For $n \ge 2$ the permutations with a single cycle through all points are exactly the $n$-cycles.
 
 ## Depends on
 
@@ -21,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Excedance Count](excedance-count.md)
+- [Number of excedances](excedance-count.md)
 
 ## Sources
 

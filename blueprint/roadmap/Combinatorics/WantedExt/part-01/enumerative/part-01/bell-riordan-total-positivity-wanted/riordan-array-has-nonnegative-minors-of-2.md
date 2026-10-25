@@ -16,9 +16,9 @@ cleared). If `J(Q(x), P(x))` is totally positive, `s² ≥ 4t` and `as + a√(s�
 
 ## Depends on
 
-- [Is Riordan Array AZ](is-riordan-array-az.md)
+- [Riordan array with given A- and Z-sequences](is-riordan-array-az.md)
 - [Nonnegative Minors](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/has-nonnegative-minors.md)
-- [Riordan Coeff Matrix](riordan-coeff-matrix.md)
+- [Coefficient matrix of a Riordan array](riordan-coeff-matrix.md)
 
 ## Sources
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.lacunary_union_avoids_integers
 ---
 
-# Lacunary union avoids integers
+# Dilates of a finite union of lacunary sets stay away from the integers
 
-A finite nonempty union of lacunary sets admits `α` and a positive `ε`
-whose nearest-integer distances have infimum exactly `ε`.  `sInf` formalizes
-the displayed infimum.
+**Dilates of a finite union of lacunary sets stay away from the integers.** Let $\ell \ge 1$
+and let $S_0, \dots, S_{\ell-1} \subseteq \mathbb{N}$ be lacunary sets with union
+$S = \bigcup_i S_i$. Then there are real numbers $\alpha$ and $\varepsilon > 0$ such that the
+infimum over $s \in S$ of the distance $|\alpha s - \operatorname{round}(\alpha s)|$ from
+$\alpha s$ to its nearest integer $\operatorname{round}(\alpha s)$ equals $\varepsilon$.
 
 ## Depends on
 
-- [Is Lacunary Set](is-lacunary-set.md)
+- [Lacunary set](is-lacunary-set.md)
 
 ## Sources
 

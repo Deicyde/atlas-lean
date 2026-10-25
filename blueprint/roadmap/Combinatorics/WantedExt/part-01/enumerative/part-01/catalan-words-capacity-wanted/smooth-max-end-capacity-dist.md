@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.smoothMaxEndCapacityDist
 ---
 
-# Smooth Max End Capacity Dist
+# Capacity distribution of smooth words ending in their largest letter
 
-`s(n, i; q)`, the capacity distribution on smooth words of length `n` ending in `i` whose
-largest letter is `i`.
+**Capacity distribution of smooth words ending in their largest letter.** For $n, i \ge 0$,
+$s(n, i; q)$ is the polynomial $\sum_w q^{\operatorname{cap}(w)} \in \mathbb{Z}[q]$, where $w$ runs
+over the smooth words of length $n$ whose last letter is $i$ and all of whose letters are at most
+$i$, and $\operatorname{cap}(w)$ is the capacity of $w$.
 
 ## Depends on
 
@@ -16,10 +18,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Smooth Words](smooth-words.md)
-- [Words Bounded By](words-bounded-by.md)
-- [Words Ending In](words-ending-in.md)
+- [Capacity distribution](capacity-dist.md)
+- [Smooth words](smooth-words.md)
+- [Words with all letters at most a bound](words-bounded-by.md)
+- [Words ending in a given letter](words-ending-in.md)
 
 ## Sources
 

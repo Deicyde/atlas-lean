@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsMaxMinIndecomposable
 ---
 
-# Is Max Min Indecomposable
+# Max-min indecomposable sequences
 
-An indecomposable (in the arXiv version: irreducible) element: `f = g ⊗ h` forces `g` or `h`
-to be a monomial. Factors range over all sequences `ℕ → ℕ`; for `f` with coefficients below `b`
-this is equivalent to factoring over `ℬ_b`, by applying the digit map `min (·) (b - 1)`.
+**Max-min indecomposable sequences.** A coefficient sequence $f : \mathbb{N} \to \mathbb{N}$
+is indecomposable (in the arXiv version: irreducible) when for all sequences
+$g, h : \mathbb{N} \to \mathbb{N}$ with $g \otimes h = f$, where $\otimes$ is the max-min product,
+$g$ or $h$ is a max-min monomial, that is, a sequence with exactly one nonzero term.
+
+Factors range over all sequences $\mathbb{N} \to \mathbb{N}$; for a natural number $b$ and $f$
+with all terms less than $b$, this is equivalent to factoring over $\{0, \dots, b - 1\}$, by
+applying the digit map $x \mapsto \min(x, b - 1)$.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Max Min Monomial](is-max-min-monomial.md)
-- [Max Min Mul](max-min-mul.md)
+- [Monomials over the max-min semiring](is-max-min-monomial.md)
+- [Max-min product](max-min-mul.md)
 
 ## Sources
 

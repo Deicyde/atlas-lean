@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.inducedForestNumber_le_card
 ---
 
-# Induced Forest Number le card
+# The induced forest number is at most the number of vertices
 
-The induced forest number is bounded by the total number of vertices.
+**The induced forest number is at most the number of vertices.** For every simple graph $G$
+on a finite vertex set $V$, the induced forest number of $G$ is at most $|V|$.
 
 ## Depends on
 
-- [Induced Forest Number](induced-forest-number.md)
+- [Induced forest number](induced-forest-number.md)
 
 ## Sources
 

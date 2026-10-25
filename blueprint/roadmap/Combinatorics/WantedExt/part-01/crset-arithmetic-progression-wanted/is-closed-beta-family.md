@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isClosed_betaFamily
 ---
 
-# Theorem 3, part 1
+# Ultrafilters inside a Ramsey family form a closed set
 
-**Theorem 3, part 1.** For a family `F` with the Ramsey property, `β(F)` is
-closed in `βS`.
+**Ultrafilters inside a Ramsey family form a closed set.** Let $F$ be a family of subsets of a
+set $S$ with the Ramsey property. Then the set $\beta(F)$ of ultrafilters on $S$ all of whose
+members lie in $F$ is closed in the space $\beta S$ of all ultrafilters on $S$.
 
 ## Depends on
 
-- [Is Ramsey Family](is-ramsey-family.md)
-- [Beta Family](beta-family.md)
+- [Families with the Ramsey property](is-ramsey-family.md)
+- [The set β(F) of ultrafilters inside a family](beta-family.md)
 
 ## Sources
 

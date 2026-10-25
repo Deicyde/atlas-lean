@@ -7,21 +7,26 @@ proof: formalized
 lean: IsogenyVolcano.surface_degreeOn
 ---
 
-# Surface degree On
+# Surface regularity of an isogeny volcano
 
-Surface regularity via surface predicates.
+**Surface regularity of an isogeny volcano.** Let $C$ be an $\ell$-isogeny volcano with edge
+multiplicities $m$ and surface degree $s$. For every surface vertex $v$ of $C$, that is, every
+vertex of level $0$, the sum of $m(v, w)$ over all surface vertices $w$ of $C$ equals $s$.
+
+This restates the surface-regularity condition of an isogeny volcano in terms of the surface
+predicate.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
-- [Is Surface](is-surface.md)
+- [Isogeny volcano](isogeny-volcano.md)
+- [Surface of a volcano](is-surface.md)
 - [Multigraph](multigraph.md)
-- [Degree On](degree-on.md)
+- [Degree restricted to a predicate](degree-on.md)
 
 ## Proof depends on
 
-- [Is Surface iff](is-surface-iff.md)
-- [Degree On congr](degree-on-congr.md)
+- [Surface vertices are those of level zero](is-surface-iff.md)
+- [Restricted degree depends only on the neighbours](degree-on-congr.md)
 
 ## Sources
 

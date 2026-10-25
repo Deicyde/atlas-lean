@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.maxDistinctSumFreeCount
 ---
 
-# Max Distinct Sum Free Count
+# Number of maximal distinct sum-free sets
 
-`f*_max(G)`: the number of maximal distinct sum-free subsets of `G`.
+**Number of maximal distinct sum-free sets.** Let $G$ be a set with an addition. The number
+$f^*_{\max}(G)$ is the number of subsets of $G$ that are maximal, with respect to inclusion, among
+the distinct sum-free subsets of $G$, and it is $0$ if there are infinitely many such subsets.
+Here $S \subseteq G$ is distinct sum-free if $x + y \notin S$ for all $x, y \in S$ such that $x$,
+$y$ and $x + y$ are pairwise distinct.
 
 ## Depends on
 
@@ -15,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Distinct Sum Free Set](is-distinct-sum-free-set.md)
+- [Distinct sum-free sets](is-distinct-sum-free-set.md)
 
 ## Sources
 

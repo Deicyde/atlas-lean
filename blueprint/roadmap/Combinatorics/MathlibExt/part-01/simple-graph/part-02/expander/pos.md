@@ -7,17 +7,18 @@ proof: formalized
 lean: SimpleGraph.IsCExpander.pos
 ---
 
-# Pos
+# The parameter of a C-expander is positive
 
-A `C`-expander satisfies `0 < C`.
+**The parameter of a C-expander is positive.** Let $G$ be a simple graph on a finite vertex
+set $V$ and let $C$ be a real number. If $G$ is a $C$-expander, then $C > 0$.
 
 ## Depends on
 
-- [Is CExpander](is-cexpander.md)
+- [C-expander](is-cexpander.md)
 
 ## Proof depends on
 
-- [External Neighbor Set](external-neighbor-set.md)
+- [External neighbourhood](external-neighbor-set.md)
 
 ## Sources
 

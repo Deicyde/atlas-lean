@@ -7,13 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.bell_count_perm_increasing_weakExcedance_letters
 ---
 
-# Bell Weak Excedance
+# Bell numbers count permutations with increasing weak excedance letters
 
-The number of permutations in `𝔖 n` having increasing subword of weak excedance
-letters is the `n`th Bell number `B n`.
-
-A position `i` is a weak excedance when `i ≤ σ i`; the hypothesis says
-the values at weak-excedance positions are strictly increasing.
+**Bell numbers count permutations with increasing weak excedance letters.** A position $i$ is a
+weak excedance of a permutation $\sigma$ when $i \le \sigma(i)$. For every $n$, the number of
+permutations $\sigma$ of $\{0, 1, \dots, n-1\}$ such that $\sigma(i) < \sigma(j)$ whenever
+$i < j$ are both weak excedances of $\sigma$ is the Bell number $B_n$.
 
 ## Depends on
 

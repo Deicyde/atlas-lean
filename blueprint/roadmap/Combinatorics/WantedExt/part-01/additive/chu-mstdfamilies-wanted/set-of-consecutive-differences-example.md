@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.setOfConsecutiveDifferences_example
 ---
 
-# Set Of Consecutive Differences example
+# An example of difference notation
 
-The paper's example: `(0 | 1, 5, 1, 1, 9, 7) = {0, 1, 6, 7, 8, 17, 24}`.
+**An example of difference notation.** The set with least element $0$ and consecutive
+differences $1, 5, 1, 1, 9, 7$ is $(0 \mid 1, 5, 1, 1, 9, 7) = \{0, 1, 6, 7, 8, 17, 24\}$.
 
 ## Depends on
 
-- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
+- [Sets given by consecutive differences](set-of-consecutive-differences.md)
 
 ## Sources
 

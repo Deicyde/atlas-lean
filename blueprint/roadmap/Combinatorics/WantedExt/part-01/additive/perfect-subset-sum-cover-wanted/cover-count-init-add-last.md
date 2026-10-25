@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.coverCount_init_add_last
 ---
 
-# Cover Count init add last
+# Removing the last element of a perfect $2^j$-cover
 
-Let `s = (x_1, …, x_{k+1})` be a perfect `2^j`-cover and `S₁ = (x_1, …, x_k)`. If `S₁`
-covers `a` exactly `c` times, then it covers `a + x_{k+1}` exactly `2^j - c` times.
+**Removing the last element of a perfect $2^j$-cover.** Let $G$ be an abelian group, let
+$s = (x_1, \dots, x_{k+1})$ be a family in $G$ that is a perfect $2^j$-cover of $G$, and let
+$S_1 = (x_1, \dots, x_k)$. For every $a \in G$, if $S_1$ covers $a$ exactly $c$ times, then
+$S_1$ covers $a + x_{k+1}$ exactly $2^j - c$ times.
 
 ## Depends on
 
-- [Is Perfect MCover](is-perfect-mcover.md)
-- [Cover Count](cover-count.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
+- [Cover count](cover-count.md)
 
 ## Sources
 

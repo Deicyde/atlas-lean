@@ -6,19 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.not_isMaxMinIndecomposable_zero
 ---
 
-# Not is Max Min Indecomposable zero
+# The zero sequence is decomposable
 
-The zero sequence is decomposable: `0 = 0 ⊗ 0`.
+**The zero sequence is decomposable.** The zero coefficient sequence
+$\mathbb{N} \to \mathbb{N}$ is not indecomposable over the max-min semiring: it factors as
+$0 = 0 \otimes 0$, where $\otimes$ is the max-min product, and the zero sequence is not a
+monomial.
 
 ## Depends on
 
-- [Is Max Min Indecomposable](is-max-min-indecomposable.md)
+- [Max-min indecomposable sequences](is-max-min-indecomposable.md)
 
 ## Proof depends on
 
-- [Is Max Min Monomial](is-max-min-monomial.md)
-- [Max Min Mul](max-min-mul.md)
-- [Not is Max Min Monomial zero](not-is-max-min-monomial-zero.md)
+- [Monomials over the max-min semiring](is-max-min-monomial.md)
+- [Max-min product](max-min-mul.md)
+- [The zero sequence is not a monomial](not-is-max-min-monomial-zero.md)
 
 ## Sources
 

@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.setOfConsecutiveDifferences
 ---
 
-# Set Of Consecutive Differences
+# Sets given by consecutive differences
 
-The finset of partial sums `(a | g₁, …, g_r) = {a, a + g₁, a + g₁ + g₂, …, a + g₁ + ⋯ + g_r}`.
-When every gap `gᵢ` is positive (as in all uses below) its sorted sequence of consecutive
-differences is `g₁, …, g_r`; a zero gap repeats a partial sum, which the finset records once.
+**Sets given by consecutive differences.** For an integer $a$ and natural numbers
+$g_1, \dots, g_r$, the set $(a \mid g_1, \dots, g_r)$ is the finite set of integers
+$\{a, a + g_1, a + g_1 + g_2, \dots, a + g_1 + \dots + g_r\}$; for $r = 0$ it is $\{a\}$.
+
+When every $g_i$ is positive, the differences between consecutive elements of this set, listed
+from the smallest element to the largest, are $g_1, \dots, g_r$; a zero gap repeats a partial
+sum, which the set records once.
 
 ## Depends on
 

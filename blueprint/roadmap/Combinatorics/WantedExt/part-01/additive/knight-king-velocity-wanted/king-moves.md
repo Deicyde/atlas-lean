@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.kingMoves
 ---
 
-# King Moves
+# King moves
 
-`kingMoves` is the finite set of the eight unit horizontal, vertical, and
-diagonal moves defining the paper's king `K`.
+**King moves.** The king's move set $K \subset \mathbb{Z}^2$ consists of the eight unit
+horizontal, vertical and diagonal steps:
+
+$$K = \{(1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1), (0, -1), (1, -1)\}.$$
 
 ## Depends on
 

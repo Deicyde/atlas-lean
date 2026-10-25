@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.unitSet
 ---
 
-# Unit Set
+# Units modulo n
 
-`unitSet n` is the paper's `U(n)`, represented as the elements of `ZMod n`
-that satisfy `IsUnit`.
+**Units modulo n.** For a natural number $n$, $U(n)$ is the set of units of the ring
+$\mathbb{Z}/n\mathbb{Z}$ of integers modulo $n$.
 
 ## Depends on
 

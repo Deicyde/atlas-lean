@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.arndtU
 ---
 
-# Arndt U
+# The map $U$ on lists
 
-The map `U` on lists of parts, pair by pair:
-`(c₁, c₂) ↦ (1^{c₁ - c₂ - 1}, 2c₂ + 1)` if `c₂ < c₁`, and
-`(c₁, c₂) ↦ (1^{c₁ + c₂ - 2k}, 2k)` if `2k - 2 ≤ c₂ - c₁ < 2k` with `k ≥ 1`
-(that is, `k = (c₂ - c₁)/2 + 1`); a final unpaired part `c` (the pair `(c, 0)`) maps to `c`
-parts `1`.
+**The map $U$ on lists.** The map $U$ sends a list $(c_1, c_2, \dots)$ of natural
+numbers to the concatenation of the images of its consecutive pairs $(c_1, c_2)$, $(c_3, c_4)$,
+and so on, where $1^j$ denotes $j$ parts equal to $1$: a pair $(a, b)$ with $b < a$ goes to
+$(1^{a - b - 1}, 2b + 1)$; a pair $(a, b)$ with $b \ge a$ goes to $(1^{a + b - 2k}, 2k)$, where
+$k = \lfloor (b - a)/2 \rfloor + 1$ is the integer $k \ge 1$ with $2k - 2 \le b - a < 2k$; and a
+final unpaired entry $a$ goes to $1^a$. The empty list goes to itself. The exponent
+$a + b - 2k$ is read as $0$ when it is negative, which happens only when $a = 0$.
 
 ## Depends on
 

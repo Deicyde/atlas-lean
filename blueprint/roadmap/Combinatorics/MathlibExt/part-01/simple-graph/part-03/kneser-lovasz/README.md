@@ -4,5 +4,5 @@ navigation: module
 
 # Kneser Lovasz
 
-- [Kneser Graph adj iff](kneser-graph-adj-iff.md)
-- [Kneser lovasz](kneser-lovasz.md)
+- [Adjacency in the Kneser graph](kneser-graph-adj-iff.md)
+- [Kneser–Lovász theorem](kneser-lovasz.md)

@@ -7,11 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.strehl_franel_binomial_identity
 ---
 
-# Strehl Franel
+# Strehl's identity for the Franel numbers
 
-Strehl's binomial identity for Franel numbers: for every `n`, the sum of
-`C(n, k) ^ 2 * C(2 * k, n)` over `k = 0..n` equals the sum of `C(n, k) ^ 3`
-(the Franel numbers).
+**Strehl's identity for the Franel numbers.** For every natural number $n$,
+
+$$\sum_{k=0}^{n} \binom{n}{k}^2 \binom{2k}{n} = \sum_{k=0}^{n} \binom{n}{k}^3,$$
+
+where the right-hand side is the $n$-th Franel number.
 
 ## Depends on
 

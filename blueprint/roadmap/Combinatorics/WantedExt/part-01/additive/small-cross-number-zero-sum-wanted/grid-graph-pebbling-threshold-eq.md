@@ -5,22 +5,37 @@ statement: formalized
 lean: MetaMathlibExt.gridGraph_pebbling_threshold_eq
 ---
 
-# Grid Graph pebbling threshold eq
+# Bushaw–Kettle pebbling threshold for grids
 
-Bushaw–Kettle threshold for grids: for fixed `d ≥ 1` and costs `wᵢ ≥ 2`, every pebbling
-threshold function `t` of the grids `P_k^d = □_{i<d} P_k` with cost `wᵢ` in coordinate `i`
-satisfies `t(k) = n exp[((d+1)! ∏ᵢ lg wᵢ / 2 · lg k)^{1/(d+1)} - (d/(d+1)) lg lg k + O(1)]`
-with `n = k^d`, written as a two-sided bound with one constant `C` for all large `k`.
+**Bushaw–Kettle pebbling threshold for grids.** Let $d \ge 1$ and let $w_0, \dots, w_{d-1}$
+be natural numbers with $w_i \ge 2$ for every $i$. For each $k$ give the grid $P_k^d$ on
+$\{0, \dots, k-1\}^d$ the cost $w_i$ on every edge in coordinate $i$, and let
+$t : \mathbb{N} \to \mathbb{R}$ be a threshold function, as $k \to \infty$, for the probability
+that a uniformly random configuration of $s$ pebbles on $P_k^d$ is solvable. Write $\lg = \log_2$
+and
 
-`wᵢ ≥ 2` is added: with cost `1` every nonempty configuration is solvable, so the thresholds
-are bounded while the right side tends to infinity. `d ≥ 1` likewise (at `d = 0` the grid is a
-single vertex).
+$$
+A(k) = \left(\frac{(d+1)! \prod_{i\lt d} \lg w_i}{2} \lg k\right)^{1/(d+1)} -
+\frac{d}{d+1} \lg \lg k.
+$$
+
+Then there is a real constant $C$ such that for all sufficiently large $k$,
+
+$$
+k^d e^{A(k) - C} \le t(k) \le k^d e^{A(k) + C},
+$$
+
+that is, with $n = k^d$, $t(k) = n \exp[A(k) + O(1)]$.
+
+The hypothesis $w_i \ge 2$ is not part of the quoted statement: with all costs equal to $1$
+every nonempty configuration is solvable, so the thresholds are bounded while the right side
+tends to infinity. Likewise $d \ge 1$ excludes $d = 0$, where the grid is a single vertex.
 
 ## Depends on
 
-- [Is Threshold Function](is-threshold-function.md)
-- [Grid Cost](grid-cost.md)
-- [Grid Graph](grid-graph.md)
+- [Threshold functions](is-threshold-function.md)
+- [Grid edge costs](grid-cost.md)
+- [Grid graph](grid-graph.md)
 - [Solvable Configuration Prob](solvable-configuration-prob.md)
 
 ## Sources

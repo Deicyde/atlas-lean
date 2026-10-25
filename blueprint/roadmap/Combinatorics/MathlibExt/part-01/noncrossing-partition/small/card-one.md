@@ -6,9 +6,10 @@ proof: formalized
 lean: NoncrossingPartition.card_one
 ---
 
-# Card one
+# Noncrossing partitions of a one-element set
 
-`NoncrossingPartition 1` has exactly one element.
+**Noncrossing partitions of a one-element set.** There is exactly one noncrossing partition
+of $\{0\}$.
 
 ## Depends on
 
@@ -19,7 +20,7 @@ lean: NoncrossingPartition.card_one
 
 ## Proof depends on
 
-- [Eq indiscrete one](eq-indiscrete-one.md)
+- [Noncrossing partitions of one point are indiscrete](eq-indiscrete-one.md)
 - [The indiscrete noncrossing partition](../operations/indiscrete.md)
 
 ## Sources

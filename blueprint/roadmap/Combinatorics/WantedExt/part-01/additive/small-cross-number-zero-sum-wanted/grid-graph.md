@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.gridGraph
 ---
 
-# Grid Graph
+# Grid graph
 
-The `d`-dimensional grid `□_{i<d} P_k`: vertices `Fin d → Fin k`, adjacent when they differ
-in exactly one coordinate, by one. For `k = 2` this is the `d`-cube `Q_d`.
+**Grid graph.** For natural numbers $d$ and $k$, the $d$-dimensional grid
+$P_k^d = \square_{i\lt d} P_k$ is the simple graph on $\{0, \dots, k-1\}^d$ in which $x$ and $y$
+are adjacent when there is a coordinate $i$ with $x_j = y_j$ for all $j \ne i$ and
+$|x_i - y_i| = 1$. For $k = 2$ this is the $d$-cube $Q_d$.
 
 ## Depends on
 

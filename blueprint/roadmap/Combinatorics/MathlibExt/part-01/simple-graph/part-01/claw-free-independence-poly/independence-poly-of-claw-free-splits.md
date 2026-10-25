@@ -7,16 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.independence_poly_of_claw_free_splits
 ---
 
-# Independence poly of claw free splits
+# Chudnovsky–Seymour theorem
 
-Claw-free graph: no induced `K₁,₃`, i.e. no center `c` with three
-pairwise nonadjacent, mutually distinct neighbors. `independencePoly G`
-counts independent vertex sets by size; the wanted theorem says its real
-image splits, i.e. it has only real zeros.
+**Chudnovsky–Seymour theorem.** Let $G$ be a claw-free simple graph on a finite vertex set
+$V$, and let $I(G) = \sum_{k=0}^{|V|} i_k X^k \in \mathbb{Z}[X]$ be its independence polynomial,
+where $i_k$ is the number of independent sets of $G$ with $k$ vertices. Then $I(G)$, viewed as a
+polynomial with real coefficients, splits over $\mathbb{R}$: it is a constant times a product of
+linear factors $X - r$ with $r \in \mathbb{R}$, so all its roots are real.
 
 ## Depends on
 
-- [Claw Free](claw-free.md)
+- [Claw-free finite graph](claw-free.md)
 
 ## Sources
 

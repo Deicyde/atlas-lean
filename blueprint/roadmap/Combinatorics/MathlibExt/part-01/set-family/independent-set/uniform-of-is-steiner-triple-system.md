@@ -7,14 +7,15 @@ proof: formalized
 lean: SetFamily.uniform_of_isSteinerTripleSystem
 ---
 
-# Uniform of is Steiner Triple System
+# Steiner triple systems are 3-uniform
 
-Uniformity projection from a Steiner triple system.
+**Steiner triple systems are 3-uniform.** If $H$ is a Steiner triple system, then $H$ is
+$3$-uniform: every edge of $H$ has exactly $3$ elements.
 
 ## Depends on
 
-- [Is Steiner Triple System](is-steiner-triple-system.md)
-- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+- [Steiner triple system](is-steiner-triple-system.md)
+- [Uniform hypergraphs](../uniform-hypergraph/is-uniform.md)
 
 ## Sources
 

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_intervalAP_irrational_of_forall_not_nat
 ---
 
-# Lemma 7
+# Interval plus irrational-step progression avoiding the naturals is not MSTD
 
-**Lemma 7.** For `n ≥ 3`, real `x ∉ ℕ` with `x > n - 1`, a positive irrational `d`, and `x + id
-∉ ℕ` for `i ∈ [0, m]`, `I_n ∪ J(x, m, d)` is not an MSTD set.
+**Interval plus irrational-step progression avoiding the naturals is not MSTD.** Let
+$I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$, as finite
+sets of reals. Let $n \ge 3$ and $m$ be natural numbers, $d$ a positive irrational real number
+and $x > n - 1$ a real number such that none of $x + id$ for $i = 0, 1, \dots, m$ is a natural
+number. Then $I_n \cup J(x, m, d)$ is not an MSTD set.
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
-- [Real APSet](real-apset.md)
-- [Real Interval Set](real-interval-set.md)
+- [MSTD set](is-mstdset.md)
+- [Finite arithmetic progression](real-apset.md)
+- [Initial integer interval](real-interval-set.md)
 
 ## Sources
 

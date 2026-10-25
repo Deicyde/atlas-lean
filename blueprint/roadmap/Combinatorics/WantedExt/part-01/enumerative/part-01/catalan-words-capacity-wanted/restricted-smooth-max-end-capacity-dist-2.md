@@ -5,16 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.restrictedSmoothMaxEndCapacityDist_genFun
 ---
 
-# Restricted Smooth Max End Capacity Dist gen Fun
+# Generating function for restricted smooth words ending in their largest letter
 
-Mansour and Shattuck's Lemma 11: for `i ≥ 1`,
-`S*_i(x; q) = ∑_{n ≥ i} s*(n, i; q) xⁿ = xⁱ / ∏_{j=1}^{i-1} (1 - x - x T*_j(q^{j+1} x; 1/q))`, in
-power series over `ℤ[q, q⁻¹]`, where `T*_j(q^{j+1} x; 1/q) = ∑_m q^{(j+1)m} t*(m, j; 1/q) xᵐ`.
+**Generating function for restricted smooth words ending in their largest letter.** For
+$i \ge 1$, let $s^*(n, i; q)$ be the capacity distribution of the restricted smooth words of
+length $n$ that end in $i$ and all of whose letters are at most $i$. For $j \ge 1$, let
+$t^*(m, j; q) = \sum_w q^{w_1 + \cdots + w_m}$, the sum over the words $w = w_1 \cdots w_m$ over
+$\{1, \dots, j\}$ with $w_1 = w_m = j$ (there are none for $m = 0$), consecutive letters
+differing by at most $1$ and no two adjacent letters equal to $1$, and let
+$T^*_j(q^{j+1} x; 1/q) = \sum_{m \ge 0} q^{(j+1)m}\, t^*(m, j; 1/q)\, x^m$. Then, in the ring of
+formal power series in $x$ over $\mathbb{Z}[q, q^{-1}]$,
+
+$$
+\sum_{n \ge 0} s^*(n, i; q)\, x^n =
+x^i \prod_{j=1}^{i-1} \frac{1}{1 - x - x\, T^*_j(q^{j+1} x; 1/q)},
+$$
+
+where each denominator has constant term $1$ and so is invertible.
 
 ## Depends on
 
-- [Restricted Smooth Max End Capacity Dist](restricted-smooth-max-end-capacity-dist.md)
-- [Restricted Smooth Plateau Area Dist](restricted-smooth-plateau-area-dist.md)
+- [Capacity distribution of restricted smooth words ending in their largest letter](restricted-smooth-max-end-capacity-dist.md)
+- [Area polynomial of restricted smooth words between two top letters](restricted-smooth-plateau-area-dist.md)
 
 ## Sources
 

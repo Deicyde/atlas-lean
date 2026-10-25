@@ -7,14 +7,15 @@ proof: formalized
 lean: Multigraph.adj_comm
 ---
 
-# Adj comm
+# Symmetry of adjacency in a multigraph
 
-Adjacency is symmetric.
+**Symmetry of adjacency in a multigraph.** In a multigraph $G$, a vertex $v$ is adjacent to a
+vertex $w$ if and only if $w$ is adjacent to $v$.
 
 ## Depends on
 
 - [Multigraph](multigraph.md)
-- [Adj](adj.md)
+- [Adjacency in a multigraph](adj.md)
 
 ## Sources
 

@@ -6,10 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.SelfGeneratingSet.FixedPoint
 ---
 
-# Fixed Point
+# Fixed-point sets for a seed and generators
 
-The fixed-point characterization of the self-generating set: each element is either the seed
-or the image under a generator of an element already in the set.
+**Fixed-point sets for a seed and generators.** Let $F$ be a finite set of functions
+$\mathbb{N} \to \mathbb{N}$ and let $s \in \mathbb{N}$. A set $C \subseteq \mathbb{N}$ is a
+fixed-point set for $F$ and $s$ when, for every $y \in \mathbb{N}$, $y \in C$ if and only if
+$y = s$ or $y = f(x)$ for some $f \in F$ and some $x \in C$; equivalently,
+$C = \{s\} \cup \bigcup_{f \in F} f(C)$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isWeakSidonSet_of_isSidon
 ---
 
-# Is Weak Sidon Set of is Sidon
+# Sidon sets are weak Sidon sets
 
-Every Sidon set is a weak Sidon set.
+**Sidon sets are weak Sidon sets.** Every Sidon set $A \subseteq \mathbb{N}$ is a weak Sidon
+set.
 
 ## Depends on
 
-- [Is Weak Sidon Set](is-weak-sidon-set.md)
+- [Weak Sidon set](is-weak-sidon-set.md)
 - [Sidon](../../../../MathlibExt/part-01/additive/is-sidon.md)
 
 ## Sources

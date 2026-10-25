@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.cubeVertexNim_pPositions
 ---
 
-# Cube Vertex Nim p Positions
+# P-positions of vertex Nim on a cube
 
-In `C_V` the P-positions are exactly those with `a = A`, `b = B`, `c = C`: no move joins
-two such positions, and every other position has a move to one.
+**P-positions of vertex Nim on a cube.** Write a position of the cube game as
+$p = (a, b, c, A, B, C)$, the numbers of tokens on the six faces of a cube, where the faces
+carrying $A$, $B$, $C$ are opposite those carrying $a$, $b$, $c$; a vertex move removes at
+least one token in total from the three faces at one vertex (one face from each opposite pair).
+Let $P$ be the set of positions with $a = A$, $b = B$ and $c = C$. Then no vertex move leads
+from a position in $P$ to a position in $P$, and from every position not in $P$ some vertex
+move leads to a position in $P$.
+
+Since every play terminates, these two properties make $P$ the set of P-positions
+(second-player wins) under normal play.
 
 ## Depends on
 
-- [Cube Vertex Move](cube-vertex-move.md)
+- [Vertex move on the cube](cube-vertex-move.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_zmodWeightReps
 ---
 
-# Mem zmod Weight Reps
+# Membership in the weight representatives
 
-Membership in `zmodWeightReps A`: a representative below `n` whose residue is in `A`.
+**Membership in the weight representatives.** Let $A \subseteq \mathbb{Z}/n\mathbb{Z}$.
+A natural number $a$ lies in the set of weight representatives of $A$ if and only if $a < n$ and
+the residue of $a$ modulo $n$ lies in $A$.
 
 ## Depends on
 
-- [Zmod Weight Reps](zmod-weight-reps.md)
+- [Representatives of a set of residues](zmod-weight-reps.md)
 
 ## Sources
 

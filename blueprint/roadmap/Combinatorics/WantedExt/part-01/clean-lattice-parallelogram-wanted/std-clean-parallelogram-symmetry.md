@@ -5,13 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.stdCleanParallelogram_symmetry
 ---
 
-# Std Clean Parallelogram symmetry
+# The point reflection symmetry of $P_{a,n}$
 
-The map `S(x, y) = -(x, y) + (a + 1, n)` sends `P_{a,n}` onto itself and is an isometry.
+**The point reflection symmetry of $P_{a,n}$.** Let $a$ and $n$ be natural numbers with
+$1 \le a < n$ and $\gcd(a, n) = 1$, let $P_{a,n} \subseteq \mathbb{R}^2$ be the parallelogram
+with vertices $(0, 0)$, $(1, 0)$, $(a, n)$, $(a + 1, n)$, and let
+$S : \mathbb{R}^2 \to \mathbb{R}^2$ be $S(x, y) = (a + 1 - x, n - y)$. Then $S(P_{a,n}) = P_{a,n}$,
+and $S$ is an isometry of $\mathbb{R}^2$ for the maximum distance
+$d((x, y), (x', y')) = \max(|x - x'|, |y - y'|)$.
 
 ## Depends on
 
-- [Std Clean Parallelogram](std-clean-parallelogram.md)
+- [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 
 ## Sources
 

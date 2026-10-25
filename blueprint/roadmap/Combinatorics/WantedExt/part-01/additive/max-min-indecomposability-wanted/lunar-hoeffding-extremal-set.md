@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.lunarHoeffdingExtremalSet
 ---
 
-# Lunar Hoeffding Extremal Set
+# Hoeffding extremal lunar numbers
 
-The `d`-Hoeffding extremal lunar numbers `ℋ_b^n(d)` (Definition 23): `h ∈ ℒ_b^n` such that
-for some `1 ≤ i ≤ b - 1`, `||h_i| - (b - i)n/b| > d/2`, or `h` has a factorization
-`h = f ⊗ g` with `||f_i| + |g_i| - (b - i)(n + 1)/b| > d/2`. Factors range over `ℒ_b^n`.
+**Hoeffding extremal lunar numbers.** Let $b$ and $n$ be natural numbers and $d$ a real
+number. Let $\mathcal{L}_b^n$ be the set of lunar numbers of base $b$ and degree at most $n$
+(digit strings $c_0, \dots, c_n$ with digits in $\{0, \dots, b - 1\}$), with the max-min product
+$\otimes$, and for $f \in \mathcal{L}_b^n$ let $|f_i|$ be the number of its digits that are at
+least $i$. The set $\mathcal{H}_b^n(d)$ of $d$-Hoeffding extremal lunar numbers consists of the
+$h \in \mathcal{L}_b^n$ for which there is an index $i$ with $1 \le i \le b - 1$ such that either
+$\bigl||h_i| - (b - i)n/b\bigr| > d/2$, or $h = f \otimes g$ for some $f, g \in \mathcal{L}_b^n$
+with $\bigl||f_i| + |g_i| - (b - i)(n + 1)/b\bigr| > d/2$.
 
 ## Depends on
 
@@ -17,9 +22,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Digit Seq](digit-seq.md)
-- [Lunar Level Count](lunar-level-count.md)
-- [Max Min Mul](max-min-mul.md)
+- [Coefficient sequence of a digit string](digit-seq.md)
+- [Level counts of a lunar number](lunar-level-count.md)
+- [Max-min product](max-min-mul.md)
 
 ## Sources
 

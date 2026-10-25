@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isVanishingFamily_sumAddMulProd_one_four_eight
 ---
 
-# Is Vanishing Family sum Add Mul Prod one four eight
+# The sum-plus-product family is vanishing over $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/8\mathbb{Z}$
 
-Lemma 2: for `n ∈ {4, 8}`, `F_1` over `ℤ/n` is vanishing.
+**The sum-plus-product family is vanishing over $\mathbb{Z}/4\mathbb{Z}$ and
+$\mathbb{Z}/8\mathbb{Z}$.** Let $n \in \{4, 8\}$ and let $F_1$ be the family over
+$\mathbb{Z}/n\mathbb{Z}$ sending a block $(b_1, \dots, b_l)$ to $\sum_i b_i + \prod_i b_i$. Then
+$F_1$ is vanishing.
 
 ## Depends on
 
-- [Is Vanishing Family](is-vanishing-family.md)
-- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
+- [Vanishing family](is-vanishing-family.md)
+- [The sum-plus-product family $F_c$](sum-add-mul-prod-family.md)
 
 ## Sources
 

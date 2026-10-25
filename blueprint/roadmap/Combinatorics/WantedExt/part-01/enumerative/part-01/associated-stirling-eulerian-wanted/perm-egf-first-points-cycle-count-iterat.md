@@ -5,18 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.permEGF_firstPoints_cycleCount_iterate_derivative
 ---
 
-# Perm EGF first Points cycle Count iterate derivative
+# Derivative formula for permutations with $k$ cycles whose first $s$ points lie in distinct cycles
 
-Corollary 46: for `k ≥ s`, over permutations with exactly `k` cycles whose first `s`
-points lie in distinct cycles,
-`∂^s [A_k(x,u)]_s/∂u^s = (A(x,u) exp(u(x-1)))^s (ln A(x,u))^{k-s}/(k-s)!`, the logarithm
-read as any `L` with `L(0) = 0` and `exp L = A(x,u)`; `k ≥ s` makes `(k-s)!` defined.
+**Derivative formula for permutations with $k$ cycles whose first $s$ points lie in distinct
+cycles.** Let $R$ be a commutative $\mathbb{Q}$-algebra, $x \in R$ and $s \le k$ natural numbers.
+For a permutation $\sigma$ of $\{0, \dots, n-1\}$ let $e(\sigma)$ be the number of $i$ with
+$\sigma(i) > i$ and $c(\sigma)$ the number of cycles of $\sigma$, fixed points included. Let
+$A(x,u) = \sum_{n \ge 0} \frac{u^n}{n!} \sum_{\sigma} x^{e(\sigma)} \in R[[u]]$, the inner sum
+over all permutations $\sigma$ of $\{0, \dots, n-1\}$, and let $A_{[s],k}(x,u)$ be the same
+series with the inner sum restricted to the $\sigma$ with $c(\sigma) = k$ in which no two
+distinct points less than $s$ lie in the same cycle. If $L \in R[[u]]$ has zero constant term
+and $\exp(L) = A(x,u)$, where $\exp(F) = \sum_{m \ge 0} F^m/m!$, then the $s$-th derivative in
+$u$ is
+
+$$\frac{d^s}{du^s} A_{[s],k}(x,u) =
+\bigl(A(x,u) \exp((x-1)u)\bigr)^s \frac{L^{k-s}}{(k-s)!}.$$
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

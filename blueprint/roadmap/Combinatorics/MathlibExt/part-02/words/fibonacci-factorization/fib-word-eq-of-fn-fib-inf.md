@@ -7,9 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.fibWord_eq_ofFn_fibInf
 ---
 
-# Fib Word eq of Fn fib Inf
+# Finite Fibonacci words are prefixes of the infinite Fibonacci word
 
-Every finite Fibonacci word lists the first letters of the infinite Fibonacci word.
+**Finite Fibonacci words are prefixes of the infinite Fibonacci word.** For every natural
+number $n$, the finite Fibonacci word $f_n$ is the word formed by the first $|f_n|$ letters of the
+infinite Fibonacci word.
 
 ## Depends on
 

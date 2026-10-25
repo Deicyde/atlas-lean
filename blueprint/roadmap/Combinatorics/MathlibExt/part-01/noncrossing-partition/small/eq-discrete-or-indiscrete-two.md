@@ -6,9 +6,10 @@ proof: formalized
 lean: NoncrossingPartition.eq_discrete_or_indiscrete_two
 ---
 
-# Eq discrete or indiscrete two
+# Classification of noncrossing partitions of a two-element set
 
-Classification at arity two: a noncrossing partition is discrete or indiscrete.
+**Classification of noncrossing partitions of a two-element set.** Every noncrossing partition
+of $\{0, 1\}$ is either the discrete or the indiscrete noncrossing partition of $\{0, 1\}$.
 
 ## Depends on
 

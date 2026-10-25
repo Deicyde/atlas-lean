@@ -5,18 +5,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi10
 ---
 
-# Bpz C7 Pi10
+# Buys–Polak–Zuiddam ten-block profile for the 7-cycle
 
-BPZ's ten-block seven-cycle profile.
+**Buys–Polak–Zuiddam ten-block profile for the 7-cycle.** This is $p_5 \star p_5$, where $p_5$
+is the five-block 7-cycle profile and $\star$ is the Buys–Polak–Zuiddam (BPZ) profile product.
 
 ## Depends on
 
-- [BPZProfile](bpzprofile.md)
+- [BPZ profiles](bpzprofile.md)
 
 ## Proof depends on
 
-- [Star](star.md)
-- [Bpz C7 Pi5](bpz-c7-pi5.md)
+- [Product of BPZ profiles](star.md)
+- [Five-block BPZ seven-cycle profile](bpz-c7-pi5.md)
 
 ## Sources
 

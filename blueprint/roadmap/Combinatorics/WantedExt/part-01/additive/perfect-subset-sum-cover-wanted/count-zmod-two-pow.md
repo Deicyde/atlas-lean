@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.count_zmod_two_pow
 ---
 
-# Count zmod two pow
+# Number of perfect covers of a cyclic 2-group
 
-The cyclic group `ℤ_{2^n}` has `2^{n(n-1)/2}` perfect covers.
+**Number of perfect covers of a cyclic 2-group.** For every $n \ge 0$, the cyclic group
+$\mathbb{Z}_{2^n}$ has exactly $2^{n(n-1)/2}$ perfect covers.
 
 ## Depends on
 
-- [Count](count.md)
+- [Number of perfect covers](count.md)
 
 ## Sources
 

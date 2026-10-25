@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.maxIndepSetCount
 ---
 
-# Max Indep Set Count
+# Number of maximal independent sets
 
-`mis(Γ)`: the number of maximal independent sets of the graph `Γ`.
+**Number of maximal independent sets.** For a graph $\Gamma$, $\mathrm{mis}(\Gamma)$ is the
+number of maximal independent sets of $\Gamma$, that is, of sets of pairwise non-adjacent
+vertices that are not properly contained in another such set; it is $0$ if there are
+infinitely many.
 
 ## Depends on
 

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.not_existsUnique_addOrderOf_two_mem_oddCombinations
 ---
 
-# Not exists Unique add Order Of two mem odd Combinations
+# Elements of order two among odd combinations of part of a perfect cover
 
-If `A` is a subset of a perfect cover of an abelian group of order `2^n` and `A` has no
-element of order `2`, then `𝒯(A)` does not contain exactly one element of order `2`.
+**Elements of order two among odd combinations of part of a perfect cover.** Let $G$ be an
+abelian group of order $2^n$, let $S$ be a perfect cover of $G$, and let $A \subseteq S$ contain
+no element of order $2$. Let $\mathcal{T}(A)$ be the set of combinations $\sum_{x \in A} c_x x$ in
+which every integer coefficient $c_x$ is $0$ or odd. Then $\mathcal{T}(A)$ does not contain
+exactly one element of order $2$: it contains none or at least two.
 
 ## Depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
-- [Odd Combinations](odd-combinations.md)
+- [Perfect cover](is-perfect-cover.md)
+- [Odd combinations](odd-combinations.md)
 
 ## Sources
 

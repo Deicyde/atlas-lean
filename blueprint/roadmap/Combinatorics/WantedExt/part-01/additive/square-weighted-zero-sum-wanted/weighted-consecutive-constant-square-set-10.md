@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.weightedConsecutiveConstant_squareSet_square_oddSquarefree
 ---
 
-# Weighted Consecutive Constant square Set square odd Squarefree
+# Consecutive square-weighted constant of the square of an odd squarefree number
 
-Theorem 39: `n` is represented as `m²` for an odd squarefree `m`, and the
-consecutive defining set is nonempty with `C_{S(n)} = 9`. The clause `2 ≤ n`
-records the paper's ambient convention; `Squarefree m` is the natural-number
-squarefree predicate.
+**Consecutive square-weighted constant of the square of an odd squarefree number.** Let $m$
+be an odd squarefree natural number and let $n = m^2$ with $n \ge 2$. Write $S(n)$ for the set
+of nonzero squares of $\mathbb{Z}/n\mathbb{Z}$. Then there is a positive length $k$ such that
+every sequence $x_1, \dots, x_k$ in $\mathbb{Z}/n\mathbb{Z}$ has a nonempty block of
+consecutive terms $x_i, \dots, x_j$ and weights $a_i, \dots, a_j \in S(n)$ with
+$a_i x_i + \dots + a_j x_j = 0$, and the consecutive $S(n)$-weighted zero-sum constant
+$C_{S(n)}$, the least such $k$, equals $9$.
+
+The hypothesis $n \ge 2$ is the paper's standing convention.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
-- [Weighted Consecutive Defining Set](weighted-consecutive-defining-set.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Weighted consecutive zero-sum constant](weighted-consecutive-constant.md)
+- [Lengths forcing a consecutive weighted zero sum](weighted-consecutive-defining-set.md)
 
 ## Sources
 

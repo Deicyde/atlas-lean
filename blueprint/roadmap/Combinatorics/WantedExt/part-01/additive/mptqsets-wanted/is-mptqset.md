@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsMPTQSet
 ---
 
-# Is MPTQSet
+# MPTQ set
 
-A finite set of reals is an MPTQ (more products than quotients) set when it avoids `0`
-and `|A/A| < |A.A|`.
+**MPTQ set.** A finite set $A$ of real numbers is an MPTQ (more products than quotients) set
+when $0 \notin A$ and $|A/A| < |A \cdot A|$, where $A \cdot A = \{ab : a, b \in A\}$ is the
+product set, $A/A = \{a/b : a, b \in A\}$ is the quotient set, and $|X|$ is the number of
+elements of $X$.
 
 ## Depends on
 

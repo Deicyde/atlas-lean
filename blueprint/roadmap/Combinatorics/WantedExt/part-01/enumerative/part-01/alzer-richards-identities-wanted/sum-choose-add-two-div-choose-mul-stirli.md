@@ -5,11 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_add_two_div_choose_mul_stirlingSecond
 ---
 
-# Sum choose add two div choose mul stirling Second
+# Alternating Stirling sums with $\binom{n+1}{k+2}$
 
-For `n ≥ 1`: `∑_{k=0}^{n-1} (-1)^k C(n+1, k+2) / C(r+k, k) · S(r+k, k)` is
-`r B_{r-1} + (n + r) B_r` for `1 ≤ r ≤ n` and
-`(-1/2)^{n+1} (n+1)! + (n+1) B_n + (2n+1) B_{n+1}` for `r = n + 1`.
+**Alternating Stirling sums with $\binom{n+1}{k+2}$.** Write $S(n, k)$ for the Stirling
+numbers of the second kind and $B_n$ for the Bernoulli numbers, with $B_1 = -1/2$. Let
+$n \ge 1$ be a natural number. Then for every natural number $r$ with $1 \le r \le n$,
+
+$$
+\sum_{k=0}^{n-1} (-1)^k \frac{\binom{n+1}{k+2}}{\binom{r+k}{k}} S(r+k, k) =
+r B_{r-1} + (n + r) B_r,
+$$
+
+and
+
+$$
+\sum_{k=0}^{n-1} (-1)^k \frac{\binom{n+1}{k+2}}{\binom{n+1+k}{k}} S(n+1+k, k) =
+(-1/2)^{n+1} (n+1)! + (n+1) B_n + (2n+1) B_{n+1}.
+$$
 
 ## Depends on
 

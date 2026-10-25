@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.boundedSubsetSums_inverse_mixedSign_zero
 ---
 
-# Bounded Subset Sums inverse mixed Sign zero
+# Inverse theorem for subset sums of a mixed-sign set containing zero
 
-Inverse theorem for Theorem 8 (`p` positive integers, `n` negative integers and `0`,
-`1 ≤ n ≤ p`, `k = n + p + 1`, `1 ≤ α ≤ k - 2`, `β ≤ k - 2`, `α + β ≤ k - 1`):
-`|Σ^β_α(A)| = L₀(α, β, A)` iff `A = d · [-n, p]` with `d > 0` (necessarily the least positive
-element of `A`).
+**Inverse theorem for subset sums of a mixed-sign set containing zero.** Let $n, p, \alpha,
+\beta$ be natural numbers with $1 \le n \le p$, put $k = n + p + 1$, and assume
+$1 \le \alpha \le k - 2$, $\beta \le k - 2$ and $\alpha + \beta \le k - 1$. Let $A$ be a finite set
+of integers that contains $0$, exactly $n$ negative integers and exactly $p$ positive integers.
+Then $|\Sigma^{\beta}_{\alpha}(A)| = L_0(\alpha, \beta, A)$ if and only if
+$A = d \cdot \{-n, -n + 1, \dots, p\}$ for some integer $d > 0$. Here $\Sigma^{\beta}_{\alpha}(A)$
+is the set of sums of subsets $B \subseteq A$ with $\alpha \le |B| \le |A| - \beta$, and
+$L_0(\alpha, \beta, A)$ is the mixed-sign bound with zero, which depends only on $n$, $p$,
+$\alpha$ and $\beta$.
+
+The factor $d$ is then the least positive element of $A$.
 
 ## Depends on
 
-- [Bounded Subset Sums](bounded-subset-sums.md)
-- [Mixed Sign Zero Subset Sum Bound](mixed-sign-zero-subset-sum-bound.md)
+- [Subset sums with a bounded number of terms](bounded-subset-sums.md)
+- [Mixed-sign subset-sum bound with zero](mixed-sign-zero-subset-sum-bound.md)
 
 ## Sources
 

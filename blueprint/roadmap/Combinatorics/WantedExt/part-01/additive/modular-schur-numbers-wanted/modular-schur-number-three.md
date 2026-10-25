@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.modularSchurNumber_three
 ---
 
-# Modular Schur Number three
+# Modular Schur numbers modulo 3
 
-For positive `k, l`: `S_3(k, l) = 0` when `l ≡ 1 (mod 3)`; otherwise `S_3(1, l) = 1` and
-`S_3(k, l) = 2` for `k ≥ 2` (quoted from [4]).
+**Modular Schur numbers modulo 3.** Let $k$ and $l$ be positive integers and let $S_3(k, l)$
+be the generalized Schur number modulo $3$. If $l \equiv 1 \pmod 3$, then $S_3(k, l) = 0$.
+Otherwise $S_3(1, l) = 1$, and $S_3(k, l) = 2$ for every $k \ge 2$.
+
+The paper quotes this result from Chappelon, Revuelta Marchena, and Sanz Domínguez,
+*Modular Schur numbers* (2013).
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

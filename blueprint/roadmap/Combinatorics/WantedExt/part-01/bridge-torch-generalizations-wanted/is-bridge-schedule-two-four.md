@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.isBridgeSchedule_two_four
 ---
 
-# Is Bridge Schedule two four
+# A four-person schedule of total time 11
 
-The schedule `{1,2} → R`, `1 → L`, `{1,3} → R`, `1 → L`, `{1,4} → R` of the
-paper's table for `n = 4` and capacity `2` is valid and costs `11`.
+**A four-person schedule of total time 11.** For the people $1, 2, 3, 4$ on a bridge of
+capacity $2$, the crossings $\{1,2\}$ forward, $\{1\}$ back, $\{1,3\}$ forward, $\{1\}$ back,
+$\{1,4\}$ forward, in this order, form a schedule, and its total time is $11$.
 
 ## Depends on
 
-- [Is Bridge Schedule](is-bridge-schedule.md)
+- [Bridge schedules](is-bridge-schedule.md)
 - [Schedule Cost](schedule-cost.md)
 
 ## Proof depends on

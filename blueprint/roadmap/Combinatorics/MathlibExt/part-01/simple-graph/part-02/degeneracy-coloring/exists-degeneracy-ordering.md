@@ -6,20 +6,23 @@ proof: formalized
 lean: SimpleGraph.IsDegenerate.exists_degeneracyOrdering
 ---
 
-# Exists degeneracy Ordering
+# Degenerate graphs have degeneracy orderings
 
-Every `k`-degenerate finite graph has a degeneracy ordering.
+**Degenerate graphs have degeneracy orderings.** If $G$ is a $k$-degenerate simple
+graph on a finite vertex set $V$, then $G$ has a degeneracy ordering with bound $k$:
+an injective map $e : V \to \mathbb{N}$ such that every vertex $v$ has at most $k$
+neighbors $w$ with $e(v) < e(w)$.
 
 ## Depends on
 
-- [Is Degeneracy Ordering](is-degeneracy-ordering.md)
-- [Is Degenerate](../../part-01/degeneracy/is-degenerate.md)
+- [Degeneracy ordering](is-degeneracy-ordering.md)
+- [Degenerate graph](../../part-01/degeneracy/is-degenerate.md)
 
 ## Proof depends on
 
-- [Is Degenerate On](../../part-01/degeneracy/is-degenerate-on-2.md)
-- [Is Degenerate On](../../part-01/degeneracy/is-degenerate-on.md)
-- [Exists inj On ordering](exists-inj-on-ordering.md)
+- [A degenerate graph is degenerate on every vertex set](../../part-01/degeneracy/is-degenerate-on-2.md)
+- [Degeneracy on a vertex set](../../part-01/degeneracy/is-degenerate-on.md)
+- [Degeneracy orderings of a vertex set](exists-inj-on-ordering.md)
 
 ## Sources
 

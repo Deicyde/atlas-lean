@@ -7,15 +7,16 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.support_nil
 ---
 
-# Support nil
+# Support of the empty indexed walk
 
-The support of the empty indexed walk is its sole vertex.
+**Support of the empty indexed walk.** The support of the empty indexed walk at a vertex $v$
+is the one-element list $[v]$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Indexed Walk](indexed-walk.md)
-- [Support](support.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Indexed walk](indexed-walk.md)
+- [Vertex list of an indexed walk](support.md)
 
 ## Sources
 

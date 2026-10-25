@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.FruchtWanted.frucht
 ---
 
-# Frucht
+# Frucht's theorem
 
-Every finite group is the automorphism group of a finite simple graph.
+**Frucht's theorem.** Every finite group is isomorphic to the automorphism group of a finite simple
+graph.
 
 ## Depends on
 

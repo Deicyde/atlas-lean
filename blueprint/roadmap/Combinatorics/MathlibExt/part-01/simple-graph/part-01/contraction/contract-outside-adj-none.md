@@ -7,22 +7,24 @@ proof: formalized
 lean: SimpleGraph.contractOutside_adj_none
 ---
 
-# Contract Outside adj none
+# Neighbors of the contraction vertex
 
-A surviving vertex is adjacent to the contraction vertex exactly when it had a neighbor
-outside the contracted set.
+**Neighbors of the contraction vertex.** Let $G$ be a graph on $V$, let $D \subseteq V$, and
+contract $V \setminus D$ to a single vertex. A vertex $a \in D$ is adjacent to the contraction
+vertex in the contracted graph if and only if $a$ is adjacent in $G$ to some vertex
+$v \notin D$.
 
 ## Depends on
 
-- [Contract Outside](contract-outside.md)
+- [Contracting the complement of a vertex set](contract-outside.md)
 
 ## Proof depends on
 
-- [Collapse Outside](collapse-outside.md)
-- [Collapse Outside eq none iff](collapse-outside-eq-none-iff.md)
-- [Collapse Outside eq some iff](collapse-outside-eq-some-iff.md)
-- [Collapse Outside of mem](collapse-outside-of-mem.md)
-- [Collapse Outside of not Mem](collapse-outside-of-not-mem.md)
+- [Collapsing the complement of a set](collapse-outside.md)
+- [Preimage of the contraction vertex under the collapse map](collapse-outside-eq-none-iff.md)
+- [Preimages of retained vertices under the collapse map](collapse-outside-eq-some-iff.md)
+- [The collapse map fixes the retained set](collapse-outside-of-mem.md)
+- [The collapse map sends the complement to the contraction vertex](collapse-outside-of-not-mem.md)
 
 ## Sources
 

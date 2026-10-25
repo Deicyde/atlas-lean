@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.coeff_bivariateCountGF
 ---
 
-# Coeff bivariate Count GF
+# Coefficients of a bivariate generating function
 
-The `xⁿ` coefficient of `bivariateCountGF a` is `∑_{m ≤ n} a(n, m) yᵐ`.
+**Coefficients of a bivariate generating function.** For every function $a$ assigning a natural
+number $a(n, m)$ to each pair of natural numbers and every $n \ge 0$, the coefficient of $x^n$ in
+the bivariate generating function of $a$ is the polynomial
+$\sum_{m = 0}^{n} a(n, m)\, y^m \in \mathbb{Z}[y]$.
 
 ## Depends on
 
-- [Bivariate Count GF](bivariate-count-gf.md)
+- [Bivariate generating function of a two-index count](bivariate-count-gf.md)
 
 ## Sources
 

@@ -5,11 +5,11 @@ navigation: module
 
 # Dilworth
 
-- [Is Chain Cover Fin](is-chain-cover-fin.md)
-- [Max Antichain Size](max-antichain-size.md)
-- [Min Chain Cover Size](min-chain-cover-size.md)
-- [Card le max Antichain Size](card-le-max-antichain-size.md)
-- [Min Chain Cover Size le card](min-chain-cover-size-le-card.md)
-- [Dilworth decomposition](dilworth-decomposition.md)
-- [Exists is Antichain card eq max Antichain Size](exists-is-antichain-card-eq-max-antichai.md)
-- [Exists is Chain Cover Fin card eq min Chain Cover Size](exists-is-chain-cover-fin-card-eq-min-ch.md)
+- [Chain cover](is-chain-cover-fin.md)
+- [Maximum antichain size](max-antichain-size.md)
+- [Minimum chain cover size](min-chain-cover-size.md)
+- [Antichains are no larger than the maximum antichain size](card-le-max-antichain-size.md)
+- [Chain covers bound the minimum chain cover size](min-chain-cover-size-le-card.md)
+- [Dilworth's theorem](dilworth-decomposition.md)
+- [The maximum antichain size is attained](exists-is-antichain-card-eq-max-antichai.md)
+- [The minimum chain cover size is attained](exists-is-chain-cover-fin-card-eq-min-ch.md)

@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.singleton_decr
 ---
 
-# Singleton decr
+# One-term subsequences are decreasing
 
-Singletons are decreasing subsequences.
+**One-term subsequences are decreasing.** For every real sequence $f$ indexed by
+$\{0, \dots, N-1\}$ and every position $p$, the subsequence of length $1$ consisting of the term
+at position $p$ is a strictly decreasing subsequence of $f$.
 
 ## Depends on
 
-- [Is Decr Subseq](is-decr-subseq.md)
+- [Decreasing subsequence](is-decr-subseq.md)
 
 ## Proof depends on
 
-- [Fin1 false](fin1-false.md)
+- [No strict pair in a one-element set](fin1-false.md)
 
 ## Sources
 

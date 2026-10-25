@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.starTime
 ---
 
-# Star Time
+# Optimal time in the star model
 
-The minimum total duration `T(n, k, t)` of the star model.
+**Optimal time in the star model.** For $n$ persons, $k$ edges and $t$ torches, $T(n, k, t)$
+is the smallest total duration of a star schedule, where the total duration of a schedule is the
+sum of the durations of its steps. If no star schedule exists (for example when $n \ge 1$ and
+$k = 0$ or $t = 0$), then $T(n, k, t) = 0$ by convention.
 
 ## Depends on
 
@@ -15,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Star Schedule](is-star-schedule.md)
-- [Star Move](star-move.md)
-- [Star Step Duration](star-step-duration.md)
+- [Star schedules](is-star-schedule.md)
+- [Movement in the star model](star-move.md)
+- [Duration of a step in the star model](star-step-duration.md)
 
 ## Sources
 

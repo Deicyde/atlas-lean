@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_card_eq_sum_eq_zmod
 ---
 
-# Exists card eq sum eq zmod
+# Bajnok's lemma on subset sums in $\mathbb{Z}/d\mathbb{Z}$
 
-Bajnok's lemma: for `1 ≤ t ≤ d - 1` and `ℓ ∈ ℤ_d` there is a `t`-element set
-`L ⊆ ℤ_d` with `∑ L = ℓ`. (The corpus record runs on into the proof of Theorem 8; only the
-lemma statement is formalized.)
+**Bajnok's lemma on subset sums in $\mathbb{Z}/d\mathbb{Z}$.** Let $d$ and $t$ be natural
+numbers with $1 \le t \le d - 1$. Then every $\ell \in \mathbb{Z}/d\mathbb{Z}$ is the sum of the
+elements of some $t$-element subset $L \subseteq \mathbb{Z}/d\mathbb{Z}$.
 
 ## Depends on
 

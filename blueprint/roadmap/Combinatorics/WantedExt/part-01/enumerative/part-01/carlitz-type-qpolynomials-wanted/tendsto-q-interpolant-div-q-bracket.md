@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_qInterpolant_div_qBracket
 ---
 
-# Tendsto q Interpolant div q Bracket
+# Limit of the $q$-power-sum interpolant at $0$: first closed form
 
-First closed form of `g_r(q, k) = lim_{x→0} f_r(q,k,x)/[x]`, where `f_r(q,k,·)` is the
-`q`-polynomial (a polynomial `P` in `q^x`) interpolating `q^{k(k-1)/2} ∑_{i<N} q^{ir} [i]_k` at the
-positive integers `N`: `g_r(q,k) = (-1)^k [k]! ∑_{i<r} q^{ik} [r-1]_i / [k+r]_{i+1}`.
+**Limit of the $q$-power-sum interpolant at $0$: first closed form.** Let $q > 0$ with
+$q \ne 1$, let $r \ge 1$ and $k \ge 0$ be integers, and for real $x$ write
+$[x] = (q^x - 1)/(q - 1)$, $[x]_m = [x][x-1]\cdots[x-m+1]$ (with $[x]_0 = 1$) and
+$[k]! = [1][2]\cdots[k]$. Let $P$ be a real polynomial such that
+$P(q^N) = q^{k(k-1)/2} \sum_{i=0}^{N-1} q^{ir} [i]_k$ for every positive integer $N$. Then
+$P(q^x)/[x]$ tends, as $x \to 0$ with $x \ne 0$, to
+
+$$(-1)^k [k]! \sum_{i=0}^{r-1} \frac{q^{ik} [r-1]_i}{[k+r]_{i+1}}.$$
 
 ## Depends on
 
-- [Q Bracket](q-bracket.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

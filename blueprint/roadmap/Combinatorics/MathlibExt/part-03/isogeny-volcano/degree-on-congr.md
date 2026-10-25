@@ -6,14 +6,17 @@ proof: formalized
 lean: Multigraph.degreeOn_congr
 ---
 
-# Degree On congr
+# Restricted degree depends only on the neighbours
 
-`degreeOn` depends only on predicate values on support.
+**Restricted degree depends only on the neighbours.** Let $G$ be a multigraph on a finite
+vertex set $V$, let $v \in V$ and let $P$ and $Q$ be decidable predicates on $V$. If
+$P(w) \iff Q(w)$ for every vertex $w$ whose edge multiplicity with $v$ is positive, then the
+degree of $v$ restricted to $P$ equals the degree of $v$ restricted to $Q$.
 
 ## Depends on
 
 - [Multigraph](multigraph.md)
-- [Degree On](degree-on.md)
+- [Degree restricted to a predicate](degree-on.md)
 
 ## Sources
 

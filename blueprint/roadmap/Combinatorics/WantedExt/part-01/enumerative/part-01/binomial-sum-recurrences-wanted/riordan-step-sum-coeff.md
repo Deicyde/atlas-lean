@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.riordan_stepSum_coeff
 ---
 
-# Riordan step Sum coeff
+# Step sums along a Riordan array
 
-Step-`k` sums of a Riordan array. For a Riordan array `d(n, m) = [x^n] g(x) h(x)^m`
-(`h(0) = 0`) over a field, `k > 1` and `p < k`,
-`∑_{j ≥ 0} d(n, kj + p) = [x^n] g(x) h(x)^p / (1 - h(x)^k)`. The sum is over `j ≤ n`, since
-`d(n, m) = 0` for `m > n`.
+**Step sums along a Riordan array.** Let $K$ be a field, let $g, h \in K[[x]]$ with
+$h(0) = 0$, and write $d(n, m) = [x^n]\, g(x) h(x)^m$. Then for all natural numbers $k > 1$,
+$p < k$ and $n$,
+$\sum_{j=0}^{n} d(n, kj + p) = [x^n]\, g(x) h(x)^p (1 - h(x)^k)^{-1}$.
+
+Since $h(0) = 0$, $d(n, m) = 0$ for $m > n$, so the left side is the full sum over all
+$j \ge 0$.
 
 ## Depends on
 

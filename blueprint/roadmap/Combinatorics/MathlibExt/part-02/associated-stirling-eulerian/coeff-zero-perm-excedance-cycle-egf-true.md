@@ -6,21 +6,24 @@ proof: formalized
 lean: MetaMathlibExt.coeff_zero_permExcedanceCycleEGF_true
 ---
 
-# Coeff zero perm Excedance Cycle EGF true
+# Constant coefficient of the generating function of all permutations
 
-The constant coefficient of the series of all permutations is `1`: the only
-permutation of `Fin 0` has no excedance and no cycle.
+**Constant coefficient of the generating function of all permutations.** Let $R$ be a
+commutative $\mathbb{Q}$-algebra and let $x, q \in R$. In the excedance and cycle exponential
+generating function of the family of all permutations, the coefficient of $u^0$ is $1$.
+
+The only permutation of the empty set has no excedance and no cycle.
 
 ## Depends on
 
-- [Perm Excedance Cycle EGF](perm-excedance-cycle-egf.md)
+- [Excedance and cycle generating function of a permutation family](perm-excedance-cycle-egf.md)
 
 ## Proof depends on
 
-- [Coeff perm Excedance Cycle EGF](coeff-perm-excedance-cycle-egf.md)
+- [Coefficients of the excedance and cycle generating function](coeff-perm-excedance-cycle-egf.md)
 - [Number of cycles of a permutation](../../part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
 - [Counting cycles via the cycle type](../../part-01/enumerative/part-08/stirling/cycle-quotient-count-eq.md)
-- [Excedance Count](excedance-count.md)
+- [Number of excedances](excedance-count.md)
 
 ## Sources
 

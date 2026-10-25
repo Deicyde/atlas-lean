@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.antiRecurrence_antiJacobsthal_small
 ---
 
-# Anti Recurrence anti Jacobsthal small
+# First anti-Jacobsthal numbers
 
-The anti-Jacobsthal numbers (`a = (2, 1)`, OEIS A304499) start `4, 11, 19, 25`.
+**First anti-Jacobsthal numbers.** The anti-recurrence numbers $A_1, A_2, A_3, A_4$ of the
+linear form $(2, 1)$, the anti-Jacobsthal numbers (OEIS A304499), are $4, 11, 19, 25$.
 
 ## Depends on
 
-- [Anti Recurrence](anti-recurrence.md)
+- [Anti-recurrence numbers](anti-recurrence.md)
 
 ## Sources
 

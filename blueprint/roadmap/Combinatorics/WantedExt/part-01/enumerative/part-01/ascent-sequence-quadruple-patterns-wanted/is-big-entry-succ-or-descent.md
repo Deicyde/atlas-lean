@@ -5,16 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.isBigEntry_succ_or_descent
 ---
 
-# Is Big Entry succ or descent
+# Successors of big entries in $W_n$
 
-Lemma 1: for `w ∈ W_n = WA_n(011, 100, 201, 210)` and `2 ≤ k ≤ n - 1`, if `w_k` is a big
-entry then either `w_{k+1}` is a big entry, or `w_k, w_{k+1}` is a descent pair and `w_j` is a
-big entry for every `k + 2 ≤ j ≤ n` (one-indexed `w_k` at zero-based index `k - 1`).
+**Successors of big entries in $W_n$.** Let $W_n$ be the set of weak ascent sequences of length
+$n$ avoiding the patterns $011$, $100$, $201$ and $210$, and let $w = w_1 \cdots w_n \in W_n$. If
+$2 \le k \le n - 1$ and $w_k$ is a big entry of $w$, then either $w_{k+1}$ is a big entry, or
+$w_{k+1} < w_k$ and $w_j$ is a big entry for every $j$ with $k + 2 \le j \le n$.
 
 ## Depends on
 
-- [Is Big Entry](is-big-entry.md)
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [Big entry](is-big-entry.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Sources
 

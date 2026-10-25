@@ -6,9 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.solvableConfigurationProb_le_one
 ---
 
-# Solvable Configuration Prob le one
+# The solvability probability is at most one
 
-The solvability probability is at most one.
+**The solvability probability is at most one.** For every simple graph $G$ on a finite
+vertex set with natural-number edge costs $w$ and every $t \ge 0$, the probability that a
+uniformly random configuration of $t$ pebbles on $G$ is solvable is at most $1$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ The solvability probability is at most one.
 
 ## Proof depends on
 
-- [Pebbling Solvable](pebbling-solvable.md)
+- [Solvable pebbling configurations](pebbling-solvable.md)
 
 ## Sources
 

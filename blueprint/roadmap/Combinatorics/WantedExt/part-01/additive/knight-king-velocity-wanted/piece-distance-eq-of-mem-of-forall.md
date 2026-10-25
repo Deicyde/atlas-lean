@@ -6,17 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.pieceDistance_eq_of_mem_of_forall
 ---
 
-# Piece Distance eq of mem of forall
+# Piece distance from a minimal fold
 
-If a nonzero point first belongs to the positive fold sumset at `n`, its
-`pieceDistance` is `n`: `hn` and `hmem` exhibit that fold, while `hmin` says
-every admissible positive fold has count at least `n`.  This is an elementary
-characterization of the paper's minimum definition, introduced only to prove
-the requested characteristic values.
+**Piece distance from a minimal fold.** Let $A \subset \mathbb{Z}^2$ be a finite set, let
+$p \in \mathbb{Z}^2$ be nonzero and let $n \ge 1$ be a natural number. If $p$ lies in the
+$n$-fold sumset $nA = \{a_1 + \dots + a_n : a_1, \dots, a_n \in A\}$, and every natural number
+$h \ge 1$ with $p \in hA$ satisfies $n \le h$, then the piece distance of $p$ for $A$ is $n$.
 
 ## Depends on
 
-- [Piece Distance](piece-distance.md)
+- [Piece distance on the integer lattice](piece-distance.md)
 
 ## Sources
 

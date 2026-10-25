@@ -5,17 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.restrictedSmoothWords_capacity_natDegree
 ---
 
-# Restricted Smooth Words capacity nat Degree
+# Maximum capacity of restricted smooth words
 
-Mansour and Shattuck's Theorem 9, degree formula (41): for `n = 8m + p ≥ 1` with
-`0 ≤ p ≤ 7`, the maximum capacity over restricted smooth words is
-`deg r*(8m + p; q) = 8m² + (2p - 3)m + e_p` with `e_p = 0` for `p ≤ 3`, `e_4 = 1` and
-`e_p = 2^{p-5}` for `5 ≤ p ≤ 7`; computed in `ℤ`.
+**Maximum capacity of restricted smooth words.** Let $m \ge 0$ and $0 \le p \le 7$ with
+$n = 8m + p \ge 1$. The degree of the capacity distribution of the restricted smooth words of
+length $n$, that is, the largest capacity of a restricted smooth word of length $n$, equals
+$8m^2 + (2p - 3)m + e_p$, where $e_p = 0$ for $p \le 3$, $e_4 = 1$ and $e_p = 2^{p-5}$ for
+$5 \le p \le 7$.
 
 ## Depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Restricted Smooth Words](restricted-smooth-words.md)
+- [Capacity distribution](capacity-dist.md)
+- [Restricted smooth words](restricted-smooth-words.md)
 
 ## Sources
 

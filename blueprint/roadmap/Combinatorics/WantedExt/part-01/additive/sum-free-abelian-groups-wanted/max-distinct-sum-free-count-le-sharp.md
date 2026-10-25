@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.maxDistinctSumFreeCount_le_sharp
 ---
 
-# Theorem 5 (sharp upper bound)
+# Sharp upper bound on maximal distinct sum-free sets
 
-**Theorem 5 (sharp upper bound).** There is an absolute `C` such that for every `η > 0`
-and all even `n ≥ n₀`, if `G = ℤ_{2^{α₁}} ⊕ … ⊕ ℤ_{2^{α_{r₁}}} ⊕ ℤ₂^{r₂} ⊕ K` has order `n`,
-`αᵢ ≥ 2`, `|K|` odd, `r = r₁ + r₂ ≥ 1` and `n/2^r ≥ C`, then
-`f*_max(G) ≤ (2^{2r-1} + 2^{r+r₁-1} - 2^{r+1} + 2^{r₁}) 2^{n/4}
-  + (2^r - 2^{r₁} + η) 2^{n/4 - 2^{r-2}}`.
+**Sharp upper bound on maximal distinct sum-free sets.** Write $f^*_{\max}(G)$ for the number
+of maximal distinct sum-free subsets of an abelian group $G$. There is a natural number $C$ such
+that for every real $\eta > 0$ there is $n_0$ with the following property. Let $r_1, r_2 \ge 0$
+with $r = r_1 + r_2 \ge 1$, let $\alpha_1, \dots, \alpha_{r_1} \ge 2$, let $K$ be a finite
+abelian group of odd order, and let
+$G = \mathbb{Z}_{2^{\alpha_1}} \oplus \dots \oplus \mathbb{Z}_{2^{\alpha_{r_1}}} \oplus
+\mathbb{Z}_2^{r_2} \oplus K$ have order $n$. If $n \ge n_0$ and $n / 2^r \ge C$, then
+
+$$f^*_{\max}(G) \le (2^{2r-1} + 2^{r+r_1-1} - 2^{r+1} + 2^{r_1})\, 2^{n/4} +
+(2^r - 2^{r_1} + \eta)\, 2^{n/4 - 2^{r-2}}.$$
 
 ## Depends on
 
-- [Max Distinct Sum Free Count](max-distinct-sum-free-count.md)
+- [Number of maximal distinct sum-free sets](max-distinct-sum-free-count.md)
 
 ## Sources
 

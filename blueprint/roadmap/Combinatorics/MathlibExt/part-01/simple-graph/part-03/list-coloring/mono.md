@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.IsListColorable.mono
 ---
 
-# Mono
+# Monotonicity of list colorability
 
-List colorability is monotone in the number of colors required in each list.
+**Monotonicity of list colorability.** If a simple graph $G$ is $q$-list-colorable and
+$q \le r$, then $G$ is $r$-list-colorable.
 
 ## Depends on
 
-- [Is List Colorable](is-list-colorable.md)
+- [List colorability](is-list-colorable.md)
 
 ## Sources
 

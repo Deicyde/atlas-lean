@@ -6,13 +6,15 @@ proof: formalized
 lean: SimpleGraph.IsDegenerate.of_forall_degree_le
 ---
 
-# Of forall degree le
+# Bounded maximum degree implies degeneracy
 
-A global degree bound implies degeneracy.
+**Bounded maximum degree implies degeneracy.** Let $G$ be a simple graph on a
+finite vertex set. If every vertex of $G$ has degree at most $k$, then $G$ is
+$k$-degenerate.
 
 ## Depends on
 
-- [Is Degenerate](../../part-01/degeneracy/is-degenerate.md)
+- [Degenerate graph](../../part-01/degeneracy/is-degenerate.md)
 
 ## Sources
 

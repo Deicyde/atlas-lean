@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.atLeastDistinctSumset_inverse_zmod
 ---
 
-# At Least Distinct Sumset inverse zmod
+# Inverse theorem for sums with at least $r$ distinct terms modulo a prime
 
-If `A ⊆ ℤ_p`, `|A| = k ≥ 2`, `1 ≤ r ≤ k`, `h ≥ r + 2` and
-`|h^{(≥ r)}A| = h(k - 1) - r(r - 1) + 1 ≤ p - 2`, then `A` is an arithmetic progression.
+**Inverse theorem for sums with at least $r$ distinct terms modulo a prime.** Let $p$ be a
+prime, let $A \subseteq \mathbb{Z}/p\mathbb{Z}$ be a set with $|A| = k \ge 2$, and let $r, h$ be
+natural numbers with $1 \le r \le k$ and $h \ge r + 2$. Write $h^{(\ge r)}A$ for the set of sums
+of $h$ elements of $A$, repetitions allowed, in which at least $r$ distinct elements occur. If
+$|h^{(\ge r)}A| = h(k - 1) - r(r - 1) + 1$ and $h(k - 1) - r(r - 1) + 1 \le p - 2$, then $A$ is
+an arithmetic progression of length $k$.
 
 ## Depends on
 
-- [At Least Distinct Sumset](at-least-distinct-sumset.md)
+- [Sums with at least $r$ distinct terms](at-least-distinct-sumset.md)
 - [Sets that are arithmetic progressions](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources

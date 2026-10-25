@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.eq_of_add_mul_irrational_mem_nat
 ---
 
-# Lemma 8
+# At most one nonnegative integer point on a progression with irrational difference
 
-**Lemma 8.** For irrational `d`, at most one index `i` has `x + id ∈ ℕ`.
+**At most one nonnegative integer point on a progression with irrational difference.** Let $x$
+and $d$ be real numbers with $d$ irrational. If $i$ and $j$ are natural numbers such that $x + id$
+and $x + jd$ are both nonnegative integers, then $i = j$.
 
 ## Depends on
 

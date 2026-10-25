@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.permEGF_firstPoints_iterate_derivative
 ---
 
-# Perm EGF first Points iterate derivative
+# Derivative formula for permutations whose first $s$ points lie in distinct cycles
 
-Corollary 45: over permutations whose first `s` points lie in distinct cycles,
-`∂^s [A(x,u)]_s/∂u^s = (A(x,u) exp(u(x-1)))^s A(x,u)`.
+**Derivative formula for permutations whose first $s$ points lie in distinct cycles.** Let
+$R$ be a commutative $\mathbb{Q}$-algebra, $x \in R$ and $s \in \mathbb{N}$. For a permutation
+$\sigma$ of $\{0, \dots, n-1\}$ let $e(\sigma)$ be the number of $i$ with $\sigma(i) > i$. Let
+$A(x,u) = \sum_{n \ge 0} \frac{u^n}{n!} \sum_{\sigma} x^{e(\sigma)} \in R[[u]]$, the inner sum
+over all permutations $\sigma$ of $\{0, \dots, n-1\}$, and let $A_{[s]}(x,u)$ be the same series
+with the inner sum restricted to the $\sigma$ in which no two distinct points less than $s$ lie
+in the same cycle. Then the $s$-th derivative in $u$ is
+
+$$\frac{d^s}{du^s} A_{[s]}(x,u) = \bigl(A(x,u) \exp((x-1)u)\bigr)^s A(x,u),$$
+
+where $\exp(F) = \sum_{m \ge 0} F^m/m!$.
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

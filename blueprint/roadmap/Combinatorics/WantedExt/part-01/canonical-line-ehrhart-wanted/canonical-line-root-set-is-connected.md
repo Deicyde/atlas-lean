@@ -5,15 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.canonicalLineRootSet_isConnected
 ---
 
-# Canonical Line Root Set is Connected
+# The set of attainable canonical-line roots is connected
 
-For every positive dimension, the attainable-root set `canonicalLineRootSet d` is connected.
-`IsConnected`, rather than only `IsPreconnected`, formalizes the paper's nonempty connected
-set and thus also records attainability of at least one root.
+**The set of attainable canonical-line roots is connected.** For every positive integer $d$,
+the set $\Omega_d$ of canonical-line roots of degree-$d$ CL-polynomials satisfying
+$(\diamondsuit)$ is a nonempty connected subset of $\mathbb{C}$.
 
 ## Depends on
 
-- [Canonical Line Root Set](canonical-line-root-set.md)
+- [The set $\Omega_d$ of attainable canonical-line roots](canonical-line-root-set.md)
 
 ## Sources
 

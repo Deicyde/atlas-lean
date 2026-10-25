@@ -4,5 +4,5 @@ navigation: module
 
 # Johnson
 
-- [Johnson Graph](johnson-graph.md)
-- [Johnson Graph adj iff](johnson-graph-adj-iff.md)
+- [Johnson graph](johnson-graph.md)
+- [Adjacency in the Johnson graph](johnson-graph-adj-iff.md)

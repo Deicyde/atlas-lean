@@ -7,14 +7,16 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.inc_iff
 ---
 
-# Inc iff
+# Incidence is membership in the endpoint pair
 
-Incidence means membership in the unordered pair of edge endpoints.
+**Incidence is membership in the endpoint pair.** In an edge-indexed multigraph, a vertex $v$
+is incident with an edge $e$ if and only if $v$ belongs to the unordered pair of endpoints of
+$e$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Inc](inc.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Incidence](inc.md)
 
 ## Sources
 

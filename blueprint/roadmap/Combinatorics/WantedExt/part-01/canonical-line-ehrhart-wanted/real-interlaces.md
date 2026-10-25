@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.RealInterlaces
 ---
 
-# Real Interlaces
+# Real interlacing
 
-`RealInterlaces f g` uses ordered lists whose multisets are exactly the roots of `f` and
-`g`, hence retain multiplicity.  Nonzeroness, root-cardinality, and degree conditions ensure
-that `f` has degree `d`, `g` has degree `d+1`, and both split over `ℝ`; the final clause is the
-paper's alternating order.
+**Real interlacing.** Let $f$ and $g$ be real polynomials. Then $f$ interlaces $g$ when $f$ and
+$g$ are nonzero with $\deg g = \deg f + 1$, the real roots of $f$, listed with multiplicity, are
+exactly $a_1 \le \dots \le a_d$ where $d = \deg f$, the real roots of $g$, listed with
+multiplicity, are exactly $b_1 \le \dots \le b_{d+1}$ (so all roots of $f$ and $g$ are real), and
+the roots alternate as $b_1 \le a_1 \le b_2 \le a_2 \le \dots \le a_d \le b_{d+1}$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [List Interlaces](list-interlaces.md)
+- [Interlacing lists](list-interlaces.md)
 
 ## Sources
 

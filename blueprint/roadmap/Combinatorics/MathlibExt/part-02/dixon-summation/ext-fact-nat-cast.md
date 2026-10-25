@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.extFact_natCast
 ---
 
-# Ext Fact nat Cast
+# The extended factorial of a natural number
 
-The extended factorial agrees with `Nat.factorial` on natural inputs.
+**The extended factorial of a natural number.** For every natural number $n$, the extended
+factorial of $n$ equals the ordinary factorial $n!$.
 
 ## Depends on
 
-- [Ext Fact](ext-fact.md)
+- [Extended factorial](ext-fact.md)
 
 ## Sources
 

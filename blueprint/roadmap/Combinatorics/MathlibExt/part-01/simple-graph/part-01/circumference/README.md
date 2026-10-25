@@ -5,5 +5,5 @@ navigation: module
 
 # Circumference
 
-- [Cycle Lengths](cycle-lengths.md)
-- [Odd Cycle Lengths](odd-cycle-lengths.md)
+- [Cycle lengths](cycle-lengths.md)
+- [Odd cycle lengths](odd-cycle-lengths.md)

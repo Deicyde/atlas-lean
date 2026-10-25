@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.CLInterlaces
 ---
 
-# CLInterlaces
+# Interlacing on the canonical line
 
-`CLInterlaces f g` is real interlacing transported to the canonical line: complete root
-lists (with multiplicity) lie on `canonicalLine`, are ordered by imaginary part, and alternate.
-Explicit nonzero, degree, and cardinality conditions prevent vacuous zero-polynomial cases.
+**Interlacing on the canonical line.** A complex polynomial $f$ CL-interlaces a complex
+polynomial $g$ when $f$ and $g$ are nonzero, $\deg g = \deg f + 1$, all roots of $f$ and of $g$
+lie on the canonical line, and, writing $d = \deg f$ and listing the roots with multiplicity as
+$a_1, \dots, a_d$ for $f$ and $b_1, \dots, b_{d+1}$ for $g$, each list sorted by increasing
+imaginary part, they alternate:
+$\operatorname{Im} b_1 \le \operatorname{Im} a_1 \le \operatorname{Im} b_2 \le \cdots \le
+\operatorname{Im} a_d \le \operatorname{Im} b_{d+1}$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [List Interlaces](list-interlaces.md)
+- [Interlacing lists](list-interlaces.md)
 - [Canonical Line](canonical-line.md)
 
 ## Sources

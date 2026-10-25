@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.card_repetitionSequence
 ---
 
-# Card repetition Sequence
+# Length of a sequence with repetitions
 
-The length of `(A, t̄)` is `t₀ + ⋯ + t_{k-1}`.
+**Length of a sequence with repetitions.** Let $G$ be a set, $a_0, \dots, a_{k-1} \in G$ (not
+necessarily distinct), $t_0, \dots, t_{k-1}$ natural numbers, $A = (a_0, \dots, a_{k-1})$ and
+$\bar t = (t_0, \dots, t_{k-1})$. The multiset $(A, \bar t)$, made of $t_i$ copies of $a_i$ for
+each $i$, has $t_0 + \dots + t_{k-1}$ elements counted with multiplicity.
 
 ## Depends on
 
-- [Repetition Sequence](repetition-sequence.md)
+- [Sequence with prescribed multiplicities](repetition-sequence.md)
 
 ## Sources
 

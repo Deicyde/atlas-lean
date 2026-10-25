@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.starStepPos
 ---
 
-# Star Step Pos
+# Positions after a step in the star model
 
-The positions of the persons after a step.
+**Positions after a step in the star model.** Given the vertex $\mathrm{pos}(p)$ of each person
+$p$ and a step $S$, a finite list of movements, the position of $p$ after $S$ is the end vertex of
+the first movement of $S$ whose persons include $p$ (its leaf if the movement is outward, the
+center if it is inward), and $\mathrm{pos}(p)$ if no movement of $S$ includes $p$.
 
 ## Depends on
 
-- [Star Move](star-move.md)
+- [Movement in the star model](star-move.md)
 
 ## Proof depends on
 
-- [Dst](dst.md)
+- [End vertex of a star movement](dst.md)
 
 ## Sources
 

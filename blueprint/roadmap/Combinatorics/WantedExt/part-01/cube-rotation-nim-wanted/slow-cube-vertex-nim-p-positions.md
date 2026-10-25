@@ -5,15 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.slowCubeVertexNim_pPositions
 ---
 
-# Slow Cube Vertex Nim p Positions
+# P-positions of slow vertex Nim on a cube
 
-In the slow version of `C_V` (each face at the selected vertex loses at most one token)
-the P-positions are exactly those with `a + A`, `b + B`, `c + C` all even: no move joins two
-such positions, and every other position has a move to one.
+**P-positions of slow vertex Nim on a cube.** Write a position of the cube game as
+$p = (a, b, c, A, B, C)$, the numbers of tokens on the six faces of a cube, where the faces
+carrying $A$, $B$, $C$ are opposite those carrying $a$, $b$, $c$. A slow vertex move is a vertex
+move (removing at least one token in total from the three faces at one vertex, one face from
+each opposite pair) in which each face loses at most one token. Let $P$ be the set of positions
+for which $a + A$, $b + B$ and $c + C$ are all even. Then no slow vertex move leads from a
+position in $P$ to a position in $P$, and from every position not in $P$ some slow vertex move
+leads to a position in $P$.
+
+Since every play terminates, these two properties make $P$ the set of P-positions of the slow
+game under normal play.
 
 ## Depends on
 
-- [Cube Vertex Move](cube-vertex-move.md)
+- [Vertex move on the cube](cube-vertex-move.md)
 
 ## Sources
 

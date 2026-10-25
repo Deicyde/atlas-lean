@@ -19,15 +19,15 @@ The positivity `0 < r` is preserved verbatim from the source.
 
 ## Depends on
 
-- [Is KAutomatic](../../../../Combinatorics/MathlibExt/part-02/words/automatic/is-kautomatic.md)
+- [$k$-automatic sequence (finite-kernel definition)](../../../../Combinatorics/MathlibExt/part-02/words/automatic/is-kautomatic.md)
 
 ## Proof depends on
 
-- [Chr kernel lam mem](../../../../Combinatorics/MathlibExt/part-02/words/automatic/chr-kernel-lam-mem.md)
-- [Chr pkernel finite](../../../../Combinatorics/MathlibExt/part-02/words/automatic/chr-pkernel-finite.md)
-- [Chr qkernel subset](../../../../Combinatorics/MathlibExt/part-02/words/automatic/chr-qkernel-subset.md)
-- [Chr self mem kernel](../../../../Combinatorics/MathlibExt/part-02/words/automatic/chr-self-mem-kernel.md)
-- [K Kernel](../../../../Combinatorics/MathlibExt/part-02/words/automatic/k-kernel.md)
+- [The $q$-kernel is closed under decimation](../../../../Combinatorics/MathlibExt/part-02/words/automatic/chr-kernel-lam-mem.md)
+- [Finiteness of the $p$-kernel from the $p^r$-kernel](../../../../Combinatorics/MathlibExt/part-02/words/automatic/chr-pkernel-finite.md)
+- [The $p^r$-kernel lies in the $p$-kernel](../../../../Combinatorics/MathlibExt/part-02/words/automatic/chr-qkernel-subset.md)
+- [A sequence lies in its own kernel](../../../../Combinatorics/MathlibExt/part-02/words/automatic/chr-self-mem-kernel.md)
+- [The $k$-kernel of a sequence](../../../../Combinatorics/MathlibExt/part-02/words/automatic/k-kernel.md)
 
 ## Sources
 

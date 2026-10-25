@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sidonBlock
 ---
 
-# Sidon Block
+# Block sets
 
-`Block(n, C, M, K) = {M l + C 2^k : k = 0, …, n - 1; l = 1, …, K}`.
+**Block sets.** For natural numbers $n$, $C$, $M$ and $K$, the block
+$\mathrm{Block}(n, C, M, K)$ is the set of natural numbers $M l + C \cdot 2^k$ with
+$0 \le k < n$ and $1 \le l \le K$.
 
 ## Depends on
 

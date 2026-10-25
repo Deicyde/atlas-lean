@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dimension Constant](../../../MathlibExt/part-03/matrix-discrepancy/dimension-constant.md)
+- [Komlós constant in a fixed dimension](../../../MathlibExt/part-03/matrix-discrepancy/dimension-constant.md)
 
 ## Sources
 

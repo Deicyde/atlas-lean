@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsCleanParallelogram
 ---
 
-# Is Clean Parallelogram
+# Clean lattice parallelogram
 
-A lattice parallelogram spanned by lattice points `u`, `v` is clean when its only lattice
-points on the boundary are its four vertices.
+**Clean lattice parallelogram.** For points $u, v \in \mathbb{R}^2$, the parallelogram
+spanned by $u$ and $v$ is clean when $u$ and $v$ are lattice points and the lattice points on the
+boundary of the parallelogram are exactly $0$, $u$, $v$ and $u + v$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lattice Parallelogram](lattice-parallelogram.md)
+- [Parallelogram spanned by two vectors](lattice-parallelogram.md)
 - [Lattice Points](lattice-points.md)
 
 ## Sources

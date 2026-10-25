@@ -7,18 +7,20 @@ proof: formalized
 lean: TuranSystem.turanNumber_mem
 ---
 
-# Turan Number mem
+# The Turán number is a realized size
 
-The Turan number is realized under the parameter bounds.
+**The Turán number is a realized size.** Let $n$, $s$, $r$ be natural numbers with
+$0 < r < s \le n$ and let $T(n, s, r)$ denote the Turán number. Then $T(n, s, r)$ belongs to the
+set of realized sizes for $n$, $s$, $r$.
 
 ## Depends on
 
-- [Realized Counts](realized-counts.md)
-- [Turan Number](turan-number.md)
+- [Realized sizes of Turán systems](realized-counts.md)
+- [Turán number](turan-number.md)
 
 ## Proof depends on
 
-- [Realized Counts nonempty](realized-counts-nonempty.md)
+- [Some size of a Turán system is realized](realized-counts-nonempty.md)
 
 ## Sources
 

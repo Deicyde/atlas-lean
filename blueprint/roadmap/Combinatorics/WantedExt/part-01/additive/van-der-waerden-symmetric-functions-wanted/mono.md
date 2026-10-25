@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.IsMVanishingFamily.mono
 ---
 
-# Mono
+# Monotonicity of $m$-vanishing
 
-Being `m`-vanishing is inherited by every smaller `m'`.
+**Monotonicity of $m$-vanishing.** Let $F$ be a family of functions on blocks over
+$\mathbb{Z}/n$ with values in a type $M$ with a zero. If $F$ is $m$-vanishing and $m' \le m$,
+then $F$ is $m'$-vanishing.
 
 ## Depends on
 
-- [Is MVanishing Family](is-mvanishing-family.md)
+- [$m$-vanishing family](is-mvanishing-family.md)
 
 ## Sources
 

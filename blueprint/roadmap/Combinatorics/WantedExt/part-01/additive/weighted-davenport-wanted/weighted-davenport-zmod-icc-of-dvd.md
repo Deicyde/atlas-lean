@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport_zmod_Icc_of_dvd
 ---
 
-# Weighted Davenport zmod Icc of dvd
+# Initial-interval weights with weighted Davenport constant $m$
 
-For `m, n ≥ 2` with `m ∣ n` and `r = ⌈n/(m-1)⌉ - 1`, the weight set `{1, …, r}` has
-`D_A(Z_n) = m`.
+**Initial-interval weights with weighted Davenport constant $m$.** Let $m, n \ge 2$ be
+natural numbers with $m \mid n$ and put $r = \lceil n/(m-1) \rceil - 1$. Then the
+$\{1, \dots, r\}$-weighted Davenport constant of $\mathbb{Z}/n\mathbb{Z}$ is
+$D_{\{1, \dots, r\}}(\mathbb{Z}/n\mathbb{Z}) = m$.
 
 ## Depends on
 

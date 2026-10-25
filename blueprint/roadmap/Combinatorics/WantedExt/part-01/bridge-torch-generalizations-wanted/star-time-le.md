@@ -6,16 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.starTime_le
 ---
 
-# Star Time le
+# Every star schedule bounds the optimal time
 
-Any star schedule bounds `T(n, k, t)` from above.
+**Every star schedule bounds the optimal time.** Let $T(n, k, t)$ be the optimal time of
+the star model with $n$ persons, $k$ edges and $t$ torches. For every star schedule $\sigma$ with
+$n$ persons, $k$ edges and $t$ torches, $T(n, k, t)$ is at most the total duration of $\sigma$,
+the sum of the durations of its steps.
 
 ## Depends on
 
-- [Is Star Schedule](is-star-schedule.md)
-- [Star Move](star-move.md)
-- [Star Step Duration](star-step-duration.md)
-- [Star Time](star-time.md)
+- [Star schedules](is-star-schedule.md)
+- [Movement in the star model](star-move.md)
+- [Duration of a step in the star model](star-step-duration.md)
+- [Optimal time in the star model](star-time.md)
 
 ## Sources
 

@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.exp_circularRMinusPermEGF_eq_rMinusAssociatedPermEGF
 ---
 
-# Exp circular RMinus Perm EGF eq r Minus Associated Perm EGF
+# Logarithm of the generating function of permutations with short cycles
 
-Corollary 12: for `r ≥ 2`, `C^{r-}(x,u) = ln A^{r-}(x,u)`, stated as
-`exp C^{r-}(x,u) = A^{r-}(x,u)`, with `C^{r-}` the excedance generating function over
-circular permutations of at most `r` objects (Theorem 7).
+**Logarithm of the generating function of permutations with short cycles.** Let $R$ be a
+commutative $\mathbb{Q}$-algebra, $x \in R$ and $r \ge 2$ an integer, and work with formal power
+series in $u$ over $R$. For a permutation $\sigma$ write $e(\sigma)$ for its number of excedances
+(points $i$ with $\sigma(i) > i$). Let
+$C^{r-}(x,u) = \sum_{n=1}^{r} \sum_{\sigma} x^{e(\sigma)} u^n/n!$, the inner sum over the
+permutations of $n$ points that consist of a single cycle, and let
+$A^{r-}(x,u) = \sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} u^n/n!$, the inner sum over the
+permutations of $n$ points all of whose cycles, fixed points included, have length at most $r$.
+Then $\exp C^{r-}(x,u) = A^{r-}(x,u)$, that is, $C^{r-}(x,u) = \ln A^{r-}(x,u)$.
 
 ## Depends on
 
-- [Is RMinus Associated Cycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rminus-associated-cycle-perm.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Permutations with all cycles of length at most $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rminus-associated-cycle-perm.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

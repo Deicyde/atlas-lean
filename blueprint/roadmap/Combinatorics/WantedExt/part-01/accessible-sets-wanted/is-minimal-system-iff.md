@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isMinimalSystem_iff
 ---
 
-# Is Minimal System iff
+# Characterization of minimal systems
 
-Characterization of minimality by absence of a nontrivial closed invariant
-set, exactly as opposed to an orbit-density reformulation.
+**Characterization of minimal systems.** Let $X$ be a compact metric space and
+$T \colon X \to X$ a homeomorphism. Then $T$ is minimal if and only if there is no closed set
+$K \subseteq X$ with $K \ne \emptyset$, $K \ne X$ and $T(K) = K$.
 
 ## Depends on
 
-- [Is Minimal System](is-minimal-system.md)
+- [Minimal system](is-minimal-system.md)
 
 ## Sources
 

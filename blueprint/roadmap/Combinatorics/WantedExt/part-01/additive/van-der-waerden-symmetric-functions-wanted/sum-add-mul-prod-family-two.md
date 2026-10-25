@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.sumAddMulProdFamily_two
 ---
 
-# Sum Add Mul Prod Family two
+# The sum-plus-product family on blocks of length two
 
-On blocks of length two, `F_c (b_0, b_1) = b_0 + b_1 + c b_0 b_1`.
+**The sum-plus-product family on blocks of length two.** For $c \in \mathbb{Z}/n$ and
+$b_0, b_1 \in \mathbb{Z}/n$, the sum-plus-product family $F_c$ over $\mathbb{Z}/n$ satisfies
+$F_c(b_0, b_1) = b_0 + b_1 + c\, b_0 b_1$.
 
 ## Depends on
 
-- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
+- [The sum-plus-product family $F_c$](sum-add-mul-prod-family.md)
 
 ## Sources
 

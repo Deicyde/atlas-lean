@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_perfectCover_subfamily_zmod
 ---
 
-# Exists perfect Cover subfamily zmod
+# Perfect $m$-covers of $\mathbb{Z}_{2^n}$ contain perfect covers
 
-Every perfect `m`-cover of `ℤ_{2^n}` contains a perfect cover: some subfamily is a
-perfect `1`-cover.
+**Perfect $m$-covers of $\mathbb{Z}_{2^n}$ contain perfect covers.** Let
+$s = (s_i)_{i \in \iota}$ be a family in $\mathbb{Z}_{2^n}$ indexed by a finite type $\iota$. If
+$s$ is a perfect $m$-cover of $\mathbb{Z}_{2^n}$, then there is a finite set $T \subseteq \iota$
+such that the subfamily $(s_i)_{i \in T}$ is a perfect $1$-cover of $\mathbb{Z}_{2^n}$.
 
 ## Depends on
 
-- [Is Perfect MCover](is-perfect-mcover.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.complexBinomialPolynomial
 ---
 
-# Complex Binomial Polynomial
+# Complex binomial polynomial
 
-The complex binomial polynomial `C(X+n,d)`, used for the asymptotic root statement.
-It is defined separately from the real version to keep all Ehrhart root assertions over `ℂ`.
+**Complex binomial polynomial.** For an integer $n$ and a natural number $d$, the complex
+binomial polynomial $\binom{X+n}{d} \in \mathbb{C}[X]$ is
+
+$$\binom{X+n}{d} = \frac{1}{d!} \prod_{i=0}^{d-1} (X + n - i).$$
 
 ## Depends on
 

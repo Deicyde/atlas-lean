@@ -13,7 +13,7 @@ depending on `P`. Stated along natural `n` (the domain of `ex`).
 ## Depends on
 
 - [Opx D](opx-d.md)
-- [Pattern Ex D](pattern-ex-d.md)
+- [Extremal function of a $d$-dimensional pattern](pattern-ex-d.md)
 
 ## Sources
 

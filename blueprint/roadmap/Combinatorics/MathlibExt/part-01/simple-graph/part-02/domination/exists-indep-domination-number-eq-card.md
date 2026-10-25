@@ -6,18 +6,20 @@ proof: formalized
 lean: SimpleGraph.exists_indepDominationNumber_eq_card
 ---
 
-# Exists indep Domination Number eq card
+# A minimum independent dominating set exists
 
-An independent dominating set attaining the independent domination number exists.
+**A minimum independent dominating set exists.** Every simple graph $G$ on a finite vertex set
+has an independent dominating set whose number of elements equals the independent domination
+number of $G$.
 
 ## Depends on
 
-- [Is Indep Dominating](is-indep-dominating.md)
-- [Indep Domination Number](indep-domination-number.md)
+- [Independent dominating set](is-indep-dominating.md)
+- [Independent domination number](indep-domination-number.md)
 
 ## Proof depends on
 
-- [Exists is Indep Dominating](exists-is-indep-dominating.md)
+- [Existence of independent dominating sets](exists-is-indep-dominating.md)
 
 ## Sources
 

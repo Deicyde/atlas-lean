@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.boundedSubsetSums
 ---
 
-# Bounded Subset Sums
+# Subset sums with a bounded number of terms
 
-The set `Σ^β_α(A) = {σ(B) : B ⊆ A, α ≤ |B| ≤ |A| - β}` of subset sums with at least `α` and
-at most `|A| - β` terms, as the union of the restricted sumsets `m^∧A` for `α ≤ m ≤ |A| - β`
-(the paper assumes `α + β ≤ |A|`).
+**Subset sums with a bounded number of terms.** For natural numbers $\alpha, \beta$ and a
+finite subset $A$ of an additive commutative monoid $G$, the set $\Sigma^{\beta}_{\alpha}(A)$ is
+the union of the restricted sumsets $m^{\wedge} A$ over $\alpha \le m \le |A| - \beta$, that is,
+the set of sums $\sum_{b \in B} b$ over subsets $B \subseteq A$ with
+$\alpha \le |B| \le |A| - \beta$. Here $|A| - \beta$ is read as $0$ when $\beta > |A|$.
+
+The source assumes $\alpha + \beta \le |A|$.
 
 ## Depends on
 

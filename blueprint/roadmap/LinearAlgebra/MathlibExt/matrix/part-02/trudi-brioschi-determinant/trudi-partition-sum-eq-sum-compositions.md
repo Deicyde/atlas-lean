@@ -18,10 +18,10 @@ coefficient `m_n(α)` counts the compositions whose part multiplicities are `α`
 
 ## Proof depends on
 
-- [Words Of Content](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/words-of-content.md)
-- [Card words Of Content eq multinomial](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/card-words-of-content-eq-multinomial.md)
-- [Sum witt Word Content](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/sum-witt-word-content.md)
-- [Witt Word Content](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/witt-word-content.md)
+- [Words with prescribed content](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/words-of-content.md)
+- [Words of given content are counted by the multinomial coefficient](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/card-words-of-content-eq-multinomial.md)
+- [The content of a word sums to its length](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/sum-witt-word-content.md)
+- [Content of a word](../../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/witt-word-content.md)
 
 ## Sources
 

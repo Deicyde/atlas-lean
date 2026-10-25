@@ -7,13 +7,15 @@ proof: formalized
 lean: SimpleGraph.exists_isAcyclic_card_eq_inducedForestNumber
 ---
 
-# Exists is Acyclic card eq induced Forest Number
+# The induced forest number is attained
 
-The induced forest number is attained by some acyclic induced vertex set.
+**The induced forest number is attained.** For every simple graph $G$ on a finite vertex set
+$V$, there is a set $S \subseteq V$ such that the subgraph of $G$ induced on $S$ is acyclic and
+$|S|$ equals the induced forest number of $G$.
 
 ## Depends on
 
-- [Induced Forest Number](induced-forest-number.md)
+- [Induced forest number](induced-forest-number.md)
 
 ## Sources
 

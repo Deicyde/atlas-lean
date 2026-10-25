@@ -12,8 +12,8 @@ Lemma 8: for `n = 8u` with `u > 1`, `F_1` over `ℤ/n` is not `m`-vanishing for 
 
 ## Depends on
 
-- [Is MVanishing Family](is-mvanishing-family.md)
-- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
+- [$m$-vanishing family](is-mvanishing-family.md)
+- [The sum-plus-product family $F_c$](sum-add-mul-prod-family.md)
 
 ## Sources
 

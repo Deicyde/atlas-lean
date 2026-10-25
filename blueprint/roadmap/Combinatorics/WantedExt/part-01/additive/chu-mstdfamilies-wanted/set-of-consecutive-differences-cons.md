@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.setOfConsecutiveDifferences_cons
 ---
 
-# Set Of Consecutive Differences cons
+# Prepending a gap
 
-Prepending a difference `g` to `(a + g | l)` inserts `a` (the new minimum when `g > 0`).
+**Prepending a gap.** For an integer $a$ and natural numbers $g_1, \dots, g_r$ ($r \ge 0$),
+write $(a \mid g_1, \dots, g_r)$ for the set of partial sums
+$\{a, a + g_1, \dots, a + g_1 + \dots + g_r\}$. Then for every natural number $g$,
+$(a \mid g, g_1, \dots, g_r) = \{a\} \cup (a + g \mid g_1, \dots, g_r)$.
+
+When $g > 0$, the new element $a$ is smaller than every element of $(a + g \mid g_1, \dots, g_r)$.
 
 ## Depends on
 
-- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
+- [Sets given by consecutive differences](set-of-consecutive-differences.md)
 
 ## Sources
 

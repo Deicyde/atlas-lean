@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.iteratePreimage
 ---
 
-# Iterate Preimage
+# Iterated preimage
 
-`iteratePreimage T s U` formalizes `T⁻ˢ U`: it is the preimage of `U`
-under the integer iterate `T^s` in the homeomorphism group.
+**Iterated preimage.** For a homeomorphism $T$ of a topological space $X$, an integer $s$ and
+a subset $U \subseteq X$, the iterated preimage $T^{-s} U$ is defined as the preimage
+$(T^s)^{-1}(U)$ of $U$ under the $s$-th power $T^s$ of $T$ in the group of homeomorphisms of $X$.
 
 ## Depends on
 

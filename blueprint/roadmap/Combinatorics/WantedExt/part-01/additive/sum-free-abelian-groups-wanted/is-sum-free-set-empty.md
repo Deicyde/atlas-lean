@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isSumFreeSet_empty
 ---
 
-# Is Sum Free Set empty
+# The empty set is sum-free
 
-The empty set is sum-free.
+**The empty set is sum-free.** For every set $G$ with an addition, the empty subset of $G$ is
+sum-free.
 
 ## Depends on
 
-- [Is Sum Free Set](is-sum-free-set.md)
+- [Sum-free set](is-sum-free-set.md)
 
 ## Sources
 

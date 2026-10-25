@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isAccessible_iff
 ---
 
-# Is Accessible iff
+# Accessibility means $r$-accessibility for every $r \ge 1$
 
-Characterization of accessibility as `r`-accessibility for all `r ≥ 1`.
+**Accessibility means $r$-accessibility for every $r \ge 1$.** A set $D$ of natural numbers
+is accessible if and only if it is $r$-accessible for every natural number $r \ge 1$.
 
 ## Depends on
 
-- [Is Accessible](is-accessible.md)
-- [Is RAccessible](is-raccessible.md)
+- [Accessible sets](is-accessible.md)
+- [$r$-accessibility for colorings of the positive integers](is-raccessible.md)
 
 ## Sources
 

@@ -6,11 +6,12 @@ statement: formalized
 lean: SimpleGraph.graphPairRamsey
 ---
 
-# Graph Pair Ramsey
+# Ramsey number of a pair of graphs
 
-The two-color Ramsey number for an arbitrary pair of finite graphs. This
-uses a separate name so the established natural-parameter `graphRamsey` API
-remains compatible with existing callers.
+**Ramsey number of a pair of graphs.** For finite simple graphs $G$ and $H$, the Ramsey number
+$R(G, H)$ is the least $n$ such that every simple graph $C$ on $n$ vertices contains a copy of $G$
+as a subgraph or has a complement containing a copy of $H$ as a subgraph, and $0$ if there is no
+such $n$.
 
 ## Depends on
 

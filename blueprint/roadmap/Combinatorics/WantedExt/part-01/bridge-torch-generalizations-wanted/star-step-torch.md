@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.starStepTorch
 ---
 
-# Star Step Torch
+# Torch counts after a step in the star model
 
-The torch counts after a step: each movement moves one torch from its start to its end.
+**Torch counts after a step in the star model.** Given the number $\mathrm{tor}(v)$ of torches
+at each vertex $v$ of the star graph and a step $S$, a finite list of movements, the number of
+torches at $v$ after $S$ is $\max(\mathrm{tor}(v) - a, 0) + b$, where $a$ is the number of
+movements of $S$ that start at $v$ and $b$ is the number of movements of $S$ that end at $v$.
 
 ## Depends on
 
-- [Star Move](star-move.md)
+- [Movement in the star model](star-move.md)
 
 ## Proof depends on
 
-- [Dst](dst.md)
-- [Src](src.md)
+- [End vertex of a star movement](dst.md)
+- [Start vertex of a star movement](src.md)
 
 ## Sources
 

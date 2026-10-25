@@ -7,19 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.intBinom_of_neg_right
 ---
 
-# Int Binom of neg right
+# Integer binomial coefficients vanish at negative lower index
 
-Integer binomial coefficients vanish when the lower argument is negative.
+**Integer binomial coefficients vanish at negative lower index.** For integers $n$ and
+$k$ with $k < 0$, the integer binomial coefficient $\binom{n}{k}$ is $0$.
 
 ## Depends on
 
-- [Int Binom](int-binom.md)
+- [Integer binomial coefficient](int-binom.md)
 
 ## Proof depends on
 
-- [Ext Fact](ext-fact.md)
-- [Inv Fact](inv-fact.md)
-- [Inv Fact of neg](inv-fact-of-neg.md)
+- [Extended factorial](ext-fact.md)
+- [Inverse factorial on the integers](inv-fact.md)
+- [The inverse factorial vanishes at negative integers](inv-fact-of-neg.md)
 
 ## Sources
 

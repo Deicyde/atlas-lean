@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.interiorHull_stdCleanParallelogram_vertices_area
 ---
 
-# Interior Hull std Clean Parallelogram vertices area
+# Vertices and area of the interior hull of a standard clean parallelogram
 
-For `1 ≤ a < n` coprime with `n / a = [q_0, …, q_m]` and interior hull
-`P_{a,n}^{(1)}` of positive area: `P_{a,n}^{(1)}` has `2(m + 1)` vertices if `q_0 > 1` and `2m`
-if `q_0 = 1`, and `∑_{i=0}^m q_i = area(P_{a,n}) - area(P_{a,n}^{(1)})`.
+**Vertices and area of the interior hull of a standard clean parallelogram.** Let
+$1 \le a < n$ with $\gcd(a, n) = 1$, let
+$P_{a,n} = \{s (1, 0) + t (a, n) : 0 \le s \le 1,\ 0 \le t \le 1\}$, let
+$n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of $n / a$, and let $H$ be the
+convex hull of the lattice points in the interior of $P_{a,n}$. If $H$ has positive area, then
+$H$ has $2(m + 1)$ vertices when $q_0 > 1$ and $2m$ vertices otherwise (that is, when $q_0 = 1$),
+and $q_0 + q_1 + \dots + q_m = \mathrm{area}(P_{a,n}) - \mathrm{area}(H)$.
 
 ## Depends on
 
 - [Lattice Points](lattice-points.md)
-- [Partial Quotient](partial-quotient.md)
-- [Std Clean Parallelogram](std-clean-parallelogram.md)
+- [Partial quotients of a rational number](partial-quotient.md)
+- [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 
 ## Sources
 

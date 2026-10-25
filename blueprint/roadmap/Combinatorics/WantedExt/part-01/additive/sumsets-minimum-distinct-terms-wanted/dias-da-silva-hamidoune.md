@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.dias_da_silva_hamidoune
 ---
 
-# Dias da silva hamidoune
+# Dias da Silva–Hamidoune theorem
 
-Dias da Silva–Hamidoune: for a nonempty `A ⊆ ℤ_p` with `|A| = k` and `1 ≤ h ≤ k`,
-`|h^A| ≥ min(p, hk - h² + 1)`.
+**Dias da Silva–Hamidoune theorem.** Let $p$ be a prime, $A$ a nonempty subset of
+$\mathbb{Z}/p\mathbb{Z}$ with $|A| = k$, and $h$ a natural number with $1 \le h \le k$. Then the
+restricted sumset $h^{\wedge}A$ of sums of $h$ distinct elements of $A$ satisfies
+$|h^{\wedge}A| \ge \min(p,\ hk - h^2 + 1)$.
 
 ## Depends on
 

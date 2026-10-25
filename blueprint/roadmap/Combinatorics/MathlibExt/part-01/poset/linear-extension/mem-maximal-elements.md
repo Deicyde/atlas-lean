@@ -7,13 +7,15 @@ proof: formalized
 lean: FinPoset.mem_maximalElements
 ---
 
-# Mem maximal Elements
+# Membership in the maximal elements
 
-Membership characterization for `maximalElements`.
+**Membership in the maximal elements.** Let $A$ be a finite subset of a partially
+ordered set $P$ and let $x \in P$. Then $x$ belongs to the set of maximal elements of $A$
+if and only if $x \in A$ and every $y \in A$ with $x \le y$ equals $x$.
 
 ## Depends on
 
-- [Maximal Elements](maximal-elements.md)
+- [Maximal elements of a finite set](maximal-elements.md)
 
 ## Sources
 

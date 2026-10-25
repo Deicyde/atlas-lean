@@ -7,8 +7,11 @@ lean: MetaMathlibExt.BridgeTorchGeneralizations.parity_interpolation
 
 # Parity interpolation
 
-A sequence given by `f` on even indices and `g` on odd indices satisfies
-`aₙ = ((1 + (-1)ⁿ)/2) f(⌊n/2⌋) + ((1 - (-1)ⁿ)/2) g(⌊n/2⌋)`.
+**Parity interpolation.** Let $f, g, a : \mathbb{N} \to \mathbb{R}$ be sequences with
+$a_{2m} = f(m)$ and $a_{2m+1} = g(m)$ for every $m \in \mathbb{N}$. Then for every
+$n \in \mathbb{N}$,
+
+$$a_n = \frac{1 + (-1)^n}{2} f(\lfloor n/2 \rfloor) + \frac{1 - (-1)^n}{2} g(\lfloor n/2 \rfloor).$$
 
 ## Depends on
 

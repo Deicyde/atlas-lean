@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.PebblingStep
 ---
 
-# Pebbling Step
+# Lagarias–Saks pebbling step
 
-One Lagarias–Saks pebbling step on `G` with edge costs `w`: along an edge `uv` with
-`0 < w(uv) ≤ C u`, remove `w(uv)` pebbles from `u` and add one pebble to `v`. Costs live on
-unordered pairs (`Sym2 V`), so each edge has one cost in both directions; the source's costs
-are positive, and the step requires it, so a zero cost never creates a pebble for free.
+**Lagarias–Saks pebbling step.** Let $G$ be a simple graph on a vertex set $V$, and let $w$
+assign a natural-number cost $w(uv)$ to each unordered pair of vertices $\{u, v\}$. For
+configurations $C, C' : V \to \mathbb{N}$, there is a pebbling step from $C$ to $C'$ if there
+is an edge $uv$ of $G$ with $0 < w(uv) \le C(u)$ such that $C'$ is obtained from $C$ by
+removing $w(uv)$ pebbles from $u$ and adding one pebble to $v$.
+
+Each edge has one cost, used in both directions. The source's costs are positive, and the step
+requires $w(uv) > 0$, so a zero cost never creates a pebble for free.
 
 ## Depends on
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.oddOrSmallEvenCompositionCount
 ---
 
-# Odd Or Small Even Composition Count
+# Compositions into odd or small even parts
 
-`c^{2k}_o(n)`: the number of compositions of `n` whose parts are odd or even and at most
-`2k`, counted as `m`-tuples of positive integers summing to `n` over all `m` (as in
-`kArndtCompositionCount`). For `k = 0` these are De Morgan's compositions into odd parts.
+**Compositions into odd or small even parts.** For natural numbers $k$ and $n$, $c^{2k}_o(n)$
+is the number of compositions of $n$, with any number of parts, in which every part is odd or at
+most $2k$. For $k = 0$ these are De Morgan's compositions of $n$ into odd parts.
 
 ## Depends on
 

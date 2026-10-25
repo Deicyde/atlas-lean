@@ -5,9 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_div_choose_mul_stirlingSecond_eq_zero
 ---
 
-# Sum choose div choose mul stirling Second eq zero
+# Vanishing alternating Stirling sums with $\binom{r+m}{k}$
 
-For `m ≥ 1` and `r ≥ 0`: `∑_{k=0}^{r+m} (-1)^k C(r+m, k) / C(r+k, k) · S(r+k, k) = 0`.
+**Vanishing alternating Stirling sums with $\binom{r+m}{k}$.** Write $S(n, k)$ for the
+Stirling numbers of the second kind. For every natural number $m \ge 1$ and every natural number
+$r$,
+
+$$
+\sum_{k=0}^{r+m} (-1)^k \frac{\binom{r+m}{k}}{\binom{r+k}{k}} S(r+k, k) = 0.
+$$
 
 ## Depends on
 

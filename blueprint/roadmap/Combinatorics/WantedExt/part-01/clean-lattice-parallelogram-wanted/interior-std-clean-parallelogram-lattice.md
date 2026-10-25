@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.interior_stdCleanParallelogram_latticePoints
 ---
 
-# Interior std Clean Parallelogram lattice Points
+# Interior lattice points of a standard clean parallelogram
 
-The lattice points in the interior of `P_{a,n}` are exactly
-`⟨k(n-a)/n⟩ (1, 0) + (k/n) (a, n)` for `k = 1, …, n - 1`, where `⟨·⟩` is the fractional part.
+**Interior lattice points of a standard clean parallelogram.** Let $1 \le a < n$ with
+$\gcd(a, n) = 1$, let $P_{a,n} = \{s (1, 0) + t (a, n) : 0 \le s \le 1,\ 0 \le t \le 1\}$, and
+write $\langle x \rangle = x - \lfloor x \rfloor$ for the fractional part of a real number $x$.
+The lattice points in the interior of $P_{a,n}$ are exactly the points
+$\langle k(n - a)/n \rangle \, (1, 0) + (k/n) \, (a, n)$ for $k = 1, \dots, n - 1$.
 
 ## Depends on
 
 - [Lattice Points](lattice-points.md)
-- [Std Clean Parallelogram](std-clean-parallelogram.md)
+- [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 
 ## Sources
 

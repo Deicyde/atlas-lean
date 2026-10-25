@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_intervalAP_overlap_of_den_ne_two
 ---
 
-# Lemma 15
+# An interval and an overlapping progression with small integer step are not MSTD
 
-**Lemma 15.** For integers `n ≥ 3`, `m ≥ 2`, `2 ≤ d ≤ n - 1` and `0 < x < n - 1` with `x`
-irrational or `x = s + p/q` (`0 < p < q`, coprime, `q ≠ 2`), `I_n ∪ J(x, m, d)` is not an MSTD set.
+**An interval and an overlapping progression with small integer step are not MSTD.** Let
+$n \ge 3$, $m \ge 2$ and $d$ be natural numbers with $2 \le d \le n - 1$, and let $x$ be a real
+number with $0 < x < n - 1$ such that either $x$ is irrational or $x = s + p/q$ for natural
+numbers $s, p, q$ with $0 < p < q$, $q \ne 2$ and $\gcd(p, q) = 1$. Write
+$I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$. Then
+$I_n \cup J(x, m, d)$ is not an MSTD set.
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
-- [Real APSet](real-apset.md)
-- [Real Interval Set](real-interval-set.md)
+- [MSTD set](is-mstdset.md)
+- [Finite arithmetic progression](real-apset.md)
+- [Initial integer interval](real-interval-set.md)
 
 ## Sources
 

@@ -7,18 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.isPrimitiveWord_of_isLyndonWord
 ---
 
-# Is Primitive Word of is Lyndon Word
+# Lyndon words are primitive
 
-Every Lyndon word is primitive.
+**Lyndon words are primitive.** Every Lyndon word over a linearly ordered alphabet is
+primitive.
 
 ## Depends on
 
-- [Is Lyndon Word](is-lyndon-word.md)
+- [Lyndon word](is-lyndon-word.md)
 - [Primitive Word](../is-primitive-word.md)
 
 ## Proof depends on
 
-- [Is Primitive Word iff nodup cyclic Permutations](is-primitive-word-iff-nodup-cyclic-permu.md)
+- [Primitivity via distinct rotations](is-primitive-word-iff-nodup-cyclic-permu.md)
 
 ## Sources
 

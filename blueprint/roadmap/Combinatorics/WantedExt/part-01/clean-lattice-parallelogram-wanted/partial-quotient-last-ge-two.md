@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.partialQuotient_last_ge_two
 ---
 
-# Partial Quotient last ge two
+# The last partial quotient of $n/a$ is at least $2$
 
-The last partial quotient of the continued fraction `[q_0, …, q_m]` of `n / a`
-(`1 ≤ a < n`) satisfies `q_m ≥ 2`. Here `m` is the least index at which `GenContFract.of (n / a)`
-terminates.
+**The last partial quotient of $n/a$ is at least $2$.** Let $a$ and $n$ be natural numbers
+with $1 \le a < n$, and let $n/a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of
+$n/a$, where $q_0 = \lfloor n/a \rfloor$ and $m$ is the number of partial quotients after $q_0$
+produced by the continued fraction algorithm (so $m = 0$ exactly when $a$ divides $n$). Then
+$q_m \ge 2$.
 
 ## Depends on
 
-- [Partial Quotient](partial-quotient.md)
+- [Partial quotients of a rational number](partial-quotient.md)
 
 ## Sources
 

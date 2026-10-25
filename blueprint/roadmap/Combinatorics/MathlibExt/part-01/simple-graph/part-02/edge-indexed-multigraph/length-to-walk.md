@@ -7,21 +7,23 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.length_toWalk
 ---
 
-# Length to Walk
+# Forgetting edge identities preserves length
 
-Forgetting edge identities preserves the number of traversed edges.
+**Forgetting edge identities preserves length.** For an indexed walk $p$, the walk in the
+underlying simple graph obtained by forgetting edge identities has the same length as $p$, namely
+the number of entries in the edge list of $p$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Indexed Walk](indexed-walk.md)
-- [Edges](edges.md)
-- [To Walk](to-walk.md)
-- [Underlying](underlying.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Indexed walk](indexed-walk.md)
+- [Edge list of an indexed walk](edges.md)
+- [From an indexed walk to a walk in the underlying graph](to-walk.md)
+- [Underlying simple graph of an edge-indexed multigraph](underlying.md)
 
 ## Proof depends on
 
-- [Edges to Walk](edges-to-walk.md)
+- [Edges of the forgetful walk](edges-to-walk.md)
 
 ## Sources
 

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.convergentVec_det_three
 ---
 
-# Convergent Vec det three
+# A determinant of three convergent vectors
 
-For `1 ≤ a < n` and `0 ≤ i ≤ m - 2`,
-`det [[1, B_{i-2}, A_{i-2}], [1, B_i, A_i], [1, B_{i+2}, A_{i+2}]] = (-1)^{i-1} q_i q_{i+1} q_{i+2}`
-(written `(-1)^{i+1}`).
+**A determinant of three convergent vectors.** Let $1 \le a < n$ be integers, let
+$n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of $n / a$, where $m$ is the
+least index at which it terminates, and let $v_j = (B_j, A_j)$ be its convergent vectors. Then
+for every natural number $i$ with $i + 2 \le m$, the determinant of the $3 \times 3$ matrix with
+rows $(1, B_{i-2}, A_{i-2})$, $(1, B_i, A_i)$ and $(1, B_{i+2}, A_{i+2})$ equals
+$(-1)^{i+1} q_i q_{i+1} q_{i+2}$.
 
 ## Depends on
 
-- [Convergent Vec](convergent-vec.md)
-- [Partial Quotient](partial-quotient.md)
+- [Convergent vectors of a continued fraction](convergent-vec.md)
+- [Partial quotients of a rational number](partial-quotient.md)
 
 ## Sources
 

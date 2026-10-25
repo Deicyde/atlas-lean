@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.incrLen
 ---
 
-# Incr Len
+# Length of the longest increasing subsequence ending at a position
 
-Length of the longest increasing subsequence ending at `p`.
+**Length of the longest increasing subsequence ending at a position.** For
+$f : \{0, \dots, N-1\} \to \mathbb{R}$ and a position $p$, this is the largest $k \le N$ such that
+$f$ has an increasing subsequence of length $k$ ending at $p$, where indices and values both
+increase strictly.
 
 ## Depends on
 
@@ -16,10 +19,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Incr End](is-incr-end.md)
-- [Is Incr Subseq](is-incr-subseq.md)
-- [Singleton incr](singleton-incr.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Increasing subsequence ending at a position](is-incr-end.md)
+- [Increasing subsequence](is-incr-subseq.md)
+- [One-term subsequences are increasing](singleton-incr.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

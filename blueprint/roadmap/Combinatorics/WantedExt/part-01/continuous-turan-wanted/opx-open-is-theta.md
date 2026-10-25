@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.opx_open_isTheta
 ---
 
-# Opx open is Theta
+# Open patterns have quadratic continuous Turán number
 
-Theorem 4.5: a nonempty open `P ⊆ ℝ²` has `opx(n, P) = Θ(n²)` as `n → ∞`. Nonemptiness is
-added: `opx(n, ∅) = 0`.
+**Open patterns have quadratic continuous Turán number.** For every nonempty open set
+$P \subseteq \mathbb{R}^2$, $\operatorname{opx}(n, P) = \Theta(n^2)$ as the real number $n$ tends
+to infinity.
+
+The paper does not assume that $P$ is nonempty. The assumption is needed, since
+$\operatorname{opx}(n, \emptyset) = 0$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

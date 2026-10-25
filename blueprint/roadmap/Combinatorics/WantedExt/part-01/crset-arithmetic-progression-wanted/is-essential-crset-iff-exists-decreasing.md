@@ -5,18 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isEssentialCRSet_iff_exists_decreasing_sequence
 ---
 
-# Theorem 7
+# Essential CR-sets via decreasing sequences
 
-**Theorem 7.** In a countable commutative semigroup `S`, a set `A` is an
-essential CR-set iff it contains a decreasing sequence of CR-sets `C n` such that each
-`x ∈ C n` has some `m` with `C m ⊆ -x + C n = {y | x + y ∈ C n}`.
+**Essential CR-sets via decreasing sequences.** Let $S$ be a countable commutative semigroup
+and let $A \subseteq S$. Then $A$ is an essential CR-set if and only if there is a decreasing
+sequence $C_0 \supseteq C_1 \supseteq C_2 \supseteq \cdots$ of CR-sets contained in $A$ such that
+for every $n$ and every $x \in C_n$ there is an $m$ with $C_m \subseteq -x + C_n$, where
+$-x + C_n = \{y \in S : x + y \in C_n\}$.
 
-The sequence is indexed from `0` rather than `1`.
+The sequence is indexed from $0$ rather than $1$.
 
 ## Depends on
 
-- [Is CRSet](is-crset.md)
-- [Is Essential CRSet](is-essential-crset.md)
+- [CR-set](is-crset.md)
+- [Essential CR-set](is-essential-crset.md)
 
 ## Sources
 

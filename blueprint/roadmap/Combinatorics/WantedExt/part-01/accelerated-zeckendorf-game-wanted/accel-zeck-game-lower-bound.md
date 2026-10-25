@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.accelZeckGame_lower_bound
 ---
 
-# Accel Zeck Game lower bound
+# Lower bound on the length of an Accelerated Zeckendorf Game
 
-For `n ≥ 1`, with `k` the (paper) index of the largest term of the Zeckendorf
-decomposition of `n`, every complete Accelerated Zeckendorf Game on `n` has at least `k - 1`
-moves.
+**Lower bound on the length of an Accelerated Zeckendorf Game.** Index the Fibonacci numbers
+as $F_1 = 1$, $F_2 = 2$, $F_{i+1} = F_i + F_{i-1}$. Let $n \ge 1$ and let $F_k$ be the largest
+Fibonacci number with $F_k \le n$, the largest term of the Zeckendorf decomposition of $n$. Then
+every complete Accelerated Zeckendorf Game on $n$ (a sequence of moves from $n$ copies of $F_1$
+to a state from which no move is possible) has at least $k - 1$ moves.
 
 ## Depends on
 
-- [Is Accel Zeck Game](is-accel-zeck-game.md)
+- [Complete Accelerated Zeckendorf Games](is-accel-zeck-game.md)
 
 ## Sources
 

@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.eq_of_add_mul_rat_mem_nat
 ---
 
-# Lemma 11
+# Uniqueness of a nonnegative integer point for a rational difference
 
-**Lemma 11.** For `d = s + p/q` with `0 < p < q` coprime, at most one `i ∈ [1, q - 1]` has `x +
-id ∈ ℕ`.
+**Uniqueness of a nonnegative integer point for a rational difference.** Let $x$ be a real
+number, let $s, p, q$ be natural numbers with $0 < p < q$ and $\gcd(p, q) = 1$, and let
+$d = s + p/q$. If $i, j \in \{1, \dots, q - 1\}$ and $x + id$ and $x + jd$ are both nonnegative
+integers, then $i = j$.
 
 ## Depends on
 

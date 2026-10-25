@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.dancikPatersonUpperBound
 ---
 
-# Dancik Paterson Upper Bound
+# Statement of the Dančík–Paterson upper bound
 
-Dančík--Paterson's exact upper endpoint `0.837623`.
+**Statement of the Dančík–Paterson upper bound.** The proposition that the binary
+Chvátal–Sankoff constant $\gamma$ satisfies $\gamma \le 0.837623$. Here $\gamma$ is the limit
+inferior, as $n \to \infty$, of $\mathbb{E}[L_n]/n$, where $L_n$ is the length of a longest common
+subsequence of two independent uniformly random binary strings of length $n$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [C31a](c31a.md)
+- [Catalogue notation for the binary Chvátal–Sankoff constant](c31a.md)
 
 ## Sources
 

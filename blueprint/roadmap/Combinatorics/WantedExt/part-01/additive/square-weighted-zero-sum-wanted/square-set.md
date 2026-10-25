@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.squareSet
 ---
 
-# Square Set
+# Nonzero squares modulo $n$
 
-`squareSet n` is the paper's `S(n)`: the conjunction says that `x` is
-nonzero and is the square of an element of `ZMod n`.
+**Nonzero squares modulo $n$.** For a natural number $n$, $S(n)$ is the set of elements $x$
+of $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$ with $x \neq 0$ and $x = y^2$ for some
+$y \in \mathbb{Z}_n$.
 
 ## Depends on
 

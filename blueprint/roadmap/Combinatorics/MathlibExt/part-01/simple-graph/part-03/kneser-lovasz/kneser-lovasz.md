@@ -7,9 +7,12 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.KneserLovaszWanted.kneser_lovasz
 ---
 
-# Kneser lovasz
+# Kneser–Lovász theorem
 
-For 0<k and 2k≤n the Kneser graph on k-subsets has chromatic number n-2k+2.
+**Kneser–Lovász theorem.** Let $n$ and $k$ be natural numbers with $0 < k$ and $2k \le n$. The
+Kneser graph $K(n, k)$, whose vertices are the $k$-element subsets of $\{0, 1, \dots, n-1\}$ and
+in which two such subsets are adjacent when they are disjoint and distinct, has chromatic number
+$n - 2k + 2$.
 
 ## Depends on
 

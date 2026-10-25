@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.chu_family_mstd_increasing
 ---
 
-# Chu family mstd increasing
+# MSTD sets with $M^k$ before $M^{k+1}$ (Theorem 3)
 
-Theorem 3: for every positive integer `k` and `M₁ ∈ {(1, 1, 2), (1, 1, 2, 1)}`,
-`A = (0 | 1, 1, 2, M^k, M^{k+1}, M₁)` is MSTD: `|A - A| < |A + A|`.
+**MSTD sets with $M^k$ before $M^{k+1}$ (Theorem 3).** Let $k$ be a positive integer, let
+$M^n$ denote the block $1, 4, \dots, 4, 3$ with $n$ fours, and let $M_1$ be one of the
+sequences $(1, 1, 2)$, $(1, 1, 2, 1)$. Let $A = (0 \mid 1, 1, 2, M^k, M^{k+1}, M_1)$ be the set
+of partial sums, starting from $0$, of the concatenated sequence $1, 1, 2, M^k, M^{k+1}, M_1$.
+Then $A$ is sum-dominated: $|A - A| < |A + A|$.
 
 ## Depends on
 
-- [Chu Block](chu-block.md)
-- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
+- [Chu difference block](chu-block.md)
+- [Sets given by consecutive differences](set-of-consecutive-differences.md)
 
 ## Sources
 

@@ -5,8 +5,8 @@ navigation: module
 
 # Perfect Graph
 
-- [Is Perfect](is-perfect.md)
-- [Perf Ineq](perf-ineq.md)
-- [Perfect implies ineq](perfect-implies-ineq.md)
-- [Lovasz weak perfect graph general](lovasz-weak-perfect-graph-general.md)
-- [Lovasz weak perfect graph](lovasz-weak-perfect-graph.md)
+- [Perfect graph](is-perfect.md)
+- [Gasparian's condition (P)](perf-ineq.md)
+- [Perfect graphs satisfy condition (P)](perfect-implies-ineq.md)
+- [Weak perfect graph theorem](lovasz-weak-perfect-graph-general.md)
+- [Lovász's weak perfect graph theorem](lovasz-weak-perfect-graph.md)

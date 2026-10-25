@@ -7,18 +7,20 @@ proof: formalized
 lean: TuranSystem.le_turanNumber
 ---
 
-# Le turan Number
+# Lower bounds on the Turán number
 
-Greatest lower bound: any uniform lower bound is at most the number.
+**Lower bounds on the Turán number.** Let $n$, $s$, $r$, $b$ be natural numbers with
+$0 < r < s \le n$. If $b \le k$ for every $k$ in the set of realized sizes for $(n, s, r)$
+(the sizes of Turán $(n, s, r)$-systems), then $b$ is at most the Turán number $T(n, s, r)$.
 
 ## Depends on
 
-- [Realized Counts](realized-counts.md)
-- [Turan Number](turan-number.md)
+- [Realized sizes of Turán systems](realized-counts.md)
+- [Turán number](turan-number.md)
 
 ## Proof depends on
 
-- [Turan Number mem](turan-number-mem.md)
+- [The Turán number is a realized size](turan-number-mem.md)
 
 ## Sources
 

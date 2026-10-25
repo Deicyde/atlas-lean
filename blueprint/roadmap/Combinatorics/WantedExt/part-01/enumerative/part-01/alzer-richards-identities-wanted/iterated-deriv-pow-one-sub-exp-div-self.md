@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.iteratedDeriv_pow_one_sub_exp_div_self_zero
 ---
 
-# Iterated Deriv pow one sub exp div self zero
+# Derivatives at zero of powers of $(1 - e^x)/x$
 
-With `f(x) = (1 - e^x)/x` for `x ≠ 0` and `f(0) = -1` (passed with its defining equations):
-for `k, r ≥ 0`, `(f^k)^{(r)}(0) = (-1)^k S(r+k, k) / C(r+k, k)` (Gradshteyn and Ryzhik,
-p. 1047).
+**Derivatives at zero of powers of $(1 - e^x)/x$.** Write $S(n, k)$ for the Stirling numbers
+of the second kind. Let $f : \mathbb{R} \to \mathbb{R}$ satisfy $f(0) = -1$ and
+$f(x) = (1 - e^x)/x$ for every $x \ne 0$. Then for all natural numbers $k$ and $r$, the $r$-th
+derivative of $f^k$ at $0$ equals $(-1)^k S(r+k, k) / \binom{r+k}{k}$.
+
+This is the expansion recorded in Gradshteyn and Ryzhik, p. 1047.
 
 ## Depends on
 

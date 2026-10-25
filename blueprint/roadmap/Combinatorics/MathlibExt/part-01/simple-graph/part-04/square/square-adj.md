@@ -7,9 +7,12 @@ proof: formalized
 lean: SimpleGraph.square_adj
 ---
 
-# Square adj
+# Adjacency in the graph square
 
-Adjacency in the square of a simple graph.
+**Adjacency in the graph square.** For a simple graph $G$ and vertices $u$ and $v$, the
+vertices $u$ and $v$ are adjacent in the square of $G$ if and only if $u \ne v$ and either $u$
+and $v$ are adjacent in $G$ or there is a vertex $w$ with $u$ adjacent to $w$ and $w$ adjacent
+to $v$ in $G$.
 
 ## Depends on
 

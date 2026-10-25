@@ -7,17 +7,19 @@ proof: formalized
 lean: SetFamily.pairCover_of_isSteinerTripleSystem
 ---
 
-# Pair Cover of is Steiner Triple System
+# Pairs in a Steiner triple system
 
-Unique pair coverage from a Steiner triple system.
+**Pairs in a Steiner triple system.** If $H$ is a Steiner triple system on a vertex type
+$V$, then for all vertices $u \ne v$ of $V$ there is exactly one edge $e$ of $H$ with
+$u \in e$ and $v \in e$.
 
 ## Depends on
 
-- [Is Steiner Triple System](is-steiner-triple-system.md)
+- [Steiner triple system](is-steiner-triple-system.md)
 
 ## Proof depends on
 
-- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+- [Uniform hypergraphs](../uniform-hypergraph/is-uniform.md)
 
 ## Sources
 

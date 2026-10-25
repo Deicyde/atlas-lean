@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.ncard_arithmeticalStructure_coconutTree
 ---
 
-# Ncard arithmetical Structure coconut Tree
+# Number of arithmetical structures on coconut trees
 
-Theorem 1: for `p ≥ 1` and `s ≥ 2`,
-`|Arith(CT(p, s))| = ∑_{j=0}^{s} binom(s, j) A(p + s - j, s - j)` with `A` as in
-`coconutCountTerm`.
+**Number of arithmetical structures on coconut trees.** For $p \ge 1$ and $s \ge 2$, the number
+of arithmetical structures on the coconut tree $CT(p, s)$ is
+
+$$\sum_{j=0}^{s} \binom{s}{j} A(p + s - j, s - j),$$
+
+where $A(x, y)$ is the coconut count term.
 
 ## Depends on
 
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
-- [Coconut Count Term](coconut-count-term.md)
-- [Coconut Tree](coconut-tree.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
+- [Terms of the coconut tree count](coconut-count-term.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

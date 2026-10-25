@@ -22,14 +22,14 @@ has dimension over $K$ equal to Witt's multigraded value $M(n_1, \dots, n_r)$.
 ## Proof depends on
 
 - [Free Lie monomials](../free-lie-multihomogeneous-component/is-free-lie-monomial.md)
-- [Is Lyndon Word](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/is-lyndon-word.md)
-- [Lyndon Words Of Content](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/lyndon-words-of-content.md)
-- [Words Of Content](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/words-of-content.md)
-- [Card lyndon Words Of Content eq witt Multigraded Value](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/card-lyndon-words-of-content-eq-witt-mul.md)
-- [Sum witt Word Content](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/sum-witt-word-content.md)
-- [Witt Word Content](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/witt-word-content.md)
-- [Witt Word Content append](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/witt-word-content-append.md)
-- [Witt Word Content singleton](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/witt-word-content-singleton.md)
+- [Lyndon word](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/is-lyndon-word.md)
+- [Lyndon words of given content](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/lyndon-words-of-content.md)
+- [Words with prescribed content](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/words-of-content.md)
+- [Witt's formula for the number of Lyndon words of given content](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/card-lyndon-words-of-content-eq-witt-mul.md)
+- [The content of a word sums to its length](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/sum-witt-word-content.md)
+- [Content of a word](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/witt-word-content.md)
+- [Content is additive under concatenation](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/witt-word-content-append.md)
+- [Content of a one-letter word](../../../../Combinatorics/MathlibExt/part-02/words/lyndon-word/witt-word-content-singleton.md)
 
 ## Sources
 

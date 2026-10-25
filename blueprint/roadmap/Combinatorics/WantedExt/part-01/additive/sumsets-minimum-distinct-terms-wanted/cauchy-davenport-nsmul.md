@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.cauchy_davenport_nsmul
 ---
 
-# Cauchy davenport nsmul
+# Cauchy–Davenport theorem for $h$-fold sumsets
 
-Cauchy–Davenport for `h`-fold sumsets: for a nonempty `A ⊆ ℤ_p` and `h ≥ 1`,
-`|hA| ≥ min(p, hk - h + 1)` with `k = |A|`.
+**Cauchy–Davenport theorem for $h$-fold sumsets.** Let $p$ be a prime, $A$ a nonempty subset
+of $\mathbb{Z}/p\mathbb{Z}$ with $|A| = k$, and $h \ge 1$ a natural number. Then the $h$-fold
+sumset $hA = \{a_1 + \dots + a_h : a_1, \dots, a_h \in A\}$ satisfies
+$|hA| \ge \min(p,\ hk - h + 1)$.
 
 ## Depends on
 

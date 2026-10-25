@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport_zmod_prod_of_dvd
 ---
 
-# Weighted Davenport zmod prod of dvd
+# Weight sets with prescribed weighted Davenport constant on $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}$, divisible case
 
-For `m, n ≥ 2` with `m ∣ n`, `α = ⌈n/(m-1)⌉ - 1` and `A ⊆ {1, …, α}` with `n/m ∈ A`:
-if `α ∣ n`, then `D_A(Z_n ⊕ Z_{kn}) = m + ⌈kn/α⌉ - 1` for every `k ≥ 1`. The paper's
-"non-empty" is implied by `n/m ∈ A` and is not repeated.
+**Weight sets with prescribed weighted Davenport constant on
+$\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}$, divisible case.** Let $n \ge 2$ and
+$k \ge 1$ be natural numbers, let $m \ge 2$ be a divisor of $n$, let
+$\alpha = \lceil n/(m-1) \rceil - 1$, and suppose that $\alpha$ divides $n$. Then for every finite
+set $A$ of natural numbers with $n/m \in A \subseteq \{1, \dots, \alpha\}$, the $A$-weighted
+Davenport constant of $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}$ is
+$D_A(\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}) = m + \lceil kn/\alpha \rceil - 1$.
 
 ## Depends on
 

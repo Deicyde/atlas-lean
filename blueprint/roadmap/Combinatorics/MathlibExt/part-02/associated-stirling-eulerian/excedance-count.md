@@ -5,12 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.excedanceCount
 ---
 
-# Excedance Count
+# Number of excedances
 
-Excedance count of a permutation of `Fin n`: the number of `i` with `σ i > i`.
-
-Concept `jis_term_6573e30b9007548081ca6e28`; source JIS VOL28/Rakotoson/rakoto12.tex
-Lines 130-132; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12.tex.
+**Number of excedances.** For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$, an excedance
+of $\sigma$ is a point $i$ with $\sigma(i) > i$, and the excedance count $e(\sigma)$ is the number
+of excedances of $\sigma$.
 
 ## Depends on
 
@@ -19,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AssociatedStirlingEulerian](../../../../../sources/v2/MathlibExt.md)
+- Concept `jis_term_6573e30b9007548081ca6e28`; source JIS VOL28/Rakotoson/rakoto12.tex Lines 130-132; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12.tex.

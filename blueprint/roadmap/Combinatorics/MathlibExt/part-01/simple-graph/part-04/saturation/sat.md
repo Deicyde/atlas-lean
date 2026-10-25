@@ -6,10 +6,11 @@ statement: formalized
 lean: SimpleGraph.sat
 ---
 
-# Sat
+# Saturation number
 
-The saturation number `sat(n, H)`: the minimum size of an `H`-saturated
-graph on `n` vertices. This is `0` when no saturated graph exists.
+**Saturation number.** Let $H$ be a simple graph and $n$ a natural number. The saturation
+number $\operatorname{sat}(n, H)$ is the minimum number of edges of an $H$-saturated simple graph
+on the vertex set $\{0, 1, \dots, n - 1\}$, and is $0$ when no such graph exists.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sat Counts](sat-counts.md)
+- [Edge counts of saturated graphs](sat-counts.md)
 
 ## Sources
 

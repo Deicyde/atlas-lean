@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.accessible_integral_quotients
 ---
 
-# Accessible integral quotients
+# Integral quotients of an accessible set
 
-If `A` is `(r*d)`-accessible, then the positive integral quotient set
-`{a/d | a ∈ A} ∩ ℕ` is `r`-accessible; divisibility is encoded by `a=n*d`.
+**Integral quotients of an accessible set.** Let $d \ge 1$ and $r$ be natural numbers and let
+$A$ be a set of natural numbers. If $A$ is $rd$-accessible, then the set $\{n \ge 1 : nd \in A\}$,
+that is, the positive integers of the form $a/d$ with $a \in A$, is $r$-accessible.
 
 ## Depends on
 
-- [Is RAccessible](is-raccessible.md)
+- [$r$-accessibility for colorings of the positive integers](is-raccessible.md)
 
 ## Sources
 

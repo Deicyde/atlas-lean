@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.isOddIndependent_singleton
 ---
 
-# Is Odd Independent singleton
+# Singletons are odd independent
 
-Every singleton is odd independent in any simple graph.
+**Singletons are odd independent.** For every vertex $a$ of a simple graph $G$, the singleton
+$\{a\}$ is odd independent in $G$.
 
 ## Depends on
 
-- [Is Odd Independent](is-odd-independent.md)
+- [Odd independent set](is-odd-independent.md)
 
 ## Sources
 

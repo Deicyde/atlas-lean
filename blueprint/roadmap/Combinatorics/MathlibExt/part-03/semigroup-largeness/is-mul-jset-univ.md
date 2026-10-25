@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isMulJSet_univ
 ---
 
-# Is Mul JSet univ
+# A nonempty semigroup is a J-set in itself
 
-In a nonempty semigroup the whole semigroup is a `J`-set.
+**A nonempty semigroup is a J-set in itself.** If $S$ is a nonempty semigroup, then $S$ is a
+$J$-set in $S$.
 
 ## Depends on
 
-- [Is Mul JSet](is-mul-jset.md)
+- [J-sets in a semigroup](is-mul-jset.md)
 
 ## Sources
 

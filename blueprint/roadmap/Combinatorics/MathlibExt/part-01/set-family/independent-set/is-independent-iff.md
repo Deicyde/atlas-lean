@@ -7,13 +7,14 @@ proof: formalized
 lean: SetFamily.isIndependent_iff
 ---
 
-# Is Independent iff
+# Independence unfolded
 
-Unfolding lemma for `IsIndependent`.
+**Independence unfolded.** A finite set $I$ of vertices is independent in a finite
+hypergraph $H$ if and only if no edge $e$ of $H$ satisfies $e \subseteq I$.
 
 ## Depends on
 
-- [Is Independent](is-independent.md)
+- [Independent set in a hypergraph](is-independent.md)
 
 ## Sources
 

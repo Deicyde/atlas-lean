@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.containsPattern_example
 ---
 
-# Contains Pattern example
+# The word $00203413$ contains $011$
 
-The paper's example `00203413` contains the pattern `011`.
+**The word $00203413$ contains $011$.** The word $00203413$ contains the pattern $011$.
+
+For example, its subsequence $033$ is order-isomorphic to $011$.
 
 ## Depends on
 
-- [Contains Pattern](contains-pattern.md)
+- [Pattern containment](contains-pattern.md)
 
 ## Sources
 

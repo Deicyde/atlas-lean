@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.card_realIntervalSet
 ---
 
-# Card real Interval Set
+# Size of the interval $I_n$
 
-`I_n` has `n` elements.
+**Size of the interval $I_n$.** For every natural number $n$, the set
+$I_n = \{0, 1, \dots, n - 1\}$ of real numbers has exactly $n$ elements.
 
 ## Depends on
 
-- [Real Interval Set](real-interval-set.md)
+- [Initial integer interval](real-interval-set.md)
 
 ## Sources
 

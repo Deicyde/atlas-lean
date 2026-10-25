@@ -7,14 +7,17 @@ proof: formalized
 lean: SimpleGraph.SameChromaticSymmetricFunction.of_iso
 ---
 
-# Of iso
+# Isomorphic graphs have the same chromatic symmetric function
 
-Isomorphic graphs have equal chromatic symmetric functions: colorings and
-their color-class fibers transport along the isomorphism.
+**Isomorphic graphs have the same chromatic symmetric function.** If $G$ and $H$ are
+isomorphic simple graphs on finite vertex sets, then $G$ and $H$ have the same chromatic
+symmetric function.
+
+The proof transports colorings and their color classes along the isomorphism.
 
 ## Depends on
 
-- [Same Chromatic Symmetric Function](same-chromatic-symmetric-function.md)
+- [Graphs with the same chromatic symmetric function](same-chromatic-symmetric-function.md)
 
 ## Sources
 

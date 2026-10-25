@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.opx_add_lt
 ---
 
-# Opx add lt
+# Increment bound for the continuous Turán number
 
-Lemma 2.6: for `n > 0` and `0 < δ < n`, `opx(n, P) ≤ opx(n + δ, P) < opx(n, P) + 3nδ`.
+**Increment bound for the continuous Turán number.** Let $P \subseteq \mathbb{R}^2$ and let
+$n, \delta$ be real numbers with $n > 0$ and $0 < \delta < n$. Then the continuous Turán number
+$\mathrm{opx}$ satisfies $\mathrm{opx}(n, P) \le \mathrm{opx}(n + \delta, P)$ and
+$\mathrm{opx}(n + \delta, P) < \mathrm{opx}(n, P) + 3 n \delta$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

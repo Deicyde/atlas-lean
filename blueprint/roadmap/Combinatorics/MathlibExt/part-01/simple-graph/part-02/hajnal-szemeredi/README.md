@@ -5,5 +5,5 @@ navigation: module
 
 # Hajnal Szemeredi
 
-- [Exists equitable coloring of max Degree lt](exists-equitable-coloring-of-max-degree.md)
-- [Hajnal szemeredi equitable coloring](hajnal-szemeredi-equitable-coloring.md)
+- [Equitable coloring with more colors than the maximum degree](exists-equitable-coloring-of-max-degree.md)
+- [Hajnal–Szemerédi theorem](hajnal-szemeredi-equitable-coloring.md)

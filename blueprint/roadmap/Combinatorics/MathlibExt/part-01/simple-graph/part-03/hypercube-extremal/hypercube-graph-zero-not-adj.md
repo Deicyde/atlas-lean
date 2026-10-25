@@ -7,17 +7,20 @@ proof: formalized
 lean: SimpleGraph.hypercubeGraph_zero_not_adj
 ---
 
-# Hypercube Graph zero not adj
+# No two vertices of the zero-dimensional hypercube are adjacent
 
-`Q_0` has no edges: any two vertices agree on all (zero) coordinates.
+**No two vertices of the zero-dimensional hypercube are adjacent.** For all vertices $x, y$
+of the $0$-dimensional hypercube $Q_0$, $x$ and $y$ are not adjacent in $Q_0$.
+
+Any two vertices agree on all (zero) coordinates.
 
 ## Depends on
 
-- [Hypercube Graph](hypercube-graph.md)
+- [Hypercube graph](hypercube-graph.md)
 
 ## Proof depends on
 
-- [Hypercube Graph adj](hypercube-graph-adj.md)
+- [Adjacency in the hypercube](hypercube-graph-adj.md)
 
 ## Sources
 

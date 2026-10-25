@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.euclidSteps_small_values
 ---
 
-# Euclid Steps small values
+# Euclid's algorithm on small inputs
 
-`euclidSteps` on small inputs: `(2, 1)` needs one step, `(3, 2)` two, `(13, 8)` five.
+**Euclid's algorithm on small inputs.** Euclid's algorithm takes exactly one division step
+on $(2, 1)$, two division steps on $(3, 2)$ and five division steps on $(13, 8)$.
 
 ## Depends on
 
-- [Euclid Steps](euclid-steps.md)
+- [Number of steps of Euclid's algorithm](euclid-steps.md)
 
 ## Sources
 

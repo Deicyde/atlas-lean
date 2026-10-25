@@ -7,8 +7,8 @@ lean: MetaMathlibExt.exists_prime_between_cubes_of_large
 
 # Cully-Hugill's theorem for cubes
 
-**Cully-Hugill's theorem for cubes** (as quoted in the paper): for every integer
-`n > exp(exp(32.537))` there is a prime strictly between `n^3` and `(n + 1)^3`.
+**Cully-Hugill's theorem for cubes.** For every natural number $n > \exp(\exp(32.537))$ there
+is a prime $p$ with $n^3 < p < (n + 1)^3$.
 
 ## Depends on
 

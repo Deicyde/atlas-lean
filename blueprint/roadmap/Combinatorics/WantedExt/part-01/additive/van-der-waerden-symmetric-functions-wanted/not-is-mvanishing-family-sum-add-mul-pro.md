@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_of_ne
 ---
 
-# Not is MVanishing Family sum Add Mul Prod of ne
+# $F_c$ with $c \notin \{0, \pm 1\}$ is not $m$-vanishing for $m > 0$
 
-Theorem 2: for `n > 1` and `c ∈ ℤ/n ∖ {0, 1, -1}`, `F_c` is not `m`-vanishing for any
-`m > 0`.
+**$F_c$ with $c \notin \{0, \pm 1\}$ is not $m$-vanishing for $m > 0$.** Let $n > 1$ and let
+$c \in \mathbb{Z}/n$ with $c \ne 0$, $c \ne 1$ and $c \ne -1$. Then for every $m > 0$ the
+sum-plus-product family $F_c$ over $\mathbb{Z}/n$,
+$F_c(b_1, \dots, b_l) = b_1 + \dots + b_l + c\, b_1 \cdots b_l$, is not $m$-vanishing.
 
 ## Depends on
 
-- [Is MVanishing Family](is-mvanishing-family.md)
-- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
+- [$m$-vanishing family](is-mvanishing-family.md)
+- [The sum-plus-product family $F_c$](sum-add-mul-prod-family.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.chr_self_mem_kernel
 ---
 
-# Chr self mem kernel
+# A sequence lies in its own kernel
 
-Every sequence is in its own `q`-kernel.
+**A sequence lies in its own kernel.** For every natural number $q$, every sequence $a$
+indexed by $\mathbb{N}$ belongs to its own $q$-kernel.
 
 ## Depends on
 
-- [K Kernel](k-kernel.md)
+- [The $k$-kernel of a sequence](k-kernel.md)
 
 ## Sources
 

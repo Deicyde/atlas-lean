@@ -6,19 +6,16 @@ statement: formalized
 lean: SimpleGraph.generalizedExtremalNumber
 ---
 
-# Generalized Extremal Number
+# Generalized Turán number
 
-Generalized Turán number `ex(n, T, H)`: the maximum possible number of
-copies of pattern `T` in an `H`-free host graph on `n` vertices. `G.copyCount T`
-counts copies of pattern `T` in host `G`, and `H.Free G` states that `G` is
-`H`-free. The intended domain from the source is patterns `T` and `H` with no
-isolated vertices; the definition itself does not require this.
+**Generalized Turán number.** Let $n$ be a natural number and let $T$ and $H$ be simple graphs,
+where $T$ has finitely many vertices. A copy of a graph in a graph $G$ is a subgraph of $G$
+isomorphic to it, and $G$ is $H$-free if it contains no copy of $H$. The generalized Turán number
+$\mathrm{ex}(n, T, H)$ is the largest number of copies of $T$ in an $H$-free simple graph on the
+vertex set $\{0, 1, \dots, n-1\}$, and is $0$ if there is no such graph.
 
-The total definition follows Mathlib's `Finset.sup` convention used by
-`SimpleGraph.extremalNumber`: it is the supremum of `G.copyCount T` over the
-filtered family `Finset.univ.filter (fun G : SimpleGraph (Fin n) => H.Free G)`.
-As with `Finset.sup` over `ℕ`, the value is `0` when the filtered family is
-empty.
+The source considers graphs $T$ and $H$ without isolated vertices; the definition does not require
+this.
 
 ## Depends on
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.StarMove.dst
 ---
 
-# Dst
+# End vertex of a star movement
 
-The vertex a movement ends at.
+**End vertex of a star movement.** In the star model on the star graph with center $o$ and
+leaves $u_0, \dots, u_{k-1}$, a torch-movement along the edge $\{o, u_\ell\}$ ends at the leaf
+$u_\ell$ if it goes outward from $o$, and at the center $o$ otherwise.
 
 ## Depends on
 
-- [Star Move](star-move.md)
+- [Movement in the star model](star-move.md)
 
 ## Sources
 

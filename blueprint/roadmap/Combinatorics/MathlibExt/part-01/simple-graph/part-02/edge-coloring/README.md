@@ -5,10 +5,10 @@ navigation: module
 
 # Edge Coloring
 
-- [Is Proper Edge Coloring](is-proper-edge-coloring.md)
+- [Proper edge coloring](is-proper-edge-coloring.md)
 - [König's line coloring, regular multigraph case: a...](k-nig-s-line-coloring-regular-multigraph.md)
 - [König's line coloring, bounded-degree multigraph case: a...](k-nig-s-line-coloring-bounded-degree-mul.md)
-- [Konig line coloring](konig-line-coloring.md)
-- [Is Proper Sym2 Coloring](is-proper-sym2-coloring.md)
-- [Is Proper Edge Coloring of is Proper Sym2 Coloring](is-proper-edge-coloring-of-is-proper-sym.md)
-- [Mono](mono.md)
+- [König's line coloring theorem](konig-line-coloring.md)
+- [Proper coloring of unordered pairs](is-proper-sym2-coloring.md)
+- [Proper colorings of unordered pairs restrict to proper edge colorings](is-proper-edge-coloring-of-is-proper-sym.md)
+- [Proper colorings of unordered pairs pass to subgraphs](mono.md)

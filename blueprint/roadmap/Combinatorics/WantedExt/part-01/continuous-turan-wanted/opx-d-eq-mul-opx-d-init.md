@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.opxD_eq_mul_opxD_init
 ---
 
-# Opx D eq mul opx D init
+# Patterns with a constant last coordinate
 
-Proposition 5.6: if all points of `P ⊆ ℝ^{d+1}` share their last coordinate, then
-`opx(n, P, d + 1) = n · opx(n, Pr(P), d)`. Stated for all real `n`.
+**Patterns with a constant last coordinate.** Let $P \subseteq \mathbb{R}^{d+1}$ be a set
+whose points all have the same last coordinate, and let $\mathrm{Pr}(P) \subseteq \mathbb{R}^d$ be
+the set obtained by deleting the last coordinate of each point of $P$. Then for every real number
+$n$, $\mathrm{opx}(n, P, d + 1) = n \cdot \mathrm{opx}(n, \mathrm{Pr}(P), d)$.
 
 ## Depends on
 

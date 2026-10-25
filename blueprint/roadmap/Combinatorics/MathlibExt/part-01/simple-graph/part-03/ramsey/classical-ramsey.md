@@ -6,10 +6,12 @@ statement: formalized
 lean: SimpleGraph.classicalRamsey
 ---
 
-# Classical Ramsey
+# The Ramsey property for cliques
 
-`classicalRamsey s t N` says that every graph on `N` vertices contains an
-ordinary copy of `K_s`, or its complement contains an ordinary copy of `K_t`.
+**The Ramsey property for cliques.** For natural numbers $s$, $t$ and $N$, the classical
+Ramsey property for $(s, t)$ holds at $N$ when every simple graph $G$ on $N$ vertices contains the
+complete graph $K_s$ as a subgraph, or its complement $\overline{G}$ contains $K_t$ as a subgraph.
+
 Thus the graph and its complement encode the two colors of a complete graph.
 
 ## Depends on

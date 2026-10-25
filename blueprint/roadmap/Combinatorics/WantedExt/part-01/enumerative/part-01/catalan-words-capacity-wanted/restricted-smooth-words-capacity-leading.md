@@ -5,17 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.restrictedSmoothWords_capacity_leadingCoeff
 ---
 
-# Restricted Smooth Words capacity leading Coeff
+# Number of restricted smooth words of maximum capacity
 
-Mansour and Shattuck's Theorem 9, leading coefficient (42): the number `cₙ` of restricted
-smooth words of length `n = 8m + p` with maximum capacity is `m + 1` for `p ∈ {0, 3}`, `1` for
-`p ∈ {1, 2, 4, 7}`, `m + 3` for `p = 5` and `m + 2` for `p = 6` when `m ≥ 1`, and
-`1, 1, 3, 1, 5, 2, 1` for `n = 1, …, 7`.
+**Number of restricted smooth words of maximum capacity.** Let $n = 8m + p \ge 1$ with
+natural numbers $m$ and $p \le 7$, and let $c_n$ be the leading coefficient of the capacity
+distribution $\sum_{w} q^{\mathrm{cap}(w)}$ over the restricted smooth words $w$ of length $n$
+(smooth words with no two adjacent letters equal to $1$), that is, the number of restricted
+smooth words of length $n$ with maximum capacity. If $m = 0$, then $c_1, \dots, c_7$ are
+$1, 1, 3, 1, 5, 2, 1$. If $m \ge 1$, then $c_n = m + 1$ for $p \in \{0, 3\}$, $c_n = m + 3$ for
+$p = 5$, $c_n = m + 2$ for $p = 6$ and $c_n = 1$ for $p \in \{1, 2, 4, 7\}$.
 
 ## Depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Restricted Smooth Words](restricted-smooth-words.md)
+- [Capacity distribution](capacity-dist.md)
+- [Restricted smooth words](restricted-smooth-words.md)
 
 ## Sources
 

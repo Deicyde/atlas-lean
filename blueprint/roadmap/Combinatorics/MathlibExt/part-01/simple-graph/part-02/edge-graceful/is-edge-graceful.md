@@ -6,10 +6,13 @@ statement: formalized
 lean: SimpleGraph.IsEdgeGraceful
 ---
 
-# Is Edge Graceful
+# Edge-graceful graph
 
-Edge-graceful: some edge-bijection with `Fin q` induces a bijective
-vertex-residue map. Only `[Fintype V]` is assumed publicly.
+**Edge-graceful graph.** A simple graph $G$ on a finite vertex set $V$ is edge-graceful when
+there are a natural number $q$ and a bijection $\ell$ from the edge set of $G$ to
+$\{0, \dots, q-1\}$ such that the induced residue map, sending each vertex $v$ to the sum of
+$\ell(e) + 1$ over the edges $e$ containing $v$ taken modulo $|V|$, is a bijection from $V$ to
+$\{0, \dots, |V| - 1\}$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Induced Residue](induced-residue.md)
+- [Induced vertex residue](induced-residue.md)
 
 ## Sources
 

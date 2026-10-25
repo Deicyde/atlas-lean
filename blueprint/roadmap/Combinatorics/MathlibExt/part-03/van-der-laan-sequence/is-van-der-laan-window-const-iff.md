@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.isVanDerLaanWindow_const_iff
 ---
 
-# Is Van Der Laan Window const iff
+# Constant Van der Laan windows
 
-Constant window characterization (concept `jis_term_73e55616c68e02e09fa349b5`).
+**Constant Van der Laan windows.** For a natural number $k$, the window $k, k, k, k$ is a
+Van der Laan window if and only if $k = 0$.
 
-A constant window `(k, k, k, k)` has largest value `k` and smallest pair sum
-`k + k`, so it is a Van der Laan window iff `k = 0`.
+Its largest value is $k$ and the sum of its two smallest values is $k + k$.
 
 ## Depends on
 
-- [Is Van Der Laan Window](is-van-der-laan-window.md)
+- [Van der Laan windows](is-van-der-laan-window.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.VanDerLaanSequence](../../../../../sources/v2/MathlibExt.md)
+- concept `jis_term_73e55616c68e02e09fa349b5`.

@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsChromaticallyIntersective
 ---
 
-# Is Chromatically Intersective
+# Chromatically intersective sets
 
-A positive set is chromatically intersective when, in every finite
-positive-integer coloring, two same-colored positive integers have the ordered
-integer difference `a - b` equal to the coercion of a member of `D`.
+**Chromatically intersective sets.** A set $D$ of natural numbers is chromatically
+intersective if every element of $D$ is positive and, for every natural number $r \ge 1$ and
+every coloring of the positive integers with $r$ colors, there are positive integers $a$ and $b$
+of the same color whose difference $a - b$, computed in the integers, lies in $D$.
 
 ## Depends on
 

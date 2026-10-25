@@ -7,10 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.fibInf_factorization
 ---
 
-# Fib Inf factorization
+# Factorization of the infinite Fibonacci word into finite Fibonacci words
 
-Factorization of the infinite Fibonacci word as `0 · 1 · fibWord 0 · fibWord 1 ⋯`: each
-partial product is a prefix of `fibInf`, and every prefix of `fibInf` lies in one of them.
+**Factorization of the infinite Fibonacci word into finite Fibonacci words.** Let $f$ be the
+infinite Fibonacci word and let $f_0, f_1, f_2, \ldots$ be the finite Fibonacci words. For every
+natural number $N$, the finite word $w_N = 0\,1\,f_0 f_1 \cdots f_{N-1}$ (so $w_0 = 01$) consists of
+the first $|w_N|$ letters of $f$, and for every natural number $k$ the first $k$ letters of $f$
+form a prefix of $w_N$ for some $N$. In this sense
+$f = 0 \cdot 1 \cdot f_0 \cdot f_1 \cdot f_2 \cdots$.
 
 ## Depends on
 
@@ -19,8 +23,8 @@ partial product is a prefix of `fibInf`, and every prefix of `fibInf` lies in on
 
 ## Proof depends on
 
-- [Fib Word eq of Fn fib Inf](fib-word-eq-of-fn-fib-inf.md)
-- [Fib Word factorization](fib-word-factorization.md)
+- [Finite Fibonacci words are prefixes of the infinite Fibonacci word](fib-word-eq-of-fn-fib-inf.md)
+- [Concatenating the finite Fibonacci words](fib-word-factorization.md)
 - [Lower bound on the length of the finite Fibonacci words](../../../part-01/infinite-word/fibonacci-word/fib-word-length.md)
 
 ## Sources

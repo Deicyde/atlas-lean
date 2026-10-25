@@ -7,12 +7,14 @@ lean: MetaMathlibExt.maxIndepSetCount_le_of_edge_count
 
 # Liu–Sharifzadeh stability bound
 
-**Liu–Sharifzadeh stability bound.** If `Γ` has `n` vertices, `n + k` edges (`k ∈ ℤ`) and
-maximum degree `Δ ≥ 1`, then `mis(Γ) ≤ 3^{Δ/13} · 3^{n/3 - k/(13Δ)}`.
+**Liu–Sharifzadeh stability bound.** Let $\Gamma$ be a graph with $n$ vertices, $n + k$
+edges for an integer $k$, and maximum degree $\Delta \ge 1$. Then the number
+$\mathrm{mis}(\Gamma)$ of maximal independent sets of $\Gamma$ satisfies
+$\mathrm{mis}(\Gamma) \le 3^{\Delta/13} \cdot 3^{n/3 - k/(13\Delta)}$.
 
 ## Depends on
 
-- [Max Indep Set Count](max-indep-set-count.md)
+- [Number of maximal independent sets](max-indep-set-count.md)
 
 ## Sources
 

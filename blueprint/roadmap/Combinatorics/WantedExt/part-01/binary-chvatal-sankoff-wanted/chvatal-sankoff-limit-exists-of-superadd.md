@@ -7,21 +7,24 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.chvatalSankoffLimitExists_of_superadditive
 ---
 
-# Chvatal Sankoff Limit Exists of superadditive
+# Superadditivity implies the binary LCS limit exists
 
-Fekete's lemma turns expected-LCS superadditivity into the source's
-ordinary-limit-existence statement. The nonlocal superadditivity premise is
-kept explicit here.
+**Superadditivity implies the binary LCS limit exists.** For each natural number $n$, let $E_n$
+be the expected length of a longest common subsequence of two independent uniformly random binary
+strings of length $n$. If $E_m + E_n \le E_{m+n}$ for all natural numbers $m$ and $n$, then the
+sequence $(E_n / n)_{n \ge 1}$ converges to a real number as $n \to \infty$.
+
+The proof applies Fekete's lemma.
 
 ## Depends on
 
-- [Chvatal Sankoff Limit Exists](chvatal-sankoff-limit-exists.md)
-- [Expected LCSLength](expected-lcslength.md)
+- [Statement of the Chvátal–Sankoff limit theorem](chvatal-sankoff-limit-exists.md)
+- [Expected length of a longest common subsequence](expected-lcslength.md)
 
 ## Proof depends on
 
-- [Expected LCSLength le](expected-lcslength-le.md)
-- [Normalized Expected LCS](normalized-expected-lcs.md)
+- [Expected LCS length is at most the string length](expected-lcslength-le.md)
+- [Normalized expected LCS length](normalized-expected-lcs.md)
 
 ## Sources
 

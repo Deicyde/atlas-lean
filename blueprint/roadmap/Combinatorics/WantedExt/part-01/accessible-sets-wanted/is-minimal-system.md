@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsMinimalSystem
 ---
 
-# Is Minimal System
+# Minimal system
 
-A compact metric homeomorphism is minimal exactly when it has no nonempty
-proper closed invariant subset.  Compactness and metrizability are typeclass
-parameters; invariance is the paper's literal equation `T '' K = K`.
+**Minimal system.** Let $X$ be a compact metric space and $T$ a homeomorphism of $X$. The
+system $(X, T)$ is minimal when there is no closed set $K \subseteq X$ that is nonempty, different
+from $X$ and invariant, meaning $T(K) = K$.
 
 ## Depends on
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.pieceDistance
 ---
 
-# Piece Distance
+# Piece distance on the integer lattice
 
-`pieceDistance A p` is zero at the origin and otherwise the infimum of the
-positive fold counts `h` for which `p ∈ h • A`; pointwise natural scalar
-multiplication of a finset is the paper's `h`-fold sumset.  As specified, an
-empty set of admissible counts has infimum zero, so nonprimitive move sets may
-assign zero away from the origin.
+**Piece distance on the integer lattice.** Let $A \subseteq \mathbb{Z}^2$ be a finite set of
+moves and, for $h \ge 1$, let $hA = \{a_1 + \dots + a_h : a_1, \dots, a_h \in A\}$ be its
+$h$-fold sumset. The piece distance of a point $p \in \mathbb{Z}^2$ for $A$ is the natural
+number that is $0$ if $p = (0,0)$ and otherwise the infimum of the set of integers $h \ge 1$
+with $p \in hA$, where the infimum of the empty set is taken to be $0$.
+
+Points other than the origin that are not a sum of moves from $A$ therefore have distance $0$.
 
 ## Depends on
 

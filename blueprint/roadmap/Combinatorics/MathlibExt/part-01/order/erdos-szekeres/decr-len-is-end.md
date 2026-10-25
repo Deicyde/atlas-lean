@@ -7,20 +7,23 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.decrLen_isEnd
 ---
 
-# Decr Len is End
+# The longest decreasing subsequence ending at a point is attained
 
-Witness for `decrLen`: a subsequence of that length ends at `p`.
+**The longest decreasing subsequence ending at a point is attained.** For every real sequence
+$f$ indexed by $\{0, \dots, N-1\}$ and every index $p$, $f$ has a strictly decreasing subsequence
+ending at $p$ whose length equals the length of the longest strictly decreasing subsequence of $f$
+ending at $p$.
 
 ## Depends on
 
-- [Is Decr End](is-decr-end.md)
-- [Decr Len](decr-len.md)
+- [Decreasing subsequence ending at a position](is-decr-end.md)
+- [Length of the longest decreasing subsequence ending at a point](decr-len.md)
 
 ## Proof depends on
 
-- [Is Decr Subseq](is-decr-subseq.md)
-- [Singleton decr](singleton-decr.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Decreasing subsequence](is-decr-subseq.md)
+- [One-term subsequences are decreasing](singleton-decr.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

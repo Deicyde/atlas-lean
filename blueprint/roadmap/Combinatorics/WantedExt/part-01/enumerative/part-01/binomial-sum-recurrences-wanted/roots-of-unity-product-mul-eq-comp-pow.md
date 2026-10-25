@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.rootsOfUnity_product_mul_eq_comp_pow
 ---
 
-# Roots Of Unity product mul eq comp pow
+# Roots-of-unity products of integer polynomials
 
-Roots-of-unity product: for `f ∈ ℤ[x]` of degree `r`, `k > 0` and `ω = exp(2πi/k)`, the
-product `F(x) = f(ωx) f(ω²x) ⋯ f(ω^{k-1}x)` has integer coefficients and
-`f(x) F(x) = T(x^k)` for some `T ∈ ℤ[x]` of degree `r`.
+**Roots-of-unity products of integer polynomials.** Let $f \in \mathbb{Z}[x]$ have degree
+$r$, let $k > 0$ be a natural number and let $\omega = e^{2\pi i/k}$. Then there are
+$G, T \in \mathbb{Z}[x]$ such that $G(x) = f(\omega x) f(\omega^2 x) \cdots f(\omega^{k-1} x)$
+as polynomials over $\mathbb{C}$, $T$ has degree $r$, and $f(x) G(x) = T(x^k)$.
 
 ## Depends on
 

@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.unitSquareSet
 ---
 
-# Unit Square Set
+# Squares of units modulo n
 
-`unitSquareSet n` is the paper's `U(n)²`: its existential records a unit
-`u` and the equation `x = u ^ 2`.
+**Squares of units modulo n.** For a natural number $n$, $U(n)^2$ is the set of elements of
+$\mathbb{Z}/n\mathbb{Z}$ of the form $u^2$ with $u$ a unit of $\mathbb{Z}/n\mathbb{Z}$.
 
 ## Depends on
 

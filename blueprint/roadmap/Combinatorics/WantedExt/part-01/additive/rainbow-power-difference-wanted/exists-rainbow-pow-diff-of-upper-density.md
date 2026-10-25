@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_rainbow_powDiff_of_upperDensity
 ---
 
-# Exists rainbow pow Diff of upper Density
+# Upper density threshold for rainbow solutions of $x - y = z^k$
 
-For `k ≥ 2` and `s = ⌊k / 2⌋`, every 3-coloring of the positive integers in which every
-color class has upper density greater than `(4^s - 1) / (3 · 4^s)` contains a rainbow solution
-of `x - y = z ^ k` in positive integers. Upper density `> δ` is rendered as: for some `ε > 0`,
-infinitely many `N` have more than `(δ + ε) N` elements of the class in `[1, N]`.
+**Upper density threshold for rainbow solutions of $x - y = z^k$.** Let $k \ge 2$ be an
+integer, let $s = \lfloor k / 2 \rfloor$ and $\delta = (4^s - 1) / (3 \cdot 4^s)$, and let $c$ be
+a coloring of the positive integers by three colors. Suppose that for each color $e$ there is
+an $\varepsilon > 0$ such that, for arbitrarily large $N$, more than $(\delta + \varepsilon) N$
+of the integers $x \in \{1, \dots, N\}$ have $c(x) = e$; that is, every color class has upper
+density greater than $\delta$. Then there are positive integers $x, y, z$ with $x = y + z^k$
+such that $c(x)$, $c(y)$, $c(z)$ are pairwise distinct.
 
 ## Depends on
 

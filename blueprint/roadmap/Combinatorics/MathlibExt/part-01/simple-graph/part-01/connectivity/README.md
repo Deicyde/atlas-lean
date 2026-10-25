@@ -5,8 +5,8 @@ navigation: module
 
 # Connectivity
 
-- [Internally Disjoint](internally-disjoint.md)
-- [Infinitely Connected](infinitely-connected.md)
-- [Bfs Step](bfs-step.md)
-- [Bfs Iterate](bfs-iterate.md)
-- [Reachable Finset](reachable-finset.md)
+- [Internally disjoint walks](internally-disjoint.md)
+- [Infinitely connected graphs](infinitely-connected.md)
+- [One round of breadth-first search](bfs-step.md)
+- [Breadth-first search with a round limit](bfs-iterate.md)
+- [Vertices reachable from a vertex](reachable-finset.md)

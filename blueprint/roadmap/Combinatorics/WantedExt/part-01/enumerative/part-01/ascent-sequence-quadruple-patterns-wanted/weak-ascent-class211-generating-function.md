@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.weakAscent_class211_generatingFunction
 ---
 
-# Weak Ascent class211 generating Function
+# Generating function for weak ascent sequences avoiding 101, 102, 110 and 201
 
-Theorem 12 (Class 211): for `Q = {101, 102, 110, 201}` and
-`F(x) = ∑_{n ≥ 0} |WA_n(Q)| xⁿ`,
-`F(x) = ((2 - 3x - x²) √(1 - 4x) - x - x²) / (2(1 - x)(1 - 4x - x²))`, stated in `ℚ⟦X⟧` with
-the denominator cleared and `√(1 - 4x)` as any power series `S` with `S² = 1 - 4X` and constant
-term `1`.
+**Generating function for weak ascent sequences avoiding 101, 102, 110 and 201.** Let $a_n$
+be the number of weak ascent sequences of length $n$ that avoid each of the patterns $101$,
+$102$, $110$ and $201$, and let $F = \sum_{n \ge 0} a_n X^n$ in $\mathbb{Q}[[X]]$. For every
+power series $S \in \mathbb{Q}[[X]]$ with $S^2 = 1 - 4X$ and constant term $1$,
+
+$$F \cdot 2(1 - X)(1 - 4X - X^2) = (2 - 3X - X^2) S - X - X^2.$$
+
+Such an $S$ is the power series $\sqrt{1 - 4X}$, and $1 - X$ and $1 - 4X - X^2$ are invertible,
+so this is the formula
+$F = \frac{(2 - 3X - X^2)\sqrt{1 - 4X} - X - X^2}{2(1 - X)(1 - 4X - X^2)}$ with the denominator
+cleared.
 
 ## Depends on
 
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Sources
 

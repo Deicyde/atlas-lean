@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.mixedSignZeroSubsetSumBound_one_one_one_one
 ---
 
-# Mixed Sign Zero Subset Sum Bound one one one one
+# A value of the mixed-sign subset-sum bound with zero
 
-`L₀(1, 1, A) = 3` for `n = p = 1` (third case), attained by `A = {-1, 0, 1}`.
+**A value of the mixed-sign subset-sum bound with zero.** For $n = p = 1$ and
+$\alpha = \beta = 1$, the mixed-sign subset-sum bound with zero is $L^0_{1,1}(1, 1) = 3$; this
+value comes from its third case.
+
+It is attained by $A = \{-1, 0, 1\}$: the sums of subsets of $A$ with one or two elements form
+$\{-1, 0, 1\}$.
 
 ## Depends on
 
-- [Mixed Sign Zero Subset Sum Bound](mixed-sign-zero-subset-sum-bound.md)
+- [Mixed-sign subset-sum bound with zero](mixed-sign-zero-subset-sum-bound.md)
 
 ## Sources
 

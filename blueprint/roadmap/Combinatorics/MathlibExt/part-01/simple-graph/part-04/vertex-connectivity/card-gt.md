@@ -6,13 +6,15 @@ proof: formalized
 lean: SimpleGraph.IsVertexConnected.card_gt
 ---
 
-# Card gt
+# Vertex count of a $k$-vertex-connected graph
 
-A `k`-vertex-connected graph has more than `k` vertices.
+**Vertex count of a $k$-vertex-connected graph.** Let $k$ be a natural number. If a simple
+graph $G$ on a finite vertex set $V$ is $k$-vertex-connected, then $V$ has more than $k$
+elements.
 
 ## Depends on
 
-- [Is Vertex Connected](is-vertex-connected.md)
+- [$k$-vertex-connected graph](is-vertex-connected.md)
 
 ## Sources
 

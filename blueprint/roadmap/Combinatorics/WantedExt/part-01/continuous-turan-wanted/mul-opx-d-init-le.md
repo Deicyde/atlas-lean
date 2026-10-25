@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.mul_opxD_init_le
 ---
 
-# Mul opx D init le
+# Projection bound for the d-dimensional continuous Turán number
 
-Lemma 5.5: for `P ⊆ ℝ^{d+1}` with projection `Pr(P) ⊆ ℝ^d` (drop the last coordinate),
-`opx(n, P, d + 1) ≥ n · opx(n, Pr(P), d)`. Stated for all real `n`.
+**Projection bound for the d-dimensional continuous Turán number.** Let $d$ be a natural
+number, $n$ a real number and $P \subseteq \mathbb{R}^{d+1}$, and let $\Pr(P)$ be the subset of
+$\mathbb{R}^d$ obtained by dropping the last coordinate of every point of $P$. Writing
+$\mathrm{opx}(n, Q, k)$ for the $k$-dimensional continuous Turán number, we have
+$n \cdot \mathrm{opx}(n, \Pr(P), d) \le \mathrm{opx}(n, P, d + 1)$.
 
 ## Depends on
 

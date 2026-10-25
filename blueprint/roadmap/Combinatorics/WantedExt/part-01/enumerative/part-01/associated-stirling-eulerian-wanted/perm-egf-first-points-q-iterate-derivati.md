@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.permEGF_firstPoints_q_iterate_derivative
 ---
 
-# Perm EGF first Points q iterate derivative
+# $q$-analogue of the derivative formula for permutations whose first $s$ points lie in distinct cycles
 
-Corollary 47: the `q`-analogue over permutations whose first `s` points lie in distinct
-cycles satisfies `∂^s [A(q,x,u)]_s/∂u^s = q^s (A(x,u) exp(u(x-1)))^s (A(x,u))^q`, the power
-read as `exp(q L)` for any `L` with `L(0) = 0` and `exp L = A(x,u)`.
+**$q$-analogue of the derivative formula for permutations whose first $s$ points lie in
+distinct cycles.** Let $R$ be a commutative $\mathbb{Q}$-algebra, $x, q \in R$ and
+$s \in \mathbb{N}$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ let $e(\sigma)$ be the
+number of $i$ with $\sigma(i) > i$ and $c(\sigma)$ the number of cycles of $\sigma$, fixed points
+included. Let $A(x,u) = \sum_{n \ge 0} \frac{u^n}{n!} \sum_{\sigma} x^{e(\sigma)} \in R[[u]]$,
+the inner sum over all permutations $\sigma$ of $\{0, \dots, n-1\}$, and let
+$A_{[s]}(q,x,u) = \sum_{n \ge 0} \frac{u^n}{n!} \sum_{\sigma} x^{e(\sigma)} q^{c(\sigma)}$, the
+inner sum over the permutations $\sigma$ of $\{0, \dots, n-1\}$ in which no two distinct points
+less than $s$ lie in the same cycle. If $L \in R[[u]]$ has zero constant term and
+$\exp(L) = A(x,u)$, where $\exp(F) = \sum_{m \ge 0} F^m/m!$, then the $s$-th derivative in $u$ is
+
+$$\frac{d^s}{du^s} A_{[s]}(q,x,u) = q^s \bigl(A(x,u) \exp((x-1)u)\bigr)^s \exp(qL).$$
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

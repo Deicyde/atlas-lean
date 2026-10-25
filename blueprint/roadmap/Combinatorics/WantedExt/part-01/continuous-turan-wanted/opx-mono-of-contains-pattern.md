@@ -11,8 +11,8 @@ Lemma 2.3: if `Q` contains `P`, then `opx(n, P) ≤ opx(n, Q)`. Stated for all r
 
 ## Depends on
 
-- [Point Set Contains Pattern](point-set-contains-pattern.md)
-- [Opx](opx.md)
+- [Containment of planar point sets](point-set-contains-pattern.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_leaves_ge_two
 ---
 
-# Ncard arithmetical Structure coconut Tree leaves ge two
+# Counting coconut structures whose leaves cannot be smoothed
 
-Corollary 4.6: for `p ≥ 1` and `s ≥ 2`, the number of arithmetical structures on `CT(p, s)`
-whose leaves cannot be smoothed (`d_{ℓ_j} ≥ 2` for all `j`) is
-`∑_{i=1}^{p} B(p - 1, p - i) |SArith(CT(i, s))|`.
+**Counting coconut structures whose leaves cannot be smoothed.** For $p \ge 1$ and $s \ge 2$,
+the number of arithmetical structures $(d, r)$ on the coconut tree $CT(p, s)$ with $d(\ell_j) \ge 2$
+at every leaf $\ell_j$ is
+
+$$\sum_{i=1}^{p} B(p - 1, p - i)\, N(i),$$
+
+where $B(n, k)$ is the ballot number and $N(i)$ is the number of smooth arithmetical structures on
+$CT(i, s)$.
 
 ## Depends on
 
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
-- [Is Smooth Coconut](is-smooth-coconut.md)
-- [Ballot Number](ballot-number.md)
-- [Coconut Tree](coconut-tree.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
+- [Ballot numbers](ballot-number.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

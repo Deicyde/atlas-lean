@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.count_elementary_two_three_prod_zmod
 ---
 
-# Count elementary two three prod zmod
+# Perfect covers of an elementary abelian group of order 4 or 8 times a cyclic 2-group
 
-Special cases of Theorem 4: for all `n ≥ 0`,
-`C((ℤ₂)^2 ⊕ ℤ_{2^n}) = 2^{2n-2} 2^{n(n-1)/2} (3n^2 + 13n + 12)` and
-`C((ℤ₂)^3 ⊕ ℤ_{2^n}) = 2^{3n-3} 2^{n(n-1)/2} (28n^3 + 196n^2 + 392n + 224)`
-(integer powers of `2`).
+**Perfect covers of an elementary abelian group of order 4 or 8 times a cyclic 2-group.**
+Write $C(K)$ for the number of perfect covers of a group $K$. For every $n \ge 0$,
+$C((\mathbb{Z}_2)^2 \oplus \mathbb{Z}_{2^n}) = 2^{2n-2} \, 2^{n(n-1)/2} \, (3n^2 + 13n + 12)$
+and
+$C((\mathbb{Z}_2)^3 \oplus \mathbb{Z}_{2^n}) =
+2^{3n-3} \, 2^{n(n-1)/2} \, (28n^3 + 196n^2 + 392n + 224)$,
+where $2^{2n-2}$ and $2^{3n-3}$ are integer powers of $2$ (fractional at $n = 0$).
 
 ## Depends on
 
-- [Count](count.md)
+- [Number of perfect covers](count.md)
 
 ## Sources
 

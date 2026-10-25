@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.extendedCarlitzBetaPoly_zero
 ---
 
-# Extended Carlitz Beta Poly zero
+# Extended Carlitz $q$-Bernoulli polynomials of order zero
 
-`β_n^{(0)}(x) = η_n(x)`.
+**Extended Carlitz $q$-Bernoulli polynomials of order zero.** For every real $q$, natural number
+$n$ and real $x$, the extended Carlitz $q$-Bernoulli polynomial $\beta_n^{(0)}(x)$ equals Carlitz's
+$q$-polynomial $\eta_n(x)$.
 
 ## Depends on
 
-- [Carlitz Eta Poly](carlitz-eta-poly.md)
-- [Extended Carlitz Beta Poly](extended-carlitz-beta-poly.md)
+- [Carlitz $q$-polynomials $\eta_n$](carlitz-eta-poly.md)
+- [Extended Carlitz $q$-Bernoulli polynomials](extended-carlitz-beta-poly.md)
 
 ## Sources
 

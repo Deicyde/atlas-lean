@@ -5,18 +5,21 @@ statement: formalized
 lean: IsogenyVolcano.IsVerticalEdge
 ---
 
-# Is Vertical Edge
+# Vertical edge
 
-Vertical edge in either direction.
+**Vertical edge.** In an $\ell$-isogeny volcano $C$, the pair $(v, w)$ of vertices is a
+vertical edge when it is a descending edge or an ascending edge, that is, when the edge
+multiplicity between $v$ and $w$ is positive and the levels of $v$ and $w$ differ by exactly
+one.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
+- [Isogeny volcano](isogeny-volcano.md)
 
 ## Proof depends on
 
-- [Is Ascending Edge](is-ascending-edge.md)
-- [Is Descending Edge](is-descending-edge.md)
+- [Ascending edge](is-ascending-edge.md)
+- [Descending edge](is-descending-edge.md)
 
 ## Sources
 

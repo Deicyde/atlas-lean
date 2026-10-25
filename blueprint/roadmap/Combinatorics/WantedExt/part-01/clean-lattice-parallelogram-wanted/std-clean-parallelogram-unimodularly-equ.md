@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.stdCleanParallelogram_unimodularlyEquivalent
 ---
 
-# Std Clean Parallelogram unimodularly Equivalent
+# Unimodular equivalences between the parallelograms $P_{b,n}$
 
-For `n > 1`, `1 ≤ a < n` with `gcd(a, n) = 1`, and `a⁻¹ ∈ [1, n - 1]` with
-`a a⁻¹ ≡ 1 (mod n)`, the clean parallelograms `P_{a,n}`, `P_{n-a,n}`, `P_{a⁻¹,n}`,
-`P_{n-a⁻¹,n}` are unimodularly equivalent (each to `P_{a,n}`).
+**Unimodular equivalences between the parallelograms $P_{b,n}$.** For natural numbers $b$
+and $n$ let $P_{b,n}$ be the parallelogram spanned by $(1, 0)$ and $(b, n)$, with vertices
+$(0, 0)$, $(1, 0)$, $(b, n)$, $(b + 1, n)$. Let $n$, $a$ and $a'$ be natural numbers with $n > 1$,
+$1 \le a < n$, $\gcd(a, n) = 1$, $1 \le a' < n$ and $a a' \equiv 1 \pmod{n}$. Then $P_{a,n}$ is
+unimodularly equivalent to each of $P_{n-a,n}$, $P_{a',n}$ and $P_{n-a',n}$.
 
 ## Depends on
 
-- [Unimodularly Equivalent](unimodularly-equivalent.md)
-- [Std Clean Parallelogram](std-clean-parallelogram.md)
+- [Unimodularly equivalent sets](unimodularly-equivalent.md)
+- [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 
 ## Sources
 

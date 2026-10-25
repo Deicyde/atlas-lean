@@ -12,8 +12,8 @@ not `r`-accessible for any `r ≥ 2`.
 
 ## Depends on
 
-- [Is RAccessible](../../accessible-sets-wanted/is-raccessible.md)
-- [Even Fibonacci Set](../../accessible-sets-wanted/even-fibonacci-set.md)
+- [$r$-accessibility for colorings of the positive integers](../../accessible-sets-wanted/is-raccessible.md)
+- [Even Fibonacci set](../../accessible-sets-wanted/even-fibonacci-set.md)
 
 ## Sources
 

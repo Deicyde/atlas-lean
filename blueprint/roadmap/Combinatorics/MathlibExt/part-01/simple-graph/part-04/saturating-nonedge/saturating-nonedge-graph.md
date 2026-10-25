@@ -6,9 +6,11 @@ statement: formalized
 lean: SimpleGraph.saturatingNonedgeGraph
 ---
 
-# Saturating Nonedge Graph
+# Graph of saturating non-edges
 
-The simple graph whose edges are exactly the `F`-saturating non-edges of `G`.
+**Graph of saturating non-edges.** Let $F$ and $G$ be simple graphs. The graph of $F$-saturating
+non-edges of $G$ is the simple graph on the vertices of $G$ whose edges are exactly the
+$F$-saturating non-edges of $G$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Saturating Nonedge](is-saturating-nonedge.md)
+- [Saturating non-edge](is-saturating-nonedge.md)
 
 ## Sources
 

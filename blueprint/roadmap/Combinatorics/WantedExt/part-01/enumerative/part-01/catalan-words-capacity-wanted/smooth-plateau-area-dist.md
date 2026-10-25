@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.smoothPlateauAreaDist
 ---
 
-# Smooth Plateau Area Dist
+# Area distribution of smooth words from $j$ to $j$
 
-`t(m, j; q)`, the area distribution on the set `𝒯_{m,j}` of words of length `m` over `[1, j]`
-that begin and end with `j` and satisfy `|w_{i+1} - w_i| ≤ 1`.
+**Area distribution of smooth words from $j$ to $j$.** For natural numbers $m$ and $j$, let
+$\mathcal{T}_{m,j}$ be the set of words $w = w_1 \cdots w_m$ with letters in $\{1, \dots, j\}$
+such that $w_1 = w_m = j$ and $|w_{i+1} - w_i| \le 1$ for $1 \le i < m$; in particular
+$\mathcal{T}_{0,j}$ is empty. The area distribution of $\mathcal{T}_{m,j}$ is the polynomial
+$t(m, j; q) = \sum_{w \in \mathcal{T}_{m,j}} q^{w_1 + \cdots + w_m}$ in $\mathbb{Z}[q]$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Area Dist](area-dist.md)
-- [Words Ending In](words-ending-in.md)
+- [Area distribution](area-dist.md)
+- [Words ending in a given letter](words-ending-in.md)
 
 ## Sources
 

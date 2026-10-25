@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.starStepDuration
 ---
 
-# Star Step Duration
+# Duration of a step in the star model
 
-The duration of a step: the largest crossing time among all persons moving in it.
+**Duration of a step in the star model.** A step is a finite list of movements carried out in
+parallel. Its duration is the largest crossing time $p + 1$ of a person $p$ moving in one of its
+movements, and $0$ if no person moves.
 
 ## Depends on
 
-- [Star Move](star-move.md)
+- [Movement in the star model](star-move.md)
 
 ## Sources
 

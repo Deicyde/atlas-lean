@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.iteratedDeriv_one_add_one_sub_exp_div_self_pow_zero
 ---
 
-# Iterated Deriv one add one sub exp div self pow zero
+# Derivatives at zero of $(1 + (1 - e^x)/x)^{n+1}$
 
-With `f(x) = (1 - e^x)/x` for `x ≠ 0` and `f(0) = -1` (passed with its defining equations)
-and `n ≥ 0`: `((1 + f)^{n+1})^{(r)}(0)` is `0` for `0 ≤ r ≤ n` and `(-1/2)^{n+1} (n+1)!` for
-`r = n + 1`.
+**Derivatives at zero of $(1 + (1 - e^x)/x)^{n+1}$.** Let $f : \mathbb{R} \to \mathbb{R}$
+satisfy $f(0) = -1$ and $f(x) = (1 - e^x)/x$ for every $x \ne 0$, and let $n$ be a natural
+number. Then for every natural number $r \le n$, the $r$-th derivative of $(1 + f)^{n+1}$ at $0$
+is $0$, and the $(n+1)$-th derivative of $(1 + f)^{n+1}$ at $0$ equals $(-1/2)^{n+1} (n+1)!$.
 
 ## Depends on
 

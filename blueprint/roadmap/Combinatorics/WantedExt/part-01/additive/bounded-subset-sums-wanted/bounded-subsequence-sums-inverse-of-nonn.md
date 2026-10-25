@@ -5,20 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.boundedSubsequenceSums_inverse_of_nonneg_zero
 ---
 
-# Bounded Subsequence Sums inverse of nonneg zero
+# Inverse theorem for bounded subsequence sums of nonnegative sequences containing zero
 
-Inverse theorem for Theorem 14 (`k = m + 1 ≥ 3`, `0 = a₀ < a₁ < ⋯`, `1 ≤ α ≤ h - 2`,
-`β ≤ h - 2`, `α + β ≤ h - 1`), writing `E` for `|Σ^β_α(𝒜)| = L(r̄, h - β)`: (a) for `k = 3`,
-`E` holds when `t₁ = 1`, and for `t₁ ≥ 2`, `E` iff `A = a₁ · [0, 2]`; (b) for `k = 4` and
-`t₁ = t₂ = 1`, `E` iff `A = {0, a₁, a₂, a₁ + a₂}`, and for `t₁ ≥ 2` or `t₂ ≥ 2`, `E` iff
-`A = a₁ · [0, 3]`; (c) for `k ≥ 5`, `E` iff `A = a₁ · [0, k - 1]`. Dilations are by some
-`e > 0` (necessarily `a₁`).
+**Inverse theorem for bounded subsequence sums of nonnegative sequences containing zero.** Let
+$m \ge 2$, let $0 < a_1 < \dots < a_m$ be integers, put $a_0 = 0$ and
+$A = \{a_0, a_1, \dots, a_m\}$, let $t_0, t_1, \dots, t_m$ be positive integers, let
+$\mathcal{A}$ be the sequence in which each $a_i$ occurs $t_i$ times, and let
+$h = t_0 + t_1 + \dots + t_m$. Let $\alpha, \beta$ be natural numbers with
+$1 \le \alpha \le h - 2$, $\beta \le h - 2$ and $\alpha + \beta \le h - 1$, put
+$\bar r = (h - \alpha - \beta + t_0, t_1, \dots, t_m)$, and write $E$ for the equality
+$|\Sigma^\beta_\alpha(\mathcal{A})| = L(\bar r, h - \beta)$, where $L$ is the Yang–Chen bound.
+For an integer $e$ and a set $X$ write $e \cdot X = \{e x : x \in X\}$. Then:
+(a) if $m = 2$ and $t_1 = 1$, then $E$ holds; if $m = 2$ and $t_1 \ge 2$, then $E$ holds if and
+only if $A = e \cdot \{0, 1, 2\}$ for some integer $e > 0$;
+(b) if $m = 3$ and $t_1 = t_2 = 1$, then $E$ holds if and only if $A = \{0, x, y, x + y\}$ for
+some integers $0 < x < y$; if $m = 3$ and $t_1 \ge 2$ or $t_2 \ge 2$, then $E$ holds if and only
+if $A = e \cdot \{0, 1, 2, 3\}$ for some integer $e > 0$;
+(c) if $m \ge 4$, then $E$ holds if and only if $A = e \cdot \{0, 1, \dots, m\}$ for some integer
+$e > 0$.
 
 ## Depends on
 
-- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
-- [Repetition Sequence](repetition-sequence.md)
-- [Yang Chen Bound](yang-chen-bound.md)
+- [Subsequence sums with a bounded number of terms](bounded-subsequence-sums.md)
+- [Sequence with prescribed multiplicities](repetition-sequence.md)
+- [The Yang–Chen bound](yang-chen-bound.md)
 
 ## Sources
 

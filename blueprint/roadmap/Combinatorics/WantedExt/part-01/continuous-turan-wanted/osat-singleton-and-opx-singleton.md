@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.osat_singleton_and_opx_singleton
 ---
 
-# Osat singleton and opx singleton
+# Saturation function and continuous Turán number of a single point
 
-Lemma 6.5: for a single point `P = {p}`, `osat(n, P) = opx(n, P) = 0`. Stated for all real
-`n`.
+**Saturation function and continuous Turán number of a single point.** For every real number
+$n$ and every point $p \in \mathbb{R}^2$, $\operatorname{osat}(n, \{p\}) = 0$ and
+$\operatorname{opx}(n, \{p\}) = 0$.
 
 ## Depends on
 
-- [Opx](opx.md)
-- [Osat](osat.md)
+- [Continuous Turán number in the plane](opx.md)
+- [Saturation function for continuous patterns](osat.md)
 
 ## Sources
 

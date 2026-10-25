@@ -5,18 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.rCyclePermEGF_firstPoints_iterate_derivative
 ---
 
-# R Cycle Perm EGF first Points iterate derivative
+# Derivative formula for $r$-cycle permutations with separated first points
 
-Theorem 27: for `r ≥ 2`, over permutations with all cycle lengths equal to `r` and the
-first `s` points in distinct cycles,
-`∂^s [A^{(r)}(x,u)]_s/∂u^s = x^s (A_{r-1}(x) u^{r-1}/(r-1)!)^s A^{(r)}(x,u)`.
+**Derivative formula for $r$-cycle permutations with separated first points.** Let $R$ be
+a commutative $\mathbb{Q}$-algebra, $x \in R$, and let $r, s$ be natural numbers with $r \ge 2$.
+For a permutation $\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$ for its number of excedances
+(indices $i$ with $\sigma(i) > i$), and let $A_j(x) = \sum_{\sigma \in S_j} x^{e(\sigma)}$. Call
+$\sigma$ an $r$-cycle permutation when every cycle of $\sigma$, fixed points included, has exactly
+$r$ elements, and say that its first $s$ points are separated when the points $i < \min(s, n)$
+lie in pairwise distinct cycles. Let
+$A^{(r)}(x,u) = \sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} u^n/n! \in R[[u]]$, the inner sum over
+the $r$-cycle permutations $\sigma$ of $\{0, \dots, n-1\}$, and let $F(u)$ be the same series
+with the inner sum restricted to those $\sigma$ whose first $s$ points are separated. Then the
+$s$-th derivative of $F$ with respect to $u$ is
+
+$$F^{(s)}(u) = x^s \left(\frac{A_{r-1}(x)\, u^{r-1}}{(r-1)!}\right)^s A^{(r)}(x,u).$$
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
+- [Permutations with all cycles of length $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

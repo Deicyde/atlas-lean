@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.opx_dilate_le
 ---
 
-# Opx dilate le
+# Continuous Turán number of a dilated finite pattern
 
-Lemma 2.12: let `P` be finite with all gaps between consecutive distinct `x`-coordinates and
-between consecutive distinct `y`-coordinates in `[c, d]`, `c > 0`, and let `P' = qP`, `q > 1`.
-Then `opx(n, P') ≤ (⌈qd/c⌉ + 1)² opx(⌈⌈n/c⌉ / (⌈qd/c⌉ + 1)⌉ c, P)` for `n > 0`.
+**Continuous Turán number of a dilated finite pattern.** Let $P \subseteq \mathbb{R}^2$ be
+finite, and let $c > 0$ and $d$ be real numbers such that any two consecutive distinct
+$x$-coordinates of points of $P$ differ by at least $c$ and at most $d$, and likewise for
+$y$-coordinates. Let $q > 1$ and $qP = \{qp : p \in P\}$. Then for every real $n > 0$,
+$\mathrm{opx}(n, qP) \le (\lceil qd/c \rceil + 1)^2 \, \mathrm{opx}(m, P)$, where
+$m = \lceil \lceil n/c \rceil / (\lceil qd/c \rceil + 1) \rceil \, c$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.AccelZeckLosing
 ---
 
-# Accel Zeck Losing
+# Losing states of the Accelerated Zeckendorf Game
 
-Losing states (the player to move has no winning strategy), defined inductively together
-with `AccelZeckWinning`: a state is losing when every move from it reaches a winning state. In
-particular every terminal state is losing.
+**Losing states of the Accelerated Zeckendorf Game.** The losing and the winning states of
+the Accelerated Zeckendorf Game are defined by simultaneous induction: a state is losing when
+every move from it leads to a winning state, and a state is winning when some move from it leads
+to a losing state. In particular every state from which no move is possible is losing.
 
 ## Depends on
 

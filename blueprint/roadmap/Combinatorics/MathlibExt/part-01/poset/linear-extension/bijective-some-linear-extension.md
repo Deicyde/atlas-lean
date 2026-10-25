@@ -7,17 +7,19 @@ proof: formalized
 lean: FinPoset.bijective_someLinearExtension
 ---
 
-# Bijective some Linear Extension
+# The chosen linear extension is bijective
 
-The chosen linear extension is bijective.
+**The chosen linear extension is bijective.** For every finite poset $\alpha$ with
+$n$ elements, the chosen linear extension of $\alpha$, viewed as a rank function
+$\alpha \to \{0, 1, \dots, n-1\}$, is a bijection.
 
 ## Depends on
 
-- [Some Linear Extension](some-linear-extension.md)
+- [A chosen linear extension](some-linear-extension.md)
 
 ## Proof depends on
 
-- [Lin Ext Order Iso](lin-ext-order-iso.md)
+- [Ranking a Szpilrajn linear extension](lin-ext-order-iso.md)
 
 ## Sources
 

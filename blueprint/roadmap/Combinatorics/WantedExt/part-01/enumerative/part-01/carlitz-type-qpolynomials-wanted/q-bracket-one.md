@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.qBracket_one
 ---
 
-# Q Bracket one
+# The $q$-number of $1$
 
-`[1] = 1` for `q ≠ 1`.
+**The $q$-number of $1$.** For real $q \ne 1$, the $q$-analogue $[x] = (q^x - 1)/(q - 1)$
+satisfies $[1] = 1$.
 
 ## Depends on
 
-- [Q Bracket](q-bracket.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

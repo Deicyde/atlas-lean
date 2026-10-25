@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.fixedPointsPerm_excedance_cycle_sum_neg_succ
 ---
 
-# Fixed Points Perm excedance cycle sum neg succ
+# Signed excedance–cycle sum over s-fixed-points permutations, cycle weight -s-1
 
-Corollary 61: for `n ≥ s`, summing over the `s`-fixed-points-permutations `𝓕_n^s` of
-`n` objects,
-`∑ x^{e(π)} (-s-1)^{c(π)} = (-1)^s (s+1)^s (x(sx+1)^{n-s} - (s+1)^{n-s} x^{n-s})/(x-1)`,
-stated in `ℤ[X]` with the denominator `x - 1` cleared and restricted to `n ≥ s`.
+**Signed excedance–cycle sum over s-fixed-points permutations, cycle weight -s-1.** Let
+$s \le n$ be natural numbers. Call a permutation $\sigma$ of $\{0, \dots, n-1\}$ an
+$s$-fixed-points permutation if every fixed point of $\sigma$ is less than $s$ and any two points
+less than $s$ in the same cycle of $\sigma$ are equal. Write $e(\sigma)$ for the number of $i$
+with $\sigma(i) > i$ and $c(\sigma)$ for the number of cycles of $\sigma$, fixed points included.
+Then, summing over the $s$-fixed-points permutations $\sigma$ of $\{0, \dots, n-1\}$, the sum
+$S = \sum_{\sigma} x^{e(\sigma)} (-s-1)^{c(\sigma)}$ in the polynomial ring $\mathbb{Z}[x]$
+satisfies
+
+$$(x - 1) S = (-1)^s (s+1)^s \left(x (s x + 1)^{n-s} - (s+1)^{n-s} x^{n-s}\right).$$
+
+This is the paper's formula with the denominator $x - 1$ cleared.
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 
 ## Sources
 

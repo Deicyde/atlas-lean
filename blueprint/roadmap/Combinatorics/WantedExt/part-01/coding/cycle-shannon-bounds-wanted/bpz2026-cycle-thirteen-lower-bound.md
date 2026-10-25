@@ -5,16 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpz2026CycleThirteenLowerBound
 ---
 
-# Bpz2026 Cycle Thirteen Lower Bound
+# Buys–Polak–Zuiddam lower bound for the capacity of the 13-cycle
 
-Source: BPZ, arXiv:2607.29681, exact thirteen-cycle root rate.
+**Buys–Polak–Zuiddam lower bound for the capacity of the 13-cycle.** Let $c$ be the code
+coordinate of BPZ's final seventy-two-block thirteen-cycle profile, and let $M = \max(c, 0)$.
+Then $M^{1/432}$ is at most the Shannon capacity of the $13$-cycle, as an inequality in
+$[0, \infty]$.
 
 ## Depends on
 
 - [Shannon capacity of the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
-- [BPZProfile](bpzprofile.md)
-- [Bpz C13 Pi72](bpz-c13-pi72.md)
+- [BPZ profiles](bpzprofile.md)
+- [Seventy-two-block BPZ profile of the thirteen-cycle](bpz-c13-pi72.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Coding.CycleShannonBoundsWanted](../../../../../../sources/v2/WantedExt.md)
+- BPZ, arXiv:2607.29681, exact thirteen-cycle root rate.

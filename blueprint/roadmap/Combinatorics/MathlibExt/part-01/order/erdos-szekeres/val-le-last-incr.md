@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.val_le_last_incr
 ---
 
-# Val le last incr
+# The last value is the largest along a strictly increasing selection
 
-Entries strictly before the end sit weakly below the end value along an
-increasing subsequence.
+**The last value is the largest along a strictly increasing selection.** Let $f$ be a real
+sequence indexed by $\{0, \dots, N-1\}$, let $k \ge 1$, and let $\varphi$ map
+$\{0, \dots, k-1\}$ to $\{0, \dots, N-1\}$ so that $f(\varphi(i)) < f(\varphi(j))$ whenever
+$i < j < k$. If $\varphi(k-1) = q$, then $f(\varphi(i)) \le f(q)$ for every $i < k$.
 
 ## Depends on
 
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.quadrupleVSet_subset
 ---
 
-# Quadruple VSet subset
+# $V_{n,j}$ lies in $W_n$
 
-`V_{n,j} ⊆ W_n`.
+**$V_{n,j}$ lies in $W_n$.** For all natural numbers $n$ and $j$, the set $V_{n,j}$ is
+contained in $W_n = WA_n(011, 100, 201, 210)$, the set of weak ascent sequences of length $n$
+that avoid each of the patterns $011$, $100$, $201$ and $210$.
 
 ## Depends on
 
-- [Quadruple VSet](quadruple-vset.md)
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [The sets $V_{n,j}$](quadruple-vset.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Proof depends on
 
-- [Last Descent Top](last-descent-top.md)
+- [Position of the last descent top](last-descent-top.md)
 
 ## Sources
 

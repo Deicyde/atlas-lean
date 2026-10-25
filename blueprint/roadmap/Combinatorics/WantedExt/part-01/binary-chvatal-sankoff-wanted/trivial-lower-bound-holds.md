@@ -7,18 +7,19 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.trivialLowerBound_holds
 ---
 
-# Trivial Lower Bound holds
+# The binary Chvátal–Sankoff constant is nonnegative
 
-The trivial endpoints follow from the proved finite-level bounds.
+**The binary Chvátal–Sankoff constant is nonnegative.** The binary Chvátal–Sankoff constant
+$C_{31a}$ satisfies $0 \le C_{31a}$.
 
 ## Depends on
 
-- [Trivial Lower Bound](trivial-lower-bound.md)
+- [Statement of the trivial lower bound](trivial-lower-bound.md)
 
 ## Proof depends on
 
-- [C31a](c31a.md)
-- [Binary Chvatal Sankoff Constant mem Icc](binary-chvatal-sankoff-constant-mem-icc.md)
+- [Catalogue notation for the binary Chvátal–Sankoff constant](c31a.md)
+- [Trivial bounds for the binary Chvátal–Sankoff constant](binary-chvatal-sankoff-constant-mem-icc.md)
 
 ## Sources
 

@@ -4,7 +4,7 @@ navigation: module
 
 # List Coloring
 
-- [Is List Colorable](is-list-colorable.md)
-- [Is Choice Number](is-choice-number.md)
-- [Mono](mono.md)
-- [Colorable](colorable.md)
+- [List colorability](is-list-colorable.md)
+- [Choice number](is-choice-number.md)
+- [Monotonicity of list colorability](mono.md)
+- [List-colorable graphs are colorable](colorable.md)

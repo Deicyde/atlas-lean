@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.opxD_plus_stack_isTheta
 ---
 
-# Opx D plus stack is Theta
+# Stacked plus signs in three dimensions
 
-Corollary 5.19: for the plus sign `P = {(x, y) : |x|, |y| ≤ r, x = 0 ∨ y = 0}` with `r > 0`
-and `c > 0`: `opx(n, Q_{P,2,c}, 3) = Θ(n^{5/2})` and `opx(n, Q_{P,3,c}, 3) = Θ(n^{8/3})`. The
-paper's size parameter `d` is renamed `r`; `r > 0` is added (for `r = 0`, `Q_{P,2,c}` is two points
-on a vertical line and `opx(n, Q_{P,2,c}, 3) ≤ c n²`).
+**Stacked plus signs in three dimensions.** Let $r > 0$ and $c > 0$, let
+$P = \{(x, y) \in \mathbb{R}^2 : |x| \le r,\ |y| \le r,\ x = 0 \text{ or } y = 0\}$ be the plus
+sign of size $r$, and for $t \in \{2, 3\}$ let
+$Q_{P,t,c} = \{(x, y, ic) : (x, y) \in P,\ i \in \{1, \dots, t\}\} \subseteq \mathbb{R}^3$. Then,
+as the real number $n$ tends to infinity, $\mathrm{opx}(n, Q_{P,2,c}, 3) = \Theta(n^{5/2})$ and
+$\mathrm{opx}(n, Q_{P,3,c}, 3) = \Theta(n^{8/3})$.
+
+The paper's size parameter $d$ is renamed $r$, and $r > 0$ is added: for $r = 0$, $Q_{P,2,c}$ is
+two points on a vertical line and $\mathrm{opx}(n, Q_{P,2,c}, 3) \le c n^2$.
 
 ## Depends on
 

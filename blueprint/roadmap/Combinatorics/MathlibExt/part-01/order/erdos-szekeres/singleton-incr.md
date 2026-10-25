@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.singleton_incr
 ---
 
-# Singleton incr
+# One-term subsequences are increasing
 
-Singletons are increasing subsequences.
+**One-term subsequences are increasing.** For every real sequence $f$ indexed by
+$\{0, \dots, N-1\}$ and every position $p$, the subsequence of length $1$ consisting of the term
+at position $p$ is a strictly increasing subsequence of $f$.
 
 ## Depends on
 
-- [Is Incr Subseq](is-incr-subseq.md)
+- [Increasing subsequence](is-incr-subseq.md)
 
 ## Proof depends on
 
-- [Fin1 false](fin1-false.md)
+- [No strict pair in a one-element set](fin1-false.md)
 
 ## Sources
 

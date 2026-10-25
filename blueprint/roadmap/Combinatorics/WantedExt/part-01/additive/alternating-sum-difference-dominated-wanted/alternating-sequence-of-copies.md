@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.alternating_sequence_of_copies
 ---
 
-# Alternating sequence of copies
+# Alternating sum- and difference-dominated sets from shifted copies
 
-Theorem 1: let `A₁` be an MSTD set of nonnegative integers with `0 ∈ A₁` (so
-`0 = min A₁`, as the paper's proof uses when it counts every sum `a + b + 2n` as new) and let
-`n > max A₁` be such that
-(a) `A₁ + A₁` and `A₁ - A₁` have the same number of residues modulo `n`, and (b) with
-`x = #{a ∈ A₁ : n + a ∉ A₁ + A₁}` and `y = #{b ∈ A₁ : n - b ∉ A₁ - A₁}`,
-`2y - x - 1 > |A₁ + A₁| - |A₁ - A₁|`. Define `A_{2l} = A_{2l-1} ∪ {ln}` and
-`A_{2l+1} = A_{2l-1} ∪ (A₁ + ln)` for `l ≥ 1`. Then `A_{2l}` is MDTS, `A_{2l+1}` is MSTD, and
-the sequence is strictly increasing.
+**Alternating sum- and difference-dominated sets from shifted copies.** For a set $S$ of
+integers write $S + S = \{s + s' : s, s' \in S\}$ and $S - S = \{s - s' : s, s' \in S\}$. Let $A_1$
+be a finite set of integers with $|A_1 - A_1| < |A_1 + A_1|$ and $0 \in A_1$, and let $n$ be an
+integer with $0 \le a < n$ for every $a \in A_1$. Suppose that (a) $A_1 + A_1$ and $A_1 - A_1$
+meet the same number of residue classes modulo $n$, and (b) with
+$x = \#\{a \in A_1 : n + a \notin A_1 + A_1\}$ and $y = \#\{b \in A_1 : n - b \notin A_1 - A_1\}$
+we have $2y - x - 1 > |A_1 + A_1| - |A_1 - A_1|$. Let $A_1, A_2, A_3, \dots$ be finite sets of
+integers, starting with this $A_1$, such that for every $l \ge 1$, $A_{2l} = A_{2l-1} \cup \{ln\}$
+and $A_{2l+1} = A_{2l-1} \cup \{a + ln : a \in A_1\}$. Then for every $l \ge 1$,
+$|A_{2l} + A_{2l}| < |A_{2l} - A_{2l}|$, $|A_{2l+1} - A_{2l+1}| < |A_{2l+1} + A_{2l+1}|$ and
+$A_{2l-1} \subsetneq A_{2l} \subsetneq A_{2l+1}$.
 
 ## Depends on
 

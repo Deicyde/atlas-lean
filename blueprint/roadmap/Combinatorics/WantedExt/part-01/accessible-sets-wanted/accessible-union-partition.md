@@ -11,7 +11,7 @@ If a union is accessible, then one of its two summands is accessible.
 
 ## Depends on
 
-- [Is Accessible](is-accessible.md)
+- [Accessible sets](is-accessible.md)
 
 ## Sources
 

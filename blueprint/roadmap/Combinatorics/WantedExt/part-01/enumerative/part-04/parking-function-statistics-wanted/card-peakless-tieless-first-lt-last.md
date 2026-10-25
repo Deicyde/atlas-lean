@@ -14,7 +14,7 @@ For `n ≥ 0`, the number of peakless-tieless parking functions of length `n + 1
 
 - [Parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
 - [Partial parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
-- [Fine Number](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
+- [Fine numbers](../../../../../MathlibExt/part-02/fine-number/fine-number.md)
 
 ## Sources
 

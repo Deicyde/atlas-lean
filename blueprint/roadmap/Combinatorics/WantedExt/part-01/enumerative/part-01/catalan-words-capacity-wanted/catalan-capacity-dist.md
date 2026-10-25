@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.catalanCapacityDist
 ---
 
-# Catalan Capacity Dist
+# Capacity distribution of Catalan words with a given last letter
 
-`a(n, i; q)`, the capacity distribution on Catalan words of length `n` ending in `i`.
+**Capacity distribution of Catalan words with a given last letter.** For natural numbers $n$
+and $i$, $a(n, i; q) \in \mathbb{Z}[q]$ is the capacity distribution of the Catalan words of
+length $n$ whose last letter is $i$: the sum of $q^{\mathrm{cap}(w)}$ over all such words $w$,
+where $\mathrm{cap}(w)$ is the capacity of $w$.
 
 ## Depends on
 
@@ -15,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Catalan Words](catalan-words.md)
-- [Words Ending In](words-ending-in.md)
+- [Capacity distribution](capacity-dist.md)
+- [Catalan words](catalan-words.md)
+- [Words ending in a given letter](words-ending-in.md)
 
 ## Sources
 

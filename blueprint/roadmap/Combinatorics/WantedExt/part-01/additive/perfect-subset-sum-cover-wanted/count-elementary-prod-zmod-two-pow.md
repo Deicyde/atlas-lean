@@ -17,7 +17,7 @@ power, `2^{-m}` at `n = 0`).
 
 ## Depends on
 
-- [Count](count.md)
+- [Number of perfect covers](count.md)
 
 ## Sources
 

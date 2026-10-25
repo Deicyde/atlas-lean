@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHFoldSumset
 ---
 
-# Generalized HFold Sumset
+# Generalized $h$-fold sumset
 
-The generalized `h`-fold sumset `h^{(r̄)}A = {∑ sⱼ aⱼ : 0 ≤ sⱼ ≤ rⱼ, ∑ sⱼ = h}` of the
-ordered set `A = {a₀, …, a_{k-1}}` (given as `a : Fin k → G`) with the tuple `r̄ = (r₀, …, r_{k-1})`.
+**Generalized $h$-fold sumset.** For elements $a_0, \dots, a_{k-1}$ of an additive commutative
+monoid $G$ (not necessarily distinct), natural numbers $\bar r = (r_0, \dots, r_{k-1})$ and a
+natural number $h$, the generalized $h$-fold sumset of $A = (a_0, \dots, a_{k-1})$ is the finite
+set $h^{(\bar r)}A = \{\sum_j s_j a_j : s_j \in \mathbb{N}, s_j \le r_j, \sum_j s_j = h\}$, where
+$s_j a_j$ is the sum of $s_j$ copies of $a_j$.
 
 ## Depends on
 

@@ -5,13 +5,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC13Pi1
 ---
 
-# Bpz C13 Pi1
+# One-block BPZ profile of the thirteen-cycle
 
-BPZ's one-block six-dimensional thirteen-cycle profile.
+**One-block BPZ profile of the thirteen-cycle.** The one-block BPZ profile of the
+thirteen-cycle is the BPZ profile with code coordinate $62530$, pairs coordinate $1014$,
+auxiliary coordinate $62530$ and neutral coordinate $60502$.
+
+BPZ describe it as their one-block six-dimensional thirteen-cycle profile.
 
 ## Depends on
 
-- [BPZProfile](bpzprofile.md)
+- [BPZ profiles](bpzprofile.md)
 
 ## Sources
 

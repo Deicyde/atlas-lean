@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.interiorHull_stdCleanParallelogram_clean_iff_fib
 ---
 
-# Interior Hull std Clean Parallelogram clean iff fib
+# Clean interior hulls and Fibonacci numbers
 
-For `1 ≤ a < n` coprime, the interior hull `P_{a,n}^{(1)}` is a clean lattice polygon (its
-only boundary lattice points are its vertices) if and only if `n = F_k` and `a = F_{k-1}` or
-`a = F_{k-2}` for some `k`.
+**Clean interior hulls and Fibonacci numbers.** Let $F_0 = 0$, $F_1 = 1$,
+$F_{k+2} = F_{k+1} + F_k$ be the Fibonacci numbers. Let $1 \le a < n$ with $\gcd(a, n) = 1$, let
+$P_{a,n} = \{s (1, 0) + t (a, n) : 0 \le s \le 1,\ 0 \le t \le 1\}$, and let $H$ be the convex
+hull of the lattice points in the interior of $P_{a,n}$. Then the lattice points on the boundary of
+$H$ are exactly the vertices of $H$ if and only if there is a natural number $k$ with $n = F_k$
+and either $a = F_{k-1}$ or $a = F_{k-2}$.
 
 ## Depends on
 
 - [Lattice Points](lattice-points.md)
-- [Std Clean Parallelogram](std-clean-parallelogram.md)
+- [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 
 ## Sources
 

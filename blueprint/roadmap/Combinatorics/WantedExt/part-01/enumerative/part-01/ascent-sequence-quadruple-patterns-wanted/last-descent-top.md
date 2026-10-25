@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.lastDescentTop
 ---
 
-# Last Descent Top
+# Position of the last descent top
 
-The (one-indexed) position of the last descent top of `w`, or `0` if `w` has no descent.
+**Position of the last descent top.** For a finite sequence $w = w_1 w_2 \cdots w_m$ of
+natural numbers, a descent of $w$ is an index $1 \le i < m$ with $w_i > w_{i+1}$, and $w_i$ is
+its descent top. The position of the last descent top of $w$ is the largest index $i$ with
+$w_i > w_{i+1}$ (positions counted from $1$), and it is $0$ if $w$ has no descent.
 
 ## Depends on
 

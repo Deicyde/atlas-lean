@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.card_boundedSubsetSums_ge_mixedSign
 ---
 
-# Card bounded Subset Sums ge mixed Sign
+# Lower bound for bounded subset sums of a mixed-sign set
 
-For a set `A` of `p` positive and `n` negative integers, `1 ≤ n ≤ p`, `k = n + p`, `1 ≤ α`
-and `α + β ≤ k - 1`: `|Σ^β_α(A)| ≥ L(α, β, A)`, and the bound is attained.
+**Lower bound for bounded subset sums of a mixed-sign set.** Let $n$, $p$, $\alpha$, $\beta$ be
+natural numbers with $1 \le n \le p$, $1 \le \alpha$ and $\alpha + \beta + 1 \le n + p$, and let
+$L_{n,p}(\alpha, \beta)$ be the mixed-sign subset-sum bound. For a finite set $A$ of integers write
+$\Sigma_\alpha^\beta(A)$ for the set of sums of subsets $B \subseteq A$ with
+$\alpha \le |B| \le |A| - \beta$. Every finite set $A$ of nonzero integers with exactly $n$
+negative and exactly $p$ positive elements satisfies
+$|\Sigma_\alpha^\beta(A)| \ge L_{n,p}(\alpha, \beta)$, and some such set $A$ attains equality.
 
 ## Depends on
 
-- [Bounded Subset Sums](bounded-subset-sums.md)
-- [Mixed Sign Subset Sum Bound](mixed-sign-subset-sum-bound.md)
+- [Subset sums with a bounded number of terms](bounded-subset-sums.md)
+- [Mixed-sign subset-sum bound](mixed-sign-subset-sum-bound.md)
 
 ## Sources
 

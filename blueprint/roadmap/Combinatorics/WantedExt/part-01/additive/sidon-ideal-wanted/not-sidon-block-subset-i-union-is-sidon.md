@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.not_sidonBlock_subset_iUnion_isSidon
 ---
 
-# Not sidon Block subset i Union is Sidon
+# A block not covered by few Sidon sets
 
-Lemma 3: for `n ≥ 1` and `C ≥ 1`, `Block(n, C, C 2^n + 1, (n - 1) (n choose 2) + 1)`
-is not covered by `n - 1` Sidon sets.
+**A block not covered by few Sidon sets.** Let $n \ge 1$ and $C \ge 1$ be natural
+numbers, and put $M = C \cdot 2^n + 1$ and $K = (n - 1)\binom{n}{2} + 1$. Then the block
+$\mathrm{Block}(n, C, M, K) = \{M l + C \cdot 2^k : 0 \le k < n,\ 1 \le l \le K\}$ is not
+contained in the union of any $n - 1$ Sidon subsets of $\mathbb{N}$.
 
 ## Depends on
 
-- [Sidon Block](sidon-block.md)
+- [Block sets](sidon-block.md)
 - [Sidon](../../../../MathlibExt/part-01/additive/is-sidon.md)
 
 ## Sources

@@ -7,14 +7,17 @@ proof: formalized
 lean: SimpleGraph.isClawFree_iff_not_isIndContained
 ---
 
-# Is Claw Free iff not is Ind Contained
+# Claw-free graphs have no induced claw
 
-`IsClawFree G` holds if and only if the claw — the star graph on `Fin 4`
-centered at `0` — is not an induced subgraph of `G`.
+**Claw-free graphs have no induced claw.** Let $G$ be a simple graph on an arbitrary vertex
+set. Then $G$ is claw-free if and only if the claw $K_{1,3}$, the star graph on four vertices
+whose center is adjacent to the other three, is not an induced subgraph of $G$, that is, there is
+no injective map from its vertices to those of $G$ that preserves both adjacency and
+nonadjacency.
 
 ## Depends on
 
-- [Is Claw Free](is-claw-free.md)
+- [Claw-free graph](is-claw-free.md)
 
 ## Sources
 

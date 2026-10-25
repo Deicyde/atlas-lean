@@ -4,10 +4,10 @@ navigation: module
 
 # Matrix Discrepancy
 
-- [Sign Value](sign-value.md)
-- [Discrepancy](discrepancy.md)
-- [Column Admissible](column-admissible.md)
-- [Dimension Constant](dimension-constant.md)
-- [Komlos Constant](komlos-constant.md)
-- [Discrepancy attained](discrepancy-attained.md)
-- [Uniform Rectangular Bound](uniform-rectangular-bound.md)
+- [Signs indexed by two elements](sign-value.md)
+- [Discrepancy of a real matrix](discrepancy.md)
+- [Matrices with columns in the unit ball](column-admissible.md)
+- [Komlós constant in a fixed dimension](dimension-constant.md)
+- [Komlós constant](komlos-constant.md)
+- [The discrepancy is attained](discrepancy-attained.md)
+- [Uniform discrepancy bound for vectors in the unit ball](uniform-rectangular-bound.md)

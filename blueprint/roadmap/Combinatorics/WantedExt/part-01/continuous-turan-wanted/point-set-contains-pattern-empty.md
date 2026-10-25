@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.pointSetContainsPattern_empty
 ---
 
-# Point Set Contains Pattern empty
+# Every planar set contains the empty pattern
 
-Every set contains the empty pattern.
+**Every planar set contains the empty pattern.** Every set $S \subseteq \mathbb{R}^2$ contains
+the empty set $\emptyset$ in the sense of containment of planar point sets.
 
 ## Depends on
 
-- [Point Set Contains Pattern](point-set-contains-pattern.md)
+- [Containment of planar point sets](point-set-contains-pattern.md)
 
 ## Sources
 

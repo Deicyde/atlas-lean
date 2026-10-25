@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.kArndtComposition_total_gf_nonneg
 ---
 
-# K Arndt Composition total gf nonneg
+# Counting $k$-Arndt compositions for nonnegative $k$
 
-For `k ≥ 0` the number `a_k(n) = ∑_m a_k(n, m)` of `k`-Arndt compositions has generating
-function `A_k(x) = (1 - x²)/(1 - x - x² + x³ - x^{k+3})`.
+**Counting $k$-Arndt compositions for nonnegative $k$.** Let $k \ge 0$ be an integer and let
+$a_k(n) = \sum_{m = 0}^{n} a_k(n, m)$ be the number of $k$-Arndt compositions of $n$. Then, in
+$\mathbb{Z}[[x]]$,
+
+$$\Bigl(\sum_{n \ge 0} a_k(n)\, x^n\Bigr)(1 - x - x^2 + x^3 - x^{k+3}) = 1 - x^2,$$
+
+that is, $\sum_{n \ge 0} a_k(n)\, x^n = (1 - x^2)/(1 - x - x^2 + x^3 - x^{k+3})$.
 
 ## Depends on
 
-- [K Arndt Composition Count](k-arndt-composition-count.md)
+- [Number of $k$-Arndt compositions](k-arndt-composition-count.md)
 
 ## Sources
 

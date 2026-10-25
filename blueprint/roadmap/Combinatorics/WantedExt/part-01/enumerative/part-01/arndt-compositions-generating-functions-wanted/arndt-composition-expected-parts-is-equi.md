@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.arndtComposition_expected_parts_isEquivalent
 ---
 
-# Arndt Composition expected parts is Equivalent
+# Expected number of parts of an Arndt composition
 
-The expected number of parts of a uniformly random Arndt composition of `n`,
-`p(n)/a(n) = (∑_m m a(n, m)) / F_n`, is asymptotically `(3/√5 - 1) n`.
+**Expected number of parts of an Arndt composition.** Let $a(n, m)$ be the number of Arndt
+compositions of $n$ with $m$ parts, and $F_n$ the $n$-th Fibonacci number ($F_0 = 0$, $F_1 = 1$).
+Then
+
+$$\frac{1}{F_n} \sum_{m=0}^{n} m\, a(n, m) \sim \left(\frac{3}{\sqrt 5} - 1\right) n
+\quad (n \to \infty).$$
+
+Since there are $F_n$ Arndt compositions of $n$ for $n \ge 1$, the left side is the expected
+number of parts of a uniformly random Arndt composition of $n$.
 
 ## Depends on
 
-- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

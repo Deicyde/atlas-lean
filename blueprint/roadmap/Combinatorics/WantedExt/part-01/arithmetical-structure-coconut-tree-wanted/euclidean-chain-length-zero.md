@@ -6,13 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.euclideanChainLength_zero
 ---
 
-# Euclidean Chain Length zero
+# Euclidean chain function with second argument zero
 
-`F(x, 0) = 1` (for `x = 0` this is the totalized value, see `euclideanChainLength`).
+**Euclidean chain function with second argument zero.** For every natural number $x$, the
+Euclidean chain function $F$ satisfies $F(x, 0) = 1$.
+
+For $x = 0$ this is the value given by the recursive definition of $F$, not a count of positive
+terms.
 
 ## Depends on
 
-- [Euclidean Chain Length](euclidean-chain-length.md)
+- [Euclidean chain function](euclidean-chain-length.md)
 
 ## Sources
 

@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.generalizedHFoldSumset_comp_perm
 ---
 
-# Generalized HFold Sumset comp perm
+# Reordering invariance of the generalized $h$-fold sumset
 
-Reordering: `h^{(r̄)}A = h^{(r̄_π)}A_π` for every permutation `π` of the indices (stated
-for every `h`, tuple `r̄` and indexing `a`; the paper assumes `h ≥ 2`, `r̄` positive and `A` a set).
+**Reordering invariance of the generalized $h$-fold sumset.** Let $G$ be an additive
+commutative monoid, $a_0, \dots, a_{k-1} \in G$, $r_0, \dots, r_{k-1}$ and $h$ natural numbers,
+and write $h^{(\bar r)}A = \{\sum_j s_j a_j : 0 \le s_j \le r_j, \sum_j s_j = h\}$ for the
+generalized $h$-fold sumset of $A = (a_0, \dots, a_{k-1})$ with $\bar r = (r_0, \dots, r_{k-1})$.
+For every permutation $\pi$ of $\{0, \dots, k-1\}$, the generalized $h$-fold sumset of
+$(a_{\pi(0)}, \dots, a_{\pi(k-1)})$ with $(r_{\pi(0)}, \dots, r_{\pi(k-1)})$ equals
+$h^{(\bar r)}A$.
+
+The paper assumes $h \ge 2$, all $r_j$ positive and the $a_j$ distinct; none of this is assumed
+here.
 
 ## Depends on
 
-- [Generalized HFold Sumset](generalized-hfold-sumset.md)
+- [Generalized $h$-fold sumset](generalized-hfold-sumset.md)
 
 ## Sources
 

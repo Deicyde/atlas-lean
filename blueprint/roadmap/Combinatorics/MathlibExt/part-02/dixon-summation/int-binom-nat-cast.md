@@ -7,20 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.intBinom_natCast
 ---
 
-# Int Binom nat Cast
+# Integer binomial coefficients of natural numbers
 
-Integer binomial coefficients agree with `Nat.choose` on their natural range.
+**Integer binomial coefficients of natural numbers.** For natural numbers $k \le n$, the
+integer binomial coefficient of $n$ and $k$ equals the ordinary binomial coefficient
+$\binom{n}{k}$.
 
 ## Depends on
 
-- [Int Binom](int-binom.md)
+- [Integer binomial coefficient](int-binom.md)
 
 ## Proof depends on
 
-- [Ext Fact](ext-fact.md)
-- [Ext Fact nat Cast](ext-fact-nat-cast.md)
-- [Inv Fact](inv-fact.md)
-- [Inv Fact nat Cast](inv-fact-nat-cast.md)
+- [Extended factorial](ext-fact.md)
+- [The extended factorial of a natural number](ext-fact-nat-cast.md)
+- [Inverse factorial on the integers](inv-fact.md)
+- [The inverse factorial at natural numbers](inv-fact-nat-cast.md)
 
 ## Sources
 

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.stdCleanParallelogram
 ---
 
-# Std Clean Parallelogram
+# The parallelogram $P_{a,n}$
 
-`P_{a,n}`, the parallelogram with vertices `(0,0)`, `(1,0)`, `(a,n)`, `(a+1,n)`.
+**The parallelogram $P_{a,n}$.** For natural numbers $a$ and $n$, the set
+$P_{a,n} \subseteq \mathbb{R}^2$ is the closed parallelogram spanned by $(1, 0)$ and $(a, n)$,
+that is, the set of points $s (1, 0) + t (a, n)$ with $0 \le s \le 1$ and $0 \le t \le 1$. For
+$n \ge 1$ it is the parallelogram with vertices $(0, 0)$, $(1, 0)$, $(a, n)$ and $(a + 1, n)$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lattice Parallelogram](lattice-parallelogram.md)
+- [Parallelogram spanned by two vectors](lattice-parallelogram.md)
 
 ## Sources
 

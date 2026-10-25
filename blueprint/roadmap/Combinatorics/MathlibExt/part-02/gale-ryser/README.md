@@ -5,6 +5,6 @@ navigation: module
 
 # Gale Ryser
 
-- [Prefix Sum](prefix-sum.md)
-- [Prefix Sum eq sum fin](prefix-sum-eq-sum-fin.md)
-- [Gale ryser](gale-ryser.md)
+- [Prefix sum](prefix-sum.md)
+- [Prefix sums within the sequence length](prefix-sum-eq-sum-fin.md)
+- [Gale–Ryser theorem](gale-ryser.md)

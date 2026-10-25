@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.chuFamilyKLT_card_sub
 ---
 
-# Chu Family KLT card sub
+# Size of the difference set of the Chu family set
 
-Theorem 6: `|A - A| = 11 + 6klt + 8lt + 8t`.
+**Size of the difference set of the Chu family set.** Let $k$, $l$, $t$ be positive integers
+and let $A \subseteq \mathbb{Z}$ be the Chu family set with parameters $k$, $l$, $t$. Then
+$|A - A| = 11 + 6klt + 8lt + 8t$.
 
 ## Depends on
 
-- [Chu Family KLT](chu-family-klt.md)
+- [Kumar–Mohan–Pandey sets](chu-family-klt.md)
 
 ## Sources
 

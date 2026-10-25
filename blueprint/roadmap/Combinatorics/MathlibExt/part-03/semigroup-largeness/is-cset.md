@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.IsCSet
 ---
 
-# Is CSet
+# C-sets in a semigroup
 
-A set `D` in a semigroup `S` is a `C`-set: `D ∈ p` for an idempotent `p ∈ J(S)`, the
-ultrafilters all of whose members are `J`-sets.
+**C-sets in a semigroup.** Let $S$ be a semigroup and let $\beta S$ be the set of ultrafilters
+on $S$, with the product for which $D \in pq$ exactly when
+$\{x \in S : \{y \in S : xy \in D\} \in q\} \in p$. Let $J(S)$ be the set of ultrafilters on $S$
+all of whose members are $J$-sets. A set $D \subseteq S$ is a $C$-set when $D \in p$ for some
+$p \in J(S)$ with $pp = p$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Mul JSet](is-mul-jset.md)
+- [J-sets in a semigroup](is-mul-jset.md)
 
 ## Sources
 

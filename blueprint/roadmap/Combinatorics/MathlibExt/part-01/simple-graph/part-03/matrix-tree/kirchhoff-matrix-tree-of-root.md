@@ -7,21 +7,25 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.MatrixTreeWanted.kirchhoff_matrix_tree_of_root
 ---
 
-# Kirchhoff matrix tree of root
+# Matrix-tree theorem for a chosen root
 
-Kirchhoff's matrix-tree theorem without the `Nonempty` hypothesis: the root vertex
-already witnesses nonemptiness.
+**Matrix-tree theorem for a chosen root.** Let $G$ be a simple graph on a finite vertex set $V$
+and let $r \in V$. Then the determinant of the reduced Laplacian of $G$ at $r$, that is, the
+integer Laplacian of $G$ with the row and the column of $r$ deleted, equals the number of spanning
+trees of $G$.
+
+No separate nonemptiness hypothesis on $V$ is needed, since $r$ is a vertex.
 
 ## Depends on
 
-- [Num Spanning Trees](num-spanning-trees.md)
+- [Number of spanning trees](num-spanning-trees.md)
 - [Reduced Laplacian](reduced-laplacian.md)
 
 ## Proof depends on
 
-- [Is Spanning Tree](is-spanning-tree.md)
-- [Laplacian Int](laplacian-int.md)
-- [Spanning Tree Subgraph Equiv](spanning-tree-subgraph-equiv.md)
+- [Spanning tree](is-spanning-tree.md)
+- [Integer Laplacian of a graph](laplacian-int.md)
+- [Spanning trees as trees contained in the graph](spanning-tree-subgraph-equiv.md)
 
 ## Sources
 

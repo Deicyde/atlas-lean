@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isSumFreeMod_three_two_singleton_one
 ---
 
-# Is Sum Free Mod three two singleton one
+# $\{1\}$ is $2$-sum-free modulo $3$
 
-`{1}` is `2`-sum-free modulo `3`, since `1 + 1 ≢ 1 (mod 3)`.
+**$\{1\}$ is $2$-sum-free modulo $3$.** The singleton $\{1\}$ is $2$-sum-free modulo $3$,
+since $1 + 1 \not\equiv 1 \pmod{3}$.
 
 ## Depends on
 
-- [Is Sum Free Mod](is-sum-free-mod.md)
+- [Sum-free sets modulo $m$](is-sum-free-mod.md)
 
 ## Sources
 

@@ -5,19 +5,35 @@ statement: formalized
 lean: MetaMathlibExt.rAssociatedPermEGF_firstPoints_q_iterate_derivative
 ---
 
-# R Associated Perm EGF first Points q iterate derivative
+# Iterated derivative of the $q$-analogue for cycles longer than $r$, $s$ points apart
 
-Theorem 38: for `r ≥ 1`, the `q`-analogue over permutations with all cycle lengths
-greater than `r` and the first `s` points in distinct cycles satisfies
-`∂^s [A^r(q,x,u)]_s/∂u^s = q^s x^s (A(x,u) - ∑_{n=0}^{r-1} A_n(x) u^n/n!)^s (A^r(x,u))^q`,
-the power read as `exp(q L)` for any `L` with `L(0) = 0` and `exp L = A^r(x,u)`.
+**Iterated derivative of the $q$-analogue for cycles longer than $r$, $s$ points apart.**
+Let $R$ be a commutative $\mathbb{Q}$-algebra, $x, q \in R$, and let $r$, $s$ be natural
+numbers with $r \ge 1$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ let
+$\operatorname{exc}(\sigma)$ be the number of points $i$ with $\sigma(i) > i$ and
+$\operatorname{cyc}(\sigma)$ its number of cycles (fixed points counted as cycles of length
+one), let $A_n(x) = \sum_{\sigma} x^{\operatorname{exc}(\sigma)}$, summed over all permutations
+of $\{0, \dots, n-1\}$, and let $A(x,u) = \sum_{n \ge 0} A_n(x) u^n/n!$. Let $A^r(x,u)$ be the
+series $\sum_{n \ge 0} \sum_{\sigma} x^{\operatorname{exc}(\sigma)} u^n/n!$ with the inner sum
+over the permutations of $\{0, \dots, n-1\}$ all of whose cycles have length greater than $r$,
+and let $[A^r(q,x,u)]_s$ be the series
+$\sum_{n \ge 0} \sum_{\sigma} x^{\operatorname{exc}(\sigma)} q^{\operatorname{cyc}(\sigma)} u^n/n!$
+with the inner sum over the permutations of $\{0, \dots, n-1\}$ all of whose cycles have length
+greater than $r$ and whose points among $0, \dots, s-1$ lie in pairwise distinct cycles. If $L$
+is a formal power series in $u$ over $R$ with $L(0) = 0$ and $\exp L = A^r(x,u)$, then the
+$s$-th formal derivative in $u$ satisfies
+
+$$\frac{\partial^s}{\partial u^s} [A^r(q,x,u)]_s =
+q^s x^s \left(A(x,u) - \sum_{n=0}^{r-1} \frac{A_n(x)\, u^n}{n!}\right)^s \exp(qL).$$
+
+The factor $\exp(qL)$ is the paper's $(A^r(x,u))^q$.
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Is RAssociated Cycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rassociated-cycle-perm.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
+- [Permutations with all cycles longer than $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rassociated-cycle-perm.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

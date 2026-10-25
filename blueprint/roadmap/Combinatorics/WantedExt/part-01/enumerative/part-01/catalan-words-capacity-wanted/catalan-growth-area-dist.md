@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.catalanGrowthAreaDist
 ---
 
-# Catalan Growth Area Dist
+# Area distribution of words with unit-bounded rises, by first letter
 
-`c(m, j, ℓ; q)`, the area distribution on the members of `𝒞_{m,j}` starting with `ℓ`.
+**Area distribution of words with unit-bounded rises, by first letter.** For natural numbers
+$m$, $j$ and $\ell$, let $\mathcal{C}_{m,j}$ be the set of words of length $m$ with letters in
+$\{1, \dots, j\}$, each letter at most one more than the letter before it, and last letter $j$.
+Then $c(m, j, \ell; q) \in \mathbb{Z}[q]$ is the area distribution of the words in
+$\mathcal{C}_{m,j}$ whose first letter is $\ell$: the sum of $q^{\mathrm{area}(w)}$ over these
+words $w$, where $\mathrm{area}(w)$ is the sum of the letters of $w$.
 
 ## Depends on
 
@@ -15,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Area Dist](area-dist.md)
-- [Catalan Growth Words](catalan-growth-words.md)
+- [Area distribution](area-dist.md)
+- [Words with unit-bounded rises ending in their maximum](catalan-growth-words.md)
 
 ## Sources
 

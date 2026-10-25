@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.repetitionSequence
 ---
 
-# Repetition Sequence
+# Sequence with prescribed multiplicities
 
-The sequence `𝒜 = (A, t̄)` in which the term `a i` occurs `t i` times, as a multiset.
+**Sequence with prescribed multiplicities.** Let $G$ be a type, $k \in \mathbb{N}$,
+$A = (a_0, \dots, a_{k-1})$ a $k$-tuple of elements of $G$ and $\bar t = (t_0, \dots, t_{k-1})$ a
+$k$-tuple of natural numbers. The sequence $(A, \bar t)$ is the finite multiset of elements of $G$
+obtained by taking $t_i$ copies of $a_i$ for each $i < k$; an element $x \in G$ thus occurs
+$\sum_{i : a_i = x} t_i$ times.
 
 ## Depends on
 

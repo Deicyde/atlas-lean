@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.lastDescentTop_example
 ---
 
-# Last Descent Top example
+# Examples of the last descent top
 
-The last descent top of each of `0010, 0020, 0021, 0120` (the paper's `W_{4,3}`) is at
-position `3`; `012` has no descent.
+**Examples of the last descent top.** Each of the sequences $0010$, $0020$, $0021$ and
+$0120$ has its last descent top at position $3$, and the sequence $012$, which has no
+descent, has last descent top position $0$.
 
 ## Depends on
 
-- [Last Descent Top](last-descent-top.md)
+- [Position of the last descent top](last-descent-top.md)
 
 ## Sources
 

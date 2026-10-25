@@ -6,11 +6,12 @@ statement: formalized
 lean: SimpleGraph.inducedForestNumber
 ---
 
-# Induced Forest Number
+# Induced forest number
 
-For a finite simple graph `G`, `inducedForestNumber G` is the maximum number
-   of vertices in an induced forest, that is the maximum cardinality of a vertex
-   set whose induced subgraph is acyclic. This is `a(G)` from the source.
+**Induced forest number.** For a simple graph $G$ on a finite vertex set $V$, the induced
+forest number $a(G)$ is the maximum number of vertices of an induced forest in $G$, that is, the
+maximum cardinality of a set $S \subseteq V$ such that the subgraph of $G$ induced on $S$ is
+acyclic.
 
 ## Depends on
 
@@ -19,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.InducedForestNumber](../../../../../../../sources/v2/MathlibExt.md)
+- H. Jung, A 15/31 Counterexample Family to the Albertson--Berman Conjecture, arXiv:2608.17350v1, the definition of $a(G)$.

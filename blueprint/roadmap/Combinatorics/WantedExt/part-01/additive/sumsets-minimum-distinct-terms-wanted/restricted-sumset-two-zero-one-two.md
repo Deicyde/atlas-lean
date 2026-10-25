@@ -6,10 +6,11 @@ proof: formalized
 lean: MetaMathlibExt.restrictedSumset_two_zero_one_two
 ---
 
-# Restricted Sumset two zero one two
+# Restricted twofold sumset of {0, 1, 2}
 
-`2^{0, 1, 2} = {1, 2, 3}` in `ℤ`: the restricted sumset `h^A` of the paper (all sums of
-`h` distinct elements of `A`) is `MetaMathlibExt.restrictedSumset`.
+**Restricted twofold sumset of {0, 1, 2}.** In the integers, the restricted sumset
+$2^{\wedge}\{0, 1, 2\}$, the set of sums of two distinct elements of $\{0, 1, 2\}$, equals
+$\{1, 2, 3\}$.
 
 ## Depends on
 

@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.carlitzBetaPoly_zero
 ---
 
-# Carlitz Beta Poly zero
+# The zeroth Carlitz $q$-Bernoulli polynomial
 
-`β_0(x) = 1` for `q ≠ 1`.
+**The zeroth Carlitz $q$-Bernoulli polynomial.** For real $q \ne 1$ and every real $x$, the
+Carlitz $q$-Bernoulli polynomial $\beta_0(x)$ equals $1$.
 
 ## Depends on
 
-- [Carlitz Beta Poly](carlitz-beta-poly.md)
+- [Carlitz $q$-Bernoulli polynomials](carlitz-beta-poly.md)
 
 ## Proof depends on
 
-- [Q Bracket](q-bracket.md)
-- [Q Bracket one](q-bracket-one.md)
+- [The $q$-analogue of a real number](q-bracket.md)
+- [The $q$-number of $1$](q-bracket-one.md)
 
 ## Sources
 

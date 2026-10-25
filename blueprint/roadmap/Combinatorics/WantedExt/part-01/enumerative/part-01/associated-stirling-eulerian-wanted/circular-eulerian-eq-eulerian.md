@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.circularEulerian_eq_eulerian
 ---
 
-# Circular Eulerian eq eulerian
+# Circular Eulerian numbers are shifted Eulerian numbers
 
-Theorem 5: for `n ≥ 2` and `1 ≤ m ≤ n`, `C_{n,m} = A_{n-1,m-1}` (with
-`C_{1,0} = 1`), and `C_n(x) = x A_{n-1}(x)` for the excedance polynomials, where
-`A_{n,m}` is the Eulerian number by excedances (all cycle lengths exceed `0`).
+**Circular Eulerian numbers are shifted Eulerian numbers.** An excedance of a permutation
+$\sigma$ of $n$ objects $1, \dots, n$ is an index $i$ with $\sigma(i) > i$. Let $C_{n,m}$ be the
+number of circular permutations of $n$ objects (permutations with a single cycle through all
+$n \ge 1$ points) with exactly $m$ excedances, and let $A_{n,m}$ be the number of permutations of
+$n$ objects with exactly $m$ excedances (the $0$-associated Stirling Eulerian number, which
+counts the permutations all of whose cycle lengths exceed $0$, that is, all permutations). Then
+$C_{1,0} = 1$; for all $n \ge 2$ and $1 \le m \le n$ we have $C_{n,m} = A_{n-1,m-1}$; and for
+every $n \ge 2$ the polynomial identity $C_n(x) = x\,A_{n-1}(x)$ holds in $\mathbb{Z}[x]$, where
+$C_n(x) = \sum_{m=0}^{n} C_{n,m} x^m$ and $A_{n-1}(x) = \sum_{m=0}^{n-1} A_{n-1,m} x^m$.
 
 ## Depends on
 
-- [Circular Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
-- [R Associated Stirling Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/r-associated-stirling-eulerian.md)
+- [Circular Eulerian numbers](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
+- [$r$-associated Stirling Eulerian numbers](../../../../../MathlibExt/part-02/associated-stirling-eulerian/r-associated-stirling-eulerian.md)
 
 ## Sources
 

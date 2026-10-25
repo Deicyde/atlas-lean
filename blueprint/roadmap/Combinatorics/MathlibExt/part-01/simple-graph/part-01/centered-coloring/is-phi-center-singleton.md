@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.isPhiCenter_singleton
 ---
 
-# Is Phi Center singleton
+# A vertex is a center of its singleton
 
-Every singleton set has its point as a center.
+**A vertex is a center of its singleton.** For every proper vertex coloring $\varphi$ of a
+simple graph $G$ and every vertex $v$ of $G$, $v$ is a $\varphi$-center of $\{v\}$.
 
 ## Depends on
 
-- [Is Phi Center](is-phi-center.md)
+- [Center of a vertex set under a coloring](is-phi-center.md)
 
 ## Sources
 

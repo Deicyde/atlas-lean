@@ -6,14 +6,17 @@ proof: formalized
 lean: JaccardLattice.jaccardDist_eq_div
 ---
 
-# Jaccard Dist eq div
+# Jaccard distance as a single quotient
 
-Jaccard distance as a single ratio of join-minus-meet over join.
+**Jaccard distance as a single quotient.** Let $f \colon L \to \mathbb{R}$ be a strictly
+positive function on a lattice $L$, with join $\vee$ and meet $\wedge$. Then for all
+$X, Y \in L$ the Jaccard distance of $X$ and $Y$ with respect to $f$ is
+$d_f(X, Y) = (f(X \vee Y) - f(X \wedge Y)) / f(X \vee Y)$.
 
 ## Depends on
 
-- [Is Strictly Positive](is-strictly-positive.md)
-- [Jaccard Dist](jaccard-dist.md)
+- [Strictly positive valuation](is-strictly-positive.md)
+- [Generalized Jaccard distance](jaccard-dist.md)
 
 ## Sources
 

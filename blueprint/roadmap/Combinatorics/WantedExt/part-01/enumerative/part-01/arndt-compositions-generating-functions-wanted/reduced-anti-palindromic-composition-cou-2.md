@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.reducedAntiPalindromicCompositionCount_six_three
 ---
 
-# Reduced Anti Palindromic Composition Count six three
+# Reduced anti-palindromic compositions of 6 with three parts
 
-There are four reduced anti-palindromic compositions of `6` with three parts.
+**Reduced anti-palindromic compositions of 6 with three parts.** There are exactly four reduced
+anti-palindromic compositions of $6$ with three parts.
 
 ## Depends on
 
-- [Reduced Anti Palindromic Composition Count](reduced-anti-palindromic-composition-cou.md)
+- [Reduced anti-palindromic compositions](reduced-anti-palindromic-composition-cou.md)
 
 ## Sources
 

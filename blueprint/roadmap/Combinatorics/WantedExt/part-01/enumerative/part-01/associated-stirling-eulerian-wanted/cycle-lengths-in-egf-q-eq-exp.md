@@ -5,16 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.cycleLengthsInEGF_q_eq_exp
 ---
 
-# Cycle Lengths In EGF q eq exp
+# Permutations with all cycle lengths in a prescribed set
 
-Theorem 65: for a finite set `ℛ = {r_1 < ⋯ < r_ℓ}` of lengths `r_i ≥ 2`, the
-`q`-analogue over permutations all of whose cycle lengths lie in `ℛ` is
-`A^{(r_1)⋯(r_ℓ)}(q,x,u) = exp(q x ∑_{r ∈ ℛ} A_{r-1}(x) u^r/r!)`.
+**Permutations with all cycle lengths in a prescribed set.** Let $R$ be a commutative
+$\mathbb{Q}$-algebra, $x, q \in R$, and let $\mathcal{R}$ be a finite set of integers, each at
+least $2$. For a permutation $\sigma$ let $e(\sigma)$ be its number of excedances (indices $i$
+with $\sigma(i) > i$) and $c(\sigma)$ its number of cycles, fixed points included, and for
+$j \ge 0$ let $A_j(x) = \sum_{\sigma} x^{e(\sigma)}$, summed over all permutations $\sigma$ of
+$j$ objects. Then in $R[[u]]$
+$\sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} q^{c(\sigma)} u^n/n! =
+\exp\big(q x \sum_{r \in \mathcal{R}} A_{r-1}(x)\,u^r/r!\big)$, where the inner sum on the left
+runs over the permutations $\sigma$ of $n$ objects all of whose cycles, fixed points included,
+have length in $\mathcal{R}$.
 
 ## Depends on
 
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

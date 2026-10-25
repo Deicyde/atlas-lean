@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.antidiagonal_triangle_bijOn
 ---
 
-# Antidiagonal triangle bij On
+# Point reflection between the two triangles of a parallelogram
 
-For linearly independent `u`, `v`, the involution `p ↦ u + v - p`
-(`s u + t v ↔ (1 - s) u + (1 - t) v`) is a bijection between the points of the triangle
-`T_1 = conv{0, u, v}` and of `T_2 = conv{u, v, u + v}` that lie in the interior of the
-parallelogram spanned by `u` and `v`.
+**Point reflection between the two triangles of a parallelogram.** Let $u$ and $v$ be
+linearly independent vectors in $\mathbb{R}^2$ and let $P$ be the parallelogram they span. The map
+$p \mapsto u + v - p$ is a bijection from the set of points of the triangle
+$\operatorname{conv}\{0, u, v\}$ that lie in the interior of $P$ onto the set of points of the
+triangle $\operatorname{conv}\{u, v, u + v\}$ that lie in the interior of $P$.
+
+The map sends $s u + t v$ to $(1 - s) u + (1 - t) v$.
 
 ## Depends on
 
-- [Lattice Parallelogram](lattice-parallelogram.md)
+- [Parallelogram spanned by two vectors](lattice-parallelogram.md)
 
 ## Sources
 

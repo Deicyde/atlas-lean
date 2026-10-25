@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Column Admissible](../../../MathlibExt/part-03/matrix-discrepancy/column-admissible.md)
+- [Matrices with columns in the unit ball](../../../MathlibExt/part-03/matrix-discrepancy/column-admissible.md)
 
 ## Sources
 

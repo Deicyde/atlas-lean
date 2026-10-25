@@ -7,10 +7,12 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.HajnalSzemerediWanted.hajnal_szemeredi_equitable_coloring
 ---
 
-# Hajnal szemeredi equitable coloring
+# Hajnal–Szemerédi theorem
 
-Hajnal-Szemerédi theorem: every finite simple graph with max degree < k has an equitable k-coloring;
-any two color classes differ by at most one.
+**Hajnal–Szemerédi theorem.** Let $G$ be a simple graph on a finite vertex set with maximum degree
+$\Delta(G)$, and let $k$ be a natural number with $\Delta(G) < k$. Then $G$ has a proper coloring
+with the $k$ colors $0, 1, \dots, k-1$ that is equitable: for any two colors $i$ and $j$, the
+number of vertices of color $i$ is at most one more than the number of vertices of color $j$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists equitable coloring of max Degree lt](exists-equitable-coloring-of-max-degree.md)
+- [Equitable coloring with more colors than the maximum degree](exists-equitable-coloring-of-max-degree.md)
 
 ## Sources
 

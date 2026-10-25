@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.boundedSubsetSums_eq_generalizedHFoldSumset_of_zero_mem
 ---
 
-# Bounded Subset Sums eq generalized HFold Sumset of zero mem
+# Bounded subset sums as a generalized h-fold sumset when zero is in the set
 
-For `A = {0, a₁, …, a_{k-1}} ⊆ G` with `k` distinct elements, `1 ≤ α ≤ k`, `β ≤ k - 1` and
-`α + β ≤ k`, `Σ^β_α(A) = (k - β)^{(r̄)}A` with `r̄ = (k - α - β + 1, 1, …, 1)`; here `k = m + 1`.
+**Bounded subset sums as a generalized h-fold sumset when zero is in the set.** Let $G$ be an
+abelian group, let $m$ be a natural number, let $a_1, \dots, a_m$ be distinct nonzero elements
+of $G$, put $a_0 = 0$ and $k = m + 1$, and let $A = \{a_0, a_1, \dots, a_m\}$, a set of $k$
+elements. If $\alpha, \beta$ are natural numbers with $\alpha \ge 1$, $\beta \le k - 1$ and
+$\alpha + \beta \le k$, then $\Sigma^\beta_\alpha(A)$, the set of sums of subsets $B \subseteq A$
+with $\alpha \le |B| \le k - \beta$, equals the generalized $(k - \beta)$-fold sumset
+$(k - \beta)^{(\bar r)} A$ of $A$ listed as $(a_0, a_1, \dots, a_m)$, with
+$\bar r = (k - \alpha - \beta + 1, 1, \dots, 1)$, that is, the set of sums
+$\sum_{j=0}^{m} s_j a_j$ with $0 \le s_j \le r_j$ for all $j$ and $\sum_j s_j = k - \beta$.
 
 ## Depends on
 
-- [Bounded Subset Sums](bounded-subset-sums.md)
-- [Generalized HFold Sumset](generalized-hfold-sumset.md)
+- [Subset sums with a bounded number of terms](bounded-subset-sums.md)
+- [Generalized $h$-fold sumset](generalized-hfold-sumset.md)
 
 ## Sources
 

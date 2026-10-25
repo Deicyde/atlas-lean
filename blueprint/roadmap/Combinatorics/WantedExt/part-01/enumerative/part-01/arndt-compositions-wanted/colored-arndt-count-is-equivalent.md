@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.coloredArndtCount_isEquivalent
 ---
 
-# Colored Arndt Count is Equivalent
+# Asymptotics of colored Arndt compositions with $k$ parts
 
-For fixed `k ≥ 1`, `c(n, k) ∼ n^{2k-1} / (2^{⌊k/2⌋} (2k - 1)!)` as `n → ∞`.
+**Asymptotics of colored Arndt compositions with $k$ parts.** For every fixed $k \ge 1$, the
+number $c(n, k)$ of colored Arndt compositions of $n$ with $k$ parts satisfies
+$c(n, k) \sim \frac{n^{2k-1}}{2^{\lfloor k/2 \rfloor} (2k - 1)!}$ as $n \to \infty$.
 
 ## Depends on
 
-- [Colored Arndt Count](colored-arndt-count.md)
+- [Colored Arndt compositions](colored-arndt-count.md)
 
 ## Sources
 

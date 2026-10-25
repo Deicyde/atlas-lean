@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_initial_values
 ---
 
-# Bridge Time three initial values
+# Initial values for capacity three
 
-Initial values of the capacity-`3` optimal time:
-`T₃(1), …, T₃(6) = 1, 2, 3, 7, 9, 14`.
+**Initial values for capacity three.** Let $T_3(n)$ be the optimal crossing time of $n$
+people with crossing times $1, \dots, n$ on a bridge of capacity $3$ with one torch. Then
+$T_3(1) = 1$, $T_3(2) = 2$, $T_3(3) = 3$, $T_3(4) = 7$, $T_3(5) = 9$ and $T_3(6) = 14$.
 
 ## Depends on
 
-- [Bridge Time](bridge-time.md)
+- [Optimal crossing time of the bridge and torch problem](bridge-time.md)
 
 ## Sources
 

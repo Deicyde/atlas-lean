@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.atLeastDistinctSumset_three_two_zero_one_two
 ---
 
-# At Least Distinct Sumset three two zero one two
+# Example of a sumset with at least two distinct terms
 
-`3^{(≥ 2)}{0, 1, 2} = {1, 2, 3, 4, 5}` in `ℤ` (`0` and `6` need a single repeated term).
+**Example of a sumset with at least two distinct terms.** In the integers, the set of sums of
+three elements of $\{0, 1, 2\}$, repetitions allowed, in which at least two distinct elements
+occur is $3^{(\ge 2)}\{0, 1, 2\} = \{1, 2, 3, 4, 5\}$; the sums $0$ and $6$ need a single
+repeated term.
 
 ## Depends on
 
-- [At Least Distinct Sumset](at-least-distinct-sumset.md)
+- [Sums with at least $r$ distinct terms](at-least-distinct-sumset.md)
 
 ## Sources
 

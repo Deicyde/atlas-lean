@@ -4,5 +4,5 @@ navigation: module
 
 # Kolakoski Sequence
 
-- [Kolakoski Block Start](kolakoski-block-start.md)
-- [Is Kolakoski](is-kolakoski.md)
+- [Starting positions of Kolakoski blocks](kolakoski-block-start.md)
+- [Kolakoski sequences](is-kolakoski.md)

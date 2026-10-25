@@ -6,17 +6,20 @@ statement: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.degree
 ---
 
-# Degree
+# Degree in an edge-indexed multigraph
 
-The number of indexed edges incident with a vertex.
+**Degree in an edge-indexed multigraph.** The degree of a vertex $v$ in an edge-indexed
+multigraph $M$ is the number of edges of $M$ incident with $v$, that is, the cardinality of the
+set of edges whose endpoint pair contains $v$; it is defined to be $0$ when this set is
+infinite.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
 
 ## Proof depends on
 
-- [Inc](inc.md)
+- [Incidence](inc.md)
 
 ## Sources
 

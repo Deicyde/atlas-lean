@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.opxD_rational_points_embed_isTheta
 ---
 
-# Opx D rational points embed is Theta
+# Rational points of an embedded open planar set
 
-Corollary 5.7: for nonempty open `P ⊆ ℝ²` and dimension `m + 3 > 2`, let `P' ⊆ ℝ^{m+3}` be
-`P × {0}^{m+1}` and `Q_{P'}` its points with rational coordinates; then
-`opx(n, Q_{P'}, m + 3) = Θ(n^{m+3})`. Nonemptiness is added (`Q_∅ = ∅`).
+**Rational points of an embedded open planar set.** Let $m$ be a natural number and let
+$P \subseteq \mathbb{R}^2$ be a nonempty open set. Let
+$P' = P \times \{0\}^{m+1} \subseteq \mathbb{R}^{m+3}$, and let $Q_{P'}$ be the set of points of
+$P'$ all of whose coordinates are rational. Then $\mathrm{opx}(n, Q_{P'}, m + 3) = \Theta(n^{m+3})$
+as the real number $n$ tends to infinity.
+
+Nonemptiness is added: for $P = \emptyset$ the set $Q_{P'}$ is empty.
 
 ## Depends on
 

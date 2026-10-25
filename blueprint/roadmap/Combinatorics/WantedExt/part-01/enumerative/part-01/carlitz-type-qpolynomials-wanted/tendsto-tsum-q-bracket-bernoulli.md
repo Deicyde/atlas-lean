@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_tsum_qBracket_bernoulli
 ---
 
-# Tendsto tsum q Bracket bernoulli
+# Bernoulli numbers as a limit as $q \to 1^-$
 
-For `r, n ≥ 1`, `B_n = lim_{q → 1⁻} ∑_{k ≥ 0} (r q^{rk} - (n + r) q^{(r+1)k}) [k]^{n-1}`, with
-Mathlib's `bernoulli` (`B_1 = -1/2`).
+**Bernoulli numbers as a limit as $q \to 1^-$.** Let $r \ge 1$ and $n \ge 1$ be integers and,
+for real $q$ and $x$, write $[x] = (q^x - 1)/(q - 1)$. Then, as $q$ tends to $1$ from below,
+
+$$\sum_{k=0}^{\infty} \left(r q^{rk} - (n + r) q^{(r+1)k}\right) [k]^{n-1} \to B_n,$$
+
+where $B_n$ is the $n$-th Bernoulli number, with the convention $B_1 = -1/2$.
 
 ## Depends on
 
-- [Q Bracket](q-bracket.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

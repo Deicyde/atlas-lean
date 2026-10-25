@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.shiftedBinomialStepSum_recurrence_of_window
 ---
 
-# Shifted Binomial Step Sum recurrence of window
+# Window criterion for shifted step sums of binomial coefficients
 
-Window criterion for shifted step-`k` binomial sums. For integers `α, k, γ > 1`, `β ≥ 0`
-and `0 ≤ p < k`, let `c(n) = ∑_{j ∈ ℤ} binom(αn + β, γn + p + kj)`, written as the sum of
-`binom(αn + β, m)` over `0 ≤ m ≤ αn + β` with `m ≡ γn + p (mod k)`. If
-`c(n) = ∑_{i=1}^s δ_i c(n - i)` with integers `δ_i` for `s ≤ n ≤ k² + s - 1`, then it holds
-for all `n ≥ s`. The `δ_i` are only required to work for the given `p`; the printed hypothesis
-(one `δ` for every `p`) is a special case.
+**Window criterion for shifted step sums of binomial coefficients.** Let
+$\alpha, \beta, k, \gamma, p, s$ be natural numbers with $\alpha > 1$, $k > 1$, $\gamma > 1$ and
+$p < k$, and let $\delta_1, \delta_2, \ldots$ be integers. For $n \in \mathbb{N}$ let $c(n)$ be
+the sum of $\binom{\alpha n + \beta}{m}$ over all $m$ with $0 \le m \le \alpha n + \beta$ and
+$m \equiv \gamma n + p \pmod{k}$, that is,
+$c(n) = \sum_{j \in \mathbb{Z}} \binom{\alpha n + \beta}{\gamma n + p + kj}$. If
+$c(n) = \sum_{i=1}^{s} \delta_i c(n - i)$ for all $n$ with $s \le n \le k^2 + s - 1$, then
+$c(n) = \sum_{i=1}^{s} \delta_i c(n - i)$ for all $n \ge s$.
+
+The coefficients $\delta_i$ need only work for this one residue $p$; the source's hypothesis,
+with one family $\delta_i$ for every $p$, is a special case.
 
 ## Depends on
 

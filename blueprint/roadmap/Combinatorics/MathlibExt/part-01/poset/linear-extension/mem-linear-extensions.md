@@ -7,13 +7,15 @@ proof: formalized
 lean: FinPoset.mem_linearExtensions
 ---
 
-# Mem linear Extensions
+# Membership in the linear extensions
 
-Membership characterization for `linearExtensions`.
+**Membership in the linear extensions.** Let $\alpha$ be a finite poset with $n$
+elements. A map $\sigma : \alpha \to \{0, 1, \dots, n-1\}$ belongs to the set of linear
+extensions of $\alpha$ if and only if $\sigma$ is bijective and monotone.
 
 ## Depends on
 
-- [Linear Extensions](linear-extensions.md)
+- [Linear extensions of a finite poset](linear-extensions.md)
 
 ## Sources
 

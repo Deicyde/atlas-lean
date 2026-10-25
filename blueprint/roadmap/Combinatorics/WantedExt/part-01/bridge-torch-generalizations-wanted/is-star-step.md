@@ -5,20 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.IsStarStep
 ---
 
-# Is Star Step
+# Legal parallel steps in the star model
 
-A parallel step `step` is legal from the configuration (`pos` = vertex of each person,
-`tor` = number of torches at each vertex): every movement carries one or two persons all at its
-start vertex, the movements use pairwise disjoint persons and pairwise distinct edges, and at
-each vertex at most as many movements start as there are torches there.
+**Legal parallel steps in the star model.** Let $\mathcal{S}(k)$ be the star graph with a
+center and $k$ leaves. Consider a configuration of the star model on $\mathcal{S}(k)$ with $n$
+persons, given by the vertex $\mathrm{pos}(p)$ of each person $p$ and the number $\mathrm{tor}(v)$
+of torches at each vertex $v$. A parallel step, a list of star movements, is legal from this
+configuration when every movement carries one or two persons, all standing at the movement's
+start vertex; the movements of the step carry pairwise disjoint sets of persons and traverse
+pairwise distinct edges; and for every vertex $v$, at most $\mathrm{tor}(v)$ movements of the
+step start at $v$.
 
 ## Depends on
 
-- [Star Move](star-move.md)
+- [Movement in the star model](star-move.md)
 
 ## Proof depends on
 
-- [Src](src.md)
+- [Start vertex of a star movement](src.md)
 
 ## Sources
 

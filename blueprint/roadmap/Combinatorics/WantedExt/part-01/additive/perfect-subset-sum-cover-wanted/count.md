@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.PerfectSubsetSumCover.count
 ---
 
-# Count
+# Number of perfect covers
 
-`count G` is the number `C(G)` of perfect covers of `G`.
+**Number of perfect covers.** For an abelian group $G$, $C(G)$ is the number of perfect
+covers of $G$: finite subsets $S \subseteq G$ such that every element of $G$ is the sum of
+exactly one subset of $S$ (the empty subset has sum $0$).
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
+- [Perfect cover](is-perfect-cover.md)
 
 ## Sources
 

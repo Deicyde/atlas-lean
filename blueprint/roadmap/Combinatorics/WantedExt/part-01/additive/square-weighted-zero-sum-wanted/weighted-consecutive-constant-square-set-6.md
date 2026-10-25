@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.weightedConsecutiveConstant_squareSet_largePrimePower_le_five
 ---
 
-# Weighted Consecutive Constant square Set large Prime Power le five
+# Square-weighted consecutive constant of $p^r$ for prime $p \ge 7$ and even $r \ge 4$ is at most five
 
-Theorem 34: prime `p ≥ 7` and even `r ≥ 4` imply
-`C_{S(p^r)} ≤ 5`.
+**Square-weighted consecutive constant of $p^r$ for prime $p \ge 7$ and even $r \ge 4$ is at
+most five.** Let $p \ge 7$ be a prime and $r \ge 4$ an even natural number. Write $S(p^r)$ for the
+set of nonzero squares in $\mathbb{Z}_{p^r} = \mathbb{Z}/p^r\mathbb{Z}$ and $C_{S(p^r)}$ for the
+$S(p^r)$-weighted consecutive constant of $\mathbb{Z}_{p^r}$. Then $C_{S(p^r)} \le 5$.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Weighted consecutive zero-sum constant](weighted-consecutive-constant.md)
 
 ## Sources
 

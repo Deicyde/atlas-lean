@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.IsCarlitzTypeWith.apply_zero
 ---
 
-# Apply zero
+# The zeroth term of a Carlitz-type sequence
 
-A Carlitz-type sequence starts with the constant `T_0(x) = a_0`.
+**The zeroth term of a Carlitz-type sequence.** Let $q$ be a real number. If $(T_n)$ is a
+Carlitz-type $q$-polynomial sequence with associated real sequence $(a_k)$, then $T_0(x) = a_0$
+for every real $x$.
 
 ## Depends on
 
-- [Is Carlitz Type With](is-carlitz-type-with.md)
+- [Carlitz-type sequences](is-carlitz-type-with.md)
 
 ## Sources
 

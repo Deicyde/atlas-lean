@@ -7,23 +7,25 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.expectedLCSLength_superadditive
 ---
 
-# Expected LCSLength superadditive
+# Superadditivity of the expected LCS length
 
-Expected binary LCS length is superadditive under concatenation. Adapted
-from the verified gpt-5.6-sol proof in task T292145496.
+**Superadditivity of the expected LCS length.** Let $E_n$ be the expected length of a longest
+common subsequence of two independent uniformly random binary strings of length $n$. Then for all
+natural numbers $m$ and $n$, $E_m + E_n \le E_{m+n}$.
 
 ## Depends on
 
-- [Expected LCSLength](expected-lcslength.md)
+- [Expected length of a longest common subsequence](expected-lcslength.md)
 
 ## Proof depends on
 
-- [Binary String](binary-string.md)
-- [Binary String Pair](binary-string-pair.md)
-- [Append Binary String Pair Equiv](append-binary-string-pair-equiv.md)
-- [Lcs Length](lcs-length.md)
-- [Lcs Length append le](lcs-length-append-le.md)
+- [Binary strings](binary-string.md)
+- [Pairs of binary strings](binary-string-pair.md)
+- [Concatenation of binary string pairs](append-binary-string-pair-equiv.md)
+- [Length of a longest common subsequence](lcs-length.md)
+- [Superadditivity of the LCS length under concatenation](lcs-length-append-le.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BinaryChvatalSankoffWanted](../../../../../sources/v2/WantedExt.md)
+- adapted from the verified gpt-5.6-sol proof in task T292145496.

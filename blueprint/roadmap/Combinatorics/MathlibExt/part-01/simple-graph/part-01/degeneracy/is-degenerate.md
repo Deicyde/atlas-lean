@@ -6,9 +6,11 @@ statement: formalized
 lean: SimpleGraph.IsDegenerate
 ---
 
-# Is Degenerate
+# Degenerate graph
 
-A graph is `k`-degenerate if it is `k`-degenerate on its full vertex set.
+**Degenerate graph.** A simple graph $G$ on a finite vertex type $V$ is $k$-degenerate, for a
+natural number $k$, if it is $k$-degenerate on the full vertex set $V$: every nonempty set $W$ of
+vertices contains a vertex with at most $k$ neighbors in $W$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Degenerate On](is-degenerate-on.md)
+- [Degeneracy on a vertex set](is-degenerate-on.md)
 
 ## Sources
 

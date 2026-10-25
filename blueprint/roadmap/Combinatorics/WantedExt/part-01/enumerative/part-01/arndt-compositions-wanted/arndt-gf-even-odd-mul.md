@@ -5,15 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.arndtGF_even_odd_mul
 ---
 
-# Arndt GF even odd mul
+# Generating functions of Arndt compositions with even parts and with odd parts
 
-The generating functions of Arndt compositions with only even parts and with only odd parts
-are `A_E(x, y) = (1 - x⁴)(1 - x²(1 - y)) / (1 - x² - x⁴ + x⁶(1 - y²))` and
-`A_O(x, y) = (1 - x⁴)(1 - x² + xy) / (1 - x² + x⁶ - x⁴(1 + y²))`, stated multiplicatively.
+**Generating functions of Arndt compositions with even parts and with odd parts.** Let
+$A_E(x, y)$ and $A_O(x, y)$ be the formal power series in $x$ over $\mathbb{Z}[y]$ whose
+coefficient of $x^n y^k$ is the number of Arndt compositions of $n$ with $k$ parts, all even,
+respectively all odd. Then
+
+$$A_E(x, y) \left(1 - x^2 - x^4 + x^6 (1 - y^2)\right) = (1 - x^4)\left(1 - x^2 (1 - y)\right)$$
+
+and
+
+$$A_O(x, y) \left(1 - x^2 + x^6 - x^4 (1 + y^2)\right) = (1 - x^4)(1 - x^2 + x y).$$
 
 ## Depends on
 
-- [Arndt GF](arndt-gf.md)
+- [Generating function of Arndt compositions with parts in a set](arndt-gf.md)
 
 ## Sources
 

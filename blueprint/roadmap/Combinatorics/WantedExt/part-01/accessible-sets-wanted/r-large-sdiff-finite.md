@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.rLarge_sdiff_finite
 ---
 
-# R Large sdiff finite
+# Finite removal preserves $r$-largeness
 
-Removing a finite set from an `r`-large set preserves `r`-largeness.
+**Finite removal preserves $r$-largeness.** Let $r$ be a natural number. If a set
+$D \subseteq \mathbb{N}$ is $r$-large and $F \subseteq \mathbb{N}$ is finite, then $D \setminus F$
+is $r$-large.
 
 ## Depends on
 
-- [Is RLarge](is-rlarge.md)
+- [$r$-large sets](is-rlarge.md)
 
 ## Sources
 

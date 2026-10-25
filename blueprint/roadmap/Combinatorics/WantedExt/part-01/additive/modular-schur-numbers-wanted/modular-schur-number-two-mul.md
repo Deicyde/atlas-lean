@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.modularSchurNumber_two_mul
 ---
 
-# Modular Schur Number two mul
+# Modular Schur numbers modulo an even number
 
-For `k, n ≥ 2` and positive `l` with `l ≢ 1 (mod 2n)`: `S_{2n}(k, l) = 1` when
-`l ≡ n + 1 (mod 2n)`, and `S_{2n}(k, l) ≥ 2` otherwise.
+**Modular Schur numbers modulo an even number.** Let $k$, $l$ and $n$ be natural numbers with
+$k \ge 2$, $n \ge 2$, $l \ge 1$ and $l \not\equiv 1 \pmod{2n}$, and let $S_{2n}(k, l)$ be the
+generalized Schur number modulo $2n$. If $l \equiv n + 1 \pmod{2n}$, then $S_{2n}(k, l) = 1$;
+otherwise $S_{2n}(k, l) \ge 2$.
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

@@ -7,15 +7,17 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.degree_le_maxDegree
 ---
 
-# Degree le max Degree
+# Degrees are bounded by the maximum degree
 
-Every vertex degree is bounded by the maximum degree.
+**Degrees are bounded by the maximum degree.** Let $M$ be an edge-indexed multigraph with
+finitely many vertices and finitely many edges. Then every vertex of $M$ has degree at most the
+maximum degree of $M$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Degree](degree.md)
-- [Max Degree](max-degree.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Degree in an edge-indexed multigraph](degree.md)
+- [Maximum degree of a multigraph](max-degree.md)
 
 ## Sources
 

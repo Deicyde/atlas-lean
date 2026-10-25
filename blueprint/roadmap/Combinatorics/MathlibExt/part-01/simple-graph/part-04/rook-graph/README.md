@@ -4,5 +4,5 @@ navigation: module
 
 # Rook Graph
 
-- [Rook Graph](rook-graph.md)
-- [Rook Graph is Dominating iff](rook-graph-is-dominating-iff.md)
+- [Rook graph](rook-graph.md)
+- [Dominating sets of the rook graph](rook-graph-is-dominating-iff.md)

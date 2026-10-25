@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.antiPalindromicCompositionCount_six_four
 ---
 
-# Anti Palindromic Composition Count six four
+# Anti-palindromic compositions of 6 with four parts
 
-There are four anti-palindromic compositions of `6` with four parts and one flip class.
+**Anti-palindromic compositions of 6 with four parts.** There are exactly four
+anti-palindromic compositions of $6$ with four parts, and exactly one reduced anti-palindromic
+composition of $6$ with four parts.
 
 ## Depends on
 
-- [Anti Palindromic Composition Count](anti-palindromic-composition-count.md)
-- [Reduced Anti Palindromic Composition Count](reduced-anti-palindromic-composition-cou.md)
+- [Anti-palindromic compositions](anti-palindromic-composition-count.md)
+- [Reduced anti-palindromic compositions](reduced-anti-palindromic-composition-cou.md)
 
 ## Sources
 

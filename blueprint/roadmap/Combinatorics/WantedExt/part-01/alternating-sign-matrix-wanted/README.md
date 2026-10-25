@@ -5,10 +5,10 @@ navigation: module
 
 # Alternating Sign Matrix
 
-- [Row Partial Sum](row-partial-sum.md)
-- [Col Partial Sum](col-partial-sum.md)
-- [Is Zero Or One](is-zero-or-one.md)
-- [Is Alternating Sign Matrix](is-alternating-sign-matrix.md)
-- [ASMatrix](asmatrix.md)
-- [Robbins Product](robbins-product.md)
-- [Alternating sign matrix count](alternating-sign-matrix-count.md)
+- [Row partial sums of a matrix](row-partial-sum.md)
+- [Column partial sums of a matrix](col-partial-sum.md)
+- [Integers equal to zero or one](is-zero-or-one.md)
+- [Alternating sign matrices](is-alternating-sign-matrix.md)
+- [Alternating sign matrices of size $n$](asmatrix.md)
+- [The Robbins product](robbins-product.md)
+- [Alternating sign matrix theorem](alternating-sign-matrix-count.md)

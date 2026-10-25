@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.IsAlmostThinSet.infinite
 ---
 
-# Infinite
+# Almost thin sets are infinite
 
-An almost thin set is infinite.
+**Almost thin sets are infinite.** Every almost thin set $A \subseteq \mathbb{N}$ is infinite.
 
 ## Depends on
 
-- [Is Almost Thin Set](is-almost-thin-set.md)
+- [Almost thin set](is-almost-thin-set.md)
 
 ## Sources
 

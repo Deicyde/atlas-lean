@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.downUpCompositionCount_five_two
 ---
 
-# Down Up Composition Count five two
+# Down/up compositions of 5 with two parts
 
-The down/up compositions of `5` with two parts are `(4,1)` and `(3,2)`.
+**Down/up compositions of 5 with two parts.** Among the down/up compositions of $5$ with two
+parts (pairs $(\sigma_1, \sigma_2)$ of positive integers with $\sigma_1 + \sigma_2 = 5$ and
+$\sigma_1 > \sigma_2$), exactly one has last part $1$, exactly one has last part $2$, and none has
+last part $3$.
+
+The compositions counted are $(4, 1)$ and $(3, 2)$.
 
 ## Depends on
 
-- [Down Up Composition Count](down-up-composition-count.md)
+- [Down/up compositions](down-up-composition-count.md)
 
 ## Sources
 

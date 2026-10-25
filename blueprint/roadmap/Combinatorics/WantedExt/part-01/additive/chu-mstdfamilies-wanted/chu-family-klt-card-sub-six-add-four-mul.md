@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.chuFamilyKLT_card_sub_six_add_four_mul
 ---
 
-# Chu Family KLT card sub six add four mul
+# Positive differences of the form 6 + 4m in the Chu family set
 
-Lemma 3: `(A - A)⁺` contains exactly `lt + t` elements of the form `6 + 4m`, `m ≥ 0`
-(written `6 ≤ d ∧ d % 4 = 2`).
+**Positive differences of the form 6 + 4m in the Chu family set.** Let $k$, $l$, $t$ be
+positive integers and let $A \subseteq \mathbb{Z}$ be the Chu family set with parameters $k$, $l$,
+$t$. Then exactly $lt + t$ elements $d$ of $A - A$ satisfy $d \ge 6$ and $d \equiv 2 \pmod 4$;
+that is, exactly $lt + t$ positive differences of $A$ have the form $6 + 4m$ with $m \ge 0$ an
+integer.
 
 ## Depends on
 
-- [Chu Family KLT](chu-family-klt.md)
+- [Kumar–Mohan–Pandey sets](chu-family-klt.md)
 
 ## Sources
 

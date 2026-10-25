@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.weakAscent_wilf_class205
 ---
 
-# Weak Ascent wilf class205
+# Weak-ascent Wilf equivalence in Class 205
 
-Theorem 9 (Class 205): `{100, 102, 120, 201}` and `{102, 110, 120, 201}` are
-WA-Wilf equivalent (weak-ascent reading as in Theorem 5).
+**Weak-ascent Wilf equivalence in Class 205.** For every natural number $n$, the number of
+weak ascent sequences of length $n$ avoiding every pattern in $\{100, 102, 120, 201\}$ equals the
+number avoiding every pattern in $\{102, 110, 120, 201\}$.
+
+That is, the two sets are WA-Wilf equivalent.
 
 ## Depends on
 
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Sources
 

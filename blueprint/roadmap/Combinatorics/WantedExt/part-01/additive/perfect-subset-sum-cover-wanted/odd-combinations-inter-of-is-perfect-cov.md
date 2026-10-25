@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.oddCombinations_inter_of_isPerfectCover
 ---
 
-# Odd Combinations inter of is Perfect Cover
+# Odd combinations of disjoint parts of a perfect cover
 
-Let `S` be a perfect cover of an abelian group of order `2^n`. (a) For disjoint
-`A, B ⊆ S`, `𝒯(A) ∩ 𝒯(B) = {0}`. (b) If `A ⊆ S` and `s ∈ S \ A`, then `s ∉ 𝒯(A)`.
+**Odd combinations of disjoint parts of a perfect cover.** Let $G$ be an abelian group of
+order $2^n$ and $S$ a perfect cover of $G$. For a finite $A \subseteq G$, let $\mathcal{T}(A)$ be
+the set of combinations $\sum_{x \in A} c_x x$ in which every integer coefficient $c_x$ is $0$
+or odd. Then: (a) for disjoint $A, B \subseteq S$, $\mathcal{T}(A) \cap \mathcal{T}(B) = \{0\}$;
+(b) if $A \subseteq S$ and $s \in S \setminus A$, then $s \notin \mathcal{T}(A)$.
 
 ## Depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
-- [Odd Combinations](odd-combinations.md)
+- [Perfect cover](is-perfect-cover.md)
+- [Odd combinations](odd-combinations.md)
 
 ## Sources
 

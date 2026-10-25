@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.FirstPointsInDistinctCycles
 ---
 
-# First Points In Distinct Cycles
+# First points in distinct cycles
 
-The first `s` points of `Fin n` lie in pairwise distinct cycles of `σ`: two points
-`i, j < s` in the same cycle are equal. This is the side condition of the paper's
-`(r^-,k,s)`-, `(r^+,⋆,s)`-, `((r),k,s)`-cycle and `s`-fixed-points permutations. When
-`n < s`, only the points below `n` are constrained.
+**First points in distinct cycles.** For natural numbers $s$ and $n$, a permutation $\sigma$
+of $\{0, 1, \dots, n-1\}$ has its first $s$ points in distinct cycles when any two points
+$i, j < s$ that lie in the same cycle of $\sigma$ are equal. When $n < s$, only the points below
+$n$ are constrained.
+
+This is the side condition of the paper's $(r^-,k,s)$-, $(r^+,\star,s)$-, $((r),k,s)$-cycle and
+$s$-fixed-points permutations.
 
 ## Depends on
 

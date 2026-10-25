@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.BinaryStringPair
 ---
 
-# Binary String Pair
+# Pairs of binary strings
 
-An ordered pair of binary strings, the finite sample space for the source
-expectation.
+**Pairs of binary strings.** For a natural number $n$, a pair of binary strings of length $n$
+is an ordered pair $(x, y)$ of binary strings $x$ and $y$, each of length $n$. These pairs form
+the finite sample space over which expected longest common subsequence lengths are taken.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Binary String](binary-string.md)
+- [Binary strings](binary-string.md)
 
 ## Sources
 

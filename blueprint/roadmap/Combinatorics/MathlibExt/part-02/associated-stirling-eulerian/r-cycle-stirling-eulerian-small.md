@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.rCycleStirlingEulerian_small
 ---
 
-# R Cycle Stirling Eulerian small
+# Small $r$-cycle Stirling Eulerian numbers
 
-Characteristic values: `A^{(r)}_{0,0} = 1` (the empty permutation),
-`A^{(2)}_{2,1} = 1` (the transposition), `A^{(2)}_{3,1} = 0`, and
-`A^{(3)}_{3,1} = A^{(3)}_{3,2} = 1` (the two 3-cycles).
+**Small $r$-cycle Stirling Eulerian numbers.** Write $A^{(r)}_{n,m}$ for the number of
+permutations $\sigma$ of $\{0, \dots, n-1\}$ all of whose cycles, fixed points counted as
+cycles of length $1$, have length exactly $r$, and that have exactly $m$ excedances (indices $i$
+with $\sigma(i) > i$). Then $A^{(2)}_{0,0} = 1$ (the empty permutation), $A^{(2)}_{2,1} = 1$
+(the transposition), $A^{(2)}_{3,1} = 0$, and $A^{(3)}_{3,1} = A^{(3)}_{3,2} = 1$ (the two
+$3$-cycles).
 
 ## Depends on
 
-- [R Cycle Stirling Eulerian](r-cycle-stirling-eulerian.md)
+- [$r$-cycle Stirling Eulerian numbers](r-cycle-stirling-eulerian.md)
 
 ## Sources
 

@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.antiRecurrenceBlock
 ---
 
-# Anti Recurrence Block
+# Block of successive mex values
 
-The next `m` numbers produced by the mex rule from the set `s` of numbers already used:
-the least positive integer not in `s`, then the least positive integer not in `s` or the first
-one, and so on.
+**Block of successive mex values.** For a natural number $m$ and a finite set $s$ of natural
+numbers, the mex block of length $m$ from $s$ is the list $(x_1, \dots, x_m)$ in which each $x_j$
+is the least positive integer not in $s \cup \{x_1, \dots, x_{j-1}\}$.
 
 ## Depends on
 

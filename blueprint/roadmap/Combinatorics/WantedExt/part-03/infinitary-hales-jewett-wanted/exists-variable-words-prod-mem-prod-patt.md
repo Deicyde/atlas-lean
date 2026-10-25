@@ -14,7 +14,7 @@ The `C`-set version of Theorem 3.9: with `k, n, T, τ, (y_t)` as there and a `C`
 
 ## Depends on
 
-- [Is CSet](../../../MathlibExt/part-03/semigroup-largeness/is-cset.md)
+- [C-sets in a semigroup](../../../MathlibExt/part-03/semigroup-largeness/is-cset.md)
 
 ## Sources
 

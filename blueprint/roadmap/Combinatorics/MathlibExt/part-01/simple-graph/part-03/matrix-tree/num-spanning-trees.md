@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.MatrixTreeWanted.numSpanningTrees
 ---
 
-# Num Spanning Trees
+# Number of spanning trees
 
-Finite number of spanning trees using subgraph and `IsTree`.
+**Number of spanning trees.** For a simple graph $G$ on a finite vertex set, the number of
+spanning trees of $G$ is the number of subgraphs of $G$ that are spanning trees, that is,
+subgraphs that contain every vertex of $G$ and are trees.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Spanning Tree](is-spanning-tree.md)
+- [Spanning tree](is-spanning-tree.md)
 
 ## Sources
 

@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.IsRAccessible.mono
 ---
 
-# Mono
+# Accessibility with more colors implies accessibility with fewer
 
-Accessibility is antitone in the number of colors: an `s`-accessible set
-is `r`-accessible whenever `1 ≤ r ≤ s`.
+**Accessibility with more colors implies accessibility with fewer.** Let $D$ be a set of
+natural numbers and let $r, s$ be natural numbers with $1 \le r \le s$. If $D$ is
+$s$-accessible, then $D$ is $r$-accessible.
 
 ## Depends on
 
-- [Is RAccessible](is-raccessible.md)
+- [$r$-accessibility for colorings of the positive integers](is-raccessible.md)
 
 ## Proof depends on
 
-- [Is DDiff Sequence](is-ddiff-sequence.md)
-- [Is Monochromatic](is-monochromatic.md)
+- [$D$-diffsequences](is-ddiff-sequence.md)
+- [Monochromatic sequences of positive integers](is-monochromatic.md)
 
 ## Sources
 

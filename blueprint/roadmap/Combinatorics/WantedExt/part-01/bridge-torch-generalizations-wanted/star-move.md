@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.StarMove
 ---
 
-# Star Move
+# Movement in the star model
 
-A torch-movement in the star model on the star graph `𝒮(k)` with center `o` and leaves
-`u₀, …, u_{k-1}`: the persons `persons` (person `p : Fin n` has crossing time `p + 1`) carry one
-torch along the edge `{o, u_leaf}`, from `o` to `u_leaf` if `outward` and back otherwise.
-Vertices are `Option (Fin k)`, with `none` the center.
+**Movement in the star model.** Consider the star graph $\mathcal{S}(k)$ with center $o$ and
+leaves $u_0, \dots, u_{k-1}$, and $n$ persons $0, \dots, n-1$, where person $p$ has crossing time
+$p + 1$. A movement consists of a set $P$ of persons, a leaf $u_j$ and a direction: the persons in
+$P$ carry one torch along the edge $\{o, u_j\}$, outward from $o$ to $u_j$ or inward from $u_j$ to
+$o$. No condition is imposed on $P$ here (it may even be empty); which movements may be made
+together is part of the definition of a legal step.
 
 ## Depends on
 

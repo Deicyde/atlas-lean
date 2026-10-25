@@ -18,7 +18,7 @@ lean: MetaMathlibExt.bishopColorQuasiCoeff_zero_zero
 
 - [Santos Beta](santos-beta.md)
 - [Santos Beta zero](santos-beta-zero.md)
-- [Two Assoc Stirling Second](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
+- [2-associated Stirling numbers of the second kind](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
 
 ## Sources
 

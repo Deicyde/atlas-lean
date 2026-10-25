@@ -5,10 +5,10 @@ statement: formalized
 lean: NoncrossingPartition.twoBlockPartition
 ---
 
-# Two Block Partition
+# Two-block partition of three points
 
-Two-block noncrossing partition of `Fin 3` indexed by its singleton block.
-Built from `Finpartition.atomise` along the singleton cut `{a}`.
+**Two-block partition of three points.** For $a \in \{0, 1, 2\}$, this is the noncrossing
+partition of $\{0, 1, 2\}$ whose blocks are $\{a\}$ and $\{0, 1, 2\} \setminus \{a\}$.
 
 ## Depends on
 

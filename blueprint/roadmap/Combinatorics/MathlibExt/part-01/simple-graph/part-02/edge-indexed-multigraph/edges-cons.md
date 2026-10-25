@@ -7,15 +7,18 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.edges_cons
 ---
 
-# Edges cons
+# Edge list of an extended indexed walk
 
-Prepending an indexed edge prepends its identity to the edge list.
+**Edge list of an extended indexed walk.** Let $p$ be an indexed walk from $v$ to $w$ in an
+edge-indexed multigraph $M$, and let $e$ be an edge of $M$ with endpoints $u$ and $v$. The edge
+list of the walk from $u$ to $w$ that traverses $e$ and then follows $p$ is $e$ followed by the
+edge list of $p$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Indexed Walk](indexed-walk.md)
-- [Edges](edges.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Indexed walk](indexed-walk.md)
+- [Edge list of an indexed walk](edges.md)
 
 ## Sources
 

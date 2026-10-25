@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.weightedConsecutiveConstant_squareSet_oddPrimePower_le_three
 ---
 
-# Weighted Consecutive Constant square Set odd Prime Power le three
+# Consecutive square-weighted constant of an odd prime to an odd power is at most three
 
-Theorem 21: for odd prime `p` and odd exponent `r`, the consecutive
-`S(p^r)`-weighted zero-sum constant is at most three.
+**Consecutive square-weighted constant of an odd prime to an odd power is at most three.**
+For every odd prime $p$ and every odd natural number $r$, the consecutive $S(p^r)$-weighted
+zero-sum constant satisfies $C_{S(p^r)} \le 3$, where $S(p^r)$ is the set of nonzero squares of
+$\mathbb{Z}/p^r\mathbb{Z}$.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Weighted consecutive zero-sum constant](weighted-consecutive-constant.md)
 
 ## Sources
 

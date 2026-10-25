@@ -6,12 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BalanceableBoundedPartitionsWanted.Combinatorics.Bounded
 ---
 
-# Bounded
+# $k$-bounded partition
 
-A partition is `k`-bounded if all of its members are at most `k`.
+**$k$-bounded partition.** A partition of $n$ is $k$-bounded if each of its parts is at most $k$.
 
-For example, `12 = 3 + 2 + 2 + 2 + 2 + 1` is a `3`-bounded partition
-of `12`.
+For example, $12 = 3 + 2 + 2 + 2 + 2 + 1$ is a $3$-bounded partition of $12$.
 
 ## Depends on
 

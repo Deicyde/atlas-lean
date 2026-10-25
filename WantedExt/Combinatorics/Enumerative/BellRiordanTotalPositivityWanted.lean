@@ -25,11 +25,17 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- A Bell-type Riordan array `(g(x), x g(x))` over `ℝ`, with entries
-`d(n, k) = [x^n] g(x) (x g(x))^k` and `g(0) ≠ 0`, whose `A`-sequence `(a_j)` (characterized by
-`d(n+1, k+1) = ∑_j a_j d(n, k+j)`) is a Pólya frequency sequence (its lower Toeplitz matrix
-`[a_{n-k}]` has all minors non-negative) is totally positive (all minors of `[d(n, k)]` are
-non-negative). The sum over `j` stops at `j ≤ n`, since `d(n, m) = 0` for `m > n`.
+/-- **Bell-type Riordan arrays with a Pólya frequency A-sequence are totally positive.** Let $g$
+be a formal power series over $\mathbb{R}$ with $g(0) \neq 0$, write $[x^n]F$ for the coefficient
+of $x^n$ in a power series $F$, and let $D = (d_{n,k})_{n,k \ge 0}$ be the Bell-type Riordan array
+$(g(x), x g(x))$, with entries $d_{n,k} = [x^n]\, g(x) (x g(x))^k$. Let $(a_j)_{j \ge 0}$ be a
+real sequence, the $A$-sequence of $D$, such that for all $n, k \ge 0$
+$$d_{n+1,k+1} = \sum_{j=0}^{n} a_j\, d_{n,k+j}.$$
+If $(a_j)$ is a Pólya frequency sequence, that is, every minor of its lower Toeplitz matrix
+(whose entry in row $n$ and column $k$ is $a_{n-k}$ for $k \le n$ and $0$ otherwise) is
+nonnegative, then $D$ is totally positive: every minor of $D$ is nonnegative.
+
+The sum stops at $j = n$ because $d_{n,m} = 0$ for $m > n$.
 
 Source: Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of
 Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Proposition 5. -/
@@ -42,10 +48,13 @@ public theorem_wanted bellRiordan_hasNonnegativeMinors_of_aSequence (g : PowerSe
     Matrix.HasNonnegativeMinors
       (Matrix.of fun n k : ℕ => PowerSeries.coeff n (g * (PowerSeries.X * g) ^ k))
 
-/-- `R` is the Riordan array with `A`-sequence `a` and `Z`-sequence `z`: `r_{0,0} = 1`,
-`r_{0,k} = 0` for `k ≥ 1`, `r_{n+1,0} = ∑_j z_j r_{n,j}` and
-`r_{n+1,k+1} = ∑_j a_j r_{n,k+j}`. The sums stop at `j ≤ n`, since the recurrence makes
-`r_{n,m} = 0` for `m > n`.
+/-- **Riordan array with given A- and Z-sequences.** For real sequences $(a_n)_{n \ge 0}$ and
+$(z_n)_{n \ge 0}$, an infinite real matrix $R = (r_{n,k})_{n,k \ge 0}$ is the Riordan array with
+$A$-sequence $(a_n)$ and $Z$-sequence $(z_n)$ when $r_{0,0} = 1$, $r_{0,k} = 0$ for $k \ge 1$, and
+for all $n, k \ge 0$
+$$r_{n+1,0} = \sum_{j=0}^{n} z_j\, r_{n,j}, \qquad r_{n+1,k+1} = \sum_{j=0}^{n} a_j\, r_{n,k+j}.$$
+
+The sums stop at $j = n$ because the recurrence forces $r_{n,m} = 0$ for $m > n$.
 
 Source: Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of
 Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Section 1, equation (1). -/
@@ -54,7 +63,9 @@ def IsRiordanArrayAZ (a z : ℕ → ℝ) (R : ℕ → ℕ → ℝ) : Prop :=
     (∀ n, R (n + 1) 0 = ∑ j ∈ Finset.range (n + 1), z j * R n j) ∧
     ∀ n k, R (n + 1) (k + 1) = ∑ j ∈ Finset.range (n + 1), a j * R n (k + j)
 
-/-- The first entries of a Riordan array: `r_{1,0} = z_0` and `r_{1,1} = a_0`.
+/-- **Entries in row 1 of a Riordan array.** If $R = (r_{n,k})_{n,k \ge 0}$ is the Riordan array
+with $A$-sequence $(a_n)$ and $Z$-sequence $(z_n)$, for real sequences $(a_n)$ and $(z_n)$, then
+$r_{1,0} = z_0$ and $r_{1,1} = a_0$.
 
 Source: Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of
 Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Section 1, equation (1). -/
@@ -65,16 +76,21 @@ theorem IsRiordanArrayAZ.one_zero_and_one_one {a z : ℕ → ℝ} {R : ℕ → �
   · rw [hz 0]; simp [h00]
   · rw [ha 0 0]; simp [h00]
 
-/-- The coefficient matrix `J(Z(x), A(x))` of a Riordan array: column `0` is `z_0, z_1, …`, and
-the remaining columns form the lower Toeplitz matrix of `a`, so row `n` reads
-`z_n, a_n, a_{n-1}, …, a_0, 0, …`.
+/-- **Coefficient matrix of a Riordan array.** For real sequences $(z_n)_{n \ge 0}$ and
+$(a_n)_{n \ge 0}$ with generating functions $Z(x)$ and $A(x)$, the coefficient matrix
+$J(Z(x), A(x))$ is the infinite real matrix, with rows and columns indexed by $n, k \ge 0$, whose
+entry in row $n$ and column $k$ is $z_n$ if $k = 0$, is $a_{n+1-k}$ if $1 \le k \le n + 1$, and is
+$0$ if $k > n + 1$. Thus row $n$ reads $z_n, a_n, a_{n-1}, \ldots, a_0, 0, 0, \ldots$
 
 Source: Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of
 Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Section 1. -/
 def riordanCoeffMatrix (z a : ℕ → ℝ) : Matrix ℕ ℕ ℝ :=
   Matrix.of fun n k => if k = 0 then z n else if k ≤ n + 1 then a (n + 1 - k) else 0
 
-/-- Entries of `J(Z(x), A(x))`: `J_{n,0} = z_n` and `J_{n,1} = a_n`.
+/-- **First two columns of the coefficient matrix of a Riordan array.** For real sequences
+$(z_n)$ and $(a_n)$ with generating functions $Z(x)$ and $A(x)$, and for every $n \ge 0$, the
+coefficient matrix $J(Z(x), A(x))$ has entry $z_n$ in row $n$, column $0$, and entry $a_n$ in
+row $n$, column $1$.
 
 Source: Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of
 Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Section 1. -/
@@ -82,8 +98,11 @@ theorem riordanCoeffMatrix_zero_one (z a : ℕ → ℝ) (n : ℕ) :
     riordanCoeffMatrix z a n 0 = z n ∧ riordanCoeffMatrix z a n 1 = a n := by
   simp [riordanCoeffMatrix]
 
-/-- Proposition 1 (quoted from Chen, Liang and Wang): a Riordan array `R` with `A`- and
-`Z`-sequences `a`, `z` is totally positive if its coefficient matrix `J(Z(x), A(x))` is.
+/-- **Total positivity of a Riordan array from its coefficient matrix.** Let $(a_n)$ and $(z_n)$
+be real sequences with generating functions $A(x)$ and $Z(x)$, and let $R$ be the Riordan array
+with $A$-sequence $(a_n)$ and $Z$-sequence $(z_n)$. If the coefficient matrix $J(Z(x), A(x))$ is
+totally positive, that is, every minor of it is nonnegative, then every minor of $R$ is
+nonnegative.
 
 Source: Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of
 Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Proposition 1 (`jis-2025-25.7.5-prop-1`). -/

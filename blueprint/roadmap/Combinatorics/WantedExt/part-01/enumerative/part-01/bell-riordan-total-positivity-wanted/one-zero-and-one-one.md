@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.IsRiordanArrayAZ.one_zero_and_one_one
 ---
 
-# One zero and one one
+# Entries in row 1 of a Riordan array
 
-The first entries of a Riordan array: `r_{1,0} = z_0` and `r_{1,1} = a_0`.
+**Entries in row 1 of a Riordan array.** If $R = (r_{n,k})_{n,k \ge 0}$ is the Riordan array
+with $A$-sequence $(a_n)$ and $Z$-sequence $(z_n)$, for real sequences $(a_n)$ and $(z_n)$, then
+$r_{1,0} = z_0$ and $r_{1,1} = a_0$.
 
 ## Depends on
 
-- [Is Riordan Array AZ](is-riordan-array-az.md)
+- [Riordan array with given A- and Z-sequences](is-riordan-array-az.md)
 
 ## Sources
 

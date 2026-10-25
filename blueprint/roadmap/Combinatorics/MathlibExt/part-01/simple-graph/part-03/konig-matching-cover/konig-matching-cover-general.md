@@ -7,10 +7,11 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.KonigMatchingCoverWanted.konig_matching_cover_general
 ---
 
-# Konig matching cover general
+# Kőnig's theorem on a finite vertex type
 
-Kőnig's theorem for a bipartite simple graph on a `Finite` vertex type: there is a matching
-`M` and a vertex cover `C` with `M.edgeSet.ncard = C.ncard`.
+**Kőnig's theorem on a finite vertex type.** Let $G$ be a bipartite simple graph on a finite
+vertex type $V$. Then there are a matching $M$ in $G$ and a vertex cover $C \subseteq V$ of $G$ such
+that the number of edges of $M$ equals the number of vertices in $C$.
 
 ## Depends on
 

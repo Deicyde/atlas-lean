@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.exists_isSidon_card_gt_rpow_sqrt_two_sub_one
 ---
 
-# Exists is Sidon card gt rpow sqrt two sub one
+# Ruzsa's lower bound for an infinite Sidon set
 
-Theorem 3, item 3 (Ruzsa, as quoted): some Sidon set `A` satisfies
-`|[1, n] ∩ A| > n^{√2 - 1 - o(1)}`: for every `ε > 0`, eventually
-`|[1, n] ∩ A| > n^{√2 - 1 - ε}`.
+**Ruzsa's lower bound for an infinite Sidon set.** There is a Sidon set $A \subseteq \mathbb{N}$
+such that for every real $\varepsilon > 0$, the inequality
+$|A \cap \{1, \dots, n\}| > n^{\sqrt{2} - 1 - \varepsilon}$ holds for all sufficiently large
+natural numbers $n$; that is, $|A \cap \{1, \dots, n\}| > n^{\sqrt{2} - 1 - o(1)}$.
 
 ## Depends on
 

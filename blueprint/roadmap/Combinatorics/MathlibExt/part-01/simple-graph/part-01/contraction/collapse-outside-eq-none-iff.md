@@ -7,18 +7,20 @@ proof: formalized
 lean: SimpleGraph.collapseOutside_eq_none_iff
 ---
 
-# Collapse Outside eq none iff
+# Preimage of the contraction vertex under the collapse map
 
-Characterization of the vertices sent to the contraction vertex.
+**Preimage of the contraction vertex under the collapse map.** For a set $D \subseteq V$ and a
+vertex $v \in V$, the collapse map from $V$ to $D$ together with the contraction vertex sends $v$
+to the contraction vertex if and only if $v \notin D$.
 
 ## Depends on
 
-- [Collapse Outside](collapse-outside.md)
+- [Collapsing the complement of a set](collapse-outside.md)
 
 ## Proof depends on
 
-- [Collapse Outside of mem](collapse-outside-of-mem.md)
-- [Collapse Outside of not Mem](collapse-outside-of-not-mem.md)
+- [The collapse map fixes the retained set](collapse-outside-of-mem.md)
+- [The collapse map sends the complement to the contraction vertex](collapse-outside-of-not-mem.md)
 
 ## Sources
 

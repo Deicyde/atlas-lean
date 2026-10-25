@@ -7,21 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.IsKAutomaticSequence.exists_isMorphic
 ---
 
-# Exists is Morphic
+# Automatic sequences are morphic
 
-Every `k`-automatic sequence is a morphic word.
+**Automatic sequences are morphic.** Let $k$ be a natural number and $B$ a finite alphabet.
+If a sequence $w : \mathbb{N} \to B$ is $k$-automatic, then there are a natural number $q$, an
+infinite word $u$ over the alphabet $A = \{0, 1, \dots, q-1\}$ and a map $g : A \to B$ such that
+$w$ is morphic with generator $u$ and coding $g$.
 
 ## Depends on
 
-- [Is KAutomatic Sequence](is-kautomatic-sequence.md)
+- [Automatic sequences via finite automata](is-kautomatic-sequence.md)
 - [Morphic words via a coding](../../../part-01/infinite-word/morphic-word/is-morphic.md)
 
 ## Proof depends on
 
-- [Is Coding Of Prolongable KUniform Fixed Point](is-coding-of-prolongable-kuniform-fixed.md)
-- [Exists is Morphic](exists-is-morphic.md)
-- [Base Word Value LSD](base-word-value-lsd.md)
-- [Cobham automatic iff uniform morphic](cobham-automatic-iff-uniform-morphic.md)
+- [Codings of prolongable uniform fixed points](is-coding-of-prolongable-kuniform-fixed.md)
+- [Uniform fixed-point codings are morphic](exists-is-morphic.md)
+- [Value of a base-$k$ digit word, least significant digit first](base-word-value-lsd.md)
+- [Cobham's characterization of automatic sequences](cobham-automatic-iff-uniform-morphic.md)
 
 ## Sources
 

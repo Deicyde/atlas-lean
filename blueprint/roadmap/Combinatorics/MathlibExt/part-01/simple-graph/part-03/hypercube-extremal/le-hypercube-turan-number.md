@@ -7,18 +7,21 @@ proof: formalized
 lean: SimpleGraph.le_hypercubeTuranNumber
 ---
 
-# Le hypercube Turan Number
+# The hypercube Turán number bounds every free subgraph
 
-Every `H`-free subgraph edge count is bounded by `ex(Q_n, H)`.
+**The hypercube Turán number bounds every free subgraph.** For every natural number $n$ and
+every simple graph $H$, let $Q_n$ be the $n$-dimensional hypercube and let $\mathrm{ex}(Q_n, H)$
+be the hypercube Turán number of $H$ in $Q_n$. If $S$ is a subgraph of $Q_n$ that contains no
+copy of $H$, then $S$ has at most $\mathrm{ex}(Q_n, H)$ edges.
 
 ## Depends on
 
-- [Hypercube Graph](hypercube-graph.md)
-- [Hypercube Turan Number](hypercube-turan-number.md)
+- [Hypercube graph](hypercube-graph.md)
+- [Hypercube Turán number](hypercube-turan-number.md)
 
 ## Proof depends on
 
-- [Hypercube Graph subgraph edge Set ncard le](hypercube-graph-subgraph-edge-set-ncard.md)
+- [Subgraphs of the hypercube have at most as many edges](hypercube-graph-subgraph-edge-set-ncard.md)
 
 ## Sources
 

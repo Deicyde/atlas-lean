@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.lengthThreePatterns
 ---
 
-# Length Three Patterns
+# The thirteen patterns of length three
 
-The thirteen patterns of length three, `000, 001, 010, 011, 012, 021, 100, 101,
-102, 110, 120, 201, 210`.
+**The thirteen patterns of length three.** The set of patterns of length three consists of
+the thirteen words $000$, $001$, $010$, $011$, $012$, $021$, $100$, $101$, $102$, $110$, $120$,
+$201$ and $210$.
 
 ## Depends on
 

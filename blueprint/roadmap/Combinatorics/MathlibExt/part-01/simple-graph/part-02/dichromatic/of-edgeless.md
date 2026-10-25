@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.IsOrientation.of_edgeless
 ---
 
-# Of edgeless
+# The empty orientation of an edgeless graph
 
-The empty digraph orients any edgeless graph.
+**The empty orientation of an edgeless graph.** If a simple graph $G$ has no edges, then the
+empty relation on its vertex set, the digraph with no arcs, is an orientation of $G$.
 
 ## Depends on
 
-- [Is Orientation](is-orientation.md)
+- [Orientations of a graph](is-orientation.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.maxMinMul_one
 ---
 
-# Max Min Mul one
+# Linear coefficient of a max-min product
 
-The linear coefficient of a max-min product: `(g ⊗ h)₁ = max(min(g₀, h₁), min(g₁, h₀))`.
+**Linear coefficient of a max-min product.** For all sequences
+$g, h \colon \mathbb{N} \to \mathbb{N}$, the max-min product satisfies
+$(g \otimes h)_1 = \max(\min(g_0, h_1), \min(g_1, h_0))$.
 
 ## Depends on
 
-- [Max Min Mul](max-min-mul.md)
+- [Max-min product](max-min-mul.md)
 
 ## Sources
 

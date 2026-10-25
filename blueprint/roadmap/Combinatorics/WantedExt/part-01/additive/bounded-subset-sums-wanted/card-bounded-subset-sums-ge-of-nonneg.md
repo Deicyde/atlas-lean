@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.card_boundedSubsetSums_ge_of_nonneg
 ---
 
-# Card bounded Subset Sums ge of nonneg
+# Sharp lower bounds for bounded subset sums of nonnegative sets
 
-For `k ≥ 2`, `1 ≤ α` and `α + β ≤ k - 1`: a set `A` of `k` positive integers has
-`|Σ^β_α(A)| ≥ k(k+1)/2 - α(α+1)/2 - β(β+1)/2 + 1`, a set of `k` nonnegative integers containing
-`0` has `|Σ^β_α(A)| ≥ k(k-1)/2 - α(α-1)/2 - β(β-1)/2 + 1`, and both bounds are attained (by
-`[1, k]` and `[0, k - 1]`, the witnesses named in the proof).
+**Sharp lower bounds for bounded subset sums of nonnegative sets.** Let $k$, $\alpha$, $\beta$
+be natural numbers with $k \ge 2$, $\alpha \ge 1$ and $\alpha + \beta + 1 \le k$. For a finite set
+$A$ of integers write $\Sigma_\alpha^\beta(A)$ for the set of sums of subsets $B \subseteq A$ with
+$\alpha \le |B| \le |A| - \beta$. Every set $A$ of $k$ positive integers satisfies
+$|\Sigma_\alpha^\beta(A)| \ge \binom{k+1}{2} - \binom{\alpha+1}{2} - \binom{\beta+1}{2} + 1$,
+and every set $A$ of $k$ nonnegative integers containing $0$ satisfies
+$|\Sigma_\alpha^\beta(A)| \ge \binom{k}{2} - \binom{\alpha}{2} - \binom{\beta}{2} + 1$. Both
+bounds are attained: the first by $A = \{1, 2, \dots, k\}$ and the second by
+$A = \{0, 1, \dots, k - 1\}$.
 
 ## Depends on
 
-- [Bounded Subset Sums](bounded-subset-sums.md)
+- [Subset sums with a bounded number of terms](bounded-subset-sums.md)
 
 ## Sources
 

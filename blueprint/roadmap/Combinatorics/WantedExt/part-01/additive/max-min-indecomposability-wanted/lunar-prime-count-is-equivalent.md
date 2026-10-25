@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.lunar_prime_count_isEquivalent
 ---
 
-# Lunar prime count is Equivalent
+# Asymptotic count of lunar primes
 
-Corollary 12 (conjecture of Applegate, LeBrun and Sloane): for fixed `b ≥ 2`, the number
-`π_b(n)` of prime lunar numbers of `ℒ_b` with `n` digits (degree `n - 1`) satisfies
-`π_b(n) ∼ (b - 1)² bⁿ⁻²`.
+**Asymptotic count of lunar primes.** Fix an integer $b \ge 2$. For $n \ge 1$ let $\pi_b(n)$
+be the number of digit strings $(a_0, \dots, a_{n-1})$ with $a_k \in \{0, \dots, b - 1\}$ and
+leading digit $a_{n-1} \ne 0$ whose coefficient sequence $(a_0, \dots, a_{n-1}, 0, 0, \dots)$ is a
+lunar prime of base $b$; these are the prime lunar numbers of base $b$ with $n$ digits. Then
+$\pi_b(n) \sim (b - 1)^2 b^{n-2}$ as $n \to \infty$, as conjectured by Applegate, LeBrun and
+Sloane.
 
 ## Depends on
 
-- [Is Lunar Prime](is-lunar-prime.md)
-- [Digit Seq](digit-seq.md)
+- [Lunar primes](is-lunar-prime.md)
+- [Coefficient sequence of a digit string](digit-seq.md)
 
 ## Sources
 

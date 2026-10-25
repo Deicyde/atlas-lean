@@ -5,17 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.accelZeck_unique_winning_first_move
 ---
 
-# Accel Zeck unique winning first move
+# Unique winning first move
 
-If the first player has a winning strategy in the Accelerated Zeckendorf Game on `n`,
-exactly one first move keeps it: exactly one state reachable from `n` copies of `F_1` in one
-move is losing.
+**Unique winning first move.** For every $n$, if the state consisting of $n$ copies of $F_1$
+is winning, then exactly one state reachable from it in one move is losing: when the first
+player has a winning strategy in the game on $n$, exactly one first move preserves it.
 
 ## Depends on
 
-- [Accel Zeck Losing](accel-zeck-losing.md)
-- [Accel Zeck Move](accel-zeck-move.md)
-- [Accel Zeck Winning](accel-zeck-winning.md)
+- [Losing states of the Accelerated Zeckendorf Game](accel-zeck-losing.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
+- [Winning states of the Accelerated Zeckendorf Game](accel-zeck-winning.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isLunarPrimeCandidate_lunarUnit
 ---
 
-# Is Lunar Prime Candidate lunar Unit
+# The lunar unit is a prime candidate
 
-The unit `b - 1` is a prime candidate when `b ≥ 2`.
+**The lunar unit is a prime candidate.** For every natural number $b \ge 2$, the lunar unit
+of base $b$, the sequence with constant term $b - 1$ and all other terms $0$, is a prime candidate
+in base $b$: its constant term is nonzero and one of its terms equals $b - 1$.
 
 ## Depends on
 
-- [Is Lunar Prime Candidate](is-lunar-prime-candidate.md)
+- [Lunar prime candidates](is-lunar-prime-candidate.md)
 - [Lunar Unit](lunar-unit.md)
 
 ## Sources

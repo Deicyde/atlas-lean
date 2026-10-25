@@ -4,5 +4,5 @@ navigation: module
 
 # First Difference
 
-- [First Difference](first-difference.md)
-- [First Difference List](first-difference-list.md)
+- [First difference of an infinite binary word](first-difference.md)
+- [First difference of a finite binary word](first-difference-list.md)

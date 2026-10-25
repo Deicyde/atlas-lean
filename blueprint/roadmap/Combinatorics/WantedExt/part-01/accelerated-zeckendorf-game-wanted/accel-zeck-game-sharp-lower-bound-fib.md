@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.accelZeckGame_sharp_lower_bound_fib
 ---
 
-# Accel Zeck Game sharp lower bound fib
+# Sharp lower bound for the Accelerated Zeckendorf Game on a Fibonacci number
 
-For `n = F_k` (`k ≥ 1`), `k - 1` is a sharp lower bound on the length of a complete
-Accelerated Zeckendorf Game on `n`.
+**Sharp lower bound for the Accelerated Zeckendorf Game on a Fibonacci number.** Index the
+Fibonacci numbers as $F_1 = 1$, $F_2 = 2$, $F_{i+1} = F_i + F_{i-1}$, and let $k \ge 1$. Every
+complete Accelerated Zeckendorf Game on $F_k$ (a sequence of moves from $F_k$ copies of $F_1$ to
+a state from which no move is possible) has at least $k - 1$ moves, and some complete game on
+$F_k$ has exactly $k - 1$ moves.
 
 ## Depends on
 
-- [Is Accel Zeck Game](is-accel-zeck-game.md)
+- [Complete Accelerated Zeckendorf Games](is-accel-zeck-game.md)
 
 ## Sources
 

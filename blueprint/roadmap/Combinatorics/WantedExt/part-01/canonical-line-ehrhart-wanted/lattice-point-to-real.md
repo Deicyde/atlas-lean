@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.latticePointToReal
 ---
 
-# Lattice Point To Real
+# Lattice points as real points
 
-The real point associated to an integer lattice point in `ℤ^d`.
+**Lattice points as real points.** A lattice point $x = (x_1, \dots, x_d) \in \mathbb{Z}^d$
+is regarded as the point of $\mathbb{R}^d$ with the same coordinates $x_1, \dots, x_d$.
 
 ## Depends on
 

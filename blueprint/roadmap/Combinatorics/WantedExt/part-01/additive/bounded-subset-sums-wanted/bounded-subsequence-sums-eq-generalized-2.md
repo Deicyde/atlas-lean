@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.boundedSubsequenceSums_eq_generalizedHFoldSumset_of_zero_mem
 ---
 
-# Bounded Subsequence Sums eq generalized HFold Sumset of zero mem
+# Bounded subsequence sums as a generalized h-fold sumset when zero is a term
 
-For a sequence `𝒜 = (A, t̄)` with `A = {0, a₁, …, a_{k-1}}` (distinct terms), positive
-`t̄ = (t₀, …, t_{k-1})`, `h = t₀ + ⋯ + t_{k-1}`, `1 ≤ α`, `β ≤ h - 1` and `α + β ≤ h`,
-`Σ^β_α(𝒜) = (h - β)^{(r̄)}A` with `r̄ = (h - α - β + t₀, t₁, …, t_{k-1})`; here `k = m + 1`.
+**Bounded subsequence sums as a generalized h-fold sumset when zero is a term.** Let $G$ be
+an abelian group, let $m$ be a natural number, let $a_1, \dots, a_m$ be distinct nonzero elements
+of $G$, and put $a_0 = 0$. Let $t_0, \dots, t_m$ be positive integers, let $\mathcal{A}$ be the
+sequence in which each $a_i$ occurs $t_i$ times, and let $h = t_0 + \dots + t_m$ be its length.
+If $\alpha, \beta$ are natural numbers with $\alpha \ge 1$, $\beta \le h - 1$ and
+$\alpha + \beta \le h$, then $\Sigma^\beta_\alpha(\mathcal{A})$, the set of sums of subsequences
+of $\mathcal{A}$ with at least $\alpha$ and at most $h - \beta$ terms, equals the generalized
+$(h - \beta)$-fold sumset $(h - \beta)^{(\bar r)} A$ of $A = (a_0, a_1, \dots, a_m)$ with
+$\bar r = (h - \alpha - \beta + t_0, t_1, \dots, t_m)$, that is, the set of sums
+$\sum_{j=0}^{m} s_j a_j$ with $0 \le s_j \le r_j$ for all $j$ and $\sum_j s_j = h - \beta$.
 
 ## Depends on
 
-- [Bounded Subsequence Sums](bounded-subsequence-sums.md)
-- [Generalized HFold Sumset](generalized-hfold-sumset.md)
-- [Repetition Sequence](repetition-sequence.md)
+- [Subsequence sums with a bounded number of terms](bounded-subsequence-sums.md)
+- [Generalized $h$-fold sumset](generalized-hfold-sumset.md)
+- [Sequence with prescribed multiplicities](repetition-sequence.md)
 
 ## Sources
 

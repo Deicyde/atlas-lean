@@ -6,20 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.accelZeckWinning_single_one_two
 ---
 
-# Accel Zeck Winning single one two
+# The first player wins the game on $2$
 
-The game on `2` is won by the first player, via `1 · C_1`.
+**The first player wins the game on $2$.** The state consisting of two copies of $F_1$ is
+winning.
+
+The winning move is $1 \cdot C_1$, which reaches the terminal state with one copy of $F_2$.
 
 ## Depends on
 
-- [Accel Zeck Winning](accel-zeck-winning.md)
+- [Winning states of the Accelerated Zeckendorf Game](accel-zeck-winning.md)
 
 ## Proof depends on
 
-- [Accel Zeck Losing](accel-zeck-losing.md)
-- [Accel Zeck Move](accel-zeck-move.md)
-- [Accel Zeck Losing of terminal](accel-zeck-losing-of-terminal.md)
-- [Accel Zeck Move single one two](accel-zeck-move-single-one-two.md)
+- [Losing states of the Accelerated Zeckendorf Game](accel-zeck-losing.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
+- [Terminal states are losing in the Accelerated Zeckendorf Game](accel-zeck-losing-of-terminal.md)
+- [Two ones combine into a two in the Accelerated Zeckendorf Game](accel-zeck-move-single-one-two.md)
 
 ## Sources
 

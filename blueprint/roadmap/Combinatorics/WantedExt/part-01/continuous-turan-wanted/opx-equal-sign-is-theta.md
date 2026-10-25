@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.opx_equal_sign_isTheta
 ---
 
-# Opx equal sign is Theta
+# Continuous Turán number of the equal-sign pattern
 
-Theorem 4.7: for fixed `s, c > 0`, the pattern `P_{s,2,c} = [0, s] × {c, 2c}` (an equal
-sign) has `opx(n, P_{s,2,c}) = Θ(s^{1/2} n^{3/2})` as `n → ∞`, with `s` fixed.
+**Continuous Turán number of the equal-sign pattern.** Let $s > 0$ and $c > 0$ be real numbers
+and let $P_{s,2,c} = [0, s] \times \{c, 2c\}$ be the equal-sign pattern, two horizontal segments of
+length $s$ at heights $c$ and $2c$. Then, as the real number $n$ tends to infinity with $s$ and
+$c$ fixed, $\operatorname{opx}(n, P_{s,2,c}) = \Theta(s^{1/2} n^{3/2})$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

@@ -5,6 +5,6 @@ navigation: module
 
 # Menger Edge
 
-- [Is Edge Disjoint STPaths](is-edge-disjoint-stpaths.md)
-- [Is STEdge Cut](is-stedge-cut.md)
-- [Menger edge max min](menger-edge-max-min.md)
+- [Edge-disjoint paths](is-edge-disjoint-stpaths.md)
+- [Edge cuts separating two vertices](is-stedge-cut.md)
+- [Menger's theorem for edge cuts and edge-disjoint paths](menger-edge-max-min.md)

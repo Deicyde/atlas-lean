@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Contains Pattern D](contains-pattern-d.md)
+- [Containment of point sets in $\mathbb{R}^d$](contains-pattern-d.md)
 
 ## Sources
 

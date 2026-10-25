@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.dilateInvertSeries
 ---
 
-# Dilate Invert Series
+# Dilating and inverting a power series
 
-The substitution `f(x; q) ↦ f(q^j x; 1/q)` of Lemma 4, taking a power series in `x` over
-`ℤ[q]` to one over `ℤ[q, q⁻¹]`: the coefficient of `xⁿ` becomes `q^{jn}` times the image of the old
-coefficient under `q ↦ q⁻¹`.
+**Dilating and inverting a power series.** For a natural number $j$ and a power series
+$f(x; q) = \sum_{n \ge 0} f_n(q) x^n$ in $x$ over $\mathbb{Z}[q]$, the power series
+$f(q^j x; 1/q)$ in $x$ over the Laurent polynomial ring $\mathbb{Z}[q, q^{-1}]$ is
+$\sum_{n \ge 0} q^{jn} f_n(q^{-1}) x^n$.
 
 ## Depends on
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: SetFamily.isIndependent_of_subset
 ---
 
-# Is Independent of subset
+# Subsets of independent sets are independent
 
-Independence persists to subsets of the independent set.
+**Subsets of independent sets are independent.** If a finite set $I$ of vertices is
+independent in a finite hypergraph $H$ and $J \subseteq I$, then $J$ is independent in $H$.
 
 ## Depends on
 
-- [Is Independent](is-independent.md)
+- [Independent set in a hypergraph](is-independent.md)
 
 ## Sources
 

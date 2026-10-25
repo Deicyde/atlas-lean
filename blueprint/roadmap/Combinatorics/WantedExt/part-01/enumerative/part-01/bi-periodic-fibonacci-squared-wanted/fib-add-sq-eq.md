@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.fib_add_sq_eq
 ---
 
-# Fib add sq eq
+# Addition formula for squared Fibonacci numbers
 
-Corollary 3.12: for `n ≥ 2` and `m ≥ 1`,
-`F²_{m+n} = F²_{m+1} F²_n + F²_m F²_{n-1} + 2 ∑_{i=1}^{m} F²_i ∑_{j=1}^{n-1} F²_j`.
+**Addition formula for squared Fibonacci numbers.** Let $F_k$ denote the Fibonacci numbers
+($F_0 = 0$, $F_1 = 1$). For all natural numbers $m \ge 1$ and $n \ge 2$,
+
+$$
+F_{m+n}^2 = F_{m+1}^2 F_n^2 + F_m^2 F_{n-1}^2 +
+2 \left(\sum_{i=1}^{m} F_i^2\right) \left(\sum_{j=1}^{n-1} F_j^2\right).
+$$
 
 ## Depends on
 

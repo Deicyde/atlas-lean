@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.bivariateCountGF_kArndt_neg
 ---
 
-# Bivariate Count GF k Arndt neg
+# Generating function of $k$-Arndt compositions for negative $k$
 
-For `k < 0`, written `k = -k'` with `k' ≥ 1`, the generating function of `k`-Arndt
-compositions by weight and number of parts is
-`A_k(x, y) = (1 - x²)(1 - x(1 - y))/(1 - x - x²(1 + y²) + x³(1 - y²) + y²x^{2-k})`.
+**Generating function of $k$-Arndt compositions for negative $k$.** Let $k' \ge 1$ and
+$k = -k'$, let $a_k(n, m)$ be the number of $k$-Arndt compositions of $n$ with $m$ parts, and
+let $A_k(x, y) = \sum_{n \ge 0} \sum_{m=0}^{n} a_k(n, m)\, x^n y^m \in \mathbb{Z}[y][[x]]$. Then
+$A_k(x, y)\,(1 - x - x^2(1 + y^2) + x^3(1 - y^2) + y^2x^{2+k'}) = (1 - x^2)(1 - x(1 - y))$,
+that is,
+$A_k(x, y) = (1 - x^2)(1 - x(1 - y))/(1 - x - x^2(1 + y^2) + x^3(1 - y^2) + y^2x^{2-k})$.
 
 ## Depends on
 
-- [Bivariate Count GF](bivariate-count-gf.md)
-- [K Arndt Composition Count](k-arndt-composition-count.md)
+- [Bivariate generating function of a two-index count](bivariate-count-gf.md)
+- [Number of $k$-Arndt compositions](k-arndt-composition-count.md)
 
 ## Sources
 

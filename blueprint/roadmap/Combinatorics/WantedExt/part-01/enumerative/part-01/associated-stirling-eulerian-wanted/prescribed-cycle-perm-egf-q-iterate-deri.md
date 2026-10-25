@@ -5,19 +5,30 @@ statement: formalized
 lean: MetaMathlibExt.prescribedCyclePermEGF_q_iterate_derivative
 ---
 
-# Prescribed Cycle Perm EGF q iterate derivative
+# $q$-analogue of the derivative formula for prescribed cycle lengths through the first $s$ points
 
-Theorem 64: for lengths `r_1, …, r_s ≥ 2`, the `q`-analogue over permutations whose
-first `s` points lie in distinct cycles with the point `i` in a cycle of length `r_i`
-satisfies `∂^s [A^{r_1⋯r_s}(q,x,u)]_s/∂u^s =
-q^s x^s ∏_{i=1}^{s} A_{r_i-1}(x) u^{r_i-1}/(r_i-1)! · (A(x,u))^q`, the power read as
-`exp(q L)` for any `L` with `L(0) = 0` and `exp L = A(x,u)`.
+**$q$-analogue of the derivative formula for prescribed cycle lengths through the first $s$
+points.** Let $R$ be a commutative $\mathbb{Q}$-algebra, $x, q \in R$, $s \in \mathbb{N}$ and
+$r : \mathbb{N} \to \mathbb{N}$ with $r(i) \ge 2$ for all $i < s$. For a permutation $\sigma$ of
+$\{0, \dots, n-1\}$ let $e(\sigma)$ be the number of $i$ with $\sigma(i) > i$ and $c(\sigma)$ the
+number of cycles of $\sigma$, fixed points included, and for $m \ge 0$ let
+$A_m(x) = \sum_{\sigma} x^{e(\sigma)}$ over all permutations $\sigma$ of $\{0, \dots, m-1\}$. Let
+$A(x,u) = \sum_{n \ge 0} \frac{u^n}{n!} \sum_{\sigma} x^{e(\sigma)} \in R[[u]]$, the inner sum
+over all permutations $\sigma$ of $\{0, \dots, n-1\}$, and let
+$F(q,x,u) = \sum_{n \ge 0} \frac{u^n}{n!} \sum_{\sigma} x^{e(\sigma)} q^{c(\sigma)}$, the inner
+sum over the permutations $\sigma$ of $\{0, \dots, n-1\}$ in which no two distinct points less
+than $s$ lie in the same cycle and each point $i < s$ lies in a cycle of length $r(i)$. If
+$L \in R[[u]]$ has zero constant term and $\exp(L) = A(x,u)$, where
+$\exp(G) = \sum_{m \ge 0} G^m/m!$, then the $s$-th derivative in $u$ is
+
+$$\frac{d^s}{du^s} F(q,x,u) = q^s x^s \Bigl(\prod_{i=0}^{s-1}
+\frac{A_{r(i)-1}(x)\, u^{r(i)-1}}{(r(i)-1)!}\Bigr) \exp(qL).$$
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

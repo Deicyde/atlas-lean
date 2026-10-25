@@ -7,10 +7,12 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.BrooksWanted.brooks
 ---
 
-# Brooks
+# Brooks' theorem
 
-A finite connected simple graph with maximum degree `Δ` is colorable with `Δ` colors unless it is
-a complete graph or an odd cycle.
+**Brooks' theorem.** Let $G$ be a finite connected simple graph and let $\Delta$ be its maximum
+degree: every vertex of $G$ has degree at most $\Delta$ and some vertex has degree exactly $\Delta$.
+If $G$ is not complete and is not isomorphic to a cycle graph on an odd number of vertices, then $G$
+has a proper vertex coloring with $\Delta$ colors.
 
 ## Depends on
 

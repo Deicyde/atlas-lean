@@ -7,17 +7,19 @@ proof: formalized
 lean: TuranSystem.cover_of_isTuran
 ---
 
-# Cover of is Turan
+# Turán systems cover every $s$-set
 
-Covering projection: every `s`-set contains an edge of `H`.
+**Turán systems cover every $s$-set.** Let $n$, $s$, $r$ be natural numbers and let $H$ be a
+Turán $(n, s, r)$-system. Then every $s$-element subset $T$ of $\{0, 1, \dots, n-1\}$ contains
+some member $e$ of $H$.
 
 ## Depends on
 
-- [Is Turan System](is-turan-system.md)
+- [Turán system](is-turan-system.md)
 
 ## Proof depends on
 
-- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+- [Uniform hypergraphs](../uniform-hypergraph/is-uniform.md)
 
 ## Sources
 

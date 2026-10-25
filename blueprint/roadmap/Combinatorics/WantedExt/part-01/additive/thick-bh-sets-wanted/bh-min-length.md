@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.bhMinLength
 ---
 
-# Bh Min Length
+# Shortest interval containing a $B_h$-set of given size
 
-`R_h⁻¹(k)`: the smallest `n` such that some `B_h`-set with `k` elements is contained in
-`{1, …, n}`.
+**Shortest interval containing a $B_h$-set of given size.** For natural numbers $h$ and $k$,
+$R_h^{-1}(k)$ is the smallest natural number $n$ such that some $B_h$-set of natural numbers with
+exactly $k$ elements is contained in $\{1, \dots, n\}$; it is $0$ when no such $n$ exists, for
+example when $k = 0$, since a $B_h$-set is nonempty.
 
 ## Depends on
 

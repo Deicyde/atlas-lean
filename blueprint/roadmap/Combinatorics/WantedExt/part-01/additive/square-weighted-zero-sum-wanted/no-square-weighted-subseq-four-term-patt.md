@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.no_squareWeightedSubseq_fourTerm_pattern
 ---
 
-# No square Weighted Subseq four Term pattern
+# Four-term sequences without square-weighted zero-sum subsequences
 
-Lemma 25: the hypotheses give prime `p`, nonzero even `r`, two unit terms
-whose reduction has no `S(p)`-weighted zero-sum subsequence, and a unit `u`;
-the four-term sequence `(u w₁, u w₂, p w₁, p w₂)` then has no
-`S(p^r)`-weighted zero-sum subsequence. The paper writes the equivalent `Q_p`
-for the reduced weights.
+**Four-term sequences without square-weighted zero-sum subsequences.** Let $p$ be a prime and
+$r$ a nonzero even natural number, and write $S(m)$ for the set of nonzero squares in
+$\mathbb{Z}/m\mathbb{Z}$. Let $w_1, w_2, u$ be units of $\mathbb{Z}/p^r\mathbb{Z}$ such that the
+reduction $(w_1 \bmod p, w_2 \bmod p)$ has no $S(p)$-weighted zero-sum subsequence. Then the
+sequence $(u w_1, u w_2, p w_1, p w_2)$ in $\mathbb{Z}/p^r\mathbb{Z}$ has no $S(p^r)$-weighted
+zero-sum subsequence.
 
 ## Depends on
 
-- [Has Weighted Zero Sum Subseq](has-weighted-zero-sum-subseq.md)
-- [Square Set](square-set.md)
+- [Weighted zero-sum subsequences](has-weighted-zero-sum-subseq.md)
+- [Nonzero squares modulo $n$](square-set.md)
 
 ## Sources
 

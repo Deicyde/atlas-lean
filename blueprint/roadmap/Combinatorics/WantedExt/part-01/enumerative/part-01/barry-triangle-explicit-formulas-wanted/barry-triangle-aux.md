@@ -5,12 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.barryTriangleAux
 ---
 
-# Barry Triangle Aux
+# Barry's triangle recurrence
 
-The three-parameter recurrence behind OEIS A080416: `s(β, 0, 0) = 1`,
-`s(β, n, k) = 0` if exactly one of `n, k` is `0`, and
-`s(β, n, k) = s(β + 1, n - 1, k - 1) + β k s(β, n - 1, k)` otherwise. The triangle
-A080416 is `s(0, n, k)` for `2 ≤ k ≤ n`.
+**Barry's triangle recurrence.** The function $s(\beta, n, k)$ of natural numbers
+$\beta, n, k$, with natural-number values, is defined by $s(\beta, 0, 0) = 1$, by
+$s(\beta, n, k) = 0$ if exactly one of $n, k$ is $0$, and by
+
+$$s(\beta, n, k) = s(\beta + 1, n - 1, k - 1) + \beta k\, s(\beta, n - 1, k)$$
+
+if $n, k \ge 1$.
+
+The triangle OEIS A080416 is $s(0, n, k)$ for $2 \le k \le n$.
 
 ## Depends on
 

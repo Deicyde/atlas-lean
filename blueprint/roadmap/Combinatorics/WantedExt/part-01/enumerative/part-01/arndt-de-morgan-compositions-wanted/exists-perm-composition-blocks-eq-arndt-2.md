@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_perm_composition_blocks_eq_arndtV
 ---
 
-# Exists perm composition blocks eq arndt V
+# The map $V$ permutes compositions
 
-The pairwise map `V` sends compositions of `n` to compositions of `n` and is a permutation of
-the compositions of `n`.
+**The map $V$ permutes compositions.** For every natural number $n$, the map $V$ sends
+compositions of $n$ to compositions of $n$, and it is a permutation of the set of compositions
+of $n$.
 
 ## Depends on
 
-- [Arndt V](arndt-v.md)
+- [The map $V$ on lists](arndt-v.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.weakAscent_wilf_class61
 ---
 
-# Weak Ascent wilf class61
+# Weak-ascent Wilf equivalence in Class 61
 
-Theorem 6 (Class 61): `{010, 011, 102, 201}` and `{010, 011, 120, 201}` are WA-Wilf
-equivalent (the paper writes `∼` with the `w` marker).
+**Weak-ascent Wilf equivalence in Class 61.** For every natural number $n$, the number of
+weak ascent sequences of length $n$ avoiding every pattern in $\{010, 011, 102, 201\}$ equals the
+number avoiding every pattern in $\{010, 011, 120, 201\}$.
+
+That is, the two sets are WA-Wilf equivalent.
 
 ## Depends on
 
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Sources
 

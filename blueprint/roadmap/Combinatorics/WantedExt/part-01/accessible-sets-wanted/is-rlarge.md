@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsRLarge
 ---
 
-# Is RLarge
+# $r$-large sets
 
-`D` is `r`-large when it contains only positive gaps, `r ≥ 1`, and every
-`r`-coloring of the positive integers has a monochromatic `D`-AP of every
-requested positive length.  The universal length quantifier formalizes
-"arbitrarily long."
+**$r$-large sets.** Let $r$ be a natural number. A set $D$ of natural numbers is $r$-large when
+every element of $D$ is positive, $r \ge 1$, and for every coloring $c$ of the positive integers
+with the colors $0, 1, \dots, r - 1$ and every natural number $k \ge 1$ there are positive integers
+$x_0, \dots, x_{k-1}$ that are monochromatic for $c$ and form a $D$-AP: there are a positive
+integer $a$ and some $d \in D$ with $x_i = a + i d$ for all $i < k$.
+
+Quantifying over every length $k \ge 1$ formalizes "arbitrarily long" monochromatic $D$-APs.
 
 ## Depends on
 
@@ -18,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is DAP](is-dap.md)
-- [Is Monochromatic](is-monochromatic.md)
+- [Arithmetic progressions with gap in $D$](is-dap.md)
+- [Monochromatic sequences of positive integers](is-monochromatic.md)
 
 ## Sources
 

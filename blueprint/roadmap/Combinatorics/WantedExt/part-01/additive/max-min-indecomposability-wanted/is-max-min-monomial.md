@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsMaxMinMonomial
 ---
 
-# Is Max Min Monomial
+# Monomials over the max-min semiring
 
-A max-min monomial `c xⁱ` with `c ≠ 0`: a coefficient sequence with exactly one nonzero
-entry.
+**Monomials over the max-min semiring.** A coefficient sequence
+$g : \mathbb{N} \to \mathbb{N}$ over the max-min semiring is a monomial when exactly one of its
+entries is nonzero, that is, when it is $c x^i$ for some index $i$ and some coefficient $c \neq 0$.
 
 ## Depends on
 

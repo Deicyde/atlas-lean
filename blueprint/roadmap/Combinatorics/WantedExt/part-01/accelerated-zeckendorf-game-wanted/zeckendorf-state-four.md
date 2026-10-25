@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.zeckendorfState_four
 ---
 
-# Zeckendorf State four
+# The Zeckendorf state of $4$
 
-The Zeckendorf decomposition `4 = F_3 + F_1` (paper indexing) as a game state.
+**The Zeckendorf state of $4$.** The Zeckendorf state of $4$ consists of one copy of $F_3$
+and one copy of $F_1$, reflecting the Zeckendorf decomposition $4 = F_3 + F_1 = 3 + 1$.
 
 ## Depends on
 
-- [Zeckendorf State](zeckendorf-state.md)
+- [Zeckendorf decomposition as a game state](zeckendorf-state.md)
 
 ## Sources
 

@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.opxD_mono_left
 ---
 
-# Opx D mono left
+# Higher-dimensional continuous Turán numbers are monotone in the side length
 
-Lemma 5.2: `opx(m, P, d) ≤ opx(n, P, d)` for `m ≤ n`.
+**Higher-dimensional continuous Turán numbers are monotone in the side length.** For every
+set $P \subseteq \mathbb{R}^d$ and all real numbers $m \le n$,
+$\mathrm{opx}(m, P, d) \le \mathrm{opx}(n, P, d)$.
 
 ## Depends on
 

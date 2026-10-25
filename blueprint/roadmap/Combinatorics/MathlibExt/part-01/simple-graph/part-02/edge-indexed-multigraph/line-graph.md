@@ -6,18 +6,19 @@ statement: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.lineGraph
 ---
 
-# Line Graph
+# Line graph of an edge-indexed multigraph
 
-The line graph of an edge-indexed multigraph: vertices are edge identities,
-adjacent when distinct and sharing an endpoint. Parallel edges are adjacent.
+**Line graph of an edge-indexed multigraph.** The line graph of an edge-indexed multigraph is
+the simple graph whose vertices are the edge identities, two of them being adjacent when they are
+distinct and share an endpoint. In particular, parallel edges are adjacent.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
 
 ## Proof depends on
 
-- [Inc](inc.md)
+- [Incidence](inc.md)
 
 ## Sources
 

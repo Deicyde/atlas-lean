@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.modularSchurNumber_lt_of_modEq
 ---
 
-# Modular Schur Number lt of mod Eq
+# Congruence upper bound for modular Schur numbers
 
-For positive `k, l` and `1 ≤ a ≤ m - 1` with `d = gcd(a, m)`: if `l ≡ 1 (mod m/d)`, then
-`S_m(k, l) < a`.
+**Congruence upper bound for modular Schur numbers.** Let $m$, $k$, $l$ and $a$ be natural
+numbers with $k \ge 1$, $l \ge 1$ and $1 \le a \le m - 1$, and let $d = \gcd(a, m)$. If
+$l \equiv 1 \pmod{m/d}$, then the generalized Schur number $S_m(k, l)$ modulo $m$ satisfies
+$S_m(k, l) < a$.
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

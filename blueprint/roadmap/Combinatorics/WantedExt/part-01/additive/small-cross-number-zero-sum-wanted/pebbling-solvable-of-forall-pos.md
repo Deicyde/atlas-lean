@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.pebblingSolvable_of_forall_pos
 ---
 
-# Pebbling Solvable of forall pos
+# Configurations covering every vertex are solvable
 
-A configuration with a pebble on every vertex is solvable.
+**Configurations covering every vertex are solvable.** Let $G$ be a simple graph with
+natural-number edge costs $w$. Every pebbling configuration $C$ on $G$ with $C(r) \ge 1$ for
+every vertex $r$ is solvable with respect to $G$ and $w$.
 
 ## Depends on
 
-- [Pebbling Solvable](pebbling-solvable.md)
+- [Solvable pebbling configurations](pebbling-solvable.md)
 
 ## Proof depends on
 
-- [Pebbling Step](pebbling-step.md)
+- [Lagarias–Saks pebbling step](pebbling-step.md)
 
 ## Sources
 

@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.HasOnlyRealRoots
 ---
 
-# Has Only Real Roots
+# Real-rooted polynomials
 
-A nonzero real polynomial has only real roots when its root multiset over `ℝ` has cardinality
-equal to its degree.  This cardinality formulation includes multiplicity.
+**Real-rooted polynomials.** A real polynomial $f$ has only real roots when $f \ne 0$ and the
+number of real roots of $f$, counted with multiplicity, equals the degree of $f$.
 
 ## Depends on
 

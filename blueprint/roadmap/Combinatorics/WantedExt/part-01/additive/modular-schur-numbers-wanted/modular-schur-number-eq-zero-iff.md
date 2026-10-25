@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.modularSchurNumber_eq_zero_iff
 ---
 
-# Modular Schur Number eq zero iff
+# Vanishing of modular Schur numbers
 
-For positive `k, l, m`: `S_m(k, l) = 0` if and only if `l ≡ 1 (mod m)`.
+**Vanishing of modular Schur numbers.** Let $m$, $k$ and $l$ be positive integers. The
+generalized Schur number $S_m(k, l)$, the largest $n$ such that $\{1, \dots, n\}$ admits a
+partition into $k$ classes that are $l$-sum-free modulo $m$, equals $0$ if and only if
+$l \equiv 1 \pmod{m}$.
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

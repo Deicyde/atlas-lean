@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.exists_idempotent_mem_betaFamily
 ---
 
-# Theorem 3, part 4
+# β(F) contains an idempotent when it is a subsemigroup
 
-**Theorem 3, part 4.** In a semigroup `S`, if `β(F)` is a subsemigroup of `βS`
-for a family `F` with the Ramsey property, then `β(F)` contains an idempotent.
+**β(F) contains an idempotent when it is a subsemigroup.** Let $S$ be a semigroup and
+$\mathcal F$ a family of subsets of $S$ with the Ramsey property, and multiply ultrafilters on
+$S$ by $E \in pq$ iff $\{x \in S : \{y \in S : xy \in E\} \in q\} \in p$. If
+$pq \in \beta(\mathcal F)$ for all $p, q \in \beta(\mathcal F)$, then there is
+$p \in \beta(\mathcal F)$ with $pp = p$.
 
 ## Depends on
 
-- [Is Ramsey Family](is-ramsey-family.md)
-- [Beta Family](beta-family.md)
+- [Families with the Ramsey property](is-ramsey-family.md)
+- [The set β(F) of ultrafilters inside a family](beta-family.md)
 
 ## Sources
 

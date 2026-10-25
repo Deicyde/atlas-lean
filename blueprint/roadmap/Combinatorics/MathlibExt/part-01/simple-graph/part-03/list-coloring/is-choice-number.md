@@ -6,10 +6,10 @@ statement: formalized
 lean: SimpleGraph.IsChoiceNumber
 ---
 
-# Is Choice Number
+# Choice number
 
-`q` is the choice number of `G` if `G` is `q`-list-colorable but is not
-list-colorable with any smaller number of colors.
+**Choice number.** A natural number $q$ is the choice number of a simple graph $G$ if $G$ is
+$q$-list-colorable but is not $r$-list-colorable for any $r < q$.
 
 ## Depends on
 
@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is List Colorable](is-list-colorable.md)
+- [List colorability](is-list-colorable.md)
 
 ## Sources
 

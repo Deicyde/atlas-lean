@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.wittWordContent_singleton
 ---
 
-# Witt Word Content singleton
+# Content of a one-letter word
 
-The content of a one-letter word is the corresponding coordinate vector.
+**Content of a one-letter word.** Let $r$ be a natural number. For every letter $i$ of the
+alphabet $\{0, \dots, r-1\}$, the content of the one-letter word $i$ takes the value $1$ at $i$ and
+the value $0$ at every other letter.
 
 ## Depends on
 
-- [Witt Word Content](witt-word-content.md)
+- [Content of a word](witt-word-content.md)
 
 ## Sources
 

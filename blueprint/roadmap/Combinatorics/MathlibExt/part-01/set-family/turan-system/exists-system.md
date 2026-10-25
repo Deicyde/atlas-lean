@@ -7,18 +7,19 @@ proof: formalized
 lean: TuranSystem.exists_system
 ---
 
-# Exists system
+# Turán systems exist
 
-Existence of a Turan system under the parameter bounds.
+**Turán systems exist.** For all natural numbers $n$, $s$, $r$ with $0 < r < s \le n$, there
+is a Turán $(n, s, r)$-system.
 
 ## Depends on
 
-- [Is Turan System](is-turan-system.md)
+- [Turán system](is-turan-system.md)
 
 ## Proof depends on
 
-- [Complete Graph](complete-graph.md)
-- [Complete Graph is Turan](complete-graph-is-turan.md)
+- [The complete $r$-graph](complete-graph.md)
+- [The complete $r$-graph is a Turán system](complete-graph-is-turan.md)
 
 ## Sources
 

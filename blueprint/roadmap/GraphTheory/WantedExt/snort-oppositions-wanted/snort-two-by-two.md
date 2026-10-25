@@ -16,7 +16,7 @@ second player wins the Peaceable Rooks game there.
 - [Snort First Player Wins](snort-first-player-wins.md)
 - [Snort Second Player Wins](snort-second-player-wins.md)
 - [Queen Graph](queen-graph.md)
-- [Rook Graph](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-04/rook-graph/rook-graph.md)
+- [Rook graph](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-04/rook-graph/rook-graph.md)
 
 ## Proof depends on
 

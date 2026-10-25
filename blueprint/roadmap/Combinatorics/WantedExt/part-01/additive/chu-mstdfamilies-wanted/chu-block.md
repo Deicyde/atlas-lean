@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.chuBlock
 ---
 
-# Chu Block
+# Chu difference block
 
-The difference block `M^k = 1, 4, …, 4, 3` with `k` fours.
+**Chu difference block.** For a natural number $k$, the difference block $M^k$ is the list of
+natural numbers $1, 4, \ldots, 4, 3$ of length $k + 2$: a $1$, then $k$ copies of $4$, then a $3$.
 
 ## Depends on
 

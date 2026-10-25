@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.arndtV_examples
 ---
 
-# Arndt V examples
+# Values of the map $V$
 
-Entries of Table 6: `V(2,3) = (1,1,3)`, `V(1,4) = (5)`, `V(4,1) = (1,1,1,2)`,
-`V(1,3,1) = (1,3,1)`, `V(2,2,1) = (4,1)`.
+**Values of the map $V$.** The map $V$ sends $(2, 3)$ to $(1, 1, 3)$, $(1, 4)$ to $(5)$,
+$(4, 1)$ to $(1, 1, 1, 2)$, $(1, 3, 1)$ to $(1, 3, 1)$ and $(2, 2, 1)$ to $(4, 1)$.
 
 ## Depends on
 
-- [Arndt V](arndt-v.md)
+- [The map $V$ on lists](arndt-v.md)
 
 ## Sources
 

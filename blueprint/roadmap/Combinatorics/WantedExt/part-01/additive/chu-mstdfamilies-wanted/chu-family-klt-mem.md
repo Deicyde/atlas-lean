@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.chuFamilyKLT_mem
 ---
 
-# Chu Family KLT mem
+# Elements of the Kumar–Mohan–Pandey sets (Lemma 4)
 
-Lemma 4: with `T = t(kl + l + 1)`, `1 + 4i ∈ A` for `0 ≤ i ≤ 1 + T`, and `2 + 4T`,
-`4 + 4T ∈ A`.
+**Elements of the Kumar–Mohan–Pandey sets (Lemma 4).** Let $k$, $l$, $t$ be positive
+integers, let $A = A_{k,l,t}$ be the Kumar–Mohan–Pandey set, and put $T = t(kl + l + 1)$. Then
+$1 + 4i \in A$ for every integer $i$ with $0 \le i \le 1 + T$, and $2 + 4T \in A$ and
+$4 + 4T \in A$.
 
 ## Depends on
 
-- [Chu Family KLT](chu-family-klt.md)
+- [Kumar–Mohan–Pandey sets](chu-family-klt.md)
 
 ## Sources
 

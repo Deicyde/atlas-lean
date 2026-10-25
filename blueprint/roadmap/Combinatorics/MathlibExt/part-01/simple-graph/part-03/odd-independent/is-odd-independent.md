@@ -6,10 +6,11 @@ statement: formalized
 lean: SimpleGraph.IsOddIndependent
 ---
 
-# Is Odd Independent
+# Odd independent set
 
-Odd independent set: independent `S` such that every `v ∉ S` meets `S`
-in an empty or finite odd-sized open neighbourhood.
+**Odd independent set.** A set $S$ of vertices of a simple graph $G$ is odd independent if
+$S$ is an independent set of $G$ and, for every vertex $v \notin S$, the set of neighbours of $v$
+that lie in $S$ is finite and is either empty or has an odd number of elements.
 
 ## Depends on
 

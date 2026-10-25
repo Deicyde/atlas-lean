@@ -8,7 +8,8 @@ lean: MetaMathlibExt.Block
 
 # Block
 
-A descending block `(d, m)` of an integer partition of `n`.
+**Block.** A block is a pair $(d, m)$ of natural numbers, read as a part size $d$ of an integer
+partition together with its multiplicity $m$. No condition is imposed on a single block.
 
 ## Depends on
 

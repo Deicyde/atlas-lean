@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Order.FinitePosets.minAntichainCoverSize
 ---
 
-# Min Antichain Cover Size
+# Minimum antichain cover size
 
-The smallest number of antichains covering `α`.
+**Minimum antichain cover size.** For a finite partially ordered set $\alpha$, the minimum
+antichain cover size of $\alpha$ is the smallest number of antichains in $\alpha$ whose union is
+all of $\alpha$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Antichain Cover Fin](is-antichain-cover-fin.md)
+- [Finite antichain covers](is-antichain-cover-fin.md)
 
 ## Sources
 

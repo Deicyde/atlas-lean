@@ -7,10 +7,11 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.PetersenMatchingWanted.petersen_bridgeless_cubic_has_perfect_matching_general
 ---
 
-# Petersen bridgeless cubic has perfect matching general
+# Petersen's theorem on cubic graphs
 
-Petersen's theorem: every finite bridgeless cubic simple graph has a perfect matching.
-`petersen_bridgeless_cubic_has_perfect_matching` is the source-shaped form.
+**Petersen's theorem on cubic graphs.** Every finite simple graph that is $3$-regular
+and has no bridge, that is, no edge whose removal disconnects its endpoints, has a perfect
+matching: a set of edges of the graph such that every vertex lies on exactly one of them.
 
 ## Depends on
 

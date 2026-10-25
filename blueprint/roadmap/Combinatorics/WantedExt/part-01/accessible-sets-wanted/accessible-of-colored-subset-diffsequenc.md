@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.accessible_of_colored_subset_diffsequences
 ---
 
-# Accessible of colored subset diffsequences
+# A coloring criterion for accessibility of a shifted set
 
-If every `(r-1)`-coloring of `D` contains arbitrarily long monochromatic
-diffsequences with gaps in `D+c`, then `D+c` is `r`-accessible.  Elements
-colored in the premise are positive members of `D`.
+**A coloring criterion for accessibility of a shifted set.** Let $r \ge 2$ and $c$ be natural
+numbers, let $D$ be a set of positive integers, and write $D + c = \{d + c : d \in D\}$. Suppose
+that for every coloring of $D$ with $r - 1$ colors and every $k \ge 1$ there are
+$x_0, \dots, x_{k-1} \in D$, all of the same color, that form a $(D + c)$-diffsequence, that is,
+$x_{i+1} - x_i \in D + c$ for every $i < k - 1$. Then $D + c$ is $r$-accessible.
 
 ## Depends on
 
-- [Is DDiff Sequence](is-ddiff-sequence.md)
-- [Is RAccessible](is-raccessible.md)
+- [$D$-diffsequences](is-ddiff-sequence.md)
+- [$r$-accessibility for colorings of the positive integers](is-raccessible.md)
 
 ## Sources
 

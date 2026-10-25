@@ -7,17 +7,18 @@ proof: formalized
 lean: SimpleGraph.IsDezaWith.a_lt_n
 ---
 
-# A lt n
+# Parameter bound $a < n$ for Deza graphs
 
-The chained bound `a < n`.
+**Parameter bound $a < n$ for Deza graphs.** If a finite simple graph $G$ is a Deza graph
+with parameters $(n, k, b, a)$, then $a < n$.
 
 ## Depends on
 
-- [Is Deza With](is-deza-with.md)
+- [Deza graph](is-deza-with.md)
 
 ## Proof depends on
 
-- [A le k](a-le-k.md)
+- [Parameter bound $a \le k$ for Deza graphs](a-le-k.md)
 
 ## Sources
 

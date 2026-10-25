@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.modularSchurNumber_two
 ---
 
-# Modular Schur Number two
+# Modular Schur numbers modulo $2$
 
-For positive `k, l`: `S_2(k, l) = 0` when `l ≡ 1 (mod 2)` and `S_2(k, l) = 1` when
-`l ≡ 0 (mod 2)` (quoted from [4]).
+**Modular Schur numbers modulo $2$.** For all positive integers $k$ and $l$, the modular
+Schur number $S_2(k, l)$ equals $0$ when $l$ is odd and equals $1$ when $l$ is even.
+
+The source quotes this result from its reference [4], Chappelon, Revuelta Marchena and Sanz
+Domínguez, *Modular Schur numbers* (2013).
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

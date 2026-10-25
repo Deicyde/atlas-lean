@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bagWeight_ge_of_isAdmissibleBag
 ---
 
-# Bag Weight ge of is Admissible Bag
+# Lower bound for the weight of an admissible bag
 
-`B₃(n) ≥ V(n)`: for `n ≥ 7` every admissible bag has weight at least
-`V(n) = n²/6 + 2n - 11/2`.
+**Lower bound for the weight of an admissible bag.** For every natural number $n \ge 7$
+and every admissible bag $F$ for $n$ people, the weight of $F$ is at least
+$\frac{n^2}{6} + 2n - \frac{11}{2}$.
 
 ## Depends on
 
-- [Is Admissible Bag](is-admissible-bag.md)
-- [Bag Weight](bag-weight.md)
+- [Admissible bags](is-admissible-bag.md)
+- [Weight of a bag](bag-weight.md)
 
 ## Sources
 

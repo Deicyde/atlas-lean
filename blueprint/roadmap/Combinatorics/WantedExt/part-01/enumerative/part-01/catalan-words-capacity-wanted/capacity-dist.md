@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.capacityDist
 ---
 
-# Capacity Dist
+# Capacity distribution
 
-The capacity distribution `∑_{w ∈ S} q^{cap w}` of a finite set of words.
+**Capacity distribution.** For a finite set $S$ of words of length $n$ with letters in the
+natural numbers, the capacity distribution of $S$ is the polynomial
+$\sum_{w \in S} q^{\operatorname{cap}(w)}$ in $\mathbb{Z}[q]$, where $\operatorname{cap}(w)$ is the
+capacity of $w$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Word Capacity](word-capacity.md)
+- [Capacity of a word](word-capacity.md)
 
 ## Sources
 

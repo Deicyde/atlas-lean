@@ -5,10 +5,11 @@ statement: formalized
 lean: SimpleGraph.indepDominationNumber
 ---
 
-# Indep Domination Number
+# Independent domination number
 
-The independent domination number: the least size of an independent
-dominating set.
+**Independent domination number.** For a simple graph $G$ on a finite vertex set, the
+independent domination number of $G$ is the least number of elements of an independent dominating
+set of $G$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Indep Dominating](is-indep-dominating.md)
+- [Independent dominating set](is-indep-dominating.md)
 
 ## Sources
 

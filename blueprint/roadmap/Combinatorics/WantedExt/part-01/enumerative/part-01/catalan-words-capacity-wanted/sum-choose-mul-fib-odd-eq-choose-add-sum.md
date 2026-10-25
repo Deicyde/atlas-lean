@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.sum_choose_mul_fib_odd_eq_choose_add_sum
 ---
 
-# Sum choose mul fib odd eq choose add sum
+# A recursion for binomial sums of odd-indexed Fibonacci numbers
 
-Mansour and Shattuck's Lemma 5, identity (21): for `n ≥ 1` and `2 ≤ i ≤ n + 1`,
-`∑_{m=0}^{n-i+1} C(n-m-1, i-2) F_{2m-1} = C(n-1, i-2) + ∑_{j=i}^{n} ∑_{m=0}^{n-j} C(n-m-2, j-2) F_{2m-1}`,
-with the convention `F_{-1} = 1`, written as `if m = 0 then 1 else Nat.fib (2 * m - 1)`.
-All natural subtractions are untruncated in the summation ranges.
+**A recursion for binomial sums of odd-indexed Fibonacci numbers.** Let $F_k$ be the Fibonacci
+numbers, with the convention $F_{-1} = 1$. For all integers $n \ge 1$ and $2 \le i \le n + 1$,
+
+$$\sum_{m=0}^{n-i+1} \binom{n-m-1}{i-2} F_{2m-1} =
+\binom{n-1}{i-2} + \sum_{j=i}^{n} \sum_{m=0}^{n-j} \binom{n-m-2}{j-2} F_{2m-1}$$
+
+(Mansour and Shattuck's Lemma 5, identity (21)). All differences in the binomial coefficients and
+in the summation bounds are nonnegative.
 
 ## Depends on
 

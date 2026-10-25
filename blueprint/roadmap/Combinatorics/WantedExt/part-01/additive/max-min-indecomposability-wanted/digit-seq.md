@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.digitSeq
 ---
 
-# Digit Seq
+# Coefficient sequence of a digit string
 
-The coefficient sequence of the digit string `a : Fin n → Fin b`: `aₖ` for `k < n`, zero
-beyond.
+**Coefficient sequence of a digit string.** Let $n$ and $b$ be natural numbers. The
+coefficient sequence of a digit string $a = (a_0, \dots, a_{n-1})$ with digits in
+$\{0, \dots, b - 1\}$ is the sequence $\mathbb{N} \to \mathbb{N}$ whose $k$-th term is $a_k$ for
+$k < n$ and $0$ for $k \ge n$.
 
 ## Depends on
 

@@ -7,20 +7,24 @@ proof: formalized
 lean: SimpleGraph.isEdgeGraceful_iff
 ---
 
-# Is Edge Graceful iff
+# Edge-graceful graphs via a vertex bijection
 
-Characterization exposing existence, edge-bijection, incident-sum and
-vertex-bijection clauses.
+**Edge-graceful graphs via a vertex bijection.** A simple graph $G$ on a finite vertex set $V$
+is edge-graceful if and only if there are a natural number $q$, a bijection $\ell$ from the edge
+set of $G$ to $\{0, \dots, q-1\}$ and a bijection $\lambda$ from $V$ to $\{0, \dots, |V| - 1\}$ such
+that for every vertex $v$, $\lambda(v)$ is the induced residue of $v$ with respect to $\ell$ and,
+if $V$ is nonempty, $\lambda(v)$ equals the incident-edge sum at $v$ with respect to $\ell$ modulo
+$|V|$.
 
 ## Depends on
 
-- [Is Edge Graceful](is-edge-graceful.md)
-- [Incident Sum](incident-sum.md)
-- [Induced Residue](induced-residue.md)
+- [Edge-graceful graph](is-edge-graceful.md)
+- [Incident-edge sum](incident-sum.md)
+- [Induced vertex residue](induced-residue.md)
 
 ## Proof depends on
 
-- [Induced Residue val](induced-residue-val.md)
+- [Value of the induced residue](induced-residue-val.md)
 
 ## Sources
 

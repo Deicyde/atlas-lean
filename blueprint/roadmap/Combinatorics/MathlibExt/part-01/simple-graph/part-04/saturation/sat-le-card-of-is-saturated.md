@@ -7,18 +7,21 @@ proof: formalized
 lean: SimpleGraph.sat_le_card_of_isSaturated
 ---
 
-# Sat le card of is Saturated
+# Saturated graphs bound the saturation number
 
-Upper bound: `sat(n, H)` is at most the edge count of any saturated graph.
+**Saturated graphs bound the saturation number.** Let $H$ be a simple graph, $n$ a natural
+number, and $\operatorname{sat}(n, H)$ the saturation number of $H$ on $n$ vertices. Every
+$H$-saturated simple graph on the vertex set $\{0, 1, \dots, n - 1\}$ has at least
+$\operatorname{sat}(n, H)$ edges.
 
 ## Depends on
 
-- [Is Saturated](is-saturated.md)
-- [Sat](sat.md)
+- [$H$-saturated graphs](is-saturated.md)
+- [Saturation number](sat.md)
 
 ## Proof depends on
 
-- [Sat Counts](sat-counts.md)
+- [Edge counts of saturated graphs](sat-counts.md)
 
 ## Sources
 

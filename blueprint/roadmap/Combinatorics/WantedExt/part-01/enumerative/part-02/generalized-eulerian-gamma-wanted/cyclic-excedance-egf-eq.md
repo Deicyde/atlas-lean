@@ -13,7 +13,7 @@ with constant term `1` is Mathlib's `PowerSeries.logOf`.
 
 ## Depends on
 
-- [Circular Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
+- [Circular Eulerian numbers](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
 
 ## Sources
 

@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.smoothPlateauAreaDist_recurrence
 ---
 
-# Smooth Plateau Area Dist recurrence
+# Recurrence for the area distribution of smooth words from $j$ to $j$
 
-Mansour and Shattuck's Lemma 6: for `m, j ≥ 2`,
-`t(m, j) = q^j t(m-1, j) + q^j ∑_{ℓ=1}^{m-2} t(ℓ, j-1) t(m-ℓ-1, j)`, with
-`t(m, 1) = t(1, m) = q^m` for `m ≥ 1`.
+**Recurrence for the area distribution of smooth words from $j$ to $j$.** Let $t(m, j; q)$ be
+the area distribution of the words of length $m$ over $\{1, \dots, j\}$ that begin and end with $j$
+and whose consecutive letters differ by at most $1$. For all $m \ge 2$ and $j \ge 2$,
+
+$$t(m, j; q) = q^j\, t(m-1, j; q) + q^j \sum_{\ell=1}^{m-2} t(\ell, j-1; q)\, t(m-\ell-1, j; q),$$
+
+and for every $k \ge 1$, $t(k, 1; q) = t(1, k; q) = q^k$ (Mansour and Shattuck's Lemma 6).
 
 ## Depends on
 
-- [Smooth Plateau Area Dist](smooth-plateau-area-dist.md)
+- [Area distribution of smooth words from $j$ to $j$](smooth-plateau-area-dist.md)
 
 ## Sources
 

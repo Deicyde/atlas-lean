@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.iteratePreimage_eq
 ---
 
-# Iterate Preimage eq
+# Iterated preimage as a preimage under a power
 
-Characterization of the integer-iterate preimage notation.
+**Iterated preimage as a preimage under a power.** For a homeomorphism $T$ of a topological
+space $X$, an integer $s$ and a subset $U \subseteq X$, the iterated preimage $T^{-s} U$ is the
+preimage $(T^s)^{-1}(U)$ of $U$ under the $s$-th power $T^s$ of $T$ in the group of
+homeomorphisms of $X$.
 
 ## Depends on
 
-- [Iterate Preimage](iterate-preimage.md)
+- [Iterated preimage](iterate-preimage.md)
 
 ## Sources
 

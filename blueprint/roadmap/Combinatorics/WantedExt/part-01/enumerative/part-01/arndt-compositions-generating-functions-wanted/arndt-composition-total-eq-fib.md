@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.arndtComposition_total_eq_fib
 ---
 
-# Arndt Composition total eq fib
+# Arndt compositions are counted by Fibonacci numbers
 
-The number `a(n) = ∑_m a(n, m)` of Arndt compositions has generating function
-`A(x, 1) = (1 - x²)/(1 - x - x²)`, and `a(n) = F_n` for all `n ≥ 1`.
+**Arndt compositions are counted by Fibonacci numbers.** Let $a(n, m)$ be the number of Arndt
+compositions of $n$ with $m$ parts, let $a(n) = \sum_{m=0}^{n} a(n, m)$ be the number of all
+Arndt compositions of $n$, and let $F_n$ be the $n$-th Fibonacci number ($F_0 = 0$, $F_1 = 1$).
+Then, in $\mathbb{Z}[[x]]$,
+
+$$\Big(\sum_{n \ge 0} a(n) x^n\Big)(1 - x - x^2) = 1 - x^2,$$
+
+and $a(n) = F_n$ for every $n \ge 1$.
 
 ## Depends on
 
-- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

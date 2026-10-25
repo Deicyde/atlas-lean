@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.evenOrSmallOddCompositionCount_five
 ---
 
-# Even Or Small Odd Composition Count five
+# Compositions of $5$ into even or small odd parts
 
-`c^1_e(5) = 10` and `c^3_e(5) = 15` (Table 6 of the paper lists these compositions).
+**Compositions of $5$ into even or small odd parts.** $c^1_e(5) = 10$ and $c^3_e(5) = 15$,
+where $c^{2k+1}_e(n)$ is the number of compositions of $n$ in which every part is even or at
+most $2k + 1$.
 
 ## Depends on
 
-- [Even Or Small Odd Composition Count](even-or-small-odd-composition-count.md)
+- [Compositions into even or small odd parts](even-or-small-odd-composition-count.md)
 
 ## Sources
 

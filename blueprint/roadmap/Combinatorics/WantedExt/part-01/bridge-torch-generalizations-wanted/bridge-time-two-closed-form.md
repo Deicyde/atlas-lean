@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_two_closed_form
 ---
 
-# Bridge Time two closed form
+# Closed form for capacity two
 
-The optimal crossing time for capacity `2`: for `n ≥ 2`,
-`T(n) = n²/4 + 3n - 5 + ((-1)ⁿ - 1)/8`.
+**Closed form for capacity two.** Let $T(n)$ be the optimal crossing time of $n$ people with
+crossing times $1, \dots, n$ on a bridge of capacity $2$ with one torch. For every $n \ge 2$,
+
+$$T(n) = \frac{n^2}{4} + 3n - 5 + \frac{(-1)^n - 1}{8}.$$
 
 ## Depends on
 
-- [Bridge Time](bridge-time.md)
+- [Optimal crossing time of the bridge and torch problem](bridge-time.md)
 
 ## Sources
 

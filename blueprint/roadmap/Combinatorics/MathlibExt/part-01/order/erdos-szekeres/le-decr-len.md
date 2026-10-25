@@ -7,20 +7,23 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.le_decrLen
 ---
 
-# Le decr Len
+# Bound by the longest decreasing subsequence ending at a position
 
-`decrLen` is an upper bound on lengths ending at `p`.
+**Bound by the longest decreasing subsequence ending at a position.** Let $f$ be a real
+sequence indexed by $\{0, \dots, N-1\}$ and let $p$ be a position. If $f$ has a strictly
+decreasing subsequence of length $k$ ending exactly at $p$, then $k$ is at most the length of the
+longest strictly decreasing subsequence of $f$ ending at $p$.
 
 ## Depends on
 
-- [Is Decr End](is-decr-end.md)
-- [Decr Len](decr-len.md)
+- [Decreasing subsequence ending at a position](is-decr-end.md)
+- [Length of the longest decreasing subsequence ending at a point](decr-len.md)
 
 ## Proof depends on
 
-- [Is Decr Subseq](is-decr-subseq.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
-- [Subseq Len le](subseq-len-le.md)
+- [Decreasing subsequence](is-decr-subseq.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
+- [Subsequences are no longer than the sequence](subseq-len-le.md)
 
 ## Sources
 

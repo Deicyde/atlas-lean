@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sumAddMulProdFamily
 ---
 
-# Sum Add Mul Prod Family
+# The sum-plus-product family $F_c$
 
-The family `F_c = {(b_1, …, b_l) ↦ ∑ b_i + c ∏ b_i}` over `ℤ/n`.
+**The sum-plus-product family $F_c$.** For $c \in \mathbb{Z}/n$, the family $F_c$ over
+$\mathbb{Z}/n$ sends a block $(b_1, \dots, b_l)$ of elements of $\mathbb{Z}/n$, of any length
+$l \ge 0$, to $b_1 + \dots + b_l + c\, b_1 b_2 \cdots b_l$, where an empty sum is $0$ and an
+empty product is $1$.
 
 ## Depends on
 

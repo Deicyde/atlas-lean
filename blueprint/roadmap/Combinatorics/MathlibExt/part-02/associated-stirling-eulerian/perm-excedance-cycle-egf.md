@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.permExcedanceCycleEGF
 ---
 
-# Perm Excedance Cycle EGF
+# Excedance and cycle generating function of a permutation family
 
-The exponential generating function of the excedance and cycle distribution over a
-family `P` of permutations, in the paper's convention
-`∑_{n ≥ 0} ∑_{σ ∈ P_n} x^{e(σ)} q^{c(σ)} u^n / n!`, with `e` the excedance count and `c`
-the number of cycles (fixed points included; the existing `cycleQuotientCount`), over a
-commutative `ℚ`-algebra `R` (so `x` and `q` can be indeterminates). With `q = 1` it is the paper's `P(x, u)`, with general `q` its
-`q`-analogue `P(q, x, u)`.
+**Excedance and cycle generating function of a permutation family.** Let $R$ be a
+commutative $\mathbb{Q}$-algebra, let $x, q \in R$, and for each $n$ let $P_n$ be a set of
+permutations of $\{0, 1, \dots, n-1\}$. The excedance and cycle exponential generating function
+of the family $(P_n)$ is the formal power series in $u$ over $R$
+
+$$\sum_{n \ge 0} \frac{1}{n!} \Big(\sum_{\sigma \in P_n} x^{e(\sigma)} q^{c(\sigma)}\Big) u^n,$$
+
+where $e(\sigma)$ is the number of excedances of $\sigma$ (points $i$ with $\sigma(i) > i$) and
+$c(\sigma)$ its number of cycles, fixed points counted as cycles of length one.
+
+With $q = 1$ this is the paper's $P(x, u)$, and for general $q$ its $q$-analogue $P(q, x, u)$.
 
 ## Depends on
 
@@ -21,7 +26,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Number of cycles of a permutation](../../part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Excedance Count](excedance-count.md)
+- [Number of excedances](excedance-count.md)
 
 ## Sources
 

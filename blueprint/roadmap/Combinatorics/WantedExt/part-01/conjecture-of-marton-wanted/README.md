@@ -5,5 +5,5 @@ navigation: module
 
 # Conjecture Of Marton
 
-- [F](f.md)
-- [Theorem 1 2](theorem-1-2.md)
+- [The vector space $\mathbb{F}_2^n$](f.md)
+- [Polynomial Freiman–Ruzsa theorem over $\mathbb{F}_2$](theorem-1-2.md)

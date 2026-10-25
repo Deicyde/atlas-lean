@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.exp_circularPermEGF_eq_permEGF
 ---
 
-# Exp circular Perm EGF eq perm EGF
+# Logarithm of the Eulerian generating function
 
-Theorem 6: `C(x,u) = ln A(x,u)`, i.e. `exp C(x,u) = A(x,u)`, where `C` is the
-excedance generating function over circular permutations and `A` over all
-permutations.
+**Logarithm of the Eulerian generating function.** Let $R$ be a commutative $\mathbb{Q}$-algebra
+and $x \in R$, and work with formal power series in $u$ over $R$. For a permutation $\sigma$ write
+$e(\sigma)$ for its number of excedances (points $i$ with $\sigma(i) > i$), and let $S_n$ be the
+set of permutations of $\{0, \dots, n-1\}$. Let
+$A(x,u) = \sum_{n \ge 0} \sum_{\sigma \in S_n} x^{e(\sigma)} u^n/n!$ be the exponential generating
+function of excedances over all permutations, and let $C(x,u)$ be the same sum restricted to
+circular permutations, that is, to the permutations of $n \ge 1$ points that consist of a single
+cycle. Then $\exp C(x,u) = A(x,u)$, that is, $C(x,u) = \ln A(x,u)$.
 
 ## Depends on
 
-- [Perm Excedance Cycle EGF](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
+- [Excedance and cycle generating function of a permutation family](../../../../../MathlibExt/part-02/associated-stirling-eulerian/perm-excedance-cycle-egf.md)
 
 ## Sources
 

@@ -5,9 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.noBifenceTilingSum
 ---
 
-# No Bifence Tiling Sum
+# Weighted count of bifence-free fence tilings
 
-`C_n`, the weighted number of tilings with no bifence (no fence positions `k`, `k + 1`).
+**Weighted count of bifence-free fence tilings.** Let $a$, $b$ be elements of a commutative
+semiring and $n \ge 0$. Two fences at positions $k$ and $k + 1$ form a bifence. The weighted number
+$C_n$ of tilings with no bifence is the sum of the weights, with half-square weights $a$ and $b$,
+of the fence tilings $F$ of the $n$-board with no bifence, that is, with $k + 1 \notin F$ for every
+$k \in F$.
 
 ## Depends on
 
@@ -15,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fence Tiling Weight](fence-tiling-weight.md)
-- [Fence Tilings](fence-tilings.md)
+- [Weight of a fence tiling](fence-tiling-weight.md)
+- [Fence tilings of a board](fence-tilings.md)
 
 ## Sources
 

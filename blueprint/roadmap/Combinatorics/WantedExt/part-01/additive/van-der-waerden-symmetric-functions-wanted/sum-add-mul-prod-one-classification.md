@@ -5,18 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.sumAddMulProd_one_classification
 ---
 
-# Sum Add Mul Prod one classification
+# Classification of vanishing for the sum-plus-product family $F_1$
 
-Theorem 3 (classification for `c = 1`), for `n > 1`: (a) if `n ∉ {2, 3, 4, 6, 8}`, then
-`F_1` is not `m`-vanishing for any `m > 0`; (b) if `n ∈ {2, 3, 4, 8}`, then `F_1` is
-vanishing; (c) if `n = 6`, then `F_1` is `1`-vanishing but not `m`-vanishing for any
-`m > 1`.
+**Classification of vanishing for the sum-plus-product family $F_1$.** Let $n > 1$ and let
+$F_1$ be the family over $\mathbb{Z}/n$ given by
+$F_1(b_1, \dots, b_l) = b_1 + \dots + b_l + b_1 \cdots b_l$. If $n \notin \{2, 3, 4, 6, 8\}$,
+then $F_1$ is not $m$-vanishing for any $m > 0$. If $n \in \{2, 3, 4, 8\}$, then $F_1$ is
+vanishing. If $n = 6$, then $F_1$ is $1$-vanishing but not $m$-vanishing for any $m > 1$.
 
 ## Depends on
 
-- [Is MVanishing Family](is-mvanishing-family.md)
-- [Is Vanishing Family](is-vanishing-family.md)
-- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
+- [$m$-vanishing family](is-mvanishing-family.md)
+- [Vanishing family](is-vanishing-family.md)
+- [The sum-plus-product family $F_c$](sum-add-mul-prod-family.md)
 
 ## Sources
 

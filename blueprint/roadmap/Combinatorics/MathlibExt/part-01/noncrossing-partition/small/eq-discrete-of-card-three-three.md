@@ -6,9 +6,11 @@ proof: formalized
 lean: NoncrossingPartition.eq_discrete_of_card_three_three
 ---
 
-# Eq discrete of card three three
+# A noncrossing partition of three points with three blocks is discrete
 
-If a noncrossing partition of `Fin 3` has three blocks it is discrete.
+**A noncrossing partition of three points with three blocks is discrete.** If a noncrossing
+partition $P$ of $\{0, 1, 2\}$ has exactly three blocks, then $P$ is the discrete noncrossing
+partition of $\{0, 1, 2\}$.
 
 ## Depends on
 

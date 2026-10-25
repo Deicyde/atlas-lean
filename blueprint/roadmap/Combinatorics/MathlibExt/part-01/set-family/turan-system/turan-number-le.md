@@ -7,18 +7,20 @@ proof: formalized
 lean: TuranSystem.turanNumber_le
 ---
 
-# Turan Number le
+# Turán systems are at least as large as the Turán number
 
-Upper bound: the Turan number is at most the size of any system.
+**Turán systems are at least as large as the Turán number.** Let $n$, $s$, $r$ be natural
+numbers and let $T(n, s, r)$ denote the Turán number. If $H$ is a Turán system with parameters
+$n$, $s$, $r$, then $T(n, s, r) \le |H|$.
 
 ## Depends on
 
-- [Is Turan System](is-turan-system.md)
-- [Turan Number](turan-number.md)
+- [Turán system](is-turan-system.md)
+- [Turán number](turan-number.md)
 
 ## Proof depends on
 
-- [Realized Counts](realized-counts.md)
+- [Realized sizes of Turán systems](realized-counts.md)
 
 ## Sources
 

@@ -6,9 +6,13 @@ statement: formalized
 lean: SimpleGraph.IsCriticalEdge
 ---
 
-# Is Critical Edge
+# Critical edge
 
-An edge is critical if deleting it reduces the chromatic number.
+**Critical edge.** For a graph $G$ and an unordered pair $e$ of vertices, $e$ is a critical
+edge of $G$ if removing $e$ from the edge set of $G$ strictly lowers the chromatic number of $G$,
+taken in $\mathbb{N} \cup \{\infty\}$.
+
+Only edges of $G$ can be critical.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Critical Edges](is-critical-edges.md)
+- [Critical edge sets](is-critical-edges.md)
 
 ## Sources
 

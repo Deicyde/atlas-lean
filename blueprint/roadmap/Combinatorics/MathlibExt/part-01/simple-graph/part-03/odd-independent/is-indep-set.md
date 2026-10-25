@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.IsOddIndependent.isIndepSet
 ---
 
-# Is Indep Set
+# Odd independent sets are independent
 
-Independence projection of an odd independent set.
+**Odd independent sets are independent.** If $S$ is an odd independent set of a simple graph
+$G$, then $S$ is an independent set of $G$: no two distinct vertices of $S$ are adjacent.
 
 ## Depends on
 
-- [Is Odd Independent](is-odd-independent.md)
+- [Odd independent set](is-odd-independent.md)
 
 ## Sources
 

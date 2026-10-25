@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeWeight_of_seven_le
 ---
 
-# Bridge Weight of seven le
+# Weights of the capacity-3 lower bound from $7$ on
 
-For `i ≥ 7`, `yᵢ = (4i - 8)/3`.
+**Weights of the capacity-3 lower bound from $7$ on.** For every natural number $i \ge 7$,
+the weight $y_i$ of the capacity-3 lower bound equals $(4i - 8)/3$.
 
 ## Depends on
 
-- [Bridge Weight](bridge-weight.md)
+- [Weights of the capacity-3 lower bound](bridge-weight.md)
 
 ## Sources
 

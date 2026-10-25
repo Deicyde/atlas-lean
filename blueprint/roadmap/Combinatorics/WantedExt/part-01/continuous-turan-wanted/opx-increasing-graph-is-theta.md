@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.opx_increasing_graph_isTheta
 ---
 
-# Opx increasing graph is Theta
+# Continuous Turán number of the graph of an increasing function
 
-Theorem 4.3: if `f` is increasing on `[0, a]`, `a > 0`, with difference quotients
-`(f t - f s) / (t - s) ≤ b` for `s < t` in `[0, a]`, then its graph `P = {(t, f t) : t ∈ [0, a]}`
-has `opx(n, P) = Θ(n)` as `n → ∞`. The hypothesis `a > 0` is explicit (for `a = 0`, `P` is a
-point and `opx(n, P) = 0`).
+**Continuous Turán number of the graph of an increasing function.** Let $a > 0$ and $b$ be real
+numbers and let $f : \mathbb{R} \to \mathbb{R}$ be strictly increasing on $[0, a]$ with
+$(f(t) - f(s)) / (t - s) \le b$ for all $s < t$ in $[0, a]$. Then the graph
+$P = \{(t, f(t)) : t \in [0, a]\}$ satisfies $\operatorname{opx}(n, P) = \Theta(n)$ as the real
+number $n$ tends to infinity.
+
+The hypothesis $a > 0$ is needed: for $a = 0$ the set $P$ is a single point and
+$\operatorname{opx}(n, P) = 0$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

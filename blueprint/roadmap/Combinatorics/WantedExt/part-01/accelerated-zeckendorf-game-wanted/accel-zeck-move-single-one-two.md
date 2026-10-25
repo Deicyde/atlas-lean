@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.accelZeckMove_single_one_two
 ---
 
-# Accel Zeck Move single one two
+# Two ones combine into a two in the Accelerated Zeckendorf Game
 
-From two copies of `F_1` the move `1 · C_1` reaches one copy of `F_2`.
+**Two ones combine into a two in the Accelerated Zeckendorf Game.** Index the Fibonacci
+numbers as $F_1 = 1$, $F_2 = 2$, $F_{i+1} = F_i + F_{i-1}$. Passing from the state consisting of
+two copies of $F_1$ to the state consisting of one copy of $F_2$ is a move of the Accelerated
+Zeckendorf Game.
 
 ## Depends on
 
-- [Accel Zeck Move](accel-zeck-move.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
 
 ## Sources
 

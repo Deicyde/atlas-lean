@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.opxD_continuousOn
 ---
 
-# Opx D continuous On
+# Continuity of the d-dimensional continuous Turán number
 
-Proposition 5.4: `opx(n, P, d)` is continuous in `n` for `n > 0`.
+**Continuity of the d-dimensional continuous Turán number.** For every natural number $d$
+and every $P \subseteq \mathbb{R}^d$, the $d$-dimensional continuous Turán number
+$\mathrm{opx}(n, P, d)$ is a continuous function of $n$ on $(0, \infty)$.
 
 ## Depends on
 

@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.largestSumFreeCard_le
 ---
 
-# Largest Sum Free Card le
+# Trivial bound on sum-free subsets
 
-A largest sum-free subset of `S` has at most `|S|` elements.
+**Trivial bound on sum-free subsets.** Let $G$ be a set with an addition. For every finite
+subset $S \subseteq G$, the largest size of a sum-free subset of $S$ is at most $|S|$.
 
 ## Depends on
 
-- [Largest Sum Free Card](largest-sum-free-card.md)
+- [Size of a largest sum-free subset](largest-sum-free-card.md)
 
 ## Proof depends on
 
-- [Is Sum Free Set](is-sum-free-set.md)
+- [Sum-free set](is-sum-free-set.md)
 
 ## Sources
 

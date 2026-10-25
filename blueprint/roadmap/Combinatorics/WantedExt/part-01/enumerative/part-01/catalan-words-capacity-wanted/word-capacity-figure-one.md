@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.wordCapacity_figure_one
 ---
 
-# Word Capacity figure one
+# Capacity of the word $122341123212323$
 
-The paper's Figure 1 example: `cap(122341123212323) = 10`.
+**Capacity of the word $122341123212323$.** The word
+$w = 1\,2\,2\,3\,4\,1\,1\,2\,3\,2\,1\,2\,3\,2\,3$ of length $15$ has capacity $10$ (Mansour and
+Shattuck's Figure 1).
 
 ## Depends on
 
-- [Word Capacity](word-capacity.md)
+- [Capacity of a word](word-capacity.md)
 
 ## Sources
 

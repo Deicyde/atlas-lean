@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.opx_mono_left
 ---
 
-# Opx mono left
+# Monotonicity of the continuous Turán number in the side length
 
-Lemma 2.4: `opx(m, P) ≤ opx(n, P)` for `m ≤ n` (the paper's `0 < m` is not needed: `opx`
-vanishes for `m ≤ 0`).
+**Monotonicity of the continuous Turán number in the side length.** For every set
+$P \subseteq \mathbb{R}^2$ and all real numbers $m \le n$, the continuous Turán numbers satisfy
+$\operatorname{opx}(m, P) \le \operatorname{opx}(n, P)$.
+
+The paper assumes $0 < m$. This is not needed, since $\operatorname{opx}(m, P) = 0$ for $m \le 0$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

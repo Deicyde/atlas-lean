@@ -5,13 +5,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC7Pi1
 ---
 
-# Bpz C7 Pi1
+# Buys–Polak–Zuiddam one-block profile for the 7-cycle
 
-BPZ's one-block five-dimensional seven-cycle profile.
+**Buys–Polak–Zuiddam one-block profile for the 7-cycle.** This is the Buys–Polak–Zuiddam
+(BPZ) profile whose code, pairs, auxiliary and neutral coordinates are $367$, $8$, $367$ and $322$.
+
+Only these four integers are recorded, not BPZ's five-dimensional construction behind them.
 
 ## Depends on
 
-- [BPZProfile](bpzprofile.md)
+- [BPZ profiles](bpzprofile.md)
 
 ## Sources
 

@@ -5,14 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.five_le_card_of_isMPTQSet_of_neg
 ---
 
-# Five le card of is MPTQSet of neg
+# Chu's bound for MPTQ sets with a negative element
 
-Theorem 2 (quoting Chu), part 2: an MPTQ set of reals containing a negative number has at
-least 5 elements.
+**Chu's bound for MPTQ sets with a negative element.** Every MPTQ set of real numbers that
+contains a negative number has at least $5$ elements.
 
 ## Depends on
 
-- [Is MPTQSet](is-mptqset.md)
+- [MPTQ set](is-mptqset.md)
 
 ## Sources
 

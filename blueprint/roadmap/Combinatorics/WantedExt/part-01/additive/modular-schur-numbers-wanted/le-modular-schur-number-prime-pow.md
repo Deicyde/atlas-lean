@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.le_modularSchurNumber_prime_pow
 ---
 
-# Le modular Schur Number prime pow
+# Lower bound for modular Schur numbers modulo a prime power
 
-For a prime `p`, positive `i, l` with `l ≢ 1 (mod p)`, and `1 ≤ k ≤ p - 1`:
-`S_{p^i}(k, l) ≥ k`.
+**Lower bound for modular Schur numbers modulo a prime power.** Let $p$ be a prime, let $i$
+and $l$ be positive integers with $l \not\equiv 1 \pmod{p}$, and let $1 \le k \le p - 1$. Then
+the generalized Schur number $S_{p^i}(k, l)$, the largest $n$ such that $\{1, \dots, n\}$ admits
+a partition into $k$ classes that are $l$-sum-free modulo $p^i$, is at least $k$.
 
 ## Depends on
 
-- [Modular Schur Number](modular-schur-number.md)
+- [Modular Schur number](modular-schur-number.md)
 
 ## Sources
 

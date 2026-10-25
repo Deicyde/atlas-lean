@@ -5,5 +5,5 @@ navigation: module
 
 # Petersen Matching
 
-- [Petersen bridgeless cubic has perfect matching general](petersen-bridgeless-cubic-has-perfect-ma.md)
-- [Petersen bridgeless cubic has perfect matching](petersen-bridgeless-cubic-has-perfect-ma-2.md)
+- [Petersen's theorem on cubic graphs](petersen-bridgeless-cubic-has-perfect-ma.md)
+- [Petersen's perfect matching theorem](petersen-bridgeless-cubic-has-perfect-ma-2.md)

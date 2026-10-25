@@ -7,17 +7,18 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.MatrixTreeWanted.cayley_formula
 ---
 
-# Cayley
+# Cayley's formula
 
-The complete graph on `n` vertices has `n^(n-2)` spanning trees.
+**Cayley's formula.** For every natural number $n \ge 2$, the complete graph on $n$ vertices has
+exactly $n^{n-2}$ spanning trees.
 
 ## Depends on
 
-- [Num Spanning Trees](../part-03/matrix-tree/num-spanning-trees.md)
+- [Number of spanning trees](../part-03/matrix-tree/num-spanning-trees.md)
 
 ## Proof depends on
 
-- [Is Spanning Tree](../part-03/matrix-tree/is-spanning-tree.md)
+- [Spanning tree](../part-03/matrix-tree/is-spanning-tree.md)
 
 ## Sources
 

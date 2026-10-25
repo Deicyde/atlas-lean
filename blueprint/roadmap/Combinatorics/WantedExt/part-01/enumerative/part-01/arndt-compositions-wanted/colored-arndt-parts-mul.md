@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.coloredArndt_parts_mul
 ---
 
-# Colored Arndt parts mul
+# Generating function of colored Arndt compositions with $k$ parts
 
-`C_k(x) = ∑_n c(n, k) xⁿ = x^{k+⌊k/2⌋}(x² + x + 2)^{⌊k/2⌋} / ((1 - x)^{2k}(1 + x)^{3⌊k/2⌋})`,
-stated multiplicatively.
+**Generating function of colored Arndt compositions with $k$ parts.** For every $k \ge 0$,
+let $C_k(x) = \sum_{n \ge 0} c(n, k)\, x^n$ in $\mathbb{Z}[[x]]$, where $c(n, k)$ is the number of
+colored Arndt compositions of $n$ with $k$ parts. Then
+$C_k(x)\, (1 - x)^{2k} (1 + x)^{3\lfloor k/2 \rfloor} =
+x^{k + \lfloor k/2 \rfloor} (x^2 + x + 2)^{\lfloor k/2 \rfloor}$.
+
+Equivalently, since $(1 - x)^{2k} (1 + x)^{3\lfloor k/2 \rfloor}$ has constant term $1$,
+$C_k(x) = \frac{x^{k + \lfloor k/2 \rfloor} (x^2 + x + 2)^{\lfloor k/2 \rfloor}}
+{(1 - x)^{2k} (1 + x)^{3\lfloor k/2 \rfloor}}$.
 
 ## Depends on
 
-- [Colored Arndt Count](colored-arndt-count.md)
+- [Colored Arndt compositions](colored-arndt-count.md)
 
 ## Sources
 

@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.extend_last
 ---
 
-# Extend last
+# The last entry of an appended map
 
-The last element of the appended map is `p`.
+**The last entry of an appended map.** For every map
+$\varphi : \{0, \dots, k-1\} \to \{0, \dots, N-1\}$ and every $p \in \{0, \dots, N-1\}$, the map
+obtained by appending $p$ to $\varphi$ takes the value $p$ at its last index $k$.
 
 ## Depends on
 
-- [Extend Map](extend-map.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Appending an entry to a map of indices](extend-map.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coconutTree_adj_inl_inr
 ---
 
-# Coconut Tree adj inl inr
+# Adjacency of leaves and path vertices in a coconut tree
 
-A leaf of `CT(p, s)` is adjacent to the path vertex `v_{i+1}` exactly when
-`i + 1 = p`.
+**Adjacency of leaves and path vertices in a coconut tree.** Let the coconut tree
+$CT(p, s)$ have path vertices $v_1, \dots, v_p$, with central vertex $v_p$. A leaf of $CT(p, s)$
+is adjacent to a path vertex $v_k$ if and only if $k = p$.
 
 ## Depends on
 
-- [Coconut Tree](coconut-tree.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.knightMoves
 ---
 
-# Knight Moves
+# Knight moves
 
-`knightMoves a b` is the finite set of the eight signed coordinate swaps
-`(±b, ±a)` and `(±a, ±b)` defining the paper's `(a,b)`-knight.  The parameters
-are integers so the literal set records the paper's moves without coercions.
+**Knight moves.** For integers $a$ and $b$, the $(a,b)$-knight's move set is
+
+$$N_{a,b} = \{(\pm a, \pm b), (\pm b, \pm a)\} \subset \mathbb{Z}^2,$$
+
+the finite set of the points $(a, b)$, $(-a, b)$, $(a, -b)$, $(-a, -b)$, $(b, a)$, $(-b, a)$,
+$(b, -a)$ and $(-b, -a)$.
 
 ## Depends on
 

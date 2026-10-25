@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.card_rCyclePerm
 ---
 
-# Card r Cycle Perm
+# Number of permutations with all cycles of length $r$
 
-Corollary 25: for `r ≥ 2`, the number of permutations of `n` objects with all cycle
-lengths equal to `r` is `n!/(r^{n/r} (n/r)!)` if `r ∣ n` and `0` otherwise (exact
-natural-number division).
+**Number of permutations with all cycles of length $r$.** Let $r \ge 2$ and $n \ge 0$. The
+number of permutations of $n$ objects all of whose cycles, fixed points counted as cycles of
+length one, have length exactly $r$ equals $n!/(r^{n/r}\,(n/r)!)$ if $r$ divides $n$, and $0$
+otherwise.
+
+When $r$ divides $n$ the quotient is an integer, so the natural-number division is exact.
 
 ## Depends on
 
-- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
+- [Permutations with all cycles of length $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
 
 ## Sources
 

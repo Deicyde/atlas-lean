@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.chr_kernel_lam_mem
 ---
 
-# Chr kernel lam mem
+# The $q$-kernel is closed under decimation
 
-The `q`-kernel is stable under `n ↦ b (q * n + j)` for `j < q`.
+**The $q$-kernel is closed under decimation.** Let $q$ be a natural number and let $a$ be a
+sequence indexed by $\mathbb{N}$. If $b$ belongs to the $q$-kernel of $a$ and $j < q$, then the
+sequence $n \mapsto b(qn + j)$ also belongs to the $q$-kernel of $a$.
 
 ## Depends on
 
-- [K Kernel](k-kernel.md)
+- [The $k$-kernel of a sequence](k-kernel.md)
 
 ## Sources
 

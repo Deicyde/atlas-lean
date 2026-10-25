@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.opx_grid_three_columns_isTheta
 ---
 
-# Opx grid three columns is Theta
+# Continuous Turán number of a grid with three columns
 
-Corollary 3.7, second part: a grid `P = X × Y` with `3` columns and `k = |Y| ≥ 3` rows has
-`opx(n, P) = Θ(n^{5/3})`. Stated along natural `n`.
+**Continuous Turán number of a grid with three columns.** Let $X$ and $Y$ be finite sets of
+real numbers with $|X| = 3$ and $|Y| \ge 3$, and let $P = X \times Y$ be the grid with $3$ columns
+and $|Y|$ rows. Then $\operatorname{opx}(n, P) = \Theta(n^{5/3})$ as the natural number $n$ tends
+to infinity.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

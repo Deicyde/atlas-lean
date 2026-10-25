@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isMPTQSet_of_zero_mem
 ---
 
-# Not is MPTQSet of zero mem
+# Sets containing zero are not MPTQ sets
 
-A set containing `0` is not an MPTQ set.
+**Sets containing zero are not MPTQ sets.** If $A$ is a finite set of real numbers with
+$0 \in A$, then $A$ is not an MPTQ set.
 
 ## Depends on
 
-- [Is MPTQSet](is-mptqset.md)
+- [MPTQ set](is-mptqset.md)
 
 ## Sources
 

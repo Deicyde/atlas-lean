@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Order.FinitePosets.maxChainSize
 ---
 
-# Max Chain Size
+# Maximum chain size
 
-The largest cardinality of a chain in `α`.
+**Maximum chain size.** For a finite partially ordered set $\alpha$, the maximum chain size of
+$\alpha$ is the largest cardinality of a chain in $\alpha$, that is, of a set of pairwise
+comparable elements.
 
 ## Depends on
 

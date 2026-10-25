@@ -6,10 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.sameCycle_all_iff_isCycle_support_eq_univ
 ---
 
-# Same Cycle all iff is Cycle support eq univ
+# Circular permutations are the full cycles
 
-For `n ≥ 2`, a permutation of `Fin n` has a single cycle through all points exactly
-when it is an `n`-cycle in Mathlib's sense, `σ.IsCycle ∧ σ.support = Finset.univ`.
+**Circular permutations are the full cycles.** Let $n \ge 2$ and let $\sigma$ be a
+permutation of $\{0, \dots, n-1\}$. Any two points $i$ and $j$ lie in the same cycle of
+$\sigma$ (that is, $j = \sigma^k(i)$ for some integer $k$) if and only if $\sigma$ is a cycle,
+meaning that it moves some point and any two points it moves lie in the same cycle, and
+$\sigma$ moves every point.
 
 ## Depends on
 

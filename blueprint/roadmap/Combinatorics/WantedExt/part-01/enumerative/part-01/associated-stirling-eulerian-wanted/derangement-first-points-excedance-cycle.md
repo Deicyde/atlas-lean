@@ -5,20 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.derangement_firstPoints_excedance_cycle_sum_neg
 ---
 
-# Derangement first Points excedance cycle sum neg
+# Derangements with the first $s$ points in distinct cycles, cycle weight $-s$
 
-Corollary 52: summing over derangements of `n + s` objects whose first `s` points lie
-in distinct cycles,
-`∑ x^{e(σ)} (-s)^{c(σ)} = (-1)^s (s x/(x-1))^s ∑_{i_1+⋯+i_s=n, i_j ≥ 1}
-(i_1,…,i_s)! ∏_j (x^{i_j} - 1)`, stated in `ℤ[X]` with the denominator `(x-1)^s` cleared
-(equivalent, since `ℤ[X]` is a domain).
+**Derangements with the first $s$ points in distinct cycles, cycle weight $-s$.** Let
+$n, s \ge 0$. For a permutation $\sigma$ let $e(\sigma)$ be its number of excedances (indices
+$i$ with $\sigma(i) > i$) and $c(\sigma)$ its number of cycles, fixed points included. Summing
+over the derangements $\sigma$ of $n + s$ objects (permutations without fixed points) in which
+the first $s$ points lie in pairwise distinct cycles, the identity
+$(x - 1)^s \sum_{\sigma} x^{e(\sigma)} (-s)^{c(\sigma)} = (-1)^s (s x)^s
+\sum_{i} \binom{n}{i_1, \dots, i_s} \prod_{j=1}^{s} (x^{i_j} - 1)$
+holds in $\mathbb{Z}[x]$, where $i = (i_1, \dots, i_s)$ runs over the $s$-tuples of positive
+integers with $i_1 + \dots + i_s = n$ and $\binom{n}{i_1, \dots, i_s}$ is the multinomial
+coefficient. This is the paper's formula
+$\sum_{\sigma} x^{e(\sigma)} (-s)^{c(\sigma)} = (-1)^s (s x/(x-1))^s \sum_{i}
+\binom{n}{i_1, \dots, i_s} \prod_{j} (x^{i_j} - 1)$ with the denominator cleared.
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Is RAssociated Cycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rassociated-cycle-perm.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
+- [Permutations with all cycles longer than $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rassociated-cycle-perm.md)
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 
 ## Sources
 

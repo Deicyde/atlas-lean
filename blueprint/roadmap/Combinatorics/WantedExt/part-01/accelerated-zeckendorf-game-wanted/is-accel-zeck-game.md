@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsAccelZeckGame
 ---
 
-# Is Accel Zeck Game
+# Complete Accelerated Zeckendorf Games
 
-A complete Accelerated Zeckendorf Game on `n` with `L` moves: the states `g 0, …, g L`
-start at `n` copies of `F_1`, consecutive states are related by a move, and no move is
-possible from `g L`.
+**Complete Accelerated Zeckendorf Games.** A sequence of states $g_0, g_1, \dots$ is a
+complete Accelerated Zeckendorf Game on $n$ with $L$ moves if $g_0$ consists of $n$ copies of
+$F_1$, for every $j < L$ some move takes $g_j$ to $g_{j+1}$, and no move is possible from
+$g_L$. The states after $g_L$ play no role.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Accel Zeck Move](accel-zeck-move.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
 
 ## Sources
 

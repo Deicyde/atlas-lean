@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.IsSmoothCoconut.eq_euclideanChainLength_sub_one
 ---
 
-# Eq euclidean Chain Length sub one
+# Path length of a smooth arithmetical structure on a coconut tree
 
-Corollary 6: the smooth arithmetical structure of Proposition 7 lives on
-`CT(p, s)` with `p = F(∑_j a_j, c) - 1`; stated for every smooth arithmetical
-structure on `CT(p, s)` (each is the one constructed for its own labels
-`a_j = r_{ℓ_j}`, `c = r_p`).
+**Path length of a smooth arithmetical structure on a coconut tree.** Let $F$ be the
+Euclidean chain function, let $p \ge 1$, and let $(d, r)$ be a smooth arithmetical structure on
+the coconut tree $\mathrm{CT}(p, s)$, with path vertices $v_1, \dots, v_p$ and leaves
+$v_{\ell_1}, \dots, v_{\ell_s}$. Then $p = F(r(v_{\ell_1}) + \dots + r(v_{\ell_s}), r(v_p)) - 1$.
+
+The source states this for the smooth arithmetical structure that Proposition 7 constructs from
+labels $a_1, \dots, a_s$ and $c$; every smooth arithmetical structure is the one constructed from
+its own labels $a_j = r(v_{\ell_j})$ and $c = r(v_p)$.
 
 ## Depends on
 
-- [Is Smooth Coconut](is-smooth-coconut.md)
-- [Euclidean Chain Length](euclidean-chain-length.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
+- [Euclidean chain function](euclidean-chain-length.md)
 
 ## Sources
 

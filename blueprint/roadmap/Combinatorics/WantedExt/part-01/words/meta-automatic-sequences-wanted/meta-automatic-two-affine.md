@@ -15,7 +15,7 @@ states, stated as `IsKAutomaticSequence 4` together with an MSB-first DFAO on
 
 ## Depends on
 
-- [Is KAutomatic Sequence](../../../../MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
+- [Automatic sequences via finite automata](../../../../MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
 - [Meta Automatic Two](meta-automatic-two.md)
 
 ## Sources

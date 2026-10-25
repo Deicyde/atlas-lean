@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.arndtCompositionCount_isEquivalent
 ---
 
-# Arndt Composition Count is Equivalent
+# Asymptotics of Arndt compositions with a fixed number of parts
 
-For a fixed positive integer `m`, `a(n, m) ∼ n^{m-1} / (2^{⌊m/2⌋} (m-1)!)` as `n → ∞`.
+**Asymptotics of Arndt compositions with a fixed number of parts.** Let $a(n, m)$ be the
+number of Arndt compositions of $n$ with $m$ parts. For every fixed integer $m \ge 1$,
+
+$$a(n, m) \sim \frac{n^{m-1}}{2^{\lfloor m/2 \rfloor} (m-1)!} \quad (n \to \infty).$$
 
 ## Depends on
 
-- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

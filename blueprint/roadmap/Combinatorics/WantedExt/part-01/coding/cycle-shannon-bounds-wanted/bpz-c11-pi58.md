@@ -5,18 +5,20 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.bpzC11Pi58
 ---
 
-# Bpz C11 Pi58
+# Fifty-eight-block BPZ profile for the 11-cycle
 
-BPZ's final fifty-eight-block eleven-cycle profile.
+**Fifty-eight-block BPZ profile for the 11-cycle.** The final fifty-eight-block eleven-cycle
+profile of Buys, Polak and Zuiddam is the profile product $\pi_{29} \star \pi_{29}$, where
+$\pi_{29}$ is their twenty-nine-block eleven-cycle profile.
 
 ## Depends on
 
-- [BPZProfile](bpzprofile.md)
+- [BPZ profiles](bpzprofile.md)
 
 ## Proof depends on
 
-- [Star](star.md)
-- [Bpz C11 Pi29](bpz-c11-pi29.md)
+- [Product of BPZ profiles](star.md)
+- [Twenty-nine-block BPZ profile for the 11-cycle](bpz-c11-pi29.md)
 
 ## Sources
 

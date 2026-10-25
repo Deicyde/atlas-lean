@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.weightedConsecutiveConstant_squareSet_square_divisible_fiveFourth
 ---
 
-# Weighted Consecutive Constant square Set square divisible five Fourth
+# Square-weighted consecutive constant of squares divisible by 625 is at most seven
 
-Corollary 38: if square `n ≥ 2` is divisible by `5⁴`, then
-`C_{S(n)} ≤ 7`. The lower bound on `n` records the paper's ambient convention.
+**Square-weighted consecutive constant of squares divisible by 625 is at most seven.** Let
+$n \ge 2$ be a perfect square with $5^4 \mid n$. Write $S(n)$ for the set of nonzero squares in
+$\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$ and $C_{S(n)}$ for the $S(n)$-weighted consecutive constant
+of $\mathbb{Z}_n$. Then $C_{S(n)} \le 7$.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Weighted consecutive zero-sum constant](weighted-consecutive-constant.md)
 
 ## Sources
 

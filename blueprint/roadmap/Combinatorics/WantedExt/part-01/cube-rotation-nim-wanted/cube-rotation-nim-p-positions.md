@@ -5,15 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.cubeRotationNim_pPositions
 ---
 
-# Cube Rotation Nim p Positions
+# P-positions of rotation Nim on a cube
 
-In `C_R` the second-player winning positions (P-positions) are exactly those with
-`a + A = b + B = c + C`: no move joins two such positions, and every other position has a
-move to one (for this terminating game this characterizes the P-positions).
+**P-positions of rotation Nim on a cube.** Write positions of the game $C_R$ as tuples
+$(a, b, c, A, B, C)$ of numbers of tokens on the faces $f_a, f_b, f_c, f_A, f_B, f_C$, where
+$f_A$, $f_B$, $f_C$ are opposite $f_a$, $f_b$, $f_c$. Let $\mathcal P$ be the set of positions with
+$a + A = b + B = c + C$. Then no rotation move leads from a position in $\mathcal P$ to a position
+in $\mathcal P$, and from every position outside $\mathcal P$ there is a rotation move to a
+position in $\mathcal P$.
+
+Every move removes a token, so the game terminates and $\mathcal P$ is exactly the set of
+P-positions (second-player wins) under normal play.
 
 ## Depends on
 
-- [Cube Rotation Move](cube-rotation-move.md)
+- [Rotation move on the cube](cube-rotation-move.md)
 
 ## Sources
 

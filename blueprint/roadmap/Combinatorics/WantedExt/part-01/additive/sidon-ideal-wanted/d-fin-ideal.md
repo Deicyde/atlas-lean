@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.dFinIdeal
 ---
 
-# D Fin Ideal
+# The ideal of sets avoiding large difference sets
 
-The ideal `Dfin`: sets `A` for which some `n` has `D(Z) ⊈ A` for every
-`n`-element set `Z ⊆ ℕ`.
+**The ideal of sets avoiding large difference sets.** For a set $Z \subseteq \mathbb{N}$, let
+$D(Z) = \{a - b : a, b \in Z,\ b < a\}$ be its set of positive differences. The ideal
+$D_{\mathrm{fin}}$ consists of the sets $A \subseteq \mathbb{N}$ for which there is a natural
+number $n$ such that $D(Z) \not\subseteq A$ for every $n$-element set $Z \subseteq \mathbb{N}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Positive Differences](positive-differences.md)
+- [Positive difference set](positive-differences.md)
 
 ## Sources
 

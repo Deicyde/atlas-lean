@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.rCycleStirlingEulerian
 ---
 
-# R Cycle Stirling Eulerian
+# $r$-cycle Stirling Eulerian numbers
 
-The number `A^{(r)}_{n,m}` of `r`-cycle permutations of `n` objects (all cycle
-lengths equal to `r`) with exactly `m` excedances.
+**$r$-cycle Stirling Eulerian numbers.** For natural numbers $r$, $n$ and $m$, the number
+$A^{(r)}_{n,m}$ is the number of permutations $\sigma$ of $\{0, \dots, n-1\}$ all of whose
+cycles, fixed points counted as cycles of length $1$, have length exactly $r$, and that have
+exactly $m$ excedances, that is, exactly $m$ indices $i$ with $\sigma(i) > i$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is RCycle Perm](is-rcycle-perm.md)
-- [Excedance Count](excedance-count.md)
+- [Permutations with all cycles of length $r$](is-rcycle-perm.md)
+- [Number of excedances](excedance-count.md)
 
 ## Sources
 

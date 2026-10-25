@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.clspan_subset_clspan_pBasis_zero
 ---
 
-# Clspan subset clspan p Basis zero
+# CL-span bound for SNN CL-polynomials
 
-For every degree-`d` polynomial `f ∈ 𝔆 ∩ 𝔖` (CL and SNN), `clspan f ⊆ clspan pᵈ₀`.
+**CL-span bound for SNN CL-polynomials.** Let $f$ be a complex polynomial of degree $d$ that
+is both a CL-polynomial and an SNN polynomial. Then the CL-span of $f$ is contained in the
+CL-span of the symmetric basis polynomial $p^d_0$.
 
 ## Depends on
 
-- [Is CL](is-cl.md)
-- [Is SNN](is-snn.md)
-- [Clspan](clspan.md)
-- [P Basis](p-basis.md)
+- [CL-polynomials](is-cl.md)
+- [SNN polynomials](is-snn.md)
+- [CL-span](clspan.md)
+- [Symmetric basis polynomials](p-basis.md)
 
 ## Sources
 

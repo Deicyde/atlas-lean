@@ -7,20 +7,23 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.le_incrLen
 ---
 
-# Le incr Len
+# Bound by the longest increasing subsequence ending at a position
 
-`incrLen` is an upper bound on lengths ending at `p`.
+**Bound by the longest increasing subsequence ending at a position.** Let $f$ be a real
+sequence indexed by $\{0, \dots, N-1\}$ and let $p$ be a position. If $f$ has a strictly
+increasing subsequence of length $k$ ending exactly at $p$, then $k$ is at most the length of the
+longest strictly increasing subsequence of $f$ ending at $p$.
 
 ## Depends on
 
-- [Is Incr End](is-incr-end.md)
-- [Incr Len](incr-len.md)
+- [Increasing subsequence ending at a position](is-incr-end.md)
+- [Length of the longest increasing subsequence ending at a position](incr-len.md)
 
 ## Proof depends on
 
-- [Is Incr Subseq](is-incr-subseq.md)
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
-- [Subseq Len le](subseq-len-le.md)
+- [Increasing subsequence](is-incr-subseq.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
+- [Subsequences are no longer than the sequence](subseq-len-le.md)
 
 ## Sources
 

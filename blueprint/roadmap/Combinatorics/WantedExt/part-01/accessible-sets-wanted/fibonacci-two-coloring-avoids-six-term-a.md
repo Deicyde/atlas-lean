@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.fibonacci_two_coloring_avoids_six_term_AP
 ---
 
-# Fibonacci two coloring avoids six term AP
+# A 2-coloring with no monochromatic 6-term progression with positive Fibonacci gap
 
-There is a 2-coloring of the positive integers with no monochromatic
-6-term arithmetic progression whose gap is a positive Fibonacci number.
+**A 2-coloring with no monochromatic 6-term progression with positive Fibonacci gap.** There
+is a coloring of the positive integers with two colors such that no 6-term arithmetic progression
+$a, a + d, \dots, a + 5d$ of positive integers whose gap $d$ is a positive Fibonacci number is
+monochromatic.
 
 ## Depends on
 
-- [Is DAP](is-dap.md)
-- [Is Monochromatic](is-monochromatic.md)
-- [Positive Fibonacci Set](positive-fibonacci-set.md)
+- [Arithmetic progressions with gap in $D$](is-dap.md)
+- [Monochromatic sequences of positive integers](is-monochromatic.md)
+- [Positive Fibonacci set](positive-fibonacci-set.md)
 
 ## Sources
 

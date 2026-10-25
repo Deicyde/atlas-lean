@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.SimpleGraph.IsSArcRegular
 ---
 
-# Is SArc Regular
+# $s$-arc regular graph
 
-A graph is *s-arc regular* if for any two s-arcs there is a unique aotmorphism mapping the first
-to the second.
+**$s$-arc regular graph.** A finite graph $G$ is $s$-arc regular if it has at least one
+$s$-arc and, for any two $s$-arcs $(u_0, \dots, u_s)$ and $(v_0, \dots, v_s)$ of $G$, there is
+exactly one automorphism $\varphi$ of $G$ with $\varphi(u_i) = v_i$ for every $i \le s$.
 
 ## Depends on
 

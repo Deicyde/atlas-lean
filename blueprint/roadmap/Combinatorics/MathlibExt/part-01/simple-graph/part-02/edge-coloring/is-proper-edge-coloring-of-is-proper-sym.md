@@ -7,14 +7,17 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.EdgeColoringWanted.isProperEdgeColoring_of_isProperSym2Coloring
 ---
 
-# Is Proper Edge Coloring of is Proper Sym2 Coloring
+# Proper colorings of unordered pairs restrict to proper edge colorings
 
-Bridge from `Sym2` colorings to `EdgeLabeling`.
+**Proper colorings of unordered pairs restrict to proper edge colorings.** Let $G$ be a
+simple graph on $V$ and let $c$ assign a color in $K$ to every unordered pair of elements of $V$.
+If $c$ is a proper coloring of unordered pairs for $G$, then the edge labeling of $G$ that gives
+each edge $e$ the color $c(e)$ is a proper edge coloring of $G$.
 
 ## Depends on
 
-- [Is Proper Edge Coloring](is-proper-edge-coloring.md)
-- [Is Proper Sym2 Coloring](is-proper-sym2-coloring.md)
+- [Proper edge coloring](is-proper-edge-coloring.md)
+- [Proper coloring of unordered pairs](is-proper-sym2-coloring.md)
 
 ## Sources
 

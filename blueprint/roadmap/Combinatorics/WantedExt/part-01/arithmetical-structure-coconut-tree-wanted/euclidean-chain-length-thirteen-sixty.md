@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.euclideanChainLength_thirteen_sixty
 ---
 
-# Euclidean Chain Length thirteen sixty
+# Euclidean chain function of 13 and 60
 
-Example 4.13: `F(13, 60) = 8`.
+**Euclidean chain function of 13 and 60.** The Euclidean chain function $F$ satisfies
+$F(13, 60) = 8$.
 
 ## Depends on
 
-- [Euclidean Chain Length](euclidean-chain-length.md)
+- [Euclidean chain function](euclidean-chain-length.md)
 
 ## Proof depends on
 
-- [Euclidean Chain Length of ne zero](euclidean-chain-length-of-ne-zero.md)
-- [Euclidean Chain Length zero](euclidean-chain-length-zero.md)
+- [Recursion for the Euclidean chain function](euclidean-chain-length-of-ne-zero.md)
+- [Euclidean chain function with second argument zero](euclidean-chain-length-zero.md)
 
 ## Sources
 

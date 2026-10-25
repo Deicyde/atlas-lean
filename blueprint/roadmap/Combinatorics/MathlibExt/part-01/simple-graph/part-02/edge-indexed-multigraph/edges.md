@@ -6,14 +6,17 @@ statement: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.edges
 ---
 
-# Edges
+# Edge list of an indexed walk
 
-The edge identities traversed by an indexed walk.
+**Edge list of an indexed walk.** The edge list of an indexed walk is the list of the edge
+identities it traverses, in order and with repetitions: the empty walk has the empty edge list,
+and the walk that traverses an edge $e$ and then follows an indexed walk $p$ has edge list $e$
+followed by the edge list of $p$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Indexed Walk](indexed-walk.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Indexed walk](indexed-walk.md)
 
 ## Sources
 

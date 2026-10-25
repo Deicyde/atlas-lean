@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.downUpCompositionCount_six_three
 ---
 
-# Down Up Composition Count six three
+# Down/up compositions of 6 with three parts
 
-The down/up compositions of `6` with three parts are `(2,1,3)` and `(3,1,2)`.
+**Down/up compositions of 6 with three parts.** Among the down/up compositions of $6$ with
+three parts (triples $(\sigma_1, \sigma_2, \sigma_3)$ of positive integers with sum $6$ and
+$\sigma_1 > \sigma_2 < \sigma_3$), exactly one has last part $3$, exactly one has last part $2$,
+and none has last part $1$.
+
+The compositions counted are $(2, 1, 3)$ and $(3, 1, 2)$.
 
 ## Depends on
 
-- [Down Up Composition Count](down-up-composition-count.md)
+- [Down/up compositions](down-up-composition-count.md)
 
 ## Sources
 

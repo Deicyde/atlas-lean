@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isVanishingFamily_sum
 ---
 
-# Is Vanishing Family sum
+# Zero-sum van der Waerden theorem
 
-Theorem 1 (zero-sum form of van der Waerden's theorem): for a positive integer `n`,
-the family `{(b_1, …, b_l) ↦ ∑ b_i}` over `ℤ/n` is vanishing.
+**Zero-sum van der Waerden theorem.** For every positive integer $n$, the family over
+$\mathbb{Z}/n\mathbb{Z}$ sending a block $(b_1, \dots, b_l)$ to $\sum_i b_i$ is vanishing: for
+every $m > 0$, every sequence over $\mathbb{Z}/n\mathbb{Z}$ contains $m$ consecutive blocks of a
+common length $l > 1$, each with sum zero.
 
 ## Depends on
 
-- [Is Vanishing Family](is-vanishing-family.md)
+- [Vanishing family](is-vanishing-family.md)
 
 ## Sources
 

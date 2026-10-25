@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.fenceTilingSum_zero
 ---
 
-# Fence Tiling Sum zero
+# Weighted fence tilings of the empty board
 
-`S_0 = 1` (the empty board).
+**Weighted fence tilings of the empty board.** For elements $a$ and $b$ of a commutative
+semiring $R$, the weighted number $S_0$ of tilings of the $0$-board by half-squares and
+$(1/2, 1/2)$-fences equals $1$: the only tiling is the empty one.
 
 ## Depends on
 
-- [Fence Tiling Sum](fence-tiling-sum.md)
+- [Weighted count of fence tilings](fence-tiling-sum.md)
 
 ## Proof depends on
 
-- [Fence Tiling Weight](fence-tiling-weight.md)
-- [Fence Tilings](fence-tilings.md)
+- [Weight of a fence tiling](fence-tiling-weight.md)
+- [Fence tilings of a board](fence-tilings.md)
 
 ## Sources
 

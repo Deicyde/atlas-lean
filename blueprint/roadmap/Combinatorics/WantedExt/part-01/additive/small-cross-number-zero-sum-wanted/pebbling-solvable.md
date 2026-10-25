@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.PebblingSolvable
 ---
 
-# Pebbling Solvable
+# Solvable pebbling configurations
 
-A configuration `C` is *solvable* if for every target `r` some sequence of pebbling steps
-puts a pebble on `r`.
+**Solvable pebbling configurations.** Let $G$ be a simple graph on a vertex set $V$ with
+natural-number edge costs $w$. A configuration $C : V \to \mathbb{N}$ of pebbles is *solvable*
+if for every target vertex $r$ there is a finite, possibly empty, sequence of pebbling steps on
+$G$ with costs $w$ leading from $C$ to a configuration with at least one pebble on $r$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Pebbling Step](pebbling-step.md)
+- [Lagarias–Saks pebbling step](pebbling-step.md)
 
 ## Sources
 

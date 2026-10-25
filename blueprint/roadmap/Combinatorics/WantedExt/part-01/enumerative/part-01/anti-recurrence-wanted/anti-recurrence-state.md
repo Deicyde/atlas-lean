@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Anti Recurrence Block](anti-recurrence-block.md)
+- [Block of successive mex values](anti-recurrence-block.md)
 
 ## Sources
 

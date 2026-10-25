@@ -13,8 +13,8 @@ Ackermann function. Stated along natural `n`.
 
 ## Depends on
 
-- [Inverse Ackermann](inverse-ackermann.md)
-- [Opx](opx.md)
+- [Inverse Ackermann function](inverse-ackermann.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

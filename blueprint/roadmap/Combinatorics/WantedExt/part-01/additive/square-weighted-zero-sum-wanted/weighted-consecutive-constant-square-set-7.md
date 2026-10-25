@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.weightedConsecutiveConstant_squareSet_oddSquare_largePrime
 ---
 
-# Weighted Consecutive Constant square Set odd Square large Prime
+# Square-weighted consecutive constant five for odd squares with a large prime fourth power
 
-Corollary 35: if odd square `n ≥ 2` is divisible by `p⁴` for a prime
-`p ≥ 7`, the consecutive defining set is nonempty and `C_{S(n)} = 5`.
+**Square-weighted consecutive constant five for odd squares with a large prime fourth power.**
+Let $n \ge 2$ be an odd perfect square and let $p \ge 7$ be a prime with $p^4 \mid n$. Write $S(n)$
+for the set of nonzero squares in $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$. Then some positive length
+$k$ has the property that every sequence of $k$ elements of $\mathbb{Z}_n$ has a nonempty block of
+consecutive terms with an $S(n)$-weighted sum equal to zero, and the least such length, the
+$S(n)$-weighted consecutive constant $C_{S(n)}$ of $\mathbb{Z}_n$, equals $5$.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
-- [Weighted Consecutive Defining Set](weighted-consecutive-defining-set.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Weighted consecutive zero-sum constant](weighted-consecutive-constant.md)
+- [Lengths forcing a consecutive weighted zero sum](weighted-consecutive-defining-set.md)
 
 ## Sources
 

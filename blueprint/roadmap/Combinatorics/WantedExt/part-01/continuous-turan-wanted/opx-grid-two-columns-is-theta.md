@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.opx_grid_two_columns_isTheta
 ---
 
-# Opx grid two columns is Theta
+# Continuous Turán number of a grid with two columns
 
-Corollary 3.7, first part: a grid `P = X × Y` with `2` columns and `k = |Y| ≥ 2` rows has
-`opx(n, P) = Θ(n^{3/2})`. Stated along natural `n`.
+**Continuous Turán number of a grid with two columns.** Let $X$ and $Y$ be finite sets of real
+numbers with $|X| = 2$ and $|Y| \ge 2$, and let $P = X \times Y$ be the grid with $2$ columns and
+$|Y|$ rows. Then $\operatorname{opx}(n, P) = \Theta(n^{3/2})$ as the natural number $n$ tends to
+infinity.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

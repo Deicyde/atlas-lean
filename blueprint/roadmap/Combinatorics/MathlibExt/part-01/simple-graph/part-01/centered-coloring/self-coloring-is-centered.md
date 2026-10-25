@@ -7,17 +7,18 @@ proof: formalized
 lean: SimpleGraph.selfColoring_isCentered
 ---
 
-# Self Coloring is Centered
+# The identity coloring is centered
 
-The tautological vertex coloring is centered.
+**The identity coloring is centered.** For every simple graph $G$ with vertex set $V$, the
+proper vertex coloring of $G$ by $V$ that gives each vertex itself as its color is centered.
 
 ## Depends on
 
-- [Is Centered](is-centered.md)
+- [Centered coloring](is-centered.md)
 
 ## Proof depends on
 
-- [Is Centered of injective](is-centered-of-injective.md)
+- [Injective colorings are centered](is-centered-of-injective.md)
 
 ## Sources
 

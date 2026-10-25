@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.not_isSumFreeMod_singleton_one_iff
 ---
 
-# Not is Sum Free Mod singleton one iff
+# When the singleton $\{1\}$ is sum-free
 
-The singleton `{1}` is not `l`-sum-free modulo `m` if and only if `l ≡ 1 (mod m)`.
+**When the singleton $\{1\}$ is sum-free.** Let $m \ge 1$ and $l$ be natural
+numbers. The singleton $\{1\}$ is not $l$-sum-free modulo $m$ if and only if
+$l \equiv 1 \pmod{m}$.
 
 ## Depends on
 
-- [Is Sum Free Mod](is-sum-free-mod.md)
+- [Sum-free sets modulo $m$](is-sum-free-mod.md)
 
 ## Sources
 

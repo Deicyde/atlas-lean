@@ -4,5 +4,5 @@ navigation: module
 
 # Vector Discrepancy
 
-- [Vector Discrepancy](vector-discrepancy.md)
-- [Vector Discrepancy attained](vector-discrepancy-attained.md)
+- [Vector discrepancy](vector-discrepancy.md)
+- [The vector discrepancy is attained](vector-discrepancy-attained.md)

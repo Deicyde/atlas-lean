@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.weightedConsecutiveConstant_squareSet_oddSquare_le_nine
 ---
 
-# Weighted Consecutive Constant square Set odd Square le nine
+# Consecutive square-weighted constant of an odd square is at most nine
 
-Theorem 31: for an odd square `n ≥ 2`, the consecutive `S(n)` constant is
-at most nine. The lower bound on `n` records the paper's ambient convention.
+**Consecutive square-weighted constant of an odd square is at most nine.** For every odd
+natural number $n \ge 2$ that is a perfect square, the consecutive $S(n)$-weighted zero-sum
+constant satisfies $C_{S(n)} \le 9$, where $S(n)$ is the set of nonzero squares of
+$\mathbb{Z}/n\mathbb{Z}$.
+
+The hypothesis $n \ge 2$ is the paper's standing convention.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Weighted consecutive zero-sum constant](weighted-consecutive-constant.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.forwardCrossings
 ---
 
-# Forward Crossings
+# Forward crossings
 
-The forward moves (left to right) of a schedule: its crossings at even
-positions `0, 2, 4, …`.
+**Forward crossings.** The forward crossings of a list of crossings are its entries at the
+even positions $0, 2, 4, \dots$ (counting from $0$), in their original order. For a schedule
+these are its forward moves, from left to right.
 
 ## Depends on
 

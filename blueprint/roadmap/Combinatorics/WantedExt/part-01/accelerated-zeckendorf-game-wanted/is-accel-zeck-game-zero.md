@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.isAccelZeckGame_zero
 ---
 
-# Is Accel Zeck Game zero
+# The complete game on $0$
 
-The game on `0` is complete after no moves.
+**The complete game on $0$.** The sequence whose states are all the empty state is a
+complete Accelerated Zeckendorf Game on $0$ with $0$ moves.
 
 ## Depends on
 
-- [Is Accel Zeck Game](is-accel-zeck-game.md)
+- [Complete Accelerated Zeckendorf Games](is-accel-zeck-game.md)
 
 ## Proof depends on
 
-- [Accel Zeck Move](accel-zeck-move.md)
-- [Not accel Zeck Move zero](not-accel-zeck-move-zero.md)
+- [Moves of the Accelerated Zeckendorf Game](accel-zeck-move.md)
+- [No move from the empty state](not-accel-zeck-move-zero.md)
 
 ## Sources
 

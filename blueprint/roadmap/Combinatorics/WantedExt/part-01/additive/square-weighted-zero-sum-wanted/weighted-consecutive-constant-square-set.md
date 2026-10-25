@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.weightedConsecutiveConstant_squareSet_le_primePower
 ---
 
-# Weighted Consecutive Constant square Set le prime Power
+# Prime-power bound for the square-weighted consecutive constant
 
-Corollary 8: under the same prime-divisor and valuation clauses,
-`C_{S(n)} ≤ C_{S(p^r)}`. The exponent equality formalizes `r = v_p(n)`.
-The added `2 ≤ n` records the paper's ambient convention.
+**Prime-power bound for the square-weighted consecutive constant.** Let $n \ge 2$, let $p$ be a
+prime dividing $n$ and let $r = v_p(n)$ be the exponent of $p$ in $n$. For a natural number $m$,
+write $S(m)$ for the set of nonzero squares in $\mathbb{Z}_m = \mathbb{Z}/m\mathbb{Z}$ and
+$C_{S(m)}$ for the $S(m)$-weighted consecutive constant of $\mathbb{Z}_m$. Then
+$C_{S(n)} \le C_{S(p^r)}$.
 
 ## Depends on
 
-- [Square Set](square-set.md)
-- [Weighted Consecutive Constant](weighted-consecutive-constant.md)
+- [Nonzero squares modulo $n$](square-set.md)
+- [Weighted consecutive zero-sum constant](weighted-consecutive-constant.md)
 
 ## Sources
 

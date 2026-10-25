@@ -6,9 +6,14 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.heinemanLowerBound
 ---
 
-# Heineman Lower Bound
+# Statement of the Heineman et al. lower bound
 
-Heineman et al.'s computer-assisted exact lower endpoint `0.792665992`.
+**Statement of the Heineman et al. lower bound.** For each $n$, let $E_n$ be the expected
+length of a longest common subsequence of two independent uniformly random binary strings of
+length $n$, and let $C$, the binary Chvátal–Sankoff constant, be the limit inferior of $E_n / n$
+as $n \to \infty$. This is the proposition $0.792665992 \le C$.
+
+Heineman et al. obtained this computer-assisted bound; the decimal is an exact rational endpoint.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [C31a](c31a.md)
+- [Catalogue notation for the binary Chvátal–Sankoff constant](c31a.md)
 
 ## Sources
 

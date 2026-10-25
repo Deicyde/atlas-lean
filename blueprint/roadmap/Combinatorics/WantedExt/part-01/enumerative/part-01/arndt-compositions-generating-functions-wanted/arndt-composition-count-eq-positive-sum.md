@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.arndtCompositionCount_eq_positive_sum
 ---
 
-# Arndt Composition Count eq positive sum
+# Positive sum for Arndt compositions
 
-Positive sum for `a(n, m)`: for `m ≥ 1`,
-`a(n, m) = ∑_{ℓ=0}^{⌊(n-m-⌊m/2⌋)/2⌋} C(⌊m/2⌋+ℓ-1, ℓ) C(n-2⌊m/2⌋-2ℓ-1, ⌊(m-1)/2⌋)`, the sum
-being empty when `n < m + ⌊m/2⌋`. The paper states it for all `n, m ≥ 0`; at `n = m = 0` it
-fails (`a(0, 0) = 1`, while the only term has lower index `⌊-1/2⌋ = -1` and vanishes), and the
-case `m = 0` is omitted here.
+**Positive sum for Arndt compositions.** Let $a(n, m)$ be the number of Arndt compositions of
+$n$ with $m$ parts, and write $h = \lfloor m/2 \rfloor$. For all $n \ge 0$ and $m \ge 1$: if
+$m + h \le n$, then
+
+$$a(n, m) = \sum_{\ell=0}^{\lfloor (n-m-h)/2 \rfloor} \binom{h+\ell-1}{\ell}
+\binom{n-2h-2\ell-1}{\lfloor (m-1)/2 \rfloor},$$
+
+and otherwise $a(n, m) = 0$. Here $\binom{-1}{0} = 1$ (this term occurs for $m = 1$).
+
+The paper states it for all $n, m \ge 0$; at $n = m = 0$ it fails ($a(0, 0) = 1$, while the only
+term has lower index $\lfloor -1/2 \rfloor = -1$ and vanishes), so the case $m = 0$ is omitted.
 
 ## Depends on
 
-- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
+- [Number of Arndt compositions with parts in a set](../arndt-compositions-wanted/arndt-composition-count.md)
 
 ## Sources
 

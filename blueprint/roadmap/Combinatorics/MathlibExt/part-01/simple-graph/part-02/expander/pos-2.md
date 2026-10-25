@@ -7,17 +7,19 @@ proof: formalized
 lean: SimpleGraph.IsUniformVertexExpander.pos
 ---
 
-# Pos
+# The parameter of a uniform vertex expander is positive
 
-A uniform vertex expander satisfies `0 < h`.
+**The parameter of a uniform vertex expander is positive.** Let $G$ be a simple graph on a
+finite vertex set $V$ and let $h$ be a real number. If $G$ is a uniform vertex expander with
+parameter $h$, then $h > 0$.
 
 ## Depends on
 
-- [Is Uniform Vertex Expander](is-uniform-vertex-expander.md)
+- [Uniform vertex expander](is-uniform-vertex-expander.md)
 
 ## Proof depends on
 
-- [External Neighbor Set](external-neighbor-set.md)
+- [External neighbourhood](external-neighbor-set.md)
 
 ## Sources
 

@@ -5,17 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.evenOrSmallOdd_oddOrSmallEven_recurrence
 ---
 
-# Even Or Small Odd odd Or Small Even recurrence
+# Recurrences for even-or-small-odd and odd-or-small-even compositions
 
-For `k ≥ 1` and `n ≥ 3`,
-`c^{2k+1}_e(n) = c^{2k+1}_e(n - 1) + 2c^{2k+1}_e(n - 2) - c^{2k+1}_e(n - 2 - 2k - 1)` and
-`c^{2k}_o(n) = c^{2k}_o(n - 1) + 2c^{2k}_o(n - 2) - c^{2k}_o(n - 2 - 2k)`, with counts at
-negative arguments `0` (the `if` terms) and at `0` equal to `1`; at `n = 2` both fail.
+**Recurrences for even-or-small-odd and odd-or-small-even compositions.** For natural
+numbers $k$ and $n$, let $c^{2k+1}_e(n)$ be the number of compositions of $n$ in which every part
+is even or at most $2k + 1$, and $c^{2k}_o(n)$ the number in which every part is odd or at most
+$2k$. If $k \ge 1$ and $n \ge 3$, then
+
+$$c^{2k+1}_e(n) = c^{2k+1}_e(n - 1) + 2c^{2k+1}_e(n - 2) - c^{2k+1}_e(n - 3 - 2k)$$
+
+and
+
+$$c^{2k}_o(n) = c^{2k}_o(n - 1) + 2c^{2k}_o(n - 2) - c^{2k}_o(n - 2 - 2k),$$
+
+where the last term is read as $0$ when its argument is negative.
+
+Both recurrences fail at $n = 2$.
 
 ## Depends on
 
-- [Even Or Small Odd Composition Count](even-or-small-odd-composition-count.md)
-- [Odd Or Small Even Composition Count](odd-or-small-even-composition-count.md)
+- [Compositions into even or small odd parts](even-or-small-odd-composition-count.md)
+- [Compositions into odd or small even parts](odd-or-small-even-composition-count.md)
 
 ## Sources
 

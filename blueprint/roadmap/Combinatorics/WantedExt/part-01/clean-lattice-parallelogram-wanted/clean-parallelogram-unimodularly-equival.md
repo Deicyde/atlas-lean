@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.cleanParallelogram_unimodularlyEquivalent_std
 ---
 
-# Clean Parallelogram unimodularly Equivalent std
+# Clean parallelograms are unimodularly equivalent to standard ones
 
-A clean lattice parallelogram spanned by `u`, `v` with area `n ≥ 2` is unimodularly
-equivalent to some `P_{a,n}` with `1 ≤ a < n` and `gcd(a, n) = 1`. (For area `1` the unit
-square has no such `a`.)
+**Clean parallelograms are unimodularly equivalent to standard ones.** Let $u$ and $v$ be
+lattice points spanning a clean lattice parallelogram $P$ whose area is an integer $n \ge 2$. Then
+there is an integer $a$ with $1 \le a < n$ and $\gcd(a, n) = 1$ such that $P$ is unimodularly
+equivalent to the standard clean parallelogram $P_{a,n}$.
+
+For area $1$ (the unit square) there is no such $a$.
 
 ## Depends on
 
-- [Is Clean Parallelogram](is-clean-parallelogram.md)
-- [Unimodularly Equivalent](unimodularly-equivalent.md)
-- [Lattice Parallelogram](lattice-parallelogram.md)
-- [Std Clean Parallelogram](std-clean-parallelogram.md)
+- [Clean lattice parallelogram](is-clean-parallelogram.md)
+- [Unimodularly equivalent sets](unimodularly-equivalent.md)
+- [Parallelogram spanned by two vectors](lattice-parallelogram.md)
+- [The parallelogram $P_{a,n}$](std-clean-parallelogram.md)
 
 ## Sources
 

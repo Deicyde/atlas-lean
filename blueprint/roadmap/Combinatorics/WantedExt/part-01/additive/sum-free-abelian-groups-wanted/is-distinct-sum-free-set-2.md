@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.IsSumFreeSet.isDistinctSumFreeSet
 ---
 
-# Is Distinct Sum Free Set
+# Sum-free sets are distinct sum-free
 
-A sum-free set is distinct sum-free.
+**Sum-free sets are distinct sum-free.** For every set $G$ with an addition, every sum-free
+subset of $G$ is distinct sum-free.
 
 ## Depends on
 
-- [Is Distinct Sum Free Set](is-distinct-sum-free-set.md)
-- [Is Sum Free Set](is-sum-free-set.md)
+- [Distinct sum-free sets](is-distinct-sum-free-set.md)
+- [Sum-free set](is-sum-free-set.md)
 
 ## Sources
 

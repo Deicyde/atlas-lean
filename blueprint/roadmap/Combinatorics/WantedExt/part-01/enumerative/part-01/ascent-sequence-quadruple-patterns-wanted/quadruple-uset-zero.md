@@ -6,19 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.quadrupleUSet_zero
 ---
 
-# Quadruple USet zero
+# $U_{0,j}$ is empty
 
-`U_{0,j} = ∅`.
+**$U_{0,j}$ is empty.** For every natural number $j$, the set $U_{0,j}$ is empty.
 
 ## Depends on
 
-- [Quadruple USet](quadruple-uset.md)
+- [The sets $U_{n,j}$](quadruple-uset.md)
 
 ## Proof depends on
 
-- [Is Big Entry](is-big-entry.md)
-- [Last Descent Top](last-descent-top.md)
-- [Weak Ascent Avoiders](weak-ascent-avoiders.md)
+- [Big entry](is-big-entry.md)
+- [Position of the last descent top](last-descent-top.md)
+- [Weak ascent sequences avoiding a set of patterns](weak-ascent-avoiders.md)
 
 ## Sources
 

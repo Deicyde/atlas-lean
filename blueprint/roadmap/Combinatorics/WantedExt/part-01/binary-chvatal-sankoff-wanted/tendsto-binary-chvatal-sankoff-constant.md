@@ -7,16 +7,18 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.tendsto_binaryChvatalSankoffConstant
 ---
 
-# Tendsto binary Chvatal Sankoff Constant
+# Any limit of the normalized expected LCS lengths is the binary Chvátal–Sankoff constant
 
-Under the source's existence theorem, the normalized expectations tend to
-the selected constant.
+**Any limit of the normalized expected LCS lengths is the binary Chvátal–Sankoff constant.**
+If the normalized expected LCS lengths converge to some real number as $n \to \infty$, then they
+converge to the binary Chvátal–Sankoff constant $C_{31a}$, which is defined as their limit
+inferior.
 
 ## Depends on
 
-- [Binary Chvatal Sankoff Constant](binary-chvatal-sankoff-constant.md)
-- [Chvatal Sankoff Limit Exists](chvatal-sankoff-limit-exists.md)
-- [Normalized Expected LCS](normalized-expected-lcs.md)
+- [Binary Chvátal–Sankoff constant](binary-chvatal-sankoff-constant.md)
+- [Statement of the Chvátal–Sankoff limit theorem](chvatal-sankoff-limit-exists.md)
+- [Normalized expected LCS length](normalized-expected-lcs.md)
 
 ## Sources
 

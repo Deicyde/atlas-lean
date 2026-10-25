@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.boundedSubsetSums_inverse_of_nonneg
 ---
 
-# Bounded Subset Sums inverse of nonneg
+# Inverse theorem for subset sums of nonnegative sets
 
-Inverse theorem for Theorem 6 (`k ≥ 3`, `1 ≤ α ≤ k - 2`, `β ≤ k - 2`, `α + β ≤ k - 1`):
-if a set of `k` positive integers attains the bound, then `A = d · [1, k]` with `d > 0`, except
-for `k = 3`, where `A = {a₁, a₂, a₁ + a₂}` with `0 < a₁ < a₂`; if a set of `k` nonnegative
-integers containing `0` attains its bound, then `A = d · [0, k - 1]`, except for `k = 3`
-(`A = {0, a₁, a₂}`) and `k = 4` (`A = {0, a₁, a₂, a₁ + a₂}`), where `0 < a₁ < a₂`.
+**Inverse theorem for subset sums of nonnegative sets.** Let $k \ge 3$ and let $\alpha, \beta$
+be natural numbers with $1 \le \alpha \le k - 2$, $\beta \le k - 2$ and $\alpha + \beta \le k - 1$.
+Let $A$ be a set of $k$ integers, and let $\Sigma^{\beta}_{\alpha}(A)$ be the set of sums of
+subsets $B \subseteq A$ with $\alpha \le |B| \le k - \beta$. If all elements of $A$ are positive
+and $|\Sigma^{\beta}_{\alpha}(A)| = \binom{k+1}{2} - \binom{\alpha+1}{2} - \binom{\beta+1}{2} + 1$,
+then $A = d \cdot \{1, 2, \dots, k\}$ for some integer $d > 0$ when $k \ne 3$, and
+$A = \{x, y, x + y\}$ for some integers $0 < x < y$ when $k = 3$. If all elements of $A$ are
+nonnegative, $0 \in A$ and
+$|\Sigma^{\beta}_{\alpha}(A)| = \binom{k}{2} - \binom{\alpha}{2} - \binom{\beta}{2} + 1$, then
+$A = d \cdot \{0, 1, \dots, k - 1\}$ for some integer $d > 0$ when $k \ge 5$,
+$A = \{0, x, y\}$ for some integers $0 < x < y$ when $k = 3$, and
+$A = \{0, x, y, x + y\}$ for some integers $0 < x < y$ when $k = 4$.
 
 ## Depends on
 
-- [Bounded Subset Sums](bounded-subset-sums.md)
+- [Subset sums with a bounded number of terms](bounded-subset-sums.md)
 
 ## Sources
 

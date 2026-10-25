@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.rainbowFree_powDiff_iff
 ---
 
-# Rainbow Free pow Diff iff
+# Rainbow-free colorings of $\mathbb{Z}/p\mathbb{Z}$ for $x - y = z^k$
 
-An exact 3-coloring of `ℤ/pℤ` is rainbow-free for `x - y = z ^ k` iff `0` is alone in its
-color class, every component of `G^k_p` is monochromatic, and `c a = c (-a)` for all `a`.
+**Rainbow-free colorings of $\mathbb{Z}/p\mathbb{Z}$ for $x - y = z^k$.** Let $p$ be a prime,
+$k$ a natural number, and $c$ a coloring of $\mathbb{Z}/p\mathbb{Z}$ by three colors that uses
+all three. Then $c$ has no solution of $x - y = z^k$ in $\mathbb{Z}/p\mathbb{Z}$ with $c(x)$,
+$c(y)$, $c(z)$ pairwise distinct if and only if the following three conditions hold: $0$ is the
+only element of its color class; $c(a) = c(b)$ whenever $a^{k^m} = b^{k^n}$ for some
+$m, n \ge 0$, that is, every component of the digraph $a \mapsto a^k$ is monochromatic; and
+$c(-a) = c(a)$ for every $a$.
 
 ## Depends on
 

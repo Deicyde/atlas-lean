@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.extFact_of_neg
 ---
 
-# Ext Fact of neg
+# The extended factorial vanishes at negative integers
 
-The extended factorial vanishes at negative integers.
+**The extended factorial vanishes at negative integers.** For every integer $n < 0$, the
+extended factorial of $n$ is $0$.
 
 ## Depends on
 
-- [Ext Fact](ext-fact.md)
+- [Extended factorial](ext-fact.md)
 
 ## Sources
 

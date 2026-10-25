@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.sidonBlock_one_one
 ---
 
-# Sidon Block one one
+# One-term blocks
 
-`Block(1, C, M, 1) = {M + C}`.
+**One-term blocks.** For all natural numbers $C$ and $M$, the block
+$\mathrm{Block}(1, C, M, 1) = \{M l + C \cdot 2^k : 0 \le k < 1,\ 1 \le l \le 1\}$ is the
+singleton $\{M + C\}$.
 
 ## Depends on
 
-- [Sidon Block](sidon-block.md)
+- [Block sets](sidon-block.md)
 
 ## Sources
 

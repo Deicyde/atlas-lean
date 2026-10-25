@@ -5,5 +5,5 @@ navigation: module
 
 # Clique
 
-- [Maximal Clique Sizes](maximal-clique-sizes.md)
-- [Triangles Containing](triangles-containing.md)
+- [Sizes of maximal cliques](maximal-clique-sizes.md)
+- [Triangles containing an edge](triangles-containing.md)

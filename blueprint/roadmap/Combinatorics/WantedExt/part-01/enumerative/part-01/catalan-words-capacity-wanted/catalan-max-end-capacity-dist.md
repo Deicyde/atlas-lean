@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.catalanMaxEndCapacityDist
 ---
 
-# Catalan Max End Capacity Dist
+# Capacity distribution of Catalan words ending in their largest letter
 
-`b(n, i; q)`, the capacity distribution on Catalan words of length `n` ending in `i` whose
-largest letter is `i`.
+**Capacity distribution of Catalan words ending in their largest letter.** For natural
+numbers $n$ and $i$, $b(n, i; q) \in \mathbb{Z}[q]$ is the sum of $q^{\mathrm{cap}(w)}$, where
+$\mathrm{cap}(w)$ is the capacity of $w$, over the Catalan words $w$ of length $n$ whose last
+letter is $i$ and all of whose letters are at most $i$.
 
 ## Depends on
 
@@ -16,10 +18,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Catalan Words](catalan-words.md)
-- [Words Bounded By](words-bounded-by.md)
-- [Words Ending In](words-ending-in.md)
+- [Capacity distribution](capacity-dist.md)
+- [Catalan words](catalan-words.md)
+- [Words with all letters at most a bound](words-bounded-by.md)
+- [Words ending in a given letter](words-ending-in.md)
 
 ## Sources
 

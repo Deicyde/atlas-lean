@@ -14,9 +14,9 @@ Attainment: when a saturated graph exists, some saturated graph has exactly
 
 ## Depends on
 
-- [Is Saturated](is-saturated.md)
-- [Sat](sat.md)
-- [Sat Counts](sat-counts.md)
+- [$H$-saturated graphs](is-saturated.md)
+- [Saturation number](sat.md)
+- [Edge counts of saturated graphs](sat-counts.md)
 
 ## Sources
 

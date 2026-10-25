@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_two
 ---
 
-# Ncard arithmetical Structure coconut Tree two
+# Number of arithmetical structures on coconut trees with two leaves
 
-Corollary 2: for `p ≥ 2`,
-`|Arith(CT(p, 2))| = 2 C_p - C_{p-1}
-+ ∑_{i=3}^{p+2} B(p - 1, p + 2 - i) |SArith(CT(i - 2, 2))|`.
+**Number of arithmetical structures on coconut trees with two leaves.** For $p \ge 2$, the
+number of arithmetical structures on the coconut tree $CT(p, 2)$ is
+
+$$2 C_p - C_{p-1} + \sum_{i=3}^{p+2} B(p - 1, p + 2 - i)\, N(i - 2),$$
+
+where $C_n$ is the $n$-th Catalan number, $B(n, k)$ is the ballot number and $N(q)$ is the number
+of smooth arithmetical structures on $CT(q, 2)$.
 
 ## Depends on
 
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
-- [Is Smooth Coconut](is-smooth-coconut.md)
-- [Ballot Number](ballot-number.md)
-- [Coconut Tree](coconut-tree.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
+- [Ballot numbers](ballot-number.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

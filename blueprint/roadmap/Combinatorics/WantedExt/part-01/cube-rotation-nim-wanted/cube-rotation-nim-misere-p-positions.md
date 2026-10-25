@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.cubeRotationNim_misere_pPositions
 ---
 
-# Cube Rotation Nim misere p Positions
+# Misère P-positions of rotation Nim on a cube
 
-In `C_R` under misère play, for a position normalized as in the paper (`C = max p`,
-`a ≤ A`, `b ≤ B`, `a ≤ b`), `p` is a P-position iff `C ≥ 2` and `a + A = b + B = c + C`, or `p`
-is `(0, 0, 0, 0, 0, 1)` or `(1, 1, 1, 1, 1, 1)`. Here `P` is the set of misère P-positions,
-given by its recursion: `p ∈ P` iff `p` has a move and every move from `p` leaves `P`.
+**Misère P-positions of rotation Nim on a cube.** Write positions of the game $C_R$ as tuples
+$p = (a, b, c, A, B, C)$ of numbers of tokens on the faces $f_a, f_b, f_c, f_A, f_B, f_C$, where
+$f_A$, $f_B$, $f_C$ are opposite $f_a$, $f_b$, $f_c$. Let $\mathcal P$ be any set of positions
+such that a position lies in $\mathcal P$ if and only if it has a rotation move and every
+rotation move from it leads to a position outside $\mathcal P$; this is the set of P-positions
+under misère play, where the player making the last move loses. Let $p$ be a position in which
+every entry is at most $C$, and $a \le A$, $b \le B$ and $a \le b$. Then $p \in \mathcal P$ if
+and only if either $C \ge 2$ and $a + A = b + B = c + C$, or $p = (0, 0, 0, 0, 0, 1)$, or
+$p = (1, 1, 1, 1, 1, 1)$.
 
 ## Depends on
 
-- [Cube Rotation Move](cube-rotation-move.md)
+- [Rotation move on the cube](cube-rotation-move.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isDAP_iff
 ---
 
-# Is DAP iff
+# Characterization of arithmetic progressions with gap in $D$
 
-Characterization of a `D`-arithmetic progression by its positive start,
-gap in `D`, and term formula.
+**Characterization of arithmetic progressions with gap in $D$.** Let $D$ be a set of natural
+numbers, $k$ a natural number and $x_0, \dots, x_{k-1}$ positive integers. Then
+$x_0, \dots, x_{k-1}$ is a $k$-term arithmetic progression with gap in $D$ if and only if there
+are a positive integer $a$ and an element $d \in D$ such that $x_i = a + i d$ for every $i < k$.
 
 ## Depends on
 
-- [Is DAP](is-dap.md)
+- [Arithmetic progressions with gap in $D$](is-dap.md)
 
 ## Sources
 

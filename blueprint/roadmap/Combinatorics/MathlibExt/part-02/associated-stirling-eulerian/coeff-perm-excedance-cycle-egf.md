@@ -6,17 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.coeff_permExcedanceCycleEGF
 ---
 
-# Coeff perm Excedance Cycle EGF
+# Coefficients of the excedance and cycle generating function
 
-The coefficient of `u^n` in `permExcedanceCycleEGF P x q` is
-`(1/n!) ∑_{σ ∈ P_n} x^{e(σ)} q^{c(σ)}`; for the family of all permutations the constant
-coefficient is `1` (the empty permutation).
+**Coefficients of the excedance and cycle generating function.** Let $R$ be a commutative
+$\mathbb{Q}$-algebra, let $x, q \in R$, and for each $n$ let $P_n$ be a set of permutations of
+$\{0, 1, \dots, n-1\}$. For every $n \ge 0$, the coefficient of $u^n$ in the excedance and cycle
+exponential generating function of the family $(P_n)$ is
+$\frac{1}{n!} \sum_{\sigma \in P_n} x^{e(\sigma)} q^{c(\sigma)}$, where $e(\sigma)$ is the number
+of excedances of $\sigma$ and $c(\sigma)$ its number of cycles, fixed points counted as cycles of
+length one.
 
 ## Depends on
 
 - [Number of cycles of a permutation](../../part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Excedance Count](excedance-count.md)
-- [Perm Excedance Cycle EGF](perm-excedance-cycle-egf.md)
+- [Number of excedances](excedance-count.md)
+- [Excedance and cycle generating function of a permutation family](perm-excedance-cycle-egf.md)
 
 ## Sources
 

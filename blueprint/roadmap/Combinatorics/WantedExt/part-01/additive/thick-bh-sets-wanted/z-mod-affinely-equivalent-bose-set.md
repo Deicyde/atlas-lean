@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.zModAffinelyEquivalent_boseSet
 ---
 
-# Theorem 4, Bose part
+# Affine equivalences between Bose sets
 
-**Theorem 4, Bose part.** With `q = |F|` and `p` the characteristic of `F`, and `b, e`
-both admissible for `Bose_h`, each of (i) `b ≡ e (mod (q^h - 1)/(q - 1))`,
-(ii) `θ^b - θ^e ∈ F`, (iii) `b ≡ p^i e (mod q^h - 1)` for some `i`, implies
-`Bose_h(q, b) ∼ Bose_h(q, e)`.
+**Affine equivalences between Bose sets.** Let $F$ be a finite field with $q$ elements and
+characteristic $p$, let $h \ge 2$, let $K$ be a field extension of $F$ of degree $h$, and let
+$\theta \in K$ have order $|K| - 1$, that is, generate $K^\times$. Let $b$ and $e$ be natural
+numbers such that the minimal polynomials of $\theta^b$ and $\theta^e$ over $F$ both have
+degree $h$. Suppose that (i) $b \equiv e \pmod{(q^h - 1)/(q - 1)}$, or
+(ii) $\theta^b - \theta^e \in F$, or (iii) $b \equiv p^i e \pmod{q^h - 1}$ for some natural
+number $i$. Then the Bose sets $\mathrm{Bose}_h(q, b)$ and $\mathrm{Bose}_h(q, e)$ built from
+$F$, $K$ and $\theta$ are affinely equivalent.
 
 ## Depends on
 
-- [ZMod Affinely Equivalent](zmod-affinely-equivalent.md)
-- [Bose Set](bose-set.md)
+- [Affine equivalence of sets of residues](zmod-affinely-equivalent.md)
+- [Generalized Bose set](bose-set.md)
 
 ## Sources
 

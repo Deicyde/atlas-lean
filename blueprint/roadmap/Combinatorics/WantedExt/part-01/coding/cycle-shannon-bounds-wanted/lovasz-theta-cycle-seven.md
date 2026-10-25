@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.lovaszThetaCycleSeven
 ---
 
-# Lovasz Theta Cycle Seven
+# Lovász's theta value for the 7-cycle
 
-The exact odd-cycle theta expression; its approximate source display is not an equality.
+**Lovász's theta value for the 7-cycle.** This is the real number
+$\frac{7 \cos(\pi/7)}{1 + \cos(\pi/7)}$, Lovász's closed form for the theta number of the
+$7$-cycle, viewed as an element of $[0, \infty]$.
+
+Approximate decimal displays of this number in the source are not asserted as equalities.
 
 ## Depends on
 

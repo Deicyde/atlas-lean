@@ -7,17 +7,20 @@ proof: formalized
 lean: FinPoset.card_linearExtensions_pos
 ---
 
-# Card linear Extensions pos
+# The number of linear extensions is positive
 
-The linear-extension count is positive: a valid denominator.
+**The number of linear extensions is positive.** For every finite poset $\alpha$,
+the number of linear extensions of $\alpha$ is positive.
+
+So this count is a valid denominator for probabilities over linear extensions.
 
 ## Depends on
 
-- [Linear Extensions](linear-extensions.md)
+- [Linear extensions of a finite poset](linear-extensions.md)
 
 ## Proof depends on
 
-- [Nonempty linear Extensions](nonempty-linear-extensions.md)
+- [Existence of linear extensions](nonempty-linear-extensions.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: JaccardLattice.gilbertCondition_iff
 ---
 
-# Gilbert Condition iff
+# Characterization of the Gilbert condition
 
-Gilbert condition holds iff the valuation is modular and monotone.
+**Characterization of the Gilbert condition.** A function $f \colon L \to \mathbb{R}$
+on a lattice $L$ satisfies the Gilbert condition if and only if $f$ is a modular valuation
+and is monotone, that is, $X \le Y$ implies $f(X) \le f(Y)$.
 
 ## Depends on
 
-- [Gilbert Condition](gilbert-condition.md)
-- [Is Modular Valuation](is-modular-valuation.md)
+- [Gilbert condition](gilbert-condition.md)
+- [Modular valuation](is-modular-valuation.md)
 
 ## Sources
 

@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.arndtV
 ---
 
-# Arndt V
+# The map $V$ on lists
 
-The map `V` on lists of parts, pair by pair:
-`(c₁, c₂) ↦ (1^{c₁ - c₂}, 2c₂)` if `c₂ - c₁ < 1`, and
-`(c₁, c₂) ↦ (1^{c₁ + c₂ - 2k - 1}, 2k + 1)` if `2k - 1 ≤ c₂ - c₁ < 2k + 1` with `k ≥ 1`
-(that is, `k = (c₂ - c₁ + 1)/2`); a final unpaired part `c` (the pair `(c, 0)`) maps to `c`
-parts `1`.
+**The map $V$ on lists.** The map $V$ sends a list $(c_1, c_2, \dots)$ of natural
+numbers to the concatenation of the images of its consecutive pairs $(c_1, c_2)$, $(c_3, c_4)$,
+and so on, where $1^j$ denotes $j$ parts equal to $1$: a pair $(a, b)$ with $b \le a$ goes to
+$(1^{a - b}, 2b)$; a pair $(a, b)$ with $b > a$ goes to $(1^{a + b - 2k - 1}, 2k + 1)$, where
+$k = \lfloor (b - a + 1)/2 \rfloor$ is the integer $k \ge 1$ with $2k - 1 \le b - a < 2k + 1$;
+and a final unpaired entry $a$ goes to $1^a$. The empty list goes to itself. The exponent
+$a + b - 2k - 1$ is read as $0$ when it is negative, which happens only when $a = 0$.
 
 ## Depends on
 

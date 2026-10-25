@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.opx_horizontal_segment
 ---
 
-# Opx horizontal segment
+# Continuous Turán number of a horizontal segment
 
-Theorem 4.1: a closed horizontal segment `P = [a, a + c] × {b}` of length `c ≥ 0` has
-`opx(n, P) = cn`, for `n ≥ c`. CORRECTED READING: the paper omits `n ≥ c`, which its lower-bound
-construction `(0, c) × (0, n) ⊆ [0, n]²` uses; for `n < c` every open `S ⊆ [0, n]²` avoids `P`, so
-`opx(n, P) = n² ≠ cn` (e.g. `c = 2`, `n = 1`: `1 ≠ 2`).
+**Continuous Turán number of a horizontal segment.** Let $a, b, c, n$ be real numbers with
+$0 \le c \le n$, and let $P = [a, a + c] \times \{b\}$ be the closed horizontal segment of length
+$c$ at height $b$. Then $\operatorname{opx}(n, P) = cn$.
+
+The hypothesis $n \ge c$ is missing from the paper, whose lower-bound construction
+$(0, c) \times (0, n) \subseteq [0, n]^2$ uses it: for $0 < n < c$ no subset of $[0, n]^2$ contains
+$P$, so $\operatorname{opx}(n, P) = n^2 \ne cn$ (for example $c = 2$ and $n = 1$).
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

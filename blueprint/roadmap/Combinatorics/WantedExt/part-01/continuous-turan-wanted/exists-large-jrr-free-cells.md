@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exists_large_Jrr_free_cells
 ---
 
-# Exists large Jrr free cells
+# Large sets of grid cells with no $r \times r$ all-ones submatrix
 
-Lemma 4.4 (the cited Kővári–Sós–Turán-type lower bound, with the paper's explicit constant):
-for `r ≥ 2` and `n ≥ 1` there is a set of at least `n^{2 - 2/(r+1)} / 2` cells of the `n × n`
-grid containing no `r × r` all-ones submatrix `J_{r,r}`, i.e. `ex(n, J_{r,r}) ≥ n^{2-2/(r+1)}/2`.
+**Large sets of grid cells with no $r \times r$ all-ones submatrix.** For all natural numbers
+$r \ge 2$ and $n \ge 1$ there is a set $S$ of cells of the $n \times n$ grid
+$\{0, \dots, n - 1\}^2$ with $|S| \ge \frac{1}{2} n^{2 - 2/(r+1)}$ that contains no $r \times r$
+all-ones submatrix: there are no sets $R, C \subseteq \{0, \dots, n - 1\}$ with $|R| = |C| = r$
+and $R \times C \subseteq S$.
+
+In the language of 0-1 matrix extremal functions this says $\operatorname{ex}(n, J_{r,r}) \ge
+\frac{1}{2} n^{2-2/(r+1)}$ for the $r \times r$ all-ones matrix $J_{r,r}$; it is the cited
+Kővári–Sós–Turán-type lower bound, with the paper's explicit constant.
 
 ## Depends on
 

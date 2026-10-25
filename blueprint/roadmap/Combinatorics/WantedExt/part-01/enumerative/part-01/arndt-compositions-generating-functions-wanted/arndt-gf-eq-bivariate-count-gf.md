@@ -6,15 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.arndtGF_eq_bivariateCountGF
 ---
 
-# Arndt GF eq bivariate Count GF
+# The Arndt generating function as a bivariate count series
 
-The Arndt generating function `arndtGF S` is `bivariateCountGF` of the Arndt counts.
+**The Arndt generating function as a bivariate count series.** For a set $S$ of natural
+numbers, let $a_S(n, m)$ be the number of Arndt compositions of $n$ with $m$ parts, all parts in
+$S$. Then the Arndt generating function $A_S(x, y)$ equals the bivariate generating function
+$\sum_{n \ge 0} \sum_{m=0}^{n} a_S(n, m) x^n y^m$ in $\mathbb{Z}[y][[x]]$.
 
 ## Depends on
 
-- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
-- [Arndt GF](../arndt-compositions-wanted/arndt-gf.md)
-- [Bivariate Count GF](bivariate-count-gf.md)
+- [Number of Arndt compositions with parts in a set](../arndt-compositions-wanted/arndt-composition-count.md)
+- [Generating function of Arndt compositions with parts in a set](../arndt-compositions-wanted/arndt-gf.md)
+- [Bivariate generating function of a two-index count](bivariate-count-gf.md)
 
 ## Sources
 

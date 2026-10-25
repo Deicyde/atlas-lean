@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.three_unitSquare_cosets_cover
 ---
 
-# Three unit Square cosets cover
+# Three unit-square cosets sum to every residue modulo an odd prime power
 
-Lemma 27: for odd prime `p`, positive `r`, and three units, the sum of
-`Ay₁`, `Ay₂ ∪ {0}`, and `Ay₃ ∪ {0}` is all of `ZMod (p^r)`, where
-`A = U(p^r)²`, with Mathlib's pointwise set product and sum; the explicit
-parentheses fix the harmless associativity convention.
+**Three unit-square cosets sum to every residue modulo an odd prime power.** Let $p$ be an
+odd prime, let $r \ge 1$, and let $A = U(p^r)^2$ be the set of squares of units of
+$\mathbb{Z}/p^r\mathbb{Z}$; for $y \in \mathbb{Z}/p^r\mathbb{Z}$ write $Ay = \{ay : a \in A\}$.
+For all units $y_1, y_2, y_3$ of $\mathbb{Z}/p^r\mathbb{Z}$, every element of
+$\mathbb{Z}/p^r\mathbb{Z}$ is a sum $x_1 + x_2 + x_3$ with $x_1 \in Ay_1$,
+$x_2 \in Ay_2 \cup \{0\}$ and $x_3 \in Ay_3 \cup \{0\}$.
 
 ## Depends on
 
-- [Unit Square Set](unit-square-set.md)
+- [Squares of units modulo n](unit-square-set.md)
 
 ## Sources
 

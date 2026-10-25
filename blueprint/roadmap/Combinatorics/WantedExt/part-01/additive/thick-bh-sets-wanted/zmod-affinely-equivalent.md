@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.ZModAffinelyEquivalent
 ---
 
-# ZMod Affinely Equivalent
+# Affine equivalence of sets of residues
 
-Sets `A₁, A₂ ⊆ ℤ/Mℤ` are affinely equivalent, `A₁ ∼ A₂`, if `A₂ = {d a + s : a ∈ A₁}`
-for some unit `d` and some `s`.
+**Affine equivalence of sets of residues.** For a natural number $M$, sets
+$A_1, A_2 \subseteq \mathbb{Z}/M\mathbb{Z}$ are affinely equivalent, written $A_1 \sim A_2$, if
+there are a unit $d$ of $\mathbb{Z}/M\mathbb{Z}$ and an element $s \in \mathbb{Z}/M\mathbb{Z}$
+such that $A_2 = \{d a + s : a \in A_1\}$.
 
 ## Depends on
 

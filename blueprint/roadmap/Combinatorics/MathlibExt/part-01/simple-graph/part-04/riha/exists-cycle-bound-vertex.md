@@ -7,21 +7,22 @@ proof: formalized
 lean: SimpleGraph.IsVertexConnected.exists_cycle_bound_vertex
 ---
 
-# Exists cycle bound vertex
+# Říha's cycle lemma
 
-In a finite 2-vertex-connected graph, every prescribed vertex lies on a cycle with a
-different vertex whose neighbors all lie on the cycle.
+**Říha's cycle lemma.** Let $G$ be a finite $2$-vertex-connected simple graph. Then for
+every vertex $x$ of $G$ there is a cycle $c$ through $x$ and a vertex $y \ne x$ that is bound
+to $c$: $y$ lies on $c$ and every neighbor of $y$ in $G$ lies on $c$.
 
 ## Depends on
 
-- [Is Vertex Connected](../vertex-connectivity/is-vertex-connected.md)
-- [Is Bound Vertex](is-bound-vertex.md)
+- [$k$-vertex-connected graph](../vertex-connectivity/is-vertex-connected.md)
+- [Bound vertices of a closed walk](is-bound-vertex.md)
 
 ## Proof depends on
 
-- [Connected](../vertex-connectivity/connected.md)
-- [Connected compl singleton](../vertex-connectivity/connected-compl-singleton.md)
-- [Exists cycle through](../vertex-connectivity/exists-cycle-through.md)
+- [A $k$-vertex-connected graph with $k \ge 1$ is connected](../vertex-connectivity/connected.md)
+- [Deleting one vertex from a $k$-vertex-connected graph with $k \ge 2$](../vertex-connectivity/connected-compl-singleton.md)
+- [Cycles through each vertex of a 2-vertex-connected graph](../vertex-connectivity/exists-cycle-through.md)
 
 ## Sources
 

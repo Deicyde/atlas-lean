@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.carlitzBetaPoly
 ---
 
-# Carlitz Beta Poly
+# Carlitz $q$-Bernoulli polynomials
 
-Carlitz's `q`-Bernoulli polynomials `β_n(x)`: the Carlitz-type sequence with associated
-sequence `(k + 1)/[k + 1]`; `β_n = β_n(0)`.
+**Carlitz $q$-Bernoulli polynomials.** For real $q$, write $[y] = (q^y - 1)/(q - 1)$. For
+natural $n$ and real $x$, Carlitz's $q$-Bernoulli polynomial is
+$\beta_n(x) = (q - 1)^{-n} \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \frac{k + 1}{[k + 1]} q^{kx}$;
+that is, $(\beta_n)$ is the Carlitz-type sequence with associated sequence
+$a_k = (k + 1)/[k + 1]$. The Carlitz $q$-Bernoulli numbers are $\beta_n = \beta_n(0)$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q Bracket](q-bracket.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

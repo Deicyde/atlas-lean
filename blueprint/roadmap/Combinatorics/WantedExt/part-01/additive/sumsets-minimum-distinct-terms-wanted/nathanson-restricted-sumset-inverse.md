@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.nathanson_restrictedSumset_inverse
 ---
 
-# Nathanson restricted Sumset inverse
+# Nathanson's inverse theorem for restricted sumsets
 
-Nathanson: if `A ⊆ ℤ`, `|A| = k ≥ 5`, `2 ≤ h ≤ k - 2` and `|h^A| = hk - h² + 1`, then `A` is
-an arithmetic progression.
+**Nathanson's inverse theorem for restricted sumsets.** Let $A$ be a finite set of integers
+with $k = |A| \ge 5$ elements and let $h$ be an integer with $2 \le h \le k - 2$. Write
+$h^{\wedge} A$ for the restricted sumset of $A$, the set of sums of $h$ distinct elements of
+$A$. If $|h^{\wedge} A| = hk - h^2 + 1$, then $A$ is an arithmetic progression of length $k$.
 
 ## Depends on
 

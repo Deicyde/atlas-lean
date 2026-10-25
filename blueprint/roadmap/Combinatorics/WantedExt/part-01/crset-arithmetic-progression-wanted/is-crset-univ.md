@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isCRSet_univ
 ---
 
-# Is CRSet univ
+# The whole commutative semigroup is a CR-set
 
-The whole semigroup is a CR-set.
+**The whole commutative semigroup is a CR-set.** If $S$ is a nonempty commutative semigroup,
+then $S$ itself is a CR-set in $S$.
 
 ## Depends on
 
-- [Is CRSet](is-crset.md)
+- [CR-set](is-crset.md)
 
 ## Sources
 

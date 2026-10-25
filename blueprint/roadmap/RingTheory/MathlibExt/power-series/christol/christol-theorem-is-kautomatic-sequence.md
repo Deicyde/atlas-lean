@@ -12,13 +12,13 @@ Christol's theorem in DFAO form: algebraicity iff automaticity.
 
 ## Depends on
 
-- [Is KAutomatic Sequence](../../../../Combinatorics/MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
+- [Automatic sequences via finite automata](../../../../Combinatorics/MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
 
 ## Proof depends on
 
-- [Is KAutomatic](../../../../Combinatorics/MathlibExt/part-02/words/automatic/is-kautomatic.md)
+- [$k$-automatic sequence (finite-kernel definition)](../../../../Combinatorics/MathlibExt/part-02/words/automatic/is-kautomatic.md)
 - [Christol theorem](christol-theorem.md)
-- [Is KAutomatic iff is KAutomatic Sequence](../../../../Combinatorics/MathlibExt/part-02/words/automatic/is-kautomatic-iff-is-kautomatic-sequence.md)
+- [Eilenberg's theorem: finite kernel iff automatic](../../../../Combinatorics/MathlibExt/part-02/words/automatic/is-kautomatic-iff-is-kautomatic-sequence.md)
 
 ## Sources
 

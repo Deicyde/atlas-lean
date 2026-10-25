@@ -6,18 +6,19 @@ statement: formalized
 lean: MathlibExt.Combinatorics.ConjectureOfMartonWanted.ConjectureOfMarton.theorem_1_2
 ---
 
-# Theorem 1 2
+# Polynomial Freiman–Ruzsa theorem over $\mathbb{F}_2$
 
-Statement of Theorem 1.2:
+**Polynomial Freiman–Ruzsa theorem over $\mathbb{F}_2$.** Let $n$ be a natural number, let
+$A$ be a nonempty subset of $\mathbb{F}_2^n$, and let $K$ be a real number such that the sumset
+$A + A = \{a + b : a, b \in A\}$ satisfies $|A + A| \le K |A|$. Then there is a subgroup $H$ of
+$\mathbb{F}_2^n$ with $|H| \le |A|$ such that $A$ is covered by at most $2K^{12}$ cosets of $H$:
+there is a finite set $T \subseteq \mathbb{F}_2^n$ with $|T| \le 2K^{12}$ and $A \subseteq T + H$.
 
-Suppose that `A ⊂ (𝔽₂)ⁿ` is a set with `|A + A| ≤ K|A|`. Then `A` is covered by at most `2 K ^ 12`
-cosets of some subgroup `H ≤ (𝔽₂)ⁿ` of size at most `|A|`.
-
-Note that the set `A` must be nonempty, but this is left implicit in the paper.
+The set $A$ must be nonempty, which the paper leaves implicit.
 
 ## Depends on
 
-- [F](f.md)
+- [The vector space $\mathbb{F}_2^n$](f.md)
 
 ## Sources
 

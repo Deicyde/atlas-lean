@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.centralBinomPowSum_harmonic_recursion
 ---
 
-# Central Binom Pow Sum harmonic recursion
+# Recurrence for central binomial sums with harmonic numbers
 
-Theorem 2: `S_0^H(n) = (2n+1) 2^{-2n} C(2n,n) (H_n - 2) + 2`, and for `r ≥ 1`
-`(2r+1) S_r^H(n) = n^r (2n+1) 2^{-2n} C(2n,n) (H_n + 1) + 2(-1)^r - S_r(n)
-+ 2 ∑_{j=1}^{r-1} C(r,j+1) (-1)^{j+1} S_{r-j}^H(n) - 2 ∑_{j=0}^{r} C(r+1,j) (-1)^{r-j} S_j(n)`.
+**Recurrence for central binomial sums with harmonic numbers.** For a natural number $n$,
+let $H_m = \sum_{i=1}^{m} 1/i$ be the harmonic numbers, $c_n = \binom{2n}{n}/4^n$, and for natural
+$r$ let $S_r(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r$ and
+$S_r^H(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r H_k$, with $0^0 = 1$. Then
+
+$$S_0^H(n) = (2n+1)\, c_n (H_n - 2) + 2,$$
+
+and for every $r \ge 1$
+
+$$(2r+1) S_r^H(n) = n^r (2n+1)\, c_n (H_n + 1) + 2(-1)^r - S_r(n) +
+2 \sum_{j=1}^{r-1} \binom{r}{j+1} (-1)^{j+1} S_{r-j}^H(n) -
+2 \sum_{j=0}^{r} \binom{r+1}{j} (-1)^{r-j} S_j(n).$$
 
 ## Depends on
 
-- [Central Binom Pow Sum](central-binom-pow-sum.md)
+- [Weighted central binomial sum](central-binom-pow-sum.md)
 
 ## Sources
 

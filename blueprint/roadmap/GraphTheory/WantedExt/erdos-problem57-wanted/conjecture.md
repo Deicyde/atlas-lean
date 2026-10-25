@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Odd Cycle Lengths](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-01/circumference/odd-cycle-lengths.md)
+- [Odd cycle lengths](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-01/circumference/odd-cycle-lengths.md)
 
 ## Sources
 

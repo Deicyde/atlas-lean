@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.lunarHoeffdingExtremalSet_ncard_le
 ---
 
-# Lunar Hoeffding Extremal Set ncard le
+# Bound on the number of Hoeffding extremal lunar numbers
 
-Lemma 24: for fixed `b ≥ 2` there is `C > 0` such that
-`|ℋ_b^n(d)| ≤ C n² e^{-d²/(4(n+2))} bⁿ` for all `n ≥ 1` and `d > 0`.
+**Bound on the number of Hoeffding extremal lunar numbers.** Fix an integer $b \ge 2$. There is
+a constant $C > 0$ such that for every integer $n \ge 1$ and every real $d > 0$, the set
+$\mathcal{H}_b^n(d)$ of $d$-Hoeffding extremal lunar numbers of base $b$ and degree at most $n$
+has at most $C n^2 e^{-d^2/(4(n+2))} b^n$ elements.
 
 ## Depends on
 
-- [Lunar Hoeffding Extremal Set](lunar-hoeffding-extremal-set.md)
+- [Hoeffding extremal lunar numbers](lunar-hoeffding-extremal-set.md)
 
 ## Sources
 

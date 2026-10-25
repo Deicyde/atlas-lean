@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.isDistinctLinkIndep_empty
 ---
 
-# Is Distinct Link Indep empty
+# The empty set is independent in the distinct link graph
 
-The empty set is independent in every distinct link graph.
+**The empty set is independent in the distinct link graph.** For every set $G$ with an
+addition and all $S, B \subseteq G$, the empty set is an independent set of the distinct link
+graph $L^*_S[B]$.
 
 ## Depends on
 
-- [Is Distinct Link Indep](is-distinct-link-indep.md)
+- [Independent sets of the distinct link graph](is-distinct-link-indep.md)
 
 ## Proof depends on
 
-- [Distinct Link Adj](distinct-link-adj.md)
-- [Distinct Link Loop](distinct-link-loop.md)
+- [Edges of the distinct link graph](distinct-link-adj.md)
+- [Loops of the distinct link graph](distinct-link-loop.md)
 
 ## Sources
 

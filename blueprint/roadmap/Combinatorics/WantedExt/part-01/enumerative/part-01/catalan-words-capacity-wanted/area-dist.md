@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.areaDist
 ---
 
-# Area Dist
+# Area distribution
 
-The area distribution `∑_{w ∈ S} q^{area w}` of a finite set of words.
+**Area distribution.** For a finite set $S$ of words of length $n$ with letters in the
+natural numbers, the area distribution of $S$ is the polynomial
+$\sum_{w \in S} q^{\operatorname{area}(w)}$ in $\mathbb{Z}[q]$, where the area of a word is the
+sum of its letters.
 
 ## Depends on
 

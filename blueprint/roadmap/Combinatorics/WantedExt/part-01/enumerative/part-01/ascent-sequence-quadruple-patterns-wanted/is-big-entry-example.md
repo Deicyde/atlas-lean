@@ -6,18 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.isBigEntry_example
 ---
 
-# Is Big Entry example
+# Big entries of $00203413$
 
-In `00203413` the entries `2` (position 3) and `4` (position 6) are big, and the `1` at
-position 7 is not.
+**Big entries of $00203413$.** In the word $w = 00203413$, with positions numbered from $1$,
+the entries $w_3 = 2$ and $w_6 = 4$ are big entries and the entry $w_7 = 1$ is not.
 
 ## Depends on
 
-- [Is Big Entry](is-big-entry.md)
+- [Big entry](is-big-entry.md)
 
 ## Proof depends on
 
-- [Word Weak Ascents](word-weak-ascents.md)
+- [Number of weak ascents of a word](word-weak-ascents.md)
 
 ## Sources
 

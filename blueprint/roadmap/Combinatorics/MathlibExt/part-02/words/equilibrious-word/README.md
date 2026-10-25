@@ -4,5 +4,5 @@ navigation: module
 
 # Equilibrious Word
 
-- [Is Equilibrious Word](is-equilibrious-word.md)
-- [Is Equilibrious Word reverse](is-equilibrious-word-reverse.md)
+- [Equilibrious binary words](is-equilibrious-word.md)
+- [Reversal preserves equilibrious words](is-equilibrious-word-reverse.md)

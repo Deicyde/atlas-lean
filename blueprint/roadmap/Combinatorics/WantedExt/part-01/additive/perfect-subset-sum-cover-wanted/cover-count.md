@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.PerfectSubsetSumCover.coverCount
 ---
 
-# Cover Count
+# Cover count
 
-`coverCount s g` is the number of index sets `I` with `∑ i ∈ I, s i = g`: the number
-of times the colored multiset `s` covers `g` by its subset sums (the empty set covers `0`).
+**Cover count.** Let $G$ be an abelian group, $s = (s_i)_{i \in \iota}$ a family in $G$
+indexed by a finite type $\iota$ (a colored multiset), and $g \in G$. The cover count of $g$ by
+$s$ is the number of index sets $I \subseteq \iota$ with $\sum_{i \in I} s_i = g$: the number of
+times $s$ covers $g$ by its subset sums (the empty set covers $0$).
 
 ## Depends on
 

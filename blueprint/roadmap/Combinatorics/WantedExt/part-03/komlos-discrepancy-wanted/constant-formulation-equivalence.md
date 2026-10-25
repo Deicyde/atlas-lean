@@ -15,8 +15,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Uniform Rectangular Bound](../../../MathlibExt/part-03/matrix-discrepancy/uniform-rectangular-bound.md)
-- [Komlos Constant](../../../MathlibExt/part-03/matrix-discrepancy/komlos-constant.md)
+- [Uniform discrepancy bound for vectors in the unit ball](../../../MathlibExt/part-03/matrix-discrepancy/uniform-rectangular-bound.md)
+- [Komlós constant](../../../MathlibExt/part-03/matrix-discrepancy/komlos-constant.md)
 
 ## Sources
 

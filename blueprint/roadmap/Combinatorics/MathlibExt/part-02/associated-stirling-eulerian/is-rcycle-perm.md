@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsRCyclePerm
 ---
 
-# Is RCycle Perm
+# Permutations with all cycles of length $r$
 
-An `r`-cycle permutation of `Fin n` (the paper's `(r)`-cycle permutations, the set
-`S_n^r` of Corollary 25): every cycle, fixed points included as one-cycles, has length
-exactly `r`, i.e. every `σ`-orbit has `r` elements. The condition is vacuous for `Fin 0`.
+**Permutations with all cycles of length $r$.** A permutation $\sigma$ of
+$\{0, 1, \dots, n-1\}$ is an $r$-cycle permutation when every cycle of $\sigma$, fixed points
+counted as cycles of length one, has exactly $r$ elements: for every point $i$, exactly $r$
+points $j$ satisfy $\sigma^k(i) = j$ for some integer $k$. For $n = 0$ the condition holds for
+every $r$.
+
+These are the paper's $(r)$-cycle permutations, the set $S_n^r$ of Corollary 25.
 
 ## Depends on
 

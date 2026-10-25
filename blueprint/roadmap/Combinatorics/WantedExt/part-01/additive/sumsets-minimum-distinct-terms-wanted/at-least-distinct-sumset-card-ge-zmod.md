@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.atLeastDistinctSumset_card_ge_zmod
 ---
 
-# At Least Distinct Sumset card ge zmod
+# Sharp lower bound for sums with at least $r$ distinct terms modulo a prime
 
-For a nonempty `A ⊆ ℤ_p` with `|A| = k`, `1 ≤ r ≤ k` and `h ≥ r`,
-`|h^{(≥ r)}A| ≥ min{p, h(k - 1) - r(r - 1) + 1}`; the bound is sharp: whenever
-`h(k - 1) - r(r - 1) + 1 ≤ p` (and `k ≤ p`) some `k`-element set attains it.
+**Sharp lower bound for sums with at least $r$ distinct terms modulo a prime.** Let $p$ be a
+prime, and for natural numbers $h, r$ and a finite set $A \subseteq \mathbb{Z}/p\mathbb{Z}$ write
+$h^{(\ge r)}A$ for the set of sums of $h$ elements of $A$, repetitions allowed, in which at least
+$r$ distinct elements occur. If $A$ is nonempty with $|A| = k$, $1 \le r \le k$ and $r \le h$,
+then $|h^{(\ge r)}A| \ge \min\{p,\ h(k - 1) - r(r - 1) + 1\}$. The bound is sharp: for all
+natural numbers $k, r, h$ with $1 \le r \le k \le p$, $r \le h$ and
+$h(k - 1) - r(r - 1) + 1 \le p$ there is a set $A \subseteq \mathbb{Z}/p\mathbb{Z}$ with
+$|A| = k$ and $|h^{(\ge r)}A| = h(k - 1) - r(r - 1) + 1$.
 
 ## Depends on
 
-- [At Least Distinct Sumset](at-least-distinct-sumset.md)
+- [Sums with at least $r$ distinct terms](at-least-distinct-sumset.md)
 
 ## Sources
 

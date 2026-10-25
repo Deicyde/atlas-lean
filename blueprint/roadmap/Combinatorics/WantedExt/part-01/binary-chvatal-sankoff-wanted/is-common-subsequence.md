@@ -6,14 +6,17 @@ statement: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.IsCommonSubsequence
 ---
 
-# Is Common Subsequence
+# Common subsequence
 
-`z` is an order-preserving common subsequence of the two binary strings.
-Using `List.Sublist` retains repeated symbols and their multiplicities.
+**Common subsequence.** For binary strings $x$ and $y$ of length $n$, a finite sequence of bits
+$z$ is a common subsequence of $x$ and $y$ if $z$ is obtained both from $x$ and from $y$ by
+deleting some (possibly no) entries and keeping the remaining entries in order.
+
+Repeated symbols are kept with their multiplicities.
 
 ## Depends on
 
-- [Binary String](binary-string.md)
+- [Binary strings](binary-string.md)
 
 ## Sources
 

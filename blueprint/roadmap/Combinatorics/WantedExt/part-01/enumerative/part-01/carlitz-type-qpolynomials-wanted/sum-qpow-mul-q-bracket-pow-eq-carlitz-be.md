@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.sum_qpow_mul_qBracket_pow_eq_carlitzBeta
 ---
 
-# Sum qpow mul q Bracket pow eq carlitz Beta
+# Weighted $q$-power sums via Carlitz's $q$-Bernoulli polynomials
 
-`n ∑_{k<N} q^{2k} [k]^{n-1} + (q - 1) ∑_{k<N} q^k [k]^n = q^N β_n(N) - β_n`.
+**Weighted $q$-power sums via Carlitz's $q$-Bernoulli polynomials.** Let $q > 0$ with
+$q \ne 1$, let $[x] = (q^x - 1)/(q - 1)$, and let $\beta_n(x)$ be Carlitz's $q$-Bernoulli
+polynomials, with $\beta_n = \beta_n(0)$. Then for all natural numbers $n$ and $N$,
+
+$$n \sum_{k=0}^{N-1} q^{2k} [k]^{n-1} + (q - 1) \sum_{k=0}^{N-1} q^k [k]^n =
+q^N \beta_n(N) - \beta_n,$$
+
+where $0^0 = 1$, and the first term is $0$ when $n = 0$.
 
 ## Depends on
 
-- [Carlitz Beta Poly](carlitz-beta-poly.md)
-- [Q Bracket](q-bracket.md)
+- [Carlitz $q$-Bernoulli polynomials](carlitz-beta-poly.md)
+- [The $q$-analogue of a real number](q-bracket.md)
 
 ## Sources
 

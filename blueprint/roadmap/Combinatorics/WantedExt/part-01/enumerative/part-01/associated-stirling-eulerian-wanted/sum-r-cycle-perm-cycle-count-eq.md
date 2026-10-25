@@ -5,18 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.sum_rCyclePerm_cycleCount_eq
 ---
 
-# Sum r Cycle Perm cycle Count eq
+# Excedance and cycle polynomial of permutations with k cycles, all of length r
 
-Corollary 24: for `r ≥ 2`, `n` and `k`, summing over the permutations `π` of `n`
-objects with all cycle lengths equal to `r` and exactly `k` cycles,
-`∑ x^{e(π)} q^{c(π)} = (rk)!/((r!)^k k!) x^k q^k A_{r-1}(x)^k` if `n = kr`, and `0`
-otherwise. The quotient `(rk)!/((r!)^k k!)` is an exact natural-number division.
+**Excedance and cycle polynomial of permutations with k cycles, all of length r.** Let $R$ be
+a commutative ring, let $x, q \in R$, let $r \ge 2$ and let $n, k \ge 0$. For a permutation
+$\pi$ write $e(\pi)$ for its number of excedances (the $i$ with $\pi(i) > i$) and $c(\pi)$ for
+its number of cycles, fixed points included, and let $A_{r-1}(x) = \sum_{\sigma} x^{e(\sigma)}$,
+summed over the permutations $\sigma$ of $\{1, \dots, r - 1\}$. Summing over the permutations
+$\pi$ of $\{1, \dots, n\}$ that have exactly $k$ cycles, all of length exactly $r$,
+
+$$\sum_{\pi} x^{e(\pi)} q^{c(\pi)} = \frac{(rk)!}{(r!)^k\, k!}\, x^k q^k A_{r-1}(x)^k$$
+
+if $n = kr$, and the sum is $0$ otherwise.
+
+The quotient $(rk)!/((r!)^k k!)$ is an exact natural-number division.
 
 ## Depends on
 
-- [Is RCycle Perm](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
+- [Permutations with all cycles of length $r$](../../../../../MathlibExt/part-02/associated-stirling-eulerian/is-rcycle-perm.md)
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 
 ## Sources
 

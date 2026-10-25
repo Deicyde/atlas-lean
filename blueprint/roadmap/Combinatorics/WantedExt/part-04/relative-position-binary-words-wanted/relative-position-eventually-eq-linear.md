@@ -24,7 +24,7 @@ empty). The instance `s = (ab)^{-q}` of (b) is omitted, being a special case.
 
 ## Depends on
 
-- [Is Equilibrious Word](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
+- [Equilibrious binary words](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
 - [Is Substitution Image](is-substitution-image.md)
 - [Deletion](deletion.md)
 - [Relative Position](relative-position.md)

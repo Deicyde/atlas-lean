@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.smoothMaxEndCapacityDist_recurrence
 ---
 
-# Smooth Max End Capacity Dist recurrence
+# Recurrence for the capacity distribution of smooth words ending in their largest letter
 
-Mansour and Shattuck's Lemma 7, recurrence (27): for `1 < i < n`,
-`s(n,i) = s(n-1,i) + s(n-1,i-1) + ∑_{m=1}^{n-i-1} q^{mi} s(n-m-1,i) t(m,i-1;1/q)`, in
-`ℤ[q, q⁻¹]`.
+**Recurrence for the capacity distribution of smooth words ending in their largest letter.**
+Let $s(n, i; q)$ be the capacity distribution of the smooth words of length $n$ that end in $i$ and
+have largest letter $i$, and let $t(m, j; q)$ be the area distribution (the area of a word is the
+sum of its letters) of the words of length $m$ over $\{1, \dots, j\}$ that begin and end with $j$
+and whose adjacent letters differ by at most $1$. For $1 < i < n$, in the ring
+$\mathbb{Z}[q, q^{-1}]$ of Laurent polynomials,
+
+$$
+s(n, i; q) = s(n - 1, i; q) + s(n - 1, i - 1; q) +
+\sum_{m=1}^{n-i-1} q^{mi}\, s(n - m - 1, i; q)\, t(m, i - 1; 1/q).
+$$
 
 ## Depends on
 
-- [Smooth Max End Capacity Dist](smooth-max-end-capacity-dist.md)
-- [Smooth Plateau Area Dist](smooth-plateau-area-dist.md)
+- [Capacity distribution of smooth words ending in their largest letter](smooth-max-end-capacity-dist.md)
+- [Area distribution of smooth words from $j$ to $j$](smooth-plateau-area-dist.md)
 
 ## Sources
 

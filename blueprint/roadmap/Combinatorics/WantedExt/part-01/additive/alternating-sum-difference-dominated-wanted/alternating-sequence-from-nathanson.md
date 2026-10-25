@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.alternating_sequence_from_nathanson
 ---
 
-# Alternating sequence from nathanson
+# Alternating sum- and difference-dominated sets from Nathanson's construction
 
-Theorem 3: let `A = A* ∪ {m}` be as in Theorem 2 with `m ≡ 0 (mod 4)` and
-`d ∈ {m / 4, 3m / 4}`. Then `A₁ = A ∪ {-d, (k + 1)m - d}` is MSTD. For `r ≥ 1` define
-`A_{2r} = A_{2r-1} ∪ {(k + r + 1)m - d}` and `A_{2r+1} = A_{2r-1} ∪ {-rm - d, (k + r + 1)m - d}`.
-Then `A_{2r}` is MDTS, `A_{2r+1}` is MSTD, the sequence is strictly increasing, and with
-`A*_i = A_i ∖ {m}`: `m + A*_{2r-1} ⊆ A*_{2r-1} + A*_{2r-1}`,
-`m - A*_{2r-1} ⊆ A*_{2r-1} - A*_{2r-1}`, `|A_{2r-1} + A_{2r-1}| = |A_{2r-1} - A_{2r-1}| + 1`,
-and `|A_{2r} + A_{2r}| ≤ |A_{2r} - A_{2r}| - m + 3`. The extracted condition on `d` (control
-glyphs in the record) is read as `d ∈ {m/4, 3m/4}`, as in the paper's proof, which treats
-exactly these two values; the lost cardinality bars in items 3 and 4 are restored.
+**Alternating sum- and difference-dominated sets from Nathanson's construction.** For a set
+$S$ of integers write $S + S = \{s + s' : s, s' \in S\}$, $S - S = \{s - s' : s, s' \in S\}$,
+$c + S = \{c + s : s \in S\}$ and $c - S = \{c - s : s \in S\}$. Let $m$, $d$, $k$ be integers with
+$m \ge 4$, $m \equiv 0 \pmod 4$ and $4d = m$ or $4d = 3m$, and suppose $k \ge 3$ if $2d < m$ and
+$k \ge 4$ if $2d > m$. Let $B = \{0, 1, \dots, m - 1\} \setminus \{d\}$,
+$L = \{jm - d : 1 \le j \le k\}$ and $A^* = B \cup L \cup \{(k + 1)m - 2d - b : b \in B\}$. Let
+$A_1, A_2, A_3, \dots$ be finite sets of integers with $A_1 = A^* \cup \{m, -d, (k + 1)m - d\}$
+and, for every $r \ge 1$, $A_{2r} = A_{2r-1} \cup \{(k + r + 1)m - d\}$ and
+$A_{2r+1} = A_{2r-1} \cup \{-rm - d, (k + r + 1)m - d\}$. Then $|A_1 - A_1| < |A_1 + A_1|$, and
+for every $r \ge 1$, writing $A'_{2r-1} = A_{2r-1} \setminus \{m\}$: we have
+$|A_{2r} + A_{2r}| < |A_{2r} - A_{2r}|$ and $|A_{2r+1} - A_{2r+1}| < |A_{2r+1} + A_{2r+1}|$;
+$A_{2r-1} \subsetneq A_{2r} \subsetneq A_{2r+1}$; $m + A'_{2r-1} \subseteq A'_{2r-1} + A'_{2r-1}$
+and $m - A'_{2r-1} \subseteq A'_{2r-1} - A'_{2r-1}$;
+$|A_{2r-1} + A_{2r-1}| = |A_{2r-1} - A_{2r-1}| + 1$; and
+$|A_{2r} + A_{2r}| \le |A_{2r} - A_{2r}| - m + 3$.
 
 ## Depends on
 

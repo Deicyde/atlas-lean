@@ -7,15 +7,16 @@ proof: formalized
 lean: SimpleGraph.Cocolorable.cochromaticNumber_eq_sInf
 ---
 
-# Cochromatic Number eq s Inf
+# Cochromatic number as a minimum
 
-Finite cocolorability description of the cochromatic number, mirroring
-`Colorable.chromaticNumber_eq_sInf`.
+**Cochromatic number as a minimum.** If a graph $G$ is cocolorable with $n$ colors for some
+natural number $n$, then the cochromatic number of $G$ equals the least natural number $m$ such
+that $G$ is cocolorable with $m$ colors.
 
 ## Depends on
 
-- [Cocolorable](cocolorable.md)
-- [Cochromatic Number](cochromatic-number.md)
+- [Cocolorable graphs](cocolorable.md)
+- [Cochromatic number](cochromatic-number.md)
 
 ## Sources
 

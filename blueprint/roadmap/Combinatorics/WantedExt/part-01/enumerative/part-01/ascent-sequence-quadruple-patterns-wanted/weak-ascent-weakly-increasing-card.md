@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.weakAscent_weaklyIncreasing_card
 ---
 
-# Weak Ascent weakly Increasing card
+# Weakly increasing weak ascent sequences: Catalan and Motzkin counts
 
-Proposition 1: (i) the weakly increasing weak ascent sequences of length `n` are
-counted by the Catalan number `C_n`; (ii) those avoiding `000` are counted by the
-Motzkin number `M_n`. Stated for all `n` (at `n = 0` both sides are `1`).
+**Weakly increasing weak ascent sequences: Catalan and Motzkin counts.** Let $C_n$ denote the
+Catalan numbers and $M_n$ the Motzkin numbers. For every natural number $n$, (i) the number of
+weakly increasing weak ascent sequences of length $n$ is $C_n$, and (ii) the number of weakly
+increasing weak ascent sequences of length $n$ that avoid the pattern $000$ is $M_n$.
+
+At $n = 0$ both counts are $1$, from the empty sequence.
 
 ## Depends on
 
-- [Contains Pattern](contains-pattern.md)
-- [Is Weak Ascent Seq](is-weak-ascent-seq.md)
+- [Pattern containment](contains-pattern.md)
+- [Weak ascent sequence](is-weak-ascent-seq.md)
 - [Motzkin numbers as a Catalan-weighted binomial sum](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
 
 ## Sources

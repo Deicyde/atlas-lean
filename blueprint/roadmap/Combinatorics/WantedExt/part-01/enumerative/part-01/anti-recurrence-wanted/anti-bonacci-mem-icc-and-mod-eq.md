@@ -5,17 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.antiBonacci_mem_Icc_and_modEq
 ---
 
-# Lemma 3
+# Intervals and residues of the anti-$k$-bonacci numbers
 
-**Lemma 3** (anti-`k`-bonacci numbers, `a = (1, …, 1)`). Let `k > 1`, `i = ⌊k/2⌋` and
-`κ = k² + 1`. Then `A_n ∈ I_n = [κ(n - 1) + 1, κn]` and `A_n ≡ ik + a_n (mod κ)` for some
-`1 ≤ a_n ≤ k` if `k` is even and `i + 1 ≤ a_n ≤ i + k` if `k` is odd. The paper's "for
-`k > 2`" attached to `κ` is not needed: `k = 2` is the anti-Fibonacci case (Zaslavsky's formula
-`A_n = 5n - 2 + PD_{n-1}`).
+**Intervals and residues of the anti-$k$-bonacci numbers.** Let $k > 1$, let $A_n$ be the
+anti-recurrence numbers of the linear form $(1, \dots, 1)$ of length $k$, and put
+$i = \lfloor k/2 \rfloor$ and $\kappa = k^2 + 1$. Then for every $n \ge 1$, $A_n$ lies in the
+interval $[\kappa(n - 1) + 1, \kappa n]$, and $A_n \equiv ik + c \pmod{\kappa}$ for some natural
+number $c$ with $1 \le c \le k$ if $k$ is even and $i + 1 \le c \le i + k$ if $k$ is odd.
+
+The paper attaches the condition $k > 2$ to $\kappa$; it is not needed, since $k = 2$ is the
+anti-Fibonacci case (Zaslavsky's formula $A_n = 5n - 2 + PD_{n-1}$, with $PD$ the
+period-doubling sequence).
 
 ## Depends on
 
-- [Anti Recurrence](anti-recurrence.md)
+- [Anti-recurrence numbers](anti-recurrence.md)
 
 ## Sources
 

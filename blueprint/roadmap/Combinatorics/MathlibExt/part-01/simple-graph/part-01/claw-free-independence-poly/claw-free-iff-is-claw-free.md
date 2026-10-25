@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.clawFree_iff_isClawFree
 ---
 
-# Claw Free iff is Claw Free
+# The two definitions of claw-free agree
 
-The Wanted `clawFree` predicate agrees with `SimpleGraph.IsClawFree`.
+**The two definitions of claw-free agree.** A simple graph on a finite vertex set is a
+claw-free finite graph if and only if it is a claw-free graph in the sense defined for graphs on
+arbitrary vertex sets.
 
 ## Depends on
 
-- [Claw Free](claw-free.md)
-- [Is Claw Free](is-claw-free.md)
+- [Claw-free finite graph](claw-free.md)
+- [Claw-free graph](is-claw-free.md)
 
 ## Sources
 

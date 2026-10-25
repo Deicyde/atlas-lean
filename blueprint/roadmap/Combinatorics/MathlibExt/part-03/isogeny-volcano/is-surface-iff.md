@@ -7,14 +7,15 @@ proof: formalized
 lean: IsogenyVolcano.isSurface_iff
 ---
 
-# Is Surface iff
+# Surface vertices are those of level zero
 
-Surface means level value zero.
+**Surface vertices are those of level zero.** A vertex $v$ of an $\ell$-isogeny volcano $C$
+lies on the surface of $C$ if and only if the level of $v$, as a natural number, is $0$.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
-- [Is Surface](is-surface.md)
+- [Isogeny volcano](isogeny-volcano.md)
+- [Surface of a volcano](is-surface.md)
 
 ## Sources
 

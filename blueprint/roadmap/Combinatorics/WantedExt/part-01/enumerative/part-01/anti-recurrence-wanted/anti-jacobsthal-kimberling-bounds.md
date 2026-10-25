@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.antiJacobsthal_kimberling_bounds
 ---
 
-# Theorem 2
+# Kimberling's bounds for the anti-Jacobsthal numbers
 
-**Theorem 2.** The anti-Jacobsthal numbers (`a = (2, 1)`) satisfy Kimberling's bounds (2):
-for `n ≥ 1`, `0 ≤ A_n - 7n + 4 ≤ 3`, `0 ≤ 3B¹_n - 7n + 6 ≤ 4` and `0 ≤ 3B²_n - 7n + 2 ≤ 3`.
+**Kimberling's bounds for the anti-Jacobsthal numbers.** Let $A_n$ be the anti-recurrence
+numbers of the linear form $a = (2, 1)$ (the anti-Jacobsthal numbers), let $B_m$ be its
+non-anti-recurrence numbers, and put $B^1_n = B_{2n-1}$ and $B^2_n = B_{2n}$. Then for every
+$n \ge 1$ we have $0 \le A_n - 7n + 4 \le 3$, $0 \le 3B^1_n - 7n + 6 \le 4$ and
+$0 \le 3B^2_n - 7n + 2 \le 3$.
 
 ## Depends on
 
-- [Anti Recurrence](anti-recurrence.md)
-- [Anti Recurrence Complement](anti-recurrence-complement.md)
+- [Anti-recurrence numbers](anti-recurrence.md)
+- [Non-anti-recurrence numbers](anti-recurrence-complement.md)
 
 ## Sources
 

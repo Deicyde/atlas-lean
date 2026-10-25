@@ -6,18 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.opx_empty
 ---
 
-# Opx empty
+# Continuous Turán number of the empty pattern
 
-The empty pattern is contained in every set, so `opx(n, ∅) = 0`.
+**Continuous Turán number of the empty pattern.** For every real number $n$,
+$\mathrm{opx}(n, \emptyset) = 0$: every set contains the empty pattern, so no set avoids it.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Proof depends on
 
-- [Point Set Contains Pattern](point-set-contains-pattern.md)
-- [Point Set Contains Pattern empty](point-set-contains-pattern-empty.md)
+- [Containment of planar point sets](point-set-contains-pattern.md)
+- [Every planar set contains the empty pattern](point-set-contains-pattern-empty.md)
 
 ## Sources
 

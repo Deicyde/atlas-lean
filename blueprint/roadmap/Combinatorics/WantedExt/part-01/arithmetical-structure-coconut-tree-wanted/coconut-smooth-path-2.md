@@ -5,17 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.IsArithmeticalStructure.coconutSmoothPath
 ---
 
-# Coconut Smooth Path
+# Path smoothing preserves arithmetical structures on coconut trees
 
-Proposition 3.3 (and the `v_1` case of Proposition 3.6): if `(d, r)` is an arithmetical
-structure on `CT(p + 1, s)` with `s ≥ 1` and `d_{i+1} = 1` at a non-central path vertex
-(`i < p`), smoothing there gives an arithmetical structure on `CT(p, s)`.
+**Path smoothing preserves arithmetical structures on coconut trees.** Let $s \ge 1$ and let
+$(d, r)$ be an arithmetical structure on the coconut tree $CT(p + 1, s)$, whose path vertices are
+$v_1, \dots, v_{p+1}$ with central vertex $v_{p+1}$. If $d(v_k) = 1$ for some non-central path
+vertex $v_k$ (that is, $1 \le k \le p$), then smoothing $(d, r)$ at $v_k$ gives an arithmetical
+structure on $CT(p, s)$.
 
 ## Depends on
 
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
-- [Coconut Smooth Path](coconut-smooth-path.md)
-- [Coconut Tree](coconut-tree.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
+- [Smoothing at a path vertex of a coconut tree](coconut-smooth-path.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

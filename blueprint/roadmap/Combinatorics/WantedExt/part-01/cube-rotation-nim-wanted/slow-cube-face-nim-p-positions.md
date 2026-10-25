@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.slowCubeFaceNim_pPositions
 ---
 
-# Slow Cube Face Nim p Positions
+# P-positions of slow face Nim on a cube
 
-In the slow version of `C_F` (remove exactly one token from one face) the P-positions are
-exactly those with `a + b + c + A + B + C` even: no move joins two such positions, and every
-other position has a move to one.
+**P-positions of slow face Nim on a cube.** Write a position of the cube game as
+$p = (a, b, c, A, B, C)$, the numbers of tokens on the six faces of a cube. A slow face move is
+a face move that removes exactly one token from one face. Let $P$ be the set of positions with
+$a + b + c + A + B + C$ even. Then no slow face move leads from a position in $P$ to a position
+in $P$, and from every position not in $P$ some slow face move leads to a position in $P$.
+
+Since every play terminates, these two properties make $P$ the set of P-positions of the slow
+game under normal play.
 
 ## Depends on
 
-- [Cube Face Move](cube-face-move.md)
+- [Face move on the cube](cube-face-move.md)
 
 ## Sources
 

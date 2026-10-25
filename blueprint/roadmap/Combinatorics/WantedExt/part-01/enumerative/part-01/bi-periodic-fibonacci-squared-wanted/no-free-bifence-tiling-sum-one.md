@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.noFreeBifenceTilingSum_one
 ---
 
-# No Free Bifence Tiling Sum one
+# Tilings of the one-cell board with no free bifence
 
-`R_1 = a²`.
+**Tilings of the one-cell board with no free bifence.** For all elements $a$, $b$ of a
+commutative semiring, the weighted number $R_1$ of tilings of the $1$-board with no free bifence,
+with half-square weights $a$ and $b$, equals $a^2$.
 
 ## Depends on
 
-- [No Free Bifence Tiling Sum](no-free-bifence-tiling-sum.md)
+- [Weighted tilings with no free bifence](no-free-bifence-tiling-sum.md)
 
 ## Proof depends on
 
-- [Fence Tiling Weight](fence-tiling-weight.md)
-- [Fence Tilings](fence-tilings.md)
+- [Weight of a fence tiling](fence-tiling-weight.md)
+- [Fence tilings of a board](fence-tilings.md)
 
 ## Sources
 

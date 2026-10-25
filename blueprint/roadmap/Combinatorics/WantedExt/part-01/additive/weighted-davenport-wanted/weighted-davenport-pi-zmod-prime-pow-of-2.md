@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport_pi_zmod_prime_pow_of_not_dvd
 ---
 
-# Weighted Davenport pi zmod prime pow of not dvd
+# Weighted Davenport constant of abelian $p$-groups, non-divisible case
 
-Same setting with `β ∤ p^{e_1}`: writing `s = p^{e_1} mod β` (so `1 ≤ s < β`), if
-`(p^{e_j - e_1} - 1)β < s p^{e_j - e_1}` for every `j ≥ 2`, then
-`D_A(G) = 1 + ∑ (⌈p^{e_i}/β⌉ - 1)`. The paper's `β ∤ p^{e_1}`, `p^{e_1} ≡ s (mod β)` and
-`1 ≤ s < β` are encoded as `0 < p^{e_1} % β` with `s = p^{e_1} % β`; `j ∈ {2, …, r}` is
-`0 < j` in `Fin r`.
+**Weighted Davenport constant of abelian $p$-groups, non-divisible case.** Let $p$ be a
+prime, let $r \ge 1$, let $e_1 \le e_2 \le \dots \le e_r$ be natural numbers and let
+$G = \mathbb{Z}/p^{e_1}\mathbb{Z} \oplus \dots \oplus \mathbb{Z}/p^{e_r}\mathbb{Z}$. Let $c$ be a
+natural number with $1 \le c \le e_1$, put $\beta = \lceil p^{e_1}/(p^c - 1) \rceil - 1$ and let
+$A$ be a finite set of natural numbers with $p^{e_1 - c} \in A \subseteq \{1, \dots, \beta\}$.
+Suppose that $\beta \nmid p^{e_1}$ and let $s$ be the remainder of $p^{e_1}$ modulo $\beta$, so
+that $1 \le s < \beta$. If $(p^{e_j - e_1} - 1)\beta < s\,p^{e_j - e_1}$ for every
+$j \in \{2, \dots, r\}$, then the $A$-weighted Davenport constant of $G$ is
+$D_A(G) = 1 + \sum_{i=1}^{r} (\lceil p^{e_i}/\beta \rceil - 1)$.
 
 ## Depends on
 

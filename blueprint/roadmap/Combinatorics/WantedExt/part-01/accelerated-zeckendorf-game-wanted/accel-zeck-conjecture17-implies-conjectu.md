@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.accelZeck_conjecture17_implies_conjecture16
 ---
 
-# Accel Zeck conjecture17 implies conjecture16
+# Accelerated Zeckendorf Game: Conjecture 1.7 implies Conjecture 1.6
 
-Conjecture 1.7 implies Conjecture 1.6: if for every `n` such that the second player wins
-the game on `n`, all states `(0, …, 0, k, 0, n - 3k)` (`k` copies of `F_3`, `n - 3k` copies of
-`F_1`, `3k ≤ n`) are losing, then the first player wins the game on every `n > 9`.
+**Accelerated Zeckendorf Game: Conjecture 1.7 implies Conjecture 1.6.** Index the Fibonacci
+numbers as $F_1 = 1$, $F_2 = 2$, $F_{i+1} = F_i + F_{i-1}$. Suppose that for every $n$ such that
+the state consisting of $n$ copies of $F_1$ is losing, and every $k$ with $3k \le n$, the state
+consisting of $k$ copies of $F_3$ and $n - 3k$ copies of $F_1$ is losing. Then for every $n > 9$
+the state consisting of $n$ copies of $F_1$ (the starting position of the Accelerated Zeckendorf
+Game on $n$) is winning.
 
 ## Depends on
 
-- [Accel Zeck Losing](accel-zeck-losing.md)
-- [Accel Zeck Winning](accel-zeck-winning.md)
+- [Losing states of the Accelerated Zeckendorf Game](accel-zeck-losing.md)
+- [Winning states of the Accelerated Zeckendorf Game](accel-zeck-winning.md)
 
 ## Sources
 

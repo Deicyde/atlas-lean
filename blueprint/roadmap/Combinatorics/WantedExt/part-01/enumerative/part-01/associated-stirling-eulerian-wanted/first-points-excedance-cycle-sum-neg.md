@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.firstPoints_excedance_cycle_sum_neg
 ---
 
-# First Points excedance cycle sum neg
+# Signed excedance sum with weight $-s$ over permutations with separated first points
 
-Corollary 48: summing over permutations of `n + s` objects whose first `s` points lie
-in distinct cycles, `∑ x^{e(σ)} (-s)^{c(σ)} = (-1)^s s^{n+s} (x-1)^n`.
+**Signed excedance sum with weight $-s$ over permutations with separated first points.** Let
+$R$ be a commutative ring, $x \in R$ and $n, s \ge 0$ integers. For a permutation $\sigma$ write
+$e(\sigma)$ for its number of excedances (points $i$ with $\sigma(i) > i$) and $c(\sigma)$ for
+its number of cycles, fixed points included. Summing over the permutations $\sigma$ of
+$\{0, \dots, n+s-1\}$ in which the points $0, \dots, s-1$ lie in pairwise distinct cycles,
+$\sum_{\sigma} x^{e(\sigma)} (-s)^{c(\sigma)} = (-1)^s s^{n+s} (x-1)^n$, with $0^0 = 1$.
 
 ## Depends on
 
-- [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
+- [First points in distinct cycles](first-points-in-distinct-cycles.md)
 - [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
+- [Number of excedances](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 
 ## Sources
 

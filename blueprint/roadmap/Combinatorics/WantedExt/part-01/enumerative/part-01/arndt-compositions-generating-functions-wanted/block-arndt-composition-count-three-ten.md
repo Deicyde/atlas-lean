@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.blockArndtCompositionCount_three_ten_four
 ---
 
-# Block Arndt Composition Count three ten four
+# Four-part 3-block Arndt compositions of 10
 
-Seven of the eighteen `3`-block Arndt compositions of `10` listed in the paper have four
-parts: `(6,2,1,1)`, `(5,3,1,1)`, `(5,2,1,2)`, `(4,3,2,1)`, `(4,3,1,2)`, `(4,2,1,3)`, `(3,2,1,4)`.
+**Four-part 3-block Arndt compositions of 10.** There are exactly $7$ three-block Arndt
+compositions of $10$ with $4$ parts, that is, $a^{(3)}(10, 4) = 7$.
+
+They are $(6,2,1,1)$, $(5,3,1,1)$, $(5,2,1,2)$, $(4,3,2,1)$, $(4,3,1,2)$, $(4,2,1,3)$ and
+$(3,2,1,4)$.
 
 ## Depends on
 
-- [Block Arndt Composition Count](block-arndt-composition-count.md)
+- [Number of $k$-block Arndt compositions](block-arndt-composition-count.md)
 
 ## Sources
 

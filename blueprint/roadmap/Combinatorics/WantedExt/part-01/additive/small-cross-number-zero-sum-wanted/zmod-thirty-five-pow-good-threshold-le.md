@@ -5,21 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.zmod_thirtyFive_pow_good_threshold_le
 ---
 
-# Zmod thirty Five pow good threshold le
+# Threshold for good sequences in $\mathbb{Z}/35^k\mathbb{Z}$
 
-Zero sums with small cross number in `ℤ/35ᵏℤ`: every threshold function `t` for the event
-that a uniformly random sequence in `ℤ/35ᵏℤ` is good satisfies
-`t(k) ≤ n exp[(3 lg 5 lg 7 lg k)^{1/3} - (2/3) lg lg k + O(1)]`, with `lg = log₂`.
+**Threshold for good sequences in $\mathbb{Z}/35^k\mathbb{Z}$.** Write $\lg = \log_2$. Let $t$
+be a threshold function, in $k$, for the probability that a uniformly random sequence of $s$
+elements of $\mathbb{Z}/35^k\mathbb{Z}$ is good. Then there is a real constant $C$ such that for
+all sufficiently large $k$,
 
-`n = k^2`, the prefactor `k^d` of Theorem 4 at `d = 2` (`ℤ/35ᵏℤ ≅ ℤ/5ᵏℤ × ℤ/7ᵏℤ`; the source
-calls the corollary a concrete example of Theorem 4, and Theorem 9 sets `n = k^d`). The `O(1)` is
-a constant `C` depending on `t`, the bound holding for all large `k` (thresholds are only
-determined up to constant factors, so no single `C` serves every threshold).
+$$t(k) \le k^2 \exp\left((3 \lg 5 \lg 7 \lg k)^{1/3} - \tfrac{2}{3} \lg \lg k + C\right).$$
+
+The source writes the prefactor as $n$; here $n = k^2$, the factor $k^d$ of the source's
+Theorem 4 at $d = 2$, since $\mathbb{Z}/35^k\mathbb{Z} \cong \mathbb{Z}/5^k\mathbb{Z} \times
+\mathbb{Z}/7^k\mathbb{Z}$. The constant $C$ depends on $t$: thresholds are only determined up to
+constant factors, so no single $C$ serves every threshold.
 
 ## Depends on
 
-- [Is Threshold Function](is-threshold-function.md)
-- [Good Sequence Prob](good-sequence-prob.md)
+- [Threshold functions](is-threshold-function.md)
+- [Probability that a random sequence is good](good-sequence-prob.md)
 
 ## Sources
 

@@ -7,53 +7,53 @@ navigation: module
 
 ## Simple Graph
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
 
 ## Edge Indexed Multigraph
 
-- [Indexed Walk](indexed-walk.md)
+- [Indexed walk](indexed-walk.md)
 
 ## Indexed Walk
 
-- [Support](support.md)
-- [Edges](edges.md)
+- [Vertex list of an indexed walk](support.md)
+- [Edge list of an indexed walk](edges.md)
 - [Is Trail](is-trail.md)
-- [Is Trail iff](is-trail-iff.md)
-- [Is Eulerian](is-eulerian.md)
-- [Is Eulerian iff](is-eulerian-iff.md)
-- [Support nil](support-nil.md)
-- [Support cons](support-cons.md)
-- [Edges nil](edges-nil.md)
-- [Edges cons](edges-cons.md)
+- [Characterization of indexed trails](is-trail-iff.md)
+- [Eulerian indexed walk](is-eulerian.md)
+- [Characterization of Eulerian indexed walks](is-eulerian-iff.md)
+- [Support of the empty indexed walk](support-nil.md)
+- [Support of a walk extended at the front](support-cons.md)
+- [The empty indexed walk has no edges](edges-nil.md)
+- [Edge list of an extended indexed walk](edges-cons.md)
 
 ## Edge Indexed Multigraph
 
-- [Inc](inc.md)
-- [Inc iff](inc-iff.md)
-- [Underlying](underlying.md)
-- [Underlying adj](underlying-adj.md)
+- [Incidence](inc.md)
+- [Incidence is membership in the endpoint pair](inc-iff.md)
+- [Underlying simple graph of an edge-indexed multigraph](underlying.md)
+- [Adjacency in the underlying graph](underlying-adj.md)
 
 ## Indexed Walk
 
-- [To Walk](to-walk.md)
-- [Support to Walk](support-to-walk.md)
-- [Edges to Walk](edges-to-walk.md)
-- [Length to Walk](length-to-walk.md)
+- [From an indexed walk to a walk in the underlying graph](to-walk.md)
+- [Forgetting edge identities preserves the vertex sequence](support-to-walk.md)
+- [Edges of the forgetful walk](edges-to-walk.md)
+- [Forgetting edge identities preserves length](length-to-walk.md)
 
 ## Edge Indexed Multigraph
 
-- [Degree](degree.md)
-- [Degree eq ncard inc](degree-eq-ncard-inc.md)
-- [Disjoint Sum](disjoint-sum.md)
-- [Disjoint Sum ends inl](disjoint-sum-ends-inl.md)
-- [Disjoint Sum ends inr](disjoint-sum-ends-inr.md)
-- [Disjoint Sum degree](disjoint-sum-degree.md)
-- [Disjoint Sum connected left](disjoint-sum-connected-left.md)
-- [Even sum degree](even-sum-degree.md)
-- [Exists indexed Eulerian](exists-indexed-eulerian.md)
-- [Exists indexed Eulerian connected Support](exists-indexed-eulerian-connected-suppor.md)
-- [Line Graph](line-graph.md)
-- [Line Graph adj](line-graph-adj.md)
-- [Max Degree](max-degree.md)
-- [Degree le max Degree](degree-le-max-degree.md)
-- [Filter inc card](filter-inc-card.md)
+- [Degree in an edge-indexed multigraph](degree.md)
+- [Degree as the number of incident edges](degree-eq-ncard-inc.md)
+- [Disjoint sum of edge-indexed multigraphs](disjoint-sum.md)
+- [Endpoints of edges from the first summand](disjoint-sum-ends-inl.md)
+- [Endpoints of edges from the second summand](disjoint-sum-ends-inr.md)
+- [Degrees add under disjoint sums](disjoint-sum-degree.md)
+- [Adding edges preserves connectedness](disjoint-sum-connected-left.md)
+- [Handshake lemma for edge-indexed multigraphs](even-sum-degree.md)
+- [Euler circuits in edge-indexed multigraphs](exists-indexed-eulerian.md)
+- [Euler circuits when the non-isolated vertices are connected](exists-indexed-eulerian-connected-suppor.md)
+- [Line graph of an edge-indexed multigraph](line-graph.md)
+- [Adjacency in the line graph of a multigraph](line-graph-adj.md)
+- [Maximum degree of a multigraph](max-degree.md)
+- [Degrees are bounded by the maximum degree](degree-le-max-degree.md)
+- [Degree counts incident edges](filter-inc-card.md)

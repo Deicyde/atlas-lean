@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.shannon1956UpperBound
 ---
 
-# Shannon1956 Upper Bound
+# Shannon's upper bound for the capacity of the 7-cycle
 
-Source: Shannon (1956), the fractional-clique-cover upper bound.
+**Shannon's upper bound for the capacity of the 7-cycle.** The Shannon capacity of the
+$7$-cycle is at most $7/2$.
 
 ## Depends on
 
@@ -16,3 +17,4 @@ Source: Shannon (1956), the fractional-clique-cover upper bound.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Coding.CycleShannonBoundsWanted](../../../../../../sources/v2/WantedExt.md)
+- Shannon (1956), the fractional-clique-cover upper bound.

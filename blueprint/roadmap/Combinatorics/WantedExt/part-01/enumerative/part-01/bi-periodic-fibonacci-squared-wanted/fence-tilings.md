@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fenceTilings
 ---
 
-# Fence Tilings
+# Fence tilings of a board
 
-The tilings of an `n`-board by half-squares and `(1/2, 1/2)`-fences, as the sets `F` of fence
-positions `k < 2n - 2` (posts on half-cells `k` and `k + 2`) whose posts are pairwise disjoint.
+**Fence tilings of a board.** Number the half-cells of an $n$-board $0, \dots, 2n - 1$. The
+tilings of the $n$-board by half-squares and $(1/2, 1/2)$-fences are encoded as the sets $F$ of
+fence positions $k < 2n - 2$ (the fence at $k$ has posts on half-cells $k$ and $k + 2$) whose
+posts are pairwise disjoint, that is, $k + 2 \notin F$ for every $k \in F$.
 
 ## Depends on
 

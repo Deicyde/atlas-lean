@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.ballotNumber_self
 ---
 
-# Ballot Number self
+# Diagonal ballot numbers are Catalan numbers
 
-`B(n, n) = C_n`, the Catalan number.
+**Diagonal ballot numbers are Catalan numbers.** For every natural number $n$, the ballot
+number $B(n, n)$ equals the $n$-th Catalan number $C_n$.
 
 ## Depends on
 
-- [Ballot Number](ballot-number.md)
+- [Ballot numbers](ballot-number.md)
 
 ## Sources
 

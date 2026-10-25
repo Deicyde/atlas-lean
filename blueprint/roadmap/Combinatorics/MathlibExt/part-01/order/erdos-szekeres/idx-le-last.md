@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.idx_le_last
 ---
 
-# Idx le last
+# Entries of a strictly increasing index map lie at or below its last entry
 
-Entries strictly before the end sit weakly below the end position.
+**Entries of a strictly increasing index map lie at or below its last entry.** Let $k \ge 1$
+and let $\varphi : \{0, \dots, k-1\} \to \{0, \dots, N-1\}$ be strictly increasing with
+$\varphi(k-1) = q$. Then $\varphi(i) \le q$ for every $i < k$.
 
 ## Depends on
 
-- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [A positive natural number exceeds its predecessor](sub-one-lt-of-pos.md)
 
 ## Sources
 

@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.coloredArndtGF_mul
 ---
 
-# Colored Arndt GF mul
+# Closed form of the generating function of colored Arndt compositions
 
-`C(x, y) = (1 - x)²(1 + x)³(1 + x² + x(y - 2)) /
-(1 - x - 3x² - x³(2y² - 3) - x⁴(y² - 3) - x⁵(3 + y²) - x⁶ + x⁷)`, stated multiplicatively.
+**Closed form of the generating function of colored Arndt compositions.** Let
+$C(x, y) = \sum_{n, k} c(n, k)\, x^n y^k$ in $\mathbb{Z}[y][[x]]$, where $c(n, k)$ is the number
+of colored Arndt compositions of $n$ with $k$ parts. Then
+$C(x, y) \cdot (1 - x - 3x^2 - x^3(2y^2 - 3) - x^4(y^2 - 3) - x^5(3 + y^2) - x^6 + x^7) =
+(1 - x)^2 (1 + x)^3 (1 + x^2 + x(y - 2))$.
+
+Since the second factor on the left has constant term $1$, this says that
+$C(x, y) = \frac{(1 - x)^2 (1 + x)^3 (1 + x^2 + x(y - 2))}{1 - x - 3x^2 - x^3(2y^2 - 3) -
+x^4(y^2 - 3) - x^5(3 + y^2) - x^6 + x^7}$.
 
 ## Depends on
 
-- [Colored Arndt GF](colored-arndt-gf.md)
+- [Generating function of colored Arndt compositions](colored-arndt-gf.md)
 
 ## Sources
 

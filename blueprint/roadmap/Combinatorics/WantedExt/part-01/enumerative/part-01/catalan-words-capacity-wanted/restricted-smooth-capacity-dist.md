@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.restrictedSmoothCapacityDist
 ---
 
-# Restricted Smooth Capacity Dist
+# Capacity distribution of restricted smooth words with a given last letter
 
-`r*(n, i; q)`, the capacity distribution on restricted smooth words of length `n` ending
-in `i`.
+**Capacity distribution of restricted smooth words with a given last letter.** For natural
+numbers $n$ and $i$, $r^*(n, i; q)$ is the polynomial $\sum_w q^{\mathrm{cap}(w)}$ in
+$\mathbb{Z}[q]$, where $w$ ranges over the restricted smooth words of length $n$ (smooth words
+with no two adjacent letters equal to $1$) whose last letter is $i$, and $\mathrm{cap}(w)$ is the
+capacity of $w$.
 
 ## Depends on
 
@@ -16,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Restricted Smooth Words](restricted-smooth-words.md)
-- [Words Ending In](words-ending-in.md)
+- [Capacity distribution](capacity-dist.md)
+- [Restricted smooth words](restricted-smooth-words.md)
+- [Words ending in a given letter](words-ending-in.md)
 
 ## Sources
 

@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.positiveDifferences
 ---
 
-# Positive Differences
+# Positive difference set
 
-The positive difference set `D(Z) = Z - Z = {a - b : a > b, a, b ∈ Z}`.
+**Positive difference set.** For a set $Z \subseteq \mathbb{N}$, the positive difference set
+$D(Z)$ is the set of all differences $a - b$ with $a, b \in Z$ and $a > b$.
 
 ## Depends on
 

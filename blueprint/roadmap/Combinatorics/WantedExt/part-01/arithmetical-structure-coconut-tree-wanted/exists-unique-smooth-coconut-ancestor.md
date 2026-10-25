@@ -5,17 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.IsArithmeticalStructure.existsUnique_smooth_coconutAncestor
 ---
 
-# Exists Unique smooth coconut Ancestor
+# Unique smooth ancestor
 
-Lemma 3.8: every arithmetical structure on `CT(p, s)` (`s ≥ 1`) with
-`d_{ℓ_1}, …, d_{ℓ_s} ≥ 2` has a unique smooth ancestor on `CT(q, s)` for some `1 ≤ q ≤ p`.
+**Unique smooth ancestor.** Let $s \ge 1$ and let $(d, r)$ be an arithmetical structure on the
+coconut tree $CT(p, s)$ with $d(\ell_j) \ge 2$ at every leaf $\ell_j$. Then there is exactly one
+pair consisting of a number $q$ with $1 \le q \le p$ and a smooth arithmetical structure on
+$CT(q, s)$ that is a coconut ancestor of $(d, r)$, that is, one obtained from $(d, r)$ by a
+possibly empty sequence of smoothings, each performed at a vertex whose current $d$-label is $1$
+and which is either a leaf or a path vertex other than the last path vertex (the one adjacent to
+the leaves).
 
 ## Depends on
 
-- [Coconut Ancestor](coconut-ancestor.md)
-- [Is Arithmetical Structure](is-arithmetical-structure.md)
-- [Is Smooth Coconut](is-smooth-coconut.md)
-- [Coconut Tree](coconut-tree.md)
+- [Ancestors of labelings of coconut trees](coconut-ancestor.md)
+- [Arithmetical structure](is-arithmetical-structure.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
+- [Coconut tree](coconut-tree.md)
 
 ## Sources
 

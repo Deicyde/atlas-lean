@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.IsSmoothCoconut.one_lt_center_iff
 ---
 
-# One lt center iff
+# Smooth coconut structures with central label above one
 
-Proposition 8: a smooth arithmetical structure on `CT(p, s)` (`p ≥ 1`) has
-`d_p > 1` if and only if `r_p < ∑_j r_{ℓ_j}`.
+**Smooth coconut structures with central label above one.** Let $p \ge 1$ and let $(d, r)$ be
+a smooth arithmetical structure on the coconut tree $\mathrm{CT}(p, s)$, with central vertex $v_p$
+and leaves $\ell_1, \ldots, \ell_s$. Then $d_{v_p} > 1$ if and only if
+$r_{v_p} < \sum_{j=1}^{s} r_{\ell_j}$.
 
 ## Depends on
 
-- [Is Smooth Coconut](is-smooth-coconut.md)
+- [Smooth arithmetical structure on a coconut tree](is-smooth-coconut.md)
 
 ## Sources
 

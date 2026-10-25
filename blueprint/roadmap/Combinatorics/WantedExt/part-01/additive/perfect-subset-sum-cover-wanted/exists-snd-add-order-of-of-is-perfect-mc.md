@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.exists_snd_addOrderOf_of_isPerfectMCover
 ---
 
-# Exists snd add Order Of of is Perfect MCover
+# Orders of second coordinates in perfect $m$-covers
 
-If `s` is a perfect `m`-cover of `H ⊕ ℤ_{2^n}` with `|H|` a power of two, then the
-second coordinates of `s` contain elements of each order `2^j`, `1 ≤ j ≤ n`.
+**Orders of second coordinates in perfect $m$-covers.** Let $H$ be a finite abelian group of
+order $2^r$ and let $s = (s_i)_{i \in \iota}$ be a family in $H \oplus \mathbb{Z}_{2^n}$ indexed by
+a finite type $\iota$. If $s$ is a perfect $m$-cover of $H \oplus \mathbb{Z}_{2^n}$, then for
+every $j$ with $1 \le j \le n$ the second coordinate of some $s_i$ has additive order $2^j$.
 
 ## Depends on
 
-- [Is Perfect MCover](is-perfect-mcover.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
 
 ## Sources
 

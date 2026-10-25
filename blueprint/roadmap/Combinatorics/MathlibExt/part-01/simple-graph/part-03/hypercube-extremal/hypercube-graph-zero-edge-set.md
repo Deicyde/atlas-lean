@@ -7,17 +7,18 @@ proof: formalized
 lean: SimpleGraph.hypercubeGraph_zero_edgeSet
 ---
 
-# Hypercube Graph zero edge Set
+# The zero-dimensional hypercube has no edges
 
-`Q_0` has an empty edge set.
+**The zero-dimensional hypercube has no edges.** The edge set of the $0$-dimensional
+hypercube $Q_0$ is empty.
 
 ## Depends on
 
-- [Hypercube Graph](hypercube-graph.md)
+- [Hypercube graph](hypercube-graph.md)
 
 ## Proof depends on
 
-- [Hypercube Graph zero not adj](hypercube-graph-zero-not-adj.md)
+- [No two vertices of the zero-dimensional hypercube are adjacent](hypercube-graph-zero-not-adj.md)
 
 ## Sources
 

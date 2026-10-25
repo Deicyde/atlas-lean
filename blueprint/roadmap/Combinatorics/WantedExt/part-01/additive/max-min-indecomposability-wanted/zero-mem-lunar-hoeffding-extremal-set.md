@@ -6,20 +6,22 @@ proof: formalized
 lean: MetaMathlibExt.zero_mem_lunarHoeffdingExtremalSet
 ---
 
-# Zero mem lunar Hoeffding Extremal Set
+# An example of a Hoeffding extremal lunar number
 
-In base `2` and degree at most `2`, the zero lunar number is `1`-Hoeffding extremal:
-`||0_1| - 2/2| = 1 > 1/2`.
+**An example of a Hoeffding extremal lunar number.** In base $2$, the zero lunar number of
+degree at most $2$ (the digit string $(0, 0, 0)$) lies in the $1$-Hoeffding extremal set
+$\mathcal{H}_2^2(1)$: for the level $i = 1$, the number $|0_1|$ of its digits that are at least
+$1$ is $0$, and $\left|0 - (2 - 1) \cdot 2 / 2\right| = 1 > 1/2$.
 
 ## Depends on
 
-- [Lunar Hoeffding Extremal Set](lunar-hoeffding-extremal-set.md)
+- [Hoeffding extremal lunar numbers](lunar-hoeffding-extremal-set.md)
 
 ## Proof depends on
 
-- [Digit Seq](digit-seq.md)
-- [Lunar Level Count](lunar-level-count.md)
-- [Max Min Mul](max-min-mul.md)
+- [Coefficient sequence of a digit string](digit-seq.md)
+- [Level counts of a lunar number](lunar-level-count.md)
+- [Max-min product](max-min-mul.md)
 
 ## Sources
 

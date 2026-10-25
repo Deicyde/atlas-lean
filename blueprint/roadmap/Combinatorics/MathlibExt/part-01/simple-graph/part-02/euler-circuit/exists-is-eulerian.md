@@ -7,10 +7,11 @@ proof: formalized
 lean: SimpleGraph.Connected.exists_isEulerian
 ---
 
-# Exists is Eulerian
+# Euler circuits in connected even graphs
 
-A finite connected simple graph whose vertex degrees are all even has a closed Eulerian
-trail.
+**Euler circuits in connected even graphs.** Every finite connected simple graph in which every
+vertex has even degree has a closed Eulerian trail, that is, a closed walk that uses every edge of
+the graph exactly once.
 
 ## Depends on
 

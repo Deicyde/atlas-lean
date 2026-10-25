@@ -5,6 +5,6 @@ navigation: module
 
 # Balanceable Bounded Partitions
 
-- [Bounded](bounded.md)
-- [Balanceable](balanceable.md)
-- [Minimal balanceable of bounded](minimal-balanceable-of-bounded.md)
+- [$k$-bounded partition](bounded.md)
+- [Balanceable partition](balanceable.md)
+- [Smallest size forcing bounded partitions to be balanceable](minimal-balanceable-of-bounded.md)

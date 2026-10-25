@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.not_isCRSet_empty
 ---
 
-# Not is CRSet empty
+# The empty set is not a CR-set
 
-The empty set is not a CR-set.
+**The empty set is not a CR-set.** In every commutative semigroup, the empty set is not a
+CR-set.
 
 ## Depends on
 
-- [Is CRSet](is-crset.md)
+- [CR-set](is-crset.md)
 
 ## Sources
 

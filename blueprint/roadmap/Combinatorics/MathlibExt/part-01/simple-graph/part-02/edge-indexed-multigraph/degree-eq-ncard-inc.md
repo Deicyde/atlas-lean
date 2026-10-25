@@ -7,15 +7,17 @@ proof: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.degree_eq_ncard_inc
 ---
 
-# Degree eq ncard inc
+# Degree as the number of incident edges
 
-The multigraph degree is the cardinality of the set of incident edge identities.
+**Degree as the number of incident edges.** For every vertex $v$ of an edge-indexed
+multigraph $M$, the degree of $v$ equals the cardinality of the set of edges of $M$ whose
+endpoint pair contains $v$, where this cardinality is taken to be $0$ when the set is infinite.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
-- [Inc](inc.md)
-- [Degree](degree.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
+- [Incidence](inc.md)
+- [Degree in an edge-indexed multigraph](degree.md)
 
 ## Sources
 

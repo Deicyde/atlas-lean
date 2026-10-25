@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.kArndtComposition_total_gf_neg
 ---
 
-# K Arndt Composition total gf neg
+# Counting $k$-Arndt compositions for negative $k$
 
-For `k < 0`, written `k = -k'` with `k' ≥ 1`, the number `a_k(n)` of `k`-Arndt compositions
-has generating function `A_k(x) = (1 - x²)/(1 - x - 2x² + x^{2-k})`.
+**Counting $k$-Arndt compositions for negative $k$.** Let $k = -k'$ with $k' \ge 1$ an integer,
+and let $a_k(n) = \sum_{m = 0}^{n} a_k(n, m)$ be the number of $k$-Arndt compositions of $n$. Then,
+in $\mathbb{Z}[[x]]$,
+
+$$\Bigl(\sum_{n \ge 0} a_k(n)\, x^n\Bigr)(1 - x - 2x^2 + x^{2-k}) = 1 - x^2,$$
+
+that is, $\sum_{n \ge 0} a_k(n)\, x^n = (1 - x^2)/(1 - x - 2x^2 + x^{2-k})$.
 
 ## Depends on
 
-- [K Arndt Composition Count](k-arndt-composition-count.md)
+- [Number of $k$-Arndt compositions](k-arndt-composition-count.md)
 
 ## Sources
 

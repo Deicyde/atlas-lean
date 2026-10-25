@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Santos Beta](santos-beta.md)
-- [Two Assoc Stirling Second](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
+- [2-associated Stirling numbers of the second kind](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
 
 ## Sources
 

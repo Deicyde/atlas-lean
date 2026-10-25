@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.DilworthWanted.exists_isAntichain_card_eq_maxAntichainSize
 ---
 
-# Exists is Antichain card eq max Antichain Size
+# The maximum antichain size is attained
 
-Some antichain has exactly `maxAntichainSize α` elements.
+**The maximum antichain size is attained.** Let $\alpha$ be a finite partially ordered set.
+Some antichain in $\alpha$ has exactly as many elements as the maximum antichain size of
+$\alpha$.
 
 ## Depends on
 
-- [Max Antichain Size](max-antichain-size.md)
+- [Maximum antichain size](max-antichain-size.md)
 
 ## Sources
 

@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.unimodularlyEquivalent_refl
 ---
 
-# Unimodularly Equivalent refl
+# Unimodular equivalence is reflexive
 
-Every set is unimodularly equivalent to itself (identity matrix, zero translation).
+**Unimodular equivalence is reflexive.** Every subset $P$ of $\mathbb{R}^2$ is unimodularly
+equivalent to itself (take the identity matrix and the zero translation).
 
 ## Depends on
 
-- [Unimodularly Equivalent](unimodularly-equivalent.md)
+- [Unimodularly equivalent sets](unimodularly-equivalent.md)
 
 ## Proof depends on
 
-- [Unimodular Map](unimodular-map.md)
+- [Integer affine maps of the plane](unimodular-map.md)
 
 ## Sources
 

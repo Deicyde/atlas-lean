@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.polakSchrijverRateLowerBound
 ---
 
-# Polak Schrijver Rate Lower Bound
+# Polak–Schrijver lower bound for the capacity of the 7-cycle
 
-Source: Polak--Schrijver, arXiv:1808.07438, exact fifth-root rate.
+**Polak–Schrijver lower bound for the capacity of the 7-cycle.** The Shannon capacity of the
+$7$-cycle is at least $367^{1/5}$, as an inequality in $[0, \infty]$.
 
 ## Depends on
 
@@ -16,3 +17,4 @@ Source: Polak--Schrijver, arXiv:1808.07438, exact fifth-root rate.
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Coding.CycleShannonBoundsWanted](../../../../../../sources/v2/WantedExt.md)
+- Polak--Schrijver, arXiv:1808.07438, exact fifth-root rate.

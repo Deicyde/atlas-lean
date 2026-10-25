@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bagWeight
 ---
 
-# Bag Weight
+# Weight of a bag
 
-The weight `w(F) = ∑_{T ∈ F} (max T + ∑_{i ∈ T} i) - n(n+1)/2` of a bag `F` for `n` people.
+**Weight of a bag.** For a natural number $n$ and a bag $F$, that is, a finite multiset of
+finite sets of natural numbers, the weight of $F$ for $n$ people is the real number
+$w(F) = \sum_{T \in F} \left(\max T + \sum_{i \in T} i\right) - \frac{n(n+1)}{2}$, where each
+set counts with its multiplicity in $F$ and $\max \emptyset = 0$.
 
 ## Depends on
 

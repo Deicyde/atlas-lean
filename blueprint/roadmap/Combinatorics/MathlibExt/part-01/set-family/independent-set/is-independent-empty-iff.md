@@ -7,13 +7,14 @@ proof: formalized
 lean: SetFamily.isIndependent_empty_iff
 ---
 
-# Is Independent empty iff
+# When the empty set is independent
 
-The empty vertex set is independent iff every edge is nonempty.
+**When the empty set is independent.** For a finite hypergraph $H$, the empty set is
+independent in $H$ if and only if every edge of $H$ is nonempty.
 
 ## Depends on
 
-- [Is Independent](is-independent.md)
+- [Independent set in a hypergraph](is-independent.md)
 
 ## Sources
 

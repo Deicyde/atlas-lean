@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.not_isMVanishingFamily_sumAddMulProd_six
 ---
 
-# Not is MVanishing Family sum Add Mul Prod six
+# $F_{\pm 1}$ over $\mathbb{Z}/6$ is not $m$-vanishing for $m > 1$
 
-Lemma 4: over `ℤ/6` and for `m > 1`, neither `F_{-1}` nor `F_1` is `m`-vanishing.
+**$F_{\pm 1}$ over $\mathbb{Z}/6$ is not $m$-vanishing for $m > 1$.** For every $m > 1$,
+neither of the sum-plus-product families $F_{-1}$ and $F_1$ over $\mathbb{Z}/6$, where
+$F_c(b_1, \dots, b_l) = b_1 + \dots + b_l + c\, b_1 \cdots b_l$, is $m$-vanishing.
 
 ## Depends on
 
-- [Is MVanishing Family](is-mvanishing-family.md)
-- [Sum Add Mul Prod Family](sum-add-mul-prod-family.md)
+- [$m$-vanishing family](is-mvanishing-family.md)
+- [The sum-plus-product family $F_c$](sum-add-mul-prod-family.md)
 
 ## Sources
 

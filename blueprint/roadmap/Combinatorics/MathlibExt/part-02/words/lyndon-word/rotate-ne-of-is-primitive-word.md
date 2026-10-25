@@ -7,9 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.rotate_ne_of_isPrimitiveWord
 ---
 
-# Rotate ne of is Primitive Word
+# Nontrivial rotations move a primitive word
 
-A primitive word is changed by every nontrivial rotation.
+**Nontrivial rotations move a primitive word.** If $w$ is a primitive word of length $n$
+and $0 < k < n$, then the rotation of $w$ by $k$, obtained by moving the first $k$ letters of $w$
+to the end, is different from $w$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ A primitive word is changed by every nontrivial rotation.
 
 ## Proof depends on
 
-- [Is Primitive Word iff nodup cyclic Permutations](is-primitive-word-iff-nodup-cyclic-permu.md)
+- [Primitivity via distinct rotations](is-primitive-word-iff-nodup-cyclic-permu.md)
 
 ## Sources
 

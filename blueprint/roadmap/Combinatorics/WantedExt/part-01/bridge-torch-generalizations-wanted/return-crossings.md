@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.returnCrossings
 ---
 
-# Return Crossings
+# Return crossings
 
-The returns (right to left) of a schedule: its crossings at odd positions
-`1, 3, 5, …`.
+**Return crossings.** For a list $\sigma = (A_0, A_1, \dots, A_{\ell - 1})$ whose entries may
+come from any type, the returns of $\sigma$ are its entries at odd positions, $A_1, A_3, A_5, \dots$
+in order, with positions counted from $0$. For the list of crossings of a bridge schedule these
+are the crossings from right to left.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Forward Crossings](forward-crossings.md)
+- [Forward crossings](forward-crossings.md)
 
 ## Sources
 

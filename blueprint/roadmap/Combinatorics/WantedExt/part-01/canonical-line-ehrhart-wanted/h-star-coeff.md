@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.hStarCoeff
 ---
 
-# H Star Coeff
+# The h-star coefficients of a polynomial
 
-`hStarCoeff f i` is the coefficient of `t^i` in
-`(1 - t)^(d+1) * ∑ k, f(k) t^k`, where `d = f.natDegree`.  It is encoded directly
-by the finite alternating sum requested in the task; natural-number arguments of `f` are
-cast to `ℂ`.
+**The h-star coefficients of a polynomial.** Let $f$ be a complex polynomial of degree $d$,
+with $d = 0$ for the zero polynomial. For a natural number $i$, the $i$-th $h^*$-coefficient of
+$f$ is
+
+$$h^*_i(f) = \sum_{j=0}^{i} (-1)^j \binom{d+1}{j} f(i-j),$$
+
+the coefficient of $t^i$ in the power series $(1-t)^{d+1} \sum_{k \ge 0} f(k)\, t^k$.
 
 ## Depends on
 

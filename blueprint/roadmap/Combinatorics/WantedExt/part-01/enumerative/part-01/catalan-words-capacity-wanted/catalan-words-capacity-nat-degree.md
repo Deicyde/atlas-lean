@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.catalanWords_capacity_natDegree
 ---
 
-# Catalan Words capacity nat Degree
+# Maximum capacity of Catalan words
 
-Mansour and Shattuck's Theorem 2: the maximum capacity `deg a(n; q)` over `𝒜ₙ` is
-`3 C(m, 2)` for `n = 3m`, `m(3m-1)/2` for `n = 3m + 1` and `m(3m+1)/2` for `n = 3m + 2`.
-The case `n = 0` of the first formula is included (both sides are `0`).
+**Maximum capacity of Catalan words.** For every natural number $m$, the degree of the capacity
+distribution $\sum_{w \in \mathcal{A}_n} q^{\operatorname{cap}(w)}$ of the set $\mathcal{A}_n$ of
+Catalan words of length $n$, that is, the largest capacity of a Catalan word of length $n$, is
+$3\binom{m}{2}$ for $n = 3m$, $m(3m-1)/2$ for $n = 3m + 1$ and $m(3m+1)/2$ for $n = 3m + 2$. The
+case $m = 0$ is included.
 
 ## Depends on
 
-- [Capacity Dist](capacity-dist.md)
-- [Catalan Words](catalan-words.md)
+- [Capacity distribution](capacity-dist.md)
+- [Catalan words](catalan-words.md)
 
 ## Sources
 

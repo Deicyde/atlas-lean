@@ -7,17 +7,18 @@ proof: formalized
 lean: TuranSystem.lt_of_isTuran
 ---
 
-# Lt of is Turan
+# A Turán system has $r < s$
 
-Strict-inequality projection from a Turan system.
+**A Turán system has $r < s$.** Let $n$, $s$, $r$ be natural numbers and let $H$ be a
+Turán $(n, s, r)$-system. Then $r < s$.
 
 ## Depends on
 
-- [Is Turan System](is-turan-system.md)
+- [Turán system](is-turan-system.md)
 
 ## Proof depends on
 
-- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+- [Uniform hypergraphs](../uniform-hypergraph/is-uniform.md)
 
 ## Sources
 

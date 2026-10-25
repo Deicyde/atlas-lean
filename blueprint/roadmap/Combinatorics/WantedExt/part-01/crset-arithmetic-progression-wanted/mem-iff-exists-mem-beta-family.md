@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.mem_iff_exists_mem_betaFamily
 ---
 
-# Theorem 3, part 2
+# Theorem 3, part 2: a Ramsey family is the union of its ultrafilters
 
-**Theorem 3, part 2.** For a family `F` with the Ramsey property,
-`F = ⋃ β(F)`: a set lies in `F` iff it belongs to some ultrafilter in `β(F)`.
+**Theorem 3, part 2: a Ramsey family is the union of its ultrafilters.** Let $F$ be a family
+of subsets of a set $S$ with the Ramsey property, and let $\beta(F)$ be the set of ultrafilters on
+$S$ all of whose members lie in $F$. Then a set $A \subseteq S$ lies in $F$ if and only if
+$A \in p$ for some $p \in \beta(F)$; that is, $F = \bigcup \beta(F)$.
 
 ## Depends on
 
-- [Is Ramsey Family](is-ramsey-family.md)
-- [Beta Family](beta-family.md)
+- [Families with the Ramsey property](is-ramsey-family.md)
+- [The set β(F) of ultrafilters inside a family](beta-family.md)
 
 ## Sources
 

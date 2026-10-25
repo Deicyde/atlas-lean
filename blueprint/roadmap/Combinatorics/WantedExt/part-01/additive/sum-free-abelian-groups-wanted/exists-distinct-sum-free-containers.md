@@ -7,16 +7,18 @@ lean: MetaMathlibExt.exists_distinct_sumFree_containers
 
 # Container lemma
 
-**Container lemma.** For every `δ > 0` there is `n₀` such that every finite abelian group
-`G` of order `n ≥ n₀` has a family `𝓕` of subsets with: (i) each `F ∈ 𝓕` has at most `δn²`
-distinct Schur triples, (ii) every distinct sum-free set lies in some `F ∈ 𝓕`,
-(iii) `|𝓕| ≤ 2^(δn)`, (iv) every `F ∈ 𝓕` is `A ∪ B` with `A` sum-free and `|B| ≤ δn`.
+**Container lemma.** For every real $\delta > 0$ there is a natural number $n_0$ such that
+every finite abelian group $G$ of order $n \ge n_0$ has a family $\mathcal{F}$ of subsets of $G$
+with the following properties: (i) each $F \in \mathcal{F}$ contains at most $\delta n^2$ ordered
+distinct Schur triples $(x, y, x + y)$; (ii) every distinct sum-free subset of $G$ is contained
+in some $F \in \mathcal{F}$; (iii) $|\mathcal{F}| \le 2^{\delta n}$; (iv) every
+$F \in \mathcal{F}$ is of the form $A \cup B$ with $A$ sum-free and $|B| \le \delta n$.
 
 ## Depends on
 
-- [Is Distinct Sum Free Set](is-distinct-sum-free-set.md)
-- [Is Sum Free Set](is-sum-free-set.md)
-- [Distinct Schur Triple Count](distinct-schur-triple-count.md)
+- [Distinct sum-free sets](is-distinct-sum-free-set.md)
+- [Sum-free set](is-sum-free-set.md)
+- [Number of distinct Schur triples](distinct-schur-triple-count.md)
 
 ## Sources
 

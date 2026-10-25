@@ -7,20 +7,21 @@ proof: formalized
 lean: SimpleGraph.IsVertexConnected.four_le_square_degree
 ---
 
-# Four le square degree
+# Minimum degree in the square of a 2-connected graph
 
-In a 2-vertex-connected graph on at least five vertices, every vertex has at least four
-neighbors in the graph square.
+**Minimum degree in the square of a 2-connected graph.** In a 2-vertex-connected simple graph
+on a finite vertex set with at least five vertices, every vertex has at least four neighbors in
+the square of the graph.
 
 ## Depends on
 
-- [Is Vertex Connected](../vertex-connectivity/is-vertex-connected.md)
+- [$k$-vertex-connected graph](../vertex-connectivity/is-vertex-connected.md)
 - [Square](square.md)
 
 ## Proof depends on
 
-- [Connected induce compl](../vertex-connectivity/connected-induce-compl.md)
-- [Two le degree](../vertex-connectivity/two-le-degree.md)
+- [Deleting fewer than $k$ vertices from a $k$-vertex-connected graph](../vertex-connectivity/connected-induce-compl.md)
+- [Degrees in a 2-vertex-connected graph are at least two](../vertex-connectivity/two-le-degree.md)
 
 ## Sources
 

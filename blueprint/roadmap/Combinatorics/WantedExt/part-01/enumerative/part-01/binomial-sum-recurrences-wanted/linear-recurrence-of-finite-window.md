@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.linearRecurrence_of_finite_window
 ---
 
-# Linear Recurrence of finite window
+# Finite window criterion for linear recurrences
 
-A finite window suffices to transfer a recurrence: if `x` satisfies an order-`r` linear
-recurrence `x_n = ∑_{i=1}^r A_i x_{n-i}` for all `n ≥ r`, and an order-`s` recurrence
-`x_n = ∑_{i=1}^s a_i x_{n-i}` holds for `s ≤ n ≤ N` with `N ≥ r + s - 1`, then the order-`s`
-recurrence holds for all `n ≥ s`. Stated over an arbitrary commutative ring.
+**Finite window criterion for linear recurrences.** Let $R$ be a commutative ring, let
+$x, A, a : \mathbb{N} \to R$ and let $r, s, N \in \mathbb{N}$. Suppose that
+$x_n = \sum_{i=1}^{r} A_i x_{n-i}$ for all $n \ge r$, that $N \ge r + s - 1$, and that
+$x_n = \sum_{i=1}^{s} a_i x_{n-i}$ for all $n$ with $s \le n \le N$. Then
+$x_n = \sum_{i=1}^{s} a_i x_{n-i}$ for all $n \ge s$.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isMulPiecewiseSyndetic_univ
 ---
 
-# Is Mul Piecewise Syndetic univ
+# A nonempty semigroup is piecewise syndetic in itself
 
-In a nonempty semigroup the whole semigroup is piecewise syndetic.
+**A nonempty semigroup is piecewise syndetic in itself.** If $S$ is a nonempty semigroup,
+then $S$ is a piecewise syndetic subset of $S$.
 
 ## Depends on
 
-- [Is Mul Piecewise Syndetic](is-mul-piecewise-syndetic.md)
+- [Piecewise syndetic subsets of a semigroup](is-mul-piecewise-syndetic.md)
 
 ## Sources
 

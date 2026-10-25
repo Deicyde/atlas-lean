@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.color_neg_eq_of_rainbowFree_powDiff
 ---
 
-# Color neg eq of rainbow Free pow Diff
+# Rainbow-free colorings modulo a prime are symmetric under negation
 
-An exact rainbow-free 3-coloring of `ℤ/pℤ` for `x - y = z ^ k` satisfies
-`c a = c (-a)`.
+**Rainbow-free colorings modulo a prime are symmetric under negation.** Let $p$ be a prime and
+$k$ a natural number, and let $c$ be a coloring of $\mathbb{Z}/p\mathbb{Z}$ with three colors that
+uses every color and is rainbow-free for $x - y = z^k$: no $x, y, z \in \mathbb{Z}/p\mathbb{Z}$
+with $x - y = z^k$ have $c(x), c(y), c(z)$ pairwise distinct. Then $c(-a) = c(a)$ for every
+$a \in \mathbb{Z}/p\mathbb{Z}$.
 
 ## Depends on
 

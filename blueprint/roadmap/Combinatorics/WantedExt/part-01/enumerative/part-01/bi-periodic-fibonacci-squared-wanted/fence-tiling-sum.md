@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.fenceTilingSum
 ---
 
-# Fence Tiling Sum
+# Weighted count of fence tilings
 
-`S_n`, the weighted number of tilings of an `n`-board by weighted half-squares and
-`(1/2, 1/2)`-fences.
+**Weighted count of fence tilings.** Let $a$, $b$ be elements of a commutative semiring and
+$n \ge 0$. The weighted number $S_n$ of tilings of an $n$-board by half-squares and
+$(1/2, 1/2)$-fences is the sum, over all fence tilings $F$ of the $n$-board, of the weight of $F$,
+in which a half-square weighs $a$ in an odd cell and $b$ in an even cell and fences weigh $1$.
 
 ## Depends on
 
@@ -16,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fence Tiling Weight](fence-tiling-weight.md)
-- [Fence Tilings](fence-tilings.md)
+- [Weight of a fence tiling](fence-tiling-weight.md)
+- [Fence tilings of a board](fence-tilings.md)
 
 ## Sources
 

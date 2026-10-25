@@ -6,14 +6,16 @@ proof: formalized
 lean: SimpleGraph.indepDominationNumber_le_card
 ---
 
-# Indep Domination Number le card
+# Independent dominating sets are at least as large as the independent domination number
 
-Every independent dominating set has size at least the independent domination number.
+**Independent dominating sets are at least as large as the independent domination number.**
+Let $G$ be a simple graph on a finite vertex set. If $S$ is an independent dominating set of $G$,
+then the independent domination number of $G$ is at most the number of elements of $S$.
 
 ## Depends on
 
-- [Is Indep Dominating](is-indep-dominating.md)
-- [Indep Domination Number](indep-domination-number.md)
+- [Independent dominating set](is-indep-dominating.md)
+- [Independent domination number](indep-domination-number.md)
 
 ## Sources
 

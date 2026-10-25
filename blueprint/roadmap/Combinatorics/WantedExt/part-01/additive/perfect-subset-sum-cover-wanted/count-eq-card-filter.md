@@ -6,16 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.PerfectSubsetSumCover.count_eq_card_filter
 ---
 
-# Count eq card filter
+# Perfect cover count as a finset cardinality
 
-For a finite group, `C(G)` is the number of perfect covers in `Finset G`.
+**Perfect cover count as a finset cardinality.** For a finite abelian group $G$, the number
+$C(G)$ of perfect covers of $G$ equals the number of elements of the finite set of all subsets of
+$G$ that are perfect covers.
 
 ## Depends on
 
-- [Is Perfect Cover](is-perfect-cover.md)
-- [Is Perfect MCover](is-perfect-mcover.md)
-- [Count](count.md)
-- [Cover Count](cover-count.md)
+- [Perfect cover](is-perfect-cover.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
+- [Number of perfect covers](count.md)
+- [Cover count](cover-count.md)
 
 ## Sources
 

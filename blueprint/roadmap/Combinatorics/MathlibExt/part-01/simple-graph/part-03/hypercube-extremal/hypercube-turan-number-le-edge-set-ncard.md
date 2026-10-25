@@ -7,18 +7,20 @@ proof: formalized
 lean: SimpleGraph.hypercubeTuranNumber_le_edgeSet_ncard
 ---
 
-# Hypercube Turan Number le edge Set ncard
+# Upper bound for the hypercube Turán number
 
-`ex(Q_n, H)` is bounded by the edge count of `Q_n`.
+**Upper bound for the hypercube Turán number.** For every natural number $n$ and every
+simple graph $H$, writing $Q_n$ for the $n$-dimensional hypercube, the hypercube Turán number
+$\mathrm{ex}(Q_n, H)$ is at most the number of edges of $Q_n$.
 
 ## Depends on
 
-- [Hypercube Graph](hypercube-graph.md)
-- [Hypercube Turan Number](hypercube-turan-number.md)
+- [Hypercube graph](hypercube-graph.md)
+- [Hypercube Turán number](hypercube-turan-number.md)
 
 ## Proof depends on
 
-- [Hypercube Graph subgraph edge Set ncard le](hypercube-graph-subgraph-edge-set-ncard.md)
+- [Subgraphs of the hypercube have at most as many edges](hypercube-graph-subgraph-edge-set-ncard.md)
 
 ## Sources
 

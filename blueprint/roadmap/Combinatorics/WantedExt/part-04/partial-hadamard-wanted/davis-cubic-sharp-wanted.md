@@ -14,7 +14,7 @@ not supplied here.
 
 ## Depends on
 
-- [Is Leading Admissible](../../../MathlibExt/part-03/partial-hadamard/is-leading-admissible.md)
+- [Admissible exponents for the partial Hadamard leading term](../../../MathlibExt/part-03/partial-hadamard/is-leading-admissible.md)
 
 ## Sources
 

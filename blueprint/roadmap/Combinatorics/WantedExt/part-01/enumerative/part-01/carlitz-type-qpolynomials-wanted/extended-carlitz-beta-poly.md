@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.extendedCarlitzBetaPoly
 ---
 
-# Extended Carlitz Beta Poly
+# Extended Carlitz $q$-Bernoulli polynomials
 
-The extended Carlitz `q`-Bernoulli polynomials `β_n^{(r)}(x)`: `β_n^{(0)}(x) = η_n(x)` and
-`β_n^{(r+1)}(x) = q^{-x} (β_n^{(r)}(x) + (q - 1) β_{n+1}^{(r)}(x))`; the numbers are
-`β_n^{(r)} = β_n^{(r)}(0)`.
+**Extended Carlitz $q$-Bernoulli polynomials.** For real $q$, the extended Carlitz
+$q$-Bernoulli polynomials $\beta_n^{(r)}(x)$, indexed by natural numbers $r$ and $n$ and evaluated
+at real $x$, are defined by recursion on $r$: $\beta_n^{(0)}(x) = \eta_n(x)$ is Carlitz's
+$q$-polynomial, and
+$\beta_n^{(r+1)}(x) = q^{-x} \bigl(\beta_n^{(r)}(x) + (q - 1) \beta_{n+1}^{(r)}(x)\bigr)$.
+The extended Carlitz $q$-Bernoulli numbers are $\beta_n^{(r)} = \beta_n^{(r)}(0)$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Carlitz Eta Poly](carlitz-eta-poly.md)
+- [Carlitz $q$-polynomials $\eta_n$](carlitz-eta-poly.md)
 
 ## Sources
 

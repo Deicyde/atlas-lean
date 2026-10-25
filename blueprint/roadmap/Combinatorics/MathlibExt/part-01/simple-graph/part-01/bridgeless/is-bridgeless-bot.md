@@ -7,13 +7,14 @@ proof: formalized
 lean: SimpleGraph.isBridgeless_bot
 ---
 
-# Is Bridgeless bot
+# The edgeless graph is bridgeless
 
-The edgeless graph is vacuously bridgeless.
+**The edgeless graph is bridgeless.** The edgeless graph on any vertex set is vacuously
+bridgeless.
 
 ## Depends on
 
-- [Is Bridgeless](is-bridgeless.md)
+- [Bridgeless graph](is-bridgeless.md)
 
 ## Sources
 

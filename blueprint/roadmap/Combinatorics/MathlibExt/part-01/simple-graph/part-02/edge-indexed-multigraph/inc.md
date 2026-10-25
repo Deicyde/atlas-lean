@@ -6,13 +6,14 @@ statement: formalized
 lean: SimpleGraph.EdgeIndexedMultigraph.Inc
 ---
 
-# Inc
+# Incidence
 
-A vertex is incident with an edge when it belongs to the edge's endpoint pair.
+**Incidence.** In an edge-indexed multigraph, a vertex $v$ is incident with an edge $e$ when
+$v$ belongs to the unordered pair of endpoints of $e$.
 
 ## Depends on
 
-- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Edge-indexed multigraph](edge-indexed-multigraph.md)
 
 ## Sources
 

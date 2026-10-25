@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.smoothWords
 ---
 
-# Smooth Words
+# Smooth words
 
-The set `ℛₙ` of smooth words of length `n`: positive letters, first letter `1`, and
-`|w_{i+1} - w_i| ≤ 1`. Letters of such words are at most `n`, so the ambient box
-`[1, n]ⁿ` loses nothing (see `mem_smoothWords_iff`).
+**Smooth words.** For $n \ge 0$, the set $\mathcal{R}_n$ of smooth words of length $n$ consists
+of the words $w = w_1 \cdots w_n$ of positive integers with $w_1 = 1$ (when $n \ge 1$) and
+$|w_{i+1} - w_i| \le 1$ for $1 \le i < n$.
+
+The letters of a smooth word of length $n$ are at most $n$, so $\mathcal{R}_n$ is finite.
 
 ## Depends on
 

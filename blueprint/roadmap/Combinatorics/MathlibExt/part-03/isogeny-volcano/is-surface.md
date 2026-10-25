@@ -5,13 +5,14 @@ statement: formalized
 lean: IsogenyVolcano.isSurface
 ---
 
-# Is Surface
+# Surface of a volcano
 
-Surface vertices.
+**Surface of a volcano.** A vertex $v$ of an $\ell$-isogeny volcano $C$ lies on the surface
+of $C$ when its level is $0$.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
+- [Isogeny volcano](isogeny-volcano.md)
 
 ## Sources
 

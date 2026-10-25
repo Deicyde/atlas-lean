@@ -16,7 +16,7 @@ Theorem 16: `A_S(m, k) = ∑_{d=0}^{2k} c_d m^d` with
 ## Depends on
 
 - [Anassas Below](anassas-below.md)
-- [Two Assoc Stirling Second](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
+- [2-associated Stirling numbers of the second kind](../../../../../MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
 
 ## Sources
 

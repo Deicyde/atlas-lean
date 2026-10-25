@@ -7,19 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.SelfGeneratingSet.generated_eq_sInter
 ---
 
-# Generated eq s Inter
+# The generated set is the intersection of all self-generating sets
 
-The generated closure is the intersection of all self-generating sets.
+**The generated set is the intersection of all self-generating sets.** Let $F$ be a finite
+set of functions $\mathbb{N} \to \mathbb{N}$ and $s \in \mathbb{N}$. The set generated from $s$ by
+$F$ equals the intersection of all sets $G \subseteq \mathbb{N}$ that contain $s$ and are closed
+under every $f \in F$.
 
 ## Depends on
 
-- [Generated Set](generated-set.md)
-- [SG](sg.md)
+- [Set generated from a seed](generated-set.md)
+- [Self-generating sets](sg.md)
 
 ## Proof depends on
 
-- [Generated is SG](generated-is-sg.md)
-- [Generated le of sg](generated-le-of-sg.md)
+- [The generated set is self-generating](generated-is-sg.md)
+- [The generated set lies in every self-generating set](generated-le-of-sg.md)
 
 ## Sources
 

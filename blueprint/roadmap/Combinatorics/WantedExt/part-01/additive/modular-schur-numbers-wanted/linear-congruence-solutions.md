@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.linear_congruence_solutions
 ---
 
-# Linear congruence solutions
+# Solutions of a linear congruence
 
-Linear congruences: for `m > 0` and `d = gcd(a, m)`, `a x ≡ b (mod m)` is solvable iff
-`d ∣ b`; then it has exactly `d` solutions modulo `m`, and if `x₀` is one solution the
-solutions are `x ≡ x₀ + u (m / d) (mod m)` with `0 ≤ u ≤ d - 1`.
+**Solutions of a linear congruence.** Let $a$ and $b$ be integers, let $m$ be a positive
+integer, and let $d = \gcd(a, m)$. The congruence $a x \equiv b \pmod{m}$ has an integer
+solution if and only if $d \mid b$. If $d \mid b$, then exactly $d$ of the numbers
+$x \in \{0, 1, \dots, m - 1\}$ are solutions. Moreover, if $x_0$ is a solution, then an integer
+$x$ is a solution if and only if $x \equiv x_0 + u \cdot (m / d) \pmod{m}$ for some integer $u$
+with $0 \le u \le d - 1$.
 
 ## Depends on
 

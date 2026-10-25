@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.sub_one_lt_of_pos
 ---
 
-# Sub one lt of pos
+# A positive natural number exceeds its predecessor
 
-`k - 1 < k` for positive `k`.
+**A positive natural number exceeds its predecessor.** For every natural number $k > 0$,
+$k - 1 < k$.
 
 ## Depends on
 

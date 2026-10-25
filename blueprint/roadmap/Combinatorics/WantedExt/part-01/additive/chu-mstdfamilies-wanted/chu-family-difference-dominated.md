@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.chu_family_difference_dominated
 ---
 
-# Chu family difference dominated
+# A difference-dominated family of Chu et al
 
-Theorem 2: for every positive integer `k`,
-`A = (0 | 1, 1, 2, M^k, M^{k+1}, M^{k+1}, 1, 1)` is difference-dominated:
-`|A + A| < |A - A|`.
+**A difference-dominated family of Chu et al.** Let $k$ be a positive integer and let
+$A = (0 \mid 1, 1, 2, M^k, M^{k+1}, M^{k+1}, 1, 1) \subseteq \mathbb{Z}$ be the set of partial
+sums, starting at $0$, of the difference sequence formed by $1, 1, 2$, the Chu difference blocks
+$M^k$, $M^{k+1}$ and $M^{k+1}$, and $1, 1$. Then $A$ is difference-dominated:
+$|A + A| < |A - A|$.
 
 ## Depends on
 
-- [Chu Block](chu-block.md)
-- [Set Of Consecutive Differences](set-of-consecutive-differences.md)
+- [Chu difference block](chu-block.md)
+- [Sets given by consecutive differences](set-of-consecutive-differences.md)
 
 ## Sources
 

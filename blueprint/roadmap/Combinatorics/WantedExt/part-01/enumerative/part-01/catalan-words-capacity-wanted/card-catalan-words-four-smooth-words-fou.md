@@ -6,16 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.card_catalanWords_four_smoothWords_four
 ---
 
-# Card catalan Words four smooth Words four
+# Catalan and smooth words of length four
 
-Small cardinalities from the paper's examples: `|𝒜₄| = C₄ = 14`, `|ℛ₄| = |𝒜₄| - 1 = 13`, and
-`|ℛ*₄| = G₃ = 7`.
+**Catalan and smooth words of length four.** There are $14$ Catalan words of length $4$,
+$13$ smooth words of length $4$, and $7$ restricted smooth words of length $4$. Here $14$ is the
+Catalan number $C_4$, $13 = C_4 - 1$, and $7$ is the central trinomial coefficient $G_3$.
 
 ## Depends on
 
-- [Catalan Words](catalan-words.md)
-- [Restricted Smooth Words](restricted-smooth-words.md)
-- [Smooth Words](smooth-words.md)
+- [Catalan words](catalan-words.md)
+- [Restricted smooth words](restricted-smooth-words.md)
+- [Smooth words](smooth-words.md)
 
 ## Sources
 

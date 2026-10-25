@@ -5,7 +5,7 @@ navigation: module
 
 # Uniform Hypergraph
 
-- [Is Uniform](is-uniform.md)
-- [Contains Subgraph](contains-subgraph.md)
-- [Is Uniform iff](is-uniform-iff.md)
-- [Contains Subgraph iff](contains-subgraph-iff.md)
+- [Uniform hypergraphs](is-uniform.md)
+- [Subhypergraph containment](contains-subgraph.md)
+- [Characterization of uniform hypergraphs](is-uniform-iff.md)
+- [Characterization of subhypergraph containment](contains-subgraph-iff.md)

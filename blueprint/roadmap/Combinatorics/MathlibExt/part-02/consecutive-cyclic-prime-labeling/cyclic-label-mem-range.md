@@ -7,9 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.cyclicLabel_mem_range
 ---
 
-# Cyclic Label mem range
+# Range of the cyclic labels
 
-Interface theorem: cyclic labels lie in `1 .. 2 * n`.
+**Range of the cyclic labels.** For all natural numbers $n > 0$ and $s$ and every position
+$i \in \{0, \dots, 2n-1\}$, the cyclic label $c$ of $i$ with offset $s$ satisfies
+$1 \le c \le 2n$.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ Interface theorem: cyclic labels lie in `1 .. 2 * n`.
 
 ## Proof depends on
 
-- [Cyclic Label le size](cyclic-label-le-size.md)
-- [Cyclic Label pos](cyclic-label-pos.md)
+- [Cyclic labels do not exceed the number of vertices](cyclic-label-le-size.md)
+- [Cyclic labels are positive](cyclic-label-pos.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.opx_continuousOn
 ---
 
-# Opx continuous On
+# Continuity of the continuous Turán number
 
-Proposition 2.7: `opx(n, P)` is continuous in `n` for `n > 0`.
+**Continuity of the continuous Turán number.** For every $P \subseteq \mathbb{R}^2$, the
+continuous Turán number $\mathrm{opx}(n, P)$ is a continuous function of $n$ on $(0, \infty)$.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

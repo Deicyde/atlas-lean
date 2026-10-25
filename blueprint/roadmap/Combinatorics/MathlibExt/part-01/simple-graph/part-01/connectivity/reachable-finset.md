@@ -6,9 +6,13 @@ statement: formalized
 lean: SimpleGraph.reachableFinset
 ---
 
-# Reachable Finset
+# Vertices reachable from a vertex
 
-The finset of vertices reachable from `u`, computed by breadth-first search.
+**Vertices reachable from a vertex.** For a simple graph $G$ on a finite vertex set $V$ and
+a vertex $u$, this is the set obtained from $\{u\}$ by breadth-first search with at most $|V|$
+rounds, stopping early as soon as a round adds no new vertex.
+
+It consists exactly of the vertices reachable from $u$ in $G$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bfs Iterate](bfs-iterate.md)
+- [Breadth-first search with a round limit](bfs-iterate.md)
 
 ## Sources
 

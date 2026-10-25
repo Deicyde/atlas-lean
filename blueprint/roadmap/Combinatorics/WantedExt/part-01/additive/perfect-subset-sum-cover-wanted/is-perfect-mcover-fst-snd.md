@@ -5,15 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.isPerfectMCover_fst_snd
 ---
 
-# Is Perfect MCover fst snd
+# Projections of a perfect cover of a direct sum
 
-If `s` is a perfect `l`-cover of `H ⊕ K` with `|H| = 2^m` and `|K| = 2^n`, its first
-coordinates form a perfect `2^n l`-cover of `H` and its second coordinates a perfect
-`2^m l`-cover of `K`.
+**Projections of a perfect cover of a direct sum.** Let $H$ and $K$ be finite abelian groups
+with $|H| = 2^m$ and $|K| = 2^n$, and let $s = (s_i)_{i \in \iota}$, indexed by a finite set
+$\iota$, be a perfect $l$-cover of $H \oplus K$. Then the first coordinates of the $s_i$ form a
+perfect $2^n l$-cover of $H$, and the second coordinates form a perfect $2^m l$-cover of $K$.
 
 ## Depends on
 
-- [Is Perfect MCover](is-perfect-mcover.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
 
 ## Sources
 

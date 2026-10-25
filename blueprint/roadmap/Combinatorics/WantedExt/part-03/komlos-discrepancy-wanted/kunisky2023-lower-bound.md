@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Komlos Constant](../../../MathlibExt/part-03/matrix-discrepancy/komlos-constant.md)
+- [Komlós constant](../../../MathlibExt/part-03/matrix-discrepancy/komlos-constant.md)
 
 ## Sources
 

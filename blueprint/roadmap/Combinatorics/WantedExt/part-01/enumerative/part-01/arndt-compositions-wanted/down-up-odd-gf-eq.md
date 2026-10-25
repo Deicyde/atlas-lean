@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.downUpOddGF_eq
 ---
 
-# Down Up Odd GF eq
+# Odd-length down/up compositions from even-length ones
 
-`G(x, y, z) = xyz / (1 - xz) · F(x, y, xz)`.
+**Odd-length down/up compositions from even-length ones.** Let $F(x, y, z)$ and $G(x, y, z)$
+in $\mathbb{Q}[[x, y, z]]$ be the generating functions of down/up compositions with an even,
+respectively odd, number of parts by weight ($x$), number of parts ($y$) and last part ($z$).
+Then
+
+$$G(x, y, z) = \frac{xyz}{1 - xz}\, F(x, y, xz).$$
 
 ## Depends on
 
-- [Down Up Even GF](down-up-even-gf.md)
-- [Down Up Odd GF](down-up-odd-gf.md)
+- [Generating function of down/up compositions with an even number of parts](down-up-even-gf.md)
+- [Generating function of down/up compositions with an odd number of parts](down-up-odd-gf.md)
 
 ## Sources
 

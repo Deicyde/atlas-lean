@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.IsThresholdFunction.const_mul
 ---
 
-# Const mul
+# Positive multiples of threshold functions
 
-Threshold functions are only determined up to positive constant factors.
+**Positive multiples of threshold functions.** Let $P : \mathbb{N} \times \mathbb{N} \to
+\mathbb{R}$ and $t : \mathbb{N} \to \mathbb{R}$. If $t$ is a threshold function for $P$ and
+$c > 0$ is a real number, then $k \mapsto c \, t(k)$ is also a threshold function for $P$.
 
 ## Depends on
 
-- [Is Threshold Function](is-threshold-function.md)
+- [Threshold functions](is-threshold-function.md)
 
 ## Sources
 

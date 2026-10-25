@@ -6,10 +6,16 @@ statement: formalized
 lean: EndpointMapMultigraph.IsCircuit
 ---
 
-# Is Circuit
+# Circuits in an edge set
 
-A circuit is a nonempty connected 2-regular edge set. This includes a loop as a
-1-circuit and two parallel edges between distinct vertices as a 2-circuit.
+**Circuits in an edge set.** Let $\mathrm{end}_1, \mathrm{end}_2 : E \to V$ be maps, viewed
+as an undirected multigraph on $V$ in which each edge $e \in E$ has endpoints $\mathrm{end}_1(e)$
+and $\mathrm{end}_2(e)$. A finite set $F \subseteq E$ is a circuit when $F$ is nonempty, $F$ is
+connected on its support, and every vertex in the support of $F$ has degree exactly $2$ in $F$,
+where degree counts endpoint incidences, so that a loop contributes two.
+
+This includes a loop as a $1$-circuit and two parallel edges between distinct vertices as a
+$2$-circuit.
 
 ## Depends on
 
@@ -17,9 +23,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Connected On Support](is-connected-on-support.md)
-- [Degree Within](degree-within.md)
-- [Support](support.md)
+- [Edge sets connected on their support](is-connected-on-support.md)
+- [Degree within an edge set](degree-within.md)
+- [Support of an edge set](support.md)
 
 ## Sources
 

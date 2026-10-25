@@ -6,17 +6,18 @@ statement: formalized
 lean: SimpleGraph.IsCycleCover
 ---
 
-# Is Cycle Cover
+# Cycle covers
 
-`C` covers `G`: every edge of `G` lies on at least one cycle of `C`.
+**Cycle covers.** Let $G$ be a finite simple graph. A finite multiset $C$ of cycles in $G$ is a
+cycle cover of $G$ when every edge of $G$ is an edge of at least one cycle in $C$.
 
 ## Depends on
 
-- [Cycle](cycle.md)
+- [Cycles in a graph](cycle.md)
 
 ## Proof depends on
 
-- [Edges](edges.md)
+- [Edges of a cycle](edges.md)
 
 ## Sources
 

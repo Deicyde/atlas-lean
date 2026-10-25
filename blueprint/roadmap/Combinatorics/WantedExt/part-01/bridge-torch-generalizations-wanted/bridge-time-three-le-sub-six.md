@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.bridgeTime_three_le_sub_six
 ---
 
-# Bridge Time three le sub six
+# Six-step upper bound for capacity three
 
-For `k ≥ 9`, `T₃(k) ≤ T₃(k - 6) + 2k + 6`.
+**Six-step upper bound for capacity three.** Let $T_3(n)$ be the optimal crossing time of
+$n$ people with crossing times $1, \dots, n$ on a bridge of capacity $3$ with one torch. For
+every $k \ge 9$, $T_3(k) \le T_3(k - 6) + 2k + 6$.
 
 ## Depends on
 
-- [Bridge Time](bridge-time.md)
+- [Optimal crossing time of the bridge and torch problem](bridge-time.md)
 
 ## Sources
 

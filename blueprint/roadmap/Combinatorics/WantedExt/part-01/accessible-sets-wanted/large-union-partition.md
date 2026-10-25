@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.large_union_partition
 ---
 
-# Large union partition
+# Largeness is partition regular
 
-If a union is large, at least one of its two summands is large.
+**Largeness is partition regular.** If $D_1, D_2 \subseteq \mathbb{N}$ and their union
+$D = D_1 \cup D_2$ is large, then $D_1$ is large or $D_2$ is large.
 
 ## Depends on
 
-- [Is Large](is-large.md)
+- [Large set](is-large.md)
 
 ## Sources
 

@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.not_isMSTDSet_intervalAP_overlap_half
 ---
 
-# Lemma 16
+# Interval plus integer-step progression with half-integer start is not MSTD
 
-**Lemma 16.** For integers `n ≥ 3`, `m ≥ 2`, `2 ≤ d ≤ n - 1` and `x = s + 1/2` with `0 < x < n -
-1`, `I_n ∪ J(x, m, d)` is not an MSTD set.
+**Interval plus integer-step progression with half-integer start is not MSTD.** Let
+$I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$, as finite
+sets of reals. Let $n \ge 3$, $m \ge 2$, $s$ and $d$ be natural numbers with
+$2 \le d \le n - 1$, and let $x = s + 1/2$. If $x < n - 1$, then $I_n \cup J(x, m, d)$ is not an
+MSTD set.
 
 ## Depends on
 
-- [Is MSTDSet](is-mstdset.md)
-- [Real APSet](real-apset.md)
-- [Real Interval Set](real-interval-set.md)
+- [MSTD set](is-mstdset.md)
+- [Finite arithmetic progression](real-apset.md)
+- [Initial integer interval](real-interval-set.md)
 
 ## Sources
 

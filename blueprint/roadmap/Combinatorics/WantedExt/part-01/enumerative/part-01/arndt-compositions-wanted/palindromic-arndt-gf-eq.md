@@ -5,15 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.palindromicArndtGF_eq
 ---
 
-# Palindromic Arndt GF eq
+# Generating function of palindromic Arndt compositions
 
-`PA(x, y, z) = xyz/(1 - xz) F(x², y², xz) + x³y³z/((1 - x²)(1 - xz)) F(x², y², x²)
-- x³y³z/((1 - xz)(1 - x³z)) F(x², y², x³z)`.
+**Generating function of palindromic Arndt compositions.** Let $PA(x, y, z)$ be the
+generating function of nonempty palindromic Arndt compositions by weight ($x$), number of parts
+($y$) and middle summand ($z$), and let $F(x, y, z)$ be the generating function of down/up
+compositions $\sigma_1 > \sigma_2 < \sigma_3 > \cdots$ with an even number of parts by weight
+($x$), number of parts ($y$) and last part ($z$). Then, as formal power series over $\mathbb{Q}$,
+
+$$
+PA(x, y, z) = \frac{xyz}{1 - xz} F(x^2, y^2, xz) +
+\frac{x^3 y^3 z}{(1 - x^2)(1 - xz)} F(x^2, y^2, x^2) -
+\frac{x^3 y^3 z}{(1 - xz)(1 - x^3 z)} F(x^2, y^2, x^3 z).
+$$
 
 ## Depends on
 
-- [Down Up Even GF](down-up-even-gf.md)
-- [Palindromic Arndt GF](palindromic-arndt-gf.md)
+- [Generating function of down/up compositions with an even number of parts](down-up-even-gf.md)
+- [Palindromic Arndt generating function](palindromic-arndt-gf.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.extendedCarlitzBetaPoly_succ
 ---
 
-# Extended Carlitz Beta Poly succ
+# Recurrence for the extended Carlitz $q$-Bernoulli polynomials
 
-The recurrence `β_n^{(r+1)}(x) = q^{-x} (β_n^{(r)}(x) + (q - 1) β_{n+1}^{(r)}(x))`.
+**Recurrence for the extended Carlitz $q$-Bernoulli polynomials.** For every real $q$, natural
+numbers $r$ and $n$, and real $x$, the extended Carlitz $q$-Bernoulli polynomials satisfy
+$\beta_n^{(r+1)}(x) = q^{-x} \bigl(\beta_n^{(r)}(x) + (q - 1) \beta_{n+1}^{(r)}(x)\bigr)$.
 
 ## Depends on
 
-- [Extended Carlitz Beta Poly](extended-carlitz-beta-poly.md)
+- [Extended Carlitz $q$-Bernoulli polynomials](extended-carlitz-beta-poly.md)
 
 ## Sources
 

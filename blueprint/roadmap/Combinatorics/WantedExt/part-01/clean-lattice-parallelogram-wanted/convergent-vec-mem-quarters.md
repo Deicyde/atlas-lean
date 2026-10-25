@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.convergentVec_mem_quarters
 ---
 
-# Convergent Vec mem quarters
+# Convergent vectors in the quarters of $P_{a,n}$
 
-Split `P_{a,n}` by the lines `y = (n / a)(x - 1/2)` and `y = n / 2` into the quarter
-parallelograms `P_1` (lower left), `P_2` (lower right), `P_3` (upper right), `P_4` (upper left),
-and let `S(p) = (a + 1, n) - p`. For `1 ≤ a < n` coprime and `0 ≤ i < m`: if `i` is even then
-`v_i ∈ P_1` and `S(v_i) ∈ P_3`; if `i` is odd then `v_i + (1, 0) ∈ P_2` and
-`S(v_i + (1, 0)) ∈ P_4` (the sets `V_1`, `V_2` of the paper).
+**Convergent vectors in the quarters of $P_{a,n}$.** Let $1 \le a < n$ be coprime integers,
+let $n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of $n / a$, where $m$ is
+the least index at which it terminates, and let $v_i$ be its convergent vectors. The lines
+$y = (n / a)(x - 1/2)$ and $y = n / 2$ cut the parallelogram $P_{a,n}$ with vertices $(0, 0)$,
+$(1, 0)$, $(a, n)$, $(a + 1, n)$ into four closed parallelograms: $P_1$ (lower left), spanned by
+$(1/2, 0)$ and $(a/2, n/2)$, and its translates $P_2 = P_1 + (1/2, 0)$ (lower right),
+$P_3 = P_1 + ((a + 1)/2, n/2)$ (upper right) and $P_4 = P_1 + (a/2, n/2)$ (upper left). Let
+$S(p) = (a + 1, n) - p$. Then for every $i$ with $0 \le i < m$: if $i$ is even, then
+$v_i \in P_1$ and $S(v_i) \in P_3$; if $i$ is odd, then $v_i + (1, 0) \in P_2$ and
+$S(v_i + (1, 0)) \in P_4$.
+
+These points form the sets $V_1$ and $V_2$ of the paper.
 
 ## Depends on
 
-- [Convergent Vec](convergent-vec.md)
-- [Lattice Parallelogram](lattice-parallelogram.md)
+- [Convergent vectors of a continued fraction](convergent-vec.md)
+- [Parallelogram spanned by two vectors](lattice-parallelogram.md)
 
 ## Sources
 

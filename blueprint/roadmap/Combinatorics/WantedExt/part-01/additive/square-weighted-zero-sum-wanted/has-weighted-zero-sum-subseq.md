@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.HasWeightedZeroSumSubseq
 ---
 
-# Has Weighted Zero Sum Subseq
+# Weighted zero-sum subsequences
 
-`HasWeightedZeroSumSubseq A S` represents a subsequence by a nonempty
-finset `J` of indices; only indices in `J` receive constrained weights and
-contribute to the zero sum.
+**Weighted zero-sum subsequences.** Let $A \subseteq \mathbb{Z}/n\mathbb{Z}$ and let
+$S = (x_1, \dots, x_k)$ be a sequence in $\mathbb{Z}/n\mathbb{Z}$. Then $S$ has an $A$-weighted
+zero-sum subsequence if there are a nonempty set $J \subseteq \{1, \dots, k\}$ of indices and
+weights $a_i \in A$ for $i \in J$ with $\sum_{i \in J} a_i x_i = 0$.
 
 ## Depends on
 

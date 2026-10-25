@@ -5,18 +5,27 @@ statement: formalized
 lean: MetaMathlibExt.boundedSubsetSums_inverse_mixedSign
 ---
 
-# Bounded Subset Sums inverse mixed Sign
+# Inverse theorem for subset sums of a mixed-sign set
 
-Inverse theorem for Theorem 7 (`p` positive and `n` negative integers, `1 ≤ n ≤ p`,
-`k = n + p`, `1 ≤ α ≤ k - 2`, `β ≤ k - 2`, `α + β ≤ k - 1`): (i) for `k = 3`, `α = 1`, `β = 0`,
-`|Σ^β_α(A)| = L(α, β, A)` iff `A = d · {-1, 1, 2}`; (ii) for `k = 3`, `α = β = 1`, iff
-`A = {a₀, a₀ + a₃, a₃}` with `a₀ < 0 < a₀ + a₃ < a₃`; (iii) for `k ≥ 4`, iff
-`A = d · {-n, …, -1, 1, …, p}`. Here `d > 0` (necessarily the least positive element of `A`).
+**Inverse theorem for subset sums of a mixed-sign set.** Let $n, p, \alpha, \beta$ be natural
+numbers with $1 \le n \le p$, put $k = n + p$, and assume $1 \le \alpha \le k - 2$,
+$\beta \le k - 2$ and $\alpha + \beta \le k - 1$. Let $A$ be a finite set of integers that does
+not contain $0$ and has exactly $n$ negative and exactly $p$ positive elements, and write $E$ for
+the equation $|\Sigma^{\beta}_{\alpha}(A)| = L(\alpha, \beta, A)$. If $k = 3$, $\alpha = 1$ and
+$\beta = 0$, then $E$ holds if and only if $A = d \cdot \{-1, 1, 2\}$ for some integer $d > 0$.
+If $k = 3$ and $\alpha = \beta = 1$, then $E$ holds if and only if $A = \{x, x + y, y\}$ for some
+integers $x, y$ with $x < 0 < x + y < y$. If $k \ge 4$, then $E$ holds if and only if
+$A = d \cdot \{-n, \dots, -1, 1, \dots, p\}$ for some integer $d > 0$. Here
+$\Sigma^{\beta}_{\alpha}(A)$ is the set of sums of subsets $B \subseteq A$ with
+$\alpha \le |B| \le |A| - \beta$, and $L(\alpha, \beta, A)$ is the mixed-sign bound, which
+depends only on $n$, $p$, $\alpha$ and $\beta$.
+
+The factor $d$ is then the least positive element of $A$.
 
 ## Depends on
 
-- [Bounded Subset Sums](bounded-subset-sums.md)
-- [Mixed Sign Subset Sum Bound](mixed-sign-subset-sum-bound.md)
+- [Subset sums with a bounded number of terms](bounded-subset-sums.md)
+- [Mixed-sign subset-sum bound](mixed-sign-subset-sum-bound.md)
 
 ## Sources
 

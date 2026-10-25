@@ -12,7 +12,7 @@ pairwise disjoint `x`-ranges and distinct heights `y_i`, then `opx(n, P) = O(n)`
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 
 ## Sources
 

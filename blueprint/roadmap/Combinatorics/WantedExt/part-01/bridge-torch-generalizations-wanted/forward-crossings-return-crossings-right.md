@@ -6,16 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.BridgeTorchGeneralizations.forwardCrossings_returnCrossings_rightBank_example
 ---
 
-# Forward Crossings return Crossings right Bank example
+# Forward moves, returns and right bank of a four-person schedule
 
-Forward moves, returns and the right bank of the paper's `n = 4` schedule:
-the forward moves are `{1,2}, {1,3}, {1,4}`, the returns are `{1}, {1}`, and
-after `{1,2} → R`, `1 → L` the right bank is `{2}`.
+**Forward moves, returns and right bank of a four-person schedule.** For the schedule whose
+crossings are, in order, $\{1,2\}$, $\{1\}$, $\{1,3\}$, $\{1\}$, $\{1,4\}$, the forward crossings
+are $\{1,2\}, \{1,3\}, \{1,4\}$ and the returns are $\{1\}, \{1\}$. For the people $1, 2, 3, 4$,
+the right bank after the crossings $\{1,2\}$, $\{1\}$ (the first two of the schedule) is $\{2\}$.
 
 ## Depends on
 
-- [Forward Crossings](forward-crossings.md)
-- [Return Crossings](return-crossings.md)
+- [Forward crossings](forward-crossings.md)
+- [Return crossings](return-crossings.md)
 - [Right Bank](right-bank.md)
 
 ## Sources

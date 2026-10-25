@@ -6,10 +6,11 @@ statement: formalized
 lean: SimpleGraph.dichromaticNumber
 ---
 
-# Dichromatic Number
+# Dichromatic number
 
-The dichromatic number of `G`: the least `k` such that `G` is
-dichromatically `k`-colourable (`⊤` if there is none).
+**Dichromatic number.** The dichromatic number of a simple graph $G$ is the least natural
+number $k$ such that $G$ is dichromatically $k$-colourable, taken in $\mathbb{N} \cup \{\infty\}$;
+it is $\infty$ if $G$ is dichromatically $k$-colourable for no natural number $k$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Dichromatic Colorable](dichromatic-colorable.md)
+- [Dichromatically $k$-colourable graphs](dichromatic-colorable.md)
 
 ## Sources
 

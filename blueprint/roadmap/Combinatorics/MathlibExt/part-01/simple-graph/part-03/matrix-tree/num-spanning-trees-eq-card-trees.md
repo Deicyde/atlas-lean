@@ -7,19 +7,20 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.MatrixTreeWanted.numSpanningTrees_eq_card_trees
 ---
 
-# Num Spanning Trees eq card trees
+# Spanning trees as trees on the whole vertex set
 
-The spanning-tree count equals the number of trees below `G` on the same vertex
-type, matching `OpenConjectures.Combinatorics.MinimalSpanningTreeOrder.spanningTreeCount`.
+**Spanning trees as trees on the whole vertex set.** For a simple graph $G$ on a finite vertex
+set $V$, the number of spanning trees of $G$ equals the number of simple graphs $H$ on $V$ such
+that every edge of $H$ is an edge of $G$ and $H$ is a tree.
 
 ## Depends on
 
-- [Num Spanning Trees](num-spanning-trees.md)
+- [Number of spanning trees](num-spanning-trees.md)
 
 ## Proof depends on
 
-- [Is Spanning Tree](is-spanning-tree.md)
-- [Spanning Tree Subgraph Equiv](spanning-tree-subgraph-equiv.md)
+- [Spanning tree](is-spanning-tree.md)
+- [Spanning trees as trees contained in the graph](spanning-tree-subgraph-equiv.md)
 
 ## Sources
 

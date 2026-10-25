@@ -6,21 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.pieceDistance_kingMoves
 ---
 
-# Piece Distance king Moves
+# King distance is the max norm
 
-For every lattice point `p`, the king distance is its max norm.  Since
-`pieceDistance` is natural-valued, the formal max norm is written with
-`Int.natAbs`; this is exactly `max |p.1| |p.2|` with the integer absolute
-values converted to naturals.
+**King distance is the max norm.** For every lattice point $p = (x, y) \in \mathbb{Z}^2$, the
+piece distance of $p$ for the king's move set $K$ is $\max(|x|, |y|)$.
 
 ## Depends on
 
-- [King Moves](king-moves.md)
-- [Piece Distance](piece-distance.md)
+- [King moves](king-moves.md)
+- [Piece distance on the integer lattice](piece-distance.md)
 
 ## Proof depends on
 
-- [Piece Distance eq of mem of forall](piece-distance-eq-of-mem-of-forall.md)
+- [Piece distance from a minimal fold](piece-distance-eq-of-mem-of-forall.md)
 
 ## Sources
 

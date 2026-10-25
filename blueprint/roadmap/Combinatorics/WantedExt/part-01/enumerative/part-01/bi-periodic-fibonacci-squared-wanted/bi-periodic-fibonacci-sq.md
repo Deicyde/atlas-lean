@@ -5,11 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.biPeriodicFibonacciSq
 ---
 
-# Bi Periodic Fibonacci Sq
+# Bi-periodic Fibonacci numbers squared
 
-The bi-periodic Fibonacci numbers squared `q²_n`: `q²_0 = 0`, `q²_1 = 1`, `q²_2 = a²`, and for
-`n ≥ 3`, `q²_n = (a/b)(ab+1) q²_{n-1} + (ab+1) q²_{n-2} - (a/b) q²_{n-3}` for even `n`, with `a/b`
-replaced by `b/a` for odd `n`.
+**Bi-periodic Fibonacci numbers squared.** For elements $a$ and $b$ of a field $K$, the
+bi-periodic Fibonacci numbers squared $q^2_n \in K$ ($n \ge 0$) are defined by $q^2_0 = 0$,
+$q^2_1 = 1$, $q^2_2 = a^2$ and, for $n \ge 3$,
+
+$$
+q^2_n = \frac{a}{b}(ab+1)\,q^2_{n-1} + (ab+1)\,q^2_{n-2} - \frac{a}{b}\,q^2_{n-3}
+$$
+
+if $n$ is even, and
+
+$$
+q^2_n = \frac{b}{a}(ab+1)\,q^2_{n-1} + (ab+1)\,q^2_{n-2} - \frac{b}{a}\,q^2_{n-3}
+$$
+
+if $n$ is odd.
+
+Division by zero gives $0$, so the sequence is defined for all $a$ and $b$.
 
 ## Depends on
 

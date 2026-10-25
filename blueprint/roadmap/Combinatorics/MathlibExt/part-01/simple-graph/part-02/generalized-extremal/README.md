@@ -5,8 +5,8 @@ navigation: module
 
 # Generalized Extremal
 
-- [Generalized Extremal Number](generalized-extremal-number.md)
-- [Generalized Extremal Number eq sup](generalized-extremal-number-eq-sup.md)
-- [Copy Count le generalized Extremal Number](copy-count-le-generalized-extremal-numbe.md)
-- [Generalized Extremal Number le iff](generalized-extremal-number-le-iff.md)
-- [Exists free copy Count eq generalized Extremal Number](exists-free-copy-count-eq-generalized-ex.md)
+- [Generalized Turán number](generalized-extremal-number.md)
+- [The generalized Turán number as a supremum](generalized-extremal-number-eq-sup.md)
+- [The generalized Turán number is an upper bound](copy-count-le-generalized-extremal-numbe.md)
+- [Upper bounds for the generalized Turán number](generalized-extremal-number-le-iff.md)
+- [The generalized Turán number is attained](exists-free-copy-count-eq-generalized-ex.md)

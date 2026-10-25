@@ -7,21 +7,23 @@ proof: formalized
 lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.exists_longestCommonSubsequence
 ---
 
-# Exists longest Common Subsequence
+# Existence of a longest common subsequence
 
-A longest common subsequence exists with the reported length, and every
-other common subsequence is no longer.
+**Existence of a longest common subsequence.** For binary strings $x$ and $y$ of length $n$,
+there is a binary list $z$ that is a common subsequence of $x$ and $y$, whose length equals the
+LCS length of $x$ and $y$, and such that every common subsequence $w$ of $x$ and $y$ has length at
+most the length of $z$.
 
 ## Depends on
 
-- [Binary String](binary-string.md)
-- [Is Common Subsequence](is-common-subsequence.md)
-- [Lcs Length](lcs-length.md)
+- [Binary strings](binary-string.md)
+- [Common subsequence](is-common-subsequence.md)
+- [Length of a longest common subsequence](lcs-length.md)
 
 ## Proof depends on
 
-- [Common Subsequence Lengths](common-subsequence-lengths.md)
-- [Lcs Length is Greatest](lcs-length-is-greatest.md)
+- [Lengths of common subsequences](common-subsequence-lengths.md)
+- [The LCS length is the maximum common-subsequence length](lcs-length-is-greatest.md)
 
 ## Sources
 

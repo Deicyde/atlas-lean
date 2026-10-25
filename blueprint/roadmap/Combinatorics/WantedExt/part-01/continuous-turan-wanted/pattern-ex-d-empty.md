@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.patternExD_empty
 ---
 
-# Pattern Ex D empty
+# The $d$-dimensional extremal function of the empty pattern vanishes
 
-`ex(n, M_∅, d) = 0`.
+**The $d$-dimensional extremal function of the empty pattern vanishes.** For all natural
+numbers $d$ and $n$, $\operatorname{ex}(n, M_\emptyset, d) = 0$.
 
 ## Depends on
 
-- [Pattern Ex D](pattern-ex-d.md)
+- [Extremal function of a $d$-dimensional pattern](pattern-ex-d.md)
 
 ## Proof depends on
 
-- [Cells Contain Pattern D](cells-contain-pattern-d.md)
+- [Containment of a point pattern in d-dimensional grid cells](cells-contain-pattern-d.md)
 
 ## Sources
 

@@ -6,14 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.isTopologicalRecurrence_iff
 ---
 
-# Is Topological Recurrence iff
+# Topological recurrence is $1$-topological recurrence
 
-Characterization of topological recurrence as one-fold recurrence.
+**Topological recurrence is $1$-topological recurrence.** A set $D$ of natural numbers is a
+set of topological recurrence if and only if it is a set of $\ell$-topological recurrence for
+$\ell = 1$.
 
 ## Depends on
 
-- [Is LTopological Recurrence](is-ltopological-recurrence.md)
-- [Is Topological Recurrence](is-topological-recurrence.md)
+- [Sets of $\ell$-topological recurrence](is-ltopological-recurrence.md)
+- [Sets of topological recurrence](is-topological-recurrence.md)
 
 ## Sources
 

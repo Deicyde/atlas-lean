@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.coverCount_init_add_zsmul_last
 ---
 
-# Cover Count init add zsmul last
+# Shifting by multiples of the last element of a perfect $2^j$-cover
 
-In the setting of Lemma 8, if `S₁` covers `b` exactly `c` times, then for every integer
-`t` it covers `b + 2t x_{k+1}` exactly `c` times and `b + (2t + 1) x_{k+1}` exactly
-`2^j - c` times.
+**Shifting by multiples of the last element of a perfect $2^j$-cover.** Let $G$ be an
+abelian group, let $s = (x_1, \dots, x_{k+1})$ be a family in $G$ that is a perfect $2^j$-cover
+of $G$, and let $S_1 = (x_1, \dots, x_k)$. For every $b \in G$, if $S_1$ covers $b$ exactly $c$
+times, then for every integer $t$ it covers $b + 2t\,x_{k+1}$ exactly $c$ times and
+$b + (2t + 1)\,x_{k+1}$ exactly $2^j - c$ times.
 
 ## Depends on
 
-- [Is Perfect MCover](is-perfect-mcover.md)
-- [Cover Count](cover-count.md)
+- [Perfect $m$-cover](is-perfect-mcover.md)
+- [Cover count](cover-count.md)
 
 ## Sources
 

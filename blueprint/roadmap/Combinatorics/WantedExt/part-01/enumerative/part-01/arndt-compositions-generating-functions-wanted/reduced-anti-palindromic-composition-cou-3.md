@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.reducedAntiPalindromicCompositionCount_eq_arndtCompositionCount
 ---
 
-# Reduced Anti Palindromic Composition Count eq arndt Composition Count
+# Arndt compositions and reduced anti-palindromic compositions are equinumerous
 
-The number of Arndt compositions of `n` with `m` parts equals the number of reduced
-anti-palindromic compositions of `n` with `m` parts.
+**Arndt compositions and reduced anti-palindromic compositions are equinumerous.** For all
+natural numbers $n$ and $m$, the number of reduced anti-palindromic compositions of $n$ with $m$
+parts equals the number of Arndt compositions of $n$ with $m$ parts, all positive integers being
+allowed as parts.
 
 ## Depends on
 
-- [Arndt Composition Count](../arndt-compositions-wanted/arndt-composition-count.md)
-- [Reduced Anti Palindromic Composition Count](reduced-anti-palindromic-composition-cou.md)
+- [Number of Arndt compositions with parts in a set](../arndt-compositions-wanted/arndt-composition-count.md)
+- [Reduced anti-palindromic compositions](reduced-anti-palindromic-composition-cou.md)
 
 ## Sources
 

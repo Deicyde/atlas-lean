@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.opxD_stack_two_isTheta
 ---
 
-# Opx D stack two is Theta
+# Two-layer stacks of patterns with linear continuous Turán number
 
-Corollary 5.17, first part: if `P ⊆ ℝ²` has at least two points and `opx(n, P) = O(n)`, then for
-`c > 0`, `Q_{P,2,c} = {(x, y, z) : (x, y) ∈ P, z ∈ {c, 2c}}` has
-`opx(n, Q_{P,2,c}, 3) = Θ(n^{5/2})`.
+**Two-layer stacks of patterns with linear continuous Turán number.** Let
+$P \subseteq \mathbb{R}^2$ have at least two points, and suppose that
+$\mathrm{opx}(n, P) = O(n)$ as the real number $n$ tends to infinity. Let $c > 0$ and
+$Q_{P,2,c} = \{(x, y, z) : (x, y) \in P,\ z \in \{c, 2c\}\} \subseteq \mathbb{R}^3$. Then
+$\mathrm{opx}(n, Q_{P,2,c}, 3) = \Theta(n^{5/2})$ as the real number $n$ tends to infinity.
 
 ## Depends on
 
-- [Opx](opx.md)
+- [Continuous Turán number in the plane](opx.md)
 - [Opx D](opx-d.md)
 
 ## Sources

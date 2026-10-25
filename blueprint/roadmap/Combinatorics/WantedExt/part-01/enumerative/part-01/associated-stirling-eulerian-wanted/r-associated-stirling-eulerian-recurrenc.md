@@ -5,18 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.rAssociatedStirlingEulerian_recurrence
 ---
 
-# R Associated Stirling Eulerian recurrence
+# Recurrence for the $r$-associated Stirling Eulerian numbers
 
-Theorem 30: for `0 ≤ m ≤ n` and `n ≥ r + 1`,
-`A^r_{n,m} = m A^r_{n-1,m} + (n-m) A^r_{n-1,m-1} +
-C(n-1,r) ∑_s C_{r+1,s} A^r_{n-r-1,m-s}`, where `A^r` counts permutations with
-all cycle lengths greater than `r` by excedances. The term `(n-m) A^r_{n-1,m-1}`
-is `0` at `m = 0` (index `-1`), and the sum runs over `s ≤ m`.
+**Recurrence for the $r$-associated Stirling Eulerian numbers.** For natural numbers $r$, $n$,
+$m$ let $A^r_{n,m}$ be the number of permutations $\sigma$ of $\{0, \dots, n-1\}$ with exactly
+$m$ excedances (points $i$ with $\sigma(i) > i$) all of whose cycles (fixed points counted as
+cycles of length one) have length greater than $r$, and for natural numbers $a$, $b$ let
+$C_{a,b}$ be the circular Eulerian number, the number of permutations of $\{0, \dots, a-1\}$,
+$a \ge 1$, that consist of a single cycle through all points and have exactly $b$ excedances
+($C_{0,b} = 0$). If $m \le n$ and $n \ge r + 1$, then
+
+$$A^r_{n,m} = m A^r_{n-1,m} + (n-m) A^r_{n-1,m-1} +
+\binom{n-1}{r} \sum_{s=0}^{m} C_{r+1,s} A^r_{n-r-1,m-s},$$
+
+where the term $(n-m) A^r_{n-1,m-1}$ is read as $0$ when $m = 0$.
 
 ## Depends on
 
-- [Circular Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
-- [R Associated Stirling Eulerian](../../../../../MathlibExt/part-02/associated-stirling-eulerian/r-associated-stirling-eulerian.md)
+- [Circular Eulerian numbers](../../../../../MathlibExt/part-02/associated-stirling-eulerian/circular-eulerian.md)
+- [$r$-associated Stirling Eulerian numbers](../../../../../MathlibExt/part-02/associated-stirling-eulerian/r-associated-stirling-eulerian.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Order.DilworthWanted.card_le_maxAntichainSize
 ---
 
-# Card le max Antichain Size
+# Antichains are no larger than the maximum antichain size
 
-An antichain has at most `maxAntichainSize α` elements.
+**Antichains are no larger than the maximum antichain size.** Let $\alpha$ be a finite
+partially ordered set. Every antichain $A$ in $\alpha$ has at most as many elements as the
+maximum antichain size of $\alpha$.
 
 ## Depends on
 
-- [Max Antichain Size](max-antichain-size.md)
+- [Maximum antichain size](max-antichain-size.md)
 
 ## Sources
 

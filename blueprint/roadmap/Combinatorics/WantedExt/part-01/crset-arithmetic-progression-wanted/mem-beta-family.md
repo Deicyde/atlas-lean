@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.mem_betaFamily
 ---
 
-# Mem beta Family
+# Membership in β(F)
 
-Membership in `β(F)`.
+**Membership in β(F).** Let $F$ be a collection of subsets of a set $S$ and let $p$ be an
+ultrafilter on $S$. Then $p \in \beta(F)$ if and only if every member of $p$ belongs to $F$.
 
 ## Depends on
 
-- [Beta Family](beta-family.md)
+- [The set β(F) of ultrafilters inside a family](beta-family.md)
 
 ## Sources
 
