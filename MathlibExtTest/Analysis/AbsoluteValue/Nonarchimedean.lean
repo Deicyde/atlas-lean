@@ -16,9 +16,11 @@ import Mathlib.Analysis.Normed.Field.Basic
 import Mathlib.FieldTheory.Finite.Basic
 import Mathlib.NumberTheory.Ostrowski
 
+namespace MathlibExtTest.Analysis.AbsoluteValue.Nonarchimedean
+
 @[expose] public section
 
-open AbsoluteValue
+open _root_.AbsoluteValue
 
 variable {K : Type*} [Field K]
 
@@ -68,3 +70,5 @@ private theorem test_padic5_nonarchimedean :
   simpa using Rat.AbsoluteValue.padic_le_one 5 (n : ℤ)
 
 end
+
+end MathlibExtTest.Analysis.AbsoluteValue.Nonarchimedean
