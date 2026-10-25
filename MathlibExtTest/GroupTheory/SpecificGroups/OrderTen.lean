@@ -225,3 +225,43 @@ example (G : Type*) [Group G] :
     ((f.symm.trans e).isCyclic.mpr cyclicProduct_isCyclic)
 
 end ProductClassificationPublicClient
+
+namespace ProductXorPublicClient
+
+private abbrev CyclicProduct := Multiplicative (ZMod 5) × Multiplicative (ZMod 2)
+
+/-- The public exclusive statement uses the two literal recorded models. -/
+example (G : Type*) [Group G] [Fintype G] (hG : Fintype.card G = 10) :
+    (Nonempty (G ≃* (Multiplicative (ZMod 5) × Multiplicative (ZMod 2))) ∧
+      ¬Nonempty (G ≃* DihedralGroup 5)) ∨
+    (¬Nonempty (G ≃* (Multiplicative (ZMod 5) × Multiplicative (ZMod 2))) ∧
+      Nonempty (G ≃* DihedralGroup 5)) :=
+  MetaMathlibExt.groups_of_order_10_classification_prod_xor G hG
+
+/-- The exclusive API selects the product case on the actual cyclic product. -/
+example : Nonempty (CyclicProduct ≃* CyclicProduct) ∧
+    ¬Nonempty (CyclicProduct ≃* DihedralGroup 5) := by
+  have h : (Nonempty (CyclicProduct ≃* CyclicProduct) ∧
+      ¬Nonempty (CyclicProduct ≃* DihedralGroup 5)) ∨
+    (¬Nonempty (CyclicProduct ≃* CyclicProduct) ∧
+      Nonempty (CyclicProduct ≃* DihedralGroup 5)) :=
+    MetaMathlibExt.groups_of_order_10_classification_prod_xor CyclicProduct
+      (by norm_num [CyclicProduct, Fintype.card_prod, Fintype.card_multiplicative, ZMod.card])
+  rcases h with h | h
+  · exact h
+  · exact False.elim (h.1 ⟨MulEquiv.refl _⟩)
+
+/-- The exclusive API selects the dihedral case on the actual dihedral group. -/
+example : ¬Nonempty (DihedralGroup 5 ≃* CyclicProduct) ∧
+    Nonempty (DihedralGroup 5 ≃* DihedralGroup 5) := by
+  have h : (Nonempty (DihedralGroup 5 ≃* CyclicProduct) ∧
+      ¬Nonempty (DihedralGroup 5 ≃* DihedralGroup 5)) ∨
+    (¬Nonempty (DihedralGroup 5 ≃* CyclicProduct) ∧
+      Nonempty (DihedralGroup 5 ≃* DihedralGroup 5)) :=
+    MetaMathlibExt.groups_of_order_10_classification_prod_xor (DihedralGroup 5)
+      (by simpa using (DihedralGroup.card (n := 5)))
+  rcases h with h | h
+  · exact False.elim (h.2 ⟨MulEquiv.refl _⟩)
+  · exact h
+
+end ProductXorPublicClient
